@@ -16,6 +16,7 @@ ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/27/2018
+ms.locfileid: "32031886"
 ---
 # <a name="remotely-debugging-python-code-on-azure"></a>在 Azure 上远程调试 Python 代码
 

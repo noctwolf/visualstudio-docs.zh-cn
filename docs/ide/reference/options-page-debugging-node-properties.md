@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951773"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。

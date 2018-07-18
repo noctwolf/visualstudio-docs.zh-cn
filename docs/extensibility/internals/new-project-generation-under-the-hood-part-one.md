@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133755"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>新的项目生成： 实质上，第一部分
 有没有想过有关如何创建你自己的项目类型？ 想要知道什么实际发生时创建新项目？ 让我们了解一下实质上的，请参阅什么现状。  

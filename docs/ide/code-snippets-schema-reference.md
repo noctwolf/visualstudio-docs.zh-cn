@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927121"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -270,7 +271,7 @@ $selected$ is a great color. I love $selected$.
 |-------------------|-----------------|
 |[Author 元素](../ide/code-snippets-schema-reference.md#author)|可选元素。 编写代码段的人员或公司的姓名或名称。 `Author` 元素中可能有零个或一个 `Header` 元素。|
 |[Description 元素](../ide/code-snippets-schema-reference.md#description)|可选元素。 代码段说明。 `Description` 元素中可能有零个或一个 `Header` 元素。|
-|[HelpUrl 元素](../ide/code-snippets-schema-reference.md#helpurl)|可选元素。 包含有关代码段的详细信息的 URL。 Header 元素中可能有零个或一个 `HelpURL` 元素。 **请注意：**Visual Studio 不使用 `HelpUrl` 元素。 该元素是 IntelliSense 代码段 XML 架构的一部分，包含该元素的任何代码段将进行验证，但是从不使用该元素的值。|
+|[HelpUrl 元素](../ide/code-snippets-schema-reference.md#helpurl)|可选元素。 包含有关代码段的详细信息的 URL。 Header 元素中可能有零个或一个 `HelpURL` 元素。 **请注意：** Visual Studio 不使用 `HelpUrl` 元素。 该元素是 IntelliSense 代码段 XML 架构的一部分，包含该元素的任何代码段将进行验证，但是从不使用该元素的值。|
 |[Keywords 元素](../ide/code-snippets-schema-reference.md#keywords)|可选元素。 对 `Keyword` 元素进行分组。 `Keywords` 元素中可能有零个或一个 `Header` 元素。|
 |[Shortcut 元素](../ide/code-snippets-schema-reference.md#shortcut)|可选元素。 指定可用于插入代码段的快捷方式文本。 `Shortcut` 元素中可能有零个或一个 `Header` 元素。|
 |[SnippetTypes 元素](../ide/code-snippets-schema-reference.md#snippettypes)|可选元素。 对 `SnippetType` 元素进行分组。 `SnippetTypes` 元素中可能有零个或一个 `Header` 元素。 如果没有 `SnippetTypes` 元素，代码段将一直有效。|

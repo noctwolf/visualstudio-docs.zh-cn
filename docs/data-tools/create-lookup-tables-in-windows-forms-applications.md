@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917063"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 术语*查找表*描述绑定到两个相关的数据表的控件。 这些查找控件显示基于在第二个表中选择的值的第一个表中的数据。

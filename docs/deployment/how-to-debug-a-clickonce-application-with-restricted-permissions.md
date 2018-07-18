@@ -23,11 +23,12 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561995"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限对 ClickOnce 应用程序进行调试
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  
   
- 为了捕获这些异常，你需要使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”**页上启用使用受限权限进行调试。  
+ 为了捕获这些异常，你需要使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”** 页上启用使用受限权限进行调试。  
   
  此外，在开发调用 Web 服务的应用程序时，这些 Web 服务通常驻留在开发计算机上。 部署之后，最终用户会通过其他 URL 访问这些 Web 服务。 若要在调试过程中模拟最终用户体验，可以指定一个 URL，调试器会如同从该 URL 调用 Web 服务一样来处理这些服务。  
   

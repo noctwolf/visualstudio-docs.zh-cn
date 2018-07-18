@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103352"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>绑定的键盘快捷方式菜单项
 若要绑定到自定义菜单命令的键盘快捷方式，只需将条目添加到包的.vsct 文件中。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制为自定义编辑器。  

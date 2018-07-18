@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31568664"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>在工具窗口中添加快捷菜单
 本演练将在工具窗口的快捷菜单。 快捷菜单是当用户右键单击按钮、 文本框中或窗口背景时显示。 快捷菜单上的命令的行为与其他菜单或工具栏上的命令相同。 若要支持的快捷菜单，指定在.vsct 文件中，并将其显示在响应的鼠标右键单击。  

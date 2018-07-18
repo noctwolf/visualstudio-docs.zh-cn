@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125365"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 此结构指定有关摘自 PDB 符号字段类型的信息。  

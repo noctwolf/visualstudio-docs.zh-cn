@@ -24,6 +24,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571352"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。  

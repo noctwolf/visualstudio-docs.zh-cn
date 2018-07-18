@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127974"
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何： 添加标准文本标记
 使用以下过程创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。  

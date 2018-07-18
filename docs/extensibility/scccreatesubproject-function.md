@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145030"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数创建具有给定名称指定现有父项目下的子项目`lpParentProjPath`自变量。  

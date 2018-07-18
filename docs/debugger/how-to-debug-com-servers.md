@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481679"
 ---
 # <a name="how-to-debug-com-servers"></a>如何：调试 COM 服务器
 调试 COM 服务器应用程序会引起一系列不总是容易解决的独特问题。  

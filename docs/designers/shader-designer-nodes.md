@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926439"
 ---
 # <a name="shader-designer-nodes"></a>着色器设计器节点
 文档本部分文章包含关于用于创建图形效果的各种着色器设计器节点的信息。

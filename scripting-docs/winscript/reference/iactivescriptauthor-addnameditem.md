@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthor::AddNamedItem |Microsoft 文档"
-ms.custom: 
+title: IActiveScriptAuthor::AddNamedItem |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthor.AddNamedItem
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthor::AddNamedItem
 ms.assetid: 951003b6-1c4a-4086-b7ce-2f128e007280
-caps.latest.revision: 
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645607"
 ---
 # <a name="iactivescriptauthoraddnameditem"></a>IActiveScriptAuthor::AddNamedItem
 将根级别项的名称添加到引擎的命名空间创作的脚本。 A*根级别项*是可以包含属性和方法，并且，还可以包含事件源的对象。  

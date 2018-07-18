@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127913"
 ---
 # <a name="authoring-a-windows-installer-package"></a>创作 Windows Installer 包
 数据驱动器的 Windows Installer 模型。 而不是撰写的过程的脚本将文件复制和写入注册表项，例如，您创作行和包含文件和注册表数据的数据库表中的列。  

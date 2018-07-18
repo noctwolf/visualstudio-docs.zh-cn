@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951890"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>重写和扩展生成的类
 DSL 定义是一个平台，你可以基于其构建一套强大的基于域特定语言的工具。 许多扩展和改编可以通过重写和扩展从 DSL 定义生成的类。 这些类包括而不仅仅是中 DSL 定义关系图中，已显式定义的域类还有其他类的定义工具箱、 资源管理器、 序列化和等等。

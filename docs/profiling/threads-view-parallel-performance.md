@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb86d36429f8695222f69fbf6d78635a338bfe5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573162"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 线程视图是并发可视化工具中最详细且具备丰富功能的视图（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 使用此视图可以确定线程是在执行还是由于同步、I/O 或某些其他原因而阻塞。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/19/2018
   
 -   了解工作线程和执行的关键路径间的依赖关系。  
   
-## <a name="examining-specific-time-intervals-and-threads"></a>检查特定时间间隔和线程  
+## <a name="examine-specific-time-intervals-and-threads"></a>检查特定时间间隔和线程  
  “线程”视图会显示时间线。 可以在时间线中缩放和平移以检查应用程序的特定间隔和线程。 X 轴上是时间，y 轴上是几个通道：  
   
 -   系统上每个磁盘驱动器两个 I/O 通道，一个通道用于读取，另一个用于写入。  
@@ -127,10 +128,10 @@ ms.lasthandoff: 04/19/2018
  同步报告显示对同步块负责的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅[同步时间](../profiling/synchronization-time.md)。  
   
 #### <a name="io"></a>I/O  
- I/O 报告显示对 I/O 块负责的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅 [I/O 时间（“线程”视图）](../profiling/i-o-time-threads-view.md)。  
+ I/O 报告显示对 I/O 块负责的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅 [I/O 时间（线程视图）](../profiling/i-o-time-threads-view.md)。  
   
 #### <a name="sleep"></a>休眠  
- 休眠报告显示对休眠块负责的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅[休眠时间](../profiling/sleep-time.md)。  
+ 休眠报告显示对休眠块负责的调用，以及每个调用堆栈的合计阻塞时间。 有关详细信息，请参阅[睡眠时间](../profiling/sleep-time.md)。  
   
 #### <a name="memory-management"></a>内存管理  
  内存管理报告显示出现内存管理块的调用，以及每个调用堆栈的合计阻塞时间。 可以使用此信息确定具有过多分页或垃圾回收问题的区域。  有关详细信息，请参阅[内存管理时间](../profiling/memory-management-time.md)。  

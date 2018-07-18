@@ -1,4 +1,5 @@
 # [Visual Studio 订阅](index.md)
+## [新增功能](whats-new-in-subscriptions.md)
 ## 订阅者体验
 ### [使用订阅者门户](using-the-subscriber-portal.md)
 #### [激活零售订阅](activate-store-subscriptions.md)
@@ -64,7 +65,7 @@
 #### [过期订阅](handle-expired-license.md)
 #### [使用个人电子邮件登录的订阅者](personal-email-sign-ins.md)
 ## 获取 Visual Studio 订阅
-### [比较订阅选项](https://www.visualstudio.com/vs/pricing)
+### [比较订阅选项](https://visualstudio.microsoft.com/vs/pricing)
 ### 购买云订阅
 #### [概述](vscloud-overview.md)
 #### [账单常见问题解答](vscloud-billing-faq.md)
@@ -75,8 +76,8 @@
 #### [启动 Microsoft](program-startups.md)
 ## 资源
 ### [Visual Studio 许可白皮书](http://aka.ms/vslicensing)
-### [比较订阅选项和定价](https://www.visualstudio.com/vs/pricing)
-### [比较 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare)
-### [Visual Studio 管理和订阅支持](https://www.visualstudio.com/support/support-overview-vs)
+### [比较订阅选项和定价](https://visualstudio.microsoft.com/vs/pricing)
+### [比较 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
+### [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
 ### [批量许可条款](https://www.microsoft.com/en-us/licensing/product-licensing/products.aspx)
 ### [Microsoft 产品和服务协议 (MPSA)](https://www.microsoft.com/en-us/licensing/mpsa/default.aspx)

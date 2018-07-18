@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: dac63faa3c34983a8ac0be9ccd7cbd9fae9a1cbe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 171cdd59d3fd40d640aea2e5896a0179a303bd19
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751684"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -53,9 +54,9 @@ ms.lasthandoff: 04/26/2018
 2. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
 
 2.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
-3. 在**输出窗口**中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
+3. 在输出窗口中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
 
-  ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png "输出窗口")
+  ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>定义特征以实现分组
 可以对测试方法定义特征，这样就能在”测试资源管理器”中对测试进行分类和分组。 若要定义特性，请使用 `TEST_METHOD_ATTRIBUTE` 宏。 例如，若要定义名为 `TEST_MY_TRAIT`的特性：

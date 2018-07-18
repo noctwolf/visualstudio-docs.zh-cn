@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459670"
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 检索一个标志，指示此行信息描述的一条语句，而不是在程序源中的表达式的开头。  

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eaa236a5cc4a11832cee3b4dfc43aa4ef0cb97c
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748213"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 
@@ -33,31 +34,31 @@ ms.lasthandoff: 05/03/2018
 
 1. 打开“配置管理器”对话框。
 
-   ![“生成”菜单->“配置管理器”命令](../ide/media/buildwalk_configurationmanagerdialogbox.png "BuildWalk_ConfigurationManagerDialogBox")
+   ![“生成”菜单->“配置管理器”命令](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
 1. 在“活动解决方案配置”列表中，选择“\<新建...\>”。
 
 1. 在“新建解决方案配置”对话框中，命名新配置 `Test`，复制现有“调试”配置中的设置，然后选择“确定”按钮。
 
-   ![“新建解决方案配置”对话框](../ide/media/buildwalk_newsolutionconfigdlgbox.png "BuildWalk_NewSolutionConfigDlgBox")
+   ![“新建解决方案配置”对话框](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
 1. 在“活动解决方案平台”列表中，选择“\<新建...\>”。
 
 1. 在“新建解决方案平台”对话框中，选择“x64”，且不要复制 x86 平台中的设置。
 
-   ![“新建解决方案平台”对话框](../ide/media/buildwalk_newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
+   ![“新建解决方案平台”对话框](../ide/media/buildwalk_newsolutionplatform.png)
 
 1. 选择“确定”  按钮。
 
    “活动解决方案配置”已更改为“测试”，且“活动解决方案平台”设置为“x64”。
 
-   ![具有测试配置的“配置管理器”](../ide/media/buildwalk_configmanagertestconfig.png "BuildWalk_ConfigManagerTestconfig")
+   ![具有测试配置的配置管理器](../ide/media/buildwalk_configmanagertestconfig.png)
 
 1. 选择“关闭”。
 
 使用“标准”工具栏上的“解决方案配置”列表，可快速验证或更改“活动解决方案配置”。
 
-![“标准”工具栏->“解决方案配置”选项](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png "BuildWalk_StandardToolbarSolutionCongfig")
+![解决方案配置选项标准工具栏](../ide/media/buildwalk_standardtoolbarsolutioncongfig.png)
 
 ## <a name="build-the-application"></a>生成应用程序
 
@@ -83,9 +84,9 @@ ms.lasthandoff: 05/03/2018
 
 “输出”窗口将显示生成的结果。 成功生成，但生成了警告：
 
-![“输出”窗口 Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png "BuildWalk_VBBuildOutputWnd")
+![输出窗口 Visual Basic](../ide/media/buildwalk_vbbuildoutputwnd.png)
 
-![“输出”窗口 Visual C#](../ide/media/buildwalk_csharpbuildoutputwnd.png "BuildWalk_CsharpBuildOutputWnd")
+![输出窗口 Visual C#](../ide/media/buildwalk_csharpbuildoutputwnd.png)
 
 可在生成期间暂时隐藏某些警告消息，而不是使其扰乱生成输出。
 
@@ -99,7 +100,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 选择“生成”页，然后在“禁止显示警告”框中，指定警告编号“0168”。
 
-     ![“项目设计器”->“生成”页](../ide/media/buildwalk_csharpsupresswarnings.png "BuildWalk_CsharpSupressWarnings")
+     ![“生成”页，“项目设计器”](../ide/media/buildwalk_csharpsupresswarnings.png)
 
      有关详细信息，请参阅 [“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -107,7 +108,7 @@ ms.lasthandoff: 05/03/2018
 
      “输出”窗口仅显示生成的摘要信息。
 
-     ![“Visual C# 生成警告”->“输出”窗口](../ide/media/buildwalk_visualcsharpbuildwarnings.png "BuildWalk_VisualCsharpBuildWarnings")
+     ![输出窗口 Visual C# 生成警告](../ide/media/buildwalk_visualcsharpbuildwarnings.png)
 
 ### <a name="suppress-all-visual-basic-build-warnings"></a>禁止显示所有 Visual Basic 生成警告
 
@@ -119,7 +120,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 在“编译”页上，选择“禁用所有警告”复选框。
 
-     ![“项目设计器”->“编译”页](../ide/media/buildwalk_vbsupresswarnings.png "BuildWalk_VBSupressWarnings")
+     ![“编译”页，“项目设计器”](../ide/media/buildwalk_vbsupresswarnings.png)
 
      有关详细信息，请参阅[在 Visual Basic 中配置警告](../ide/configuring-warnings-in-visual-basic.md)。
 
@@ -127,7 +128,7 @@ ms.lasthandoff: 05/03/2018
 
  “输出”窗口仅显示生成的摘要信息。
 
- ![“Visual Basic 生成警告”->“输出”窗口](../ide/media/buildwalk_visualbasicbuildwarnings.png "BuildWalk_VisualBasicBuildWarnings")
+ ![输出窗口 Visual Basic 生成警告](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
  有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 打开“选项”对话框。
 
-     ![“工具”菜单上的“选项”命令](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")
+     ![“工具”菜单上的“选项”命令](../ide/media/exploreide-toolsoptionsmenu.png)
 
 1. 选择“项目和解决方案”类别，然后选择“生成和运行”页。
 
@@ -174,7 +175,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 打开“项目设计器”。
 
-     ![“视图”菜单->“属性页”命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![“视图”菜单，“属性页”命令](../ide/media/buildwalk_viewpropertypages.png)
 
 1. 选择“编译”页。
 
@@ -191,13 +192,13 @@ ms.lasthandoff: 05/03/2018
 
 1. 生成应用程序。
 
-     ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png)
 
 ### <a name="specify-a-release-build-for-c"></a>指定 C# 的版本生成 #
 
 1. 打开“项目设计器”。
 
-     ![“视图”菜单->“属性页”命令](../ide/media/buildwalk_viewpropertypages.png "BuildWalk_ViewPropertyPages")
+     ![“视图”菜单，“属性页”命令](../ide/media/buildwalk_viewpropertypages.png)
 
 1. 选择“生成”页。
 
@@ -216,7 +217,7 @@ ms.lasthandoff: 05/03/2018
 
 1. 生成应用程序。
 
-     ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png)
 
    可执行文件已复制到指定的网络路径。 其路径将为 `\\myserver\builds\\FileName.exe`。
 

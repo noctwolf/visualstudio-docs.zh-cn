@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 33191a5ba3d037453a70b069c302de0ca7ddd5cc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a61d53e8dbdbbce9c5a09fc8f8cd180a8b312d2c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750966"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大负载测试结果中的关系图的区域
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 > [!TIP]
 > 可以使用工具栏中的“同步水平缩放控件”打开或关闭自动水平缩放同步。 当同步打开时，应用于关系图的任何缩放也会应用于关系图视图上的任何其他关系图。
 
- ![关系图视图缩放控件](../test/media/ltest_zoomcontrol.png "LTest_ZoomControl") 关系图视图缩放控件
+ ![图形视图缩放控件](../test/media/ltest_zoomcontrol.png) 图形视图缩放控件
 
  在上图中，“测试中的系统”关系图已放大，以便调查阈值问题。 已通过使用工具栏上“关系图选项”下拉列表中的“在关系图上显示阈值冲突”启用阈值冲突。
 

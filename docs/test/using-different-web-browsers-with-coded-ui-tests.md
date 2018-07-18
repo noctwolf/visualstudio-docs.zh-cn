@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31978370"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 
@@ -37,14 +38,14 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>如何使用支持的 Web 浏览器在 Web 应用程序上记录和播放编码的 UI 测试?
 
-**录制：**必须使用编码的 UI 测试生成器来录制在 Internet Explorer 中运行的 Web 应用测试。 你可以选择使用一组预定义的属性为已测试的控件添加验证和自定义代码，这与你通常对编码的 UI 测试所做的一样。 有关详细信息，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。
+**录制：** 必须使用编码的 UI 测试生成器来录制在 Internet Explorer 中运行的 Web 应用测试。 你可以选择使用一组预定义的属性为已测试的控件添加验证和自定义代码，这与你通常对编码的 UI 测试所做的一样。 有关详细信息，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。
 
 > [!NOTE]
 > 你无法使用 Google Chrome 或 Mozilla Firefox 浏览器记录编码的 UI 测试。
 
- **使用 Internet Explorer 播放：**如果未显式指定浏览器，默认将在 Internet Explorer 中运行测试。 可以在测试代码中设置 **BrowserWindow.CurrentBrowser** 属性来显式声明要使用的浏览器。 对于 Internet Explorer，应将此属性设为“IE”或“Internet Explorer”。
+ **使用 Internet Explorer 播放：** 如果未显式指定浏览器，默认将在 Internet Explorer 中运行测试。 可以在测试代码中设置 **BrowserWindow.CurrentBrowser** 属性来显式声明要使用的浏览器。 对于 Internet Explorer，应将此属性设为“IE”或“Internet Explorer”。
 
- **使用非 Internet Explorer Web 浏览器播放：**若要在非 Internet Explorer Web 浏览器中播放，请将测试代码中的 BrowserWindow.CurrentBrowser 属性更改为“Firefox”或“Chrome”。
+ **使用非 Internet Explorer Web 浏览器播放：** 若要在非 Internet Explorer Web 浏览器中播放，请将测试代码中的 BrowserWindow.CurrentBrowser 属性更改为“Firefox”或“Chrome”。
 
  必须**用于编码的 UI 跨浏览器测试的 Selenium 组件**，才能在非 IE 浏览器上播放测试。
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134602"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>参数信息，请参阅旧语言服务
 IntelliSense 参数信息是在用户键入的参数列表时显示方法的签名的工具提示启动的方法参数列表的字符 （通常左括号）。 在输入每个参数和类型的参数分隔符 （通常为逗号） 时，工具提示将更新以显示下一个参数以粗体显示。  

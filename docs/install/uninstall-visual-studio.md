@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31619362"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/20/2018
      ![Visual Studio 安装程序](media/vs2017-locate-the-visual-studio-installer.PNG "查找 Microsoft Visual Studio 安装程序")
 
      >[!NOTE]
-     对于某些计算机，Visual Studio 安装程序可能列在字母**“M”**下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     对于某些计算机，Visual Studio 安装程序可能列在字母 **“M”** 下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. 单击以启动安装程序，单击![“详细信息”图标](media/vs2017uninstall-UninstallIcon.png "“选择选项”图标")，然后单击“卸载”。  
 

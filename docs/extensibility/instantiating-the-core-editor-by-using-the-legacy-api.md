@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132326"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>使用旧版 API 实例化核心编辑器
 编辑器负责文本编辑功能，如插入、 删除、 复制和粘贴。 它与由语言服务，如文本突出显示、 缩进和 IntelliSense 语句结束提供这些函数组合起来。  

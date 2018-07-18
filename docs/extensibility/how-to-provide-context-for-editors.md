@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135582"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何： 为编辑器提供的上下文
 编辑器上下文处于活动状态，仅当编辑器具有焦点或立即之前焦点移动到工具窗口具有焦点时。 你可以通过执行以下编辑器提供上下文：  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31566181"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，你可以生成从命令行的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，你可以重新生成与创建的项目[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只有的另一台计算机上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安装。 这样您就可以重现使用自动化的过程生成，例如，在中心生成实验室或使用高级脚本编写超出范围的生成项目本身的技巧。  

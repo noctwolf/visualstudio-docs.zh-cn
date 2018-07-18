@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430e81cc0f4c15bdcb9d7ed3accaa041afa8d8e
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750475"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/14/2018
 
 选择所需的工作负载，并在需要时对其进行更改。
 
- ![Visual Studio 2017 安装对话框](../install/media/install-visual-studio-enterprise.png "Visual Studio 2017 安装屏幕")
+ ![Visual Studio 2017 安装对话框](../install/media/install-visual-studio-enterprise.png)
 
 并且还可以选择微调安装：
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 05/14/2018
 
 Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根据需要加载扩展，而不是在 IDE 启动时加载。 想了解哪些扩展会影响启动、解决方案加载和键入性能？ 可以在“帮助” > “管理 Visual Studio 性能”中查看此信息。
 
-  ![Visual Studio 2017 中的选项对话框](../ide/media/vs2017ide-manage-vs-perf.png "Visual Studio 帮助对话框 - 性能管理")
+  ![Visual Studio 2017 中的“选项”对话框](../ide/media/vs2017ide-manage-vs-perf.png)
 
 #### <a name="manage-your-extensions-with-roaming-extensions-manager"></a>利用漫游扩展管理器管理扩展
 
@@ -97,19 +98,19 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 若要查看 Visual Studio 中的扩展列表，请单击“工具” > “扩展和更新”，再单击“漫游扩展管理器”。
 
-![Visual Studio 2017 - 扩展和更新对话框](../ide/media/vs2017ide-extensions-and-updates.png "Visual Studio 2017-“工具”>“扩展和更新”对话框")
+![Visual Studio 2017 -“扩展和更新”对话框](../ide/media/vs2017ide-extensions-and-updates.png)
 
 漫游扩展管理器会跟踪安装的所有扩展，但你可以选择要添加到漫游列表的扩展。
 
-![Visual Studio 2017 - 扩展和更新对话框](../ide/media/vs2017ide-RoamingExtensionManager.png "Visual Studio 2017 - 漫游扩展管理器")
+![Visual Studio 2017 -“扩展和更新”对话框](../ide/media/vs2017ide-RoamingExtensionManager.png)
 
 使用漫游扩展管理器时，列表中会出现 3 种图标类型：
 
-* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png "“漫游”图标") ***“漫游”***：表示存在于漫游列表中，但未在计算机上安装的扩展。
+* ![“漫游”图标](../ide/media/vs2017ide-roamedicon.png)“***漫游***”：表示存在于漫游列表中，但未在计算机上安装的扩展。
   （可通过“下载”按钮安装这些扩展。）
-* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png "“漫游且已安装”图标") ***“漫游且已安装”***：表示存在于漫游列表中且已在此环境中安装的所有扩展。
+* ![“漫游且已安装”图标](../ide/media/vs2017ide-roamedinstalledicon.png)“***漫游且已安装***”：表示存在于漫游列表中且已在此环境中安装的所有扩展。
   （如果确定不希望漫游，可通过“停止漫游”按钮删除它们。）
-* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png "“已安装”图标") ***“已安装”***：表示此环境中已安装、但不属于漫游列表的所有扩展。
+* ![“已安装”图标](../ide/media/vs2017ide-installedicon.png)“***已安装***”：表示此环境中已安装、但不属于漫游列表的所有扩展。
   （可通过“启动漫游”按钮将扩展添加到漫游列表。）
 
 在登录时下载的任何扩展将作为“漫游且已安装”添加到列表中。 该扩展随即成为“漫游”列表的一部分，可以从任何计算机访问它。
@@ -118,7 +119,7 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 在 Visual Studio Enterprise 2017 中，当你进行编码时，实时单元测试能够在编辑器中提供实时单元测试结果和代码覆盖率。 该功能可用于 .NET Framework 及 .NET Core 的 C# 和 Visual Basic 项目，并支持 MSTest、xUnit 和 NUnit 三种测试框架。
 
-![Live Unit Testing](../ide/media/lut-codewindow.png " Visual Studio 的 Enterprise 版本中新增的 Live Unit Testing 功能的示例")
+![Live Unit Testing](../ide/media/lut-codewindow.png)
 
 有关详细信息，请参阅 [Live Unit Testing 简介](../test/live-unit-testing-intro.md)。 有关 Visual Studio Enterprise 2017 各个版本的新增功能列表，请参阅 [ Live Unit Testing 中的新增功能](../test/live-unit-testing-whats-new.md)。
 
@@ -153,27 +154,27 @@ Visual Studio 可以移动自身的扩展（以及第三方扩展），从而根
 
 在 Visual Studio 中处理项目时，可以对代码进行设置，并将代码快速提交和发布到 Git 服务。 还可以通过单击 IDE 右下角的按钮调出菜单来管理 Git 存储库。
 
-![Visual Studio 2017 与 Git 进行交互对话框](../ide/media/vsIDE-GitInteraction.png "Visual Studio IDE 中的 Git 工具")
+![Visual Studio 2017 与 Git 进行交互的对话框](../ide/media/vsIDE-GitInteraction.png)
 
 #### <a name="experience-improved-navigation-controls"></a>体验改进的导航控件
 
 我们改善了导航体验，可让你更自信地从 A 导航到 B，同时减少此过程中的干扰。
 
-* **15.4 中的新增功能**：转到定义（Ctrl+单击或 F12）&ndash; 鼠标用户按 Ctrl，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。  
+* **15.4 中的新增功能**：转到定义（Ctrl+单击或 F12）&ndash; 鼠标用户按 Ctrl，然后单击成员，可以更轻松地导航到成员定义。 通过按 **Ctrl** 并将鼠标悬停在代码符号上方，可在符号下方加下划线并将其转换为链接。 有关详细信息，请参阅[转到定义和查看定义](../ide/go-to-and-peek-definition.md)。
 
 * **转到实现** (Ctrl+F12) &ndash; 从任何基类型或基成员转到各种实现。
 
 * **转到全部**（Ctrl+T 或 Ctrl+,）&ndash; 直接导航到任何文件/类型/成员/符号声明。 可以筛选结果列表，也可以使用查询语法（例如使用“f searchTerm”导航到文件，使用“t searchTerm”导航到类型等）。
 
-  ![改进后的“转到全部”](../ide/media/vs2017ide-navigation-go-to.png "改进后的“转到全部”功能的示例")
+  ![改进后的“转到全部”](../ide/media/vs2017ide-navigation-go-to.png)
 
 * **查找所有引用** (Shift+F12) &ndash; 通过语法着色，可以按项目、定义和路径的组合对“查找所有引用”的结果进行分组。 还可以“锁定”结果，这样既可以继续查找其他引用，又不会丢失原始结果。
 
-  ![新的“查找所有引用”工具](../ide/media/vs2017ide-find-all-references.png "新的“查找所有引用”工具的示例")
+  ![新的“查找所有引用”工具](../ide/media/vs2017ide-find-all-references.png)
 
-* **结构可视化工具** &ndash; 灰色的竖虚线（缩进参考线）可以在代码中起到关键点的作用，方便用户获得可视范围内的上下文。 可以通过热门的 Productivity Power Tool 进行识别。 使用该工具，无需滚动即可将代码可视化，并随时了解当前位于哪一代码块。 将鼠标悬停在行上时会显示工具提示，通过工具提示可以看到该代码块的开头及其父级。 通过 TextMate 语法以及 C#、Visual Basic 和 XAML 支持的所有语言都可以使用该工具。  
+* **结构可视化工具** &ndash; 灰色的竖虚线（缩进参考线）可以在代码中起到关键点的作用，方便用户获得可视范围内的上下文。 可以通过热门的 Productivity Power Tool 进行识别。 使用该工具，无需滚动即可将代码可视化，并随时了解当前位于哪一代码块。 将鼠标悬停在行上时会显示工具提示，通过工具提示可以看到该代码块的开头及其父级。 通过 TextMate 语法以及 C#、Visual Basic 和 XAML 支持的所有语言都可以使用该工具。
 
-  ![Visual Studio 2017 结构可视化工具](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的结构可视化工具")
+  ![Visual Studio 2017 结构可视化工具](../ide/media/vsIDE-StructureVisualizer.png)
 
 若要深入了解新增的工作效率功能的详细信息，请参阅由 Mark Wilson-Thomas 发布的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/)（使用 Visual Studio 2017 提高工作效率）博客文章。
 
@@ -191,13 +192,13 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 现在，在调试过程中快进变得更容易，无需在要停止的行上设置断点。 在调试器中停止时，单击出现在代码行旁边的图标即可。 下次在代码路径中命中该代码时，代码即会运行至该行并停在此处。
 
-![Visual Studio 2017 调试 - 运行时单击](../ide/media/vs2017ide-RunToClick.png "Visual Studio 调试和诊断中的运行时单击")
+![Visual Studio 2017 调试 - 运行时单击](../ide/media/vs2017ide-RunToClick.png)
 
 #### <a name="the-new-exception-helper"></a>新的异常帮助程序
 
 新的异常帮助程序可以帮助你一目了然地查看异常信息。 异常信息以压缩形式呈现，你可以即时访问内部异常。 诊断 NullReferenceException 时，在异常帮助程序中可以快速查看为 null 的内容。
 
-![Visual Studio 中新的“异常帮助程序”对话框](../ide/media/vs2017ide-ExceptionHelper.png "新的“异常帮助程序”对话框")
+![Visual Studio 中“新异常帮助程序”对话框](../ide/media/vs2017ide-ExceptionHelper.png)
 
 有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
 
@@ -247,7 +248,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 通用 Windows 平台 (UWP) 是 Windows 10 的应用平台。 只需使用一个 API 集、一个应用包和一个存储便可开发适用于所有 Windows 10 设备的 UWP 应用 &ndash; PC、平板电脑、手机、Xbox、HoloLens、Surface Hub 等。 UWP 支持不同屏幕大小以及各种交互模型：无论是触控、鼠标及键盘、游戏控制器还是触笔。 UWP 应用的核心是这样一种理念，即用户可获得跨所有设备的移动体验，并可随时使用任何最便捷或最高效的设备完成手头任务。
 
- ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+ ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png)
 
 &mdash;从 C#、Visual Basic、C++ 或 JavaScript 中&mdash;选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 Visual Studio 2017 提供所有语言的 UWP 应用模板，借助该模板可创建一个适用于所有设备的项目。 工作完成后，可以生成应用包，并从 Visual Studio 中将其提交到 Microsoft Store，以面向任何使用 Windows 10 设备的客户推出应用。
 
@@ -270,7 +271,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 15.3 中的新增功能：为满足 iOS 开发需求，我们添加了独立的权利编辑器。 它包含便于浏览、用户友好的 UI。 要启动它，请双击 entitlements.plist 文件。
 
-![适用于 Xamarin 的权利编辑器](../ide/media/xamarin-entitlements-editor.png "适用于 Xamarin 的权利编辑器")
+![Xamarin 的权利编辑器](../ide/media/xamarin-entitlements-editor.png)
 
 ### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
 
@@ -309,9 +310,9 @@ Visual Studio 2017 所有版本随附：
 
 .NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET Core。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
 
-当前，它还包括 Docker 支持。  
+当前，它还包括 Docker 支持。
 
-15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。  
+15.3 中的新增功能：Visual Studio 2017 版本 15.3 支持 .NET Core 2.0 开发。 使用 .NET Core 2.0 前需分别下载并安装 .NET Core 2.0 SDK。
 
 有关详细信息，请参阅 [.NET Core 指南](/dotnet/core/index)页。
 

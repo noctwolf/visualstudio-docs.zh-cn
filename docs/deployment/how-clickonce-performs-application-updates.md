@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31557692"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 如何执行应用程序更新
 ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决定是否要更新应用程序的文件。 ClickOnce 更新开始后，使用一种称为技术*文件修补*从而避免冗余下载的应用程序文件。  

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe35d7b2467147c5f9f244357371f2d5dadb76b
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: a306276e015d06fe3becf297d0bb5834f640a1a7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34571641"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。  

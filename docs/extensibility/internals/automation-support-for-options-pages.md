@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128567"
 ---
 # <a name="automation-support-for-options-pages"></a>选项页的自动化支持
 Vspackage 可以提供自定义**选项**到对话框**工具**菜单 （工具选项页） 中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，可以使它们可用于自动化模型。  

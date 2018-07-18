@@ -14,13 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bce4b4e5c0d4a9d4f66fade6b01044ac149968a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1b06532771aaa432deccb8040c7dd7e5962dd15f
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764425"
 ---
-# <a name="execution-time-threads-view"></a>执行时间（线程视图）
+# <a name="execution-time-threads-view"></a>执行时间（“线程”视图）
 当系统中的线程主动在逻辑内核上工作时，线程视图时间线中的这些段表示执行时间。  
   
  通过内核上下文切换事件可检测线程状态的更改。 Windows 事件跟踪 (ETW) 每毫秒捕获一次样本堆栈。 在很短的绿色段中，则可能不会进行任何采样。 因此，某些较短的执行段可能不会显示任何调用堆栈。  

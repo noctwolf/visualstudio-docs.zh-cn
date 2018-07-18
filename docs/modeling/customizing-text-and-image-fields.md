@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953126"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 当形状中定义的文本修饰器时，它表示由文本字段。 有关初始化 TextFields 和其他 ShapeFields 的示例，检查 DSL 解决方案中的 Dsl\GeneratedCode\Shapes.cs。

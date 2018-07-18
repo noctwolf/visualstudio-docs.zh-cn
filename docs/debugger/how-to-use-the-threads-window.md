@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926236"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>演练： 调试多线程应用程序在 Visual Studio 中使用线程窗口
 Visual Studio 提供**线程**窗口和其他用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用**线程**窗口和**调试位置**工具栏。 有关其他工具的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。   

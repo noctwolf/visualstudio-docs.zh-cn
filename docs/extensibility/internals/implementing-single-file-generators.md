@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129358"
 ---
 # <a name="implementing-single-file-generators"></a>实现单个文件生成器
 自定义工具-有时称为单个文件生成器 — 可用于扩展[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目中的系统[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 自定义工具是实现的 COM 组件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>接口。 使用此接口，一个自定义工具会将单个输入的文件都转换为单个输出文件。 转换的结果可能是源代码或任何其他输出的非常有用。 自定义工具生成的代码文件的两个示例是在可视化设计器和生成使用 Web 服务描述语言 (WSDL) 文件中的更改的响应中生成代码。  

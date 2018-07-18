@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112511"
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
 作为一系列连续字节中获取对象的值。  

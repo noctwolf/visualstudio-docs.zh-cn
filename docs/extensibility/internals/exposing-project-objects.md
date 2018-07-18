@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130448"
 ---
 # <a name="exposing-project-objects"></a>公开项目对象
 自定义项目类型可以提供自动化对象，以便允许访问项目使用自动化接口。 每个项目类型需要提供标准<xref:EnvDTE.Project>从访问的自动化对象<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中的每个项，可以公开的<xref:EnvDTE.ProjectItem>通过访问的对象`Project.ProjectItems`。 除了这些标准的自动化对象，项目可以选择提供特定于项目的自动化对象。  

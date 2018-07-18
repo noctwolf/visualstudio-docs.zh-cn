@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128079"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
 重置，请使用 CreateExpInstance 实用程序来创建，或删除 Visual Studio 的实验实例。 实验实例可用于调试和测试而无需更改基础产品的 Visual Studio 扩展。  

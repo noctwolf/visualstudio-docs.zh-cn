@@ -39,6 +39,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948972"
 ---
 # <a name="documents-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“文档”
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后在“环境”节点中选择“文档”，即可访问此对话框。 如果“文档”未出现在列表中，请在“选项”对话框中选择“显示所有设置”。

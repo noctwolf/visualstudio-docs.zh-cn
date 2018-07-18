@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920584"
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>代码度量值问题疑难解答
 收集代码度量时，可能会遇到以下的一些问题：

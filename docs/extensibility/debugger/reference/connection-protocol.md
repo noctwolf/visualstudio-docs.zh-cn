@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109998"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
 指示正在使用的调试服务器和调试包 (DE) 之间进行通信的协议。  

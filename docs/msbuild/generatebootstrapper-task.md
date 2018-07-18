@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573793"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  

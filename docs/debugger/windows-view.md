@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478026"
 ---
 # <a name="windows-view"></a>窗口视图
 当你首次打开 Spy + + 时，Windows 视图将显示在系统中的所有 windows 和控件的树。 显示的窗口句柄和类名。 在当前的桌面窗口位于该树顶部。 所有其他 windows 桌面的子级，并根据标准的窗口层次结构列出。 同级窗口显示在其父下方缩进的可扩展列表。  

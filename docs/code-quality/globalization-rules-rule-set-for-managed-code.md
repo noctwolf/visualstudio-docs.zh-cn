@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920649"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>托管代码的“全球化规则”规则集
 你可以使用的 Microsoft 全球化规则规则集重点解决问题，可能会阻止从以不同语言、 区域设置中和区域文化正确显示应用程序中的数据。 你应包含此规则集如果本地化你的应用程序，则全球化，或两个。

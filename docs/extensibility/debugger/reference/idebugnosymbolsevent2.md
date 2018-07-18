@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112403"
 ---
 # <a name="idebugnosymbolsevent2"></a>IDebugNoSymbolsEvent2
 信号[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器用户界面以警告符号不找不到启动可执行文件的用户。  

@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptParseProcedureOld::ParseProcedureText |Microsoft 文档"
-ms.custom: 
+title: IActiveScriptParseProcedureOld::ParseProcedureText |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptParseProcedureOld.ParseProcedureText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptParseProcedureOld::ParseProcedureText
 ms.assetid: 21a21313-35ce-432d-b9a6-7999065f19ac
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24724997"
 ---
 # <a name="iactivescriptparseprocedureoldparseproceduretext"></a>IActiveScriptParseProcedureOld::ParseProcedureText
 分析给定的代码过程并将匿名过程添加到命名空间。  

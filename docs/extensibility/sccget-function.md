@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140647"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数可检索用于查看和编译但不能用于编辑的一个或多个文件的副本。 在大多数系统中，文件被标记为只读的。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110024"
 ---
 # <a name="debug-package"></a>调试包
 调试包在 Visual Studio shell 中运行，并处理所有 UI。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 进行通信。  

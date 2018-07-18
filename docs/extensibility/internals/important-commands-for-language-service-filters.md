@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130650"
 ---
 # <a name="important-commands-for-language-service-filters"></a>语言服务筛选器的重要命令
 如果你想要创建一个功能完整的语言服务筛选器，请考虑处理以下命令。 在中定义的命令标识符的完整列表<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>枚举为托管的代码和 Stdidcmd.h 标头文件对于非托管[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]代码。 你可以找到 Stdidcmd.h 文件*Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc。  

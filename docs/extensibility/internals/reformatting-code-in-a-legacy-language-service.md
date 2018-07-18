@@ -19,12 +19,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133180"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>重新格式化旧语言服务中的代码
 
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]源代码可以重新设置格式的规范化使用缩进和空格。 这可能包括插入或删除空格或在每个行开头的选项卡，添加行间情况下，新行或空格替换制表符或空格的选项卡。  
   
->**注意：**插入或删除换行字符可能会影响断点和书签，等的标记，但添加或删除空格或制表符不影响标记。  
+>**注意：** 插入或删除换行字符可能会影响断点和书签，等的标记，但添加或删除空格或制表符不影响标记。  
   
 用户可以通过选择启动 reformatting 操作**格式选择**或**格式文档**从**高级**上的菜单**编辑**菜单。 插入代码段或特定的字符时，也可以触发 reformatting 操作。 例如，当你键入 C# 中的右大括号，则匹配的左大括号和右大括号之间的所有内容是自动缩进到适当的级别。
   

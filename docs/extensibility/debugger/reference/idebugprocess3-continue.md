@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31117473"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 将继续运行此过程从已停止状态。 保留任何以前的执行状态 （如步骤），并再次执行的进程启动。  

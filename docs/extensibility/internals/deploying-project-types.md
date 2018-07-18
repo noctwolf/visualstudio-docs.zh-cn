@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127968"
 ---
 # <a name="deploying-project-types"></a>部署项目类型
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 安装新的项目类型聚合器 (ProjectAggregator2.dll) 以及 Windows Installer 程序包以进行重新分发 (ProjectAggregator2.msi)。 对托管代码项目类型，必须使用新的聚合器。 ProjectAggregator2 方法限制适用于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]项目导致无法正常工作的托管代码项目类型的聚合器。 以下步骤介绍如何更改你的 VSPackage 来使用新的聚合器。  

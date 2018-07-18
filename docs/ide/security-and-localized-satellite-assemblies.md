@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943743"
 ---
 # <a name="security-and-localized-satellite-assemblies"></a>安全性和已本地化的附属程序集
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134658"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳做法。  
@@ -165,7 +166,7 @@ ms.lasthandoff: 04/16/2018
 |-|-|  
 |**特性**|**定义**|  
 |URI|[必需]一个 URI，定义可以从加载映像的位置。 它可以是以下项之一：<br /><br /> -A[包 URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx)使用应用程序: / / 机构<br />-An 绝对组件资源引用<br />的包含本机资源的文件路径|  
-|背景|[可选]指示什么类型的后台源旨在一起使用。<br /><br /> 它可以是以下项之一：<br /><br /> *Light:*可以在浅色背景上使用了源。<br /><br /> *深色：*可以深背景上使用了源。<br /><br /> *高对比度：*可以在高对比度模式中的任何背景上使用了源。<br /><br /> *HighContrastLight:*可以在高对比度模式中浅色背景上使用了源。<br /><br /> *HighContrastDark:*可以深在高对比度模式中背景上使用了源。<br /><br /> 如果省略背景特性，则可以在任何背景上使用源。<br /><br /> 如果后台*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永远不会反转的源的颜色。 如果省略背景或将其设置为*高对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
+|背景|[可选]指示什么类型的后台源旨在一起使用。<br /><br /> 它可以是以下项之一：<br /><br /> *Light:* 可以在浅色背景上使用了源。<br /><br /> *深色：* 可以深背景上使用了源。<br /><br /> *高对比度：* 可以在高对比度模式中的任何背景上使用了源。<br /><br /> *HighContrastLight:* 可以在高对比度模式中浅色背景上使用了源。<br /><br /> *HighContrastDark:* 可以深在高对比度模式中背景上使用了源。<br /><br /> 如果省略背景特性，则可以在任何背景上使用源。<br /><br /> 如果后台*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永远不会反转的源的颜色。 如果省略背景或将其设置为*高对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
 |||  
   
  A\<源 > 元素可以具有完全的以下的可选子元素之一：  
@@ -688,7 +689,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
 -   我正在更新我 CPS 项目系统。 发生了什么情况**ImageName**和**StockIconService**？  
   
-    -   o 这些已删除时 CPS 已更新为使用名字对象。 不再需要调用**StockIconService**，只需传递所需**KnownMoniker**对方法或属性使用**ToProjectSystemType()**中的扩展方法CPS 实用程序。 你可以找到从映射**ImageName**到**KnownMonikers**下面：  
+    -   o 这些已删除时 CPS 已更新为使用名字对象。 不再需要调用**StockIconService**，只需传递所需**KnownMoniker**对方法或属性使用**ToProjectSystemType()** 中的扩展方法CPS 实用程序。 你可以找到从映射**ImageName**到**KnownMonikers**下面：  
   
         |||  
         |-|-|  

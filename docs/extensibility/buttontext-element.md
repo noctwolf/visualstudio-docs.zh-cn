@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100174"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此字段允许你指定各种菜单中显示的文本。 默认情况下，`ButtonText`元素出现在菜单控制器中。 `ButtonText`元素也成为默认的如果其他文本字段为空白。 `ButtonText`元素不能为空，即使指定了其他文本字段。  

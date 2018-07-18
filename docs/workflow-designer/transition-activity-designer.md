@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977492"
 ---
 # <a name="transition-activity-designer"></a>事务活动设计器
 
@@ -33,7 +34,7 @@ Transition 活动设计器允许您在两个状态之间配置转换。
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Statements.Transition.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Transition> 活动设计器的友好名称。 默认值是**T1**。 可在属性网格、扩展转换设计器的标题以及扩展转换设计器内的操作部分的标题中编辑值。 <xref:System.Activities.Activity.DisplayName%2A> 用于痕迹导航，后者显示在工作流设计器顶部。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.Transition.Condition%2A>|False|如果存在，请指定一个表达式，计算结果必须为**True**控制权传递给目标状态之前。 可以在属性网格和扩展转换设计器中编辑此条件。 共享转换中的多个条件按显示在转换设计器中的顺序进行评估。 **注意：**请注意，如果<xref:System.Activities.Statements.Transition.Condition%2A>转换的计算结果为**False** (或所有共享的触发转换条件的计算结果为**False**)，转换将不发生和所有转换的状态下的所有触发将被重新都计划。 在本教程中，由于配置条件的方式，这种情况不会发生（我们针对猜测是正确或者错误提供了具体的操作）。|
+|<xref:System.Activities.Statements.Transition.Condition%2A>|False|如果存在，请指定一个表达式，计算结果必须为**True**控制权传递给目标状态之前。 可以在属性网格和扩展转换设计器中编辑此条件。 共享转换中的多个条件按显示在转换设计器中的顺序进行评估。 **注意：** 请注意，如果<xref:System.Activities.Statements.Transition.Condition%2A>转换的计算结果为**False** (或所有共享的触发转换条件的计算结果为**False**)，转换将不发生和所有转换的状态下的所有触发将被重新都计划。 在本教程中，由于配置条件的方式，这种情况不会发生（我们针对猜测是正确或者错误提供了具体的操作）。|
 |**源**|True|指示源自此转换的状态。 单击源状态的名称可将设计器视图切换到状态的扩展视图。 在创建转换时设置此值，并且不能更改它。|
 |<xref:System.Activities.Statements.Transition.Trigger%2A>|False|指定其完成启动转换的活动。 若要设置此活动，将活动从**工具箱**拖放到**触发器**转换的部分。|
 |<xref:System.Activities.Statements.Transition.Action%2A>|False|指定触发器活动完成时执行的活动和<xref:System.Activities.Statements.Transition.Condition%2A>(如果有） 计算结果为**true**。 在源状态的 <xref:System.Activities.Statements.State.Exit%2A> 活动后、转换到目标状态时执行此活动，如果存在，则执行。 当扩展转换设计器时，可以通过将活动从设置此值**工具箱**拖放到**操作**转换的部分。 单个转换可对应多个操作。 可以展开和收缩各个操作，在转换中存在多个操作时可通过单击在操作上显示的向上或向下箭头键进行排序。|

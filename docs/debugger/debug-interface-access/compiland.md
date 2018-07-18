@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457834"
 ---
 # <a name="compiland"></a>编译单位
 还有一个`SymTagCompiland`符号将每个编译单位链接到的.exe 文件。 编译单位信息拆分之间具有符号`SymTagCompiland`标记，可检索而无需加载其他编译单位符号和符号与`SymTagCompilandDetails`标记，这可能需要加载其他符号。  

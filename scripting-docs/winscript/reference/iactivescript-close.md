@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::Close |Microsoft 文档"
-ms.custom: 
+title: IActiveScript::Close |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Close
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Close
 ms.assetid: cc7dd63b-1d7e-410a-857b-09ea3aade275
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640967"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 使脚本引擎放弃任何当前加载的脚本，丢失其状态，并释放任何它具有对其他对象，因此输入已关闭的状态的接口指针。 事件接收器、 立即执行的脚本文本和已正在进行的宏调用完成之前的状态更改 (使用[IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)取消正在运行的脚本线程)。 接口释放以防止出现循环引用问题之前，必须创建主机调用此方法。  

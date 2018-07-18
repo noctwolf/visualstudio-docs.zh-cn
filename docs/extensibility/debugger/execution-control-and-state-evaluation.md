@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098168"
 ---
 # <a name="execution-control-and-state-evaluation"></a>执行控制和状态评估
 调试应用程序需要实现单步执行函数，在断点处停止和继续执行诸如执行控件功能。 Visual Studio 调试基调试器组件之间的事件在其执行控件发送。  

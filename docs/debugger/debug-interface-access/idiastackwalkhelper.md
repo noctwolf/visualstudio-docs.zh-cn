@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464961"
 ---
 # <a name="idiastackwalkhelper"></a>IDiaStackWalkHelper
 便于审核堆栈使用程序调试数据库 (.pdb) 文件。  
@@ -42,7 +43,7 @@ IDiaStackWalkHelper: IUnknown
 |[IDiaStackWalkHelper::searchForReturnAddress](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddress.md)|搜索指定的堆栈帧接近函数寄信人地址。|  
 |[IDiaStackWalkHelper::searchForReturnAddressStart](../../debugger/debug-interface-access/idiastackwalkhelper-searchforreturnaddressstart.md)|搜索指定的堆栈帧的寄信人地址处或附近的指定的堆栈地址。|  
 |[IDiaStackWalkHelper::frameForVA](../../debugger/debug-interface-access/idiastackwalkhelper-frameforva.md)|检索包含指定的虚拟地址的堆栈帧。|  
-|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|检索包含指定的虚拟地址的符号。 **注意：**符号必须具有类型`SymTagFunctionType`(从值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。|  
+|[IDiaStackWalkHelper::symbolForVA](../../debugger/debug-interface-access/idiastackwalkhelper-symbolforva.md)|检索包含指定的虚拟地址的符号。 **注意：** 符号必须具有类型`SymTagFunctionType`(从值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。|  
 |[IDiaStackWalkHelper::pdataForVA](../../debugger/debug-interface-access/idiastackwalkhelper-pdataforva.md)|返回与指定的虚拟地址相关联的 PDATA 数据块。|  
 |[IDiaStackWalkHelper::imageForVA](../../debugger/debug-interface-access/idiastackwalkhelper-imageforva.md)|检索给定的虚拟地址某处的可执行文件的内存空间中的可执行文件，起始虚拟地址。|  
   

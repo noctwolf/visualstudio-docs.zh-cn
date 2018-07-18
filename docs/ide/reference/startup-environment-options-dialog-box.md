@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31942485"
 ---
 # <a name="startup-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“启动”
 使用此页可以自定义 Visual Studio 起始页或在 Visual Studio 启动时设置不同的默认操作。 有关详细信息，请参阅[自定义起始页](../../ide/customizing-the-start-page-for-visual-studio.md)。

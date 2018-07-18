@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951786"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口或“查找/命令”  框中的命令。 在每种情况下，都使用大于号 (`>`) 指示后面跟随的是命令，而不是搜索或调试操作。

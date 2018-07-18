@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131905"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
 VSPackage 必须注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便集成的开发环境 (IDE) 将正确路由其命令。  

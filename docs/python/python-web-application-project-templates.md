@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 04/17/2018
+ms.date: 05/18/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d76bc7868c78b1def09376cb2382aa39cff1cda
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752035"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -41,7 +42,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | 空白 Bottle Web 项目 | 在 `app.py` 中生成最小的应用，其中包括 `/` 的主页和 `/hello/<name>` 页，它使用非常短的内嵌页模板回显 `<name>`。 |
 | 空白 Django Web 项目 | 使用核心 Django 网站结构生成 Django 项目，但没有 Django 应用。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 1 步](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| 空白 Flask Web 项目 | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)中的详细步骤操作的结果。
+| 空白 Flask Web 项目 | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 组
 
@@ -51,19 +52,19 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | Bottle Web 项目 | 生成一个应用，其静态文件包含在 `static` 文件夹中，并通过 `app.py` 中的代码进行处理。 单个页面的路由包含在 `routes.py` 中，`views` 文件夹包含页面模板。|
 | Django Web 项目 | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面、身份验证支持和一个 SQLite 数据库（但没有数据模型）。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 4 步](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
-| Flask Web 项目 | 生成一个应用，其静态文件包含在 `static` 文件夹中。 `views.py` 中的代码处理路由，页面模板使用 `templates` 文件夹中包含的 Jinja 引擎。 `runserver.py` 文件提供启动代码。 |
-| Flask/Jade Web 项目 | 生成与使用“Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎。 |
+| Flask Web 项目 | 生成一个应用，其静态文件包含在 `static` 文件夹中。 `views.py` 中的代码处理路由，页面模板使用 `templates` 文件夹中包含的 Jinja 引擎。 `runserver.py` 文件提供启动代码。 请参阅[学习 Flask 步骤 4](learn-flask-visual-studio-step-04-full-flask-project-template.md)。 |
+| Flask/Jade Web 项目 | 生成与使用“Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎的 Jade 扩展。 |
 
 ### <a name="polls-group"></a>投票组
 
-“投票(框架) Web 项目”模板创建一个初学者 Web 应用，用户可以通过该应用对不同的投票问题进行投票。 每个应用都基于“Web”项目模板的结构生成，从而使用数据库来管理投票和用户响应。 这些应用包含适当的数据模型以及用来从 `samples.json` 文件加载投票的特殊应用页（“/seed”）。
+“投票(框架) Web 项目”模板创建一个初学者 Web 应用，用户可以通过该应用对不同的投票问题进行投票。 每个应用都基于“Web”项目模板的结构生成，从而使用数据库来管理投票和用户响应。 这些应用包含相应的数据模型以及用于从 `samples.json` 文件加载投票的特殊应用页 (/seed)。
 
 | 模板 | 描述 |
 | --- | --- |
 | 投票 Bottle Web 项目 | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 `models` 文件夹中，`settings.py` 文件包含用于确定使用哪个数据存储的代码。 |
 | 投票 Django Web 项目 | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面和一个 SQLite 数据库。 加入对 Django 管理界面的自定义设置，以允许经过身份验证的管理员创建和管理投票。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django - 第 6 步](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
-| 投票 Flask Web 项目 | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 `models` 文件夹中，`settings.py` 文件包含用于确定使用哪个数据存储的代码。 该应用对页面模板使用 Jinja 引擎。 |
-| 投票 Flask/Jade Web 项目 | 生成与使用“投票 Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎。 |
+| 投票 Flask Web 项目 | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 `models` 文件夹中，`settings.py` 文件包含用于确定使用哪个数据存储的代码。 该应用对页面模板使用 Jinja 引擎。 请参阅[学习 Flask 步骤 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)。 |
+| 投票 Flask/Jade Web 项目 | 生成与使用“投票 Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎的 Jade 扩展。 |
 
 ## <a name="installing-project-requirements"></a>安装项目要求
 
@@ -71,7 +72,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 
-如果使用的是源代码管理，通常会忽略虚拟环境文件夹，因为该环境只能使用 `requirements.txt` 重新创建。 排除文件夹的最佳方法是先在上面的提示中选择“我将自行安装”，然后在创建虚拟环境之前禁用自动提交。 有关详细信息，请参阅 [Django 学习教程 - 第 1-2 步和第 1-3 步](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
+如果使用的是源代码管理，通常会忽略虚拟环境文件夹，因为该环境只能使用 `requirements.txt` 重新创建。 排除文件夹的最佳方法是先在上面的提示中选择“我将自行安装”，然后在创建虚拟环境之前禁用自动提交。 有关详细信息，请参阅[学习 Django 教程 - 步骤 1-2 和 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)以及[学习 Flask 教程 - 步骤 1-2 和 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)
 
 部署到 Microsoft Azure App Service 时，选择一个 Python 版本作为[站点扩展](https://aka.ms/PythonOnAppService)并手动安装包。 此外，因为 Azure 应用服务从 Visual Studio 部署时**不会**自动安装 `requirements.txt` 中的包，请遵照 [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService) 上的配置详细信息操作。
 

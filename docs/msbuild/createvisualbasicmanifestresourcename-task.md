@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572900"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>CreateVisualBasicManifestResourceName 任务
 从给定的 .resx 文件名或其他资源创建 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 样式的清单名称。  

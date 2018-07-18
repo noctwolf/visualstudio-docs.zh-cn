@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112202"
 ---
 # <a name="idebugentrypointevent2"></a>IDebugEntryPointEvent2
 当程序将要执行用户代码的第一个指令，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  

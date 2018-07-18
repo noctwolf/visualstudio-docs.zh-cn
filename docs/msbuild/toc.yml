@@ -84,6 +84,8 @@
               items:
                 - name: 演练：创建内联任务
                   href: walkthrough-creating-an-inline-task.md
+            - name: 使用 RoslynCodeTaskFactory 创建 MSBuild 内联任务
+              href: msbuild-roslyncodetaskfactory.md
         - name: 比较属性和项
           href: comparing-properties-and-items.md
         - name: MSBuild 特殊字符
@@ -279,6 +281,8 @@
               href: csc-task.md
             - name: Delete 任务
               href: delete-task.md
+            - name: DownloadFile 任务
+              href: downloadfile-task.md
             - name: Error 任务
               href: error-task.md
             - name: Exec 任务
@@ -351,6 +355,8 @@
               href: touch-task.md
             - name: UnregisterAssembly 任务
               href: unregisterassembly-task.md
+            - name: Unzip 任务
+              href: unzip-task.md
             - name: UpdateManifest 任务
               href: updatemanifest-task.md
             - name: Vbc 任务
@@ -367,6 +373,8 @@
               href: xmlpoke-task.md
             - name: XslTransformation 任务
               href: xsltransformation-task.md
+            - name: ZipDirectory 任务
+              href: zipdirectory-task.md
         - name: MSBuild 条件
           href: msbuild-conditions.md
         - name: MSBuild 的条件构造

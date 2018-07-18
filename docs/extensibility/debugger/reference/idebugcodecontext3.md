@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108503"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 扩展[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)接口要启用的模块和过程接口检索。  

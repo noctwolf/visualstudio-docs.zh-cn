@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142927"
 ---
 # <a name="simplified-embedding"></a>简化嵌入
 当有父级其文档视图对象 （即，所做的子级） 简化嵌入在编辑器中启用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口实现以处理其窗口命令。 简化的嵌入编辑器不能承载活动控件。 在下图显示用于创建编辑器具有简化的嵌入的对象。  

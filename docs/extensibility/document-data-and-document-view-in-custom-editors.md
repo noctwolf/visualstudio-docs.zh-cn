@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130253"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>文档数据和自定义编辑器中的文档视图
 自定义编辑器由两部分组成： 文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据，文档视图对象 （或"视图"） 表示要在其中显示文档数据对象的一个或多个 windows。  

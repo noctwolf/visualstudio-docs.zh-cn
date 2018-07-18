@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131874"
 ---
 # <a name="source-control-vspackage-architecture"></a>源控件 VSPackage 体系结构
 源代码管理包是使用 VSPackage 服务[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 提供。 反过来，源代码管理包提供其功能作为源控件服务。 此外，源代码管理包是一个更通用的替代方案，比了源代码管理集成到源代码管理插件[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

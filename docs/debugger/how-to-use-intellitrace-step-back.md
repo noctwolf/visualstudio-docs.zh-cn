@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33881219"
 ---
 # <a name="view-snapshots-using-intellitrace-step-back-in-visual-studio"></a>使用 Visual Studio 中的 IntelliTrace 步骤后的视图快照
 
@@ -61,7 +62,7 @@ IntelliTrace 回步骤是在 Visual Studio Enterprise 2017 15.5 及更高版本�
 
 ## <a name="navigate-and-view-snapshots"></a>导航并查看快照
 
-1. 通过使用事件之间导航**步骤向后 （Alt + [）**和**单步前进 (Alt +])** 中调试工具栏按钮。
+1. 通过使用事件之间导航**步骤向后 （Alt + [）** 和**单步前进 (Alt +])** 中调试工具栏按钮。
 
     这些按钮导航中显示的事件**事件**选项卡中**诊断工具窗口**。 单步执行向后翻或转发到的事件自动激活[历史调试](../debugger/historical-debugging.md)所选事件。
 

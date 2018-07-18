@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944669"
 ---
 # <a name="code-analysis-project-designer"></a>“项目设计器”->“代码分析”
 包含可供你选择用于运行代码的代码分析工具。 工具报告有关程序集的信息，例如违反了 Microsoft .NET Framework 设计准则中规定的编程和设计规则。

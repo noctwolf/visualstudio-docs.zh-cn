@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138849"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数签入到源代码管理系统，存储所做的更改和创建新版本的以前的签出文件。 使用计数和要签入的文件的名称的数组调用此函数。  

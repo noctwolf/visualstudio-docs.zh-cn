@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129636"
 ---
 # <a name="elimination-of-sak-files"></a>消除了 ~ SAK 文件
 在源控件插件 API 1.2，~ 功能标志和检测源代码管理插件支持 MSSCCPRJ 文件和共享签出的新函数已替换为 SAK 文件。  

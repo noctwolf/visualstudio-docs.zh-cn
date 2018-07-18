@@ -23,6 +23,7 @@ ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/11/2018
+ms.locfileid: "34065684"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 A[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。  

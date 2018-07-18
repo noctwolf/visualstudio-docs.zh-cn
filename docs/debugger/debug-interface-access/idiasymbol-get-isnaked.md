@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463284"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 检索一个标志，指定函数是否具有[裸](/cpp/cpp/naked-cpp)属性 （即，该函数具有由编译器添加任何 prolog 或 epilog 代码）。  

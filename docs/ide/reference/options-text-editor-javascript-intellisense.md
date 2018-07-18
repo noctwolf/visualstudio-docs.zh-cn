@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31948803"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的 **“工具”** 、 **“选项”**, **“文本编辑器”** 、 **““IntelliSense””**, **“IntelliSense”**, **“工具”.** 页。
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/26/2018
 
 **包含的文件**
 
-此选项指定文件加载到语言服务上下文的顺序。 可以使用 **“移除”**、 **“上移”**和 **“下移”** 按钮配置此顺序。 为使 IntelliSense 正常工作，依赖于另一文件的文件必须在另一文件加载后加载。
+此选项指定文件加载到语言服务上下文的顺序。 可以使用 **“移除”**、 **“上移”** 和 **“下移”** 按钮配置此顺序。 为使 IntelliSense 正常工作，依赖于另一文件的文件必须在另一文件加载后加载。
 
 > [!CAUTION]
 > 如果在两个或更多隐式引用中无条件定义了一个对象，则将使用此列表中的最后一个引用来定义此对象。

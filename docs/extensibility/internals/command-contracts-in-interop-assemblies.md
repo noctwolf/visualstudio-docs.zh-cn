@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127367"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>互操作程序集中的命令协定
 处理命令传递的基本协定<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口是，则环境将调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法以确定是否支持该命令，如果它支持，以确定其状态和文本。 然后，环境调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>方法来执行命令。  

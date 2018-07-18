@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108925"
 ---
 # <a name="launching-the-debugger"></a>启动调试器
 启动调试器时，需要发送的方法和事件及其正确属性的正确的顺序。  

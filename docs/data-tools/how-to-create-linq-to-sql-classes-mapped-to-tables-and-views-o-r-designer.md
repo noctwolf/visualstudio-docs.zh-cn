@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924630"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何： 创建 LINQ to SQL 类映射到表和视图 （O/R 设计器）
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 映射到数据库表和视图的类称为*实体类*。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 创建通过拖动表或视图从基于数据库表或视图的实体类**服务器资源管理器**/**数据库资源管理器**到[LINQ to SQL 中的工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]生成这些类并应用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性来启用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 功能（<xref:System.Data.Linq.DataContext> 的数据通信和编辑功能）。 有关详细信息[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]类，请参阅[LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。

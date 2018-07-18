@@ -14,17 +14,18 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a653dd6488a366f229311c3541c37cf5e984fc99
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d8585d2f8ec34371226c2211e318b71e356a331
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765864"
 ---
 # <a name="quickstart-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>快速入门：在 Visual Studio 中使用 XAML 和 C&#35 创建第一个通用 Windows 平台应用程序
 
 在这个 5-10 分钟的 Visual Studio 集成开发环境 (IDE) 简介中，你将创建能在任何 Windows 10 设备上运行的"Hello World"应用。 为此，将使用通用 Windows 平台 (UWP) 项目模板、Extensible Application Markup Language (XAML) 和 C# 编程语言。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 04/26/2018
 
   ![在解决方案资源管理器中，打开 MainPage.xaml ](../ide/media/uwp-solution-explorer-MainPage-xaml.png)
 
-  出现两个窗格：一个是“XAML 设计器”，其中包含设计画布；另一个是“XAML 编辑器”，可用于添加或更改代码。    
+  出现两个窗格：一个是“XAML 设计器”，其中包含设计画布；另一个是“XAML 编辑器”，可用于添加或更改代码。
 
   ![XAML 编辑器中的“XAML 设计器”窗格](../ide/media/uwp-xaml-editor.png)
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 04/26/2018
 
 1. 选择“本地计算机”以启动该应用程序。
 
-   ![单击“本地计算机”，启用并调试 UWP 应用](../ide/media/uwp-start-or-debug.png "单击“本地计算机”，启用并调试 UWP 应用")
+   ![单击“本地计算机”以启动并调试 UWP 应用](../ide/media/uwp-start-or-debug.png)
 
    （或者，也可以在菜单栏选择“调试” > “开始调试”或按 F5 启动应用。）
 

@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144325"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一个表示为现有 Visual Studio 主题的颜色的.xml 文件并将它到.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为很容易地比较.xml 文件之间的差异，此工具可用于管理在源代码管理中的自定义颜色。 此外可以通过它挂钩到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
@@ -110,7 +111,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序采用一
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|类型|[必需]颜色的类型。 它可以是以下项之一：<br /><br /> *CT_INVALID:*的颜色是无效或未设置。<br /><br /> *CT_RAW:*原始 ARGB 值。<br /><br /> *CT_COLORINDEX:*不要使用。<br /><br /> *CT_SYSCOLOR:* SysColor 从一种 Windows 系统颜色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:*自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:*不要使用。<br /><br /> *CT_TRACK_BACKGROUND:*不要使用。|  
+|类型|[必需]颜色的类型。 它可以是以下项之一：<br /><br /> *CT_INVALID:* 的颜色是无效或未设置。<br /><br /> *CT_RAW:* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX:* 不要使用。<br /><br /> *CT_SYSCOLOR:* SysColor 从一种 Windows 系统颜色。<br /><br /> *CT_VSCOLOR:* __VSSYSCOLOREX 从 Visual Studio 颜色。<br /><br /> *CT_AUTOMATIC:* 自动的颜色。<br /><br /> *CT_TRACK_FOREGROUND:* 不要使用。<br /><br /> *CT_TRACK_BACKGROUND:* 不要使用。|  
 |源|[必需]以十六进制表示的颜色的值|  
   
  类型属性中的架构支持所有支持的 __VSCOLORTYPE 枚举的值。 但是，我们建议使用只有 CT_RAW 和 CT_SYSCOLOR。  

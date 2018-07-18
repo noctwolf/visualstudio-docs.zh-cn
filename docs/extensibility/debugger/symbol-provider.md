@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126161"
 ---
 # <a name="symbol-provider"></a>符号提供程序
 表达式计算器实现必须访问才能计算变量与表达式由语言编译器生成的符号调试信息。 它通过使用的接口符号提供程序 (SP)，也称为符号处理程序来执行此操作。  

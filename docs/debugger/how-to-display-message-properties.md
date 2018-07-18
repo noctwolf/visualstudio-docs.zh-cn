@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473272"
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 若要了解有关消息中列出的详细信息[消息视图](../debugger/messages-view.md)，使用[消息属性对话框](../debugger/message-properties-dialog-box.md)。  

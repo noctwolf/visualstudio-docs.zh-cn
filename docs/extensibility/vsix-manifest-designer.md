@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148114"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，它设置 Visual Studio 扩展的安装行为。  
@@ -110,7 +111,7 @@ ms.lasthandoff: 04/16/2018
  **扩展 SDK**  
  指定不应用范围限定为特定的产品和版本的全局安装。 **目标平台标识符**是如"Windows"，你面向的平台。 **指定的目标平台版本**是版本，例如 8.0 的目标平台。 **SDK 名称**和**SDK 版本**分别是的名称和的 sdk 的版本号。  
   
- **此 VSIX 针对所有用户安装 （需要在安装的提升）**复选框  
+ **此 VSIX 针对所有用户安装 （需要在安装的提升）** 复选框  
  如果选中此复选框，此扩展插件是针对所有用户; 安装否则，它是仅为当前用户安装。  
   
  **由 Windows 安装程序安装此 VSIX**复选框  

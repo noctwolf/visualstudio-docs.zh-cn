@@ -18,11 +18,12 @@ ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a81d640e2ecebe46a20f7a3661584cb5c7423691
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: c34eec9f8eab1f870344ec6995bfcbd8fea8739c
+ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704391"
 ---
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator 社区版 (CE)
 
@@ -42,7 +43,7 @@ Dotfuscator 可以对 .NET 程序集[进行模糊处理][obfuscation]，以阻�
 
 **保护应用程序的完整性**也很重要。
 不良分子除实施反向工程外，还可能尝试盗版应用程序、更改应用程序在运行时的行为或操作数据。
-Dotfuscator 可以赋予应用程序[检测、报告和响应未经授权的使用][checks]功能，包括篡改和第三方调试。
+Dotfuscator 可赋予应用程序[检测、报告和响应未经授权的使用][checks]功能，包括篡改、第三方调试和取得 root 权限的设备。
 
 有关 Dotfuscator 如何融入安全软件开发生命周期的详细信息，请参阅 PreEmptive Solutions 的 [SDL 应用保护页][sdl-protection]。
 
@@ -57,6 +58,7 @@ Dotfuscator CE 中包含的 [.NET 模糊处理][obfuscation]和其他[应用程�
 * *[重命名][renaming]* 标识符，增加对已编译程序集实施反向工程的难度。
 * *[防篡改][tamper]*，检测篡改应用程序的执行、发送事件警报并终止被篡改会话。
 * *[防调试][debug]*，检测调试器与正在运行的应用程序的附加情况、传输事件警报并终止调试会话。
+* [防取得 root 权限的设备][root]，检测应用程序是否在取得 root 权限的 Android 设备上运行，并终止这些设备上的会话。
 * *[应用程序到期行为][shelflife]*，对“生命周期终结”日期进行编码、在到期日期后执行应用程序时传输警报，以及终止到期应用程序会话。
 * *[异常跟踪][exceptions]*，监视应用程序中发生的未经处理的异常。
 * [会话][sessions]和[功能][features]使用情况跟踪，确定执行了哪些应用程序、这些应用程序的版本以及使用了这些应用程序中的哪些功能。
@@ -84,29 +86,30 @@ Dotfuscator CE 提供现成的基础保护。
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-- [assemblies]: https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
-- [software-protection]: https://www.preemptive.com/software-protection
-- [obfuscation]: https://www.preemptive.com/obfuscation
-- [app-protection]: https://www.preemptive.com/application-protection
-- [sdl-protection]: https://www.preemptive.com/solutions/SDL-App-Protection
-- [net-obfuscator]: https://www.preemptive.com/products/dotfuscator/overview
-- [download]: https://www.preemptive.com/products/dotfuscator/downloads
+[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[software-protection]:  https://www.preemptive.com/software-protection
+[obfuscation]:  https://www.preemptive.com/obfuscation
+[app-protection]:  https://www.preemptive.com/application-protection
+[sdl-protection]:  https://www.preemptive.com/solutions/SDL-App-Protection
+[net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
+[download]:  https://www.preemptive.com/products/dotfuscator/downloads
 
-- [install]: install.md
-- [capabilities]: capabilities.md
-- [upgrades]: upgrades.md
+[install]:  install.md
+[capabilities]:  capabilities.md
+[upgrades]:  upgrades.md
 
-- [get-started]: https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
+[get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
-- [renaming]: https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
+[renaming]:  https://www.preemptive.com/dotfuscator/ce/docs/help/obfuscation_renaming.html
 
-- [checks]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
-- [tamper]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
-- [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
-- [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
+[checks]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_overview.html
+[tamper]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html
+[debug]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
+[root]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_root.html
+[shelflife]:  https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-- [exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
-- [sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
-- [features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
+[exceptions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]:  https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
-- [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
+[full]:  https://www.preemptive.com/dotfuscator/ce/docs/help/index.html

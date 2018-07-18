@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126905"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
 类型可视化工具是非常特定的格式显示一段数据的组件。 这种格式可以完全取决于实施者的可视化工具，最终用户或第三方供应商的可视化工具是它。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952623"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 可以使用映像形状可以指定域类生成的设计器中的显示方式。 通过设置定义是映像形状`Image`类预定义的图像文件的属性。 支持以下格式：

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477870"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/18/2018
   
 |属性|描述|  
 |--------------|-----------------|  
-|**Path**|.vsglog 文件的路径。 **注意：**下旧版捕获，此属性是未使用。|  
+|**Path**|.vsglog 文件的路径。 **注意：** 下旧版捕获，此属性是未使用。|  
   
  **模块信息**  
  列出有关在捕获会话期间由应用加载的动态链接库 (DLL) 的名称和版本。  

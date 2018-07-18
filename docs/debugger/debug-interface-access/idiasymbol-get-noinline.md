@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468816"
 ---
 # <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
 检索用于指定函数是否已标记为不可内联的标志 (使用[noinline](/cpp/cpp/noinline)属性)。  

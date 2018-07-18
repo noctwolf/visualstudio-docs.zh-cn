@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144432"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 元素（Visual Studio 模板）
 指定项模板将显示在哪种项目类型中。 当此元素很重要[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`false`。 当[ShowByDefault （Visual Studio 模板）](../extensibility/showbydefault-visual-studio-templates.md)设置为`true`，则所有项目类型中的可用项模板。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="remarks"></a>备注  
  `TemplateGroupID` 是一个元素。  
   
- 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本号 >*\Projects\\)对筛选器模板中显示**添加新项**对话框。  
+ 值`TemplateGroupID`元素使用与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本号 >* \Projects\\)对筛选器模板中显示**添加新项**对话框。  
   
 |Visual C++ 值|含义|  
 |------------------------|-------------|  

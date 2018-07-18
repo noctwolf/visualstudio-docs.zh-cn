@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31924299"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 代码分析使用内置的字典来检查拼写，语法情况下和的其他命名约定中的错误代码中的标识符[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]准则。 你可以创建要添加、 删除或修改条款、 缩写，以及对内置字典首字母缩写词的自定义字典 Xml 文件。

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102689"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Getting Started with 调试器扩展性
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供必须具有创建和自定义使用调试程序中的调试器组件的信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境。  

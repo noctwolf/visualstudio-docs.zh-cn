@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31143882"
 ---
 # <a name="walkthrough-outlining"></a>演练： 大纲显示
 你可以实现基于语言的功能，例如通过定义类型的文本区域，你想要展开或折叠大纲显示。 你可以定义区域语言服务上下文中或可以定义你自己的文件名称扩展和内容类型，还可以将区域定义应用于仅该类型，或可以将区域定义应用于现有内容类型 （如"text")。 本演练演示如何定义和显示大纲区域。  

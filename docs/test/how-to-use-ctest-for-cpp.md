@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ec0dd78b7bfdc3389a9867478e546c5456e42437
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98e258c2547bbd3cd1b87d289bf643956acfdb1d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751028"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 CTest
 
@@ -29,7 +30,7 @@ Visual Studio 中的 CMake 支持不涉及 Visual Studio 项目系统。 因此�
 
 下图显示使用 Google Test 框架的 CTest 运行结果：
 
-![VS2017 15.6 中使用 Google Test 框架的 CTest](media/ctest-test-explorer.png "测试资源管理器中的 CTest 和 Google Test")
+![使用 VS2017 15.6 中的 Google Test 框架进行 CTest](media/ctest-test-explorer.png)
 
 如果使用的是 CTest 而不是 Google 或 Boost 适配器，你将看到 CTest 级别而非单个测试方法级别的结果。 可以调试并单步调试仅限 CTest 的可执行文件，但不支持单个测试上的堆栈跟踪。
 
@@ -37,7 +38,7 @@ Visual Studio 中的 CMake 支持不涉及 Visual Studio 项目系统。 因此�
 
 在 Visual Studio 2017 版本 15.5中，CTest 没有与“测试资源管理器”集成。 可以从 CMake 主菜单，或是在“解决方案资源管理器”中从 CMakeLists.txt 文件的上下文菜单运行测试。 测试结果会定向到 Visual Studio 输出窗口。
 
-![在 VS2017 15.5 中运行 CTest 测试](media/cpp-cmake-run-tests.png "在 15.5 中运行 CTest 测试")
+![在 VS2017 15.5 中运行 CTest 测试](media/cpp-cmake-run-tests.png)
 
 ## <a name="see-also"></a>请参阅
 

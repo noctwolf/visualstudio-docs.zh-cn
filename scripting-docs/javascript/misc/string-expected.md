@@ -1,13 +1,13 @@
 ---
-title: "缺少字符串 |Microsoft 文档"
-ms.custom: 
+title: 缺少字符串 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5005
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632797"
 ---
 # <a name="string-expected"></a>缺少字符串
 你尝试调用**String.prototype.toString**或**String.prototype.valueOf**以外的类型的对象上的方法`String`。 调用此类型的对象的类型必须为`String`。  

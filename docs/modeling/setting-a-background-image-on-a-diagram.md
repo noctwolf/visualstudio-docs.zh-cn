@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949888"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK 中，可以使用自定义代码为生成的设计器设置背景图像。

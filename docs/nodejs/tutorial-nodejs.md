@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1d5cbc7287c77e08bb2ddabbf31615c4b2d0075c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: c364c977ebd7f1160bd9265f2a0228bd2e514442
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765825"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
@@ -26,17 +27,33 @@ ms.lasthandoff: 05/23/2018
 > [!div class="checklist"]
 > * 创建 Node.js 项目
 > * 添加一些代码
-> * 使用 IntelliSense
+> * 使用 IntelliSense 编辑代码
 > * 运行应用
-> * 命中断点
+> * 命中调试程序中的断点
+
+## <a name="before-you-begin"></a>在开始之前
+
+下面是一个快速 FAQ，介绍一些关键概念。
+
+### <a name="what-is-nodejs"></a>什么是 Node.js？
+
+Node.js 是执行 JavaScript 服务器端的服务器端 JavaScript 运行时环境。
+
+### <a name="what-is-npm"></a>什么是 npm？
+
+Npm 是 Node.js 的默认包管理器。 包管理器使程序员更容易发布和共享 Node.js 库的源代码，并且可简化库的安装、更新和卸载。
+
+### <a name="what-is-express"></a>Express 是什么？
+
+Express 是一个 Web 应用程序框架，用作 Node.js 构建 Web 应用程序的服务器框架。 Express 允许使用不同的前端框架来创建 UI，例如 Pug（以前称为 Jade）。 本教程中使用了 Pug。
 
 ## <a name="prerequisites"></a>系统必备
 
 * 须安装 Visual Studio 2017 且具有 Node.js 开发工作负载。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
-    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
+    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
 
 * 须安装 Node.js 运行时。
 
@@ -44,32 +61,41 @@ ms.lasthandoff: 05/23/2018
 
     本教程已使用 Node.js 8.10.0 进行测试。
 
-## <a name="create-a-project"></a>创建项目
-首先，创建 Node.js Web 应用程序项目。
+## <a name="create-a-new-nodejs-project"></a>创建新的 Node.js 项目
+
+Visual Studio 管理项目中的单个应用程序的文件。 该项目包括源代码、资源和配置文件。
+
+在本教程中，将从一个包含 Node.js 和 express 应用的代码的简单项目开始。
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“基本 Azure Node.js Express 4 应用程序”，然后选择“确定”。
 
-     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，须先安装 Node.js 开发工作负载。
+     如果未看到“基本 Azure Node.js Express 4 应用程序”项目模板，须先安装“Node.js 开发”工作负载（有关说明，请参阅先决条件）。
 
-    Visual Studio 创建新的解决方案并打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。
+    Visual Studio 创建新的解决方案并在右窗格中打开项目。 在编辑器（左窗格）中打开 App.js 项目文件。
 
-    - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
+    ![项目结构](../nodejs/media/tutorial-project-structure.png)
 
-    - 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
+    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
-    - Npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+    (2) 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
 
-    - 项目文件（例如 app.js）显示在项目节点下。 app.js 是项目启动文件。
+    (3) Npm 节点显示任何已安装的 npm 包。 可右键单击 npm 节点以使用对话框搜索并安装 npm 包，也可使用 package.json 中的设置来安装和更新包，并右键单击 npm 节点中的选项。
+
+    (4) package.json 是 npm 用于管理本地安装包的包依赖关系和包版本的文件。
+
+    (5) 项目文件（例如 app.js）显示在项目节点下。 app.js 是项目启动文件，因此它以粗体形式显示。 可设置启动文件，方法是右键单击项目中的文件并选择“设置为 Node.js 启动文件”。
 
 1. 打开“npm”节点，确保其中存在所有必需的 npm 包。
 
-    如果有丢失的包（感叹号图标），可右键单击“npm”节点，然后选择“安装丢失的 npm 包”。
+    如果缺少任何包（感叹号图标），可右键单击“npm”节点并选择“安装缺少的 npm 包”。
 
 ## <a name="add-some-code"></a>添加一些代码
+
+该应用程序将 Pug 用于前端 JavaScript 框架。 Pug 使用编译为 HTML 的简单标记代码。 （将 Pug 设置为 app.js 中的视图引擎。 在 app.js 中设置视图引擎的代码是 `app.set('view engine', 'pug');`。）
 
 1. 在解决方案资源管理器（右窗格）中，打开“视图”文件夹，然后打开 index.pug。
 
@@ -95,7 +121,7 @@ ms.lasthandoff: 05/23/2018
       a: img(id='myImage' height='200' width='200' src='')
     ```
 
-    之前的代码添加标记以动态生成带有标题和欢迎消息的 HTML 页面。 该页面还包含代码，用于显示每当按一个按钮时就会更改的图像。
+    之前的代码用于动态生成带有标题和欢迎消息的 HTML 页面。 该页面还包含代码，用于显示每当按一个按钮时就会更改的图像。
 
 1. 在“路由”文件夹中，打开 index.js。
 
@@ -122,15 +148,17 @@ ms.lasthandoff: 05/23/2018
     });
     ```
     
-    之前的代码使用 Express 路由器对象设置当前页并呈现该页，将标题和数据对象传递给页面。
+    之前的代码使用 Express 路由器对象设置当前页并呈现该页，将标题和数据对象传递给页面。 Index.pug 文件在此处指定为运行 index.js 时要加载的页面。 Index.js 配置为 app.js 代码中的默认路由（未显示）。
 
     为了演示 Visual Studio 的几个功能，我们在包含 `res.render` 的代码行中包含一个错误。 在应用可以运行前需要修复此错误。 下一节将修复此错误。
 
 ## <a name="use-intellisense"></a>使用 IntelliSense
 
+IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
+
 1. 在 index.js 中，转到包含 `res.render` 的代码行。
 
-1. 将光标置于 `data` 字符串后，键入 `: get`，IntelliSense 将显示 `getData` 函数。 选择 `getData`。
+1. 将光标置于 `data` 字符串后，键入 `: get`，IntelliSense 将显示之前在代码中定义的 `getData` 函数。 选择 `getData`。
 
     ![使用 IntelliSense](../nodejs/media/tutorial-nodejs-intellisense.png)
 
@@ -140,7 +168,7 @@ ms.lasthandoff: 05/23/2018
 
     此消息的最后一行告诉你，JavaScript 解释器需要一个逗号 (`,`)。
 
-1. 单击“错误列表”选项卡。
+1. 在下方的窗格中，单击“错误列表”选项卡。
 
     可看到警告和描述，以及文件名和行号。
 
@@ -148,7 +176,11 @@ ms.lasthandoff: 05/23/2018
 
 1. 在 `"data"` 前添加逗号 (`,`)，修复代码。
 
+    更正后，代码行应如下所示：`res.render('index', { title: 'Express', "data": getData() });`
+
 ## <a name="set-a-breakpoint"></a>设置断点
+
+我们将使用附加的 Visual Studio 调试程序来运行应用。 执行此操作前，需要设置断点。
 
 1. 在 index.js 中，单击以下代码行前左测的装订线，设置一个断点：
 

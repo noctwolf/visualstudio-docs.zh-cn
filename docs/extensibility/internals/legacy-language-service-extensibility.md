@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129714"
 ---
 # <a name="legacy-language-service-extensibility"></a>旧语言服务可扩展性
 语言服务用于编辑在 IDE 中的源代码提供特定于语言的支持。  

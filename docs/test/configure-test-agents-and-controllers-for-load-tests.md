@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967679"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 

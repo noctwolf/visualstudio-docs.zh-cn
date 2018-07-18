@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129467"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何： 提供适用于 Windows 的自动化
 你可以提供自动化文档和工具窗口。 提供自动化是明智的每当你想要使自动化对象在一个窗口，并且环境不提供现成的自动化对象，它与任务列表。

@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953081"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 若要在开发项目中有效地使用模型，团队成员必须能够同时在项目的不同部分的模型上工作。 本主题建议了一种将应用程序划分为对应整体分层关系图中层的不同部分的方案。

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127029"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 触发事件; 当编辑器失去焦点
 有时很必要知道当编辑器失去焦点的窗口帧上。 例如，你可能需要从代码窗口提取代码后在它不再聚焦于编辑器。 以下过程提供为接收通知的失去焦点的编辑器要遵循的步骤。  

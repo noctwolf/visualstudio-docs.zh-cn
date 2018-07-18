@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131256"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>选择和 IDE 中的货币
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 维护有关用户的信息当前所选对象，通过选择*上下文*。 与所选内容的上下文中，Vspackage 可以参与货币跟踪两种方式：  

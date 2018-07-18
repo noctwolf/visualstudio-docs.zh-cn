@@ -37,6 +37,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575892"
 ---
 # <a name="link-task"></a>Link 任务
 包装 Visual C++ 链接器工具 link.exe。 链接器工具将通用对象文件格式 (COFF) 对象文件和库链接起来，以创建可执行 (.exe) 文件或动态链接库 (DLL)。 有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  

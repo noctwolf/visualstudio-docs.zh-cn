@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61d95758597b09b28ee5acd6268c44ea1bf0869
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5c40350019d0878893568977df6db88c30fdc734
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764851"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令行将探查器附加到本机服务，以收集应用程序统计信息
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加本机服务，以及如何使用采样方法收集性能统计信息。  
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到本机服务，以使用命令行收集应用程序统计信息
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加本机服务，以及如何使用采样方法收集性能统计信息。  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 UWP 应用也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/19/2018
   
  若要结束分析会话，必须将探查器与服务拆离，并且必须显式关闭探查器。  
   
-## <a name="starting-the-application-with-the-profiler"></a>用探查器启动应用程序  
+## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
  若要将探查器附加到本机服务，请使用 VSPerfCmd.exe[/start](../profiling/start.md) 和 [/attach](../profiling/attach.md) 选项初始化探查器，并将其附加到目标应用程序。 可以在单个命令行中指定 **/start** 和 **/attach** 及其各自的选项。 还可以添加 [/globaloff](../profiling/globalon-and-globaloff.md) 选项，以在目标应用程序启动时暂停数据收集。 然后可使用 [/globalon](../profiling/globalon-and-globaloff.md) 开始收集数据。  
   
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>将探查器附加到本机服务  
@@ -74,7 +75,7 @@ ms.lasthandoff: 04/19/2018
     |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|将采样事件更改为从进程对操作系统内核的系统调用 (syscall)。 如果已指定 `Interval`，则会设置样本之间的调用次数。 默认值为 10。|  
     |[/counter](../profiling/counter.md) **:** `Config`|将采样事件和间隔更改为 `Config` 中指定的处理器性能计数器和间隔。|  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  目标应用程序运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -87,7 +88,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID 或进程名称指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定进程时）的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，必须将探查器与服务拆离，然后显式关闭探查器。 可通过停止服务或调用 VSPerfCmd /detach 选项拆离使用采样方法分析的本机服务。 然后，调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项关闭探查器和分析数据文件。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

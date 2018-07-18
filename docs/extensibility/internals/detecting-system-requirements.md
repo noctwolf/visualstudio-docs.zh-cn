@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128699"
 ---
 # <a name="detecting-system-requirements"></a>检测系统要求
 除非安装了 Visual Studio 将无法工作 VSPackage。 当你使用 Microsoft Windows Installer 管理你的 VSPackage 的安装时，你可以配置要检测是否安装了 Visual Studio 的安装程序。 你还可以配置它以检查系统的其他要求，例如，特定版本的 Windows 或特定 RAM 量。  

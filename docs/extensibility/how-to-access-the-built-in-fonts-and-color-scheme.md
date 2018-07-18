@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131142"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 访问的内置的字体和配色方案
 Visual Studio 集成的开发环境 (IDE) 有与编辑器窗口相关联的字体和颜色的架构。 你可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
@@ -32,13 +33,13 @@ Visual Studio 集成的开发环境 (IDE) 有与编辑器窗口相关联的字�
 
 -   建议 IDE 特定窗口通过使用内置的显示项和类别<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>接口。
 
- IDE 使用窗口的句柄作为生成的类别。 类别的名称显示在**显示其设置：**中的下拉列表框**字体和颜色**属性页。
+ IDE 使用窗口的句柄作为生成的类别。 类别的名称显示在**显示其设置：** 中的下拉列表框**字体和颜色**属性页。
 
 ### <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定义使用内置的字体和颜色的类别
 
 1.  创建一个任意 GUID。
 
-     此 GUID 用于唯一标识某一类别**。** IDE 的默认字体和颜色规范，将重新使用此类别。
+     此 GUID 用于唯一标识某一类别 **。** IDE 的默认字体和颜色规范，将重新使用此类别。
 
     > [!NOTE]
     >  检索与的字体和颜色数据时<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>或其他接口，Vspackage 使用此 GUID 来引用内置的信息。

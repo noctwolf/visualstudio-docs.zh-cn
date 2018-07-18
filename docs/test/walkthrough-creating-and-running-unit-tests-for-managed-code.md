@@ -15,15 +15,16 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 9cfcfab850d4d56589688eea0d5833400df9cb9d
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 36b6eff9f37cdd50e59942ece5ba56dcfe60b8f6
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34767681"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
-本演练将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，可以更改项目代码并重新运行测试。
+本文将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，可以更改项目代码并重新运行测试。
 
 > [!NOTE]
 > 此演练使用用于托管代码的 Microsoft 单元测试框架。 “测试资源管理器”还可以在具有“测试资源管理器”适配器的第三方单元测试框架中运行测试。 有关详细信息，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
@@ -41,21 +42,18 @@ ms.lasthandoff: 05/22/2018
 
 2. 在“文件”菜单上，选择“新建” > “项目”。
 
-     此时将出现 “新建项目” 对话框。
+   此时将出现 “新建项目” 对话框。
 
 3. 在 **“已安装的模板”** 下单击 **“Visual C#”**。
 
 4. 在应用程序类型的列表中单击 **“类库”**。
 
-5. 在 **“名称”** 框中键入 `Bank` ，然后单击 **“确定”**。
+5. 在“名称”框中键入 Bank，然后单击“确定”。
 
-    > [!NOTE]
-    > 如果名称“Bank”已被使用，请为该项目选择其他名称。
+   将创建新的 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
 
-     将创建新的 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Class1.cs 文件。
-
-    > [!NOTE]
-    > 如果代码编辑器中未打开 Class1.cs 文件，请在解决方案资源管理器中双击文件 Class1.cs 将其打开。
+   > [!NOTE]
+   > 如果代码编辑器中未打开 Class1.cs，请在“解决方案资源管理器”中双击文件 Class1.cs 将其打开。
 
 6. 从[用于创建单元测试的示例项目](../test/sample-project-for-creating-unit-tests.md)中复制源代码，并将 Class1.cs 的原始内容替换为复制的代码。
 
@@ -93,11 +91,11 @@ public void Debit(double amount)
 
 4. 在“名称”框中，输入 `BankTests`，然后选择“确定”。
 
-     将“BankTests”项目添加到“Bank”解决方案。
+   将“BankTests”项目添加到“Bank”解决方案。
 
 5. 在“BankTests”项目中，添加对“Bank”项目的引用。
 
-     在“解决方案资源管理器”中，选择“BankTests”项目中的“引用”，然后从上下文菜单中选择“添加引用”。
+   在“解决方案资源管理器”中，选择“BankTests”项目中的“引用”，然后从上下文菜单中选择“添加引用”。
 
 6. 在“引用管理器”对话框中，展开 **“解决方案”** ，然后选中 **“Bank”** 项。
 
@@ -142,7 +140,7 @@ using BankAccountNS;
 
 - 在托管代码的 Microsoft 单元测试框架中，任何包含要在“测试资源管理器”中运行的单元测试方法的类都需要有 `[TestClass]` 特性。
 
-- 你希望“测试资源管理器”运行的每个测试方法都必须具有 `[TestMethod]`特性。
+- 你希望“测试资源管理器”运行的每个测试方法都必须具有 `[TestMethod]` 属性。
 
 单元测试项目中可以具有不含 `[TestClass]` 特性的其他类，测试类中可以具有不含 `[TestMethod]` 特性的其他方法。 可以在测试方法中使用这些其他的类和方法。
 
@@ -211,13 +209,13 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>修复代码并重新运行测试
 
-**分析测试结果**
+### <a name="analyze-the-test-results"></a>分析测试结果
 
 测试结果包含一条描述失败的消息。 对于 `AreEquals` 方法，消息会显示预期的内容（Expected\<value> 参数）以及实际接收到的内容（Actual\<value> 参数）。 虽然预计余额会减少，但实际上余额中反而增加了取款金额。
 
 单元测试已发现一个 bug：取款金额本应从帐户余额中减去，结果却添加到帐户余额中。
 
-**更正 bug**
+### <a name="correct-the-bug"></a>更正 bug
 
 若要更正错误，请将代码行：
 
@@ -231,7 +229,7 @@ m_balance += amount;
 m_balance -= amount;
 ```
 
-**重新运行测试**
+### <a name="rerun-the-test"></a>重新运行测试
 
 在“测试资源管理器”中，选择 **“全部运行”** 以重新运行测试。 红色/绿色栏会变为绿色（表示测试通过），且测试将移动到“已通过的测试”组。
 
@@ -239,14 +237,14 @@ m_balance -= amount;
 
 本部分介绍了分析的迭代过程、单元测试开发和重构如何帮助你增加成品代码的可靠性和有效性。
 
-**分析问题**
+### <a name="analyze-the-issues"></a>分析问题
 
 已创建测试方法，以确认是否在 `Debit` 方法中正确扣除了有效金额。 现在，验证若借方金额为以下情况，该方法是否会引发 <xref:System.ArgumentOutOfRangeException>：
 
 - 大于余额，或
 - 小于零。
 
-**创建测试方法**
+### <a name="create-the-test-methods"></a>创建测试方法
 
 创建测试方法，验证借方金额小于零时的行为是否正确：
 
@@ -277,11 +275,11 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 
 3. 将 `debitAmount` 设置为比余额大的一个数字。
 
-**运行测试**
+### <a name="run-the-tests"></a>运行测试
 
 运行这两个测试方法证明了测试工作正常。
 
-**继续分析**
+### <a name="continue-the-analysis"></a>继续分析
 
 但是，最后两个测试方法也很麻烦。 在任一测试运行时，无法确定测试方法在哪些情况下会引发异常。 用于区分这两种情况（即负借方金额或大于余额的金额）的某种方式将增加你对测试的信心。
 
@@ -291,11 +289,11 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 throw new ArgumentOutOfRangeException("amount");
 ```
 
-可以使用报告的信息更加丰富的构造函数：<xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` 包括自变量的名称、自变量的值和用户定义消息。 可以重构被测方法以使用此构造函数。 更理想的做法是使用公开的类型成员来指定错误。
+可以使用报告的信息更加丰富的构造函数：<xref:System.ArgumentOutOfRangeException.%23ctor(System.String,System.Object,System.String)> 包括自变量的名称、自变量的值和用户定义消息。 可以重构被测方法以使用此构造函数。 更理想的做法是使用公开的类型成员来指定错误。
 
-**重构所测试的代码**
+### <a name="refactor-the-code-under-test"></a>重构所测试的代码
 
-首先，为类范围内的错误消息定义两个常量。 将这些常量置于测试类中 (`Bank`)：
+首先，为类范围内的错误消息定义两个常量。 将这些常量置于测试类中，BankAccount：
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -316,7 +314,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount is less than 
     }
 ```
 
-**重构测试方法**
+### <a name="refactor-the-test-methods"></a>重构测试方法
 
 删除 `ExpectedException` 测试方法特性，改为捕获引发的异常并验证其关联的消息。 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法提供比较两个字符串的功能。
 
@@ -344,7 +342,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
-**重测、重写和重新分析**
+### <a name="retest-rewrite-and-reanalyze"></a>重测、重写和重新分析
 
 假定测试方法中存在一个 bug 且 `Debit` 方法没有引发 <xref:System.ArgumentOutOfRangeException>，也没有输出有关该异常的正确消息。 目前，测试方法无法处理这种情况。 如果 `debitAmount` 值有效（即小于余额，但大于零），则不会捕获到异常，因此永远不会触发该断言。 但是测试方法通过了。 这样并不好，因为如果未引发异常，则希望测试方法失败。
 

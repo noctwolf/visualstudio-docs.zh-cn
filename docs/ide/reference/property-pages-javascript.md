@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949496"
 ---
 # <a name="property-pages-javascript"></a>属性页，JavaScript
 “属性页”提供对项目设置的访问。 可使用“属性页”中显示的页面来更改项目属性。

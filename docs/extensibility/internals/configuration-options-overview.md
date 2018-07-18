@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132464"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以支持多个可以生成、 调试、 运行，和/或已部署的配置。 配置是描述与属性、 通常编译器开关和文件位置的已命名集的生成类型。 默认情况下，新的解决方案包含两个配置，调试和发布。 使用其默认设置，或修改以满足你的特定解决方案和/或项目要求，可以应用这些配置。 某些包可以生成两种方式： 为 ActiveX 编辑器或作为就地组件。 项目不需要支持多个配置，但是。 如果没有可用的只有一个配置，则将该配置映射到所有的解决方案配置。  

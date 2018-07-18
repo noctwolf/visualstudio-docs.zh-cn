@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112280"
 ---
 # <a name="idebugobject2isuserdata"></a>IDebugObject2::IsUserData
 确定对象是否表示用户数据。  

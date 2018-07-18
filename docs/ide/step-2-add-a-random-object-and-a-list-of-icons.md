@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 95996165351be2ead2f24556da1bfdcdd6fcc048
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 84c9c837fdb812b18f72e768b8ee528118b28777
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746827"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加 Random 对象和图标列表
 在本步骤中，你要为游戏创建一组匹配的符号。 每个符号将添加到窗体上 TableLayoutPanel 中的两个随机单元格。 为此，请使用两个 `new` 语句创建两个对象。 第一个是 <xref:System.Random> 对象，类似于数学测验游戏中使用的对象。 此代码中使用它来随机选择 TableLayoutPanel 中的单元格。 第二个对象是用于存储随机选择的符号的 <xref:System.Collections.Generic.List%601> 对象，你可能没有见过。
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/28/2018
 
 3.  添加 List 对象时，请注意打开的“IntelliSense”窗口。 下面是一个 Visual C# 示例，但在 Visual Basic 中添加列表时会显示类似文本。
 
-     ![显示 Click 事件的属性窗口](../ide/media/express_listintellisense.png "Express_ListIntellisense") IntelliSense 窗口
+     ![显示 Click 事件的“属性”窗口](../ide/media/express_listintellisense.png)IntelliSense 窗口
 
     > [!NOTE]
     >  IntelliSense 窗口仅在手动输入代码时显示。 如果你复制和粘贴代码，则不显示。

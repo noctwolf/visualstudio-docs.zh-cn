@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31950486"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。

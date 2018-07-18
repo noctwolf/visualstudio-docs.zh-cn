@@ -30,6 +30,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31560708"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约束。 因此，了解代码访问安全性的含义并且相应地编写 ClickOnce 应用程序是十分重要的。  
@@ -49,7 +50,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
  若要限制 ClickOnce 应用程序的权限，可以修改应用程序的代码访问安全性权限，以请求最适合你的应用程序所需权限的区域。 在大多数情况下，你可以选择从中部署该应用程序的区域。 例如，如果你的应用程序是企业应用程序，则可以使用 **“本地 Intranet”** 区域。 如果你的应用程序是 Internet 应用程序，则可以使用 **“Internet”** 区域。  
   
 ## <a name="configuring-security-permissions"></a>配置安全权限  
- 你始终应该配置 ClickOnce 应用程序，以请求适当的区域来限制代码访问安全性权限。 可以在 **“项目设计器”** 的 **“安全”**页上配置安全性权限。  
+ 你始终应该配置 ClickOnce 应用程序，以请求适当的区域来限制代码访问安全性权限。 可以在 **“项目设计器”** 的 **“安全”** 页上配置安全性权限。  
   
  **“项目设计器”** 中的 **“安全”** 页包含 **“启用 ClickOnce 安全设置”** 复选框。 选中此复选框后，安全权限请求会添加到应用程序的部署清单。 安装时，如果请求的权限超出从中部署该应用程序的区域的默认权限，则会提示用户授予权限。 有关详细信息，请参阅 [How to: Enable ClickOnce Security Settings](../deployment/how-to-enable-clickonce-security-settings.md)。  
   
@@ -62,7 +63,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 ## <a name="debugging-an-application-that-has-restricted-permissions"></a>调试具有受限权限的应用程序  
  作为开发人员，很可能以完全信任权限运行你的开发计算机。 因此，调试应用程序时你不会看到与用户在使用受限权限运行应用程序时可能看到的安全性异常相同的安全性异常。  
   
- 为了捕获这些异常，你必须使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”**页上启用使用受限权限进行调试。  
+ 为了捕获这些异常，你必须使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”** 页上启用使用受限权限进行调试。  
   
  当你使用受限权限调试应用程序时，尚未在 **“安全”** 页上启用的任意代码安全性需求都会引发异常。 将出现一个异常帮助程序，提供有关如何修改你的代码以避免此异常的建议。  
   

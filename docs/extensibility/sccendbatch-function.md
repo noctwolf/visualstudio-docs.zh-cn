@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138218"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
 此函数最后一批的源代码管理操作。 这些批不能嵌套。  

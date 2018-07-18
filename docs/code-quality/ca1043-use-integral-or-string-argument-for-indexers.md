@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900081"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043：将整型或字符串自变量用于索引器
 |||

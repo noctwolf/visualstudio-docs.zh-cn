@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31570988"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 写入所有线程和上下文的跟踪日志。  

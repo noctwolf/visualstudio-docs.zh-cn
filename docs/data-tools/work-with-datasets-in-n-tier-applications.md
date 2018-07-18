@@ -26,6 +26,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926110"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>处理在 n 层应用程序中的数据集
 

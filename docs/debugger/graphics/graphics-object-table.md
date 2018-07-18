@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477760"
 ---
 # <a name="graphics-object-table"></a>图形对象表
 Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或应用程序的帧的 Direct3D 对象。  

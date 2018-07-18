@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571602"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 任务
 确定指定项集合中的哪些项具有指定文件夹及其子文件夹的路径。  

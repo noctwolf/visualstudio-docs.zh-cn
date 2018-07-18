@@ -10,20 +10,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 56a3daa0f20a62c8b7410ba5b339179fbf9c5521
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 09ba7884d9c8bd1abf9762046b9e8f7fb534d530
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766004"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序中以收集并发数据
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 ASP.NET Web 应用程序并收集进程和线程并发数据。  
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 ASP.NET Web 应用程序并收集进程和线程并发数据。  
   
  分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要在命令提示符下使用探查器，必须将工具路径添加到**命令提示符**窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
  若要收集并发数据，请将探查器附加到承载 Web 站点的 ASP.NET 工作进程。 将探查器附加到应用程序时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。 在大多数情况下，应该在会话结束时清除分析环境变量。  
   
-## <a name="attaching-the-profiler"></a>附加探查器  
+## <a name="attach-the-profiler"></a>附加探查器  
   
 #### <a name="to-attach-the-profiler-to-a-aspnet-application"></a>将探查器附加到 ASP.NET 应用程序  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 04/19/2018
   
     -   [/targetclr](../profiling/targetclr.md) **:** `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本。 此参数可选。  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  应用程序运行时，可以通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID (`PID`) 或进程名称 (*ProcName*) 指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，探查器不得再收集数据。 可通过重新启动 ASP.NET 工作进程或调用 **VSPerfCmd /detach** 选项从使用并发方法分析的应用程序停止数据收集。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。 **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148436"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>通知和 for Visual Studio 的进度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系统  
@@ -137,17 +138,17 @@ ms.lasthandoff: 04/16/2018
 #### <a name="factors"></a>因素  
  若要确定哪些指示器类型适合，你需要确定以下因素。  
   
-1.  **计时：**操作所花的时间长度  
+1.  **计时：** 操作所花的时间长度  
   
-2.  **模式：**操作是模式适合环境 （锁 UI 过程完成之前）  
+2.  **模式：** 操作是模式适合环境 （锁 UI 过程完成之前）  
   
-3.  **持续/暂时的：**是否需要在更高版本时是报告和/或可查看进度的最终结果  
+3.  **持续/暂时的：** 是否需要在更高版本时是报告和/或可查看进度的最终结果  
   
-4.  **确定/不确定：**可以计算的操作结束时间和进度  
+4.  **确定/不确定：** 可以计算的操作结束时间和进度  
   
-5.  **图形/Textual 位置：**的进度或进程是否在一条消息或将特定的控件，如树控件的主体中捕获的内联  
+5.  **图形/Textual 位置：** 的进度或进程是否在一条消息或将特定的控件，如树控件的主体中捕获的内联  
   
-6.  **邻近：**进度应采用较近的与相关的 UI。 （例如，可以在状态栏中，这可能是距离遥远，或不具有要启动进程的按钮附近？）  
+6.  **邻近：** 进度应采用较近的与相关的 UI。 （例如，可以在状态栏中，这可能是距离遥远，或不具有要启动进程的按钮附近？）  
   
 #### <a name="determinate-progress"></a>确定的进度  
   
@@ -328,13 +329,13 @@ ms.lasthandoff: 04/16/2018
 ### <a name="creating-an-infobar"></a>创建一个信息栏  
  信息栏具有四个部分，从左到右：  
   
--   **图标：**这是你将在其中添加任何图标你想要显示的信息栏，如警告图标。  
+-   **图标：** 这是你将在其中添加任何图标你想要显示的信息栏，如警告图标。  
   
--   **文本：**可以添加文本以描述方案/情况用户以及文本中的链接是在中，如果需要。 请记住要保留文本简洁。  
+-   **文本：** 可以添加文本以描述方案/情况用户以及文本中的链接是在中，如果需要。 请记住要保留文本简洁。  
   
--   **操作：**本节应包含一些链接和用户可以在你的信息栏中执行的操作的按钮。  
+-   **操作：** 本节应包含一些链接和用户可以在你的信息栏中执行的操作的按钮。  
   
--   **关闭按钮：**右侧的最后一节可以关闭按钮。  
+-   **关闭按钮：** 右侧的最后一节可以关闭按钮。  
   
 #### <a name="creating-a-standard-infobar-in-managed-code"></a>在托管代码中创建标准信息栏  
  InfoBarModel 类可以用于创建一个信息栏的数据源。 使用上述四个构造函数之一：  
@@ -480,7 +481,7 @@ public interface IVsInfoBarUIEvents
   
  ![字段验证&#40;空白&#41;](../../extensibility/ux-guidelines/media/0905-01_fieldvalidation.png "0905年 01_FieldValidation")  
   
- 如果该字段是必需的则应水印文本指出**\<必需 >**和字段后台应浅色黄色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前台应为灰色 (VSColor: `Environment.ControlEditRequiredHintText`):  
+ 如果该字段是必需的则应水印文本指出**\<必需 >** 和字段后台应浅色黄色 (VSColor: `Environment.ControlEditRequiredBackground`) 和前台应为灰色 (VSColor: `Environment.ControlEditRequiredHintText`):  
   
  ![字段具有"必须"标签的验证](../../extensibility/ux-guidelines/media/0905-02_fieldvalidationrequired.png "0905年 02_FieldValidationRequired")  
   

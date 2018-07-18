@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131849"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 时语言服务提供了语法着色，分析器将一行文本转换为着色的项的数组，并返回与这些着色项对应的令牌类型。 分析器应返回属于可着色项的列表的令牌类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据由着色器对象分配给相应的令牌类型的属性的代码窗口中显示每个可着色的项。  

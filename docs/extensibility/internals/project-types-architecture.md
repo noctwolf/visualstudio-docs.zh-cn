@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130596"
 ---
 # <a name="project-types-architecture"></a>项目类型体系结构
 本部分包含有关体系结构中的项目类型的详细的信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

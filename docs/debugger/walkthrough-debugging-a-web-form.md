@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31480327"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向您演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，和在中检查变量**监视**窗口。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/18/2018
   
 4.  上**位置**行，单击**HTTP**从列表中，然后在文本框中，键入**http://localhost/WebSite**。  
   
-5.  在**语言**列表中，单击**Visual C#**或**Visual Basic**。  
+5.  在**语言**列表中，单击**Visual C#** 或**Visual Basic**。  
   
 6.  单击 **“确定”**。  
   

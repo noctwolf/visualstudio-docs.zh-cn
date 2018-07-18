@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132029"
 ---
 # <a name="source-control-integration-essentials"></a>Essentials 源控件的集成
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持两种类型的源代码管理集成： 提供基本功能，并使用源控件插件 API （前称 MSSCCI API） 和一个基于 VSPackage 的源控制集成解决方案生成了源代码管理插件，提供更强大的功能。  

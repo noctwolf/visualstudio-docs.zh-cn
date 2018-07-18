@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplication::RemoveStackFrameSniffer |Microsoft 文档"
-ms.custom: 
+title: IDebugApplication::RemoveStackFrameSniffer |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplication.RemoveStackFrameSniffer
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplication::RemoveStackFrameSniffer
 ms.assetid: 00304b88-e435-4b87-a331-44e7492eb32d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725717"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
 来自此应用程序移除堆栈帧枚举器提供程序。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132084"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>属性和扩展，由项目子类型的方法
 项目子类型具有大量的能力，因为它被构造为基本项目的聚合器影响的项目的行为。 本部分总结了一些可以增强或修改的项目子类型的功能。  

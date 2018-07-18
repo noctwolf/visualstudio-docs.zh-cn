@@ -1,11 +1,11 @@
 ---
-title: "IActiveScriptAuthorProcedure::ParseProcedureText |Microsoft 文档"
-ms.custom: 
+title: IActiveScriptAuthorProcedure::ParseProcedureText |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScriptAuthorProcedure.ParseProcedureText
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScriptAuthorProcedure::ParseProcedureText
 ms.assetid: cb6c29c5-c749-48d7-a6a8-ccbf0f9119ec
-caps.latest.revision: 
+caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24645637"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
 分析代码过程，将代码过程的文本添加到创作引擎，该脚本并创建`IScriptEntry`对应于代码过程的对象。  

@@ -1,13 +1,13 @@
 ---
-title: "条件编译 (JavaScript) | Microsoft Docs"
-ms.custom: 
+title: 条件编译 (JavaScript) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - ConditionalComp_JavaScript
@@ -19,7 +19,7 @@ helpviewer_keywords:
 - conditional compilation, overview
 - conditional compilation
 ms.assetid: a843de4e-3aae-43cd-ad64-477dd00814a2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -28,6 +28,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569127"
 ---
 # <a name="conditional-compilation-javascript"></a>条件编译 (JavaScript)
 利用条件编译，可以使用新的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 语言功能，同时又保留与不支持这些功能的旧版本之间的兼容性。  

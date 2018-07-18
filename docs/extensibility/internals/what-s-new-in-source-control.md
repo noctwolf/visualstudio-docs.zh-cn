@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137763"
 ---
 # <a name="what39s-new-in-source-control"></a>什么&#39;s 源代码管理中的新增功能
 在[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]你可以通过实现 VSPackage 的源控件提供深入地集成的源代码管理解决方案。 此部分描述源控件 Vspackage 的功能，并提供的实现步骤概述。  

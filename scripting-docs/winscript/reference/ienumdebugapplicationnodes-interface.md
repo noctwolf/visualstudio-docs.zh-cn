@@ -1,16 +1,16 @@
 ---
-title: "IEnumDebugApplicationNodes 接口 |Microsoft 文档"
-ms.custom: 
+title: IEnumDebugApplicationNodes 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IEnumDebugApplicationNodes interface
 ms.assetid: 4fd38b44-3f9a-4d23-9a8f-7dc98f72725f
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24727647"
 ---
 # <a name="ienumdebugapplicationnodes-interface"></a>IEnumDebugApplicationNodes 接口
 枚举与应用程序关联的节点的子节点。  

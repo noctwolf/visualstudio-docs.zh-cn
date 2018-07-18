@@ -1,4 +1,4 @@
----
+﻿---
 title: 将发布到网站的 Visual Studio |Microsoft 文档
 ms.custom: ''
 ms.date: 11/22/2017
@@ -14,7 +14,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 0f722dcc4ada5643f9de3342b85469fa667d4b7c
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34766547"
@@ -23,7 +23,7 @@ ms.locfileid: "34766547"
 
 你可以使用**发布**工具，用于将 ASP.NET 应用程序发布到网站。
 
-这些步骤适用于 ASP.NET、 ASP.NET Core、.NET Core 和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
+这些步骤适用于 ASP.NET、 ASP.NET Core、.NET Core和 Visual Studio 中的 Python 应用。 For Node.js，支持步骤，但用户界面，则不同。
 
 ## <a name="prerequisites"></a>系统必备
 

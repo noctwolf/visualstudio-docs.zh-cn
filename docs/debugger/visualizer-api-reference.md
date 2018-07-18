@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476947"
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 可视化工具 API 是专为希望为 Visual Studio 调试器编写可视化工具的用户而提供的。 可视化工具是一种小应用程序，它扩展了 Visual Studio 调试器用户界面的功能。 可视化工具可以显示 （和 （可选） 编辑） 可视化工具旨在为其特定类型的数据对象。  

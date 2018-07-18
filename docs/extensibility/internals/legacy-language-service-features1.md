@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131726"
 ---
 # <a name="legacy-language-service-features"></a>旧语言服务功能
 托管的包框架 (MPF) 语言服务可以支持一个或多[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]功能，如语法突出显示、 IntelliSense、 和断点验证。 每个功能可以实现独立于其他但所有需要的分析程序和除外语法突出显示，这需要仅扫描程序扫描程序。  

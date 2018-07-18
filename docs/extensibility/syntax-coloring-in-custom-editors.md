@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139456"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>语法着色中自定义编辑器
 Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务标识特定的语法项并将它们显示具有给定的文档视图的指定颜色。

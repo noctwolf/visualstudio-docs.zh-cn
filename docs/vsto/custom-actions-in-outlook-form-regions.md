@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34264084"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示使用户能够对 Microsoft Office Outlook 项做出响应的按钮。 例如，若要响应一封邮件，用户单击**答复**，**全部答复**，或**转发**操作按钮。 每个这些操作创建一个新的邮件项，并使用原始项中的信息填充的项的字段。  

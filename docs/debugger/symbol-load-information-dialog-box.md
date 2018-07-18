@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475413"
 ---
 # <a name="symbol-load-information-dialog-box"></a>“符号加载信息”对话框
 **符号加载信息**上右键单击时，对话框将打开**模块**窗口，然后选择**符号加载信息**。  

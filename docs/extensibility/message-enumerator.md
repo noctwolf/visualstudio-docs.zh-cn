@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140257"
 ---
 # <a name="message-enumerator"></a>消息枚举器
 以下标志用于`TEXTOUTPROC`函数，这是一个 IDE 提供时，它调用的回调函数[SccOpenProject](../extensibility/sccopenproject-function.md) (请参阅[LPTEXTOUTPROC](../extensibility/lptextoutproc.md)有关回调的详细信息函数）。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31964946"
 ---
 # <a name="create-a-diagnostic-data-adapter-to-collect-custom-data-or-affect-a-test-machine"></a>创建诊断数据适配器以收集自定义数据或影响测试计算机
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/26/2018
 
 |任务|相关主题|
 |-----------|-----------------------|
-|**创建诊断数据适配器：**可通过创建类库来创建诊断数据适配器，然后使用诊断数据适配器 API 来收集所需的信息或对正在用于运行测试的测试系统产生影响。|-   [如何：创建诊断数据适配器](../test/how-to-create-a-diagnostic-data-adapter.md)|
-|**安装自定义诊断数据适配器：**可以安装自己的或其他人提供的诊断数据适配器，只需将它复制到正确的目录即可。|-   [如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
-|**选择运行测试时要使用的自定义诊断数据适配器：**可以选择用于测试设置的诊断数据适配器，以便运行测试时使用该适配器。|-   [在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
-|**配置诊断数据适配器执行的操作：**可以配置设置来控制诊断数据适配器在该特定测试设置中的操作。|-   [如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
+|**创建诊断数据适配器：** 可通过创建类库来创建诊断数据适配器，然后使用诊断数据适配器 API 来收集所需的信息或对正在用于运行测试的测试系统产生影响。|-   [如何：创建诊断数据适配器](../test/how-to-create-a-diagnostic-data-adapter.md)|
+|**安装自定义诊断数据适配器：** 可以安装自己的或其他人提供的诊断数据适配器，只需将它复制到正确的目录即可。|-   [如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)|
+|**选择运行测试时要使用的自定义诊断数据适配器：** 可以选择用于测试设置的诊断数据适配器，以便运行测试时使用该适配器。|-   [在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data)<br />-   [在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**配置诊断数据适配器执行的操作：** 可以配置设置来控制诊断数据适配器在该特定测试设置中的操作。|-   [如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)|
 
 ## <a name="see-also"></a>请参阅
 

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130513"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 Visual Studio 为自定义环境提供一组自动化接口。 自动化模型是使最终用户能够创建 Visual Studio 外接程序和扩展的对象模型。  

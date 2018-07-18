@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132490"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧语言服务中自定义文档属性
 文档属性可以显示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**属性**窗口。 编程语言通常没有与单独的源代码文件关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。  

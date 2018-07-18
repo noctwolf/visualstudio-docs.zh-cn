@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132900"
 ---
 # <a name="manifest-to-code"></a>代码清单
 代码工具清单是一个控制台应用程序，它为 Visual Studio 映像服务接受.imagemanifest 文件并生成包装文件或文件引用 c + +、 C#、 VB 或 Visual Studio 扩展的.vsct 文件中的图像清单的值。 此工具会生成可用于请求映像从 Visual Studio 映像服务直接，或用于通过 Api 的清单值传递，如果代码不处理任何其自己的 UI 和呈现的包装器文件。  

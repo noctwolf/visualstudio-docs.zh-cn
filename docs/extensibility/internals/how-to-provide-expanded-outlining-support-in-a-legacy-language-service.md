@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132139"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 扩展大纲显示在提供支持，旧语言服务
 有两个选项用于扩展对你仅仅是支持的语言的大纲显示支持**折叠到定义**命令。 你可以添加控制编辑器的大纲区域，并添加客户端控制大纲区域。  

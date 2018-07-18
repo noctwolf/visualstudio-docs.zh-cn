@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31571550"
 ---
 # <a name="overriding-toolsversion-settings"></a>重写 ToolsVersion 设置
 可使用以下三种方式之一来更改项目和解决方案的工具集：  

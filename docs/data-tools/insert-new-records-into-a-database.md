@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922648"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 若要将新记录插入数据库，可以使用`TableAdapter.Update`方法，或 TableAdapter 的 DBDirect 方法之一 (具体而言`TableAdapter.Insert`方法)。 有关详细信息，请参阅[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。

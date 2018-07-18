@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125474"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 此接口提供方法以查看关联的对象上的数据。 此接口是支持的类型可视化工具的一部分。  

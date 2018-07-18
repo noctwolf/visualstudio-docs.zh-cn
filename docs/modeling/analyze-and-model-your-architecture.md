@@ -37,6 +37,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33106955"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 请确保你的应用通过使用 Visual Studio 体系结构和建模工具进行设计和建模应用程序满足体系结构要求。

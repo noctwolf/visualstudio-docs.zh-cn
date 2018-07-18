@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31125898"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>参考 (Visual Studio 调试 Api)
 Visual Studio Debugging SDK 引用概述的运行时体系结构和调试器和及其组件的功能的基本模型。 文档进行有关它描述脱离它通过接口定义的行为的组件和接口的尽可能少的假设。  

@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e9babedd5920f81dd4a0e2bc244acb21f0965d22
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e317c51963b930bdd58553f6620c23aae783ba11
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668181"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -109,10 +110,10 @@ ms.lasthandoff: 04/26/2018
 
 |任务|相关主题|
 |-----------|-----------------------|
-|**为负载测试指定初始负载模式：**使用新建负载测试向导创建负载测试时，要选择一种负载模式。|-   [更改负载模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#EditingLoadPatternsChanging)|
-|**为负载测试编辑负载模式：**创建负载测试后，可以在负载测试编辑器中编辑负载模式。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**指定负载测试方案中的虚拟用户是否应包含 Web 缓存数据：**可以更改“新用户的百分比”属性以影响负载测试模拟由虚拟用户的 Web 浏览器执行的 Web 缓存的方式。|-   [如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**指定分级负载模式的单步负载增加时间：**通过“单步负载增加时间”属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**为负载测试指定初始负载模式：** 使用新建负载测试向导创建负载测试时，要选择一种负载模式。|-   [更改负载模式](../test/edit-load-patterns-to-model-virtual-user-activities.md#changing-the-load-pattern)|
+|**为负载测试编辑负载模式：** 创建负载测试后，可以在负载测试编辑器中编辑负载模式。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**指定负载测试方案中的虚拟用户是否应包含 Web 缓存数据：** 可以更改“新用户的百分比”属性以影响负载测试模拟由虚拟用户的 Web 浏览器执行的 Web 缓存的方式。|-   [如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**指定分级负载模式的单步负载增加时间：** 通过“单步负载增加时间”属性，可从某一步逐渐（而不是一下）增加到下一步（例如，从 100 个用户增加到 200 个用户）。|-   [如何：为分级负载模式指定单步负载增加时间属性](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="changing-the-load-pattern"></a>更改负载模式
 

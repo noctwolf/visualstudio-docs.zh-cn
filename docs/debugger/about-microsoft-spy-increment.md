@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457353"
 ---
 # <a name="about-microsoft-spy"></a>关于 Microsoft Spy++
 此对话框用于显示版权、 版本、 所有权和有关 Spy + + 的其他信息。

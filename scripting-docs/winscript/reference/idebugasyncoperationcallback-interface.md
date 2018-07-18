@@ -1,16 +1,16 @@
 ---
-title: "IDebugAsyncOperationCallBack 接口 |Microsoft 文档"
-ms.custom: 
+title: IDebugAsyncOperationCallBack 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugAsyncOperationCallBack interface
 ms.assetid: ccbe12fe-2aac-4d9f-9e70-601003f1a34d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726437"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>IDebugAsyncOperationCallBack 接口
 提供与相关的进度的状态事件`IDebugAsyncOperation`接口评估。  

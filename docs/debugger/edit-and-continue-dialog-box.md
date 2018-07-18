@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473132"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
 （仅限本机）如果在调试时编辑了代码，会出现此对话框和**编辑并继续**认为它可以应用代码更改。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  

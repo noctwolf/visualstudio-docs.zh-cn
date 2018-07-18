@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135002"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>命令和使用互操作程序集的菜单
 实现菜单和工具栏命令的方法是使用互操作程序集的 VSPackage 必须：  

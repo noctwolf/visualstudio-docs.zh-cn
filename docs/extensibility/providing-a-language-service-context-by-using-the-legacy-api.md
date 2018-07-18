@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140067"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>通过使用旧版 API 提供的语言服务上下文
 为要提供用户上下文使用的语言服务的两个选项[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器： 提供文本标记的上下文，或提供所有的用户上下文。 本文概述了每个方面的差异。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567988"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的日志记录
 通过日志记录可监视生成的进度。 日志记录捕获日志文件中的生成事件、消息、警告和错误。  

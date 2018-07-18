@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127292"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Hidden 元素（Visual Studio 模板）
 指定模板是否出现在**新项目**或**添加新项**对话框。  

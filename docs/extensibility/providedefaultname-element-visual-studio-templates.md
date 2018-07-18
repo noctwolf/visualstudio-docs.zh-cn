@@ -20,6 +20,7 @@ ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454371"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素（Visual Studio 模板）
 指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统将生成中的模板的默认名称**添加新项**或**新项目**对话框。  

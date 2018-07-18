@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140415"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 创建新的项目类型提供了用于自定义的基础[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]为你的用户。 但是，创建新的项目类型不需要所有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]自定义项。 以下准则可帮助您确定是否为你的方案需要新的项目类型。  

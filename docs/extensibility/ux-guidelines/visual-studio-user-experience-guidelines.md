@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139859"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
 Visual Studio 用户体验指南旨在为那些 for Visual Studio 中设计新的功能。 这些指南包含有关常见用户模型和交互模式的信息，以便设计器的新用户界面 (UI) 可以创建无缝而持续开发环境中的用户体验。  

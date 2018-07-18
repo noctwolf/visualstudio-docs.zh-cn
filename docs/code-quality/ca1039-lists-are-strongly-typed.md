@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31901035"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039：列表已强类型化
 |||

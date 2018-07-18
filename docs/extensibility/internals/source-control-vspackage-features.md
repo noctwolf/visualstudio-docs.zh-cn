@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134947"
 ---
 # <a name="source-control-vspackage-features"></a>源代码管理 VSPackage 功能
 本部分介绍的各种功能的 VSPackage 的源控件。 它概述了注册并选择对此类为 VSPackage，详细信息并讨论了三个主要的源控件相关的功能： 处理的查询编辑查询保存 (QEQS) 事件、 字形替换和源控件的自定义用户界面 (UI)函数。  

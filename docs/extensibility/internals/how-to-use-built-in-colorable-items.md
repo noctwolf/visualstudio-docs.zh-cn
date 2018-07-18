@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129678"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何： 使用内置可着色项
 使用内置可着色项之前，你必须首先向发出信号集成的开发环境 (IDE) 不提供你自己自定义可着色项，在这种情况下将是<xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>对象。 通过设置语言服务的注册表项来执行此操作。  

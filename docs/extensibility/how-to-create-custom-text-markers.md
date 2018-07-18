@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132251"
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
 如果你想要创建自定义文本标记，来强调或将代码组织，你必须执行以下步骤：  

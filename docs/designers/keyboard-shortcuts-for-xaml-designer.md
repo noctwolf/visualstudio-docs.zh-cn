@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922437"
 ---
 # <a name="keyboard-shortcuts--for-xaml-designer"></a>XAML 设计器中的键盘快捷方式
 通过使用 XAML 设计器中的键盘快捷方式，需要多次单击鼠标按钮完成的操作只需按一次键盘快捷方式即可完成，从而可加快你的工作速度。

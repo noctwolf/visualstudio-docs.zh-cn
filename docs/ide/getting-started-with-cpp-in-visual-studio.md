@@ -13,11 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65cbfd23c1467988f720822cd68361f5acca23b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747347"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/26/2018
 
 如果 Visual Studio 尚未运行，请将其启动。
 
-![应用了 Visual C++ 设置的 IDE](../ide/media/get-started-cpp-ide-layout.png "应用了 Visual C++ 设置的 IDE")
+![应用了 Visual C&#43;&#43; 设置的 IDE](../ide/media/get-started-cpp-ide-layout.png)
 
 在你打开 Visual Studio 后，可查看 IDE 的三个基本部分：工具窗口、菜单和工具栏，以及主窗口空间。 工具窗口位于应用窗口的左右两侧。 “快速启动”框、菜单栏和标准工具栏位于顶部。 窗口的中部包含“起始页”。 当你打开解决方案或项目时，将在这里显示编辑器和设计器。 开发应用时，大部分时间都花在此中心区域。
 
@@ -43,11 +44,11 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 1. 在菜单栏上，依次选择“文件”>“新建”>“项目”，打开“新建项目”对话框。
 
-   ![在菜单栏上，依次选择“文件”>“新建”>“项目”](../ide/media/get-started-cpp-file-new-project-menu.png "在菜单栏上，依次选择“文件”>“新建”>“项目”")
+   ![在菜单栏上选择“文件”>“新建”>“项目”](../ide/media/get-started-cpp-file-new-project-menu.png)
 
 1. 如果尚未选中，则在“新建项目”对话框中，选择“已安装”>“Visual C++”。 在中间窗格中，选择“Windows 控制台应用程序”模板。 在“名称”编辑框中，输入“HelloApp”。
 
-   ![使用“新建项目”对话框来创建应用项目](../ide/media/get-started-cpp-new-project-dialog.png "使用“新建项目”对话框来创建应用项目")
+   ![使用“新建项目”对话框来创建应用项目](../ide/media/get-started-cpp-new-project-dialog.png)
 
    对话框可能有不同的选择，具体取决于安装的 Visual Studio 工作负载和组件。 如果看不到 Visual C++ 项目模板，则需再次运行 Visual Studio 安装程序并安装“使用 C++ 的桌面开发”工作负载。 可直接从“新建项目”对话框操作。 若要启动安装程序，请选择对话框上的“打开 Visual Studio 安装程序”链接。
 
@@ -55,7 +56,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
    随后将创建 HelloApp 项目和解决方案及 Windows 控制台应用的基本文件，并自动将其加载到“解决方案资源管理器”中。 代码编辑器中会打开 HelloApp.cpp 文件。 “解决方案资源管理器”中会显示这些项：
 
-   ![“解决方案资源管理器”中的解决方案文件](../ide/media/get-started-cpp-solution-explorer.png "“解决方案资源管理器”中的解决方案文件")
+   ![解决方案资源管理器中解决方案的文件](../ide/media/get-started-cpp-solution-explorer.png)
 
 ## <a name="add-code-to-the-app"></a>向应用添加代码
 
@@ -71,11 +72,11 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
    红色的波浪线显示在 `cout`下面。 如果将指针悬停在其上方，则会显示错误消息。
 
-   ![针对计数的错误文本](../ide/media/get-started-cpp-intellisense-error.png "针对计数的错误文本")
+   ![cout 错误文本](../ide/media/get-started-cpp-intellisense-error.png)
 
    错误消息也将出现在“错误列表”  窗口中。 可在菜单栏中选择“视图”>“错误列表”来显示此窗口。
 
-   ![“错误列表”窗口中的错误](../ide/media/get-started-cpp-error-list.png "“错误列表”窗口中的错误")
+   ![“错误列表”窗口中的错误](../ide/media/get-started-cpp-error-list.png)
 
    代码缺少 [std::cout](/cpp/standard-library/iostream) 声明，可在 \<iostream> 标头文件中找到该声明。
 
@@ -88,7 +89,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
    你可能注意到了，输入代码时出现了一个框。 此框包含针对所输入字符的自完成建议。 此框是 C++ IntelliSense 的一部分，它提供了编码提示，包括类或接口的成员和参数信息。 你还可以使用代码段，它们是预定义的代码块。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md) 和[代码片段](../ide/code-snippets.md)。
 
-   ![编辑器中已修复的代码](../ide/media/get-started-cpp-cout-fix.png "编辑器中已修复的代码")
+   ![编辑器中修复的代码](../ide/media/get-started-cpp-cout-fix.png)
 
    修复该错误后， `cout` 下面的红色波浪线将消失。
 
@@ -98,7 +99,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 生成代码十分简单。 在菜单栏上，依次选择“生成”>“生成解决方案”。 Visual Studio 生成 HelloApp 解决方案，并在“输出”窗口中报告进度。
 
-   ![生成 HelloApp 解决方案](../ide/media/get-started-cpp-build-solution.gif "生成 HelloApp 解决方案")
+   ![生成 HelloApp 解决方案](../ide/media/get-started-cpp-build-solution.gif)
 
 ## <a name="debug-and-test-the-app"></a>调试和测试应用
 
@@ -108,7 +109,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 若要启用调试器，请选择菜单栏上的“调试”>“开始调试”。
 
-![“调试”菜单上的“开始调试”命令](../ide/media/get-started-cpp-start-debugging-menu.png "“调试”菜单上的“开始调试”命令")
+![“调试”菜单上的“启动调试”命令](../ide/media/get-started-cpp-start-debugging-menu.png)
 
 调试器启动并运行代码。 在调试器停止运行时，控制台窗口（类似命令提示符的单独窗口）将显示几秒钟，但是将很快关闭。 若要查看文本，你需要设置一个断点以停止程序执行。
 
@@ -116,17 +117,17 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 1. 在编辑器中，将光标置于行 `return 0;` 上。 在菜单栏上，选择“调试”>“切换断点”。 还可单击左侧边距处来设置断点。
 
-     ![“调试”菜单上的“切换断点”命令](../ide/media/get-started-cpp-toggle-breakpoint-menu.png "“调试”菜单上的“切换断点”命令")
+     ![“调试”菜单上的“切换断点”命令](../ide/media/get-started-cpp-toggle-breakpoint-menu.png)
 
      编辑器窗口最左侧边距中该代码行附近将显示一个红圈。
 
-     ![窗口边距中指示的断点](../ide/media/get-started-cpp-breakpoint-set.png "窗口边距中指示的断点")
+     ![窗口边距中指示的断点](../ide/media/get-started-cpp-breakpoint-set.png)
 
 1. 若要启用调试，请按 F5。
 
    调试器启动，控制台窗口出现并显示单词 **Hello**。
 
-   ![控制台窗口中的 Hello 文本](../ide/media/get-started-cpp-helloapp-window.png "控制台窗口中的 Hello 文本")
+   ![控制台窗口中的文本“Hello”](../ide/media/get-started-cpp-helloapp-window.png)
 
 1. 若要停止调试，请按 Shift+F5。
 
@@ -140,11 +141,11 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 1. 在菜单栏上，依次选择“生成”>“清理解决方案”，删除上一生成过程中创建的中间文件和输出文件。
 
-   ![“生成”菜单上的“清理解决方案”命令](../ide/media/get-started-cpp-clean-solution-menu.png "ExploreIDE-CleanSolution")
+   ![“生成”菜单上的“清理解决方案”命令](../ide/media/get-started-cpp-clean-solution-menu.png)
 
 1. 若要将 HelloApp 的解决方案配置从“调试”更改为“发布”，请在工具栏中选择“解决方案配置”控件上的下拉菜单，然后选择“发布”。
 
-   ![生成应用程序的发布版本](../ide/media/get-started-cpp-set-release-configuration.png "C++IDE_ChangingBuildtoRelease")
+   ![生成应用程序的发布版本](../ide/media/get-started-cpp-set-release-configuration.png)
 
 1. 生成解决方案。 在菜单栏上，依次选择“生成”>“生成解决方案”。
 
@@ -157,5 +158,3 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 - [使用 Visual Studio IDE 进行 C++ 桌面开发](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [演练：使用 C# 或 Visual Basic 创建简单应用程序](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 - [提高 Visual Studio 使用效率的提示](../ide/productivity-tips-for-visual-studio.md)
-- [Visual Studio 示例](../ide/visual-studio-samples.md)
-- [Visual Studio 开发入门](../ide/get-started-developing-with-visual-studio.md)

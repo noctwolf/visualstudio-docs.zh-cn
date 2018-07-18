@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31119979"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 此接口提供允许获取和设置一个属性的函数。  

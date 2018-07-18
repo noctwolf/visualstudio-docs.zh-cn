@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465403"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 断言（或 `Assert` 语句）测试您指定为 `Assert` 语句的参数的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  

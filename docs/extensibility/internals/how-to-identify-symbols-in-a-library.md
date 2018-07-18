@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136106"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>如何： 标识库中的符号
 符号浏览工具显示符号的分层的视图。 符号表示命名空间、 对象、 类、 类成员和其他语言元素。  

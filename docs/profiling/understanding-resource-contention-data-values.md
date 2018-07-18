@@ -12,13 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc41ee4c3c9f53d45245c6c305d7f8e221757f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06722e9270269ca674370d5bf8b1925d850ce00
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34477400"
 ---
-# <a name="understanding-resource-contention-data-values"></a>了解资源争用数据值
+# <a name="understand-resource-contention-data-values"></a>了解资源争用数据值
 
 资源争用分析将收集每次应用程序中的争用线程访问共享资源时被强制等待的详细调用堆栈信息。
 
@@ -30,8 +31,8 @@ ms.lasthandoff: 04/19/2018
 
 资源争用报告视图还包括显示一段时间内各个争用事件的时间线关系图，并显示创建特定事件的调用堆栈。 有关更多信息，请参见下列主题之一：
 
-- [“线程详细信息”视图](../profiling/thread-details-view-contention-data.md)
+- [线程详细信息视图](../profiling/thread-details-view-contention-data.md)
 
-- [“资源详细信息”视图](../profiling/resource-details-view-contention-data.md)
+- [资源详细信息视图](../profiling/resource-details-view-contention-data.md)
 
 有关并发分析的第二个模式的详细信息，请参阅[并发可视化工具](../profiling/concurrency-visualizer.md)。

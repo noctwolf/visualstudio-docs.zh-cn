@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31121087"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此接口表示正在运行的进程和其程序。 此接口存在几种方法中代替[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口。 它提供了控制过程中的所有程序。  

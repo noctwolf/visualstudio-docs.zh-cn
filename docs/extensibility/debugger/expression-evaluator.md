@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102312"
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (EE) 检查语言来分析和在运行时，计算变量和表达式的语法，从而使它们可以在中断模式下 IDE 时由用户查看。  

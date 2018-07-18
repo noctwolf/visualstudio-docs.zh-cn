@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949483"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
 如果你正在编写 Visual Studio 扩展，如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，则可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。

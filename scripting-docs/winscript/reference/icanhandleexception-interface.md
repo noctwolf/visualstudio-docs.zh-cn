@@ -1,16 +1,16 @@
 ---
-title: "ICanHandleException 接口 |Microsoft 文档"
-ms.custom: 
+title: ICanHandleException 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ICanHandleException interface
 ms.assetid: 32df7f81-557d-40cf-a844-06a6eaa292f3
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725207"
 ---
 # <a name="icanhandleexception-interface"></a>ICanHandleException 接口
 允许调用方的脚本引擎的调用方，来指定哪些异常句柄。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120957"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 此接口允许调试管理器 (SDM) 附加到某个程序，并获取与程序相关联的程序节点的会话。  

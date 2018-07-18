@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31463008"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 公开基位置和内存的偏移量的模块或图像的详细的信息。  

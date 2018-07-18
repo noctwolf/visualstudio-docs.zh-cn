@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476132"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>如何：测试和调试可视化工具
 编写完可视化工具后，需要对其进行调试和测试。  

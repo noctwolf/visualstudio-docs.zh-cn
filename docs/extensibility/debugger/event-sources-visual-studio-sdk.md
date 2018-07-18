@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099833"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>事件源 (Visual Studio SDK)
 有两个源的事件： 调试管理器 (SDM) 进行的调试引擎 (DE) 和会话。 从 DE 发送的事件有一个非 NULL 引擎，而从 SDM 发送的事件有一个 NULL 引擎。  

@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946801"
 ---
 # <a name="toggle-breakpoint-command"></a>“切换断点”命令
 在文件中的当前位置，根据其当前状态打开或关闭断点。

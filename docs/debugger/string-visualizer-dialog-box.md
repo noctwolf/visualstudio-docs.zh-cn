@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476970"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 虽然你进行调试，你可以打开到太长，在数据提示或调试器窗口中查看的查看字符串的字符串可视化工具。 在许多情况下，可视化工具可以帮助您标识格式不正确的字符串。

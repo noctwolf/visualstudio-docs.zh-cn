@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268134"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>调试使用 Visual Studio 中的实时调试器
 在实时调试 Visual Studio 会自动启动的应用程序正在运行 Visual Studio 外部中发生异常或崩溃时。 这使您要测试你的应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。

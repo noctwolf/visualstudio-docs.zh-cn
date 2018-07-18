@@ -1,17 +1,17 @@
 ---
-title: "IDispatchEx 接口 |Microsoft 文档"
-ms.custom: 
+title: IDispatchEx 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDispatchEx interface, about IDispatchEx
 - IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24730297"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx 接口
 `IDispatchEx`的扩展`IDispatch`接口，支持的功能不适用于动态语言，如脚本语言。 本部分介绍`IDispatchEx`接口本身，之间的差异`IDispatch`和`IDispatchEx`，和扩展的基本原理。 应读者已经熟悉`IDispatch`并有权访问`IDispatch`文档。  

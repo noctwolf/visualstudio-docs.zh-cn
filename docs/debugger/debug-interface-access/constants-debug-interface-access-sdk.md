@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31458913"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
 这些字符串常量可以用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。  

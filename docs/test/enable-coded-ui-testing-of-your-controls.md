@@ -9,32 +9,33 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 42c5e312aa467eea494e6c667f61157d953dddd0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751749"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>启用控件的编码的 UI 测试
 
 实现对编码的 UI 测试框架的支持，可使控件更易测试。 您能够以增量方式增加支持级别。 先从支持记录、播放和属性验证开始。 然后，在此基础上启用编码的 UI 测试生成器，以识别控件的自定义属性。 提供自定义类以便从生成的代码访问这些属性。 你还可以帮助编码的 UI 测试生成器，使之以一种与所录制操作的目的更为接近的方法来捕获操作。
 
-![CUIT&#95;Full](../test/media/cuit_full.png "CUIT_Full")
+![CUIT&#95;Full](../test/media/cuit_full.png)
 
 ## <a name="support-record-and-playback-and-property-validation-by-implementing-accessibility"></a>通过实现辅助功能来支持记录和播放以及属性验证
 
 编码的 UI 测试生成器可捕获与它在录制期间所遇到的控件有关的信息，然后生成代码以重播该会话。 如果控件不支持辅助功能，则编码的 UI 测试生成器使用屏幕坐标来捕获操作（例如，鼠标单击）。 播放测试时，生成的代码在同一屏幕坐标释放这些操作。 在播放测试时，如果控件出现在屏幕上的其他位置，则生成的代码将无法执行该操作。 在不实现控件的辅助功能的情况下，如果在不同屏幕配置上、不同环境中播放测试或者 UI 布局更改时，测试可能失败。
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png "CUIT_RecordNoSupport")
+ ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
  如果实现辅助功能，则编码的 UI 测试生成器在记录测试时，使用这一辅助功能来捕获有关控件的信息。 然后，当您运行测试时，生成的代码将针对您的控件重播这些事件，即使它位于用户界面中的其他位置。 测试作者还可以使用控件的基本属性创建断言。
 
- ![CUIT&#95;Record](../test/media/cuit_record.png "CUIT_Record")
+ ![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>支持记录和播放、属性验证以及 Windows 窗体控件的导航
  根据以下过程中的概述和 <xref:System.Windows.Forms.AccessibleObject> 中的详细介绍，为您的控件实现辅助功能。
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png "CUIT_Accessible")
+ ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1.  实现一个从 <xref:System.Windows.Forms.Control.ControlAccessibleObject> 派生的类，并重写 <xref:System.Windows.Forms.Control.AccessibilityObject%2A> 属性以便返回类的对象。
 
@@ -74,11 +75,11 @@ ms.lasthandoff: 04/26/2018
 
 在实现对记录、播放和属性验证的基本支持后，可以通过实现 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> 插件，使控件的自定义属性可供编码的 UI 测试使用。 例如，下面的过程将创建一个属性提供程序，该程序允许编码的 UI 测试访问图表控件的 CurveLegend 子控件的 State 属性：
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png "CUIT_CustomProps")
+ ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>支持自定义属性验证
 
-![CUIT&#95;Props](../test/media/cuit_props.png "CUIT_Props")
+![CUIT&#95;Props](../test/media/cuit_props.png)
 
 1. 重写曲线图可访问对象的 <xref:System.Windows.Forms.AccessibleObject.Description%2A> 属性，以此在描述字符串中传递丰富的属性值。 用分号 (;) 分隔多个值。
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>添加专用类以访问您的控件
 
-![CUIT&#95;CodeGen](../test/media/cuit_codegen.png "CUIT_CodeGen")
+![CUIT&#95;CodeGen](../test/media/cuit_codegen.png)
 
 1. 实现派生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> 类，并将控件的类型添加到构造函数中的搜索属性集合。
 
@@ -162,7 +163,7 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="to-support-intent-aware-actions"></a>支持目的感知操作
 
-![CUIT&#95;Actions](../test/media/cuit_actions.png "CUIT_Actions")
+![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
 1. 实现派生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter> 的操作筛选器类，并替代属性 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>、<xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>。
 

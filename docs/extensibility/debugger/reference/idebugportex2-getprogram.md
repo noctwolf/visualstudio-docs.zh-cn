@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31113690"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 获取与程序节点相关联的程序。  

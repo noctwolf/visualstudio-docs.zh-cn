@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474543"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/18/2018
   
 5.  在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
   
- 更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果你生成应用程序从命令行或从生成文件，但在 Visual Studio 环境中调试，你可以仍使用编辑并继续如果你设置**/ZI**选项。  
+ 更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 如果你生成应用程序从命令行或从生成文件，但在 Visual Studio 环境中调试，你可以仍使用编辑并继续如果你设置 **/ZI**选项。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
  在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  

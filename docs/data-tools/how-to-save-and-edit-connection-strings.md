@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916890"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>如何：保存和编辑连接字符串
 可以保存在应用程序配置文件 （也称为应用程序设置） 或硬编码在你的应用程序中直接在 Visual Studio 应用程序中的连接字符串。 在应用程序配置文件中保存连接字符串简化了维护应用程序的任务。 如果连接字符串需要进行更改，则可以在应用程序设置文件中对其进行更新（这与必须在源代码中对其进行更改并重新编译应用程序相反）。

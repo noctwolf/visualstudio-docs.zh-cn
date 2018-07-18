@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133794"
 ---
 # <a name="project-subtypes-design"></a>项目子类型设计
 项目子类型让 Vspackage 扩展基于 Microsoft Build Engine (MSBuild) 项目。 使用聚合，可以重用核心管理项目系统中实现的大容量[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]但仍自定义用于特定方案的行为。  

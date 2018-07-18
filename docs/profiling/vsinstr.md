@@ -19,11 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5911dfcdf2cc7e235dc1ad5ab78aaf290d89d5e5
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 88a9e225539a843ddba1850ae5919579ac197081
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573201"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具用于检测二进制文件。 使用以下语法调用该工具：  
@@ -45,7 +46,7 @@ VSInstr [/U] filename [/options]
 |**DumpFuncs**|列出指定映像中的函数。 未执行任何检测。|  
 |**ExcludeSmallFuncs**|从检测中排除较小的函数，它们是不执行任何函数调用的短函数。 “ExcludeSmallFuncs”选项提供了更少的检测开销，因此提高了检测速度。<br /><br /> 排除较小的函数也可减少进行分析所需的 .vsp 文件的大小和时间。|  
 |**Mark:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname,markid`|插入可用于标识 .vsp 报表文件中数据区域的开始或结束处的分析标记（用于分隔报表中的数据的标识符）。<br /><br /> **Before** - 紧邻在目标函数进入前。<br /><br /> **After** - 紧邻目标函数退出后。<br /><br /> **Top** - 紧邻目标函数进入后。<br /><br /> **Bottom** - 紧邻目标函数中的每个返回值前。<br /><br /> `funcname` - 目标函数的名称<br /><br /> `Markid` - 用作分析标记的标识符的正整数（长整型）。|  
-|**Coverage**|执行覆盖率检测。 它仅可与下列选项一起使用：**Verbose**、**OutputPath**、**Exclude** 和 **Logfile**。|  
+|**Coverage**|执行覆盖率检测。 它仅可与下列选项一起使用：Verbose、OutputPath、Exclude 和 Logfile。|  
 |**Verbose**|**Verbose** 选项用于查看检测进程的相关详细信息。|  
 |**NoWarn** `[:[Message Number[;Message Number]]]`|取消所有或特定警告。<br /><br /> `Message Number` - 警告编号。 如果省略 `Message Number`，则会取消所有警告。<br /><br /> 有关详细信息，请参阅 [VSInstr 警告](../profiling/vsinstr-warnings.md)。|  
 |**Control** `:{` **Thread** `&#124;` **Process** `&#124;` **Global** `}`|指定以下 VSInstr 数据收集控制选项的分析级别：<br /><br /> **Start**<br /><br /> **StartOnly**<br /><br /> **Suspend**<br /><br /> **StopOnly**<br /><br /> **SuspendOnly**<br /><br /> **ResumeOnly**<br /><br /> **Thread** - 指定线程级别的数据集合控制功能。 仅为当前线程启动或停止分析。 其他线程的分析状态不会受到影响。 默认值为 thread。<br /><br /> **Process** - 指定进程级别的分析数据集合控制功能。 为当前进程中的所有线程启动或停止分析。 其他进程的分析状态不会受到影响。<br /><br /> **Global** - 指定全局级别（跨进程）的数据集合控制功能。<br /><br /> 如果未指定分析级别，则会出现错误。|  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578502"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 任务
 通过使用 XSLT 或编译的 XSLT 转换 XML 输入并输出到输出设备或文件。  

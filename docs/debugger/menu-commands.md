@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476031"
 ---
 # <a name="menu-commands"></a>菜单命令
 此部分中的帮助主题列出在 Spy + + 菜单上可用的命令。  

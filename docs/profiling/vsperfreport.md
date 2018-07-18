@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0c0c67664cfc111483e27bc28cf39afb315b80f
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1c679acf7ce6a767702da05bde6fb4a1e6f8a7df
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572210"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令行工具可用于创建报表，这些报表使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具分析数据文件。 默认的报表格式为 .csv 文件。  

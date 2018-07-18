@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130724"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>优化菜单和工具栏命令
 添加 Vspackage 和到其相应命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可能会导致拥挤的 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供方法来帮助减少 UI 命令混淆。  

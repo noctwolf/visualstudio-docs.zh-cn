@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475806"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>如何： 从 DLL 项目在 Visual Studio 中调试
 调试 DLL 项目的一种方法是在 DLL 项目的项目属性中指定调用应用程序，然后你可以开始调试从 DLL 项目本身。 要使用此方法，应用程序必须调用该 DLL，并且该 DLL 必须在应用程序能够找到它的位置 （否则为应用程序可能找到 DLL 的不同版本并将其加载相反，且它不会命中断点）。 调试 Dll 的其他方法，请参阅[调试 DLL 项目](../debugger/debugging-dll-projects.md)。
@@ -67,7 +68,7 @@ C++ 属性页的布局和内容与 C# 和 Visual Basic 属性页的不同。
 
 5.  如果需要你还可以调用一个应用程序作为 URL。 (如果你正在调试由本地 ASP.NET 应用程序使用的托管 DLL，则可能想要执行此操作。)  
   
-     下**启动操作**，选择**使用 URL 启动浏览器：**单选按钮，并填写 URL。
+     下**启动操作**，选择**使用 URL 启动浏览器：** 单选按钮，并填写 URL。
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>从 DLL 项目启动调试  
   

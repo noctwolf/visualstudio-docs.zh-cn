@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134651"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>对旧语言服务中的导航栏的支持
 在编辑器视图的顶部导航栏显示文件中的类型和成员。 在左侧的下拉列表，显示类型，成员将显示在右侧下拉列表。 当用户选择一种类型时，脱字号位于类型的第一行。 当用户选择成员时，脱字号位于成员的定义。 下拉列表框将更新以反映当前插入符号的位置。  

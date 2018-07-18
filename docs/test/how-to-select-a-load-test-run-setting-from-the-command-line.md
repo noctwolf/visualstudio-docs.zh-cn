@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965383"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：从命令行选择要使用的负载测试运行设置
 

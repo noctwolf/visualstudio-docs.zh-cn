@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459505"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 执行堆栈展开，并返回的结果中的堆栈审核帧接口。  

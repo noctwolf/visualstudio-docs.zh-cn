@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097206"
 ---
 # <a name="archive"></a>存档
 本部分包含的 Visual Studio 扩展性技术，仍受支持但具有更高版本的替换技术的讨论。  

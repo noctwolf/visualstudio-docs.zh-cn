@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132477"
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 类型可视化工具和自定义查看器存在数据，以快速开发人员有意义的方式。 表达式计算器 (EE) 可以支持第三方类型可视化工具，以及提供其自己的自定义查看器。  

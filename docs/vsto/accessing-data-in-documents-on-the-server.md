@@ -21,6 +21,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34268370"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上的文档中的数据
   可以编程的文档级自定义项中的数据而无需使用 Microsoft Office Word 或 Microsoft Office Excel 的对象模型。 这意味着你可以访问未安装 Word 的服务器上的文档中包含的数据或安装 Excel。 例如，在服务器上的代码 (例如，在[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]页) 可以自定义文档中的数据并将自定义的文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码将自定义的数据绑定到文档中。 这可能是由于从用户界面分开的文档中的数据。 有关详细信息，请参阅[文档级自定义项中已缓存数据](../vsto/cached-data-in-document-level-customizations.md)。  

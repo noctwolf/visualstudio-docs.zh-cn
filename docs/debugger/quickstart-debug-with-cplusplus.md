@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926319"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入门： 使用 c + + 使用 Visual Studio 调试器进行调试
 

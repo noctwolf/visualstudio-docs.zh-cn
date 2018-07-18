@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465069"
 ---
 # <a name="funcdebugstart"></a>FuncDebugStart
 如果函数具有哪些调试的定义的点是开始，点由具有的符号`SymTagFuncDebugStart`标记。  

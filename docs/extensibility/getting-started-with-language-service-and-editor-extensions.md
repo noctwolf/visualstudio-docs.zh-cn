@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131567"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，如大纲显示、 大括号匹配、 IntelliSense、 和电灯泡添加到您自己的编程语言或任何内容类型。 你还可以自定义的外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 你还可以定义自己的类型的内容，并指定的外观和行为的你的内容将显示的文本视图。  

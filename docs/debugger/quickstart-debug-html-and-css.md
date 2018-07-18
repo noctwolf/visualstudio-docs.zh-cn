@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479115"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中进行调试 HTML 和 CSS
   
@@ -149,7 +150,7 @@ ms.lasthandoff: 04/18/2018
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“模拟器”**或按 F5，以调试模式运行应用。  
+8.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“模拟器”** 或按 F5，以调试模式运行应用。  
   
      这将运行应用程序中，但你将看到几乎空白的屏幕，因为样式中有几个 bug。 第一个 `FlipView` 图像显示在屏幕中间附近的小正方形中。  
   
@@ -182,7 +183,7 @@ ms.lasthandoff: 04/18/2018
 15. 在主窗口中，双击`width: 100px;height: 100px;`，按**删除**键，，然后按**Enter**。 按 Enter 后，将立即反映新值在应用中，即使尚未停止调试会话。  
   
     > [!IMPORTANT]
-    >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”**和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
+    >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”** 和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
   
 16. 通过选择它，或通过使用 Alt + Tab 切换到应用程序。  
   
@@ -243,9 +244,9 @@ ms.lasthandoff: 04/18/2018
   
  ![在 DOM 资源管理器中选择元素按钮](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")  
   
- 单击 **“选择元素”** （或按 Ctrl+B）将更改选择模式，以使你在正在运行的应用程序中单击某项，即可在 DOM 资源管理器中选择该项。 单击之后，模式将变回正常选择模式。 单击 **“选择元素”**后，应用程序转入前台，而光标发生变化以反映新的选择模式。 单击有轮廓包围的元素后，DOM 资源管理器将返回前台，并选中了指定的元素。  
+ 单击 **“选择元素”** （或按 Ctrl+B）将更改选择模式，以使你在正在运行的应用程序中单击某项，即可在 DOM 资源管理器中选择该项。 单击之后，模式将变回正常选择模式。 单击 **“选择元素”** 后，应用程序转入前台，而光标发生变化以反映新的选择模式。 单击有轮廓包围的元素后，DOM 资源管理器将返回前台，并选中了指定的元素。  
   
- 在选择 **“选择元素”**之前，可通过切换 **“显示网页突出显示”** 按钮来指定是否在正在运行的应用中突出显示元素。 下图显示了该按钮。 默认情况下，将显示突出显示的元素。  
+ 在选择 **“选择元素”** 之前，可通过切换 **“显示网页突出显示”** 按钮来指定是否在正在运行的应用中突出显示元素。 下图显示了该按钮。 默认情况下，将显示突出显示的元素。  
   
  ![显示网页突出显示按钮](../debugger/media/js_dom_display_highlights_button.png "JS_DOM_Display_Highlights_Button")  
   

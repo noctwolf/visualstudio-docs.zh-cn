@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31104090"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>将用户控件添加到开始页
 本演练演示如何添加对自定义起始页的 DLL 引用。 该示例添加到解决方案中，用户控件生成用户控件，并从起始页.xaml 文件然后引用生成的程序集。 一个新选项卡承载用户控件，用作基本 Web 浏览器。  

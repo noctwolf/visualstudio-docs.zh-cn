@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106898"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 此接口提供几种方法访问端口的服务器和通知功能。  

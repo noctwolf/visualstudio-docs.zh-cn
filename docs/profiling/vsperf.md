@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e12f8e3ee431574ab846e30f9672e4c06592a9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: fcac1e902ccc1fcc5432a231c5f34629422815fd
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34477387"
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令行工具可以：  
@@ -25,16 +26,7 @@ ms.lasthandoff: 05/22/2018
   
  有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-##  <a name="BKMK_In_this_topic"></a> 在本主题中  
- 本主题描述了可与 `vsperf.exe` 命令行工具一起使用的选项。 本主题包含以下各节：  
-  
- [仅限 UWP 应用](#BKMK_windows_store_apps_only)  
-  
- [仅限 Windows 8 桌面应用程序和 Windows Server 2012 应用程序](#BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only)  
-  
- [所有应用程序](#BKMK_All_applications)  
-  
-##  <a name="BKMK_windows_store_apps_only"></a> UWP 应用  
+## <a name="uwp-apps-only"></a>仅 UWP 应用  
  这些选项仅适用于 UWP 应用。  
   
 |||  
@@ -45,7 +37,7 @@ ms.lasthandoff: 05/22/2018
 |**/noclr**|可选。 不收集 CLR 数据。<br /><br /> 仅与 /package 或 /attach 一起使用。<br /><br /> 优化，不会解析任何托管符号。|  
 |**/listapps**|列出已安装的应用名称和 PackageFullNames。|  
   
-##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>仅限 Windows 8 桌面应用程序和 Windows Server 2012 应用程序  
+## <a name="windows-8-desktop-applications-and-windows-server-2012-applications-only"></a>仅限 Windows 8 桌面应用程序和 Windows Server 2012 应用程序  
  这些选项不适用于 UWP 应用。  
   
 |||  
@@ -54,7 +46,7 @@ ms.lasthandoff: 05/22/2018
 |**/args:{ExecutableArguments}**|指定要传递 **/launch** 目标的命令行参数。|  
 |**/console**|在新的命令窗口中运行 **/launch** 目标。|  
   
-##  <a name="BKMK_All_applications"></a>所有应用程序  
+## <a name="all-applications"></a>所有应用程序  
  这些选项适用于任何 Windows 8 或 Windows Server 2012 应用程序。  
   
 |||  

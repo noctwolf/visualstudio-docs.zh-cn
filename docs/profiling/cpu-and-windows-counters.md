@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5031481ddf785a85b77747c28d76e79d32a0d599
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748733"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -45,9 +46,9 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
 可移植事件是一组非特定于某个特定处理器的 CPU 计数器。 所有其他的 CPU 计数器称为平台事件，并且在各种平台上可能不受支持。
 
- 可移植事件和平台事件的计数器在 .XML 文件中定义，其中提供了与计数器相关的特定值。 有多个适用于不同 CPU 的文件，因为适用于 Intel 和 AMD CPU 的数据不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 探查器使用此信息向用户展现用于性能测量的相应的计数器（可移植和平台）。
+ 可移植事件和平台事件的计数器在 .xml 文件中定义，其中提供了与计数器相关的特定值。 有多个适用于不同 CPU 的文件，因为适用于 Intel 和 AMD CPU 的数据不同。 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 探查器使用此信息向用户展现用于性能测量的相应的计数器（可移植和平台）。
 
-### <a name="portable-events"></a>Portable Events
+### <a name="portable-events"></a>可移植事件
 
 可移植事件包含以下事件：
 
@@ -78,7 +79,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 |L2 Cache Read Misses|指示二级缓存读取未命中的数量。|
 |L2 Cache Read References|指示二级缓存读取引用的数量。 它包括加载未命中和读取所有权 (RFO) 未命中和命中。|
 
-## <a name="viewing-available-counters"></a>查看可用的计数器
+## <a name="view-available-counters"></a>查看可用的计数器
 
 可以在命令提示符窗口中列出 Visual Studio IDE 中的可用 CPU 计数器。
 
@@ -126,7 +127,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
-     其中 **\<Visual Studio Performance Tools Directory>** 是 Visual Studio 安装的性能工具目录的路径，通常为
+     其中 *\<Visual Studio Performance Tools Directory>* 是 Visual Studio 安装的性能工具目录的路径，通常为
 
      C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
 

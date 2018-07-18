@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107493"
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 在本演练中，通过创建 Visual Studio 设置类别，并通过使用它来保存到的值，并从设置文件还原值。 设置类别是一组显示为"自定义设置点;"的相关属性的也就是说，作为处于的复选框**导入和导出设置**向导。 (你可找到该**工具**菜单。)保存或还原为类别，设置和单个设置不会显示在该向导。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  

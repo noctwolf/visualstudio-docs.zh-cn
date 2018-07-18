@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473213"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：显示线程属性
 若要了解有关线程中列出的详细信息[线程视图](../debugger/threads-view.md)，使用[线程属性对话框中](../debugger/thread-properties-dialog-box.md)。  

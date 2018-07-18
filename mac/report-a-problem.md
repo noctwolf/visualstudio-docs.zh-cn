@@ -11,6 +11,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/08/2018
+ms.locfileid: "33884142"
 ---
 # <a name="how-to-report-a-problem-in-visual-studio-for-mac"></a>如何报告 Visual Studio for Mac 的问题
 

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479671"
 ---
 # <a name="historical-debugging"></a>历史调试
 历史调试是取决于 IntelliTrace 所收集的信息的模式模式。 它允许你向前和前后移动应用程序的执行，并检查其状态。  

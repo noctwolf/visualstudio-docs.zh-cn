@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572786"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 任务
 从基本清单以及从 `TargetZone` 和 `ExcludedPermissions` 属性生成应用程序信任。  

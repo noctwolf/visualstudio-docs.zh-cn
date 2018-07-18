@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128612"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>通过使用命令打开显示文件
 一个项目可以要求 IDE 以显示**打开**对话框。 此请求将提示用户打开具有选定的标准编辑器的文件。 以下步骤介绍了此过程。  

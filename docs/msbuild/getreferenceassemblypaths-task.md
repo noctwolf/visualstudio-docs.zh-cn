@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577621"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 任务
 返回各种框架的引用程序集路径。  

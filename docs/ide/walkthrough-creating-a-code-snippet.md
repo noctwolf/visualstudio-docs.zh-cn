@@ -24,6 +24,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425152"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 可以在“代码片段管理器”（“工具” > “代码片段管理器”）中使用“导入”按钮向 Visual Studio 的安装添加代码片段。

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468120"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 检索用于指定是否已编译的编译单位或函数用缓冲区溢出安全检查的标志 (例如， [/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器开关)。  

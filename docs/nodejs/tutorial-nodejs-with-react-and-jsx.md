@@ -2,7 +2,7 @@
 title: 创建 Node.js 和 React 应用
 description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: mvc
-ms.date: 02/19/2018
+ms.date: 05/23/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,11 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9958711ea64daee9876d3b16330685786b6d5825
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 9b7703c1e8884a5b65e4cdfbd91f2cc9b88c7f68
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34765838"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 通过 Visual Studio 可以轻松创建 Node.js 项目并利用 IntelliSense 和其他支持 Node.js 的内置功能。 此 Visual Studio 教程将从 Visual Studio 模板创建 Node.js Web 应用程序项目。 然后，使用 React 创建一个简单的应用程序。
@@ -34,22 +35,22 @@ ms.lasthandoff: 05/23/2018
 
 * 须安装 Visual Studio 2017 且具有 Node.js 开发工作负载。
 
-    如果尚未安装 Visual Studio，请在[此处](http://www.visualstudio.com)免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
     如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“Node.js 开发”工作负载，然后选择“修改”。
 
 * 须安装 Node.js 运行时。
 
-    如果未安装，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。 一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
+    本教程已使用版本 8.11.2 进行测试。
 
-    本教程已使用版本 8.9.4 进行测试。
+    如果未安装，请从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本。 一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点并选择“属性”）。
 
 ## <a name="create-a-project"></a>创建项目
 首先，创建一个 Node.js Web 应用程序项目。
 
 1. 打开 Visual Studio 2017。
 
-1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目...”。
+1. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
 1. 在“新建项目”对话框的左窗格中，展开“JavaScript”，然后选择“Node.js”。 在中间窗格中，选择“空白 Node.js Web 应用程序”，键入名称“NodejsWebAppBlank”，然后选择“确定”。
 
@@ -88,7 +89,7 @@ ms.lasthandoff: 05/23/2018
 
     ![安装 npm 包](../nodejs/media/tutorial-nodejs-react-install-packages.png)
 
-    “输出”窗口显示包的安装进度。 安装后，包会出现在“npm”节点下。
+    单击“输出”窗口查看安装包的进度（在“从以下位置显示输出”字段中选择“Npm”）。 安装后，包会出现在“npm”节点下。
 
     项目的 package.json 文件中的信息更新为新的包信息（包括包版本）。
 
@@ -98,8 +99,8 @@ ms.lasthandoff: 05/23/2018
     "dependencies": {
       "express": "4.16.2",
       "path": "0.12.7",
-      "react": "16.2.0",
-      "react-dom": "16.2.0",
+      "react": "16.4.0",
+      "react-dom": "16.4.0",
       "ts-loader": "4.0.1",
       "typescript": "2.7.2",
       "webpack": "4.1.1",
@@ -107,9 +108,9 @@ ms.lasthandoff: 05/23/2018
     }
     ```
 
-1. 右键单击项目中的“npm”节点，然后选择“安装缺少的 npm 包”。
+1. 右键单击项目中的“npm”节点，然后选择“更新 npm 包”。
 
-    “输出”窗口显示包的安装进度。
+    单击“输出”窗口可查看包的安装进度。 这可能需要几分钟时间，可能无法立即看到结果。
 
     以下安装后显示在解决方案资源管理器中的 npm 模块。
 
@@ -133,7 +134,7 @@ ms.lasthandoff: 05/23/2018
 
 1. 在“添加新项”对话框中，选择“TypeScript JSX 文件”，键入名称“app.tsx”，然后单击“确定”。
 
-1. 重复上述步骤，添加 webpack-config.js。
+1. 重复上述步骤，添加 webpack-config.js。 请选择“JavaScript 文件”，而非 TypeScript JSX 文件。
 
 1. 重复相同步骤将 index.html 添加到项目。 选择“HTML 文件”，而不是 JavaScript 文件。
 
@@ -229,7 +230,7 @@ ms.lasthandoff: 05/23/2018
 
     webpack 配置代码指示 Webpack 使用 TypeScript 加载程序转译 JSX。
 
-1. 打开 tsconfig.json 并添加以下代码，用于指定 TypeScript 编译器选项：
+1. 打开 tsconfig.json 并使用以下代码替换默认代码，以下代码指定 TypeScript 编译器选项：
 
     ```json
     {
@@ -346,7 +347,7 @@ ms.lasthandoff: 05/23/2018
     当 DOM 资源管理器和 JavaScript 控制台在 Visual Studio 中打开，表明已正确附加调试程序。 这些调试工具类似于 Chrome 开发人员工具和 Edge 的 F12 工具。
 
     > [!NOTE]
-    > 如果未附加调试程序，则会看到消息“无法附加到进程。 操作在当前状态中是非法的。” 然后在调试模式中启用 Chrome 前，先使用任务管理器关闭所有 Chrome 实例。 Chrome 扩展可能正在运行并阻止完整的调试模式。
+    > 如果未附加调试程序，则会看到消息“无法附加到进程。 操作在当前状态中是非法的。在调试模式中启用 Chrome 前，先使用任务管理器关闭所有 Chrome 实例。 Chrome 扩展可能正在运行并阻止完整的调试模式。
 
 1. 由于已执行有断点的代码，因此要刷新浏览器页面以命中断点。
 
@@ -354,7 +355,7 @@ ms.lasthandoff: 05/23/2018
 
     可能会在 app-bundle.js 中或在 app.tsx 中断点的映射位置处命中断点，具体取决于环境和浏览器状态。 无论在哪里命中，均可单步执行代码并检查变量。
 
-    * 如果需要中断 app.tsx 中的代码但又无法执行此操作，请按照之前所述的步骤，使用“附加到进程”来附加调试程序。 然后通过打开“脚本文档” > “app.tsx”，从解决方案资源管理器打开动态生成“app.tsx”文件，设置断点并刷新浏览器中的页面。
+    * 如果需要中断 app.tsx 中的代码但又无法执行此操作，请按照之前所述的步骤，使用“附加到进程”来附加调试程序。 然后通过打开“脚本文档” > “app.tsx”，从解决方案资源管理器打开动态生成“app.tsx”文件，设置断点并刷新浏览器中的页面（在允许断点的代码行中设置断点，如 `return` 语句或 `var` 声明）。
 
         或者，如果需要中断 app.tsx 中的代码但又无法执行此操作，可尝试使用 app.tsx 中的 `debugger;` 语句或改为在 Chrome 开发人员工具中设置断点。
 

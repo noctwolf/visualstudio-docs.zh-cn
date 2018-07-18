@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132729"
 ---
 # <a name="editor-imports"></a>编辑器导入
 你可以导入大量的编辑器服务、 工厂、 和到核心编辑器将你的扩展提供不同类型的访问的代理。 例如，你可以导入<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>若要为你提供<xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator>为给定的内容类型。 （此导航器情况允许你在文本缓冲区上执行不同类型的搜索）。  

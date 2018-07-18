@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128933"
 ---
 # <a name="creating-a-source-control-vspackage"></a>创建源控件 VSPackage
 本文档包括指向与集成源代码管理包的体系结构概述[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，按实现的接口和要使用的服务定义的 API 和的示例演示一个简单的源控制包实现。  

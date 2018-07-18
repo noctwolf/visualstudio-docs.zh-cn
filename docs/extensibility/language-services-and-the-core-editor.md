@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31138475"
 ---
 # <a name="language-services-and-the-core-editor"></a>语言服务和核心编辑器
 Visual Studio 中的编辑器的经常与语言服务相关联。 除了别的之外语言服务提供了语法着色、 语句完成、 IntelliSense、 和文本格式设置。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31106043"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>实现源代码管理插件的最佳做法
 以下技术详细信息可帮助你可靠地实现了源代码管理插件中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  

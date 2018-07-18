@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953856"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>将跟踪属性添加到的域特定语言定义
 
@@ -124,7 +125,7 @@ A*跟踪域*属性是的属性，用户可以更新，但具有一个默认值�
 
 3.  在**DSL 资源管理器**，展开**域类**文件夹中，右键单击**ExampleElement**节点，，然后单击**添加新域类型描述符**.
 
-    1.  展开**ExampleElement**节点，然后选择**自定义类型描述符 （域类型描述符）**节点。
+    1.  展开**ExampleElement**节点，然后选择**自定义类型描述符 （域类型描述符）** 节点。
 
     2.  在**属性**域类型描述符，窗口中将设置**自定义编码**到**True**。
 

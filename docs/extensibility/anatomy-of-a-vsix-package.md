@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31099546"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的剖析
 VSIX 包是包含一个或多个 Visual Studio 扩展，以及元数据，Visual Studio 将使用来进行分类并安装扩展的.vsix 文件。 该元数据包含在 VSIX 清单和 [Content_Types].xml 文件。 VSIX 包还可能包含一个或多个 Extension.vsixlangpack 文件提供本地化的安装文本，并可能包含其他 VSIX 包来安装依赖项。  

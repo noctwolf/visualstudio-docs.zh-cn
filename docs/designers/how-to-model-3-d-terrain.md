@@ -1,6 +1,7 @@
 ---
 title: 如何：构建三维地形模型
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3108ff6c04ccae459e977601446d3d16efa8ebfa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b62ad2d954435e5556f2f427d531d806dfb7be18
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745573"
 ---
 # <a name="how-to-model-3d-terrain"></a>如何：构建三维地形模型
 
@@ -25,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 
 完成后，模型应类似于：
 
-![显示地形模型的三维场景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![显示地形模型的三维场景](../designers/media/digit-terrain-model.png)
 
 开始前，请确保显示“属性”窗口和“工具箱”。
 
@@ -51,7 +53,7 @@ ms.lasthandoff: 04/19/2018
 
 地形模型已完成。 下面是应用了 Phong 着色的最终模型：
 
-![显示地形模型的三维场景](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")
+![显示地形模型的三维场景](../designers/media/digit-terrain-model.png)
 
 可以使用此地形模型演示[如何：创建基于几何图形的渐变着色器](../designers/how-to-create-a-geometry-based-gradient-shader.md)中所述的渐变着色器的效果。
 

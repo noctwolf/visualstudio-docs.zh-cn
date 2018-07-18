@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31110063"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>附加和分离到程序
 附加调试器需要发送的方法和具有正确的属性的事件正确的顺序。  

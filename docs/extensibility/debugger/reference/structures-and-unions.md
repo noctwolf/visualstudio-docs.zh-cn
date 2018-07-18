@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133968"
 ---
 # <a name="structures-and-unions"></a>结构和联合
 以下是结构和 Visual Studio 调试 SDK 中的联合。  

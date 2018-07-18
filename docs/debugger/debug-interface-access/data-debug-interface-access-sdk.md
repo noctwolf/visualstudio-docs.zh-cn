@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31468367"
 ---
 # <a name="data-debug-interface-access-sdk"></a>数据（调试界面访问 SDK）
 所有变量，例如参数、 本地变量、 全局变量和类成员都由`SymTagData`符号。 常量值 (`LocIsConstant`) 也被标识与此类型。  

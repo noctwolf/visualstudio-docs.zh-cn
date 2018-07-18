@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31972415"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置配置网络仿真
 
@@ -74,9 +75,9 @@ ms.lasthandoff: 04/26/2018
 
 4.  如果测试设置中包括网络仿真诊断数据适配器并且打算在本地计算机中使用它，那么还必须将网络仿真驱动程序绑定到计算机的网络适配器之一。 必须具有网络仿真驱动程序，网络仿真诊断数据适配器才能起作用。 网络仿真驱动程序以两种方式安装和绑定到适配器：
 
-    -   **网络仿真驱动程序随 Microsoft Visual Studio Test Agent 一起安装：**Microsoft Visual Studio Test Agent 既可用于远程计算机，又可用于本地计算机。 安装 Visual Studio Test Agent 时，安装过程包含一个将网络仿真驱动程序绑定到网卡的配置步骤。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
+    -   **网络仿真驱动程序随 Microsoft Visual Studio Test Agent 一起安装：** Microsoft Visual Studio Test Agent 既可用于远程计算机，又可用于本地计算机。 安装 Visual Studio Test Agent 时，安装过程包含一个将网络仿真驱动程序绑定到网卡的配置步骤。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
 
-    -   **网络仿真驱动程序随 Microsoft Visual Studio Test Professional 一起安装：**初次使用网络仿真时，会提示你将网络仿真驱动程序绑定到网卡。
+    -   **网络仿真驱动程序随 Microsoft Visual Studio Test Professional 一起安装：** 初次使用网络仿真时，会提示你将网络仿真驱动程序绑定到网卡。
 
     > [!TIP]
     > 也可以使用以下命令在不安装 Visual Studio 测试代理的情况下从本地计算机上的命令行中安装网络仿真驱动程序：VSTestConfig NETWORKEMULATION /install

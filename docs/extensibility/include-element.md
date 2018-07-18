@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133293"
 ---
 # <a name="include-element"></a>包含的元素
 Include 元素指定可以位于的文件提供包含以插入到当前文件的路径。  所有符号和定义的类型将都成为已编译的结果的一部分。  

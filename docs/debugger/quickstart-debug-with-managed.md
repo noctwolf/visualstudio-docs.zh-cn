@@ -1,4 +1,4 @@
----
+﻿---
 title: 调试托管的代码 |Microsoft 文档
 description: 调试 C# 或 Visual Basic 使用 Visual Studio 调试器
 ms.custom: mvc
@@ -18,6 +18,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476877"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入门： 使用托管代码中使用 Visual Studio 调试器进行调试
 
@@ -29,7 +30,7 @@ Visual Studio 调试器提供了许多功能强大的功能，以帮助你调试
 
 2. 下**Visual C#** 或**Visual Basic**，选择 **.NET Core**，，然后在中间窗格中选择**控制台应用程序 (.NET Core)**。
 
-     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**和 **.NET Core**工作负荷，然后选择**修改**。
+     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**和 **.NET Core** 工作负荷，然后选择**修改**。
 
 3. 键入的名称，例如**MyDbgApp**单击**确定**。
 

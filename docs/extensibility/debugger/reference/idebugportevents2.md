@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31120031"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此接口通知的过程和程序创建和析构特定端口上的侦听器 （通常会话调试管理器 [SDM] 或调试引擎）。 此信息可以用于显示的进程和在端口上运行的程序的实时视图。  

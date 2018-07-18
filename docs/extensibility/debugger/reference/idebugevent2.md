@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31111174"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 此接口用于通信关键的调试信息，例如在断点处停止和非关键的信息，例如调试消息。  

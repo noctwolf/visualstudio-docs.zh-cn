@@ -1,16 +1,16 @@
 ---
-title: "IDebugStackFrameSniffer 接口 |Microsoft 文档"
-ms.custom: 
+title: IDebugStackFrameSniffer 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugStackFrameSniffer interface
 ms.assetid: 5669598e-a6bd-4694-9cb2-bd908be72bed
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726797"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer 接口
 使您能够枚举已知的组件的逻辑的堆栈帧。 脚本引擎通常实现此接口。 此接口以查找所有堆栈帧过程调试 manager 使用与给定线程关联。  

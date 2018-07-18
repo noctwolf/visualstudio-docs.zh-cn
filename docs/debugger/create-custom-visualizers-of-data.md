@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464831"
 ---
 # <a name="create-custom-visualizers-of-data"></a>创建数据的自定义可视化的工具
  可视化工具是组件[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面。 A*可视化工具*创建对话框或另一个接口，以适合于其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并按照该字符串出现在浏览器窗口中时的样子显示结果；位图可视化工具解释位图结构并显示该位图结构表示的图形。 某些可视化工具允许您修改数据，还允许您查看数据。

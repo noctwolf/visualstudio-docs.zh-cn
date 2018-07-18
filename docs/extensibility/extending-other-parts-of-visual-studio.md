@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133657"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>扩展 Visual Studio 的其他部分
 有许多你可以扩展 Visual Studio UI 更多部分。 此处我们向您展示只是其中一些。  

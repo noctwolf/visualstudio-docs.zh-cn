@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31946918"
 ---
 # <a name="customizing-element-tools"></a>自定义元素工具
 在某些 DSL 定义，作为一组元素表示在一个概念。 例如，如果你创建在其中一个组件具有一组固定的端口的一个模型，你始终希望要在其父组件在同一时间创建的端口。 因此，你必须自定义的元素创建工具，以便它创建的一组而并非仅仅一个元素。 若要实现此目的，你可以自定义如何初始化元素创建工具。

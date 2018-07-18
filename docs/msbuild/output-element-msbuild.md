@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31577348"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 存储项和属性中的任务输出值。  

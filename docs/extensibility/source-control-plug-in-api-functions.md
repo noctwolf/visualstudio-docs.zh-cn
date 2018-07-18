@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144364"
 ---
 # <a name="source-control-plug-in-api-functions"></a>源控件插件 API 函数
 源控件插件 API 提供以下函数，必须由源代码管理插件根据此 API 实现。 每个函数语义的签名关联的位标志和其他参数将本引用中的详细信息中所述。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="requirements"></a>要求  
  标头： scc.h  
   
- (环境 SDK 中提供常见默认情况下中包括文件夹， *[驱动器]*\Program Files\VSIP 8.0\EnvSDK\common\inc; 在 MSSCCI 示例中，具有的 VSIP 文件夹中还提供*[驱动器]*\ProgramFiles\VSIP 8.0\MSSCCI)。  
+ (环境 SDK 中提供常见默认情况下中包括文件夹， *[驱动器]* \Program Files\VSIP 8.0\EnvSDK\common\inc; 在 MSSCCI 示例中，具有的 VSIP 文件夹中还提供 *[驱动器]* \ProgramFiles\VSIP 8.0\MSSCCI)。  
   
 ## <a name="see-also"></a>另请参阅  
  [源控件插件](../extensibility/source-control-plug-ins.md)   

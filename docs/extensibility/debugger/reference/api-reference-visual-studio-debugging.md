@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31103235"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 参考 （Visual Studio 调试）
 参考部分包括 API，显示的语法和用法的所有 API 元素的指南的概念性概述和多种类型的代码示例。 按类别按字母顺序列出的所有引用。  

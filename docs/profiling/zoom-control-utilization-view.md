@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447838"
 ---
 # <a name="zoom-control-utilization-view"></a>缩放控件（“使用率”视图）
 缩放控件可帮助您放大 CPU 使用率图表，从而使您能够关注特定的感兴趣区域。 此控件可在视图的中心区域放大。 所以在放大之前将感兴趣的区域移到中心位置。  

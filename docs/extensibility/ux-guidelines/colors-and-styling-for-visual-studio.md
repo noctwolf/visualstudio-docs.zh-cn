@@ -16,6 +16,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865187"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>颜色和 Visual Studio 的样式
 
@@ -282,7 +283,7 @@ Windows 使用几个增加的文本、 背景和映像，颜色对比度的高�
 
 - **选择前景/背景对**在一起或你将无法确信所有的高对比度主题中，颜色选择将正常工作。
 
-- **确定你的 UI 中的哪些部分是最重要，并确保内容区域将突出。**你将丢失大量的详细信息，通常将区分颜色色调存在一些细微差别，因此强边框颜色的使用是常见定义的内容区域，因为有不同的内容区域没有颜色变体。
+- **确定你的 UI 中的哪些部分是最重要，并确保内容区域将突出。** 你将丢失大量的详细信息，通常将区分颜色色调存在一些细微差别，因此强边框颜色的使用是常见定义的内容区域，因为有不同的内容区域没有颜色变体。
 
 ### <a name="system-color-set"></a>系统颜色设置
 

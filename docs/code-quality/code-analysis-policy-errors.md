@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922450"
 ---
 # <a name="code-analysis-policy-errors"></a>代码分析策略错误
 如果在签入时未满足代码分析策略，会发生以下错误：

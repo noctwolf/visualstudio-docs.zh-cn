@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474763"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 类
 表示用于以编程方式控制图形诊断的应用内组件的接口。  

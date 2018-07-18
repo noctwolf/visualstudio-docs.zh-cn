@@ -22,6 +22,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31918092"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明方法不得使用安全断言
 |||

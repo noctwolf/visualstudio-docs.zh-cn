@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569682"
 ---
 # <a name="exec-task"></a>Exec 任务
 通过使用指定的参数来运行指定程序或命令。  

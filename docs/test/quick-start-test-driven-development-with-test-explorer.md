@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d16f3d3ede9c4ad72b8aacec6da00090d7bd5ef6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751418"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/26/2018
 -   在一个窗口中查看你需要的所有信息。
 
 ## <a name="using-test-explorer"></a>使用“测试资源管理器”
- ![显示“全部运行”按钮的单元测试资源管理器](../test/media/unittestexplorer-beta-.png "UnitTestExplorer(beta)")
+ ![显示“全部运行”按钮的单元测试资源管理器](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用“测试资源管理器”运行单元测试
 
@@ -38,13 +39,13 @@ ms.lasthandoff: 04/26/2018
 
     1.  创建测试项目。
 
-         在 **“新建项目”** 对话框中，展开 **“Visual Basic”**、 **“Visual C#”**或 **“Visual C++”**，然后选择 **“测试”**。
+         在 **“新建项目”** 对话框中，展开 **“Visual Basic”**、 **“Visual C#”** 或 **“Visual C++”**，然后选择 **“测试”**。
 
          选择 **“单元测试项目”**。
 
     2.  将每个单元测试编写为一个方法。 为每个测试方法添加 `[TestMethod]` 特性为前缀。
 
-2.  如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+2.  如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 3.  在菜单栏上，依次选择 **“测试”**、 **“运行单元测试”**、 **“所有测试”**。
 
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/26/2018
 
     -   在 **“新建项目”** 对话框中，依次选择 **“Visual C#”**、 **“测试”** ，然后选择 **“单元测试项目”**。
 
-         ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")
+         ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png)
 
 3.  编写基本测试方法。 根据特定输入验证获取的结果：
 
@@ -117,7 +118,7 @@ ms.lasthandoff: 04/26/2018
 
          “测试资源管理器”将打开并显示结果。
 
-         测试显示在 **“失败的测试”**下。
+         测试显示在 **“失败的测试”** 下。
 
 6.  选择测试名称。
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 04/26/2018
 
 7.  选择 **“堆栈跟踪”** 下的项以查看测试失败位置。
 
- ![显示未通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")
+ ![显示失败的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough2.png)
 
  此时，你已创建了测试和存根，在此基础上进行修改以使测试通过。
 
@@ -146,7 +147,7 @@ ms.lasthandoff: 04/26/2018
 
      测试通过。
 
-     ![显示通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough3.png "UnitTestExplorerWalkthrough3")
+     ![显示通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough3.png)
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>添加测试以扩展输入的范围
 
@@ -185,7 +186,7 @@ ms.lasthandoff: 04/26/2018
 
      新测试失败，但第一个测试仍然通过。
 
-     若要查找失败位置，请选择失败的测试，然后在“测试资源管理器”的下半部分，选择 **“堆栈跟踪”**顶部的项。
+     若要查找失败位置，请选择失败的测试，然后在“测试资源管理器”的下半部分，选择 **“堆栈跟踪”** 顶部的项。
 
 3.  检查所测试的方法，以查明可能出错的地方。 在 `MyMath.Rooter` 类中，重写代码：
 
@@ -288,4 +289,4 @@ ms.lasthandoff: 04/26/2018
 
      所有测试仍然通过。
 
-     ![显示 3 个通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough4.png "UnitTestExplorerWalkthrough4")
+     ![显示 3 个通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough4.png)

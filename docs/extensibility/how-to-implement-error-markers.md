@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127845"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 实现错误标记
 错误标记 （或红色的波浪形下划线） 是最困难的文本编辑器自定义项，来实现的。 但是，它们提供给你的 VSPackage 的用户的好处可以远远超过，让他们的成本。 错误标记稍标记语言分析器认为正确带有波浪或波浪红色下划线的文本。 此指标的帮助程序员直观地显示不正确的代码。  

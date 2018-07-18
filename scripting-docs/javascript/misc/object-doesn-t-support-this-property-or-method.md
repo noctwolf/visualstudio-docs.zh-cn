@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3b692c9bf332b7b9150901e16daf99a64b599fee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/10/2018
+ms.locfileid: "24633407"
 ---
 # <a name="object-doesn39t-support-this-property-or-method"></a>对象没有&#39;t 支持此属性或方法
 你指定的属性或方法不在此对象中。 并非所有对象都支持所有的属性和方法。  

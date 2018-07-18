@@ -5,6 +5,7 @@ ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 02/28/2018
+ms.locfileid: "29708769"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中克隆 Python 代码存储库
 

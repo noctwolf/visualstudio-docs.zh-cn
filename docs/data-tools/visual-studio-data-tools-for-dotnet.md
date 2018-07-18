@@ -13,9 +13,10 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: 2b7fc572541e0c2f0f5aa04c6e676d1e2913ff9f
 ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33864715"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于.NET 的 visual Studio data tools
 

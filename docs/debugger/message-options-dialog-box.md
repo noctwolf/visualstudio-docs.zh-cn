@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474916"
 ---
 # <a name="message-options-dialog-box"></a>“消息选项”对话框
 使用此对话框中选择哪些消息中列出[消息视图](../debugger/messages-view.md)。 若要显示此对话框中，选择**日志消息**从**Spy**菜单。  

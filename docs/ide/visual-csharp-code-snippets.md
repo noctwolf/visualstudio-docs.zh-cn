@@ -1,4 +1,4 @@
----
+﻿---
 title: C# 代码片段
 ms.date: 06/05/2017
 ms.prod: visual-studio-dev15
@@ -19,6 +19,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425509"
 ---
 # <a name="c-code-snippets"></a>C# 代码片段
 

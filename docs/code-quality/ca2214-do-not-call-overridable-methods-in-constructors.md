@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920106"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214：不要在构造函数中调用可重写的方法
 |||

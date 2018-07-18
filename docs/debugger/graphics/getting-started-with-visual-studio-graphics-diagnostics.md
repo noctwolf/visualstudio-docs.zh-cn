@@ -14,6 +14,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477516"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/18/2018
 ### <a name="1---create-a-direct3d-app"></a>1 - 创建 Direct3D 应用  
  如果你已有自己的 Direct3D 应用来探索图形诊断，非常好 ！ 否则，请使用以下项之一：
 
-- **DirectX 11 应用 (通用 Windows)**或**DirectX 12 应用 (通用 Windows)**适用于 Windows 10 项目模板。
+- **DirectX 11 应用 (通用 Windows)** 或**DirectX 12 应用 (通用 Windows)** 适用于 Windows 10 项目模板。
 - [Direct3D 12 UAP 示例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)适用于 Windows 10。  
   
  确保在继续之前可以生成应用。  

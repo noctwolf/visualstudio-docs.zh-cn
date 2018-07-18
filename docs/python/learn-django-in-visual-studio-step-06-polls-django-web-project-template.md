@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc5260c50fde7137ed2c598483fd2647d73f4112
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: ab725659207813bb88d505b1318a175e602c5ade
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750488"
 ---
 # <a name="tutorial-step-6-use-the-polls-django-web-project-template"></a>教程步骤 6：使用投票 Django Web 项目模板
 
@@ -111,7 +112,7 @@ class Choice(models.Model):
         return self.text
 ```
 
-如你所见，“投票”保留其 `text` 字段中的说明和 `pub_date` 中的发布日期。 这些字段是数据库中投票所有的唯一单字段；`total_votes` 字段在运行时进行计算。
+如你所见，“投票”保留其 `text` 字段中的说明和 `pub_date` 中的发布日期。 这些字段是数据库中投票所有的唯一字段；`total_votes` 字段在运行时进行计算。
 
 “选择”与通过 `poll` 字段实现的“投票”相关，在 `text` 中包含说明，并在 `votes` 中保留该选择的计数。 `votes_percentage` 字段在运行时计算，在数据库中找不到该字段。
 
@@ -253,7 +254,7 @@ urlpatterns = [
 ]
 ```
 
-如果不熟悉此处使用的更复杂的正则表达式，可以将表达式粘贴到 [regex101.com](https://regex101.com/)，用简明的语言进行说明。 （需要在前面添加一个反斜杠 `\`h 来转义正斜杠 `/`；在 Python 中不需要进行转义，因为字符串上的 `r` 前缀意味着“原始”）。
+如果不熟悉此处使用的更复杂的正则表达式，可以将表达式粘贴到 [regex101.com](https://regex101.com/)，用简明的语言进行说明。 （需要在前面添加一个反斜杠 `\` 来转义正斜杠 `/`；在 Python 中不需要进行转义，因为字符串上的 `r` 前缀意味着“原始”）。
 
 在 Django 中，语法 `?P<name>pattern` 创建了一个名为 `name` 的组，它以出现的顺序作为参数传递给视图。 如前面代码所示，`PollsDetailView` 和 `PollsResultsView` 接收名为 `pk` 的参数，`app.views.vote` 接收名为 `poll_id` 的参数。
 

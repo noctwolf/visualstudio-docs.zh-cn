@@ -21,6 +21,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704897"
 ---
 # <a name="list-registers-command"></a>“列出寄存器”命令
 显示选中寄存器的值并允许修改要显示的寄存器列表。

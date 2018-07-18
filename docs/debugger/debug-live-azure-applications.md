@@ -1,4 +1,4 @@
----
+﻿---
 title: 调试实时 ASP.NET Azure 应用程序
 ms.description: Learn how to set snappoints and view snapshots with the Snapshot Debugger.
 ms.custom: mvc
@@ -16,7 +16,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: c576795a130b6e654310a9ad48381fdc6a23c0e2
 ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2018
 ms.locfileid: "34766319"

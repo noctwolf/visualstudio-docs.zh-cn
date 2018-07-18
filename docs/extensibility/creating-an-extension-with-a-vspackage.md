@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109446"
 ---
 # <a name="creating-an-extension-with-a-vspackage"></a>使用 VSPackage 创建扩展
 本演练演示了如何创建一个 VSIX 项目并添加 VSPackage 项目项。 我们将使用 VSPackage 来获取 UI Shell 服务，以便显示一个消息框。  

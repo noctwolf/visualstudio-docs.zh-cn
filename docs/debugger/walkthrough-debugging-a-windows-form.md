@@ -29,6 +29,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477948"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成本演练使用 Visual Basic、 C# 或 c + +。  
@@ -48,7 +49,7 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
      此时将出现 “新建项目” 对话框。  
   
-2.  在项目类型窗格中，打开**Visual Basic**， **Visual C#**，或**Visual c + +**节点，然后  
+2.  在项目类型窗格中，打开**Visual Basic**， **Visual C#**，或**Visual c + +** 节点，然后  
   
     1.  对于 Visual Basic 或 Visual C# 中，选择**Windows**节点，然后选择**Windows 窗体应用程序**中**模板**窗格。  
   

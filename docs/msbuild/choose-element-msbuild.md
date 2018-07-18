@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569516"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。  

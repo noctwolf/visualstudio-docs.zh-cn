@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: cba2058061768764acc8a18f0fcf627cd4f8c11e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 0d92e2c8e09791aa2efa4cc1d3c0df6c91ce36aa
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691019"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析资源消耗情况和 UI 线程活动 (XAML)
 使用 **“应用程序时间线”** 探查器查找并修正 XAML 应用程序中应用程序交互的相关性能问题。 此工具提供应用程序资源使用情况的详细视图，可帮助提高 XAML 应用程序的性能。 可以分析应用程序准备 UI 框架（布局和呈现）以及为网络和磁盘请求提供服务所花费的时间，以及在应用程序启动、页面加载以及调整窗口大小等应用场景中花费的时间。  
@@ -34,10 +35,10 @@ ms.lasthandoff: 05/17/2018
 5.  Windows 7  
   
 > [!NOTE]
->  你可以收集和分析 CPU 使用率数据和能耗数据以及 **“应用程序时间线”** 数据。 请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+>  你可以收集和分析 CPU 使用率数据和能耗数据以及 **“应用程序时间线”** 数据。 请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> 收集应用程序时间线数据  
- 可以在本地计算机、连接的设备、Visual Studio 模拟器或仿真程序或者远程设备上分析应用的响应能力。 请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+## <a name="collect-application-timeline-data"></a>收集应用程序时间线数据  
+ 可以在本地计算机、连接的设备、Visual Studio 模拟器或仿真程序或者远程设备上分析应用的响应能力。 请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   
 > [!TIP]
 >  如果可能，请直接在设备上运行应用。 在模拟器上或通过远程桌面连接观察到的应用程序性能可能与设备上的实际性能不相同。 另一方面，通过使用 Visual Studio 远程工具收集数据并不影响性能数据。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 05/17/2018
   
      ![时间线探查器报告](../profiling/media/timeline_base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> 分析时间线分析数据  
+## <a name="analyze-timeline-profiling-data"></a>分析时间线分析数据  
  收集分析数据之后，可以按照以下步骤开始分析：  
   
 1.  检查 **“UI 线程使用率”** 和 **“可视吞吐量(FPS)”** 图中的信息，然后使用时间线导航栏选择要分析的时间范围。  
@@ -116,8 +117,8 @@ ms.lasthandoff: 05/17/2018
 |![自定义时间线详细信息](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|允许你指定事件的批注。|  
   
 ## <a name="see-also"></a>请参阅  
- [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)（WPF 团队博客：用于 WPF 应用程序的新 UI 性能分析工具）  
+ [WPF 团队博客：用于 WPF 应用程序的新 UI 性能分析工具](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)  
  [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [优化 WPF 应用程序性能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [分析功能导览](../profiling/profiling-feature-tour.md)

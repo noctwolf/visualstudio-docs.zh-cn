@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131512"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>(源控件 VSPackage) 保存的查询编辑查询
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器可以广播保存查询编辑查询 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源存根 （stub） 实现 QEQS 服务，以便它 QEQS 事件的接收方。 然后，这些事件可以委派给的当前处于活动状态的源控件 VSPackage。 VSPackage 实现该活动的源控件<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>及其方法。 方法`IVsQueryEditQuerySave2`接口通常称为第一次和之前保存文档在编辑文档前立即。  

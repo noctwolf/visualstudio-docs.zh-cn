@@ -21,6 +21,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31561696"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 Windows 窗体的应用程序设置，可以轻松创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作原理以及用户升级到下一个版本时，ClickOnce 如何迁移设置。  

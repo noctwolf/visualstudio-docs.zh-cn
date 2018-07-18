@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128932"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 实现查找和替换机制
 Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行界面，并让它处理搜索、 突出显示，以及替换文本。 这样用户就可以指定多个文本范围。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下必须通知有关的当前目标和所有打开的文档的目标 shell。  

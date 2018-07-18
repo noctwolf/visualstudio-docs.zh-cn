@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923900"
 ---
 # <a name="accessibility-products-and-services-blend"></a>辅助功能产品和服务 (Blend)
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下各节提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：

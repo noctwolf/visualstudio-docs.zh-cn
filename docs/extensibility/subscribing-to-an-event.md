@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31141898"
 ---
 # <a name="subscribing-to-an-event"></a>订阅事件
 本演练说明了如何创建工具窗口中运行的文档表 (RDT) 的事件作出响应。 工具窗口承载实现的用户控件<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法连接到事件的接口。  

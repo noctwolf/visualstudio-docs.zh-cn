@@ -20,6 +20,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477311"
 ---
 # <a name="run-uwp-apps-on-a-remote-machine-in-visual-studio"></a>Visual Studio 中的远程计算机上运行 UWP 应用
   
@@ -43,10 +44,10 @@ ms.lasthandoff: 04/18/2018
 - 对于运行早于 Windows 10 创建者的更新版本的 Windows 10 的 Windows 10 电脑，您必须[安装和运行远程调试组件](#BKMK_download)。
   
 ##  <a name="BKMK_Security"></a> 安全性  
-默认情况下，**世界 （未加密的协议）**在 Windows 10 上使用。 仅应在可信网络上使用此协议。 调试连接容易受到恶意用户就无法截获并且无法更改正在开发和远程计算机之间传递数据。
+默认情况下，**世界 （未加密的协议）** 在 Windows 10 上使用。 仅应在可信网络上使用此协议。 调试连接容易受到恶意用户就无法截获并且无法更改正在开发和远程计算机之间传递数据。
   
 > [!WARNING]
->  没有无法保证网络安全身份验证模式设置为时**世界 （未加密的协议）**或**无**。 只有在确认网络不会遇到恶意通信的请选择这些模式。  
+>  没有无法保证网络安全身份验证模式设置为时**世界 （未加密的协议）** 或**无**。 只有在确认网络不会遇到恶意通信的请选择这些模式。  
   
 ##  <a name="BKMK_DirectConnect"></a> 如何直接使用 USB 电缆进行连接 
 

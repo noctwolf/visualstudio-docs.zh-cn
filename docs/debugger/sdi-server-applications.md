@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475657"
 ---
 # <a name="sdi-server-applications"></a>SDI 服务器应用程序
 如果你正在调试的 SDI 服务器应用程序，你必须指定`/Embedding`或`/Automation`中**命令行自变量**中的属性*项目*属性页对话框中，C/c + +，C# 中，或Visual Basic 项目。  

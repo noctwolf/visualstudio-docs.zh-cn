@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31464698"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 检索用于指定数据符号是否为聚合或集合的符号; 的一部分的标志编译器会将聚合的符号视为单独的实体，但它们实际上是单个更大的符号的一部分。  

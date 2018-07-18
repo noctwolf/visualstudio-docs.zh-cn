@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108383"
 ---
 # <a name="capability-flags"></a>功能标志
 SCC_CAP_*xxx*标志是用于指示了源代码管理插件的功能的位标志。 SCC_EXCAP_*xxx*标志是指示扩展的功能，并解析为整数值的增量标志。  

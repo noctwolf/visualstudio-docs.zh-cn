@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de9726b6716ff66178b90792a25f7bf02bec8ede
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 64883c217d700468942b16a9e628adb15f1db746
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750293"
 ---
 # <a name="tutorial-step-1-get-started-with-the-django-web-framework-in-visual-studio"></a>教程步骤 1：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -33,11 +34,13 @@ ms.lasthandoff: 05/10/2018
 
 ## <a name="prerequisites"></a>系统必备
 
-- Visual Studio 2017 应具备以下选项：
+- Windows 上的 Visual Studio 2017 有以下选项：
   - “Python 开发”工作负载（安装程序中的“工作负载”选项卡）。 有关说明，请参阅[安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)。
   - “代码工具”下“单个组件”选项卡上的“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”。
 
 Django 项目模板也包含在针对 Visual Studio 的 Python 工具的所有早期版本中，尽管细节可能不同于本教程中讨论的内容（特别是不同于早期版本的 Django框架）。
+
+Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，使用 [Visual Studio Code 中的 Python 扩展](https://code.visualstudio.com/docs/python/python-tutorial)。
 
 ### <a name="visual-studio-projects-and-django-projects"></a>“Visual Studio 项目”和“Django 项目”
 
@@ -116,7 +119,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>步骤 1-3：创建虚拟环境并从源代码管理中将其排除
 
-你已为项目配置源代码管理，现在可以创建项目所需的虚拟环境必要 Django 包。 然后，可以使用“团队资源管理器”从源代码管理中排除环境文件夹。
+你已为项目配置源代码管理，现在可为项目创建包含必需 Django 包的虚拟环境。 然后，可以使用“团队资源管理器”从源代码管理中排除环境文件夹。
 
 1. 在“解决方案资源管理器”中，右键单击“Python 环境”节点并选择“添加虚拟环境”。
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135554"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 接口和实现中的所有项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共享基本结构： 你的项目类型的项目模型。 在你的项目模型中，这是你正在开发的 VSPackage，你将创建符合你的设计决策和与由 IDE 提供的全局功能一起工作的对象。 尽管您控制如何保持的项目项，例如，在不控制通知必须保留文件。 当用户将焦点置于上打开项目项，并选择**保存**上**文件**上的菜单[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]菜单栏中，你的项目类型代码必须截获 IDE 中的命令，保留文件，和发送通知到 IDE，无法再更改该文件。  

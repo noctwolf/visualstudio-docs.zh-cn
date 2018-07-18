@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31122345"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 返回一个端口上运行的所有进程的列表。  

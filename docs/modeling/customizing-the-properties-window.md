@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953987"
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 你可以自定义的外观和行为的属性窗口中你的域特定语言 (DSL) 中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定义中，每个域类上定义域属性。 默认情况下时选择的类，在图上或在模型资源管理器的实例, 的每个域属性将列在属性窗口中。 这样你可以查看和编辑域属性值，即使你具有不到关系图上的形状字段映射它们。

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31559434"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;产品&gt;元素 （引导程序）
 `Product`元素是在产品文件的顶级 XML 元素。  

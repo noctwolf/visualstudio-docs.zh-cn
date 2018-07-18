@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129704"
 ---
 # <a name="solutions"></a>解决方案
 解决方案是协同工作以创建应用程序的一个或多个项目中的分组。 适用于解决方案的项目和状态信息存储在两个解决方案文件、 基于文本的解决方案 (.sln) 文件和二进制解决方案用户选项 (.suo) 文件。  

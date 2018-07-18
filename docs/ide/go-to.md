@@ -20,6 +20,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447188"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 

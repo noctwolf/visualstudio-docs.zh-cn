@@ -30,6 +30,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476655"
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>查看 Dll 和可执行文件使用 Visual Studio 调试器中的模块窗口
  

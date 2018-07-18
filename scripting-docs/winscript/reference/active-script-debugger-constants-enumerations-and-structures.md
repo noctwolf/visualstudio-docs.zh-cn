@@ -1,18 +1,18 @@
 ---
-title: "活动脚本调试器常量、 枚举和结构 |Microsoft 文档"
-ms.custom: 
+title: 活动脚本调试器常量、 枚举和结构 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script Debugger structures
 - Active Script Debugger enumerations
 - Active Script Debugger constants
 ms.assetid: b80b9207-fb19-4ee2-85fb-41f8c26e7706
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -21,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24642067"
 ---
 # <a name="active-script-debugger-constants-enumerations-and-structures"></a>活动脚本调试器常量、枚举和结构
 下面的常量、枚举和结构由 Active Debugging 接口使用。  

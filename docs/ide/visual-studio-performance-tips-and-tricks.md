@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6563086968cb84c0ad2177d5a1c13e051012cf
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37433530"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -23,25 +24,23 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 > [!NOTE]
 > 如果因为内存问题而在使用产品时遇到困难，请通过[反馈工具](../ide/how-to-report-a-problem-with-visual-studio-2017.md)告知我们。
 
-## <a name="optimize-your-environment"></a>优化环境
+## <a name="use-a-64-bit-os"></a>使用 64 位操作系统
 
-- **使用 64 位操作系统**
+如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
-    如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
+有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
 
-    有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
+## <a name="disable-automatic-file-restore"></a>禁用自动文件还原
 
-## <a name="configure-solution-and-projects"></a>配置解决方案和项目
+Visual Studio 会自动重新打开上一个会话中处于打开状态的文档。 这可将加载解决方案所需的时间延长 30% 或更多，具体取决于项目类型和打开的文档。 Windows 窗体和 XAML 等设计器以及一些 JavaScript 和 typescript 文件的打开速度较慢。
 
-如果你的超大型解决方案中包含多个项目，可通过进行以下优化受益：
+当自动文档还原导致解决方案加载速度明显变慢时，Visual Studio 会以黄色显示栏通知。 可按照以下步骤禁用自动文件重新打开：
 
-- **卸载项目**
+1. 选择“工具” > “选项”，打开“选项”对话框。
 
-    可通过使用右键单击上下文菜单，从“解决方案资源管理器”中卸载很少使用的各个项目。
+1. 在“项目和解决方案” > “常规”页面上，取消选中“重新打开解决方案加载文档”。
 
-- **重构解决方案**
-
-    可以将解决方案拆分为多个较小的解决方案文件，并在这些文件中包含常用的项目。 此重构可大幅减少工作流的内存使用率。 此外，解决方案越小，加载速度越快。
+如果禁用了自动文件还原，则可以使用“[转到](../ide/go-to.md)”快速导航到要打开的文件。 选择“编辑” > “转到” > “转到全部”，或按 Ctrl+T。
 
 ## <a name="configure-debugging-options"></a>配置调试选项
 
@@ -69,32 +68,33 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
     要禁用“诊断工具”，请启动一个调试会话，选择“工具” > “选项” > “启用诊断工具”，并取消选择该选项。
 
-    有关详细信息，请参阅[分析工具](../profiling/profiling-tools.md)。
+    有关详细信息，请参阅[分析工具](../profiling/profiling-feature-tour.md)。
 
 ## <a name="disable-tools-and-extensions"></a>禁用工具和扩展
 
-某些工具或扩展可能会关闭以提高性能。
+某些工具或扩展会关闭以提高性能。
 
 > [!TIP]
 > 通常可以通过一次关闭一个扩展并重新检查性能来隔离性能问题。
 
-### <a name="managed-language-services-roslyn"></a>托管的语言服务 (Roslyn)
+### <a name="managed-language-service-roslyn"></a>托管的语言服务 (Roslyn)
 
 有关 .NET Compiler Platform（“Roslyn”）性能注意事项的详细信息，请参阅 [Performance considerations for large solutions](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)（大型解决方案的性能注意事项）。
 
 - **禁用完整解决方案分析**
 
-    Visual Studio 对整个解决方案执行分析，以在调用生成前提供关于错误的丰富体验。 此功能可用于尽快速识别错误。 但是，对于超大型解决方案，这一功能可能会占用大量内存资源。 如果遇到内存不足或类似问题，可以禁用此体验并释放这些资源。 默认情况下，Visual Basic 启用此选项，而 C# 禁用此选项。
+    Visual Studio 对整个解决方案执行分析，以在调用生成前提供关于错误的丰富体验。 此功能可用于尽快速识别错误。 但是，对于大型解决方案，这一功能可能会占用大量内存资源。 如果遇到内存不足或类似问题，可以禁用此体验并释放这些资源。 默认情况下，Visual Basic 启用此选项，而 C# 禁用此选项。
 
-    要禁用“完整解决方案分析”，请选择“工具” > “选项” > “文本编辑器” > “<Visual Basic 或 C#>”。 然后选择“高级”，并取消选择“启用完整解决方案分析”。
+    若要禁用“完整解决方案分析”，请选择“工具” > “选项” > “文本编辑器”，替换选择“Visual Basic”或“C#”********。 选择“高级”，并取消选中“启用完整解决方案分析”。
 
 - **禁用 CodeLens**
 
-    Visual Studio 对显示的每个方法执行“查找所有引用”任务。 CodeLens 提供内联显示引用数目等功能。 工作在单独的进程（例如，ServiceHub.RoslynCodeAnalysisService32）中执行。 在超大型解决方案或资源受限的系统中，此功能对性能有显著影响，即使它的运行优先级较低。 如果在这过程中（例如，当在 4 GB 计算机上加载大型解决方案时）遇到高 CPU 或内存问题，可以尝试禁用此功能以释放资源。
+    Visual Studio 对显示的每个方法执行“查找所有引用”任务。 CodeLens 提供内联显示引用数目等功能。 工作在单独的进程（例如 ServiceHub.RoslynCodeAnalysisService32）中执行。 在大型解决方案或资源受限的系统中，此功能对性能有显著影响。 例如，如果在 4 GB 计算机上加载大型解决方案时遇到内存问题，或进程的 CPU 使用率过高，可禁用 CodeLens 以释放资源。
 
     要禁用 CodeLens，请选择“工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens”，然后取消选择该功能。
 
-    此功能在 Visual Studio Professional 和 Visual Studio Enterprise 中可用。
+    > [!NOTE]
+    > CodeLens 在 Visual Studio Professional 和 Enterprise 版本中提供。
 
 ### <a name="other-tools-and-extensions"></a>其他工具和扩展
 
@@ -127,4 +127,4 @@ CLR 使用垃圾回收内存管理系统。 在此系统中，内存有时会被
 ## <a name="see-also"></a>请参阅
 
 - [优化 Visual Studio 性能](../ide/optimize-visual-studio-performance.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)（Visual Studio 博客 - 使用 Visual Studio 2017 版本 15.6 更快地加载解决方案）
+- [更快加载解决方案（Visual Studio 博客）](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/)

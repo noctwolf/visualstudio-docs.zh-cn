@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142521"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素（Visual Studio 项目模板）
 指定的项目模板中包含的文件。  

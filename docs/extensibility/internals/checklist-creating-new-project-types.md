@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131984"
 ---
 # <a name="checklist-creating-new-project-types"></a>清单： 创建新项目类型
 你必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南。  

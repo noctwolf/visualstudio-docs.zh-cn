@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c773d3135cff3d898c93ed6d9df43b36c387747c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c977c147aa9edc7dc83e76dc3d9c07dd959c3f9c
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764704"
 ---
 # <a name="export-button-concurrency-visualizer"></a>“导出”按钮（并发可视化工具）
 通过“导出”按钮，可以将调用堆栈作为 .csv 文件导出，以用于自己的记录或与其他工具（如 Microsoft Excel）一起使用。  

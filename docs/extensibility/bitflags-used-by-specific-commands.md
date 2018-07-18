@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31108781"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Bitflags 由特定的命令
 可以通过在单个值中设置一个或多个位修改大量的源控件插件 API 中的函数的行为。 这些值称为 bitflags。 使用源控件插件 API 各种 bitflags 详细说明了在这里，使用这些函数按分组。  

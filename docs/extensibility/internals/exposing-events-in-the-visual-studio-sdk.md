@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132229"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>公开 Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 允许通过使用自动化源事件。 我们建议源项目和项目项的事件。  

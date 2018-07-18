@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128995"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现处理嵌套的项目的命令
 IDE 将通过传递的命令可以传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口向嵌套的项目或父项目可以筛选或重写命令。  

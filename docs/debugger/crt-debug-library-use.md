@@ -35,6 +35,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31467951"
 ---
 # <a name="crt-debug-library-use"></a>CRT 调试库使用
 C 运行库提供广泛的调试支持。 若要使用 CRT 调试库之一，你必须与链接[/调试](/cpp/build/reference/debug-generate-debug-info)和使用进行编译 **/MDd**， **/MTd**，或 **/LDd**。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951175"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程使用文本模板文件作为输入并生成新的文本文件，并作为输出。 例如，你可以使用文本模板生成 Visual Basic 或 C# 代码，或者可以生成 HTML 报告。

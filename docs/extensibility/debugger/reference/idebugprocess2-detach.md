@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114211"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
 将此过程从调试器分离通过分离过程中的程序的所有。  

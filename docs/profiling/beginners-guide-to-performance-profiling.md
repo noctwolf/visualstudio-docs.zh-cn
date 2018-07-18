@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2e3aee55728f312aaa1ff7d8c44a6bbd6c04bfd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766696"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
 |---------|---------|
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用率以及如何分析内存使用情况。 |
 
-本主题讨论在普通调试工作流中分析 CPU 使用率。 还可以在不附加调试程序的情况下，或通过定目标到正在运行的应用来分析 CPU 使用率。有关详细信息，请参阅[在使用或不使用调试程序的情况下运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[在不使用调试程序的情况下收集分析数据](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
+本文讨论在常规调试工作流中分析 CPU 使用情况。 还可以在不附加调试程序的情况下，或通过定目标到正在运行的应用来分析 CPU 使用率。有关详细信息，请参阅[在使用或不使用调试程序的情况下运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[在不使用调试程序的情况下收集分析数据](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
 
 > [!NOTE]
 > 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/26/2018
 > * 收集 CPU 使用量数据
 > * 分析 CPU 使用量数据
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>步骤 1：收集分析数据 
+## <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据 
   
 1.  打开要在 Visual Studio 中调试的项目，并在应用中设置检查 CPU 使用率的断点。
 
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/26/2018
 
      现在可以开始分析数据。
 
-## <a name="Step2"></a>步骤 2：分析 CPU 使用率数据
+## <a name="step-2-analyze-cpu-usage-data"></a>步骤 2：分析 CPU 使用情况数据
 
 建议通过检查 CPU 使用率下的函数列表开始分析数据，然后确定执行大部分工作的函数，最后仔细查看每一个函数。
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 04/26/2018
 
 - **模块**包含函数的模块名或包含 [外部代码] 节点中的函数的模块数量。
 
-## <a name="BKMK_External_Code"></a>查看外部代码
+## <a name="view-external-code"></a>查看外部代码
 
 外部代码是你编写的代码执行的系统和框架组件中的函数。 外部代码包含函数，可启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用率工具可将用户方法的外部函数收集到一个 [外部代码] 节点中。
   

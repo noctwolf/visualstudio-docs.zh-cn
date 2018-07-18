@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263593"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>“调用树”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配分析数据的“调用树”视图显示在所分析的应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点列出它调用的所有函数以及该函数的 .NET 内存和计时数据。  

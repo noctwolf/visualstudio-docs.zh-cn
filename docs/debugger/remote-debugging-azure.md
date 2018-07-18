@@ -14,7 +14,7 @@ ms.workload:
 - azure
 ms.openlocfilehash: a4e03f9a369959a5736d7030a1dac885771d7984
 ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/04/2018
 ms.locfileid: "34746762"
@@ -52,7 +52,7 @@ ms.locfileid: "34746762"
 
 1. 创建新的 ASP.NET Core 应用程序。 (选择**文件 > 新建 > 项目**，然后选择**Visual C# > Web > ASP.NET Core Web 应用程序**)。
 
-    在**ASP.NET Core**模板部分中，选择**Web 应用程序**。
+    在**ASP.NET Core** 模板部分中，选择**Web 应用程序**。
 
 2. 请确保**ASP.NET Core 2.0**选中，则，**启用 Docker 支持**是**不**选且**身份验证**设置为**无身份验证**。
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114633"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 此接口表示准备绑定和评估之间的已分析的表达式。  

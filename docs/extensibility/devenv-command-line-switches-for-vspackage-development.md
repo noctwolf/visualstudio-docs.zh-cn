@@ -25,6 +25,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134344"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>有关 VSPackage 开发 Devenv 命令行开关
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许开发人员执行 devenv.exe，启动 Visual Studio 集成的开发环境 (IDE) 的文件时自动执行从命令行的任务。  

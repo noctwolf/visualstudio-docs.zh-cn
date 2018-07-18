@@ -28,6 +28,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927463"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 数据进行验证是确认输入到数据对象的值符合中的数据集的架构的约束的过程。 验证过程还确认这些值是遵循已为你的应用程序设定的规则。 最好将更新发送到基础数据库之前的数据进行验证。 这将减少错误以及潜在应用程序和数据库之间的往返次数。

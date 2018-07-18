@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949940"
 ---
 # <a name="replace-command"></a>Replace 命令
 使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。

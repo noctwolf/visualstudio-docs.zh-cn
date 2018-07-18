@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945332"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>“将类型移到匹配的文件”重构
 

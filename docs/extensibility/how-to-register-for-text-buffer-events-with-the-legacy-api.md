@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127227"
 ---
 # <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>如何： 为与旧版 API 的文本缓冲区事件注册
 如果要通过使用旧的 API 来访问文本缓冲区，你应该注册文本缓冲区事件按下列步骤中所示。  

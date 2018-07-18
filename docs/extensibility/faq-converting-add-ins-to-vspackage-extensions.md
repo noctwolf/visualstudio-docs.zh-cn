@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134040"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题：将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，你需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。  

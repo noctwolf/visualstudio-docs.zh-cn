@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140682"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 有多种方式可确定处理具有特定文件扩展名的文件的应用程序。 OpenWithList 和 OpenWithProgids 谓词是两种方法可以指定文件的文件扩展名的注册表项之下的处理程序。  

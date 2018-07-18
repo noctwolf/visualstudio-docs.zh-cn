@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135061"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到添加新项对话框
 将项添加到的过程**添加新项**对话框开头的注册表项。 下列注册表项中所示，AddItemTemplates 部分包含的路径和名称在中可用的项中的目录**添加新项**放对话框。  

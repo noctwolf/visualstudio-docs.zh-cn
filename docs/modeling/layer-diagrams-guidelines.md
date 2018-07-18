@@ -19,6 +19,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954387"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 通过创建描述在高级别的应用程序的体系结构*依赖项关系图*Visual Studio 中。 确保你的代码通过验证你的代码使用依赖项关系图来保持与此设计保持一致。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。

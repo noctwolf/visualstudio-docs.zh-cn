@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31578541"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 如果项目中至少有一个 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 页引用该项目中本地声明的类型，则 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 任务会生成一个程序集。 在生成过程完成后或者在生成过程失败的情况下，生成的程序集会被删除。  

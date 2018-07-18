@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126079"
 ---
 # <a name="directory-status-code-enumerator"></a>目录状态代码枚举器
 `SccDirStatus`枚举器包含在源代码管理系统中指定的目录的状态的命名常量值。 此枚举由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 这是在源控件插件 API 的 1.2 版中引入的。  

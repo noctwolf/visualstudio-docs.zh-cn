@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31457691"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 编译器可能包括使用符号的其他环境变量。 还有一个`SymTagCompilandEnv`为每个这些变量的符号。  

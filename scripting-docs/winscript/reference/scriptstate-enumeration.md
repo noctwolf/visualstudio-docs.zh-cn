@@ -1,11 +1,11 @@
 ---
-title: "SCRIPTSTATE 枚举 |Microsoft 文档"
-ms.custom: 
+title: SCRIPTSTATE 枚举 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SCRIPTSTATE
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - SCRIPTSTATE enum
 ms.assetid: 5f5deb05-c4bb-4964-8077-e624c6b2a14e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24734277"
 ---
 # <a name="scriptstate-enumeration"></a>SCRIPTSTATE 枚举
 指定的脚本引擎的状态。 此枚举由[IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) ， [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) ，和[IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md)方法。  

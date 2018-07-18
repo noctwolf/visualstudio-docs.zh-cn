@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481523"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>图形 API 和内存统计信息
 <!-- VERSIONLESS -->

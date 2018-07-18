@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132386"
 ---
 # <a name="source-control-plug-in-architecture"></a>源控件插件体系结构
 可以添加到源控件支持[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 的实现并附加了源代码管理插件。 IDE 将连接到源代码管理插件通过定义完善的源控件插件 API。 IDE 提供组成工具栏和菜单命令的用户界面 (UI) 来公开的源控制系统版本控制功能。 源代码管理插件实现源代码管理功能。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977110"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>用于创建诊断数据适配器的示例项目
 

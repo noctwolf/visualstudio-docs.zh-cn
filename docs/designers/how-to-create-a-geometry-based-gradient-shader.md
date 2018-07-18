@@ -10,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2aeea5cf70b3c9a70b9f8e80961825bfff179a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 056eae05911af2a9ae6be12f2d3d7b18106df9b1
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34745771"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：创建基于几何图形的渐变着色器
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/26/2018
 > [!NOTE]
 > 在此图中，指定了橙色以更好地演示着色器的效果，但因为预览形状在世界空间中没有位置，所以无法在着色器设计器中完全预览该着色器。 必须在实际场景中预览着色器以演示完全效果。
 
- ![着色器图及其效果预览](../designers/media/digit-gradient-effect-graph.png "")
+ ![着色器图及其效果预览](../designers/media/digit-gradient-effect-graph.png)
 
  某些形状可能会增强某些着色器的预览效果。 有关如何在着色器设计器中预览着色器的详细信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”
 
  下图显示了应用于在[如何：构建三维地形模型](../designers/how-to-model-3-d-terrain.md)中演示的三维场景的着色器（此着色器为本文档中所述的着色器）。 颜色的强度随着世界中点的高度而增加。
 
- ![应用于三维地形模型的渐变效果](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")
+ ![应用于三维地形模型的渐变效果](../designers/media/digit-gradient-effect-result.png)
 
  有关如何向三维模型应用着色器的详细信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 

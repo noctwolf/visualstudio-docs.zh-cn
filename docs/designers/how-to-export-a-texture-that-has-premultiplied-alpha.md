@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31922549"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 Alpha 的纹理
 图像内容管道可从源图像生成预乘 Alpha 纹理。 这些纹理比不包含预乘 alpha 的纹理更易于使用且更可靠。
@@ -44,6 +45,6 @@ ms.lasthandoff: 04/26/2018
 
 3.  配置图像内容管道，生成预乘 Alpha。 在“配置属性”、“图像内容管道”、“常规”页上，将“转换为预乘 alpha 格式”属性设置为“是(/generatepremultipliedalpha)”。
 
-4.  选择**“确定”** 按钮。
+4.  选择 **“确定”** 按钮。
 
  生成项目后，图像内容管道将源图像从工作格式转换为指定的输出格式，其中包括将图像转换为预乘 Alpha 格式，该结果将复制到项目的输出目录中。

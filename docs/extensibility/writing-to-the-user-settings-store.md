@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31145407"
 ---
 # <a name="writing-to-the-user-settings-store"></a>写入到用户设置存储区
 用户设置均等中的可写设置**工具 / 选项**对话框、 属性窗口和某些其他对话框。 Visual Studio 扩展可以使用这些存储少量数据。 本演练演示如何将记事本到 Visual Studio 添加为外部工具，通过读取和写入用户设置存储。  

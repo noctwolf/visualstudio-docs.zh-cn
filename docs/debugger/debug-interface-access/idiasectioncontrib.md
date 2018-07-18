@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465585"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 描述部分贡献检索数据，也就是说，连续的内存块的图像由提供编译单位。  

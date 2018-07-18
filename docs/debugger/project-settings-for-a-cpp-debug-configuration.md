@@ -118,6 +118,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479240"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C + + 调试配置的项目设置
 你可以更改中的 C 或 Visual c + + 调试配置的项目设置**属性页**对话框中中, 所述[如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示在何处可以找到中与调试器相关的设置**属性页**对话框。  

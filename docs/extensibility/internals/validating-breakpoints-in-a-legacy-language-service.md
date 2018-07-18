@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139361"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>验证旧语言服务中的断点
 断点指示它在调试器中运行时程序执行应停止某个特定点。 由于编辑器中具有不知道什么构成有效的断点位置，用户可以在源文件中的任意行上放置一个断点。 当启动调试器时，所有 （称为挂起断点） 的标记断点绑定到正在运行的程序中的适当位置。 在同一时间断点进行验证以确保它们标记的有效代码位置。 例如上注释, 的断点无效，因为在该位置的源代码中没有任何代码。 调试器将禁用无效的断点。  

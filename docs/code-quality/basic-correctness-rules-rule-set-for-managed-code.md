@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900625"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
 基本更正规则规则集重点关注逻辑错误和 framework Api 用法的常见错误。 基本更正规则包含集中的最少量建议规则的规则的规则。 有关详细信息，请参阅[托管建议规则规则设置对于托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包括此规则集可展开的最小值建议规则所报告的警告的列表上。

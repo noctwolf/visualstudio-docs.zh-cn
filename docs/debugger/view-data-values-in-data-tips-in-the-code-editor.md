@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477324"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在数据提示中在代码编辑器中查看数据值
 使用数据提示功能，可以在调试期间方便地查看程序中变量的有关信息。 数据提示功能只能在中断模式下可用，并且只对当前执行范围内的变量有效。
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/18/2018
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>展开变量以查看它的元素  
   
--   在数据提示中，将鼠标指针置于**+**变量名之前的登录。  
+-   在数据提示中，将鼠标指针置于**+** 变量名之前的登录。  
   
     该变量展开以树的形式显示其元素。
 

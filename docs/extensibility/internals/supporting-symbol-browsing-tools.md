@@ -26,6 +26,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134579"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
 **对象浏览器**，**类视图**，**调用浏览器**和**查找符号结果**工具提供了一些符号浏览 Visual Studio 中的功能。 这些工具显示的符号的分层树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和各种组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。  

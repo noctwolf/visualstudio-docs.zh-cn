@@ -16,6 +16,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263555"
 ---
 # <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 

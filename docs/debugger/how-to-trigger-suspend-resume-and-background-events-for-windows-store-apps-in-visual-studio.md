@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481224"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>如何在触发挂起、 继续和后台事件调试 Visual Studio 中的 UWP 应用时
 不调试时，Windows **进程生命期管理** (PLM) 根据用户操作和设备状态控制应用程序的执行状态 - 启动、挂起、继续和终止应用程序。 在调试时，Windows 禁用这些激活事件。 本主题介绍如何在调试器中触发这些事件。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/18/2018
   
 2.  在 **“操作”** 窗格中，选择 **“查看”** ，然后确保选中 **“显示分析和调试日志”** 。  
   
-3.  上**事件查看器 （本地）**树中，展开节点**Applications and Services Logs** > **Microsoft** > **Windows**  >  **Backgroundtasksinfrastructure**。  
+3.  上**事件查看器 （本地）** 树中，展开节点**Applications and Services Logs** > **Microsoft** > **Windows**  >  **Backgroundtasksinfrastructure**。  
   
 4.  选择 **“诊断”** 日志。  
   

@@ -8,10 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "33877327"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/07/2018
 > * 与 Web 和 Azure 存储资源集成
 > * 安排涉及多个 Azure Functions 的工作流
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
 - Visual Studio for Mac 7.5 或更高版本。
 - Azure 订阅（[https://azure.com/free](https://azure.com/free) 中免费提供）。

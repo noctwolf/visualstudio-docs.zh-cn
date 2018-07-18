@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129438"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源控件的实现的示例。 在模型中，你将看到必须实现的接口，并必须调用的环境服务。 如所有服务，你实际调用的方法的一个特定的接口，通过该服务获取。 标识的类名称以使其更轻松地了解如何执行源代码管理。  

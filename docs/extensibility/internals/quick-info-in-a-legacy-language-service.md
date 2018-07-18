@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132140"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>在旧语言服务中的快速信息
 IntelliSense 快速信息在当用户将插入符号放置在标识符中并选择在源中显示有关标识符的信息**快速信息**从**IntelliSense**菜单或保存鼠标通过标识符的光标。 这将导致出现包含的有关标识符的信息工具提示。 此信息通常包括标识符类型。 活动的调试引擎时，此信息可能包括的当前值。 调试引擎提供表达式值，而该语言服务处理仅标识符。  

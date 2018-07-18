@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147214"
 ---
 # <a name="walkthrough-highlighting-text"></a>演练： 突出显示文本
 通过创建 Managed Extensibility Framework (MEF) 组件部分，可以将不同的视觉效果添加到编辑器。 本演练演示如何以突出显示当前的单词在文本文件中每个匹配项。 如果某个单词在文本文件中，发生不止一次和插入符号置于一个匹配项，则突出显示每个匹配项。  

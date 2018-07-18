@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098387"
 ---
 # <a name="adding-icons-to-menu-commands"></a>将图标添加到菜单命令
 命令可以显示在菜单和工具栏上。 在工具栏上很常见的命令与只是一个图标 （以节省空间） 时在菜单上显示命令通常将出现并图标和文本。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148514"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和代码识别 ImmutableArrays 库
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 * Visual Studio 2015 (非 Express Edition) 或更高版本。  你可以使用免费[Visual Studio Community Edition](https://www.visualstudio.com/products/visual-studio-community-vs)
 * [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  你也可以在安装 Visual Studio 中，检查在常用的工具在同一时间安装 SDK 的 Visual Studio 扩展性工具。  如果你已安装 Visual Studio，则还可以通过转到主菜单来安装此 SDK**文件&#124;新建&#124;项目...**，在左侧的导航窗格中，选择 C#，然后选择扩展性。  当你选择"**安装 Visual Studio 扩展性工具**"痕迹导航项目模板，它将提示你下载并安装 SDK。
-* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  你还可以通过转到主菜单上安装此 SDK**文件&#124;新建&#124;项目...**，选择**C#**在左侧的导航窗格中，并选择**扩展性**。  当你选择"**下载.NET 编译器平台 SDK**"痕迹导航项目模板，它将提示你下载并安装 SDK。  此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  找出哪些代码模型类型此非常有用的工具可帮助你应该查找你分析器中。  到你的代码的特定代码模型类型，因此你的代码仅在必要时执行，并可以专注于分析相关的代码仅在分析器基础结构调用。
+* [.NET compiler Platform ("Roslyn") SDK](http://aka.ms/roslynsdktemplates)。  你还可以通过转到主菜单上安装此 SDK**文件&#124;新建&#124;项目...**，选择**C#** 在左侧的导航窗格中，并选择**扩展性**。  当你选择"**下载.NET 编译器平台 SDK**"痕迹导航项目模板，它将提示你下载并安装 SDK。  此 SDK 包括[Roslyn 语法可视化工具](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer)。  找出哪些代码模型类型此非常有用的工具可帮助你应该查找你分析器中。  到你的代码的特定代码模型类型，因此你的代码仅在必要时执行，并可以专注于分析相关的代码仅在分析器基础结构调用。
 
 ## <a name="whats-the-problem"></a>怎么了？
 
@@ -63,7 +64,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 ## <a name="creating-the-analyzer-project"></a>创建分析器项目
 
-在主菜单中选择**文件&#124;新建&#124;项目...**.在**新项目**对话框下**C#**项目在左侧的导航栏中，选择扩展，然后在右窗格中选择**与代码修复分析器**项目模板。  输入一个名称，然后确认对话框。
+在主菜单中选择**文件&#124;新建&#124;项目...**.在**新项目**对话框下**C#** 项目在左侧的导航栏中，选择扩展，然后在右窗格中选择**与代码修复分析器**项目模板。  输入一个名称，然后确认对话框。
 
 模板将打开 DiagnosticAnalyzer.cs 文件。  选择该编辑器缓冲区选项卡。此文件具有分析器类 (格式为项目指定的名称)，派生自`DiagnosticAnalyzer`（Roslyn API 类型）。  你的新类`DiagnosticAnalyzerAttribute`声明你分析器是与 C# 语言，以便编译器发现并加载你分析器。
 
@@ -302,7 +303,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 现在，你可以按**F5**要在 Visual Studio 的第二个实例中执行你分析器。  打开之前使用的控制台项目。  现在你应会看到电灯泡显示新的对象创建表达式为`ImmutableArray<int>`。  如果按**CTRL +。** （期间），然后你会看到代码修复，并且您将看到电灯泡 UI 中自动生成的代码差异预览。  Roslyn 为你创建此操作。
 
-**Pro 提示：**如果启动 Visual Studio 中，第二个实例并且未使用你的代码修复后，看到电灯泡，则可能需要清除 Visual Studio 组件缓存。  清除缓存强制 Visual Studio 以重新检查组件，以便 Visual Studio 应选取最新组件。  首先，关闭 Visual Studio 的第二个实例。  然后在 Windows 资源管理器，转到你的用户目录 (c:\users\\< userid\>) 并查找 AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\。  在此目录中删除的 ComponentModelCache 子目录。  "14"更改版本间使用 Visual Studio 中。
+**Pro 提示：** 如果启动 Visual Studio 中，第二个实例并且未使用你的代码修复后，看到电灯泡，则可能需要清除 Visual Studio 组件缓存。  清除缓存强制 Visual Studio 以重新检查组件，以便 Visual Studio 应选取最新组件。  首先，关闭 Visual Studio 的第二个实例。  然后在 Windows 资源管理器，转到你的用户目录 (c:\users\\< userid\>) 并查找 AppData\Local\Microsoft\VisualStudio\14.0Roslyn\\。  在此目录中删除的 ComponentModelCache 子目录。  "14"更改版本间使用 Visual Studio 中。
 
 ## <a name="talk-video-and-finish-code-project"></a>Talk 视频和完成代码项目
 

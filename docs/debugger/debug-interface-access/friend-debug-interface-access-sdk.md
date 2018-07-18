@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31460002"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>友元（调试接口访问 SDK）
 友元类和友元函数通过标识`SymTagFriend`符号。 它们是用户定义类型 (Udt) 的父级的子级，并且具有[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)属性。  

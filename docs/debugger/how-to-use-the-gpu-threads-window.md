@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476723"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>如何：使用“GPU 线程”窗口
 在“GPU 线程”窗口中，可以检查和使用在要调试的应用程序中的 GPU 上运行的线程。 有关在 GPU 运行的应用程序的详细信息，请参阅[c + + AMP 概述](/cpp/parallel/amp/cpp-amp-overview)。  

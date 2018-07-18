@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133380"
 ---
 # <a name="how-to-use-text-markers"></a>如何： 使用文本标记
 文本标记可以用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  

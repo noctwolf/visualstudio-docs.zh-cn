@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465218"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 描述从字节映像文本块映射到源代码文件行号的过程的访问信息。  

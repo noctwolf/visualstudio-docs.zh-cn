@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481835"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Half/Quarter 纹理维度变量
 减小非呈现器目标的纹理上的纹理尺寸。  

@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576945"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。  

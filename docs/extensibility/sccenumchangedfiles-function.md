@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137126"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 给定的本地文件的列表，此函数将确定哪些文件是不同于在源代码控制数据库中的相应版本。  

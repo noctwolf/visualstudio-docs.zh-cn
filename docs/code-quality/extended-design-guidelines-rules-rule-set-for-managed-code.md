@@ -15,6 +15,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31927095"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 Microsoft 扩展的设计准则规则规则集扩展基本设计准则规则，以最大化报告的可用性和可维护性问题。 额外的强调置于命名规则。 你应考虑包含此设置，如果你的项目包括库代码，或者如果你想要强制实施有关编写代码容易维护的最高标准的规则。

@@ -1,14 +1,14 @@
 ---
-title: "托管 JavaScript 运行时 | Microsoft Docs"
-ms.custom: 
+title: 托管 JavaScript 运行时 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24569587"
 ---
 # <a name="hosting-the-javascript-runtime"></a>承载 JavaScript 运行时
 JavaScript 运行时 (JsRT) API 采用基于标准并被 Microsoft Edge 和 Internet Explorer 使用的 Chakra JavaScript 引擎，为 Windows 操作系统上运行的桌面、Windows 应用商店和服务器端应用程序提供了一种在应用程序中添加脚本功能的途径。 凡是在计算机中安装 Internet Explorer 11.0 版的 Windows 10 以及其他 Windows 操作系统版本都提供这些 API。 有关更多信息，请参见 [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md)。 有关在 Windows 应用商店应用中使用 JsRT 的信息，请参阅 [JsRT and the Universal Windows Platform](#Windows)。  

@@ -1,35 +1,37 @@
 ---
-title: 面向 .NET 开发者的 Visual Studio 2017
-description: 概述 Visual Studio 2017 功能如何帮助用户更快编写更好的 .NET 代码。
+title: 提高 .NET 开发工作效率
+description: 概述导航、代码分析、单元测试和其他功能，帮助提升编写 .NET 代码的速度和质量。
 author: kuhlenh
 ms.author: kaseyu
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.date: 01/16/2018
+ms.date: 06/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd517cd859f47f9b4cb41884bd116005aa31fa29
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 3c3b7ae456886939dc47c93dfb155aae726e8ccf
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37175299"
 ---
-# <a name="visual-studio-2017-productivity-guide-for-net-developers"></a>面向 .NET 开发人员的 Visual Studio 2017 工作效率指南
+# <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) 使开发人员工作更为高效！ 改进了解决方案启动和加载、测试发现以及键入时延迟问题的性能和可靠性。 此外，还添加并增强了有助于更快更好地写入代码的功能。 这些功能包括：导航到反编译程序集、键入的变量名称建议、测试资源管理器中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能异常帮助程序、代码类型配置和执行、以及众多重构和代码修补程序。
-
-按照本指南优化工作效率。
+了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
 
 ##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式。
 
-如果用户来自另一个 IDE 或编码环境，可能会发现安装以下某个扩展很有用：
+**Visual Studio 2017 版本 15.8 中的新增内容** 如果来自其他 IDE 或编码环境，可将键盘方案更改为 Visual Studio Code 或 ReSharper (Visual Studio)：
 
-- [Emacs 模拟](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
+![Visual Studio 中的键盘方案](../ide/media/VS2017Guide-Keyboard.png)
+
+某些扩展也提供键盘方案：
 - [适用于 Visual Studio 的 HotKeys (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
+- [Emacs 模拟](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
 
 Visual Studio 常用快捷方式如下：
@@ -43,14 +45,18 @@ Visual Studio 常用快捷方式如下：
 | Ctrl+. （也可使用 C# 配置文件中的 Alt+Enter） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
 | **Ctrl**+**D** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6  及更高版本） |
 | **Shift**+**Alt**+**+**/**-** | 扩大/收缩选定内容 | 在编辑器中扩大或收缩当前选定内容（适用于 Visual Studio 2017 版本 15.5 及更高版本） |
+| **Shift** + **Alt** + **Ins** | 插入下一个匹配的脱字号 | 在与当前选择匹配的下一个位置添加选择和脱字号（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
 | Ctrl+Q | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |
 | Ctrl+F5 | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
 | Ctrl+K,D（默认配置文件）或 Ctrl+E,D（C# 配置文件） | 设置文档的格式 | 基于换行、间距和缩进设置，清理文件中的格式设置冲突 |
 | Ctrl+\\,E（默认配置文件）或 Ctrl+W,E（C# 配置文件） | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
+| **Alt** + **PgUp/PgDn** | 转到下一个/上一个问题 | 跳转到文档中的上一个/下一个错误、警告和建议（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
 
 > [!NOTE]
-> 一些扩展取消绑定默认的 Visual Studio 键绑定。 要使用以下命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具” > “导入和导出设置” > “重置所有设置”，或转到“工具” > “选项” > “键盘” > “重置”。
+> 一些扩展取消绑定默认的 Visual Studio 键绑定。 若要使用以上命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具” > “导入和导出设置” > “重置所有设置”，或转到“工具” > “选项” > “键盘” > “重置”。
+
+参阅[我们的文档](..\ide\tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法。
 Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“转到全部”可快速跳转到任何文件、类型、成员或符号声明。
@@ -84,11 +90,12 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
   - 请阅读[文档](https://aka.ms/refactorings)，查看详细信息
 - 使用 [Roslyn 分析器](https://github.com/dotnet/roslyn/wiki/Getting-Started-Writing-a-Custom-Analyzer-&-Code-Fix)编写自己的重构或代码修补程序。
 - 有几个社区成员写了一些免费扩展，这些扩展添加了其他的代码检查：
+  - [FXCop 分析器](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/)
   - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2017)
   - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2017)
   - [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/)
 
-![Visual Studio 中的重构](../ide/media/VSGuide_CodeAnalysis.png "VSGuide_CodeAnalysis")
+![在 Visual Studio 中重构](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>我需要“查找使用情况”、“转到实现”、“导航到反编译程序集”
 Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 详细了解[代码导航功能](../ide/navigating-code.md)
@@ -119,7 +126,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 - [后退](../debugger/how-to-use-intellitrace-step-back.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
 - [快照调试](/azure/application-insights/app-insights-snapshot-debugger)让你可以在引发异常时调查实时 Web 应用的状态（必须是在 Azure 上）。
 
-![VS2017 中新的异常帮助程序](../ide/media/VSGuide_Debugging.png "VSGuide_Debugging")
+![Visual Studio 2017 中的新异常帮助程序](../ide/media/VSGuide_Debugging.png)
 
 ## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在项目中使用版本控制。
 可以使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。
@@ -140,8 +147,6 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 完成/建议模式 | 更改 IntelliSense 中的完成行为 - 有 IntelliJ 背景的开发人员往往会更改此处的默认设置 | “菜单” > “编辑” > “IntelliSense” > “切换完成模式” |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 显示编辑器中的代码引用信息和更改历史记录 | “工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens” |
 | [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 |  键入代码片段名称，然后按两次 Tab。 |
-
-![Visual Studio 中的代码片段](../ide/media/VSGuide_SmartEditor.png)
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>缺少提供工作效率的功能或性能体验较差？
 可通过以下几种方式提供反馈：

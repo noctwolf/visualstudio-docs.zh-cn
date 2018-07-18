@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31098662"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本层
 文本层通常封装文本布局的某些方面。 例如，"函数的每一次的"层隐藏的文本之前和之后包含脱字号 （文本插入点） 的函数。  

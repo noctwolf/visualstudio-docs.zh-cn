@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954267"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供用于创建模型之间以及从其他工具的链接到模型的方法。 例如，你无法将链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。
@@ -114,7 +115,7 @@ ms.lasthandoff: 04/26/2018
 
  在此阶段，程序代码可设置属性值，但在“属性”窗口中该值为只读。
 
- 可以允许用户使用专用 ModelBus 引用编辑器设置属性。 有两个版本的此编辑器或*选取器：*一个允许用户选择一个模型文件，和其他允许用户选择一个模型文件和模型中的元素。
+ 可以允许用户使用专用 ModelBus 引用编辑器设置属性。 有两个版本的此编辑器或*选取器：* 一个允许用户选择一个模型文件，和其他允许用户选择一个模型文件和模型中的元素。
 
 #### <a name="to-allow-the-user-to-set-a-model-bus-reference-in-a-domain-property"></a>允许用户在域属性中设置模型总线引用
 

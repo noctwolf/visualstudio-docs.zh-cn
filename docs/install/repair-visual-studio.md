@@ -16,6 +16,7 @@ ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/20/2018
+ms.locfileid: "31620854"
 ---
 # <a name="repair-visual-studio-2017"></a>修复 Visual Studio 2017
 
@@ -26,7 +27,7 @@ Visual Studio 安装有时会损毁或损坏。 通过修复可以解决此问�
      例如，在运行 Windows 10 周年更新的计算机上，选择“开始”，然后滚动到字母“V”，其中它作为“Visual Studio 安装程序”列出。
 
      >[!NOTE]
-     对于某些计算机，Visual Studio 安装程序可能列在字母**“M”**下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
+     对于某些计算机，Visual Studio 安装程序可能列在字母 **“M”** 下，即 **Microsoft Visual Studio 安装程序**。<br/><br/> 或者，可以在以下位置找到 Visual Studio 安装程序：`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
 2. 单击或点击以启动安装程序，选择“更多”，然后选择“修复”。
 

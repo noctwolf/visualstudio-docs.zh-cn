@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31475121"
 ---
 # <a name="thread-search-dialog-box"></a>“线程搜索”对话框
 使用此对话框来查找和选择的节点中的特定线程[线程视图](../debugger/threads-view.md)。 若要显示此对话框中，将焦点移至**线程**视图窗口。 然后选择**查找线程**从**搜索**菜单。  

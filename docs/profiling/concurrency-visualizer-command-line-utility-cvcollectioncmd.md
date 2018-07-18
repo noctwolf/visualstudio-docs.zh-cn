@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47bd3081256ee3354b9e8fc03050570938fd7499
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: d47afc99a16b2501cadc70f8820b295675d98aa0
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691142"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
-你可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
+可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
   
 > [!NOTE]
->  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103)（Visual Studio 2015 并发可视化工具收集工具）。  
+>  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Visual Studio 2015 并发可视化工具收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
   
-## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下载并发可视化工具命令行实用程序  
+## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下载并发可视化命令行工具  
  若要下载并安装命令行实用程序，请转到 [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ，按照说明进行操作。 默认情况下，CVCollectionCmd.exe 安装在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\（在 x64 计算机上为 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\）。  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集跟踪  
@@ -51,13 +52,13 @@ ms.lasthandoff: 05/14/2018
 |进程|当执行“附加”命令时，指定要附加到的进程，或者当执行“分析”命令时，指定要分析的跟踪中的进程。 适用于“附加”和“分析”命令。|PID 或进程的名称。|无。|  
 |配置|如果你想要收集设置而非默认值，则指定配置文件的路径。   适用于“启动”、“附加”和“分析”命令。|XML 配置文件的目录路径或相对路径。|无。|  
   
-## <a name="customizing-configuration-settings"></a>自定义配置设置  
+## <a name="customize-configuration-settings"></a>自定义配置设置  
  如果你使用 CVCollectionCmd 来收集跟踪并且希望自定义收集设置，则使用配置文件来指定它们。  
   
 > [!NOTE]
 >  当你使用 Visual Studio 收集跟踪时，请不要直接修改配置文件。  而是使用 [高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) 对话框来修改设置。  
   
- 若要修改收集设置，则在你将运行 CVCollectionCmd 实用工具的计算机上创建配置文件。 你可以从头开始创建配置文件，或者可以在安装了 Visual Studio 的计算机上复制配置文件并修改该文件。 该文件名为 `UserConfig.xml` 并且位于“本地 AppData”  文件夹中。 当你运行实用工具时，与“启动”、“附加”或“分析”命令结合使用 Config 选项。  在与 Config 选项相关联的参数中，指定配置文件的路径。  
+ 若要修改收集设置，则在你将运行 CVCollectionCmd 实用工具的计算机上创建配置文件。 你可以从头开始创建配置文件，或者可以在安装了 Visual Studio 的计算机上复制配置文件并修改该文件。 该文件名为 UserConfig.xml 并且位于“本地 AppData”文件夹中。 当你运行实用工具时，与“启动”、“附加”或“分析”命令结合使用 Config 选项。  在与 Config 选项相关联的参数中，指定配置文件的路径。  
   
 ### <a name="configuration-file-tags"></a>配置文件标记  
  此配置文件基于 XML 文件。 以下是有效的标记和值：  

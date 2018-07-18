@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129217"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>导致添加新项对话框
 项目子类型可以提供完整的项的新目录**添加新项**通过注册的对话框**添加项**下的模板`Projects`注册表子项。  

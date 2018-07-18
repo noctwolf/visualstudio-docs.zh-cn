@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31954579"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在你自己的计算机或其他计算机上，你可以安装的域特定语言。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已必须在目标计算机上安装。

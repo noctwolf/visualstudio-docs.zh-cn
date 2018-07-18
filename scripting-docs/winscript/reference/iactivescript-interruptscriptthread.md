@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::InterruptScriptThread |Microsoft 文档"
-ms.custom: 
+title: IActiveScript::InterruptScriptThread |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.InterruptScriptThread
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_InterruptScriptThread
 ms.assetid: 2304d035-6d39-4811-acd3-8a9640fdbef6
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641847"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 中断正在运行的脚本线程 （事件接收器、 立即执行或宏调用） 的执行。 此方法可以用于终止卡 （例如，在无限循环） 的脚本。 它可以调用从非基本的线程不会导致为主机对象或设置为非基本标注[IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)方法。  

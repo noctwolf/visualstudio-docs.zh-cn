@@ -31,9 +31,10 @@ ms.workload:
 - multiple
 ms.openlocfilehash: aecf458254d45b3c52c9f3971a72cb24ad13ef43
 ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454552"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，单击**调试 > 附加到进程**(或按**CTRL + ALT + P**) 以打开**附加到进程**对话框。

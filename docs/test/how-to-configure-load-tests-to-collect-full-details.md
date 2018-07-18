@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967091"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>如何：将负载测试配置为收集完整详细信息，以便在测试结果中启用虚拟用户活动
 
@@ -25,14 +26,14 @@ ms.lasthandoff: 04/26/2018
 
  “计时详细信息存储”属性的“所有的详细信息”设置可以设置为以下任一选项：
 
--   **所有的详细信息：**收集并存储测试过程中发出的每个测试、事务和页面的单独计时数据。
+-   **所有的详细信息：** 收集并存储测试过程中发出的每个测试、事务和页面的单独计时数据。
 
     > [!NOTE]
     > 必须选择“所有的详细信息”选项才能启用负载测试结果中的虚拟用户数据信息。
 
--   **无：**不收集任何计时详细信息。 但是，平均值仍然可用。
+-   **无：** 不收集任何计时详细信息。 但是，平均值仍然可用。
 
--   **仅统计信息：**存储单独的计时数据，但仅作为百分比数据。 此选项节省空间资源。
+-   **仅统计信息：** 存储单独的计时数据，但仅作为百分比数据。 此选项节省空间资源。
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>配置负载测试中的计时详细信息存储属性
 

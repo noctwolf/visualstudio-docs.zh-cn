@@ -16,6 +16,7 @@ ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32425746"
 ---
 # <a name="step-3-using-the-interactive-repl-window"></a>步骤 3：使用 REPL 交互窗口
 

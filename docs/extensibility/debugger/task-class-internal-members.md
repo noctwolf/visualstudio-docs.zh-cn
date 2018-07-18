@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129610"
 ---
 # <a name="task-class---internal-members"></a>任务类的内部成员
 本主题介绍的内部成员<xref:System.Threading.Tasks.Task?displayProperty=fullName>帮助你的类实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.Task>参考主题。  

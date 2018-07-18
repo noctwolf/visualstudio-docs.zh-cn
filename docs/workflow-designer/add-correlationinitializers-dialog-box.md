@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31975141"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>“添加相关初始值设定项”对话框
 

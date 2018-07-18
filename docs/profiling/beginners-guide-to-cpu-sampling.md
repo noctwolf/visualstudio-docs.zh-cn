@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1461e90ebbd32483eb6d8e2925e1e226faf5ea4
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34573175"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用**采样**数据。
@@ -37,10 +38,10 @@ ms.lasthandoff: 05/17/2018
 > [!TIP]
 >  如果分析调用 Windows 函数的代码，应确保具有最新的 .pdb 文件。 如果没有这些文件，报告视图将列出含义隐晦、难以理解的 Windows 函数名称。 有关如何确保具有所需文件的详细信息，请参阅[如何：引用 Windows 符号信息](../profiling/how-to-reference-windows-symbol-information.md)。  
   
-##  <a name="Step1"></a>创建并运行性能会话  
+## <a name="create-and-run-a-performance-session"></a>创建并运行性能会话  
  若要获取需要分析的数据，必须先创建性能会话，然后运行会话。 可通过**性能向导**实现这两项操作。  
   
- 如果不对 Windows 桌面应用或 ASP.NET 应用进行性能分析，则必须使用一种其他分析工具。 请参阅[分析工具](../profiling/profiling-tools.md)。  
+ 如果不对 Windows 桌面应用或 ASP.NET 应用进行性能分析，则必须使用一种其他分析工具。 请参阅[首先了解分析工具](../profiling/profiling-tools.md)。  
   
 #### <a name="to-create-and-run-a-performance-session"></a>创建并运行性能会话  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 05/17/2018
   
      完成应用程序运行后，分析数据的“摘要”视图将显示在 Visual Studio 主窗口中，并且新会话的图标将显示在“性能资源管理器”窗口中。  
   
-##  <a name="Step2"></a>步骤 2：分析采样数据  
+## <a name="step-2-analyze-sampling-data"></a>步骤 2：分析采样数据  
  完成性能会话运行后，分析报告的“摘要”视图将显示在 Visual Studio 的主窗口中。  
   
  建议通过检查“热路径”开始分析数据，然后检查执行大部分工作的函数列表，最后通过使用“摘要时间线”将重点放在其他函数上。 也可查看“错误列表”窗口中的分析建议和警告。  
@@ -92,7 +93,7 @@ ms.lasthandoff: 05/17/2018
   
     -   “函数详细信息”窗口的下部窗格显示函数代码本身。 如果检查代码并发现优化其性能的机会，则单击源文件名称以在 Visual Studio 编辑器中打开该文件。  
   
-3.  若要继续进行分析，请从“视图”下拉列表选择“摘要”以，返回到“摘要”视图。 然后检查“执行单独工作最多的函数”中的函数。 此列表显示具有最高独占样本数的函数。 这些函数的函数体中的代码执行了大量工作，并且你或许能够对它进行优化。 若要进一步分析特定函数，单击函数名称使其显示在“函数详细信息”视图中。  
+3.  若要继续进行分析，请从“视图”下拉列表选择“摘要”以返回到“摘要”视图。 然后检查“执行单独工作最多的函数”中的函数。 此列表显示具有最高独占样本数的函数。 这些函数的函数体中的代码执行了大量工作，并且你或许能够对它进行优化。 若要进一步分析特定函数，单击函数名称使其显示在“函数详细信息”视图中。  
   
      ![执行大部分工作的函数的列表](../profiling/media/functions_mostwork.png "Functions_MostWork")  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 05/17/2018
   
     -   若要查看有关该警告的详细信息，请右键单击错误，然后单击“显示错误帮助”  
   
-##  <a name="Step3"></a>步骤 3：修改代码并重新运行会话  
+## <a name="step-3-revise-code-and-rerun-a-session"></a>步骤 3：修改代码并重新运行会话  
  找到并优化一个或多个函数后，可反复进行分析运行并比较数据，从而查看所做更改使应用程序性能产生的差异。  
   
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>修改代码并重新运行探查器  

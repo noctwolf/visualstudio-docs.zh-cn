@@ -1,11 +1,11 @@
 ---
-title: "IDebugApplicationThread::SynchronousCallIntoThread |Microsoft 文档"
-ms.custom: 
+title: IDebugApplicationThread::SynchronousCallIntoThread |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IDebugApplicationThread.SynchronousCallIntoThread
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IDebugApplicationThread::SynchronousCallIntoThread
 ms.assetid: 8a91157f-dade-418a-ad02-5607ce12c95c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726457"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
 提供了为使调用方在应用程序线程中运行代码的机制。  

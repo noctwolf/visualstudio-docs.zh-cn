@@ -9,11 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 4bb2cd04d005700ac0a4f647d04e495f717d0ed7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750735"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 
@@ -63,11 +64,11 @@ ms.lasthandoff: 04/26/2018
 
 5.  在“编译”选项卡上，选择“高级编译选项”，如下面的插图中所示。
 
-     ![高级编译选项](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")
+     ![高级编译选项](../test/media/howtoconfigureunittest35frameworka.png)
 
 6.  使用“目标框架 (所有配置)”下拉列表，将目标框架更改为 **.NET Framework 3.5**或更高版本，如下图中的标注 B 所示。 不应指定客户端版本。
 
-     ![目标框架下拉列表](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")
+     ![目标框架下拉列表](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>针对 Visual C# 单元测试项目重定目标为特定版本的 .NET Framework
 
@@ -85,7 +86,7 @@ ms.lasthandoff: 04/26/2018
 
 5.  在“应用程序”选项卡上，选择“目标框架”。 从下拉列表中，选择“.NET Framework 3.5”或更高版本，如下图中所示。 不应指定客户端版本。
 
-     ![目标框架下拉列表](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")
+     ![目标框架下拉列表](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
 ## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>针对 C++/CLI 单元测试项目重定目标为特定版本的 .NET Framework 
 

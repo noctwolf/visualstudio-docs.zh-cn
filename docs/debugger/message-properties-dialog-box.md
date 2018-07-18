@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481536"
 ---
 # <a name="message-properties-dialog-box"></a>“消息属性”对话框
 使用此对话框中，若要了解有关特定消息的详细信息。 若要显示此对话框中，将焦点移至[消息视图](../debugger/messages-view.md)窗口。 在树中，选择任何消息节点，然后选择**属性**从**视图**菜单。  

@@ -1,14 +1,14 @@
 ---
-title: "JsSetIndexedPropertiesToExternalData 函数 | Microsoft Docs"
-ms.custom: 
+title: JsSetIndexedPropertiesToExternalData 函数 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: cee2d86d-ed42-4acb-86ef-95a67e63d0d6
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -17,6 +17,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24568847"
 ---
 # <a name="jssetindexedpropertiestoexternaldata-function"></a>JsSetIndexedPropertiesToExternalData 函数
 将对象的索引属性设置为外部数据。 外部数据将用作对象索引属性的后备存储，并像类型化数组一样进行访问。  

@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d49b5076076b61d0234bf8e252b62684a67e79b3
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 50b77a343f8fe918fa079a3b4f148407701276c8
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572969"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 本演练使用 C# 应用程序演示如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 用户将使用探查器 API 限制在检测分析期间收集的数据量。  
@@ -163,4 +164,4 @@ DataCollection.CurrentId);
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)   
  [入门](../profiling/getting-started-with-performance-tools.md)   
- [从命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)
+ [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

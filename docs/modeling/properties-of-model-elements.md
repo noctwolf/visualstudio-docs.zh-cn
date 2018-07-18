@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31947711"
 ---
 # <a name="properties-of-model-elements"></a>模型元素的属性
 本部分列出在 DSL 定义关系图或 DSL 资源管理器中选择某个元素时，在属性窗口中看到的属性。

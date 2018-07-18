@@ -23,6 +23,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262306"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
   Microsoft Visual Studio 和 Microsoft Office 包括许多辅助功能，使您能够生成符合标准的可访问性要求的自定义解决方案。 Microsoft 将发布在 Web 上找到的可访问性的准则。 有关详细信息，请参阅[辅助功能网站](http://go.microsoft.com/fwlink/?LinkID=37113)。  

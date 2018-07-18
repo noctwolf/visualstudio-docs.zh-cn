@@ -21,12 +21,13 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144562"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 文件的结构
 包含有关的 VSIX 包中的内容类型的信息。 Visual Studio 使用 [Content_Types].xml 文件来安装包，但它不会安装文件本身。  
   
 > [!NOTE]
->  尽管本主题仅适用于使用 VSIX 包中的 [p e].xml 文件，[Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)*标准。 有关详细信息，请参阅[OPC: 新标准打包您数据的](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
+>  尽管本主题仅适用于使用 VSIX 包中的 [p e].xml 文件，[Content_Types].xml 文件类型是组成部分*开放式打包约定 (OPC)* 标准。 有关详细信息，请参阅[OPC: 新标准打包您数据的](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 网站上。  
   
 ## <a name="attributes-and-elements"></a>特性和元素  
  下列各节描述的根元素及其属性和子元素。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31137100"
 ---
 # <a name="parent-element"></a>父元素
 父级的按钮或组合框只能是一个组。 菜单或组的父级可以是任何其他菜单或组。 在[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中是可选的。 如果省略此元素的父`Group_Undefined:0`将隐式。  

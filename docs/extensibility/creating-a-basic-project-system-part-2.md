@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107941"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统中，第 2 部分
 本系列第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练基于基本项目系统，并添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。  

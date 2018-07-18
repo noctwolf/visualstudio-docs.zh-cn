@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148241"
 ---
 # <a name="upgrading-projects"></a>升级项目
 一个版本的模型更改为项目模型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]到下一个可能需要项目和解决方案进行升级以便它们可以在较新版本上运行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可以用于在您自己的项目中实现升级支持的接口。  

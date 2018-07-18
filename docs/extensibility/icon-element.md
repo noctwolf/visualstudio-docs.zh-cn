@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126866"
 ---
 # <a name="icon-element"></a>Icon 元素
 图标标记该 guid 属性是定义位图的 guid。  Id 属性选择位图条带中的槽。 此元素为可选元素。  如果省略此元素的值**guidOfficeIcon:msotcidNoIcon**将隐式。  

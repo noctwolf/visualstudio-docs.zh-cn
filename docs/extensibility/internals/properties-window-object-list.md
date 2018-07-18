@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130131"
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
 中的对象列表**属性**窗口是下拉列表，您可以将所选内容更改为一个或多个选择的 windows 中可用的其他对象。 选择在此列表中的不同对象触发调用<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A>以通知环境已选择新的对象。 中显示的信息**属性**窗口然后更改为显示与新选择的对象关联的属性。  

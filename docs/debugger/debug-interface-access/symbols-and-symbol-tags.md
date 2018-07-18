@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31471215"
 ---
 # <a name="symbols-and-symbol-tags"></a>符号和符号标记
 作为符号的使用调试接口访问 (DIA) SDK Api 可以访问程序数据库 (.pdb) 文件中存储有关已编译的程序的调试信息。 所有的符号拥有[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)属性。 `symTag`属性指示的符号的类型由定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 `symIndexId`属性是`DWORD`包含符号的每个实例的唯一标识符的值。  

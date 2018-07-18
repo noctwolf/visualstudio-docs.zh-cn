@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31139271"
 ---
 # <a name="private-galleries"></a>Private Galleries
 你可以共享控件、 模板和通过发布到开发的工具*专用库*对你的组织，如下所示 intranet 上：  

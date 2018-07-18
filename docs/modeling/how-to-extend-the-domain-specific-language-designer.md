@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31951461"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展域特定语言设计器
 你可以扩展的设计器，用于编辑 DSL 定义。 你可以添加更多菜单命令添加处理程序拖双击手势和特定类型的值或关系更改时触发的规则的扩展的类型。 扩展可打包为 Visual Studio 集成扩展 (VSIX)，并可以分发给其他用户。

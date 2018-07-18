@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31898871"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302：请不要对区域设置特定的字符串进行硬编码
 |||

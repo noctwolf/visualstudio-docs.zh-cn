@@ -17,6 +17,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34263145"
 ---
 # <a name="callercallee-view----contention-data"></a>“调用方/被调用方”视图 - 争用数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的争用信息。 “调用方/被调用方”视图包含三个网格。  

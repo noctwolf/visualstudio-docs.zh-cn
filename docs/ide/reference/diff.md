@@ -15,6 +15,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704910"
 ---
 # <a name="diff"></a>/Diff
 比较两个文件。 差异将在特殊 Visual Studio 窗口中显示。

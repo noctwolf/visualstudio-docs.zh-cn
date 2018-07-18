@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097791"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>创建多实例工具窗口
 以便它的多个实例可以同时打开工具窗口，您可以对其进行编程。 默认情况下，工具窗口只能有一个打开的实例。  

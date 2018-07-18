@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965819"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>为负载测试创建自定义代码和插件
 
@@ -28,9 +29,9 @@ ms.lasthandoff: 04/26/2018
 |任务|关联主题|
 |-----------|-----------------------|
 |**为负载测试创建自定义插件**：可使用负载测试 API 创建自定义插件，以向负载测试添加更多测试功能。|-   [如何：使用负载测试 API](../test/how-to-use-the-load-test-api.md)<br />-   [如何：创建负载测试插件](../test/how-to-create-a-load-test-plug-in.md)|
-|**为 Web 性能测试创建自定义插件：**可使用 Web 性能测试 API 创建自定义插件，以向 Web 性能测试（包括在请求级别上）添加更多测试功能。 还可以创建 Web 服务测试。<br /><br /> 此外，可以创建一个 Web 记录器插件，该插件可在记录 Web 性能测试后并在该测试显示在 Web 性能测试结果查看器中之前修改该测试。|-   [如何：使用 Web 性能测试 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：创建请求级插件](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：创建 Web 服务测试](../test/how-to-create-a-web-service-test.md)<br />-   [如何：创建记录器插件](../test/how-to-create-a-recorder-plug-in.md)|
-|**向 Web 性能测试结果查看器添加 UI 功能：**可以使用 Visual Studio 外接程序向 Web 性能测试结果查看器添加多个 UI 功能。|-   [如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
-|**创建自定义 HTTP 正文编辑器：**可以创建自定义编辑器来编辑来自 Web 服务的二进制或字符串 http XML 响应。|-   [如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
+|**为 Web 性能测试创建自定义插件：** 可使用 Web 性能测试 API 创建自定义插件，以向 Web 性能测试（包括在请求级别上）添加更多测试功能。 还可以创建 Web 服务测试。<br /><br /> 此外，可以创建一个 Web 记录器插件，该插件可在记录 Web 性能测试后并在该测试显示在 Web 性能测试结果查看器中之前修改该测试。|-   [如何：使用 Web 性能测试 API](../test/how-to-use-the-web-performance-test-api.md)<br />-   [如何：创建 Web 性能测试插件](../test/how-to-create-a-web-performance-test-plug-in.md)<br />-   [如何：创建请求级插件](../test/how-to-create-a-request-level-plug-in.md)<br />-   [如何：创建 Web 服务测试](../test/how-to-create-a-web-service-test.md)<br />-   [如何：创建记录器插件](../test/how-to-create-a-recorder-plug-in.md)|
+|**向 Web 性能测试结果查看器添加 UI 功能：** 可以使用 Visual Studio 外接程序向 Web 性能测试结果查看器添加多个 UI 功能。|-   [如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)|
+|**创建自定义 HTTP 正文编辑器：** 可以创建自定义编辑器来编辑来自 Web 服务的二进制或字符串 http XML 响应。|-   [如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器](../test/how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor.md)|
 
 ## <a name="reference"></a>参考
 

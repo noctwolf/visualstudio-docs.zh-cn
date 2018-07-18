@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126296"
 ---
 # <a name="registering-the-program"></a>注册程序
 调试引擎已获取端口后，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，启用要调试程序的下一步是将其注册端口。 注册后，该程序是可用于调试通过以下方法之一：  

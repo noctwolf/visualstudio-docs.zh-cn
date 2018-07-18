@@ -1,13 +1,13 @@
 ---
-title: "标签被重定义 |Microsoft 文档"
-ms.custom: 
+title: 标签被重定义 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1025
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 7fba49c9-9c95-4f46-b778-9c6ab33ab944
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633017"
 ---
 # <a name="label-redefined"></a>标签被重定义
 创建新的标签，但赋予了它的现有标签的名称。 标签可用于标记代码块，但在指定的范围内，它们必须是唯一的。  

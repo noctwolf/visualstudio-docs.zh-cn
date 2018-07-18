@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31136723"
 ---
 # <a name="troubleshooting-template-installation"></a>模板安装疑难解答
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 
 1. 打开"开发人员命令提示"你的安装通过在 Windows 搜索中，搜索并运行`devenv /updateConfiguration`。
 
-1. 启动 Visual Studio 并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在将出现在**%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （instanceid 对应于你的 Visual Studio 实例的安装 ID）。 每个模板树初始化附加到此日志条目。
+1. 启动 Visual Studio 并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在将出现在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** （instanceid 对应于你的 Visual Studio 实例的安装 ID）。 每个模板树初始化附加到此日志条目。
 
 日志文件包含以下列：
 

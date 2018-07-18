@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135493"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>扩展的解决方案资源管理器筛选器
 你可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建显示仅 C# 类工厂中的文件的筛选器**解决方案资源管理器**，如本演练中所示。  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135700"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 选择以确定在显示的信息的模型**属性**窗口开始算起在 IDE 中具有焦点的窗口。 每个窗口中和中所选的窗口中，对象只能有推送到全局选择上下文其选择上下文对象。 该窗口拥有焦点时，环境窗口框架中的值更新全局选择上下文。 当焦点更改时，因此会选择上下文。  

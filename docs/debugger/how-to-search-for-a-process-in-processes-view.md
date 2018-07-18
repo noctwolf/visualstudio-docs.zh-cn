@@ -18,6 +18,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472473"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 你可以通过将其进程 ID 或模块字符串用作搜索条件搜索进程视图中的特定进程。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选进程的属性的过程树中。  

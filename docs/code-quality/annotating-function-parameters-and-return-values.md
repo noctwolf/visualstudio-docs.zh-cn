@@ -132,6 +132,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31900441"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 本指南介绍了的批注的简单函数参数的典型用途-标量，以及指向结构和类-及大多数类型的缓冲区。  本文还介绍对批注的常见使用模式。 与功能相关的其他批注，请参阅[批注的函数行为](../code-quality/annotating-function-behavior.md)

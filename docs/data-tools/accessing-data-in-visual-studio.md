@@ -18,9 +18,10 @@ ms.workload:
 - data-storage
 ms.openlocfilehash: fbfd4227a2a4acfd8e21703cc29ff13ec36bd986
 ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/23/2018
+ms.locfileid: "34454526"
 ---
 # <a name="access-data-in-visual-studio"></a>访问 Visual Studio 中的数据
 

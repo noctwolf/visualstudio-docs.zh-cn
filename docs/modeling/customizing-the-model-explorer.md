@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953035"
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 你可以更改的外观和行为的资源管理器为你的域特定语言设计器，如下所示：

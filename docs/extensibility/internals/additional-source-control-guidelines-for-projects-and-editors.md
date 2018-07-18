@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129276"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>项目和编辑器的其他源控制指南
 有大量的项目和编辑器应遵循为了支持源代码管理的准则。  

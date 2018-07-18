@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127687"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素引用在编译时合并使用.vsct 文件的任何外部标头 (.h) 文件。 要合并的文件必须在 Include 路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 文件可能是其他.vsct 文件或 c + + 标头文件。  

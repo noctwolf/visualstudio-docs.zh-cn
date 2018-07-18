@@ -22,6 +22,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262186"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何： 登录 Office 解决方案
   如果你登录解决方案，你可以授予对使用证书作为证据解决方案信任。 你可以为多个解决方案，使用相同的证书，所有的解决方案将没有其他安全策略更新受信任。  

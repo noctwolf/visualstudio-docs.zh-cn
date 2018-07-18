@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134134"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧语言服务
 以下部分提供的注册表项列表的各种语言中可用的服务选项[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  

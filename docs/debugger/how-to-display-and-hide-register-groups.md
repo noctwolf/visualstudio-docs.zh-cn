@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474084"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：显示和隐藏寄存器组
 **注册**均提供仅当中启用了地址级调试窗口**选项**对话框中，**调试**节点，**常规**类别。  

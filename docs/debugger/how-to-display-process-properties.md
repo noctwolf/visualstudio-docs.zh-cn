@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481705"
 ---
 # <a name="how-to-display-process-properties"></a>如何：显示进程属性
 若要了解有关中列出的进程的详细信息[进程视图](../debugger/processes-view.md)，使用[过程属性对话框中](../debugger/process-properties-dialog-box.md)。  

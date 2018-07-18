@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126791"
 ---
 # <a name="extending-projects"></a>扩展项目
 项目和解决方案是 Visual Studio 将代码和资源文件组织到逻辑单元编译和部署单元的方法。 你可以找到有关中的项目的详细信息[项目 (Visual Studio SDK)](../extensibility/extending-projects.md)。  

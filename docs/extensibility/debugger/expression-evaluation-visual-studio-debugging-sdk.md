@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109800"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>表达式计算 (Visual Studio 调试 SDK)
 在中断模式下，IDE 必须能够计算涉及的程序的多个变量的简单表达式。 若要实现此目的，调试引擎 (DE) 必须能够分析和评估一 IDE 窗口中输入的表达式。  

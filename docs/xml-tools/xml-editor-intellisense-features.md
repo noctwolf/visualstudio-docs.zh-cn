@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34476841"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器 IntelliSense 功能
 

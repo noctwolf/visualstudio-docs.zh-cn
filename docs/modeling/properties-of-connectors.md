@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952726"
 ---
 # <a name="properties-of-connectors"></a>连接线的属性
 连接器表示在生成的设计器中的域关系。

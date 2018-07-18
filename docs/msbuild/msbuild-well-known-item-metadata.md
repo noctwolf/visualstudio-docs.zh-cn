@@ -23,6 +23,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31572603"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
 下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 `C:\MyProject\Source\Program.cs` 包含在项目中。  

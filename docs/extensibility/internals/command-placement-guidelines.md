@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134455"
 ---
 # <a name="command-placement-guidelines"></a>命令放置准则
 在 Visual Studio 集成的开发环境 (IDE) 中定位命令的最佳方案而异命令集的大小。 命令定义，并根据.vsct 文件中的信息调整位置。  

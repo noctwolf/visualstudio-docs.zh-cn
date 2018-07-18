@@ -1,12 +1,13 @@
 ---
-title: "JavaScript 运行时错误 |Microsoft 文档"
-ms.custom: 
+title: JavaScript 运行时错误 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
-ms.technology: devlang-javascript
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT-32725
@@ -38,7 +39,7 @@ helpviewer_keywords:
 - errors [JavaScript]
 - run-time errors, JavaScript
 ms.assetid: c111469d-8f31-4bde-9d46-16d58775db7d
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -47,6 +48,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24640797"
 ---
 # <a name="javascript-run-time-errors"></a>JavaScript 运行时错误
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 运行时错误是指当你的脚本尝试执行系统无法执行的操作时发生的错误。 在计算变量表达式或分配内存时，你可能会看到运行时错误。  

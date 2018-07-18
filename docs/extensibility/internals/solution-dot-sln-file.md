@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133399"
 ---
 # <a name="solution-sln-file"></a>解决方案 (。Sln) 文件
 一种解决方案是用于组织 Visual Studio 中的项目的结构。 解决方案维护基于文本的 (共享） 的.sln 和.suo （二进制、 特定于用户的解决方案选项） 文件中的项目的状态信息。 .Suo 文件的详细信息，请参阅[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  

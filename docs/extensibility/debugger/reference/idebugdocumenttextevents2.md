@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31107665"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 使用此接口来通知 Visual Studio 的调试引擎提供对源文档的更改。  

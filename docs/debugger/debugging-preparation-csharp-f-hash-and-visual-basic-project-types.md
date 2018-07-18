@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479211"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>调试准备：C#、F# 和 Visual Basic 项目类型
 本节主题描述如何调试由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目模板创建的 C#、F# 和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目类型。  

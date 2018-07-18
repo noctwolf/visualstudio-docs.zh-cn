@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142625"
 ---
 # <a name="walkthrough-creating-a-margin-glyph"></a>演练： 创建边距标志符号
 你可以使用自定义编辑器扩展自定义编辑器边距的外观。 本演练将自定义标志符号置于上指示器边距，只要代码注释中显示单词"todo"。  

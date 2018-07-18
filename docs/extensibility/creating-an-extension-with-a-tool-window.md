@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102143"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>使用工具窗口创建扩展
 在此过程中，你将学习如何使用 VSIX 项目模板和**自定义工具窗口**项模板，从而创建一个与工具窗口的扩展。  

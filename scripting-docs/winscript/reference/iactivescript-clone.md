@@ -1,11 +1,11 @@
 ---
-title: "IActiveScript::Clone |Microsoft 文档"
-ms.custom: 
+title: IActiveScript::Clone |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IActiveScript.Clone
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - IActiveScript_Clone
 ms.assetid: aa000b2a-7085-448d-a422-f7adac7851cb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641587"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 克隆当前脚本引擎 （减去任何当前执行状态），返回当前线程中没有站点加载脚本引擎。 此新的脚本引擎的属性将与原始脚本引擎将会处于如果它已转换回初始化状态的属性完全相同。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31943054"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 
@@ -41,7 +42,7 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>打开属于项目一部分的编码文件
 
-1.  在**“解决方案资源管理器”**中右键单击文件，然后选择**“打开方式”**
+1.  在 **“解决方案资源管理器”** 中右键单击文件，然后选择 **“打开方式”**
 
 2.  在“打开方式”对话框中，选择用于打开文件的编辑器。
 

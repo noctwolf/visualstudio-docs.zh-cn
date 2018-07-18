@@ -265,6 +265,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865317"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>按 checkid 排列的托管代码的代码分析警告
 

@@ -32,6 +32,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31466174"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 当调试器因异常而中断执行时，你将看到**异常帮助器**，默认情况下。 如果你已禁用**异常帮助器**中**选项**对话框中，你将看到**异常助手**（C# 或 Visual Basic） 或**异常**对话框 （c + +）。  

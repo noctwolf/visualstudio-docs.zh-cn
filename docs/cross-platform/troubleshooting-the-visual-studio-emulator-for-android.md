@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31070007"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
 本主题包含的信息有助于解决使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到的一些问题。  
@@ -299,7 +300,7 @@ ms.lasthandoff: 04/16/2018
  当将文件拖放到屏幕上时，仿真程序使用 ADB.exe 帮助进行文件传输。 如果在尝试拖放文件时遇到错误，这可能指示仿真程序未连接到 ADB.exe。 若要解决，请执行 [Visual Studio 尝试将应用部署到仿真程序时遇到困难，或者仿真程序未在其他 IDE 中显示为调试目标。](#ADB)可查看 AMD 芯片列表。  
   
 ##  <a name="Resolution"></a> 屏幕快照的分辨率不正确  
- 如果使用 **“其他工具”** 窗口中的“屏幕快照”选项卡来进行屏幕快照，而生成的图像的大小并非预期大小，则在选择 **“捕获”**前可能需要调整屏幕的缩放级别。 仿真程序以主机计算机显示器上屏幕的分辨率进行屏幕快照。  
+ 如果使用 **“其他工具”** 窗口中的“屏幕快照”选项卡来进行屏幕快照，而生成的图像的大小并非预期大小，则在选择 **“捕获”** 前可能需要调整屏幕的缩放级别。 仿真程序以主机计算机显示器上屏幕的分辨率进行屏幕快照。  
   
 ##  <a name="OpenGL"></a> 仿真程序未能呈现 OpenGL 内容  
  仿真程序使用主计算机的 GPU 呈现 OpenGL 内容，并使用 ANGLE 项目将这些调用和 DirectX 进行相互转换。 如果应用程序正确地呈现在设备上，但未正确呈现在仿真器上，则该设备很可能正在缓解不正确的 OpenGL 调用（例如，使用不匹配的着色器变量）。  

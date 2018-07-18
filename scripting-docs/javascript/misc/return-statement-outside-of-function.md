@@ -1,13 +1,13 @@
 ---
-title: "&#39; 返回 &#39;语句在函数之外 |Microsoft 文档"
-ms.custom: 
+title: '&#39; 返回 &#39;语句在函数之外 |Microsoft 文档'
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1018
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633507"
 ---
 # <a name="39return39-statement-outside-of-function"></a>&#39; 返回 &#39;语句在函数之外
 你使用`return`语句在全局范围内的代码。 `return`语句应仅出现在函数体。  

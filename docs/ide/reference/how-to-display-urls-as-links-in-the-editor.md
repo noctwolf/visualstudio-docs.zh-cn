@@ -19,6 +19,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448047"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：在编辑器中将 URL 显示为链接
 可选择让代码编辑器将代码中的统一资源定位器 (URL) 视为活动链接。 使用此功能时，URL 将具有以下特征：

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31130215"
 ---
 # <a name="source-control-vspackage-design-elements"></a>源控件 VSPackage 设计元素
 此部分中的主题概述的结构的源控件，VSPackage 必须实现的深度集成。 它还列出接口的源控件 VSPackage 的服务可以实现，和源代码管理 VSPackage 的接口和服务可以使用从其他[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]组件来支持其源控制模型和功能。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: d1824ab926ebbc4a8057163e0edeaf35cec57433
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/24/2018
+ms.locfileid: "34477673"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何： 从 XML 架构生成 XML 代码段
 

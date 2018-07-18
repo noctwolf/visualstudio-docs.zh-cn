@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115406"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 将继续从停止的状态运行此程序。 清除任何以前的执行状态 （如步骤），并在程序启动再次执行。  

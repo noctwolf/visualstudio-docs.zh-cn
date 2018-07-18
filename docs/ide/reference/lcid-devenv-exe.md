@@ -23,6 +23,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704715"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 设置集成开发环境 (IDE) 内文本、货币和其他值使用的默认语言。

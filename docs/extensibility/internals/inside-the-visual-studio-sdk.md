@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134557"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 本部分提供有关 Visual Studio 扩展，包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用程序，以及类似的详细信息。  

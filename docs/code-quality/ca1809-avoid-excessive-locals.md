@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31917335"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809：避免过多的局部变量
 |||

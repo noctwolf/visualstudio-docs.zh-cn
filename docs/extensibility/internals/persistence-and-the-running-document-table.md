@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129730"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和运行文档表
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE，项目将完全负责管理他们完成使用服务，其项目项的持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是持久性的在 Visual Studio 环境中的基本单位。 项目协调打开、 保存和重命名的文档与正在运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。  

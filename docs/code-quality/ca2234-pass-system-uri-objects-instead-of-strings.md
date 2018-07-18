@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919972"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234：传递 System.Uri 对象，而不传递字符串
 |||

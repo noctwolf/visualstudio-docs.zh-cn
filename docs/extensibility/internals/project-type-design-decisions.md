@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131485"
 ---
 # <a name="project-type-design-decisions"></a>项目类型的设计决策
 在创建新的项目类型之前，你必须进行一些设计决策，有关你的项目类型。 你必须决定要将哪些类型的项将包含你的项目、 如何将保持项目文件，以及哪些承诺模型。  

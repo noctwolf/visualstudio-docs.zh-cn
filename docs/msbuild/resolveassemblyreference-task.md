@@ -28,6 +28,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31575853"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 任务
 确定依赖指定程序集的所有程序集。 这包括第二级和第 `n`级的依赖项。  

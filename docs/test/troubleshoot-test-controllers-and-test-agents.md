@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f218d571d8b747b5dfcfbe8c807d3a2779a99345
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c1ddfedc1a88300bb01b5113304f2b8893e2857
+ms.sourcegitcommit: 893c09d58562c378a4ba057bf2a06bde1c80df90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "35668221"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>负载测试中测试控制器和测试代理的故障排除策略
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/26/2018
 
 3.  在该文件的系统诊断部分中编辑 `EqtTraceLevel` 开关的项。 您的代码应该与下面的内容类似：
 
-    ```
+    ```xml
     <system.diagnostics>
         <trace autoflush="true" indentsize="4">
             <listeners>
@@ -136,7 +137,7 @@ ms.lasthandoff: 04/26/2018
 
 -   再次运行测试代理安装。 这一次，指定测试控制器的 IP 地址，而不是指定测试控制器的名称。
 
- 这适用于测试控制器、测试代理服务和测试代理进程。 对于每个在包含多个网络适配器的计算机上运行的进程，都必须设置 `BindTo` 属性。 对于所有三个进程，设置 `BindTo` 属性的过程是相同的，同上面对测试控制器所指定的过程。 若要设置测试代理服务和测试代理进程的日志记录级别，请使用在[设置测试控制器计算机上的日志记录级别](#Logging)中列出的配置文件。
+ 这适用于测试控制器、测试代理服务和测试代理进程。 对于每个在包含多个网络适配器的计算机上运行的进程，都必须设置 `BindTo` 属性。 对于所有三个进程，设置 `BindTo` 属性的过程是相同的，同上面对测试控制器所指定的过程。 若要设置测试代理服务和测试代理进程的日志记录级别，请使用在[设置测试控制器计算机上的日志记录级别](#setting-the-logging-level-on-a-test-controller-computer)中列出的配置文件。
 
 ## <a name="see-also"></a>请参阅
 

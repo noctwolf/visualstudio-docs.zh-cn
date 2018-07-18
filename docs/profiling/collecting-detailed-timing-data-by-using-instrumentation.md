@@ -18,6 +18,7 @@ ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34262827"
 ---
 # <a name="collect-detailed-timing-data-by-using-instrumentation"></a>通过使用检测收集详细计时数据
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法将分析代码注入到模块的副本中。 该代码记录分析运行期间模块中函数的每次进入、退出和函数调用。 在收集有关你的代码的某一部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响时，该检测方法会十分有用。  

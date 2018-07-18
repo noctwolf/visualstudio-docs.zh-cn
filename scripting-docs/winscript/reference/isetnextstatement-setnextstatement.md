@@ -1,16 +1,18 @@
 ---
-title: "ISetNextStatement::SetNextStatement |Microsoft 文档"
-ms.custom: 
+title: ISetNextStatement::SetNextStatement |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-apiname: ISetNextStatement.SetNextStatement
-apilocation: scrobj.dll
+apiname:
+- ISetNextStatement.SetNextStatement
+apilocation:
+- scrobj.dll
 ms.assetid: c5534f3b-39a5-4466-b8fc-69b717c6eee9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +21,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24733877"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
 此方法将更新的脚本解释程序可以执行的下一步代码上下文。  

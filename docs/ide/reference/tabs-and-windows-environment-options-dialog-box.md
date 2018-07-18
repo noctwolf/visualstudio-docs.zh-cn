@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31944276"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“选项卡和窗口”
 

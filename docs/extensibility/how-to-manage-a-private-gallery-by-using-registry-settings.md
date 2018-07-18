@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126778"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用注册表设置来管理专用库
 如果你是管理员或开发人员的独立 Shell 扩展，你可以控制对控件、 模板和 Visual Studio 库、 示例库或专用库中的工具访问。 若要使库可用或不可用，请创建一个.pkgdef 文件，用于描述已修改的注册表项和它们的值。  

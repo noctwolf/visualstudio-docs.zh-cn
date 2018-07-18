@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476242"
 ---
 # <a name="how-to-debug-an-executable-that-is-not-part-of-a-visual-studio-solution"></a>如何： 调试不属于 Visual Studio 解决方案的可执行文件
 有时，你可能想要调试的可执行文件 （.exe 文件） 不属于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 它可能是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部创建的可执行文件，也可能是从其他用户处接收到的可执行文件。  

@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31066513"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>在 XCode 和 Visual Studio 之间同步更改
 适用于移动开发的 Microsoft Visual C++ 组件包括在电脑和 Mac 间同步工作的远程功能。 Visual Studio 和 Mac 计算机配对后，向 Visual Studio 中的 iOS 应用程序项目提供新选项，可用于在 XCode 中打开项目、在 XCode 和 Visual Studio 间移动代码，并可清理临时 XCode 项目目录。  

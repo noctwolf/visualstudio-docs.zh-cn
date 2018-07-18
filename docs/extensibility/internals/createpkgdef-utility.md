@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135775"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
 采用 Visual Studio 扩展作为参数的.dll 文件，并创建一个.pkgdef 文件随附.dll。 .Pkgdef 文件包含否则将在安装扩展时写入到系统注册表的所有信息。  

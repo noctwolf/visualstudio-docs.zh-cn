@@ -24,6 +24,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474409"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>有关 Visual Studio 中的寄存器窗口
 **注册**均提供仅当中启用了地址级调试窗口**选项**对话框中，**调试**节点。  

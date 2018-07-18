@@ -11,17 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b267c4963eede53f433bd929eb7944ad53e9a8ba
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34750329"
 ---
 # <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教程步骤 3：提供静态文件、添加页面和使用模板继承
 
 上一步：[使用视图和页面模板创建 Django 应用](learn-django-in-visual-studio-step-02-create-an-app.md)
 
-在本教程的前几个步骤中，你已了解如何在自包含 HTML 的单个页面中创建最小的 Django 应用。 然而，现代 Web 应用通常由许多页面组成，并利用 CSS、JavaScript 和文件等共享资源来提供一致的样式和行为。
+在本教程的前几个步骤中，你已了解如何在自包含 HTML 的单个页面中创建最小的 Django 应用。 然而，现代 Web 应用通常由许多页面组成，并利用 CSS、JavaScript 文件等共享资源来提供一致的样式和行为。
 
 在此步骤中，你将了解如何：
 
@@ -40,8 +41,6 @@ ms.lasthandoff: 05/04/2018
 ![Visual Studio 中的“添加新项”对话框](media/django/step03-add-new-item-dialog.png)
 
 若要使用模板，选择所需的模板，为该文件指定一个名称，然后选择“确定”。 以这种方式添加项会自动将文件添加到 Visual Studio 项目中，并标记对源代码管理所做的更改。
-
-Visual Studio 还会将某些常用的选项直接添加到“添加”菜单。 例如，在 Python 项目中，你可能会看到“添加”菜单底部的“HTML 页”或“样式表”命令，这些命令提示你输入名称并创建文件。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>问：Visual Studio 如何知道要提供哪些项模板？
 
@@ -187,7 +186,7 @@ Django 模板系统为实现跨多个模板重用特定元素提供了两种方�
 
 以下步骤演示继承：
 
-1. 在应用的 `templates/HelloDjangoApp` 文件夹中，创建一个名为 `layout.html` 的新 HTML 文件（使用“添加” > “新项”上下文菜单或“添加” > “HTML 页”），并粘贴到以下内容。 可以看到此模板包含一个名为“content”的块，这是引用页面需要替换的全部内容：
+1. 在应用的 `templates/HelloDjangoApp` 文件夹中，创建一个名为 `layout.html` 的新 HTML 文件（使用“添加” > “新项”上下文菜单或“添加” > “HTML 页”），并将它的内容替换为以下标记。 可以看到此模板包含一个名为“content”的块，这是引用页面需要替换的全部内容：
 
     ```html
     <!DOCTYPE html>

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134430"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>为 VSPackage 选择的安装目录
 VSPackage 和及其支持文件必须是用户的文件系统上。 位置取决于是否 VSPackage 托管或非托管，你的并行版本控制方案，并用户选择。  
@@ -38,9 +39,9 @@ VSPackage 和及其支持文件必须是用户的文件系统上。 位置取决
  [找到]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>托管的 VSPackage  
- 也可以在任何位置安装托管的 Vspackage。 但是，你应该考虑始终将它们安装到全局程序集缓存 (GAC) 以减少程序集加载时间。 托管的 Vspackage 始终是强名称的程序集，因为在 GAC 中安装它们意味着仅在安装时，使用其强名称签名验证。 安装在其他位置的文件系统的具有强名称的程序集必须具有每次加载时验证其签名。 当安装在 GAC 中的托管的 Vspackage 时，使用 regpkg 工具的**/assembly**交换机来编写指向程序集的强名称的注册表条目。  
+ 也可以在任何位置安装托管的 Vspackage。 但是，你应该考虑始终将它们安装到全局程序集缓存 (GAC) 以减少程序集加载时间。 托管的 Vspackage 始终是强名称的程序集，因为在 GAC 中安装它们意味着仅在安装时，使用其强名称签名验证。 安装在其他位置的文件系统的具有强名称的程序集必须具有每次加载时验证其签名。 当安装在 GAC 中的托管的 Vspackage 时，使用 regpkg 工具的 **/assembly**交换机来编写指向程序集的强名称的注册表条目。  
   
- 如果安装在 GAC 以外的位置中托管的 Vspackage，请按照针对非托管 Vspackage 给定选择目录层次结构的早期建议。 使用 regpkg 工具**/codebase**交换机来编写指向 VSPackage 程序集的路径的注册表条目。  
+ 如果安装在 GAC 以外的位置中托管的 Vspackage，请按照针对非托管 Vspackage 给定选择目录层次结构的早期建议。 使用 regpkg 工具 **/codebase**交换机来编写指向 VSPackage 程序集的路径的注册表条目。  
   
  有关详细信息，请参阅[注册和注销 Vspackage](../../extensibility/registering-and-unregistering-vspackages.md)。  
   

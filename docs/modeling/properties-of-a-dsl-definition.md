@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949587"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*如版本编号定义属性。 DslDefinition 属性将显示在**属性**窗口时单击打开中的关系图的区域*域特定语言设计器*。

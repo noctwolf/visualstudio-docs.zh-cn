@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952474"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 为了帮助确保你的软件系统或应用程序满足用户的需求，您可以在 Visual Studio 中创建模型，作为您的整体结构的说明和软件系统或应用程序行为的一部分。 使用模型，也可以描述在整个设计中使用的模式。 这些模型可你帮助了解现有的体系结构、讨论更改和清楚地传达你的意图。

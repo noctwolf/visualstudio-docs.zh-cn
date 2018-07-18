@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31112973"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 获取端口标识符。  

@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573133"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 任务引用
 Windows Presentation Foundation (WPF) 生成进程通过另一组生成任务扩展 Microsoft 生成引擎 (MSBuild)，这些任务包括编译标记和进程资源的任务。  

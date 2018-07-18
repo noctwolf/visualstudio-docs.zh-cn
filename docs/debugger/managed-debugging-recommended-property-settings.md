@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476437"
 ---
 # <a name="managed-debugging-recommended-property-settings"></a>托管调试：推荐的属性设置
 某些属性应该在所有托管调试方案中采用相同的设置。  

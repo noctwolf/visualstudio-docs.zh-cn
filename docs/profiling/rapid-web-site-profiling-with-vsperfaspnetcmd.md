@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7ebff923667f76c350f17a08196369b4354151d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2efa8cf966967b07e1dbbfe5e2e1f6b7f8f6aef7
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34572876"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/19/2018
  在某些情况下（如收集并发数据或暂停并恢复分析），使用 **VSPerfCmd** 是首选分析方法。
 
 > [!NOTE]
-> 分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机，使用位于 32 位 \Team Tools\Performance Tools 目录中的 VSPerfASPNETCmd 工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
+> 分析工具的命令行工具位于 Visual Studio 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，请使用位于 32 位 \Team Tools\Performance Tools 目录中的 VSPerfASPNETCmd 工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。
 
 ## <a name="profiling-an-aspnet-application"></a>分析 ASP.NET 应用程序
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/19/2018
 
 **vsperfaspnetcmd /trace**  *websiteUrl*
 
-如果要分析 Web 应用程序中的静态编译的 .dll 文件，则必须使用 [VSInstr](../profiling/vsinstr.md) 命令行工具检测文件。 vsperfaspnetcmd /trace 命令会包含检测的文件中的数据。
+如果要分析 Web 应用程序中静态编译的 .dll 文件，需要使用 [VSInstr](../profiling/vsinstr.md) 命令行工具检测文件。 vsperfaspnetcmd /trace 命令会包含检测的文件中的数据。
 
 ## <a name="to-collect-net-memory-data"></a>收集 .NET 内存数据
 
@@ -101,5 +102,5 @@ vsperfaspnetcmd /memory[:lifetime] */tip***websiteUrl
 
 |选项|描述|
 |------------|-----------------|
-|**/Output:** `VspFile`|默认情况下，在当前目录中创建分析数据 (.vsp) 文件，文件名为 **PerformanceReport.vsp**。 使用 /Output 选项可指定其他位置、文件名或两者。|
-|**/PackSymbols:Off**|VsPerfASPNETCmd 会将符号（函数和参数名等）嵌入在 .vsp 文件中。 嵌入符号可能会使分析数据文件非常大。 如果在分析数据时可以访问包含符号的 .pdb 文件，则使用 /packsymbols:off 选项禁用符号的嵌入。|
+|**/Output:** `VspFile`|默认情况下，在当前目录中创建分析数据 (.vsp) 文件，文件名为 PerformanceReport.vsp。 使用 /Output 选项可指定其他位置、文件名或两者。|
+|**/PackSymbols:Off**|默认情况下，VsPerfASPNETCmd 会将符号（函数和参数名等）嵌入在 .vsp 文件中。 嵌入符号可能会使分析数据文件非常大。 如果在分析数据时可以访问包含符号的 .pdb 文件，则使用 /packsymbols:off 选项禁用符号的嵌入。|

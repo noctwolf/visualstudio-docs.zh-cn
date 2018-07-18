@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135631"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧语言服务中的大纲显示
 以大纲方式显示使可以折叠到概述或大纲复杂程序。 例如，在 C# 中的所有方法可以都折叠导航到单个行中，显示仅方法签名。 此外，结构和类可以折叠以仅显示的名称的结构和类。 在单一方法中，可以折叠复杂的逻辑以通过如显示仅语句的第一行中显示的总体流程`foreach`， `if`，和`while`。  

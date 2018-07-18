@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133742"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用与你的项目类型关联的注册信息确定要显示在内容**添加新项目**和**添加新项**对话框。  

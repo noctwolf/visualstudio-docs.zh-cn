@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573110"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142336"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 此函数会提示用户输入是一个字符串，仅对源代码管理插件有意义的项目路径。 当用户是，将调用：  

@@ -18,6 +18,7 @@ ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/04/2018
+ms.locfileid: "33102649"
 ---
 # <a name="project-properties-reference"></a>项目属性引用
 详细了解如何配置和自定义项目属性。

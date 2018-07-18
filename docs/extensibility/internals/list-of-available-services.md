@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135904"
 ---
 # <a name="list-of-available-services"></a>可用服务列表
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些包提供未在此处列出其自己服务 — 例如，语言服务没有单个服务 GUID。 你必须使用的语言的名称来在注册表中查找语言服务的 GUID。  

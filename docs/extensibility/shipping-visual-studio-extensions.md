@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142744"
 ---
 # <a name="shipping-visual-studio-extensions"></a>传送 Visual Studio 扩展
 完成开发你的扩展后，你可以安装在其他计算机上、 与你的好友和同事共享它或将其发布在 Visual Studio Marketplace 上。 在本部分中，我们介绍你需要执行为了发布和维护你的扩展的所有操作： 使用.vsix 文件，发布、 本地化，和更新。  

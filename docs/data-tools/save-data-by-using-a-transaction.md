@@ -23,6 +23,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31920542"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用事务保存数据
 将数据在事务中保存通过<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与自动为您管理的事务。

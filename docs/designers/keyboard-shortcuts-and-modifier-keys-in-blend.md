@@ -1,6 +1,7 @@
 ---
 title: Blend 中的键盘快捷方式和修改键
 ms.date: 11/04/2016
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
@@ -9,11 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd5299a9384e672f00150997ee4310de6c3282c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6a9ceb3f6aa2483621b3d917533457a05008df0
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747412"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的键盘快捷方式和修改键
 通过使用键盘快捷方式，你需要多次单击鼠标按钮完成的操作只需按一次键盘快捷方式即可完成，从而可加快你的工作速度。 [!INCLUDE[blend_first](../debugger/includes/blend_first_md.md)] 中的键盘快捷方式分为以下两种类别：
@@ -22,13 +24,13 @@ ms.lasthandoff: 04/19/2018
 
      若要使用访问键，请先按 Alt 或 F10 以显示下划线，然后按特定菜单项或对话框项的对应字母。 或者，你可以通过使用 Tab 键或箭头键在菜单或对话框中导航。 例如，如果在 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 中按 Alt，则“文件”菜单中的字母“F”下会出现下划线，以将其标识为访问键。 若要打开项目，你可以按住 Alt，按 F，然后按 O。
 
-     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png "441d5d67-48ee-4ba3-9e55-1826167e8d64") 按 ALT 后显示的带下划线的访问键
+     ![](../designers/media/441d5d67-48ee-4ba3-9e55-1826167e8d64.png)按 Alt 后显示的带下划线的访问键
 
 -   快捷键 可以使用快捷键，即通过按键盘快捷方式来执行操作（例如选择菜单命令或修改工具的行为）。
 
      大多数键盘快捷方式都可以轻松地在 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 的用户界面中确定；它们显示在菜单命令的右边。 例如，在“文件”菜单上，“打开项目”菜单命令包括键盘快捷键 Ctrl+Shift+O。 要查看“工具”面板中的工具的快捷键，请将鼠标指针悬停在工具的上方。
 
-     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595") 显示在具有快捷方式的菜单项旁边的快捷键
+     ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png)显示在具有快捷方式的菜单项旁边的快捷键
 
  有关辅助功能和其他功能的详细信息，请参阅 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=75069)。
 

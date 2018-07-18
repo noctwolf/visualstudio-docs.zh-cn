@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31473181"
 ---
 # <a name="how-to-display-window-properties"></a>如何：显示窗口属性
 若要了解有关中列出的窗口的详细信息[Windows 视图](../debugger/windows-view.md)，使用[窗口属性对话框](../debugger/window-properties-dialog-box.md)。  

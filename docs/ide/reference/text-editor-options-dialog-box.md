@@ -25,6 +25,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34448696"
 ---
 # <a name="text-editor-options-dialog-box"></a>文本编辑器的“选项”对话框
 

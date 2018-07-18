@@ -25,6 +25,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576828"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 任务
 注销用于 COM 互操作的指定程序集。 执行 [RegisterAssembly 任务](../msbuild/registerassembly-task.md)的相反任务。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 04/19/2018
 |---------------|-----------------|  
 |`Assemblies`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要注销的程序集。|  
 |`AssemblyListFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 包含有关 `RegisterAssembly` 任务和 `UnregisterAssembly` 任务之间状态的信息。 这样可以防止任务尝试注销无法在 `RegisterAssembly` 任务中注册的程序集。<br /><br /> 如果已指定此参数，则 `Assemblies` 和 `TypeLibFiles` 参数将被忽略。|  
-|`TypeLibFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 从指定的程序集中注销指定的类型库。 **注意：**只有当类型库文件名不同于程序集名称时，此参数才是必需的。|  
+|`TypeLibFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 从指定的程序集中注销指定的类型库。 **注意：** 只有当类型库文件名不同于程序集名称时，此参数才是必需的。|  
   
 ## <a name="remarks"></a>备注  
  此任务的成功对是否存在程序集不作要求。 如果尝试注销不存在的程序集，则该任务将成功并且出现警告。 发生这种情况是因为此任务的工作就是从注册表中删除程序集注册。 如果该程序集不存在，则它不在注册表中，因此，任务将成功完成。  

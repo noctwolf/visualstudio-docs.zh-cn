@@ -18,6 +18,7 @@ ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33956914"
 ---
 # <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>如何：将类图元素复制到 Microsoft Office 文档
 

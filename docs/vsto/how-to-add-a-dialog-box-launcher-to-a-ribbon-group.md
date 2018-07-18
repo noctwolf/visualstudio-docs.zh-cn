@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548381"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>如何： 向功能区组添加对话框启动器
   你可以向功能区上的任何组添加对话框启动器。 对话框启动器是一组中出现一个小图标。 用户单击此图标以打开相关的对话框或提供更多选项与组相关的任务窗格。  

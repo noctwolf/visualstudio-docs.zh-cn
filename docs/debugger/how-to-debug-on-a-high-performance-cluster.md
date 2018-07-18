@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31477659"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：在高性能群集上进行调试
 在高性能群集上调试多处理程序类似于在远程计算机上调试普通程序。 但是，还有一些其他注意事项。 常规的远程安装程序要求，请参阅[远程调试](../debugger/remote-debugging.md)。  

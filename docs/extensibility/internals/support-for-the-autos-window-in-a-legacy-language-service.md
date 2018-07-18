@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135817"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支持旧语言服务中的自动窗口
 **自动**窗口显示如变量和参数，位于范围内时被调试的程序已暂停 （或者由于断点或异常） 的表达式。 表达式可以包含变量，本地或全局和局部范围中进行了更改的参数。 **自动**窗口还可以包括类、 结构或某些其他类型的实例化。 表达式计算器可以计算的任何内容可能显示在**自动**窗口。  

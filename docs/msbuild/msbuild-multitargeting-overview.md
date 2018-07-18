@@ -15,6 +15,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31569165"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 通过 MSBuild，可将应用程序编译为在若干 .NET Framework 版本的任一版本和若干系统平台的任一平台上运行。 例如，可将同一应用程序编译为既能在 32 位平台的 .NET Framework 2.0 上运行，也能在 64 位平台的 .NET Framework 4.5 上运行。  

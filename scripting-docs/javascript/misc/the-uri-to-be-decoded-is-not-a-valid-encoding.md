@@ -1,13 +1,13 @@
 ---
-title: "要解码的 URI 不有效编码 |Microsoft 文档"
-ms.custom: 
+title: 要解码的 URI 不有效编码 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5025
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
-caps.latest.revision: 
+caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633327"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>要解码的 URI 不是有效编码
 你试图解码格式不正确的 URI （统一资源标识符）。 Uri 具有一个特殊的语法;大多数的非字母数字字符必须进行编码后，才可以在 URI 中使用。 你可以使用`encodeURI`和`encodeURIComponent`方法来创建 URI 从常规[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]字符串。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31109826"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 指定将导致激发该断点的断点传递计数与关联的条件。  

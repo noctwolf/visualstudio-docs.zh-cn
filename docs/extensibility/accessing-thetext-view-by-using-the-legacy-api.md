@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31097778"
 ---
 # <a name="accessing-thetext-view-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本视图
 文本视图是文本的一个演示文稿的文本缓冲区中存储。 可以通过以下部分中所示，使用旧的 API 来访问文本视图。

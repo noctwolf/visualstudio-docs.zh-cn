@@ -27,6 +27,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31456420"
 ---
 # <a name="assertion-failed-dialog-box"></a>“断言失败”对话框
 断言语句指定在程序的某些特定点应为真的条件。 如果该条件不为 true，则断言失败、程序的执行中断且此对话框将出现。  

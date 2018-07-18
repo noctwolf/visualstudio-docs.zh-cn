@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31576438"
 ---
 # <a name="getting-started-with-performance-tools"></a>性能工具入门
 本部分概述使用 Visual Studio 性能工具收集、查看和分析代码性能时要应用的概念和任务。  
@@ -32,8 +33,8 @@ ms.lasthandoff: 04/19/2018
   
 |任务|相关内容|  
 |----------|---------------------|  
-|**快速分析应用程序或网站：**使用“性能向导”可为 Visual Studio 解决方案或网站配置和运行分析会话。|-   [性能分析初学者指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：为网站收集性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**不使用向导分析应用程序：**了解如何使用性能会话属性页创建性能会话。|-   [如何：手动创建性能会话](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**快速分析应用程序或网站：** 使用“性能向导”可为 Visual Studio 解决方案或网站配置和运行分析会话。|-   [性能分析初学者指南](../profiling/beginners-guide-to-cpu-sampling.md)<br />-   [如何：为网站收集性能数据](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**不使用向导分析应用程序：** 了解如何使用性能会话属性页创建性能会话。|-   [如何：手动创建性能会话](../profiling/how-to-manually-create-performance-sessions.md)|  
   
 ## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31945917"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自定义生成事件
 

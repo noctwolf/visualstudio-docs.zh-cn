@@ -1,17 +1,17 @@
 ---
-title: "活动脚本接口 |Microsoft 文档"
-ms.custom: 
+title: 活动脚本接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Active Script interfaces
 - activscp.h
 ms.assetid: f2afee5f-b930-4b32-b903-84ba41eb2d88
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -20,6 +20,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24641467"
 ---
 # <a name="active-script-interfaces"></a>活动脚本接口
 ActivScp.h 标头文件提供接口、 枚举和在本部分中列出的错误代码。  

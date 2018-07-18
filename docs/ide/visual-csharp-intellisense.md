@@ -12,11 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c6b4ef8ced5704eca2cf304ce61aaaa710f76cac
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748226"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -93,7 +94,7 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 若要启动“添加 using”操作，请将光标放在无法解析的类型引用上。 例如，创建控制台应用程序并将 `XmlTextReader` 添加到 `Main` 方法主体时，该代码行上将出现一条红色波浪线，因为无法解析该类型引用。 然后可以通过“快速操作”调用“添加 using”。 只有当光标位于未绑定的类型上时，才可看见“快速操作”。
 
-![添加 using、快速操作展开图像](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")
+![添加 using、快速操作展开图像](../ide/media/addusing-quickaction.png)
 
 单击灯泡图标，然后选择“using System.Xml;”自动添加 using 指令。
 
@@ -143,11 +144,11 @@ IntelliSense 提供了一个选项，有助于在使用代码编辑器时自动�
 
 在 .cs 文件中的一个事件字段后键入 `+=` 运算符时，IntelliSense 提示你按 Tab 这一选项。 这会插入委托的新实例，该委托指向处理事件的方法。
 
-![按钮自动挂钩](../ide/media/vxautohookup.gif "vxAutoHookUp")
+![按钮自动挂钩](../ide/media/vxautohookup.gif)
 
 如果按 Tab，IntelliSense 将自动完成该语句，并在代码编辑器中将事件处理程序引用显示为所选文本。 若要完成自动事件挂钩，IntelliSense 会提示你再次按 Tab 键，以便为事件处理程序创建空的存根。
 
-![生成事件处理程序](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")
+![生成事件处理程序](../ide/media/vxgenerateeventhandler.gif)
 
 > [!NOTE]
 > 如果由 IntelliSense 创建的新委托引用现有的事件处理程序，IntelliSense 将在工具提示中传达此信息。 然后，可以修改此引用；已在代码编辑器中选定该文本。 否则，自动事件挂钩将在此时完成。

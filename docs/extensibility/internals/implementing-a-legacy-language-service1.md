@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129323"
 ---
 # <a name="implementing-a-legacy-language-service"></a>实现旧语言服务
 你可以使用托管的包框架 (MPF) 中的类来实现旧语言服务支持各种功能，如语法突出显示、 大括号匹配和 IntelliSense 完成。  

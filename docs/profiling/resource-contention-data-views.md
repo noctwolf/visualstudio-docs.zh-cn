@@ -18,6 +18,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31581027"
 ---
 # <a name="resource-contention-data-views"></a>资源争用数据视图
 本节介绍有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。  

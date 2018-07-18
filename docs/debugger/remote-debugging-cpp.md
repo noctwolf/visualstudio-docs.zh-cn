@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478104"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
 若要调试 Visual Studio 应用程序的其他计算机上，安装，并在计算机上运行远程工具将在其中部署您的应用程序配置你的项目，以从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
@@ -96,7 +97,7 @@ ms.lasthandoff: 04/18/2018
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   
     > [!TIP]
-    >  或者，你可以采用单独的步骤部署文件。 在**解决方案资源管理器，**右键单击**mymfc**节点，然后选择**部署**。  
+    >  或者，你可以采用单独的步骤部署文件。 在**解决方案资源管理器，** 右键单击**mymfc**节点，然后选择**部署**。  
   
  如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建为其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 > 新文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 > 现有项**，然后选择的文件)。 上**属性**对于每个文件页上，设置**复制到输出目录**到**始终复制**。
   

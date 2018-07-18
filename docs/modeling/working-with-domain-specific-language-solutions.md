@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31965974"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用域特定语言解决方案
 使用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案。 本节是有关如何设置和自定义解决方案。

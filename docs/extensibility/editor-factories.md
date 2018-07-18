@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128243"
 ---
 # <a name="editor-factories"></a>编辑器工厂
 编辑器工厂创建编辑器对象，并将它们放在窗口框架，称为物理视图中。 它创建的文档数据和所需创建编辑器和设计器的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用的编辑器工厂创建的自定义编辑器。  

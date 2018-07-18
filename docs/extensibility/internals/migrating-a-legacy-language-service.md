@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135845"
 ---
 # <a name="migrating-a-legacy-language-service"></a>将旧语言服务迁移
 你可以通过更新项目并向项目添加 source.extension.vsixmanifest 文件迁移到更高版本的 Visual Studio 的旧语言服务。 语言服务本身将继续工作和前面一样，因为 Visual Studio 编辑器采用它。  
@@ -105,7 +106,7 @@ ms.lasthandoff: 04/16/2018
   
     -   保存并关闭文件。  
   
-11. 生成解决方案。 生成的文件部署到**%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
+11. 生成解决方案。 生成的文件部署到 **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**。  
   
 12. 开始调试。 打开 Visual Studio 的第二个实例。  
   

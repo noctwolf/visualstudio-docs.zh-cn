@@ -9,11 +9,12 @@ description: 了解如何充分利用 Visual Studio 订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 808b3f9c17ad486649b84c787d864fe768fe1c08
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34548718"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 
@@ -77,15 +78,15 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 - Microsoft Store：如果从 [Microsoft Store](http://www.microsoft.com/store) 购买订阅，则可以继续在这里续订。 
 - 批量许可证：如果公司通过批量许可证购买订阅，管理员应联系经销商续订你的订阅。
 
-**云订阅：**云订阅无需续订。  只要订阅已付费，它就会仍然有效。 
+**云订阅：** 云订阅无需续订。  只要订阅已付费，它就会仍然有效。 
 
-**通过计划获得的订阅：**如果通过计划获得订阅，则该订阅与你在计划中的参与状况关联。  请联系计划联系人，了解其他信息。 
+**通过计划获得的订阅：** 如果通过计划获得订阅，则该订阅与你在计划中的参与状况关联。  请联系计划联系人，了解其他信息。 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
 - [Microsoft 合作伙伴网络](https://partner.microsoft.com/en-us)
 - [Microsoft 认证培训师](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
 
-**Visual Studio Dev Essentials：**Dev Essentials 是一个免费的计划，并且成员资格不会过期。  
+**Visual Studio Dev Essentials：** Dev Essentials 是一个免费的计划，并且成员资格不会过期。  
 
 ## <a name="transferring-subscriptions"></a>转让订阅
 如果订阅是通过 Microsoft 批量许可购买的，而你需要将其重新分配给组织内的其他人，则管理员则需要为你执行此操作。 可以通过联系客户服务将零售订阅转让给其他用户。  免费订阅或“限制转售”订阅不可转让。 
@@ -118,3 +119,21 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 ![备用帐户](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 添加备用帐户后，就可随时通过单击“订阅”标签并在“相关链接”部分选择相应的选项来更新或删除该帐户。  
+
+## <a name="frequently-asked-questions"></a>常见问题   
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>问：如果未续订我的订阅，我的数据将在 Microsoft 保留多长时间？
+答：Microsoft 保留客户数据时间的长短视不同购买渠道而定。
+
+| 渠道                                                | 持续时间（天） |
+|--------------------------------------------------------|-----------------|
+|    零售（例如通过 Microsoft Store 购买）               |    360          |
+|    批量许可服务中心 (VLSC)              |    180          |
+|    Microsoft 产品和服务协议 (MPSA)    |    180          |
+|    Visual Studio 云订阅                   |    180          |
+|    程序（如 MCT、BizSpark、MPN、Imagine）          |    180          |
+|    限制转售（如 MVP、MSP）                      |    180          |
+|    DevEssentials                                       |    30           |
+
+> [!NOTE]
+> - 如果选择关闭 Microsoft 帐户或 Azure AD，将立即匿名处理你的个人数据。  
+> - 如果有活动订阅，我们不会完全删除你的所有个人数据。 

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148696"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>演练： 显示灯泡建议
 电灯泡是 Visual Studio 编辑器中使用的图标会展开以显示一组操作，例如修补通过内置的代码分析器或重构代码标识的问题。  

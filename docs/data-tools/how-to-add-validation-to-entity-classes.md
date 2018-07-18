@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31923120"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何： 向实体类添加验证
 *验证*实体类是输入到数据对象的值符合在对象的架构中，以及应用程序建立的规则的约束的确认过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。

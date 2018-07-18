@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102975"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>创建可重用的按钮的组
 命令组是一套始终可以一起出现，菜单或工具栏的命令。 可以将其分配给不同的父菜单的.vsct 文件的 CommandPlacements 部分中重新使用任何命令组。  

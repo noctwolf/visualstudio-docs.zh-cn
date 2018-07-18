@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31573955"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  

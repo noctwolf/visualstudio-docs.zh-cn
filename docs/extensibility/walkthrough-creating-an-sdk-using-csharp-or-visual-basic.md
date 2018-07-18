@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31146606"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>演练： 创建使用 C# 或 Visual Basic 的 SDK
 在本演练中，你将了解如何通过使用 Visual C# 创建一个简单的数学库 SDK 并然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 你将完成以下过程：  
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在菜单栏上，选择**文件**，**新建**，**新项目**。  
   
-2.  在模板列表中，展开**Visual C#**或**Visual Basic**，选择**Windows 应用商店**节点，然后选择**Windows 运行时组件**模板。  
+2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**Windows 应用商店**节点，然后选择**Windows 运行时组件**模板。  
   
 3.  在**名称**框中，指定**SimpleMath**，然后选择**确定**按钮。  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  上的快捷菜单**解决方案 SimpleMath**节点，选择**添加**，**新项目**。  
   
-2.  在模板列表中，展开**Visual C#**或**Visual Basic**，选择**扩展性**节点，然后选择**VSIX 项目**模板。  
+2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，选择**扩展性**节点，然后选择**VSIX 项目**模板。  
   
 3.  在**名称**框中，指定**SimpleMathVSIX**，然后选择**确定**按钮。  
   
@@ -156,7 +157,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在菜单栏上，选择**文件**，**新建**，**新项目**。  
   
-2.  在模板列表中，展开**Visual C#**或**Visual Basic**，然后选择**Windows 应用商店**节点。  
+2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。  
   
 3.  选择**空白应用程序**模板，将项目**ArithmeticUI**，然后选择**确定**按钮。  
   
@@ -235,7 +236,7 @@ ms.lasthandoff: 04/16/2018
   
 12. 选择 F5 键以运行应用程序。  
   
-13. 在应用中，输入任何两个数字，选择某一操作，，然后选择**=**按钮。  
+13. 在应用中，输入任何两个数字，选择某一操作，，然后选择**=** 按钮。  
   
      将显示正确的结果。  
   

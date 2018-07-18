@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31101132"
 ---
 # <a name="debugging-tasks"></a>调试任务
 若要调试程序，它必须启动和调试引擎 (DE) 必须附加到它，否则 DE 必须连接到以前启动程序。 一旦附加，DE 必须生成某些启动事件。 在响应中，尝试绑定在 IDE 中设置断点调试包。 当程序达到绑定的断点时，它会中止并等待用户输入。  

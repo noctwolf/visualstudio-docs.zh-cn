@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134121"
 ---
 # <a name="source-control-configuration-details"></a>源控件配置详细信息
 若要实现源代码管理，你需要以正确配置你的项目系统或编辑器执行以下操作：

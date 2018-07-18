@@ -18,6 +18,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31969624"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>如何：从储存库导出负载测试结果
 

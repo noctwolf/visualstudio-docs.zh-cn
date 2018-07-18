@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916033"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：检查有关值类型的声明性安全
 |||

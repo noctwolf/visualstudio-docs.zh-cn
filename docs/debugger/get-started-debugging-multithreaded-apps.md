@@ -24,6 +24,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31926255"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供的若干工具和用户界面元素，以帮助你调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程只需几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。

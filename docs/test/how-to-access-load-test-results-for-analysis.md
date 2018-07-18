@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31966682"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>如何：访问负载测试结果以进行分析
 

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31952754"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 你可以创建应用商店规则传播到另一个中可视化和建模 SDK (VMSDK) 从在元素更改。 时对存储区中任何元素发生了更改，规则都计划在最外层事务提交时通常要执行。 有不同类型的不同种类的事件，如添加元素，或删除它的规则。 你可以附加到特定类型的元素、 形状或关系图的规则。 许多内置功能由规则定义： 例如，规则确保在模型更改时，更新关系图。 你可以通过添加您自己的规则自定义你的域特定语言。
@@ -133,7 +134,7 @@ namespace ExampleNamespace
     |基类|触发器|
     |----------------|-------------|
     |<xref:Microsoft.VisualStudio.Modeling.AddRule>|添加元素、 链接或在形状。<br /><br /> 用于检测新关系，除了新元素。|
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|更改域属性值。 方法自变量提供的旧和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，此规则通常运行在事务的末尾。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：**创建或删除链接时，则不触发此规则。 相反，编写`AddRule`和`DeleteRule`域关系。|
+    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|更改域属性值。 方法自变量提供的旧和新值。<br /><br /> 对于形状，触发此规则时内置`AbsoluteBounds`属性更改，如果移动形状。<br /><br /> 在许多情况下，它是更方便地重写`OnValueChanged`或`OnValueChanging`属性处理程序中。 更改立即之前和之后调用这些方法。 与此相反，此规则通常运行在事务的末尾。 有关详细信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。 **注意：** 创建或删除链接时，则不触发此规则。 相反，编写`AddRule`和`DeleteRule`域关系。|
     |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|当某个元素或链接是即将被删除时触发。 在事务结束之前，属性 ModelElement.IsDeleting 为 true。|
     |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|执行时已删除的元素或链接。 所有其他规则具有执行，包括 DeletingRules 后执行规则。 ModelElement.IsDeleting 为 false，并且 ModelElement.IsDeleted 为 true。 若要允许后续撤消，元素不实际从内存中删除，但从 Store.ElementDirectory 中删除。|
     |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|元素从一个存储区分区移动到另一个。<br /><br /> （请注意这不相关的图形的位置确定的一种形状。）|

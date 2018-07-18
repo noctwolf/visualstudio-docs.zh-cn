@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127743"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>添加到目录添加新项对话框
 下面的代码示例演示如何注册一组新的目录**添加新项**对话框。 目录**添加新项**对话框中是不同的每个项目。 因此，在中找到的项目子项下注册目录\<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  

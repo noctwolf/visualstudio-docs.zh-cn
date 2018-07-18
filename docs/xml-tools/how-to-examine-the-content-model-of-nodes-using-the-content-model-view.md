@@ -15,6 +15,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548591"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>如何： 检查节点上使用内容模型视图的内容模型
 

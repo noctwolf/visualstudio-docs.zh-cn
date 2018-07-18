@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134491"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何： 更新状态栏
 **状态栏**控件条位于包含一个或多个状态文本行或指示器的许多应用程序窗口底部。  

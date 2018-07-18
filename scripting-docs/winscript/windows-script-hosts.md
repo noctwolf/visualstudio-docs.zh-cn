@@ -1,16 +1,16 @@
 ---
-title: "Windows 脚本宿主 | Microsoft Docs"
-ms.custom: 
+title: Windows 脚本宿主 | Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24571687"
 ---
 # <a name="windows-script-hosts"></a>Windows 脚本宿主
 实现 Microsoft Windows 脚本宿主时，只要宿主执行以下操作，即可以大胆地假定脚本引擎只在基础线程的上下文中调用 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口：  

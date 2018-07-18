@@ -22,6 +22,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132990"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何： 注册与对象管理器的库
 符号浏览工具，如**类视图**，**对象浏览器**，**调用浏览器**和**查找符号结果**，使您能够查看项目中或在外部组件中的符号。 符号包括命名空间、 类、 接口、 方法和其他语言元素。 库跟踪这些符号和公开到[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]填充的数据的工具的对象管理器。  

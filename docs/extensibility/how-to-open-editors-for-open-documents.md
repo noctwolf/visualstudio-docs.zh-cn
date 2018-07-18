@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129800"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 打开编辑器的打开的文档
 项目将打开一个文档窗口之前，该项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 文件可以在项目特定编辑器中，或者打开或使用标准编辑器之一注册[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31967880"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器向计数器集中添加计数器
 

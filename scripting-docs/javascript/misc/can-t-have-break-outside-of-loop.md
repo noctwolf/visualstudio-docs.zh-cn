@@ -1,13 +1,13 @@
 ---
-title: "可以 &#39; t 具有 &#39; 中断 &#39;位于循环外 |Microsoft 文档"
-ms.custom: 
+title: 可以 &#39; t 具有 &#39; 中断 &#39;位于循环外 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1019
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633147"
 ---
 # <a name="can39t-have-39break39-outside-of-loop"></a>可以 &#39; t 具有 &#39; 中断 &#39;位于循环外
 你尝试使用**中断**位于循环外的关键字。 **中断**关键字用于终止循环或`switch`语句。 它必须嵌入在正文中的循环或`switch`语句。 但是，**标签**可以按照 break 关键字。  

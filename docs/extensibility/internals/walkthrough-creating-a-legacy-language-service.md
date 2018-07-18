@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31144929"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练： 创建旧语言服务
 使用托管的包框架 (MPF) 语言类来实现中的语言服务[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]非常简单。 你需要 VSPackage 来承载该语言服务、 语言服务本身和你的语言的分析器。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/16/2018
   
 1.  在**解决方案资源管理器**，右键单击 MyLanguagePackage 项目，选择**添加**，**引用**，然后选择**添加新引用**按钮。  
   
-2.  在**添加引用**对话框中，选择**Microsoft.VisualStudio.Package.LanguageService**中**.NET**选项卡，单击**确定**。  
+2.  在**添加引用**对话框中，选择**Microsoft.VisualStudio.Package.LanguageService**中 **.NET**选项卡，单击**确定**。  
   
      这需要进行一次语言包项目。  
   

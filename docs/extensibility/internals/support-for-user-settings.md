@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31134082"
 ---
 # <a name="support-for-user-settings"></a>对用户设置的支持
 VSPackage 可以定义一个或多个设置类别，是一组时用户选择持久保存的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此暂留，你使用设置 Api 中[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  

@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148361"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
@@ -304,13 +305,13 @@ ms.lasthandoff: 04/16/2018
  大多数情况下，在对话框的标题栏中的帮助 [？] 按钮已被否决。 UI 主题不再是我们的文档模型中的一部分，因此有可能不是相关的主题，以将链接到。 从根本上来说，标题栏按钮已作为 F1 帮助，相同的操作，并且不再要求对话框中。 在某些情况下，这仍可作为指示器具有概念或过程的详细信息可用，尽管在较新的 UI 中更常用于超链接。  
   
 ##### <a name="dialogs-created-through-the-environment"></a>通过环境创建的对话框  
- 许多 shell 对话框创建通过**VBDialogBoxParam**函数。 此共享的函数进行更新，以帮助移动**帮助**从到对话框的按钮**？** 按钮时保留一个体系结构，可向后兼容并可扩展。  
+ 许多 shell 对话框创建通过**VBDialogBoxParam**函数。 此共享的函数进行更新，以帮助移动**帮助**从到对话框的按钮 **？** 按钮时保留一个体系结构，可向后兼容并可扩展。  
   
- 具体而言， **VBDialogBoxParam**函数检查其 id 的按钮的对话框模板**IDHELP** (9) 或标签是**帮助**或**（& a) 帮助**. 如果找到一个帮助按钮，则其处于隐藏状态和**WS_EX_CONTEXTHELP**样式添加到对话框中，然后放置**？** 在对话框的标题栏中的按钮。  
+ 具体而言， **VBDialogBoxParam**函数检查其 id 的按钮的对话框模板**IDHELP** (9) 或标签是**帮助**或 **（& a) 帮助**. 如果找到一个帮助按钮，则其处于隐藏状态和**WS_EX_CONTEXTHELP**样式添加到对话框中，然后放置 **？** 在对话框的标题栏中的按钮。  
   
- 创建对话框时，它将推送到堆栈对话框 proc 并使用名为预处理对话框 proc 调用对话框**DialogPreProc**。 当**？** 单击按钮时，将发送**WM_SYSCOMMAND**的**SC_CONTEXTHELP**到了对话框。 **DialogPreProc**捕获此命令并将其到更改**WM_HELP**消息，传递到原始对话框处理器。  
+ 创建对话框时，它将推送到堆栈对话框 proc 并使用名为预处理对话框 proc 调用对话框**DialogPreProc**。 当 **？** 单击按钮时，将发送**WM_SYSCOMMAND**的**SC_CONTEXTHELP**到了对话框。 **DialogPreProc**捕获此命令并将其到更改**WM_HELP**消息，传递到原始对话框处理器。  
   
- 大多数环境创建对话框必须在对话框上的帮助按钮。 帮助按钮显示对话框时，是自动隐藏，只有在**？** 按钮正常工作。 如果**？** 按钮会删除或在 Windows 中更改，此解决方案可以快速将移回原始的帮助按钮。  
+ 大多数环境创建对话框必须在对话框上的帮助按钮。 帮助按钮显示对话框时，是自动隐藏，只有在 **？** 按钮正常工作。 如果 **？** 按钮会删除或在 Windows 中更改，此解决方案可以快速将移回原始的帮助按钮。  
   
  此解决方案使可能会导致 bug 的四个假设：  
   

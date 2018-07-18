@@ -11,16 +11,17 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc3f85e776fa7ec45bd157a9cffe99f6ac0b1aac
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: fd9703e6d18f075cb1033a03552caa7708b719b7
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34751383"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
 > [!Note]
-> 目前仅在 Visual Studio for Windows 中提供 Python 支持；在 Mac 和 Linux 上，可通过 Visual Studio Code 获取 Python 支持。 请参阅[问题和解答](overview-of-python-tools-for-visual-studio.md#questions-and-answers)。
+> 目前仅在 Visual Studio for Windows 中提供 Python 支持；在 Mac 和 Linux 上，可通过 [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial) 获取 Python 支持。
 
 1. 下载并运行适用于 Windows 的最新 Visual Studio 2017 安装程序（版本 15.2 及更高版本提供 Python 支持）。 如果已安装 Visual Studio，请运行 Visual Studio 安装程序，并转到步骤 2。
 

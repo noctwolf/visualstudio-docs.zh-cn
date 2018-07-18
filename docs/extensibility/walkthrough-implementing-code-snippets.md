@@ -16,6 +16,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31148683"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>演练： 实现代码段
 可以创建代码段，并将其包含的编辑器扩展中，以便扩展的用户可以将它们添加到其自己的代码。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
      **%InstallDir%\TestSnippets\Snippets\1033\\**  
   
-     其中*%installdir%*是 Visual Studio 安装文件夹。 （尽管此路径通常用于安装代码段，但你可以指定任意路径）。  
+     其中 *%installdir%* 是 Visual Studio 安装文件夹。 （尽管此路径通常用于安装代码段，但你可以指定任意路径）。  
   
 2.  在 \1033\ 文件夹中，创建一个.xml 文件，并将其命名**TestSnippets.xml**。 （此名称通常用于代码段索引文件，尽管你可以指定任何名称，只要它具有.xml 作为文件扩展名。）添加以下文本，然后删除占位符 GUID 并添加您自己。  
   

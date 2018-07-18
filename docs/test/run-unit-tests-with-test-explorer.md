@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1c3cf206b952ebf8879045bcdc2881c2d2f4cc0c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34752061"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -29,13 +30,13 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 在生成测试项目时，测试将出现在测试资源管理器中。 如果测试资源管理器不可见，请选择 Visual Studio 菜单上的“测试”  ，然后依次选择“Windows” 、“测试资源管理器” 。
 
-![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 
-当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”**、 **“通过的测试”**、 **“跳过的测试”** 和 **“未运行的测试”**默认组中显示结果。 你可以更改测试资源管理器对测试进行分组的方式。
+当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”**、 **“通过的测试”**、 **“跳过的测试”** 和 **“未运行的测试”** 默认组中显示结果。 你可以更改测试资源管理器对测试进行分组的方式。
 
 你可以从测试资源管理器的工具栏执行查找、组织和运行测试等大部分工作。
 
-![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png "UTE_ToolBar")
+![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
 ### <a name="run-tests"></a>运行测试
 
@@ -47,7 +48,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 - 选择你希望运行的各个测试，打开选定测试的上下文菜单，然后选择 **“运行选定的测试”**。
 
-- 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+- 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 测试运行时，测试资源管理器窗口顶部的“通过/失败”条动态显示。 测试运行结束时，如果所有测试均通过，则“通过/失败”条将变为绿色；如果有测试失败，则变为红色。
 
@@ -59,13 +60,13 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ## <a name="view-test-results"></a>查看测试结果
 
-当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”**、 **“通过的测试”**、 **“跳过的测试”** 和 **“未运行的测试”**组中显示结果。 测试运行的摘要显示在测试资源管理器底部的细节窗格中。
+当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”**、 **“通过的测试”**、 **“跳过的测试”** 和 **“未运行的测试”** 组中显示结果。 测试运行的摘要显示在测试资源管理器底部的细节窗格中。
 
 ### <a name="view-test-details"></a>查看测试详细信息
 
 若要查看单个测试的详细信息，请选择该测试。
 
-![测试执行详细信息](../test/media/ute_testdetails.png "UTE_TestDetails")
+![测试执行详细信息](../test/media/ute_testdetails.png)
 
 测试细节窗格中显示以下信息：
 
@@ -91,15 +92,15 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="group-tests-in-the-test-list"></a>在测试列表中的测试进行分组
 
- 若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn") 旁边的向下箭头和新分组条件。
+ 若要更改测试的组织方式，请依次选择“分组依据”按钮 ![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png) 旁边的向下箭头和新分组条件。
 
- ![在测试资源管理器中按类别对测试进行分组](../test/media/ute_groupbycategory.png "UTE_GroupByCategory")
+ ![在测试资源管理器中按类别对测试分组](../test/media/ute_groupbycategory.png)
 
 ### <a name="test-explorer-groups"></a>测试资源管理器组
 
 |Group|描述|
 |-----------|-----------------|
-|**持续时间**|按执行时间对测试进行分组： **“快速”**、 **“中速”**和 **“慢速”**。|
+|**持续时间**|按执行时间对测试进行分组： **“快速”**、 **“中速”** 和 **“慢速”**。|
 |**结果**|按执行结果对测试进行分组： **“失败的测试”**、 **“跳过的测试”**、 **“通过的测试”**。|
 |**特征**|按你定义的类别/值对对测试进行分组。 用于指定特征类别和值的语法由单元测试框架定义。|
 |**Project**|按项目名称对测试进行分组。|
@@ -135,7 +136,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 3. 在引号中输入筛选值。
 
-![在测试资源管理器中筛选测试](../test/media/ute_filtertestlist.png "UTE_FilterTestList")
+![在测试资源管理器中筛选测试](../test/media/ute_filtertestlist.png)
 
 > [!NOTE]
 > 搜索不区分大小，并将指定字符串与条件值的任何部分匹配。
@@ -162,7 +163,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  你可以创建和保存想要作为组运行或查看的测试列表。 当你选择播放列表时，列表中的测试将显示在“测试资源管理器”中。 你可以将一个测试添加到多个播放列表，并且当你选择默认的 **“所有测试”** 播放列表时，项目中的所有测试都可用。
 
- ![选择播放列表](../test/media/ute_playlist.png "UTE_Playlist")
+ ![选择播放列表](../test/media/ute_playlist.png)
 
  **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，依次选择 **“添加到播放列表”**、 **“新建播放列表”**。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
 
@@ -170,7 +171,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
  **若要打开播放列表**，请从 Visual Studio 菜单中选择“测试播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
 
- 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。
+ 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
 ## <a name="debug-and-analyze-unit-tests"></a>调试并分析单元测试
 

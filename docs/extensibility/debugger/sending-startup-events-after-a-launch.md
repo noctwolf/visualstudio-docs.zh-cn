@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135749"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>在启动之后发送启动事件
 一旦的调试引擎 (DE) 附加到程序时，会将一系列启动事件发送回调试会话。  

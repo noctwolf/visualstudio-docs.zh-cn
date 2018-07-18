@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129036"
 ---
 # <a name="document-windows"></a>文档窗口
 在 Visual Studio 中，*文档窗口*是与多文档界面 (MDI) 窗口相关联的组帧的子窗口。 文档窗口通常用于显示和修改的源代码或文本，但它们也可以承载其他功能的类型。 文档窗口：  

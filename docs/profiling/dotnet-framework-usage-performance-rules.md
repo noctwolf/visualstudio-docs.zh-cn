@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ddfe3d7bdc4cb274a7b70dca48e45794d5f1cac
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1903b61fce39bdd68b471472530857d720bac906
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766017"
 ---
-# <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用性能规则
+# <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用情况性能规则
 .Net Framework 使用类别中的性能规则标识可以优化的特定方法，并且还标识可调查性能问题的更为通用的使用模式，例如垃圾回收和锁争用。  
   
 |||  
@@ -33,6 +34,6 @@ ms.lasthandoff: 04/19/2018
 |[DA0021：第 1 代垃圾回收的速率很高](../profiling/da0021-high-rate-of-gen-1-garbage-collections.md)|第 1 代垃圾回收期间回收相对大量的 .NET 内存对象。 如果过多生存期较短的对象在第 0 代回收后仍然存在，那么内存管理的成本将很容易变得过高。|  
 |[DA0022：第 2 代垃圾回收的速率很高](../profiling/da0022-high-rate-of-gen-2-garbage-collections.md)|第 2 代垃圾回收期间回收大量的 .NET 内存对象。 如果过多生存期较短的对象在第 1 代回收后仍然存在，那么内存管理的成本将很容易变得过高。 锁争用率超过 DA0005 规则的阈值上限值时将触发此规则。|  
 |[DA0023：GC 占用的 CPU 时间很多](../profiling/da0023-high-gc-cpu-time.md)|分析期间收集的系统性能数据表明：垃圾回收所用的时间明显超过应用程序总处理时间。|  
-|[DA0024：GC 占用的 CPU 时间过多](../profiling/da0024-excessive-gc-cpu-time.md)|分析期间收集的系统性能数据表明：垃圾回收所用的时间明显超过应用程序总处理时间。 垃圾回收中花费的时间超过 DA0023 规则的阈值上限值时，将触发此规则。|  
+|[DA0024：垃圾回收占用的 CPU 时间过多](../profiling/da0024-excessive-gc-cpu-time.md)|分析期间收集的系统性能数据表明：垃圾回收所用的时间明显超过应用程序总处理时间。 垃圾回收中花费的时间超过 DA0023 规则的阈值上限值时，将触发此规则。|  
 |[DA0038：锁争用率很高](../profiling/da0038-high-rate-of-lock-contentions.md)|与分析数据一起收集的系统性能数据表示：应用程序执行期间的锁争用率非常高。 请再次考虑使用并发分析进行分析，以找出争用的起因。|  
 |[DA0039：锁争用率非常高](../profiling/da0039-very-high-rate-of-lock-contentions.md)|与分析数据一起收集的系统性能数据表示：应用程序执行期间的锁争用率过高。 请再次考虑使用并发分析进行分析，以找出争用的起因。 锁争用率高于 DA0038 规则的阈值上限值时将触发此规则。|

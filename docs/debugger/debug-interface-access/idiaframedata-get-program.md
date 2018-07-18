@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31459592"
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 检索用于计算的寄存器集之前对当前函数的调用的程序字符串。  

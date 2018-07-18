@@ -1,25 +1,28 @@
 ---
-title: "Visual Studio 订阅"
+title: Visual Studio 订阅
 Author: evanwindom
-Ms.author: jaunger
-Manager: evelynp
+Ms.author: tglee
+Manager: lank
 layout: LandingPage
-Ms.date: 02/26/2018
+Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Welcome to Visual Studio Subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: a2d1d0bc8f443953477a4178780621d16fd7aa39
-ms.sourcegitcommit: 39c525ec200c6c4ea94815567b3fad7ab14fb7b3
+ms.openlocfilehash: 125f1fe960618648a9a04c5bd787523b86d9260f
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36946921"
 ---
 # <a name="visual-studio-subscriptions"></a>Visual Studio 订阅
+
 Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  订阅的权益包括可以获得开发和测试所需的开发人员工具、云服务和软件、培训及支持。
 
-##  <a name="get-started"></a>开始操作
+## <a name="get-started"></a>开始操作
+
 管理员登录到 [https://manage.visualstudio.com](https://manage.visualstudio.com)，将订阅分配给团队。<br>
 订阅者登录到 [https://my.visualstudio.com](https://my.visualstudio.com)，访问订阅权益。
 
@@ -136,6 +139,12 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
 
 ---
 
+## <a name="whats-new"></a>新增功能
+
+为了让你的订阅更有用，我们经常添加和更新订阅权益。 若要了解详细信息，请参阅[订阅中的新增权益](whats-new-in-subscriptions.md)页。
+
+---
+
 <h2>优点</h2>
 <ul class="cardsD cols cols3">
     <li>
@@ -148,7 +157,6 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio for Mac</li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li>Team Foundation Server 和 TFS CAL</li>
                         </ul>                        
                     </div>
@@ -165,8 +173,8 @@ Visual Studio 订阅提供全面的资源集合，便于你在首选平台和设
                         <p>通过 Visual Studio 订阅，可以获取月度 Azure 抵用额度和免费访问 Azure 服务的权限、开发和测试费用折扣，以及专门为订户提供的图片库和预配置虚拟机的访问权限。 具体取决于你的订阅，云服务可能包括：</p>
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-azure">Azure</a></li>
-                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-visual-studio-app-center">Visual Studio App Center</a></li>
+                            <li><a href="/visualstudio/subscriptions/vs-vsts">Visual Studio Team Services</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-office-dev">Office 365 开发人员订阅</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-pbi">Windows 开发人员帐户</a></li>
                             <li>PowerBI Pro</li>

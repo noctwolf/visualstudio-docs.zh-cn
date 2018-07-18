@@ -18,11 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3295a5aee03badc52b980183e88f484e0d4bcc3a
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 31c76ba53e858d9eab41d6579950f47b16f8c9b8
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "37056350"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 05/04/2018
   
 |参数|描述|
 |---------------|-----------------|
-|`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。|
+|`Namespaces`|可选 `String` 参数。<br /><br /> 指定 XPath 查询前缀的命名空间。 `Namespaces` 是 XML 代码片段，由 `Namespace` 元素组成，包含 `Prefix` 和 `Uri` 属性。 属性 `Prefix` 指定与 `Uri` 属性中指定的命名空间关联的前缀。 不要使用空的 `Prefix`。|
 |`Query`|可选 `String` 参数。<br /><br /> 指定 XPath 查询。|
 |`Value`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要插入到指定路径的值。|
 |`XmlInputPath`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定 XML 输入为文件路径。|
@@ -42,6 +43,43 @@ ms.lasthandoff: 05/04/2018
 ## <a name="remarks"></a>备注
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。
+
+## <a name="example"></a>示例
+
+下面是一个要修改的 sample.xml：
+
+```
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" >
+<Identity Name="Sample.Product " Publisher="CN=1234" Version="1.0.0.0" />
+<mp:PhoneIdentity PhoneProductId="456" PhonePublisherId="0" />
+</Package>
+```
+
+在此示例中，如果要修改 `/Package/mp:PhoneIdentity/PhonePublisherId`，请使用
+
+```
+<Project>
+  <PropertyGroup>
+    <Namespace>
+        <Namespace Prefix="dn" Uri="http://schemas.microsoft.com/appx/manifest/foundation/windows10" />
+        <Namespace Prefix="mp" Uri="http://schemas.microsoft.com/appx/2014/phone/manifest" />
+        <Namespace Prefix="uap" Uri="http://schemas.microsoft.com/appx/manifest/uap/windows10" />
+    </Namespace>
+</PropertyGroup>
+
+<Target Name="Poke">
+  <XmlPoke
+    XmlInputPath="Sample.xml"
+    Value="MyId"
+    Query="/dn:Package/mp:PhoneIdentity/@PhoneProductId"
+    Namespaces="$(Namespace)"/>
+</Target>
+</Project>
+```
+
+此处，`dn` 用作默认命名空间的假命名空间前缀。
 
 ## <a name="see-also"></a>请参阅
 

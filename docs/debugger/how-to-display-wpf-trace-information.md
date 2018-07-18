@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31476219"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>如何：显示 WPF 跟踪信息
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 可以接收来自 WPF 应用程序的调试跟踪信息以及显示在该信息**输出**窗口。 若要显示调试跟踪信息，必须启用 WPF 跟踪。  

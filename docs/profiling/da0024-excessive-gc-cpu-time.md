@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e16c273dee14e45e1fc4dc3bb69b27236a6802f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9abd80ff9d29c558f50eef0f80ad46e868180596
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34766111"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：垃圾回收占用的 CPU 时间过多
 |||  

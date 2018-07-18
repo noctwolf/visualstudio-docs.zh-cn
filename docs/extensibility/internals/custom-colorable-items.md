@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133363"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 你可以重写类型的列表着色，如关键字和注释，通过实现自定义可着色项作为语言服务的一部分。  

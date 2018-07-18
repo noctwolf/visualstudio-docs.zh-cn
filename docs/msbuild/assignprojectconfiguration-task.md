@@ -20,6 +20,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31567611"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 任务
 此任务接受列表配置字符串，并将其分配给指定的项目。  

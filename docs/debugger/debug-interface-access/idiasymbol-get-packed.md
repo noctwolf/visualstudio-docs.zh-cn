@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31479508"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 检索用于指定是否已打包的用户定义数据类型 (UDT) 的标志。  

@@ -30,6 +30,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31894343"
 ---
 # <a name="annotating-structs-and-classes"></a>批注结构和类
 还可以通过使用批注，即可充当固定协定批注结构和类成员，它们将假定应满足的任何函数调用或函数入口/出口涉及该封闭结构作为参数或结果值。

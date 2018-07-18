@@ -1,13 +1,13 @@
 ---
-title: "预期 &#39;{&#39; |Microsoft 文档"
-ms.custom: 
+title: 预期 &#39;{&#39; |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1008
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: ffdb55c0-e361-4bcd-b1a6-6158e7d9b557
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632767"
 ---
 # <a name="expected-3939"></a>预期 &#39;{&#39;
 不包含标记的函数体开始的左大括号。 代码，即使它是单行，后者构成函数的正文必须包含在向左和右大括号。 请注意，函数体中的大括号的使用是比在循环中更严格。  

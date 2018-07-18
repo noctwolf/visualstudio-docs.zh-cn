@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135528"
 ---
 # <a name="extending-user-settings-and-options"></a>扩展的用户设置和选项
 在 Visual Studio 中，有两种主要方法来保留用户首选项。 **工具 / 选项**页允许用户为许多不同类型的设置，常规和特定于语言的设置其自己的值。 用户设置允许用户指定常规 Visual Studio 配置属性。 有关选项页的详细信息，请参阅[选项和选项页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置的详细信息，请参阅[对用户设置的支持](../extensibility/internals/support-for-user-settings.md)。  

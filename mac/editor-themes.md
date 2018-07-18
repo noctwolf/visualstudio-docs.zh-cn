@@ -10,6 +10,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33865014"
 ---
 # <a name="editor-themes"></a>编辑器主题
 可通过“Visual Studio”>“首选项...”>“文本编辑器”>“颜色主题”菜单选项，将编辑器主题更改为 Visual Studio for Mac 中默认提供的 10 种颜色主题之一：

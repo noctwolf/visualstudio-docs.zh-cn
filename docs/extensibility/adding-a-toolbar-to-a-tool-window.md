@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100736"
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。  

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31564501"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
 本主题列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供解决每个问题的步骤。  

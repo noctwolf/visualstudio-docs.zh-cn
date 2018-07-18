@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31133565"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**中的窗口[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示项目和配置属性。 可以为你自己的项目类型提供属性页，以便用户可以设置你的应用程序的属性。  

@@ -9,11 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3904dfd4a8217a800fb1decf55386142096a2a9a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70e120d0f33e89d914e50cea48aea5944612846f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747503"
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 04/26/2018
 
    此时会打开 **“添加新项目”** 对话框。
 
-1. 在左侧窗格中，展开“Visual C#”，然后选择“Windows 经典桌面”。 然后在中间窗格中，选择“空项目(.NET Framework)”。 将项目命名为“QuickDate”，然后选择“确定”按钮。
+1. 在左侧窗格中，展开“Visual C#”，然后选择“Windows 桌面”。 然后在中间窗格中，选择“空项目(.NET Framework)”。 将项目命名为“QuickDate”，然后选择“确定”按钮。
 
    随后名为“QuickDate”的项目出现在“解决方案资源管理器”中的解决方案下。 目前它包含一个名为“App.config”的文件。
 

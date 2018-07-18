@@ -17,6 +17,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31977759"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 

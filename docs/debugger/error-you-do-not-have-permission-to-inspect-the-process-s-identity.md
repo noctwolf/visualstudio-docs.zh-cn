@@ -19,6 +19,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31472010"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误： 您没有检查进程权限&#39;s 标识
 您没有检查进程标识的权限。 这可能是您系统的配置造成的。  

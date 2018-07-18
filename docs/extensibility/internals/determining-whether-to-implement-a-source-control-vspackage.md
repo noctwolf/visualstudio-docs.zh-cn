@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31128866"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>确定是否实现源控件 VSPackage
 本部分用于扩展源代码管理解决方案，并提供有关选择合适的集成路径的综合性准则为基础进行阐述的源控件插件和源代码管理 Vspackage 的选择。  

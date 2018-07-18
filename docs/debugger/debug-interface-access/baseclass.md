@@ -21,6 +21,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31465416"
 ---
 # <a name="baseclass"></a>BaseClass
 用户定义类型 (UDT) 符号每个基类由具有的子项`SymTagBaseClass`标记。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)属性为基础的 UDT，包含符号和用户定义的基础类型的所有属性都都可以作为此 BaseClass 符号的一部分。  

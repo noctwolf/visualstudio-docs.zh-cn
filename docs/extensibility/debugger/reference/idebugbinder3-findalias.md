@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102117"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 此方法查找别名，指定一个名称。 这将在程序中搜索所有别名。  

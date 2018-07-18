@@ -1,11 +1,11 @@
 ---
-title: "ICanHandleException::CanHandleException |Microsoft 文档"
-ms.custom: 
+title: ICanHandleException::CanHandleException |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ICanHandleException.CanHandleException
@@ -14,7 +14,7 @@ apilocation:
 helpviewer_keywords:
 - ICanHandleException::CanHandleException
 ms.assetid: 0fc703bf-9518-487e-af20-00e073b640f1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -23,6 +23,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24725267"
 ---
 # <a name="icanhandleexceptioncanhandleexception"></a>ICanHandleException::CanHandleException
 确定脚本引擎的调用方可以处理指定的异常。  

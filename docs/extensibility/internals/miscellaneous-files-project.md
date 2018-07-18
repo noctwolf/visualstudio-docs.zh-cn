@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129972"
 ---
 # <a name="miscellaneous-files-project"></a>杂项文件项目
 当用户打开项目项时，IDE 将分配给杂项文件项目不是解决方案中的任何项目的成员的任何项。  

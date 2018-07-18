@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 502fe56f04fe933e51e9afa5376a35a53445c099
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6b076023f725ac037ae5863bc8955e6952285ac
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34764902"
 ---
-# <a name="creating-basic-profiling-reports-from-the-command-line"></a>从命令行创建基本分析报告
-本主题介绍从 .vsp 或 .vsps 分析数据文件生成逗号分隔值 (.csv) 报告的基本 VSPerfReport 命令。 有关所有报告选项的介绍，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
+# <a name="create-basic-profiling-reports-from-the-command-line"></a>从命令行创建基本分析报告
+本文介绍从 .vsp 或 .vsps 分析数据文件生成逗号分隔值 (.csv) 报告的基本 VSPerfReport 命令。 有关所有报告选项的介绍，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。  
   
-## <a name="report-commands"></a>报表命令  
+## <a name="report-commands"></a>报告命令  
  使用以下命令之一可为指定的分析数据文件创建报告。  
   
  **VSPerfReport** `VSPFile` **/Summary:All**  

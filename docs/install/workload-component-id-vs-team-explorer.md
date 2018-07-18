@@ -22,6 +22,7 @@ ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33875437"
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio 团队资源管理器 2017 组件目录
 
@@ -40,9 +41,9 @@ ms.lasthandoff: 05/07/2018
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2017"></a>Visual Studio 核心编辑器（随附于 Visual Studio 团队资源管理器 2017）
 
-**ID：**Microsoft.VisualStudio.Workload.CoreEditor
+**ID：** Microsoft.VisualStudio.Workload.CoreEditor
 
-**说明：**Visual Studio 核心 shell 体验，包括语法感知代码编辑、源代码管理和工作项管理。
+**说明：** Visual Studio 核心 shell 体验，包括语法感知代码编辑、源代码管理和工作项管理。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

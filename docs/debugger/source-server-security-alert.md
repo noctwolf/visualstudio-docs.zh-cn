@@ -22,6 +22,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474120"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 使用源服务器时，只能使用来自已知和受信任位置的符号文件。  

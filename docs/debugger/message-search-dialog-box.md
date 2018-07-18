@@ -17,6 +17,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31481796"
 ---
 # <a name="message-search-dialog-box"></a>“消息搜索”对话框
 使用此对话框来查找和选择的节点中的某个特定消息[消息视图](../debugger/messages-view.md)。 若要显示此对话框中，将焦点移到消息视图窗口中。 然后选择**查找消息**从**搜索**菜单。  

@@ -19,6 +19,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31584134"
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 “资源争用”视图列出作为争用事件源的资源的争用数据。 如果由于另一个线程中的函数已获取对资源的独占访问权限，因此线程中的函数被迫等待获取对资源的访问权限，则会发生争用事件。 每个资源都是显示争用事件中产生的函数执行路径的调用树的根节点。  

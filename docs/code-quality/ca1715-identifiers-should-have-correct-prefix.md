@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31916020"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715：标识符应具有正确的前缀
 |||

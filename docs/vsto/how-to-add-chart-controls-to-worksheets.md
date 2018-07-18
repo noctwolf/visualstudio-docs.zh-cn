@@ -21,6 +21,7 @@ ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/25/2018
+ms.locfileid: "34548731"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何： 向工作表添加图表控件
   你可以添加<xref:Microsoft.Office.Tools.Excel.Chart>到 Microsoft Office Excel 工作表在设计时和运行时在文档级自定义项上的控件。 你还可以添加<xref:Microsoft.Office.Tools.Excel.Chart>运行时在 VSTO 外接程序上的控件。  

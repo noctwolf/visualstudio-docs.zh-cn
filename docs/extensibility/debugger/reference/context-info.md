@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31100427"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 此结构描述内存上下文或代码上下文。  
@@ -52,7 +53,7 @@ public struct CONTEXT_INFO {
   
 ## <a name="members"></a>成员  
  dwFields  
- 从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填出**。**  
+ 从他的标志的组合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)枚举，用于指定哪些字段填出 **。**  
   
  bstrModuleUrl  
  上下文所在模块的名称。  

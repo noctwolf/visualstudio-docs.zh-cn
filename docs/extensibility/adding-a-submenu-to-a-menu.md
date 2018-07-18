@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31102416"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单
 本演练基于中演示[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过显示如何将添加到子菜单**TestMenu**菜单。  

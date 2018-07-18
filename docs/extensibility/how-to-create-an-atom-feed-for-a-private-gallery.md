@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127472"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送为专用库
 你可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  

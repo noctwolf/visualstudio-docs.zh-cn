@@ -10,23 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70ecd6517878800a6ad43221556c367137a64a71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bb48c27ab305908ddbf68334fd818bb9c07cfd1e
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34748795"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
 如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
   
-有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[使用或不使用调试器运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
-在这里，我们将向你演示如何使用发行版本收集和分析 CPU 使用率。 若要在调试时分析 CPU 使用率，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。 
+在这里，我们将向你演示如何使用发行版本收集和分析 CPU 使用率。 若要在调试时分析 CPU 使用情况，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。 
 
 > [!NOTE]
 > 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量数据  
+##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量数据  
   
 1.  在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
   
@@ -93,7 +94,7 @@ ms.lasthandoff: 05/17/2018
 |**总 CPU (%)**|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 所选时间范围内应用的 CPU 活动百分比（函数调用和函数调用的函数使用的）。 请注意，这不同于“CPU 利用率”  时间线图，后者是将时间范围内的应用总活动量与可用的 CPU 总容量相比较。|  
 |**自测 CPU (%)**|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 所选时间范围内应用的 CPU 活动百分比（函数调用使用，不包括函数调用的函数活动）。|  
 |**总 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用函数所耗用的毫秒数。|  
-|**自 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用函数所耗用的毫秒数。|  
+|**自 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用的函数所耗用的毫秒数，不包括该函数调用的函数的活动。|  
 |**模块**|包含函数的模块的名称或包含 [外部代码] 节点中的函数的模块数。|  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数  

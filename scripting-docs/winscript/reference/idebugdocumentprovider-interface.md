@@ -1,16 +1,16 @@
 ---
-title: "IDebugDocumentProvider 接口 |Microsoft 文档"
-ms.custom: 
+title: IDebugDocumentProvider 接口 |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDebugDocumentProvider interface
 ms.assetid: 36510acf-1ef9-479c-a430-d3f09502f82c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -19,6 +19,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24726247"
 ---
 # <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider 接口
 提供了一种用于实例化上请求的文档。  

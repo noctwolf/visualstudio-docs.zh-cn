@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31140990"
 ---
 # <a name="web-project-essentials"></a>Web 项目 Essentials
 Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用程序有智能 Web 页。 智能网页上的呈现按需 Web 页面的服务器端代码。  
@@ -34,7 +35,7 @@ Web 项目创建 Web 应用程序。 可以使用 Web 项目创建的 Web 应用
   
     -   Web 应用程序项目 (WAP) 生成合并所有智能 Web 页面，以及 /App_Code 文件夹中的所有源文件的代码的单个可执行文件。  
   
--   Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件均位于 \Documents and 设置\\*你的帐户*\My Documents\\*\<Visual Studio # # # >*\Projects\\ *YourWebSite*。  
+-   Web 项目的解决方案文件位于独立于该网站本身。 默认情况下，解决方案文件均位于 \Documents and 设置\\*你的帐户*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*。  
   
     > [!NOTE]
     >  如果你想要保留与网站的解决方案文件，只需将其移存在并重新打开它。  

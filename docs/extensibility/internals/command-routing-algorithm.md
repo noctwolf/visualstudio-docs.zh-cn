@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31131484"
 ---
 # <a name="command-routing-algorithm"></a>命令路由算法
 在 Visual Studio 中的许多不同组件的处理命令。 命令将从最内部的上下文，基于当前所选内容，路由到最外层的 （也称为全局） 上下文。 有关详细信息，请参阅[可用性](../../extensibility/internals/command-availability.md)。  

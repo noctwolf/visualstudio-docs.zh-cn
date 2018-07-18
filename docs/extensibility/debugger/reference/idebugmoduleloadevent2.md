@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31115757"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 加载或卸载模块时，此接口是由的调试引擎 (DE) 发送到会话调试管理器 (SDM) 中。  

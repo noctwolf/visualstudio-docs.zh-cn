@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31129917"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 显示为项目*层次结构*。 在 IDE 中，层次结构是的节点，其中每个节点具有一组关联的属性的树。 A*项目层次结构*是保存项目的项、 的项的关系和项目的关联的属性和命令的容器。  

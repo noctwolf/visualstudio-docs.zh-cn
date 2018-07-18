@@ -21,6 +21,7 @@ ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/22/2018
+ms.locfileid: "34447812"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：

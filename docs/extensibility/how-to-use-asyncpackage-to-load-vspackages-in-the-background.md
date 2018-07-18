@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135376"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 加载在后台的 Vspackage
 加载和初始化 VS 包可以导致磁盘 I/O。 如果此类 I/O 在 UI 线程上发生，它会导致响应能力问题。 为了解决此问题，Visual Studio 2015 引入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>启用后台线程上的包加载的类。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/16/2018
   
     ```  
   
-4.  如果你有异步初始化工作要做，则应重写<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 删除**initialize （)** VSIX 模板提供的方法。 ( **Initialize （)**中的方法**AsyncPackage**都密封的)。 你可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法将异步服务添加到你的包。  
+4.  如果你有异步初始化工作要做，则应重写<xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>。 删除**initialize （)** VSIX 模板提供的方法。 ( **Initialize （)** 中的方法**AsyncPackage**都密封的)。 你可以使用任一<xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A>方法将异步服务添加到你的包。  
   
      注意： 若要调用**基。InitializeAsync()**，你可以更改到你的源代码：  
   

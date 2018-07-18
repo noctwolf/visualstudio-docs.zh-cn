@@ -1,13 +1,13 @@
 ---
-title: "字符范围无效设置 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 字符范围无效设置 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5021
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
-caps.latest.revision: 
+caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24632997"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>字符集范围无效 (JavaScript)
 你试图使用无效的字符设置的范围创建正则表达式。 字符集的范围必须在单个字符，如 a 到 z 或 0-9;不能在字符集包括如 \w 字符类。 范围中的第一个字符还必须早于范围中的第二个字符。 例如：  

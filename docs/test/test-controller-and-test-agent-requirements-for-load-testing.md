@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31974853"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的需求
 

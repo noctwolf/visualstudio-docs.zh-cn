@@ -21,11 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a143502c875acabca7b36bdd3070e5a441b842bd
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: b32fc71efadbf319f3d713c3eaf4d86f382646a5
+ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34476828"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 04/20/2018
 
 1. 关闭 Visual Studio 安装程序。
 2. 打开管理员命令提示符。 要打开管理员命令提示符，请执行以下步骤：
-   * 在“开始”菜单上，单击“运行”（“开始”键 + R）。
+   * 单击“开始”菜单
    * 键入“cmd”。
    * 右键单击“命令提示符” ，然后单击“以管理员身份运行” 。
 3. 键入 `InstallCleanup.exe` 实用工具的完整路径，并传递所需的任何命令行开关。 默认情况下，此实用工具的路径如下所示：

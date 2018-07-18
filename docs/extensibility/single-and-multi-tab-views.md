@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31142968"
 ---
 # <a name="single-and-multi-tab-views"></a>单个和多选项卡的视图
 编辑器可以创建不同类型的视图。 另一种是窗体设计器，一个示例是一个代码编辑器窗口。  

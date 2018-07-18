@@ -14,6 +14,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31953592"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许一个程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但未更改。 无法使用此只读选项，例如，以便用户可以要求同事添加批注并查看 DSL 模型，但可以更改原始禁止它们。

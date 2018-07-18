@@ -23,6 +23,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31474019"
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 某些项目设置也对调试产生影响。 这些设置确定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。  

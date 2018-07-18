@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31114977"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 表示一个基元类型枚举值从[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口。  

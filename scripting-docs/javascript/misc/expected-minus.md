@@ -1,13 +1,13 @@
 ---
-title: "预期 &#39;-&#39; |Microsoft 文档"
-ms.custom: 
+title: 预期 &#39;-&#39; |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1012
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
-caps.latest.revision: 
+caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633427"
 ---
 # <a name="expected-39-39"></a>预期 &#39;-&#39;
 你试图创建正则表达式文本，但不是包括一个斜杠 （/）。 就像作为一对引号内的字符写入字符串文本，正则表达式文本表示为一对大斜杠 （/） 字符之间的字符。  

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31126853"
 ---
 # <a name="defaultname-element-visual-studio-templates"></a>DefaultName 元素（Visual Studio 模板）
 创建时指定 Visual Studio 项目系统将生成的项目或项目的名称。  

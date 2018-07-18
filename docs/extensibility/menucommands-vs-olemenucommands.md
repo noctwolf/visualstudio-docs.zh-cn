@@ -15,6 +15,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31147185"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands 与OleMenuCommands
 你可以通过从 <xref:System.ComponentModel.Design.MenuCommand> 或从 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 对象派生来创建菜单命令，并且实现相应的事件处理程序。 在大多数情况下可以使用 <xref:System.ComponentModel.Design.MenuCommand>，就和 VSPackage 项目模板工作方式一样，但有时你可能需要使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>。  

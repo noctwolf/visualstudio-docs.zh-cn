@@ -18,6 +18,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31132451"
 ---
 # <a name="how-to-get-a-service"></a>如何： 将获得的服务
 你经常需要以获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供你可以使用的一个或多个接口。 你可以从 VSPackage 获取大多数服务。  

@@ -17,6 +17,7 @@ ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/19/2018
+ms.locfileid: "31574635"
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  

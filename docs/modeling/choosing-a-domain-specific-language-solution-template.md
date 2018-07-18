@@ -16,6 +16,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31949638"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>选择域特定语言解决方案模板
 若要创建域特定语言解决方案时，选择一个域特定语言设计器向导中可用的解决方案模板。 通过选择与你想要创建的语言最严格相似的模板，你可以尽量减少你必须对开始解决方案进行的修改。

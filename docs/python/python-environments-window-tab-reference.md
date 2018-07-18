@@ -1,7 +1,7 @@
 ---
 title: Python 环境窗口引用
 description: 在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。
-ms.date: 05/07/2018
+ms.date: 05/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ba46e41c8d6cd4feec4adc04f1470eed7744242
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d4adc1ac472bb05affa547d795690dc7143655fd
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "34572119"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 05/10/2018
 
 在先前版本中还标记为“pip”。
 
-使用 pip 管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。 Visual Studio 2017 15.7 版及更高版本中包含一个“包(Conda)”选项，该选项改为使用 conda 包管理器。 （如果未看到该选项，请设置选项“工具” > “选项” > “Python” > “实验性” > “可用时使用 conda 包管理器[而不是 pip]”，并重启 Visual Studio。）
+使用 pip 管理环境中安装的包，还允许搜索并安装新包（包括任何依赖项）。 Visual Studio 2017 15.7 版及更高版本中包含一个“包(Conda)”选项卡，该选项改为使用 conda 包管理器。 （如果未看到该选项，请设置选项“工具” > “选项” > “Python” > “实验性” > “可用时使用 conda 包管理器[而不是 pip]”，并重启 Visual Studio。）
 
 将显示已安装的程序包，并带有更新（向上箭头）和卸载（圈圈中的 X）程序包的控件：
 
@@ -85,11 +86,19 @@ ms.lasthandoff: 05/10/2018
 
 ![可以搜索“num”的 Python 环境程序包选项卡](media/environments-pip-tab.png)
 
-还可以在搜索框中直接输入任何 `pip install` 命令，包括标志（例如 `--user` 或 `--no-deps`）。
+正如上图所示，搜索结果显示大量与搜索项匹配的包；但是，列表中第一项是直接运行 `pip install <name>` 的命令。 如果位于“包(Conda)”选项卡上，则请参阅 `conda install <name>`：
+
+![显示 conda 安装命令的 Conda 包选项卡](media/environments-conda-tab-install.png)
+
+在这两种情况下，可以在包名称后的搜索框中添加参数，进而自定义安装。 包含自变量时，搜索结果显示 `pip install` 或 `conda install`，后跟搜索框内容：
+
+![在 pip 和 conda 安装命令上使用参数](media/environments-pip-tab-arguments.png)
 
 安装一个包会在文件系统上环境的 `Lib` 文件中创建子文件夹。 例如，如果在 `c:\Python36` 中安装了 Python 3.6，则包会安装在 `c:\Python36\Lib` 中；如果在 `c:\Program Files\Anaconda3` 中安装了 Anaconda3，则包会安装在 `c:\Program Files\Anaconda3\Lib` 中。
 
-在后一种情况下，由于环境位于文件系统的受保护区域 `c:\Program Files`，Visual Studio 必须以提升的权限运行 `pip install`，以使其能够创建包子文件夹。 需要提升时，Visual Studio 会显示提示，“可能需要管理员权限才能安装、更新或删除此环境的包”：
+### <a name="granting-administrator-privileges-for-package-install"></a>授予管理员包安装权限
+
+将包安装到位于文件系统保护区域（例如 `c:\Program Files\Anaconda3\Lib`）的环境中时，Visual Studio 必须运行提升的 `pip install` 以允许它创建包子文件夹。 需要提升时，Visual Studio 会显示提示，“可能需要管理员权限才能安装、更新或删除此环境的包”：
 
 ![针对包安装的提升提示](media/environments-pip-elevate.png)
 
@@ -98,6 +107,18 @@ ms.lasthandoff: 05/10/2018
 选择“安装或删除包时始终提升”可防止针对相应环境出现该对话框。 若要再次显示对话框，请转到“工具”>“选项”>“Python 工具”>“常规”，选择按钮，重置所有永久隐藏的对话框。
 
 在同一选项卡上，还可以选择“始终以管理员身份运行 pip”，针对所有环境禁止显示该对话框。 请参阅[选项 - “常规”选项卡](python-support-options-and-settings-in-visual-studio.md#general-options)。
+
+### <a name="security-restrictions-with-older-versions-of-python"></a>较旧版本 Python 的安全限制
+
+使用 Python 2.6、3.1 和 3.2 时，Visual Studio 显示警告“由于安全限制，来自 Internet 的安装可能不适用于此 Python 版本”：
+
+![有关较旧版本 Python 的 pip 安装限制的消息](media/environments-old-version-restriction.png)
+
+警告出现的原因为：在这些较旧版本的 Python 中，`pip install` 不支持传输安全性层 (TLS) 1.2，而这是从包源 pypi.org 下载包的必需内容。自定义 Python 版本可能支持 `pip install` 可在其中正常工作的 TLS 1.2。
+
+或许可以从 [bootstrap.pypa.io](https://bootstrap.pypa.io/) 下载包的相应 `get-pip.py`，手动从 [pypi.org](https://pypi.org/) 下载包，然后从该本地副本安装包。
+
+但是，建议只需升级到 Python 2.7 或 3.3+，这样不会出现警告。
 
 ## <a name="intellisense-tab"></a>IntelliSense 选项卡
 

@@ -26,6 +26,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31470468"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 和 __debugbreak
 你可以调用 DebugBreak Win32 函数或[__debugbreak](/cpp/intrinsics/debugbreak)在代码中的任何时刻内部函数。 `DebugBreak` 和 `__debugbreak` 具有与在该位置设置断点相同的效果。  

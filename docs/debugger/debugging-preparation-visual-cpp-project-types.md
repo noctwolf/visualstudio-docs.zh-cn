@@ -25,6 +25,7 @@ ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31478182"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 04/18/2018
   
 |属性名|设置|  
 |-------------------|-------------|  
-|**生成调试信息**|你应始终将此选项设置为**是 (/debug)**创建调试符号和所需的调试文件。 在应用程序进入成品阶段时，可以将其设置为关闭。|  
+|**生成调试信息**|你应始终将此选项设置为**是 (/debug)** 创建调试符号和所需的调试文件。 在应用程序进入成品阶段时，可以将其设置为关闭。|  
   
  [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
@@ -82,22 +83,22 @@ ms.lasthandoff: 04/18/2018
   
 3.  选择**常规**，并将的值设置**输出**行到**调试**。  
   
-4.  打开**C/c + +**节点，然后选择**常规**。  
+4.  打开**C/c + +** 节点，然后选择**常规**。  
   
-     在**调试**行指定的调试信息要由编译器生成的类型。 可以选择的值包括**程序数据库 (/Zi)**或**用于 ' 编辑并继续 (/ZI) 的程序数据库**。  
+     在**调试**行指定的调试信息要由编译器生成的类型。 可以选择的值包括**程序数据库 (/Zi)** 或**用于 ' 编辑并继续 (/ZI) 的程序数据库**。  
   
-5.  选择**优化**，然后在**优化**行中，选中**已禁用 (/ 0d)**从下拉列表。  
+5.  选择**优化**，然后在**优化**行中，选中**已禁用 (/ 0d)** 从下拉列表。  
   
      优化代码更难调试，因为生成的指令与源代码并不直接对应。 如果发现程序具有只出现在优化代码中的 bug，则可以打开此设置，但应记住“反汇编”窗口中显示的代码是从可能与在源窗口中见到的内容不匹配的优化源生成的。 有些功能（如单步执行）显示的断点和执行点有可能不正确。  
   
-6.  打开**链接器**节点，然后选择**调试**。 在第一个**生成**行中，选中**是 (/debug)**从下拉列表。 调试期间应始终这样设置。  
+6.  打开**链接器**节点，然后选择**调试**。 在第一个**生成**行中，选中**是 (/debug)** 从下拉列表。 调试期间应始终这样设置。  
   
  有关详细信息，请参阅[用于 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
  [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows 窗体应用程序 (.NET)  
- **Windows 窗体应用程序 (.NET)**模板创建[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]Windows 窗体应用程序。 有关详细信息，请参阅 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
+ **Windows 窗体应用程序 (.NET)** 模板创建[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]Windows 窗体应用程序。 有关详细信息，请参阅 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序类似于在托管的 Windows 窗体应用程序中进行调试。  
   

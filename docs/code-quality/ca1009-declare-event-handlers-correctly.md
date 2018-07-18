@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31899281"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009：正确声明事件处理程序
 |||

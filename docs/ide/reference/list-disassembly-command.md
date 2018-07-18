@@ -20,6 +20,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704728"
 ---
 # <a name="list-disassembly-command"></a>“列出反汇编”命令
 开始调试进程，并允许指定如何处理错误。

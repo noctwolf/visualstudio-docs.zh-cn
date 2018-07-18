@@ -14,6 +14,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31127897"
 ---
 # <a name="color-theming-tools"></a>颜色主题工具
 VS SDK 提供多种工具以帮助你创建和管理颜色主题。  

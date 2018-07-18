@@ -1,13 +1,13 @@
 ---
-title: "预期 &#39;) &#39;在正则表达式 (JavaScript) |Microsoft 文档"
-ms.custom: 
+title: 预期 &#39;) &#39;在正则表达式 (JavaScript) |Microsoft 文档
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5020
@@ -16,7 +16,7 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
-caps.latest.revision: 
+caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
@@ -25,6 +25,7 @@ ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2017
+ms.locfileid: "24633877"
 ---
 # <a name="expected-3939-in-regular-expression-javascript"></a>预期 &#39;) &#39;在正则表达式 (JavaScript)
 你试图创建正则表达式捕获、 断言或组，但不是包括的右括号。 括号具有正则表达式中有多种用途。 它们用于捕获子表达式，以指定断言，或将模式组合在一起，以便可作为单个单元通过视为项的主要原因是，*，+，？，依次类推。  

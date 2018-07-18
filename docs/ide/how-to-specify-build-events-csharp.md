@@ -16,11 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38f8240d0e0157edd1ebe189d0eafac54be60ebb
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 500426eb7fda2c35f74b899154d9153a91d5020b
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34746255"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 
@@ -148,7 +149,7 @@ ms.lasthandoff: 05/07/2018
 
 1.  为要发布的项目创建 Windows 应用程序。 在“文件”菜单中，指向“新建”，然后单击“项目”。
 
-2.  在“新建项目”对话框中，展开“Visual C#”，单击“Windows 经典桌面”，然后单击“Windows 窗体应用”模板。 将项目命名为 `CSWinApp`。
+2.  在“新建项目”对话框中，展开“Visual C#”，单击“Windows 桌面”，然后单击“Windows 窗体应用”模板。 将项目命名为 `CSWinApp`。
 
 3.  在“解决方案资源管理器”中选择一个项目，然后在“项目”菜单上单击“属性”。
 

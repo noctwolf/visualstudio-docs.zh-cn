@@ -21,6 +21,7 @@ ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31919274"
 ---
 # <a name="ca2232-mark-windows-forms-entry-points-with-stathread"></a>CA2232：使用 STAThread 标记 Windows 窗体的入口点
 |||

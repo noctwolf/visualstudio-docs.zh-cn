@@ -2,7 +2,7 @@
 title: Visual Studio 管理员指南
 description: 详细了解如何在企业环境中部署 Visual Studio。
 ms.custom: ''
-ms.date: 05/15/2017
+ms.date: 05/29/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,17 +16,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d9c6c3c63fe1c601a307ff006858a64db56c83
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
+ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34691113"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理员指南
 
 在企业环境中，系统管理员通常会从网络共享或通过使用系统管理软件向最终用户部署安装。 为了支持企业部署，我们精心设计了 Visual Studio 安装程序引擎，以便系统管理员可以创建网络安装位置、预配置安装默认值、在安装过程中部署产品密钥以及管理成功推出的产品更新。 本管理员指南通过各种情境，提供有关在网络环境中进行企业部署的指导。
 
-## <a name="deploying-visual-studio-2017-in-an-enterprise-environment"></a>在企业环境中部署 Visual Studio 2017
+## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>在企业环境中部署 Visual Studio 2017
 
 只要每台目标计算机满足[最低安装要求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)，就可以将 Visual Studio 2017 部署到客户端工作站。 无论是通过 System Center 等软件还是通过批处理文件进行部署，通常都需要完成以下步骤：
 
@@ -49,12 +50,26 @@ ms.lasthandoff: 04/20/2018
 > [!IMPORTANT]
 > 请注意，从网络共享进行安装会“记住”它们的源位置。 这意味着客户端计算机的修复可能需要返回最初从中安装客户端的网络共享。 请仔细选择网络位置，使其符合在组织中运行的 Visual Studio 2017 客户端的预期生存期。
 
-## <a name="visual-studio-tools"></a>Visual Studio Tools
+## <a name="use-visual-studio-tools"></a>使用 Visual Studio 工具
 
 我们提供了几种工具来帮助你在客户端计算机上[检测和管理安装的 Visual Studio 实例](tools-for-managing-visual-studio-instances.md)。
 
 > [!TIP]
 > 除了管理员指南中的文档外，[Heath Stewart 的博客](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/)也是不错的 Visual Studio 2017 安装程序参考信息源。
+
+## <a name="specify-customer-feedback-settings"></a>指定客户反馈设置
+
+默认情况下，Visual Studio 安装会启用客户反馈。 启用“组策略”时，可以将 Visual Studio 配置为在个人计算机上禁用客户反馈。 为此，请在以下键上设置基于注册表的策略：
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SQM
+
+Entry = OptIn
+
+Value = (DWORD)
+* 0 为选择禁用
+* 1 为选择启用
+
+有关客户反馈设置的详细信息，请参阅 [Visual Studio 客户体验改善计划](../ide/visual-studio-experience-improvement-program.md)页。
 
 ## <a name="get-support"></a>获取支持
 

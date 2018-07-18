@@ -18,6 +18,7 @@ ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33704020"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练： 使用快捷键编辑器扩展名
 您可以在你的编辑器扩展响应快捷键。 下面的演练演示如何将视图修饰添加到文本视图中，通过使用快捷方式的键。 本演练基于视区修饰编辑器模板，并且它使你使用添加修饰 + 字符。  

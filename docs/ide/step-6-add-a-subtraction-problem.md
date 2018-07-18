@@ -11,11 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6d338217d3112fc56307ddc2f9af696c99e96a
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 6960f7ca6db9584af8d43b9cee0d0c6bc810bc7f
+ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34747888"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步骤 6：添加减法问题
 在本教程的第 6 部分中，你将添加一道减法题并了解如何执行以下任务：
@@ -51,12 +52,12 @@ ms.lasthandoff: 04/28/2018
 
      可以用多种方法调用 Random 类的 `Next()` 方法，在本教程的前面部分中，已将此类命名为“randomizer”。 可使用多种方式调用的方法称为重载，您可以使用 IntelliSense 来探索这些方法。 请再次查看 IntelliSense 窗口中关于 `Next()` 方法的工具提示。
 
-     ![IntelliSense 窗口工具提示](../ide/media/express_overloads.png "Express_Overloads")
+     ****![IntelliSense 窗口工具提示](../ide/media/express_overloads.png)
 IntelliSense 窗口工具提示
 
      此工具提示显示“(+ 2 重载)”，这意味着可以用另外两种方法来调用 `Next()` 方法。 重载包含不同数量或类型的自变量，因此，它们的工作方式彼此略有不同。 例如，某个方法可能只采用一个整型参数，而其重载之一则可能采用一个整数和一个字符串。 您应选择正确的重载，使之执行您所需操作。 将代码添加到 `StartTheQuiz()` 方法时，只要输入 `randomizer.Next(`，IntelliSense 窗口中将显示详细信息。 若要循环显示重载，请选择向上键和向下键，如下图所示：
 
-     ![IntelliSense 中 Next() 方法的重载](../ide/media/express_nextoverload.png "Express_NextOverload") IntelliSense 中 Next() 方法的重载
+     ![IntelliSense 中 Next&#40;&#41; 方法的重载](../ide/media/express_nextoverload.png)IntelliSense 中 Next() 方法的重载
 
      在此示例中，您想要选择最后一个重载，因为您可以指定最小值和最大值。
 
@@ -76,8 +77,8 @@ IntelliSense 窗口工具提示
 
      如下图所示，你的程序包括一道减法题：
 
-     ![含减法问题的数学测验](../ide/media/express_addsubtract.png "Express_AddSubtract")
-含减法问题的数学测验
+     ****![含减法题的数学测验](../ide/media/express_addsubtract.png)
+含减法题的数学测验
 
 ## <a name="to-continue-or-review"></a>继续或查看
 

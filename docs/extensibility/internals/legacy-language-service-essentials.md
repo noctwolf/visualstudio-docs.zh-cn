@@ -21,6 +21,7 @@ ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31135440"
 ---
 # <a name="legacy-language-service-essentials"></a>旧语言服务 Essentials
 必须提供语言服务将一种编程语言集成到 Visual Studio。 本主题介绍旧语言服务中提供的功能。  
