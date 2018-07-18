@@ -12,33 +12,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 490740f8f2682ad6b82bc60edb5d24e6d410b192
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a7ed52f7898f10b5f13f55c27cba380334489871
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970282"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758129"
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
 
-**CorrelatesOn**对话框中使用 Windows 工作流设计器中，若要编辑<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性<xref:System.ServiceModel.Activities.Receive>活动。 有关详细信息，请参阅[接收](../workflow-designer/receive-activity-designer.md)主题。
+**CorrelatesOn**对话框中使用工作流设计器中，若要编辑<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性的<xref:System.ServiceModel.Activities.Receive>活动。 有关详细信息，请参阅[接收活动设计器](../workflow-designer/receive-activity-designer.md)。
 
 <xref:System.ServiceModel.Activities.Receive> 活动之间的关联指定工作流中的不同服务操作如何相互连接。
 
-下表描述的用户界面 (UI) 元素**CorrelatesOn**对话框。
+下表介绍的用户界面 (UI) 元素**CorrelatesOn**对话框。
 
 |UI 元素|描述|
 |----------------|-----------------|
 |**CorrelatesWith**|用于将消息路由到相应工作流实例的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|**XPath 查询**|包含用于从传入消息中提取相关数据的查询的键/值对。 它对应于 <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> 属性。 XPath 查询包含在 <xref:System.ServiceModel.MessageQuerySet> 对象中。|
+|**XPath 查询**|包含用于从传入消息中提取相关数据的查询的键/值对。 此值对应于<xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A>属性。 XPath 查询包含在 <xref:System.ServiceModel.MessageQuerySet> 对象中。|
 
 ## <a name="to-launch-the-correlateson-dialog-box"></a>启动“CorrelatesOn”对话框
 
-**接收**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的。 这将创建具有 Receive 的默认 <xref:System.ServiceModel.Activities.Receive> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 选择**接收**活动设计器，然后为 （集合） 文本旁的省略号按钮的单击**CorrelatesOn**属性在属性网格**CorrelatesOn 定义**对话框出现。
+**接收**活动设计器可以从拖动**工具箱**和放置到工作流设计器图面，任何通常放置活动的位置。 放置在活动设计器创建<xref:System.ServiceModel.Activities.Receive>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的接收。 若要打开**CorrelatesOn 定义**对话框中，选择**接收**活动设计器，然后在属性网格中，选择的集合文本旁边的省略号按钮**CorrelatesOn**属性。
 
 ## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [“添加相关初始值设定项”对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)
-- [添加相关对话框](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
+- [添加关联对话框](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [“初始化相关”对话框](../workflow-designer/initialize-correlation-dialog-box.md)

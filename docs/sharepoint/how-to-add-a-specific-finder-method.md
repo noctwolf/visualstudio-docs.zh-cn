@@ -1,5 +1,5 @@
 ---
-title: 如何： 添加特定的 Finder 方法 |Microsoft 文档
+title: 如何： 添加特定的 Finder 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -22,70 +22,70 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 451784c052ee656686bf40315b809dcce58c6aaf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 7319842d0c90b18b170fcd5e199dc255f45a3374
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767645"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758431"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何： 添加特定的 Finder 方法
-  你可以通过创建返回单个实体实例*特定的 Finder*方法。 业务数据连接 (BDC) 服务执行特定的 Finder 方法，当用户在业务数据 web 部件或外部列表中选择实体。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+  可以通过创建返回单个实体实例*特定的 Finder*方法。 在用户在业务数据 web 部件或外部列表中选择一个实体时，业务数据连接 (BDC) 服务将执行特定的 Finder 方法。 有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 ### <a name="to-create-a-specific-finder-method"></a>若要创建特定的 Finder 方法
   
 1.  上**BDC 设计器**，选择实体。  
   
-     有关如何将实体添加到信息**BDC 设计器**在 Visual Studio 中，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
+     了解如何将实体添加到**BDC 设计器**在 Visual Studio 中，请参阅[如何： 向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。  
   
-2.  在菜单栏上，选择**视图** > **其他窗口**， **BDC 方法详细信息**。  
+2.  在菜单栏上依次选择**视图** > **其他 Windows**， **BDC 方法详细信息**。  
   
      **BDC 方法详细信息**窗口随即打开。 有关该窗口的详细信息，请参阅[BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。  
   
-3.  在**添加一个方法**列表中，选择**创建特定的 Finder 方法**。  
+3.  在中**添加一个方法**列表中，选择**创建特定的 Finder 方法**。  
   
      Visual Studio 将以下元素添加到模型。 这些元素出现在**BDC 方法详细信息**窗口。  
   
     -   方法。  
   
-    -   输入的参数的方法。  
+    -   方法的输入的参数。  
   
-    -   返回参数的方法。  
+    -   该方法是返回参数。  
   
     -   每个参数类型描述符。  
   
     -   方法实例的方法。  
   
-     有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+     有关详细信息，请参阅[设计的业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
 4.  打开 Visual Studio**属性**窗口。  
   
 5.  将返回参数的类型描述符配置为实体类型描述符。 有关如何创建实体类型描述符的信息，请参阅[如何： 定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。  
   
     > [!NOTE]  
-    >  你无需执行此步骤，如果你已向该实体添加 Finder 方法。 Visual Studio 将使用你在 Finder 方法中定义的类型描述符。  
+    >  您无需执行此步骤，如果为实体添加查找程序方法。 Visual Studio 使用查找程序方法中定义的类型描述符。  
   
     > [!NOTE]  
-    >  如果实体类型的标识符字段所代表的字段自动生成的数据库表中，设置**只读**属性的标识符字段**True**。  
+    >  如果实体类型的标识符字段表示自动生成的数据库表中的字段，设置**只读**属性的标识符字段**True**。  
   
-6.  在**方法详细信息**窗口中，选择该方法的方法实例。  
+6.  在中**方法的详细信息**窗口中，选择方法实例的方法。  
   
-7.  在**属性窗口**，将其设置**返回参数名称**为该方法的返回参数的名称的属性。 方法实例属性的详细信息，请参阅[实例，但](http://go.microsoft.com/fwlink/?LinkID=169282)。  
+7.  在中**属性窗口**，请设置**返回参数名称**属性设置为该方法的返回参数的名称。 方法实例属性的详细信息，请参阅[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-8.  在**解决方案资源管理器**，打开实体，已生成的服务代码文件的快捷菜单，然后选择**查看代码**。  
+8.  在中**解决方案资源管理器**，打开实体，已生成的服务代码文件的快捷菜单，然后选择**查看代码**。  
   
-     实体服务代码文件将在代码编辑器中打开。 有关实体服务代码文件的详细信息，请参阅[创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
+     实体服务代码文件将在代码编辑器中打开。 有关实体服务代码文件的详细信息，请参阅[创建的业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
   
 9. 将代码添加到特定的 Finder 方法。 这段代码执行下列任务：  
   
-    -   从数据源检索一条记录。  
+    -   从数据源中检索一条记录。  
   
-    -   到 BDC 服务返回实体。  
+    -   向 BDC 服务返回的实体。  
   
-     下面的示例适用于 SQL Server 返回从 AdventureWorks 示例数据库的联系人。  
+     下面的示例适用于 SQL Server 返回 AdventureWorks 示例数据库中的联系人。  
   
     > [!NOTE]  
-    >  值替换`ServerName`字段替换为你的服务器的名称。  
+    >  值替换为`ServerName`字段与服务器的名称。  
   
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
@@ -97,6 +97,6 @@ ms.locfileid: "34767645"
  [如何： 添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)   
  [如何： 添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
  [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何： 向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
+ [如何： 向方法中添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何： 定义方法实例](../sharepoint/how-to-define-a-method-instance.md)  
   

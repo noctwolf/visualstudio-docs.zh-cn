@@ -12,27 +12,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02bb94ad17b78b1264129b8a5ba00a964edbd2f2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71cf547a1ea3599de8926e40ca5a43f3bdea0f71
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974651"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36758316"
 ---
 # <a name="throw-activity-designer"></a>Throw 活动设计器
 
 **引发**活动设计器用于创建和配置<xref:System.Activities.Statements.Throw>活动。
 
 ## <a name="the-throw-activity"></a>Throw 活动
- <xref:System.Activities.Statements.Throw> 活动会引发一个异常。
+
+<xref:System.Activities.Statements.Throw> 活动会引发一个异常。
 
 ### <a name="using-the-throw-activity-designer"></a>使用 Throw 活动设计器
- **引发**在找不到活动设计器**错误处理**类别**工具箱**，通过单击访问的哪一**工具箱**工作流设计器左侧的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
 
- **引发**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建<xref:System.Activities.Statements.Throw>默认值的活动**DisplayName**引发。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**引发**活动设计器中或在**DisplayName**属性网格的框。 <xref:System.Activities.Statements.Throw.Exception%2A> 属性必须在属性网格上编辑。
+访问**引发**中的活动设计器**错误处理**类别**工具箱**。
+
+**引发**活动设计器可以从拖动**工具箱**只要通常放置活动的例如内放置到工作流设计器图面和<xref:System.Activities.Statements.Sequence>。 这将创建<xref:System.Activities.Statements.Throw>默认值的活动**DisplayName**的 Throw。 <xref:System.Activities.Activity.DisplayName%2A>值可以在的标头中编辑**引发**活动设计器中或在**DisplayName**属性网格的框。 <xref:System.Activities.Statements.Throw.Exception%2A> 属性必须在属性网格上编辑。
 
 ### <a name="the-throw-properties"></a>Throw 属性
- 下表列出 <xref:System.Activities.Statements.Throw> 属性并说明如何在设计器中使用它们。
+
+下表列出 <xref:System.Activities.Statements.Throw> 属性并说明如何在设计器中使用它们。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

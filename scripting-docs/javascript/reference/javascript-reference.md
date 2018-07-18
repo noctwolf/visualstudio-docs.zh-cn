@@ -1,13 +1,13 @@
 ---
-title: "JavaScript 参考 |Microsoft 文档"
-ms.custom: 
+title: JavaScript 参考 |Microsoft Docs
+ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
-ms.reviewer: 
-ms.suite: 
+ms.reviewer: ''
+ms.suite: ''
 ms.technology:
 - devlang-javascript
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - vs.htmldesigner.html
@@ -18,18 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - JavaScript, reference
 ms.assetid: 29f83a2c-48c5-49e2-9ae0-7371d2cda2ff
-caps.latest.revision: 
+caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4fd8a514abcc42b7ec34340f963326cd9a66762
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 41d2a3f72b07c947faae2f70f1f5f0b0dffac9ad
+ms.sourcegitcommit: c842955aa9ee9f149bb63e66e46c5c29be6e9881
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36962745"
 ---
 # <a name="javascript-reference"></a>JavaScript 参考
 以下部分说明组成 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 语言的元素。  
+
+> [!NOTE]
+> 我们已将加入社区范围精力使[MDN web 文档](https://developer.mozilla.org/en-US/)web 的一站式的首要开发资源，通过将重定向所有 （500 多页） 的 Microsoft 的 JavaScript API 引用从 docs.microsoft.com 其 MDN对等项。 有关详细信息，请参阅此[公告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
   
  Internet Explorer 中的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 代码可与 HTML、CSS 和文档对象模型 (DOM)（表示 HTML 和浏览器对象）进行交互。  
   
@@ -41,15 +45,15 @@ ms.lasthandoff: 10/27/2017
   
  [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 代码可用于浏览器应用程序和 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用。 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用在使用 [!INCLUDE[win8](../../javascript/includes/win8-md.md)] 的 [!INCLUDE[vs_dev11_long](../../javascript/includes/vs-dev11-long-md.md)] 和使用 [!INCLUDE[win81](../../javascript/includes/win81-md.md)] 的 [!INCLUDE[vs_dev12](../../javascript/includes/vs-dev12-md.md)] 中受支持。  
   
--   有关在中 JavaScript[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用程序，请参阅[JavaScript 路线图](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341)。  
+-   有关中的 JavaScript[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用，请参阅[JavaScript 路线图](http://msdn.microsoft.com/en-us/4f28182b-1e4b-4bbd-8ae9-dcc504de4341)。  
   
--   有关 HTML 和 CSS 中的[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用程序，请参阅[Windows 应用商店应用的 HTML/CSS](http://go.microsoft.com/fwlink/p/?LinkId=250939)。  
+-   有关 HTML 和 CSS 中的信息[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]应用，请参阅[Windows 应用商店应用程序的 HTML/CSS](http://go.microsoft.com/fwlink/p/?LinkId=250939)。  
   
 -   璝惠[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]API，请参阅[Windows 运行时和 Windows JavaScript 库的 API 参考](http://go.microsoft.com/fwlink/p/?LinkID=250938)。  
   
- Visual Studio 中的 JavaScript 编辑器提供 IntelliSense 支持。 有关详细信息，请参阅[JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense.md)。  
+ Visual Studio 中的 JavaScript 编辑器提供 IntelliSense 支持。 有关详细信息，请参阅[JavaScript IntelliSense](/visualstudio/ide/javascript-intellisense)。  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="reference-information"></a>参考信息
  [版本信息](../../javascript/reference/javascript-version-information.md)  
  提供包含 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 语言功能以及引入这些功能的 Internet Explorer 版本的列表。  
   
@@ -87,8 +91,6 @@ ms.lasthandoff: 10/27/2017
  提供未来保留字列表。 这些字不能用作标识符。  
   
 ## <a name="related-sections"></a>相关章节  
- [JavaScript 基础](../../javascript/javascript-fundamentals.md)  
- 提供有关如何使用 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 的信息。  
-  
+
  [HTML 和 DHTML 参考](http://go.microsoft.com/fwlink/?LinkId=148095)  
  提供有关动态 HTML (DHTML) API 的参考信息。
