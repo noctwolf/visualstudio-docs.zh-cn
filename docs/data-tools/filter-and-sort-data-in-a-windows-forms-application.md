@@ -1,5 +1,5 @@
 ---
-title: 在 Windows 窗体应用程序中的筛选器和排序数据
+title: 在 Windows 窗体应用程序中对数据进行筛选和排序
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,31 +21,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8f693e0a370a05508753dc6881b99157c21ea47
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924964"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757590"
 ---
-# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows 窗体应用程序中的筛选器和排序数据
-通过设置筛选数据<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为一个字符串表达式，返回的所需的记录。
+# <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows 窗体应用程序中对数据进行筛选和排序
+设置筛选数据<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为一个字符串表达式，返回所需的记录。
 
- 对数据进行排序通过设置<xref:System.Windows.Forms.BindingSource.Sort%2A>想要作为排序依据的列名称的属性; 追加`DESC`按降序排序，还是追加`ASC`按升序进行排序。
+ 对数据进行排序通过设置<xref:System.Windows.Forms.BindingSource.Sort%2A>属性设置为列名称在其进行排序; 追加`DESC`按降序排序，还是追加`ASC`以按升序排序。
 
 > [!NOTE]
->  如果你的应用程序不使用<xref:System.Windows.Forms.BindingSource>组件，你可以筛选和排序数据使用<xref:System.Data.DataView>对象。 有关详细信息，请参阅[Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)。
+>  如果你的应用程序不使用<xref:System.Windows.Forms.BindingSource>组件，您可以筛选和排序数据使用<xref:System.Data.DataView>对象。 有关详细信息，请参阅[Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)。
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>通过使用 BindingSource 组件来筛选数据
 
--   设置<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为你想要返回的表达式。 例如，以下代码将返回客户`CompanyName`以"B"开头：
+-   设置<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为你想要返回的表达式。 例如，以下代码将返回与客户`CompanyName`"B"开头的：
 
      [!code-csharp[VbRaddataDisplaying#6](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_1.cs)]
      [!code-vb[VbRaddataDisplaying#6](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_1.vb)]
 
-## <a name="to-sort-data-by-using-a-bindingsource-component"></a>若要通过使用 BindingSource 组件对数据排序
+## <a name="to-sort-data-by-using-a-bindingsource-component"></a>若要使用 BindingSource 组件对数据进行排序
 
--   设置<xref:System.Windows.Forms.BindingSource.Sort%2A>到你想要作为排序依据的列的属性。 例如，下面的代码对客户进行排序上`CompanyName`降序排序的列：
+-   设置<xref:System.Windows.Forms.BindingSource.Sort%2A>属性设置为你想要按其排序的列。 例如，下面的代码对客户排序上`CompanyName`降序排序的列：
 
      [!code-csharp[VbRaddataDisplaying#7](../data-tools/codesnippet/CSharp/filter-and-sort-data-in-a-windows-forms-application_2.cs)]
      [!code-vb[VbRaddataDisplaying#7](../data-tools/codesnippet/VisualBasic/filter-and-sort-data-in-a-windows-forms-application_2.vb)]

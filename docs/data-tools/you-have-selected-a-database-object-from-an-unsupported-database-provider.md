@@ -10,16 +10,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3ab7375db8c3adfe769cf1c344937b60695eb25
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5b6eef41ebd3ae6fc08029a618cf276e22001235
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921135"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116867"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您从不支持的数据库提供程序选择了数据库对象
 
-O/R 设计器支持用于 SQL Server 仅.NET Framework 数据提供程序 (<xref:System.Data.SqlClient>)。 尽管你可以单击**确定**并继续使用来自不受支持的数据库提供程序的对象，你可能会在运行时遇到意外的行为。
+**O/R 设计器**适用于 SQL Server 支持仅.NET Framework 数据提供程序 (<xref:System.Data.SqlClient>)。 尽管您可以单击**确定**并继续处理来自不受支持的数据库提供程序的对象，您可能会在运行时遇到意外的行为。
 
 > [!NOTE]
 > 仅支持使用用于 SQL Server 的 .NET Framework 数据提供程序的数据连接。
@@ -30,7 +30,7 @@ O/R 设计器支持用于 SQL Server 仅.NET Framework 数据提供程序 (<xref
 
    你可以继续设计映射到使用不支持的数据库提供程序的连接的实体类。 使用不支持的数据库提供程序时，可能遇到意外行为。
 
-    -或-
+    或
 
 - 单击**取消**。
 
@@ -39,4 +39,4 @@ O/R 设计器支持用于 SQL Server 仅.NET Framework 数据提供程序 (<xref
 ## <a name="see-also"></a>请参阅
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

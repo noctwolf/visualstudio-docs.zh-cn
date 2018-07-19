@@ -1,5 +1,5 @@
 ---
-title: Word 对象模型概述 |Microsoft 文档
+title: Word 对象模型概述
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -20,18 +20,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: aae1d5648b2db72a4e5ddd6b792f2b3aed846e76
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258449"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 本主题概要介绍 Word 对象模型。 有关可从中了解整个 Word 对象模型的详细信息的资源，请参阅 [使用 Word 对象模型文档](#WordOMDocumentation)。  
+ 本主题概要介绍 Word 对象模型。 资源可从中了解整个 Word 对象模型有关的详细信息，请参阅[使用 Word 对象模型文档](#WordOMDocumentation)。  
   
  有关使用 Word 对象模型执行特定任务的信息，请参阅下列主题：  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [使用文档中的文本](../vsto/working-with-text-in-documents.md)  
   
--   [使用表格](../vsto/working-with-tables.md)  
+-   [使用表](../vsto/working-with-tables.md)  
   
 ##  <a name="understanding"></a> 了解 Word 对象模型  
  Word 提供了数百个可与之交互的对象。 这些对象采用严格遵循用户界面的层次结构进行组织。 <xref:Microsoft.Office.Interop.Word.Application> 对象位于层次结构的顶部。 此对象表示 Word 的当前实例。 <xref:Microsoft.Office.Interop.Word.Application> 对象包含 <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Word.Selection>、 <xref:Microsoft.Office.Interop.Word.Bookmark>和 <xref:Microsoft.Office.Interop.Word.Range> 对象。 上述每个对象均具有很多方法和属性，可用于操作对象和与之进行交互。  
@@ -62,12 +63,12 @@ ms.lasthandoff: 04/16/2018
   
 -   Bookmark 对象  
   
- 除 Word 对象模型以外，Visual Studio 中的 Office 项目还提供可扩展 Word 对象模型中的一些对象的 *主机项* 和 *主机控件* 。 主机项和主机控件的行为类似于它们扩展的 Word 对象，但它们还具有其他功能（如数据绑定功能）和额外事件。 有关详细信息，请参阅 [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md) 和 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
+ 除 Word 对象模型以外，Visual Studio 中的 Office 项目还提供可扩展 Word 对象模型中的一些对象的 *主机项* 和 *主机控件* 。 主机项和主机控件的行为类似于它们扩展的 Word 对象，但它们还具有其他功能（如数据绑定功能）和额外事件。 有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)并[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
 ### <a name="application-object"></a>应用程序对象  
  <xref:Microsoft.Office.Interop.Word.Application> 对象表示 Word 应用程序，并且是所有其他对象的父级。 其成员通常作为一个整体应用于 Word。 你可以使用其属性和方法来控制 Word 环境。  
   
- 在 VSTO 外接程序项目中，可以通过使用 <xref:Microsoft.Office.Interop.Word.Application> 类的 `Application` 字段来访问 `ThisAddIn` 对象。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 在 VSTO 外接程序项目中，可以通过使用 <xref:Microsoft.Office.Interop.Word.Application> 类的 `Application` 字段来访问 `ThisAddIn` 对象。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
  在文档级项目中，可以通过使用 <xref:Microsoft.Office.Interop.Word.Application> 类的 <xref:Microsoft.Office.Tools.Word.Document.Application%2A> 属性来访问 `ThisDocument` 对象。  
   
@@ -76,12 +77,12 @@ ms.lasthandoff: 04/16/2018
   
  Visual Studio 中的 Office 开发工具通过提供 <xref:Microsoft.Office.Interop.Word.Document> 类型来扩展 <xref:Microsoft.Office.Tools.Word.Document> 对象。 此类型是一个 *主机项* ，使你可以访问 <xref:Microsoft.Office.Interop.Word.Document> 对象的所有功能，并增添了其他事件以及添加托管控件的能力。  
   
- 在创建文档级项目时，可以通过使用项目中生成的 <xref:Microsoft.Office.Tools.Word.Document> 类访问 `ThisDocument` 成员。 通过使用 <xref:Microsoft.Office.Tools.Word.Document> 类中代码的 **Me** 或 **this** 关键字、或通过使用 `ThisDocument` 类外部的代码的 `Globals.ThisDocument` ，即可访问 `ThisDocument` 对象。 有关详细信息，请参阅 [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)。 例如，若要在文档中选择第一个段落，请使用下列代码。  
+ 在创建文档级项目时，可以通过使用项目中生成的 <xref:Microsoft.Office.Tools.Word.Document> 类访问 `ThisDocument` 成员。 通过使用 <xref:Microsoft.Office.Tools.Word.Document> 类中代码的 **Me** 或 **this** 关键字、或通过使用 `ThisDocument` 类外部的代码的 `Globals.ThisDocument` ，即可访问 `ThisDocument` 对象。 有关详细信息，请参阅[程序文档级自定义项](../vsto/programming-document-level-customizations.md)。 例如，若要在文档中选择第一个段落，请使用下列代码。  
   
  [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
  [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
   
- 在 VSTO 外接程序项目中，可以在运行时生成 <xref:Microsoft.Office.Tools.Word.Document> 主机项。 可以使用生成的主机项将控件添加到关联文档。 有关更多信息，请参见 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 外接程序项目中，您可以生成<xref:Microsoft.Office.Tools.Word.Document>主机在运行时的项。 可以使用生成的主机项将控件添加到关联文档。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ### <a name="selection-object"></a>Selection 对象  
  <xref:Microsoft.Office.Interop.Word.Selection> 对象表示当前所选的区域。 在 Word 用户界面中执行操作（如文本加粗）时，可以选择或突出显示文本，然后应用格式设置。 文档中始终存在 <xref:Microsoft.Office.Interop.Word.Selection> 对象。 如果未选中任何内容，则它表示插入点。 此外，选定内容可包含多个不相邻的文本块。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 04/16/2018
 ### <a name="content-control-objects"></a>内容控件对象  
  <xref:Microsoft.Office.Interop.Word.ContentControl> 提供一种用于控制 Word 文档内文本和其他类型的内容的输入和呈现的方法。 <xref:Microsoft.Office.Interop.Word.ContentControl> 可以显示多种不同类型的 UI，它们进行了优化以在 Word 文档中使用，如多信息文本控件、日期选取器或组合框。 你还可以使用 <xref:Microsoft.Office.Interop.Word.ContentControl> 来防止用户编辑文档或模板的某些节。  
   
- Visual Studio 会将 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象扩展到几个不同的主机控件。 虽然 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象能显示可用于内容控件的所有不同类型的 UI，Visual Studio 还是为每个内容控件提供了一个不同的类型。 例如，你可以使用 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 来创建多信息文本控件，或者可以使用 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 来创建日期选取器。 这些主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.ContentControl>的类似，但它们还具有其他事件和数据绑定功能。 有关详细信息，请参阅 [Content Controls](../vsto/content-controls.md)。  
+ Visual Studio 会将 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象扩展到几个不同的主机控件。 虽然 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象能显示可用于内容控件的所有不同类型的 UI，Visual Studio 还是为每个内容控件提供了一个不同的类型。 例如，你可以使用 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 来创建多信息文本控件，或者可以使用 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 来创建日期选取器。 这些主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.ContentControl>的类似，但它们还具有其他事件和数据绑定功能。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。  
   
 ### <a name="bookmark-object"></a>Bookmark 对象  
  <xref:Microsoft.Office.Interop.Word.Bookmark> 对象表示文档中的相邻区域，同时具有起始位置和结束位置。 你可以使用书签标记文档中的某个位置，也可将其作为文档中文本的容器。 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象可以包含插入点，也可以与整个文档一样大。 <xref:Microsoft.Office.Interop.Word.Bookmark> 具有下列特征，以将其与 <xref:Microsoft.Office.Interop.Word.Range> 对象区别开来：  
@@ -115,28 +116,28 @@ ms.lasthandoff: 04/16/2018
   
 -   通过将 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 属性来访问 <xref:Microsoft.Office.Interop.Word.View> 属性设置为 **false** 或 **true**。  
   
- Visual Studio 通过提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主机控件来扩展 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.Bookmark>的类似，但它们还具有其他事件和数据绑定功能。 你可以将数据绑定到文档上的书签控件，操作方式与将数据绑定到 Windows 窗体上文本框控件的方式相同。 有关详细信息，请参阅 [Bookmark Control](../vsto/bookmark-control.md)。  
+ Visual Studio 通过提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主机控件来扩展 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.Bookmark>的类似，但它们还具有其他事件和数据绑定功能。 你可以将数据绑定到文档上的书签控件，操作方式与将数据绑定到 Windows 窗体上文本框控件的方式相同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。  
   
 ##  <a name="WordOMDocumentation"></a> 使用 Word 对象模型文档  
  有关 Word 对象模型的完整信息，可以参考 Word 主互操作程序集 (PIA) 引用和 Visual Basic for Applications (VBA) 对象模型引用。  
   
 ### <a name="primary-interop-assembly-reference"></a>主互操作程序集引用  
- Word PIA 参考文档介绍了 Word 的主互操作程序集中的类型。 本文档可从以下位置获取： [Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
+ Word PIA 参考文档介绍了 Word 的主互操作程序集中的类型。 本文档可从以下位置： [Word 2010 主互操作程序集引用](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
- 有关 Word PIA 设计的详细信息（例如 PIA 中类和接口之间的差别以及 PIA 中事件的实现方式），请参阅 [Office 主互操作程序集中的类和接口的概述](http://go.microsoft.com/fwlink/?LinkId=189592)。  
+ 有关设计的 Word PIA，例如在 PIA 和如何实现 PIA 中的事件中类和接口之间的差别的详细信息请参阅[的中的 Office 主互操作程序集类和接口概述](http://go.microsoft.com/fwlink/?LinkId=189592).  
   
 ### <a name="vba-object-model-reference"></a>VBA 对象模型引用  
- VBA 对象模型引用在将 Word 对象模型公开到 VBA 代码时对该对象进行了记录。 有关详细信息，请参阅 [Word 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199772)。  
+ VBA 对象模型引用在将 Word 对象模型公开到 VBA 代码时对该对象进行了记录。 有关详细信息，请参阅[Word 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199772)。  
   
- VBA 对象模型引用中的所有对象和成员都与 Word PIA 中的类型和成员相对应。 例如，VBA 对象模型引用中的文档对象对应于<xref:Microsoft.Office.Interop.Word.Document>与 Word PIA 中的对象。 虽然 VBA 对象模型引用提供了大多数属性、方法和事件的代码示例，但如果要在用 Visual Studio 创建的 Word 项目中使用本引用中的 VBA 代码，必须将其转换为 Visual Basic 或 Visual C# 代码。  
+ VBA 对象模型引用中的所有对象和成员都与 Word PIA 中的类型和成员相对应。 例如，VBA 对象模型引用中的文档对象对应于<xref:Microsoft.Office.Interop.Word.Document>Word PIA 中的对象。 虽然 VBA 对象模型引用提供了大多数属性、方法和事件的代码示例，但如果要在用 Visual Studio 创建的 Word 项目中使用本引用中的 VBA 代码，必须将其转换为 Visual Basic 或 Visual C# 代码。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)   
- [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)   
+ [通过使用扩展的对象自动化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [使用文档](../vsto/working-with-documents.md)   
  [使用文档中的文本](../vsto/working-with-text-in-documents.md)   
  [使用表](../vsto/working-with-tables.md)   
- [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
+ [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
  [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   

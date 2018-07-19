@@ -1,5 +1,5 @@
 ---
-title: MFC 的调试技术 |Microsoft 文档
+title: MFC 调试技术 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -27,11 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2ae47be54f175f798e321da7644540f8ea5049
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37059253"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。  
@@ -62,16 +63,16 @@ ms.lasthandoff: 04/18/2018
     -   [生成带有选定模块的调试信息的 MFC 应用程序](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC 提供特殊[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)硬编码中的断点源代码的函数：  
+ MFC 提供特殊[AfxDebugBreak](/cpp/mfc/reference/diagnostic-services#afxdebugbreak)函数进行硬编码中的断点的源代码：  
   
-```  
+```cpp
 AfxDebugBreak( );  
   
 ```  
   
  在 Intel 平台上， `AfxDebugBreak` 将生成以下代码，它在源代码而不是内核代码中中断：  
   
-```  
+```cpp
 _asm int 3  
 ```  
   
@@ -86,7 +87,7 @@ _asm int 3
   
  下面的示例显示几种 **TRACE** 宏的用法。 与 `printf`类似， **TRACE** 宏可处理许多参数。  
   
-```  
+```cpp
 int x = 1;  
 int y = 16;  
 float z = 32.0;  
@@ -101,7 +102,7 @@ TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
   
  TRACE 宏可正确处理 char * 和 wchar_t\*参数。 下面的示例说明如何将 TRACE 宏与不同字符串参数类型配合使用。  
   
-```  
+```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
   
 TRACE( L"This is a test of the TRACE macro that uses a UNICODE string: %s %d\n", L"The number is:", 2);  
@@ -122,7 +123,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  如果不想重写整个程序来使用 `DEBUG_NEW` 代替 **new**，则可以在源文件中定义下面的宏：  
   
-```  
+```cpp
 #define new DEBUG_NEW  
 ```  
   
@@ -143,7 +144,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 -   如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
   
-    |值|描述|  
+    |“值”|描述|  
     |-----------|-----------------|  
     |**allocMemDF**|打开诊断内存分配器（默认）。|  
     |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
@@ -159,15 +160,15 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 拍摄内存快照  
   
-1.  创建一个 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 对象并调用 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) 成员函数。 这将创建第一个内存快照。  
+1.  创建[CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2)对象，并调用[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)成员函数。 这将创建第一个内存快照。  
   
 2.  在程序执行了其内存分配和释放操作以后，创建另一个 `CMemoryState` 对象，并为该对象调用 `Checkpoint` 。 这将得到内存使用的第二个快照。  
   
-3.  创建第三个 `CMemoryState` 对象，并调用其 [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 成员函数，同时将前两个 `CMemoryState` 对象作为参数提供。 如果这两个内存状态之间有差异，则 `Difference` 函数将返回非零值。 这指示有些内存块尚未被释放。  
+3.  创建第三个`CMemoryState`对象，并调用其[cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference)成员函数，作为自变量提供前两个`CMemoryState`对象。 如果这两个内存状态之间有差异，则 `Difference` 函数将返回非零值。 这指示有些内存块尚未被释放。  
   
      本示例显示相应的代码：  
   
-    ```  
+    ```cpp
     // Declare the variables needed  
     #ifdef _DEBUG  
         CMemoryState oldMemState, newMemState, diffMemState;  
@@ -188,18 +189,18 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     请注意，内存检查语句由括起来**#ifdef _DEBUG / #endif**阻止，以便它们仅在程序的调试版本中进行编译。  
+     请注意，内存检查语句由括起来 **#ifdef _DEBUG / #endif**阻止，以便它们仅在应用程序的调试版本中进行编译。  
   
-     既然已经知道存在内存泄漏，便可以使用另一个成员函数 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) ，该函数将有助于对其进行定位。  
+     既然已经知道存在内存泄漏，可以使用另一个成员函数[cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics)以帮助你找到它。  
   
  [在本主题中](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 查看内存统计信息  
- [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) 函数监视两个内存状态对象，并检测起始状态和结束状态之间未从堆释放的所有对象。 在拍摄内存快照并使用 `CMemoryState::Difference`对它们进行比较后，可以调用 [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) 来获取有关尚未释放的对象的信息。  
+ [Cmemorystate:: Difference](/cpp/mfc/reference/cmemorystate-structure#difference)函数查找在两个内存状态对象，并且检测到不释放开始和结束状态之间的堆中的所有对象。 在拍摄内存快照并它们进行比较后使用`CMemoryState::Difference`，可以调用[cmemorystate:: Dumpstatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics)以获取有关尚未释放的对象的信息。  
   
  请看下面的示例：  
   
-```  
+```cpp  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -209,7 +210,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  从该示例得出的转储示例如下所示：  
   
-```  
+```cpp
 0 bytes in 0 Free Blocks  
 22 bytes in 1 Object Blocks  
 45 bytes in 4 Non-Object Blocks  
@@ -230,7 +231,7 @@ Total allocations: 67 bytes
  [在本主题中](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_object_dumps"></a> 采用对象转储  
- 在 MFC 程序中，你可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince)来转储堆上尚未释放的所有对象的描述。 `DumpAllObjectsSince` 转储从最后一个 [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint)。 如果未发生 `Checkpoint` 调用，则 `DumpAllObjectsSince` 将转储当前在内存中的所有对象和非对象。  
+ 在 MFC 程序中，可以使用[cmemorystate:: Dumpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)来转储堆上尚未释放的所有对象的说明。 `DumpAllObjectsSince` 转储从最后一个的所有对象[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)。 如果未发生 `Checkpoint` 调用，则 `DumpAllObjectsSince` 将转储当前在内存中的所有对象和非对象。  
   
 > [!NOTE]
 >  必须先 [启用诊断跟踪](#BKMK_Enabling_Memory_Diagnostics)，然后才能使用 MFC 对象转储。  
@@ -240,7 +241,7 @@ Total allocations: 67 bytes
   
  以下代码通过比较两个内存状态来测试内存泄漏，并在检测到泄漏时转储所有对象。  
   
-```  
+```cpp
 if( diffMemState.Difference( oldMemState, newMemState ) )  
 {  
    TRACE( "Memory leaked!\n" );  
@@ -250,7 +251,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
   
  转储的内容如下所示：  
   
-```  
+```cmd
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -278,7 +279,7 @@ Phone #: 581-0215
 ####  <a name="BKMK_Interpreting_memory_dumps"></a> 解释内存转储  
  查看此对象转储的更详细信息：  
   
-```  
+```cmd
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
 {4} strcore.cpp(80) : non-object block at $00A751F8, 5 bytes long  
 {3} strcore.cpp(80) : non-object block at $00A751D6, 6 bytes long  
@@ -293,7 +294,7 @@ Phone #: 581-0215
   
  生成该转储的程序只有两个显式分配，一个在框架上，另一个在堆上：  
   
-```  
+```cpp
 // Do your memory allocations and deallocations.  
 CString s("This is a frame variable");  
 // The next object is a heap object.  
@@ -302,7 +303,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  `CPerson` 构造函数取三个参数（指向 `char`的指针），用于初始化 `CString` 成员变量。 在内存转储中，可以看到 `CPerson` 对象以及三个非对象块（3、4 和 5）。 它们保存 `CString` 成员变量的字符，并且在调用 `CPerson` 对象析构函数时不会被删除。  
   
- 块号 2 是 `CPerson` 对象本身。 `$51A4` 表示块地址，其后是对象内容，该内容在 `CPerson`DumpAllObjectsSince`Dump` 调用它时采用 [::](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince)输出。  
+ 块号 2 是 `CPerson` 对象本身。 `$51A4` 表示块地址，其后的对象，输出的内容`CPerson`::`Dump`被调用时[DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)。  
   
  可以因为块号 1 的序号和大小（与框架 `CString` 变量中的字符数匹配）而猜测其与 `CString` 框架变量相关联。 框架上分配的变量在框架超出范围后自动释放。  
   
@@ -310,7 +311,7 @@ CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );
   
  一般情况下，你不必担心与框架变量关联的堆对象，因为它们在框架变量超出范围后被自动释放。 为避免内存诊断转储混乱，应将对 `Checkpoint` 的调用定位在框架变量的范围以外。 例如，在前面的分配代码周围放置范围括号，如下所示：  
   
-```  
+```cpp
 oldMemState.Checkpoint();  
 {  
     // Do your memory allocations and deallocations ...  
@@ -323,7 +324,7 @@ newMemState.Checkpoint();
   
  放置了范围括号后，该示例的内存转储如下所示：  
   
-```  
+```cmd 
 Dumping objects ->  
   
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -338,7 +339,7 @@ Phone #: 581-0215
   
  **非对象分配**  
   
- 请注意，一些分配是对象分配（如 `CPerson`），另外一些则是非对象分配。 "非对象分配"是分配的对象不派生自`CObject`或者基元 C 类型，例如分配`char`， `int`，或`long`。 如果 **CObject**派生的类分配额外的空间（例如用于内部缓冲区），则那些对象将既显示对象分配，也显示非对象分配。  
+ 请注意，一些分配是对象分配（如 `CPerson`），另外一些则是非对象分配。 "非对象分配"所分配的对象不是派生自`CObject`或者基元 C 类型，如分配`char`， `int`，或`long`。 如果 **CObject**派生的类分配额外的空间（例如用于内部缓冲区），则那些对象将既显示对象分配，也显示非对象分配。  
   
  **防止内存泄漏**  
   
@@ -346,7 +347,7 @@ Phone #: 581-0215
   
  但对于在堆中分配的对象，则必须显式删除对象以防止内存泄漏。 若要清理上个示例中的最后一个内存泄漏，请删除堆中分配的 `CPerson` 对象，如下所示：  
   
-```  
+```cpp  
 {  
     // Do your memory allocations and deallocations.  
     CString s("This is a frame variable");  
@@ -359,7 +360,7 @@ Phone #: 581-0215
  [在本主题中](#BKMK_In_this_topic)  
   
 ####  <a name="BKMK_Customizing_object_dumps"></a> 自定义对象转储  
- 当从 [CObject](/cpp/mfc/reference/cobject-class)派生类时，在使用 `Dump` DumpAllObjectsSince [将对象转储到](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) “输出”窗口 [时，可以重写](../ide/reference/output-window.md)成员函数以提供附加信息。  
+ 当您从派生类[CObject](/cpp/mfc/reference/cobject-class)，可以重写`Dump`成员函数以在使用时提供的其他信息[DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince)对象转储到[输出窗口](../ide/reference/output-window.md)。  
   
  `Dump` 函数将对象的成员变量的文本化表示形式写入转储上下文 ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class))。 转储上下文类似于 I/O 流。 可以使用追加运算符 (**<<**) 向 `CDumpContext`。  
   
@@ -367,7 +368,7 @@ Phone #: 581-0215
   
  `Dump` 函数的声明如下所示：  
   
-```  
+```cpp  
 class CPerson : public CObject  
 {  
 public:  
@@ -385,7 +386,7 @@ public:
   
  在下面的示例中， `Dump` 函数先为其基类调用 `Dump` 函数。 然后，它将每个成员变量的简短说明与该成员的值一起写入诊断流。  
   
-```  
+```cpp  
 #ifdef _DEBUG  
 void CPerson::Dump( CDumpContext& dc ) const  
 {  
@@ -401,7 +402,7 @@ void CPerson::Dump( CDumpContext& dc ) const
   
  必须提供 `CDumpContext` 参数以指定转储输出的目的地。 MFC 的“Debug”版本提供名为 `CDumpContext` 的预定义 `afxDump` 对象，它将输出发送到调试器。  
   
-```  
+```cpp 
 CPerson* pMyPerson = new CPerson;  
 // Set some fields of the CPerson object.  
 //...  
@@ -416,7 +417,7 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 减小 MFC 调试生成的大小  
  大型 MFC 应用程序的调试信息会占用大量磁盘空间。 你可以使用以下过程之一减小该大小：  
   
-1.  重新生成使用 MFC 库[/Z7、 /Zi、 /ZI （调试信息格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)选项，而不是**/Z7**。 这些选项生成单个程序数据库 (PDB) 文件，该文件包含整个库的调试信息，减少了冗遇并节省了空间。  
+1.  重新生成 MFC 库使用[/Z7、 /Zi、 /ZI （调试信息格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)选项，而不是 **/z7**。 这些选项生成单个程序数据库 (PDB) 文件，该文件包含整个库的调试信息，减少了冗遇并节省了空间。  
   
 2.  重新生成没有调试信息的 MFC 库 (没有[/Z7、 /Zi、 /ZI （调试信息格式）](/cpp/build/reference/z7-zi-zi-debug-information-format)选项)。 在此情况下，缺少调试信息将妨碍你在 MFC 库代码内使用大多数调试器功能，但由于 MFC 库已完全调试，所以可能不会有问题。  
   
@@ -433,15 +434,15 @@ pMyPerson->Dump( afxDump );
   
 3.  首先，将创建一个新的项目配置。  
   
-    1.  在**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
+    1.  在中**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
   
-    2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在**配置**列中，选择**\<新建 … >**。  
+    2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
   
     3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
   
     4.  在 **“从此处复制设置”** 列表中，选择 **“Release”**。  
   
-    5.  单击 **“确定”** 以关闭 **“新建项目配置”**对话框。  
+    5.  单击 **“确定”** 以关闭 **“新建项目配置”** 对话框。  
   
     6.  关闭 **“配置管理器”** 对话框。  
   
@@ -451,7 +452,7 @@ pMyPerson->Dump( afxDump );
   
     2.  在项目设置网格中展开 **“项目默认值”** （如有必要）。  
   
-    3.  在 **“项目默认值”**下找到 **“MFC 的使用”**。 当前设置将显示在网格的右列中。 单击当前设置并将它更改为 **“在静态库中使用 MFC”**。  
+    3.  在 **“项目默认值”** 下找到 **“MFC 的使用”**。 当前设置将显示在网格的右列中。 单击当前设置并将它更改为 **“在静态库中使用 MFC”**。  
   
     4.  在 **“属性页”** 对话框的左窗格中，打开 **“C/C++”** 文件夹并选定 **“预处理器”**。 在“属性”网格中找到 **“预处理器定义”** ，并用“_DEBUG”替换“NDEBUG”。  
   
@@ -475,7 +476,7 @@ pMyPerson->Dump( afxDump );
   
     6.  单击 **“调试信息格式”** 设置并为调试信息选择所需选项（通常为 **“/ZI”**）。  
   
-    7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 你可以通过更改将关闭预编译标头**创建/使用预编译标头**中设置**\<项目 > 属性**对话框 (**配置属性**文件夹， **C/c + +**子文件夹，**预编译标头**类别)。  
+    7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 可以通过更改来关闭预编译标头**创建/使用预编译标头**中设置**\<项目 > 属性**对话框中 (**配置属性**文件夹中， **C/c + +** 子文件夹中，**预编译标头**类别)。  
   
 7.  从 **“生成”** 菜单中选定 **“生成”** 以重新生成已过期的项目文件。  
   

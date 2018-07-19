@@ -12,29 +12,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8278066a12df0d195770391d0b2f3144ba16487d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1bca40a093f228f22919b7734e387a4bc191316c
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972262"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756365"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活动设计器
 
 **Compensate**活动设计器用于创建和配置<xref:System.Activities.Statements.Compensate>活动。
 
 ## <a name="the-compensate-activity"></a>Compensate 活动
- <xref:System.Activities.Statements.Compensate> 活动为 <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> 中包含的活动显式调用 <xref:System.Activities.Statements.CompensableActivity>。 如果 <xref:System.Activities.Statements.Compensate> 活动未在 <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> 的 <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>、<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> 或 <xref:System.Activities.Statements.CompensableActivity> 中使用，则必须指定 <xref:System.Activities.Statements.Compensate.Target%2A> 属性。
 
- 由 <xref:System.Activities.Statements.CompensationToken> 指定的 <xref:System.Activities.Statements.Compensate.Target%2A> 提供了在 <xref:System.Activities.Statements.CompensableActivity> 的 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 成功完成之后显式确认或补偿 <xref:System.Activities.Statements.CompensableActivity> 的方法。
+<xref:System.Activities.Statements.Compensate> 活动为 <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A> 中包含的活动显式调用 <xref:System.Activities.Statements.CompensableActivity>。 如果 <xref:System.Activities.Statements.Compensate> 活动未在 <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A> 的 <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>、<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> 或 <xref:System.Activities.Statements.CompensableActivity> 中使用，则必须指定 <xref:System.Activities.Statements.Compensate.Target%2A> 属性。
+
+由 <xref:System.Activities.Statements.CompensationToken> 指定的 <xref:System.Activities.Statements.Compensate.Target%2A> 提供了在 <xref:System.Activities.Statements.CompensableActivity> 的 <xref:System.Activities.Statements.CompensableActivity.Body%2A> 成功完成之后显式确认或补偿 <xref:System.Activities.Statements.CompensableActivity> 的方法。
 
 ### <a name="using-the-compensate-activity-designer"></a>使用 Compensate 活动设计器
- **Compensate**在找不到活动设计器**事务**类别**工具箱**。 若要打开**工具箱**，选择**工具箱**工作流设计器左侧的选项卡 (或者，选择**工具栏**从**视图**菜单上或 CTRL + ALT + X。)
 
- **Compensate**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要放置活动的如内<xref:System.Activities.Statements.Sequence>。 删除活动设计器创建<xref:System.Activities.Statements.Compensate>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的补偿。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑值**Compensate**活动设计器中或在**DisplayName**属性网格的框。
+**Compensate**活动设计器可在**事务**类别**工具箱**。 若要打开**工具箱**，选择**工具箱**左侧和右侧的工作流设计器上的选项卡。 或者，选择**工具箱**从**视图**菜单中或按**Ctrl**+**Alt** + **X**。
+
+**Compensate**活动设计器可以从拖动**工具箱**无论在何处放置活动的如内放置到工作流设计器图面和<xref:System.Activities.Statements.Sequence>。 放置在活动设计器创建<xref:System.Activities.Statements.Compensate>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>的补偿。 <xref:System.Activities.Activity.DisplayName%2A>值可以在的标头中编辑**补偿**活动设计器中或在**DisplayName**属性网格的框。
 
 ### <a name="the-compensate-properties"></a>Compensate 属性
- 下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A>属性可以在属性网格中或在工作流设计器图面上编辑。 编辑<xref:System.Activities.Statements.Compensate.Target%2A>在属性网格中的属性。
+
+下表列出 <xref:System.Activities.Statements.CancellationScope> 属性并说明如何在设计器中使用它们。 <xref:System.Activities.Activity.DisplayName%2A>属性可以在属性网格中或在工作流设计器图面上进行编辑。 编辑<xref:System.Activities.Statements.Compensate.Target%2A>属性网格中的属性。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSectionContribs |Microsoft 文档
+title: IDiaEnumSectionContribs |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47577b3a2abfef3b6c6741d2e25af418318340ce
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5903c276b82f8b689e67c20310ccc6d6a6514896
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463772"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057055"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-枚举数据源中包含的各个部分参与意见。  
+枚举数据源中包含的各个部分贡献。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,21 +35,21 @@ IDiaEnumSectionContribs : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|检索[IEnumVARIANT 接口](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)的此枚举器的版本。|  
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|检索部分的贡献的数。|  
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|通过索引中检索部分的贡献。|  
-|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|检索指定的数目的枚举序列中的部分贡献。|  
-|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|跳过指定的数目的枚举序列中的部分贡献。|  
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|  
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|检索部分发布内容的数量。|  
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|通过索引来检索部分发布内容。|  
+|[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|检索指定的数目的枚举序列中的部分发布内容。|  
+|[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|跳过枚举序列中的部分发布内容的指定的数目。|  
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|将枚举序列重置到开头。|  
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="note-for-callers"></a>调用方的说明  
+## <a name="note-for-callers"></a>请注意，调用方  
  获取此接口从[idiasession:: Getenumtables](../../debugger/debug-interface-access/idiasession-getenumtables.md)方法。 请参阅详细信息的示例。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何获取 (`GetEnumSectionContribs`函数) 并使用 (`ShowSectionContribs`函数)`IDiaEnumSectionContribs`接口。 使用部分的贡献的更完整示例，请参阅[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)接口。  
+ 此示例演示如何获取 (`GetEnumSectionContribs`函数)，并使用 (`ShowSectionContribs`函数)`IDiaEnumSectionContribs`接口。 使用部分发布内容的更完整示例，请参阅[IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)接口。  
   
 ```C++  
   

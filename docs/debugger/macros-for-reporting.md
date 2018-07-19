@@ -1,5 +1,5 @@
 ---
-title: 用于报告的宏 |Microsoft 文档
+title: 用于报告的宏 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,24 +24,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd2dbb0651aa35243090fb554fa9142573e04e04
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 57b254323fac5d670cd44399cd8d22c9530c4510
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476905"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056597"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
-你可以使用 **_RPTn**，和 **_RPTFn** CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 在你的发布中自动消失这些宏生成时 **_DEBUG**未定义的因此没有无需将它们括在 **#ifdef**s。  
+对于调试，你可以使用 **_RPTn**并 **_RPTFn**在 CRTDBG 中定义的宏。H、 要替换的使用`printf`语句。 无需在 inclose **#ifdef**s，因为它们自动不会显示在你的发布生成时 **_DEBUG**并不定义。  
   
 |宏|描述|  
 |-----------|-----------------|  
-|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|向四个自变量输出一个消息字符串和零。 对于从 _RPT1 到 **_RPT4**，消息字符串作为自变量的 printf 样式格式化字符串。|  
-|**_RPTF0**， **_RPTF1**， **，_RPTF2**， **_RPTF4**|与相同 **_RPTn**，但这些宏还输出宏所在的位置的文件名和行号。|  
+|**_RPT0**， **_RPT1**， **_RPT2**， **_RPT3**， **_RPT4**|向四个自变量输出一个消息字符串和零。 对于从 _RPT1 到 **_RPT4**，消息字符串作为自变量的 printf 样式格式设置字符串。|  
+|**_RPTF0**， **_RPTF1**， **_RPTF2**， **_RPTF4**|与相同 **_RPTn**，但这些宏还输出宏所在的位置的文件名称和行号。|  
   
  请看下面的示例：  
   
-```  
+```cpp
 #ifdef _DEBUG  
     if ( someVar > MAX_SOMEVAR )  
         printf( "OVERFLOW! In NameOfThisFunc( ),  
@@ -50,15 +50,15 @@ ms.locfileid: "31476905"
 #endif  
 ```  
   
- 此代码的值输出`someVar`和`otherVar`到**stdout**。 可以使用以下对 `_RPTF2` 的调用报告同样的值另加文件名和行号：  
+ 此代码将输出的值`someVar`并`otherVar`到**stdout**。 可以使用以下对 `_RPTF2` 的调用报告同样的值另加文件名和行号：  
   
-```  
+```cpp
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 如果发现某特定应用程序需要调试报告，而 C 运行库提供的宏不提供该报告，则可以编写专门设计的宏来符合您自己的需求。 在其中一个头文件，例如，你可能包括代码以下项来定义宏名**ALERT_IF2**:  
+您可能会发现特定应用程序需要调试报告功能，它不提供用 C 运行库提供的宏。 对于这些情况下，可以编写专门为适合你自己的需求而设计的宏。 在其中一个标头文件，例如，可以包含代码如以下命令以定义一个宏调用**ALERT_IF2**:  
   
-```  
+```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */  
 #define  ALERT_IF2(expr, msg, arg1, arg2)  do {} while (0)  
 #else                           /* For DEBUG builds   */  
@@ -72,14 +72,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- 一次调用**ALERT_IF2**无法执行的所有功能**printf**本主题开头的代码：  
+ 调用一次**ALERT_IF2**可以执行的所有函数**printf**代码：  
   
-```  
+```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- 因为可以方便地更改自定义宏，以便向不同目标报告或多或少的信息（取决于怎样更方便），所以该方法在调试需求不断发展时尤其有用。  
+ 您可以轻松更改自定义的宏来增加或减少报告到不同的目标的信息。 随着在调试需求的发展，这种方法是特别有用。  
   
 ## <a name="see-also"></a>请参阅  
  [CRT 调试方法](../debugger/crt-debugging-techniques.md)

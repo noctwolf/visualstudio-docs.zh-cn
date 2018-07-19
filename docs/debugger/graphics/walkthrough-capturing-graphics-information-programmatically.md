@@ -1,5 +1,5 @@
 ---
-title: 演练： 以编程方式捕获图形信息 |Microsoft 文档
+title: 演练： 以编程方式捕获图形信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2caae8a3ef2a6342cf98094994d5ebccbe3275
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 641e98d1bbe5d54f69f458cec6642ceac484eff1
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477389"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433198"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 你可以使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断以编程方式从 Direct3D 应用中捕获图形信息。  
@@ -28,7 +28,7 @@ ms.locfileid: "31477389"
 -   当在手动测试中难以预计和捕获呈现问题，但可用通过使用有关运行时的应用状态信息以编程方式预测呈现问题时，调用 `CaptureCurrentFrame`。  
   
 ##  <a name="CaptureDX11_2"></a> Windows 10 中的编程捕获  
- 本部分演练演示了在 Windows 10 中，它使用可靠捕获方法使用 DirectX 11.2 API 的应用中的编程捕获。
+ 本演练的本部分演示了 Windows 10 中，它使用可靠捕获方法上使用 DirectX 11.2 API 的应用中的编程捕获。
   
  本部分显示如何完成这些任务：  
   
@@ -39,7 +39,7 @@ ms.locfileid: "31477389"
 -   捕获图形信息  
   
 > [!NOTE]
->  以前的编程捕获的实现依赖于远程工具的 Visual Studio for[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来提供捕获功能。
+>  以前的编程捕获的实现针对 Visual studio 远程工具依赖于[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来提供捕获功能。
   
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>准备你的应用以使用编程捕获  
  若要在应用中使用编程捕获，它必须包括必要的标头。 这些标头是 Windows 10 SDK 的一部分。  
@@ -48,7 +48,7 @@ ms.locfileid: "31477389"
   
 -   将这些标头包含在你要在其中定义 IDXGraphicsAnalysis 接口的源文件中：  
   
-    ```  
+    ```cpp
     #include <DXGItype.h>  
     #include <dxgi1_2.h>  
     #include <dxgi1_3.h>  
@@ -56,7 +56,7 @@ ms.locfileid: "31477389"
     ```  
   
     > [!IMPORTANT]
-    >  不包括标头文件 vsgcapture.h—which 支持以编程方式捕获上 Windows 8.0 及更早版本-若要在 Windows 10 应用中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包含包含 d3d11_2.h 标头后，编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则应用将不会启动。  
+    >  不包括标头文件 vsgcapture.h—which 支持编程捕获在 Windows 8.0 及更早版本，若要在 Windows 10 应用中执行编程捕获。 此标头无法与 DirectX 11.2 兼容。 如果此文件包括包含 d3d11_2.h 标头后，则编译器会发出警告。 如果之前 d3d11_2.h 包含 vsgcapture.h，则不会启动该应用程序。  
   
     > [!NOTE]
     >  如果你的计算机上安装了 DirectX SDK（2010 年 6 月），并且你的项目的包括路径包含 `%DXSDK_DIR%includex86`，请将它移动到包括路径末尾。 针对你的库路径执行相同操作。  
@@ -65,20 +65,20 @@ ms.locfileid: "31477389"
  在可以从 DirectX 11.2 中捕获图形信息之前，你必须获取 DXGI 调试接口。  
   
 > [!IMPORTANT]
->  使用编程捕获时，你仍必须运行你的应用在图形诊断下 (中的 Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 或下[命令行捕获工具](command-line-capture-tool.md)。  
+>  当使用编程捕获时，必须仍运行你的应用在图形诊断下 (中的 Alt + F5 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 或下[命令行捕获工具](command-line-capture-tool.md)。  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>获取 IDXGraphicsAnalysis 接口  
   
 -   请使用以下代码挂钩 DXGI 调试接口的 IDXGraphicsAnalysis 接口。  
   
-    ```  
+    ```cpp
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
     HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));  
     ```  
   
-     请务必检查`HRESULT`返回[则 dxgigetdebuginterface1 将](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx)以确保你使用它之前获得一个有效的接口：  
+     请务必检查`HRESULT`返回的[DXGIGetDebugInterface1](https://msdn.microsoft.com/library/windows/desktop/dn457937(v=vs.85).aspx)以确保在使用之前获取有效的接口：  
   
-    ```  
+    ```cpp
     if (FAILED(getAnalysis))  
     {  
         // Abort program or disable programmatic capture in your app.  
@@ -95,7 +95,7 @@ ms.locfileid: "31477389"
   
 - 若要开始捕获图形信息，请使用 `BeginCapture`：  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->BeginCapture();  
     ...  
@@ -103,13 +103,13 @@ ms.locfileid: "31477389"
   
      调用 `BeginCapture` 后捕获会立即开始；它不会等待下一帧开始。 显示当前帧或调用 `EndCapture`后，捕获将停止：  
   
-    ```  
+    ```cpp
     ...  
     pGraphicsAnalysis->EndCapture();  
     ...  
     ```  
 
-- 在调用后`EndCapture`，释放图形对象。 
+- 在调用`EndCapture`，释放图形对象。 
   
 ## <a name="next-steps"></a>后续步骤  
  本演练演示了如何采用编程方式捕获图形信息。 下一步，请考虑此选项：  

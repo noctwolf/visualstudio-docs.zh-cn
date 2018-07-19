@@ -14,40 +14,51 @@ ms.assetid: 9357a724-026e-4a3d-a03a-f14635064ec6
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a8469deaf13c12200aec6a68eed9e78c4e9b8543
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 815fe7b7f839adeb3204e33bb532b70909d92b53
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31896985"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056382"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300：指定 MessageBoxOptions
+
 |||
 |-|-|
 |TypeName|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
 |类别|Microsoft.Globalization|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 一个方法调用的重载<xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>方法不采用<xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>自变量。
+
+一个方法调用的重载<xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>方法不采用<xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName>参数。
 
 ## <a name="rule-description"></a>规则说明
- 若要显示的区域性，使用从右到左阅读顺序，正确的消息框<xref:System.Windows.Forms.MessageBoxOptions>和<xref:System.Windows.Forms.MessageBoxOptions>的成员<xref:System.Windows.Forms.MessageBoxOptions>枚举必须传递给<xref:System.Windows.Forms.MessageBox.Show%2A>方法。 检查<xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName>要确定是否使用从右到左阅读顺序的包含控件的属性。
+
+若要显示的区域性，使用从右到左的阅读顺序正确的消息框，请将传递[MessageBoxOptions.RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>)并[MessageBoxOptions.RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>)字段设置为<xref:System.Windows.Forms.MessageBox.Show%2A>方法。 检查<xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName>包含的控件，以确定是否使用从右到左的阅读顺序的属性。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，调用的重载<xref:System.Windows.Forms.MessageBox.Show%2A>采用的方法<xref:System.Windows.Forms.MessageBoxOptions>自变量。
+
+若要修复此规则的冲突，请调用的重载<xref:System.Windows.Forms.MessageBox.Show%2A>方法采用<xref:System.Windows.Forms.MessageBoxOptions>参数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告时将不会使用从右到左阅读顺序区域性本地化代码库。
+
+它可以安全地禁止显示此规则的警告时不会使用从右到左阅读顺序的区域性本地化的代码库。
 
 ## <a name="example"></a>示例
- 下面的示例演示的方法，显示的选项，适用于区域性的阅读顺序的消息框。 资源文件，而不会显示，需要将示例生成。 按照用于不使用资源文件将示例生成并测试从右到左功能的示例中的注释。
 
- [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
- [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]
+下面的示例演示显示一个消息框，具有适用于区域性的阅读顺序的选项的方法。 所需的资源文件，而不会显示，若要生成示例。 按照此示例中生成该示例不使用资源文件，并要测试的从右到左功能中的注释。
+
+[!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
+[!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Resources.ResourceManager?displayProperty=fullName> [桌面应用中的资源](/dotnet/framework/resources/index)
+
+- <xref:System.Resources.ResourceManager?displayProperty=fullName>
+- [桌面应用中的资源 (.NET Framework)](/dotnet/framework/resources/index)

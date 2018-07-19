@@ -14,16 +14,20 @@ ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 056b1d254b8544f9a1f0abe364bcb40f15235e64
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d84fdd4f352a823614832cc8d5d1b9e57c7a9dfb
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899475"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058069"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403：自动布局类型不应对 COM 可见
+
 |||
 |-|-|
 |TypeName|AutoLayoutTypesShouldNotBeComVisible|
@@ -32,27 +36,35 @@ ms.locfileid: "31899475"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 组件对象模型 (COM) 可见值类型将标有<xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>属性设置为<xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>。
+
+组件对象模型 (COM) 可见值类型将标有<xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName>属性设置为<xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>规则说明
- <xref:System.Runtime.InteropServices.LayoutKind> 由公共语言运行时管理布局类型。 这些类型的布局可以将中断要求特定布局的 COM 客户端的.NET framework 的版本之间发生更改。 请注意，如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性未指定，C# 中， [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，和 c + + 编译器指定<xref:System.Runtime.InteropServices.LayoutKind>为值类型的布局。
 
- 除非以其他方式标记，所有公共的非泛型类型都是对 COM 可见所有的非公共和泛型类型不可见给 com。 但是，若要减少误报，此规则要求要明确表述; 的类型的 COM 可见包含程序集都必须标记为<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>设置为`false`和类型都必须标记为<xref:System.Runtime.InteropServices.ComVisibleAttribute>设置为`true`。
+<xref:System.Runtime.InteropServices.LayoutKind> 由公共语言运行时管理布局类型。 这些类型的布局可以更改.NET Framework 中，将中断要求特定布局的 COM 客户端的不同版本之间。 如果<xref:System.Runtime.InteropServices.StructLayoutAttribute>未指定属性，指定 C#、 Visual Basic 和 c + + 编译器[LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>)对于值类型。
+
+除非以其他方式标记，所有公共、 非泛型类型对于 COM 可见，且所有的非公共和泛型类型对 COM 不可见 但是，若要减少误报，此规则要求显式声明的类型的 COM 可见性。 包含程序集必须使用标记<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>设置为`false`和类型必须标有<xref:System.Runtime.InteropServices.ComVisibleAttribute>设置为`true`。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，将更改的值<xref:System.Runtime.InteropServices.StructLayoutAttribute>属性设为<xref:System.Runtime.InteropServices.LayoutKind>或<xref:System.Runtime.InteropServices.LayoutKind>，或使该类型对 COM 可见
+
+若要修复此规则的冲突，请更改的值<xref:System.Runtime.InteropServices.StructLayoutAttribute>归于[LayoutKind.Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>)或[LayoutKind.Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)，或使类型对 COM 不可见
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示满足该规则的类型和类型的与该规则冲突。
 
- [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
+下面的示例演示了违反规则的类型，并满足该规则的类型。
+
+[!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1408：请不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+
+[CA1408：请不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>请参阅
- [为互操作限定.NET 类型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)[与进行互操作非托管代码](/dotnet/framework/interop/index)
+
+- [限定.NET 类型的互操作](/dotnet/framework/interop/qualifying-net-types-for-interoperation)
+- [与非托管代码进行互操作](/dotnet/framework/interop/index)

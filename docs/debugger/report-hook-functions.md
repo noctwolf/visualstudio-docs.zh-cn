@@ -1,5 +1,5 @@
 ---
-title: 报告挂钩函数 |Microsoft 文档
+title: 报表挂钩函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,29 +25,29 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 562944404d3e02a2e5768fcd74c67302475e6190
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481173"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056477"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
-报告挂钩函数，使用安装[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次调用[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)生成调试报告。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  
+使用安装的报表挂钩函数[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次调用[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)生成调试报告。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  
   
-```  
+```cpp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- 指针传递给 **_CrtSetReportHook**属于类型 **_CRT_REPORT_HOOK**，如 CRTDBG 中定义。H:  
+ 将指针传递给 **_CrtSetReportHook**属于类型 **_CRT_REPORT_HOOK**CRTDBG 中定义。H:  
   
-```  
+```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- 当运行时库调用您的挂钩函数， *nRptType*自变量包含报表的类别 (**_CRT_WARN**， **_CRT_ERROR**，或 **_CRT_ASSERT**)， *szMsg*包含指向完全装配的报表消息字符串，和*retVal*指定是否`_CrtDbgReport`应继续正常执行后生成的报表或启动调试器。 (A *retVal*值为零继续执行，值为 1 启动调试器。)  
+ 当运行库调用您的挂钩函数*nRptType*参数中包含的报表的类别 (**_CRT_WARN**， **_CRT_ERROR**，或 **_CRT_ASSERT**)， *szMsg*包含的全组装型的报告消息字符串、 指针和*retVal*指定是否`_CrtDbgReport`应继续正常执行后生成的报表或启动调试器。 (A *retVal*值为零继续执行，值为 1 启动调试器。)  
   
- 如果挂钩完全处理了所涉及的消息，以便不执行进一步的报告要求，它应返回**TRUE**。 如果它返回**FALSE**，`_CrtDbgReport`通常将报告消息。  
+ 如果挂钩完全处理了所涉及的消息，以便无报告要求，它应返回 **，则返回 TRUE**。 如果它返回**FALSE**，`_CrtDbgReport`通常情况下将报告消息。  
   
 ## <a name="see-also"></a>请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   

@@ -1,5 +1,5 @@
 ---
-title: Mip-map 生成变体 |Microsoft 文档
+title: Mip 贴图生成变量 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d8804c4b559d2755dd0caec000a58751b9697b23
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475711"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433163"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 生成变量
 对非呈现器目标的纹理启用 mip 贴图。  
@@ -47,7 +47,7 @@ ms.locfileid: "31475711"
 ## <a name="example"></a>示例  
  **Mip 贴图生成**可以通过使用如下代码重现变体：  
   
-```  
+```cpp
 D3D11_TEXTURE2D_DESC texture_description;  
   
 // ...  
@@ -72,4 +72,4 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
 >  如果你希望提供你自己的 mip 级别内容而不是自动生成它们，你必须使用支持进行了 mip 贴图的纹理的图像编辑器创建纹理，然后加载该文件并将 mip 级别传递给 `CreateTexture2D`。  
   
 ## <a name="see-also"></a>请参阅  
- [Half/Quarter 纹理维度变体](half-quarter-texture-dimensions-variant.md)
+ [Half/Quarter 纹理维度变量](half-quarter-texture-dimensions-variant.md)

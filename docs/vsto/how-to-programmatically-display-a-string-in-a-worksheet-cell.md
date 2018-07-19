@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式在工作表单元格中显示字符串 |Microsoft 文档
+title: 如何： 以编程方式在工作表单元格中显示字符串
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,42 +16,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 29dafd7a3eace9350bdb045b2aee0d90a92a445c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 336ab67cd5c63a912d72b0fce3fa73c9fca5184f
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35256814"
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何：以编程方式在工作表单元格中显示字符串
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何： 以编程方式在工作表单元格中显示字符串
   此示例演示如何以编程方式在单元格中显示文本。 若要在单元格中显示文本，请使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控件或本机 Excel 范围对象。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>使用 NamedRange 控件  
- 此示例使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控件名为`message`。 该控件必须添加到设计时的文档级自定义项。 下面的代码必须将置于表类中，不在`ThisWorkbook`类。  
+## <a name="use-a-namedrange-control"></a>使用 NamedRange 控件  
+ 此示例使用<xref:Microsoft.Office.Tools.Excel.NamedRange>名为控件`message`。 该控件必须添加到在设计时为文档级自定义。 下面的代码必须放置在工作表类中，不在`ThisWorkbook`类。  
   
-#### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange 控件中显示文本  
+### <a name="to-display-text-in-a-namedrange-control"></a>若要在 NamedRange 控件中显示文本  
   
-1.  设置的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控制转移到**Hello World**。  
+1.  设置的值<xref:Microsoft.Office.Tools.Excel.NamedRange>控制对**Hello World**。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
      [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
   
-## <a name="using-a-native-excel-range"></a>使用本机 Excel 范围  
- 下面的代码以编程方式创建一个新范围，然后将值分配给它。  
+## <a name="use-a-native-excel-range"></a>使用本机 Excel 范围  
+ 下面的代码以编程方式创建新的范围，然后将值分配到它。  
   
-#### <a name="to-display-text-in-an-excel-range"></a>在 Excel 范围中显示文本  
+### <a name="to-display-text-in-an-excel-range"></a>在 Excel 区域中显示文本  
   
-1.  检索在单元格范围**A1**上`Sheet1`并将值设置为**Hello World**。  
+1.  在单元格的范围中检索**A1**上`Sheet1`并将值设置为**Hello World**。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
      [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
   
 ## <a name="see-also"></a>请参阅  
- [演练： 使用 Windows 窗体收集数据](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Office 解决方案的疑难解答](../vsto/troubleshooting-office-solutions.md)   
+ [演练： 收集数据使用 Windows 窗体](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
+ [对 Office 解决方案进行故障排除](../vsto/troubleshooting-office-solutions.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
+ [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -9,52 +9,52 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a7b580f8bd04c4fbce9518d903a568bbd0f9175a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 14df0183076125e487873bbb9865b2481e277a5b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747087"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845010"
 ---
 # <a name="add-new-connections"></a>添加新连接
 
-可以测试你的连接到数据库或服务，还可以通过使用浏览数据库内容和架构，**服务器资源管理器**，**云资源管理器**，或**SQL Server 对象资源管理器**. 这些窗口的功能在某种程度上重叠。 基本差异有：
+可以测试连接到数据库或服务，并浏览数据库内容和架构，通过使用**服务器资源管理器**，**云资源管理器**，或**SQL Server 对象资源管理器**. 某种程度上重叠的这些 windows 功能。 基本区别如下：
 
 - 服务器资源管理器
 
-   默认情况下，Visual Studio 中安装。 可以用于测试连接和查看 SQL Server 数据库、 安装，了 ADO.NET 提供程序的任何其他数据库和某些 Azure 服务。 此外显示低级别的对象，如系统性能计数器、 事件日志和消息队列。 如果数据源具有没有 ADO.NET 提供程序，它不会出现在这里，但你仍可使用它从 Visual Studio 通过以编程方式连接。
+   默认情况下，在 Visual Studio 中安装。 可用来测试连接和查看 SQL Server 数据库、 已安装，ADO.NET 提供程序的任何其他数据库和某些 Azure 服务。 此外显示了系统性能计数器、 事件日志和消息队列等低级别对象。 如果数据源不具有任何 ADO.NET 提供程序，它不会显示在此处，但您仍可以使用它从 Visual Studio 通过以编程方式连接。
 
 - Cloud Explorer
 
-   为 Visual Studio 扩展手动安装此窗口，通过选择**工具**，**扩展和更新**，**联机**， **Visual Studio 应用商店**. 提供用于浏览并连接到 Azure 服务的专用的功能。
+   作为 Visual Studio 扩展中手动安装此窗口，通过选择**工具** > **扩展和更新** > **联机** >  **Visual Studio 应用商店**。 提供浏览和连接到 Azure 服务的专用的功能。
 
 - SQL Server 对象资源管理器
 
-   使用 SQL Server Data Tools 安装和下可见**视图**菜单。 如果看不到它存在，请转到**程序和功能**在 Control Panel 中，找到 Visual Studio，然后选择**更改**选择 SQL Server Data tools 的复选框后重新运行安装程序。 使用**SQL Server 对象资源管理器**到视图的 SQL 数据库 （如果他们有的 ADO.NET 提供程序），创建新数据库、 修改架构、 创建存储的过程、 检索连接字符串、 查看数据，等等。 具有未安装的 ADO.NET 提供程序的 SQL 数据库不会显示在这里，但你仍可连接到它们以编程方式。
+   安装了 SQL Server Data Tools 和下可见**视图**菜单。 如果看不到它存在，请转到**程序和功能**控制面板中，找到 Visual Studio 中，并选择**更改**以 SQL Server Data tools 中选中的复选框后重新运行安装程序。 使用**SQL Server 对象资源管理器**到视图 SQL 数据库 （如果他们有 ADO.NET 提供程序），创建新的数据库、 修改架构、 创建存储的过程、 检索连接字符串、 查看数据，并提供更多信息。 SQL 数据库，以安装任何 ADO.NET 提供程序不会显示在此处，但你仍然可以连接到它们以编程方式。
 
-## <a name="add-a-connection-in-server-explorer"></a>在服务器资源管理器添加连接
+## <a name="add-a-connection-in-server-explorer"></a>在服务器资源管理器中添加连接
 
-若要创建与数据库的连接，请单击**添加连接**图标**服务器资源管理器**，或右键单击**服务器资源管理器**上**数据连接**节点，然后选择**添加连接**。 从这里，你可以还连接到另一台服务器、 SharePoint 服务或一项 Azure 服务上的数据库。
+若要创建与数据库的连接，请单击**添加连接**中的图标**服务器资源管理器**，或在右键单击**服务器资源管理器**上**数据连接**节点，然后选择**添加连接**。 在这里，您可以还连接到另一台服务器、 SharePoint 服务或 Azure 服务上的数据库。
 
 ![服务器资源管理器的新连接图标](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
-这将显示**添加连接**对话框。 在这里，我们输入 SQL Server LocalDB 实例的名称。
+这将显示**添加连接**对话框。 在这里，我们已经输入的 SQL Server LocalDB 实例的名称。
 
-![添加新连接](../data-tools/media/raddata-add-new-connection-dialog.png)
+![添加新的连接](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>更改提供程序
 
-如果数据源不是你所希望的内容，请单击**更改**按钮以选择新的数据源和/或新的 ADO.NET 数据提供程序。 新的提供程序可能会要求你输入凭据，具体取决于你配置的方式。
+如果数据源不是你想要请单击**更改**按钮以选择新的数据源和/或新的 ADO.NET 数据提供程序。 新的提供程序可能会要求输入凭据，具体取决于具体的配置。
 
 ![更改 AD0.NET 数据提供程序](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>测试连接
 
-在选择数据源之后，单击**测试连接**。 如果未成功，你将需要进行故障排除基于供应商的文档。
+选择数据源后，单击**测试连接**。 如果不成功，您需要进行故障排除基于供应商的文档。
 
 ![测试连接](../data-tools/media/raddata-test-connection.png)
 
-如果测试成功，你就可以创建*数据源*，这是真正含义的 Visual Studio 术语*数据模型*基于基础数据库或服务。
+如果测试成功，已准备好创建*数据源*，这是真正含义的 Visual Studio 术语*数据模型*基于基础数据库或服务。
 
 ## <a name="see-also"></a>请参阅
 

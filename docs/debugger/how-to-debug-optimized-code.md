@@ -1,5 +1,5 @@
 ---
-title: 如何： 调试优化的代码 |Microsoft 文档
+title: 如何： 调试优化的代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,19 +23,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9610f71a197c47521e2139d40aff1afde6a8a894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478075"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058505"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
 > [!NOTE]
->  [/Zo （增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项 （在 Visual Studio Update 3 中引入） 将生成为优化代码更丰富的调试信息 (未使用生成的项目 **/Od**编译器选项。 请参阅[/O 选项 （优化代码）](/cpp/build/reference/o-options-optimize-code))。 这包括对调试本地变量和内联函数的改进的支持。  
+>  [/Zo （增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译器选项 （在 Visual Studio Update 3 中引入） 生成更丰富的调试信息，为优化代码 (不使用生成的项目 **/Od**编译器选项。 请参阅[/O 选项 （优化代码）](/cpp/build/reference/o-options-optimize-code))。 这包括对调试本地变量和内联函数的改进的支持。  
 >   
 >  [编辑并继续](../debugger/edit-and-continue-visual-csharp.md)时禁用 **/Zo**使用 ocompiler 选项。  
   
@@ -59,36 +59,36 @@ ms.locfileid: "31478075"
   
 ### <a name="to-turn-on-optimization-in-a-debug-build-configuration"></a>在“Debug”生成配置中打开优化  
   
-1.  创建新项目时，请选择 `Win32 Debug`目标。 使用`Win32``Debug`目标直到程序完全调试，你就可以生成`Win32 Release`目标。 调试器并不优化 `Win32 Debug`目标。  
+1.  创建新项目时，请选择 `Win32 Debug`目标。 使用`Win32``Debug`目标已进行全面调试程序并已准备好生成之前`Win32 Release`目标。 调试器并不优化 `Win32 Debug`目标。  
   
 2.  在解决方案资源管理器中选择项目。  
   
 3.  上**视图**菜单上，单击**属性页**。  
   
-4.  在**属性页**对话框框中，请确保`Debug`中选择**配置**下拉列表。  
+4.  在中**属性页**对话框框中，请确保`Debug`中选择了**配置**下拉列表。  
   
 5.  在左侧的文件夹视图中，选择**C/c + +** 文件夹。  
   
 6.  下**c + +** 文件夹，选择`Optimization`。  
   
-7.  在右边的属性列表中找到“`Optimization`”。 它旁边的设置可能显示`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 选择其他选项之一 (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
+7.  在右边的属性列表中找到“`Optimization`”。 它旁边的设置可能显示`Disabled (` [/Od](/cpp/build/reference/od-disable-debug)`)`。 选择其他选项之一 (`Minimum Size``(`[/o1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Maximum Speed``(` [/o2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`， `Full Optimization``(` [/Ox](/cpp/build/reference/ox-full-optimization) `)`，或`Custom`)。  
   
 8.  如果为“`Custom`”选择了“`Optimization`”选项，现在便可为属性列表中显示的其他任何属性设置选项。  
   
-9. 选择配置属性 C/c + + 项目属性页中，命令行节点，并添加`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`到**其他选项**文本框。  
+9. 选择配置属性、 C/c + + 项目属性页中，命令行节点，并添加`(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)`到**其他选项**文本框。  
   
     > [!WARNING]
     >  `/Zo` 需要 Visual Studio 2013 Update 3 或更高版本。  
     >   
     >  添加`/Zo`将禁用[编辑并继续](../debugger/edit-and-continue-visual-csharp.md)。  
   
- 调试优化的代码时，使用**反汇编**窗口以了解实际创建和执行了哪些指令。 设置断点时，需要注意断点可能随指令一起移动。 例如，考虑以下代码：  
+ 当调试优化的代码时，使用**反汇编**窗口以查看实际创建和执行了哪些指令。 设置断点时，需要注意断点可能随指令一起移动。 例如，考虑以下代码：  
   
-```  
+```cpp
 for (x=0; x<10; x++)  
 ```  
   
- 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 当您查看**反汇编**窗口中，[单步执行单元](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)自动设置为指令以更大控制，这在逐句通过优化的代码时很有用。  
+ 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 当您查看**反汇编**窗口中，[单步执行单元](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)为了更好的控制，这很有用，当您单步执行优化的代码时自动设置到指令。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

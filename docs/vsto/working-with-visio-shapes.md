@@ -1,5 +1,5 @@
 ---
-title: 使用 Visio 形状 |Microsoft 文档
+title: 使用 Visio 形状
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,19 +16,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea904dd2d6d41394323b2ddc2ff3f4fcd66e5d69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 385b546e812c3772188abf3ee2d1a2767d28eb46
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258380"
 ---
-# <a name="working-with-visio-shapes"></a>使用 Visio 形状
-  此部分中的主题提供有关使用 Microsoft Office Visio 对象模型处理 Office 项目中的形状的分步过程和代码示例。  
+# <a name="work-with-visio-shapes"></a>使用 Visio 形状
+  在本部分中的主题提供有关使用 Microsoft Office Visio 对象模型处理 Office 项目中的图形的分步过程和代码示例。  
   
 |任务|过程|  
 |----------|---------------|  
-|向 Visio 文档，从模具中添加形状。|[如何：以编程方式将形状添加到 Visio 文档](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
-|从一个 Visio 页复制形状并将它们粘贴在另一页。|[如何：以编程方式在 Visio 文档中复制和粘贴形状](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
+|将形状从模具中添加到 Visio 文档。|[如何： 以编程方式向 Visio 文档添加形状](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)|  
+|从一个 Visio 页上复制形状并将其粘贴在另一页。|[如何： 以编程方式复制和粘贴 Visio 文档中的形状](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)|  
   
 ## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   

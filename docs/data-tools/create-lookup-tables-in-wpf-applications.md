@@ -1,5 +1,5 @@
 ---
-title: WPF 应用程序中创建查找表
+title: 在 WPF 应用程序中创建查找表
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,17 +18,17 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 81edef642fd2d83f6bb65c01f9a1726812ba0fca
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926530"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36757131"
 ---
-# <a name="create-lookup-tables-in-wpf-applications"></a>WPF 应用程序中创建查找表
-术语*查找表*(有时称为*查找绑定*) 描述显示从另一个表中的外键字段的值的一个数据表的信息的控件。 你可以通过将父表的主节点中创建查找表或对象中**数据源**窗口拖动到控件已绑定到一个列或相关的子表中的属性。
+# <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
+术语*查找表*(有时称为*查找绑定*) 介绍了一个控件，显示来自一个数据表基于另一个表中的外键字段的值的信息。 可以通过拖动对主节点的父表中创建查找表或对象中**数据源**窗口拖到已绑定到列或相关的子表中的属性的控件。
 
-例如，假设有一个表的`Orders`销售数据库中。 在每个记录`Orders`表包括`CustomerID`，该值指示下订单的哪些客户。 `CustomerID`是点到客户记录中的外键`Customers`表。 显示从订单的列表时`Orders`表，你可能希望显示实际的客户名而不是`CustomerID`。 由于客户名包含在`Customers`表，你需要创建一个查找表来显示客户姓名。 查找表使用`CustomerID`中的值`Orders`记录导航关系，并返回客户名称。
+例如，考虑一个表的`Orders`销售数据库中。 中的每条`Orders`表包含`CustomerID`，该值指示哪个客户下达订单。 `CustomerID`是指向客户记录中的外键`Customers`表。 当显示从订单的列表`Orders`表中，您可能希望显示实际的客户名称而不是`CustomerID`。 因为客户名称在`Customers`表，需要创建一个查找表来显示客户名称。 查找表使用`CustomerID`中的值`Orders`记录导航关系，并返回客户名称。
 
 ## <a name="to-create-a-lookup-table"></a>创建查找表的步骤
 
@@ -41,24 +41,24 @@ ms.locfileid: "31926530"
     -   对象。 有关详细信息，请参阅[绑定到 Visual Studio 中的对象](bind-objects-in-visual-studio.md)。
 
     > [!NOTE]
-    >  你可以创建查找表之前，必须作为项目的数据源存在两个相关的表或对象。
+    >  创建查找表之前，必须存在两个相关的表或对象作为项目的数据源。
 
-2.  打开**WPF 设计器**，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。
+2.  打开**WPF 设计器**，并确保该设计器包含有效的放置目标中的项容器**数据源**窗口。
 
-     有关有效放置目标的详细信息，请参阅[绑定 WPF 控件添加到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
 3.  上**数据**菜单上，单击**显示数据源**以打开**数据源**窗口。
 
-4.  展开中的节点**数据源**窗口中，直到可以看到父表或对象和相关的子表或对象。
+4.  展开中的节点**数据源**窗口中，直至你可看到父表或对象和相关的子表或对象。
 
     > [!NOTE]
-    >  相关的子表或对象是显示为在父表或对象的可展开的子节点的节点。
+    >  相关的子表或对象是显示为父表或对象下可展开子节点的节点。
 
 5.  单击子节点的下拉列表菜单，然后选择**详细信息**。
 
 6.  展开子节点。
 
-7.  在下，子节点中，单击相关子与父数据的项的下拉列表菜单。 (在前面的示例中，这是**CustomerID**节点。)选择以下类型的控件以及支持查找绑定之一：
+7.  下的子节点，单击与相关的子和父数据的项的下拉列表菜单。 (在前面的示例中，这是**CustomerID**节点。)选择支持查找绑定的控件的以下类型之一：
 
     -   **组合框**
 
@@ -67,30 +67,30 @@ ms.locfileid: "31926530"
     -   **ListView**
 
         > [!NOTE]
-        >  如果**ListBox**或**ListView**控件未出现在列表中，你可以将这些控件添加到列表。 有关信息，请参阅[设置从数据源窗口拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
+        >  如果**ListBox**或**ListView**控件不会出现在列表中，可以将这些控件添加到列表。 有关信息，请参阅[设置从数据源窗口中拖动时创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。
 
-    -   派生自任何自定义控件<xref:System.Windows.Controls.Primitives.Selector>。
+    -   任何自定义控件派生自<xref:System.Windows.Controls.Primitives.Selector>。
 
         > [!NOTE]
-        >  若要添加自定义控件添加到控件的列表你了解如何可以选择中的项**数据源**窗口中，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+        >  了解如何添加自定义控件添加到的控件列表您可以选择中的项**数据源**窗口中，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
-8.  将从子节点**数据源**窗口拖到 WPF 设计器中的容器。 (在前面的示例中，子节点是**订单**节点。)
+8.  将从子节点**数据源**窗口拖到 WPF 设计器中的容器。 (在上述示例中，子节点是**订单**节点。)
 
-     Visual Studio 将生成为每个您拖动的项创建新的数据绑定控件的 XAML。 XAML 还将添加一个新<xref:System.Windows.Data.CollectionViewSource>子表或到放置目标的资源的对象。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到表或对象。 有关详细信息，请参阅[绑定 WPF 控件添加到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     Visual Studio 将生成为每个拖动的项创建新的数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>子表或对象的拖放目标资源。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到表或对象。 有关详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-9. 将从父节点**数据源**窗口拖到前面创建的查找绑定控件。 (在前面的示例中，该父节点是**客户**节点)。
+9. 将从父节点**数据源**窗口拖到前面创建的查找绑定控件。 (在上述示例中，该父节点是**客户**节点)。
 
-     Visual Studio 设置来配置查找绑定控件上的某些属性。 下表列出了 Visual Studio 会修改的属性。 如有必要，你可以更改这些属性采用 XAML 或**属性**窗口。
+     Visual Studio 来配置查找绑定在控件上设置某些属性。 下表列出了 Visual Studio 会修改的属性。 如果有必要，您可以更改这些属性在 XAML 中或在**属性**窗口。
 
     |属性|设置说明|
     |--------------|----------------------------|
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|此属性指定的集合或用于获取在控件中显示的数据的绑定。 Visual Studio 将此属性设置为<xref:System.Windows.Data.CollectionViewSource>拖到控件的父数据。|
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|此属性指定在控件中显示的数据项的路径。 Visual Studio 后为主键，具有字符串数据类型将此属性设置为第一列或父数据中的属性。<br /><br /> 如果你想要在父数据中显示不同的列或属性，则将此属性更改为的另一个属性的路径。|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 将此属性绑定到的列或拖动到设计器的子数据的属性。 这是父数据的外键。|
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio 将此属性设置为列的路径或外键到父数据的子数据属性。|
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|此属性指定的控件中显示的数据项的路径。 Visual Studio 后为主键，具有字符串数据类型将此属性设置为第一列或父数据中的属性。<br /><br /> 如果你想要在父数据中显示不同的列或属性，此属性更改为不同的属性的路径。|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 将此属性绑定到列或拖动到设计器中的子数据的属性。 这是父数据的外键。|
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio 将此属性设置为列的路径或子数据的父数据的外键的属性。|
 
 ## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)
-- [演练：在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)
+- [演练： 在 WPF 应用程序中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)

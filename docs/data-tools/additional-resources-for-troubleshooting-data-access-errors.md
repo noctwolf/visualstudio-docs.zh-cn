@@ -1,6 +1,6 @@
 ---
-title: 有关数据访问错误疑难解答的其他资源
-ms.date: 11/04/2016
+title: 数据访问论坛
+ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
@@ -222,36 +222,36 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
 manager: douge
-robots: noindex,nofollow
 ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee3b5654bfb147c8ec04c28438784e576205de3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 677374404de8469c8a99a906638f326ae7a9ff3c
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089071"
 ---
-# <a name="additional-resources-for-troubleshooting-data-access-errors"></a>有关数据访问错误疑难解答的其他资源
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>在论坛上的数据访问错误疑难解答
 
-在 Microsoft Developer Network (MSDN) 公共论坛中，可以找到有关对错误和警告进行疑难解答的帮助。 下表列出可在 MSDN 上的相关的数据论坛。
+在 Microsoft Developer Network (MSDN) 公共论坛中，可以找到有关对错误和警告进行疑难解答的帮助。 此处有一些与数据相关的论坛 MSDN 上：
 
- [Windows 窗体数据控件和数据绑定](http://go.microsoft.com/fwlink/?LinkId=160179)提供论坛供大家讨论有关及常规讨论的 Windows 窗体中的数据访问。
+- [Windows 窗体数据控件和数据绑定](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
- [ADO.NET 数据集论坛](http://go.microsoft.com/fwlink/?LinkId=160180)提供论坛供大家讨论有关及常规讨论的数据集。
+- [ADO.NET 数据集论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
- [ADO.NET 实体框架和 LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520)提供论坛供大家讨论有关及常规讨论的实体框架应用程序和 LINQ to Entities 语言。
+- [ADO.NET 实体框架和 LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
- [WCF 数据服务论坛](http://go.microsoft.com/fwlink/?LinkId=160181)提供论坛供大家讨论有关及常规讨论的数据服务。
+- [WCF 数据服务论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
- [SQL Server 数据访问论坛](http://go.microsoft.com/fwlink/?LinkID=160184)提供论坛供大家讨论有关及常规讨论的访问 Microsoft SQL Server 中的数据。
+- [SQL Server 数据访问论坛](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
- [到 SQL 论坛 Linq](http://go.microsoft.com/fwlink/?LinkId=160183)提供论坛供大家讨论有关及常规讨论的 Linq to SQL。
+- [LINQ to SQL 论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
- [ADO.NET 数据提供程序论坛](http://go.microsoft.com/fwlink/?LinkId=160182)提供论坛供大家讨论有关及常规讨论的不同.NET Framework 数据提供程序。
+- [ADO.NET 数据提供程序论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
- 有关如何解决连接到 SQL Server 的信息，请参阅[如何解决连接到 SQL Server 数据库引擎](http://go.microsoft.com/fwlink/?LinkID=246151)。
+有关如何解决与 SQL Server 的连接信息，请参阅[连接到 SQL Server 数据库引擎的故障排除](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx)。
 
 ## <a name="see-also"></a>请参阅
 

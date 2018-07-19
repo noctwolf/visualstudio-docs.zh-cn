@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建 LINQ to SQL 类映射到表和视图 （O R 设计器）
+title: 如何： 创建 LINQ to SQL 类映射到表和视图 （O-R 设计器）
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
@@ -10,40 +10,40 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b81d67d6897826ab2f6de1e3b48663b18bffdb1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 11fb4265047387e30327bbbe17c9babf1f23ec61
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924630"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089320"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何： 创建 LINQ to SQL 类映射到表和视图 （O/R 设计器）
-[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 映射到数据库表和视图的类称为*实体类*。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 创建通过拖动表或视图从基于数据库表或视图的实体类**服务器资源管理器**/**数据库资源管理器**到[LINQ to SQL 中的工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]生成这些类并应用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性来启用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 功能（<xref:System.Data.Linq.DataContext> 的数据通信和编辑功能）。 有关详细信息[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]类，请参阅[LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
+[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 映射到数据库表和视图的类称为*实体类*。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 创建通过拖动表或视图从基于数据库表或视图的实体类**服务器资源管理器**或**数据库资源管理器**拖动到[Visual Studio中的LINQtoSQL工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md). **O/R 设计器**生成的类并应用特定[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]属性来启用[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]功能 (数据通信和编辑功能<xref:System.Data.Linq.DataContext>)。 有关详细信息[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]类，请参阅[LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
 > [!NOTE]
->  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射（例如，将一个实体类映射到多个表）。 但是，可以将一个实体类映射到一个联接多个相关表的视图。
+>  **O/R 设计器**是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射（例如，将一个实体类映射到多个表）。 但是，可以将一个实体类映射到一个联接多个相关表的视图。
 
-## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建映射到数据库表或视图的 LINQ to SQL 类
- 通过将表或视图从**服务器资源管理器**/**数据库资源管理器**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]创建实体类，除了<xref:System.Data.Linq.DataContext>用于的方法执行更新。
+## <a name="create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建 LINQ to SQL 类映射到数据库表或视图
+ 通过将表或视图从**服务器资源管理器**或**数据库资源管理器**拖到**O/R 设计器**创建实体类除了<xref:System.Data.Linq.DataContext>方法，用于执行更新。
 
- 默认情况下，[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时创建用于将更改从可更新的实体类保存回数据库的逻辑。 此逻辑基于表的架构（列定义和主键信息）。 如果不需要此行为，则可以配置实体类以使用存储过程执行插入、更新和删除，而不是使用默认的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时行为。 有关详细信息，请参阅[如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
+ 默认情况下，[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 运行时创建用于将更改从可更新的实体类保存回数据库的逻辑。 此逻辑基于表的架构（列定义和主键信息）。 如果不希望此行为，则可以配置一个实体类以使用存储的过程来执行插入、 更新和删除操作而不是使用默认值[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]运行时行为。 有关详细信息，请参阅[如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建映射到数据库表或视图的 LINQ to SQL 类
+### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>创建映射到数据库表或视图的 LINQ to SQL 类
 
-1.  在**服务器**/**数据库资源管理器**，展开**表**或**视图**并找到数据库表或查看所需要在你的应用程序中使用。
+1.  在中**服务器**或**数据库资源管理器**，展开**表**或**视图**并找到数据库表或查看你要在中使用应用应用程序。
 
-2.  将该表或视图拖动到 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]上。
+2.  将表或视图拖动到**O/R 设计器**。
 
      一个实体类将创建并显示在设计图面上。 该实体类的属性映射到所选表或视图中的列。
 
-## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>创建对象数据源并在窗体中显示数据
- 通过使用创建实体类后[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]，你可以创建对象数据源并填充[数据源窗口](add-new-data-sources.md)与实体类。
+## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>创建对象数据源并在窗体上显示数据
+ 使用创建实体类后**O/R 设计器**，可以创建对象数据源并填充[数据源窗口](add-new-data-sources.md)与实体类。
 
-#### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>创建基于 LINQ to SQL 实体类的对象数据源
+### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>创建基于 LINQ to SQL 实体类的对象数据源
 
-1.  上**生成**菜单上，单击**生成解决方案**以生成项目。
+1.  上**构建**菜单上，单击**生成解决方案**生成项目。
 
 2.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
@@ -54,16 +54,16 @@ ms.locfileid: "31924630"
 5.  展开节点，然后找到并选择您的类。
 
     > [!NOTE]
-    >  如果**客户**类不可用、 退出向导、 生成项目时，和重新运行该向导。
+    >  如果**客户**类不可用、 取消该向导、 生成项目时，和重新运行该向导。
 
-6.  单击**完成**以创建数据源并添加**客户**到实体类**数据源**窗口。
+6.  单击**完成**创建数据源并添加**客户**到实体类**数据源**窗口。
 
 7.  将项从**数据源**拖到窗体的窗口。
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [演练： 创建 LINQ to SQL 类 （O R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [演练： 创建 LINQ to SQL 类 （O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [DataContext 方法 （O/R 设计器）](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何： 创建映射到存储的过程和函数 （O/R 设计器） 的 DataContext 方法](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)
