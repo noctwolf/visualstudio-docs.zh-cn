@@ -1,5 +1,5 @@
 ---
-title: 如何： 检索联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft 文档
+title: 如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47d20cf156cfdb6aaa18e37160dbf027bb3fb519
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 251f175112a03bbe158c529b669b56378913f020
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31561436"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080423"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：  
   
  `http://servername/WindowsApp1.application?username=joeuser`  
@@ -41,7 +41,7 @@ ms.locfileid: "31561436"
 > [!NOTE]
 >  决定启用此功能之前，请参阅本主题后面的“安全性”一节。  
   
- 有关如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用 Mage.exe 或 MageUI.exe 中，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 有关如何创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用的*Mage.exe*或*MageUI.exe*，请参阅[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。  
@@ -59,7 +59,7 @@ ms.locfileid: "31561436"
   
 1.  打开 .NET 命令提示符并输入：  
   
-    ```  
+    ```cmd  
     MageUI  
     ```  
   
@@ -78,7 +78,7 @@ ms.locfileid: "31561436"
  如果应用程序仅处于联机状态，则它始终通过 URL 进行激活。 但是即使在这种情况下，应用程序也必须编写为可在查询字符串参数丢失或损坏的情况下正常运行。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
- 仅当你计划在使用包含任何恶意字符的输入之前清除它时，才允许向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递 URL 参数。 例如，如果在针对数据库进行的 SQL 查询中未经筛选地使用嵌入有引号、斜杠或分号的字符串，则该字符串可能会执行任意数据操作。 有关查询字符串安全性的详细信息，请参阅 [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+ 仅当你计划在使用包含任何恶意字符的输入之前清除它时，才允许向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递 URL 参数。 例如，如果在针对数据库进行的 SQL 查询中未经筛选地使用嵌入有引号、斜杠或分号的字符串，则该字符串可能会执行任意数据操作。 查询字符串安全性的详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0263aba7d732c766d08bda05c6700c47d58f3d44
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 15f726527a743e70cced0e274fbde6b7afa8691a
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925151"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890365"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 
@@ -79,13 +79,13 @@ WPF 数据绑定可使 UI 元素将其一个属性与一个数据源相关联。
 
 但相比之下，在 XML 源中，可以通过下面形式的简洁表示法访问动态属性：
 
-```
+```xml
 <object>.<dynamic-property>
 ```
 
 这两个类的动态属性或者解析为可以直接使用的值，或者解析为必须与索引一起提供的索引器，以便获取结果值或值的集合。 后一种语法采用的格式为：
 
-```
+```xml
 <object>.<dynamic-property>[<index-value>]
 ```
 

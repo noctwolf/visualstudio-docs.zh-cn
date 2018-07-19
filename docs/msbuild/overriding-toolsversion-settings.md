@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25d4254e8f45da6a476207740cfa28e1db2253e4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571550"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327084"
 ---
 # <a name="overriding-toolsversion-settings"></a>重写 ToolsVersion 设置
 可使用以下三种方式之一来更改项目和解决方案的工具集：  
@@ -32,7 +32,7 @@ ms.locfileid: "31571550"
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>在命令行生成上替代项目和解决方案的 ToolsVersion 设置  
  虽然 Visual Studio 项目通常使用在项目文件中指定的 ToolsVersion 生成，但也可以使用命令行上的 `/ToolsVersion`（或 `/tv`）开关来替代该值，并用不同的工具集来生成所有项目及其项目到项目依赖项。 例如:  
   
-```  
+```cmd  
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
@@ -77,7 +77,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
   
 3.  在命令提示符处输入以下命令：  
   
-    ```  
+    ```cmd  
     msbuild projectA.proj /t:go /toolsversion:3.5  
     ```  
   

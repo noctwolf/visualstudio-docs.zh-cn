@@ -9,16 +9,16 @@ description: 了解如何充分利用 Visual Studio 订阅中包含的 Azure 顾
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f33c4fdfd026fc7517fb32b16fc90ea4bedeec7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 983f253ea468be58cd9a7f24577b14342f05059e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196783"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280798"
 ---
 # <a name="azure-advisory-chat"></a>Azure 顾问聊天
 
-实时获取开始使用 Azure 的帮助！ 包括针对 Azure PaaS 服务的顾问。  Azure 顾问聊天权益可用于 Visual Studio Enterprise Standard 和年度云订阅中。  
+实时获取开始使用 Azure 的帮助！ 包括针对 Azure PaaS 服务的顾问。  Azure 顾问聊天权益可用于 Visual Studio Enterprise Standard 和年度云订阅中。
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -32,7 +32,7 @@ ms.locfileid: "31196783"
 
     ![Azure 顾问聊天免责声明](_img/vs-azure-advisory/vs-azure-advisory-disclaimer.png)
 
-4. 就这么简单。  聊天窗口随机打开，你将看到一个状态告知你在队列中的位置。  然后下一位空出的专家将回答你的聊天。 
+4. 就这么简单。  聊天窗口随机打开，你将看到一个状态告知你在队列中的位置。  然后下一位空出的专家将回答你的聊天。
 
     ![Azure 顾问聊天](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "31196783"
 | Visual Studio Dev Essentials                                          | 不可用                                              |不可用                                              |  否          |
 <sup>1</sup> 包括：限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT
 
-无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="frequently-asked-questions"></a>常见问题
 
@@ -55,5 +55,5 @@ ms.locfileid: "31196783"
 -  答：Azure 顾问聊天是一项实时聊天服务，可以帮助解决 Azure 相关问题。 [Azure 顾问](/azure/advisor/advisor-overview)是一种个性化的云顾问，可帮助你按照最佳做法来优化你的 Azure 部署。 它会分析你的资源配置和使用情况遥测，并建议相应的解决方案，帮助你提高 Azure 资源的成本效益、性能、高可用性和安全性。
 
 ## <a name="support-resources"></a>支持资源
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+-  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

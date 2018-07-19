@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: d1bb23d03ac613c12df54f1a11e19ee5a8c2edb0
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 6117d4e32e20972130eb733fb70bc6c0145bc2ea
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453863"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283297"
 ---
 # <a name="enable-subscription"></a>启用订阅
 
@@ -24,21 +24,22 @@ Visual Studio for Mac 有三种不同的订阅级别可供选择，一次下载�
 
 ![显示用户许可证对话框](media/user-accounts-login.png)
 
-## <a name="update-expired-licenses"></a>更新已过期的许可证 
+## <a name="update-expired-licenses"></a>更新已过期的许可证
 
 如果订阅已过期，有两个选项可供选择：
 
-1. 续订你的订阅 可通过浏览到 [https://www.visualstudio.com/vs/pricing/](https://www.visualstudio.com/vs/pricing/) 续订你的订阅。
+1. 续订你的订阅 可通过浏览到 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) 续订你的订阅。
 
-2. 如果你的另一个帐户拥有活动订阅，可将其添加到 Visual Studio for Mac，有关详细信息请参阅[添加多个用户帐户](signing-in.md)一文。 Visual Studio for Mac 会检测已添加的所有帐户中最适合的许可证。 
+2. 如果你的另一个帐户拥有活动订阅，可将其添加到 Visual Studio for Mac，有关详细信息请参阅[添加多个用户帐户](signing-in.md)一文。 Visual Studio for Mac 会检测已添加的所有帐户中最适合的许可证。
 
 ## <a name="product-key-usage"></a>产品密钥使用情况
 
-目前还无法利用产品密钥为 Visual Studio for Mac 启用 Professional 或 Enterprise 权利。 若要使用 Visual Studio Enterprise for Mac 或 Visual Studio Professional for Mac，必须拥有相关[订阅](https://www.visualstudio.com/subscriptions/)并[登录](signing-in.md)到 IDE。
+目前还无法利用产品密钥为 Visual Studio for Mac 启用 Professional 或 Enterprise 权利。 若要使用 Visual Studio Enterprise for Mac 或 Visual Studio Professional for Mac，必须拥有相关[订阅](https://visualstudio.microsoft.com/subscriptions/)并[登录](signing-in.md)到 IDE。
 
 ## <a name="offline-activation"></a>脱机激活
 
 > [!NOTE]
-> 无法对 Visual Studio for Mac 进行脱机激活。 要激活 Visual Studio 2017 for Mac Professional 或 Enterprise 订阅，必须在登录时连接到 Internet。
+> 无法对 Visual Studio for Mac 进行脱机激活。
+> 要激活 Visual Studio 2017 for Mac Professional 或 Enterprise 订阅，必须在登录时连接到 Internet。
 
 如果为没有 Internet 连接的计算机购买了 Visual Studio Enterprise 2017 for Mac，可以在不激活的情况下继续使用 Visual Studio for Mac，但无法使用 Xamarin Inspector、Xamarin Profiler 和嵌入式程序集功能。

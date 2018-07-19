@@ -14,14 +14,16 @@ ms.assetid: 12afb1ea-3a17-4a3f-a1f0-fcdb853e2359
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3827dd8ed34a118bb3e4eaaed47bf7400cef90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e202c35ee6bd8353170e758629b1cc6e739b775d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900207"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080966"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：正确实现 IDisposable
 
@@ -30,55 +32,55 @@ ms.locfileid: "31900207"
 |TypeName|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
 |类别|Microsoft.Design|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
 
-`IDisposable` 实现不正确。 这里列出了此问题的一些原因：
+<xref:System.IDisposable?displayProperty=nameWithType>接口的实现不正确。 可能的原因包括：
 
-- 在类中重新实现 IDisposable。
+- <xref:System.IDisposable> 在类中重新实现。
 
-- 完成重新中被重写。
+- 最终确定 reoverridden。
 
-- 释放被重写。
+- 重写 dispose （）。
 
-- Dispose （） 不是公共的密封类，或名为释放。
+- Dispose （） 方法不是公共的[密封](/dotnet/csharp/language-reference/keywords/sealed)，或已命名**Dispose**。
 
-- Dispose(bool) 不是受保护、 虚拟的或未密封。
+- Dispose （bool） 不受保护、 虚拟或未密封。
 
-- 在未密封的类型，dispose （） 必须调用 Dispose(true)。
+- 在未密封类型中，dispose （） 必须调用 dispose （true）。
 
-- 对于未密封的类型，Finalize 实现不调用其中一种或两个 Dispose(bool) 或事例类终结器。
+- 对于非密封类型 Finalize 实现不会调用一个或两个 dispose （bool） 或基类的终结器。
 
-任何一种这些模式的冲突将触发此警告。
+冲突的任何一种模式触发警告 CA1063。
 
-每个非密封的类型声明并实现 IDisposable 接口必须提供其自己受保护的虚拟 void Dispose(bool) 方法。 Dispose （） 应调用 Dipose(true) 和 Finalize 应调用 Dispose(false)。 如果要创建的未密封的类型的声明并实现 IDisposable 接口，你必须定义 Dispose(bool)，调用它。 有关详细信息，请参阅[清理非托管资源](/dotnet/standard/garbage-collection/unmanaged)中[.NET Framework 设计准则](/dotnet/standard/design-guidelines/index)。
+每个非密封的类型声明并实现<xref:System.IDisposable>接口必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 Dipose(true)，和终结器应调用 dispose （false）。 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)并[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)。
 
 ## <a name="rule-description"></a>规则说明
 
-所有的 IDisposable 类型都应当正确实现 Dispose 模式。
+所有<xref:System.IDisposable>的类型应该实现[Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)正确。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-检查你的代码并确定哪些以下解决方法将修复此冲突。
+检查你的代码并确定哪些以下解决方法将修复此冲突：
 
-- 从由实现的接口列表中删除 IDisposable{0}和改为重写基类释放实现。
+- 删除<xref:System.IDisposable>从列表中的由您的类型，实现，而是重写 Dispose 基类实现的接口。
 
-- 从类型中删除终结器{0}，重写释放 （bool 释放），并且将终止逻辑放入的代码路径其中释放是 false。
+- 根据您的类型中移除终结器，重写 Dispose (bool disposing)，其中 disposing 为 false 的代码路径中加入终结逻辑。
 
-- 删除{0}，重写释放 （bool 释放），并且将释放逻辑放入的代码路径其中释放为 true。
+- 重写 Dispose (bool disposing)，并且其中 disposing 为 true 的代码路径中加入释放逻辑。
 
-- 确保{0}声明为公共的密封。
+- 请确保 dispose （） 被声明为公共和[密封](/dotnet/csharp/language-reference/keywords/sealed)。
 
-- 重命名{0}到释放，并确保它被声明为公共和密封。
+- 重命名为 dispose 方法**Dispose** ，并确保它被声明为公共和[密封](/dotnet/csharp/language-reference/keywords/sealed)。
 
-- 请确保{0}声明为受保护，虚拟的并在未密封的。
+- 请确保 dispose （bool） 声明为 protected、 virtual 和 unsealed。
 
-- 修改{0}，以便它调用 Dispose(true)，然后调用 GC。当前对象实例上的 SuppressFinalize (this 或 Me 中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])，然后返回。
+- 修改 dispose （），使其调用 dispose （true），然后调用<xref:System.GC.SuppressFinalize%2A>上的当前对象实例 (`this`，或`Me`在 Visual Basic 中)，然后返回。
 
-- 修改{0}，以便它调用 Dispose(false)，然后返回。
+- 修改您终结器，使其调用 dispose （false），然后返回。
 
-- 如果要创建的未密封的类型的声明并实现 IDisposable 接口，请确保 IDisposable 的实现遵循本节中前面介绍的模式。
+- 如果您创建未密封的类型的声明并实现<xref:System.IDisposable>接口，请确保实现<xref:System.IDisposable>遵循本部分前面所述的模式。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
@@ -86,7 +88,7 @@ ms.locfileid: "31900207"
 
 ## <a name="pseudo-code-example"></a>伪代码示例
 
-下面的伪代码提供应如何使用托管的类中实现 Dispose(bool) 和本机资源的常规示例。
+下面的伪代码提供了应如何使用托管的类中实现 dispose （bool） 和本机资源的常规示例。
 
 ```csharp
 public class Resource : IDisposable
@@ -102,7 +104,7 @@ public class Resource : IDisposable
     }
 
     // NOTE: Leave out the finalizer altogether if this class doesn't
-    // own unmanaged resources itself, but leave the other methods
+    // own unmanaged resources, but leave the other methods
     // exactly as they are.
     ~Resource()
     {
@@ -131,3 +133,8 @@ public class Resource : IDisposable
     }
 }
 ```
+
+## <a name="see-also"></a>请参阅
+
+- [释放模式 （framework 设计准则）](/dotnet/standard/design-guidelines/dispose-pattern)
+- [清理非托管资源 （.NET 指南）](/dotnet/standard/garbage-collection/unmanaged)

@@ -1,5 +1,5 @@
 ---
-title: CRT 调试堆详细信息 |Microsoft 文档
+title: CRT 调试堆详细信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf71bd4d424c372a6dadf85593fd3b456bc7ec0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465442"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433465"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 本主题详细描述了 CRT 调试堆。  
@@ -88,13 +88,13 @@ ms.locfileid: "31465442"
 ##  <a name="BKMK_Contents"></a> 内容  
  [利用调试堆查找缓冲区溢出](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
- [调试堆中的块类型](#BKMK_Types_of_blocks_on_the_debug_heap)  
+ [调试堆上的块类型](#BKMK_Types_of_blocks_on_the_debug_heap)  
   
  [检查堆完整性和内存泄漏](#BKMK_Check_for_heap_integrity_and_memory_leaks)  
   
  [配置调试堆](#BKMK_Configure_the_debug_heap)  
   
- [新的、 delete 和 _client_block 在 c + + 调试堆](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
+ [new、 delete 和 _client_block 中 c + + 调试堆](#BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap)  
   
  [堆状态报告函数](#BKMK_Heap_State_Reporting_Functions)  
   
@@ -103,13 +103,13 @@ ms.locfileid: "31465442"
 ##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> 利用调试堆查找缓冲区溢出  
  程序员遇到的两种最常见而又难处理的问题是，覆盖已分配缓冲区的末尾以及内存泄漏（未能在不再需要某些分配后将其释放）。 调试堆提供功能强大的工具来解决这类内存分配问题。  
   
- 堆函数的“Debug”版本调用“Release”版本中使用的标准版本或基版本。 当请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于您的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中， [malloc](/cpp/c-runtime-library/reference/malloc)将调用基堆分配例程以请求分配 10 个字节。 在调试版本中，但是，`malloc`将调用[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)，该函数接着调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
+ 堆函数的“Debug”版本调用“Release”版本中使用的标准版本或基版本。 当请求内存块时，调试堆管理器从基堆分配略大于所请求的块的内存块，并返回指向该块中属于您的部分的指针。 例如，假定应用程序包含调用：`malloc( 10 )`。 在发布版本中， [malloc](/cpp/c-runtime-library/reference/malloc)将调用基堆分配例程以请求分配 10 个字节。 在调试版本中，但是，`malloc`将调用[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)，随后就其可以调用基堆分配例程以请求分配 10 个字节加上大约 36 个字节的额外内存。 调试堆中产生的所有内存块在单个链接列表中连接起来，按照分配时间排序。  
   
  调试堆例程分配的附加内存的用途为：存储簿记信息，存储将调试内存块链接在一起的指针，以及形成数据两侧的小缓冲区（用于捕捉已分配区域的覆盖）。  
   
  当前，用于存储调试堆的簿记信息的块头结构在 DBGINT.H 头文件中声明如下：  
   
-```  
+```cpp
 typedef struct _CrtMemBlockHeader  
 {  
 // Pointer to the block allocated just before this one:  
@@ -132,7 +132,7 @@ typedef struct _CrtMemBlockHeader
  */  
 ```  
   
- `NoMansLand`块的用户数据区域两侧的缓冲区当前大小为 4 个字节并用使用调试堆例程用于验证尚未覆盖的用户的内存块限制的已知的字节值填充。 调试堆还用已知值填充新的内存块。 如果选择在堆的链接列表中保留已释放块（如下文所述），则这些已释放块也用已知值填充。 当前，所用的实际字节值如下所示：  
+ `NoMansLand`块的用户数据区域两侧的缓冲区目前大小为 4 个字节，使用调试堆例程用于验证尚未覆盖用户的内存块的限制的已知的字节值填充。 调试堆还用已知值填充新的内存块。 如果选择在堆的链接列表中保留已释放块（如下文所述），则这些已释放块也用已知值填充。 当前，所用的实际字节值如下所示：  
   
  NoMansLand (0xFD)  
  应用程序所用内存两侧的“NoMansLand”缓冲区当前用 0xFD 填充。  
@@ -147,24 +147,24 @@ typedef struct _CrtMemBlockHeader
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆中的块类型  
- 调试堆中的每个内存块都分配以五种分配类型之一。 出于泄漏检测和状态报告目的对这些类型进行不同地跟踪和报告。 你可以指定块的类型，方法是使用对其中一个调试堆分配函数的直接调用来分配[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)。 调试堆中的内存块的五种类型 (在中设置**nBlockUse**的成员 **_CrtMemBlockHeader**结构) 如下所示：  
+##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> 调试堆上的块类型  
+ 调试堆中的每个内存块都分配以五种分配类型之一。 出于泄漏检测和状态报告目的对这些类型进行不同地跟踪和报告。 可以指定块的类型，方法是使用类似于直接调用调试堆分配函数之一来分配[_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg)。 五种类型的调试堆中的内存块 (在中设置**nBlockUse**的成员 **_CrtMemBlockHeader**结构) 如下所示：  
   
  **_NORMAL_BLOCK**  
- 调用[malloc](/cpp/c-runtime-library/reference/malloc)或[calloc](/cpp/c-runtime-library/reference/calloc)创建普通块。 如果你想要使用正常的块，而客户端块不需要，你可能希望定义[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到它们在调试版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
+ 调用[malloc](/cpp/c-runtime-library/reference/malloc)或[calloc](/cpp/c-runtime-library/reference/calloc)创建普通块。 如果你想要使用普通的块，而不需要对客户端块，您可能想要定义[_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc)，这将导致所有堆分配调用映射到其调试版本中的调试等效项。 这将允许将关于每个分配调用的文件名和行号信息存储到对应的块头中。  
   
  `_CRT_BLOCK`  
  由许多运行库函数内部分配的内存块被标记为 CRT 块，以便可以单独处理这些块。 结果，泄漏检测和其他操作不需要受这些块影响。 分配永不可以分配、重新分配或释放任何 CRT 类型的块。  
   
  `_CLIENT_BLOCK`  
- 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 MFC 中，例如，分配所有**Cobject**以客户端块; 其他应用程序可能会保留不同的内存对象在客户端块中。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如：  
+ 出于调试目的，应用程序可以专门跟踪一组给定的分配，方法是使用对调试堆函数的显式调用将它们作为该类型的内存块进行分配。 MFC 中，例如，分配所有**Cobject**作为客户端块; 其他应用程序可能会使不同的内存对象在客户端块中。 还可以指定“客户端”块的子类型以获得更大的跟踪粒度。 若要指定“客户端”块子类型，请将该数字向左移 16 位，并将它与 `OR` 进行 `_CLIENT_BLOCK` 运算。 例如：  
   
-```  
+```cpp
 #define MYSUBTYPE 4  
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- 可以使用安装用于转储存储在客户端块中的对象的客户端提供的挂钩函数[_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient)，然后将每当调试函数转储客户端块时调用。 此外， [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects)可用于调用调试堆中的每个客户端块的应用程序提供的给定的函数。  
+ 可以使用安装客户端提供的挂钩函数，以转储存储在客户端块中的对象[_CrtSetDumpClient](/cpp/c-runtime-library/reference/crtsetdumpclient)，然后将每当调试函数转储客户端块时调用。 此外， [_CrtDoForAllClientObjects](/cpp/c-runtime-library/reference/crtdoforallclientobjects)可用于调用应用程序在调试堆中的每个客户端块所提供的给定的函数。  
   
  **_FREE_BLOCK**  
  通常，所释放的块将从列表中移除。 为了检查并未仍在向已释放的内存写入数据，或为了模拟内存不足情况，可以选择在链接列表上保留已释放块，将其标记为“可用”，并用已知字节值（当前为 0xDD）填充。  
@@ -172,9 +172,9 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  有可能在一段时间内关闭调试堆操作。 在该时间段内，内存块保留在列表上，但被标记为“忽略”块。  
   
- 若要确定类型和给定块的子类型，请使用函数[_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)和宏 **_BLOCK_TYPE**和 **_BLOCK_SUBTYPE**。 宏的定义（在 crtdbg.h 中）如下所示：  
+ 若要确定的类型和给定的块的子类型，请使用函数[_CrtReportBlockType](/cpp/c-runtime-library/reference/crtreportblocktype)和宏 **_BLOCK_TYPE**并 **_BLOCK_SUBTYPE**。 宏的定义（在 crtdbg.h 中）如下所示：  
   
-```  
+```cpp
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
 #define _BLOCK_SUBTYPE(block)       (block >> 16 & 0xFFFF)  
 ```  
@@ -185,20 +185,20 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  许多调试堆功能必须从代码内访问。 下一节描述其中一些功能以及如何使用这些功能。  
   
  `_CrtCheckMemory`  
- 你可以使用调用[_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)，例如，若要查看的任何时刻堆的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。  
+ 可以使用调用[_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory)，例如，若要查看任何时候堆的完整性。 该函数检查堆中的每个内存块，验证内存块头信息有效，并确认尚未修改缓冲区。  
   
  `_CrtSetDbgFlag`  
- 你可以控制如何将跟踪调试堆的分配使用内部标志， [_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag)，这可以读取和使用设置[_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag)函数。 通过更改该标志，可以指示调试堆在程序退出时检查内存泄漏，并报告检测到的所有泄漏。 类似地，可以指定不将已释放的内存块从链接列表移除，以模拟内存不足情况。 当检查堆时，将完全检查这些已释放的块，以确保它们未受打扰。  
+ 您可以控制如何将跟踪调试堆的分配使用的内部标志[_crtDbgFlag](/cpp/c-runtime-library/crtdbgflag)，这可以读取和使用设置[_CrtSetDbgFlag](/cpp/c-runtime-library/reference/crtsetdbgflag)函数。 通过更改该标志，可以指示调试堆在程序退出时检查内存泄漏，并报告检测到的所有泄漏。 类似地，可以指定不将已释放的内存块从链接列表移除，以模拟内存不足情况。 当检查堆时，将完全检查这些已释放的块，以确保它们未受打扰。  
   
  **_CrtDbgFlag**标志包含下列位域：  
   
 |位域|默认<br /><br /> 值|描述|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|On|打开调试分配。 当该位为 off，分配仍链接在一起，但它们的块类型是 **_IGNORE_BLOCK**。|  
-|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止实际释放内存，与模拟内存不足情况相同。 打开此位时，已释放的块保留在调试堆链接列表中，但标记为 **_FREE_BLOCK**和并用特殊字节值填充。|  
-|**_CRTDBG_CHECK_ALWAYS_DF**|Off|导致 **_CrtCheckMemory**每个分配和解除分配时要调用。 这将减慢执行，但可快速捕捉错误。|  
-|**_CRTDBG_CHECK_CRT_DF**|Off|导致标记作为类型的块 **_CRT_BLOCK**要包括在泄漏检测和状态差异操作中。 当该位为 off 时，在这些操作期间将忽略由运行库内部使用的内存。|  
-|**_CRTDBG_LEAK_CHECK_DF**|Off|导致在程序退出时通过调用来执行泄漏检查 **_CrtDumpMemoryLeaks**。 如果应用程序未能释放其所分配的所有内存，将生成错误报告。|  
+|**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止实际释放内存，与模拟内存不足情况相同。 当该位为 on 时，已释放的块保留在调试堆的链接列表，但标记为 **_FREE_BLOCK** ，并用特殊字节值。|  
+|**_CRTDBG_CHECK_ALWAYS_DF**|Off|将导致 **_CrtCheckMemory**每个分配和解除分配时要调用。 这将减慢执行，但可快速捕捉错误。|  
+|**_CRTDBG_CHECK_CRT_DF**|Off|导致块标记为类型 **_CRT_BLOCK**要包含在泄漏检测和状态差异操作中。 当该位为 off 时，在这些操作期间将忽略由运行库内部使用的内存。|  
+|**_CRTDBG_LEAK_CHECK_DF**|Off|会导致泄漏检查要执行在程序退出时通过调用 **_CrtDumpMemoryLeaks**。 如果应用程序未能释放其所分配的所有内存，将生成错误报告。|  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -213,7 +213,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
 1.  在 `_CrtSetDbgFlag` 参数设置为 `newFlag` 的情况下调用 `_CRTDBG_REPORT_FLAG`（以获取当前的 `_crtDbgFlag` 状态），并在一个临时变量中存储返回值。  
   
-2.  打开任何位由`OR`-ing (按位&#124;符号) 对带相应位屏蔽 （在应用程序代码中由清单常量显示） 的临时变量。  
+2.  打开的任何位`OR`-ing (按位&#124;符号) 带相应位屏蔽 （在应用程序代码中由清单常量显示） 的临时变量。  
   
 3.  通过对带有相应位屏蔽的 `AND`（按位 ~ 符号）的变量进行 `NOT`-ing（按位 & 符号）运算关闭其他位。  
   
@@ -221,7 +221,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  例如，下列代码行打开自动泄漏检测，关闭检查 `_CRT_BLOCK` 类型的块：  
   
-```  
+```cpp
 // Get current flag  
 int tmpFlag = _CrtSetDbgFlag( _CRTDBG_REPORT_FLAG );  
   
@@ -237,10 +237,10 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> 新的、 delete 和 _client_block 在 c + + 调试堆  
+##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new、 delete 和 _client_block 中 c + + 调试堆  
  C 运行库的调试版本包含 C++ `new` 和 `delete` 运算符的调试版本。 如果使用 `_CLIENT_BLOCK` 分配类型，则必须直接调用 `new` 运算符的调试版本，或者创建可在调试模式中替换 `new` 运算符的宏，如下面的示例所示：  
   
-```  
+```cpp
 /* MyDbgNew.h  
  Defines global operator new to allocate from  
  client blocks  
@@ -280,7 +280,7 @@ int main( )   {
   
  若要捕获给定时刻堆状态的摘要快照，请使用 CRTDBG.H 中定义的 _CrtMemState 结构：  
   
-```  
+```cpp
 typedef struct _CrtMemState  
 {  
     // Pointer to the most recently allocated block:  
@@ -304,11 +304,11 @@ typedef struct _CrtMemState
   
 |函数|描述|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|将保存在堆的快照 **_CrtMemState**应用程序提供的结构。|  
+|[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|将保存在堆的快照 **_CrtMemState**应用程序所提供的结构。|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|比较两个内存状态结构，在第三个状态结构中保存二者之间的差异，如果两个状态不同，则返回 TRUE。|  
 |[_CrtMemDumpStatistics](/cpp/c-runtime-library/reference/crtmemdumpstatistics)|转储给定 **_CrtMemState**结构。 该结构可能包含给定时刻调试堆状态的快照或两个快照之间的差异。|  
-|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 每次它转储 **_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用 **_CrtSetDumpClient**。|  
-|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 每次 **_CrtDumpMemoryLeaks**转储 **_CLIENT_BLOCK**块，它调用应用程序，所提供的挂钩函数，如果一个已安装使用 **_CrtSetDumpClient**.|  
+|[_CrtMemDumpAllObjectsSince](/cpp/c-runtime-library/reference/crtmemdumpallobjectssince)|转储有关在堆的给定快照之后，或是从执行开始时起，分配的所有对象的信息。 每次它转储 **_CLIENT_BLOCK**块中，它调用应用程序，所提供的挂钩函数，如果已使用安装其中一个 **_CrtSetDumpClient**。|  
+|[_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks)|确定自程序开始执行以来是否发生过内存泄漏，如果发生过，则转储所有已分配对象。 每次 **_CrtDumpMemoryLeaks**转储 **_CLIENT_BLOCK**块中，它调用应用程序，所提供的挂钩函数，如果已使用安装一个 **_CrtSetDumpClient**.|  
   
  ![返回页首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
@@ -317,17 +317,17 @@ typedef struct _CrtMemState
   
  **唯一分配请求编号和 _crtBreakAlloc**  
   
- 标识发生错误的特定堆分配调用的最简单方法是利用与调试堆中的每个块关联的唯一分配请求编号。 当其中一个转储函数报告某块的有关信息时，该分配请求编号将括在大括号中（例如“{36}”）。  
+ 标识发生错误的特定堆分配调用的最简单方法是利用与调试堆中的每个块关联的唯一分配请求编号。 当其中一个转储函数报告有关一个块的信息时，该分配请求编号将括在大括号中 (例如，"{36}")。  
   
- 一旦您知道某个错误分配块的分配请求编号，你可以将该编号传递到[_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)可创建一个断点。 执行将恰在分配该块以前中断，您可以向回追踪以确定哪个例程执行了错误调用。 若要避免重新编译，你可以完成同样的操作在调试器中通过设置 **_crtBreakAlloc**到你感兴趣的分配请求编号。  
+ 一旦您知道某个错误分配块的分配请求编号，您可以将该编号传递给[_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc)创建断点。 执行将恰在分配该块以前中断，您可以向回追踪以确定哪个例程执行了错误调用。 若要避免重新编译，可以完成相同的事情在调试器中设置 **_crtBreakAlloc**到感兴趣的分配请求编号。  
   
  **创建分配例程的调试版本**  
   
- 略微复杂的方法是创建您自己的分配例程，类似于调试版本 **_dbg**版本[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)。 然后，可以将源文件和行号自变量传递给基础堆分配例程，并能立即看到错误分配的出处。  
+ 稍微复杂一些，方法是创建类似于您自己分配例程的调试版本 **_dbg**新版[堆分配函数](../debugger/debug-versions-of-heap-allocation-functions.md)。 然后，可以将源文件和行号自变量传递给基础堆分配例程，并能立即看到错误分配的出处。  
   
  例如，假定您的应用程序包含与下面类似的常用例程：  
   
-```  
+```cpp
 int addNewRecord(struct RecStruct * prevRecord,  
                  int recType, int recAccess)  
 {  
@@ -339,7 +339,7 @@ int addNewRecord(struct RecStruct * prevRecord,
   
  在头文件中，可以添加如下代码：  
   
-```  
+```cpp
 #ifdef _DEBUG  
 #define  addNewRecord(p, t, a) \  
             addNewRecord(p, t, a, __FILE__, __LINE__)  
@@ -348,7 +348,7 @@ int addNewRecord(struct RecStruct * prevRecord,
   
  接下来，可以如下更改记录创建例程中的分配：  
   
-```  
+```cpp
 int addNewRecord(struct RecStruct *prevRecord,  
                 int recType, int recAccess  
 #ifdef _DEBUG  

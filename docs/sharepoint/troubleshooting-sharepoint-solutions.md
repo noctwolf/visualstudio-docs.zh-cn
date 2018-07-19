@@ -99,7 +99,7 @@ ms.locfileid: "37118491"
  如果字段的源 XML 格式不正确、不是有效的 XML 文件或出现一些其他问题，则会出现“无法分析文件”错误。  
   
 ## <a name="new-non-english-site-definitions-do-not-appear-in-site-creation-page-after-deployment"></a>新的非英语站点定义不会出现在站点创建页中部署后
- 创建并使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)](即，具有区域设置的版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不会显示在**模板选择**框和新的站点模板不会出现在**新的 SharePoint 站点**页。  
+ 创建并使用非英语版本的部署站点定义后[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (即，具有区域设置的版本[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]不是 1033年)，则**SharePoint 自定义**选项卡不会显示在**模板选择**框和新的站点模板不会出现在**新的 SharePoint 站点**页。  
   
 ### <a name="error-message"></a>错误消息
  无。  

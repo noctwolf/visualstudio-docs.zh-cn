@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 19de1453722629e880a5fc64ad0b5f4d63175eba
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 75cda2b45137d982038587ee1dcb73661b77f0df
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815790"
 ---
 # <a name="warnings-and-errors"></a>警告和错误
 
@@ -62,13 +63,13 @@ IntelliTest 在[输入生成](input-generation.md)期间会限制其浏览的所
 
 例如，以下代码按 0-100 使用分支：
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
 可以编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxBranches 选项。 下面的示例可有效地移除此边界：
 
-```
+```csharp
 [PexMethod(MaxBranches=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -79,7 +80,7 @@ public void MyTest(...) {
 
 在测试代码中，可使用 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) 来忽略循环条件生成的约束：
 
-```
+```csharp
 for (int i=0; 
     PexSymbolicValue.Ignore(i<100); // IntelliTest will 'forget' about this path condition
     i++) 
@@ -102,7 +103,7 @@ IntelliTest 在[输入生成](input-generation.md)期间会限制其浏览的所
 
 例如，以下代码中的每个路径均使用 n+1 个条件：
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     // conditions are "0<n", "1<n", ..., "!(n<n)"
@@ -117,7 +118,7 @@ void ParameterizedTest(int n) {
 
 可以编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxConditions 选项。 例如:
 
-```
+```csharp
 [PexMethod(MaxConditions=10000)]
 void ParameterizedTest(int n) {
     // ...
@@ -128,7 +129,7 @@ void ParameterizedTest(int n) {
 
 可使用 [PexSymbolicValue](static-helper-classes.md#pexsymbolicvalue) 来忽略循环条件生成的约束：
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) {
     int nshadow = PexSymbolicValue.Ignore(n); // IntelliTest looses track of 'n'
@@ -148,7 +149,7 @@ IntelliTest 在[输入生成](input-generation.md)期间会限制其浏览的所
 
 可编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxCalls 选项。 下面的示例可有效地移除此边界：
 
-```
+```csharp
 [PexMethod(MaxCalls=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -164,7 +165,7 @@ IntelliTest 在[输入生成](input-generation.md)期间会限制其浏览的所
 
 可编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxStack 选项。 下例可有效地移除此边界（不推荐）：
 
-```
+```csharp
 [PexMethod(MaxStack=int.MaxValue)]
 public void MyTest(...) {
     // ....
@@ -182,7 +183,7 @@ IntelliTest 在[输入生成](input-generation.md)期间会限制其浏览的执
 
 可编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxRuns 选项。 下例可有效地移除此边界（不推荐）：
 
-```
+```csharp
 [PexMethod(MaxRuns=2000)]
 public void MyTest(...) {
     // ....
@@ -200,7 +201,7 @@ IntelliTest 通常会在最初查找许多有趣的测试输入，但一段时�
 
 可编辑派生自 PexSettingsAttributeBase 的属性（例如 [PexClass](attribute-glossary.md#pexclass) 或 [PexMethod](attribute-glossary.md#pexmethod)）的 MaxRunsWithoutNewTests 选项。 下例可有效地移除此边界（不推荐）：
 
-```
+```csharp
 [PexMethod(MaxRunsWithoutNewTests=2000)]
 public void MyTest(...) {
     // ....
@@ -236,7 +237,7 @@ IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)
 
   例如，如果 IntelliTest 报告“不知道可以分配给 System.Collections.IDictionary 的任何类型”，则可以将以下 PexUseTypeAttribute 附加到测试（或装置类），以提供帮助：
 
-  ```
+  ```csharp
   [PexMethod]
   [PexUseType(typeof(System.Collections.Hashtable))]
   public void MyTest(IDictionary[] dictionaries) { ... }
@@ -244,7 +245,7 @@ IntelliTest 可针对任何 .NET 类型[生成测试输入](input-generation.md)
 
 * **程序集级别属性**
 
-  ```
+  ```csharp
   [assembly: PexUseType(typeof(System.Collections.Hashtable))]
   ```
 

@@ -1,5 +1,5 @@
 ---
-title: 通过使用旧版 API 更改查看设置 |Microsoft 文档
+title: 如果使用旧版 API 更改查看设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,39 +13,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9857daab890c2dd7bf7a799b6dca4d1b74cb9e37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f92c4146cc40aff6cf4c73ab3652f68f33a27b51
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099332"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077963"
 ---
-# <a name="changing-view-settings-by-using-the-legacy-api"></a>通过使用旧版 API 更改视图设置
-通过用户时可以更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。  
+# <a name="change-view-settings-by-using-the-legacy-api"></a>通过使用传统的 API 更改视图设置
+可以通过用户更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。  
   
-## <a name="changing-settings-by-using-the-legacy-api"></a>通过使用旧版 API 更改设置  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口公开一组文本编辑器属性。 文本视图包含表示文本视图以编程方式更改的设置的组的属性 (GUID_EditPropCategory_View_MasterSettings) 的类别。 一旦已以这种方式更改查看设置，它们不能更改在**选项**对话框中，直到它们被重置。  
+## <a name="change-settings-by-using-the-legacy-api"></a>通过使用传统的 API 更改设置  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口公开一组文本编辑器属性。 文本视图包含表示文本视图以编程方式更改的设置的组属性 (GUID_EditPropCategory_View_MasterSettings) 的类别。 一旦已以这种方式更改查看设置，它们不能更改在**选项**对话框重置。  
   
- 以下是用于更改核心编辑器的一个实例的视图设置的典型过程。  
+ 下面是典型的过程中更改的核心编辑器实例的视图设置。  
   
-1.  调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。  
+1.  调用`QueryInterface`上 (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) 的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口。  
   
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，指定一个值为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。  
+2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法，将值指定为 GUID_EditPropCategory_View_MasterSettings`rguidCategory`参数。  
   
-     执行此操作返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口，其中包含的视图的强制属性集。 永久强制此组中的任何设置。 如果设置不在此组中，则它将遵循中指定的选项**选项**对话框中或用户的命令。  
+     执行此操作将返回一个指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口，其中包含的视图的强制属性集。 永久强制此组中的任何设置。 如果设置不在此组中，则它将遵循中指定的选项**选项**对话框或用户的命令。  
   
-3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定中的适当的设置值`idprop`参数。  
+3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>方法，指定在相应的设置值`idprop`参数。  
   
-     例如，若要强制自动换行，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>并指定值的 VSEDITPROPID_ViewLangOpt_WordWrap，`vt`为`idprop`参数。 在此调用中，`vt`是变体类型 VT_BOOL 和`vt.boolVal`是 VARIANT_TRUE。  
+     例如，若要强制执行自动换行，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>并指定 VSEDITPROPID_ViewLangOpt_WordWrap，值`vt`为`idprop`参数。 在此调用中，`vt`是 VT_BOOL 类型的变体和`vt.boolVal`为 VARIANT_TRUE。  
   
-## <a name="resetting-changed-view-settings"></a>重置已更改的视图设置  
- 若要重置设置核心编辑器的一个实例为任何已更改的视图，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>方法并指定中的适当的设置值`idprop`参数。  
+## <a name="reset-changed-view-settings"></a>重置更改视图设置  
+ 若要重置任何已更改的视图的核心编辑器实例设置，请调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>方法并指定在相应的设置值`idprop`参数。  
   
- 例如，若要允许自动换行自由浮动，你将它从类别中删除属性通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>并指定一个值为 VSEDITPROPID_ViewLangOpt_WordWrap`idprop`参数。  
+ 例如，若要允许自动换行自由浮动，您将其从删除的属性类别通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.RemoveProperty%2A>，并指定值为 VSEDITPROPID_ViewLangOpt_WordWrap`idprop`参数。  
   
- 若要在一次删除所有更改的设置核心编辑器，将值指定为 VSEDITPROPID_ViewComposite_AllCodeWindowDefaults，为 vt`idprop`参数。 在此调用中，vt 是变体类型 VT_BOOL 和 vt.boolVal 是 VARIANT_TRUE。  
+ 若要立即删除所有已更改的核心编辑器设置，将值指定为 VSEDITPROPID_ViewComposite_AllCodeWindowDefaults，为 vt`idprop`参数。 在此调用中，vt 是 VT_BOOL 类型的变体和 vt.boolVal 为 VARIANT_TRUE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在核心编辑器](../extensibility/inside-the-core-editor.md)   
- [通过使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
+ [通过使用传统的 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)   
  [“选项”对话框](../ide/reference/options-dialog-box-visual-studio.md)

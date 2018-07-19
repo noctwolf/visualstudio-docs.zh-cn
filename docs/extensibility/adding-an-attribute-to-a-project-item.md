@@ -1,5 +1,5 @@
 ---
-title: 将属性添加到项目项 |Microsoft 文档
+title: 将属性添加到项目项 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,23 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d601a4cb3a7804520f0c9c95e746275e27db4bcd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 65df74335bd6a79941f588f00d2b1c129e4e022c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104532"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081375"
 ---
-# <a name="adding-an-attribute-to-a-project-item"></a>将属性添加到项目项
-方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>获取和设置的项目项属性的值。 SetItemAttribute 创建属性，如果它尚不存在，将其添加到项目项元数据。  
+# <a name="add-an-attribute-to-a-project-item"></a>将属性添加到项目项
+方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>获取和设置的项目项的属性的值。 SetItemAttribute 创建属性，如果已存在，将其添加到项目项元数据。  
   
-## <a name="adding-an-attribute-to-a-project-item"></a>将属性添加到项目项  
+## <a name="add-an-attribute-to-a-project-item"></a>将属性添加到项目项  
   
-#### <a name="to-add-an-attribute-to-a-project-item"></a>将属性添加到项目项  
+-   下面的代码使用<xref:EnvDTE.DTE>自动化对象和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法将属性添加到项目项。 从项目项名称"program.cs"获取项目项 ID。 添加到此项目项属性"即"并将其赋了值"MyValue"。  
   
--   下面的代码使用<xref:EnvDTE.DTE>自动化对象和<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>方法将属性添加到项目项。 从项目项名称"program.cs"获取的项目项 ID。 属性"即"是添加到此项目项，并且其赋予值"MyValue"。  
-  
-    ```  
+    ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
     EnvDTE.Project project = dte.Solution.Projects.Item(1);  
   
@@ -49,5 +47,5 @@ ms.locfileid: "31104532"
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
- [保留 MSBuild 项目文件中的数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+## <a name="see-also"></a>请参阅  
+ [将数据保存在 MSBuild 项目文件](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

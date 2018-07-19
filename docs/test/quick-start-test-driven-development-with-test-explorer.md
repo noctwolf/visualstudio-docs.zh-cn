@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83dfee8bc028ff92e01b18d6cb50933b46907354
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751418"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845751"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 
@@ -66,11 +66,11 @@ ms.locfileid: "34751418"
 
 
 > [!NOTE]
-> 如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关更多信息，请参见 [将不同测试框架与“测试资源管理器”配合使用](#frameworks)。
+> 如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
 
 ##  <a name="walkthrough"></a> 演练：使用单元测试开发方法
- 本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关更多信息，请参见 [使用不同的测试框架](#frameworks)。
+ 本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
 #### <a name="creating-the-test-and-method"></a>创建测试和方法
 
@@ -190,7 +190,7 @@ ms.locfileid: "34751418"
 
 3.  检查所测试的方法，以查明可能出错的地方。 在 `MyMath.Rooter` 类中，重写代码：
 
-    ```
+    ```csharp
     public double SquareRoot(double input)
     {
       double result = input;

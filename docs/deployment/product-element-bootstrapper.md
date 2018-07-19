@@ -1,5 +1,5 @@
 ---
-title: '&lt;产品&gt;元素 （引导程序） |Microsoft 文档'
+title: '&lt;产品&gt;元素 （引导程序） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa27f5b2af87ec3a174c26ccae1ad4e4e47749b3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90179df4595ea58a771dd941ea388555b52c7374
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559434"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080400"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt;产品&gt;元素 （引导程序）
-`Product`元素是在产品文件的顶级 XML 元素。  
+`Product`元素是产品文件内的顶级 XML 元素。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Product  
 ProductCode  
 >  
@@ -140,16 +140,16 @@ ProductCode
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `Product`元素必需的产品文件中。 它具有以下属性。  
+ `Product`元素必需的产品文件中。 它具有以下特性。  
   
 |特性|描述|  
 |---------------|-----------------|  
-|`ProductCode`|产品的唯一标识符。|  
+|`ProductCode`|该产品的唯一标识符。|  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
+ 下面的代码示例显示了用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
   
 <Product  
@@ -252,4 +252,4 @@ ProductCode
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构参考](../deployment/product-and-package-schema-reference.md)

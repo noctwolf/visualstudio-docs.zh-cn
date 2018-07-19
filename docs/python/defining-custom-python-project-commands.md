@@ -1,7 +1,7 @@
 ---
 title: 如何为 Python 项目定义自定义菜单命令
 description: 演示如何在 Visual Studio 中编辑项目和定向文件以将自定义命令添加到 Python 项目上下文菜单中。 命令能够在可执行程序、脚本、模块、内联代码片段和 pip 上进行调用。
-ms.date: 02/02/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93d7e01037712d633ed4c23534163924647183f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6d6113b9c102ff367d4b41bd4780c365c1928705
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583627"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117906"
 ---
 # <a name="defining-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 

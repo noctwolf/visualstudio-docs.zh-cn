@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e83d964cf4c17542f8741a03963f317e234bca01
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 59d52895b9eccd80427759fb9a3819be5ab86329
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815894"
 ---
 # <a name="static-helper-classes"></a>静态帮助程序类
 
@@ -41,7 +42,7 @@ IntelliTest 提供了一套静态帮助程序类，可供创作[参数化单元�
 
 以下参数化测试不会考虑 j = 0：
 
-```
+```csharp
 public void TestSomething(int i, int j) {
      PexAssume.AreNotEqual(j, 0);
      int k = i/j;
@@ -53,7 +54,7 @@ public void TestSomething(int i, int j) {
 
 上述代码几乎等效于：
 
-```
+```csharp
      if (j==0)
           return;
 ```
@@ -73,7 +74,7 @@ PexAssume 还包含专用的嵌套类，用于对字符串、数组和集合进�
 
 以下断言中整数的绝对值为正：
 
-```
+```csharp
 public void TestSomething(int i) {
      int j = Maths.Abs(i);
      PexAssert.IsTrue(j >= 0);
@@ -100,7 +101,7 @@ PexChoose 类可在两种模式下运行：
 
 * 简单调用 PexChoose.Value 生成新值：
 
-```
+```csharp
 public int Foo() {
     return PexChoose.Value<int>("foo");
 }
@@ -113,13 +114,13 @@ public int Foo() {
 
 IntelliTest 浏览代码时，会通过 PexObserve 记录使用其格式化字符串表现形式的计算值。 该值与唯一名称相关联。
 
-```
+```csharp
 PexObserve.Value<string>("result", result);
 ```
 
 **示例**
 
-```
+```csharp
 // product code
 public static class MathEx {
      public static int Square(int value) { return value * value; }
@@ -151,7 +152,7 @@ public partial class MathExTests {
 
 此示例演示了如何实现 PexAssume.Arrays.ElementsAreNotNull 方法。 在该方法中会忽略对数组值长度的约束，以避免 IntelliTest 尝试生成其他大小的数组。 只在此处忽略该约束。 如果经测试代码对不同数组长度的处理方式不同，IntelliTest 无法根据对经测试代码的约束生成不同大小的数组。
 
-```
+```csharp
 public static void AreElementsNotNull<T>(T[] value)
     where T : class
 {

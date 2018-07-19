@@ -21,12 +21,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57387cecfdf58667998cc3766617d37c62e0f4ab
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: HT
+ms.openlocfilehash: 673c364c1750afbaa4b319c40550be7cfac3b53b
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757076"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131968"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -106,7 +106,7 @@ Tableadapter 使用数据命令来读取和写入数据库中。 使用 TableAda
 当使用 TableAdapter 时，它将有效地执行与你通常会执行的命令相同的操作。 例如，当调用该适配器`Fill`方法，该适配器运行数据命令其`SelectCommand`属性，并使用数据读取器 (例如， <xref:System.Data.SqlClient.SqlDataReader>) 要加载的结果集到数据表。 同样，当调用该适配器`Update`方法，它运行相应的命令 (在`UpdateCommand`， `InsertCommand`，和`DeleteCommand`属性) 为每个更改数据表中的记录。
 
 > [!NOTE]
-> 如果没有足够的信息在主查询中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`默认情况下创建命令时生成的 TableAdapter。 如果 TableAdapter 的主查询不只是单个表`SELECT`语句，就可以在设计器将无法生成`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不生成这些命令，运行时，您可能会收到错误`TableAdapter.Update`方法。
+> 如果没有足够的信息在主查询中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`生成 TableAdapter 时默认情况下创建命令。 如果 TableAdapter 的主查询不只是单个表`SELECT`语句，就可以在设计器将无法生成`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 如果不生成这些命令，运行时，您可能会收到错误`TableAdapter.Update`方法。
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 

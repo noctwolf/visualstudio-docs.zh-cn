@@ -16,11 +16,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b72f2099f629a35659d67832f4ec583f1409f1c4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f8811d2c9b1d27a2a436004da29711a7a4e34f55
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117586"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 
@@ -113,13 +114,13 @@ public void AddIntegers_FromDataSourceTest()
 ###  <a name="BKMK_Specifying_the_DataSourceAttribute"></a>指定 DataSourceAttribute
  `DataSource` 属性指定数据源的连接字符串和测试方法中使用的表的名称。 连接字符串中的确切信息可能有所不同，具体取决于你使用的数据源类型。 在本例中，我们使用 SqlServerCe 数据库。
 
-```
+```csharp
 [DataSource(@"Provider=Microsoft.SqlServerCe.Client.4.0;Data Source=C:\Data\MathsData.sdf", "AddIntegersData")]
 ```
 
 DataSource 属性具有三个构造函数。
 
-```
+```csharp
 [DataSource(dataSourceSettingName)]
 ```
 
@@ -127,7 +128,7 @@ DataSource 属性具有三个构造函数。
 
  使用 app.config 文件可更改数据源的位置，而无需对单元测试本身进行更改。 有关如何创建和使用 app.config 文件的信息，请参阅[演练：使用配置文件来定义数据源](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
-```
+```csharp
 [DataSource(connectionString, tableName)]
 ```
 
@@ -135,7 +136,7 @@ DataSource 属性具有三个构造函数。
 
  连接字符串取决于数据源的类型，但是它应包含指定数据提供程序的固定名称的 Provider 元素。
 
-```
+```csharp
 [DataSource(
     dataProvider,
     connectionString,
@@ -152,7 +153,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
 ```
 
 ##  <a name="BKMK_Running_the_test_and_viewing_results"></a>运行测试并查看结果
- 完成测试方法的编写后，生成测试项目。 测试方法显示在测试资源管理器窗口中的“未运行的测试”组中。 当运行、编写以及重新运行测试时，测试资源管理器在“失败的测试”、“通过的测试”和“未运行的测试”组中显示结果。 可以选择“运行全部”来运行所有测试，或选择“运行...”来选择要运行的测试的子集。
+ 完成测试方法的编写后，生成测试项目。 测试方法显示在测试资源管理器窗口中的“未运行的测试”组中。 当运行、编写以及重新运行测试时，测试资源管理器在“失败的测试”、“通过的测试”和“未运行的测试”组中显示结果。 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。
 
  当运行测试时，位于资源管理器顶部的测试结果栏是动态显示的。 在测试运行结束时，如果所有测试均通过，则结果栏为绿色；如果有任何测试失败，结果栏为红色。 测试运行的摘要显示在测试资源管理器底部的详细信息窗格中。 选择一个测试以在底部窗格中查看该测试的详细信息。
 

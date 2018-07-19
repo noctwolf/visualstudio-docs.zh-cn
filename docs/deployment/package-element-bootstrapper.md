@@ -1,5 +1,5 @@
 ---
-title: '&lt;包&gt;元素 （引导程序） |Microsoft 文档'
+title: '&lt;包&gt;元素 （引导程序） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b304cc3bee93b367cc3b401328749ee6aca89625
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: a0c1ab7a2e304fcaede2a51a1047691343f34783
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815595"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080781"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包&gt;元素 （引导程序）
-`Package`元素是在包文件的顶级 XML 元素。  
+`Package`元素是包文件内的顶级 XML 元素。  
   
 ## <a name="syntax"></a>语法  
   
@@ -147,12 +147,12 @@ ms.locfileid: "34815595"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`Culture`|必须的。 定义此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。|  
-|`Name`|必须的。 如向开发人员工具中显示包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`和`Culture`属性`Package`。|  
-|`LicenseAgreement`|可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (.txt) 或丰富文本格式。 (.rtf)|  
+|`Culture`|必须的。 定义用于此包，确定要使用的语言的区域性。 此属性是一个项`Strings`元素，它在安装过程中列出的产品名称和错误消息的特定于区域性的字符串。|  
+|`Name`|必须的。 如向开发人员工具中显示的包的名称[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 此属性是一个项`Strings`元素，它应包含`String`具有元素`Name`和`Culture`属性设置为匹配`Name`并`Culture`的属性`Package`。|  
+|`LicenseAgreement`|可选。 在分发包，其中包含最终用户许可协议 (EULA) 中指定的文件的名称。  此文件可以是纯文本 (*.txt*) 或丰富文本格式。 (*.rtf*)|  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示重新分发的完整包文件[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
+ 下面的代码示例显示了用于重新分发的完整包文件[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -190,4 +190,4 @@ ms.locfileid: "34815595"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构参考](../deployment/product-and-package-schema-reference.md)

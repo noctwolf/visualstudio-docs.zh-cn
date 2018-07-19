@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0436612d208fa4ffbcc808007849b5d168b049da
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 59424cdb93d8c664740ddf1d9865ba41044eb72e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691113"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283072"
 ---
 # <a name="visual-studio-2017-administrator-guide"></a>Visual Studio 2017 管理员指南
 
@@ -29,7 +29,7 @@ ms.locfileid: "34691113"
 
 ## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>在企业环境中部署 Visual Studio 2017
 
-只要每台目标计算机满足[最低安装要求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)，就可以将 Visual Studio 2017 部署到客户端工作站。 无论是通过 System Center 等软件还是通过批处理文件进行部署，通常都需要完成以下步骤：
+只要每台目标计算机满足[最低安装要求](/visualstudio/productinfo/vs2017-system-requirements-vs)，就可以将 Visual Studio 2017 部署到客户端工作站。 无论是通过 System Center 等软件还是通过批处理文件进行部署，通常都需要完成以下步骤：
 
 1. 在网络位置上[创建包含 Visual Studio 产品文件的网络共享](create-a-network-installation-of-visual-studio.md)。
 
@@ -73,7 +73,7 @@ Value = (DWORD)
 
 ## <a name="get-support"></a>获取支持
 
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
 

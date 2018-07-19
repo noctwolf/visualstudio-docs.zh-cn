@@ -10,11 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0a2688b540b9256b43b674714c6c123e90acaaeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aa1c2e97b52027c81749d0e4cd75ea767f2d1c13
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280385"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 在本部分中，你将了解如何安装 Visual Studio Tools for Unity，以及如何配置你的 Unity 项目以使用 Visual Studio。
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 -   支持扩展的 **Visual Studio** 版本，例如，Visual Studio Community、Professional、Premium 或 Enterprise. 你可以免费下载 Visual Studio Community。
 
-     [下载 Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)
+     [下载 Visual Studio Community](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 -   **Unity** 4.0.0 版或更高版本； **Unity** 5.2.0 版或更高版本，以利用对 Visual Studio Tools for Unity 2.1 或更高版本的内置支持。
 

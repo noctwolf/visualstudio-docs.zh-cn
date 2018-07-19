@@ -1,5 +1,5 @@
 ---
-title: Visual Basic 中的 stop 语句 |Microsoft 文档
+title: Visual Basic 中的 stop 语句 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5909d8ac37ee77c43b5ddbd2625c3de92de32cad
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 74be447f523713cdef9ee5c52876ee0acf4c25b2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474890"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056138"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 语句
 Visual Basic Stop 语句提供了一种以编程方式设置断点的替换方法。 当调试器遇到 Stop 语句时，它将中断程序的执行（进入中断模式）。 C# 程序员可通过调用 System.Diagnostics.Debugger.Break 达到同样的效果。  
@@ -39,7 +39,7 @@ Visual Basic Stop 语句提供了一种以编程方式设置断点的替换方�
   
  若要避免移除 Stop 语句，可以使用条件编译：  
   
-```  
+```cpp
 #If DEBUG Then  
    Stop  
 #Else  
@@ -49,13 +49,13 @@ Visual Basic Stop 语句提供了一种以编程方式设置断点的替换方�
   
  另一种方法是使用 Assert 语句，而不使用 Stop 语句。 Debug.Assert 语句只有在没有满足指定条件时才中断执行，并且当生成发布版本时该语句被自动移除。 有关详细信息，请参阅[托管代码中的断言](../debugger/assertions-in-managed-code.md)。 如果想让 Assert 语句总是在调试版本中中断执行，可以这样做：  
   
-```  
+```csharp
 Debug.Assert(false)  
 ```  
   
  还有一种方法是使用 Debug.Fail 方法：  
   
-```  
+```csharp
 Debug.Fail("a clever output string goes here")  
 ```  
   

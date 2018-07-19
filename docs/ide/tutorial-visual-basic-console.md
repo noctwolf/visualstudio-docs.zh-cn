@@ -13,18 +13,18 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 228ebc2fd2137b78b44347fa2e03d7ba949a23c7
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ce1c40a7031145a13eb2eebf8adaee4eba51e9fc
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34764928"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280333"
 ---
 # <a name="get-started-with-visual-basic-in-visual-studio"></a>Visual Studio 中的 Visual Basic 入门
 
 在本 Visual Basic (VB) 教程中，将使用 Visual Studio 创建和运行几个不同的控制台应用，并在执行这些操作时研究 [Visual Studio 集成开发环境 (IDE)](visual-studio-ide.md) 的某些功能。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -58,7 +58,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 2. 在顶部菜单栏，依次选择“文件” > “新建” > “项目”。
 
-3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将文件命名为 HelloWorld。  
+3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将文件命名为 HelloWorld。
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-vb-dotnetcore-whatisyourname-console-app.png)
 
@@ -113,7 +113,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 1. 打开 Visual Studio 2017，然后在顶部菜单栏中，选择“文件” > “新建” > “项目”。
 
-2. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后将文件命名为 CalculateThis。  
+2. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后将文件命名为 CalculateThis。
 
 3. 在 `Module Program` 行和 `End Module` 行之间输入以下代码：
 
@@ -136,7 +136,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
    ![显示“Calculate This”代码的代码窗口](../ide/media/vb-codewindow-calculate-this.png)
 
-4. 单击“CalculateThis”运行程序。 控制台窗口应如以下屏幕快照所示：       
+4. 单击“CalculateThis”运行程序。 控制台窗口应如以下屏幕快照所示：
 
     ![显示“CaluculateThis”应用的控制台窗口，其中包括要执行的操作的相应提示。](../ide/media/vb-console-calculate-this.png)
 

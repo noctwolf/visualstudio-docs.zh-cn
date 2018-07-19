@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 0ac6bd2e9b2c15f64e0232e46267a87c210b5b69
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3ea3669f3c66a36a10e63dde9d98b0f951d58f1e
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751450"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844925"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -240,7 +240,7 @@ Fakes 有两种风格：
 
 前面的示例对一个静态方法使用了填充码。 若要将填充码用于实例方法，请在类型名称和方法名称之间写入 `AllInstances`：
 
-```
+```vb
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ```
 

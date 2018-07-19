@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7952ccfb8a2574bca5f297da5e675f76e8725f83
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eaa3a852ad67b0d1ffb4e0fb5c121adca81091a9
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815160"
 ---
 # <a name="exploration-bounds"></a>浏览边界
 
@@ -23,7 +24,7 @@ PexSettingsAttributeBase 是设置边界即特性的抽象基类。 请参阅[�
 
 使用该设置的命名属性及其派生特性可修改设置：
 
-```
+```csharp
 [PexClass(MaxRuns = 10)]
 public partial class FooTest {...}
 ```
@@ -75,7 +76,7 @@ IntelliTest 浏览程序的执行路径越深，IntelliTest 从程序的控制�
 
 例如，以下代码按 0-100 使用分支：
 
-```
+```csharp
 for (int i=0; i<100; i++) { }
 ```
 
@@ -104,7 +105,7 @@ for (int i=0; i<100; i++) { }
 
 例如，以下代码中的每个路径使用 n+1 个条件：
 
-```
+```csharp
 [PexMethod]
 void ParameterizedTest(int n) 
 {

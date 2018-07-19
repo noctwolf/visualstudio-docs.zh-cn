@@ -1,5 +1,5 @@
 ---
-title: '&lt;assemblyIdentity&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+title: '&lt;assemblyIdentity&gt;元素 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 802d94063d2a4351ecc627c9426edb458d2543c2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 51ee3ae65c107fc3e6fafbacc3b2e20652ae998d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31559824"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078022"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;assemblyIdentity&gt;元素 （ClickOnce 部署）
-标识的主程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
+标识的主要程序集的[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
   
       <assemblyIdentity    
    name   
@@ -46,18 +46,18 @@ ms.locfileid: "31559824"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`name`|必须的。 用于信息说明标识部署的用户可读名称。<br /><br /> 如果`name`包含特殊字符，例如单引号或双引号引号，应用程序可能无法激活。|  
-|`version`|必须的。 采用以下格式指定的程序集的版本号： `major.minor.build.revision`。<br /><br /> 此值必须以触发应用程序更新的更新清单中会递增。|  
-|`publicKeyToken`|必须的。 指定的 16 字符十六进制字符串，表示在其下的部署清单进行签名的公钥的 sha-1 哈希值的最后 8 个字节。 用于对进行签名的公钥必须是 2048 位或更高版本。<br /><br /> 虽然为程序集签名是可选但建议，此属性是必需的。 如果程序集未签名，你应从自签名的程序集复制值或使用"假"全为零的值。|  
-|`processorArchitecture`|必须的。 指定处理器。 有效值为`msil`适用于所有处理器`x86`适用于 32 位 Windows`IA64`适用于 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器的。|  
-|`type`|必须的。 有关与 Windows 通过并行安装技术的兼容性。 唯一允许的值是`win32`。|  
+|`name`|必须的。 标识部署的用户可读名称供您参考。<br /><br /> 如果`name`包含特殊字符，如单引号或双引号引起来，应用程序可能无法激活。|  
+|`version`|必须的。 采用以下格式指定该程序集的版本号： `major.minor.build.revision`。<br /><br /> 此值必须在应用更新的清单，以触发应用程序更新中会递增。|  
+|`publicKeyToken`|必须的。 指定的 16 字符十六进制字符串表示在其下部署清单进行签名的公钥的 sha-1 哈希值的最后 8 个字节。 用于签名的公钥必须为 2048 位或更高版本。<br /><br /> 尽管为程序集签名是可选但建议，但此属性是必需的。 如果程序集未签名，你应从自签名的程序集复制值或使用"虚拟"值均为零。|  
+|`processorArchitecture`|必须的。 指定的处理器。 有效的值是`msil`适用于所有处理器`x86`的 32 位 Windows`IA64`为 64 位 Windows 和`Itanium`Intel 64 位 Itanium 处理器。|  
+|`type`|必须的。 有关使用 Windows 的并行安装技术的兼容性。 唯一允许的值是`win32`。|  
   
 ## <a name="remarks"></a>备注  
   
 ## <a name="example"></a>示例  
- 下面的代码示例阐释了`assemblyIdentity`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 此代码示例摘自更大的示例为提供[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)主题。  
+ 下面的代码示例演示`assemblyIdentity`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 此代码示例是为提供一个更大示例的一部分[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)主题。  
   
-```  
+```xml  
 <!-- Identify the deployment. -->  
 <assemblyIdentity   
   name="My Application Deployment.app"  

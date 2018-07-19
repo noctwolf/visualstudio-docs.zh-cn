@@ -1,5 +1,5 @@
 ---
-title: 引用 （SharePoint 工具扩展） |Microsoft 文档
+title: 引用 （SharePoint 工具扩展） |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 75bbdadba08ecb16dd789242feb1b2e2a204981d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d0699df6d6826cf2079f2fcfe0358ce4e0a7eebd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118463"
 ---
-# <a name="reference-sharepoint-tools-extensibility"></a>参考（SharePoint 工具扩展）
+# <a name="reference-sharepoint-tools-extensibility"></a>参考 （SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的参考文档。  
   
-## <a name="in-this-section"></a>本节内容  
+## <a name="in-this-section"></a>本节内容
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)  
- 包含.spdata 文件架构的参考文档。  
+ 包含的参考文档 *.spdata*文件架构。  
   
  [API 参考&#40;SharePoint 工具扩展&#41;](../sharepoint/api-reference-sharepoint-tools-extensibility.md)  
  包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
   
-## <a name="see-also"></a>请参阅  
- [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
-  
+## <a name="see-also"></a>请参阅
+ [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)  
   

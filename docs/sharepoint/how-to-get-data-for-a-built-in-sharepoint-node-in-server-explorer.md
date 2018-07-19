@@ -1,5 +1,5 @@
 ---
-title: 如何： 在服务器资源管理器中的内置 SharePoint 节点获取数据 |Microsoft 文档
+title: 如何： 在服务器资源管理器中的内置 SharePoint 节点获取数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,26 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f448ec8d7cfe22495aa3f7b2ce9191f106205c33
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 06965449cd07fb39480eb1974fc1c90e2d126c73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118748"
 ---
-# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何：为服务器资源管理器中的内置 SharePoint 节点获取数据
-  在每个内置 SharePoint 节点**服务器资源管理器**，则可以在该节点表示的基础 SharePoint 组件中获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
+# <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>如何： 在服务器资源管理器中的内置 SharePoint 节点获取数据
+  在每个内置 SharePoint 节点**服务器资源管理器**，可以为该节点表示的基础 SharePoint 组件获取数据。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示如何获取基础列表节点表示中的 SharePoint 列表数据**服务器资源管理器**。 默认情况下，列表节点具有**用浏览器查看**可以单击以打开列表，在 Web 浏览器的上下文菜单项。 此示例通过添加扩展列表节点**Visual Studio 中的视图**直接在 Visual Studio 中打开列出的上下文菜单项。 代码访问节点获取要在 Visual Studio 中打开的列表的 URL 的列表数据。  
+ 下面的代码示例演示如何获取基础列表节点表示中的 SharePoint 列表的数据**服务器资源管理器**。 默认情况下，列表节点具有**在浏览器中的查看**上下文菜单项，可以单击以打开 Web 浏览器中的列表。 此示例通过添加扩展节点列表**Visual Studio 中的视图**直接在 Visual Studio 中打开列表的上下文菜单项。 代码访问的节点，以获取要在 Visual Studio 中打开的列表的 URL 的列表数据。  
   
  [!code-vb[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextensionnodeinfo.vb#10)]
  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#10](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextensionnodeinfo.cs#10)]  
   
- 此示例使用 SharePoint 项目服务来获取<xref:EnvDTE.DTE>Visual Studio 中列出了用于打开的对象。 SharePoint 项目服务有关的详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
+ 此示例使用 SharePoint 项目服务获取<xref:EnvDTE.DTE>对象，用于打开列出了在 Visual Studio 中。 有关 SharePoint 项目服务的详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
   
- 有关创建扩展的 SharePoint 节点的基本任务的详细信息，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
+ 若要创建的 SharePoint 节点扩展的基本任务的详细信息，请参阅[如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)。  
   
-## <a name="compiling-the-code"></a>编译代码  
+## <a name="compile-the-code"></a>编译代码  
  此示例需要引用以下程序集：  
   
 -   EnvDTE  
@@ -46,13 +47,12 @@ ms.lasthandoff: 04/16/2018
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>部署扩展  
- 若要部署**服务器资源管理器**扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要随此扩展分发的任何其他文件。 有关详细信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+## <a name="deploy-the-extension"></a>将扩展部署  
+ 若要部署**服务器资源管理器**扩展中，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要将与该扩展一起分发的任何其他文件。 有关详细信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [如何： 扩展服务器资源管理器中的 SharePoint 节点](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   
- [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
-  
+ [部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)  
   

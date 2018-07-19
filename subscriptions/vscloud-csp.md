@@ -9,21 +9,21 @@ description: 有关云解决方案提供商如何为客户购买和管理 Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7cffe2f8e7351a243f581918e6d31a773d4808f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bdf956b02c4bfc5125b452b6eece0cb39e454bc3
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199074"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283372"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
-[云解决方案提供商 (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) 计划中的合作伙伴可为其客户购买 Visual Studio Enterprise 和 Visual Studio Professional 云订阅。 
+[云解决方案提供商 (CSP)](https://partner.microsoft.com/en-US/cloud-solution-provider) 计划中的合作伙伴可为其客户购买 Visual Studio Enterprise 和 Visual Studio Professional 云订阅。
 
-[比较云订阅选项](https://www.visualstudio.com/vs/pricing)
+[比较云订阅选项](https://visualstudio.microsoft.com/vs/pricing)
 
 ## <a name="prerequisites"></a>系统必备
-必须先在合作伙伴中心设置客户租户，并为此租户创建 Azure 订阅。 
+必须先在合作伙伴中心设置客户租户，并为此租户创建 Azure 订阅。
 [了解更多信息](https://docs.microsoft.com/vsts/billing/csp/set-up-csp-customer)
 
 ## <a name="how-to-buy"></a>购买方式
@@ -58,9 +58,10 @@ ms.locfileid: "31199074"
 
 如果此客户拥有多个 Azure 订阅，请使用下拉菜单选择从你这里购买的 Azure 订阅。  “许可证摘要”显示已分配的订阅数量以及每个 Visual Studio 云订阅选项可用的订阅数量。  摘要还允许你购买更多订阅或减少订阅数量。
 
-选择“添加”，向新用户分配订阅。  显示的计数会更新，同时最终用户会收到电子邮件通知。 最终用户可以使用你提供的电子邮件地址登录，并在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中激活其 Visual Studio 订阅。
+选择“添加”，向新用户分配订阅。  显示的计数会更新，同时最终用户会收到电子邮件通知。
+最终用户可以使用你提供的电子邮件地址登录，并在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中激活其 Visual Studio 订阅。
 
-若要将 Visual Studio 订阅重新分配给其他用户，可以删除当前订阅者并添加新的订阅者。 
+若要将 Visual Studio 订阅重新分配给其他用户，可以删除当前订阅者并添加新的订阅者。
 
 如果用户尚未激活其 Visual Studio 订阅，可能是因为他们未收到邀请电子邮件。  你也可以从 Visual Studio 管理门户中请求我们向用户重新发送激活邀请。
 
@@ -81,15 +82,17 @@ ms.locfileid: "31199074"
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>问：月度云订阅是如何收费的？
-答：在第一次购买时，我们会根据当月的剩余天数按比例收费。 例如，如果在 4 月 15 日购买了 10 个 Visual Studio Professional 月度云订阅，则只收取 5 个单位的费用，因为 30 天月份还剩 15 天（或者说 50%），我们会按照 50% 的比例收费。 在 5 月的第一天以及此后的每个月，对全部 10 个单位收费，直到取消。
+答：在第一次购买时，我们会根据当月的剩余天数按比例收费。 例如，如果在 4 月 15 日购买了 10 个 Visual Studio Professional 月度云订阅，则只收取 5 个单位的费用，因为 30 天月份还剩 15 天（或者说 50%），我们会按照 50% 的比例收费。
+在 5 月的第一天以及此后的每个月，对全部 10 个单位收费，直到取消。
 
-当在之后增加付款订阅数量时，我们同样会根据当月的剩余天数按比例对新增单位计费。 因此，如果在 5 月 10 日再购买 1 个 Visual Studio Professional 月度云订阅，则收取大约 0.677 个单位（距离 5 月 31 日还剩余 21 天）的费用。 
+当在之后增加付款订阅数量时，我们同样会根据当月的剩余天数按比例对新增单位计费。 因此，如果在 5 月 10 日再购买 1 个 Visual Studio Professional 月度云订阅，则收取大约 0.677 个单位（距离 5 月 31 日还剩余 21 天）的费用。
 
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>问：年度云订阅是如何收费的？
 答：在每次购买时，都会即时对已购买的全部数量计费。 费用不会按该年的剩余天数收取，也不会按比例分配。 如果在一年中的不同时间购买年度云订阅，则订阅的续订月份也不同。 与 Microsoft 批量许可协议采购一样，我们并未将所有客户的年度云订阅都视为有共同的时间边界。
 
 ### <a name="q-how-do-cancelations-work"></a>问：取消如何工作？
-答：当取消 Visual Studio 云订阅时，会同时取消自动续订。 订阅会一直持续到正常的续订日期，并于该日期后直接过期。 到期后，Visual Studio 订阅者无法继续使用 Visual Studio 或订阅中的任何其他权益。
+答：当取消 Visual Studio 云订阅时，会同时取消自动续订。 订阅会一直持续到正常的续订日期，并于该日期后直接过期。
+到期后，Visual Studio 订阅者无法继续使用 Visual Studio 或订阅中的任何其他权益。
 
 对于月度云订阅，取消在次月第一天生效。 如果只取消客户的部分月度云订阅，请务必在次月的第一天删除用户，确保为正确的人员继续分配活动订阅。
 
@@ -108,7 +111,7 @@ ms.locfileid: "31199074"
 
 此外，折扣仅适用于给定月度计费周期内的费用。 因此，如果在一个月内购买了 5 个 Visual Studio Professional 年度订阅，然后在次月再次购买了 5 个，则需按正常价格支付所有 10 个订阅的费用。
 
-这些折扣反映在[合作伙伴中心](https://partnercenter.microsoft.com)的定价数据中。 
+这些折扣反映在[合作伙伴中心](https://partnercenter.microsoft.com)的定价数据中。
 
 ### <a name="q-are-there-renewal-discounts"></a>问：续订是否有折扣？
 

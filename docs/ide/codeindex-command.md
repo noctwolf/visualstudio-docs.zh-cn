@@ -14,19 +14,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 52f557807dd1275526b4fc0d7f8a8584df922325
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 2216a4678436a9d7811adbdb4bef2ee930fbabb2
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297602"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
 使用 **CodeIndex** 命令管理 Team Foundation Server 中的代码索引。 例如，你可能希望重置该索引以修复 CodeLens 信息，或关闭索引以调查服务器性能问题。
 
-**所需权限**
+## <a name="required-permissions"></a>所需权限
 
-若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅[为 Team Services 和 TFS 定义的权限和组](https://www.visualstudio.com/docs/setup-admin/permissions)。
+若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅[为 Team Services 和 TFS 定义的权限和组](/vsts/organizations/security/permissions?view=vsts)。
 
 > [!NOTE]
 > 即使你使用管理凭据进行登录，也必须使用提升权限打开命令提示符窗口以运行此命令。 你还必须从 Team Foundation 的应用层运行此命令。
@@ -126,4 +127,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"
 ## <a name="see-also"></a>请参阅
 
 - [使用 CodeLens 查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [使用 TFSConfig 管理服务器配置](/vsts/tfs-server/command-line/tfsconfig-cmd)
+- [使用 TFSConfig 管理服务器配置](/tfs/server/ref/command-line/tfsconfig-cmd)

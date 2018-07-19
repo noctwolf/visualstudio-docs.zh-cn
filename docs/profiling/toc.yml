@@ -26,9 +26,6 @@
   items:
     - name: 分析 CPU 使用情况
       href: cpu-usage.md
-      items:
-        - name: 分析通用 Windows 应用 (UWP) 中的 CPU 使用情况
-          href: analyze-cpu-usage-in-a-windows-universal-app.md
     - name: 分析内存使用情况
       href: analyze-memory-usage.md
       items:
@@ -44,16 +41,10 @@
       href: perftips.md
     - name: 分析 JavaScript 内存
       href: javascript-memory.md
-      items:
-        - name: 演练：查找内存泄漏 (JavaScript)
-          href: walkthrough-find-a-memory-leak-javascript.md
     - name: 分析网络使用情况
       href: network-usage.md
     - name: 分析 HTML UI 响应
       href: html-ui-responsiveness.md
-      items:
-        - name: 演练：改进 UI 响应能力 (HTML)
-          href: walkthrough-improving-ui-responsiveness-html.md
     - name: 使用性能资源管理器
       href: performance-explorer.md
       items:

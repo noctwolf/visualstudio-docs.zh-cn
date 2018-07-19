@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的托管代码的代码分析
+title: 在 Visual Studio 中的托管代码的代码分析
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,32 +14,35 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7b992dadb703cf1c4f73830324e9934d7525645
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920452"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131877"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>托管代码的代码分析概述
 
-Visual Studio 2017 分析托管的代码通过两种方式： 使用旧版*FxCop*静态分析托管程序集，并使用.NET Compiler Platform*分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用.NET Compiler Platform 分析器来分析代码的详细信息，请参阅[Roslyn 概述分析器](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 2017 分析托管的代码通过两种方式： 使用旧版*FxCop*静态分析托管程序集，并使用.NET 编译器平台*分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用.NET Compiler Platform 分析器来分析代码的详细信息，请参阅[概述的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如 Microsoft .NET Framework 设计准则中规定的编程和设计规则的冲突。
 
 分析工具将它在分析期间执行的检查表示为警告消息。 警告消息标识任何相关的编程和设计问题，如有可能，还提供有关如何修复问题的信息。
 
+> [!NOTE]
+> 在 Visual Studio 中的.NET Core 和.NET Standard 项目不支持静态代码分析。 如果 msbuild 的一部分，可以对.NET Core 或.NET Standard 项目运行代码分析，您将看到类似的错误**错误： CA0055： 无法识别平台\<your.dll >**。 若要分析.NET Core 或.NET Standard 项目中的代码，使用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)相反。
+
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
 
 手动或自动，可以对你的项目中运行代码分析。
 
-若要生成项目每次运行代码分析，选择**生成时启用代码分析**项目的属性页上。 有关详细信息，请参阅[如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
+若要生成项目时每次运行代码分析，请选择**生成时启用代码分析**项目的属性页上。 有关详细信息，请参阅[如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)。
 
-若要在项目上手动运行代码分析，从菜单栏选择**分析** > **运行代码分析** > **对运行代码分析\<项目>**。
+若要对项目手动运行代码分析，在菜单栏上选择**分析** > **运行代码分析** > **上运行代码分析\<项目>**。
 
 ## <a name="rule-sets"></a>规则集
 
-对于托管代码的代码分析规则划分到[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 你可以使用 Microsoft 标准规则集，或者你可以[创建自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以满足特定需求。
+托管代码的代码分析规则分为[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 可以使用一个 Microsoft 标准规则集，也可以[创建自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以满足特定需求。
 
 ## <a name="suppress-warnings"></a>禁止显示警告
 
@@ -58,13 +61,13 @@ Public class MyClass
 有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017 时，您可能会突然会遇到这样的大量代码分析警告。 如果你不准备好修复警告，并且想要立即提高工作效率，你可以*基线*你的项目的分析状态。 从**分析**菜单上，选择**运行代码分析和禁止显示活动问题**。
+> 如果将项目迁移到 Visual Studio 2017 时，可能会突然遇到具有大量代码分析警告。 如果您不准备好修复警告，并且想要立即提高工作效率，你可以*基线*你的项目的分析状态。 从**分析**菜单中，选择**运行代码分析并取消未解决的问题**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 
 作为一个单位，可能希望所有签入行为满足特定的策略。 特别是希望确保遵从下列策略：
 
-- 签入代码中没有生成错误。
+- 签入代码中没有任何生成错误。
 
 - 作为最新生成的一部分运行代码分析。
 
@@ -76,6 +79,6 @@ Public class MyClass
 
 ## <a name="see-also"></a>请参阅
 
-- [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)
+- [Roslyn 分析器的概述](../code-quality/roslyn-analyzers-overview.md)
 - [使用规则集对代码分析规则进行分组](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

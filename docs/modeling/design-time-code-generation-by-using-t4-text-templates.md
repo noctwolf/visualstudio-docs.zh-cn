@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ff164eda610bcc69f908910e2dd23de3439f541f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bafcec9def78d05c7c7d03f43dfc1d184348bcd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954087"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117688"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
-使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据来自数据生成的代码*模型*。 模型是文件或包含有关你的应用程序要求的关键信息的数据库。
+使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
 
- 例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户需求更改时，很容易与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。
+ 例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的需求更改时，很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。
 
 > [!NOTE]
->  A*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。
+>  一个*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。
 
- 你可能已熟悉代码生成。 在定义中的资源 **.resx**文件在你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案、 类和方法的一组自动生成。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。
+ 你可能已熟悉代码生成。 在定义中的资源 **.resx**文件中您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案、 类和方法的一组自动生成。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。
 
  文本模板包含你要生成的文本以及用于生成文本的变量部分的程序代码。 程序代码允许你重复或有条件地省略部分已生成的文本。 生成的文本本身可以是将组成应用程序一部分的程序代码。
 
@@ -40,13 +40,13 @@ ms.locfileid: "31954087"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中创建设计时 T4 模板
 
-1.  创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目，或打开一个现有。
+1.  创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目，或打开现有实验。
 
-     例如，在**文件**菜单上，选择**新建**，**项目**。
+     例如，在**文件**菜单中，选择**新建** > **项目**。
 
 2.  将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。
 
-     为此，请在**解决方案资源管理器**，在你的项目的快捷菜单上，选择**添加**，**新项**。 在**添加新项**对话框框中，选择**文本模板**从中间窗格。
+     若要执行此操作，在**解决方案资源管理器**，在你的项目的快捷菜单，选择**添加** > **新项**。 在中**添加新项**对话框中，选择**文本模板**从中间窗格。
 
      请注意，**自定义工具**文件的属性是**TextTemplatingFileGenerator**。
 
@@ -69,10 +69,10 @@ ms.locfileid: "31954087"
 
      你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击 **“确定”**。
 
-6.  在**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。
+6.  在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。
 
     > [!NOTE]
-    >  如果项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
+    >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
 
 ### <a name="regenerating-the-code"></a>重新生成代码
  在下列任何一种情况下，将执行模板，同时生成附属文件：
@@ -83,7 +83,7 @@ ms.locfileid: "31954087"
 
 -   单击**转换所有模板**中**生成**菜单。 这将转换 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的所有模板。
 
--   在**解决方案资源管理器**，在快捷菜单上的任何文件，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
+-   在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
 
  还可以设置 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目，以便在模板读取的数据文件更改时执行这些模板。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
 
@@ -222,7 +222,7 @@ ms.locfileid: "31954087"
 
  `assembly` 指令使指定的程序集可供模板代码使用，方式与 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中的“引用”部分相同。 你无需包括对 System.dll 的引用，它是自动引用的。 `import` 指令允许你使用类型而不使用其完全限定名，方式与普通程序文件中的 `using` 指令相同。
 
- 例如，在导入之后**System.IO**，你可以编写：
+ 例如，在导入后**System.IO**，可以编写：
 
 ```csharp
 
@@ -296,12 +296,12 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ##  <a name="Regenerating"></a> 自动重新生成代码
  通常，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。
 
- 如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，选择**转换所有模板**上**生成**菜单。
+ 如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，请选择**转换所有模板**上**生成**菜单。
 
- 如果已安装 Visual Studio 建模 SDK，你可以每次执行生成时自动转换所有模板。 为此，可在文本编辑器中编辑项目文件（.csproj 或 .vbproj），然后在文件末尾附近（其他任何 `<import>` 语句之后）添加以下行：
+ 如果已安装 Visual Studio 建模 SDK，您可以执行生成时自动转换所有模板。 为此，可在文本编辑器中编辑项目文件（.csproj 或 .vbproj），然后在文件末尾附近（其他任何 `<import>` 语句之后）添加以下行：
 
 > [!NOTE]
-> 在 Visual Studio 2017，文本模板转换 SDK 和 Visual Studio 建模 SDK 时会自动安装在安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
+> 在 Visual Studio 2017 中，文本模板转换 SDK 和 Visual Studio 建模 SDK 自动安装时安装 Visual Studio 的特定功能。 有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
 
 ```
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -322,7 +322,7 @@ Warning("A warning message");
 ```
 
 ##  <a name="Converting"></a> 将现有文件转换为模板
- 模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件中，然后逐步引入可更改所生成文件的生成代码。
+ 模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件，然后逐步引入可更改所生成文件的生成代码。
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板
 
@@ -330,7 +330,7 @@ Warning("A warning message");
 
 2.  测试新文件以确保其工作。
 
-3.  在解决方案资源管理器，文件将扩展名更改为 **.tt**。
+3.  在解决方案资源管理器，更改到的文件扩展名 **.tt**。
 
 4.  验证的以下属性 **.tt**文件：
 

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6953017a034257900c467e7f2fac89897fa0d9e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574680"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303304"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
@@ -39,20 +39,20 @@ ms.locfileid: "31574680"
   
  将 **/verbosity** 设置为 `detailed` 时，生成过程会减慢；将 **/verbosity** 设置为 `diagnostic` 时，该过程会更慢。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
 ## <a name="saving-the-build-log-to-a-file"></a>将生成日志保存到文件中  
  可使用 **/fileLogger** (**fl**) 开关将生成数据保存到文件。 以下示例将生成数据保存到名为 `msbuild.log` 的文件。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
  在以下示例中，日志文件被命名为 `MyProjectOutput.log`，且日志输出的详细级别设置为了 `diagnostic`。 使用 **/filelogparameters** (`flp`) 开关可指定这两个设置。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
 ```  
   
@@ -63,7 +63,7 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  文件 2 和 3 的 **/Filelogparameters** (`flp`) 开关指定每个文件的名称及文件内容。 未为文件 1 指定名称，因此使用了默认名称 `msbuild1.log`。  
   
-```  
+```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
   
 ```  
@@ -76,7 +76,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
 
 在以下示例中，创建了名为 `binarylogfilename` 的二进制日志文件。
 
-```  
+```cmd  
 /bl:binarylogfilename.binlog
 ``` 
  

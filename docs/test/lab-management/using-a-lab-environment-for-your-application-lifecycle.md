@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 20c692e648e094d6d7c62cc5099b73ba2f27e3c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7313c12558da4ddda6cd38c8a1dff135a6f55cb8
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844298"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用实验室环境进行开发
 
@@ -35,8 +36,8 @@ ms.lasthandoff: 04/26/2018
 |![云实验室环境](../media/topology_cloud.png)| 此实验室环境提供的功能与服务器拓扑类似，但无需在本地环境运行物理计算机或虚拟机，这样可以缩短安装时间、简化维护过程并降低成本。 在 Microsoft Azure 等云环境中可以快速方便地设置多个网站、虚拟机和自定义网络。|
 |![客户端服务器实验室环境](../media/topology_clientserver.png)| 此实验室环境具有客户端-服务器拓扑，此拓扑常用于测试具有服务器和客户端组件的应用程序。 在客户端/服务器拓扑中，所有用于测试应用程序的所有客户端和服务器计算机都在你的实验室环境中。 当你使用此拓扑时，你可以从影响测试的每台计算机收集测试数据。|
 
-|         |         |
-|---------|---------|
+|   |   |
+|---|---|
 |  ![视频的摄像机图标](../../install/media/video-icon.png)  |    [观看视频](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)了解管理用于测试的实验室环境。 |
 
 ## <a name="use-the-cloud-with-team-services-or-team-foundation-server-build-and-release"></a>通过 Team Services 或 Team Foundation Server 生成和发布使用云
@@ -72,19 +73,19 @@ ms.lasthandoff: 04/26/2018
 
 可以使用 Visual Studio 实验室管理工具版创建两种类型的实验室环境：标准环境和 SCVMM 环境。 但是，每种类型的环境的功能不相同。
 
-**标准环境：**可混合包含虚拟机和物理计算机。 你还可以向由第三方虚拟化框架托管的标准环境添加虚拟机。 此外，标准环境不需要其他服务器资源，例如 SCVMM 服务器。
+**标准环境：** 可混合包含虚拟机和物理计算机。 你还可以向由第三方虚拟化框架托管的标准环境添加虚拟机。 此外，标准环境不需要其他服务器资源，例如 SCVMM 服务器。
 
-**SCVMM 环境：**仅包含由 SCVMM (System Center Virtual Machine Manager) 托管的虚拟机，因此 SCVMM 环境中的虚拟机仅可在 Hyper-V 虚拟化框架上运行。 但是，SCVMM 环境提供标准环境中不提供的以下自动化和管理功能：
+**SCVMM 环境：** 仅包含由 SCVMM (System Center Virtual Machine Manager) 托管的虚拟机，因此 SCVMM 环境中的虚拟机仅可在 Hyper-V 虚拟化框架上运行。 但是，SCVMM 环境提供标准环境中不提供的以下自动化和管理功能：
 
-- **环境快照：**环境快照包含实验室环境的状态，因此可以快速还原干净的环境或保存已修改的环境状态。 你还可以使用生成-部署-测试工作流自动执行保存和还原环境快照的过程。
+- **环境快照：** 环境快照包含实验室环境的状态，因此可以快速还原干净的环境或保存已修改的环境状态。 你还可以使用生成-部署-测试工作流自动执行保存和还原环境快照的过程。
 
-- **存储的环境：**可以存储 SCVMM 环境的副本，然后部署该环境的多个副本。
+- **存储的环境：** 可以存储 SCVMM 环境的副本，然后部署该环境的多个副本。
 
-- **网络隔离：**通过网络隔离可以在没有计算机名称冲突的情况下同时运行 SCVMM 环境的多个相同副本。
+- **网络隔离：** 通过网络隔离可以在没有计算机名称冲突的情况下同时运行 SCVMM 环境的多个相同副本。
 
-- **虚拟机模板：**虚拟机模板是删除了其名称和其他标识符的虚拟机。 在 SCVMM 环境中部署 VM 模板时，Microsoft 测试管理器会生成新的标识符。 这使你可以在同一环境或多个环境中部署多个虚拟机的副本，然后同时运行虚拟机。
+- **虚拟机模板：** 虚拟机模板是删除了其名称和其他标识符的虚拟机。 在 SCVMM 环境中部署 VM 模板时，Microsoft 测试管理器会生成新的标识符。 这使你可以在同一环境或多个环境中部署多个虚拟机的副本，然后同时运行虚拟机。
 
-- **已存储虚拟机：**存储在团队项目库中并包含唯一标识符的虚拟机。
+- **已存储虚拟机：** 存储在团队项目库中并包含唯一标识符的虚拟机。
 
 > [!NOTE]
 > 实验室管理工具版不支持 SCVMM 2016。

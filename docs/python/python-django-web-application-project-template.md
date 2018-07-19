@@ -1,7 +1,7 @@
 ---
 title: 适用于 Python 的 Django Web 项目模板
 description: 使用 Django 框架以 Python 编写的 Web 应用程序的 Visual Studio 模板概述。
-ms.date: 04/17/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 077619b7d47441bb4a02dbe87e7cf714b634beff
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031343"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847747"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -67,3 +67,4 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 ## <a name="see-also"></a>请参阅
 
 - [Django 学习教程](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [发布到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

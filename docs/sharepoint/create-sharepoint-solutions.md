@@ -1,5 +1,5 @@
 ---
-title: 创建 SharePoint 解决方案 |Microsoft 文档
+title: 创建 SharePoint 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82eaa5deca395af985017d0db0a98c11b2be9592
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bea91ca50cca71f91499ff306036a7e4812a5807
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691599"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326058"
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
   你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。  
@@ -34,16 +34,16 @@ ms.locfileid: "34691599"
   
 |||  
 |-|-|  
-|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**文档**<br /><br /> -   [入门&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
-|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**特色的任务**<br /><br /> -   [演练： 创建网站栏、 内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [如何： 创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [如何： 为 SharePoint 应用程序页创建用户控件或 Web 部件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
+|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**文档**<br /><br /> -   [开始&#40;Visual Studio 中的 SharePoint 开发&#41;](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)<br />-   [开发 sharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)<br />-   [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)<br />-   [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)<br />-   [包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)<br />-   [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|  
+|![文档](../sharepoint/media/vs-icon-documentation.gif "文档")|**特色的任务**<br /><br /> -   [演练： 为 SharePoint 创建网站栏、 内容类型和 tist](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)<br />-   [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)<br />-   [如何： 创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)<br />-   [如何： 创建 SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)<br />-   [如何： 创建 SharePoint 应用程序页或 web 部件的用户控件](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|  
 |![演练](../sharepoint/media/vs-icon-walkthroughs.gif "演练")|**演练**<br /><br /> -   [SharePoint 开发演练](../sharepoint/sharepoint-development-walkthroughs.md)|  
-|![代码示例](../sharepoint/media/vs-icon-codesamples.gif "代码示例")|**代码示例**<br /><br /> -   [SharePoint 开发示例](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint 开发人员工具下载](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
+|![代码示例](../sharepoint/media/vs-icon-codesamples.gif "的代码示例")|**代码示例**<br /><br /> -   [SharePoint 开发示例](../sharepoint/sharepoint-development-samples.md)<br />-   [SharePoint 开发人员工具下载](http://msdn.microsoft.com/sharepoint/aa905690.aspx)|  
 |![定型](../sharepoint/media/vs-icon-training.gif "培训")|**培训**<br /><br /> -   [了解 SharePoint 开发](http://msdn.microsoft.com/sharepoint/aa905692.aspx)|  
-|![论坛](../sharepoint/media/vs-icon-forums.gif "论坛")|**论坛**<br /><br /> -   [使用 Visual Studio 的 SharePoint 开发](http://social.msdn.microsoft.com/Forums/vssharepointdevelopment/threads)<br />-   [SharePoint 2010](http://social.msdn.microsoft.com/Forums/category/sharepoint2010,sharepoint/)|  
+|![论坛](../sharepoint/media/vs-icon-forums.gif "论坛")|**论坛**<br /><br /> -   [使用 Visual Studio 进行 SharePoint 开发](http://social.msdn.microsoft.com/Forums/vssharepointdevelopment/threads)<br />-   [SharePoint 2010](http://social.msdn.microsoft.com/Forums/category/sharepoint2010,sharepoint/)|  
 |![定型](../sharepoint/media/vs-icon-training.gif "培训")|**博客**<br /><br /> -   [Visual Studio SharePoint 开发博客](http://blogs.msdn.com/b/vssharepointtoolsblog/)|  
-|![如何操作？视频](../sharepoint/media/vs-icon-howdoivideos.gif "如何操作？视频")|**如何操作？视频**<br /><br /> -   [如何： 创建用于 SharePoint 2010 可视 Web 部件在 Visual Studio 2010？](http://msdn.microsoft.com/vstudio/ff623014.aspx)<br />-   [如何：在 Visual Studio 2010 中创建用于 SharePoint 2010 的内容类型？](http://msdn.microsoft.com/vstudio/ff623016.aspx)<br />-   [如何：在 Visual Studio 2010 中创建用于 SharePoint 2010 的网站定义？](http://msdn.microsoft.com/vstudio/ff623012.aspx)<br />-   [如何：使用 Visual Studio 2010 创建用于 SharePoint 2010 的业务数据连接模型？](http://msdn.microsoft.com/vstudio/ff623022.aspx)|  
+|![我如何？视频](../sharepoint/media/vs-icon-howdoivideos.gif "如何操作？视频")|**我如何？视频**<br /><br /> -   [如何实现： 创建用于 SharePoint 2010 可视 Web 部件在 Visual Studio 2010 中？](http://msdn.microsoft.com/vstudio/ff623014.aspx)<br />-   [如何：在 Visual Studio 2010 中创建用于 SharePoint 2010 的内容类型？](http://msdn.microsoft.com/vstudio/ff623016.aspx)<br />-   [如何：在 Visual Studio 2010 中创建用于 SharePoint 2010 的网站定义？](http://msdn.microsoft.com/vstudio/ff623012.aspx)<br />-   [如何：使用 Visual Studio 2010 创建用于 SharePoint 2010 的业务数据连接模型？](http://msdn.microsoft.com/vstudio/ff623022.aspx)|  
 |![第 9 频道视频](../sharepoint/media/vs-icon-channel9videos.gif "第 9 频道视频")|**第 9 频道视频**<br /><br /> -   [Visual Studio 2010 中的 SharePoint 开发概述](http://channel9.msdn.com/posts/funkyonex/Overview-of-SharePoint-Development-in-Visual-Studio-2010/)<br />-   [使用 Visual Studio 2010 构建 SharePoint 2010 Web 部件的最佳做法](http://channel9.msdn.com/posts/funkyonex/Best-Practices-on-Building-SharePoint-2010-Web-Parts-with-Visual-Studio-2010/)<br />-   [Visual Studio 2010 中的 SharePoint 功能和包设计器](http://channel9.msdn.com/posts/funkyonex/SharePoint-Feature-and-Package-Designers-in-Visual-Studio-2010/)|  
 |![MSDN 开发人员中心](../sharepoint/media/vs-icon-msdndevcenter.gif "MSDN 开发人员中心")|**MSDN 开发人员中心**<br /><br /> -   [Visual Studio 开发中心](http://msdn.microsoft.com/vstudio/default.aspx)<br />-   [SharePoint 开发人员中心](http://msdn.microsoft.com/sharepoint/default.aspx)<br />-   [SharePoint Server 开发人员中心](http://msdn.microsoft.com/office/aa905503.aspx)<br />-   [SharePoint Designer 开发人员中心](http://msdn.microsoft.com/office/bb421303.aspx)<br />-   [ASP.NET 开发人员中心](http://msdn.microsoft.com/aa336522.aspx)|  
-|![提供反馈](../sharepoint/media/vs-icon-feedback.gif "提供反馈")|**提供反馈**<br /><br /> 提供有关 Visual Studio 的反馈：<br /><br /> -   [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> 提供有关 Visual Studio 文档的反馈：<br /><br /> -   **轻量级视图。** 如果位于任意主题的顶部，可以选择“评估该主题”  链接来跳转到该主题的底部，在这里你可以指定“是”  或“否”  来对  “你是否认为本主题有用?”作出响应然后，你可以选择一个或多个复选框（选择“否” 后出现的），在文本框中或两者中提供详细信息。 完成后，选择“提交”  按钮。<br />-   **无脚本视图。** 在该主题顶部，选择“反馈”  link to provide feedback in the MSDN, TechNet and Expression Library  forum.<br />-   **经典视图。** 在该主题顶部，选择“反馈”  图标，以向文档团队提供关于该主题的反馈。|  
+|![提供反馈](../sharepoint/media/vs-icon-feedback.gif "提供反馈")|**提供反馈**<br /><br /> 提供有关 Visual Studio 的反馈：<br /><br /> -   [Microsoft 连接](http://go.microsoft.com/fwlink/?LinkID=150463)<br /><br /> 提供有关 Visual Studio 文档的反馈：<br /><br /> -   **轻量级视图。** 如果位于任意主题的顶部，可以选择“评估该主题”  链接来跳转到该主题的底部，在这里你可以指定“是”  或“否”  来对  “你是否认为本主题有用?”作出响应然后，你可以选择一个或多个复选框（选择“否” 后出现的），在文本框中或两者中提供详细信息。 完成后，选择“提交”  按钮。<br />-   **无脚本视图。** 在该主题顶部，选择“反馈”  link to provide feedback in the MSDN, TechNet and Expression Library  forum.<br />-   **经典视图。** 在该主题顶部，选择“反馈”  图标，以向文档团队提供关于该主题的反馈。|  
   
  
