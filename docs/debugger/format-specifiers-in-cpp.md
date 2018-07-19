@@ -1,5 +1,5 @@
 ---
-title: 格式说明符在调试器 （c + +） |Microsoft 文档
+title: 格式说明符在调试器中 （c + +） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -29,20 +29,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8d9d2ecc00e0d29f39cb82dab997fb28704f518
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3bd99ed0a4350dbaf8c2e158f8b86464f50393c4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478117"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057751"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 c + + 在 Visual Studio 调试器中的格式说明符
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。  
   
- 你还可以使用中的格式说明符**即时**窗口中，**命令**窗口，请在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并且即使在源窗口中。 如果将鼠标悬停在这些窗口中的表达式上，在数据提示中显示结果。 “数据提示”显示格式说明符。  
+ 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并且即使在源窗口中。 如果暂停这些窗口中的表达式时，将在数据提示中显示结果。 “数据提示”显示格式说明符。  
   
 > [!NOTE]
->  当 Visual Studio 本机调试器更改为新调试引擎中时，添加一些新的格式说明符和一些旧的已删除。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。
+>  如果 Visual Studio 本机调试器更改为新的调试引擎中，添加了一些新的格式说明符和某些旧的已删除。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。
 >   
 >  -   [格式说明符](#BKMK_Visual_Studio_2012_format_specifiers) 描述新的调试引擎中的格式说明符。  
 > -   [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
@@ -58,7 +58,7 @@ int main() {
 }  
 ```  
   
- 添加`my_var1`变量**监视**窗口 (调试时，**调试 > Windows > 监视 > 监视 1**)，并将显示为十六进制 (在**观看**窗口中，右键单击该变量，然后选择**十六进制显示**)。 现在，“监视”窗口显示其包含值 0x0065。 若要查看表示为字符而不是整数的该值，在“名称”列中，变量名之后添加字符格式说明符“, c” 。 “值”  列现在显示为 101 'e' 。  
+ 添加`my_var1`变量**观看**窗口 (调试时，**调试 > Windows > 观看 > 监视 1**)，然后将显示设置为十六进制 (在**观看**窗口中，右键单击该变量，然后选择**十六进制显示**)。 现在，“监视”窗口显示其包含值 0x0065。 若要查看表示为字符而不是整数的该值，在“名称”列中，变量名之后添加字符格式说明符“, c” 。 “值”  列现在显示为 101 'e' 。  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
@@ -74,7 +74,7 @@ int main() {
 |c|单个字符|0x0065, c|101 'e'|  
 |秒|const char * 字符串|\<位置 >"你好 world"|"hello world"|  
 |**sb**|const char * 字符串 （无引号）|\<位置 >"你好 world"|hello world|  
-|s8|UTF-8 字符串|\<位置 >"This is utf-8 咖啡 cup â˜•"|"This is utf-8 咖啡 cup ☕"|
+|s8|UTF-8 字符串|\<位置 >"这是 utf-8 咖啡杯 â˜•"|"这是 utf-8 咖啡杯 ☕"|
 |**s8b**|Utf-8 字符串 （无引号）|\<位置 >"你好 world"|hello world|  
 |su|Unicode （utf-16 编码） 字符串|\<位置 > L"你好 world"|L"hello world"<br /><br /> u"hello world"|  
 |sub|Unicode （utf-16 编码） 字符串 （无引号）|\<位置 > L"你好 world"|hello world|  
@@ -89,7 +89,7 @@ int main() {
 |hr|HRESULT 或 Win32 错误代码。 （调试器自动将 HRESULT 解码，因此这些情况下不需要该说明符。）|S_OK|S_OK|  
 |wc|窗口类标志|0x0010|WC_DEFAULTCHAR|  
 |wm|Windows 消息数字|16|WM_CLOSE|  
-|!|原始格式，忽略任何数据类型视图自定义项|\<自定义表示 >|4|  
+|!|原始格式，忽略任何数据类型视图自定义项|\<自定义表示形式 >|4|  
   
 > [!NOTE]
 >  如果存在“hv”  格式说明符，调试器会尝试确定缓冲区的长度并显示相应的元素数。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 “Hv”  格式说明符用于缓冲区大小尚不可使用的情况。  
@@ -115,16 +115,16 @@ int main() {
 |**l,h**|用于 d、i、u、o、x、X 的 long 或 short 前缀|00406042|0x0c22|  
 |**f**|带符号的浮点|(3./2.), f|1.500000|  
 |**e**|有符号的科学计数法|(3.0/2.0)|1.500000e+000|  
-|**g**|有符号的浮点数字或有符号的科学计数法，显示其中较短的数|(3.0/2.0)|1.5|  
+|**g**|带符号浮点数或带符号的科学记数法，<br/> 较短者为准|(3.0/2.0)|1.5|  
 |c|单个字符|\<location>|101 'e'|  
 |秒|const char*|\<location>|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
 |sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
 |s8|const char*|\<location>|"hello world"|  
-|hr|HRESULT 或 Win32 错误代码。 （调试器自动将 HRESULT 解码，因此这些情况下不需要该说明符。）|S_OK|S_OK|  
+|hr|HRESULT 或 Win32 错误代码。<br/>（调试器自动将 Hresult 解码，<br/> 在这些情况下不需要这样的说明符。|S_OK|S_OK|  
 |wc|窗口类标志。|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Windows 消息数字|0x0010|WM_CLOSE|  
-|!|原始格式，忽略任何数据类型视图自定义项|\<自定义表示 >|4|  
+|!|原始格式，忽略任何数据类型视图自定义项|\<自定义表示形式 >|4|  
   
 ###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 与 C++/CLI 进行交互操作调试的格式说明符内存位置  
  下表包含用于内存位置的格式化符号。 可以使用带有计算为位置的任何值或表达式的内存位置说明符。  

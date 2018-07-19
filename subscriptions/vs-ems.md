@@ -9,28 +9,28 @@ description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: acf1028890dfcee3194beaeff930d514ea1c812f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197173"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281646"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
-Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。  
+Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。
 
 ## <a name="activation-steps"></a>激活步骤
 
-若要使用 EMS，需要设置帐户或使用现有帐户登录。 
+若要使用 EMS，需要设置帐户或使用现有帐户登录。
 
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2.  在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。 
+2.  在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。
 
     ![EMS 权益磁贴](_img\vs-ems\vs-ems-tile.png)
 
-2.  在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”。 
+2.  在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”。
 
     ![EMS 权益：创建帐户](_img\vs-ems\vs-ems-create-account-cropped.png)
 
@@ -58,14 +58,14 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)*。
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional)
 
-无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
 -  需要 EMS 的帮助？  签出联机 [EMS 文档](/enterprise-mobility-security/)。
 -  有关对 EMS 任何组件的技术支持，请访问 https://support.microsoft.com/allproducts，然后选择产品。
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+-  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

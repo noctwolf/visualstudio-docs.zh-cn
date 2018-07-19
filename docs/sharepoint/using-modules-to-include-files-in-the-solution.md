@@ -1,5 +1,5 @@
 ---
-title: 使用模块包括解决方案中的文件 |Microsoft 文档
+title: 使用模块包括解决方案中的文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,19 +17,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f9389e5928c74e5ee60bee90b375671777f1b807
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: f0773d9c167a0a799b7d9bc8ddd2b52afc9bc6f2
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118482"
 ---
-# <a name="using-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
-  可能有些时候你可能想要将文件部署到 SharePoint 服务器而不考虑其文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(无法将其与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 时部署了解决方案，该模块中的文件会复制到 SharePoint 服务器上的指定文件夹中。  
+# <a name="use-modules-to-include-files-in-the-solution"></a>使用模块包括解决方案中的文件
+  可能您可能的想要将文件部署到 SharePoint 服务器，而不考虑它们的文件类型，如新的主页面。 若要执行此操作，可以使用*模块*(不要与混淆[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]代码模块)。 模块是 SharePoint 解决方案中的文件的容器。 部署解决方案时，该模块中的文件复制到 SharePoint 服务器上的指定文件夹。  
   
-## <a name="module-items-and-elements"></a>模块项和元素  
- 若要创建模块，将其添加到项目通过选择在**添加新项**对话框。 然后，修改其 Elements.xml 文件以包含你想要部署，其中它们位于在系统上，且它们应复制 SharePoint 服务器上的文件的名称。  
+## <a name="module-items-and-elements"></a>模块项和元素
+ 若要创建一个模块，将其添加到项目中选择它在**添加新项**对话框。 然后，修改其*Elements.xml*文件以包括你想要部署，其中它们位于在系统上，且它们应在 SharePoint 服务器上复制的文件的名称。  
   
- 下面是一个模块 Elements.xml 文件的示例：  
+ 下面是举例*Elements.xml*模块文件：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -45,24 +46,23 @@ ms.lasthandoff: 05/22/2018
   
 |文件名|描述|  
 |---------------|-----------------|  
-|Elements.xml|模块定义文件。|  
-|Sample.txt|作为模块中的文件的示例占位符文件。|  
+|*Elements.xml*|模块定义文件。|  
+|*Sample.txt*|一个占位符文件作为模块中的文件的示例。|  
   
- Elements.xml 文件包含下列元素：  
+ *Elements.xml*文件包含下列元素：  
   
 |元素名称|描述|  
 |------------------|-----------------|  
 |元素|包含所有模块中定义的元素。|  
-|模块|模块元素具有单个属性，*名称*，采用格式指定该模块的名称`<Module Name="Module1">`。<br /><br /> 请注意，如果你更改模块的名称 (或其*文件夹名称*属性)，你必须手动更新中的模块元素的名称。<br /><br /> 如果在模块元素中，指定该文件的子目录[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 将自动为其创建匹配的目录结构。|  
-|文件|文件元素具有两个参数，*路径*和*Url*。<br /><br /> 路径： 名称和位置的 SharePoint 解决方案中的文件。 格式是， `Path="Module1\Sample.txt"`。<br /><br /> -Url: 在 SharePoint 服务器部署该文件的位置。 格式是， `Url="Module1/Sample.txt"`。<br /><br /> 类型： 一个可选属性，它具有两个设置： *GhostableInLibrary*和*Ghostable*。 格式是， `Type="GhostableInLibrary"`。 指定*GhostableInLibrary*意味着该文件将添加到要添加到库时伴随文件的列表项以及在 SharePoint 文档库。 指定*Ghostable*导致要添加到 SharePoint 文档库之外的文件。|  
+|模块|模块元素具有单个属性*名称*，，指定的模块的名称格式`<Module Name="Module1">`。<br /><br /> 请注意，如果您更改模块的名称 (或其*文件夹名称*属性)，则必须手动更新模块元素中的名称。<br /><br /> 如果在模块元素中，指定该文件的子目录[!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)](WSS) 将自动为其创建匹配的目录结构。|  
+|文件|文件元素具有两个参数，*路径*并*Url*。<br /><br /> 路径： 名称和位置的 SharePoint 解决方案中的文件。 格式为， `Path="Module1\Sample.txt"`。<br /><br /> -Url: 文件在 SharePoint 服务器的部署位置。 格式为， `Url="Module1/Sample.txt"`。<br /><br /> 类型： 一个可选属性，具有两个设置： *GhostableInLibrary*并*Ghostable*。 格式为， `Type="GhostableInLibrary"`。 指定*GhostableInLibrary*意味着该文件将添加到列表项添加到库时随附的文件以及在 SharePoint 中的文档库。 指定*Ghostable*会导致将添加到 SharePoint 文档库外的文件。|  
   
- 你想要部署的每个文件需要一个单独`<File>`Elements.xml 中的元素条目。  
+ 你想要部署的每个文件需要一个单独`<File>`元素中的条目*Elements.xml*。  
   
-## <a name="see-also"></a>请参阅  
- [如何： 通过使用模块包括文件](../sharepoint/how-to-include-files-by-using-a-module.md)   
+## <a name="see-also"></a>请参阅
+ [如何： 使用模块包括文件](../sharepoint/how-to-include-files-by-using-a-module.md)   
  [如何： 设置文件](http://go.microsoft.com/fwlink/?LinkID=144271)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
- [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
-  
   

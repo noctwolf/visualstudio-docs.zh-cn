@@ -12,20 +12,20 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 5013f1ce5ed9c20ba51feef7dd73d80adc152103
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454696"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281089"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 安装跨平台移动开发
 
 可以在 Visual Studio 中使用 C++ 生成 Windows 桌面应用、通用 Windows 平台 (UWP) 应用、Linux 应用以及现在可生成的适用于 Android 和 iOS 的应用。 使用 C++ 的移动开发工作负载是 Visual Studio 中的一组可安装组件，其中包括跨平台的 iOS、Android 和 UWP Visual Studio 模板。 它安装了所需的跨平台工具和 SDK 以快速启动，而无需自行查找、下载和配置它们。 可以在 Visual Studio 中使用这些工具轻松创建、编辑、调试和测试跨平台项目。 本主题介绍了如何使用 Visual Studio 安装在 C++ 内开发跨平台应用所需的工具和第三方软件。 有关概述，请参阅 [Visual C++ 跨平台移动](https://go.microsoft.com/fwlink/p/?LinkId=536383)
 
-## <a name="requirements"></a>惠?
+## <a name="requirements"></a>要求
 
-- 有关安装要求，请参阅 [Visual Studio 产品系列系统要求](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)。
+- 有关安装要求，请参阅 [Visual Studio 产品系列系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs)。
 
    > [!IMPORTANT]
    > 如果使用的是 Windows 7 或 Windows Server 2008 R2，则可以针对 Windows 桌面应用程序、Android Native Activity 应用和库以及适用于 iOS 的应用和代码库开发代码，但不能针对 Windows Phone 或 UWP 应用开发代码。

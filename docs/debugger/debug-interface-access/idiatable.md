@@ -1,5 +1,5 @@
 ---
-title: IDiaTable |Microsoft 文档
+title: IDiaTable |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e95c469bb3a1d8747a7f1dabfadec24dc991730c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b9b792876e281f73f4df0246734403812a72aea
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472735"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056405"
 ---
 # <a name="idiatable"></a>IDiaTable
 枚举 DIA 数据源表。  
@@ -35,20 +35,20 @@ IDiaTable : IEnumUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索[IEnumVARIANT 接口](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)的此枚举器的版本。|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|检索表的名称。|  
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|检索表中的项的数目。|  
-|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|检索特定项的索引的引用。|  
+|[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|检索特定项索引的引用。|  
   
 ## <a name="remarks"></a>备注  
- 此接口实现`IEnumUnknown`Microsoft.VisualStudio.OLE.Interop 命名空间中的枚举方法。 `IEnumUnknown`枚举接口会大大提高效率来循环访问表内容比[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)和[idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md)方法。  
+ 此接口实现`IEnumUnknown`Microsoft.VisualStudio.OLE.Interop 命名空间中的枚举方法。 `IEnumUnknown`枚举接口是用于循环访问表的内容相比要高效得多[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)并[idiatable:: Item](../../debugger/debug-interface-access/idiatable-item.md)方法。  
   
- 解释`IUnknown`接口返回从`IDiaTable::Item`方法或`Next`（位于 Microsoft.VisualStudio.OLE.Interop 命名空间） 的方法是依赖于表的类型。 例如，如果`IDiaTable`接口表示插入的源列表`IUnknown`应为查询接口[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)接口。  
+ 解释`IUnknown`接口返回眖`IDiaTable::Item`方法或`Next`（位于 Microsoft.VisualStudio.OLE.Interop 命名空间） 的方法是依赖于表的类型。 例如，如果`IDiaTable`接口表示的插入源列表`IUnknown`应为查询接口[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  通过调用来获取此接口[idiaenumtables:: Item](../../debugger/debug-interface-access/idiaenumtables-item.md)或[idiaenumtables:: Next](../../debugger/debug-interface-access/idiaenumtables-next.md)方法。  
   
- 以下接口提供实施`IDiaTable`接口 (即，您可以查询`IDiaTable`以下接口之一的接口):  
+ 在实现以下接口`IDiaTable`接口 (即，您可以查询`IDiaTable`界面为以下接口之一):  
   
 -   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
@@ -65,10 +65,10 @@ IDiaTable : IEnumUnknown
 -   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>示例  
- 第一个函数， `ShowTableNames`，在会话中显示所有表的名称。 第二个函数， `GetTable`，搜索所有实现指定的接口的表的表。 第三个函数， `UseTable`，演示如何使用`GetTable`函数。  
+ 第一个函数， `ShowTableNames`，在会话中显示的所有表的名称。 第二个函数， `GetTable`，搜索所有实现指定的接口的表的表。 第三个函数， `UseTable`，演示如何使用`GetTable`函数。  
   
 > [!NOTE]
->  `CDiaBSTR` 是包装的类`BSTR`和自动处理并实例化超出范围时释放字符串。  
+>  `CDiaBSTR` 是一个类，包装`BSTR`和实例化超出范围时释放该字符串将自动处理。  
   
 ```C++  
 void ShowTableNames(IDiaSession *pSession)  

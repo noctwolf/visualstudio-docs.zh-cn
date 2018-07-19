@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式打开现有文档 |Microsoft 文档
+title: 如何： 以编程方式打开现有文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,35 +16,36 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0c7542b2222839afc75b3b5b1b84fc5afe56f523
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd9e120283c392978a21fa9f796f9eed5e3dab31
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35258718"
 ---
-# <a name="how-to-programmatically-open-existing-documents"></a>如何：以编程方式打开现有文档
+# <a name="how-to-programmatically-open-existing-documents"></a>如何： 以编程方式打开现有文档
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法打开指定的完全限定的路径和文件名称的现有 Microsoft Office Word 文档。 此方法返回<xref:Microsoft.Office.Interop.Word.Document>表示打开的文档。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-open-a-document"></a>若要打开的文档  
+## <a name="to-open-a-document"></a>若要打开的文档  
   
--   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法<xref:Microsoft.Office.Interop.Word.Documents>集合并提供到文档的路径。  
+-   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法的<xref:Microsoft.Office.Interop.Word.Documents>集合并提供对文档的路径。  
   
      [!code-vb[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#5)]
      [!code-csharp[Trin_VstcoreWordAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#5)]  
   
-### <a name="to-open-a-document-as-read-only"></a>若要打开的文档以只读方式  
+## <a name="to-open-a-document-as-read-only"></a>若要打开的文档为只读的  
   
--   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法，提供到该文档中的路径，并设置*ReadOnly*参数**True**方法调用中。  
+-   调用<xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法，提供的文档路径，并设置*ReadOnly*自变量**True**方法调用中。  
   
      [!code-vb[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#6)]
      [!code-csharp[Trin_VstcoreWordAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#6)]  
   
-## <a name="compiling-the-code"></a>编译代码  
+## <a name="compile-the-code"></a>编译代码  
  此代码示例要求满足以下条件：  
   
--   名为 NewDocument.doc 的文档必须存在于名为驱动器 C 上的测试的目录  
+-   名为的文档*NewDocument.doc*必须存在于一个名为目录*测试*在驱动器 c。  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 以编程方式创建新的文档](../vsto/how-to-programmatically-create-new-documents.md)   

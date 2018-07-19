@@ -1,5 +1,5 @@
 ---
-title: 如何： 对应用程序和部署清单重新签名 |Microsoft 文档
+title: 如何： 应用程序和部署清单重新签名 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,108 +20,108 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba634ffb30d6459c940811f0ea080f8b71a37f34
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566129"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078636"
 ---
-# <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：为应用程序和部署清单重新签名
-对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，这两个应用程序必须重新进行签名和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
+# <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何： 对应用程序和部署清单重新签名
+对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，必须重新签名的应用程序和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
   
- 可能会重新对清单签名的另一种情况是当你的客户想要为应用程序签名和部署清单用他们自己的证书。  
+ 你的客户想要为应用程序签名和部署清单具有自己的证书时可能会重新对清单签名的另一种情况。  
   
-## <a name="re-signing-the-application-and-deployment-manifests"></a>对清单进行重新签名的应用程序和部署  
- 此过程假定你已对你应用程序清单文件 (.manifest) 中进行了更改。 有关详细信息，请参阅[如何： 更改部署属性](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)。  
+## <a name="re-sign-the-application-and-deployment-manifests"></a>应用程序和部署清单重新签名  
+ 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)。 有关详细信息，请参阅[如何： 更改部署属性](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新签名的应用程序和部署清单  
   
 1.  打开**Visual Studio 命令提示符**窗口。  
   
-2.  将目录更改为包含要用于登录的清单文件的文件夹。  
+2.  将目录更改为包含要签名的清单文件的文件夹。  
   
-3.  键入以下命令以对应用程序清单文件进行签名。 ManifestFileName 替换为你的清单文件扩展名的名称。 将替换为证书文件的相对或完全限定路径的证书并将 Password 替换为证书的密码。  
+3.  键入以下命令以登录应用程序清单文件。 替换*ManifestFileName*清单文件和扩展的名称。 替换*证书*的证书文件并替换为相对或完全限定路径*密码*替换为证书的密码。  
   
-    ```  
+    ```cmd  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     例如，你可以运行以下命令以登录外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单。 对于部署到生产环境不建议使用 Visual Studio 创建的临时证书。  
+     例如，可以运行以下命令以登录为外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单。 Visual Studio 创建的临时证书不建议以部署到生产环境中。  
   
-    ```  
+    ```cmd  
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -sign ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  键入以下命令以更新并对签名部署清单文件，替换占位符名称与前面步骤。  
+4.  键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
   
-    ```  
+    ```cmd  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     例如，你可以运行以下命令以更新和为 Excel 外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序部署清单签名。  
+     例如，可以运行以下命令以更新和 Excel 外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序部署清单进行签名。  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.vsto -appmanifest ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  或者，将复制主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
+5.  （可选） 将复制的主部署清单 (*发布\\\<appname >.application*) 到你的版本部署目录 (*publish\Application 文件\\\<appname > _\<版本 >*)。  
   
-## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>更新和重新签名的应用程序和部署清单  
- 此过程假定你已进行了更改应用程序清单文件 (.manifest)，但没有其他已更新的文件。 文件更新时，还必须更新表示的文件的哈希。  
+## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>更新和应用程序和部署清单重新签名  
+ 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)，但有一些其他已更新的文件。 当文件更新时，也必须更新表示的文件的哈希。  
   
-#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>更新并重新对签名的应用程序和部署清单使用 Mage.exe  
+#### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 更新和重新签名的应用程序和部署清单  
   
 1.  打开**Visual Studio 命令提示符**窗口。  
   
-2.  将目录更改为包含要用于登录的清单文件的文件夹。  
+2.  将目录更改为包含要签名的清单文件的文件夹。  
   
-3.  从发布输出文件夹中的文件中删除.deploy 文件扩展名。  
+3.  删除 *.deploy*文件扩展名从发布中的文件输出文件夹。  
   
-4.  键入以下命令以使用更新的文件的新哈希更新应用程序清单并对应用程序清单文件进行签名。 ManifestFileName 替换为你的清单文件扩展名的名称。 将替换为证书文件的相对或完全限定路径的证书并将 Password 替换为证书的密码。  
+4.  键入以下命令以使用更新后的文件的新哈希更新应用程序清单和应用程序清单文件进行签名。 替换*ManifestFileName*清单文件和扩展的名称。 替换*证书*的证书文件并替换为相对或完全限定路径*密码*替换为证书的密码。  
   
-    ```  
+    ```cmd  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
     ```  
   
-     例如，你可以运行以下命令以登录外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单。 对于部署到生产环境不建议使用 Visual Studio 创建的临时证书。  
+     例如，可以运行以下命令以登录为外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单。 Visual Studio 创建的临时证书不建议以部署到生产环境中。  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  键入以下命令以更新并对签名部署清单文件，替换占位符名称与前面步骤。  
+5.  键入以下命令以更新并对签名部署清单文件，替换占位符名称，如在上一步中所示。  
   
-    ```  
+    ```cmd  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
     ```  
   
-     例如，你可以运行以下命令以更新和为 Excel 外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序部署清单签名。  
+     例如，可以运行以下命令以更新和 Excel 外接程序、 Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序部署清单进行签名。  
   
-    ```  
+    ```cmd  
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx  
     mage -update ExcelAddin1.vsto -appmanifest ExcelAddin1.dll.manifest -CertFile ..\ExcelAddIn1_TemporaryKey.pfx  
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  将.deploy 文件扩展名添加回文件，但应用程序和部署清单文件。  
+6.  添加 *.deploy*到文件，文件扩展名，但应用程序和部署清单文件。  
   
-7.  或者，将复制主部署清单 (发布\\*appname*.application) 到你的版本部署目录 (publish\Application 文件\\*appname*_*版本*)。  
+7.  （可选） 将复制的主部署清单 (*发布\\\<appname >.application*) 到你的版本部署目录 (*publish\Application 文件\\\<appname > _\<版本 >*)。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
- [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
- [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何： 为 ClickOnce 应用程序添加到客户端计算机的受信任的发布服务器](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
- [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
+ [如何： 启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
+ [如何： 设置 ClickOnce 应用程序安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [如何： 设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [如何： 调试 ClickOnce 应用程序使用受限权限](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何： 为 ClickOnce 应用程序的客户端计算机添加受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何： 配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

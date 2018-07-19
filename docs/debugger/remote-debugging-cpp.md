@@ -1,5 +1,5 @@
 ---
-title: 远程调试 Visual c + + 项目 |Microsoft 文档
+title: 远程调试 Visual c + + 项目 |Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2017
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ manager: douge
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 334a0b964033282458c211d69af30aad20dbd6bc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478104"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38781940"
 ---
 # <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>远程调试 Visual Studio 中的 Visual c + + 项目
-若要调试 Visual Studio 应用程序的其他计算机上，安装，并在计算机上运行远程工具将在其中部署您的应用程序配置你的项目，以从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
+若要调试在另一台计算机上的 Visual Studio 应用程序、 安装和将在其中部署您的应用程序的计算机上运行远程工具，将项目配置为从 Visual Studio 中，连接到远程计算机然后部署并运行你的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
@@ -34,33 +34,33 @@ ms.locfileid: "31478104"
 
 ## <a name="requirements"></a>要求
 
-远程调试器都支持 Windows 7 和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
+远程调试器是在 Windows 7 上受支持和更高版本 (不 phone) 和从 Windows Server 2008 Service Pack 2 的 Windows Server 的版本。 有关要求的完整列表，请参阅[要求](../debugger/remote-debugging.md#requirements_msvsmon)。
 
 > [!NOTE]
-> 不支持调试通过代理连接的两台计算机之间。 国家/地区中调试通过高延迟或低带宽连接，如拨号 Internet，或通过 Internet 不建议和可能失败也是非常慢。
+> 不支持调试通过代理连接的两台计算机之间。 调试通过高延迟或低带宽连接，例如拨号 Internet，或通过 Internet 跨国家/地区不建议并可能会失败或很令人无法接受慢。
   
 ## <a name="download-and-install-the-remote-tools"></a>下载并安装远程工具
 
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
   
 > [!TIP]
-> 在某些情况下，它可以从文件共享运行远程调试器方式效率最高。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
+> 在某些情况下，它可以是最有效，若要从文件共享运行远程调试器。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
 ## <a name="BKMK_setup"></a> 设置远程调试器
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
 > [!NOTE]
-> 如果你需要添加其他用户的权限更改身份验证模式中，或者远程调试器端口号，请参阅[配置远程调试器](../debugger/remote-debugging.md#configure_msvsmon)。
+> 如果您需要添加其他用户的权限更改身份验证模式，或者远程调试器的端口号，请参阅[配置远程调试器](../debugger/remote-debugging.md#configure_msvsmon)。
 
 ## <a name="remote_cplusplus"></a> 远程调试 Visual c + + 项目  
- 在下面的过程的名称和路径的项目是 C:\remotetemp\MyMfc，和远程计算机的名称是**MJO DL**。  
+ 在下面的过程的名称和项目的路径是 C:\remotetemp\MyMfc，且远程计算机的名称是**MJO DL**。  
   
 1.  创建 MFC 应用程序名为**mymfc。**  
   
-2.  中的应用程序容易到达，例如，在某处设置断点**MainFrm.cpp**，开始时`CMainFrame::OnCreate`。  
+2.  在应用程序中容易到达的例如，在某处设置断点**MainFrm.cpp**，在开头`CMainFrame::OnCreate`。  
   
-3.  在解决方案资源管理器，右键单击项目并选择**属性**。 打开**调试**选项卡。  
+3.  在解决方案资源管理器中右键单击项目并选择**属性**。 打开**调试**选项卡。  
   
 4.  设置**要启动的调试器**到**远程 Windows 调试器**。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "31478104"
   
 5.  对属性进行以下更改：  
   
-    |设置|值|
+    |设置|“值”|
     |-|-|  
     |远程命令|C:\remotetemp\mymfc.exe|  
     |工作目录|C:\remotetemp|  
@@ -80,9 +80,9 @@ ms.locfileid: "31478104"
   
      如果你部署其他文件 （可选），该文件夹必须存在两台计算机上。  
   
-6.  在解决方案资源管理器，右键单击该解决方案并选择**Configuration Manager**。  
+6.  在解决方案资源管理器，右键单击解决方案并选择**Configuration Manager**。  
   
-7.  有关**调试**配置，请选择**部署**复选框。  
+7.  有关**调试**配置，请选中**部署**复选框。  
   
      ![RemoteDebugCplusDeploy](../debugger/media/remotedebugcplusdeploy.png "RemoteDebugCplusDeploy")  
   
@@ -90,16 +90,16 @@ ms.locfileid: "31478104"
   
 9. 可执行文件会自动部署到远程计算机。  
   
-10. 如果出现提示，输入用于连接到远程计算机的网络凭据。  
+10. 如果系统提示，请输入网络凭据以连接到远程计算机。  
   
-     特定于你的网络安全配置所需的凭据。 例如，在域计算机上，可能会选择一个安全证书或输入你的域用户名和密码。 在非域计算机上，你可以输入计算机名和有效的用户帐户名称，如**MJO-DL\name@something.com**，以及正确的密码。  
+     特定于网络的安全配置所需的凭据。 例如，可能的域计算机上，选择安全证书或输入你的域名和密码。 在非域计算机上，你可能会输入计算机名称和有效的用户帐户名称，如**MJO-DL\name@something.com**，以及正确的密码。  
   
 11. 在 Visual Studio 计算机上，你应看到在断点处已停止执行。  
   
     > [!TIP]
-    >  或者，你可以采用单独的步骤部署文件。 在**解决方案资源管理器，** 右键单击**mymfc**节点，然后选择**部署**。  
+    >  或者，你可以采用单独的步骤部署文件。 在中**解决方案资源管理器**右键单击**mymfc**节点，然后选择**部署**。  
   
- 如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建为其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 > 新文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 > 现有项**，然后选择的文件)。 上**属性**对于每个文件页上，设置**复制到输出目录**到**始终复制**。
+ 如果具有需要由应用程序使用的非代码文件，则需要将其包含在 Visual Studio 项目中。 创建其他文件的项目文件夹 (在**解决方案资源管理器**，单击**添加 > 新文件夹**。)然后将文件添加到的文件夹 (在**解决方案资源管理器**，单击**添加 > 现有项**，然后选择文件)。 上**属性**页上为每个文件，将**复制到输出目录**到**始终复制**。
   
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试 
 

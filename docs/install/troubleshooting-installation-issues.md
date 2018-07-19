@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99547ff029e8bde94118918b8b0c538e3f7fad7d
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766033"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282949"
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
@@ -33,7 +33,7 @@ ms.locfileid: "34766033"
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>第 1 步 - 检查此问题是否是已知问题
 
-Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 若要确定你遇到的问题是否有解决办法，请参阅[发行说明的“已知问题”部分](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes#known-issues)。
+Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修复中。 若要确定你遇到的问题是否有解决办法，请参阅[发行说明的“已知问题”部分](/visualstudio/releasenotes/vs2017-relnotes#-known-issues)。
 
 ### <a name="step-2---check-with-the-developer-community"></a>第 2 步 - 通过开发者社区获取帮助
 
@@ -48,7 +48,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 1. 关闭 Visual Studio 安装程序。
 2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 运行此可执行文件，重置安装元数据。
+3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 运行此可执行文件，重置安装元数据。
 4. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
 
 ### <a name="step-4---report-a-problem"></a>第 4 步 - 报告问题
@@ -71,7 +71,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ### <a name="step-6---contact-us-optional"></a>第 6 步 - 与我们联系（可选）
 
-如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 ## <a name="how-to-troubleshoot-an-offline-installer"></a>如何解决脱机安装程序问题
 
@@ -100,7 +100,7 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ## <a name="more-support-options"></a>更多支持选项
 
-如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个选项：
 

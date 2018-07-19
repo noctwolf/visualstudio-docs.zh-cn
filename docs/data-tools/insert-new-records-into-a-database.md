@@ -19,67 +19,67 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c0b85c0f373f9536da2d2ad621e5898b4365c456
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 515140564d9523c9f1dfe6b3b904aaa3b37df45f
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922648"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089566"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
-若要将新记录插入数据库，可以使用`TableAdapter.Update`方法，或 TableAdapter 的 DBDirect 方法之一 (具体而言`TableAdapter.Insert`方法)。 有关详细信息，请参阅[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
+若要向数据库中插入新记录，可以使用`TableAdapter.Update`方法，或 TableAdapter 的 DBDirect 方法之一 (具体而言`TableAdapter.Insert`方法)。 有关详细信息，请参阅[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
 
- 如果你的应用程序不使用 Tableadapter，则可以使用命令对象 (例如， <xref:System.Data.SqlClient.SqlCommand>) 在你的数据库中插入新记录。
+ 如果你的应用程序不使用 Tableadapter，可以使用命令对象 (例如， <xref:System.Data.SqlClient.SqlCommand>) 若要将新记录插入数据库中。
 
- 如果你的应用程序使用数据集来存储数据，使用`TableAdapter.Update`方法。 `Update`方法可发送到数据库 （更新、 插入和删除） 的所有更改。
+ 如果你的应用程序使用数据集来存储数据，使用`TableAdapter.Update`方法。 `Update`方法向数据库发送所有更改 （更新、 插入和删除）。
 
- 如果你的应用程序将使用对象来存储数据，或如果你想在数据库中，创建新记录的更好地控制使用`TableAdapter.Insert`方法。
+ 如果你的应用程序使用对象来存储数据，或如果想要更好地控制在数据库中，创建新记录使用`TableAdapter.Insert`方法。
 
- 如果你 TableAdapter 不具有`Insert`方法，这意味着任一 TableAdapter 配置为使用存储的过程或其`GenerateDBDirectMethods`属性设置为`false`。 尝试设置 TableAdapter 的`GenerateDBDirectMethods`属性`true`中**数据集设计器**，然后将保存数据集。 这将再生成 TableAdapter。 如果仍不具有 TableAdapter`Insert`方法，则表可能不会提供足够的架构信息来区分各个行 （例如，可能有表上的没有主密钥集）。
+ 如果没有在 TableAdapter`Insert`方法，它表示任一 TableAdapter 配置为使用存储的过程或其`GenerateDBDirectMethods`属性设置为`false`。 尝试设置的 TableAdapter`GenerateDBDirectMethods`属性设置为`true`内**数据集设计器**，然后将保存数据集。 这将再生成 TableAdapter。 如果仍不具有 TableAdapter`Insert`方法，表可能不提供足够的架构信息来区分各行 （例如，有可能在表上的没有主密钥集）。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>使用 Tableadapter 插入新记录
  Tableadapter 提供不同的方式将新记录插入数据库，具体取决于你的应用程序的要求。
 
- 如果你的应用程序使用数据集来存储数据，则你可以只需将新记录添加到所需<xref:System.Data.DataTable>在数据集，然后再调用`TableAdapter.Update`方法。 `TableAdapter.Update`方法发送的任何更改<xref:System.Data.DataTable>到数据库 （包括修改和删除记录）。
+ 如果你的应用程序使用数据集来存储数据，只可以向所需添加新记录<xref:System.Data.DataTable>数据集，，然后调用`TableAdapter.Update`方法。 `TableAdapter.Update`方法发送的任何更改<xref:System.Data.DataTable>到数据库 （包括已修改和删除记录）。
 
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>若要将新记录插入数据库使用 TableAdapter.Update 方法
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>若要使用 TableAdapter.Update 方法将新记录插入数据库
 
-1.  将新记录添加到所需<xref:System.Data.DataTable>通过创建新<xref:System.Data.DataRow>和将其添加到<xref:System.Data.DataTable.Rows%2A>集合。
+1.  将新记录添加到所需<xref:System.Data.DataTable>通过创建一个新<xref:System.Data.DataRow>并将其添加到<xref:System.Data.DataTable.Rows%2A>集合。
 
-2.  新行添加到后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 你可以控制要通过传入整个更新的数据量<xref:System.Data.DataSet>、 <xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或单个<xref:System.Data.DataRow>。
+2.  新行添加到后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。
 
  下面的代码演示如何添加到新的记录<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法以将新行保存到数据库。 (此示例使用`Region`Northwind 数据库中的表。)
 
  [!code-vb[VbRaddataSaving#14](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_1.vb)]
  [!code-csharp[VbRaddataSaving#14](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_1.cs)]
 
-#### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>若要将新记录插入数据库使用 TableAdapter.Insert 方法
-如果你的应用程序使用对象来存储数据，你可以使用`TableAdapter.Insert`方法直接在数据库中创建新行。 `Insert`方法接受每个列作为参数的单个值。 调用方法将一条新记录插入数据库中传递的参数值。
+### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>若要使用 TableAdapter.Insert 方法将新记录插入数据库
+如果你的应用程序使用对象来存储数据，则可以使用`TableAdapter.Insert`方法直接在数据库中创建新行。 `Insert`方法接受单个值的每个列作为参数。 调用该方法将一条新记录插入数据库中传递的参数值。
 
-- 调用 TableAdapter 的`Insert`方法，在值中为每一列将作为参数传递。
+- 调用 TableAdapter 的`Insert`方法，在值中的每个列将作为参数传递。
 
- 以下过程演示如何使用`TableAdapter.Insert`方法插入行。 此示例将数据插入`Region`Northwind 数据库中的表。
+ 以下过程演示如何使用`TableAdapter.Insert`方法来插入行。 此示例将数据插入`Region`Northwind 数据库中的表。
 
  > [!NOTE]
- >  如果你没有可用的实例，实例化你想要使用的 TableAdapter。
+ >  如果没有可用的实例，实例化想要使用的 TableAdapter。
 
  [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_2.vb)]
  [!code-csharp[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_2.cs)]
 
-## <a name="insert-new-records-by-using-command-objects"></a>使用命令对象插入新记录
-你可以直接在使用命令对象的数据库中插入新记录。
+## <a name="insert-new-records-by-using-command-objects"></a>使用命令对象将插入新记录
+您可以插入新记录直接使用命令对象的数据库。
 
-#### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>若要将新记录插入数据库通过使用命令对象
+### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>若要使用命令对象将新记录插入数据库
 
--   创建新的命令对象，并将其`Connection`， `CommandType`，和`CommandText`属性。
+-   创建新的命令对象，并设置其`Connection`， `CommandType`，和`CommandText`属性。
 
- 下面的示例演示插入记录到使用命令对象的数据库。 它将数据插入`Region`Northwind 数据库中的表。
+ 下面的示例演示使用命令对象的数据库到插入记录。 它将数据插入`Region`Northwind 数据库中的表。
 
  [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
  [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
- 你必须有权尝试连接到数据库以及执行插入到所需的表的权限。
+ 必须有权访问尝试连接到数据库以及执行插入到所需的表的权限。
 
 ## <a name="see-also"></a>请参阅
 

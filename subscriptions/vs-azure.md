@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: af36faf2345364386c85814b685dcd3211884fe2
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 00a69bf03c47ddf57b2b45ba1f3d9e2547132521
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34336079"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280652"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -94,7 +94,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 1.  通过 Visual Studio Marketplace 购买年度 Visual Studio [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) 或 [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) 云订阅。
 2.  通过 [Microsoft Store](https://www.microsoft.com/en-us/search/result.aspx?q=visual+studio+subscription) 利用 50% 或更高的折扣力度续订当前订阅。
 
-比较所有的[订阅及其权益](https://www.visualstudio.com/vs/pricing/)。
+比较所有的[订阅及其权益](https://visualstudio.microsoft.com/vs/pricing/)。
 
 如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，则可以通过在 Visual Studio 订阅门户中添加[备用帐户](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions)，将该订阅与此 Azure 权益关联。 如果该操作不起作用，还可以尝试[将 Azure 权益传输](/azure/billing/billing-subscription-transfer/)到活动 Visual Studio 订阅。
 
@@ -111,5 +111,5 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 -  需要与 Azure 有关的帮助？  请参阅下列资源：
     - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure 文档](/azure/)
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+-  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

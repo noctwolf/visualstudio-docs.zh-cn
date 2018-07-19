@@ -1,7 +1,7 @@
----
-title: 将发布到 Azure App Service 的 Visual Studio |Microsoft 文档
+﻿---
+title: 发布到 Azure 应用服务
 ms.custom: ''
-ms.date: 11/22/2017
+ms.date: 06/22/2018
 ms.technology: vs-ide-deployment
 ms.topic: quickstart
 helpviewer_keywords:
@@ -12,74 +12,42 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f91fd6e8c101b674b745c120978a47adb17c9b91
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
-ms.translationtype: HT
+ms.openlocfilehash: 7761164182188366425a81518f3d0513361b6f19
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765370"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077838"
 ---
-# <a name="publish-an-aspnet-or-aspnet-core-app-to-azure-app-service-using-visual-studio"></a>向 Azure App Service 中使用 Visual Studio 发布 ASP.NET 或 ASP.NET Core 应用
+# <a name="publish-a-web-app-to-azure-app-service-using-visual-studio"></a>将 Web 应用发布到 Azure 应用服务中使用 Visual Studio
 
-你可以使用**发布**工具，用于将 ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core 应用发布到 Azure App Service。
+可以使用**发布**工具，用于将 ASP.NET、 ASP.NET Core、 Node.js 和.NET Core 应用发布到 Azure 应用服务或 Azure App Service Linux （使用容器）。 对于 Python 应用程序，在执行的步骤[Python-发布到 Azure App Service](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
-如果你还没有 Azure 帐户，则可以[此处注册](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
-
-## <a name="prerequisites"></a>系统必备
-
-* 你必须安装的 Visual Studio 2017 和**ASP.NET 和 web 开发**工作负荷和。**.NET 桌面开发**工作负荷。 对于.NET Core 应用，你需要。**.NET Core**工作负荷。
-
-    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
-
-## <a name="create-a-new-project"></a>创建新项目 
-
-1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
-
-1. 下**Visual C#** 或**Visual Basic**，选择**Web**，然后在中间窗格中选择**ASP.NET Web 应用程序 (.NET Framework)** 或 (仅限 C#) **ASP.NET Core Web 应用程序**，然后单击**确定**。
-
-1. 选择**MVC** (或选择**Web 应用程序 （模型-视图-控制器）** 为.NET Core)，请确保**无身份验证**已选择，然后单击**确定**.
-
-1. 键入的名称，例如**MyWebApp**单击**确定**。
-
-    Visual Studio 随即创建项目。
-
-1. 选择**生成 > 生成解决方案**以生成项目。
+[!INCLUDE [quickstart-prereqs-azure](includes/quickstart-prereqs-azure.md)]
 
 ## <a name="publish-to-azure-app-service"></a>发布到 Azure 应用服务
 
-1. 在解决方案资源管理器中，右键单击项目，选择“发布”。
+1. 在解决方案资源管理器，右键单击该项目并选择**发布**(或使用**构建** > **发布**菜单项)。
 
-    ![选择发布](../deployment/media/quickstart-publish-aspnet.png "选择发布")
+    ![在解决方案资源管理器的项目上下文菜单上的 Publish 命令](../deployment/media/quickstart-publish.png "选择发布")
 
-1. 如果你之前配置任何发布的配置文件，**发布**窗格中显示。 单击**创建新的配置文件**。
+1. 如果你以前配置了任何发布配置文件，**发布**窗格中的案例，请选择显示**创建新的配置文件**。
 
-1. 在**选取发布目标**对话框框中，选择**App Service**。
+1. 在中**选取发布目标**对话框框中，选择**应用服务**。
 
-    ![选择 Azure App Service](../deployment/media/quickstart-publish-azure.png "选择 Azure App Service")
+    ![选择 Azure 应用服务](../deployment/media/quickstart-publish-azure.png "选择 Azure 应用服务")
 
-1. 单击“发布” 。
+1. 选择“发布”。 **创建应用服务**对话框随即出现。 使用你 Azure 帐户登录，如果有必要，则默认应用服务设置填充字段。
 
-    **创建 App Service**对话框随即出现。
+    ![创建应用服务](../deployment/media/quickstart-publish-settings-app-service.png "创建 Azure 应用服务")
 
-    ![创建 App Service](../deployment/media/quickstart-publish-settings-app-service.png "创建 Azure App Service")
-    
-1. 如果不想要登录到 Visual Studio 中，登录，并默认应用程序服务设置然后填充字段。
+1. 选择“创建”。 Visual Studio 将应用部署到 Azure 应用服务，并在浏览器中加载 web 应用。 项目属性**发布**窗格显示了站点 URL 和其他详细信息。
 
-    配置文件将发布的设置对话框随即打开。
-
-    ![选择文件夹](../deployment/media/quickstart-publish-settings-web.png "选择文件夹")
-
-    在此对话框中，你可以选择使用的订阅，选择或创建 Azure 资源组，等等。
-
-1. 单击 **“创建”**。
-
-    Visual Studio 将应用部署到你的 Azure 应用程序服务，并在浏览器中加载 web 应用程序。
-
-    中的摘要**发布**窗格中，你看到新的 Azure App Service 的站点 URL。
+    ![发布属性窗格中显示一个配置文件摘要](../deployment/media/quickstart-publish-app-service-summary.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-在本快速入门教程，您学习了如何使用 Visual Studio 来创建部署到 Azure 的发布配置文件。 你还可以配置发布配置文件通过导入发布设置从 Azure App Service。
+在此快速入门中，您学习了如何使用 Visual Studio 创建发布配置文件部署到 Azure。 你还可以配置发布配置文件通过导入发布设置从 Azure 应用服务。
 
 > [!div class="nextstepaction"]
 > [导入发布设置并部署到 Azure](tutorial-import-publish-settings-azure.md)

@@ -1,5 +1,5 @@
 ---
-title: 演练： 缺少因顶点着色而对象 |Microsoft 文档
+title: 演练： 缺少对象因顶点着色而 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b669962fe1a0668b42aec29745072f3451966323
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0bc2ded6217346de3f1633f31a7e03d25f012aa8
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482004"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234252"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。  
@@ -35,7 +35,7 @@ ms.locfileid: "31482004"
   
  在此方案中，当应用程序运行测试时，背景如预期呈现，但是，其中一个对象不会出现。 通过使用“图形诊断”，捕获图形日志的问题，以便调试该应用。 应用中的问题如下所示：  
   
- ![无法看到对象。] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
+ ![不会看到对象。] (media/gfx_diag_demo_missing_object_shader_problem.png "gfx_diag_demo_missing_object_shader_problem")  
   
 ## <a name="investigation"></a>调查  
  通过使用图形诊断工具，你可以加载图形日志文件以检测测试期间捕获的帧。  
@@ -67,7 +67,7 @@ ms.locfileid: "31482004"
   
 4.  当到达对应于缺失对象的绘图调用时即停止。 在此方案中，“图形管道阶段”  窗口指示几何图形发布到 GPU（由存在“输入装配器”缩略图指示），但由于在顶点着色器阶段出现问题而未显示于呈现目标中（由“顶点着色器”缩略图指示）。  
   
-     ![DrawIndexed 事件及其对管道其影响](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
+     ![继续 DrawIndexed 事件并在管道上的其效果](media/gfx_diag_demo_missing_object_shader_step_2.png "gfx_diag_demo_missing_object_shader_step_2")  
   
  在确认该应用被分配为缺失对象的几何图形的绘制调用并在顶点着色器阶段期间出现问题之后，可以使用 HLSL 调试器检查顶点着色器，查明对象的几何图形发生了什么情况。 你可以使用 HLSL 调试器检查 HLSL 变量在执行期间的状态，分步执行 HLSL 代码，并设置断点以帮助诊断问题。  
   
@@ -79,13 +79,13 @@ ms.locfileid: "31482004"
   
 3.  第一次修改 `output` 时，写入成员 `worldPos` 。  
   
-     !["Output.worldPos"的值看起来合理](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
+     !["Output.worldPos"的值显示合理](media/gfx_diag_demo_missing_object_shader_step_4.png "gfx_diag_demo_missing_object_shader_step_4")  
   
      由于其值看起来是合理的，因此将继续分步执行代码，直至修改 `output`的下一行。  
   
 4.  下一次修改 `output` 时，写入成员 `pos` 。  
   
-     !["Output.pos"的值已归零出](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
+     !["Output.pos"的值清](media/gfx_diag_demo_missing_object_shader_step_5.png "gfx_diag_demo_missing_object_shader_step_5")  
   
      这一次， `pos` 成员的值全部为零，这看上去很可疑。 接下来，你需要确定 `output.pos` 的值为什么全为零。  
   
@@ -108,7 +108,7 @@ ms.locfileid: "31482004"
     > [!TIP]
     >  如果同时调试你的应用，则可以在此位置设置一个断点，在呈现下一帧时将命中该断点。 你随后还可以检查 `m_marbleConstantBufferData` 的成员，以确认填充常量缓冲区后是否已将 `projection` 成员的值设置为全零。  
   
- 找到填充常量缓冲区的位置，并发现其值来自变量 `m_marbleConstantBufferData`之后，下一步是找出将 `m_marbleConstantBufferData.projection` 成员设置为全零的位置。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
+ 找到填充常量缓冲区的位置并发现其值来自该变量后`m_marbleConstantBufferData`下, 一步是找出`m_marbleConstantBufferData.projection`成员设置为全零。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在应用的源代码中查找设置投影成员的位置  
   
@@ -126,4 +126,4 @@ ms.locfileid: "31482004"
   
  修复代码后，你可以重新生成并运行应用以查明呈现的问题是否已解决：  
   
- ![显示现在的对象。] (media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")
+ ![现在该对象显示。] (media/gfx_diag_demo_missing_object_shader_resolution.png "gfx_diag_demo_missing_object_shader_resolution")

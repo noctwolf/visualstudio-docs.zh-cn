@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建本地化的引导程序包 |Microsoft 文档
+title: 如何： 创建本地化的引导程序包 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -15,25 +15,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 6948bd0a9cb3469141ea8c879effa130e7b00e86
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31566012"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38785233"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
 在你创建引导程序包以后，你可以通过为每个区域设置再创建两个文件（软件许可条款文件（如 eula.rtf）和包清单 (package.xml)）来创建引导程序包的本地化版本。  
   
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。  
   
-1.  创建 files\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中的区域设置名称命名的文件夹\\*BootstrapperPackageName*。  
+1.  创建 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中的区域设置名称命名的文件夹\\*BootstrapperPackageName*。  
   
 2.  创建包含引导程序包的软件许可条款的文件并将其放入新的文件夹中。  
   
 3.  创建名为 package.xml 的包清单，更新字符串和区域性，并将该文件放入新的文件夹中。 如果你已经用目标语言创建 Visual Studio 的引导程序，则可以复制 Visual Studio package.xml 文件并在此步骤中修改它。  
   
 > [!NOTE]
->  如果使用安装程序项目来部署应用程序，则可以通过更改本地化你的应用程序**本地化**属性。  
+>  如果将安装项目来部署应用程序，可以通过更改本地化应用程序**本地化**属性。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -41,9 +41,9 @@ ms.locfileid: "31566012"
   
 1.  创建以区域设置名称命名的文件夹。  
   
-     在 32 位计算机上创建文件夹中 files\microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 文件夹。  
+     在 32 位计算机上创建该文件夹中 \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 文件夹。  
   
-     在 64 位计算机上创建文件夹在 \Program Files (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 文件夹。  
+     在 64 位计算机上创建该文件夹中 \Program 文件 (86) \Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*BootstrapperPackageName*\ 文件夹。  
   
      下表显示可以用来匹配区域设置的文件夹名称。  
   

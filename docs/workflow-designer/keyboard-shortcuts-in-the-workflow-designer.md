@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83664d6402c23da89adf332bc9cd34eac89384bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
+ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977639"
+ms.lasthandoff: 06/25/2018
+ms.locfileid: "36756589"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
-所有 Windows 工作流设计器的核心功能可以通过键盘访问。
+可以通过键盘访问所有工作流设计器的核心功能。
 
 ## <a name="navigating-the-workflow-designer-using-the-keyboard"></a>使用键盘导航工作流设计器
 
-在 Visual Studio 2010 中，全局快捷键和调试快捷键适用于工作流设计器。 此外，已创建大量的工作流设计器特定的键盘快捷方式。 在 Visual Studio 2010 中，所有键盘快捷方式可被重新映射。 但是，在重新承载的应用程序中，对这些键盘快捷键进行了硬编码。
+在 Visual Studio 中，全局快捷键和调试快捷键适用于工作流设计器。 此外，已创建了大量工作流设计器特定的键盘快捷方式。 在 Visual Studio 中，所有键盘快捷方式可被重新映射。 但是，在重新承载的应用程序中，对这些键盘快捷键进行了硬编码。
 
 ### <a name="workflow-designer-keyboard-shortcuts"></a>工作流设计器键盘快捷键
 
-下表汇总了分配给工作流设计器命令的默认键盘快捷键。
+下表总结了分配给工作流设计器命令的默认键盘快捷键。
 
 |快捷键|用途|
 |--------------|-------------|
@@ -49,13 +49,13 @@ ms.locfileid: "31977639"
 
 ### <a name="flowchart"></a>流程图
 
-下表列出了通过键盘构造流程图所使用的笔势。 如下所示的工作流设计器的其余部分，将活动添加到使用随 Visual Studio 2010 提供的全局工具箱快捷键设计器图面。
+下表列出了通过键盘构造流程图所使用的笔势。 如下所示余下的工作流设计器中，将活动添加到使用随 Visual Studio 一起提供的全局工具箱快捷键在设计器图面。
 
 - 若要移动某个活动，请选择该活动并使用箭头键重新定位该活动。
 
 - 若要调整流程图的大小，请使用箭头键移动某个活动经过该流程图的当前边框。 将自动调整流程图的大小。
 
-- 若要将某个活动设置为开始节点，使用**设置为 StartNode**在上下文菜单命令。
+- 若要将某个活动设置为开始节点，请使用**设置为 StartNode**命令的上下文菜单中。
 
 - 连接活动：
 
@@ -73,11 +73,11 @@ ms.locfileid: "31977639"
 
 - 如果某对活动无法连接（例如，源活动已具有一个传出连接），则仍会尽可能进行所选作用域内活动之间的其他连接。
 
-- 当**flowdecision**选定内容中包含与**flowdecision**具有没有传出连接器，连接器所在**True**分支。
+- 当**FlowDecision**选定内容中包含和**FlowDecision**有没有传出连接器，连接器放置在**True**分支。
 
 ### <a name="expression-editing"></a>表达式编辑
 
-默认情况下，Visual Basic 文本编辑的默认键盘快捷方式应用内的表达式编辑器中工作流设计器中，有以下限制：
+默认情况下，Visual Basic 文本编辑的默认键盘快捷方式应用内部的表达式编辑器中工作流设计器中，有以下限制：
 
 - 重新映射以下命令的键盘快捷键无效。 编辑表达式时，只能使用默认的键盘快捷键访问这些命令。
 
@@ -88,4 +88,4 @@ ms.locfileid: "31977639"
    - 撤消
    - 重做
 
-- 若要重新映射 Visual Studio 2010 中的工作流设计器内的表达式编辑命令的键盘快捷方式，请编辑工作流设计器作用域中的快捷方式。 工作流设计器自动不适用于在文本编辑器作用域中所做的更改。 如果您希望在这两个位置都重新映射快捷键，则必须应用两次更改（每个作用域应用一次）。
+- 若要重新映射在 Visual Studio 中的工作流设计器内的表达式编辑命令的键盘快捷键，编辑工作流设计器作用域中的快捷方式。 工作流设计器自动不适用于在文本编辑器作用域中所做的更改。 如果您希望在这两个位置都重新映射快捷键，则必须应用两次更改（每个作用域应用一次）。

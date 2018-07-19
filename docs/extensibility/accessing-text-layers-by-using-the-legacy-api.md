@@ -1,5 +1,5 @@
 ---
-title: 通过使用旧版 API 访问文本层 |Microsoft 文档
+title: 使用旧版 API 访问文本层 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,42 +13,42 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d21b31940f1e1ebca767b9d3f0cf5ab802181bda
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1506c035fca0cdaf4916d93daad8ced7550bfe6e
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098662"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078662"
 ---
-# <a name="accessing-text-layers-by-using-the-legacy-api"></a>通过使用旧版 API 访问文本层
-文本层通常封装文本布局的某些方面。 例如，"函数的每一次的"层隐藏的文本之前和之后包含脱字号 （文本插入点） 的函数。  
+# <a name="access-text-layers-by-using-the-legacy-api"></a>通过使用传统的 API 访问文本层
+文本层通常封装文本布局的某些方面。 例如，"函数--一次"层隐藏文本之前和之后包含脱字号 （文本插入点） 的函数。  
   
- 文本层驻留之间缓冲区和视图，并修改该视图可以看到缓冲区的内容的方式。  
+ 文本层驻留缓冲区和视图之间，并且它会修改该视图可以看到缓冲区的内容的方式。  
   
 ## <a name="text-layer-information"></a>文本层信息  
- 以下列表描述文本层中的工作原理[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
+ 以下列表描述了文本层中的工作原理[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:  
   
--   可以使用语法颜色设置和标记修饰文本层中的文本。  
+-   文本层中的文本可以均带有语法着色和标记。  
   
 -   当前不能实现您自己的层。  
   
--   层公开<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，该类派生自<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>。 作为一个层，使我们能够考察以多态方式处理基础层还实现本身的文本缓冲区。  
+-   一个层公开<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，它派生自<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>。 文本缓冲区本身也作为一个层，就能够查看处理以多态形式使用基础层实现。  
   
--   在视图和缓冲区之间可能位于任意数目的层。 每个层仅处理获得它，下面的层和视图很大程度上处理的最顶层的层。 （视图不必缓冲区有关的一些信息。）  
+-   在视图和缓冲区之间可能存在任意数目的层。 每个层仅处理它，下面的层和视图很大程度上处理的最顶层的层。 （视图中确实必须将缓冲区的一些信息。）  
   
--   层可能会影响其下面的层。 它不会影响超出发起标准事件它上面的层。  
+-   一个层可能会影响其下面的层。 它不会影响源自标准事件超出其上方层。  
   
--   在编辑器中，隐藏的文本、 综合文本和自动换行作为层实现。 你可以实现隐藏和综合文本，而无需直接与层交互。 有关详细信息，请参阅[旧语言服务中的大纲显示](../extensibility/internals/outlining-in-a-legacy-language-service.md)和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>。  
+-   在编辑器中，隐藏的文本、 综合文本和自动换行作为层实现。 不直接与层交互的情况下，可以实现隐藏和合成的文本。 有关详细信息，请参阅[旧版语言服务中的大纲显示](../extensibility/internals/outlining-in-a-legacy-language-service.md)和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsSyntheticTextSession>。  
   
--   每个文本层都有其自己本地的坐标系统，通过公开<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>接口。 换行层，例如，可能包含两行，而基础的文本缓冲区可能包含只有一个行。  
+-   每个文本层都有其自己本地的坐标系统，通过公开<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>接口。 行包装层，例如，可能包含两行，而基础的文本缓冲区可能包含只有一行。  
   
--   该视图通信层通过<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>接口。 使用此接口进行对帐缓冲区坐标视图坐标。  
+-   视图层通过与通信<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>接口。 使用此接口来协调缓冲区坐标视图坐标。  
   
--   任何层如来源文本的综合文本层必须提供的本地实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>。  
+-   任何层如源自文本的综合文本层必须提供的本地实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer.CreateTrackingPoint%2A>。  
   
--   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，文本层必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>并激发中的事件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>接口。  
+-   除了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLayer>，必须实现文本层<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>触发中的事件和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>接口。  
   
-## <a name="see-also"></a>另请参阅  
- [语法着色中自定义编辑器](../extensibility/syntax-coloring-in-custom-editors.md)   
- [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [使用旧版 API 自定义编辑器控件和菜单](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)
+## <a name="see-also"></a>请参阅  
+ [自定义编辑器中的语法着色](../extensibility/syntax-coloring-in-custom-editors.md)   
+ [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [使用传统的 API 自定义编辑器控件和菜单](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)

@@ -1,5 +1,5 @@
 ---
-title: 错误处理和返回值 |Microsoft 文档
+title: 错误处理和返回值 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,27 +15,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfbeef2de041cfd71fbf163d7860d903a6cb59e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 85eee51941f6fb549c96dcc257335f9d77b6b0f2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135492"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057121"
 ---
 # <a name="error-handling-and-return-values"></a>错误处理和返回值
-Vspackage 和 COM 错误使用相同的体系结构。 `SetErrorInfo`和`GetErrorInfo`函数是 Win32 应用程序编程接口 (API) 的一部分。 在集成的开发环境 (IDE) 中的任何 VSPackage 可以调用这些到记录丰富的错误信息的全局 Win32 Api 接收的错误通知时。 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供互操作程序集来管理错误的信息。  
+Vspackage 和 COM 使用相同的体系结构的错误。 `SetErrorInfo`和`GetErrorInfo`函数是 Win32 应用程序编程接口 (API) 的一部分。 在集成的开发环境 (IDE) 中的任何 VSPackage 可以调用这些全局 Win32 Api，用于记录丰富的错误消息时接收错误通知。 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供互操作程序集来管理错误的信息。  
   
 ## <a name="interop-methods"></a>互操作方法  
- 为方便起见，IDE 提供了一种方法， <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>，则应使用而不是调用 Win32 Api。 在托管的代码使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>。 出错时`HRESULT`到达应在其中显示错误消息的级别 (这通常是该对象实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>命令处理程序)，IDE 使用另一种方法， <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>，以显示相应的消息框。 在托管的代码使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法。  
+ 为方便起见，IDE 提供了一种方法， <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>，若要使用而不是调用 Win32 Api。 在托管的代码使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>。 时出错`HRESULT`到达应在其中显示错误消息的级别 (这通常是该对象实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>命令处理程序)，IDE 使用另一种方法， <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>，以便显示相应的消息框。 在托管的代码使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法。  
   
- 为 VSPackage 实施者，COM 对象通常实现`ISupportErrorInfo`。 `ISupportErrorInfo`接口可确保调用链可以垂直移丰富的错误信息。 跨进程或跨线程可能使用的对象必须支持`ISupportErrorInfo`以确保丰富的错误信息返回到调用方正确封送。  
+ 为 VSPackage 实施者，您的 COM 对象通常实现`ISupportErrorInfo`。 `ISupportErrorInfo`接口可确保丰富的错误信息可以调用链向上垂直移动。 跨进程或跨线程可能使用的对象必须支持`ISupportErrorInfo`以确保丰富的错误消息返回给调用方正确封送。  
   
- 所有对象，将与 Vspackage 和可参与扩展 IDE，包括编辑器工厂、 编辑器、 层次结构，并提供服务，应都支持丰富的错误信息。 尽管 IDE 不要求这些 VSPackage 对象以实现`ISupportErrorInfo`，它始终建议。  
+ Vspackage 与相关的和，是参与扩展 IDE，包括编辑器工厂、 编辑器、 层次结构，并提供服务的所有对象都应都支持丰富的错误信息。 虽然 IDE 不需要这些 VSPackage 对象来实现`ISupportErrorInfo`，始终建议。  
   
- IDE 负责报告错误信息并显示给用户的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]每当`HRESULT`传播到 IDE。 IDE 也是用于创建机制`ErrorInfo`对象。  
+ IDE 负责报告错误的信息和显示的用户[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]每当`HRESULT`传播到 IDE。 IDE 也是用于创建机制，`ErrorInfo`对象。  
   
 ## <a name="general-guidelines"></a>通用准则  
- 你可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>设置和报告错误的你的 VSPackage 实现内部的方法。 但是，作为一般规则，请遵循以下准则来处理你的 VSPackage 中的错误消息：  
+ 可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法以设置和报告您的 VSPackage 实现的内部错误。 但是，作为一般规则，请遵循以下准则来处理你的 VSPackage 中的错误消息：  
   
 -   实现`ISupportErrorInfo`VSPackage COM 对象中。  
   
@@ -46,18 +46,18 @@ Vspackage 和 COM 错误使用相同的体系结构。 `SetErrorInfo`和`GetErro
 ## <a name="error-information-in-the-ide"></a>在 IDE 中的错误信息  
  以下规则指示如何处理中的错误信息[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE:  
   
--   与防御性策略，若要确保陈旧错误信息不报告给用户，该调用的函数<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法应首先调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 传入`null`清除缓存的错误消息，然后调用任何内容，可能会设置新的错误信息。  
+-   如防御策略，以保证过时错误信息不会报告给用户，函数调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A>方法首先应调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 传入`null`清除缓存的错误消息，然后调用的任何内容，可能会设置新的错误信息。  
   
--   仅允许直接不报告错误消息的函数调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法如果它们返回错误`HRESULT`。 允许以清除`ErrorInfo`函数或返回的条目<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 此规则的唯一例外是当调用返回错误`HRESULT`从接收方可以显式恢复或放心地忽略。  
+-   仅允许使用不直接报告错误消息的函数调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，如果它们返回错误`HRESULT`。 允许清除`ErrorInfo`条目的函数或返回<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 此规则的唯一例外是当调用将返回错误`HRESULT`从其接收方可以显式恢复或放心地忽略。  
   
--   任何显式忽略错误一方`HRESULT`必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法替换<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 否则为`ErrorInfo`而无需提供其自己的另一方生成一个错误时，对象可能会意外地使用`ErrorInfo`。  
+-   显式将忽略错误任何参与方`HRESULT`必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法替换<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 否则为`ErrorInfo`另一方生成一个错误，而无需提供其自己时，对象可能会意外地使用`ErrorInfo`。  
   
--   生成错误的所有方法`HRESULT`建议调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法以提供丰富的错误信息。 如果返回`HRESULT`是一个特殊`FACILITY_ITF`错误，则该方法需要提供合适`ErrorInfo`对象。 如果返回的错误是标准的系统错误 (例如， <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>， <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>， <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>， <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>，等等。) 是可接受不通过显式调用返回错误代码的<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 作为时发出错误防御性编码策略`HRESULT`（包括系统错误），始终调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，使用`ErrorInfo`描述中更详细的失败位置或`null`。  
+-   发出错误的所有方法`HRESULT`建议调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法以提供丰富的错误信息。 如果返回`HRESULT`是一个特殊`FACILITY_ITF`错误，则该方法需要提供适当`ErrorInfo`对象。 如果返回的错误是标准的系统错误 (例如， <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>， <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>， <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>， <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>，等等。) 是可接受无需显式调用返回的错误代码的<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法。 作为一防御性编码策略，当发出错误`HRESULT`（包括系统错误），均应调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A>方法，使用`ErrorInfo`描述更详细地故障或`null`。  
   
--   返回错误的另一调用产生必须通过从失败中接收到的信息的所有函数都调用中`HRESULT`而无需修改`ErrorInfo`对象。  
+-   返回由另一次调用产生错误必须通过从发生故障的接收到的信息的所有函数中都调用`HRESULT`而无需修改`ErrorInfo`对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo （组件自动化）](http://msdn.microsoft.com/en-us/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [GetErrorInfo](http://msdn.microsoft.com/en-us/03317526-8c4f-4173-bc10-110c8112676a)   
- [ISupportErrorInfo 接口](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32)
+ [SetErrorInfo （组件自动化）](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)   
+ [ISupportErrorInfo 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo)

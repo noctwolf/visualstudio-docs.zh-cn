@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式打开文本文件作为工作簿 |Microsoft 文档
+title: 如何： 以编程方式打开文本文件作为工作簿
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cafe64ce693972bd9c254a6bdfc1dcbf70f004c9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b7bc7caa5dbceb727394b8543b7659cc43e64a36
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257642"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式及工作簿形式打开文本文件
-  为工作簿，可以打开一个文本文件。 必须传递你想要打开的文本文件的名称。 你可以指定多个可选参数，例如到开始分析以及文件中的数据的列格式的行号。  
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何： 以编程方式打开文本文件作为工作簿
+  为工作簿，可以打开一个文本文件。 您必须传递你想要打开的文本文件的名称。 可以指定几个可选参数，例如，要从哪一行开始分析以及文件中的数据的列格式。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
@@ -32,14 +33,14 @@ ms.lasthandoff: 04/16/2018
  [!code-csharp[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#80)]
  [!code-vb[Trin_VstcoreExcelAutomation#80](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#80)]  
   
-## <a name="compiling-the-code"></a>编译代码  
+## <a name="compile-the-code"></a>编译代码  
  此示例需要以下组件：  
   
--   名为的逗号分隔的文本文件`Test.txt`，包含至少三个行的文本。  
+-   名为的逗号分隔的文本文件`Test.txt`，其中包含至少三行文本。  
   
--   该文本文件`Test.txt`似乎存储在驱动器 c。  
+-   该文本文件`Test.txt`要存储在驱动器 c。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用工作簿](../vsto/working-with-workbooks.md)   
  [如何： 以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)   
  [如何： 以编程方式创建新的工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)   

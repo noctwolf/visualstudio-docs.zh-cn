@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建第一个 VSTO 外接程序 excel |Microsoft 文档
+title: 演练： 创建第一个 VSTO 外接程序 Excel
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,13 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6c68bd90f1a0a106771bd011e9baf91552678ac6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38797794"
 ---
-# <a name="walkthrough-creating-your-first-vsto-add-in-for-excel"></a>演练：创建你的第一个 Excel VSTO 外接程序
+# <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练： 创建第一个 VSTO 外接程序 Excel
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
@@ -48,7 +49,7 @@ ms.lasthandoff: 04/16/2018
   
 -   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>创建项目  
+## <a name="create-the-project"></a>创建项目  
   
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>在 Visual Studio 中创建新的 Excel VSTO 外接程序项目  
   
@@ -68,14 +69,14 @@ ms.lasthandoff: 04/16/2018
   
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 即会创建 **FirstExcelAddIn** 项目，并在编辑器中打开 ThisAddIn 代码文件。  
   
-## <a name="writing-code-to-add-text-to-the-saved-workbook"></a>编写用于向保存的工作簿中添加文本的代码  
+## <a name="write-code-to-add-text-to-the-saved-workbook"></a>编写代码以将文本添加到已保存工作簿  
  接下来，将代码添加到 ThisAddIn 代码文件。 新的代码使用 Excel 的对象模型将样本文本插入到活动工作表的第一行。 活动工作表是用户保存工作簿时处于打开状态的工作表。 默认情况下，ThisAddIn 代码文件包含以下生成的代码：  
   
--   `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Excel 对象模型的访问权限。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。  
+-   `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Excel 对象模型的访问权限。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。`ThisAddIn` 类的其余部分是在隐藏代码文件中定义的，不应修改该代码文件。  
   
--   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 Excel 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载时清理外接程序所使用的资源。 有关详细信息，请参阅 [Events in Office Projects](../vsto/events-in-office-projects.md)。  
+-   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 Excel 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载时清理外接程序所使用的资源。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
   
-#### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>向保存的工作簿中添加一行文本  
+### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>向保存的工作簿中添加一行文本  
   
 1.  在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 新的代码定义 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件处理程序，该事件在保存工作簿时引发。  
   
@@ -92,11 +93,11 @@ ms.lasthandoff: 04/16/2018
   
 -   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Excel.Application> 对象，该对象表示 Excel 的当前实例。  
   
--   `Wb` 事件的事件处理程序的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 参数。 `Wb` 参数是一个 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象，用于表示已保存的工作簿。 有关详细信息，请参阅 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
+-   `Wb` 事件的事件处理程序的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 参数。 `Wb` 参数是一个 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象，用于表示已保存的工作簿。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
-## <a name="testing-the-project"></a>测试项目  
+## <a name="test-the-project"></a>测试项目  
   
-#### <a name="to-test-the-project"></a>测试项目  
+### <a name="to-test-the-project"></a>测试项目  
   
 1.  按 **F5** 生成并运行项目。  
   
@@ -110,34 +111,34 @@ ms.lasthandoff: 04/16/2018
   
 4.  关闭 Excel。  
   
-## <a name="cleaning-up-the-project"></a>清理项目  
+## <a name="clean-up-the-project"></a>清理项目  
  完成项目开发后，请从开发计算机上删除 VSTO 外接程序程序集、注册表项和安全设置。 否则，每次在开发计算机上打开 Excel 时，VSTO 外接程序都将继续运行。  
   
-#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>在开发计算机上清理已完成的项目  
+### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>在开发计算机上清理已完成的项目  
   
 1.  在 Visual Studio 中，在 **“生成”** 菜单上，单击 **“清理解决方案”**。  
   
 ## <a name="next-steps"></a>后续步骤  
  既然你已经创建了一个基本的 Excel VSTO 外接程序，就可以从下面这些主题中了解有关如何开发外 VSTO 加载项的详细信息：  
   
--   可在 VSTO 外接程序中执行的常规编程任务： [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+-   可以在 VSTO 外接程序中执行的常规编程任务：[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
--   特定于 Excel VSTO 外接程序的编程任务： [Excel Solutions](../vsto/excel-solutions.md)。  
+-   特定于 Excel VSTO 外接程序的编程任务： [Excel 解决方案](../vsto/excel-solutions.md)。  
   
--   使用 Excel 对象模型： [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
+-   使用 Excel 对象模型： [Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
--   自定义 Excel 的用户界面 (UI)，例如，通过向功能区添加自定义选项卡或创建你自己的自定义任务窗格： [Office UI 自定义项](../vsto/office-ui-customization.md)。  
+-   自定义 Excel 的用户界面 (UI)，例如，通过将自定义选项卡添加到功能区或创建你自己的自定义任务窗格： [Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 -   生成和调试针对 Excel 的 VSTO 外接程序：[生成 Office 解决方案](../vsto/building-office-solutions.md)。  
   
--   部署 Excel 的 VSTO 外接程序：[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
+-   部署 Excel VSTO 外接程序：[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
  [Excel 解决方案](../vsto/excel-solutions.md)   
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [Excel 对象模型概述](../vsto/excel-object-model-overview.md)   
- [Office UI 自定义项](../vsto/office-ui-customization.md)   
+ [Office UI 自定义](../vsto/office-ui-customization.md)   
  [生成 Office 解决方案](../vsto/building-office-solutions.md)   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)  

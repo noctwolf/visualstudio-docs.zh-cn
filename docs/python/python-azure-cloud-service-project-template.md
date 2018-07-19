@@ -1,7 +1,7 @@
 ---
 title: Python 的 Azure 云服务项目模板
 description: 使用 Python 编写的适用于 Azure 云服务的 Visual Studio 模板概述，包括角色部署、依赖项和故障排除。
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 42b2cf1fda241e178804847d86e6af9e4f33e7bd
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 2e1518b387f859e4be4427b05b2010167c7205c6
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031808"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058654"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Python 的 Azure 云服务项目
 
@@ -29,7 +29,7 @@ Visual Studio 提供的模板有助于使用 Python 创建 Azure 云服务。
 
 ## <a name="create-a-project"></a>创建项目
 
-1. 安装需要使用云服务模板的[用于 Visual Studio 的 Azure.NET SDK](https://www.visualstudio.com/vs/azure-tools/)。
+1. 安装需要使用云服务模板的[用于 Visual Studio 的 Azure.NET SDK](https://visualstudio.microsoft.com/vs/azure-tools/)。
 1. 在 Visual Studio 中，选择“文件”>“新建”>“项目...”，然后搜索“Azure Python”，并从列表中选择“Azure 云服务”：
 
     ![用于 Python 的 Azure 云项目模板](media/template-azure-cloud-project.png)

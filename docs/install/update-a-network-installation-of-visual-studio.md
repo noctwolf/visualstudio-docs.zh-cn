@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad8cfdb54b690dd9f5639bea71d790ef0d79a19a
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 64a8fbd599667c7c28a48f80ff97932161c9e2f7
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31620448"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282556"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -41,10 +41,10 @@ ms.locfileid: "31620448"
   vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
-* 将相同布局更新到较新版本的说明如下。 无需指定任何额外的命令行参数。 此布局文件夹中的任何后续布局命令都将使用先前所保存的设置。  
+* 将相同布局更新到较新版本的说明如下。 无需指定任何额外的命令行参数。 此布局文件夹中的任何后续布局命令都将使用先前所保存的设置。
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout  
+  vs_enterprise.exe --layout c:\VS2017Layout
   ```
 
 * 下面介绍如何以无人参与方式将布局更新为较新版本。 布局操作在新控制台窗口中运行设置进程。 该窗口保持打开状态，以便用户可以看到最终结果以及任何可能发生的错误的摘要。 如果以无人参与方式执行布局操作（例如，具有定期运行以将布局更新为最新版本的脚本），则使用 `--passive` 参数，进程会自动关闭窗口。
@@ -96,7 +96,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 > [!NOTE]
 > `--verify` 选项所需的某些重要元数据文件必须位于布局脱机缓存内部。 如果缺少这些元数据文件，则无法运行“--verify”，且安装程序会出错。 如果遇到此错误，请重新创建新脱机布局到其他文件夹（或到相同的脱机缓存文件夹）。 要执行此操作，请运行与创建初始脱机布局相同的布局命令。 例如 `Vs_enterprise.exe --layout <layoutDir>`。
 
-由于 Microsoft 定期为 Visual Studio 提供更新，因此新创建的布局与初始布局的版本可能不同。  
+由于 Microsoft 定期为 Visual Studio 提供更新，因此新创建的布局与初始布局的版本可能不同。
 
 ## <a name="how-to-fix-a-layout"></a>如何修复布局
 
@@ -114,9 +114,9 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 要执行此操作，需要前往目录清单的文件路径，其中包含这些已过时的包。 可在脱机布局缓存的“存档”文件夹中找到该目录清单。 更新布局时，这些目录清单就保存在此处。 在“存档”文件夹中，有一个或多个名为“GUID”的文件夹，其中每个都包含已过时的目录清单。 “GUID”文件夹数目应与脱机缓存的更新次数保持一致。
 
-每个“GUID”文件夹中都保存着若干文件。 最重要的两个文件分别是“catalog.json”文件和“version.txt”文件。 “catalog.json”文件需要传递给 `--clean` 选项的已过时目录清单。 另一个 version.txt 文件则包含此已过时目录清单的版本。 根据版本号，可自行决定是否要从此目录清单中删除已过时包。 其他“GUID”文件夹中可执行同样的操作。 选择要清除的目录后，通过向这些目录提供文件路径来运行 `--clean` 命令。  
+每个“GUID”文件夹中都保存着若干文件。 最重要的两个文件分别是“catalog.json”文件和“version.txt”文件。 “catalog.json”文件需要传递给 `--clean` 选项的已过时目录清单。 另一个 version.txt 文件则包含此已过时目录清单的版本。 根据版本号，可自行决定是否要从此目录清单中删除已过时包。 其他“GUID”文件夹中可执行同样的操作。 选择要清除的目录后，通过向这些目录提供文件路径来运行 `--clean` 命令。
 
-以下几个示例说明了如何使用 --clean 选项：   
+以下几个示例说明了如何使用 --clean 选项：
 
 ```cmd
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
@@ -128,7 +128,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 
 还可在 &lt;layoutDir&gt; 中调用 vs_enterprise.exe。 以下是一个示例：
 
-```cmd   
+```cmd
 c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
@@ -136,7 +136,7 @@ c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layo
 
 ## <a name="get-support"></a>获取支持
 
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
 

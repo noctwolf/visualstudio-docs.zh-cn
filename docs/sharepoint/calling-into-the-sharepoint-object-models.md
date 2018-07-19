@@ -1,5 +1,5 @@
 ---
-title: 调入 SharePoint 对象模型 |Microsoft 文档
+title: 调入 SharePoint 对象模型 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,47 +18,47 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 24d8c7824e9bf90538a7d4dd1ae230d37cfbdb2f
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765552"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326740"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>调入 SharePoint 对象模型
-  当你在 Visual Studio 中创建 SharePoint 工具扩展时，你可能必须调用 SharePoint Api 来执行某些任务。 例如，如果创建 SharePoint 项目自定义部署步骤时，你可能需要调用 SharePoint Api 来执行一些任务来部署解决方案。  
+  在 Visual Studio 中创建 SharePoint 工具扩展时，可能需要调用 SharePoint Api 来执行特定任务。 例如，如果创建 SharePoint 项目自定义部署步骤时，您可能需要调用 SharePoint Api 来执行一些任务来部署解决方案。  
   
  [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]提供可以在 SharePoint 工具扩展中使用的两个不同的对象模型： 服务器对象模型和客户端对象模型。 每个对象模型在 SharePoint 工具扩展的上下文中具有的优点和缺点。  
   
- SharePoint 对象模型的概述，请参阅[的编程模型的 SharePoint 工具扩展的概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。  
+ SharePoint 对象模型的概述，请参阅[概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)。  
   
-## <a name="use-the-client-object-model-in-extension-projects"></a>在扩展项目中使用的客户端对象模型
- 当开发 SharePoint 工具扩展时，你可以像任何其他组托管 Api 项目中使用的客户端对象模型。 你可以将客户端对象模型中的引用程序集添加到你的项目，并可以在代码中直接在客户端对象模型中调用 Api。  
+## <a name="use-the-client-object-model-in-extension-projects"></a>在扩展项目中使用客户端对象模型
+ 当开发适用于 SharePoint 工具扩展时，您可以像任何其他组托管 Api 在项目中使用客户端对象模型。 可以在客户端对象模型中添加对程序集的引用，到你的项目，并在代码中直接调用在客户端对象模型 Api。  
   
- 但是，客户端对象模型在 SharePoint 工具扩展的上下文中具有两个缺点：  
+ 但是，客户端对象模型在 SharePoint 工具扩展的上下文中有两个缺点：  
   
--   客户端对象模型提供的服务器对象模型的一个子集。 如果你需要使用不在客户端对象模型中公开的 SharePoint 功能，你必须使用服务器对象模型。  
+-   客户端对象模型提供了服务器对象模型的一个子集。 如果必须使用不在客户端对象模型中公开的 SharePoint 功能，则必须使用服务器对象模型。  
   
--   虽然在大多数情况下，应运行在 SharePoint 工具扩展中使用的客户端对象模型，你可能会遇到某些情况下，其中对客户端对象模型的调用无法按预期工作。 客户端对象模型旨在用于在客户端应用程序中调入 SharePoint 站点上的远程服务器或场。 Visual Studio 中的 SharePoint 工具仅适用于开发计算机上的本地 SharePoint 安装。 因此，当你在 SharePoint 工具扩展中使用的客户端对象模型，调入 SharePoint 站点的本地计算机上，这是不如何的客户端对象模型旨在使用。  
+-   尽管 SharePoint 工具扩展中使用客户端对象模型应运行在大多数情况下，可能会遇到某些情况下，其中对客户端对象模型执行操作无法按预期工作。 客户端对象模型用于在客户端应用程序中用于调入 SharePoint 站点上的远程服务器或场。 Visual Studio 中的 SharePoint 工具只使用在开发计算机上的本地 SharePoint 安装。 因此，在 SharePoint 工具扩展中使用客户端对象模型，可调用到 SharePoint 站点是不如何客户端对象模型专门设计用来在本地计算机上。  
   
- 有关演示如何在 Visual Studio 中的 SharePoint 工具扩展中使用的客户端对象模型的演练，请参阅[演练： 调入 SharePoint 客户端对象模型在服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
+ 有关演示如何使用客户端对象模型中的 Visual Studio 中的 SharePoint 工具扩展的演练，请参阅[演练： 调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>在扩展项目中使用服务器对象模型
- 服务器对象模型是客户端对象模型的超集。 当你使用服务器对象模型时，你可以使用所有功能，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]以编程方式公开。  
+ 服务器对象模型是客户端对象模型的超集。 当您使用服务器对象模型时，可以使用所有功能，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]以编程方式公开。  
 
- SharePoint 工具扩展可以在服务器对象模型中，使用 Api，但它们不能直接调用的 Api。 面向.NET Framework 3.5 可以仅从 64 位进程调用服务器对象模型。 但是，SharePoint 工具扩展需要[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和它们在 32 位 Visual Studio 进程中运行。 这可以防止 SharePoint 工具扩展直接引用 SharePoint 服务器对象模型中的程序集。  
+ SharePoint 工具扩展可以在服务器对象模型中，使用 Api，但它们不能直接调用 Api。 面向.NET Framework 3.5 可仅从 64 位进程调用服务器对象模型。 但是，SharePoint 工具扩展需要[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和它们在 32 位 Visual Studio 进程中运行。 这可以防止 SharePoint 工具扩展直接引用 SharePoint 服务器对象模型中的程序集。  
   
- 如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建自定义*SharePoint 命令*调用 API。 在直接调用到服务器对象模型的辅助程序集中定义 SharePoint 命令。 在扩展项目中，则 SharePoint 命令间接使用调用 ExecuteCommand 付款方式<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。  
+ 如果你想要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建一个自定义*SharePoint 命令*来调用 API。 在直接调用到服务器对象模型的辅助程序集中定义的 SharePoint 命令。 在扩展项目中，您的 SharePoint 命令间接使用调用的 ExecuteCommand 方法<xref:Microsoft.VisualStudio.SharePoint.ISharePointConnection>对象。  
   
- 有关创建和使用 SharePoint 命令的详细信息，请参阅[如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)和[如何： 执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。 有关如何部署 SharePoint 命令的信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+ 有关创建和使用 SharePoint 命令的详细信息，请参阅[如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)并[如何： 执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)。 有关如何部署 SharePoint 命令的信息，请参阅[部署的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
- 有关演示如何创建和使用 SharePoint 命令的演练，请参阅[演练： 为 SharePoint 项目创建自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)和[演练： 扩展服务器资源管理器显示 Web部分](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。  
+ 有关演示如何创建和使用 SharePoint 命令的演练，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)和[演练： 扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).  
   
 ### <a name="understand-how-sharepoint-commands-are-executed"></a>了解如何执行 SharePoint 命令
- 定义 SharePoint 命令的程序集是在名为的 64 位主机进程中加载*vssphost4.exe*。 在 SharePoint 工具扩展中调用 SharePoint 命令后，通过执行此命令*vssphost4.exe*而不是 32 位 Visual Studio 进程 (*devenv.exe*)。 你可以控制如何通过在注册表中设置值执行 SharePoint 命令的某些的方面。 有关详细信息，请参阅[调试 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+ 定义 SharePoint 命令的程序集是在名为的 64 位主机进程中加载*vssphost4.exe*。 在 SharePoint 工具扩展中调用 SharePoint 命令后，该命令将执行通过*vssphost4.exe*而不是 32 位 Visual Studio 进程 (*devenv.exe*)。 您可以控制在注册表中设置的值执行 SharePoint 命令的某些方面。 有关详细信息，请参阅[调试的 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
 ## <a name="see-also"></a>请参阅
  [如何： 创建 SharePoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)   
  [如何： 执行 SharePoint 命令](../sharepoint/how-to-execute-a-sharepoint-command.md)   
- [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
+ [工具扩展的 SharePoint 的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)  
   

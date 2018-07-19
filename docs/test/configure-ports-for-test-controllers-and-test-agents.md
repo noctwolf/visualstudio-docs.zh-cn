@@ -15,11 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4067dae0d75f5fbd4e4dfb3ff7bacfc1ff269512
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297592"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>为测试控制器和测试代理配置端口
 
@@ -33,22 +34,22 @@ ms.lasthandoff: 04/26/2018
 
 测试控制器使用的默认端口为 6901，而测试代理的默认端口为 6910。 默认情况下，客户端将使用一个随机端口，该端口用于接收来自测试控制器的测试结果。 对于所有传入连接，测试控制器会对调用方进行身份验证，并验证它是否属于特定安全组。
 
-- **测试控制器** 传入连接位于 TCP 端口 6901。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#ConfigurePorts)。
+- **测试控制器** 传入连接位于 TCP 端口 6901。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#configure-the-incoming-ports)。
 
     测试控制器需要能够建立与测试代理和客户端的传出连接。
 
     > [!NOTE]
     > 测试控制器需要打开传入“文件和打印机共享”连接。
 
-- **测试代理** 传入连接位于 TCP 端口 6910 上。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#ConfigurePorts)。
+- **测试代理** 传入连接位于 TCP 端口 6910 上。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#configure-the-incoming-ports)。
 
    测试代理需要能够建立与测试控制器的传出连接。
 
-- **客户端** 默认情况下，随机 TCP 端口用于传入连接。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#ConfigurePorts)。
+- **客户端** 默认情况下，随机 TCP 端口用于传入连接。 如果需要，您可以配置传入端口。 有关详细信息，请参阅[配置传入端口](#configure-the-incoming-ports)。
 
    当测试控制器首次尝试连接到客户端时，你可能会收到防火墙通知。
 
-   在 Windows Server 2008 上，默认情况下禁用防火墙通知，并且必须为客户端程序（devenv.exe、mstest.exe、mlm.exe）手动添加防火墙例外以便它能接受传入连接。
+   Windows Server 2008 默认禁用防火墙通知，必须为客户端程序（devenv.exe、mstest.exe、mlm.exe）手动添加防火墙例外，这样它才能接受传入连接。
 
 ## <a name="outgoing-connections"></a>传出连接
 
@@ -64,7 +65,7 @@ ms.lasthandoff: 04/26/2018
 
 按照以下指示配置测试控制器和测试代理的端口。
 
-- **控制器服务** 通过编辑 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config 文件来修改端口的值：
+- **控制器服务**：通过编辑 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTCcontroller.exe.config 文件来修改端口值：
 
     ```xml
     <appSettings>
@@ -72,7 +73,7 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **代理服务** 通过编辑 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config 文件来修改端口：
+- **代理服务**：通过编辑 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\QTAgentService.exe.config 文件来修改端口：
 
     ```xml
     <appSettings>
@@ -80,11 +81,11 @@ ms.lasthandoff: 04/26/2018
     </appSettings>
     ```
 
-- **客户端** 使用注册表编辑器来添加以下注册表 (DWORD) 值。 客户端将使用指定范围内的某个端口来接收来自测试控制器的数据：
+- **客户端**：使用注册表编辑器来添加以下注册表 (DWORD) 值。 客户端将使用指定范围内的某个端口来接收来自测试控制器的数据：
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeStart**
 
-     HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd
+     **HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\VisualStudio\12.0\EnterpriseTools\QualityTools\ListenPortRange\PortRangeEnd**
 
 ## <a name="see-also"></a>请参阅
 

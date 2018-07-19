@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdfa8e854049e7de6c6edd49454d1efa55e2a05b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ff5d9646d6715b546179058074f2279810b9ca48
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948335"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282221"
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
@@ -26,9 +26,10 @@ ms.locfileid: "31948335"
 
 登录后，可获得丰富的 Visual Studio 体验。 例如，登录后，可以跨设备同步设置、延长试用期，以及自动连接到 Azure 服务等。
 
-以下是登录后可体验的内容及可执行的操作的完整列表：  
+以下是登录后可体验的内容及可执行的操作的完整列表：
 
-- **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](http://aka.ms/vsdevhelp) 了解详细信息。
+- 
+  **访问 Visual Studio Dev Essentials 程序的权限** - 此程序包括免费软件产品/服务、培训、支持等。 请参阅 [Visual Studio Dev Essential](http://aka.ms/vsdevhelp) 了解详细信息。
 
 - **同步 Visual Studio 设置** - 登录到任何设备上的 Visual Studio 时，将立即应用自定义设置（例如，键绑定、窗口布局和颜色主题）。 请参阅 [Visual Studio 中的同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 
@@ -62,9 +63,9 @@ ms.locfileid: "31948335"
 
 ## <a name="troubleshooting"></a>疑难解答
 
-如果登录时遇到任何问题，请参阅[帐户支持页](https://www.visualstudio.com/subscriptions/support/)获取帮助。
+如果登录时遇到任何问题，请参阅[帐户支持页](https://visualstudio.microsoft.com/subscriptions/support/)获取帮助。
 
 ## <a name="see-also"></a>请参阅
 
-* [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)  
+* [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概述](../ide/visual-studio-ide.md)

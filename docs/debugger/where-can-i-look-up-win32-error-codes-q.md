@@ -20,22 +20,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d919733f1caf654460cf342da05f2549dfa167
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ecddd2a8ca87d4c86b3cdf776fcf2e475efb8836
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476206"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056919"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>可以在哪里查阅 Win32 错误代码？
 默认系统安装的 INCLUDE 目录中的 WINERROR.H 包含 Win32 API 函数的错误代码定义。  
   
- 可以通过键入中的代码来查找错误代码**监视**窗口或**快速监视**对话框。 例如：  
+ 可以通过键入中的代码来查找错误代码**Watch**窗口或**快速监视**对话框。 例如：  
   
-```  
-0x80000004,hr  
-```  
+`0x80000004,hr` 
+
   
 ## <a name="see-also"></a>请参阅  
- [调试本机代码常见问题](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
  [调试本机代码](../debugger/debugging-native-code.md)

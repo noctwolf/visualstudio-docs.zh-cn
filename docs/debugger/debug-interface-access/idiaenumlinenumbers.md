@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumLineNumbers |Microsoft 文档
+title: IDiaEnumLineNumbers |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fb0b457a0efef1c860be7174f012575aec64f99
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 388bb5e16ae54199989dd125e0c3580102bca292
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463271"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057316"
 ---
 # <a name="idiaenumlinenumbers"></a>IDiaEnumLineNumbers
 枚举数据源中包含的各种行号。  
@@ -35,13 +35,13 @@ IDiaEnumLineNumbers : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|检索[IEnumVARIANT 接口](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)的此枚举器的版本。|  
-|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|检索行号的数目。|  
+|[IDiaEnumLineNumbers::get__NewEnum](../../debugger/debug-interface-access/idiaenumlinenumbers-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|  
+|[IDiaEnumLineNumbers::get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md)|检索数目的行号。|  
 |[IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md)|通过索引中检索行号。|  
 |[IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md)|检索指定的数目的枚举序列中的行号。|  
-|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|跳过指定的数目的枚举序列中的行号。|  
+|[IDiaEnumLineNumbers::Skip](../../debugger/debug-interface-access/idiaenumlinenumbers-skip.md)|将跳过指定的数目的枚举序列中的行号。|  
 |[IDiaEnumLineNumbers::Reset](../../debugger/debug-interface-access/idiaenumlinenumbers-reset.md)|将枚举序列重置到开头。|  
-|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[IDiaEnumLineNumbers::Clone](../../debugger/debug-interface-access/idiaenumlinenumbers-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
   
 ## <a name="remarks"></a>备注  
   
@@ -59,7 +59,7 @@ IDiaEnumLineNumbers : IUnknown
 -   [IDiaSession::findLinesByLinenum](../../debugger/debug-interface-access/idiasession-findlinesbylinenum.md)  
   
 ## <a name="example"></a>示例  
- 此示例演示如何获取`IDiaEnumLineNumbers`从会话的接口。 在这种情况下，该示例演示如何获取行号枚举为函数 (由表示`pSymbol`)。 使用行号的更完整示例，请参阅[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)接口。  
+ 此示例演示如何获取`IDiaEnumLineNumbers`从会话的接口。 在这种情况下，该示例演示如何获取函数的行号枚举 (由`pSymbol`)。 使用行号的更完整示例，请参阅[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)接口。  
   
 ```C++  
 void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )  

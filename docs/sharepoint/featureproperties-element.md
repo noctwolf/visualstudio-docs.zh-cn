@@ -1,5 +1,5 @@
 ---
-title: FeatureProperties 元素 |Microsoft 文档
+title: FeatureProperties 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3b03de87c13744e3b678d4f51e3950352fa2d475
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 26fcdb1dd7fa3b62f7882deb1a077b9466e52018
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766709"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36324992"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 元素
-  部署到 SharePoint 时所包含的一项功能的属性值的集合。 将功能部署后，你可以在代码中访问属性值。  
+  部署到 SharePoint 时，包含与某个功能的属性值的集合。 将功能部署后，你可以在代码中访问的属性值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,10 +49,10 @@ ms.locfileid: "34766709"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[项目项](../sharepoint/projectitem-element.md)|表示一个 SharePoint 项目项。 此元素所需的根元素的`.spdata`文件。|  
+|[项目项](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素的必需的根元素的`.spdata`文件。|  
   
 ## <a name="remarks"></a>备注  
- 功能属性有关的详细信息，请参阅[提供打包和部署信息在项目项中](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  
+ 功能属性的详细信息，请参阅[提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。  
   
 ## <a name="element-information"></a>元素信息
   
@@ -65,6 +65,6 @@ ms.locfileid: "34766709"
   
 ## <a name="see-also"></a>请参阅
  [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)   
- [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
+ [提供在项目项中的打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)  
   
   

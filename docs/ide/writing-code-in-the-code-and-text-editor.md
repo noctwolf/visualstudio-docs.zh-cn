@@ -12,16 +12,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7da101ac664488acf2eeada391cbc691116f188
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572386"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283453"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
-Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写和管理代码和文本。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器”以及调用层次结构，了解有关代码的详细信息。 可使用“转到”、“转到定义”和“查找所有引用”等功能查找代码。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未用过 Visual Studio 编辑器，请参阅[编辑代码](https://www.visualstudio.com/vs/features/ide/)进行快速概览。
+Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写和管理代码和文本。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器”以及调用层次结构，了解有关代码的详细信息。 可使用“转到”、“转到定义”和“查找所有引用”等功能查找代码。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未用过 Visual Studio 编辑器，请参阅[编辑代码](https://visualstudio.microsoft.com/vs/features/ide/)进行快速概览。
 
 可以使用多种不同的方式查看自己的代码。 默认情况下，“解决方案资源管理器” 显示按文件组织的代码。 可以单击窗口底部的“类视图”选项卡，查看按类组织的代码。
 

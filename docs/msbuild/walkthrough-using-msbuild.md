@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4e6599fc55143789e35aad5fd4848904ae0c37
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f5240ebf307973c0ca6088053aabec4e19fa852a
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575840"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327032"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：
@@ -129,7 +129,7 @@ MSBuild 跟踪生成的目标，并保证每个目标生成次数不超过一次
 
 3.  使用命令开关 /t:HelloWorld 运行 MSBuild。 这将选择并生成 HelloWorld 目标：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -178,7 +178,7 @@ MSBuild 跟踪生成的目标，并保证每个目标生成次数不超过一次
 ## <a name="examining-a-property-value"></a>检查属性值
  若要获取属性值，请使用以下语法，其中 PropertyName 是属性的名称：
 
-```
+```xml
 $(PropertyName)
 ```
 
@@ -199,7 +199,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -237,7 +237,7 @@ $(PropertyName)
 
 1.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
     ```
 
@@ -266,7 +266,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -308,7 +308,7 @@ $(PropertyName)
 ## <a name="examining-item-type-values"></a>检查项类型值
  若要获取项类型的值，请使用以下语法，其中 ItemType 是项类型的名称：
 
-```
+```xml
 @(ItemType)
 ```
 
@@ -328,7 +328,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -342,7 +342,7 @@ $(PropertyName)
 
  若要更改项类型的分隔符，请使用以下语法，其中 ItemType 是项类型，Separator 是一个或多个分隔字符的字符串：
 
-```
+```xml
 @(ItemType, Separator)
 ```
 
@@ -360,7 +360,9 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-     `msbuild buildapp.csproj /t:HelloWorld`
+    ```cmd
+    msbuild buildapp.csproj /t:HelloWorld
+    ```
 
 4.  检查输出。 应看到这些行：
 
@@ -438,7 +440,7 @@ $(PropertyName)
 
 4.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -463,7 +465,7 @@ $(PropertyName)
 
  若要获取项类型的元数据值，请使用以下语法，其中 ItemType 是项类型的名称，MetaDataName 是元数据的名称：
 
-```
+```xml
 %(ItemType.MetaDataName)
 ```
 
@@ -479,7 +481,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -509,7 +511,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 
@@ -529,7 +531,7 @@ $(PropertyName)
 ### <a name="metadata-transformations"></a>元数据转换
  项列表可以转换为新的项列表。 若要转换项列表，请使用以下语法，其中 ItemType 是项类型的名称，MetaDataName 是元数据的名称：
 
-```
+```xml
 @(ItemType -> '%(MetadataName)')
 ```
 
@@ -547,7 +549,7 @@ $(PropertyName)
 
 3.  在“命令窗口”输入并执行此行：
 
-    ```
+    ```cmd
     msbuild buildapp.csproj /t:HelloWorld
     ```
 

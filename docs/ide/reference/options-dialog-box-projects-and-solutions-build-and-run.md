@@ -1,5 +1,5 @@
 ---
-title: 选项对话框，项目和解决方案，生成和运行
+title: 选项对话框、项目和解决方案、生成和运行
 ms.date: 07/14/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -17,13 +17,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bd6056c332725b4c44a56480fa21a064c52095d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f6a569162105ffb577bdad854d973fff91b3c81b
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845033"
 ---
-# <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>选项对话框，项目和解决方案，生成和运行
+# <a name="options-dialog-box-projects-and-solutions-build-and-run"></a>选项对话框、项目和解决方案、生成和运行
 
 在此对话框中，能够指定可同时生成的 Visual C++ 或 C# 项目的最大数、某些默认生成行为及一些生成日志设置。 要访问这些选项，请选择“工具 > 选项”，展开“项目和解决方案”，然后选择“生成和运行”。
 

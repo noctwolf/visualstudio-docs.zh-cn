@@ -9,16 +9,16 @@ description: 了解 Visual Studio 订阅中包含的权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 482bd02657687152fbda6d2aea927008ab4b3e49
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335588"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283258"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
-Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  具体权益将取决于你所拥有的订阅类型。  为了给订阅者提供最大价值，所提供的权益会随着我们做出的调整定期变更，以专注于最新、最有用的技术、培训材料和可用的合作伙伴权益。 
+Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和设备（包括 Windows、iOS、Android 和 Linux）上创建、部署及管理功能强大的应用程序。  具体权益将取决于你所拥有的订阅类型。  为了给订阅者提供最大价值，所提供的权益会随着我们做出的调整定期变更，以专注于最新、最有用的技术、培训材料和可用的合作伙伴权益。
 
 权益分为以下三类：
 
@@ -32,17 +32,17 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 - Microsoft Azure for .Net 开发人员，以及来自 Pluralsight 的其他优质内容
 - 来自 DataCamp 的开发人员数据科学
 - 通过 Microsoft 虚拟学院设计用于 SQL Server 的数据库解决方案
-- LinkedIn Learning 使你能够访问人员、见解以及使用 Excel 所需的技能。 
+- LinkedIn Learning 使你能够访问人员、见解以及使用 Excel 所需的技能。
 
-## <a name="support"></a>支持 
-作为 Visual Studio 订阅者，如果你有疑问或者需要技术协助，还可以访问各种类型的支持。 
-- 付费订阅包括对专业技术支持事件的访问权限，以解决在开发/测试环境中运行的工具和应用程序的问题。  
-- 需要技术文档或产品信息？  请通过 Conceirge 聊天服务获取即时帮助。 
-- 在优先支持论坛获得社区成员的帮助。  如果社区成员无法回答你的问题，Microsoft 专家将会提供解答。 
-- 想询问有关 Azure 的问题？  请查看 Azure 社区和 Azure 顾问聊天服务。  
+## <a name="support"></a>支持
+作为 Visual Studio 订阅者，如果你有疑问或者需要技术协助，还可以访问各种类型的支持。
+- 付费订阅包括对专业技术支持事件的访问权限，以解决在开发/测试环境中运行的工具和应用程序的问题。
+- 需要技术文档或产品信息？  请通过 Conceirge 聊天服务获取即时帮助。
+- 在优先支持论坛获得社区成员的帮助。  如果社区成员无法回答你的问题，Microsoft 专家将会提供解答。
+- 想询问有关 Azure 的问题？  请查看 Azure 社区和 Azure 顾问聊天服务。
 
-> [!NOTE] 
+> [!NOTE]
 > 你的订阅可能还附带软件下载权限。  有关下载的详细信息，包括订阅包含哪些下载，请访问 [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)。
 
-有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://www.visualstudio.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。 
+有关在订阅中所包含权益的详细信息，请查看 [Visual Studio 定价页](https://visualstudio.microsoft.com/vs/pricing/)。  有关具体权益的信息，包括哪些订阅拥有这些权益，可参阅下方的“使用订阅者权益”主题。
 

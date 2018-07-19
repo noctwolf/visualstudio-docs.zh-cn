@@ -1,5 +1,5 @@
 ---
-title: '&lt;publisherIdentity&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+title: '&lt;publisherIdentity&gt;元素 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92b0082d7a2b062d946d132c5a86fbceb5208802
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: f33772a35e8e47a77e0fdaddd28b7471ef5abcce
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815137"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081405"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt;元素 （ClickOnce 部署）
 包含有关为此部署清单签名的发布者的信息。  
@@ -38,11 +38,11 @@ ms.locfileid: "34815137"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `publisherIdentity`元素是必需的签名的清单。 下表显示的特性`publisherIdentity`元素支持。  
+ `publisherIdentity`元素是必需的签名的清单。 下表显示特性的`publisherIdentity`元素支持。  
   
 |特性|描述|  
 |---------------|-----------------|  
-|`name`|必须的。 描述此应用程序发布一方的标识。|  
+|`name`|必须的。 描述发布此应用程序的参与方的标识。|  
 |`issuerKeyHash`|必须的。 包含证书颁发者的公钥的 sha-1 哈希。|  
   
 #### <a name="parameters"></a>参数  

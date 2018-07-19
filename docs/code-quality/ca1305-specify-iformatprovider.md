@@ -1,6 +1,6 @@
 ---
 title: CA1305：指定 IFormatProvider
-ms.date: 11/04/2016
+ms.date: 06/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
@@ -14,67 +14,77 @@ ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: da4125a87ea7fe1576834dacc14af9a1a1861206
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05e2efde1be3430f95b00edbe8da8f952efad758
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900352"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174301"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
 |类别|Microsoft.Globalization|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 某方法或构造函数调用具有重载，以接受的一个或多个成员<xref:System.IFormatProvider?displayProperty=fullName>参数，该方法或构造函数不调用采用的重载<xref:System.IFormatProvider>参数。 此规则将忽略对调用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]记录为忽略方法<xref:System.IFormatProvider>参数还此外包含以下方法：
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+某方法或构造函数调用的重载接受一个或多个成员<xref:System.IFormatProvider?displayProperty=fullName>参数，该方法或构造函数不调用的重载的<xref:System.IFormatProvider>参数。
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+此规则将忽略对被记录为忽略的.NET Framework 方法的调用<xref:System.IFormatProvider>参数。 该规则还会忽略以下方法：
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=nameWithType>
 
 ## <a name="rule-description"></a>规则说明
- 当<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能没有要包含在所有区域设置的效果。 此外，[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]成员选择默认区域性和格式设置基于可能不为你的代码正确的假设。 若要确保代码按预期适合你的方案运行，还应提供区域性特定信息根据下列准则：
 
--   如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
+当<xref:System.Globalization.CultureInfo?displayProperty=nameWithType>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，.NET Framework 成员选择默认区域性，并设置格式基于可能不为你的代码正确的假设。 若要确保代码按预期为方案运行，应提供特定于区域性的信息，按照以下原则：
 
--   如果将存储的值，并通过软件 （保存到文件或数据库），使用固定区域性。 请参阅 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
+- 如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>。
 
--   如果不知道的值的目标，具有数据使用者或提供程序指定的区域性。
+- 如果的值将存储并访问的软件 （保存到文件或数据库），使用固定区域性。 请参阅 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>。
 
- 请注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>仅用于通过使用的实例中检索本地化的资源<xref:System.Resources.ResourceManager?displayProperty=fullName>类。
+- 如果不知道的值的目标，具有数据使用者或提供程序指定的区域性。
 
- 即使重载的成员的默认行为是适合你的需求，则最好显式调用的特定于区域性的重载，因此，你的代码是自我说明且更易于维护。
+即使重载的成员的默认行为是适用于你的需求，则最好显式调用特定于区域性的重载，因此，你的代码是一目了然，且更易维护。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，使用采用重载<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider>和指定的自变量，根据前面已列出的准则。
+
+若要修复此规则的冲突，请使用采用重载<xref:System.IFormatProvider>参数。 或者，使用[C# 内插字符串](/dotnet/csharp/tutorials/string-interpolation)并将其传递给<xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告时确定的默认区域性/格式提供程序是正确的选择，并且代码可维护性不是重要的开发优先级。
+
+它可以安全地禁止显示此规则的警告时确定的默认格式是正确的选择，并且代码可维护性不是一个重要开发的优先级。
 
 ## <a name="example"></a>示例
- 在下面的示例中，`BadMethod`导致冲突的此规则的两种情况。 `GoodMethod` 通过将传递到固定区域性更正第一次冲突<xref:System.String.Compare%2A>，并通过将传递到当前区域性更正第二个冲突<xref:System.String.ToLower%2A>因为`string3`向用户显示。
 
- [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_1.cs)]
+在下面的代码，`example1`字符串违反规则 CA1305。 `example2`字符串将传递满足规则 CA1305 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>，它可以实现<xref:System.IFormatProvider>到<xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>。 `example3`字符串内插的字符串到表示通过满足规则 CA1305 <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>。
 
-## <a name="example"></a>示例
- 下面的示例演示上默认值为当前区域性的效果<xref:System.IFormatProvider>已选择通过<xref:System.DateTime>类型。
+```csharp
+string name = "Georgette";
 
- [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1305-specify-iformatprovider_2.cs)]
+// Violates CA1305
+string example1 = String.Format("Hello {0}", name);
 
- 本示例生成以下输出。
+// Satisfies CA1305
+string example2 = String.Format(CultureInfo.CurrentCulture, "Hello {0}", name);
 
- **6/4/1900年 12:15:12 PM**
-**06/04/1900年 12:15:12**
+// Satisfies CA1305
+string example3 = FormattableString.Invariant($"Hello {name}");
+```
+
 ## <a name="related-rules"></a>相关的规则
- [CA1304：指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+
+- [CA1304：指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>请参阅
-[使用 CultureInfo 类](/dotnet/standard/globalization-localization/globalization#Cultures)
+
+- [使用 CultureInfo 类](/dotnet/standard/globalization-localization/globalization#Cultures)

@@ -18,35 +18,35 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f4c865dcf55f8796748308822b8a6dde5f96ef8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c5d8d9f961db7c6560f1dd7a73f2ea62a974bac
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920542"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174203"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用事务保存数据
-将数据在事务中保存通过<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与自动为您管理的事务。
+您将数据保存在事务中的使用<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与为您自动管理的事务。
 
-项目不会对 System.Transactions 程序集的引用创建，因此你需要手动添加对使用事务的项目的引用。
+项目不会创建引用*System.Transactions*程序集，因此您需要手动添加对项目使用事务的引用。
 
-实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象在`using`语句。 (有关详细信息，请参阅[Using 语句](/dotnet/visual-basic/language-reference/statements/using-statement)，和[using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。)运行中的代码`using`语句参与该事务。
+若要实现事务的最简单方法是实例化<xref:System.Transactions.TransactionScope>对象中`using`语句。 (有关详细信息，请参阅[Using 语句](/dotnet/visual-basic/language-reference/statements/using-statement)，并[Using 语句](/dotnet/csharp/language-reference/keywords/using-statement)。)在中运行的代码`using`语句参与事务。
 
-若要提交事务，调用<xref:System.Transactions.TransactionScope.Complete%2A>作为中使用的最后一个语句的方法阻止。
+若要提交事务，调用<xref:System.Transactions.TransactionScope.Complete%2A>方法中使用的最后一个语句块。
 
-若要回滚事务，应引发异常之前调用<xref:System.Transactions.TransactionScope.Complete%2A>方法。
+若要回滚事务，会引发异常之前调用<xref:System.Transactions.TransactionScope.Complete%2A>方法。
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要添加对 System.Transactions.dll 的引用
 
-1.  上**项目**菜单上，选择**添加引用**。
+1.  上**项目**菜单中，选择**添加引用**。
 
-2.  上 **.NET**选项卡 (**SQL Server**对于 SQL Server 项目的选项卡)，选择**System.Transactions**，然后选择**确定**。
+2.  上 **.NET**选项卡 (**SQL Server** SQL Server 项目的选项卡)，选择**System.Transactions**，然后选择**确定**。
 
-     System.Transactions.dll 的引用添加到项目。
+     对引用*System.Transactions.dll*添加到项目。
 
 ## <a name="to-save-data-in-a-transaction"></a>若要将数据保存在事务中
 
--   添加代码以保存在中使用的数据包含事务的语句。 下面的代码演示如何创建和实例化<xref:System.Transactions.TransactionScope>对象在 using 语句：
+-   添加代码以保存中使用的数据包含的事务的语句。 下面的代码演示如何创建并实例化<xref:System.Transactions.TransactionScope>对象中的 using 语句：
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

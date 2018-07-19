@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b759d5ac7f86fe366a5a0394b4c288904ef5c589
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 62c7f173f278e03f5e28d6b03c117c7b69415abb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255140"
 ---
 # <a name="profiling-tools-apis"></a>分析工具 API
 可插入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API 的托管或本机方法，以便在运行分析时控制数据收集。 本节介绍了 API的 方法，以及如何使用它们。  

@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe4c8a1e1aa561a8a7fca1f3b8e9e0469bf6dc9
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1b60df36240b332e74e63aaef7fab75ff19c7d77
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297622"
 ---
 # <a name="install-visual-studio-2017-on-low-bandwidth-or-unreliable-network-environments"></a>在低带宽或不可靠的网络环境中安装 Visual Studio 2017
 
 建议尝试使用 Visual Studio Web 安装程序 &mdash; 使用体验一定会让你在大多数情况下感到满意。
 
  > [!div class="button"]
- > [下载 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 <br/>
 
 但是，如果 Internet 连接不可用或不可靠，则可以使用命令行创建完成脱机安装所需的文件的本地缓存。 操作方法如下。
@@ -46,7 +47,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="step-2---create-a-local-install-cache"></a>步骤 2 - 创建本地安装缓存
 
-必须具有 Internet 连接才能完成此步骤。 若要创建本地布局，请打开命令提示符，然后使用以下示例中的命令之一：下面的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
+必须具有 Internet 连接才能完成此步骤。 若要创建本地布局，请打开命令提示符，然后运行以下示例中的一个命令。 下面的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 
 - 对于 .NET Web 和.NET 桌面开发，请运行：
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="get-support"></a>获取支持
 
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
 
@@ -120,3 +121,4 @@ ms.lasthandoff: 04/20/2018
 * [安装 Visual Studio](install-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)

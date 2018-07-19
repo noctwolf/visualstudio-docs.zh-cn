@@ -1,5 +1,5 @@
 ---
-title: 如何： 将托管的代码扩展附加到文档 |Microsoft 文档
+title: 如何： 将附加的托管代码扩展到文档
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,27 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: fe415cfb0635f133baf191f027ca7ae0111989a9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c6e39f27caf9d321bb83666d72114a9675091f03
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257033"
 ---
-# <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管代码扩展附加到文档
-  可以将自定义程序集附加到一个现有的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 Microsoft Office 项目和 Visual Studio 中的开发工具都支持的任何文件格式可以是文档或工作簿。 有关详细信息，请参阅[体系结构的文档级自定义](../vsto/architecture-of-document-level-customizations.md)。  
+# <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何： 将附加的托管代码扩展到文档
+  可以将自定义程序集附加到现有 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 文档或工作簿可以是支持的 Microsoft Office 项目和 Visual Studio 中的开发工具的任何文件格式。 有关详细信息，请参阅[的文档级自定义体系结构](../vsto/architecture-of-document-level-customizations.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 若要将自定义项附加到 Word 或 Excel 的文档，使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。 因为<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类旨在没有安装 Microsoft Office 的计算机上运行，则可以在与 Microsoft Office 开发 （如控制台或 Windows 窗体应用程序） 不直接相关的解决方案中使用此方法。  
+ 若要将自定义项附加到 Word 或 Excel 文档，请使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。 因为<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类专为没有安装 Microsoft Office 的计算机上运行，则可以不直接相关 （如控制台或 Windows 窗体应用程序） 的 Microsoft Office 开发的解决方案中使用此方法。  
   
 > [!NOTE]  
->  自定义项将无法加载如果代码需要指定的文档没有的控件。  
+>  自定义项将无法加载如果代码需要指定的文档中不存在的控件。  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[i： 不要如何附加或分离 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 将附加或分离的 VSTO 程序集从 Word 文档？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
   
-### <a name="to-attach-managed-code-extensions-to-a-document"></a>将托管的代码扩展附加到文档  
+### <a name="to-attach-managed-code-extensions-to-a-document"></a>若要将托管的代码扩展附加到文档  
   
-1.  在项目中，不需要 Microsoft Office，如控制台应用程序或 Windows 窗体项目，添加对 Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll 和 Microsoft.VisualStudio.Tools.Applications.Runtime.dll 的引用程序集。  
+1.  在项目中，不需要 Microsoft Office，如控制台应用程序或 Windows 窗体项目，添加对的引用*Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll*和*Microsoft.VisualStudio.Tools.Applications.Runtime.dll*程序集。  
   
 2.  添加以下**导入**或**使用**到你的代码文件顶部的语句。  
   
@@ -45,15 +46,15 @@ ms.lasthandoff: 04/16/2018
   
 3.  调用静态<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>方法。  
   
-     下面的代码示例使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>重载。 此重载采用文档的完整路径和<xref:System.Uri>，指定你想要附加到文档的自定义项的部署清单的位置。 此示例假定 Word 文档名为**WordDocument1.docx**是在桌面上，和部署清单位于名为的文件夹**发布**这也是在桌面上。  
+     下面的代码示例使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A>重载。 此重载需要使用文档的完整路径和一个<xref:System.Uri>，它指定你想要附加到文档的自定义项的部署清单的位置。 此示例假定的 Word 文档名为**WordDocument1.docx**是在桌面上，和部署清单位于名为的文件夹中的**发布**这也是在桌面上。  
   
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]  
   
-4.  生成项目并想要附加自定义项的计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office Runtime 安装。  
+4.  生成项目并想要附加自定义项在计算机上运行应用程序。 计算机必须具有 Visual Studio 2010 Tools for Office 运行时安装。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [如何： 从文档中删除托管的代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
- [Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
+ [如何： 删除文档从托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)   
+ [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)  
   

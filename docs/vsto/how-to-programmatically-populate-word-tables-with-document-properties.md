@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式填充 Word 表使用文档属性 |Microsoft 文档
+title: 如何： 以编程方式填充 Word 表使用文档属性
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,20 +16,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e0feb203e517cffcd859e3094abcee95d532eafc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c202a663f87a77da9a40116b76c2f09e84464ceb
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35257441"
 ---
-# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何：以编程方式用文档属性填充 Word 表
+# <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何： 以编程方式填充 Word 表使用文档属性
   下面的示例在文档的顶部创建 Microsoft Office Word 表格，并使用主机文档的属性填充它。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="populating-tables-in-a-document-level-customization"></a>填充文档级自定义项中的表格  
+## <a name="populate-tables-in-a-document-level-customization"></a>填充文档级自定义项中的表  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>创建表格并使用文档属性填充它  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>创建表格并使用文档属性填充它  
   
 1.  将范围设置为文档的顶部。  
   
@@ -61,9 +62,9 @@ ms.lasthandoff: 04/16/2018
  [!code-vb[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#89)]
  [!code-csharp[Trin_VstcoreWordAutomation#89](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#89)]  
   
-## <a name="populating-tables-in-a-vsto-add-in"></a>填充 VSTO 外接程序中的表格  
+## <a name="populate-tables-in-a-vsto-add-in"></a>填充 VSTO 外接程序中的表  
   
-#### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>创建表格并使用文档属性填充它  
+### <a name="to-create-a-table-and-populate-it-with-document-properties"></a>创建表格并使用文档属性填充它  
   
 1.  将范围设置为文档的顶部。  
   
@@ -97,7 +98,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>请参阅  
  [如何： 以编程方式创建 Word 表](../vsto/how-to-programmatically-create-word-tables.md)   
- [如何： 以编程方式添加文本和格式向 Word 表中的单元格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [如何： 以编程方式添加的文本和格式向 Word 表中的单元格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
  [如何： 以编程方式向 Word 表中添加行和列](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   

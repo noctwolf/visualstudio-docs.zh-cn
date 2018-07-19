@@ -1,5 +1,5 @@
 ---
-title: 查找内存泄漏使用 CRT 库 |Microsoft 文档
+title: 使用 CRT 库查找内存泄漏 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d858b6c67893e49b4d4e9ec87c3b20fce56dd7c4
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477857"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057208"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 内存泄漏，即未能正确释放以前分配的内存，是 C/C++ 应用程序中最难以捉摸也最难以检测到的 Bug 之一。 最初少量内存泄漏可能不引人注目，但随着时间的推移，内存泄漏越来越多，就会出现一些征兆，包括性能下降，在应用程序内存不足时发生崩溃。 更严重的是，占用了所有可用内存的泄漏应用程序可能会导致其他应用程序崩溃，从而无法确定问题出在哪个应用程序。 即使看似无害的内存泄漏也可能说明存在其他问题应当纠正。  
@@ -48,7 +48,7 @@ ms.locfileid: "31477857"
   
  若要启用调试堆函数，请在程序中包括以下语句：  
   
-```  
+```cpp
 #define _CRTDBG_MAP_ALLOC  
 #include <stdlib.h>  
 #include <crtdbg.h>  
@@ -62,13 +62,13 @@ ms.locfileid: "31477857"
   
  使用这些语句启用调试堆函数之后，可以在某个应用程序退出点之前设置一个对 `_CrtDumpMemoryLeaks` 的调用，以便在应用程序退出时显示内存泄漏报告：  
   
-```  
+```cpp
 _CrtDumpMemoryLeaks();  
 ```  
   
  如果应用程序有多个退出点，并不需要在每个退出点都手动设置一个对 [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) 的调用。 应用程序开头部分对 `_CrtSetDbgFlag` 的调用会导致在每个退出点自动调用 `_CrtDumpMemoryLeaks` 。 你必须设置两个位域，如下所示：  
   
-```  
+```cpp
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
 ```  
   
@@ -76,14 +76,14 @@ _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
   
  如果使用库，该库可能会将输出重置到另一位置。 在此情况下，可以将输出位置设置回  “输出”窗口，如下所示：  
   
-```  
+```cpp
 _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );  
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>解释内存泄漏报告  
  如果应用程序未定义 `_CRTDBG_MAP_ALLOC`，则 [_CrtDumpMemoryLeaks](/cpp/c-runtime-library/reference/crtdumpmemoryleaks) 显示的内存泄漏报告如下所示：  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 {18} normal block at 0x00780E80, 64 bytes long.  
@@ -93,7 +93,7 @@ Object dump complete.
   
  如果应用程序定义了 `_CRTDBG_MAP_ALLOC`，则显示的内存泄漏报告如下所示：  
   
-```  
+```cmd
 Detected memory leaks!  
 Dumping objects ->  
 c:\users\username\documents\projects\leaktest\leaktest.cpp(20) : {18}   
@@ -120,7 +120,7 @@ Object dump complete.
   
  内存泄漏报告中绝对不会出现另外两个内存块类型。  “可用块”是已释放的内存。 也就是说，根据定义，这种块不会泄漏。  “忽略块”是已明确标记、不出现在内存泄漏报告中的块。  
   
- 这些方法适用于使用标准 CRT `malloc` 函数分配的内存。 如果你的程序分配内存使用 c + +`new`运算符，但是，你可能只看到的文件和行号其中的全局实现`operator new`调用`_malloc_dbg`内存泄漏报告中。 该行为不是非常有用，因为你可以更改它以报告通过使用类似如下所示的宏进行分配的行： 
+ 这些方法适用于使用标准 CRT `malloc` 函数分配的内存。 如果您的程序分配内存使用 c + +`new`运算符，但是，你可能只能看到的文件和行号，实现全局`operator new`调用`_malloc_dbg`内存泄漏报告中。 该行为不是很有用，因为您可以将其更改为报表使用的宏，如下所示进行分配的行： 
  
 ```C++  
 #ifdef _DEBUG
@@ -132,7 +132,7 @@ Object dump complete.
 #endif
 ```  
   
-现在可以替换`new`运算符使用`DBG_NEW`在代码中的宏。 在调试版本中，这将使用的全局重载`operator new`采用其他参数的块类型、 文件和行号。 此重载`new`调用`_malloc_dbg`记录的额外信息。 当你使用`DBG_NEW`，内存泄漏报告显示文件名和行号泄漏的对象已分配所在位置。 零售版本，它将使用默认值`new`。 (我们不建议你创建一个名为的预处理器宏`new`，或任何其他语言关键字。)下面是技术的示例：  
+现在可以替换`new`运算符使用`DBG_NEW`在代码中的宏。 在调试版本中，这将使用的全局重载`operator new`采用附加参数的块类型、 文件和行号。 此重载`new`调用`_malloc_dbg`记录的额外信息。 当你使用`DBG_NEW`，内存泄漏报告显示已泄漏的对象的分配的文件名和行号。 在零售版本，则使用默认`new`。 (我们不建议创建一个名为的预处理器宏`new`，或任何其他语言关键字。)下面是技术的示例：  
   
 ```C++  
 // debug_new.cpp
@@ -162,7 +162,7 @@ void main() {
 }
 ```  
   
-在 Visual Studio 中，调用调试器中运行此代码时`_CrtDumpMemoryLeaks`生成中的报表**输出**类似如下所示的窗口：  
+在 Visual Studio 中，调用在调试器中运行此代码时`_CrtDumpMemoryLeaks`生成中的报表**输出**类似如下所示的窗口：  
   
 ```Output  
 Detected memory leaks!
@@ -173,7 +173,7 @@ c:\users\username\documents\projects\debug_new\debug_new.cpp(20) : {75}
 Object dump complete.
 ```  
   
-这将告知你泄漏的分配已 debug_new.cpp 20 行。  
+这会告诉您的 debug_new.cpp 第 20 行已泄漏的分配。  
   
 ## <a name="setting-breakpoints-on-a-memory-allocation-number"></a>在内存分配编号上设置断点  
  如果分配了泄漏内存块，内存分配编号会通知你。 例如，内存分配编号为 18 的块就是在应用程序运行过程中所分配的第 18 个内存块。 CRT 报告包含运行过程中的所有内存块分配情况。 其中包括 CRT 库和其他库（如 MFC）的分配情况。 因此，内存分配编号为 18 的块可能不是你的代码所分配的第 18 个内存块。 通常，二者并不一致。  
@@ -186,13 +186,13 @@ Object dump complete.
   
 2.  当应用程序在断点处中断时，会出现  “监视”窗口。  
   
-3.  在  “监视”窗口中，在 `_crtBreakAlloc`**“名称”列中键入** 。  
+3.  在中**Watch**窗口中，键入`_crtBreakAlloc`中**名称**列。  
   
      如果要使用 CRT 库的多线程 DLL 版本（/MD 选项），请加入上下文运算符： `{,,ucrtbased.dll}_crtBreakAlloc`  
   
 4.  按 “Return”。  
   
-     调试器将计算调用，并将结果放入  “值”列。 如果你没有在内存分配上设置任何断点，则此值将为-1。  
+     调试器将计算调用，并将结果放入  “值”列。 如果你尚未在内存分配上设置任何断点，则此值将为-1。  
   
 5.  在  “值”列中，将显示的值替换为要在其位置中断的内存分配的分配编号。  
   
@@ -202,20 +202,20 @@ Object dump complete.
   
  你也可以在代码中设置内存分配断点。 有两种方法可以实现此目的：  
   
-```  
+```cpp
 _crtBreakAlloc = 18;  
 ```  
   
  或：  
   
-```  
+```cpp
 _CrtSetBreakAlloc(18);  
 ```  
   
 ## <a name="comparing-memory-states"></a>比较内存状态  
  定位内存泄漏的另一种技术涉及在关键点对应用程序的内存状态拍快照。 若要为应用程序中给定点的内存状态拍快照，请创建 **_CrtMemState** 结构，将它传递给 `_CrtMemCheckpoint` 函数。 该函数用当前内存状态的快照填充此结构：  
   
-```  
+```cpp
 _CrtMemState s1;  
 _CrtMemCheckpoint( &s1 );  
   
@@ -225,14 +225,14 @@ _CrtMemCheckpoint( &s1 );
   
  若要输出 **_CrtMemState** 结构的内容，请将该结构传递给 `_ CrtMemDumpStatistics` 函数：  
   
-```  
+```cpp
 _CrtMemDumpStatistics( &s1 );  
   
 ```  
   
  `_ CrtMemDumpStatistics` 输出内存状态转储，如下所示：  
   
-```  
+```cmd
 0 bytes in 0 Free Blocks.  
 0 bytes in 0 Normal Blocks.  
 3071 bytes in 16 CRT Blocks.  
@@ -245,7 +245,7 @@ Total allocations: 3764 bytes.
   
  若要确定在某个代码部分中是否发生了内存泄漏，可以对这部分之前和之后的内存状态拍快照，然后使用 `_ CrtMemDifference` 比较两个状态：  
   
-```  
+```cpp
 _CrtMemCheckpoint( &s1 );  
 // memory allocations take place here  
 _CrtMemCheckpoint( &s2 );  

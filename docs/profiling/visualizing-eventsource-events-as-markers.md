@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d144728d86bf57a5af837fb8740becd1b6ee4c22
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 3e6c28682bb6b93a2a72aaa353a2af68a9450cb9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449021"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058586"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>将 EventSource 事件作为标记可视化
 并发可视化工具可以将 EventSource 事件显示为标记，并且可以控制标记的显示方式。 若要查看 EventSource 标记，请使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框注册 ETW 提供程序 GUID。 并发可视化工具具有将 EventSource 事件表示为[标志标记](../profiling/flag-markers.md)、[范围标记](../profiling/span-markers.md)和[消息标记](../profiling/message-markers.md)的默认约定。 可以通过向事件添加自定义字段自定义 EventSource 事件的显示方式。 有关标记的详细信息，请参阅[并发可视化工具标记](../profiling/concurrency-visualizer-markers.md)。 有关 EventSource 事件的详细信息，请参阅 <xref:System.Diagnostics.Tracing>。  
@@ -25,9 +25,9 @@ ms.locfileid: "34449021"
   
 ### <a name="marker-type"></a>标记类型  
   
-1.  具有[操作码](http://msdn.microsoft.com/en-us/d97953df-669b-4c55-b1a8-925022b339b7) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。  
+1.  具有[操作码](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start 或 win:Stop 的事件将分别被视为范围的开始或结束。  无法显示嵌套或重叠的范围。 无法显示以一个线程开始并以另一个线程结束的事件对。  
   
-2.  其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](http://msdn.microsoft.com/en-us/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。  
+2.  其操作码既不是 win:Start 也不是 win:Stop 的事件将被视为标记标志，除非其[级别](/windows/desktop/WES/defining-severity-levels)（EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR 的字段）为 win:Verbose 或更高版本。  
   
 3.  在所有其他情况下，事件均被视为消息。  
   

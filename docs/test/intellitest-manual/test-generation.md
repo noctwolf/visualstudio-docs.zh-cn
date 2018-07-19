@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f621520f6303e72bdb4cd778218378af9ebd2323
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2eab01a560cebb3bed644df044fcee0af4039ffb
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815017"
 ---
 # <a name="test-generation"></a>测试生成
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 04/26/2018
 
 下面是一个示例测试结构：
 
-```
+```csharp
 [Test]
 void MyTest() {
     // data
@@ -60,7 +61,7 @@ IntelliTest 需要构造对象时，将根据需要在序列中自动添加对�
 
 PUT 使用 [PexMethod](attribute-glossary.md#pexmethod) 自定义属性定义，其方式与 MSTest（或 NUnit、xUnit）类似。 PUT 实例方法按逻辑分组成使用 [PexClass](attribute-glossary.md#pexclass) 标记的类。 下面的示例展示了 MyPexTest 类中存储的简单 PUT：
 
-```
+```csharp
 [PexMethod]
 void ReplaceFirstChar(string target, char c) {
 
@@ -72,7 +73,7 @@ void ReplaceFirstChar(string target, char c) {
 
 其中 **ReplaceFirstChar** 是替换字符串第一个字符的方法：
 
-```
+```csharp
 class StringHelper {
     static string ReplaceFirstChar(string target, char c) {
         if (target == null) throw new ArgumentNullException();
@@ -84,7 +85,7 @@ class StringHelper {
 
 在此测试中，IntelliTest 可以自动为 PUT [生成输入](input-generation.md)，且该输入包含测试代码的许多执行路径。 每个包含不同执行路径的输入将被“序列化”为单元测试：
 
-```
+```csharp
 [TestMethod, ExpectedException(typeof(ArgumentNullException))]
 void ReplaceFirstChar0() {
     this.ReplaceFirstChar(null, 0);
@@ -101,7 +102,7 @@ void ReplaceFirstChar10() {
 
 参数化单元测试可以是泛型方法。 在这种情况下，用户必须使用 [PexGenericArguments](attribute-glossary.md#pexgenericarguments) 指定用于实例化该方法的类型。
 
-```
+```csharp
 [PexClass]
 public partial class ListTest {
     [PexMethod]
@@ -119,7 +120,7 @@ IntelliTest 提供大量验证属性，帮助将异常分类为预期异常和�
 
 预期异常生成带有“ExpectedException(typeof(xxx))”等注释的负面测试用例，而意外异常生成失败测试用例。
 
-```
+```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
 void SomeTest() {...}
 ```
@@ -136,7 +137,7 @@ void SomeTest() {...}
 
 只要 IntelliTest 能找到内部类型，就可以对其进行“测试”。 若要使 IntelliTest 找到类型，可通过 Visual Studio IntelliTest 向导将以下属性添加到产品或测试项目：
 
-```
+```csharp
 [assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
 ```
 
@@ -147,7 +148,7 @@ void SomeTest() {...}
 
 断言是常规单元测试框架中的常见概念，因此 IntelliTest 已“了解”每个受支持测试框架提供的内置 Assert 类。 但是大部分框架不会提供 Assume 类。 在这种情况下，IntelliTest 会提供 [PexAssume](static-helper-classes.md#pexassume) 类。 如果不想使用现有的测试框架，IntelliTest 还有 [PexAssert](static-helper-classes.md#pexassert) 类。
 
-```
+```csharp
 [PexMethod]
 public void Test1(object o) {
     // precondition: o should not be null
@@ -159,7 +160,7 @@ public void Test1(object o) {
 
 具体而言，非空假设可以编码为自定义属性：
 
-```
+```csharp
 [PexMethod]
 public void Test2([PexAssumeNotNull] object o)
 // precondition: o should not be null
@@ -205,7 +206,7 @@ public void Test2([PexAssumeNotNull] object o)
 
 **示例**
 
-```
+```csharp
 using Microsoft.Pex.Framework;
 using NUnit.Framework;
 

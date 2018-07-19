@@ -9,11 +9,12 @@ mescription: Learn how to manage your organization's Visual Studio subscriptions
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 22351b94923777d5eb1fe40cd2e43e9dc20f2449
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 41f594057051625acb6771ee9d66cad60b4508fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36327388"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
@@ -28,9 +29,9 @@ ms.lasthandoff: 04/06/2018
 
 批量许可客户在新的 Visual Studio 订阅管理门户中存在两种不同的角色。 这些角色就像现在 VLSC 中的“主要联系人或通知联系人”角色和“订阅管理员”角色。 
 
-**超级管理员：**首次设置组织时，“主要联系人或通知联系人”在默认情况下为超级管理员。 主要联系人或通知联系人可以选择分配其他超级管理员或管理员。 超级管理员可以添加和删除其他管理员和订阅者。 如果系统中有两个以上的超级管理员，为了安全起见，超级管理员可以删除最后两个以外的所有超级管理员。 
+**超级管理员：** 首次设置组织时，“主要联系人或通知联系人”在默认情况下为超级管理员。 主要联系人或通知联系人可以选择分配其他超级管理员或管理员。 超级管理员可以添加和删除其他管理员和订阅者。 如果系统中有两个以上的超级管理员，为了安全起见，超级管理员可以删除最后两个以外的所有超级管理员。 
 
-**管理员：**管理员只能由超级管理员设置。管理员可以在超级管理员分配给订阅者的协议中对其进行管理。 
+**管理员：** 管理员只能由超级管理员设置。管理员可以在超级管理员分配给订阅者的协议中对其进行管理。 
 
 ## <a name="getting-started"></a>入门
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/06/2018
 > [!NOTE]
 > 如果主要联系人或通知联系人收到多封电子邮件，这意味着他们具有多个 PCN。 他们需要使用每封电子邮件中引用的 PCN 的唯一链接完成该过程。*
 
-如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 查看[查找你的主要联系人](/find-primary-contact/)主题，了解在 VLSC 中查找主要/通知联系人的步骤。
+如果需要添加到新的 Visual Studio 订阅管理门户中，并且不确定谁是主要联系人或通知联系人，那么可以在登录 [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 后查找这些信息。 查看[查找你的主要联系人](find-primary-contact.md)主题，了解在 VLSC 中查找主要/通知联系人的步骤。
 如果已设置为管理员，则可以直接转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)。
 
 ### <a name="understanding-the-subscribers-page"></a>了解“订阅者”页
@@ -67,11 +68,9 @@ ms.lasthandoff: 04/06/2018
 - 用于通信而不是登录的其他电子邮件地址的可选字段。 
 
 在本页左侧，可以看到有关已购买、已分配以及针对每个协议在组织中仍然可用的订阅许可证数量的更多信息。
-
-   ![Visual Studio 订阅管理员门户“订阅者”页](_img/using-admin-portal/subscribers-page.png)
+    ![Visual Studio 订阅管理员门户“订阅者”页](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>了解“详细信息”页
 有关正在查看的协议的更多信息，请选择“详细信息”选项卡。该选项卡显示协议状态、购买帐户、组织详细信息、主要联系人 (VLSC)、超级管理员（如果可用）和其他相关信息。
-
-   ![Visual Studio 订阅管理门户的“详细信息”页](_img/using-admin-portal/details-page.png)
+    ![Visual Studio 订阅管理门户的“详细信息”页](_img/using-admin-portal/details-page.png)
 

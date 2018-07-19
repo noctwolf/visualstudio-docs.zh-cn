@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 084ac617cb36fdf6f0d8067e82cb0c862665e244
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750735"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233485"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 
@@ -32,7 +32,7 @@ ms.locfileid: "34750735"
 
 **测试 SharePoint 应用程序**
 
-上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 有关如何使用 Visual Studio 开发 SharePoint 应用程序的详细信息，请参阅[创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)、[生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)和[验证和调试 SharePoint 代码](/office-dev/office-dev/verifying-and-debugging-sharepoint-code)。
+上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 有关如何使用 Visual Studio 开发 SharePoint 应用程序的详细信息，请参阅[创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)、[生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)和[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
 
 **限制**
 
@@ -126,6 +126,6 @@ ms.locfileid: "34750735"
 
 ## <a name="see-also"></a>请参阅
 
-- [创建 SharePoint 解决方案](/office-dev/office-dev/create-sharepoint-solutions)
-- [生成和调试 SharePoint 解决方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)
+- [创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)
+- [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [“高级编译器设置”对话框 (Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

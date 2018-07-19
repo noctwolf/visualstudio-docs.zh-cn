@@ -17,22 +17,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f4fed2cbf00717e4eaf9c1353370dbd96037491
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: fa6195a531c74aebbcb7884cc8e3158df6b9ca96
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425496"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089394"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 
-在 Visual Studio 中， *T4 文本模板*是文本块和控制逻辑可以生成文本文件的组合。 控制逻辑被编写为 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的程序代码的片段。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。
+在 Visual Studio 中， *T4 文本模板*是混合的文本块与可生成文本文件的控制逻辑。 控制逻辑被编写为 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中的程序代码的片段。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。
 
 有两种类型的 T4 文本模板： 运行时和设计时。
 
 ## <a name="run-time-t4-text-templates"></a>运行时 T4 文本模板
 
-也称为预处理过的模板，运行时模板执行应用程序通常作为其输出的一部分生成文本字符串中。 例如，你可以创建一个模板来定义 HTML 页：
+也称为预处理过的模板，运行时模板生成文本字符串，通常作为其输出的一部分应用程序中执行。 例如，你可以创建一个模板来定义 HTML 页：
 
 ```
 <html><body>
@@ -58,9 +58,9 @@ string webResponseText = new MyTemplate().TransformText();
 
 ## <a name="design-time-t4-text-templates"></a>设计时 T4 文本模板
 
-设计时模板定义部分源代码以及应用程序的其他资源。 通常，您可以使用多个模块读取单个输入的文件或数据库中的数据并生成的某些你 *.cs*， *.vb*，或其他源文件。 每个模板生成一个文件。 它们将执行在 Visual Studio 或 MSBuild。
+设计时模板定义部分源代码以及应用程序的其他资源。 通常使用多个模块读取单个输入的文件或数据库中的数据并生成一些您 *.cs*， *.vb*，或其他源文件。 每个模板生成一个文件。 Visual Studio 或 MSBuild 内执行它们。
 
-例如，输入数据可能是配置数据的 XML 文件。 每当在开发过程中编辑 XML 文件时，文本模板重新生成应用程序代码的一部分。 其中一个模板可能类似于以下示例：
+例如，输入数据可能是配置数据的 XML 文件。 在开发过程中编辑 XML 文件时文本模板重新生成应用程序代码的一部分。 其中一个模板可能类似于以下示例：
 
 ```
 <#@ output extension=".cs" #>
@@ -74,7 +74,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-具体取决于生成的 XML 文件中的值 *.cs*文件将如下所示：
+具体取决于所生成的 XML 文件中的值 *.cs*文件将如下所示：
 
 ```
 namespace Fabrikam.FirstJob

@@ -1,7 +1,17 @@
 ---
-title: ClickOnce 非托管 API 参考 |Microsoft 文档
+title: ClickOnce 非托管 API 参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
+api_name:
+- CleanOnlineAppCache
+- GetDeploymentDataFromManifest
+- LaunchApplication
+api_location:
+- dfshim.dll
+api_type:
+- COM
+topic_type:
+- apiref
 ms.technology: vs-ide-deployment
 ms.topic: reference
 dev_langs:
@@ -20,23 +30,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0651c42abb410b55af956744da7a5e37952770b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 121b9b3be3c7f942f3ed1d5f7f2600f24d684e2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39082127"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非托管 API 参考
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从 dfshim.dll 的非托管公共 Api。  
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 从非托管的公共 Api。  
   
 ## <a name="cleanonlineappcache"></a>CleanOnlineAppCache  
  清理或卸载所有联机应用程序，从[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序缓存。  
   
 ### <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回表示失败的 HRESULT。 如果发生托管的异常，则返回 0x80020009 (DISP_E_EXCEPTION)。  
+ 如果成功，则返回 S_OK;否则，返回表示失败的 HRESULT。 如果发生托管的异常，则返回 0x80020009 (DISP_E_EXCEPTION)。  
   
 ### <a name="remarks"></a>备注  
- 调用 CleanOnlineAppCache 将启动[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服务如果尚未运行。  
+ 调用 CleanOnlineAppCache 将启动[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]服务如果未运行。  
   
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest  
  从清单和激活 URL 检索部署信息。  
@@ -45,40 +56,40 @@ ms.lasthandoff: 04/19/2018
   
 |参数|描述|类型|  
 |---------------|-----------------|----------|  
-|`pcwzActivationUrl`|指向的指针`ActivationURL`。|LPCWSTR|  
-|`pcwzPathToDeploymentManifest`|指向的指针`PathToDeploymentManifest`。|LPCWSTR|  
-|`pwzApplicationIdentity`|指向一个缓冲区来接收指定完整的应用程序标识返回的以 NULL 结尾的字符串的指针。|LPWSTR|  
-|`pdwIdentityBufferLength`|长度是一个 dword 值指向的指针`pwzApplicationIdentity`中 WCHARs 缓冲区。 这包括 NULL 终止字符的空间。|LPDWORD|  
-|`pwzProcessorArchitecture`|指向一个缓冲区来接收一个以 NULL 结尾的字符串，指定应用程序部署，清单中的处理器体系结构的指针。|LPWSTR|  
-|`pdwArchitectureBufferLength`|长度是一个 dword 值指向的指针`pwzProcessorArchitecture`中 WCHARs 缓冲区。|LPDWORD|  
-|`pwzApplicationManifestCodebase`|指向一个缓冲区来接收一个以 NULL 结尾的字符串，指定应用程序清单，清单中的基本代码的指针。|LPWSTR|  
-|`pdwCodebaseBufferLength`|长度是一个 dword 值指向的指针`pwzApplicationManifestCodebase`中 WCHARs 缓冲区。|LPDWORD|  
-|`pwzDeploymentProvider`|指向要接收的以 NULL 结尾的字符串缓冲区的指针，可以指定从清单中，部署提供程序，如果存在。 否则，返回一个空字符串。|LPWSTR|  
-|`pdwProviderBufferLength`|长度是一个 dword 值指向的指针`pwzProviderBufferLength`。|LPDWORD|  
+|`pcwzActivationUrl`|一个指向`ActivationURL`。|LPCWSTR|  
+|`pcwzPathToDeploymentManifest`|一个指向`PathToDeploymentManifest`。|LPCWSTR|  
+|`pwzApplicationIdentity`|指向用于接收一个以 NULL 结尾的字符串，指定完整的应用程序标识返回的缓冲区的指针。|LPWSTR|  
+|`pdwIdentityBufferLength`|长度的 DWORD 的指针`pwzApplicationIdentity`中 WCHARs 缓冲区。 这包括 NULL 终止字符的空间。|LPDWORD|  
+|`pwzProcessorArchitecture`|指向用于接收一个以 NULL 结尾的字符串，指定应用程序部署，则清单的处理器体系结构的缓冲区的指针。|LPWSTR|  
+|`pdwArchitectureBufferLength`|长度的 DWORD 的指针`pwzProcessorArchitecture`中 WCHARs 缓冲区。|LPDWORD|  
+|`pwzApplicationManifestCodebase`|指向用于接收一个以 NULL 结尾的字符串，指定应用程序清单，清单中的基本代码的缓冲区的指针。|LPWSTR|  
+|`pdwCodebaseBufferLength`|长度的 DWORD 的指针`pwzApplicationManifestCodebase`中 WCHARs 缓冲区。|LPDWORD|  
+|`pwzDeploymentProvider`|指向用于接收的以 NULL 结尾的字符串的缓冲区的指针，可以指定从清单中，部署提供程序，如果存在。 否则，返回空字符串。|LPWSTR|  
+|`pdwProviderBufferLength`|长度的 DWORD 的指针`pwzProviderBufferLength`。|LPDWORD|  
   
 ### <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回表示失败的 HRESULT。 如果缓冲区太小，则返回 HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER)。  
+ 如果成功，则返回 S_OK;否则，返回表示失败的 HRESULT。 如果缓冲区太小，则返回 HRESULTFROMWIN32(ERROR_INSUFFICIENT_BUFFER)。  
   
 ### <a name="remarks"></a>备注  
- 指针不为 null。 `pcwzActivationUrl` 和`pcwzPathToDeploymentManifest`不得为空。  
+ 指针不能为 null。 `pcwzActivationUrl` 和`pcwzPathToDeploymentManifest`不能为空。  
   
- 它由调用方的负责清理激活 URL。 例如，添加转义字符在需要的地方，或删除的查询字符串。  
+ 它是调用方负责清理激活 URL。 例如，添加转义字符所需的位置或删除的查询字符串。  
   
- 它由调用方的负责将输入的长度限制。 例如，最大 URL 长度为 2 KB。  
+ 它负责调用方的输入的长度限制。 例如，最大 URL 长度为 2 KB。  
   
 ## <a name="launchapplication"></a>LaunchApplication  
- 启动或安装应用程序使用部署 URL。  
+ 启动或安装应用程序通过使用部署 URL。  
   
 ### <a name="parameters"></a>参数  
   
 |参数|描述|类型|  
 |---------------|-----------------|----------|  
-|`deploymentUrl`|指向包含部署清单的 URL 以 NULL 结尾的字符串的指针。|LPCWSTR|  
+|`deploymentUrl`|指向包含部署清单的 URL 的以 NULL 结尾的字符串的指针。|LPCWSTR|  
 |`data`|留待将来使用。 必须为 NULL。|LPVOID|  
 |`flags`|留待将来使用。 必须为 0。|DWORD|  
   
 ### <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回表示失败的 HRESULT。 如果发生托管的异常，则返回 0x80020009 (DISP_E_EXCEPTION)。  
+ 如果成功，则返回 S_OK;否则，返回表示失败的 HRESULT。 如果发生托管的异常，则返回 0x80020009 (DISP_E_EXCEPTION)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

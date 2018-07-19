@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建 SharePoint 项目扩展 |Microsoft 文档
+title: 如何： 创建 SharePoint 项目扩展 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/28/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a47e7c4fbd78241d52b30ed80ab59eb548ab97d5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 25644a11ddbef3f8d493b64f8ca288dbaa87a14c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118483"
 ---
-# <a name="how-to-create-a-sharepoint-project-extension"></a>如何：创建 SharePoint 项目扩展
+# <a name="how-to-create-a-sharepoint-project-extension"></a>如何： 创建 SharePoint 项目扩展
   当你想要将功能添加到已在 Visual Studio 中打开任何 SharePoint 项目时，请创建一个项目扩展。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。  
 
 ### <a name="to-create-a-project-extension"></a>若要创建项目扩展  
@@ -38,12 +39,12 @@ ms.lasthandoff: 04/16/2018
 
 3.  创建实现 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 接口的类。  
 
-4.  添加<xref:System.ComponentModel.Composition.ExportAttribute>到类。 此属性使 Visual Studio 发现和加载你<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>实现。 传递<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>给特性构造函数的类型。  
+4.  添加<xref:System.ComponentModel.Composition.ExportAttribute>到类。 此特性使 Visual Studio 能够发现和加载您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>实现。 传递<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>特性构造函数的类型。  
 
-5.  实现中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法，使用成员*projectService*参数定义你的扩展的行为。 此参数是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>提供对中定义的事件的访问的对象<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>接口。  
+5.  中的实现<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法，使用成员*projectService*参数来定义您的扩展插件的行为。 此参数是<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>提供对中定义的事件的访问的对象<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>接口。  
 
 ## <a name="example"></a>示例  
- 下面的代码示例演示如何创建简单项目扩展，处理由定义的 SharePoint 项目事件的大多数<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>接口。 若要测试的代码，创建中的 SharePoint 项目[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，然后向解决方案添加多个项目，更改项目属性值，或删除或排除的项目。 扩展通过写入到消息通知您事件**输出**窗口和**错误列表**窗口。  
+ 下面的代码示例演示如何创建简单项目扩展的处理大部分由定义的 SharePoint 项目事件<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents>接口。 若要测试此代码，创建 SharePoint 项目中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，然后向解决方案添加更多项目，更改项目属性值，或删除或排除一个项目。 该扩展，通知您有关事件写入到的消息**输出**窗口和**错误列表**窗口。  
 
   ```vb  
     Imports Microsoft.VisualStudio.SharePoint
@@ -187,22 +188,22 @@ ms.lasthandoff: 04/16/2018
   }  
   ```  
 
-此示例使用 SharePoint 项目服务要写入到消息**输出**窗口和**错误列表**窗口。 有关详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
+此示例使用 SharePoint 项目服务将写入到消息**输出**窗口和**错误列表**窗口。 有关详细信息，请参阅[使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。  
 
- 有关示例，演示如何处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>和<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
+ 有关示例，演示如何处理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested>并<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何： 将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).  
 
-## <a name="compiling-the-code"></a>编译代码  
+## <a name="compile-the-code"></a>编译代码  
  此示例需要引用以下程序集：  
 
 -   Microsoft.VisualStudio.SharePoint  
 
 -   System.ComponentModel.Composition  
 
-## <a name="deploying-the-extension"></a>部署扩展  
- 若要部署的扩展，创建[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要随此扩展分发的任何其他文件。 有关详细信息，请参阅[部署 Visual Studio 中的 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+## <a name="deploy-the-extension"></a>将扩展部署  
+ 若要将扩展部署，创建[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]扩展 (VSIX) 包的程序集和你想要将与该扩展一起分发的任何其他文件。 有关详细信息，请参阅[在 Visual Studio 工具部署 SharePoint 扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
 
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [如何： 将快捷菜单项添加到 SharePoint 项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
  [如何： 向 SharePoint 项目中添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [演练：创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  
+ [演练： 创建 SharePoint 项目扩展](../sharepoint/walkthrough-creating-a-sharepoint-project-extension.md)  

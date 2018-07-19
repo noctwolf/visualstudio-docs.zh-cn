@@ -5,18 +5,18 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f80debf3098fd8296ddfa205db3ed296707e23c0
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c527a27bcca51748b146f60541dd02019e2853ac
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572412"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279845"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![Unity 和 Visual Studio for Mac 的风格化图像](media/vsmac-tools-unity-image1.png)
 
-Visual Studio for Mac Tools for Unity 是一个免费的 Visual Studio 扩展，可将 Visual Studio for Mac 打造成一个通过 Unity 平台开发跨平台游戏和应用的强大工具。 
+Visual Studio for Mac Tools for Unity 是一个免费的 Visual Studio 扩展，可将 Visual Studio for Mac 打造成一个通过 Unity 平台开发跨平台游戏和应用的强大工具。
 
 Visual Studio for Mac 中包括现成可用的 Unity 集成，自 Unity 2018.1 起，Visual Studio for Mac 是 Unity 项目的默认 C# IDE。
 
@@ -26,7 +26,7 @@ Visual Studio for Mac 中包括现成可用的 Unity 集成，自 Unity 2018.1 �
 
 ### <a name="compatible-with-visual-studio-for-mac-community-edition"></a>与 Visual Studio for Mac Community Edition 兼容
 
-免费提供 [Visual Studio for Mac Community Edition](https://www.visualstudio.com/)，并且与 Unity 2018.1 之后的 Unity 安装捆绑在一起。 请参阅 Visual Studio for Mac Tools for Unity [安装文档](setup-vsmac-tools-unity.md)，了解详细信息。
+免费提供 [Visual Studio for Mac Community Edition](https://visualstudio.microsoft.com/)，并且与 Unity 2018.1 之后的 Unity 安装捆绑在一起。 请参阅 Visual Studio for Mac Tools for Unity [安装文档](setup-vsmac-tools-unity.md)，了解详细信息。
 
 ### <a name="intellisense-for-unity-messages"></a>针对 Unity 消息的 IntelliSense
 

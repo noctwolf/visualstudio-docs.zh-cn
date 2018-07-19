@@ -1,5 +1,5 @@
 ---
-title: 使用 DebuggerDisplay 特性 |Microsoft 文档
+title: 使用 DebuggerDisplay 特性 |Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2017
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 054e66914172447e96e2977f81985c52430af115
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8da672193dcbe12581122a48559c9027f01e77c9
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573240"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057576"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [DebuggerDisplayAttribute 类](/dotnet/api/system.diagnostics.debuggerdisplayattribute)控制对象、 属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
@@ -51,7 +51,7 @@ ms.locfileid: "34573240"
   
  若要生成 autoexp.cs，请打开 VS2015 开发人员命令提示，并运行以下命令  
   
-```  
+```cmd
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
@@ -88,7 +88,7 @@ public sealed class MyClass
     }  
 }  
 ```  
-"，nq"后缀指示表达式计算器才能显示的最终值时删除引号 (nq = 无加引号)。 
+"，nq"后缀指示表达式计算器才能删除引号时显示的最终值 (nq = 无加引号)。 
   
 ## <a name="example"></a>示例  
  下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：  

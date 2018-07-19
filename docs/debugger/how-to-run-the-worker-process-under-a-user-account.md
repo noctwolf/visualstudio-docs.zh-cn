@@ -1,5 +1,5 @@
 ---
-title: 如何： 运行辅助进程在用户帐户下的 |Microsoft 文档
+title: 如何： 运行辅助进程的用户帐户下 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,18 +21,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad6407e4768acbeaf32cf4bebaf7064f04f21fba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475749"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057182"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。  
 
  > [!IMPORTANT]
- > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为每个应用程序池的标识。
+ > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
   
 ## <a name="procedure"></a>过程  
   
@@ -40,7 +40,7 @@ ms.locfileid: "31475749"
   
 1.  打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
   
-2.  查找&lt;processModel&gt;部分并将用户和密码特性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
+2.  查找&lt;processModel&gt;部分，并将用户和密码属性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
   
 3.  保存 machine.config 文件。  
   
@@ -58,12 +58,12 @@ ms.locfileid: "31475749"
   
 5.  打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：  
   
-    ```  
+    ```cmd
     iisreset  
     ```  
     — 或 —  
   
-    ```  
+    ```cmd
     net stop iisadmin /y  
     net start w3svc  
     ```  

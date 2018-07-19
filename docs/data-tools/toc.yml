@@ -1,7 +1,5 @@
 - name: 概述
-  items:
-    - name: 在 Visual Studio 中访问数据
-      href: accessing-data-in-visual-studio.md
+  href: accessing-data-in-visual-studio.md
 - name: 教程
   items:
     - name: 使用 ADO.NET 创建简单的数据应用

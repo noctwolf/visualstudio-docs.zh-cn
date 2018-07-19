@@ -17,17 +17,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7784bcfc8db3c8f2709bde045622c747a326ddcc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f60b2f1cdb609c5686f834ef147a2f121dc27b11
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750163"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281331"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
 通过使用 Visual Studio 中的可视化和建模工具，确保你的软件系统满足用户的需求。
-使用代码图、 依赖项关系图和类图等工具：
+使用代码图、 依赖项关系图和类图添加到工具：
 
 若要查看支持每个工具的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
@@ -89,7 +89,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 |类设计器（基于代码）||||是||
 
 若要绘制依赖项关系图，必须创建一个建模项目作为现有解决方案或一个新的一部分。 这些关系图必须在建模项目内创建。
-依赖项关系图上的项位于建模项目中，但它们并不存储在常见模型。 根据代码创建的代码图和 .NET 类图存在于建模项目外部。
+依赖项关系图上的项位于建模项目中，但它们不会存储在通用模型。 根据代码创建的代码图和 .NET 类图存在于建模项目外部。
 
 请参阅：
 
@@ -103,7 +103,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-这两个团队还使用依赖项验证来确保正在开发的代码保持与设计保持一致。 请参阅：
+这两个团队还使用依赖项验证请确保正在开发的代码保持与设计保持一致。 请参阅：
 
 - [使代码与设计保持一致](#ValidatingCode)
 
@@ -112,9 +112,9 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 - [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 某些版本的 Visual Studio 支持依赖项验证以及代码图的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+> 某些版本的 Visual Studio 支持依赖关系验证和代码映射的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="understand-and-communicate-information-about-the-system"></a>了解和传达系统的信息
+## <a name="understand-and-communicate-information-about-the-system"></a>了解和传达系统相关信息
 
 由于没有规定 Visual Studio 建模图的使用顺序，因此你可以根据自己的需求和方法来使用它们。 通常，团队会在整个项目中反复而频繁地重新访问其模型。 每个关系图都有自己的长处，可帮助你理解、描述和沟通正在开发的系统的各方面问题。
 
@@ -138,7 +138,7 @@ Lucerne 使用关系图执行以下任务：
 
 关系图与 Team Foundation Server 集成在一起，方便团队更轻松地计划、管理和跟踪其工作。 例如，他们使用模型来确定测试用例和开发任务以及估算其工作量。 Lucerne 将 Team Foundation Server 工作项链接到模型元素，以便能监视进度并确保系统满足用户需求。 例如，他们将用例链接到测试用例工作项，这样在所有测试都通过时，他们便能知道用例满足要求。
 
-团队在签入其更改之前，会运行包含依赖项验证和自动的测试的生成来验证对测试和设计代码。 这有助于确保更新的代码不会与设计发生冲突且不会中断之前运行的功能。
+团队在签入其更改之前，它们由运行的包含依赖项验证和自动的测试的生成验证代码对测试和设计。 这有助于确保更新的代码不会与设计发生冲突且不会中断之前运行的功能。
 
 ### <a name="identify-changes-to-the-existing-system"></a>标识对现有系统的更改
 
@@ -146,7 +146,7 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
 |**代码图或关系图**|**显示**|
 |------------------------|---------------|
-|*代码图*<br /><br /> 请参阅：<br /><br /> - [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)<br />- [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|代码中的依赖关系以及其他关系。<br /><br /> 例如，Dinner Now 首先会查看程序集代码图，大致了解这些程序集及其依赖关系。 他们可以深入探讨代码图，浏览这些程序集中的命名空间和类。<br /><br /> Dinner Now 还可以创建代码图来浏览特定区域和代码中其他类型的关系。 他们借助解决方案资源管理器来帮助查找和选择感兴趣的区域和关系。|
+|*代码图*<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)<br />- [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|代码中的依赖关系以及其他关系。<br /><br /> 例如，Dinner Now 首先会查看程序集代码图，大致了解这些程序集及其依赖关系。 他们可以深入探讨代码图，浏览这些程序集中的命名空间和类。<br /><br /> Dinner Now 还可以创建代码图来浏览特定区域和代码中其他类型的关系。 他们借助解决方案资源管理器来帮助查找和选择感兴趣的区域和关系。|
 |*基于代码的类图*<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|代码中的现有类|
 
  例如，开发人员创建一个代码图。 她调整了该代码图的范围，以侧重于将受到新方案影响的区域。 代码图上选中并突出显示了这些区域：
@@ -170,19 +170,19 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 |*基于代码的类图*<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|代码中的现有类。|
 
 ###  <a name="ValidatingCode"></a> 使代码与设计保持一致
- Dinner Now 必须确保更新的代码与设计保持一致。 他们创建的功能层的描述系统中，指定的依赖关系，并将解决方案项目关联到这些层之间的依赖项关系图。
+ Dinner Now 必须确保更新的代码与设计保持一致。 他们创建依赖项关系图的功能层的描述系统中，指定到了这些层，并将解决方案项目之间存在的依赖关系。
 
 |**关系图**|**描述**|
 |-----------------|-------------------|
-|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 依赖项关系图整理并映射中的项目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案抽象组调用*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
+|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射中的项目到依赖项关系图[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案抽象组调用*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
 
- 例如，以下依赖项关系图描述层和与每个图层关联的项目数之间的依赖关系：
+ 例如，以下依赖项关系图描述了层与每个层相关联的项目数之间的依赖关系：
 
  ![集成的支付系统的依赖项关系图](../modeling/media/layer_integrated_dnlucerne.png)
 
  **依赖项关系图**
 
-若要确保代码开发过程执行不发生与设计发生冲突，团队生成的使用了依赖项验证，对 Team Foundation Build 上运行。 他们还创建了自定义 MSBuild 任务以要求在其签入操作中的依赖项验证。 他们使用生成报告来收集验证错误。
+若要确保与设计发生冲突不会发生在代码开发过程中上的依赖项验证生成的团队使用 Team Foundation Build 上运行。 他们还可以创建自定义 MSBuild 任务需要在其签入操作中的依赖项验证。 他们使用生成报告来收集验证错误。
 
 请参阅：
 
@@ -224,7 +224,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 ### <a name="TestValidateCheckInCode"></a> 测试、 验证和签入代码
 
-当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 Team Foundation Server 接受的签入前，团队会运行单元测试和依赖项验证，以验证对它们的测试用例和设计代码。 他们使用 Team Foundation Server 来运行生成、 自动的单元测试和定期依赖项验证。 这有助于确保代码满足以下条件：
+当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 Team Foundation Server 接受其签入之前，团队会运行单元测试和依赖项验证，以验证针对其测试用例和设计代码。 他们使用 Team Foundation Server 来运行生成、 自动的单元测试和定期依赖项验证。 这有助于确保代码满足以下条件：
 
 - 有效。
 
@@ -234,11 +234,11 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 Dinner Now 提供了大批自动测试，Lucerne 可以重用这些测试，因为它们几乎都仍适用。 Lucerne 也可以基于这些测试进行生成并添加新测试以涵盖新的功能。 两个均使用 Visual Studio 运行手动测试。
 
-若要确保代码与设计保持一致，团队需在 Team Foundation Build 以包含依赖项验证中配置生成。 如果发生任何冲突，系统会生成包含详细信息的报告。
+若要确保代码与设计保持一致，团队需在 Team Foundation Build 来包括依赖项验证配置生成。 如果发生任何冲突，系统会生成包含详细信息的报告。
 
 请参阅：
 
-- [测试应用程序](https://www.visualstudio.com/docs/test/overview)
+- [测试应用程序](/vsts/test/overview?view=vsts)
 
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
 
@@ -272,7 +272,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - 了解建议的更改发生的位置以及这些更改可能对现有代码产生的影响的程度。
 
-- 查找的复杂性、 自然的依赖关系或模式的区域或者其他可能从改进中受益的区域。
+- 查找区域的复杂性、 自然依赖关系或模式或可能会受益于改善其他区域。
 
 例如，Dinner Now 必须估计更新 PaymentProcessing 组件所需的成本。 这部分取决于此更改将对系统的其他部件造成的影响的程度。 为了帮助他们了解这一点，Dinner Now 的一位开发人员根据代码生成了代码图，并调整了范围以侧重于可能受更改影响的区域。
 
@@ -312,7 +312,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
      要快速了解编译的代码，请创建一个空白代码图，然后将程序集文件或二进制文件拖动到该代码图图面上。
 
-- 要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅[映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)。
+- 要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。
 
 - 为了帮助你浏览代码图，请重新排列布局，使其适合你要执行的各类任务。
 
@@ -331,7 +331,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 |**关系图**|**描述**|
 |-----------------|-------------------|
-|依赖项关系图|系统的逻辑体系结构。 使用依赖项验证来确保代码保持与设计保持一致。<br /><br /> 为了有助于标识现有 dependencys 或预期的 dependencys，请创建代码图和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)|
+|依赖项关系图|系统的逻辑体系结构。 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 若要帮助您识别现有 dependencys 或预期的 dependencys、 创建代码映射和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)|
 |类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|
 
 ### <a name="DefineClasses"></a> 定义类型的术语表：类图
@@ -377,7 +377,8 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - *“依赖关系”* ，指示更改一个分类器的定义可能会更改另一个分类器的定义。
 
-- *“泛化”* ，指示特定分类器从通用分类器继承部分定义。 *“实现”* ，指示类将实现由接口提供的操作和属性。
+- *“泛化”* ，指示特定分类器从通用分类器继承部分定义。 
+  *“实现”* ，指示类将实现由接口提供的操作和属性。
 
      要创建这些关系，请使用“继承”  工具。 也可以将实现表示为 *“棒糖形”*。
 
@@ -392,7 +393,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - 一个常用术语词汇表，在讨论用户需求和参与系统的实体时将使用它。 请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。
 
-- 由系统部件使用的类型（如组件），无论其实现如何。 请参阅[建模应用程序的体系结构](../modeling/model-your-app-s-architecture.md)。
+- 由系统部件使用的类型（如组件），无论其实现如何。 请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。
 
 - 类型之间的关系，如依赖关系。 例如，你可以指明可将一个类型与另一个类型的多个实例关联。
 
@@ -400,17 +401,17 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 |**关系图**|**说明**|
 |-----------------|---------------------|
-|依赖项关系图|定义与类相关的系统的逻辑体系结构。<br /><br /> 使用依赖项验证来确保代码保持与设计保持一致。<br /><br /> 请参阅：<br /><br /> - [在代码中创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|
-|代码图|可视化现有代码中的组织和关系。<br /><br /> 要标识类、类的关系和类的方法，请创建一个显示这些元素的代码图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)|
+|依赖项关系图|定义与类相关的系统的逻辑体系结构。<br /><br /> 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|
+|代码图|可视化现有代码中的组织和关系。<br /><br /> 要标识类、类的关系和类的方法，请创建一个显示这些元素的代码图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)|
 
 ### <a name="DescribeLayers"></a> 描述逻辑体系结构： 依赖项关系图
- 依赖项关系图描述系统的逻辑体系结构的解决方案中的项目整理到抽象组或*层*。 项目可以为多种元素，如命名空间、项目、类、方法等。 层可表示和描述项目在系统中扮演的角色或执行的任务。 你也可以将层验证包含在生成和签入操作中，来确保代码与其设计保持一致。
+ 依赖项关系图描述系统的逻辑体系结构通过在解决方案中的项目整理到抽象组或*层*。 项目可以为多种元素，如命名空间、项目、类、方法等。 层可表示和描述项目在系统中扮演的角色或执行的任务。 你也可以将层验证包含在生成和签入操作中，来确保代码与其设计保持一致。
 
- 若要使代码与设计保持一致，Dinner Now 和 Lucerne 使用以下依赖项关系图来验证相关代码，其在演变过程：
+ 若要使代码与设计保持一致，Dinner Now 和 Lucerne 使用以下依赖项关系图来验证其代码会随着：
 
  ![集成的支付系统的依赖项关系图](../modeling/media/layer_integrated_dnlucerne.png)
 
- **Dinner now 与 Lucerne 集成的依赖项关系图**
+ **有关 Dinner Now 与 Lucerne 集成的依赖项关系图**
 
  此关系图上的层会链接到相应的 Dinner Now 和 Lucerne 解决方案项目。 例如，业务层会链接到 DinnerNow.Business 命名空间及其成员，该层现在包含 PaymentApprover 类。 资源访问层会链接到 DinnerNow.Data 命名空间。 箭头（即 *“依赖关系”*）指定只有业务层可以使用资源访问层中的功能。 在团队更新其代码时，会定期执行层验证以便在发生冲突时进行捕获，并帮助团队快速解决冲突。
 
@@ -446,11 +447,11 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
     - 如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。
 
-     若要查看链接到层的项目，右键单击依赖项，，然后单击**查看链接**以打开**层资源管理器**。
+     若要查看链接到某个层的项目，右键单击依赖项，然后依次**查看链接**以打开**层资源管理器**。
 
 - *“依赖关系”* ，指示某个层可以使用另一个层中的功能，但反过来行不通。 *“双向依赖关系”* ，指示某个层可以使用另一个层中的功能，反之亦然。
 
-     要在依赖项关系图上显示的现有依赖关系，请右键单击关系图面，然后单击**生成依赖项**。 要描述预期的依赖关系，请绘制新的依赖关系。
+     若要在依赖项关系图上显示的现有依赖关系，右键单击关系图图面，然后依次**生成依赖项**。 要描述预期的依赖关系，请绘制新的依赖关系。
 
 请参阅：
 
@@ -464,7 +465,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 #### <a name="summary-strengths-of-dependency-diagrams"></a>摘要： 依赖项关系图的优点
 
-依赖项图可帮助你：
+依赖项关系图可帮助你：
 
 - 根据系统项目的功能描述该系统的逻辑体系结构。
 
@@ -474,7 +475,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 |**关系图**|**说明**|
 |-----------------|---------------------|
-|代码图|可视化现有代码中的组织和关系。<br /><br /> 要创建层，请生成一个代码图，然后将该代码图上的项作为可能的层进行分组。 将组从映射拖到依赖项关系图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案中的依赖关系](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)|
+|代码图|可视化现有代码中的组织和关系。<br /><br /> 要创建层，请生成一个代码图，然后将该代码图上的项作为可能的层进行分组。 将组从该映射拖到依赖项关系图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>外部资源
 

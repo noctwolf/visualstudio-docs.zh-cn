@@ -1,9 +1,8 @@
 ---
-title: 可替换参数 |Microsoft 文档
+title: 可替换参数 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -18,63 +17,63 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.workload:
-- office
-ms.openlocfilehash: 86d6b08d209703f73901d7a839c731e1a9a63fdd
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.workload: office
+ms.openlocfilehash: f6e311f7c0268cecb94498fffda702438ea921b0
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118796"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
-  可替换参数，或*令牌*，可以在项目文件内使用，为其实际值在设计时未知的 SharePoint 解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
+  可替换参数，或*令牌*，可以使用项目文件中为其实际值不在设计时已知的 SharePoint 解决方案项提供值。 它们类似于标准[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]模板标记。 有关详细信息，请参阅[模板参数](/visualstudio/ide/template-parameters)。  
   
-## <a name="token-format"></a>令牌格式  
- 令牌开头并以美元符号 （$） 字符。 有关部署、 使用任何令牌到 SharePoint 解决方案包 （.wsp 文件） 在打包项目时使用实际值替换。 例如，令牌 **$SharePoint.Package.Name$** 可能解析为字符串"测试 SharePoint 包"。  
+## <a name="token-format"></a>令牌格式
+ 令牌开始，以美元符号 （$） 字符结尾。 有关部署、 使用的任何令牌替换为实际值时为项目打包到 SharePoint 解决方案包 (*.wsp*文件)。 例如，令牌 **$SharePoint.Package.Name$** 可能解析为字符串"测试 SharePoint 包"。  
   
-## <a name="token-rules"></a>令牌的规则  
- 以下规则适用于令牌：  
+## <a name="token-rules"></a>令牌的规则
+ 以下规则适用于标记：  
   
--   令牌可以在行中的任意位置指定。  
+-   可以在行中任意位置指定令牌。  
   
--   令牌不能跨越多个行。  
+-   令牌不能跨多个行。  
   
--   相同的标记可能多次指定同一行上和同一文件中。  
+-   在同一行上和在同一文件中，可能会多次指定相同的令牌。  
   
--   可在同一行中指定不同的令牌。  
+-   可能在同一行上指定不同的令牌。  
   
- 未提供警告或错误情况下，不符合这些规则的令牌将被忽略。  
+ 令牌不遵循这些规则将被忽略，不会导致出现警告或错误。  
   
- 清单转换之后立即执行替换的字符串值的标记。 此替换允许用户编辑与令牌的清单模板。  
+ 清单转换之后立即执行替换的字符串值的标记。 这种替换允许用户编辑与令牌的清单模板。  
   
-### <a name="token-name-resolution"></a>标记名称解析  
- 在大多数情况下，标记会解析为无论其中包含特定值。 但是，如果该令牌与包或功能，令牌的值取决于包含它。 例如，如果功能是中打包，则令牌`$SharePoint.Package.Name$`解析为"包 A"的值 如果同一功能位于包 B 中，然后`$SharePoint.Package.Name$`解析为"包 b"。  
+### <a name="token-name-resolution"></a>令牌名称解析
+ 在大多数情况下，标记会解析为无论其中包含特定值。 但是，如果令牌与包或功能，令牌的值依赖于包含它。 例如，如果一个功能是中包，则令牌`$SharePoint.Package.Name$`解析为值"包 a。" 如果相同的功能是中包 B，然后`$SharePoint.Package.Name$`解析为"包 b。"  
   
-## <a name="tokens-list"></a>标记列表  
+## <a name="tokens-list"></a>标记列表
  下表列出了可用的标记。  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
-|$SharePoint.Project.FileName$|包含项目文件，如"NewProj.csproj"的名称。|  
-|$SharePoint.Project.FileNameWithoutExtension$|不带文件扩展名包含项目文件的名称。 例如，"NewProj"。|  
+|$SharePoint.Project.FileName$|名称包含的项目文件，如*NewProj.csproj*。|  
+|$SharePoint.Project.FileNameWithoutExtension$|包含不带文件扩展名的项目文件的名称。 例如，"NewProj"。|  
 |$SharePoint.Project.AssemblyFullName$|包含项目的显示名称 （强名称） 的输出程序集。|  
 |$SharePoint.Project.AssemblyFileName$|包含项目的名称的输出程序集。|  
 |$SharePoint.Project.AssemblyFileNameWithoutExtension$|包含项目的名称的输出程序集，不带文件扩展名。|  
-|$SharePoint.Project.AssemblyPublicKeyToken$|包含项目的公钥令牌的输出程序集，转换为字符串。 ("x2"中的 16 个字符的十六进制格式。)|  
+|$SharePoint.Project.AssemblyPublicKeyToken$|包含项目的公钥标记的输出程序集，转换为字符串。 ("x2"中的 16 字符十六进制格式。)|  
 |$SharePoint.Package.Name$|包含包的名称。|  
-|$SharePoint.Package.FileName$|包含包的定义文件的名称。|  
-|$SharePoint.Package.FileNameWithoutExtension$|包含包的定义文件的名称 （不含扩展名）。|  
-|$SharePoint.Package.Id$|包含包的 SharePoint ID。 如果多个包中使用的功能时，将更改此值。|  
-|$SharePoint.Feature.FileName$|包含的功能，例如 Feature1.feature 的定义文件的名称。|  
+|$SharePoint.Package.FileName$|包含包定义文件的名称。|  
+|$SharePoint.Package.FileNameWithoutExtension$|包含包定义文件的名称 （不带扩展名）。|  
+|$SharePoint.Package.Id$|包含包的 SharePoint ID。 如果多个包中使用一项功能，则将更改此值。|  
+|$SharePoint.Feature.FileName$|包含它的定义文件的名称功能，如*Feature1.feature*。|  
 |$SharePoint.Feature.FileNameWithoutExtension$|功能定义文件中，不带文件扩展名的名称。|  
-|$SharePoint.Feature.DeploymentPath$|包含包中的功能的文件夹的名称。 此令牌相当于功能设计器中的"部署路径"属性。 一个示例值是"Project1_Feature1"。|  
-|$SharePoint.Feature.Id$|包含功能 SharePoint ID。 此令牌，因为具有所有功能级别令牌，可以用仅由一项功能，通过包中包含文件不直接添加到外部功能的包。|  
-|$SharePoint.ProjectItem.Name$|获取从项目项 （不文件名称） 的名称**ISharePointProjectItem.Name**。|  
+|$SharePoint.Feature.DeploymentPath$|包含在包中的功能文件夹的名称。 此令牌将等于功能设计器中的"部署路径"属性。 一个示例值是"Project1_Feature1"。|  
+|$SharePoint.Feature.Id$|包含功能的 SharePoint ID。 此令牌，因为与所有功能级别令牌，可以使用仅由一项功能，通过包中包含的文件不直接添加到一项功能之外的包。|  
+|$SharePoint.ProjectItem.Name$|作为从中获取项目项 （不文件名称） 的名称**ISharePointProjectItem.Name**。|  
 |$SharePoint.Type。\<GUID >。AssemblyQualifiedName $|与标记的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 匹配的类型的程序集限定名。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式为小写，并与 Guid.ToString("D") 格式（即 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx）对应。|  
-|$SharePoint.Type。\<GUID >。FullName $|在令牌中的 GUID 匹配的类型的全名。 GUID 的格式为小写，并对应于 Guid.ToString("D") 格式 (即，xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。|  
+|$SharePoint.Type。\<GUID >。FullName $|在令牌中的 GUID 匹配的类型的全名。 GUID 的格式为小写，并对应于 Guid.ToString("D") 格式 (即，xxxxxxxx xxxx-xxxx-xxxx-在左右加上)。|  
   
-## <a name="adding-extensions-to-the-token-replacement-file-extensions-list"></a>添加扩展标记替换文件扩展名列表中  
- 虽然理论上可以由属于 SharePoint 项目项包含在程序包中，默认情况下，任何文件使用令牌[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]搜索仅在包文件、 清单文件和具有以下扩展名的文件中的令牌：  
+## <a name="add-extensions-to-the-token-replacement-file-extensions-list"></a>将扩展添加到标记替换文件扩展名列表
+ 虽然从理论上由属于 SharePoint 项目项包含在包中，默认情况下，任何文件使用令牌[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]令牌仅在包文件中，清单文件，并具有以下扩展名的文件中搜索：  
   
 -   [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]  
   
@@ -88,12 +87,12 @@ ms.lasthandoff: 05/22/2018
   
  这些扩展定义的`<TokenReplacementFileExtensions>`Microsoft.VisualStudio.SharePoint.targets 文件中的元素位于...\\< 程序文件\>\MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 文件夹。  
   
- 但是，可以将其他文件扩展名添加到列表。 添加`<TokenReplacementFileExtensions>`到 SharePoint 项目文件中的任意 PropertyGroup 之前定义的元素\<导入 > 的在 SharePoint 目标文件。  
+ 但是，可以向列表添加其他文件扩展名。 添加`<TokenReplacementFileExtensions>`之前定义到任何 SharePoint 项目文件中的 PropertyGroup 元素\<导入 > SharePoint 目标文件。  
   
 > [!NOTE]  
->  编译项目后，将发生标记替换，因为你不应添加为编译的文件类型，如.cs、.vb 或.resx 的文件扩展名。 仅在不编译的文件中替换标记。  
+>  编译项目后发生令牌替换，因为您不应将进行编译，如的文件类型的文件扩展名添加 *.cs*， *.vb*或 *.resx*。 仅在未编译的文件中替换标记。  
   
- 例如，若要将文件名称扩展".myextension"和".yourextension"添加到的标记替换文件扩展名的列表中，要添加到以下`.csproj`文件：  
+ 例如，若要添加的文件扩展名 (*.myextension*并 *.yourextension*) 到的标记替换文件扩展名的列表中，你会将以下代码添加到项目 (*.csproj*) 文件：  
   
 ```xml  
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -108,9 +107,8 @@ ms.lasthandoff: 05/22/2018
 </PropertyGroup>  
 ```  
   
- 你可以直接向.targets 文件添加扩展。 但是，这样做会更改在本地系统上，而不仅仅是打包的所有 SharePoint 项目扩展列表自己。 在系统上的唯一开发人员或如果您的大多数项目需要的话，这可能很方便。 但是，由于它是特定于系统的此方法不是非常易于移植，并且因此，建议你添加的任何扩展到项目文件相反。  
+ 您可以直接向目标添加扩展 (*.targets*) 文件。 但是，添加该扩展会改变打包在本地系统上的所有 SharePoint 项目扩展列表，而不仅仅是自己。 当您在系统上的唯一开发人员，或者您的大多数项目需要它，此扩展可能会方便。 但是，因为它是特定于系统的这种方法不是可移植的因此，建议您添加的任何扩展到项目文件相反。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

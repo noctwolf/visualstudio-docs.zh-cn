@@ -1,5 +1,4 @@
 # [Visual Studio for Mac 介绍](index.md)
-## [Visual Studio for Mac 相比 Xamarin Studio 的优势](benefits-vsmac-over-xs.md)
 # [IDE 教程](ide-tour.md)
 
 # [安装](installation.md)
