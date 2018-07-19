@@ -1,5 +1,5 @@
 ---
-title: 在并行线程中的变量上设置监视 |Microsoft 文档
+title: 对并行线程中的变量设置监视 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -20,25 +20,25 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475942"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808069"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的并行线程中的变量上设置监视
-在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列显示在**并行监视**窗口：  
+在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列会显示在**并行监视**窗口：  
   
 -   标记列，可在其中标记要特别注意的线程。  
   
--   当前线程列，其中一个黄色箭头指示当前线程 （带有卷尾的绿色箭头表示非当前线程具有当前调试器上下文）。  
+-   当前线程列，其中的黄色箭头指示当前线程 （带有卷尾的绿色箭头指示非当前线程具有当前的调试器上下文）。  
   
 -   可配置的列，可显示计算机、进程、平铺、任务和线程。  
   
     > [!TIP]
-    >  在显示任务信息**并行监视**窗口中，你必须首先打开**任务**窗口。  
+    >  显示任务中的信息**并行监视**窗口中，必须首先打开**任务**窗口。  
   
--   空白*添加监视*列，可以在其中输入要监视的表达式。  
+-   空白*添加监视*列，您可以在其中输入要监视的表达式。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
@@ -48,7 +48,7 @@ ms.locfileid: "31475942"
   
 2.  在菜单栏上，依次选择“调试”、“开始调试”。 等待应用程序到达断点。  
   
-3.  在菜单栏上，选择**调试**， **Windows**，**并行监视**，然后选择监视窗口。 您可打开最多 4 个窗口。  
+3.  在菜单栏上依次选择**调试**， **Windows**，**并行监视**，然后选择监视窗口。 您可打开最多 4 个窗口。  
   
 ### <a name="to-add-a-watch-expression"></a>添加监视表达式  
   
@@ -60,7 +60,7 @@ ms.locfileid: "31475942"
   
 ### <a name="to-display-only-flagged-threads"></a>仅显示标记的线程  
   
--   选择**仅显示已标记项**的左上角的按钮**并行监视**窗口。  
+-   选择**仅显示已标记项**左上角的按钮**并行监视**窗口。  
   
 ### <a name="to-switch-to-another-thread"></a>若要切换到另一个线程  
   
@@ -72,15 +72,15 @@ ms.locfileid: "31475942"
   
 ### <a name="to-group-threads"></a>分组线程  
   
--   打开并行监视窗口的快捷菜单，选择**Group By**，然后选择相应的子菜单项。  
+-   打开并行监视窗口的快捷菜单中，选择**Group By**，然后选择相应的子菜单项。  
   
 ### <a name="to-freeze-or-thaw-threads"></a>冻结或解冻线程  
   
--   打开行的快捷菜单，然后选择**冻结**或**解冻**。  
+-   打开的行的快捷菜单，然后选择**冻结**或**解冻**。  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>导出“并行监视”窗口中的数据  
   
--   选择**在 Excel 中打开**按钮，然后选择**在 Excel 中打开**或**导出到 CSV**。  
+-   选择**在 Excel 中打开**按钮，然后选择**在 Excel 中打开**或**导出至 CSV**。  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>按布尔表达式筛选  
   

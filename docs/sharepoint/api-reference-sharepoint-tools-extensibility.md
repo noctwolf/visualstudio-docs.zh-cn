@@ -1,5 +1,5 @@
 ---
-title: API 参考 （SharePoint 工具扩展） |Microsoft 文档
+title: API 参考 （SharePoint 工具扩展） |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,31 +15,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1367a8850110fc720a9adfdd733a7c8cdf0aeb14
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 39b324d2eda0544482c1f2f5ca9f54941ea8d8d4
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692065"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325789"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>API 参考 （SharePoint 工具扩展）
   本部分包含用于扩展 Visual Studio 中的 SharePoint 工具的 API 参考文档。  
   
 ## <a name="in-this-section"></a>本节内容
  <xref:Microsoft.VisualStudio.SharePoint>  
- 包含用于扩展 SharePoint 项目系统类型。 例如，你可以扩展内置 SharePoint 项目和项目项，也可以创建自己的项目项。  
+ 包含用于扩展 SharePoint 项目系统的类型。 例如，你可以扩展内置 SharePoint 项目和项目项，也可以创建自己的项目项。  
   
  <xref:Microsoft.VisualStudio.SharePoint.Commands>  
  包含可用于创建自定义的类型*SharePoint 命令*。 SharePoint 命令是一个用于从 SharePoint 工具扩展中调入 SharePoint 服务器对象模型的方法。  
   
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>  
- 包含用于将扩展 SharePoint 项目的部署过程的类型。  
+ 包含用于扩展 SharePoint 项目的部署过程的类型。  
   
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>  
- 包含类型，用于将扩展中的 SharePoint 节点**服务器资源管理器**或定义自己的节点类型。  
+ 包含用于扩展中的 SharePoint 节点的类型**服务器资源管理器**或定义自己的节点的类型。  
   
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>  
- 包含可用于获取有关内置的信息的类型**服务器资源管理器**表示 SharePoint 站点，如表示列表、 字段或内容类型的节点上的各个组件的节点。  
+ 包含可用于获取有关内置的信息的类型**服务器资源管理器**表示 SharePoint 站点，例如表示列表、 字段或内容类型的节点上的各个组件的节点。  
   
  <xref:Microsoft.VisualStudio.SharePoint.Features>  
  包含用于访问 SharePoint 项目中的功能定义的类型。  
@@ -61,7 +61,7 @@ ms.locfileid: "34692065"
   
 ## <a name="see-also"></a>请参阅
  [引用&#40;SharePoint 工具扩展&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)   
- [概述的编程模型的 SharePoint 工具扩展](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
+ [工具扩展的 SharePoint 的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)   
  [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)   
  [扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
  [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   

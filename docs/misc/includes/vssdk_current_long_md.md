@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 91ab359489e7eb50fe78005a369b17f2f91be58c
+ms.openlocfilehash: 9019b6dc0c6b731e9e0af84c2b4eba91cebb88a9
 ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/11/2018
-ms.locfileid: "38944441"
+ms.locfileid: "38943671"
 ---
-WPF 设计器
+ Visual Studio SDK 

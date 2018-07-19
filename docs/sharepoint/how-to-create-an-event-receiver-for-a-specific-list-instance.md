@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建事件接收器的特定列表实例 |Microsoft 文档
+title: 如何： 创建事件接收器的特定列表实例 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,42 +16,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4e5c68db8d1c9809e487fc8f64159d8b385a96a2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 950eeec82d7b7c49f0bbd76b13114f80f023a6dd
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118500"
 ---
-# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：为特定列表实例创建事件接收器
-  对列表定义的任何实例中发生的事件的响应列表实例事件接收器。 虽然事件接收器模板不会启用的特定列表实例的目标，你可以修改事件接收器划归到以响应特定列表实例中的事件的列表定义。  
+# <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何： 创建事件接收器的特定列表实例
+  列表实例事件接收方响应的列表定义的任何实例中发生的事件。 虽然事件接收方模板不会启用特定列表实例的目标，你可修改的范围限定为列表定义以响应特定列表实例中的事件的事件接收器。  
   
- 若要面向特定列表实例，然后在事件接收器，Elements.xml 将`ListTemplateId`与`ListUrl`并添加列表实例的 URL。  
+ 若要在面向特定列表实例， *Elements.xml*对于事件接收器中，将为`ListTemplateId`与`ListUrl`和添加列表实例的 URL。  
   
-## <a name="creating-a-list-instance-event-receiver"></a>创建列表实例事件接收器  
- 以下步骤显示如何修改列表项事件接收器仅响应自定义公告列表实例中发生的事件。  
+## <a name="create-a-list-instance-event-receiver"></a>创建列表实例事件接收器  
+ 以下步骤说明如何修改列表项事件接收方仅对自定义公告列表实例中发生的事件作出响应。  
   
-#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>若要修改事件接收器响应的特定列表实例  
+#### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>若要修改事件接收器以响应特定列表实例  
   
 1.  在浏览器中打开 SharePoint 网站。  
   
-2.  在导航窗格中，**列出**链接。  
+2.  在导航窗格中，**列出了**链接。  
   
-3.  在**所有站点内容**页上，选择**创建**链接。  
+3.  在中**所有网站内容**页上，选择**创建**链接。  
   
-4.  在**创建**对话框框中，选择**公告**类型，请将公告**命名为 TestAnnouncements**，然后选择**创建**按钮。  
+4.  在中**创建**对话框框中，选择**公告**类型，将公告命名**TestAnnouncements**，然后选择**创建**按钮。  
   
 5.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个事件接收器项目。  
   
-6.  在**你想进行何种类型的事件接收器？** 列表中，选择**列表项事件**。  
+6.  在中**所需哪种类型的事件接收器？** 列表中，选择**列表项事件**。  
   
     > [!NOTE]  
-    >  你还可以选择任何其他类型的作用域以列表定义等的事件接收器**列出的电子邮件事件**或**列表工作流事件**。  
+    >  您还可以选择任何其他类型的范围限于列表定义，例如，事件接收器**列出的电子邮件事件**或**列出的工作流事件**。  
   
-7.  在**哪个项应为事件源？** 列表中，选择**公告**。  
+7.  在中**哪个项应为事件源？** 列表中，选择**公告**。  
   
-8.  在**处理以下事件**列表中，选择**某一项添加**复选框，然后依次**完成**按钮。  
+8.  在中**处理以下事件**列表中，选择**添加项**复选框，，然后选择**完成**按钮。  
   
-9. 在**解决方案资源管理器**，EventReceiver1，下打开 Elements.xml。  
+9. 在中**解决方案资源管理器**，EventReceiver1，下打开*Elements.xml*。  
   
      事件接收器当前使用以下行来引用公告列表定义：  
   
@@ -65,30 +66,29 @@ ms.lasthandoff: 05/22/2018
     <Receivers ListUrl="Lists/TestAnnouncements">  
     ```  
   
-     将仅响应发生在新的事件在事件接收器**命名为 TestAnnouncements**刚创建的公告列表。 你可以更改`ListURL`特性来引用 SharePoint 服务器上的任何列表实例。  
+     这会指示只应对发生在新的事件的事件接收器**TestAnnouncements**刚创建的公告列表。 您可以更改`ListURL`属性来引用 SharePoint 服务器上的任何列表实例。  
   
-10. 为事件接收器中打开代码文件和 ItemAdding 方法中放置一个断点。  
+10. 打开代码文件，事件接收器和 ItemAdding 方法中放置一个断点。  
   
-11. 选择 F5 生成并运行解决方案。  
+11. 选择**F5**键生成并运行解决方案。  
   
-12. 在 SharePoint 中，选择**命名为 TestAnnouncements**在导航窗格中的链接。  
+12. 在 SharePoint 中，选择**TestAnnouncements**导航窗格。  
   
 13. 选择**添加新公告**链接。  
   
-14. 有关该公告，输入标题，然后选择**保存**按钮。  
+14. 了解相关公告中，输入一个标题，然后选择**保存**按钮。  
   
-     请注意到自定义公告列表添加新项时，命中断点。  
+     请注意，新项添加到自定义公告列表时命中断点。  
   
-15. 选择 F5 继续。  
+15. 选择**F5**键以继续。  
   
-16. 在导航窗格中，选择**列出**链接，然后再选择**公告**链接。  
+16. 在导航窗格中，选择**列出了**链接，，然后选择**公告**链接。  
   
 17. 添加新公告。  
   
-     请注意，新公告上不会触发事件接收器，因为接收方被配置为仅对在自定义公告列表实例中，事件做出响应**命名为 TestAnnouncements**。  
+     请注意，在新的公告不会触发的事件接收器，因为接收方已配置为仅在自定义公告列表实例中，事件响应**TestAnnouncements**。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>请参阅
  [如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   
