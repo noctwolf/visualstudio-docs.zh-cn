@@ -1,5 +1,5 @@
 ---
-title: 产品和程序包架构引用 |Microsoft 文档
+title: 产品和包架构引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -27,35 +27,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc613a95f6c0051690e9371cd3c5c8e401df6b86
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 4fae53ad5143df91d74ad9c5e3cd19c1bdafd0da
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815569"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080644"
 ---
-# <a name="product-and-package-schema-reference"></a>产品和包架构引用
-A*产品文件*是描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化的程序集、 许可协议和文档。  
+# <a name="product-and-package-schema-reference"></a>产品和包架构参考
+一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。  
   
- 产品和包文件包含其中任何顶级`Product`或`Package`元素，其中每个包含下列元素。  
+ 产品和包文件包含的顶级`Product`或`Package`元素，其中每个包含下列元素。  
   
 |元素|描述|特性|  
 |-------------|-----------------|----------------|  
-|[\<产品 > 元素](../deployment/product-element-bootstrapper.md)|所需产品文件的顶级元素。|无|  
-|[\<包 > 元素](../deployment/package-element-bootstrapper.md)|所需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
-|[\<RelatedProducts > 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品所安装或取决于。|无|  
+|[\<产品 > 元素](../deployment/product-element-bootstrapper.md)|所需的产品文件的顶级元素。|无|  
+|[\<包 > 元素](../deployment/package-element-bootstrapper.md)|必需的包文件的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|  
+|[\<RelatedProducts > 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 中的其他产品的此产品安装或依赖于。|无|  
 |[\<InstallChecks > 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出的依赖项检查过程中要执行本地计算机上安装。|无|  
-|[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如下所述`InstallChecks`，表示要安装哪些包应检查失败。|无|  
-|[\<PackageFiles > 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能安装的此安装过程的包。|无|  
+|[\<命令 > 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查，如中所述`InstallChecks`，表示要安装的包应检查失败。|无|  
+|[\<PackageFiles > 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出可能情况下此安装过程中安装的包。|无|  
 |[\<字符串 > 元素](../deployment/strings-element-bootstrapper.md)|必需的元素。 存储的本地化版本的产品名称和错误字符串。|无|  
   
 ## <a name="remarks"></a>备注  
- 包架构都会使用 Setup.exe，包含其自身的少硬编码的逻辑 MS Build 引导任务生成的存根 （stub） 程序。 该架构可以促进安装过程的各个方面。  
+ 使用包架构*Setup.exe*，由 MS 生成启动包含其自身的少硬编码的逻辑任务生成的存根 （stub） 程序。 该架构可以促进安装过程的各个方面。  
   
- `InstallChecks` 测试该 setup.exe 应执行给定包存在。 `PackageFiles` 列出所有安装过程可能需要安装，应指定的测试失败的包。 在命令下，每个命令输入执行一个测试所描述`InstallChecks`，并指定哪些`PackageFile`运行应在测试失败。 你可以使用`Strings`要本地化产品名称和错误消息，以便可以使用一个安装二进制文件安装应用程序为任意数目的语言元素。  
+ `InstallChecks` 测试存在给定的包应执行该 setup.exe。 `PackageFiles` 列出所有安装过程可能需要安装，应指定的测试失败的包。 每个命令输入下命令执行所描述的测试之一`InstallChecks`，并指定了`PackageFile`运行应在测试失败。 可以使用`Strings`元素，以便可以使用一个安装二进制文件安装应用程序以任意数量的语言进行本地化的产品名称和错误消息。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例演示用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
+ 下面的代码示例演示了用于安装的完整的产品文件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  

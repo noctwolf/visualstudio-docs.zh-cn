@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e50bd5231387261e56a62234858d10c3806de3dc
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a60e340639a023adf50b739870035c0b81a82643
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694059"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282520"
 ---
 # <a name="features-of-visual-studio-2017"></a>Visual Studio 2017 的功能
 
@@ -24,7 +24,7 @@ ms.locfileid: "34694059"
 
 通过 Visual Studio 的模块化安装程序，可以选择和安装工作负载。工作负载是你习惯使用的编程语言或平台所需的一些功能。 此策略使安装 Visual Studio 占用的空间更小，这也意味着安装和更新速度更快。
 
-如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 若要了解设置系统上的 Visual Studio 的详细信息，请参阅[安装 Visual Studio 2017](../install/install-visual-studio.md)。
 
@@ -52,17 +52,17 @@ ms.locfileid: "34694059"
 
 ![Visual Studio 连接服务](media/connected-services.png)
 
-有关详细信息，请参阅[使用 Visual Studio 和 Azure 移动到云](https://www.visualstudio.com/vs/azure-tools/)。
+有关详细信息，请参阅[使用 Visual Studio 和 Azure 移动到云](https://visualstudio.microsoft.com/vs/azure-tools/)。
 
 ## <a name="create-apps-for-the-web"></a>创建 web 应用
 
 Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用。 可以使用 ASP.NET、Node.js、Python、JavaScript 和 TypeScript 来创建 Web 应用。 Visual Studio 了解 Angular、jQuery、Express 等 Web 框架。 ASP.NET Core 和 .NET Core 在 Windows、Mac 和 Linux 操作系统上运行。 [ASP.NET Core](http://www.asp.net/core/overview) 是 MVC、WebAPI 和 SignalR 的一个重大更新，并在 Windows、Mac 和 Linux 上运行。  ASP.NET Core 旨在完全为你提供可组合的精益 .NET 堆栈，以便生成基于云的新式 Web 应用和服务。
 
-有关详细信息，请参阅[新式 Web 工具](https://www.visualstudio.com/vs/modern-web-tooling/)。
+有关详细信息，请参阅[新式 Web 工具](https://visualstudio.microsoft.com/vs/modern-web-tooling/)。
 
 ## <a name="build-cross-platform-apps-and-games"></a>生成跨平台应用和游戏
 
-可使用 Visual Studio 生成适用于 macOS、Linux 和 Windows，以及 Android、iOS 和其他[移动设备](https://www.visualstudio.com/vs/mobile-app-development/)的应用和游戏。
+可使用 Visual Studio 生成适用于 macOS、Linux 和 Windows，以及 Android、iOS 和其他[移动设备](https://visualstudio.microsoft.com/vs/mobile-app-development/)的应用和游戏。
 
 - 生成在 Windows、macOS 和 Linux 上运行的 [.NET Core](/dotnet/core/) 应用。
 
@@ -122,7 +122,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 
 查找由 Microsoft 开发人员以及我们的开发社区创建的 Visual Studio [现有扩展](https://marketplace.visualstudio.com/vs)。
 
-若要了解有关扩展 Visual Studio 的详细信息，请参阅[扩展 Visual Studio IDE](https://www.visualstudio.com/vs/extend/)。
+若要了解有关扩展 Visual Studio 的详细信息，请参阅[扩展 Visual Studio IDE](https://visualstudio.microsoft.com/vs/extend/)。
 
 ## <a name="see-also"></a>请参阅
 

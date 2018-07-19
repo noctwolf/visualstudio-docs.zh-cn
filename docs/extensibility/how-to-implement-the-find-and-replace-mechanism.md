@@ -1,9 +1,7 @@
 ---
-title: 如何： 实现查找和替换机制 |Microsoft 文档
-ms.custom: ''
+title: 如何： 实现查找和替换机制 |Microsoft Docs
 ms.date: 11/04/2016
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - find and replace
@@ -13,32 +11,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26d1866d9b816dfca3f82f98db372865f9d27a68
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45d0b1307d86b32f1def3c4474e1ca25959915c0
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128932"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056441"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 实现查找和替换机制
-Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行界面，并让它处理搜索、 突出显示，以及替换文本。 这样用户就可以指定多个文本范围。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下必须通知有关的当前目标和所有打开的文档的目标 shell。  
-  
-### <a name="to-implement-findreplace"></a>若要实现查找/替换  
-  
-1.  实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>框架属性返回的对象之一上的接口<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>或<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>。 如果要创建自定义编辑器，则应实现此接口作为自定义编辑器类的一部分。  
-  
-2.  使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A>方法来指定你的编辑器支持的选项，还可以指示是否实现文本映像搜索。  
-  
-     如果你的编辑器支持文本映像搜索，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>。  
-  
-     否则，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>。  
-  
-3.  如果你实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>方法，你可以通过调用来简化你搜索的任务<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>接口。  
-  
-## <a name="see-also"></a>另请参阅  
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>   
- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>
+
+Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行程序，使其处理，突出显示，具体方法搜索和替换文本。 这样用户就可以指定多个文本段。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下，必须通知有关当前的目标和所有打开的文档的目标的 shell。
+
+## <a name="to-implement-findreplace"></a>若要实现查找/替换
+
+1. 实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>接口上的帧属性返回的对象之一<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocView>或<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID.VSFPROPID_DocData>。 如果要创建自定义编辑器，您应实现此接口作为自定义编辑器类的一部分。
+
+2. 使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetCapabilities%2A>方法以指定编辑器支持的选项，还可以指示它是否实现了文本图像搜索。
+
+   如果编辑器支持文本图像搜索，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>。
+
+   否则，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>。
+
+3. 如果你实现了<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>方法，可以通过调用简化搜索任务<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>接口。
+
+## <a name="see-also"></a>请参阅
+
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindHelper>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Find%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.GetSearchImage%2A>
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget.Replace%2A>
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>

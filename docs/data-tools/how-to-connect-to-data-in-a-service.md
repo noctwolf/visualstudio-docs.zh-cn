@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3975d7f0bcfc9b80c944c892cde52f2b625e0bbf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6f90a99a387452500686af332edb1d112a88f82
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921096"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089113"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
+# <a name="how-to-connect-to-data-in-a-service"></a>如何： 连接到服务中的数据
 
-通过运行从服务返回的数据将应用程序连接[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)并选择**服务**上**选择数据源类型**页。
+通过运行从服务返回的数据将应用程序连接[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)，然后选择**服务**上**选择数据源类型**页。
 
 在向导完成，服务引用添加到你的项目，并可立即在[数据源窗口](add-new-data-sources.md)。
 
 > [!NOTE]
-> 在显示的项**数据源**窗口都依赖于该服务返回的信息。 某些服务可能没有提供足够的信息供**数据源配置向导**创建可绑定的对象。 例如，如果该服务返回一个非类型化数据集，则显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
+> 在显示的项**数据源**窗口都依赖于该服务返回的信息。 某些服务可能没有提供足够的信息供**数据源配置向导**创建可绑定的对象。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源窗口**完成该向导时。 这是因为非类型化数据集不提供架构，所以该向导没有足够的信息来创建数据源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -40,14 +40,14 @@ ms.locfileid: "31921096"
 
 1.  在 **“数据”** 菜单上，单击 **“添加新数据源”**。
 
-2.  选择**服务**上**选择数据源类型**页，，然后单击**下一步**。
+2.  选择**服务**上**选择数据源类型**页上，然后依次**下一步**。
 
-3.  输入你想要使用，或单击该服务的地址**发现**在当前解决方案中，查找服务，然后单击**转**。
+3.  输入你想要使用，或单击该服务的地址**Discover**若要在当前解决方案中，找到服务，然后单击**转**。
 
-4.  （可选） 一个新**Namespace**可以键入来替代默认值。
+4.  （可选） 您可以键入一个新**Namespace**默认值的位置。
 
     > [!NOTE]
-    > 单击**高级**以打开[配置的服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。
+    > 单击**高级**以打开[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)。
 
 5.  单击**确定**添加到你的项目的服务引用。
 
@@ -57,9 +57,9 @@ ms.locfileid: "31921096"
 
 ## <a name="next-steps"></a>后续步骤
 
-若要将功能添加到你的应用程序中，选择中的项**数据源**窗口并将其拖到窗体上创建绑定的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+若要将功能添加到你的应用程序中，选择中的项**数据源**窗口并将其拖到窗体来创建绑定的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
 ## <a name="see-also"></a>请参阅
 
 - [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [在 Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

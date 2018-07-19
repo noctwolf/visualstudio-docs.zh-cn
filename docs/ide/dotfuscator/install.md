@@ -23,12 +23,12 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 29915018da1a2b8b0f50d5381748b53c1048e970
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 13027c5d4fe4fc799f6514eb93bfc4ed93141613
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704845"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283215"
 ---
 # <a name="install-dotfuscator-community-edition-ce"></a>安装 Dotfuscator Community Edition (CE)
 
@@ -77,7 +77,7 @@ Visual Studio 2017 引入了一种影响较小的新式安装体验。
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[2017-install]:  https://www.visualstudio.com/downloads/#vs-2017
+[2017-install]:  https://visualstudio.microsoft.com/downloads/#vs-2017
 [get-started]:  https://www.preemptive.com/dotfuscator/ce/docs/help/gui_getstarted.html
 
 [download]:  https://www.preemptive.com/products/dotfuscator/downloads

@@ -1,5 +1,5 @@
 ---
-title: ExtensionDataItem 元素 |Microsoft 文档
+title: ExtensionDataItem 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb88c8adc3f32e428543e2bf1e0e80e9538678a2
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: a460f31679ef01fab9dbfb181905475a2cadede5
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766502"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325716"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
-  自定义数据项中键/值格式的 SharePoint 项目项与该键关联。 键和值必须为字符串。  
+  自定义数据项中键/值格式的 SharePoint 项目项与相关联。 键和值必须为字符串。  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,8 +39,8 @@ ms.locfileid: "34766502"
   
 |特性|描述|  
 |---------------|-----------------|  
-|**Key**|所需**xs： 字符串**属性。<br /><br /> 用于存储和检索数据的项键。|  
-|**值**|所需**xs: string**属性。<br /><br /> 数据项目的值。|  
+|**Key**|所需**xs： 字符串**属性。<br /><br /> 用于存储和检索数据的项的键。|  
+|**值**|所需**xs: string**属性。<br /><br /> 数据项的值。|  
   
 ### <a name="child-elements"></a>子元素
  无。  
@@ -49,10 +49,10 @@ ms.locfileid: "34766502"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[ExtensionData](../sharepoint/extensiondata-element.md)|表示自定义数据与 SharePoint 项目项关联的项的集合。|  
+|[ExtensionData](../sharepoint/extensiondata-element.md)|表示 SharePoint 项目项与相关联的自定义数据项的集合。|  
   
 ## <a name="remarks"></a>备注  
- 关联时自定义数据与 SharePoint 项目项使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将数据保存到新**ExtensionDataItem**中的元素`.spdata`文件项目项。 有关详细信息，请参阅[扩展 SharePoint 项目系统中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+ 在将自定义数据与 SharePoint 项目项使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A>的属性<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem>对象时，Visual Studio 将数据保存到一个新**ExtensionDataItem**中的元素`.spdata`文件项目项。 有关详细信息，请参阅[将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ## <a name="element-information"></a>元素信息
   

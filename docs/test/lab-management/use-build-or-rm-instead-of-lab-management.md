@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 607bc4646a6bacd0ae119d07e832ffca2f279152
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 454407c3572f7a7c7a1c0f795462d2aec539049a
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845374"
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build Management 或 Release Management（而不是实验室管理工具版）进行自动测试
 
@@ -58,7 +59,7 @@ MTM 和实验室管理工具版依赖 XAML 生成定义来自动生成、部署�
 
 | 步骤 | 使用实验室中心 | 使用 Build Management 或 Release Management |
 |-------|----------------------|-----------------|
-| 管理环境模板库。 | 创建实验室环境。 在虚拟机上安装必要的软件。 进行系统准备，并将环境存储为库中的模板。 | 使用 SCVMM 管理控制台直接创建和管理虚拟机模板或服务模板。 使用 Azure 时，选择其中的一个 [Azure 快速入门模板](/resources/templates/)。 |
+| 管理环境模板库。 | 创建实验室环境。 在虚拟机上安装必要的软件。 进行系统准备，并将环境存储为库中的模板。 | 使用 SCVMM 管理控制台直接创建和管理虚拟机模板或服务模板。 使用 Azure 时，选择其中的一个 [Azure 快速入门模板](https://azure.microsoft.com/resources/templates/)。 |
 | 创建实验室环境。 | 在库中选择一个环境模板并部署该模板。 提供自定义虚拟机配置所需的参数。 | 使用 SCVMM 管理控制台根据模板直接创建虚拟机或服务实例。 使用 Azure 门户直接创建资源。 或使用环境创建发布定义。 使用 Azure 任务或 [SCVMM 集成扩展](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)中的任务创建新虚拟机。 创建此定义的新发布相当于在实验室中心中创建新环境。 |
 | 连接到计算机。 | 在“环境查看器”中打开实验室环境。 | 使用 SCVMM 管理控制台直接连接到虚拟机。 或者使用虚拟机的 IP 地址或 DNS 名称打开远程桌面会话。 |
 | 执行环境的检查点，或将环境还原到干净的检查点。 | 在“环境查看器”中打开实验室环境。 选择执行检查点或还原到之前的检查点的选项。 | 使用 SCVMM 管理控制台直接对虚拟机执行这些操作。 或者若要在更大的自动化过程中执行这些步骤，则在发布定义的环境中包括 [SCVMM 集成扩展](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)中的检查点任务。 |

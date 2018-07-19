@@ -4,22 +4,25 @@ ms.custom: ''
 ms.date: 04/13/2017
 ms.topic: conceptual
 ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 author: asb3993
 ms.author: amburns
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 3d392a24aa4a901e26a3e6cee3909aae581d3505
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7add505f7a90290daab1170c190987767ba05d15
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924258"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Mac 用户的设置、安装和验证
+
 本主题针对主要在 Mac 上工作并选择在 Mac 上的 Windows 虚拟机内使用 Visual Studio 的开发人员。 如果你是主要使用 Windows 计算机的开发人员且需要设置辅助 Mac 来面向 iOS，请参阅[设置和安装](../cross-platform/setup-and-install.md)主题。
 
- 若要在 Mac 上使用 Xamarin，需要以下项目：
+若要在 Mac 上使用 Xamarin，需要以下项目：
 
 -   含有 macOS Sierra 10.12 或更高版本的 Mac，并安装了 Xcode 和 Xamarin。
 
@@ -29,7 +32,7 @@ ms.lasthandoff: 04/16/2018
 
     -   **如果已在 Mac 上配置 Parallels 或 VMWare：** 在 Parallels 或 VMWare 中使用 Visual Studio 2017 和 Xamarin 运行 Windows。  使用此配置，Xamarin 是与 Visual Studio 一起安装的扩展，它让你可以将 Visual Studio 用作使用 C# 生成 Android、iOS 和 Windows 应用的开发环境。  请注意，作为 Visual Studio Developer Essentials 计划的一部分，你可以获取 3 个月的免费 Parallels 订阅。 请参阅 [Microsoft Visual Studio Dev Essentials 将包括 Parallels Desktop Pro 和 Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) （Parallels 博客）。
 
- 本主题提供针对这些要求的说明。  在安装进程运行期间，可查看[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)主题，阅读和观看必要的背景材料。
+本主题提供针对这些要求的说明。  在安装进程运行期间，可查看[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)主题，阅读和观看必要的背景材料。
 
 ##  <a name="mac"></a>Mac 设置（Apple ID、Xcode 和 Xamarin）
 
@@ -43,19 +46,19 @@ ms.lasthandoff: 04/16/2018
 
 ##  <a name="windows"></a> Parallels 内的 Windows 设置（Visual Studio 和 Xamarin）
 
-1.  使用在 Parallels/VMWare 内配置的 Windows 桌面，[下载并启动 Visual Studio 2017 任何版本（Community、Professional 或 Enterprise）的安装程序](https://www.visualstudio.com/downloads/)。 Visual Studio 2017 Community 是免费版本；Professional 和 Enterprise 可免费试用 30 天。
+1.  使用在 Parallels/VMWare 内配置的 Windows 桌面，[下载并启动 Visual Studio 2017 任何版本（Community、Professional 或 Enterprise）的安装程序](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)。 Visual Studio 2017 Community 是免费版本；Professional 和 Enterprise 可免费试用 30 天。
 
-2.  在安装程序中，单击“启动”_旁_的“其他选择”（三条杠图标）按钮，然后选择“修改”：  
-  
-     ![选择 Visual Studio 安装程序中的“修改”选项](../cross-platform/media/cross-plat-xamarin-setup-1a.png "跨平台 Xamarin 安装 1")  
-  
+2.  在安装程序中，单击“启动”_旁边_的“其他选项”（三横杠图标）按钮，然后选择“修改”：
+
+     ![选择 Visual Studio 安装程序中的“修改”选项](../cross-platform/media/cross-plat-xamarin-setup-1a.png "跨平台 Xamarin 安装 1")
+
 3.  选中以下选框：
 
-    1.  “移动和游戏”>“使用 .NET 的移动环境”。 这也将自动选择“常用工具和软件开发工具包”下的各种 Android 工具。 此选项还应更新现有的所有 Xamarin 安装。  
-  
-         ![选择“游戏和移动开发”下的“移动开发”选项](../cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 安装 2")  
-  
-    2. （可选）**“Windows”>“通用 Windows 平台开发”**。 这包括安装需要较长下载时间的仿真器映像的选项；稍后可以随时返回 Visual Studio 安装程序添加它们。  
+    1.  “移动和游戏”>“使用 .NET 的移动环境”。 这也将自动选择“常用工具和软件开发工具包”下的各种 Android 工具。 此选项还应更新现有的所有 Xamarin 安装。
+
+         ![选择“游戏和移动开发”下的“移动开发”选项](../cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 安装 2")
+
+    2. （可选）**“Windows”>“通用 Windows 平台开发”**。 这包括安装需要较长下载时间的仿真器映像的选项；稍后可以随时返回 Visual Studio 安装程序添加它们。
 
 4.  单击“修改”按钮，让程序运行。 同样，这将需要一些时间才能完成，在此期间可继续查看 Mac 安装说明并浏览[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)。
 
@@ -64,12 +67,14 @@ ms.lasthandoff: 04/16/2018
 6.  在 Windows 和 Mac 计算机上安装好 Xamarin 后，请按照[使用 XMA 连接到 Mac](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/#Connecting_to_the_Mac_Using_XMA) (xamarin.com) 上的说明操作，以便可通过 Visual Studio 针对 iOS 进行开发。
 
 ##  <a name="verify"></a> 验证环境
- 安装程序完成安装后，请花几分钟时间验证体验 Xamarin 开发所需的一切就绪。
+
+安装程序完成安装后，请花几分钟时间验证体验 Xamarin 开发所需的一切就绪。
 
 ### <a name="xamarin-studio"></a>Xamarin Studio
- 首先，确保导航到所提供链接时在右上角选择了“Xamarin Studio”  从而看到 Xamarin 文档的一个正确版本：
 
- ![选择 Xamarin Studio 查看 Xamarin.com 中的相应文档](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
+首先，确保导航到所提供链接时在右上角选择了“Xamarin Studio”  从而看到 Xamarin 文档的一个正确版本：
+
+![选择 Xamarin Studio 查看 Xamarin.com 中的相应文档](../cross-platform/media/crossplat-xamarin-mac-1.png "CrossPlat Xamarin Mac 1")
 
 **Outlook Web Access (OWA)**
 
@@ -84,9 +89,10 @@ ms.lasthandoff: 04/16/2018
 2.  通过 [模拟器文档中的调试](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) (xamarin.com) 验证 iOS 模拟器中的调试。
 
 ### <a name="visual-studio"></a>Visual Studio
- 首先，确保导航到所提供链接时在右上角选择了“Visual Studio”  从而看到 Xamarin 文档的一个正确版本：
 
- ![选择 Visual Studio 查看 Xamarin.com 中的相应文档](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")
+首先，确保导航到所提供链接时在右上角选择了“Visual Studio”  从而看到 Xamarin 文档的一个正确版本：
+
+![选择 Visual Studio 查看 Xamarin.com 中的相应文档](../cross-platform/media/crossplat-xamarin-mac-2.png "CrossPlat Xamarin Mac 2")
 
 **Android**
 

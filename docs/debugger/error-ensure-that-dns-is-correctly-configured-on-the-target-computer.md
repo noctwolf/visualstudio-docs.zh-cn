@@ -1,5 +1,5 @@
 ---
-title: 错误： 请确保 DNS 是在目标计算机上正确配置 |Microsoft 文档
+title: 错误： 请确保 DNS 是目标计算机上正确配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -16,23 +16,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50eed9a4c769b2e8b58cbdf35c6e10b57ae9b0c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d2d945376f093e7df437751127c544b349458fd
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479632"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056093"
 ---
 # <a name="error-ensure-that-dns-is-correctly-configured-on-the-target-computer"></a>错误：请确保目标计算机上正确配置了 DNS
 当尝试执行远程调试时，您可能会收到如下错误信息：  
   
-```  
+```cmd
 Error: The Visual Studio Remote Debugger on the target computer cannot connect back to this computer. Ensure that DNS is correctly configured on the target computer.  
 ```  
   
  目标计算机无法解析 Visual Studio 调试器主机计算机的名称时，会发生此错误。 检查目标计算机上的 DNS 设置。  
   
--   有关在 Windows 8.1、 Vista、 Windows 7、 Windows Server 2012、 Windows Server 2008 或 Windows Server 2008 R2，查看 DNS 设置信息，执行此操作： 在**启动**菜单上，选择**帮助和支持**然后搜索**更改 TCP/IP 设置**。  
+-   有关在 Windows 8.1、 Vista、 Windows 7、 Windows Server 2012、 Windows Server 2008 或 Windows Server 2008 R2 中查看 DNS 设置的信息，执行此操作： 在**启动**菜单中，选择**帮助和支持**然后搜索**更改 TCP/IP 设置**。  
   
 -   有关详细信息，请转到[Microsoft Windows 网站](http://go.microsoft.com/fwlink/?LinkId=252720)并搜索**更改 TCP/IP 设置**。  
   

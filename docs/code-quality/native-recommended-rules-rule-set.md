@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ebf6339a6b26d6db66d20c31e17236db76eea291
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d398d22944ae4c0e5be725169b9d7ceaadb0667d
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927251"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945827"
 ---
 # <a name="native-recommended-rules-rule-set"></a>“本机建议规则”规则集
 
-本机建议规则侧重于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键和常见的问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。
+本机建议规则重点关注本机代码，包括潜在安全漏洞和应用程序崩溃中最重要、 最常见的问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。
 
 |规则|描述|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|使用未初始化的内存|
 |[C6011](../code-quality/c6011.md)|取消引用 Null 指针|
 |[C6029](../code-quality/c6029.md)|未选中的值的使用|
-|[C6031](../code-quality/c6031.md)|忽略的返回值|
+|[C6031](../code-quality/c6031.md)|返回值被忽略|
 |[C6053](../code-quality/c6053.md)|来自调用的零终止|
-|[C6054](../code-quality/c6054.md)|零终止缺少|
+|[C6054](../code-quality/c6054.md)|零终止缺失|
 |[C6059](../code-quality/c6059.md)|不正确的串联|
 |[C6063](../code-quality/c6063.md)|缺少 Format 函数的字符串自变量|
 |[C6064](../code-quality/c6064.md)|缺少 Format 函数的整型自变量|
@@ -36,27 +36,27 @@ ms.locfileid: "31927251"
 |[C6101](../code-quality/c6101.md)|返回未初始化的内存|
 |[C6200](../code-quality/c6200.md)|索引超出最大缓冲区大小|
 |[C6201](../code-quality/c6201.md)|索引超出最大堆栈缓冲区大小|
-|[C6214](../code-quality/c6214.md)|通过无效强制转换为布尔值的 HRESULT|
-|[C6215](../code-quality/c6215.md)|通过无效强制转换为 HRESULT BOOL|
-|[C6216](../code-quality/c6216.md)|无效编译器插入强制转换为 HRESULT BOOL|
+|[C6214](../code-quality/c6214.md)|强制转换为 HRESULT 到 BOOL 的无效|
+|[C6215](../code-quality/c6215.md)|强制转换为 BOOL 到 HRESULT 的无效|
+|[C6216](../code-quality/c6216.md)|编译器插入的强制转换无效 BOOL 到 HRESULT|
 |[C6217](../code-quality/c6217.md)|使用 NOT 无效 HRESULT 测试|
-|[C6220](../code-quality/c6220.md)|为-1 的无效 HRESULT 比较|
-|[C6226](../code-quality/c6226.md)|为-1 的无效 HRESULT 分配|
-|[C6230](../code-quality/c6230.md)|无效的 HRESULT 用作布尔值|
-|[C6235](../code-quality/c6235.md)|逻辑非零常量-或|
+|[C6220](../code-quality/c6220.md)|无效的 HRESULT 与-1 的比较|
+|[C6226](../code-quality/c6226.md)|无效的 HRESULT 到-1 的赋值|
+|[C6230](../code-quality/c6230.md)|无效的 HRESULT 用作 Boolean|
+|[C6235](../code-quality/c6235.md)|非零常量的逻辑-或|
 |[C6236](../code-quality/c6236.md)|逻辑-或使用非零常量|
-|[C6237](../code-quality/c6237.md)|与逻辑零-并且失去副作用|
-|[C6242](../code-quality/c6242.md)|强制本地展开|
-|[C6248](../code-quality/c6248.md)|创建 Null DACL|
-|[C6250](../code-quality/c6250.md)|未发布的地址描述符|
-|[C6255](../code-quality/c6255.md)|Alloca 的未受保护的使用|
+|[C6237](../code-quality/c6237.md)|零的逻辑的运算丧失副作用|
+|[C6242](../code-quality/c6242.md)|强制执行局部回退|
+|[C6248](../code-quality/c6248.md)|正在创建 Null DACL|
+|[C6250](../code-quality/c6250.md)|未释放的地址说明符|
+|[C6255](../code-quality/c6255.md)|未受保护的 Alloca 用法|
 |[C6258](../code-quality/c6258.md)|使用终止线程|
-|[C6259](../code-quality/c6259.md)|死按位代码中的复原能力或有限交换机|
-|[C6260](../code-quality/c6260.md)|字节算术的使用|
-|[C6262](../code-quality/c6262.md)|过多的堆栈使用|
-|[C6263](../code-quality/c6263.md)|使用在循环中 Alloca|
+|[C6259](../code-quality/c6259.md)|死信中的代码的按位的或限制开关|
+|[C6260](../code-quality/c6260.md)|使用的字节算术|
+|[C6262](../code-quality/c6262.md)|堆栈使用过多|
+|[C6263](../code-quality/c6263.md)|使用在循环中的 Alloca|
 |[C6268](../code-quality/c6268.md)|强制转换中缺少括号|
-|[C6269](../code-quality/c6269.md)|指针取消引用忽略|
+|[C6269](../code-quality/c6269.md)|指针取消引用被忽略|
 |[C6270](../code-quality/c6270.md)|缺少 Format 函数的浮点型自变量|
 |[C6271](../code-quality/c6271.md)|Format 函数的额外自变量|
 |[C6272](../code-quality/c6272.md)|Format 函数的非浮点型自变量|
@@ -64,47 +64,47 @@ ms.locfileid: "31927251"
 |[C6274](../code-quality/c6274.md)|Format 函数的非字符自变量|
 |[C6276](../code-quality/c6276.md)|无效字符串的强制转换|
 |[C6277](../code-quality/c6277.md)|无效 CreateProcess 的调用|
-|[C6278](../code-quality/c6278.md)|新数组的标量删除不匹配|
-|[C6279](../code-quality/c6279.md)|标量新数组删除不匹配|
-|[C6280](../code-quality/c6280.md)|内存分配解除分配不匹配|
-|[C6281](../code-quality/c6281.md)|按位关系优先级|
-|[C6282](../code-quality/c6282.md)|赋值会替换测试|
-|[C6283](../code-quality/c6283.md)|基元数组新的标量删除不匹配|
+|[C6278](../code-quality/c6278.md)|数组新建与标量删除不匹配|
+|[C6279](../code-quality/c6279.md)|标量新建与数组删除不匹配|
+|[C6280](../code-quality/c6280.md)|内存分配与解除分配不匹配|
+|[C6281](../code-quality/c6281.md)|按位关系优先顺序|
+|[C6282](../code-quality/c6282.md)|赋值替换测试|
+|[C6283](../code-quality/c6283.md)|基元数组新建与标量删除不匹配|
 |[C6284](../code-quality/c6284.md)|Format 函数的无效对象自变量|
 |[C6285](../code-quality/c6285.md)|逻辑-或常量|
-|[C6286](../code-quality/c6286.md)|非零逻辑-焦点或失去副作用|
-|[C6287](../code-quality/c6287.md)|冗余的测试|
-|[C6288](../code-quality/c6288.md)|通过逻辑相互包含的和为 False|
-|[C6289](../code-quality/c6289.md)|通过逻辑的互相排斥的或为 True|
+|[C6286](../code-quality/c6286.md)|非零逻辑的或丢失的负面影响|
+|[C6287](../code-quality/c6287.md)|冗余测试|
+|[C6288](../code-quality/c6288.md)|通过逻辑的互含运算的和为 False|
+|[C6289](../code-quality/c6289.md)|通过逻辑互相排斥的或为 True|
 |[C6290](../code-quality/c6290.md)|逻辑非和按位与的优先级|
 |[C6291](../code-quality/c6291.md)|逻辑非和按位或的优先级|
-|[C6292](../code-quality/c6292.md)|循环计数向上从最大值|
-|[C6293](../code-quality/c6293.md)|循环进行倒计时从最小值|
-|[C6294](../code-quality/c6294.md)|永远不会执行循环体|
+|[C6292](../code-quality/c6292.md)|循环开始计数最多从最大值|
+|[C6293](../code-quality/c6293.md)|循环从最小值向下计数|
+|[C6294](../code-quality/c6294.md)|从未执行循环体|
 |[C6295](../code-quality/c6295.md)|无限循环|
-|[C6296](../code-quality/c6296.md)|只能执行一次循环|
-|[C6297](../code-quality/c6297.md)|Shift 结果强制转换为更大的大小|
-|[C6299](../code-quality/c6299.md)|位域与布尔比较|
+|[C6296](../code-quality/c6296.md)|仅执行一次的循环|
+|[C6297](../code-quality/c6297.md)|移位结果强制转换为更大的大小|
+|[C6299](../code-quality/c6299.md)|位域到布尔比较|
 |[C6302](../code-quality/c6302.md)|Format 函数的无效字符串自变量|
 |[C6303](../code-quality/c6303.md)|Format 函数的无效宽字符串自变量|
 |[C6305](../code-quality/c6305.md)|不匹配的大小和计数的使用|
 |[C6306](../code-quality/c6306.md)|不正确的变量自变量函数的调用|
 |[C6308](../code-quality/c6308.md)|Realloc 泄漏|
-|[C6310](../code-quality/c6310.md)|非法异常筛选器常量|
+|[C6310](../code-quality/c6310.md)|非法的异常筛选器常量|
 |[C6312](../code-quality/c6312.md)|异常继续执行循环|
-|[C6314](../code-quality/c6314.md)|按位的或的优先级|
-|[C6317](../code-quality/c6317.md)|补不|
+|[C6314](../code-quality/c6314.md)|按位的或优先顺序|
+|[C6317](../code-quality/c6317.md)|非非补|
 |[C6318](../code-quality/c6318.md)|异常继续搜索|
-|[C6319](../code-quality/c6319.md)|忽略用逗号进行分隔|
-|[C6324](../code-quality/c6324.md)|而不是字符串比较的字符串复制|
+|[C6319](../code-quality/c6319.md)|按逗号忽略|
+|[C6324](../code-quality/c6324.md)|字符串复制而不是字符串比较|
 |[C6328](../code-quality/c6328.md)|可能的自变量类型不匹配|
 |[C6331](../code-quality/c6331.md)|VirtualFree 无效标志|
 |[C6332](../code-quality/c6332.md)|VirtualFree 无效参数|
 |[C6333](../code-quality/c6333.md)|VirtualFree 无效大小|
-|[C6335](../code-quality/c6335.md)|泄露进程句柄|
-|[C6381](../code-quality/c6381.md)|关闭信息丢失|
+|[C6335](../code-quality/c6335.md)|泄漏进程句柄|
+|[C6381](../code-quality/c6381.md)|关机信息缺失|
 |[C6383](../code-quality/c6383.md)|元素计数字节的计数缓冲区溢出|
-|[C6384](../code-quality/c6384.md)|指针大小除法|
+|[C6384](../code-quality/c6384.md)|指针大小划分|
 |[C6385](../code-quality/c6385.md)|读取溢出|
 |[C6386](../code-quality/c6386.md)|写入溢出|
 |[C6387](../code-quality/c6387.md)|无效的参数值|
@@ -138,50 +138,50 @@ ms.locfileid: "31927251"
 |[C6704](../code-quality/c6704.md)|意外的批注表达式错误|
 |[C6705](../code-quality/c6705.md)|批注自变量的预期数量与批注自变量的实际数量不匹配|
 |[C6706](../code-quality/c6706.md)|批注的意外批注错误|
-|[C6995](../code-quality/c6995.md)|无法保存 XML 日志文件|
+|[C6995](../code-quality/c6995.md)|未能保存 XML 日志文件|
 |[C26100](../code-quality/c26100.md)|争用条件|
-|[C26101](../code-quality/c26101.md)|无法正确地使用互锁的操作|
-|[C26110](../code-quality/c26110.md)|调用方无法持有锁|
-|[C26111](../code-quality/c26111.md)|调用方无法释放锁|
-|[C26112](../code-quality/c26112.md)|调用方不能包含任何锁定|
-|[C26115](../code-quality/c26115.md)|无法释放锁|
-|[C26116](../code-quality/c26116.md)|若要获取或持有锁的失败|
-|[C26117](../code-quality/c26117.md)|释放 unheld 的锁|
+|[C26101](../code-quality/c26101.md)|未能正确使用联锁的操作|
+|[C26110](../code-quality/c26110.md)|调用方未能持有锁|
+|[C26111](../code-quality/c26111.md)|调用方未能解除锁|
+|[C26112](../code-quality/c26112.md)|调用方无法持有任何锁|
+|[C26115](../code-quality/c26115.md)|未能解除锁|
+|[C26116](../code-quality/c26116.md)|未能获取或持有锁|
+|[C26117](../code-quality/c26117.md)|解除未持有的锁|
 |[C26140](../code-quality/c26140.md)|并发 SAL 批注错误|
-|[C28020](../code-quality/c28020.md)|表达式不满足此调用|
+|[C28020](../code-quality/c28020.md)|表达式不是此调用，则返回 true|
 |[C28021](../code-quality/c28021.md)|批注的参数必须为指针型|
-|[C28022](../code-quality/c28022.md)|此函数在函数的类不匹配用于定义它 typedef 函数的类。|
-|[C28023](../code-quality/c28023.md)|正在分配或传递此函数应该拥有 _Function_class\_为至少一个此类批注|
-|[C28024](../code-quality/c28024.md)|分配给该函数指针是使用函数类，不包含函数的类列表中添加批注。|
-|[C28039](../code-quality/c28039.md)|实际参数的类型应精确匹配的类型|
-|[C28112](../code-quality/c28112.md)|始终必须通过互锁函数访问通过互锁函数访问这些变量。|
-|[C28113](../code-quality/c28113.md)|访问局部变量通过互锁函数|
-|[C28125](../code-quality/c28125.md)|必须从调用此函数，在一个 try / except 块|
-|[C28137](../code-quality/c28137.md)|变量自变量应改为 （文本） 常量|
-|[C28138](../code-quality/c28138.md)|应改用变量常量的参数。|
+|[C28022](../code-quality/c28022.md)|有关该函数的函数类与使用定义它的 typedef 上的函数类不匹配。|
+|[C28023](../code-quality/c28023.md)|分配或传递的函数应有\_函数\_类\_至少一个类批注|
+|[C28024](../code-quality/c28024.md)|函数指针分配给将批注与函数类，它不包含在函数类的列表。|
+|[C28039](../code-quality/c28039.md)|实参的类型应与类型完全匹配|
+|[C28112](../code-quality/c28112.md)|通过 Interlocked 函数访问的变量始终必须通过 Interlocked 函数访问。|
+|[C28113](../code-quality/c28113.md)|访问通过 Interlocked 函数的本地变量|
+|[C28125](../code-quality/c28125.md)|必须从调用该函数，在一个 try / except 块|
+|[C28137](../code-quality/c28137.md)|变量参数应为 （文本） 常量|
+|[C28138](../code-quality/c28138.md)|常量参数应改为变量|
 |[C28159](../code-quality/c28159.md)|请考虑改为使用另一个函数。|
 |[C28160](../code-quality/c28160.md)|错误批注|
-|[C28163](../code-quality/c28163.md)|该函数应永远不会从调用在一个 try / except 块|
-|[C28164](../code-quality/c28164.md)|自变量被传递给需要指向的对象 （不指向指针的指针） 的指针的函数|
+|[C28163](../code-quality/c28163.md)|该函数应永远不会调用从在一个 try / except 块|
+|[C28164](../code-quality/c28164.md)|正在参数传递到需要指向的对象 （不是为指针的指针） 的一个函数|
 |[C28182](../code-quality/c28182.md)|取消引用 NULL 指针。 该指针包含与另一指针相同的 NULL 值。|
-|[C28183](../code-quality/c28183.md)|自变量可以是一个值，而在指针中找到的值的副本|
-|[C28193](../code-quality/c28193.md)|变量持有一个值，必须检查|
-|[C28196](../code-quality/c28196.md)|不符合的要求。 （表达式不的计算结果为 true。）|
+|[C28183](../code-quality/c28183.md)|参数可能是一个值，并且在指针中找到的值的副本|
+|[C28193](../code-quality/c28193.md)|该变量可保存一个必须检查的值|
+|[C28196](../code-quality/c28196.md)|不满足的要求。 （表达式不的计算结果为 true。）|
 |[C28202](../code-quality/c28202.md)|非法引用非静态成员|
 |[C28203](../code-quality/c28203.md)|对类成员的不明确的引用。|
-|[C28205](../code-quality/c28205.md)|在非法上下文中使用的 _Success\_ 或 _On_failure\_|
+|[C28205](../code-quality/c28205.md)|\_成功\_或\_上\_失败\_在非法上下文中使用|
 |[C28206](../code-quality/c28206.md)|若左操作数指向结构，则使用“->”|
 |[C28207](../code-quality/c28207.md)|若左操作数是一个结构，则使用“.”|
-|[C28209](../code-quality/c28209.md)|符号声明具有冲突的声明|
+|[C28209](../code-quality/c28209.md)|符号的声明具有冲突的声明|
 |[C28210](../code-quality/c28210.md)|__on_failure 上下文的批注不得位于显式的 pre 上下文中|
 |[C28211](../code-quality/c28211.md)|SAL_context 所需的静态上下文名称|
 |[C28212](../code-quality/c28212.md)|批注所需的指针表达式|
-|[C28213](../code-quality/c28213.md)|_Use_decl_annotations\_ 批注必须用于引用上一个声明，且不对其进行修改。|
+|[C28213](../code-quality/c28213.md)|\_使用\_声明\_批注\_批注必须用于引用，无需修改，之前的声明。|
 |[C28214](../code-quality/c28214.md)|特性参数的名称必须为 p1...p9|
 |[C28215](../code-quality/c28215.md)|不能将 typefix 应用于已包含 typefix 的参数|
 |[C28216](../code-quality/c28216.md)|checkReturn 批注仅应用于特定函数参数的后置条件。|
 |[C28217](../code-quality/c28217.md)|对于函数，批注的参数数目与在文件中找到的数目不匹配|
-|[C28218](../code-quality/c28218.md)|函数参数，批注的参数不匹配在文件中找到|
+|[C28218](../code-quality/c28218.md)|对于函数参数，批注的参数不匹配，在文件中找到|
 |[C28219](../code-quality/c28219.md)|批注中的批注参数所需的枚举成员|
 |[C28220](../code-quality/c28220.md)|批注中的批注参数所需的整数表达式|
 |[C28221](../code-quality/c28221.md)|批注中的参数所需的字符串表达式|
@@ -206,7 +206,7 @@ ms.locfileid: "31927251"
 |[C28240](../code-quality/c28240.md)|参数上的批注包含 param2，但不包含 param1|
 |[C28241](../code-quality/c28241.md)|未识别参数上的函数的批注|
 |[C28243](../code-quality/c28243.md)|参数上函数的批注需要的取消引用次数多于已批注的实际类型所允许的次数|
-|[C28244](../code-quality/c28244.md)|函数的批注具有无法解析参数/外部批注|
+|[C28244](../code-quality/c28244.md)|函数的批注包含无法解析的参数/外部批注|
 |[C28245](../code-quality/c28245.md)|函数的批注将在非成员函数上批注“this”|
 |[C28246](../code-quality/c28246.md)|函数的参数批注与参数的类型不匹配|
 |[C28250](../code-quality/c28250.md)|函数的批注不一致：上一实例发生错误。|
@@ -219,24 +219,24 @@ ms.locfileid: "31927251"
 |[C28267](../code-quality/c28267.md)|在函数中找到了批注的语法错误。|
 |[C28272](../code-quality/c28272.md)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](../code-quality/c28273.md)|对于函数，线索与函数声明不一致|
-|[C28275](../code-quality/c28275.md)|_Macro_value\_ 的参数值为 null|
+|[C28275](../code-quality/c28275.md)|参数\_宏\_值\_为 null|
 |[C28279](../code-quality/c28279.md)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](../code-quality/c28280.md)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](../code-quality/c28282.md)|格式字符串必须位于前置条件中|
 |[C28285](../code-quality/c28285.md)|对于函数，参数中存在语法错误|
 |[C28286](../code-quality/c28286.md)|对于函数，在其结尾附近出现语法错误|
-|[C28287](../code-quality/c28287.md)|对于函数，在 _At\_() 批注中出现语法错误（无法识别的参数名）|
-|[C28288](../code-quality/c28288.md)|对于函数，在 _At\_() 批注中出现语法错误（无效的参数名）|
+|[C28287](../code-quality/c28287.md)|对于函数，语法错误中\_在\_（） 批注 （无法识别的参数名称）|
+|[C28288](../code-quality/c28288.md)|对于函数，语法错误中\_在\_（） 批注 （参数名无效）|
 |[C28289](../code-quality/c28289.md)|对于函数：ReadableTo 或 WritableTo 没有用作参数的限制规范|
 |[C28290](../code-quality/c28290.md)|函数的批注包含的外部对象数量多于实际的参数数量|
 |[C28291](../code-quality/c28291.md)|deref 级别 0 处的 post null/notnull 对于函数无意义。|
 |[C28300](../code-quality/c28300.md)|运算符的不可兼容类型的表达式操作数|
 |[C28301](../code-quality/c28301.md)|函数的第一个声明中不包含任何批注。|
-|[C28302](../code-quality/c28302.md)|在批注中找到多余的 _Deref\_ 运算符。|
-|[C28303](../code-quality/c28303.md)|在批注中找到含义模糊的 _Deref\_ 运算符。|
-|[C28304](../code-quality/c28304.md)|发现未正确放置的 _Notref\_ 运算符被应用到令牌。|
+|[C28302](../code-quality/c28302.md)|一个额外\_Deref\_运算符在批注上找到。|
+|[C28303](../code-quality/c28303.md)|不明确\_Deref\_运算符在批注上找到。|
+|[C28304](../code-quality/c28304.md)|未正确放置\_Notref\_找到运算符应用于标记。|
 |[C28305](../code-quality/c28305.md)|在分析标记时发现错误。|
-|[C28306](../code-quality/c28306.md)|参数上的批注是退化|
-|[C28307](../code-quality/c28307.md)|参数上的批注是退化|
+|[C28306](../code-quality/c28306.md)|参数上的批注已弃用|
+|[C28307](../code-quality/c28307.md)|参数上的批注已弃用|
 |[C28350](../code-quality/c28350.md)|批注介绍了无条件适用的情形。|
 |[C28351](../code-quality/c28351.md)|批注介绍了在条件中无法使用动态值（变量）的位置。|

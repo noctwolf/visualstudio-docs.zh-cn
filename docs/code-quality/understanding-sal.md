@@ -10,23 +10,23 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 82d6719ee57000ebec8ad88a90543031e0d3eeb8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: cf0e7aed5c8f28805d19039672c500312e44dc06
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927541"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945944"
 ---
 # <a name="understanding-sal"></a>了解 SAL
-Microsoft 源代码注释语言 (SAL) 提供一组你可以使用来描述函数如何使用其参数、 有关，它使的假设和它使它完成时的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 批注来修改其分析的函数。 适用于 Windows 驱动程序开发 SAL 2.0 的详细信息，请参阅[SAL 2.0 批注的 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。
+Microsoft 源代码注释语言 (SAL) 提供了一组可用于描述函数如何使用它的参数、 关于它们的假设和它对完成的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 注释来修改其分析函数。 Windows 驱动程序开发的 SAL 2.0 的详细信息，请参阅[SAL 2.0 注释为 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。
 
- 本机，C 和 c + + 提供开发人员的意图并不变性一致地 express 仅有限的方式。 通过使用 SAL 批注，你可以描述更详细地了解函数，以便开发人员使用它们可以更好地了解如何使用它们。
+ 本机 C 和 c + + 提供仅面向开发人员来一致地表达意图和不变性有限的方式。 通过使用 SAL 注释，可以描述中更详细地介绍函数，以便开发人员会使用这些资源可以更好地了解如何使用它们。
 
 ## <a name="what-is-sal-and-why-should-you-use-it"></a>什么是 SAL 以及您为何使用它?
- 简言之，SAL 是一种成本较低的方法，让编译器可以为你检查你的代码。
+ 简单地说，SAL 是较低的方式让编译器为您检查您的代码。
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL 使代码更重要
- SAL 可以帮助你使你的代码设计更易于理解，对于理解和代码分析工具。 请看以下示例显示 C 运行时函数`memcpy`:
+ SAL 可以帮助您使代码设计更易于理解，人类和代码分析工具。 请考虑此示例演示 C 运行时函数`memcpy`:
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 
 ```
 
- 知道此函数的？ 当实现或调用一个函数时，某些属性必须得到维护，以确保程序正确性。 只需通过查看如示例中的声明时，你不知道这些凭据。 如果没有 SAL 批注，您将必须依赖于文档或代码注释。 下面是有关的 MSDN 文档`memcpy`显示：
+ 您是否能告诉该函数的？ 当一个函数是实现或调用时，必须维护的某些属性以确保程序的正确性。 只需通过查看声明如示例中，你不知道它们是什么。 如果没有 SAL 批注，您必须依赖于文档或代码注释。 下面是 MSDN 文档的`memcpy`说：
 
-> "副本计算 src 到目标的字节的数。 如果源和目标重叠，memcpy 的行为不确定。 Memmove 用于处理重叠区域。
-> **安全说明：** 大小等于或大于源缓冲区请确保目标缓冲区是否相同。 有关详细信息，请参阅避免缓冲区溢出。"
+> "副本计数字节到目标的 src。 如果源和目标重叠，memcpy 的行为未定义。 使用 memmove 处理重叠区域。
+> **安全说明：** 确保目标缓冲区是相同大小等于或大于源缓冲区。 有关详细信息，请参阅避免缓冲区溢出。"
 
- 该文档包含几个建议，你的代码必须维护某些属性，以确保程序正确性的位的信息：
+ 文档中包含几位的信息，建议你的代码具有要维护某些属性，以确保程序的正确性：
 
--   `memcpy` 副本`count`从源缓冲区到目标缓冲区的字节。
+-   `memcpy` 副本`count`中的字节源缓冲区到目标缓冲区。
 
 -   目标缓冲区必须至少与源缓冲区一样大。
 
- 但是，编译器无法读取该文档或非正式的注释。 它不知道两个缓冲区之间不存在关系和`count`，和它也不能有效地猜测关系。 SAL 无法提供有关的属性和函数，实现更加清晰，如下所示：
+ 但是，编译器无法读取的文档或非正式注释。 它不知道两个缓冲区之间不存在关系和`count`，它也不能有效地猜猜有关关系。 SAL 可以提供更多更清晰的属性和函数的实现，如下所示：
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
- 请注意，这些批注类似于 MSDN 文档中的信息，但它们更简明，它们遵循语义的模式。 当读取此代码时，您可以快速了解此函数的属性以及如何避免缓冲区溢出安全问题。 更理想的做法 SAL 提供的语义模式可以提高效率和在早期的潜在 bug 发现中的自动的代码分析工具的有效性。 假设有人将写入此错误实现的`wmemcpy`:
+ 请注意，这些批注类似于 MSDN 文档中的信息，但更简洁，并且它们都遵循语义的模式。 阅读此代码，可以快速了解此函数的属性以及如何避免缓冲区溢出的安全问题。 更为可喜的是，SAL 提供的语义模式可以提高效率和效果在早期发现潜在的 bug 的自动的代码分析工具。 假设有人编写的这一错误实现`wmemcpy`:
 
 ```cpp
 
@@ -78,59 +78,59 @@ wchar_t * wmemcpy(
 
 ```
 
- 此实现包含一种常见关闭一个错误。 幸运的是，代码创作者包含的 SAL 缓冲区大小批注-代码分析工具无法通过分析此单独的函数捕获 bug。
+ 此实现包含一种常见关闭--一个错误。 幸运的是，代码作者包含 SAL 缓冲区大小批注，代码分析工具无法通过分析此函数只捕获 bug。
 
 ### <a name="sal-basics"></a>SAL 基础
  SAL 定义四种基本类型的参数，按使用模式进行分类。
 
 |类别|参数批注|描述|
 |--------------|--------------------------|-----------------|
-|**输入调用函数**|`_In_`|数据传递给调用的函数，并以只读方式处理。|
-|**输入调用函数，并输出到调用方**|`_Inout_`|可以使用的数据传递给函数，并可能被修改。|
-|**到调用方的输出**|`_Out_`|调用方仅提供要写入的调用函数的空间。 所调用的函数将数据写入到该空间。|
-|**指向调用方的输出**|`_Outptr_`|如**输出到调用方**。 被调用函数返回的值是一个指针。|
+|**对输入调用函数**|`_In_`|数据传递给被调用函数，并以只读方式处理。|
+|**对输入调用函数，并输出发送到调用方**|`_Inout_`|可以使用的数据传递到函数，并可能被修改。|
+|**输出到调用方**|`_Out_`|调用方仅提供要写入到的被调用函数的空间。 被调用的函数将数据写入到该空间。|
+|**指向调用方的输出**|`_Outptr_`|像**输出到调用方**。 被调用函数返回的值是一个指针。|
 
- 这些四个基本批注可更明确采用各种方法。 默认情况下，带批注的指针参数都被认为是所需-它们必须为非 NULL，当函数为成功。 基本的批注的最常使用变体指示指针参数是可选的-如果它为 NULL，函数可以仍会成功中执行其工作。
+ 这些四个基本批注可以进行更显式以各种方式。 默认情况下，带批注的指针参数被假定为必需，它们必须为非 NULL 函数才会成功。 基本的批注的最常使用变体指示指针参数是可选的-如果，则为 NULL，该函数仍可以成功中执行其工作。
 
- 下表显示如何区分必需和可选参数：
+ 此表显示了如何区分必需和可选参数：
 
 ||参数是必需的|参数是可选的|
 |-|-----------------------------|-----------------------------|
-|**输入调用函数**|`_In_`|`_In_opt_`|
-|**输入调用函数，并输出到调用方**|`_Inout_`|`_Inout_opt_`|
-|**到调用方的输出**|`_Out_`|`_Out_opt_`|
+|**对输入调用函数**|`_In_`|`_In_opt_`|
+|**对输入调用函数，并输出发送到调用方**|`_Inout_`|`_Inout_opt_`|
+|**输出到调用方**|`_Out_`|`_Out_opt_`|
 |**指向调用方的输出**|`_Outptr_`|`_Outptr_opt_`|
 
- 这些批注帮助识别可能未初始化的值，并以正式且准确的方式使用无效的 null 指针。 将 NULL 传递给所需的参数可能会导致崩溃，或者它可能导致要返回的"失败"的错误代码。 两种方式的函数中执行其作业无法成功。
+ 这些批注帮助识别可能未初始化的值，并正式且准确的方式使用无效的 null 指针。 将 NULL 传递到所需的参数可能会导致崩溃的原因，或它可能会导致要返回的"失败"，错误代码。 无论哪种方式，该函数中执行其作业不成功。
 
 ## <a name="sal-examples"></a>SAL 示例
- 本部分说明的代码示例的基本的 SAL 批注。
+ 本部分展示了基本的 SAL 注释的代码示例。
 
 ### <a name="using-the-visual-studio-code-analysis-tool-to-find-defects"></a>使用 Visual Studio Code 分析工具查找 Bug
- 在示例中，Visual Studio 代码分析工具用于与 SAL 批注一起查找代码缺陷。 下面介绍了如何执行该操作。
+ 在示例中，Visual Studio 代码分析工具是与一起使用 SAL 批注以查找代码缺陷。 下面介绍了如何执行此操作。
 
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>使用 Visual Studio 代码分析工具和 SAL
 
-1.  在 Visual Studio 中，打开一个包含 SAL 批注的 c + + 项目。
+1.  在 Visual Studio 中，打开包含 SAL 注释的 c + + 项目。
 
-2.  在菜单栏上，选择**生成**，**对解决方案运行代码分析**。
+2.  在菜单栏上依次选择**构建**，**对解决方案运行代码分析**。
 
-     请考虑 _In\_本部分中的示例。 如果在其上运行代码分析，则显示此警告：
+     请考虑\_在\_在本部分中的示例。 如果对其运行代码分析，则显示此警告：
 
-    > **C6387 无效的参数值**点可能是"0": 这不符合函数 InCallee 的规范。
+    > **参数值无效 C6387** pInt 可能是"0": 这不符合函数 InCallee 的规范。
 
-### <a name="example-the-in-annotation"></a>示例： _In\_批注
+### <a name="example-the-in-annotation"></a>示例：\_在\_批注
  `_In_`批注指示：
 
--   参数必须是有效，并且将不会修改。
+-   该参数必须是有效，并且不会被修改。
 
--   该函数仅将从单个元素缓冲区读取。
+-   该函数将只读取单个元素缓冲区中。
 
 -   调用方必须提供缓冲区，并对其进行初始化。
 
--   `_In_` 指定"只读"。 一个常见错误，将应用`_In_`到应有的参数`_Inout_`批注相反。
+-   `_In_` 指定"只读"。 一个常见错误是应用`_In_`参数应具有`_Inout_`批注相反。
 
--   `_In_` 允许在非指针参数标量分析器但忽略。
+-   `_In_` 允许在非指针标量分析器但被忽略。
 
 ```cpp
 void InCallee(_In_ int *pInt)
@@ -155,10 +155,10 @@ void BadInCaller()
 
 ```
 
- 如果在此示例使用 Visual Studio 代码分析，它会验证调用方将非 Null 指针传递到初始化缓冲区`pInt`。 在这种情况下，`pInt`指针不能为 NULL。
+ 如果在此示例中使用 Visual Studio 代码分析，它会验证调用方将非 Null 指针传递给初始化缓冲区`pInt`。 在这种情况下，`pInt`指针不能为 NULL。
 
-### <a name="example-the-inopt-annotation"></a>示例： _In_opt\_批注
- `_In_opt_` 等同于`_In_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。
+### <a name="example-the-inopt-annotation"></a>示例：\_中\_选择\_批注
+ `_In_opt_` 等同于`_In_`，只不过允许的输入的参数为 NULL，并且因此，该函数应检查这一点。
 
 ```cpp
 
@@ -183,10 +183,10 @@ void InOptCaller()
 
 ```
 
- Visual Studio 代码分析验证函数检查为空，然后才能访问缓冲区。
+ Visual Studio 代码分析会验证该函数检查为空，然后才能访问缓冲区。
 
-### <a name="example-the-out-annotation"></a>示例： 缩小 （_o)\_批注
- `_Out_` 支持一种常见的方案，在其中传入指向元素缓冲区的非 NULL 指针和函数初始化元素。 调用方无需调用; 之前将缓冲区初始化所调用的函数承诺来返回之前对其进行初始化。
+### <a name="example-the-out-annotation"></a>示例：\_出\_批注
+ `_Out_` 支持一种常见的方案，在其中传入指向的元素的缓冲区的非 NULL 指针和函数来初始化元素。 调用方没有调用; 之前将缓冲区初始化被调用的函数有望在返回之前对其进行初始化。
 
 ```cpp
 
@@ -210,10 +210,10 @@ void OutCaller()
 
 ```
 
- Visual Studio 代码分析工具验证调用方将非 NULL 指针传递给缓冲区`pInt`和其返回之前，将缓冲区初始化函数。
+ Visual Studio 代码分析工具验证调用方将非 NULL 指针传递到的缓冲区`pInt`并在返回之前，将缓冲区初始化函数。
 
-### <a name="example-the-outopt-annotation"></a>示例： _Out_opt\_批注
- `_Out_opt_` 等同于`_Out_`，只不过允许参数为 NULL，因此，该函数应检查这一点。
+### <a name="example-the-outopt-annotation"></a>示例：\_出\_选择\_批注
+ `_Out_opt_` 等同于`_Out_`，只不过该参数是否可为 NULL，并且因此，该函数应检查这一点。
 
 ```cpp
 
@@ -238,13 +238,13 @@ void OutOptCaller()
 
 ```
 
- Visual Studio 代码分析会验证此函数检查 null 之前`pInt`取消引用，并且如果`pInt`不为 NULL，返回之前，由该函数初始化缓冲区。
+ Visual Studio 代码分析验证，此函数会检查是否在之前为空`pInt`被取消引用，并且如果`pInt`不为 NULL，在返回之前，该函数初始化缓冲区。
 
-### <a name="example-the-inout-annotation"></a>示例： _Inout\_批注
- `_Inout_` 用于对可能会发生更改函数的指针参数进行批注。 指针必须指向有效的调用之前初始化的数据，即使它更改，它仍需返回时必须具有有效的值即可。 批注指定函数可能自由地读取和写入到一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。
+### <a name="example-the-inout-annotation"></a>示例： \_Inout\_批注
+ `_Inout_` 用于进行批注可能会更改函数的指针参数。 指针必须指向有效的调用之前已初始化的数据，并且即使更改，仍必须有效的值返回。 批注指定函数可能会随意从读取和写入一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。
 
 > [!NOTE]
->  如`_Out_`，`_Inout_`必须将应用于可修改的值。
+>  像`_Out_`，`_Inout_`必须将应用于可修改的值。
 
 ```cpp
 
@@ -270,10 +270,10 @@ void BadInOutCaller()
 
 ```
 
- Visual Studio 代码分析验证调用方将非 NULL 指针传递到初始化缓冲区`pInt`，而且，在返回时之前,`pInt`仍非 null 和初始化缓冲区。
+ Visual Studio 代码分析验证调用方将非 NULL 指针传递给初始化缓冲区`pInt`，并且，在返回时之前,`pInt`仍非 null 和缓冲区初始化。
 
-### <a name="example-the-inoutopt-annotation"></a>示例： _Inout_opt\_批注
- `_Inout_opt_` 等同于`_Inout_`，只不过允许输入的参数为 NULL，因此，该函数应检查这一点。
+### <a name="example-the-inoutopt-annotation"></a>示例： \_Inout\_选择\_批注
+ `_Inout_opt_` 等同于`_Inout_`，只不过允许的输入的参数为 NULL，并且因此，该函数应检查这一点。
 
 ```cpp
 
@@ -300,10 +300,10 @@ void InOutOptCaller()
 
 ```
 
- Visual Studio 代码分析会验证此函数检查是否为空，它访问缓冲区中之前，且是否`pInt`不为 NULL，返回之前，由该函数初始化缓冲区。
+ Visual Studio 代码分析验证，此函数进行 NULL 检查，它将访问缓冲区之前，并且如果`pInt`不为 NULL，在返回之前，该函数初始化缓冲区。
 
-### <a name="example-the-outptr-annotation"></a>示例： _Outptr\_批注
- `_Outptr_` 用于添加批注具有用于返回指针的参数。  参数本身不应为 NULL，所调用的函数在它返回非 NULL 指针和该指针指向初始化的数据。
+### <a name="example-the-outptr-annotation"></a>示例： \_Outptr\_批注
+ `_Outptr_` 用于批注的目的是要返回的指针参数。  参数本身不应为 NULL，和调用的函数中返回非 NULL 指针，该指针指向已初始化的数据。
 
 ```cpp
 
@@ -331,10 +331,10 @@ void OutPtrCaller()
 
 ```
 
- Visual Studio 代码分析验证调用方传递的非 NULL 指针`*pInt`，并返回之前，将缓冲区初始化函数。
+ Visual Studio 代码分析验证调用方传递非空指针`*pInt`，并在返回之前，将缓冲区初始化函数。
 
-### <a name="example-the-outptropt-annotation"></a>示例： _Outptr_opt\_批注
- `_Outptr_opt_` 等同于`_Outptr_`，只不过该参数是可选-调用方可以传递一个 NULL 指针的参数。
+### <a name="example-the-outptropt-annotation"></a>示例： \_Outptr\_选择\_批注
+ `_Outptr_opt_` 等同于`_Outptr_`，只不过参数是可选的调用方可以传递给 NULL 指针的参数。
 
 ```cpp
 
@@ -364,10 +364,10 @@ void OutPtrOptCaller()
 
 ```
 
- Visual Studio 代码分析会验证此函数检查 null 之前`*pInt`取消引用，并返回之前，将缓冲区初始化函数。
+ Visual Studio 代码分析验证此函数检查 null 之前`*pInt`被取消引用，并在返回之前，将缓冲区初始化函数。
 
-### <a name="example-the-success-annotation-in-combination-with-out"></a>示例： _Success\_批注结合缩小 （_o）\_
- 批注还可应用于大多数对象。  具体而言，还可以批注整个函数。  函数的最明显的特征之一是它可以成功或失败。 但如缓冲区和其大小之间的关联，C/c + + 不能表达函数成功或失败。 通过使用`_Success_`批注，您可以说出哪些成功函数如下所示。  参数`_Success_`批注是仅为 true 指示该函数已成功完成的表达式。 表达式可以是任何批注分析器可以处理。 如果该函数成功，则在函数返回之后的批注的效果才适用。 此示例演示如何`_Success_`与交互`_Out_`以执行正确的操作。 你可以使用关键字`return`来表示的返回值。
+### <a name="example-the-success-annotation-in-combination-with-out"></a>示例：\_成功\_批注结合\_出\_
+ 批注可以应用于大多数对象。  具体而言，你可以批注整个函数。  一个函数的最明显特征之一是它可以成功或失败。 但其大小和缓冲区之间的关联，如 C/c + + 无法表达函数成功还是失败。 通过使用`_Success_`批注，您可以说，函数成功指数。  为参数`_Success_`批注是只是一个表达式，为 true 表示该函数已成功。 表达式可以是任何批注分析器可以处理。 如果此函数成功后该函数将返回, 的批注的效果才适用。 此示例演示如何`_Success_`与交互`_Out_`以执行正确的操作。 可以使用关键字`return`来表示返回值。
 
 ```cpp
 
@@ -384,30 +384,30 @@ bool GetValue(_Out_ int *pInt, bool flag)
 
 ```
 
- `_Out_`批注会导致 Visual Studio 代码分析，以验证调用方将非 NULL 指针传递给缓冲区`pInt`，并返回之前，将缓冲区初始化函数。
+ `_Out_`批注将导致 Visual Studio 代码分析来验证调用方将非 NULL 指针传递到的缓冲区`pInt`，并在返回之前，将缓冲区初始化函数。
 
 ## <a name="sal-best-practice"></a>SAL 最佳做法
 
 ### <a name="adding-annotations-to-existing-code"></a>向现有代码中添加批注
- SAL 是代码的一种功能强大的技术，可帮助你提高的安全性和可靠性的你。 了解 SAL 后，你可以对您的日常工作应用新的技能。 在新代码中，可以通过在整个; 设计使用基于 SAL 的规范在较旧的代码中，可以以增量方式添加批注和每次更新，从而提高效益。
+ SAL 是代码的一种功能强大的技术，可帮助您提高安全性和可靠性。 了解 SAL 后，可以将新的技能应用到您的日常工作。 在新代码中，你可以通过基于 SAL 的规范; 在整个设计在较旧代码中，可以以增量方式添加批注和每次更新，从而提高效益。
 
- 已批注 Microsoft 公共标头。 因此，我们建议，在你的项目中首先批注叶节点函数和调用 Win32 Api，以获得最佳结果的函数。
+ Microsoft 公共标头已进行批注。 因此，我们建议，在项目中首先批注叶节点函数和函数调用 Win32 Api 来获取最大效益。
 
 ### <a name="when-do-i-annotate"></a>何时批注?
  以下是一些准则：
 
 -   批注所有指针参数。
 
--   批注值范围批注，以便代码分析可以确保缓冲区和指针的安全性。
+-   批注值范围批注，以便代码分析可确保缓冲区和指针安全。
 
--   批注锁定规则和锁定的副作用。 有关详细信息，请参阅[批注锁定行为](../code-quality/annotating-locking-behavior.md)。
+-   锁定规则和锁定的副作用批注。 有关详细信息，请参阅[批注锁定行为](../code-quality/annotating-locking-behavior.md)。
 
--   批注驱动程序属性和其他特定于域的属性。
+-   驱动程序属性和其他特定于域的属性批注。
 
- 或者，还可以批注整个你的意图更明显并使其更方便地进行检查，进行了批注的所有参数。
+ 或者，可以对所有参数，以便在你的意图更明显，使其更方便地进行检查，进行了批注进行都批注。
 
 ## <a name="related-resources"></a>相关资源
  [代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)
 
 ## <a name="see-also"></a>请参阅
- [使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[批注结构和类](../code-quality/annotating-structs-and-classes.md)[对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)
+ [使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)[对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)[对函数行为进行批注](../code-quality/annotating-function-behavior.md)[批注结构和类](../code-quality/annotating-structs-and-classes.md)[对锁定行为进行批注](../code-quality/annotating-locking-behavior.md)[指定何时以及在何处应用批注](../code-quality/specifying-when-and-where-an-annotation-applies.md)[最佳做法和示例](../code-quality/best-practices-and-examples-sal.md)

@@ -1,5 +1,5 @@
 ---
-title: '&lt;字符串&gt;元素 （引导程序） |Microsoft 文档'
+title: '&lt;字符串&gt;元素 （引导程序） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fccc928efe8d30ef5a2ee99b476a5b0e35b2090e
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: fc1cab2fdb0a175fc9365b2a8b4b17dca46a30a2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815439"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077667"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt;字符串&gt;元素 （引导程序）
 定义产品名称、 包名称和安装错误消息的本地化的字符串。  
@@ -42,10 +42,10 @@ ms.locfileid: "34815439"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `Strings`元素是的子`Package`元素。 它具有任何属性。  
+ `Strings`元素是子元素的`Package`元素。 它没有任何属性。  
   
 ## <a name="string"></a>String  
- `String`元素是的子`Strings`元素。 A`Strings`元素可能具有一个或多`String`元素。  
+ `String`元素是子元素的`Strings`元素。 一个`Strings`元素可能具有一个或多个`String`元素。  
   
  `String` 具有以下属性。  
   

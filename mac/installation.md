@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 0523c418c5361bfdda6f56bc7845989ed0fdaa8c
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 416d82b7325ffa4a9952630e4c1ca9b5fbc7834e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34453824"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280489"
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>设置和安装 Visual Studio for Mac
 
@@ -23,11 +23,11 @@ ms.locfileid: "34453824"
 
 * 运行 macOS Sierra 10.12 或更高版本的 Mac
 * Xcode 8.3 或更高版本。 通常建议使用稳定的最新版本。
-* 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。需要 Apple ID 才可安装和登录 Xcode。
+* 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
 
 ## <a name="install"></a>安装
 
-1. 从 [https://www.visualstudio.com/](https://www.visualstudio.com/) 下载 Visual Studio for Mac
+1. 从 [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/) 下载 Visual Studio for Mac
 
 2. 下载安装包后，单击“VisualStudioInstaller.dmg”文件装载安装程序，然后通过双击徽标运行它，如下图所示：
 
@@ -84,7 +84,7 @@ ms.locfileid: "34453824"
   ![打开 Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
-如果在原始安装期间选择不安装平台或工具（通过在步骤 #6 中取消选择相关选项），且希望稍后添加该组件，必须再次运行[安装程序](https://www.visualstudio.com/vs/)。
+如果在原始安装期间选择不安装平台或工具（通过在步骤 #6 中取消选择相关选项），且希望稍后添加该组件，必须再次运行[安装程序](https://visualstudio.microsoft.com/vs/)。
 
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后安装 Visual Studio for Mac

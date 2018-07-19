@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d70005a7e876b299e93ac2891ce6774a6300792
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 1ef917b4e8aa5cde8d95c036523bb525799cc19e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36279958"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的脱机安装
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/20/2018
 - 在安装过程中，我们会尝试三种不同的下载技术（WebClient、BITS 和 WinInet），以最大限度地减少对防病毒和代理软件的干扰；
 - 由于安装 Visual Studio 所需的文件发布在全球传送网络上，因此我们可以从本地服务器为你获取这些文件。
 
-建议尝试使用 [Visual Studio Web 安装程序](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL) &mdash; 使用体验一定会让你感到满意。
+建议尝试使用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) &mdash; 使用体验一定会让你感到满意。
 
  > [!div class="button"]
- > [下载 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocsOL)
+ > [下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
 
 如果因为 Internet 连接不可用或不可靠想进行脱机安装，请参阅[在低带宽或不可靠的网络环境中安装 Visual Studio 2017](../install/install-vs-inconsistent-quality-network.md)。 可以使用命令行创建所需文件的本地缓存，以完成脱机安装。 此过程会替换以前版本可用的 ISO 文件。
 
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/20/2018
 
 ## <a name="get-support"></a>获取支持
 
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
 

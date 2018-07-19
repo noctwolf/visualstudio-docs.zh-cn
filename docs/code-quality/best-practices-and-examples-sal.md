@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e1b86508b803844255458f3aa2c7f33d859af93
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900989"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945437"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。
@@ -46,7 +46,7 @@ void Func2(_Inout_ PCHAR p1)
 
 ## <a name="opt"></a>\_opt\_
 
-如果不允许调用方传递 null 指针，请使用 `_In_` 或 `_Out_`，而不是 `_In_opt_` 或 `_Out_opt_`。 这甚至适用于函数，该函数会检查其参数，如果参数不应为 NULL 但却为 NULL，则会返回错误。 尽管使函数检查其参数的意外的 NULL 并适当地返回是良好的防御性编码习惯，但它并不意味着参数批注可以是可选类型 (`_*Xxx*_opt_`)。
+如果不允许调用方传递 null 指针，请使用 `_In_` 或 `_Out_`，而不是 `_In_opt_` 或 `_Out_opt_`。 这甚至适用于函数，该函数会检查其参数，如果参数不应为 NULL 但却为 NULL，则会返回错误。 尽管具有意外的 NULL 检查其参数并适当地返回的函数是很好的防御性编码习惯，但它并不意味着参数批注可以是可选类型 (`_*Xxx*_opt_`)。
 
 ```cpp
 
@@ -64,7 +64,7 @@ void Func2(_Out_ int *p1)
 
 ```
 
-## <a name="predefensive-and-postdefensive"></a>\_Pre\_防御性\_和\_Post\_防御性\_
+## <a name="predefensive-and-postdefensive"></a>\_Pre\_防御\_并\_Post\_防御性\_
 
 如果函数出现在信任边界上，则建议您使用 `_Pre_defensive_` 批注。  “防御性”修饰符可修改特定批注，用于指明在调用时应严格检查界面，但在实现体中，应假定可能会传递错误的参数。 这种情况下，在信任边界上将首选 `_In_ _Pre_defensive_`，以便指明尽管调用方在尝试传递 NULL 时会出现错误，但还是会分析函数体（就像参数可能是 NULL 一样），因此，任何取消指针引用而不首先检查其是否为 NULL 的尝试都会被标记。  还可使用 `_Post_defensive_` 批注，以便用于回调，其中假设受信任方为调用方，而不受信任的代码为调用的代码。
 
@@ -151,7 +151,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 
 ```
 
-## <a name="outrange"></a>\_Out_range\_
+## <a name="outrange"></a>\_Out\_范围\_
 
 如果参数是一个指针，并且想要表示指针指向的元素值的范围，请使用 `_Deref_out_range_` 而不是 `_Out_range_`。 在下面的示例中，表示的是 *pcbFilled 的范围，而不是 pcbFilled 的范围。
 
@@ -175,7 +175,7 @@ void Func2(
 
  一些工具并不是严格需要 `_Deref_out_range_(0, cbSize)`，因为它可从 `_Out_writes_to_(cbSize,*pcbFilled)` 推断，但为了完整性而将其显示在此处。
 
-## <a name="wrong-context-in-when"></a>中的上下文\_时\_
+## <a name="wrong-context-in-when"></a>错误的上下文中\_时\_
 
 另一个常见错误是使用前置条件的状态后计算。 在下面的示例中，`_Requires_lock_held_` 是一个前置条件。
 
@@ -193,7 +193,7 @@ int Func2(_In_ MyData *p, int flag);
 
  表达式 `result` 是指不适用于状态前的状态后值。
 
-## <a name="true-in-success"></a>TRUE 中\_成功\_
+## <a name="true-in-success"></a>在中，则返回 TRUE\_成功\_
 
 如果函数成功（范围值为非零），请使用 `return != 0` 作为成功条件，而不使用 `return == TRUE`。 非零不一定表示等于编译器为 `TRUE` 提供的实际值。 `_Success_` 的参数是一个表达式，并且以下表达式的计算结果相等：`return != 0`、`return != false`、`return != FALSE` 和 `return`（无参数或比较）。
 
@@ -233,7 +233,7 @@ void Func2(
 
 ```
 
-## <a name="annotations-on-return-values"></a>批注的返回值
+## <a name="annotations-on-return-values"></a>对返回值的批注
 
 下面的示例演示返回值批注中的一个常见问题。
 
@@ -251,7 +251,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
 
 ## <a name="see-also"></a>请参阅
 
-[使用 SAL 批注以减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[使用 SAL 注释减少 C/c + + 代码缺陷](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [了解 SAL](../code-quality/understanding-sal.md)
 [对函数参数和返回值进行批注](../code-quality/annotating-function-parameters-and-return-values.md)
 [对函数行为进行批注](../code-quality/annotating-function-behavior.md)

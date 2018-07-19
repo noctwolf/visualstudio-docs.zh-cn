@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - dotnet
 ms.openlocfilehash: 0df628a83bf88acb4f73d7bb47269458bd34ace9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952033"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38808880"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 

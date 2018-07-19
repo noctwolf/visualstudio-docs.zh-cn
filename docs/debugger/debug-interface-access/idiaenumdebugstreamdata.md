@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumDebugStreamData |Microsoft 文档
+title: IDiaEnumDebugStreamData |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5fe2d4a627b9d607607ba53c3962d244c5c369
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 67b71fb229172049d11a036d5a98275f93fe2cd3
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460620"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058277"
 ---
 # <a name="idiaenumdebugstreamdata"></a>IDiaEnumDebugStreamData
-提供对调试数据流中的记录的访问。  
+提供了对调试数据流中记录的访问。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,23 +35,23 @@ IDiaEnumDebugStreamData : IUnknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|检索[IEnumVARIANT 接口](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e)的此枚举器的版本。|  
-|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|检索调试数据流中的记录的数。|  
-|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|检索调试数据流的名称。|  
+|[IDiaEnumDebugStreamData::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-newenum.md)|检索[IEnumVARIANT 接口](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant)此枚举器的版本。|  
+|[IDiaEnumDebugStreamData::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-count.md)|检索调试数据流中的记录数。|  
+|[IDiaEnumDebugStreamData::get_name](../../debugger/debug-interface-access/idiaenumdebugstreamdata-get-name.md)|检索调试数据流中的名称。|  
 |[IDiaEnumDebugStreamData::Item](../../debugger/debug-interface-access/idiaenumdebugstreamdata-item.md)|检索指定的记录。|  
-|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|枚举序列中检索指定的记录数。|  
-|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|跳过指定的数目的枚举的序列中的记录。|  
-|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|将枚举的序列重置到开头。|  
-|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|创建包含为当前的枚举器枚举的顺序一个枚举器。|  
+|[IDiaEnumDebugStreamData::Next](../../debugger/debug-interface-access/idiaenumdebugstreamdata-next.md)|枚举序列中检索指定的数目的记录。|  
+|[IDiaEnumDebugStreamData::Skip](../../debugger/debug-interface-access/idiaenumdebugstreamdata-skip.md)|将跳过指定的数目的枚举序列中的记录。|  
+|[IDiaEnumDebugStreamData::Reset](../../debugger/debug-interface-access/idiaenumdebugstreamdata-reset.md)|枚举的序列重置到开头。|  
+|[IDiaEnumDebugStreamData::Clone](../../debugger/debug-interface-access/idiaenumdebugstreamdata-clone.md)|创建一个包含当前枚举数相同的枚举的序列的枚举器。|  
   
 ## <a name="remarks"></a>备注  
- 此接口表示调试数据流中的记录的流。 大小和解释每个记录均依赖于该记录来自的数据流。 此接口有效地提供对中的符号文件的原始数据字节的访问。  
+ 此接口表示调试数据流中的记录的流。 大小和每个记录的解释是依赖于该记录来自的数据流。 此接口能够有效地提供对符号文件中的原始数据字节的访问。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
  调用[idiaenumdebugstreams:: Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)或[idiaenumdebugstreams:: Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)方法以获取`IDiaEnumDebugStreamData`对象。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何访问单个数据流和其记录。  
+ 此示例演示如何访问单个数据流和它的记录。  
   
 ```C++  
 void PrintStreamData(IDiaEnumDebugStreamData* pStream)  

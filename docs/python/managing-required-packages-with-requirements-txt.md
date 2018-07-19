@@ -1,7 +1,7 @@
 ---
 title: 使用 requirements.txt 文件管理包要求
 description: requirements.txt 文件可用于管理项目的依赖项。 如果收到包含 requirements.txt 文件的项目，你将可以在一个步骤中轻松安装这些依赖关系。
-ms.date: 02/20/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 447eda835a9ea3114f06a6f1a854475191934fad
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a97a274053f95aac3cc676c17e50e23906fea377
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583926"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37116996"
 ---
 # <a name="managing-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理所需的包
 

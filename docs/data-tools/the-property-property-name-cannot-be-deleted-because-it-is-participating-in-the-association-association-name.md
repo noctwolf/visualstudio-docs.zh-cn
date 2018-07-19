@@ -10,30 +10,30 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98f95c489758b808ae7a210f7d83332f84571d1f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6ed6b14f64d16d1f18d4b358761169c3d424cee8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924134"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174057"
 ---
-# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>属性&lt;属性名称&gt;无法删除，因为它参与关联&lt;关联名称&gt;
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>该属性&lt;属性名称&gt;不能删除，因为它参与了关联&lt;关联名称&gt;
 
-所选的属性被设置为**关联属性**错误消息中指示的类之间关联。 如果属性参与了数据类之间的关联，则无法删除。
+所选的属性设置为**关联属性**错误消息中指示的类之间的关联。 如果属性参与了数据类之间的关联，则无法删除。
 
-设置**关联属性**为数据类，可以成功删除删除的所需的属性的另一个属性。
+设置**关联属性**到不同的数据类可以成功删除删除所需的属性的属性。
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
-1. 在 O/R 设计器中选择连接错误消息中指示的数据类的关联连线。
+1. 在选择的关联连线**O/R 设计器**连接错误消息中指示的数据类。
 
 2. 双击该连线以打开**关联编辑器**对话框。
 
-3. 删除从属性**关联属性**。
+3. 删除属性**关联属性**。
 
 4. 再次尝试删除该属性。
 
 ## <a name="see-also"></a>请参阅
 
 - [O-R 设计器消息](../data-tools/o-r-designer-messages.md)
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

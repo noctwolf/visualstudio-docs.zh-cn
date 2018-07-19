@@ -1,5 +1,5 @@
 ---
-title: 沙盒解决方案注意事项 |Microsoft 文档
+title: 沙盒解决方案注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -23,27 +23,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ff85f3407fb24d6d49856bb11ff1852c544cad35
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118729"
 ---
-# <a name="sandboxed-solution-considerations"></a>Sandboxed Solution Considerations
-  *沙盒解决方案*是使站点集合用户能够上载其自己的自定义代码的解决方案的 Microsoft SharePoint 2010 中的功能。 常见的沙盒解决方案是将 Web 部件添加自己的用户。  
+# <a name="sandboxed-solution-considerations"></a>沙盒解决方案注意事项
+  *沙盒解决方案*是使站点集合用户上传自己的自定义代码的解决方案的 Microsoft SharePoint 2010 中的功能。 常见的沙盒解决方案是将 Web 部件添加其自己的用户。  
   
- 沙盒的 SharePoint 应用程序在有权访问 Web 场的有限一部分使用安全的监视过程中运行。 Microsoft SharePoint 2010 结合使用的功能、 解决方案库、 监视的解决方案和验证框架来启用沙盒解决方案。  
+ 在有权访问有限 Web 场的一部分的安全、 受监视进程中运行沙盒 SharePoint 应用程序。 Microsoft SharePoint 2010 使用功能、 解决方案库、 监视、 解决方案和验证框架的组合实现沙盒解决方案。  
   
-## <a name="specifying-project-trust-level"></a>指定项目的信任级别  
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 支持通过布尔项目属性的沙盒解决方案调用*沙盒解决方案*。 可以随时在项目中，设置此属性或可以指定当创建的项目中**SharePoint 自定义向导**。  
+## <a name="specify-project-trust-level"></a>指定项目的信任级别
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 支持通过布尔项目属性的沙盒解决方案称为*沙盒解决方案*。 可以随时在项目中，设置此属性或可以指定当您创建的项目中**SharePoint 自定义向导**。  
   
 > [!NOTE]  
->  更改*沙盒解决方案*项目将在创建后的属性可能会导致验证错误。  
+>  更改*沙盒解决方案*属性在创建后的项目可能会导致验证错误。  
   
- 如果，解决方案将被视为场范围解决方案*沙盒解决方案*属性设置为**false**或你选择**部署为场解决方案**选项。 但是，该解决方案不会被视为场解决方案如果*沙盒解决方案*属性设置为**true**或你选择**部署为沙盒解决方案**在向导中的选项。  
+ 该解决方案被视为场范围的解决方案，如果*沙盒解决方案*属性设置为**false**或者选择**部署为场解决方案**选项。 但是，该解决方案不会被视为场解决方案如果*沙盒解决方案*属性设置为**true**或者选择**部署为沙盒解决方案**在向导中的选项。  
   
-## <a name="sharepoint-site-hierarchy"></a>SharePoint 站点层次结构  
- 若要了解如何沙盒解决方案工作，它有助于了解作用域中的 SharePoint 站点是层次结构。 顶部的元素称为 Web 场和其他元素都从属于它：  
+## <a name="sharepoint-site-hierarchy"></a>SharePoint 站点层次结构
+ 若要了解如何沙盒解决方案的工作，它有助于了解作用域中的 SharePoint 站点是层次结构。 顶级元素被称为 Web 场和其他元素都从属于它：  
   
  Web 场  
   
@@ -61,37 +62,37 @@ ms.lasthandoff: 04/16/2018
   
  站点 B1b  
   
- 网站集 B2  
+ 站点集合 B2  
   
  站点 B2a  
   
- 如你所见，Web 场可包含一个或多个 Web 应用，又可以包含一个或多个网站集，可以有子站点，并且其他操作。 对一个站点集合产生哪些影响仅站点集合和任何其他更改。 但是，在 Web 场级别所做的更改会影响为场的所有网站集中。  
+ 如您所见，Web 场可包含一个或多个 Web 应用程序，它又可以包含一个或多个站点集合，其中可以具有子站点，等等。 对一个站点集合产生哪些影响仅站点集合进行和任何其他更改。 但是，在 Web 场级别所做的更改会影响对场的所有站点集合。  
   
- Windows SharePoint Services (WSS) 3.0，可将解决方案部署到的场级别，但[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]可部署为场级别 （场解决方案） 或网站集级别 （沙盒解决方案）。  
+ Windows SharePoint Services (WSS) 3.0，可将解决方案部署到的场级别，仅但[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]允许您将部署到服务器场级别 （场解决方案） 或网站集级别 （沙盒解决方案）。  
   
-## <a name="why-sandboxed-solutions"></a>为什么沙盒解决方案？  
- 在 WSS 3.0 中，解决方案可能只能部署到的场级别。 这意味着影响整个 Web 场和的所有其他网站集和其下运行的应用程序，无法部署可能有害或不稳定的解决方案。 但是，通过使用沙盒解决方案，可以将你的解决方案部署的场，特定站点集合子区域。 若要提供附加保护，解决方案的程序集不是加载到主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]进程 (w3wp.exe)。 相反，它被加载到单独的进程 (SPUCWorkerProcess.exe)。 此过程进行监视，并实现配额和限制，以防止场中出现执行有害的活动，如运行消耗 CPU 周期的紧凑循环的沙盒解决方案。  
+## <a name="why-sandboxed-solutions"></a>为什么沙盒解决方案？
+ 在 WSS 3.0 中，可以仅向场级别部署解决方案。 这意味着整个 Web 场和其他网站集和其下运行的应用程序的所有受影响的无法部署可能有害或不稳定的解决方案。 但是，通过使用沙盒解决方案，可以将你的解决方案部署的场，在特定站点集合的子区域。 若要提供额外的保护，解决方案的程序集不是加载到主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]进程 (*w3wp.exe*)。 相反，加载到一个单独的进程 (*SPUCWorkerProcess.exe*)。 此过程受到监视，实施配额和限制，以防止场执行有害活动，如运行消耗 CPU 周期的紧密循环的沙盒解决方案中。  
   
-## <a name="site-collection-solution-gallery"></a>网站集解决方案库  
- [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 包含一项名为“网站集解决方案库”的功能。 你可以访问此功能，SharePoint 2010 管理中心页中，或通过打开**站点操作**菜单上，选择**站点设置**，然后选择**解决方案**链接下**库**SharePoint 站点中。 解决方案库是存储库的解决方案，使站点集合管理员能够管理其网站集中的解决方案。  
+## <a name="site-collection-solution-gallery"></a>网站集解决方案库
+ [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] 2010 包含一项名为“网站集解决方案库”的功能。 您可以访问此功能从 SharePoint 2010 管理中心页或通过打开**站点操作**菜单中，选择**站点设置**，然后选择**解决方案**链接下**库**SharePoint 站点中。 解决方案库是存储库的解决方案，使网站集管理员来管理其站点集合中的解决方案。  
   
- 解决方案库是存储在根 SharePoint 网站的 Web 文档库。 解决方案库替换站点模板，并支持解决方案包。 上载的 SharePoint 解决方案包 (.wsp) 文件时，它是为沙盒解决方案中进行处理。  
+ 解决方案库是存储在根 SharePoint 站点的站点中的文档库。 解决方案库替换站点模板，并支持解决方案包。 当 SharePoint 解决方案包 (*.wsp*) 上传文件，它被处理为沙盒解决方案。  
   
-## <a name="sandboxed-solution-limitations"></a>沙盒解决方案限制  
- 部署时沙盒解决方案，可用于它的 SharePoint 功能的数组是限制以减少它可以具有任何安全漏洞。 某些这些限制包括：  
+## <a name="sandboxed-solution-limitations"></a>沙盒解决方案的限制
+ 沙盒解决方案部署时，向其提供的 SharePoint 功能的数组是限制以减少可能会有任何安全漏洞。 其中某些限制包括：  
   
--   沙盒解决方案都具有可部署解决方案元素提供给他们的受限的子集。 可能易受攻击的 SharePoint 项目模板，如站点定义和工作流，将不可用。  
+-   沙盒解决方案已部署的解决方案元素提供给他们的受限的子集。 可能有漏洞的 SharePoint 项目模板，如站点定义和工作流，将不可用。  
   
--   SharePoint 运行沙盒解决方案中的代码的进程 (SPUCWorkerProcess.exe) 独立于主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]应用程序池 (w3wp.exe) 进程。  
+-   SharePoint 在进程中运行沙盒解决方案代码 (*SPUCWorkerProcess.exe*) 独立于主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]应用程序池 (*w3wp.exe*) 过程。  
   
--   映射的文件夹不能添加到项目。  
+-   无法将映射的文件夹添加到项目。  
   
--   中的类型[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能在沙盒解决方案的程序集。 此外，仅在类型[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]Microsoft.SharePoint 可以沙盒解决方案中使用的程序集。  
+-   中的类型[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能使用沙盒解决方案中的程序集。 此外，仅在类型[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]可以沙盒解决方案中使用 Microsoft.SharePoint 程序集。  
   
- 务必要注意为沙盒解决方案 SharePoint 服务器; 没有任何影响该指定 SharePoint 解决方案它只确定如何将 SharePoint 项目部署到 SharePoint 从[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和哪些程序集它绑定到。 它不会影响生成的.wsp 文件中，而该.wsp 文件的直接关联到任何数据*沙盒解决方案*属性。  
+ 务必要注意该指定 SharePoint 解决方案作为沙盒解决方案; 的 SharePoint 服务器上不产生任何影响它只确定如何将 SharePoint 项目部署到 SharePoint 从[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和它到绑定的程序集。 它不会影响生成 *.wsp*文件，并 *.wsp*文件没有直接关联到任何数据*沙盒解决方案*属性。  
   
-## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>功能和沙盒解决方案中的元素  
- 沙盒解决方案支持的以下功能和元素：  
+## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>功能和沙盒解决方案中的元素
+ 沙盒解决方案支持以下功能和元素：  
   
 -   内容的类型字段  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/16/2018
   
 -   导航  
   
--   Onet.xml  
+-   *Onet.xml*  
   
 -   SPItemEventReceiver  
   
@@ -119,11 +120,11 @@ ms.lasthandoff: 04/16/2018
   
 -   SPWebEventReceiver  
   
--   派生自的所有 Web 部件的支持 `System.Web.UI.WebControls.WebParts.WebPart`  
+-   对派生的所有 Web 部件的支持 `System.Web.UI.WebControls.WebParts.WebPart`  
   
 -   Web 部件  
   
--   WebTemplate 功能元素 （而不是 Webtemp.xml)  
+-   WebTemplate 功能元素 (而不是*Webtemp.xml*)  
   
 -   可视 Web 部件  
   
@@ -133,7 +134,7 @@ ms.lasthandoff: 04/16/2018
   
 -   自定义操作组  
   
--   场设限功能  
+-   服务器场范围的功能  
   
 -   `HideCustomAction` 元素  
   
@@ -141,8 +142,7 @@ ms.lasthandoff: 04/16/2018
   
 -   使用代码的工作流  
   
-## <a name="see-also"></a>请参阅  
- [差异沙盒解决方案与场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
+## <a name="see-also"></a>请参阅
+ [区别沙盒解决方案与场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)  
-  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 指定 ClickOnce 应用程序的开始菜单名称 |Microsoft 文档
+title: 如何： 指定 ClickOnce 应用程序的开始菜单名称 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a089fa67c975496c56d29d2d55c2f055888c96d9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d6bf265b2e3761ba1fd929e72e29f4c2c47cd449
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558862"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079551"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的“开始”菜单名称
-当[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]用于联机和脱机安装应用程序，条目添加到**启动**菜单和**添加或删除程序**列表。 默认情况下，显示名称是应用程序的程序集的名称相同，但你可以通过设置更改的显示名称**产品名称**中**发布选项**对话框。  
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>如何： 指定 ClickOnce 应用程序的开始菜单名称
+当[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序安装为联机和脱机使用，条目添加到**启动**菜单和**添加或删除程序**列表。 默认情况下，显示名称是应用程序程序集名称相同，但您可以通过设置更改显示名称**产品名称**中**发布选项**对话框。  
   
- **产品名称**将显示在 publish.htm 页; 上为已安装的脱机应用程序，它将是中的项名称**启动**菜单中，并且也将显示中的名称**添加或删除程序**。  
+ **产品名称**将显示在*publish.htm*页上; 对于已安装的脱机应用程序，它将中的条目的名称**启动**菜单中，并且也将在显示的名称**添加或删除程序**。  
   
- **发布者名称**将显示上述 publish.htm 页上**产品名称**，对于已安装的脱机应用程序，它也将是包含中的应用程序的图标的文件夹的名称和**启动**菜单。  
+ **发布者名称**将出现*publish.htm*上述页面**产品名称**，，对于已安装的脱机应用程序，它将是包含应用程序的文件夹的名称中的图标**启动**菜单。  
   
- 你可以设置**产品名称**和**发布者名称**中的属性**发布选项**对话框中，可在上找到**发布**页**项目设计器**。  
+ 可以设置**产品名称**并**发布服务器的名称**中的属性**发布选项**对话框中，可在上找到**发布**页**项目设计器**。  
   
 ### <a name="to-specify-a-start-menu-name"></a>若要指定的开始菜单名称  
   
@@ -44,10 +44,10 @@ ms.locfileid: "31558862"
   
 4.  单击**说明**。  
   
-5.  在**发布选项**对话框框中，输入要在中显示的名称**产品名称**。  
+5.  在中**发布选项**对话框框中，输入要在中显示的名称**产品名称**。  
   
-6.  或者，可以输入发布者名称中的**发布者名称**。  
+6.  或者，可以输入中的发布服务器名称**发布服务器名称**。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

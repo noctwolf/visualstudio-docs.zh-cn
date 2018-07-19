@@ -1,5 +1,5 @@
 ---
-title: '&lt;程序集&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+title: '&lt;程序集&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c72dd684092784c88b1ef6dd76d410ac9ff84d5
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: fd872053117388e9e08dcb8c4c2bfedcba622fd4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704218"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077085"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;程序集&gt;元素 （ClickOnce 应用程序）
 应用程序清单的的顶级元素。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
   
       <assembly  
    manifestVersion  
@@ -38,7 +38,7 @@ ms.locfileid: "33704218"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `assembly`元素是根元素，它需要。 其第一个包含的元素必须是`assemblyIdentity`元素。 清单元素必须在以下命名空间之一：  
+ `assembly`元素是根元素，是必需的。 它包含的第一个元素必须是`assemblyIdentity`元素。 清单元素必须采用以下命名空间之一：  
   
  `urn:schemas-microsoft-com:asm.v1`  
   
@@ -46,7 +46,7 @@ ms.locfileid: "33704218"
   
  `http://www.w3.org/2000/09/xmldsig#`  
   
- 程序集的子元素也必须通过继承或使用标记这些命名空间中。  
+ 程序集的子元素也必须通过继承或使用标记，这些命名空间中。  
   
  `assembly`元素具有以下属性。  
   
@@ -55,9 +55,9 @@ ms.locfileid: "33704218"
 |`manifestVersion`|必须的。 `manifestVersion`属性必须设置为`1.0`。|  
   
 ## <a name="example"></a>示例  
- 下面的代码示例阐释了`assembly`的应用程序清单中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此代码示例摘自[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
+ 下面的代码示例演示`assembly`元素中的应用程序清单[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序。 此代码示例摘自[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)。  
   
-```  
+```xml
 <asmv1:assembly   
   xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
   manifestVersion="1.0"   

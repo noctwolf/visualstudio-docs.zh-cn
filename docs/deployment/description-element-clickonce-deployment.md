@@ -1,5 +1,5 @@
 ---
-title: '&lt;说明&gt;元素 （ClickOnce 部署） |Microsoft 文档'
+title: '&lt;说明&gt;元素 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06a8f1a1e5ec5f4663ed999566158d104c6a7364
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b8985bc83299f55cec3c5f41fd3d76c8801fdf34
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31564241"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079805"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;说明&gt;元素 （ClickOnce 部署）
-标识应用程序信息用于创建 shell 表示和**添加或删除程序**控制面板中的项。  
+标识用于创建 shell 表示应用程序信息和一个**添加或删除程序**控制面板中的项。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
   
       <description   
    publisher   
@@ -45,18 +45,18 @@ ms.locfileid: "31564241"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`publisher`|必须的。 标识用于在 Windows 中的图标位置的公司名称**启动**菜单和**添加或删除程序**控制面板，为安装配置部署时中的项。|  
-|`product`|必须的。 标识完整的产品名称。 用作在 Windows 中安装的图标的标题**启动**菜单。|  
-|`suiteName`|可选。 标识的子文件夹中`publisher`Windows 中的文件夹**启动**菜单。|  
-|`supportUrl`|可选。 指定所示的支持 URL**添加或删除程序**控制面板中的项。 此 URL 的快捷方式也创建应用程序中的支持 Windows**启动**菜单、 何时进行安装的部署配置。|  
+|`publisher`|必须的。 标识用于在 Windows 中的图标位置的公司名称**启动**菜单并**添加或删除程序**控件面板中的部署配置进行安装时的项。|  
+|`product`|必须的。 标识完整的产品名称。 使用作为安装在 Windows 中的图标的头衔**启动**菜单。|  
+|`suiteName`|可选。 标识的子文件夹中`publisher`在 Windows 中的文件夹**启动**菜单。|  
+|`supportUrl`|可选。 指定所示的支持 URL**添加或删除程序**控制面板中的项。 在 Windows 中的应用程序支持还为创建此 URL 的快捷方式**启动**菜单中，部署配置为安装时。|  
   
 ## <a name="remarks"></a>备注  
  Description 元素中所有的部署配置需要。  
   
 ## <a name="example"></a>示例  
- 下面的代码示例阐释了`description`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 此代码示例摘自更大的示例为提供[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)主题。  
+ 下面的代码示例演示`description`中的元素[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署清单。 此代码示例是为提供一个更大示例的一部分[ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)主题。  
   
-```  
+```xml  
 <description   
   asmv2:publisher="My Company Name"  
   asmv2:product="My Application"  

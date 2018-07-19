@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc67d881f48c99cd8e53de086f0c8b08c96d7844
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 123b3c0c66d162b62d8f925ab58679a95fc3838f
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577979"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326756"
 ---
 # <a name="task-element-msbuild"></a>Task 元素 (MSBuild)
 创建并执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务的实例。 元素名称由正在创建的任务名称确定。  
@@ -33,7 +33,7 @@ ms.locfileid: "31577979"
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml  
 <Task Parameter1="Value1"... ParameterN="ValueN"  
     ContinueOnError="WarnAndContinue/true/ErrorAndContinue/ErrorAndStop/false"  
     Condition="'String A' == 'String B'" >  

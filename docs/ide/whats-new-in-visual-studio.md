@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a529c52472eca82d3b78860087c9e81aace45d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 542814c5902f2dba1c76b33f78273aadfb583eff
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750475"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282968"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -50,7 +50,7 @@ ms.locfileid: "34750475"
 
 ### <a name="a-new-setup-experience"></a>新的安装体验
 
-[下载 Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[检查 Visual Studio 系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
+[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 或[检查 Visual Studio 系统要求](/visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default)
 
  通过 Visual Studio，可以在需要时更轻松快速地安装所需功能。 而且，还能完全卸载干净。
 
@@ -308,7 +308,7 @@ Visual Studio 2017 所有版本随附：
 
 .NET Core 是 .NET 标准的常规用途、模块化、跨平台和开放源代码实现，且包含许多与 .NET Framework 相同的 API。
 
-.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET Core。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
+.NET Core 平台由一些组件构成，其中包括托管的编译器、运行时、基类库和大量应用程序模型，如 ASP.NET 核心。 .NET Core 支持三种主要的操作系统 (OS)：Windows、 Linux 和 macOS。 可以在设备、云和嵌入式/IoT 方案中使用 .NET Core。
 
 当前，它还包括 Docker 支持。
 
@@ -338,8 +338,8 @@ Visual Studio 2017 所有版本随附：
 
 我们经常更新 Visual Studio 2017 的新功能，以使开发体验越来越好。 下面是一些最值得注意的更新（处于实验预览状态）的扼要重述：
 
-* **[实时共享](https://www.visualstudio.com/services/live-share/)**，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
-* **[IntelliCode](https://www.visualstudio.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](../ide/not-in-toc/intellicode-faq.md)。
+* **[实时共享](https://visualstudio.microsoft.com/services/live-share/)**，一款新工具，可让你与团队成员共享代码库及其上下文，并直接从 Visual Studio 内获得即时双向协作。 利用“实时共享”，团队成员可以无缝且安全地读取、导航、编辑和调试已与他们共享的项目。<br><br>有关详细信息，请参阅[实时共享常见问题解答](/visualstudio/liveshare/faq)。<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**，一种使用 AI 来增强软件开发的新功能，可提供更好的上下文感知代码、指导开发人员对其团队的模式和样式进行编码、找出难以捕捉的代码问题并将代码评审重点放在真正具有影响的方面。 <br><br>有关详细信息，请参阅 [IntelliCode 常见问题解答](../ide/not-in-toc/intellicode-faq.md)。
 
 想要了解更多关于 Visual Studio 2017 的其他功能吗？ 请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs2018-roadmap)页。
 
@@ -358,5 +358,5 @@ Visual Studio 2017 所有版本随附：
 * [Visual Studio 2017 发行说明](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default)
 * [Visual C++ 中的新增功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 中的新增功能](/dotnet/csharp/whats-new)
-* [Team Foundation Server 中的新增功能](https://www.visualstudio.com/docs/whats-new)
-* [Visual Studio for Mac 中的新增功能](https://www.visualstudio.com/vs/visual-studio-mac/)
+* [Team Foundation Server 中的新增功能](/tfs/server/whats-new?view=vsts)
+* [Visual Studio for Mac 中的新增功能](https://visualstudio.microsoft.com/vs/visual-studio-mac/)

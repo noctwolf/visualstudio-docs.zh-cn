@@ -1,5 +1,5 @@
 ---
-title: 入门 （Visual Studio 中的 SharePoint 开发） |Microsoft 文档
+title: 入门 （Visual Studio 中的 SharePoint 开发） |Microsoft Docs
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d0f4f12eee56d1d4962e5c340037094d5192c718
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b9a06c7731f5cb3ea15b8eef8203b686b5b227dd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766794"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326187"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>获取已启动 （中的 SharePoint 开发 Visual Studio）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。  
@@ -35,7 +35,7 @@ ms.locfileid: "34766794"
   
 |主题|描述|  
 |-----------|-----------------|  
-|[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|列出了针对 SharePoint 进行开发的软件要求。|  
+|[开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|列出了针对 SharePoint 进行开发的软件要求。|  
 |[SharePoint 错误的其他信息](../sharepoint/additional-information-for-sharepoint-errors.md)|介绍在 SharePoint 开发和故障排除期间可在哪里找到帮助。|  
   
 ## <a name="related-sections"></a>相关章节
@@ -43,20 +43,20 @@ ms.locfileid: "34766794"
 |主题|描述|  
 |-----------|-----------------|  
 |[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)|介绍 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 SharePoint 开发。|  
-|[创建 SharePoint 的站点栏、内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|介绍如何使用 Visual Studio 的 SharePoint 开发工具为 SharePoint 创建自定义网站栏、内容类型和列表。|  
+|[为 SharePoint 创建站点栏、 内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)|介绍如何使用 Visual Studio 的 SharePoint 开发工具为 SharePoint 创建自定义网站栏、内容类型和列表。|  
 |[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)|介绍工作流设计和开发。|  
-|[将业务数据集成到 SharePoint 中](../sharepoint/integrating-business-data-into-sharepoint.md)|介绍如何连接到业务数据连接 (BDC) 模型，从而集成业务数据。|  
-|[为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)|介绍 Web 部件和 Web 部件页，它们是 SharePoint 站点上页的构建基块。|  
+|[将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)|介绍如何连接到业务数据连接 (BDC) 模型，从而集成业务数据。|  
+|[Creatie web 部件的 SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)|介绍 Web 部件和 Web 部件页，它们是 SharePoint 站点上页的构建基块。|  
 |[为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)|介绍如何使用设计器来设计应用程序页。|  
-|[为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|介绍如何为 SharePoint 中的应用程序页和 Web 部件创建自定义的可重用控件。|  
-|[使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|介绍如何在 Visual Studio 工具窗口中在 SharePoint 站点的组件之间导航。|  
+|[创建 web 部件或应用程序页的可重用的控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)|介绍如何为 SharePoint 中的应用程序页和 Web 部件创建自定义的可重用控件。|  
+|[浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)|介绍如何在 Visual Studio 工具窗口中在 SharePoint 站点的组件之间导航。|  
 |[生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)|介绍如何生成和调试 SharePoint 解决方案。|  
 |[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)|介绍如何打包和部署 SharePoint 解决方案。|  
-|[在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|介绍如何扩展 SharePoint 工具以创建所需的功能。|  
+|[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)|介绍如何扩展 SharePoint 工具以创建所需的功能。|  
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   
- [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
+ [浏览 SharePoint 连接使用服务器资源管理器](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)   
  [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   

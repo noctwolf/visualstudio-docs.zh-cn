@@ -1,5 +1,5 @@
 ---
-title: 如何： 获取技术支持指定的链接 |Microsoft 文档
+title: 如何： 指定技术支持链接 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24052420ecc04ab8a369f739efa885a6fa821fbd
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27014dd06f3d368ea0777a8f9e16c27a6d7d7884
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31556587"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078821"
 ---
-# <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
-发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，**支持 URL**属性标识网页或文件共享，其中用户可以转至以获取有关应用程序的信息。 此属性是可选的;如果提供，将应用程序的条目中显示该 URL**添加或删除程序**对话框。  
+# <a name="how-to-specify-a-link-for-technical-support"></a>如何： 指定技术支持链接
+发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，**支持 URL**属性标识网页或文件共享，用户可以转到要获取有关应用程序的信息。 此属性是可选的;如果提供，该 URL 将显示在应用程序的入口**添加或删除程序**对话框。  
   
  **支持 URL**属性可以设置上**发布**页**项目设计器**。  
   
@@ -44,8 +44,8 @@ ms.locfileid: "31556587"
   
 4.  单击**说明**。  
   
-5.  在**支持 URL**字段中，输入网站、 Web 页上或 UNC 共享的完全限定的路径。  
+5.  在中**支持 URL**字段中，输入网站、 Web 页或 UNC 共享的完全限定的路径。  
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 059c3015bf542dda6a420c80620bc74c9ee6ca6b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b36da837ae1f4c327969b398c3964bfd6dd2aea3
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567221"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302745"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 设置全局线程计数，并将该计数分配给当前线程。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```cmd  
 HRESULT WINAPI SetThreadCount(int threadCount);  
 ```  
   
@@ -40,5 +40,5 @@ HRESULT WINAPI SetThreadCount(int threadCount);
 ## <a name="return-value"></a>返回值  
  线程数更新后，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头：FileTracker.h
