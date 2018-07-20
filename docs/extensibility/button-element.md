@@ -1,5 +1,5 @@
 ---
-title: 按钮元素 |Microsoft 文档
+title: 按钮元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78b5abd8762669db4e225a68817f2c9823a49267
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 128016b892206db64a5295c8c15b26b87637b530
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109625"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154266"
 ---
 # <a name="button-element"></a>Button 元素
-定义用户可以与交互元素。 按钮可以是不同类型的： 按钮、 MenuButton 和 SplitDropDown。  
+定义一个元素，用户可与之交互。 按钮可为不同类型： 按钮、 MenuButton 和 SplitDropDown。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,19 +42,19 @@ ms.locfileid: "31109625"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 GUID/ID 命令标识符的 GUID。|  
-|id|必须的。 ID 的 GUID/ID 命令标识符。|  
-|priority|可选。 一个数字值，指定的优先级。|  
-|类型|可选。 一个枚举的值，用于指定按钮的种类。<br /><br /> 如果未授予，将使用按钮。<br /><br /> Button<br /> 标准命令显示在工具栏上 （通常作为图标按钮），菜单和上下文菜单。<br /><br /> MenuButton<br /> 不执行命令，但生成另一个菜单的菜单项。<br /><br /> SplitDropDown<br /> 控件，如 Microsoft Word 中的标准工具栏上的撤消和重做按钮。|  
+|guid|必须的。 GUID ID 的命令标识符的 GUID。|  
+|id|必须的。 GUID ID 的命令标识符的 ID。|  
+|priority|可选。 一个数字值，该值指定的优先级。|  
+|类型|可选。 一个枚举的值，指定的按钮类型。<br /><br /> 如果未指定，将使用按钮。<br /><br /> Button<br /> 标准命令显示在工具栏上 （通常为图标按钮），菜单和上下文菜单。<br /><br /> MenuButton<br /> 不执行命令，但会生成另一个菜单的菜单项。<br /><br /> SplitDropDown<br /> 控件，例如 Microsoft Word 中的标准工具栏上的撤消和重做按钮。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|[Parent 元素](../extensibility/parent-element.md)|可选。 父元素的按钮。|  
-|[Icon 元素](../extensibility/icon-element.md)|可选。 与按钮相关联的图标。|  
-|[ Command Flag元素](../extensibility/command-flag-element.md)|必须的。 按钮 CommandFlag 有效值如下所示。<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -图像<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
+|[父元素](../extensibility/parent-element.md)|可选。 按钮的父元素。|  
+|[Icon 元素](../extensibility/icon-element.md)|可选。 与按钮关联的图标。|  
+|[Command flag 元素](../extensibility/command-flag-element.md)|必须的。 一个按钮 CommandFlag 有效值如下所示。<br /><br /> -AllowParams<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DontCache<br /><br /> -DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> -FixMenuController<br /><br /> -IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> -RouteToDocs<br /><br /> -TextCascadeUseBtn<br /><br /> -TextMenuUseButton<br /><br /> -TextChanges<br /><br /> -TextChangesButton<br /><br /> -TextContextUseButton<br /><br /> -TextMenuCtrlUseMenu<br /><br /> -TextMenuUseButton<br /><br /> -TextOnly|  
 |[Strings 元素](../extensibility/strings-element.md)|必须的。 子[ButtonText 元素](../extensibility/buttontext-element.md)必须定义。|  
 |批注|可选注释。|  
   
@@ -65,7 +65,7 @@ ms.locfileid: "31109625"
 |[Buttons 元素](../extensibility/buttons-element.md)|按钮元素进行分组。|  
   
 ## <a name="example"></a>示例  
- 下面的示例在.vsct 文件中定义一个按钮。  
+ 下面的示例定义中的按钮 *.vsct*文件。  
 
  ```xml
 <Button guid="guidMenuTextCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">
@@ -79,5 +79,5 @@ ms.locfileid: "31109625"
 </Button>
  ```
  
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

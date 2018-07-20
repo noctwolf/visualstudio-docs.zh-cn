@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c37bcfb086acf265a719abe688c6738fbcbfc01
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 121171dc71746f2c9f91df32b103be8292cce3fa
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234005"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153594"
 ---
-# <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
+# <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误进行故障排除
 本文列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，并提供了步骤来解决每个问题。  
   
 ## <a name="general-errors"></a>常规错误  
@@ -36,7 +36,7 @@ ms.locfileid: "36234005"
 #### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>当您尝试查找应用程序文件，没有出现任何问题，或 XML 呈现在 Internet Explorer 中，或收到一个运行或另存为对话框  
  未在服务器或客户端上正确注册内容类型 （也称为 MIME 类型） 可能导致此错误。  
   
- 首先，请确保将服务器配置为将关联`.application`内容类型"应用程序/x 的 ms-应用程序。"  
+ 首先，请确保将服务器配置为将相关联 *.application*内容类型"应用程序/x 的 ms-应用程序。"  
   
  如果将服务器配置正确，请检查[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]在计算机上安装。 如果[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]已安装，并且你仍看到此问题，请尝试卸载并重新安装[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]重新注册客户端上的内容类型。  
   
@@ -45,20 +45,20 @@ ms.locfileid: "36234005"
   
 -   如果日志文件说"(403) 禁止访问"或"(404) 找不到，"验证配置 Web 服务器，以便它不会阻止下载此文件。 有关详细信息，请参阅 [ClickOnce 部署中的服务器和客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
--   如果在服务器被阻止的.config 文件，请参阅"时尝试安装下载错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]具有.config 文件的应用程序"这篇文章中更高版本。  
+-   如果 *.config*文件被阻止服务器，请参阅"时尝试安装下载错误[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]具有.config 文件的应用程序"这篇文章中更高版本。  
   
--   确定是否发生这种情况`deploymentProvider`部署清单中的 URL 指向用于激活的 URL 不同的位置。  
+-   确定是否因为发生此错误`deploymentProvider`部署清单中的 URL 指向用于激活的 URL 不同的位置。  
   
 -   确保所有文件都均存在于服务器;[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]日志应告诉您找不到的文件。  
   
 -   查看是否存在网络连接问题;如果客户端计算机在下载期间脱机，会收到此消息。  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>当您尝试安装的 ClickOnce 应用程序.config 文件下载错误  
- 默认情况下，Visual Basic Windows 基于应用程序包括一个 App.config 文件。 当用户尝试从使用 Windows Server 2003 的 Web 服务器安装，因为该操作系统会阻止出于安全原因的.config 文件的安装时将有问题。 若要启用要安装的.config 文件，请单击**使用".deploy"文件扩展名**中**发布选项**对话框。  
+ 默认情况下，Visual Basic Windows 基于应用程序包括一个 App.config 文件。 当用户尝试从使用 Windows Server 2003 的 Web 服务器安装，因为该操作系统会阻止安装时将会出现问题 *.config*出于安全原因的文件。 若要启用 *.config*文件以进行安装，单击**使用".deploy"文件扩展名**中**发布选项**对话框。  
   
  您还必须设置内容类型 （也称为 MIME 类型） 适当地为.application、.manifest 和.deploy 文件。 有关详细信息，请参阅您的 Web 服务器文档。  
   
- 有关详细信息，请参阅"Windows Server 2003:: Locked-Down 内容类型"中[服务器和 ClickOnce 部署中的客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
+ 有关详细信息，请参阅"Windows Server 2003:: Locked-Down 内容类型"中[ClickOnce 部署中的服务器和客户端配置问题](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)。  
   
 #### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>错误消息:"应用程序格式不正确";日志文件包含"XML 签名无效"  
  请确保你已更新的清单文件且再次对它签名。 通过使用重新发布应用程序[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]或使用 Mage 应用程序再次进行签名。  
@@ -103,10 +103,10 @@ ms.locfileid: "36234005"
   
  如果您要发布的 url，请确保目标计算机已启用 FrontPage 服务器扩展。  
   
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>出现错误消息： 无法创建网站\<站点 >。 未安装与 FrontPage 服务器扩展进行通信的组件。  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>错误消息： 无法创建网站\<站点 >。 未安装与 FrontPage 服务器扩展进行通信的组件。  
  确保您有 Microsoft Visual Studio Web 创作组件从发布在计算机上安装。 对于 Express 用户，默认情况下未安装此组件。 有关详细信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310)。  
   
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>出现错误消息： 找不到文件 Microsoft.Windows.Common 的控件，版本 = 6.0.0.0，区域性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，类型 = win32  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>错误消息： 找不到文件 Microsoft.Windows.Common 的控件，版本 = 6.0.0.0，区域性 = *，PublicKeyToken = 6595b64144ccf1df，ProcessorArchitecture =\*，类型 = win32  
  当你尝试发布启用了视觉样式的 WPF 应用程序时，会出现此错误消息。 若要解决此问题，请参阅[如何： 发布具有启用视觉样式的 WPF 应用程序](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)。  
   
 ## <a name="using-mage"></a>使用 Mage  
@@ -140,4 +140,4 @@ ms.locfileid: "36234005"
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   
- [ClickOnce 部署疑难解答](../deployment/troubleshooting-clickonce-deployments.md)
+ [ClickOnce 部署进行故障排除](../deployment/troubleshooting-clickonce-deployments.md)

@@ -1,5 +1,5 @@
 ---
-title: 附加到的程序直接 |Microsoft 文档
+title: 直接附加到程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,36 +13,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6885cb0dea801ab95e2e88e3f8168c139fea0e0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d1fa232e0e8bfca31d16209ca8cb7acd15954940
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100372"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151780"
 ---
-# <a name="attaching-directly-to-a-program"></a>附加到的程序直接
-用户想要调试程序已在通常运行的过程中按照以下步骤：  
+# <a name="attach-directly-to-a-program"></a>将直接附加到程序
+想要调试程序通常已在运行的进程中的用户使用以下过程：  
   
 1.  在 IDE 中，选择**调试进程**命令**工具**菜单。  
   
-     **进程**对话框随即出现。  
+     这将显示“进程”对话框。  
   
 2.  选择一个进程，然后单击**附加**按钮。  
   
-     **附加到进程**对话框中，将显示列出所有的调试引擎 (DEs) 的计算机上安装。  
+     **附加到进程**会显示对话框，列出所有的调试引擎 (DEs) 在计算机上安装。  
   
-3.  指定要用于调试所选的进程，并依次 DEs**确定**。  
+3.  指定要用于调试所选的进程，然后依次对 DEs**确定**。  
   
- 调试包启动调试会话，并向它传递的 DEs 列表。 调试会话又将传递此列表，以及一个回调函数，为所选进程，然后向询问枚举其正在运行的程序的过程。  
+ 调试包启动调试会话，并向其传递的 DEs 列表。 调试会话反过来传递此列表，以及一个回调函数，为所选的进程，并询问枚举其正在运行的程序的过程。  
   
- 以编程方式，以响应用户请求，调试包实例化会话调试管理器 (SDM)，并将所选 DEs 的列表传递给它。 列表中，以及调试包将传递 SDM [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)接口。 调试包传递到所选进程的 DEs 列表通过调用[IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 然后调用 SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)上要枚举进程中运行的程序的端口。  
+ 以编程方式，以响应用户请求，调试包实例化会话调试管理器 (SDM)，并将所选 DEs 的列表传递给它。 列表中，以及调试程序包传递 SDM [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md)接口。 调试包传递到所选的进程的 DEs 列表通过调用[IDebugProcess2::Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)。 然后调用 SDM [IDebugProcess2::EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)上要枚举的进程中运行的程序的端口。  
   
- 从现在开始，每种调试引擎附加到某个程序完全按照所述[附加后启动](../../extensibility/debugger/attaching-after-a-launch.md)，有两个例外。  
+ 从现在开始，每个调试引擎附加到程序完全按照中的详述[启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)，有两个例外。  
   
- 为提高效率，实现与 SDM 共享地址空间的 DEs 进行分组，以便每个 DE 具有一组将附加到的程序。 在这种情况下， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)调用[IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)并将其传递的程序将附加到一个数组。  
+ 为提高效率，实现与 SDM 共享一个地址空间的 DEs 进行分组，以便每个 DE 有一组会将连接到的程序。 在这种情况下， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)调用[IDebugEngine2::Attach](../../extensibility/debugger/reference/idebugengine2-attach.md)并将其传递的程序附加到数组。  
   
- 第二个例外情况是，发送 DE 附加到已在运行的程序的启动事件未通常包括输入点事件。  
+ 第二个例外情况是，发送 DE 附加到已在运行的程序的启动事件一般都不包含入口点事件。  
   
-## <a name="see-also"></a>另请参阅  
- [在启动之后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
+## <a name="see-also"></a>请参阅  
+ [启动后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

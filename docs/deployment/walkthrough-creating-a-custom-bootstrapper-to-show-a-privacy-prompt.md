@@ -21,24 +21,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22feab436d701124b7e3843a0e6855d2830d570d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5fb0e6d011868f56375def1516bd0e41410da662
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808437"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152495"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练：创建带有隐私提示的自定义引导程序
 你可以配置 ClickOnce 应用程序具有更高版本的文件版本和程序集版本的程序集变得可用时自动更新。 若要确保你的客户同意此行为，可以向他们显示隐私提示。 然后，他们可以选择是否要自动更新的应用程序的权限授予。 如果应用程序不允许自动更新，它不会安装。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
 -   Visual Studio 2010。  
   
-## <a name="create-an-update-consent-dialog-box"></a>创建更新同意对话框中  
+## <a name="create-an-update-consent-dialog-box"></a>创建更新同意对话框  
  若要显示隐私提示，请创建的应用程序询问读取器同意自动更新应用程序。  
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要创建同意对话框  
@@ -116,7 +116,7 @@ ms.locfileid: "38808437"
   
     2.  上**项目**菜单上，单击**添加模块**，然后单击**添加**。  
   
-    3.  在 Module1.vb 代码文件中，添加以下代码。  
+    3.  在中*Module1.vb*代码文件中，添加以下代码。  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
@@ -131,7 +131,7 @@ ms.locfileid: "38808437"
   
      Visual C# 仅适用于开发人员：  
   
-     打开 Program.cs 代码文件，并添加以下代码。  
+     打开*Program.cs*代码文件，然后添加以下代码。  
   
      [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
@@ -142,29 +142,29 @@ ms.locfileid: "38808437"
   
  此过程说明了如何创建自定义引导程序包，通过创建以下文档：  
   
--   Product.xml 清单文件来描述引导程序的内容。  
+-   一个*product.xml*清单文件来描述引导程序的内容。  
   
--   若要列出的包，如字符串和软件许可条款的特定于本地化的方面 package.xml 清单文件。  
+-   一个*package.xml*清单文件，若要列出的包，如字符串和软件许可条款的特定于本地化的方面。  
   
 -   面向软件许可条款的文档。  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>步骤 1： 若要创建引导程序目录  
   
-1.  创建一个名为**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
+1.  创建一个名为**UpdateConsentDialog**中 *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*。  
   
     > [!NOTE]
     >  您可能需要管理权限才能创建此文件夹。  
   
-2.  在 UpdateConsentDialog 目录中，创建一个名为 en 子目录。  
+2.  在中*UpdateConsentDialog*目录中，创建一个名为子目录*en*。  
   
     > [!NOTE]
     >  创建每个区域设置的新目录。 例如，可以添加 fr 和 de 区域设置的子目录。 如有必要，这些目录将包含法语和德语字符串和语言包。  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>步骤 2： 创建 product.xml 清单文件  
   
-1.  创建名为文本文件`product.xml`。  
+1.  创建名为文本文件*product.xml*。  
   
-2.  在 product.xml 文件中，添加以下 XML 代码。 请确保不覆盖现有的 XML 代码。  
+2.  在中*product.xml*文件中，添加以下 XML 代码。 请确保不覆盖现有的 XML 代码。  
   
     ```xml  
     <Product  
@@ -194,9 +194,9 @@ ms.locfileid: "38808437"
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步骤 3： 创建 package.xml 清单文件和软件许可条款  
   
-1.  创建名为文本文件`package.xml`。  
+1.  创建名为文本文件*package.xml*。  
   
-2.  在 package.xml 文件中，添加下面的 XML 代码，以定义区域设置和包括的软件许可条款。 请确保不覆盖现有的 XML 代码。  
+2.  在中*package.xml*文件中，添加下面的 XML 代码，以定义区域设置和包括的软件许可条款。 请确保不覆盖现有的 XML 代码。  
   
     ```xml  
     <Package   
@@ -220,14 +220,14 @@ ms.locfileid: "38808437"
   
 3.  将文件保存到 UpdateConsentDialog 引导程序目录中的 en 子目录。  
   
-4.  创建一个名为软件许可条款 eula.rtf 的文档。  
+4.  创建一个名为文档*eula.rtf*的软件许可条款。  
   
     > [!NOTE]
     >  软件许可条款应包括有关许可、 保证、 责任和当地法律信息。 这些文件应是特定于区域设置的因此请确保该文件的保存支持 MBCS 或 UNICODE 字符格式。 请咨询您的软件许可条款内容有关的法律部门。  
   
-5.  将文档保存到 UpdateConsentDialog 引导程序目录中的 en 子目录。  
+5.  将文档保存到中的 en 子目录*UpdateConsentDialog*引导程序目录。  
   
-6.  如有必要，为每个区域设置的软件许可条款创建新的 package.xml 清单文件和新 eula.rtf 文档。 例如，如果创建的 fr 和 de 区域设置的子目录，创建单独 package.xml 清单文件和软件许可条款，并将其保存到的 fr 和 de 子目录。  
+6.  如有必要，创建一个新*package.xml*清单文件和一个新*eula.rtf*文档的每个区域设置的软件许可条款。 例如，如果创建的 fr 和 de 区域设置的子目录，创建单独 package.xml 清单文件和软件许可条款，并将其保存到的 fr 和 de 子目录。  
   
 ## <a name="set-the-update-consent-application-as-a-prerequisite"></a>更新许可应用程序设置的必备组件  
  在 Visual Studio 中，您可以设置更新许可应用程序的必备组件。  
@@ -260,7 +260,7 @@ ms.locfileid: "38808437"
   
 4.  如果发布输出不会自动打开，导航到发布输出。  
   
-5.  运行 Setup.exe 程序。  
+5.  运行*Setup.exe*程序。  
   
      安装程序显示同意对话框中更新软件许可协议。  
   
@@ -286,7 +286,7 @@ ms.locfileid: "38808437"
   
 4.  如果发布输出不会自动打开，导航到发布输出。  
   
-5.  运行 Setup.exe 程序。  
+5.  运行*Setup.exe*程序。  
   
      安装程序显示同意对话框中更新软件许可协议。  
   
@@ -305,4 +305,4 @@ ms.locfileid: "38808437"
  [创建引导程序包](../deployment/creating-bootstrapper-packages.md)   
  [如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)   
  [如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)   
- [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
+ [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
