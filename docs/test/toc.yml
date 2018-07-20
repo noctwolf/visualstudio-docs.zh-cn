@@ -43,6 +43,8 @@
       items:
         - name: 测试资源管理器常见问题解答
           href: test-explorer-faq.md
+    - name: 从命令行运行测试
+      href: vstest-console-options.md
     - name: 将单元测试作为 64 位进程运行
       href: run-a-unit-test-as-a-64-bit-process.md
     - name: 使用 .runsettings 文件配置单元测试
@@ -55,7 +57,7 @@
           href: quick-start-test-driven-development-with-test-explorer.md
         - name: 在单元测试中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成员
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
-        - name: 使用 Assert 类
+        - name: 使用 assert 类
           href: using-the-assert-classes.md
         - name: 用 Microsoft Fakes 隔离测试代码
           href: isolating-code-under-test-with-microsoft-fakes.md
@@ -220,7 +222,7 @@
     - name: 测试控制器和测试代理
       href: configure-test-agents-and-controllers-for-load-tests.md
       items:
-        - name: 惠?
+        - name: 要求
           href: test-controller-and-test-agent-requirements-for-load-testing.md
         - name: 管理测试控制器和测试代理
           href: manage-test-controllers-and-test-agents.md
@@ -391,7 +393,7 @@
 - name: 测试实验室管理
   href: lab-management/using-a-lab-environment-for-your-application-lifecycle.md
   items:
-    - name: 使用 Build Management 或 Release Management 进行自动测试
+    - name: 通过生成或发布管理过程进行自动测试
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: 安装测试代理和测试控制器
       href: lab-management/install-configure-test-agents.md

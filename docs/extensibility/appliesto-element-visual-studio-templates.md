@@ -1,5 +1,5 @@
 ---
-title: AppliesTo 元素 （Visual Studio 模板） |Microsoft 文档
+title: AppliesTo 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e27ee1ab0ba42a82d61e2adbe9fb4c6c81cbb48
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 567b9f2651c2140f101aa3848e4136d47a75ef1e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100255"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151111"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素（Visual Studio 模板）
+# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素 （Visual Studio 模板）
 指定一个可选表达式以匹配一个或多个功能。 （请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>）。 项目类型通过层次结构将功能公开为属性 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>。 这使得具有公共适用功能的多个项目类型可以共享此模板。  
   
  此元素为可选元素。 一个模板文件中最多只能包含一个实例。 根据当前选择的活动项目的功能，此元素仅启用一个项模板以在适用时选择使用。 此元素无法用于设置不适用的项模板。 如果缺少 `AppliesTo` 或表达式未成功选择使用，则 `TemplateID` 或 `TemplateGroupID` 将用于使模板可用，如使用产品的早期版本一样。  
   
- 在 Visual Studio 2013 Update 2 中引入。 若要引用的正确版本，请参阅[Visual Studio 2013 SDK Update 2 中引用程序集提供](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
+ 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -55,9 +55,9 @@ ms.locfileid: "31100255"
   
  有效表达式语法按以下方式定义：  
   
--   功能表达式，如"(VisualC &#124; CSharp) + (MSTest &#124; NUnit)"。  
+-   功能表达式，如"(visual c &#124; CSharp) + (MSTest &#124; NUnit)"。  
   
--   "&#124;"是 OR 运算符。  
+-   "&#124;"是或运算符。  
   
 -   “&”和“+”字符均为 AND 运算符。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "31100255"
   
 -   null 或空表达式作为匹配计算。  
   
--   项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~&#124;和 %$@^()={} [] <>？ \t\b\n\r  
+-   项目功能可以是除以下保留字符之外的任何字符:"':;,+-*/\\！ ~&#124;和 %$@^() ={}[] <>？ \t\b\n\r  
   
 ## <a name="example"></a>示例  
  下面的示例演示三个不同模板。 `Template1` 适用于所有 C# 项目类型或支持 `WindowsAppContainer` 功能的任何其他项目类型。 `Template2` 适用于所有类型的 C# 项目。 `Template3` 适用于 `WindowsAppContainer` 项目以外的 C# 项目。  
@@ -99,6 +99,6 @@ ms.locfileid: "31100255"
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

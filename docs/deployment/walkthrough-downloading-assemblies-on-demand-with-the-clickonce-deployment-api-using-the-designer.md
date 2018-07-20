@@ -1,5 +1,5 @@
 ---
-title: 演练： 下载使用 ClickOnce 部署使用设计器的 API 按需程序集 |Microsoft 文档
+title: 演练： 下载 ClickOnce 部署 API 使用设计器中使用按需程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fef9486f6bbcbea0d330aaf16fe625642f1e662f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bc632f78a130064e44d9a0ea0bb172e81db98538
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565453"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151511"
 ---
-# <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练： 下载 ClickOnce 部署 API 使用设计器中使用按需程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。  
   
 > [!NOTE]
@@ -35,7 +35,7 @@ ms.locfileid: "31565453"
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请单击 **“工具”** 菜单上的 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="creating-the-projects"></a>创建项目  
+## <a name="create-the-projects"></a>创建项目  
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>通过 Visual Studio 创建使用按需程序集的项目  
   
@@ -69,7 +69,7 @@ ms.locfileid: "31565453"
      [!code-csharp[ClickOnceOnDemand#3](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.cs)]
      [!code-vb[ClickOnceOnDemand#3](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_4.vb)]  
   
-## <a name="marking-assemblies-as-optional"></a>将程序集标记为可选  
+## <a name="mark-assemblies-as-optional"></a>标记为可选的程序集  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>使用 Visual Studio 在 ClickOnce 应用程序中将程序集标记为可选  
   
@@ -77,11 +77,11 @@ ms.locfileid: "31565453"
   
 2.  单击“应用程序文件”  按钮。  
   
-3.  在列表中找到 ClickOnceLibrary.dll。 将“发布状态”  下拉框设置为“包括” 。  
+3.  列表中找到*ClickOnceLibrary.dll*。 将“发布状态”  下拉框设置为“包括” 。  
   
 4.  展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。  
   
-5.  继续中所述发布你的应用程序[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+5.  继续发布应用程序，如中所述[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31565453"
   
 3.  在应用程序文件的列表中找到 ClickOnceLibrary.dll，然后将其“文件类型”  列设置“无” 。 对于“组”  列，输入 `ClickOnceLibrary.dll`。  
   
-## <a name="testing-the-new-assembly"></a>测试新程序集  
+## <a name="test-the-new-assembly"></a>测试新程序集  
   
 #### <a name="to-test-your-on-demand-assembly"></a>测试按需程序集  
   

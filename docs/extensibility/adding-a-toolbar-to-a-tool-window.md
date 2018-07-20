@@ -1,5 +1,5 @@
 ---
-title: 将工具栏添加到工具窗口 |Microsoft 文档
+title: 将工具栏添加到工具窗口 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47ff5f69ff559ea1c08d0ae9bdd7192a257c844e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 59e540ec840bc7aadb2465c7f7c71433bf2ddb27
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100736"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150758"
 ---
-# <a name="adding-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
+# <a name="add-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。  
   
- 工具栏是一个包含绑定到命令按钮的水平或垂直条。 工具窗口中工具栏的长度始终为相同的宽度或高度的工具窗口中，具体取决于工具栏停靠的位置。  
+ 工具栏是水平或垂直条包含绑定到命令的按钮。 工具窗口中工具栏的长度始终是相同的宽度或高度的工具窗口中，具体取决于工具栏的停靠位置。  
   
- 与在 IDE 中的工具栏，不同工具窗口中的工具栏必须停靠并且无法转移或自定义。 VSPackage 在非代码中编写的如果工具栏可停靠在任何边缘上。  
+ 与在 IDE 中的工具栏，不同的工具窗口中的工具栏必须停靠和不能移动或自定义。 如果 VSPackage 在非代码中编写的在工具栏可停靠在任何边缘停靠。  
   
- 有关如何将工具栏添加的详细信息，请参阅[将工具栏添加](../extensibility/adding-a-toolbar.md)。  
+ 有关如何添加工具栏的详细信息，请参阅[将工具栏添加](../extensibility/adding-a-toolbar.md)。  
   
 ## <a name="prerequisites"></a>系统必备  
- 从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-toolbar-for-a-tool-window"></a>创建工具窗口工具栏  
+## <a name="create-a-toolbar-for-a-tool-window"></a>创建工具窗口工具栏  
   
-1.  创建一个名为的 VSIX 项目`TWToolbar`具有这两个菜单命令名为**TWTestCommand**和工具窗口名为**TestToolWindow**。 有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)和[使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。 你需要在添加工具窗口模板之前添加命令项模板。  
+1.  创建一个名为的 VSIX 项目`TWToolbar`具有名为这两个菜单命令**TWTestCommand**和名为工具窗口**TestToolWindow**。 有关详细信息，请参阅[与菜单命令创建一个扩展](../extensibility/creating-an-extension-with-a-menu-command.md)并[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。 您需要添加工具窗口模板之前添加命令项模板。  
   
-2.  在 TWTestCommandPackage.vsct，查找符号部分。 在名为 guidTWTestCommandPackageCmdSet GuidSymbol 节点声明一个工具栏和工具栏组，如下所示。  
+2.  在中*TWTestCommandPackage.vsct*，查找符号部分。 在名为 guidTWTestCommandPackageCmdSet GuidSymbol 节点声明一个工具栏和工具栏组，如下所示。  
   
     ```xml  
     <IDSymbol name="TWToolbar" value="0x1000" />  
     <IDSymbol name="TWToolbarGroup" value="0x1050" />  
     ```  
   
-3.  在顶部`Commands`部分中，创建`Menus`部分。 添加`Menu`元素可定义工具栏。  
+3.  在顶部`Commands`部分中，创建`Menus`部分。 添加`Menu`元素来定义工具栏。  
   
     ```xml  
     <Menus>  
@@ -58,9 +58,9 @@ ms.locfileid: "31100736"
     </Menus>  
     ```  
   
-     工具栏不能嵌套如子菜单。 因此，无需指定一个父级。 此外，你无需设置优先级，因为用户可以移动工具栏。 通常，工具栏的初始放置定义以编程方式，但用户的后续更改将永久保存。  
+     不能像子菜单嵌套工具栏。 因此，您无需指定一个父级。 此外，您无需设置优先级，因为用户可以移动工具栏。 通常情况下，初始放置工具栏的定义以编程方式，但用户的后续更改永久保存。  
   
-4.  在组部分中，定义一个组以包含工具栏命令。  
+4.  在组部分中，定义一个组，包含工具栏的命令。  
   
     ```xml  
   
@@ -69,7 +69,7 @@ ms.locfileid: "31100736"
     </Group>  
     ```  
   
-5.  在按钮部分中，将更改现有的 Button 元素的父级为工具栏组以便将显示工具栏。  
+5.  在按钮部分中，将更改现有 Button 元素的父级为工具栏组，以便将显示工具栏。  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="TWTestCommandId" priority="0x0100" type="Button">  
@@ -81,20 +81,20 @@ ms.locfileid: "31100736"
     </Button>  
     ```  
   
-     默认情况下，如果工具栏不具有任何命令，则不会不显示。  
+     默认情况下，如果一个工具栏不具有任何命令，它不会不显示。  
   
-     由于到工具窗口不会自动添加新的工具栏，则必须显式添加工具栏。 下一节中将对此进行讨论。  
+     因为新的工具栏不自动添加到工具窗口中，必须显式添加工具栏。 下一节中将对此进行讨论。  
   
-## <a name="adding-the-toolbar-to-the-tool-window"></a>将工具栏添加到工具窗口  
+## <a name="add-the-toolbar-to-the-tool-window"></a>将工具栏添加到工具窗口  
   
-1.  TWTestCommandPackageGuids.cs 中添加以下行。  
+1.  在中*TWTestCommandPackageGuids.cs*添加以下行。  
   
     ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
-2.  在 TestToolWindow.cs 添加以下 using 语句。  
+2.  在中*TestToolWindow.cs*添加以下 using 语句。  
   
     ```csharp  
     using System.ComponentModel.Design;  
@@ -106,15 +106,15 @@ ms.locfileid: "31100736"
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   
-## <a name="testing-the-toolbar-in-the-tool-window"></a>测试工具窗口中的工具栏  
+## <a name="test-the-toolbar-in-the-tool-window"></a>工具窗口中的测试工具栏  
   
 1.  生成项目并启动调试。 应显示 Visual Studio 实验实例。  
   
-2.  上**视图 / 其他窗口**菜单上，单击**测试工具窗口**以显示该工具窗口。  
+2.  上**视图 / 其他 Windows**菜单上，单击**测试 ToolWindow**显示工具窗口。  
   
-     你应看到在顶部的工具栏 （它类似于默认图标） 左下的工具窗口标题的下方。  
+     您应看到顶部的工具栏 （看起来像默认图标） 左侧的工具窗口标题的下方。  
   
 3.  在工具栏上，单击图标以显示消息**TWTestCommandPackage 内 TWToolbar.TWTestCommand.MenuItemCallback()**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加工具栏](../extensibility/adding-a-toolbar.md)

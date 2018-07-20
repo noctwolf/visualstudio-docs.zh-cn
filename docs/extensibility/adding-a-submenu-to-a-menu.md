@@ -1,5 +1,5 @@
 ---
-title: 将子菜单添加到菜单 |Microsoft 文档
+title: 将子菜单添加到菜单 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,28 +16,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6998c275aead7b12b107f700e699f5a82edd84e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087957155aeadb906319a6f261fe665060eeacca
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102416"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155498"
 ---
-# <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单
-本演练基于中演示[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过显示如何将添加到子菜单**TestMenu**菜单。  
+# <a name="add-a-submenu-to-a-menu"></a>将子菜单添加到菜单
+本演练基于在演示[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过演示如何添加到子菜单**TestMenu**菜单。  
   
- 子菜单是出现在另一个菜单辅助菜单。 可通过遵循其名称的箭头标识子菜单。 单击名称将导致子菜单和要显示其命令。  
+ 子菜单是另一个菜单中会显示一个辅助菜单。 可以通过遵循其名称的箭头标识子菜单。 单击名称会导致子菜单以及用来显示其命令。  
   
- 本演练在 Visual Studio 菜单栏上的菜单中创建子菜单，并将新的命令放子菜单。 本演练还实现新的命令。  
+ 本演练在 Visual Studio 菜单栏上的菜单中创建子菜单，并将新的命令放在子菜单。 本演练还实现了新命令。  
   
 ## <a name="prerequisites"></a>系统必备  
- 从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单  
+## <a name="add-a-submenu-to-a-menu"></a>将子菜单添加到菜单  
   
-1.  按照中的步骤[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)若要创建的项目和菜单项。 此演练中的步骤假定 VSIX 项目的名称为`TopLevelMenu`。  
+1.  按照中的步骤[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)来创建项目和菜单项。 在本演练中的步骤假定该 VSIX 项目的名称为`TopLevelMenu`。  
   
-2.  打开 TestCommandPackage.vsct。 在`<Symbols>`部分中，添加`<IDSymbol>`子菜单、 子菜单的组中，和命令中的所有元素`<GuidSymbol>`节点名为"guidTopLevelMenuCmdSet。" 这是包含的相同节点`<IDSymbol>`顶级菜单的元素。  
+2.  打开*TestCommandPackage.vsct*。 在中`<Symbols>`部分中，添加`<IDSymbol>`子菜单、 子菜单组和命令中的所有元素`<GuidSymbol>`节点名为"guidTopLevelMenuCmdSet。" 这是包含在同一节点`<IDSymbol>`顶级菜单的元素。  
   
     ```xml  
     <IDSymbol name="SubMenu" value="0x1100"/>  
@@ -57,7 +57,7 @@ ms.locfileid: "31102416"
     </Menu>  
     ```  
   
-     父级的 GUID/ID 对指定生成中的菜单组[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)，并且是顶级菜单的子级。  
+     父 GUID/ID 对指定的菜单组中生成[向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)，并且是顶级菜单的子级。  
   
 4.  添加到步骤 2 中定义的菜单组`<Groups>`部分，并使其成为子子菜单。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "31102416"
     </Group>  
     ```  
   
-5.  添加新`<Button>`元素`<Buttons>`部分来定义步骤 2 中创建子菜单上的项作为该命令。  
+5.  添加一个新`<Button>`元素`<Buttons>`部分来定义为在子菜单项在步骤 2 中创建该命令。  
   
     ```xml  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">  
@@ -80,19 +80,19 @@ ms.locfileid: "31102416"
     </Button>  
     ```  
   
-6.  生成解决方案并启动调试。 你应看到实验实例。  
+6.  生成解决方案并启动调试。 应会看到的实验实例。  
   
-7.  单击**TestMenu**若要查看名为的新子菜单**子菜单**。 单击**子菜单**打开子菜单并查看新的命令，**测试子命令**。 请注意，单击**测试子命令**不执行任何操作。  
+7.  单击**TestMenu**若要查看名为的新子菜单**子菜单**。 单击**子菜单**以打开子菜单并查看新的命令**测试子命令**。 请注意，单击**测试子命令**不执行任何操作。  
   
-## <a name="adding-a-command"></a>添加命令  
+## <a name="add-a-command"></a>添加命令  
   
-1.  打开 TestCommand.cs 并后现有命令 id。 添加下面的命令 ID  
+1.  打开*TestCommand.cs*并添加以下的命令 ID 后现有命令 id。  
   
     ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
-2.  添加子命令。 找到命令构造函数。 恰好在调用后添加以下行`AddCommand`方法。  
+2.  添加子命令。 查找命令构造函数。 只需调用后面添加以下行`AddCommand`方法。  
   
     ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);  
@@ -127,7 +127,7 @@ ms.locfileid: "31102416"
                 }  
     ```  
   
-3.  添加 SubItemCallback()。 这是在单击子菜单中新增的命令时调用的方法。  
+3.  添加`SubItemCallback()`。 这是在单击子菜单中的新命令时调用的方法。  
   
     ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
@@ -153,10 +153,10 @@ ms.locfileid: "31102416"
     }  
     ```  
   
-4.  生成项目并启动调试。 应显示的实验实例。  
+4.  生成项目并启动调试。 应显示在实验实例。  
   
-5.  上**TestMenu**菜单上，单击**子菜单**，然后单击**测试子命令**。 一个消息框应该显示，并显示的文本，"第命令内 TestCommand.SubItemCallback() 测试"。  
+5.  上**TestMenu**菜单上，单击**子菜单**，然后单击**测试子命令**。 一个消息框应显示，显示的文本，"第命令内 TestCommand.SubItemCallback() 测试"。  
   
-## <a name="see-also"></a>另请参阅  
- [将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>请参阅  
+ [向 Visual Studio 菜单栏添加菜单](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)   
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

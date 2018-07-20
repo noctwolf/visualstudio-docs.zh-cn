@@ -1,5 +1,5 @@
 ---
-title: 调用调试器事件 |Microsoft 文档
+title: 调用调试器事件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3960d464b1a6d44fb77eba23cd518fea1f2e5a39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3ae37a6f6ed180d13623a04afd357efcc109039f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100022"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153028"
 ---
-# <a name="calling-debugger-events"></a>调用调试器事件
-在调试会话中的事件将按特定顺序发生。  
+# <a name="call-debugger-events"></a>调用调试器事件
+调试会话中的事件将按特定顺序发生。  
   
 ## <a name="discussion"></a>讨论  
- 若要了解的调试引擎 (DE) 和会话调试管理器 (SDM) 之间的调用模式，下面的内容表示在典型的调试会话中发生的事件的调用顺序：  
+ 若要了解的调试引擎 (DE) 和会话调试管理器 (SDM) 之间的调用模式，以下内容代表典型的调试会话中发生的事件的调用顺序：  
   
 1.  [附加和分离到程序](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)  
   
@@ -34,7 +34,7 @@ ms.locfileid: "31100022"
   
 4.  [创建断点](../../extensibility/debugger/creating-a-breakpoint.md)  
   
-5.  [当断点绑定或变得未绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
+5.  [当断点绑定或成为取消绑定](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)  
   
 6.  [断点错误](../../extensibility/debugger/breakpoint-errors.md)  
   
@@ -50,5 +50,5 @@ ms.locfileid: "31100022"
   
 12. [异常处理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

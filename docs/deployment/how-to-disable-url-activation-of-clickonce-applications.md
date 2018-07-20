@@ -1,5 +1,5 @@
 ---
-title: 如何： 禁用 ClickOnce 应用程序的 URL 激活 |Microsoft 文档
+title: 如何： 禁用 ClickOnce 应用程序的 URL 激活 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 652060d639f5e516500cdc2b9de9fa7a4a45ee9f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f39e6baa2799a7edd3c35d2ec93515478da725b2
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557939"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155245"
 ---
-# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>如何：禁用 ClickOnce 应用程序的 URL 激活
+# <a name="how-to-disable-url-activation-of-clickonce-applications"></a>如何： 禁用 ClickOnce 应用程序的 URL 激活
 通常，从 Web 服务器安装 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序后它会立即自动启动。 出于安全原因，您可以决定禁用此行为，并告知用户启动应用程序从**启动**菜单相反。 以下过程描述了如何禁用 URL 激活。  
   
- 此方法仅适用于从 Web 服务器安装到用户计算机上的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 它不能用于仅联机应用程序，仅联机应用程序可以通过使用其 URL 启动。 有关仅联机且已安装的应用程序之间区别的详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
+ 此方法仅适用于从 Web 服务器安装到用户计算机上的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 它不能用于仅联机应用程序，仅联机应用程序可以通过使用其 URL 启动。 只能联机使用的和已安装的应用程序之间区别的详细信息，请参阅[选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)。  
   
  此过程使用 [！包括[winsdklong](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。 你还可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 执行此过程。  
   
@@ -36,11 +36,11 @@ ms.locfileid: "31557939"
   
 #### <a name="to-disable-url-activation-for-your-application"></a>禁用应用程序的 URL 激活的步骤  
   
-1.  在 MageUI.exe 中打开部署清单。 如果尚未创建一个，按照中的步骤[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+1.  在 MageUI.exe 中打开部署清单。 如果尚未创建一个，请按照中的步骤[演练： 手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
 2.  选择**部署选项**选项卡。  
   
-3.  清除**自动运行应用程序在安装之后**复选框。  
+3.  清除**自动运行安装后的应用程序**复选框。  
   
 4.  保存并对清单进行签名。  
   

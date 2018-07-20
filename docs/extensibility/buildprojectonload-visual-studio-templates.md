@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnLoad （Visual Studio 模板） |Microsoft 文档
+title: BuildProjectOnLoad （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58493c8e3c4668f1cd94c7f892d727479b755f3f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b70cc3522d59c2abe4633f38f746aeeb3159fe8a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097876"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150660"
 ---
-# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad（Visual Studio 模板）
-指定是否将在创建后立即生成项目。  
+# <a name="buildprojectonload-visual-studio-templates"></a>BuildProjectOnLoad （Visual Studio 模板）
+指定是否在创建后立即生成项目。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -54,10 +54,10 @@ ms.locfileid: "31097876"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 文本必须是`true`或`false`，，该值指示是否在创建后立即生成项目。  
+ 文本必须是`true`或`false`，该值指示是否在创建后立即生成项目。  
   
 ## <a name="remarks"></a>备注  
- `BuildProjectOnLoad` 是一个可选属性。 默认值为 `false`。  
+ `BuildProjectOnLoad` 为可选属性。 默认值为 `false`。  
   
 ## <a name="example"></a>示例  
  以下示例阐释 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 模板的元数据。  
@@ -87,7 +87,7 @@ ms.locfileid: "31097876"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [TemplateContent 元素 （Visual Studio 模板）](../extensibility/templatecontent-element-visual-studio-templates.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

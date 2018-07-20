@@ -24,6 +24,8 @@
       href: how-to-debug-managed-and-native-code.md
     - name: 使用 IntelliTrace 后退查看快照
       href: how-to-use-intellitrace-step-back.md
+    - name: 零基础调试
+      href: debugging-absolute-beginners.md
 - name: 操作指南
   items:
     - name: 使用调试器浏览代码
@@ -105,8 +107,6 @@
           items:
             - name: 使用“编辑并继续”在中断模式下应用编辑
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-            - name: Visual Basic“编辑并继续”中不支持的编辑
-              href: unsupported-edits-in-visual-basic-edit-and-continue.md
         - name: 'F# 不支持“编辑并继续”'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: 查看调试程序数据
@@ -826,5 +826,3 @@
   items:
     - name: Visual Studio 中调试器的新增功能
       href: what-s-new-for-the-debugger-in-visual-studio.md
-    - name: 零基础调试
-      href: debugging-absolute-beginners.md
