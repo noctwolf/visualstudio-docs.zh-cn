@@ -1,9 +1,9 @@
 ---
-title: Visual Studio 中的 JavaScript 控制台命令 |Microsoft 文档
+title: 在 Visual Studio 中的 JavaScript 控制台命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - JavaScript Console commands [UWP apps]
 - JavaScript debugging, console [UWP apps]
@@ -14,18 +14,18 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 2c0151bb0810529f0dad36d72b80a13ae519e8b0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c14cce73da0c83fefc3461d61d16a062af365db7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478715"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154367"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
   
- 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 Cordova 应用中受支持的控制台命令的信息，请参阅[调试应用](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
+ 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持的控制台命令的信息，请参见[调试应用程序](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果“JavaScript 控制台”窗口已关闭，可在 Visual Studio 中调试时，单击 **“调试”** > **“窗口”** > **“JavaScript 控制台”**。  
+ 如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。  
   
 > [!NOTE]
 >  如果该窗口在调试会话期间不可用，请确保在项目的“调试”属性中将调试器类型设置为 **“脚本”** 。  
@@ -52,9 +52,9 @@ ms.locfileid: "31478715"
 |`groupEnd()`|当前组结束。<br /><br /> 要求：<br /><br /> Visual Studio 2013|请参见 `group` 命令的示例。|  
 |`info(message)`|向控制台窗口发送 `message` 。 消息以信息符号开头。|`console.info("info message");`<br /><br /> 有关更多示例，请参阅本主题后面部分的 [Formatting console.log output](#ConsoleLog) 。|  
 |`log(message)`|向控制台窗口发送 `message` 。<br /><br /> 若传递某个对象，则该命令将该对象发送到控制台窗口并在对象可视化工具中显示它。 可使用该可视化工具在控制台窗口中检查属性。|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|在 Web 应用中使用。 使用 JavaScript 的 UWP 应用中不支持。|不支持。|  
-|`profile(reportName)`|在 Web 应用中使用。 使用 JavaScript 的 UWP 应用中不支持。|不支持。|  
-|`profileEnd()`|在 Web 应用中使用。 使用 JavaScript 的 UWP 应用中不支持。|不支持。|  
+|`msIsIndependentlyComposed(element)`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
+|`profile(reportName)`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
+|`profileEnd()`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
 |`select(element)`|选择指定的 HTML`element`中[DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
 |`time (name)`|启动由可选的 `name` 参数标识的计时器。 配合 `console.timeEnd`使用时，计算 `time` 和 `timeEnd`之间经历的时间，并使用 `name` 字符串作为前缀将结果（以 ms 为测量单位）发送到控制台。 用于启用应用程序代码的检测以衡量性能。|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|停止由可选的 `name` 参数标识的计时器。 请参见 `time` 控制台命令。|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
