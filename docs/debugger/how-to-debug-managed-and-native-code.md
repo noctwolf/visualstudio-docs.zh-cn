@@ -1,4 +1,4 @@
----
+﻿---
 title: 教程： 调试托管和本机代码 （混合模式）
 description: 了解如何调试使用混合的模式调试的.NET Core 或.NET Framework 应用程序中的本机 DLL
 ms.custom: ''

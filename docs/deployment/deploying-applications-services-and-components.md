@@ -1,4 +1,4 @@
----
+﻿---
 title: 部署功能简介
 description: 了解如何部署应用程序从 Visual Studio 的选项。
 ms.custom: mvc
