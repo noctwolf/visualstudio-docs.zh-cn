@@ -1,6 +1,8 @@
+- name: 代码分析文档
+  href: index.md
 - name: 概述
   items:
-    - name: 托管代码的代码分析
+    - name: 托管代码分析
       href: code-analysis-for-managed-code-overview.md
     - name: Roslyn 分析器
       href: roslyn-analyzers-overview.md
@@ -23,7 +25,7 @@
           href: demo-sample.md
 - name: 操作指南
   items:
-    - name: 托管代码的代码分析
+    - name: 托管代码分析
       items:
         - name: 安装 Roslyn 分析器
           href: install-roslyn-analyzers.md

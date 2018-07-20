@@ -1,5 +1,5 @@
 ---
-title: 如何： 自动递增 ClickOnce 发布版本 |Microsoft 文档
+title: 如何： 自动递增 ClickOnce 发布版本 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 178599f8f32ff2cbe1c12996eafb15feee62d463
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: beada30e45ce2d46500654bca5051bd51db02d66
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31565635"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151959"
 ---
-# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何：自动递增 ClickOnce 发布版本
-发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序，更改`Publish Version`属性导致应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。  
+# <a name="how-to-automatically-increment-the-clickonce-publish-version"></a>如何： 自动递增 ClickOnce 发布版本
+发布时[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序中，更改`Publish Version`属性使此应用程序作为更新发布。 默认情况下，Visual Studio 会自动增大`Revision`数`Publish Version`每次您发布应用程序。  
   
- 你可以在禁用此行为**发布**页**项目设计器**。  
+ 您可以禁用此行为上**发布**页**项目设计器**。  
   
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -40,9 +40,9 @@ ms.locfileid: "31565635"
   
 2.  单击**发布**选项卡。  
   
-3.  在**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
+3.  在中**发布版本**部分中，清除**自动递增每个版本的修订号**复选框。  
   
 ## <a name="see-also"></a>请参阅  
- [如何：设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [如何： 设置 ClickOnce 发布版本](../deployment/how-to-set-the-clickonce-publish-version.md)   
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+ [如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

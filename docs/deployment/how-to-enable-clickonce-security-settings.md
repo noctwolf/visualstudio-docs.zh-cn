@@ -1,5 +1,5 @@
 ---
-title: 如何： 启用 ClickOnce 安全设置 |Microsoft 文档
+title: 如何： 启用 ClickOnce 安全设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc3f87e590c6b915d5b3d9db5d2517d80965dd6c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f21b58a0ec9e8fe26cb02f72912fd23424cdfc7a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31558615"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39150932"
 ---
-# <a name="how-to-enable-clickonce-security-settings"></a>How to: Enable ClickOnce Security Settings
-若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 在发布使用发布向导的应用程序时，这会自动完成。  
+# <a name="how-to-enable-clickonce-security-settings"></a>如何： 启用 ClickOnce 安全设置
+若要发布应用程序，必须启用 ClickOnce 应用程序的代码访问安全性。 当您发布应用程序使用发布向导时，这是自动完成。  
   
  在某些情况下，启用代码访问安全性可能会影响性能时生成或调试应用程序;在这些情况下，你可能想要暂时禁用的安全设置。  
   
- 可以启用 ClickOnce 安全设置，或将其上禁用**安全**页**项目设计器**。  
+ ClickOnce 安全设置可以启用或禁用**安全**页**项目设计器**。  
   
 ### <a name="to-enable-clickonce-security-settings"></a>若要启用 ClickOnce 安全设置  
   
@@ -40,10 +40,10 @@ ms.locfileid: "31558615"
   
 3.  选中“启用 ClickOnce 安全设置”  复选框。  
   
-     现在可以自定义你在安全页上的应用程序的安全设置。  
+     现在，您可以为安全性页上的应用程序定制的安全设置。  
   
     > [!NOTE]
-    >  通过发布应用程序每次都会自动选中此复选框**发布**向导。  
+    >  每次通过发布应用程序会自动选中此复选框**发布**向导。  
   
 ### <a name="to-disable-clickonce-security-settings"></a>若要禁用 ClickOnce 安全设置  
   
@@ -53,12 +53,12 @@ ms.locfileid: "31558615"
   
 3.  清除**启用 ClickOnce 安全设置**复选框。  
   
-     你的应用程序将运行与完全信任的安全设置;上的任何设置**安全**页面将被忽略。  
+     将使用完全信任安全设置; 运行你的应用程序上的任何设置**安全**页将被忽略。  
   
     > [!NOTE]
-    >  每次发布应用程序时使用发布向导中，将选中此复选框;你必须在每个成功发布后再次清除它。  
+    >  使用发布向导发布应用程序每次将选中此复选框;每次成功发布后，您必须清除它。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   
- [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
+ [ClickOnce 应用程序的的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)   
  

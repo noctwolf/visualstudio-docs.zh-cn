@@ -3,21 +3,22 @@ layout: LandingPage
 author: jasongroce
 ms.author: apexprodleads
 ms.topic: landing-page
+ms.prod: visual-studio-dev15
 ms.technology: vs-ide-mobile
 title: 使用 C++ 文档的移动开发 | Microsoft Docs
 description: 使用 Visual Studio 创建适用于 iOS、Android 和 Windows 设备的本机 C++ 应用。
 ms.workload:
 - apexprodleads
-ms.openlocfilehash: e190ad0dbe908fb1d4549023729d60db88177ea6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc428cd4b961fe42f3d1f80cd18982a2420aafd3
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31060946"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924169"
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 文档的移动开发
 
-使用 Visual Studio 创建适用于 iOS、Android 和 Windows 设备的本机 C++ 应用。
+使用 Visual Studio 创建面向 iOS、Android 和 Windows 设备的本机 C++ 应用。
 
 <ul class="panelContent cardsF">
     <li>
@@ -31,7 +32,7 @@ ms.locfileid: "31060946"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Install Visual C++ for Cross-Platform Mobile Development</h3>
+                        <h3>安装用于跨平台移动开发的 Visual C++</h3>
                         <p>安装生成跨平台移动应用所需的工具。</p>
                     </div>
                 </div>
@@ -69,8 +70,8 @@ ms.locfileid: "31060946"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Cross-Platform Mobile Development Examples</h3>
-                        <p>跨平台移动开发的入门示例。</p>
+                        <h3>跨平台移动开发示例</h3>
+                        <p>查看可帮助你实现跨平台移动开发入门的示例。</p>
                     </div>
                 </div>
             </div>

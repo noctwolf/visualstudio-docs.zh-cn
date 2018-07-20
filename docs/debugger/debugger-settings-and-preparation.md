@@ -1,9 +1,9 @@
 ---
-title: 调试器设置和准备 |Microsoft 文档
+title: 调试器设置和准备工作 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f74cbb0f03f9b944f4ad1bfb00ffb58b56b2817f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473311"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151569"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  

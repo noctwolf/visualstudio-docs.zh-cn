@@ -1,5 +1,5 @@
 ---
-title: ClickOnce 如何执行应用程序更新 |Microsoft 文档
+title: ClickOnce 如何执行应用程序更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe09cfe546d947bf07334e9dd6468226884e9e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a1f5d9b67633ffa2b14f780b9588f526372a4f5d
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31557692"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152508"
 ---
 # <a name="how-clickonce-performs-application-updates"></a>ClickOnce 如何执行应用程序更新
-ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决定是否要更新应用程序的文件。 ClickOnce 更新开始后，使用一种称为技术*文件修补*从而避免冗余下载的应用程序文件。  
+ClickOnce 使用应用程序的部署清单中指定的文件版本信息来决定是否要更新应用程序的文件。 在开始更新后，ClickOnce 使用一种称为*文件修补*以避免冗余的应用程序文件下载。  
   
-## <a name="file-patching"></a>文件修补程序  
- 在更新应用程序，ClickOnce 不会下载的所有应用程序的新版本文件除非文件已更改。 相反，它将针对新版本的清单中的签名对当前应用程序的应用程序清单中指定的文件的哈希签名进行比较。 如果文件的签名不同，ClickOnce 将下载最新版本。 如果签名匹配，文件未更改从一个版本到下一步。 在这种情况下，ClickOnce 将现有文件复制，并在新版本的应用程序使用它。 此方法可防止 ClickOnce 无需下载一次，整个应用程序即使只能将一个或两个文件已更改。  
+## <a name="file-patching"></a>文件修补  
+ 当更新应用程序，ClickOnce 不会下载所有应用程序的新版本文件除非文件已更改。 相反，它将在当前应用程序中的新版本的清单签名的应用程序清单中指定的文件的哈希签名进行比较。 如果文件的签名不同，ClickOnce 会下载新版本。 如果签名匹配，该文件具有不更改从一个版本到下一步。 在这种情况下，ClickOnce 将现有文件复制并在新版本的应用程序中使用它。 这种方法使 ClickOnce 不必下载整个应用程序同样，即使只能将一个或两个文件已更改。  
   
- 亦文件修补程序适用于下载的程序集上需要使用<xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>和<xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A>方法。  
+ 将根据需要使用还文件修补适合下载的程序集<xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A>和<xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync%2A>方法。  
   
- 如果使用 Visual Studio 来编译你的应用程序，它将生成新的哈希签名的所有文件，每当您重新生成整个项目。 在这种情况下，所有程序集将下载到客户端，尽管只有几个程序集可能已更改。  
+ 如果使用 Visual Studio 来编译你的应用程序，它将生成新的哈希签名的所有文件，只要重新生成整个项目。 在这种情况下，所有程序集将下载到客户端，尽管只有几个程序集可能已更改。  
   
- 修补文件不能用于标记为数据和存储在数据目录中的文件。 这些始终会下载而不考虑文件的哈希签名。 数据目录的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
+ 修补文件不能用于标记为数据并存储在数据目录中的文件。 这些始终下载而不考虑文件的哈希签名。 数据目录的详细信息，请参阅[访问 ClickOnce 应用程序中的本地和远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)   

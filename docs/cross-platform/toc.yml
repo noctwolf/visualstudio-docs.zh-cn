@@ -22,8 +22,6 @@
 - name: Visual Studio Tools for Unity
   href: visual-studio-tools-for-unity.md
   items:
-    - name: Visual Studio Tools for Unity 的概述
-      href: overview-of-visual-studio-tools-for-unity.md
     - name: Visual Studio Tools for Unity 入门
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: 使用 Visual Studio Tools for Unity

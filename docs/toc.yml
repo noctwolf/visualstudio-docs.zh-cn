@@ -39,7 +39,7 @@
       href: install/repair-visual-studio.md
     - name: 卸载 Visual Studio
       href: install/uninstall-visual-studio.md
-    - name: Visual Studio Administrator Guide
+    - name: Visual Studio 管理员指南
       href: install/visual-studio-administrator-guide.md
       items:
         - name: 使用命令行
@@ -57,7 +57,7 @@
             - name: 在防火墙或代理服务器后面安装和使用 Visual Studio
               href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
               items:
-                - name: 安装或使用 Visual Studio 时的网络错误疑难解答
+                - name: 排查安装或使用 Visual Studio 时遇到的网络错误
                   href: install/troubleshooting-network-related-errors-in-visual-studio.md
         - name: 在企业中部署
           items:
@@ -132,7 +132,7 @@
     - name: Visual Studio 中的 R...
       href: rtvs/getting-started-with-r.md
     - name: Visual Studio 中的 Node.js
-      href: nodejs/tutorial-nodejs.md
+      href: javascript/tutorial-nodejs.md
     - name: 'Visual Studio 中的 C#'
       href: ide/tutorial-csharp-aspnet-core.md
     - name: Visual Studio 中的 Visual Basic
@@ -153,8 +153,6 @@
               href: ide/creating-solutions-and-projects.md
             - name: 移植、迁移和升级项目
               href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: 添加和删除项目项
-              href: ide/adding-and-removing-project-items.md
             - name: 管理项目和解决方案属性
               href: ide/managing-project-and-solution-properties.md
             - name: 管理项目中的引用
@@ -344,9 +342,6 @@
               items:
                 - name: Visual Basic IntelliSense
                   href: ide/visual-basic-specific-intellisense.md
-                  items:
-                    - name: Visual Basic 中经过筛选的完成列表
-                      href: ide/filtered-completion-lists-in-visual-basic.md
                 - name: 'C# IntelliSense'
                   href: ide/visual-csharp-intellisense.md
                 - name: JavaScript IntelliSense
@@ -475,6 +470,11 @@
           href: ide/find-and-fix-code-errors.md
         - name: 跨平台移动开发
           href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: 'F# 开发'
+          href: ide/fsharp-visual-studio.md
+          items:
+            - name: 面向 .NET 较旧版本
+              href: ide/fsharp-target-older-dotnet-versions.md
         - name: Office 和 SharePoint 开发
           href: vsto/office-and-sharepoint-development-in-visual-studio.md
         - name: 使用 XML 和 XSLT 文件
@@ -605,15 +605,15 @@
         - name: 演练：创建多计算机生成环境
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: 调试...
-      href: debugger/debugger-feature-tour.md
+      href: debugger/index.md
     - name: 测试...
       href: test/improve-code-quality.md
     - name: 测量性能...
-      href: profiling/profiling-feature-tour.md
+      href: profiling/index.md
     - name: 分析代码质量...
-      href: code-quality/analyzing-application-quality-by-using-code-analysis-tools.md
+      href: code-quality/index.md
     - name: 部署...
-      href: deployment/deploying-applications-services-and-components.md
+      href: deployment/index.md
     - name: 扩展 Visual Studio...
       href: extensibility/visual-studio-sdk.md
     - name: 对体系结构进行分析和建模...
@@ -686,8 +686,6 @@
       items:
         - name: 模板参数
           href: ide/template-parameters.md
-        - name: 模板架构参考（扩展性）
-          href: extensibility/visual-studio-template-schema-reference.md?context=visualstudio/default
     - name: 常规用户界面元素
       items:
         - name: 调用层次结构
@@ -957,8 +955,6 @@
           href: ide/reference/open-file-command.md
         - name: “打开项目”命令
           href: ide/reference/open-project-command.md
-        - name: “打开解决方案”命令
-          href: ide/reference/open-solution-command.md
         - name: Print 命令
           href: ide/reference/print-command.md
         - name: “快速监视”命令

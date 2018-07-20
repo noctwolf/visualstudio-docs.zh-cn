@@ -1,5 +1,5 @@
 ---
-title: AsyncVoidMethodBuilder.m_objectIdForDebugger 字段 |Microsoft 文档
+title: AsyncVoidMethodBuilder.m_objectIdForDebugger 字段 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ddf5566d7f897bbe44eca3d9d21f9183efd69d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e9b0fc96eca5582be01745f4fe934cfe812bc65
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099267"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155420"
 ---
 # <a name="asyncvoidmethodbuildermobjectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 字段
 表示调试器用于唯一标识此生成器的延迟初始化的对象。  
   
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib （在 mscorlib.dll 中)  
   
- 由于无法访问此内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp  
 .field private object m_objectIdForDebugger  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>   
  [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

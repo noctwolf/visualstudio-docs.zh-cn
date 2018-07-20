@@ -1,5 +1,5 @@
 ---
-title: BuildProjectOnload 元素 （Visual Studio 模板） |Microsoft 文档
+title: BuildProjectOnload 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,15 +11,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 689d2510a8513b880f3c2cddca584449c03217b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3e5cbcc06fcc7a936918de8b1a9d4c44d9938d94
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097817"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154153"
 ---
-# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素（Visual Studio 模板）
-只有新项目将生成尽可能创建并将其添加到解决方案。 不生成整个解决方案。  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 元素 （Visual Studio 模板）
+生成新的项目如下创建并将其添加到解决方案。 不生成整个解决方案。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -44,7 +44,7 @@ ms.locfileid: "31097817"
   
 |元素|描述|  
 |-------------|-----------------|  
-|TemplateData|将此模板分类并定义中的显示方式**新项目**和**添加新项**对话框。|  
+|`TemplateData`|将此模板分类并定义显示在这种方式**新的项目**并**添加新项**对话框。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
@@ -55,7 +55,7 @@ ms.locfileid: "31097817"
  `BuildProjectOnLoad` 是可选元素。 默认值为 `false`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示 Visual C# 模板的元数据。  
+ 下面的示例说明了 Visual C# 模板的元数据。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -82,6 +82,6 @@ ms.locfileid: "31097817"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

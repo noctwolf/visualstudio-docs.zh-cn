@@ -1,5 +1,5 @@
 ---
-title: '&lt;trustInfo&gt;元素 （ClickOnce 应用程序） |Microsoft 文档'
+title: '&lt;trustInfo&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5349ecc2a93f2d5179a88c79b632747195989df
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: 75695598c31b1dcc3a8ae4845a41249ead71236b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815998"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151048"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;元素 （ClickOnce 应用程序）
 描述应用程序要在客户端计算机上运行所需的最低安全权限。  

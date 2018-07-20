@@ -1,9 +1,9 @@
 ---
-title: 调试器项目设置 |Microsoft 文档
+title: 调试器项目设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - CSharp
 - VB
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ea878114d940f8b9881a1a1d0204da58ca6519f5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a027307ef960a8b0185daa34374e20270bf2fa19
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474019"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152979"
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 某些项目设置也对调试产生影响。 这些设置确定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。  

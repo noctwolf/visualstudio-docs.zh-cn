@@ -1,5 +1,5 @@
 ---
-title: 按钮元素 |Microsoft 文档
+title: 按钮元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a89d40d1f9c9a994269045dd674a533a0bcd32c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 522a69dc703a83ef601a5c7f0c54a5e0c224366e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097645"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155407"
 ---
-# <a name="buttons-element"></a>按钮元素
-组[按钮](../extensibility/button-element.md)元素，后者表示单个命令。  
+# <a name="buttons-element"></a>Buttons 元素
+组[按钮](../extensibility/button-element.md)元素，它表示单个命令。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,7 +47,7 @@ ms.locfileid: "31097645"
 |元素|描述|  
 |-------------|-----------------|  
 |[Buttons 元素](../extensibility/buttons-element.md)|按钮元素进行分组。|  
-|[Button 元素](../extensibility/button-element.md)|定义一个命令，用户可与之交互。|  
+|[Button 元素](../extensibility/button-element.md)|定义用户可与之交互的命令。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -69,6 +69,6 @@ ms.locfileid: "31097645"
 </Buttons>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder.ObjectIdForDebugger 属性 |Microsoft 文档
+title: AsyncTaskMethodBuilder.ObjectIdForDebugger 属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af89be5eeeb3138e6fc67e3c92ebf263e57d342f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 29474e7c47203499f99e6763097fdd0f3f10549a
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098269"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152326"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger 属性
-获取可用于唯一标识调试器到此生成器的对象。  
+获取可用于唯一地标识调试器到此生成器的对象。  
   
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib （在 mscorlib.dll 中)  
   
- 由于无法访问此内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,6 +35,6 @@ ms.locfileid: "31098269"
 private object ObjectIdForDebugger  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
  [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

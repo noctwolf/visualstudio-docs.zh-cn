@@ -1,5 +1,5 @@
 ---
-title: Assembly 元素 （Visual Studio 模板） |Microsoft 文档
+title: Assembly 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97e6209fdf446d88ed79ef741c3584b2bc4f5602
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 195faf23ecb2fca019b4948b3150ab6f9c00f5ec
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099104"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155459"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Assembly 元素（Visual Studio 模板）
-指定有关程序集，该模板使用将该程序集的引用添加到项目的信息。  
+# <a name="assembly-element-visual-studio-templates"></a>Assembly 元素 （Visual Studio 模板）
+指定有关程序集，该模板使用以将该程序集的引用添加到项目的信息。  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -56,9 +56,9 @@ ms.locfileid: "31099104"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 此文本指定要向项目中添加项模板实例化时的程序集。 必须通过以下方式之一指定此程序集名称：  
+ 此文本指定要实例化项模板时，向项目添加的程序集。 必须通过以下方式之一指定此程序集名称：  
   
--   作为完整的程序集名称。 例如：  
+-   为完整的程序集名称。 例如：  
   
     ```  
     <Assembly>  
@@ -75,10 +75,10 @@ ms.locfileid: "31099104"
 ## <a name="remarks"></a>备注  
  `Assembly` 是 `Reference` 的必需子元素。  
   
- `Reference`，`References,`和`Assembly`仅可以具有的.vstemplate 文件中使用元素`Type`属性的值`Item`。  
+ `Reference`，`References,`并`Assembly`元素仅可在 *.vstemplate*具有文件`Type`属性的值`Item`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示`TemplateContent`项模板的元素。 此 XML 添加 System.dll 和 System.Data.dll 程序集的引用。  
+ 下面的示例演示`TemplateContent`项模板的元素。 此 XML 将引用添加到*System.dll*并*System.Data.dll*程序集。  
   
 ```  
 <TemplateContent>  
@@ -98,6 +98,6 @@ ms.locfileid: "31099104"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

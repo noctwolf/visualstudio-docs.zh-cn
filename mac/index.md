@@ -5,16 +5,16 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/06/2018
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
-ms.openlocfilehash: 31459717e9a2c001a9ae4f0efef5ebb0930af1c8
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 738964deed9aa1e51d5a6e4788879bc3165284a7
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693687"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37889880"
 ---
 # <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 介绍
 
-Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下类型的开发：
+Visual Studio for Mac 是一个新式且复杂的 IDE，内附有多种用于创建移动、桌面和 Web 应用程序的功能。 它支持以下类型的开发：
 
 * .NET 移动应用：Android、iOS、tvOS、watchOS
 * Mac 桌面应用
@@ -24,7 +24,7 @@ Visual Studio for Mac 是一个新式且复杂的 IDE，其中包含多种用于
 
 它包括丰富的编辑器、调试、与 iOS/Mac/Android 的本机平台集成和集成源控件等功能。
 
-本文调查了 Visual Studio for Mac 的各个部分，并简要介绍了使其成为一款用于创建跨平台应用程序的强大工具的部分功能。
+本文探究了 Visual Studio for Mac 的方方面面，还介绍了哪些功能使其成为了一款创建跨平台应用程序的强大工具。
 
 ## <a name="installation"></a>安装
 
@@ -46,7 +46,7 @@ F# 是强类型函数编程语言，设计为专门用于在 .NET 上运行。 V
 
 ## <a name="net-core"></a>.NET Core
 
-[.NET Core](https://www.microsoft.com/net/core#macos) 平台可以创建在 Windows、Linux 和 Mac 上运行的应用程序。 Visual Studio for Mac 支持加载、创建、运行和调试 .NET Core 项目。
+[.NET Core](https://www.microsoft.com/net/core#macos) 平台可创建在 Windows、Linux 和 Mac 上运行的应用程序。 Visual Studio for Mac 支持上传、创建、运行和调试 .NET Core 项目。 
 
 要运行 .NET Core 项目，应该下载和安装 .NET Core SDK。
 
@@ -71,11 +71,11 @@ F# 是强类型函数编程语言，设计为专门用于在 .NET 上运行。 V
 
 Visual Studio 有其自己的集成 Android SDK 管理器。
 
-对于 Android 应用程序，Visual Studio for Mac 包含其自己的设计器，该设计器适用于 Android `.axml` 文件来直观地构造用户界面。 Visual Studio for Mac 将在其 Android 设计器中打开这些文件，如下图中所示：
+对于 Android 应用程序，Visual Studio for Mac 包含其自己的设计器，该设计器适用于 Android `.axml` 文件来直观地构造用户界面。 Visual Studio for Mac 将在 Android Designer 中打开这些文件，如下图所示：
 
 ![Android UI 设计器](media/intro-image31.png)
 
-有关 Android 设计器的详细信息，请参阅[设计器概述](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文档。
+有关 Android Designer 的详细信息，请参阅 [Designer 概述](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文档。
 
 ### <a name="ios"></a>iOS
 
@@ -87,7 +87,7 @@ IOS 设计器与 Visual Studio for Mac 完全集成，可进行 .xib 的可视�
 
 ### <a name="mac"></a>Mac
 
-Xamarin 提供本机 Mac API 绑定，可让用户创建美观的 Mac 应用程序。
+Xamarin 提供本机 Mac API 绑定，让用户能够创建美观的 Mac 应用程序。
 
 有关使用 Visual Studio for Mac 编写 Mac 应用程序的详细信息，请参阅 [Xamarin.Mac](https://developer.xamarin.com/guides/#mac) 文档。
 
@@ -108,11 +108,11 @@ Xamarin Profiler 有三个可用于分析的仪表。 [Xamarin Profiler 简介](
 
 ### <a name="inspector"></a>检查器
 
-Xamarin Inspector 向用户提供交互式 C# 控制台以及工具。 检查实时应用程序时，它可用作调试或诊断辅助、教学工具、文档工具或实验工具。
+Xamarin Inspector 提供一个具有用户工具的交互式 C# 控制台。 它可在检查实时应用程序时用作调试或诊断辅助，还可用作教学工具、文档工具或实验工具。
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）以及集成到 IDE 的调试工作流的丰富 C# 控制台。
+它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）并集成到 IDE 调试工作流的内容丰富的 C# 控制台。 
 
 有关详细信息，请参阅 [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) 指南。
 
