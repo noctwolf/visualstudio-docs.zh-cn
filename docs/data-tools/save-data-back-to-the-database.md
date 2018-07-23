@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 43fe5ab7baf168517f92d1bea1024070e5817669
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175325"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177339"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 
@@ -185,7 +185,7 @@ ms.locfileid: "37175325"
     > [!NOTE]
     > 可以防止自动提交所做的更改时调用适配器`Fill`方法通过设置`AcceptChangesDuringFill`适配器添加到属性`false`。 如果设置为`false`，则<xref:System.Data.DataRow.RowState%2A>的每个填充过程中插入的行设置为<xref:System.Data.DataRowState.Added>。
 
-- 之后将数据集更改发送到另一个进程，例如 XML Web 服务。
+- 之后将数据集更改发送到另一个进程，如 XML web 服务。
 
     > [!CAUTION]
     > 这种方法提交更改，则会删除任何更改信息。 不提交后的更改直到您完成执行的操作所要求应用程序知道在数据集中进行了哪些更改。

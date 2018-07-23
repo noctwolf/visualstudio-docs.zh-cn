@@ -8,27 +8,26 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 987193cb7f78947087c6d387e16261d83a20e7c2
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 491b01d87e4f1a9980143e9ffcc501b3cda7c922
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809232"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39189223"
 ---
 1.  在设备或服务器您想要调试的计算机 （而不运行 Visual Studio 的计算机），获取远程工具的正确版本。
 
     |版本|链接|说明|
     |-|-|-|
-    |Visual Studio 2017 （最新版本）|[远程工具](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|始终下载匹配您设备的操作系统 (x 86、 x64、 或 ARM64） 的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging.md#unblock_msvsmon)有关帮助下载的远程工具。|
-    |Visual Studio 2017 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|为以前版本的 Visual Studio 2017 远程工具均可从 My.VisualStudio.com。 如果系统提示，联接免费的 Visual Studio Dev Essentials 组或使用 Visual Studio 订阅登录 id。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging.md#unblock_msvsmon)有关帮助下载的远程工具。|
-    |Visual Studio 2015 （较旧）|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果系统提示，联接免费的 Visual Studio Dev Essentials 组或使用 Visual Studio 订阅登录 id。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging.md#unblock_msvsmon)有关帮助下载的远程工具。|
+    |Visual Studio 2017 （最新版本）|[远程工具](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2017)|远程工具的最新版本是与所有 Visual Studio 2017 版本兼容。 始终下载匹配您设备的操作系统 (x 86、 x64、 或 ARM64） 的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)有关帮助下载的远程工具。|
+    |Visual Studio 2015|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 远程工具可从 My.VisualStudio.com。 如果系统提示，请加入免费[Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/)程序或使用 Visual Studio 订阅 id。 登录 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)有关帮助下载的远程工具。|
     |Visual Studio 2013|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2013 文档中的页|
     |Visual Studio 2012|[远程工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下载 Visual Studio 2012 文档中的页|
 
 2.  在下载页上，选择与你的操作系统 （x86、 x64、 ARM、 或 ARM64） 匹配的工具版本和下载远程工具。
 
     > [!IMPORTANT]
-    >  我们建议安装最新版本的远程工具与你的 Visual Studio 版本匹配。 不建议版本不匹配。 此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试远程计算机运行 64 位操作系统上的 32 位应用程序，您必须在远程计算机上安装远程工具的 64 位版本。
+    >  我们建议为你的发布的 Visual Studio 安装远程工具的最新版本。 最新版本 (例如，15.8) 适用于早期版本 (例如，15.0);但是，早期版本不是与更高版本兼容的。 此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试远程计算机运行 64 位操作系统上的 32 位应用程序，您必须在远程计算机上安装远程工具的 64 位版本。
     >
     >  对于 Windows 10 上调试 ARM 设备上，选择远程工具的最新版本可用的 ARM64 下载。  对于 Windows RT 的设备，选择选项仅适用于 Visual Studio 2015 RTW 下载的 ARM 版本。
 
