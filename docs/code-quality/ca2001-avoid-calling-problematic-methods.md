@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3cf0b0cc79baf49b4792cd009d3e634b8d10574
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef7daf2cdf6ee27863f8239999a436f17a5d6866
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056067"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176936"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001：避免调用有问题的方法
 
@@ -45,7 +45,7 @@ ms.locfileid: "37056067"
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|调用 GC。收集会严重影响应用程序性能和很少需要。 有关详细信息，请参阅[Rico Mariani 性能问题的见解](http://go.microsoft.com/fwlink/?LinkId=169256)MSDN 上的博客文章。|
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|已弃用 Thread.Suspend 和 Thread.Resume 由于其不可预知的行为。  使用中的其他类<xref:System.Threading>命名空间，如<xref:System.Threading.Monitor>， <xref:System.Threading.Mutex>，和<xref:System.Threading.Semaphore>，以同步线程或保护资源。|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|DangerousGetHandle 方法会带来安全风险，因为它可以返回不是有效的句柄。 请参阅<xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A>和<xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A>详细了解如何安全地使用 DangerousGetHandle 方法的方法。|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|这些方法可以从意外的位置加载的程序集。 有关示例，请参阅 Suzanne Cook 的.NET CLR 笔记博客文章[LoadFile vs。LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450)并[选择绑定上下文](http://go.microsoft.com/fwlink/?LinkId=164451)方法加载程序集的信息的 MSDN 网站上。|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|这些方法可以从意外的位置加载的程序集。 有关示例，请参阅 Suzanne Cook 的.NET CLR 笔记博客文章[LoadFile vs。LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450)并[选择绑定上下文](http://go.microsoft.com/fwlink/?LinkId=164451)有关加载程序集的方法信息。|
 |[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|用户代码启动托管进程中执行时，它是太迟可靠地调用 CoSetProxyBlanket。 公共语言运行时 (CLR) 执行可能会阻止用户 P/Invoke 之后的初始化操作。<br /><br /> 如果你确实必须 CoSetProxyBlanket 调用托管应用程序，我们建议使用本机代码 （c + +） 可执行文件启动过程，在本机代码中，调用 CoSetProxyBlanket，然后在进程中启动托管的代码应用程序。 （请务必指定运行时的版本号。）|
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突

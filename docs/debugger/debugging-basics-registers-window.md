@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e21e749cd676ec137fa91e6466e4b6b665a990
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ff3c50274c9860033d247df14c17d5fe745d1893
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056292"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178421"
 ---
 # <a name="about-the-registers-window-in-visual-studio"></a>有关 Visual Studio 中的寄存器窗口
 **注册**窗口才中启用了地址级调试**选项**对话框中，**调试**节点。  
@@ -52,4 +52,4 @@ ms.locfileid: "37056292"
   
 ## <a name="see-also"></a>请参阅  
  [如何： 使用寄存器窗口](../debugger/how-to-use-the-registers-window.md)   
- [调试器基础知识](../debugger/debugger-basics.md)
+ [调试器基础知识](../debugger/getting-started-with-the-debugger.md)

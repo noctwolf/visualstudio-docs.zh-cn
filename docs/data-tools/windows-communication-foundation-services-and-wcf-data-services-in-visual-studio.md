@@ -37,18 +37,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e56e1129bfdd4b49dcf5b54614af715a20207750
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175312"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178873"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的工具和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技术，用于创建分布式应用程序。 本主题提供了从 Visual Studio 的角度介绍了服务。 有关完整文档，请参阅[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)。
 
 ## <a name="what-is-wcf"></a>WCF 是什么？
- [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 是用于创建安全、 可靠、 事务处理，且可互操作分布式应用程序的统一的框架。 它取代了较旧的进程间通信技术，如 ASMX Web 服务、.NET 远程处理、 企业服务 (DCOM) 和 MSMQ。 WCF 汇集了所有这些技术的统一编程模型的功能。 这简化了开发分布式应用程序的体验。
+ [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 是用于创建安全、 可靠、 事务处理，且可互操作分布式应用程序的统一的框架。 它取代了较旧的进程间通信技术，如 ASMX web 服务、.NET 远程处理、 企业服务 (DCOM) 和 MSMQ。 WCF 汇集了所有这些技术的统一编程模型的功能。 这简化了开发分布式应用程序的体验。
 
 ### <a name="what-are-wcf-data-services"></a>WCF 数据服务有哪些？
  [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 是标准的开放数据 (OData) 协议的实现。  WCF 数据服务，可以将表格数据公开为一组 REST Api，可让您可以返回数据，如使用标准 HTTP 谓词 GET、 POST、 PUT 或 DELETE。 在服务器端，WCF 数据服务会将其取代通过[ASP.NET Web API](http://www.asp.net/web-api)用于创建新的 OData 服务。 WCF 数据服务客户端库仍是适合于使用.NET 应用程序从 Visual Studio 中的 OData 服务 (**项目&#124;添加服务引用**)。 有关详细信息，请参阅[WCF 数据服务 4.5](http://go.microsoft.com/fwlink/?LinkID=119952)。
@@ -90,7 +90,7 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
  可以使用作为基础的 WCF Visual Studio 模板快速创建你自己的服务。 然后可以使用 WCF 服务自动主机和 WCF 测试客户端进行调试和测试服务。 这些工具一起提供的快速、 方便地调试和测试周期，并使无需在早期阶段提交给承载模型。
 
 #### <a name="wcf-templates"></a>WCF 模板
- WCF Visual Studio 模板为服务开发提供基本的类结构。 中提供了多个 WCF 模板**添加新项目**对话框。 其中包括 WCF 服务库项目、 WCF 服务网站和 WCF 服务项模板。
+ WCF Visual Studio 模板为服务开发提供基本的类结构。 中提供了多个 WCF 模板**添加新项目**对话框。 其中包括 WCF 服务 lLibrary 项目、 WCF 服务网站和 WCF 服务项模板。
 
  时选择模板时，文件将添加为服务协定、 服务实现和服务配置。 已添加所有必要的属性，创建简单的"Hello World"类型的服务，并且没有编写任何代码。 你将当然，想要添加代码以提供函数和方法对于现实世界服务，但模板提供基本的基础。
 

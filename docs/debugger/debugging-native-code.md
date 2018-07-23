@@ -1,5 +1,5 @@
 ---
-title: 调试本机代码 |Microsoft 文档
+title: 调试本机代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 04/11/2017
 ms.technology: vs-ide-debug
@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57f1e559452c64f9f1a7b019d75b52384081d65
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eba1f156589babb9a3bec38982bd27b7c17a83c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472901"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180186"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
-本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 有关使用 Visual Studio 调试器的机制，请参阅[调试器路线图](../debugger/debugger-basics.md)。  
+本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[调试器路线图](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：调试优化的代码](../debugger/how-to-debug-optimized-code.md)  
@@ -61,7 +61,7 @@ ms.locfileid: "31472901"
  提供有关如何调试使用特性的代码的指导。 指导信息包括如何打开“源批注”、如何查看插入的代码以及如何在当前执行点查看反汇编代码。  
   
  [演练：调试并行应用程序](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 介绍如何使用**并行任务**和**并行堆栈**工具窗口调试并行应用程序。  
+ 介绍如何使用**并行任务**并**并行堆栈**工具窗口调试并行应用程序。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual C++ 项目类型](../debugger/debugging-preparation-visual-cpp-project-types.md)  
@@ -74,4 +74,4 @@ ms.locfileid: "31472901"
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)  
- [在 Visual Studio 中调试](../debugger/index.md)[调试器功能教程](../debugger/debugger-feature-tour.md)
+ [在 Visual Studio 中调试](../debugger/index.md)[调试器功能简介](../debugger/debugger-feature-tour.md)
