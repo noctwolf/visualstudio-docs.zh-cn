@@ -18,19 +18,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b796bf5b17460425d25ec91f3ecca7c147784039
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
-ms.translationtype: HT
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174969"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178382"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务
-本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]托管在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 应用程序，然后从 Windows 窗体应用程序访问它。
+本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]托管在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 应用程序，然后从 Windows 窗体应用程序访问它。
 
 在本演练中你：
 
--   创建 Web 应用程序以承载 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+-   创建 web 应用程序以承载[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
 -   创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
@@ -60,13 +60,13 @@ ms.locfileid: "37174969"
        后不久，查询完成运行并创建 Northwind 数据库。
 
 ## <a name="creating-the-service"></a>创建服务
-若要创建 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，你将添加一个 Web 项目，创建一个[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然后通过此模型创建服务。
+若要创建[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，你将添加一个 web 项目，请创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然后从该模型创建服务。
 
-在第一步，添加用于承载服务的 Web 项目。
+在第一步，添加用于承载服务的 web 项目。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>创建 Web 项目
+#### <a name="to-create-the-web-project"></a>若要创建 web 项目
 
 1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
@@ -164,7 +164,7 @@ ms.locfileid: "37174969"
 
 5.  在菜单栏上依次选择**项目**，**设为启动项目**。
 
-在下一步，添加服务引用到[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]Web 项目中。
+在下一步，添加服务引用到[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 项目中。
 
 #### <a name="to-add-a-service-reference"></a>添加服务引用
 
