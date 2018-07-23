@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d840f6c12de20fb613ee27d59395afeb15a5c34b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059235"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179991"
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 
@@ -96,7 +96,7 @@ ms.locfileid: "37059235"
 
 ## <a name="see-also"></a>请参阅
 
-- [调试器基础知识](../debugger/debugger-basics.md)
+- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
 - [调试托管代码](../debugger/debugging-managed-code.md)
 - [并行编程](/dotnet/standard/parallel-programming/index)
 - [并发运行时](/cpp/parallel/concrt/concurrency-runtime)

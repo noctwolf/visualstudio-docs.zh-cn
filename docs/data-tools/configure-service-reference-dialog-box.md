@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93d39aedc04cbdaebc35c892a8393ca394f44898
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281061"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180459"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
@@ -50,7 +50,7 @@ ms.locfileid: "36281061"
 
  **地址**
 
- 更新服务引用在其中查找服务的 Web 地址。 例如，在开发期间，服务可能是托管在开发服务器上，然后更高版本移到生产服务器，因而需要进行地址更改。
+ 更新服务引用在其中查找服务的 web 地址。 例如，在开发期间，服务可能是托管在开发服务器上，然后更高版本移到生产服务器，因而需要进行地址更改。
 
 > [!NOTE]
 > 地址元素不可用**配置服务引用**从显示对话框**添加服务引用对话框**。
@@ -96,7 +96,7 @@ ms.locfileid: "36281061"
 
  **引用的程序集列表**
 
- 包含一个列表，此列表针对项目或网站列出了引用的程序集。 当选择**重新使用的指定被引用程序集中的类型**，可以选中或清除各个程序集。
+ 包含引用的程序集的项目或网站的列表。 当选择**重新使用的指定被引用程序集中的类型**，可以选中或清除各个程序集。
 
  **添加 Web 引用**
 

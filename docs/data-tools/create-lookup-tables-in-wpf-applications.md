@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa14d9e2327288729bd97dd8a656f894e9fcef5d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757131"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176123"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 术语*查找表*(有时称为*查找绑定*) 介绍了一个控件，显示来自一个数据表基于另一个表中的外键字段的值的信息。 可以通过拖动对主节点的父表中创建查找表或对象中**数据源**窗口拖到已绑定到列或相关的子表中的属性的控件。
@@ -36,7 +36,7 @@ ms.locfileid: "36757131"
 
     -   数据集或实体数据模型。
 
-    -   WCF 数据服务，WCF 服务或 Web 服务。 有关详细信息，请参阅[如何： 连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
+    -   WCF 数据服务，WCF 服务或 web 服务。 有关详细信息，请参阅[如何： 连接到服务中的数据](../data-tools/how-to-connect-to-data-in-a-service.md)。
 
     -   对象。 有关详细信息，请参阅[绑定到 Visual Studio 中的对象](bind-objects-in-visual-studio.md)。
 

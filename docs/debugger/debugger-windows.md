@@ -1,5 +1,5 @@
 ---
-title: 调试器在 Visual Studio 中的 Windows |Microsoft 文档
+title: 调试器在 Visual Studio 中的 Windows |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.technology: vs-ide-debug
@@ -10,16 +10,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0c7fb04b05ef1ec1c83fe744458fdcc6ca3743
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ebf9896626a26d1462c2f1d8639722b28ef1e1ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481484"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178301"
 ---
-# <a name="learn-about-debugger-windows-in-visual-studio"></a>了解 Visual Studio 中的调试器窗口
+# <a name="learn-about-debugger-windows-in-visual-studio"></a>了解有关 Visual Studio 中的调试器 Windows
 
-调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 命中断点并且执行停止时，单击**调试 > Windows**。
+调试程序时可以打开大多数调试器窗口。 若要查看调试器窗口列表，请设置断点并开始调试。 当命中断点并且执行停止时，单击**调试 > Windows**。
 
 ||||
 |-|-|-|
@@ -51,4 +51,4 @@ ms.locfileid: "31481484"
 
 ## <a name="see-also"></a>请参阅
 
-[调试器基础知识](../debugger/debugger-basics.md)
+[调试器基础知识](../debugger/getting-started-with-the-debugger.md)
