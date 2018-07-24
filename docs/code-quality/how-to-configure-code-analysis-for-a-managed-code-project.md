@@ -15,16 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c79791a56bdf1ea17e0dcf13cbfb0bdc866d67b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 72d9986a01482972154e228923073782a77a93d5
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179555"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204227"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：配置托管代码项目的代码分析
 
-在 Visual Studio 中，您可以从列表中选择的代码分析*规则集*要应用于托管的代码项目。 默认规则集是*Microsoft 最少量建议规则*。 您可以应用其他规则设置为一个项目或解决方案中的所有项目。
+在 Visual Studio 中，您可以从列表中选择的代码分析[规则集](../code-quality/rule-set-reference.md)) 要应用于托管的代码项目。 默认情况下**Microsoft 最少量建议规则**选择规则集，但可以应用不同的规则，如果所需的设置。 可以将规则集应用到解决方案中的一个或多个项目。
 
 > [!TIP]
 > 有关如何配置 ASP.NET web 应用程序设置的规则的信息，请参阅[如何： 为 ASP.NET 配置代码分析 web 应用程序](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)。
@@ -76,4 +76,5 @@ ms.locfileid: "39179555"
 
 ## <a name="see-also"></a>请参阅
 
+- [代码分析规则集参考](../code-quality/rule-set-reference.md)
 - [如何： 为 ASP.NET web 应用程序配置代码分析](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

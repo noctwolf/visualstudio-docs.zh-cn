@@ -1,5 +1,5 @@
 ---
-title: ContingentProperties 类的内部成员 |Microsoft 文档
+title: ContingentProperties 类-内部成员 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44bec34394df6f976416a827d7eb5d67cb99f6a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8e3497b31e663967417544d8e87d40d860c2e4a8
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097843"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204409"
 ---
-# <a name="contingentproperties-class---internal-members"></a>ContingentProperties 类的内部成员
-包含其他属性，以<xref:System.Threading.Tasks.Task>对象。  
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties 类-内部成员
+包含的其他属性<xref:System.Threading.Tasks.Task>对象。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib （在 mscorlib.dll 中)  
   
- 由于无法访问这些内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问这些内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
@@ -41,12 +41,12 @@ ms.locfileid: "31097843"
   
 ### <a name="fields"></a>字段  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
-|[m_children](../../extensibility/debugger/m-children-field.md)|与此任务注册的子任务的列表。|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|使用此任务中注册的子任务的列表。|  
   
 ## <a name="remarks"></a>备注  
  仅在需要时，.NET Framework 初始化此类的字段。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

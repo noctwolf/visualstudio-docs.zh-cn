@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中的代码分析规则集
+title: 代码分析规则集
 ms.date: 04/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,24 +13,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20e727fd331ebd98a74acbb63738e6921e5ad1a0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fa287570213e6238d0a8dffc9f6e70367b133591
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923050"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204422"
 ---
-# <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集组合代码分析规则
+# <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 
-在 Visual Studio 中配置代码分析时，你可以从内置的列表中选择*规则集*。 规则集适用于一个项目，并且是用于标识目标的问题和为该项目的特定条件分析规则的代码的分组。 例如，你可以应用一种旨在扫描公开可用 Api 代码的规则集，或只需最少量建议规则。 你还可以应用包含所有规则的规则集。
+在 Visual Studio 中配置代码分析时，可以从内置列表中选择*规则集*。 规则集应用于一个项目，并且是确定目标的问题和对该项目的特定条件的分析规则的代码的分组。 例如，可以应用旨在扫描公开可用 Api 代码的规则集，或只需最少量建议规则。 您还可以应用一个规则集，包括所有规则。
 
-你可以自定义规则集通过添加或删除规则，或者通过更改规则严重级别以显示为警告或中的错误**错误列表**。 自定义的规则集可以满足为特定的开发环境的需要。 自定义规则集时，规则集编辑器提供搜索和筛选工具来帮助你在过程中。
+你可以自定义规则集通过添加或删除规则，或更改规则的严重级别显示为警告性警报或中的错误**错误列表**。 自定义的规则集可满足特定的开发环境的需求。 自定义规则集时，规则集编辑器提供了搜索和筛选工具来帮助您在过程中。
+
+规则集是可用于[托管代码的静态分析](how-to-configure-code-analysis-for-a-managed-code-project.md)， [c + + 代码分析](using-rule-sets-to-specify-the-cpp-rules-to-run.md)，并[Roslyn 分析器](analyzer-rule-sets.md)。
 
 ## <a name="rule-set-format"></a>规则将格式设置
 
-中的 XML 格式指定规则集 *.ruleset*文件。 包含 ID 的规则和*操作*，按分析器 ID 和文件中的命名空间进行分组。
+规则集指定中的 XML 格式 *.ruleset*文件。 规则包含一个 ID 和一个*操作*，按分析器 ID 和文件中的命名空间进行分组。
 
-XML 内容 *.ruleset*文件类似于以下：
+内容 *.ruleset*文件看起来类似于此 XML:
 
 ```xml
 <RuleSet Name="Rules for Hello World project" Description="These rules focus on critical issues for the Hello World app." ToolsVersion="10.0">
@@ -54,9 +56,9 @@ XML 内容 *.ruleset*文件类似于以下：
 ```
 
 > [!TIP]
-> 这样便很容易[编辑规则集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)中的图形**规则集编辑器**比手动。
+> 更轻松地[编辑规则集](../code-quality/working-in-the-code-analysis-rule-set-editor.md)中的图形**规则集编辑器**比手动。
 
-规则集为项目指定通过`CodeAnalysisRuleSet`Visual Studio 项目文件中的属性。 例如：
+规则集为项目指定由**CodeAnalysisRuleSet** Visual Studio 项目文件中的属性。 例如：
 
 ```xml
 <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
