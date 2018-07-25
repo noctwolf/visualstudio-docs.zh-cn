@@ -9,36 +9,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56d40211b7d69d46bfbb24f6c1e0de8855809cda
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e9132547055ef17e4ecd28274a0b1a3de7dd8ce2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078220"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化设置 Visual Studio IDE 和编辑器
 
 在这个 5-10 分钟的快速入门中，我们将在文本编辑器中自定义 Visual Studio 颜色主题和两种文本颜色。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="set-the-color-theme"></a>设置颜色主题
 
-Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其更改为“深色”。
+Visual Studio 2017 用户界面的默认颜色主题命名为“蓝色”。 让我们将其更改为“深色”。
 
-1. 在菜单栏上，依次选择“工具” > “选项”。
+1. 在菜单栏上，这是“文件”和“编辑”等菜单的行，选择“工具” > “选项”。
 
 1. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
 
-   整个 IDE 的颜色主题更改为“深色”。
+   将整个 Visual Studio 开发环境 (IDE) 的颜色主题更改为“深色”。
 
-   ![深色主题下的 VS](media/quickstart-personalize-dark-theme.png)
+   ![使用深色主题的 VS](media/quickstart-personalize-dark-theme.png)
 
 > [!TIP]
 > 可以通过从 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor) 中安装“Visual Studio 颜色主题编辑器”来安装其他预定义的主题。 安装此工具后，其他颜色主题将显示在“颜色主题”下拉列表中。
 
 ## <a name="change-text-color"></a>更改文本颜色
 
-现在我们将为编辑器自定义一些文本颜色。 首先，让我们打开 XML 文件来查看默认颜色。
+现在我们将为编辑器自定义一些文本颜色。 首先，让我们创建新的 XML 文件来查看默认颜色。
 
 1. 在菜单栏上，选择“文件” > “新建” > “文件”。
 
@@ -72,7 +73,7 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
    </Catalog>
    ```
 
-   请注意，行号是翠蓝色，XML 属性是浅蓝色。 我们将更改这些项的文本颜色。
+   请注意，行号是翠蓝色，XML 属性（例如 `id="bk101"`）是浅蓝色。 我们将更改这些项的文本颜色。
 
    ![XML 文件字体颜色](media/quickstart-personalize-xml-file.png)
 
@@ -80,7 +81,7 @@ Visual Studio 2017 的默认颜色主题命名为“蓝色”。 让我们将其
 
 1. 在“环境”下，请选择“字体和颜色”类别。
 
-   请注意，“显示以下对象的设置”下的文本显示的是“文本编辑器”&mdash;这正是我们所需要的。 你可以展开下拉列表，仅查看可用于自定义字体和文本颜色的位置的扩展列表。
+   请注意，“显示以下对象的设置”下的文本显示的是“文本编辑器”&mdash;这正是我们所需要的。 展开下拉列表，仅查看可用于自定义字体和文本颜色的位置的扩展列表。
 
 1. 若要更改行号文本的颜色，请在“显示项目”列表中选择“行号”。 在“项目前景色”框中，选择“橄榄色”。
 

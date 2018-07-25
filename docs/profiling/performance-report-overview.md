@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba00d3b31761fa42f58dfdbd72eae9a7f5b44c6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255988"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 在 Visual Studio Team System Development Edition 集成开发环境 (IDE) 的“性能报告”窗口中，可以查看性能会话的分析数据。 分析数据保存在 .vsp 和 .vsps 文件中。 报告视图窗口可用于查看和分析应用程序性能问题。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/19/2018
 > [!CAUTION]
 >  分析数据文件包含敏感信息，如计算机名、操作系统的版本、文件路径、内存信息和其他计算机设置信息。 无论是采用本机 .vsp 格式，还是导出到 .csv 或 .xml 文件时，都应对数据的分发保持严格控制。  
 >   
->  如果事件跟踪数据作为性能会话的一部分进行收集，则其他信息可能会出现在事件跟踪日志 (.etl) 文件中。 此信息包括域和用户名；因此，应对日志文件的分发保持严格控制。  
+>  如果在性能会话期间收集事件跟踪数据，则事件跟踪日志 (.etl) 文件中可能会出现其他信息。 此信息包括域和用户名；因此，应对日志文件的分发保持严格控制。  
   
 ## <a name="performance-report-window"></a>“性能报告”窗口  
  “性能报告”窗口是一个工具窗口，用于查看、管理和筛选性能数据，包含可自定义查询控制。  

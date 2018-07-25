@@ -19,15 +19,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e07594e9b90fabd8e0a2bcc66dd0920db0973aa
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c6843e9287fd53b17329b70d331d0f37b87917f7
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815920"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 
-可以使用“性能向导”  为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集性能数据。 可以分析在 Visual Studio 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 Visual Studio IDE 中打开的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 站点。
+可以使用“性能向导” 为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集性能数据。 可以分析在 Visual Studio 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 Visual Studio IDE 中打开的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 站点。
 
 > [!NOTE]
 > 利用“性能向导”  ，你可以将层交互 (TIP) 数据和/或 JScript 性能数据添加到收集的分析数据中。 TIP 选项从服务器端进程收集数据。 JScript 分析从本地或远程网站运行的脚本处收集数据。 大多数情况下，应只选其中一项。
@@ -40,9 +41,9 @@ ms.lasthandoff: 04/19/2018
 
 - 一些用户可能会拒绝其他所有用户访问分析功能。
 
- 有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的管理选项。
+ 有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的“管理”选项。
 
-## <a name="to-profile-a-web-site-project"></a>若要分析网站项目
+## <a name="to-profile-a-web-site-project"></a>分析网站项目
 
 1. 在 Visual Studio 中打开 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 项目。
 
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/19/2018
 
     - 若要收集层交互，请选中“启用层交互分析”  复选框。
 
-    - 若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。
+    - 若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”复选框。
 
 7. 单击 **“下一步”**。
 

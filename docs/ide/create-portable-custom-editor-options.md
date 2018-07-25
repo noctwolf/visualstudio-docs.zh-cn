@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 3ace523bd68b9d96916c23ebdbc93eaadd339da6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446496"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117558"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -58,7 +58,7 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
 
 1. 在 Visual Studio 中打开项目或解决方案。 根据要应用 .editorconfig 设置的对象（是解决方案中的所有项目还是其中一个项目），选择项目或解决方案节点。 还可在项目或解决方案中选择一个文件夹，向其添加 .editorconfig 文件。
 
-1. 从菜单栏中，选择“项目” > “添加新项...”，或按 Ctrl+Shift+A。
+1. 从菜单栏中，选择“项目” > “添加新项”，或按 Ctrl+Shift+A。
 
    此时将打开“添加新项”对话框。
 

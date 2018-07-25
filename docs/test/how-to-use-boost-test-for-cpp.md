@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eadcc8f2a3e50f9a23da3e3bbc6689c643904470
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751619"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945479"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 
@@ -48,20 +48,20 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 
 1. 新文件包含示例测试方法。 构建项目以启用“测试资源管理器”来发现方法。
 
-项模板使用 Boost.Test 的单标头变量，但是你可以修改 #include 路径来使用独立库变量。 有关详细信息，请参阅[添加 include 指令](#add_include_directives)。
+项模板使用 Boost.Test 的单标头变量，但是你可以修改 #include 路径来使用独立库变量。 有关详细信息，请参阅[添加 include 指令](#add-include-directives)。
 
 ## <a name="create-a-test-project-visual-studio-2017-version-155"></a>创建测试项目（Visual Studio 2017 版本 15.5）
 
 在 Visual Studio 2017 版本 15.5 中，没有预配置测试项目或项模板可用于 Boost.Test。 因此，必须创建和配置控制台应用程序项目来存放测试。
 
-1. 在“解决方案资源管理器”中，右键单击解决方案节点，然后选择“添加”“新建项目...” > 。
+1. 在“解决方案资源管理器”中，右键单击解决方案节点，然后选择“添加” > “新建项目”。
 
 1. 在左窗格中，选择“Visual C++” > “Windows 桌面”，然后选择“Windows 控制台应用程序”模板。
 
 1. 为项目提供名称，然后选择“确定”。
 1. 删除 .cpp 文件中的 `main` 功能。
 
-1. 如果你使用的是 Boost.Test 的单标头或动态库版本，请转到[添加 include 指令](#add_include_directives)。 如果你使用的是静态库版本，则必须执行一些额外的配置：
+1. 如果你使用的是 Boost.Test 的单标头或动态库版本，请转到[添加 include 指令](#add-include-directives)。 如果你使用的是静态库版本，则必须执行一些额外的配置：
 
    a. 若要编辑项目文件，请先将其卸载。 在解决方案资源管理器中，右键单击项目节点，并选择“卸载项目”。 然后，右键单击项目节点并选择“编辑 < 名称\>.vcxproj”。
 
@@ -112,7 +112,7 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 #include "../MyProgram/MyClass.h" // project being tested
 #include <string>
 
-BOOST_AUTO_TEST_CASE(my\_boost_test)
+BOOST_AUTO_TEST_CASE(my_boost_test)
 {
     std::string expected_value = "Bill";
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 224341ab753c5dd1ad7d4af072c67207f5dd6774
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7bd67b6b548852fa21a28696328004d75ec53fe8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921187"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078896"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 图像库
 
@@ -36,4 +36,4 @@ Visual Studio 图像库包含出现在 Microsoft Visual Studio、Microsoft Windo
 ## <a name="see-also"></a>请参阅
 
 - [安装 Visual Studio](../install/install-visual-studio.md)
-- [图像、位图和图元文件](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)
+- [图像、位图和元文件](/dotnet/framework/winforms/advanced/images-bitmaps-and-metafiles)

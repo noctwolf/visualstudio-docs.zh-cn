@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b769cc89095aca5b22aed46375f56c2ab4c987
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c0ecf9f52aef56e4652532e0bec836021a906038
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570624"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176312"
 ---
 # <a name="msbuild-batching"></a>MSBuild 批处理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每批运行一次目标或任务。  
@@ -26,10 +26,10 @@ ms.locfileid: "31570624"
 ## <a name="task-batching"></a>任务批处理  
  借助任务批处理，可以用某种方式将项列表划分为不同批次，同时将每个批次单独地传递到任务中来简化项目文件。 这意味着项目文件只需要声明一次任务及其特性就可多次运行该任务。  
   
- 你指定希望 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用其中一个任务特性中的 %(ItemMetaDataName) 表示法对任务执行批处理。 以下示例基于 `Color` 项元数据值将 `Example` 项列表划分为几个批次，并将每个批次单独地传递到 `MyTask` 任务。  
+ 你指定希望 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用其中一个任务特性中的 %(\<ItemMetaDataName>) 表示法对任务执行批处理。 以下示例基于 `Color` 项元数据值将 `Example` 项列表划分为几个批次，并将每个批次单独地传递到 `MyTask` 任务。  
   
 > [!NOTE]
->  如果未在任务特性的其他位置引用项列表，或者如果元数据名称可能不明确，则可以使用 %(*ItemCollection.ItemMetaDataName*) 表示法完全限定要用于进行批处理的项元数据值。  
+>  如果未在任务特性的其他位置引用项列表，或者如果元数据名称可能不明确，则可以使用 %(\<ItemCollection.ItemMetaDataName>) 表示法完全限定要用于进行批处理的项元数据值。  
   
 ```xml  
 <Project  
@@ -58,7 +58,7 @@ ms.locfileid: "31570624"
 ## <a name="target-batching"></a>目标批处理  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会先检查目标的输入和输出是否是最新的，然后才运行该目标。 如果输入和输出都是最新的，则跳过该目标。 如果目标内的任务使用批处理，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要确定每批项的输入和输出是否是最新的。 否则，每次命中目标时，都会执行该目标。  
   
- 以下示例通过 %(ItemMetaDataName) 表示法演示包含 `Outputs` 特性的 `Target` 元素。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会基于 `Color` 项元数据将 `Example` 项列表划分为几个批次，并分析每个批次的输出文件的时间戳。 如果某个批次的输出不是最新的，则运行目标。 否则，跳过该目标。  
+ 以下示例通过 %(\<ItemMetaDataName>) 表示法演示包含 `Outputs` 特性的 `Target` 元素。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 会基于 `Color` 项元数据将 `Example` 项列表划分为几个批次，并分析每个批次的输出文件的时间戳。 如果某个批次的输出不是最新的，则运行目标。 否则，跳过该目标。  
   
 ```xml  
 <Project  

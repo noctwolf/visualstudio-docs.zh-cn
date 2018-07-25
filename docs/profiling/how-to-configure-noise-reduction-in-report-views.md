@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2ec4a797b7018a7a9e017760afd8849912cd35
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460251aaa89c22d7bb1320d19882af4f68736cc0
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815179"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报告视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。  
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/19/2018
 4.  单击 **“确定”**。  
   
 ## <a name="see-also"></a>请参阅  
- [自定义性能工具报表视图](../profiling/customizing-performance-tools-report-views.md)   
- [如何：在检测中排除或包括短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
+ [自定义性能工具报告视图](../profiling/customizing-performance-tools-report-views.md)   
+ [如何：在检测中排除或添加短函数](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [“调用关系树”视图](../profiling/call-tree-view.md)   
  [“分配”视图](../profiling/dotnet-memory-allocations-view.md)

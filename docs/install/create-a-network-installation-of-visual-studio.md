@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fdecc141affcb88d0a04346767469ef5296557d
-ms.sourcegitcommit: 4c0bc21d2ce2d8e6c9d3b149a7d95f0b4d5b3f85
+ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31622882"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057991"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
@@ -121,7 +121,7 @@ ms.locfileid: "31622882"
 > [!TIP]
 > 如果作为批处理文件的一部分执行，`--wait` 选项可确保 `vs_enterprise.exe` 进程先等待安装完成，再返回退出代码。 若企业管理员要在已完成的安装上执行进一步操作（例如，[向已成功的安装应用产品密钥](automatically-apply-product-keys-when-deploying-visual-studio.md)），此方法十分有用，但需要等待安装完成以处理从该安装返回的代码。  如果不使用 `--wait``vs_enterprise.exe` 进程将在安装完成前退出，并返回一个不能表示安装操作状态的不准确的退出代码。
 
-从布局安装时，安装内容将从布局中获取。 但是，如果选择不在布局中的组件，则会从 Internet 获取它。  要阻止 Visual Studio 安装程序下载布局中缺少的任何内容，请使用 `--noWeb` 选项。  如果使用 `--noWeb`，但布局中缺少要安装的选定内容，安装就会失败。  
+从布局安装时，安装内容将从布局中获取。 但是，如果选择不在布局中的组件，则会从 Internet 获取它。  要阻止 Visual Studio 安装程序下载布局中缺少的任何内容，请使用 `--noWeb` 选项。  如果使用 `--noWeb`，但布局中缺少要安装的选定内容，安装就会失败。
 
 ### <a name="error-codes"></a>错误代码
 
@@ -140,7 +140,7 @@ ms.locfileid: "31622882"
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>如何为旧版 Visual Studio 2017 创建布局
 
 > [!NOTE]
-> 运行 [VisualStudio.com](http://www.visualstudio.com) 上的 Visual Studio 2017 引导程序时，会下载并安装最新版 Visual Studio 2017。 如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么它安装的是后者时间段发行的 Visual Studio 2017 版本。 如果创建布局，那么通过布局安装的是相应布局中的特定 Visual Studio 版本。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
+> 每次运行 [visualstudio.microsoft.com](http://visualstudio.microsoft.com) 上提供的 Visual Studio 2017 引导程序时，都会下载并安装最新版的 Visual Studio 2017。 如果立即下载 Visual Studio 引导程序，并从现在开始运行 6 个月，那么它安装的是后者时间段发行的 Visual Studio 2017 版本。 如果创建布局，那么通过布局安装的是相应布局中的特定 Visual Studio 版本。 即使可能存在更高的联机版本，也只会获取布局中的 Visual Studio 版本。
 
 如需创建适合旧版 Visual Studio 2017 的布局，可访问 https://my.visualstudio.com，下载“固定”版本的 Visual Studio 2017 引导程序。
 
@@ -152,7 +152,7 @@ ms.locfileid: "31622882"
 
 ## <a name="get-support"></a>获取支持
 
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://www.visualstudio.com/vs/support/#talktous)。
+有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
 
 下面是另外几个支持选项：
 

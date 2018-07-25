@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0430b398fa13d565de075d1f74e856587a2762
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 04c3eb73949ab84548c6eb58e7cf4389dbeb8fc4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749279"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179055"
 ---
 # <a name="step-2-run-your-program"></a>步骤 2：运行程序
 一旦创建新的解决方案，实际上就生成了所运行的程序。 该程序并未执行其他操作，它只是显示了一个在标题栏中显示“Form1”的空窗口。 但该程序确实在运行，您即将查明这一点。
@@ -33,8 +33,8 @@ ms.locfileid: "34749279"
 
     -   在工具栏上，选择“开始调试”按钮，如下所示。
 
-         ![“开始调试”工具栏按钮](../ide/media/express_icondebug.png)
-“开始调试”工具栏按钮****
+         ****![“开始调试”工具栏按钮](../ide/media/express_icondebug.png)
+“开始调试”工具栏按钮
 
 2.  Visual Studio 将运行程序，并显示一个名为“Form1”的窗口。 下图显示了刚生成的程序。 该程序正在运行，您很快会向它添加内容。
 
@@ -55,7 +55,7 @@ Windows 窗体应用程序正在运行****
     -   选择“Form1”窗口上角的 X 按钮。
 
     > [!NOTE]
-    >  在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[调试程序基础知识](../debugger/debugger-basics.md)。
+    >  在从 IDE 内部运行程序时，这一操作称为“调试”，因为通常将使用此操作来查找并修复程序中的 Bug（错误）。 虽然此程序很小，并且实际上不执行任何操作，但它仍是一个真正的程序。 您可以执行相同的过程来运行和调试其他程序。 要了解有关调试的详细信息，请参阅[调试程序基础知识](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="to-continue-or-review"></a>继续或查看
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19808b10c64b469d3d9191fa2e4fc282d7696c5f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6c31179d33467f6be440882bce6f6cd9559d9a00
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923586"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080819"
 ---
 # <a name="value-xattribute-dynamic-property"></a>值（XAttribute 动态属性）
 
@@ -26,7 +26,7 @@ ms.locfileid: "31923586"
 
 ## <a name="syntax"></a>语法
 
-```
+```xaml
 attrib.Value
 ```
 

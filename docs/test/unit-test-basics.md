@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a69f644fecd74328eb3fa007e4589ff194c8e11
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751512"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978367"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -28,7 +28,7 @@ ms.locfileid: "34751512"
 
 测试资源管理器还可以运行第三方和开放源代码单元测试框架，它们实现了测试资源管理器外接程序接口。 你可以通过 Visual Studio Extension Manager 和 Visual Studio 库添加其中许多框架。 请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
 
-## <a name="getting-started"></a>入门
+## <a name="get-started"></a>入门
 
 关于直接进入编码的单元测试的简介，请参阅以下主题之一：
 
@@ -54,13 +54,13 @@ ms.locfileid: "34751512"
 
  我们首次尝试设计 `Accounts` 的项目包含一个类来保存有关帐户的基本信息，以及指定任何类型的帐户的通用功能的接口的基本信息（如从该帐户存储和取出资产），以及从表示存款帐户的接口派生的类的基本信息。 首先，我们通过创建以下源文件开始帐户项目：
 
--   `AccountInfo.cs` 定义帐户的基本信息。
+-   AccountInfo.cs 定义帐户的基本信息。
 
--   `IAccount.cs` 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。
+-   IAccount.cs 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。
 
--   `CheckingAccount.cs` 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccounts` 接口。
+-   CheckingAccount.cs 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccounts` 接口。
 
-我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：
+我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdraw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：
 
 ```csharp
 public void Withdraw(double amount)
@@ -96,7 +96,7 @@ public void Withdraw(double amount)
 
      ![已创建单元测试](../test/media/createunittestsstubs.png)
 
-4.  现在向前跳转，了解如何 [将代码添加到单元测试方法](#BKMK_Writing_your_tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。
+4.  现在向前跳转，了解如何 [将代码添加到单元测试方法](#write-your-tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。
 
  **手动创建单元测试项目和单元测试**
 
@@ -104,9 +104,9 @@ public void Withdraw(double amount)
 
  **若要向解决方案中添加单元测试项目：**
 
-1.  在“文件”  菜单上，选择“新建”  ，然后选择“项目”  （快捷键：Ctrl + Shift + N）。
+1.  在“文件”菜单上，选择“新建”，然后选择“项目”（快捷键：Ctrl+Shift+N）。
 
-2.  在“新建项目”对话框中，展开“已安装”  节点，选择你想要用于测试项目的语言，然后选择“测试” 。
+2.  在“新建项目”对话框中，展开“已安装”节点，选择你想要用于测试项目的语言，然后选择“测试”。
 
 3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。
 
@@ -117,21 +117,21 @@ public void Withdraw(double amount)
 
      若要创建代码项目的引用：
 
-    1.  在解决方案资源管理器中选择项目。
+    1.  在解决方案资源管理器中，选择项目。
 
-    2.  在“项目”  菜单上，选择“添加引用” 。
+    2.  在“项目”菜单上，选择“添加引用” 。
 
-    3.  在“引用管理器”对话框中，打开“解决方案”  节点，然后选择“项目” 。 选择代码项目名称并关闭对话框。
+    3.  在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
 
  每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：
 
--   `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `BankAccount` 类的单元测试方法
+-   `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `Accounts` 类的单元测试方法
 
 -   `CheckingAccountTests` 类包含用于 `CheckingAccount` 类的单元测试方法。
 
 ## <a name="write-your-tests"></a>编写测试
 
-你使用的单元测试框架和 Visual Studio IntelliSense 将指导你完成为代码项目的单元测试编写代码。 若要在测试资源管理器中运行，大多数框架要求你添加特定的属性来识别单元测试方法。 框架还提供了一种方法，通常通过断言语句或方法属性，来指示测试方法是否已通过或失败。 其他属性标识可选的安装方法，即在类初始化时和每个测试方法和每个拆卸方法之前的安装方法，这些拆卸方法在每个测试方法之后和类被销毁之前运行。
+你使用的单元测试框架和 Visual Studio IntelliSense 将指导你完成为代码项目的单元测试编写代码。 若要在“测试资源管理器”中运行，大多数框架要求你添加特定的属性来识别单元测试方法。 框架还提供了一种方法，通常通过断言语句或方法属性，来指示测试方法是否已通过或失败。 其他属性标识可选的安装方法，即在类初始化时和每个测试方法和每个拆卸方法之前的安装方法，这些拆卸方法在每个测试方法之后和类被销毁之前运行。
 
 AAA（准备、执行、断言）模式是编写待测试方法的单元测试的常用方法。
 
@@ -175,9 +175,11 @@ public void Withdraw_AmountMoreThanBalance_Throws()
 
 有关 Microsoft 单元测试框架的详细信息，请参阅以下主题之一：
 
--   [用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)
+-   [单元测试代码](unit-test-your-code.md)
 
 -   [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+
+-   [在单元测试中使用 MSTest 框架](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>为单元测试设置超时值
 
@@ -203,21 +205,21 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>在测试资源管理器中运行测试
 
-在生成测试项目时，测试将出现在测试资源管理器中。 如果测试资源管理器不可见，请选择 Visual Studio 菜单上的“测试”  ，然后依次选择“Windows” 、“测试资源管理器” 。
+在生成测试项目时，测试将出现在“测试资源管理器”中。 如果“测试资源管理器”不可见，请选择 Visual Studio 菜单上的“测试”，然后依次选择“Windows”、“测试资源管理器”。
 
  ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
 
- 当你运行、编写并重新运行测试时，测试资源管理器的默认视图将显示“失败的测试” 、“通过的测试” 、“跳过的测试”  和“未运行的测试” 组中的结果。 你可以选择组标题以打开显示该组中的所有这些测试的视图。
+ 运行、编写并重新运行测试时，“测试资源管理器”的默认视图将显示“失败的测试”、“通过的测试”、“跳过的测试”和“未运行的测试”组中的结果。 可以选择组标题以打开显示该组中的所有测试的视图。
 
  通过在全局级别的搜索框中的匹配文本或选择其中一个预定义的筛选器，你还可以在任何视图中筛选测试。 你可以在任何时间运行任何选定的测试。 测试运行的结果立即显示在资源管理器窗口顶部的通过/失败栏中。 在你选择测试时，会显示测试方法结果的详细信息。
 
 ### <a name="run-and-view-tests"></a>运行和查看测试
 
-测试资源管理器工具栏可帮助你发现、组织和运行你感兴趣的测试。
+“测试资源管理器”工具栏可帮助你发现、组织和运行你感兴趣的测试。
 
  ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
- 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在测试资源管理器窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”  （快捷键：F12），以显示所选测试的源代码。
+ 你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 运行一组测试后，测试运行的摘要将出现在“测试资源管理器”窗口的底部。 选择一个测试以在底部窗格中查看该测试的详细信息。 从上下文菜单中选择“打开测试”（快捷键：F12），以显示所选测试的源代码。
 
  如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -226,17 +228,17 @@ public void My_Test ()
 > [!WARNING]
 > 仅在 Visual Studio Enterprise 中支持每次生成后运行单元测试。
 
-|||
+|Button|描述|
 |-|-|
-|![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”  ，然后在测试资源管理器工具栏上选择“生成后运行测试”  。|
+|![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在“测试资源管理器”工具栏上选择“生成后运行测试”。|
 
 ### <a name="filter-and-group-the-test-list"></a>筛选和分组测试列表
 
-当你有大量测试时，你可以在测试资源管理器搜索框中键入，以按指定的字符串筛选列表。 你可以通过从筛选器列表中选择以更多地限制筛选器事件。
+有大量测试时，可以在“测试资源管理器”搜索框中键入，以按指定的字符串筛选列表。 你可以通过从筛选器列表中选择以更多地限制筛选器事件。
 
  ![搜索筛选器类别](../test/media/ute_searchfilter.png)
 
-|||
+|Button|描述|
 |-|-|
 |![测试资源管理器的分组按钮](../test/media/ute_groupby_btn.png)|若要按类别分组测试，请选择“分组依据”  按钮。|
 
@@ -246,14 +248,14 @@ public void My_Test ()
 
 **问：如何调试单元测试？**
 
-**答：** 可以使用测试资源管理器为你的测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
+**答：** 可以使用“测试资源管理器”为测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：
 
 1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。
 
     > [!NOTE]
     > 因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。
 
-2.  在测试资源管理器中，选择测试方法，然后从快捷菜单选择“调试选定的测试”  。
+2.  在“测试资源管理器”中，选择测试方法，然后从快捷菜单选择“调试选定的测试”。
 
 了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。
 
@@ -272,7 +274,7 @@ public void My_Test ()
 
  例如，假定我们将不必要的方法添加到名为 `CheckingAccount` 的 `AddIntegerHelper`类中。 `AddIntegerHelper` 添加两个整数。
 
- 若要为 `AddIntegerHelper` 方法创建数据驱动的测试，我们首先创建名为 `AccountsTest.accdb` 的 Access 数据库和名为 `AddIntegerHelperData`的表。 `AddIntegerHelperData` 表定义了指定要添加的第一个和第二个操作数的列和指定预期结果的列。 我们使用适当的值填充行数。
+ 若要为 `AddIntegerHelper` 方法创建数据驱动的测试，我们首先创建名为 AccountsTest.accdb 的 Access 数据库和名为 `AddIntegerHelperData` 的表。 `AddIntegerHelperData` 表定义了指定要添加的第一个和第二个操作数的列和指定预期结果的列。 我们使用适当的值填充行数。
 
 ```csharp
 [DataSource(
@@ -291,7 +293,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 }
 ```
 
-特性化的方法将为表中的每一行运行一次。 如果任何迭代失败，测试资源管理器将报告方法的测试失败。 该方法的测试结果详细信息窗格显示每行数据的通过/失败状态方法。
+特性化的方法将为表中的每一行运行一次。 如果任何迭代失败，“测试资源管理器”将报告方法的测试失败。 该方法的测试结果详细信息窗格显示每行数据的通过/失败状态方法。
 
  了解有关 [数据驱动的单元测试](../test/how-to-create-a-data-driven-unit-test.md)的详细信息。
 
@@ -299,11 +301,11 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  **答：** 可以。 你可以使用 Visual Studio 代码覆盖率工具确定你的单元测试实际测试的代码量。 支持本机和托管语言以及可由单元测试框架运行的所有单元测试框架。
 
- 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。 代码覆盖率结果窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
+ 你可以在选定的测试上或解决方案中的所有测试上运行代码覆盖率。 “代码覆盖率结果”窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
 
  若要在解决方案中运行测试方法的代码覆盖率，请在 Visual Studio 菜单上选择“测试”  ，然后选择“分析代码覆盖率” 。
 
- 覆盖率结果将显示在代码覆盖率结果窗口中。
+ 覆盖率结果将显示在“代码覆盖率结果”窗口中。
 
  ![代码覆盖率结果](../test/media/ute_codecoverageresults.png)
 

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9f7601a7e2a24ec41a12d194aac65445c6d159
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae99e144e2eb96d898df157c263348cdccc7ecde
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924322"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978185"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 
-本主题包含并说明 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。
+本主题包含并说明[使用 LINQ to XML 的 WPF 数据绑定示例](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。
 
 ## <a name="overall-ui-structure"></a>总体 UI 结构
 
@@ -37,7 +37,7 @@ ms.locfileid: "31924322"
 
 最后，第 28 行至第 34 行定义一个名为 <xref:System.Windows.DataTemplate> 的 `BookTemplate` 。 此模板将用于显示“Book List”（书籍列表）UI 区域中的条目。 它使用数据绑定和 LINQ to XML 动态属性通过下面的赋值来检索书籍 ID 和书名：
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 ```
 
@@ -47,25 +47,25 @@ Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 
 在第 38 行的 `<StackPanel>` 开始标记中，此面板的 <xref:System.Windows.FrameworkElement.DataContext%2A> 属性设置为 `LoadedBooks` 数据提供程序。
 
-```
+```xaml
 DataContext="{Binding Source={StaticResource LoadedBooks}}
 ```
 
 设置数据上下文使名为 `tbRawXml` 的 <xref:System.Windows.Controls.TextBlock>（第 46 行）能够通过绑定到此数据提供程序的 `Xml` 属性来显示原始 XML：
 
-```
+```xaml
 Text="{Binding Path=Xml}"
 ```
 
 从第 58 行至第 62 行，“Book List”（书籍列表） <xref:System.Windows.Controls.ListBox>**UI 区域中的** 将其显示项的模板设置为在窗口资源区域中定义的 `BookTemplate` ：
 
-```
+```xaml
 ItemTemplate ="{StaticResource BookTemplate}"
 ```
 
 然后，第 59 行至第 62 行将书籍的实际值绑定到此列表框：
 
-```
+```xaml
 <ListBox.ItemsSource>
     <Binding Path="Elements[{http://www.mybooks.com}book]"/>
 </ListBox.ItemsSource>
@@ -73,13 +73,13 @@ ItemTemplate ="{StaticResource BookTemplate}"
 
 在第三个 UI 区域 **“Edit Selected Book”（编辑所选书籍）** 中，首先将父 <xref:System.Windows.FrameworkElement.DataContext%2A> 的 <xref:System.Windows.Controls.StackPanel> 绑定到 **“Book List”（书籍列表）** UI 区域中的当前所选项（第 82 行）：
 
-```
+```xaml
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"
 ```
 
 然后使用双向数据绑定，使书籍元素的当前值显示在此面板的两个文本框中并从中进行更新。 数据绑定到动态属性类似于在 `BookTemplate` 数据模板中使用数据绑定：
 
-```
+```xaml
 Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ```
 
@@ -243,7 +243,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 
 ### <a name="comments"></a>注释
 
-有关与 WPF UI 元素相关联的事件处理程序的 C# 源代码，请参阅 [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)。
+有关与 WPF UI 元素相关联的事件处理程序的 C# 源代码，请参阅 [L2DBForm.xaml.cs 源代码](../designers/l2dbform-xaml-cs-source-code.md)。
 
 ## <a name="see-also"></a>请参阅
 

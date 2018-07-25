@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 794f3aeab023d6b6c5c606a4c1fb8f706a4a7989
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83cc24d72bfb679a1b683a67b995356fc887064c
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978913"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117792"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
@@ -41,7 +41,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 解决方案只是一个可以存储一个或多个项目的容器。 要创建解决方案，请打开 Visual Studio 2017 并执行以下操作：
 
-1. 从顶级的 Visual Studio 菜单中依次选择“文件”、“新建”、“项目”。
+1. 从顶级的 Visual Studio 菜单中依次选择“文件” > “新建” > “项目”。
 
 1. 在“新建项目”对话框中，展开“其他项目类型”节点，然后选择“Visual Studio 解决方案”。 在右窗格中选择“空白解决方案”，然后在“名称”文本框中输入 `UtilityLibraries`，如下图所示：
 
@@ -52,7 +52,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 现在已创建解决方案，接下来需要创建一个名为 `StringLibrary` 的类库，其中包含大量用于处理字符串的扩展方法。
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. 在解决方案资源管理器中，右键单击 `UtilityLibraries` 解决方案，然后依次选择“添加”、“新建项目”。
+1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 C# 节点，然后选择“.NET Standard”。
 
@@ -80,7 +80,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 1.  从顶级的 Visual Studio 菜单中依次选择“生成”、“生成解决方案”。 Visual Studio 应会成功生成库。
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-1. 在解决方案资源管理器中，右键单击 `UtilityLibraries` 解决方案，然后依次选择“添加”、“新建项目”。
+1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 Visual Basic 节点，然后选择“.NET Standard”。
 
@@ -118,7 +118,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 下一步是创建单元测试项目，以测试 `StringLibrary` 库。 通过执行以下步骤创建单元测试：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-1. 在解决方案资源管理器中，右键单击 `UtilityLibraries` 解决方案，然后依次选择“添加”、“新建项目”。
+1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 C# 节点，然后选择“.NET Core”。
 
@@ -156,7 +156,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
-1. 在解决方案资源管理器中，右键单击 `UtilityLibraries` 解决方案，然后依次选择“添加”、“新建项目”。
+1. 在“解决方案资源管理器”中，右键单击 `UtilityLibraries` 解决方案，然后选择“添加” > “新建项目”。
 
 1. 在“添加新项目”对话框中，选择 Visual Basic 节点，然后选择“.NET Core”。
 

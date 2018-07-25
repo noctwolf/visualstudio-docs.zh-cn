@@ -11,24 +11,24 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f28e451da90d9709eda1886a549819b4d46415f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24002512ec891866839ad3bd33590c3dfe966e99
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948400"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978380"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 
 多项目模板用作两个或多个项目的容器。 从“新建项目”对话框中创建基于多项目模板的项目时，模板中的每个项目都会添加到解决方案中。
 
-多项目模板包含两个或多个项目模板，以及一个 `ProjectGroup` 类型的根模板。
+多项目模板包含两个或多个项目模板，以及一个 ProjectGroup 类型的根模板。
 
 多项目模板的行为不同于单项目模板。 多项目模板具有以下独特特征：
 
-- 无法在“新建项目”对话框中向多项目模板中的各个项目分配名称。 改为使用 vstemplate 文件中的 `ProjectTemplateLink` 元素的 `ProjectName` 属性指定每个项目的名称。
+- 无法在“新建项目”对话框中向多项目模板中的各个项目分配名称。 请改用 vstemplate 文件中 ProjectTemplateLink 元素上的 ProjectName 属性为每个项目指定名称。
 
-- 多项目模板可能包含不同语言的项目，但仅可将整个模板本身放置在一个类别中。 在 vstemplate 文件的 `ProjectType` 元素中指定模板类别。
+- 多项目模板可能包含不同语言的项目，但仅可将整个模板本身放置在一个类别中。 在 vstemplate 文件的 ProjectType 元素中指定模板类别。
 
 多项目模板必须包括以下各项，并压缩为 .zip 文件：
 
@@ -39,32 +39,32 @@ ms.locfileid: "31948400"
 例如，具有两个项目的多项目模板 .zip 文件包含以下文件和目录：
 
 - MultiProjectTemplate.vstemplate
-- \Project1\Project1.vstemplate
+- *\Project1\MyTemplate.vstemplate*
 - \Project1\Project1.vbproj
 - \Project1\Class.vb
-- \Project2\Project2.vstemplate
+- *\Project2\MyTemplate.vstemplate*
 - \Project2\Project2.vbproj
 - \Project2\Class.vb
 
 多项目模板的根 vstemplate 文件不同于单项目模板，表现在以下方面：
 
-- `VSTemplate` 元素的 `Type` 属性的值为 `ProjectGroup`，而不是 `Project`。 例如:
+- VSTemplate 元素的 Type 属性有 ProjectGroup 而没有 Project 值。 例如:
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如:
+- TemplateContent 元素包含 ProjectCollection 元素，它有一个或多个 ProjectTemplateLink 元素，这些元素定义了所包含项目的 vstemplate 文件的路径。 例如:
 
     ```xml
     <TemplateContent>
         <ProjectCollection>
             <ProjectTemplateLink>
-                Project1\Project1.vstemplate
+                Project1\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink>
-                Project2\Project2.vstemplate
+                Project2\MyTemplate.vstemplate
             </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
@@ -95,7 +95,7 @@ ms.locfileid: "31948400"
 
 1. 在基目录中，创建扩展名为“.vstemplate”的 XML 文件。 此文件包含多项目模板的元数据。 有关文件结构，请参阅以下示例。 确保为每个项目的 vstemplate 文件指定相对路径。
 
-1. 选择基目录，然后通过右键单击或从上下文菜单中选择“发送至” > “压缩的文件夹（zip 格式）”。
+1. 选择基目录中的所有文件，然后通过右键单击或从上下文菜单中选择“发送至” > “压缩的文件夹（zip 格式）”。
 
    这些文件和文件夹会压缩到一个 .zip 文件中。
 
@@ -105,10 +105,10 @@ ms.locfileid: "31948400"
 
 ## <a name="two-project-example"></a>两个项目的示例
 
-此示例演示一个基本的多项目根 vstemplate 文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectTemplateLink` 元素上的 `ProjectName` 属性指定提供给项目的名称。
+此示例演示一个基本的多项目根 vstemplate 文件。 在此示例中，模板有两个项目：“我的 Windows 应用程序”和“我的类库”。 ProjectTemplateLink 元素上的 ProjectName 属性指定提供给项目的名称。
 
 > [!TIP]
-> 如果未指定 `ProjectName` 属性，则将 vstemplate 文件的名称用作项目名称。
+> 如果未指定 ProjectName 属性，则将 vstemplate 文件的名称用作项目名称。
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
@@ -134,7 +134,7 @@ ms.locfileid: "31948400"
 
 ## <a name="example-with-solution-folders"></a>解决方案文件夹示例
 
-此示例使用 `SolutionFolder` 元素，可以将项目划分为两个组，`Math Classes` 和 `Graphics Classes`。 该模板包含四个项目，其中两个位于每个解决方案文件夹中。
+此示例使用 SolutionFolder 元素将项目分为两组：“数学类”和“图形类”。 该模板包含四个项目，其中两个位于每个解决方案文件夹中。
 
 ```xml
 <VSTemplate Version="2.0.0" Type="ProjectGroup"

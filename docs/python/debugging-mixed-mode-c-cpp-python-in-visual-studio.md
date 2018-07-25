@@ -1,7 +1,7 @@
 ---
 title: Python 的混合模式调试
 description: 如何在 Visual Studio 中同时调试 C++ 和 Python，包括在环境之间单步执行、查看值和计算表达式。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 52aca112b802789f45f0a1d667d75b53a7535919
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 56f342904e4ae2e1c11ccd7a148b8a896692d5a2
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31583146"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057430"
 ---
 # <a name="debugging-python-and-c-together"></a>一起调试 Python 和 C++
 
@@ -64,7 +64,7 @@ Visual Studio 为 Python 和本机 C/C++ 提供集成的同步混合模式调试
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>在 C/C++ 项目中启用混合模式调试
 
-Visual Studio 2017（版本 15.5 及更高版本）支持从 C/C++ 项目进行混合模式调试（例如，python.org 中所述的[在其他应用程序中嵌入 Python](https://docs.python.org/3/extending/embedding.html)。 要启用混合模式调试，请配置 C/C++ 项目以启动“Python/本机调试器”：
+Visual Studio 2017（版本 15.5 及更高版本）支持通过 C/C++ 项目进行混合模式调试（例如，python.org 中所述的[在其他应用程序中嵌入 Python](https://docs.python.org/3/extending/embedding.html)）。 要启用混合模式调试，请配置 C/C++ 项目以启动“Python/本机调试器”：
 
 1. 右键单击“解决方案资源管理器”中的 C/C++ 项目，然后选择“属性”
 1. 选择“调试”选项卡，从“要启动的调试器”中选择“Python/本机调试器”，然后选择“确定”。

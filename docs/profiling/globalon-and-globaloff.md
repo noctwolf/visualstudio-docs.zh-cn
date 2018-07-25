@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b7fa7c836ba27202cff04b846c1e5d744ff0493f
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ef9d4416cdb3e1ea0d7f50b1c8baeca37ac8b15e
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237999"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
-VSPerfCmd.exe 的“GlobalOff” 和“GlobalOn”选项暂停和继续命令行分析会话中所有进程和线程的分析。  
+VSPerfCmd.exe 的“GlobalOff” 和“GlobalOn”选项可暂停和继续命令行分析会话中所有进程和线程的分析。  
   
  可以指定“GlobalOn”和“GlobalOff”作为 VSPerfCmd.exe 命令行中唯一的选项，也可在还包含“Start”、“Launch”或“Attach”选项的命令行中加入这两者。  
   
@@ -31,7 +32,7 @@ VSPerfCmd.exe 的“GlobalOff” 和“GlobalOn”选项暂停和继续命令行
   
 -   “GlobalOn”将全局启动/停止计数立即设置为 1，从而继续分析。  
   
- 有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
+ 有关详细信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>语法  
   

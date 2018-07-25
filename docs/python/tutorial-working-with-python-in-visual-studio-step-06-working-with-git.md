@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教程 - 第 6 步：使用 Git
 description: 在 Visual Studio 中使用 Python 的核心教程的第 6 步，介绍了 Visual Studio 的 Git 相关功能。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c428082a061224f5bb8f3703d6ab4bed2b33aa76
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965015"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37056490"
 ---
-# <a name="step-6-working-with-git"></a>步骤 6：使用 Git
+# <a name="step-6-work-with-git"></a>步骤 6：使用 Git
 
 **上一步：[安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
 
@@ -52,7 +52,7 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team 
 
 1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择团队资源管理器中的下拉列表标题，再选择“同步”以切换到“同步”部分，然后处理此处显示的拉取和提取命令。
 
-## <a name="going-deeper"></a>深入了解
+## <a name="go-deeper"></a>深入了解
 
 有关基于远程 Git 存储库创建项目的简短演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 

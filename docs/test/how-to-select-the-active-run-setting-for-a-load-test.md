@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8566964ab8dd3fbfa1fca15ce8362218c99c27e6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967604"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977601"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "31967604"
 
 在“负载测试编辑器”中，活动运行设置以“[Active]”后缀来标识。
 
-## <a name="selecting-the-active-run-setting"></a>选择活动的运行设置
+## <a name="select-the-active-run-setting"></a>选择活动的运行设置
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>在负载测试中选择活动的运行设置
 
@@ -45,17 +45,17 @@ ms.locfileid: "31967604"
      选定的运行设置将变为活动状态，并一直保持活动状态，直到您选择了其他要处于活动状态的运行设置。
 
 > [!NOTE]
-> 可以通过设置名为 `Test.UseRunSetting=<run setting name>` 的环境变量来重写活动的运行设置。 此方法在从命令行或批处理文件运行负载测试时非常有用。 您无需打开负载测试便可以选择不同的运行设置。
+> 可以通过设置名为 `Test.UseRunSetting=<run setting name>` 的环境变量来重写活动的运行设置。 此方法在从命令行或批处理文件运行负载测试时非常有用。 你无需打开负载测试便可以选择不同的运行设置。
 
+## <a name="specify-the-run-setting-to-use-from-the-command-line"></a>从命令行指定要使用的运行设置
 
-## <a name="specifying-the-run-setting-to-use-from-the-command-line"></a>从命令行指定要使用的运行设置
- 通过从命令行设置环境变量，可以重写负载测试中的默认运行设置：
+通过从命令行设置环境变量，可以重写负载测试中的默认运行设置：
 
- **设置 Test.UseRunSetting=PreProdEnvironment**
+**设置 Test.UseRunSetting=PreProdEnvironment**
 
- 并运行测试：
+并运行测试：
 
- **mstest /testcontainer:loadtest1.loadtest**
+**mstest /testcontainer:loadtest1.loadtest**
 
 ## <a name="see-also"></a>请参阅
 

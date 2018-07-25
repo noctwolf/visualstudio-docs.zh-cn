@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a6e48dea790b5cb3adb6396a2bdd74b4625e30ec
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 35699d765a8d01e212fe02257da2aa83e245ecd4
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923092"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890183"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的“美工板”修改键
 某些键盘快捷方式没有关联的菜单项，这意味着你无法使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 用户界面来发现这些键盘快捷方式。 下表列出了修改操作（例如调整对象的大小）的快捷方式。
@@ -32,7 +32,7 @@ ms.locfileid: "31923092"
 |将美工板上移和下移|按住 Ctrl 并滚动鼠标滚轮|
 |约束要绘制或转换的对象比例|按住 Shift|
 |按 15 度的增量旋转对象|按住 Shift|
-|复制对象|按住 Alt 键并拖动对象|
+|复制对象|按住 Alt 并拖动对象|
 |将对象重新定义为父项|将对象拖到版式面板上，在松开鼠标按钮前按住 Alt|
 |选择多个对象|在选择每个对象时按住 Ctrl|
 |选择多个相邻的对象|选择第一个和最后一个对象时按住 Shift|

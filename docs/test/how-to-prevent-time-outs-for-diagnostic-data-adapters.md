@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 093b937f7a957ef1d3a912c31d57a03f1a433ab0
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844233"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178314"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>如何：防止诊断数据适配器超时
 
@@ -23,17 +23,17 @@ ms.locfileid: "34844233"
 
 -   测试控制器服务未在测试控制器计算机上运行。 可能必须重新启动服务。 有关如何确定测试控制器和管理测试代理的详细信息，请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
 
--   如果在远程计算机上收集数据，则防火墙可能会阻止 Microsoft 测试管理器。 运行 Microsoft 测试管理器的计算机必须接受从测试控制器传入的连接。 当 Microsoft 测试管理器因防火墙阻止而未接收来自控制器的消息时，会发生超时。 必须检查运行 Microsoft 测试管理器的计算机上的防火墙设置。 有关防火墙设置的详细信息，请参阅以下 [Microsoft 网站](http://go.microsoft.com/fwlink/?LinkId=184980)。
+-   如果在远程计算机上收集数据，则防火墙可能会阻止 Microsoft 测试管理器。 运行 Microsoft 测试管理器的计算机必须接受从测试控制器传入的连接。 当 Microsoft 测试管理器因防火墙阻止而未接收来自控制器的消息时，会发生超时。 必须检查运行 Microsoft 测试管理器的计算机上的防火墙设置。
 
 -   测试控制器不能解析运行 Microsoft 测试管理器的计算机的名称。 如果 DNS 提供的此计算机的地址错误，则可能发生这种情况。 您可能必须与网络管理员联系才能解决此问题。
 
- 当你运行必须收集大量数据的长时间测试时，可能会发现收集此类数据超时。可使用下面的过程来解决此问题。
+当你运行必须收集大量数据的长时间测试时，可能会发现收集此类数据超时。可使用下面的过程来解决此问题。
 
- 可以增大超时，方法是更新 Microsoft 测试管理器的配置文件，或更新发生超时的测试代理的配置文件。
+可以增大超时，方法是更新 Microsoft 测试管理器的配置文件，或更新发生超时的测试代理的配置文件。
 
- Microsoft 测试管理器的配置文件名称为 mtm.exe.config。该文件位于以下目录中：%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
+Microsoft 测试管理器的配置文件名称为 mtm.exe.config。该文件位于以下目录中：%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
 
- 若要更新测试代理，必须更新测试代理计算机上的以下配置文件。 所有这些文件都位于测试代理计算机上的相同目录中：%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
+若要更新测试代理，必须更新测试代理计算机上的以下配置文件。 所有这些文件都位于测试代理计算机上的相同目录中：%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
 
 -   QTAgent.exe.config
 
@@ -43,9 +43,9 @@ ms.locfileid: "34844233"
 
 -   QTDCAgent32.exe.config
 
- 如果您运行手动测试并收集环境中的数据，则在创建 Bug 时或测试用例完成时，诊断数据适配器已经收集的任何数据都将传输到正在运行手动测试的计算机。 如果您已收集大量数据或者您的网络连接缓慢，则花费的时间可能会长于 60 秒的默认值。 例如，如果已将 IntelliTrace 适配器配置为收集 IntelliTrace 事件并调用许多进程的信息，则此类数据传输时间可能会超过默认超时。若要增加此值，可使用以下过程更新 mtm.exe.config。
+如果您运行手动测试并收集环境中的数据，则在创建 Bug 时或测试用例完成时，诊断数据适配器已经收集的任何数据都将传输到正在运行手动测试的计算机。 如果您已收集大量数据或者您的网络连接缓慢，则花费的时间可能会长于 60 秒的默认值。 例如，如果已将 IntelliTrace 适配器配置为收集 IntelliTrace 事件并调用许多进程的信息，则此类数据传输时间可能会超过默认超时。若要增加此值，可使用以下过程更新 mtm.exe.config。
 
- 如果测试运行程序活动超时，或者某个测试代理超时，则会显示错误消息。测试代理的错误消息包含有关超时的测试代理计算机的信息。使用下面的过程可根据接收到的错误消息，来更新配置文件。
+如果测试运行程序活动超时，或者某个测试代理超时，则会显示错误消息。测试代理的错误消息包含有关超时的测试代理计算机的信息。使用下面的过程可根据接收到的错误消息，来更新配置文件。
 
 ## <a name="to-increase-the-time-outs-for-your-diagnostic-data-adapters"></a>增大诊断数据适配器的超时
 

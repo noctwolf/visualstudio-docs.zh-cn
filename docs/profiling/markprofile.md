@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00b26b89232b0a0c1c01c6e3c5fe5cbca8cdb3eb
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 98530a790963d1c7fc60742dda4bb16e14a28ab4
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238155"
 ---
 # <a name="markprofile"></a>MarkProfile
 `MarkProfile` 方法可在 .vsp 文件中插入配置文件标记。 包含 `MarkProfile` 函数的线程的分析必须处于开启状态，才能插入标记。  
@@ -46,7 +47,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|返回 MARK_OK 以指示成功。|  
   
 ## <a name="remarks"></a>备注  
- 如果正在分析包含 MarkProfile 函数的线程，则每次运行代码时，标记值都将插入到 .vsp 文件中。 可多次调用 MarkProfile。  
+ 如果正在分析包含 MarkProfile 函数的线程，则每次运行代码时，都会向 .vsp 文件插入标记值。 可多次调用 MarkProfile。  
   
  配置文件标记具有全局范围。 例如，在一个线程中插入的配置文件标记可用于标记 .vsp 文件中任何线程的数据段的开头或结尾。  
   

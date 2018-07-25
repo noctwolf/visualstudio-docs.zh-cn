@@ -12,24 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5865597f9833ab04fbd5ca287ba0bc61217d7088
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c86b5ec3918526f461b39080967d5bc4a8a32e30
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924839"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079469"
 ---
-# <a name="work-with-3d-assets-for-games-and-apps"></a>处理游戏和应用的三维资产
+# <a name="work-with-3d-assets-for-games-and-apps"></a>处理游戏和应用的 3D 资产
 
 本文介绍 Visual Studio 工具，这些工具可用来创建或修改基于 DirectX 的游戏和应用的三维模型、纹理和着色器。
 
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 应用开发
- DirectX 应用通常包含编程逻辑、DirectX API 和高级着色语言 (HLSL) 程序以及音频和 3D 视觉资产，以呈现丰富多彩、交互性的多媒体体验。Visual Studio 包含可用于处理图像和纹理、三维模型和着色器的工具，而无需离开 IDE 使用其他工具。 Visual Studio 工具尤其适用于创建占位符资产，该资产可用于添加生产就绪资产前测试代码或生成原型，还可用于调试应用前，检查和修改生产就绪资产。
+ DirectX 应用通常将编程逻辑、DirectX API、高级别着色语言 (HLSL) 程序与音频和三维可视化资产合并在一起，以提供丰富的交互式多媒体体验。 Visual Studio 包括可用于处理图像和纹理、三维模型和着色器的工具，无需离开 IDE 使用其他工具。 Visual Studio 工具尤其适用于创建占位符资产，该资产可用于添加生产就绪资产前测试代码或生成原型，还可用于调试应用前，检查和修改生产就绪资产。
 
  以下是关于可在 Visual Studio 中处理的各种资产的详细信息。
 
 ### <a name="images-and-textures"></a>图像和纹理
- 图像和纹理能够在游戏和应用中提供颜色和可视化细节。 在三维图中，纹理具有多种格式、类型和几何形状，以满足不同用途。 例如，法线贴图提供每像素曲面法线以实现更具体的三维模型照明，多维数据集映射提供所有方向的纹理以用于 sky-boxing、反射和球面纹理映射等。 纹理可以提供 mip 映射，支持不同级别细节的高效绘制，且支持不同的颜色通道和颜色排序。 纹理可以各种压缩格式存储，从而减少专用图形内存占用，有助于 GPU 更有效地访问纹理。
+ 图像和纹理能够在游戏和应用中提供颜色和可视化细节。 在三维图中，纹理具有多种格式、类型和几何形状，以满足不同用途。 例如，法线贴图提供每像素曲面法线以实现更具体的三维模型照明，多维数据集映射提供所有方向的纹理以用于 sky-boxing、反射和球面纹理映射等。 纹理可以提供 mipmap，支持不同级别细节的高效绘制，且支持不同的颜色通道和颜色排序。 纹理可以各种压缩格式存储，从而减少专用图形内存占用，有助于 GPU 更有效地访问纹理。
 
  可以使用 Visual Studio 图像编辑器处理许多常用类型和格式的图像和纹理。
 
@@ -47,13 +47,13 @@ ms.locfileid: "31924839"
 > 有关如何开始 DirectX 编程的详细信息，请参阅 [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633)。 有关如何调试基于 DirectX 的应用的详细信息，请参阅[图形诊断（调试 DirectX 图形）](../debugger/visual-studio-graphics-diagnostics.md)。
 
 ## <a name="directx-version-compatibility"></a>DirectX 版本兼容性
- Visual Studio 使用 DirectX 呈现二维和三维资产。 可以选择 DirectX 11 呈现器或 Windows 高级光栅化平台 (WARP) 软件呈现器。 DirectX 11 呈现器在 DirectX 11 和 DirectX 10 GPU 上提供高性能、硬件加速呈现。 WARP 呈现器有助于确保资产适用于一系列计算机，其中包括没有新式图形硬件的计算机和具有集成图形硬件的计算机。 有关 WARP 的详细信息，请参见 [Windows 高级光栅化平台 (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。
+ Visual Studio 使用 DirectX 呈现二维和三维资产。 可以选择 DirectX 11 呈现器或 Windows 高级光栅化平台 (WARP) 软件呈现器。 DirectX 11 呈现器在 DirectX 11 和 DirectX 10 GPU 上提供高性能、硬件加速呈现。 WARP 呈现器有助于确保资产适用于一系列计算机，其中包括没有新式图形硬件的计算机和具有集成图形硬件的计算机。 有关 WARP 的详细信息，请参阅 [Windows 高级光栅化平台 (WARP) 指南](http://go.microsoft.com/fwlink/p/?LinkId=224634)。
 
 ## <a name="related-topics"></a>相关主题
 
 |标题|描述|
 |-----------|-----------------|
 |[使用纹理和图像](../designers/working-with-textures-and-images.md)|介绍如何使用 Visual Studio 处理图像和纹理。|
-|[三维模型](../designers/working-with-3-d-models.md)|介绍如何使用 Visual Studio 处理三维模型。|
+|[使用三维模型](../designers/working-with-3-d-models.md)|介绍如何使用 Visual Studio 处理三维模型。|
 |[使用着色器](../designers/working-with-shaders.md)|介绍如何使用 Visual Studio 着色器设计器创建和修改自定义着色器效果。|
 |[在游戏或应用中使用三维资产](../designers/using-3-d-assets-in-your-game-or-app.md)|介绍如何使用通过图像编辑器、模型编辑器或着色器设计器创建的游戏或应用中的资产。|

@@ -9,11 +9,12 @@ description: 如何向 Visual Studio 订阅添加备用标识以用于 VSTS 和 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 9a83f78f35b9533c554c81cecd181c00eca05568
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326301"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 
@@ -34,42 +35,35 @@ ms.lasthandoff: 04/16/2018
 
 对于所有订阅，可以添加“工作或学校帐户”，以便通过该帐户使用需要登录（VS IDE、VSTS 和 Azure）的权益。
 
-### <a name="prerequisites"></a>系统必备
-
-* [VSTS 项目集合管理员或帐户所有者权限](https://docs.microsoft.com/en-us/vsts/accounts/faq-add-delete-users#find-owner)。
-
-* 若要使用备用帐户，与帐户关联的订阅必须包括 Visual Studio Team Services 或 Microsoft Azure。
-
-> [!Note]
-> 可以继续通过备用 ID 使用订阅权益，但是订阅仍然与原始帐户关联。
 
 ### <a name="add-the-alternate-account"></a>添加备用帐户
 
-1. 使用 Microsoft 帐户 (https://{youraccount}.visualstudio.com) 登录到 Visual Studio。
+
+1. 使用 Microsoft 帐户 (https://my.visualstudio.com) 登录到 Visual Studio 订阅者门户。
 
 2. 转到“订阅”。
 
-  ![添加备用帐户 - 转到 VS 中的订阅](_img/vs-alternate-identity/my-vs-subscriptions.png)
+
+   ![添加备用帐户 - 转到 VS 中的订阅](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. 选择“添加备用帐户”。
 
-  ![选择添加备用帐户 ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+   ![选择添加备用帐户 ](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. 添加工作或学校帐户。
 
-  ![添加工作或学校帐户](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+   ![添加工作或学校帐户](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
-5. 使用工作或学校帐户登录到 Visual Studio (https://{youraccount}.visualstudio.com)。
+5. 使用工作或学校帐户登录到 Visual Studio Team Services (https://{youraccount}.visualstudio.com)。
 
-  ![使用工作或学校帐户](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+   ![使用工作或学校帐户](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
-  向 Visual Studio 订阅添加备用帐户后，这两个标识可以利用需要使用备用帐户（IDE、VSTS 和 Azure）登录的订阅权益。
-
-有关添加备用帐户的详细信息，请参阅 [Visual Studio 常见问题解答](https://www.visualstudio.com/my/myvsfaq#alternate)页。
+向 Visual Studio 订阅添加备用帐户后，这两个标识可以利用需要使用备用帐户（IDE、VSTS 和 Azure）登录的订阅权益。
 
 ## <a name="faq"></a>FAQ
 
 ### <a name="q--why-doesnt-vsts-recognize-me-as-a-visual-studio-subscriber"></a>问：为什么 VSTS 不能识别我的 Visual Studio 订阅者身份？
+
 答：使用主要或备用标识登录时，VSTS 应自动识别订阅。 如果没有，可尝试以下操作：
 
 * 检查是否具有[包含 VSTS 权益](vs-vsts.md)的有效 Visual Studio 订阅。
@@ -78,4 +72,4 @@ ms.lasthandoff: 04/16/2018
 
 * 登录 VSTS 之前至少访问了一次 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 
-如果 VSTS 仍然无法识别订阅，请[联系支持部门](https://www.visualstudio.com/team-services/support/)
+如果 VSTS 仍然无法识别订阅，请[联系支持部门](https://visualstudio.microsoft.com/team-services/support/)

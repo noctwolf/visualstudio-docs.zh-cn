@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01020148db1c5d34b4108d2c7ab25aa74fb1b308
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bf51cbc4cd20401f17f5e92def47713c6107f3d2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575073"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078750"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 词汇表
 这些术语用于描述 Microsoft 生成引擎 (MSBuild) 及其组件。  
@@ -88,10 +88,10 @@ ms.locfileid: "31575073"
  项目文件包含控制生成的 MSBuild 脚本。 项目文件通常具有以“proj”结尾的文件扩展名（如 .csproj 或 .vbproj）。 项目文件可能会导入属性文件和目标文件。  
   
  属性  
- 属性是用来控制生成过程的键值对。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+ 属性是用来控制生成过程的键值对。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  属性，环境  
- 环境属性是自动初始化为同名系统环境变量值的属性。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+ 环境属性是自动初始化为同名系统环境变量值的属性。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  属性文件  
  属性文件是包含大部分指导生成的属性组和项组的项目文件。 按照约定，其文件扩展名为 .props。 通常在关联的项目文件的开头导入属性文件。  
@@ -107,16 +107,16 @@ ms.locfileid: "31575073"
  有关详细信息，请参阅[属性函数](../msbuild/property-functions.md)。  
   
  属性，全局  
- 全局属性是用来控制生成过程的键值对。 可在命令提示符下或使用 [MSBuild 任务](../msbuild/msbuild-task.md) 的 `Properties` 特性设置全局属性，并且在生成的评估阶段无法修改该属性。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+ 全局属性是用来控制生成过程的键值对。 可在命令提示符下或使用 [MSBuild 任务](../msbuild/msbuild-task.md) 的 `Properties` 特性设置全局属性，并且在生成的评估阶段无法修改该属性。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  属性，本地  
  本地属性是用来控制生成过程的键值对。 此术语仅用于区分全局属性以外的属性。  
   
  属性，注册表  
- 注册表属性具有使用特殊语法设置的值，该语法可读取系统注册表子项的值。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+ 注册表属性具有使用特殊语法设置的值，该语法可读取系统注册表子项的值。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  属性，保留  
- 保留属性是用来控制生成过程的键值对。 保留属性将自动初始化为预定义的值。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+ 保留属性是用来控制生成过程的键值对。 保留属性将自动初始化为预定义的值。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  项目范围  
  项目范围描述本地属性等 MSBuild 对象，仅在包含的项目文件中对其导入的任何项目可见。  
@@ -152,7 +152,7 @@ ms.locfileid: "31575073"
  如果增量编译确定所有输出文件都是最新的，则跳过目标，也就是说，会对目标进行评估，但不执行目标内的任务。 有关详细信息，请参阅目标，评估。  
   
  目标框架名字对象  
- 描述目标框架（例如 .NETFramwork、Silverlight 等）、版本和配置文件（例如客户端、服务器等）的名称。  
+ 描述目标框架（例如 .NETFramework、Silverlight 等）、版本和配置文件（例如客户端、服务器等）的名称。  
   
  目标包  
  随给定框架和该框架的引用程序集一起分发的程序集列表。  

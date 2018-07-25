@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: bc8ffe0f6d3cdc0cd572c39dedb5f059e63525cb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1bb6779e0e8174dd10f209d9825ffb861d00455d
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235204"
 ---
-# <a name="creating-r-markdown-documents"></a>创建 R Markdown 文档
+# <a name="create-r-markdown-documents"></a>创建 R Markdown 文档
 
 [R Markdown](https://rmarkdown.rstudio.com/) 是一种文档格式，可将 R 中的分析转化为高质量的文档、报告、演示文稿和仪表板。
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 04/19/2018
     install.packages("rmarkdown")
 
     ```
-1. 要创建新的 R Markdown 文件，请使用“文件”>“新建”>“文件”菜单命令，并在列表中选择”R”>”R Markdown”。 在项目的上下文中，在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或“添加”>“新建项目...”，并在列表中选择”R Markdown”）。
+1. 要创建新的 R Markdown 文件，请使用“文件” > “新建” > “文件”菜单命令，并在列表中选择”R” > ”R Markdown”。 访问项目的上下文，在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或“添加” > “新项目”，再在列表中选择”R Markdown”）。
 
 1. 新文件的默认内容如下：
 
@@ -64,8 +65,8 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="previews"></a>预览版
 
-Visual Studio 2017 版本 15.5 以及更高版本自动提供 R Markdown 的实时预览。 要启用编辑器与预览之间的自动同步，请选择“R 工具”>”Markdown”>“自动同步”(Ctrl+Shift+Y)。 如果没有使用自动同步，可使用“R 工具”>”Markdown”>“重载 R Markdown 预览”刷新预览。
+Visual Studio 2017 版本 15.5 以及更高版本自动提供 R Markdown 的实时预览。 要启用编辑器与预览之间的自动同步，请选择“R 工具” > “Markdown” > “自动同步”(Ctrl+Shift+Y)。 如果没有使用自动同步，可使用“R 工具” > “Markdown” > “重载 R Markdown 预览”来刷新预览。
 
-还可以通过在编辑器中右键单击并选择一个“预览”命令，在 HTML、PDF 和 Microsoft Word 格式中预览文件。 “R 工具”>”Markdown”菜单上也提供相同命令。 （在早期版本的 Visual Studio 中，可在“R 工具”>“发布”菜单中找到这些命令。）
+还可以通过在编辑器中右键单击并选择一个“预览”命令，在 HTML、PDF 和 Microsoft Word 格式中预览文件。 还可通过“R 工具” > “Markdown”菜单获取相同命令。 （在早期版本的 Visual Studio 中，这些命令位于“R 工具” > “发布”菜单。）
 
 ![R Markdown 实时预览和其他预览菜单命令](media/rmarkdown-live-preview.png)

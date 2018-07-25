@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da608523430724e279efc3d5c7c5d5b27564845
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 007603f0695a658b6bfa6c1ab1173b4483004c13
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843918"
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析网页中的 JavaScript 代码
 
@@ -46,7 +47,7 @@ Visual Studio 分析工具可以通过使用检测分析方法收集在 [!INCLUD
 
 5. 在向导的第三页上，选中“分析 JavaScript”  复选框，然后单击“下一步” 。
 
-6. 在向导的第四页上，单击“完成”  以在浏览器中启动 Web 应用程序。
+6. 在向导的第四页上，单击“完成”以在浏览器中启动 Web 应用程序。
 
 7. 练习要分析的功能。
 
@@ -68,7 +69,7 @@ Visual Studio 分析工具可以通过使用检测分析方法收集在 [!INCLUD
 
     2. 选中“分析 JavaScript”  复选框，然后单击“下一步” 。
 
-6. 在向导的第四页上，单击“完成”  以在浏览器中启动网页。
+6. 在向导的第四页上，单击“完成”以在浏览器中启动网页。
 
 7. 练习要分析的功能。
 

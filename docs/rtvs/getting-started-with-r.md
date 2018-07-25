@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: af2074770a97dbef1f9c8598ec8b6560bdd7f344
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88387485b952bf201a222741a6b3d02861df186c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235289"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 
@@ -23,8 +24,8 @@ ms.lasthandoff: 04/26/2018
 ## <a name="create-an-r-project"></a>创建 R 项目
 
 1. 启动 Visual Studio。
-1. 选择“文件”>“新建”>“项目...”(Ctrl+Shift+N)
-1. 选择“模板”>“R”下的“R 项目”，指定项目的名称和位置，然后选择“确定”：
+1. 依次选择“文件” > “新建” > “项目” (Ctrl+Shift+N)
+1. 选择“模板” > “R”下的“R 项目”，指定项目的名称和位置，然后选择“确定”：
 
    ![Visual Studio 中 R（VS2017 中的 RTVS）的“新建项目”对话框](media/getting-started-01-new-project.png)
 
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/26/2018
     - 左下角是“R 交互”窗口，可在其中以交互方式开发和测试代码。
 
 > [!Note]
-> 可以在没有打开任何项目，甚至加载了其他项目类型的情况下使用“R 交互”窗口。 任何时候都只需选择“R 工具”>“窗口”>“R 交互”即可。
+> 可以在没有打开任何项目，甚至加载了其他项目类型的情况下使用“R 交互”窗口。 任何时候都只需选择“R 工具” > “窗口” > “R 交互窗口”即可。
 
 ## <a name="explore-the-interactive-window-and-intellisense"></a>了解交互窗口和 IntelliSense
 
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 简短地使用交互窗口可证明 IntelliSense 等基本编辑功能在代码编辑器中也适用。 如果输入与之前相同的代码，将出现相同的自动完成选项和 IntelliSense 提示，但输出并不相同。
 
-通过在 `.R` 中编写代码，可一次性查看所有代码，还可更轻松地进行微小的更改，然后通过在交互窗口中运行代码快速查看结果。 可以根据需要在一个项目中包含任意数量的文件。 如果代码位于文件中，还可以在调试器中进行分步运行（本文稍后讨论）。 如果要通过开发计算算法和编写代码来操作一个或多个数据集（尤其是想要检查所有中间结果时），这些功能都十分有用。
+通过在 .R 文件中编写代码，可一次性查看所有代码，还可更轻松地进行微小的更改，然后通过在交互窗口中运行代码快速查看结果。 可以根据需要在一个项目中包含任意数量的文件。 如果代码位于文件中，还可以在调试器中进行分步运行（本文稍后讨论）。 如果要通过开发计算算法和编写代码来操作一个或多个数据集（尤其是想要检查所有中间结果时），这些功能都十分有用。
 
 例如，以下步骤将创建一小段代码，用于了解[中心极限定理](https://en.wikipedia.org/wiki/Central_limit_theorem)（维基百科）。 （此示例改编自 Paul Teetor 的 R 指南。）
 
@@ -130,19 +131,19 @@ ms.lasthandoff: 04/26/2018
 
     ![Visual Studio 中刻度适当的更新后双重绘图](media/getting-started-10-plot3.png)
 
-在编辑器中还可以执行其他操作。 有关详细信息，请参阅[编辑代码](editing-r-code-in-visual-studio.md)[IntelliSense](r-intellisense.md) 和[代码片段](code-snippets-for-r.md)。
+在编辑器中还可以执行其他操作。 有关详细信息，请参阅[编辑 R 代码](editing-r-code-in-visual-studio.md)、[IntelliSense](r-intellisense.md) 和[代码片段](code-snippets-for-r.md)。
 
-## <a name="debugging-your-code"></a>调试代码
+## <a name="debug-your-code"></a>调试代码
 
-Visual Studio 的一个主要优势就是它的调试 UI。 RTVS 构建于这一坚实的基础之上，并增加了创新的 UI，如[变量资源管理器和数据表查看器](variable-explorer.md)。 首先看一下调试。
+Visual Studio 的一个主要优势就是它的调试 UI。 RTVS 构建于这一坚实的基础之上，并增加了创新的 UI，如[变量资源管理器](variable-explorer.md)。 首先看一下调试。
 
-1. 开始前，请重置当前工作区，使用“R 工具”>“会话”>“重置”菜单命令清除到目前为止完成的所有内容。 默认情况下，在交互窗口中执行的所有操作都将累加到当前会话，然后还会供调试器使用。 通过重置会话，可确保调试会话启动时无预先存在的数据。 但是，重置命令不会影响 `script.R` 源文件，因为该文件在工作区之外进行管理和保存。
+1. 开始前，请重置当前工作区，使用“R 工具” > “会话” > “重置”菜单命令清除到目前为止完成的所有内容。 默认情况下，在交互窗口中执行的所有操作都将累加到当前会话，然后还会供调试器使用。 通过重置会话，可确保调试会话启动时无预先存在的数据。 但是，重置命令不会影响 script.R 源文件，因为该文件在工作区之外进行管理和保存。
 
-1. 使用上一节中创建的 `script.R` 文件，在以 `pop <-` 开头的行上设置断点，方法是将插入符号放置于该行中，然后按 F9，或选择“调试”>“切换断点”菜单命令。 或者，只需在该行的左边距（或装订线）处单击，该边距（或装订线）中将出现一个红色断点：
+1. 使用上一节中创建的 script.R 文件，在以 `pop <-` 开头的行上设置断点，方法是将插入符号放置于该行中，然后按 F9，或选择“调试” > “切换断点”菜单命令。 或者，只需在该行的左边距（或装订线）处单击，该边距（或装订线）中将出现一个红色断点：
 
     ![在编辑器中设置断点](media/getting-started-11-debug1.png)
 
-1. 选择工具栏上的“源化启动文件”按钮，选择“调试”>“源化启动文件”菜单项，或按 F5，使用 `script.R` 中的代码启动调试器。 Visual Studio 将进入调试模式，并开始运行代码。 但是，将在设置断点的行停止运行：
+1. 选择工具栏上的“源化启动文件”按钮，选择“调试” > “源化启动文件”菜单项，或按 F5，使用 script.R 中的代码启动调试器。 Visual Studio 将进入调试模式，并开始运行代码。 但是，将在设置断点的行停止运行：
 
     ![在 Visual Studio 调试器中的断点处停止](media/getting-started-12-debug2.png)
 
@@ -150,7 +151,7 @@ Visual Studio 的一个主要优势就是它的调试 UI。 RTVS 构建于这一
 
     ![Visual Studio 中的调试工具栏](media/getting-started-13-debug3.png)
 
-1. 如果在断点处停止，可以检查变量值。 找到 Visual Studio 中的“自动”窗口，并选择底部名为“局部变量”的选项卡。 “局部变量”窗口将显示程序中当前位置的局部变量。 如果在之前设置的断点处停止，将看到尚未定义 `pop` 变量。 现在，如果使用“调试”>“逐过程执行”命令 (F10)，将显示 `pop` 的值：
+1. 如果在断点处停止，可以检查变量值。 找到 Visual Studio 中的“自动”窗口，并选择底部名为“局部变量”的选项卡。 “局部变量”窗口将显示程序中当前位置的局部变量。 如果在之前设置的断点处停止，将看到尚未定义 `pop` 变量。 现在，如果使用“调试” > “逐过程执行”命令 (F10)，将显示 `pop` 的值：
 
     ![Visual Studio 中的“局部变量”窗口](media/getting-started-14-debug4.png)
 

@@ -13,17 +13,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41c1ed02a32136d6c80e24f0644e0fab660e8ed0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8fe68d4d6d970ee0c1e5db566caf7c812436589c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571807"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077515"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：在多个项目文件中使用同一目标
 如果你创建了若干个 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件后，或许发现自己可能需要在不同项目文件中使用相同的任务和目标。 无需将这些任务或目标的完整说明包含在每个项目文件中，相反，你可以将目标保存在单独的项目文件中，然后将该项目导入任何需要使用该目标的其他项目。  
   
-## <a name="using-the-import-element"></a>使用 Import 元素  
+## <a name="use-the-import-element"></a>使用 Import 元素  
  `Import` 元素用于将一个项目文件插入另一个项目文件中。 被导入的项目文件必须是有效的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件，并包含格式标准的 XML。 `Project` 属性指定已导入的项目文件的路径。 有关 `Import` 元素的详细信息，请参阅 [Import 元素 (MSBuild)](../msbuild/import-element-msbuild.md)。  
   
 #### <a name="to-import-a-project"></a>导入项目  
@@ -70,7 +70,7 @@ ms.locfileid: "31571807"
   
  `Name="MyCommon"`  
   
- 由于是在 MyApp.proj 中定义属性 `Name` 之后才导入项目的，所以 MyCommon.targets 中 `Name` 的定义将替代 MyApp.proj 中的定义。 如果在定义属性名称之前导入项目，生成将显示以下消息：  
+ 由于是在 MyApp.proj 中定义了属性 `Name` 之后才导入项目，所以 MyCommon.targets 中 `Name` 的定义将替代 MyApp.proj 中的定义。 如果在定义属性名称之前导入项目，生成将显示以下消息：  
   
  `Name="MyApp"`  
   

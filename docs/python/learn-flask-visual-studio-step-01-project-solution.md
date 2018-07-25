@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2420beaa7f200ca281e04189667c1534e2a0f991
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: a9e69986b74928b9488f468283b9dc1c7aff03f0
+ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752125"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36947110"
 ---
-# <a name="tutorial-step-1-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程步骤 1：在 Visual Studio 中开始使用 Flask Web 框架
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
 [Flask](http://flask.pocoo.org/) 是一种轻量级 Web 应用程序 Python 框架，为 URL 路由和页面呈现提供基础知识。
 
@@ -251,7 +251,7 @@ def hello(name, msg):
 > [!div class="nextstepaction"]
 > [使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)
 
-## <a name="going-deeper"></a>深入了解
+## <a name="go-deeper"></a>深入了解
 
 - [Flask 快速入门](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f0315027d6b0a3b57acc7b1651f0788d0b30bba1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752074"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235209"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -38,7 +38,7 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 - **Boost.Test** 作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它与“测试资源管理器”集成，但当前没有项目模板，因此必须手动配置。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
-- **CTest** 支持随附在 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-cpp) 组件中，该组件是“使用 C++ 的桌面开发”工作负荷的一部分。 但是，CTest 尚未与“测试资源管理器”集成。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
+- **CTest** 支持随附在 [CMake Tools for Visual Studio](/cpp/ide/cmake-tools-for-visual-cpp) 组件中，该组件是“使用 C++ 的桌面开发”工作负荷的一部分。 但是，CTest 尚未与“测试资源管理器”集成。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 CTest](how-to-use-ctest-for-cpp.md)。
 
 **Visual Studio 2015 及更早版本**
 
@@ -69,7 +69,7 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 ### <a name="write-test-methods"></a>编写测试方法
 
 > [!NOTE]
-> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 它在此处进行介绍：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
+> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 它在此处进行介绍：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
 
 测试项目中的 .cpp 文件有一个为你定义的存根类和方法，用作有关如何编写测试代码的示例。 请注意，签名使用 TEST_CLASS 和 TEST_METHOD 宏，它们使方法可在测试资源管理器窗口中被发现。
 

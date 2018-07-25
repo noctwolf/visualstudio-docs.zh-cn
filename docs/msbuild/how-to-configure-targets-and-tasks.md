@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a09f2ec1af511cb789f2101e2df0a675dd065e8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5ceb9415648d4ad5bcfa4c16ca7f10b3a88a6db4
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578408"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078109"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>如何；配置目标和任务
+# <a name="how-to-configure-targets-and-tasks"></a>如何：配置目标和任务
 可将所选的 MSBuild 任务设置为在其目标环境中运行，而不考虑开发计算机的环境。 例如，当使用 64 位计算机生成面向 32 位体系结构的应用程序时，将在 32 位进程中运行所选的任务。  
   
 > [!NOTE]
 >  如果生成任务采用 .NET 语言（例如 Visual C# 或 Visual Basic）编写，并且不使用本机资源或工具，则该任务无需修改便可在任何目标上下文中运行。  
   
-## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask 属性和 Task 参数  
+## <a name="usingtask-attributes-and-task-parameters"></a>UsingTask 属性和任务参数  
  以下 `UsingTask` 属性影响特定生成过程中任务的所有操作：  
   
 -   `Runtime` 属性（如果存在）可设置公共语言运行时 (CLR) 版本，并可采用以下值之一：`CLR2`、`CLR4`、`CurrentRuntime` 或 `*`（任何运行时）。  
   
 -   `Architecture` 属性（如果存在）可设置平台和位数，并可采用以下值之一：`x86`、`x64`、`CurrentArchitecture` 或 `*`（任何体系结构）。  
   
--   `TaskFactory` 属性（如果存在）可设置创建和运行任务实例的任务工厂，并仅使用值 `TaskHostFactory`。 有关详细信息，请参阅本白皮书后面的“任务工厂”一节。  
+-   `TaskFactory` 属性（如果存在）可设置创建和运行任务实例的任务工厂，并仅使用值 `TaskHostFactory`。 有关详细信息，请参阅本文档后面的[任务工厂](#task-factories)部分。  
   
 ```xml  
 <UsingTask TaskName="SimpleTask"   
@@ -107,7 +107,7 @@ ms.locfileid: "31578408"
  `MSBuildRuntime` 和 `MSBuildArchitecture` 参数提供设置目标上下文的最灵活方式，但其范围也最受限制。  一方面，因为这些参数是在任务实例本身上设置的，并在任务运行之前不会进行计算，因此可从计算时和生成时都可用的全部属性范围中派生其值。  另一方面，这些参数仅适用于特定目标中任务的特定实例。  
   
 > [!NOTE]
->  任务参数在父节点的上下文中，而不是任务主机的上下文中进行计算；运行时相关或体系结构相关的环境变量（例如程序文件位置）将计算为与该父节点匹配的值。  但是，如果同一个环境变量直接由任务读取，则它会在任务主机的上下文中正确计算。  
+>  任务参数在父节点的上下文中，而不是在任务主机的上下文中进行计算。 运行时相关或体系结构相关的环境变量（例如程序文件位置）将计算为与该父节点匹配的值。  但是，如果同一个环境变量直接由任务读取，则它会在任务主机的上下文中正确计算。  
   
 ## <a name="see-also"></a>请参阅  
  [配置目标和任务](../msbuild/configuring-targets-and-tasks.md)

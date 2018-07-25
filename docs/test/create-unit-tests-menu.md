@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 39c59d76d10c2028214b2a1ea15ff139000e3080
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 652a9595601c614d18daf175a72404f9570d4162
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970395"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078324"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用“创建单元测试”命令创建单元测试方法存根
 
@@ -32,6 +32,8 @@ Visual Studio 中的“创建单元测试”命令能够创建单元测试方法
 
 * 可扩展并支持以 MSTest、MSTest V2、NUnit 和 xUnit 格式发出测试。
 
+* 在 .NET Core 项目中尚不可用。
+
 ## <a name="get-started"></a>入门
 
 首先，在代码编辑器中选择要测试项目中的方法、类型或命名空间，打开快捷菜单，然后选择“创建单元测试”。 “创建单元测试”对话框随即打开，可在其中选择用于创建新单元测试的选项。
@@ -40,7 +42,7 @@ Visual Studio 中的“创建单元测试”命令能够创建单元测试方法
 
 ## <a name="setting-unit-test-traits"></a>设置单元测试特征
 
-如果计划在测试自动化过程中运行这些测试，可以考虑在另一个测试项目中创建测试（上述对话框中的第二个选项），并为单元测试设置单元测试特征。 这样便可更轻松地在持续集成或持续部署管道中加入或排除这些特定的测试。 如下所示，通过直接向单元测试添加元数据来设置特征。
+如果计划在测试自动化进程中运行这些测试，可以考虑在另一个测试项目中创建测试（上述对话框中的第二个选项），并为单元测试设置单元测试特征。 这样便可更轻松地在持续集成或持续部署管道中加入或排除这些特定的测试。 如下所示，通过直接向单元测试添加元数据来设置特征。
 
 ![设置单元测试特征](media/createunittest.png)
 

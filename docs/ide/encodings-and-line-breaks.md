@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acb96e598128060563d12809a300318ccb929aaf
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: d6a07dceb796ad697653657c27ab3ff16b3433ac
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34446688"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117090"
 ---
 # <a name="encodings-and-line-endings"></a>编码和行尾
 
@@ -51,9 +51,9 @@ ms.locfileid: "34446688"
 ![“高级保存选项”对话框](media/line_endings.png)
 
 > [!NOTE]
-> 如果在“文件”菜单上看不到“高级保存选项”，则可以添加它。 选择“工具”、“自定义...”，然后选择“命令”选项卡。在“菜单栏”下拉列表中，选择“文件”，然后选择“添加命令...”按钮。 在“添加命令”对话框中的“类别”，选择“文件”，然后在“命令”列表中，选择“高级保存选项...”。选择“确定”，然后选择“下移”按钮以将命令移动到菜单中的任何位置。 选择“关闭”以关闭“自定义”对话框。 有关详细信息，请参阅[自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
+> 如果在“文件”菜单上看不到“高级保存选项”，则可以添加它。 选择“工具”、“自定义”，然后选择“命令”选项卡。在“菜单栏”下拉列表中，选择“文件”，然后选择“添加命令”按钮。 在“添加命令”对话框中的“类别”，选择“文件”，然后在“命令”列表中，选择“高级保存选项”。 选择“确定”，然后选择“下移”按钮以将命令移动到菜单中的任何位置。 选择“关闭”以关闭“自定义”对话框。 有关详细信息，请参阅[自定义菜单和工具栏](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu)。
 >
-> 或者，可以通过选择“文件” > “将 \<文件\> 另存为...”，来访问“高级保存选项”对话框。在“将文件另存为”对话框中，选择“保存”按钮旁的下拉三角形，然后选择“保存时使用编码”。
+> 或者，可以通过选择“文件” > “将 \<文件\> 另存为”，来访问“高级保存选项”对话框。 在“将文件另存为”对话框中，选择“保存”按钮旁的下拉三角形，然后选择“保存时使用编码”。
 
 ## <a name="see-also"></a>请参阅
 

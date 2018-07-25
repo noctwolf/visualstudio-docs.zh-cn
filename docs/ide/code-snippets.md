@@ -19,12 +19,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: a054ba07596135b08260ded028f07701fce9196d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924467"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117207"
 ---
 # <a name="code-snippets"></a>代码片段
 
@@ -36,9 +36,9 @@ ms.locfileid: "31924467"
 
 可通过以下常见方法访问代码片段：
 
-- 在菜单栏上，选择“编辑” > “IntelliSense” > “插入代码段...”
+- 在菜单栏上，选择“编辑” > “IntelliSense” > “插入代码段”
 
-- 在代码编辑器的右键单击或上下文菜单中，选择“代码段” > “插入代码段...”
+- 在代码编辑器的右键单击或上下文菜单中，选择“代码段” > “插入代码段”
 
 - 在键盘上按 Ctrl+K+X
 
@@ -74,7 +74,7 @@ if (true)
 
 代码片段可以包含替换参数，这些替换参数是占位符，必须对其进行替换以适应你编写的精确代码。 上例中的 `true` 是替换参数，你可以将其替换为适当的条件。 进行的替换将针对代码片段中同一个替换参数的每个实例重复。
 
-例如，Visual Basic 中有一个用于插入属性的代码片段。 要插入代码片段，请在 Visual Basic 代码文件的右键单击或上下文菜单中选择“代码段...” > “插入代码段...”。 然后，选择“代码模式” > “属性、过程和事件” > “定义属性”。
+例如，Visual Basic 中有一个用于插入属性的代码片段。 要插入代码片段，请在 Visual Basic 代码文件的右键单击或上下文菜单中选择“代码段” > “插入代码段”。 然后，选择“代码模式” > “属性、过程和事件” > “定义属性”。
 
 ![用于定义属性的代码片段菜单](media/code-snippets-vb-property.png)
 
