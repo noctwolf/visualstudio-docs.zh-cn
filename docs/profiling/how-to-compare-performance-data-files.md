@@ -15,11 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8404deaeeadd65a4e032266422520721a50a51
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: eeb9f26091deaf995ef1221d39aa7264553f5c70
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815374"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比较性能数据文件
 可以创建比较（“差异”）报表或视图来比较两个不同的探查器数据文件（.vsp 或 .vsps）的结果。 比较显示从一个分析会话到另一个分析会话所发生的差异、性能回归和改进。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>在“性能资源管理器”中为项目创建比较文件视图  
   
-1.  在“性能资源管理器”中的“报表”下，选择想要用作用于比较的基线值的 .vsp 或 .vsps 报表文件。  
+1.  在性能资源管理器中的“报表”下，选择想要用作比较基线值的 .vsp 或 .vsps 报表文件。  
   
 2.  选择要比较的 .vsp 或 .vsps 报表文件。  
   
@@ -54,6 +55,6 @@ ms.lasthandoff: 04/19/2018
   
 1.  在“分析”菜单上，选择“比较性能报告”。  
   
-2.  在“选择要比较的分析文件”窗口中，浏览并选择“基线文件”分析文件（.vsp 或 .vsps）和“比较文件”（.vsp 或.vsps）。  
+2.  在“选择要比较的分析文件”窗口中，浏览并选择基线文件分析文件（.vsp 或 .vsps）和比较文件（.vsp 或.vsps）。  
   
 3.  单击 **“确定”**。
