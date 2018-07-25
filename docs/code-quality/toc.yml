@@ -1,6 +1,7 @@
 - name: 代码分析文档
   href: index.md
 - name: 概述
+  expanded: true
   items:
     - name: 托管代码分析
       href: code-analysis-for-managed-code-overview.md
@@ -80,10 +81,12 @@
     - name: 规则集
       href: using-rule-sets-to-group-code-analysis-rules.md
       items:
+        - name: 分析器包规则集
+          href: analyzer-rule-sets.md
         - name: 托管代码规则集
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
           items:
-            - name: 为 ASP.NET Web 应用程序配置代码分析
+            - name: 为 ASP.NET Web 应用配置代码分析
               href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: C++ 代码规则集
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
@@ -126,7 +129,7 @@
         - name: 托管代码的“全球化规则”规则集
           href: globalization-rules-rule-set-for-managed-code.md
         - name: 托管代码的“托管最少量规则”规则集
-          href: managed-minimun-rules-rule-set-for-managed-code.md
+          href: managed-minimum-rules-rule-set-for-managed-code.md
         - name: 托管代码的“托管建议规则”规则集
           href: managed-recommended-rules-rule-set-for-managed-code.md
         - name: “混合最少量规则”规则集
