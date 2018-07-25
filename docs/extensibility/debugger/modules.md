@@ -1,5 +1,5 @@
 ---
-title: 模块 |Microsoft 文档
+title: 模块 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,22 +14,22 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f587e015263336436588d14edeeb5c6935872950
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8750c1f6676966be8564fbf4a175a66fa180a401
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098139"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233160"
 ---
 # <a name="modules"></a>模块
-在调试器体系结构，方面**模块**:  
+在调试器体系结构，方面*模块*:  
   
--   是一个物理容器，例如可执行文件或 DLL。  
+-   是，如可执行文件或 DLL 的物理容器。  
   
--   可以重新加载其符号，并且描述自身。 模块说明将显示在 IDE 的模块窗口中。  
+-   可以重新加载其符号，并描述自身。 模块说明显示在 IDE 的模块窗口中。  
   
--   由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)接口，用于描述模块的调试引擎所创建。  
+-   为由[IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)调试引擎来描述该模块创建的接口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)   
  [IDebugModule2](../../extensibility/debugger/reference/idebugmodule2.md)

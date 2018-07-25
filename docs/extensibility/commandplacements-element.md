@@ -1,5 +1,5 @@
 ---
-title: CommandPlacements 元素 |Microsoft 文档
+title: CommandPlacements 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cedac197295daed278fb3dce99157b33e4eb8d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bbbddf7716b34b8367ac014fa65d8ccfc4413e23
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097489"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230761"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
-CommandPlacements 元素分组 CommandPlacement 元素和其他 CommandPlacements 分组。  
+CommandPlacements 元素组 CommandPlacement 元素和其他 CommandPlacements 分组。  
   
- CommandPlacements 元素是可选的。 如果没有命令、 组或菜单必须包括在辅助位置中，你无需在.vsct 文件中包含此部分。  
+ CommandPlacements 元素是可选的。 如果没有命令、 组或菜单必须包含在辅助位置，不需要包含在此部分你 *.vsct*文件。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement>... </CommandPlacement>  
   <CommandPlacement>... </CommandPlacement>  
@@ -50,8 +50,8 @@ CommandPlacements 元素分组 CommandPlacement 元素和其他 CommandPlacement
   
 |元素|描述|  
 |-------------|-----------------|  
-|CommandPlacements|组 CommandPlacement 元素和其他 CommandPlacements 分组。|  
-|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|使按钮、 组和菜单要包括在多个组或菜单。|  
+|CommandPlacements|CommandPlacement 元素进行分组和其他 CommandPlacements 分组。|  
+|[CommandPlacement 元素](../extensibility/commandplacement-element.md)|启用要包含在多个组或菜单中的按钮、 组和菜单。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -61,7 +61,7 @@ CommandPlacements 元素分组 CommandPlacement 元素和其他 CommandPlacement
   
 ## <a name="example"></a>示例  
   
-```  
+```xml  
 <CommandPlacements>  
   <CommandPlacement guid="guidWidgetPackage" id="cmdidInsertOptions"  
     priority="0x0300">  
@@ -70,6 +70,6 @@ CommandPlacements 元素分组 CommandPlacement 元素和其他 CommandPlacement
 </CommandPlacements>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CommandPlacement 元素](../extensibility/commandplacement-element.md)   
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

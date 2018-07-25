@@ -1,5 +1,5 @@
 ---
-title: 实现的端口供应商提供 |Microsoft 文档
+title: 实现端口提供程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,28 +14,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0743f307dc579f6197880b0b89acaf2db0dda08
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cdde98a85175692ed4717c8a9af0b26799c35214
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098987"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233030"
 ---
-# <a name="implementing-a-port-supplier"></a>实现端口供应商
-端口供应商提供对会话调试管理器 (SDM) 请求的端口。 端口供应商需要调试到非 DCOM 机时或当新设备需要支持时实现。 例如，若要提供了与移动电话的调试，则可能会实现提供端口连接到移动电话 （可能通过 IR 或单元格连接） 和枚举的进程和手机上运行的程序的端口供应商提供。  
+# <a name="implement-a-port-supplier"></a>实现端口提供程序
+端口提供程序提供对会话调试管理器 (SDM) 请求上的端口。 向非 DCOM 机或新设备时需要支持进行调试时，必须实现端口提供程序。 例如，若要提供对移动电话调试，你可能会设置端口提供程序提供端口中，它连接到手机 （也许是通过红外线 （ir） 或单元格连接） 和枚举的过程和程序在手机上运行。  
   
- 对于基于 Windows 的计算机 （包括远程调试） 上的调试程序，Visual Studio 提供端口供应商的本机和公共语言运行时 (CLR) 进程，因此无需在这些情况下实现你自己的端口提供程序。  
+ 对于基于 Windows 的计算机 （包括远程调试） 上的调试程序，Visual Studio 提供端口供应商的本机和公共语言运行时 (CLR) 的进程，因此无需设置在这些情况下你自己端口提供程序。  
   
 ## <a name="in-this-section"></a>本节内容  
  [实现和注册端口提供程序](../../extensibility/debugger/implementing-and-registering-a-port-supplier.md)  
- 讨论如何 SDM 交互端口提供程序和其端口通信。  
+ 讨论 SDM 与端口提供程序和其端口交互的方式。  
   
  [所需的端口提供程序接口](../../extensibility/debugger/required-port-supplier-interfaces.md)  
- 文档必须实现以获取的端口供应商提供的接口。  
+ 文档必须实现以获取端口提供程序的接口。  
   
 ## <a name="related-sections"></a>相关章节  
  [调试器概念](../../extensibility/debugger/debugger-concepts.md)  
  描述调试的主要体系结构概念。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

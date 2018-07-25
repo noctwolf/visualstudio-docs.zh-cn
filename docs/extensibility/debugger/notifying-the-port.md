@@ -1,5 +1,5 @@
 ---
-title: 通知端口 |Microsoft 文档
+title: 通知端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,41 +13,41 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1420ca8768ddf1eaedc0d515810bc88b3491c4db
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e8470f2a1c3fec9fa54eec402e46dd2708510493
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101256"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230906"
 ---
-# <a name="notifying-the-port"></a>通知端口
-启动程序之后, 该端口必须要得到通知，，如下所示：  
+# <a name="notify-the-port"></a>通知端口
+启动后一个程序，该端口必须得到通知，请按如下所示：  
   
-1.  当一个端口收到新的程序节点时，它将程序创建事件发送回调试会话。 事件都带有一个表示该程序的接口。  
+1.  当一个端口收到新的程序节点时，将回复到调试会话发送程序创建事件。 事件将携带的表示该程序的接口。  
   
 2.  调试会话查询可以将附加到调试引擎 (DE) 的标识符的程序。  
   
-3.  调试会话检查 DE 为该程序允许 DEs 列表上。 调试会话获取此列表，从解决方案的活动程序设置，最初传递给它的调试包。  
+3.  调试会话进行检查以查看 DE 是否为该程序允许 DEs 列表上。 调试会话获取此列表从解决方案的活动程序设置，最初传递给它的调试包。  
   
-     DE 必须是在允许列表中，否则 DE 将不会附加到程序。  
+     DE 必须位于允许列表中，否则设备将不会附加到程序。  
   
- 以编程方式，当一个端口首次接收新的程序节点，它创建[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口来表示该程序。  
+ 以编程方式，当一个端口先接收新的程序节点，它会创建[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口来表示该程序。  
   
 > [!NOTE]
->  不应与混淆这`IDebugProgram2`更高版本创建的调试引擎 (DE) 的接口。  
+>  不应与混淆这`IDebugProgram2`接口更高版本创建的调试引擎 (DE)。  
   
- 端口发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)回会话调试管理器 (SDM) 通过 COM 的程序创建事件`IConnectionPoint`接口。  
+ 该端口将发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)程序创建事件返回到会话调试管理器 (SDM) 通过 COM`IConnectionPoint`接口。  
   
 > [!NOTE]
 >  不应与混淆这`IDebugProgramCreateEvent2`接口，由 DE 发出的更高版本。  
   
- 端口事件接口本身，以及发送[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)，和[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，表示端口，处理，并编程，分别。 SDM 调用[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)若要获取可以调试程序，DE 的 GUID。 最初通过 GUID [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口。  
+ 事件接口本身，以及该端口将发送[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)， [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)，并[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，表示该端口，处理，并编程，分别。 SDM 调用[IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)要获取可以调试程序，DE GUID。 从最初获取 GUID [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口。  
   
- SDM 检查 DE 允许 DEs 列表上。 SDM 从解决方案的活动程序设置，最初传递给它的调试包获取此列表。 DE 必须是在允许列表中，否则将不会附加到程序。  
+ SDM 检查 DE 是否允许 DEs 列表上。 SDM 从解决方案的活动程序设置，最初传递给它的调试包中获取此列表。 DE 必须位于允许列表中，否则将不会附加到该程序。  
   
- 了解 DE 的标识后, SDM 已准备好将其附加到该程序。  
+ 一旦 DE 该标识已知，SDM 已准备好将其附加到该程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [启动程序](../../extensibility/debugger/launching-a-program.md)   
- [在启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)   
+ [启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)   
  [调试任务](../../extensibility/debugger/debugging-tasks.md)

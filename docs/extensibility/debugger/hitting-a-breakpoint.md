@@ -1,5 +1,5 @@
 ---
-title: 命中断点 |Microsoft 文档
+title: 命中断点 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f4788f8a038a274d6d94b4edf368e30ef495665
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8a9b110abdaf0ebfaed720dd5d09c0e215a6b2e7
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109137"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231550"
 ---
-# <a name="hitting-a-breakpoint"></a>命中断点
-下面介绍的调试引擎 (DE) 在运行或单步执行时命中断点时的过程：  
+# <a name="hit-a-breakpoint"></a>命中断点
+调试引擎 (DE) 运行或单步执行时达到断点时，以下部分描述的过程：  
   
-## <a name="troubleshooting-a-hit-breakpoint"></a>故障排除命中的断点  
+## <a name="troubleshoot-a-hit-breakpoint"></a>排查命中的断点  
   
 1.  DE 发送[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)接口用作**EVENT_SYNC_STOP**。  
   
-2.  会话调试管理器 (SDM) 调用[IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)获取命中的断点。  
+2.  会话调试管理器 (SDM) 调用[IDebugBreakpointEvent2:::EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)若要获取已被命中的断点。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

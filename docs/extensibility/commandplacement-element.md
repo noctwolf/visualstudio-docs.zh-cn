@@ -1,5 +1,5 @@
 ---
-title: CommandPlacement 元素 |Microsoft 文档
+title: CommandPlacement 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49de1e1cb41c13ef9b587689f36e302bcadf890c
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c5da750b3f33127fdcfdf2e2a76d4df1556561b2
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267970"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232424"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
-CommandPlacement 元素启用按钮、 组和菜单要包括在多个组或菜单。 通过使用 CommandPlacement 元素，无需完全重新定义这些项，才能修改用户界面的外观。  
+CommandPlacement 元素使按钮、 组和要包含在多个组或菜单中的菜单。 通过使用 CommandPlacement 元素，无需完全重新定义这些项，若要修改用户界面的外观。  
   
- 有关详细信息，请参阅[按钮创建可重用组](../extensibility/creating-reusable-groups-of-buttons.md)。  
+ 有关详细信息，请参阅[创建可重用的按钮组](../extensibility/creating-reusable-groups-of-buttons.md)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,22 +41,22 @@ CommandPlacement 元素启用按钮、 组和菜单要包括在多个组或菜�
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 该命令集中, 定义的 guid[符号元素](../extensibility/symbols-element.md)。|  
-|id|必须的。 菜单、 组或命令放置中, 定义的 id `Symbols Element`。|  
-|priority|必须的。 确定 visual 项的位置中其父元素。|  
-|条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|guid|必须的。 命令集，如中所定义的 guid [Symbols 元素](../extensibility/symbols-element.md)。|  
+|id|必须的。 菜单、 组或命令放置，如中所定义的 id `Symbols Element`。|  
+|priority|必须的。 确定项在其父元素中的 visual 位置。|  
+|条件|可选。 请参阅[条件 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|父级|必须的。 菜单或承载要放置的项的组。|  
+|父级|必须的。 菜单或托管要放置的项组中。|  
   
 ### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandPlacements 元素](../extensibility/commandplacements-element.md)|指定组的 CommandPlacements 和 CommandPlacement 元素。|  
+|[CommandPlacements 元素](../extensibility/commandplacements-element.md)|指定 CommandPlacements 和 CommandPlacement 元素组。|  
   
 ## <a name="example"></a>示例  
   
@@ -71,4 +71,4 @@ CommandPlacement 元素启用按钮、 组和菜单要包括在多个组或菜�
   
 ## <a name="see-also"></a>请参阅  
  [CommandPlacements 元素](../extensibility/commandplacements-element.md)   
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
