@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6627bac92221d66bd2cc1ab32efe10d0588c3b7e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745680"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924325"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：创建基本三维模型
 
@@ -60,9 +60,9 @@ ms.locfileid: "34745680"
 
      ![已进一步延伸立方体的一侧。](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  对模型进行三角测量。 在“模型编辑器”工具栏上，依次选择“高级”、“工具”和“三角化”。
+7.  对模型进行三角测量。 在“模型编辑器”工具栏上，依次选择“高级” > “工具” > “三角化”。
 
-8.  创建房子的屋顶。 选择“模型编辑器”工具栏上的“选择边”切换到边选择模式，然后选择立方体将其激活。 当您选择此处显示的边时，请按住 Ctrl 键：
+8.  创建房子的屋顶。 选择“模型编辑器”工具栏上的“选择边”切换到边选择模式，然后选择立方体将其激活。 选择此处显示的边时，请按住 Ctrl 键：
 
      ![将形成屋顶顶端的边缘](../designers/media/gfx_model_demo_house_edges.png)
 
@@ -76,6 +76,6 @@ ms.locfileid: "34745680"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：构建三维地形模型](../designers/how-to-model-3-d-terrain.md)
+- [如何：构建 3D 地形模型](../designers/how-to-model-3-d-terrain.md)
 - [模型编辑器](../designers/model-editor.md)
 - [着色器设计器](../designers/shader-designer.md)

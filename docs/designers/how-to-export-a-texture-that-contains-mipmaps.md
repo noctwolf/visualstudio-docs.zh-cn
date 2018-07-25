@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2126f38053cc8f83be92aeb5d3939df07e58c2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae3b12ffa91b419717e91125b658f29e7d74deb6
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923322"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923889"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：导出包含 Mipmap 的纹理
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：导出包含 mipmap 的纹理
 
 在项目生成阶段，图像内容管道可从源图像生成 mipmap。 若要实现某些效果，有时必须手动指定每个 MIP 级别的图像内容。 无需手动指定每个 MIP 级别的图像内容时，在生成时生成 mipmap 可确保 mipmap 内容一直保持同步。还可避免在运行时生成 mipmap 的性能成本。
 
@@ -27,7 +27,7 @@ ms.locfileid: "31923322"
 
 - 配置图像内容管道，生成 mipmap。
 
-## <a name="export-mipmaps"></a>导出 Mipmap
+## <a name="export-mipmaps"></a>导出 mipmap
 
 Mipmapping 为 3D 游戏或应用中的带纹理图面提供自动屏幕空间细节层次。 它可通过预先计算纹理的向下采样版本，增强游戏或应用的渲染性能。 通过预先计算下采样版本，每次采样时，不必对整个纹理进行向下采样。
 

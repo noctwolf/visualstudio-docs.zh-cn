@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 885d01d0d8f363a0b5b3a6abe2d3c2c018334092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ce535ee8df4d33ad67f62c3a69def65ceabf3e79
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255153"
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 本概述说明分析的基础知识。 刚接触性能工作的开发者会了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具如何帮助他们快速提高工作效率以及提高其代码的性能。 在分析方面经验丰富的开发者可以获得特定分析工具功能和过程的概述。  
@@ -76,4 +77,4 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   
- [演练：确定性能问题](../profiling/walkthrough-identifying-performance-problems.md)
+ [演练：发现性能问题](../profiling/walkthrough-identifying-performance-problems.md)

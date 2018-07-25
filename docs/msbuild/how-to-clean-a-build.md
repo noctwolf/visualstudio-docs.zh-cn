@@ -15,32 +15,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e9af303b91cc0cdabc184f7ced329289eb7bd8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 125fb107bcb40510ad8196c26c9538ef505d2093
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578215"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079117"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 清理生成时，将删除所有中间文件和输出文件，仅保留项目和组件文件。 然后，可以根据项目和组件文件生成中间文件和输出文件的新实例。 随 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供的常规任务库中包括一个 [Exec](../msbuild/exec-task.md) 任务，可以使用该任务运行系统命令。 有关任务库的详细信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
   
-## <a name="creating-a-directory-for-output-items"></a>创建输出项目录  
- 默认情况下，编译项目时创建的 .exe 文件与项目文件和源文件放在同一个目录中。 但是，输出项通常在单独的目录中创建。  
+## <a name="create-a-directory-for-output-items"></a>创建输出项目录  
+ 默认情况下，编译项目时创建的 .exe 文件与项目文件和源文件位于同一目录中。 但是，输出项通常在单独的目录中创建。  
   
 #### <a name="to-create-a-directory-for-output-items"></a>创建输出项目录  
   
-1.  使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 `BuiltApp` 的目录：  
+1.  使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 BuiltApp 的目录：  
   
      `<builtdir>BuiltApp</builtdir>`  
   
 2.  如果目录不存在，使用 [MakeDir](../msbuild/makedir-task.md) 任务创建目录。 例如:  
   
-     `<MakeDir Directories = "$(builtdir)"`  
+     ```xml
+     <MakeDir Directories = "$(builtdir)"  
+      Condition = "!Exists('$(builtdir)')" />
+     ```
   
-     `Condition = "!Exists('$(builtdir)')" />`  
-  
-## <a name="removing-the-output-items"></a>删除输出项  
+## <a name="remove-the-output-items"></a>删除输出项  
  在新建中间文件和输出文件的实例之前，可能需要清除这些文件以前的所有实例。 使用 [RemoveDir](../msbuild/removedir-task.md) 任务从磁盘上删除目录和该目录中包含的所有文件和目录。  
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>删除目录和目录中包含的所有文件  

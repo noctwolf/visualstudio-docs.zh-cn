@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 587517bdeabf9755e2678b03206059ef5b403255
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34449164"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37175361"
 ---
-# <a name="working-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
+# <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
 Python 是一种受欢迎的编程语言，它可靠、灵活、易于学习、可在所有操作系统上免费使用，并且强大的开发人员社区和很多免费库都支持它。 Python 支持所有开发方式，包括 Web 应用程序、Web 服务、桌面应用、脚本编写和科学计算，许多高校人员、科学家、业余和专业开发人员都在使用 Python。 可以在 [python.org](https://www.python.org) 和 [Python for Beginners](https://www.python.org/about/gettingstarted/)（面向初学者的 Python）中了解有关该语言的详细信息。
 
@@ -47,7 +47,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>多种多样的编辑、IntelliSense 和代码理解
 
-Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码和库的自动补全、代码格式设置、签名帮助、重构、linting（如下所示）和类型提示。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
+Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码和库的自动补全、代码格式设置、签名帮助、重构、Linting 和类型提示。 Visual Studio 还提供一些独一无二的功能，如类视图、转到定义、查找所有引用和代码片段。 与[交互窗口](#interactive-window)直接集成有助于快速开发已保存在文件中的 Python 代码。
 
 ![Visual Studio 中 Python 代码的代码补全](media/code-editing-completions-simple.png)
 
@@ -55,9 +55,9 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 
 - 视频（2 分 30 秒）：[编辑 Python 代码](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=r2iQH5LWE_4605918567)
 - 文档：[编辑 Python 代码](editing-python-code-in-visual-studio.md)
-- 文档：[代码格式设置](formatting-python-code.md)
-- 文档：[重构](refactoring-python-code.md)
-- 文档：[Linting](linting-python-code.md)
+- 文档：[格式代码](formatting-python-code.md)
+- 文档：[重构代码](refactoring-python-code.md)
+- 文档：[使用 Linter](linting-python-code.md)
 - 常规 Visual Studio 功能文档：[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)
 
 ## <a name="interactive-window"></a>交互窗口
@@ -169,7 +169,7 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 
 如[安装指南](installing-python-support-in-visual-studio.md)所述，可在下述 Visual Studio 版本中安装 Python 功能：
 
-- [Visual Studio 2017（所有版本）](https://www.visualstudio.com/vs/)
+- [Visual Studio 2017（所有版本）](https://visualstudio.microsoft.com/vs/)
 - Visual Studio 2015（所有版本）
 - Visual Studio 2013 Community Edition
 - Visual Studio 2013 Express for Web 和 Update 2 或更高版本
@@ -178,7 +178,7 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 - Visual Studio 2012（Pro 或更高版本）
 - Visual Studio 2010 SP1（Pro 或更高版本；需要 .NET 4.5）
 
-Visual Studio 2015 及更早版本可在 [visualstudio.com/vs/older-downloads/](https://www.visualstudio.com/vs/older-downloads/) 处获取。
+Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-downloads/](https://visualstudio.microsoft.com/vs/older-downloads/) 处获取。
 
 > [!Important]
 > 仅针对 Visual Studio 的最新版完全支持和维护这些功能。 可在早期版本中使用这些功能，但不主动维护它们。

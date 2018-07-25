@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb8e8ba51f4aaeed0242147d46fd282b95452d91
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b2adfd3d571fe16fcbfe273e5513ebea724403cd
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576802"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39080683"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：将文件排除在生成过程外
 在项目文件中，可以使用通配符将所有文件包括在一个目录或一组嵌套目录中，以作为生成的输入。 但是，对于目录中的某个文件或嵌套目录中的某个目录，你可能并不希望将其作为生成的输入包括在内。 你可以从输入列表中显示排除该文件或目录。 有些时候，你只希望在特定情况下才包括项目中的某个文件。 那么你可以显式声明将文件包括在生成中的条件。  
   
-## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>从生成的输入中排除文件或目录  
+## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>从生成的输入中排除文件或目录  
  项列表是生成的输入文件。 要包括的项是使用 `Include` 属性单独或作为组声明的。 例如:  
   
 ```xml  
@@ -44,7 +44,7 @@ ms.locfileid: "31576802"
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
     ```  
   
-     - 或 -  
+    或
   
     ```xml  
     <VBFile Include="*.vb" Exclude="Form2.vb"/>  
@@ -58,7 +58,7 @@ ms.locfileid: "31576802"
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
     ```  
   
-     - 或 -  
+    或
   
     ```xml  
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>  
@@ -77,7 +77,7 @@ ms.locfileid: "31576802"
     > [!NOTE]
     >  必须指定这两个属性的路径。 如果你使用绝对路径在 `Include` 属性中指定文件位置，那么在 `Exclude` 属性中也必须使用绝对路径；如果你在 `Include` 属性中使用相对路径，那么在 `Exclude` 属性中也必须使用相对路径。  
   
-## <a name="using-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>使用条件从生成的输入中排除文件或目录  
+## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>使用条件从生成的输入中排除文件或目录  
  如果你希望在调试生成中包括某些项，而不希望在发布生成中包括这些项，则可以使用 `Condition` 属性来指定包括该项的条件。  
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>仅在发布生成中包括文件 Formula.vb  
@@ -126,4 +126,5 @@ ms.locfileid: "31576802"
   
 ## <a name="see-also"></a>请参阅  
  [项](../msbuild/msbuild-items.md)   
- [MSBuild](../msbuild/msbuild.md) [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](../msbuild/msbuild.md)   
+ [如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)   

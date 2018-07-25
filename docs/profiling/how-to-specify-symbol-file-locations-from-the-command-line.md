@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cf6c17430c4f56ae1821a149d4a7cc5f82f0028e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0d31479ec46c407ca875a1ad2a1d81e1438b7715
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571425"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845205"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：通过命令行指定符号文件位置
 为了显示函数名称和行号等符号信息，VSPerfReport 命令行工具要求访问被分析组件的符号 (.pdb) 文件以及 Windows 系统文件。 编译组件时会创建符号文件。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 自动搜索以下位置的符号文件：  
@@ -59,6 +59,6 @@ ms.locfileid: "34571425"
   
  **设置 _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  
   
- 通过使用 **/SymbolPath** 选项，以下 VSPerfReport 命令行向搜索路径添加 C:\Projects\Symbols 目录。  
+ 通过使用 /SymbolPath 选项，以下 VSPerfReport 命令行向搜索路径添加 C:\Projects\Symbols 目录。  
   
  **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**

@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 045059c1ab0c33026369b065649c4d4b82a480df
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 89c5727b8bc294ae28f48a6e1fc3194b258b9555
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844419"
 ---
 # <a name="manage-channels"></a>管理通道
 在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。  
@@ -62,4 +63,4 @@ ms.lasthandoff: 04/19/2018
 ## <a name="see-also"></a>请参阅  
  [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)   
  [打开/关闭度量模式](../profiling/measure-mode-on-off.md)   
- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+ [线程视图](../profiling/threads-view-parallel-performance.md)

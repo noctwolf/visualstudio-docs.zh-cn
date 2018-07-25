@@ -9,12 +9,12 @@ description: 了解如何导出订阅者列表及其订阅分配的详细信息�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2bdd9d9d77388a1e00bd7ef57071f461a39674e9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: f78ba7f8c5d782692b7600083eeffe0ab3ff8378
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031317"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326262"
 ---
 # <a name="exporting-subscription-information"></a>导出订阅信息
 
@@ -23,4 +23,4 @@ ms.locfileid: "32031317"
 此功能可用于少数情况，例如跟踪分配和到期日期。 如果你正在从使用 BAN 跟踪订阅分配转变为使用 GUID 跟踪订阅分配，可以将此报表与 Microsoft Excel 中的 VLOOKUP 公式一起使用，以正确匹配订阅者。  
 
 要执行导出操作，只需选择“导出”选项卡，文件就会下载到本地计算机。 该文件将包含用户订阅所在的协议名称以及导出日期。  
-        ![导出订阅者](_img\exporting-subscriptions\exporting-subscriptions.png)
+![导出订阅者](_img\exporting-subscriptions\exporting-subscriptions.png)

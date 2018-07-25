@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afd65344520d003c138b7250bec7cd6f1cc9da79
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 849f0aea9c8c3bce391247704b4e551b5f7dafdf
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31923900"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890043"
 ---
 # <a name="accessibility-products-and-services-blend"></a>辅助功能产品和服务 (Blend)
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下各节提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：
 
--   “Windows 辅助功能”
+-   Windows 辅助功能
 
--   “替代格式的文档”
+-   替代格式的文档
 
--   “针对有听力障碍人士的客户服务”
+-   针对有听力障碍人士的客户服务
 
--   “更多相关信息”
+-   更多相关信息
 
 > [!NOTE]
->  本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果你在美国之外获得本产品，可以使用软件包附带的分公司信息卡，也可以访问 [Microsoft 辅助功能站点](http://go.microsoft.com/fwlink/?LinkID=75069) ，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。
+>  本节中的信息仅适用于美国境内获得 Microsoft 产品许可证的用户。 如果你在美国之外获得本产品，可以使用软件包附带的分公司信息卡，也可以访问 [Microsoft 辅助功能站点](http://go.microsoft.com/fwlink/?LinkID=75069)，以获取 Microsoft 支持服务电话号码和地址的列表。 你可以与当地的分公司联系，了解你所在的地区是否供应本节中描述的产品和服务类型。 有关辅助功能的信息有其他语言版本，包括日语和法语。
 
 ## <a name="accessibility-features-of-windows"></a>Windows 辅助功能
  Windows 操作系统具备许多内置辅助功能，这些功能适用于不便打字或使用鼠标、失明或视力较差，或者失聪或具有听力障碍的人群。 安装时将安装这些功能。 有关这些功能的详细信息，请参阅 Windows 中的“帮助”和 [Microsoft 辅助功能站点](http://go.microsoft.com/fwlink/?LinkID=75069)。
@@ -65,7 +65,7 @@ Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 
 
  Web 地址可能会有所更改，因此你可能无法连接此处提及的站点。
 
-## <a name="customer-service-for-people-people-with-hearing-impairments"></a>针对有听力障碍人士的客户服务
+## <a name="customer-service-for-people-with-hearing-impairments"></a>针对有听力障碍人士的客户服务
  如果您有听力障碍，可以通过文本电话 (TTY/TDD) 服务来了解 Microsoft 产品和客户服务：
 
  有关客户服务，请拨打 (800) 892-5234 与 Microsoft Sales Information Center 联系，服务时间为星期一到星期五太平洋时间上午 6:30 至下午 5:30（节假日除外）。

@@ -6,6 +6,7 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - file.openproject
+- file.opensolution
 helpviewer_keywords:
 - op command
 - File.OpenProject command
@@ -16,15 +17,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6663ef73f87ea0fa80eb16a3deef6765265882db
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 0ff848ded38b0f59d3894ec4f78dd79ec9d182b8
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704127"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924143"
 ---
-# <a name="open-project-command"></a>“打开项目”命令
-打开现有项目。
+# <a name="open-project-command"></a>打开项目命令
+
+打开现有项目或解决方案。
 
 ## <a name="syntax"></a>语法
 
@@ -33,19 +35,23 @@ File.OpenProject filename
 ```
 
 ## <a name="arguments"></a>自变量
- `filename`
 
- 必须的。 要打开的项目的完整路径和文件名。
+`filename`
 
- `filename` 参数的语法要求用引号将包含空格的路径括起来。
+必须的。 要打开的项目或解决方案的完整路径和文件名。
+
+> [!NOTE]
+> `filename` 参数的语法要求用引号将包含空格的路径括起来。
 
 ## <a name="remarks"></a>备注
- 键入内容时，自动完成功能会尝试查找正确的路径和文件名。
 
- 调试时此命令不可用。
+键入内容时，自动完成功能会尝试查找正确的路径和文件名。
+
+调试时此命令不可用。
 
 ## <a name="example"></a>示例
- 此示例打开 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目 Test1。
+
+以下示例打开 Visual Basic 项目 Test1：
 
 ```cmd
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"

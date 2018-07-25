@@ -10,11 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 709f9b62844a209450daa427efdb3333796828b8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 904ebf55e7920bfd79fec3afb502d59e5dc82a33
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35254613"
 ---
 # <a name="overviews-performance-tools"></a>概述（性能工具）
 本节提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的概念和术语概述，这些工具可以用于度量正在开发的应用程序的性能特征。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
  [了解检测数据值](../profiling/understanding-instrumentation-data-values.md)  
  了解使用检测分析方法时报告的数据值。  
   
- [了解内存分配数据值和对象生存期数据值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [了解内存分配和对象生存期数据值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
  了解使用 .NET 内存分析方法时报告的数据值。  
   
  [了解资源争用数据值](../profiling/understanding-resource-contention-data-values.md)  

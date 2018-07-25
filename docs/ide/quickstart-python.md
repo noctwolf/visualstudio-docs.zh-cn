@@ -1,7 +1,7 @@
 ---
 title: 快速入门：使用 Visual Studio 创建 Python Web 应用
 description: 在此快速入门教程中，利用 Visual Studio 和 Flask 框架在 Python 中生成简单的 Web 应用。
-ms.date: 05/07/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9a62dfc6cfe5cef21cc2198dd90867a7960312f9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
+ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957140"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39131981"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
 在 5-10 分钟介绍“用作 Python IDE 的 Visual Studio”的简介中，你将基于 Flask 框架创建一个简单的 Python Web 应用程序。 你将通过介绍 Visual Studio 基本功能的单独步骤创建项目。
 
-如果你尚未安装 Visual Studio，请转到 [ Visual Studio下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)免费安装它。 在安装程序中，请确保选择“Python 开发”工作负荷。
+如果你尚未安装 Visual Studio，请转到 [ Visual Studio下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)免费安装它。 在安装程序中，请确保选择“Python 开发”工作负荷。
 
 ## <a name="create-the-project"></a>创建项目
 
@@ -146,15 +146,12 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
 祝贺你通过 Visual Studio 运行了第一个 Python 应用，这表示你初步了解了如何将 Visual Studio 用作 Python IDE！
 
-此快速入门中的步骤比较笼统，你可能已猜到它们可以且应当自动执行。 此类自动化由 Visual Studio 项目模板执行。 选择以下演示按钮，通过更少的步骤创建一个与本文创建的 Web 应用相类似的 Web 应用。
-
 > [!div class="nextstepaction"]
-> [快速入门 - 使用模板创建 Python 项目](../python/quickstart-02-python-in-visual-studio-project-from-template.md)
+> [将应用部署到 Azure 应用服务](../python/publishing-python-web-applications-to-azure-from-visual-studio.md)
 
-若要继续在 Visual Studio 中了解更完整的 Python 教程（包括使用交互式窗口、调试、数据可视化效果以及使用 Git），请选择下面的按钮。
+此快速入门中的步骤比较笼统，你可能已猜到它们可以且应当自动执行。 此类自动化由 Visual Studio 项目模板执行。 浏览[快速入门 - 使用模板创建 Python 项目](../python/quickstart-02-python-in-visual-studio-project-from-template.md)获得演示，如何通过更少的步骤创建一个与本文创建的 Web 应用相类似的 Web 应用。
 
-> [!div class="nextstepaction"]
-> [教程：Visual Studio 中的 Python 入门](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+若要继续在 Visual Studio 中了解更完整的 Python 教程（包括使用交互式窗口、调试、数据可视化效果以及使用 Git），请浏览[教程：Visual Studio 中的 Python 入门](../python/tutorial-working-with-python-in-visual-studio-step-01-create-project.md)。
 
 若要了解更多 Visual Studio 产品，请选择以下链接。
 

@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 4ba57dde546ff6827c6d0d137e907174c0699dbb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33865092"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178255"
 ---
 # <a name="extending-visual-studio-for-mac"></a>扩展 Visual Studio for Mac
 
@@ -38,7 +38,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 扩展包存储与其名称、版本、依赖项和其他 C# 属性中的信息相关的元数据。 Add-in Maker 创建两个文件（`AddinInfo.cs` 和 `AssemblyInfo.cs`）来存储和组织该信息。 必须为扩展包的“加载项属性”指定唯一的 ID 和命名空间：
 
-```
+```csharp
 [assembly:Addin (
    "DateInserter",
    Namespace = "DateInserter",
@@ -70,7 +70,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 可通过将条目添加到 `/MonoDevelop/Ide/Commands` 扩展点来定义命令扩展。 我们使用以下代码在 `Manifest.addin.xml` 中定义了扩展：
 
- ```
+ ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
   <command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
@@ -90,7 +90,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 下面的代码片段展示了插入 `/MonoDevelop/Ide/MainMenu/Edit` 扩展点的 CommandItem 扩展：
 
-```
+```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
   <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
@@ -102,7 +102,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 `InsertDateHandler` 是 `CommandHandler` 类的扩展。 它定义了两个方法，`Update` 和 `Run`。 只要菜单中显示或通过键绑定执行命令，就会查询 `Update` 方法。 通过更改信息对象，可禁用命令或使其不可见、填充数组命令或执行其他操作。 如果 `Update` 方法找不到活动的“文档”和用来插入文本的“文本编辑器”，则会禁用该命令：
 
-```
+```csharp
 protected override void Update (CommandInfo info)
 {
     info.Enabled = IdeApp.Workbench.ActiveDocument?.Editor != null;
@@ -111,7 +111,7 @@ protected override void Update (CommandInfo info)
 
 如果拥有启用或隐藏该命令的特殊逻辑，只需替代 `Update` 方法。 用户执行命令时就会执行 `Run` 方法，这种情况会在用户从“编辑菜单”中选择命令时发生。 此方法在文本编辑器中的插入点插入日期和时间：
 
-```
+```csharp
 protected override void Run ()
 {
   var editor = IdeApp.Workbench.ActiveDocument.Editor;
@@ -122,7 +122,7 @@ protected override void Run ()
 
 在 `DateInserterCommands` 中将命令类型声明为枚举成员：
 
-```
+```csharp
 public enum DateInserterCommands
 {
   InsertDate,

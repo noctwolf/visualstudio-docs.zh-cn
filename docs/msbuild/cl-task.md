@@ -23,18 +23,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396253865e01ddfe5566e6cd97424af644bd9246
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4e7c2ce059e53c44d29463f0bb9aba3c2a24e1e4
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578050"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152612"
 ---
 # <a name="cl-task"></a>CL 任务
 包装 Visual C++ 编译器工具 cl.exe。 编译器生成可执行 (.exe) 文件、动态链接库 (.dll) 文件或者代码模块 (.netmodule) 文件。 有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  
   
 ## <a name="parameters"></a>参数  
- 下表描述了 **CL** 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
+ 下表描述了 CL 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
 -   **AdditionalIncludeDirectories**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "31578050"
   
      可选 String 参数。  
   
-     命令行选项列表。 例如，“/*option1* /*option2* /*option#*”。 使用此参数可指定未由任何其他任务参数表示的命令行选项。  
+     命令行选项列表。 例如，“/\<option1> /\<option2> /\<option#>”。 使用此参数可指定未由任何其他任务参数表示的命令行选项。  
   
      有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "31578050"
   
      创建包含程序集代码的列表文件。  
   
-     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 **/Fa** 选项。  
+     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 /Fa 选项。  
   
 -   **AssemblerOutput**  
   
@@ -88,7 +88,7 @@ ms.locfileid: "31578050"
   
     -   **All** - **/FAcs**  
   
-     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 **/FA**、**/FAc**、**/FAs** 和 **/FAcs** 选项。  
+     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 /FA、/FAc、/FAs 和 /FAcs 选项。  
   
 -   **BasicRuntimeChecks**  
   
@@ -114,7 +114,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则创建浏览信息文件。  
   
-     有关详细信息，请参阅 [/FR、/Fr（创建 .Sbr 文件）](/cpp/build/reference/fr-fr-create-dot-sbr-file)中的 **/FR** 选项。  
+     有关详细信息，请参阅 [/FR、/Fr（创建 .Sbr 文件）](/cpp/build/reference/fr-fr-create-dot-sbr-file)中的 /FR 选项。  
   
 -   **BrowseInformationFile**  
   
@@ -122,7 +122,7 @@ ms.locfileid: "31578050"
   
      指定浏览信息文件的文件名称。  
   
-     有关详细信息，请参阅此表中的 **BrowseInformation** 参数，同时还请参阅 [/FR、/Fr （创建 .Sbr 文件）](/cpp/build/reference/fr-fr-create-dot-sbr-file)。  
+     有关详细信息，请参阅此表中的 BrowseInformation 参数，同时还请参阅 [/FR、/Fr （创建 .sbr 文件）](/cpp/build/reference/fr-fr-create-dot-sbr-file)。  
   
 -   **BufferSecurityCheck**  
   
@@ -220,7 +220,7 @@ ms.locfileid: "31578050"
   
      如果为 **true**，则告知编译器发出不与 ANSI C 或 ANSI C++ 兼容的语言构造错误。  
   
-     有关详细信息，请参阅 [/Za、/Ze（禁用语言扩展）](/cpp/build/reference/za-ze-disable-language-extensions)的 **/Za** 选项。  
+     有关详细信息，请参阅 [/Za、/Ze（禁用语言扩展）](/cpp/build/reference/za-ze-disable-language-extensions)的 /Za 选项。  
   
 -   **DisableSpecificWarnings**  
   
@@ -326,7 +326,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则启用可靠的浮点异常模型。 异常将在触发后立即引发。  
   
-     有关详细信息，请参阅 [/fp（指定浮点行为）](/cpp/build/reference/fp-specify-floating-point-behavior)中的 /**fp:except** 选项。  
+     有关详细信息，请参阅 [/fp（指定浮点行为）](/cpp/build/reference/fp-specify-floating-point-behavior)中的 /fp:except 选项。  
   
 -   **FloatingPointModel**  
   
@@ -424,7 +424,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则启用最小重新生成，它确定是否必须重新编译包含已更改的 C++ 类定义的 C++ 源文件，该定义存储在标头 (.h) 文件中。  
   
-     有关详细信息，请参阅 [/Gm（启用最小重新生成）](/cpp/build/reference/gm-enable-minimal-rebuild) 。  
+     有关详细信息，请参阅 [/Gm（启用最小重新生成）](/cpp/build/reference/gm-enable-minimal-rebuild)。  
   
 -   **MultiProcessorCompilation**  
   
@@ -520,7 +520,7 @@ ms.locfileid: "31578050"
   
      指定预编译标头的路径名称，而不是使用默认路径名称。  
   
-     有关详细信息，请参阅 [/Fp（命名 .Pch 文件）](/cpp/build/reference/fp-name-dot-pch-file)。  
+     有关详细信息，请参阅 [/Fp（命名 .pch 文件）](/cpp/build/reference/fp-name-dot-pch-file)。  
   
 -   **PreprocessKeepComments**  
   
@@ -622,7 +622,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则在某个值分配给较小的数据类型且导致数据丢失时，报告运行时错误。  
   
-     有关详细信息，请参阅 [/RTC（运行时错误检查）](/cpp/build/reference/rtc-run-time-error-checks)中的 **/RTCc** 选项。  
+     有关详细信息，请参阅 [/RTC（运行时错误检查）](/cpp/build/reference/rtc-run-time-error-checks)中的 /RTCc 选项。  
   
 -   **Sources**  
   
@@ -682,7 +682,7 @@ ms.locfileid: "31578050"
   
      将编译器警告的指定列表视为错误。  
   
-     有关详细信息，请参阅 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告等级）](/cpp/build/reference/compiler-option-warning-level)中的 **/we**`n` 选项。  
+     有关详细信息，请参阅 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告等级）](/cpp/build/reference/compiler-option-warning-level)中的 /we`n` 选项。  
   
 -   **TreatWarningAsError**  
   
@@ -690,7 +690,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则将所有编译器警告视为错误。  
   
-     有关详细信息，请参阅 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告等级）](/cpp/build/reference/compiler-option-warning-level)中的 **/WX** 选项。  
+     有关详细信息，请参阅 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告等级）](/cpp/build/reference/compiler-option-warning-level)中的 /WX 选项。  
   
 -   **TreatWChar_tAsBuiltInType**  
   
@@ -706,7 +706,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则取消定义编译器定义的特定于 Microsoft 的符号。  
   
-     有关详细信息，请参阅 [/U、/u（未定义符号）](/cpp/build/reference/u-u-undefine-symbols)中的 **/u** 选项。  
+     有关详细信息，请参阅 [/U、/u（未定义符号）](/cpp/build/reference/u-u-undefine-symbols)中的 /u 选项。  
   
 -   **UndefinePreprocessorDefinitions**  
   
@@ -714,7 +714,7 @@ ms.locfileid: "31578050"
   
      指定一个或多个要取消定义的预处理器符号的列表。  
   
-     有关详细信息，请参阅 [/U、/u（未定义符号）](/cpp/build/reference/u-u-undefine-symbols)中的 **/U** 选项。  
+     有关详细信息，请参阅 [/U、/u（未定义符号）](/cpp/build/reference/u-u-undefine-symbols)中的 /U 选项。  
   
 -   **UseFullPaths**  
   
@@ -730,7 +730,7 @@ ms.locfileid: "31578050"
   
      如果为 `true`，则指示使用 UTF-8 格式创建输出文件。  
   
-     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 **/FAu** 选项。  
+     有关详细信息，请参阅 [/FA、/Fa（列表文件）](/cpp/build/reference/fa-fa-listing-file)中的 /FAu 选项。  
   
 -   **WarningLevel**  
   
@@ -752,7 +752,7 @@ ms.locfileid: "31578050"
   
     -   **EnableAllWarnings** - **/Wall**  
   
-     详情请参阅 [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Warning Level)](/cpp/build/reference/compiler-option-warning-level)中的 **/W***n* 选项。  
+     详情请参阅 [/w、/W0、/W1、/W2、/W3、/W4、/w1、/w2、/w3、/w4、/Wall、/wd、/we、/wo、/Wv、/WX（警告等级）](/cpp/build/reference/compiler-option-warning-level)中的 */W***n 选项。  
   
 -   **WholeProgramOptimization**  
   
@@ -799,8 +799,6 @@ ms.locfileid: "31578050"
      如果为 `true`，则跟踪文件访问模式。  
   
      有关详细信息，请参阅此表中的 **TLogReadFiles** 和 **TLogWriteFiles** 参数。  
-  
-## <a name="remarks"></a>备注  
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)

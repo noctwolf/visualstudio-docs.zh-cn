@@ -10,13 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b098fac29652fdb843301f780e1c7cdc6b32aabc
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 30a19e786894a9722e6843a5c1c69cdf1f038e58
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36297812"
 ---
-# <a name="configure-scenario-start-delays-in-load-tests"></a>配置负载测试的方案启动延迟
+# <a name="configure-scenario-start-delays-in-load-tests"></a>配置负载测试中的方案启动延迟
 
 使用负载测试编辑器和“属性”窗口先指定一个延迟，然后再在负载测试中启动某个方案。
 
@@ -24,7 +25,7 @@ ms.lasthandoff: 05/22/2018
 
 再如，可能有一个方案只在当天的某个特定时间运行。 因此，您希望延迟该方案的开始时间以对此进行模拟。
 
-## <a name="specifying-the-delay-start-time-of-a-scenario"></a>指定方案的延迟开始时间
+## <a name="specify-the-delay-start-time-of-a-scenario"></a>指定方案的延迟开始时间
 
 通过使用负载测试编辑器在“属性”窗口中更改“延迟开始时间”属性，可以指定负载测试中某一方案开始前的延迟时间。
 
@@ -57,11 +58,11 @@ ms.lasthandoff: 05/22/2018
 
 5. 更改属性后，在“文件”菜单上选择“保存”。 然后，可使用新的“延迟开始时间”值运行负载测试。
 
-## <a name="enabling-and-disabling-whether-a-scenario-runs-during-the-warm-up-period"></a>启用和禁用是否在预热期内运行方案
+## <a name="enable-and-disable-whether-a-scenario-runs-during-the-warm-up-period"></a>启用和禁用是否在预热期内运行方案
 
 “预热过程中禁用”属性使用“属性”窗口设置。 编辑负载测试方案属性通过负载测试编辑器进行设置。
 
- “预热过程中禁用”属性用于指示在“延迟开始时间”属性指定的预热期内是否应运行方案。 有关详细信息，请参阅上一个过程[指定方案的延迟开始时间](../test/configure-scenario-start-delays.md#ConfiguringScenarioStartDelayHowTo)。
+ “预热过程中禁用”属性用于指示在“延迟开始时间”属性指定的预热期内是否应运行方案。 有关详细信息，请参阅上一个过程[指定方案的延迟开始时间](#specify-the-delay-start-time-of-a-scenario)。
 
 > [!NOTE]
 > 有关运行设置属性及其说明的完整列表，请参阅[负载测试运行设置属性](../test/load-test-scenario-properties.md)。

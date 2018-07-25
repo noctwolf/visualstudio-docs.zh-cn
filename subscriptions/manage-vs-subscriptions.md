@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a1e1baed18eb592386d45f436c5d4988b91ea1b3
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548718"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36326988"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 
@@ -102,8 +102,8 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 3.  在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项。  在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。  
 4.  完成更改后，单击“保存”。 
 5.  单击浏览器的“返回”按钮以返回到“权益”页。 
+    ![编辑个人资料信息](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
-![编辑个人资料信息](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>将我的订阅链接到现有的 VSTS 或 Azure 订阅
 如果使用个人 Microsoft 帐户 (MSA) 登录到订阅，并且拥有使用由 Azure 管理的工作或学校帐户的订阅（该订阅包含 Visual Studio Team Services 或 Microsoft Azure），则可以链接这两个订阅。 这被称为“备用帐户”，借助此帐户，用户可以继续使用 MSA 登录到订阅，同时访问与学校或工作帐户相关联的现有 Azure、VSTS 或 IDE 资源。 
@@ -111,12 +111,11 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 即使这两个帐户均使用同一电子邮件地址，仍需添加工作或学校帐户作为备用，以便跨帐户使用权益。 
 
 添加备用帐户：
-1. 使用 Microsoft 帐户 (MSA) 登录到[订阅者门户](https://my.visualstudio.com)
+1. 使用 Microsoft 帐户 (MSA) 登录到[订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)
 2. 单击“订阅”选项卡。
 3. 在“相关链接”下，选择“添加备用帐户”。
 4. 输入工作或学校帐户的电子邮件地址，然后单击“添加”。 
-
-![备用帐户](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    ![备用帐户](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 添加备用帐户后，就可随时通过单击“订阅”标签并在“相关链接”部分选择相应的选项来更新或删除该帐户。  
 
@@ -124,7 +123,7 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>问：如果未续订我的订阅，我的数据将在 Microsoft 保留多长时间？
 答：Microsoft 保留客户数据时间的长短视不同购买渠道而定。
 
-| 渠道                                                | 持续时间（天） |
+| 通道                                                | 持续时间（天） |
 |--------------------------------------------------------|-----------------|
 |    零售（例如通过 Microsoft Store 购买）               |    360          |
 |    批量许可服务中心 (VLSC)              |    180          |

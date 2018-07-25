@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 58d0fc5c31b02574661f8b86a4ae8bcaf393be3a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693768"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37438351"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制 
 
@@ -23,8 +23,8 @@ Visual Studio Team Services (VSTS) 和 Team Foundation Server (TFS) 提供两个
 
 ## <a name="requirements"></a>要求
 
-* Visual Studio for Mac 版本 7.5 或更高版本。
-* Visual Studio Team Services 或 Team Foundation Server 2013 及更高版本
+* Visual Studio Community、Professional 或 Enterprise for Mac 版本 7.5 或更高版本。
+* Visual Studio Team Services 或 Team Foundation Server 2013 及更高版本。
 * Visual Studio Team Services 或 Team Foundation Server 中的项目，配置为使用 Team Foundation 版本控制。
 
 ## <a name="installation"></a>安装
@@ -35,79 +35,142 @@ Visual Studio Team Services (VSTS) 和 Team Foundation Server (TFS) 提供两个
 
 按照提示安装扩展。 安装后，重启 IDE。
 
+## <a name="updating-the-extension"></a>更新扩展
+
+TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual Studio”>“扩展...”，然后选择“更新”选项卡。从列表中选择扩展，然后选择“更新”按钮：
+
+  ![显示更新的扩展管理器](media/tfvc-update.png) 
+
+选择下一对话框中的“安装”来卸载旧包并安装新包。
+
+若要了解每个版本中的新增功能，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes)。
+
 ## <a name="using-the-add-in"></a>使用加载项
 
-安装扩展后，选择“版本控制”>“TFS/VSTS”>“连接到 Team Foundation 版本控制...”菜单项。 单击“添加”以添加新帐户： 
+安装扩展后，选择“版本控制”>“TFS/VSTS”>“从远程存储库打开”菜单项。 
 
-![添加 TFVC 服务器](media/tfvc-add-remove-server.png)
+选择 Visual Studio Team Services 或 Team Foundation Server 以开始使用，然后选择“继续”：
 
-选择 Visual Studio Team Services 或 Team Foundation Server 以开始使用：
+  ![与服务器连接](media/tfvc-choose-server-type.png)
 
-![与 TFVC 服务器连接](media/tfvc-choose-server-type.png)
+### <a name="vsts-authentication"></a>VSTS 身份验证
 
-输入凭据，然后单击“登录”： 
+选择在 VSTS 上托管的项目时，系统会提示输入 Microsoft 帐户详细信息：
 
-![登录到 TFVC 服务器](media/tfvc-login.png)
+  ![与 VSTS 服务器连接](media/tfvc-vsts-login.png)
 
-成功登录后，选择要访问的项目并按“确定”： 
+### <a name="tfs-authentication"></a>TFS 身份验证
 
-![选择项目](media/tfvc-choose-projects.png)
+若要连接到 TFS，请输入服务器详细信息和帐户凭据。 若要使用 NTLM 身份验证，请输入域；若要使用基本身份验证，则留空。 选择“添加服务器”： 
 
-选择“版本控制”>“TFS/VSTS”>“源代码管理器”菜单项，打开允许浏览源的源代码管理器。
+![登录 TFS 服务器](media/tfvc-login.png)
 
-> [!IMPORTANT]
-> **已知问题**：在此预览版本中，首次打开源代码管理器时，必须[创建新工作区](#creating-a-new-workspace)。
+## <a name="selecting-a-project"></a>选择项目
 
-![源资源管理器](media/tfvc-source-explorer.png)
+成功通过身份验证后，可在“在源代码管理中打开”对话框中看到与帐户关联的存储库的列表：
 
-从源代码管理器中，可以浏览服务器上的源代码，并执行以下操作：
+  ![显示项目的“在源代码管理中打开”对话框](media/tfvc-vsts-projects.png)
 
-- 管理工作区（创建、编辑或删除）。
-- 在项目结构间导航。
-- 映射项目。
-- 获取项目。
-- 锁定和解锁文件。
-- 重命名文件。
-- 删除文件。
-- 添加新文件。
-- 签出。
-- 签入。
-- 查看历史记录更改。
-- 比较更改。
+此对话框分为以下节点：
+
+- VSTS 帐户或集合 - 此节点显示与登录所用的 Microsoft 帐户相连接的所有帐户
+- 团队项目 - 每个 VSTS 中可拥有大量团队项目。 团队项目中托管有源代码、工作项和自动生成。
+
+现在可按项目或帐户的名称进行搜索和筛选。
+
+### <a name="adding-a-new-server"></a>添加新服务器
+
+若要将新服务器添加到列表，请在“在源代码管理中打开”对话框中选择“添加主机”按钮：
+
+![突出显示的添加按钮，用于将新服务器添加到列表](media/tfvc-add-new-server.png)
+
+从列表中选择提供程序并输入凭据：
+
+![显示源代码管理提供程序的选项的对话框](media/tfvc-add-new-creds.png)
 
 ## <a name="creating-a-new-workspace"></a>创建一个新工作区
 
-在源代码管理器中，单击“管理工作区”按钮。 
+若要开始使用项目，则需具备“工作区”。 如果还没有工作区，可通过“在源代码管理中打开”对话框中的“工作区”组合框进行创建：
 
-![管理工作区](media/tfvc-manage-workspaces.png)
+![创建新工作区组合框选项](media/tfvc-create-new-workspace.png)
 
-单击“添加”按钮以创建新的工作区。
+设置新工作区的名称和本地路径，并选择“创建工作区”:
 
-![创建工作区](media/tfvc-create-workspace.png)
+![输入新工作区的名称和本地路径](media/tfvc-local-workspace.png)
 
-为工作区提供一个名称，然后单击“添加工作文件夹”，将项目映射到计算机上的本地文件夹。
+## <a name="using-the-source-code-explorer"></a>使用源代码资源管理器
 
-完成后，单击“确定”，然后关闭“管理工作区”对话框。 现在可以通过源代码资源管理器获取文件并开始使用。
+创建工作区并映射项目后，则可开始使用“源代码资源管理器”。
+
+若要打开源代码资源管理器，请选择“版本控制”>“TFS/VSTS”>“源代码管理器”：
+
+![用于打开源代码资源管理器的菜单项](media/tfvc-source-control-explorer.png)
+
+利用源代码资源管理器可以浏览所有映射的项目及其文件和文件夹。 还可以执行所有基本源代码管理操作，例如：
+
+- 获取最新版本
+- 获取特定版本
+- 签入和签出文件
+- 锁定和解锁文件
+- 添加、删除和重命名文件
+- 查看历史记录
+- 比较更改。
+
+许多这些操作都可以通过项目的上下文操作实现：
+
+![项目的上下文菜单操作](media/tfvc-sourcecode-actions.png)
+
+## <a name="managing-workspaces"></a>管理工作区
+
+如果尚未创建工作区（如[创建工作区](#creating-a-new-workspace)部分所述），则会发现源代码资源管理器是空的：
+
+![空源代码资源管理器](media/tfvc-setup-empty-sce.png) 
+
+若要使用本地工作区设置远程项目，请执行以下步骤：
+
+1. 从组合框中选择“服务器”。
+1. 请注意，此时显示“无工作区”，并且本地路径为“未映射”。 选择“未映射”链接，以显示“创建新工作区”对话框。
+1. 为工作区提供一个名称，然后单击“添加工作文件夹”，将项目映射到计算机上的本地文件夹：
+    
+    ![显示默认选项的“创建新工作区”对话框](media/tfvc-workspace1.png) 
+
+1. 选择“$”文件夹，将服务器上的所有团队项目映射到同一工作区；或选择单个项目，然后单击“确定”：
+    
+    ![显示所有项目的“浏览文件夹”对话框](media/tfvc-workspace2.png) 
+
+1. 在本地计算机上选择希望将项目映射到的位置，然后单击“选择文件夹”。
+1. 选择“确定”，确认新工作区的详细信息后
+    
+    ![添加了工作文件夹的“创建新工作区”对话框](media/tfvc-workspace3.png) 
+
+设置工作区后，可通过单击源代码资源管理器中的“管理工作区”按钮来进行更改或将其删除。
+
+![管理工作区](media/tfvc-workspace4.png)
 
 ## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="problems-using-basic-authentication"></a>使用基本身份验证的问题
 
-下面提供一些可通过服务器执行身份验证的其他几个选项：
+可使用以下选项对服务器进行身份验证：
 
 - Oauth
 - Basic
 - Ntlm
 
-为了能够使用基本身份验证，需要在 VSTS 中启用“其他身份验证凭据”，具体步骤如下：
+若要使用基本身份验证，需要在 VSTS 中启用“其他身份验证凭据”，具体步骤如下：
 
 1. 以帐户所有者身份登录到 VSTS 帐户 (https://{youraccount}.visualstudio.com)。
-2. 在帐户工具栏中，选择齿轮图标，然后选择“策略”：![选中的策略设置](media/tfvc-auth2.png) 
-3. 查看应用程序连接设置。 根据安全策略（![选中的策略设置选项](media/tfvc-auth.png)）更改这些设置  
+2. 在帐户工具栏中，选择齿轮图标，然后选择“策略”：
+    
+    ![选中的策略设置选项](media/tfvc-auth2.png) 
+
+3. 查看应用程序连接设置。 根据安全策略更改这些设置：
+    
+    ![选中的策略设置选项](media/tfvc-auth.png)  
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>我在 TFVC 中没有看到任何内容
 
-要在开发计算机上设置 Team Foundation 版本控制 (TFVC)，必须按照[创建新工作区](#creating-a-new-workspace)部分所述创建工作区。
+若要在开发计算机上设置 Team Foundation 版本控制 (TFVC)，必须按照[管理工作区](#managing-workspaces)部分所述创建工作区。
 
 在源代码管理器中，按“管理工作区”按钮。 按照步骤将团队项目映射到开发计算机上的文件夹。
 

@@ -16,11 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c6bd02ae2a89f8ea8e66cb6d7b943344450375
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d8ce82bea823307e02b719fbfae43fe0697aca65
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844633"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定检测前和检测后命令
 
@@ -32,7 +33,7 @@ ms.lasthandoff: 04/19/2018
 
  **32 位计算机**
 
-在 32 位计算机上，默认的探查器工具目录为 Drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
+在 32 位计算机上，默认的探查器工具目录为 drive\Program Files\Microsoft Visual Studio 10.0\Team Tools\Performance Tools。
 
 **64 位计算机**
 
@@ -40,11 +41,11 @@ ms.lasthandoff: 04/19/2018
 
 - 对于 32 位应用程序，默认的探查器工具目录为：
 
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
+     drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools
 
 - 对于 64 位应用程序，默认的探查器工具目录为：
 
-     *Drive*\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
+     drive\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\x64
 
 ## <a name="to-specify-pre-instrument-commands"></a>指定检测前命令
 

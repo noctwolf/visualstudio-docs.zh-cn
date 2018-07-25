@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d27bc7fe308d7fc268291f58c64f902ff021dbd1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752087"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978244"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
@@ -266,7 +266,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 生成运行后，代码覆盖率结果将附加到测试运行并显示在生成摘要中。
 
-## <a name="analyze-code-coverage-in-a-command-line"></a>分析命令行上的代码覆盖率
+## <a name="analyze-code-coverage-from-the-command-line"></a>从命令行分析代码覆盖率
 
 若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是 vstest.console.exe 实用工具的一个选项。
 
@@ -277,6 +277,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 2.  运行下面的命令：
 
     `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
+
+有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](vstest-console-options.md)。
 
 ## <a name="troubleshoot"></a>疑难解答
 

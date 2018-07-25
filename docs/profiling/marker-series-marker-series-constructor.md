@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 22107cb7ecaf7c5f232b4377fc681a11720d1068
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: bbc397fa88c722f6a7f16ac92f4388525073c0fa
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34845618"
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 构造函数
 初始化 `marker_series` 类的新实例。  
@@ -46,7 +47,7 @@ marker_series(
  `_ProviderGuid`  
  系列提供程序的 GUID。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  **标头：** cvmarkersobj.h  
   
  **命名空间：** Concurrency::diagnostic  

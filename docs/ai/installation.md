@@ -12,24 +12,24 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e28558b1d09ded8de5bc6c4eb45230435cb807
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4785bc8362d7e50b5fb48bf88df29313ddfcc0c8
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31055918"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36303104"
 ---
 # <a name="installation"></a>安装
 
 可以在 Windows 64 位操作系统上安装 Visual Studio Tools for AI。
 
-## <a name="installing-visual-studio-tools-for-ai"></a>安装 Visual Studio Tools for AI
+## <a name="install-visual-studio-tools-for-ai"></a>安装 Visual Studio Tools for AI
 
-此扩展适用于 [Visual Studio](https://docs.microsoft.com/visualstudio/) 2015、2017 、社区版或更高版本。
+此扩展适用于 Visual Studio 2015、Visual Studio 2017、社区版或更高版本。
 
-若要安装，请从 [Visual Studio MarketPlace](http://aka.ms/vstoolsforai) 或从 Visual Studio 中进行下载
+若要安装，请从 [Visual Studio Marketplace](http://aka.ms/vstoolsforai) 或从 Visual Studio 中进行下载
 
-1. **工具**> **扩展和更新**
+1. **工具** > **扩展和更新**
 
 ![在 Windows 上安装 CUDA](media\installation\extensions.png)
 
@@ -37,13 +37,11 @@ ms.locfileid: "31055918"
 2. 选择“Visual Studio Tools for AI”
 3. 单击“下载”
 
-
-## <a name="preparing-your-local-machine"></a>准备本地计算机
+## <a name="prepare-your-local-machine"></a>准备本地计算机
 
 在本地计算机上训练深入学习模型之前，应确保安装了最新的适用先决条件。 这包括确保为 NVIDIA GPU（如果有）安装了最新驱动程序和库。 还应该确保已安装 Python 和 Python 库（如 NumPy、SciPy），以及计划在项目中使用的相应深入学习框架（如 Microsoft 认知工具包 (CNTK)、TensorFlow、Caffe2、MXNet、Keras、Theano、PyTorch 和/或 Chainer）。
 
 > [!NOTE]
->
 > 以下各小节中的软件简介摘自其主页。
 
 ### <a name="nvidia-gpu-driver"></a>NVIDIA GPU 驱动程序
@@ -68,23 +66,21 @@ ms.locfileid: "31055918"
 
 [cuDNN](https://developer.nvidia.com/cudnn)（CUDA 深层神经网络库）是 NVIDIA 提供的深层神经网络基元的 GPU 加速库。 最新深入学习框架需要 cuDNN v6。
 
-安装 cuDNN
-- 访问[此处](https://developer.nvidia.com/rdp/cudnn-download)以下载并安装最新程序包。
+安装 cuDNN：
+
+- 请访问 [NVIDIA 开发人员](https://developer.nvidia.com/rdp/cudnn-download)，下载并安装最新的包。
 - 确保将包含 cuDNN 二进制文件的目录添加到 %PATH% 或 $Path 环境变量。
 - 在 Windows 上，可以将 cudnn64_6.dll 复制到“C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin”。
 
 > [!NOTE]
->
-> 以前的深入学习框架（如 CNTK 2.0 和 TensorFlow 1.2.1）需要 cuDNN v5.1。
-> 但是，可以一起安装多个 cuDNN 版本。
-
+> 以前的深入学习框架（如 CNTK 2.0 和 TensorFlow 1.2.1）需要 cuDNN v5.1。 但是，可以一起安装多个 cuDNN 版本。
 
 ### <a name="python"></a>Python
 
-Python 已成为用于深入学习应用程序的主要编程语言。
-需要 **64 位** Python 分发版，推荐使用 [Python 3.5.4](https://www.python.org/downloads/release/python-354/) 以实现最佳兼容性。
+Python 已成为用于深入学习应用程序的主要编程语言。 需要 **64 位** Python 分发版，推荐使用 [Python 3.5.4](https://www.python.org/downloads/release/python-354/) 以实现最佳兼容性。
 
 ### <a name="to-install-python-on-windows"></a>在 Windows 上安装 Python
+
 - 建议只为你安装 Python 启动器，并将 Python 添加到 %PATH% 环境变量。
 - 确保安装 pip，这是用于安装和管理采用 Python 编写的软件程序包的程序包管理系统。
 
@@ -125,16 +121,15 @@ Python 已成为用于深入学习应用程序的主要编程语言。
 
 - **NumPy** 是一种通用数组处理程序包，旨在高效地操作任意记录的大型多维数组，而不会对小型多维数组降低太多速度。
 
-- **SciPy**（发音为“Sigh Pie”）是用于数学、科学和工程（具体取决于 NumPy）的开放源代码软件。
-从版本 1.0.0 开始，SciPy 现在具有适用于 Windows 的官方预生成滚轮软件包。
+- **SciPy**（发音为“Sigh Pie”）是用于数学、科学和工程（具体取决于 NumPy）的开放源代码软件。 从版本 1.0.0 开始，SciPy 现在具有适用于 Windows 的官方预生成滚轮软件包。
 
 若要安装 NumPy 和 SciPy，请在终端中运行以下命令：
+
 ```bash
 pip3.5 install -U numpy scipy
 ```
 
 > [!NOTE]
->
 > 上面的命令会将现有旧的或非官方（例如适用于 Windows 的来自 http://www.lfd.uci.edu/~gohlke/pythonlibs/ 的第三方程序包）NumPy 和 SciPy 升级到最新官方版本。
 
 ### <a name="microsoft-cognitive-toolkit-cntk"></a>Microsoft 认知工具包 (CNTK)
@@ -142,24 +137,20 @@ pip3.5 install -U numpy scipy
 [Microsoft 认知工具包](https://cntk.ai)是一种统一深入学习工具包，可通过定向关系图将神经网络描述为一系列计算步骤。 CNTK 支持 Python 和 BrainScript 编程语言。
 
 > [!NOTE]
->
 > CNTK 当前不支持 macOS。
 
 若要安装 CNTK Python 程序包，请参阅[如何安装 CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
 
 ### <a name="tensorflow"></a>TensorFlow
 
-[TensorFlow](https://www.tensorflow.org/) 是使用数据流关系图的数值计算的开放源代码软件库。
-有关详细安装，请参阅[此处](https://www.tensorflow.org/install/)。
+[TensorFlow](https://www.tensorflow.org/) 是使用数据流关系图的数值计算的开放源代码软件库。 有关详细安装，请参阅[此处](https://www.tensorflow.org/install/)。
 
 > [!NOTE]
->
 > 从版本 1.2 开始，TensorFlow 不再为 macOS 提供 GPU 支持。
 
 ### <a name="caffe2"></a>Caffe2
 
-[Caffe2](https://caffe2.ai/) 是轻型模块化的可缩放深入学习框架。
-Caffe2 在原始 Caffe 的基础上构建，在设计时考虑了表达式、速度和模块性。
+[Caffe2](https://caffe2.ai/) 是轻型模块化的可缩放深入学习框架。 Caffe2 在原始 Caffe 的基础上构建，在设计时考虑了表达式、速度和模块性。
 
 当前没有预生成的 Caffe2 python 滚轮程序包可用。
 
@@ -167,10 +158,10 @@ Caffe2 在原始 Caffe 的基础上构建，在设计时考虑了表达式、速
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet（孵化中）](https://mxnet.incubator.apache.org/)是旨在提高效率和灵活性的深入学习框架。
-它使你可以**混合**[符号和命令式编程](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)以最大程度提高效率和生产力。
+[Apache MXNet（孵化中）](https://mxnet.incubator.apache.org/)是旨在提高效率和灵活性的深入学习框架。 它使你可以**混合**[符号和命令式编程](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts)以最大程度提高效率和生产力。
 
 若要安装 MXNet，请在终端中运行以下命令：
+
 - 具有 GPU
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
@@ -185,6 +176,7 @@ Caffe2 在原始 Caffe 的基础上构建，在设计时考虑了表达式、速
 [Keras](https://keras.io/) 是一种高级神经网络 API，采用 Python 编写，能够在 CNTK、TensorFlow 或 Theano 上运行。 它在开发时侧重于实现快速实验。 能够在延迟尽可能少的情况下从想法到获得结果是做好研究的关键。
 
 若要安装 Keras，请在终端中运行以下命令：
+
 ```bash
 pip3.5 install Keras==2.0.9
 ```
@@ -194,6 +186,7 @@ pip3.5 install Keras==2.0.9
 [Theano](http://deeplearning.net/software/theano/) 是一种 Python 库，可用于高效地定义、优化和计算涉及多维数组的数学表达式。
 
 若要安装 Theano，请在终端中运行以下命令：
+
 ```bash
 pip3.5 install Theano==0.9.0
 ```
@@ -201,13 +194,14 @@ pip3.5 install Theano==0.9.0
 ### <a name="pytorch"></a>PyTorch
 
 [PyTorch](http://pytorch.org/) 是一种 python 程序包，提供两个高级功能：
+
 - 具有强 GPU 加速的 Tensor 计算（如 numpy）
 - 在基于磁带的自动梯度系统上构建的深层神经网络
 
 若要安装 PyTorch，请在终端中运行以下命令：
 
 - **Windows**
-    - 尚没有官方滚轮程序包。 可以下载第三方 [Anaconda PyTorch 程序包](https://anaconda.org/peterjc123/pytorch/0.2.1/download/win-64/pytorch-0.2.1-py35h24644ff_0.2.1cu80.tar.bz2)。
+    - 尚没有官方滚轮程序包。 可以下载第三方 [Anaconda PyTorch 程序包](https://anaconda.org/pytorch/repo?type=all)。
     - 将它解压缩到主目录，例如“C:\Users\test\pytorch”。
     - 将“C:\Users\test\pytorch\Lib\site-packages”添加到 %PYTHONPATH% 环境变量。
 
@@ -216,7 +210,6 @@ pip3.5 install Theano==0.9.0
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
     > [!NOTE]
-    >
     > macOS 二进制文件不支持 CUDA，如果需要 CUDA，请从源提供程序进行安装
 
 - **Linux**
@@ -224,31 +217,29 @@ pip3.5 install Theano==0.9.0
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
     > [!NOTE]
-    >
     > 此单个程序包支持 GPU 和 CPU。
 
 最后，在非 Windows 上安装 torchvision：
+
 ```bash
 pip3.5 install torchvision
 ```
 
 ### <a name="chainer"></a>Chainer
 
-[Chainer](https://chainer.org/) 是旨在提高灵活性的基于 Python 的深入学习框架。
-它提供基于**按运行定义方法**（也称为 动态计算关系图）的自动区分 API 以及面向对象的高级 API 来构建并训练神经网络。
+[Chainer](https://chainer.org/) 是旨在提高灵活性的基于 Python 的深入学习框架。 它提供基于**按运行定义方法**（也称为 动态计算关系图）的自动区分 API 以及面向对象的高级 API 来构建并训练神经网络。
 
 若要启用 CUDA 支持，请安装 [CuPy](https://github.com/cupy/cupy)：
+
 ```bash
 pip3.5 install cupy
 ```
 
 > [!NOTE]
->
-> 在 Windows 上，需要 **2015** 版本的 [Microsoft Visual Studio](https://www.visualstudio.com/) 或 [ 生成工具](http://landinghub.visualstudio.com/visual-cpp-build-tools)来使用 CUDA 8.0 编译 CuPy。
+> 在 Windows 上，需要 2015 版本的 [Visual Studio](https://visualstudio.microsoft.com/) 或 [Microsoft Visual C++ 生成工具](https://visualstudio.microsoft.com/visual-cpp-build-tools/)来使用 CUDA 8.0 编译 CuPy。
 
 若要安装 Chainer，请在终端中运行以下命令：
+
 ```bash
 pip3.5 install chainer==3.0.0
 ```
-
-

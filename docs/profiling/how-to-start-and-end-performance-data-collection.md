@@ -17,13 +17,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad9c3e469cc17f64d9d2e551a528d7b87f71732b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 968926e89f724f8e8ac647a0bfa09c7c97098adc
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843892"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>如何：开始和结束性能数据收集
+# <a name="how-to-start-and-end-performance-data-collection"></a>如何：启动和停止性能数据收集
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。 将添加一个新的二进制文件。  
   
 ### <a name="to-start-profiling"></a>启动分析  

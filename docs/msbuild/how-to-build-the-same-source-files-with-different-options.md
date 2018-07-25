@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fc33c17c245ae06b7db35a1c1e938f7e14b95b
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575603"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081652"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 在生成项目时，你经常使用不同的生成选项编译相同的组件。 例如，你可以使用符号信息创建调试版本，或者使用无符号信息但启用优化来创建发布版本。 或者，可以生成项目，在某个特定平台（例如，x86 或[!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]）上运行。 在所有这些情况下，大部分生成选项保持不变；只更改几个选项以控制生成配置。 利用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，你可以使用属性和条件来创建不同的生成配置。  
   
-## <a name="using-properties-to-modify-projects"></a>使用属性来修改项目  
+## <a name="use-properties-to-modify-projects"></a>使用属性来修改项目  
  `Property` 元素定义在项目文件中多次引用的变量，如临时目录的位置，或者设置在多项配置中使用的属性的值，如调试版本和发布版本。 有关属性的详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
  属性可用于你的生成的配置更改，而无需更改项目文件。 `Property` 元素和 `PropertyGroup` 元素的 `Condition` 属性允许你更改属性的值。 有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。  
@@ -49,20 +49,20 @@ ms.locfileid: "31575603"
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
     ```  
   
-## <a name="specifying-properties-on-the-command-line"></a>在命令行上指定属性  
+## <a name="specify-properties-on-the-command-line"></a>在命令行上指定属性  
  你的项目文件编写为接受多个配置后，你需要能够在生成项目时更改这些配置。 通过允许在命令行上使用 **/property** 或 **/p** 开关来指定属性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以提供此功能。  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
 -   使用 **/property** 开关以及属性和属性值。 例如:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - 或 -  
+    或  
   
-    ```  
+    ```cmd  
     Msbuild file.proj /p:Flavor=Debug  
     ```  
   
@@ -70,13 +70,13 @@ ms.locfileid: "31575603"
   
 -   多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如:  
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug;Platform=x86  
     ```  
   
-     - 或 -  
+    或
   
-    ```  
+    ```cmd  
     msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
     ```  
   
@@ -91,13 +91,13 @@ ms.locfileid: "31575603"
   
  若要此项目的调试版本，请键入：  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=debug  
 ```  
   
  若要此项目的零售版本，请键入：  
   
-```  
+```cmd  
 msbuild consolehwcs1.proj /p:flavor=retail  
 ```  
   
@@ -158,7 +158,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
   
  若要生成项目，请输入以下命令：  
   
-```  
+```cmd  
 msbuild colortest.proj /t:go /property:Color=Green  
 ```  
   

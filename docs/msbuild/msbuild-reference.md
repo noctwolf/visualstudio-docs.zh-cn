@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 494ee58730ff8ebb427f0a42c8bdb3c3e079ed43
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570471"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081779"
 ---
 # <a name="msbuild-reference"></a>MSBuild 参考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的生成系统。 可通过以下链接查看包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 参考信息的主题。  
@@ -70,26 +70,26 @@ ms.locfileid: "31570471"
  [要转义的特殊字符](../msbuild/special-characters-to-escape.md)  
  列出可能需要被“转义”才能正确解释的字符。 转义序列是一系列字符，表示其后的内容是替代解释。  
   
-## <a name="related-sections"></a>相关章节  
+## <a name="see-also"></a>请参阅  
  [MSBuild 概述](../msbuild/msbuild.md)介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 并提供指向介绍如何使用它来生成项目的链接。  
   
  <xref:Microsoft.Build.Conversion>  
- 包含 Conversion 命名空间引用  
+ 包含 Conversion 命名空间引用。  
   
  <xref:Microsoft.Build.Evaluation>  
- 包含 Evaluation 命名空间引用  
+ 包含 Evaluation 命名空间引用。  
   
  <xref:Microsoft.Build.Execution>  
- 包含 Execution 命名空间引用  
+ 包含 Execution 命名空间引用。  
   
  <xref:Microsoft.Build.Framework>  
- 包含 Framework 命名空间引用  
+ 包含 Framework 命名空间引用。  
   
  <xref:Microsoft.Build.Logging>  
- 包含 Logging 命名空间引用  
+ 包含 Logging 命名空间引用。  
   
  <xref:Microsoft.Build.Tasks>  
- 包含 Task 命名空间引用  
+ 包含 Task 命名空间引用。  
   
  <xref:Microsoft.Build.Utilities>  
- 包含 Utilities 命名空间引用
+ 包含 Utilities 命名空间引用。

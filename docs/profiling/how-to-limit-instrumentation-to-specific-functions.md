@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 883059693115496ddbc58f5fccc5e36ede5be720
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d725becd8a047af9eec3e76e517f39e037fb2466
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844773"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数：  
@@ -68,5 +69,5 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
- [如何：将检测限定为特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
+ [](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)如何：将检测限定为特定 DLL   
  [如何：指定其他检测选项](../profiling/how-to-specify-additional-instrumentation-options.md)

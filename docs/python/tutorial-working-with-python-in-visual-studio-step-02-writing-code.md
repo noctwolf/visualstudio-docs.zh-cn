@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教程 - 第 2 步：编写和运行代码
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 2 步，包括编辑代码和运行项目。
-ms.date: 01/16/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0769005bbf3715ae46a70e5461a6e34e50830c94
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 563b1151994f04bcecf7bc64ac802b6cacbec73c
+ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031545"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37174836"
 ---
-# <a name="step-2-writing-and-running-code"></a>步骤 2：编写和运行代码
+# <a name="step-2-write-and-run-code"></a>步骤 2：编写并运行代码
 
 **上一步：[创建新的 Python 项目](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
@@ -91,9 +91,9 @@ ms.locfileid: "32031545"
 > [!div class="nextstepaction"]
 > [使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
-## <a name="going-deeper"></a>深入了解
+## <a name="go-deeper"></a>深入了解
 
 - [编辑代码](editing-python-code-in-visual-studio.md)
-- [设置代码格式](formatting-python-code.md)
+- [格式代码](formatting-python-code.md)
 - [重构代码](refactoring-python-code.md)
 - [使用 PyLint](linting-python-code.md)

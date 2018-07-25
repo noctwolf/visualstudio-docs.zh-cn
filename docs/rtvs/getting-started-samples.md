@@ -10,21 +10,22 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 615a53e830821fef780dcbc7596b3a1ced882fb8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: adb26b3cf6097d830c899ef4ef251d2066b81a38
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235210"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>针对 Visual Studio 的 R 工具示例项目
 
-此示例集合可助你开始使用 R、针对 Visual Studio 的 R 工具 (RTVS) 以及 Microsoft R Server：
+此示例集合可助你开始使用 R、针对 Visual Studio 的 R 工具 (RTVS) 以及 Microsoft Machine Learning Server：
 
 1. 下载[示例 zip 文件](https://github.com/Microsoft/RTVS-docs/archive/master.zip)并将其解压到选择的文件夹。
 1. 打开 `examples/Examples.sln`，可看到项目中的两个文件夹：
 
     - “初探 R”为 R 新用户提供简要介绍。
-    - “MRS 和机器学习”举例说明如何将 R 和 Microsoft R Server 用于机器学习。
+    - “MRS 和机器学习”举例说明如何将 R 和 Microsoft Machine Learning Server 用于机器学习。
 
 ## <a name="a-first-look-at-r"></a>初探 R
 
@@ -38,33 +39,33 @@ ms.lasthandoff: 04/19/2018
 
     ![2-Introduction to ggplot2.R 示例的示例输出](media/samples-ggplot-output.png)
 
-## <a name="microsoft-r-server-and-machine-learning"></a>Microsoft R Server 和机器学习
+## <a name="microsoft-machine-learning-server-and-machine-learning"></a>Microsoft Machine Learning Server 和机器学习
 
-此示例集合演示如何使用 R 创建机器学习模型，以及如何利用 [Microsoft R Server (MRS)](http://aka.ms/rtvs-msft-r)。 安装 MRS 以使用 `MRS` 在标题和标注的位置运行脚本。
+此示例集合演示如何使用 R 创建机器学习模型，以及如何利用 [Microsoft Machine Learning Server](/machine-learning-server/what-is-machine-learning-server)。
 
-与所有示例一样，打开文件，将光标置于顶部，然后按 Ctrl+Enter 逐行逐过程执行代码。 每个文件夹中的 Markdown 文件还包含其他详细信息。
+与所有示例一样，请打开文件、将光标置于顶部，然后按 Ctrl+Enter 逐行单步执行代码。 每个文件夹中的 Markdown 文件还包含其他详细信息。
 
 - `Benchmarks` 运行大量密集型的并行线性代数计算，显示使用 Microsoft R Open 和 Intel Math Kernel Library (MKL) 可能提升的性能。 通过模拟数据，基准专门将一个线程和其他两个线程上的矩阵计算进行比较。
 
     ![基准绘图示例](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` 使用 Microsoft R Server，根据历史数据集创建用于单车租赁的需求预测模型。 
+- `Bike_Rental_Estimation_with_MRS` 使用 Microsoft ML Server 基于历史数据集创建单车租赁需求预测模型。 
 
 - `Data_Exploration` 包含三个脚本：
 
   - `Import Data from URL.R` 演示如何将 URL 标识的数据文件加载到 R 中。
-  - `Import Data from URL to xdf.R` 演示如何将 URL 标识的数据文件以 xdf 文件的形式加载到 Microsoft R Server。 （需要 MRS。）
+  - `Import Data from URL to xdf.R` 演示如何将 URL 标识的数据文件以 xdf 的形式加载到 Microsoft ML Server。
   - `Using ggplot2.R` 是`A First Look at R/2-Introduction to ggplot2.R` 示例的扩展，它更深入地介绍了 ggplot2 的功能，包括交互式 3D 绘图。
 
       ![使用 ggplot2.R 示例的输出](media/samples-3d-interactive.png)
 
-- `Datasets` 包含其他示例使用的三个 `.csv` 文件
+- `Datasets` 包含其他示例使用的三个 .csv 文件
 - `Flight_Delays_Prediction_with_R` 和 `Flight_Delays_Prediction_with_MRS` 演示如何使用 R 机器学习、历史实时性能和天气数据预测航班延误。 
-- `Machine learning` 包含三个示例，用于学习如何预测航班延迟、住房价格和自行车租金。 总体来说，这些示例将演示 R 和 MRS 的应用程序在实际问题中的应用。 它们还演示如何使用多个热门机器学习模型，以及如何使用 [Azure 机器学习](https://azure.microsoft.com/services/machine-learning/)工作区将这些模型部署为 Azure Web 服务。
+- `Machine learning` 包含三个示例，用于学习如何预测航班延迟、住房价格和自行车租金。 总体而言，这些示例演示了 R 和 Microsoft ML Server 在实际问题中的应用。 它们还演示如何使用多个热门机器学习模型，以及如何使用 [Azure 机器学习](https://azure.microsoft.com/services/machine-learning/)工作区将这些模型部署为 Azure Web 服务。
 
-- `R_MRO_MRS_Comparison` 是一个含有 6 部分的比较，展示 R、Microsoft R Open 和 Microsoft R Server 在命令、语法、构造和性能方面的异同。
+- `R_MRO_MRS_Comparison` 是一个由六部分构成的比较，展示了 R、Microsoft R Open 和 Microsoft ML Server 在命令、语法、构造和性能方面的异同。
 
-## <a name="whats-special-about-microsoft-r-open-and-microsoft-r-server"></a>Microsoft R Open 和 Microsoft R Server 有什么特别之处？
+## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>Microsoft R Open 和 Microsoft ML Server 有什么特别之处？
 
 [Microsoft R Open](http://aka.ms/rtvs-r-open) 是 Microsoft R 的分发，与 [CRAN R](https://cran.r-project.org/) 相比有两个重大差异：
 
@@ -72,18 +73,18 @@ ms.lasthandoff: 04/19/2018
 
 1. [可重现 R 工具包](https://mran.revolutionanalytics.com/rro/#reproducibility)，可确保用于生成 R 程序的库始终都可供想要重现操作的其他人员使用。
 
-[Microsoft R Server](http://aka.ms/rtvs-msft-r) 是 R 的扩展，可用于更快地处理更多数据。 它为 R 赋予了两项强大的功能：
+[Microsoft ML Server (MLS)](/machine-learning-server/what-is-machine-learning-server) 是 R 的扩展，可用于更快处理更多数据。 它为 R 赋予了两项强大的功能：
 
-1. 数据集更大，且无 RAM 限制。 MRS 可以处理各种来源（包括 Hadoop 群集、数据库和数据仓库）中的内存不足数据。
+1. 数据集更大，且无 RAM 限制。 ML Server 可处理各种来源（包括 Hadoop 群集、数据库和数据仓库）中的内存不足数据。
 
-1. 并行多核处理。 MRS 可在可用的所有计算资源中高效分发计算。 在个人工作站或远程群集上，MRS 可更快获得答案。
+1. 并行多核处理。 MLS 能够在可用的所有计算资源中高效分发计算。 在个人工作站或远程群集上，MLS 可更快获得答案。
 
-以下比较显示，进行某些矩阵计算时，使用 MKL 的 MRS 和 MRO 可实现的性能明显优于不使用 MKL 的 R 和 MRO。 此计算中使用模拟数据：
+以下比较显示，进行某些矩阵计算时，使用 MKL 的 MLS 和 MRO 可实现的性能明显优于不使用 MKL 的 R 和 MRO。 此计算中使用模拟数据：
 
-![比较使用 MKL 的 MRS 和 MRO 与不使用 MKL 的 R 和 MRO](media/samples-speed-comparison.png)
+![比较使用 MKL 的 MLS 和 MRO 与不使用 MKL 的 R 和 MRO](media/samples-speed-comparison.png)
 
-有关 R 与 MRO 和 MRS 的技术比较，请参阅关于该主题的 [Lixun Zhang 详细讨论](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
+有关 R 与 MRO 和 MLS 的技术比较，请参阅关于该主题的 [Lixun Zhang 详细讨论](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html)。
 
-下图比较生成逻辑回归模型所用的运行时间（秒），从而预测航班延误是否将超过 15 分钟。  行数的微小增加会导致 CRAN R 中的运行时间显著增加，而 MRS 的增加量仅约为行数的两倍。 有关此基准的详细信息，请参阅 `Benchmarks/rxGlm_benchmark.R` 示例。
+下图比较生成逻辑回归模型所用的运行时间（秒），从而预测航班延误是否将超过 15 分钟。  行数的微小增加会导致 CRAN R 中的运行时间显著增加，而 MLS 的增加量仅约为行数的两倍。 有关此基准的详细信息，请参阅 Benchmarks/rxGlm_benchmark.R 示例。
 
 ![rxGlm 基准](media/samples-rxGLM-benchmark.png)

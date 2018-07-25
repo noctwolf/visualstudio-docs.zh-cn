@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40eb0ce15ade3162fecbda16469c5efa382afb28
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745625"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924455"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 本文档说明如何使用图像编辑器创建基本纹理。
@@ -35,7 +35,7 @@ ms.locfileid: "34745625"
 ## <a name="creating-a-basic-texture"></a>创建基本纹理
  可使用图像编辑器创建和修改游戏或应用的图像和纹理。
 
- 以下步骤显示如何创建表示“靶心”目标的纹理。完成后，该纹理应如下图所示。 为了更好地演示纹理中的透明度，已将图像编辑器配置为使用绿色的方格棋盘图案来显示它。
+ 以下步骤说明如何创建表示“靶心”目标的纹理。 完成后，纹理应如下图所示。 为了更好地演示纹理中的透明度，已将图像编辑器配置为使用绿色的方格棋盘图案来显示它。
 
  ![显示为绿色的透明“靶心”目标](../designers/media/digit-bullseye-texture-in-editor.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "34745625"
 
 #### <a name="to-create-a-bullseye-target-texture"></a>创建“靶心”目标纹理
 
-1.  创建要使用的纹理。 有关如何向项目中添加纹理的信息，请参阅[图像编辑器](../designers/image-editor.md)中的“入门”部分。
+1.  创建要处理的纹理。 有关如何向项目中添加纹理的信息，请参阅[图像编辑器](../designers/image-editor.md)中的“入门”部分。
 
 2.  将图像大小设置为 512x512 像素。 在“属性”窗口中，将“宽度”和“高度”属性的值设置为 `512`。
 

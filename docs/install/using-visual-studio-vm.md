@@ -1,7 +1,7 @@
 ---
 title: 在 Azure 虚拟机上使用 Visual Studio
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
-ms.date: 03/03/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -15,16 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4ee86cf7a42182cde4d015dfa10c7102563c9a6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 457953d161d6fd31c686199e76bdedbe548f5b8f
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957666"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977708"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
-使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
+使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 
+  [Azure 市场](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
 
 初次使用 Azure？ [创建免费的 Azure 帐户](https://azure.microsoft.com/free)。
 
@@ -34,9 +35,9 @@ ms.locfileid: "33957666"
 
 | 发行版本                                              | 版本                     |     产品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新（版本 15.7）                    |    Enterprise，Community     |      版本 15.7.0     |
-| Visual Studio 2017：最新预览版（版本 15.8，预览版 1） |    Enterprise，Community     |      版本 15.8.1     |
-|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.13    |
+| Visual Studio 2017：最新（版本 15.7）                    |    Enterprise，Community     |      版本 15.7.5     |
+| Visual Studio 2017：最新预览版（版本 15.8，预览版 4） |    Enterprise，Community     |      版本 15.8.4     |
+|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.15    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise，Community     |  版本 14.0.25431.01  |
 |         Visual Studio 2015：RTW                              |             无             | （已过维护期限） |
 
@@ -59,14 +60,14 @@ ms.locfileid: "33957666"
 
 ```shell
     vs_enterprise.exe --allWorkloads --includeRecommended --passive ^
-       add Microsoft.Net.Component.4.7.SDK ^
-       add Microsoft.Net.Component.4.7.TargetingPack ^
-       add Microsoft.Net.Component.4.6.2.SDK ^
-       add Microsoft.Net.Component.4.6.2.TargetingPack ^
-       add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
-       add Microsoft.VisualStudio.Component.FSharp ^
-       add Component.GitHub.VisualStudio ^
-       add Microsoft.VisualStudio.Component.LinqToSql
+       --add Microsoft.Net.Component.4.7.SDK ^
+       --add Microsoft.Net.Component.4.7.TargetingPack ^
+       --add Microsoft.Net.Component.4.6.2.SDK ^
+       --add Microsoft.Net.Component.4.6.2.TargetingPack ^
+       --add Microsoft.Net.ComponentGroup.4.7.DeveloperTools ^
+       --add Microsoft.VisualStudio.Component.FSharp ^
+       --add Component.GitHub.VisualStudio ^
+       --add Microsoft.VisualStudio.Component.LinqToSql
 ```
 
 如果映像不包含所需的 Visual Studio 功能，请通过页面右上角的反馈工具提供反馈。
@@ -97,7 +98,7 @@ Visual Studio 在 Azure 中遵循“自带许可”模型。 与在专有硬件�
 
 ## <a name="how-do-i-save-the-development-vm-for-future-or-team-use"></a>如何保存开发 VM 以供日后或团队使用？
 
-开发环境的范围非常大，构建更为复杂的环境将产生高昂的成本。 无论环境配置如何，都可以将配置的 VM 保存或捕获为“基础映像”，以供将来使用或由团队其他成员使用。 然后，在启动新的 VM 时，从基础映像而不是从 Azure Marketplace 映像对其进行预配。
+开发环境的范围非常大，构建更为复杂的环境将产生高昂的成本。 无论环境配置如何，都可以将配置的 VM 保存或捕获为“基础映像”，以供将来使用或由团队其他成员使用。 然后，在启动新的 VM 时，从基础映像而不是从 Azure 市场映像对其进行预配。
 
 简而言之：使用系统准备工具 (Sysprep) 并关闭正在运行的 VM，然后通过 Azure 门户的 UI 来捕获（图 1） VM 作为映像。 Azure 将在你所选的存储帐户中保存包含映像的 `.vhd` 文件。 然后，新映像将在资源订阅列表中显示为映像资源。
 

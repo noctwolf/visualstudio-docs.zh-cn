@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40ec14a6d8909276d479f1e43b1bc20acd4452ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6527825d23e0c09d156f61f2645276e61d72e165
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843632"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 在分析会话页窗口中，您可以交互控制分析数据的收集。  
@@ -40,4 +41,4 @@ ms.lasthandoff: 04/19/2018
   
 ## <a name="see-also"></a>请参阅  
  [控制数据收集](../profiling/controlling-data-collection.md)   
- [如何：开始和结束性能数据收集](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [如何：启动和停止性能数据收集](../profiling/how-to-start-and-end-performance-data-collection.md)

@@ -9,12 +9,12 @@ description: 了解管理员如何删除订阅分配
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e759733738d35ea71cd8133179ccca1ee1037d22
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: e345b5e46317f039cdb01afa50e158e7122ded21
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476451"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325409"
 ---
 # <a name="deleting-assignments-in-visual-studio-subscriptions"></a>删除 Visual Studio 订阅中的分配
 
@@ -22,5 +22,4 @@ ms.locfileid: "34476451"
 1.  单击要删除的订阅者名称。 若要选择删除多个订阅者，请按住 **CTRL** 键，然后单击要删除的每个订阅者，或按 **CTRL + A** 选择并删除所有订阅者。 下图显示选定的三个订阅者。
 2.  若要删除所选订阅者，请单击“删除”。 
 3.  出现要求确认删除的消息时，单击“确定”。 
-
-    <img alt="Delete subscribers" src="_img\delete-license\delete-subscribers.png" style="border: 1px solid #CCCCCC" />
+    ![删除订阅者](_img\delete-license\delete-subscribers.png)

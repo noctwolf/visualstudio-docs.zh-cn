@@ -2,7 +2,7 @@
 title: 在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务 | Microsoft 文档
 description: 如果组织使用防火墙或代理服务器，请检查希望列入白名单或打开的域 URL、端口和协议
 ms.custom: ''
-ms.date: 02/12/2018
+ms.date: 07/10/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aeb7b1fc308247d5eebb810113aba1ed4afe89c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 911bedf391a37f64ba1f71179e2a3060be152842
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765663"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978432"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -49,7 +49,7 @@ ms.locfileid: "34765663"
 | download.visualstudio.com | 安装包下载位置 |
 | dl.xamarin.com | 安装包下载位置 |
 | visualstudiogallery.msdn.microsoft.com | Visual Studio 扩展下载位置 |
-| www.visualstudio.com | 文档位置 |
+| visualstudio.microsoft.com | 文档位置 |
 | docs.microsoft.com | 文档位置 |
 | msdn.microsoft.com | 文档位置 |
 | www.microsoft.com | 文档位置 |
@@ -118,7 +118,8 @@ ms.locfileid: "34765663"
 | 快照 <br>调试器 | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6.Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022（Visual Studio 从属版本） | 1.查询 .json 文件的应用服务 SKU 大小 <br>2.各种 Azure RM 调用 <br>3.站点预热调用渠道  <br>4.客户的目标应用服务 Kudu 终结点 <br>5.查询 nuget.org 中发布的站点扩展版本 <br>6.远程调试通道 |
 |Azure 流分析 <br><br>HDInsight | Management.azure.com |https|443 |用于查看、提交、运行和管理 ASA 作业 <br><br> 用于浏览 HDI 群集，以及提交、诊断和调试 HDI 作业 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用于编译、提交、查看、诊断和调试作业；用于浏览 ADLS 文件；用于上传和下载文件 |
-|打包服务 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有某些生成任务方案（例如 NuGet 工具安装程序、节点工具安装程序）或在计划通过 Feeds 使用公共上游时，才需要 *.npmjs.org、*.nuget.org 和 *.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
+| 打包服务 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有某些生成任务方案（例如 NuGet 工具安装程序、节点工具安装程序）或在计划通过 Feeds 使用公共上游时，才需要 *.npmjs.org、*.nuget.org 和 *.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
+| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用于连接 VSTS |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>与网络相关错误的疑难解答

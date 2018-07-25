@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: e2ec53e78bc88e18d9ba8e77aa888ffa855b64ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 739c43b0ed6665684f0a38b35dfd6eccdf8f5b2c
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924150"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977799"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 设计器中插入控件并修改其行为
 
@@ -53,7 +53,7 @@ ms.locfileid: "31924150"
 
 ### <a name="behaviors"></a>行为
 
-*行为* 是可重复重用的代码包。 它发挥的作用比更改属性稍微多一点。 它可以执行操作，例如查询数据服务。 Blend 附带了连A小型集合，但可以添加更多。 将行为拖动到到你美工板中的任何对象，然后通过设置属性来自定义行为。
+*行为* 是可重复重用的代码包。 它发挥的作用比更改属性稍微多一点。 它可以执行操作，例如查询数据服务。 Blend 附带了小型行为集合，但可以添加更多。 将行为拖动到到你美工板中的任何对象，然后通过设置属性来自定义行为。
 
 ![“属性”面板中的 FluidMoveBehavior](../designers/media/b4_fluidmovebehaviorproperties_sample.png)
 

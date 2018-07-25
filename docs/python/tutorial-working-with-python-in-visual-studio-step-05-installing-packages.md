@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教程 - 第 5 步：安装包
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 5 步，展示了用于在 Python 环境中管理包的 Visual Studio 功能。
-ms.date: 03/05/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 18a4f274de38bab160144a9e13d6a6963168fff1
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: d67ec84271534de84de588cd29376e2cdb437294
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33875313"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37055976"
 ---
-# <a name="step-5-installing-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
+# <a name="step-5-install-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 
 **上一步：[在调试器中运行代码](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
@@ -72,6 +72,6 @@ Python 开发者社区制作了数千个有用的程序包，用户可以将它�
 > [!div class="nextstepaction"]
 > [使用 Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 
-### <a name="going-deeper"></a>深入了解
+### <a name="go-deeper"></a>深入了解
 
 - [Python 环境](managing-python-environments-in-visual-studio.md)

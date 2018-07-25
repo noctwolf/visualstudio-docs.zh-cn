@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fa8f0f447bddcfb1c8e468ca6d88bbdf503f5c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 60e6e8a76e9ec7fc68e739e48399d76b244d5afa
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979183"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945814"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 下表列出了在 Visual Studio 项目文件中定义的或者在 MSBuild 提供的 .targets 文件中包括的经常使用的属性。  
   
- Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含你使用 IDE 生成项目时运行的 MSBuild XML 代码。 项目通常会导入一个或多个 .targets 文件以定义它们的生成过程。 有关详细信息，请参阅[.Targets 文件](../msbuild/msbuild-dot-targets-files.md)。  
+ Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含你使用 IDE 生成项目时运行的 MSBuild XML 代码。 项目通常会导入一个或多个 .targets 文件以定义它们的生成进程。 有关详细信息，请参阅 [MSBuild .Targets 文件](../msbuild/msbuild-dot-targets-files.md)。  
   
 ## <a name="list-of-common-properties-and-parameters"></a>通用属性和参数的列表  
   
@@ -38,10 +38,10 @@ ms.locfileid: "31979183"
 |--------------------------------|-----------------|  
 |AdditionalLibPaths|指定其他文件夹，编译器将在这些文件夹中查找引用程序集。|  
 |AddModules|使编译器让指定文件中的所有类型信息可供正在编译的项目使用。 此属性等效于 `/addModules` 编译器开关。|  
-|ALToolPath|可以找到 AL.exe 的路径。 此属性将重写 AL.exe 的当前版本，从而允许使用其他版本。|  
+|ALToolPath|可以找到 AL.exe 的路径。 此属性将替代 AL.exe 的当前版本，从而允许使用其他版本。|  
 |ApplicationIcon|要传递给编译器以作为 Win32 图标嵌入的 .ico 图标文件。 该属性等效于 `/win32icon` 编译器开关。|  
 |ApplicationManifest|指定用于生成外部用户帐户控制 (UAC) 清单信息的文件的路径。 它仅适用于面向 [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)] 的 Visual Studio 项目。<br /><br /> 在大多数情况，该清单是嵌入的。 但如果使用免注册的 COM 或 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，则该清单可以是随应用程序程序集一起安装的外部文件。 有关更多信息，请参见本主题中的 NoWin32Manifest 属性。|  
-|AssemblyOriginatorKeyFile|指定用于为程序集 (.snk or .pfx) 签名并传递给 [ResolveKeySource 任务](../msbuild/resolvekeysource-task.md)的文件，以便生成用于对程序集签名的实际密钥。|  
+|AssemblyOriginatorKeyFile|指定用于为程序集（.snk 或 .pfx）签名并传递给 [ResolveKeySource 任务](../msbuild/resolvekeysource-task.md)的文件，以便生成用于对程序集签名的实际密钥。|  
 |AssemblySearchPaths|要在生成时引用程序集解析期间搜索的位置列表。 路径在此列表中的出现顺序是有含义的，因为先列出的路径优先于后列出的条目。|  
 |AssemblyName|生成项目后的最终输出程序集的名称。|  
 |BaseAddress|指定主输出程序集的基址。 此属性等效于 `/baseaddress` 编译器开关。|  
@@ -61,12 +61,12 @@ ms.locfileid: "31979183"
 |DefineTrace|一个布尔值，指示是否定义 TRACE 常量。|  
 |DebugType|定义要生成的调试信息的级别。 有效值为“full”、“pdbonly”和“none”。|  
 |DelaySign|一个布尔值，指示是否对程序集进行延迟签名，而不对其进行完整签名。|  
-|是确定的|一个布尔值，指示编译器是否为相同的输入生成相同的程序集。 此参数对应于 `vbc.exe` 和 `csc.exe` 编译器的 `/deterministic` 开关。|
+|是确定的|一个布尔值，指示编译器是否为相同的输入生成相同的程序集。 此参数对应于 vbc.exe 和 csc.exe 编译器的 `/deterministic` 开关。|
 |DisabledWarnings|禁止显示指定的警告。 只有警告标识符的数值部分是必须指定的。 多个警告之间用分号分隔。 此参数对应于 vbc.exe 编译器的 `/nowarn` 开关。|  
 |DisableFastUpToDateCheck|一个只适用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的布尔值。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成管理器使用名为 FastUpToDateCheck 的进程来确定项目是否必须重新生成才能保持最新。 此进程比使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 来确定这一点更快。 通过将 DisableFastUpToDateCheck 属性设置为 `true`，可以跳过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成管理器，并强制生成管理器使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 来确定项目是否为最新版本。|  
 |DocumentationFile|作为 XML 文档文件生成的文件的名称。 此名称只包含文件名，不包含路径信息。|  
 |ErrorReport|指定编译器任务报告内部编译器错误的方式。 有效值为“prompt”、“send”或“none”。 此属性等效于 `/errorreport` 编译器开关。|  
-|ExcludeDeploymentUrl|[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)会在项目文件包含下列任何元素时向部署清单中添加 deploymentProvider 标记：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不过，使用 ExcludeDeploymentUrl，可以防止 deploymentProvider 标记添加到部署清单，即使指定了任何上述 URL。 为此，请将以下属性添加到项目文件：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>`注意：ExcludeDeploymentUrl 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中未显示，并且仅可通过手动编辑项目文件进行设置。 设置此属性不影响在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中发布；即 deploymentProvider 标记仍将添加到 PublishUrl 指定的 URL。|  
+|ExcludeDeploymentUrl|[GenerateDeploymentManifest 任务](../msbuild/generatedeploymentmanifest-task.md)会在项目文件包含下列任何元素时向部署清单中添加 deploymentProvider 标记：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不过，使用 ExcludeDeploymentUrl，可以防止 deploymentProvider 标记添加到部署清单，即使指定了任何上述 URL。 为此，请将以下属性添加到项目文件：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` <br /><br />**注意：** ExcludeDeploymentUrl 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中未显示，并且仅可通过手动编辑项目文件进行设置。 设置此属性不影响在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中发布；即 deploymentProvider 标记仍将添加到 PublishUrl 指定的 URL。|  
 |FileAlignment|指定输出文件各部分的对齐位置，以字节为单位。 有效值为 512、1024、2048、4096、8192。 此属性等效于 `/filealignment` 编译器开关。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 此参数等效于 vbc.exe 编译器的 `/sdkpath` 开关。|  
 |GenerateDocumentation|（仅限 Visual Basic）一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。|
@@ -84,12 +84,12 @@ ms.locfileid: "31979183"
 |OptionExplicit|一个布尔值，设置为 `true` 时，要求在源代码中显式声明变量。 此属性等效于 `/optionexplicit` 编译器开关。|  
 |OptionInfer|一个布尔值，设置为 `true` 时，允许进行变量的类型推理。 此属性等效于 `/optioninfer` 编译器开关。|  
 |OptionStrict|一个布尔值，设置为 `true` 时，将使得生成任务强制使用严格类型语义来限制隐式类型转换。 此属性等效于 vbc.exe 编译器的 `/optionstrict` 开关。|  
-|OutputPath|相对于项目目录，例如“bin\Debug”，指定输出目录的路径。|  
+|OutputPath|相对于项目目录，例如 bin\Debug，指定输出目录的路径。|  
 |OutputType|指定输出文件的文件格式。 此参数可以具有下列值之一：<br /><br /> -   Library。 创建一个代码库。 （默认值）。<br />-   Exe。 创建控制台应用程序。<br />-   Module。 创建一个模块。<br />-   Winexe。 创建一个基于 Windows 的程序。<br /><br /> 此属性等效于 vbc.exe 编译器的 `/target` 开关。|  
 |OverwriteReadOnlyFiles|一个布尔值，指示要让生成覆盖只读文件还是触发错误。|  
 |PdbFile|正在发出的 .pdb 文件的文件名。 此属性等效于 csc.exe 编译器的 `/pdb` 开关。|  
 |平台|生成所面向的操作系统。 有效值是“Any CPU”、“x86”和“x64”。|  
-|ProduceReferenceAssembly|一个布尔值，设置为 `true` 时，可为当前程序集生成[引用程序集](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用此功能时，`Deterministic` 应为 `true`。 此属性对应于 `vbc.exe` 和 `csc.exe` 编译器的 `/refout` 开关。|
+|ProduceReferenceAssembly|一个布尔值，设置为 `true` 时，可为当前程序集生成[引用程序集](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用此功能时，`Deterministic` 应为 `true`。 此属性对应于 vbc.exe 和 csc.exe 编译器的 `/refout` 开关。|
 |RemoveIntegerChecks|一个布尔值，指示是否禁用整数溢出错误检查。 默认值为 `false`。 此属性等效于 vbc.exe 编译器的 `/removeintchecks` 开关。|  
 |SGenUseProxyTypes|一个布尔值，指示是否应由 SGen.exe 生成代理类型。<br /><br /> SGen 目标使用此属性来设置 UseProxyTypes 标志。 此属性默认为 true，并且没有更高属性的 UI。 若要生成非 webservice 类型的序列化程序集，请在导入 Microsoft.Common.Targets 或 C#/VB.targets 之前将此属性添加到项目文件并将其设为 false。|  
 |SGenToolPath|一个可选的工具路径，指示在当前版本的 SGen.exe 被重写时可以获得 SGen.exe 的位置。|  

@@ -16,16 +16,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ba4e3d3a32aa7921d23b8719ec63733b9e239e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 451238283e5f256f9c7c302bd81dd45ad2825cf4
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948439"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233803"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>优化 Visual Studio 启动时间
 
-Visual Studio 可快速高效地启动。 但是，某些 Visual Studio 扩展和工具窗口加载时会对启动时间产生不利影响。 可以在“管理 Visual Studio 性能”对话框中控制缓慢扩展和工具窗口的行为。 有关提升性能的更多提示，请参阅 [Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)。
+Visual Studio 可快速高效地启动。 但是，某些 Visual Studio 扩展和工具窗口加载时会对启动时间产生不利影响。 可在“管理 Visual Studio 性能”对话框中控制慢速扩展和工具窗口的行为。 有关提升性能的更多提示，请参阅 [Visual Studio 性能提示和技巧](../ide/visual-studio-performance-tips-and-tricks.md)。
 
 ## <a name="startup-behavior"></a>启动行为
 

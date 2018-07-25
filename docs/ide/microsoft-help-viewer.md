@@ -21,28 +21,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be587e708857a5c46c92986decff75a4807f8897
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fb2c375aebd327d3d56b8f720b1b3619fab9b256
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948202"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117155"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-可以通过使用 Microsoft Help Viewer，在本地计算机上安装和查看各种产品和技术（包括 Visual Studio、.NET Framework、语言参考、SQL Server 和 Windows 开发）的相关内容。 Help Viewer 可用于：
+你可以通过使用 Microsoft Help Viewer 在本地计算机上安装和查看各种产品和技术的相关内容。 这些产品包括 Visual Studio、.NET Framework、语言参考、SQL Server 和 Windows 开发。 Help Viewer 可用于：
 
--   查找并下载内容集，这也称为丛书。
+- 下载内容集，这也称为丛书。 如果需要“脱机”工作时仍可以访问文档，则这会很有用。
 
--   浏览并搜索目录以按标题查找主题。
+- 浏览并搜索目录以按标题查找主题。
 
--   查找索引中的主题。
+- 查找索引中的主题。
 
--   使用全文搜索查找信息。
+- 使用全文搜索查找信息。
 
--   查找、标记和打印主题。
+- 查找、标记和打印主题。
 
 若要安装 Help Viewer，请参阅 [Microsoft Help Viewer 安装](../ide/microsoft-help-viewer-installation.md)。 若要开始阅读 Help Viewer 中的帮助主题，而不是联机帮助主题，请转到 Visual Studio 中的“帮助”菜单，然后选择“设置帮助首选项” > “在 Help Viewer 中启动”。
+
+> [!TIP]
+> 若要在没有 Internet 连接时查看内容，另一种内容本地下载方法是下载其 PDF 版本。 docs.microsoft.com 上的许多文档集在目录 (TOC) 的底部包含一个链接，通过该链接可下载包含此 TOC 所有文章的 PDF 文件。
+>
+> ![下载 Visual Studio 文档 PDF](media/download-pdf.png)
 
 ## <a name="help-viewer-tour"></a>Help Viewer 导览
 
@@ -74,19 +79,19 @@ ms.locfileid: "31948202"
 
 Help Viewer 窗口中的工具栏包含以下按钮：
 
--   “在目录中显示主题”按钮，用于显示“内容”选项卡中的主题位置。
+- “在目录中显示主题”按钮，用于显示“内容”选项卡中的主题位置。
 
--   “添加到收藏夹”按钮，用于将活动主题添加到“收藏夹”选项卡。
+- “添加到收藏夹”按钮，用于将活动主题添加到“收藏夹”选项卡。
 
--   “在主题中查找”按钮，用于突出显示活动主题中的搜索文本。
+- “在主题中查找”按钮，用于突出显示活动主题中的搜索文本。
 
--   “打印”按钮，用于打印或显示活动主题的预览。
+- “打印”按钮，用于打印或显示活动主题的预览。
 
--   “查看器选项”按钮，用于显示设置，例如，文本显示大小、返回的搜索结果数、历史记录中显示的主题数以及是否联机检查更新。
+- “查看器选项”按钮，用于显示设置，例如，文本显示大小、返回的搜索结果数、历史记录中显示的主题数以及是否联机检查更新。
 
--   “管理内容”按钮，用于激活“管理内容”选项卡。
+- “管理内容”按钮，用于激活“管理内容”选项卡。
 
--   右侧的小三角形可以打开选项卡列表，包括主题选项卡和“管理内容”选项卡。可以选择选项卡名称激活该选项卡。
+- 右侧的小三角形可以打开选项卡列表，包括主题选项卡和“管理内容”选项卡。可以选择选项卡名称激活该选项卡。
 
 ## <a name="see-also"></a>请参阅
 

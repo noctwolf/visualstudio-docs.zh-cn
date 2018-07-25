@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a7deb9fef0ee50ecd202cc711566795932a9f51b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1af6ac0f9a382a91d2c87e5cb84053b8b51bf961
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949706"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089667"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
+
 显示可添加到窗体和组件的数据对象。 创建具有关联设计器的项目时，将会显示“工具箱”的“数据”选项卡。 默认情况下，“工具箱”将出现在 Visual Studio 集成开发环境中；如果需要显示“工具箱”，请从“视图”菜单中选择“工具箱”。
 
 > [!TIP]
 > 运行“数据源配置向导”将自动创建和配置大部分数据项。 有关详细信息，请参阅[添加新数据源](../../data-tools/add-new-data-sources.md)。
 
-
 ## <a name="ui-element-list"></a>UI 元素列表
- 若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。
+
+若要直接转到某个组件的 .NET Framework 参考页，请针对“工具箱”中的项或设计器栏中的组件项按“F1”。
 
 |name|描述|
 |----------|-----------------|
@@ -47,4 +48,3 @@ ms.locfileid: "31949706"
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [编辑数据集中的数据](../../data-tools/edit-data-in-datasets.md)
 - [验证数据集中的数据](../../data-tools/validate-data-in-datasets.md)
-- [保存数据](../../data-tools/saving-data.md)

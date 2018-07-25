@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b55cadc738fb54b1a7fe07a2d891103c0daa755d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6e33f057f3184a9a9bb19311f7206c6ab273dab8
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576945"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081015"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 包含用户定义的项和其元数据。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。  
@@ -34,7 +34,7 @@ ms.locfileid: "31576945"
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml  
 <Item Include="*.cs"  
         Exclude="MyFile.cs"  
         Remove="RemoveFile.cs"  
@@ -96,9 +96,9 @@ ms.locfileid: "31576945"
 ## <a name="remarks"></a>备注  
  `Item` 元素定义输入到生成系统的输入，并且根据其用户定义的集合名被分组到项集合。 这些项集合可用作[任务](../msbuild/msbuild-tasks.md)的参数，这些任务使用集合中的各个项来执行生成过程的步骤。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
 
- 使用表示法 `@(`*myType*`)` 可使类型 *myType* 的项的集合扩展为以分号分隔的字符串列表，并将传递给参数。 如果参数的类型为 `string`，则参数的值是以分号分隔的元素列表。 如果此参数是一个字符串数组 (`string[]`)，则根据分号的位置将每个元素插入到数组中。 如果任务参数的类型为 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，则值是项集合的内容以及附加的任何元数据。 如需通过使用分号之外的其他字符来分隔每个项，请使用语法 `@(`*myType*`, '`*separator*`')`。  
+ 使用表示法 @(\<myType>) 可使类型 \<myType> 的项的集合扩展为以分号分隔的字符串列表，并将传递给参数。 如果参数的类型为 `string`，则参数的值是以分号分隔的元素列表。 如果此参数是一个字符串数组 (`string[]`)，则根据分号的位置将每个元素插入到数组中。 如果任务参数的类型为 <xref:Microsoft.Build.Framework.ITaskItem>`[]`，则值是项集合的内容以及附加的任何元数据。 如需通过使用分号之外的其他字符来分隔每个项，请使用语法 @(<myType>, '<separator>')。  
 
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎能够计算通配符（如 `*` 和 `?`）和递归通配符（如 `/**/*.cs`）。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎能够计算通配符（如 `*` 和 `?`）和递归通配符（如 /\*\*/\*）。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
 
 ## <a name="examples"></a>示例  
  以下代码示例演示如何声明类型 `CSFile` 的两个项。 第二个声明项包含将 `MyMetadata` 设置为 `HelloWorld` 的元数据。  

@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ce7418334e5621076a10b6887371cf7da76a7488
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918136"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890352"
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 
-自定义页面的布局时，可以在设计器中查看示例数据。 可以从头开始或使用现有类生成示例数据。 也可以连接到在连接到应用时出现在应用中的 *实时数据* 。
+自定义页面的布局时，可以在设计器中查看示例数据。 可以从头开始或使用现有类生成示例数据。 也可以连接到在连接到应用时出现在应用中的实时数据。
 
 ## <a name="generate-sample-data"></a>生成示例数据
 
@@ -45,7 +45,7 @@ ms.locfileid: "31918136"
 
 **观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[从类中创建示例数据](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)。
 
-**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[将一些数据绑定与 Blend 混合](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
+**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [通过 Blend 混合数据绑定](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
 ## <a name="show-live-data-in-a-wpf-application"></a>在 WPF 应用程序中显示实时数据
 
@@ -53,7 +53,7 @@ ms.locfileid: "31918136"
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>在应用商店或 Phone 应用中显示实时数据
 
-请参阅 [使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
+请参阅[使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
 
 ## <a name="see-also"></a>请参阅
 

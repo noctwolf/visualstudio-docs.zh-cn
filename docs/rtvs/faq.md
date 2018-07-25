@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: a8b9dd119aba9a5c28b450db11b2eb380b1872a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 832d581a4147b8b050da16b1a1f72d8a3909fc35
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235206"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -33,7 +34,7 @@ ms.lasthandoff: 04/19/2018
 答： 当然可以。 实际上，用户常常将下面的一些插件与 R 结合使用。
 
 - [适用于 vim 键绑定的 VsVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
-- [Github](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
+- [GitHub](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio)
 - [提供实时预览的 Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
 
 请访问 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)，了解详细信息。
@@ -50,7 +51,7 @@ ms.lasthandoff: 04/19/2018
 
 **问：虽然我确实很喜欢当前的 Visual Studio 设置，但我想要尝试新的数据科学设置。我该怎么办？**
 
-答： 请使用“工具 > 导入和导出设置...”，保存当前的 Visual Studio 设置，然后切换到数据科学设置。 若要还原已保存的设置，请再次使用“导入和导出设置...”命令。
+答： 请通过“工具” > “导入和导出设置”保存当前的 Visual Studio 设置，然后切换到数据科学设置。 要还原已保存的设置，请再次使用“导入和导出设置”命令。
 
 **问：我能否在网络共享上存储我的 Visual Studio 项目？**
 
@@ -78,9 +79,9 @@ ms.lasthandoff: 04/19/2018
 
 答： 能，可以使用 Visual Studio 中集成的任何源代码管理系统。
 
-**问：建议用于 RTVS 项目的 `.gitignore` 设置是什么？**
+**问：建议对 RTVS 项目采用哪种 .gitignore 设置**？
 
-答： Github 维护推荐 `.gitignore` 文件的主存储库。 请访问 [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
+答： Github 继续使用所推荐 .gitignore 文件的主存储库。 请访问 [R .gitignore](https://github.com/github/gitignore/blob/master/R.gitignore)
 
 ## <a name="remote-services"></a>远程服务
 
@@ -88,9 +89,9 @@ ms.lasthandoff: 04/19/2018
 
 答： Visual Studio 的远程 R 服务使你可以设置 Windows 或 Linux 计算机，然后从 RTVS 连接到它。 请参阅[设置远程工作区](setting-up-remote-r-workspaces.md)。
 
-问： **RTVS 是否可以连接到 Microsoft R Server？**
+问： **RTVS 能否连接 Microsoft Machine Learning Server？**
 
-答： 不能，因为 Microsoft R Server 是不同的技术，不提供 RTVS 所需的相同连接机制。
+答： 否，因为 Microsoft ML Server 是一种不同的技术，其提供的连接机制与 RTVS 要求的不同。
 
 问： **RTVS 是否可以连接到在 Azure 上使用数据科学 VM 映像创建的 VM？**
 

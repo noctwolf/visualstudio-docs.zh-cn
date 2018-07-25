@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 651570ef83f5f87d96ed27538cc4f6ffd569d41f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 64e9d438547ee27588c08fb522a027cd85432094
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570673"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079694"
 ---
 # <a name="how-to-select-the-files-to-build"></a>如何：选择要生成的文件
 如果生成包含多个文件的项目，可以在项目文件中分别列出每个文件，也可以使用通配符将一个目录或一组嵌套目录中的所有文件都包括进去。  
   
-## <a name="specifying-inputs"></a>指定输入  
+## <a name="specify-inputs"></a>指定输入  
  项表示某个生成的输入。 有关项的详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
   
  若要包括某个生成的文件，必须在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件的项列表中包括这些文件。 通过逐个包括文件或使用通配符同时包括许多文件，可以将多个文件添加到项列表中。  
@@ -35,7 +35,7 @@ ms.locfileid: "31570673"
   
      `<CSFile Include="form1.cs"/>`  
   
-     - 或 -  
+     或 
   
      `<VBFile Include="form1.vb"/>`  
   
@@ -48,11 +48,11 @@ ms.locfileid: "31570673"
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
-     - 或 -  
+     或 
   
      `<VBFile Include="form1.vb;form2.vb"/>`  
   
-## <a name="specifying-inputs-with-wildcards"></a>使用通配符指定输入  
+## <a name="specify-inputs-with-wildcards"></a>使用通配符指定输入  
  还可以使用通配符以递归方式将子目录中的所有文件或某些特定文件包括在某个生成的输入中。 有关通配符的详细信息，请参阅[通配符](../msbuild/msbuild-items.md)  
   
  下面的示例基于一个项目，该项目包含下列目录和子目录中的图形文件，项目文件位于 Project 目录中：  
@@ -75,17 +75,17 @@ ms.locfileid: "31570673"
   
      `Include="Images\**\img*.jpg"`  
   
-#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包括名称以“jpgs”结尾的目录中的所有文件  
+#### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>包括目录中名称以“jpgs”结尾的所有文件  
   
 -   使用以下 `Include` 属性之一：  
   
      `Include="Images\**\*jpgs\*.*"`  
   
-     - 或 -  
+     或
   
      `Include="Images\**\*jpgs\*"`  
   
-## <a name="passing-items-to-a-task"></a>将项传递给任务  
+## <a name="pass-items-to-a-task"></a>将项传递给任务  
  在项目文件中，可以在任务中使用 @() 表示法，指定整个项列表作为生成的输入。 无论是分别列出所有文件还是使用通配符，均可以使用此表示法。  
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>使用所有 Visual C# 或 Visual Basic 文件作为输入  
@@ -94,7 +94,7 @@ ms.locfileid: "31570673"
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
-     - 或 -  
+     或 
   
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
@@ -172,5 +172,5 @@ ms.locfileid: "31570673"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [如何：从生成中排除文件](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [如何：将文件排除在生成过程外](../msbuild/how-to-exclude-files-from-the-build.md)   
  [项](../msbuild/msbuild-items.md)

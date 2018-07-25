@@ -32,18 +32,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25cea2311043f50ec08937f72d883e9334df2f81
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575892"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081704"
 ---
 # <a name="link-task"></a>Link 任务
-包装 Visual C++ 链接器工具 link.exe。 链接器工具将通用对象文件格式 (COFF) 对象文件和库链接起来，以创建可执行 (.exe) 文件或动态链接库 (DLL)。 有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  
+包装 Visual C++ 链接器工具 (link.exe)。 链接器工具将通用对象文件格式 (COFF) 对象文件和库链接起来，以创建可执行 (.exe) 文件或动态链接库 (DLL)。 有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  
   
 ## <a name="parameters"></a>参数  
- 下表描述了 **Link** 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
+ 下表描述了 Link 任务的参数。 大多数任务参数和若干组参数都对应于命令行选项。  
   
 -   **AdditionalDependencies**  
   
@@ -67,13 +67,13 @@ ms.locfileid: "31575892"
   
      指定将放入清单文件的 `dependency` 节的属性。  
   
-     有关详细信息，请参阅 [/MANIFESTDEPENDENCY（指定清单依赖项）](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另请参阅 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 网站上的“发布服务器配置文件”。  
+     有关详细信息，请参阅 [/MANIFESTDEPENDENCY（指定清单依赖项）](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另请参阅 [Publisher configuration files（发布服务器配置文件）](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files)。  
   
 -   **AdditionalOptions**  
   
      可选 **String** 参数。  
   
-     在命令行上指定的链接器选项列表。 例如，**"***/option1 /option2 /option#*"。 使用此参数可指定未由任何其他 **Link** 任务参数表示的链接器选项。  
+     在命令行上指定的链接器选项列表。 例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 **Link** 任务参数表示的链接器选项。  
   
      有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  
   
@@ -147,7 +147,7 @@ ms.locfileid: "31575892"
   
     -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
   
-     有关详细信息，请参阅 [/CLRIMAGETYPE（指定 CLR 映像的类型）](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)。  
+    有关详细信息，请参阅 [/CLRIMAGETYPE（指定 CLR 映像的类型）](/cpp/build/reference/clrimagetype-specify-type-of-clr-image)。  
   
 -   **CLRSupportLastError**  
   
@@ -163,7 +163,7 @@ ms.locfileid: "31575892"
   
     -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
   
-     有关详细信息，请参阅 [/CLRSUPPORTLASTERROR（为 PInvoke 调用保留上次的错误代码）](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)。  
+    有关详细信息，请参阅 [/CLRSUPPORTLASTERROR（为 PInvoke 调用保留上次的错误代码）](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls)。  
   
 -   **CLRThreadAttribute**  
   
@@ -179,7 +179,7 @@ ms.locfileid: "31575892"
   
     -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
   
-     有关详细信息，请参阅 [/CLRTHREADATTRIBUTE（设置 CLR 线程特性）](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)。  
+    有关详细信息，请参阅 [/CLRTHREADATTRIBUTE（设置 CLR 线程特性）](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute)。  
   
 -   **CLRUnmanagedCodeCheck**  
   
@@ -187,7 +187,7 @@ ms.locfileid: "31575892"
   
      指定链接器是否将 **SuppressUnmanagedCodeSecurityAttribute** 应用到链接器生成的从托管代码到本机 DLL 的 P/Invoke 调用。  
   
-     有关详细信息，请参阅 [/CLRUNMANAGEDCODECHECK（添加 SupressUnmanagedCodeSecurityAttribute）](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
+    有关详细信息，请参阅 [/CLRUNMANAGEDCODECHECK（添加 SupressUnmanagedCodeSecurityAttribute）](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
   
 -   **CreateHotPatchableImage**  
   
@@ -205,7 +205,7 @@ ms.locfileid: "31575892"
   
     -   **ItaniumImage** - **/FUNCTIONPADMIN:16**  
   
-     有关详细信息，请参阅 [/FUNCTIONPADMIN（创建可热修补的映像）](/cpp/build/reference/functionpadmin-create-hotpatchable-image)。  
+    有关详细信息，请参阅 [/FUNCTIONPADMIN（创建可热修补的映像）](/cpp/build/reference/functionpadmin-create-hotpatchable-image)。  
   
 -   **DataExecutionPrevention**  
   
@@ -247,7 +247,7 @@ ms.locfileid: "31575892"
   
     -   **WDM** - **/DRIVER:WDM**  
   
-     有关详细信息，请参阅 [/DRIVER（Windows NT 内核模式驱动程序）](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)。  
+    有关详细信息，请参阅 [/DRIVER（Windows NT 内核模式驱动程序）](/cpp/build/reference/driver-windows-nt-kernel-mode-driver)。  
   
 -   **EmbedManagedResourceFile**  
   
@@ -303,7 +303,7 @@ ms.locfileid: "31575892"
   
     -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
   
-     有关详细信息，请参阅 [/FORCE（强制文件输出）](/cpp/build/reference/force-force-file-output)。  
+    有关详细信息，请参阅 [/FORCE（强制文件输出）](/cpp/build/reference/force-force-file-output)。  
   
 -   **ForceSymbolReferences**  
   
@@ -455,7 +455,7 @@ ms.locfileid: "31575892"
   
     -   **SendErrorReport** - **/ERRORREPORT:SEND**  
   
-     有关详细信息，请参阅 [/ERRORREPORT（报告内部链接器错误）](/cpp/build/reference/errorreport-report-internal-linker-errors)。  
+    有关详细信息，请参阅 [/ERRORREPORT（报告内部链接器错误）](/cpp/build/reference/errorreport-report-internal-linker-errors)。  
   
 -   **LinkIncremental**  
   
@@ -501,7 +501,7 @@ ms.locfileid: "31575892"
   
          \- **/LTCG:PGUpdate**  
   
-     有关详细信息，请参阅 [/LTCG（链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)。  
+    有关详细信息，请参阅 [/LTCG（链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)。  
   
 -   **ManifestFile**  
   
@@ -697,7 +697,7 @@ ms.locfileid: "31575892"
   
     -   **LinkVerboseCLR** - **/VERBOSE:CLR**  
   
-     有关详细信息，请参阅 [/VERBOSE（打印进度消息）](/cpp/build/reference/verbose-print-progress-messages)。  
+    有关详细信息，请参阅 [/VERBOSE（打印进度消息）](/cpp/build/reference/verbose-print-progress-messages)。  
   
 -   **Sources**  
   
@@ -765,7 +765,7 @@ ms.locfileid: "31575892"
   
     -   **POSIX** - **/SUBSYSTEM:POSIX**  
   
-     有关详细信息，请参阅 [/SUBSYSTEM（指定子系统）](/cpp/build/reference/subsystem-specify-subsystem)。  
+    有关详细信息，请参阅 [/SUBSYSTEM（指定子系统）](/cpp/build/reference/subsystem-specify-subsystem)。  
   
 -   **SupportNobindOfDelayLoadedDLL**  
   
@@ -839,7 +839,7 @@ ms.locfileid: "31575892"
   
     -   **MachineX86** - **/MACHINE:X86**  
   
-     有关详细信息，请参阅 [/MACHINE（指定目标平台）](/cpp/build/reference/machine-specify-target-platform)。  
+    有关详细信息，请参阅 [/MACHINE（指定目标平台）](/cpp/build/reference/machine-specify-target-platform)。  
   
 -   **TerminalServerAware**  
   
@@ -877,7 +877,7 @@ ms.locfileid: "31575892"
   
      指定 .tlb 文件的文件名和文件扩展名。 指定文件名，或者路径和文件名。  
   
-     有关详细信息，请参阅 [/TLBOUT（命名 .TLB 文件）](/cpp/build/reference/tlbout-name-dot-tlb-file)。  
+     有关详细信息，请参阅 [/TLBOUT（命名 .tlb 文件）](/cpp/build/reference/tlbout-name-dot-tlb-file)。  
   
 -   **TypeLibraryResourceID**  
   
@@ -901,7 +901,7 @@ ms.locfileid: "31575892"
   
     -   **RequireAdministrator** - `level='requireAdministrator'`  
   
-     有关详细信息，请参阅 [/MANIFESTUAC（将 UAC 信息嵌入到清单中）](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)的 `level` 参数。  
+    有关详细信息，请参阅 [/MANIFESTUAC（将 UAC 信息嵌入到清单中）](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest)的 `level` 参数。  
   
 -   **UACUIAccess**  
   

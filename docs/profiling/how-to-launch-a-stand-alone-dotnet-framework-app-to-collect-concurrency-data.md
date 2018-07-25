@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5cece8a5b97f3a9c78bdda8c5e841661d2b4d58d
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 8a44fd95ec8561df7de0970ac81446757f122121
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335575"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34815712"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
 本主题介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据  
@@ -26,7 +26,7 @@ ms.locfileid: "34335575"
  将探查器附加到应用程序时，可以暂停和恢复数据收集。 若要结束分析会话，探查器不得再附加于应用程序，并且必须显示关闭探查器。  
   
 ## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
- 若要使用探查器启动 .NET Framework 目标应用程序，请使用 VSPerfClrEnv.exe 设置 .NET Framework 分析变量。 然后，使用 VSPerfCmd /start和 /launch 选项，以初始化探查器并启动应用程序。 可以在单个命令行中指定 **/start** 和 **/launch** 及其各自的选项。 还可以向命令行添加 /globaloff 选项，以在目标应用程序启动时暂停数据收集。 然后，对单独命令行使用 /globalon，以开始收集数据。  
+ 要使用探查器启动 .NET Framework 目标应用程序，请使用 VSPerfClrEnv.exe 设置 .NET Framework 分析变量。 然后，使用 VSPerfCmd /start和 /launch 选项，以初始化探查器并启动应用程序。 可以在单个命令行中指定 **/start** 和 **/launch** 及其各自的选项。 还可以向命令行添加 /globaloff 选项，以在目标应用程序启动时暂停数据收集。 然后，对单独命令行使用 /globalon，以开始收集数据。  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>用探查器启动应用程序  
   
@@ -69,7 +69,7 @@ ms.locfileid: "34335575"
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|指定应用程序中加载公共语言运行时 (CLR) 的多个版本时要分析的运行时的版本。|  
   
 ## <a name="control-data-collection"></a>控制数据收集  
- 目标应用程序运行时，可以通过使用 VSPerfCmd.exe 选项开始和停止向文件的数据写入，从而控制数据收集。 通过控制数据收集，使你能够针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
+ 在目标应用程序运行时，可以通过使用 *VSPerfCmd.exe* 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，使你能够针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
   
