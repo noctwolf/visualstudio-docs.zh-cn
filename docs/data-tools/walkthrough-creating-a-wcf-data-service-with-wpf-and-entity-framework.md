@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建带有适用于 WPF 和实体框架的 WCF 数据服务
+title: 演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,21 +18,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4ee4d9a1c64d39e6ef05f9c01b26686f13c6dea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d4fa9ea1538d051aebd025c641c0520197f986ef
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926805"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178382"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练： 创建带有适用于 WPF 和实体框架的 WCF 数据服务
-本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]承载于[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]Web 应用程序，然后从 Windows 窗体应用程序访问它。
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务
+本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]托管在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 应用程序，然后从 Windows 窗体应用程序访问它。
 
-在此演练中，将：
+在本演练中你：
 
--   创建 Web 应用程序以承载 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+-   创建 web 应用程序以承载[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
--   创建一个表示 Northwind 数据库中 Customers 表的 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]。
+-   创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
 -   创建 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
@@ -45,86 +45,86 @@ ms.locfileid: "31926805"
 ## <a name="prerequisites"></a>系统必备
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1.  如果你没有 SQL Server Express LocalDB，将其安装从[SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio Installer**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，也可以作为单个组件。
+1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在中**Visual Studio 安装程序**，可以作为的一部分安装 SQL Server Express LocalDB**数据存储和处理**工作负荷，或作为单个组件。
 
-2.  按照这些步骤来安装 Northwind 示例数据库：
+2.  通过执行以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开**SQL Server 对象资源管理器**窗口。 (SQL Server 对象资源管理器安装的一部分**数据存储和处理**在 Visual Studio 安装程序中的工作负荷。)展开**SQL Server**节点。 LocalDB 实例上右键单击并选择**新查询...**.
+    1. 在 Visual Studio 中打开**SQL Server 对象资源管理器**窗口。 (**SQL Server 对象资源管理器**的一部分安装**数据存储和处理**Visual Studio 安装程序中的工作负载。)展开**SQL Server**节点。 LocalDB 实例上右键单击并选择**新查询**。
 
-       查询编辑器窗口将打开。
+       查询编辑器窗口随即打开。
 
-    2. 复制[Northwind TRANSACT-SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪贴板。 此 T-SQL 脚本从头创建 Northwind 数据库，并使用数据填充它。
+    2. 复制[Northwind Transact SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪贴板。 此 T-SQL 脚本从零开始创建 Northwind 数据库，并使用数据填充它。
 
-    3. 将 T-SQL 脚本粘贴到查询编辑器中，，然后选择**执行**按钮。
+    3. 将 T-SQL 脚本粘贴到查询编辑器，然后选择**Execute**按钮。
 
-       短时间内之后, 执行完查询和创建 Northwind 数据库。
+       后不久，查询完成运行并创建 Northwind 数据库。
 
 ## <a name="creating-the-service"></a>创建服务
-若要创建 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，你将添加一个 Web 项目，创建一个[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然后通过此模型创建服务。
+若要创建[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，你将添加一个 web 项目，请创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，然后从该模型创建服务。
 
-首先，将添加一个 Web 项目以承载服务。
+在第一步，添加用于承载服务的 web 项目。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>创建 Web 项目
+#### <a name="to-create-the-web-project"></a>若要创建 web 项目
 
-1.  在菜单栏上，选择**文件**，**新建**，**项目**。
+1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2.  在**新项目**对话框框中，展开**Visual Basic**或**Visual C#** 和**Web**节点，然后选择**ASP。NET Web 应用程序**模板。
+2.  在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 并**Web**节点，然后选择**ASP。NET Web 应用程序**模板。
 
-3.  在**名称**文本框中，输入**NorthwindWeb**，然后选择**确定**按钮。
+3.  在中**名称**文字框中，输入**NorthwindWeb**，然后选择**确定**按钮。
 
-4.  在**新建 ASP.NET 项目**对话框中，在**选择模板**列表中，选择**空**，然后选择**确定**按钮。
+4.  在中**新建 ASP.NET 项目**对话框中**选择一个模板**列表中，选择**空**，然后选择**确定**按钮。
 
-在下一步，你将创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]表示 Northwind 数据库中的客户表。
+在下一步，您将创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
 #### <a name="to-create-the-entity-data-model"></a>创建实体数据模型
 
-1.  在菜单栏上，选择**项目**，**添加新项**。
+1.  在菜单栏上，依次选择“项目” > “添加新项”。
 
-2.  在**添加新项**对话框框中，选择**数据**节点，然后选择**ADO.NET 实体数据模型**项。
+2.  在中**添加新项**对话框框中，选择**数据**节点，然后选择**ADO.NET 实体数据模型**项。
 
-3.  在**名称**文本框中，输入`NorthwindModel`，然后选择**添加**按钮。
+3.  在中**名称**文字框中，输入`NorthwindModel`，然后选择**添加**按钮。
 
      此时将显示实体数据模型向导。
 
-4.  在实体数据模型向导中，在**选择模型内容**页上，选择**EF 设计器从数据库**项，然后依次**下一步**按钮。
+4.  在实体数据模型向导中，在**选择模型内容**页上，选择**EF 设计器从数据库**项，，然后选择**下一步**按钮。
 
 5.  在 **“选择你的数据连接”** 页上执行下列步骤之一：
 
     -   如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         -或-
+         或
 
-    -   选择**新连接**按钮以配置一个新的数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+    -   选择**新的连接**按钮以配置新的数据连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-6.  如果数据库需要密码，请选择**是，在连接字符串中包含敏感数据**选项按钮，，然后选择**下一步**按钮。
-
-    > [!NOTE]
-    >  如果显示一个对话框，选择**是**将文件保存到你的项目。
-
-7.  上**选择你的版本**页上，选择**Entity Framework 5.0**选项按钮，，然后选择**下一步**按钮。
+6.  如果数据库需要密码，请选择**可以，请在连接字符串中包含敏感数据**选项按钮，然后选择**下一步**按钮。
 
     > [!NOTE]
-    >  为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，你将需要安装 WCF Data Services Entity Framework 提供程序 NuGet 包。 请参阅[使用 WCF 数据服务 5.6.0 与 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。
+    >  如果出现一个对话框，选择**是**将文件保存到你的项目。
 
-8.  上**选择数据库对象**页上，展开**表**节点中，选择**客户**复选框，然后依次**完成**按钮。
+7.  上**选择你的版本**页上，选择**Entity Framework 5.0**选项按钮，然后选择**下一步**按钮。
 
-     随即显示实体模型关系图，NorthwindModel.edmx 文件也将添加到项目中。
+    > [!NOTE]
+    >  若要对 WCF 服务使用 Entity Framework 6 的最新版本，你将需要安装 WCF Data Services 实体框架提供程序 NuGet 包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx)。
 
-在下一步，你将创建并测试数据服务。
+8.  上**选择数据库对象**页上，展开**表**节点中，选择**客户**复选框，，然后选择**完成**按钮。
+
+     实体模型关系图显示，和一个*NorthwindModel.edmx*文件添加到你的项目。
+
+在下一步中创建和测试数据服务。
 
 #### <a name="to-create-the-data-service"></a>创建数据服务
 
-1.  在菜单栏上，选择**项目**，**添加新项**。
+1.  在菜单栏上，依次选择“项目” > “添加新项”。
 
-2.  在**添加新项**对话框框中，选择**Web**节点，然后选择**WCF 数据服务 5.6**项。
+2.  在中**添加新项**对话框框中，选择**Web**节点，然后选择**WCF 数据服务 5.6**项。
 
-3.  在**名称**文本框中，输入`NorthwindCustomers`，然后选择**添加**按钮。
+3.  在中**名称**文字框中，输入`NorthwindCustomers`，然后选择**添加**按钮。
 
-     NorthwindCustomers.svc 文件将显示在**代码编辑器**。
+     **NorthwindCustomers.svc**文件将显示在**代码编辑器**。
 
-4.  在**代码编辑器**，定位到第一个`TODO:`注释并将替换为以下代码：
+4.  在中**代码编辑器**，找到第一个`TODO:`注释，并替换为以下代码：
 
      [!code-vb[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_1.cs)]
@@ -134,75 +134,75 @@ ms.locfileid: "31926805"
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6.  在菜单栏上，选择**调试**，**启动但不调试**运行该服务。 此时将打开一个浏览窗口，并显示该服务的 XML 架构。
+6.  在菜单栏上依次选择**调试** > **启动但不调试**来运行服务。 浏览器窗口打开并显示服务的 XML 架构。
 
-7.  在**地址**栏上，输入`Customers`NorthwindCustomers.svc 的 URL 的末尾，然后选择**ENTER**密钥。
+7.  在中**地址**栏上，输入`Customers`的 URL 末尾**NorthwindCustomers.svc**，然后选择**Enter**密钥。
 
-     Customers 表中的数据将以 XML 表示形式显示。
+     XML 表示形式中的数据`Customers`表将出现。
 
     > [!NOTE]
     >  某些情况下，Internet Explorer 会将数据错误解释为 RSS 源。 必须确保禁用显示 RSS 源的选项。 有关详细信息，请参阅[服务引用疑难解答](../data-tools/troubleshooting-service-references.md)。
 
 8.  关闭浏览器窗口。
 
-在接下来的步骤中，将创建一个 Windows 窗体客户端应用程序以使用该服务。
+在下一步骤中，您将创建 Windows 窗体客户端应用程序，以使用该服务。
 
 ## <a name="creating-the-client-application"></a>创建客户端应用程序
- 若要创建客户端应用程序，你将另外添加一个项目，添加对该项目的服务引用，配置数据源，并创建一个用户界面以显示服务中的数据。
+ 若要创建客户端应用程序，您添加第二个项目、 添加到项目的服务引用并配置数据源，并创建用户界面以显示来自服务的数据。
 
- 在第一个步骤中，你将 Windows 窗体项目添加到解决方案中，并将其设置为启动项目。
+ 在第一个步骤中，你将 Windows 窗体项目添加到解决方案，并将其设置为启动项目。
 
 #### <a name="to-create-the-client-application"></a>创建客户端应用程序
 
-1.  在菜单栏上，选择文件，**添加**，**新项目**。
+1.  在菜单栏上依次选择文件，**外** > **新项目**。
 
-2.  在**新项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，然后选择**Windows**节点，然后选择**Windows 窗体应用程序**。
+2.  在中**新的项目**对话框框中，展开**Visual Basic**或**Visual C#** 节点，选择**Windows**节点，然后选择**Windows 窗体应用程序**。
 
 3.  在“名称”文本框中，输入 `NorthwindClient`，然后选择“确定”按钮。
 
-4.  在**解决方案资源管理器**，选择**NorthwindClient**项目节点。
+4.  在中**解决方案资源管理器**，选择**NorthwindClient**项目节点。
 
-5.  在菜单栏上，选择**项目**，**设为启动项目**。
+5.  在菜单栏上依次选择**项目**，**设为启动项目**。
 
-在下一步，你将添加到的服务引用[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]Web 项目中。
+在下一步，添加服务引用到[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 项目中。
 
 #### <a name="to-add-a-service-reference"></a>添加服务引用
 
-1.  在菜单栏上，选择**项目**，**添加服务引用**。
+1.  在菜单栏上依次选择**项目** > **添加服务引用**。
 
-2.  在**添加服务引用**对话框框中，选择**发现**按钮。
+2.  在中**添加服务引用**对话框框中，选择**Discover**按钮。
 
      NorthwindCustomers 服务的 URL 显示在**地址**字段。
 
 3.  选择**确定**按钮以添加服务引用。
 
-在下一步的步骤中，你将配置数据源以启用数据绑定到服务。
+在下一步，配置要启用数据绑定到的服务的数据源。
 
 #### <a name="to-enable-data-binding-to-the-service"></a>启用对服务的数据绑定
 
-1.  在菜单栏上，选择**视图**，**其他窗口**，**数据源**。
+1.  在菜单栏上依次选择**视图** > **其他 Windows** > **数据源**。
 
-2.  在**数据源**窗口中，选择**添加新数据源**按钮。
+2.  在中**数据源**窗口中，选择**添加新数据源**按钮。
 
 3.  上**选择数据源类型**页**数据源配置向导**，选择**对象**，然后选择**下一步**按钮.
 
 4.  上**选择数据对象**页上，展开**NorthwindClient**节点，然后展开**NorthwindClient.ServiceReference1**节点。
 
-5.  选择**客户**复选框，然后依次**完成**按钮。
+5.  选择**客户**复选框，，然后选择**完成**按钮。
 
-在下一步，你将创建将显示从服务的数据的用户界面。
+在下一步中，您创建在用户界面中显示来自服务的数据。
 
 #### <a name="to-create-the-user-interface"></a>创建用户界面
 
-1.  在**数据源**窗口中，打开快捷菜单**客户**节点，然后选择**复制**。
+1.  在中**数据源**窗口中，打开快捷菜单**客户**节点，然后选择**复制**。
 
-2.  在**Form1.vb**或**Form1.cs**窗体设计器，打开快捷菜单，选择**粘贴**。
+2.  在中**Form1.vb**或**Form1.cs**窗体设计器中，打开快捷菜单，然后选择**粘贴**。
 
      一个 <xref:System.Windows.Forms.DataGridView> 控件、一个 <xref:System.Windows.Forms.BindingSource> 组件以及一个 <xref:System.Windows.Forms.BindingNavigator> 组件将添加到窗体中。
 
-3.  选择**CustomersDataGridView**控件，然后在**属性**窗口集**停靠**属性**填充**。
+3.  选择**CustomersDataGridView**控件，然后在**属性**窗口中设置**停靠**属性设置为**填充**。
 
-4.  在**解决方案资源管理器**，打开快捷菜单**Form1**节点，然后选择**查看代码**以打开代码编辑器中，并添加以下 Imports 或 Using 语句文件的顶部：
+4.  在中**解决方案资源管理器**，打开快捷菜单**Form1**节点，然后选择**查看代码**以打开代码编辑器中，并添加以下`Imports`或`Using`文件顶部的语句：
 
     ```vb
     Imports NorthwindClient.ServiceReference1
@@ -231,28 +231,28 @@ ms.locfileid: "31926805"
 
     ```
 
-6.  在**解决方案资源管理器**，打开 NorthwindCustomers.svc 文件的快捷菜单，选择**用浏览器查看**。 此时将打开 Internet Explorer，并显示该服务的 XML 架构。
+6.  在中**解决方案资源管理器**，打开快捷菜单**NorthwindCustomers.svc**文件，然后选择**用浏览器查看**。 此时将打开 Internet Explorer 并显示服务的 XML 架构。
 
 7.  从 Internet Explorer 地址栏中复制 URL。
 
 8.  在步骤 4 中添加的代码中，选择 `http://localhost:53161/NorthwindCustomers.svc/` 并使用刚刚复制的 URL 替换它。
 
-9. 在菜单栏上，选择**调试**，**启动调试**运行该应用程序。 此时将显示客户信息。
+9. 在菜单栏上依次选择**调试** > **开始调试**运行该应用程序。 显示客户信息。
 
  现在，你有了一个可以使用的应用程序，该应用程序将显示 NorthwindCustomers 服务中的客户的列表。 如果希望通过该服务公开其他数据，则可以修改[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]以包括 Northwind 数据库中的其他表。
 
-在下一个可选步骤中，将学习如何筛选服务返回的数据。
+在下一步的可选步骤中，您将了解如何筛选服务返回的数据。
 
 ## <a name="adding-filtering-capabilities"></a>添加筛选功能
- 在此步骤中，将自定义应用程序以根据客户的城市筛选数据。
+ 在此步骤中，您自定义要按客户所在的城市筛选数据的应用程序。
 
 #### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能
 
-1.  在**解决方案资源管理器**，打开快捷菜单**Form1.vb**或**Form1.cs**节点，然后选择**打开**。
+1.  在中**解决方案资源管理器**，打开快捷菜单**Form1.vb**或**Form1.cs**节点，然后选择**打开**。
 
-2.  添加<xref:System.Windows.Forms.TextBox>控件和<xref:System.Windows.Forms.Button>控件从**工具箱**到窗体。
+2.  添加<xref:System.Windows.Forms.TextBox>控件和一个<xref:System.Windows.Forms.Button>控件从**工具箱**到窗体。
 
-3.  打开的快捷菜单<xref:System.Windows.Forms.Button>控制，并选择**查看代码**，然后添加下面的代码`Button1_Click`事件处理程序：
+3.  打开快捷菜单<xref:System.Windows.Forms.Button>控件中，选择**查看代码**，然后添加以下代码中的`Button1_Click`事件处理程序：
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -283,11 +283,11 @@ ms.locfileid: "31926805"
 
 4.  在以上代码中，使用 `http://localhost:53161/NorthwindCustomers.svc` 事件处理程序中的 URL 替换 `Form1_Load`。
 
-5.  在菜单栏上，选择**调试**，**启动调试**运行该应用程序。
+5.  在菜单栏上依次选择**调试** > **开始调试**运行该应用程序。
 
 6.  在文本框中，输入**伦敦**，然后选择按钮。 将仅显示来自 London 的客户。
 
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [如何： 添加、 更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

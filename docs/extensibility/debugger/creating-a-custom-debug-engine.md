@@ -1,5 +1,5 @@
 ---
-title: 创建自定义调试引擎 |Microsoft 文档
+title: 创建自定义调试引擎 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,54 +15,54 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66ec73a13a3494ae6642e6d0f7397c9f3c1f0b0b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ece2b480890054526552ad3aeea4f3bd1a437f74
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101373"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203675"
 ---
-# <a name="creating-a-custom-debug-engine"></a>创建自定义调试引擎
-调试引擎 (DE) 是允许对特定运行时体系结构进行调试的组件。 通常是每个运行时环境的只有一个 DE 实现。  
+# <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
+调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。  
   
 > [!NOTE]
->  虽然有 TRANSACT-SQL 的单独 DE 实现并且 JScript、 VBScript 和 JScript 共享单个 DE。  
+>  虽然有单独的 DE 实现 TRANSACT-SQL 和 JScript，VBScript 和 JScript 共享单个 DE。  
   
- DE 适用于解释器或操作系统提供执行控件、 断点及表达式评估等调试服务。 这些服务通过 DE 接口实现，并可能导致不同的运行模式之间的转换到调试器。 有关详细信息，请参阅[运行模式](../../extensibility/debugger/operational-modes.md)。  
+ 部署适用于解释器或操作系统提供执行控制、 断点、 和表达式计算等调试服务。 这些服务通过 DE 接口实现，并可能会导致调试程序对不同的操作模式之间的转换。 有关详细信息，请参阅[操作模式](../../extensibility/debugger/operational-modes.md)。  
   
- 创建 DE 包含以下步骤：  
+ 创建部署包含以下步骤：  
   
-1.  使用 Visual Studio 注册 DE  
+1.  通过 Visual Studio 注册 DE  
   
-2.  启用要调试程序  
+2.  启用要进行调试的程序  
   
-3.  执行控制和状态评估  
+3.  实现执行控制和状态评估  
   
 4.  发送事件  
   
-5.  终止和分离  
+5.  设置终止和分离  
   
 ## <a name="in-this-section"></a>本节内容  
  [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)  
- 说明注册随 Visual Studio 的调试引擎，以便可以使用它所需的步骤。  
+ 介绍使用 Visual Studio 注册调试引擎，可以使用它所需的步骤。  
   
  [启用要进行调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)  
- 说明你 DE 可以调试的程序之前，您必须首先启动 DE 或将其附加到的现有程序。  
+ 介绍了你 DE 可调试的程序之前，必须首先启动 DE 或将其附加到现有的程序。  
   
- [执行控件和状态计算](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
- 讨论为什么调试应用程序需要实现执行控件功能。  
+ [实现执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)  
+ 讨论为什么要调试的应用程序要求实现执行控制功能。  
   
  [发送事件](../../extensibility/debugger/sending-events.md)  
- 介绍了作为基于 DCOM 的事件模型调试器和 DE 之间的通信。  
+ 描述调试器和 DE 之间作为事件模型基于 DCOM 的通信。  
   
- [终止和分离](../../extensibility/debugger/termination-and-detaching.md)  
- 说明如何实现正常终止，这意味着没有断点、 异常、 运行时错误或在应用程序要调试的无限循环。  
+ [设置终止和分离](../../extensibility/debugger/termination-and-detaching.md)  
+ 介绍如何实现正常终止，这不意味着任何断点、 异常、 运行时错误或要进行调试的应用程序中的无限循环。  
   
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)  
- 记录在调试会话中发生的事件的调用顺序。  
+ 记录调试会话中发生的事件的调用顺序。  
   
- [如何：调试自定义调试引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
- 说明如何调试自定义 DE。  
+ [如何： 调试自定义调试引擎](../../extensibility/debugger/how-to-debug-a-custom-debug-engine.md)  
+ 说明如何调试自定义部署。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

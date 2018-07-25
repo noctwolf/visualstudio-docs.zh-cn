@@ -1,5 +1,5 @@
 ---
-title: 选择调试引擎实现策略 |Microsoft 文档
+title: 选择调试引擎实施策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3715bac00b25cd2080a1162c8e2ce8cb33e63a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 058e3d3087a46de4bb3c5d9b721d3c9111b77526
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098064"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203707"
 ---
-# <a name="choosing-a-debug-engine-implementation-strategy"></a>选择调试引擎实现策略
-使用运行时体系结构来确定你的调试引擎 (DE) 实现策略。 调试引擎可能会创建进程到程序要调试进程为 Visual Studio 会话调试管理器 (SDM) 或到这两个进程外。 以下准则应帮助这些三个策略之间进行选择。  
+# <a name="choose-a-debug-engine-implementation-strategy"></a>选择调试引擎实施策略
+使用运行时体系结构来确定您的调试引擎 (DE) 实施策略。 可以创建调试引擎中的进程进行调试的程序。 创建调试引擎进程内运行 Visual Studio 会话调试管理器 (SDM)。 或者，创建调试引擎的进程外对这两个值。 以下指导原则可帮助您在以下三个策略之间进行选择。  
   
 ## <a name="guidelines"></a>准则  
- 尽管很可能要进程外 DE SDM 和程序以进行调试，则通常无若要这样做。 跨进程边界的调用是相对较慢。  
+ 虽然可以为 DE 为进程外 SDM 和正在调试的程序，没有通常无需执行此操作。 跨进程边界的调用是相对较慢。  
   
- 调试引擎已提供为 Win32 本机运行时环境和公共语言运行时环境。 如果您必须为这些环境之一替换 DE，必须通过 SDM 创建 DE 进程内。  
+ 调试引擎已提供 Win32 本机运行时环境和公共语言运行时环境。 如果必须替换为这两种环境 DE，应使用 SDM 创建 DE 进程内。  
   
- 否则，你可以选择创建 DE 到 SDM 进程内或进程到要调试程序。 请务必考虑 DE 表达式计算器是否需要频繁访问程序符号存储区，并且是否可以将符号存储区加载到内存中进行快速访问。 此外考虑以下方面：  
+ 否则为您可以创建 DE 进程内运行到 SDM 或进程的程序进行调试。 您需要考虑 DE，表达式计算器是否需要频繁访问程序符号存储区。 或者，如果符号存储区可以加载到内存中以便快速访问。 此外，请考虑以下方法：  
   
--   如果不存在表达式计算器和符号存储区，之间的多个调用或符号存储区可以读取到 SDM 内存空间，创建 DE 进程内运行到 SDM。 它会将附加到你的程序时，您必须返回到 SDM 的调试引擎的 CLSID。 SDM 使用此 CLSID 来创建的 DE 进程内实例。  
+-   如果不是表达式计算器和符号存储区之间的多个调用或符号存储区可以读取到 SDM 内存空间，创建 DE 进程内运行到 SDM。 它将附加到你的程序时，您必须返回到 SDM 调试引擎的 CLSID。 SDM 使用此 CLSID 来创建 DE 的进程内实例。  
   
--   如果 DE 必须调用程序访问符号存储区，创建 DE 进程内运行的程序。 在这种情况下，程序创建 DE 的实例。  
+-   如果 DE 必须调用程序访问符号存储区，创建包含此程序中进程 DE。 在这种情况下，该程序创建 DE 的实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

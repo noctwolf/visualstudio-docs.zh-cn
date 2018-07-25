@@ -1,5 +1,5 @@
 ---
-title: 组合元素 |Microsoft 文档
+title: 组合元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca91102467755610144e4d24405e89ace5a013b7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c8ab79ace55b8248b3770f2e5911bf974e724296
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100934"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233121"
 ---
 # <a name="combo-element"></a>组合元素
-定义在组合框中显示的命令。 有四种类型的组合框，如下所示： 下拉组合、 DynamicCombo、 IndexCombo 和 MRUCombo。  
+定义组合框中显示的命令。 有四种类型的组合框，如下所示： 下拉组合、 DynamicCombo、 IndexCombo 和 MRUCombo。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml 
 <combo guid="guidMyCommandSet" id="MyCommand" defaultWidth="20" idCommandList="MyCommandListID" priority="0x102" type="DropDownCombo">  
   <Parent>... </Parent  
   <CommandFlag>... </CommandFlag>  
@@ -41,20 +41,20 @@ ms.locfileid: "31100934"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 GUID/ID 命令标识符的 GUID。|  
-|id|必须的。 ID 的 GUID/ID 命令标识符。|  
-|defaultWidth|必须的。 一个整数，指定组合框像素宽度。|  
-|idCommandList|必须的。 发送到活动的命令目标要检索的项将在组合框中显示的列表 ID。 ID 将为与控件相同的 GUID 作用域中。|  
-|priority|可选。 一个数字值，指定的优先级。|  
-|类型|可选。 一个枚举的值，指定按钮的类型。<br /><br /> 如果未授予，将使用按钮。<br /><br /> 下拉组合<br /> VSPackage 负责填写此组合框的内容。 用户能在此下拉列表的文本框中键入任何内容。<br /><br /> DynamicCombo<br /> VSPackage 负责填写此组合框的内容。 用户可以编辑此组合，并还在其中选择项。<br /><br /> IndexCombo<br /> 但它 DynamicCombo 相同引发项而不是其文本的索引。<br /><br /> MRUCombo<br /> 填充由集成的开发环境 (IDE) 代表 VSPackage。  用户可以编辑此组合框中。 IDE 会记住最多每个组合中各上次 16 个条目。<br /><br /> 当用户在组合框中，选择某个控件，或进入新的内容时，IDE 将通知合适的 VSPackage。|  
+|guid|必须的。 GUID ID 的命令标识符的 GUID。|  
+|id|必须的。 GUID ID 的命令标识符的 ID。|  
+|defaultWidth|必须的。 一个整数，指定组合框的像素宽度。|  
+|idCommandList|必须的。 发送到活动命令目标来检索要在组合框中显示的项的列表 ID。 该 ID 将是与控件相同的 GUID 作用域中。|  
+|priority|可选。 一个数字值，该值指定的优先级。|  
+|类型|可选。 一个枚举的值，指定的按钮类型。<br /><br /> 如果未指定，将使用按钮。<br /><br /> 下拉组合<br /> VSPackage 负责填写此组合框的内容。 用户不能在这个下拉列表的文本框中键入任何内容。<br /><br /> DynamicCombo<br /> VSPackage 负责填写此组合框的内容。 用户可以编辑此组合，并还在其选择项。<br /><br /> IndexCombo<br /> 相同，不同之处 DynamicCombo 引发项而不是其文本的索引。<br /><br /> MRUCombo<br /> 通过集成的开发环境 (IDE) 代表 VSPackage 来填充。  用户可以编辑此组合框中。 IDE 会记住最多每个组合框上一次 16 个条目。<br /><br /> 当用户在组合框中，选择某个控件，或输入新内容时，IDE 会通知适当的 VSPackage。|  
 |条件|可选。 请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
 ### <a name="child-elements"></a>子元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|父级|可选。 父元素的按钮。|  
-|CommandFlag|必须的。 请参阅[命令标志元素](../extensibility/command-flag-element.md)。 按钮 CommandFlag 有效值如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> 的筛选键<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|父级|可选。 按钮的父元素。|  
+|CommandFlag|必须的。 请参阅[Command flag 元素](../extensibility/command-flag-element.md)。 一个按钮 CommandFlag 有效值如下所示。<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -筛选键<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |字符串|必须的。 请参阅[字符串元素](../extensibility/strings-element.md)。 必须定义子 ButtonText 元素。|  
 |批注|可选注释。|  
   
@@ -66,7 +66,7 @@ ms.locfileid: "31100934"
   
 ## <a name="example"></a>示例  
   
-```  
+```xml  
 <Combo guid="guidWidgetPackage" id="cmdidInsertOptions"  
   defaultWidth="100" idCommandList="cmdidGetInsertOptionsList">  
   <CommandFlag>DynamicVisibility</CommandFlag>  
@@ -86,5 +86,5 @@ ms.locfileid: "31100934"
 </Combo>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

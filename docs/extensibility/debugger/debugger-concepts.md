@@ -1,5 +1,5 @@
 ---
-title: 调试器概念 |Microsoft 文档
+title: 调试器概念 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,34 +13,34 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c157e570179da1e1f16ed5c2c12af63b95b0b61d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e38c743ce7170e0842a3430c7b2aa190df94782b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102676"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203801"
 ---
 # <a name="debugger-concepts"></a>调试器概念
-若要在 Visual Studio 调试包上生成，你需要熟悉在设计包中使用的体系结构概念。  
+若要在 Visual Studio 调试包上构建，需要熟悉在设计包中使用的体系结构概念。  
   
 ## <a name="in-this-section"></a>本节内容  
  [调试会话](../../extensibility/debugger/debug-session.md)  
- 说明调试体系结构中的会话的角色。  
+ 介绍会话的调试体系结构中的角色。  
   
  [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)  
- 定义哪台服务器是在调试体系结构，用抽象和物理术语方面。  
+ 定义哪台服务器是在抽象和物理条款中的调试体系结构方面。  
   
  [端口提供程序](../../extensibility/debugger/port-suppliers.md)  
- 定义什么端口提供程序是在调试体系结构方面。  
+ 定义端口提供程序是在调试体系结构方面。  
   
  [端口](../../extensibility/debugger/ports.md)  
  定义哪些端口是在调试体系结构方面。  
   
  [进程](../../extensibility/debugger/processes.md)  
- 定义哪个进程是在调试体系结构方面。  
+ 定义哪些进程是在调试体系结构方面。  
   
  [程序节点](../../extensibility/debugger/program-nodes.md)  
- 定义在调试体系结构，包括它可以在如何确定本身和在运行的过程方面的程序节点。  
+ 定义根据调试体系结构，包括如何它可以标识本身和它正在运行中的进程的程序节点。  
   
  [程序](../../extensibility/debugger/programs.md)  
  定义在调试体系结构方面的程序。  
@@ -52,14 +52,14 @@ ms.locfileid: "31102676"
  定义在调试体系结构方面的堆栈帧。 堆栈帧是堆栈提供一个线程的执行上下文的抽象。  
   
  [模块](../../extensibility/debugger/modules.md)  
- 定义模块，在调试体系结构，作为代码，例如可执行文件或 DLL 的物理容器方面。  
+ 定义模块，在调试的代码，如可执行文件或 DLL 的物理容器体系结构方面。  
   
  [断点](../../extensibility/debugger/breakpoints-visual-studio-sdk.md)  
- 定义断点的三种类型-挂起绑定和错误-在调试体系结构方面。  
+ 定义了三种类型的断点，挂起、 绑定和错误 — 在调试体系结构方面。  
   
 ## <a name="related-sections"></a>相关章节  
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md)  
- 说明调试引擎 (DE) 如何同时运行代码、 文档和表达式评估上下文中。 描述，为每个三个上下文、 位置、 位置或评估与它相关。  
+ 介绍了调试引擎 (DE) 的运行方式同时代码、 文档和表达式计算上下文中。 介绍的三个上下文、 位置、 位置或与它相关评估每个。  
   
  [调试器组件](../../extensibility/debugger/debugger-components.md)  
  概述 Visual Studio 调试组件，包括调试引擎 (DE)、 表达式计算器 (EE) 和符号处理程序 (SH)。  

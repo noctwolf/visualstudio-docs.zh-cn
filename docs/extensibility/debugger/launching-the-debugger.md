@@ -1,5 +1,5 @@
 ---
-title: 启动调试器 |Microsoft 文档
+title: 启动调试器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,46 +14,46 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2606e0f6c7d5dfe17e4c82528c36b3f7cdc26c5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b1cc4a75a17ea686ef5c5c5c75e21f1c5f74de8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108925"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231111"
 ---
-# <a name="launching-the-debugger"></a>启动调试器
-启动调试器时，需要发送的方法和事件及其正确属性的正确的顺序。  
+# <a name="launch-the-debugger"></a>启动调试器
+启动调试器需要发送正确的方法和具有适当的属性的事件顺序。  
   
 ## <a name="sequences-of-methods-and-events"></a>方法和事件的序列  
   
-1.  通过选择调用会话调试管理器 (SDM)**调试**菜单，，然后选择**启动**。 请参阅[启动程序](../../extensibility/debugger/launching-a-program.md)有关详细信息。  
+1.  会话调试管理器 (SDM) 调用通过选择**调试**菜单，，然后选择**启动**。 有关详细信息，请参阅[启动某个程序](../../extensibility/debugger/launching-a-program.md)。  
   
 2.  SDM 调用[OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法。  
   
-3.  基于调试引擎 (DE) 进程模型，`IDebugProgramNodeAttach2::OnAttach`方法返回以下方法，确定后续操作之一。  
+3.  基于调试引擎 (DE) 进程模型，`IDebugProgramNodeAttach2::OnAttach`方法返回确定接下来会发生的以下方法之一。  
   
-     如果`S_FALSE`返回的调试引擎 (DE) 是要加载： 虚拟机。  
+     如果`S_FALSE`返回时，调试引擎 (DE) 是要加载正在虚拟机。  
   
-     -或-  
+     或  
   
-     如果`S_OK`则会返回，DE 是要加载的 SDM 进程内。 SDM 然后执行以下任务：  
+     如果`S_OK`返回，DE 是要加载 SDM 的过程中。 SDM 然后执行以下任务：  
   
-    1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)获取 DE 的引擎信息。  
+    1.  调用[GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md)了解 DE 引擎。  
   
     2.  共同创建 DE。  
   
     3.  调用[附加](../../extensibility/debugger/reference/idebugengine2-attach.md)。  
   
-4.  DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到与 SDM`EVENT_SYNC`属性。  
+4.  DE 发送[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   
-5.  DE 发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)到与 SDM`EVENT_SYNC`属性。  
+5.  DE 发送[IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   
-6.  DE 发送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)到与 SDM`EVENT_SYNC`属性。  
+6.  DE 发送[IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   
-7.  DE 发送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)到与 SDM`EVENT_SYNC`属性。  
+7.  DE 发送[IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   
-8.  DE 发送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)到与 SDM`EVENT_SYNC`属性。  
+8.  DE 发送[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)到使用 SDM`EVENT_SYNC`属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)   
  [启动程序](../../extensibility/debugger/launching-a-program.md)

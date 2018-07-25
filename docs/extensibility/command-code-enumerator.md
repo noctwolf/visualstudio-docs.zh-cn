@@ -1,5 +1,5 @@
 ---
-title: 命令代码枚举器 |Microsoft 文档
+title: 命令代码枚举器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ba40c0506bdeecc7d6438f83f2d4342c62cc2e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 67c133339f47a3f15822e4ff79587f9a09253a66
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098649"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231969"
 ---
 # <a name="command-code-enumerator"></a>命令代码枚举器
-此枚举器使用的选项中[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)和[SccPopulateList](../extensibility/sccpopulatelist-function.md)以指示为其指定的选项的命令。  
+此枚举器使用的选项中[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)并[SccPopulateList](../extensibility/sccpopulatelist-function.md)以指示为其指定的选项的命令。  
   
 ## <a name="syntax"></a>语法  
   
@@ -76,7 +76,7 @@ enum SCCCOMMAND {
  SCC_COMMAND_OPTIONS  
  对应于[SccSetOption](../extensibility/sccsetoption-function.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件](../extensibility/source-control-plug-ins.md)   
  [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)   
  [SccPopulateList](../extensibility/sccpopulatelist-function.md)

@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f3d9dafc2911e05fd76aadd5b08ad2327969839
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: df50443a4a86e1524f20fa61275364b7c6603fdf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548190"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176019"
 ---
-# <a name="debugger-user-interface-xslt"></a>调试器用户界面 (XSLT)
+# <a name="debugger-user-interface-xslt"></a>调试程序用户界面 (XSLT)
 
 本主题介绍调试程序的窗口和对话框。 只讨论具有 XSLT 特定的调试行为的用户界面部分。
 
@@ -52,12 +52,12 @@ ms.locfileid: "34548190"
  XSLT 调试程序使用单独的窗口来显示调试程序输出。 这是用于显示输出的相同窗口**Show XSL Output**命令。
 
 ## <a name="task-list"></a>任务列表
- **任务列表**列出样式表中的所有编译错误。 双击错误可以将光标置于包含错误的行。
+ **任务列表**列出了在样式表中的所有编译错误。 双击错误可以将光标置于包含错误的行。
 
- **任务列表**包括 XSLT 文件中的脚本块中出现的任何错误。
+ **任务列表**XSLT 文件中的脚本块包括出现的任何错误。
 
 > [!NOTE]
-> XSLT 调试程序没有任何警告，所以它们从未出现在**任务列表**。
+> XSLT 调试程序没有任何警告，因此它们永远不会出现在**任务列表**。
 
 ## <a name="breakpoints-window"></a>“断点”窗口
  “断点”窗口显示当前项目中设置的所有断点。 如果在该窗口位于视图中时添加断点，该窗口将自动更新，以显示新的断点。
@@ -75,7 +75,7 @@ ms.locfileid: "34548190"
 ## <a name="call-stack-window"></a>“调用堆栈”窗口
  **调用堆栈**窗口用于查看调用堆栈、 参数类型和参数值的函数的名称。 仅当正在调试的程序处于中断状态时，才显示调用堆栈信息。
 
- 调用堆栈表示 XSLT 执行所经过的各种上下文。 例如，如果没有调用从模板"a"到模板"b"、 模板"a"和模板"b"出现在**调用堆栈**与当前上下文处于列表的最顶端窗口。 用户可以查看当前正在执行的查询。
+ 调用堆栈表示 XSLT 执行所经过的各种上下文。 例如，如果没有从模板调用"a"到模板"b"、 模板"a"和模板"b"中将出现**调用堆栈**与当前上下文的列表的最顶部的窗口。 用户可以查看当前正在执行的查询。
 
  如果模板在 XSLT 文件中没有名称，将使用 XSLT 处理器生成的名称。
 
@@ -97,10 +97,10 @@ ms.locfileid: "34548190"
 ## <a name="disassembly-window"></a>“反汇编”窗口
  “反汇编”窗口显示 XSLT 编译器生成的程序集代码。 此窗口的用法与所有其他 Visual Studio 反汇编窗口相同。
 
- 有关详细信息，[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)。
+ 有关详细信息[如何： 使用反汇编窗口](../debugger/how-to-use-the-disassembly-window.md)。
 
 ## <a name="see-also"></a>请参阅
 
 - [调试 XSLT](../xml-tools/debugging-xslt.md)
-- [调试器基础知识](../debugger/debugger-basics.md)
-- [检查在 Visual Studio 中的自动和局部变量窗口中的变量](../debugger/autos-and-locals-windows.md)
+- [调试器基础知识](../debugger/getting-started-with-the-debugger.md)
+- [检查 Visual Studio 中的自动和局部变量窗口中的变量](../debugger/autos-and-locals-windows.md)

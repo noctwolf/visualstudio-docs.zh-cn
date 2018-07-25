@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 99a57f217cc92051f2b85b1b210ce3adf5a189be
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058758"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176436"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 在实时调试 Visual Studio 会自动启动 Visual Studio 之外运行的应用程序中发生异常或崩溃时。 这使您测试应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。
@@ -176,4 +176,4 @@ static void Main(string[] args)
      若要解决此问题，请使用安装盘重新安装或修复 Visual Studio 安装。
 
 ## <a name="see-also"></a>请参阅
- [调试器安全](../debugger/debugger-security.md)[调试器基础知识](../debugger/debugger-basics.md)[中的实时，调试，Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md) [安全警告： 附加到不受信任的用户拥有的进程可以是危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+ [调试器安全](../debugger/debugger-security.md)[调试器基础知识](../debugger/getting-started-with-the-debugger.md)[中的实时，调试，Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md) [安全警告： 附加到不受信任的用户拥有的进程可以是危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)

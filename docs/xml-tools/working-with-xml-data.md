@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20488e1e6da6b6bcc0bf3cdab875d6c19631521c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fff2c2e16b86e32e561348c4f1cdc870f452858b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693716"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176182"
 ---
 # <a name="working-with-xml-data"></a>使用 XML 数据
 
@@ -40,7 +40,7 @@ XML 编辑器用于编辑 XML 文档。 它提供完整的 XML 1.0 语法检查�
 
 ## <a name="xml-schema-designer"></a>XML 架构设计器
 
-XML 架构设计器与 Visual Studio 和 XML 编辑器，以使你能够使用 XML 架构定义语言 (XSD) 架构集成。
+XML 架构设计器与 Visual Studio 和 XML 编辑器来使你能够使用 XML 架构定义语言 (XSD) 架构集成。
 
 ## <a name="xslt-debugging"></a>XSLT 调试
 
@@ -52,9 +52,9 @@ Visual Studio 支持调试 XSLT 样式表。 使用调试程序，可以在 XSLT
 
 [XML 标准参考](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)提供有关 XML 技术，包括 XML、 文档类型定义 (DTD)、 XML 架构定义语言 (XSD) 和 XSLT 的信息。
 
-[创建和配置 Visual Studio 中的数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)介绍用于创建数据集的设计时工具。
+[创建和配置 Visual Studio 中的数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)用于创建数据集提供设计时工具的说明。
 
-[在托管代码中的 XML Web services](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)讨论如何创建和部署 XML Web 服务以及如何访问 XML Web 服务。
+[在托管代码中的 XML web services](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)讨论了如何创建和部署 XML web 服务以及如何访问 XML web 服务。
 
 ## <a name="see-also"></a>请参阅
 

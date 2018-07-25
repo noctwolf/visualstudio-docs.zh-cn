@@ -1,5 +1,5 @@
 ---
-title: 实现类型可视化工具和自定义查看器 |Microsoft 文档
+title: 实现类型可视化工具和自定义查看器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56d093c2e6380b29c8c9a788ea34d148fbe64b4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c248c62ad35fbe36fab3e7a7d01209832b9996eb
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105348"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232991"
 ---
-# <a name="implementing-type-visualizers-and-custom-viewers"></a>实现类型可视化工具和自定义查看器
+# <a name="implement-type-visualizers-and-custom-viewers"></a>实现类型可视化工具和自定义查看器
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。 
   
- 类型可视化工具和自定义查看器允许用户查看程序比简单的十六进制转储的数字更有意义的方式中的特定类型的数据。 表达式计算器 (EE) 可以将自定义查看器与特定类型的数据或变量相关联。 由 EE 实现这些自定义查看器。 EE 还可以支持外部类型的可视化工具，可能来自于另一个第三方供应商或甚至最终用户。  
+ 类型可视化工具和自定义查看器允许用户查看特定类型的数据是比简单的十六进制转储的数字更有意义的方式。 表达式计算器 (EE) 可以将自定义查看器与特定类型的数据或变量相关联。 EE 通过实现这些自定义查看器。 EE 还可以支持外部类型可视化工具，可能来自另一个第三方供应商或最终用户也是如此。  
   
 ## <a name="discussion"></a>讨论  
   
 ### <a name="type-visualizers"></a>类型可视化工具  
- Visual Studio 会要求有关类型可视化工具以及为每个对象的自定义查看器将在监视窗口中显示的列表。 表达式计算器 (EE) 提供此类列表的每种类型它想要支持类型可视化工具和自定义查看器。 调用[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)和[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)开始整个过程的访问类型可视化工具和自定义查看器 (请参阅[Visualizing 和查看数据](../../extensibility/debugger/visualizing-and-viewing-data.md)有关调用的序列的详细信息)。  
+ Visual Studio 会询问有关类型可视化工具并为每个对象的自定义查看器监视窗口中显示的列表。 (EE) 的表达式计算器提供此类列表中的每种类型，它想要支持类型可视化工具和自定义查看器。 调用[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)并[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)启动整个进程的访问类型可视化工具和自定义查看器 (请参阅[可视化和查看数据](../../extensibility/debugger/visualizing-and-viewing-data.md)有关调用的序列的详细信息)。  
   
 ### <a name="custom-viewers"></a>自定义查看器  
- 自定义查看器在特定的数据类型为 EE 中实现，由表示[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)接口。 自定义查看器不是灵活性不如类型可视化工具，因为仅当执行 EE 实现该特定的自定义查看器，它才可用。 实现自定义查看器是更简单，而不是实现类型可视化工具的支持。 但是，支持类型可视化工具可以提供最大的灵活性向最终用户可视化他或她的数据。 本文的讨论的其余部分涉及仅类型可视化工具。  
+ 自定义查看器在特定的数据类型为 EE 中实现并由[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)接口。 自定义查看器不是灵活性不如类型可视化工具，因为它是可用的仅当执行 EE 实现该特定的自定义查看器时。 实现自定义查看器是实现类型可视化工具的支持比简单得多。 但是，支持类型可视化工具可以提供最大的灵活性向最终用户用于可视化其数据。 在本文的其余部分涉及仅类型可视化工具。  
   
 ## <a name="interfaces"></a>接口  
- EE 实现了以下接口来支持类型可视化工具，可供 Visual Studio:  
+ EE 实现以下接口才能支持类型可视化工具，可供 Visual Studio:  
   
 -   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
@@ -58,7 +58,7 @@ ms.locfileid: "31105348"
   
 -   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [可视化和查看数据](../../extensibility/debugger/visualizing-and-viewing-data.md)   
  [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)

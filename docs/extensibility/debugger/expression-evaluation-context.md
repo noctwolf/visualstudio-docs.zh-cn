@@ -1,5 +1,5 @@
 ---
-title: 表达式计算上下文 |Microsoft 文档
+title: 表达式计算上下文 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1fade5bb18e59a1b9b9e2655ce01b0b5559484e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a01d8fd9e1ac7a439898775bc8b4b0fc933650c
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099140"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232489"
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试，**表达式评估上下文**:  
+在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试**表达式计算上下文**:  
   
--   表示为表达式计算的上下文。 通常情况下，评估上下文对应于在其中评估变量、 参数、 函数和方法的词法范围。 例如，与堆栈帧关联的表达式评估上下文将用于评估本地变量、 方法参数和类成员 （如果适用） 提供上下文。  
+-   表示为表达式计算上下文。 通常情况下，评估上下文对应于在其中计算变量、 参数、 函数和方法的词法范围。 例如，表达式评估上下文与堆栈帧关联将用于评估本地变量、 方法参数和类成员 （如果适用） 提供的上下文。  
   
--   当程序已在断点处停止时存在。 该表达式本身是一种数据结构，表示用于绑定和评估在给定的上下文中的已分析的表达式。  
+-   当程序已停止在断点处存在。 该表达式本身是一种数据结构，表示已准备好绑定和评估给定上下文中的已分析的表达式。  
   
-     在详细信息，使用创建表达式[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 计算表达式，则它会生成一个包含的名称和类型的变量或自变量和其值的可打印字符串。 在监视窗口中或者在 IDE 的局部变量窗口中，会显示此字符串。  
+     在更多详细信息，使用创建表达式[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法。 当计算表达式时，它生成一个包含名称和类型的变量或参数，并且其值的可打印字符串。 在监视窗口中或在 IDE 的局部变量窗口中显示此字符串。  
   
-     给定`BSTR`和[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口，可以创建调试引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口通过分析表达式。 给定`IDebugExpression2`接口，DE 可以获取一个值，通过同步或异步表达式计算。 显示的情况下，此值的名称和类型的变量或参数，以及发送到 IDE。  
+     给定`BSTR`和一个[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口，可以创建调试引擎 (DE) [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口通过分析表达式。 给定`IDebugExpression2`接口，DE 可以获取通过同步或异步表达式计算的值。 此值，以及名称和类型的变量或参数，用于显示发送到 IDE。  
   
-## <a name="see-also"></a>另请参阅  
- [表达式评估接口](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
+## <a name="see-also"></a>请参阅  
+ [表达式计算接口](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md)

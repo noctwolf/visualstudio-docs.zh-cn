@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 代码分析规则集参考
+title: Visual Studio 代码分析规则集引用
 ms.date: 04/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,15 +11,32 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c42e9fcc2f136f6f13ac1c36598210a51b460d1c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 743aeed3ffe71e9362d19406b64960e839fc90f1
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920833"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204396"
 ---
 # <a name="code-analysis-rule-set-reference"></a>代码分析规则集参考
 
-在 Visual Studio 中配置托管的代码项目的代码分析时，你可以从内置的列表中选择*规则集*。 你可以使用一这些内置规则集，也可以[自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以适合您的项目需求。
+在 Visual Studio 中配置托管的代码项目的静态代码分析时，可以从内置列表中选择*规则集*。 您可以使用一个这些内置规则集，也可以[自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以适合你的项目要求。
 
-此部分中的主题描述内置规则集和规则 （或警告） 它们包含。
+在本部分中的主题介绍内置规则集和规则 （或警告） 它们所包含。
+
+> [!NOTE]
+> 在本部分中的规则集适用于静态代码分析。 有关规则集可用于 Roslyn 分析器包的信息，请参阅[使用规则集使用 Roslyn 分析器](analyzer-rule-sets.md)。
+
+- [“所有规则”规则集](all-rules-rule-set.md)
+- [托管代码的“基本更正规则”规则集](basic-correctness-rules-rule-set-for-managed-code.md)
+- [托管代码的“基本设计准则规则”规则集](basic-design-guideline-rules-rule-set-for-managed-code.md)
+- [托管代码的“扩展的更正规则”规则集](extended-correctness-rules-rule-set-for-managed-code.md)
+- [托管代码的“扩展的设计准则规则”规则集](extended-design-guidelines-rules-rule-set-for-managed-code.md)
+- [托管代码的“全球化规则”规则集](globalization-rules-rule-set-for-managed-code.md)
+- [设置托管代码的托管最少量规则规则](managed-minimum-rules-rule-set-for-managed-code.md)
+- [托管代码的“托管建议规则”规则集](managed-recommended-rules-rule-set-for-managed-code.md)
+- [“混合最少量规则”规则集](mixed-minimum-rules-rule-set.md)
+- [“混合建议规则”规则集](mixed-recommended-rules-rule-set.md)
+- [“本机最少量规则”规则集](native-minimum-rules-rule-set.md)
+- [“本机建议规则”规则集](native-recommended-rules-rule-set.md)
+- [托管代码的“安全规则”规则集](security-rules-rule-set-for-managed-code.md)

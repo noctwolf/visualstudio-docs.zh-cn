@@ -1,5 +1,5 @@
 ---
-title: m_children 字段 |Microsoft 文档
+title: m_children 字段 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,32 +13,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e71bc592e77daac877b571b14acd2d62a8657b9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e27704484e5cfb320c8b65432fb3efb283054019
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109972"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231143"
 ---
 # <a name="mchildren-field"></a>m_children 字段
-与此任务注册的子任务的列表。  
+使用此任务中注册的子任务的列表。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib (在*mscorlib.dll*)  
   
- 由于无法访问此内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp 
 .field public class System.Collections.Generic.List`1<class System.Threading.Tasks.Task> m_children  
 ```  
   
 ## <a name="remarks"></a>备注  
- 在任务运行时，仅执行任务的线程应访问此数组。  
+ 运行任务时，只有执行任务的线程应访问此数组。  
   
- 如果完成任务时，其他线程可以访问此字段，只要它们不要向其添加任何内容或从中删除任何内容。  
+ 如果完成此任务，其他线程可以访问此字段，只要它们不将任何内容添加到其中或从中删除任何内容。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [ContingentProperties 类](../../extensibility/debugger/contingentproperties-class-internal-members.md)

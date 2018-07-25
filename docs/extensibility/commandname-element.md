@@ -1,5 +1,5 @@
 ---
-title: CommandName 元素 |Microsoft 文档
+title: CommandName 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a18d5f15ca4c8c258e57a1018b3841b3a47746f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca5f38febab608aedf794fb02dbfbc65debbfc5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097609"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230911"
 ---
 # <a name="commandname-element"></a>CommandName 元素
-`CommandName`元素指定显示的文本的键盘类别中**选项**对话框中，然后在**命令**列入**自定义**对话框框。  
+`CommandName`元素指定的键盘类别中显示的文本**选项**对话框中，然后在**命令**列表中**自定义**对话框框。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,5 +45,5 @@ ms.locfileid: "31097609"
 |-------------|-----------------|  
 |[Strings 元素](../extensibility/strings-element.md)|文本元素，如分组`ButtonText`和`CommandName`。|  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

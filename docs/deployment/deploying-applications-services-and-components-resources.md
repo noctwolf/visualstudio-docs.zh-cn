@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7346de998052ba68dfadf74a09fe0d4339be1614
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1d5b15af932f8d796a27dfc060128617816b9234
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757157"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232168"
 ---
 # <a name="overview-of-deployment-in-visual-studio"></a>在 Visual Studio 中部署的概述
 
@@ -42,7 +42,7 @@ ms.locfileid: "36757157"
 
 ## <a name="azure-app-service"></a>Azure 应用服务
 
-[Azure 应用服务](/azure/app-service/app-service-web-overview)帮助开发人员快速创建各种可缩放的 Web 应用程序和服务，而无需维护基础结构。
+[Azure 应用服务](/azure/app-service/app-service-web-overview)并[Linux 应用服务](/azure/app-service/containers/app-service-linux-intro)帮助开发人员快速创建各种可缩放的 web 应用程序和服务而无需维护基础结构。
 
 确定如何将应用服务具有的计算能力通过选择[定价层或计划](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview)为包含的应用服务。 可以有多个 Web 应用 （和其他应用类型） 共享同一个应用服务，而无需更改定价层。 例如，可以托管在一起在同一个应用服务的开发、 过渡和生产 Web 应用。
 
@@ -57,7 +57,7 @@ ms.locfileid: "36757157"
 
 > 如果想在自己的数据中心或其他本地计算机中使用 Azure 应用服务，可以使用 [Azure 堆栈](https://azure.microsoft.com/overview/azure-stack/)来实现。
 
-发布到 App Service 的详细信息，请参阅[快速入门-发布到 Azure App Service](quickstart-deploy-to-azure.md)。
+发布到 App Service 的详细信息，请参阅[快速入门-将发布到 Azure 应用服务](quickstart-deploy-to-azure.md)并[快速入门-将 ASP.NET Core 发布到 Linux](quickstart-deploy-to-linux.md)。
 
 ## <a name="azure-virtual-machines"></a>Azure 虚拟机
 
