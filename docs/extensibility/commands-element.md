@@ -1,5 +1,5 @@
 ---
-title: 命令元素 |Microsoft 文档
+title: 命令元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d905914c9819671cf8c77d81ec8d51302467a9d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 31f34dbf974ef860ddabd29af0e94b3c65a11f32
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108477"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231003"
 ---
-# <a name="commands-element"></a>命令元素
-表示 VSPackage 工具栏上的命令的集合。 集合可以有最多五个小节中，如下： 菜单、 组、 按钮、 组合和位图。  
+# <a name="commands-element"></a>Commands 元素
+表示 VSPackage 工具栏上的命令的集合。 该集合中可以具有最多五个小节中，如下所示： 菜单、 组、 按钮、 combos 和位图。  
   
- 每个小节子元素，例如，\<菜单 >，由 GUID，数字标识符对是唯一的命令 ID 标识。 GUID 标识的"命令集"，并用于逻辑上相关的命令进行分组。 VSPackage 应定义其自己的命令集以避免与由其他 Vspackage 定义的命令 Id 的冲突。  
+ 每个小节子元素，例如，\<菜单 >，唯一的命令 ID 的 GUID 和数值标识符对标识。 GUID 标识的"命令集"，用于从逻辑上相关的命令进行分组。 VSPackage 应定义其自己的命令集以避免与由其他 Vspackage 定义的命令 Id 冲突。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Commands package="GuidMyPackage" >  
   <Menus>... </Menus>  
   <Groups>... </Groups>  
@@ -47,7 +47,7 @@ ms.locfileid: "31108477"
   
 |特性|描述|  
 |---------------|-----------------|  
-|包|一个 GUID，标识提供了命令的 VSPackage。<br /><br /> 例如，打包 ="guidVsPackage1Pkg"。|  
+|包|标识将提供的命令的 VSPackage 的 GUID。<br /><br /> 例如，包 ="guidVsPackage1Pkg"。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -63,10 +63,10 @@ ms.locfileid: "31108477"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 提供给 IDE 的命令的所有元素。 可能的元素是菜单项、 菜单、 工具栏和组合框。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示的命令的 VSPackage 提供对 IDE 的所有元素。 使用的元素是菜单项、 菜单、 工具栏和组合框。|  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何使用[命令元素](../extensibility/commands-element.md)。  
+ 下面的示例演示如何使用[Commands 元素](../extensibility/commands-element.md)。  
   
 ```  
 <Commands package="guidMyPackage">  
@@ -91,6 +91,6 @@ ms.locfileid: "31108477"
 <Commands>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: NotifyDebuggerOfWaitCompletion 方法 |Microsoft 文档
+title: NotifyDebuggerOfWaitCompletion 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95c510cd0b9be97c53d2026a54335b07bcd1da9f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1288034f171c56e78f17d02f39843cf4ff600e5e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102725"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233095"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 方法
-占位符方法用作由调试器的断点目标。 此方法不能内联或优化。  
+由调试器使用断点目标的占位符方法。 此方法不能内联或优化。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib (在*mscorlib.dll*)  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,9 +34,9 @@ private void NotifyDebuggerOfWaitCompletion()
 ```  
   
 ## <a name="remarks"></a>备注  
- 如果设置其调试器通知位，与任务的所有联接操作应都调用此方法。  
+ 与任务的所有联接操作应都调用此方法，如果其调试器通知位设置。  
   
 ## <a name="requirements"></a>要求  
   
-## <a name="see-also"></a>另请参阅  
- [任务类](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>请参阅  
+ [Task 类](../../extensibility/debugger/task-class-internal-members.md)

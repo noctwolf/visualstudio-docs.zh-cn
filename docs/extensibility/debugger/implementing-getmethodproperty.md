@@ -1,5 +1,5 @@
 ---
-title: 实现 GetMethodProperty |Microsoft 文档
+title: 实现 GetMethodProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3ed7207237a20e4dadc1284aca2d6b41a671353
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e34101ec3e751414fa360c39fde748bd07124b3
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102013"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231512"
 ---
-# <a name="implementing-getmethodproperty"></a>实现 GetMethodProperty
+# <a name="implement-getmethodproperty"></a>实现 GetMethodProperty
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
  Visual Studio 会调用调试引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)，从而又会调用[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)来获取有关当前方法的堆栈帧上的信息。  
   
- 此实现的`IDebugExpressionEvaluator::GetMethodProperty`将执行以下任务：  
+ 此实现`IDebugExpressionEvaluator::GetMethodProperty`执行下列任务：  
   
-1.  调用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，并传入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)对象。 符号提供程序 (SP) 返回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定的地址的方法。  
+1.  调用[GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，并传入[IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)对象。 符号提供程序 (SP) 将返回[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)表示包含指定的地址的方法。  
   
 2.  获取[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)从`IDebugContainerField`。  
   
-3.  实例化类 (调用`CFieldProperty`在此示例中) 实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口并包含`IDebugMethodField`SP 从返回的对象  
+3.  实例化一个类 (称为`CFieldProperty`在此示例中)，它实现[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口并包含`IDebugMethodField`SP 从返回的对象  
   
 4.  返回`IDebugProperty2`接口从`CFieldProperty`对象。  
   
 ## <a name="managed-code"></a>托管代码  
- 此示例演示如何实现`IDebugExpressionEvaluator::GetMethodProperty`在托管代码中。  
+ 此示例演示一种实现`IDebugExpressionEvaluator::GetMethodProperty`在托管代码中。  
   
 ```csharp  
 namespace EEMC  
@@ -69,8 +69,8 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>非托管代码  
- 此示例演示如何实现`IDebugExpressionEvaluator::GetMethodProperty`非托管代码中。  
+## <a name="unmanaged-code"></a>非托管的代码  
+ 此示例演示一种实现`IDebugExpressionEvaluator::GetMethodProperty`非托管代码中。  
   
 ```  
 [CPP]  
@@ -127,5 +127,5 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [局部的实现示例](../../extensibility/debugger/sample-implementation-of-locals.md)

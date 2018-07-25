@@ -1,5 +1,5 @@
 ---
-title: m_taskId 字段 |Microsoft 文档
+title: m_taskId 字段 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51bf2b02079d7b187c50a789910bb0a4d0871b0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77b68e1caa0add0c013740c6a0615995a1fa8bc1
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098318"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232359"
 ---
 # <a name="mtaskid-field"></a>m_taskId 字段
-为支持字段<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>属性。  
+有关支持字段<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>属性。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib (在*mscorlib.dll*)  
   
- 由于无法访问此内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问此内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp  
 .field private int32 m_taskId  
 ```  
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
- [任务类](../../extensibility/debugger/task-class-internal-members.md)
+## <a name="see-also"></a>请参阅  
+ [Task 类](../../extensibility/debugger/task-class-internal-members.md)

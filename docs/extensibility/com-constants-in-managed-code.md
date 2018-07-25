@@ -1,5 +1,5 @@
 ---
-title: 在托管代码中的 COM 常量 |Microsoft 文档
+title: 在托管代码中的 COM 常量 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a8c6cbe2b3a2b5fa559a74dd165b7a729b814d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8a273c5e53f9f7086e8dc96bcb4c36e0b0223d0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101883"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231528"
 ---
 # <a name="com-constants-in-managed-code"></a>在托管代码中的 COM 常量
-托管包框架 (MPF) 使某些标准的 COM 常量提供给托管代码。 供您参考下面列出了这些常量。  
+托管包框架 (MPF) 使一些标准的 COM 常量可用于托管代码。 供你参考下面列出了这些常量。  
   
 ## <a name="boolean-hresult-values"></a>布尔 HRESULT 值  
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>  
@@ -129,5 +129,5 @@ ms.locfileid: "31101883"
   
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [错误处理和返回值](../extensibility/error-handling-and-return-values.md)

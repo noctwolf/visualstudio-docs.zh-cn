@@ -1,5 +1,5 @@
 ---
-title: 组合元素 |Microsoft 文档
+title: Combos 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,14 +14,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 103ce59fe8303f7d044eb7b28ea135f0f449956a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b5f18533e5a4561e361b6d56f502aad95eca5f39
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31097759"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231198"
 ---
-# <a name="combos-element"></a>组合元素
+# <a name="combos-element"></a>Combos 元素
 组[组合元素](../extensibility/combo-element.md)元素。  
   
 ## <a name="syntax"></a>语法  
@@ -47,7 +47,7 @@ ms.locfileid: "31097759"
 |元素|描述|  
 |-------------|-----------------|  
 |[Combos 元素](../extensibility/combos-element.md)|组合元素进行分组。|  
-|[Combo 元素](../extensibility/combo-element.md)|定义在组合框中显示的命令。|  
+|[组合元素](../extensibility/combo-element.md)|定义组合框中显示的命令。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -79,6 +79,6 @@ ms.locfileid: "31097759"
 </Combos>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

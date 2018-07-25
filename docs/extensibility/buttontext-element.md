@@ -1,5 +1,5 @@
 ---
-title: ButtonText 元素 |Microsoft 文档
+title: ButtonText 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fca0fbb22bf51353eeaa64f519face53bfb23c8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8ba4667a34594c764a57788ee468d32733ded8e
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100174"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232002"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
-此字段允许你指定各种菜单中显示的文本。 默认情况下，`ButtonText`元素出现在菜单控制器中。 `ButtonText`元素也成为默认的如果其他文本字段为空白。 `ButtonText`元素不能为空，即使指定了其他文本字段。  
+此字段允许您指定各种菜单中显示的文本。 默认情况下，`ButtonText`元素出现在菜单控制器。 `ButtonText`元素也将成为默认如果其他文本字段为空白。 `ButtonText`元素不能为空，即使指定的其他文本字段。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ButtonText>My Command</ButtonText>  
 ```  
   
@@ -46,7 +46,7 @@ ms.locfileid: "31100174"
 |[Strings 元素](../extensibility/strings-element.md)|文本元素，如分组`ButtonText`和`CommandName`。|  
   
 ## <a name="text-value"></a>文本值  
- 文本值`ButtonText`元素提供的菜单项、 组合和其他用户界面 (UI) 元素具有可见文本显示的文本。  
+ 文本值`ButtonText`元素提供的菜单项、 combos 和其他用户界面 (UI) 元素包含可见文本显示的文本。  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
