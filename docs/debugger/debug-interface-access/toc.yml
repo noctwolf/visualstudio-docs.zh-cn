@@ -1141,5 +1141,3 @@
           href: constants-debug-interface-access-sdk.md
     - name: Dia2dump 示例
       href: dia2dump-sample.md
-    - name: Dia2dump.cpp 源文件
-      href: dia2dump-cpp-source-file.md
