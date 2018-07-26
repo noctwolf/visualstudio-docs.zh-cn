@@ -1,7 +1,7 @@
 ---
-title: 调试接口访问 SDK |Microsoft 文档
+title: 调试接口访问 SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 07/24/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -16,31 +16,30 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 644827f58172b86e774330fddd207ce9ea0ed99b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 279f5b883ca359c38ad8d357d153d02ea022b9da
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457441"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251661"
 ---
 # <a name="debug-interface-access-sdk"></a>调试接口访问 SDK
-Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供访问存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件中的调试信息。 后置编译器工具生成的.pdb 文件的格式进行常量的修订版本，因为公开格式是不切实际的。 使用 DIA API 时，你可以开发的应用程序用于搜索和浏览存储在.pdb 文件的调试信息。 此类应用程序无法，例如，报告堆栈跟踪信息和分析性能数据。  
-  
-## <a name="in-this-section"></a>本节内容  
- [入门](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
- 将功能的概述 DIA SDK，并指定 DIA SDK 以及必需的标头和库文件的安装。  
-  
- [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- 说明了如何使用 DIA API 来查询.pdb 文件。  
-  
- [符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
- 讨论如何在 DIA API 中使用符号和符号标记。  
-  
- [参考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
- 包含接口、 方法、 枚举和结构 DIA API。  
-  
- [Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)  
- 演示如何使用 DIA API 来搜索和浏览调试信息。  
-  
- [Dia2dump.cpp 源文件](../../debugger/debug-interface-access/dia2dump-cpp-source-file.md)  
- 源使用代码[Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)演示 DIA API。
+
+Microsoft 调试接口访问软件开发工具包 (DIA SDK) 提供了调试信息存储在由 Microsoft 后置编译器工具生成的程序数据库 (.pdb) 文件的访问权限。 后置编译器工具生成的.pdb 文件的格式进行常量修订版本，因为公开格式是不切实际的。 使用 DIA API，可以开发应用程序的搜索和浏览存储在.pdb 文件中的调试信息。 此类应用程序，例如，报告堆栈跟踪信息和分析性能数据。
+
+## <a name="in-this-section"></a>本节内容
+
+[入门](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+概述了 DIA SDK 功能，并指定 DIA SDK 以及必需的标头和库文件的安装。
+
+[查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+说明了如何使用 DIA API 来查询.pdb 文件。
+
+[符号和符号标记](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+讨论如何在 DIA API 中使用符号和符号标记。
+
+[参考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+包含接口、 方法、 枚举和结构 DIA API。
+
+[Dia2dump 示例](../../debugger/debug-interface-access/dia2dump-sample.md)  
+说明了如何使用 DIA API 来搜索和浏览的调试信息。

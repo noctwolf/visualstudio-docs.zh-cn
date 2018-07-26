@@ -2,6 +2,7 @@
 
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)安装与你选择的语言的相应工作负荷：
   * ASP.NET: **ASP.NET 和 web 开发**
+  * ASP.NET Core: ASP.NET 工作负载和 **.NET Core 跨平台开发**工作负荷
   * Node.js: **Node.js 开发**
 
 * 一个 Azure 订阅。 如果还没有订阅，[免费注册](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)，其中包括 200 美元的信用额度为 30 天试用期和 12 个月的热门免费服务。

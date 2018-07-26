@@ -11,16 +11,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: e0268c2e65cd08274c2267ad2a4969f6015cbaf4
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39234824"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252357"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>将 ASP.NET Core 应用发布到使用 Visual Studio 在 Linux 上的应用服务
 
 可以使用**发布**工具，用于将 ASP.NET Core 应用发布到 Linux 上的 Azure 应用服务。
+
+部署到应用服务上使用 Linux**发布**工具需要 Visual Studio 2017 版本 15.7。
 
 [!INCLUDE [quickstart-prereqs-azure-linux](includes/quickstart-prereqs-azure-linux.md)]
 

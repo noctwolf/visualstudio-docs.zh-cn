@@ -1,5 +1,5 @@
 ---
-title: 实现表达式的计算示例 |Microsoft 文档
+title: 示例表达式计算的实现 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,32 +15,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9edc31a8bc403f4f6dfcb16847d3cfce5d99b526
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: aac8e120880ba33b1479bd43ae43f5449c9e97d1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127832"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251106"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的实现示例
 > [!IMPORTANT]
->  在 Visual Studio 2015 中，已弃用这种方式实施表达式计算器。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 有关**监视**窗口表达式中，Visual Studio 调用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)生成[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpressionContext2::ParseText` 实例化的表达式计算器 (EE) 和调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)获取[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象。  
+ 有关**Watch**窗口表达式中，Visual Studio 调用[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)以生成[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。 `IDebugExpressionContext2::ParseText` 实例化的表达式计算器 (EE) 和调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)若要获取[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)对象。  
   
- 此实现的`IDebugExpressionEvaluator::Parse`将执行以下任务：  
+ `IDebugExpressionEvaluator::Parse`执行下列任务：  
   
 1.  [C + +]分析表达式来查找错误。  
   
-2.  实例化类 (调用`CParsedExpression`在此示例中) 实现`IDebugParsedExpression`接口，并将存储在类中要分析的表达式。  
+2.  实例化一个类 (称为`CParsedExpression`在此示例中) 运行一次`IDebugParsedExpression`接口，并将存储在类中要分析的表达式。  
   
 3.  返回`IDebugParsedExpression`接口从`CParsedExpression`对象。  
   
 > [!NOTE]
->  在下面的示例中以及 MyCEE 示例中，表达式计算器不分隔从评估分析。  
+>  在下面的示例和 MyCEE 示例中，表达式计算器不会将从评估分析。  
   
 ## <a name="managed-code"></a>托管代码  
- 这是实现`IDebugExpressionEvaluator::Parse`在托管代码中。 请注意此版本的方法将推迟到分析[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)如分析的代码还可以计算在同一时间 (请参阅[监视表达式求值](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
+ 下面的代码演示一种实现`IDebugExpressionEvaluator::Parse`在托管代码中。 此版本的方法将推迟到分析[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)用于分析的代码也计算在同一时间 (请参阅[计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
   
 ```csharp  
 namespace EEMC  
@@ -66,8 +66,8 @@ namespace EEMC
 }  
 ```  
   
-## <a name="unmanaged-code"></a>非托管代码  
- 这是实现`IDebugExpressionEvaluator::Parse`非托管代码中。 此方法调用 helper 函数， `Parse`，以便分析表达式并检查错误，但此方法将忽略所得到的值。 正式评估推迟到[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)时计算分析表达式 (请参阅[监视表达式求值](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
+## <a name="unmanaged-code"></a>非托管的代码  
+下面的代码是实现`IDebugExpressionEvaluator::Parse`非托管代码中。 此方法调用帮助程序函数， `Parse`，以便分析表达式并检查错误，但此方法会忽略生成的值。 正式评估将推迟到[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)时其计算结果分析表达式 (请参阅[计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md))。  
   
 ```cpp  
 STDMETHODIMP CExpressionEvaluator::Parse(  
@@ -110,6 +110,6 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [监视窗口表达式求值](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+## <a name="see-also"></a>请参阅  
+ [评估监视窗口表达式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)
