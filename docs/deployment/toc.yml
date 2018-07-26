@@ -10,6 +10,8 @@
       href: deploying-applications-services-and-components.md
     - name: 部署到 Azure App Service
       href: quickstart-deploy-to-azure.md
+    - name: 部署到适用于 Linux 的应用服务
+      href: quickstart-deploy-to-linux.md
     - name: 部署到网站
       href: quickstart-deploy-to-a-web-site.md
     - name: 部署到本地文件夹
