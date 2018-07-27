@@ -26,14 +26,14 @@
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: 使用 Visual Studio Tools for Unity
       href: using-visual-studio-tools-for-unity.md
-    - name: Visual Studio Tools for Unity 编程
+    - name: 使用 Visual Studio Tools for Unity 进行编程
       href: programming-visual-studio-tools-for-unity.md
       items:
         - name: 自定义 VSTU 创建的项目文件
           href: customize-project-files-created-by-vstu.md
         - name: 与 VSTU 共享 Unity 日志回调
           href: share-the-unity-log-callback-with-vstu.md
-    - name: 使用 Unity 和 Azure 编程
+    - name: 使用 Unity 和 Azure 进行编程
       href: visual-studio-tools-for-unity-azure.md
     - name: 疑难解答和已知问题 (Visual Studio Tools for Unity)
       href: troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
@@ -83,5 +83,5 @@
   items:
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
-    - name: Troubleshooting the Visual Studio Emulator for Android
+    - name: 适用于 Android 的 Visual Studio 模拟器疑难解答
       href: troubleshooting-the-visual-studio-emulator-for-android.md
