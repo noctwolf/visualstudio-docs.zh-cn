@@ -1,5 +1,5 @@
 ---
-title: 在中断模式下单步执行 |Microsoft 文档
+title: 在中断模式中单步执行 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cf10254ec4642bd6dd671124d4a0600794de6fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4fff7edc494c763407c65785fe1de0b3fd77d7b2
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130380"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276502"
 ---
 # <a name="stepping-in-break-mode"></a>在中断模式下单步执行
-下面描述了当调试器处于中断模式，并且必须单步执行代码时出现的过程：  
+以下部分介绍调试器处于中断模式，并且必须单步执行代码时发生的过程：  
   
 ## <a name="stepping-process"></a>单步执行过程  
   
-1.  调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)和[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行一个步骤。  
+1.  调用[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)与[STEPKIND](../../extensibility/debugger/reference/stepkind.md)并[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)自变量执行的步骤。  
   
 2.  完成步骤后，发送[IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md)为停止事件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
