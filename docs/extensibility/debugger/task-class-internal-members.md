@@ -1,5 +1,5 @@
 ---
-title: Task 类的内部成员 |Microsoft 文档
+title: Task 类-内部成员 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161572ece44f3a9f07c9eb40638ca98170e3a86c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d9e9bbf6bbf42b8008850b540a59fa2b5d75b199
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129610"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276759"
 ---
-# <a name="task-class---internal-members"></a>任务类的内部成员
-本主题介绍的内部成员<xref:System.Threading.Tasks.Task?displayProperty=fullName>帮助你的类实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.Task>参考主题。  
+# <a name="task-class---internal-members"></a>任务类-内部成员
+本文介绍的内部成员的<xref:System.Threading.Tasks.Task?displayProperty=fullName>类，可帮助您实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.Task>参考文章。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib (在*mscorlib.dll*)  
   
- 由于无法访问这些内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问这些内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp  
 .class public auto ansi System.Threading.Tasks.Task  
        extends System.Object  
        implements System.Threading.IThreadPoolWorkItem,  
@@ -48,27 +48,27 @@ ms.locfileid: "31129610"
 |名称|描述|  
 |----------|-----------------|  
 |[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|设置或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状态位。|  
-|[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|占位符方法用作由调试器的断点目标。|  
+|[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|由调试器使用断点目标的占位符方法。|  
   
 ### <a name="fields"></a>字段  
   
-|名称|描述|  
+|name|描述|  
 |----------|-----------------|  
 |[m_action](../../extensibility/debugger/m-action-field.md)|表示要在中执行的代码的委托<xref:System.Threading.Tasks.Task>对象。|  
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|将存储的其他属性<xref:System.Threading.Tasks.Task>对象。|  
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|为支持字段<xref:System.Threading.Tasks.Task?displayProperty=fullName>父属性。|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|有关支持字段<xref:System.Threading.Tasks.Task?displayProperty=fullName>父属性。|  
 |[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|存储的当前状态有关的信息<xref:System.Threading.Tasks.Task>对象。|  
-|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|一个表示由该操作将使用的数据的对象。|  
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|为支持字段<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>属性。|  
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|下一步可用标识符<xref:System.Threading.Tasks.Task>对象。|  
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|指示任务已取消之前它已达到运行状态，或任务已对其取消和完成没有出现异常。|  
+|[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|一个对象，表示将由该操作使用的数据。|  
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|有关支持字段<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>属性。|  
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|下一步提供标识符<xref:System.Threading.Tasks.Task>对象。|  
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|指示该任务被取消之前它已达到运行状态，或任务确认其取消和完成且未出现异常。|  
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|指示任务正在运行。|  
-|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|指示由于未经处理的异常完成的任务。|  
+|[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|指示任务已完成，由于未经处理的异常。|  
 |[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|指示任务已成功完成执行。|  
-|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|指示任务已完成执行其委托，正在隐式等待附加的子任务完成。|  
+|[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|指示任务完成执行其委托和隐式等待附加的子任务完成。|  
   
 ## <a name="remarks"></a>备注  
- 下面的内部方法是对调试器引擎有用，因为它们标记为入口<xref:System.Threading.Tasks.Task>执行代码：  
+ 以下内部方法非常有用到调试器引擎，因为它们标记为 entrance<xref:System.Threading.Tasks.Task>代码执行：  
   
 -   `Execute`  
   
@@ -82,6 +82,6 @@ ms.locfileid: "31129610"
   
 -   `InternalWait`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
  [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

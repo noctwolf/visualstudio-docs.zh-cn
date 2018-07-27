@@ -1,5 +1,5 @@
 ---
-title: Taskscheduler 计划的类的内部成员 |Microsoft 文档
+title: TaskScheduler 类-内部成员 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18cd3ec809df921d6baefbf8018fefc77db238d3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97b7531a60f72405d41a5a72c391ba8da91958dc
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126748"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276307"
 ---
-# <a name="taskscheduler-class---internal-members"></a>Taskscheduler 计划的类的内部成员
-本主题介绍的内部成员<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>帮助你的类实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.TaskScheduler>参考主题。  
+# <a name="taskscheduler-class---internal-members"></a>TaskScheduler 类-内部成员
+本文介绍的内部成员的<xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>类，可帮助您实现自定义调试器。 有关此类的常规信息，请参阅<xref:System.Threading.Tasks.TaskScheduler>参考文章。  
   
- **Namespace:** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **程序集：** mscorlib （mscorlib.dll) 中  
+ **程序集：** mscorlib (在*mscorlib.dll*)  
   
- 由于无法访问这些内部成员在.NET Framework 中，以下语法提供共同点中间语言 (CIL)。  
+ 无法从.NET Framework 来访问这些内部成员，因为以下语法提供通用中间语言 (CIL)。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```csharp  
 .class public abstract auto ansi beforefieldinit System.Threading.Tasks.TaskScheduler  
        extends System.Object  
 ```  
@@ -48,6 +48,6 @@ ms.locfileid: "31126748"
   
 ## <a name="remarks"></a>备注  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>   
  [.NET Framework 的并行扩展内幕](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

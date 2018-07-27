@@ -1,5 +1,5 @@
 ---
-title: Outlook 对象模型概述 |Microsoft 文档
+title: Outlook 对象模型概述
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,21 +21,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2d0141611a13e7b1ee9b20b8988466c92f3ce2
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693041"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276984"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
-  若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
+  若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序，<xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹，<xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
   
- 本主题简要概述了 Outlook 对象模型中一些主要对象。 有关可从中了解关于整个 Outlook 对象模型的详细的资源，请参阅[使用 Outlook 对象模型文档](#refdoc)。  
+ 本主题简要概述了 Outlook 对象模型中一些主要对象。 资源可从中了解整个 Outlook 对象模型的详细信息，请参阅[使用 Outlook 对象模型文档](#refdoc)。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何： 使用 Outlook 创建自定义任务报表？](http://go.microsoft.com/fwlink/?LinkID=130315)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何： 使用 Outlook 创建自定义任务报表？](http://go.microsoft.com/fwlink/?LinkID=130315)。  
   
 ## <a name="access-objects-in-an-outlook-project"></a>访问 Outlook 项目中的对象  
  Outlook 提供了许多可与之交互的对象。 若要有效地使用对象模型，你应熟悉以下顶级对象：  
@@ -46,7 +46,7 @@ ms.locfileid: "34693041"
   
 -   <xref:Microsoft.Office.Interop.Outlook.Inspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder>  
+-   <xref:Microsoft.Office.Interop.Outlook.Folder>  
   
 -   <xref:Microsoft.Office.Interop.Outlook.MailItem>  
   
@@ -59,16 +59,16 @@ ms.locfileid: "34693041"
 ### <a name="application-object"></a>应用程序对象  
  <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示 Outlook 应用程序，并且它是 Outlook 对象模型中最高级别的对象。 此对象的一些最重要的成员包括：  
   
--   [CreateItem](http://msdn.microsoft.com/en-us/771707fb-5f34-473d-9fdf-09a6a7f55ece) 方法，可用于创建新项，如电子邮件、任务或约会。  
+-   [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece)方法，可用于创建新项，如电子邮件、 任务或约会。  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 属性，可用于访问将文件夹的内容显示在 Outlook 用户界面 (UI) 中的窗口。  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 属性，可用于访问显示单个项（如电子邮件或会议请求）的内容的窗口。  
   
- 若要获取其实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`项目中的类。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+ 若要获取的实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`在项目中的类。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
 > [!NOTE]  
->  若要帮助避免出现安全警告，当你使用属性和由 Outlook 对象模型监护阻止的方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。  
+>  若要帮助避免出现安全警告，当使用由 Outlook 对象模型监护阻止的属性和方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。  
   
 ### <a name="explorer-object"></a>资源管理器对象  
  <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象表示一个窗口，该窗口显示包含项（如电子邮件、任务或约会）的文件夹的内容。 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象包括方法和属性，可用于修改窗口以及窗口更改时引发的事件。  
@@ -79,7 +79,7 @@ ms.locfileid: "34693041"
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 对象的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveExplorer%2A> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象的 `GetExplorer` 方法以获取当前文件夹的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象的 `GetExplorer` 方法以获取当前文件夹的 <xref:Microsoft.Office.Interop.Outlook.Explorer>。  
   
 ### <a name="inspector-object"></a>检查器对象  
  <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象表示一个窗口，该窗口显示单个项，如电子邮件、任务或约会。 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象包括方法和属性，可用于修改窗口以及窗口更改时引发的事件。  
@@ -92,19 +92,19 @@ ms.locfileid: "34693041"
   
 -   使用特定项的 `GetInspector` 方法（如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>）来检索与之关联的检查器。  
   
-### <a name="mapifolder-object"></a>MAPIFolder 对象  
- <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象表示包含电子邮件、联系人、任务和其他项的文件夹。 Outlook 提供了 16 个默认的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象。  
+### <a name="folder-object"></a>文件夹对象。  
+ <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件、联系人、任务和其他项的文件夹。 Outlook 提供了 16 个默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象。  
   
- 默认的 <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，应用于对象的  
+ 默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，应用于对象的  
   
- Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox 对应于**收件箱**在 Outlook 中的文件夹。  
+ 对应于 Microsoft.Office.Interop.Outlook.OlDefaultFolders.olFolderInbox**收件箱**在 Outlook 中的文件夹。  
   
- 有关示例，演示如何访问默认<xref:Microsoft.Office.Interop.Outlook.MAPIFolder>并创建新<xref:Microsoft.Office.Interop.Outlook.MAPIFolder>，请参阅[如何： 以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
+ 有关示例，演示如何访问默认<xref:Microsoft.Office.Interop.Outlook.Folder>并创建一个新<xref:Microsoft.Office.Interop.Outlook.Folder>，请参阅[如何： 以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)。  
   
 ### <a name="mailitem-object"></a>MailItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示一封电子邮件。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象通常在文件夹中，如 **“收件箱”**、 **“已发送的项目”** 和 **“发件箱”**。 <xref:Microsoft.Office.Interop.Outlook.MailItem> 公开可用于创建和发送电子邮件的属性和方法。  
   
- 有关演示如何创建一封电子邮件的示例，请参阅[如何： 以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
+ 有关演示如何创建一封电子邮件的示例，请参阅[如何： 以编程方式创建电子邮件发送项](../vsto/how-to-programmatically-create-an-e-mail-item.md)。  
   
 ### <a name="appointmentitem-object"></a>AppointmentItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 对象表示会议、一次约会，或 **“日历”** 文件夹中的定期约会或会议。 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 对象包含执行操作（如响应或转发会议请求）的方法和指定会议详细信息（如位置和时间）的属性。  
@@ -114,12 +114,12 @@ ms.locfileid: "34693041"
 ### <a name="taskitem-object"></a>TaskItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象表示要在指定时间范围内执行的任务。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象位于 **“任务”** 文件夹中。  
   
- 若要创建任务，请使用 [对象的](http://msdn.microsoft.com/en-us/771707fb-5f34-473d-9fdf-09a6a7f55ece) CreateItem <xref:Microsoft.Office.Interop.Outlook.Application> 方法，并为参数传入值 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 。  
+ 若要创建一个任务，请使用[CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece)方法<xref:Microsoft.Office.Interop.Outlook.Application>对象，并传入值<xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem>参数。  
   
 ### <a name="contactitem-object"></a>ContactItem 对象  
- <xref:Microsoft.Office.Interop.Outlook.ContactItem>对象表示的联系人**联系人**文件夹。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 对象包含它们表示的人员的各种联系信息，如街道地址、电子邮件地址和电话号码。  
+ <xref:Microsoft.Office.Interop.Outlook.ContactItem>对象表示的联系人的**联系人**文件夹。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 对象包含它们表示的人员的各种联系信息，如街道地址、电子邮件地址和电话号码。  
   
- 有关演示如何创建新联系人的示例，请参阅[如何： 以编程方式向 Outlook 联系人添加一个条目](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 有关演示如何搜索现有联系人的示例，请参阅[如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
+ 有关演示如何创建新的联系人的示例，请参阅[如何： 以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)。 有关演示如何搜索现有联系人的示例，请参阅[如何： 以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)。  
   
 ##  <a name="refdoc"></a> 使用 Outlook 对象模型文档  
  有关 Outlook 对象模型的完整信息，可以参考 Outlook 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
