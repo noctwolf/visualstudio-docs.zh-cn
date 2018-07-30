@@ -145,7 +145,7 @@ using BankAccountNS;
 
 ## <a name="create-the-first-test-method"></a>创建第一个测试方法
 
-在此过程中，编写单元测试方法以验证 `Debit` 类的 `BankAccount` 方法的行为。 `Debit` 方法之前已在本文中显示。
+在此过程中，编写单元测试方法以验证 `BankAccount` 类的 `Debit` 方法的行为。 `Debit` 方法之前已在本文中显示。
 
 至少需要检查三种行为：
 
