@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 9f79cef595b3a58426b596fc1019c59b801a02d5
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: aa4afce6ef50284f1f966054e805b55c86f4daaf
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252357"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341743"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>将 ASP.NET Core 应用发布到使用 Visual Studio 在 Linux 上的应用服务
 
@@ -45,6 +45,13 @@ ms.locfileid: "39252357"
 1. 选择“创建”。 Visual Studio 将应用部署到 Azure 应用服务，并在浏览器中加载 web 应用。 项目属性**发布**窗格显示了站点 URL 和其他详细信息。
 
     ![发布属性窗格中显示一个配置文件摘要](../deployment/media/quickstart-publish-app-service-summary.png)
+
+## <a name="clean-up-resources"></a>清理资源
+
+在前面步骤中，您将创建资源组中的 Azure 资源。 如果不希望在将来需要将这些资源，则可以通过删除资源组将其删除。
+从 Azure 门户中左侧菜单中，选择**资源组**，然后选择**myResourceGroup**。
+在资源组页上，确保列出的资源是要删除的。
+选择**删除**，类型**myResourceGroup**在文本框中，然后选择**删除**。
 
 ## <a name="next-steps"></a>后续步骤
 
