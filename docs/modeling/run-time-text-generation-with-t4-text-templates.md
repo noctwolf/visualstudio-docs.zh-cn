@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 91d232a4eaac7aa9f7a624ecfcc4168659347d8f
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: dde7b368297979e53d4ee09b75961652749d3321
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117649"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380738"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -152,7 +152,7 @@ This report is Company Confidential.
 
 ### <a name="the-code-built-from-the-template"></a>从模板生成代码
 
-在您保存 **.tt**文件，子公司 **.cs**或 **.vb**生成文件。 若要查看此文件在解决方案资源管理器中的，展开 **.tt**文件节点。 在 Visual Basic 项目中，首先选择**显示所有文件**解决方案资源管理器工具栏中。
+在您保存 **.tt**文件，子公司 **.cs**或 **.vb**生成文件。 若要查看此文件中的**解决方案资源管理器**，展开 **.tt**文件节点。 在 Visual Basic 项目中，首先选择**显示所有文件**中**解决方案资源管理器**工具栏。
 
 请注意附属文件包含分部类包含一个名为方法`TransformText()`。 可以从应用程序调用此方法。
 
