@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bef10ec68f5336e9bb80d008e18d6d972c756d
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dea73a4f21a36907e3252530f68263e1a63a8819
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327084"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153912"
 ---
-# <a name="overriding-toolsversion-settings"></a>重写 ToolsVersion 设置
+# <a name="override-toolsversion-settings"></a>重写 ToolsVersion 设置
 可使用以下三种方式之一来更改项目和解决方案的工具集：  
   
-1.  在从命令行生成项目或解决方案时，使用 `/ToolsVersion` 开关（或简称为 `/tv`）  
+1.  在从命令行生成项目或解决方案时，使用 `/ToolsVersion` 开关（或简称为 `/tv`）。  
   
-2.  设置 MSBuild 任务的 `ToolsVersion` 参数  
+2.  设置 MSBuild 任务的 `ToolsVersion` 参数。  
   
 3.  设置解决方案中某个项目的 `$(ProjectToolsVersion)` 参数。 使用此方法，可以在解决方案中使用不同于其他项目的工具集版本生成项目。  
   
@@ -36,14 +36,14 @@ ms.locfileid: "36327084"
 msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug  
 ```  
   
- 在此示例中，所有项目均使用 ToolsVersion 12.0 生成。 （但请参阅本主题后面的“优先级顺序”一节。）  
+ 在此示例中，所有项目均使用 ToolsVersion 12.0 生成。 （但请参阅本主题后面的[优先级顺序](#order-of-precedence)一节。）  
   
  使用命令行上的 `/tv` 开关时，可以选择在个别项目中使用 `$(ProjectToolsVersion)` 属性，使用与解决方案中的其他项目不同的 ToolsVersion 值来生成这些项目。  
   
 ## <a name="override-the-toolsversion-settings-using-the-toolsversion-parameter-of-the-msbuild-task"></a>使用 MSBuild 任务的 ToolsVersion 参数替代 ToolsVersion 设置  
  MSBuild 任务是一个项目生成另一个项目的主要方式。 为了使 MSBuild 任务能够使用与项目中指定的值不同的 ToolsVersion 来生成项目，它提供了名为 `ToolsVersion` 的可选任务参数。 下面的示例演示如何使用此参数：  
   
-1.  创建一个名为 `projectA.proj` 的文件，在其中包含以下代码：  
+1.  创建一个名为“projectA.proj”的文件，在其中包含以下代码：  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  
@@ -61,7 +61,7 @@ msbuild.exe someproj.proj /tv:12.0 /p:Configuration=Debug
     </Project>  
     ```  
   
-2.  创建另一个名为 `projectB.proj` 的文件，在其中包含以下代码：  
+2.  创建另一个名为“projectB.proj”的文件，在其中包含以下代码：  
   
     ```xml  
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003"  

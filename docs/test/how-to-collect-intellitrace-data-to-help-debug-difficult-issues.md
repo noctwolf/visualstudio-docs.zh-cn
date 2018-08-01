@@ -13,21 +13,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6b34993e011a8bf539b6ec2dd70beddf9c96caf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976892"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203847"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
 在 Visual Stdio 中可为 IntelliTrace 配置诊断数据适配器以收集特定诊断跟踪信息。 测试可使用此适配器，测试可以收集应用程序的重要诊断事件，开发人员稍后可使用这些事件通过代码进行跟踪以查找导致出现 Bug 的原因。 IntelliTrace 的诊断数据适配器既可用于手动测试，也可用于自动测试。
 
 > [!NOTE]
-> IntelliTrace 只可用于使用托管代码编写的应用程序。 如果你正在测试将浏览器用作客户端的 Web 应用程序，则不应该在测试设置中为客户端启用 IntelliTrace，因为没有可用于跟踪的托管代码。 在此情况下，你可能需要设置环境并在你的 Web 服务器上远程收集 IntelliTrace 数据。
+> IntelliTrace 只可用于使用托管代码编写的应用程序。 如果你正在测试将浏览器用作客户端的 Web 应用程序，则不应该在测试设置中为客户端启用 IntelliTrace，因为没有可用于跟踪的托管代码。 在此情况下，可能需要设置环境并在你的 Web 服务器上远程收集 IntelliTrace 数据。
 
-IntelliTrace 数据存储在扩展名为 .iTrace 的文件中。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断信息的 IntelliTrace 文件会自动附加到此 Bug 中。
+IntelliTrace 数据存储在扩展名为“.iTrace”的文件中。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断信息的 IntelliTrace 文件会自动附加到此 Bug 中。
 
 > [!NOTE]
 > IntelliTrace 的诊断数据适配器在成功通过测试时未创建 IntelliTrace 文件。 它只对未通过的测试用例保存文件，或者只有当你提交 Bug 时，它才会保存文件。
@@ -73,7 +73,7 @@ IntelliTrace 数据存储在扩展名为 .iTrace 的文件中。 运行测试时
 
 5.  选择“常规”选项卡。选择“仅 IntelliTrace 事件”以记录测试时对性能影响最小的重要诊断事件。
 
-     **-** 或-
+     或
 
      选择“IntelliTrace 事件和调用信息”以记录诊断事件以及用于显示调用信息的方法级别跟踪。 在运行测试时，此跟踪级别可能对性能有影响。
 

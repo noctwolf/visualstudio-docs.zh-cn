@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cd3511d138fb6416d8309a3e32c1e96c9b70502b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750930"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179510"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括的 Web 性能、单元和编码的 UI 测试
 
@@ -35,7 +35,7 @@ ms.locfileid: "34750930"
 
 使用“新建负载测试向导”创建新方案时，可以指定要添加到新方案的测试组合的 Web 性能测试和单元测试。
 
-可使用负载测试编辑器将更多 Web 性能测试和单元测试添加到方案的测试组合。
+可使用“负载测试编辑器”将更多 Web 性能测试和单元测试添加到方案的测试组合。
 
 ![向现有负载测试中添加测试](../test/media/ltest_addingtests.png)
 
@@ -43,7 +43,7 @@ ms.locfileid: "34750930"
 
 1.  打开一个负载测试。
 
-2.  在负载测试编辑器中，右键单击现有方案，然后选择“添加测试”。
+2.  在“负载测试编辑器”中，右键单击现有方案，然后选择“添加测试”。
 
      随即出现“添加测试”对话框。 解决方案中尚未包含在方案中的所有 Web 性能测试、单元测试和编码的 UI 测试都可以添加到方案中。
 
@@ -55,14 +55,14 @@ ms.locfileid: "34750930"
 
 5.  （可选）调整混合控件以指定测试分布。 有关详细信息，请参阅[关于混合控件](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)。
 
-##  <a name="EditingTestMixRemoveTest"></a>从方案中删除测试
+##  <a name="remove-tests-from-a-scenario"></a>从方案中移除测试
  ![从现有负载测试中移除测试](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>从方案中移除测试
 
 1.  打开一个负载测试。
 
-2.  在负载测试编辑器的负载测试树中，右键单击要从中删除测试的方案，然后选择“编辑测试组合”。 随即出现“编辑测试组合”对话框。
+2.  在“负载测试编辑器”的负载测试树中，右键单击要从中删除测试的方案，然后选择“编辑测试组合”。 随即出现“编辑测试组合”对话框。
 
 3.  在网格中选择 Web 性能测试、单元测试或编码的 UI 测试，然后选择“删除”。
 

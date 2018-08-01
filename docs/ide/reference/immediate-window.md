@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee4789bc8ca7359af2df6cf2ff9fbcdd8ba7d6b9
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704520"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177693"
 ---
 # <a name="immediate-window"></a>即时窗口
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。
@@ -129,7 +129,7 @@ ms.locfileid: "33704520"
 - [使用调试器浏览代码](../../debugger/navigating-through-code-with-the-debugger.md)
 - [“命令”窗口](../../ide/reference/command-window.md)
 - [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)
-- [调试器基础知识](../../debugger/debugger-basics.md)
+- [调试器基础知识](../../debugger/getting-started-with-the-debugger.md)
 - [演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用正则表达式](../../ide/using-regular-expressions-in-visual-studio.md)

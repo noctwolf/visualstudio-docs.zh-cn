@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 环境和解释器
 description: 使用 Python 环境窗口来管理全局、虚拟和 Conda 环境、安装 Python 解释器和包以及将环境分配给 Visual Studio 项目。
-ms.date: 06/29/2018
+ms.date: 07/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9ce601d169654c4fddca30b5e9853e18dcae9ac5
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37342739"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232213"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -118,7 +118,7 @@ Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使�
 >
 > 但是，如果你使用文件系统手动移动解释器及其环境，则 Visual Studio 不会知道新位置。 有关更多信息，请参阅[移动解释器](installing-python-interpreters.md#moving-an-interpreter)。
 
-## <a name="fix-invalid-environments"></a>修复无效环境
+## <a name="fix-or-delete-invalid-environments"></a>修复或删除无效环境
 
 如果 Visual Studio 找到环境的注册表项，但解释器的路径无效，则“Python 环境”窗口将显示名称并标注有删除线：
 

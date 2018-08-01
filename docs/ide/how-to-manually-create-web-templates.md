@@ -12,19 +12,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aeaeea5ee4d1d8e65cdc13ca11192a70e0459be1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d092234c183c93ce99e7d864c71c64a332aeb758
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942404"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178938"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 
 创建 Web 模板与创建其他种类的模板不同。 由于 Web 项目模板出现在“添加新网站”对话框中，并且 Web 项目项由编程语言分类，vstemplate 文件必须将模板指定为 Web 模板，并识别该编程语言。
 
 > [!NOTE]
-> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 vstemplate 文件中引用它。 尽管 Web 项目不需要 proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
+> Web 模板必须包含一个空的 .webproj 文件，并且必须在 `Project` 元素的 `File` 属性的 vstemplate 文件中引用它。 尽管 Web 项目不需要 .proj 项目文件，但有必要创建此存根文件以便 Web 模板正确运行。
 
 ## <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板
 
@@ -67,7 +67,7 @@ ms.locfileid: "31942404"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">>
     <TemplateData>
         <Name>MyWebProjecStarterKit</Name>
-        <Description>A simple Web template</Description>
+        <Description>A simple web template</Description>
         <Icon>icon.ico</Icon>
         <ProjectType>Web</ProjectType>
         <ProjectSubType>CSharp</ProjectSubType>

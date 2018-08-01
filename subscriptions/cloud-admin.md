@@ -9,12 +9,12 @@ description: 设置云订阅的管理员
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ff2f63bbc253d459afea504790efee90c7e7e9f
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: a3a275ae81915ddf9eb89a59c4f90108df1f33da
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335679"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231270"
 ---
 # <a name="setting-up-administrators-for-visual-studio-cloud-subscriptions"></a>设置 Visual Studio 云订阅的管理员
 
@@ -46,6 +46,8 @@ Visual Studio 云订阅由管理员进行管理。  管理员可以分配订阅�
 
 新管理员这时可以登录到[管理门户](https://manage.visualstudio.com)，从页面左上角的列表中选择用于购买云订阅的同一个 Azure 订阅，然后开始管理这些订阅。 
 
+> [!NOTE]
+> 如果看到具有访问权限的用户要编辑你未以管理员身份建立的云订阅，他们可能具有基础 Azure 订阅中的角色，使他们能够管理订阅。  这些角色包括：所有者、参与者、服务管理员或共同管理员。有关详细信息，请访问 https://docs.microsoft.com/vsts/billing/add-backup-billing-managers?view=vsts
 
 有关 Visual Studio 云订阅的信息，请参阅“购买云订阅”下的[概述](vscloud-overview.md)。 要购买 Visual Studio 云订阅，请访问 Visual Studio Marketplace：[https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。 
 

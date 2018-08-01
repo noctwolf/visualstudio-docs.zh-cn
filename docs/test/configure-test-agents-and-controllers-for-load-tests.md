@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cbd654cfd05b06646346b8629b646e8450ccf081
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967679"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176464"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
@@ -85,7 +85,7 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 关于测试控制器和测试代理的硬件和软件要求，以及安装它们和配置你的环境以获得最佳性能的过程的重要信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
 
-## <a name="using-the-test-controller-and-test-agent-with-unit-tests"></a>使用测试控制器和测试代理与单元测试
+## <a name="use-the-test-controller-and-test-agent-with-unit-tests"></a>使用测试控制器和测试代理与单元测试
 
 安装 Test Controller 以及一个或多个代理后，可以在负载测试的测试设置中指定是否对 Test Controller 使用远程执行。 此外，你可以指定在测试设置中与代理相关联的角色一起使用的数据和诊断适配器。
 

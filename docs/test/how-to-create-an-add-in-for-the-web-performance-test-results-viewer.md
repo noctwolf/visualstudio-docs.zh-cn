@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2d3f0ec5108d077346eb69f1fb1236a7ecee56d5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751671"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177248"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
-你可以使用以下命名空间来扩展 Web 性能测试结果查看器的 UI：
+可以使用以下命名空间来扩展“Web 性能测试结果查看器”的 UI：
 
 -   <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
@@ -28,7 +28,7 @@ ms.locfileid: "34751671"
 
 此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
 
--   若要扩展 Web 性能测试结果查看器的 UI，必须创建 Visual Studio 外接程序和用户控件。 下面的过程说明如何创建外接程序、用户控件以及如何实现扩展 Web 性能测试结果查看器的 UI 所需的类。
+-   若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>创建或打开包含 ASP.NET Web 应用程序、Web 性能和负载测试项目的解决方案
 
@@ -216,7 +216,7 @@ ms.locfileid: "34751671"
     using WebPerfTestResultsViewerControl;
     ```
 
-14. 向下滚动到 Connect.cs 文件的底端。 如果打开 Web 性能测试结果查看器的多个实例，则需要为 <xref:System.Windows.Forms.UserControl> 添加 GUID 列表。 稍后你将添加使用此列表的代码。
+14. 向下滚动到 Connect.cs 文件的底端。 如果打开“Web 性能测试结果查看器”的多个实例，则需要为 <xref:System.Windows.Forms.UserControl> 添加 GUID 列表。 稍后你将添加使用此列表的代码。
 
      你稍后将编码的 OnDiscconection 方法中使用另一个字符串列表。
 
@@ -227,7 +227,7 @@ ms.locfileid: "34751671"
     private Dictionary<Guid, List<UserControl>> m_controls = new Dictionary<Guid, List<UserControl>>();        private List<string> temporaryFilePaths = new List<string>();
     ```
 
-15. Connect.cs 文件从 <xref:Extensibility.IDTExtensibility2> 类对名为 Connect 的类进行实例化，还包括一些用于实现 Visual Studio 外接程序的方法。 其中一种方法为 OnConnection 方法，用于接收有关外接程序正在加载的通知。 在 OnConnection 方法中，你将使用 LoadTestPackageExt 类为 Web 性能测试结果查看器创建扩展性包。 将以下代码添加到 OnConnection 方法中：
+15. Connect.cs 文件从 <xref:Extensibility.IDTExtensibility2> 类对名为 Connect 的类进行实例化，还包括一些用于实现 Visual Studio 外接程序的方法。 其中一种方法为 OnConnection 方法，用于接收有关外接程序正在加载的通知。 在 OnConnection 方法中，你将使用 LoadTestPackageExt 类为“Web 性能测试结果查看器”创建扩展性包。 将以下代码添加到 OnConnection 方法中：
 
     ```csharp
     public void OnConnection(object application, ext_ConnectMode connectMode, object addInInst, ref Array custom)
@@ -283,7 +283,7 @@ ms.locfileid: "34751671"
 
 2.  选择“应用程序”选项卡，再选择“目标框架”下拉列表，然后选择“.NET Framework 4”并关闭“属性”。
 
-     为支持扩展 Web 性能测试结果查看器所需的 DLL 引用，此操作是必需的。
+     为支持扩展“Web 性能测试结果查看器”所需的 DLL 引用，此操作是必需的。
 
 3.  在“解决方案资源管理器”中，在 WebPerfTestResultsViewerControl 项目中右键单击“引用”节点，然后选择“添加引用”。
 
@@ -347,7 +347,7 @@ ms.locfileid: "34751671"
 
 ### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>为 Web 测试结果查看器运行新的 VS 外接程序
 
-1.  运行 Web 性能测试，您将会看到在 Web 性能测试结果查看器中显示的 WebPerfTestResultsViewerAddin 外接程序的标题为“Sample”的新选项卡。
+1.  运行 Web 性能测试，你将会看到在“Web 性能测试结果查看器”中显示的 WebPerfTestResultsViewerAddin 加载项的标题为“Sample”的新选项卡。
 
 2.  选择此选项卡可查看 DataGridView 中显示的属性。
 
@@ -363,7 +363,7 @@ ms.locfileid: "34751671"
 
 -   **允许加载外接程序组件。** 默认情况下选中此选项。 在选中时，允许在 Visual Studio 中加载外接程序。 在未选中时，禁止在 Visual Studio 中加载外接程序。
 
--   **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，允许从外部网站加载外接程序。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
+-   **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，允许从外部网站加载加载项。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
 
 ## <a name="see-also"></a>请参阅
 

@@ -12,17 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5b35c04d34143731ccf9fe5e8fe02f5389a2e5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3700074a1d087c0626a86559ff1342698d8a4628
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570590"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176105"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   
-## <a name="declaring-targets-in-the-project-file"></a>在项目文件中声明目标  
+## <a name="declare-targets-in-the-project-file"></a>在项目文件中声明目标  
  目标是通过 [Target](../msbuild/target-element-msbuild.md) 元素在项目文件中声明的。 例如，以下 XML 创建一个名为 Construct 的目标，然后，该目标通过 Compile 项类型调用 Csc 任务。  
   
 ```xml  
@@ -56,13 +56,13 @@ ms.locfileid: "31570590"
 -   目标依赖项  
   
 -   `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)  
-  
- 目标决不会在一个生成过程中运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。  
-  
- 有关目标生成顺序的详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)。  
-  
+
+目标决不会在一个生成过程中运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。  
+
+有关目标生成顺序的详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)。  
+
 ## <a name="target-batching"></a>目标批处理  
- 目标元素可能具有 `Outputs` 特性，该特性指定 %(元数据) 形式的元数据。 如果是这样，MSBuild 将针对每个唯一元数据值运行一次目标，对具有该元数据值的项进行分组或“批处理”。 例如，应用于对象的  
+目标元素可能具有 `Outputs` 特性，该特性指定 %(\<Metadata>) 形式的元数据。 如果是这样，MSBuild 将针对每个唯一元数据值运行一次目标，对具有该元数据值的项进行分组或“批处理”。 例如，应用于对象的  
   
 ```xml  
 <ItemGroup>  

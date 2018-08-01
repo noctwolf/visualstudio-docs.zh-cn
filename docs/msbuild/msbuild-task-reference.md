@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 939a1220d1106330ffbec7fa1af705567ff66dd6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5fd171f01a44a38d9256576780c3a15a322d0a43
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576035"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155296"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 任务提供在生成过程中运行的代码。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供以下列表中的任务。 安装 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 时，可使用其他任务来生成 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目。 有关详细信息，请参阅 [Visual C++ 任务](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -72,7 +72,7 @@ ms.locfileid: "31576035"
  将文件复制到一个新位置。  
   
  [CreateCSharpManifestResourceName 任务](../msbuild/createcsharpmanifestresourcename-task.md)  
- 从给定的 .resx 文件名或其他资源创建 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 样式的清单名称。  
+ 根据给定的 .resx 文件名或其他资源创建 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 样式的清单名称。  
   
  [CreateItem 任务](../msbuild/createitem-task.md)  
  填充输入项中的项集合，允许从一个列表向另一个列表复制项。  
@@ -81,13 +81,16 @@ ms.locfileid: "31576035"
  填充输入值中的属性，允许从一个属性或字符串向另一个属性或字符串复制值。  
   
  [CreateVisualBasicManifestResourceName 任务](../msbuild/createvisualbasicmanifestresourcename-task.md)  
- 从给定的 .resx 文件名或其他资源创建 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 样式的清单名称。  
+ 根据给定的 .resx 文件名或其他资源创建 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 样式的清单名称。  
   
  [Csc 任务](../msbuild/csc-task.md)  
  调用 Visual C# 编译器以生成可执行文件、动态链接库或代码模块。  
   
  [Delete 任务](../msbuild/delete-task.md)  
  删除指定的文件。  
+
+ [DownloadFile 任务](../msbuild/downloadfile-task.md)  
+ 将文件下载到指定位置。  
   
  [Error 任务](../msbuild/error-task.md)  
  基于评估的条件语句，停止生成操作并记录错误。  
@@ -168,7 +171,7 @@ ms.locfileid: "31576035"
  确定应用程序是否需要 .NET Framework 3.5 SP1。  
   
  ResGen 任务  
- 已过时。 使用 [GenerateResource Task](../msbuild/generateresource-task.md) 任务可以将 .txt 和 .resx 文件转换成公共语言运行时二进制 .resources 文件，反之亦然。  
+ 已过时。 使用 [GenerateResource 任务](../msbuild/generateresource-task.md)可以将 .txt 和 .resx 文件转换成公共语言运行时二进制 .resources 文件，反之亦然。  
   
  [ResolveAssemblyReference 任务](../msbuild/resolveassemblyreference-task.md)  
  确定依赖指定程序集的所有程序集。  
@@ -200,6 +203,9 @@ ms.locfileid: "31576035"
  [UnregisterAssembly 任务](../msbuild/unregisterassembly-task.md)  
  注销用于 COM 互操作的指定程序集。  
   
+ [Unzip 任务](../msbuild/unzip-task.md)  
+ 将 .zip 存档解压缩到指定位置。
+  
  [UpdateManifest 任务](../msbuild/updatemanifest-task.md)  
  更新清单中所选的属性并重新签名。  
   
@@ -223,6 +229,9 @@ ms.locfileid: "31576035"
   
  [XslTransformation 任务](../msbuild/xsltransformation-task.md)  
  使用可扩展样式表语言转换 (XSLT) 或编译的 XSLT 转换 XML 输入，并将其输出到一台输出设备或一个文件。  
+  
+  [ZipDirectory 任务](../msbuild/zipdirectory-task.md)  
+ 根据目录内容创建 .zip 存档。
   
 ## <a name="see-also"></a>请参阅  
  [MSBuild 参考](../msbuild/msbuild-reference.md)   

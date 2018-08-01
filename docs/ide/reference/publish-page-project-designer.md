@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c323fd5f5f54bbc5c53934505c43dd20a9d58591
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 894328fed089ea631af41f7aa7ef1f08d6dc4d8f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950486"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179497"
 ---
 # <a name="publish-page-project-designer"></a>“项目设计器”->“发布”页
 “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。
@@ -43,7 +43,7 @@ ms.locfileid: "31950486"
 
  确定应用程序是直接从“发布位置”  运行（选择“该应用程序只能联机使用”  时），还是安装并添加到“开始”  菜单和“控制面板”  中的“添加或删除程序”  项（选择“该应用程序也可以脱机使用”  时）。
 
- 对于 WPF Web 浏览器应用程序，“该应用程序也可以脱机使用”  选项处于禁用状态，因为此类应用程序只能联机使用。
+ 对于 WPF Web 浏览器应用，“该应用程序也可以脱机使用”选项处于禁用状态，因为此类应用程序只能联机使用。
 
  **应用程序文件**
 

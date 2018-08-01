@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: f4d6f35b5cae65708a0be4393710ef1d5934977a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: c9b863fa8b3571dc0f29ebc762295a4832536046
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34549059"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276837"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用探查器命令行收集 .NET Framework 内存数据
 
@@ -25,8 +25,8 @@ ms.locfileid: "34549059"
   
 |任务|相关的内容|  
 |----------|---------------------|  
-|**启动应用程序和分析 .NET 内存**|-   [如何：通过探查器启动 .NET Framework 应用程序以收集内存数据](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**将探查器附加到 .NET 应用程序**|-   [如何：将探查器附加到 .NET Framework 应用程序以收集内存数据](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)|  
+|**启动应用程序和分析 .NET 内存**|-   [如何：通过探查器启动 .NET Framework 应用程序以收集内存数据](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**将探查器附加到 .NET 应用程序**|-   [如何：将探查器附加到 .NET Framework 应用程序以收集内存数据](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)|  
 |**检测应用程序以收集 .NET 内存数据**|-   [如何：使用探查器检测独立 .NET Framework 组件并收集内存数据](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>相关任务

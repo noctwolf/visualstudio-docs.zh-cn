@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d46c8d3e076e194369cce2e01325f53aa6a36
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578882"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153155"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。  
@@ -65,15 +65,15 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
   
 -   其他托管工具。  
   
- 这些托管工具包括 ResGen.exe 和 TlbImp.exe。  
-  
- MSBuild 提供了两种方式来访问工具集：  
+  这些托管工具包括 ResGen.exe 和 TlbImp.exe。  
+
+MSBuild 提供了两种方式来访问工具集：  
   
 -   使用工具集属性  
   
 -   使用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 方法  
-  
- 工具集属性指定工具的路径。 自 Visual Studio 2017 起，MSBuild 不再保存在固定位置。 此文件默认位于 MSBuild\15.0\Bin 文件夹中（相对 Visual Studio 安装位置而言）。 在早期版本中，MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
+
+工具集属性指定工具的路径。 自 Visual Studio 2017 起，MSBuild 不再保存在固定位置。 此文件默认位于 MSBuild\15.0\Bin 文件夹中（相对 Visual Studio 安装位置而言）。 在早期版本中，MSBuild 使用项目文件中的 `ToolsVersion` 属性的值以查找相应的注册表项，然后使用该注册表项中的信息来设置工具集属性。 例如，如果 `ToolsVersion` 的值为 `12.0`，则 MSBuild 将根据以下注册表项设置工具集属性：HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0。  
   
  这些是工具集属性：  
   
@@ -82,8 +82,8 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 -   `SDK40ToolsPath` 为 MSBuild 4.x（可以是 4.0 或 4.5）指定其他托管工具的路径。  
   
 -   `SDK35ToolsPath` 为 MSBuild 3.5 指定其他托管工具的路径。  
-  
- 或者，可以通过调用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 类的方法以编程方式确定工具集。 此类包括以下方法：  
+
+或者，可以通过调用 <xref:Microsoft.Build.Utilities.ToolLocationHelper> 类的方法以编程方式确定工具集。 此类包括以下方法：  
   
 -   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> 返回 .NET Framework 文件夹的路径。  
   
@@ -108,14 +108,14 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 -   “11.0”表示 .NET Framework 4.5 子工具集  
   
 -   “12.0”表示 .NET Framework 4.5.1 子工具集 
-  
- 子工具集 10.0 和 11.0 应与 ToolsVersion 4.0 一起使用。 在更高版本中，子工具集版本和 ToolsVersion 应匹配。  
-  
- 在生成期间，MSBuild 将自动确定并设置 `VisualStudioVersion` 属性的默认值（如果尚未定义）。  
-  
- MSBuild 为 `ToolLocationHelper` 方法提供重载，它们可将 `VisualStudioVersion` 枚举值添加为参数  
-  
- 在 .NET Framework 4.5 中引入了子工具集。  
+
+子工具集 10.0 和 11.0 应与 ToolsVersion 4.0 一起使用。 在更高版本中，子工具集版本和 ToolsVersion 应匹配。  
+
+在生成期间，MSBuild 将自动确定并设置 `VisualStudioVersion` 属性的默认值（如果尚未定义）。  
+
+MSBuild 为 `ToolLocationHelper` 方法提供重载，它们可将 `VisualStudioVersion` 枚举值添加为参数  
+
+在 .NET Framework 4.5 中引入了子工具集。  
   
 ## <a name="see-also"></a>请参阅  
  [标准和自定义工具集配置](../msbuild/standard-and-custom-toolset-configurations.md)   

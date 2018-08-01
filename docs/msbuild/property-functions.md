@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1665b0b5a12f8e1719116e61f13ac915083c0d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978214"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155511"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -43,7 +43,7 @@ $(ProjectOutputFolder.Substring(0,3))
 
 ### <a name="static-property-functions"></a>静态属性函数
 
-在生成脚本中，可以访问许多系统类的静态属性和方法。 要获取静态属性的值，请使用以下语法，其中 *Class* 是系统类的名称，*Property* 是属性的名称。
+在生成脚本中，可以访问许多系统类的静态属性和方法。 要获取静态属性的值，请使用以下语法，其中 \<Class> 是系统类的名称，\<Property> 是属性的名称。
 
 ```fundamental
 $([Class]::Property)
@@ -55,7 +55,7 @@ $([Class]::Property)
 <Today>$([System.DateTime]::Now)</Today>
 ```
 
-要调用静态方法，请使用以下语法，其中 *Class* 是系统类的名称，*Method* 是方法的名称，而 *(Parameters)* 是方法的参数列表：
+要调用静态方法，请使用以下语法，其中 \<Class> 是系统类的名称，\<Method> 是方法的名称，而 (\<Parameters) 是方法的参数列表：
 
 ```fundamental
 $([Class]::Method(Parameters))
@@ -119,7 +119,7 @@ $([Class]::Method(Parameters))
 
 ### <a name="calling-instance-methods-on-static-properties"></a>对静态属性调用实例方法
 
-如果访问返回对象实例的静态属性，则可以调用该对象的实例方法。 要调用实例方法，请使用以下语法，其中 *Class* 是系统类的名称，*Property* 是属性的名称，*Method* 是方法的名称，而 *(Parameters)* 是方法的参数列表：
+如果访问返回对象实例的静态属性，则可以调用该对象的实例方法。 要调用实例方法，请使用以下语法，其中 \<Class> 是系统类的名称，\<Property> 是属性的名称，\<Method> 是方法的名称，而 (\<Parameters>) 是方法的参数列表：
 
 ```fundamental
 $([Class]::Property.Method(Parameters))
@@ -135,7 +135,7 @@ $([Class]::Property.Method(Parameters))
 
 ### <a name="msbuild-property-functions"></a>MSBuild 属性函数
 
-可以访问生成中的许多静态方法，以提供算术、按位逻辑和转义字符支持。 可以使用以下语法访问这些方法，其中 *Method* 是方法的名称，*Parameters* 是方法的参数列表。
+可以访问生成中的许多静态方法，以提供算术、按位逻辑和转义字符支持。 可以使用以下语法访问这些方法，其中 \<Method> 是方法的名称，(\<Parameters>) 是方法的参数列表。
 
 ```fundamental
 $([MSBuild]::Method(Parameters))
@@ -341,4 +341,5 @@ Output:
 ## <a name="see-also"></a>请参阅
 
 [MSBuild 属性](../msbuild/msbuild-properties.md)
+
 [MSBuild 概述](../msbuild/msbuild.md)

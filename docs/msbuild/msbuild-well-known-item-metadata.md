@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd5bad9a37b497a90ea83869c795781a96d1ca26
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3d1ec2d2ade7162f08db954d8a7bebe059a21878
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572603"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154555"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 常见的项元数据
-下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 `C:\MyProject\Source\Program.cs` 包含在项目中。  
+下表描述了创建每个项时分配给该项的元数据。 在每个示例中，以下项声明用于将文件 C:\MyProject\Source\Program.cs 包含在项目中。  
   
 ```xml  
 <ItemGroup>  
@@ -36,14 +36,14 @@ ms.locfileid: "31572603"
   
 |项元数据|描述|  
 |-------------------|-----------------|  
-|%(FullPath)|包含项的完整路径。 例如:<br /><br /> `C:\MyProject\Source\Program.cs`|  
-|%(RootDir)|包含项的根目录。 例如:<br /><br /> `C:\`|  
-|%(Filename)|包含项的文件名，但不包含扩展名。 例如:<br /><br /> `Program`|  
-|%(Extension)|包含项的文件扩展名。 例如:<br /><br /> `.cs`|  
-|%(RelativeDir)|包含 `Include` 属性中指定的路径，直到最后的反斜杠 (\\)。 例如:<br /><br /> `Source\`|  
-|%(Directory)|包含项的目录，但不包含根目录。 例如:<br /><br /> `MyProject\Source\`|  
+|%(FullPath)|包含项的完整路径。 例如:<br /><br /> C:\MyProject\Source\Program.cs|  
+|%(RootDir)|包含项的根目录。 例如:<br /><br /> C:\\|  
+|%(Filename)|包含项的文件名，但不包含扩展名。 例如:<br /><br /> Program|  
+|%(Extension)|包含项的文件扩展名。 例如:<br /><br /> .cs|  
+|%(RelativeDir)|包含 `Include` 属性中指定的路径，直到最后的反斜杠 (\\)。 例如:<br /><br /> Source\\|  
+|%(Directory)|包含项的目录，但不包含根目录。 例如:<br /><br /> MyProject\\Source\\|  
 |%(RecursiveDir)|如果 `Include` 属性包含通配符 \*\*，则此元数据将指定代替通配符的路径的一部分。 有关通配符的详细信息，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。<br /><br /> 如果文件夹 C:\MySolution\MyProject\Source\\ 包含文件 Program.cs，并且该项目文件包含此项：<br /><br /> `<ItemGroup>`<br /><br /> `<MyItem Include="C:\**\Program.cs" />`<br /><br /> `</ItemGroup>`<br /><br /> `%(MyItem.RecursiveDir)` 的值为 MySolution\MyProject\Source\\。|  
-|%(Identity)|`Include` 属性中指定的项。 例如:<br /><br /> `Source\Program.cs`|  
+|%(Identity)|`Include` 属性中指定的项。 例如:<br /><br /> Source\Program.cs|  
 |%(ModifiedTime)|包含上一次修改项的时间戳。 例如:<br /><br /> `2004-07-01 00:21:31.5073316`|  
 |%(CreatedTime)|包含创建项的时间戳。 例如:<br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|包含上一次访问项的时间戳。<br /><br /> `2004-08-14 16:52:36.3168743`|  

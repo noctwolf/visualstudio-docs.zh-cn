@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03a6bd0c570fb34fc5e1db139ccfa8d0d5d02ea4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c267c8a0d76fdda08112e428c0fc7403daa1f30
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572499"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178557"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素来启用项目文件中项的静态声明。 但是，只能在项级别添加元数据，即使所有项的元数据均相同，也是如此。 从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始引入了一个名为 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的项目元素，从而克服了这一限制。 使用 *ItemDefinitionGroup* 可以定义一组项定义，这些项定义将默认元数据值添加到命名项类型中的所有项中。  
@@ -73,7 +73,7 @@ ms.locfileid: "31572499"
   
 -   环境变量  
   
--   \(MSBuild.exe 命令行\)中的全局属性  
+-   全局属性（来自 MSBuild.exe 命令行）  
   
 -   保留属性  
   
@@ -91,7 +91,7 @@ ms.locfileid: "31572499"
   
 -   最新规范优先。  
   
- 当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如:  
+当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -107,9 +107,9 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 在本例中，向“m”和“n”添加元数据“o”。  
+在本例中，向“m”和“n”添加元数据“o”。  
   
- 此外，还可以添加先前定义的元数据值。 例如:  
+此外，还可以添加先前定义的元数据值。 例如:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -124,12 +124,12 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>    
 ```  
   
- 在本例中，元数据“m”先前定义的值 \(m1\) 被添加至新值 \(m2\)，因此最终值为“m1;m2”。  
+在本例中，元数据“m”先前定义的值 \(m1\) 被添加至新值 \(m2\)，因此最终值为“m1;m2”。  
   
 > [!NOTE]
 >  在相同的 ItemDefinitionGroup 中也可能出现这种情况。  
   
- 当替代先前定义的元数据时，最新规范优先。 在下列示例中，元数据“m”的最终值从“m1”变为“m1a”。  
+当替代先前定义的元数据时，最新规范优先。 在下列示例中，元数据“m”的最终值从“m1”变为“m1a”。  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -144,7 +144,7 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>    
 ```  
   
-## <a name="using-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用条件  
+## <a name="use-conditions-in-an-itemdefinitiongroup"></a>在 ItemDefinitionGroup 中使用条件  
  可使用 ItemDefinitionGroup 中的条件来控制元数据的包含。 例如:  
   
 ```xml  
@@ -155,12 +155,12 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 在这种情况下，仅当“Configuration”属性的值为“Debug”时，才包括项“i”上的默认元数据“m1”。  
+在这种情况下，仅当“Configuration”属性的值为“Debug”时，才包括项“i”上的默认元数据“m1”。  
   
 > [!NOTE]
 >  在条件中仅支持本地元数据引用。  
   
- 对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项\-。 例如:  
+对项（而非定义组）而言，在先前的 ItemDefinitionGroup 中定义的元数据的引用是本地的。 也就是说，引用的范围特定于项。 例如:  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -190,7 +190,7 @@ ms.locfileid: "31572499"
 
 在上述示例中，“m”将设置为值“m1”，作为项“yes”的条件引用项“i”的元数据值。 
   
-## <a name="overriding-and-deleting-metadata"></a>替代和删除元数据  
+## <a name="override-and-delete-metadata"></a>替代和删除元数据  
  通过将元数据值设置为空白，在 ItemDefinitionGroup 元素中定义的元数据可以在之后的 ItemDefinitionGroup 元素中被替代。 还可通过将元数据项设置为空值，高效删除元数据项。 例如:  
   
 ```xml  
@@ -206,7 +206,7 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 项“i”仍包含元数据“m”，但此时它的值为空。  
+项“i”仍包含元数据“m”，但此时它的值为空。  
   
 ## <a name="scope-of-metadata"></a>元数据范围  
  ItemDefinitionGroups 在定义的位置具有全局范围和全局属性。 ItemDefinitionGroup 中的默认元数据定义可自引用。 例如，以下示例使用了一个简单的元数据引用：  
@@ -220,7 +220,7 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 还可使用限定的元数据引用：  
+还可使用限定的元数据引用：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -231,7 +231,7 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 但是，以下项无效：  
+但是，以下项无效：  
   
 ```xml  
 <ItemDefinitionGroup>  
@@ -242,7 +242,7 @@ ms.locfileid: "31572499"
 </ItemDefinitionGroup>  
 ```  
   
- 从[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始，ItemGroups 可以自引用。 例如:  
+从 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 开始，ItemGroups 可以自引用。 例如:  
   
 ```xml  
 <ItemGroup>  

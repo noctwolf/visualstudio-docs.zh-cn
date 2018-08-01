@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e56cc8671da9639344b6531a530029a97c02e707
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: cd6736242e6fa130fdbb356261cae8e63f3c952f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327149"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154783"
 ---
 # <a name="msbuild"></a>MSBuild
-[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在你的项目或解决方案文件中调用 msbuild.exe，你可以在未安装 Visual Studio 的环境中安排和生成产品。  
+[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。  
   
  Visual Studio 使用 MSBuild 来加载和生成托管项目。 Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含 MSBuild XML 代码，当你使用 IDE 来生成项目时，此代码就会运行。 Visual Studio 项目会导入所有必要的设置和生成过程来执行典型的开发工作，但你可以从 Visual Studio 内或通过使用 XML 编辑器对其进行扩展或修改。  
   
@@ -44,36 +44,16 @@ ms.locfileid: "36327149"
     -   从生成输出创建压缩文件。  
   
     -   执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。  
-  
- 你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
+
+你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
 > [!NOTE]
 >  你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成和发布](/vsts/build-release/index)。  
   
  本主题概述了 MSBuild。 有关介绍性教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
-  
- **在本主题中**  
-  
--   [在命令提示符处使用 MSBuild](#BKMK_CommandPrompt)  
-  
--   [项目文件](#BKMK_ProjectFile)  
-  
-    -   [属性](#BKMK_Properties)  
-  
-    -   [项](#BKMK_Items)  
-  
-    -   [任务](#BKMK_Tasks)  
-  
-    -   [目标](#BKMK_Targets)  
-  
--   [生成日志](#BKMK_BuildLogs)  
-  
--   [在 Visual Studio 中使用 MSBuild](#BKMK_VisualStudio)  
-  
--   [多定向](#BKMK_Multitargeting)  
-  
-##  <a name="BKMK_CommandPrompt"></a>在命令提示符处使用 MSBuild  
- 若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 `MyProj.proj`，并将 `Configuration` 属性设置为 `Debug`。  
+
+##  <a name="use-msbuild-at-a-command-prompt"></a>在命令提示符处使用 MSBuild  
+ 若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 MyProj.proj，并将 `Configuration` 属性设置为 `Debug`。  
   
 ```cmd  
 MSBuild.exe MyProj.proj /property:Configuration=Debug  
@@ -84,7 +64,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 > [!IMPORTANT]
 >  在下载项目之前，请确定代码的可信度。  
   
-##  <a name="BKMK_ProjectFile"></a>项目文件  
+##  <a name="project-file"></a>项目文件  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 使用基于 XML 的项目文件格式，既简单又可扩展。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式允许开发者描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。  
   
  以下各节介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参阅[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
@@ -104,7 +84,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 <Configuration  Condition=" '$(Configuration)' == '' ">Debug</Configuration>  
 ```  
   
- 在整个项目文件中，可以使用语法 $ (*PropertyName*) 来引用各个属性。 例如，可以使用 `$(BuildDir)` 和 `$(Configuration)` 来引用前面示例中的属性。  
+ 在整个项目文件中，可以使用语法 $ (\<PropertyName>) 来引用各个属性。 例如，可以使用 `$(BuildDir)` 和 `$(Configuration)` 来引用前面示例中的属性。  
   
  有关属性的详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
@@ -120,7 +100,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 </ItemGroup>  
 ```  
   
- 在整个项目文件中，可以使用语法 @(*ItemType*) 来引用项类型。 例如，可以使用 `@(Compile)` 引用示例中的项类型。  
+ 在整个项目文件中，可以使用语法 @(\<ItemType>) 来引用项类型。 例如，可以使用 `@(Compile)` 引用示例中的项类型。  
   
  在 MSBuild 中，元素和特性名称区分大小写。 但是，属性、项和元数据名称不区分大小写。 下面的示例创建了项类型 `Compile`、`comPile` 或任何其他大小写变体，并为其指定了值“one.cs;two.cs”。  
   
@@ -138,7 +118,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  任务的执行逻辑在托管代码中编写，并使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 元素映射到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 你可以通过创作一个实现 <xref:Microsoft.Build.Framework.ITask> 接口的托管类型来编写自己的任务。 有关如何编写任务的详细信息，请参阅[任务写入](../msbuild/task-writing.md)。  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含一些可按需进行修改的常见任务。  例如，用于复制文件的[复制](../msbuild/copy-task.md)、用于创建目录的 [MakeDir](../msbuild/makedir-task.md) 以及用于编译 Visual C# 源代码文件的 [Csc](../msbuild/csc-task.md)。 有关可用任务的列表以及用法信息，请参阅 [任务参考](../msbuild/msbuild-task-reference.md)。  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含一些可按需进行修改的常见任务。  例如，用于复制文件的[复制](../msbuild/copy-task.md)、用于创建目录的 [MakeDir](../msbuild/makedir-task.md) 以及用于编译 Visual C# 源代码文件的 [Csc](../msbuild/csc-task.md)。 有关可用任务的列表以及用法信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
   
  通过创建一个与任务同名的元素，并将其指定为 [Target](../msbuild/target-element-msbuild.md) 元素的子元素，以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件中执行此任务。 任务通常接受参数，参数将作为元素的特性进行传递。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的属性和项都可用作参数。 例如，以下代码将调用 [MakeDir](../msbuild/makedir-task.md) 任务，并将前面示例中声明的 `BuildDir` 属性的值传递到该任务。  
   
@@ -163,11 +143,11 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  在更高级的方案中，目标可用于描述彼此之间的关系并执行依赖性分析，这样，如果目标是最新的，则可以跳过生成过程的整个部分。 有关目标的更多信息，请参阅[目标](../msbuild/msbuild-targets.md)。  
   
-##  <a name="BKMK_BuildLogs"></a>生成日志  
+##  <a name="build-logs"></a>生成日志  
  你可以将生成错误、警告和消息记录到控制台或其他输出设备。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和 [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)。  
   
-##  <a name="BKMK_VisualStudio"></a>在 Visual Studio 中使用 MSBuild  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式来存储有关托管项目的生成信息。 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口添加或更改的项目设置将反映在为每个项目生成的 .*proj 文件中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用一个已承载的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 实例来生成托管项目。 这意味着可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或在命令提示符处生成托管项目（即使未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]），并且结果将完全相同。  
+## <a name="use-msbuild-in-visual-studio"></a>在 Visual Studio 中使用 MSBuild  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件格式来存储有关托管项目的生成信息。 通过使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 接口添加或更改的项目设置将反映在为每个项目生成的 .\*proj 文件中。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用一个已承载的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 实例来生成托管项目。 这意味着可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中或在命令提示符处生成托管项目（即使未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]），并且结果将完全相同。  
   
  有关如何在 Visual Studio 中使用 MSBuild 的教程，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
@@ -185,10 +165,10 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 -   如果已发布 .NET Framework 当前版本的 Service Pack，则可以将其作为目标。  
   
 -   多目标功能可以保证应用程序仅使用目标框架和平台中的可用功能。  
+
+有关详细信息，请参阅[多定向](../msbuild/msbuild-multitargeting-overview.md)。  
   
- 有关详细信息，请参阅[多定向](../msbuild/msbuild-multitargeting-overview.md)。  
-  
-## <a name="related-topics"></a>相关主题  
+## <a name="see-also"></a>请参阅  
   
 |标题|描述|  
 |-----------|-----------------|  

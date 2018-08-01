@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 应用程序项目
 description: Visual Studio 中项目的用途、如何创建和管理 Python 代码项目以及可用于 Python 的不同项目模板。
-ms.date: 03/05/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a0609b23ef0ed6847fa73b0144201f70e76252e4
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: c28876a9bd8eaf055a5657047c966b0740b15765
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032185"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232265"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -109,7 +109,7 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 - 链接文件包含链接元数据，并且链接路径是项目层次结构外的相对路径
 - 链接路径是根路径
 
-### <a name="working-with-linked-files"></a>使用链接文件
+### <a name="work-with-linked-files"></a>使用链接文件
 
 若要将现有项添加为链接，请右键单击项目中要添加文件所在的文件夹，然后选择“添加”>“退出项...”。在出现的对话框中，选择一个文件，然后从“添加”按钮上的下拉列表中选择“添加为链接”。 如果没有冲突文件，此命令会在所选文件夹中创建一个链接。 但是，如果已存在具有相同名称的文件或项目中已存在该文件的链接，将不会添加链接。
 
@@ -139,7 +139,18 @@ Visual Studio 项目支持将引用添加到项目和扩展，添加的引用将
 
 使用 IronPython 时，可以向 .NET 程序集添加引用，启用 IntelliSense。 对于解决方案中的 .NET 项目，请右键单击 Python 项目中的“引用”节点，选择“添加引用”，选择“项目”选项卡，然后浏览到所需项目。 对于已单独下载的 DLL，请改为选择“浏览”选项卡，然后浏览到所需的 DLL。
 
-因为只有调用 `clr.AddReference('AssemblyName')` 才可以使用 IronPython 中的引用，所以还需要将 `clr.AddReference` 调用添加到程序集。
+因为只有调用 `clr.AddReference('<AssemblyName>')` 才可以使用 IronPython 中的引用，因此还需要将相应的 `clr.AddReference` 调用添加到程序集，通常位于代码的开头。 例如，在 Visual Studio 中通过“IronPython Windows 窗体应用程序”项目模板创建的代码在文件顶部包含两个调用：
+
+```python
+import clr
+clr.AddReference('System.Drawing')
+clr.AddReference('System.Windows.Forms')
+
+from System.Drawing import *
+from System.Windows.Forms import *
+
+# Other code omitted
+```
 
 ### <a name="webpi-projects"></a>WebPI 项目
 

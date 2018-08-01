@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5540eb31d764e82cb0c6cd46eb63cb893559a70f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9dd371d55ee4a59baf800e26b666be28aeb6cbb3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973149"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175743"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在负载测试分析器的关系图视图中分析负载测试结果
 
 负载测试的结果以数据的形式显示在多个不同窗格中。
 
-若要以关系图的形式显示测试结果，请选择负载测试工具栏上的“关系图”。 每个单独的关系图将显示在一个面板中，关系图的名称显示在下拉列表的顶部。 若要在面板中显示不同的关系图，请从列表中选择不同的关系图名称。
+要以关系图的形式显示测试结果，请选择负载测试工具栏上的“关系图”。 每个单独的关系图将显示在一个面板中，关系图的名称显示在下拉列表的顶部。 若要在面板中显示不同的关系图，请从列表中选择不同的关系图名称。
 
 一次最多可显示四个关系图面板。 通过使用面板布局工具栏按钮，可以在不同的面板布局之间进行切换。
 
@@ -84,13 +84,13 @@ ms.locfileid: "31973149"
 |**平铺关系图**：可以采用多个模式中的任意一个排列负载测试结果关系图。 最多可以平铺四个关系图。||
 |**修改关系图中性能计数器图形的外观**：可以更改关系图中性能计数器的绘图线条选项。 包括颜色和线型。 此外，还可以指定是自动还是手动指定绘制性能计数器时使用的范围。|-   [如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**创建自定义关系图**：可以设计用于显示有关负载测试结果的特定信息的关系图。 可以通过指定关系图将显示的负载测试计数器来设计自定义关系图。|-   [如何：创建自定义关系图](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**在关系图中导出性能计数器数据**：处于关系图视图模式中时，可以使用负载测试分析器工具栏上的“将关系图数据导出到 Excel”按钮将关系图数据导出到 Microsoft Excel。||
+|在关系图中导出性能计数器数据：位于关系图视图中时，可使用负载测试分析器工具栏上的“将关系图数据导出到 Excel”按钮将关系图数据导出到 Microsoft Excel。||
 
 ## <a name="related-tasks"></a>相关任务
 
  [在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)
+ [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)
 
  [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 

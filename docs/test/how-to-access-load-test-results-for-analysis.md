@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d20754bc61a003b1b7f6d1eb84ce419c2c6e442b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e2d857ccc22d6e824d32a5ae429295563bba334d
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966682"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175668"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>如何：访问负载测试结果以进行分析
+# <a name="how-to-access-load-test-results-for-analysis"></a>如何：访问负载测试结果进行分析
 
-在从负载测试编辑器运行负载测试时，负载测试结果会自动打开，并且正在运行的负载测试将显示在负载测试分析器中。 当你从命令行运行负载测试时，你必须手动访问负载测试结果。
+在从“负载测试编辑器”运行负载测试时，负载测试结果会自动打开，并且正在运行的负载测试将显示在“负载测试分析器”中。 当你从命令行运行负载测试时，你必须手动访问负载测试结果。
 
 已完成负载测试的负载测试结果包含从受测计算机定期收集到的性能计数器样本和错误信息。 可以在负载测试运行过程中收集大量性能计数器样本。 收集到的性能数据量取决于测试运行的长度、采样间隔、受测计算机的数量、要收集的计数器的数量、配置的数据收集器以及日志记录级别。 对于大型负载测试，所收集的性能数据量很容易达到数千兆字节。 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "31966682"
 
 5.  在“负载测试结果”列表中，选择要分析的负载测试结果并选择“打开”。
 
-6.  将显示负载测试分析器。 所选的负载测试结果显示在“摘要”视图中。 有关详细信息，请参阅[负载测试结果摘要概述](../test/load-test-results-summary-overview.md)。
+6.  将显示“负载测试分析器”。 所选的负载测试结果显示在“摘要”视图中。 有关详细信息，请参阅[负载测试结果摘要概述](../test/load-test-results-summary-overview.md)。
 
      可以在“打开和管理结果”对话框中管理负载测试结果的其他方面，包括导入、导出和删除负载测试结果。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 

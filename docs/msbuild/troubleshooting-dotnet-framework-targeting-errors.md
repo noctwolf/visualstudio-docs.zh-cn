@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6376abc29f6f06541b9cd7f3d181b97ab7b38e5f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: bd1d899d3b3a84af2b07602b959dd031874e972c
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571352"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155446"
 ---
-# <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
+# <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>已引用面向不同版本的 .NET Framework 的项目或程序集  
@@ -35,7 +35,7 @@ ms.locfileid: "31571352"
 ## <a name="you-have-re-targeted-a-project-to-a-different-version-of-the-net-framework"></a>已将项目重新面向不同版本的 .NET Framework  
  如果更改应用程序的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的目标版本，则 Visual Studio 将更改某些引用，可能需要手动更新某些引用。 例如，如果将应用程序更改为面向 [!INCLUDE[net_v35SP1_long](../msbuild/includes/net_v35sp1_long_md.md)]，并且该应用程序具有依赖于 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 的客户端配置文件的资源或设置，则可能出现先前提到的错误之一。  
   
- 若要解决应用程序设置，请打开“解决方案资源管理器”，选择“显示所有文件”，然后在 Visual Studio 的 XML 编辑器中编辑 app.config 文件。 在设置中更改版本，以匹配相应版本的 .NET Framework。 例如，可以将版本设置从 4.0.0.0 更改为 2.0.0.0。 同样，对于已添加资源的应用程序，打开“解决方案资源管理器”，选择“显示所有文件”按钮，展开“我的项目”(Visual Basic) 或“属性”(C#)，然后在 Visual Studio 的 XML 编辑器中编辑 Resources.resx 文件。 将版本设置从 4.0.0.0 更改为 2.0.0.0。  
+ 若要解决应用程序设置，请打开“解决方案资源管理器”，选择“显示所有文件”，然后在 Visual Studio 的 XML 编辑器中编辑“app.config”文件。 在设置中更改版本，以匹配相应版本的 .NET Framework。 例如，可以将版本设置从 4.0.0.0 更改为 2.0.0.0。 同样，对于已添加资源的应用程序，打开“解决方案资源管理器”，选择“显示所有文件”按钮，展开“我的项目”(Visual Basic) 或“属性”(C#)，然后在 Visual Studio 的 XML 编辑器中编辑“Resources.resx”文件。 将版本设置从 4.0.0.0 更改为 2.0.0.0。  
   
  如果应用程序具有资源，例如图标、位图或设置（如数据连接字符串），则还可以通过移除“项目设计器”的“设置”页上的所有项，然后重新添加所需设置来解决此错误。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "31571352"
 >  关闭并重新打开项目后，还应重新生成该项目以确保所有引用正确解析。  
   
 ## <a name="see-also"></a>请参阅  
- [如何：面向某个版本的 .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [如何：面向 .NET Framework 的某个版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
  [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [多定向](../msbuild/msbuild-multitargeting-overview.md)

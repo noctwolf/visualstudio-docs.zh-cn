@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 937fb2d5b41c2fce9fb11cc683f7abd771718e89
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 49cde761aa8974e80d81cfd038d65449c3c23a75
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118490"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379785"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练： 将应用程序页添加到工作流
   本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。  
@@ -75,7 +75,7 @@ ms.locfileid: "37118490"
   
 1.  选择 ExpenseReport 项目，然后在菜单栏上选择**项目** > **添加新项**。  
   
-2.  在**模板**窗格中，选择**应用程序页**模板中，使用项目项的默认名称 (**ApplicaitonPage1.aspx**)，然后选择**添加**按钮。  
+2.  在**模板**窗格中，选择**应用程序页**模板中，使用项目项的默认名称 (**ApplicationPage1.aspx**)，然后选择**添加**按钮。  
   
 3.  在中[!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]ApplicationPage1.aspx 的替换`PlaceHolderMain`节替换为以下：  
   
