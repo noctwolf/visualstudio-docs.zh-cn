@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8a3ff542ebb40ecd10a92db81b985a9ded461fa7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179029"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382417"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 
@@ -33,7 +33,7 @@ ms.locfileid: "39179029"
 |-----------|-----------------------|
 |**向负载测试添加更多的运行设置：** 除了运行“新建负载测试向导”时创建的运行设置之外，还可向负载测试添加更多的运行设置以便能够在不同条件下运行测试。|-   [如何：向负载测试中添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)|
 |**指定要用于负载测试的活动的运行设置：** 可以使用负载测试编辑器来选择要用于负载测试的运行设置。 活动的运行设置将由“[Active]”后缀标识。|-   [如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)|
-|**编辑运行设置属性：** 可以编辑诸如日志记录选项等内容的运行设置属性（有关详细信息，请查看以下内容），来确定测试的长度、预热持续时间、报告错误详细信息的最大数量、采样率、连接模型（仅 Web 性能测试）、结果存储类型、验证级别和 SQL 跟踪。 运行设置应当体现负载测试的目标。|-   [负载测试运行设置属性](../test/load-test-run-settings-properties.md)<br />-   [更改运行设置属性](../test/load-test-run-settings-properties.md#LoadTestRunSettingsHowToChange)|
+|**编辑运行设置属性：** 可以编辑诸如日志记录选项等内容的运行设置属性（有关详细信息，请查看以下内容），来确定测试的长度、预热持续时间、报告错误详细信息的最大数量、采样率、连接模型（仅 Web 性能测试）、结果存储类型、验证级别和 SQL 跟踪。 运行设置应当体现负载测试的目标。|-   [负载测试运行设置属性](../test/load-test-run-settings-properties.md)<br />-   [更改运行设置属性](../test/load-test-run-settings-properties.md#change-run-setting-properties)|
 |**在负载测试运行设置中指定测试迭代计数：** 可以通过配置“测试迭代”属性来指定在所有负载测试方案中运行所有 Web 性能测试和单元测试的次数。|-   [如何：在运行设置中指定测试迭代数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**指定负载测试运行设置的采样率：** 可以通过配置“采样率”属性来指定负载测试收集性能计数器数据的频率。|-   [如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**指定计时详细信息存储选项：** 可以通过配置“计时详细信息存储”属性来指定希望如何保存负载测试的详细信息。|-   [如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
