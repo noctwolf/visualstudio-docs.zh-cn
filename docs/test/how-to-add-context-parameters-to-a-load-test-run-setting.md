@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: dd19f945dec052ad2c90784252c0c85eba6889ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d6152d75d28e5c6468ccc0a484e2eae3a25214d9
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969101"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203749"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 
@@ -36,9 +36,9 @@ ms.locfileid: "31969101"
 
 此外，通过在不同的负载测试运行设置中使用相同的名称对一个上下文参数分配不同的值，可以使用不同的环境运行负载测试：
 
--   公司临时 Web 服务器运行设置：名为 WebServer1=http://CorporateStagingWebServer 的上下文参数
+-   公司临时 Web 服务器运行设置：名为 `WebServer1=http://CorporateStagingWebServer` 的上下文参数
 
--   公司生产 Web 服务器运行设置：名为 WebServer1=http://CorporateProductionWebServer 的上下文参数
+-   公司生产 Web 服务器运行设置：名为 `WebServer1=http://CorporateProductionWebServer` 的上下文参数
 
  **从命令行更改运行设置**
 
@@ -64,9 +64,9 @@ ms.locfileid: "31969101"
 
      如果运行设置已经包含“上下文参数”文件夹，则可以右键单击该文件夹，然后选择“添加上下文参数”。
 
-4.  在“属性”窗口中，根据需要更改“名称”的值（例如，WebServer1）。 在“属性”窗口中，将“值”更改为要使用的参数（例如，http://CorporateStagingWebServer)）。
+4.  在“属性”窗口中，根据需要更改“名称”的值（例如，WebServer1）。 在“属性”窗口中，将“值”更改为要使用的参数（例如 `http://CorporateStagingWebServer`）。
 
-5.  （可选）重复步骤 3 至 5 并对“值”属性使用其他字符串（例如，http://CorporateProductionWebServer)）。
+5.  （可选）重复步骤 3 至 5，并对“值”属性使用其他字符串（例如 `http://CorporateProductionWebServer`）。
 
 6.  选择你希望哪些运行设置处于活动状态。 打开运行设置上的快捷菜单并选择“设置为活动的”。
 

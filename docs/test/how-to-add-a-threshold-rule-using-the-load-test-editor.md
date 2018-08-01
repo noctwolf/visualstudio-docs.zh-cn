@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ede6e8d3dde3b8a6f76164b02457a98102bcbac7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f68ab9b183119c18bed51bb7faaa86993d7f34ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965541"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179874"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加阈值规则
 
@@ -46,4 +46,3 @@ ms.locfileid: "31965541"
 - [分析阈值规则冲突](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)

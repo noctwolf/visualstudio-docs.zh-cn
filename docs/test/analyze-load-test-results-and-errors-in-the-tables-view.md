@@ -23,18 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3820e1d7ef4294b4c46e0e7d0174a89dfe5b0e75
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1b111aad6da99f54edfe8dc4fd4b63ff7a495f34
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978783"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179656"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
 查看负载测试运行的结果时，可以显示不同的窗格，从而以不同的方式分析数据。 你可以查看图形形式的数据，从而了解数据随时间的变化情况，也可以查看详细信息表形式的数据。
 
-若要切换到表视图，请选择负载测试工具栏上的“表”。 若要在不同的表之间切换，请使用表网格上方的工具栏上的“表”下拉列表。 在表视图中，一次最多可以查看四个表。 有关详细信息，请参阅本主题中的[平铺负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)。
+要切换到表视图，请选择负载测试工具栏上的“表”。 若要在不同的表之间切换，请使用表网格上方的工具栏上的“表”下拉列表。 在表视图中，一次最多可以查看四个表。 有关详细信息，请参阅本主题中的[平铺负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)。
 
 在整个负载测试运行期间，表中显示的大多数性能计数器数值都是累积的。 名为“最后一个”的列是个例外，它们表示最近的采样间隔内的值。
 
@@ -52,7 +52,7 @@ ms.locfileid: "31978783"
 
 |表名称|描述|
 |----------------|-----------------|
-|错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)和[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)。|
+|错误|显示在负载测试运行期间发生的错误的列表。 有关详细信息，请参阅[分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)和本主题中的[“错误”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table)。|
 |页数|显示在负载测试运行期间访问的页的列表。 此表中的某些数据仅在负载测试完成后才可用。 有关详细信息，请参阅[如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)。|
 |请求|显示负载测试期间发出的各个请求的详细信息。 其中包括所有 HTTP 请求以及相关请求（如图像）。 有关详细信息，请参阅本主题中的[“请求”表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table)。|
 |SQL 跟踪|显示 SQL 跟踪的结果。 此表仅在负载测试完成后、并且在测试期间使用了 SQL 跟踪的情况下才可用。 有关详细信息，请参阅本主题中的 [SQL 跟踪数据表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table)。|
@@ -116,7 +116,7 @@ ms.locfileid: "31978783"
  下表列出了“事务”表中的列。
 
 > [!NOTE]
-> 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
+> 若要查看所有列，必须启用与活动的运行设置关联的“计时详细信息存储”属性。 有关详细信息，请参阅[如何：指定“计时详细信息存储”属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。
 
 |列|描述|可见，但没有计时详细信息|
 |------------|-----------------|------------------------------------|
@@ -153,7 +153,7 @@ ms.locfileid: "31978783"
 
  有关详细信息，请参阅[使用负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
-### <a name="drilling-down-to-the-error-list"></a>进一步查看错误列表
+### <a name="drill-down-to-the-error-list"></a>深入了解错误列表
 
 错误表按错误的类型和子类型对错误进行分组。 要查看包含各个错误的表，可以显示“负载测试错误”对话框。 若要显示该对话框，请在“错误”表的“计数”列中选择超链接。 还可以通过右键单击“错误”表中已填充的行，然后选择“错误”来显示该对话框。
 
@@ -194,37 +194,37 @@ ms.locfileid: "31978783"
 
    将显示如下所示的列：
 
-    - 事件类
+    - **event 类**
 
-    - 持续时间
+    - **持续时间**
 
-    - CPU
+    - **CPU**
 
-    - 读取
+    - **读取次数**
 
-    - 写入
+    - **写入次数**
 
-    - 文本数据
+    - **TextData**
 
-    - 开始时间
+    - **StartTime**
 
-    - EndTime
+    - **EndTime**
 
    如果要跟踪 SQL 事件而不是跟踪在这些列中标识出的数据，则可以使用独立于 Visual Studio 的 SQL 事件探查器工具来设置自己的自定义 SQL 跟踪。
 
 ## <a name="tile-load-test-tables"></a>平铺负载测试表
 
-查看负载测试运行的结果时，可以以详细表的形式查看数据。 若要切换到表视图，请选择负载测试工具栏上的“表”。 可用的表有“错误”、“页面”、“请求”、“SQL 跟踪”、“测试”、“阈值”和“事务”。 有关详细信息，请参阅[使用负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
+查看负载测试运行的结果时，可以以详细表的形式查看数据。 要切换到表视图，请选择负载测试工具栏上的“表”。 提供以下表：“错误”、“页面”、“请求”、“SQL 跟踪”、“测试”、“阈值”和“事务”。 有关详细信息，请参阅[使用负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)。
 
 在表视图中，一次最多可查看四个表，而不会重叠。
 
 ### <a name="to-tile-tables"></a>对表进行平铺
 
-1. 在“负载测试分析器”工具栏上，选择“表”。
+1. 在负载测试分析器工具栏上，选择“表”。
 
      此时将打开表视图。 默认的布局为两个水平的面板。
 
-2. 在“负载测试分析器”工具栏上，选择布局按钮，然后选择下列选项之一：
+2. 在负载测试分析器工具栏上，选择布局按钮，然后选择下列选项之一：
 
     - 一个面板
 
@@ -242,8 +242,8 @@ ms.locfileid: "31978783"
 ## <a name="see-also"></a>请参阅
 
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)
+- [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)
 - [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [分析阈值规则冲突](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [负载测试结果摘要概述](../test/load-test-results-summary-overview.md)

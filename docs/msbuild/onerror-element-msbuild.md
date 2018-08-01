@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f05f6b8bfc2cf75887192bcead9f55023fbddbd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 6c57c7dcb9c6eadc3242bc09a1356d3a08399616
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326148"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154292"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 对于某失败的任务，如果 `ContinueOnError` 属性为 `false`，则会出现一个或多个要执行的目标。  

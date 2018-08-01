@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329cef79c529850bbe90a62cc24d5ec989379aa9
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 6d063528b67712dd16136bfd3edec29643868517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104173"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154840"
 ---
 # <a name="signfile-task"></a>SignFile 任务
 
@@ -73,7 +73,7 @@ ms.locfileid: "33104173"
 ```
 
 > [!NOTE]
-> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅 [Obtain the SHA-1 Hash of a Trusted Root CA Certificate](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87)（获取受信任的根 CA 证书的 SHA-1 哈希）。
+> 证书指纹是该证书的 SHA-1 哈希。 有关详细信息，请参阅[获取受信任的根 CA 证书的 SHA-1 哈希](http://msdn.microsoft.com/en-us/dd641990-9a88-4228-a245-017797131a87)。
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   

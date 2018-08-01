@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3fc4d5a6c1a4ae3cabbbb2426d7a4fdf011b9e0e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 0192a38e5bd84cfd17d3f7e2a0ec59e3225f4e84
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693882"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178814"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 
@@ -61,11 +61,11 @@ ms.locfileid: "34693882"
 |Windows 窗体 2.0 及更高版本|完全支持。 **注意：** NetFx 控件完全受支持，但并非所有第三方控件都受支持。|
 |WPF 3.5 及更高版本|完全支持。<br /><br /> **注意** NetFx 控件完全受支持，但并非所有第三方控件都受支持。|
 |Windows Win32|可适用于某些已知问题，但不正式支持。|
-|MFC|部分支持。 有关受支持的功能的详细信息，请参阅以下 [Microsoft 网站](http://go.microsoft.com/fwlink/?LinkId=206511) 。|
+|MFC|部分支持。 有关支持功能的详细信息，请参阅 [UITest 框架](https://blogs.msdn.microsoft.com/vstsqualitytools/2010/04/15/uitest-framework-mfc-support-in-vs-2010/)。|
 |SharePoint|完全支持。|
 |Office 客户端应用程序|不支持。|
 |Dynamics CRM Web 客户端|完全支持。|
-|Dynamics (Ax) 2012 客户端|操作录制和播放部分受支持。 有关详细信息，请参阅以下 [Microsoft 网站](http://go.microsoft.com/fwlink/?LinkId=232677) 。|
+|Dynamics (Ax) 2012 客户端|操作录制和播放部分受支持。 有关详细信息，请参阅[面向 Microsoft Dynamics 的 Visual Studio 10 编码 UI / 操作录制支持](https://blogs.msdn.microsoft.com/dave_froslie/2011/09/01/visual-studio-10-coded-ui-action-recordings-support-for-microsoft-dynamics-ax-2012/)。|
 |SAP|不支持。|
 |Citrix/终端服务|不建议在终端服务器上录制操作。 记录器不支持同时运行多个实例。|
 |PowerBuilder|部分支持。<br /><br /> 支持取决于为 PowerBuilder 控件启用的可访问性。|

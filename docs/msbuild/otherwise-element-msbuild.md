@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c561c259641ce7bed118d8e4aa71c383b29b67
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f4f886e6c6d1ec09700eefa3c7289c9cb918ecc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327006"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39155043"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 指定当且仅当所有 `When` 元素的条件的计算结果为 `false` 时才执行的代码块。  

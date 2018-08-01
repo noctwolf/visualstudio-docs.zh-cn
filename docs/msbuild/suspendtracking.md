@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b484ce1bd47d01092ff28d60b457012805cb16e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b0d52fb5d50a75207a0aad49f7b29cfc66b8e889
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568619"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154191"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在当前上下文中暂停跟踪。  
@@ -36,7 +36,7 @@ HRESULT WINAPI SuspendTracking(void);
 ## <a name="return-value"></a>返回值  
  如果跟踪暂停，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头：FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  

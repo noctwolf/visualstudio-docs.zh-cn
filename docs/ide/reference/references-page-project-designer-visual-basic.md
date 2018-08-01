@@ -18,15 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35534c0c6965dd7f7db01e2299ff71572b8de9e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 788df6c5d7084398f5c1df1fffdf51e501cce4c6
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950288"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180472"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
-使用项目设计器的“引用”页可以管理项目中的引用、Web 引用和导入的命名空间。 项目可包含对 COM 组件、XML Web service、.NET Framework 类库或程序集以及其他类库的引用。 有关使用引用的详细信息，请参阅[管理项目中的引用](../../ide/managing-references-in-a-project.md)。
+使用“项目设计器”的“引用”页可以管理项目中的引用、Web 引用和导入的命名空间。 项目可包含对 COM 组件、XML Web service、.NET Framework 类库或程序集以及其他类库的引用。 有关使用引用的详细信息，请参阅[管理项目中的引用](../../ide/managing-references-in-a-project.md)。
 
  若要访问“引用”页，请在“解决方案资源管理器”中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目”、“属性”。 当“项目设计器”出现时，单击“引用”选项卡。
 

@@ -12,22 +12,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dc2ec042f5f7fe9d5ad1e87c943e6cbd6e3d82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577491"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154445"
 ---
-# <a name="starting-a-build-from-within-the-ide"></a>在 IDE 中启动生成
-自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 启动生成。 本主题介绍这样做的原因并概述具体过程。  
+# <a name="start-a-build-from-within-the-ide"></a>在 IDE 中启动生成
+自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 启动生成。 本文介绍这一要求的原因并概述具体过程。  
   
 ## <a name="parallel-builds-and-threads"></a>并行生成和线程  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许需要中介的并行生成访问常见资源。 项目系统可异步地运行生成，但该系统不得从提供给生成管理器的回调中调用生成函数。  
   
- 如果项目系统修改环境变量，它必须将生成的 NodeAffinity 设置为 OutOfProc。 这意味着无法使用主机对象，因为主机对象需要进程内节点。  
+ 如果项目系统修改环境变量，它必须将生成的 NodeAffinity 设置为 OutOfProc。 此要求意味着无法使用主机对象，因为主机对象需要进程内节点。  
   
-## <a name="using-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor  
+## <a name="use-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor  
  下面的代码概述了项目系统可用于启动生成的方法：  
   
 ```csharp

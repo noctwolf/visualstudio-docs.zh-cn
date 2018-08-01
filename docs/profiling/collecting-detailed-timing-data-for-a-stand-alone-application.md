@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203a337e69fd83ad97ee50c383f784ec0087d31
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 63ebe0869ec0450604468283f9db1769314a3ce7
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335809"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276346"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
 本部分介绍从命令行使用检测方法收集客户端（独立）组件的详细性能数据的步骤和选项。  
@@ -27,8 +27,8 @@ ms.locfileid: "34335809"
   
 |任务|相关的内容|  
 |----------|---------------------|  
-|**使用检测分析 .NET Framework 应用程序**|-   [如何：检测 .NET 组件并收集详细计时数据](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
-|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件并收集详细计时数据](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)|  
+|**使用检测分析 .NET Framework 应用程序**|-   [如何：检测 .NET 组件并收集详细计时数据](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|  
+|**使用检测分析 C/C++ 应用程序**|-   [如何：检测本机组件并收集详细计时数据](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|  
 |**添加层交互数据**|-   [收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)|  
   
 ## <a name="related-tasks"></a>相关任务

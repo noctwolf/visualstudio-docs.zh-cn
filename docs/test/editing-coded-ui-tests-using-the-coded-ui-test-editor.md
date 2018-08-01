@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 852742c3cea6e2a730fd546fecf17c6b5feb0fac
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 50d677eec2a88f2470a7a329c4cf9e2b85f065da
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "35668391"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177352"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 
@@ -78,11 +78,11 @@ ms.locfileid: "35668391"
 
 ![控件属性](../test/media/codeduitestcontrolprop.png)
 
-修改控件属性的方式与 UI 操作的方式相同。 在  “UI 控件图”窗格中，选择你项使用“属性”窗口编辑和修改器属性的控件。
+修改控件属性的方式与 UI 操作的方式相同。 在“UI 控件图”窗格中，选择你想使用“属性”窗口编辑和修改器属性的控件。
 
 例如，开发人员可能已将某个按钮控件上的 (ID) 属性从“idSubmit”更改为“idLogin”，此按钮控件位于正在测试的应用程序源代码中。 应用程序中的“(ID)” **(ID)** 属性更改后，编码的 UI 测试将无法查找按钮控件且会失败。 在这种情况下，测试人员可以打开 **“搜索属性”** 集合，并更改 **“Id”** 属性以匹配开发人员在应用程序中使用的新值。 测试人员还可以将“友好名称”属性值从“提交”更改为“登录”。 通过进行此更改，更新了编码的 UI 测试编辑器中关联的 UI 操作，从“选择‘提交’按钮”更改为“选择‘登录’按钮”。
 
-完成修改后，通过选择 Visual Studio 工具栏上的“保存”，将所做更改保存到 UIMap.Designer 文件。
+完成修改后，通过选择 Visual Studio 工具栏上的“保存”，将所做更改保存到“UIMap.Designer”文件。
 
 ### <a name="tips"></a>提示
 
@@ -90,9 +90,9 @@ ms.locfileid: "35668391"
 
 - 若要撤消所做的属性更改，请选择“编辑”菜单中的“撤消”或按 Ctrl+Z。
 
-- 可以使用编码的 UI 测试编辑器工具栏中的“查找”按钮打开 Visual Studio 中的“查找和替换”工具。 然后可以使用“查找”控件查找编码的 UI 测试编辑器中的 UI 操作。 例如，可以尝试查找“单击‘登录’按钮”。 这在大型测试中十分有用。 不能使用编码的 UI 测试编辑器中“查找和替换”工具中的替换功能。 有关详细信息，请参阅 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)中的“查找控件”。
+- 可以使用编码的 UI 测试编辑器工具栏中的“查找”按钮打开 Visual Studio 中的“查找和替换”工具。 然后可以使用“查找”控件查找编码的 UI 测试编辑器中的 UI 操作。 例如，可以尝试查找“单击‘登录’按钮”。 这在大型测试中十分有用。 不能使用编码的 UI 测试编辑器中“查找和替换”工具中的替换功能。 有关详细信息，请参阅[查找和替换文本](../ide/finding-and-replacing-text.md)中的“查找控件”。
 
-- 有时，可能很难直观显示控件在受测应用程序 UI 中的位置。 编码的 UI 测试编辑器的功能之一是，你可以选择 UI 控件图中列出的控件和查看其在受测应用程序中的位置。 有关详细信息，请参阅本文后面的[在受测应用中查找 UI 控件](#locate-a-ui-control-in-the-application-under-test)。
+- 有时，可能很难直观显示控件在受测应用程序 UI 中的位置。 编码的 UI 测试编辑器的功能之一是，你可以选择 UI 控件图中列出的控件和查看其在受测应用程序中的位置。 有关详细信息，请参阅本文后面的[在受测应用程序中查找 UI 控件](#locate-a-ui-control-in-the-application-under-test)。
 
 - 可能有必要展开包含你要编辑的控件的容器控件。 有关详细信息，请参阅本文后面的[查找控件及其后代](#locate-a-control-and-its-descendants)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "35668391"
 
 在“UI 操作”  窗格中，展开你想要拆分为两个不同方法的测试方法，然后选择 UI 操作，在其中开始新的测试方法。 可以打开 UI 操作的快捷菜单，然后选择“拆分成新方法” ，也可以选择编码的 UI 测试编辑器工具栏上的“拆分成新方法”  按钮。 新的测试方法将显示在“UI 操作”窗格中。 它包含 UI 操作，从指定拆分的操作开始进行。
 
-拆分方法后，通过选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到 UIMap.Designer 文件。
+拆分方法后，通过选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到“UIMap.Designer”文件。
 
 > [!WARNING]
 > 如果拆分方法，则必须修改可调用现有方法的任何代码，使其在你仍然想要包括这些 UI 操作时也可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。
@@ -123,7 +123,7 @@ ms.locfileid: "35668391"
 
 - 若要撤消拆分，请选择“编辑”菜单中的“撤消”或按 Ctrl+Z。
 
-- 你可以重命名新方法。 在 UI 操作窗格中选择它，然后选择编码的 UI 测试编辑器工具栏中的“重命名”  按钮。
+- 你可以重命名新方法。 在“UI 操作”窗格中选择它，然后选择编码的 UI 测试编辑器工具栏中的“重命名”按钮。
 
    或
 
@@ -133,18 +133,18 @@ ms.locfileid: "35668391"
 
 ## <a name="move-a-test-method-to-the-uimap-file-to-facilitate-customization"></a>将测试方法移动到 UIMap 文件以便于自定义
 
-如果确定编码的 UI 测试中的其中一种测试方法需要自定义代码，则必须将其移动到 UIMap.cs 或 UIMap.vb 文件。 否则，只要编码的 UI 测试被重新编译，你的代码就会被重写。 如果不移动方法，则每次重新编译测试时都会重写你的自定义代码。
+如果确定编码的 UI 测试中的其中一种测试方法需要自定义代码，则必须将其移动到“UIMap.cs”或“UIMap.vb”文件。 否则，只要编码的 UI 测试被重新编译，你的代码就会被重写。 如果不移动方法，则每次重新编译测试时都会重写你的自定义代码。
 
-在“UI 操作”窗格中，选择要移动到 UIMap.cs 或 UIMap.vb 文件的测试方法，以便在重新编译测试代码时不会覆盖自定义代码功能。 接下来，选择编码的 UI 测试编辑器工具栏上的“移动代码”  按钮，或打开测试方法的快捷菜单，然后选择“移动代码” 。 将从 UIMap.uitest 文件中移除该测试方法，并且“UI 操作”窗格中将不再显示该测试方法。 若要编辑移动的测试文件，请从解决方案资源管理器中打开 UIMap.cs 或 UIMap.vb 文件。
+在“UI 操作”窗格中，选择要移动到“UIMap.cs”或“UIMap.vb ”文件的测试方法，以便在重新编译测试代码时不会覆盖自定义代码功能。 接下来，选择编码的 UI 测试编辑器工具栏上的“移动代码”  按钮，或打开测试方法的快捷菜单，然后选择“移动代码” 。 将从“UIMap.uitest”文件中移除该测试方法，并且“UI 操作”窗格中不再显示该测试方法。 若要编辑移动的测试文件，请从“解决方案资源管理器”中打开“UIMap.cs”或“UIMap.vb”文件。
 
-移动方法后，选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到 UIMap.Designer 文件。
+移动方法后，选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到“UIMap.Designer”文件。
 
 > [!WARNING]
-> 移动该方法后，就不再能使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。
+> 移动该方法后，就不再能使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从“UIMap.uitest”文件移动到“UIMap.cs”或“UIMap.vb”文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。
 
 ### <a name="tips"></a>提示
 
-若要撤消移动，请选择“编辑”菜单中的“撤消”或按 Ctrl+Z。 但是，随后必须手动从 UIMap.cs 或 UIMap.vb 文件删除该代码。
+若要撤消移动，请选择“编辑”菜单中的“撤消”或按 Ctrl+Z。 但是，随后必须手动从“UIMap.cs”或“UIMap.vb ”文件删除该代码。
 
 ## <a name="locate-a-ui-control-in-the-application-under-test"></a>在受测应用程序中查找 UI 控件
 
@@ -184,9 +184,9 @@ ms.locfileid: "35668391"
 
 ![延迟时间增加 5 秒](../test/media/codeduidealy2.png)
 
-在“UI 操作”  窗格中，展开包含你想要在其前插入延迟的 UI 操作的测试方法。 选择 UI 操作。 接下来，打开 UI 操作的快捷菜单，然后选择“在前面插入延迟” 。 在所选 UI 操作之前插入并突出显示具有以下文本的延迟：“为操作之间的用户延迟等待 1 秒” 。 在“属性”窗口中，将“延迟”  属性的值更改为所需的毫秒数。
+在“UI 操作”  窗格中，展开包含你想要在其前插入延迟的 UI 操作的测试方法。 选择 UI 操作。 接下来，打开 UI 操作的快捷菜单，然后选择“在前面插入延迟” 。 在所选 UI 操作之前插入并突出显示具有以下文本的延迟：“为操作之间的用户延迟等待 1 秒” 。 在“属性”窗口中，将“延迟”属性的值更改为所需的毫秒数。
 
-插入延迟后，选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到 UIMap.Designer 文件。
+插入延迟后，选择 Visual Studio 工具栏上的“保存”，可将所做更改保存到“UIMap.Designer”文件。
 
 如果需要确保特定控件在 UI 操作之前可用，应考虑使用相应的 uitestcontrol.waitforcontrolxxx () 方法将自定义代码添加到你的测试方法。 有关详细信息，请参阅[播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。
 
@@ -194,5 +194,5 @@ ms.locfileid: "35668391"
 
 - [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
 - [创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)
-- [创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)
+- [创建数据驱动的编码 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)
 - [演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

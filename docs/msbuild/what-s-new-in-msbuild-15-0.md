@@ -10,36 +10,39 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1757dc778c45d3b9c6afd7f289b6598728dc7687
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9a8eae3b6131ca147149324477119df1be55ba35
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569298"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154013"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新增功能
-MSBuild 现已推出，属于 [.NET Core SDK](https://www.microsoft.com/net/download/core)，且可在 Windows、macOS 和 Linux 上生成 .NET Core 项目。  
+
+MSBuild 现已推出，属于 [.NET Core SDK](https://www.microsoft.com/net/download/core)，且可在 Windows、macOS 和 Linux 上生成 .NET Core 项目。
 
 ## <a name="changed-path"></a>更改的路径
- MSBuild 现安装于每版 Visual Studio 下的文件夹中。 例如 `C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild`。 也可使用下面的 PowerShell 模块查找 MSBuild：[vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
+
+ MSBuild 现安装于每版 Visual Studio 下的文件夹中。 例如，C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild。 也可使用下面的 PowerShell 模块查找 MSBuild：[vssetup.powershell](https://github.com/Microsoft/vssetup.powershell)。
 
  全局程序集缓存中不再安装 MSBuild。 若要以编程方式引用 MSBuild，请使用 NuGet 包。
 
-## <a name="changed-properties"></a>更改的属性  
- 下列 MSBuild 属性已因新版本号而更新。  
+## <a name="changed-properties"></a>更改的属性
 
--   此版工具的 `MSBuildToolsVersion` 为 15.0。 程序集版本为 15.1.0.0。
+ 下列 MSBuild 属性已因新版本号而更新。
 
--   `MSBuildToolsPath` 不再具有固定位置。 默认情况下，该文件位于与 Visual Studio 安装位置相对的 MSBuild\15.0\Bin 文件夹中，但 Visual Studio 安装位置可在安装时进行更改。
+- 此版工具的 `MSBuildToolsVersion` 为 15.0。 程序集版本为 15.1.0.0。
 
--   注册表中不再设置 `ToolsVersion` 值。  
+- `MSBuildToolsPath` 不再具有固定位置。 默认情况下，该文件位于与 Visual Studio 安装位置相对的 MSBuild\15.0\Bin 文件夹中，但 Visual Studio 安装位置可在安装时进行更改。
 
--   `SDK35ToolsPath` 和 `SDK40ToolsPath` 属性指向与此版 Visual Studio 一起打包的 .NET Framework SDK（例如，对于 4.X 工具，则指向 10.0A）。  
+- 注册表中不再设置 `ToolsVersion` 值。
+
+- `SDK35ToolsPath` 和 `SDK40ToolsPath` 属性指向与此版 Visual Studio 一起打包的 .NET Framework SDK（例如，对于 4.X 工具，则指向 10.0A）。
 
 ## <a name="updates"></a>更新
-- [项目元素](../msbuild/project-element-msbuild.md)具有新的 `SDK` 属性。 此外，`Xmlns` 属性现也是可选项。 详情请参阅[包、元数据和框架](/dotnet/core/packages)和 [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)。
+- [项目元素](../msbuild/project-element-msbuild.md)具有新的 `SDK` 属性。 此外，`Xmlns` 属性现也是可选项。 有关 `SDK` 属性的详细信息，请参阅[如何：使用 MSBuild 项目 SDK](../msbuild/how-to-use-project-sdk.md)；[包、元数据和框架](/dotnet/core/packages)；以及 [.NET Core 的 csproj 格式的新增内容](/dotnet/core/tools/csproj)。
 - 目标外的[项元素](../msbuild/item-element-msbuild.md)具有新的 `Update` 属性。 此外，已放弃对 `Remove` 属性的限制。
-- `Directory.Build.props` 是对目录下项目提供自定义选项的用户定义的文件。 除非 `ImportDirectoryBuildTargets` 属性设为 **false**，否则该文件将从 Microsoft.Common.props 自动导入。 `Directory.Build.targets` 由 Microsoft.Common.targets 导入。
+- Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。 除非 `ImportDirectoryBuildTargets` 属性设为 false，否则该文件将从 Microsoft.Common.props 自动导入。 Directory.Build.targets 由 Microsoft.Common.targets 导入。
 - 名称不与当前属性列表冲突的元数据可选择性地表示为属性。 有关详细信息，请参阅[项元素](../msbuild/item-element-msbuild.md)。
 
 ## <a name="new-property-functions"></a>新的属性函数

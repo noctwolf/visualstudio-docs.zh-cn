@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 268578638524ab4f5e5db605c3d394d28414547a
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 20fa17054c3334566114c5baf9bc98a71025c225
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448514"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204071"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>如何：用户节奏测试组合模型的对节奏延迟应用分布
 
@@ -24,15 +24,15 @@ ms.locfileid: "34448514"
 可通过使用“属性”窗口设置“对节奏延迟应用分布”属性。 可通过负载测试编辑器修改负载测试方案属性。
 
 > [!NOTE]
-> “对节奏延迟应用分布”属性仅适用于基于用户节奏配置负载测试组合的情况。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+> “对节奏延迟应用分布”属性仅适用于基于用户节奏配置负载测试组合的情况。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
 “对节奏延迟应用分布”的值可以设置为 true 或 false：
 
-- True：方案应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的常规统计分布延迟。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- True：方案应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的常规统计分布延迟。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“True”，则会将常规统计分布应用于测试之间的等待时间。 用户每小时仍将运行 2 个测试，但是两次测试之间不一定要有 30 分钟的延迟。 第一个测试可以在 4 分钟后运行，第二个测试可以在 45 分钟后运行。
 
-- False：测试以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的节奏运行。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+- False：测试以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的节奏运行。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“False”，则测试运行时没有机动时间。 测试的运行间隔将为 30 分钟。 这样可以确保每小时执行 2 个测试。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c3f5e60f8cde791f571c5a6663356ad7d2ca80f9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750690"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177043"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -301,7 +301,7 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
 
 1.  创建测试项目。
 
-2.  创建 Web 性能测试，然后在浏览器中输入指向 Web 服务的 URL，例如 http://dev.virtualearth.net/webservices/v1/metadata/searchservice/dev.virtualearth.net.webservices.v1.search.wsdl。
+2.  创建 Web 性能测试，然后在浏览器中输入指向 Web 服务的 URL。
 
 3.  记录完成后，在 Web 性能测试编辑器中展开对 Web 服务的请求，然后选择“字符串主体”或“二进制主体”。
 

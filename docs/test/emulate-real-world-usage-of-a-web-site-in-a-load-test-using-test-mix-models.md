@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 的负载测试中模拟网站的实际使用情况
+title: 在负载测试中模拟网站的实际使用情况
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9ec5777bc1a2bfffc650497314a219d071057beb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 682370de0964e8bc96a069f015f37144f4d9a83f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977039"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177261"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-web-site-or-application-in-a-load-test-using-a-test-mix-models"></a>使用测试组合模型在负载测试中模拟网站或应用程序的预期实际使用情况
+# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>使用测试组合模型在负载测试中模拟网站或应用程序的预期实际使用情况
 
 使用负载建模选项可更准确地预测正在进行负载测试的网站或应用程序的预期实际使用情况。 执行这种操作很重要，因为未基于准确负载模型的负载测试会生成误导性结果。
 
@@ -28,16 +28,16 @@ ms.locfileid: "31977039"
 
 你可以为负载测试方案指定以下测试组合模型选项之一：
 
--   **基于总测试数：** 确定虚拟用户启动测试迭代时运行的 Web 性能或单元测试。 在负载测试结束时，运行特定测试的次数与分配的测试分布相匹配。 使测试组合基于 IIS 日志或生产数据中的事务百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于已启动测试数的百分比](#BasedOnTestsStarted)。
+-   基于总测试数：确定虚拟用户启动测试迭代时运行的 Web 性能或单元测试。 在负载测试结束时，运行特定测试的次数与分配的测试分布相匹配。 使测试组合基于 IIS 日志或生产数据中的事务百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于已启动测试数的百分比](#BasedOnTestsStarted)。
 
--   **基于虚拟用户数：** 确定将运行特定 Web 性能或单元测试的虚拟用户的百分比。 在负载测试的任何时刻，运行特定测试的用户数都与分配的分布相匹配。 使测试组合基于运行特定测试的用户的百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于虚拟用户数的百分比](#PercentageBasedonVirtualUsers)。
+-   基于虚拟用户数：确定将运行特定 Web 性能或单元测试的虚拟用户的百分比。 在负载测试的任何时刻，运行特定测试的用户数都与分配的分布相匹配。 使测试组合基于运行特定测试的用户的百分比时，可使用此测试组合模型。 有关详细信息，请参阅[基于虚拟用户数的百分比](#PercentageBasedonVirtualUsers)。
 
--   **基于用户节奏：** 在负载测试过程中，每个用户每小时按指定次数运行每个 Web 性能测试或单元测试。 如果希望虚拟用户在负载测试过程中以特定节奏运行测试，则可使用此测试组合模型。 有关详细信息，请参阅[速度测试组合](#PacingTestMix)。
+-   基于用户节奏：在负载测试过程中，每个用户每小时按指定次数运行每个 Web 性能测试或单元测试。 如果希望虚拟用户在负载测试过程中以特定节奏运行测试，则可使用此测试组合模型。 有关详细信息，请参阅[速度测试组合](#PacingTestMix)。
 
     > [!TIP]
     > 何时选择“百分比测试组合”和“基于虚拟用户数的百分比”？ 如果测试组合中某些测试的持续时间明显长于其他测试，则这两个选项之间的区别便尤为重要。 在这种情况下，最好选择“基于虚拟用户数的百分比”。 此选项可帮助避免运行测试过程中，过多用户运行长时间测试的可能性。 但是，如果测试都具有相似的持续时间，则可以更安全地选择“百分比测试组合”。
 
--   **基于顺序测试顺序：** 每个虚拟用户按照在方案中定义测试的顺序运行 Web 性能测试或单元测试。 虚拟用户可按此顺序连续循环运行测试，直到负载测试完成。 有关详细信息，请参阅[顺序](#SequentialOrder)。
+-   基于顺序测试顺序：每个虚拟用户按照在方案中定义测试的顺序运行 Web 性能测试或单元测试。 虚拟用户可按此顺序连续循环运行测试，直到负载测试完成。 有关详细信息，请参阅[顺序](#SequentialOrder)。
 
 ###  <a name="BasedOnTestsStarted"></a> 基于已启动测试数的百分比
  对于组合中的每个测试，可以指定一个百分比，它确定选择测试作为下一个要运行的测试的频率。 例如，可能将下列百分比值分配给三种测试：
@@ -66,14 +66,14 @@ ms.locfileid: "31977039"
 
  当使用速度测试组合时，“测试迭代之间的思考时间”设置将不适用。
 
-#### <a name="applying-distribution-to-pacing-delay"></a>对节奏延迟应用分布
+#### <a name="apply-distribution-to-pacing-delay"></a>对节奏延迟应用分布
  负载测试方案中“对节奏延迟应用分布”属性的值可以设置为 true 或 false：
 
--   **True**：方案将应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的典型统计分布延迟。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+-   True：方案将应用“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的典型统计分布延迟。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“True”，则会将典型统计分布应用于测试之间的等待时间。 用户每小时仍将运行 2 个测试，但是两次测试之间不一定要间隔 30 分钟。 第一个测试可以在 4 分钟后运行，第二个测试可以在 45 分钟后运行。
 
--   **False**：测试将以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的特定节奏运行。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+-   False：测试将以你为“编辑测试组合”对话框的“每个用户每小时的测试数”列中的值指定的特定节奏运行。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
      例如，假定你将测试的“编辑测试组合”对话框中的“每个用户每小时的测试数”值设置为每小时 2 个测试。 如果“对节奏延迟应用分布”属性设置为“False”，则测试运行时基本上没有机动时间。 测试的运行间隔将为 30 分钟。 这样可以确保每小时执行 2 个测试。
 
@@ -86,7 +86,7 @@ ms.locfileid: "31977039"
  在“运行设置”属性中，可以为“测试迭代”属性指定值。 此值是要在负载测试中运行的测试迭代的数目。 启动了指定数目的测试迭代后，将不再启动任何其他的测试迭代，而不管任何负载配置文件的设置。 完成了指定数目的测试迭代后，负载测试将结束。 有关详细信息，请参阅[如何：在运行设置中指定测试迭代数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)。
 
 ## <a name="initialize-and-terminate-tests"></a>初始化测试和终止测试
- 可以选择要在每个虚拟用户的负载测试会话的开始和结束时运行的测试。 有关详细信息，请参阅[编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
+ 可以选择要在每个虚拟用户的负载测试会话的开始和结束时运行的测试。 有关详细信息，请参阅[编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)。
 
 -   初始化测试。 在测试组合中的任何测试运行之前将由每个虚拟用户运行此测试。
 
@@ -102,7 +102,7 @@ ms.locfileid: "31977039"
 
 ## <a name="see-also"></a>请参阅
 
-- [编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [编辑测试组合以指定在负载测试方案中包括的测试](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
 - [配置负载测试运行设置](../test/configure-load-test-run-settings.md)

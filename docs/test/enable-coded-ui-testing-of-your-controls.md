@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 055fbdb338e5b8abf3f58f2a961d4e16d85fb993
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6f71012cca199cbee90995be654a75c1abb7fa79
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751749"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153558"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>启用控件的编码的 UI 测试
 
@@ -134,7 +134,7 @@ ms.locfileid: "34751749"
 
 1. 重写 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage> 的剩余抽象方法和属性。
 
-1. 生成二进制文件，然后将其复制到 **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**。
+1. 生成二进制文件，然后将其复制到 *%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*。
 
 > [!NOTE]
 > 此扩展包应用于类型为“Text”的所有控件。 如果测试同一类型的多个控件，则分别进行测试，以便可以管理在记录测试时要部署的扩展包。

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c151c371346287ce27814d11540d7227bc058c86
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 5377b4fbca562ad41b153c72f27a6eaecc84af56
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704169"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179016"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计易于访问的应用程序的资源
 
@@ -31,7 +31,7 @@ ms.locfileid: "33704169"
 
 * **Microsoft Active Accessibility** 一种基于 COM 的技术，可改进辅助工具处理在 Microsoft Windows 上运行的应用程序的方式。 它提供合并到操作系统中的动态链接库，以及一个 COM 接口和应用程序编程元素（为公开有关用户界面元素的信息提供了可靠方法）。 有关详细信息，请参阅 [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592.aspx)。
 
-* **Microsoft .NET 语音技术** Microsoft.NET Speech SDK 是一组 Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 控件、一个 Microsoft Internet Explorer 语音外接程序、示例应用程序和文档，使 Web 开发人员可以创建、调试和部署支持语音的 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 应用程序。 这些工具无缝集成到 Microsoft Visual Studio 中，从而使开发人员可以利用熟悉的开发环境。 有关详细信息，请参阅 [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx)。
+* Microsoft .NET 语音技术 Microsoft.NET Speech SDK 是一组 Microsoft [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 控件、一个 Microsoft Internet Explorer 语音加载项、示例应用程序和文档，使 Web 开发人员可以创建、调试和部署支持语音的 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 应用程序。 这些工具无缝集成到 Microsoft Visual Studio 中，从而使开发人员可以利用熟悉的开发环境。 有关详细信息，请参阅 [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx)。
 
 * **了解 SAMI 1.0** Microsoft 同步可访问媒体交换 (SAMI) 技术为开发人员提供了一种为 PC 多媒体的音频内容添加字幕的方法。 有关详细信息，请参阅[了解 SAMI 1.0](http://msdn.microsoft.com/library/ms971327.aspx)。
 

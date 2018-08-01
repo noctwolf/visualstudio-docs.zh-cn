@@ -20,27 +20,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f944d8546fd9124bc881f8421943d34a86698c5
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ef8b0abf2ed09a11dfacb80c5560413419dac2cb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569827"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180082"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 任务
-生成 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 项目时，运行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 任务，以将 \<hostInBrowser /> 元素添加到应用程序清单中 (projectname.exe.manifest)。  
+生成 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 项目时，运行 <xref:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication> 任务，以将 \<hostInBrowser /> 元素添加到应用程序清单中 (\<projectname>.exe.manifest)。  
   
 ## <a name="task-parameters"></a>任务参数  
   
 |参数|描述|  
 |---------------|-----------------|  
 |`ApplicationManifest`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定想要将 `<hostInBrowser />` 元素添加到其中的应用程序清单文件的路径和名称。|  
-|`HostInBrowser`|所需的 **Boolean** 参数。<br /><br /> 指定是否要修改应用程序清单，以包括 **\<hostInBrowser />** 元素。 如果为 **true**，则一个新 `<`**hostInBrowser />** 元素将包括在 **\<entryPoint />** 元素中。 请注意，元素包含是累计的：如果 **\<hostInBrowser />** 元素已存在，则不会删除或覆盖它。 相反，将创建额外的 **\<hostInBrowser />** 元素。 如果为 **false**，则不会修改应用程序清单。|  
+|`HostInBrowser`|所需的 **Boolean** 参数。<br /><br /> 指定是否要修改应用程序清单，以包括 **\<hostInBrowser />** 元素。 如果为 **true**，则一个新 **\<hostInBrowser />** 元素将包括在 **\<entryPoint />** 元素中。 元素包含是累计的：如果 \<hostInBrowser /> 元素已存在，则不会删除或覆盖它。 相反，将创建额外的 **\<hostInBrowser />** 元素。 如果为 false，则不会修改应用程序清单。|  
   
 ## <a name="remarks"></a>备注  
- 通过使用 [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] 部署运行 [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)]，因此，必须使用支持的部署和应用程序清单进行发布。 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 使用 [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) 任务来生成应用程序清单。  
+ [!INCLUDE[TLA2#tla_xbap#plural](../msbuild/includes/tla2sharptla_xbapsharpplural_md.md)] 通过 [!INCLUDE[TLA#tla_clickonce](../msbuild/includes/tlasharptla_clickonce_md.md)] 部署运行，因此必须使用支持部署和应用程序清单进行发布。 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 使用 [GenerateApplicationManifest](http://msdn2.microsoft.com/library/6wc2ccdc.aspx) 任务来生成应用程序清单。  
   
- 然后，若要将应用程序配置为从浏览器中进行管理，则必须将额外的元素 **\<hostInBrowser />** 添加到应用程序清单中，如以下示例所示：  
+ 然后，若要将应用程序配置为从浏览器中进行管理，则必须将额外的 **\<hostInBrowser />** 元素添加到应用程序清单中，如以下示例所示：  
   
 ```xml  
 <!--MyXBAPApplication.exe.manifest-->  
@@ -75,9 +75,9 @@ ms.locfileid: "31569827"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
+ [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
- [Building a WPF Application (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) （生成 WPF 应用程序 (WPF)）  
- [WPF XAML Browser Applications Overview](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)（WPF XAML 浏览器应用程序概述）
+ [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)   
+ [WPF XAML 浏览器应用程序概述](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

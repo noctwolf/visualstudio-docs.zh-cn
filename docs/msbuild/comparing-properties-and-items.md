@@ -12,16 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d2464acb75d8ea8a309d788aa95dc86b44d47e9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 96166caefa749138371dd8a5ab2ea9d496553557
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177109"
 ---
-# <a name="comparing-properties-and-items"></a>比较属性和项
+# <a name="compare-properties-and-items"></a>比较属性和项
 MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存储可在整个项目文件中引用的值。  
   
--   属性是名称/值对。 有关详细信息，请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
+-   属性是名称/值对。 详情请参阅 [MSBuild 属性](../msbuild/msbuild-properties.md)。  
   
 -   项是通常表示文件的对象。 项对象具有关联的元数据集合。 元数据是名称/值对。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。  
   
@@ -87,9 +88,10 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 -   按照项定义的显示顺序，对其进行定义和修改。  
   
 -   按照项的显示顺序，对其进行定义和修改。  
-  
+ 
+ 
  在生成的执行阶段期间，在目标内定义的属性和项将以其显示顺序，在一个阶段中进行评估。  
-  
+ 
  但是，此过程并未结束。 在属性、项定义或项被定义后，会计算其值。 表达式计算器将扩展指定值的字符串。 字符串扩展依赖于生成阶段。 以下是更详细的属性和项计算顺序：  
   
 -   在生成的评估阶段期间：  
@@ -127,9 +129,9 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 KeyFileVersion: 1.0.0.3  
 ```  
   
- 这是因为 `KeyFileVersion` 的值实际是字符串“@(KeyFile->'%(Version)')”。 第一次定义属性时，项和项转换不会展开，因此 `KeyFileVersion` 属性分配到未扩展字符串的值。  
+ 这是因为 `KeyFileVersion` 的值实际是字符串“\@(KeyFile->'%(Version)')”。 第一次定义属性时，项和项转换不会展开，因此 `KeyFileVersion` 属性分配到未扩展字符串的值。  
   
- 在生成的执行阶段期间，处理 Message 任务时，MSBuild 会将字符串“@(KeyFile->'%(Version)')”展开到产出“1.0.0.3”中。  
+ 在生成的执行阶段期间，处理 Message 任务时，MSBuild 会将字符串“\@(KeyFile->'%(Version)')”展开到产出“1.0.0.3”中。  
   
  请注意，即使属性和项组反向显示，也会出现同一消息。  
   
@@ -173,7 +175,7 @@ KeyFileVersion:
 </Target>  
 ```  
   
- `KeyFileVersion` 的值设置为“1.0.0.3”，而非“@(KeyFile->'%(Version)')”。 Message 任务将显示此消息：  
+ `KeyFileVersion` 的值设置为“1.0.0.3”，而非“\@(KeyFile->'%(Version)')”。 Message 任务将显示此消息：  
   
 ```  
 KeyFileVersion: 1.0.0.3  

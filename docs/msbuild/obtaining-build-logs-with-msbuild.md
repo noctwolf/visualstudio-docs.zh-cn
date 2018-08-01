@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe22717ffa734e5f79efd73a6ee032ef447056c
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 07936a7902e6c09070dddcb01af47079c579734e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303304"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179224"
 ---
-# <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
+# <a name="obtain-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 使用 MSBuild 开关，可指定要查看的生成数据量，以及是否要将生成数据保存到一个或多个文件。 还可指定一个自定义记录器来收集生成数据。 对于本主题未涉及的 MSBuild 命令行开关的相关信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 > [!NOTE]
 >  如果使用 Visual Studio IDE 生成项目，则可通过查看生成日志排除这些生成中的故障。 有关详细信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
-## <a name="setting-the-level-of-detail"></a>设置详细信息级别  
+## <a name="set-the-level-of-detail"></a>设置详细信息级别  
  在不指定详细信息等级的情况下使用 MSBuild 生成项目时，输出日志中会出现以下信息：  
   
 -   错误、警告和被分类为极为重要的消息。  
@@ -34,23 +34,23 @@ ms.locfileid: "36303304"
 -   一些状态事件。  
   
 -   生成总结。  
-  
- 使用 **/verbosity** (**/v**) 开关可控制出现在输出日志中的数据量。 对于故障排除，请使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的详细级别，它可提供大部分信息。  
-  
- 将 **/verbosity** 设置为 `detailed` 时，生成过程会减慢；将 **/verbosity** 设置为 `diagnostic` 时，该过程会更慢。  
+
+使用 **/verbosity** (**/v**) 开关可控制出现在输出日志中的数据量。 对于故障排除，请使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的详细级别，它可提供大部分信息。  
+
+将 **/verbosity** 设置为 `detailed` 时，生成过程会减慢；将 **/verbosity** 设置为 `diagnostic` 时，该过程会更慢。  
   
 ```cmd  
 msbuild MyProject.proj /t:go /v:diag  
 ```  
 
-## <a name="saving-the-build-log-to-a-file"></a>将生成日志保存到文件中  
- 可使用 **/fileLogger** (**fl**) 开关将生成数据保存到文件。 以下示例将生成数据保存到名为 `msbuild.log` 的文件。  
+## <a name="save-the-build-log-to-a-file"></a>将生成日志保存到文件中  
+ 可使用 **/fileLogger** (**fl**) 开关将生成数据保存到文件。 以下示例将生成数据保存到名为“msbuild.log”的文件。  
   
 ```cmd  
 msbuild MyProject.proj /t:go /fileLogger  
 ```  
   
- 在以下示例中，日志文件被命名为 `MyProjectOutput.log`，且日志输出的详细级别设置为了 `diagnostic`。 使用 **/filelogparameters** (`flp`) 开关可指定这两个设置。  
+ 在以下示例中，日志文件被命名为“MyProjectOutput.log”，且日志输出的详细级别设置为了 `diagnostic`。 使用 **/filelogparameters** (`flp`) 开关可指定这两个设置。  
   
 ```cmd  
 msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic  
@@ -58,10 +58,10 @@ msbuild MyProject.proj /t:go /fl /flp:logfile=MyProjectOutput.log;verbosity=diag
   
  有关详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
-## <a name="saving-the-log-output-to-multiple-files"></a>将日志输出保存到多个文件中  
- 以下示例将整个日志保存到了 `msbuild1.log`，将错误保存到了 `JustErrors.log`，并且将警告保存到了 `JustWarnings.log`。 该示例为三个文件中的每个文件都使用了文件编号。 在 **/fl** 和 **/flp** 开关（例如， `/fl1` 和 `/flp1`）后指定了文件编号。  
+## <a name="save-the-log-output-to-multiple-files"></a>将日志输出保存到多个文件中  
+ 以下示例将整个日志保存到了 msbuild1.log，将错误保存到了 JustErrors.log，并且将警告保存到了 JustWarnings.log。 该示例为三个文件中的每个文件都使用了文件编号。 在 **/fl** 和 **/flp** 开关（例如， `/fl1` 和 `/flp1`）后指定了文件编号。  
   
- 文件 2 和 3 的 **/Filelogparameters** (`flp`) 开关指定每个文件的名称及文件内容。 未为文件 1 指定名称，因此使用了默认名称 `msbuild1.log`。  
+ 文件 2 和 3 的 **/Filelogparameters** (`flp`) 开关指定每个文件的名称及文件内容。 未为文件 1 指定名称，因此使用了默认名称“msbuild1.log”。  
   
 ```cmd  
 msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorsonly /flp3:logfile=JustWarnings.log;warningsonly  
@@ -70,11 +70,11 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
  有关详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
 
-## <a name="saving-a-binary-log"></a>保存二进制日志
+## <a name="save-a-binary-log"></a>保存二进制日志
 
 可以使用 /binaryLogger (bl) 开关以压缩的二进制格式保存日志。 此日志包含生成进程的详细说明，并可以由某些日志分析工具读取。
 
-在以下示例中，创建了名为 `binarylogfilename` 的二进制日志文件。
+在以下示例中，创建了名为“binarylogfilename”的二进制日志文件。
 
 ```cmd  
 /bl:binarylogfilename.binlog
@@ -82,7 +82,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
  
 有关详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
 
-## <a name="using-a-custom-logger"></a>使用自定义记录器  
+## <a name="use-a-custom-logger"></a>使用自定义记录器  
  可以通过创作一个实现 <xref:Microsoft.Build.Framework.ILogger> 接口的托管类型来编写自己的记录器。 例如，可使用自定义记录程序，在电子邮件中发送生成错误，将其记录到数据库，或记录到 XML 文件。 有关详细信息，请参阅[生成记录器](../msbuild/build-loggers.md)。  
   
  在 MSBuild 命令行中，可使用 **/logger** 开关指定自定义记录器。 还可使用 **/noconsolelogger** 开关禁用默认控制台记录器。  

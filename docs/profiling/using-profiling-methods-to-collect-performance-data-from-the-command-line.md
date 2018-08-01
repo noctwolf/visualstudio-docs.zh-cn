@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 141341c09d9028e90900a29c702667304cfea7f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5e8dbaf62043897292afbb2805879e0447f3048a
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477700"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276697"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>使用分析方法通过命令行收集性能数据
 选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 代码编码目标应用程序。  
@@ -29,8 +29,8 @@ ms.locfileid: "34477700"
   
 |任务|目标应用程序类型|  
 |----------|-----------------------------|  
-|**启动应用程序**|-   [独立应用程序](../profiling/how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line.md)|  
-|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [本机独立应用程序](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [本机服务](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
+|**启动应用程序**|-   [独立应用程序](../profiling/how-to-launch-a-stand-alone-app-and-collect-application-statistics.md)|  
+|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md)<br />-   [本机独立应用程序](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)<br />-   [本机服务](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|  
   
 ## <a name="use-the-instrumentation-method-to-collect-detailed-timing-data"></a>使用检测方法收集详细计时数据  
  分析工具检测方法从包含软件探测的应用程序二进制文件副本收集性能数据，以记录性能信息。 会在每个检测的函数开始和结束时，以及在每次从检测的函数调用其他函数时收集检测数据。 检测方法可用于发现与 I/O 问题有关的性能问题（如磁盘使用率）。  
@@ -39,9 +39,9 @@ ms.locfileid: "34477700"
   
  **目标应用程序类型**  
   
--   [.NET Framework 独立组件](../profiling/how-to-instrument-a-stand-alone-dotnet-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [.NET Framework 独立组件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)  
   
--   [本机独立组件](../profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line.md)  
+-   [本机独立组件](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)  
   
 -   [静态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)  
   
@@ -58,9 +58,9 @@ ms.locfileid: "34477700"
   
 |任务|目标应用程序类型|  
 |----------|-----------------------------|  
-|**启动应用程序**|-   [独立 .NET Framework 应用程序](../profiling/how-to-launch-a-stand-alone-dotnet-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line.md)|  
-|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-stand-alone-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
-|**检测模块**|-   [.NET Framework 独立组件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [静态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)<br />-   [动态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [.NET 服务](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|**启动应用程序**|-   [独立 .NET Framework 应用程序](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-memory-data.md)|  
+|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line.md)|  
+|**检测模块**|-   [.NET Framework 独立组件](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md)<br />-   [静态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)<br />-   [动态编译的 ASP.NET Web 应用程序](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)<br />-   [.NET 服务](../profiling/how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
   
 ## <a name="use-the-concurrency-method-to-collect-resource-contention-and-thread-activity-data"></a>使用并发方法收集资源争用数据和线程活动数据  
  分析工具并发方法使你可以从多线程应用程序收集资源争用以及线程和进程活动数据。  
@@ -69,8 +69,8 @@ ms.locfileid: "34477700"
   
 |任务|目标应用程序类型|  
 |----------|-----------------------------|  
-|**启动应用程序**|-   [独立 .NET Framework 应用程序](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [独立本机应用程序](../profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line.md)|  
-|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [本机独立应用程序](../profiling/how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [本机服务](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
+|**启动应用程序**|-   [独立 .NET Framework 应用程序](../profiling/how-to-launch-a-stand-alone-dotnet-framework-app-to-collect-concurrency-data.md)<br />-   [独立本机应用程序](../profiling/how-to-launch-a-stand-alone-native-application-to-collect-concurrency-data.md)|  
+|**附加到正在运行的进程**|-   [.NET Framework 独立应用程序](../profiling/how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md)<br />-   [本机独立应用程序](../profiling/how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md)<br />-   [ASP.NET Web 应用程序](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [.NET 服务](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)<br />-   [本机服务](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|  
   
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>将层交互数据添加到分析运行  
  若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)  

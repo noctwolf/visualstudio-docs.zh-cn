@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4349220f650eef98ee765c1e7dbacb69263fe845
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976710"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176692"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入门：创建负载测试项目
 

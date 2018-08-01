@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: douge
-ms.openlocfilehash: 3dc06a19abdde00d4572e5c58895dc9b406ae6ba
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d50d16d23c2f12ac5ac9feaaa37ee3797802c97e
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34582590"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177517"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>在解决方案资源管理器中自定义文件嵌套
 
@@ -116,7 +116,7 @@ ms.locfileid: "34582590"
 
 ![fileToFile 示例规则](media/filenesting_filetofile.png) ![fileToFile 示例效果](media/filenesting_filetofile_effect.png)
 
-* 由于 fileToFile 规则，bower.json 嵌套在 .bowerrc 下
+* 由于 fileToFile 规则，.bowerrc 嵌套在 bower.json 下
 
 ### <a name="rule-order"></a>规则顺序
 

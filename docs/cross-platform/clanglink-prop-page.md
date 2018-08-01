@@ -32,12 +32,12 @@ f1_keywords:
 - VC.Project.VCLinkerTool.LibraryDependencies
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 3611268c17d26328d131eacafb92b1ce55c7d07f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b491257c561af337afdfd0d066c9ed8cd550c15
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065876"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39230943"
 ---
 # <a name="clang-linker-properties-android-c"></a>Clang 链接器属性 (Android C++)
 

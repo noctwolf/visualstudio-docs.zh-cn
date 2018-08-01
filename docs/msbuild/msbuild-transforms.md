@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 49044f620b928a60417e48cf368ec0d8ae1dcc85
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b1a3ff7cbd2025a909ab0c5fb044bb61b24388ff
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325281"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151195"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 转换是指采用一对一的方式将一个项列表转换为另一项列表。 通过转换，不仅项目可以转换项列表，而且目标还可以标识其输入和输出之间的直接映射。 本主题介绍转换以及 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 如何使用转换更有效地生成项目。  
   
 ## <a name="transform-modifiers"></a>转换修饰符  
-转换并不是任意的，而是受特殊语法的限制，其中所有的转换修饰符都必须采用 %(ItemMetaDataName) 格式。 任何项元数据都可用作转换修饰符。 这包括在创建每个项时为其分配的常见项元数据。 要获得常见项元数据的列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。  
+转换并不是任意的，而是受特殊语法的限制，其中所有的转换修饰符都必须采用 %(\<ItemMetaDataName>) 格式。 任何项元数据都可用作转换修饰符。 这包括在创建每个项时为其分配的常见项元数据。 要获得常见项元数据的列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。  
   
 在以下示例中，.resx 文件列表会转换为 .resources 文件列表。 %(Filename) 转换修饰符指定每个 .resources 文件与相应的 .resx 文件具有相同的文件名。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "36325281"
 >  可以为转换后的项列表指定自定义分隔符，其采用的方式与为标准项列表指定分隔符的相同。 例如，要使用逗号 (,) 而非默认的分号 (;) 分隔转换后的项列表，请使用下面的 XML：  
 > `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
   
-## <a name="using-multiple-modifiers"></a>使用多个修饰符  
+## <a name="use-multiple-modifiers"></a>使用多个修饰符  
  转换表达式可包含多个修饰符，这些修饰符可按任何顺序组合，还可重复使用。 在以下示例中，包含文件的目录的名称会更改，但文件会保留原来的名称和文件扩展名。  
   
 ```xml  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 559ce46bf7a6dfa99af9eb13b67ef29c5d5015be
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 6246c66299bb713c8b024feefa12eb883e2c0c76
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573084"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231088"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 任务
 根据指定的生成代码片段，生成临时代码文件。 不会删除该文件。  
@@ -39,7 +39,7 @@ ms.locfileid: "31573084"
 |`OutputFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 输出参数。<br /><br /> 指定已生成文件的路径。 如果使用文件名设置此参数，则会将目标文件夹附加在文件名前。 如果使用根设置，则会忽略目标文件夹。<br /><br /> 如果未设置此参数，输出文件名将为目标文件夹、任意文件名称和指定语言的默认文件扩展名。|  
   
 ## <a name="remarks"></a>备注  
- 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   

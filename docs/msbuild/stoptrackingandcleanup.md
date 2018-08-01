@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 731e8091a91c49c8e17dbcd00c3aea32001115a0
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 1ffbebd651087d9aa877d0e257947352a0d0275e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567894"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154819"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有跟踪，并释放跟踪会话使用的任何内存。  
@@ -36,7 +36,7 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ## <a name="return-value"></a>返回值  
  如果跟踪停止，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头：FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  

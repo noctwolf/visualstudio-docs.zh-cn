@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 183e549f6f582593915a89b7b0e907aa97253b17
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326635"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152456"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。  
@@ -62,8 +62,8 @@ ms.locfileid: "36326635"
 |---------------|-----------------|  
 |`Name`|必需的特性。<br /><br /> 目标的名称。|  
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 如果该条件评估结果为 `false`，那么目标不会执行目标主体或任何在 `DependsOnTargets` 属性中设置的目标。 有关条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
-|`Inputs`|可选特性。<br /><br /> 形成此目标输入的文件。 采用分号分隔多个文件。 将会比较该文件的时间戳与 `Outputs` 中文件的时间戳，从而确定 `Target` 是否为最新。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)，[如何：增量生成](../msbuild/how-to-build-incrementally.md)以及[转换](../msbuild/msbuild-transforms.md)。|  
-|`Outputs`|可选特性。<br /><br /> 形成此目标输出的文件。 采用分号分隔多个文件。 将会比较该文件的时间戳与 `Inputs` 中文件的时间戳，从而确定 `Target` 是否为最新。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)，[如何：增量生成](../msbuild/how-to-build-incrementally.md)以及[转换](../msbuild/msbuild-transforms.md)。|  
+|`Inputs`|可选特性。<br /><br /> 形成此目标输入的文件。 采用分号分隔多个文件。 将会比较该文件的时间戳与 `Outputs` 中文件的时间戳，从而确定 `Target` 是否为最新。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)、[如何：增量生成](../msbuild/how-to-build-incrementally.md)及[转换](../msbuild/msbuild-transforms.md)。|  
+|`Outputs`|可选特性。<br /><br /> 形成此目标输出的文件。 采用分号分隔多个文件。 将会比较该文件的时间戳与 `Inputs` 中文件的时间戳，从而确定 `Target` 是否为最新。 有关详细信息，请参阅[增量生成](../msbuild/incremental-builds.md)、[如何：增量生成](../msbuild/how-to-build-incrementally.md)及[转换](../msbuild/msbuild-transforms.md)。|  
 |`Returns`|可选特性。<br /><br /> 一组可供调用此目标（例如，MSBuild 任务）的任务使用的项。 采用分号分隔多个目标。 如果该文件中的目标没有 `Returns` 属性，则会使用输出属性来实现此目的。|  
 |`KeepDuplicateOutputs`|可选布尔属性。<br /><br /> 如果为 `true`，则会记录对目标的“返回”中的同一项的多个引用。  默认情况下，此属性为 `false`。|  
 |`BeforeTargets`|可选特性。<br /><br /> 分号分隔的目标名称列表。  指定时，表示此目标应在指定的一个或多个目标之前运行。 这样项目作者就可以扩展现有的一组目标，而无需直接对其进行修改。 有关详细信息，请参阅[目标生成顺序](../msbuild/target-build-order.md)。|  

@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 008275d4e0ff094c7933b4e0bae89055acd4bf8e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978172"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176208"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 
-通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，可以修改记录的 Web 性能测试。 应在你在 Web 性能测试记录器工具栏中选择“停止”之后，但在 Web 性能测试编辑器中保存和显示测试之前执行此修改。
+通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，可以修改记录的 Web 性能测试。 应在你在 Web 性能测试记录器工具栏中选择“停止”之后，但在“Web 性能测试编辑器”中保存和显示测试之前执行此修改。
 
-记录器插件使你可对动态参数执行自己的自定义关联。 通过内置的关联功能，Web 性能测试会在测试完成时或在使用 Web 性能测试编辑器工具栏上的“将动态参数提升为 Web 测试参数”时，在 Web 记录中检测动态参数。 但是，内置的检测功能并不是总能找到所有动态参数。 例如，该功能找不到通常会在 5 到 30 分钟之间更改其值的会话 ID。 因此，必须手动执行关联过程。
+记录器插件使你可对动态参数执行自己的自定义关联。 通过内置的关联功能，Web 性能测试会在测试完成时或在使用“Web 性能测试编辑器”工具栏上的“将动态参数提升为 Web 测试参数”时，在 Web 记录中检测动态参数。 但是，内置的检测功能并不是总能找到所有动态参数。 例如，该功能找不到通常会在 5 到 30 分钟之间更改其值的会话 ID。 因此，必须手动执行关联过程。
 
-通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，您可以为自己的自定义插件编写代码。 在 Web 性能测试编辑器中保存和显示 Web 性能测试之前，此插件可以多种方式执行关联或修改该 Web 性能测试。 因此，如果您确定必须为许多记录关联特定动态变量，则可自动执行此过程。
+通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，您可以为自己的自定义插件编写代码。 在“Web 性能测试编辑器”中保存和显示 Web 性能测试之前，此插件可以多种方式执行关联或修改该 Web 性能测试。 因此，如果您确定必须为许多记录关联特定动态变量，则可自动执行此过程。
 
 可以使用记录器插件的某些其他方法可用于在 Web 性能测试中添加提取和验证规则、添加上下文参数或将注释转换为事务。
 
@@ -33,7 +33,7 @@ ms.locfileid: "31978172"
 
 ### <a name="to-create-a-recorder-plug-in"></a>创建记录器插件
 
-1.  打开包含 Web 性能和负载测试项目以及你要为之创建记录器插件的 Web 性能测试的解决方案。
+1.  打开包含 Web 性能和负载测试项目以及要为之创建记录器插件的 Web 性能测试的解决方案。
 
 2.  在“解决方案资源管理器”中，右键单击解决方案，选择“添加”，然后选择“新建项目”。
 
@@ -74,12 +74,12 @@ ms.locfileid: "31978172"
         }
     ```
 
-     事件参数将为您提供两个要使用的对象：记录的结果和记录的 Web 性能测试。 这样您就可以循环访问结果以查找特定值，然后跳转到 Web 性能测试中的同一请求以进行修改。 当你要添加上下文参数或参数化 URL 的某些部分时，还可以修改 Web 性能测试。
+     事件自变量将为你提供两个要使用的对象：记录的结果和记录的 Web 性能测试。 这样便可以循环访问结果以查找特定值，然后跳转到 Web 性能测试中的同一请求以进行修改。 当要添加上下文参数或参数化 URL 的某些部分时，还可以修改 Web 性能测试。
 
     > [!NOTE]
     > 如果确实要修改 Web 性能测试，则还需要将 <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> 属性设置为 true：`e.RecordedWebTestModified = true;`
 
-11. 根据您希望记录器插件在 Web 记录发生后执行的操作来添加更多代码。 例如，可以添加代码来处理自定义关联，如以下示例所示。 你还可以为将注释转换为事务或向 Web 性能测试添加验证规则等操作创建记录器插件。
+11. 根据希望记录器插件在 Web 记录发生后执行的操作来添加更多代码。 例如，可以添加代码来处理自定义关联，如以下示例所示。 还可以为将注释转换为事务或向 Web 性能测试添加验证规则等操作创建记录器插件。
 
 12. 在“生成”菜单上，选择“生成”\<“类库项目名称>”。
 
@@ -113,7 +113,7 @@ ms.locfileid: "31978172"
     >
     > 如果对任何插件进行代码更改并创建新 DLL 版本 (Version=0.0.0.0)，则会引发这种情况，但插件仍会引用原来的插件版本。 若要更正此问题，请执行以下步骤：
     >
-    > 1.  在你的 Web 性能和负载测试项目中，你将看到引用警告。 移除和重新添加对插件 DLL 的引用。
+    > 1.  在 Web 性能和负载测试项目中，将看到引用警告。 移除和重新添加对插件 DLL 的引用。
     > 2.  从测试或适当位置移除插件，然后再重新添加。
 
 ## <a name="example"></a>示例
@@ -144,7 +144,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
 
 ## <a name="add-an-extraction-rule"></a>添加提取规则
 
-找到响应后，需要添加提取规则。 此部分示例代码使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 类创建提取规则，然后在 Web 性能测试中查找要向其添加提取规则的正确请求。 每个结果对象都会添加一个名为 DeclarativeWebTestItemId 的新属性，代码中正在使用该属性从 Web 性能测试中获取正确请求。
+找到响应后，需要添加提取规则。 此部分示例代码使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> 类创建提取规则，然后在 Web 性能测试中查找要向其添加提取规则的正确请求。 每个结果对象都会添加一个名为“DeclarativeWebTestItemId”的新属性，代码中正在使用该属性从 Web 性能测试中获取正确请求。
 
 ```csharp
 ExtractionRuleReference ruleReference = new ExtractionRuleReference();

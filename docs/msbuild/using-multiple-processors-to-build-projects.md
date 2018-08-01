@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aff6d2ff6f509bca31283e2fbb04896f6e8adce9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ae7ff885ea7707ebe2f60001b265913856cbd125
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577504"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177745"
 ---
-# <a name="using-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
+# <a name="use-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每个可用处理器创建单独的生成进程。 例如，如果系统具有四个处理器，则创建四个生成进程。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以同时处理这些生成，从而缩短总体生产时间。 但是，并行生成会在生成方式上引入了一些更改。 本主题将讨论这些更改。  
   
 ## <a name="project-to-project-references"></a>项目到项目的引用  

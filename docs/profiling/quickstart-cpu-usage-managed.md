@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69b1179763433213539af81bf29e34d09e98bf3b
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750280"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206820"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（托管代码）
 
@@ -26,12 +26,9 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
 诊断中心提供了大量其他选项来运行和管理诊断会话。 如果此处介绍的“CPU 使用率”工具未提供所需数据，[其他分析工具](../profiling/profiling-feature-tour.md)可提供可能有帮助的不同种类的信息。 在许多情况下，CPU 以外的因素可能会导致应用程序性能瓶颈，例如内存、呈现 UI 或网络请求时间。 诊断中心提供大量其他选项，可用于记录和分析此种数据。
 
-> [!NOTE]
-> 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
-
 ## <a name="create-a-project"></a>创建项目
 
-1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
+1. 在 Visual Studio 中，依次选择“文件” > “新建项目”。
 
 2. 在“Visual C#”或“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”。
 
@@ -39,7 +36,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
     Visual Studio 随即创建项目。
 
-2. 打开 Program.cs 并将所有代码替换为以下代码：
+2. 打开“Program.cs”并将所有代码替换为以下代码：
 
     ```csharp
     using System;
@@ -158,9 +155,9 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
     ```
 
     > [!NOTE]
-    > 在 Visual Basic 中，确保将启动对象设置为 `Sub Main`（“属性”>“应用程序”>“启动对象”）。
+    > 在 Visual Basic 中，确保将启动对象设置为 `Sub Main`（“属性” > “应用程序” > “启动对象”）。
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>步骤 1：收集分析数据
+##  <a name="step-1-collect-profiling-data"></a>步骤 1：收集分析数据
 
 1.  首先，在应用中在 `Main` 函数的该代码行处设置一个断点：
 
@@ -179,9 +176,9 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
     > [!TIP]
     > 通过设置两个断点，可将数据收集限制到想要分析的代码部分。
 
-3.  已显示“诊断工具”窗口，除非已将其关闭。 若要再次显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”。
+3.  已显示“诊断工具”窗口，除非已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
-4.  依次单击“调试”、“启动调试”或单击工具栏上的“启动”或按 **F5**。
+4.  依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
 
      应用完成加载后，将显示诊断工具的“摘要”视图。
 
@@ -203,7 +200,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
      现在可以开始分析数据。
 
-## <a name="Step2"></a>步骤 2：分析 CPU 使用率数据
+## <a name="step-2-analyze-cpu-usage-data"></a>步骤 2：分析 CPU 使用情况数据
 
 建议通过检查 CPU 使用率下的函数列表开始分析数据，然后确定执行大部分工作的函数，最后仔细查看每一个函数。
 
@@ -238,4 +235,4 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 ## <a name="see-also"></a>请参阅
 
 - [使用 Visual Studio 分析](../profiling/index.md)
-- [分析功能导览](../profiling/profiling-feature-tour.md)
+- [首先了解分析工具](../profiling/profiling-feature-tour.md)

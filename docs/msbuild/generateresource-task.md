@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e26aae610407ceb1ebe050081f5b555d82badc92
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c830b640b3efb4e963d62402bbf68d1bc7dff0e9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575099"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176949"
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
-将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resource 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
+将文本 .txt 和 .resx（基于 XML 的资源格式）文件转换为公共语言运行时二进制 .resources 文件，这些 .resources 文件可嵌入到运行时二进制可执行文件中或编译到附属程序集中。 此任务通常用于将 .txt 或 .resx 文件转换为 .resources 文件。 `GenerateResource` 任务在功能上类似于 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
   
 ## <a name="parameters"></a>参数  
  下表描述了 `GenerateResource` 任务的参数。  
@@ -44,12 +44,12 @@ ms.locfileid: "31575099"
 |`NeverLockTypeAssemblies`|可选 `Boolean` 参数。<br /><br /> 获取或设置一个布尔值，该值指定是创建新的 [AppDomain](/dotnet/api/system.appdomain) 来计算资源 (.resx) 文件 (true) 还是仅当资源文件引用用户的程序集时才创建新的 [AppDomain](/dotnet/api/system.appdomain) (false)。|  
 |`OutputResources`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定生成的文件（如 .resources 文件）的名称。 如果不指定名称，则会使用匹配输入文件的名称，且创建的 .resources 文件会放在包含此输入文件的目录之中。|  
 |`PublicClass`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则会将强类型的资源类创建为公共类。|  
-|`References`|可选 `String[]` 参数。<br /><br /> 要从中加载 .resx 文件中的类型的引用。 Resx 文件数据元素可能具有 .NET 类型。 读取 .resx 文件时，必须对此进行解析。 通常，使用标准类型加载规则可成功解析。 如果在 `References` 中提供程序集，则它们具有优先级。<br /><br /> 强类型资源不要求此参数。|  
+|`References`|可选 `String[]` 参数。<br /><br /> 要从中加载 .resx 文件中的类型的引用。 .resx 文件数据元素可能具有 .NET 类型。 读取 .resx 文件时，必须对此进行解析。 通常，使用标准类型加载规则可成功解析。 如果在 `References` 中提供程序集，则它们具有优先级。<br /><br /> 强类型资源不要求此参数。|  
 |`SdkToolsPath`|可选 `String` 参数。<br /><br /> 指定 SDK 工具（例如 resgen.exe）的路径。|  
-|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   `.txt`：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   `.resx`：指定要转换的基于 XML 的资源文件的扩展名。<br />-   `.restext`：指定相同的格式为 .txt。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   `.resources`：指定要转换的资源文件的扩展名。|  
+|`Sources`|必选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要转换的项。 传递到此参数的项必须具有以下文件扩展名之一：<br /><br /> -   .txt：指定要转换的文本文件的扩展名。 文本文件只能包含字符串资源。<br />-   .resx：指定要转换的基于 XML 的资源文件的扩展名。<br />-   .restext：指定相同的格式为 .txt。 如果要在生成过程中明确区分包含资源的源文件与其他源文件，则这个不相同的扩展名非常有用。<br />-   .resources：指定要转换的资源文件的扩展名。|  
 |`StateFile`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定用于加速 .resx 输入文件中链接的依赖项检查的可选缓存文件的路径。|  
 |`StronglyTypedClassName`|可选 `String` 参数。<br /><br /> 指定强类型资源类的类名。 如果未指定此参数，则使用资源文件的基名称。|  
-|`StronglyTypedFilename`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定源文件的文件名。 如果未指定此参数，则会将类的名称用作基文件名，其扩展名取决于语言。 例如：`MyClass.cs`。|  
+|`StronglyTypedFilename`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定源文件的文件名。 如果未指定此参数，则会将类的名称用作基文件名，其扩展名取决于语言。 例如：MyClass.cs。|  
 |`StronglyTypedLanguage`|可选 `String` 参数。<br /><br /> 指定在为强类型资源生成类源时要使用的语言。 此参数必须与 CodeDomProvider 所使用的其中一种语言完全匹配。 例如 `VB` 或 `C#`。<br /><br /> 通过将值传递给此参数来指示任务生成强类型资源。|  
 |`StronglyTypedManifestPrefix`|可选 `String` 参数。<br /><br /> 指定要在强类型资源的生成类源中使用的资源命名空间或清单前缀。|  
 |`StronglyTypedNamespace`|可选 `String` 参数。<br /><br /> 指定要用于强类型资源的生成类源的命名空间。 如果未指定此参数，则任何强类型资源都会位于全局命名空间中。|  
@@ -63,9 +63,9 @@ ms.locfileid: "31575099"
 |`UseSourcePath`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则指定使用输入文件的目录来解析相对文件路径。|  
   
 ## <a name="remarks"></a>备注  
- 由于 .resx 文件可能包含其他资源文件的链接，因此仅通过比较 .resx 和 .resource 文件时间戳的方式来查看是否为最新输出并不可靠。 相反，`GenerateResource` 任务会跟踪 .resx 文件中的链接，同时也检查链接文件的时间戳。 这意味着通常不应对包含 `GenerateResource` 任务的目标使用 `Inputs` 和 `Outputs` 属性，因为这样会导致在实际上应运行该任务时跳过此任务。  
+ 由于 .resx 文件可能包含其他资源文件的链接，因此仅通过比较 .resx 和 .resources 文件时间戳的方式来查看是否为最新输出并不可靠。 相反，`GenerateResource` 任务会跟踪 .resx 文件中的链接，同时也检查链接文件的时间戳。 这意味着通常不应对包含 `GenerateResource` 任务的目标使用 `Inputs` 和 `Outputs` 属性，因为这样会导致在实际上应运行该任务时跳过此任务。  
   
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
  使用 MSBuild 4.0 生成 .NET 3.5 项目时，x86 资源生成可能会失败。 若要解决此问题，可将目标生成为 AnyCPU 程序集。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "31575099"
 <ItemGroup>   <EmbeddedResource Include="myResource.resx">       <LogicalName>someQualifier.someResource.resources</LogicalName>   </EmbeddedResource></ItemGroup>  
 ```  
   
- 如果没有 \<LogicalName> 元数据，则资源会被命名为 myAssembly.myResource.resources。  此示例仅适用于 Visual Basic 和 Visual C# 生成过程。  
+ 如果没有 \<LogicalName> 元数据，则资源会命名为 myAssembly.myResource.resources。  此示例仅适用于 Visual Basic 和 Visual C# 生成过程。  
   
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   

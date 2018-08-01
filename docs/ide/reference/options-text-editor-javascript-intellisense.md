@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 962d185232fc8a98343ed97fa4dd0230d55f5bb7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948803"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179744"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的 **“工具”** 、 **“选项”**, **“文本编辑器”** 、 **““IntelliSense””**, **“IntelliSense”**, **“工具”.** 页。

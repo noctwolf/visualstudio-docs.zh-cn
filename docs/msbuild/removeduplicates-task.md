@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 596c066018a5f6f731c4ca0cefbefae458646ec1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b121090196b5b9222799cdcce4e4f9af096e483f
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574189"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153067"
 ---
 # <a name="removeduplicates-task"></a>RemoveDuplicates 任务
 从指定的项集合中删除重复的项。  
@@ -41,7 +41,7 @@ ms.locfileid: "31574189"
 ## <a name="remarks"></a>备注  
  此任务不区分大小写，并且在确定重复项时不比较项元数据。  
   
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `RemoveDuplicates` 任务从 `MyItems` 项集合中删除重复项。 任务完成后，`FilteredItems` 项集合包含一个项。  
@@ -68,7 +68,7 @@ ms.locfileid: "31574189"
 </Project>  
 ```  
 
- 下面的示例显示 `RemoveDuplicates` 任务保留其输入顺序。 任务完成后，`FilteredItems` 项集合以该顺序包含项“MyFile2.cs”、“MyFile1.cs”和“MyFile3.cs”。  
+ 下面的示例显示 `RemoveDuplicates` 任务保留其输入顺序。 任务完成后，`FilteredItems` 项集合以该顺序包含项 MyFile2.cs、MyFile1.cs 和 MyFile3.cs。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7e5e6919dbc37294ef677f3c512c51d53aea0e2f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751337"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180636"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 
@@ -29,7 +29,7 @@ ms.locfileid: "34751337"
 > [!NOTE]
 > 如果负载测试分布在多台远程计算机之间，则会将控制器和代理计数器映射到控制器和代理计数器集中。 有关如何在负载测试中使用远程计算机的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
-在指定的计算机上收集计数器集。 计数器集与负载测试期间使用的计算机之间的关联就是计数器集映射。 例如，你所测试的 Web 服务器可能会具有 ASP.NET、IIS 和 .NET 应用程序计数器集映射。
+在指定的计算机上收集计数器集。 计数器集与负载测试期间使用的计算机之间的关联就是计数器集映射。 例如，所测试的 Web 服务器可能会具有 ASP.NET、IIS 和 .NET 应用程序计数器集映射。
 
 默认情况下，在控制器和代理上收集性能计数器。 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "34751337"
 |任务|相关主题|
 |-----------|-----------------------|
 |**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   [如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**向负载测试添加计数器集：** 在使用新建负载测试向导创建负载测试时，会添加一个初始的计数器集。 该计数器集为你的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**向负载测试添加计数器集：** 在使用新建负载测试向导创建负载测试时，会添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**指定对负载测试使用计数器的阈值规则：** 阈值规则是对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 负载测试中的阈值规则将一个性能计数器值与一个常数值或另一个性能计数器值进行比较。|-   [如何：添加阈值规则](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**为计数器集映射到的计算机指定友好名称：** 可以添加计算机标记，通过这些标记可向计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。|-   [如何：向计数器集映射添加计算机标记](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
 
@@ -58,7 +58,7 @@ ms.locfileid: "34751337"
 
 为了便于在 Web 服务器上收集性能数据，Visual Studio Enterprise 还基于在负载测试中使用的技术提供了预定义的命名计数器集。 这些计数器集在您分析运行 IIS、ASP.NET 或 SQL Server 的服务器时很有用。 可以使用负载测试编辑器添加默认的计数器集中没有提供的计数器。 请务必将正在测试的计算机或服务器添加到负载测试中，以确保可以监视这些计算机上的资源使用情况。 有关详细信息，请参阅[如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)。
 
-负载运行的结果分析经常要求您具备某个方面的专业知识，这样才能知道需要收集哪些数据、在哪些地方设置阈值规则以及如何判别测量值反映出的应用程序中的特定问题。 有关详细信息，请参阅[关于阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md#SpecifyingCounterSetsThresholdRulesAboutThresholdRules)。
+负载运行的结果分析经常要求您具备某个方面的专业知识，这样才能知道需要收集哪些数据、在哪些地方设置阈值规则以及如何判别测量值反映出的应用程序中的特定问题。 有关详细信息，请参阅[关于阈值规则](#about-threshold-rules)。
 
 ### <a name="performance-counter-sampling-interval-considerations"></a>性能计数器采样间隔注意事项
 
