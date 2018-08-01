@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的 C# 和 ASP.NET Core 入门
 ms.custom: ''
-ms.date: 12/11/2017
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,18 +14,18 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 3de8a60b6f9f4807bd0032fc457a9040f937c063
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 9df1cbae3b0233a8711ab6a287513d89670df4d4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765510"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177365"
 ---
 # <a name="get-started-with-c-and-aspnet-in-visual-studio"></a>Visual Studio 中的 C# 和 ASP.NET 入门
 
 本教程介绍在 Visual Studio 中借助 ASP.NET Core 进行 C# 开发，将创建一个 C# ASP.NET Core Web 应用，向其添加代码，浏览 IDE 的某些功能并运行应用。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
 ## <a name="before-you-begin"></a>在开始之前
 
@@ -41,7 +41,7 @@ ASP.NET Core 是开放源跨平台框架，用于生成基于 Internet 连接的
 
 ### <a name="what-is-visual-studio"></a>什么是 Visual Studio？
 
-Visual Studio 是适用于开发人员的生产力工具集成开发套件。 可将其视为可用于创建程序和应用程序的程序。  
+Visual Studio 是适用于开发人员的生产力工具集成开发套件。 可将其视为可用于创建程序和应用程序的程序。
 
 ## <a name="start-developing"></a>开始开发
 
@@ -65,9 +65,9 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 ##### <a name="option-1-use-the-new-project-dialog-box"></a>方式 1：打开“新建项目”对话框
 
-1. 单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。
+1. 选择“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。
 
-   ![单击“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/vs-open-visual-studio-installer-generic.png)
+   ![选择“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/vs-open-visual-studio-installer-generic.png)
 
 2. Visual Studio 安装程序启动。 选择“ASP.NET 和 Web 开发”工作负载，然后选择“修改”。
 
@@ -81,7 +81,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 #### <a name="add-a-project-template"></a>添加项目模板
 
-1. 在“新建 ASP.NET Core Web 应用程序”对话框中，选择“Web 应用程序(模型-视图-控制器)”项目模板。  
+1. 在“新建 ASP.NET Core Web 应用程序”对话框中，选择“Web 应用程序(模型-视图-控制器)”项目模板。
 
 2. 从顶部下拉菜单中选择“ASP.NET Core 2.0”。 （如果没有在列表中看到“ASP.NET Core 2.0”，请通过“下载”链接进行安装，该链接显示在对话框顶部附近的黄色栏中。）选择 **“确定”**。
 
@@ -134,7 +134,7 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
 1. 在 IDE 中选择“IIS Express”按钮，在调试模式下生成并运行应用。 （或者，按 F5 或从菜单栏选择“调试”>“启动调试”。）
 
-   ![在 Visual Studio 中单击“IIS Express”按钮](../ide/media/csharp-aspnet-iis-express-button.png)
+   ![在 Visual Studio 中选择“IIS Express”按钮](../ide/media/csharp-aspnet-iis-express-button.png)
 
   > [!NOTE]
   > 如果看到内容为“无法连接到 Web 服务器‘IIS Express’”的错误消息，请关闭 Visual Studio，再使用右键单击菜单或上下文菜单中的“以管理员身份运行”选项打开它。 然后，再次运行应用。
@@ -179,11 +179,13 @@ MVC 模式有助于创建比传统单片应用更易于测试和更新的应用�
 
 11. 从工具栏选择“停止调试”按钮来停止调试。 （或者，按 Shift+F5 或从菜单栏选择“调试” > “停止调试”。）
 
-   ![在工具栏上，单击“停止调试”按钮](../ide/media/csharp-aspnet-stop-debugging.png)
+   ![在工具栏上，选择“停止调试”按钮](../ide/media/csharp-aspnet-stop-debugging.png)
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜你完成本教程！ 希望你已对 C#、ASP.NET Core 和 Visual Studio IDE 有了一定了解。 若要更加深入地了解，请继续学习下面的教程。
+恭喜你完成本教程！ 希望你已对 C#、ASP.NET Core 和 Visual Studio IDE 有了一定了解。 若要查看公共服务器上运行的应用，请选择下面的按钮。
 
- > [!div class="nextstepaction"]
- > [ASP.NET Core MVC 和 Visual Studio 入门](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)
+> [!div class="nextstepaction"]
+> [将应用部署到 Azure 应用服务](..//deployment/quickstart-deploy-to-azure.md)
+
+学习教程 [ASP.NET Core MVC 和 Visual Studio 入门](/aspnet/core/tutorials/first-mvc-app/start-mvc?tabs=aspnetcore2x)，还可了解如何在 ASP.NET Core 中使用模型视图控制器 (MVC) 框架。

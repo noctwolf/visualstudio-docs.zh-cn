@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 239d1966c45aaebc8960601372852704935d5fcf
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 0310ac0ee0e6226f9f5685c590e4dc2e0c49b6b3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751600"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176136"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>在负载测试方案中配置测试迭代
 

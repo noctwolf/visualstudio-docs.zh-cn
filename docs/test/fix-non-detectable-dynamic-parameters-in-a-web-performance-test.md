@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d358a5f4035d3da1dee4a391fb07931b15d68733
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 379291059157980a86d0379c69c0d592eee83a99
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751041"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177820"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 性能测试中修复无法检测的动态参数
 
@@ -35,7 +35,7 @@ ms.locfileid: "34751041"
 
 为了演示可检测的和无法检测的动态参数，我们将创建一个简单的 ASP.NET Web 应用程序，该应用程序具有带几个控件和一些自定义代码的三个 Web 窗体。 我们接下来将了解如何隔离和处理动态参数。
 
-1.  创建一个名为 DynamicParamaterSample 的新 ASP.NET 项目。
+1.  创建一个名为 DynamicParameterSample 的新 ASP.NET 项目。
 
      ![创建一个空 ASP.NET Web 应用程序项目](../test/media/web_test_dynamicparameter_aspproject.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "34751041"
 
 6.  添加另一个名为 ASPQuery.aspx 的 Web 窗体。
 
-7.  在设计视图中，将标签拖动到页面上，并将其 (ID) 属性的值更改为 IndexLabel。
+7.  在设计视图中，将标签拖动到页面上，并将其 (ID) 属性的值更改为“IndexLabel”。
 
      ![向 Web 表单添加标签](../test/media/web_test_dynamicparameter_label.png)
 
@@ -118,11 +118,11 @@ ms.locfileid: "34751041"
 
 13. 保存项目。
 
-14. 在解决方案资源管理器中，将 Querystring.aspx 设置为起始页。
+14. 在“解决方案资源管理器”中，将 Querystring.aspx 设置为起始页。
 
      ![在 Querystring.aspx 上设置起始页](../test/media/web_test_dynamicparameter_setstartpage.png)
 
-15. 按 Ctrl+F5 在浏览器中运行该 Web 应用程序。 复制 URL。 当记录你的测试时，你将需要它。
+15. 按 Ctrl+F5 以在浏览器中运行该 Web 应用程序。+ 复制 URL。 当记录你的测试时，你将需要它。
 
 16. 尝试这两个链接。 它们都会显示消息“Success. Dynamic querystring parameter found.”（成功。已找到动态查询字符串参数。）
 
@@ -198,7 +198,7 @@ ms.locfileid: "34751041"
 
      正如“响应”选项卡和以下显示的之前实现的 JavaScript 所示，向查询字符串参数 CustomQueryString 分配值“jScriptQueryString___”，并且该字符串参数还会与变量 sessionId 的返回值串联。
 
-    ```
+    ```javascript
     function jScriptQueryString()          {             var Hidden = document.getElementById("HiddenFieldSessionID");             var sessionId = Hidden.value;             window.location = 'JScriptQuery.aspx?CustomQueryString=jScriptQueryString___' + sessionId;          }
 
     ```
@@ -265,4 +265,4 @@ ms.locfileid: "34751041"
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>问：我是否需要将 Visual Studio 配置为检测动态参数？
 
- 答：当记录 Web 性能测试时，默认的 Visual Studio 配置为检测动态参数。 但是，如果将 Visual Studio 选项配置为不检测动态参数，或使用其他动态参数修改了所测试的 Web 应用程序；仍可[从 Web 性能测试编辑器运行动态参数检测](#FindingNonDetectableDynamicParamters_QA_ReRunDetection)。
+ 答：当记录 Web 性能测试时，默认的 Visual Studio 配置为检测动态参数。 但是，如果将 Visual Studio 选项配置为不检测动态参数，或使用其他动态参数修改了所测试的 Web 应用程序；仍可从 Web 性能测试编辑器运行动态参数检测。

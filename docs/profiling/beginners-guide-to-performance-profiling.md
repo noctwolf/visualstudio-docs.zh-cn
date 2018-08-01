@@ -18,28 +18,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e295c08568e13fade750cadcea03b61d2a7ca9d3
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: fa2751b901323adb6aa17ab553aa2f464d883ebd
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766696"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39206821"
 ---
 # <a name="profile-application-performance-in-visual-studio"></a>在 Visual Studio 中分析应用程序性能
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程演示如何使用诊断工具的“CPU 使用率”选项卡获取应用的性能数据。 Visual Studio 中的 .NET 开发（包括 ASP.NET、和本机 /C++ 开发）支持此诊断工具。
   
 调试中断时，**CPU 使用率**工具收集有关应用程序中正在执行的函数的信息。 该工具将列出执行工作的函数，并提供时间线图，可专用于采样会话的特定部分。
 
-诊断中心提供了大量其他选项来运行和管理诊断会话。 如果**CPU 使用率**未提供所需数据，[其他分析工具](../profiling/Profiling-Tools.md)可提供可能有帮助的不同种类的信息。 在许多情况下，CPU 以外的因素可能会导致应用程序性能瓶颈，例如内存、呈现 UI 或网络请求时间。 诊断中心提供大量其他选项，可用于记录和分析此种数据。
+诊断中心提供了大量其他选项来运行和管理诊断会话。 如果**CPU 使用率**未提供所需数据，[其他分析工具](../profiling/profiling-feature-tour.md)可提供可能有帮助的不同种类的信息。 在许多情况下，CPU 以外的因素可能会导致应用程序性能瓶颈，例如内存、呈现 UI 或网络请求时间。 诊断中心提供大量其他选项，可用于记录和分析此种数据。
 
 |         |         |
 |---------|---------|
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何分析 CPU 使用率以及如何分析内存使用情况。 |
 
 本文讨论在常规调试工作流中分析 CPU 使用情况。 还可以在不附加调试程序的情况下，或通过定目标到正在运行的应用来分析 CPU 使用率。有关详细信息，请参阅[在使用或不使用调试程序的情况下运行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)中的[在不使用调试程序的情况下收集分析数据](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging)。
-
-> [!NOTE]
-> 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
 
 在本教程中，你将：
 
@@ -56,15 +53,15 @@ ms.locfileid: "34766696"
     > [!TIP]
     > 通过设置两个断点，可将数据收集限制到想要分析的代码部分。
   
-3.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”。
+3.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
-4.  可以使用工具栏上的“选择工具”设置，选择是否查看 **CPU 使用率**[内存使用](../profiling/Memory-Usage.md)或同时查看两者。 如果运行的是 Visual Studio Enterprise，则可依次选择“工具”、“选项”、“IntelliTrace”启用或禁用 IntelliTrace。
+4.  可以使用工具栏上的“选择工具”设置，选择是否查看 **CPU 使用率**[内存使用](../profiling/Memory-Usage.md)或同时查看两者。 如果运行的是 Visual Studio Enterprise，还可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。
 
      ![显示诊断工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      我们将主要查看 CPU 使用率，因此请确保已启用**CPU 使用率**（默认情况下已启用）。
 
-5.  依次单击“调试”、“启动调试”或单击工具栏上的“启动”或按 **F5**。
+5.  依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
 
      当应用完成加载后，将显示诊断工具的“摘要”视图。
 
@@ -132,7 +129,7 @@ ms.locfileid: "34766696"
 |||
 |-|-|
 |![第 1 步](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量调用关系树中的顶级节点是一个伪节点|  
-|![第 2 步](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大多数应用中，当禁用 [“显示外部代码”](#BKMK_External_Code) 选项时，二级节点是 **[外部代码]** 节点，该节点包含系统和框架代码，它可以启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级服务。|  
+|![第 2 步](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大多数应用中，当禁用 [“显示外部代码”](#view-external-code) 选项时，二级节点是 **[外部代码]** 节点，该节点包含系统和框架代码，它可以启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级服务。|  
 |![第 3 步](../profiling/media/ProcGuid_3.png "ProcGuid_3")|二级节点的子级为用户代码方法和异步例程，它们由二级系统和框架代码进行调用或创建。|
 |![第 4 步](../profiling/media/ProcGuid_4.png "ProcGuid_4")|方法的子节点仅包含用于父方法调用的数据。 禁用“显示外部代码”  后，应用方法只能包含 **[外部代码]** 节点。|
 
@@ -161,7 +158,7 @@ ms.locfileid: "34766696"
 
 ## <a name="next-steps"></a>后续步骤
 
-本教程中介绍了如何收集和分析 CPU 使用量数据。 完成[探查器教程](../profiling/profiling-feature-tour.md)后，你可能想要快速了解如何分析应用中的内存使用情况。
+本教程中介绍了如何收集和分析 CPU 使用量数据。 完成[首先了解分析工具](../profiling/profiling-feature-tour.md)后，你可能想要快速了解如何分析应用中的内存使用情况。
 
 > [!div class="nextstepaction"]
-> [分析内存使用情况](../profiling/memory-usage.md) 
+> [Visual Studio 中的配置文件内存使用](../profiling/memory-usage.md) 

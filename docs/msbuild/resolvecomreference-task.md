@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8bf991ca4bec8befde5a11673dcb056f5e50f4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0f13efe45547b657f9e07c12d8eee4160ec7b95e
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578167"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152394"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 获取一个或多个类型库名称或 .tlb 文件的列表，将这些类型库解析为磁盘上的位置。  
@@ -39,8 +39,8 @@ ms.locfileid: "31578167"
 |`EnvironmentVariables`|可选 `String[]` 参数。<br /><br /> 环境变量对的数组（使用等号分隔）。 这些变量会传递给生成的 tlbimp.exe 和 aximp.exe 以及常规环境块，或有选择地重写常规环境块。|  
 |`ExecuteAsTool`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，请于进程外从适当的目标框架运行 tlbimp.exe 和 aximp.exe 来生成所需的包装器程序集。 此参数支持多目标。|  
 |`IncludeVersionInInteropName`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，包装器名称中将包含 TypeLib 版本。 默认值为 `false`。|  
-|`KeyContainer`|可选 `String` 参数。<br /><br /> 指定保存公钥/私钥对<br /><br /> 的容器。|  
-|`KeyFile`|可选 `String` 参数。<br /><br /> 指定保存公钥/私钥对<br /><br /> 的项。|  
+|`KeyContainer`|可选 `String` 参数。<br /><br /> 指定保存公钥/私钥对的容器。|  
+|`KeyFile`|可选 `String` 参数。<br /><br /> 指定包含公钥/私钥对的项。|  
 |`NoClassMembers`|可选 `Boolean` 参数。|  
 |`ResolvedAssemblyReferences`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定已解析的程序集引用。|  
 |`ResolvedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 指定磁盘上的完全限定文件，这些文件与作为此任务的输入提供的类型库的物理位置相对应。|  
@@ -48,12 +48,10 @@ ms.locfileid: "31578167"
 |`SdkToolsPath`|可选 <xref:System.String?displayProperty=fullName> 参数。<br /><br /> 如果 `ExecuteAsTool` 为 `true`，则必须将此参数设置为作为目标的框架版本的 SDK 工具路径。|  
 |`StateFile`|可选 `String` 参数。<br /><br /> 指定 COM 组件时间戳的缓存文件。 如果不存在，则每次运行将重新生成所有包装器。|  
 |`TargetFrameworkVersion`|可选 `String` 参数。<br /><br /> 指定项目目标框架版本。<br /><br /> 默认值为 `String.Empty`。 这意味着没有基于目标框架的引用的筛选。|  
-|`TargetProcessorArchitecture`|可选 `String` 参数。<br /><br /> 指定首选的目标处理器体系结构。 转换后传递给 tlbimp.exe /machine 标志。<br /><br /> 参数值应属于 <xref:Microsoft.Build.Utilities.ProcessorArchitecture>。|  
-|`TypeLibFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定 COM 引用的类型库文件路径。 此参数中包含的项可能包含项元数据。 有关详细信息，请参阅下面的“TypeLibFiles 项元数据”部分。|  
-|`TypeLibNames`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要解析的类型库名称。 此参数中包含的项必须包含一些项元数据。 有关详细信息，请参阅下面的“TypeLibNames 项元数据”部分。|  
+|`TargetProcessorArchitecture`|可选 `String` 参数。<br /><br /> 指定首选的目标处理器体系结构。 转换后传递给 tlbimp.exe/machine 标志。<br /><br /> 参数值应属于 <xref:Microsoft.Build.Utilities.ProcessorArchitecture>。|  
+|`TypeLibFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定 COM 引用的类型库文件路径。 此参数中包含的项可能包含项元数据。 有关详细信息，请参阅下面的 [TypeLibFiles 项元数据](#typelibfiles-item-metadata)部分。|  
+|`TypeLibNames`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要解析的类型库名称。 此参数中包含的项必须包含一些项元数据。 有关详细信息，请参阅下面的 [TypeLibNames 项元数据](#typelibnames-item-metadata)部分。|  
 |`WrapperOutputDirectory`|可选 `String` 参数。<br /><br /> 生成的互操作程序集放置在磁盘上的位置。 如果未指定此项元数据，任务将使用项目文件所在目录的绝对路径。|  
-  
-## <a name="remarks"></a>备注  
   
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 项元数据  
  下表介绍了传递给 `TypeLibNames` 参数的项可用的项元数据。  

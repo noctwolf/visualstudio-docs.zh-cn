@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e5f1d4dec10970770202e685860381cdec15608
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 34c6e966a7feff00fc9b32495f3697643120f1ee
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577348"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39154419"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 存储项和属性中的任务输出值。  
@@ -37,7 +37,7 @@ ms.locfileid: "31577348"
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml  
 <Output TaskParameter="Parameter"  
     PropertyName="PropertyName"   
     Condition = "'String A' == 'String B'" />  
@@ -51,8 +51,8 @@ ms.locfileid: "31577348"
 |特性|描述|  
 |---------------|-----------------|  
 |`TaskParameter`|必需的特性。<br /><br /> 任务输出参数的名称。|  
-|`PropertyName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的属性。 然后，项目可引用具有 `$(`PropertyName`)` 语法的属性。 此属性名称可以是新属性名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `ItemName` 的情况下，不能使用该特性。|  
-|`ItemName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的项。 然后，项目可引用具有 `@(`ItemName`)` 语法的项。 项名称可以是新项名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `PropertyName` 的情况下，不能使用该特性。|  
+|`PropertyName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的属性。 然后，项目可引用具有 $(\<PropertyName>) 语法的属性。 此属性名称可以是新属性名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `ItemName` 的情况下，不能使用该特性。|  
+|`ItemName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的项。 然后，项目可引用具有 @(\<ItemName>) 语法的项。 项名称可以是新项名称，也可以是项目中已定义的名称。 当项名称是现有项时，将向该现有项添加输出参数值。 <br /><br /> 在已使用 `PropertyName` 的情况下，不能使用该特性。|  
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|  
 
 ### <a name="child-elements"></a>子元素  

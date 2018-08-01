@@ -1,7 +1,7 @@
 ---
 title: XSD 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/27/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -22,15 +22,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7505f3d18e0b32ebdbc8b82d447e49b26fe4182e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 3eb81e05a16eb504b14e94de2c1270057311b85a
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571190"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231592"
 ---
 # <a name="xsd-task"></a>XSD 任务
-包装从源生成架构或类文件的 XML 架构定义工具 (Xsd.exe)。  
+包装从源生成架构或类文件的 XML 架构定义工具 (xsd.exe)。  
+
+> [!NOTE]
+> Visual Studio 2017 中已弃用对 xsd.exe 的 C++ 项目支持。 仍可通过向 GAC 手动添加 CppCodeProvider.dll 来使用 Microsoft.VisualC.CppCodeProvider。 
   
 ## <a name="parameters"></a>参数  
  下表介绍了 **XSD** 任务的参数。  
@@ -39,7 +42,7 @@ ms.locfileid: "31571190"
   
      可选 **String** 参数。  
   
-     在命令行上指定的选项列表。 例如，“*/option1 /option2 /option#*”。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。  
+     在命令行上指定的选项列表。 例如，/\<option1> /\<option2> /\<option#>。 使用此参数可指定未由任何其他 **XSD** 任务参数表示的选项。  
   
 -   **GenerateFromSchema**  
   

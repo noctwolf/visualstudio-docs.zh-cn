@@ -1,7 +1,7 @@
 ---
 title: 目标生成顺序 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/06/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f5c54fd6406350f5d0ad9620f10eef4fb9a546b4
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178951"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="first-target"></a>第一个目标  
  如果没有初始目标、默认目标或命令行目标，那么 MSBuild 会先运行项目文件中或任意导入的项目文件中出现的第一个目标。  
   
-## <a name="target-dependencies"></a>目标依赖关系  
+## <a name="target-dependencies"></a>目标依赖项  
  目标可描述相互依赖关系。 `DependsOnTargets` 属性表示目标依赖于其他目标。 例如，应用于对象的  
   
 ```xml  
@@ -77,7 +78,7 @@ ms.lasthandoff: 04/19/2018
   
  告知 MSBuild `Serve` 目标依赖于 `Chop` 目标和 `Cook` 目标。 MSBuild 将运行 `Chop` 目标，然后运行 `Cook` 目标，之后再运行 `Serve` 目标。  
   
-## <a name="beforetargets-and-after-targets"></a>在目标之前和在目标之后  
+## <a name="beforetargets-and-aftertargets"></a>在目标之前和在目标之后  
  在 MSBuild 4.0 中，可通过使用 `BeforeTargets` 和 `AfterTargets` 属性指定目标顺序。  
   
  请考虑使用以下脚本。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 04/19/2018
 </Target>  
 ```  
   
-## <a name="determining-the-target-build-order"></a>确定目标生成顺序  
+## <a name="determine-the-target-build-order"></a>确定目标生成顺序  
  MSBuild 按以下方式确定目标生成顺序：  
   
 1.  运行 `InitialTargets` 目标。  
@@ -115,7 +116,7 @@ ms.lasthandoff: 04/19/2018
   
 4.  执行目标前，运行其 `DependsOnTargets` 目标。  
   
-5.  执行目标前，运行 `BeforeTargets` 属性中列出的所有目标。  
+5.  执行或跳过目标之前，运行 `BeforeTargets` 属性中列出的所有目标。  
   
 6.  执行目标前，会比较其 `Inputs` 属性和 `Outputs` 属性。 如果 MSBuild 确定任何输出文件相对于相应的输入文件过期，那么 MSBuild 将执行该目标。 否则，MSBuild 会跳过该目标。  
   

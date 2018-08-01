@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 164767c628a6b48a3d9479fdd4f7918f12093ea7
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b96fca759c3a35bd7220cde4a3d2fea7463f46b5
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572236"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177612"
 ---
-# <a name="building-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
+# <a name="build-multiple-projects-in-parallel-with-msbuild"></a>用 MSBuild 并行生成多个项目
 通过 MSBuild，可通过并行运行多个项目来更快地生成它们。 若要并行运行生成，请在一台多核或多处理器计算机上采用以下设置：  
   
 -   在命令提示符处使用 `/maxcpucount` 开关。  
@@ -29,27 +29,27 @@ ms.locfileid: "31572236"
 -   在 MSBuild 任务中使用 <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> 任务参数。  
   
 > [!NOTE]
->  命令行中的 **/verbosity** (**/v**) 开关也会影响生成性能。 如果将生成日志信息的详细级别设置为详细或诊断以用于疑难解答，生成性能可能会降低。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和[命令行引用](../msbuild/msbuild-command-line-reference.md)。  
+>  命令行中的 **/verbosity** (**/v**) 开关也会影响生成性能。 如果将生成日志信息的详细级别设置为详细或诊断以用于疑难解答，生成性能可能会降低。 有关详细信息，请参阅[获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)和[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 ## <a name="maxcpucount-switch"></a>/maxcpucount 开关  
  如果使用 `/maxcpucount` 开关（简写为 `/m`），MSBuild 将可以创建指定数量的能够并行运行的 MSBuild.exe 进程。 这些进程也称为“辅助进程”。 每个工作进程使用单独的核心或处理器（若有），以便在其他可用处理器可能生成其他项目的同时生成项目。 例如，如果将此开关的值设置为“4”，MSBuild 将创建 4 个辅助进程来生成项目。  
   
  如果包含 `/maxcpucount` 开关而没有指定值，MSBuild 将使用计算机上的处理器总数作为其值。  
   
- 有关 MSBuild 3.5 中引入的此开关的详细信息，请参阅[命令行引用](../msbuild/msbuild-command-line-reference.md)。  
+ 有关 MSBuild 3.5 中引入的此开关的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
  下面的示例指示 MSBuild 使用 3 个辅助进程。 如果使用此配置，MSBuild 可以同时生成三个项目。  
   
-```  
+```cmd  
 msbuild.exe myproj.proj /maxcpucount:3   
 ```  
   
 ## <a name="buildinparallel-task-parameter"></a>BuildInParallel 任务参数  
  `BuildInParallel` 是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务上的可选布尔参数。 如果 `BuildInParallel` 设置为 `true`（默认值为 `false`），则会生成多个工作进程，以尽可能同时生成多个项目。 为使此操作能够正常进行，`/maxcpucount` 开关必须设置为一个大于 1 的值，并且系统必须至少为双核或具有两个或多个处理器。  
   
- 以下是一个来自 microsoft.common.targets 的有关如何设置 `BuildInParallel` 参数的示例。  
+ 以下是摘自 microsoft.common.targets 中的有关如何设置 `BuildInParallel` 参数的示例。  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildInParallel Condition="'$(BuildInParallel)' ==   
         ''">true</BuildInParallel>  

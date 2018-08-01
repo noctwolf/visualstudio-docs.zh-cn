@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 1b70ea2cc12530065b2a297e54ff494bcc765c9c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 928002d58a03ed6c52e85114c09e42a75b63aef0
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757248"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232385"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>在 Visual Studio 中使用 Xamarin 生成具有本机 UI 的应用
 
@@ -110,7 +110,7 @@ Visual Studio 没有解决方案模板用于创建共享 .NET Standard 库的本
 
 1.  首先在 [http://openweathermap.org/appid](http://openweathermap.org/appid) 注册，获取免费的天气 API 密钥。 此 API 密钥允许应用程序获取任何美国邮政编码对应的天气。 （它并不适用于美国以外的邮政编码。）
 
-2.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。
+2.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 *Weather.cs*。 将使用此类来存储天气数据服务的数据。
 
 3.  将 Weather.cs 的全部内容替换为以下代码：
 
@@ -132,9 +132,9 @@ Visual Studio 没有解决方案模板用于创建共享 .NET Standard 库的本
     }
     ```
 
-4.  将另一个类添加到名为 DataService.cs 的 .NET Standard 项目中。 此类将用于从天气数据服务处理 JSON 数据。
+4.  将另一个类添加到名为 `DataService.cs` 的 .NET Standard 项目中。 此类将用于从天气数据服务处理 JSON 数据。
 
-5.  将 **DataService.cs** 的全部内容替换为以下代码：
+5.  将 *DataService.cs* 的全部内容替换为以下代码：
 
     ```csharp
     using System.Net.Http;
@@ -256,7 +256,7 @@ Visual Studio 没有解决方案模板用于创建共享 .NET Standard 库的本
     |**textStyle**|`bold`|
 
     > [!TIP]
-    >  请注意，许多属性不包含可选值的下拉列表。  可能难以猜测给定属性适用于什么样的字符串值。 有关建议，请尝试在 [R.attr](http://developer.android.com/reference/android/R.attr.html) 类页中搜索属性的名称。
+    >  请注意，许多属性不包含可选值的下拉列表。  可能难以猜测给定属性适用于什么样的字符串值。 有关建议，请尝试在 [`R.attr`](http://developer.android.com/reference/android/R.attr.html) 类页面中搜索属性的名称。
     >
     >  此外，快速 Web 搜索通常指向 [http://stackoverflow.com/](http://stackoverflow.com/) 上的页面，在这里其他人使用相同的属性。
 
@@ -457,7 +457,7 @@ Visual Studio 没有解决方案模板用于创建共享 .NET Standard 库的本
 
 13. 打开“MainActivity.cs”。 此代码应如下方所示：
 
-    ```
+    ```csharp
     protected override void OnCreate (Bundle bundle)
     {
         base.OnCreate (bundle);

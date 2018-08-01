@@ -15,12 +15,12 @@ f1_keywords:
 - VC.Project.AndroidDebugger.LaunchActivity
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 7d18125c6666a8eb68becd828da36ecdab077507
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: be240ed2cea05194d51040fd29a17de9a4472fc9
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31061482"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232639"
 ---
 # <a name="android-debugger-properties"></a>Android 调试器属性
 

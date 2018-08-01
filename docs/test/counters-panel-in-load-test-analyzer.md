@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fd87cdb912b7e2dcf13476bab610935db5ca4fd7
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36304338"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176874"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>使用“图”视图和“表”视图中的“计数器”面板
 
@@ -49,7 +49,7 @@ ms.locfileid: "36304338"
 
 |“计数器”面板|描述|
 |-|-|
-|![计数器面板的方案名称节点](../test/media/ltest__namenode.png)|1.与负载测试的 Scenario1 关联的所有性能计数器都出现在此节点下。<br />2.某个方案的所有测试都位于该方案节点下。 标签指示测试名称。<br />3.测试节点下的叶节点是计数器实例名称与测试名称相同的负载测试测试用例计数器。<br />4.与 Web 性能测试分支关联的所有负载测试页计数器实例。 在此节点处，此处包含与负载测试的 Scenario1 中 IBuyBrowse Web 性能测试的页 Login GET（报告名称）关联的所有负载测试节奏计数器实例。<br />5.页节点下的子节点是负载测试页计数器。<br />6.与 Web 性能测试关联的所有负载测试请求计数器实例都包含在 Web 性能测试分支中。 在此节点处，此处包含与负载测试的 Scenario1 中 IBuyBrowse Web 性能测试的请求 Login GET（报告名称）关联的所有请求计数器实例。<br />7.请求节点下的叶节点是负载测试请求计数器。<br />8.与 Web 性能测试关联的所有负载测试事务计数器实例都包含在 Web 性能测试分支中。 在此节点处，此处包含与负载测试的 Scenario1 中 IBuyBrowse Web 性能测试的事务（名为 Transaction1）关联的所有事务计数器实例。<br />9.事务节点下的叶节点是负载测试事务计数器。<br />10.单元测试节点。|
+|![计数器面板的方案名称节点](../test/media/ltest__namenode.png)|1.与负载测试的 Scenario1 关联的所有性能计数器都出现在此节点下。<br />2.某个方案的所有测试都位于该方案节点下。 标签指示测试名称。<br />3.测试节点下的叶节点是计数器实例名称与测试名称相同的负载测试测试用例计数器。<br />4.与 Web 性能测试分支关联的所有负载测试页计数器实例。 在此节点处，此处包含与负载测试的 Scenario1 中 IBuyBrowse Web 性能测试的页 Login GET（报告名称）关联的所有负载测试节奏计数器实例。<br />5.页节点下的子节点是负载测试页计数器。<br />6.与 Web 性能测试关联的所有负载测试请求计数器实例都包含在 Web 性能测试分支中。 在此节点处，此处包含与负载测试的 Scenario1 中 IBuyBrowse Web 性能测试的请求 Login GET（报告名称）关联的所有请求计数器实例。<br />7.请求节点下的叶节点是负载测试请求计数器。<br />8.与 Web 性能测试关联的所有负载测试事务计数器实例都包含在 Web 性能测试分支中。 在此节点处，此处包含与负载测试的 Scenraio1 中 IBuyBrowse Web 性能测试的事务（名为 Transaction1）关联的所有事务计数器实例。<br />9.事务节点下的叶节点是负载测试事务计数器。<br />10.单元测试节点。|
 
 ## <a name="tasks"></a>任务
 

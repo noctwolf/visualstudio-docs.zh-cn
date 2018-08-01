@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bc7beb1100b5e1bfe3fd554da53520ffc9888e64
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e7ccd21e5432003de7ec3b03bf94716802846bd4
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751879"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204331"
 ---
-# <a name="how-to-analyze-errors-using-the-counters-panel"></a>如何：使用计数器面板分析错误
+# <a name="how-to-analyze-errors-using-the-counters-panel"></a>如何：使用“计数器”面板分析错误
 
-在运行负载测试或分析负载测试结果时，在负载测试分析器的关系图视图和表视图中可以看见计数器面板。 有关详细信息，请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+在运行负载测试或分析负载测试结果时，在“负载测试分析器”的关系图视图和表视图中可以看见“计数器”面板。 有关详细信息，请参阅[在“图”视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在“表”视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
- 计数器面板中的“错误”节点包含负载测试期间检测到的所有错误。 错误节点包含特定于不同类型错误的若干个子类别错误节点。 例如，“异常”和“HTTP 错误”。
+ “计数器”面板中的“错误”节点包含负载测试期间检测到的所有错误。 “错误”节点包含特定于不同类型错误的若干个子类别错误节点。 例如，“异常”和“HTTP 错误”。
 
  ![计数器面板的错误节点](../test/media/ltest_errornode.png)
 
@@ -31,7 +31,7 @@ ms.locfileid: "34751879"
 
      “计数器”面板显示在关系图视图或表视图中。
 
-2.  如果看不到计数器面板，请选择工具栏上的“显示计数器面板”。
+2.  如果看不到“计数器”面板，请选择工具栏上的“显示计数器面板”。
 
 3.  展开“错误”，然后选择要分析的错误类别或错误子类别。
 
@@ -54,9 +54,9 @@ ms.locfileid: "34751879"
 5.  （可选）如果要分析完成的测试结果中的错误，请考虑在关系图中使用缩放功能。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
     > [!TIP]
-    > 如果在负载测试运行期间检测到任何错误，则将在负载测试分析器的状态栏中显示错误链接，其中包括所找到的错误数。 选择该链接可在表视图的“错误”表中显示所有错误。
+    > 如果在负载测试运行期间检测到任何错误，则将在“负载测试分析器”的状态栏中显示错误链接，其中包括所找到的错误数。 选择该链接可在表视图的“错误”表中显示所有错误。
 
 ## <a name="see-also"></a>请参阅
 
-- [在关系图视图和表视图中使用计数器面板](../test/counters-panel-in-load-test-analyzer.md)
+- [使用“图”视图和“表”视图中的“计数器”面板](../test/counters-panel-in-load-test-analyzer.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

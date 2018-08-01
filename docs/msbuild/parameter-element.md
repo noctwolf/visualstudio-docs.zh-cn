@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 18db5f6cd5c2bccaca73161713af15a88175bf49
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302598"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151741"
 ---
 # <a name="parameter-element"></a>Parameter 元素
-包含某个任务的特定参数信息，该任务可通过使用 `UsingTask``TaskFactory` 生成。  元素的名称就是该参数的名称。  有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
+包含某个任务的特定参数信息，该任务可通过使用 `UsingTask` `TaskFactory` 生成。  元素的名称就是该参数的名称。  有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
 
  \<Project>  
  \<UsingTask>  
@@ -49,7 +49,7 @@ ms.locfileid: "36302598"
 
 |特性|描述|  
 |---------------|-----------------|  
-|`ParameterType`|可选特性。<br /><br /> 参数的.NET 类型，例如，“System.String”。|  
+|`ParameterType`|可选特性。<br /><br /> 参数的 .NET 类型，例如，`System.String`。|  
 |`Output`|可选布尔属性。<br /><br /> 如果值为 `true`，该参数是任务的输出参数。 默认情况下，该值为 `false`。|  
 |`Required`|可选布尔属性。<br /><br /> 如果值为 `true`，该参数是任务的必需参数。 默认情况下，该值为 `false`。|  
 
@@ -60,7 +60,7 @@ ms.locfileid: "36302598"
 
 |元素|描述|  
 |-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|包含一系列可选参数，这些参数将显示在通过使用 `UsingTask``TaskFactory` 生成的任务上。|  
+|[ParameterGroup](../msbuild/parametergroup-element.md)|包含一系列可选参数，这些参数将显示在通过使用 `UsingTask` `TaskFactory` 生成的任务上。|  
 
 ## <a name="example"></a>示例  
  下面的示例演示如何使用 `Parameter` 元素。  

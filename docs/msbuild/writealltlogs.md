@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de6a67be8390f2b4353b05eea489c07e095b092
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ceec441f6f0110ea514225ed0fab4c4dc2d575bb
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570988"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153080"
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 写入所有线程和上下文的跟踪日志。  
@@ -43,7 +43,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ## <a name="return-value"></a>返回值  
  如果跟踪上下文创建完成，则返回带 SUCCEEDED 位集的 HRESULT。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  标头：FileTracker.h  
   
 ## <a name="see-also"></a>请参阅  

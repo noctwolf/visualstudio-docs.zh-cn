@@ -1,5 +1,5 @@
----
-title: 工作流设计器的互操作的活动设计器
+﻿---
+title: 工作流设计器的 Interop 活动设计器
 ms.date: 11/04/2016
 ms.topic: reference
 ms.prod: visual-studio-dev15
@@ -12,39 +12,42 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9eb5e8b2dbca57d28f9d350b769b5eaa90e2b2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1abd1dff1cb63f2e80e3c4b242699fbede2c3201
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979069"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379333"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 
-**互操作**活动设计器用于创建和配置<xref:System.Activities.Statements.Interop>活动。
+**Interop**活动设计器用于创建和配置<xref:System.Activities.Statements.Interop>活动。
 
 ## <a name="the-interop-activity"></a>Interop 活动
- <xref:System.Activities.Statements.Interop> 活动管理从工作流中的 <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> 派生的活动类型的执行。
 
-### <a name="using-the-interop-activity-designer"></a>使用 Interop 活动设计器
- **互操作**在找不到活动设计器**迁移**类别**工具箱**，通过单击访问的哪一**工具箱**选项卡 (或者，选择**工具箱**从**视图**菜单或 CTRL + ALT + X。)
+<xref:System.Activities.Statements.Interop> 活动管理从工作流中的 <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> 派生的活动类型的执行。
 
- [迁移](../workflow-designer/migration-activity-designers.md)包含的类别<xref:System.Activities.Statements.Interop>活动只中出现**工具箱**如果你的项目面向完整的.NET Framework 4。
+### <a name="use-the-interop-activity-designer"></a>使用 Interop 活动设计器
 
- 对于 C# 项目，则可以重新面向项目以通过右键单击项目中的使用完整的.NET Framework 4**解决方案资源管理器**并选择**属性**。 上**应用程序**选项卡上，选择**.NET Framework 4**选项**目标框架**。 选择**是**按钮**目标框架更改**显示请求您确认此更改的对话框。
+**互操作**活动设计器可在**迁移**类别**工具箱**，这通过单击来访问**工具箱**选项卡。或者，选择**工具箱**从**视图**菜单中或按**Ctrl**+**Alt** + **X**。
 
- 对于 VB 项目，则可以重新面向项目以使用完整的.NET Framework 4 中的项目上右键单击**解决方案资源管理器**并选择**属性**。 上**编译**选项卡上，单击**高级编译选项**按钮。 选择 **.Net Framework 4**从**目标框架列表**，然后单击**确定**。 单击**是**按钮**目标框架更改**显示请求您确认此更改的对话框。
+[迁移](../workflow-designer/migration-activity-designers.md)包含的类别<xref:System.Activities.Statements.Interop>活动中仅出现**工具箱**如果项目面向完整.NET Framework 4。
 
- **互操作**活动设计器可以拖动从**工具箱**和放置到工作流设计器图面，只要通常放置活动的如内<xref:System.Activities.Statements.Sequence>。 这将创建<xref:System.Activities.Statements.Interop>默认值的活动**DisplayName**的互操作。 <xref:System.Activities.Activity.DisplayName%2A>可以在的标头中编辑**互操作**活动设计器中或在**DisplayName**属性网格的框。
+对于 C# 项目，您可以重新将项目定为右键单击该项目中的使用完整的.NET Framework 4**解决方案资源管理器**，然后选择**属性**。 上**应用程序**选项卡上，选择**NET Framework 4**选项**目标框架**。 选择**是**确认此更改。
 
- 单击**单击此项可浏览...** 中文**ActivityType**框中上,**互操作**活动设计器或在属性网格中，以打开**浏览并选择.Net 类型**对话框。 仅显示工作流 3.0 或工作流 3.5 活动的类型（即仅显示从 <xref:System.Workflow.ComponentModel.Activity> 派生的类型）。 有关使用此框指定类型的详细信息，请参阅[浏览并选择.NET 类型对话框](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)主题。
+对于 VB 项目，您可以重新将项目定为右键单击项目中使用完整的.NET Framework 4**解决方案资源管理器**，然后选择**属性**。 上**编译**选项卡上，单击**高级编译选项**按钮。 选择 **.Net Framework 4**从**目标框架列表**，然后单击**确定**。 选择**是**确认此更改。
+
+**互操作**活动设计器可以从拖动**工具箱**和放置到工作流设计器图面上通常放置活动的例如内无论<xref:System.Activities.Statements.Sequence>。 删除**Interop**活动设计器创建<xref:System.Activities.Statements.Interop>默认值的活动**DisplayName**互操作。 可以编辑<xref:System.Activities.Activity.DisplayName%2A>中的标头**互操作**活动设计器中，或在**DisplayName**属性网格的框。
+
+单击**单击此项可浏览**中的文本**ActivityType**框中上,**互操作**活动设计器或在属性网格中，若要打开**浏览和选择.Net 类型**对话框。 显示的工作流 3.0 或工作流 3.5 活动的唯一类型。 也就是说，只有类型派生自<xref:System.Workflow.ComponentModel.Activity>显示。 有关使用此框以指定类型的详细信息，请参阅[浏览并选择.NET 类型对话框](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md)。
 
 ### <a name="the-interop-properties"></a>Interop 属性
- 下表列出 <xref:System.Activities.Statements.Interop> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中或在工作流设计器图面上编辑。
+
+下表显示<xref:System.Activities.Statements.Interop>属性，并说明如何在设计器中使用。 在属性网格中或在工作流设计器图面上，可以编辑这些属性。
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 Interop。 虽然显示名称不是绝对必需的，但最好使用显示名称。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值是**互操作**。 虽然显示名称不是必需的它建议提供一个。|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
 
 ## <a name="see-also"></a>请参阅

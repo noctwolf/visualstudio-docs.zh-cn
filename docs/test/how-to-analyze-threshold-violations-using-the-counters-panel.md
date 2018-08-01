@@ -10,22 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fdb54122344ce91fe873d854768d0890a83f198a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cb64626034c8c9bf03875385a80ebc417bf05dcb
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751801"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204058"
 ---
 # <a name="how-to-analyze-threshold-violations-using-the-counters-panel-in-load-test-analyzer"></a>如何：使用负载测试分析器中的计数器面板分析阈值冲突
 
-在运行负载测试或分析负载测试结果时，在负载测试分析器的关系图视图和表视图中可以看见计数器面板。 请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在表视图中分析负载测试结果](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+在运行负载测试或分析负载测试结果时，在“负载测试分析器”的关系图视图和表视图中可以看见“计数器”面板。 请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)、[在表视图中分析负载测试结果](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)和[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
- 阈值冲突与特定性能计数器关联，并指示性能计数器已超过或低于设置的阈值。 计数器面板中的图标表示阈值冲突。
+ 阈值冲突与特定性能计数器关联，并指示性能计数器已超过或低于设置的阈值。 “计数器”面板中的图标表示阈值冲突。
 
  ![计数器面板的计算机节点](../test/media/ltest_compnode.png)
 
- 阈值冲突的图标会从失败的计数器所在的树节点传播到根。 该图标提醒用户注意由于树未展开而可能在树中不可见的计数器上发生的冲突。 可以在上图的计数器面板的“计算机”节点中看到图标示例。
+ 阈值冲突的图标会从失败的计数器所在的树节点传播到根。 该图标提醒用户注意由于树未展开而可能在树中不可见的计数器上发生的冲突。 可以在上图的“计数器”面板的“计算机”节点中看到图标示例。
 
  该图标可以为如下所述的几种图标之一：
 
@@ -43,9 +43,9 @@ ms.locfileid: "34751801"
 
 1.  在完成加载测试或加载测试结果后，在负载测试分析器的工具栏中，选择“关系图”或“表”。
 
-     计数器面板显示在“关系图”视图或“表”视图中。
+     “计数器”面板显示在关系图视图或表视图中。
 
-2.  如果看不到计数器面板，请选择工具栏上的“显示计数器面板”。
+2.  如果看不到“计数器”面板，请选择工具栏上的“显示计数器面板”。
 
      包含阈值冲突的任何节点都将包含上面所列的图标之一。
 
@@ -73,7 +73,7 @@ ms.locfileid: "34751801"
 5.  （可选）如果你正在分析完整的负载测试结果中的阈值冲突，可考虑在“关系图”视图中使用缩放功能。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 
     > [!TIP]
-    > 如果在负载测试运行期间检测到任何阈值冲突，则会在负载测试分析器的状态栏中显示名为“阈值冲突”的链接（包括冲突数）。 选择该链接可在“表”视图的“阈值”表中显示所有阈值冲突。
+    > 如果在负载测试运行期间检测到任何阈值冲突，则会在“负载测试分析器”的状态栏中显示名为“阈值冲突”的链接（包括冲突数）。 选择该链接可在“表”视图的“阈值”表中显示所有阈值冲突。
 
 ## <a name="see-also"></a>请参阅
 

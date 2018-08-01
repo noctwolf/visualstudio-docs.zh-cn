@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c38d7ba577beedce8651bb291700a6c071ee7b48
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303011"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152082"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -28,20 +28,20 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
   
 |ToolsVersion|工具集路径（如 MSBuildToolsPath 或 MSBuildBinPath 生成属性中所指定）|  
 |------------------|--------------------------------------------------------------------------------------------|  
-|2.0|Windows installation path\Microsoft.Net\Framework\v2.0.50727\|  
-|3.5|Windows installation path\Microsoft.NET\Framework\v3.5\|  
-|4.0|Windows installation path\Microsoft.NET\Framework\v4.0.30319\|  
-|15.0|Visual Studio installation path\MSBuild\15.0\bin|  
+|2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\\|  
+|3.5|\<Windows installation path>\Microsoft.NET\Framework\v3.5\\|  
+|4.0|\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\|  
+|15.0|\<Visual Studio installation path>\MSBuild\15.0\bin|  
   
  `ToolsVersion` 值确定 Visual Studio 生成的项目使用哪个工具集。 在 Visual Studio 2017 中，默认值为“15.0”（不管在项目文件中指定了哪个版本），但可在命令提示符处使用 /toolsversion 开关重写该属性。 有关此属性和其他指定 `ToolsVersion` 的方式的信息，请参阅[重写 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。  
   
  Visual Studio 2017 不对 MSBuild 路径使用注册表项。 对于随附 Visual Studio 2017 安装的 15.0 之前的 MSBuild 版本，以下注册表项指定了 MSBuild.exe 的安装路径。  
   
-|注册表项|键名|字符串键值|  
+|注册表项|项名称|字符串键值|  
 |------------------|--------------|----------------------|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\  |MSBuildToolsPath|.NET framework 2.0 安装路径|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\  |MSBuildToolsPath|.NET Framework 3.5 安装路径|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\  |MSBuildToolsPath|.NET Framework 4 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\  |MSBuildToolsPath|.NET Framework 2.0 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\  |MSBuildToolsPath|.NET Framework 3.5 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\  |MSBuildToolsPath|.NET Framework 4 安装路径|  
   
 ### <a name="sub-toolsets"></a>子工具集  
  如果上表中的注册表项有一个子项，MSBuild 会使用它确定子工具集的路径是否有可能重写父工具集中的路径。 下面是一个示例子项：  

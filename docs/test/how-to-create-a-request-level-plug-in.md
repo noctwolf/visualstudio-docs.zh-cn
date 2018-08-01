@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ac50f956ed45f42f77638146c1340c0ed90f68fa
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974026"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178369"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：创建请求级插件
 
@@ -24,7 +24,7 @@ ms.locfileid: "31974026"
 
 每个 Web 性能测试请求插件都具有 PreRequest 方法和 PostRequest 方法。 将请求插件附加到某个特定的 http 请求之后，在发出请求之前将会激发 PreRequest 事件，并在收到请求之后激发 PostRequest 事件。
 
-通过从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> 基类派生您自己的类，可以创建自定义的 Web 性能测试请求插件。
+通过从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin> 基类派生你自己的类，可以创建自定义的 Web 性能测试请求插件。
 
 可以将自定义的 Web 性能测试请求插件用于已记录的 Web 性能测试。 自定义的 Web 性能测试请求插件使你只需编写极少量的代码即可获得对 Web 性能测试的更大程度控制。 此外，还可以将它们用于编码 Web 性能测试。 请参阅[生成和运行编码的 Web 性能测试](../test/generate-and-run-a-coded-web-performance-test.md)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "31974026"
 15. 在“选定插件的属性”窗格中，设置要在运行时使用的插件的初始值。
 
     > [!NOTE]
-    > 可根据需要从插件中公开任意多个属性；只需将其设置为公共、可设置并属于 Integer、Boolean 或 String 等基本类型。 以后，你还可使用“属性”窗口更改 Web 性能测试插件属性。
+    > 可根据需要从插件中公开任意多个属性；只需将其设置为公共、可设置并属于 Integer、Boolean 或 String 等基本类型。 以后还可以使用“属性”窗口更改 Web 性能测试插件属性。
 
 16. 选择 **“确定”**。
 
@@ -86,7 +86,7 @@ ms.locfileid: "31974026"
     >
     > 如果对任何插件进行代码更改并创建新 DLL 版本 (Version=0.0.0.0)，则会引发这种情况，但插件仍会引用原来的插件版本。 若要更正此问题，请执行以下步骤：
     >
-    > 1.  在你的 Web 性能和负载测试项目中，你将看到引用警告。 移除和重新添加对插件 DLL 的引用。
+    > 1.  在 Web 性能和负载测试项目中，将看到引用警告。 移除和重新添加对插件 DLL 的引用。
     > 2.  从测试或适当位置移除插件，然后再重新添加。
 
 ## <a name="example"></a>示例

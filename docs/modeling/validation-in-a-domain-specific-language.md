@@ -12,29 +12,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2f0d7962446d5cf21822a101354284c63a7df98c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749923"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381854"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
 
- 你可以保存该模型后，打开它，和用户显式运行时执行的验证约束**验证**菜单命令。 还可以在程序控制下执行验证。 例如，你可以执行验证以响应属性值或关系中的某个更改。
+ 你可以执行和保存模型时，当打开它时，在用户显式运行时的验证约束**验证**菜单命令。 还可以在程序控制下执行验证。 例如，你可以执行验证以响应属性值或关系中的某个更改。
 
- 验证是特别重要，如果你正在编写文本模板或处理用户的模型的其他工具。 验证可确保模型满足由这些工具假定的前提条件。
+ 验证是特别重要，如果你正在编写文本模板或其他工具可处理用户的模型。 验证可确保模型满足由这些工具假定的前提条件。
 
 > [!WARNING]
->  还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
+>  还可以允许验证约束以及扩展菜单命令和笔势处理程序一起定义在对 DSL 的单独扩展中。 除了 DSL，用户还可以选择安装这些扩展。 有关详细信息，请参阅[通过使用 MEF 扩展 DSL](../modeling/extend-your-dsl-by-using-mef.md)。
 
 ## <a name="running-validation"></a>运行验证
  当用户编辑模型时（即域特定语言的实例），以下操作可运行验证：
 
--   右键单击关系图并选择**验证所有**。
+-   右键单击关系图，然后选择**全部验证**。
 
--   右键单击你的 DSL 和选择的资源管理器中的顶级节点**所有验证**
+-   右键单击 DSL 和选择的资源管理器中的顶级节点**全部验证**
 
 -   保存模型。
 
@@ -50,21 +50,21 @@ ms.locfileid: "34749923"
  每个验证方法都将报告它找到的所有错误。
 
 > [!NOTE]
->  验证方法报告错误，但不更改模型。 如果你想要调整或防止某些更改，请参阅[验证的替代方法](#alternatives)。
+>  验证方法报告错误，但不更改模型。 如果你想要调整或阻止某些更改，请参阅[验证的替代方法](#alternatives)。
 
 #### <a name="to-define-a-validation-constraint"></a>定义验证约束
 
-1.  启用中的验证**Editor\Validation**节点：
+1.  中启用验证**编辑器 \ 验证**节点：
 
     1.  打开**Dsl\DslDefinition.dsl**。
 
-    2.  DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。
+    2.  在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。
 
-    3.  在属性窗口中，设置**使用**属性设置为`true`。 设置所有这些属性非常方便。
+    3.  在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。
 
-    4.  单击**转换所有模板**解决方案资源管理器工具栏中。
+    4.  单击**转换所有模板**中**解决方案资源管理器**工具栏。
 
-2.  为一个或多个域类或域关系编写分部类定义。 编写新代码文件中的这些定义**Dsl**项目。
+2.  为一个或多个域类或域关系编写分部类定义。 中的新代码文件中编写这些定义**Dsl**项目。
 
 3.  为每个类添加带有此特性的前缀：
 
@@ -127,7 +127,7 @@ public partial class ParentsHaveChildren
 
  请注意有关此代码的以下几点：
 
--   可以将验证方法添加到域类或域关系。 这些类型的代码位于**Dsl\Generated Code\Domain\*.cs**。
+-   可以将验证方法添加到域类或域关系。 对于这些类型的代码位于**Dsl\Generated Code\Domain\*.cs**。
 
 -   每个验证方法都将应用到它的类和子类的每个实例。 对于域关系，每个实例都是两个模型元素之间的链接。
 
@@ -176,11 +176,11 @@ public partial class Person
 
 ```
 
- **聚合验证约束。** 若要应用的可预测的顺序中的验证，请对所有者类，你的模型此类的根元素中定义的单个验证方法。 此技术还允许你将多个错误报告聚合到单个消息中。
+ **聚合验证约束。** 若要将应用以可预测的顺序中的验证，所有者类，您的模型的此类的根元素上定义单个验证方法。 此技术还允许你将多个错误报告聚合到单个消息中。
 
  缺点是组合的方法不易于管理，并且约束必须都具有相同的 `ValidationCategories`。 因此，建议你将每个约束保留在单独的方法中（如果可能）。
 
- **将值传递上下文缓存中。** 上下文参数具有在其中你可将任意值的字典。 该字典将在验证运行的生存期内持续存在。 例如，特定验证方法可以将错误计数保留在上下文中，并使用它来避免错误窗口被重复的消息所淹没。 例如：
+ **将值传递上下文缓存中。** 上下文参数具有可以放置任意值的字典。 该字典将在验证运行的生存期内持续存在。 例如，特定验证方法可以将错误计数保留在上下文中，并使用它来避免错误窗口被重复的消息所淹没。 例如：
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,14 +193,14 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 ```
 
 ## <a name="validation-of-multiplicities"></a>重数的验证
- 将为你的 DSL 自动生成用于检查最小重数的验证方法。 在代码编写到**Dsl\Generated Code\MultiplicityValidation.cs**。 这些方法会生效，如果你启用中的验证**Editor\Validation** DSL 资源管理器中的节点。
+ 将为你的 DSL 自动生成用于检查最小重数的验证方法。 代码将写入**Dsl\Generated Code\MultiplicityValidation.cs**。 这些方法启用中的验证时才会生效**编辑器 \ 验证**DSL 资源管理器中的节点。
 
  如果你将域关系的角色的重数设置为 1..* 或 1..1，但用户未创建此关系的链接，则将显示验证错误消息。
 
- 例如，如果 DSL 具有类人员和城镇和具有关系的关系 PersonLivesInTown **1..\*** 在镇的角色，然后为每个已没有镇的人员将显示错误消息。
+ 例如，如果 DSL 具有类 Person 和城镇和具有关系的关系 PersonLivesInTown **1...\*** 城镇角色，然后对于每个用户都有没有一条错误消息将显示。
 
 ## <a name="running-validation-from-program-code"></a>从程序代码运行验证
- 通过访问或创建 ValidationController，可运行验证。 如果你想要向用户在错误窗口中显示的错误，使用附加到关系图的 DocData ValidationController。 例如，如果你要编写菜单命令，则命令集类中提供了 `CurrentDocData.ValidationController`：
+ 通过访问或创建 ValidationController，可运行验证。 如果你想要在错误窗口中向用户显示的错误，请使用附加到关系图的 DocData 的 ValidationController。 例如，如果你要编写菜单命令，则命令集类中提供了 `CurrentDocData.ValidationController`：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>当发生更改时运行验证
  如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 验证代码，除了添加的自定义代码文件，以便你**DslPackage**项目，但是有内容类似于下面的示例。 此代码使用附加到文档的 `ValidationController`。 此控制器将在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误列表中显示验证错误。
+ 除了验证代码中，自定义代码将文件添加到您**DslPackage**项目，其内容类似于下面的示例。 此代码使用附加到文档的 `ValidationController`。 此控制器将在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误列表中显示验证错误。
 
 ```csharp
 using System;
@@ -335,9 +335,9 @@ validationController.ValidateCustom
 
  但是，不建议使用这些技术。 通常，最好让用户决定如何更正无效的模型。
 
- **调整更改要还原到有效性的模型。** 例如，如果用户设置允许的最上面的属性，你无法重置属性的最大值。 若要实现此目的，请定义一个规则。 有关详细信息，请参阅[规则传播更改内模型](../modeling/rules-propagate-changes-within-the-model.md)。
+ **调整更改以还原模型有效性。** 例如，如果用户设置允许的最大值的属性，您无法属性重置为最大值。 若要实现此目的，请定义一个规则。 有关详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 
- **如果尝试无效的更改，则，回滚事务。** 此外可以定义一个规则，用于此目的，但在某些情况下就可以重写的属性处理**OnValueChanging()**，或如重写方法`OnDeleted().`若要回滚的事务，使用`this.Store.TransactionManager.CurrentTransaction.Rollback().`的详细信息信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。
+ **如果尝试无效的更改，则，回滚事务。** 你还可以为此，可以定义规则，但在某些情况下就可以重写属性处理程序**onvaluechanging （)**，或重写一个方法，如`OnDeleted().`若要回滚事务，请使用`this.Store.TransactionManager.CurrentTransaction.Rollback().`的详细信息信息，请参阅[域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。
 
 > [!WARNING]
 > 请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`

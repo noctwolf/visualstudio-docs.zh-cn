@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 302dc958892fb79e93ed87d515c1a5b1ac3c5aab
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425210"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177862"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -56,7 +56,7 @@ ms.locfileid: "32425210"
 
 ## <a name="run-unit-tests"></a>运行单元测试
 
-1. 打开测试资源管理器。
+1. 打开“测试资源管理器”。
 
    ![在“测试”菜单上，打开“测试资源管理器”](media/rununittest1.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "32425210"
 
    ![在测试资源管理器中运行单元测试](media/rununittest2.png)
 
-   在测试资源管理器中，可看到通过或未通过的单元测试。
+   在“测试资源管理器”中，可看到通过或未通过的单元测试。
 
    ![在测试资源管理器中查看单元测试结果](media/rununittest3.png)
 
@@ -97,7 +97,7 @@ ms.locfileid: "32425210"
 
 ## <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
-使用测试资源管理器从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。 若要了解如何操作，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)。
+使用“测试资源管理器”从 Visual Studio 或第三方单元测试项目中运行单元测试、将测试分组到类别中、筛选测试列表以及创建、保存和运行测试的播放列表。 你还可以调试测试并分析测试性能和代码覆盖率。 若要了解如何操作，请参阅[使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)。
 
 ![使用测试资源管理器运行单元测试](media/testexplorer.png)
 
@@ -113,7 +113,7 @@ ms.locfileid: "32425210"
 
 下面是启用第三方测试框架的操作步骤：
 
-1. 从菜单栏选择“工具” > “扩展和更新...”。
+1. 从菜单栏选择“工具” > “扩展和更新”。
 
 1. 在“扩展和更新”对话框中，展开“联机”类别，然后选择“Visual Studio Marketplace”。 然后选择“工具” > “测试”。
 
@@ -139,7 +139,7 @@ ms.locfileid: "32425210"
 
    ![将第三方单元测试框架的引用添加到解决方案中](media/create3rdpartyunittest6.png)
 
-1. 从类库项目的“引用”节点，选择“添加引用...”。
+1. 从类库项目的“引用”节点，选择“添加引用”。
 
    ![添加对项目的引用](media/createunittest6.png)
 

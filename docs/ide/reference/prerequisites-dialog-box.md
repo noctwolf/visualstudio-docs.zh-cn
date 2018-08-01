@@ -1,6 +1,6 @@
 ---
 title: “系统必备”对话框
-ms.date: 01/18/2018
+ms.date: 06/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,29 +13,30 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37400624d81c533e6ecddb9d6278b5b372410525
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5faf8e34a9aca77cd6762b5409919fac0978caf7
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950980"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176923"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
 
-此对话框指定安装哪些必备组件、如何安装以及组件包的安装顺序。
+“系统必备”对话框指定安装哪些必备组件、如何安装以及组件包的安装顺序。
 
-若要访问此对话框，请在“解决方案资源管理器”中选择项目节点，然后在“项目”菜单上单击“属性”。 当 **“项目设计器”** 出现时，单击 **“发布”** 选项卡。在“发布”页上，单击“系统必备”。 对于安装项目，在“项目”菜单上单击“属性”。 “属性页”对话框出现后，单击“系统必备”。
+![Visual Studio 中的“系统必备”对话框](media/prerequisites-dialog-box.png)
+
+要访问该对话框，请在解决方案资源管理器中选择项目节点，然后选择“项目” > “属性”。 项目设计器出现时，选择“发布”选项卡，然后选择“系统必备”。 对于安装项目，在“项目”菜单上单击“属性”。 “属性页”对话框出现后，单击“系统必备”。
 
 ## <a name="uielement-list"></a>UIElement 列表
 
 |元素|描述|
 |-------------|-----------------|
 |**创建用于安装系统必备组件的安装程序**|将应用程序的系统必备组件包含到安装程序 (Setup.exe) 中，以便在安装应用程序之前按照依赖顺序安装这些组件。 默认情况下，该选项是选中的。 如果没有选择此选项，则不会创建 Setup.exe。|
-|**选择要安装的系统必备组件**|指定是否安装组件，如 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]、Crystal Reports 等等。<br /><br /> 例如，通过选中“SQL Server 2005 Express Edition SP2”旁边的复选框，可以指定安装程序验证目标计算机上是否安装有此组件，如果没有则进行安装。<br /><br /> 有关每个系统必备包的详细信息，请参见本主题后面部分的“系统必备信息”表。|
-|**检查 Microsoft 更新以获取更多可再发行组件**|单击此链接可进入[重新分发组件的引导程序包](http://go.microsoft.com/fwlink/?LinkId=208835)网站检查更新。|
+|**选择要安装的系统必备组件**|指定是否安装 .NET Framework 和 C++ 运行时库等组件。<br /><br />例如，通过选中“SQL Server 2012 Express”旁边的复选框，可以指定安装程序必须验证目标计算机上是否安装有此组件，如果没有则进行安装。<br /><br />有关每个系统必备包的详细信息，请参阅[系统必备信息](#prerequisites-information)。|
 |**从组件供应商的网站下载系统必备组件**|指定从供应商网站上安装系统必备组件。 这是默认选项。|
 |**从与我的应用程序相同的位置下载系统必备组件**|指定从与应用程序相同的位置安装系统必备组件。 这会将所有系统必备包复制到发布位置。 要让此选项正常工作，系统必备包必须位于开发计算机上。|
-|**从下列位置下载系统必备组件**|指定从选定的位置安装系统必备组件。 可使用“浏览”按钮选择位置。|
+|**从下列位置下载系统必备组件**|指定从输入的位置安装系统必备组件。 可使用“浏览”按钮选择位置。|
 
 ## <a name="prerequisites-information"></a>系统必备信息
 
@@ -43,7 +44,7 @@ ms.locfileid: "31950980"
 
 |元素|描述|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 C# 项目是针对所有 CPU 体系结构进行编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)和[部署 64 位应用程序的必备组件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 默认情况下，此项处于选定状态。|
+|**.NET Framework 3.5 SP1**|此程序包会安装下列系统必备组件：<br /><br /> - .NET Framework 2.0、3.0 和 3.5 版<br />- 支持 32 位 (x86) 和 64 位 (x64) 操作系统上的所有 .NET Framework 版本。<br />- 与程序包一起安装的每个 .NET Framework 版本的语言包。<br />- .NET Framework 2.0 和 3.0 服务包。<br /><br /> .NET Framework 3.0 随 Windows Vista 一起提供，.NET Framework 3.5 随 Visual Studio 一起提供。 .NET Framework 3.5 是针对 32 位操作系统进行编译且目标框架设置为“.NET Framework 3.5”的所有 Visual Basic 和 C# 项目的必需组件，也是针对 64 位操作系统编译的 Visual Basic 和 C# 项目的必需组件。 （不支持 IA64。）注意，默认情况下 Visual Basic 和 C# 项目是针对所有 CPU 体系结构进行编译的。 有关详细信息，请参阅 [Visual Studio 多目标概述](../../ide/visual-studio-multi-targeting-overview.md)和[部署 64 位应用的系统必备](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。|
 |**Microsoft .NET Framework 4.x**|此包为 x86 和 x64 平台安装 .NET Framework 4.x。|
 |**Microsoft System CLR Types for SQL Server 2014 (x64 和 x86)**|此包为 x64 或 x86 平台安装 Microsoft System CLR Types for SQL Server 2014。|
 |**SQL Server 2008 R2 Express**|此包安装 Microsoft SQL Server 2008 R2 Express，这是免费版 Microsoft SQL Server 2008 R2，适用于小型网站、服务器或桌面应用程序的理想数据库。 它可免费用于开发和生产。|

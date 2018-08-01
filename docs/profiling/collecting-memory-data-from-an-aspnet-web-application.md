@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 64dd2704891594b5d23eb4a536ee3ddf2ce9be98
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: c99ca461acc51697a8c5b654f5b350149ac76c09
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262686"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276284"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集 ASP.NET Web 应用程序的内存数据
 本部分介绍使用 VSPerfCmd 命令行工具收集 ASP.NET Web 应用程序的内存分配数据和对象生存期数据的过程和选项。  
@@ -31,7 +31,7 @@ ms.locfileid: "34262686"
 |任务|相关内容|  
 |----------|---------------------|  
 |将探查器附加到正在运行的 ASP.NET 应用程序|-   [如何：将探查器附加到 ASP.NET Web 应用程序以收集内存数据](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|  
-|检测静态编译的二进制文件|-   [如何：检测静态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line.md)|  
+|检测静态编译的二进制文件|-   [如何：检测静态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|  
 |检测动态编译的二进制文件|-   [如何：检测动态编译的 ASP.NET 应用程序并收集内存数据](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|  
   
 ## <a name="related-tasks"></a>相关任务

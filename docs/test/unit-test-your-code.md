@@ -13,11 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ea1d186f280c41d5330b3860f5b0802fb001bf84
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc69869e8f1cd60bad1f30f6ee9c37ca5d2821bd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179211"
 ---
 # <a name="unit-test-your-code"></a>对代码进行单元测试
 
@@ -43,15 +44,15 @@ ms.lasthandoff: 04/26/2018
 
 |任务|相关主题|
 |-----------|-----------------------|
-|**快速入门和演练：**借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
-|**使用“测试资源管理器”进行单元测试：**了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基础](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)|
+|**快速入门和演练：** 借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
+|**使用“测试资源管理器”进行单元测试：** 了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基础](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)|
 |**对托管代码进行单元测试：**|-   [用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)|
 |**对 C++ 代码进行单元测试**|-   [用适用于 C++ 的 Microsoft 单元测试框架编写 C/C++ 单元测试](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**隔离单元测试**|-   [用 Microsoft Fakes 隔离测试代码](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**使用代码覆盖率确定测试的项目代码的比例：**了解 Visual Studio 测试工具的代码覆盖率功能。|-   [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**通过使用负载测试来执行压力和性能分析：**可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（VSTS 和 TFS）](/vsts/load-test/)|
-|**设置质量要求：**可以创建质量要求以在签入代码之前强制运行测试，从而帮助确保代码质量。|-   [签入策略 (VSTS)](/vsts/tfvc/add-check-policies)|
-|**设置测试选项：**例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
+|**使用代码覆盖率确定测试的项目代码的比例：** 了解 Visual Studio 测试工具的代码覆盖率功能。|-   [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**通过使用负载测试来执行压力和性能分析：** 可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（VSTS 和 TFS）](/vsts/load-test/)|
+|**设置质量要求：** 可以创建质量要求以在签入代码之前强制运行测试，从而帮助确保代码质量。|-   [签入策略 (VSTS)](/vsts/tfvc/add-check-policies)|
+|**设置测试选项：** 例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 参考文档
 
@@ -60,4 +61,4 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="see-also"></a>请参阅
 
-- [提高代码质量](/visualstudio/test/improve-code-quality)
+- [提高代码质量](../test/improve-code-quality.md)

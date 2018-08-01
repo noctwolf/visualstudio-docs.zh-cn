@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
-ms.openlocfilehash: f251080351f1e448d250798c4f9a758114a6e5ab
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 2bdff15b101b9a9c916c8ba98cfd4964ca0f3189
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957487"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380935"
 ---
 # <a name="including-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -60,7 +60,7 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 请确保将任何所需的 `using` 指令添加到文件顶部：
 
 ```csharp
-using Newtownsoft.json;
+using Newtonsoft.Json;
 ```
 
 大多数 NuGet 提供其他信息，如“自述文件”或连接到 NuGet 源的“项目”页链接。 通常可以在“添加包”页面的包简介中找到连接到该内容的链接：
