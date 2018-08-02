@@ -1,7 +1,7 @@
 ---
 title: 移植、迁移和升级项目
 description: 有关 Visual Studio 2017 中对 Visual Studio 早期版本中创建的项目的支持，以及 Visual Studio 确定何时需要迁移项目方式的参考。
-ms.date: 03/14/2018
+ms.date: 06/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,24 +19,23 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 28b2f4df3cba1c0dd56cda6c8ba4e6c7f5cbe495
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032198"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37058745"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的项目迁移和升级参考
 
-Visual Studio 的每个版本通常都支持大部分以前的项目、文件和其他资产类型。 可以[照常](../ide/solutions-and-projects-in-visual-studio.md)使用这些类型。如果不依赖新功能，Visual Studio 通常会尝试保留与旧版本（如 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012）的向后兼容性。 （若要了解哪些功能特定于哪个版本，请参阅[发行说明](https://www.visualstudio.com/vs/release-notes/)。）
+Visual Studio 的每个版本通常都支持大部分以前的项目、文件和其他资产类型。 可以[照常](../ide/solutions-and-projects-in-visual-studio.md)使用这些类型。如果不依赖新功能，Visual Studio 通常会尝试保留与旧版本（如 Visual Studio 2015、Visual Studio 2013 和 Visual Studio 2012）的向后兼容性。 （若要了解哪些功能特定于哪个版本，请参阅[发行说明](https://visualstudio.microsoft.com/vs/release-notes/)。）
 
 对某些项目类型的支持也会随着时间的推移而更改。 较新版本的 Visual Studio 可能不再支持某些项目，或者需要更新项目，使其不再向后兼容。 有关迁移问题的当前状态，请参阅 [Visual Studio 开发人员社区站点](https://developercommunity.visualstudio.com)。
 
-> [!Important]
-> 本文仅提供 Visual Studio 2017 中涉及迁移的项目类型的相关详细信息。 其中不包括没有迁移问题的受支持项目类型；在[平台目标以及兼容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)中可以找到该列表。 另请注意，某些项目类型在 Visual Studio 2017 中完全不受支持，因此不能迁移。
+本文仅详细介绍 Visual Studio 2017 可迁移的项目类型。 本文不包括 Visual Studio 2017 中不再支持且因此无法迁移的项目类型。 本文也不包括没有迁移问题的受支持项目类型；此列表位于[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)中。
 
 > [!Important]
-> 某些项目类型需要通过 Visual Studio 安装程序安装相应的工作负荷。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查安装选项，然后重试。 同样，有关 Visual Studio 2017 中项目支持的详细信息，请参阅[平台目标以及兼容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)。
+> 某些项目类型需要通过 Visual Studio 安装程序安装相应的工作负荷。 如果尚未安装工作负荷，Visual Studio 将报告未知的或不兼容的项目类型。 在这种情况下，请检查安装选项，然后重试。 同样，有关 Visual Studio 2017 中项目支持的详细信息，请参阅[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)。
 
 ## <a name="project-types"></a>项目类型
 
@@ -76,7 +75,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 ## <a name="how-visual-studio-decides-when-to-migrate-a-project"></a>Visual Studio 如何决定迁移项目的时间
 
-每个新版本的 Visual Studio 通常都会尝试与之前的版本保持兼容，以便在不同版本中打开、修改和构建同一项目。 但是，随着时间的推移，会出现不可避免的更改，使某些项目类型不再受支持。 （请参阅[平台目标以及兼容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)，了解 Visual Studio 2017 支持的项目类型。）在这些情况下，较新版本的 Visual Studio 不会加载该项目并且不提供迁移路径；需要在支持该项目的 Visual Studio 早期版本中维护该项目。
+每个新版本的 Visual Studio 通常都会尝试与之前的版本保持兼容，以便在不同版本中打开、修改和构建同一项目。 但是，随着时间的推移，会出现不可避免的更改，使某些项目类型不再受支持。 （请参阅[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)，了解 Visual Studio 2017 支持的项目类型。）在这些情况下，较新版本的 Visual Studio 不会加载该项目并且不提供迁移路径；需要在支持该项目的 Visual Studio 早期版本中维护该项目。
 
 在其他情况下，较新版本的 Visual Studio 可以打开项目，但必须以可能导致其与之前的版本不兼容的方式更新或迁移该项目。 Visual Studio 使用大量条件来确定是否需要此类迁移：
 
@@ -92,7 +91,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 此类单向更改可能涉及更改项目文件中的 `ToolsVersion` 属性，该属性明确表示哪个 MSBuild 版本可以将项目的源代码转变为最终所需的可运行且可部署的项目。 也就是说，导致项目与 Visual Studio 早期版本不兼容的不是 Visual Studio 版本，而是由 `ToolsVersion` 确定的 MSBuild 版本。 只要 Visual Studio 版本包含与项目中的 `ToolsVersion` 匹配的 MSBuild 工具链，Visual Studio 就可以调用该工具链来生成项目。
 
-为了最大限度保持与较旧版本中创建的项目的兼容性，Visual Studio 2017 包含了必要的 MSBuild 工具链来支持 `ToolsVersion` 15、14、12 和 4。 使用任意这些 `ToolsVersion` 值的项目都可进行成功的生成。 （再次强调，有关 Visual Studio 2017 是否支持项目类型的主题，请参阅[平台目标以及兼容性](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)。）
+为了最大限度保持与较旧版本中创建的项目的兼容性，Visual Studio 2017 包含了必要的 MSBuild 工具链来支持 `ToolsVersion` 15、14、12 和 4。 使用任意这些 `ToolsVersion` 值的项目都可进行成功的生成。 （再次强调，有关 Visual Studio 2017 是否支持项目类型的主题，请参阅[平台目标以及兼容性](/visualstudio/productinfo/vs2017-compatibility-vs)。）
 
 在此上下文中，会自然而然出现一个问题：是否应该尝试将项目手动更新或迁移到新的 `ToolsVersion` 值。 没有必要做出该更改，进行该更改可能会产生许多错误和警告，需要修复它们并再次生成项目。 此外，如果 Visual Studio 以后不支持特定的 `ToolsVersion`，那么打开项目会触发项目迁移过程，这是因为必须更改 `ToolsVersion` 值。 在这种情况下，该特定项目类型的子系统确切地知道要更改的内容，并且可以按前文所述自动完成更改。
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 84054917a47fc4d56c107965feebbc353e6de76f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: c1f7ea93011878e9e47a5daa843a71d904318ce4
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31571602"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37946516"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 任务
 确定指定项集合中的哪些项具有指定文件夹及其子文件夹的路径。  
@@ -42,10 +42,10 @@ ms.locfileid: "31571602"
 |`UpdateToAbsolutePaths`|可选 `Boolean` 参数。<br /><br /> 如果为 true，则输出项的路径会更新为绝对路径。|  
   
 ## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
- 以下示例使用 `FindUnderPath` 任务确定 `MyFiles` 项中所包含的文件是否具有位于 `SearchPath` 属性指定的路径下的路径。 任务完成后，`FilesNotFoundInPath` 项包含 `File1.txt` 文件，`FilesFoundInPath` 项包含 `File2.txt` 文件。  
+ 以下示例使用 `FindUnderPath` 任务确定 `MyFiles` 项中所包含的文件是否具有位于 `SearchPath` 属性指定的路径下的路径。 任务完成后，`FilesNotFoundInPath` 项包含 File1.txt 文件，`FilesFoundInPath` 项包含 File2.txt 文件。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

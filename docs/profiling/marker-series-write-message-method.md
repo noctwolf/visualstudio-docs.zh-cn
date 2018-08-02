@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0419ec814c7b2538633ab9a1e266ec12ad066ff9
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 70e413267623d4e9bb4b8d4c1f46fd9c6ecf7808
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237947"
 ---
 # <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
 向并发可视化工具跟踪文件写入一条消息。  
@@ -58,7 +59,7 @@ void write_message(
  `_Category`  
  类别.重要性级别。  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  **标头：** cvmarkersobj.h  
   
  **命名空间：** Concurrency::diagnostic  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fba456d6a06281e0472e907b27bcd76b57b17e93
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 88a5b14d98dc9459aa0d0f87a4ddba52de18ac06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747113"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924351"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：创建基本颜色着色器
 
@@ -29,7 +29,7 @@ ms.locfileid: "34747113"
 
 1.  创建要使用的 DGSL 着色器。 若要了解如何向项目添加 DGSL 着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“入门”部分。
 
-2.  删除“点颜色”节点。 使用“选择”工具选择“点颜色”节点，然后在菜单栏上选择“编辑”和“删除”。
+2.  删除“点颜色”节点。 使用“选择”工具选择“点颜色”节点，然后在菜单栏上选择“编辑” > “删除”。
 
 3.  将“颜色常量”节点添加到关系图。 在“常量”的“工具箱”中，选择“颜色常量”，然后将其移到设计图面。
 
@@ -48,7 +48,7 @@ ms.locfileid: "34747113"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：向 3D 模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：导出着色器](../designers/how-to-export-a-shader.md)
 - [着色器设计器](../designers/shader-designer.md)
 - [着色器设计器节点](../designers/shader-designer-nodes.md)

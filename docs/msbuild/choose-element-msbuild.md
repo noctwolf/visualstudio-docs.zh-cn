@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc467b859e3a02282c6d6165dc263931900c5bc2
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569516"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945764"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。  
@@ -42,7 +42,7 @@ ms.locfileid: "31569516"
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml  
 <Choose>  
     <When Condition="'StringA'=='StringB'">... </When>  
     <Otherwise>... </Otherwise>  

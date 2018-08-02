@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 022e7f47f17292c62b851868b85773e8295a6991
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b745920a6afd4fb07d1904b7587e32350bb796a3
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578726"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177833"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 一起分发的工具）。 此程序集链接器工具用于创建包含来自一个或多个文件（这些文件可以是模块或资源文件）的清单的程序集。 编译器和开发环境可能已提供这些功能，因此通常不需要直接使用此任务。 对于需要从多个组件文件（例如可能从混合语言开发生成的组件文件）创建单个程序集的开发人员来说，程序集链接器非常有用。 此任务不能将模块合并到单个程序集文件；单个模块必须仍为分布式且可用，以便正确加载生成程序集。 有关 AL.exe 的详细信息，请参阅 [Al.exe（程序集链接器）](/dotnet/framework/tools/al-exe-assembly-linker)。  
@@ -71,7 +71,7 @@ AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../deployment/includes/
 |`Win32Resource`|可选 `String` 参数。<br /><br /> 在输出文件中插入 Win32 资源（.res 文件）。 有关详细信息，请参阅 [Al.exe（程序集链接器）](/dotnet/framework/tools/al-exe-assembly-linker)中 `/win32res` 选项的文档。|  
   
 ## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数及其说明的列表，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下示例通过指定选项创建程序集。  

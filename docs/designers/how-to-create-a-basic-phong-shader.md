@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9208879400846d7acfa2cb89d1c30efaa65631a0
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 00cfaa2957f1dcb5fcfd9e7404f061d67cc44094
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746580"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924377"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
 
@@ -63,7 +63,7 @@ ms.locfileid: "34746580"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：向 3D 模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [如何：导出着色器](../designers/how-to-export-a-shader.md)
 - [如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)
 - [着色器设计器](../designers/shader-designer.md)

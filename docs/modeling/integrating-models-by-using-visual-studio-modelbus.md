@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 95686812ecaa838742d0e09ac09c881753cd14da
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 316abdc18973056619d47e50ae851f33d72bc32c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177274"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382043"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>使用 Visual Studio Modelbus 集成模型
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 提供了用于创建模型之间以及其他工具的链接到模型的方法。 例如，可以链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。
@@ -127,10 +127,10 @@ ms.locfileid: "39177274"
 
 4.  如果选择引用模型中的元素，则可添加用户可选择的类型（例如 Company.FamilyTree.Person）的列表。
 
-5.  单击**确定**，然后单击**转换所有模板**在解决方案资源管理器工具栏中。
+5.  单击**确定**，然后单击**转换所有模板**中**解决方案资源管理器**工具栏。
 
     > [!WARNING]
-    >  如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
+    > 如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
 
 6.  如果指定了目标类型（如 Company.FamilyTree.Person）的列表，则必须将程序集引用添加到 DSL 项目，从而引用目标 DSL 的 DLL（例如 Company.FamilyTree.Dsl.dll）
 
@@ -143,7 +143,7 @@ ms.locfileid: "39177274"
 3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例的调试项目中，添加作为每个 DSL 的实例的文件。
 
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
+    > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ModelBus 只能解析对这些模型的引用，它们是同一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的项。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
 
 4.  在公开的 DSL 的实例中创建一些元素和链接，并将其保存。
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 330e0aa9bcf51b0ce9d57ea93a13303b7a356982
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed3e4a32f1870e854720608270373f89c98ce940
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31969124"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175790"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>如何：使用 Web 性能测试 API
 
-你可以为 Web 性能测试编写代码。 Web 性能测试 API 可用来创建编码 Web 性能测试、Web 性能测试插件、请求插件、请求、提取规则以及验证规则。 组成这些类型的类是此 API 中的核心类。 此 API 中的其他类型则用来支持创建 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 对象。 您可使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空间创建自定义 Web 性能测试。
+可以为 Web 性能测试编写代码。 Web 性能测试 API 可用来创建编码 Web 性能测试、Web 性能测试插件、请求插件、请求、提取规则以及验证规则。 组成这些类型的类是此 API 中的核心类。 此 API 中的其他类型则用来支持创建 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>、<xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule> 对象。 可使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting> 命名空间创建自定义 Web 性能测试。
 
  还可以使用 Web 性能测试 API 通过编程方式来创建和保存声明性 Web 性能测试。 为此，可以使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTest> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.DeclarativeWebTestSerializer> 类。
 
@@ -46,7 +46,7 @@ ms.locfileid: "31969124"
 
 7.  生成项目。
 
-8.  使用 Web 性能测试编辑器添加新 Web 性能测试插件：
+8.  使用“Web 性能测试编辑器”添加新 Web 性能测试插件：
 
     1.  选择工具栏上的“添加 Web 测试插件”。
 

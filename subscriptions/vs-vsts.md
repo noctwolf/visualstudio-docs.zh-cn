@@ -9,12 +9,12 @@ description: 了解 Visual Studio 订阅者如何使用 Visual Studio Team Servi
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae0f8c27d7f82493c4ce247ee1399e4e16fb88f8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f5dc617f9baa801e17d2fd9862103d9079b3368
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196071"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281815"
 ---
 # <a name="visual-studio-team-services-vsts-benefits-for-visual-studio-subscribers"></a>Visual Studio 订阅者的 Visual Studio Team Services (VSTS) 权益
 
@@ -22,9 +22,10 @@ ms.locfileid: "31196071"
 
 使用激活 Visual Studio 订阅时所用的标识或[备用标识](vs-alternate-identity.md)登录到 VSTS 时，会被自动识别。
 
-[注册免费 VSTS 帐户](https://www.visualstudio.com/team-services/)
+[注册免费 VSTS 帐户](https://visualstudio.microsoft.com/team-services/)
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云、月度云）   | VL、Azure、零售、所选 NFR<sup>1</sup>、FTE  | 基本功能、测试管理器、包管理、自承载 CI/CD       |  是          |
@@ -34,10 +35,9 @@ ms.locfileid: "31196071"
 
 <sup>1</sup> 包括：限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (Enterprise)、BizSpark、MCT 软件和服务开发人员。不包括：MCT 软件和服务、Imagine。
 
-
-
 了解有关 VSTS 功能的详细信息：
-- [基本](https://www.visualstudio.com/team-services/compare-features/)
+
+- [基本](https://visualstudio.microsoft.com/team-services/compare-features/)
 - [测试管理器](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [包管理](https://marketplace.visualstudio.com/items?itemName=ms.feed)
 
@@ -46,6 +46,6 @@ ms.locfileid: "31196071"
 
 ## <a name="support-resources"></a>支持资源
 
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+-  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 -  完整的 [Visual Studio Team Services 文档](/vsts/)。

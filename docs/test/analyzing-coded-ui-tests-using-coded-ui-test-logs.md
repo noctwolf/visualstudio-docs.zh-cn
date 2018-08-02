@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f28ae1e73a22be7e1e9a677df9fb68fc4c954926
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: e2301e1c0cf2a90f701e74445d22810e67785999
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750722"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36233899"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 
@@ -26,7 +26,7 @@ ms.locfileid: "34750722"
 
 - 在测试项目中不存在 App.config 文件的目标 .NET Framework 版本 4：
 
-   1. 打开 **QTAgent32_40.exe.config** 文件。 默认情况下，此文件位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中。
+   1. 打开 *QTAgent32_40.exe.config* 文件。 默认情况下，此文件位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中。
 
    2. 将 EqtTraceLevel 的值修改为你想要的日志级别。
 
@@ -34,7 +34,7 @@ ms.locfileid: "34750722"
 
 - 在测试项目中不存在 App.config 文件的目标 .NET Framework 版本 4.5：
 
-   1. 打开 **QTAgent32.exe.config** 文件。 默认情况下，此文件位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中。
+   1. 打开 *QTAgent32.exe.config* 文件。 默认情况下，此文件位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 中。
 
    2. 将 EqtTraceLevel 的值修改为你想要的日志级别。
 
@@ -64,12 +64,12 @@ ms.locfileid: "34750722"
 
 2.  在 **“生成”** 菜单上，选择 **“生成解决方案”**。
 
-3.  在“测试资源管理器”中，选择想要运行的编码的 UI 测试、打开其快捷菜单，然后选择“运行选定测试”。
+3.  在测试资源管理器中，选择想要运行的编码的 UI 测试、打开其快捷菜单，然后选择“运行选定测试”。
 
      自动测试会运行并指示它们是否通过。
 
     > [!TIP]
-    > 若要查看“测试资源管理器”，请选择“测试” > “窗口”，然后选择“测试资源管理器”。
+    > 要查看测试资源管理器，请选择“测试” > “窗口”，然后选择“测试资源管理器”。
 
 4.  在“测试资源管理器”结果中选择“输出”链接。
 
@@ -88,4 +88,4 @@ ms.locfileid: "34750722"
 ## <a name="see-also"></a>请参阅
 
 - [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
-- [如何：从 Microsoft Visual Studio 运行测试](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
+- [如何：通过 Microsoft Visual Studio 运行测试](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

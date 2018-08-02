@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1406e687a4d84fd2d6ebe0ac7b327afa2c9fffd
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: f720c86f98aa484a6f83721dcf6d6c0881822b22
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34477504"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079633"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：引用项目文件的名称或位置
-可以在项目文件自身中使用该项目的名称或位置，而无需创建你自己的属性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供引用项目文件名的保留属性和与项目相关的其他属性。 有关保留属性的详细信息，请参阅 [MSBuild 保留属性和常见属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
+可以在项目文件自身中使用该项目的名称或位置，而无需创建你自己的属性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供引用项目文件名的保留属性和与项目相关的其他属性。 有关保留属性的详细信息，请参阅 [MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
   
-## <a name="using-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 属性  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一些可以在项目文件中使用而无需每次都对其进行定义的保留属性。 例如，保留属性 `MSBuildProjectName` 提供对项目文件名的引用。  
+## <a name="use-the-project-properties"></a>使用项目属性
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供一些可以在项目文件中使用而无需每次都对其进行定义的保留属性。 例如，保留属性 `MSBuildProjectName` 提供对项目文件名的引用。 保留属性 `MSBuildProjectDirectory` 提供对项目文件位置的引用。
   
-#### <a name="to-use-the-msbuildprojectname-property"></a>使用 MSBuildProjectName 属性  
+#### <a name="to-use-the-project-properties"></a>使用项目属性
   
 -   使用 $() 表示法在项目文件中引用属性，就像引用任何其他属性一样。 例如:  
   
@@ -39,7 +39,7 @@ ms.locfileid: "34477504"
     <CSC Sources = "@(CSFile)"   
         OutputAssembly = "$(MSBuildProjectName).exe"/>  
     </CSC>  
-    ```  
+    ```          
   
  使用保留属性的一个优点是对项目文件名所作的任何更改都将自动纳入。 下次生成项目时，输出文件将具有该新名称，而你不需要执行任何进一步的操作。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "34477504"
     <!-- Specify the inputs -->  
     <ItemGroup>  
         <CSFile Include = "consolehwcs1.cs"/>  
-    </ItemGroup>  
+     </ItemGroup>  
     <Target Name = "Compile">  
         <!-- Run the Visual C# compilation using  
         input files of type CSFile -->  
@@ -73,7 +73,20 @@ ms.locfileid: "34477504"
     </Target>  
 </Project>  
 ```  
+
+## <a name="example"></a>示例
+ 以下示例项目文件使用 `MSBuildProjectDirectory` 保留属性来创建项目文件位置中文件的完整路径。  
+  
+```xml  
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">     
+    
+    <!-- Build the path to a file in the root of the project -->  
+    <PropertyGroup>  
+        <NewFilePath>$([System.IO.Path]::Combine($(MSBuildProjectDirectory), `BuildInfo.txt`))</NewFilePath>
+    </PropertyGroup>  
+</Project>  
+```  
   
 ## <a name="see-also"></a>请参阅  
 [MSBuild](../msbuild/msbuild.md)  
- [MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)

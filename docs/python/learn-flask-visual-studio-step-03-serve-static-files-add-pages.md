@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 384905370a16cbdcd9b4c9165f079bcbdf71a250
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: dbdcf2222aab4b70ba9817792b0d72d4dadf5802
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752126"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089797"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教程步骤 3：提供静态文件、添加页面和使用模板继承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：为静态文件提供服务、添加页面和使用模板继承
 
 上一步：[使用视图和页面模板创建 Flask 应用](learn-flask-visual-studio-step-02-create-app.md)
 
@@ -283,8 +283,9 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
 > [!div class="nextstepaction"]
 > [使用完整的 Flask Web 项目模板](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
-## <a name="going-deeper"></a>深入了解
+## <a name="go-deeper"></a>深入了解
 
+- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 有关 Jinja 模板的更多功能（如控制流），请参阅 [Jinja 模板设计器文档](http://jinja.pocoo.org/docs/2.10/templates) (jinja.pocoo.org)
 - 有关使用 `url_for` 的详细信息，请参阅 Flask 应用程序对象文档中的 [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) (flask.pocoo.org)
 - GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

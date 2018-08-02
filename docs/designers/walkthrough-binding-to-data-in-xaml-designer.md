@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 2c12d1ca9605a7591146f3d6141eb12b5f8975f6
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 557cdd14a37a52933df44c92b76fe608a1cc273c
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745706"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079883"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
@@ -27,7 +27,7 @@ ms.locfileid: "34745706"
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>创建一个类以用作数据源的步骤
 
-1. 在“文件”菜单上，选择“新建”> “项目”。
+1. 在“文件”菜单上，选择“新建” > “项目”。
 
 1. 在“新建项目”对话框中，选择“Visual C#”或“Visual Basic”节点，展开“Windows 桌面”节点，然后选择“WPF 应用程序”模板。
 

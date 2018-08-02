@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e85bb64252a73195e4ab8226cfbdb141199107d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e74fa916af3feebca5b7cf0b45950981eab0aa5b
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569165"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177849"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 通过 MSBuild，可将应用程序编译为在若干 .NET Framework 版本的任一版本和若干系统平台的任一平台上运行。 例如，可将同一应用程序编译为既能在 32 位平台的 .NET Framework 2.0 上运行，也能在 64 位平台的 .NET Framework 4.5 上运行。  
@@ -44,8 +44,8 @@ ms.locfileid: "31569165"
 ## <a name="reference-assemblies"></a>引用程序集  
  工具集中指定的引用程序集有助于应用程序的设计和构建。 这些引用程序集不仅可启用特定的目标生成，还可将 Visual Studio IDE 中的组件和功能限制为与目标兼容的组件和功能。 有关详细信息，请参阅[在设计时解析程序集](../msbuild/resolving-assemblies-at-design-time.md)  
   
-## <a name="configuring-targets-and-tasks"></a>配置目标和任务  
+## <a name="configure-targets-and-tasks"></a>配置目标和任务  
  通过 MSBuild 可配置要在进程外运行的 MSBuild 目标和任务，这样即可面向与当前运行所在的上下文有很大不同的上下文。  例如，当开发计算机在具有 .NET Framework 4.5 的 64 位平台上运行时，可面向 32 位 NET Framework 2.0 应用程序。 有关详细信息，请参阅[配置目标和任务](../msbuild/configuring-targets-and-tasks.md)。  
   
 ## <a name="troubleshooting"></a>疑难解答  
- 如果尝试引用不属于目标上下文的程序集，则可能会遇到错误。 有关这些错误以及如何处理这些错误的详细信息，请参阅[.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。
+ 如果尝试引用不属于目标上下文的程序集，则可能会遇到错误。 有关这些错误以及如何处理这些错误的详细信息，请参阅 [.NET Framework 目标错误疑难解答](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)。

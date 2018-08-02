@@ -6,24 +6,33 @@ ms.author: amburns
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 14afeefac0bb5aa198b2f62ba00ba85831b23ffb
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: dcd305cd7cb3759483c79b75629a688d852f7c7a
+ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33884218"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37433185"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 
 许多 Xamarin 产品支持跨平台应用程序开发，包括 Visual Studio for Mac 等独立应用。
 
-本指南介绍了单独卸载每个产品的知识，可导航到相关部分查看。 遵循本指南中的全部指导，可卸载整个 Xamarin 工具集。
+可根据本指南导航到相关部分，单独卸载每个产品，或使用[卸载脚本](#uninstall-script)部分提供的脚本卸载所有内容。
 
-如果之前已在计算机上安装 Xamarin Studio，则除了执行以下步骤外，可能还需按照 developer.xamarin.com 上的[卸载](https://developer.xamarin.com/guides/cross-platform/getting_started/installation/uninstalling_xamarin/)指南进行操作。
+如果之前已在计算机上安装 Xamarin Studio，则除了执行以下步骤外，可能还需按照 [Xamarin 卸载](https://docs.microsoft.com/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac)指南中的说明进行操作。
 
 ## <a name="uninstall-script"></a>卸载脚本
 
-可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)，一次性卸载 Visual Studio 及其关联的组件。
+可使用两个脚本来卸载计算机上的 Visual Studio for Mac 以及所有组件：
+
+- [Visual Studio 和 Xamarin 脚本](#visual-studio-for-mac-and-xamarin-script)
+- [.NET Core 脚本](#net-core-script)
+
+以下部分提供有关下载和使用脚本的信息。
+
+### <a name="visual-studio-for-mac-and-xamarin-script"></a>Visual Studio for Mac 和 Xamarin 脚本
+
+可通过使用[卸载脚本](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs/master/mac/resources/uninstall-vsmac.sh)一次性卸载 Visual Studio 和 Xamarin 组件。
 
 卸载脚本中包含本文中出现的大部分命令。 由于可能存在外部依赖关系，脚本中忽略了两个主要部分：
 
@@ -45,6 +54,26 @@ ms.locfileid: "33884218"
     $ sudo ./uninstall-vsmac.sh
     ```
 4. 最后，删除卸载脚本。
+
+### <a name="net-core-script"></a>.NET Core 脚本
+
+.NET Core 的卸载脚本位于 [dotnet cli 存储库](https://raw.githubusercontent.com/dotnet/cli/master/scripts/obtain/uninstall/dotnet-uninstall-pkgs.sh)
+
+要运行脚本，请执行以下步骤：
+
+1. 右键单击脚本，并选择“另存为...” 在 Mac 上保存文件。
+2. 打开“终端”，并将工作目录更改为下载脚本的位置：
+
+    ```bash
+    $ cd /location/of/file
+    ```
+3. 使脚本可执行，并通过 **sudo** 运行它：
+
+    ```bash
+    $ chmod +x ./dotnet-uninstall-pkgs.sh
+    $ sudo ./dotnet-uninstall-pkgs.sh
+    ```
+4. 最后，删除 .NET Core 卸载脚本。
 
 ## <a name="uninstall-visual-studio-for-mac"></a>卸载 Visual Studio for Mac
 

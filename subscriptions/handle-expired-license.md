@@ -9,18 +9,17 @@ description: 了解管理员如何处理过期的 Visual Studio 订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8fa500e5909a855884975653417c3e61976f9f01
-ms.sourcegitcommit: 37144589d9f850ff81ec7bfb884429989925a43d
+ms.openlocfilehash: 15d2b89d8a43f58302944d64dd9955a40c5c125e
+ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34335614"
+ms.lasthandoff: 06/22/2018
+ms.locfileid: "36325120"
 ---
 # <a name="handling-expired-subscriptions"></a>处理过期订阅
 
 如果用户的订阅已过期，则会在门户中通过在订阅者列表中其名称旁显示一个红条来指示这一点。 对于那些继续使用其 Visual Studio 订阅权益的订阅者，你需要续订其许可证。 
-
-![过期订阅列表](_img\expired-subscriptions\expired-list.png) 
+    ![过期订阅列表](_img\expired-subscriptions\expired-list.png)
 
 **续订订阅**
 1.  请与批量许可经销商或 Microsoft 经销商联系。 

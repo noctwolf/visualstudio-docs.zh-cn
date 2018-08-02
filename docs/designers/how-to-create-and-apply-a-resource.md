@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1b76c5790c255a3c1ca2ed0fe38bc0d13a8d02
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 49f2559ecd2937ed1d54940416d5653b9dd59dbb
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746642"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923991"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅[快速入门：设置控件的样式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入门：控件模板](http://go.microsoft.com/fwlink/?LinkID=247982)。
@@ -29,7 +29,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
 1.  在 XAML 设计器中打开一个 XAML 文件后，创建一个元素，或在“文档大纲”窗口中选择一个元素。
 
-2.  在“属性”窗口中，选择属性标记，该标记显示为属性值右侧的一个方框符号，然后选择“转换为新资源”。 白色方框符号指示默认值，而黑色方框符号通常指示已应用了某个本地资源
+2.  在“属性”窗口中，选择属性标记，该标记显示为属性值右侧的一个方框符号，然后选择“转换为新资源”。 白色方框符号指示默认值，而黑色方框符号通常指示已应用了某个本地资源。
 
      将出现用于创建资源的相应对话框。 当从画笔创建资源时，就会出现此对话框：
 
@@ -43,7 +43,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
     -   若要使该资源仅对当前文档可用，则选择“此文档”。
 
-    -   若要使该资源仅对从中创建了该资源的元素或其子元素可用，则选择“此文档”，然后在下拉列表中，选择 *element*: *name*。
+    -   若要使该资源仅对从中创建了该资源的元素或其子元素可用，则选择“此文档”，然后在下拉列表中，选择 **element**: **name**。
 
     -   若要在可在其他项目中重用的资源字典文件中定义该资源，则单击“资源字典”，然后在下拉列表中选择一个现有的资源字典文件，如“StandardStyles.xaml”。
 
@@ -62,9 +62,9 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
     -   将样式或控件模板资源应用于控件。 在“文档大纲”窗口中打开某个控件的上下文菜单，选择“编辑模板”或“编辑其他模板”，选择“应用资源”，然后从显示的列表中选择控件模板的名称。
 
         > [!NOTE]
-        >  “编辑模板”用于应用控件模板。 “编辑其他模板”用于应用其他模板类型。
+        >  “编辑模板”应用控件模板。 “编辑其他模板”应用其他模板类型。
 
-     资源可应用于兼容的任何位置。 例如，画笔资源可应用于 <xref:Windows.UI.Xaml.Controls.TextBox> 控件的“前景”属性。
+     可在任何兼容的位置应用资源。 例如，画笔资源可应用于 <xref:Windows.UI.Xaml.Controls.TextBox> 控件的“前景色”属性。
 
 ### <a name="to-edit-a-resource"></a>编辑资源的步骤
 

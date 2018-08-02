@@ -21,6 +21,7 @@
 ## [管理项目中的引用](managing-references-in-a-project.md)
 ### [演练 - 包括项目中的 NuGet 包](nuget-walkthrough.md)
 ## [管理应用资源](managing-app-resources.md)
+## [如何：打开多个解决方案或实例](open-multiple-solutions.md)
 
 # [源编辑器](source-editor.md)
 ## [重构](refactoring.md)

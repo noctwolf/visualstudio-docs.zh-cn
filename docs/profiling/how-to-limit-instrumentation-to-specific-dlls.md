@@ -11,11 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ca2c966c395edf189cbab04c20cdb77c6b0e4e3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aefa0d5953d1e8d61615ac5bfe0af136082c96f3
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843944"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：将检测限定为特定 DLL
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>将检测限定为 Visual Studio 解决方案中的特定 DLL
 
-1. 在 Visual Studio 中打开包含该 DLL 的解决方案]。
+1. 在 Visual Studio 中打开包含该 DLL 的解决方案。
 
 2. 在“分析”菜单上，选择“启动性能向导”。
 

@@ -1,7 +1,7 @@
 ---
 title: 适用于 Android 的 Visual Studio 仿真程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 07/17/2017
+ms.date: 07/03/2018
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
@@ -10,20 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 55e1e24a1482f40664d3f0c154d362c08bb9fa17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066705"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39233147"
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
+
 适用于 Android 的 Visual Studio 仿真器是一款可模拟 Android 设备的桌面应用程序。 它提供虚拟化的环境，你不需要物理设备便可在其中调试并测试 Android 应用程序。 它还为应用程序原型提供一个独立的环境。  
 
 > [!IMPORTANT]
 > 在大多数情况下，建议使用 Google Android Emulator，而不是适用于 Android 的 Visual Studio 模拟器：
-> - 在需要带 Android 7.0 或更高版本的模拟器映像时，因为此情况下未计划发布版本 6.0 之前的 Android 映像供用户在适用于 Android 的 Visual Studio 模拟器中使用。
-> - 使用适用于 Apache Cordova 的 Visual Studio 工具时。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
+> - Visual Studio 2015 后不支持适用于 Android 的 Visual Studio 模拟器。
+> - 适用于 Android 的 Visual Studio 模拟器不支持 Android 版本 6.0 以后的模拟器映像。
+> - Google Android Emulator 现在支持 [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#hyper-v)。
+> - 用于 Apache Cordova 的 Visual Studio Tools 可与 Google Android Emulator 共同使用。 有关详细信息，请参阅[在 Android 上运行 Apache Cordova 应用](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator)（请注意，不再需要如文本所述禁用 Hyper-V）。
+>
+> 有关配置和使用 Google Android Emulator 的详细信息，请参阅 [Android Emulator 安装](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/)。
   
  适用于 Android 的 Visual Studio 仿真程序旨在为实际设备提供水平相当的性能。 但是，在发布你的应用之前，我们建议你在物理设备上测试应用。  
   
@@ -46,7 +51,7 @@ ms.locfileid: "31066705"
 ##  <a name="Requirements"></a> 系统需求和向后兼容性  
  有关硬件、软件和适用于 Android Visual Studio 仿真程序的配置需求的重要信息，请参阅以下主题。  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [适用于 Android 的 Visual Studio 仿真程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
  适用于 Android 的 Visual Studio 仿真程序需要 Visual Studio 2015；它不与 Visual Studio 的早期版本向后兼容。  
   
@@ -100,5 +105,5 @@ ms.locfileid: "31066705"
 -   在 Visual Studio 或在仿真程序管理器中使用“发送笑脸”工具来报告问题。  
   
 ## <a name="see-also"></a>请参阅  
- [适用于 Android 的 Visual Studio 模拟程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
+ [适用于 Android 的 Visual Studio 仿真程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
  [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

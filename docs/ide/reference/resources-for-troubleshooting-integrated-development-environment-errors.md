@@ -1,5 +1,5 @@
 ---
-title: 用于排除集成开发环境错误的资源
+title: 用于排除错误的资源
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -95,22 +95,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f0b0bd982e153e7213f36574b44f9060006ebc99
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 3bcb994c0ee79cb36e1c2e2db792346842194c73
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106916"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176536"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用于排除集成开发环境错误的资源
 
-并非所有错误消息都有特定的相关帮助主题。 如果错误消息里的信息不能帮助解决问题，可以参考其他资源，如知识库文章、开发人员社区或产品支持。
+并非所有错误消息都有特定的相关帮助主题。 如果错误消息里的信息不能帮助解决问题，可以参考其他资源，如知识库文章、论坛或产品支持。
 
 ## <a name="knowledge-base-articles"></a>知识库文章
 
-可以在联机知识库 (KB) 中搜索有关产品问题的文章。 并非所有问题都有相应的 KB 文章，但很多客户所遇到的错误通常会记录下来。 可以访问[Microsoft 支持](https://support.microsoft.com)网站上的 KB 文章。
+可以在联机知识库 (KB) 中搜索有关产品问题的文章。 并非所有问题都有相应的 KB 文章，但很多客户所遇到的错误通常会记录下来。 可以访问 [Microsoft 支持](https://support.microsoft.com)网站上的 KB 文章。
 
-## <a name="the-developer-community"></a>开发人员社区
+## <a name="developer-forums"></a>开发人员论坛
 
 可通过论坛与其他开发人员以及 Microsoft 员工进行互动。 如果遇到无法解决的问题，可在论坛中发布有关该问题的帖子。 还可搜索讨论组，查看其他人是否已发布有关该问题的帖子。
 

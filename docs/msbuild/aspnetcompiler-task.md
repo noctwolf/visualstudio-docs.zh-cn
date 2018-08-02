@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 2f6554a1c29618d8d3373fc3fb8f46f24816531e
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 69971e72569dcae1f02f1e2b7988ef15f881fe85
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31567942"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945164"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序的实用工具。  
@@ -36,22 +36,22 @@ ms.locfileid: "31567942"
 |参数|描述|  
 |---------------|-----------------|  
 |`AllowPartiallyTrustedCallers`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则具有强名称的程序集将允许部分信任的调用方。|  
-|`Clean`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则将以全新方式生成预编译的应用程序。 将重新编译任何之前编译的组件。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 **-c** 开关。|  
-|`Debug`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则将在编译期间发出调试信息（.PDB 文件）。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 **-d** 开关。|  
+|`Clean`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则将以全新方式生成预编译的应用程序。 将重新编译任何之前编译的组件。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 -c 开关。|  
+|`Debug`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则将在编译期间发出调试信息（.PDB 文件）。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 -d 开关。|  
 |`DelaySign`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则该程序集在创建后未完全签名。|  
 |`FixedNames`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则编译的程序集将拥有固定的名称。|  
-|`Force`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则任务将覆盖目标目录（如果已存在）。 现有内容将丢失。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 **-f** 开关。|  
+|`Force`|可选的 `Boolean` 参数<br /><br /> 如果此参数为 `true`，则任务将覆盖目标目录（如果已存在）。 现有内容将丢失。 默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 -f 开关。|  
 |`KeyContainer`|可选 `String` 参数。<br /><br /> 指定强名称密钥容器。|  
 |`KeyFile`|可选 `String` 参数。<br /><br /> 指定强名称密钥文件的物理路径。|  
-|`MetabasePath`|可选 `String` 参数。<br /><br /> 指定应用程序的完整 IIS 元数据库路径。 此参数不能与 `VirtualPath` 或 `PhysicalPath` 参数合并。 此参数对应于 aspnet_compiler.exe 上的 **-m** 开关。|  
-|`PhysicalPath`|可选 `String` 参数。<br /><br /> 指定要编译的应用程序的物理路径。 如果缺少此参数，则将使用 IIS 元数据库查找该应用程序。 此参数对应于 aspnet_compiler.exe 上的 **-p** 开关。|  
+|`MetabasePath`|可选 `String` 参数。<br /><br /> 指定应用程序的完整 IIS 元数据库路径。 此参数不能与 `VirtualPath` 或 `PhysicalPath` 参数合并。 此参数对应于 aspnet_compiler.exe 上的 -m 开关。|  
+|`PhysicalPath`|可选 `String` 参数。<br /><br /> 指定要编译的应用程序的物理路径。 如果缺少此参数，则将使用 IIS 元数据库查找该应用程序。 此参数对应于 aspnet_compiler.exe 上的 -p 开关。|  
 |`TargetFrameworkMoniker`|可选 `String` 参数。<br /><br /> 指定 TargetFrameworkMoniker，它指示应使用的 aspnet_compiler.exe 的 .NET Framework 版本。 仅接受 .NET Framework 名字对象。|  
 |`TargetPath`|可选 `String` 参数。<br /><br /> 指定将应用程序编译到的物理路径。 如果未指定，则将就地预编译应用程序。|  
-|`Updateable`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则预编译的应用程序将为可更新。  默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 **-u** 开关。|  
-|`VirtualPath`|可选 `String` 参数。<br /><br /> 要编译的应用程序的虚拟路径。 如果指定 `PhysicalPath`，则物理路径将用于查找应用程序。 否则，将使用 IIS 元数据库，并假定应用程序位于默认站点中。 此参数对应于 aspnet_compiler.exe 上的 **-v** 开关。|  
+|`Updateable`|可选 `Boolean` 参数。<br /><br /> 如果此参数为 `true`，则预编译的应用程序将为可更新。  默认值为 `false`。 此参数对应于 aspnet_compiler.exe 上的 -u 开关。|  
+|`VirtualPath`|可选 `String` 参数。<br /><br /> 要编译的应用程序的虚拟路径。 如果指定 `PhysicalPath`，则物理路径将用于查找应用程序。 否则，将使用 IIS 元数据库，并假定应用程序位于默认站点中。 此参数对应于 aspnet_compiler.exe 上的 -v 开关。|  
   
 ## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数及其说明的列表，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [ToolTaskExtension 基类](../msbuild/tooltaskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下代码示例使用 `AspNetCompiler` 任务预编译 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序。  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0abf8f5b2c77281325853f744f54513fb897ecc6
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d2a10d3dba6494a7afaa6ff626db15ebcf164ed2
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574943"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079587"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 任务
 
@@ -38,7 +38,7 @@ ms.locfileid: "31574943"
 |`AlwaysCompileMarkupFilesInSeparateDomain`|可选 **Boolean** 参数。<br /><br /> 指定是否在单独的 <xref:System.AppDomain> 下运行该任务。 如果此参数返回 false，则任务将在与 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中运行，且运行速度更快。 如果该参数返回 true，则任务将在独立于 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 的另一个 <xref:System.AppDomain> 中运行，且运行速度更慢。|
 |`ApplicationMarkup`|可选的 **ITaskItem[]** 参数。<br /><br /> 指定应用程序定义 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件的名称。|
 |`AssembliesGeneratedDuringBuild`|可选 **String []** 参数。<br /><br /> 指定在生成过程中对更改的程序集的引用。 例如，Visual Studio 解决方案可能包含一个引用了另一个项目的已编译输出的项目。 在这种情况下，可以将第二个项目的已编译输出添加到 **AssembliesGeneratedDuringBuild** 参数。<br /><br /> 注意：**AssembliesGeneratedDuringBuild** 参数必须包含对生成解决方案所生成的一组完整程序集的引用。|
-|`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的简称。 例如，如果项目生成一个名为 **WinExeAssembly.exe** 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|
+|`AssemblyName`|必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的简称。 例如，如果项目生成一个名为 *WinExeAssembly.exe* 的 [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] 可执行文件，则 **AssemblyName** 参数的值为 **WinExeAssembly**。|
 |`AssemblyPublicKeyToken`|可选 **String** 参数。<br /><br /> 指定程序集的公钥标记。|
 |`AssemblyVersion`|可选 **String** 参数。<br /><br /> 指定程序集的版本号。|
 |`ContentFiles`|可选的 **ITaskItem[]** 参数。<br /><br /> 指定松散的内容文件列表。|
@@ -50,7 +50,7 @@ ms.locfileid: "31574943"
 |`HostInBrowser`|可选 **String** 参数。<br /><br /> 指定生成的程序集是否为 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)]。 有效的选项为“true”和“false”。 如果为“true”，则生成代码以支持浏览器承载。|
 |`KnownReferencePaths`|可选 **String []** 参数。<br /><br /> 指定对在生成过程中不更改的程序集的引用。 包括位于 [!INCLUDE[TLA#tla_gac](../msbuild/includes/tlasharptla_gac_md.md)]、[!INCLUDE[TLA#tla_netframewk](../misc/includes/tlasharptla_netframewk_md.md)] 安装目录等位置中的程序集。|
 |`Language`|必需的 **String** 参数。<br /><br /> 指定编译器支持的托管语言。 有效的选项有 **C#**、**VB**、**JScript** 和 **C++**。|
-|`LanguageSourceExtension`|可选 **String** 参数。<br /><br /> 指定追加到所生成的托管代码文件扩展名的扩展名：<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> 如果未采用特定的值来设置 **LanguageSourceExtension** 参数，则使用语言的默认源文件扩展名：**.vb**（适用于 [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)]）和 **.csharp**（适用于 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]）。|
+|`LanguageSourceExtension`|可选 **String** 参数。<br /><br /> 指定追加到所生成的托管代码文件扩展名的扩展名：<br /><br /> `<Filename>.g<LanguageSourceExtension>`<br /><br /> 如果未采用特定的值来设置 **LanguageSourceExtension** 参数，则使用语言的默认源文件扩展名：*.vb*（适用于 [!INCLUDE[TLA#tla_visualb](../msbuild/includes/tlasharptla_visualb_md.md)]）和 *.csharp*（适用于 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]）。|
 |`LocalizationDirectivesToLocFile`|可选 **String** 参数。<br /><br /> 指定如何针对每个源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件生成本地化信息。 有效选项有“无”、“仅注释”和“全部”。|
 |`OutputPath`|必需的 **String** 参数。<br /><br /> 指定在其中生成托管代码文件和 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 二进制格式文件的目录。|
 |`OutputType`|必需的 **String** 参数。<br /><br /> 指定项目生成的程序集的类型。 有效选项有 **winexe**、**exe**、**library** 和 **netmodule**。|
@@ -100,7 +100,7 @@ ms.locfileid: "31574943"
 
 ## <a name="example"></a>示例
 
-下面的示例演示如何将三个 `Page`[!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件转换成二进制格式文件。 `Page1` 包含对位于项目的根命名空间的类型 `Class1` 的引用，因此在此标记编译阶段不会转换为二进制格式文件。 改为执行 [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)，然后再执行 [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)。
+下面的示例演示如何将三个页面 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件转换成二进制格式文件。 Page1 包含对位于项目的根命名空间的类型 `Class1` 的引用，因此在此标记编译阶段不会转换为二进制格式文件。 改为执行 [GenerateTemporaryTargetAssembly](../msbuild/generatetemporarytargetassembly-task.md)，然后再执行 [MarkupCompilePass2](../msbuild/markupcompilepass2-task.md)。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -124,8 +124,8 @@ ms.locfileid: "31574943"
 ## <a name="see-also"></a>请参阅
 
 [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)  
-[任务参考](../msbuild/wpf-msbuild-task-reference.md)  
+[WPF MSBuild 任务参考](../msbuild/wpf-msbuild-task-reference.md)  
 [MSBuild 参考](../msbuild/msbuild-reference.md)  
-[任务参考](../msbuild/msbuild-task-reference.md)  
-[Building a WPF Application (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)（生成 WPF 应用程序 (WPF)）  
-[WPF XAML Browser Applications Overview](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)（WPF XAML 浏览器应用程序概述）
+[MSBuild 任务参考](../msbuild/msbuild-task-reference.md)  
+[生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
+[WPF XAML 浏览器应用程序概述](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

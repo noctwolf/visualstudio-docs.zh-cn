@@ -17,18 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f401e5406ed7e5bb8244c556dbc6fbc365e773
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 935b7aa55633167b6f9630b8046e29f9bc8eba91
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35238077"
 ---
 # <a name="functions-view"></a>“函数”视图
 “函数”视图列出分析过程中调用的函数。  
   
  默认情况下，按名称列出函数。 若要按模块查看函数，请在“函数”视图窗口中单击鼠标右键，然后选择“在模块视图中显示”。 随即会显示“模块”视图。  
   
- 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”。 此外，还可通过单击列名对数据进行排序。 有关详细信息，请参阅[如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)。  
+ 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”。 此外，还可通过单击列名对数据进行排序。 有关详细信息，请参阅[如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)。  
   
  “函数”视图中的可用列取决于用于收集数据的分析方法（采样法或检测法）以及是否在分析运行期间收集 .NET 内存数据。  
   

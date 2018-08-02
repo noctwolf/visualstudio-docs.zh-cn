@@ -1,7 +1,7 @@
 ---
 title: Python 交互式窗口 (REPL)
 description: 如何在 Visual Studio 中使用 Python 代码的交互窗口 (REPL) 进行快速代码开发。
-ms.date: 07/13/2017
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 81c4b2cceb75874135f6d18cbf167f719ced48b9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a728c164121216b259e48b502f9ca29fa7ffd1d4
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31582340"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057913"
 ---
-# <a name="working-with-the-python-interactive-window"></a>使用 Python 交互窗口
+# <a name="work-with-the-python-interactive-window"></a>使用 Python 交互式窗口
 
 Visual Studio 为每个 Python 环境提供交互式读取-评估-打印-循环 (REPL) 窗口，改进了在命令行中运行 `python.exe` 获得的 REPL。 借助交互窗口（通过“视图”>“其他窗口”>“&lt;环境&gt;交互式”菜单命令打开），可以输入任意 Python 代码，并查看即时结果。 这种编码方式有助于了解与实验 API 和库，并以交互方式开发要包含在项目中的工作代码。
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9ac84cce32c6de0310257cb62c29f93726ecb6c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 718400212d29d6bc2d45855eadbe9d1089468744
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748031"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081041"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>演练：创建真实的三维台球
 
@@ -101,7 +101,7 @@ ms.locfileid: "34748031"
 
 -   或者也可通过配置着色器图的 MaterialDiffuse 属性来调整照明的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
- 有关如何在着色器中应用朗伯照明的详细信息，请参阅[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
+ 有关如何在着色器中应用朗伯照明的详细信息，请参阅[如何：创建基本 Lambert 着色器](../designers/how-to-create-a-basic-lambert-shader.md)。
 
  使用朗伯照明后，台球应如下所示：
 
@@ -123,7 +123,7 @@ ms.locfileid: "34748031"
 
 2.  或者也可配置着色器图的反射属性（“MaterialSpecular”和“MaterialSpecularPower”），调整反射高光的呈现方式。 若要访问着色器图的属性，请选择设计表面的空白区域，然后在“属性”窗口中找到要访问的属性。
 
- 有关如何在着色器中应用反射高光的详细信息，请参阅[如何：创建基本冯氏着色器](../designers/how-to-create-a-basic-phong-shader.md)。
+ 有关如何在着色器中应用反射高光的详细信息，请参阅[如何：创建基本 Phong 着色器](../designers/how-to-create-a-basic-phong-shader.md)。
 
  应用反射照明后，台球应如下所示：
 
@@ -163,15 +163,15 @@ ms.locfileid: "34748031"
 
 ### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>使用 DirectX 纹理工具组合立方体贴图
 
-1.  在 DirectX 纹理工具中的主菜单上，选择“文件”，“新建纹理”。 随机显示“新建纹理”对话框。
+1.  在 DirectX 纹理工具中的主菜单上，选择“文件” > “新建纹理”。 随机显示“新建纹理”对话框。
 
 2.  在“纹理类型”组中，选择“立方体贴图纹理”。
 
 3.  在“维度”组中，输入正确的“宽度”和“高度”值，然后选择“确定”。 随机显示新的纹理文档。 默认情况下，第一个在纹理文档中显示的纹理对应于“正 X”立方体面。
 
-4.  将为纹理立方体侧面创建的纹理加载到立方体面。 在主菜单中，选择“文件”，“打开到此立方体贴图面”，选择为立方体侧面创建的纹理，然后选择“打开”。
+4.  将为纹理立方体侧面创建的纹理加载到立方体面。 在主菜单中，选择“文件” > “打开到此立方体贴图面”，选择为立方体侧面创建的纹理，然后选择“打开”。
 
-5.  为“负 X”、“正 Z”和“负 Z”立方体面重复步骤 4。 若要执行此操作，必须查看想要加载的面。 若要查看其他立方体贴图面，请在主菜单上选择“查看”，“立方体贴图面”，然后选择要查看的面。
+5.  为“负 X”、“正 Z”和“负 Z”立方体面重复步骤 4。 若要执行此操作，必须查看想要加载的面。 若要查看其他立方体贴图面，请在主菜单上选择“查看” > “立方体贴图面”，然后选择要查看的面。
 
 6.  对于“正 Y”立方体面，请加载为纹理立方体顶部创建的纹理。
 
@@ -212,7 +212,7 @@ ms.locfileid: "34748031"
 ## <a name="see-also"></a>请参阅
 
 - [如何：导出着色器](../designers/how-to-export-a-shader.md)
-- [如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [如何：向 3D 模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [着色器设计器](../designers/shader-designer.md)
 - [图像编辑器](../designers/image-editor.md)
 - [着色器设计器节点](../designers/shader-designer-nodes.md)

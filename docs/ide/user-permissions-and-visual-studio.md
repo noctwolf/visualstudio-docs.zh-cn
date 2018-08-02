@@ -1,6 +1,6 @@
 ---
-title: 用户权限与 Visual Studio
-ms.date: 11/04/2016
+title: 以管理员身份运行
+ms.date: 06/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b12e09348a28276d0c5d2f375b26e75c1ac3c5
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
+ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34844386"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -27,40 +28,38 @@ ms.lasthandoff: 05/04/2018
 > [!WARNING]
 > 你还应确保不要编译、启动或调试任何来自不受信任用户或地址的 Visual Studio 解决方案。
 
-作为普通用户，你可以在 Visual Studio IDE 中完成几乎所有操作，但你需要管理员权限才能完成以下任务：
+可以以普通用户身份在 Visual Studio IDE 中执行几乎任何操作。 需要管理员权限才能完成以下任务：
 
 |区域|任务|更多相关信息|
 |----------|----------|--------------------------|
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
-||安装、更新或移除本地 Help 内容。|[安装和管理本地内容](../ide/install-and-manage-local-content.md)|
-|应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|  
-||获取 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]的开发人员许可证。|[获取开发人员许可证](http://go.microsoft.com/fwlink/?LinkID=241313)|
+||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../ide/install-and-manage-local-content.md)|
+|应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|
-|外接程序|安装和使用通过使用 IDE 中的经典 COM 编写的加载项。|[创建加载项和向导](http://msdn.microsoft.com/Library/c5a47c21-6668-4de3-898d-afa969317e73)|
-|生成|使用注册组件的后期生成事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
-||在生成 C++ 项目时包括一个注册步骤。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|生成|使用注册组件的生成后事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+||在生成 C++ 项目时包括一个注册步骤。||
 |调试|调试使用提升的权限运行的应用程序。|[调试器设置和准备](../debugger/debugger-settings-and-preparation.md)|
 ||调试在其他用户帐户下运行的应用程序，例如 ASP.NET 网站。|[调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||在区域中调试 XAML 浏览器应用程序 (XBAP)。|[WPF 主机 (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
-||使用模拟器可以调试 Microsoft Azure 的云服务项目。|[在 Visual Studio 中调试云服务](http://go.microsoft.com/fwlink/?LinkId=266725)|
-||配置远程调试的防火墙。|[远程调试](../debugger/remote-debugging.md)|
+||使用模拟器可以调试 Microsoft Azure 的云服务项目。|[在 Visual Studio 中调试云服务](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
+||为远程调试配置防火墙。|[远程调试](../debugger/remote-debugging.md)|
 |性能工具|分析应用程序。|[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)|
-|部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 或 Visual Web Developer 将 ASP.NET Web 应用程序部署到承载提供程序：作为测试环境部署到 IIS](http://go.microsoft.com/fwlink/?LinkId=266478)|
->>>>>>> 346075117af3d2bd1fddd9c3aca24516a39fa6a3
+|部署|在本地计算机上将 Web 应用程序部署到 Internet Information Services (IIS)。|[使用 Visual Studio 部署 ASP.NET Web 应用](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>以管理员身份运行 Visual Studio
 
-每次启动 IDE 时，可利用管理权限启动 Visual Studio，或可以修改应用程序快捷方式以便始终利用管理权限运行。 有关详细信息，请参阅 Windows 帮助。
+如果需要以管理员身份运行 Visual Studio，请执行以下步骤打开 IDE：
 
-### <a name="run-visual-studio-with-administrative-permissions"></a>使用管理权限运行 Visual Studio
-
-这些说明适用于Windows 10。 它们与其他版本的 Windows 类似。
+> [!NOTE]
+> 这些说明适用于Windows 10。 它们与其他版本的 Windows 类似。
 
 1. 打开“开始”菜单，并滚动到 Visual Studio 2017。
 
 1. 从右键菜单或从 Visual Studio 2017 的上下文菜单中，依次选择“更多” > “以管理员身份运行”。
 
-     Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
+   Visual Studio 启动时，标题栏的产品名后显示“(管理员)”。
+
+此外可以修改应用程序快捷方式，以便始终利用管理权限运行。
 
 ## <a name="see-also"></a>请参阅
 

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c04ecdc1de848a95ad9f5051cc9ec54da02a3625
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a0dd74f25ed5dc7f76b9d35ae3d2d9833f8e4ab8
+ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35255520"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>“模块”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存和计时数据进行分组。 模块的各函数的分析数据在模块节点下列出。  

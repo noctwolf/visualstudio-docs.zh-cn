@@ -1,5 +1,5 @@
 ---
-title: 键入可视化工具和自定义查看器 |Microsoft 文档
+title: 键入可视化工具和自定义查看器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d419130cd93c6cc2f7dcff132fdafc8986bfd30a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f5cf2cc9c8f89ed0ecc7935f9afa8e096f05a840
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126905"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276489"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
-类型可视化工具是非常特定的格式显示一段数据的组件。 这种格式可以完全取决于实施者的可视化工具，最终用户或第三方供应商的可视化工具是它。  
+类型可视化工具是以特定格式显示一段数据的组件。 格式完全是由谁来实现可视化工具，无论是最终用户或第三方供应商的可视化工具。  
   
- 自定义查看器是非常特定的格式显示一段数据自定义表达式计算器的一部分。 这种格式可以完全取决于实施者的自定义查看器中，这意味着格式取决于实施者的表达式计算器 (EE)。  
+ 自定义查看器是以特定格式显示一段数据自定义表达式计算器的一部分。 此格式是完全取决于自定义查看器中，这意味着格式是由表达式计算器 (EE) 实现的实施者。  
   
 ## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>表达式计算器中的类型可视化工具的支持  
- EE 可以通过支持一套可视化工具可以访问的接口来支持类型可视化工具： 如接口[IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)和[IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)。 但请注意，EE 概不负责实现类型可视化工具本身： EE 只允许外部可视化工具对其类型信息的访问。 此类可视化工具可能传送以及 EE，和可以安装在 Visual Studio 中，由另一个第三方供应商或甚至最终用户提供的适当位置。  
+ EE 通过支持一套可视化工具可以访问接口支持类型可视化工具： 接口如[IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)并[IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)。 但是，EE 概不负责实现类型可视化工具本身： EE 只允许外部可视化工具对其类型信息的访问。 此类可视化工具可能会随 EE 并安装在由其他第三方供应商或甚至最终用户提供的 Visual Studio 中的适当位置。  
   
 ## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>表达式计算器中的自定义查看器的支持  
- EE 还可以支持自定义查看器在其中 EE 本身提供的代码查看的数据类型。 自定义查看器实现[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)接口，用于处理的任何格式显示数据的所有职责所需; 查看器可以显示的完全控制，甚至还可以允许要修改的数据。 由 EE 提供任何自定义查看器附带 EE 发货产品时。  
+ EE 还可以支持自定义查看器在其中 EE 本身提供了用于查看数据类型的代码。 自定义查看器实现[IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md)所需接口，处理的任何格式显示数据的所有任务; 查看器可以完全控制如何显示，甚至可以让数据修改。 在产品发布时提供 EE 的任何自定义查看器随附 EE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [调试器组件](../../extensibility/debugger/debugger-components.md)   
  [表达式计算器](../../extensibility/debugger/expression-evaluator.md)   
  [调试引擎](../../extensibility/debugger/debug-engine.md)   

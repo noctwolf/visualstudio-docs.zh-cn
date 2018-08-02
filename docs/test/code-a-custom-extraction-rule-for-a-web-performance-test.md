@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 02fd481455c5198a1d8ae0828072f8085d1d027a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bbafd92f34671564a91926066a2353a1e0421b63
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966155"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179237"
 ---
-# <a name="coding-a-custom-extraction-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义提取规则
+# <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义提取规则
 
 可以创建自己的提取规则。 若要执行此操作，需从提取规则类派生出自己的规则。 从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> 基类派生提取规则。
 

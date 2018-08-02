@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 16a5647461c37502f2d7a91cfb71c8f96164f2b1
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425343"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945541"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -43,9 +43,9 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |-------------|----------------|-------------|
 |与任何单个字符匹配（换行符除外）。|.|`a.o` 匹配“around”中的“aro”及“about”中的“abo”，但不匹配“across”中的“acro”。|
 |零次或多次匹配前面的表达式（匹配尽可能多的字符）|*|`a*r` 匹配“rack”中的“r”，“ark”中的“ar”和“aardvark”中的“aar”|
-|零次或多次匹配任何字符（通配符 *）|.*|c.*e 匹配“racket”中的“cke”，“comment”中的“comme”和“code”中的“code”|
-|一次或多次匹配前面的表达式（匹配尽可能多的字符）|+|`e.+e` 匹配“feeder”中的“eede”，而不是“ee”。|
-|一次或多次匹配任意字符（通配符 ?）|.+|e.+e 匹配“feeder”中的“eede”，而不是“ee”。|
+|零次或多次匹配任何字符（通配符 *）|.*|`c.*e` 匹配“racket”中的“cke”，“comment”中的“comme”和“code”中的“code”|
+|一次或多次匹配前面的表达式（匹配尽可能多的字符）|+|`e.+d` 匹配“feeder”中的“eed”，而不是“ed”。|
+|一次或多次匹配任意字符（通配符 ?）|.+|`e.+e` 匹配“feeder”中的“eede”，而不是“ee”。|
 |零次或多次匹配前面的表达式（匹配尽可能多的字符）|*?|`e.*?e` 匹配“feeder”中的“ee”，而不是“eede”。|
 |一次或多次匹配前面的表达式（匹配尽可能多的字符）|+?|`e.+?e` 匹配“enterprise”中的“ente”和“erprise”，但不匹配整个单词“enterprise”。|
 |将匹配字符串定位到行或字符串的开头|^|`^car` 仅在出现于行开头时才匹配单词“car”。|
@@ -53,9 +53,9 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |匹配集中的任何单个字符|[abc]|`b[abc]` 匹配“ba”、“bb”和“bc”。|
 |匹配的字符范围中的任意字符|[a-f]|`be[n-t]` 匹配“between”中的“bet”，“beneath”中的“ben”，“beside”中的“bes”，但不匹配“below”。|
 |捕获包含在括号中的表达式并对其进行隐式编号|()|`([a-z])X\1` 匹配“aXa”和“bXb”，但不匹配“aXb”。 “\1”指第一个表达式组“[a-z]”。|
-|使匹配无效|(?!abc)|`real (?!ity)` 匹配“realty”和“really”中的“real”，但不匹配“reality”。 它还可找到“realityreal”中的第二个“real”（而非第一个“real”）。|
+|使匹配无效|(?!abc)|`real(?!ity)` 匹配“realty”和“really”中的“real”，但不匹配“reality”。 它还可找到“realityreal”中的第二个“real”（而非第一个“real”）。|
 |匹配不在给定字符集中的任意字符|[^abc]|`be[^n-t]` 匹配“before”中的“bef”，“behind”中的“beh”和“below”中的“bel”，但不匹配“beneath”。|
-|匹配符号前或符号后的表达式。|&#124;|`(sponge&#124;mud) bath` 匹配“sponge bath”和“mud bath”。|
+|匹配符号前或符号后的表达式。|&#124;|`(sponge\|mud) bath` 匹配“sponge bath”和“mud bath”。|
 |对反斜杠后面的字符进行转义| \\ |`\^` 匹配字符 ^。|
 |指定前面的字符或组的出现次数|{x}，其中 x 是出现次数|`x(ab){2}x` 匹配“xababx”，`x(ab){2,3}x` 匹配“xababx”和“xabababx”，但不匹配“xababababx”。|
 |匹配 Unicode 字符类中的文本，其中“X”是 Unicode 数字。 有关 Unicode 字符类的详细信息，请参阅 <br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
@@ -65,7 +65,7 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |匹配任意空格字符。|(?([^\r\n])\s)|`Public\sInterface` 匹配词组“Public Interface”。|
 |匹配任意数字字符|\d|`\d` 匹配“3456”中的“3”，“23”中的“2”和“1”中的“1”。|
 |匹配 Unicode 字符|\uXXXX，其中 XXXX 指定 Unicode 字符值。|`\u0065` 匹配字符“e”。|
-|匹配标识符|\b(_\w+&#124;[\w-[0-9\_]]\w*)\b|匹配“Type1”，但不匹配“&type1”或“#define”。|
+|匹配标识符|\b[\_\w-[0-9]][\_\w]*\b|匹配“type1”，但不匹配“&type1”或“#define”。|
 |与引号中的字符串匹配|((\\".+?\\")&#124;('.+?'))|匹配单引号或双引号内的任意字符串。|
 |匹配十六进制数|\b0[xX]([0-9a-fA-F]\)\b|匹配“0xc67f”但不匹配“0xc67fc67f”。|
 |匹配整数和小数|\b[0-9]*\\.\*[0-9]+\b|匹配“1.333”。|

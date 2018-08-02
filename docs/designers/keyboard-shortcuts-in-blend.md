@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: abbfffd1b83b8e5e1133ea909fc14ca90254c4c7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8ae9d21808ba256612526e24b722717fed365a8b
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927069"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977989"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Blend 中的键盘快捷键
 ## <a name="project-shortcuts"></a>项目快捷方式
@@ -24,29 +24,29 @@ ms.locfileid: "31927069"
 |----------------|-------------|
 |创建新项目|Ctrl+Shift+N|
 |打开项目或解决方案（不是站点）|Ctrl+Shift+O|
-|关闭解决方案|Ctrl+Shift+C|
+|关闭解决方案|Ctrl + Shift + C|
 |保存解决方案或站点的副本|Ctrl+Shift+P|
 |将现有项添加到项目|Ctrl+I|
 |添加对 DLL 的引用 (WPF)|Alt+Shift+R|
 |生成项目|Ctrl+Shift+B|
-|测试项目或站点|F5|
+|测试项目或站点|**F5**|
 
 ## <a name="document-shortcuts"></a>文档快捷方式
 
 |任务|操作步骤|
 |----------------|-------------|
-|在打开的文档之间切换|Ctrl+Tab|
-|保存活动文档|Ctrl+S|
-|保存所有文档|Ctrl+Shift+S|
-|关闭活动文档|Ctrl+W|
-|关闭所有打开的文档|Ctrl+Shift+W|
+|在打开的文档之间切换|Ctrl + Tab|
+|保存活动文档|Ctrl + S|
+|保存所有文档|Ctrl + Shift + S|
+|关闭活动文档|**Ctrl**+**W**|
+|关闭所有打开的文档|**Ctrl**+**Shift**+**W**|
 |撤消上一项操作|Ctrl+Z|
 |重做上一次撤消的操作|Ctrl+Y 或 Ctrl+Shift+Z|
 |创建设计时注释|Ctrl+Shift+T|
 |剪切|Ctrl+X|
 |复制|Ctrl+C|
 |粘贴|Ctrl+V|
-|删除|DELETE|
+|删除|**删除**|
 |查找文本（仅限于 XAML 视图或 JavaScript 编辑器）|Ctrl+F|
 |查找文本的下一个匹配项（仅限于 XAML 视图或 JavaScript 编辑器）|F3 或 Ctrl+H|
 
@@ -54,9 +54,9 @@ ms.locfileid: "31927069"
 
 |任务|操作步骤|
 |----------------|-------------|
-|创建新项目|Ctrl+N|
-|复制对象|按住 Alt 键并拖动对象|
-|将对象重新定义为父项|将对象拖到版式面板上，并按 Alt 键|
+|创建新项目|Ctrl + N|
+|复制对象|按住 Alt 并拖动对象|
+|将对象重新定义为父项|将对象拖到版式面板上，并按 Alt|
 |编辑控件中的文本|F2（按 Esc 退出）|
 |编辑控件 (WPF)|Ctrl+E|
 |使选定对象的宽度相同|Ctrl+Shift+1|
@@ -77,16 +77,16 @@ ms.locfileid: "31927069"
 |上移一层|Ctrl+]|
 |将所选定象发送到后面|Ctrl+Shift+[|
 |下移一层|Ctrl+[|
-|从选定对象生成用户控件 (WPF)|F8|
+|从选定对象生成用户控件 (WPF)|**F8**|
 |约束对象的比例|拖动对象时按住 Shift|
 |按 15 度的增量旋转对象|旋转对象时按住 Shift|
 |生成剪切路径|Ctrl+7|
 |释放剪切路径|Ctrl+Shift+7|
 |生成复合路径|Ctrl+8|
 |释放复合路径|Ctrl+Shift+8|
-|锁定选定内容|Ctrl+L|
+|锁定选定内容|Ctrl + L|
 |解除对所有对象的锁定|Ctrl+Shift+L|
-|显示选定内容|Ctrl+T|
+|显示选定内容|Ctrl + T|
 |隐藏选定内容|Ctrl+3|
 |选择所有对象|Ctrl+A|
 |取消选择所有对象|Ctrl+Shift+A|
@@ -96,14 +96,14 @@ ms.locfileid: "31927069"
 |任务|操作步骤|
 |----------------|-------------|
 |在“设计”、“代码”和“拆分”视图之间进行切换|F11|
-|在美工板上放大|Ctrl+等于号|
+|在美工板上放大|Ctrl+等于号 (=)|
 |在美工板上缩小|Ctrl+减号 (-)|
 |在美工板上放大或缩小|旋转鼠标滚轮|
 |将美工板左移或右移|按住 Shift 并旋转鼠标滚轮|
 |将美工板上移或下移|按住 Ctrl 并旋转鼠标滚轮|
 |调整所选内容以适合屏幕大小|Ctrl+0|
 |以实际大小查看美工板|Ctrl+1|
-|显示或隐藏句柄|F9|
+|显示或隐藏句柄|**F9**|
 |显示或隐藏对象边界|Ctrl+Shift+H|
 |在“设计”、“XAML”和“拆分”视图之间进行切换|F11|
 
@@ -113,7 +113,7 @@ ms.locfileid: "31927069"
 |----------------|-------------|
 |在“动画”和“设计”工作区之间进行切换|Ctrl+F11|
 |显示或隐藏“资产”面板|Ctrl+句点|
-|显示或隐藏“结果”面板|F12|
+|显示或隐藏“结果”面板|**F12**|
 |显示或隐藏所有面板|F4|
 |重置活动工作区布局|Ctrl+Shift+R|
 |平移工作区|按住空格键|

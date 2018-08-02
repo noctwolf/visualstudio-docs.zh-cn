@@ -1,5 +1,6 @@
 ---
-title: 使用测试资源管理器运行单元测试
+title: 使用测试资源管理器运行、生成和调试单元测试
+description: 了解如何使用测试资源管理器在 Visual Studio 中运行测试。 本主题介绍如何启用生成后自动测试运行、查看测试结果、对测试列表进行分组和筛选、创建播放列表、调试测试以及使用测试快捷方式。
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f18086a33c150670466101485770b3541e2afa52
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752061"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38977786"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -44,7 +45,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 - 若要运行解决方案中的所有测试，请选择 **“全部运行”**。
 
-- 若要运行默认组中的所有测试，请选择 **“运行...”** ，然后选择菜单上的组。
+- 若要运行默认组中的所有测试，请选择“运行”，然后选择菜单上的组。
 
 - 选择你希望运行的各个测试，打开选定测试的上下文菜单，然后选择 **“运行选定的测试”**。
 
@@ -54,7 +55,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 
-|||
+|Button|描述|
 |-|-|
 |![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行你的单元测试，请在标准菜单上选择 **“测试”** ，然后在测试资源管理器工具栏上选择 **“生成后运行测试”** 。|
 
@@ -153,7 +154,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 若要排除筛选结果的一个子集，请使用以下语法：
 
-```
+```cpp
 FilterName:"Criteria" -FilterName:"SubsetCriteria"
 ```
 

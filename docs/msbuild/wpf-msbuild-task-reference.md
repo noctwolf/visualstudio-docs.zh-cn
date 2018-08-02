@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 30acdaddc132a40c37bc489b07ae3b7f2843b215
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 53f723644744001e39967186d0eeec74bf7d3bd7
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573133"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153795"
 ---
-# <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 任务引用
+# <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 任务参考
 Windows Presentation Foundation (WPF) 生成进程通过另一组生成任务扩展 Microsoft 生成引擎 (MSBuild)，这些任务包括编译标记和进程资源的任务。  
   
 ## <a name="in-this-section"></a>本节内容  
@@ -56,7 +56,7 @@ Windows Presentation Foundation (WPF) 生成进程通过另一组生成任务扩
  检查、更新或删除唯一标识符 (UID)，以对源 [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] 文件中包含的所有 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 元素进行本地化。  
   
  [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)  
- 生成 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 项目时，将\<hostInBrowser /> 元素添加到应用程序清单中 (projectname.exe.manifest)。  
+ 生成 [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] 项目时，将\<hostInBrowser /> 元素添加到应用程序清单中 (\<projectname>.exe.manifest)。  
   
 ## <a name="see-also"></a>请参阅  
  [MSBuild](../msbuild/msbuild.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 调试器扩展性 |Microsoft 文档
+title: Visual Studio 调试器可扩展性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5bb01c093fda068dfbc7dfa705914a8bdef4d2b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fa2f858121e8486209518f348193e8a2bbee645a
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127065"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276463"
 ---
-# <a name="visual-studio-debugger-extensibility"></a>Visual Studio 调试器扩展性
-Visual Studio 包含一个完整交互式源代码调试器，为跟踪程序中的 bug 提供功能强大且易于使用的工具。 调试器具有完整的支持 Visual Basic、 C#、 C/c + + 和 JavaScript。 但是，对于[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，即从可用[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)，可以在相同的丰富功能的调试器支持其他编程语言。  
+# <a name="visual-studio-debugger-extensibility"></a>Visual Studio 调试器可扩展性
+Visual Studio 提供了完全交互式源代码调试器，跟踪的错误在程序中提供一个功能强大且易于使用的工具。 调试器具有全面的支持 Visual Basic、 C#、 C/c + + 和 JavaScript。 但是，对于[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，即从可用[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)，可以使用相同的丰富功能在调试器中支持其他编程语言。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器是常见的前端 （即，用户界面），接下来，特定于语言正在调试的调试组件。 对新语言，所有所需的支持通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器是创建必要的后端组件，例如调试引擎 (DE)。 这正是[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]传入。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器是常见的前端 （即，用户界面），接下来，特定于正在调试的语言的调试组件。 对于新语言，所有所需的支持通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器将创建必要的后端组件，如调试引擎 (DE)。 这一点是 where[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]传入。  
   
- [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]包括所有的完整参考[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]创建新 DE 所需的元素。 此外，还有示例和教程，可帮助你入门。  
+ [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]包括所有的完整参考资料[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]创建新部署所需的元素。 此外，还有示例和教程，可帮助您入门。  
   
- 具有调试支持的语言项目系统的端到端示例，请参阅[IronPython 示例](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
+ 具有调试支持的语言项目系统的完整示例，请参阅[IronPython 示例](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089)。  
   
- 下列各节描述如何使用扩展调试器[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
+ 以下部分介绍如何使用扩展调试器[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
  [入门](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)  
  描述什么[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试产品/服务和如何安装 SDK。  
   
  [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
- 记录 DE 自定义过程中，从断开 DE DE 准备你的程序。  
+ 记录 DE 自定义过程中，从为到分离 DE DE 准备您的程序。  
   
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
  说明是否必须编写的表达式计算器。  
   
  [选择调试引擎实施策略](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
- 讨论如何实现你 DE。  
+ 讨论如何实现您 DE。  
   
  [参考](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  文档[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试 API。  

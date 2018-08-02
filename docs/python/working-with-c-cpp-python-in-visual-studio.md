@@ -1,7 +1,7 @@
 ---
 title: 使用 C++ 和 Python
 description: 使用 Visual Studio 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
-ms.date: 04/03/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c83a0bb7a8132b6daf0961f7f9d72f8b98782776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fc885df4b85e89c85c366f033113678243fbfe0b
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979264"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847812"
 ---
 # <a name="creating-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -283,6 +283,8 @@ ms.locfileid: "31979264"
 
     [fast_tanh(x) for x in d] took 0.158 seconds
     ```
+
+    如果已禁用“启动但不调试”命令，请右键单击解决方案资源管理器中的 Python 项目，选择“设为启动项目”。
 
 1. 尝试增加 `COUNT` 变量，让差异变得更明显。 C++ 模块调试版本的运行速度慢于发布版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
 

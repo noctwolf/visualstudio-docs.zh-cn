@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dcd4052078a3a7327b0a48fca8812a2d5393917
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e9b7183c677971da7dba9335f0df3283d0743fc0
+ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34814939"
 ---
-# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测本机服务并收集详细计时数据
-本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测本机 (C/C++) 服务并收集详细计时数据。  
+# <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测本机服务并收集详细的计时数据
+本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测本机 (C/C++) 服务并收集详细的计时数据。  
   
 > [!NOTE]
 >  如果某服务在计算机启动之后无法重启（此类服务只能在操作系统启动时启动），则无法使用检测方法分析该服务。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
   
  若要结束分析会话，可关闭该服务，然后显式关闭探查器。  
   
-## <a name="starting-the-application-with-the-profiler"></a>用探查器启动应用程序  
+## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
   
 #### <a name="to-start-profiling-a-native-service"></a>开始分析本机服务  
   
@@ -55,8 +56,8 @@ ms.lasthandoff: 04/19/2018
   
     |选项|描述|  
     |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。|  
-    |[/crosssession](../profiling/crosssession.md)|启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话 ID 在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有 ASP.NET 工作进程的帐户的域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者位于 Windows 任务管理器的“进程”选项卡上的“用户名”列中。|  
+    |[/crosssession](../profiling/crosssession.md)|启用其他登录会话中的进程分析。 如果 ASP.NET 应用程序在其他会话中运行，则需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
     |[/waitstart](../profiling/waitstart.md)[**:**`Interval`]|指定探查器返回错误前，等待探查器初始化的秒数。 如果未指定 `Interval`，则探查器将无限期等待。 默认情况下，/start 将立即返回。|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|若要启动探查器而暂停数据收集，请将 **/globaloff** 选项添加到 **/start** 命令行。 使用 **/globalon** 可恢复分析。|  
     |[/counter](../profiling/counter.md) **:** `Config`|从 Config 中所指定的处理器性能计数器收集信息。计数器信息将添加到在每个分析事件中收集的数据中。|  
@@ -66,7 +67,7 @@ ms.lasthandoff: 04/19/2018
   
 5.  从服务控制管理器启动服务。  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭服务）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -79,7 +80,7 @@ ms.lasthandoff: 04/19/2018
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 (**/processon**) 或停止 (**/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|  
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|启动 (**/threadon**) 或停止 (**/threadoff**) 由线程 ID (`TID`) 指定的线程的数据收集。|  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，请停止正在运行受检测组件的服务，然后调用 VSPerfCmd[/shutdown](../profiling/shutdown.md) 选项来关闭探查器和分析数据文件。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

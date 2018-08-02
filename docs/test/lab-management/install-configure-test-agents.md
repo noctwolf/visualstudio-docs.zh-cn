@@ -1,6 +1,6 @@
 ---
-title: 为 Visual Studio 安装测试代理和测试控制器
-ms.date: 03/02/2018
+title: 安装测试代理和测试控制器
+ms.date: 07/06/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20570d0a2d0173ca2322cb6ab1e888c7335cb4c0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
+ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31972100"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39204201"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安装测试代理和测试控制器
 
@@ -26,17 +26,19 @@ ms.locfileid: "31972100"
 
 ## <a name="system-requirements"></a>系统要求
 
-| 项 | 惠? |
+下表显示了为 Visual Studio 2017 安装测试代理或测试控制器的系统要求：
+
+| 项 | 要求 |
 | ---- | ------------ |
-| **代理** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows XP Service Pack 3<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2，Service Pack 1 |
-| **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2012、Windows Server 2012 R2<br />Windows Server 2008 Release 2，Service Pack 1 |
+| **代理** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
+| **控制器** | Windows 10<br />Windows 8、Windows 8.1<br />Windows 7 Service Pack 1<br />Windows Server 2016 Standard 和 Datacenter<br />Windows Server 2012 R2 |
 | **.NET Framework** | .NET Framework 4.5 |
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安装测试控制器和测试代理
 
-可从 [visualstudio.com](https://www.visualstudio.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。滚动到页面底部，然后查找适用于 Visual Studio 2017 的代理。 选择“代理”或“控制器”，然后选择“下载”。 运行已下载的可执行文件，以安装测试代理或控制器。
+可从 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。 滚动到页面底部，然后查找适用于 Visual Studio 2017 的代理。 选择“代理”或“控制器”，然后选择“下载”。 运行已下载的可执行文件，以安装测试代理或控制器。
 
-可以从[早期下载](https://www.visualstudio.com/vs/older-downloads/)页中下载 Visual Studio 2015 和 Visual Studio 2013 的代理。
+可以从[早期下载](https://visualstudio.microsoft.com/vs/older-downloads/)页中下载 Visual Studio 2015 和 Visual Studio 2013 的代理。
 
 这些安装程序可用作 ISO 文件，便于在虚拟机上安装。
 

@@ -10,13 +10,14 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0a11ef12a4ca38c2973c01575b59ef35826bc4a8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f44ba213defef153acd2f5d1ef247bb093448263
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235212"
 ---
-# <a name="creating-visual-data-plots-with-r"></a>使用 R 创建可视数据图
+# <a name="create-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 
 绘图是数据科学家工作流的关键部分。 在针对 Visual Studio 的 R 工具 (RTVS) 中，所有绘图活动围绕一个或多个绘图窗口进行，这些窗口旨在提高此关键活动的生产效率。
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="plot-window-commands"></a>绘图窗口命令
 
-绘图窗口工具栏会保存适用的命令，可通过“R 工具”>“绘图”菜单使用其中大部分命令。
+绘图窗口工具栏会保存适用的命令，其中大部分命令可通过“R 工具” > “绘图”菜单使用。
 
 | Button | 命令 | 描述 | 
 | --- | --- | --- |
@@ -63,7 +64,7 @@ ms.lasthandoff: 04/19/2018
 
 由于数据科学家经常处理来自许多不同的数据集的多个绘图，所以通过使用 RTVS 可创建多个独立的绘图窗口。 然后可以根据需要在 Visual Studio 框架内或在该框架外排列这些窗口。 （请参阅[在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)，了解有关调整停靠和调整大小的常规信息。）
 
-可使用工具栏按钮或“R 工具”>“绘图”>“新建绘图窗口”创建新的绘图窗口。 新的绘图窗口会成为“活动”窗口，会在该窗口中呈现新绘图。 若要更改活动窗口，请切换到该窗口，然后选择“激活绘图窗口”工具栏按钮或使用“R 工具”>“绘图”>“激活绘图窗口”。
+可使用工具栏按钮或“R 工具” > “绘图” > “新建绘图窗口”创建新的绘图窗口。 新的绘图窗口会成为“活动”窗口，会在该窗口中呈现新绘图。 要更改活动窗口，请切换到该窗口，然后选择“激活绘图窗口”工具栏按钮或使用“R 工具” > “绘图” > “激活绘图窗口”。
 
 绘图也是独立的对象，这意味着可以使用鼠标拖放或使用右键单击上下文菜单和“编辑”菜单上的“复制”、“剪切”和“粘贴”命令，在绘图窗口间复制或移动绘图。
 
@@ -71,9 +72,9 @@ ms.lasthandoff: 04/19/2018
 
 ## <a name="plot-history"></a>绘图历史记录
 
-绘图命令保留在每个窗口的绘图历史记录中，确保保留了会话中的所有绘图。 若要浏览历史记录，请使用绘图窗口工具栏上的箭头按钮，或按 Ctrl+Alt+F11 和 Ctrl+Alt+F12。 还可使用工具栏按钮或“R 工具”>“绘图”菜单命令，再次从窗口中删除单个绘图或清除所有绘图。
+绘图命令保留在每个窗口的绘图历史记录中，确保保留了会话中的所有绘图。 要浏览历史记录，请使用绘图窗口工具栏上的箭头按钮，或按 Ctrl+Alt+F11 和 Ctrl+Alt+F12。 还可使用工具栏按钮或“R 工具” > “绘图”菜单命令，再次从窗口中删除单个绘图或清除所有绘图。
 
-若要查看整个绘图集合，请使用工具栏按钮或“R 工具”>“绘图”>“绘图历史窗口”打开“绘图历史记录窗口”。
+要查看整个绘图集合，请使用工具栏按钮或“R 工具” > “绘图” > “绘图历史窗口”打开“绘图历史记录窗口”。
 历史记录会提供已在该窗口中显示的绘图缩略图列表，并且按不同绘图窗口（或设备）进行分组。 使用工具栏上的“缩放”按钮更改缩略图的大小。
 
 ![绘图历史记录窗口](media/plotting-plot-history-window.png)
@@ -82,7 +83,7 @@ ms.lasthandoff: 04/19/2018
 
 所有窗口的绘图历史记录的生命周期取决于交互 R 会话的生命周期。 如果重置 R 会话，或者退出并重启 Visual Studio，会重置绘图历史记录。
 
-## <a name="programmatically-manipulating-plot-windows"></a>以编程方式操作绘图窗口
+## <a name="programmatically-manipulate-plot-windows"></a>以编程方式操作绘图窗口
 
 可通过编程方式用 R 代码操作绘图窗口，使用设备编号识别特定的绘图窗口。 
 

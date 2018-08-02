@@ -1,7 +1,7 @@
 ---
 title: 使用 Python 教程 - 第 4 步：调试
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 4 步，介绍了如何在调试器中运行 Python 代码。
-ms.date: 03/08/2018
+ms.date: 06/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8f354c9209a7180db616a7ccc622df2809cfebe9
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: a164c68a8a6f4392d91c522c9cb4f9d225e8820a
+ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32031977"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37057812"
 ---
-# <a name="step-4-running-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
+# <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
 **上一步：[使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)**
 
@@ -106,7 +106,7 @@ ms.locfileid: "32031977"
 > [!div class="nextstepaction"]
 > [在 Python 环境中安装程序包](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-### <a name="going-deeper"></a>深入了解
+### <a name="go-deeper"></a>深入了解
 
 - [调试](debugging-python-in-visual-studio.md)
 - [在 Visual Studio 中调试](../debugger/debugger-feature-tour.md)提供了 Visual Studio 调试功能的完整文档。

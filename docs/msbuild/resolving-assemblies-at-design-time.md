@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1df70002bf2d69e6d8d41abab5007209b5caf3ef
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: ad24bcf461dab05444f0e26ffd4e0c826f3f2bed
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574463"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39153457"
 ---
-# <a name="resolving-assemblies-at-design-time"></a>在设计时解析程序集
-当通过“添加引用”对话框的“.NET”选项卡添加对程序集的引用时，引用将指向一个中间引用程序集；所谓中间引用程序集，是指包含所有类型和签名信息但不一定包含任何代码的程序集。 .NET 选项卡列出 .NET Framework 中运行时程序集对应的引用程序集。 此外，它还列出第三方使用的注册 AssemblyFoldersEx 文件夹中运行时程序集所对应的的引用程序集。  
+# <a name="resolve-assemblies-at-design-time"></a>在设计时解析程序集
+当通过“添加引用”对话框的“.NET”选项卡添加对程序集的引用时，引用将指向一个中间引用程序集；所谓中间引用程序集，是指包含所有类型和签名信息但不一定包含任何代码的程序集。 “.NET”选项卡列出 .NET Framework 中运行时程序集对应的引用程序集。 此外，它还列出第三方使用的注册 AssemblyFoldersEx 文件夹中运行时程序集所对应的引用程序集。  
   
 ## <a name="multi-targeting"></a>多目标  
- 通过 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]，可将在公共语言运行时 (CLR) 版本 2.0 或版本 4 上运行的多个 .NET Framework 版本作为目标。 这包括 .NET Framework 2.0、3.0、3.5、4、4.5 和 4.5.1 版，以及 Silverlight 1.0、2.0 和 3.0 版。 如果发行了基于 CLR 版本 2.0 或版本 4 的 .NET Framework 新版本，则可使用目标包安装 Framework，且 Framework 会在 Visual Studio 中作为目标自动显示。  
+ 通过 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]，可将在公共语言运行时 (CLR) 版本 2.0 或版本 4 上运行的多个 .NET Framework 版本作为目标。 这些版本包括包括 .NET Framework 2.0、3.0、3.5、4、4.5 和 4.5.1 版，以及 Silverlight 1.0、2.0 和 3.0 版。 如果发行了基于 CLR 版本 2.0 或版本 4 的 .NET Framework 新版本，则可使用目标包安装 Framework，且 Framework 会在 Visual Studio 中作为目标自动显示。  
   
 ## <a name="how-type-resolution-works"></a>类型解析的工作原理  
  在运行时，CLR 通过查找 GAC、bin 目录和任何探测路径来解析程序集中的类型。 这由融合加载程序处理。 但是，融合加载程序如何知道其要查找的内容？ 这取决于设计时（生成应用程序时）创建的解决方案。  
@@ -36,7 +36,7 @@ ms.locfileid: "31574463"
   
  如果引用程序集不可用，则生成系统会使用运行时程序集解析程序集类型。 由于 GAC 中的运行时程序集不是以次要版本号区分，因此可能会对错误的程序集生成解决方案。 有可能会发生这种情况。例如，虽然面向版本 3.0，但却引用 .NET Framework 版本 3.5 中引入的新方法。 虽然生成会成功且应用程序会在生成计算机上运行，但应用程序在部署到未安装版本 3.5 的计算机上时会失败。  
   
- .NET Framework SDK 现在附带的目标包中具有该版本 Framework 中所有运行时程序集的列表，即再分发 (redist) 列表。 因此，生成系统不可能针对错误版本的程序集解析类型。  
+ .NET Framework SDK 现在附带的目标包中具有该版本 Framework 中所有运行时程序集的列表，即再分发 (redist) 列表，因此生成系统无法解析针对错误版本程序集的类型。  
   
 ## <a name="see-also"></a>请参阅  
  [高级概念](../msbuild/msbuild-advanced-concepts.md)

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9ccb3788246e359183cff889f0996b4e74aecb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: a53bbac8f1d4549b49183d0e90b2f33c925654d6
+ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31577478"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37945295"
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 使用输入项填充项集合。 这会使项从一个列表复制到另一个列表。  
@@ -44,12 +44,12 @@ ms.locfileid: "31577478"
 |`PreserveExistingMetadata`|可选 `Boolean` 参数。<br /><br /> 如果为 `True`，则仅应用其他元数据（如果尚不存在）。|  
   
 ## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下代码示例会从项集合 `MySourceItems` 创建一个名为 `MySourceItemsWithMetadata` 的新项集合。 `CreateItem` 任务会使用 `MySourceItems` 项中的项填充新的项集合。 然后它会将一个名为 `MyMetadata` 的其他元数据条目（值为 `Hello`）添加到新集合中的每个项。  
   
- 任务执行后，`MySourceItemsWithMetadata` 项集合包含项 `file1.resx` 和 `file2.resx`，这两者都具有 `MyMetadata` 的元数据条目。 `MySourceItems` 项集合保持不变。  
+ 任务执行后，`MySourceItemsWithMetadata` 项集合包含项 file1.resx 和 file2.resx，这两者都具有 `MyMetadata` 的元数据条目。 `MySourceItems` 项集合保持不变。  
   
 ```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -76,7 +76,7 @@ ms.locfileid: "31577478"
   
 |项集合|内容|  
 |---------------------|--------------|  
-|`MySourceItemsWithMetadata`|`file1.resx` (`MyMetadata="Hello"`)<br /><br /> `file2.resx` (`MyMetadata="Hello"`)|  
+|`MySourceItemsWithMetadata`|*file1.resx* (`MyMetadata="Hello"`)<br /><br /> *file2.resx* (`MyMetadata="Hello"`)|  
   
 ## <a name="see-also"></a>请参阅  
  [任务参考](../msbuild/msbuild-task-reference.md)   

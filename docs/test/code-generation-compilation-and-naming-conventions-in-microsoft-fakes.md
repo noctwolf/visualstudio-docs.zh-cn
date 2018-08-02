@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 50b066020b04ce39dffa5c7267b89b889cf986e9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976379"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282101"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -128,7 +128,7 @@ Fakes 代码生成器为对生成的 Fakes 程序集可见的类型生成填充�
         PublicKey=<Test_assembly_public_key>)]
     ```
 
-如果已填充的程序集具有强名称，则 Fakes 框架将自动对生成的 Fakes 程序集进行强签名。 你需要对测试程序集进行强签名。 请参阅[具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)。
+如果已填充的程序集具有强名称，则 Fakes 框架自动对生成的 Fakes 程序集进行强签名。 你需要对测试程序集进行强签名。 请参阅[具有强名称的程序集](/dotnet/framework/app-domains/strong-named-assemblies)。
 
 Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，你可以将此代码片段用作起点以将 Fakes 程序集的“InternalsVisibleTo”属性添加到已填充的程序集代码中。
 
@@ -136,7 +136,7 @@ Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-通过指定 **.snk** 文件（包含作为 **.fakes** 文件的 `Fakes`\\`Compilation` 元素中 `KeyFile` 属性值的替换密钥）的完整路径，可以为 Fakes 程序集指定不同的公钥，比如为已填充的程序集创建的密钥。 例如:
+通过指定 *.snk* 文件（包含作为 *.fakes* 文件的 `Fakes`\\`Compilation` 元素中 `KeyFile` 属性值的替换密钥）的完整路径，可以为 Fakes 程序集指定不同的公钥，比如为已填充的程序集创建的密钥。 例如:
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -145,7 +145,7 @@ Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，�
 </Fakes>
 ```
 
-然后需要使用备用 **.snk** 文件的公钥作为已填充程序集代码中 Fakes 程序集的 InternalVisibleTo 属性的第二个参数：
+然后需要使用备用 *.snk* 文件的公钥作为已填充程序集代码中 Fakes 程序集的 InternalVisibleTo 属性的第二个参数：
 
 ```csharp
 // FileSystem\AssemblyInfo.cs

@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 753cf038cf6d8129aa9a4691b0f88c046aadf640
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882b2511c547837466f45578031c86e6b0df9d74
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750904"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36234980"
 ---
-# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突 
+# <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试中的阈值规则冲突
 
 阈值规则与特定的性能计数器关联，存在冲突意味着性能计数器超过或低于设定的值。 运行负载测试时，可以依据之前设置的阈值规则分析所发生的冲突。
 
-如果发生任何冲突，则将在负载测试分析器的状态栏上显示“阈值冲突”超链接，并指明发生的冲突数量。 选择超链接将显示阈值冲突表。 还可以在“计数器”窗口和关系图上查看阈值冲突。
+如果发生任何冲突，负载测试分析器的状态栏上将显示“阈值冲突”超链接，并指明发生的冲突数量。 选择超链接将显示阈值冲突表。 还可以在“计数器”窗口和关系图上查看阈值冲突。
 
 ## <a name="view-threshold-violations-in-the-table"></a>在表格中查看阈值冲突
 

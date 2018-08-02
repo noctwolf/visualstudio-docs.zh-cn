@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 05/18/2018
+ms.date: 07/03/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,20 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f975b726b8be76af1e3daeff59a06a18988644ab
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ce402b0df6521ac55942ded9615b6962640193c1
+ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752035"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37847760"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
 Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 这些模板包括 `requirements.txt` 文件来声明必需的依赖项。 基于其中一个模板创建项目时，Visual Studio 会提示你安装这些包（请参阅本文后面的[安装项目要求](#installing-project-requirements)）。
 
 也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到你用于项目的环境中（请参阅[管理 Python 环境](managing-python-environments-in-visual-studio.md)）。
+
+有关将 Python Web 应用部署到 Azure 的信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 ## <a name="using-a-project-template"></a>使用项目模板
 

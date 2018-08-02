@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fedc9aebb4d57e258370179bbf820abdc8978940
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976427"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179825"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 
@@ -54,7 +54,7 @@ ms.locfileid: "31976427"
 
 2.  打开包含 LoadTest1.loadtest 的 ColorWebApp 解决方案。 此负载测试结果是通过执行本主题开头先决条件部分列出的三个演练中的步骤得到的。
 
-     本演练中的剩余步骤假定有一个名为 ColorWebApp 的 Web 应用程序、一个名为 ColorWebAppTest.webtest 的 Web 性能测试和一个名为 LoadTest1.loadtest 的负载测试。
+     本演练中的剩余步骤假定有一个名为“ColorWebApp”的 Web 应用程序、一个名为“ColorWebAppTest.webtest”的 Web 性能测试和一个名为“LoadTest1.loadtest”的负载测试。
 
 ## <a name="run-the-load-test"></a>运行负载测试
  运行负载测试以收集虚拟用户活动数据。

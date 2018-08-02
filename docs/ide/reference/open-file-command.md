@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d238370586a9256d91f89f06fddbe3c58abc27e8
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 4be55cb2108b24c7a8f912844b719e6aa3135a06
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703816"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37923990"
 ---
 # <a name="open-file-command"></a>“打开文件”命令
+
 打开现有文件，并允许指定编辑器。
 
 ## <a name="syntax"></a>语法
@@ -33,28 +34,32 @@ File.OpenFile filename [/e:editorname]
 ```
 
 ## <a name="arguments"></a>自变量
- `filename`
 
- 必须的。 要打开的文件的完整或部分路径和文件名。 包含空格的路径必须引在引号内。
+`filename`
+
+必须的。 要打开的文件的完整或部分路径和文件名。 包含空格的路径必须引在引号内。
 
 ## <a name="switches"></a>开关
- /e:`editorname`
 
- 可选。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
+/e:`editorname`
 
- /e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。
+可选。 将在其中打开文件的编辑器的名称。 如果指定该参数，但未提供编辑器名称，则会出现“打开方式”对话框。
 
- 例如，若要在源代码编辑器中打开文件，对于 /e:`editorname` 参数，应输入以下内容。
+/e:`editorname` 参数语法使用“打开方式”对话框中显示的编辑器名称，并用引号括起来。
+
+例如，若要在源代码编辑器中打开文件，对于 /e:`editorname` 参数，应输入以下内容。
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="remarks"></a>备注
- 输入路径时，自动补全功能会尝试查找正确的路径和文件名。
+
+输入路径时，自动补全功能会尝试查找正确的路径和文件名。
 
 ## <a name="example"></a>示例
- 此示例在源代码编辑器中打开样式文件“Test1.css”。
+
+此示例在源代码编辑器中打开样式文件“Test1.css”。
 
 ```cmd
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"

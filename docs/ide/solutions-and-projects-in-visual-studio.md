@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe7db915f2953bf99b9805700e1236d3d79a194a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7368778928384f50e96bfd8c5f3f1e107e6b411d
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747621"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089654"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
@@ -53,7 +53,12 @@ ms.locfileid: "34747621"
 
 项目包含在解决方案中。 解决方案可能包含一个或多个相关项目，以及生成信息、Visual Studio 窗口设置和不与特定项目关联的任何杂项文件。 解决方案由格式唯一的文本文件（扩展名 .sln）描述；不应对其进行手动编辑。
 
-解决方案包含关联的 .suo 文件，该文件为处理过项目的每个用户存储设置、首选项和配置信息。
+Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案设置：
+
+|扩展名|name|描述|
+|---------------|----------|-----------------|
+|.sln|Visual Studio 解决方案|将项目、项目项和解决方案项组织到解决方案中。|
+|.suo|解决方案用户选项|存储用户级别设置和自定义项，如断点。|
 
 ## <a name="create-new-projects"></a>创建新项目
 
@@ -63,7 +68,7 @@ ms.locfileid: "34747621"
 
 ## <a name="manage-projects-in-solution-explorer"></a>在解决方案资源管理器中管理项目
 
-创建新项目之后，可使用“解决方案资源管理器”查看和管理项目和解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的解决方案资源管理器。
+创建新项目之后，可使用“解决方案资源管理器”查看和管理项目和解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的解决方案资源管理器：
 
 ![“解决方案资源管理器”](../ide/media/vs2015_solution_explorer.png)
 

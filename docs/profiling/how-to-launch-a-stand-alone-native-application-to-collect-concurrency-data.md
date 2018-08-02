@@ -10,13 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45115b03fe62ecd78815861d6e82f1a0e6b98449
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 27c2969286d61738ed059e3973b09843bebc5153
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39277709"
 ---
-# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将独立本机应用程序与探查器一起启动以收集并发数据
+# <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行通过探查器启动独立本机应用程序以收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。  
   
  分析会话包括以下几部分：  
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/19/2018
 > [!NOTE]
 >  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要在命令提示符下使用探查器，必须将工具路径添加到**命令提示符**窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
-## <a name="starting-the-application-with-the-profiler"></a>用探查器启动应用程序  
+## <a name="start-the-application-with-the-profiler"></a>用探查器启动应用程序  
  若要使用探查器来启动目标应用程序，请使用 [VSPerfCmd.exe](../profiling/vsperfcmd.md)**/start** 和 **/launch** 选项来初始化探查器并启动应用程序。 可以指定 **/start** 和 **/launch** 及其各自的选项。 还可以添加 **/globaloff** 选项，以在目标应用程序启动时暂停数据收集。 然后可使用 **/globalon** 开始收集数据。  
   
 #### <a name="to-start-an-application-with-the-profiler"></a>用探查器启动应用程序  
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/19/2018
     |[/console](../profiling/console.md)|在另一个窗口中启动目标命令行应用程序。|  
     |[/targetclr](../profiling/targetclr.md) **:** `CLRVersion`|指定应用程序加载公共语言运行时 (CLR) 的多个版本时要分析的 CLR 的版本。|  
   
-## <a name="controlling-data-collection"></a>控制数据收集  
+## <a name="control-data-collection"></a>控制数据收集  
  目标应用程序运行时，可通过使用 VSPerfCmd.exe 选项开始和停止向文件写入数据，从而控制数据收集。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。  
   
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集  
@@ -76,7 +77,7 @@ ms.lasthandoff: 04/19/2018
   
 -   还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选探查器报告和数据视图中的数据。  
   
-## <a name="ending-the-profiling-session"></a>结束分析会话  
+## <a name="end-the-profiling-session"></a>结束分析会话  
  若要结束分析会话，探查器不得再收集数据。 可以通过关闭所分析的应用程序或调用 **VSPerfCmd /detach** 选项来停止收集并发数据。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。  
   
 #### <a name="to-end-a-profiling-session"></a>结束分析会话  

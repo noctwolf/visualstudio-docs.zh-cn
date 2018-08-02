@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 89d09a8b01dc4179f3b9de4cbdbf1905846f7002
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691854"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302921"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>开发人员测试工具、方案和功能
 
@@ -31,7 +31,7 @@ ms.locfileid: "34691854"
 ![操作中的 IntelliTest](media/devtest-intellitest.png)
 
 * [Visual Studio 的 IntelliTest 简介](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest - One Test to rule them all ](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)（IntelliTest - 一个测试掌控所有情况）
+* [IntelliTest – One test to rule them all](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)（IntelliTest - 一个测试掌控所有情况）
 * [IntelliTest 视频](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [IntelliTest 入门](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 参考手册](intellitest-manual/index.md)
@@ -84,6 +84,6 @@ Visual Studio 也可扩展，并支持第三方单元测试适配器，如 NUnit
 ## <a name="see-also"></a>请参阅
 
 * [单元测试入门](getting-started-with-unit-testing.md)
-* [Speed up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)（在 Team Foundation Server 中加快单元测试执行）
+* [Speed up unit test execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)（在 Team Foundation Server 中加快单元测试执行）
 * [并行和区分上下文的单元测试执行](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [使用 Visual Studio（实验室）进行单元测试、代码覆盖率分析和代码克隆分析](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

@@ -1,6 +1,6 @@
 ---
-title: 选项，文本编辑器，C/C++，格式
-ms.date: 11/04/2016
+title: 选项、文本编辑器、C/C++ 和格式
+ms.date: 04/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -11,82 +11,47 @@ dev_langs:
 - CPP
 helpviewer_keywords:
 - Text Editor Options dialog box, formatting
+- ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 913413b4178a087c524ef26173fcbcc8c1d8b09b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee7fab1564b39b29ae288e96c7aa77e0da21e88c
+ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946060"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36235136"
 ---
-# <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式
-允许你在使用 C 或 C++ 编程时更改代码编辑器的默认行为。
+# <a name="options-text-editor-cc-formatting"></a>选项、文本编辑器、C/C++ 和格式
+
+使用 C 或 C++ 进行编程时，请使用以下属性页更改代码编辑器的默认行为。
+
+[C++ Formatting 属性页](media/cpp-formatting.png)
 
  若要访问此页，请在“选项”对话框的左窗格中，展开“文本编辑器”，再展开“C/C++”，然后单击“格式设置”。
 
 > [!NOTE]
 > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
+## <a name="general-page"></a>常规页
 
-## <a name="cc-options"></a>C/C++ 选项
- **启用自动快速信息工具提示**
+此页面有一些选项，可用于在键入语句和块时设置其格式。
 
- 启用或禁用快速信息 IntelliSense 功能。
+Visual Studio 2017 版本 15.7 及更高版本：此页面还包含用于配置 [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) 版本 5.0 支持的选项。 ClangFormat 是一款实用工具，能够根据 .clang-format 或 _clang-format 文件中可配置的一组规则轻松设置代码样式和格式。
 
-## <a name="inactive-code"></a>非活动代码
- **显示非活动代码块**
+### <a name="configuring-clangformat-options"></a>配置 ClangFormat 选项
 
- 由于 `#ifdef` 声明而处于不活动状态的代码以颜色区分，帮助你识别此类代码。
+在 Visual Studio 2017 版本 15.7 及更高版本中，默认启用 ClangFormat 支持。 可选择对所有项目应用下述一种常见的格式约定：LLVM、Google、Chromium、Mozilla 或 Webkit。 此外，还可创建自定义格式定义 .clang-format 或 _clang-format 文件。 如果项目文件夹中存在此类文件，Visual Studio 将使用它来设置该文件夹及其子文件夹中所有源代码文件的格式。 
 
- **禁用非活动代码透明**
+当你键入内容时，Visual Studio 默认在背景应用格式中运行 clangformat.exe。 此外，还可指定仅针对“设置文档格式(Ctrl+K, Ctrl+D)”或“设置选定内容格式(Ctrl+K, Ctrl+F)”这两个手动调用的格式命令运行它。
 
- 可以通过使用颜色（而非透明度）来识别非活动代码。
 
- **非活动代码透明度百分比**
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>“缩进”、“新行”和“间距换行”页面
 
- 可以自定义非活动代码块的不透明度。
-
-## <a name="indentation"></a>缩进
- **缩进大括号**
-
- 可以配置在你开始一个代码块（例如函数或 `for` 循环）之后按下 Enter 键时大括号的对齐方式。 大括号可以与该代码块的第一个字符对齐或缩进。
-
- **遇 Tab 时自动缩进**
-
- 可以配置当你按下 Tab 键时当前代码执行的操作。 缩进行或插入制表符。
-
-## <a name="miscellaneous"></a>杂项
- **枚举“任务列表”窗口中的注释**
-
- 编辑器可以在打开的源文件中扫描注释中的预设词。 它在“任务列表”窗口中为找到的任何关键字创建一个条目。
-
- **突出显示匹配的标记**
-
- 当光标位于大括号旁边时，编辑器可以突出显示匹配的大括号，以便你更容易看到包含的代码。
-
-## <a name="outlining"></a>大纲显示
- **打开文件时进入大纲模式**
-
- 在文本编辑器中打开一个文件时，可以启用大纲显示功能。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。 选择此选项后，打开文件时将启用大纲显示功能。
-
- **#Pragma 区域块的自动大纲显示**
-
- 选择此选项时，将对[杂注指令](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword)启用自动大纲显示。 这使你可以在大纲模式中展开或折叠杂注区域块。
-
- **语句块的自动大纲显示**
-
- 选择此选项时，将对下列语句构造启用自动大纲显示：
-
--   [if-else](/dotnet/csharp/language-reference/keywords/if-else)
-
--   [switch 语句 (C++)](/cpp/cpp/switch-statement-cpp)
-
--   [While 语句 (C++)](/cpp/cpp/while-statement-cpp)
+这些页面支持各种格式自定义；但如果启用了 ClangFormat，则忽略这些页面。
 
 ## <a name="see-also"></a>请参阅
 

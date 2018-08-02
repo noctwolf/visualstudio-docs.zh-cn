@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9ed78375438dd699959ce40a3427692ae1649af
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917102"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39081304"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>在游戏或应用中使用三维资产
 
@@ -36,9 +36,9 @@ ms.locfileid: "31917102"
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>将生成自定义添加到你的项目
 
-1.  在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“生成依赖项”和“生成自定义”。 随即显示“Visual C++ 生成自定义文件”对话框。
+1.  在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“生成依赖项” > “生成自定义”。 随即显示“Visual C++ 生成自定义文件”对话框。
 
-2.  在“可用的生成自定义文件”下，选中你希望在项目中使用的资产类型对应的复选框，如此表中所述：
+2.  在“可用的生成自定义文件”下，选中希望在项目中使用的资产类型对应的复选框，如下表中所述：
 
     |资产类型|生成自定义名称|
     |----------------|------------------------------|
@@ -55,7 +55,7 @@ ms.locfileid: "31917102"
 
 1.  在“解决方案资源管理器”中，在项目中打开资产的快捷菜单，然后选择“属性”。 随即显示资产的“属性页”对话框。
 
-2.  请确保将“配置”和“平台”属性设置为你希望更改应用到的值。
+2.  请确保将“配置”和“平台”属性设置为你希望更改应用的值。
 
 3.  在“配置属性”下，选择“常规”，然后在“常规”下的属性网格中，将“项目类型”属性设置为相应的内容管道项目类型。 例如，对于图像或纹理文件，请选择“图像内容管道”。
 
@@ -68,9 +68,9 @@ ms.locfileid: "31917102"
 
 |项目类型|源文件类型|输出文件格式|
 |---------------|-----------------------|------------------------|
-|图像内容管道|可迁移网络图形 (.png)<br /><br /> JPEG（.jpg、.jpeg、.jpe、.jfif）<br /><br /> 直接绘画表面 (.dds)<br /><br /> 图形交换格式 (.gif)<br /><br /> 位图（.bmp、.dib）<br /><br /> 标记图像文件格式（.tif、.tiff）<br /><br /> Targa (.tga)|直接绘画表面 (.dds)|
+|图像内容管道|可移植网络图形 (.png)<br /><br /> JPEG（.jpg、.jpeg、.jpe、.jfif）<br /><br /> 直接绘画表面 (.dds)<br /><br /> 图形交换格式 (.gif)<br /><br /> 位图（.bmp、.dib）<br /><br /> 标记图像文件格式（.tif、.tiff）<br /><br /> Targa (.tga)|直接绘画表面 (.dds)|
 |网格内容管道|Autodesk FBX 交换文件 (.fbx)<br /><br /> Collada DAE 文件 (.dae)<br /><br /> Wavefront OBJ 文件 (.obj)|三维网格文件 (.cmo)|
-|着色器内容管道|视觉着色器图 (.dgsl)|编译着色器输出 (.cso)|
+|着色器内容管道|视觉对象着色器图 (.dgsl)|编译着色器输出 (.cso)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>配置资产内容管道属性
 
@@ -145,7 +145,7 @@ struct PixelShaderInput
 
 根据你在着色器中使用的着色器设计器节点，你可能还必须提供采用遵循以下定义的格式的其他数据：
 
-```
+```hlsl
 Texture2D Texture1 : register( t0 );
 Texture2D Texture2 : register( t1 );
 Texture2D Texture3 : register( t2 );
@@ -208,8 +208,8 @@ cbuffer MiscVars : register(b3)
 
 |标题|描述|
 |-----------|-----------------|
-|[如何：导出包含 Mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用“图像内容管道”导出包含预计算 mipmap 的纹理。|
-|[如何：导出包含自左乘的 Alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用“图像内容管道”导出包含预乘 alpha 值的纹理。|
-|[如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用“图像内容管道”导出可在 Direct2D 或 JavaScript 应用中使用的纹理。|
+|[如何：导出包含 mipmap 的纹理](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用“图像内容管道”导出包含预计算 mipmap 的纹理。|
+|[如何：导出包含自左乘的 alpha 的纹理](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用“图像内容管道”导出包含预乘 alpha 值的纹理。|
+|[如何：导出纹理以用于 Direct2D 或 Javascipt 应用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|描述如何使用“图像内容管道”导出可在 Direct2D 或 JavaScript 应用中使用的纹理。|
 |[处理游戏和应用的三维资产](../designers/working-with-3-d-assets-for-games-and-apps.md)|描述 Visual Studio 提供的用于创建和操作三维资产（包括纹理和图像、三维模型和着色器）的编辑工具。|
 |[如何：导出着色器](../designers/how-to-export-a-shader.md)|描述如何从着色器设计器中导出着色器。|

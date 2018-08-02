@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da69a99e00c84514b51c958215baf6a87e498f17
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d521dbe0f72ccc5622da37495641349a9ec24a8a
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31578817"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077450"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  

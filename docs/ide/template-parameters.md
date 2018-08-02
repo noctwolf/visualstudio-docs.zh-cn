@@ -12,12 +12,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: abac68ff371040a7f121a885065c8c3eaf9af8ff
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: 4c76eaf68f63b4f3b8a5713d0b206b395ee7c9f1
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32066529"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39178629"
 ---
 # <a name="template-parameters"></a>模板参数
 
@@ -64,7 +64,7 @@ ms.locfileid: "32066529"
 |SpecificSolutionName|解决方案的名称。 在选中“创建解决方案目录”时，`SpecificSolutionName` 具有解决方案名称。 在未选中“创建解决方案目录”时，`SpecificSolutionName` 为空。|
 |userdomain|当前的用户域。|
 |username|当前的用户名称。|
-|webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，此模板参数解析为 Web 服务器的根目录。|
+|webnamespace|当前网站的名称。 此参数在 Web 窗体模板中用于保证类名是唯一的。 如果网站在 Web 服务器的根目录下，则此模板参数解析为 Web 服务器的根目录。|
 |年|以 YYYY 格式表示的当前年份。|
 
 > [!NOTE]
@@ -121,3 +121,4 @@ namespace $safeprojectname$
 
 - [自定义模板](../ide/customizing-project-and-item-templates.md)
 - [如何：创建项目模板](../ide/how-to-create-project-templates.md)
+- [模板架构引用](../extensibility/visual-studio-template-schema-reference.md)

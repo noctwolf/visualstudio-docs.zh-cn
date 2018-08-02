@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dd15e739b08ef32fa74853fd1927936e202ad61
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 73f995fa0aa87d434f9cd7f19d751045c4081a95
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237414"
 ---
 # <a name="measure-mode-onoff"></a>打开/关闭度量模式
 通过使用此工具，可以精确地测量时间线中的时间长度。 若要启用度量模式，请单击“度量”按钮（它具有一个标尺图标），然后在时间线中拖动。 注意在拖动时，指针下面的区域会用黄色突出显示，度量的时间显示在工具栏中该按钮的右侧。 拖动时动态计算此值，以便能够立即看到特定事件占用的时间。 释放鼠标按钮后，时间值保持可见。  
@@ -26,6 +27,6 @@ ms.lasthandoff: 04/19/2018
  可以重复执行度量过程，但只显示最新的度量操作。 再次单击“度量”按钮即可关闭度量模式。  
   
 ## <a name="see-also"></a>请参阅  
- [管理色条](../profiling/manage-channels.md)   
+ [管理通道](../profiling/manage-channels.md)   
  [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)   
  [线程视图](../profiling/threads-view-parallel-performance.md)

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: b409e3faa44b19cf0018e770915c8a3868f9ead4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5be318dd520cf9d7b5942200f635fa3f726634fc
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979407"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117396"
 ---
 # <a name="unit-testing-visual-c-code"></a>对 Visual C# 代码进行单元测试
 
@@ -26,7 +26,7 @@ ms.locfileid: "31979407"
 
 ## <a name="create-the-solution-and-the-unit-test-project"></a>创建解决方案和单元测试项目
 
-1. 在“文件”菜单上，选择“新建” > “项目...”。
+1. 在“文件”菜单上，选择“新建” > “项目”。
 
 2. 在“新建项目”对话框中，依次展开“已安装” > “Visual C#”，然后选择“Windows 通用”。 然后，从项目模板列表中选择“空白应用”。
 
@@ -116,7 +116,7 @@ ms.locfileid: "31979407"
 
 1. 将对 Maths 应用程序的引用添加到 RooterTests 项目。
 
-    1. 在“解决方案资源管理器”中，依次选择“RooterTests”项目和快捷菜单中的“添加引用...”。
+    1. 在解决方案资源管理器中，依次选择“RooterTests”项目和快捷菜单中的“添加引用”。
 
     2. 在“添加引用 - RooterTests”对话框中，展开“解决方案”，然后选择“项目”。 然后，选择“Maths”项。
 

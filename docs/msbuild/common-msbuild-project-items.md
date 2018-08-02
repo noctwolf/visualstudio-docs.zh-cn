@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46ea8c1ffd52805be4f93fb59c2831f5f0fe610c
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 900241a25fabc259fb19ffa2b75f2fa12ad6e517
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31574254"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152550"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。  
   
-## <a name="common-items"></a>通用项  
+## <a name="common-items"></a>常用项  
  以下是所有通用项目项的列表。  
   
 ### <a name="reference"></a>参考  
@@ -78,6 +78,7 @@ ms.locfileid: "31574254"
 |name|可选的字符串。 引用的显示名称。|  
 |项目|可选的字符串。 引用的 GUID，形式为 {12345678-1234-1234-1234-1234567891234}。|  
 |Package|可选的字符串。 所引用的项目文件的路径。|  
+|ReferenceOutputAssembly|可选的布尔值。 如果设置为 `false`，则不包括引用项目的输出作为此项目的[引用](#Reference)，但仍可确保在此项目之前生成其他项目。 默认为 `true`。|
   
 ### <a name="compile"></a>Compile  
  表示编译器的源文件。  

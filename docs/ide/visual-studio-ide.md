@@ -13,78 +13,96 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7667cac2a26a3e98d2e92dfeb13cee36d870e9
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 38491757da5010d015553f1d3c562e27914b28a9
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34691155"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078974"
 ---
-# <a name="visual-studio-ide-overview"></a>Visual Studio IDE 概述
+# <a name="visual-studio-overview"></a>Visual Studio 概述
 
-Visual Studio 交互式开发环境 (IDE) 是一种创新启动板，可用于查看和编辑代码，并调试、生成和发布应用。
+Visual Studio 交互式开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 交互式开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
 Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。
 
-本文主要介绍用于 Windows 的 Visual Studio 2017。 本文介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 IntelliSense 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
+本文主要介绍用于 Windows 的 Visual Studio 2017。 本文介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
-首先，请[下载 Visual Studio 2017](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
+首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
 
-通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。 快速入门主题（如 [Visual Studio 中的 C++ 入门](getting-started-with-cpp-in-visual-studio.md)）包含安装其他工作负载的说明。
+通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 
-![Visual Studio 安装程序](../ide/media/overview-net-core-workload.png)
+![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/dotnet-core-cross-platform-workload.png)
 
-首次启动 Visual Studio 时，可选择使用 Microsoft 帐户或者单位或学校帐户登录。
+首次启动 Visual Studio 时，可选择使用 Microsoft 帐户或者工作或学校帐户[登录](signing-in-to-visual-studio.md)。
 
 ## <a name="tour-of-the-ide"></a>IDE 教程
 
-为了向你提供有关 Visual Studio 的高级直观概览，下图显示了在 Visual Studio 中打开的一个项目，以及你最有可能用到的几个关键工具窗口：
+为了向你提供有关 Visual Studio 的高级直观概览，下图显示了在 Visual Studio 中打开的一个项目，以及将可能用到的几个关键工具窗口：
 
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
 
-- [解决方案资源管理器](../ide/solutions-and-projects-in-visual-studio.md)可让你查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为解决方案和项目，从而帮助整理代码。
+- 可通过[解决方案资源管理器](../ide/solutions-and-projects-in-visual-studio.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](quickstart-projects-solutions.md)，从而帮助整理代码。
 
-- [编辑器](../ide/writing-code-in-the-code-and-text-editor.md)窗口显示代码，可通过该窗口编辑源代码和设计 UI，此处你可能会花费大部分时间。
+- [编辑器窗口](../ide/writing-code-in-the-code-and-text-editor.md)（中心）用于显示文件内容，你可能会在该窗口花费大部分时间。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
 
-- [“输出”窗口](../ide/reference/output-window.md)是 Visual Studio 发送通知（例如，调试和错误消息、编译器警告、发布状态消息等）的位置。 每个消息源都有自己的选项卡。
+- [“输出”窗口](../ide/reference/output-window.md)（底部中心）是 Visual Studio 发送通知（例如，调试和错误消息、编译器警告、发布状态消息等）的位置。 每个消息源都有自己的选项卡。
 
-- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/overview)），[团队资源管理器 (VSTS)](/vsts/user-guide/work-team-explorer) 可让你跟踪工作项并与他人共享代码。
+- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/overview)），[团队资源管理器](/vsts/user-guide/work-team-explorer)（右下方）可让你跟踪工作项并与他人共享代码。
 
-下面是 Visual Studio 中其他一些能够提高工作效率的常见功能：
+### <a name="popular-productivity-features"></a>高效性方面的常用功能
 
-- [重构](../ide/refactoring-in-visual-studio.md)包括智能重命名变量、移动选定的代码行到单独的函数、移动代码到其他位置、重新排序函数参数以及更多操作。
+Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作效率，这些功能包括：
 
-   ![重构](../ide/media/VSIDE_refactor.png)
+- [重构](../ide/refactoring-in-visual-studio.md)
 
-- [“IntelliSense”](../ide/using-intellisense.md) 是一组常用功能的涵盖性术语，这些功能可用于在编辑器中直接显示代码的类型信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在单独帮助窗口查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了一些处于工作状态的 IntelliSense 功能：
+   重构包括智能重命名变量、将一个或多个代码行提取到新方法中、更改方法参数的顺序等操作。
 
-   ![Visual Studio 成员列表](../ide/media/vs2017_Intellisense.png)
+   ![在 Visual Studio 中重构](../ide/media/refactoring-menu.png)
 
-- 使用[快速启动](../ide/reference/quick-launch-environment-options-dialog-box.md)搜索框可以在 Visual Studio 中快速找到所需内容。 只需键入要查找内容的名称，Visual Studio 就会为你列出结果，这些结果可以准确地将你导向目标位置。 “快速启动”还可以显示链接，这些链接可以启动任何工作负载或单个组件的 Visual Studio 安装程序。
+- [IntelliSense](../ide/using-intellisense.md)
 
-   ![“快速启动”搜索框](../ide/media/VSIDE_Tour_QuickLaunch.png)
+   IntelliSense 是一组功能的术语，这些功能可用于在编辑器中直接显示代码的信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在其他位置查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了 IntelliSense 如何显示类型的成员列表：
 
-- 波形曲线是波浪形下划线，它可以在键入时对代码中的错误或潜在问题发出实时警报。 这样一来，你可立即修复错误，而无需等到编译或运行时才发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距中也可能会出现一个灯泡，提供修复此错误的建议。 有关详细信息，请参阅[快速操作](../ide/quick-actions.md)。
+   ![Visual Studio 成员列表](../ide/media/intellisense-list-members.png)
 
-   ![波形曲线](../ide/media/vs2017_squiggle.png)
+- [快速启动](../ide/reference/quick-launch-environment-options-dialog-box.md)
 
-- 可以在文本编辑器上下文菜单中打开[调用层次结构](../ide/reference/call-hierarchy.md)窗口，以显示调用方法、被调用方法和插入点下的方法（插入点）。
+   visual Studio 有时会因为有如此多的菜单、选项和属性而让人不知所措。 使用**快速启动**搜索框可以在 Visual Studio 中快速找到所需内容。 开始键入要查找内容的名称时，Visual Studio 会列出结果，这些结果可以准确地将你导向目标位置。 如果需要向 Visual Studio 添加功能，例如添加对其他编程语言的支持，“快速启动”提供了打开 Visual Studio 安装程序以安装工作负载或单个组件的结果。
 
-   ![“调用层次结构”窗口](../ide/media/VSIDE_call_hierarchy.png)
+   ![Visual Studio 中的“快速启动”搜索框](../ide/media/quick-launch-nuget.png)
 
-- [“CodeLens”](../ide/find-code-changes-and-other-history-with-codelens.md)能够查找代码引用、代码更改、链接错误、工作项、代码评审和单元测试，所有操作都在编辑器上进行。
+- 波形曲线和[快速操作](../ide/quick-actions.md)
+
+   波形曲线是波浪形下划线，它可以在键入时对代码中的错误或潜在问题发出警报。 这些可视线索使你能立即修复问题，而无需等待在生成期间或运行程序时发现错误。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距中也可能会出现一个灯泡，提供修复此错误的“快速操作”建议。
+
+   ![Visual Studio 中的波形曲线](../ide/media/squiggles-error.png)
+
+- [调用层次结构](../ide/reference/call-hierarchy.md)
+
+   “调用层次结构”窗口显示调用所选方法的方法。 考虑更改或删除方法时，或者尝试追踪 bug 时，这可能是有用的信息。
+
+   ![“调用层次结构”窗口](../ide/reference/media/call-hierarchy-csharp-expanded.png)
+
+- [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+
+   CodeLens 可帮助查找代码引用、代码更改、链接错误、工作项、代码评审和单元测试，所有操作都在编辑器上进行。
 
    ![CodeLens](../ide/media/codelensoverview.png)
 
-- [“查看定义”](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 窗口显示方法或类型的定义内联，而无需离开当前的上下文。
+- [转到定义](../ide/go-to-and-peek-definition.md)
 
-   ![查看定义](../ide/media/VSIDE_peek_definition.png)
+  “转到定义”功能可将你直接带到定义函数或类型的位置。
 
-- [“转到定义”](../ide/go-to-and-peek-definition.md) 上下文菜单选项可直接进入其中定义函数或对象的位置。 还可以在编辑器中右键单击来获取其他导航命令。
+   ![转到定义](../ide/media/go-to-definition-menu.png)
 
-   ![转到定义](../ide/media/VSIDE_go_to_definition.png)
+- [速览定义](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+
+   “速览定义”窗口显示方法或类型的定义，而无需实际打开一个单独的文件。
+
+   ![查看定义](../ide/media/peek-definition.png)
 
 ## <a name="create-a-program"></a>创建程序
 
@@ -92,13 +110,13 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 1. 打开 Visual Studio。 在菜单上，依次选择“文件” > “新建” > “项目”。
 
-  ![菜单栏上的“文件”>“新建项目”](../ide/media/VSIDE_Tour_NewProject1.png)
+   ![菜单栏上的“文件”>“新建项目”](../ide/media/file-new-project-menu.png)
 
 1. “新建项目”对话框中会显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。 在“Visual C#”下选择“.NET Core”类别，然后选择“控制台应用(.NET Core)”模板。 在“名称”文本框中，键入“HelloWorld”，然后选择“确定”按钮。
 
-  ![.NET Core 应用模板](../ide/media/overview-new-project-dialog.png)
+   ![.NET Core 应用模板](../ide/media/overview-new-project-dialog.png)
 
-   Visual Studio 随即创建项目。 它是简单的“Hello World”应用程序，可调用 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法在控制台窗口中 显示文本字符串“Hello World!”。
+   Visual Studio 随即创建项目。 它是简单的“Hello World”应用程序，可调用 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法在控制台窗口（程序输出）中 显示文本字符串“Hello World!”。
 
   > [!NOTE]
   > 如果未看到“.NET Core”类别，则需要安装“.NET Core 跨平台开发”工作负载。 为此，选择“新建项目”对话框左下角的“打开 Visual Studio 安装程序”链接。 “Visual Studio 安装程序”打开后，向下滚动并选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
@@ -107,9 +125,7 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
    ![Visual Studio IDE](../ide/media/overview-ide-console-app.png)
 
-   应用程序的 C# 代码显示于编辑器窗口中，会占用大部分空间。 请注意，文本已自动着色，用于指示代码的不同方面，如关键字或类型。 此外，代码中的垂直短虚线指示哪两个大括号相匹配，行号能够帮助你在以后查找代码。 可以通过选择带减号的小方形来折叠或展开代码。 此代码大纲功能可以隐藏不需要的代码，最大程度地减少屏幕混乱。
-
-   右侧名为“解决方案资源管理器”的窗口中列出了项目文件。
+   应用程序的 C# 代码显示于编辑器窗口中，会占用大部分空间。 请注意，文本已自动着色，用于指示代码的不同方面，如关键字或类型。 此外，代码中的垂直短虚线指示哪两个大括号相匹配，行号能够帮助你在以后查找代码。 可以通过选择带减号的小方形来折叠或展开代码块。 此代码大纲功能可以隐藏不需要的代码，最大程度地减少屏幕混乱。 右侧名为“解决方案资源管理器”的窗口中列出了项目文件。
 
   ![具有红色框的 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
@@ -158,7 +174,7 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 1. 双击 `name` 变量将其选中。
 
-1. 为变量 `username` 输入名称。
+1. 为变量 username 键入新名称。
 
    请注意，变量周围将显示灰色框且边距中会出现灯泡。
 
@@ -206,7 +222,7 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 ## <a name="debug-code"></a>调试代码
 
-编写代码时，需要运行并测试该代码是否存在 bug。 可通过 Visual Studio 的调试系统逐句执行代码，一次执行一条语句，逐步检查变量。 可设置仅当指定条件为真时才命中的断点。 代码运行时可以监视变量的值等。
+编写代码时，需要运行并测试该代码是否存在 bug。 可通过 Visual Studio 的调试系统逐句执行代码，一次执行一条语句，逐步检查变量。 可设置停止在特定行执行代码的断点。 可观察变量的值如何随代码运行而更改等。
 
 通过设置断点，可查看程序处于飞行模式时 `username` 变量的值。
 
@@ -232,7 +248,7 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 ## <a name="customize-visual-studio"></a>自定义 Visual Studio
 
-可以对 IDE 进行个性化设置，包括更改默认颜色主题。 更改为“深色”主题：
+可个性化设置 Visual Studio 用户界面，包括更改默认颜色主题。 更改为“深色”主题：
 
 1. 在菜单栏中，选择“工具” > “选项”，打开“选项”对话框。
 
@@ -248,13 +264,13 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 想创建一个适用于 Android 或 iOS 手机的应用？ 例如 3D 游戏或支持云的应用？ 若要了解以上和其他 Visual Studio 功能，请参阅 [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)。
 
-如果已准备好即刻开始编码，可目录中选择某个快速入门主题，如[创建首个 ASP.NET Core Web 应用](quickstart-aspnet-core.md)。
+如果希望即刻开始编码，可从目录中选择某个快速入门主题，如[创建首个 ASP.NET Core Web 应用](quickstart-aspnet-core.md)。
 
 还可访问 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 观看免费的 Visual Studio 视频。
 
 ## <a name="see-also"></a>请参阅
 
 * [更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
-* [www.visualstudio.com](https://www.visualstudio.com/vs/)
+* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 下载](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+* [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)

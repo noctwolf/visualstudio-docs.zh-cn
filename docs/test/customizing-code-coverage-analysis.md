@@ -9,53 +9,45 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c9b51137c6b66fe2895bcc0e70e3ffab8ebd637e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
+ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36302998"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 
-默认情况下，Visual Studio Code 覆盖率工具将分析单元测试过程中加载的所有解决方案程序集。 建议保留此默认设置，因此它在大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
+默认情况下，代码覆盖率将分析单元测试过程中加载的所有解决方案程序集。 建议使用此默认行为，因为它大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
-在自定义代码覆盖率行为之前，请考虑某些替代项：
+若要从代码覆盖率结果中排除测试代码，仅包括应用程序代码，请将 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute> 属性添加到测试类。
 
-- *我希望代码覆盖率结果中不包含测试代码，只包含应用代码。*
+若要包含不属于解决方案的程序集，请获取这些程序集的 .pdb 文件并将其复制到与程序集 .dll 文件相同的文件夹。
 
-     将 `ExcludeFromCodeCoverage Attribute` 添加到测试类中。
+## <a name="run-settings-file"></a>运行设置文件
 
-- *我希望包含属于我的解决方案的程序集。*
+[运行设置文件](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)是由单元测试工具使用的配置文件。 在 .runsettings 文件中指定高级代码覆盖率设置。
 
-     获取这些程序集的 .pdb 文件并将这些文件复制到与程序集 .dll 文件相同的文件夹中。
+若要自定义代码覆盖率，请执行以下步骤：
 
-若要自定义代码覆盖率行为，请复制[本主题结尾的示例](#sample)，然后使用文件扩展名 .runsettings 将其添加到你的解决方案中。 根据你自己的需求编辑示例，然后在“测试”菜单上，依次选择“测试设置”和“选择测试设置文件”。 本文的其余部分更详细地介绍了此过程。
+1. 将运行设置文件添加到解决方案中。 在“解决方案资源管理器”的解决方案快捷菜单上，依次选择“添加” > “新建项”和“XML 文件”。 保存带有类似于 CodeCoverage.runsettings 的名称的文件。
 
-## <a name="the-run-settings-file"></a>运行设置文件
+1. 添加本文结尾处示例文件中的内容，然后按需进行自定义，如以下章节所述。
 
-在 .runsettings 文件中指定高级代码覆盖率设置。 运行设置文件是由单元测试工具使用的配置文件。 建议复制[本主题结尾的示例](#sample)，然后根据你自己的需求编辑示例。
+1. 若要选择运行设置文件，在“测试”菜单上，选择“测试设置” > “选择测试设置文件”。 若要指定运行设置文件以从命令行或在生成工作流中运行测试，请参阅[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file)。
 
-若要自定义代码覆盖率，将 .runsettings 文件添加到解决方案中：
+   选择“分析代码覆盖率”时，会从运行设置文件读取配置信息。
 
-1. 将 .xml 文件作为扩展名为 .runsettings 的解决方案项添加：
+   > [!TIP]
+   > 在运行测试或更新代码时，之前的代码覆盖率结果和代码着色不会自动隐藏。
 
-     在“解决方案资源管理器”中，从解决方案的快捷菜单中，依次选择“添加” > “新建项”和“XML 文件”。 保存带有类似 CodeCoverage.runsettings 的名称结尾的文件。
+若要禁用和启用自定义设置，请依次选择“测试”和“测试设置” > 菜单，然后取消选择或选择文件。
 
-2. 添加本文结尾处示例中的内容，然后按需要进行自定义，如以下章节所述。
+![包含自定义设置文件的测试设置菜单](../test/media/codecoverage-settingsfile.png)
 
-3. 在“测试”菜单上，依次选择“测试设置” > “选择测试设置文件”和文件。
+### <a name="specify-symbol-search-paths"></a>指定符号搜索路径
 
-4. 现在，运行“分析代码覆盖率”时，此运行设置文件将控制其行为。 请记住，必须再次运行代码覆盖率。 在运行测试或更新代码时，之前的覆盖率结果和代码着色不会自动更新。
-
-5. 若要禁用和启用自定义设置，请依次选择“测试”和“测试设置” > 菜单，然后取消选择或选择文件。
-
- ![包含自定义设置文件的测试设置菜单](../test/media/codecoverage-settingsfile.png)
-
-可在同一运行设置文件中配置单元测试的其他方面。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。
-
-### <a name="specifying-symbol-search-paths"></a>指定符号搜索路径
-
-代码覆盖率需要符号（.pdb 文件）才能确保程序集存在。 对于解决方案生成的程序集，符号文件通常与二进制文件一起出现，且代码覆盖率将自动工作。 但在某些情况下，你可能需要在你的代码覆盖率分析中包含引用的程序集。 在这种情况下，.pdb 文件可能不会与二进制文件相邻，但你可以在 .runsettings 文件中指定符号搜索路径。
+代码覆盖率需要程序集的符号文件（.pdb 文件）。 对于解决方案生成的程序集，符号文件通常与二进制文件一起出现，且代码覆盖率将自动工作。 但在某些情况下，你可能需要在你的代码覆盖率分析中包含引用的程序集。 在这种情况下，.pdb 文件可能不会与二进制文件相邻，但可在 .runsettings 文件中指定符号搜索路径。
 
 ```xml
 <SymbolSearchPaths>
@@ -64,10 +56,10 @@ ms.lasthandoff: 04/26/2018
 </SymbolSearchPaths>
 ```
 
-> [!WARNING]
-> 符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将远程 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。
+> [!NOTE]
+> 符号解析可能很耗时，尤其是在使用包含大量程序集的远程文件位置时。 因此，请考虑将 .pdb 文件复制到与二进制文件（.dll 和 .exe）相同的本地位置。
 
-### <a name="excluding-and-including"></a>排除和包括
+### <a name="exclude-and-include"></a>排除和包含
 
 你可以从代码覆盖率分析中排除指定的程序集。 例如:
 
@@ -91,9 +83,9 @@ ms.lasthandoff: 04/26/2018
 </ModulePaths>
 ```
 
-如果 `<Include>` 为空，那么代码覆盖率会处理已加载且能找到 .pdb 文件的所有程序集。 代码覆盖率不包括匹配 `<Exclude>` 列表中的子句的项。
+如果“Include”为空，那么代码覆盖率会处理已加载且能找到 .pdb 文件的所有程序集。 代码覆盖率不包括与“Exclude”列表中子句匹配的项。
 
-`Include` 在 `Exclude` 之前处理。
+先处理“Include”，再处理“Exclude”。
 
 ### <a name="regular-expressions"></a>正则表达式
 
@@ -131,87 +123,48 @@ ms.lasthandoff: 04/26/2018
 ```
 
 > [!WARNING]
-> 如果正则表达式中存在错误（如未转义和不匹配的括号），则不会运行代码覆盖率分析。
+> 如果正则表达式中存在错误（如存在未转义或不匹配的括号），则不会运行代码覆盖率分析。
 
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包括或排除元素的其他方法
 
-有关示例，请参阅[本主题结尾的示例](#sample)。
+- **ModulePath** - 匹配程序集文件路径指定的程序集。
 
-- `ModulePath` - 按程序集文件路径指定的程序集。
+- **CompanyName** - 按“公司”属性匹配程序集。
 
-- `CompanyName` - 按“公司”匹配程序集。
+- **PublicKeyToken** - 按公钥标记匹配签名的程序集。
 
-- `PublicKeyToken` - 按公钥标记匹配签名程序集。 例如，若要与所有 Visual Studio 组件和扩展匹配，请使用 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`。
+- **Source** - 按在其中定义元素的源文件路径名称匹配元素。
 
-- `Source` - 按在其中定义元素的源文件的路径名称匹配元素。
+- **Attribute** - 匹配附加特定属性的元素。 指定属性的全名并在名称结尾处包括“Attribute”。
 
-- `Attribute` - 与特定属性附加到的元素匹配。 指定特性的全名，包括名称结尾的“Attribute”。
+- **Function** - 按完全限定名匹配过程、函数或方法。 若要匹配函数名称，则正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如:
 
-- `Function` - 按完全限定名匹配过程、函数或方法。
+   ```csharp
+   Fabrikam.Math.LocalMath.SquareRoot(double);
+   ```
 
-**与函数名称匹配**
+   ```cpp
+   Fabrikam::Math::LocalMath::SquareRoot(double)
+   ```
 
-正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如，应用于对象的
+   ```xml
+   <Functions>
+     <Include>
+       <!-- Include methods in the Fabrikam namespace: -->
+       <Function>^Fabrikam\..*</Function>
+       <!-- Include all methods named EqualTo: -->
+       <Function>.*\.EqualTo\(.*</Function>
+     </Include>
+     <Exclude>
+       <!-- Exclude methods in a class or namespace named UnitTest: -->
+       <Function>.*\.UnitTest\..*</Function>
+     </Exclude>
+   </Functions>
+   ```
 
-- C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`
+## <a name="sample-runsettings-file"></a>示例 .runsettings 文件
 
-- C++：`Fabrikam::Math::LocalMath::SquareRoot(double)`
-
-```xml
-<Functions>
-  <Include>
-    <!-- Include methods in the Fabrikam namespace: -->
-    <Function>^Fabrikam\..*</Function>
-    <!-- Include all methods named EqualTo: -->
-    <Function>.*\.EqualTo\(.*</Function>
-  </Include>
-  <Exclude>
-    <!-- Exclude methods in a class or namespace named UnitTest: -->
-    <Function>.*\.UnitTest\..*</Function>
-  </Exclude>
-</Functions>
-```
-
-## <a name="how-to-specify-run-settings-files-while-running-tests"></a>如何在运行测试时指定运行设置文件
-
-### <a name="to-customize-run-settings-in-visual-studio-tests"></a>在 Visual Studio 测试中自定义运行设置
-
-依次选择“测试” > “测试设置” > “选择测试设置文件”，并选择 .runsettings 文件。 该文件将显示在“测试设置”菜单上，你可以选择或取消它。 选择后，每当使用“分析代码覆盖率”时，都会应用运行设置文件。
-
-### <a name="to-customize-run-settings-in-a-command-line-test"></a>在命令行测试中自定义运行设置
-
-若要从命令行运行测试，请使用 vstest.console.exe。 此设置文件是此实用工具的一个参数。
-
-1. 启动 Visual Studio 开发人员命令提示符：
-
-    在 Windows 启动 菜单上选择“Visual Studio 2017” > “VS 2017 的开发人员命令提示符”。
-
-2. 运行下面的命令：
-
-    `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`
-
-### <a name="to-customize-run-settings-in-a-build-definition"></a>在生成定义中自定义运行设置
-
-你可以从团队生成中获取代码覆盖率数据。
-
-![在生成定义中指定 runsetting](../test/media/codecoverage-buildrunsettings.png)
-
-1. 确保签入运行设置文件。
-
-2. 在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。
-
-3. 在**“进程”**页中，展开**“自动测试”** > **“测试源”** > 和**“运行设置”**。 选择 .runsettings 文件。
-
-   > [!TIP]
-   > 如果出现“测试程序集”而不是“测试源”，并且只能选择 .testsettings 文件，则按如下所示设置 Test Runner 属性。 在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。
-
-结果在生成报告的摘要部分可见。
-
-##  <a name="sample"></a>示例 .runsettings 文件
-
-复制此代码并对其进行编辑以满足你自己的需求。
-
-（有关运行设置文件的其他用法，请参阅[使用运行设置文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。）
+复制此代码并对其进行编辑以满足需求。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,5 +279,6 @@ Included items must then not match any entries in the exclude list to remain inc
 
 ## <a name="see-also"></a>请参阅
 
+- [使用运行设置文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 - [单元测试代码](../test/unit-test-your-code.md)

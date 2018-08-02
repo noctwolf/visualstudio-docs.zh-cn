@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 353dd60697d1e77adced612dee79cea97e4c7ba8
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: e0c5e29260affb31d94d702fc19dad7704e3c110
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31576334"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39176169"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
 将 URL 转换为正确的 URL 格式。  
@@ -37,7 +37,7 @@ ms.locfileid: "31576334"
 |`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|  
   
 ## <a name="remarks"></a>备注  
- 除具有表中列出的参数外，此任务还从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [任务](../msbuild/msbuild-tasks.md)   

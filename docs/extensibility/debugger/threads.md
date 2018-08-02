@@ -1,5 +1,5 @@
 ---
-title: 线程 |Microsoft 文档
+title: 线程 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2754d3b1b15771f876855e7ca7d1dc510748308
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 456ec81c5f39f533bddd58d0a9e4d9d5889f066d
+ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125781"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39276629"
 ---
 # <a name="threads"></a>线程
-在调试器体系结构，方面**线程**:  
+在调试器体系结构中，*线程*:  
   
--   是计算的基本单位。 线程按顺序执行它的上下文中的单个调用堆栈，将从一种代码上下文移至下一步的说明。  
+-   是计算的基本单位。 线程按顺序执行其上下文中的单一调用堆栈，将从一种代码上下文移到下一步的说明。  
   
--   可以识别本身以及它在中，运行可以和名为、 挂起，然后恢复该程序。 线程也可以枚举其关联的堆栈帧，并在某些情况下可以移到另一个堆栈帧。 给定堆栈帧的上下文，线程可以返回其关联的逻辑线程，如果有的话。 线程具有属性，如挂起计数，可以在 IDE 的线程窗口中显示。  
+-   可以标识本身和在运行的程序。 可以命名、 挂起，但恢复线程。 线程还可以枚举其关联的堆栈帧，并在某些情况下可以移动到另一个堆栈帧。 给定堆栈帧上下文内的，线程可以返回其关联的逻辑线程，如果有的话。 线程具有属性，例如挂起计数，在中显示**线程**在 IDE 的窗口。  
   
--   由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)接口，通常创建的调试引擎 (DE) 或虚拟机，因此执行程序。  
+-   为由[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)接口，通常创建的调试引擎 (DE) 或虚拟机，因此执行程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [程序](../../extensibility/debugger/programs.md)   
  [堆栈帧](../../extensibility/debugger/stack-frames.md)   
  [调试引擎](../../extensibility/debugger/debug-engine.md)   

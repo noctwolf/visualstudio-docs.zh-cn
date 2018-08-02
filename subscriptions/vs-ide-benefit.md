@@ -9,16 +9,16 @@ description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 678da5c2727e69e3a9f4da7c8f692f082c485e8d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31197836"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36282621"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 权益
 
-作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。  
+作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
 
 
 ## <a name="activation-steps"></a>激活步骤
@@ -26,30 +26,30 @@ ms.locfileid: "31197836"
 *（此示例将使用 Visual Studio Enterprise。）*
 
 下载 IDE：
-1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。 
-2. 在“工具”部分中找到“Visual Studio IDE”磁贴，然后单击“权益”磁贴底部的“下载”链接。  也可从[下载](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)页下载。 
+1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+2. 在“工具”部分中找到“Visual Studio IDE”磁贴，然后单击“权益”磁贴底部的“下载”链接。  也可从[下载](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)页下载。
 
     ![Visual Studio Enterprise 磁贴](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  单击此链接，你将被重定向到 Visual Studio Enterprise 的“下载结果”页，可在此处下载 IDE 并获取用于激活的产品密钥。 也可通过单击蓝色的“获取密钥”链接索取产品密钥，或稍后在[产品密钥](https://my.visualstudio.com/productkeys)页上索取产品密钥。
 4.  在“下载结果”页的“详细信息”选项卡上：
     - 选择所需体系结构（x86、x64）
-    - 选择语言首选项。 
+    - 选择语言首选项。
 5.  单击蓝色的“下载”按钮。
     ![Visual Studio Enterprise 下载详情](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  若要立即安装，请单击“运行”。
 7.  在“用户帐户控制”对话框中，单击“是”。
 8.  单击“继续”接受许可条款。
-9.  安装程序启动时，在相应的选项卡上选择所需的工作负荷、各个组件和语言包。  
+9.  安装程序启动时，在相应的选项卡上选择所需的工作负荷、各个组件和语言包。
     ![自定义 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
-10.  单击“安装” 。 
+10.  单击“安装” 。
 
-11. 安装完成后，可以选择修改安装或启动 Visual Studio。  单击“启动”开始操作。  
+11. 安装完成后，可以选择修改安装或启动 Visual Studio。  单击“启动”开始操作。
 
     ![启动 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
-12. 使用与 Visual Studio 订阅关联的帐户登录。 
+12. 使用与 Visual Studio 订阅关联的帐户登录。
 
 13. 选择喜欢的主题，然后单击“启动 Visual Studio”。
 
@@ -69,11 +69,11 @@ ms.locfileid: "31197836"
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务。
 
 
-无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 
 ## <a name="support-resources"></a>支持资源
 -  需要与 Visual Studio IDE 相关的帮助，请查看下列资源：
-    - 技术支持：[https://www.visualstudio.com/support/](https://www.visualstudio.com/support/)
-    - [文档](/visualstudio/) 
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
+    - 技术支持：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+    - [文档](/visualstudio/)
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。

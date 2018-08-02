@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 676c8767691610349cc2eee4c09970318feda9f5
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 02d3a9dfa6496b30e7438e53754f6d3d1720e6df
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34269185"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078922"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 可以使用 XAML 代码或 XAML 设计器向你的应用程序添加控件、布局和形状等元素。 本主题介绍如何在 Visual Studio 或 Blend for Visual Studio 中使用 XAML 设计器中的元素。
@@ -29,14 +29,14 @@ ms.locfileid: "34269185"
 
 -   在 XAML 设计器中，执行以下操作：
 
-    -   双击“工具箱”的某个元素（或选择工具箱中的某个元素，然后按 Enter 键）。
+    -   双击“工具箱”的某个元素（或选择“工具箱”中的某个元素，然后按 Enter）。
 
     -   将元素从“工具箱”拖到美工板 。
 
     -   在“工具箱”中，选择一种绘制工具（例如，[椭圆形](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx)或[矩形](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)），然后在活动面板上绘制元素。
 
 ## <a name="changing-the-layering-order-of-elements"></a>更改元素的分层顺序
- 当 XAML 设计器中的美工板上有两个元素时，其中一个元素将以分层顺序显示于另一个元素之前。 文档大纲窗口中的元素列表的底部是最靠前的元素（除了在设置了元素的“ZIndex”属性时）。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
+ 当 XAML 设计器中的美工板上有两个元素时，其中一个元素将以分层顺序显示于另一个元素之前。 文档大纲窗口中的元素列表底部是最靠前的元素（除了在设置了元素的 ZIndex 属性时）。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
 
 #### <a name="to-change-the-layering-order"></a>更改分层顺序的步骤
 
@@ -63,7 +63,7 @@ ms.locfileid: "34269185"
 
 #### <a name="to-align-two-or-more-elements-by-using-menu-commands"></a>使用菜单命令对齐两个或多个元素的步骤
 
-1.  选择想要对齐的元素。 可以通过按住 Ctrl 键的同时选择元素选择多个元素。
+1.  选择想要对齐的元素。 可以通过按住 Ctrl 键的同时选择元素来选择多个元素。
 
 2.  在属性窗口中“布局”部分的“HorizontalAlignment”下，选择以下属性之一：“左”、“中心”、“右”或“拉伸”。
 
@@ -118,7 +118,7 @@ ms.locfileid: "34269185"
 
 #### <a name="to-reset-the-element-layout"></a>重置元素布局的步骤
 
--   在文档大纲窗口或美工板中，右键单击该元素，选择“布局”、“重置”、PropertyName，其中 PropertyName 是想要重置的属性（或者选择“布局”、“全部重置”，重置该元素的所有布局属性）。
+-   在文档大纲窗口或美工板中，右键单击该元素，选择“布局” > “重置 PropertyName”，其中 PropertyName 是想要重置的属性（或者选择“布局” > “全部重置”，重置该元素的所有布局属性）。
 
 ## <a name="see-also"></a>请参阅
 

@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c0b1a09a6483d45adda63f0fa1bf9d3ff032fa
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
+ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747276"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38978344"
 ---
 # <a name="introduction-to-wpf"></a>WPF 介绍
 
@@ -38,7 +38,7 @@ WPF 还包括增强属性和事件的其他编程构造： [依赖项属性](/do
 
 ## <a name="markup-and-code-behind"></a>标记和代码隐藏
 
-通过 WPF，你可以使用 *标记* 和 *代码隐藏*开发应用程序，这是 ASP.NET 开发人员已经熟悉的体验。 通常使用 XAML 标记实现应用程序的外观，同时使用托管编程语言（代码隐藏）来实现其行为。 这种外观和行为的分离具有以下优点：
+通过 WPF，可以使用标记和代码隐藏开发应用程序，这是 ASP.NET 开发人员已经熟悉的体验。 通常使用 XAML 标记实现应用程序的外观，同时使用托管编程语言（代码隐藏）来实现其行为。 这种外观和行为的分离具有以下优点：
 
 - 降低了开发和维护成本，因为特定于外观的标记与特定于行为的代码不紧密耦合。
 
@@ -48,7 +48,7 @@ WPF 还包括增强属性和事件的其他编程构造： [依赖项属性](/do
 
 ### <a name="markup"></a>标记
 
-XAML 是一种基于 XML 的标记语言，用于以声明形式实现应用程序的外观。 它通常用于创建窗口、对话框、页和用户控件，并填充控件、形状和图形。
+XAML 是一种基于 XML 的标记语言，以声明形式实现应用程序的外观。 通常用它创建窗口、对话框、页和用户控件，并填充控件、形状和图形。
 
  下面的示例使用 XAML 来实现包含一个按钮的窗口的外观。
 
@@ -149,7 +149,7 @@ End Namespace
 
 ## <a name="controls"></a>控件
 
-应用程序模型带来的用户体验是构造的控件。 在 WPF 中，“控件”是适用于 WPF 类这一类别的总括术语，这些类托管在窗口或页中、具有用户界面并实现一些行为。
+应用程序模型带来的用户体验是构造的控件。 在 WPF 中，控件是适用于 WPF 类这一类别的总括术语，这些类托管在窗口或页中、具有用户界面并实现一些行为。
 
 有关详细信息，请参阅 [控件](/dotnet/framework/wpf/controls/index)。
 
@@ -187,7 +187,7 @@ End Namespace
 
 最常检测和响应用户输入的控件。 [WPF 输入系统](/dotnet/framework/wpf/advanced/input-overview) 使用直接事件和路由事件来支持文本输入、焦点管理和鼠标定位。
 
-应用程序通常具有复杂的输入要求。 WPF 提供了 [命令系统](/dotnet/framework/wpf/advanced/commanding-overview) ，用于将用户输入操作与对这些操作做出响应的代码分隔开来。
+应用程序通常具有复杂的输入要求。 WPF 提供了[命令系统](/dotnet/framework/wpf/advanced/commanding-overview)，用于将用户输入操作与对这些操作做出响应的代码分隔开来。
 
 ## <a name="layout"></a>布局
 
@@ -260,7 +260,7 @@ End Namespace
 
 WPF 数据绑定引擎提供了额外支持，包括验证、排序、筛选和分组。 此外，数据绑定支持在标准 WPF 控件显示的用户界面不恰当时，使用数据模板来为数据绑定创建自定义的用户界面。
 
-有关详细信息，请参阅 [数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
+有关详细信息，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="graphics"></a>图形
 
@@ -303,7 +303,7 @@ WPF 提供的二维形状包含基本形状的标准集。 但是，你可能需
 
 ![Path 的各种用法](../designers/media/wpfintrofigure5.png)
 
-有关详细信息，请参阅 [Geometry 概述](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。
+有关详细信息，请参阅[几何图形概述](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。
 
 ### <a name="2d-effects"></a>二维效果
 
@@ -327,7 +327,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 ![具有动画效果的立方体图](../designers/media/wpfintrofigure7.png)
 
-有关详细信息，请参阅 [动画概述](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
+有关详细信息，请参阅[动画概述](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。
 
 ## <a name="media"></a>媒体
 
@@ -339,7 +339,7 @@ WPF 动画支持可以使控件变大、抖动、旋转和淡出，以形成有�
 
 ![缩略图图像和完整尺寸图像](../designers/media/wpfintrofigure8.png)
 
-有关详细信息，请参阅 [图像概述](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
+有关详细信息，请参阅[图像概述](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。
 
 ### <a name="video-and-audio"></a>视频和音频
 
@@ -512,7 +512,7 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 
 注意， <xref:System.Windows.Controls.ListBox> 已保留其行为和整体外观；仅列表框显示的内容外观已更改。
 
-有关详细信息，请参阅 [数据模板化概述](/dotnet/framework/wpf/data/data-templating-overview)。
+有关详细信息，请参阅[数据模板化概述](/dotnet/framework/wpf/data/data-templating-overview)。
 
 ### <a name="styles"></a>样式
 
@@ -652,7 +652,7 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 
  ![自定义 UserControl](../designers/media/wpfintrofigure3.png)
 
-有关自定义控件的详细信息，请参阅 [控件创作概述](/dotnet/framework/wpf/controls/control-authoring-overview)。
+有关自定义控件的详细信息，请参阅[控件创作概述](/dotnet/framework/wpf/controls/control-authoring-overview)。
 
 ## <a name="wpf-best-practices"></a>WPF 最佳做法
 

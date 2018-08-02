@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ee3a25927b80db9da2c9217ce04cf2064e26461a
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571609"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37118097"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -43,7 +43,7 @@ ms.locfileid: "34571609"
 
 ## <a name="to-create-a-project-from-a-project-template"></a>从项目模板创建项目
 
-1. 可通过多种方式在 Visual Studio 中创建新项目。 在起始页上，在“搜索项目模板”框中输入项目模板的名称，或选择“创建新项目”链接打开“新建项目”对话框。 也可以选择菜单栏上的“文件” > “新建” > “项目...”，或选择工具栏上的“新建项目”按钮。
+1. 可通过多种方式在 Visual Studio 中创建新项目。 在起始页上，在“搜索项目模板”框中输入项目模板的名称，或选择“创建新项目”链接打开“新建项目”对话框。 也可以选择菜单栏上的“文件” > “新建” > “项目”，或选择工具栏上的“新建项目”按钮。
 
   ![起始页](./media/vside-newproject1.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "34571609"
 
 ### <a name="to-create-an-empty-solution"></a>创建空解决方案
 
-1. 在菜单上，依次选择“文件” > “新建” > “项目...”。
+1. 在菜单上，依次选择“文件” > “新建” > “项目”。
 
 1. 在左侧（“模板”）窗格中，依次选择展开列表中的“其他项目类型” > “Visual Studio 解决方案”。
 

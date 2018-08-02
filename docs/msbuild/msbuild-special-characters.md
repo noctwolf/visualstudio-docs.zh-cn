@@ -14,22 +14,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a2f67204fd6df7c8eb12ce5f13e8d1f4ec29d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: aa1e52e61f4003a9495e1bff5bd64e4edc40a323
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568001"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39078649"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字符
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 保留一些专供在特定上下文中使用的字符。 如果要在保留此类字符的上下文中按原义使用这些字符，只能对这些字符进行转义。 例如，只有在项定义的 `Include` 和 `Exclude` 特性，以及对 `CreateItem` 的调用中，星号才具有特殊含义。 如果要让星号在上述某个上下文中显示为星号，必须进行转义。 在其他所有上下文中，只需在要显示星号的位置键入星号即可。  
   
- 要转义特殊字符，请使用语法 %xx，其中 xx 表示字符的 ASCII 十六进制值。 有关详细信息，请参阅[如何：对 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。  
+ 要转义特殊字符，请使用语法 %\<xx>，其中 \<xx> 表示字符的 ASCII 十六进制值。 有关详细信息，请参阅[如何：对 MSBuild 中的特殊字符进行转义](../msbuild/how-to-escape-special-characters-in-msbuild.md)。  
   
 ## <a name="special-characters"></a>特殊字符  
  下表列出了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 特殊字符：  
   
-|字符|ASCII|保留用法|  
+|字符|ASCII|**保留用法**|  
 |-------------------|---------------|------------------------|  
 |%|%25|引用元数据|  
 |$|%24|引用属性|  

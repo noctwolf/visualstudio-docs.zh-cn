@@ -1,5 +1,5 @@
 ---
-title: 程序 |Microsoft 文档
+title: 程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,27 +14,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d1c1e72524c393fdb3adc4477ea9ae374fbfa
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d8bd34f72f54fe068ff39b752ddbd6348e4970db
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102262"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252370"
 ---
 # <a name="programs"></a>Programs
-在调试器体系结构，方面**程序**:  
+在调试器体系结构中，*程序*:  
   
--   是一套线程和的一组模块的容器。 在 Windows 操作系统的系统情况下，程序将具有任何单个的类比。  
+-   是一组线程和一组模块的容器。 程序在 Windows 操作系统中有任何单个的类比。  
   
-     程序是一种类型的子进程。 例如，调试网站时，脚本可以视为程序。 虽然在脚本引擎进程中运行脚本，独立于其他脚本，它也具有其自己的一组线程。 调试引擎 (DE) 将附加到的程序，而不适用于进程或线程。  
+     程序是一种类型的子进程。 例如，调试网站时，脚本可视为程序。 脚本引擎进程脚本时，独立于其他脚本，它还具有自己的线程的一组。 调试引擎 (DE) 将附加到程序中，并且不给进程或线程。  
   
--   可以识别本身以及它正在运行，并可以将其附加到另一个地址，分离，描述创建它，如果任何 DE 的过程。 程序可以执行、 停止、 继续，并终止。  
+-   可以标识本身和它正在运行中的进程。 程序可以附加、 分离，并介绍创建它，DE，如果有的话。 程序还可以执行、 停止、 继续，并会终止。  
   
--   可以枚举所有线程。 程序也可以提供其自己的反汇编流，并可以枚举给定的文档位置的所有代码上下文。  
+-   可以枚举所有线程。 程序还可以提供其自己的反汇编流，并可以枚举给定的文档位置的所有代码上下文。  
   
--   由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口，创建附加程序之前，或作为附加的进程，具体取决于实现的一部分。 当一个端口枚举进程的程序时，根据相应创建每个程序[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口传递的自变量作为[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 时的调试引擎还创建`IDebugProgram2`接口来表示程序，这些程序不会创建根据程序节点。 `IDebugProgramNode2`接口由 DE 用于实际调试时通过端口创建的那些仅用于发现哪些程序正在进程中运行。  
+-   为由[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)创建附加程序之前，或附加过程，具体取决于实现的接口。 每个程序时端口枚举进程的程序时，会创建根据相应[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)接口传递的参数作为[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)。 尽管的调试引擎还创建`IDebugProgram2`接口来表示程序，这些程序不会创建根据程序节点。 `IDebugProgramNode2`那些通过端口仅用于发现进程中运行哪些程序用于实现实际调试接口创建的部署。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [进程](../../extensibility/debugger/processes.md)   
  [程序节点](../../extensibility/debugger/program-nodes.md)   
  [模块](../../extensibility/debugger/modules.md)   

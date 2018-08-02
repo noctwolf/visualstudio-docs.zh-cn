@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d2abbed85b891378b0a9d5c4a41029bdc46cf3
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 924dad9e530fa75c68df325f58fe028ffddd1c3b
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31569702"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39151605"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基类
 很多任务继承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 类，该类继承自 <xref:Microsoft.Build.Utilities.ToolTask> 类，后者本身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 此继承链向从它们派生的任务添加了几个参数。 本文档中列出了这些参数。  
@@ -43,7 +43,7 @@ ms.locfileid: "31569702"
 |<xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A>|选项 `bool` 参数。<br /><br /> 如果是 `true`，则在标准错误流上收到的所有消息都记录为错误。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A>|可选 `String` 参数。<br /><br /> 用于从标准输出流记录文本的重要性。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A>|可选 `String` 参数。<br /><br /> 用于从标准输出流记录文本的重要性。|  
-|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|虚拟可选 `Int32` 参数。<br /><br /> 指定终止任务可执行文件之前的时间量（以毫秒为单位）。 默认值是 `Int.MaxValue`，指示没有超时期限。超时以毫秒为单位。|  
+|<xref:Microsoft.Build.Utilities.ToolTask.Timeout%2A>|虚拟可选 `Int32` 参数。<br /><br /> 指定终止任务可执行文件之前的时间量（以毫秒为单位）。 默认值是 `Int.MaxValue`，指示没有超时期限。 超时以毫秒为单位。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolExe%2A>|虚拟可选 `string` 参数。<br /><br /> 项目可能会实现此参数以重写 ToolName。 任务可能会重写此参数以保留 ToolName。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.ToolPath%2A>|可选 `string` 参数。<br /><br /> 指定任务从中加载基础可执行文件的位置。 如果未指定此参数，则任务会使用与运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的框架版本对应的 SDK 安装路径。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会为命令行创建一个批处理文件，并使用命令处理器执行它（而不是直接执行命令）。|  

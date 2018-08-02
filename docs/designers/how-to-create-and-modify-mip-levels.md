@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b2948b33db198ddd8f7e002acbad155da66da58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4bdda75e5c8796ccd6e0b1d86b717dbd9bc48926
+ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925620"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37924442"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：创建和修改 MIP 级别
 本文档演示如何使用“图像编辑器”生成并修改纹理空间详细级别 (LoD) 的 MIP 级别。
@@ -27,7 +27,7 @@ ms.locfileid: "31925620"
 
 1.  如[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)中所述，从基本纹理开始。 为了获得最佳结果，请指定宽度和高度为 2 的幂（例如，256、512、1024 等）的纹理。
 
-2.  生成 MIP 级别。 在“图像编辑器模式”工具栏上，依次选择“高级”、“工具”和“生成 Mip”。
+2.  生成 MIP 级别。 在“图像编辑器模式”工具栏上，依次选择“高级” > “工具” > “生成 Mip”。
 
      请注意，“转到下一 Mip 级别”和“转到上一 Mip 级别”按钮现在将出现在“图像编辑器模式”工具栏上。 如果显示“属性”窗口，则还可以注意到，只读属性“Mip 级别”和“Mip 级别计数”现在将出现在图像属性中。
 

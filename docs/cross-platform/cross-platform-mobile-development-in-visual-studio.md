@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 26edc3f48c72fb81bd60396ad8a3047dafa7f48e
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: fdb86d41096ddcd45cbef9bf9a3a6ffbffe188c0
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572373"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36281790"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -33,11 +33,11 @@ ms.locfileid: "34572373"
 
 |**了解更多信息**|
 |--------------------|
-|[安装 Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[了解 Visual Studio 中的 Xamarin](http://www.visualstudio.com/explore/xamarin-vs) (VisualStudio.com)|
+|[安装 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[了解 Visual Studio 中的 Xamarin](http://visualstudio.microsoft.com/explore/xamarin-vs) (VisualStudio.com)|
 |[Xamarin 移动应用开发文档](/xamarin/) |
 |[适用于 Xamarin 应用的应用程序生命周期管理 (ALM)](../cross-platform/application-lifecycle-management-alm-with-xamarin-apps.md) |
-|[了解 Visual Studio 中的通用 Windows 应用](https://www.visualstudio.com/vs/universal-windows-platform/) (VisualStudio.com)|
+|[了解 Visual Studio 中的通用 Windows 应用](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[了解 Swift 与 C# 之间的相似之处](http://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a>通过单个基本代码面向 Android、iOS 和 Windows
@@ -106,9 +106,9 @@ ms.locfileid: "34572373"
 
 |**了解更多信息**|
 |--------------------|
-|[安装 Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[Visual Studio Tools for Apache Cordova 入门](/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
-|[了解适用于 Android 的 Visual Studio 仿真程序](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[安装 Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[用于 Apache Cordova 的 Visual Studio Tools 入门](/visualstudio/cross-platform/tools-for-cordova/)|
+|[了解适用于 Android 的 Visual Studio 仿真程序](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 <a name="CPP"></a>
 
@@ -135,11 +135,11 @@ ms.locfileid: "34572373"
 
 |**了解更多信息**|
 |--------------------|
-|[下载 Visual Studio。](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[下载 Visual Studio。](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[安装用于跨平台移动开发的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) （MSDN 库）|
-|[了解面向多个平台使用 C++ 的更多信息。](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[了解面向多个平台使用 C++ 的更多信息。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[安装所需内容，然后针对 Android 创建本机活动应用程序](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) （MSDN 库）|
-|[了解关于与 Android 和 Windows 应用程序共享 C++ 代码的更多信息](https://www.visualstudio.com/vs/cplusplus-mdd/) (VisualStudio.com)|
+|[深入了解如何与 Android 和 Windows 应用共享 C++ 代码](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ 的跨平台移动开发示例](https://msdn.microsoft.com/library/dn707596.aspx)（MSDN 库）|
 |[C++ 的其他跨平台移动开发示例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
 
@@ -155,7 +155,7 @@ ms.locfileid: "34572373"
 
 |**了解更多信息**|
 |--------------------|
-|[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://www.visualstudio.com/en-us/features/unitytools-vs.aspx)|
+|[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[阅读有关 Visual Studio Tools for Unity 的详细信息](../cross-platform/visual-studio-tools-for-unity.md) |
 |[开始使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[了解关于 Visual Studio Tools for Unity 2.0 预览版的最新增强功能](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) （Visual Studio 博客）|

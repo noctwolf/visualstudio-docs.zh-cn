@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d8e1b983dc9ec690396b7e4a8494a02f188ef77e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9539e8dec80afd1f334ca89e84a5130d8d47877e
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750820"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36283284"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 
@@ -34,7 +34,7 @@ ms.locfileid: "34750820"
 
 ## <a name="create-a-sql-database"></a>创建一个 SQL 数据库
 
-1. 如果还没有 Visual Studio Enterprise，可以从 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页进行下载。
+1. 如果还没有 Visual Studio Enterprise，可以从 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页进行下载。
 
 2. 创建一个 SQL 数据库。
 
@@ -94,7 +94,7 @@ ms.locfileid: "34750820"
 
      ![将 ColorName 字段绑定到 RadioButtonList1 值](../test/media/web_test_databinding_sql_binddatasource.png)
 
-2. 在解决方案资源管理器中，打开 Local.testsettings 文件并根据数据源行选项选择一个运行。
+2. 在“解决方案资源管理器”中，打开 Local.testsettings 文件并选择“每数据源行运行一次”选项。
 
      ![编辑测试设置文件](../test/media/web_test_databinding_sql_testsettings.png)
 
@@ -112,7 +112,7 @@ ms.locfileid: "34750820"
 
      在绑定到数据源时，可能会违反默认响应 URL 规则。 在这种情况下，运行 2 中的错误是由规则引起的，该规则期望来自原始测试记录的 Red.aspx 页，而数据绑定现在将其指向 Blue.aspx 页。
 
-2. 通过删除响应 URL 验证规则并重新运行测试来纠正验证错误。
+2. 通过删除“响应 URL”验证规则并重新运行测试来纠正验证错误。
 
      ![删除响应 URL 验证规则](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
@@ -152,13 +152,13 @@ ms.locfileid: "34750820"
 
 3. 编辑文本文件并添加：
 
-    ```
+    ```text
     ColorId, ColorName
     0,Red
     1,Blue
     ```
 
-4. 使用[绑定 SQL 数据](#AddingDataBindingWebTest_BindSQLData)中的步骤，但选择 CSV 文件作为数据源。
+4. 使用[添加数据源](#add-the-data-source)中的步骤，但选择 CSV 文件作为数据源。
 
      ![输入名称，并选择 CSV 文件](../test/media/web_test_databinding_adddatasourcedialog.png)
 
@@ -172,7 +172,7 @@ ms.locfileid: "34750820"
 
 2. 编辑该 schema.ini 文件，添加描述数据结构的信息。 例如，描述 CSV 文件的架构文件可能如下所示：
 
-    ```
+    ```text
     [testdata.csv]
     ColNameHeader=False
     ```
@@ -181,7 +181,7 @@ ms.locfileid: "34750820"
 
      ![向 Web 性能测试添加数据源](../test/media/web_test_databinding_sql_adddatasource.png)
 
-4. 如果您正在使用 schema.ini 文件，请选择数据库（不是 CSV 文件）作为数据源，并为其命名。
+4. 如果正在使用 schema.ini 文件，请选择“数据库”（不是 CSV 文件）作为数据源，并为其命名。
 
      ![添加数据库数据源](../test/media/web_test_databinding_adddatasourcecolortext.png)
 
@@ -197,7 +197,7 @@ ms.locfileid: "34750820"
 
      ![选择“高级”](../test/media/web_test_databinding_advanced.png)
 
-8. 对于 Provider 属性，请选择 Microsoft.Jet.OLEDB.4.0，并将扩展属性设置为 Text;HDR=NO。
+8. 对于 Provider 属性，请选择 Microsoft.Jet.OLEDB.4.0，并将“扩展属性”设置为 Text;HDR=NO。
 
      ![应用高级属性](../test/media/web_test_databinding_advancedproperties.png)
 
@@ -241,7 +241,7 @@ ms.locfileid: "34750820"
     </ColorData>
     ```
 
-4. 使用[绑定 SQL 数据](#AddingDataBindingWebTest_BindSQLData)中的步骤，但选择 XML 文件作为数据源。
+4. 使用[添加数据源](#add-the-data-source)中的步骤，但选择 XML 文件作为数据源。
 
      ![输入名称，并选择 XML 文件](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
@@ -255,7 +255,7 @@ ms.locfileid: "34750820"
 
 2. 使用下面的语法，将 SOAP 正文中的值替换为数据绑定值：
 
-    ```
+    ```xml
     {{DataSourceName.TableName.ColumnName}}
     ```
 

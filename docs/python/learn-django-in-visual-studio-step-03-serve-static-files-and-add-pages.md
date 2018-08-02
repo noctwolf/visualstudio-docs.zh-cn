@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 3
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用，并使用模板继承
-ms.date: 04/25/2018
+ms.date: 06/27/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d94ef95b8ba50f4cf9359bb925d41243ea58df7d
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 558353fcae63172273e4e2070a51dfafdea6913e
+ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750329"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37089582"
 ---
-# <a name="tutorial-step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>教程步骤 3：提供静态文件、添加页面和使用模板继承
+# <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：为静态文件提供服务、添加页面和使用模板继承
 
 上一步：[使用视图和页面模板创建 Django 应用](learn-django-in-visual-studio-step-02-create-an-app.md)
 
@@ -277,8 +277,9 @@ Django 模板系统为实现跨多个模板重用特定元素提供了两种方�
 > [!div class="nextstepaction"]
 > [使用完整的 Django Web 项目模板](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-## <a name="going-deeper"></a>深入了解
+## <a name="go-deeper"></a>深入了解
 
+- [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [编写你的第一个 Django 应用，第 3 部分（视图）](https://docs.djangoproject.com/en/2.0/intro/tutorial03/) (docs.djangoproject.com)
 - 有关 Django 模板的更多功能（如控制流），请参阅 [Django 模板语言](https://docs.djangoproject.com/en/2.0/ref/templates/language/) (docs.djangoproject.com)
 - 有关使用 `{% url %}` 标记的完整详细信息，请参阅 [Django 模板的内置模板标记和筛选器参考](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/)中的 [URL](https://docs.djangoproject.com/en/2.0/ref/templates/builtins/#url) (docs.djangoproject.com)

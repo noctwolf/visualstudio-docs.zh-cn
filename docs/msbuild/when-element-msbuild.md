@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd42c94ba5e63cdc285242f0a48556c073337671
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 2a4a9a68b00d4eed998a5ba742e640cd27db74cc
+ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303330"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39152417"
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定一个可能的代码块供 `Choose` 元素选择。  

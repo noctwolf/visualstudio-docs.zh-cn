@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: ac32063f61baa33b9b28eea51988b95edde579eb
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
+ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751866"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37117623"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
 
@@ -26,7 +26,7 @@ ms.locfileid: "34751866"
 
 ##  <a name="Create_the_solution_and_the_unit_test_project"></a> 创建解决方案和单元测试项目
 
-1.  在“文件”菜单上，选择“新建” > “新建项目...”。
+1.  在“文件”菜单上，选择“新建” > “新建项目”。
 
 2.  在“新建项目”对话框中，依次展开“已安装” > “Visual C#”，然后选择“Windows 通用”。 然后从项目模板列表中选择“单元测试应用(通用 Windows)”。
 
@@ -46,7 +46,7 @@ ms.locfileid: "34751866"
 
     -   使用 `TEST_CLASS(YourClassName){...}`将测试方法分组为各个类。
 
-         当测试运行时，将为每个测试类创建一个实例。 测试方法以未指定的顺序进行调用。 可以定义在每个模块、类或方法之前和之后调用的特殊方法。 有关详细信息，请参阅 MSDN 库中的[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)。
+         当测试运行时，将为每个测试类创建一个实例。 测试方法以未指定的顺序进行调用。 可以定义在每个模块、类或方法之前和之后调用的特殊方法。 有关详细信息，请参阅 MSDN 库中的[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)。
 
 ##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 验证测试是否可在资源管理器中运行
 
@@ -113,7 +113,7 @@ ms.locfileid: "34751866"
 
 5.  添加已声明函数的最小实现。 打开 **RooterLib.cpp** 并添加以下代码：
 
-    ```
+    ```cpp
     // constructor
     CRooterLib::CRooterLib()
     {
@@ -131,11 +131,11 @@ ms.locfileid: "34751866"
 
 1.  将 RooterLib 添加到 RooterLibTests 项目。
 
-    1.  在解决方案资源管理器中，选择 **RooterLibTests** 项目，然后选择快捷菜单上的“引用...”。
+    1.  在解决方案资源管理器中，选择“RooterLibTests”项目，然后选择快捷菜单上的“引用”。
 
     2.  在 RooterLib 项目属性对话框上，展开“通用属性”，然后选择“框架和引用”。
 
-    3.  选择“添加新引用....”
+    3.  选择“添加新引用”
 
     4.  在“添加引用”对话框上，展开“解决方案”，然后选择“项目”。 然后选择“RouterLib”项。
 
@@ -151,7 +151,7 @@ ms.locfileid: "34751866"
 
 3.  添加一个使用 imported 函数的测试。 将以下代码添加到 **unittest1.cpp**：
 
-    ```
+    ```cpp
     TEST_METHOD(BasicTest)
     {
         CRooterLib rooter;
@@ -245,7 +245,7 @@ ms.locfileid: "34751866"
 
 1.  将另一个测试添加到 **unittest1.cpp**：
 
-    ```
+    ```cpp
     // Verify that negative inputs throw an exception.
      TEST_METHOD(NegativeRangeTest)
      {
@@ -291,7 +291,7 @@ ms.locfileid: "34751866"
 
     3.  将代码添加到 **RooterLib.cpp** 来捕获异常：
 
-        ```
+        ```cpp
         #include <stdexcept>
         ...
         double CRooterLib::SquareRoot(double v)

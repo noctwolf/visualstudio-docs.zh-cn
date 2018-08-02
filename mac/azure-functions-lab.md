@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80c04182733204a18ee669d3851deab867cc56cd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "33877327"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232278"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -46,8 +46,10 @@ ms.locfileid: "33877327"
 
 1. 展开“Solution Pad”中的节点。 默认项目模板包括对各种 Azure WebJobs 包以及 Newtonsoft.Json 包的 NuGet 引用。 
 
-     此外还有三个文件：- 用于描述主机的全局配置选项的 host.json **和**用于配置服务设置的 local.settings.json。 
-        - 项目模板还会创建一个默认 HttpTrigger。 对于本实验室，应从项目中删除 HttpTrigger.cs 文件。
+     也有三个文件：  
+        - host.json 用于描述该主机的全局配置选项  
+        - local.settings.json 用于配置服务设置。  
+        - 项目模板还会创建一个默认 HttpTrigger。 对于本实验室，应从项目中删除 HttpTrigger.cs 文件。  
 
     打开 local.settings.json。 它默认具有两个空的连接字符串设置。
 

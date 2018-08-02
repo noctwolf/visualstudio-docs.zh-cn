@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 322e0bdc98751cda670206667cc8580bd498f682
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 3fc6a1dff49c754c13fb8b94e03f956b3081f075
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34752138"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39232314"
 ---
-# <a name="tutorial-step-5-use-the-polls-flask-web-project-template"></a>教程步骤 5：使用投票 Flask Web 项目模板
+# <a name="step-5-use-the-polls-flask-web-project-template"></a>步骤 5：使用投票 Flask Web 项目模板
 
 上一步：[使用完整的 Flask Web 项目模板](learn-flask-visual-studio-step-04-full-flask-project-template.md)
 
@@ -78,35 +78,35 @@ Visual Studio 还计划了“投票 Flask/Jade Web 项目”模板，该模板�
 
 应用的数据模型是名为 Poll 和 Choice 的 Python 类，它们在 `models/__init__.py` 中进行定义。 Poll 表示一个问题，Choice 实例集合表示该问题的可选答案。 Poll 还会保留（任意选项的）总票数，以及统计信息的计算方法（这些信息将用于生成视图）：
 
-    ```python
-    class Poll(object):
-        """A poll object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u''):
-            """Initializes the poll."""
-            self.key = key
-            self.text = text
-            self.choices = []
-            self.total_votes = None
+```python
+class Poll(object):
+    """A poll object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u''):
+        """Initializes the poll."""
+        self.key = key
+        self.text = text
+        self.choices = []
+        self.total_votes = None
 
-        def calculate_stats(self):
-            """Calculates some statistics for use in the application views."""
-            total = 0
-            for choice in self.choices:
-                total += choice.votes
-            for choice in self.choices:
-                choice.votes_percentage = choice.votes / float(total) * 100 \
-                    if total > 0 else 0
-            self.total_votes = total
+    def calculate_stats(self):
+        """Calculates some statistics for use in the application views."""
+        total = 0
+        for choice in self.choices:
+            total += choice.votes
+        for choice in self.choices:
+            choice.votes_percentage = choice.votes / float(total) * 100 \
+                if total > 0 else 0
+        self.total_votes = total
 
-    class Choice(object):
-        """A poll choice object for use in the application views and repository."""
-        def __init__(self, key=u'', text=u'', votes=0):
-            """Initializes the poll choice."""
-            self.key = key
-            self.text = text
-            self.votes = votes
-            self.votes_percentage = None
-    ```
+class Choice(object):
+    """A poll choice object for use in the application views and repository."""
+    def __init__(self, key=u'', text=u'', votes=0):
+        """Initializes the poll choice."""
+        self.key = key
+        self.text = text
+        self.votes = votes
+        self.votes_percentage = None
+```
 
 这些数据模型是泛型抽象，可确保应用视图能在不同类型的后备数据存储情况下正常使用，下一步会介绍这些内容。
 
@@ -189,32 +189,32 @@ Visual Studio 还计划了“投票 Flask/Jade Web 项目”模板，该模板�
 
 任何选定的数据存储最初都没有投票，因此应用的主页会显示消息“没有可用投票”和“创建样本投票”按钮。 但是，选择按钮后，该视图就会更改为显示可用投票。 可通过 `templates\index.html` 中的条件标记实现此切换（为简洁起见，省略了一些空白行）：
 
-    ```html
-    {% extends "layout.html" %}
-    {% block content %}
-    <h2>{{title}}.</h2>
+```html
+{% extends "layout.html" %}
+{% block content %}
+<h2>{{title}}.</h2>
 
-    {% if polls %}
-    <table class="table table-hover">
-        <tbody>
-            {% for poll in polls %}
-            <tr>
-                <td>
-                    <a href="/poll/{{poll.key}}">{{poll.text}}</a>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% else %}
-    <p>No polls available.</p>
-    <br />
-    <form action="/seed" method="post">
-        <button class="btn btn-primary" type="submit">Create Sample Polls</button>
-    </form>
-    {% endif %}
-    {% endblock %}
-    ```
+{% if polls %}
+<table class="table table-hover">
+    <tbody>
+        {% for poll in polls %}
+        <tr>
+            <td>
+                <a href="/poll/{{poll.key}}">{{poll.text}}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No polls available.</p>
+<br />
+<form action="/seed" method="post">
+    <button class="btn btn-primary" type="submit">Create Sample Polls</button>
+</form>
+{% endif %}
+{% endblock %}
+```
 
 模板中的 `polls` 变量来自对 `repository.get_polls` 的调用，在数据存储初始化之前，它不会返回任何内容。
 

@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fd27aa3e589957d75d504421d170735d1add6f9
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 164a0eeb8c466c2e2eb5bd03f92160a2fad78abd
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573793"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177732"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 提供自动化方式来检测、下载和安装应用程序及其必备组件。 它可以作为集成不同的安装程序的单个安装程序为组成应用程序的所有组件提供服务。  
@@ -78,7 +78,7 @@ ms.locfileid: "31573793"
     </BootstrapperItem>  
     ```  
   
-     `Include` 属性用来表示应安装的必备组件的名称。 `ProductName` 项元数据是可选的，并且在找不到包的情况下，生成引擎将其用作用户友好名称。 这些项不是必需的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 输入参数，除非没有指定任何 `ApplicationFile`。 对于必须为你的应用程序安装的每个必备组件，应包括一个项。  
+     `Include` 属性表示应安装的必备组件的名称。 `ProductName` 项元数据是可选的，并且在找不到包的情况下，生成引擎将其用作用户友好名称。 这些项不是必需的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 输入参数，除非没有指定任何 `ApplicationFile`。 对于必须为应用程序安装的每个必备组件，应包括一个项。  
   
      如果 `BootstrapperItems` 和 `ApplicationFile` 均未指定参数，将产生生成错误。  
   
@@ -142,7 +142,7 @@ ms.locfileid: "31573793"
   
      可选 `String` 参数。  
   
-     指定要在引导程序安装失败时提供的 URL  
+     指定要在引导程序安装失败时提供的 URL。  
   
 -   `Validate`  
   
@@ -151,7 +151,7 @@ ms.locfileid: "31573793"
      如果为 `true`，则引导程序对指定输入的引导程序项执行 XSD 验证。 此参数的默认值为 `false`。  
   
 ## <a name="remarks"></a>备注  
- 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+ 除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。  
   
 ## <a name="example"></a>示例  
  以下示例使用 `GenerateBootstrapper` 任务来安装将 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 作为必备组件安装的应用程序。  

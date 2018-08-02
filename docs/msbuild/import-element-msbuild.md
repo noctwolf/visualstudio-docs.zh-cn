@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3ebe16f03c185437bc0ab79fe7c038748c5eb50
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31570962"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39077485"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 将一个项目文件的内容导入其他项目文件中。  
@@ -35,7 +35,7 @@ ms.locfileid: "31570962"
 
 ## <a name="syntax"></a>语法  
 
-```  
+```xml  
 <Import Project="ProjectPath"  
     Condition="'String A'=='String B'" />  
 ```  
@@ -76,7 +76,7 @@ ms.locfileid: "31570962"
 > [!NOTE]
 >  虽然条件导入语句可在命令行 MSBuild 中正常工作，不过它们不适用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中的 MSBuild。 使用加载项目时设置的配置和平台值来计算条件导入。 如果随后进行了需要对项目文件中的条件进行重新计算的更改（例如更改平台），则 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会对属性和项重新计算条件，但不会对导入重新计算。 因为不会重新计算导入条件，所以会跳过导入。  
 >   
->  若要解决此问题，请将条件导入置于 .targets 文件中，或将代码置于条件块（如 [Choose Element (MSBuild)](../msbuild/choose-element-msbuild.md) 块）中。  
+>  若要解决此问题，请将条件导入置于 .targets 文件中，或将代码置于条件块（如 [Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md) 块）中。  
 
 ## <a name="wildcards"></a>通配符  
  在 .NET Framework 4 中，MSBuild 允许在项目属性中使用通配符。 存在通配符时，找到的所有匹配项会进行排序（实现可再现性），随后它们会按该顺序导入（如同显式设置了该顺序一样）。  

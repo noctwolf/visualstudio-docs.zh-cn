@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dab82b3ddf2bc39d1253321a335e1fe838235819
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 460d5f68242f232048fec294156f90f49331a21d
+ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31572317"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39231174"
 ---
 # <a name="xdcmake-task"></a>XDCMake 任务
 包装 XML 文档工具 (xdcmake.exe)，它将 XML 文档注释 (.xdc) 文件合并到一个 .xml 文件中。  
   
- 如果在 Visual C++ 源代码中提供文档注释，并使用 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp) 编译器选项进行编译，就会创建 .xdc 文件。 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[“XML 文档生成器工具”属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助选项 (**/?**)。  
+ 如果在 Visual C++ 源代码中提供文档注释，并使用“/doc”[](/cpp/build/reference/doc-process-documentation-comments-c-cpp)编译器选项进行编译，就会创建“.xdc”文件。 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助选项 (/?)。  
   
 ## <a name="remarks"></a>备注  
  默认情况下，xdcmake.exe 工具支持几个命令行选项。 如果你指定 **/old** 命令行选项，此工具还支持其他选项。  
@@ -41,14 +41,14 @@ ms.locfileid: "31572317"
   
 |参数|描述|  
 |---------------|-----------------|  
-|**AdditionalDocumentFile**|可选 **String []** 参数。<br /><br /> 指定还要合并的一个或多个 .xdc 文件。<br /><br /> 有关详细信息，请参阅[“XML 文档生成器工具”属性页](/cpp/ide/xml-document-generator-tool-property-pages)中的**附加文档文件**说明。 另请参阅 xdcmake.exe 的 **/old** 和 **/Fs** 命令行选项。|  
-|**AdditionalOptions**|可选 **String** 参数。<br /><br /> 在命令行上指定的选项列表。 例如，“*/option1 /option2 /option#*”。 此参数用于指定无法由其他任何 **XDCMake** 任务参数表示的选项。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[“XML 文档生成器工具”属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助 (**/?**)。|  
-|**DocumentLibraryDependencies**|可选 **Boolean** 参数。<br /><br /> 若为 `true` 且当前项目与解决方案中的静态库 (.lib) 项目有依赖关系，那么当前项目的 .xml 文件输出中就会包含此库项目的 .xdc 文件。<br /><br /> 有关详细信息，请参阅[“XML 文档生成器工具”属性页](/cpp/ide/xml-document-generator-tool-property-pages)中的**文档库依赖项**说明。|  
-|**OutputFile**|可选 **String** 参数。<br /><br /> 替代默认输出文件名。 默认名称派生自处理的第一个 .xdc 文件的名称。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)中的 **/out:**`filename` 选项。 另请参阅 xdcmake.exe 的 **/old** 和 **/Fo** 命令行选项。|  
+|**AdditionalDocumentFile**|可选 **String []** 参数。<br /><br /> 指定还要合并的一个或多个 .xdc 文件。<br /><br /> 有关详细信息，请参阅 [XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)中的**附加文档文件**说明。 另请参阅 xdcmake.exe 的“/old”和“/Fs”命令行选项。|  
+|**AdditionalOptions**|可选 **String** 参数。<br /><br /> 在命令行上指定的选项列表。 例如，/\<option1> /\<option2> /\<option#>。 此参数用于指定无法由其他任何 **XDCMake** 任务参数表示的选项。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助 (/?)。|  
+|**DocumentLibraryDependencies**|可选 **Boolean** 参数。<br /><br /> 若为 `true` 且当前项目与解决方案中的静态库 (.lib) 项目有依赖关系，那么当前项目的 .xml 文件输出中就会包含此库项目的 .xdc 文件。<br /><br /> 有关详细信息，请参阅 [XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)中的**文档库依赖项**说明。|  
+|**OutputFile**|可选 **String** 参数。<br /><br /> 替代默认输出文件名。 默认名称派生自处理的第一个 .xdc 文件的名称。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)中的“/out:\<filename>”选项。 另请参阅 xdcmake.exe 的“/old”和“/Fo”命令行选项。|  
 |**ProjectName**|可选 **String** 参数。<br /><br /> 当前项目的名称。|  
-|**SlashOld**|可选 **Boolean** 参数。<br /><br /> 若为 `true`，将启用其他 xdcmake.exe 选项。<br /><br /> 有关详细信息，请参阅 xdcmake.exe 的 **/old** 命令行选项。|  
+|**SlashOld**|可选 **Boolean** 参数。<br /><br /> 若为 `true`，将启用其他 xdcmake.exe 选项。<br /><br /> 有关详细信息，请参阅 xdcmake.exe 的“/old”命令行选项。|  
 |**Sources**|必选 `ITaskItem[]` 参数。<br /><br /> 定义可以被任务使用和发出的 MSBuild 源文件项的数组。|  
-|**SuppressStartupBanner**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则在任务开始时阻止显示版权和版本号消息。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)中的 **/nologo** 选项。|  
+|**SuppressStartupBanner**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则在任务开始时阻止显示版权和版本号消息。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)中的“/nologo”选项。|  
 |**TrackerLogDirectory**|可选 **String** 参数。<br /><br /> 指定跟踪器日志目录。|  
   
 ## <a name="see-also"></a>请参阅  

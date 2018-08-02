@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2ae66ff032b3f43f80f8c00b12e2d344bba298b9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970699"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39180069"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：创建 Web 服务测试
 
@@ -71,7 +71,7 @@ ms.locfileid: "31970699"
     > [!NOTE]
     > 通过使用 `{{DataSourceName.TableName.ColumnName}}` 语法，可以在 SOAP 体中使用数据绑定，从而用数据绑定值替换所有占位符值。
 
-13. 运行测试。 在 Web 性能测试结果查看器的上窗格中，选择 Web 服务请求。 在下窗格中，选择“Web 浏览器”选项卡。此时将显示 Web 服务返回的 XML 以及任何操作的结果。
+13. 运行测试。 在“Web 性能测试结果查看器”的顶部窗格中，选择 Web 服务请求。 在下窗格中，选择“Web 浏览器”选项卡。此时将显示 Web 服务返回的 XML 以及任何操作的结果。
 
 ## <a name="see-also"></a>请参阅
 

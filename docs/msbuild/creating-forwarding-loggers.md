@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b95b0725e0cbb3a7568e51298fb83f05b74f18fb
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31568635"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39179198"
 ---
-# <a name="creating-forwarding-loggers"></a>创建转发记录器
+# <a name="create-forwarding-loggers"></a>创建转发记录器
 在多处理器系统上生成项目时，转发记录器允许选择要监视的事件，提高了日志记录效率。 启用转发记录器后，可防止不必要的事件影响中心记录器、降低生成速度以及造成日志混乱。  
   
  要创建转发记录器，可实现 <xref:Microsoft.Build.Framework.IForwardingLogger> 接口，然后手动实现其方法，或者使用 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 类及其预配置的方法。 （后者可满足大多数应用程序。）  

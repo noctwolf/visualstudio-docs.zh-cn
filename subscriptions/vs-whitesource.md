@@ -9,37 +9,38 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0c2eed9efdcca076c20a240d60b4d38cdda23019
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31199396"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280295"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
-查找和修复开源漏洞，在内部版本中生成所有开源组件的综合清单和许可报告。  选择包括 6 个月免费访问期限的 Visual Studio 订阅。 
+查找和修复开源漏洞，在内部版本中生成所有开源组件的综合清单和许可报告。 一些 Visual Studio 订阅包括 6 个月免费访问期限。
 
 ## <a name="activation-steps"></a>激活步骤
 
 1.  若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2.  在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。    
+2.  在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。
 
     ![WhiteSource 权益磁贴](_img\vs-whitesource\vs-whitesource-tile.png)
 
-2.  你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。 
+2.  你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。
 
     ![WhiteSource 权益代码 ](_img\vs-whitesource\vs-whitesource-code.png)
 
-3.  在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。  
+3.  在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。
 
     ![激活 WhiteSource 权益](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
 4.  该页面的“激活帐户”部分将引导你完成以下四个步骤：
-    - 从 Microsoft Visual Studio 商城[安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果没有安装扩展的权限，请访问[此页](https://www.visualstudio.com/docs/marketplace/get-vsts-extensions#request)。
 
-    如果使用的是 VSTS，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此处以使用 VSTS 为例。 
+    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 VSTS 的免费扩展](/vsts/marketplace/install-vsts-extension?view=vsts)。
+
+    如果使用的是 VSTS，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此处以使用 VSTS 为例。
 
     ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
 
@@ -47,7 +48,7 @@ ms.locfileid: "31199396"
 
     ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。  
+    - 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。
 
     ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
@@ -55,13 +56,13 @@ ms.locfileid: "31199396"
 
     ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
-6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”。 一个激活代码只能激活一个项目。 
+6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”。 一个激活代码只能激活一个项目。
 
     ![WhiteSource 权益激活代码](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
-7.  激活现已完成，订阅还剩 180 天。 
+7.  激活现已完成，订阅还剩 180 天。
 
-8.  在生成步骤中需要添加 WhiteSource Bolt 扩展。  [WhiteSource Bolt 页](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)中提供了一个视频介绍如何操作。  
+8.  在生成步骤中需要添加 WhiteSource Bolt 扩展。  [WhiteSource Bolt 页](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)中提供了一个视频介绍如何操作。
 
 9. 运行生成后，将自动产生以下完整报告和仪表板：
     - 安全漏洞仪表板
@@ -71,6 +72,7 @@ ms.locfileid: "31199396"
     - 清单报告
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  是          |
@@ -82,11 +84,10 @@ ms.locfileid: "31199396"
 
 <sup>1</sup> 包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。
 
-无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。 
-
+无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
--  需要 WhiteSource Bolt 帮助？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 与 WhiteSource Bolt 代表实时聊天 
--  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://www.visualstudio.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://www.visualstudio.com/support/)。 
 
+-  需要 WhiteSource Bolt 帮助？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 与 WhiteSource Bolt 代表实时聊天
+-  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+-  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

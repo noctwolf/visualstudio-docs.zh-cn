@@ -1,7 +1,7 @@
 ---
 title: 调试 Python 代码
 description: Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
-ms.date: 03/05/2018
+ms.date: 07/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b521c85bd2a4fb8c29674a51e5e13ded2aba3fec
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 14716aa85245dcbd7c1ba0bc85824f5a53bece2d
+ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032250"
+ms.lasthandoff: 07/17/2018
+ms.locfileid: "39079818"
 ---
-# <a name="debugging-your-python-code"></a>调试 Python 代码
+# <a name="debug-your-python-code"></a>调试 Python 代码
 
 Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行的进程，在监视窗口和即时窗口中计算表达式，检查局部变量、断点、单步执行/单步跳出/单步跳过语句、设置下一语句等。
 
@@ -193,6 +193,49 @@ Python 调试交互窗口（“调试”>“窗口”>“Python 调试交互窗�
 调试交互窗口自身具有一组选项，可通过“工具”>“选项”>“Python 工具”>“调试交互窗口”进行访问。 与常规 Python 交互窗口（针对每个 Python 环境具有单独的实例）不同，该交互窗口只有一个调试交互窗口，并且它始终对正在调试的进程使用 Python 解释器。 请参阅[“选项”-“调试”选项](python-support-options-and-settings-in-visual-studio.md#debugging-options)。
 
 ![调试交互窗口选项](media/debugging-interactive-options.png)
+
+## <a name="use-the-experimental-debugger"></a>使用试验性调试程序
+
+从 Visual Studio 2017 预览版 4.0 开始，可以选择使用基于 ptvsd 4.1+ 版本的“试验性调试程序”。 若要选择使用该调试程序，请选择“工具” > “选项”菜单命令，然后在“选项”对话框中导航到“Python” > “试验”，然后选择“使用试验性调试程序”。
+
+试验性调试程序仅与有限的 Python 环境兼容，如下表所述：
+
+| Python 版本 | 是否与试验性调试程序兼容 |
+| --- | --- |
+| 2.6 | 否 |
+| 2.7 | 是 |
+| 3.1 到 3.4 | 否 |
+| 3.5 及更高版本 | 是 |
+| IronPython | 否 |
+
+如果尝试在不兼容的环境中使用试验性调试程序，Visual Studio 将显示错误（“调试程序与此环境不兼容”）：
+
+![使用试验性调试程序时，出现“调试程序与此环境不兼容”错误](media/debugging-experimental-incompatible-error.png)
+
+选择“禁用试验性调试程序”命令，该命令将取消选中“使用试验性调试程序”选项。
+
+> [!Note]
+> Python 3.3 和 3.4 目前不会显示警告。
+
+如果已在当前环境中安装了旧版本的 ptvsd（例如远程调试所需的 3.x 版本的早期 4.0.x 版本），则 Visual Studio 会显示错误“无法加载调试程序包”或警告“调试程序包已过时”：
+
+![使用试验性调试程序时，出现“无法加载调试程序包”错误](media/debugging-experimental-version-error.png)
+
+![使用试验性调试程序时，出现“调试程序包已过时”警告](media/debugging-experimental-version-warning.png)
+
+若要管理 ptvsd 安装，请使用“Python 环境”窗口中的“包”选项卡，或使用命令行中的以下命令：
+
+```ps
+# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
+pip uninstall ptvsd
+
+# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
+# -pre is required to allow pre-release versions as currently required by the experimental debugger.
+pip install --upgrade ptvsd -pre
+```
+
+> [!Important]
+> 虽然可以选择忽略某些 ptvsd 版本的警告，但 Visual Studio 可能无法正常运行。
 
 ## <a name="see-also"></a>请参阅
 

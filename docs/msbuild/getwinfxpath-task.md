@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e02d0f93dd406df170de2d4e83023fedced7d932
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 79092bcda726e6cd0122c46278f4c5ee32705ec9
+ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31573439"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39177680"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 任务
 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 任务返回当前 [!INCLUDE[TLA#tla_winfx](../msbuild/includes/tlasharptla_winfx_md.md)] 运行时的目录。  
@@ -59,8 +59,8 @@ ms.locfileid: "31573439"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [WPF MSBuild 引用](../msbuild/wpf-msbuild-reference.md)   
+ [WPF MSBuild 参考](../msbuild/wpf-msbuild-reference.md)   
  [任务参考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 参考](../msbuild/msbuild-reference.md)   
  [任务参考](../msbuild/msbuild-task-reference.md)   
- [Building a WPF Application (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)（生成 WPF 应用程序 (WPF)）
+ [生成 WPF 应用程序 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

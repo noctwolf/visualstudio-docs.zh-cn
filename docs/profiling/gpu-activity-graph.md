@@ -12,16 +12,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 41b7812db05b61c351346e5f0dcfa1bf4bd7bd1f
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 9dcadfdbfa52815fdd6d88f78afb88d421e203c7
+ms.sourcegitcommit: 269b55b413d2c82e6aa56c6ab8e53da7926fb2e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35237905"
 ---
 # <a name="gpu-activity-graph"></a>GPU 活动关系图
 并发可视化工具中的 GPU 活动图显示系统上的 DirectX 活动级别，此活动级别通过一段时间内使用的 DirectX 引擎数来衡量。  此图不显示使用了哪些特定引擎。  如果引擎正在处理任意 GPU 工作，则将视为正在使用此引擎。  
   
-## <a name="gpu-activity-graph-colors"></a>GPU 活动图颜色  
+## <a name="gpu-activity-graph-colors"></a>GPU 活动关系图颜色  
  绿色表示当前进程使用的 DirectX 引擎数。  
   
  浅灰色表示系统上其他进程使用的 DirectX 引擎数。 若要减少其他进程使用的 DirectX 引擎数，请减少系统上运行的其他进程数。  

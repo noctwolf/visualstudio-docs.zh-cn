@@ -9,27 +9,26 @@ description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2b656f7b0c40d9eadecd36fb9aa38fed5bbe1bf9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31196422"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380598"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
-可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://www.visualstudio.com/subscriptions/)。 这些就是我们所说的云订阅。
+可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为云订阅。
 
-[比较云订阅权益和定价](https://www.visualstudio.com/vs/pricing/)
+[比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)
 
 ## <a name="before-you-start"></a>准备工作
 
-*   若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。
-可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
+*   若要为购买的订阅计费，需要有 [Azure 订阅](https://azure.microsoft.com/pricing/purchase-options/)。 可在首次购买之前或在 Visual Studio Marketplace 中首次购买时[注册](https://portal.azure.com)。
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>如何购买云订阅
 
-0.  登录到[“Visual Studio Marketplace”>“订阅”](https://marketplace.visualstudio.com/subscriptions)。
+0.  登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 
 0.  选择想购买的订阅，例如：
 
@@ -37,7 +36,7 @@ ms.locfileid: "31196422"
 
 0.  选择用于计费的 Azure 订阅。 如果没有 Azure 订阅，可新建一个。
 
-    <img alt="Select Azure subscription for biling" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
 
 0.  选择要购买的订阅数。
 
@@ -57,16 +56,13 @@ ms.locfileid: "31196422"
 
     <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-<a name="manage-subscriptions"></a>
-##  <a name="cancel-renewals-of-cloud-subscriptions-youve-purchased"></a>取消续订已购买的云订阅
-
+## <a name="manage-subscriptions"></a>取消续订已购买的云订阅
 
 *   若要更改已购买的订阅数，请执行以下操作：
 
     <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
 
-*   若要取消这些订阅，可将订阅数减为零 (0)。
-下一个计费周期开始时（对于月度云订阅，为次月第一天；对于年度云订阅，为 12 个月后），它们不再续订。
+*   若要取消这些订阅，可将订阅数减为零 (0)。 下一个计费周期开始时（对于月度云订阅，为次月第一天；对于年度云订阅，为 12 个月后），它们不再续订。
 
 ## <a name="buy-cloud-subscriptions-now"></a>立即购买云订阅
 
@@ -78,6 +74,6 @@ ms.locfileid: "31196422"
 ## <a name="related-resources"></a>相关资源
 
 * [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)
-* [Visual Studio 订阅支持](https://www.visualstudio.com/vs/support/)
+* [Visual Studio 订阅支持](https://visualstudio.microsoft.com/vs/support/)
 * [Visual Studio 云订阅计费常见问题解答](vscloud-billing-faq.md)
 * [适用于 CSP 的 Visual Studio 云订阅购买](vscloud-csp.md)

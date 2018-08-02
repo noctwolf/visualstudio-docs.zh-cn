@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 1294083fa14bd71ca0d46aed481a963b8dfd39d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f939947c4b96584439d85c33c234dc769531888d
+ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968763"
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36280606"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>为测试控制器和测试代理分配角色
 
@@ -41,7 +41,7 @@ ms.locfileid: "31968763"
 
 ## <a name="to-create-and-configure-a-test-setting"></a>创建和配置测试设置
 
-1.  在解决方案资源管理器中，右键单击“解决方案项”，指向“添加”，然后选择“新建项”。
+1.  在“解决方案资源管理器”中，右键单击“解决方案项”，指向“添加”，然后选择“新建项”。
 
      “添加新项”对话框随即出现。
 
@@ -51,7 +51,7 @@ ms.locfileid: "31968763"
 
 4.  选择“添加”。
 
-     新的测试 TestSettingDistributedTestWalkthrough.testsettings 文件会显示在解决方案资源管理器中的“解决方案项”文件夹下。
+     新的测试 TestSettingDistributedTestWalkthrough.testsettings 文件会显示在“解决方案资源管理器”中的“解决方案项”文件夹下。
 
      此时会显示“测试设置”对话框。 “常规”页处于选中状态。
 

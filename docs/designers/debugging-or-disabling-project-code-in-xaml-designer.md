@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 9d77aa1d776352edd3a030507bc25086cad47d58
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4764df436a7adeb3ac65c574812c8f7d334d497b
+ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925812"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37890560"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -73,7 +73,7 @@ ms.locfileid: "31925812"
 
 -   在未处理的异常对话框中，选择“单击此处禁用正在运行的项目代码并重载设计器”  链接。
 
--   或者，在 XAML 设计器的工具栏上，选择“禁用项目代码”  按钮。
+-   或者，在 XAML 设计器的工具栏上，选择“禁用项目代码”按钮。
 
      ![“禁用项目代码”按钮](../designers/media/xaml_disablecode.png)
 
@@ -82,7 +82,7 @@ ms.locfileid: "31925812"
     > [!NOTE]
     > 对于面向 ARM 或 X64 处理器的项目，Visual Studio 无法在设计器中运行项目代码，因此禁用设计器中的“禁用项目代码”  按钮。
 
--   其中任一选项都将导致设计器重载，然后会禁用关联项目的所有代码。
+-   其中任一选项都会导致设计器重载，然后会禁用关联项目的所有代码。
 
     > [!NOTE]
     > 禁用项目代码可能导致设计时数据丢失。 或者调试在设计器中运行的代码。
