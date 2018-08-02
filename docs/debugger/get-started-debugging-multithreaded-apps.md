@@ -2,7 +2,7 @@
 title: 了解如何调试多线程应用程序
 description: 使用 Visual Studio 中的并行堆栈和并行监视窗口进行调试
 ms.custom: H1HackMay2017
-ms.date: 06/02/2017
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a037ef99a7e1ea56f6535b99b533c1c723fd2d81
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204214"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468678"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程中，只需要几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。
@@ -47,9 +47,9 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
   
      此时将出现 “新建项目” 对话框。  
   
-2.  在中**项目类型**s 框中，单击所选的语言： **Visual C#**， **Visual c + +**，或者**Visual Basic**。  
+2.  单击所选的语言： **Visual C#**， **Visual c + +**，或**Visual Basic**。  
   
-3.  在中**模板**框中，选择**控制台应用**。  
+3.  下**Windows 桌面**，选择**控制台应用**。  
   
 4.  在中**名称**框中，键入名称 MyThreadWalkthroughApp。  
   
