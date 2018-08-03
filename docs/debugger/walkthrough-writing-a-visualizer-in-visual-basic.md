@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba2be58b600a57fb405b55069df1c838019bfdab
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5de5eb0fd616e969b7a7eee628b4ef715d16b2a8
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058693"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468759"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 本演练演示如何使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写简单的可视化工具。 本演练中创建的可视化工具使用 Windows 窗体消息框显示字符串的内容。 此简单字符串可视化工具是一个基本示例，将演示如何创建更加适合您项目的其他数据类型的可视化工具。  
@@ -39,9 +39,9 @@ ms.locfileid: "37058693"
   
 1.  上**文件**菜单中，选择**新建**然后单击**新项目**。  
   
-2.  在中**新的项目**对话框中的**项目类型**s，单击**Visual Basic**。  
+2.  在中**新的项目**对话框中，选择**Visual Basic**。  
   
-3.  在中**模板**框中，单击**类库**。  
+3.  下 **.NET Standard**，单击**类库**。  
   
 4.  在中**名称**框中，键入相应的名称为类库，如**MyFirstVisualizer**。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "37058693"
   
 1.  上**文件**菜单上，单击**添加**，然后单击**新项目**。  
   
-2.  在中**添加新项目**对话框中**模板**框中，单击**控制台应用程序**。  
+2.  在中**添加新项目**对话框中，选择**Visual Basic**，然后单击**控制台应用程序**。  
   
 3.  在中**名称**框中，键入有意义的名称的控制台应用程序，如**MyTestConsole**。  
   

@@ -1,7 +1,7 @@
 ---
 title: 调试器设置和准备工作 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 412109d3beeda00dfd6f32e5644388523d067289
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151569"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468294"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  
@@ -50,9 +50,6 @@ ms.locfileid: "39151569"
   
  [调试 64 位应用程序](../debugger/debug-64-bit-applications.md)  
  描述如何调试 64 位应用程序。  
-  
- [调试和承载进程](../debugger/debugging-and-the-hosting-process.md)  
- 描述宿主进程的不同方面。  
   
  [如何：指定用于调试的 .NET Framework 版本](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  描述如何设置注册表项以指示调试器使用哪个版本。  

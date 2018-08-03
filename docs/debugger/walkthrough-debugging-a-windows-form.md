@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e76507b64ea15d390f10cf4896830c03a2c963
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5fdd9dadc92143fabfaeea35d776b57b4b4c1748
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056792"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468525"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标准的 Windows 应用程序。 你可以完成此演练使用 Visual Basic、 C# 或 c + +。  
@@ -51,27 +51,25 @@ Windows 窗体是最常见的托管应用程序之一。 Windows 窗体创建标
   
 2.  在项目类型窗格中，打开**Visual Basic**， **Visual C#**，或**Visual c + +** 节点，然后  
   
-    1.  对于 Visual Basic 或 Visual C# 中，选择**Windows**节点，然后选择**Windows 窗体应用程序**中**模板**窗格。  
+    1.  对于 Visual Basic 或 Visual C# 中，选择**Windows 桌面** > **Windows 窗体应用**。  
   
-    2.  对于 Visual c + + 中，选择**CLR**节点，然后选择**Windows 窗体应用程序**中**模板**窗格...  
+    2.  对于 Visual c + + 中，选择**Windows 桌面应用程序**。  
   
-3.  在中**模板**窗格中，选择**Windows 应用程序**。  
+3.  在中**名称**框中，为项目指定唯一名称 (例如，Walkthrough_SimpleDebug)。  
   
-4.  在中**名称**框中，为项目指定唯一名称 (例如，Walkthrough_SimpleDebug)。  
-  
-5.  单击 **“确定”**。  
+4.  单击 **“确定”**。  
   
      Visual Studio 创建一个新项目，并在 Windows 窗体设计器中显示新窗体。 有关详细信息，请参阅[Windows 窗体设计器](http://msdn.microsoft.com/en-us/3c3d61f8-f36c-4d41-b9c3-398376fabb15)。  
   
-6.  上**视图**菜单中，选择**工具箱**。  
+5.  上**视图**菜单中，选择**工具箱**。  
   
      随即将打开工具箱。 有关详细信息，请参阅[工具箱](../ide/reference/toolbox.md)。  
   
-7.  在工具箱中，单击**按钮**控件，将控件拖到窗体设计图面。 将按钮拖动窗体上。  
+6.  在工具箱中，单击**按钮**控件，将控件拖到窗体设计图面。 将按钮拖动窗体上。  
   
-8.  在工具箱中，单击**文本框中**控件，将控件拖到窗体设计图面。 Drop**文本框中**窗体上。  
+7.  在工具箱中，单击**文本框中**控件，将控件拖到窗体设计图面。 Drop**文本框中**窗体上。  
   
-9. 在窗体设计图面上，双击该按钮。  
+8. 在窗体设计图面上，双击该按钮。  
   
      这会转到代码页。 光标应位于`button1_Click`。  
   

@@ -1,4 +1,4 @@
----
+﻿---
 title: 如何：仅使用键盘进行操作
 description: 了解如何使用默认快捷键组合在 Visual Studio 集成开发环境 (IDE) 中轻松导航和编码。
 ms.date: 08/22/2016
@@ -25,7 +25,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
 ms.locfileid: "31949914"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>如何：以独占方式使用键盘
+# <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
 
 > [!TIP]
 > 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
