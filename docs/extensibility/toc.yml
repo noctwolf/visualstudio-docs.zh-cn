@@ -425,8 +425,8 @@
       href: getting-started-with-the-vsix-project-template.md
     - name: 演练：发布 Visual Studio 扩展
       href: walkthrough-publishing-a-visual-studio-extension.md
-    - name: 演练：通过命令行发布 Visual Studio 扩展
-      href: walkthrough-publishing-a-visual-studio-extension-via-command-line.md
+    - name: 演练：创建扩展包
+      href: walkthough-create-extension-pack.md
     - name: 将依赖项添加到 VSIX 包
       href: how-to-add-a-dependency-to-a-vsix-package.md
     - name: VSIX 包的剖析

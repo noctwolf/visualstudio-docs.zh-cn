@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf45b224edcab42b56ca18d558ecd4c8e42842f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177300"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468785"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>演练： 调试并行应用程序在 Visual Studio 中
 本演练演示如何使用**并行任务**并**并行堆栈**窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 本演练演示如何使用代码中断后**并行任务**并**并行堆栈**windows 来对其进行检查。  
@@ -65,9 +65,9 @@ ms.locfileid: "39177300"
   
 1.  在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。  
   
-2.  在中**已安装的模板**窗格中，选择 Visual C#、 Visual Basic 或 Visual c + +。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 显示在框架框中。  
+2.  选择任一**Visual C#**， **Visual Basic**，或**Visual c + +**。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 显示在框架框中。  
   
-3.  选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
+3.  下**Windows 桌面**，选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
   
 4.  在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。  
   
