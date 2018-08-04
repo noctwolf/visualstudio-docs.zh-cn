@@ -1,5 +1,5 @@
 ---
-title: 自动化模型概述 |Microsoft 文档
+title: 自动化模型概述 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,27 +14,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9369bb6074bb294223051ba7dfa158648fe0cad
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f8d6f5844f47e867d7c0442c9bb86e3722b40b27
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134742"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498008"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
-自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是应用程序可以操作在 Visual Studio 环境并自动执行常见任务。 Visual Studio 扩展可以创建自定义 Visual Studio 组件，或将添加到标准组件 （如文本编辑器） 的功能。  
+自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是可以操作在 Visual Studio 环境，并自动执行常见任务的应用程序。 Visual Studio 扩展可以创建自定义 Visual Studio 组件或添加到标准组件，如文本编辑器功能。  
   
 ## <a name="objects-in-the-automation-model"></a>自动化模型中的对象  
- 自动化模型由相关组的对象用于控制常见环境的主要方面组成。 下面是显示了一组广泛的撰写自动化模型的对象的关系图。  
+ 自动化模型包含相关组来控制的常见环境的主要方面的对象。 下图显示了大量的 Visual Studio 编写自动化模型的对象。  
   
  ![Visual Studio 自动化对象图](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
-Visual Studio 自动化对象  
   
  有关详细信息，请参阅[扩展 Visual Studio 环境](http://msdn.microsoft.com/Library/4173a963-7ac7-4966-9bb7-e28a9d9f6792)。  
   
- 环境的不同功能区域提供的模型。 例如，没有代码可能会发现你的各个元素的代码模型。 没有为各种文档元素的文档模型。 一个区域中，项目区域中，是 VSPackage 提供程序特定感兴趣。 你将很可能需要新的项目类型作为基本相同的方法中促成自动化模型[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]参与自动化模型。 过程所示[为 Vspackage 提供 Automation](../../extensibility/internals/providing-automation-for-vspackages.md)。  
+ 在环境用于不同功能区域中提供了模型。 例如，是您可能会发现代码中的各种元素的代码模型。 没有文档模型的各种文档元素。 一个区域中，项目区域中，是对 VSPackage 提供程序特定的感兴趣。 你可能想在新的项目类型以参与自动化模型，方法与大致相同[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]参与自动化模型。 过程所示[提供的 Vspackage 的自动化](../../extensibility/internals/providing-automation-for-vspackages.md)。  
   
- 你可以考虑扩展自动化模型的环境的位置：  
+ 你可以考虑扩展环境的自动化模型的位置：  
   
 -   项目  
   
@@ -43,8 +42,9 @@ Visual Studio 自动化对象
 -   代码  
   
 -   生成  
+
   
- 有关自动化的详细信息，请参阅[Visual Studio 的自动化和扩展性](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档所提供的链接可，帮助你做出关于如何应提供为你的 VSPackage 的自动化的决策。  
+自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](http://msdn.microsoft.com/Library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 创建外接程序](http://msdn.microsoft.com/Library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

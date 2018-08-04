@@ -1,5 +1,5 @@
 ---
-title: 开始使用源控件插件 |Microsoft 文档
+title: 开始使用源代码管理插件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,31 +14,31 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f5c88d932fd2915273c86924d2df8f1233baeed
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2f1eb4f76616f6a5f6791cbcd1b8a5770d1dcabb
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128906"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498095"
 ---
-# <a name="getting-started-with-source-control-plug-ins"></a>开始使用源控件插件
-若要创建源代码管理插件，必须创建一个 DLL，它实现在源控件插件 API 中，定义的函数，然后注册与 DLL[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]以使其在源代码版本控制中可供使用。  
+# <a name="get-started-with-source-control-plug-ins"></a>开始使用源代码管理插件
+若要创建源代码管理插件，必须创建实现源控件插件 API 中定义的函数的 DLL，然后注册与 DLL [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，使其可供使用源代码版本控制中。  
   
- 为源控件插件提供了三个版本的源控制插件 API （版本 1.1、 1.2 和 1.3）。以下网页中介绍的源控件插件 API 是 1.3 版。 它的设计目标是与源代码控制插件完全兼容支持 1.1 和 1.2 的版本。 [What's New in 源控件插件 API 版本 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)部分将详细介绍支持的源控制插件 API 的最新版本的新功能。  
+ 三个版本的源控制插件 API （版本 1.1、 1.2 和 1.3） 可为源代码管理插件。此处的文档的源控制插件 API 是 1.3 版。 它的设计目标是与源代码管理插件完全兼容支持版本 1.1 和 1.2。 [什么是源控制插件 API 版本 1.3 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)部分详细介绍了最新版本的源控制插件 API 中支持的新功能。  
   
 ## <a name="in-this-section"></a>本节内容  
- [如何：安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
- 描述如何使在源代码管理 DLL 中插入所需的注册表项。  
+ [如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ 介绍如何在源控件 DLL 中插入所需的注册表项。  
   
- [源代码管理插件 API 版本 1.3 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
- 提供对源控件插件 API 版本 1.3 中所做的更改的简要概述。  
+ [什么是源控制插件 API 版本 1.3 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  
+ 提供对源控制插件 API 版本 1.3 中所做的更改的简要概述。  
   
- [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
- 提供对源控件插件 API 版本 1.2 中所做的更改的简要概述。  
+ [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)  
+ 提供对源控制插件 API 版本 1.2 中所做的更改的简要概述。  
   
 ## <a name="related-sections"></a>相关章节  
  [源代码管理插件](../../extensibility/source-control-plug-ins.md)  
- 提供源控制插件 API 中的所有元素的完整的列表。  
+ 提供源控制插件 API 中的所有元素的完整列表。  
   
  [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)  
- 定义源控件插件 SDK 并描述包含的资源。
+ 定义源控制插件 SDK 并介绍了包含的资源。

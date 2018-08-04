@@ -1,5 +1,5 @@
 ---
-title: IDE Guid |Microsoft 文档
+title: IDE Guid |Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,16 +13,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10acb5be1caacbbe496ad98f48516206bc14b1cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dbcf81c34cae9c2f2e4e76e995666b280092b29d
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130260"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498179"
 ---
-# <a name="ide-guids"></a>IDE Guid
+# <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants>类发布的集成的开发环境 (IDE) 的某些部分的 Guid 下, 表中列出。
+<xref:Microsoft.VisualStudio.VSConstants>类发布的集成的开发环境 (IDE) 的某些部分 Guid 下, 表中列出。
 
 ## <a name="core-systems"></a>核心系统
 
@@ -39,7 +39,7 @@ ms.locfileid: "31130260"
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_TextEditorFactory>|8B382828-6202-11d1-8870-0000F87579D2|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_VsNewProjectPseudoFolder>|DCF2A94A-45B0-11d1-ADBF-00C04FB6BE4C|
 
-## <a name="broadly-visible-components"></a>广泛可见的组件
+## <a name="broadly-visible-components"></a>广泛可见组件
 
 |返回的常量|GUID|
 |--------------|----------|
@@ -85,7 +85,7 @@ ms.locfileid: "31130260"
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.StoreValidationPane_guid>|54065C74-1B11-4249-9EA7-5540D1A6D528|
 |<xref:Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane>|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="command-sets-and-properties"></a>命令集和属性
+## <a name="command-sets-and-properties"></a>命令组和属性
 
 |返回的常量|GUID|
 |--------------|----------|
@@ -98,7 +98,7 @@ ms.locfileid: "31130260"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>任务列表 Guid
+## <a name="task-list-guids"></a>任务列表的 Guid
 
 |返回的常量|GUID|
 |--------------|----------|
@@ -114,7 +114,7 @@ ms.locfileid: "31130260"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskList>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID_VsTaskListPackage>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>组件选择器页 Guid
+## <a name="component-selector-page-guids"></a>组件选择器页的 Guid
 
 |常量|GUID|
 |---------------|----------|
@@ -122,7 +122,7 @@ ms.locfileid: "31130260"
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage>|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |<xref:Microsoft.VisualStudio.VSConstants.GUID_SolutionPage>|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>杂项 Shell Guid
+## <a name="miscellaneous-shell-guids"></a>杂项命令行程序 Guid
 
 |常量|GUID|
 |---------------|----------|
@@ -132,6 +132,6 @@ ms.locfileid: "31130260"
 
 ## <a name="see-also"></a>请参阅
 
-- [托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)
+- [在托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)
 - [IDE 常量](../extensibility/ide-constants.md)
-- [用于扩展项目系统的 IDE 定义的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [用于扩展项目的系统 IDE 定义的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

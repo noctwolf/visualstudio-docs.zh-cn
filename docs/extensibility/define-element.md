@@ -1,5 +1,5 @@
 ---
-title: 定义元素 |Microsoft 文档
+title: 定义元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 336c0b52e50731ff63fb790a1a1b201b0646caea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2596023628086ce5e921eeb8499956828d4c8a5c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126957"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497156"
 ---
 # <a name="define-element"></a>定义元素
-定义的符号名称和值对。 此符号可计算的条件属性。 有关详细信息，请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另请参阅[符号元素](../extensibility/symbols-element.md)。  
+定义的符号名称和值对。 此符号可以评估的条件属性。 有关详细信息，请参阅[条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另请参阅[Symbols 元素](../extensibility/symbols-element.md)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,7 +48,7 @@ ms.locfileid: "31126957"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 提供的命令对集成的开发环境 (IDE) 的所有元素。 例如，菜单项、 菜单、 工具栏和组合框。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的 VSPackage 提供对集成的开发环境 (IDE) 的所有元素。 例如，菜单项、 菜单、 工具栏和组合框。|  
   
 ## <a name="example"></a>示例  
   
@@ -57,5 +57,5 @@ ms.locfileid: "31126957"
 <Define name="MODE" value="Standard"/>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
