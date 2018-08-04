@@ -1,5 +1,5 @@
 ---
-title: 通过使用打开文件命令显示文件 |Microsoft 文档
+title: 使用打开文件命令显示文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,47 +15,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b84992dc1803f1eee4fc36d477db1708eb90904
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 425433c3d67e654398fde1609b3f9c4d54e63648
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130888"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498720"
 ---
-# <a name="displaying-files-by-using-the-open-file-command"></a>通过使用打开文件命令显示文件
-以下步骤描述了 IDE 如何处理**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还介绍项目应如何响应来自此命令的调用。  
+# <a name="display-files-by-using-the-open-file-command"></a>使用打开文件命令显示文件
+以下步骤介绍如何处理 IDE**打开的文件**命令，可在找到**文件**菜单中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 步骤还说明项目应如何响应来自此命令的调用。  
   
- 当用户单击**打开的文件**命令**文件**菜单上，并选择文件从**打开的文件**对话框中，将发生以下过程。  
+ 当用户单击**打开的文件**命令**文件**菜单中，并选择从文件**打开的文件**对话框中，将发生以下过程：  
   
-1.  使用正在运行的 document 表，IDE 确定文件是否已在项目中打开。  
+1.  使用运行文档表，确定文件是否已在项目中打开 IDE。  
   
-    -   如果文件处于打开状态，则 IDE 将 resurfaces 窗口。  
+    -   如果文件已打开，IDE 将 resurfaces 窗口。  
   
-    -   如果该文件未打开，IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>查询来确定哪些项目可以打开的文件的每个项目。  
+    -   如果文件未打开，IDE 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>来查询每个项目，以确定哪一个项目可以打开该文件。  
   
         > [!NOTE]
-        >  中的项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供一个优先级值，指示你的项目将打开文件的级别。 中提供了优先级值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举。  
+        >  中的项目实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>，提供一个优先级值，指示你的项目将打开该文件的级别。 中提供了优先级值<xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>枚举。  
   
-2.  每个项目具有优先级级别，用于指示重要性响应它会将放置于的项目以打开该文件。  
+2.  每个项目与优先级级别，用于指示重要性响应它置于所要打开该文件的项目。  
   
-3.  IDE 使用以下条件来确定哪些项目中打开的文件：  
+3.  IDE 使用以下条件来确定哪一个项目打开的文件：  
   
-    -   将使用最高优先级 (DP_Intrinsic) 进行响应的项目打开的文件。 如果多个项目具有此优先级响应，响应的第一个项目打开的文件。  
+    -   响应具有最高优先级的项目 (`DP_Intrinsic`) 打开该文件。 如果多个项目使用此优先级进行响应，响应的第一个项目打开的文件。  
   
-    -   如果具有最高优先级 (DP_Intrinsic) 没有项目进行响应，但使用的相同，较低优先级的所有项目响应，活动的项目将打开的文件。 如果没有项目处于活动状态，以响应的第一个项目打开的文件。  
+    -   如果没有项目使用的最高优先级进行响应 (`DP_Intrinsic`)，但具有相同、 低优先级，响应的所有项目活动的项目打开的文件。 如果没有项目处于活动状态，以响应的第一个项目打开的文件。  
   
-    -   如果没有项目声明 (DP_Unsupported) 的文件的所有权，杂项文件项目打开的文件。  
+    -   如果没有项目声明文件的所有权 (`DP_Unsupported`)，杂项文件项目打开的文件。  
   
-         如果创建杂项文件项目的实例，则项目始终通过值 DP_CanAddAsExternal 做出响应。 此值指示项目可以打开的文件。 使用此项目以容纳打开的文件不在任何其他项目。 此项目中的项列表不被永久性;此项目是在中可见**解决方案资源管理器**仅当它用于打开文件。  
+         如果创建的杂项文件项目实例，则项目始终具有值响应`DP_CanAddAsExternal`。 此值指示该项目可以打开该文件。 使用此项目以容纳打开的文件不在任何其他项目中。 此项目中的项列表不会持久保留;此项目会显示在**解决方案资源管理器**仅当它用于打开文件。  
   
-         杂项文件项目并不表示它可以打开的文件，如果尚未创建项目的实例。 在这种情况下，IDE 将创建杂项文件项目的实例并通知项目打开的文件。  
+         杂项文件项目并不表示它可以打开该文件，如果尚未创建项目的实例。 在这种情况下，IDE 将创建杂项文件项目的实例并通知项目以打开该文件。  
   
-4.  只要 IDE 确定哪些项目中打开的文件，它调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>，在项目的方法。  
+4.  只要 IDE 确定哪一个项目打开的文件，它将调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>在项目的方法。  
   
-5.  然后，该项目包含通过使用特定于项目的编辑器或标准编辑器打开文件的选项。 有关详细信息，请参阅[如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)和[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
+5.  然后，项目已使用特定于项目的编辑器或标准编辑器打开该文件的选项。 有关详细信息，请参阅[如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)并[如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)分别。  
   
-## <a name="see-also"></a>另请参阅  
- [通过使用命令打开显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
+## <a name="see-also"></a>请参阅  
+ [使用打开方式命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)   
  [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)   
- [如何： 打开项目特定编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
- [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)
+ [如何： 打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)   
+ [如何： 打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)

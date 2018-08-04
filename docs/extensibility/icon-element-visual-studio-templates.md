@@ -1,5 +1,5 @@
 ---
-title: Icon 元素 （Visual Studio 模板） |Microsoft 文档
+title: Icon 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cc1c64e6347f7ea5183efa013504c9e672f5010
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23908a11c22d93ad37ee4e615f4100c5890e0fa5
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129847"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499287"
 ---
-# <a name="icon-element-visual-studio-templates"></a>Icon 元素（Visual Studio 模板）
-指定的路径和文件名作为图标，在显示的图像文件**新项目**或**添加新项**对话框中，为模板。  
+# <a name="icon-element-visual-studio-templates"></a>Icon 元素 （Visual Studio 模板）
+指定的路径和用作中显示该图标的图像文件的文件名**新的项目**或**添加新项**对话框中的，为模板。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -48,8 +48,8 @@ ms.locfileid: "31129847"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`Package`|可选特性，高级的用户应用场景。<br /><br /> 指定 Visual Studio 包的 GUID id。|  
-|`ID`|可选特性，高级的用户应用场景。<br /><br /> 指定 Visual Studio 资源 id。|  
+|`Package`|适用于高级的用户情形的可选属性。<br /><br /> 指定 Visual Studio 包的 GUID id。|  
+|`ID`|适用于高级的用户情形的可选属性。<br /><br /> 指定 Visual Studio 资源 id。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -61,9 +61,9 @@ ms.locfileid: "31129847"
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。|  
   
 ## <a name="text-value"></a>文本值  
- 一个文本值是必需的除非`Package`和`ID`可以使用的属性。  
+ 文本值是必需的除非`Package`和`ID`使用属性。  
   
- 文本提供路径和文件名称的模板图标将出现在**新项目**对话框。  
+ 文本提供了将出现在模板图标的路径和文件名称**新的项目**对话框。  
   
 ## <a name="remarks"></a>备注  
  `Icon` 是 `TemplateData` 的必需子元素。  
@@ -95,6 +95,6 @@ ms.locfileid: "31129847"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

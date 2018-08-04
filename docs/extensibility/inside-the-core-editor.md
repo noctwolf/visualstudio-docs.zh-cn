@@ -1,5 +1,5 @@
 ---
-title: 核心编辑器内 |Microsoft 文档
+title: 核心编辑器内 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95745cbef015e9f6ceddb9b84d75b52ec9805dea
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 37c62ebad5b5f119c9acf5b62b14db6743949c19
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130432"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500444"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一套可使你修改和查询文本信息的多个组件。 如果通过使用旧 API 定义了核心编辑器，可继续使用这些自定义，将通过编辑器适配器路由。 建议，但是，你调整到新的编辑器 API 你自定义项。  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。  
   
- 以下几个方面是核心编辑器一些重要方面：  
+ 以下几个方面是核心编辑器的一些重要方面：  
   
 -   文本缓冲区  
   
@@ -38,45 +38,45 @@ ms.locfileid: "31130432"
 -   与语言服务的集成  
   
 ## <a name="in-this-section"></a>本节内容  
- [使用旧版 API 实例化核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
- 提供有关如何使用的分步说明<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>编辑器创建核心的实例。  
+ [通过使用传统的 API 实例核心编辑器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
+ 提供有关如何使用的分步说明<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>创建编辑器的核心的一个实例。  
   
- [通过使用旧版 API 访问文本缓冲区](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
- 讨论核心编辑器中的文本缓冲区的角色，说明用于访问缓冲区，并提供由文本缓冲区对象实现的接口的列表的关联的系统<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>。  
+ [通过使用传统的 API 访问的文本缓冲区](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)  
+ 介绍核心编辑器中的文本缓冲区的角色，介绍了用于访问缓冲区，并提供了一系列文本缓冲区对象，实现的接口的关联的系统<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>。  
   
- [旧版 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
- 提供的接口的用于通知的文本缓冲区事件列表。  
+ [传统的 API 中的文本缓冲区事件](../extensibility/text-buffer-events-in-the-legacy-api.md)  
+ 提供了一系列使用的文本缓冲区事件通知的接口。  
   
- [如何： 为与旧版 API 的文本缓冲区事件注册](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
- 描述如何告知文本缓冲区事件。  
+ [如何： 注册文本缓冲区事件与传统的 API](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ 介绍如何向建议文本缓冲区的事件。  
   
  [使用文本管理器来监视全局设置](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
- 讨论如何使用文本管理器以与核心编辑器组件共享全局首选项信息以及如何接收的文本管理器事件通知。  
+ 介绍如何使用文本管理器与核心编辑器组件共享全局首选项信息以及如何接收通知的文本管理器事件。  
   
- [通过使用旧版 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
- 描述在核心编辑器中的文本视图的角色，并列出由实现的接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>对象。  
+ [通过使用传统的 API 访问文本视图](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)  
+ 介绍核心编辑器中的文本视图角色并列出了实现的接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>对象。  
   
- [通过使用旧版 API 的自定义代码窗口](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
- 提供有关代码窗口用于括起的文本视图、 讨论如何使用代码窗口管理器来提供到代码窗口中，修饰和提供的新视图的通知的信息。  
+ [使用传统的 API 自定义代码窗口](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)  
+ 提供有关代码窗口用于括住文本视图、 讨论如何使用代码窗口管理器来提供到代码窗口中，修饰和提供新的视图的通知的信息。  
   
- [通过使用旧版 API 更改视图设置](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
- 提供有关如何强制视图设置以及如何删除强制的设置的分步说明。  
+ [通过使用传统的 API 更改视图设置](../extensibility/changing-view-settings-by-using-the-legacy-api.md)  
+ 提供有关如何强制执行视图设置以及如何删除强制的设置的分步说明。  
   
  [语言服务和核心编辑器](../extensibility/language-services-and-the-core-editor.md)  
- 描述某种语言服务的控制代码修饰实例化。  
+ 介绍了某种语言服务的控制代码修饰的实例化。  
   
 ## <a name="related-sections"></a>相关章节  
  [演练： 创建核心编辑器和注册编辑器文件类型](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
- 提供有关如何从托管代码中启动核心编辑器的分步说明。  
+ 提供有关如何从托管代码启动核心编辑器的分步说明。  
   
  [下拉栏](../extensibility/drop-down-bar.md)  
- 讨论如何下拉栏代码窗口中使用，并描述实现下拉栏时使用的接口。  
+ 讨论如何下拉栏使用在代码窗口中，并介绍实现下拉栏时所使用的接口。  
   
- [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)  
- 说明文本标记以及如何在核心编辑器中，使用它们的概念，并列出用于访问和管理文本标记的接口。  
+ [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)  
+ 说明文本标记和如何在核心编辑器中使用的概念，并列出了用于访问和管理文本标记的接口。  
   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)  
- 提供有关如何创建一个文本标记以及如何将自定义命令添加到快捷菜单的分步说明。  
+ 提供有关如何创建文本标记以及如何将自定义命令添加到快捷菜单的分步说明。  
   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)  
- 提供有关如何创建自定义文本标记以及如何提供标记类型作为服务的分步说明。
+ 提供有关如何创建自定义文本标记以及如何提供的标记类型为服务的分步说明。

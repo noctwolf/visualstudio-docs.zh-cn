@@ -1,5 +1,5 @@
 ---
-title: 检测系统要求 |Microsoft 文档
+title: 检测系统要求 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,39 +14,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e98235bd224876b00714e1f71210ea69cb6faff
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a794391001934164e52bdd73d940cb73ff3b5f3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128699"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500077"
 ---
-# <a name="detecting-system-requirements"></a>检测系统要求
-除非安装了 Visual Studio 将无法工作 VSPackage。 当你使用 Microsoft Windows Installer 管理你的 VSPackage 的安装时，你可以配置要检测是否安装了 Visual Studio 的安装程序。 你还可以配置它以检查系统的其他要求，例如，特定版本的 Windows 或特定 RAM 量。  
+# <a name="detect-system-requirements"></a>检测系统要求
+VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft Windows 安装程序来管理你的 VSPackage 的安装时，您可以配置要检测是否安装了 Visual Studio 的安装程序。 此外可以配置它检查到系统的其他要求，例如，Windows 的特定版本或特定 RAM 量。  
   
-## <a name="detecting-visual-studio-editions"></a>检测 Visual Studio 版本  
- 若要确定是否安装了 Visual Studio 的一个版本，验证安装注册表项的值 (REG_DWORD) 1 的相应文件夹中下, 表中列出。 请注意，Visual Studio 版本的层次结构：  
+## <a name="detect-visual-studio-editions"></a>检测到 Visual Studio 版本  
+ 若要确定是否安装了 Visual Studio 的版本，请确认的值**安装**注册表项是 *(REG_DWORD) 1*与下表中列出的相应文件夹中。 请注意，Visual Studio 版本的层次结构：  
   
 1.  企业  
   
 2.  Professional  
   
 3.  社区  
-  
- 如果安装了"较高"的版本将添加以及"较低"的版本与该版本的注册表项。 也就是说，如果安装 Enterprise edition，则安装密钥设置为 1 企业，以及专业版和社区版。 因此，你需要仅检查所需的"高"版本。  
+      
+安装较新的版本时，该版本的注册表项还将添加与早期版本。 也就是说，如果安装的 Enterprise edition，则**安装**键设置为*1*企业，以及专业版和社区版本。 因此，您需要检查仅为所需的最新版本。  
   
 > [!NOTE]
->  在注册表编辑器的 64 位版本，32 位密钥会显示在 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\。 Visual Studio 密钥正在 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\。  
+>  在 64 位版本的注册表编辑器中，32 位密钥下显示**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**。 Visual Studio 密钥正在**HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。  
   
 |产品|键|  
 |-------------|---------|  
 |Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|  
 |Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|  
 |Visual Studio Community 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\community|  
-|Visual Studio 2015 Shell （集成和隔离）|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
+|Visual Studio 2015 Shell （集成和独立）|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell|  
   
-## <a name="detecting-when-visual-studio-is-running"></a>检测 Visual Studio 运行时  
- 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须运行 Visual Studio 时进行检测，然后拒绝安装程序。 Windows Installer 不允许你使用表项来启用此类检测。 相反，必须创建自定义操作，如下所示： 使用`EnumProcesses`函数 devenv.exe 过程中，并在启动条件或有条件地使用安装属性，是将设置显示一个对话框，提示用户关闭Visual Studio。  
+## <a name="detect-when-visual-studio-is-running"></a>检测到运行 Visual Studio  
+ 如果 Visual Studio 正在安装 VSPackage 时，不能正确注册你的 VSPackage。 安装程序必须检测到 Visual Studio 运行，且然后拒绝安装程序。 Windows 安装程序不允许您使用表条目来启用此类检测。 相反，必须按如下所示创建自定义操作： 使用`EnumProcesses`函数来检测*devenv.exe*处理，然后启动条件中可以设置使用的安装程序属性或有条件地显示一个对话框这将提示用户以关闭 Visual Studio。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>请参阅  
+ [使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -1,5 +1,5 @@
 ---
-title: 从设置存储中获取服务信息 |Microsoft 文档
+title: 从设置存储中获取服务信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11731e36517ae6245dddd1ebdd3b002fb3c37391
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 947eb0fd25e57e00f355afac8dc993071859189c
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127498"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500483"
 ---
-# <a name="getting-service-information-from-the-settings-store"></a>从设置存储中获取服务信息
-若要查找所有可用服务，或者想要确定是否安装了特定服务，你可以使用设置存储。 你必须知道服务类的类型。  
+# <a name="get-service-information-from-the-settings-store"></a>从设置存储区获取服务信息
+若要查找所有可用的服务，或以确定是否安装了特定服务，可以使用设置存储。 您必须知道服务类的类型。  
   
-### <a name="to-list-the-available-services"></a>若要列出可用服务  
+## <a name="to-list-the-available-services"></a>若要列出可用服务  
   
-1.  创建一个名为 FindServicesExtension 的 VSIX 项目，然后添加名为 FindServicesCommand 自定义命令。 有关如何创建自定义命令的详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1.  创建一个名为的 VSIX 项目`FindServicesExtension`，然后添加名为的自定义命令`FindServicesCommand`。 有关如何创建自定义命令的详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  在 FindServicesCommand.cs，添加以下 using 语句：  
+2.  在中*FindServicesCommand.cs*，添加以下 using 语句：  
   
     ```vb  
     using System.Collections.Generic;  
@@ -34,7 +34,7 @@ ms.locfileid: "31127498"
     using System.Windows.Forms;  
     ```  
   
-3.  获取配置设置存储区，然后查找名为服务的子集合。 此集合包含所有可用的服务。 在 MenuItemCommand 方法中，删除现有代码，并将其替换为以下：  
+3.  获取配置设置存储区，然后查找名为服务的子集合。 此集合包括所有可用的服务。 在`MenuItemCommand`方法，删除现有的代码，并将其替换为以下：  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -53,18 +53,18 @@ ms.locfileid: "31127498"
     }  
     ```  
   
-4.  生成项目并启动调试。 实验实例中出现。  
+4.  生成项目并启动调试。 将显示在实验实例。  
   
-5.  在实验实例中，在**工具**菜单上，单击**调用 FindServicesCommand**。  
+5.  在实验实例上**工具**菜单上，单击**调用 FindServicesCommand**。  
   
-     你应看到列出的所有服务的消息框。  
+     您应看到列出的所有服务的消息框。  
   
-     若要验证这些设置，你可以使用注册表编辑器。  
+     若要验证这些设置，可以使用注册表编辑器。  
   
-## <a name="finding-a-specific-service"></a>查找特定的服务  
- 你还可以使用<xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>方法来确定是否安装了特定服务。 你必须知道服务类的类型。  
+## <a name="find-a-specific-service"></a>查找特定的服务  
+ 此外可以使用<xref:Microsoft.VisualStudio.Settings.SettingsStore.CollectionExists%2A>方法，以确定是否安装了特定服务。 您必须知道服务类的类型。  
   
-1.  在前面的过程中创建的项目 MenuItemCallback，搜索的配置设置存储`Services`集合中具有子集合命名服务的 GUID。 在这种情况下，我们将寻找帮助服务。  
+1.  在上一个过程中创建的项目的 MenuItemCallback，搜索的配置设置存储`Services`具有子集合的服务的 GUID 命名的集合。 在这种情况下，我们将寻找帮助服务。  
   
     ```  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -81,6 +81,6 @@ ms.locfileid: "31127498"
   
 2.  生成项目并启动调试。  
   
-3.  在实验实例中，在**工具**菜单上，单击**调用 FindServicesCommand**。  
+3.  在实验实例上**工具**菜单上，单击**调用 FindServicesCommand**。  
   
-     你应看到与文本消息**帮助服务可用：** 跟**True**或**False**。 若要验证此设置，可以使用注册表编辑器，如前面的步骤中所示。
+     你应看到一条消息包含文本**帮助服务可用：** 跟**True**或**False**。 若要验证此设置，可以使用注册表编辑器，如在前面的步骤中所示。

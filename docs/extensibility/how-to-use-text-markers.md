@@ -1,5 +1,5 @@
 ---
-title: 如何： 使用文本标记 |Microsoft 文档
+title: 如何： 使用文本标记 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,50 +13,50 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5267295875976ac5370d97f186307637a49b6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fdb02ccb4e1b32904e9423a0f851b538144d6f29
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133380"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497649"
 ---
 # <a name="how-to-use-text-markers"></a>如何： 使用文本标记
-文本标记可以用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  
+文本标记可用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  
   
 ## <a name="procedures"></a>过程  
   
-#### <a name="to-apply-text-markers"></a>将文本标记  
+### <a name="to-apply-text-markers"></a>若要将文本标记应用  
   
-1.  获取实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>类。  
+1.  获取的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>类。  
   
     > [!NOTE]
-    >  核心编辑器时自动适用于任何它正在编辑的文档使用标准文本标记和不应需要显式应用标准文本标记。  
+    >  核心编辑器会自动将标准文本标记应用于任何文档的编辑，并且不应需要显式应用标准文本标记。  
   
-2.  获取你感兴趣通过调用标记的标记类型 ID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法替换`GUID`你想要使用的文本标记。  
+2.  获取通过调用感兴趣的标记的标记类型 ID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法替换`GUID`你想要使用的文本标记。  
   
     > [!NOTE]
     >  不要使用`GUID`VSPackage 或提供文本标记的服务。  
   
-3.  使用通过调用获取的标记类型 ID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法作为参数，以调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法将文本标记应用到给定的文本区域。  
+3.  使用标记类型 ID 获取通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>作为参数来调用方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法将文本标记应用于给定文本的区域。  
   
-#### <a name="to-add-features-to-text-markers"></a>若要将功能添加到文本标记  
+### <a name="to-add-features-to-text-markers"></a>若要将功能添加到文本标记  
   
-1.  可能需要将其他功能添加到文本标记，如工具提示、 特殊的上下文菜单上或处理程序的特殊情况。 若要这样做：  
+1.  可能需要将其他功能添加到文本标记，如工具提示、 特殊的上下文菜单中或处理程序的特殊情况。 为此，请执行以下操作：  
   
 2.  创建一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
   
-3.  如果需要其他功能，请实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>实现对同一对象的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
+3.  如果需要其他功能，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>上实现的相同对象的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
   
-4.  传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>创建，对调用的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用于将文本标记应用到给定的文本区域。  
+4.  传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>创建，到对调用的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用于将文本标记应用到给定区域的文本。  
   
 5.  添加到文本标记区域的上下文菜单支持时，必须创建菜单。  
   
-     有关详细信息如何创建上下文菜单，请参阅[上下文菜单](../extensibility/context-menus.md)。  
+     有关如何创建上下文菜单，请参阅详细信息[上下文菜单](../extensibility/context-menus.md)。  
   
 6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]环境调用的方法提供的接口，如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法根据需要。  
   
-## <a name="see-also"></a>另请参阅  
- [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+## <a name="see-also"></a>请参阅  
+ [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
  [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)

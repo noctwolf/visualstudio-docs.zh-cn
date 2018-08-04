@@ -1,5 +1,5 @@
 ---
-title: CreatePkgDef 实用程序 |Microsoft 文档
+title: CreatePkgDef 实用工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,45 +16,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8ae53766a42ac2ed218bc92f59088d27e4434e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135775"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500691"
 ---
-# <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
-采用 Visual Studio 扩展作为参数的.dll 文件，并创建一个.pkgdef 文件随附.dll。 .Pkgdef 文件包含否则将在安装扩展时写入到系统注册表的所有信息。  
+# <a name="createpkgdef-utility"></a>CreatePkgDef 实用工具
+采用 Visual Studio 扩展中作为参数的.dll 文件，并创建 *.pkgdef*随附的文件 *.dll*文件。 *.Pkgdef*文件包含否则会在安装该扩展时写入到系统注册表的所有信息。  
   
 > [!NOTE]
->  大部分自动包含在 Visual Studio SDK 中的项目模板创建.pkgdef 文件作为生成过程的一部分。 本文档适用于那些希望手动创建包或转换现有的包，若要使用.pkgdef 部署。  
+>  大部分自动包含在 Visual Studio SDK 中的项目模板创建 *.pkgdef*文件作为生成过程的一部分。 本文档适用于想要手动创建包或转换现有包使用的那些 *.pkgdef*部署。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath  
+CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>  
 ```  
   
 ## <a name="arguments"></a>自变量  
- / =`FileName`  
- 必须的。 设置的.pkgdef 输出文件的名称`FileName`。  
+ **/ out =&lt;文件名&gt;**  
+ 必须的。 设置的名称 *.pkgdef*输出文件&lt;FileName&gt;。  
   
  /codebase  
- 可选。 强制使用基本代码实用程序的注册。  
+ 可选。 强制注册**基本代码**实用程序。  
   
- /assembly  
- 强制使用程序集实用程序的注册。  
+ **/assembly**  
+ 强制注册**程序集**实用程序。  
   
- `AssemblyPath`  
- 你想要生成.pkgdef.dll 文件的路径。  
+ **&lt;AssemblyPath&gt;**  
+ 路径 *.dll*你想要生成的文件 *.pkgdef*。  
   
 ## <a name="remarks"></a>备注  
- 通过使用.pkgdef 文件的扩展部署将替换 Visual Studio 的早期版本的注册表要求。  
+ 通过使用扩展部署 *.pkgdef*文件将替换 Visual Studio 的早期版本的注册表要求。  
   
- .Pkgdef 文件必须安装在以下位置之一中： %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ 或 %vsinstalldir%\Common7\IDE\Extensions\\。 如果安装文件夹为 %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\，扩展将无法识别的 Visual Studio 中，但默认情况下将被禁用。 用户可以通过启用扩展**扩展和更新**。 如果安装文件夹为 %vsinstalldir%\Common7\IDE\Extensions\\，默认情况下启用扩展。  
+ *.Pkgdef*文件必须安装在以下位置之一： 
+
+ - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+ 
+ - *%vsinstalldir%\Common7\IDE\Extensions\\*
+    
+ 如果安装文件夹是 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*，扩展将识别的 Visual Studio 中，但默认情况下将禁用。 用户可以启用扩展，通过使用**扩展和更新**。 
+   
+ 如果安装文件夹是 *%vsinstalldir%\Common7\IDE\Extensions\\*，默认情况下启用扩展。  
   
 > [!NOTE]
 >  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)

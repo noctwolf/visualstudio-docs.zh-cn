@@ -1,5 +1,5 @@
 ---
-title: GuidSymbol 元素 |Microsoft 文档
+title: GuidSymbol 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d5e3a3f4d33e166d344669dbeb4bc1a877335f0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 16e7a1b84a6baa26b69545b3fa55e4434e5998f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128060"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500064"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
-`GuidSymbol`元素包含的 guid: id 对，表示菜单、 组或命令的 GUID。 ID 来自`IDSymbol`中的元素`GuidSymbol`元素。 `GuidSymbol`元素具有`name`提供的 guid，它包含在一个友好名称的属性`value`属性。  
+`GuidSymbol`元素包含表示菜单、 组或命令的 guid: id 对中的 GUID。 ID 来自`IDSymbol`中的元素`GuidSymbol`元素。 `GuidSymbol`元素具有`name`提供的 GUID，它包含在一个友好名称的属性`value`属性。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <GuidSymbol name="guidMyCommandSet" value="{xxxxxxxxxxxxx-xxxx-xxxx-xxxxxxxxxxxx}">  
   <IDSymbol>... </IDSymbol>  
   <IDSymbol>... </IDSymbol>  
@@ -47,16 +47,16 @@ ms.locfileid: "31128060"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含表示菜单、 组或命令的 guid: id 对的 ID。|  
+|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含表示菜单、 组或命令的 guid: id 对中的 ID。|  
   
 ### <a name="parent-elements"></a>父元素  
   
 |元素|描述|  
 |-------------|-----------------|  
-|[Symbols 元素](../extensibility/symbols-element.md)|组`GuidSymbol`.vsct 文件中的元素。|  
+|[Symbols 元素](../extensibility/symbols-element.md)|组`GuidSymbol`中的元素 *.vsct*文件。|  
   
 ## <a name="remarks"></a>备注  
- 通常情况下，.vsct 文件包含三种`GuidSymbol`中的元素及其`Symbols`部分、 一个用于包本身、 一个用于命令集 （菜单、 组和包提供的命令的集合） 和另一个用于提供的位图为按钮和其他可视组件的图标。 每个`IDSymbol`元素中的给定`GuidSymbol`元素必须具有唯一`value`。但是， `IDSymbol` ，只要它们具有不同的父，可以在包中存在具有相同的值的元素。  
+ 通常情况下， *.vsct*文件包含三种`GuidSymbol`中的元素及其`Symbols`部分中，包本身、 设置的命令 （菜单，收集组，以及包提供的命令），并一个用于按钮和其他可视化组件提供图标的位图。 每个`IDSymbol`元素中的给定`GuidSymbol`元素必须具有一个唯一`value`。但是， `IDSymbol` ，只要它们具有不同的父，可以在包中存在具有相同的值的元素。  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

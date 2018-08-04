@@ -1,5 +1,5 @@
 ---
-title: 包括元素 |Microsoft 文档
+title: 包含元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 189bac6ed410177a615c85abb5be02302030d19b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7ed632610f0d6bcbf8da6e7788add001740ea446
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133293"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498923"
 ---
-# <a name="include-element"></a>包含的元素
-Include 元素指定可以位于的文件提供包含以插入到当前文件的路径。  所有符号和定义的类型将都成为已编译的结果的一部分。  
+# <a name="include-element"></a>包含元素
+Include 元素指定的文件，可以找到对提供包括插入到当前文件的路径。  所有符号和定义的类型将都成为已编译的结果的一部分。  
   
 ## <a name="syntax"></a>语法  
   
@@ -52,7 +52,7 @@ Include 元素指定可以位于的文件提供包含以插入到当前文件的
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的元素的所有-即，菜单项、 菜单、 工具栏和组合框-向 IDE 提供 VSPackage。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的元素的所有 — 也就是说，菜单项、 菜单、 工具栏和组合框 — VSPackage 提供到 IDE。|  
   
 ## <a name="example"></a>示例  
   
@@ -60,5 +60,5 @@ Include 元素指定可以位于的文件提供包含以插入到当前文件的
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

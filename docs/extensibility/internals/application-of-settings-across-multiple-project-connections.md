@@ -1,5 +1,5 @@
 ---
-title: 跨多个项目连接设置的应用程序 |Microsoft 文档
+title: 跨多个项目连接设置的应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,29 +13,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dff30ea80fb2de9bf4d90ffa48cd2f9b3d40756
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d8b8d7d6dc1e596686a2fad7b53363b2387a47b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129201"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500038"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接设置的应用程序
-源代码管理插件生成使用源控件的插件 API 1.2 中，可以使用批处理操作来执行相同的源代码管理操作跨多个项目或多个连接上下文。 批处理可以用于消除冗余，每个项目中的用户体验的对话框。  
+源代码管理插件使用源控制插件 API 版本 1.2，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。  
   
- 如果用户选择了属于在源代码管理插件的多个连接使用源控件插件 API 1.1 （例如，在不同的文件共享计算机上两个 Web 项目） 生成的多个项，并检查其，用户将看到相同的对话框中重复。 发生这种情况是即使用户单击**应用于所有**复选框在对话框中，因为 IDE 重置其状态为每个连接上下文。  
+ 如果用户选择多个项属于使用源控制插件 API 版本 1.1 （例如，在不同的文件共享计算机上两个 web 项目） 生成的源代码管理插件中的多个连接，并检查它们，用户将看到相同对话框中重复。 即使用户单击也会出现这种情况下**应用到所有**中的复选框的对话框中，因为 IDE 将重置其状态，以便每个连接上下文。  
   
-## <a name="new-capability-flag"></a>新功能标志  
- `SccBeginBatch` 函数集`SCC_CAP_BATCH`标志以指示批处理操作正在进行  
+## <a name="new-capability-flag"></a>新的功能标志  
+ `SccBeginBatch`函数集`SCC_CAP_BATCH`标志，用于指示批处理操作正在进行。  
   
 ## <a name="new-functions"></a>新的函数  
- 以下新功能支持批处理操作：  
+以下新函数支持批处理操作：  
   
 -   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)  
   
 -   [SccEndBatch](../../extensibility/sccendbatch-function.md)  
+
   
- `SCCBeginBatch`函数开始源代码管理操作的组。 `SccEndBatch` 关闭组。 不能嵌套组。  
+`SCCBeginBatch`函数启动的源代码管理操作组。 `SccEndBatch`函数将关闭的组。 不能嵌套组。  
   
-## <a name="see-also"></a>另请参阅  
- [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>请参阅  
+ [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

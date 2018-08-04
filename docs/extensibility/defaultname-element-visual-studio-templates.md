@@ -1,5 +1,5 @@
 ---
-title: DefaultName 元素 （Visual Studio 模板） |Microsoft 文档
+title: DefaultName 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e67d8970859906e839abf89e85e38c24c2d88066
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03513b786c17e5bef3d8fa1fff79c1c3e73fe6a0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126853"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500314"
 ---
-# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 元素（Visual Studio 模板）
-创建时指定 Visual Studio 项目系统将生成的项目或项目的名称。  
+# <a name="defaultname-element-visual-studio-templates"></a>DefaultName 元素 （Visual Studio 模板）
+在创建时指定 Visual Studio 项目系统将生成的项目或项目的名称。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -60,14 +60,14 @@ ms.locfileid: "31126853"
 ## <a name="remarks"></a>备注  
  `DefaultName` 是可选元素。  
   
- 对于项目，此元素指定将项目存储在磁盘目录的名称。 对于项，它指定源代码文件的文件名。  
+ 对于项目，此元素指定将项目存储在磁盘的目录的名称。 对于项，它指定源代码文件的文件名称。  
   
- 当你创建项目或项时，你可以修改默认名称使用**名称**选项，即从可用**新项目**对话框或**添加新项**对话框。  
+ 在创建项目或项时，你可以修改默认名称使用**名称**选项，这是从可用**新项目**对话框或**添加新项**对话框。  
   
- 如果您不希望项目系统以生成项目或项的默认名称，然后设置[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)元素`False`。  
+ 如果不希望项目系统在生成项目或项的默认名称，然后设置[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)元素`False`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示的标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  
+ 下面的示例演示为标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -85,6 +85,6 @@ ms.locfileid: "31126853"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)
