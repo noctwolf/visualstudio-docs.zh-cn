@@ -1,5 +1,5 @@
 ---
-title: 获取项目属性 |Microsoft 文档
+title: 获取项目属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93e941c98293ca1d28f92bce1bc8c21f5ca2121
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 58967c87b86eff8ab00e343ee872637e18ee57ed
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127619"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497750"
 ---
-# <a name="getting-project-properties"></a>获取项目属性
+# <a name="get-project-properties"></a>获取项目属性
 本演练演示如何在工具窗口中显示项目属性。  
   
 ## <a name="prerequisites"></a>系统必备  
- 从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>若要创建 VSIX 项目并添加工具窗口  
   
-1.  每个 Visual Studio 扩展开头 VSIX 部署项目将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]名为 VSIX 项目`ProjectPropertiesExtension`。 你可以查找中的 VSIX 项目模板**新项目**下的对话框**Visual C# / 可扩展性**。  
+1.  每个 Visual Studio 扩展开始于 VSIX 部署项目，它将包含扩展资产。 创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 项目名为`ProjectPropertiesExtension`。 可以查找中的 VSIX 项目模板**新的项目**下的对话框**Visual C#** > **扩展性**。  
   
-2.  通过添加一个名为的自定义工具窗口项模板添加工具窗口`ProjectPropertiesToolWindow`。 在**解决方案资源管理器**，右键单击项目节点并选择**添加 / 新项**。 在**添加新项对话框**，请转到**Visual C# 项 / 扩展性**和选择**自定义工具窗口**。 在**名称**在对话框底部字段中，文件名称更改为`ProjectPropertiesToolWindow.cs`。 有关如何创建自定义工具窗口的详细信息，请参阅[使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+2.  通过添加一个名为的自定义工具窗口项模板添加工具窗口`ProjectPropertiesToolWindow`。 在中**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**。 在中**添加新项对话框**，请转到**Visual C# 项** > **扩展性**，然后选择**自定义工具窗口**。 在中**名称**在对话框底部字段中，将文件名称更改为`ProjectPropertiesToolWindow.cs`。 有关如何创建自定义工具窗口的详细信息，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 3.  生成解决方案并确认编译时不会产生错误。  
   
-### <a name="to-display-project-properties-in-a-tool-window"></a>在工具窗口中显示项目属性  
+### <a name="to-display-project-properties-in-a-tool-window"></a>若要在工具窗口中显示项目属性  
   
-1.  在 ProjectPropertiesToolWindowCommand.cs 文件添加以下 using 语句。  
+1.  ProjectPropertiesToolWindowCommand.cs 文件中添加以下 using 语句。  
   
     ```csharp  
     using EnvDTE;  
@@ -45,9 +45,9 @@ ms.locfileid: "31127619"
   
     ```  
   
-2.  在 ProjectPropertiesToolWindowControl.xaml，删除现有的按钮和从工具箱添加 TreeView。 您还可以从 ProjectPropertiesToolWindowControl.xaml.cs 文件删除 click 事件处理程序。  
+2.  在中*ProjectPropertiesToolWindowControl.xaml*，删除现有按钮并从工具箱添加 TreeView。 您还可以删除 click 事件处理程序从*ProjectPropertiesToolWindowControl.xaml.cs*文件。  
   
-3.  在 ProjectPropertiesToolWindowCommand.cs，使用 ShowToolWindow() 方法打开该项目并读取其属性，然后将属性添加到树视图。 ShowToolWindow 的代码应如下所示：  
+3.  在中*ProjectPropertiesToolWindowCommand.cs*，使用`ShowToolWindow()`方法来打开该项目并读取其属性，然后将属性添加到树视图。 ShowToolWindow 的代码应如下所示：  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -94,10 +94,10 @@ ms.locfileid: "31127619"
     }  
     ```  
   
-4.  生成项目并启动调试。 应显示的实验实例。  
+4.  生成项目并启动调试。 应显示在实验实例。  
   
 5.  在实验实例中打开一个项目。  
   
-6.  在**视图 / 其他窗口**单击**ProjectPropertiesToolWindow**。  
+6.  在中**视图** > **其他 Windows**单击**ProjectPropertiesToolWindow**。  
   
-     你应看到的第一个项目和所有项目属性的名称以及工具窗口中的树控件。
+     应会看到工具窗口以及名称和它的所有项目属性的第一个项目中的树控件。

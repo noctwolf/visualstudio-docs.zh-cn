@@ -1,5 +1,5 @@
 ---
-title: 如何： 禁止显示文件更改通知 |Microsoft 文档
+title: 如何： 禁止显示文件更改通知 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,38 +13,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95821baec7f2f46a65e2ab0f0b0b78b0e397f2ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128767"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497958"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 禁止显示文件更改通知
-更改表示文本缓冲区的物理文件后，对话框中显示并显示消息**你想要将更改保存到以下各项？** 这称为文件更改通知。 如果很多更改要为到该文件，但是，反复显示此对话框可以很快烦人。  
+表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。  
   
- 以编程方式可禁止显示此对话框，使用以下过程。 通过执行此操作，你可以重新加载文件立即而无需提示用户每次保存所做的更改。  
+ 以编程方式可以禁止显示此对话框，使用以下过程。 通过禁止显示对话框中，您可以重新加载文件立即而无需提示用户每次保存所做的更改。  
   
-### <a name="to-suppress-file-change-notification"></a>若要禁止显示文件更改通知  
+## <a name="to-suppress-file-change-notification"></a>若要禁止显示文件更改通知  
   
-1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法来确定哪些文本缓冲区对象是与你打开的文件关联。  
+1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A>方法，以确定哪些文本缓冲区对象是与你打开的文件相关联。  
   
-2.  直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>内存中要忽略监视文件更改通过获取的对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>接口从<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（文档数据） 对象，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法替换`fIgnore`参数设置为`true`。  
+2.  直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象，它内存中要忽略监视文件更改通过获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>从接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（文档数据） 对象，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法替换`fIgnore`参数设置为`true`。  
   
-3.  调用对象方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口，以便更新中内存<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>（例如何时将字段添加到你的组件） 的文件更改的对象。  
+3.  调用对象方法<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口，以便更新在内存<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象 （例如，当将字段添加到你的组件） 的文件更改。  
   
-4.  使用更改更新磁盘上的文件，而无需考虑任何挂起的用户可能具有正在进行的编辑。  
+4.  使用更改更新磁盘上的文件而不考虑任何挂起的编辑用户可能正在进行中。  
   
-     这种方式，当你直接<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>要恢复的文件监视对象更改通知，请在内存中的文本缓冲区反映生成，以及所有其他挂起的编辑的更改。 磁盘上的文件反映生成由你的最新代码，并且任何以前保存用户编辑的代码中的用户的更改。  
+     这样一来，当您直接时<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象就可以继续监视文件更改通知，请在内存中的文本缓冲区反映您生成的更改。 在内存中的文本缓冲区也反映了所有其他挂起的编辑。 磁盘上的文件反映了由你生成的最新代码和任何以前保存在用户编辑代码中的用户所做的更改。  
   
-5.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法通知<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象继续监视文件更改通知，通过设置`fIgnore`参数`false`。  
+5.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A>方法以通知<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象就可以继续通过设置监视文件更改通知`fIgnore`参数`false`。  
   
-6.  如果你打算对该文件，如下所示的源代码管理 (SCC)，这种情况进行一些更改，你必须告知全局文件更改服务以暂时挂起文件更改通知。  
+6.  如果你打算进行几项更改到文件中，如下所示的源代码管理 (SCC)，这种情况，您必须告诉全局文件更改服务以暂时挂起文件更改通知。  
   
-     例如，如果您重写文件，然后更改时间戳，你必须挂起文件更改通知，如在重写和 timestample 操作每个计数为单独的文件更改事件。 若要启用应改为调用的全局文件更改通知<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A>方法。  
+     例如，如果重写该文件，然后将更改时间戳必须挂起文件更改通知，因为重写和时间戳操作每个计为单独的文件更改事件。 若要启用全局文件更改通知，应改为调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A>方法。  
   
 ## <a name="example"></a>示例  
- 下面演示如何禁止显示文件更改通知。  
+ 下面的代码示例演示如何取消显示文件更改通知。  
   
 ```cpp  
 //Misc. helper classes  
@@ -116,4 +116,4 @@ void CSuspendFileChanges::Resume()
 ```  
   
 ## <a name="robust-programming"></a>可靠编程  
- 如果你的用例涉及多项更改的文件，如下所示的 SCC，则这种情况然后很重要警报文档数据恢复的文件更改监视之前恢复全局文件更改通知。
+ 如果您的案例涉及多项更改的文件，如下所示的 SCC，这种情况然后务必继续发出警报的文档数据，就可以继续监视文件更改前执行全局文件更改通知。

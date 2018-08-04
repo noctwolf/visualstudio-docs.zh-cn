@@ -1,5 +1,5 @@
 ---
-title: 在旧语言服务中的自定义文档属性 |Microsoft 文档
+title: 在旧版语言服务中的自定义文档属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc4706a7cd1a666da8562ce78de5af9366c69fab
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 473b3970fe8a7d7e65b8e569420b2be6455a3d14
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132490"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499079"
 ---
-# <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧语言服务中自定义文档属性
-文档属性可以显示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**属性**窗口。 编程语言通常没有与单独的源代码文件关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。  
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧版语言服务中自定义文档属性
+文档属性可以显示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**属性**窗口。 编程语言通常没有与单个源代码文件相关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。  
   
 ## <a name="discussion"></a>讨论  
- 如果你的语言需要自定义文档属性，你必须从派生类<xref:Microsoft.VisualStudio.Package.DocumentProperties>类，派生类中实现必需的属性。  
+ 如果你的语言需要自定义文档属性，您必须从派生类<xref:Microsoft.VisualStudio.Package.DocumentProperties>类，并在派生类上实现必要的属性。  
   
- 此外，文档属性通常存储在源文件本身。 这要求语言服务要分析中显示的源代码文件中的属性信息**属性**窗口，并更新的源文件时更改中的文档属性**属性**窗口。  
+ 此外，文档属性通常存储在源代码文件本身。 这需要分析从源文件中显示的属性信息的语言服务**属性**窗口以及当更改时，文档属性中更新的源文件**属性**窗口。  
   
-## <a name="customizing-the-documentproperties-class"></a>自定义 DocumentProperties 类  
- 若要支持自定义文档属性，你必须从派生类<xref:Microsoft.VisualStudio.Package.DocumentProperties>类，并添加所需的任意多个属性。 你也应提供用户属性来组织在**属性**显示窗口。 如果属性具有仅`get`访问器，它将显示为只读中**属性**窗口。 如果属性同时具有`get`和`set`访问器中，属性也可以更新中**属性**窗口。  
+## <a name="customize-the-documentproperties-class"></a>自定义 DocumentProperties 类  
+ 若要支持自定义文档属性，您必须从派生类<xref:Microsoft.VisualStudio.Package.DocumentProperties>类，并添加所需的所有属性。 此外应提供组织他们中的用户属性**属性**窗口中显示。 如果属性只能具有`get`访问器，它显示为只读的中**属性**窗口。 如果属性同时具有`get`并`set`访问器，该属性还可以更新在**属性**窗口。  
   
 ### <a name="example"></a>示例  
- 下面是派生自的类示例<xref:Microsoft.VisualStudio.Package.DocumentProperties>，显示两个属性，文件名和描述。 更新属性时，在上的自定义方法<xref:Microsoft.VisualStudio.Package.LanguageService>类调用以将属性写入的源文件。  
+ 下面是示例类派生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>，显示两个属性`Filename`和`Description`。 更新某个属性是、 上的自定义方法<xref:Microsoft.VisualStudio.Package.LanguageService>类调用以写入到的源文件的属性。  
   
 ```csharp  
 using System.ComponentModel;  
@@ -123,8 +123,8 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="instantiating-the-custom-documentproperties-class"></a>实例化自定义 DocumentProperties 类  
- 若要实例化您的自定义文档属性类，必须重写<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>你的版本中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类返回的单个实例你<xref:Microsoft.VisualStudio.Package.DocumentProperties>类。  
+## <a name="instantiate-the-custom-documentproperties-class"></a>实例化自定义的 DocumentProperties 类  
+ 若要实例化您的自定义文档属性类，必须重写<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>方法在你的版本中<xref:Microsoft.VisualStudio.Package.LanguageService>类以返回的单个实例在<xref:Microsoft.VisualStudio.Package.DocumentProperties>类。  
   
 ### <a name="example"></a>示例  
   
@@ -150,20 +150,20 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="properties-in-the-source-file"></a>源文件中的属性  
- 由于通常特定于源文件文档属性，值存储在源文件本身。 这需要支持的语言分析器或扫描仪来定义这些属性。 例如，XML 文档的属性存储在根节点上。 根节点上的值被修改时**属性**窗口值发生更改，并在编辑器中更新的根节点。  
+## <a name="properties-in-the-source-file"></a>源代码文件中的属性  
+ 由于文档属性通常特定于源代码文件，值存储在源代码文件本身中。 这需要支持的语言分析器或扫描程序来定义这些属性。 例如，XML 文档的属性存储在根节点上。 根节点上的值被修改时**属性**窗口值发生更改，并在编辑器中更新的根节点。  
   
 ### <a name="example"></a>示例  
- 此示例将存储"Filename" "Description"中的源文件的前两个行作为嵌入到特殊的注释标头中的属性：  
+ 此示例中存储的属性`Filename`和`Description`中的源文件的前两行，特殊注释标头中作为嵌入：  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- 此示例演示从获取和设置文档属性的源文件的前两个行如何将更新的属性，如果用户直接修改源文件所需的两个方法。 `SetPropertyValue`显示下面是相同的示例中的方法调用其中一个从`TestDocumentProperties`类"自定义 DocumentProperties 类"部分中所述。  
+ 此示例演示从获取和设置文档属性的源文件的前两行如何如果用户直接修改源文件的属性将更新所需的两种方法。 `SetPropertyValue`方法显示以下是相同的示例中其中一个名为从`TestDocumentProperties`类，如中所示*自定义 DocumentProperties 类*部分。  
   
- 此示例使用扫描仪确定前两个行中的令牌的类型。 此示例是仅供说明用途。 这种情况下更常见的方法是将源文件分析为所谓的分析树其中树的每个节点包含有关特定的令牌的信息。 根节点将包含的文档属性。  
+ 此示例使用扫描程序以确定前两行中的令牌的类型。 此示例是仅供说明用途。 这种情况的更典型方法是分析源文件为所谓的分析树，树的每个节点包含特定标记有关的信息。 根节点将包含文档属性。  
   
 ```csharp  
 using System.ComponentModel;  
@@ -400,5 +400,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [旧语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>请参阅  
+ [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)

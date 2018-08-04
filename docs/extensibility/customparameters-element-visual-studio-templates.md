@@ -1,5 +1,5 @@
 ---
-title: CustomParameters 元素 （Visual Studio 模板） |Microsoft 文档
+title: CustomParameters 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c09d320b1a9185e79e36d54ff0363219d3dabc6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 464c4720dc4693ef2fb968a23a538e74d03d1a26
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099797"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498644"
 ---
-# <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 元素（Visual Studio 模板）
-组的自定义参数的向导进行参数替换时要传递给模板向导。  
+# <a name="customparameters-element-visual-studio-templates"></a>CustomParameters 元素 （Visual Studio 模板）
+组是在该向导可以将参数替换项时要传递到模板向导的自定义参数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -55,7 +55,7 @@ ms.locfileid: "31099797"
 ## <a name="remarks"></a>备注  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何使用模板中的多个自定义参数。 当从具有以下自定义参数的所有实例的模板创建项目或项`$color1$`和`$color2$`在模板文件将替换为`Red`和`Blue`分别。  
+ 下面的示例演示如何在模板中使用多个自定义参数。 当从具有以下自定义参数的所有实例的模板创建项目或项`$color1$`并`$color2$`在模板中的文件将替换`Red`和`Blue`分别。  
   
 ```  
 <CustomParameters>  
@@ -64,7 +64,7 @@ ms.locfileid: "31099797"
 </CustomParameters>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CustomParameter 元素 （Visual Studio 模板）](../extensibility/customparameter-element-visual-studio-templates.md)   
  [模板参数](../ide/template-parameters.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

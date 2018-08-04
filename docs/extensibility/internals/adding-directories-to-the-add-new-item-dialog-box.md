@@ -1,5 +1,5 @@
 ---
-title: 添加到目录添加新项对话框 |Microsoft 文档
+title: 将目录添加到添加新建项对话框 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8d9989e8cf4ec8f0eb714a26e73d89fba339b71
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ba535908b1c5ccb06f0f29490c0b87c377d6b2be
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127743"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498329"
 ---
-# <a name="adding-directories-to-the-add-new-item-dialog-box"></a>添加到目录添加新项对话框
-下面的代码示例演示如何注册一组新的目录**添加新项**对话框。 目录**添加新项**对话框中是不同的每个项目。 因此，在中找到的项目子项下注册目录\<HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects >:  
+# <a name="add-directories-to-the-add-new-item-dialog-box"></a>将目录添加到添加新项对话框
+下面的代码示例演示如何注册一组新的目录**添加新项**对话框。 目录**添加新项**对话框是不同的每个项目。 因此下, 注册目录**项目**子项中, 找到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\Projects**。
   
-## <a name="the-registry-script"></a>注册表脚本  
+## <a name="registry-script"></a>注册表脚本  
   
 ```  
 NoRemove Projects  
@@ -48,16 +48,16 @@ NoRemove Projects
 }  
 ```  
   
- Template_Path 值指定包含的项目模板的目录的完整路径。 .Vsz 文件或原型的模板文件要克隆，可以是这些模板。  
+ `%Template_Path%`值指定包含的项目模板的目录的完整路径。 这些模板可以是 *.vsz*文件或要克隆的原型的模板文件。  
   
- SortPriority 值指定排序的优先级。  
+ `SortPriority`值指定排序优先级。  
   
-## <a name="adding-items-to-an-existing-project"></a>将项添加到现有项目  
- 你还可以向现有项目添加项。 例如，对于[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目中，你可以将项添加到\<根 > files\microsoft Visual Studio \VC#\CSharpProjectItems\LocalProjectItems 文件夹。 在这种情况下`%GUID_Project%`是 C# 项目 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) 的 GUID。  
+## <a name="add-items-to-an-existing-project"></a>将项添加到现有项目  
+ 此外可以向现有项目添加项。 例如，对于[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目中，您可以将项添加到*\<根 > \Program Files\Microsoft Visual Studio\VC #\CSharpProjectItems\LocalProjectItems*文件夹。 在这种情况下，`%GUID_Project%`是 C# 项目 ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}) 的 GUID。  
   
- 你还可以通过编程项目子类型来扩展现有项目。 使用项目子类型，可以扩展一个项目，而无需编写新的项目类型。 有关项目子类型的详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
+ 此外可以通过编程项目子类型来扩展现有的项目。 项目子类型，而无需编写新的项目类型可以扩展项目。 有关项目子类型的详细信息，请参阅[项目子类型](../../extensibility/internals/project-subtypes.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
- [将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [将目录添加到“新建项目”对话框](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
+ [将项目添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [将目录添加到新建项目对话框](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)

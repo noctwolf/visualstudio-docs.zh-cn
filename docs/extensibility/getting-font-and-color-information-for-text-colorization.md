@@ -1,5 +1,5 @@
 ---
-title: 获取字体和文本着色的颜色信息 |Microsoft 文档
+title: 获取字体和颜色信息对文本着色 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,37 +14,37 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c86e37d6d7da9da0a6b0978770bf7d7564fa19c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49b1fbf18fb0dac23fcc55b7d9765dd4d1a88d32
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129691"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499694"
 ---
-# <a name="getting-font-and-color-information-for-text-colorization"></a>获取字体和文本着色的颜色信息
-呈现或以的文本显示在用户界面 (UI) 元素中的过程取决于项目、 其技术和开发人员首选项的类型。 **字体和颜色**属性页存储设置。
+# <a name="get-font-and-color-information-for-text-colorization"></a>获取对文本着色的字体和颜色信息
+呈现或以的文本显示在用户界面 (UI) 元素中的过程取决于项目、 其技术和开发人员首选项的类型。 **字体和颜色**属性页存储的设置。
 
- 显示以的文本的大多数实施方案需要<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>和关联接口的提供、 检索和存储文本显示设置。
+ 显示以的文本的大多数实现需要<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>和关联接口，用于显示、 检索和存储文本显示设置。
 
 > [!NOTE]
->  自定义核心编辑器时 (支持**文本 EditorCategory**)，建议在语言服务中使用着色技术。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。
+>  自定义核心编辑器时 (它也支持**文本 EditorCategory**)，建议你使用的着色技术语言服务中。 有关详细信息，请参阅[字体和颜色概述](../extensibility/font-and-color-overview.md)。
 
-## <a name="getting-default-font-and-color-information"></a>获取默认字体和颜色信息
- 所有**字体和颜色**应中指定的任何窗口中显示文本的设置**显示项**之一**类别**。 有关详细信息，请参阅[字体和颜色，环境中，选项对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
+## <a name="get-default-font-and-color-information"></a>获取默认字体和颜色信息
+ 所有**字体和颜色**应在指定的任何窗口中显示的文本设置**显示项**之一**类别**。 有关详细信息，请参阅[字体和颜色、 环境、 选项对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。
 
-若要为着色，VSPackage 必须获取当前**字体和颜色**设置。 VSPackage 可以通过以下方式，具体取决于其需要获取当前的设置：
+若要为着色，VSPackage 必须获取当前**字体和颜色**设置。 VSPackage 可以通过以下方式具体取决于其需要获取当前的设置：
 
--   使用的字体和颜色持久性机制检索存储或当前状态。 有关详细信息，请参阅[访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)。
+-   使用的字体和颜色的永久保存机制来检索存储或当前状态。 有关详细信息，请参阅[访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)。
 
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>提供字体和颜色的数据，若要获取其实例的服务接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 也不是字体和颜色的提供程序。
+-   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>提供要获取的实例的字体和颜色数据的服务接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 还不是字体和颜色提供程序。
 
 -   实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 接口。
 
-若要确保通过轮询获取的结果保持最新，它可能会有用使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口来确定在调用的检索方法之前是否需要更新<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
+若要确保通过轮询获得的结果是最新的它可能需要使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口以确定更新是否需要在调用的检索方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。
 
-之后你已获得字体和颜色信息、 分析将显示以标识需要着色的元素的文本。 在使用适当的字体和颜色窗口中显示文本。
+后获取字体和颜色信息、 分析要显示来标识需要着色的元素的文本。 使用相应的字体和颜色在窗口中显示的文本。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>

@@ -1,5 +1,5 @@
 ---
-title: 文件状态代码枚举器 |Microsoft 文档
+title: 文件状态代码枚举器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3415440c80fcaa88edbecee924a118f82a9dd99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b51e20c18562c1c0e6c23968577dd58eadfe59e
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128159"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498163"
 ---
 # <a name="file-status-code-enumerator"></a>文件状态代码枚举器
-`SccStatus`枚举器包含在源代码管理系统中指定的文件的状态的命名常量值。 此枚举由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)和`POPLISTFUNC`回调函数 (请参阅[POPLISTFUNC](../extensibility/poplistfunc.md)有关详细信息)。  
+`SccStatus`枚举数包含命名的常量值用于指定源代码管理系统中的文件的状态。 此枚举由[SccQueryInfo](../extensibility/sccqueryinfo-function.md)并`POPLISTFUNC`回调函数 (请参阅[POPLISTFUNC](../extensibility/poplistfunc.md)有关详细信息)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,52 +53,52 @@ enum SccStatus {
   
 ## <a name="members"></a>成员  
  SCC_STATUS_INVALID  
- 无法获取状态;不要依赖于它。  
+ 无法获取状态;不依赖于它。  
   
  SCC_STATUS_NOTCONTROLLED  
- 文件不在源代码管理下。  
+ 文件不是源代码管理下。  
   
  SCC_STATUS_CONTROLLED  
- 文件是在源代码管理下。  
+ 文件处于源代码管理下。  
   
  SCC_STATUS_CHECKEDOUT  
- 由本地磁盘上的当前用户签出。  
+ 通过在本地磁盘上的当前用户签出。  
   
  SCC_STATUS_OUTOTHER  
- 文件已由另一个用户签出。  
+ 由另一个用户签出文件。  
   
  SCC_STATUS_OUTEXCLUSIVE  
- 文件以独占方式签出。  
+ 以独占方式签出文件。  
   
  SCC_STATUS_OUTMULTIPLE  
- 文件已由多个用户签出。  
+ 通过多个用户签出文件。  
   
  SCC_STATUS_OUTOFDATE  
  文件不是最新的。  
   
  SCC_STATUS_DELETED  
- 文件已从项目中删除。  
+ 已从项目删除文件。  
   
  SCC_STATUS_LOCKED  
- 文件被锁定;不允许的多个版本。  
+ 文件被锁定;不允许更多的版本。  
   
  SCC_STATUS_MERGED  
- 已合并文件，但尚不固定/验证。  
+ 文件已合并，但尚不支持固定/验证。  
   
  SCC_STATUS_SHARED  
  项目之间共享文件。  
   
  SCC_STATUS_PINNED  
- 文件共享到显式的版本。  
+ 文件共享到显式版本。  
   
  SCC_STATUS_MODIFIED  
- 文件已修改/已中断/违反。  
+ 文件已修改/中断/违反。  
   
  SCC_STATUS_OUTBYUSER  
- 文件已由当前用户签出。  
+ 由当前用户签出文件。  
   
  SCC_STATUS_NOMERGE  
- 文件永远不会与合并和无需在 GET 之前保存。  
+ 文件永远不会与合并，无需在 GET 之前保存。  
   
  SCC_STATUS_RESERVED_1  
  保留以供内部使用。  
@@ -106,7 +106,7 @@ enum SccStatus {
  SCC_STATUS_RESERVED_2  
  保留以供内部使用。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件](../extensibility/source-control-plug-ins.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件](../extensibility/source-control-plug-ins.md)   
  [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
  [POPLISTFUNC](../extensibility/poplistfunc.md)

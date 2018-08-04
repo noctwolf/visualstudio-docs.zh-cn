@@ -1,5 +1,5 @@
 ---
-title: Guid 和 Id 的 Visual Studio 菜单 |Microsoft 文档
+title: Visual Studio 菜单的 Guid 和 Id |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,26 +18,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 163f7b81295468a69cfb28959f608a21f94a4a99
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1b7c8af93604a7e8e33d7d21d26b85c59985b878
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134209"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499934"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Guid 和 Id 的 Visual Studio 菜单
-本主题枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
+这篇文章枚举菜单和 Visual Studio 菜单栏上的组的 GUID 和 ID 的值。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
- 有关如何使用在.vsct 文件中定义的集成的开发环境 (IDE) 对象的详细信息，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 有关如何使用集成的开发环境 (IDE) 对象中定义的详细信息 *.vsct*文件，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- 菜单和 Visual Studio 菜单栏上的组使用的 GUID `guidSHLMainMenu`。 菜单栏本身的 ID 为`IDM_VS_TOOL_MAINMENU`。  
+ 菜单和 Visual Studio 菜单栏上的组使用的 GUID `guidSHLMainMenu`。 在菜单栏本身具有 ID 的`IDM_VS_TOOL_MAINMENU`。  
   
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>在 Visual Studio 菜单栏上的组  
- 若要将菜单添加到菜单栏中，设置为其父级其中某个组。  
+ 若要将菜单添加到菜单栏，其中一个组作为其父进行设置。  
   
 |Group|Id|  
 |-----------|--------|  
-|文件 / 编辑 / 视图|IDG_VS_MM_FILEEDITVIEW|  
+|文件/编辑/查看|IDG_VS_MM_FILEEDITVIEW|  
 |重构|IDG_VS_MM_REFACTORING:|  
 |项目|IDG_VS_MM_PROJECT|  
 |生成|IDG_VS_MM_BUILDDEBUGRUN|  
@@ -47,7 +47,7 @@ ms.locfileid: "31134209"
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|  
   
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>在 Visual Studio 菜单栏上的菜单  
- 若要将组添加到现有 Visual Studio 菜单中，设置为其父级以下菜单之一。 此列表中不包括子菜单。  
+ 若要将组添加到现有 Visual Studio 菜单中，设置作为其父一个以下菜单。 此列表中不包含子菜单。  
   
 |菜单|Id|  
 |----------|--------|  
@@ -64,8 +64,8 @@ ms.locfileid: "31134209"
 |社区|IDM_VS_MENU_COMMUNITY|  
 |帮助|IDM_VS_MENU_HELP|  
   
-## <a name="groups-on-visual-studio-menus"></a>在 Visual Studio 菜单上的组  
- 以下列表显示源自直接菜单在 Visual Studio 菜单栏的组。 将命令添加到 Visual Studio 菜单的最快方法是将其中某个组设置与父项。 在本部分中不显示源自子菜单的组。  
+## <a name="groups-on-visual-studio-menus"></a>Visual Studio 菜单上的组  
+ 以下列表显示了源自直接菜单在 Visual Studio 菜单栏的组。 将命令添加到 Visual Studio 菜单的最快方法是设置其中某个组的父级。 在本部分中不显示源自子菜单的组。  
   
 ### <a name="file-menu-groups"></a>文件菜单组  
   
@@ -94,7 +94,7 @@ ms.locfileid: "31134209"
 |查找|IDG_VS_EDIT_FIND|  
 |对象|IDG_VS_EDIT_OBJECTS|  
 |OLE 谓词|IDG_VS_EDIT_OLEVERBS|  
-|很好地命令|IDG_VS_EDIT_COMMANDWELL|  
+|命令的格式|IDG_VS_EDIT_COMMANDWELL|  
   
 ### <a name="refactor-menu-groups"></a>重构菜单组  
   
@@ -103,7 +103,7 @@ ms.locfileid: "31134209"
 |公共|IDG_REFACTORING_COMMON|  
 |高级|IDG_REFACTORING_ADVANCED|  
   
-### <a name="view-menu-groups"></a>查看菜单组  
+### <a name="view-menu-groups"></a>视图菜单组  
   
 |Group|Id|  
 |-----------|--------|  
@@ -111,16 +111,16 @@ ms.locfileid: "31134209"
 |浏览者|IDG_VS_VIEW_BROWSER|  
 |定义视图|IDG_VS_VIEW_DEFINEVIEWS|  
 |Windows|IDG_VS_VIEW_WINDOWS|  
-|架构师 Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
+|构建 Windows|IDG_VS_VIEW_ARCH_WINDOWS|  
 |组织 Windows|IDG_VS_VIEW_ORG_WINDOWS|  
 |代码浏览器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|  
-|开发人员 Windows|IDG_VS_VIEW_DEV_WINDOWS|  
+|开发 Windows|IDG_VS_VIEW_DEV_WINDOWS|  
 |工具栏|IDG_VS_VIEW_TOOLBARS|  
 |符号|IDG_VS_VIEW_SYMBOLNAVIGATE|  
 |导航|IDG_VS_VIEW_NAVIGATE|  
-|小型导航|IDG_VS_VIEW_SMALLNAVIGATE|  
+|小导航|IDG_VS_VIEW_SMALLNAVIGATE|  
 |对象浏览器|IDG_VS_VIEW_OBJBRWSR|  
-|很好地命令|IDG_VS_VIEW_COMMANDWELL|  
+|命令的格式|IDG_VS_VIEW_COMMANDWELL|  
 |属性页|IDG_VS_VIEW_PROPPAGES|  
 |刷新|IDG_VS_VIEW_REFRESH|  
   
@@ -131,12 +131,12 @@ ms.locfileid: "31134209"
 |杂项添加|IDG_VS_PROJ_MISCADD|  
 |添加|IDG_VS_PROJ_ADD|  
 |文件夹|IDG_VS_PROJ_FOLDER|  
-|卸载/重新加载|IDG_VS_PROJ_UNLOADRELOAD|  
+|卸载/重载|IDG_VS_PROJ_UNLOADRELOAD|  
 |参考|IDG_VS_PROJ_REFERENCE|  
 |选项|IDG_VS_PROJ_OPTIONS|  
 |设置|IDG_VS_PROJ_SETTINGS|  
   
-### <a name="build-menu-groups"></a>生成菜单组  
+### <a name="build-menu-groups"></a>生成的菜单组  
   
 |Group|Id|  
 |-----------|--------|  
@@ -154,7 +154,7 @@ ms.locfileid: "31134209"
 |代码段|IDG_VS_TOOLS_SNIPPETS|  
 |对象子集|IDG_VS_TOOLS_OBJSUBSET|  
 |选项|IDG_VS_TOOLS_OPTIONS|  
-|其他 2|IDG_VS_TOOLS_OTHER2|  
+|另外 2 个|IDG_VS_TOOLS_OTHER2|  
 |外部工具|IDG_VS_TOOLS_EXT_TOOLS|  
 |外部自定义项|IDG_VS_TOOLS_EXT_CUST|  
   
@@ -178,10 +178,10 @@ ms.locfileid: "31134209"
 |关于|IDG_VS_HELP_ABOUT|  
   
 ## <a name="submenus-of-visual-studio-menus"></a>Visual Studio 菜单的子菜单  
- 以下层次结构显示了与在 Visual Studio 菜单栏上的菜单的子菜单。 由于仅允许一组可作为其父菜单，因此每个子菜单必须降从组在菜单上，而不是直接从菜单。 有关菜单、 组和子菜单之间的关系的详细信息，请参阅[将子菜单添加到菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。  
+ 以下层次结构显示了与 Visual Studio 菜单栏上的菜单相关联的子菜单。 由于仅允许一组可作为其父菜单，因此每个子菜单必须降从组在菜单上，而不是直接从菜单。 有关菜单、 组和子菜单之间的关系的详细信息，请参阅[添加到菜单的子菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。  
   
 > [!NOTE]
->  在 Visual Studio 菜单栏上的菜单的名称不单独显示，此层次结构中因为它们可以推断出从在 IDE 中的组的命名约定，如下所示： IDG_VS_*菜单名称*_*组名称*.  
+>  在 Visual Studio 菜单栏上的菜单名称不单独显示此层次结构中因为它们可以根据推断出在 IDE 中，组的命名约定，如下所示： *IDG_VS_\<菜单名称\>_\<组名\>*。  
   
 |父组|子菜单|子组|  
 |------------------|-------------|------------------|  
@@ -215,7 +215,7 @@ ms.locfileid: "31134209"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|  
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)   
  [Guid 和 Id 的 Visual Studio 命令](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)   
- [Visual Studio 命令表格 (.Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表格 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

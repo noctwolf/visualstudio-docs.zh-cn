@@ -1,5 +1,5 @@
 ---
-title: Guid 和 Id 的 Visual Studio 工具栏 |Microsoft 文档
+title: Visual Studio 工具栏的 Guid 和 Id |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,27 +19,27 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 394e0991d734279879df89422ac23fdd26899eeb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6982835b9d3b6259a47439dbe7b1b9252edc3dbe
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133975"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499001"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具栏
-本主题枚举包含在 Visual Studio 集成的开发环境 (IDE) 中，工具栏的 GUID 和 ID 值，并它们所包含的组。 在 Visual Studio SDK 的一部分安装的.vsct 文件中定义这些值。 有关详细信息，请参阅[IDE-Defined 命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
+本主题枚举包括 Visual Studio 集成的开发环境 (IDE) 中的工具栏的 GUID 和 ID 值，并包含的组。 这些值中定义 *.vsct*作为 Visual Studio SDK 的一部分安装的文件。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
 > [!NOTE]
->  许多可用于 Visual Studio 工具栏未定义的 Visual Studio 和其 GUID 和 ID 值不是公共。 本主题列出在 Visual Studio SDK.vsct 文件中定义的工具栏。  
+>  许多发布到 Visual Studio 工具栏未定义的 Visual Studio 中，并且其 GUID 和 ID 值不是公共。 本主题列出了在 Visual Studio SDK 中定义的工具栏 *.vsct*文件。  
   
- 有关如何使用 IDE 对象，在.vsct 文件中定义的详细信息，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 有关如何使用 IDE 对象中定义的详细信息 *.vsct*文件，请参阅[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- 默认的工具栏提供的 Visual Studio IDE 使用的 GUID `guidSHLMainMenu`，除非另行指定通过使用 guid: id 语法。  
+ 提供的 Visual Studio IDE 的默认工具栏使用的 GUID `guidSHLMainMenu`，除非另行指定通过使用`GUID:ID`语法。  
   
 ## <a name="ide-toolbars"></a>IDE 工具栏  
- 通过 Visual Studio IDE 提供了以下工具栏。 可以通过选择上显示工具栏**工具栏**子菜单**工具**菜单。 此部分中未包括的工具窗口的工具栏。  
+ 以下工具栏提供了 Visual Studio IDE。 可以通过选择上显示工具栏**工具栏**的子菜单**工具**菜单。 在本部分中不包括的工具窗口的工具栏。  
   
- 只有组可以直接从工具栏降。 若要添加一个组，将其父级设置为的 GUID 和工具栏的 ID。 若要添加到工具栏按钮，请在工具栏上向组设置其父级。  
+ 只有组可以降直接从工具栏中。 若要添加一个组，将其父级设置为 GUID 和 ID 的工具栏。 若要添加到工具栏按钮，请在工具栏上向组设置其父级。  
   
 |Toolbar|Id|  
 |-------------|--------|  
@@ -50,7 +50,7 @@ ms.locfileid: "31133975"
 |调试位置|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
 ### <a name="special-toolbars"></a>特殊工具栏  
- 这些工具栏由 Visual Studio IDE，但它们提供专用的函数，并且未承载命令组。  
+ 这些工具栏定义由 Visual Studio IDE，但它们提供专用的函数，并且未承载命令组。  
   
 |Toolbar|Id|  
 |-------------|--------|  
@@ -59,12 +59,12 @@ ms.locfileid: "31133975"
 |XML 架构|IDM_VS_TOOL_SCHEMA|  
 |XML 数据|IDM_VS_TOOL_DATA|  
   
-## <a name="groups-on-the-ide-toolbars"></a>IDE 工具栏上的组  
- 若要将按钮添加到标准工具栏中，设置为其父级以下组之一。 在父级工具栏按排序组。  
+## <a name="groups-on-the-ide-toolbars"></a>在 IDE 工具栏上的组  
+ 若要添加到标准工具栏按钮，设置作为其父级的以下组之一。 组将按在父级工具栏。  
   
 ### <a name="standard-toolbar-groups"></a>标准工具栏组  
   
-|名称|Id|  
+|name|Id|  
 |----------|--------|  
 |保存/打开|IDG_VS_TOOLSB_SAVEOPEN|  
 |剪切/复制|IDG_VS_TOOLSB_CUTCOPY|  
@@ -72,20 +72,20 @@ ms.locfileid: "31133975"
 |运行/生成|IDG_VS_TOOLSB_RUNBUILD|  
 |搜索|IDG_VS_TOOLSB_SEARCH|  
 |Windows|IDG_VS_TOOLSB_WINDOWS|  
-|新的 Windows|IDG_VS_TOOLSB_NEWWINDOWS|  
-|负载/保存|IDG_VS_WINDOWUI_LOADSAVE|  
+|新的 windows|IDG_VS_TOOLSB_NEWWINDOWS|  
+|加载/保存|IDG_VS_WINDOWUI_LOADSAVE|  
 |仪表|IDG_VS_TOOLSB_GAUGE|  
   
 ### <a name="build-toolbar-groups"></a>生成工具栏组  
   
-|名称|Id|  
+|name|Id|  
 |----------|--------|  
 |生成栏|IDG_VS_BUILDBAR|  
 |取消|IDG_VS_BUILD_CANCEL|  
   
 ### <a name="text-editor-toolbar-groups"></a>文本编辑器工具栏组  
   
-|名称|Id|  
+|name|Id|  
 |----------|--------|  
 |完成|IDM_VS_TOOL_TEXTEDITOR|  
 |降级|IDG_VS_EDITTOOLBAR_INDENT|  
@@ -94,7 +94,7 @@ ms.locfileid: "31133975"
   
 ### <a name="debug-toolbar-groups"></a>调试工具栏组  
   
-|名称|Id|  
+|name|Id|  
 |----------|--------|  
 |执行|IDM_DEBUG_TOOLBAR|  
 |单步执行|IDG_DEBUG_TOOLBAR_STEPPING|  
@@ -103,15 +103,15 @@ ms.locfileid: "31133975"
   
 ### <a name="debug-location-toolbar-groups"></a>调试位置工具栏组  
   
-|名称|Id|  
+|name|Id|  
 |----------|--------|  
 |调试位置|IDG_DEBUG_CONTEXT_TOOLBAR|  
   
 ## <a name="tool-window-toolbars"></a>工具窗口工具栏  
- 工具栏可以如出现直接在 IDE 中或在工具窗口**解决方案资源管理器**。 由于在.vsct 文件中未定义工具窗口，工具窗口工具栏不能定义的父级。 相反，它们被放置在代码。 下表显示在工具窗口在 IDE 中显示的工具栏和它们所包含的命令组。  
+ 工具栏可以如出现在 IDE 中直接或工具窗口中**解决方案资源管理器**。 由于中未定义工具窗口 *.vsct*文件，工具窗口工具栏执行未定义父级。 相反，它们都放在代码中。 下表显示了在 IDE 中，工具窗口显示的工具栏和它们所包含的命令组。  
   
 > [!NOTE]
->  工具栏和组使用的 GUID `guidSHLMainMenu`，除非另行指定通过使用 guid: id 语法。 其中 GUID 指定为工具栏，则它也适用于源自该工具栏的组中。  
+>  工具栏和组使用的 GUID `guidSHLMainMenu`，除外另行指定通过使用 guid: id 语法。 其中 GUID 指定一个工具栏，则它也适用于源自该工具栏的组中。  
   
 |工具窗口|Toolbar|组|  
 |-----------------|-------------|------------|  
@@ -126,7 +126,7 @@ ms.locfileid: "31133975"
 |查找和替换|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
 |查找结果 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
 |查找结果 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  
-|代码段|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
+|代码片段|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
 |书签|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|  
 |任务列表|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|  
 |用户任务|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|  
@@ -137,7 +137,7 @@ ms.locfileid: "31133975"
 |内存 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1...4<br /><br /> IDG_MEMORY_COLUMNS1...4|  
 |进程|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [将菜单控制器添加到工具栏](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
  [将工具栏添加到工具窗口](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+ [Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

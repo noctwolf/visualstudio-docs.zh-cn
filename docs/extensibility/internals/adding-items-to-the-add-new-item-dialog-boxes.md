@@ -1,5 +1,5 @@
 ---
-title: 将项添加到添加新项对话框 |Microsoft 文档
+title: 将项添加到添加新项对话框 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,75 +13,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24a6d531812a170768f8c100f14ad64ab1e68c5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3b1287bfe04a16c1e610aa9044399fa7b936d383
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135061"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499859"
 ---
-# <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到添加新项对话框
-将项添加到的过程**添加新项**对话框开头的注册表项。 下列注册表项中所示，AddItemTemplates 部分包含的路径和名称在中可用的项中的目录**添加新项**放对话框。  
+# <a name="add-items-to-the-add-new-item-dialog-box"></a>将项目添加到添加新项对话框
+将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示**AddItemTemplates**部分包含的路径和名称的目录中提供哪些项**添加新项**放入对话框。  
   
 > [!NOTE]
->  紧跟在代码段的表包含有关注册表项的其他信息。  
+>  紧跟代码段的表包含有关注册表项的其他信息。  
   
- 本部分位于 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects] 下。  
+ 本部分位于**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**。
   
- 第一个 GUID 是此类型; 的项目的 CLSID第二个 GUID 指示添加项模板的已注册的项目类型。  
+ 首个 GUID 是此类型; 的项目的 CLSID第二个 GUID 指示添加的项模板的已注册的项目类型：  
+ 
+ **\\{C061DB26-5833-11D2-96F5-000000000000}\\AddItemTemplates\\TemplatesDir\\{ACEF4EB2-57CF-11D2-96F4-000000000000}\\1**
   
- \\{C061DB26-5833-11D2-96F5-000000000000} \AddItemTemplates\TemplateDirs\ {ACEF4EB2-57CF-11D2-96F4-000000000000} \1  
+ **@** = 6 
   
- @="#6"  
+ **TemplatesDir** = \\&lt;Visual Studio SDK 安装路径&gt;\\VSIntegration\\&lt;SomeFolder&gt; \\&lt;SomePackage&gt;\\&lt;SomeProject&gt;\\&lt;SomeProjectItems&gt;
   
- "TemplatesDir"="\<Visual Studio SDK 安装路径\\\VSIntegration\\\SomeFolder\\\SomePackage\\\SomeProject\\\SomeProjectItems"  
+ **SortPriority** = dword:00000064
   
- "SortPriority"= dword:00000064  
-  
-|名称|类型|数据 （来自.rgs file)|描述|  
+|name|类型|数据 (从 *.rgs*文件)|描述|  
 |----------|----------|-----------------------------|-----------------|  
 |@ （默认值）|REG_SZ|#%IDS_ADDITEM_TEMPLATES_ENTRY %|资源 ID**添加项**模板。|  
-|Val TemplatesDir|REG_SZ|%TEMPLATE_PATH%\SomeProjectItems|在对话框中显示的项目项路径**添加新项**向导。|  
-|Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|确定显示在文件的树节点中的排序顺序**添加新项**对话框。|  
+|Val TemplatesDir|REG_SZ|%Template_path%\\&lt;SomeProjectItems&gt;|在对话框中显示的项目项的路径**添加新项**向导。|  
+|Val SortPriority|REG_DWORD|100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)])|确定文件中显示的树节点中的排序顺序**添加新项**对话框。|  
   
 > [!NOTE]
->  Visual C# 和 Visual Basic 项目类型的 GUID 如下所示：[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}[!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
+>  Visual C# 和 Visual Basic 项目类型的 GUID 如下所示： 
+- [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}  
   
- 所列出的目录的左侧节点 TemplateDirs，即 %template_path%\someprojectitems 为**添加新项**对话框框树。 在树中的其他元素基于内该根目录的子目录。 可用于添加到项目文件是在右窗格中的项**添加新项**对话框。  
+ 为列出的目录**TemplatesDir**，即 *%template_path%\\&lt;SomeProjectItems&gt;*，是在左侧的节点**添加新项**对话框框树。 在树中的其他元素都基于该根目录中的子目录。 可用于添加到项目文件是在右窗格中的项**添加新项**对话框。  
   
- 通常情况下，此文件夹将包含如模板 HTML 或.cpp 文件中，你的项目的模板文件并启动向导的任何.vsz 文件。 若要控制项的显示方式，还可以包括.vsdir 本地化目录名称和图标的文件。 本地化的字符串是表示添加新项对话框树中的此节点的对话框中显示的标题。  
+ 通常情况下，此文件夹将包含模板文件，例如模板 HTML 项目或 *.cpp*文件，以及任何 *.vsz*文件用于启动向导。 若要控制项的显示方式，还可以包括 *.vsdir*用于本地化的目录名称和图标的文件。 已本地化的字符串是在对话框中，表示此节点中的显示的标题**添加新项**对话框框树。  
   
- 但是，不需要一个.vsdir 文件中包含的所有内容。 你可以有.vsdir 文件的目录中的每个项。 有关详细信息，请参阅[向导 (。Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)和[模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
+ 但是，不需要已做好所有之一 *.vsdir*文件。 您可以将一个 *.vsdir*目录中的每个项的文件。 有关详细信息，请参阅[向导 (.vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)并[模板目录说明 (.vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
 > [!NOTE]
->  中的模板目录的.vsdir 文件是可选的。 如果你只想要将置于目录中的项目元素并将其显示在**添加新项**对话框中，可以将此文件放在 TemplatesDir 语句中指定的模板目录中。 该文件将显示在右窗格中**添加新项**对话框中为该项目。 但是，如果你想要显示本地化的标题文件或一个图标，你必须包含至少一个.vsdir 文件模板目录中。  
+>  *.Vsdir*模板目录中的文件是可选的。 如果只是想要将在目录中的项目元素和其显示在**添加新项**对话框中，可以将该文件放入中指定的模板目录**TemplatesDir**语句。 然后，该文件将显示在右窗格中**添加新项**对话框中的为该项目。 但是，如果你想要显示的文件或图标的本地化的标题，您必须包含至少一个 *.vsdir*模板目录中的文件。  
   
-## <a name="grouping-project-items"></a>分组项目项  
- 如果你想要包含在文件夹中的模板组**添加新项**对话框框树中，你必须使用的项目的根模板目录下的子目录中。 当**添加新项**向用户显示对话框中，它们将还查看文件夹以及能够从中选择项目元素。  
+## <a name="group-project-items"></a>项目项进行分组  
+ 如果你想要包含在文件夹中的模板组**添加新项**对话框框树中，你必须使用项模板根目录下的子目录中。 当**添加新项**向用户显示对话框中，它们还可以查看子文件夹，并可以从中选择项目元素。  
   
- 在代码段的排序优先级确定将其中中相对于其他元素的树节点的树中创建此模板目录。 有关**添加新项**对话框中，排序优先级是所有你必须包括，以便你的项将显示在对话框中的正确位置。  
+ 代码段中的排序优先级确定将其中相对于其他元素的树节点在树中创建此模板目录。 有关**添加新项**对话框中，排序优先级是所有必须包括，以便你的项将显示在对话框中正确的位置。  
   
- 你也可以实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>接口来筛选中显示的内容**添加新项**对话框。 通过实现此接口，你可以将设置一个模板目录包含，例如，磁盘上 50 个模板和向导文件。 以这种方式，你可以使用 20 个属于一个项目类型、 属于其他项目类型，其他 30 文件和常规类型的项目中可用的所有文件的文件的不同项目类型。 在这种方式，具体取决于哪些项目创建模板，你可以显示一组不同的模板文件。  
+ 您还可以实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>接口以筛选器中显示的内容**添加新项**对话框。 通过实现此接口，您可以设置一个模板目录包含，例如，磁盘上 50 个模板和向导文件。 这种方式，您可以使用 20 个属于一个项目类型、 属于另一种项目类型，其他 30 文件和常规类型的项目中可用的所有文件的文件的不同项目类型。 在这种方式，具体取决于哪个项目创建模板，可以显示一组不同的模板文件。  
   
- 例如，在 Visual Basic 项目中，您可能 Web 项目和客户端项目。 Web 窗体不是有用的项将添加到客户端项目，且 windows 窗体不是有用的项将添加到 Web 服务器项目。 因此，你可以创建一个包含两种类型的项目的所有文件的模板目录。 然后通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>，您可以隐藏不应显示基于项目或项目中的项目设置的类型的项目。  
+ 例如，在 Visual Basic 项目中，可能会有 Web 项目和客户端项目。 Web 窗体不是有用的项将添加到客户端项目和 windows 窗体不是有用的项将添加到 Web 服务器项目。 因此，您可以创建一个包含两种类型的项目的所有文件的模板目录。 然后，通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>，可以隐藏不应显示的项目或项目中的项目设置的类型的项。  
   
-## <a name="filtering-project-items"></a>筛选的项目项  
- `IVsFilterAddProjectItemDlg2` 提供用于通过以下方式筛选树 （左窗格中） 和项目文件 （右窗格） 中的元素：  
+## <a name="filter-project-items"></a>筛选器项目项  
+ `IVsFilterAddProjectItemDlg2` 提供了用于筛选元素树 （左窗格） 和项目文件 （右窗格） 中的以下方面：  
   
--   本地化的名称 （.vsdir 文件中包含的对话框中显示的标题） 通过提供`IVsFilterAddProjectItemDlg`。  
+-   本地化名称 (包含在对话框中显示的隐藏式字幕 *.vsdir*文件) 提供的`IVsFilterAddProjectItemDlg`。  
   
--   通过文件和文件夹在磁盘上的实际名称 (非本地化-没有.vsdir 文件) 提供的`IVsFilterAddProjectItemDlg`。  
+-   通过文件和磁盘上的文件夹的实际名称 (非本地化 — 无 *.vsdir*文件) 提供的`IVsFilterAddProjectItemDlg`。  
   
--   按类别，提供`IVsFilterAddProjectItemDlg2`。  
+-   按类别提供`IVsFilterAddProjectItemDlg2`。  
   
- 若要按类别筛选，请提供.vsdir 文件，如"Web 窗体"中的项或在 Visual Basic 中的"客户端项"的类别字符串。 然后，对话框代码从.vsdir 文件中检索类别分类，并将其传递给你。 然后，你可以将该信息传递到的实现`IVsFilterAddProjectItemDlg2`来筛选**添加新项**对话框中按类别。 对 Web 页或与客户端 Win32 应用程序用例，你还可以筛选项。 此外，你可以标识[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]标记为 Microsoft 基础类 (MFC) 或活动模板库 (ATL) 项的项。 如果确定这些项，项目系统可以定义自己分类，以便系统可以根据类别和分类筛选。  
+ 若要按类别筛选，请提供中的项的类别字符串 *.vsdir*文件，如*Web 窗体*或*客户端项*在 Visual Basic 中。 对话框代码然后检索从类别分类 *.vsdir*文件，并将其传递给你。 然后可以将该信息传递到你的实现`IVsFilterAddProjectItemDlg2`来筛选**添加新项**对话框中的类别。 为网页或客户端 Win32 应用程序的情况下，还可以筛选项。 此外，可以指定[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]标记为 Microsoft 基础类 (MFC) 或活动模板库 (ATL) 项的项。 时识别出这些项，项目系统可定义其自己的分类，以便系统可以根据类别和分类筛选。  
   
- 如果你实现此筛选器功能，你不需要映射应隐藏的每个项的表。 你只需对项进行分类为类型并置于.vsdir 文件或文件的分类。 然后您可以隐藏所有通过实现该接口具有特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态基于项目中的状态。  
+ 如果你实现此筛选器功能，您无需映射应隐藏的每个项的表。 只需对项进行分类到类型并将分类放入 *.vsdir*文件。 然后您可以隐藏任何通过实现接口中有某个特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态根据项目中的状态。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
- [通常用于扩展项目的对象的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
+ [对象通常用于扩展项目的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)   
  [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)   
- [模板目录说明 (。Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
- [向导 (.Vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)
+ [模板目录说明 (.vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)   
+ [向导 (.vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)
