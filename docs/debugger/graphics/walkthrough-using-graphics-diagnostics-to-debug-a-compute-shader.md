@@ -1,5 +1,5 @@
 ---
-title: 演练： 使用图形诊断来调试计算着色器 |Microsoft 文档
+title: 演练： 使用图形诊断来调试计算着色器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26772dd0cb74d90a8b7a401961fd33f86521a82
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cff502344db59586709c350ad282871db9f587c8
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481260"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511835"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>演练：使用图形诊断来调试计算着色器
 本演练演示如何使用 Visual Studio 图形诊断工具来调查生成错误结果的计算着色器。  
@@ -24,9 +24,9 @@ ms.locfileid: "31481260"
   
 -   使用“图形事件列表”  定位问题的潜在根源。  
   
--   使用**图形事件调用堆栈**以确定哪一个计算着色器执行由 DirectCompute`Dispatch`事件。  
+-   使用**图形事件调用堆栈**若要确定哪个计算着色器执行由 DirectCompute`Dispatch`事件。  
   
--   使用**图形管道阶段**窗口和 HLSL 调试器检查计算着色器问题的源。  
+-   使用**图形管道阶段**窗口和 HLSL 调试器检查是问题根源的计算着色器。  
   
 ## <a name="scenario"></a>方案  
  在此方案中，你编写了流体动力学模拟，它利用 DirectCompute 来执行模拟更新的计算量最大的部分。 应用运行时，数据集和用户界面的呈现看起来正常，但模拟未按预期运作。 通过使用“图形诊断”，可以捕获图形日志的问题，以便调试该应用。 应用中的问题如下所示：  
@@ -40,13 +40,13 @@ ms.locfileid: "31481260"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>检查图形日志中的帧  
   
-1.  在 Visual Studio 中，加载包含展现出错误模拟结果的帧的图形日志。 Visual Studio 中将出现新的“图形诊断”选项卡。 此选项卡的顶部是所选帧的呈现目标输出。 在底部部件是**帧列表**，它会显示每个捕获的帧的缩略图。  
+1.  在 Visual Studio 中，加载包含展现出错误模拟结果的帧的图形日志。 Visual Studio 中将出现新的“图形诊断”选项卡。 此选项卡的顶部是所选帧的呈现目标输出。 部分是在底部**帧列表**，其中显示每个捕获的帧的缩略图。  
   
-2.  在**帧列表**，选择演示错误模拟行为的帧。 即使此错误似乎是在模拟代码（而非呈现代码）中，你仍必须选择一个帧，因为 DirectCompute 事件和 Direct3D 事件都是在逐帧的基础上捕获的。 在此方案中，图形日志选项卡如下所示：  
+2.  在中**帧列表**，选择演示错误模拟行为的帧。 即使此错误似乎是在模拟代码（而非呈现代码）中，你仍必须选择一个帧，因为 DirectCompute 事件和 Direct3D 事件都是在逐帧的基础上捕获的。 在此方案中，图形日志选项卡如下所示：  
   
-     ![Visual Studio 中，图形日志文档。] (media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
+     ![图形日志文档在 Visual Studio 中。] (media/gfx_diag_demo_compute_shader_fluid_step_1.png "gfx_diag_demo_compute_shader_fluid_step_1")  
   
- 选择演示问题的帧后，可以使用“图形事件列表”  进行诊断。 **图形事件列表**包含每个 DirectCompute 调用和活动帧过程中所做的 Direct3D API 调用的事件-例如，在 GPU 上运行计算或呈现数据集或 UI 的 API 调用。 在这种情况下，我们关注的是表示在 GPU 上运行的部分模拟的 `Dispatch` 事件。  
+ 选择演示问题的帧后，可以使用“图形事件列表”  进行诊断。 **图形事件列表**包含每个 DirectCompute 调用和 Direct3D API 调用活动帧期间的事件，例如，API 调用在 GPU 上运行计算或呈现数据集或 UI。 在这种情况下，我们关注的是表示在 GPU 上运行的部分模拟的 `Dispatch` 事件。  
   
 #### <a name="to-find-the-dispatch-event-for-the-simulation-update"></a>查找模拟更新的 Dispatch 事件  
   
@@ -72,7 +72,7 @@ ms.locfileid: "31481260"
   
 1.  上**图形诊断**工具栏上，选择**事件调用堆栈**以打开**图形事件调用堆栈**窗口。  
   
-2.  从呈现模拟结果的 draw 事件开始，在每个之前的 `CSSetShader` 事件中逐个向后移动。 然后，在**图形事件调用堆栈**窗口中，选择要导航到调用站点的最顶层的函数。 在调用站点，你可以使用的第一个参数[CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx)函数调用以确定哪一个计算着色器执行的第二`Dispatch`事件。  
+2.  从呈现模拟结果的 draw 事件开始，在每个之前的 `CSSetShader` 事件中逐个向后移动。 然后，在**图形事件调用堆栈**窗口中，选择要导航到调用站点的最顶层的函数。 在调用站点，您可以使用的第一个参数[CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader)函数调用，以确定哪个计算着色器执行下一步`Dispatch`事件。  
   
  在此方案中，每个帧中有三对 `CSSetShader` 和 `Dispatch` 事件。 逆向执行，第三对事件表示集成步骤（计算流体粒子的实际移动的步骤），第二对表示力计算步骤（计算影响每个粒子的力的步骤），第一对表示密度计算步骤。  
   
@@ -80,9 +80,9 @@ ms.locfileid: "31481260"
   
 1.  上**图形诊断**工具栏上，选择**管道阶段**以打开**图形管道阶段**窗口。  
   
-2.  选择第三个`Dispatch`事件 （后面紧跟 draw 事件的一个），然后在**图形管道阶段**窗口下**计算着色器**阶段中，选择**开始调试**。  
+2.  选择第三个`Dispatch`事件 （即后面紧跟 draw 事件），然后在**图形管道阶段**窗口下**计算着色器**阶段中，选择**开始调试**。  
   
-     ![在 EL.中选择的第三个 Dispatch 事件](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
+     ![选择第三个 Dispatch 事件中 EL.](media/gfx_diag_demo_compute_shader_fluid_step_6.png "gfx_diag_demo_compute_shader_fluid_step_6")  
   
      在执行集成步骤的着色器处启动 HLSL 调试器。  
   
@@ -90,21 +90,21 @@ ms.locfileid: "31481260"
   
      ![调试 IntegrateCS 计算着色器。] (media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4.  若要停止在上进行调试计算着色器，**调试**工具栏上，选择**停止调试**(键盘： Shift + F5)。  
+4.  若要停止调试计算着色器，在**调试**工具栏上，选择**停止调试**(键盘： Shift + F5)。  
   
 5.  接下来，请选择第二个 `Dispatch` 事件并开始调试计算着色器，正如在前面的步骤中所进行的操作那样。  
   
-     ![在 EL.中选择的第二个 Dispatch 事件](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
+     ![选择第二个 Dispatch 事件中 EL.](media/gfx_diag_demo_compute_shader_fluid_step_8.png "gfx_diag_demo_compute_shader_fluid_step_8")  
   
      在计算作用于每个流体粒子的力的着色器处启动 HLSL 调试器。  
   
 6.  检查力计算步骤的计算着色器源代码。 在此方案中，你可以确定此处为错误源。  
   
-     ![调试 ForceCS&#95;简单计算着色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
+     ![调试 ForceCS&#95;简单的计算着色器。] (media/gfx_diag_demo_compute_shader_fluid_step_9.png "gfx_diag_demo_compute_shader_fluid_step_9")  
   
  确定错误的位置之后，可以停止调试并修改计算着色器源代码，以正确地计算相互作用的粒子之间的距离。 在此方案中，只需将行 `float2 diff = N_position + P_position;` 更改为 `float2 diff = N_position - P_position;`：  
   
- ![已更正的计算&#45;着色器代码。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
+ ![更正后的计算&#45;着色器代码。] (media/gfx_diag_demo_compute_shader_fluid_step_10.png "gfx_diag_demo_compute_shader_fluid_step_10")  
   
  在此方案中，因为计算着色器是在运行时进行编译的，所以在更改后只需重新启动该应用便可观察更改对模拟的影响。 无需重新生成应用。 运行应用时，可发现此时模拟运行正常。  
   

@@ -1,5 +1,5 @@
 ---
-title: IDiaEnumSourceFiles |Microsoft 文档
+title: IDiaEnumSourceFiles |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f0e1c751f9ab106be74418bc3d9e6b9a53b0c5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 33960cf8cfde8d781d52e0519911093019a93941
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460529"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511009"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
-枚举中的数据源包含的各种源文件。  
+枚举数据源中包含的各种源文件。  
   
 ## <a name="syntax"></a>语法  
   
 ```  
-IDiaEnumSourceFiles : IUknown  
+IDiaEnumSourceFiles : IUnknown  
 ```  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
@@ -35,13 +35,13 @@ IDiaEnumSourceFiles : IUknown
   
 |方法|描述|  
 |------------|-----------------|  
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索`IEnumVARIANT Interface`的此枚举器的版本。|  
-|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件数。|  
-|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|通过索引中检索源文件。|  
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|检索`IEnumVARIANT Interface`此枚举器的版本。|  
+|[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|检索源文件的数目。|  
+|[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|通过索引检索源文件。|  
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|检索指定的数目的枚举序列中的源文件。|  
-|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|跳过指定的数目的枚举序列中的源文件。|  
+|[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|跳过枚举序列中的源文件指定的数目。|  
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|将枚举序列重置到开头。|  
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|创建包含与当前的枚举器相同的枚举状态的枚举。|  
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|创建一个包含当前枚举数形式的相同枚举状态的枚举器。|  
   
 ## <a name="remarks"></a>备注  
   
@@ -49,11 +49,11 @@ IDiaEnumSourceFiles : IUknown
  通过调用来获取此接口`QueryInterface`方法[IDiaTable](../../debugger/debug-interface-access/idiatable.md)对象。 请参阅详细信息的示例。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何获取`IDiaEnumSourceFiles`接口从 DIA 会话对象中的表的列表。 有关访问源文件信息的示例，请参阅[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)接口。  
+ 此示例演示如何获取`IDiaEnumSourceFiles`DIA 会话对象中的表列表中的接口。 有关访问源文件信息的示例，请参阅[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)接口。  
   
 ```C++  
   
-IDiaEnumSourceFiles* GetEnumSourceFiless(IDiaSession *pSession)  
+IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)  
 {  
     IDiaEnumSourceFiles * pUnknown    = NULL;  
     REFIID                iid         = __uuidof(IDiaEnumSourceFiles);  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47788ccd2fb1bd03ce2f2981289d51f0d625b6a9
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234668"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513369"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 本文包含 Visual Studio 帮助查看器集成商的以下任务：  
@@ -820,7 +820,7 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 12. Contoso IDE 中，选择 F1 键来测试 F1 功能。  
   
 ### <a name="additional-resources"></a>其他资源  
-运行时 API，请参阅[Windows 帮助 API](http://msdn.microsoft.com/library/windows/desktop/hh447318\(v=vs.85\).aspx)。  
+运行时 API，请参阅[Windows 帮助 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。  
   
 有关如何利用帮助 API 的其他信息，请参阅[帮助查看器的代码示例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
   

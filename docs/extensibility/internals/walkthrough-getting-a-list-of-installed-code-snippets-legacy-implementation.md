@@ -1,5 +1,5 @@
 ---
-title: 获取一份安装代码片段 （旧版） |Microsoft 文档
+title: 获取一系列安装代码片段 （旧版） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ec48ee8ec7beffd66cec4266bc038b17a08a202
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4b09968ea178869dd9a4c6f1caeee83f60f667e3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141348"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513239"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练： 获取已安装的代码片段 （旧实现） 的列表
-代码片段是一种代码，可插入到源缓冲区与菜单命令 （这样安装的代码代码段的列表中进行选择） 或通过从 IntelliSense 完成列表中选择代码片段快捷方式。  
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取已安装代码片段（旧版实现）的列表
+代码段是一段代码可以插入到源缓冲区 （它允许选择安装的代码片段的列表） 的菜单命令或通过从 IntelliSense 完成列表中选择代码片段快捷方式。  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法获取特定语言 GUID 的所有代码段。 这些代码段的快捷方式可以插入到 IntelliSense 完成列表。  
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法可获取特定语言 GUID 的所有代码片段。 这些代码段的快捷方式可以插入到 IntelliSense 完成列表。  
   
- 请参阅[旧语言服务中的代码段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)有关托管的包框架 (MPF) 语言服务中实现代码段的详细信息。  
+ 请参阅[旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)有关托管的包框架 (MPF) 语言服务中实现代码片段的详细信息。  
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>若要检索的代码段的列表  
   
-1.  下面的代码演示如何获取给定语言的代码段的列表。 结果将存储在一个数组中<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>结构。 此方法使用静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法以获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>接口从<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服务。 但是，你还可以使用服务提供商提供给你的 VSPackage 和调用<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>方法。  
+1.  下面的代码演示如何获取给定语言的代码段的列表。 结果存储在一个数组中<xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion>结构。 此方法使用静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法以获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>接口从<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服务。 但是，还可以使用服务提供商提供给你的 VSPackage 和调用<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>方法。  
   
     ```csharp  
     using System;  
@@ -106,10 +106,10 @@ ms.locfileid: "31141348"
   
 ### <a name="to-call-the-getsnippets-method"></a>若要调用 GetSnippets 方法  
   
-1.  以下方法演示如何调用`GetSnippets`在分析操作完成的方法。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>方法在分析操作，原因是启动之后调用<xref:Microsoft.VisualStudio.Package.ParseReason>。  
+1.  下面的方法演示如何调用`GetSnippets`方法在分析操作完成。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>之后的分析操作中，原因是启动调用方法<xref:Microsoft.VisualStudio.Package.ParseReason>。  
   
 > [!NOTE]
->  `expansionsList`数组 listis 出于性能原因缓存。 停止并重新加载语言服务之前，列表中不反映对这些代码段的更改 (例如，通过停止并重启[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。  
+>  `expansionsList`出于性能原因缓存数组列表。 停止并重新加载语言服务之前，在列表中不反映对这些代码片段更改 (例如，通过停止并重新启动[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)])。  
   
 ```csharp  
 class TestLanguageService : LanguageService  
@@ -130,11 +130,11 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>若要使用的代码段信息  
   
-1.  下面的代码演示如何使用返回的代码段信息`GetSnippets`方法。 `AddSnippets`从响应任何分析原因用于填充代码代码段的列表中的分析器调用方法。 这应发生后第一次完成了完整分析。  
+1.  下面的代码演示如何使用返回的代码段信息`GetSnippets`方法。 `AddSnippets`从用于填充的代码片段列表的任何分析原因响应中的分析器调用方法。 这应发生后第一次完成了完整的分析。  
   
-     `AddDeclaration`方法生成更高版本显示完成列表中声明的列表。  
+     `AddDeclaration`方法可生成更高版本显示完成列表中声明的列表。  
   
-     `TestDeclaration`类包含可在完成列表，以及声明的类型的所有信息。  
+     `TestDeclaration`类包含所有可完成列表，以及声明的类型中显示的信息。  
   
     ```csharp  
     class TestAuthoringScope : AuthoringScope  
@@ -179,5 +179,5 @@ class TestLanguageService : LanguageService
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用和配置 Visual Studio 中的 Roslyn 分析器
+title: 使用和配置 Roslyn 分析器
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6668b3727e5df17c3d436e37f2edd78a67a79eba
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204149"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512166"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>配置和使用 Roslyn 分析程序规则
 
@@ -141,6 +141,31 @@ ms.locfileid: "39204149"
 > ```xml
 > <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
 > ```
+
+## <a name="command-line-usage"></a>命令行使用情况
+
+生成你的项目在命令行时，规则冲突显示在生成输出中，如果满足以下条件：
+
+- 分析器以 Nuget 包的形式而不是作为 VSIX 扩展安装。
+
+- 在项目的代码中违反一个或多个规则。
+
+- [严重性](#rule-severity)违反规则的设置为**警告**，在这种情况下冲突不会导致生成失败，或**错误**，违反这种情况下导致生成失败。
+
+生成输出详细级别不会影响是否显示规则冲突。 即使**安静**详细级别，在生成输出中会显示的规则冲突。
+
+> [!TIP]
+> 如果您习惯于在命令行中，通过运行静态代码分析*FxCopCmd.exe*或通过使用 msbuild **RunCodeAnalysis**标志，下面介绍了如何使用 Roslyn 分析器执行该操作。
+
+若要生成使用 msbuild 的项目时，请查看在命令行分析器冲突，请运行如下命令：
+
+```cmd
+msbuild myproject.csproj /target:rebuild /verbosity:minimal
+```
+
+下图显示了构建包含分析器规则冲突的项目的命令行生成输出：
+
+![与规则冲突的 MSBuild 输出](media/command-line-build-analyzers.png)
 
 ## <a name="see-also"></a>请参阅
 

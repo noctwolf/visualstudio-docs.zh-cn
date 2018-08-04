@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80acb4dd08c9785d17187f6048d7133232b0bf6f
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: a16044657b197229253f93fc6aea6130a4522f64
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078437"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512179"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
 安装程序是可以配置为检测和安装可再发行组件，如 Windows 安装程序的一般安装程序 (*.msi*) 文件和可执行程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  每个可再发行组件或必备组件，显示在**先决条件**ClickOnce 的对话框是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。 
@@ -86,10 +86,10 @@ ms.locfileid: "39078437"
 |--------------|-----------------|  
 |ApplicationName|应用程序的名称。|  
 |ProcessorArchitecture|可执行文件的目标平台的处理器和每字位数。 包括以下值：<br /><br /> -Intel<br />-IA64<br />-AMD64|  
-|[Version9x](https://msdn.microsoft.com/en-us/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98 或 Windows ME 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
-|[自](https://msdn.microsoft.com/en-us/library/aa372495\(v=vs.140\).aspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
-|[VersionMSI](https://msdn.microsoft.com/en-us/library/aa372493\(v=vs.140\).aspx)|Windows 安装程序程序集 (msi.dll) 在安装过程中运行的版本。|  
-|[AdminUser](https://msdn.microsoft.com/en-us/library/aa367545\(v=vs.140\).aspx)|如果用户具有管理员特权，则设置此属性。 值为 true 或 false。|  
+|[Version9x](/windows/desktop/Msi/version9x)|Microsoft Windows 95、Windows 98 或 Windows ME 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
+|[自](/windows/desktop/Msi/versionnt)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
+|[VersionMSI](/windows/desktop/Msi/versionmsi)|Windows 安装程序程序集 (msi.dll) 在安装过程中运行的版本。|  
+|[AdminUser](/windows/desktop/Msi/adminuser)|如果用户具有管理员特权，则设置此属性。 值为 true 或 false。|  
 |InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> 从供应商的网站安装-HomeSite-先决条件。<br />从你选择的位置安装-SpecificSite-先决条件。<br />从与应用程序相同的位置安装-SameSite-先决条件。|  
   
 ## <a name="separate-redistributables-from-application-installations"></a>从应用程序安装的独立可再发行组件  

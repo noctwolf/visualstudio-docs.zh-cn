@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bea570ea8af34a7b448bbdf4b7367c96d8085907
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 59d1012a3a291c2f49cf5fd5e447ce46909c0cdd
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757614"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512273"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 
@@ -29,7 +29,7 @@ ms.locfileid: "36757614"
 
 ## <a name="using-breadcrumb-navigation"></a>使用痕迹导航
 
-1.  双击工作流设计器的根活动改为单击的活动的活动。 此时单击的活动将在根处完全展开，其祖先将显示在痕迹栏中。 这有时称为钻入或钻出某个活动。
+1.  双击工作流设计器的根活动改为单击的活动的活动。 单击的活动已完全扩展根目录和其祖先将显示在痕迹导航栏中。 这有时称为钻入或钻出某个活动。
 
 2.  若要导航到当前根活动的一个祖先，请单击痕迹栏中的相应活动。
 

@@ -14,19 +14,20 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23cc1db46870d77e6c137ab621c970e730b9cd0e
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
-ms.translationtype: HT
+ms.openlocfilehash: ae7b34df55593f07adeaffe8d654b59629baaae5
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497136"
+ms.locfileid: "39510905"
 ---
 # <a name="expose-project-objects"></a>公开项目对象
-自定义项目类型可以提供自动化对象，以允许使用自动化接口项目的访问权限。 每个项目类型需要提供标准<xref:EnvDTE.Project>自动化对象，从访问<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中每个项由公开<xref:EnvDTE.ProjectItem>对象使用访问`Project.ProjectItems`。 除了这些标准自动化对象，可以选择项目以提供特定于项目的自动化对象。  
-  
- 可以创建自定义根级别的自动化对象可以访问从根 DTE 对象使用后期绑定`DTE.<customeObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，Visual c + + 创建名为 c + + 特定于项目的项目集合*VCProjects*可使用访问`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，这能查询其派生程度最高的对象，和一个`ProjectItem`，这会公开`ProjectItem.Object`和`ProjectItem.FileCodeModel`。  
-  
- 它是公开的自定义的特定于项目的项目集合的项目的通用约定。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]创建一个 c + + 特定项目集合，然后就可以访问使用`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，其派生程度最高的对象，这能查询`ProjectItem`，这会公开`ProjectItem.Object`，和一个`ProjectItem.FileCodeModel`。  
+
+自定义项目类型可以提供自动化对象，以允许使用自动化接口项目的访问权限。 每个项目类型需要提供标准<xref:EnvDTE.Project>自动化对象，从访问<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中每个项由公开<xref:EnvDTE.ProjectItem>对象使用访问`Project.ProjectItems`。 除了这些标准自动化对象，可以选择项目以提供特定于项目的自动化对象。
+
+可以创建自定义根级别的自动化对象可以访问从根 DTE 对象使用后期绑定`DTE.<customObjectName>`或`DTE.GetObject("<customObjectName>")`。 例如，Visual c + + 创建一个名为 c + + 特定于项目的项目集合*VCProjects*可使用访问`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，这能查询其派生程度最高的对象，和一个`ProjectItem`，这会公开`ProjectItem.Object`和`ProjectItem.FileCodeModel`。
+
+它是公开的自定义的特定于项目的项目集合的项目的通用约定。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]创建一个 c + + 特定项目集合，然后就可以访问使用`DTE.VCProjects`或`DTE.GetObject("VCProjects")`。 此外可以创建`Project.Object`，这是唯一的项目类型， `Project.CodeModel`，其派生程度最高的对象，这能查询`ProjectItem`，这会公开`ProjectItem.Object`，和一个`ProjectItem.FileCodeModel`。  
   
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>若要参与项目的特定于 VSPackage 的对象  
   
@@ -93,5 +94,6 @@ ms.locfileid: "39497136"
   
      自定义`Projects`集合对象是您项目的自动化模型的其余部分的便捷入口点。 项目对象也是可从访问<xref:EnvDTE.Solution>项目集合。 创建相应的代码和注册表条目，它们提供与使用者后`Projects`对象集合，您的实现必须提供剩余的项目模型的标准对象。 有关详细信息，请参阅[项目建模](../../extensibility/internals/project-modeling.md)。  
   
-## <a name="see-also"></a>请参阅  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
+## <a name="see-also"></a>请参阅
+
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

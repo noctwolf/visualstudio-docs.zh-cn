@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031657091a2209d4e358998159581d2159a5443
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: b909c1df4aa776f0f92d72c679ecdacb42227c18
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251200"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510485"
 ---
 # <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ namespace EEMC
  EE DLL 实现`DllRegisterServer`函数以将自身注册 COM 环境以及 Visual Studio。  
   
 > [!NOTE]
->  Yoou 可以在文件中查找 MyCEE 注册表的代码示例*dllentry.cpp*，位于下 EnVSDK\MyCPkgs\MyCEE VSIP 安装。  
+>  可以在文件中查找 MyCEE 注册表的代码示例*dllentry.cpp*，位于下 EnVSDK\MyCPkgs\MyCEE VSIP 安装。  
   
 ### <a name="dll-server-process"></a>DLL 服务器进程  
  当注册 EE，DLL 服务器：  
