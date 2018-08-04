@@ -1,5 +1,5 @@
 ---
-title: 消除了 ~ SAK 文件 |Microsoft 文档
+title: 消除了 ~ SAK 文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,26 +15,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61227652bf191280f69466f127c4a400ea43856e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9d840ea26757ca56ee58b5ac4941f7f3c1065562
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129636"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497945"
 ---
 # <a name="elimination-of-sak-files"></a>消除了 ~ SAK 文件
-在源控件插件 API 1.2，~ 功能标志和检测源代码管理插件支持 MSSCCPRJ 文件和共享签出的新函数已替换为 SAK 文件。  
+在源控件插件 API 1.2 *~ SAK*功能标志已替换为文件和新的函数，检测是否将源控件插件支持*MSSCCPRJ*文件和共享方式签出。  
   
 ## <a name="sak-files"></a>~ SAK 文件  
- Visual Studio.NET 2003 中创建带有前缀的临时文件 ~ SAK。 这些文件用于确定了源代码管理插件是否支持：  
+Visual Studio.NET 2003 中创建临时文件带有前缀 *~ SAK*。 这些文件用于确定是否支持源代码管理插件：  
   
--   MSSCCPRJ。SCC 文件。  
+- *MSSCCPRJ.SCC*文件。  
   
--   多个 （共享） 的方式签出。  
+- （共享） 的多个签出。  
+    
+插件的支持在源控件插件 API 1.2 中提供的高级的函数，IDE 可以检测这些功能，而无需创建临时文件通过使用新功能、 标志和函数，以下部分详细介绍。  
   
- 即插即用的项的源控件插件 API 1.2 中支持提供的高级的功能，IDE 可以检测这些功能，而无需创建的临时文件，通过使用新功能、 标志和函数，将在以下各节详细说明。  
-  
-## <a name="new-capability-flags"></a>新功能标志  
+## <a name="new-capability-flags"></a>新的功能标志  
  `SCC_CAP_SCCFILE`  
   
  `SCC_CAP_MULTICHECKOUT`  
@@ -44,14 +44,14 @@ ms.locfileid: "31129636"
   
  [SccIsMultiCheckoutEnabled](../../extensibility/sccismulticheckoutenabled-function.md)  
   
- 如果源代码管理插件支持多个 （共享） 签出，则它声明`SCC_CAP_MULTICHECKOUT`功能和实现`SccIsMultiCheckOutEnabled`函数。 在任何受源代码管理项目发生签出操作时，调用此函数。  
+ 如果源代码管理插件支持多个 （共享） 签出，则它会声明`SCC_CAP_MULTICHECKOUT`功能和实现`SccIsMultiCheckOutEnabled`函数。 在任何受源代码管理项目发生签出操作时调用此函数。  
   
- 如果源代码管理插件支持创建和使用 MSSCCPRJ。SCC 文件，则该声明`SCC_CAP_SCCFILE`功能和实现[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 使用文件的列表，调用此函数。 该函数将返回`TRUE/FALSE`为每个文件，以指示 Visual Studio 是否应使用 MSSCCPRJ。它 SCC 文件。 如果源代码管理插件选择不支持这些新功能和函数，它可以使用以下注册表项以禁用在创建这些文件：  
+ 如果源代码管理插件支持创建和使用*MSSCCPRJ.SCC*文件，然后它会声明`SCC_CAP_SCCFILE`功能和实现[SccWillCreateSccFile](../../extensibility/sccwillcreatesccfile-function.md)。 此函数调用的文件列表。 该函数将返回`TRUE' or 'FALSE`为每个文件，以指示是否应使用 Visual Studio *MSSCCPRJ.SCC*为它的文件。 如果选择不支持这些新功能和函数的源代码管理插件，它可以使用以下注册表项来禁用这些文件的创建：  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateTemporaryFilesInSourceControl"= dword: 00000001  
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword: 00000001*  
   
 > [!NOTE]
->  如果此注册表项设置为 00000000 时表示，它相当于的键不存在，，和 Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为 dword: 00000001，Visual Studio 不会不尝试创建临时文件。 相反，它假设源代码管理插件不支持 MSSCCPRJ。SCC 文件和不支持共享签出。  
+>  如果此注册表项设置为*dword:00000000*，等效于键不存在，并且 Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为*dword: 00000001*，Visual Studio 不会尝试创建临时文件。 而是假定的源代码管理插件不支持*MSSCCPRJ.SCC*文件，并不支持共享方式签出。  
   
-## <a name="see-also"></a>另请参阅  
- [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)
+## <a name="see-also"></a>请参阅  
+ [什么是源控制插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

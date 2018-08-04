@@ -1,5 +1,5 @@
 ---
-title: Extern 元素 |Microsoft 文档
+title: Extern 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea14d985265d02c3e60ee12c8b46deafba2bcd72
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 353d7e59d7f9d0cbc6aa93d4118a4cb8ff6ee197
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127687"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497701"
 ---
 # <a name="extern-element"></a>Extern 元素
-Extern 元素引用在编译时合并使用.vsct 文件的任何外部标头 (.h) 文件。 要合并的文件必须在 Include 路径提供给 VSCT 编译器或引用的[包括元素](../extensibility/include-element.md)。 文件可能是其他.vsct 文件或 c + + 标头文件。  
+Extern 元素引用外部的所有标头 (*.h*) 要使用合并的文件 *.vsct*在编译时的文件。 要合并的文件必须位于包含路径提供给 VSCT 编译器或引用的[Include 元素](../extensibility/include-element.md)。 这些文件可能是其他 *.vsct*文件或 c + + 标头文件。  
   
- 标头文件中的定义的格式必须是"#define [符号] [值]"的值可能是另一个符号，如果以前已定义。 定义可能在条件语句的命令项目中使用。 实际上未使用的任何符号将被放弃。  
+ 标头文件中的定义必须是窗体的"#define [符号] [值]"的值可能是另一个符号，如果以前已定义。 定义可用于条件语句的命令项。 实际上未使用任何符号将被放弃。  
   
  CommandTable 元素  
 Extern 元素  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Extern href="stdidcmd.h" />  
 ```  
   
@@ -58,11 +58,11 @@ Extern 元素
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的元素的所有-即，菜单项、 菜单、 工具栏和组合框-向 IDE 提供 VSPackage。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的元素的所有 — 也就是说，菜单项、 菜单、 工具栏和组合框 — VSPackage 提供到 IDE。|  
   
 ## <a name="example"></a>示例  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-  
   18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
@@ -72,7 +72,7 @@ Extern 元素
 </CommandTable>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

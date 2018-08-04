@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec8a5520716f6073d49ab2b5a64becfb760092d2
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: b4fca64abf91105e0363ecd67ea5244c533996f3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234918"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497170"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 项目模板）
+# <a name="folder-element-visual-studio-project-templates"></a>Folder 元素 （Visual Studio 项目模板）
 指定将添加到项目的文件夹。  
   
  \<VSTemplate >  
@@ -47,7 +47,7 @@ ms.locfileid: "36234918"
 |特性|描述|  
 |---------------|-----------------|  
 |`Name`|必需的特性。<br /><br /> 将项目文件夹的名称。|  
-|`TargetFolderName`|可选特性。<br /><br /> 指定要为文件夹提供从模板创建项目的名称。 此属性可用于使用参数替换来创建一个文件夹名称或命名的文件夹的国际字符串都不能在.zip 文件中直接使用。|  
+|`TargetFolderName`|可选特性。<br /><br /> 指定要为文件夹提供从模板创建项目的名称。 此属性可用于使用参数替换来创建一个文件夹名称或不能直接在使用命名的文件夹的国际字符串都 *.zip*文件。|  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -67,7 +67,7 @@ ms.locfileid: "36234918"
   
  可以使用任何以下方法以将项目项组织到模板中的文件夹：  
   
--   在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定的路径中的文件`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如：  
+-   在模板中包含文件夹 *.zip*文件，并将其添加到项目中， *.vstemplate*通过指定的路径中的文件的文件`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如：  
   
      `...`  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36234918"
   
      `...`  
   
--   在模板的.zip 文件，包括文件夹并将其添加到项目中，使用.vstemplate 文件`Folder`元素。 例如：  
+-   在模板中包含文件夹 *.zip*文件，并将其添加到项目中， *.vstemplate*文件具有`Folder`元素。 例如：  
   
      `...`  
   
@@ -91,7 +91,7 @@ ms.locfileid: "36234918"
   
      `...`  
   
--   不将文件夹包括在模板的.zip 文件，但将使用的文件夹添加`TargetFileName`属性的`ProjectItem`元素。 例如：  
+-   在模板中不包括文件夹 *.zip*文件，但将使用的文件夹添加`TargetFileName`属性的`ProjectItem`元素。 例如：  
   
      `...`  
   
