@@ -1,5 +1,5 @@
 ---
-title: 命令和使用互操作程序集的菜单 |Microsoft 文档
+title: 使用互操作程序集的命令和菜单 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,43 +16,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c48ee7eb25fa95789076454c849485f4ac1dc384
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135002"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513437"
 ---
-# <a name="commands-and-menus-that-use-interop-assemblies"></a>命令和使用互操作程序集的菜单
-实现菜单和工具栏命令的方法是使用互操作程序集的 VSPackage 必须：  
+# <a name="commands-and-menus-that-use-interop-assemblies"></a>使用互操作程序集的命令和菜单
+通过使用互操作程序集来实现菜单和工具栏命令的 VSPackage 必须：  
   
--   通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有关所支持的命令和是否它们当前已启用的集成的开发环境 (IDE)。  
+-   通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有关所支持的命令以及它们当前是否启用的集成的开发环境 (IDE)。  
   
--   遵守的规则 （合同条款） 处理的命令。  
+-   遵守的规则 （协定） 处理的命令。  
   
--   显式实现通过使用的命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
+-   显式实现通过使用命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
   
- 下面描述如何执行这些任务。  
+ 以下部分介绍如何执行这些任务。  
   
 ## <a name="in-this-section"></a>本节内容  
- [使用互操作程序集确定命令状态](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
- 介绍 VSPackage 通知 IDE 的方式有关哪些命令中，它将支持并将它们当前是否启用。  
+ [使用互操作程序集来确定命令状态](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  
+ 介绍 VSPackage 如何通知 IDE 有关哪些命令它支持以及它们当前是否启用。  
   
  [互操作程序集中的命令协定](../../extensibility/internals/command-contracts-in-interop-assemblies.md)  
- 提供了使用所有 Vspackage 实现命令使用互操作程序集的基本命令协定的定义  
+ 提供了所有的 Vspackage 实现命令使用互操作程序集使用的基本命令协定的定义。
   
- [实现](../../extensibility/internals/command-implementation.md)  
+ [命令实现](../../extensibility/internals/command-implementation.md)  
  概述如何 VSPackage 实现命令。  
   
  [注册互操作程序集命令处理程序](../../extensibility/internals/registering-interop-assembly-command-handlers.md)  
- 描述通知 IDE VSPackage 提供命令处理程序所需的注册表项。  
+ 介绍通知 IDE VSPackage 提供的命令处理程序所需的注册表项。  
   
 ## <a name="related-sections"></a>相关章节  
- [可用性](../../extensibility/internals/command-availability.md)  
- 描述了 IDE 用于确定有哪些 VSPackage 命令和哪些对象处理它们的条件。  
+ [命令可用性](../../extensibility/internals/command-availability.md)  
+ 描述 IDE 用于确定哪些 VSPackage 命令可供和哪些对象将处理它们的条件。  
   
- [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- 提供有关如何创建使用 UI 的详细信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令支持。  
+ [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ 提供了有关如何创建一个用户界面，使用的详细信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令的支持。  
   
- [VSPackage 中的命令传送](../../extensibility/internals/command-routing-in-vspackages.md)  
- 用于相关具有正确的命令和请求的对象的过程概述。
+ [Vspackage 中的命令传送](../../extensibility/internals/command-routing-in-vspackages.md)  
+ 用于使具有正确的命令请求的对象的相关过程的概述。

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d02482d6dcf0483fe40890039faff1e50fc3695
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081421"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512143"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署 ClickOnce 应用程序
 并非所有开发人员正在创建 ClickOnce 部署都计划来部署应用程序本身。 其中许多只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，如大公司。 客户将成为一个负责承载其网络上的应用程序。 本主题讨论了一些在 3.5 版之前的.NET Framework 的版本中的此类部署中固有的问题。 然后，它介绍通过使用新的"使用信任的清单"功能在.NET Framework 3.5 中提供的一个新的解决方案。 最后，则可以确定创建的客户仍在使用较旧版本的.NET Framework 的 ClickOnce 部署的建议策略。  
@@ -54,7 +54,7 @@ ms.locfileid: "39081421"
 ## <a name="create-customer-deployments-by-using-application-manifest-for-trust"></a>客户部署使用创建的应用程序清单信任  
  ClickOnce 的.NET Framework 3.5 中包含一项新功能，让开发人员和客户的新解决方案对方案进行签名的清单的方式。 ClickOnce 应用程序清单支持名为的新元素`<useManifestForTrust>`，使开发人员来表示的数字签名的应用程序清单是应使用来做出信任决定。 开发人员可以使用 ClickOnce 打包工具，如*Mage.exe*， *MageUI.exe*，和 Visual Studio-若要在应用程序清单中包含此元素，以及要嵌入这两个发布服务器名称和在清单中的应用程序的名称。  
   
- 当使用`<useManifestForTrust>`，部署清单不需要使用由证书颁发机构颁发的验证码证书进行签名。 相反，它可以使用所谓的自签名证书进行签名。 自签名的证书是由客户或开发人员通过使用标准的.NET Framework SDK 工具生成，然后使用标准的 ClickOnce 部署工具部署清单中应用。 有关详细信息，请参阅[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)。  
+ 当使用`<useManifestForTrust>`，部署清单不需要使用由证书颁发机构颁发的验证码证书进行签名。 相反，它可以使用所谓的自签名证书进行签名。 自签名的证书是由客户或开发人员通过使用标准的.NET Framework SDK 工具生成，然后使用标准的 ClickOnce 部署工具部署清单中应用。 有关详细信息，请参阅[MakeCert](/windows/desktop/SecCrypto/makecert)。  
   
  使用自签名的证书进行部署清单提供了几个优势。 通过消除对客户可获取或创建自己的验证码证书，需要`<useManifestForTrust>`简化了部署，客户，同时还允许开发人员维护他们自己的应用程序上的品牌标识。 结果是更安全，并且具有唯一的应用程序标识的已签名部署一组。 这消除了从相同应用程序部署到多个客户可能会发生潜在冲突。  
   

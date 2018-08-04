@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50b9b61f34ba9e78efd8bc40c7d97583ee0c25f7
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 686969c233f50dd1df743590206966183be48da9
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117012"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513193"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
 在中**属性**窗口、 对话框或如变量设计器中，当您选择的设计器**浏览类型**数据类型的列表，从是**浏览并选择.NET 类型**对话框中 （在"类型浏览器"以缩写形式称为）。 在此对话框中，可以从程序集和项目的树视图中选择类型。
 
- 在很多用户方案中都使用此对话框，这些方案包括：
+在很多用户方案中都使用此对话框，这些方案包括：
 
 -   设置变量或参数的类型时。
 
@@ -56,21 +56,24 @@ ms.locfileid: "37117012"
      选择想要用于关闭下拉列表框中，从泛型，然后单击类型**确定**。
 
 ## <a name="types-displayed-in-the-type-browser"></a>类型浏览器中显示的类型
- 类型浏览器中显示的类型可能因启动类型浏览器的方式而有所不同。 如果从工作流项目中的启动类型浏览器**vs2010**、 默认情况下，所有被引用程序集中的类型和显示引用的项目。 如果从外部的启动类型浏览器**vs2010**项目系统 （如重新承载工作流应用程序或独立工作流文件中），则默认情况下显示来自所有 AppDomain 中加载的程序集的类型.
 
- 可以按活动设计器开发人员筛选类型浏览器中的类型。 对于任何给定的活动，您可能只看到一个类型子集。 例如，在 <xref:System.Activities.Statements.TryCatch> 活动中，只有从 <xref:System.Exception> 派生的类型显示在类型浏览器中。
+类型浏览器中显示的类型可能因启动类型浏览器的方式而有所不同。 如果从工作流项目中的启动类型浏览器**vs2010**、 默认情况下，所有被引用程序集中的类型和显示引用的项目。 如果从外部的启动类型浏览器**vs2010**项目系统 （如重新承载工作流应用程序或独立工作流文件中），则默认情况下显示来自所有 AppDomain 中加载的程序集的类型.
+
+可以按活动设计器开发人员筛选类型浏览器中的类型。 对于任何给定的活动，您可能只看到一个类型子集。 例如，在 <xref:System.Activities.Statements.TryCatch> 活动中，只有从 <xref:System.Exception> 派生的类型显示在类型浏览器中。
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>在类型浏览器中筛选搜索结果
- 中的类型列表**类型名称**框就会越短键入更多字符可找到匹配项。 只有其完全限定名以您键入的字符串开头的类型或者其简短名称以您键入的字符串开头的类型会显示在筛选出的列表中。
 
- 例如：
+中的类型列表**类型名称**框就会越短键入更多字符可找到匹配项。 只有其完全限定名称以您键入的字符串开头的类型或其简短名称以您键入的字符串开头的类型出现在筛选后的列表。
+
+例如：
 
 1.  键入**操作**匹配<xref:System.OperationCanceledException>但不是<xref:System.InvalidOperationException>。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。
 
-2.  键入**泛型**匹配<xref:System.GenericUriParser>但不是在类型<xref:System.Collections.Generic>命名空间。 若要在 <xref:System.Collections.Generic> 命名空间中搜索类型，请键入该命名空间的完全限定名称。
+2.  键入**泛型**匹配<xref:System.GenericUriParser>但不是在类型<xref:System.Collections.Generic>命名空间。 若要搜索中的类型<xref:System.Collections.Generic>命名空间中，键入命名空间的完全限定的名称。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用类型浏览器对话框选择服务协定
- 选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。
+
+选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。
 
 ## <a name="see-also"></a>请参阅
 

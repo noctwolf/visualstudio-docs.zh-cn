@@ -1,5 +1,5 @@
 ---
-title: 创作 Windows Installer 包 |Microsoft 文档
+title: 创作 Windows Installer 程序包 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,43 +14,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215e1496d35059448cf11457658b7d1270b5677d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: edb0a1d385129600372fc26693aec729751a768c
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127913"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512863"
 ---
-# <a name="authoring-a-windows-installer-package"></a>创作 Windows Installer 包
-数据驱动器的 Windows Installer 模型。 而不是撰写的过程的脚本将文件复制和写入注册表项，例如，您创作行和包含文件和注册表数据的数据库表中的列。  
+# <a name="author-a-windows-installer-package"></a>创作 Windows Installer 包
+数据驱动器的 Windows 安装程序模型。 而不是编写过程的脚本，以将文件复制和写入注册表项，例如，您创建行和列中包含的文件和注册表数据的数据库表。  
   
 ## <a name="database-entries"></a>数据库项  
- 若要安装 VSPackage，Windows Installer 包必须包含数据库条目，执行以下任务：  
+若要安装 VSPackage，Windows Installer 包必须包含数据库条目，执行以下任务：  
   
--   搜索系统后，若要查找的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]你的 VSPackage 支持 （使用包括 AppSearch、 CompLocator、 RegLocator、 DrLocator 和签名的 Windows Installer 表）。  
+- 搜索系统以找到的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]你的 VSPackage 支持 （使用包括 AppSearch、 CompLocator、 RegLocator、 DrLocator 和签名的 Windows Installer 表）。  
   
--   取消安装，如果没有支持的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]安装或如果未满足的 VSPackage 的另一个系统要求 （使用 LaunchCondition 表）。  
+- 如果没有受支持的版本取消安装[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]安装或如果不满足的 VSPackage 的另一个系统要求 （使用 LaunchCondition 表）。  
   
--   安装 VSPackage 和相关文件 （使用 directory、 组件和文件表）。  
+- 安装 VSPackage 和相关文件 （使用目录、 组件和文件表）。  
   
--   将相应信息来 VSPackage 添加到注册表 （使用注册表表）。  
+- 将 vspackage 的相应信息添加到注册表 （使用注册表表）。  
   
--   将集成在 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过调用**devenv.exe /setup** （使用 CustomAction 表）。  
+- 将集成在 VSPackage[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过调用**devenv.exe /setup** （使用 CustomAction 表）。  
   
- 有关详细信息，请参阅[Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)。  
+有关详细信息，请参阅[Windows 安装程序](/windows/desktop/Msi/windows-installer-portal)。
   
 ## <a name="setup-tools"></a>安装程序工具  
- 不同的第三方安装程序工具，提供用于 Windows Installer 程序包的开发环境。 两个可用的工具如下所示：  
+各种第三方安装程序工具提供了 Windows Installer 程序包的开发环境。 可用的免费工具如下：  
   
--   InstallShield Limited Edition  
+- InstallShield limited edition  
   
-     你可以通过 Visual Studio 获取 InstallShield 的受限的版本**新项目**对话框。 展开**其他项目类型**，然后选择**安装和部署**。 选择 InstallShield 模板。  
+   您可以通过 Visual Studio 获得有限的版本的 InstallShield**新的项目**对话框。 展开**其他项目类型**，然后选择**安装和部署**。 选择 InstallShield 模板。  
   
--   Windows Installer XML 工具集  
+- Windows Installer XML 工具集  
   
-     工具集生成 XML 源文件中的 Windows Installer 程序包。 工具集，则 Microsoft 开放源代码项目。 你可以下载源代码和可执行文件从[ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix)。  
+   Windows Installer XML (WiX) 工具集生成 XML 源文件从 Windows Installer 程序包。 WiX 工具集是 Microsoft 的开源项目。 您可以下载源代码和从可执行文件[Wix 工具集](http://sourceforge.net/projects/wix)。  
   
- 用于将集成到的商业产品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，请参阅[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
+   为将集成到商业产品[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过使用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，请参阅[ http://visualstudiogallery.com ](http://visualstudiogallery.com/)。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>请参阅  
+ [使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ab9a2e602bf1c92fb7dee7fe35b9d33f2d578fa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b4b70c800e9dff7852d2a7aaec3ee1125932dfc1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079075"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512039"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳实践。  
@@ -165,8 +165,9 @@ ms.locfileid: "39079075"
 |||  
 |-|-|  
 |**特性**|**定义**|  
-|URI|[必需]一个 URI，定义可从中加载图像。 它可以是以下值之一：<br /><br /> -A [Pack URI](http://msdn.microsoft.com/en-US/library/aa970069\(v=vs.100\).aspx)使用应用程序: / / 颁发机构<br />-一个绝对组件资源引用<br />的包含本机资源的文件路径|  
+|URI|[必需]一个 URI，定义可从中加载图像。 它可以是以下值之一：<br /><br /> -A [Pack URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)使用应用程序: / / 颁发机构<br />-一个绝对组件资源引用<br />的包含本机资源的文件路径|  
 |背景|[可选]指示什么类型的源应使用的背景。<br /><br /> 它可以是以下值之一：<br /><br /> *光：* 可以在浅色背景上使用了源。<br /><br /> *深色：* 可以在深色背景上使用了源。<br /><br /> *高对比度：* 可以在高对比度模式中的任何背景上使用了源。<br /><br /> *HighContrastLight:* 可以在高对比度模式中的浅色背景上使用了源。<br /><br /> *HighContrastDark:* 可以在高对比度模式中的深色背景上使用了源。<br /><br /> 如果省略背景特性，则可以在任何的背景上使用源。<br /><br /> 如果后台*Light*，*深色*， *HighContrastLight*，或*HighContrastDark*，永远不会反转的源的颜色。 如果省略或设为背景*对比度*，由图像的控制的源的颜色反转**AllowColorInversion**属性。|  
+
 |||  
   
  一个\<源 > 元素可以具有以下可选子元素之一：  
@@ -651,7 +652,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3.  更新代码以使用图像服务请求通过所更新映射的名字对象。 (这可能意味着需要更新到**CrispImages**对于托管代码中，或从映像服务请求 HBITMAPs 或 HICONs 和对于本机代码中传递它们。)  
   
 ## <a name="testing-your-images"></a>测试你的映像  
- 图像库查看器工具可用于测试映像清单，以确保所有内容编写正确。 您可以发现中的工具[Visual Studio 2015 SDK](http://msdn.microsoft.com/library/bb166441.aspx)。 有关此工具和其他文档，请参阅[此处](http://aka.ms/VSImageThemeTools)。  
+ 图像库查看器工具可用于测试映像清单，以确保所有内容编写正确。 您可以发现中的工具[Visual Studio 2015 SDK](visual-studio-sdk.md)。 有关此工具和其他文档，请参阅[此处](http://aka.ms/VSImageThemeTools)。  
   
 ## <a name="additional-resources"></a>其他资源  
   

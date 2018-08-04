@@ -1,5 +1,5 @@
 ---
-title: 图形帧验证 |Microsoft 文档
+title: 图形帧验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 03/02/2017
 ms.technology: vs-ide-debug
@@ -12,26 +12,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9732cd3f3440448e5096e71f838d8ebcf20fb13
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fee7e1db2716c2c7fedba41970ccfb0471e3d230
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473954"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511290"
 ---
 # <a name="graphics-frame-validation"></a>图形帧验证
-<!-- VERSIONLESS -->
-Visual Studio 2017 和更好的支持**帧验证**工具。  该框架验证窗口显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
+<!-- VERSIONLESS --> Visual Studio 2017 和更好的支持**帧验证**工具。  帧验证窗口中显示错误和警告事件列表与相关联。  若要查看此窗口，请选择**视图 > 帧验证**菜单。
 
 ![帧验证](media/gfx_diag_frame_validation.png)
 
-单击**运行验证**按钮，位于左上角来启动分析。  可能需要几分钟才能完成具体取决于框架的复杂性。  它显示下面是组合来自两个源的数据： 消息该 D3D 本身发出时[SDK 层](https://msdn.microsoft.com/library/windows/desktop/ff476881(v=vs.85).aspx)启用时，和从工具自己的内部状态跟踪收集的数据。 完成后，你将看到多个列的数据：
+单击**运行验证**按钮，位于左上角启动分析。  可能需要几分钟才能完成，具体取决于帧的复杂性。  将显示下面是组合来自两个源的数据： 消息的 D3D 本身发出时[SDK 层](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers)已启用，并从工具的内部状态跟踪收集的数据。 完成后，你将看到多个列的数据：
 
 **列**|**说明**
 ---|---
-事件 ID | ID 映射到将项记入[事件列表](graphics-event-list.md)窗口。
+事件 ID | ID 映射到中的条目[事件列表](graphics-event-list.md)窗口。
 严重性 | 损坏、 错误、 警告、 信息或消息。
-类别 | 应用程序定义、 杂项、 初始化、 清理、 编译、 状态创建、 状态设置、 状态获取、 执行、 资源操作、 着色器，冗余，和未使用。
+类别 | 已定义的其他应用程序、 初始化、 清理、 编译、 状态创建、 状态设置、 状态获取、 执行、 资源操作、 着色器，冗余的并且未使用。
 消息 | 与事件关联的消息。
 事件 | 与错误或警告关联的事件。
 

@@ -1,5 +1,5 @@
 ---
-title: 必须在安装后运行的命令 |Microsoft 文档
+title: 必须在安装后运行的命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,52 +13,53 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f1651f311fbad7aefe40a2744c61dc7d81725c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 08e1bcf064a8e94af306230e705f686d2d8037c1
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31132325"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510701"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
-如果通过.msi 文件部署你的扩展，则必须运行`devenv /setup`中对 Visual Studio 来发现你的扩展的顺序对安装的一部分。  
+如果您将通过你扩展部署 *.msi*文件中，您必须运行**devenv /setup**作为您的安装顺序 for Visual Studio 以发现你的扩展的一部分。  
   
 > [!NOTE]
->  本主题中的信息适用于查找 DevEnv 随 Visual Studio 2008 及更早版本。 有关如何发现 DevEnv 与更高版本的 Visual Studio 的信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
+>  本主题中的信息适用于查找*devenv.exe*使用 Visual Studio 2008 及更早版本。 有关如何发现*devenv.exe*更高版本的 Visual Studio，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
   
-## <a name="finding-devenvexe"></a>查找 devenv.exe  
- 你可以找到每个版本从注册表的 devenv.exe 值[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]编写安装程序，使用 RegLocator 表和 AppSearch 表将注册表值作为属性存储。 有关详细信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
+## <a name="find-devenvexe"></a>查找 devenv.exe  
+ 您可以找到每个版本*devenv.exe*从注册表值[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]编写安装程序，使用 RegLocator 表和 AppSearch 表作为属性存储的注册表值。 有关详细信息，请参阅[检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。  
   
-### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>要查找来自不同版本的 Visual Studio 的 devenv.exe 的 RegLocator 表行  
+### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator 表行，以查找来自不同版本的 Visual Studio 的 devenv.exe  
   
-|Signature_|根|键|名称|类型|  
+|签名|根|键|name|类型|  
 |-----------------|----------|---------|----------|----------|  
 |RL_DevenvExe_2002|2|SOFTWARE\Microsoft\VisualStudio\7.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2003|2|SOFTWARE\Microsoft\VisualStudio\7.1\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2005|2|SOFTWARE\Microsoft\VisualStudio\8.0\Setup\VS|EnvironmentPath|2|  
 |RL_DevenvExe_2008|2|SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS|EnvironmentPath|2|  
   
-### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch 的相应 RegLocator 表行的表行  
+### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>AppSearch 相应 RegLocator 表行的表行  
   
-|属性|Signature_|  
+|属性|签名|  
 |--------------|-----------------|  
 |DEVENV_EXE_2002|RL_DevenvExe_2002|  
 |DEVENV_EXE_2003|RL_DevenvExe_2003|  
 |DEVENV_EXE_2005|RL_DevenvExe_2005|  
 |DEVENV_EXE_2008|RL_DevenvExe_2008|  
   
- 例如，Visual Studio 安装程序将写的注册表值**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath**作为**C:\VS2008\Common7\IDE\devenv.exe**，安装程序必须运行的可执行文件的完整路径。  
+ 例如，在 Visual Studio 安装程序写入的注册表值**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\Setup\VS\EnvironmentPath**作为*C:\VS2008\Common7\IDE\devenv.exe*，必须运行安装程序的可执行文件的完整路径。  
   
- **请注意**RegLocator 类型列是 2，因为不需要签名表中指定的其他版本信息。  
+> [!NOTE]
+> RegLocator 类型表列为 2，因为它不需要签名表中指定其他版本信息。  
   
-## <a name="running-devenvexe"></a>运行 devenv.exe  
- 在安装程序中运行的标准操作 AppSearch 后, AppSearch 表中的每个属性具有相应版本的 Visual Studio 的 devenv.exe 文件所指向的值。 如果任何指定的注册表值都不存在-由于未安装该版本的 Visual Studio-指定的属性设置为 null。  
+## <a name="run-devenvexe"></a>运行 devenv.exe  
+ 之后在安装程序中运行的标准操作 AppSearch，AppSearch 表中的每个属性具有值指向*devenv.exe*相应版本的 Visual Studio 的文件。 任何指定的注册表值是否不存在，因为未安装该版本的 Visual Studio-指定的属性设置为 null。  
   
- 通过自定义操作运行可执行文件属性所指向的 Windows Installer 支持类型 50。 自定义操作应包括在脚本执行选项、 msidbCustomActionTypeInScript (1024) 和 msidbCustomActionTypeCommit (512)，以确保已成功将其集成到之前安装 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 有关详细信息，请参阅 CustomAction 表和自定义操作脚本中执行的选项。  
+ Windows 安装程序支持通过自定义操作运行可执行文件属性指向键入 50。 自定义操作应包含在脚本执行选项中， `msidbCustomActionTypeInScript` (1024) 和`msidbCustomActionTypeCommit`(512)，以确保已成功将其集成到之前安装 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 有关详细信息，请参阅[CustomAction 表](https://docs.microsoft.com/windows/desktop/msi/customaction-table)并[自定义操作脚本中执行选项](https://docs.microsoft.com/windows/desktop/msi/custom-action-in-script-execution-options)。  
   
- 类型 50 的自定义操作指定的源列和目标列中的命令行自变量的值作为包含可执行文件的属性。  
+ 自定义操作类型 50 的指定属性作为源列和目标列中的命令行参数的值包含可执行文件。  
   
-### <a name="customaction-table-rows-to-run-devenvexe"></a>要运行 devenv.exe 的 CustomAction 表行  
+### <a name="customaction-table-rows-to-run-devenvexe"></a>若要运行 devenv.exe 的 CustomAction 表行  
   
 |操作|类型|源|目标|  
 |------------|----------|------------|------------|  
@@ -67,14 +68,14 @@ ms.locfileid: "31132325"
 |CA_RunDevenv2005|1586|DEVENV_EXE_2005|/setup|  
 |CA_RunDevenv2008|1586|DEVENV_EXE_2008|/setup|  
   
- 到要在安装过程的执行计划它们的 InstallExecuteSequence 表，必须编写自定义操作。 使用条件列中每一行中的相应属性以防止从正在运行，如果该自定义操作的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在系统上未安装。  
+ 到 InstallExecuteSequence 表进行的安装过程的执行计划，必须编写自定义操作。 使用条件列的每一行中的相应属性以防止从正在运行，如果自定义操作的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]系统上未安装。  
   
 > [!NOTE]
->  `Null` 属性计算结果为`False`时在条件中使用。  
+>  Null 值的属性的计算结果为`False`在条件中使用时。  
   
- 为每个自定义操作的序列列的值取决于你的 Windows Installer 包中的其他序列值。 序列值应是这样，运行方式的 devenv.exe 自定义操作尽可能接近立即在了 InstallFinalize 标准操作之前。  
+ 每个自定义操作序列列的值取决于你的 Windows 安装程序包中的其他序列值。 序列值应该是这样*devenv.exe*自定义操作以运行尽可能接近之前 InstallFinalize 标准操作。  
   
-### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>InstallExecuteSequence 表以计划 devenv.exe 自定义操作  
+### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>InstallExecuteSequence 表来计划 devenv.exe 自定义操作  
   
 |操作|条件|序列|  
 |------------|---------------|--------------|  
@@ -83,5 +84,5 @@ ms.locfileid: "31132325"
 |CA_RunDevenv2005|DEVENV_EXE_2005|6605|  
 |CA_RunDevenv2008|DEVENV_EXE_2008|6608|  
   
-## <a name="see-also"></a>另请参阅  
- [使用 Windows Installer 安装 VSPackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+## <a name="see-also"></a>请参阅  
+ [使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)

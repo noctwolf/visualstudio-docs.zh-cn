@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03e2ee64002d286c899f638f2fed16d4ef22abc7
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080768"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512205"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *验证码* 是使用行业标准加密，通过验证应用程序发行者真实性的数字证书对应用程序代码进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。  
@@ -50,7 +50,7 @@ ms.locfileid: "39080768"
   
  相反，从 CA（如证书供应商或企业内部部门）收到的证书可以为你的用户提供更高的安全性。 该证书不仅会标识已签名软件的发行者，还会通过与签发该证书的 CA 进行核实来验证发行者的身份。 如果 CA 不是根证书颁发机构，验证码还会沿证书链回溯到根颁发机构来验证该 CA 是否有权颁发证书。 为了提高安全性，应尽量使用 CA 颁发的证书。  
   
- 有关生成自发的详细信息，请参阅[New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate)或[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)。  
+ 有关生成自发的详细信息，请参阅[New-selfsignedcertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate)或[MakeCert](/windows/desktop/SecCrypto/makecert)。  
   
 ### <a name="timestamps"></a>时间戳  
  用于对 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序签名的证书在特定时间长度（通常为 12 个月）后会过期。 为了避免不断使用新证书对应用程序重新签名， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 支持时间戳。 使用时间戳对应用程序签名，只要时间戳有效，即使过期之后证书仍将被接受。 这将允许下载和运行证书已过期，但时间戳有效的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 还允许使用过期证书的已安装应用程序继续下载和安装更新。  
