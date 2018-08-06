@@ -28,6 +28,11 @@
   items:
     - name: 托管代码分析
       items:
+        - name: 从 FxCop 迁移
+          href: fxcop-analyzers.yml
+          items:
+            - name: 安装 FxCop 分析器
+              href: install-fxcop-analyzers.md
         - name: 安装 Roslyn 分析器
           href: install-roslyn-analyzers.md
         - name: 配置和使用 Roslyn 分析器
