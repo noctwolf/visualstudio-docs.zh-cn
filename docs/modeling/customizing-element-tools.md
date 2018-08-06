@@ -9,28 +9,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: cf990ea206a299c72ec55150bf2e4935b80fb473
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 332d7599543efbe5ee6e15ccc89d5fce595e5341
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946918"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566874"
 ---
 # <a name="customizing-element-tools"></a>自定义元素工具
-在某些 DSL 定义，作为一组元素表示在一个概念。 例如，如果你创建在其中一个组件具有一组固定的端口的一个模型，你始终希望要在其父组件在同一时间创建的端口。 因此，你必须自定义的元素创建工具，以便它创建的一组而并非仅仅一个元素。 若要实现此目的，你可以自定义如何初始化元素创建工具。
+在一些 DSL 定义中，在一个概念表示为一组元素。 例如，如果您创建模型，在其中一个组件具有一组固定的端口，您始终想要在其父组件在同一时间创建的端口。 因此，您必须自定义元素创建工具，使其创建的一组而不是只是一个元素。 若要实现此目的，你可以自定义如何初始化的元素创建工具。
 
- 你还可以重写该工具拖动到关系图或元素上时，会发生什么情况。
+ 您还可以重写该工具拖动到关系图或元素上时，会发生什么情况。
 
-## <a name="customizing-the-content-of-an-element-tool"></a>自定义的一种元素工具的内容
- 每个元素工具将存储的实例<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>(EGP)，其中包含一个或多个模型元素和链接的序列化的版本。 默认情况下，一种元素工具 EGP 包含该工具的指定类的一个实例。 您可以通过重写中更改此*YourLanguage*`ToolboxHelper.CreateElementToolPrototype`。 DSL 包加载时，调用此方法。
+## <a name="customizing-the-content-of-an-element-tool"></a>自定义元素工具的内容
+ 每个元素工具将存储的实例<xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>(EGP)，其中包含的一个或多个模型元素和链接序列化的版本。 默认情况下，元素工具 EGP 包含为工具指定类的一个实例。 您可以通过重写来更改此*YourLanguage*`ToolboxHelper.CreateElementToolPrototype`。 DSL 包加载时，调用此方法。
 
- 方法的一个参数是类的 DSL 定义中指定的 ID。 当与你感兴趣的类调用方法时，也可以将额外的元素添加到 EGP。
+ 方法的一个参数是类的在 DSL 定义中指定的 ID。 与您感兴趣的类调用方法时，您可以将额外的元素添加到 EGP。
 
- EGP，必须包括嵌入从一个主要元素到子公司元素的链接。 它还可以包含引用的链接。
+ EGP 必须包括嵌入附属元素从一个主要元素的链接。 它还可以包含引用链接。
 
- 下面的示例创建一个主要元素和两个嵌入的元素。 主类称为电阻器，，它具有名为终端的元素的两个嵌入关系。 嵌入的角色属性名为 Terminal1 和 Terminal2，并且两者都 1..1 的重数。
+ 以下示例创建一个主要元素和两个嵌入的元素。 主类称为电阻器，，它具有两个名为终端的元素的嵌入关系。 嵌入的角色属性名为 Terminal1 和 Terminal2，并且两者都重数 1..1。
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling; ...
 public partial class CircuitDiagramToolboxHelper
 {

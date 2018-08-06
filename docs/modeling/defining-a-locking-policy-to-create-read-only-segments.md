@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3c1f94637ab5e16954bdfcf209d4cf342c54deb7
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177096"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566763"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
@@ -31,7 +31,7 @@ ms.locfileid: "39177096"
 ## <a name="setting-and-getting-locks"></a>设置和获取锁
  在存储区、 一个分区，或某个元素上，可以设置锁。 例如，此语句将阻止模型元素被删除，并且还将阻止其属性正在更改：
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling.Immutability; ...
 element.SetLocks(Locks.Delete | Locks.Property);
 ```
@@ -49,7 +49,7 @@ element.SetLocks(Locks.Delete | Locks.Property);
 ### <a name="locks-on-partitions-and-stores"></a>锁分区和存储
  此外可以分区和应用商店应用锁。 设置分区的锁应用于分区中的所有元素。 因此，例如，以下语句将阻止在一个分区中的所有元素被删除，而不考虑其自己的锁的状态。 不过，其他锁如`Locks.Property`仍在单个元素上设置：
 
-```
+```csharp
 partition.SetLocks(Locks.Delete);
 ```
 
@@ -104,7 +104,7 @@ partition.SetLocks(Locks.Delete);
 ### <a name="to-define-a-locking-policy"></a>若要定义锁定策略
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> 具有以下定义：
 
-```
+```csharp
 public interface ILockingPolicy
 {
   Locks RefineLocks(ModelElement element, Locks proposedLocks);
@@ -117,7 +117,7 @@ public interface ILockingPolicy
 
  例如：
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change
@@ -156,7 +156,7 @@ namespace Company.YourDsl.DslPackage // Change
 ### <a name="to-make-your-policy-available-as-a-service"></a>若要使策略可作为服务
  在你`DslPackage`项目中，添加新的文件，其中包含类似于下面的示例代码：
 
-```
+```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Immutability;
 namespace Company.YourDsl.DslPackage // Change

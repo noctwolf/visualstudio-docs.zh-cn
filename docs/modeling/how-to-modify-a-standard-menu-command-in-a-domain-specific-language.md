@@ -12,27 +12,27 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: daa44f17fcf0eb61f5c4ce6c1bfada685a20f45e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951825"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566776"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
-可修改某些在 DSL 中自动定义的标准命令的行为。 例如，你可以修改**剪切**，以便它不包括敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
+可修改某些在 DSL 中自动定义的标准命令的行为。 例如，可以修改**剪切**以便排除敏感信息。 若要实现此目的，请重写命令集类中的方法。 这些类定义在 DslPackage 项目的 CommandSet.cs 文件中，并派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。
 
 > [!NOTE]
-> 如果你想要创建您自己的菜单命令，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+> 如果你想要创建自己的菜单命令，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
 ## <a name="what-commands-can-you-modify"></a>可以修改哪些命令？
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>发现可以修改的命令
 
-1.  在`DslPackage`项目中，打开`GeneratedCode\CommandSet.cs`。 此 C# 文件可在解决方案资源管理器的子公司作为`CommandSet.tt`。
+1.  在中`DslPackage`项目中，打开`GeneratedCode\CommandSet.cs`。 此 C# 文件可在解决方案资源管理器作为的子公司`CommandSet.tt`。
 
-2.  查找此文件中类以其名称结尾"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
+2.  在此文件的名称结尾找到类"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。
 
 3.  在每个命令集类中，键入“`override`”，后跟一个空格。 IntelliSense 将显示可重写方法的列表。 每个命令具有一对其名称以“`ProcessOnStatus`”和“`ProcessOnMenu`”开头的方法。
 
@@ -55,11 +55,11 @@ ms.locfileid: "31951825"
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  在**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中，创建名为的新类文件`CommandSet.cs`。
+2.  在中**DslPackage**，创建名为的文件夹**自定义代码**。 在此文件夹中创建名为的新类文件`CommandSet.cs`。
 
 3.  在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
 
-    ```
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.Design;
@@ -67,11 +67,11 @@ ms.locfileid: "31951825"
     { internal partial class Language1CommandSet { ...
     ```
 
-     **请注意**如果类文件模板用于创建新文件，则必须更正命名空间和类名。
+     **请注意**如果类文件模板用于创建新文件，则必须更正的命名空间和类名。
 
 ## <a name="override-the-command-methods"></a>重写命令方法
 
-大多数命令具有两个关联的方法： 具有名称的方法让`ProcessOnStatus`...确定是否该命令应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数调用。 你可能想要重写其中一个方法，或两者都进行重写。
+大多数命令都具有两个关联的方法： 具有名称的方法让`ProcessOnStatus`...确定命令是否应为可见和启用状态。 它将在每当用户右键单击关系图时调用，并应快速执行且不做任何更改。 `ProcessOnMenu`...当用户单击该命令，并应执行该命令的函数时调用。 你可能想要重写其中一个方法，或两者都进行重写。
 
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>更改命令何时显示在菜单上
 
@@ -126,7 +126,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 如果你的代码将对“存储”进行更改（例如创建、删除或更新元素或链接），则必须在事务内进行这些更改。 有关详细信息，请参阅[如何创建和更新模型元素](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
-### <a name="write-the-code-of-the-methods"></a>编写方法的代码
+### <a name="write-the-code-of-the-methods"></a>编写代码的方法
 
 以下片段通常在这些方法内十分有用：
 
@@ -142,7 +142,7 @@ protected override void ProcessOnMenuDeleteCommand()
 
 -   `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。
 
-有关如何导航到元素和有关如何创建的对象和链接的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+有关如何在元素之间导航以及如何创建对象和链接的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 ## <a name="see-also"></a>请参阅
 
@@ -152,5 +152,5 @@ protected override void ProcessOnMenuDeleteCommand()
 - [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK-线路关系图示例。广泛 DSL 自定义项](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [示例代码： 线路关系图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK-电路图示例。广泛的 DSL 自定义](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [示例代码： 电路图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

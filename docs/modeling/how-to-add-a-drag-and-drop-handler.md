@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 35b88e2c2c423803dda9ed85cfb820e8521ed138
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 74e4f806c6f2faeeddfc2cc13917a6b5275b1b48
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513502"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566624"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
@@ -50,14 +50,13 @@ using System.Linq;
             e.Effect = System.Windows.Forms.DragDropEffects.Copy;
           }
         }
-
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -如果用户释放鼠标按钮时鼠标指针停留在此形状或关系图中，如果调用此方法`OnDragOver(DiagramDragEventArgs e)`之前设置`e.Effect`以外的值为`None`。
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
-        {
+    {
           if (!IsAcceptableDropItem(e))
           {
             base.OnDragDrop(e);
@@ -66,8 +65,7 @@ using System.Linq;
           { // Process the dragged item, for example merging a copy into the diagram
             ProcessDragDropItem(e); // To be defined
           }
-        }
-
+    }
     ```
 
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -当用户双击的形状或关系图时，调用此方法。
@@ -76,7 +74,7 @@ using System.Linq;
 
 定义 `IsAcceptableDropItem(e)` 以确定拖动项是否是可接受的，并定义 ProcessDragDropItem(e) 以在放置该项后更新模型。 这些方法必须先从事件参数中提取项。 有关如何执行该操作的信息，请参阅[如何获取对拖动项的引用](#extracting)。
 
-## <a name="defining-gesture-handlers-by-using-mef"></a>通过使用 MEF 定义笔势处理程序
+## <a name="define-gesture-handlers-by-using-mef"></a>通过使用 MEF 定义笔势处理程序
 
 如果希望第三方开发人员能够对你的 DSL 定义他们自己的处理程序，则使用此方法。 用户可以在安装了你的 DSL 后选择安装第三方扩展。
 
@@ -148,7 +146,6 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
             == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.
      // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId
     }
-
     ```
 
      若要接受 UML 形状，请通过试验确定 UML 形状类的 Guid。 请记住，在任何关系图上通常都有多种类型的元素。 还请记住，从 DSL 或 UML 关系图拖动的对象是形状，而不是模型元素。
@@ -163,7 +160,7 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>准备用于模型总线的 DSL 项目
 
-1.  确保源 DSL 可供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型总线访问：
+1.  确保源 DSL 可由 Visual Studio 模型总线访问：
 
     1.  如果未安装 Visual Studio 模型总线扩展，请下载并安装它。 有关详细信息，请参阅[可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。
 

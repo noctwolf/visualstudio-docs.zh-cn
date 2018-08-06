@@ -9,32 +9,30 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: db011f9842d00b6a39be3f1e9f4d4d7a090f2581
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7afd12aa6277983f8b50eb1d7adfdd8396f8f960
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950538"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567264"
 ---
-# <a name="embedding-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
-您可以在 Windows 控件，它显示在控件中嵌入 DSL 图[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]窗口。
+# <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
 
-## <a name="embedding-a-diagram"></a>嵌入关系图
+您可以在 Windows 控件，将显示在 Visual Studio 窗口中嵌入 DSL 关系图。
 
-#### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>将 Windows 控件嵌入 DSL 图
+## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>在 Windows 控件中嵌入 DSL 关系图
 
-1.  添加新**用户控件**到 DslPackage 项目的文件。
+1.  添加一个新**用户控件**到 DslPackage 项目的文件。
 
-2.  将面板控件添加到用户控件。 此面板将包含 DSL 图。
+2.  将在面板控件添加到用户控件。 此面板将包含 DSL 关系图。
 
-     添加需要其他控件。
+     添加所需的其他控件。
 
      设置控件的定位点属性。
 
 3.  在解决方案资源管理器，右键单击用户控件文件，然后单击**查看代码**。 将此构造函数和变量添加到代码中：
 
     ```csharp
-
     internal UserControl1(MyDSLDocView docView, Control content)
       : this()
     {
@@ -42,12 +40,11 @@ ms.locfileid: "31950538"
       this.docView = docView;
     }
     private MyDSLDocView docView;
-
     ```
 
-4.  将新文件添加到 DslPackage 项目中，使用以下内容：
+4.  将新文件添加到 DslPackage 项目中包含以下内容：
 
-    ```
+    ```csharp
     using System.Windows.Forms;
     namespace Company.MyDSL
     {
@@ -66,19 +63,17 @@ ms.locfileid: "31950538"
             }
             return container;
     } } } }
-
     ```
 
-5.  若要测试 DSL，按 F5 并打开示例模型文件。 关系图将显示在控件内。 工具箱和其他功能正常工作。
+5.  若要测试 DSL，按**F5**并打开示例模型文件。 该控件中显示关系图。 工具箱和其他功能会正常工作。
 
-#### <a name="updating-the-form-using-store-events"></a>更新使用应用商店事件窗体
+## <a name="update-the-form-using-store-events"></a>更新窗体使用存储事件
 
-1.  在窗体设计器中，添加**ListBox**名为`listBox1`。 这将在模型中显示的元素的列表。 它将保留在模型使用 synchronism*存储事件*。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1.  在窗体设计器中，添加**ListBox**名为`listBox1`。 这将在模型中显示的元素的列表。 与模型使用同步*存储事件*。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
 2.  在自定义代码文件中，重写进一步 DocView 类的方法：
 
-    ```
-
+    ```csharp
     partial class MyDSLDocView
     {
      /// <summary>
@@ -115,14 +110,12 @@ ms.locfileid: "31950538"
      {
        container.Remove(e.ModelElement as ExampleElement);
      }
-
     ```
 
-3.  在代码隐藏用户控件中，插入方法来侦听的添加和移除的元素：
+3.  在针对该用户控件代码中，插入方法来侦听元素中添加和删除：
 
-    ```
-
-          public partial class UserControl1 : UserControl { ...
+    ```csharp
+    public partial class UserControl1 : UserControl { ...
 
     private ExampleModel modelRoot;
 
@@ -144,12 +137,11 @@ ms.locfileid: "31950538"
         listBox1.Items.Add(c.Name);
       }
     }
-
     ```
 
-4.  若要测试 DSL，按 F5 并在实验实例中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，打开示例模型文件。
+4.  若要测试 DSL，按**F5**并在 Visual Studio 的实验实例中，打开示例模型文件。
 
-     请注意列表框中显示的元素的列表，在模型中，以及它是正确和撤消和重做任何添加或删除操作后。
+     请注意，列表框中显示的元素的列表在模型中，并且它是正确任何添加或删除操作，以及撤消和重做。
 
 ## <a name="see-also"></a>请参阅
 

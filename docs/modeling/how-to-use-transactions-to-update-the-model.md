@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 590c355d391516def8f65579e5346281e335eea8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950002"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567336"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
-事务确保对应用商店所做的更改被视为一个组。 可以提交或回滚作为单个单元进行分组的更改。
+事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。
 
- 每当程序代码中修改、 添加，或删除中的存储区中的任意元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK，它必须在事务内执行此操作。 必须有的活动实例<xref:Microsoft.VisualStudio.Modeling.Transaction>发生更改与存储相关联。 这适用于所有模型元素、 关系、 形状、 关系图和其属性。
+ 每当你的程序代码修改、 添加，或删除中的存储区中的任何元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK，它必须在事务内执行此操作。 必须有应用的活动实例<xref:Microsoft.VisualStudio.Modeling.Transaction>更改发生时与应用商店相关联。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。
 
- 事务机制可帮助你避免不一致的状态。 如果在事务期间发生错误，将回滚所有更改。 如果用户执行撤消命令时，每个新的事务将被视为单个步骤。 除非你显式将它们放在单独的事务，则用户无法撤消最近更改的部分。
+ 事务机制可帮助您避免不一致的状态。 如果在事务期间发生错误，将回滚所有更改。 如果用户执行的撤消命令时，每个新的事务被视为单步执行。 除非显式将其放在单独的事务，则用户不能撤消的最新更改的部分。
 
-## <a name="opening-a-transaction"></a>打开事务
- 管理事务的最方便的方法是借助`using`语句括在`try...catch`语句：
+## <a name="opening-a-transaction"></a>打开一个事务
+ 管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：
 
-```
+```csharp
 Store store; ...
 try
 {
@@ -50,37 +50,37 @@ catch (Exception ex)
 }
 ```
 
- 如果异常阻止最终`Commit()`过程中发生更改，存储将重置为其以前的状态。 这有助于确保错误不会处于不一致状态中离开模型。
+ 如果异常，则最后`Commit()`过程中发生更改，在存储区将重置为其以前的状态。 这可帮助你确保错误不会为不一致状态中保留该模型。
 
- 你可以在一个事务内的更改的任何数。 你可以打开在活动事务内的新事务。 嵌套的事务必须提交或回滚在包含事务结束之前。 有关详细信息，请参阅示例<xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>属性。
+ 可以任意数量的一个事务内的更改。 您可以打开在活动事务内部的新事务。 嵌套的事务必须提交或回滚包含事务结束之前。 有关详细信息，请参阅示例<xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>属性。
 
- 若要使所做的更改为永久更改，你应`Commit`事务之前已释放。 如果异常发生在事务捕获不到，存储将重置为其状态之前所做的更改。
+ 若要永久所做的更改，您应`Commit`之前被释放的事务。 如果发生在事务内未捕获到异常，存储将重置为其状态之前所做的更改。
 
 ## <a name="rolling-back-a-transaction"></a>回滚事务
- 若要确保应用商店处于或将恢复为其状态的事务处理前，可以使用这些策略之一：
+ 若要确保在存储区将保留在或将恢复到事务执行前的状态，可以使用这些策略之一：
 
-1.  引发在事务范围内未被捕获的异常。
+1.  引发未捕获事务的作用域内的异常。
 
-2.  显式回滚事务：
+2.  回滚显式事务：
 
-    ```
+    ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();
     ```
 
 ## <a name="transactions-do-not-affect-non-store-objects"></a>事务不会影响非存储对象
- 事务仅控制的存储区的状态。 它们不能撤消部分如文件、 数据库或具有使用普通类型 DSL 定义之外声明的对象的外部项所做的更改。
+ 事务仅控制与存储的状态。 它们不能撤消对外部的项，如文件、 数据库或已使用外部 DSL 定义的普通类型声明的对象所做的部分更改。
 
- 如果异常可能会将此类更改与应用商店不一致，您应处理的异常处理程序在这种可能性。 请确保外部资源保持同步的存储对象的一种方法是通过使用事件处理程序将与存储区中元素的每个外部对象。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+ 如果异常可能会使此类更改与应用商店不一致，您应处理的异常处理程序中的这种可能性。 请确保外部资源保持与存储区对象同步的一种方法是使用事件处理程序耦合到存储区中元素的每个外部对象。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
-## <a name="rules-fire-at-the-end-of-a-transaction"></a>在事务结束规则激发
- 在事务结束时，释放事务之前，会触发附加到存储区中的元素的规则。 每个规则是应用到模型元素已更改的方法。 例如，有"修复"的规则，更新形状的状态时其模型元素已更改，并创建模型元素时，其创建的形状。 没有任何指定的激发顺序。 由规则所做的更改可能会引发另一个规则。
+## <a name="rules-fire-at-the-end-of-a-transaction"></a>事务结束时的规则触发
+ 在事务结束时，释放事务之前，会触发附加到存储区中的元素的规则。 每个规则都应用于已更改的模型元素的方法。 例如，有"修复"的规则，更新形状的状态时其模型元素已更改，并创建模型元素时，其创建形状。 没有任何指定的激发顺序。 由规则所做的更改可以触发另一个规则。
 
- 你可以定义自己的规则。 有关规则的详细信息，请参阅[响应和传播更改](../modeling/responding-to-and-propagating-changes.md)。
+ 可以定义自己的规则。 有关规则的详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。
 
- 规则不会触发后已撤消、 重做或回滚命令。
+ 规则不会撤消、 重做或回滚命令之后激发。
 
 ## <a name="transaction-context"></a>事务上下文
- 每个事务都有一个字典可以在其中存储所需的任何信息：
+ 每个事务都有一个字典，可以在其中存储所需的任何信息：
 
  `store.TransactionManager`
 
@@ -91,15 +91,15 @@ catch (Exception ex)
  这是特别有用的规则之间传输信息。
 
 ## <a name="transaction-state"></a>事务状态
- 在某些情况下，你需要避免传播更改，如果更改由撤消或重做事务。 这可能发生，例如，如果您编写的属性值处理程序可以更新存储区中的另一个值。 撤消操作将存储区中的所有值重都置为其之前的状态，因为它不需要计算更新后的值。 使用此代码：
+ 在某些情况下，需要避免传播更改，如果更改由正在撤消或重做事务。 这可能发生，例如，如果您编写的属性值处理程序可以更新存储区中的另一个值。 撤消操作将存储区中的所有值重都置为以前的状态，因为它不需要计算更新后的值。 使用以下代码：
 
-```
+```csharp
 if (!this.Store.InUndoRedoOrRollback) {...}
 ```
 
- 应用商店最初从文件加载时，规则可以激发。 若要避免对这些更改作出响应，请使用：
+ 在存储区最初从文件加载时，可以触发规则。 若要避免对这些更改作出响应，请使用：
 
-```
+```csharp
 if (!this.Store.InSerializationTransaction) {...}
 
 ```

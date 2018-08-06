@@ -1,5 +1,5 @@
 ---
-title: 什么&#39;Visual Studio 2017 SDK 中的新增功能的 s |Microsoft 文档
+title: 什么&#39;Visual Studio 2017 SDK 中的新增功能的 s |Microsoft Docs
 ms.custom: ''
 ms.date: 10/31/2017
 ms.technology:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc1f12a5a6c7368bc47e8f4e924d109dcf87f57
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f2a003bc19764aa07262552d3f0cc41316835b6
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144822"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566903"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>什么&#39;s Visual Studio 2017 SDK 中的新增功能
 
@@ -24,29 +24,29 @@ Visual Studio SDK 的 Visual Studio 2017 具有以下新的和更新功能。
 
 ## <a name="vsix-v3-format"></a>VSIX v3 格式
 
-若要支持新的轻量安装的 Visual Studio 2017，VSIX 扩展清单格式已更新为版本 3 (VSIX v3)。
+若要支持新的轻型安装的 Visual Studio 2017，VSIX 扩展清单格式已更新到版本 3 (VSIX v3)。
 
 新格式具有对支持：
 
-* 显式声明要检测到，由 VSIXInstaller 安装系统必备组件。
-* Ngen'ing 上扩展安装的程序集。
-* 安装在常用扩展根的外部的资产。
+* 显式声明要检测和安装 vsixinstaller 找系统必备组件。
+* Ngen 上扩展安装的程序集。
+* 安装常用扩展根目录之外的资产。
 
 若要了解有关这些更改，请参阅以下主题：
 
-* [对自 2017 年的扩展性的更改](breaking-changes-2017.md)
+* [2017 的可扩展性的更改](breaking-changes-2017.md)
 * [VSIX v3 中的 Ngen 支持](ngen-support.md)
-* [在扩展文件夹外进行安装](set-install-root.md)
-* [Visual Studio 2017 扩展性的常见问题](faq-2017.md)
+* [在扩展文件夹外安装](set-install-root.md)
+* [Visual Studio 2017 可扩展性的常见问题](faq-2017.md)
 
-## <a name="migrating-extensibility-project-to-visual-studio-2017"></a>迁移到 Visual Studio 2017 扩展性项目
+## <a name="migrate-extensibility-project-to-visual-studio-2017"></a>将扩展性项目迁移到 Visual Studio 2017
 
-若要了解如何更新到 Visual Studio 2017 的扩展性项目和其 VSIX 清单，请参阅[如何： 将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
+若要了解如何更新到 Visual Studio 2017 的可扩展性项目和各自的 VSIX 清单，请参阅[如何： 将扩展性项目迁移到 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
 ## <a name="custom-project-and-item-templates"></a>自定义项目和项模板
 
-从 Visual Studio 2017 年 1 开始，扫描自定义项目和项模板将无法再执行。 相反，扩展必须提供模板清单文件描述这些模板的安装位置。 你可以使用 Visual Studio 2017 更新 VSIX 扩展。 如果在部署你使用 MSI 的扩展，你必须手动生成模板清单文件。 有关详细信息，请参阅[升级自定义项目和项模板为 Visual Studio 2017](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 模板清单架构记录在[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
+从 Visual Studio 2017 中，扫描自定义项目和项模板将无法再执行。 相反，该扩展插件必须提供模板清单文件描述这些模板的安装位置。 Visual Studio 2017 可用于更新您的 VSIX 扩展。 如果部署使用 MSI 扩展，则必须手动生成模板清单文件。 有关详细信息，请参阅[升级 Visual Studio 2017 的自定义项目和项模板](../extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)。 模板清单架构记录在[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。
 
 ## <a name="updated-extension-performance-guidelines"></a>更新的扩展性能准则
 
-新增了一个[如何： 诊断扩展性能](how-to-diagnose-extension-performance.md)下的主题[管理 Vspackage](managing-vspackages.md)来演示如何检测和分析对 Visual Studio 扩展影响启动和解决方案加载时间。
+新增了一个[如何： 诊断扩展性能](how-to-diagnose-extension-performance.md)下的文章[管理 Vspackage](managing-vspackages.md)来说明如何检测和分析对 Visual Studio 的扩展影响启动和解决方案加载时间。
