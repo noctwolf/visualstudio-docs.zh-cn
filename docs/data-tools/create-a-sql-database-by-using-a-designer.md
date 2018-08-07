@@ -14,23 +14,24 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d21ba3f239bb4c5e3fdd1ba717b1288956b8550
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 71d9be6ddc664d3b25c52d227e749421611f3512
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756146"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582367"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>创建数据库并在 Visual Studio 中添加表
+
 可以使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 此外可以通过执行 TRANSACT-SQL 语句中的创建数据库**SQL Server 对象资源管理器**Visual Studio 工具窗口中的。 在本主题中，我们将创建 *.mdf*文件，并使用表设计器中添加表和键。
 
 ## <a name="prerequisites"></a>系统必备
+
 若要完成本演练，您必须具有可选**数据存储和处理**在 Visual Studio 中安装的工作负荷。 若要安装它，打开**Visual Studio 安装程序**，然后选择**工作负荷**选项卡。下**Web 和云**，选择**数据存储和处理**。 选择**修改**按钮将工作负荷添加到 Visual Studio。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>创建一个项目及本地数据库文件
 
-### <a name="to-create-a-project-and-a-database-file"></a>创建项目和数据库文件
-1.  创建名为一个 Windows 窗体项目`SampleDatabaseWalkthrough`。
+1.  创建名为一个 Windows 窗体项目**SampleDatabaseWalkthrough**。
 
 2.  在菜单栏上，选择**项目** > **添加新项**。
 
@@ -41,6 +42,7 @@ ms.locfileid: "36756146"
 4.  命名数据库**SampleDatabase**，然后选择**添加**按钮。
 
 ### <a name="to-add-a-data-source"></a>添加数据源
+
 5.  如果**数据源**窗口未打开，选择打开**Shift**+**Alt**+**D**密钥或在菜单栏中，选择**视图** > **其他 Windows** > **数据源**。
 
 6.  在中**数据源**窗口中，选择**添加新数据源**链接。
@@ -58,6 +60,7 @@ ms.locfileid: "36756146"
 11. 一个**选择数据库对象**页上，你会看到一条消息，指出数据库不包含任何对象。 选择“完成”。
 
 ### <a name="to-view-properties-of-the-data-connection"></a>若要查看的数据连接属性
+
 您可以查看的连接字符串*SampleDatabase.mdf*通过打开属性窗口中的数据连接文件：
 
 -   在 Visual Studio 中，选择**视图** > **SQL Server 对象资源管理器**如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点，打开快捷菜单*SampleDatabase.mdf*，然后选择**属性**。
@@ -65,9 +68,11 @@ ms.locfileid: "36756146"
 -   或者，可以选择**视图** > **服务器资源管理器**，如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点。 打开快捷菜单*SampleDatabase.mdf*，然后选择**属性**。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用表设计器创建表和键
+
 在本部分中，将创建两个表，每个表和若干行的示例数据中的主键。 你将创建外键以指定一个表中的记录如何与其他表中的记录相对应。
 
 ### <a name="to-create-the-customers-table"></a>创建 Customers 表
+
 1.  在中**服务器资源管理器**或**SQL Server 对象资源管理器**，展开**数据连接**节点，然后展开**SampleDatabase.mdf**节点。
 
 2.  打开快捷菜单**表**，然后选择**添加新表**。
@@ -104,6 +109,7 @@ ms.locfileid: "36756146"
     你所做的更改将保存到本地数据库文件中。
 
 ### <a name="to-create-the-orders-table"></a>创建 Orders 表
+
 1.  添加另一个表，然后在下表中为每个条目添加行：
 
     |列名称|数据类型|允许空|
@@ -128,11 +134,12 @@ ms.locfileid: "36756146"
     你所做的更改将保存到本地数据库文件中。
 
 ### <a name="to-create-a-foreign-key"></a>创建外键
+
 1.  在网格右侧的上下文窗格中，打开快捷菜单**外键**，然后选择**添加新外键**，如下图所示。
 
      ![在表设计器中添加外键](../data-tools/media/foreignkey.png)
 
-2.  在出现的文本框中，替换**ToTable**与`Customers`。
+2.  在出现的文本框中，替换**ToTable**与**客户**。
 
 3.  在 T-SQL 的窗格中，更新与以下示例相匹配的最后一行：
 
@@ -147,8 +154,6 @@ ms.locfileid: "36756146"
     你所做的更改将保存到本地数据库文件中。
 
 ## <a name="populate-the-tables-with-data"></a>用数据填充表
-
-### <a name="to-populate-the-tables-with-data"></a>将数据填入表中
 
 1.  在中**服务器资源管理器**或**SQL Server 对象资源管理器**，展开示例数据库的节点。
 

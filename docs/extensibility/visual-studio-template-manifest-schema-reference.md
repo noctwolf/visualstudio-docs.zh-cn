@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 模板清单架构参考 |Microsoft 文档
+title: Visual Studio 模板清单架构参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,29 +9,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f346329e4c0fa2defe6bc4ff6373226be72beb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38581d7c7dd788fef481676283fdc96c8abc96ba
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142568"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586297"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
-此架构描述为 Visual Studio 项目或项模板生成的 Visual Studio 模板清单 (.vstman) 文件的格式，并描述的位置和有关该模板的其他相关信息。  
+此架构描述了 Visual Studio 模板清单的格式 (*.vstman*) 生成的 Visual Studio 项目或项模板的文件。 位置和有关模板的其他相关信息，还介绍了架构。  
   
- ： 由于没有单独的项目和项目模板目录，清单不应具有多种项和项目模板。  
+ ： 由于没有单独的项目和项目模板目录，清单应该永远不会同时有的项和项目模板。  
   
 > [!IMPORTANT]
->  此清单是在 Visual Studio 2017 中开始提供。  
+>  此清单是从 Visual Studio 2017 开始，提供。  
   
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 元素  
  清单的根元素。  
   
 ### <a name="attributes"></a>特性  
   
--   **版本**： 一个表示模板清单的版本字符串。 必须的。  
+-   **版本**： 一个字符串，表示模板清单的版本。 必须的。  
   
--   **区域设置**： 表示的区域设置或区域设置的模板清单的字符串。 因此你必须针对每个区域设置使用单独清单，区域设置值将适用于所有模板。 可选。  
+-   **区域设置**： 一个表示区域设置或区域设置的模板清单的字符串。 区域设置值适用于所有模板。 必须将每个区域使用单独的清单。 可选。  
   
 ### <a name="child-elements"></a>子元素  
   
@@ -43,35 +43,35 @@ ms.locfileid: "31142568"
  无。  
   
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer  
- 模板的容器清单元素。 清单的一个模板容器，它定义每个模板。  
+ 模板容器的清单元素。 清单都有针对它定义了每个模板的一个模板容器。  
   
 ### <a name="attributes"></a>特性  
- **VSTemplateType** ： 一个字符串值，指定的模板的类型 (`"Project"`， `"Item"`，或`"ProjectGroup"`)。 必需  
+ **VSTemplateType**： 一个字符串值，指定模板类型 (`"Project"`， `"Item"`，或`"ProjectGroup"`)。 必需  
   
 ### <a name="child-elements"></a>子元素  
   
--   **RelativePathOnDisk**： 磁盘上的模板文件的相对路径。 此位置还在模板树中所示定义模板的位置**新项目**或**新项**对话框。 有关模板部署为目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为一个.zip 文件，此路径应为.zip 文件的路径。  
+-   **RelativePathOnDisk**： 磁盘上的模板文件的相对路径。 此位置还定义模板的放置在模板树中所示**新的项目**或**新项**对话框。 有关模板部署为一个目录和单个文件，此路径是指包含模板文件的目录。 有关模板部署为 *.zip*文件，此路径应为路径 *.zip*文件。  
   
--   **VSTemplateHeader** : A [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
+-   * * VSTemplateHeader： 一个[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)描述该标头的元素。  
   
 ### <a name="parent-element"></a>父元素  
  **VSTemplateManifest**  
   
 ## <a name="vstemplatedir"></a>VSTemplateDir  
- 描述模板所在的目录。 清单可以包含多个**VSTemplateDir**条目以提供本地化的名称和排序顺序目录来控制模板类别树中的其外观。  
+ 介绍模板所在的目录。 清单可以包含多个**VSTemplateDir**条目提供本地化的名称和排序顺序的目录，以控制它们在模板类别树中的外观。  
   
- 由于其设计， **VSTemplateDir**条目应仅在非区域设置指定清单中出现。  
+ 由于其设计**VSTemplateDir**条目应仅在非区域设置指定的清单中出现。  
   
 ### <a name="attributes"></a>特性  
  无。  
   
 ### <a name="child-elements"></a>子元素  
   
--   **RelativePath**： 模板的路径。 可以每个路径，只有一个条目，因此第一个将 win 对于所有清单。  
+-   **RelativePath**： 模板的路径。 可能每个路径，只有一个条目，因此第一个获胜的所有清单。  
   
--   **LocalizedName**: A **NameDescriptionIcon**指定本地化的名称的元素。 可选。  
+-   **LocalizedName**： 一个**NameDescriptionIcon**元素，它指定本地化的名称。 可选。  
   
--   **SortOrder** ： 一个字符串，指定排序顺序。 可选。  
+-   **SortOrder**： 一个字符串，指定排序顺序。 可选。  
   
 -   **ParentFolderOverrideName**： 重写的父文件夹的名称。 可选。 此元素具有**名称**特性，它是一个字符串值，指定的名称。  
   
@@ -79,13 +79,13 @@ ms.locfileid: "31142568"
  **VSTemplateManifest**  
   
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon  
- 指定的名称和说明，可能是进行本地化的模板。 请参阅**LocalizedName**上面。  
+ 指定的名称和描述，可能是已本地化的模板。 请参阅**LocalizedName**上面。  
   
 ### <a name="attributes"></a>特性  
   
 -   **包**： 一个字符串值，指定的包。 可选。  
   
--   **ID**： 一个字符串值，指定 id。 可选。  
+-   **ID**： 一个字符串值，指定该 id。 可选。  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -94,7 +94,7 @@ ms.locfileid: "31142568"
  **LocalizedName**  
   
 ## <a name="examples"></a>示例  
- 下面是项目模板.vstman 文件的示例。  
+ 下面的代码是项目模板的示例 *.vstman*文件。  
   
 ```xml  
 <VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
@@ -120,9 +120,9 @@ ms.locfileid: "31142568"
   
 ```  
   
- 下面是一个项模板.vstman 文件的示例。  
+ 下面的代码是项模板的示例 *.vstman*文件。  
   
-```  
+```xml  
 VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">  
   <VSTemplateContainer TemplateType="Item">  
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>  

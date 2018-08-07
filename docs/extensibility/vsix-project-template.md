@@ -1,5 +1,5 @@
 ---
-title: VSIX 项目模板 |Microsoft 文档
+title: VSIX 项目模板 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,75 +14,75 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bff05b0b1b05a6b00b7924f0fb5bfc957adba41c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2309428ffa87409bd35f1a05c2cfd591db3cc1a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142388"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586282"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
-你可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在一个 VSIX 项目中，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
+可以使用 VSIX 项目模板将一个或多个 Visual Studio 扩展包装在 VSIX 项目，然后将包发布上[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点。  
   
- VSIX 部署支持 Vspackage、 程序集、 MEF 组件、 项目模板、 项模板、 工具箱控件和自定义的扩展类型。  
+ VSIX 部署支持 Vspackage、 程序集、 MEF 组件、 项目模板、 项模板，工具箱控件和自定义扩展插件类型。  
   
 > [!NOTE]
 >  若要使用 VSIX 项目，必须安装 Visual Studio SDK。 有关 Visual Studio SDK 的详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>在哪里可以找到 VSIX 项目模板  
- VSIX 项目模板将在**新项目**对话框。 展开**Visual Basic**节点或**Visual C#** 节点，然后选择**扩展性**。  
+ VSIX 项目模板现已推出**新的项目**对话框。 展开**Visual Basic**节点或**Visual C#** 节点，然后选择**扩展性**。  
   
 > [!TIP]
->  请确保该.NET Framework 4.5 或更高版本在顶部的下拉列表中指定**新项目**对话框。  
+>  请确保该.NET Framework 4.5 或更高版本顶部的下拉列表框中指定**新的项目**对话框。  
   
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX 项目模板的用途  
- VSIX 项目模板有两个主要用途：  
+ VSIX 项目模板具有两个主要用途：  
   
--   如果要部署项目模板、 项模板和已没有 VSIX 支持其他扩展。  
+-   若要部署的项目模板、 项模板和已具有 VSIX 支持其他扩展。  
   
--   要包装为一个部署包的输出的多个扩展。  
+-   若要将多个扩展的输出包装到一个部署包。  
   
- 无需使用 VSIX 项目模板来部署 Vspackage 或其他种类的已有 VSIX 支持的扩展。  
+ 无需使用 VSIX 项目模板来部署 Vspackage 或其他类型的已有支持 VSIX 扩展。  
   
-## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>打包的空 VSIX 项目中的扩展  
- 你可以打包现有扩展或尚不包含支持，方法是将它放置在一个空的 VSIX 项目中的 VSIX 扩展。 要包装的扩展必须支持的类型[VSIX 架构](../extensibility/vsix-extension-schema-2-0-reference.md)。  
+## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>打包在一个空的 VSIX 项目中的扩展  
+ 您可以打包现有扩展插件或不具有支持，通过将其包装在一个空的 VSIX 项目中的 VSIX 扩展。 要包装的扩展必须支持的类型的[VSIX 架构](../extensibility/vsix-extension-schema-2-0-reference.md)。  
   
-#### <a name="to-package-an-extension-by-using-a-vsix-project"></a>若要将扩展打包使用 VSIX 项目  
+### <a name="to-package-an-extension-by-using-a-vsix-project"></a>若要将扩展打包使用 VSIX 项目  
   
-1.  构成你的扩展将项目生成。  
+1.  生成构成了您的扩展插件项目。  
   
 2.  使用创建 VSIX 项目**VSIX 项目**模板。  
   
-     在中打开 Source.extension.vsixmanifest**清单设计器**。  
+     *Source.extension.vsixmanifest*中打开**清单设计器**。  
   
 3.  上**资产**选项卡上，选择**新建**按钮。  
   
      **添加新资产**对话框随即出现。  
   
-4.  在**类型**列表中，选择要添加的扩展的类型。  
+4.  在中**类型**列表中，选择要添加的扩展类型。  
   
-5.  若要添加将包含在当前解决方案 （例如，项模板或已编译的程序集） 的扩展或内容元素，请执行以下步骤：  
+5.  若要添加包含在当前解决方案 （例如，项模板或已编译的程序集） 的扩展插件或内容元素，请执行以下步骤：  
   
-    1.  在**源**列表中，选择**当前解决方案中的项目**。  
+    1.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
-    2.  在**项目**列表中，选择扩展的名称。  
+    2.  在中**项目**列表中，选择扩展插件的名称。  
   
-    3.  在**此文件夹中的嵌入**框中，输入在其中以嵌入资产，然后选择的文件夹的名称**确定**按钮。  
+    3.  在中**在此文件夹中的嵌入**框中，输入在其中以嵌入资产，然后选择的文件夹的名称**确定**按钮。  
   
-6.  若要添加扩展或不包括当前解决方案中的内容元素，执行以下步骤：  
+6.  若要添加的扩展或不包括在当前解决方案的内容元素，请执行以下步骤：  
   
-    1.  在**源**列表框中，选择**在文件系统上的文件**。  
+    1.  在中**源**列表框中，选择**在文件系统上的文件**。  
   
-    2.  在**路径**字段中，到编译或压缩扩展文件中，输入的完整路径或使用**浏览**按钮以浏览到该文件。  
+    2.  在中**路径**字段中，已编译或压缩扩展文件中，输入完整路径或使用**浏览**按钮以浏览到该文件。  
   
-    3.  在**此文件夹中的嵌入**框中，输入在其中以嵌入资产，然后选择的文件夹的名称**确定**按钮。  
+    3.  在中**在此文件夹中的嵌入**框中，输入在其中以嵌入资产，然后选择的文件夹的名称**确定**按钮。  
   
-7.  如果想要包括其他扩展。 你包，则将它们添加相同的方式。  
+7.  如果你想要包括的其他扩展包，则将它们添加相同的方式。  
   
 8.  生成解决方案。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成包含 VSIX 清单文件、 [Content_Types].xml 文件，和的所有扩展资产添加到项目的.vsix 文件。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 生成 *.vsix*文件，其中包含 VSIX 清单文件，[Content_Types]*.xml*文件，以及所有添加到项目中的扩展资产。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 模板架构参考 |Microsoft 文档
+title: Visual Studio 模板架构参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,23 +15,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb18385c32cee40ae4a6bf902bf79623c3bc2854
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 566a07af35181433b88d5c84ea461e2b7546fe4b
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571515"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586334"
 ---
 # <a name="visual-studio-template-schema-reference"></a>Visual Studio 模板架构参考
-本部分包含有关 .vstemplate 文件中的 XML 元素的信息，.vstemplate 文件用于存储项目模板、项模板和初学者工具包的元数据。
+本部分包含有关中的 XML 元素的信息 *.vstemplate*文件，这些文件用于存储项目模板、 项模板和初学者工具包的元数据文件。
 
- 可以使用 vstemplate.xsd 验证自定义的 .vstemplate 文件。 此文件位于...\\ *Visual Studio 安装文件夹*\Xml\Schemas\1033\vstemplate.xsd。
+ 可以使用*vstemplate.xsd*若要验证自定义 *.vstemplate*文件。 此文件将出现在 *...\\ \<Visual Studio 安装文件夹 > \Xml\Schemas\1033\vstemplate.xsd*。
 
 |元素|子元素|特性|
 |-------------|--------------------|----------------|
-|[appliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|无|无|
+|[AppliesTo](../extensibility/appliesto-element-visual-studio-templates.md)|无|无|
 |[程序集 （模板）](../extensibility/assembly-element-visual-studio-templates.md)|--|--|
-|[Assembly （向导扩展）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
+|[程序集 （向导扩展）](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|--|--|
 |[BuildProjectOnload](../extensibility/buildprojectonload-element-visual-studio-templates.md)|--|--|
 |[CreateInPlace](../extensibility/createinplace-visual-studio-templates.md)|--|--|
 |[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|--|--|
@@ -59,7 +59,7 @@ ms.locfileid: "34571515"
 |[ProjectItem （项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)|--|TargetFileName<br /><br /> ReplaceParameters<br /><br /> OpenInEditor<br /><br /> OpenOrder<br /><br /> OpenInWebBrowser<br /><br /> OpenInHelpBrowser|
 |[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|--|--|
 |[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|--|ProjectName|
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
+|[项目类型](../extensibility/projecttype-element-visual-studio-templates.md)|--|--|
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|--|--|
 |[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|--|--|
 |[引用](../extensibility/reference-element-visual-studio-templates.md)|Assembly|--|

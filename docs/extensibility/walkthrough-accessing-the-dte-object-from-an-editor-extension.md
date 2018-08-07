@@ -1,5 +1,5 @@
 ---
-title: 演练： 从编辑器扩展访问 DTE 对象 |Microsoft 文档
+title: 演练： 通过编辑器扩展访问 DTE 对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,24 +13,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b888136f51e7893c6ad44ab888d8079ee92d8edf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ed4343139b3e59dfba7adc71b1c91cdf01c13db
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139635"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586243"
 ---
-# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练： 从编辑器扩展访问 DTE 对象
-在 Vspackage 中，可以 DTE 对象获取通过调用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>与 DTE 对象类型的方法。 在 Managed Extensibility Framework (MEF) 扩展中，你可以导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然后调用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>具有一种方法<xref:EnvDTE.DTE>。  
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>演练： 通过编辑器扩展访问 DTE 对象
+在 Vspackage 中，您可以通过调用中获取 DTE 对象<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>与 DTE 对象类型的方法。 在 Managed Extensibility Framework (MEF) 扩展中，您可以导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>，然后调用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法的类型与<xref:EnvDTE.DTE>。  
   
 ## <a name="prerequisites"></a>系统必备  
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
   
-## <a name="getting-the-dte-object"></a>获取该 DTE 对象  
+## <a name="getting-the-dte-object"></a>获取 DTE 对象  
   
-#### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>若要从该服务提供商获取 DTE 对象  
+### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>若要从该服务提供商获取 DTE 对象  
   
-1.  创建一个名为的 C# VSIX 项目`DTETest`。 添加编辑器分类器项模板并将其命名`DTETest`。 有关详细信息，请参阅[带有编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+1.  创建一个名为 C# VSIX 项目`DTETest`。 添加编辑器分类器项模板并将其命名`DTETest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
 2.  添加对项目的以下程序集引用：  
   
@@ -40,7 +40,7 @@ ms.locfileid: "31139635"
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  转到的 DTETest.cs 文件，并添加以下`using`指令：  
+3.  转到*DTETest.cs*文件，并添加以下`using`指令：  
   
     ```csharp  
     using EnvDTE;  
@@ -49,7 +49,7 @@ ms.locfileid: "31139635"
   
     ```  
   
-4.  在`GetDTEProvider`类中，导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
+4.  在中`GetDTEProvider`类中，导入<xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
   
     ```csharp  
     [Import]  
@@ -64,7 +64,7 @@ ms.locfileid: "31139635"
   
     ```  
   
-6.  如果你需要使用<xref:EnvDTE80.DTE2>接口，可以强制转换为它的 DTE 对象。  
+6.  如果您必须使用<xref:EnvDTE80.DTE2>接口，可以强制转换为它的 DTE 对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

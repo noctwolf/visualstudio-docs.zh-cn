@@ -1,5 +1,5 @@
 ---
-title: VSIX 语言包架构 2.0 参考 |Microsoft 文档
+title: VSIX 语言包架构 2.0 参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/26/2017
 ms.technology:
@@ -16,39 +16,39 @@ author: dgriffen
 manager: douge
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 571f90f31014dcc4d5686483bfc037e458f4a31e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a8bc0f4b276ed649cdff986bdfc56cf8c77e06
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139648"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586217"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构 2.0 参考
 
-VSIX 语言包架构提供 VSIX 包的本地化的安装信息。 此架构的版本 2.0 支持其他本地化的元素。
+VSIX 语言包架构提供了 VSIX 包的本地化的安装信息。 此架构的 2.0 版支持额外的本地化元素。
 
 ## <a name="language-pack-schema"></a>语言包架构
 
-语言包文件的根元素是`<PackageLanguagePackManifest>`，使用的属性`Version`，即语言包格式的版本。 本主题介绍的语言包格式，这通过设置的清单中指定的版本 2.0`Version`属性的值`Version="2.0.0"`。 根元素包含一个子`<Metadata>`元素。
+语言包文件的根元素是`<PackageLanguagePackManifest>`，使用以下属性`Version`，这是语言包格式的版本。 本指南介绍了 2.0 版的语言包格式，通过设置指定在清单中`Version`属性的值设`Version="2.0.0"`。 根元素包含一个子`<Metadata>`元素。
 
 ### <a name="packagelangaugepackmanifest-element"></a>PackageLangaugePackManifest 元素
 
 在`<PackageLanguagePackManifest>`元素必须存在以下元素：
 |标题|描述|
 |-----------|-----------------|
-|`<Metadata>`| 包含的所有本地化的包元数据元素
+|`<Metadata>`| 包含所有本地化的包元数据元素
 
 ### <a name="metadata-element"></a>元数据元素
 
-在`<Metadata>`元素可以包含以下元素：
+在`<Metadata>`元素可以具有以下元素：
 |标题|描述|
 |-----------|-----------------|
-|`<DisplayName>`|若要安装扩展的本地化的名称|
-|`<Description>`|要安装的扩展本地化的说明|
+|`<DisplayName>`|要安装的扩展插件的本地化的名称|
+|`<Description>`|要安装的扩展插件的本地化的说明|
 |`<License>`| 路径扩展的许可证的本地化版本|
-|`<MoreInfo>`| 指向有关扩展的本地化信息的链接|
-|`<ReleaseNotes>`| 一个路径或链接到的本地化版本的发行说明|
-|`<Icon>`| 路径扩展图标的本地化版本|
+|`<MoreInfo>`| 有关扩展的本地化信息的链接|
+|`<ReleaseNotes>`| 路径或链接到本地化版本的发行说明|
+|`<Icon>`| 到本地化版本的扩展图标路径|
 
 ### <a name="sample-manifest"></a>示例清单
 
@@ -66,10 +66,10 @@ VSIX 语言包架构提供 VSIX 包的本地化的安装信息。 此架构的�
 </PackageLanguagePackManifest>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 |标题|描述|
 |-----------|-----------------|
-|[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)|演示如何为 VSIX 包提供本地化的安装支持。|
-|[VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 清单将描述启用要通过使用安装的 Visual Studio 扩展的.vsix 部署文件的内容**扩展和更新**对话框。|
+|[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)|演示如何提供本地化的安装支持 VSIX 包。|
+|[VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)|VSIX 清单描述的内容 *.vsix*部署文件。 部署文件，您可以通过安装 Visual Studio 扩展**扩展和更新**对话框。|
 |[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)|演示如何使用**扩展和更新**对话框中，若要安装、 删除、 激活和停用扩展。|
