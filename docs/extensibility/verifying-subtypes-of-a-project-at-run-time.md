@@ -1,5 +1,5 @@
 ---
-title: 在运行时验证项目的子类型 |Microsoft 文档
+title: 在运行时验证项目的子类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,21 +14,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8898da6850c01c1a248b57b0fbc5f46be2a8ff4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 22e3205f3a8bd8ef7ce7e44b775ae1ef5a30cfa5
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136824"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586204"
 ---
-# <a name="verifying-subtypes-of-a-project-at-run-time"></a>在运行时验证项目的子类型
-VSPackage，取决于自定义项目子类型应包括逻辑来查找子类型，因此，它可以正常会失败，如果子类型不存在。 以下过程说明如何验证存在指定的子类型。  
+# <a name="verify-subtypes-of-a-project-at-run-time"></a>在运行时验证项目的子类型
+取决于自定义项目子类型的 VSPackage 应包括逻辑来查找子类型，以便它可以正常退出如果相应的子类型不存在。 以下过程说明如何验证存在指定的子类型。  
   
-### <a name="to-verify-the-presence-of-a-subtype"></a>若要验证存在的子类型  
+### <a name="to-verify-the-presence-of-a-subtype"></a>若要验证存在子类型  
   
-1.  从项目和解决方案作为对象获取的项目层次结构<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>通过将下面的代码添加到你的 VSPackage 的对象。  
+1.  从为项目和解决方案对象中获取的项目层次结构<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>通过将以下代码添加到你的 VSPackage 的对象。  
   
-    ```  
+    ```csharp  
     EnvDTE.DTE dte;  
     dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
   
@@ -45,22 +45,22 @@ VSPackage，取决于自定义项目子类型应包括逻辑来查找子类型�
   
 2.  强制转换为层次结构<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected>接口。  
   
-    ```  
+    ```csharp  
     IVsAggregatableProjectCorrected AP;  
     AP = hierarchy as IVsAggregatableProjectCorrected;  
   
     ```  
   
-3.  通过调用获取项目类型 Guid 的列表<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
+3.  通过调用获取的项目类型 Guid 列表<xref:Microsoft.VisualStudio.Shell.Flavor.IVsAggregatableProjectCorrected.GetAggregateProjectTypeGuids%2A>。  
   
-    ```  
+    ```csharp  
     string projTypeGuids = AP.GetAggregateProjectTypeGuids().ToUpper();  
   
     ```  
   
 4.  检查指定的子类型的 GUID 的列表。  
   
-    ```  
+    ```csharp  
     // Replace the string "MyGUID" with the GUID of the subtype.  
     string guidMySubtype = "MyGUID";  
     if (projTypeGuids.IndexOf(guidMySubtype) > 0)  
@@ -69,7 +69,7 @@ VSPackage，取决于自定义项目子类型应包括逻辑来查找子类型�
     }  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [项目子类型](../extensibility/internals/project-subtypes.md)   
  [项目子类型设计](../extensibility/internals/project-subtypes-design.md)   
- [项目子类型扩展的属性和方法](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)
+ [属性和方法由项目子类型扩展](../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)

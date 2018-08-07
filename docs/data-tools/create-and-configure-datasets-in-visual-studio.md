@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: bbf478424551e446ca9853dae77edb4e5b61d974
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a65c1960e1648dce3bb8ff40d1dd6c50534934ff
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756027"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582227"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中创建和配置数据集
 
@@ -72,7 +72,7 @@ ms.locfileid: "36756027"
 
 1.  单击中的数据集节点**解决方案资源管理器**使数据集设计器成为焦点。
 
-2.  单击**数据源**选项卡中的 Visual Studio 中，左边距或输入`Data Sources`中**快速启动**。
+2.  单击**数据源**Visual Studio 中或类型的左边距中的选项卡**数据源**中**快速启动**框。
 
 3.  右键单击数据集节点，然后选择**使用向导配置数据源**。
 

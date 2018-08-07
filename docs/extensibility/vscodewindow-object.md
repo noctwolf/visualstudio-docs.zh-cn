@@ -1,5 +1,5 @@
 ---
-title: VSCodeWindow 对象 |Microsoft 文档
+title: VSCodeWindow 对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,26 +16,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2b1d85eea974e67ae37f8d4d5bfd7aa0069e92b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9ef7d4b190a9b2c1a487fb70df33726ca9b3ed4
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138637"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586269"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 对象
 代码窗口是可以包含一个或多个文本视图，通常一个专用的文档窗口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>对象。  
   
- 体系结构上，代码窗口是在窗口框架内的文档窗口。 就功能而言，代码窗口是只需一个具有附加功能的文档窗口。 在多文档界面 (MDI) 模式下，代码窗口是 MDI 子框架。 有关详细信息，请参阅[自定义代码窗口中，使用旧 API](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  
+ 体系结构方面，代码窗口是窗口框架中是一个文档窗口。 就功能而言，代码窗口是只需具有其他功能的文档窗口。 在多文档界面 (MDI) 模式下，代码窗口是 MDI 子框架。 有关详细信息，请参阅[通过使用传统的 API 自定义代码窗口](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  
   
  下表包含中的接口<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>对象。  
   
 |方法|描述|  
 |------------|-----------------|  
-|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|提供通用访问机制来查找全局唯一标识符 (GUID) 标识的服务。|  
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示包含一个或多个代码视图的多个文档界面 (MDI) 子。|  
+|<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>|提供的通用访问机制来查找全局唯一标识符 (GUID) 标识的服务。|  
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示多文档界面 (MDI) 子包含一个或多个代码视图。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填充窗口框架。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [数字编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [图编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

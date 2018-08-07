@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK 参考 |Microsoft 文档
+title: Visual Studio SDK 引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 656663c14b4c5b8b77645eb4fc0fd221e1786800
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146840"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586803"
 ---
-# <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 参考
-本部分包含有关 Visual Studio 命名空间、 相关的命名空间和感兴趣的其他领域的开发人员使用 Visual Studio SDK 的信息。  
+# <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
+本部分包含有关 Visual Studio 的命名空间、 相关命名空间和感兴趣的其他区域的开发人员使用 Visual Studio SDK 的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  
- 旧的互操作接口将用于在编辑器和语言服务。  
+ 编辑器和语言服务使用旧版互操作接口。  
   
  <xref:Microsoft.VisualStudio.Editor>  
  新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Language.Intellisense>  
- 为使 IntelliSense 新编辑器中使用的类。  
+ 为使 IntelliSense 在新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Language.StandardClassification>  
  新的编辑器中使用的类。  
@@ -50,46 +50,46 @@ ms.locfileid: "31146840"
  新的编辑器中使用的差异的类。  
   
  <xref:Microsoft.VisualStudio.Text.Document>  
- 在新的编辑器中的文档使用的类。  
+ 新的编辑器中使用的文档的类。  
   
  <xref:Microsoft.VisualStudio.Text.Editor>  
  新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.DragDrop>  
- 新编辑器中使用的类将拖放。  
+ 类的新编辑器中使用拖放。  
   
  <xref:Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods>  
  新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Text.Formatting>  
- 在新的编辑器中使用进行格式设置的类。  
+ 新的编辑器中使用的格式设置的类。  
   
  <xref:Microsoft.VisualStudio.Text.IncrementalSearch>  
- 类在新的编辑器中用于渐进式搜索。  
+ 在新的编辑器中用于渐进式搜索类。  
   
  <xref:Microsoft.VisualStudio.Text.Operations>  
  新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Text.Outlining>  
- 所使用的新编辑器的大纲显示的类。  
+ 用于大纲显示新的编辑器中使用的类。  
   
  <xref:Microsoft.VisualStudio.Text.Projection>  
- 在新的编辑器中用于投影的类。  
+ 新的编辑器中使用投影的类。  
   
  <xref:Microsoft.VisualStudio.Text.Tagging>  
- 用于在新的编辑器中标记的类。  
+ 新的编辑器中使用标记的类。  
   
  <xref:Microsoft.VisualStudio.Utilities>  
  新的编辑器中使用的类。  
   
  <xref:Microsoft.Internal.VisualStudio.PlatformUI>  
- 主要仅供 Microsoft 内部使用。  
+ 主要 Microsoft 仅限内部使用。  
   
  <xref:Microsoft.Internal.VisualStudio.Shell.Interop>  
  仅供 Microsoft 内部使用。  
   
  <xref:Microsoft.VisualStudio>  
- 用于 Visual Studio 常量和帮助器类。  
+ 用于 Visual Studio 常量和帮助程序类。  
   
  <xref:Microsoft.VisualStudio.CommandBars>  
  用于 Visual Studio 命令栏的类。  
@@ -98,22 +98,22 @@ ms.locfileid: "31146840"
  使用 Visual Studio 中 Managed Extensibility Framework (MEF) 的类。  
   
  <xref:Microsoft.VisualStudio.Designer.Interfaces>  
- 使用 Visual Studio 设计器使用的接口。  
+ 用于 Visual Studio 设计器的接口。  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.ProjectDesigner>  
- 与 Visual Studio 项目设计器使用的接口。  
+ 用于 Visual Studio 项目设计器的接口。  
   
  <xref:Microsoft.VisualStudio.ManagedInterfaces.Publish>  
  用于发布应用程序的类。  
   
  <xref:Microsoft.VisualStudio.OLE.Interop>  
- 在 Visual Studio 中用于 OLE 组件的互操作接口。  
+ 在 Visual Studio 中使用的 OLE 组件的互操作接口。  
   
  <xref:Microsoft.VisualStudio.Package>  
- 用于管理的 Visual Studio 语言服务的类。  
+ 用于管理 Visual Studio 语言服务的类。  
   
  <xref:Microsoft.VisualStudio.PlatformUI>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.PlatformUI.OleComponentSupport>  
  仅供 Microsoft 内部使用。  
@@ -122,34 +122,34 @@ ms.locfileid: "31146840"
  用于 Visual Studio 项目的类。  
   
  <xref:Microsoft.VisualStudio.Settings>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.Shell>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.Shell.Design>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.Shell.Design.Serialization>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.Shell.Design.Serialization.CodeDom>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.Shell.Flavor>  
  用于 Visual Studio 项目的类。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop>  
- 对于 Visual Studio shell 中使用的互操作接口。  
+ 用于 Visual Studio shell 的互操作接口。  
   
  <xref:Microsoft.VisualStudio.Shell.Settings>  
- Visual Studio shell 中使用的类。  
+ 在 Visual Studio shell 中使用的类。  
   
  <xref:Microsoft.VisualStudio.VSHelp>  
  用于帮助的类。  
   
  <xref:VSLangProj>  
- 对于语言服务项目使用的类。  
+ 为语言服务项目使用的类。  
   
  <xref:XamlGeneratedNamespace>  
  仅供 Microsoft 内部使用。  
@@ -158,10 +158,10 @@ ms.locfileid: "31146840"
  用于 Visual Studio 的接口。  
   
  <xref:Microsoft.VisualStudio.WCFReference.Interop>  
- 用于 Windows 通信框架的类。  
+ 用于 Windows Communication Framework 类。  
   
  <xref:Microsoft.VisualStudio.TestTools.Vsip>  
- 用于测试工具的类。  
+ 测试工具使用的类。  
   
  <xref:EnvDTE>  
  用于 Visual Studio 自动化。  
@@ -229,77 +229,77 @@ ms.locfileid: "31146840"
  指定 IntelliSense 主机标志。  
   
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)  
- 提供 Visual Studio 命令表架构元素，其中包含允许子元素和属性为每个。  
+ 提供 Visual Studio 命令表架构元素，其中包含允许的子元素和属性为每个。  
   
  [Guid 和常量](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
- 提供在 SDK 中使用的 Guid 的列表。  
+ 提供整个 SDK 中使用的 Guid 的列表。  
   
  [托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)  
- 用户界面元素在整个环境 SDK 中提供的标识符的列表。  
+ 提供对整个环境 SDK 中使用的用户界面元素的标识符列表。  
   
  [源代码管理插件](../extensibility/source-control-plug-ins.md)  
- 链接到源控件插件 api 的主题。  
+ 链接到源控件插件 API 的主题。  
   
  [命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)  
- 讨论如何开发人员可以自动执行从命令行的多个任务的主题的链接。  
+ 讨论如何开发人员可以自动从命令行的多个任务的主题的链接。  
   
  [错误处理和返回值](../extensibility/error-handling-and-return-values.md)  
- 介绍的 Vspackage，即，在其他 Windows 编程中使用相同的错误体系结构。  
+ 介绍的 Vspackage，与在其他 Windows 编程中使用的相同错误体系结构。  
   
  [对象](../extensibility/objects.md)  
  提供在环境中使用的对象的列表。  
   
  [术语表](../extensibility/visual-studio-sdk-glossary.md)  
- 你正在阅读的 Visual Studio SDK 文档时，向提供有用的术语和用于其定义的列表。  
+ 查看 Visual Studio SDK 文档时，请提供有用的术语和用于其定义的列表。  
   
  <xref:Microsoft.Build.BuildEngine>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Construction>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Conversion>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Debugging>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Evaluation>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Exceptions>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Execution>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Framework>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Framework.XamlTypes>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Logging>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Tasks>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Tasks.Deployment.Bootstrapper>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Tasks.Hosting>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Tasks.Xaml>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
  <xref:Microsoft.Build.Utilities>  
- 用于 MSBuild。  
+ 使用 MSBuild。  
   
 ## <a name="related-sections"></a>相关章节  
  [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
- 包括文档、 示例和代码，以帮助你开发与 Visual Studio 集成的产品。
+ 包括文档、 示例和代码来帮助你开发与 Visual Studio 集成的产品。

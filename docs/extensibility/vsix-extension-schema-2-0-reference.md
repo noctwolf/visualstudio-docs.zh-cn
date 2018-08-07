@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 090ebd4abd7905816393a211dc817d28348611ed
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089365"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586347"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。  
@@ -28,7 +28,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 >  Visual Studio 2015 可以加载 Visual Studio 2010、 Visual Studio 2012 或 Visual Studio 2013 格式的 VSIX 文件。  
   
 ## <a name="package-manifest-schema"></a>包清单架构  
- 清单 XML 文件的根元素是`<PackageManifest>`，使用单个属性`Version`，即清单格式的版本。 如果对格式进行了重大更改，将更改的版本格式。 本主题介绍了清单格式版本 2.0 中，通过设置指定在清单中`Version`属性值版本 ="2.0"。  
+ 清单 XML 文件的根元素是`<PackageManifest>`。 它具有单个属性`Version`，即清单格式的版本。 如果对格式进行了重大更改，则更改的版本格式。 本指南介绍了清单格式版本 2.0 中，通过设置指定在清单中`Version`属性版本的值 ="2.0"。  
   
 ### <a name="packagemanifest-element"></a>PackageManifest 元素  
  在`<PackageManifest>`根元素，可以使用以下元素：  
@@ -46,11 +46,11 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 ### <a name="metadata-element"></a>元数据元素  
  本部分是有关包、 其标识和公布信息的元数据。 `<Metadata>` 包含下列元素：  
   
--   `<Identity>` -这定义了此包的标识信息，包括以下属性：  
+-   `<Identity>` -定义此包的标识信息，包括以下属性：  
   
     -   `Id` -此属性必须由其作者所选包的唯一 ID。 应的是相同的 CLR 类型是占用命名空间限定的名称： Company.Product.Feature.Name。 `Id`特性被限制为 100 个字符。  
   
-    -   `Version` -这会定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
+    -   `Version` -定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式： Major.Minor.Build.Revision (1.2.40308.00)。 具有更高版本的版本号的包被视为对包的更新，可以在现有的已安装版本上安装。  
   
     -   `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循 CLR 的区域设置代码约定对于资源程序集，例如： en-我们，en，fr-fr 的。 您可以指定`neutral`声明将在 Visual Studio 的任何版本运行的非特定于语言的扩展。 默认值为 `neutral`。  
   
@@ -95,7 +95,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `AnyAttribute*` -`Installation`元素接受将公开在运行时作为名称 / 值对字典的属性的开放式集。  
   
--   `<InstallationTarget>` -此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须面向一种用于已安装的清单文件作为其内容以播发其可用性与扩展的一部分的 SKU。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":  
+-   `<InstallationTarget>` -此元素控制 VSIX 安装程序安装包的位置的位置。 如果的值`Scope`属性是"ProductExtension"包必须为目标的 SKU，已将播发其可用性扩展到其内容的一部分安装的清单文件。 `<InstallationTarget>`元素具有以下属性`Scope`属性具有显式或默认值"ProductExtension":  
   
     -   `Id` -此属性标识的包。  该属性遵循命名空间约定： Company.Product.Feature.Name。 `Id`属性只能包含字母数字字符，并且限制为 100 个字符。 预期值：  
   
@@ -132,7 +132,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
         > [!IMPORTANT]
         >  在 Visual Studio 2012 中引入的 VSIX 架构版本 2.0。 若要使用此架构你必须具有 Visual Studio 2012 或更高版本在计算机上安装并使用是该产品的一部分 VSIXInstaller.exe。 你可以面向早期版本的 Visual Studio 与 Visual Studio 2012 或更高版本 vsixinstaller 找，但只能通过使用更高版本的安装程序。  
   
-    -   `AnyAttribute*` -`<InstallationTarget>`元素允许的属性将公开在运行时作为名称 / 值对字典的开放式集。  
+    -   `AnyAttribute*` -`<InstallationTarget>`元素允许开放式集的属性公开在运行时作为名称 / 值对字典。  
   
 ### <a name="dependencies-element"></a>依赖关系元素  
  此元素包含此包声明的依赖项的列表。 如果指定了任何依赖项，这些包 (由标识其`Id`) 必须之前已安装。  
@@ -153,7 +153,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
         -   单个版本 #-指定的版本。  
   
-    -   `DisplayName` -此属性是包的依赖在 UI 元素，如对话框和错误消息中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。  
+    -   `DisplayName` -此属性是包的依赖，如对话框和错误消息的 UI 元素中使用的显示名称。 该属性是可选的除非通过 MSI 安装从属包。  
   
     -   `Location` -此可选属性指定是嵌套的 VSIX 包到此 VSIX 中的相对路径或指向的依赖项的下载位置的 URL。 此属性用于帮助用户找到必备组件包。  
   
@@ -164,7 +164,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<Asset>` -此元素包含以下属性和元素：  
   
-    -   `Type` -这是扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
+    -   `Type` 扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
   
         1.  Microsoft.VisualStudio.VsPackage  
   
@@ -184,9 +184,9 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
     -   `Path` -包含资产的包中文件夹的文件的相对路径。  
     
-    -   `TargetVersion` -给定的资产适用于的版本范围。 用于传送到不同版本的 Visual Studio 资产的多个版本。 需要 Visual Studio 2017.3 或更高版本才能生效。
+    -   `TargetVersion` -给定的资产适用的版本范围。 用于传送到不同版本的 Visual Studio 资产的多个版本。 需要 Visual Studio 2017.3 或更高版本才能生效。
   
-    -   `AnyAttribute*` 的将在与名称 / 值对字典的运行时公开的属性开放式集。  
+    -   `AnyAttribute*` 的在运行时作为名称 / 值对字典的路由公开的属性开放式集。  
   
          `<AnyElement>*` 的之间允许任何结构化的内容`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。  
   
