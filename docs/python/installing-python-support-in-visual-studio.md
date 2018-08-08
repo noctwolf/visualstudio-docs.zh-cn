@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae4dd83f5618ed908dee666f04c580f8c3161cbf
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058680"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341547"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -26,9 +26,9 @@ ms.locfileid: "37058680"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 及更早版本](#visual-studio-2013-and-earlier)
 
-对于 Visual Studio 2015 和更早版本，你还需要选择单独[安装 Python 解释器](installing-python-interpreters.md)（Python 3.5 和更早版本；3.6 不受支持，并生成消息“Python 版本 3.6 不受支持”）。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
+对于 Visual Studio 2015 和更早版本，还需要选择单独[安装 Python 解释器](installing-python-interpreters.md)（Python 3.5 和更早版本；3.6 不受支持，并生成消息“Python 版本 3.6 不受支持”）。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
 
-若要在执行安装步骤后快速测试 Python 支持，请按 Alt-I 并输入 `2+2` 打开 Python 交互式窗口。 如果看不到输出 `4`，请重新检查步骤。
+若要在执行安装步骤后快速测试 Python 支持，请按 Alt+I 并输入 `2+2` 打开 Python 交互式窗口。 如果看不到输出 `4`，请重新检查步骤。
 
 > [!Tip]
 > Python 工作负载包括有用的 Cookiecutter 扩展，扩展提供图形用户界面以发现模板、输入模板选项及创建项目和文件。 有关详细信息，请参阅[使用 Cookiecutter](using-python-cookiecutter-templates.md)。
@@ -62,13 +62,13 @@ ms.locfileid: "37058680"
     | 选项 | 描述 |
     | --- | --- |
     | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）注意：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 |
-    | Cookiecutter 模板支持 | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
-    | Python Web 支持 | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
-    | Python IoT 支持 | 支持使用 Python 开发 Windows IoT Core。 |
-    | Python 本机开发工具 | 安装 C++ 编译器和其他必要组件用于开发 Python 本机扩展。 请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。 若要获取全面的 C++ 支持，还请安装“使用 C++ 的桌面开发”工作负载。 |
-    | Azure 云服务核心工具 | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。 |
+    | **Cookiecutter 模板支持** | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
+    | **Python Web 支持** | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
+    | **Python IoT 支持** | 支持使用 Python 开发 Windows IoT Core。 |
+    | **Python 本机开发工具** | 安装 C++ 编译器和其他必要组件用于开发 Python 本机扩展。 请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。 若要获取全面的 C++ 支持，还请安装“使用 C++ 的桌面开发”工作负载。 |
+    | **Azure 云服务核心工具** | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。 |
 
-1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 当已安装的所有组件均可使用 Visual Studio 更新时，“修改”按钮将更改为“更新”。 （随后在下拉菜单中提供修改选项。）还可搜索“Visual Studio”，从 Windows 开始菜单启动 Visual Studio 及安装程序。
+1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 当已安装的所有组件均可使用 Visual Studio 更新时，“修改”按钮将更改为“更新”。 （随后在下拉菜单中提供“修改”选项。）还可搜索“Visual Studio”，从 Windows “开始”菜单启动 Visual Studio 及安装程序。
 
     ![通过安装程序启动、修改或卸载 Visual Studio](media/installation-vs-launch.png)
 
@@ -80,9 +80,9 @@ ms.locfileid: "37058680"
 
 如果在 Visual Studio 中安装或运行 Python 时遇到问题，请尝试以下操作：
 
-- 确定使用 Python CLI（即在命令提示符中运行 `python.exe`）时是否会出现相同的问题。
-- 使用 [Visual Studio 安装程序中的修复选项](../install/repair-visual-studio.md)。
-- 在 Windows 中通过“设置”>“应用和功能”修复或重新安装 Python。
+- 确定使用 Python CLI（即在命令提示符处运行 python.exe）时是否会出现相同的问题。
+- 使用 Visual Studio 安装程序中的[“修复”](../install/repair-visual-studio.md)选项。
+- 在 Windows 中通过“设置” > “应用和功能”修复或重新安装 Python。
 
 **示例错误**：未能启动交互式进程: System.ComponentModel.Win32Exception (0x80004005): Microsoft.PythonTools.Repl.PythonInteractiveEvaluator.d__43.MoveNext() 出现未知错误 (0xc0000135)。
 
@@ -102,7 +102,7 @@ ms.locfileid: "37058680"
 
 1. 为你的 Visual Studio 版本安装相应版本的针对 Visual Studio 的 Python 工具：
 
-    - Visual Studio 2013：[Visual Studio 2013 PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2)。 Visual Studio 2013 中的“文件”>“新建项目”对话框提供用于此过程的快捷方式。
+    - Visual Studio 2013：[Visual Studio 2013 PTVS 2.2](https://github.com/Microsoft/PTVS/releases/v2.2)。 Visual Studio 2013 中的“文件” > “新建项目”对话框提供用于此过程的快捷方式。
     - Visual Studio 2012：[Visual Studio 2012 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010：[Visual Studio 2010 PTVS 2.1](https://pytools.codeplex.com/downloads/get/920479)
 
@@ -112,16 +112,16 @@ ms.locfileid: "37058680"
 
 默认情况下，为计算机上的所有用户安装 Python 支持。
 
-对于 Visual Studio 2017，Python 工作负载安装在 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python` 中，其中 &lt;VS_edition&gt; 为社区版、专业版或企业版。
+对于 Visual Studio 2017，Python 工作负载安装在 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python，其中 &lt;VS_edition&gt; 为 Community、Professional 或 Enterprise。
 
 对于 Visual Studio 2015 及更早版本，安装路径如下所示：
 
 - 32 位：
-  - 路径：`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路径的注册表位置：`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - 路径：%Program Files(x86)%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>
+  - 路径的注册表位置：HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\\<VS_ver>\InstallDir
 - 64 位：
-  - 路径：`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路径的注册表位置：`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+  - 路径：%Program Files%\Microsoft Visual Studio \<VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>
+  - 路径的注册表位置：HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\\<VS_ver>\InstallDir
 
 其中：
 
@@ -134,6 +134,5 @@ ms.locfileid: "37058680"
 
 ### <a name="user-specific-installations-15-and-earlier"></a>特定于用户的安装（1.5 及更早版本）
 
-仅允许为当前用户安装针对 Visual Studio 的 Python 工具 1.5 版及更早版本，这种情况下的安装路径是 `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`，其中 &lt;VS_ver&gt; 和 &lt;PTVS_ver&gt; 与上文所述相同。
+仅允许为当前用户安装针对 Visual Studio 的 Python 工具 1.5 版及更早版本，这种情况下的安装路径是 %LocalAppData%\Microsoft\VisualStudio\\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\\<PTVS_ver>，其中 &lt;VS_ver&gt; 和 &lt;PTVS_ver&gt; 与上文所述相同。
 
-<iframe src="" height="0" width="0" frameborder="0" name="frameTarget" />

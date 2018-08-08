@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 257377ae84249f6e55c52223478d0f4aa0c12e59
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750878"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380689"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手动创建负载测试性能报告
 
@@ -30,7 +30,7 @@ ms.locfileid: "34750878"
 
 ## <a name="copy-summary-view-data"></a>复制摘要视图数据
 
-1.  在负载测试结果中，如果当前未显示摘要视图，请单击工具栏上的“摘要”。
+1.  在“负载测试结果”中，如果当前未显示摘要视图，请单击工具栏上的“摘要”。
 
 2.  在摘要视图中，右键单击并选择“全选”。
 
@@ -42,7 +42,7 @@ ms.locfileid: "34750878"
 
 ## <a name="copy-graph-view-data"></a>复制关系图视图数据
 
-1.  在负载测试结果中，如果当前未显示关系图视图，请选择工具栏上的“关系图”。
+1.  在“负载测试结果”中，如果当前未显示关系图视图，请选择工具栏上的“关系图”。
 
 2.  （可选）对要复制到 Microsoft Word 文档中的特定关系图进行放大，如下图所示。 有关详细信息，请参阅[如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)。
 

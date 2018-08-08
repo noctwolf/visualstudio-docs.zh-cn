@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ffd20812ec37e324dc919ea5943cf30a5329321b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968189"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379652"
 ---
-# <a name="modify-load-test-logging-settings"></a>修改负载测试记录设置
+# <a name="modify-load-test-logging-settings"></a>修改负载测试日志记录设置
 
 已完成的负载测试的负载测试结果包含从受测计算机的日志中定期收集的性能计数器样本和错误信息。 可以在负载测试运行过程中收集大量性能计数器样本。 所收集到的性能数据量取决于运行的长度、采样间隔、受测计算机的数量以及要收集的计数器的数量。 对于大型负载测试，所收集的性能数据量很容易就能达到数千兆字节；因此，你可能需要考虑修改将数据保存到日志的频率。 请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -31,7 +31,7 @@ ms.locfileid: "31968189"
 
 ## <a name="related-tasks"></a>相关任务
 
-相关属性是“计时详细信息存储”。 有关详细信息，请参阅[如何：配置“收集完整详细信息”以启用虚拟用户活动图表](../test/how-to-configure-load-tests-to-collect-full-details.md)。
+相关属性是“计时详细信息存储”。 有关详细信息，请参阅[如何：配置收集完整详细信息以启用虚拟用户活动图](../test/how-to-configure-load-tests-to-collect-full-details.md)。
 
 ## <a name="see-also"></a>请参阅
 

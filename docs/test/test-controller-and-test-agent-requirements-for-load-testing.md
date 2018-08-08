@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 04150d09f1e80060efbd60be776731ec67ae59e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178486"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380800"
 ---
-# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的需求
+# <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 
 包括单元测试、Web 性能测试、负载测试和手动测试在内的多种测试类型集成到了 Visual Studio 中。 Visual Studio 使 Visual Studio 应用程序生命周期管理用户可以使用测试控制器和一个或多个代理在远程计算机上运行测试。 请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "39178486"
 
 ## <a name="monitor-agent-resources"></a>监视代理资源
 
-可以通过在测试期间观察执行和扩展的 QTAgent\*.exe 进程来监视代理计算机以确定它们的资源需求。 QTAgent*.exe 进程上最常见的瓶颈是 CPU 使用率。 如果 CPU 使用率始终在 95% 以上，则表示该代理负载较重。 下一个常见瓶颈是内存使用量。 对于要求高的测试，监视这些资源可帮助确定是否应该增加计算机资源或以不同方式分配测试。
+可以通过在测试期间观察执行和扩展的 QTAgent\*.exe 进程来监视代理计算机以确定它们的资源需求。 QTAgent.exe 进程上最常见的瓶颈是 CPU 使用率*\**。 如果 CPU 使用率始终在 95% 以上，则表示该代理负载较重。 下一个常见瓶颈是内存使用量。 对于要求高的测试，监视这些资源可帮助确定是否应该增加计算机资源或以不同方式分配测试。
 
 ## <a name="see-also"></a>请参阅
 

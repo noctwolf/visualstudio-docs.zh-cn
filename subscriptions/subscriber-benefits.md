@@ -9,12 +9,12 @@ description: 了解 Visual Studio 订阅中包含的权益
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f5df14010b17b9eeee1241b99a73769853c20036
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 0dfde28ab55ffadd08d0be3d863d0772604482ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283258"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381541"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Visual Studio 订阅中包含的权益
 
@@ -37,7 +37,7 @@ Visual Studio 订阅提供最全面的资源集合，便于你在首选平台和
 ## <a name="support"></a>支持
 作为 Visual Studio 订阅者，如果你有疑问或者需要技术协助，还可以访问各种类型的支持。
 - 付费订阅包括对专业技术支持事件的访问权限，以解决在开发/测试环境中运行的工具和应用程序的问题。
-- 需要技术文档或产品信息？  请通过 Conceirge 聊天服务获取即时帮助。
+- 需要技术文档或产品信息？  请通过 Concierge 聊天服务获取即时帮助。
 - 在优先支持论坛获得社区成员的帮助。  如果社区成员无法回答你的问题，Microsoft 专家将会提供解答。
 - 想询问有关 Azure 的问题？  请查看 Azure 社区和 Azure 顾问聊天服务。
 

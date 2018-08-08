@@ -10,17 +10,17 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 500dce15e695cf53a061f8405919e808b8f7c493
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 074128d34f88346708fd344d1bba25b833f2af44
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066933"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251557"
 ---
 # <a name="import-an-xcode-project"></a>导入 XCode 项目
 在适用于跨平台移动开发的 Microsoft Visual C++ 中，支持将 XCode 项目移动到 Visual Studio，可在此处创建跨平台库并与其他项目共享代码。 通过“从 XCode 导入”向导，可更轻松地导入项目和拆分 XCode 目标中的 C++ 代码，使其用作静态库或共享代码项目。 可在 Visual Studio 中管理特定于 iOS 的代码，还可继续使用 XCode 处理情节提要和生成操作。 若要了解如何轻松地在 Visual Studio 和 XCode 之间来回移动代码，请参阅“在 XCode 和 Visual Studio 间移动更改”。  
   
-## <a name="using-the-import-from-xcode-wizard"></a>使用“从 XCode 导入”向导  
+## <a name="use-the-import-from-xcode-wizard"></a>使用“从 XCode 导入”向导  
  本主题介绍了如何将 XCode 项目移动到 Visual Studio 中以利用代码共享和跨平台解决方案。 但首先必须将 Mac 与 Visual Studio 进行配对，以便可导入、导出和构建项目。 有关如何设置配对的说明，请参阅[安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 还必须通过网络共享 XCode 项目或将其移动到 Visual Studio 计算机，才可使用“从 XCode 导入”向导。  
   
 #### <a name="import-from-xcode"></a>从 XCode 导入  
@@ -29,7 +29,7 @@ ms.locfileid: "31066933"
   
      ![选择要导入的 XCode 目标项目](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")  
   
-2.  在“选择项目”窗格中，选择“浏览”按钮以选择 XCode.pbxproj 文件。 导航到“选择 XCode 项目文件”对话框中的项目文件，然后选择“打开”。  
+2.  在“选择项目”窗格中，选择“浏览”按钮以选择 XCode .pbxproj 文件。 导航到“选择 XCode 项目文件”对话框中的项目文件，然后选择“打开”。  
   
      ![在“选择 Xcode 项目文件”对话框中选择一个项目文件](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")  
   
@@ -59,7 +59,7 @@ ms.locfileid: "31066933"
   
      选择“下一步”  继续。  
   
-6.  “框架”窗格可用于配置 Visual Studio 进行浏览和 IntelliSense 处理项目时所用的路径。 对于 XCode 项目引用的每个框架，这些路径必须可供 Visual Studio 访问。 向导会检查 XCode 项目中的框架引用，并显示 Visual Studio 能否找到框架。 Visual Studio 应可发现“全局属性”中设置的所有路径。 框架列表中列出了异常。 对于标有 X 的每个框架，请提供一个电脑可访问的路径，便于 Visual Studio 查找框架。 可使用浏览按钮 [...] 通过“选择文件夹”对话框查找路径。 框架路径可以是本地副本，或者是 Mac 上可通过网络访问的共享。  
+6.  “框架”窗格可用于配置 Visual Studio 进行浏览和 IntelliSense 处理项目时所用的路径。 对于 XCode 项目引用的每个框架，这些路径必须可供 Visual Studio 访问。 向导会检查 XCode 项目中的框架引用，并显示 Visual Studio 能否找到框架。 Visual Studio 应可发现“全局属性”中设置的所有路径。 框架列表中列出了异常。 对于标有 X 的每个框架，请提供一个电脑可访问的路径，便于 Visual Studio 查找框架。 可使用浏览按钮“...”通过“选择文件夹”对话框查找路径。 框架路径可以是本地副本，或者是 Mac 上可通过网络访问的共享。  
   
      ![“从 XCode 导入”框架窗格](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")  
   
@@ -67,7 +67,7 @@ ms.locfileid: "31066933"
   
 7.  “项目设置”窗格可用于针对向导创建的每个项目更改框架和 include 标头搜索路径。 可使用此窗格设置与全局设置不同的项目特定路径。  
   
-     若要为特定项目设置路径，请在“目标项目”下拉列表中选择项目文件，然后在“框架搜索路径”和“Include 标头搜索路径”控件中设置值。 可使用每个控件旁边的浏览按钮 [...] 通过“选择文件夹”对话框查找路径。  
+     若要为特定项目设置路径，请在“目标项目”下拉列表中选择项目文件，然后在“框架搜索路径”和“Include 标头搜索路径”控件中设置值。 可使用每个控件旁边的浏览按钮“...”通过“选择文件夹”对话框查找路径。  
   
      ![“从 XCode 导入”项目窗格](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")  
   

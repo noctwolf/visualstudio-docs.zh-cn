@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 29b6bd8abb99d269a91b2eaf7af8872ab7f41a73
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: c2988bb821a91ec1bc5f37955bef8a61897f2c4d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845751"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382085"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 
@@ -28,10 +28,10 @@ ms.locfileid: "34845751"
 
 -   在一个窗口中查看你需要的所有信息。
 
-## <a name="using-test-explorer"></a>使用“测试资源管理器”
+## <a name="use-test-explorer"></a>测试资源管理器
  ![显示“全部运行”按钮的单元测试资源管理器](../test/media/unittestexplorer-beta-.png)
 
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用“测试资源管理器”运行单元测试
+### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用测试资源管理器运行单元测试
 
 1.  使用你选择的测试框架创建单元测试。
 
@@ -39,7 +39,7 @@ ms.locfileid: "34845751"
 
     1.  创建测试项目。
 
-         在 **“新建项目”** 对话框中，展开 **“Visual Basic”**、 **“Visual C#”** 或 **“Visual C++”**，然后选择 **“测试”**。
+         在“新建项目”对话框中，展开“Visual Basic” > “Visual C#”或“Visual C++”，然后选择“测试”。
 
          选择 **“单元测试项目”**。
 
@@ -47,7 +47,7 @@ ms.locfileid: "34845751"
 
 2.  如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
-3.  在菜单栏上，依次选择 **“测试”**、 **“运行单元测试”**、 **“所有测试”**。
+3.  在菜单栏上，依次选择“测试” > “运行单元测试” > “所有测试”。
 
      解决方案生成，测试运行。
 
@@ -69,16 +69,16 @@ ms.locfileid: "34845751"
 > 如果未显示任何测试，请确保已安装适配器，将“测试资源管理器”与你使用的测试框架连接起来。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
 
-##  <a name="walkthrough"></a> 演练：使用单元测试开发方法
+##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>演练：使用单元测试开发方法
  本演练演示如何使用 Microsoft 单元测试框架开发 C# 语言的受测试方法。 你可以将其轻松改写为其他语言，也可加以调整以使用其他测试框架，例如 NUnit。 有关详细信息，请参阅[安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)。
 
-#### <a name="creating-the-test-and-method"></a>创建测试和方法
+### <a name="create-the-test-and-method"></a>创建测试和方法
 
 1.  创建 Visual C# 类库项目。 此项目将包含我们希望提供的代码。 在此示例中，该类名为 `MyMath`。
 
 2.  创建测试项目。
 
-    -   在 **“新建项目”** 对话框中，依次选择 **“Visual C#”**、 **“测试”** ，然后选择 **“单元测试项目”**。
+    -   在“新建项目”对话框中，依次选择“Visual C#” > “测试”，然后选择“单元测试项目”。
 
          ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png)
 
@@ -104,15 +104,15 @@ ms.locfileid: "34845751"
 
 4.  从测试中生成方法。
 
-    1.  将光标放在 `Rooter`上，然后在快捷菜单中依次选择 **“生成”**、 **“新类型”**。
+    1.  将游标放在 `Rooter` 上，然后在快捷菜单中依次选择“生成” > “新类型”。
 
     2.  在 **“生成新类型”** 对话框中，将 **“项目”** 设置为类库项目。 在此示例中，设为 `MyMath`。
 
-    3.  将光标放在 `SquareRoot`上，然后在快捷菜单中依次选择 **“生成”**、 **“方法存根”**。
+    3.  将游标放在 `SquareRoot` 上，然后在快捷菜单中依次选择“生成” > “方法存根”。
 
 5.  运行单元测试。
 
-    1.  在 **“测试”** 菜单上，依次选择 **“运行单元测试”**、 **“所有测试”**。
+    1.  在“测试”菜单上，依次选择“运行单元测试” > “所有测试”。
 
          解决方案将生成并运行。
 
@@ -132,7 +132,7 @@ ms.locfileid: "34845751"
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>在每次更改之后，都要使所有测试通过
 
-1.  在 `MyMath\Rooter.cs`中，改进 `SquareRoot`的代码：
+1.  在 MyMath\Rooter.cs 中，改进 `SquareRoot` 代码：
 
     ```csharp
     public double SquareRoot(double input)

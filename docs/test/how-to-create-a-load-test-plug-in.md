@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8ebd3a356eab88c53d2aa7bea7f27be3ccc0749e
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ef21d270154025a52c603186ba959fad080e5bba
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179674"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380533"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：创建负载测试插件
 
@@ -50,7 +50,7 @@ ms.locfileid: "39179674"
 
 8.  新的类库项目将添加到解决方案资源管理器中，并且新类会出现在代码编辑器中。
 
-9. 在“解决方案资源管理器”中，右击新类库中的“引用”文件夹并选择“添加引用”。
+9. 在解决方案资源管理器中，右击新类库中的“引用”文件夹并选择“添加引用”。
 
 10. 将显示“添加引用”对话框。
 
@@ -58,9 +58,9 @@ ms.locfileid: "39179674"
 
 12. 选择 **“确定”**。
 
-     将对“Microsoft.VisualStudio.QualityTools.LoadTestFramework”的引用添加到解决方案资源管理器的“引用”文件夹中。
+     将对 Microsoft.VisualStudio.QualityTools.LoadTestFramework 的引用添加到解决方案资源管理器的“引用”文件夹中。
 
-13. 在解决方案资源管理器中，右键单击包含要在其中添加负载测试插件的负载测试的 Web 性能和负载测试项目的顶级节点，然后选择“添加引用”。
+13. 在解决方案资源管理器中，右键单击 Web 性能和负载测试项目（其中包含要添加负载测试插件的负载测试）的顶级节点，然后选择“添加引用”。
 
 14. 将显示“添加引用”对话框。
 
@@ -68,7 +68,7 @@ ms.locfileid: "39179674"
 
 16. 选择 **“确定”**。
 
-17. 在代码编辑器中，为 `using` 命名空间添加一个 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 语句。
+17. 在代码编辑器中，为 <xref:Microsoft.VisualStudio.TestTools.LoadTesting> 命名空间添加一个 `using` 语句。
 
 18. 为在类库项目中创建的类实现 <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> 接口。 有关示例实现，请参见下面的“示例”部分。
 
@@ -83,7 +83,7 @@ ms.locfileid: "39179674"
 22. 在“选定插件的属性”窗格中，设置要在运行时使用的插件的初始值。
 
     > [!NOTE]
-    > 可根据需要从插件中公开任意多个属性；只需将其设置为公共、可设置并属于 Integer、Boolean 或 String 等基本类型。 以后还可以使用“属性”窗口更改 Web 性能测试插件属性。
+    > 可根据需要从插件中公开任意多个属性；只需将其设置为公共、可设置并属于 Integer、Boolean 或 String 等基本类型。 以后还可使用“属性”窗口更改 Web 性能测试插件属性。
 
 23. 选择 **“确定”**。
 

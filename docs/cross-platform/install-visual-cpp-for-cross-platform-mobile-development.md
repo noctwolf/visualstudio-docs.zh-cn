@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cd8f99ffdba144d475b3d68d7509b57ad7ea4e3c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 5dffe82511e75889ea588cb23b1f19490f991ab0
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281089"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251902"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>使用 C++ 安装跨平台移动开发
 
@@ -105,7 +105,7 @@ ms.locfileid: "36281089"
 
 ## <a name="install-tools-for-ios"></a>Install tools for iOS
 
-可以使用适用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 仿真程序或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成。 若要使用 Visual Studio 生成和运行 iOS 应用，必须在 Mac 上安装并配置远程代理。 有关详细的安装说明、先决条件和配置选项信息，请参阅 [Install And Configure Tools to Build using iOS](install-and-configure-tools-to-build-using-ios.md)。 如果你不是针对 iOS 构建，则可以跳过此步骤。
+可以使用适用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 仿真程序或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成。 若要使用 Visual Studio 生成和运行 iOS 应用，必须在 Mac 上安装并配置远程代理。 有关安装说明、先决条件和配置选项的详细信息，请参阅[安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。 如果你不是针对 iOS 构建，则可以跳过此步骤。
 
 ## <a name="install-or-update-dependencies-manually"></a>手动安装或更新依赖项
 
@@ -134,7 +134,7 @@ ms.locfileid: "36281089"
 
 - [Apache Ant](https://ant.apache.org/bindownload.cgi)
 
-   安装程序将 Apache Ant 默认置于以下路径： C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps。
+   默认情况下，安装程序将 Apache Ant 放置在以下路径：C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps。
 
 - [适用于 Android 的 Microsoft Visual Studio 模拟器](https://aka.ms/vscomemudownload)
 

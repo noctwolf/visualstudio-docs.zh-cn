@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 721b8241a3278ddbf1be3b5477e8829b7aa4447b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: aebb4603d32f61c2d4b50355a550a1a932336962
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942242"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379684"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：更改生成输出目录
 
@@ -28,7 +28,7 @@ ms.locfileid: "31942242"
 
 ## <a name="change-the-build-output-directory"></a>更改生成输出目录
 
-1.  在菜单栏上，选择“项目” > **\<**“Appname > 属性”。 还可以在 **“解决方案资源管理器”** 中右键单击项目节点并选择 **“属性”**。
+1.  在菜单栏上，选择“项目” > **\<**“Appname > 属性”。 还可以在解决方案资源管理器中右键单击项目节点并选择“属性”。
 
 2.  如果你有 Visual Basic 项目，请选择 **“编译”** 选项卡。如果你有 C# 项目，请选择“生成”选项卡。如果你具有 C++ 项目或 JavaScript 项目，请选择 **“常规”** 选项卡。
 

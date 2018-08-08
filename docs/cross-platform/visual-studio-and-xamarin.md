@@ -10,12 +10,12 @@ ms.author: chape
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 30bc5e4d14e09852904ca93087bdd99f6f2443ef
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ef599a67dcb81586bd31fd08836c0a95b812bde1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280684"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251222"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 
@@ -39,4 +39,4 @@ Xamarin 是一个移动应用开发平台，用于通过常见的 C#/.NET 代码
 >  对具有 Windows 和 Visual Studio 知识的开发人员而言，这些说明描述了最简单易行的计算机配置。 使用此配置，简化了整体开发体验，因为只需与 Mac 交互即可使用 iOS 模拟器和受限设备。 如果你熟知 Mac，建议在 Parallels 或 VMWare 中运行 Visual Studio 或使用 Visual Studio for Mac。 相关说明，请参阅 [Mac 用户的设置、安装和验证](../cross-platform/setup-install-and-verifications-for-mac-users.md)。
 
 > [!NOTE]
->  如果你在寻找基于 HTML 和 CSS 的跨平台开发解决方案，请参阅 [Visual Studio 中的跨平台开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)中所述的 Visual Studio Tools for Apache Cordova。
+>  如果在寻找基于 HTML 和 CSS 的跨平台开发解决方案，请参阅 [Visual Studio 中的跨平台开发](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML)中所述的用于 Apache Cordova 的 Visual Studio Tools。

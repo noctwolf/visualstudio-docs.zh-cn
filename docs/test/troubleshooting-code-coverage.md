@@ -9,16 +9,16 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1169d4e482f097ca923cc017964724e5886658d1
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6224e03e4aafe152107a8fa7da56dc6bd8def1e3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751561"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380546"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 
-Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集（.dll 或 .exe 文件）的数据。 但是，在某些情况下，“代码覆盖率结果”窗口显示类似于“生成了空结果集:...”的错误获得空结果的原因有多种。 本文可帮助解决这些问题。
+Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集（.dll 或 .exe 文件）的数据。 但是，在某些情况下，“代码覆盖率结果”窗口显示类似于“生成了空结果集: ...”的错误获得空结果的原因有多种。 本文可帮助解决这些问题。
 
 ## <a name="what-you-should-see"></a>你应该看到的结果
 
@@ -55,15 +55,15 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 说明 &mdash; 代码覆盖率引擎要求每个程序集让其关联的 .pdb 文件在测试运行期间可访问。 如果某个特定程序集没有 .pdb 文件，则不会分析该程序集。
 
-.pdb 文件必须从与 .dll 或 .exe 文件同一个生成中产生。
+.pdb 文件必须从与 .dll 或 .exe 文件相同的生成中产生。
 
 解决方法 &mdash; 确保生成设置生成了 .pdb 文件。 如果 .pdb 文件在项目生成时未更新，则打开项目属性，选择“生成”页，选择“高级”，然后查看“调试信息”。
 
-如果 .pdb 与 .dll 或 .exe 文件在不同的位置，请将 .pdb 文件复制到相同的目录。 也可以配置代码覆盖率引擎以在另一个位置搜索 .pdb 文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
+如果 .pdb 与 .dll 或 .exe 文件在不同的位置，请将 .pdb 文件复制到相同的目录。 也可配置代码覆盖率引擎以在另一个位置搜索 .pdb 文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
-### <a name="using-an-instrumented-or-optimized-binary"></a>使用已检测或已优化的二进制文件
+### <a name="use-an-instrumented-or-optimized-binary"></a>使用已检测或已优化的二进制文件
 
-分析 &mdash; 确定二进制文件是否已接受任何形式的高级优化（如配置优化），或者是否已由分析工具（如 vsinstr.exe 或 vsperfmon.exe）检测过。
+分析 &mdash; 确定二进制文件是否已接受任何形式的高级优化（如按配置优化），或者是否已由分析工具（如 vsinstr.exe 或 vsperfmon.exe）检测过。
 
 说明 &mdash; 如果某个程序集已由另一个分析工具检测或优化过，则在代码覆盖率分析中省略该程序集。 无法对此类程序集执行代码覆盖率分析。
 
@@ -89,7 +89,7 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 分析 &mdash; 如果使用的是自定义 .runsettings 文件，它可能包含语法错误。 未运行代码覆盖率，且“代码覆盖率”窗口在测试运行结束时未打开，或者显示了旧结果。
 
-说明 &mdash; 可以使用自定义 .runsettings 文件运行单元测试以配置代码覆盖率选项。 这些选项使你可以包含或排除文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
+说明 &mdash; 可使用自定义 .runsettings 文件运行单元测试以配置代码覆盖率选项。 这些选项使你可以包含或排除文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
 解决方法 &mdash; 有两种可能的错误类型：
 
@@ -109,7 +109,7 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 分析 &mdash; 如果使用的是自定义 .runsettings 文件，请确保它包含程序集。
 
-说明 &mdash; 可以使用自定义 .runsettings 文件运行单元测试以配置代码覆盖率选项。 这些选项使你可以包含或排除文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
+说明 &mdash; 可使用自定义 .runsettings 文件运行单元测试以配置代码覆盖率选项。 这些选项使你可以包含或排除文件。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
 解决方法 &mdash; 从 .runsettings 文件中删除所有 `Include` 节点，然后删除所有 `Exclude` 节点。 如果这样做修复了问题，请将这些节点分阶段放回去。
 
@@ -121,10 +121,10 @@ Visual Studio 中的代码覆盖率分析工具可收集本机和托管程序集
 
 分析 &mdash; 在静态链接的本机代码中，即使代码已执行，部分初始化函数 DllMain 和它调用的代码有时也会显示为未覆盖。
 
-说明 &mdash; 代码覆盖率工具的工作方式是在应用程序刚要开始运行前在程序集中插入检测。 在预先加载的任何程序集中，DllMain 中的初始化代码将在程序集加载之后和应用程序运行之前的这段时间执行。 该代码将显示为未覆盖。 通常，这适用于静态加载的程序集。
+说明 &mdash; 代码覆盖率工具的工作方式是在应用程序刚要开始运行前在程序集中插入检测。 在预先加载的任何程序集中，DllMain 中的初始化代码将在程序集加载之后和应用程序运行之前的这段时间执行。 该代码显示为未覆盖，通常适用于静态加载的程序集。
 
 解决方法 &mdash; 无。
 
 ## <a name="see-also"></a>请参阅
 
-- [使用代码覆盖率确定所测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
+- [使用代码覆盖率确定正在测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

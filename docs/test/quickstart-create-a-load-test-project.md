@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7838b9b04aa8d95fa9476cf9720815ccb5bed122
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8b18a80e8279513db6084852b10568b2327700d5
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176692"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380492"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入门：创建负载测试项目
 
@@ -29,7 +29,7 @@ ms.locfileid: "39176692"
 
 1. 从 Windows 的“开始”菜单打开“Visual Studio 安装程序”。 也可在 Visual Studio 中从“新建项目”对话框访问它，或从菜单栏中选择“工具” > “获取工具和功能”。
 
-1. 在 Visual Studio 安装程序中，选择“单个组件”选项卡，然后向下滚动到“调试和测试”部分。 选择“Web 性能和负载测试工具”。
+1. 在“Visual Studio 安装程序”中，选择“单个组件”选项卡，然后向下滚动到“调试和测试”部分。 选择“Web 性能和负载测试工具”。
 
    ![Web 性能和负载测试工具组件](media/web-perf-load-testing-tools-component.png)
 

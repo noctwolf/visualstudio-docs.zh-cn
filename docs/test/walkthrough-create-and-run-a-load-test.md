@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ef389ab3803aba5b6022c9d9ffa3a12d0801b49f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cbe16b5e0b711783c9dfd12ab9a652fb4055fc36
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178444"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381011"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>演练：创建并运行包含单元测试的负载测试
 
@@ -45,7 +45,7 @@ ms.locfileid: "39178444"
 
 2.  在“解决方案资源管理器”中，打开 Bank 解决方案节点的快捷菜单，选择“添加”，然后选择“新建项目”。
 
-     将显示“添加新项目”对话框。
+     此时，将显示“添加新项目”对话框。
 
 3.  在“添加新项目”对话框中，展开“Visual C#”，然后选择“测试”。 从模板列表中，选择“Web 性能和负载测试项目”，并在“名称”字段中键入 `BankLoadTest`。 选择 **“确定”**。
 
@@ -100,7 +100,7 @@ ms.locfileid: "39178444"
 
 3.  选择“可用测试”窗格中列出的 CreditTest 单元测试，该窗格列出了 Web 性能和负载测试项目中的所有 Web 性能测试和单元测试。
 
-4.  选择箭头以将 CreditTest 单元测试添加到“选定的测试”窗格中。
+4.  选择箭头将 CreditTest 单元测试添加到“选定的测试”窗格中。
 
 5.  对 DebitTest 和 FreezeAccountTest 单元测试重复步骤 3 和 4。
 
@@ -134,7 +134,7 @@ ms.locfileid: "39178444"
 
 2.  选择“完成”。 将在“负载测试编辑器”中打开负载测试。
 
-## <a name="running-the-load-test"></a>运行负载测试
+## <a name="run-the-load-test"></a>运行负载测试
  创建了负载测试后，请运行该测试以查看你的 Bank 应用程序如何响应负载模拟。 负载测试运行时，将看到“负载测试分析器”窗口。
 
 ### <a name="to-run-the-load-test"></a>运行负载测试
@@ -149,4 +149,4 @@ ms.locfileid: "39178444"
 - [指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)
 - [编辑负载测试方案](../test/edit-load-test-scenarios.md)
 - [编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)
-- [编辑测试组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
+- [编辑文本组合模型以指定运行测试的虚拟用户的概率](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

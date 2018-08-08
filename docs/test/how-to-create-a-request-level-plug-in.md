@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f5de1fb6890874a5aab57e357cc4488db96fb7c8
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 749c4be37586401d48e9c4a11d8fc70b8ed44c44
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178369"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382030"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：创建请求级插件
 
@@ -30,7 +30,7 @@ ms.locfileid: "39178369"
 
 ## <a name="to-create-a-request-level-plug-in"></a>创建请求级插件
 
-1.  在解决方案资源管理器中，右击解决方案， 选择“添加”，然后选择“新建项目”。
+1.  在解决方案资源管理器中，右键单击解决方案，选择“添加”，然后选择“新建项目”。
 
      随即出现“添加新项目”对话框。
 
@@ -42,15 +42,15 @@ ms.locfileid: "39178369"
 
      新的类库项目将添加到解决方案资源管理器中，并且新类会出现在代码编辑器中。
 
-5.  在“解决方案资源管理器”中，右击新类库中的“引用”文件夹并选择“添加引用”。
+5.  在解决方案资源管理器中，右击新类库中的“引用”文件夹并选择“添加引用”。
 
      将显示“添加引用”对话框。
 
 6.  选择“.NET”选项卡，向下滚动，选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”
 
-     对“Microsoft.VisualStudio.QualityTools.WebTestFramework”的引用将添加到解决方案资源管理器中的“引用”文件夹中。
+     对“Microsoft.VisualStudio.QualityTools.WebTestFramework”的引用将添加到解决方案资源管理器的“引用”文件夹中。
 
-7.  在解决方案资源管理器中，右键单击包含负载测试（要向其添加 Web 性能测试请求测试插件）的 Web 性能和负载测试项目的顶级节点。 选择“添加引用”。
+7.  在解决方案资源管理器中，右键单击 Web 性能和负载测试项目（其中包含要添加 Web 性能测试请求测试插件的负载测试）的顶级节点。 选择“添加引用”。
 
      将显示“添加引用”对话框。
 
@@ -91,7 +91,7 @@ ms.locfileid: "39178369"
 
 ## <a name="example"></a>示例
 
-可以使用以下代码来创建自定义的 Web 性能测试插件，其中会显示两个对话框。 一个对话框显示与要附加请求插件的请求关联的 URL。 第二个对话框显示代理的计算机名称。
+可以使用以下代码来创建自定义的 Web 性能测试插件，其中会显示两个对话框。 一个对话框显示与要附加请求外接程序的请求相关联的 URL。 第二个对话框显示代理的计算机名称。
 
 > [!NOTE]
 > 下面的代码要求你添加对 System.Windows.Forms 的引用。

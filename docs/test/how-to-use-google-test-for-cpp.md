@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 32059a23f2e71d13f5d346a6799d2d2f40630b6f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 11b02b398adbcdf0a64d18c76ec11fe2ba41f1af
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751483"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382634"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Google Test
 在 Visual Studio 2017 版本 15.5 和更高版本中，Google Test 作为“使用 C++ 的桌面开发”工作负荷的默认组件集成到 Visual Studio IDE 中。 若要验证是否在计算机上安装了它，请打开 Visual Studio 安装程序，在工作负荷组件列表下找到 Google Test：
@@ -22,8 +22,8 @@ ms.locfileid: "34751483"
 ![安装 Google Test](media/cpp-google-component.png)
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>向解决方案添加 Google Test 项目
-1. 在“解决方案资源管理器”中，右键单击解决方案节点，然后选择“添加”|“新建项目”。
-2. 在左窗格中，选择“Visual C++”|“测试”，然后在中心窗格中选择“Google Test 项目”。
+1. 在解决方案资源管理器中，右键单击解决方案节点，然后依次选择“添加” > “新建项目”。
+2. 在左窗格中，依次选择“Visual C++” > “测试”，然后在中心窗格中选择“Google Test 项目”。
 3. 为测试项目提供名称，然后单击“确定”。
 
 ![新建 Google Test 项目](media/cpp-gtest-new-project.png)
@@ -34,7 +34,7 @@ ms.locfileid: "34751483"
  ![配置 Google Test 项目](media/cpp-gtest-config.png)
 
 ## <a name="set-additional-options"></a>设置附加选项
-从主菜单中，选择“工具”|“选项”|“Google Test 测试适配器”以设置附加选项。 有关这些设置的详细信息，请参阅 Google Test 文档。
+从主菜单中，选择“工具” > “选项” > “Google Test 测试适配器”以设置附加选项。 有关这些设置的详细信息，请参阅 Google Test 文档。
 
  ![Google Test 项目设置](media/cpp-gtest-settings.png)
 
@@ -44,10 +44,10 @@ ms.locfileid: "34751483"
 ![添加 #include 指令](media/cpp-gtest-includes.png)
 
 ## <a name="write-and-run-tests"></a>编写和运行测试
-现在已准备就绪，可以编写和运行 Google Test。 有关测试宏的信息，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
+现在已准备就绪，可以编写和运行 Google Test。 有关测试宏的信息，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>请参阅
-[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+[编写适用于 C/C++ 的单元测试](writing-unit-tests-for-c-cpp.md)
 
 
 

@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: c815652ae37fb04373cbf39279d54099a2d808a5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 0468a3ee546659d8079d98f49b196819c44afbd1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117766"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381655"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 
@@ -82,7 +82,7 @@ ms.locfileid: "37117766"
 
 1. 在“Form1.vb [设计]”窗口中，双击“单击此处”按钮，打开“Form1.vb”窗口。
 
-      （或者，可在“解决方案资源管理器”窗口中展开“Form1.vb”，然后单击“Form1”。）
+      （或者，可在解决方案资源管理器中展开“Form1.vb”，然后单击“Form1”。）
 
 2. 在“Form1.vb”窗口的“Private Sub”行和“End Sub”行之间，键入或粘贴 `lblHelloWorld.Text = "Hello World!"`。
 

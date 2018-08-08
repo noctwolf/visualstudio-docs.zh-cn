@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d24ce9f954164cd8d243edfab4387f6b174c0648
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968531"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379284"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>如何：安装自定义诊断数据适配器
 
@@ -25,7 +25,7 @@ ms.locfileid: "31968531"
 
  下面的过程用于在适当位置安装您的自定义诊断适配器。 您将需要安装了诊断数据适配器的任何计算机上的管理权限。
 
-## <a name="installing-a-custom-diagnostic-data-adapter"></a>安装自定义诊断数据适配器
+## <a name="install-a-custom-diagnostic-data-adapter"></a>安装自定义诊断数据适配器
 
 ### <a name="to-install-a-custom-diagnostic-data-adapter"></a>安装自定义诊断数据适配器
 

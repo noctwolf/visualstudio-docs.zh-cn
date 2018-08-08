@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: bf2b6986894d996d5307d2551ddf79ad37f8a8e9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176975"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380887"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
@@ -48,9 +48,9 @@ ms.locfileid: "39176975"
 
  有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
 
-##  <a name="CreateAdapter"></a>创建并安装诊断数据适配器
+##  <a name="create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 
-#### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
+### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 
 1.  创建一个新的类库。
 
@@ -66,7 +66,7 @@ ms.locfileid: "39176975"
 
 2.  添加程序集“Microsoft.VisualStudio.QualityTools.ExecutionCommon”。
 
-    1.  在“解决方案资源管理器”中，右键单击“引用”，然后选择“添加引用”命令。
+    1.  在解决方案资源管理器中，右键单击“引用”，然后选择“添加引用”命令。
 
     2.  选择“.NET”并查找“Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll”。
 
@@ -74,7 +74,7 @@ ms.locfileid: "39176975"
 
 3.  添加程序集“Microsoft.VisualStudio.QualityTools.Common”。
 
-    1.  在“解决方案资源管理器”中右键单击“引用”，然后选择“添加引用”命令。
+    1.  在解决方案资源管理器中右键单击“引用”，然后选择“添加引用”命令。
 
     2.  选择“/.NET”并查找“Microsoft.VisualStudio.QualityTools.Common.dll”。
 
@@ -224,7 +224,7 @@ ms.locfileid: "39176975"
 
      如果要使用自己的编辑器来收集要在测试设置中使用的数据，请参阅[如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)。
 
-11. 若要在测试完成时根据用户在测试设置中所做配置收集日志文件，您必须创建一个 `App.config` 文件并将其添加至解决方案。 此文件具有以下格式，并且必须包含供诊断数据适配器进行识别的 URI。 将“Company/ProductName/Version”替换为实际值。
+11. 要在测试完成时根据用户在测试设置中所做配置收集日志文件，则必须创建一个 App.config 文件并将其添加至解决方案。 此文件具有以下格式，并且必须包含供诊断数据适配器进行识别的 URI。 将“Company/ProductName/Version”替换为实际值。
 
     > [!NOTE]
     > 如果不需要为诊断数据适配器配置任何信息，则无需创建配置文件。

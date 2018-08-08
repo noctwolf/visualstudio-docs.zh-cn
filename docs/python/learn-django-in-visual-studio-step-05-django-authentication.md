@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 35650e1fe22026968c06ed4bf0c9bc4cd1d2d54e
-ms.sourcegitcommit: 4e605891d0dfb3ab83150c17c074bb98dba29d15
+ms.openlocfilehash: e9c30e2cdf0f55db5b09225768b073bb030c841b
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946970"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388366"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 
 上一步：[使用完整的 Django Web 项目模板](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
-身份验证是 Web 应用的常见需求，因此“Django Web 项目”模板包含基本的身份验证流。 （本教程步骤 6 中讨论的“投票 Django Web 项目”模板也包括相同的流。）在使用任意 Django 项目模板时，Visual Studio 包含 Django 项目的 `settings.py` 中身份验证所需的所有模块。
+身份验证是 Web 应用的常见需求，因此“Django Web 项目”模板包含基本的身份验证流。 （本教程步骤 6 中讨论的“投票 Django Web 项目”模板也包括相同的流。）在使用任意 Django 项目模板时，Visual Studio 包含 Django 项目的 settings.py 中身份验证所需的所有模块。
 
 在此步骤中，你将了解：
 
@@ -33,15 +33,15 @@ ms.locfileid: "36946970"
 
 以下步骤执行身份验证流，并介绍所涉及项目的各个部分：
 
-1. 如果尚未遵循项目根目录 `readme.html` 文件中的说明来创建超级用户（管理员）帐户，请现在执行此操作。
+1. 如果尚未遵循项目根目录 readme.html 文件中的说明来创建超级用户（管理员）帐户，请现在执行此操作。
 
 1. 使用“调试” > “启动调试”(F5)，从 Visual Studio 运行应用。 当应用出现在浏览器中时，观察“登录”是否显示在导航栏右上方。
 
     ![Django Web 项目应用页上的登录控件](media/django/step05-login-control.png)
 
-1. 打开 `templates/app/layout.html`，并观察 `<div class="navbar ...>` 元素是否包含标记 `{% include app/loginpartial.html %}`。 `{% include %}` 标记指示 Django 的模板化系统在包含模板中此时所含的文件内容中进行拉取。
+1. 打开 templates/app/layout.html，并观察 `<div class="navbar ...>` 元素是否包含标记 `{% include app/loginpartial.html %}`。 `{% include %}` 标记指示 Django 的模板化系统在包含模板中此时所含的文件内容中进行拉取。
 
-1. 打开 `templates/app/loginpartial.html` 并观察它如何使用条件标记 `{% if user.is_authenticated %}` 与 `{% else %}` 标记来呈现不同的 UI 元素，具体取决于是否已对用户进行身份验证：
+1. 打开 templates/app/loginpartial.html 并观察它如何使用条件标记 `{% if user.is_authenticated %}` 与 `{% else %}` 标记来呈现不同的 UI 元素，具体取决于是否已对用户进行身份验证：
 
     ```html
     {% if user.is_authenticated %}
@@ -62,7 +62,7 @@ ms.locfileid: "36946970"
     {% endif %}
     ```
 
-1. 由于首次启动应用时未对任何用户进行身份验证，因此该模板代码仅呈现指向相对路径“login”的“登录”链接。 正如 `urls.py` 中所指定的那样（如前一部分所示），该路由映射到 `django.contrib.auth.views.login` 视图。 该视图将收到以下数据：
+1. 由于首次启动应用时未对任何用户进行身份验证，因此该模板代码仅呈现指向相对路径“login”的“登录”链接。 正如 urls.py 中所指定的那样（如前一部分所示），该路由映射到 `django.contrib.auth.views.login` 视图。 该视图将收到以下数据：
 
     ```python
     {
@@ -76,7 +76,7 @@ ms.locfileid: "36946970"
     }
     ```
 
-    在这里，`template_name` 标识登录页模板，在本例中为 `templates/app/login.html`。 `extra_context` 属性被添加到提供给模板的默认上下文数据中。 最后，`authentication_form` 指定用于登录的窗体类，它在模板中显示为 `form` 对象。 默认值为 `AuthenticationForm`（来自 `django.contrib.auth.views`）；Visual Studio 项目模板改为使用在应用 `forms.py` 文件中定义的窗体：
+    在这里，`template_name` 标识登录页的模板，在本例中为 templates/app/login.html。 `extra_context` 属性被添加到提供给模板的默认上下文数据中。 最后，`authentication_form` 指定用于登录的窗体类，它在模板中显示为 `form` 对象。 默认值为 `AuthenticationForm`（来自 `django.contrib.auth.views`）；Visual Studio 项目模板改为使用应用 forms.py 文件中定义的窗体：
 
     ```python
     from django import forms
@@ -97,7 +97,7 @@ ms.locfileid: "36946970"
 
     如你所见，此窗体类派生自 `AuthenticationForm` 且专门替代用户名和密码字段来添加占位符文本。 Visual Studio 模板包括此显式代码，前提是你可能需要自定义窗体，比如添加密码强度验证。
 
-1. 导航到登录页时，应用随即会显示 `login.html` 模板。 变量 `{{ form.username }}` 和 `{{ form.password }}` 呈现来自 `BootstrapAuthenticationForm` 的 `CharField` 窗体。 还有一个内置部分用于显示验证错误，如果选择添加这些服务，会有一个用于社交登录的现成元素。
+1. 导航到登录页时，应用随即会显示 login.html 模板。 变量 `{{ form.username }}` 和 `{{ form.password }}` 呈现来自 `BootstrapAuthenticationForm` 的 `CharField` 窗体。 还有一个内置部分用于显示验证错误，如果选择添加这些服务，会有一个用于社交登录的现成元素。
 
     ```html
     {% extends "app/layout.html" %}
@@ -146,13 +146,13 @@ ms.locfileid: "36946970"
 
 1. 提交表单时，Django 会尝试对凭据（如超级用户凭据）进行身份验证。 如果身份验证失败，你将仍处于当前页面，但 `form.errors` 将设置为 true。 如果身份验证成功，Django 将导航到“下一步”字段中的相对 URL `<input type="hidden" name="next" value="/" />`，在本例中为主页 (`/`)。
 
-1. 现在，当主页再次呈现，`user.is_authenticated` 属性会在呈现 `loginpartial.html` 模板时设为“true”。 因此，你将看到“Hello (用户名)”消息和“注销”。 可以在应用其他部分中使用 `user.is_authenticated` 来检查身份验证。
+1. 现在，当主页再次呈现，`user.is_authenticated` 属性会在 loginpartial.html 模板呈现时为“true”。 因此，将看到“Hello (用户名)”消息和“注销”。 可以在应用其他部分中使用 `user.is_authenticated` 来检查身份验证。
 
     ![Django Web 项目应用页上的 Hello 消息和注销控件](media/django/step05-logoff-control.png)
 
 1. 若要确定经过身份验证的用户是否有权访问特定资源，需要从数据库中检索用户特定的权限。 有关详细信息，请参阅[使用 Django 身份验证系统](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization)（Django 文档）。
 
-1. 特别需要指出的是，超级用户或管理员有权访问内置 Django 管理员界面，方法是使用相对 URL“/admin/”和“/admin/doc/”。 若要启用这些界面，请打开 Django 项目的 `urls.py` 并删除以下条目的注释：
+1. 特别需要指出的是，超级用户或管理员有权访问内置 Django 管理员界面，方法是使用相对 URL“/admin/”和“/admin/doc/”。 要启用这些界面，请打开 Django 项目的 urls.py 并删除以下条目的注释：
 
     ```python
     from django.conf.urls import include
@@ -171,7 +171,7 @@ ms.locfileid: "36946970"
 
     ![Django 管理员界面](media/django/step05-administrator-interface.png)
 
-1. 身份验证流的最后一部分是注销。 正如 `loginpartial.html` 中所示，注销链接只需对相对 URL“/login”执行 POST 操作，这由内置视图 `django.contrib.auth.views.logout` 处理。 此视图不显示任何 UI，只需导航到主页（如“^logout$”模式 `urls.py` 中所示）。 若要显示注销页，首先按照下面的方式更改 URL，添加“template_name”属性并删除“next_page”属性：
+1. 身份验证流的最后一部分是注销。 正如 loginpartial.html 中所示，“注销”链接只需对相对 URL“/login”执行 POST 操作，这由内置视图 `django.contrib.auth.views.logout` 处理。 此视图不显示任何 UI，只需导航到主页（如“^logout$”模式 urls.py 中所示）。 若要显示注销页，首先按照下面的方式更改 URL，添加“template_name”属性并删除“next_page”属性：
 
     ```python
     url(r'^logout$',
@@ -183,7 +183,7 @@ ms.locfileid: "36946970"
         name='logout')
     ```
 
-    然后使用下面的（最小）内容创建 `templates/app/loggedoff.html`：
+    然后通过以下（最小）内容创建 templates/app/loggedoff.html：
 
     ```html
     {% extends "app/layout.html" %}

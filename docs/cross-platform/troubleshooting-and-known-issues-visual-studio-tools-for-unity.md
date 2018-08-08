@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: df458124be9650319f47979f7d2d98801d06a61f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 86f547ae686176ab6361f44f4f0ba432c6466da9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153899"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251570"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -54,7 +54,7 @@ ms.locfileid: "39153899"
 
 Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等几个 Unity 插件使用本机线程。 插件在最后将本机线程附加到运行时，阻止了对操作系统的调用，这时就会出现问题。 这意味着 Unity 不能对调试程序（或域重载）和挂起中断该线程。
 
-有一种解决方法适合 FMOD：通过传递 FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE 初始化[标记](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)来禁用异步处理，并对主线程执行所有处理。
+有一种解决方法适合 FMOD：通过传递 `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` 初始化[标记](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html)来禁用异步处理，并对主线程执行所有处理。
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不兼容项目
 
@@ -114,7 +114,7 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
 - 有时单步执行和跳出方法的方式不正确，尤其是在迭代器中或在 switch 语句内。
 
-## <a name="reporting-errors"></a>报告错误
+## <a name="report-errors"></a>报告错误
 
  请在遇到崩溃、冻结或其他错误时发送错误报告以帮助我们改进 Visual Studio Tools for Unity 的质量。 这可以帮助我们调查并修复 Visual Studio Tools for Unity 中的问题。 谢谢！
 

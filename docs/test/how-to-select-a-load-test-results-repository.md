@@ -17,18 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 24b146b9916fbdd656868a7a89daa0213ec7b659
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751996"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379574"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>如何：选择负载测试结果储存库
+# <a name="how-to-select-a-load-test-results-repository"></a>如何：选择负载测试结果存储库
 
 并不局限于使用本地结果存储区。 通常，负载测试是在一组远程代理计算机上运行。 多个代理和一个控制器一起可生成比任何单台计算机更多的模拟负载。 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
-代理或本地计算机生成的测试结果可保存到任何已创建负载测试结果存储区的 SQL 服务器中。 在这两种情况下，都必须使用“管理测试控制器”窗口标识要存储负载测试结果的存储区。
+代理或本地计算机生成的测试结果可保存到任何已创建负载测试结果存储区的 SQL 服务器中。 在任一情况下，都必须使用“管理测试控制器”窗口标识要存储负载测试结果的存储区。
 
 有关代理的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "34751996"
 
      ![负载测试结果存储区的连接属性](../test/media/loadtestconnectionproperties.png)负载测试结果存储区的连接属性
 
-3.  在“负载测试测结果存储区”中单击 (…)，以显示“连接属性”对话框。
+3.  在“负载测试测结果存储区”中单击“(…)”，以显示“连接属性”对话框。
 
 4.  在“服务器名称”中，键入在其中运行 `LoadTest` 脚本的服务器的名称。
 
@@ -57,5 +57,5 @@ ms.locfileid: "34751996"
 
 ## <a name="see-also"></a>请参阅
 
-- [管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)

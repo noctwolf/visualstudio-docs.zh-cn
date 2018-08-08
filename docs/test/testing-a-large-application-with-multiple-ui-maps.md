@@ -12,22 +12,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 126d5435bf5f5aa5e89120b1767a616d8ac35d51
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f7ada2c6f3b147e103c132e3d5dfd1d8ac623065
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180368"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379814"
 ---
-# <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
+# <a name="test-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 
-本主题讨论在使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。
+本主题讨论使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。
 
  **要求**
 
 -   Visual Studio Enterprise
 
- 在新建编码的 UI 测试时，Visual Studio 测试框架会默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 若要详细了解如何录制编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
+ 在新建编码的 UI 测试时，Visual Studio 测试框架会默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 有关如何录制编码的 UI 测试的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
 
  为 UI 映射生成的代码针对与测试交互的每个对象都包含一个类。 对于每个生成的方法，都会专门为该方法生成方法参数的伴生类。 如果应用程序中存在大量对象、页以及窗体和控件，UI 映射可能会变得很大。 而且，如果多个人正在执行测试，则只有一个大型 UI 映射文件的应用程序会变得难以操作。
 
@@ -44,13 +44,13 @@ ms.locfileid: "39180368"
 
 -   一起执行逻辑操作的多个复杂的复合 UI 控件集，如网站中的注册页或购物车的购买页。
 
--   可从应用程序的各个点进行访问的独立的一组控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。
+-   可从应用程序的各个点进行访问的一组独立控件，如具有多个操作页的向导。 如果向导的每页都特别复杂，则可为每页创建单独的 UI 映射。
 
-## <a name="adding-multiple-ui-maps"></a>添加多个 UI 映射
+## <a name="add-multiple-ui-maps"></a>添加多个 UI 映射
 
-#### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>向编码的 UI 测试项目中添加 UI 映射
+### <a name="to-add-a-ui-map-to-your-coded-ui-test-project"></a>向编码的 UI 测试项目中添加 UI 映射
 
-1.  若要在编码的 UI 测试项目中创建用于存储所有 UI 映射的文件夹，请在“解决方案资源管理器”中右键单击编码的 UI 测试项目文件，指向“添加”，然后选择“新建文件夹”。 例如，可将其命名为 `UIMaps`。
+1.  要在编码的 UI 测试项目中创建用于存储所有 UI 映射的文件夹，请在解决方案资源管理器中右键单击编码的 UI 测试项目文件，指向“添加”，然后选择“新建文件夹”。 例如，可将其命名为 `UIMaps`。
 
      新文件夹显示在编码的 UI 测试项目下面。
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4114a938f643cee629311a72aec72f94cfcd2fc4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3464ffc1db1a757ac20e3f77d0d901ec731a7cab
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31966649"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381929"
 ---
 # <a name="how-to-specify-how-frequently-test-logs-are-saved-using-the-load-test-editor"></a>如何：使用负载测试编辑器指定保存测试日志的频率
 
@@ -31,7 +31,7 @@ ms.locfileid: "31966649"
 
 1.  打开一个负载测试。
 
-     此时将显示负载测试编辑器。 其中显示负载测试树。
+     “负载测试编辑器”随即显示。 其中显示负载测试树。
 
 2.  在负载测试树的“运行设置”文件夹中，选择要为其指定保存测试日志的频率的运行设置节点。
 
@@ -52,6 +52,5 @@ ms.locfileid: "31966649"
 
 - [编辑负载测试方案](../test/edit-load-test-scenarios.md)
 - [演练：创建和运行负载测试](../test/walkthrough-create-and-run-a-load-test.md)
-- [编辑负载测试方案](../test/edit-load-test-scenarios.md)
 - [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)
-- [如何：配置“收集完整详细信息”以启用虚拟用户活动图表](../test/how-to-configure-load-tests-to-collect-full-details.md)
+- [如何：配置“收集完整详细信息”以启用虚拟用户活动图](../test/how-to-configure-load-tests-to-collect-full-details.md)
