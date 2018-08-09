@@ -1,5 +1,5 @@
 ---
-title: 保留的项目项的属性 |Microsoft 文档
+title: 保存项目项的属性 |Microsoft Docs
 ms.date: 03/22/2018
 ms.technology:
 - vs-ide-sdk
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6b0bc529e01d8ef34b6959b98d773857000ec1c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138049"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639345"
 ---
-# <a name="persisting-the-property-of-a-project-item"></a>保留的项目项的属性
-你可能想要保留添加到项目项，如源文件的作者的属性。 可以通过将属性存储在项目文件来执行此操作。
+# <a name="persist-the-property-of-a-project-item"></a>保存项目项的属性
+您可能想要保留的属性添加到项目项，例如源代码文件的作者。 可以通过将属性存储在项目文件中执行此操作。
 
- 保存项目文件中的属性的第一步是获取作为项目的层次结构<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。 您可以通过使用自动化或通过使用获得此接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦获取接口，可用于确定当前选择的项目项。 项目项 ID 之后，你可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>以添加属性。
+ 若要保存项目文件中的属性的第一步是获取作为项目的层次结构<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。 你可以通过使用自动化功能或通过使用获取此接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦获取该接口，可用于确定当前未选择的项目项。 项目项 ID 后，可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>添加属性。
 
- 在下面的过程中，保留 VsPkg.cs 属性`Author`值`Tom`项目文件中。
+ 在以下过程中，您将保留*VsPkg.cs*属性`Author`具有值`Tom`项目文件中。
 
-### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>若要获取与 DTE 对象的项目层次结构
+## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>若要获取 DTE 对象使用的项目层次结构
 
 1.  将以下代码添加到你的 VSPackage 中：
 
@@ -41,9 +41,9 @@ ms.locfileid: "31138049"
     solution.GetProjectOfUniqueName(uniqueName, out hierarchy);
     ```
 
-### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>若要保存项目项属性与 DTE 对象
+## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>若要保存项目项属性与 DTE 对象
 
-1.  将以下代码添加到在前一过程的方法中给出的代码：
+1.  将以下代码添加到在上一个过程中的方法中提供的代码：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ ms.locfileid: "31138049"
     }
     ```
 
-### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>若要获取使用 IVsMonitorSelection 的项目层次结构
+## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>若要获取使用 IVsMonitorSelection 的项目层次结构
 
 1.  将以下代码添加到你的 VSPackage 中：
 
@@ -102,11 +102,9 @@ ms.locfileid: "31138049"
     }
     ```
 
-2.
+## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>若要保留选定的项目项属性，给定的项目层次结构
 
-### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>若要保留选定的项目项属性，给定的项目层次结构
-
-1.  将以下代码添加到在前一过程的方法中给出的代码：
+1.  将以下代码添加到在上一个过程中的方法中提供的代码：
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -117,18 +115,18 @@ ms.locfileid: "31138049"
     }
     ```
 
-### <a name="to-verify-that-the-property-is-persisted"></a>若要验证该属性持久化
+## <a name="to-verify-that-the-property-is-persisted"></a>若要验证属性保持不变
 
-1.  启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然后打开或创建的解决方案。
+1.  启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然后打开或创建解决方案。
 
-2.  选择项目项中的 VsPkg.cs**解决方案资源管理器**。
+2.  选择的项目项中的 VsPkg.cs**解决方案资源管理器**。
 
-3.  使用断点或否则确定你的 VSPackage 已加载并且 SetItemAttribute 运行。
+3.  使用断点或否则来确定加载你的 VSPackage 和 SetItemAttribute 运行。
 
     > [!NOTE]
-    > 你可以自动上载 UI 上下文中 VSPackage <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。
+    > 你可以自动加载 VSPackage 的 UI 上下文中<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。
 
-4.  关闭[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然后在记事本中打开项目文件。 你应该会看到\<作者 > 标记具有值 Tom，，如下所示：
+4.  关闭[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然后在记事本中打开项目文件。 应会看到\<作者 > 标记值 Tom，按如下所示：
 
     ```xml
     <Compile Include="VsPkg.cs">

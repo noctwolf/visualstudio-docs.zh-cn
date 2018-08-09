@@ -1,5 +1,5 @@
 ---
-title: LocationField 元素 （Visual Studio 项目模板） |Microsoft 文档
+title: LocationField 元素 （Visual Studio 项目模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0877d374317e3a7142996b012ff6abefc6b94724
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 76ed39186796b692dd6bc93ab0eaea50f217b7af
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138754"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636280"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素（Visual Studio 项目模板）
-指定是否**位置**文本框中**新项目**启用、 禁用，或隐藏项目模板的对话框。  
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素 （Visual Studio 项目模板）
+指定是否**位置**文本框中**新项目**启用、 禁用或隐藏项目模板对话框的。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -48,25 +48,25 @@ ms.locfileid: "31138754"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新项目**。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新的项目**。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 有效的文本的值有：  
+ 有效的文本的值为：  
   
--   `Enabled`它指定的**位置**框**新项目**对话框框处于启用状态。  
+-   `Enabled`指定将**位置**的框**新项目**对话框的已启用。  
   
--   `Disabled`它指定的**位置**框**新项目**禁用对话框。  
+-   `Disabled`指定将**位置**的框**新项目**对话框框处于禁用状态。  
   
--   `Hidden`它指定的**位置**框**新项目**隐藏对话框。  
+-   `Hidden`指定将**位置**的框**新项目**对话框处于隐藏状态。  
   
 ## <a name="remarks"></a>备注  
  默认值为 `Enabled`。  
   
- **位置**文本框中**新项目**对话框中，用户若要更改默认目录来保存新项目。  
+ **位置**文本框中**新项目**对话框使用户能够更改默认目录来保存新项目。  
   
- 中指定的值`Location`元素才接受通过对话框中，如果基础项目系统支持它。  
+ 中指定的值`Location`元素仅遵循所对话框中，如果基础项目系统支持它。  
   
 ## <a name="example"></a>示例  
  以下示例阐释 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 模板的元数据。  
@@ -96,6 +96,6 @@ ms.locfileid: "31138754"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

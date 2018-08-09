@@ -1,5 +1,5 @@
 ---
-title: SccCloseProject 函数 |Microsoft 文档
+title: SccCloseProject 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f977c1241408f5e33d31a63262abb5ee24670e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 49d3196fbe2eb6c3bafa1ec234e27072e50a4b7d
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31145111"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636020"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函数
-此函数将关闭项目，将标记特定会话的末尾。  
+此函数用于关闭特定会话的结束标记的项目。  
   
 ## <a name="syntax"></a>语法  
   
@@ -33,24 +33,24 @@ SCCRTN SccCloseProject (
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+### <a name="parameters"></a>参数  
  pvContext  
- 源控件插件上下文结构。  
+ 源控制插件上下文结构。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功关闭该项目。|  
 |SCC_E_PROJNOTOPEN|不没有当前打开任何项目。|  
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|  
-|SCC_E_NONSPECIFICERROR|非特定的失败。|  
+|SCC_E_NONSPECIFICERROR|非特定故障。|  
   
 ## <a name="remarks"></a>备注  
- [SccOpenProject](../extensibility/sccopenproject-function.md)始终将在此函数之前调用。 对此函数的调用后跟调用`SccOpenProject`函数或[SccUninitialize](../extensibility/sccuninitialize-function.md)，以便完全结束到源代码管理系统的连接。  
+ [SccOpenProject](../extensibility/sccopenproject-function.md)始终调用此函数之前。 对此函数的调用后跟调用`SccOpenProject`函数或[SccUninitialize](../extensibility/sccuninitialize-function.md)，以便完全结束与源代码管理系统的连接。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

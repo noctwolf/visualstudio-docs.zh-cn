@@ -1,5 +1,5 @@
 ---
-title: 扩展解决方案 |Microsoft 文档
+title: 扩展解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a6758acc3b78399d48a311bd146e037daad500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9671899b5e5574599bcd9125b74b06675be4b4b3
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134271"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636861"
 ---
-# <a name="extending-solutions"></a>扩展解决方案
-解决方案是协同工作以创建应用程序的一个或多个项目中的分组。  
+# <a name="extend-solutions"></a>扩展解决方案
+一种解决方案是协同工作以创建应用程序的一个或多个项目的分组。  
   
 ## <a name="in-this-section"></a>本节内容  
- 下面的演练演示在其中你可以扩展解决方案的一些方法。  
+ 下面的演练显示在其中您可以扩展解决方案的一些方法。  
   
-1.  [扩展解决方案资源管理器筛选器](../extensibility/extending-the-solution-explorer-filter.md)说明如何筛选解决方案资源管理器的显示。  
+1.  [扩展解决方案资源管理器筛选器](../extensibility/extending-the-solution-explorer-filter.md)说明如何筛选解决方案资源管理器显示的内容。  
   
-2.  [管理项目在解决方案中加载](../extensibility/managing-project-loading-in-a-solution.md)说明如何管理项目加载，以提高性能，当用户加载解决方案。
+2.  [管理解决方案中的项目加载](../extensibility/managing-project-loading-in-a-solution.md)说明如何管理项目加载来提高性能，当用户加载解决方案。

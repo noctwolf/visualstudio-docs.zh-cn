@@ -1,5 +1,5 @@
 ---
-title: QUERYCHANGESFUNC |Microsoft 文档
+title: QUERYCHANGESFUNC |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,17 +16,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1df5f21ffed27c45ebee6315fcc29ee1dcc8fa4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d81b554db151577298bc45fa9be53e589bba75c7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139804"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637401"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
-这是由一个回调函数[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举文件名称的集合，并确定每个文件的状态。  
+这是一个回调函数，用于通过[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举集合的文件的名称，并确定每个文件的状态。  
   
- `SccQueryChanges`函数提供的文件和指向的指针列表`QUERYCHANGESFUNC`回调。 源代码管理插件枚举给定的列表，并为每个列表中的文件提供 （通过此回调中） 的状态。  
+ `SccQueryChanges`函数提供一组文件和一个指向`QUERYCHANGESFUNC`回调。 源代码管理插件枚举给定的列表，并提供的列表中每个文件 （通过此回调） 的状态。  
   
 ## <a name="signature"></a>签名  
   
@@ -42,12 +42,12 @@ typedef BOOL (*QUERYCHANGESFUNC)(
  [in]`pvCallerData`参数由调用方 (IDE) 传递给[SccQueryChanges](../extensibility/sccquerychanges-function.md)。 源代码管理插件应作出任何假设内容的此值。  
   
  pChangesData  
- [in]指向[QUERYCHANGESDATA 结构](#LinkQUERYCHANGESDATA)结构描述的文件更改。  
+ [in]指向[QUERYCHANGESDATA 结构](#LinkQUERYCHANGESDATA)结构描述对文件的更改。  
   
 ## <a name="return-value"></a>返回值  
- IDE 返回相应的错误代码：  
+ IDE 将返回相应的错误代码：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|继续进行处理。|  
 |SCC_I_OPERATIONCANCELED|停止处理。|  
@@ -87,21 +87,21 @@ struct QUERYCHANGESDATA_W
   
 |代码|描述|  
 |----------|-----------------|  
-|`SCC_CHANGE_UNKNOWN`|无法告知发生了什么变化。|  
-|`SCC_CHANGE_UNCHANGED`|没有此文件的名称更改。|  
+|`SCC_CHANGE_UNKNOWN`|无法判断所发生的更改。|  
+|`SCC_CHANGE_UNCHANGED`|没有针对此文件的名称更改。|  
 |`SCC_CHANGE_DIFFERENT`|文件使用不同的标识，但数据库中存在相同的名称。|  
 |`SCC_CHANGE_NONEXISTENT`|在数据库中或本地文件不存在。|  
 |`SCC_CHANGE_DATABASE_DELETED`|从数据库中删除的文件。|  
-|`SCC_CHANGE_LOCAL_DELETED`|在本地删除的文件，但该文件仍存在数据库中。 如果无法确定该名称，则返回`SCC_CHANGE_DATABASE_ADDED`。|  
+|`SCC_CHANGE_LOCAL_DELETED`|本地删除的文件，但该文件仍存在在数据库中。 如果这不能确定，则返回`SCC_CHANGE_DATABASE_ADDED`。|  
 |`SCC_CHANGE_DATABASE_ADDED`|文件添加到数据库，但不存在本地。|  
-|`SCC_CHANGE_LOCAL_ADDED`|文件数据库中不存在，且是一个新的本地文件。|  
-|`SCC_CHANGE_RENAMED_TO`|文件重命名或移动在与数据库中`lpLatestName`。|  
-|`SCC_CHANGE_RENAMED_FROM`|文件重命名或从数据库中移动`lpLatestName`; 如果这是过于昂贵，若要跟踪，返回一个不同的标志，例如`SCC_CHANGE_DATABASE_ADDED`。|  
+|`SCC_CHANGE_LOCAL_ADDED`|文件数据库中不存在，并且是新的本地文件。|  
+|`SCC_CHANGE_RENAMED_TO`|文件重命名或移动的数据库中`lpLatestName`。|  
+|`SCC_CHANGE_RENAMED_FROM`|文件重命名或移动从数据库中`lpLatestName`; 如果这是过于昂贵而无法跟踪，请返回不同的标记，如`SCC_CHANGE_DATABASE_ADDED`。|  
   
  lpLatestName  
  此项的当前文件名称。  
   
-## <a name="see-also"></a>另请参阅  
- [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## <a name="see-also"></a>请参阅  
+ [通过 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [错误代码](../extensibility/error-codes.md)

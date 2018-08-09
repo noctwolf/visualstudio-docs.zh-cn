@@ -1,5 +1,5 @@
 ---
-title: 如何： 触发事件; 当编辑器失去焦点 |Microsoft 文档
+title: 如何： 触发事件; 当编辑器失去焦点 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbdcf30443bc548fd8d182db301cbc7119d8ceae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af6abf503bec94cb45638b1e059f545f005cb318
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127029"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639651"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 触发事件; 当编辑器失去焦点
-有时很必要知道当编辑器失去焦点的窗口帧上。 例如，你可能需要从代码窗口提取代码后在它不再聚焦于编辑器。 以下过程提供为接收通知的失去焦点的编辑器要遵循的步骤。  
+有时有必要知道当编辑器失去焦点的窗口框架上。 例如，可能需要在代码窗口中提取代码后对其焦点不再位于编辑器中。 以下过程提供了为接收通知的编辑器失去焦点要遵循的步骤。  
   
-### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>若要触发事件以响应编辑器失去焦点  
+## <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>触发事件以响应编辑器失去焦点  
   
-1.  通过获取监视选择事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>对象<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
+1.  通过获取监视所选内容的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>对象从<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
   
 2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>并将其提供你<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>对象。  
   
-3.  调用中<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>，查找`elementid==SEID_WindowFrame`。  
+3.  在调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>，查找`elementid==SEID_WindowFrame`。  
   
-4.  测试`varValueNew`两项操作的参数：  
+4.  测试`varValueNew`两个参数：  
   
-    1.  您正在寻找窗口框架。  
+    1.  要查找该窗口框架。  
   
-    2.  从该处程序失去选定范围向该窗口框架的点。
+    2.  您的程序会失去对该窗口框架的选择点。

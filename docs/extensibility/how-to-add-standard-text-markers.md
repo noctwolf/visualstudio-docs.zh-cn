@@ -1,5 +1,5 @@
 ---
-title: 如何： 添加标准文本标记 |Microsoft 文档
+title: 如何： 添加标准文本标记 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,44 +13,44 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fc5bf34c9b4200d8d7fef2d9f4a878ca604f886
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4dd34b14b89c78d01f1d4acab57f33014860d7ba
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127974"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638814"
 ---
 # <a name="how-to-add-standard-text-markers"></a>如何： 添加标准文本标记
-使用以下过程创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。  
+使用以下过程来创建一个与提供的默认文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。  
   
-### <a name="to-create-a-text-marker"></a>创建文本标记  
+## <a name="to-create-a-text-marker"></a>若要创建文本标记  
   
-1.  根据你使用的一个或两个-维坐标系，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法来创建新的文本标记。  
+1.  根据您使用一个或或双三维坐标系，调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法来创建新的文本标记。  
   
-     在此方法调用中，指定标记类型，要通过，创建标记的文本范围和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。 然后，此方法将指针返回到新创建的文本标记。 标记类型，将从<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>枚举。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口如果你想要将标记事件的通知。  
+     在此方法调用中，指定标记类型，范围内的文本，通过创建标记和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。 然后将此方法返回指向到新创建的文本标记。 标记类型取自<xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE>枚举。 指定<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口如果你想要通知的标记事件。  
   
     > [!NOTE]
-    >  主 UI 线程上创建文本标记。 核心编辑器依赖于要创建文本标记的文本缓冲区的内容和文本缓冲区不是线程安全。  
+    >  在主 UI 线程上创建文本标记。 核心编辑器依赖于要创建文本标记的文本缓冲区的内容，而文本缓冲区不是线程安全。  
   
-## <a name="adding-a-custom-command"></a>添加自定义命令  
- 实现`IVsTextMarkerClient`接口，并向它提供一个指针，从一个标记增强了以下几种方式的标记行为。 首先，这允许你为你的标记中提供提示，还可以执行命令。 这还允许您以接收单个标记的事件通知，并通过标记创建自定义上下文菜单。 使用以下过程将自定义命令添加到标记上下文菜单。  
+## <a name="add-a-custom-command"></a>添加自定义命令  
+ 实现`IVsTextMarkerClient`接口并向其提供一个指针，从标记增强了几种方式标记行为。 首先，这允许您在标记为提供提示，并执行命令。 这还允许您以接收各个标记的事件通知，并通过标记创建自定义上下文菜单。 使用以下过程将自定义命令添加到标记上下文菜单。  
   
-#### <a name="to-add-a-custom-command-to-the-context-menu"></a>若要将自定义命令添加到上下文菜单  
+### <a name="to-add-a-custom-command-to-the-context-menu"></a>若要将自定义命令添加到上下文菜单  
   
-1.  会显示上下文菜单之前，则环境将调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法和传递对您指向文本标记的指针的影响以及上下文菜单中的命令项的数量。  
+1.  上下文菜单显示之前，环境在调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetMarkerCommandInfo%2A>方法和通过您到文本标记的指针的影响和上下文菜单中的命令项的数目。  
   
-     例如，上下文菜单上的特定于断点的命令包括**删除断点**通过**新断点**，如下面的屏幕截图中显示。  
+     例如，上下文菜单上的特定于断点的命令包括**删除断点**通过**新断点**，如以下屏幕截图中显示。  
   
      ![标记上下文菜单](../extensibility/media/vsmarkercontextmenu.gif "vsMarkercontextmenu")  
   
-2.  传递回标识自定义命令的名称的一些文本。 例如，**删除断点**如果环境未已提供它可能是自定义命令。 你还将传递回该命令是受支持，可用并且已启用，并且/或者打开-关闭切换。 环境使用此信息来正确的方式在上下文菜单中显示的自定义的命令。  
+2.  传递回标识的自定义命令名称的一些文本。 例如，**删除断点**如果环境未已提供它可能是自定义命令。 你还将传递回该命令是否受支持、 可用且已启用，和/或开启 / 关闭切换。 环境使用此信息来正确的方式的上下文菜单中显示自定义命令。  
   
-3.  若要执行该命令，环境调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，你将指针传递到文本标记和上下文菜单中选择的命令数。  
+3.  若要执行该命令，环境调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法，您将指针传递到文本标记并从上下文菜单中选择的命令数。  
   
-     使用来自此调用的此信息来执行任何操作文本标记的自定义命令指示。  
+     使用来自此调用的此信息来执行任何操作的文本标记的自定义命令指示。  
   
-## <a name="see-also"></a>另请参阅  
- [使用文本标记用于旧 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
+## <a name="see-also"></a>请参阅  
+ [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)   
  [如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)   
  [如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)

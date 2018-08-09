@@ -1,5 +1,5 @@
 ---
-title: PromptForSaveOnCreation 元素 （Visual Studio 模板） |Microsoft 文档
+title: PromptForSaveOnCreation 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92be0bc15542010cfeea8a9ee70e69ff52e14163
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c5b04bfa04b1b6fd6599e5fdd06d6c58210f635
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137542"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638438"
 ---
-# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素（Visual Studio 模板）
-指定是否提示用户输入保存位置通过项目**新项目**对话框中创建项目时。 如果此元素设置为`true`，然后会提示用户输入保存位置; 如果`false`，然后将不再提示他们。 （即，创建一个临时项目。）  
+# <a name="promptforsaveoncreation-element-visual-studio-templates"></a>PromptForSaveOnCreation 元素 （Visual Studio 模板）
+指定是否提示用户输入保存位置通过项目**新的项目**对话框中创建项目时。 如果此元素设置为`true`，然后提示用户输入保存位置; 如果`false`，则不会提示。 （即，创建一个临时项目。）  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,7 +31,7 @@ ms.locfileid: "31137542"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <PromptForSaveOnCreation> true/false </PromptForSaveOnCreation>  
 ```  
   
@@ -58,10 +58,10 @@ ms.locfileid: "31137542"
 ## <a name="remarks"></a>备注  
  `PromptForSaveOnCreation` 是可选元素。 默认值为 `false`。  
   
- 临时项目是你可以创建和修改而不在磁盘上保存该项目的内容项目。  
+ 临时项目是指那些可以创建和修改而不在磁盘上保存该项目的内容。  
   
 ## <a name="example"></a>示例  
- 下面的示例设置的值`PromptForSaveOnCreation`等于`false`，该选项指定允许为临时项目创建的项目。  
+ 下面的示例设置的值`PromptForSaveOnCreation`等于`false`，它指定允许为创建为临时项目的项目。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -88,6 +88,6 @@ ms.locfileid: "31137542"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: 迁移 64 位调试器 COM 类注册 |Microsoft 文档
+title: 迁移 64 位调试器 COM 类注册 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/10/2016
 ms.technology:
@@ -11,24 +11,24 @@ ms.author: greggm
 manager: douge
 ms.workload:
 - greggm
-ms.openlocfilehash: 28516038170dd34028d11bf9a070cf265ecfd830
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6c7578ddbdf84a1520a732fb64380bb53e5359f9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140441"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637846"
 ---
 # <a name="migrate-64-bit-debugger-com-class-registration"></a>迁移 64 位调试器 COM 类注册
 
-调试器在注册表中的 COM 类注册 （通过使用 regasm，regsvr32，或直接向注册表写入） 并加载到 msvsmon.exe （远程调试器） 的扩展，它现在是可以无需提供此注册到 msvsmon要写入到注册表。 这会影响旧.NET 调试器表达式计算器或配置为在 msvsmon.exe 进程中加载的调试引擎。
+注册 COM 的调试器扩展的类在 HKEY_CLASSES_ROOT 中通过使用 regasm，regsvr32，或直接写入注册表和载入*msvsmon.exe* （远程调试器），现可提供此功能注册到 msvsmon 而无需向 HKEY_CLASSES_ROOT 写入。 这会影响旧版.NET 调试器表达式计算器或配置中加载的调试引擎*msvsmon.exe*过程。
 
 ## <a name="msvsmon-comclass-def"></a>msvsmon comclass def
 
-若要使用此方法，请添加 msvsmon (InstallDir:\Common7\IDE\Remote Debugger\x64) 旁边的 *.msvsmon comclass def.json 文件。
+若要使用此方法，将添加 **.msvsmon comclass def.json* msvsmon 旁边的文件 (InstallDir:* \Common7\IDE\Remote Debugger\x64*)。
 
-下面是一个管理，注册一个示例 msvsmon comclass def 文件和一个本机类：
+下面是注册一个托管的一个示例 msvsmon comclass def 文件和一个本机类：
 
-文件名： MyCompany.MyExample.msvsmon comclass def.json
+文件名： *MyCompany.MyExample.msvsmon comclass def.json*
 
 ```json
 {

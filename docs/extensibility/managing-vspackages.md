@@ -1,5 +1,5 @@
 ---
-title: 管理 Vspackage |Microsoft 文档
+title: 管理 VSPackages |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e3241bae84b89b53e30c3d0949e4f8551110e7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14aa17f4692857d650cb3bc9fe1a3498fc4f147a
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140129"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639551"
 ---
-# <a name="managing-vspackages"></a>管理 Vspackage
-在大多数情况下，你不必担心如何管理 Vspackage，因为项目和项模板注册，并自动加载包。 但是，在某些情况下，你可能需要管理包以了解更多。  
+# <a name="manage-vspackages"></a>管理 VSPackages
+在大多数情况下，您不必担心如何管理 Vspackage，因为项目和项模板注册，并自动加载包。 但是，在某些情况下您可能需要了解详细信息，以便管理您的包。  
   
-## <a name="using-the-experimental-instance"></a>使用实验实例  
+## <a name="use-the-experimental-instance"></a>使用实验实例  
  若要了解有关实验实例的详细信息，请参阅[实验实例](../extensibility/the-experimental-instance.md)。  
   
-## <a name="registering-and-unregistering-vspackages"></a>注册和注销 Vspackage  
+## <a name="register-and-unregister-vspackages"></a>注册和注销 Vspackage  
  若要了解如何注册和注销 Vspackage 和其他类型的扩展，请参阅[注册和注销 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
-## <a name="loading-a-vspackage"></a>加载 VSPackage  
- Vspackage 可以设置为自动上载时特定 CMDUICONTEXT GUID 已开启。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
+## <a name="load-a-vspackage"></a>加载 VSPackage  
+ Vspackage 可以设置为自动加载特定 CMDUICONTEXT GUID 处于开启状态。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
   
-## <a name="using-asyncpackage-to-load-vspackages-in-the-background"></a>使用 AsyncPackage 加载在后台的 Vspackage  
- AsyncPackage 类，可在 Visual Studio 中的更好 UI 响应能力后台线程上加载的包。 有关详细信息，请参阅[如何： 在后台加载 vspackage 的使用 AsyncPackage](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
+## <a name="use-asyncpackage-to-load-vspackages-in-the-background"></a>使用 AsyncPackage 在后台加载 Vspackage  
+ `AsyncPackage`类就能更好的 UI 响应能力，在 Visual Studio 中在后台线程上的包加载。 有关详细信息，请参阅[如何： 使用 AsyncPackage 加载 Vspackage，在后台](../extensibility/how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)。  
   
-## <a name="rule-based-ui-context-for-extensions"></a>扩展基于规则的 UI 上下文  
- 基于规则的 UI 上下文使扩展作者能够定义在其下激活 UI 上下文和关联的 Vspackage 加载的精确条件。 有关详细信息，请参阅[How to： 用于 Visual Studio 扩展基于使用规则的 UI 上下文](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
+## <a name="rule-based-ui-context-for-extensions"></a>扩展的基于规则的 UI 上下文  
+ 基于规则的 UI 上下文允许扩展创建者定义的 UI 上下文激活和相关联的 Vspackage 加载的精确条件。 有关详细信息，请参阅[如何： 使用 Visual Studio 扩展的基于规则的 UI 上下文](../extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)。  
   
-## <a name="diagnosing-extension-performance"></a>诊断扩展性能  
-扩展可能会影响启动和解决方案负载性能。 了解如何计算 Visual Studio 扩展影响，如何它可以进行分析本地测试如果扩展中可能显示为性能影响扩展。 有关详细信息，请参阅[如何： 诊断扩展性能](how-to-diagnose-extension-performance.md)。 
+## <a name="diagnose-extension-performance"></a>诊断扩展性能  
+扩展可能会影响启动和解决方案负载性能。 了解如何计算 Visual Studio 扩展的影响，以及如何可在进行分析本地测试作为一种性能影响扩展，扩展可能会显示。 有关详细信息，请参阅[如何： 诊断扩展性能](how-to-diagnose-extension-performance.md)。 
   
-## <a name="troubleshooting-vspackages"></a>故障排除的 Vspackage  
- 了解用于故障排除不会加载，或遇到错误的 Vspackage 的技术：[疑难解答 Vspackage](../extensibility/troubleshooting-vspackages.md)  
+## <a name="troubleshoot-vspackages"></a>对 Vspackage 进行故障排除  
+ 找出以进行故障排除 Vspackage 不加载或遇到错误的技术：[进行故障排除的 Vspackage](../extensibility/troubleshooting-vspackages.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)
