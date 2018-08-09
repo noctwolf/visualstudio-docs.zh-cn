@@ -17,14 +17,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b807c822f8c875e1c375201e21719c50c7287200
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 93fc473550db227fe51eeeadc14c3006653c7e07
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927303"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008364"
 ---
 # <a name="security-warnings"></a>安全警告
+
 安全警告支持更安全的库和应用程序。 这些警告帮助防止程序中出现安全漏洞。 如果你禁用其中的某个警告，你应当在代码中清楚标出原因，同时将你的开发项目通知指定的安全负责人。
 
 ## <a name="in-this-section"></a>本节内容
@@ -54,13 +55,8 @@ ms.locfileid: "31927303"
 |[CA2123：重写的链接请求应与基相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|该规则将一个方法与其基方法（该基方法为另一个类型中的接口或虚方法）相匹配，然后比较两者的链接请求。 如果与此规则冲突，则恶意调用方只需调用不安全的方法，即可跳过该链接要求。|
 |[CA2124：在外部 try 块中包装易受攻击的 finally 子句](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|公共或受保护方法中含有 try/finally 块。 finally 块似乎要重置安全状态，并且自身不包括在某个 finally 块中。|
 |[CA2126：类型链接请求需要继承请求](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|一个公共的非密封类型受链接要求保护，并且具有可重写的方法。 类型和方法都不受继承要求保护。|
-|[CA2136：成员不应有相互冲突的透明度注释](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|在完全透明的程序集中不能出现关键代码。 此规则分析完全透明的程序集在类型、字段和方法级别是否有任何 SecurityCritical 批注。|
-|[CA2147：透明方法不得使用安全断言](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|此规则分析完全透明或混合透明/关键的程序集中的所有方法和类型，并标记 Assert 的任何声明性或命令性用法。|
-|[CA2140：透明代码不得引用安全关键项](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|标有 SecurityTransparentAttribute 的方法调用标为 SecurityCritical 的非公共成员。 此规则分析混合透明/关键的程序集中的所有方法和类型，并标记透明代码中对未标为 SecurityTreatAsSafe 的非公共关键代码的任何调用。|
-
 |[CA2130：安全关键常量应是透明的](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|未对常数值实施透明强制，因为编译器内联常数值以便在运行时不需要查找。 常数字段应为安全透明的，以便代码评审阅者不会假定透明代码不能访问常数。|
-|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|[CA2131：安全关键类型不能参与类型等效](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|某个类型参与了类型等效性，该类型本身或该类型的成员或字段用 SecurityCriticalAttribute 特性标记。 对于任何关键的类型或包含参与类型等效的关键方法或字段的类型，将引发此规则。 当 CLR 检测到这样的类型时，在运行时将不会加载它并引发 TypeLoadException。 通常，仅在用户手动实现类型等效而不是通过依赖 tlbimp 和编译器进行类型等效时，才会触发此规则。|
+|[CA2131：安全关键类型不能参与类型等效](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|某个类型参与类型等效性，用 SecurityCriticalAttribute 特性标记该类型本身或成员或类型的字段。 对于任何关键的类型或包含参与类型等效的关键方法或字段的类型，将引发此规则。 当 CLR 检测到这样的类型时，在运行时将不会加载它并引发 TypeLoadException。 通常，仅在用户手动实现类型等效而不是通过依赖 tlbimp 和编译器进行类型等效时，才会触发此规则。|
 |[CA2132：默认构造函数必须至少与基类型默认构造函数具有同样的关键性](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|具有 SecurityCriticalAttribute 的类型和成员无法供 Silverlight 应用程序代码使用。 安全关键类型和成员只能供 .NET Framework for Silverlight 类库中的受信任代码使用。 因为派生类中的某个公共或受保护构造必须有与其基类相同或更大的透明度，所以不能从标记为 SecurityCritical 的类派生应用程序中的类。|
 |[CA2133：委托必须绑定到具有一致透明度的方法](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|将对一个具有以下特点的方法引发此警告：该方法将用 SecurityCriticalAttribute 标记的委托绑定到一个透明的或用 SecuritySafeCriticalAttribute 标记的方法。 还会对另一个具有以下特点的方法引发此警告：该方法将透明的或安全关键的委托绑定到一个关键方法。|
 |[CA2134：在重写基方法时，方法必须保持一致的透明度](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|当用 SecurityCriticalAttribute 标记的方法重写一个透明的或用 SecuritySafeCriticalAttribute 标记的方法时，将引发此规则。 当一个透明的或用 SecuritySafeCriticalAttribute 标记的方法重写一个用 SecurityCriticalAttribute 标记的方法时，也会引发此规则。 该规则在重写虚方法或实现接口时应用。|
@@ -68,19 +64,20 @@ ms.locfileid: "31927303"
 |[CA2136：成员不应有相互冲突的透明度注释](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|将透明特性从较大作用域的代码元素应用到较小作用域的元素。 具有较大作用域的代码元素的透明特性优于第一个元素中包含的代码元素的透明特性。 例如，用 SecurityCriticalAttribute 特性标记的类不能包含用 SecuritySafeCriticalAttribute 特性标记的方法。|
 |[CA2137：透明方法必须仅包含可验证 IL](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|某个方法包含无法验证的代码或通过引用返回类型。 在尝试通过安全透明代码执行无法验证的 MSIL（Microsoft 中间语言）时将引发此规则。 但是，此规则不包含完整的 IL 验证程序，而是使用试探法来捕捉 MSIL 验证的大部分冲突。|
 |[CA2138：透明方法不得调用具有 SuppressUnmanagedCodeSecurity 特性的方法](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|一个安全透明方法调用使用 SuppressUnmanagedCodeSecurityAttribute 特性标记的方法。|
-|[CA2139：透明方法不能使用 HandleProcessCorruptingExceptions 特性](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|对于任何透明的并尝试通过使用 HandleProcessCorruptedStateExceptionsAttribute 特性处理进程损坏异常的方法，将引发此规则。 进程损坏异常属于异常的 CLR 版本 4.0 异常分类（例如，AccessViolationException）。 HandleProcessCorruptedStateExceptionsAttribute 特性只由安全关键方法使用，并且如果应用于透明的方法，则将被忽略。|
-|[CA2140：透明代码不得引用安全关键项](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|用 SecurityCriticalAttribute 特性标记的代码元素是安全关键的。 透明方法不能使用安全关键元素。 如果透明类型尝试使用安全关键类型，则会引发 TypeAccessException、MethodAccessException 或 FieldAccessException。|
+|[CA2139：透明方法不能使用 HandleProcessCorruptingExceptions 特性](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|是透明的尝试处理进程损坏异常通过使用 HandleProcessCorruptedStateExceptionsAttribute 特性的任何方法将引发此规则。 进程损坏异常属于异常的 CLR 版本 4.0 异常分类，如<xref:System.AccessViolationException>。 HandleProcessCorruptedStateExceptionsAttribute 特性只由安全关键方法使用，并且如果应用于透明的方法，则将被忽略。|
+|[CA2140：透明代码不得引用安全关键项](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|标有 SecurityTransparentAttribute 的方法调用标为 SecurityCritical 的非公共成员。 此规则分析的所有方法和程序集混合透明和关键的并标记为非公共关键代码从透明代码未标为 SecurityTreatAsSafe 任何调用中的类型。|
 |[CA2141：透明方法不得满足 LinkDemand](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|安全透明方法调用未用 AllowPartiallyTrustedCallersAttribute (APTCA) 特性标记的程序集中的方法，或者安全透明方法满足某个类型或方法的 LinkDemand。|
 |[CA2142：不应使用 LinkDemand 保护透明代码](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|对于需要 LinkDemand 来访问它们的透明方法，将会引发此规则。 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。|
 |[CA2143：透明方法不应使用安全要求](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 安全透明代码应使用完整的需求来作出安全决策并且安全关键代码不应依赖透明代码以进行完全的请求。|
 |[CA2144：透明代码不应从字节数组加载程序集](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|透明代码安全检查不像关键代码的安全检查一样全面，因为透明代码不能执行安全敏感的操作。 从字节数组中加载的程序集在不透明的代码中可能不会被注意到，并且该字节数组可能包含确实需要审核的关键或更重要的安全关键代码。|
 |[CA2145：不应使用 SuppressUnmanagedCodeSecurityAttribute 修饰透明方法](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|用 SuppressUnmanagedCodeSecurityAttribute 特性修饰的方法有一个隐式的 LinkDemand 作用于调用它的任何方法。 此 LinkDemand 要求调用代码是关键安全的。 用 SecurityCriticalAttribute 特性标记使用 SuppressUnmanagedCodeSecurity 的方法使此要求对方法的调用方更加明显。|
 |[CA2146：类型必须至少与其基类型和接口一样关键](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|当派生类型具有的安全透明特性与其基类型或实现的接口不是同样关键时，将引发此规则。 只有关键类型可以从关键基类型派生或实现关键接口，并且只有关键或关键安全类型可以从安全关键基类型派生或实现关键安全接口。|
-|[CA2147：透明方法不得使用安全断言](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|标记为 SecurityTransparentAttribute 的代码未被授予足够的权限进行断言。|
-|[CA2149：透明方法不得调入本机代码](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|对于直接调用到本机代码中（例如通过使用 P/Invoke）的任何透明方法，将引发此规则。 违反此规则会导致级别 2 透明度模型中的 MethodAccessException，以及级别 1 透明度模型中对 UnmanagedCode 的完全要求。|
+|[CA2147：透明方法不得使用安全断言](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|此规则分析完全透明或混合透明/关键的程序集中的所有方法和类型，并标记 Assert 的任何声明性或命令性用法。|
+|[CA2149：透明方法不得调入本机代码](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|直接调用到本机代码，例如，通过使用 P/Invoke 的任何透明方法将引发此规则。 违反此规则会导致级别 2 透明度模型中的 MethodAccessException，以及级别 1 透明度模型中对 UnmanagedCode 的完全要求。|
 |[CA2151：具有关键类型的字段应是安全关键的](../code-quality/ca2151-fields-with-critical-types-should-be-security-critical.md)|若要使用安全关键类型，引用该类型的代码必须是安全关键或安全可靠关键。 即使引用是间接的，也需如此。 因此，具有安全透明字段或安全可靠关键字段具有误导性，因为透明代码仍然无法访问该字段。|
-|[CA5122 P/Invoke 声明不应为安全关键](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|当方法执行安全敏感性操作时，将被标记为 SecuritySafeCritical，但透明代码使用它们也是安全的。 透明代码决不能通过通过 P/Invoke 直接调用本机代码。 因此，将 P/Invoke 标记为安全关键将使透明代码无法调用它，并且会误导安全分析。|
+|[CA5122 P/Invoke 声明不应是安全关键](../code-quality/ca5122-p-invoke-declarations-should-not-be-safe-critical.md)|当方法执行安全敏感性操作时，将被标记为 SecuritySafeCritical，但透明代码使用它们也是安全的。 透明代码决不能通过通过 P/Invoke 直接调用本机代码。 因此，将 P/Invoke 标记为安全关键将使透明代码无法调用它，并且会误导安全分析。|
 |[CA2153：避免处理损坏状态异常](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指示该内存损坏进程中存在。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。|
 |[CA3075：不安全的 DTD 处理](../code-quality/ca3075-insecure-dtd-processing.md)|如果使用不安全的 DTDProcessing 实例或引用外部实体源，分析器可能会接受不受信任的输入并将敏感信息泄露给攻击者。|
 |[CA3076：不安全的 XSLT 脚本执行](../code-quality/ca3076-insecure-xslt-script-execution.md)|如果在 .NET 应用程序中不安全地执行可扩展样式表语言转换 (XSLT)，处理器可能会解析不受信任的 URI 引用，这种引用会把敏感信息泄露给攻击者，从而导致拒绝服务和跨站点攻击。|
 |[CA3077：API 设计、XML 文档和 XML 文本读取器中的不安全处理](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|当设计派生自 XMLDocument 和 XMLTextReader 的 API 时，请注意 DtdProcessing。  当引用或解析外部实体源或设置 XML 中的不安全值时，使用不安全的 DTDProcessing 实例可能会导致信息泄露。|
+|[CA3147： 将标记与 ValidateAntiForgeryToken 谓词处理程序](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|在设计时的 ASP.NET MVC 控制器，留意跨站点请求伪造攻击。 跨站点请求伪造攻击可以将恶意请求从身份验证的用户发送到 ASP.NET MVC 控制器。|
