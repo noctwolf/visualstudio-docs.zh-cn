@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b7d2cd30faa5cbc5b4f8626c17de77c68bdf8bae
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1de27441ea5d0a6af320c031e43affd2c2e14be0
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977110"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380765"
 ---
 # <a name="sample-project-for-creating-a-diagnostic-data-adapter"></a>用于创建诊断数据适配器的示例项目
 
@@ -324,7 +324,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 ```
 
-## <a name="compiling-the-code"></a>编译代码
+## <a name="compile-the-code"></a>编译代码
 
 ### <a name="to-create-the-code-project-for-this-diagnostic-adapter"></a>创建此诊断适配器的代码项目
 
@@ -354,7 +354,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 7.  添加程序集“Microsoft.VisualStudio.QualityTools.Common”。
 
-    1.  在解决方案资源管理器中右击“引用”，再选择“添加引用”。
+    1.  在解决方案资源管理器中，右键单击“引用”，并选择“添加引用”。
 
     2.  选择“浏览”并找到“Microsoft.VisualStudio.QualityTools.Common.dll”。
 
@@ -364,7 +364,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 8.  将本文档前面列出的诊断数据适配器类复制到你的类库的类中。 保存此类。
 
-9. 若要向项目添加用户控件，请在解决方案资源管理器中右键单击 MyDataCollector 项目，指向“添加”，然后选择“用户控件”。 选择“添加”。
+9. 要将用户控件添加到项目中，右键单击解决方案资源管理器中的 MyDataCollector 项目，指向“添加”，然后选择“用户控件”。 选择“添加”。
 
 10. 使用工具箱向该用户控件添加一个标签，并将 Text 属性改为“文件名:”。
 
@@ -379,7 +379,7 @@ namespace MyCompany.DiagnosticDataAdapters.ConfigurationEditors
 
 14. 将前面示例中的 XML 复制到该 XML 文件中。 保存该文件。
 
-15. 生成解决方案，然后将生成的程序集和 `App.config` 文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors 目录中。
+15. 生成解决方案，然后将生成的程序集和 App.config 文件复制到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors 目录中 。
 
 16. 创建使用此自定义诊断数据适配器的测试设置。 将测试设置配置为收集存在的文件。
 

@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e1eb6a5218f9d9ea7c853733690922846443ed4c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8f5f13915d248ff59e7a3ca1bde8ad4ee92c201e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31976736"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380347"
 ---
-# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理负载测试结果存储库中的负载测试结果
+# <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理“负载测试结果存储库”中的负载测试结果
 
 运行负载测试时，在运行负载测试期间收集的任何信息都存储到负载测试结果存储库中，这是一个 SQL 数据库。 负载测试结果储存库包含性能计数器数据和有关已记录错误的任何信息。 “结果储存库”数据库在安装控制器时创建，或者首次在本地运行负载测试时自动创建。 对于本地运行，如果没有负载测试架构，则将自动创建该数据库。
 
@@ -46,7 +46,7 @@ ms.locfileid: "31976736"
 |任务|关联主题|
 |-----------|-----------------------|
 |**设置负载测试结果存储库：** 可在 SQL 数据库中设置负载测试结果存储库。 **注意：** 在安装测试控制器时也可创建负载测试存储库。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。||
-|**选择并查看结果存储库：** 可选择一个特定结果存储库。 并不局限于使用本地结果存储区。 通常，负载测试是在一组远程代理计算机上运行。 代理或本地计算机生成的测试结果可保存到任何已创建负载测试结果存储区的 SQL 服务器中。 在这两种情况下，都必须使用“管理测试控制器”窗口标识负载测试结果的存储区。|-   [如何：选择负载测试结果存储库](../test/how-to-select-a-load-test-results-repository.md)<br />-   [如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)|
+|**选择并查看结果存储库：** 可选择一个特定结果存储库。 并不局限于使用本地结果存储区。 通常，负载测试是在一组远程代理计算机上运行。 代理或本地计算机生成的测试结果可保存到任何已创建负载测试结果存储区的 SQL 服务器中。 在这两种情况下，都必须使用“管理测试控制器”窗口标识负载测试结果的存储区。|-   [如何：选择负载测试结果存储库](../test/how-to-select-a-load-test-results-repository.md)<br />-   [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)|
 |**从存储库中删除负载测试结果：** 可以使用“打开和管理负载测试结果”对话框从“负载测试编辑器”中删除负载测试结果。|-   [如何：从存储库中删除负载测试结果](../test/how-to-delete-load-test-results-from-a-repository.md)|
 |**将结果导入和导出存储库：** 可在“负载测试编辑器”中导入和导出负载测试结果。|-   [如何：将负载测试结果导入存储库中](../test/how-to-import-load-test-results-into-a-repository.md)<br />-   [如何：从存储库导出负载测试结果](../test/how-to-export-load-test-results-from-a-repository.md)|
 
@@ -54,9 +54,9 @@ ms.locfileid: "31976736"
 
  [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- 可以使用“负载测试分析器”查看正在运行的负载测试和已完成的负载测试的结果。
+ 可以使用负载测试分析器查看正在运行的负载测试和已完成的负载测试的结果。
 
 ## <a name="see-also"></a>请参阅
 
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)
+- [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)

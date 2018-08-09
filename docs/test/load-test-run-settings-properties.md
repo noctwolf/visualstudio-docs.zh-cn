@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6862e6dc6ffe9e5a3a201390f419ffe04ea82ce4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 68e6fa138d2b6026a8831362d41cc7e8b407c471
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179380"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382547"
 ---
 # <a name="load-test-run-settings-properties"></a>负载测试运行设置属性
 
-负载测试的运行设置将确定各种其他设置，包括测试持续时间、结果集合详细程度以及测试运行时收集的计数器集。 可以为每个负载测试创建和存储多个运行设置，然后在运行测试时选择一个要使用的特定设置。 使用新建负载测试向导创建负载测试时，将向负载测试添加初始运行设置。
+负载测试的运行设置将确定各种其他设置，包括测试持续时间、结果集合详细程度以及测试运行时收集的计数器集。 可以为每个负载测试创建和存储多个运行设置，然后在运行测试时选择一个要使用的特定设置。 使用“新建负载测试向导”创建负载测试时，将向负载测试添加初始运行设置。
 
  下表介绍了用于负载测试运行设置的各种属性。 可以修改这些属性来满足特定负载测试需求。
 
@@ -42,17 +42,17 @@ ms.locfileid: "39179380"
 |属性|定义|
 |--------------|----------------|
 |最大测试日志数|指定为负载测试保存的最大测试日志数。 达到为最大测试日志数输入的值时，负载测试将停止收集日志。 因此，将在测试开头（而不是结尾）收集日志。 负载测试将继续运行，直到完成。|
-|为已完成测试保存日志的频率|指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。<br /><br /> 有关详细信息，请参阅[如何：为方案指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|为已完成测试保存日志的频率|指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。<br /><br /> 有关详细信息，请参阅[如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |测试未通过时保存日志|一个布尔值，它确定负载测试中测试未通过时是否保存测试日志。 默认值为 `True`。<br /><br /> 有关详细信息，请参阅[如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- 有关详细信息，请参阅[修改负载测试记录设置](../test/modify-load-test-logging-settings.md)。
+ 有关详细信息，请参阅[修改负载测试日志记录设置](../test/modify-load-test-logging-settings.md)。
 
 ## <a name="results-properties"></a>结果属性
 
 |属性|定义|
 |--------------|----------------|
 |存储类型|存储在负载测试中获得的性能计数器的方式。 提供了以下选项：<br /><br /> -   “数据库”- 需要具有“负载测试结果存储区”的 SQL 数据库。<br />-   无。|
-|计时详细信息存储|用于确定要在“负载测试结果存储区”中存储哪些详细信息。 三个值可用：<br /><br /> -   “AllIndividualDetails”- 在“负载测试结果存储区”中收集并存储在负载测试期间运行或发出的每个测试、事务和页的单个计时值。 如果你要在负载测试分析器中使用虚拟用户活动图，则必须使用此值。<br />     有关详细信息，请参阅[在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。<br />-   “None”- 不收集任何单个计时值。 这是 Visual Studio 2013 Update 4 及更高版本的默认值。<br />-   “StatisticsOnly”- 在“负载测试结果存储区”中只收集并存储统计信息，而不是在负载测试期间执行或发出的每个测试、事务和页的单个计时值。<br /><br /> 有关详细信息，请参阅[如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。|
+|计时详细信息存储|用于确定要在“负载测试结果存储区”中存储哪些详细信息。 三个值可用：<br /><br /> -   “AllIndividualDetails”- 在“负载测试结果存储区”中收集并存储在负载测试期间运行或发出的每个测试、事务和页的单个计时值。 如果要在负载测试分析器中使用“虚拟用户活动图”，则必须使用此值。<br />     有关详细信息，请参阅[在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。<br />-   “None”- 不收集任何单个计时值。 这是 Visual Studio 2013 Update 4 及更高版本的默认值。<br />-   “StatisticsOnly”- 在“负载测试结果存储区”中只收集并存储统计信息，而不是在负载测试期间执行或发出的每个测试、事务和页的单个计时值。<br /><br /> 有关详细信息，请参阅[如何：指定“计时详细信息存储”属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)。|
 
 ## <a name="sql-tracing-properties"></a>SQL 跟踪属性
 
@@ -88,7 +88,7 @@ ms.locfileid: "39179380"
 |WebTest 连接模型|对于在负载测试中运行的 Web 性能测试，此参数控制从负载测试代理到 Web 服务器之间的连接的用法。 有三个 Web 性能测试连接模型选项可用：<br /><br /> -   “每个用户的连接”模型模拟使用真实浏览器的用户的行为。 模拟 Internet Explorer 6 或 Internet Explorer 7 时，运行 Web 性能测试的每个虚拟用户都使用一个或两个到 Web 服务器的专用连接。 当在 Web 性能测试中发出第一个请求时，即建立第一个连接。 当一个页包含多个从属请求时，可能要使用第二个连接。 这些请求将使用两个连接并行发出。 在 Web 性能测试中的后续请求中，将重用这些连接。 当 Web 性能测试完成时，将关闭这些连接。 此模型的一个缺点是代理计算机上保持打开状态的连接的数量可能很多（高达用户负载的两倍）。 因此，支持此高连接计数所需的资源可能会限制可从单个驱动负载测试代理驱动的用户负载。 模拟 Internet Explorer 8 时，支持六个并发连接。<br />-   “连接池”模型在多个虚拟 Web 性能测试用户之间共享 Web 服务器的连接，从而节约负载测试代理上的资源。 如果用户负载大于连接池大小，则不同虚拟用户运行的 Web 性能测试将共享同一连接。 这意味着，当一个 Web 性能测试正在使用连接时，另一个 Web 性能测试可能需要等待才能发出请求。 负载测试性能计数器 Average Connection Wait Time（平均连接等待时间）将跟踪 Web 性能测试在提交请求之前的平均等待时间。 此数字应小于页的平均响应时间。 否则，连接池大小可能会太小。<br />-   “每个测试迭代的连接”模型指定对每个测试迭代使用专用连接。|
 |WebTest 连接池大小|这指定要在负载测试代理和 Web 服务器之间建立的最多连接数。 此参数只适用于“连接池”模型。|
 
-##  <a name="LoadTestRunSettingsHowToChange"></a> 更改运行设置属性
+##  <a name="change-run-setting-properties"></a>更改运行设置属性
  可以向具有不同属性设置的负载测试中添加更多的运行设置，以便能够在不同条件下运行负载测试。 例如，可以添加新测试设置，并使用一个不同的采样率，或指定一个较长的运行持续时间。 一次只能使用一个运行设置，并且必须通过将要使用的运行设置标记为活动来指定该运行设置。 有关示例，请参阅[如何：为负载测试选择活动运行设置](../test/how-to-select-the-active-run-setting-for-a-load-test.md)。
 
 ### <a name="to-change-run-settings"></a>更改运行设置

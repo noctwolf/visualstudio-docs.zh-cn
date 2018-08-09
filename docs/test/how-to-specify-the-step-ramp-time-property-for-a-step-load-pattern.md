@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 20eb70b6c3c6308e41599e65a4b00a3e4043e8d1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1596c96662870118b8fa721f89b8a9ef1c6b831f
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973599"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381528"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>如何：为分级负载模式指定单步负载增加时间属性
 
@@ -43,7 +43,7 @@ ms.locfileid: "31973599"
 这些设置可使负载测试在 100、200、300 直至 2000 个用户的用户负载下运行 30 分钟（1800 秒）。
 
 > [!NOTE]
-> “单步负载增加时间”属性是这些属性中唯一无法在新建负载测试向导中选择的属性。
+> “单步负载增加时间”属性是这些属性中唯一无法在“新建负载测试向导”中选择的属性。
 
 通过“单步负载增加时间”属性，可从某一步逐渐增加到下一步（例如，从 100 个用户增加到 200 个用户）而不是立即增加。 在此示例中，用户负载将在 20 秒内从 100 个用户增加到 200 个用户，即每秒增加 5 个用户。
 

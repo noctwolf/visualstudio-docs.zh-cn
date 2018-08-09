@@ -1,7 +1,7 @@
 ---
 title: 在 Azure App Service 上配置 Python
 description: 如何在 Azure 应用服务上安装 Python 解释器和库，并配置 Web 应用程序，以正确引用该解释器。
-ms.date: 09/13/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,24 +12,25 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a71ea2210bfc6c56a235f194354c3279c8e7370
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 406a35ff484b5a6759831b76c2417bf5fcb2d12c
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33876990"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310067"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service"></a>如何在 Azure App Service 上设置 Python 环境
 
-[Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
+> [!Important]
+> 如本文所述，Microsoft 正计划弃用应用服务的 Python 扩展，支持直接部署到 Linux 上的应用服务。 在此期间，扩展仍可继续使用。 若要部署到 Linux 上的应用服务，请参阅[在用于容器的 Web 应用中部署 Python Web 应用](/azure/app-service/containers/quickstart-python)。
 
-Azure App Service 上的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本文所述，随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
+
+  [Azure App Service](https://azure.microsoft.com/services/app-service/) 是适用于 Web 应用的平台即服务产品/服务，这些应用包括通过浏览器访问的站点、用户自己的客户端使用的 REST API 或事件触发的处理过程。 应用服务完全支持使用 Python 实现应用。
+
+Azure 应用服务的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本文所述，随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
 
 > [!Tip]
 > 默认情况下，虽然应用服务在服务器上的根文件夹中安装了 Python 2.7 和 Python 3.4，但是不能在这些环境中自定义或安装包，也不应依赖于它们的存在。 如本文所述，应依赖于控制的站点扩展。
-
-> [!Important]
-> 本文所述的过程会随时更改，尤其是出于改进目的。 将在 [Microsoft 博客上的 Python 工程](https://blogs.msdn.microsoft.com/pythonengineering/)中发布更改。
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>通过 Azure 门户选择 Python 版本
 

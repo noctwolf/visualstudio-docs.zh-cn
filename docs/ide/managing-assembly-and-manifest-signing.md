@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bef64670c3c2631e779fda0f48810ce502db72b1
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: fb2113ed091d99ed66b13955ea468c376bba9490
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844420"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379561"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>管理程序集和清单签名
 
@@ -59,7 +59,7 @@ ms.locfileid: "34844420"
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何对 Visual Studio 中的程序集进行签名
 
-若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 project properties，或在“解决方案资源管理器”窗口中按 Alt+Enter）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。
+若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在解决方案资源管理器中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 project properties，或在解决方案资源管理器中按 Alt+Enter）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。
 
 指定密钥文件。 如果选择新建密钥文件，始终以 .pfx 格式创建新密钥文件。 需要为新文件设置名称和密码。
 

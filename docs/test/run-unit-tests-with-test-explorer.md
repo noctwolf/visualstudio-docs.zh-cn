@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3733588c1601f07c23ce9d85be9367a148e503de
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977786"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382329"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -25,7 +25,7 @@ ms.locfileid: "38977786"
 
 Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框架。 但是，测试资源管理器还可以运行任何实现了测试资源管理器适配器的单元测试框架。 若要详细了解如何安装第三方单元测试框架，请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
 
-测试资源管理器可从解决方案的多个测试项目以及生产代码项目包含的测试类中运行测试。 测试项目可以使用不同的单元测试框架。 如果待测试的代码是为 .NET Framework 编写的，则可以面向 .NET Framework 的任何语言编写测试项目，而不考虑目标代码的语言。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。 有关详细信息，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
+测试资源管理器可从解决方案的多个测试项目以及生产代码项目包含的测试类中运行测试。 测试项目可以使用不同的单元测试框架。 如果待测试的代码是为 .NET Framework 编写的，则可以面向 .NET Framework 的任何语言编写测试项目，而不考虑目标代码的语言。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。 有关详细信息，请参阅[编写适用于 C/C++ 的单元测试](writing-unit-tests-for-c-cpp.md)。
 
 ## <a name="run-tests-in-test-explorer"></a>在测试资源管理器中运行测试
 
@@ -35,7 +35,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 当你运行、编写以及重新运行测试时，测试资源管理器将在 **“失败的测试”**、 **“通过的测试”**、 **“跳过的测试”** 和 **“未运行的测试”** 默认组中显示结果。 你可以更改测试资源管理器对测试进行分组的方式。
 
-你可以从测试资源管理器的工具栏执行查找、组织和运行测试等大部分工作。
+可从测试资源管理器的工具栏执行查找、组织和运行测试等大部分工作。
 
 ![从测试资源管理器工具栏运行测试](../test/media/ute_toolbar.png)
 
@@ -51,13 +51,13 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 - 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
-测试运行时，测试资源管理器窗口顶部的“通过/失败”条动态显示。 测试运行结束时，如果所有测试均通过，则“通过/失败”条将变为绿色；如果有测试失败，则变为红色。
+测试运行时，测试资源管理器窗口顶部的“通过/失败”条将动态显示。 测试运行结束时，如果所有测试均通过，则“通过/失败”条将变为绿色；如果有测试失败，则变为红色。
 
 ### <a name="run-tests-after-every-build"></a>每次生成后运行测试
 
 |Button|描述|
 |-|-|
-|![生成后运行](../test/media/ute_runafterbuild_btn.png)|若要在每个本地生成后运行你的单元测试，请在标准菜单上选择 **“测试”** ，然后在测试资源管理器工具栏上选择 **“生成后运行测试”** 。|
+|![生成后运行](../test/media/ute_runafterbuild_btn.png)|要在每个本地生成后运行单元测试，请在标准菜单上选择“测试”，然后在测试资源管理器的工具栏上选择“生成后运行测试”。|
 
 ## <a name="view-test-results"></a>查看测试结果
 
@@ -127,7 +127,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 你可以使用测试资源管理器筛选器来限制你所查看和运行项目中的测试方法。
 
-在测试资源管理器搜索框中键入字符串并选择 Enter 时，测试列表被筛选为仅显示完全限定名包含该字符串的测试。
+在测试资源管理器的搜索框中键入字符串并选择 Enter 时，测试列表将筛选为仅显示包含该字符串的完全限定名的测试。
 
 按其他条件进行筛选：
 
@@ -162,15 +162,15 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 ## <a name="create-custom-playlists"></a>创建自定义播放列表
 
- 你可以创建和保存想要作为组运行或查看的测试列表。 当你选择播放列表时，列表中的测试将显示在“测试资源管理器”中。 你可以将一个测试添加到多个播放列表，并且当你选择默认的 **“所有测试”** 播放列表时，项目中的所有测试都可用。
+ 你可以创建和保存想要作为组运行或查看的测试列表。 选择播放列表时，列表中的测试将显示在测试资源管理器中。 你可以将一个测试添加到多个播放列表，并且当你选择默认的 **“所有测试”** 播放列表时，项目中的所有测试都可用。
 
  ![选择播放列表](../test/media/ute_playlist.png)
 
- **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，依次选择 **“添加到播放列表”**、 **“新建播放列表”**。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
+ **若要创建播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，依次选择“添加到播放列表” > “新建播放列表”。 保存具有该名称的文件，并定位到你在 **“创建新的播放列表”** 对话框中指定的位置。
 
  **若要将测试添加到播放列表**，请在测试资源管理器中选择一个或多个测试。 在上下文菜单中，选择 **“添加到播放列表”**，然后选择你希望将测试添加到的播放列表。
 
- **若要打开播放列表**，请从 Visual Studio 菜单中选择“测试播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
+ 要打开播放列表，请从 Visual Studio 菜单中依次选择“测试” > “播放列表”，然后从“最近使用的播放列表”列表中选择，或选择“打开播放列表”以指定播放列表的名称和位置。
 
  如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -187,11 +187,11 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。
 
- 有关该调试器的详细信息，请参阅 [Debugging in Visual Studio](../debugger/debugging-in-visual-studio.md)。
+ 有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>诊断测试方法性能问题
 
- 若要诊断测试方法花费过多时间的原因，请在测试资源管理器中选择该方法，然后在上下文菜单中选择“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
+ 要诊断测试方法花费过多时间的原因，请在测试资源管理器中选择该方法，然后在上下文菜单中选择“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。
 
 ### <a name="analyze-unit-test-code-coverage"></a>分析单元测试代码覆盖率
 
@@ -207,7 +207,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
     - **所有测试** 在解决方案中运行所有测试方法。
 
-代码覆盖率结果窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
+“代码覆盖率结果”窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。
 
 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 

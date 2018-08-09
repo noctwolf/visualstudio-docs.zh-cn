@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ff025118d0908fe35e8f3fd54a8e467c6340d419
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 77c44b3fda689b8b2710f959decf362f06c66424
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178860"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381812"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从储存库中删除负载测试结果
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>如何：从存储库中删除负载测试结果
 
 运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "39178860"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：从储存库导出负载测试结果](../test/how-to-export-load-test-results-from-a-repository.md)
-- [管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [如何：从存储库导出负载测试结果](../test/how-to-export-load-test-results-from-a-repository.md)
+- [管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：将负载测试结果导入储存库中](../test/how-to-import-load-test-results-into-a-repository.md)
+- [如何：将负载测试结果导入存储库中](../test/how-to-import-load-test-results-into-a-repository.md)

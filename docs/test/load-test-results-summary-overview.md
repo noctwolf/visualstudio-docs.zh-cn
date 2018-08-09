@@ -16,16 +16,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5e86b889f63dd46507de52505eec7f5a2125b04f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: fd184f292a063823b6513e7b6a1817e2477db303
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175928"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380559"
 ---
 # <a name="load-test-results-summary-overview"></a>负载测试结果摘要概述
 
-运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
+运行负载测试后，可以查看负载测试摘要以快速了解结果。 负载测试摘要以简洁、易读的格式提供关键结果。 你还可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。 当你从以前运行的负载测试打开负载测试结果时，负载测试摘要也是默认视图。 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。
 
  ![“摘要”视图](../test/media/ltest_summaryview.png)
 
@@ -60,9 +60,9 @@ ms.locfileid: "39175928"
 
 - 错误
 
-## <a name="test-run-information"></a>有关测试运行的信息
+## <a name="test-run-information"></a>测试运行信息
 
-“有关测试运行的信息”一节包含有关运行的一般信息，包括测试的名称、开始时间和结束时间以及运行测试的控制器。 此节还包含有关运行的可选说明，这些说明是您在运行负载测试时添加的。
+“有关测试运行的信息”一节包含有关运行的一般信息，包括测试的名称、开始时间和结束时间以及运行测试的控制器。 此节还包含有关运行的可选说明，这些说明是你在运行负载测试时添加的。
 
 ## <a name="overall-results"></a>整体结果
 
@@ -111,7 +111,7 @@ ms.locfileid: "39175928"
 
 -   在 \< 秒之内完成了事务总数的 95%。
 
-## <a name="system-under-test-resources"></a>测试中系统的资源
+## <a name="system-under-test-resources"></a>受测系统的资源
 
 “测试中系统的资源”一节包含一个计算机列表，这些计算机是为其生成负载的一组目标计算机。 除代理或控制器之外，这些计算机还包括您从中收集计数器集的任何计算机。 此节显示计算机名称、处理器时间百分比 (%) 和可用内存。 可以选择某个计算机名称以打开“测试中的系统”关系图，并查看不同时间的资源使用情况。 有关详细信息，请参阅[在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)。
 
@@ -132,7 +132,7 @@ ms.locfileid: "39175928"
 > [!NOTE]
 > 通过选择此节标题左侧的箭头，可以折叠和展开此节。
 
-## <a name="printing-a-summary"></a>打印摘要
+## <a name="print-a-summary"></a>打印摘要
 
 通过选择负载测试摘要上的快捷菜单中的“打印”，可以打印该负载测试摘要。 通过选择负载测试摘要上的快捷菜单中的“打印预览”，可以预览打印内容。 还可以直接从预览屏幕上进行打印。
 

@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 080bdfd79ee1fce4015fc2db9a695cb55c417165
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9e9f3513cb5d7bb03f51be68d1b44b8df161a088
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178765"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381499"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>如何：从储存库导出负载测试结果
+# <a name="how-to-export-load-test-results-from-a-repository"></a>如何：从存储库导出负载测试结果
 
 运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "39178765"
 
      如果存在负载测试结果，它们将出现在“负载测试结果”列表中。 其中包括“时间”、“持续时间”、“用户”、“结果”、“测试”和“说明”列。 “测试”列包含测试的名称，“说明”列包含运行测试之前添加的可选说明。 “说明”列显示在“分析注释”中为此测试结果输入的简短说明。
 
-5.  在“负载测试结果”列表中，选择结果。 可以使用 Shift 键、Ctrl 键或同时使用这两个键来选择多个结果，并将它们导出到一个文件中。
+5.  在“负载测试结果”列表中，选择结果。 可以使用 Shift 键、Ctrl 键或同时使用这两个键来选择多个结果，并将它们导出到单个文件中。
 
 6.  选择“导入”。
 
@@ -55,7 +55,7 @@ ms.locfileid: "39178765"
 
 ## <a name="see-also"></a>请参阅
 
-- [管理负载测试结果储存库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [如何：从储存库中删除负载测试结果](../test/how-to-delete-load-test-results-from-a-repository.md)
+- [管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)
+- [如何：从存储库中删除负载测试结果](../test/how-to-delete-load-test-results-from-a-repository.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [如何：将负载测试结果导入储存库中](../test/how-to-import-load-test-results-into-a-repository.md)
+- [如何：将负载测试结果导入存储库中](../test/how-to-import-load-test-results-into-a-repository.md)

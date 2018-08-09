@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fca48c45af5ec93519e1688ec54677c233d2fe17
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8359aa76dc2f62afb63f6a36984492210d9aeeff
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178314"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380009"
 ---
 # <a name="how-to-prevent-time-outs-for-diagnostic-data-adapters"></a>如何：防止诊断数据适配器超时
 
 如果在测试设置中使用诊断数据适配器，则启动测试运行时，会因以下某种原因发生超时：
 
--   测试控制器服务未在测试控制器计算机上运行。 可能必须重新启动服务。 有关如何确定测试控制器和管理测试代理的详细信息，请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
+-   测试控制器服务未在测试控制器计算机上运行。 可能必须重新启动服务。 有关如何确定测试控制器和管理测试控制器的详细信息，请参阅[通过 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
 
 -   如果在远程计算机上收集数据，则防火墙可能会阻止 Microsoft 测试管理器。 运行 Microsoft 测试管理器的计算机必须接受从测试控制器传入的连接。 当 Microsoft 测试管理器因防火墙阻止而未接收来自控制器的消息时，会发生超时。 必须检查运行 Microsoft 测试管理器的计算机上的防火墙设置。
 
@@ -43,7 +43,7 @@ Microsoft 测试管理器的配置文件名称为 mtm.exe.config。该文件位�
 
 -   QTDCAgent32.exe.config
 
-如果您运行手动测试并收集环境中的数据，则在创建 Bug 时或测试用例完成时，诊断数据适配器已经收集的任何数据都将传输到正在运行手动测试的计算机。 如果您已收集大量数据或者您的网络连接缓慢，则花费的时间可能会长于 60 秒的默认值。 例如，如果已将 IntelliTrace 适配器配置为收集 IntelliTrace 事件并调用许多进程的信息，则此类数据传输时间可能会超过默认超时。若要增加此值，可使用以下过程更新 mtm.exe.config。
+如果你运行手动测试并收集环境中的数据，则在创建 Bug 时或测试用例完成时，诊断数据适配器已经收集的任何数据都将传输到正在运行手动测试的计算机。 如果您已收集大量数据或者您的网络连接缓慢，则花费的时间可能会长于 60 秒的默认值。 例如，如果已将 IntelliTrace 适配器配置为收集 IntelliTrace 事件并调用许多进程的信息，则此类数据传输时间可能会超过默认超时。若要增加此值，可使用以下过程更新 mtm.exe.config。
 
 如果测试运行程序活动超时，或者某个测试代理超时，则会显示错误消息。测试代理的错误消息包含有关超时的测试代理计算机的信息。使用下面的过程可根据接收到的错误消息，来更新配置文件。
 
@@ -76,7 +76,7 @@ Microsoft 测试管理器的配置文件名称为 mtm.exe.config。该文件位�
         <!-- End: Test execution settings -->
     ```
 
-5.  若要增加诊断数据适配器等待事件完成的时间，请增大键 DataCollectorEventTimeoutInSeconds 的值
+5.  要增加诊断数据适配器等待事件完成的时间，请增大 DataCollectorEventTimeoutInSeconds 键的值。
 
 6.  如果超时错误消息是针对测试运行程序活动，则必须增大键 RunOperationTimeoutInSeconds 的值。
 

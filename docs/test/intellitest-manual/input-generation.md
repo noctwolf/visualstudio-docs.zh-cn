@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cbabbe7eed62506bc80cbf112c85cda002e409dd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31977772"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341878"
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 
@@ -72,7 +72,7 @@ IntelliTest 的[约束求解器](#constraint-solver)确定基元类型（如字�
 IntelliTest 可[创建现有 .NET 类的实例](#existing-classes)，也可使用 IntelliTest 自动[创建 mock 对象](#parameterized-mocks)，该对象根据使用率以不同的方式实现特定接口和行为。
 
 <a name="existing-classes"></a>
-## <a name="instantiating-existing-classes"></a>实例化现有类
+## <a name="instantiate-existing-classes"></a>实例化现有类
 
 **有什么问题？**
 
@@ -113,7 +113,7 @@ IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别�
 
 mock 对象会实现接口（或扩展非密封类）。 它不表示真正的实现，而只是一个允许使用 mock 对象执行测试的快捷方式。 它的行为手动定义为每个使用它的测试用例的一部分。 许多工具使定义 mock 对象及其预期行为变得简单，但仍必须手动定义此行为。
 
-IntelliTest 可生成值，而不是 mock 对象中的硬编码值。 就像它启用[参数化单元测试](test-generation.md#parameterized-unit-testing)一样，IntelliTest 还启用参数化 mock。
+IntelliTest 可生成值，而不是 mock 对象中的硬编码值。 就像它启用[参数化单元测试](test-generation.md#parameterized-unit-testing)一样，IntelliTest 还启用参数化模拟。
 
 参数化 mock 具有两个不同的执行模式：
 
@@ -135,7 +135,7 @@ IntelliTest 运行测试和受测程序时，将监视执行的指令。 特别�
 IntelliTest 尝试最大程度地减小触发感兴趣的程序行为所需的数组和字符串的大小。
 
 <a name="additional-inputs"></a>
-## <a name="obtaining-additional-inputs"></a>获取其他输入
+## <a name="obtain-additional-inputs"></a>获取其他输入
 
 可使用 [PexChoose](static-helper-classes.md#pexchoose) 静态类获取测试的其他输入，并且可使用它实现[参数化模拟](#parameterized-mocks)。
 

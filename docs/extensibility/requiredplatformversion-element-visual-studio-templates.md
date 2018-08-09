@@ -1,5 +1,5 @@
 ---
-title: RequiredPlatformVersion 元素 （Visual Studio 模板） |Microsoft 文档
+title: RequiredPlatformVersion 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a8dc6fa57dbe88ce1e30e9be58105f28fe5641
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e040faf4d66d42b107777fd4d57f26c80d040a48
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136167"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635948"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素（Visual Studio 模板）
-指定项目模板正常工作所需的操作系统的最低版本。 此元素用于为创建的项目模板[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用。  
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素 （Visual Studio 模板）
+指定项目模板正常工作所需的操作系统的最低版本。 此元素还用于创建的项目模板[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]应用。  
   
- `RequiredPlatformVersion`值直接与操作系统的版本进行比较。 如果`RequiredPlatformVersion`高于操作系统版本中未显示的模板**新项目**对话框。 若要为指定模板[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高版本，请设置`RequiredPlatformVersion`到 6.2.0。 若要为指定模板[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高版本，请设置 RequiredPlatformVersion 为 6.3.0。  
+ `RequiredPlatformVersion`值直接与操作系统的版本进行比较。 如果`RequiredPlatformVersion`高于操作系统版本中未显示的模板**新建项目**对话框。 若要指定的模板[!INCLUDE[win8](../debugger/includes/win8_md.md)]或更高版本，请设置`RequiredPlatformVersion`6.2.0 到。 若要指定的模板[!INCLUDE[win81](../debugger/includes/win81_md.md)]或更高版本，请设置`RequiredPlatformVersion`到 6.3.0。  
   
- 指定的模板`RequiredPlatformVersion`= 8 是以前的客户与兼容[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]模板。  
+ 指定的模板`RequiredPlatformVersion`= 8 是与以前的客户兼容[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]模板。  
   
  VSTemplate  
 TemplateData  
@@ -73,7 +73,7 @@ RequiredPlatformVersion
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [TargetPlatformName 元素 （Visual Studio 模板）](../extensibility/targetplatformname-element-visual-studio-templates.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

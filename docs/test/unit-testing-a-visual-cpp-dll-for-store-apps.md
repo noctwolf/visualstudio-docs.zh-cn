@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: d3b010998a56771cab1416c19a311f8bcbcf855b
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: cf79b0d478ec68391991fc1fb13bc228a678e2ed
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117623"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380507"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>如何测试 Visual C++ DLL
 
@@ -63,7 +63,7 @@ ms.locfileid: "37117623"
 
 2.  在“测试”菜单上，选择“运行”，然后选择“全部运行”。
 
-     将生成并运行测试项目。 随即显示“测试资源管理器”窗口，并且测试列出在“通过的测试”下。 窗口底部的“摘要”窗格将提供有关所选测试的其他详细信息。
+     将生成并运行测试项目。 随即显示测试资源管理器窗口，并且测试在“通过的测试”下列出。 窗口底部的“摘要”窗格将提供有关所选测试的其他详细信息。
 
      ![测试资源管理器](../test/media/ute_cpp_testexplorer_testmethod1.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "37117623"
 
 2.  在“添加新项目”对话框中，选择“DLL (UWP 应用)”。
 
-3.  将以下代码添加到 **RooterLib.h** 文件中：
+3.  将以下代码添加到 *RooterLib.h* 文件中：
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -107,11 +107,11 @@ ms.locfileid: "37117623"
 
          ![添加预处理器符号定义](../test/media/ute_cpp_windows_addpreprocessorsymbol.png)
 
-    2.  在 RooterLib 属性页对话框中，依次展开“配置属性”、“C++”，然后选择“预处理器”。
+    2.  在“RooterLib 属性页”对话框中，展开“配置属性”，展开“C++”并选择“预处理器”。
 
     3.  从“预处理器定义”列表选择“\<编辑...>”，然后在“预处理器定义”对话框中添加 `ROOTERLIB_EXPORTS`。
 
-5.  添加已声明函数的最小实现。 打开 **RooterLib.cpp** 并添加以下代码：
+5.  添加已声明函数的最小实现。 打开 *RooterLib.cpp* 并添加以下代码：
 
     ```cpp
     // constructor
@@ -133,15 +133,15 @@ ms.locfileid: "37117623"
 
     1.  在解决方案资源管理器中，选择“RooterLibTests”项目，然后选择快捷菜单上的“引用”。
 
-    2.  在 RooterLib 项目属性对话框上，展开“通用属性”，然后选择“框架和引用”。
+    2.  在“RooterLib 项目属性”对话框上，展开“通用属性”，然后选择“框架和引用”。
 
     3.  选择“添加新引用”
 
     4.  在“添加引用”对话框上，展开“解决方案”，然后选择“项目”。 然后选择“RouterLib”项。
 
-2.  将 RooterLib 头文件包括到 **unittest1.cpp** 中。
+2.  将 RooterLib 头文件包括到 *unittest1.cpp* 中。
 
-    1.  打开 **unittest1.cpp**。
+    1.  打开 *unittest1.cpp*。
 
     2.  将此代码添加到以下 `#include "CppUnitTest.h"` 行：
 
@@ -149,7 +149,7 @@ ms.locfileid: "37117623"
         #include "..\RooterLib\RooterLib.h"
         ```
 
-3.  添加一个使用 imported 函数的测试。 将以下代码添加到 **unittest1.cpp**：
+3.  添加一个使用 imported 函数的测试。 将以下代码添加到 *unittest1.cpp*：
 
     ```cpp
     TEST_METHOD(BasicTest)
@@ -174,7 +174,7 @@ ms.locfileid: "37117623"
 
      新测试将显示在测试资源管理器的“未运行的测试”节点中。
 
-5.  在“测试资源管理器”中，选择 **“全部运行”**。
+5.  在“测试资源管理器”中，选择“全部运行”。
 
      ![已通过基本测试](../test/media/ute_cpp_testexplorer_basictest.png)
 
@@ -203,7 +203,7 @@ ms.locfileid: "37117623"
     >
     > 当用户更改其要求时，请禁用不再正确的测试。 编写新测试，并以相同的增量方式使他们每次运行一个。
 
-2.  在“测试资源管理器”中，选择 **“全部运行”**。
+2.  在“测试资源管理器”中，选择“全部运行”。
 
 3.  测试将不会通过。
 
@@ -212,7 +212,7 @@ ms.locfileid: "37117623"
     > [!TIP]
     > 验证每个测试是否在编写之后立即失败。 这有助于避免编写从不失败的测试这一易犯错误。
 
-4.  增强受测代码，以便新测试通过。 将以下内容添加到 **RooterLib.cpp**：
+4.  增强受测代码，以便新测试通过。 将以下内容添加到 *RooterLib.cpp*：
 
     ```cpp
     #include <math.h>
@@ -233,7 +233,7 @@ ms.locfileid: "37117623"
 
     ```
 
-5.  生成解决方案，然后在测试资源管理器中选择“全部运行” 。
+5.  生成解决方案，然后在“测试资源管理器”中选择“全部运行”。
 
      两个测试均通过。
 
@@ -243,7 +243,7 @@ ms.locfileid: "37117623"
 
 ##  <a name="Debug_a_failing_test"></a> 调试失败测试
 
-1.  将另一个测试添加到 **unittest1.cpp**：
+1.  将另一个测试添加到 *unittest1.cpp*：
 
     ```cpp
     // Verify that negative inputs throw an exception.
@@ -275,9 +275,9 @@ ms.locfileid: "37117623"
 
     ```
 
-2.  在“测试资源管理器”中，选择 **“全部运行”**。
+2.  在“测试资源管理器”中，选择“全部运行”。
 
-     测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。
+     测试将不会通过。 在“测试资源管理器”中选择测试名称。 失败的断言会突出显示。 失败消息会显示在“测试资源管理器”的“详细信息”窗格中。
 
      ![NegativeRangeTests 未通过](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -289,7 +289,7 @@ ms.locfileid: "37117623"
 
          当在断点处停止运行时，请单步调试代码。
 
-    3.  将代码添加到 **RooterLib.cpp** 来捕获异常：
+    3.  将代码添加到 *RooterLib.cpp* 来捕获异常：
 
         ```cpp
         #include <stdexcept>
@@ -305,7 +305,7 @@ ms.locfileid: "37117623"
 
         ```
 
-    1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保你未引入回归。
+    1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保未引入回归。
 
  现在所有测试均通过。
 

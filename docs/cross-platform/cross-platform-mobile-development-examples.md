@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 9fc4b9df68890caee9d8f79b8ecf2080c408db2e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7208d3086450604678b1fce78d4f6784bd38d50f
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31065590"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251616"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>跨平台移动开发示例
 Visual C++ 安装的用于跨平台移动开发的若干模板生成完整的示例，你可以使用这些示例进行学习。 此外，Windows 开发人员中心有若干示例应用程序，你可以在 Visual Studio 中下载并试用。  
@@ -52,4 +52,4 @@ Visual C++ 安装的用于跨平台移动开发的若干模板生成完整的示
   
  若要在 Visual Studio 中打开其中一个示例，请下载 zip 文件并在资源管理器中打开所下载文件的“属性”  页。 选择“解除阻止”  按钮，然后选择“确定” 。 将 zip 文件的内容解压缩到一个方便的位置，然后在解压缩后的示例中打开 C++ 文件夹，并打开解决方案文件。  
   
- 若要生成示例，请按 F7，或在菜单栏上依次选择“生成” 、“生成解决方案” 。
+ 若要生成示例，请按 F7，或在菜单栏上依次选择“生成”、“生成解决方案”。

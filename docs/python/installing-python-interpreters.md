@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d5930ca6e2c416a4b212feb8662c854f9cb30c3d
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: 92097e70b026a23062f7a67ff521d60312096d5c
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851846"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341841"
 ---
-# <a name="installing-python-interpreters"></a>安装 Python 解释器
+# <a name="install-python-interpreters"></a>安装 Python 解释器
 
 默认情况下，在 Visual Studio 2017 中安装 Python 开发工作负载也会安装 Python 3（64 位）。 可以选择安装 32 位和 64 位版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3，如[安装](installing-python-support-in-visual-studio.md)中所述。
 
@@ -26,11 +26,11 @@ ms.locfileid: "34851846"
 
 对于 Visual Studio 2015 及更早版本，必须手动安装其中一个解释器。
 
-Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows 注册表中的 Python 注册](https://www.python.org/dev/peps/pep-0514/)）自动检测各个已安装的 Python 解释器及其环境。 Python 安装通常位于 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`（32 位）和 `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`（64 位）下的“PythonCore”(CPython) 和“ContinuumAnalytics”(Anaconda) 等分发节点中。
+Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows 注册表中的 Python 注册](https://www.python.org/dev/peps/pep-0514/)）自动检测各个已安装的 Python 解释器及其环境。 Python 安装通常位于 HKEY_LOCAL_MACHINE\SOFTWARE\Python（32 位）和 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python（64 位）下的“PythonCore”(CPython) 和“ContinuumAnalytics”(Anaconda) 等分发节点中。
 
 如果 Visual Studio 并未检测到安装的环境，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
-Visual Studio 在 [Python 环境窗口](managing-python-environments-in-visual-studio.md)中显示所有已知环境，并自动检测现有解释器的更新。
+Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studio.md)窗口中显示所有已知环境，并自动检测现有解释器的更新。
 
 | 解释器 | 描述 |
 | --- | --- |
@@ -42,7 +42,7 @@ Visual Studio 在 [Python 环境窗口](managing-python-environments-in-visual-s
 
 对于想要提供新形式的 Python 环境检测的开发人员，请参阅 [PTVS 环境检测](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com)。
 
-## <a name="moving-an-interpreter"></a>移动解释器
+## <a name="move-an-interpreter"></a>移动解释器
 
 如果将现有解释器移到使用文件系统的新位置，则 Visual Studio 不会自动检测更改。
 

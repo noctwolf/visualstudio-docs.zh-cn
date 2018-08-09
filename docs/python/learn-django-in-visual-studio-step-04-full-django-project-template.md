@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6d511c6deb65238dc918694ec78e669dcd297789
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090044"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388171"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
@@ -35,15 +35,15 @@ ms.locfileid: "37090044"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步骤 4-1：通过模板创建项目
 
-1. 在 Visual Studio 中，转到“解决方案资源管理器”，右键单击在本教程前面创建的“LearningDjango”解决方案，并选择“添加” > “新项目”。 （或者，如果想要使用新的解决方案，请改为选择“文件” > “新建” > “项目”。）
+1. 在 Visual Studio 中，转到解决方案资源管理器，右键单击在本教程前面创建的“LearningDjango”解决方案，并选择“添加” > “新项目”。 （或者，如果想要使用新的解决方案，请改为选择“文件” > “新建” > “项目”。）
 
 1. 在“新建项目”对话框中，搜索并选择“Django Web 项目”模板，调用项目“DjangoWeb”并选择“确定”。
 
-1. 因为模板再次包含 `requirements.txt` 文件，Visual Studio 会询问在何处安装这些依赖项。 选择“安装到虚拟环境”选项，然后在“添加虚拟环境”对话框中，选择“创建”以接受默认设置。
+1. 因为模板再次包含 requirements.txt 文件，Visual Studio 会询问在何处安装这些依赖项。 选择“安装到虚拟环境”选项，然后在“添加虚拟环境”对话框中，选择“创建”以接受默认设置。
 
-1. 在 Visual Studio 完成设置虚拟环境后，按照 `readme.html` 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
+1. 在 Visual Studio 完成设置虚拟环境后，按照 readme.html 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
 
-1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在“解决方案资源管理器”中右键单击该项目，然后选择“设为启动项目”。 启动项目（以粗体显示）会在启动调试器时运行。
+1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在解决方案资源管理器中右键单击该项目，然后选择“设为启动项目”。 启动项目（以粗体显示）会在启动调试器时运行。
 
     ![将 DjangoWeb 项目显示为启动项目的解决方案资源管理器](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -61,19 +61,19 @@ ms.locfileid: "37090044"
 
 1. 可以在以下各节中使应用保持运行状态。
 
-    若要停止应用并[将更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，首先打开“团队资源管理器”中的“更改”页，右键单击虚拟环境的文件夹（可能是 `env`），然后选择“忽略这些本地项”。
+    若要停止应用并[将更改提交到源代码管理](learn-django-in-visual-studio-step-02-create-an-app.md#commit-to-source-control)，首先打开团队资源管理器中的“更改”页，右键单击虚拟环境的文件夹（可能是 env），然后选择“忽略这些本地项”。
 
 ### <a name="examine-what-the-template-creates"></a>检查模板创建的内容
 
 在最广泛的层面上，“Django Web 项目”模板创建以下结构：
 
 - 项目根目录中的文件：
-  - `manage.py`，Django 管理实用工具。
-  - `db.sqlite3`，默认 SQLite 数据库。
-  - `requirements.txt`，包含 Django 1.x 上的依赖项。
-  - `readme.html`，此文件在创建项目后显示在 Visual Studio 中。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
-- `app` 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会重命名此文件夹，使用一个更有特色的应用名称。
-- `DjangoWeb`（Django 项目）文件夹包含典型的 Django 项目文件：`__init__.py`、`settings.py`、`urls.py` 和 `wsgi.py`。 通过使用项目模板，已经为应用和数据库文件配置了 `settings.py`，且为 `urls.py` 配置了到所有应用程序页（包括登录窗体）的路由。
+  - manage.py，Django 管理实用工具。
+  - db.sqlite3，默认 SQLite 数据库。
+  - requirements.txt 包含了 Django 1.x 上的依赖项。
+  - readme.html，此文件在创建项目后显示在 Visual Studio 中。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
+- app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会重命名此文件夹，使用一个更有特色的应用名称。
+- DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py。 通过使用项目模板，已经为应用和数据库文件配置了 settings.py，且为 urls.py 配置了到所有应用程序页（包括登录窗体）的路由。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否在 Visual Studio 项目之间共享虚拟环境？
 
@@ -87,7 +87,7 @@ ms.locfileid: "37090044"
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 4-2：了解通过项目模板创建的视图和页面模板
 
-正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 `app/views` 文件夹中。 每个视图函数都只是调用 `django.shortcuts.render`，其中包含通往模板和简单字典对象的路径。 例如，“关于”页面由 `about` 函数来处理：
+正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 app/views 文件夹中。 每个视图函数都只是调用 `django.shortcuts.render`，其中包含通往模板和简单字典对象的路径。 例如，“关于”页面由 `about` 函数来处理：
 
 ```python
 def about(request):
@@ -104,7 +104,7 @@ def about(request):
     )
 ```
 
-模板位于应用的 `templates/app` 文件夹中（你通常希望将 `app` 重命名为实际应用名称）。 基本模板 `layout.html` 的使用最为广泛。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 `layout.html` 的注释的摘录内容显示了这些特定区域：
+模板位于应用的 templates/app 文件夹中（通常希望将 app 重命名为实际应用名称）。 基本模板 layout.html 的使用最为广泛。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 layout.html 的注释的摘录内容显示了这些特定区域：
 
 ```html
 <!DOCTYPE html>
@@ -144,7 +144,7 @@ def about(request):
 </html>
 ```
 
-页面模板 `about.html`、`contact.html` 和 `index.html` 均扩展基本模板 `layout.html`。 `about.html` 最简单，它显示 `{% extends %}` 和 `{% block content %}` 标记：
+每个单页模板 about.html、contact.html、index.html 均扩展了基本模板 layout.html。 about.html 最简单，它显示 `{% extends %}` 和 `{% block content %}` 标记：
 
 ```html
 {% extends "app/layout.html" %}
@@ -159,9 +159,9 @@ def about(request):
 {% endblock %}
 ```
 
-`index.html` 和 `contact.html` 使用相同的结构，在“内容”块中提供更长的内容。
+index.html 和 contact.html 使用相同的结构，在“内容”块中提供更长的内容。
 
-在 `templates/app` 文件夹中还有第四个页面 `login.html`，以及使用 `{% include %}` 引入 `layout.html` 的 `loginpartial.html`。 这些模板文件在有关身份验证的步骤 5 中进行了讨论。
+templates / app 文件夹中还具有第 4 页 login.html，以及使用 `{% include %}` 引入 layout.html 的 loginpartial.html。 这些模板文件在有关身份验证的步骤 5 中进行了讨论。
 
 ### <a name="question-can--block--and--endblock--be-indented-in-the-django-page-template"></a>问：在 Django 页面模板中是否可以缩进 {% block %} 和 {% endblock %}？
 
@@ -169,7 +169,7 @@ def about(request):
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>步骤 4-3：了解模板创建的 URL 路由
 
-由“Django Web 项目”模板创建的 Django 项目的 `urls.py` 文件包含以下代码：
+由“Django Web 项目”模板创建的 Django 项目的 urls.py 文件包含以下代码：
 
 ```python
 from datetime import datetime
@@ -204,7 +204,7 @@ urlpatterns = [
 ]
 ```
 
-前三个 URL 模式直接映射到应用 `views.py` 文件中的 `home`、`contact` 和 `about` 视图中。 另一方面，模式 `^login/$` 和 `^logout$` 使用内置的 Django 视图，而不是应用定义的视图。 对 `url` 方法的调用还包含用于自定义视图的额外数据。 步骤 5 探讨了这些调用。
+前三个 URL 模式直接映射到应用 views.py 文件中的 `home`、`contact` 和 `about` 视图中。 另一方面，模式 `^login/$` 和 `^logout$` 使用内置的 Django 视图，而不是应用定义的视图。 对 `url` 方法的调用还包含用于自定义视图的额外数据。 步骤 5 探讨了这些调用。
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>问：在我创建的项目中，为什么“about”URL 模式使用此处所示的“^about”而不是“^about$”？
 

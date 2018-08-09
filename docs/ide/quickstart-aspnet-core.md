@@ -14,16 +14,16 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a39c042b4a4badd46f7650fe0f2530527c5d537d
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: a64674ae5a902e332ae8b9eb3cbe6a22d09a1133
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232187"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380611"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
-在这篇关于如何使用 Visual Studio 的 5-10 分钟简介中，你将使用 ASP.NET 项目模板和 C# 编程语言创建一个简单的“Hello World”应用。
+在这篇关于如何使用 Visual Studio 的 5-10 分钟简介中，将使用 ASP.NET 项目模板和 C# 编程语言创建一个简单的“Hello World”Web 应用。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -41,13 +41,14 @@ ms.locfileid: "39232187"
 
    > [!NOTE]
    > 如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。
-   >![从“新建项目”对话框中打开 Visual Studio 安装程序](../ide/media/open-visual-studio-installer.png)
+   >
+   > ![从“新建项目”对话框中打开 Visual Studio 安装程序](../ide/media/open-visual-studio-installer.png)
    >
    > Visual Studio 安装程序启动。 选择“ASP.NET 和 Web 开发”工作负载，然后选择“修改”。
    >
    > ![VS 安装程序的 ASP.NET 工作负载](../ide/media/quickstart-aspnet-workload.png)
    >
-   >（你可能需要关闭 Visual Studio，然后才能继续安装新的工作负载。）
+   > （你可能需要关闭 Visual Studio，然后才能继续安装新的工作负载。）
 
 1. 在“新建 ASP.NET Core Web 应用程序”对话框中，验证“ASP.NET Core 2.0”是否显示在顶部下拉菜单中。 然后，选择“Web 应用程序”，并选择“确定”。
 
@@ -55,7 +56,7 @@ ms.locfileid: "39232187"
 
 不久之后，Visual Studio 将打开你的项目文件。
 
-## <a name="create-the-application"></a>创建应用程序
+## <a name="create-the-app"></a>创建应用
 
 1. 在“解决方案资源管理器”中，展开“Pages”文件夹，然后选择“About.cshtml”。
 
@@ -85,7 +86,7 @@ ms.locfileid: "39232187"
 
    ![更改 Visual Studio 编辑器中“应用程序说明”区域的默认消息文本](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-app"></a>运行应用
 
 1. 按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
 

@@ -1,5 +1,5 @@
 ---
-title: ProjectSubType 元素 （Visual Studio 模板） |Microsoft 文档
+title: ProjectSubType 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4414d5f444613996312978e9033145c6b8d3d82
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46b110acd20659dcd1660e4ce92897b1c78171bb
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138995"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636137"
 ---
-# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 元素（Visual Studio 模板）
-模板分为中指定的值的子类别`ProjectType`元素。  
+# <a name="projectsubtype-element-visual-studio-templates"></a>ProjectSubType 元素 （Visual Studio 模板）
+将模板中指定的值的子类别归入`ProjectType`元素。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -32,7 +32,7 @@ ms.locfileid: "31138995"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ProjectSubType> SubType </ProjectSubType>  
 ```  
   
@@ -59,17 +59,17 @@ ms.locfileid: "31138995"
 ## <a name="remarks"></a>备注  
  `ProjectSubType` 是 `TemplateData` 的可选子元素。  
   
- `ProjectSubType`元素提供到一个子类别[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)元素。 此值可以包括：  
+ `ProjectSubType`元素提供了到子类别[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)元素。 此值可以包括：  
   
--   `SmartDevice-NETCFv1`： 指定的模板目标[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]版本 1.0。  
+-   `SmartDevice-NETCFv1`： 指定此模板针对[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]1.0 版。  
   
--   `SmartDevice-NETCFv2`： 指定的模板针对[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  
+-   `SmartDevice-NETCFv2`： 指定此模板针对[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  
   
- 如果模板包含`ProjectType`具有的值的元素`Web`、`ProjectSubType`元素指定模板的编程语言。 此元素可以具有以下值：  
+ 如果模板包含`ProjectType`具有值的元素`Web`，则`ProjectSubType`元素指定模板的编程语言。 此元素可以具有以下值：  
   
--   `CSharp`： 指定该模板创建了[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 项目或项。  
+-   `CSharp`： 指定此模板创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Web 项目或项。  
   
--   `VisualBasic`： 指定该模板创建了[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 项目或项。  
+-   `VisualBasic`： 指定此模板创建[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]Web 项目或项。  
   
 ## <a name="example"></a>示例  
  下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]设备应用程序的目标[!INCLUDE[Compact](../extensibility/includes/compact_md.md)]2.0 版。  
@@ -99,7 +99,7 @@ ms.locfileid: "31138995"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [ProjectType 元素（Visual Studio 模板）](../extensibility/projecttype-element-visual-studio-templates.md)
+ [ProjectType 元素 （Visual Studio 模板）](../extensibility/projecttype-element-visual-studio-templates.md)

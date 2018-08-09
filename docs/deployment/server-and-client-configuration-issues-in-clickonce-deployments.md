@@ -51,7 +51,7 @@ ms.locfileid: "39154380"
 ## <a name="clickonce-and-proxy-authentication"></a>ClickOnce 和代理身份验证  
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从.NET Framework 3.5 的 Windows 集成代理身份验证提供支持。 没有特定 machine.config 指令是必需的。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不等基本或摘要式其他身份验证协议提供支持。  
   
- 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关详细信息，请参阅http://go.microsoft.com/fwlink/?LinkId=158730。  
+ 此外可以应用于.NET Framework 2.0，若要启用此功能的修补程序。 有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=158730 。  
   
  有关详细信息，请参阅[ \<defaultProxy > 元素 （网络设置）](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)。  
   

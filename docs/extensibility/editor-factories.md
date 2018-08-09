@@ -1,5 +1,5 @@
 ---
-title: 编辑器工厂 |Microsoft 文档
+title: 编辑器工厂 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,47 +13,47 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676918b6366837b6ee77cf27bd5fba9fbf608729
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07c94dda2a04ca1b69c2dbfd59b0df575f1b6c73
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128243"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638054"
 ---
 # <a name="editor-factories"></a>编辑器工厂
-编辑器工厂创建编辑器对象，并将它们放在窗口框架，称为物理视图中。 它创建的文档数据和所需创建编辑器和设计器的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用的编辑器工厂创建的自定义编辑器。  
+编辑器工厂创建编辑器对象，并将其放在窗口框架中，称为物理视图。 它创建的文档数据和创建编辑器和设计器所需的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用编辑器工厂创建的自定义编辑器。  
   
  通过实现创建编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。 下面的示例演示如何实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>创建编辑器工厂：  
   
  [!code-vb[VSSDKEditorFactories#1](../extensibility/codesnippet/VisualBasic/editor-factories_1.vb)]
  [!code-csharp[VSSDKEditorFactories#1](../extensibility/codesnippet/CSharp/editor-factories_1.cs)]  
   
- 编辑器是加载首次打开该编辑器所处理的文件类型。 你可以选择特定的编辑器或默认编辑器打开。 如果你选择的默认编辑器，集成的开发环境 (IDE) 将确定正确编辑器打开，然后打开它。 有关详细信息，请参阅[确定哪种编辑器在项目中打开文件](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)。  
+ 编辑器是加载第一次打开该编辑器所处理的文件类型。 您可以选择打开特定的编辑器或默认编辑器。 如果您选择的默认编辑器，在集成的开发环境 (IDE) 确定正确的编辑器打开，然后打开它。 有关详细信息，请参阅[确定哪个编辑器打开文件在项目中](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)。  
   
-## <a name="registering-editor-factories"></a>注册编辑器工厂  
- 你可以使用一个编辑器，你已创建之前，您首先必须注册信息，包括它可以处理的文件扩展名。  
+## <a name="register-editor-factories"></a>注册编辑器工厂  
+ 可以使用一种编辑器，已创建之前，首先必须注册信息，包括它可以处理的文件扩展名。  
   
- 如果你的 VSPackage 在托管代码中编写的你可以使用托管包框架 (MPF) 方法<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>若要注册的编辑器工厂之后加载你的 VSPackage。 如果你的 VSPackage 编写在非托管代码中，则必须使用注册你的编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors>服务。  
+ 如果你的 VSPackage 用托管代码编写的您可以使用托管包框架 (MPF) 方法<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>后加载你的 VSPackage 注册编辑器工厂。 如果你的 VSPackage 编写在非托管代码中，则必须使用注册编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.SVsRegisterEditors>服务。  
   
-### <a name="registering-an-editor-factory-by-using-managed-code"></a>通过使用注册编辑器工厂托管代码  
- 您必须在你的 VSPackage 的注册你的编辑器工厂`Initialize`方法。 首先调用`base.Initialize`，然后调用<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>每个编辑器工厂  
+### <a name="register-an-editor-factory-by-using-managed-code"></a>使用托管的代码注册编辑器工厂  
+ 必须在你的 VSPackage 中注册你的编辑器工厂`Initialize`方法。 第一次调用`base.Initialize`，然后调用<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>为每个编辑器工厂  
   
- 在托管代码中，是要注销的编辑器工厂，无需过程，因为 VSPackage 将为你处理此。 此外，如果你的编辑器工厂实现<xref:System.IDisposable>，注销时自动释放。  
+ 在托管代码中没有无需取消注册一个编辑器工厂，因为 VSPackage 将为你处理此。 此外，如果您的编辑器工厂实现<xref:System.IDisposable>，取消注册时自动释放。  
   
-### <a name="registering-an-editor-factory-by-using-unmanaged-code"></a>通过使用非托管的代码中注册的编辑器工厂  
- 在<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>实现你的编辑器包，使用`QueryService`方法来调用`SVsRegisterEditors`。 执行此操作返回一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>。 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>方法，从而将的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。 你必须 mplement<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>在单独的类。  
+### <a name="register-an-editor-factory-by-using-unmanaged-code"></a>使用非托管的代码注册编辑器工厂  
+ 在中<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>编辑器包，使用实现`QueryService`方法来调用`SVsRegisterEditors`。 执行此操作将返回一个指向<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors>。 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A>方法并传递的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。 必须 mplement<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>在单独的类。  
   
 ## <a name="the-editor-factory-registration-process"></a>编辑器工厂注册过程  
  Visual Studio 加载使用编辑器工厂编辑器时，将发生以下过程：  
   
 1.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>。  
   
-2.  此方法返回编辑器工厂。 Visual Studio 延迟加载编辑器的包，但是，直到项目系统实际上需要编辑器。  
+2.  此方法返回编辑器工厂。 Visual Studio 而延迟加载编辑器的包，但是，直到项目系统实际上需要在编辑器。  
   
-3.  当项目系统需要编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用化的方法。  
+3.  当项目系统需要在编辑器时，Visual Studio 会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>，返回的文档视图和文档数据对象的专用的方法。  
   
-4.  如果调用由 Visual Studio 编辑器工厂使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象和文档视图对象、 Visual Studio 然后创建文档窗口，将文档视图对象放在它，而使到正在运行文档中的条目表 (RDT) 的文档数据对象。  
+4.  如果编辑器工厂使用由 Visual Studio 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>返回文档数据对象，文档视图对象中，Visual Studio 文档窗口、 置于文档视图对象，然后创建到正在运行文档中的一个条目文档数据对象表 (RDT)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [运行文档表](../extensibility/internals/running-document-table.md)

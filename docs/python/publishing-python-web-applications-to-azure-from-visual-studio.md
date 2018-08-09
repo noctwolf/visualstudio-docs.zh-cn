@@ -1,7 +1,7 @@
 ---
 title: 将 Python 应用发布到 Azure 应用服务
 description: 如何将 Python Web 应用程序从 Visual Studio 直接发布到 Azure 应用服务，包括 web.config 文件必需的内容。
-ms.date: 09/27/2017
+ms.date: 07/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -12,14 +12,17 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: e28d306ede93cc4552e085e07e5ac5e977158386
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 249774da4ef088ae1f8a0b11c932d7ed92d1bcde
+ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32032237"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39310093"
 ---
 # <a name="publishing-to-azure-app-service"></a>发布到 Azure 应用服务
+
+> [!Important]
+> Visual Studio 目前不支持将 Python 应用部署到用于 Linux 的 Azure 应用服务。 Microsoft 还计划在 Windows 上弃用应用服务上的 Python。 更新可用时将在本文中发布。 在此期间，可以使用容器部署到 Linux 上的应用服务。 有关详细信息，请参阅[部署用于容器的 Web 应用中的 Python Web 应用](/azure/app-service/containers/quickstart-python)。
 
 Visual Studio 提供将 Python Web 应用直接发布到 Azure 应用服务的功能。 发布到 Azure App Service 意味着将所需文件复制到服务器，并设置相应的 `web.config` 文件来指示 Web 服务器如何启动应用。
 

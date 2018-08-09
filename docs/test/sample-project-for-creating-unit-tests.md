@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6627b96daefa48c9a72fd84726775fc449bde
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 93335be347e9c2ae66045bc49f9609d6cb3a929d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704598"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379769"
 ---
 # <a name="sample-code-for-testing"></a>用于测试的示例代码
 
@@ -27,7 +27,7 @@ ms.locfileid: "33704598"
 以下演练中使用了该代码：
 
 - [创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 本演练将引导你完成创建和自定义单元测试、运行它们以及检查测试结果的步骤。
-- [使用命令行测试实用工具](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在本演练中，你可以使用 MSTest.exe 命令行实用工具运行测试和查看结果。
+- [使用命令行测试实用工具](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)。 在本演练中，可使用 MSTest.exe 命令行实用工具运行测试和查看结果。
 
 ## <a name="sample-code"></a>示例代码
 

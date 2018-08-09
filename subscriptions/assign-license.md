@@ -9,18 +9,18 @@ description: 了解管理员如何将许可证分配给订阅者
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 473933ca94090596f11a6e8abb499621b4430b3f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e0baa4ee731b8d69e18ab59c958801d94fb99869
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178395"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251700"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>在 Visual Studio 订阅管理员门户中分配许可证
 
 作为 Visual Studio 订阅管理员，可以使用管理员门户为个人用户和用户组分配订阅。
 
-对于用户组，可以每次分配一个订阅，也可以使用“批量添加”功能快速轻松地上传订阅者列表及其订阅信息。 
+对于用户组，可每次分配一个订阅，也可使用“批量添加”功能快速轻松地上传订阅者列表及其订阅信息。
 
 ## <a name="individual-assignments"></a>单项分配
 
@@ -32,7 +32,7 @@ ms.locfileid: "39178395"
 
    ![添加单个订阅者](media\add-single-subscriber.png)
 
-3. 在表单域中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件。 
+3. 在表单域中输入新订阅者的信息。 如果组织使用 Azure Active Directory，则此字段可充当搜索功能，查找当前目录中的用户，以便从搜索结果中选择正确的用户。 选择用户后，系统会自动填充该用户的名称、登录电子邮件和通知电子邮件。
 
    ![添加新通知电子邮件地址](media\add-new-subscriber-notification-email.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "39178395"
 
   ![下载 Excel 模板，以上传多个订阅者](media\download-template-upload-subscribers.png)
 
-  >![注意] 请务必下载本模板的最新版本。 如果使用旧版本，批量上传可能会失败。
+   > ![注意] 请务必下载本模板的最新版本。 如果使用旧版本，批量上传可能会失败。
 
 1. 在 Excel 电子表格的字段中，填写想要为其分配订阅的个人的信息。 （“引用”是可选字段。）完成后将文件保存在本地。
 

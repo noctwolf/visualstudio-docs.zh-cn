@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42415e1a8814de8b7a9872bf619d0ae3a000fc69
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31068656"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251537"
 ---
-# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
+# <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序的系统要求
 适用于 Android 的 Visual Studio 仿真程序在 Hyper-V（Windows 8 及以上版本的虚拟化技术）上作为虚拟机运行。 要运行仿真器，计算机必须满足本主题中所述的 Hyper-V 运行要求。  
   
  安装程序在安装仿真器时尝试以静默方式配置这些先决条件。 安装程序成功配置这些先决条件后，仿真器即会按预期方式工作。 否则，可能需要手动实现这些先决条件。 如果必须手动配置这些先决条件，则步骤和工具与 [此处](/previous-versions/windows/apps/jj863509\(v=vs.105\)) 所述的针对 Windows Phone 仿真器的步骤相同。  
@@ -136,7 +136,7 @@ ms.locfileid: "31068656"
 ##  <a name="BootableVHD"></a> 不支持从可启动 VHD 运行仿真器  
  从可启动 VHD 运行 Windows 时，如果尝试在 Visual Studio Emulator for Android 上运行应用，则仿真器通常需要几分钟时间才能启动，或会启动失败。 当仿真器启动失败时，你将看到以下消息：应用部署失败。 请重试。  
   
- 此配置不受支持。 有关相关问题的信息，请参阅 [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
+ 此配置不受支持。 有关相关问题的信息，请参阅[适用于 Android 的 Visual Studio 模拟器疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
   
 ##  <a name="Files"></a> Hyper-V 需要未经压缩且未经加密的文件  
  在配置了 NTFS 文件系统的硬盘上，Hyper-V 使用的虚拟硬盘文件必须是未经压缩且未经加密的。 请确保不要压缩或加密以下目录：  

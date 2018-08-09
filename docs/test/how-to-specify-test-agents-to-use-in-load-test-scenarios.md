@@ -14,26 +14,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a4aacbd31516e6a3e55f1b543a3cc8f49ea6ce4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f822e0023f42b2fb329c8d563a298f3a51c66e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31968490"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381464"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>如何：指定要在负载测试方案中使用的测试代理
 
 在使用“新建负载测试向导”创建负载测试后，可以使用“负载测试编辑器”更改方案属性，以满足测试需求和目标。
 
 > [!NOTE]
-> 有关负载测试方案属性及其说明的完整列表，请参见[负载测试方案属性](../test/load-test-scenario-properties.md)。
+> 有关负载测试方案属性及其说明的完整列表，请参阅[负载测试方案属性](../test/load-test-scenario-properties.md)。
 
 使用负载测试编辑器更改“属性”窗口中的“要使用的代理”属性可指定代理。
 
 如果要使用控制器和代理来远程运行负载测试，则可以指定希望方案使用的代理。 例如，你可能希望指定一组特定的代理，以便在分析性能趋势时保持一致性。 此外，还可以按地理位置分布各代理，以便代理运行的脚本和代理所在的位置之间存在关联。
 
 > [!TIP]
-> 另一种方法不需要代理的实际地理位置在远程站点，而是使用网络仿真来模拟慢速网络。 有关详细信息，请参阅[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)和[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+> 另一种方法不需要代理的实际地理位置在远程站点，而是使用网络仿真来模拟慢速网络。 有关详细信息，请参阅[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
 
 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "31968490"
 
 1.  打开一个负载测试。
 
-     此时将显示负载测试编辑器。 其中显示负载测试树。
+     “负载测试编辑器”随即显示。 其中显示负载测试树。
 
 2.  在负载测试树的“方案”文件夹中，选择要为其指定所用代理的方案节点。
 

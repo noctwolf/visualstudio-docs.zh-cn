@@ -1,5 +1,5 @@
 ---
-title: 引用元素 （Visual Studio 模板） |Microsoft 文档
+title: 引用元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e758bb0bc493086d9e8090c14eaca744129c277
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 24b1e29faf2a322bf8dd40d48622b3e2a0c8da65
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136492"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639157"
 ---
-# <a name="references-element-visual-studio-templates"></a>References 元素（Visual Studio 模板）
+# <a name="references-element-visual-studio-templates"></a>References 元素 （Visual Studio 模板）
 该模板将添加到项目的程序集引用进行分组。  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ ms.locfileid: "31136492"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <References>  
     <Reference>... </Reference>  
     <Reference>... </Reference>  
@@ -61,12 +61,12 @@ ms.locfileid: "31136492"
 ## <a name="remarks"></a>备注  
  `References` 是 `TemplateContent` 的可选子元素。  
   
- `Reference`和`References`仅可以具有的.vstemplate 文件中使用元素`Type`属性的值`Item`。  
+ `Reference`并`References`元素仅可在 *.vstemplate*具有文件`Type`属性的值`Item`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示`TemplateContent`项模板的元素。 此 XML 添加 System.dll 和 System.Data.dll 程序集的引用。  
+ 下面的示例演示`TemplateContent`项模板的元素。 此 XML 将引用添加到*System.dll*并*System.Data.dll*程序集。  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -84,6 +84,6 @@ ms.locfileid: "31136492"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

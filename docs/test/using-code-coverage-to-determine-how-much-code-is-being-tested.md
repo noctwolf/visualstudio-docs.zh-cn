@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ed37441efa981e2efb29a408d5d3423387e2052e
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978244"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381711"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
@@ -51,7 +51,7 @@ ms.locfileid: "38978244"
 > - 如果要处理非托管（本机）代码，请使用调试版本
 > - 确保为每个程序集生成 .pdb（符号）文件。
 
-如果没有获得预期的结果，请参阅[代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)。 . 不要忘记在更新代码后再次运行代码覆盖率。 在修改代码后或运行测试时，覆盖率结果和代码着色不会自动更新。
+如果没有获得预期的结果，请参阅[代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)。 不要忘记在更新代码后再次运行代码覆盖率。 在修改代码后或运行测试时，覆盖率结果和代码着色不会自动更新。
 
 ## <a name="report-in-blocks-or-lines"></a>按块或行报告
 
@@ -71,13 +71,13 @@ ms.locfileid: "38978244"
 
 -   **若要查看以前的结果集**，请从下拉菜单中选择它。 该菜单将会显示一个临时列表。打开新的解决方案时，将会清除该列表。
 
--   **若要查看以前的会话中的结果**，请选择“导入代码覆盖率结果”，导航到解决方案的 TestResults 文件夹，然后导入 .coverage 文件。
+-   **要查看以前会话中的结果**，请选择“导入代码覆盖率结果”，导航到解决方案中的 TestResults 文件夹，然后导入 .coverage 文件。
 
-    如果源代码自 .coverage 文件生成之后已更改，则覆盖率着色可能不正确。
+    如果源代码自 .coverage 文件生成之后已发生更改，则覆盖率着色可能不正确。
 
--   **若要使结果可作为文本读取**，请选择“导出代码覆盖率结果”。 这将生成可使用其他工具处理或在邮件中轻松发送的可读的 .coveragexml 文件。
+-   **若要使结果可作为文本读取**，请选择“导出代码覆盖率结果”。 这将生成可使用其他工具处理或在邮件中轻松发送的可读 .coveragexml 文件。
 
--   **若要将结果发送给其他人**，请发送 .coverage 文件或导出的 .coveragexml 文件。 他们随后可以导入该文件。 如果他们具有相同版本的源代码，还可以看到覆盖率着色。
+-   **要将结果发送给其他人**，请发送 .coverage 文件或导出的 .coveragexml 文件。 他们随后可以导入该文件。 如果他们具有相同版本的源代码，还可以看到覆盖率着色。
 
 ## <a name="merge-results-from-different-runs"></a>合并不同运行的结果
 
@@ -247,13 +247,13 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 仅对已加载并且在 .dll 或 .exe 文件所在相同目录中有可用的 .pdb 文件的程序集执行代码覆盖率分析。 因此，在某些情况下，可以通过获取适当的 .pdb 文件的副本来扩展包含的一组程序集。
 
-你可以通过编写 .runsettings 文件来加强控制为代码覆盖率分析选择哪些程序集和元素。 例如，你可以排除特定类型的程序集，而不必向它们的类添加特性。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
+可通过编写 .runsettings 文件来加强控制为代码覆盖率分析选择哪些程序集和元素。 例如，你可以排除特定类型的程序集，而不必向它们的类添加特性。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
 ## <a name="analyze-code-coverage-in-the-build-service"></a>分析生成服务中的代码覆盖率
 
 签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅[在生成过程中运行测试](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。）对生成服务分析代码覆盖率很有用，因为这样能提供整个项目中的覆盖率的最新、最全面的情报。 它还包含用户不常在开发计算机上运行的自动系统测试和其他编码的测试。
 
-1. 在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。
+1. 在团队资源管理器中，打开“生成”，然后添加或编辑生成定义。
 
 2. 在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 将“运行设置文件的类型”设为“已启用代码覆盖率”。
 

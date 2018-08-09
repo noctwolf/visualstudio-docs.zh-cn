@@ -9,18 +9,18 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 54a15080e84187c53841ba03edeeaff3ccce0d30
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751827"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382724"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 
 本演练介绍如何使用测试优先方法开发本机 C++ DLL。 基本步骤如下：
 
-1.  [创建本机单元测试项目](#create_test_project)。 测试项目位于与 DLL 项目相同的解决方案中。
+1.  [创建本机测试项目](#create_test_project)。 测试项目位于与 DLL 项目相同的解决方案中。
 
 2.  [创建 DLL 项目](#create_dll_project)。 此演练将创建一个新 DLL，但测试现有 DLL 的过程类似。
 
@@ -38,9 +38,9 @@ ms.locfileid: "34751827"
 
 ##  <a name="create_test_project"></a> 创建本机单元测试项目
 
-1.  在“文件”菜单上，选择“新建”|“项目”。
+1.  在“文件”菜单上，选择“新建” > “项目”。
 
-     在对话框中，展开“已安装”|“模板”|“Visual C++”|“测试”。
+     在对话框中，展开“已安装” > “模板” > “Visual C++” > “测试”。
 
      选择“本机单元测试项目”模板，或任何所需的已安装框架。 如果选择其他模板（如 Google Test 或 Boost.Test），则基本原则是相同的，不过某些细节将有所不同。
 
@@ -75,7 +75,7 @@ ms.locfileid: "34751827"
 
          请注意， `Assert` 类提供了几个可以用来验证测试方法结果的静态方法。
 
-    2.  在“测试”菜单中，选择“运行”|“全部测试”。
+    2.  在“测试”菜单中，选择“运行” > “全部测试”。
 
          将生成并运行测试。
 
@@ -99,7 +99,7 @@ ms.locfileid: "34751827"
 
      ![为 DLL 设置的 C++ 项目向导和导出符号](../test/media/utecpp06.png)
 
-3.  在主体 .h 文件中声明导出函数：
+3.  在主体 .h 文件中声明导出的函数：
 
      ![使用 API 宏新建 DLL 代码项目和 .h 文件](../test/media/utecpp07.png)
 
@@ -119,7 +119,7 @@ ms.locfileid: "34751827"
 
 1.  将 DLL 项目添加到测试项目的项目引用中：
 
-    1.  打开一个测试项目的属性，选择“通用属性” 、“框架和引用” 。
+    1.  打开测试项目的属性，选择“通用属性” > “框架和引用”。
 
          ![C++ 项目属性 | 框架和引用](../test/media/utecpp08.png)
 
@@ -159,7 +159,7 @@ ms.locfileid: "34751827"
 
      新测试出现在测试资源管理器中。
 
-5.  在“测试资源管理器”中，选择 **“全部运行”**。
+5.  在“测试资源管理器”中，选择“全部运行”。
 
      ![单元测试资源管理器 - 已通过基本测试](../test/media/utecpp10.png)
 
@@ -186,7 +186,7 @@ ms.locfileid: "34751827"
     >
     > 当用户更改其要求时，请禁用不再正确的测试。 编写新测试，并以相同的增量方式使他们每次运行一个。
 
-2.  生成解决方案，然后在测试资源管理器中选择“全部运行” 。
+2.  生成解决方案，然后在测试资源管理器中选择“全部运行”。
 
      新未通过测试。
 
@@ -214,7 +214,7 @@ ms.locfileid: "34751827"
     }
     ```
 
-4.  生成解决方案，然后在测试资源管理器中选择“全部运行” 。
+4.  生成解决方案，然后在“测试资源管理器”中选择“全部运行”。
 
      两个测试均通过。
 
@@ -262,7 +262,7 @@ ms.locfileid: "34751827"
 
 3.  打开（或双击）失败的测试。
 
-     失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。
+     失败的断言会突出显示。 失败消息会显示在“测试资源管理器”的“详细信息”窗格中。
 
      ![NegativeRangeTests 未通过](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
@@ -302,7 +302,7 @@ ms.locfileid: "34751827"
 
 1.  简化 SquareRoot 函数中的核心计算：
 
-    ```
+    ```cpp
     // old code:
     //   result = result - (result*result - v)/(2*result);
     // new code:
@@ -329,8 +329,8 @@ ms.locfileid: "34751827"
 
 ## <a name="see-also"></a>请参阅
 
-- [向现有的 C++ 应用程序添加单元测试](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
-- [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)
+- [将单元测试添加到现有 C++ 应用程序](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)
+- [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](how-to-use-microsoft-test-framework-for-cpp.md)
 - [调试本机代码](../debugger/debugging-native-code.md)
 - [演练：创建和使用动态链接库 (C++)](/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp)
 - [导入和导出](/cpp/build/importing-and-exporting)

@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 562bd68722674d7b33f9be0941d5e351d8d198bc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 98371b648dc7fe18315904d4759b55701a07f7b1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757833"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251674"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 
@@ -108,13 +108,13 @@ Xamarin.Forms 提供了一组通用 API，借助它可以在一个 .NET Standard
 
 若要了解详细信息，请参阅 [iOS 模拟器入门](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com)。
 
-### <a name="microsofts-windows-phone-emulator"></a>Microsoft 的 Windows Phone 模拟器。
+### <a name="microsofts-windows-phone-emulator"></a>Microsoft 的 Windows Phone 模拟器
 
 要了解详细信息，请参阅[使用适用于 Windows 10 移动版的 Microsoft 模拟器进行测试](/windows/uwp/debug-test-perf/test-with-the-emulator)。
 
 <a name="components" />
 
-## <a name="deeper-dive-xamarin-components"></a>Deeper Dive: Xamarin Components
+## <a name="deeper-dive-xamarin-components"></a>深入了解：Xamarin 组件
 
 *10 分钟*
 

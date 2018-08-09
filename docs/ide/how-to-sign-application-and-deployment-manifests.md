@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cee4f7ff8438c1e20f39a24e9e439e7507d655b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 903bc0df9b24cd6f944e9e92c6dc5283cd1d25ea
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951721"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381942"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 
@@ -41,7 +41,7 @@ ms.locfileid: "31951721"
 
 ## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>使用证书对应用程序和部署清单进行签名
 
-1.  转到项目属性窗口（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入项目属性，或在“解决方案资源管理器”窗口中按 Alt+Enter）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
+1.  转到项目属性窗口（在解决方案资源管理器中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入项目属性，或在解决方案资源管理器中按 Alt+Enter）。 在“签名”选项卡上，选中“为 ClickOnce 清单签名”复选框。
 
 2.  单击“从存储中选择”按钮。
 

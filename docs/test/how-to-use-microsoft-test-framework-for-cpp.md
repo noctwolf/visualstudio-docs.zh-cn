@@ -9,26 +9,28 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 068e49c1fb095691cfa68f7a744a2159a8c173a3
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845488"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379548"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
 默认情况下，适用于 C++ 的 Microsoft 单元测试框架包含在“使用 C++ 的桌面开发”工作负荷中。
 
 ##  <a name="separate_project"></a> 在单独的项目中编写单元测试
+
 通常，你在测试代码自己的项目（与要测试的代码处于相同解决方案中）中运行测试代码。 若要设置和配置新测试项目，请参阅[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)。
 
 ##  <a name="same_project"></a> 在同一项目中编写单元测试的具体步骤
+
 在某些情况下，例如测试 DLL 中的非导出函数时，可能需要在所测试程序所处的同一项目中创建测试。 在同一项目中编写单元测试：
 
 1.  修改项目属性，以包含单元测试所需的标头和库文件。
 
-    1.  在解决方案资源管理器，右键单击所测试的计划的项目节点，然后选择“属性”|“配置属性”|“VC++ 目录”。
+    1.  在解决方案资源管理器中，右键单击所测试的计划的项目节点，然后选择“属性” > “配置属性” > “VC++ 目录”。
 
     3.  单击以下行中的向下箭头，然后选择 **<Edit>**：
 
@@ -39,9 +41,10 @@ ms.locfileid: "34845488"
 
 2.  添加 C++ 单元测试文件：
 
-    -   右键单击“解决方案资源管理器”中的项目节点，然后选择“添加”|“新建项”|“C++ 单元测试”。
+    -   右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
 
 ## <a name="write-the-tests"></a>编写测试
+
 包含测试类的任何 .cpp 文件都必须包含“CppUnitTest.h”，并具有用于 `using namespace Microsoft::VisualStudio::CppUnitTestFramework` 的 using 语句。 测试项目已为你进行了配置。 它还包含命名空间定义以及带有 TEST_METHOD 的 TEST_CLASS 来使你可以开始使用。 可以修改命名空间名称以及类和方法宏中带圆括号的名称。
 
 为初始化测试模块、类和方法，以及为在测试完成时清理资源定义了特殊宏。 这些宏生成在首次访问类或方法之前，以及在最后一个测试运行之后执行的代码。 有关详细信息，请参阅[初始化和清理](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)。
@@ -50,7 +53,7 @@ ms.locfileid: "34845488"
 
 ## <a name="run-the-tests"></a>运行测试
 
-1.  在“测试”菜单中，依次选择“窗口”、“测试资源管理器”。
+1.  在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。
 2. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
 
 2.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
@@ -59,6 +62,7 @@ ms.locfileid: "34845488"
   ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>定义特征以实现分组
+
 可以对测试方法定义特征，这样就能在”测试资源管理器”中对测试进行分类和分组。 若要定义特性，请使用 `TEST_METHOD_ATTRIBUTE` 宏。 例如，若要定义名为 `TEST_MY_TRAIT`的特性：
 
 ```cpp
@@ -82,7 +86,8 @@ TEST_METHOD(Method1)
 ```
 
 ### <a name="c-trait-attribute-macros"></a>C++ 特征特性宏
-  以下预定义特征位于 `CppUnitTest.h` 中。 有关详细信息，请参阅[适用于 C++ 的 Microsoft 单元测试框架 API 参考](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。
+
+以下预定义特征位于 `CppUnitTest.h` 中。 有关详细信息，请参阅[适用于 C++ API 参考的 Microsoft 单元测试框架](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。
 
 |宏|描述|
 |-----------|-----------------|
@@ -90,7 +95,7 @@ TEST_METHOD(Method1)
 |`TEST_OWNER(ownerAlias)`|使用预定义的“所有者”特征来指定测试方法的所有者。|
 |`TEST_PRIORITY(priority)`|使用预定义的“优先级”特征向测试方法分配相对优先级。|
 
-
 ## <a name="see-also"></a>请参阅
-[快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)
+
+- [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)
 

@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de32c1d0309d6b6510a914fe359193105e2febde
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: fb5fde39285f4e60a1cae9ae512f696130c6f666
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057380"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341658"
 ---
-# <a name="remotely-debugging-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
+# <a name="remotely-debug-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
 Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应用程序（请参阅[远程调试](../debugger/remote-debugging.md)）。 它还可使用 [ptvsd 库](https://pypi.python.org/pypi/ptvsd)在其他操作系统、设备或除 CPython 外的 Python 实现中进行远程调试。
 
@@ -28,20 +28,20 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关远程调试的介绍，请观看 [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc)（深入了解：跨平台远程调试，youtube.com，6 分 22 秒），该视频适用于 Visual Studio 2015 和 2017。 |
 
-## <a name="setting-up-a-linux-computer"></a>设置 Linux 计算机
+## <a name="set-up-a-linux-computer"></a>设置 Linux 计算机
 
 执行本演练需满足以下各项：
 
 - 在操作系统（如 Mac OSX 或 Linux）上运行 Python 的远程计算机。
 - 该计算机防火墙上的 5678 端口（入站）处于开启状态，这是远程调试的默认设置。
 
-你可以轻松[在 Azure 中创建 Linux 虚拟机](/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](installing-python-interpreters.md)中的列表，获取有关其他 Python 下载位置的信息。
+可以轻松[在 Azure 中创建 Linux 虚拟机](/azure/virtual-machines/linux/creation-choices)，并[使用 Windows 远程桌面访问虚拟机](/azure/virtual-machines/linux/use-remote-desktop)。 使用适用于 VM 的 Ubuntu 会非常方便，因为默认安装了 Python；否则，请查看[安装所选的 Python 解释器](installing-python-interpreters.md)中的列表，获取有关其他 Python 下载位置的信息。
 
 有关为 Azure VM 创建防火墙规则的详细信息，请参阅[在 Azure 中使用 Azure 门户打开 VM 的端口](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 
-## <a name="preparing-the-script-for-debugging"></a>准备调试脚本
+## <a name="prepare-the-script-for-debugging"></a>准备调试脚本
 
-1. 在远程计算机上，使用下面的代码创建名为 `guessing-game.py` 的 Python 文件：
+1. 在远程计算机上，使用下面的代码创建名为 guessing-game.py 的 Python 文件：
 
     ```python
     import random
@@ -66,9 +66,11 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. 使用 `pip3 install ptvsd` 将 `ptvsd` 包安装到环境中。 （请注意：建议记录安装的 ptvsd 版本，以防需要进行故障排除；[ptvsd 列表](https://pypi.python.org/pypi/ptvsd)也显示了可用版本。）
+1. 使用 `pip3 install ptvsd` 将 `ptvsd` 包安装到环境中。 
+   >[!NOTE]
+   >建议记录安装的 ptvsd 版本，以防需要进行故障排除；[ptvsd 列表](https://pypi.python.org/pypi/ptvsd)也显示了可用版本。
 
-1. 将以下代码添加到 `guessing-game.py` 中其他代码前的最早可能点处，启用远程调试。 （虽然不是严格要求，但不能调试调用 `enable_attach` 函数前生成的任何后台线程。）
+1. 将以下代码添加到 guessing-game.py 中其他代码前的最早可能点处，启用远程调试。 （虽然不是严格要求，但不能调试调用 `enable_attach` 函数前生成的任何后台线程。）
 
    ```python
    import ptvsd
@@ -82,7 +84,7 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 > [!Tip]
 > 除了 `enable_attach` 和 `wait_for_attach`，ptvsd 还提供了一个帮助程序函数 `break_into_debugger`，如果已附加调试器，它将作为编程断点。 如果已附加调试器，还有返回 `True` 的 `is_attached` 函数（请注意，无需在调用任何其他 `ptvsd` 函数前检查此结果）。
 
-## <a name="attaching-remotely-from-python-tools"></a>从 Python 工具远程附加
+## <a name="attach-remotely-from-python-tools"></a>从 Python 工具远程附加
 
 在这些步骤中，我们将设置简单断点以停止远程进程。
 
@@ -90,14 +92,14 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 
 1. （可选）若要在本地计算机上安装适用于 ptvsd 的 IntelliSense，请将 ptvsd 包安装到 Python 环境中。
 
-1. 选择“调试”>“附加到进程”。
+1. 选择“调试” > “附加到进程”。
 
 1. 在出现的“附加到进程”对话框中，将“连接类型”设置为“Python 远程(ptvsd)”。 （在旧版本的 Visual Studio 中，这些命令被称为“传输”和“Python 远程调试”。）
 
 1. 在“连接目标”字段（旧版本中为“限定符”）中，输入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是 Python 代码中传递给 `enable_attach` 的字符串，`<ip_address>` 是远程计算机（可以是显式地址或名称，如 myvm.cloudapp.net），而 `:5678` 是远程调试的端口号。
 
     > [!Warning]
-    > 如果要连接公共 Internet，应改用 `tcps`，并按照以下有关[使用 SSL 保护调试器连接](#securing-the-debugger-connection-with-ssl)的说明操作。
+    > 如果要连接公共 Internet，应改用 `tcps`，并按照以下说明[使用 SSL 保护调试器连接](#securing-the-debugger-connection-with-ssl)。
 
 1. 按 Enter 填充该计算机上可用 ptvsd 进程的列表：
 
@@ -131,7 +133,7 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>使用 SSL 保护调试器连接
+## <a name="secure-the-debugger-connection-with-ssl"></a>使用 SSL 保护调试器连接
 
 默认情况下，仅采用机密保护 ptvsd 远程调试服务器的连接，所有数据均以纯文本形式传递。 对于更安全的连接，ptvsd 支持 SSL，可按以下方式进行设置：
 
@@ -158,9 +160,9 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 1. 使用 Visual Studio 将证书添加到 Windows 计算机上受信任的根 CA 以保护信道：
 
     1. 将证书文件从远程计算机复制到本地计算机。
-    1. 打开控制面板，导航到“管理工具”>“管理计算机证书”。
-    1. 在出现的窗口中，展开左侧的“受信任的根证书颁发机构”，右键单击“证书”，然后选择“所有任务”>“导入...”。
-    1. 导航到从远程计算机复制的 `.cer` 文件，并将其选中，然后单击对话框以完成导入。
+    1. 打开“控制面板”，导航到“管理工具” > “管理计算机证书”。
+    1. 在出现的窗口中，展开左侧的“受信任的根证书颁发机构”，右键单击“证书”，然后选择“所有任务” > “导入”。
+    1. 导航到从远程计算机复制的 .cer 文件，并将其选中，然后单击对话框以完成导入。
 
 1. 在 Visual Studio 中重复如前所述的附加进程，现在使用 `tcps://` 作为“连接目标”或（“限定符”）的协议。
 

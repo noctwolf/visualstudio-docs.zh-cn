@@ -1,5 +1,5 @@
 ---
-title: ProjectItem 元素 （Visual Studio 项模板） |Microsoft 文档
+title: ProjectItem 元素 （Visual Studio 项模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 886fc57258b4ccafaa4ab8d522fad632de455e17
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0fa0e7899e2f6e52536e2296519a1697e27a3643
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139567"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637063"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素（Visual Studio 项模板）
-指定项模板中包含的文件。  
+# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素 （Visual Studio 项模板）
+指定在项模板中包含的文件。  
   
 > [!NOTE]
->  `ProjectItem`元素接受不同的属性，具体取决于模板是针对某个项目或项。 本主题介绍`ProjectItem`项的元素。 有关说明`ProjectItem`元素的项目模板，请参阅[ProjectItem 元素 （Visual Studio 项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)。  
+>  `ProjectItem`元素接受不同的属性，具体取决于该模板是针对某个项目或项。 本主题介绍了`ProjectItem`项目元素。 有关的说明`ProjectItem`元素的项目模板，请参阅[ProjectItem 元素 （Visual Studio 项目模板）](../extensibility/projectitem-element-visual-studio-project-templates.md)。  
   
  \<VSTemplate >  
  \<TemplateContent >  
@@ -53,11 +53,11 @@ ms.locfileid: "31139567"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`SubType`|可选特性。<br /><br /> 多文件项模板中指定项的子类型。 此值用于确定编辑器，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于打开该项目。|  
-|`CustomTool`|可选特性。<br /><br /> 条目设置项的项目文件中。|  
-|`ItemType`|可选特性。<br /><br /> 设置项 ItemType 项目文件中。|  
-|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。|  
-|`TargetFileName`|可选特性。<br /><br /> 指定从模板创建的项目的名称。 此属性可用于使用参数替换创建项名称。|  
+|`SubType`|可选特性。<br /><br /> 多文件项模板中指定的项的子类型。 此值用于确定在编辑器的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将用于打开该项目。|  
+|`CustomTool`|可选特性。<br /><br /> 在项目文件中设置的项 customtool。|  
+|`ItemType`|可选特性。<br /><br /> 在项目文件中设置项 ItemType。|  
+|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，该值指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。|  
+|`TargetFileName`|可选特性。<br /><br /> 指定从模板创建的项目的名称。 此属性可用于使用参数替换创建的项名称。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -71,21 +71,21 @@ ms.locfileid: "31139567"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- A `string` ，它表示.zip 模板文件中的文件的名称。  
+ 一个`string`，表示在模板中的文件的名称 *.zip*文件。  
   
 ## <a name="remarks"></a>备注  
- `ProjectItem` 是的可选子`TemplateContent`。  
+ `ProjectItem` 是的一个可选子级`TemplateContent`。  
   
- `TargetFileName`属性可以用于重命名文件使用的参数。 例如，如果该文件`MyFile.vb`位于根目录下的模板的.zip 文件，但你想要将名为的文件根据用户在提供的文件名称**添加新项**对话框中，你将使用下面的 XML:  
+ `TargetFileName`属性可用于使用参数重命名文件。 例如，如果该文件*MyFile.vb*模板的根目录中存在 *.zip*文件，但您想文件命名为根据中的用户提供的文件名称**添加新项**对话框中，您可以使用以下 XML:  
   
-```  
+```xml  
 <ProjectItem TargetFileName="$fileinputname$.vb">MyFile.vb</ProjectItem>  
 ```  
   
- 文件名称时从该模板创建一个项，将基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这很有用。 有关详细信息，请参阅[如何： 创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)和[模板参数](../ide/template-parameters.md)。  
+ 通过此模板创建项目后，文件名称基于用户输入中的名称**添加新项**对话框。 创建多文件项模板时，这是非常有用。 有关详细信息，请参阅[如何： 创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)并[模板参数](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示的标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  
+ 下面的示例演示为标准项模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]类。  
   
 ```  
 <VSTemplate Type="Item" Version="3.0.0"  
@@ -103,8 +103,8 @@ ms.locfileid: "31139567"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
+ [如何： 创建多文件项模板](../ide/how-to-create-multi-file-item-templates.md)   
  [模板参数](../ide/template-parameters.md)

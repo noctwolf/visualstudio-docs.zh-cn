@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 00f5bcdbdd84de3a33914d3ea90f4eb00c960f1f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5dfa353c1ae49e938c74e6d209cc2957dff2352d
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31066613"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251632"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>用于跨平台移动开发的 Visual C++
 可通过适用于跨平台移动开发的 Visual C++，构建面向 iOS、Android 和 Windows 设备的本机 C++ 应用，并在为 iOS、Android 和 Windows 构建的库中分享通用代码。 这是安装了 SDK 以及共享库和本机应用的跨平台开发所需的工具的 Visual Studio 2015 中提供的一个选项。 安装后，你可以使用 Visual C++ 创建除了在 Windows、Windows Phone 和 Xbox，还可以在 iOS 和 Android 设备和平台上运行的代码。  
@@ -33,10 +33,10 @@ ms.locfileid: "31066613"
 3.  **统一的调试体验。** 使用 Visual Studio 中一流的调试工具在所有平台上监视和逐步执行 C++ 代码，包括 Android 设备和仿真程序、iOS 模拟器和设备以及 Windows 或 Windows Phone 设备和仿真程序。  
   
 ## <a name="get-the-tools"></a>获取工具  
- 用于跨平台移动开发的 Visual C++ 是 Visual Studio 2015 附带的可安装选项。 有关系统必备和安装说明，请参阅 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要生成用于 iOS 的代码，你还需要 Mac 计算机和 Apple iOS 开发人员帐户。 有关详细信息，请参阅 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。  
+ 用于跨平台移动开发的 Visual C++ 是 Visual Studio 2015 附带的可安装选项。 有关系统必备和安装说明，请参阅[安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要生成用于 iOS 的代码，你还需要 Mac 计算机和 Apple iOS 开发人员帐户。 有关详细信息，请参阅[安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。  
   
 ## <a name="come-up-to-speed"></a>加快速度  
- 如果你来自 Android 或 iOS 开发部门，我们可以向你提供有关如何入门的有用资料。 Visual Studio 是一个表现力和功能均十分强大的开发环境。 若要了解如何使用，请阅读 [Android 开发人员入门](/previous-versions/windows/apps/dn275875\(v=win.10\)) 或 [iOS 开发人员入门](/previous-versions/windows/apps/jj657966\(v=win.10\))。 这些主题将向你介绍 Visual Studio 以及开发用于 Windows 和 Windows Phone 的跨平台应用时所需的概念。 若要开始编写你的第一个用于 iOS 和 Android 的跨平台应用，请参阅 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
+ 如果你来自 Android 或 iOS 开发部门，我们可以向你提供有关如何入门的有用资料。 Visual Studio 是一个表现力和功能均十分强大的开发环境。 若要了解如何使用，请阅读 [Android 开发人员入门](/previous-versions/windows/apps/dn275875\(v=win.10\))或 [iOS 开发人员入门](/previous-versions/windows/apps/jj657966\(v=win.10\))。 这些主题将向你介绍 Visual Studio 以及开发用于 Windows 和 Windows Phone 的跨平台应用时所需的概念。 若要开始编写你的第一个用于 iOS 和 Android 的跨平台应用，请参阅 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
   
  用于跨平台移动开发的 Visual C++ 包括多个模板，可帮助你开始编写应用：  
   
@@ -93,16 +93,16 @@ ms.locfileid: "31066613"
      为你自己的 Android 生成文件项目创建项目包装。  
   
 ## <a name="try-out-sample-code"></a>试用示例代码  
- 下载演示如何创建可以在 Windows、Android 和 iOS 应用中使用的共享代码库，以及如何创建用于 Android 的完整本机活动应用的示例。 若要开始操作，请参见 [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)。  
+ 下载演示如何创建可以在 Windows、Android 和 iOS 应用中使用的共享代码库，以及如何创建用于 Android 的完整本机活动应用的示例。 若要开始操作，请参见[跨平台移动开发示例](../cross-platform/cross-platform-mobile-development-examples.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
-1.  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1.  [安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
 2.  [安装并配置使用 iOS 进行构建的工具](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
 3.  [创建 Android 本机活动应用](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [在 Android 和 iOS 上生成 OpenGL ES 应用程序](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)
+5.  [跨平台移动开发示例](../cross-platform/cross-platform-mobile-development-examples.md)

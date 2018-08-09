@@ -1,5 +1,5 @@
 ---
-title: EnableLocationBrowseButton 元素 （Visual Studio 模板） |Microsoft 文档
+title: EnableLocationBrowseButton 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d3573a1359cf7cc6347ede28b5361b01bbb7efb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7bebf88b8d5c98722226f42f9a1b1666695a3b7e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126840"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639534"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素（Visual Studio 模板）
-指定是否**浏览**按钮位于**新项目**对话框中，以便用户可以轻松地修改保存新的项目的默认目录。  
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素 （Visual Studio 模板）
+指定是否**浏览**按钮现已推出**新项目**对话框，以便用户可以轻松地修改保存新项目的默认目录。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -53,12 +53,12 @@ ms.locfileid: "31126840"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 文本必须是`true`或`false`，，该值指示是否显示**浏览**按钮上**新项目**对话框。  
+ 文本必须是`true`或`false`，，该值指示是否显示**浏览**按钮**新项目**对话框。  
   
 ## <a name="remarks"></a>备注  
  `EnableLocationBrowseButton` 是可选元素。 默认值是`true`，其中显示**浏览**按钮**新项目**对话框。  
   
- 在**新项目**对话框中，**位置**文本框中指定保存新的项目的目录。 **浏览**按钮可帮助你通过显示来修改此目录**项目位置**对话框中，从而使您能够轻松地浏览到可从你计算机的其他目录，和然后选择作为新项目的保存位置的目录。  
+ 在中**新的项目**对话框中，**位置**文本框中指定新的项目的保存位置的目录。 **浏览**按钮可帮助你通过显示来修改此目录**项目位置**对话框中，使您可以轻松地导航到另一个计算机上可用的目录，并然后选择为保存新项目的目录。  
   
 ## <a name="example"></a>示例  
  下面的示例演示的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。  
@@ -88,6 +88,6 @@ ms.locfileid: "31126840"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

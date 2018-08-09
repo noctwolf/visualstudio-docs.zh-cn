@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 065e50b123ccf4ac96ba6bec89db74bb51990f58
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751396"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380243"
 ---
-# <a name="using-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
+# <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 
 负载测试分析器的关系图视图包含一个图例面板，用于显示与当前选择的关系图关联的每个性能计数器的信息。
 
@@ -55,7 +55,7 @@ ms.locfileid: "34751396"
 -   使你能够访问计数器的“绘图选项”对话框。
 
 > [!TIP]
-> 可以使用负载测试分析器工具栏中的“关系图选项”下拉列表按钮，然后选择“显示图例”以显示或隐藏与关系图视图关联的“图例”面板。
+> 可以使用负载测试分析器工具栏中的“关系图选项下拉列表”按钮，然后选择“显示图例”以显示或隐藏与关系图视图关联的“图例”面板。
 
 ## <a name="see-also"></a>请参阅
 

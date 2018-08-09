@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: daf775b843cd2b966fd3c1647151e58b78ef7996
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180303"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381063"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分布式负载测试创建测试设置
 
@@ -35,7 +35,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
 
 将 Web 性能和负载测试项目添加到解决方案中时，将创建一个 Default.testsettings 文件。 该文件将自动添加到“解决方案项”文件夹下的解决方案中。 该文件在本地运行测试，无需任何诊断数据适配器。 可添加另一个 .testsettings 文件或编辑 .testsettings 文件以指定诊断数据适配器和测试控制器。
 
-测试控制器将拥有可用于测试设置中的每个角色的代理。 有关测试控制器和测试代理的详细信息，请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
+测试控制器将拥有可用于测试设置中的每个角色的代理。 有关测试控制器和测试代理的详细信息，请参阅[通过 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
 
 按照以下这些步骤可在解决方案中为计划从 Visual Studio 中运行的负载测试创建和移除测试设置。
 
@@ -43,7 +43,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>为分布式负载测试添加测试设置
 
-1.  在“解决方案资源管理器”中，右键单击“解决方案项”，指向“添加”，然后选择“新建项”。
+1.  在解决方案资源管理器中，右键单击“解决方案项”，指向“添加”，然后选择“新建项”。
 
      “添加新项”对话框随即出现。
 
@@ -53,7 +53,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
 
 4.  选择“添加”。
 
-     新的测试设置文件将出现在“解决方案资源管理器”中的“解决方案项”文件夹下。
+     新的测试设置文件将出现在解决方案资源管理器中的“解决方案项”文件夹下。
 
     > [!NOTE]
     > Visual Studio Enterprise 所显示的测试设置列表派生自“解决方案项”文件夹中的测试设置文件列表。 例如，在使用“测试”菜单上的“选择活动的测试设置”选项时，将显示“解决方案项”文件夹中的测试设置文件。 这表明，如果将测试设置文件移动到解决方案层次结构中的其他位置，那么该文件不能再用作 Visual Studio 集成开发环境中的测试设置。
@@ -97,13 +97,13 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
     > [!IMPORTANT]
     > 创建和定义的其他角色不运行测试，仅用于根据在“数据和诊断”页中为角色指定的数据和诊断适配器收集数据。
 
-16. 若要限制可用于角色的代理，请选择角色，然后在“所选角色的代理特性”下方的工具栏中选择“添加”。
+16. 要限制可用于角色的代理，请选择角色，然后在“所选角色的代理特性”下方的工具栏中选择“添加”。
 
      此时将显示“代理选择规则”对话框。
 
      在“特性名”中键入名称，在“特性值”中键入值，然后选择“确定”。 根据需要添加多个特性。
 
-     例如，可以添加一个名为“RAM > 16GB”并且值为“True”或“False”的特性，以对内存大于 16GB 的测试代理计算机进行筛选。 若要将同一特性应用于一个或多个测试代理，请使用“管理测试控制器”对话框。 有关详细信息，请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
+     例如，可以添加一个名为“RAM > 16GB”并且值为“True”或“False”的特性，以对内存大于 16GB 的测试代理计算机进行筛选。 要将同一特性应用于一个或多个测试代理，请使用“管理测试控制器”对话框。 有关详细信息，请参阅[使用 Visual Studio 管理测试控制器和测试代理](../test/manage-test-controllers-and-test-agents.md)。
 
 17. 选择“数据和诊断”。
 
@@ -128,7 +128,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
     |用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理：此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 除非你具有收集测试代理计算机的系统信息的特定需要，否则不要包含此适配器。 注意：建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集的数据量太大而导致问题。 <br /><br /> 测试影响数据不是使用负载测试收集到的。||
     |**IntelliTrace：** 可以配置特定诊断跟踪信息，该信息存储在一个日志文件中。 该日志文件的扩展名为 .tdlog。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断跟踪的日志文件会自动附加到此 Bug 中。 该日志文件中收集的数据可减少重现和诊断代码中的错误所需的时间，从而提高调试效率。 可以基于此日志文件在另一台计算机上重新创建本地会话。 这会降低无法重现 Bug 的风险。<br /><br /> 有关详细信息，请参阅[收集 IntelliTrace 数据](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![“重要事项”图标](../test/media/vc364f3.gif)<br /><br /> 我们建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集和记录的数据量太大而导致问题。 应该仅在运行时间不长、使用的测试代理不多的负载测试中尝试使用 IntelliTrace 适配器。|[如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |ASP.NET 探查器：可以创建包含 ASP.NET 分析的测试设置，该分析收集 ASP.NET Web 应用程序的性能数据。|ASP.NET 探查器诊断数据适配器分析 Internet Information Services (IIS) 进程，因此它不针对开发 Web 服务器工作。 若要在负载测试中分析网站，必须在运行 IIS 的计算机上安装测试代理。 测试代理不生成负载，它是仅用于收集的代理。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|[如何：使用测试设置为负载测试配置 ASP.NET 探查器](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
-    |**事件日志**：可以将测试设置配置为包含事件日志收集，该事件日志将包含在测试结果中。||[如何：使用测试设置配置事件日志收集](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
+    |**事件日志：** 可以将测试设置配置为包含事件日志收集，该事件日志将包含在测试结果中。||[如何：使用测试设置配置事件日志收集](http://msdn.microsoft.com/en-us/48d67891-6018-4549-83e3-213d5d824a02)|
     |**网络仿真：** 可以使用测试设置指定希望在测试中放置人工网络负载。 网络仿真将仿真特定网络连接（如拨号连接）的速度，从而影响计算机的往来通信。 注意：网络仿真不能用于提高网络连接速度。|负载测试会忽略网络仿真适配器。 实际上，负载测试使用在负载测试方案的网络组合中指定的设置。<br /><br /> 有关详细信息，请参阅[指定虚拟网络类型](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。||
     |**系统信息：** 可以设置测试设置来包含有关在其上运行系统信息诊断和数据收集器的计算机的系统信息。 通过使用测试设置可在测试结果中指定系统信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 你可以从负载代理和测试中的系统收集系统信息。|收集此信息不需要任何配置。|
     |**测试影响：** 可以收集在运行某个测试用例时使用了哪些应用程序代码方法的相关信息。 将它与开发人员进行的应用程序代码更改结合使用，可确定这些开发更改影响了哪些测试。|测试影响数据不是使用负载测试收集到的。||
@@ -187,7 +187,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
 
 ### <a name="to-remove-a-test-settings-from-your-solution"></a>从解决方案中移除测试设置
 
-在“解决方案资源管理器”中的“解决方案项”文件夹下，右键单击要删除的测试设置，然后选择“删除”。
+在解决方案资源管理器中的“解决方案项”文件夹下，右键单击要删除的测试设置，然后选择“删除”。
 
 该测试设置文件随即从解决方案中移除。 “测试”菜单上的“选择活动的测试设置”和“编辑测试设置”选项的选择列表中将反映此更改。
 

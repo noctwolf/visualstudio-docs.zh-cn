@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: da826928ff44d306c72f330b8221361579840d6a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 7838d4435c71fa332711c0ef3794c8bed556827a
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235209"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341367"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -34,7 +34,7 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 **Visual Studio 2017 版本 15.5**
 
-- **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它具有可以在“解决方案资源管理器”中通过解决方案节点上的“添加新项目”上下文菜单添加到解决方案的项目模板，以及可以通过“工具”|“选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
+- **Google Test 适配器**作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它具有可以在解决方案资源管理器中通过解决方案节点上的“添加新项目”上下文菜单添加到解决方案的项目模板，以及可以通过“工具” > “选项”配置的选项。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Google Test](how-to-use-google-test-for-cpp.md)。
 
 - **Boost.Test** 作为“使用 C++ 的桌面开发”工作负荷的默认组件包含在内。 它与“测试资源管理器”集成，但当前没有项目模板，因此必须手动配置。 有关详细信息，请参阅[如何：在 Visual Studio 中使用 Boost.Test](how-to-use-boost-test-for-cpp.md)。
 
@@ -50,13 +50,13 @@ Visual Studio 包含这些 C++ 测试框架，无需进行额外下载：
 
 ### <a name="create-a-test-project"></a>创建测试项目
 
-在与要测试的代码处于相同解决方案中的一个或多个测试项目中定义和运行测试。 若要向现有解决方案添加新测试项目，请右键单击“解决方案资源管理器”中的“解决方案”节点，然后选择“添加”|“新建项目”。 然后在左窗格中选择“Visual C++ 测试”，并在中心窗格中选择一种项目类型。 下图显示在安装了“使用 C++ 的桌面开发”工作负荷时可用的测试项目：
+在与要测试的代码处于相同解决方案中的一个或多个测试项目中定义和运行测试。 若要向现有解决方案添加新测试项目，请右键单击解决方案资源管理器中的“解决方案”节点，然后选择“添加” > “新建项目”。 然后在左窗格中选择“Visual C++ 测试”，并在中心窗格中选择一种项目类型。 下图显示在安装了“使用 C++ 的桌面开发”工作负荷时可用的测试项目：
 
 ![C++ 测试项目](media/cpp-new-test-project.png)
 
 ### <a name="create-references-to-other-projects-in-the-solution"></a>创建对解决方案中的其他项目的引用
 
-若要使测试代码可以访问要测试的项目中的函数，请在测试项目中添加对该项目的引用。 右键单击“解决方案资源管理器”中的测试项目节点，并选择“添加”|“引用”。 随后在对话框中选择要测试的项目。
+若要使测试代码可以访问要测试的项目中的函数，请在测试项目中添加对该项目的引用。 右键单击解决方案资源管理器中的测试项目节点，并选择“添加” > “引用”。 随后在对话框中选择要测试的项目。
 
 ![添加引用](media/cpp-add-ref-test-project.png)
 

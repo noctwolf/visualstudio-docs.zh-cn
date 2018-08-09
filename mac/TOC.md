@@ -62,6 +62,7 @@
 ## [Unity 游戏开发](unity-tools.md)
 ### [安装](setup-vsmac-tools-unity.md)
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
+### [更改日志](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
 
 # [辅助功能](accessibility.md)
 

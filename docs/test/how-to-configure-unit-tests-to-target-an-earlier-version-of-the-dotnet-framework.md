@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: ea86ce4b977f1b8a664944bca2fcef65f8f5132f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: dad7589e09ded8994a5e687c4f4cf95283887324
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233485"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380638"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 
@@ -32,7 +32,7 @@ ms.locfileid: "36233485"
 
 **测试 SharePoint 应用程序**
 
-上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 有关如何使用 Visual Studio 开发 SharePoint 应用程序的详细信息，请参阅[创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)、[生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)和[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
+上面列出的功能还支持使用 Visual Studio 为 SharePoint 应用程序编写单元测试和集成测试。 有关如何使用 Visual Studio 开发 SharePoint 应用程序的详细信息，请参阅[创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)、[生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)以及[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)。
 
 **限制**
 
@@ -48,7 +48,7 @@ ms.locfileid: "36233485"
 
 - 无法使单元测试面向早期客户端版本的框架。
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>针对 Visual Basic 单元测试项目重定目标为特定版本的 .NET Framework 
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>针对 Visual Basic 单元测试项目重新面向特定版本的 .NET Framework
 
 1.  创建一个新的 Visual Basic 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。
 
@@ -70,7 +70,7 @@ ms.locfileid: "36233485"
 
      ![目标框架下拉列表](../test/media/howtoconfigureunitest35frameworkstepb.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>针对 Visual C# 单元测试项目重定目标为特定版本的 .NET Framework
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>针对 Visual C# 单元测试项目重新面向特定版本的 .NET Framework
 
 1.  创建一个新的 Visual C# 单元测试项目。 在“文件”菜单上选择“新建”，再选择“项目”。
 
@@ -88,7 +88,7 @@ ms.locfileid: "36233485"
 
      ![目标框架下拉列表](../test/media/howtoconfigureunittest35frameworkcsharp.png)
 
-## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>针对 C++/CLI 单元测试项目重定目标为特定版本的 .NET Framework 
+## <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>针对 C++/CLI 单元测试项目重新面向特定版本的 .NET Framework
 
 1.  创建一个新的 C++ 单元测试项目。 在“文件”菜单上，选择“新建” ，然后单击“项目”。
 

@@ -11,23 +11,24 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b134dc54e2af31bb7d9fcb3f1dcdf3d31f799b5
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232213"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341864"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
 Python 环境是在其中运行 Python 代码的上下文，它包括全局、虚拟和 Conda 环境。 环境由解释器、库（通常是 Python 标准库）以及一组已安装的包组成。 这些组成部分共同确定哪些语言结构和语法有效、哪些操作系统功能可访问以及哪些包可使用。
 
-在 Windows 上的 Visual Studio 中，你可在 [Python 环境](#the-python-environments-window)窗口（如本文中所述）中管理这些环境并选择其中一个作为新项目的默认环境。 对于任何给定的项目，也可以[选择特定环境](selecting-a-python-environment-for-a-project.md)而不使用默认环境。
+在 Windows 上的 Visual Studio 中，可在“Python 环境”窗口（如本文中所述）中管理这些环境并选择其中一个作为新项目的默认环境[](#the-python-environments-window)。 对于任何给定的项目，也可以[选择特定环境](selecting-a-python-environment-for-a-project.md)而不使用默认环境。
 
-**注意**：如果不熟悉 Visual Studio 中的 Python，请参阅以下文章了解必要背景：
-
-- [在 Visual Studio 中使用 Python](overview-of-python-tools-for-visual-studio.md)
-- [安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)
+>[!NOTE]
+>如果不熟悉 Visual Studio 中的 Python，请参阅以下文章了解必要背景：
+>
+>- [在 Visual Studio 中使用 Python](overview-of-python-tools-for-visual-studio.md)
+>- [在 Visual Studio 中安装 Python 支持](installing-python-support-in-visual-studio.md)
 
 另请注意，你无法管理使用“文件” > “打开” > “文件夹”命令仅以文件夹方式打开的 Python 代码的环境。 但是，[从现有代码创建 Python 项目](quickstart-01-python-in-visual-studio-project-from-existing-code.md)即可享受 Visual Studio 的环境功能。
 
@@ -37,7 +38,7 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 ### <a name="global-environments"></a>全局环境
 
-每个 Python 安装（例如，Python 2.7、Python 3.6 和 Anaconda 4.4.0 等，请参阅[选择并安装 Python 解释器](installing-python-interpreters.md)）都会维护自己的全局环境。 每个环境都包括特定的 Python 解释器、其标准库和一组预安装包。 将包安装到全局环境使其适用于使用此环境的所有项目。 如果环境位于文件系统的保护区域内（例如，`c:\program files` 内），则安装包时需要管理员权限。
+每个 Python 安装（例如，Python 2.7、Python 3.6 和 Anaconda 4.4.0 等，请参阅[安装 Python 解释器](installing-python-interpreters.md)）都会维护自己的全局环境。 每个环境都包括特定的 Python 解释器、其标准库和一组预安装包。 将包安装到全局环境使其适用于使用此环境的所有项目。 如果环境位于文件系统的保护区域内（例如，c:\program files 内），则安装包时需要管理员权限。
 
 全局环境适用于计算机上的所有项目。 在 Visual Studio 中，选择一个全局环境作为默认环境，此环境可用于所有项目，除非为项目专门选择了其他环境。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 
@@ -45,14 +46,14 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 由于安装到全局环境中的包适用于使用此环境的所有项目，因此当两个项目需要不兼容的包或同一个包的不同版本时，可能会发生冲突。 虚拟环境通过使用全局环境中的解释器和标准库但将其自身包存储在独立文件夹来避免此类冲突。
 
-在 Visual Studio 中，可针对项目子文件夹中存储的特定项目创建虚拟环境。 Visual Studio 提供基于虚拟环境生成 `requirements.txt` 的命令，简化了在其他计算机上重新创建环境的过程。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+在 Visual Studio 中，可针对项目子文件夹中存储的特定项目创建虚拟环境。 Visual Studio 提供可从虚拟环境生成 requirements.txt 文件的命令，简化了在其他计算机上重新创建环境的过程。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
 
 ### <a name="conda-environments"></a>Conda 环境
 
 Conda 环境是使用 `conda` 工具或通过 Visual Studio 2017 版本 15.7 及更高版本中的集成式 Conda 管理创建的环境。 （需要 Anaconda 或 Miniconda；Anaconda 可通过 Visual Studio 安装程序使用，请参阅[安装 - Visual Studio 2017](installing-python-support-in-visual-studio.md#visual-studio-2017)。）
 
 > [!Note]
-> 为获得 Conda 环境的最佳使用结果，请使用 Conda 4.4.8 或更高版本（Conda 版本与 Anaconda 版本不同）。 从 Visual Studio 2017 安装程序安装 Anaconda 5.1
+> 为获得 Conda 环境的最佳使用结果，请使用 Conda 4.4.8 或更高版本（Conda 版本与 Anaconda 版本不同）。 从 Visual Studio 2017 安装程序安装 Anaconda 5.1。
 
 若要查看 Conda 版本、Conda 环境的存储位置以及其他信息，请在 Anaconda 命令提示符（即路径中包含 Anaconda 的命令提示符）运行 `conda info`：
 
@@ -76,10 +77,10 @@ conda 环境文件夹如下所示：
 
 ## <a name="the-python-environments-window"></a>“Python 环境”窗口
 
-Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打开该窗口，请使用以下方法之一：
+Visual Studio 了解的环境显示在“Python 环境”窗口中。 要打开该窗口，请使用以下某个方法：
 
 - 选择“查看” > “其他窗口” > “Python 环境”菜单命令。
-- 在“解决方案资源管理器”中，右键单击某项目的“Python 环境”节点，选择“查看所有 Python 环境”：
+- 在解决方案资源管理器中，右键单击某项目的“Python 环境”节点，选择“查看所有 Python 环境”：
 
     ![解决方案资源管理器中的“查看所有环境”命令](media/environments-view-all.png)
 
@@ -89,11 +90,11 @@ Visual Studio 了解的环境显示在“Python 环境”窗口中。 若要打�
 
 Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使用注册表识别已安装的环境。 如果在列表中看不到预期的环境，请参阅[手动标识现有环境](#manually-identify-an-existing-environment)。
 
-选择列表中的环境会在“概述”选项卡上显示该环境的各种属性和命令。例如，可在上图中看到解释器的位置是 `C:\Python36-32`。 使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中介绍了这些选项卡。
+选择列表中的环境会在“概述”选项卡上显示该环境的各种属性和命令。例如，可在上图中看到解释器的位置是 C:\Python36-32。 使用环境列表下方的下拉列表可切换到不同的选项卡，例如“包”和“IntelliSense”。 [“Python 环境”窗口选项卡引用](python-environments-window-tab-reference.md)中介绍了这些选项卡。
 
 选择某个环境不会以任何方式激活它。 列表中以粗体显示的默认环境是当前激活的环境，Visual Studio 将其用于任意新项目。 要激活其他环境，请使用“将此作为新项目的默认环境”命令。 在项目的上下文中，可以始终激活不同的环境。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 
-所列出的每个环境右侧的控件可为此环境打开交互窗口。 （在 Visual Studio 2017 15.5 及更早版本中，可能还会显示另一个控件，用于刷新此环境的 IntelliSense 数据库。 请参阅[“环境”窗口选项卡引用](python-environments-window-tab-reference.md#intellisense-tab)，获取有关数据库的详细信息）。
+列出的每个环境右侧的控件可为此环境打开“交互”窗口。 （在 Visual Studio 2017 15.5 及更早版本中，可能还会显示另一个控件，用于刷新此环境的 IntelliSense 数据库。 有关数据库的详细信息，请参阅[“环境”窗口选项卡引用](python-environments-window-tab-reference.md#intellisense-tab)。）
 
 > [!Tip]
 > 如果将“Python 环境”窗口展开到足够宽，可以获得更加完整的环境视图，从而可使操作更加便捷。
@@ -111,16 +112,16 @@ Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使�
 
 如果未出现任何环境，这意味着 Visual Studio 在标准位置中未能检测到任何 Python 安装。 例如，你可能已安装 Visual Studio 2017 但清除了 Python 工作负荷的安装程序选项中的所有解释器选项。 同样地，你可能已安装 Visual Studio 2015 或更早版本，但未手动安装解释器（请参阅[安装 Python 解释器](installing-python-interpreters.md)）。
 
-如果你知道计算机上有一个 Python 解释器，但 Visual Studio（任何版本）未检测到它，则使用“+ 自定义...”命令来手动指定其位置。 请参阅下一节[手动标识现有环境](#manually-identify-an-existing-environment)。
+如果知道计算机上有一个 Python 解释器，但 Visual Studio（任何版本）未检测到它，则使用“+ 自定义”命令来手动指定其位置。 请参阅下一节[手动标识现有环境](#manually-identify-an-existing-environment)。
 
 > [!Tip]
 > Visual Studio 可检测现有解释器的更新，如使用 python.org 的安装程序将 Python 2.7.11 升级到 2.7.14。在安装过程中，较旧的环境从“Python 环境”列表消失后，更新才会显示在其位置上。
 >
-> 但是，如果你使用文件系统手动移动解释器及其环境，则 Visual Studio 不会知道新位置。 有关更多信息，请参阅[移动解释器](installing-python-interpreters.md#moving-an-interpreter)。
+> 但是，如果你使用文件系统手动移动解释器及其环境，则 Visual Studio 不会知道新位置。 有关详细信息，请参阅[移动解释器](installing-python-interpreters.md#move-an-interpreter)。
 
 ## <a name="fix-or-delete-invalid-environments"></a>修复或删除无效环境
 
-如果 Visual Studio 找到环境的注册表项，但解释器的路径无效，则“Python 环境”窗口将显示名称并标注有删除线：
+如果 Visual Studio 找到环境的注册表项，但解释器的路径无效，则“Python 环境”窗口将显示标有删除线字体的名称：
 
 ![“Python 环境”窗口显示无效环境](media/environments-invalid-entry.png)
 
@@ -128,17 +129,15 @@ Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使�
 
 若要更正没有修复选项的环境，或删除无效环境，请使用以下步骤直接修改注册表。 更改注册表后，Visual Studio 会自动更新“Python 环境”窗口。
 
-1. 运行 `regedit.exe`。
-1. 对于 32 位解释器，请导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Python`；对于 64 位解释器，请导航到`HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python`。 对于 IronPython，则请查找 `IronPython`。
-1. 展开与分发匹配的节点，例如 CPython 为 `PythonCore`，或 Anaconda 为 `ContinuumAnalytics`。 对于 IronPython，请展开版本号节点。
-1. 检查 `InstallPath` 节点下的值：
+1. 运行 Regedit.exe。
+1. 导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Python（32 位解释器）或 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python（64 位解释器）。 对于 IronPython，则请查找 IronPython。
+1. 展开与分发匹配的节点，例如 CPython 为 PythonCore 或 Anaconda 为 ContinuumAnalytics。 对于 IronPython，请展开版本号节点。
+1. 检查 InstallPath 节点下的值：
 
     ![典型 CPython 安装的注册表项](media/environments-registry-entries.png)
 
-    - 如果计算机上仍存在该环境，请将 `ExecutablePath` 的值更改为正确位置。 同时根据需要更正 `(Default)` 和 `WindowedExecutablePath` 值。
-    - 如果计算机上不再存在该环境，并且想将其从“Python 环境”窗口中删除，请删除 `InstallPath` 的父节点，例如上图中的 `3.6`。
-
-<a name="manually-identifying-an-existing-environment"></a>
+    - 如果计算机上仍存在该环境，请将 ExecutablePath 的值更改为正确位置。 还根据需要更正“(默认)”值和 WindowedExecutablePath 值。
+    - 如果计算机上不再存在该环境，且想将其从“Python 环境”窗口中删除，请删除 InstallPath 的父节点，例如上图中的 3.6。
 
 ## <a name="manually-identify-an-existing-environment"></a>手动标识现有环境
 
@@ -150,9 +149,9 @@ Visual Studio 遵循 [PEP 514](https://www.python.org/dev/peps/pep-0514/)，使�
 
 1. 在“说明”字段中为该环境输入名称。
 
-1. 在“前缀路径”字段中输入或浏览（使用 **...**）到解释器的路径。
+1. （使用“...”）在“前缀路径”字段中输入或浏览解释器的路径。
 
-1. 如果 Visual Studio 监测到此位置存在 Python 解释器（如下所示的 conda 环境的路径），它将启用“自动检测”命令。 选择 “自动检测”填写剩余的字段。 你还可以手动填写这些字段。
+1. 如果 Visual Studio 监测到此位置存在 Python 解释器（如下所示的 conda 环境的路径），它将启用“自动检测”命令。 选择“自动检测”填写剩余的字段。 你还可以手动填写这些字段。
 
     ![启用“自动检测”命令](media/environments-custom-2.png)
 
@@ -176,7 +175,7 @@ Visual Studio 2017 版本 15.7 和更高版本。
 
     ![成功创建 Conda 环境](media/environments-conda-2.png)
 
-1. 如[为项目选择环境](selecting-a-python-environment-for-a-project.md)中所述，在 Visual Studio 中，可以像激活任何其他环境一样，为项目激活 Conda 环境。
+1. 如[为项目选择环境](selecting-a-python-environment-for-a-project.md)中所述，在 Visual Studio 中，可像激活任何其他环境一样，为项目激活 Conda 环境。
 
 1. 若要在环境中安装包，请使用[包选项卡](python-environments-window-tab-reference.md#packages-tab)。
 

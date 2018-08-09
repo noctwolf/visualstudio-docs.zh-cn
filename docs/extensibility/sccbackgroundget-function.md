@@ -1,5 +1,5 @@
 ---
-title: SccBackgroundGet 函数 |Microsoft 文档
+title: SccBackgroundGet 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e70720c9a26710c6d659ebac5b842bef3757eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e9ac53809a5735457d7604593e975bb764bbdf81
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136752"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639082"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
-此函数可检索从源代码管理每个指定的文件的无用户干预。  
+此函数检索从源代码管理每个指定的文件的无用户干预。  
   
 ## <a name="syntax"></a>语法  
   
@@ -37,18 +37,18 @@ SCCRTN SccBackgroundGet(
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+### <a name="parameters"></a>参数  
  pContext  
- [in]源控件插件的上下文指针。  
+ [in]源控件插件上下文指针。  
   
  nFiles  
  [in]中指定的文件数`lpFileNames`数组。  
   
  lpFileNames  
- [在中，out]要检索的文件名称的数组。  
+ [in、 out]要检索的文件的名称的数组。  
   
 > [!NOTE]
->  这些名称必须是完全限定的本地文件名。  
+>  名称必须是完全限定的本地文件名。  
   
  dwFlags  
  [in]命令标志 (`SCC_GET_ALL`， `SCC_GET_RECURSIVE`)。  
@@ -57,19 +57,19 @@ SCCRTN SccBackgroundGet(
  [in]与此操作关联的唯一值。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|操作已成功完成。|  
-|SCC_E_BACKGROUNDGETINPROGRESS|后台检索已正在的进行 （源代码管理插件应返回此仅当它不支持同时执行的批操作）。|  
-|SCC_I_OPERATIONCANCELED|正在完成前已取消操作。|  
+|SCC_E_BACKGROUNDGETINPROGRESS|后台检索已正在的进行 （源代码管理插件应返回这仅在不支持同时执行的批操作）。|  
+|SCC_I_OPERATIONCANCELED|正在完成之前已取消操作。|  
   
 ## <a name="remarks"></a>备注  
- 始终在不同于加载源代码管理插件线程上调用此函数。 此函数不应返回直到完成;但是，它可以多次调用与多个文件，会全部在同一时间的列表。  
+ 始终与加载源代码管理插件的不同线程上调用此函数。 此函数不应返回直到完成;但是，它可以多次调用与多个文件，同时在所有列表。  
   
- 使用`dwFlags`自变量是相同[SccGet](../extensibility/sccget-function.md)。  
+ 利用`dwFlags`参数等同于[SccGet](../extensibility/sccget-function.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)   
  [SccGet](../extensibility/sccget-function.md)

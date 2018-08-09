@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 50825ea0d610625c69955deea1599206053fb889
-ms.sourcegitcommit: 04a717340b4ab4efc82945fbb25dfe58add2ee4c
+ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32064605"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381642"
 ---
 # <a name="manage-application-resources-net"></a>管理应用程序资源 (.NET)
 
@@ -38,7 +38,7 @@ ms.locfileid: "32064605"
 
 - 右键单击“解决方案资源管理器”中的项目节点，并选择“属性”
 - 在“快速启动”窗口中键入“项目属性”
-- 在“解决方案资源管理器”窗口中，同时按 Alt+Enter
+- 在解决方案资源管理器窗口中，同时按 Alt+Enter
 
 选择“资源”  选项卡。如果你的项目尚未包含 .resx 文件，你可以添加一个，添加和删除不同类型的资源，并修改现有资源。
 

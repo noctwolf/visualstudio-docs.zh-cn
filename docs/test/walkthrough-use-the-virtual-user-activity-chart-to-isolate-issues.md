@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 002f52e63ad4e81273a027fa1048ba6465d4a401
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a937e06eadc1af0734ff34f043c97833e1be1c96
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179825"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382205"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 
 在本演练中，你将了解如何使用虚拟用户活动图来隔离运行负载测试的各个虚拟用户所遇到的错误。
 
- 虚拟用户活动图用于可视化与负载测试关联的虚拟用户活动。 图中的每一行代表一个虚拟用户。 虚拟用户活动图显示每个虚拟用户在测试期间所执行的操作。 这样，你便可以通过查看用户活动的模式和负载模式来隔离性能问题，关联失败的或速度缓慢的测试，并且查看具有其他虚拟用户活动的请求。 只有在运行完负载之后，虚拟用户活动图才可用。
+虚拟用户活动图用于可视化与负载测试关联的虚拟用户活动。 图中的每一行代表一个虚拟用户。 虚拟用户活动图显示每个虚拟用户在测试期间所执行的操作。 这样，你便可以通过查看用户活动的模式和负载模式来隔离性能问题，关联失败的或速度缓慢的测试，并且查看具有其他虚拟用户活动的请求。 只有在运行完负载之后，虚拟用户活动图才可用。
 
- 在本演练中，你将完成以下任务：
+在本演练中，将完成下列任务：
 
 -   了解如何使用下列与虚拟用户活动图关联的工具：
 
@@ -34,7 +34,7 @@ ms.locfileid: "39179825"
 
 -   使用虚拟用户活动图可分析特定虚拟用户遇到的错误，还可以查看存在问题的错误类型详细信息。
 
- 有关详细信息，请参阅[在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
+有关详细信息，请参阅[在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -46,7 +46,7 @@ ms.locfileid: "39179825"
 
     -   [创建和运行负载测试](http://msdn.microsoft.com/en-us/7041cbcf-9ab1-4579-98ff-8f296aeaded4)
 
-## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>打开在前面的演练中创建的 ColorWebApp 解决方案。
+## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>打开在前面演练中创建的 ColorWebApp 解决方案
 
 ### <a name="open-the-solution"></a>打开此解决方案
 
@@ -54,29 +54,28 @@ ms.locfileid: "39179825"
 
 2.  打开包含 LoadTest1.loadtest 的 ColorWebApp 解决方案。 此负载测试结果是通过执行本主题开头先决条件部分列出的三个演练中的步骤得到的。
 
-     本演练中的剩余步骤假定有一个名为“ColorWebApp”的 Web 应用程序、一个名为“ColorWebAppTest.webtest”的 Web 性能测试和一个名为“LoadTest1.loadtest”的负载测试。
+     本演练中的剩余步骤假定有一个名为 ColorWebApp 的 Web 应用程序、一个名为 ColorWebAppTest.webtest 的 Web 性能测试和一个名为 LoadTest1.loadtest 的负载测试。
 
 ## <a name="run-the-load-test"></a>运行负载测试
- 运行负载测试以收集虚拟用户活动数据。
 
-### <a name="run-the-load-test-to-collect-virtual-user-activity-data"></a>运行负载测试以收集虚拟用户活动数据
+运行负载测试以收集虚拟用户活动数据。
 
--   在“负载测试编辑器”中，选择工具栏上的“运行”按钮。 LoadTest1 开始运行。
+-   在负载测试编辑器中，选择工具栏上的“运行”按钮。 LoadTest1 开始运行。
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>在虚拟用户活动图中隔离问题
 
-运行负载测试并收集虚拟用户活动数据之后，可以在虚拟用户活动图中使用负载测试分析器的“详细信息”视图查看负载测试结果中的数据。 此外，还可以使用虚拟用户活动图来帮助隔离负载测试中的性能问题。
+运行负载测试并收集虚拟用户活动数据之后，可以在虚拟用户活动图中使用负载测试分析器的“详细信息”视图查看负载测试结果中的数据。 此外，还可以使用“虚拟用户活动图”来帮助隔离负载测试中的性能问题。
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>在负载测试结果中使用虚拟用户活动图
 
-1.  运行完负载测试之后，负载测试分析器中会显示负载测试结果的摘要页。 选择工具栏上的“关系图”按钮。
+1.  运行完负载测试之后，负载测试分析器中会显示负载测试结果的“摘要”页。 选择工具栏上的“关系图”按钮。
 
      此时将显示关系图视图。
 
 2.  在“页响应时间”关系图上，右键单击其中一个阈值冲突图标附近，然后选择“转到用户详细信息”。
 
     > [!NOTE]
-    > 也可以使用“负载测试编辑器”的工具栏中的“详细信息”按钮打开用户活动图。 但如果使用“转到用户详细信息”选项，虚拟用户活动图将在你在关系图中右键单击的测试部分自动放大。
+    > 也可以使用负载测试编辑器工具栏中的“详细信息”按钮打开用户活动图。 但如果使用“转到用户详细信息”选项，“虚拟用户活动图”将在关系图中右键单击的测试部分自动放大。
 
      将显示详细信息视图，“虚拟用户活动图”的焦点在发生阈值冲突的时间段上。
 
@@ -88,7 +87,7 @@ ms.locfileid: "39179825"
 
 5.  在“筛选结果”面板中，清除“显示成功结果”和“HttpError”复选框，但保留选中“ValidationRuleError”复选框。
 
-     根据前面演练中配置的阈值冲突的指定，“虚拟用户活动图”只显示在 Red.aspx 页中花费时间超过 3 秒的虚拟用户。
+     根据前面演练中配置的阈值冲突的指定，“虚拟用户活动图”只显示 Red.aspx 页中花费时间超过 3 秒的虚拟用户。
 
 6.  将鼠标光标停留在表示虚拟用户的水平线上，这些虚拟用户出现了阈值冲突的验证规则错误。
 
@@ -114,7 +113,7 @@ ms.locfileid: "39179825"
 
 8.  请注意，“测试日志”是一个链接。 选择“测试日志”链接。
 
-9. 与日志关联的 ColorWebTest Web 性能测试将在 Web 性能测试结果查看器中打开。 这样便可隔离发生阈值冲突的位置。
+9. 与日志关联的 ColorWebTest Web 性能测试将在“Web 性能测试结果查看器”中打开。 这样便可隔离发生阈值冲突的位置。
 
      可使用“详细信息图例”和“筛选结果”面板中的各种设置来帮助隔离性能问题和负载测试中的错误。 使用这些设置和“缩放到时间段”工具，可查看虚拟用户数据在“虚拟用户活动图”中的显示方式。
 

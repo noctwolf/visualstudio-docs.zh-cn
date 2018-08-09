@@ -52,13 +52,13 @@ ms.locfileid: "39081392"
   
  需要记住的重要一点是，应用程序排除`deploymentProvider`不能更改其安装位置期间更新，直到它们寄送包含的更新`deploymentProvider`再次标记。  
   
- 下面是两个示例来说明这一点。 在第一个示例中，发布 ClickOnce 应用程序不具有`deploymentProvider`标记，，并要求用户从http://www.adatum.com/MyApplication/。 如果你决定想要发布的应用程序的下一个更新http://subdomain.adatum.com/MyApplication/，没有任何办法来表明此驻留在的部署清单中的http://www.adatum.com/MyApplication/。 您可以执行两个操作之一：  
+ 下面是两个示例来说明这一点。 在第一个示例中，发布 ClickOnce 应用程序不具有`deploymentProvider`标记，，并要求用户从 http://www.adatum.com/MyApplication/ 。 如果你决定想要发布的应用程序的下一个更新 http://subdomain.adatum.com/MyApplication/，没有任何办法来表明此驻留在的部署清单中的 http://www.adatum.com/MyApplication/ 。 您可以执行两个操作之一：  
   
 -   告知用户卸载以前的版本，并从新位置中安装新版本。  
   
--   包括在更新http://www.adatum.com/MyApplication/，其中包含`deploymentProvider`指向http://www.adatum.com/MyApplication/。 然后，释放更高版本与另一个更新`deploymentProvider`指向http://subdomain.adatum.com/MyApplication/。  
+-   包括在更新 http://www.adatum.com/MyApplication/，其中包含 `deploymentProvider` 指向 http://www.adatum.com/MyApplication/ 。 然后，释放更高版本与另一个更新 `deploymentProvider` 指向 http://subdomain.adatum.com/MyApplication/ 。  
   
- 在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`下载客户端，您不能将重定向到之前发布了应用程序的版本，用于更新的路径`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
+ 在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`下载客户端，您不能将重定向到之前发布了应用程序的版本，用于更新的路径`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
   
 ## <a name="create-a-deployment"></a>创建部署  
  有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练： 手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).  
