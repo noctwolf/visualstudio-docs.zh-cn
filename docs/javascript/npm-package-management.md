@@ -13,18 +13,18 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 4cea1296c58bdf1bad79ca2d1af697969b56cdbb
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 571cc9048b9f932c0ff344637c144d0a6d649887
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924717"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388392"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
 可以使用 npm 来安装和管理要在 Node.js 应用程序中使用的包。 如果不熟悉 npm 并想要详细了解，请转到 [npm 文档](https://docs.npmjs.com/)。
 
-使用 Visual Studio 可轻松地通过 UI 或直接使用 or 与 npm 交互并发出 npm 命令。 可以使用以下方法：
+使用 Visual Studio 可轻松地通过 UI 或直接与 npm 交互并发出 npm 命令。 可以使用以下方法：
 * [从解决方案资源管理器安装包](#npmInstallWindow)
 * [从解决方案资源管理器管理安装的包](#solutionExplorer)
 * [在 Node.js 交互式窗口中使用 `.npm` 命令](#interactive)

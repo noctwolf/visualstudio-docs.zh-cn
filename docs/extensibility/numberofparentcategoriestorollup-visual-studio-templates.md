@@ -1,5 +1,5 @@
 ---
-title: NumberOfParentCategoriesToRollUp （Visual Studio 模板） |Microsoft 文档
+title: NumberOfParentCategoriesToRollUp （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e94e4b67727308657becac829bcdd30e571a2be6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e6c3eae15aaa4aa7b81148915fc2c59fee723230
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137455"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639508"
 ---
-# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp（Visual Studio 模板）
-指定的数将显示在此模板的父类别**新项目**对话框。  
+# <a name="numberofparentcategoriestorollup-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp （Visual Studio 模板）
+指定将显示在此模板的父类别数**新的项目**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -56,13 +56,13 @@ ms.locfileid: "31137455"
 ## <a name="text-value"></a>文本值  
  `integer`值是必需的。  
   
- 此值指定的父类别将显示中的模板数**新项目**对话框。  
+ 此值指定父类别将显示中的模板数**新的项目**对话框。  
   
 ## <a name="remarks"></a>备注  
  `NumberOfParentCategoriesToRollUp` 是可选元素。  
   
 ## <a name="example"></a>示例  
- 此示例演示如何的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。 如果具有此元数据的模板放置两个文件夹级别最高级别的下方[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]节点，该模板将出现在中的顶级节点**新项目**对话框。 如果`NumberOfParentCategoriesToRollUp`未设置，该模板仅出现在节点中它是以物理方式位于。  
+ 此示例中演示的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 应用程序。 如果与此元数据模板位于两个文件夹级别下的顶级[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]节点，该模板将显示在顶级节点**新建项目**对话框。 如果`NumberOfParentCategoriesToRollUp`未设置，该模板仅的节点中显示它是物理位置。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +89,6 @@ ms.locfileid: "31137455"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

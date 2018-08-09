@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: de90977a239bf728de3fa98978fd134a014200db
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180069"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380663"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：创建 Web 服务测试
 
@@ -60,7 +60,7 @@ ms.locfileid: "39180069"
      </soap:Envelope>
      ```
 
-9. 返回到“Web 性能测试编辑器”，然后选择“字符串正文”属性中的省略号 (…)。 将剪贴板中的内容粘贴到该属性中。
+9. 返回到“Web 性能测试编辑器”，然后选择“字符串正文”属性中的省略号“(…)”。 将剪贴板中的内容粘贴到该属性中。
 
 10. 为使测试通过，必须用有效值替换 XML 中的所有占位符值。 在前面的示例中，将替换两个 `string` 实例和一个 `int`。 只有注册用户发出请求时才能完成此 Web 服务操作。
 

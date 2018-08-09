@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7503bc77f9cd857a0a551ff3862e2aa9824583ce
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d9a0b40ad057622636581aafdd554dfa162ac2ac
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975841"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381481"
 ---
-# <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码的 UI 测试等待特定事件
+# <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码 UI 测试等待特定事件
 
 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请使用合适的 UITestControl.WaitForControlXXX() 方法，如下表中所述。 有关使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。
 
@@ -25,7 +25,7 @@ ms.locfileid: "31975841"
  Visual Studio Enterprise
 
 > [!TIP]
-> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅 [How to: Insert a Delay Before a UI Action Using the Coded UI Test Editor](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)（如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟）。
+> 使用编码的 UI 测试编辑器，还可以在操作之前添加延迟。 有关详细信息，请参阅[如何：使用编码的 UI 测试编辑器在 UI 操作之前插入延迟](http://msdn.microsoft.com/Library/509f8ef7-e105-4049-b11b-d64549e055b0)。
 
 
  **UITestControl.WaitForControlXXX() 方法**

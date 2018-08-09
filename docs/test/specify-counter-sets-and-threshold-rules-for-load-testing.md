@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c48928f22ceabea4d5961096e6749ccf01e46176
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4277935750aa4d0ba081f5117806892bbf948556
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180636"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382365"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 
@@ -39,8 +39,8 @@ ms.locfileid: "39180636"
 
 |任务|相关主题|
 |-----------|-----------------------|
-|**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   [如何：管理计数器集](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
-|**向负载测试添加计数器集：** 在使用新建负载测试向导创建负载测试时，会添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
+|**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   如何：管理计数器集[](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
+|**向负载测试添加计数器集：** 在使用“新建负载测试向导”创建负载测试时，可添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**指定对负载测试使用计数器的阈值规则：** 阈值规则是对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 负载测试中的阈值规则将一个性能计数器值与一个常数值或另一个性能计数器值进行比较。|-   [如何：添加阈值规则](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
 |**为计数器集映射到的计算机指定友好名称：** 可以添加计算机标记，通过这些标记可向计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。|-   [如何：向计数器集映射添加计算机标记](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
 
@@ -81,7 +81,7 @@ ms.locfileid: "39180636"
 
 “阈值规则”即对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 有关详细信息，请参阅[使用计数器集帮助分析负载测试中的性能计数器数据](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
-## <a name="threshold-rules-and-levels"></a>阈值规则和等级
+## <a name="threshold-rules-and-levels"></a>阈值规则和级别
 
 在负载测试中创建阈值规则时，可以在两种规则中进行选择：
 

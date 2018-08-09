@@ -1,5 +1,5 @@
 ---
-title: 引用元素 （Visual Studio 模板） |Microsoft 文档
+title: 引用元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e0217360b2a8e9c6c8e723561aff383ed3226d1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b1f05bc8a19377576788fdb72400bf0af566b796
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136292"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638106"
 ---
-# <a name="reference-element-visual-studio-templates"></a>Reference 元素（Visual Studio 模板）
+# <a name="reference-element-visual-studio-templates"></a>Reference 元素 （Visual Studio 模板）
 指定向项目添加项时要添加的程序集引用。  
   
  \<VSTemplate >  
@@ -33,7 +33,7 @@ ms.locfileid: "31136292"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Reference>  
     <Assembly> ... </Assembly>  
 </Reference>  
@@ -49,7 +49,7 @@ ms.locfileid: "31136292"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定有关程序集，该模板使用将该程序集的引用添加到项目的信息。 必须有一个`Assembly`元素中的每个`Reference`元素。|  
+|[Assembly](../extensibility/assembly-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定有关程序集，该模板使用以将该程序集的引用添加到项目的信息。 必须有一个`Assembly`元素中的每个`Reference`元素。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -60,12 +60,12 @@ ms.locfileid: "31136292"
 ## <a name="remarks"></a>备注  
  `Reference` 是 `References` 的必需子元素。  
   
- `Reference`和`References`仅可以具有的.vstemplate 文件中使用元素`Type`属性的值`Item`。  
+ `Reference`并`References`元素仅可在 *.vstemplate*具有文件`Type`属性的值`Item`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示`TemplateContent`项模板的元素。 此 XML 添加 System.dll 和 System.Data.dll 程序集的引用。  
+ 下面的示例演示`TemplateContent`项模板的元素。 此 XML 将引用添加到*System.dll*并*System.Data.dll*程序集。  
   
-```  
+```xml  
 <TemplateContent>  
     <References>  
         <Reference>  
@@ -83,6 +83,6 @@ ms.locfileid: "31136292"
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

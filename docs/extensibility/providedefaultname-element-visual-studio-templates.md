@@ -1,5 +1,5 @@
 ---
-title: ProvideDefaultName 元素 （Visual Studio 模板） |Microsoft 文档
+title: ProvideDefaultName 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbe291c838d006bea62450f7e397cde7e5d09ee3
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: a187df0e50a2948ab6f1ef3a0fffea651dca23b9
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454371"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636007"
 ---
-# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素（Visual Studio 模板）
-指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统将生成中的模板的默认名称**添加新项**或**新项目**对话框。  
+# <a name="providedefaultname-element-visual-studio-templates"></a>ProvideDefaultName 元素 （Visual Studio 模板）
+指定是否[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目系统将生成的模板中的默认名称**添加新项**或**新项目**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -31,7 +31,7 @@ ms.locfileid: "34454371"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ProvideDefaultName> true/false </ProvideDefaultName>  
 ```  
   
@@ -53,14 +53,14 @@ ms.locfileid: "34454371"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 文本必须是`true`或`false`，指示是否生成中的模板的默认名称**添加新项**或**新项目**对话框。  
+ 文本必须是`true`或`false`，，该值指示是否生成中的模板的默认名称**添加新项**或**新项目**对话框。  
   
 ## <a name="remarks"></a>备注  
  `ProvideDefaultName` 是可选元素。 默认值为 `true`。  
   
- 如果`ProvideDefaultName`元素是`false`、**名称**框**添加新项**和**新项目**对话框包含值`<Enter_name>`。  
+ 如果`ProvideDefaultName`元素是`false`，则**名称**对应的框**添加新项**并**新项目**对话框还包含值`<Enter_name>`。  
   
- 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)元素，以指定项目的默认名称或项以**添加新项**和**新项目**对话框。 时的值`ProvideDefaultName`元素是`true`，省略`DefaultName`的项目元素填充模板的名称，即，从值在对话框中[名称](../extensibility/name-element-visual-studio-templates.md)元素。
+ 使用[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)指定项目的默认名称或项中的元素**添加新项**并**新项目**对话框。 时的值`ProvideDefaultName`元素是`true`，省略`DefaultName`元素的项目填充模板的名称，即从值的对话框[名称](../extensibility/name-element-visual-studio-templates.md)元素。
   
 ## <a name="example"></a>示例  
  下面的代码示例设置`ProvideDefaultName`元素`false`。  

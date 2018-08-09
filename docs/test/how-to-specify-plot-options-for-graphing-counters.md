@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7a5f87a83b8c743ae869a700618051e07c8c2e75
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5df33a8cf05e4ad73b1643e2948392e49a32356e
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750917"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382316"
 ---
 # <a name="how-to-specify-plot-options-for-graphing-counters"></a>如何：为绘图计数器指定绘图选项
 
@@ -25,7 +25,7 @@ ms.locfileid: "34750917"
 
 ## <a name="to-specify-plotting-options-for-graphs"></a>指定关系图的绘图选项
 
-1.  在负载测试分析器中，选择负载测试工具栏上的“关系图”。
+1.  在负载测试分析器中，选择工具栏上的“关系图”。
 
      这将在关系图视图中显示负载测试结果。
 
@@ -53,4 +53,3 @@ ms.locfileid: "34750917"
 
 - [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [如何：创建自定义关系图](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)

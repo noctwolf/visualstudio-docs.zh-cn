@@ -10,14 +10,14 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c46b5fffb2cde0298c252c7317f82654ce6defdc
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154217"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252461"
 ---
-# <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
+# <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 
@@ -93,4 +93,4 @@ ms.locfileid: "39154217"
 
 ## <a name="next-steps"></a>后续步骤
 
- 要学习如何在 Visual Studio 中使用和调试 Unity 项目，请参阅 [Using Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)。
+ 要学习如何在 Visual Studio 中使用和调试 Unity 项目，请参阅 [Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)。

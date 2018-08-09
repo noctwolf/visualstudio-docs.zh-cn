@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 44994b7b643d63f548092aba9a878b939f3968af
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 6fcf55ed90d2fe73c37ebc6d88e9d88bbc3f11f3
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34750989"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381965"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 
@@ -46,7 +46,7 @@ ms.locfileid: "34750989"
 5.  （可选）选中“如果测试用例通过则保存录制内容”旁边的复选框，以指定为失败的测试和通过的测试保存屏幕和语音录制。
 
     > [!WARNING]
-    > 如果选择“如果测试用例通过则保存录制内容”，则该录制将与测试结果一起存储，这将占用服务器上的存储空间。 你可使用测试附件清理器工具来清理这些附件。
+    > 如果选择“如果测试用例通过则保存录制内容”，则该录制将与测试结果一起存储，这将占用服务器上的存储空间。 可使用“测试附件清理器”工具来清理这些附件。
 
 6.  在“屏幕录制质量”下，配置以下下拉列表选项：
 

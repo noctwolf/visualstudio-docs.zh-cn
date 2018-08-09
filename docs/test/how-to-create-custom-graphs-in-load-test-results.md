@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 633c309193c23834b4848e189fdf677f0abc8ef0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7de5d684b0a4299c2f3d90e4a00338c55d2d6870
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965120"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381994"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在负载测试结果中创建自定义关系图
 
@@ -30,13 +30,13 @@ ms.locfileid: "31965120"
 
      \- 或 -
 
-     在负载测试分析器上，右键单击“计数器”面板或右键单击关系图，然后选择“添加关系图”。
+     在“负载测试分析器”上，右键单击“计数器”面板或右键单击关系图，然后选择“添加关系图”。
 
      随即显示“请输入关系图名称”对话框。
 
 2.  在“关系图名称”下，键入关系图的名称，然后选择“确定”。
 
-     新关系图将出现在负载测试分析器中。 新关系图还会出现在当前所选的关系图面板中，并替换该面板中原来显示的关系图。
+     新关系图将出现在“负载测试分析器”中。 新关系图还会出现在当前所选的关系图面板中，并替换该面板中原来显示的关系图。
 
 3.  通过添加计数器来自定义新的关系图。 有关详细信息，请参阅[如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)。
 

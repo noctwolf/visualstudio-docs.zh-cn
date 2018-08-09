@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 114551c97fb64d17584bb32327c8bbc35eef4739
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178356"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380161"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：创建 Web 性能测试插件
 
@@ -49,7 +49,7 @@ ms.locfileid: "39178356"
 
 7.  新的类库项目将添加到解决方案资源管理器中，并且新类会出现在代码编辑器中。
 
-8.  在“解决方案资源管理器”中，右击新类库中的“引用”文件夹并选择“添加引用”。
+8.  在解决方案资源管理器中，右击新类库中的“引用”文件夹并选择“添加引用”。
 
 9. 将显示“添加引用”对话框。
 
@@ -57,9 +57,9 @@ ms.locfileid: "39178356"
 
 11. 选择 **“确定”**。
 
-     对“Microsoft.VisualStudio.QualityTools.WebTestFramework”的引用将添加到解决方案资源管理器中的“引用”文件夹中。
+     对“Microsoft.VisualStudio.QualityTools.WebTestFramework”的引用将添加到解决方案资源管理器的“引用”文件夹中。
 
-12. 在解决方案资源管理器中，右键单击包含负载测试（要向该负载测试中添加 Web 性能测试插件）的 Web 性能和负载测试项目的顶级节点，然后选择“添加引用”。
+12. 在解决方案资源管理器中，右键单击 Web 性能和负载测试项目（其中包含要添加 Web 性能测试插件的负载测试）的顶级节点，然后选择“添加引用”。
 
 13. 将显示“添加引用”对话框。
 

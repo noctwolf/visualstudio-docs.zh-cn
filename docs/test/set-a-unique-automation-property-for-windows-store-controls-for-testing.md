@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: fbb815dc17e8b71efcefee8410faa01df0914e35
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: b0204a8e86d110fe30240b11b6323c31e79fb841
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692351"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382734"
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>为 UWP 控件设置唯一的自动化属性以进行测试
 
@@ -48,13 +48,13 @@ ms.locfileid: "34692351"
 
 在控件 XAML 中将 AutomationProperties.Name 显式设为“ButtonY”。
 
-```
+```xaml
 <Button AutomationProperties.Name="ButtonY" Height="31" HorizontalAlignment="Left" Margin="23,76,0,0" VerticalAlignment="Top" Width="140" Click="ButtonY_Click" />
 ```
 
 ## <a name="assign-unique-names"></a>分配唯一的名称
 
-在 Blend for Visual Studio 中，可以选择一个选项为按钮、列表框、组合框和文本框等交互元素分配唯一名称。 这会为控件指定 AutomationProperties.Name 唯一值。
+在 Blend for Visual Studio 中，可以选择一个选项为按钮、列表框、组合框和文本框等交互元素分配唯一名称，因此授予了控件 AutomationProperties.Name 的唯一值。
 
 为了将唯一的名称分配到现有控件，请选择“工具” > “命名交互元素”。
 
@@ -149,7 +149,7 @@ public override string ToString()
 
 ### <a name="dynamic-controls"></a>动态控件
 
-如果控件是通过代码动态创建，而不是静态创建或通过 XAML 文件中的模板创建而成，必须为控件设置 Content 或 Name 属性。 这样可以确保每个动态控件都拥有唯一自动化属性。 例如，如果必须在用户选择列表项时显示复选框，可以设置这些属性，如下所示：
+如果控件是通过代码动态创建，而不是静态创建或通过 XAML 文件中的模板创建而成，必须为控件设置 Content 或 Name 属性。 此操作可确保每个动态控件都拥有唯一自动化属性。 例如，如果必须在用户选择列表项时显示复选框，可以设置这些属性，如下所示：
 
 ```csharp
 private void CreateCheckBox(string txt, StackPanel panel)

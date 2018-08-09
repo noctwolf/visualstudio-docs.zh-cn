@@ -1,5 +1,5 @@
 ---
-title: 本地化菜单命令 |Microsoft 文档
+title: 本地化菜单命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,38 +18,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4fd8f2b42464b31c71b2983dd3e5c66f4a03351
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142703"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638025"
 ---
-# <a name="localizing-menu-commands"></a>本地化菜单命令
-你可以提供本地化的文本的菜单和工具栏通过创建本地化的.vsct 文件的命令和本地化以及你的 VSPackage，然后更新项目文件的更改合并的.resx 文件。  
+# <a name="localize-menu-commands"></a>本地化菜单命令
+您可以通过创建本地化提供菜单和工具栏命令的本地化的文本 *.vsct*文件，并本地化 *.resx*为你的 VSPackage，以及然后更新项目文件将合并的文件更改。  
   
- 有关如何本地化安装体验的信息，请参阅[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)。  
+ 有关如何将本地化安装体验的信息，请参阅[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)。  
   
-## <a name="localizing-command-names"></a>本地化的命令名称  
- 在 Vspackage 中，在.vsct 文件中定义是菜单命令和工具栏按钮。  
+## <a name="localize-command-names"></a>本地化的命令名称  
+ 在 Vspackage 中，菜单命令和工具栏按钮中定义 *.vsct*文件。  
   
-1.  在**解决方案资源管理器**，更改中的.vsct 文件的名称*filename*到.vsct *filename*.en US.vsct。  
+1.  在中**解决方案资源管理器**，更改的名称 *.vsct*从文件*filename.vsct*到*filename.en US.vsct*。  
   
-2.  制作的副本*filename*.en-US.vsct 每个本地化语言。  
+2.  制作一份*filename.en US.vsct*为每个本地化语言。  
   
-     将每个副本*filename*。*区域设置*.vsct，其中*区域设置*是特定区域性名称。 区域性名称值的列表，请参阅[由 Microsoft 分配的区域设置 Id](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
+     命名每个副本*文件名。 {区域设置}.vsct*，其中 *{区域}* 是特定区域性名称。 有关区域性名称值的列表，请参阅[Microsoft 分配的区域设置 Id](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
   
-     这些*filename*。*区域设置*.vsct 文件将包含你的包的本地化的菜单文本。  
+     这些*文件名。Locale.vsct*文件将包含包的本地化的菜单文本。  
   
-3.  打开每个*filename*。*区域设置*.vsct 文件的文本进行本地化。  
+3.  打开每个*文件名。Locale.vsct*文件将文本本地化。  
   
-    1.  修改[ButtonText](../extensibility/buttontext-element.md)元素值以适合特定的语言。  
+    1.  修改[ButtonText](../extensibility/buttontext-element.md)值以适合特定语言元素。  
   
-    2.  如果你将提供本地化的图标，修改[位图](../extensibility/bitmap-element.md)值指向的目标文件。  
+    2.  如果将提供本地化的图标，修改[位图](../extensibility/bitmap-element.md)值以指向目标文件。  
   
-     下面的示例演示命令，以打开系列树资源管理器工具窗口的英语和西班牙语按钮文本。  
+     下面的示例显示了英语和西班牙语按钮文本命令，以打开家族树资源管理器工具窗口。  
   
-     [FamilyTree.en US.vsct]  
+     [*FamilyTree.en US.vsct*]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -62,7 +62,7 @@ ms.locfileid: "31142703"
     </Button>  
     ```  
   
-     [FamilyTree.es ES.vsct]  
+     [*FamilyTree.es ES.vsct*]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -76,24 +76,24 @@ ms.locfileid: "31142703"
   
     ```  
   
-## <a name="localizing-other-text-resources"></a>本地化文本中的其他资源  
- 资源 (.resx) 文件中定义了文本资源而不是命令名称。  
+## <a name="localize-other-text-resources"></a>将其他文本资源本地化  
+ 在资源中定义文本资源而不是命令名称 (*.resx*) 文件。  
   
-1.  将 VSPackage.resx 重命名为 VSPackage.en US.resx。  
+1.  重命名*VSPackage.resx*到*VSPackage.en US.resx*。  
   
-2.  请为每种本地化语言 VSPackage.en US.resx 文件的副本。  
+2.  制作一份*VSPackage.en US.resx*文件为每个本地化语言。  
   
-     将每个副本 VSPackage。*区域设置*.resx，其中*区域设置*是特定区域性名称。  
+     命名每个副本*VSPackage。 {区域设置}.resx*，其中 *{区域}* 是特定区域性名称。  
   
-3.  将 Resources.resx 重命名为 Resources.en US.resx。  
+3.  重命名*Resources.resx*到*Resources.en-us.resx*。  
   
-4.  请为每种本地化语言 Resources.en US.resx 文件的副本。  
+4.  制作一份*Resources.en-us.resx*文件为每个本地化语言。  
   
-     将每个副本的资源。*区域设置*.resx，其中*区域设置*是特定区域性名称。  
+     命名每个副本*资源。 {区域设置}.resx*，其中 *{区域}* 是特定区域性名称。  
   
-5.  打开每个.resx 文件中以修改作为适用于特定语言和区域性的字符串值。 下面的示例显示一个工具窗口的标题栏的本地化的资源定义。  
+5.  打开每个 *.resx*文件若要修改的字符串值以适合特定的语言和区域性。 下面的示例显示了一个工具窗口的标题栏的已本地化的资源定义。  
   
-     [Resources.en US.resx]  
+     [*Resources.en-us.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -101,7 +101,7 @@ ms.locfileid: "31142703"
     </data>  
     ```  
   
-     [Resources.es ES.resx]  
+     [*Resources.es-ES.resx*]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -110,26 +110,26 @@ ms.locfileid: "31142703"
   
     ```  
   
-## <a name="incorporating-localized-resources-into-the-project"></a>将本地化的资源合并到项目  
- 你必须修改 assemblyinfo.cs 文件和项目文件以合并的本地化的资源。  
+## <a name="incorporate-localized-resources-into-the-project"></a>将本地化的资源合并到项目  
+ 必须修改*assemblyinfo.cs*文件和要合并的本地化的资源的项目文件。  
   
-1.  从**属性**中的节点**解决方案资源管理器**，在编辑器中打开 assemblyinfo.cs 或 assemblyinfo.vb。  
+1.  从**属性**中的节点**解决方案资源管理器**，打开*assemblyinfo.cs*或者*assemblyinfo.vb*在编辑器中。  
   
-2.  添加以下一项。  
+2.  添加以下条目。  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
     ```  
   
-     这将设置美国英语为默认语言。  
+     这将为默认语言设置美国英语。  
   
 3.  卸载项目。  
   
 4.  在编辑器中打开项目文件。  
   
-5.  找到`ItemGroup`包含的元素`EmbeddedResource`元素。  
+5.  找到`ItemGroup`元素，其中包含`EmbeddedResource`元素。  
   
-6.  在`EmbeddedResource`调用 VSPackage.en US.resx 的元素替换`ManifestResourceName`具有元素`LogicalName`元素，设置为`VSPackage.en-US.Resources`、，如下所示。  
+6.  中`EmbeddedResource`调用的元素*VSPackage.en US.resx*，将为`ManifestResourceName`具有元素`LogicalName`元素中，将设置为`VSPackage.en-US.Resources`，按如下所示。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -138,9 +138,9 @@ ms.locfileid: "31142703"
     </EmbeddedResource>  
     ```  
   
-7.  对于每种本地化语言复制`EmbeddedResource`VsPackage.en 美国并设置的元素**包括**属性和**LogicalName**元素复制到目标区域设置，如以下所示示例。  
+7.  对于每种本地化语言，复制`EmbeddedResource`的元素`VsPackage.en-US`，并设置**Include**属性和**LogicalName**元素复制到目标区域设置，如以下所示示例。  
   
-8.  给每个本地化`VSCTCompile`元素中，添加`ResourceName`指向的元素`Menus.ctmenu`，下面的示例中所示。  
+8.  向每个本地化`VSCTCompile`元素中，添加`ResourceName`指向的元素`Menus.ctmenu`，如以下示例所示。  
   
     ```xml  
     <ItemGroup>  
@@ -154,9 +154,9 @@ ms.locfileid: "31142703"
   
 10. 生成项目。  
   
-     这将创建一个主要的程序集，并为每种语言的资源程序集。 本地化的部署过程的信息，请参阅[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)  
+     这将创建主程序集，并为每种语言的资源程序集。 本地化的部署过程的信息，请参阅[本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands 与OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
- [对应用程序进行全球化和本地化](../ide/globalizing-and-localizing-applications.md)
+ [全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)

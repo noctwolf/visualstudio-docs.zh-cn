@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c84099307d3a33db7b1d4861c9c0794fbf64d2f4
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: f5e7a56ff01e06c0d5046ab477ec78635f01f6c4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38977601"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381906"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 
@@ -28,9 +28,9 @@ ms.locfileid: "38977601"
 
 如果负载测试只包含“运行设置”文件夹下的一个运行设置节点，那么该节点始终为活动节点。 如果负载测试包含多个运行测试节点，则可以选择一个在运行负载测试时要使用的节点。 请参阅[如何：向负载测试中添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
 
-在“负载测试编辑器”中，活动运行设置以“[Active]”后缀来标识。
+在负载测试编辑器中，以“[Active]”后缀来标识活动运行设置。
 
-## <a name="select-the-active-run-setting"></a>选择活动的运行设置
+## <a name="select-the-active-run-setting"></a>选择活动运行设置
 
 ### <a name="to-select-the-active-run-setting-in-a-load-test"></a>在负载测试中选择活动的运行设置
 
@@ -61,4 +61,4 @@ ms.locfileid: "38977601"
 
 - [配置负载测试运行设置](../test/configure-load-test-run-settings.md)
 - [为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [如何：向负载测试中添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [如何：向负载测试添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)

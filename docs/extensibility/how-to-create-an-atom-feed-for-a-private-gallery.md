@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建 Atom 馈送为专用库 |Microsoft 文档
+title: 如何： 创建 Atom 馈送专用库 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,32 +14,32 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc39e4d11d826741239f11f62955fa4d2fb167cb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ea9df0bac68f9c16f5442d04fa4229f21bb29b2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127472"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638487"
 ---
-# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送为专用库
-你可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
+# <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送专用库
+您可以创建 Atom (RSS) 源到 intranet 位置包含扩展并添加到的源**扩展和更新**作为专用库。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。  
   
-## <a name="creating-an-atom-feed"></a>创建 Atom 馈送  
- 若要创建 Atom 馈送作为专用库，你首先收集有关你的扩展 （.vsix 文件） 到一个文件夹。 可以将它们添加到子文件夹如果你想。 你将需要以下资源：  
+## <a name="create-an-atom-feed"></a>创建 Atom 馈送  
+ 若要创建 Atom 馈送作为专用库，则先收集你的扩展 (*.vsix*文件) 的文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：  
   
--   使扩展作为专用库可用 atom.xml 文件。 有关如何连接到的 atom.xml 文件信息**扩展和更新**，请参阅[私有库](../extensibility/private-galleries.md)。  
+-   *Atom.xml*提供扩展作为专用库的文件。 有关如何连接信息*atom.xml*的文件**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。  
   
--   包含已从扩展 （例如，屏幕快照） 中提取任何图像文件的文件夹。 Atom.xml 文件包含这些图像的相对链接，以便在提供了**扩展和更新**。  
+-   包含已从扩展插件 （例如，屏幕截图） 中提取任何图像文件的文件夹。 *Atom.xml*文件，使他们能够在包含这些图像的相对链接**扩展和更新**。  
   
- 例如，假定你已经以下两种扩展收集到文件夹：  
+ 例如，假设您到文件夹收集了以下两个扩展：  
   
--   Template_Wizard_239.vsix，这是一个空的 VSIX 项目模板。  
+-   *Template_Wizard_239.vsix*，这是一个空的 VSIX 项目模板。  
   
--   SelectionHighlight.vsix，是一种工具以突出显示所选单词的所有实例。  
+-   *SelectionHighlight.vsix*，这是一个工具，可突出显示所选单词的所有实例。  
   
- Atom.xml 文件的内容类似于下面的示例：  
+ 内容*atom.xml*文件将类似于下面的示例：  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>   
 <feed xmlns="http://www.w3.org/2005/Atom">  
 <title type="text" />   
@@ -73,7 +73,7 @@ ms.locfileid: "31127472"
 </feed>
 ```  
   
- 请注意两个链接标记引用的映像的生成文件夹中的屏幕截图。  
+ 请注意，这两个链接标记引用的映像的生成文件夹中的屏幕截图。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [专用库](../extensibility/private-galleries.md)

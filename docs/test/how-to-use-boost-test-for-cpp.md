@@ -9,12 +9,12 @@ ms.author: mblome
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cca918309c0febb7b9c86b214d459a6bc8e37be
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: eebefa7b4033de5acec313e241d13cddab7120fa
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945479"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380445"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Boost.Test
 
@@ -28,7 +28,7 @@ ms.locfileid: "37945479"
 
 Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则建议使用 Vcpkg 程序包管理器。
 
-1. 按照 [Vcpkg：适用于 Windows 的 C++ 程序包管理器](/cpp/vcpkg)中的说明来安装 vcpkg（如果尚未安装）。
+1. 按照 [Vcpkg：适用于 Windows 的 C++ 包管理器](/cpp/vcpkg)中的说明来安装 vcpkg（如果尚未安装）。
 
 1. 安装 Boost.Test 动态或静态库：
 
@@ -42,7 +42,7 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 
 ## <a name="add-the-item-template-visual-studio-2017-version-156-and-later"></a>添加项模板（Visual Studio 2017 版本 15.6 及更高版本）
 
-1. 要创建用于测试的 .cpp 文件，右键单击“解决方案资源管理器”中的项目节点，然后选择“添加新项”。
+1. 要创建用于测试的 .cpp 文件，右键单击解决方案资源管理器中的项目节点，然后选择“添加新项”。
 
    ![Boost.Test 项模板](media/boost_test_item_template.png)
 
@@ -59,6 +59,7 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
 1. 在左窗格中，选择“Visual C++” > “Windows 桌面”，然后选择“Windows 控制台应用程序”模板。
 
 1. 为项目提供名称，然后选择“确定”。
+
 1. 删除 .cpp 文件中的 `main` 功能。
 
 1. 如果你使用的是 Boost.Test 的单标头或动态库版本，请转到[添加 include 指令](#add-include-directives)。 如果你使用的是静态库版本，则必须执行一些额外的配置：
@@ -74,13 +75,13 @@ Boost.Test 需要[Boost](http://www.boost.org/)！ 如果未安装 Boost，则�
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
-   c. 保存并关闭 \*.vcxproj 文件，然后重新加载该项目。
+   c. 保存并关闭 \*.vcxproj 文件，然后重载该项目。
 
    d. 若要打开“属性页”，右键单击项目节点并选择“属性”。
 
    d. 展开“C/C++” > “代码生成”，然后选择“运行时库”。 为调试静态运行时库选择“/MTd”，为发布静态运行时库选择“/MT”。
 
-   f. 展开“链接器”>“系统”。 验证“子系统”是否设置为“控制台”。
+   f. 展开“链接器” > “系统”。 验证“子系统”是否设置为“控制台”。
 
    g. 单击“确定”关闭属性页。
 
@@ -124,7 +125,9 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 ```
 
 ## <a name="write-and-run-tests"></a>编写和运行测试
-现在已准备就绪，可以编写和运行 Boost Test。 有关测试宏的信息，请参阅 [Boost Test 库文档](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
+
+现已准备就绪，可编写和运行 Boost Test。 有关测试宏的信息，请参阅 [Boost Test 库文档](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>请参阅
-[编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+
+- [编写适用于 C/C++ 的单元测试](writing-unit-tests-for-c-cpp.md)

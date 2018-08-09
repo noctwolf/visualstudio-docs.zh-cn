@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 138cff5920eef205cf8235ed0532754a843bbf46
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 187822c0217e6aca4f8828c82274520a35e8afe2
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177043"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380639"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
@@ -44,7 +44,7 @@ ms.locfileid: "39177043"
 
 3.  在模板列表中，选择“Windows 窗体控件库”。
 
-4.  在“名称”文本框中，键入名称，例如 `MessageEditors`，并选择“确定”。
+4.  在“名称”文本框中，键入名称（例如 `MessageEditors`），并选择“确定”。
 
     > [!NOTE]
     > 此示例使用 MessageEditors。
@@ -55,19 +55,19 @@ ms.locfileid: "39177043"
 
 6.  选择 <xref:System.Windows.Forms.RichTextBox> 控件右上角的操作标记标志符号（![智能标记字形](../test/media/vs_winformsmttagglyph.gif)），然后选择“在父容器中停靠”。
 
-7.  在解决方案资源管理器中，右键单击 Windows 窗体库项目，然后选择“属性”。
+7.  在解决方案资源管理器中，右键单击“Windows 窗体库”项目，然后选择“属性”。
 
 8.  在“属性”中，选择“应用程序”选项卡。
 
 9. 在“目标框架”下拉列表中，选择“.NET Framework 4”。
 
-10. “目标 Framework 更改”对话框随即显示。
+10. 随即显示“目标框架更改”对话框。
 
 11. 选择 **“是”**。
 
 12. 在解决方案资源管理器中，右键单击“引用”节点并选择“添加引用”。
 
-13. “添加引用”对话框随即显示。
+13. 将显示“添加引用”对话框。
 
 14. 选择“.NET”选项卡，向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
 
@@ -121,7 +121,7 @@ ms.locfileid: "39177043"
    }
    ```
 
-## <a name="add-a-class-for-to-the-windows-control-library-project"></a>向 Windows 控件库项目中添加类
+## <a name="add-a-class-to-the-windows-control-library-project"></a>向 Windows 控件库项目中添加类
 
 向项目中添加类。 该类将用于实现 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 和 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin> 接口。
 
@@ -309,13 +309,13 @@ messageEditorControl 实例承载在 <xref:Microsoft.VisualStudio.TestTools.WebT
 
      “编辑 HTTP 主体数据”对话框随即显示。
 
-5.  您现在即可编辑数据，然后选择“确定”。 此操作会调用适用的 GetNewValue 方法以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容。
+5.  现在即可编辑数据，然后选择“确定”。 此操作会调用适用的 GetNewValue 方法以更新 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> 中的内容。
 
 ## <a name="compile-the-code"></a>编译代码
 
 确认 Windows 控件库项目的目标框架为 .NET Framework 4.5。 默认情况下，Windows 控件库项目以 .NET Framework 4.5 客户端框架为目标，此框架不允许包含 Microsoft.VisualStudio.QualityTools.WebTestFramework 引用。
 
-有关详细信息，请参阅[“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)。
+有关详细信息，请参阅[项目设计器中应用程序页 (C#)](../ide/reference/application-page-project-designer-csharp.md)。
 
 ## <a name="see-also"></a>请参阅
 

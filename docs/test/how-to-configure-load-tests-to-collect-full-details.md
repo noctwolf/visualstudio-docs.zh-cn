@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: cac171d6f0e1bcd91a89be799497b84dc15fc5a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 70930a09f01450d59b44678ebd26d7e742af7294
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31967091"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379620"
 ---
 # <a name="how-to-configure-load-tests-to-collect-full-details-to-enable-virtual-user-activity-in-test-results"></a>如何：将负载测试配置为收集完整详细信息，以便在测试结果中启用虚拟用户活动
 
-若要对负载测试使用虚拟用户活动图，必须将负载测试配置为收集完整详细信息。 若要为负载测试配置此功能，请为与负载测试关联的“计时详细信息存储”属性选择“所有的详细信息”设置。 在此模式中，负载测试将收集有关每个测试、页面和事务的详细信息。
+要对负载测试使用“虚拟用户活动图”，必须将负载测试配置为收集完整详细信息。 若要为负载测试配置此功能，请为与负载测试关联的“计时详细信息存储”属性选择“所有的详细信息”设置。 在此模式中，负载测试将收集有关每个测试、页面和事务的详细信息。
 
  如果你要从早期版本的 Visual Studio 负载测试升级项目，请使用以下过程中的步骤启用完整详细信息集合。
 
@@ -47,9 +47,9 @@ ms.locfileid: "31967091"
 
 5.  在“结果”类别下，选择“计时详细信息存储”属性，然后选择“所有的详细信息”。
 
-     为“计时详细信息存储”属性配置“所有的详细信息”设置之后，可以运行负载测试并查看虚拟用户活动图。 有关详细信息，请参阅[如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
+     为“计时详细信息存储”属性配置“所有的详细信息”设置之后，可以运行负载测试并查看“虚拟用户活动图”。 有关详细信息，请参阅[如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)。
 
 ## <a name="see-also"></a>请参阅
 
-- [在详细信息视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
+- [在“详细信息”视图中分析虚拟用户活动](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
 - [演练：使用虚拟用户活动图隔离问题](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

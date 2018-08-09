@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fd6d3bc8dbe1ec92fd2802e6cc2b88956d74e854
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 5fc3d03e42edbfa6ad4e625a1d4c77df2aadab27
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751645"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382391"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 
@@ -38,23 +38,23 @@ ms.locfileid: "34751645"
 
 7.  选择 **“确定”**。
 
-     用于 Visual Studio 的 WPF 设计器将打开，并显示项目的主窗口。
+     “适用于 Visual Studio 的 WPF 设计器”将打开，并显示项目的主窗口。
 
 8.  如果当前未打开工具箱，请将其打开。 选择“视图”菜单，然后选择“工具箱”。
 
 9. 在“所有 WPF 控件”部分，将一个“Button”、“CheckBox”和“ProgressBar”控件拖动到设计图面的主窗口中。
 
-10. 选择 Button 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 button1。 然后将“内容”属性的值从 Button 更改为 Start。
+10. 选择“Button”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 button1。 然后将“内容”属性的值从 Button 更改为 Start。
 
-11. 选择 ProgressBar 控件。 在“属性”窗口中，将“名称”属性的值从\<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。
+11. 选择“ProgressBar”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 progressBar1。 然后将“最大值”属性的值从“100”更改为“10000”。
 
-12. 选择 Checkbox 控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。
+12. 选择“Checkbox”控件。 在“属性”窗口中，将“名称”属性的值从 \<无名称> 更改为 checkBox1，然后清除“IsEnabled”属性。
 
      ![简单 WPF 应用程序](../test/media/codedui_wpfapp.png)
 
 13. 双击按钮控件，以添加单击事件处理程序。
 
-     将在代码编辑器中显示 MainWindow.xmal.cs，并且光标位于新的 button1_Click 方法中。
+     将在代码编辑器中显示 MainWindow.xmal.cs，并且游标位于新的 button1_Click 方法中。
 
 14. 在 MainWindow 类的顶部，添加一个委托。 该委托将用于进度栏。 若要添加委托，请添加以下代码：
 
@@ -141,7 +141,7 @@ ms.locfileid: "34751645"
 
      随即显示“UIMap - 编码的 UI 测试生成器”对话框，且 Visual Studio 窗口将最小化。
 
-     有关对话框中的选项的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
+     有关对话框中选项的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
 
 1. 在“UIMap - 编码的 UI 测试生成器”对话框中选择“开始录制”。
 
@@ -334,7 +334,7 @@ ms.locfileid: "34751645"
             }
     ```
 
-     现在，你可以修改编码的 UI 测试，以使用新映射的控件。 如前一过程所述，如果要在编码的 UI 测试中重写任何方法或属性，则必须在 UIMap.cs 文件中执行此操作。
+     现在，你可以修改编码的 UI 测试，以使用新映射的控件。 如前一过程所述，如果要在编码的 UI 测试中替代任何方法或属性，必须在 UIMap.cs 文件中执行此操作。
 
 12. 在 UIMap.cs 文件中，添加一个构造函数，并指定 `UIStartButton` 属性的 `SearchProperties` 属性，以使用值为 `"buttonA":` 的 `AutomationID` 属性
 
@@ -361,7 +361,7 @@ ms.locfileid: "34751645"
 
 ## <a name="faq"></a>FAQ
 
-[编码的 UI 测试常见问题](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
+[编码的 UI 测试常见问题解答](https://social.msdn.microsoft.com/Forums/en-US/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs?forum=vsautotest)
 
 ## <a name="see-also"></a>请参阅
 

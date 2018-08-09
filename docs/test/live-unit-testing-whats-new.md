@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e6e0a812839dac9ad8962e12a610a82cb56a1fc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c422f906eba84d00d1d0e8bfa6420a627b410512
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974775"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381574"
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新增功能
 
@@ -39,7 +39,7 @@ ms.locfileid: "31974775"
 
 - **可靠性和性能**：Live Unit Testing 现在可确保系统能够更好地检测出项目尚未完全完成加载的情况，并可避免 Live Unit Testing 出现崩溃。 生成性能改进还可在系统知道项目文件未进行任何更改时避免重新计算 MSBuild 项目。  
 
-- **其他用户界面优化**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “Live Unit Testing”菜单中“测试”的“重置清理”选项已被删除。 现可通过依次选择“工具”、“选项”、“Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
+- **其他用户界面优化**：右键单击手势中令人费解的“实时测试集 - 包括/排除”选项已更名为“Live Unit Testing 包括/排除”。 “测试” > “Live Unit Testing”菜单的“重置清理”选项已被删除。 现可通过依次选择“工具” > “选项” > “Live Unit Testing”，然后选择“删除持久化数据”访问该选项。
 
 ## <a name="whats-new-in-live-unit-testing-for-visual-studio-2017-version-153"></a>适用于 Visual Studio 2017 版本 15.3 的 Live Unit Testing 中的新增功能
 

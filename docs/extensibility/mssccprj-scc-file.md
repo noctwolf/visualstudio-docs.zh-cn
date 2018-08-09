@@ -1,5 +1,5 @@
 ---
-title: MSSCCPRJ。SCC 文件 |Microsoft 文档
+title: MSSCCPRJ。SCC 文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,36 +14,36 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef076a93d27cc2c133404d6fe6463d32cb449956
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cc754437433124e033b0f0fb0feac79487664b51
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139346"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636066"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ。SCC 文件
-Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 会从源代码管理插件中字符串的形式接收两个关键信息。 两个字符串，"AuxPath"和"ProjName"是不透明的 IDE 中，但它们用于由该插件在版本控制中找到解决方案或项目。 IDE 通常获取这些字符串首次通过调用[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将它们保存在解决方案或项目文件中以便将来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 当嵌入的解决方案和项目文件中，"AuxPath"和"ProjName"字符串不会自动更新用户分支，分叉，或将复制解决方案和项目版本控制中的文件时。 若要确保解决方案和项目文件指向它们在版本控制中的正确位置，用户必须手动更新的字符串。 由于字符串要作为不透明，它可能不始终会清除它们的更新方式。  
+在将 Visual Studio 解决方案或项目使用 IDE 的源代码管理下，IDE 会收到两个关键信息。 这些信息来自源代码管理插件形式的字符串。 这些字符串，"AuxPath"和"项目名称"，是不透明的 IDE，但它们用于该插件在版本控制中找到解决方案或项目。 IDE 通常这些字符串第一次通过调用来获取[SccGetProjPath](../extensibility/sccgetprojpath-function.md)，它然后将其保存在解决方案或项目文件中为未来调用[SccOpenProject](../extensibility/sccopenproject-function.md)。 在解决方案和项目文件中嵌入的"AuxPath"和"项目名称"字符串自动时未更新用户的分支，分叉，或将版本控制中的解决方案和项目文件复制。 若要确保解决方案和项目文件指向其在版本控制中的正确位置，用户必须手动更新这些字符串。 字符串应该是不透明，因为它可能始终无法清除更新方式。  
   
- 源代码管理插件可避免此问题，通过将"AuxPath"和"ProjName"字符串存储在名为 MSSCCPRJ 特殊文件。SCC 文件。 它是本地的客户端的文件拥有和维护由该插件。 此文件永远不会放置在源代码管理下，但生成的每个包含受源代码管理文件的目录的插件。 若要确定哪些文件是 Visual Studio 解决方案和项目文件，源代码管理插件可以比较根据标准的或用户提供的列表的文件扩展名。 一旦 IDE 检测到插件支持 MSSCCPRJ。SCC 文件，它将停止嵌入"AuxPath"和"ProjName"字符串到解决方案和项目文件，并且它从 MSSCCPRJ 读取这些字符串。SCC 文件相反。  
+ 源代码管理插件可以通过在一个名为的特殊文件中存储的"AuxPath"和"项目名称"字符串来避免此问题*MSSCCPRJ.SCC*文件。 它是本地的客户端的文件拥有和维护的插件。 此文件永远不会置于源代码管理下，但生成的每个包含受源代码管理文件的目录的插件。 若要确定哪些文件是 Visual Studio 解决方案和项目文件，源代码管理插件可以将根据标准或用户提供的列表的文件扩展名进行比较。 一旦 IDE 检测到该插件支持*MSSCCPRJ.SCC*文件，它将停止将的"AuxPath"和"项目名称"字符串嵌入到解决方案和项目文件，并读取这些字符串从*MSSCCPRJ.SCC*改为文件。  
   
- 源代码管理插件支持 MSSCCPRJ。SCC 文件必须遵循以下指导原则：  
+ 源代码管理插件的支持*MSSCCPRJ.SCC*文件必须遵守以下准则：  
   
--   只能有一个 MSSCCPRJ。每个目录的 SCC 文件。  
+-   只能有一个*MSSCCPRJ.SCC*每个目录的文件。  
   
--   MSSCCPRJ。SCC 文件中，对于在给定目录中的源代码管理下的多个文件都可以包含的"AuxPath"和"ProjName"。  
+-   *MSSCCPRJ.SCC*文件可为给定目录中的源代码管理下的多个文件包含"AuxPath"和"项目名称"。  
   
--   "AuxPath"字符串不能有其内部的引号。 它允许包含用括号括起来它作为分隔符 （例如，一对双引号括起来可以用于指示一个空字符串）。 从 MSSCCPRJ 读取它时，IDE 将条带"AuxPath"字符串中的所有引号。SCC 文件。  
+-   "AuxPath"字符串不能在其中的引号。 它允许包含引号作为分隔符 （例如，一对双引号可用来指示空字符串）。 从读取时，IDE 会去除"AuxPath"字符串中的所有引号*MSSCCPRJ.SCC*文件。  
   
--   MSSCCPRJ 中的"ProjName"字符串。SCC 文件必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有在其 MSSCCPRJ 中的字符串周围的引号。SCC 文件必须具有引号括起来，反之亦然。  
+-   "项目名称"中的字符串*MSSCCPRJ。SCC 文件*必须从返回的字符串完全匹配`SccGetProjPath`函数。 如果该函数返回的字符串具有其在字符串周围的引号*MSSCCPRJ.SCC*文件必须包含引号，反之亦然。  
   
--   MSSCCPRJ。SCC 文件创建或更新只要文件放置在源代码管理下。  
+-   *MSSCCPRJ.SCC*文件创建或更新时将文件置于源代码管理下。  
   
--   如果检测到 MSSCCPRJ。SCC 文件被删除，提供程序应重新生成其下一次执行有关该目录的源代码管理操作。  
+-   如果*MSSCCPRJ.SCC*获取删除文件、 一个提供程序应重新生成该下一次执行源代码管理操作，有关该目录。  
   
--   MSSCCPRJ。SCC 文件必须严格遵循定义的格式。  
+-   *MSSCCPRJ.SCC*文件必须严格遵循定义的格式。  
   
-## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>举例说明了 MSSCCPRJ。SCC 文件格式  
- 以下是 MSSCCPRJ 一个示例。SCC 文件格式 （仅提供作为指南，和不应在文件正文中包含的行号）：  
+## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>MSSCCPRJ 进行了说明。SCC 文件格式  
+ 以下是示例*MSSCCPRJ.SCC*文件格式 （仅作为指南，提供和不应在文件正文中包含的行号）：  
   
  [第 1 行] `SCC = This is a Source Code Control file`  
   
@@ -63,18 +63,18 @@ Visual Studio 解决方案或项目置于受源代码管理使用 IDE 后，IDE 
   
  [第 9 行] `SCC_Project_Name = "$/TestApp"`  
   
- 第一个行状态的文件的用途，并且用作此类型的所有文件的签名。 此行应显示在所有 MSSCCPRJ 完全一样。SCC 文件：  
+ 第一行状态文件的用途，并可作为此类型的所有文件的签名。 此行应显示与在所有这完全相同*MSSCCPRJ.SCC*文件：  
   
  `SCC = This is a Source Code Control file`  
   
- 下面是由方括号中的文件名称标记的每个文件的设置的节。 对跟踪每个文件重复此部分。 此行是一个示例文件名称，也就是说， `[TestApp.csproj]`。 IDE 需要以下两行。 但是，它未定义的样式定义的值。 这些变量就`SCC_Aux_Path`和`SCC_Project_Name`。  
+ 以下部分详细介绍设置由方括号中的文件名称标记每个文件。 对于要跟踪每个文件重复本部分中。 此行是一个示例文件名称，即`[TestApp.csproj]`。 IDE 需要以下两行。 但是，它不定义的样式定义的值。 这些变量就`SCC_Aux_Path`和`SCC_Project_Name`。  
   
  `SCC_Aux_Path = "\\server\vss\"`  
   
  `SCC_Project_Name = "$/TestApp"`  
   
- 到此部分没有结束分隔符。 Scc.h 标头文件中定义的文件，以及在文件中，显示的所有文本的名称。 有关详细信息，请参阅[字符串用作密钥用于查找源代码管理插件](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
+ 到本部分中没有结束分隔符。 Scc.h 标头文件中定义的文件，以及在文件中，出现的所有文本名称。 有关详细信息，请参阅[字符串用作键用于查找源代码管理插件](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件](../extensibility/source-control-plug-ins.md)   
- [作为用于查找源代码管理插件的密钥的字符串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件](../extensibility/source-control-plug-ins.md)   
+ [字符串用作键用于查找源代码管理插件](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)

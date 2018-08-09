@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c46eda83f74b55644165997295d45ce852af9f31
-ms.sourcegitcommit: 4ab232758d308bda742434beff8349a80c167890
+ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37847747"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251135"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -42,13 +42,13 @@ Visual Studio 还为 Django 项目提供完整的[调试支持](debugging-python
 
 ![断点](media/template-django-debugging.png)
 
-Django 项目一般通过其 `manage.py` 文件管理，Visual Studio 会遵循此假设。 如果停止将该文件用作入口点，则实质上是中断了项目文件。 在这种情况下，需要[从现有文件重新创建项目](managing-python-projects-in-visual-studio.md#creating-a-project-from-existing-files)，不将其标记为 Django 项目。
+Django 项目一般通过其 manage.py 文件管理，Visual Studio 会遵循此假设。 如果停止将该文件用作入口点，则实质上是中断了项目文件。 在这种情况下，需要[从现有文件重新创建项目](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files)，不将其标记为 Django 项目。
 
 ## <a name="django-management-console"></a>Django 管理控制台
 
 Django 管理控制台可通过“项目”菜单上的各种命令或在解决方案资源管理器中右键单击项目进行访问。
 
-- 打开 Django Shell...：将打开应用程序上下文中的 shell，使你能够操作模型
+- **打开 Django Shell**：将打开应用程序上下文中的 shell，使你能够操作模型：
 
     ![控制台](media/template-django-console-shell.png)
 
@@ -56,15 +56,15 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
     ![控制台](media/template-django-console-sync-db.png)
 
-- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 `settings.py` 中的 `STATIC_ROOT` 指定的路径中。 当[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md) 时，将自动收集静态文件，作为发布操作的一部分。
+- **收集静态文件**：执行 `manage.py collectstatic --noinput` 以将所有静态文件复制到由 settings.py 中的 `STATIC_ROOT` 指定的路径中。 当[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md) 时，将自动收集静态文件，作为发布操作的一部分。
 
     ![控制台](media/template-django-console-collect-static.png)
 
-- **验证**：执行 `manage.py validate`，它将报告由 `settings.py` 中 `INSTALLED_APPS` 指定的已安装模型中的任何验证错误：
+- **验证**：执行 `manage.py validate`，它将报告由 settings.py 中 `INSTALLED_APPS` 指定的已安装模型中的任何验证错误：
 
     ![控制台](media/template-django-console-validate.png)
 
 ## <a name="see-also"></a>请参阅
 
-- [Django 学习教程](learn-django-in-visual-studio-step-01-project-and-solution.md)
-- [发布到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [学习 Django 教程](learn-django-in-visual-studio-step-01-project-and-solution.md)
+- [发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)

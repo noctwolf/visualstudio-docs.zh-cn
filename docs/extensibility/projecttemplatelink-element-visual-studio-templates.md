@@ -1,5 +1,5 @@
 ---
-title: ProjectTemplateLink 元素 （Visual Studio 模板） |Microsoft 文档
+title: ProjectTemplateLink 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ebc56e03a6582ab37126097db5f79ed9c5f2a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2c3e539824c815d62d8cf3350b4d823314996677
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143584"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636407"
 ---
-# <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素（Visual Studio 模板）
-指定多项目模板中一个项目的 .vstemplate 文件的路径。  
+# <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink 元素 （Visual Studio 模板）
+指定的路径 *.vstemplate*多项目模板中的一个项目文件。  
   
  \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
  \<ProjectTemplateLink >  
--或-  
+或  
 \<VSTemplate >  
  \<TemplateContent >  
  \<ProjectCollection >  
@@ -39,7 +39,7 @@ ms.locfileid: "31143584"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ProjectTemplateLink ProjectName="Name">  
     PathToTemplateFile  
 </ProjectTemplateLink>  
@@ -52,8 +52,8 @@ ms.locfileid: "31143584"
   
 |特性|描述|  
 |---------------|-----------------|  
-|`ProjectName`|可选特性。<br /><br /> 指定多项目模板中每一个项目的名称。 **新项目**对话框中不能向单个项目分配名称。|  
-|`CopyParameters`|使主要组模板中的所有变量可复制到每个链接模板。<br /><br /> 链接模板中的参数具有前缀 `"$ext_*$"`。 例如，如果在父组模板参数`$projectname$`具有值**exampleproject1 则轮到**，当链接的模板获取其启用可执行，它将获取参数`$ext_projectname$`，这是一份`$projectname$`父组模板中的参数。<br /><br /> 这使链接模板能够共享一些只能在父组模板中方便地创建的公用参数。<br /><br /> 此特性为可选特性，未包含此特性时，它将自动默认为 `false`。<br /><br /> 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的产品版本，请参阅[Visual Studio 2013 SDK Update 2 中引用程序集提供](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
+|`ProjectName`|可选特性。<br /><br /> 指定多项目模板中每一个项目的名称。 **新的项目**对话框不能分配到单个项目的名称。|  
+|`CopyParameters`|使主要组模板中的所有变量可复制到每个链接模板。<br /><br /> 链接模板中的参数具有前缀 `"$ext_*$"`。 例如，如果在父组模板参数`$projectname$`具有值**ExampleProject1**，当链接的模板获取其启用可执行，它将获取参数`$ext_projectname$`，这是一份`$projectname$`从父组模板的参数。<br /><br /> 这使链接模板能够共享一些只能在父组模板中方便地创建的公用参数。<br /><br /> 此特性为可选特性，未包含此特性时，它将自动默认为 `false`。<br /><br /> 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的产品版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。|  
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -68,13 +68,13 @@ ms.locfileid: "31143584"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 此文本指定模板的 .vstemplate 文件的路径。  
+ 此文本指定的路径 *.vstemplate*模板的文件。  
   
 ## <a name="remarks"></a>备注  
- 多项目模板用作两个或多个项目的容器。 `ProjectTemplateLink` 元素用于指定模板中一个项目的 .vstemplate 文件的位置。 对于多项目模板中的每个项目，此模板的 .vstemplate 文件中都含有一个对应的 `ProjectTemplateLink` 元素。 有关多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
+ 多项目模板用作两个或多个项目的容器。 `ProjectTemplateLink`元素用于指定的位置 *.vstemplate*其中一个模板中项目的文件。 *.Vstemplate*文件的多项目模板包含一个`ProjectTemplateLink`为每个项目模板中的元素。 多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>示例  
- 此示例演示一个简单的多项目 .vstemplate 根文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果不存在 `ProjectName` 特性，则会使用 .vstemplate 文件的名称作为项目名称。  
+ 此示例显示了简单的多项目根 *.vstemplate*文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果`ProjectName`属性不存在，名称 *.vstemplate*文件用作项目名称。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -98,7 +98,7 @@ ms.locfileid: "31143584"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)
+ [如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)

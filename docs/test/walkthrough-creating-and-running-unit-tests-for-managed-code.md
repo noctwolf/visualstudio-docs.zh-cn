@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2618b8a27ceb4ed03c8b4bb2f3e910c60e61b6cc
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978148"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380858"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -84,7 +84,7 @@ public void Debit(double amount)
 
 1. 在“文件”菜单上，选择“添加” > “新建项目”。
 
-2. 在“新建项目”对话框中，依次展开 **“已安装”**、 **“Visual C#”**，然后选择 **“测试”**。
+2. 在“新建项目”对话框中，依次展开“已安装”、“Visual C#”，然后选择“测试”。
 
 3. 从模板列表中选择 **“单元测试项目”**。
 
@@ -94,9 +94,9 @@ public void Debit(double amount)
 
 5. 在“BankTests”项目中，添加对“Bank”项目的引用。
 
-   在“解决方案资源管理器”中，选择“BankTests”项目中的“引用”，然后从上下文菜单中选择“添加引用”。
+   在解决方案资源管理器中，选择“BankTests”项目中的“引用”，然后从上下文菜单中选择“添加引用”。
 
-6. 在“引用管理器”对话框中，展开 **“解决方案”** ，然后选中 **“Bank”** 项。
+6. 在“引用管理器”对话框中，展开“解决方案”，然后选中“Bank”项。
 
 ## <a name="create-the-test-class"></a>创建测试类
 
@@ -230,7 +230,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新运行测试
 
-在“测试资源管理器”中，选择 **“全部运行”** 以重新运行测试。 红色/绿色栏会变为绿色（表示测试通过），且测试将移动到“已通过的测试”组。
+在测试资源管理器中，选择“全部运行”以重新运行测试。 红色/绿色栏会变为绿色（表示测试通过），且测试将移动到“已通过的测试”组。
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>使用单元测试以改进代码
 

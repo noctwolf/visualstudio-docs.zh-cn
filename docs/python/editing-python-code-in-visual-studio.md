@@ -11,38 +11,38 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 454d8b0294181329c8b1c4414d8f7c70127e661c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175053"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341828"
 ---
-# <a name="editing-python-code"></a>编辑 Python 代码
+# <a name="edit-python-code"></a>编辑 Python 代码
 
 开发人员需要花费大量时间埋头于代码编辑器，因此可借助 [Visual Studio 中的 Python 的支持](installing-python-support-in-visual-studio.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。
 
-编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：将代码发送到交互命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)了解详细信息。
+编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：Send to Interactive 命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)了解详细信息。
 
 |   |   |
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关编辑 Python 代码的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567)（2 分 30 秒）。|
 
-有关在 Visual Studio 中编辑代码的常规文档，请参阅[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅 [Visual Studio 中的大纲显示](../ide/outlining.md)，方便你将重点放在代码的特定部分。
+有关在 Visual Studio 中编辑代码的常规文档，请参阅[代码编辑器功能](../ide/writing-code-in-the-code-and-text-editor.md)。 另请参阅[大纲显示](../ide/outlining.md)，有助于将重点放在代码的特定部分。
 
-你也可以使用 Visual Studio 对象浏览器（“视图”>“其他窗口”>“对象浏览器”或 Ctrl+W、J）检查每个模块中定义的 Python 类及这些类中定义的函数。
+也可以使用 Visual Studio 对象浏览器（“视图” > “其他窗口” > “对象浏览器”或 Ctrl+W > J）检查每个模块中定义的 Python 类及这些类中定义的函数。
 
 ## <a name="intellisense"></a>IntelliSense
 
 IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 Visual Studio 2017 版本 15.7 和更高版本还支持[类型提示](#type-hints)。
 
-为了提高性能，**Visual Studio 2017 版本 15.5** 和更早版本中的 IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（“解决方案资源管理器”的同级）中（请参阅[环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
+为了提高性能，**Visual Studio 2017 版本 15.5** 和更早版本中的 IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（解决方案资源管理器的同级）中（请参阅[环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
 
 **Visual Studio 2017 版本 15.6**和更高版本使用不同的方法提供不依赖于数据库的 IntelliSense 完成。
 
 ### <a name="completions"></a>完成
 
-完成显示为语句、标识符和可能在编辑器的当前位置输入的其他字词。 在列表中显示的内容基于上下文，并进行筛选以忽略不正确或干扰的选项。 完成通过键入不同的语句（如 `import`）和运算符（包括句点）触发，但可以随时通过键入 Ctrl-J、空格使其显示。
+完成显示为语句、标识符和可能在编辑器的当前位置输入的其他字词。 在列表中显示的内容基于上下文，并进行筛选以忽略不正确或干扰的选项。 完成通过键入不同的语句（如 `import`）和运算符（包括句点）触发，但可以随时通过键入 Ctrl+J > 空格使其显示。
 
 ![成员完成](media/code-editing-completions-simple.png)
 
@@ -77,7 +77,7 @@ IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)�
 ![修饰器完成](media/code-editing-completion-decorator.png)
 
 > [!Tip]
-> 可以通过“工具”>“选项”>“文本编辑器”>“Python”>“高级”来配置完成的行为。 其中，**基于搜索字符串筛选列表**将在你键入时应用筛选完成建议（默认为选中状态），而**成员完成显示成员交集**将仅显示所有可能的类型支持的完成（默认为未选中）。 请参阅[选项 - 完成结果](python-support-options-and-settings-in-visual-studio.md#completion-results)。
+> 可以通过“工具” > “选项” > “文本编辑器” > “Python” > “高级”来配置完成的行为。 其中，基于搜索字符串筛选列表将在键入时应用筛选完成建议（默认为选中状态），而成员完成显示成员交集将仅显示所有可能的类型支持的完成（默认为未选中）。 请参阅[选项 - 完成结果](python-support-options-and-settings-in-visual-studio.md#completion-results)。
 
 ### <a name="type-hints"></a>类型提示
 
@@ -93,7 +93,7 @@ Python 3.5+ 中的“类型提示”([PEP 484](https://www.python.org/dev/peps/p
 
 ![显示类型提示的 IntelliSense 完成](media/code-editing-type-hints2.png)
 
-这也有助于在整个项目中验证类型提示，因为通常在运行时才会显示错误。 为此，Visual Studio 通过“解决方案资源管理器”中的“Python”>“运行 Mypy”上下文菜单命令，集成行业标准 MyPy 工具：
+这也有助于在整个项目中验证类型提示，因为通常在运行时才会显示错误。 为此，Visual Studio 通过解决方案资源管理器中的“Python” > “运行 Mypy”上下文菜单命令，集成行业标准 MyPy 工具：
 
 ![“解决方案资源管理器”中的“运行 MyPy”上下文菜单命令](media/code-editing-type-hints-run-mypy.png)
 
@@ -115,7 +115,7 @@ commas_to_colons(1)
 ![验证类型提示的 mypy 的示例结果](media/code-editing-type-hints-validation-error.png)
 
 > [!Tip]
-> 对于 Python 3.5 之前的版本，Visual Studio 也显示用户通过存根文件 (`.pyi`) 提供的类型提示。 如果不希望直接在代码中添加类型提示，或希望创建不直接使用它们的库的类型提示，可以使用存根文件。 有关详细信息，请参阅 mypy 项目 wiki 中的[为 Python 模块创建存根](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
+> 对于 Python 3.5 之前的版本，Visual Studio 也显示用户通过存根文件 (.pyi) 提供的类型提示。 如果不希望直接在代码中添加类型提示，或希望创建不直接使用它们的库的类型提示，可以使用存根文件。 有关详细信息，请参阅 mypy 项目 wiki 中的[为 Python 模块创建存根](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules)。
 >
 > 目前，Visual Studio 不支持注释中的类型提示。
 
@@ -126,7 +126,7 @@ commas_to_colons(1)
 ![签名帮助](media/code-editing-signature-help.png)
 
 > [!Tip]
-> 若要禁用签名帮助，请转到“工具”>“选项”>“文本编辑器”>“Python”>“常规”并清除“语句完成”>“参数信息”。
+> 若要禁用签名帮助，请转到“工具” > “选项” > “文本编辑器” > “Python” > “常规”并清除“语句完成” > “参数信息”。
 
 ### <a name="quick-info"></a>快速信息
 
@@ -140,16 +140,16 @@ commas_to_colons(1)
 
 ![代码着色](media/code-editing-code-coloring.png)
 
-若要自定义颜色，请转到“工具”>“选项”>“环境”>“字体和颜色”，然后修改“显示项”列表中的 Python 项：
+若要自定义颜色，请转到“工具” > “选项” > “环境” > “字体和颜色”，然后修改“显示项”列表中的 Python 项：
 
 ![“字体”和“颜色”选项](media/code-editing-customize-colors.png)
 
 > [!Tip]
-> 若要禁用代码着色，请转到“工具”>“选项”>“文本编辑器”>“Python”>“高级”，然后清除“杂项选项”>“基于类型为名称着色”。 请参阅[选项 - 杂项选项](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
+> 若要禁用代码着色，请转到“工具” > “选项” > “文本编辑器” > “Python” > “高级”，然后清除“杂项选项” > “基于类型为名称着色”。 请参阅[选项 - 杂项选项](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options)。
 
 ## <a name="code-snippets"></a>代码片段
 
-代码片段是可通过键入快捷方式并按 Tab 键或使用“编辑”>“IntelliSense”>“插入代码片段”和外侧代码命令，选择“Python”，然后选择所需代码段来插入文件的几段代码。
+代码片段是可通过键入快捷方式并按 Tab 键或使用“编辑” > “IntelliSense” > “Insert Code Snippet”和“Surround With”命令，选择“Python”，然后选择所需代码段来插入文件的几段代码。
 
 例如，`class` 是一个插入类定义的代码片段的快捷方式。 在键入 `class` 时，将在自动完成列表中显示代码片段：
 
@@ -161,11 +161,11 @@ commas_to_colons(1)
 
 ### <a name="menu-commands"></a>菜单命令
 
-在使用“编辑”>“IntelliSense”>“插入代码片段”菜单命令时，首先选择“Python”，然后选择代码段：
+在使用“编辑” > “IntelliSense” > “Insert Code Snippe”菜单命令时，首先选择“Python”，然后选择代码片段：
 
 ![通过插入代码片段命令选择代码片段](media/code-editing-code-snippet-insert.png)
 
-同样，“编辑”>“IntelliSense”>“外侧代码”命令将当前选择的内容置于所选结构化元素内的文本编辑器中。 例如，假设你有一段如下所示的代码：
+同样，“编辑” > “IntelliSense” > “Surround With”命令将当前选择的内容置于所选结构化元素内的文本编辑器中。 例如，假设你有一段如下所示的代码：
 
 ```python
 sum = 0
@@ -173,13 +173,13 @@ for x in range(1, 100):
     sum = sum + x
 ```
 
-选中此代码并选择“外侧代码”命令将显示可用代码段的列表。 从列表中选择 `def` 将所选代码置于函数定义内，然后可以使用 Tab 键在突出显示的函数名称和参数之间导航：
+选中此代码并选择“外侧代码”命令将显示可用代码段的列表。 从列表中选择 def 将所选代码置于函数定义内，然后可以使用 Tab 键在突出显示的函数名称和参数之间导航：
 
 ![为代码片段使用“外侧代码”命令](media/code-editing-code-snippet-surround-with.png)
 
 ### <a name="examine-available-snippets"></a>检查可用片段
 
-你可以在代码片段管理器中看到可用的代码片段（通过使用“工具”>“代码片段管理器”菜单命令打开），并选择“Python”作为语言：
+可以在代码片段管理器中看到可用的代码片段（通过使用“工具” > “代码片段管理器”菜单命令打开），并选择“Python”作为语言：
 
 ![代码片段管理器](media/code-editing-code-snippets-manager.png)
 
@@ -187,7 +187,7 @@ for x in range(1, 100):
 
 如果编写优质的代码片段并且想要将其共享，请随时发布到 gist 并[告诉我们](https://github.com/Microsoft/PTVS/issues)。 我们可能将其包含在 Visual Studio 的未来版本中。
 
-## <a name="navigating-your-code"></a>导航代码
+## <a name="navigate-your-code"></a>导航代码
 
 Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，其中包括其源代码可用的库：[导航栏](#navigation-bar)、[转到定义](#go-to-definition)、[导航到](#navigate-to)、[查找所有引用](#find-all-references)。 还可以使用 Visual Studio [对象浏览器](../ide/viewing-the-structure-of-code.md#BKMK_ObjectBrowser)。
 
@@ -198,7 +198,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 ![导航栏](media/code-editing-navigation-bar.png)
 
 > [!Tip]
-> 若要隐藏导航栏，请转到“工具”>“选项”>“文本编辑器”>“Python”>“常规”，然后清除“设置”>“导航栏”。
+> 若要隐藏导航栏，请转到“工具” > “选项” > “文本编辑器” > “Python” > “常规”，然后清除“设置” > “导航栏”。
 
 ### <a name="go-to-definition"></a>转到定义
 
@@ -208,7 +208,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 ### <a name="navigate-to"></a>定位到
 
-“编辑”>“导航到...”命令（Ctrl-comma）将在编辑器中显示搜索框，你可在搜索框中键入任何字符串并查看在定义函数、类或变量的代码中是否存在包含此字符串的匹配项。 此功能与“转到定义”类似，但无需查找标识符的使用。
+“Navigate To” > “Navigate To”命令 (Ctrl+,) 将在编辑器中显示搜索框，可在搜索框中键入任何字符串并查看在定义函数、类或变量的代码中是否存在包含此字符串的匹配项。 此功能与“转到定义”类似，但无需查找标识符的使用。
 
 双击任何名称或使用箭头键和 Enter 选择名称，然后导航到该标识符的定义。
 

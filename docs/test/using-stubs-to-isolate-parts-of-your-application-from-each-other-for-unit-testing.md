@@ -12,12 +12,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 68ee12b330d6b82307de7d590c09259a559716b7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9ee4fbcec25bdfa454f4c009f4d676a5291b7289
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31978357"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382563"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 
@@ -31,7 +31,7 @@ ms.locfileid: "31978357"
 
 ![Real 和 Stub 类符合一个接口。](../test/media/fakesinterfaces.png)
 
-由于存根依赖于你以这种方式构建代码的能力，因此你通常使用存根隔离应用程序的各个部分。 若要将它与不受你控制的其他程序集（如 System.dll）隔离开，你通常应使用填充码。 请参阅[使用垫片将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
+由于存根依赖于你以这种方式构建代码的能力，因此你通常使用存根隔离应用程序的各个部分。 要将它与不受你控制的其他程序集（如 System.dll）隔离开，通常应使用填充码。 请参阅[使用填充码针对单元测试将应用程序与程序集隔离](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。
 
 ## <a name="how-to-use-stubs"></a>如何使用存根
 
@@ -149,9 +149,9 @@ analyzer = new StockAnalyzer(new StockFeed());
 
 #### <a name="add-a-fakes-assembly"></a>添加 Fakes 程序集
 
-1. 在“解决方案资源管理器”中，展开单元测试项目的“引用”。
+1. 在解决方案资源管理器中，展开单元测试项目的“引用”。
 
-   如果使用的是 Visual Basic，必须选择解决方案资源管理器工具栏中的“显示所有文件”才能看到引用列表。
+   如果使用的是 Visual Basic，请选择解决方案资源管理器的工具栏中的“显示所有文件”以便查看“引用”节点。
 
 2. 选择包含要为其创建存根的接口定义的程序集。
 
@@ -441,7 +441,7 @@ Assert.AreEqual(43,stub.DoVirtual(1));
 
 1. 不支持使用指针的方法签名。
 
-2. 无法对密封类或静态方法进行存根处理，因为存根类型依赖于虚方法调度。 对于这种情况，请按照[使用垫片将应用与其他程序集相隔离以供单元测试使用](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)所述，使用垫片类型。
+2. 无法对密封类或静态方法进行存根处理，因为存根类型依赖于虚方法调度。 对于这种情况，请使用[使用填充码针对单元测试将应用程序与程序集隔离](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)中所述的填充码类型
 
 ## <a name="change-the-default-behavior-of-stubs"></a>更改存根的默认行为
 
@@ -466,4 +466,4 @@ StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 
 ## <a name="see-also"></a>请参阅
 
-- [用 Microsoft Fakes 隔离测试代码](../test/isolating-code-under-test-with-microsoft-fakes.md)
+- [通过 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)

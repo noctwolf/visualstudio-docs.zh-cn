@@ -14,12 +14,12 @@ manager: douge
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: cf27c036f68eb4d2847c1070282c7949f59d2454
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: d8ca3f4b847e00f029b22d32965fb3ca89ff871a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34751710"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380478"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>演练：创建并运行 UWP 应用的单元测试
 
@@ -48,17 +48,17 @@ Visual Studio 支持对通用 Windows 平台 (UWP) 应用进行单元测试。 �
 
      ![定制的单元测试库](../test/media/unit_test_win8_1.png)
 
-     “解决方案资源管理器”中会填充 UWP 单元测试项目，代码编辑器中显示标题为“UnitTest1”的默认单元测试。
+     解决方案资源管理器中会填充 UWP 单元测试项目，代码编辑器中显示标题为“UnitTest1”的默认单元测试。
 
      ![新建定制的单元测试项目](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>编辑单元测试项目的 UWP 应用程序清单文件
 
-1.  在“解决方案资源管理器”中，右键单击 Package.appxmanifest 文件并选择 “打开”。
+1.  在解决方案资源管理器中，右键单击 Package.appxmanifest 文件并选择“打开”。
 
      “清单设计器”将显示以便进行编辑。
 
-2.  在“清单设计器”中，选择 **“功能”** 选项卡。
+2.  在“清单设计器”中，选择“功能”选项卡。
 
 3.  在 **“功能”** 下面的列表中，选择你的单元测试和所测试代码需要具备的功能。 例如，单元测试及其测试的代码需要具备访问 Internet 的功能，那么请选中 **“Internet”** 复选框。
 
@@ -69,7 +69,7 @@ Visual Studio 支持对通用 Windows 平台 (UWP) 应用进行单元测试。 �
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>为 UWP 应用编码单元测试
 
-在“代码编辑器”中，编辑单元测试并添加测试所需的断言和逻辑。
+在代码编辑器中，编辑单元测试并添加测试所需的断言和逻辑。
 
 ## <a name="run-unit-tests"></a>运行单元测试
 
@@ -77,7 +77,7 @@ Visual Studio 支持对通用 Windows 平台 (UWP) 应用进行单元测试。 �
 
 1.  在 **“测试”** 菜单中，选择 **“窗口”**，然后选择 **“测试资源管理器”**。
 
-     “测试资源管理器”将显示，而不会列出你的测试。
+     测试资源管理器将显示，但不会列出你的测试。
 
 2.  从 **“生成”** 菜单中选择 **“生成解决方案”**。
 
@@ -86,7 +86,7 @@ Visual Studio 支持对通用 Windows 平台 (UWP) 应用进行单元测试。 �
     > [!NOTE]
     > 必须生成解决方案，才能在“测试资源管理器”中更新单元测试列表。
 
-3.  在“测试资源管理器”中，选择你创建的单元测试。
+3.  在测试资源管理器中，选择创建的单元测试。
 
     > [!TIP]
     > “测试资源管理器”在 **“源:”** 旁边提供指向源代码的链接。
@@ -102,7 +102,7 @@ Visual Studio 支持对通用 Windows 平台 (UWP) 应用进行单元测试。 �
     >
     > ![单元测试资源管理器 - 单元测试上下文菜单](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    单元测试将运行。 完成后，“测试资源管理器”会显示测试状态、运行时间并提供指向源的链接。
+    单元测试将运行。 完成后，测试资源管理器会显示测试状态、运行时间并提供指向源的链接。
 
     ![单元测试资源管理器 - 已完成测试](../test/media/unit_test_win8_unittestexplorer_done.png)
 

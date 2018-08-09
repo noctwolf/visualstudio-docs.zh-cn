@@ -1,5 +1,5 @@
 ---
-title: ProjectCollection 元素 （Visual Studio 模板） |Microsoft 文档
+title: ProjectCollection 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0336859833762d80cc702e844600ded84dbc5d8b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c91c470a9478c7015972be66afe5f41174073047
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136537"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636995"
 ---
-# <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 元素（Visual Studio 模板）
+# <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 元素 （Visual Studio 模板）
 指定多项目模板的组织和内容。  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ ms.locfileid: "31136537"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <ProjectCollection>  
     <ProjectTemplateLink> ... </ProjectTemplateLink>  
     <SolutionFolder> ... </SolutionFolder>  
@@ -49,7 +49,7 @@ ms.locfileid: "31136537"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定多项目模板中一个项目。|  
+|[ProjectTemplateLink](../extensibility/projecttemplatelink-element-visual-studio-templates.md)|可选元素。<br /><br /> 多项目模板中指定一个项目。|  
 |[SolutionFolder](../extensibility/solutionfolder-element-visual-studio-templates.md)|可选元素。<br /><br /> 对多项目模板中的项目进行分组。|  
   
 ### <a name="parent-elements"></a>父元素  
@@ -59,10 +59,10 @@ ms.locfileid: "31136537"
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的内容。|  
   
 ## <a name="remarks"></a>备注  
- 多项目模板用作两个或多个项目的容器。 `ProjectCollection`元素用于指定要包含在此模板的项目。 有关多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
+ 多项目模板用作两个或多个项目的容器。 `ProjectCollection`元素用于指定要包含在模板中的项目。 多项目模板的详细信息，请参阅[如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)。  
   
 ## <a name="example"></a>示例  
- 此示例演示一个简单的多项目 .vstemplate 根文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果不存在 `ProjectName` 特性，则会使用 .vstemplate 文件的名称作为项目名称。  
+ 此示例显示了简单的多项目根 *.vstemplate*文件。 在此示例中，模板包含两个项目：`My Windows Application` 和 `My Class Library`。 `ProjectName` 元素的 `ProjectTemplateLink` 特性可为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设置要分配给此项目的名称。 如果`ProjectName`属性不存在，名称 *.vstemplate*文件用作项目名称。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="ProjectGroup"  
@@ -86,7 +86,7 @@ ms.locfileid: "31136537"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)
+ [如何： 创建多项目模板](../ide/how-to-create-multi-project-templates.md)
