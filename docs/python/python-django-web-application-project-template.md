@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e20090eec7891de4c199f1f92ec0d0668e0f86e6
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: e847322b1bbbefec5c7013d7e90475e08f42694b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251135"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499538"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 
@@ -52,7 +52,7 @@ Django 管理控制台可通过“项目”菜单上的各种命令或在解决�
 
     ![控制台](media/template-django-console-shell.png)
 
-- **Django 同步数据库**：在交互式窗口中执行 `manage.py syncdb`：
+- Django 同步数据库：在交互窗口中执行 `manage.py syncdb`：
 
     ![控制台](media/template-django-console-sync-db.png)
 

@@ -14,16 +14,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142aff42eff0184e957242ca09bc3b591b919d1f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ea0569172a73ab4f4187a7202f24cb65f7ac33ed
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057991"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586515"
 ---
 # <a name="create-a-network-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 的网络安装
 
-企业管理员通常会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio 2017，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。）这样即使尚未更新到最新的服务更新，客户端工作站也可以使用同一网络位置来管理其安装。
+通常情况下，企业管理员会创建网络安装点，以便部署到客户端工作站。 我们精心设计了 Visual Studio 2017，可将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 （此过程也称为_创建布局_。）这样即使尚未更新到最新的服务更新，客户端工作站也可以使用同一网络位置来管理其安装。
 
  > [!NOTE]
  > 如果企业使用多个 Visual Studio 版本（例如，同时使用 Visual Studio Professional 和 Visual Studio Enterprise），需要为每个版本单独创建网络安装共享。

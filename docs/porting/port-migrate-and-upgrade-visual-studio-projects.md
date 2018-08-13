@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 747e2aa80e49877128d694d9eb1f799f25b33985
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 4bad722034657e3b58faaf665bfb0bc6ffcbe960
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058745"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513541"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的项目迁移和升级参考
 
@@ -41,7 +41,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 以下列表描述了 Visual Studio 2017 中对在之前版本中创建的项目的支持。
 
-如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](https://msdn.microsoft.com/library/hh266747.aspx)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
+如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
 
 | 项目类型 | 支持 |
 | --- | --- |

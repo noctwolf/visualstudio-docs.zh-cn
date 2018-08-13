@@ -12,24 +12,25 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: d0f7ffbef8fade3e5723a84ac433ce95679c26c3
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381089"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468268"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
 了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
 
-##  <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式。
+## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式
 
 **Visual Studio 2017 版本 15.8 中的新增内容** 如果来自其他 IDE 或编码环境，可将键盘方案更改为 Visual Studio Code 或 ReSharper (Visual Studio)：
 
 ![Visual Studio 中的键盘方案](../ide/media/VS2017Guide-Keyboard.png)
 
 某些扩展也提供键盘方案：
+
 - [适用于 Visual Studio 的 HotKeys (ReSharper/IntelliJ)](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.HotKeys)
 - [Emacs 模拟](https://marketplace.visualstudio.com/items?itemName=JustinClareburtMSFT.EmacsEmulation)
 - [VSVim](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)
@@ -58,23 +59,29 @@ Visual Studio 常用快捷方式如下：
 
 参阅[我们的文档](..\ide\tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
 
-## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法。
+## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法
+
 Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“转到全部”可快速跳转到任何文件、类型、成员或符号声明。
-- 更改此搜索栏的位置或使用“齿轮”图标关闭“实时导航预览”
+
+- 更改此搜索栏的位置或使用“齿轮”图标关闭“实时导航预览”。
 - 使用查询语法（例如“t mytype”）筛选结果。 还可以将搜索范围限定在当前文档。
 - 支持 camelCase 匹配！
 
 ![Visual Studio 中的转到全部](../ide/media/VS2017Guide-go-to-all.png)
 
-## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的团队对基本代码强制实施代码样式规则。
+## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的团队对基本代码强制实施代码样式规则
+
 可以使用 .editorconfig 文件编写编码约定，并使其跟随源。
-- 建议安装 [EditorConfig 语言服务扩展](https://aka.ms/editorconfig)，以用于在 Visual Studio 中添加和编辑 .editorconfig 文件。
-- 签出所有 .NET 编码约定选项的[文档](https://aka.ms/editorconfigDocs)。
-- 查看[此要点](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8)获取示例 .editorconfig。
+
+- 可以安装 [EditorConfig 语言服务扩展](https://aka.ms/editorconfig)，以轻松地在 Visual Studio 中添加和编辑 .editorconfig 文件。
+- 试用 [Visual Studio 的 IntelliCode 扩展](/visualstudio/intellicode/intellicode-visual-studio)。 此试验性扩展从现有代码中推断出你的代码样式，然后创建一个非空的 .editorconfig 文件，并且已定义代码样式首选项。
+- 签出所有 [.NET 编码约定选项](https://aka.ms/editorconfigDocs)文档。
+- 查看[此要点](https://gist.github.com/kuhlenh/5471666a7a2c57fea427e81cf0a41da8)获取示例 .editorconfig 文件。
 
 ![Visual Studio 中的代码样式实施](../ide/media/VSGuide_CodeStyle.png)
 
-## <a name="i-need-more-refactorings-and-code-fixes"></a>我需要更多重构和代码修补程序。
+## <a name="i-need-more-refactorings-and-code-fixes"></a>我需要更多重构和代码修补程序
+
 Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序。 红色波浪线表示错误，绿色波浪线表示警告，三个灰色点表示代码建议。 若要访问代码修补程序，可以单击灯泡/螺丝刀图标或按 Ctrl+.  或 Alt+Enter。 每个修补程序都附带一个显示修补工作方式实时代码差异的预览窗口。
 
 - 常用的快速修复和重构包括：
@@ -98,6 +105,7 @@ Visual Studio 2017 包含大量重构、代码生成操作和代码修补程序�
 ![在 Visual Studio 中重构](../ide/media/VSGuide_CodeAnalysis.png)
 
 ## <a name="i-need-find-usages-go-to-implementation-navigate-to-decompiled-assemblies"></a>我需要“查找使用情况”、“转到实现”、“导航到反编译程序集”
+
 Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 详细了解[代码导航功能](../ide/navigating-code.md)
 
 | 功能 | 快捷键 | 详细信息/改进 |
@@ -111,16 +119,20 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 
 ![转到全部和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
 
-## <a name="i-want-to-run-and-see-my-unit-tests"></a>我想要运行并查看我的单元测试。
+## <a name="i-want-to-run-and-see-my-unit-tests"></a>我想要运行并查看我的单元测试
+
 我们在 Visual Studio 2017 中对测试体验进行了大量改进。 在 MSTest v1、MSTest v2、NUnit 或 XUnit 测试框架中使用任一单元测试体验。
+
 - 15.6 版中的 **Test Explorer** 测试发现非常快速（为获得最佳结果，请升级到最新版本的测试适配器）。
 - 在 15.6 版中使用新的分层排序组织 Test Explorer 中的测试。
 - [Live Unit Testing](../test/live-unit-testing.md) 持续运行受代码更改影响的测试并更新内联编辑器图标以显示测试的状态。 包含或排除实时测试集中的特定测试或测试项目。
 
 ![Visual Studio 中的文本资源管理器的层次结构视图](../ide/media/VSGuide_Testing.png)
 
-## <a name="i-want-to-debug-my-code"></a>我想要调试代码。
-我们已在 Visual Studio 2017 中添加了大量新的调试功能。
+## <a name="i-want-to-debug-my-code"></a>我想要调试代码
+
+我们已在 Visual Studio 2017 中添加了大量新的调试功能：
+
 - “运行到点击位置”功能具有以下作用：你将鼠标悬停在一行代码旁，点击出现的绿色“运行”图标，则程序会运行到该行停止。
 - 新的异常帮助程序将最重要的信息（如哪些变量在 NullReferenceException 中是“NULL”）置于对话框顶层。
 - [后退](../debugger/how-to-use-intellitrace-step-back.md)让你可以返回到上一个断点或步骤，并查看当时应用程序的状态。
@@ -128,14 +140,17 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 
 ![Visual Studio 2017 中的新异常帮助程序](../ide/media/VSGuide_Debugging.png)
 
-## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在项目中使用版本控制。
+## <a name="i-want-to-use-version-control-with-my-projects"></a>我想要在项目中使用版本控制
+
 可以使用 git 或 TFVC 在 Visual Studio 中存储和更新代码。
+
 - 利用团队资源管理器整理本地更改，并使用状态栏跟踪挂起的提交和更改。
 - 在 Visual Studio 中通过 [Visual Studio 持续交付工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio)扩展设置项目的持续集成和交付，以采用敏捷开发者工作流。
 
 ![Visual Studio 中的源控件](../ide/media/VSIDE_Productivity_SourceControl.png)
 
 ## <a name="what-other-features-do-i-need-to-know-about"></a>我还需要知道其他哪些功能？
+
 下面是提升写代码效率的编辑器和工作效率功能列表。 可能需要启用某些功能，因为它们默认是关闭的（它们可能在计算机上检索内容、具有争议性或者当前处在试验阶段）。
 
 | 功能 | 详细信息 | 如何启用 |
@@ -149,6 +164,8 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 |  键入代码片段名称，然后按两次 Tab。 |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>缺少提供工作效率的功能或性能体验较差？
+
 可通过以下几种方式提供反馈：
+
 - 前往 [GitHub 存储库](https://github.com/dotnet/roslyn/issues)提交 .NET 功能请求。
 - 使用 Visual Studio 窗口右上方的“发送反馈”图标提交 Visual Studio 功能请求、bug 和性能问题。

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a1fb379322e44427384eb47811c585b00716f32
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 01cba4998db732a4f851f4bcd2f7185868e9341f
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952940"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513528"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -93,7 +93,7 @@ ms.locfileid: "31952940"
 |新建项目|np NewProj|文件.新建项目|
 |[“打开文件”命令](../../ide/reference/open-file-command.md)|of Open|文件.打开文件|
 |[“打开项目”命令](../../ide/reference/open-project-command.md)|op|文件.打开项目|
-|折叠到定义/停止大纲显示|OutlineDefs StopOutlining|编辑.折叠到定义|
+|折叠到定义/停止大纲显示|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
 |逐过程|p|调试.逐过程|
 |参数信息|ParamInfo|编辑.参数信息|
 |跳出|pr|调试.跳出|

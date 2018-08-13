@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 819555851b1067cbc3720b704d3d9caabcb01f45
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341864"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586569"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -46,7 +46,7 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 由于安装到全局环境中的包适用于使用此环境的所有项目，因此当两个项目需要不兼容的包或同一个包的不同版本时，可能会发生冲突。 虚拟环境通过使用全局环境中的解释器和标准库但将其自身包存储在独立文件夹来避免此类冲突。
 
-在 Visual Studio 中，可针对项目子文件夹中存储的特定项目创建虚拟环境。 Visual Studio 提供可从虚拟环境生成 requirements.txt 文件的命令，简化了在其他计算机上重新创建环境的过程。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+在 Visual Studio 中，可针对项目子文件夹中存储的特定项目创建虚拟环境。 Visual Studio 提供可从虚拟环境生成 requirements.txt 文件的命令，简化了在其他计算机上重新创建环境的过程。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="conda-environments"></a>Conda 环境
 

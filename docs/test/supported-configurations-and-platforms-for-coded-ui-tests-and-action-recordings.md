@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 78b8f5488d4e69ac547d48946442198e4f0a5c41
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 65b28ed774c9e0e17f1901a4d13eadbaddf39884
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382146"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510983"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>支持编码的 UI 测试和操作录制的配置和平台
 
@@ -54,7 +54,7 @@ ms.locfileid: "39382146"
 |Internet Explorer 8<br /><br /> Internet Explorer 9<br /><br /> Internet Explorer 10 **重要提示：** Internet Explorer 10 仅在台式机上受支持。 <br /><br /> Internet Explorer 11 **重要提示：** Internet Explorer 11 仅在台式机上受支持。|完全支持。<br /><br /> -   **对 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 的支持：** 编码的 UI 测试支持 HTML5 控件（音频、视频、进度条和滑块）的录制、播放和验证。 有关详细信息，请参阅[在编码的 UI 测试中使用 HTML5 控件](../test/using-html5-controls-in-coded-ui-tests.md)。 **警告：** 如果你在 Internet Explorer 10 中创建编码的 UI 测试，则使用 Internet Explorer 9 或 Internet Explorer 8 可能无法运行它。 这是因为 Internet Explorer 10 包含 HTML5 控件（如音频、视频、进度条和滑块）。 Internet Explorer 9 或 Internet Explorer 8 无法识别这些 HTML5 控件。 同样，使用 Internet Explorer 9 的编码的 UI 测试可能包含 Internet Explorer 8 无法识别的某些 HTML5 控件。<br />-   **对 Internet Explorer 10 拼写检查的支持：** Internet Explorer 10 包含对所有文本框的拼写检查功能。 这使你可以从建议的更正的列表中进行选择。 编码的 UI 测试将忽略选择备选的拼写建议之类的用户操作。 只会记录键入到文本框中的最终文本。<br />     将为使用拼写检查控件的编码的 UI 测试记录以下操作：“添加到字典”、“复制”、“全选”和“忽略”。<br />-   **对在 Windows 8 下运行的 64 位 Internet Explorer 的支持：** 以前，64 位版本的 Internet Explorer 不支持录制和播放。 在 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，已经为 64 位版本的 Internet Explorer 启用了编码的 UI 测试。 **警告：** 仅当你运行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本时，对 Internet Explorer 的 64 位支持才适用。<br />-   **对 Internet Explorer 9 中的固定网站的支持：** Internet Explorer 9 中引入了固定网站。 利用固定网站，你可直接从 Windows 工具栏访问你喜爱的网站，而无需先打开 Internet Explorer。 编码的 UI 测试现在可以在固定网站上生成意图感知操作。 有关固定网站的详细信息，请参阅[固定网站](http://go.microsoft.com/fwlink/?LinkId=220037)。<br />-   **对 Internet Explorer 9 语义标记的支持：** Internet Explorer 9 引入以下语义标记：section、nav、article、aside、hgroup、header、footer、figure、figcaption 和 mark。 编码的 UI 测试在录制过程中会忽略所有这些语义标记。 你可使用编码的 UI 测试生成器在这些标记上添加断言。 你可使用编码的 UI 测试生成器中的导航刻度盘来导航至任一这些元素并查看其属性。<br />-   **各个版本的 Internet Explorer 之间的空白字符的无缝处理：** Internet Explorer 8、Internet Explorer 9 和 Internet Explorer 10 的空白字符的处理方式各不相同。 编码的 UI 测试可无缝地处理这些差异。 因此，在 Internet Explorer 8（举例来说）中创建的编码的 UI 测试可在 Internet Explorer 9 和 Internet Explorer 10 中成功播放。<br />-   Internet Explorer 的通知区域现在在进行录制时会设置“出错时继续”属性： Internet Explorer 的通知区域中的所有操作现在在进行录制时会设置“出错时继续”属性。 如果在播放过程中未显示通知栏，则将忽略针对它的操作，并且编码的 UI 测试将继续下一个操作。|
 |Windows 窗体和 WPF 第三方控件|完全支持。<br /><br /> 若要在 Windows 窗体和 WPF 应用程序中启用第三方控件，则必须添加引用和代码。 有关详细信息，请参阅[启用控件的编码的 UI 测试](../test/enable-coded-ui-testing-of-your-controls.md)。|
 |Internet Explorer 6<br /><br /> Internet Explorer 7|不支持。|
-|Chrome<br /><br /> Firefox|不支持操作步骤的录制。 利用 Visual Studio 2012 Update 4 或更高版本，编码的 UI 测试可在 Chrome 和 Firefox 浏览器中播放。 有关更多详细信息，请转到 [此处](http://msdn.microsoft.com/library/jj835758.aspx) 。|
+|Chrome<br /><br /> Firefox|不支持操作步骤的录制。 利用 Visual Studio 2012 Update 4 或更高版本，编码的 UI 测试可在 Chrome 和 Firefox 浏览器中播放。 有关更多详细信息，请转到 [此处](using-different-web-browsers-with-coded-ui-tests.md) 。|
 |Opera<br /><br /> Safari|不支持。|
 |Silverlight|不支持。<br /><br /> 对于 Visual Studo 2013，可从 Visual Studio 库下载[用于 Silverlight 的 Microsoft Visual Studio 2013 编码的 UI 测试插件](https://go.microsoft.com/fwlink/?LinkId=691026)。|
 |Flash/Java|不支持。|

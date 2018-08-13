@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf8de603ee071d3c1ca7fb3897126aec60b594a
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: c97e26ef8a580078c371319881425a5c9f8ff297
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924455"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512624"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 本文档说明如何使用图像编辑器创建基本纹理。
@@ -54,7 +54,7 @@ ms.locfileid: "37924455"
 5.  在“图像编辑器”工具栏上，选择“填充”工具，然后按住 Shift 键并选择图像中的任意点。 使用 Shift 键让填充颜色的 Alpha 值替换图像中的颜色；否则，Alpha 值将用于将填充颜色与图像中的颜色进行混合。
 
     > [!IMPORTANT]
-    >  此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。
+    > 此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。
 
 6.  在“图像编辑器”工具栏上，选择“椭圆形”工具。
 
@@ -69,13 +69,13 @@ ms.locfileid: "37924455"
 11. 使用“椭圆形”工具，从像素坐标 `(3, 3)` 到像素坐标 `(508, 508)` 绘制一个圆。 为了更轻松地绘制圆形，可以在绘制时按住 Shift 键。
 
     > [!NOTE]
-    >  当前指针位置的像素坐标显示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 状态栏上。
+    > 当前指针位置的像素坐标显示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 状态栏上。
 
 12. 更改背景色。 将“R”设置为 `44`、将“G” 设置为 `165`、将“B” 设置为 `211`、将“A” 设置为 `255`。
 
 13. 从像素坐标 `(64, 64)` 到像素坐标 `(448, 448)` 绘制另一个圆。
 
-14. 将背景色更改为完全不透明的白色。 将“R”、“G”、“B”和“A”设置为 `255`。
+14. 将背景色更改回完全不透明的白色。 将“R”、“G”、“B”和“A”设置为 `255`。
 
 15. 从像素坐标 `(128, 128)` 到像素坐标 `(384, 384)` 绘制另一个圆。
 

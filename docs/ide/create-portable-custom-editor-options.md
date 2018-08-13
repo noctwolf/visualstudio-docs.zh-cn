@@ -1,6 +1,6 @@
 ---
 title: 在 Visual Studio 中使用 EditorConfig 设置
-ms.date: 12/13/2017
+ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: c4301d69b8358375b901f329f8725ab26aa42a73
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117558"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469049"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -81,9 +81,15 @@ Visual Studio 中的编辑器支持 [EditorConfig 属性](http://editorconfig.or
    csharp_new_line_before_open_brace = methods
    ```
 
-或者，可安装 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)。 安装此扩展后，仅需右键单击解决方案节点、项目节点或解决方案资源管理器中的任何文件夹，从出现的菜单中，或在这些节点或文件夹的上下文菜单中选择“添加” > “.editorconfig 文件”即可。
+### <a name="other-ways-to-add-an-editorconfig-file"></a>添加 EditorConfig 文件的其他方式
 
-![添加带有文件扩展名的 .editorconfig 文件](media/editorconfig-extension-add.png)
+还可以通过其他几种方法将 EditorConfig 文件添加到项目中：
+
+- 安装 [EditorConfig 语言服务扩展](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig)，更轻松地将空的 .editorconfig 文件添加到项目中。 安装此扩展后，仅需右键单击解决方案节点、项目节点或解决方案资源管理器中的任何文件夹，从出现的菜单中，或在这些节点或文件夹的上下文菜单中选择“添加” > “.editorconfig 文件”即可。 此扩展还可以提升 .editorconfig 文件的编辑体验。
+
+   ![添加带有文件扩展名的 .editorconfig 文件](media/editorconfig-extension-add.png)
+
+- 试用 [IntelliCode 扩展](/visualstudio/intellicode/intellicode-visual-studio)。 此试验性扩展从现有代码中推断出你的代码样式，然后创建一个非空的 .editorconfig 文件，并且已定义代码样式首选项。
 
 ## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
 

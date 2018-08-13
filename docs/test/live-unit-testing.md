@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c8541fd3a6f48ca6c2a1276265b7908e3ae50634
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382007"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586442"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>使用 Visual Studio 2017 进行实施单元测试
 
@@ -102,7 +102,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 - **选项**：可打开[配置 Live Unit Testing](#configure-live-unit-testing) 部分中所述的“选项”对话框。
 
-##  <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在编辑器中查看键入时的覆盖率可视化效果
+## <a name="view-coverage-visualization-in-the-editor-as-you-type"></a>在编辑器中查看键入时的覆盖率可视化效果
 
 一旦启用，Live Unit Testing 将在 Visual Studio 编辑器中更新每行代码，以显示正在编写的代码是否由单元测试覆盖以及覆盖这些代码的测试是否通过。  下图显示测试通过和失败的代码行，以及测试未覆盖的代码行。 绿色“✓”修饰的行只表示通过测试，红色“x”修饰的行表示未通过一项或多项测试，蓝色“➖”修饰的行表示未经过任何测试。
 
@@ -186,8 +186,8 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 
 ## <a name="see-also"></a>请参阅
 
-[代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
-[Live Unit Testing 博客](https://go.microsoft.com/fwlink/?linkid=842514)
-[Live Unit Testing 常见问题解答](live-unit-testing-faq.md)
-[第 9 频道视频：Visual Studio 2017 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [Live Unit Testing 博客](https://go.microsoft.com/fwlink/?linkid=842514)
+- [实时单元测试常见问题解答](live-unit-testing-faq.md)
+- [第 9 频道视频：Visual Studio 2017 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
 

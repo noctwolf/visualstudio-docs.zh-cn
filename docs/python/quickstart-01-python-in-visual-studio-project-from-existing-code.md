@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 67ec0f2744bceb4436c429efa62e13cce35ee2e8
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 8bd6bf071b66f3736ab5dc64920aad892fe1186b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781612"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511596"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入门：从现有代码创建 Python 项目
 
@@ -27,7 +27,7 @@ ms.locfileid: "38781612"
 
 [!INCLUDE[project-from-existing](includes/project-from-existing.md)]
 
-8. 如果需要，可按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”运行程序。
+如果需要，可按 Ctrl+F5 或选择“调试” > “启动而不调试”。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -36,6 +36,6 @@ ms.locfileid: "38781612"
 
 ## <a name="see-also"></a>请参阅
 
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)

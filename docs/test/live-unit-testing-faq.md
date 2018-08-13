@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bba5579fd47a9cf50d175777d704b0f12e8cb298
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382599"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586495"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -77,13 +77,13 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 - 解决方案中至少一个项目应有针对 xUnit、NUnit 或 MSTest 测试框架的 NuGet 引用或直接引用。 此项目还应引用相应的 Visual Studio 测试适配器 NuGet 包。 还可以通过 .runsettings 文件引用 Visual Studio 测试适配器。 .runsettings 文件必须包含如下示例所示的条目：
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>将 Visual Studio 项目中引用的测试适配器升级到支持的版本后，为什么 Live Unit Testing 显示错误的覆盖范围？
 
@@ -268,4 +268,4 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 ## <a name="see-also"></a>请参阅
 
-[实时单元测试](live-unit-testing.md)
+- [实时单元测试](live-unit-testing.md)

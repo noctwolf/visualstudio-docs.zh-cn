@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 88810c2e4958e96bd5487ce1a5b059897b725b45
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132213"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567137"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -95,7 +95,7 @@ ms.locfileid: "39132213"
 
     项目的 package.json 文件中的信息更新为新的包信息（包括包版本）。
 
-1. 将以下代码复制到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 使用此代码替换 `dependencies` 部分：
+1. 将以下代码复制到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 为执行此操作，使用此代码替换 `dependencies` 部分：
 
     ```js
     "dependencies": {
@@ -110,9 +110,11 @@ ms.locfileid: "39132213"
     }
     ```
 
+    如果你的空白模板版本中没有 `dependencies` 部分，则必须添加它而不是替换现有部分。
+
 1. 右键单击项目中的“npm”节点，然后选择“更新 npm 包”。
 
-    选择“输出”窗口可查看包的安装进度。 安装可能需要几分钟时间，可能无法立即看到结果。
+    在下部窗格中，选择“输出”窗口可查看程序包的安装进度。 安装可能需要几分钟时间，可能无法立即看到结果。 要查看输出，请确保在“输出”窗口的“显示输出来源”字段中选择“Npm”。
 
     以下安装后显示在解决方案资源管理器中的 npm 模块。
 
@@ -144,7 +146,7 @@ ms.locfileid: "39132213"
 
 ## <a name="add-app-code"></a>添加应用代码
 
-1. 打开 server.js 并将代码替换为以下代码：
+1. 打开 server.js 并将现有代码替换为以下代码：
 
     ```javascript
     'use strict';

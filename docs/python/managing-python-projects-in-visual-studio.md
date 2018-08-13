@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fa2378a7ccff3e767ef21443bce3f3e57640f689
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 6f404b10c2b0a8c237684d72f89baa58bd87a7c3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251749"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499014"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc40cae89f6085f921f5ac96214f374faa81422c
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 882e9471646d83434c18f18811f9f6f693d2e551
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748226"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513395"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -39,24 +39,24 @@ C# 中的 IntelliSense 完成列表包含来自列表成员、完成单词等的
 
 C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅[经过筛选的完成列表](#filtered-completion-lists)。
 
-## <a name="code-snippets-in-completion-lists"></a>完成列表中的代码片段
+### <a name="code-snippets-in-completion-lists"></a>完成列表中的代码片段
 
-在 C# 中，完成列表包含代码片段，可帮助你将预定义的代码正文轻松插入程序。 代码片段作为片段的[快捷方式文本](../ide/code-snippets-schema-reference.md#shortcut)出现在完成列表中。 有关 C# 中默认情况下可用的代码片段的详细信息，请参阅 [C# 代码片段](../ide/visual-csharp-code-snippets.md)。
+在 C# 中，完成列表包含代码片段，可帮助你将预定义的代码正文轻松插入程序。 代码片段作为片段的[快捷方式文本](../ide/code-snippets-schema-reference.md#shortcut-element)出现在完成列表中。 有关 C# 中默认情况下可用的代码片段的详细信息，请参阅 [C# 代码片段](../ide/visual-csharp-code-snippets.md)。
 
-## <a name="language-keywords-in-completion-lists"></a>完成列表中的语言关键字
+### <a name="language-keywords-in-completion-lists"></a>完成列表中的语言关键字
 
 在 C# 中，完成列表还包括语言关键字。 若要详细了解 C# 语言关键字，请参阅 [C# 关键字](/dotnet/csharp/language-reference/keywords/index)。
 
-## <a name="extension-methods-in-completion-lists"></a>完成列表中的扩展方法
+### <a name="extension-methods-in-completion-lists"></a>完成列表中的扩展方法
 
 在 C# 中，完成列表包含位于作用域的扩展方法。
 
 > [!NOTE]
 > 完成列表不显示 <xref:System.String> 对象的所有扩展方法。
 
-扩展方法使用不同于实例方法的图标。 有关列表图标的列表，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 当具有相同名称的实例方法和扩展方法都处于作用域时，完成列表将显示扩展方法图标。
+扩展方法使用不同于实例方法的图标。 有关列表图标的参考指南，请参阅[类视图和对象浏览器图标](../ide/class-view-and-object-browser-icons.md)。 当具有相同名称的实例方法和扩展方法都处于作用域时，完成列表将显示扩展方法图标。
 
-## <a name="filtered-completion-lists"></a>经过筛选的完成列表
+### <a name="filtered-completion-lists"></a>经过筛选的完成列表
 
 IntelliSense 使用筛选器从完成列表中删除不必要的成员。 C# 对针对这些项出现的完成列表进行筛选：
 
@@ -78,13 +78,17 @@ IntelliSense 使用筛选器从完成列表中删除不必要的成员。 C# 对
 
 - 当输入参数时，参数将帮助自动根据匹配参数的首个方法重载进行排序。 如果有多个可用的方法重载，则可使用向上和向下箭头导航到列表中下一个可能的重载。
 
-## <a name="most-recently-used-members"></a>最近使用的成员
+### <a name="most-recently-used-members"></a>最近使用的成员
 
-IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/using-intellisense.md)弹出框中选择的成员。 下次使用成员列表时，将在顶部显示最近使用过的成员。 在 IDE 中的每个会话之间，最近使用过的成员的历史记录将被清除。
+IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/using-intellisense.md)弹出框中选择的成员。 下次使用成员列表时，将在顶部显示最近使用过的成员。 在每个 Visual Studio 会话之间，最近使用过的成员的历史记录将被清除。
 
-## <a name="override"></a>override
+### <a name="override"></a>override
 
-键入 [override](/dotnet/csharp/language-reference/keywords/override) 并按空格键后，IntelliSense 将在弹出的列表框中显示可以替代的全部有效基类成员。 在 `override` 之后键入方法的返回类型将提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它将显示全部基类成员。
+键入 [override](/dotnet/csharp/language-reference/keywords/override) 并按空格键后，IntelliSense 将在弹出的列表框中显示可以替代的全部有效基类成员。 在 `override` 之后键入方法的返回类型会提示 IntelliSense 仅显示返回相同类型的方法。 如果 IntelliSense 找不到任何匹配项，它会显示全部基类成员。
+
+### <a name="ai-enhanced-intellisense"></a>AI-enhanced IntelliSense
+
+可以为 Visual Studio 安装试验性 [IntelliCode 扩展](/visualstudio/intellicode/intellicode-visual-studio)，提供人工智能增强型 IntelliSense 完成列表。 此扩展预测供使用的最可能正确的 API，而不仅仅是呈现按字母顺序排列的成员列表。 它使用当前的代码上下文和模式来提供此动态列表。
 
 ## <a name="automatic-code-generation"></a>自动代码生成
 
@@ -104,7 +108,7 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 
 ### <a name="implement-interface"></a>实现接口
 
-IntelliSense 提供了一个选项，有助于在使用代码编辑器时实现[接口](/dotnet/csharp/language-reference/keywords/interface)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示“快速操作”灯泡。 该灯泡提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明具有接口名称；在隐式命名下，方法声明不表示其所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
+IntelliSense 提供了一个选项，有助于在使用代码编辑器时实现[接口](/dotnet/csharp/language-reference/keywords/interface)。 通常情况下，若要正确实现接口，必须为类中接口的每个成员创建一个方法声明。 通过使用 IntelliSense，在类声明中键入接口名称后，将显示“快速操作”灯泡。 该灯泡提供通过使用显式或隐式命名自动实现接口的选项。 在显式命名下，方法声明带有接口的名称。 在隐式命名下，方法声明不指示它们所属的接口。 只有通过接口实例（而不是类实例）才能访问显式命名的接口方法。 有关详细信息，请参阅[显式接口实现](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。
 
 实现接口将生成满足接口所需的最小数量的方法存根。 如果基类实现部分接口，则不会重新生成这些存根。
 

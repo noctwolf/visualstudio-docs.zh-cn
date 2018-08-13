@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de11159e513468a543229df5aab640142b006736
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251928"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498962"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -154,8 +154,6 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 | **解释器参数** | 这些参数添加到启动程序命令行中的脚本名称之前。 此处常见的参数有：用于控制警告的 `-W ...`、用于略微优化程序的 `-O` 和用于使用未缓冲 IO的 `-u`。 IronPython 用户可能会使用此字段来传递 `-X` 选项，例如 `-X:Frames` 或 `-X:MTA`。 |
 | **解释器路径** | 替代与当前环境相关联的路径。 值可能可用于通过非标准解释器启动脚本。 |
 | **环境变量** | 在此多行文本框中，添加 \<NAME>=\<VALUE> 形式的条目。 由于除任何现有全局环境变量外，此设置是最后应用，因此在根据搜索路径设置设定 `PYTHONPATH` 之后，可以将该设置用于手动替代任何设置。 |
-
-<a name="the-debug-interactive-window"></a>
 
 ## <a name="immediate-and-interactive-windows"></a>即时窗口和交互窗口
 

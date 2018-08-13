@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3dc86281542dbedd429fae5f9976219bfa623878
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: d49748be3067ac2bbb6df9016883cb7be0f48f89
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235045"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586855"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 
@@ -42,16 +42,17 @@ ms.locfileid: "36235045"
 5.  如果要测试的代码位于其他位置，请参阅[管理项目中的引用](../ide/managing-references-in-a-project.md)了解有关添加引用的信息。
 
 ## <a name="next-steps"></a>后续步骤
- **编写单元测试**
 
  请参阅以下部分之一：
 
--   [单元测试代码](../test/unit-test-your-code.md)
+**编写单元测试**
 
--   [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
+- [单元测试代码](../test/unit-test-your-code.md)
 
--   [在单元测试中使用 MSTest 框架](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)
 
- **运行单元测试**
+- [在单元测试中使用 MSTest 框架](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+
+**运行单元测试**
 
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)

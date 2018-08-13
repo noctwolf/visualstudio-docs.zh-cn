@@ -11,22 +11,26 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e183833222f64a24a2d523e32f624ed24c54bc58
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056703"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512811"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 
 [在 Visual Studio 2017 中安装 Python 支持](installing-python-support-in-visual-studio.md)后，可以添加适用于 Visual Studio 的 GitHub 扩展。 利用此扩展可轻松克隆 Python 代码的存储库，并在 IDE 中通过该存储库创建一个项目。 此外，始终可在命令行上克隆存储库，然后在 Visual Studio 中使用。
 
+## <a name="install-the-github-extension-for-visual-studio"></a>安装 Visual Studio 的 GitHub扩展
+
 [!INCLUDE[install-github-extension](includes/install-github-extension.md)]
+
+## <a name="work-with-github-in-visual-studio"></a>在 Visual Studio 中使用 GitHub
 
 1. 启动 Visual Studio。
 
-1. 选择“视图”>“团队资源管理器”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
+1. 选择“视图” > “团队资源管理器”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。 （如果下方未显示“连接”页，请选择顶部工具栏的“插入”图标，跳转到该页面。）
 
     ![显示 Visual Studio Team Services、GitHub 并克隆存储库的“团队资源管理器”窗口](media/team-explorer.png)
 
@@ -43,21 +47,21 @@ ms.locfileid: "37056703"
 
 1. 在随即出现的“新建项目”对话框中，导航到 Python 语言（或搜索“Python”），选择“来自现有的 Python 代码”，指定项目的名称，再将“位置”设置为存储库所在的文件夹，然后选择“确定”。 在随即出现的向导中选择“完成”。
 
-1. 从菜单中选择“视图”>“解决方案资源管理器”。
+1. 从菜单中选择“视图” > “解决方案资源管理器”。
 
-1. 在解决方案资源管理器中，展开 `python3` 节点，右键单击 `contemplate_koans.py`，然后选择“设置为启动文件”。 此步骤指示 Visual Studio 在运行项目时应使用哪个文件。
+1. 在解决方案资源管理器中，展开 python3 节点，右键单击 contemplate_koans.py，然后选择“设置为启动文件”。 此步骤指示 Visual Studio 在运行项目时应使用哪个文件。
 
-1. 从菜单中依次选择“项目”>“Koans 属性”，再选择“常规”选项卡并将“工作目录”设置为“python3”。 必须执行此步骤，因为 Visual Studio 将工作目录默认设置为项目根，而不是启动文件（`python3\contemplate_koans.py`，还可在项目属性中看到此文件）的位置。 程序代码会在工作文件夹中查找文件 `koans.txt`，因此不更改此值会导致运行时错误。
+1. 从菜单中依次选择“项目” > “Koans 属性”，再选择“常规”选项卡并将“工作目录”设置为“python3”。 必须执行此步骤，因为 Visual Studio 将工作目录默认设置为项目根，而不是启动文件（python3\contemplate_koans.py，还可在项目属性中看到此文件）的位置。 程序代码会在工作文件夹中查找文件 koans.txt，因此不更改此值会导致运行时错误。
 
     ![设置 Python 项目的工作目录](media/projects-set-working-directory.png)
 
-1. 按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”运行程序。 如果在 `koans.txt` 中看到 `FileNotFoundError`，则检查上一步中的工作目录设置。
+1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。 如果看到 koans.txt 的 FileNotFoundError，则检查上一步中的工作目录设置。
 
-1. 程序成功运行时，会在 `python3/koans/about_asserts.py` 的第 17 行显示一个断言错误。 这是有意为之：程序旨在通过让用户更正所有故意设计的错误来学习 Python。 （[Ruby Koans](http://rubykoans.com/) 上提供了更多详细信息，Python Koans 的设计灵感便源于前者。）
+1. 程序成功运行时，会在 python3/koans/about_asserts.py 的第 17 行显示一个断言错误。 这是有意为之：程序旨在通过让用户更正所有故意设计的错误来学习 Python。 （[Ruby Koans](http://rubykoans.com/) 上提供了更多详细信息，Python Koans 的设计灵感便源于前者。）
 
     ![Python koans 程序的第一次输出](media/koans-output.png)
 
-1. 通过在解决方案资源管理器中导航到 `python3/koans/about_asserts.py` 并双击，打开该文件。 请注意，编辑器中默认不显示行号。 若要更改此设置，请选择“工具”>“选项”，选择对话框底部的“显示所有设置”，然后导航到“文本编辑器”>“Python”>“常规”并选择“行号”：
+1. 通过在解决方案资源管理器中导航到 python3/koans/about_asserts.py 并双击，打开该文件。 请注意，编辑器中默认不显示行号。 若要更改此设置，请选择“工具” > “选项”，选择对话框底部的“显示所有设置”，然后导航到“文本编辑器” > “Python” > “常规”并选择“行号”：
 
     ![为 Python 文件启用行号](media/options-general-line-numbers.png)
 
@@ -79,6 +83,6 @@ ms.locfileid: "37056703"
 
 ## <a name="see-also"></a>请参阅
 
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)
