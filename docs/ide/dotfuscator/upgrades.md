@@ -25,12 +25,12 @@ ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fcd5832b52c6cd9f72829c2bce8f7813b682cf4f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: f1158b0e5f438e49acafad79af1b33ec43690e9a
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704569"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468538"
 ---
 # <a name="upgrade-dotfuscator-community-edition-ce"></a>升级 Dotfuscator Community Edition (CE)
 
@@ -60,14 +60,6 @@ Dotfuscator CE 的注册用户可以访问其他功能（如[命令行支持][cl
   * 其他[应用程序防御行为][check-actions]。
   * 能够在应用程序生命周期截止前提供警告期。
   * 能够在生命周期警告期内或在截止时间后通知应用程序代码。
-  * 遥测加密。
-* 应用程序监视
-  * 能够收集并保存在临时网络中断期间收集的信息。
-  * 能够收集可识别个人身份的信息。
-  * 能够无限制使用[功能跟踪][features]。
-  * 能够跟踪代码捕获和引发的异常以及未处理的异常。
-  * 能够跟踪 `.dll` 程序集中的异常。
-  * 遥测加密。
 
 Dotfuscator Professional 是行业标准的 [.NET 模糊处理程序][net-obfuscator]，适用于需要持续支持、维护和产品更新的企业开发人员。
 此外，Dotfuscator Professional 提供与 Visual Studio 的更紧密集成，并获得商业使用许可。
@@ -88,7 +80,6 @@ Dotfuscator Professional 是行业标准的 [.NET 模糊处理程序][net-obfusc
 [pruning]:  https://www.preemptive.com/products/dotfuscator/features#pruning
 
 [check-actions]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html#actions
-[features]:  https://www.preemptive.com/dotfuscator/pro/userguide/en/instrumentation_features.html
 
 [net-obfuscator]:  https://www.preemptive.com/products/dotfuscator/overview
 [eval]:  https://www.preemptive.com/eval-request

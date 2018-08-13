@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 801a0dcdca4a3a8720fdcb74a47b7be947bb4aec
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341828"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500116"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
 开发人员需要花费大量时间埋头于代码编辑器，因此可借助 [Visual Studio 中的 Python 的支持](installing-python-support-in-visual-studio.md)中的功能来提高工作效率。 这些功能包括 IntelliSense 语法突出显示、自动完成、签名帮助、方法重写、搜索和导航。
 
-编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：Send to Interactive 命令](python-interactive-repl-in-visual-studio.md#send-code-to-interactive-command)了解详细信息。
+编辑器还集成了 Visual Studio 中的交互式窗口，便于在两者之间交换代码。 请参阅[教程步骤 3：使用 REPL 交互窗口](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)和[使用交互窗口：Send to Interactive 命令](python-interactive-repl-in-visual-studio.md#send-to-interactive-command)了解详细信息。
 
 |   |   |
 |---|---|

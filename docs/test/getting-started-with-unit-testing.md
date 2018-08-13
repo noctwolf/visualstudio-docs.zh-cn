@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 761f814d3a224240c27fa6b058fb08325f0307f4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6fb81ce1891a1e37670c81d1e7d0bf4b13fa2796
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177862"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469062"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -109,7 +109,7 @@ ms.locfileid: "39177862"
 
 ## <a name="use-a-different-unit-test-framework"></a>使用不同的单元测试框架
 
-通过使用第三方测试框架（如 Boost、Google、和 nUnit），可以在 Visual Studio 中运行单元测试。 采用针对该框架的插件，以便 Visual Studio 测试运行程序能够使用该框架。
+通过使用第三方测试框架（如 Boost、Google、和 NUnit），可以在 Visual Studio 中运行单元测试。 采用针对该框架的插件，以便 Visual Studio 测试运行程序能够使用该框架。
 
 下面是启用第三方测试框架的操作步骤：
 

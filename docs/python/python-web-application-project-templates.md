@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5be4a7f23259a2754ca8454371cc64d8fc5419ce
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251798"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586542"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -70,7 +70,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 ## <a name="install-project-requirements"></a>安装项目要求
 
-从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)，以便发布网站时包含正确的依赖关项：
+从特定于框架的模板创建项目时，会出现一个对话框，有助于使用 pip 安装所需的包。 我们还建议对 Web 项目使用[虚拟环境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)，以便发布网站时包含正确的依赖关项：
 
 ![为项目模板安装所需包的对话框](media/template-web-requirements-txt-wizard.png)
 

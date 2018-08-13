@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 49316f89e640f4ff43d4914535ef6e5398c249ee
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 14aa15d53977167a61d5570d4bc2ac7edffb197d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341878"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511647"
 ---
-# <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
+# <a name="input-generation-using-dynamic-symbolic-execution"></a>使用动态符号执行的输入生成
 
 IntelliTest 通过分析程序中的分支条件为[参数化单元测试](test-generation.md#parameterized-unit-testing)生成输入。 测试输入的选择依据是它们是否可触发程序的新分支行为。 分析是一个增量过程。 它针对正式测试输入参数 I提炼了谓词 q: I -> {true, false}。q 表示的一组 IntelliTest 已观察到的行为。 最初，q := false，因为尚未观察到任何行为。
 

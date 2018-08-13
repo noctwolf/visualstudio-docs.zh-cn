@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10568bebf7dfd978d553900ea46fdd35c1e97f
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: d9c49816fb412a7c52e3d9e63fd0e4ec5675e7c3
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978367"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511443"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -24,7 +24,7 @@ ms.locfileid: "38978367"
 
 作为软件开发工作流的组成部分时，单元测试对代码质量的影响最大。 只要你编写了一个函数或其他应用程序代码块，就可以创建单元测试用于验证对应于输入数据的标准、边界和不正确情况的代码的行为，而且用于检查代码所做的任何显式或隐式假设。 通过 *测试驱动开发*，你需要在编写代码前创建单元测试，这样你可以将单元测试用作设计文档和功能规范。
 
-你可以从代码快速生成测试项目和测试方法，或者根据你的需要手动创建测试。 当使用 IntelliTest 浏览你的 .NET 代码时，可以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 了解如何 [为你的代码生成单元测试](http://msdn.microsoft.com/library/dn823749.aspx)。
+你可以从代码快速生成测试项目和测试方法，或者根据你的需要手动创建测试。 当使用 IntelliTest 浏览你的 .NET 代码时，可以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 了解如何 [为你的代码生成单元测试](generate-unit-tests-for-your-code-with-intellitest.md)。
 
 测试资源管理器还可以运行第三方和开放源代码单元测试框架，它们实现了测试资源管理器外接程序接口。 你可以通过 Visual Studio Extension Manager 和 Visual Studio 库添加其中许多框架。 请参阅[安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)
 
@@ -40,7 +40,7 @@ ms.locfileid: "38978367"
 
 ## <a name="the-mybank-solution-example"></a>MyBank 解决方案示例
 
-在本主题中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 无需使用实际代码按照本主题中的说明操作。 测试方法用 C# 编写并使用 Microsoft 单元测试框架为托管代码进行呈现，但是，概念可以轻松地转到其他语言和框架中。
+在本主题中，我们使用称为 `MyBank` 的虚构应用程序的开发作为示例。 无需使用实际代码按照本主题中的说明操作。 测试方法用 C# 编写，并通过用于托管代码的 Microsoft 单元测试框架进行呈现。 但是，这些概念很容易转移到其他语言和框架。
 
  ![MyBank 解决方案](../test/media/ute_mybanksolution.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "38978367"
 
 -   IAccount.cs 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。
 
--   CheckingAccount.cs 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccounts` 接口。
+-   CheckingAccount.cs 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccount` 接口。
 
 我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdraw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：
 
@@ -311,7 +311,7 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
 
  了解有关 [代码覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) 的详细信息。
 
- **问：如何在具有外部依赖项的代码中测试方法？**
+ **问：能否在具有外部依赖项的代码中测试方法？**
 
  **答：** 可以。 如果安装了 Visual Studio Enterprise，则可以通过使用托管代码的单元测试框架将 Microsoft Fakes 用于你编写的测试方法。
 

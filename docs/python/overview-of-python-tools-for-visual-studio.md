@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8018f637b4c73c786d0433b1b88659fe6b8628d8
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175361"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468772"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -66,9 +66,9 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 
 ![Visual Studio 中的 Python 交互窗口](media/interactive-window.png)
 
-Visual Studio 还紧密集成了 Python 代码编辑器和交互窗口。 使用 Ctrl+Enter 键盘快捷方式可将编辑器中的当前代码行（或代码块）发送给交互窗口，然后移至下一行（或块），非常方便。 使用 Ctrl+Enter 无需运行调试程序即可轻松浏览代码。 还可以使用相同的键盘快捷方式将选定代码发送给交互窗口，并轻松地将交互窗口中的代码粘贴到编辑器中。 将这些功能结合使用可以在交互窗口中找出代码段的详细信息，并将结果轻松保存到编辑器的文件中。
+Visual Studio 还紧密集成了 Python 代码编辑器和交互窗口。 使用 Ctrl+Enter 键盘快捷方式可将编辑器中的当前代码行（或代码块）发送给交互窗口，然后移至下一行（或块），非常方便。 使用 +Enter 无需运行调试程序即可轻松浏览代码。 还可以使用相同的键盘快捷方式将选定代码发送给交互窗口，并轻松地将交互 窗口中的代码粘贴到编辑器中。 将这些功能结合使用可以在交互窗口中找出代码段的详细信息，并将结果轻松保存到编辑器的文件中。
 
-Visual Studio 还支持 REPL 中的 IPython/Jupytr，包括内联图、.NET 和 Windows Presentation Foundation (WPF)。
+Visual Studio 还支持 REPL 中的 IPython/Jupyter，包括内联图、.NET 和 Windows Presentation Foundation (WPF)。
 
 更多相关信息：
 
@@ -134,9 +134,9 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 - 文档：[Python 的单元测试工具](unit-testing-python-in-visual-studio.md)
 - 常规 Visual Studio 功能文档：[对代码进行单元测试](../test/unit-test-your-code.md)。
 
-## <a name="publishing-to-azure-and-azure-sdk-for-python"></a>发布到 Azure 和 Azure SDK for Python
+## <a name="publish-to-azure-and-azure-sdk-for-python"></a>发布到 Azure 和 Azure SDK for Python
 
-Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。 Visual Studio 包含用于动态和静态内容的基本 `web.config` 项模板。 Python 工作负载还包括 Azure SDK for Python，它用于简化从 Windows、Mac OS X 和 Linux 应用使用 Azure 服务的过程。
+Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。 Visual Studio 包含用于动态和静态内容的基本 web.config 项模板。 Python 工作负载还包括 Azure SDK for Python，它用于简化从 Windows、Mac OS X 和 Linux 应用使用 Azure 服务的过程。
 
 ![在 Visual Studio 中将 Python 应用程序发布到 Azure](media/azure-publish-dialog.png)
 
@@ -149,7 +149,7 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 
 |   |   |
 |---|---|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | <ul><li>[使用 Python 编程简介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初学者：字符串和函数](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基础知识：列表和循环](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python 热点问题](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | <ul><li>[Python 编程简介](https://mva.microsoft.com/en-US/training-courses/introduction-to-programming-with-python-8360?l=lqhuMxFz_8904984382)</li><li>[Python 初学者：字符串和函数](https://mva.microsoft.com/en-US/training-courses/python-beginner-strings-and-functions-18015)</li><li>[Python 基础知识：列表和循环](https://mva.microsoft.com/en-US/training-courses/python-fundamentals-lists-and-loops-18019)</li><li>[Python 热点问题](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)</li></ul> |
 
 ## <a name="questions-and-answers"></a>问题和解答
 
@@ -163,7 +163,7 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 
 **问：Python 项目是否可以生成独立的可执行文件？**
 
-答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区中有多种方法可以创建可执行文件。 如博客文章 [Using CPython's Embeddable Zip File](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)（使用 CPython 可嵌入 zip 文件）中所述，CPython 还支持嵌入到本机应用程序中。
+答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区中有多种方法可以创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
 
 ## <a name="features-matrix"></a>功能矩阵
 

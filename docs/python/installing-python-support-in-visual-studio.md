@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5dcc8cf450fc769703174f600727bf91b939ac96
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341547"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499898"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -41,10 +41,10 @@ ms.locfileid: "39341547"
 1. 下载并运行最新 Visual Studio 2017 安装程序。 如果已安装 Visual Studio，则运行 Visual Studio 安装程序，选择“修改”选项（请参阅[修改 Visual Studio](../install/modify-visual-studio.md)），并转到步骤 2。
 
     > [!div class="nextstepaction"]
-    > <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">安装 Visual Studio 2017 Community</a>
+    > [安装 Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > Community Edition 适用于个体开发者、课堂学习、学术研究和开放源代码开发。 对于其他用途，请安装 <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Professional</a> 或 <a target="frameTarget" href="https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_install">Visual Studio 2017 Enterprise</a>。
+    > Community Edition 适用于个体开发者、课堂学习、学术研究和开放源代码开发。 对于其他用途，请安装 [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) 或 [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)。
 
 1. 安装程序提供工作负载列表，即一组用于特定开发领域的相关选项。 对于 Python，请选择 **Python 开发**工作负载。
 
@@ -92,7 +92,7 @@ ms.locfileid: "39341547"
 
 1. 在安装程序中，选择“修改”。
 
-1. 选择“编程语言”>“针对 Visual Studio 的 Python 工具”，然后选择“下一步”：
+1. 选择“编程语言” > “针对 Visual Studio 的 Python 工具”，然后选择“下一步”：
 
     ![Visual Studio 2015 安装程序中的 PTVS 选项](media/installation-vs2015.png)
 

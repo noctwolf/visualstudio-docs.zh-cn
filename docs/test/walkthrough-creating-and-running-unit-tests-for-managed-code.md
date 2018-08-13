@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 50fafdb91f9a845fed8681f7b75662200c45c913
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 13488619b38f5fd974d793d56f6a8d8cf86f15c1
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380858"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469108"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -210,7 +210,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ### <a name="analyze-the-test-results"></a>分析测试结果
 
-测试结果包含一条描述失败的消息。 对于 `AreEquals` 方法，消息会显示预期的内容（Expected\<value> 参数）以及实际接收到的内容（Actual\<value> 参数）。 虽然预计余额会减少，但实际上余额中反而增加了取款金额。
+测试结果包含一条描述失败的消息。 对于 `AreEqual` 方法，消息会显示预期的内容（Expected\<value> 参数）以及实际接收到的内容（Actual\<value> 参数）。 虽然预计余额会减少，但余额中反而增加了取款金额。
 
 单元测试已发现一个 bug：取款金额本应从帐户余额中减去，结果却添加到帐户余额中。
 

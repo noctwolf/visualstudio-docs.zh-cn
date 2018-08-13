@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de64cd62ecffef2897e5be65b348eddbc9a52e46
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: bcd15202fa4641928dea8a7c2d0d1f9894426193
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388158"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586570"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -147,7 +147,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>问：为什么需要创建虚拟环境？
 
-答：虚拟环境是隔离应用确切依赖项的好办法。 此类隔离避免了全局 Python 环境中的冲突，有助于进行测试和协作。 随着时间的推移，在开发应用时，总是会引入许多有用的 Python 包。 通过将包保存在特定于项目的虚拟环境中，可以轻松更新项目中介绍该环境的 requirements.txt 文件，该文件包含在源代码管理中。 如果项目被复制到任何其他计算机（包括生成服务器、部署服务器和其他开发计算机），仅使用 requirements.txt 即可轻松重新创建环境（这就是为什么环境不需要包含在源代码管理中）。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#using-virtual-environments)。
+答：虚拟环境是隔离应用确切依赖项的好办法。 此类隔离避免了全局 Python 环境中的冲突，有助于进行测试和协作。 随着时间的推移，在开发应用时，总是会引入许多有用的 Python 包。 通过将包保存在特定于项目的虚拟环境中，可以轻松更新项目中介绍该环境的 requirements.txt 文件，该文件包含在源代码管理中。 如果项目被复制到任何其他计算机（包括生成服务器、部署服务器和其他开发计算机），仅使用 requirements.txt 即可轻松重新创建环境（这就是为什么环境不需要包含在源代码管理中）。 有关详细信息，请参阅[使用虚拟环境](selecting-a-python-environment-for-a-project.md#use-virtual-environments)。
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>问：如何删除已经提交给源代码管理的虚拟环境？
 

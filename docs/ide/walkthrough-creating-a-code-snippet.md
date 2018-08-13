@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9890be18e3d43f4c036da72bf2794801e5ec70
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 517eb98e7ca5b32d07a4501823ca092c366e4639
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425152"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39469147"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 可以在“代码片段管理器”（“工具” > “代码片段管理器”）中使用“导入”按钮向 Visual Studio 的安装添加代码片段。
@@ -34,8 +34,7 @@ ms.locfileid: "32425152"
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<CodeSnippets
-    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
     <CodeSnippet Format="1.0.0">
         <Header>
             <Title></Title>
@@ -55,7 +54,7 @@ ms.locfileid: "32425152"
 
 2.  在元素中填写代码片段的标题，例如在 Title 元素中填写“Hello World VB”。
 
-3.  在 Code 元素的“语言”特性中填写代码片段的语言。 对于本示例，请使用“VB”。
+3.  在 Code 元素的“语言”属性中填写代码片段的语言。 对于本示例，请使用“VB”。
 
 4.  在 Code 元素中的 CDATA 部分内添加某些代码，例如：
 

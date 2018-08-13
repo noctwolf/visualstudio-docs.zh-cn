@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c756e92b6abc383cb4515a628fb81308e21a1f01
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 29a7bec902f28c67e5e6d6e9d63d9a85239c32c1
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056535"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586360"
 ---
-# <a name="refactoring-python-code"></a>重构 Python 代码
+# <a name="refactor-python-code"></a>重构 Python 代码
 
 Visual Studio 提供用于自动转换和清理 Python 源代码的多个命令：
 
@@ -27,11 +27,9 @@ Visual Studio 提供用于自动转换和清理 Python 源代码的多个命令�
 - [添加导入](#add-import)：提供添加缺少导入的智能标记
 - [删除未使用的导入](#remove-unused-imports)：删除未使用的导入
 
-<a name="rename-variable"</a>
-
 ## <a name="rename"></a>重命名
 
-1. 右键单击想要重命名的标识符，然后选择“重命名”，或将光标置于标识符上，然后选择“编辑”>“重构”>“重命名...”菜单命令 (F2)。
+1. 右键单击想要重命名的标识符，然后选择“重命名”，或将光标置于标识符上，然后选择“编辑” > “重构” > “重命名”菜单命令 (F2)。
 1. 在出现的“重命名”对话框中，为标识符输入新名并选择“确定”：
 
   ![新标识符名称的重命名提示](media/code-refactor-rename-1.png)
@@ -45,7 +43,7 @@ Visual Studio 提供用于自动转换和清理 Python 源代码的多个命令�
 ## <a name="extract-method"></a>提取方法
 
 1. 选择多行代码或表达式以提取到单独的方法中。
-1. 选择“编辑”>“重构”>“提取方法...”菜单命令或键入 Ctrl-R、M。
+1. 选择“编辑” > “重构” > “提取方法”菜单命令或键入 Ctrl+R > M。
 1. 在出现的对话框中，输入新的方法名称，指示将其提取到的位置，然后选择任何闭包变量。 闭包未选择的变量将返回到方法参数中：
 
   ![“提取方法”对话框](media/code-refactor-extract-method-1.png)
@@ -69,8 +67,6 @@ Visual Studio 尝试筛选出实际未在模块中定义的成员，例如导入
 同样，Visual Studio 将筛选从其他模块或内置命名空间导入的函数。 例如，如果某个模块从 `sys` 模块导入 `settrace` 函数，从理论上讲，可以从该模块导入它。 但最好直接使用 `import settrace from sys`，以便 Visual Studio 专门提供该语句。
 
 最后，如果按常规排除某些内容，但该内容具有将包括的其他值（例如，由于名称分配有模块中的值），Visual Studio 仍将排除该导入。 此行为假定不应导出该值，因为它在其他模块重定义，因此其他分配也可能为不会导出的虚拟值。
-
-<a name="remove-imports"</a>
 
 ## <a name="remove-unused-imports"></a>删除未使用的导入
 

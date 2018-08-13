@@ -10,31 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f19cbb3a86a45d0c6732435e08ffae408631c57
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 97172253a088be86f20fae77fe62d01330a3b801
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37923944"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39513087"
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
+
 在 XAML 设计器中，“形状”正是你所期望的内容。 例如：矩形、圆或椭圆。 *路径* 是更加灵活的形状版本。 你可以执行某些操作，如重新调整它们的形状，或将它们合并在一起以形成新形状。
 
- 形状和路径使用矢量图形，因此它们可很好地按高分辨率显示进行缩放。 若要了解有关向量图形的详细信息，请参阅 [什么是向量图形](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [向量图形](http://www.webopedia.com/TERM/V/vector_graphics.html)。
-
- **在本主题中：**
-
--   [绘制形状](#Shape)
-
--   [绘制路径](#Path)
-
--   [将形状转换为路径](#Convert)
-
--   [合并路径](#Combine)
-
--   [创建复合路径](#Compound)
-
--   [创建剪切路径](#Clipping)
+形状和路径使用矢量图形，因此它们可很好地按高分辨率显示进行缩放。 若要了解有关向量图形的详细信息，请参阅 [什么是向量图形](https://www.youtube.com/watch?v=MoCSwF0n-io) 或 [向量图形](http://www.webopedia.com/TERM/V/vector_graphics.html)。
 
 ##  <a name="Shape"></a> 绘制形状
  可以在“资产”  面板中查找形状。

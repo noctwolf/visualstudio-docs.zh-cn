@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c1c9941c59fb02ecd1332250cb3ac3ca73a67144
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057006"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512078"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
@@ -40,9 +40,9 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
 本教程将从一个包含单一空代码文件的简单项目开始。
 
-1. 在 Visual Studio 中，选择“文件”>“新建”>“项目”(Ctrl+Shift+N)，这会打开“新建项目”对话框。 可在该对话框中浏览各种语言的模板，然后为项目选择一个模板，并指定 Visual Studio 放置文件的位置。
+1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”(Ctrl+Shift+N)，这会打开“新建项目”对话框。 可在该对话框中浏览各种语言的模板，然后为项目选择一个模板，并指定 Visual Studio 放置文件的位置。
 
-1. 若要查看 Python 模板，可在左侧选择“已安装”>“Python”或搜索“Python”。 如果忘记了模板在语言树中的位置，使用搜索是找到该模板的好方法。
+1. 若要查看 Python 模板，可在左侧选择“已安装” > “Python”或搜索“Python”。 如果忘记了模板在语言树中的位置，使用搜索是找到该模板的好方法。
 
     ![显示 Python 项目的新建项目对话框](media/vs-getting-started-python-01-new-project.png)
 
@@ -50,28 +50,28 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
 1. 选择“Python 应用程序”模板，为项目指定名称并选择“确定”。
 
-1. 几分钟后，Visual Studio 会在“解决方案资源管理器”窗口 (1) 中显示项目结构。 默认代码文件在编辑器 (2) 中处于打开状态。 属性窗口 (3) 也会出现，其中显示在解决方案资源管理器中选定的任何项的附加信息（包括它在磁盘上的确切位置）。
+1. 几分钟后，Visual Studio 会在“解决方案资源管理器”窗口 (1) 中显示项目结构。 默认代码文件在编辑器 (2) 中处于打开状态。 “属性”窗口 (3) 也会出现，其中显示在“解决方案资源管理器”中选定的任何项的附加信息（包括它在磁盘上的确切位置）。
 
     ![具有 Python 项目的解决方案资源管理器](media/vs-getting-started-python-02-windows.png)
 
-1. 花点时间熟悉一下解决方案资源管理器，可在该管理器中浏览项目中的文件和文件夹。
+1. 花点时间熟悉一下“解决方案资源管理器”，可在该管理器中浏览项目中的文件和文件夹。
 
     ![解决方案资源管理器已展开显示各种功能](media/vs-getting-started-python-03-solution-explorer.png)
 
-    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 `.pyproj` 文件表示。
+    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .pyproj 文件表示。
 
-    (2) 顶层是一个*解决方案*，它与项目默认同名。 解决方案在磁盘上由 `.sln` 文件表示，是一个或多个相关项目的容器。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。 
+    (2) 顶层是一个*解决方案*，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。 
 
-    (3) 在项目下方可以看到源文件，在本例中，只有一个 `.py` 文件。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
+    (3) 在项目下方可以看到源文件，在本例中，只有一个 .py 文件。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
 
     (4) 项目下方还有“Python 环境”节点。 展开后，可以看到可用的 Python 解释器。 展开解释器节点可查看安装到该环境 (5) 中的库。
 
-    右键单击解决方案资源管理器中的任意节点或项均可访问适用命令菜单。 例如，“重命名”命令可用于更改任何节点或项（包括项目和解决方案）的名称。
+    右键单击“解决方案资源管理器”中的任意节点或项均可访问适用命令菜单。 例如，“重命名”命令可用于更改任何节点或项（包括项目和解决方案）的名称。
 
 ## <a name="next-step"></a>下一步
 
 > [!div class="nextstepaction"]
-> [编写和运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+> [编写并运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
 ## <a name="go-deeper"></a>深入了解
 
