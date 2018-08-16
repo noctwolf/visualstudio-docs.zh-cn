@@ -9,12 +9,12 @@ description: 了解如何查找公共客户编号 (PCN) 或授权编号
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 137da647293907b7ca57a296f558121b30c50b1f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: da4a9f1342abfc5701aadf32798305e349eb3ed7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36325422"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637014"
 ---
 # <a name="how-do-i-locate-my-public-customer-number-pcn-or-authorization-number"></a>如何查找我的“公共客户编号”(PCN) 或授权编号？
 
@@ -25,10 +25,12 @@ ms.locfileid: "36325422"
 1.  登录批量许可服务中心：[https://www.Microsoft.com/licensing/servicecenter](https://www.Microsoft.com/licensing/servicecenter)。
 
 2. 在“订阅”选项卡中，选择“Visual Studio 订阅”。
-    ![选择 VLSC 中的订阅](_img/vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![选择 VLSC 中的订阅](_img/vlsc/vlsc-subscriptions.png)
 
 3. PCN 或公共客户编号位于页面的中间位置。
-    ![在 VLSC 中查找 PCN](_img/vlsc/vlsc-pcn.png)
+    > [!div class="mx-imgBorder"]
+    > ![在 VLSC 中查找 PCN](_img/vlsc/vlsc-pcn.png)
 
     
 如果没有看到上述页面并被重定向到 Visual Studio 登录页面，请将以下链接复制并粘贴到你的浏览器：https://www.microsoft.com/Licensing/servicecenter/Subscription/AgreementSearch。

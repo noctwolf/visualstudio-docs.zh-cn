@@ -9,12 +9,12 @@ description: 了解管理员如何解决透支的订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ae5ed6a4d459f3131250aed89ba0aef88da1ef7c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 308ef6d310d87340c18b4f2da1e118c6859ec89e
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36325280"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636722"
 ---
 # <a name="handling-over-claimed-subscriptions"></a>处理“透支的”订阅
 
@@ -22,7 +22,9 @@ ms.locfileid: "36325280"
 
 > [!NOTE] 
 > 开放式许可证计划不允许出现透支的情况。  另外，其他程序可能会在门户中以不同方式显示此信息。 
-![透支订阅通知](_img\over-claimed\over-claimed-alert.png)
+
+> [!div class="mx-imgBorder"]
+> ![透支订阅通知](_img\over-claimed\over-claimed-alert.png)
 
 
 1.  若要解决透支的许可证，请单击警报文本。 随即会显示分配到该订阅级别的订阅者筛选列表以及透支到期日期。 
