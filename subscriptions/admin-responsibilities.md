@@ -9,12 +9,12 @@ description: 了解订阅管理员的职责。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 1eb8dc3cf47241632085e86f589ba377343aa4f1
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 9fdefa652a368c344f11fdaf70dbf5db9b172fbf
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862993"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638093"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>管理员职责概述
 管理员能够管理组织的订阅。  管理员角色还负责确保按照许可条款管理订阅。 本文概述了管理员角色的职责、权益和限制。
@@ -64,6 +64,7 @@ Visual Studio 订阅管理员负责确保与 Visual Studio 授权软件交互的
 
 ## <a name="track-user-assignment-and-process-orders"></a>跟踪用户分配和处理订单
 Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批量许可协议或 Microsoft 产品和服务协议规定的计划处理因使用量增加而产生的订单。 新的 Visual Studio 订阅管理门户提供一个有用的跟踪器，可显示可用和已用的许可证，从而简化了这一过程。
+
 ### <a name="high-water-mark-of-usage"></a>使用量高水位线
 **在以下情况下，贵公司购买 Visual Studio 订阅的义务立即生效：**
 - 向用户分配许可证。

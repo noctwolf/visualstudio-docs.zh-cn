@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6bd98a8b937dc5a4ff2f8227684be4fbb9a948c4
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: c4d9d7f03f8703bd549cf9e1098327a2fb59a497
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341502"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008211"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在交互窗口中使用 IPython
 
@@ -81,7 +81,7 @@ IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友
 
 IPython 有很多其他有用的功能，如转义到系统外壳、变量替换、捕获输出等。请参阅 [IPython 文档](http://ipython.org/documentation.html)了解详细信息。
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
 - 若要在不安装的情况下轻松使用 Jupyter，请试用免费的 [Azure 笔记本托管服务](https://notebooks.azure.com/)来保留笔记本并与他人进行共享。
 

@@ -18,16 +18,19 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: 5b13f01a1a5ba13503932c73aef3a4825115497e
-ms.sourcegitcommit: 873c0e1a31def013bcca1b0caa0eb0249de89bec
+ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29753292"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008403"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
 JavaScript 是 Visual Studio 中的一级语言。 当你在 Visual Studio IDE 中编写 JavaScript 代码时，你可以使用该标准编辑帮助（代码片段，IntelliSense 等等）的大部分或全部。 对于许多应用程序类型和服务，可以编写 JavaScript 代码。
+
+> [!NOTE]
+> 我们汇集了整个社区的力量，将所有 Microsoft JavaScript API 参考（超过 500 页）从 docs.microsoft.com 重定向到其 MDN 对应位置，以使 [MDN Web 文档](https://developer.mozilla.org/en-US/)成为 Web 的一站式首要开发资源。 有关详细信息，请参阅此[公告](https://blogs.windows.com/msedgedev/2018/06/26/chakra-docs-mdn-web-docs/)。
 
 ## 对 ECMAScript 2015 (ES6) 和更高版本的 <a name="ES6"></a> 支持
 
@@ -183,7 +186,7 @@ var x = React.createElement(comps_1.RepoDisplay, {description: "test"});
 提供具有以下设置的项目：
 
 - 项目的源文件位于 `wwwroot/js`
-- 项目的 lib 文件位于 `wwwrrot/lib`
+- 项目的 lib 文件位于 `wwwroot/lib`
 - `bootstrap`、`jquery`、`jquery-validation` 和 `jquery-validation-unobtrusive` 在 `bower.json` 中列出
 - `kendo-ui` 已手动添加到 lib文件夹
 

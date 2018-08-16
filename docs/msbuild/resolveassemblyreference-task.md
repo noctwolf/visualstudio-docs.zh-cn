@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b190e43be87f5436741106eb1df8884f37322a00
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: a7378aca5d06c7d1c49d7b46261060caf7a005db
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152596"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637651"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 任务
 确定依赖指定程序集的所有程序集，其中包括第二级和第 `n` 级的依赖项。  
@@ -63,7 +63,7 @@ ms.locfileid: "39152596"
 |`LatestTargetFrameworkDirectories`|可选 `String[]` 参数。<br /><br /> 指定目录列表，其中包含该计算机上可将其作为目标的最新框架的 redist 列表。 如果未设置此项，则使用安装在给定目标框架标识符的计算机上的最高框架。|  
 |`ProfileName`|可选 `String` 参数。<br /><br /> -   指定要设定为目标的框架配置文件的名称。 例如，客户端、Web 或网络。|  
 |`RelatedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含与引用具有相同基名称的相关文件，如 XML 和 .pdb 文件。<br /><br /> 此参数中列出的文件可选择性地包含以下项的元数据：<br /><br /> -   `Primary`： `Boolean` 值。 如果为 `true`，则文件项已通过使用 `Assemblies` 参数。 默认值是 `false`。<br />-   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。|  
-|`ResolvedDependencyFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含第 *n*级依赖项路径。 此参数不包括第一级主引用，其包含在 `ResolvedFiles` 参数中。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。<br />-   `FusionName`： `String` 值。 指定此依赖项的名称。<br />-   `ResolvedFrom`： `String` 值。 SpecAssemblyFoldersBaseifies，已从中解析此文件的文字搜索路径。|  
+|`ResolvedDependencyFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含第 *n*级依赖项路径。 此参数不包括第一级主引用，其包含在 `ResolvedFiles` 参数中。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。<br />-   `FusionName`： `String` 值。 指定此依赖项的名称。<br />-   `ResolvedFrom`： `String` 值。 指定已从中解析此文件的文字搜索路径。|  
 |`ResolvedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含已解析为完整路径的所有主引用列表。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。<br />-   `FusionName`： `String` 值。 指定此依赖项的名称。<br />-   `ResolvedFrom`： `String` 值。 指定已从中解析此文件的文字搜索路径。|  
 |`SatelliteFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 指定找到的任何附属文件。 如果导致此项存在的引用或依赖项是 CopyLocal=true，则这些将为 CopyLocal=true。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。 如果导致此项存在的引用或依赖项具有为 `true` 的 `CopyLocal` 值，则这个值为 `true`。<br />-   `DestinationSubDirectory`： `String` 值。 指定要复制此项到的相对目标目录。|  
 |`ScatterFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 只读输出参数。<br /><br /> 包含与某个给定的程序集关联的散点文件。<br /><br /> 此参数中的项选择性地包含以下项的元数据：<br /><br /> -   `CopyLocal`： `Boolean` 值。 指示给定引用是否应复制到输出目录。|  

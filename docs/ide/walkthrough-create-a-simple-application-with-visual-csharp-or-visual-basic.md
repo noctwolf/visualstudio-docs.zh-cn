@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3efb5315b3adb02f74b41d193a6b9173f38ec992
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 9757158f6711c33333959fe66ef881c6f69a67b0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749552"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008442"
 ---
 # <a name="walkthrough-create-a-simple-application-with-c-or-visual-basic"></a>演练：使用 C# 或 Visual Basic 创建简单应用程序
 
@@ -48,7 +48,7 @@ ms.locfileid: "34749552"
 
 1. 选择“确定”。
 
-Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅[面向 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)。）“解决方案资源管理器”中显示以下项：
+Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资源管理器”将显示各种文件。 “WPF 设计器”在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。 您可以选择只查看可视化视图或 XAML 视图。 “解决方案资源管理器”中显示以下项：
 
 ![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png)
 
