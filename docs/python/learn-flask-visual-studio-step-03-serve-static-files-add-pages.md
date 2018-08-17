@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: fd919296bdae626b781748a14275947723db9f36
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 38050d9ecb5956c4e782ec61b5ae2dc6801ad224
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388132"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637638"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>步骤 3：为静态文件提供服务、添加页面和使用模板继承
 
@@ -27,7 +27,7 @@ ms.locfileid: "39388132"
 在此步骤中，你将了解如何：
 
 > [!div class="checklist"]
-> - 使用 Visual Studio 项模板快速创建具有方便样本代码的不同类型的新文件（步骤 3-1）
+> - 使用 Visual Studio 项模板快速添加具有方便样本代码的不同类型的新文件（步骤 3-1）
 > - 通过代码提供静态文件（步骤 3-2，可选）
 > - 向应用添加其他页（步骤 3-3）
 > - 使用模板继承创建跨页使用的标头和导航栏（步骤 3-4）

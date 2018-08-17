@@ -11,16 +11,16 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c86c2d92088a7e34699e5c2fd15aef5de3ef06a
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 83507060295c294747f279dd32f96fe8b0a358fa
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586455"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008416"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Visual Studio 中的 Live Unit Testing 入门
 
-在 Visual Studio 解决方案中启用 Live Unit Testing 后，Live Unit Testing 可以直观描述测试覆盖率和测试状态。 每当修改代码时，它还可以动态执行测试。 当更改破坏了代码并指示其他测试所需的区域时，它会立即发送通知。
+在 Visual Studio 解决方案中启用 Live Unit Testing 后，Live Unit Testing 可以直观描述测试覆盖率和测试状态。 它还会在你每次修改代码时动态执行测试，并在更改导致测试失败时立即发出通知。
 
 Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决方案。 本教程将通过创建面向 .NET Standard 的简单类库来说明 Live Unit Testing 的用法，并创建面向 .NET Core 的 MSTest 项目来对其进行测试。
 
@@ -152,7 +152,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
    ![选择 UTF-8 编码](media/lut-start/utf8-encoding.png)
 
-1. 通过顶级 Visual Studio 菜单中的“生成” > “重新生成解决方案”编译单元测试项目。
+1. 从顶级 Visual Studio 菜单中选择“生成” > “重新生成解决方案”，编译单元测试项目。
 
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
 
@@ -200,7 +200,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 到目前为止，尽管已为 `StringLibrary` 类库编写测试，但尚未执行。 启用 Live Unit Testing 后，就会自动执行这些测试。 为此，请执行以下操作：
 
-1. 选择包含 `StringLibrary` 代码的代码窗口（可选）。 可以是 C# 项目的 class1.cs，或者 Visual Basic 项目的 Class1.vb。 （启用 Live Unit Testing 后，通过此步骤可直观检查测试结果和代码覆盖率的范围。）
+1. 选择包含 `StringLibrary` 代码的代码窗口（可选）。 可以是 C# 项目的 Class1.cs，或者 Visual Basic 项目的 Class1.vb。 （启用 Live Unit Testing 后，通过此步骤可直观检查测试结果和代码覆盖率的范围。）
 
 1. 从顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “启动”。
 
@@ -295,7 +295,9 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
 
-1. 测试执行时，Live Unit Testing 指示 `TestHasEmbeddedSpaces` 方法失败，如下图所示：![报告失败的测试的测试资源管理器。](media/lut-start/test-failure.png)
+1. 测试执行时，Live Unit Testing 指示 `TestHasEmbeddedSpaces` 方法失败，如下图所示：
+
+   ![报告失败的测试的测试资源管理器。](media/lut-start/test-failure.png)
 
 1. 选择显示库代码的窗口。 请注意，Live Unit Testing 已将代码覆盖率扩展到 `HasEmbeddedSpaces` 方法。 它还报告测试失败，方法是将一个红色“🞩”添加到被失败的测试覆盖的行。
 
@@ -356,7 +358,7 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 
 ---
 
-本文提供对 bug 进行初步调查的足够信息。 测试例程 `TestHasEmbeddedSpaces` 进行了错误的假设，或者 `HasEmbeddedSpaces` 无法正确识别所有嵌入的空格。 若要诊断并更正问题，请从 `StringLibrary.HasEmbeddedSpaces` 方法开始：
+本文提供对 bug 进行初步调查的足够信息。 `TestHasEmbeddedSpaces`（测试例程）进行了错误的假设，或者 `HasEmbeddedSpaces` 无法正确识别所有嵌入的空格。 若要诊断并更正问题，请从 `StringLibrary.HasEmbeddedSpaces` 方法开始：
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 1. 查看 `HasEmbeddedSpaces` 方法中的比较。 它认为嵌入的空格是U + 0020。 但是，Unicode 标准包含许多其他空格字符。 这表明库代码对空格字符进行了错误的测试。

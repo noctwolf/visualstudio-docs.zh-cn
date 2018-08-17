@@ -9,12 +9,12 @@ description: 如果别名或友好名称已被使用，登录可能会失败
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 838716b4cb99517977c5292ef4f3fac550ffff3c
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327058"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637677"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -50,11 +50,14 @@ ms.locfileid: "36327058"
 1. 访问[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) (VLSC) 并登录。
 2. 从 VLSC 管理页中，单击“订阅”，然后单击“Visual Studio 订阅”。
 
-    ![“订阅”菜单](_img//vlsc/vlsc-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![“订阅”菜单](_img//vlsc/vlsc-subscriptions.png)
+
 
 3. 单击与 Visual Studio 订阅相关联的“协议编号”。
 
-    ![选择协议](_img/vlsc/vlsc-agreement.png)
+    > [!div class="mx-imgBorder"]
+    > ![选择协议](_img/vlsc/vlsc-agreement.png)
 
 4. 单击“分配订阅”。
 5. 选择所需的订阅级别。

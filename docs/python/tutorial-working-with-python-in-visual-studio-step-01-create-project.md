@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2b3347deb612b6fab248b287ed22fe39a7798796
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9bf904b85b2fc0f4836e60e3a75df7ba528a2a7c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512078"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639427"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 

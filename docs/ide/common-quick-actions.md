@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: becddc01dbe668fbdb129fd6e350f28e054408b7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 2b3c0ddc63dcf9b094b3ca6fb8b66f32a82cca59
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063721"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638350"
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 
@@ -102,7 +102,7 @@ private void MyMethod()
 
 ### <a name="make-method-asynchronous"></a>使方法异步
 
-如果在方法内使用 `await` 或 `Await` 关键字，方法本身还应标记有 `async` 或 `Async` 关键字。  但是，如果不是这种情况，则会出现可使方法异步的快速操作。 从“快速操作”菜单中使用“使方法/函数异步”选项。
+如果在方法内使用 `await` 或 `Await` 关键字，方法本身还应标记有 `async` 或 `Async` 关键字。  但是，如果不是这种情况，则会出现使方法异步的快速操作。 从“快速操作”菜单中使用“使方法/函数异步”选项。
 
 ```csharp
 // Before
@@ -142,7 +142,7 @@ End Function
 
 ### <a name="remove-unnecessary-usingsimports"></a>删除不必要的 using/Import
 
-“删除不必要的 using/Import”快速操作将删除当前文件中任何未使用的 `using` 和 `Import` 语句。  选择此项后，将立即删除未使用的命名空间导入。
+“删除不必要的 using/Import”快速操作将删除当前文件中任何未使用的 `using` 和 `Import` 语句。  选择此项后，将删除未使用的命名空间导入。
 
 |  适用的语言 |  支持的版本 |
 |  -------------------- | ----------------  |
@@ -150,7 +150,7 @@ End Function
 
 ### <a name="remove-unnecessary-cast"></a>删除不必要的 cast
 
-如果将某类型强制转换为不需要 cast 的另一类型，则“删除不必要的 cast”快速操作将从代码中删除该 cast。
+如果将某类型强制转换为不需要强制转换的另一类型，则“删除不必要的强制转换”快速操作将删除该不必要的强制转换。
 
 ```csharp
 // before
@@ -868,7 +868,7 @@ Dim name = customer.name
 
 ### <a name="use-inferred-names"></a>使用推断名称
 
-此快速操作指出用户可使用匿名类型中的推断成员名称或 C# 7.1 的推断元组元素名称的情况。
+此快速操作指出何时可简化代码，以使用匿名类型中推断的成员名称或元组中推断的元素名称。
 
 ```csharp
 // Before
@@ -923,7 +923,7 @@ Console.WriteLine($"{x} {y}");
 
 ### <a name="make-method-synchronous"></a>使方法同步
 
-如果对方法使用 `async` 或 `Async` 关键字，还应在相应方法内的某处使用 `await` 或 `Await` 关键字。  不过，如果不是这种情况，快速操作便会显示，以便于删除 `async` 或 `Async` 关键字并更改返回类型，从而让方法变成同步方法。 从“快速操作”菜单中使用“使方法同步”选项。
+如果对方法使用 `async` 或 `Async` 关键字，还应在相应方法中使用 `await` 或 `Await` 关键字。  不过，如果不是这种情况，则会显示快速操作，可用于删除 `async` 或 `Async` 关键字并更改返回类型，从而让方法变成同步方法。 从“快速操作”菜单中使用“使方法同步”选项。
 
 ```csharp
 // Before
