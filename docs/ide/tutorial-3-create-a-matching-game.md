@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3358d23c7c4f3fd2ad7f6beffb6a035b6c810d38
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747973"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008237"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
+
 在本教程中，将生成一个匹配游戏，在该游戏中，玩家必须匹配隐藏的图标对。 您将学习如何：
 
 -   在 <xref:System.Collections.Generic.List%601> 对象中存储对象，例如图标。
@@ -31,18 +32,18 @@ ms.locfileid: "34747973"
 
 -   创建一个计时器，进行倒计时，然后在启动后立即准确触发事件。
 
- 当你完成本教程时，程序将类似下图所示。
+当你完成本教程时，程序将类似下图所示：
 
- ![本教程中创建的游戏](../ide/media/express_finishedgame.png)本教程中创建的游戏
+![在本教程中创建的游戏](../ide/media/express_finishedgame.png)
 
 ## <a name="tutorial-links"></a>教程链接
 
- 若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
+若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
 
 > [!NOTE]
->  在本教程中，同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您使用的编程语言的信息。
+> 在本教程中，同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您使用的编程语言的信息。
 
- 如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 论坛](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
+如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 论坛](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
 
 ## <a name="related-topics"></a>相关主题
 

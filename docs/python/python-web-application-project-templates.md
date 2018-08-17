@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9edb2a87b862d6a779bb299a20a3f21c471067b0
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586542"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638708"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -88,7 +88,7 @@ Microsoft Azure 云服务支持 requirements.txt 文件。 有关详细信息，
 
 在“调试”组中：
 
-- 搜索路径、脚本参数、解释器参数和解释器路径：这些选项与用于[普通调试](debugging-python-in-visual-studio.md)的相同
+- 搜索路径、脚本参数、解释器参数和解释器路径：这些选项与用于[普通调试](debugging-python-in-visual-studio.md)的相同。
 - 启动 URL：指定要在浏览器中打开的 URL。 默认为 `localhost`。
 - **端口号**：URL 中未指定端口时使用的端口（默认情况下，Visual Studio 会自动选择一个）。 此设置下，能够替代 `SERVER_PORT` 环境变量的默认值，该变量由模板用来配置本地调试服务器侦听的端口。
 

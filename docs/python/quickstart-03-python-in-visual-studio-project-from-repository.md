@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ef9867d233d3aa8f5645793f8801f6f69f4e9be
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: a058badfecfea84841a6a857200c04ebabf42a58
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512811"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636819"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 

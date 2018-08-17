@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d36fefdaa92b488908a0de99878e341114253624
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 71d10e2a8c62f695460cb3b596acc10f01a6ca81
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341259"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008318"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
-在处理 Python 项目的过程中，可观察到系统切换到命令窗口来运行特定脚本或模块、运行 pip 命令或运行一些其他任意工具。 为改进工作流，可将自定义命令添加到 Python 项目上下文菜单的 Python 子菜单中。 可在控制台窗口或 Visual Studio 输出窗口中运行这些命令。 还可使用正则表达式来指示 Visual Studio 如何分析来自命令输出的错误和警报。
+在处理 Python 项目的过程中，可观察到系统切换到命令窗口来运行特定脚本或模块、运行 pip 命令或运行一些其他任意工具。 为改进工作流，可将自定义命令添加到 Python 项目上下文菜单的 Python 子菜单中。 可在控制台窗口或 Visual Studio“输出”窗口中运行这些命令。 还可使用正则表达式来指示 Visual Studio 如何分析来自命令输出的错误和警报。
 
 默认情况下，此菜单仅包含单个 Run PyLint 命令：
 

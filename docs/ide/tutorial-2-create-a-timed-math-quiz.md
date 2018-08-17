@@ -11,14 +11,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd0c2a0d239cca67eda9454f522e5041af29c7fc
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: b28afd645351577073eb7525cf4bed321afb09c0
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747875"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008390"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教程 2：创建计时数学测验
+
 在本教程中，您将构建一个测验，在该测验中，测验对象必须在指定时间内回答四道随机算术题。 您将学习如何：
 
 -   使用 <xref:System.Random> 类生成随机数。
@@ -29,16 +30,16 @@ ms.locfileid: "34747875"
 
 -   使用代码执行基本算术运算。
 
- 当您完成时，您的测验看上去与下图类似，但数字有所不同。
+完成时，你的测验看上去与下图类似，但数字有所不同。
 
- 本教程中创建的![包含四道题的数学测验](../ide/media/express_finishedquiz.png)
+![包含四个问题的数学测验](../ide/media/express_finishedquiz.png)
 
 ## <a name="tutorial-links"></a>教程链接
 
- 若要下载测验的完整版本，请参阅[数学测验教程的完整示例](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
+若要下载测验的完整版本，请参阅[数学测验教程的完整示例](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)。
 
 > [!NOTE]
->  本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。
+> 本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。
 
 ## <a name="related-topics"></a>相关主题
 

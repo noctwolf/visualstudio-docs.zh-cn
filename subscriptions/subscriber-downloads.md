@@ -9,12 +9,12 @@ description: 了解如何查找和下载 Visual Studio 订阅中包含的 Micros
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 8029af659fb45cf7a1ef028855a350935e41670f
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 4ac1f74f9f60526c8b1f884cd63907329d2f91a2
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326340"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637732"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用订阅者下载
 订阅者权益包含可以下载各种各样的软件。
@@ -41,26 +41,26 @@ ms.locfileid: "36326340"
 [下载](https://my.visualstudio.com/downloads/featured)页仅显示订阅中包含的下载内容。  如果具有多个订阅或计划成员身份，即使目前正在查看其它订阅，也会显示你所具有的最高订阅的下载内容。  例如，如果你的 Visual Studio Professional 订阅和 Visual Studio Dev Essentials 成员身份都关联了同一个登录 ID，即使你目前正在查看 Dev Essentials 权益，也会显示 Professional 级别订阅中包含的下载内容。
 
 访问[下载](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs)页时，可以看到按产品类型分组的热门下载。  可以在所示的热门下载中选择一项产品，也可以使用页面顶部的搜索栏搜索任何产品。
-
-![订阅者下载页](_img\subscriber-downloads\subscriber-downloads-resized.png)
+> [!div class="mx-imgBorder"]
+> ![订阅者下载页](_img\subscriber-downloads\subscriber-downloads-resized.png)
 
 例如，如果从“开发人员工具”列表中选择“Visual Studio 2017”，则可以看到可用的 Visual Studio 2017 下载列表。
-
-![Visual Studio 2017 下载](_img\subscriber-downloads\vs2017-new-UI.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 下载](_img\subscriber-downloads\vs2017-new-UI.png)
 
 使用可用的下拉菜单，可轻松选择体系结构、语言和文件类型。 选择首选选项，然后单击“下载”开始下载产品。
 
 ### <a name="displaying-download-details"></a>显示下载详细信息
 
 单击产品名称或“信息”链接后会显示有关下载的详细信息，并提供产品发行说明的访问权限。
-
-![Visual Studio 2017 Pro 下载详细信息](_img\subscriber-downloads\vs2017-pro-details.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 下载详细信息](_img\subscriber-downloads\vs2017-pro-details.png)
 
 在“详细信息”窗格中，也可以单击“密钥”选项卡查看产品密钥的状态。
-
-![Visual Studio 2017 Pro 产品密钥](_img\subscriber-downloads\vs2017-pro-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 产品密钥](_img\subscriber-downloads\vs2017-pro-keys.png)
 
 ### <a name="obtaining-product-keys"></a>获取产品密钥
 若要获取下载内容的产品密钥，可单击带有“获取密钥”标记的蓝色密钥，或者如果已在查看“详细信息”窗格，单击“密钥”选项卡上的“索取密钥”。
-
-![Visual Studio 2017 Pro 索取产品密钥](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 2017 Pro 索取产品密钥](_img\subscriber-downloads\vs2017-pro-claim-keys.png)
