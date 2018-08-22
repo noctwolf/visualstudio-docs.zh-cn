@@ -53,7 +53,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 
  向列表添加一个或多个 `register` 或 `registerGroup` 值。
 
- / Unwatch [{`register`& #124;`registerGroup`}...]
+ / Unwatch [{`register`&#124;`registerGroup`}...]
 
  从列表中删除一个或多个 `register` 或 `registerGroup` 值。
 
