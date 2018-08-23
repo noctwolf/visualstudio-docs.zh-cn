@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a04a64f5ed7f62f4b01f703efa85e36aa854ff
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131864"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623794"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>如何调试零基础
 
@@ -25,7 +25,7 @@ ms.locfileid: "39131864"
 
 调试器，遗憾的是，不是由可以用于在下面的代码奇迹般地揭示的所有问题或"bug"。 *调试*表示运行你的代码中的调试工具分步喜欢 Visual Studio 中，若要查找进行编程错误的确切点。 然后了解哪些地在代码中，所需的更正和调试工具通常允许您以进行临时更改，因此你可以继续运行程序。
 
-有效地使用调试程序也是一项技能采用时间和实践，若要了解，但为每个软件开发人员最终是基本任务。 在本文中，然后，我们介绍了调试的核心原理并提供提示以帮助你入门。
+有效地使用调试程序也是需要时间和了解的做法，但从根本上说是每个软件开发人员的基本任务的一项技能。 在本文中，然后，我们介绍了调试的核心原理并提供提示以帮助你入门。
 
 ## <a name="clarify-the-problem-by-asking-yourself-the-right-questions"></a>通过正确的问题问自己，明确问题
 
@@ -45,7 +45,7 @@ ms.locfileid: "39131864"
 
 * 正在使用正确的 API （即，右对象、 函数、 方法或属性）？ 正在使用的 API 可能不会执行您认为它。 （检查在调试器中的 API 调用后，解决此问题可能需要转至文档以帮助识别正确的 API。）
 
-* 您是否正在正确使用 API？ 可能使用 API 的权限，但没有使用它以正确的方式。
+* 您是否正在正确使用 API？ 您可能使用 API 的权限，但没有使用它以正确的方式。
 
 * 你的代码是否包含任何拼写错误？ 若要查看，尤其在使用不需要用完之前声明的变量的语言时，很难一些拼写错误，如简单的变量名拼写错误。
 
@@ -228,7 +228,7 @@ ms.locfileid: "39131864"
 
 1. 单击**重新启动**![重新启动应用程序](../debugger/media/dbg-tour-restart.png "RestartApp")调试工具栏中的按钮 (**Ctrl** + **Shift**  +  **F5**)。
 
-    应用程序会在你设置的断点处暂停。 黄色突出显示了指示调试器暂停的位置 （黄色的代码行具有尚未执行）。
+    应用程序会在你设置的断点处暂停。 黄色的突出显示指示调试器暂停的位置 （黄色的代码行具有尚未执行）。
 
 1. 将鼠标悬停`GalaxyType`变量在右侧，再到左侧的扳手图标，展开`theGalaxy.GalaxyType`。 可以看到`GalaxyType`包含的属性`MyGType`，并且属性值设置为`Spiral`。
 
@@ -303,7 +303,7 @@ ms.locfileid: "39131864"
 
     查看代码，请参阅中的存在拼写错误`case 'l'`语句。 它应该是`case 'I'`。
 
-1. 在代码中的单击`case 'l'`，并将其替换为 case I。
+1. 在代码中单击`case 'l'`并将其替换为`case 'I'`。
 
 1. 删除断点，然后依次**重新启动**按钮以重新启动该应用程序。
 

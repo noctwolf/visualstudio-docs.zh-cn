@@ -1,5 +1,5 @@
 ---
-title: CA3147： 将标记与 ValidateAntiForgeryToken 谓词处理程序
+title: CA3147：使用 ValidateAntiForgeryToken 标记谓词处理程序
 ms.date: 08/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -11,14 +11,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4369cfd310be9322d17b8bdbfe79880f2aa579
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: da15a441a10f3ad3f3f84ee0cc76eeed8e4127e4
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008690"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42623827"
 ---
-# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147： 将标记与 ValidateAntiForgeryToken 谓词处理程序
+# <a name="ca3147-mark-verb-handlers-with-validateantiforgerytoken"></a>CA3147：使用 ValidateAntiForgeryToken 标记谓词处理程序
 
 |||
 |-|-|
@@ -29,7 +29,7 @@ ms.locfileid: "40008690"
 
 ## <a name="cause"></a>原因
 
-ASP.NET MVC 控制器操作方法不标记有<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute?displayProperty=fullName>，或属性指定的 HTTP 谓词，例如<xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute?displayProperty=fullName>或<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute?displayProperty=fullName>。
+ASP.NET MVC 控制器操作方法不标记有[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))，或属性指定的 HTTP 谓词，如[HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993(v%3dvs.118))或[AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)。
 
 ## <a name="rule-description"></a>规则说明
 
@@ -37,17 +37,17 @@ ASP.NET MVC 控制器操作方法不标记有<xref:Microsoft.AspNetCore.Mvc.Vali
 
 此规则检查该 ASP.NET MVC 控制器操作方法是：
 
-- 具有<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute>并指定允许的 HTTP 谓词，不包括 HTTP GET。
+- 具有[ValidateAntiforgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108%28v%3dvs.118%29)并指定允许的 HTTP 谓词，不包括 HTTP GET。
 
 - 允许的谓词指定 HTTP GET。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-- 处理 HTTP GET 请求，不具有可能有害的负面影响的 ASP.NET MVC 控制器操作，将添加<xref:Microsoft.AspNetCore.Mvc.HttpGetAttribute>方法。
+- 处理 HTTP GET 请求，不具有可能有害的负面影响的 ASP.NET MVC 控制器操作，将添加[HttpGetAttribute](/previous-versions/aspnet/web-frameworks/ee470993%28v%3dvs.118%29)方法。
 
    如果具有 ASP.NET MVC 控制器操作处理 HTTP GET 请求，并具有潜在的有害副作用，如修改敏感数据，你的应用程序是易受到跨站点请求伪造攻击。  你将需要重新设计应用程序，以便只有 HTTP POST、 PUT 或 DELETE 请求执行敏感操作。
 
-- 处理 HTTP POST 的 ASP.NET MVC 控制器操作，PUT 或 DELETE 请求时，添加<xref:Microsoft.AspNetCore.Mvc.ValidateAntiForgeryTokenAttribute>和指定允许的 HTTP 谓词的属性 (<xref:Microsoft.AspNetCore.Mvc.AcceptVerbsAttribute>， <xref:Microsoft.AspNetCore.Mvc.HttpPostAttribute>， <xref:Microsoft.AspNetCore.Mvc.HttpPutAttribute>，或<xref:Microsoft.AspNetCore.Mvc.HttpDeleteAttribute>)。 此外，您需要调用<xref:Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper.AntiForgeryToken%2A?displayProperty=nameWithType>从你的 MVC 视图或 Razor web 页面。 有关示例，请参阅[检查 edit 方法和编辑视图](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
+- 处理 HTTP POST 的 ASP.NET MVC 控制器操作，PUT 或 DELETE 请求时，添加[ValidateAntiForgeryTokenAttribute](/previous-versions/aspnet/web-frameworks/dd492108(v=vs.118))和指定允许的 HTTP 谓词的属性 ([AcceptVerbsAttribute](/previous-versions/aspnet/web-frameworks/dd470553%28v%3dvs.118%29)[HttpPostAttribute](/previous-versions/aspnet/web-frameworks/ee264023%28v%3dvs.118%29)， [HttpPutAttribute](/previous-versions/aspnet/web-frameworks/ee470909%28v%3dvs.118%29)，或[HttpDeleteAttribute](/previous-versions/aspnet/web-frameworks/ee470917%28v%3dvs.118%29))。 此外，您需要调用[HtmlHelper.AntiForgeryToken()](/previous-versions/aspnet/web-frameworks/dd504812%28v%3dvs.118%29)从你的 MVC 视图或 Razor web 页面的方法。 有关示例，请参阅[检查 edit 方法和编辑视图](/aspnet/mvc/overview/getting-started/introduction/examining-the-edit-methods-and-edit-view)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
