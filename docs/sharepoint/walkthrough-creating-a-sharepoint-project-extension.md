@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 407936d68310a675aebe1c7ea712f46aea45e807
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118800"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635611"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练： 创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -46,7 +46,7 @@ ms.locfileid: "37118800"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]，SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]，SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 -   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中的模板[!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)]创建 VSIX 包来部署项目属性扩展。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
