@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 062270864c3fecb6556ef9b48d00177966a41859
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
+ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233017"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39341805"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 任务
 将指定项的路径写入指定的文本文件。  
@@ -65,6 +65,31 @@ ms.locfileid: "39233017"
     </Target>  
   
 </Project>  
+```
+
+在此示例中，我们使用具有嵌入换行符的属性来编写具有多行的文本文件。 如果 `Lines` 中的条目嵌入了换行符，则新行将包含在输出文件中。 由此，可引用多行属性。
+
+```xml  
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <Target Name="WriteLaunchers" AfterTargets="CopyFilesToOutputDirectory">
+      <PropertyGroup>
+        <LauncherCmd>
+@ECHO OFF
+dotnet %~dp0$(AssemblyName).dll %*
+        </LauncherCmd>
+      </PropertyGroup>
+
+      <WriteLinesToFile
+        File="$(OutputPath)$(AssemblyName).cmd"
+        Overwrite="true"
+        Lines="$(LauncherCmd)" />
+  </Target>
+</Project>
 ```  
   
 ## <a name="see-also"></a>请参阅  

@@ -13,22 +13,22 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 121cd95e55b17ea8e93b6a9ad8beb1a9d9d3feca
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: db06323da8ccd3009c52be3ba9dd51478d1d722c
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978344"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008455"
 ---
-# <a name="introduction-to-wpf"></a>WPF 介绍
+# <a name="wpf-overview"></a>WPF 概述
 
 使用 Windows Presentation Foundation (WPF)，你可以创建适用于 Windows 且具有非凡视觉效果的桌面客户端应用程序。
 
- ![Contoso Healthcare UI 示例](../designers/media/wpfintrofigure24.png)
+![Contoso Healthcare UI 示例](../designers/media/wpfintrofigure24.png)
 
- WPF 的核心是一个与分辨率无关且基于矢量的呈现引擎，旨在充分利用现代图形硬件。 WPF 通过一套完善的应用程序开发功能对该核心进行了扩展，这些功能包括可扩展应用程序标记语言 (XAML)、控件、数据绑定、布局、二维和三维图形、动画、样式、模板、文档、媒体、文本和版式。 WPF 包含在 .NET Framework 中，因此你可以生成整合其他 .NET Framework 类库元素的应用程序。
+WPF 的核心是一个与分辨率无关且基于矢量的呈现引擎，旨在充分利用现代图形硬件。 WPF 通过一套完善的应用程序开发功能对该核心进行了扩展，这些功能包括可扩展应用程序标记语言 (XAML)、控件、数据绑定、布局、二维和三维图形、动画、样式、模板、文档、媒体、文本和版式。 WPF 包含在 .NET Framework 中，因此你可以生成整合其他 .NET Framework 类库元素的应用程序。
 
- 本概述适用于新用户，介绍了 WPF 的主要功能和概念。
+本概述适用于新用户，介绍了 WPF 的主要功能和概念。
 
 ## <a name="program-with-wpf"></a>使用 WPF 进行编程
 
@@ -50,7 +50,7 @@ WPF 还包括增强属性和事件的其他编程构造： [依赖项属性](/do
 
 XAML 是一种基于 XML 的标记语言，以声明形式实现应用程序的外观。 通常用它创建窗口、对话框、页和用户控件，并填充控件、形状和图形。
 
- 下面的示例使用 XAML 来实现包含一个按钮的窗口的外观。
+下面的示例使用 XAML 来实现包含一个按钮的窗口的外观。
 
 ```xaml
 <Window
@@ -64,13 +64,13 @@ XAML 是一种基于 XML 的标记语言，以声明形式实现应用程序的�
 </Window>
 ```
 
- 具体而言，此 XAML 通过分别使用 `Window` 和 `Button` 元素来定义窗口和按钮。 每个元素均配置了特性（如 `Window` 元素的 `Title` 特性）来指定窗口的标题栏文本。 在运行时，WPF 会将标记中定义的元素和特性转换为 WPF 类的实例。 例如， `Window` 元素被转换为 <xref:System.Windows.Window> 类的实例，该类的 <xref:System.Windows.Window.Title%2A> 属性是 `Title` 特性的值。
+具体而言，此 XAML 通过分别使用 `Window` 和 `Button` 元素来定义窗口和按钮。 每个元素均配置了特性（如 `Window` 元素的 `Title` 特性）来指定窗口的标题栏文本。 在运行时，WPF 会将标记中定义的元素和特性转换为 WPF 类的实例。 例如， `Window` 元素被转换为 <xref:System.Windows.Window> 类的实例，该类的 <xref:System.Windows.Window.Title%2A> 属性是 `Title` 特性的值。
 
- 下图显示上一个示例中的 XAML 定义的用户界面 (UI)。
+下图显示上一个示例中的 XAML 定义的用户界面 (UI)。
 
- ![包含按钮的窗口](../designers/media/wpfintrofigure10.png)
+![包含按钮的窗口](../designers/media/wpfintrofigure10.png)
 
- 由于 XAML 是基于 XML 的，因此使用它编写的 UI 汇集在嵌套元素的层次结构中，称为 [元素树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 元素树提供了一种直观的逻辑方式来创建和管理 UI。
+由于 XAML 是基于 XML 的，因此使用它编写的 UI 汇集在嵌套元素的层次结构中，称为 [元素树](/dotnet/framework/wpf/advanced/trees-in-wpf)。 元素树提供了一种直观的逻辑方式来创建和管理 UI。
 
 ### <a name="code-behind"></a>代码隐藏
 
@@ -639,18 +639,18 @@ WPF 控件的默认用户界面通常是从其他控件和形状构造的。 例
 
 下面的示例演示一个派生自 <xref:System.Windows.Controls.UserControl>的自定义数值加/减控件。
 
- [!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlMARKUP](../designers/codesnippet/Xaml/introduction-to-wpf_33.xaml)]
 
- [!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
- [!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
+[!code-csharp[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/CSharp/introduction-to-wpf_34.cs)]
+[!code-vb[IntroToWPFSnippets#UserControlCODEBEHIND1](../designers/codesnippet/VisualBasic/introduction-to-wpf_34.vb)]
 
- 下一个示例说明了将用户控件合并到 <xref:System.Windows.Window>所需的 XAML。
+下一个示例说明了将用户控件合并到 <xref:System.Windows.Window>所需的 XAML。
 
- [!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
+[!code-xaml[IntroToWPFSnippets#UserControlWindowMARKUP1](../designers/codesnippet/Xaml/introduction-to-wpf_37.xaml)]
 
- 下图显示了 `NumericUpDown` 中托管的 <xref:System.Windows.Window>控件。
+下图显示了 `NumericUpDown` 中托管的 <xref:System.Windows.Window>控件。
 
- ![自定义 UserControl](../designers/media/wpfintrofigure3.png)
+![自定义 UserControl](../designers/media/wpfintrofigure3.png)
 
 有关自定义控件的详细信息，请参阅[控件创作概述](/dotnet/framework/wpf/controls/control-authoring-overview)。
 

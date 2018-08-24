@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 订阅
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2ab7675b5c354cf619d3daca38b05d5d473091fd
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 40fa40ed6606fb9e1cae35c0acccfe7dd46bf920
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326988"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39637332"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 
@@ -59,14 +59,14 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 
 ### <a name="which-subscription-am-i-using"></a>正在使用的是哪种订阅？
 在“权益”页上，正在使用的订阅将突出显示在蓝色的标题栏中。  它还会显示在页面的右上角。
-
-   ![活动订阅](_img\manage-vs-subscriptions\current-subscription-cropped.png)
+> [!div class="mx-imgBorder"]
+> ![活动订阅](_img\manage-vs-subscriptions\current-subscription-cropped.png)
 
 ### <a name="to-switch-between-subscriptions-you-can"></a>要在两个订阅之间进行转换，可以：
 - 单击右上角的下拉列表，然后从列表中选择订阅
 - 单击“订阅”选项卡，然后单击所需订阅
-
-   ![切换订阅](_img\manage-vs-subscriptions\change-subscription-resized.png)
+> [!div class="mx-imgBorder"]
+> ![切换订阅](_img\manage-vs-subscriptions\change-subscription-resized.png)
 
 ### <a name="if-your-subscription-is-not-visible"></a>如果订阅不可见...
 - 它可能已经过期。  仅活动订阅显示在订阅者门户中。
@@ -102,7 +102,8 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 3.  在“关于”选项卡上，可以更改姓名、电子邮件、国家/地区、个人资料图片和联系人首选项。  在“首选项”选项卡上，可以选择首选语言、日期和时间模式、时区，以及用户界面主题。  
 4.  完成更改后，单击“保存”。 
 5.  单击浏览器的“返回”按钮以返回到“权益”页。 
-    ![编辑个人资料信息](_img\manage-vs-subscriptions\edit-profile-resized.png)
+    > [!div class="mx-imgBorder"]    
+    > ![编辑个人资料信息](_img\manage-vs-subscriptions\edit-profile-resized.png)
 
 
 ### <a name="linking-my-subscription-to-existing-vsts-or-azure-subscriptions"></a>将我的订阅链接到现有的 VSTS 或 Azure 订阅
@@ -115,7 +116,8 @@ Visual Studio 订阅门户将所有 Visual Studio 订阅和程序汇集到一个
 2. 单击“订阅”选项卡。
 3. 在“相关链接”下，选择“添加备用帐户”。
 4. 输入工作或学校帐户的电子邮件地址，然后单击“添加”。 
-    ![备用帐户](_img\manage-vs-subscriptions\alternate-account-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![备用帐户](_img\manage-vs-subscriptions\alternate-account-resized.png)
 
 添加备用帐户后，就可随时通过单击“订阅”标签并在“相关链接”部分选择相应的选项来更新或删除该帐户。  
 

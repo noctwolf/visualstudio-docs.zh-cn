@@ -1,5 +1,5 @@
 ---
-title: FullClassName 元素 （Visual Studio 模板向导扩展） |Microsoft 文档
+title: FullClassName 元素 （Visual Studio 模板向导扩展） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: adc76c12570191e8b7b4635b8963f16aa4d21c13
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 05b23039540ed520e2298222e92131248fef0e3b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127668"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498362"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 元素（Visual Studio 模板向导扩展）
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 元素 （Visual Studio 模板向导扩展）
 实现的类的完全限定的名称`IWizard`接口。  
   
  \<VSTemplate >  
@@ -32,7 +32,7 @@ ms.locfileid: "31127668"
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
@@ -54,7 +54,7 @@ ms.locfileid: "31127668"
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
   
- 此文本指定实现的类`IWizard`接口。 指定的类必须存在于指定的程序集[程序集](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)元素。  
+ 此文本指定实现的类`IWizard`接口。 指定的类必须存在于由指定的程序集[程序集](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)元素。  
   
 ## <a name="remarks"></a>备注  
  `FullClassName` 是 `WizardExtension` 的必需子元素。  
@@ -90,7 +90,7 @@ ms.locfileid: "31127668"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)   
- [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

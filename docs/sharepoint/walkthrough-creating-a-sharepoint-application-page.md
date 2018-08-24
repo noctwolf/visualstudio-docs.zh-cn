@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e31b06d642947d88d1076b3ad365e62b663c8d4a
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 52ff6b3431ac3f87c85eefcf728cfe4c4875f884
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118477"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634782"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>演练： 创建 SharePoint 应用程序页
  
@@ -44,7 +44,7 @@ ms.locfileid: "37118477"
 
 ## <a name="prerequisites"></a>系统必备
 
-- 支持的 Windows 和 SharePoint 版本。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支持的 Windows 和 SharePoint 版本。
 
 ## <a name="create-a-sharepoint-project"></a>创建 SharePoint 项目
 

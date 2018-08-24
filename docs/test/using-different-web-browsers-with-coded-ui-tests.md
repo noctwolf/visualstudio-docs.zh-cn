@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: fc998fc5065b49ca68f4a46afa1da94cd3d23b07
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: a1c780f74e75e4c3f9f53ee186f5ef791be44ecb
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235058"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39380712"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 
@@ -60,7 +60,7 @@ ms.locfileid: "36235058"
     > [!TIP]
     > 还可以从[此处](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)下载用于编码的 UI 跨浏览器测试的 Selenium 组件。
 
-若要详细了解如何创建和使用编码的 UI 测试，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
+有关创建和使用编码的 UI 测试的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)。
 
 ### <a name="enable-debugging"></a>启用调试
 
@@ -122,4 +122,4 @@ ms.locfileid: "36235058"
 
 - [使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)
 - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-- [使用编码的 UI 测试日志分析编码的 UI 测试](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
+- [使用编码 UI 测试日志分析编码 UI 测试](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

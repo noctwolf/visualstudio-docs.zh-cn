@@ -10,14 +10,14 @@ ms.author: mamcle
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4478b711581e332c8da980ddac9fd4d369d8e7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d2997f5f7daf04bbde467ff40c26103a0310720c
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31070007"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251824"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Troubleshooting the Visual Studio Emulator for Android
+# <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 模拟器疑难解答
 本主题包含的信息有助于解决使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到的一些问题。  
   
 > [!WARNING]
@@ -62,7 +62,7 @@ ms.locfileid: "31070007"
 ##  <a name="BeforeYouStart"></a> 准备工作  
  开始进行故障排除前，查看以下主题可能会有用：  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+-   [适用于 Android 的 Visual Studio 仿真程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="NoInstall"></a> 仿真程序安装失败  
  如果未安装 Hyper-V，则当你尝试安装仿真程序时将看到以下消息。 你的计算机必须支持并启用了 HyperV。  
@@ -72,7 +72,7 @@ ms.locfileid: "31070007"
 > [!NOTE]
 >  对于适用于 Android 的 Visual Studio 仿真程序和 Windows Phone 仿真程序，此消息均适用。 Windows 8.1 和 Windows 10 支持仿真程序。  
   
- 如果看到此消息，请查阅 [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) ，以查看是否可以运行仿真程序。  
+ 如果看到此消息，请查阅 [适用于 Android 的 Visual Studio 仿真程序的系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)，以查看是否可以运行仿真程序。  
   
 ##  <a name="DomainNetwork"></a> 无法连接到域上或企业网络上的网络目标  
  适用于 Android 的 Visual Studio 仿真程序作为具有自己的 IP 地址的单独设备出现在网络上。 它未加入 Windows 域，并且不与主计算机共享域或工作组凭据。  
@@ -179,7 +179,7 @@ ms.locfileid: "31070007"
   
     6.  确保正在运行 Windows 8 专业版或更好版本（不支持 Windows Server 2008）。 支持 Windows Server 2012，但必须启用“桌面体验”。  
   
-     可以检查事件查看器，查看是否存在任何虚拟机监控程序错误。 若要执行此操作，打开事件查看器（开始键 + R，然后键入 `eventvwr`），然后选择 **“Windows 日志”**、 **“系统”**。 然后按事件源筛选日志，同时将源设置为 **“Hyper-V-虚拟机监控程序”**。 检查错误以帮助确定根源。  
+     可以检查事件查看器，查看是否存在任何虚拟机监控程序错误。 若要执行此操作，打开事件查看器（开始键+R，然后键入 `eventvwr`），然后选择“Windows 日志”、“系统”。 然后按事件源筛选日志，同时将源设置为 **“Hyper-V-虚拟机监控程序”**。 检查错误以帮助确定根源。  
   
      如果处理器满足最低要求而虚拟机监控程序仍失败，建议找出是否存在计算机可进行的 BIOS 升级。 如果存在升级并且选择要升级，务必在升级 BIOS 时采取制造商提出的所有预防措施（例如，确保 BIOS 固件升级不因断电中断，因为这样可能会永久损坏 BIOS）。  
   
@@ -193,7 +193,7 @@ ms.locfileid: "31070007"
   
      以下产品可能需要升级以与 Windows 8 兼容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 客户端、软件防火墙、某些版本的 Cisco VPN 客户端和其他虚拟化系统。 与可疑虚拟化软件的开发人员合作，鼓励他们升级软件，从而使软件与 Windows 8 和 Hyper-V 兼容。  
   
-     作为一种 **解决方法**，可以禁用可能会干扰虚拟网络（仿真程序用于与 Visual Studio 进行通信）的所有第三方驱动程序和应用程序。 这些应用程序可能包括：  
+     作为一种解决方法，可以禁用可能会干扰虚拟网络（仿真程序用于与 Visual Studio 进行通信）的所有第三方驱动程序和应用程序。 这些应用程序可能包括：  
   
     -   防病毒应用程序（挂接到网络堆栈）  
   
@@ -261,7 +261,7 @@ ms.locfileid: "31070007"
   
 -   从“开始”按钮上下文菜单中选择 **“运行”** ，在对话框中键入 `regedit` ，并选择 **“确定”**，由此打开注册表编辑器。  
   
--   在左侧的文件夹树中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK 工具。  
+-   在左侧的文件夹树中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
   
 -   修改 **“路径”** 注册表变量，以匹配指向 Android SDK 的路径。  
   

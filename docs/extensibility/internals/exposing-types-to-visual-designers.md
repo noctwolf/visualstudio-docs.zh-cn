@@ -1,5 +1,5 @@
 ---
-title: 公开到可视化设计器的类型 |Microsoft 文档
+title: 公开到可视化设计器的类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,38 +15,38 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28dcc17c74a5b5ef3c9784fafe972beb6f170d90
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ca4b0ae279cc58945c864167d3068dd3d9b3a51
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135969"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497484"
 ---
-# <a name="exposing-types-to-visual-designers"></a>公开到可视化设计器的类型
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须有权类和类型定义在设计时为了显示可视化设计器中。 类将从一组预定义的包含完整的依赖项集的当前项目 （引用加上其依赖项） 的程序集加载。 此外可能有必要对可视化设计器的访问权限类和在自定义工具生成的文件中定义的类型。  
+# <a name="expose-types-to-visual-designers"></a>可视化设计器向公开类型
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须具有访问的类和类型定义在设计时才能显示一个可视化设计器。 从一组预定义的包含完整的依赖项集的当前项目 （引用以及其依赖项） 的程序集加载的类。 可能还会对访问类和自定义工具生成的文件中定义的类型所需的可视化设计器。  
   
- [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目系统提供了支持访问生成的类和类型通过临时的可移植可执行文件 (临时 PEs)。 自定义工具生成的任何文件可以编译到临时程序集，以便可以从这些程序集加载类型，并将其公开给设计器。 每个自定义工具的输出会编译成单独的临时 PE，并是成功还是失败的此临时编译仅取决于可以编译生成的文件。 即使的项目可能不生成作为一个整体，单个临时 PEs 可能仍可供设计器。  
+ [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]和[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]项目系统提供了支持访问生成的类和类型通过临时可移植可执行文件 (临时 PEs)。 在自定义工具生成的任何文件可以编译到一个临时程序集，以便可以从这些程序集加载和设计器向公开类型。 每个自定义工具的输出编译到单独的临时 PE，并且此临时编译成功与否仅取决于可编译生成的文件。 虽然项目可能无法生成作为一个整体，各个临时 Pe 可能仍是可用于设计器。  
   
- 项目系统提供完全支持跟踪以更改到输出文件的自定义工具，前提是这些更改是运行自定义工具的结果。 每次运行自定义工具时，将生成新的临时 PE，并相应的通知发送到设计器。  
+ 项目系统提供完全支持跟踪以更改到的输出文件的自定义工具，前提是这些更改是正在运行的自定义工具的结果。 每次运行自定义工具时，生成新的临时 PE，并相应通知发送到设计器。  
   
 > [!NOTE]
->  因为临时程序可执行文件的生成文件发生在后台，所以如果编译失败未向用户不报告任何错误。  
+>  因为临时程序可执行文件的生成文件在后台发生，所以在编译失败，向用户未不报告任何错误。  
   
  自定义工具，它们利用临时 PE 支持必须遵循以下规则：  
   
--   `GeneratesDesignTimeSource` 必须设置为 1 的注册表中。  
+-   **GeneratesDesignTimeSource**必须在注册表中设置为 1。  
   
-     没有程序可执行文件编译将无此设置的位置。  
+     如果没有此设置没有程序可执行文件编译发生。  
   
--   生成的代码必须是全局的项目设置为相同的语言。  
+-   生成的代码必须在全局项目设置相同的语言。  
   
-     临时 PE 编译而不考虑自定义工具报告中的请求扩展作为<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>假设`GeneratesDesignTimeSource`在注册表中设置为 1。 该扩展不需要为.vb、.cs 或.jsl;它可以是任何扩展。  
+     临时 PE 编译而不考虑自定义工具报告为在请求的扩展<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A>前提**GeneratesDesignTimeSource**在注册表中设置为 1。 该扩展不需要进行 *.vb*， *.cs*，或 *.jsl*; 它可以是任何扩展。  
   
--   由自定义工具生成的代码必须是有效的并且在其自己使用仅集的引用项目中存在时，它必须编译<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>执行完毕。  
+-   自定义工具生成的代码必须是有效的并且它必须在其自身仅存在于项目中引用的集时使用编译<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>完成执行。  
   
-     编译临时 PE 后，向编译器提供的唯一源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
+     编译的临时 PE 后，仅提供给编译器的源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件编译的输出文件。  
   
-## <a name="see-also"></a>另请参阅  
- [简介 BuildManager 对象](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
+## <a name="see-also"></a>请参阅  
+ [BuildManager 对象介绍](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)   
  [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)   
  [注册单个文件生成器](../../extensibility/internals/registering-single-file-generators.md)

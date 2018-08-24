@@ -1,5 +1,5 @@
 ---
-title: 项目模型的元素 |Microsoft 文档
+title: 项目模型的元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,39 +15,39 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4933e73df93c1f8a3bcf62e03b6883c0096f1d8f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b26895a5b25982dbc616b0df3a5618bcdcbb4d6b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135554"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497560"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
-接口和实现中的所有项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共享基本结构： 你的项目类型的项目模型。 在你的项目模型中，这是你正在开发的 VSPackage，你将创建符合你的设计决策和与由 IDE 提供的全局功能一起工作的对象。 尽管您控制如何保持的项目项，例如，在不控制通知必须保留文件。 当用户将焦点置于上打开项目项，并选择**保存**上**文件**上的菜单[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]菜单栏中，你的项目类型代码必须截获 IDE 中的命令，保留文件，和发送通知到 IDE，无法再更改该文件。  
+接口和实现中的所有项目[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]共享的基本结构： 你的项目类型的项目模型。 在你的项目模型中，这是你正在开发的 VSPackage，你将创建符合您的设计决策，并且由 IDE 提供全局功能协同工作的对象。 尽管您控制如何保持项目项，例如，您不控制通知必须保留一个文件。 当用户将焦点放置于打开项目项上，选择**保存**上**文件**菜单上的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]菜单栏中，你的项目类型代码必须截获从 IDE 命令，保存该文件，并发送通知到 IDE 的文件不能再更改。  
   
- 你的 VSPackage 与 IDE 通过提供对 IDE 接口访问的服务进行交互。 例如，通过特定服务，你监视器和路由的命令并提供在项目中所做的选择的上下文信息。 所有全局 IDE 所需的功能为你的 VSPackage 服务所提供的。 有关服务的详细信息，请参阅[如何： 获取服务](../../extensibility/how-to-get-a-service.md)。  
+ 你的 VSPackage 与 IDE 通过提供对 IDE 接口访问的服务进行交互。 例如，通过特定服务，你监视和路由命令并提供在项目中所做选择的上下文信息。 所有全局 IDE 所需的功能为你的 VSPackage 提供的服务。 有关服务的详细信息，请参阅[如何： 获取服务](../../extensibility/how-to-get-a-service.md)。  
   
  其他实现注意事项：  
   
 -   单个项目模型可以包含多个项目类型。  
   
--   向 Guid 独立注册项目类型和助理项目工厂。  
+-   与 Guid 单独注册项目类型和附随项目工厂。  
   
--   每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]模板初始化什么最终变得.vcproj 文件。  
+-   每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]UI。 例如，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]模板初始化什么最终成为.vcproj 文件。  
   
- 下图显示主要接口、 服务和构成典型的项目中实现的对象。 应用程序帮助器，HierUtil7，可用于创建基础对象和其他编程的样本。 HierUtil7 应用程序帮助程序有关的详细信息，请参阅[不在生成中： 使用 HierUtil7 项目类以实现项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+ 下图显示了主要接口、 服务和对象组成的典型项目中实现。 可以使用应用程序帮助器， `HierUtil7`、 创建基础对象和其他编程样板。 有关详细信息`HierUtil7`应用程序的帮助器，请参阅[使用 HierUtil7 项目类以实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
- ![图： visual Studio 项目模型](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+ ![Visual Studio 项目模型图](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
 项目模型  
   
- 有关接口和列出在上图中，服务以及其他关系图中未包括的可选接口的详细信息，请参阅[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)。  
+ 有关接口和上图中列出的服务以及其他未包含在关系图中的可选接口的详细信息，请参阅[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)。  
   
- 项目可支持命令，并因此必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口以参与命令路由通过命令上下文 Guid。  
+ 项目可以支持命令，因此必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口来参与命令路由通过命令上下文的 Guid。  
   
-## <a name="see-also"></a>另请参阅  
- [清单： 创建新项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [不在生成中： 使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+## <a name="see-also"></a>请参阅  
+ [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [使用 HierUtil7 项目类来实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)   
- [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
- [如何： 将获得的服务](../../extensibility/how-to-get-a-service.md)   
+ [使用项目工厂创建的项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
+ [如何： 获取服务](../../extensibility/how-to-get-a-service.md)   
  [创建项目类型](../../extensibility/internals/creating-project-types.md)

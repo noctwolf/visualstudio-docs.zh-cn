@@ -12,16 +12,16 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: d6acdd6433c090472e88d9973f6b28d80b8c2f8d
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: fe73510c645eadea99796b8b8aea5b6eec1f01c9
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454565"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251806"
 ---
-# <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
+# <a name="install-and-configure-tools-to-build-using-ios"></a>安装并配置使用 iOS 进行构建的工具
 
-可以使用用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 模拟器或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成和运行。 若要使用 Visual Studio 生成和运行 iOS 应用，需要在 Mac 上安装并配置远程代理 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)。 该远程代理会处理来自 Visual Studio 的生成请求，并在连接到 Mac 的 iOS 设备上或 Mac 上的 iOS 仿真程序中运行应用。
+可以使用用于跨平台移动开发的 Visual C++ 来编辑、调试 iOS 代码，并将其部署到 iOS 仿真程序或 iOS 设备，但由于许可限制，该代码必须在 Mac 上远程生成和运行。 若要使用 Visual Studio 生成和运行 iOS 应用，需要在 Mac 上安装并配置远程代理 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)。 该远程代理会处理来自 Visual Studio 的生成请求，并在连接到 Mac 的 iOS 设备上或 Mac 上的 iOS 仿真程序中运行应用。
 
 > [!NOTE]
 > 有关使用云托管的 Mac 服务而不是 Mac 的信息，请参阅[配置 Visual Studio 以连接到云托管的 Mac](https://docs.microsoft.com/en-us/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac)。 此说明适用于使用 Visual Studio Tools for Apache Cordova 进行生成。 要通过 C++ 使用指令进行生成，请将 vcremote 替换为 remotebuild。
@@ -50,11 +50,11 @@ ms.locfileid: "34454565"
 
 - 在 Xcode 中配置的 iOS 签名标识
 
-   有关获取 iOS 签名标识的详细信息，请参阅 iOS Developer Library 中的 [维护签名标识和证书](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) 。 若要查看或设置 Xcode 中的签名标识，打开 **Xcode** 菜单并选择 “首选项”。 选择“帐户”  并选择你的 Apple ID，然后选择“查看详细信息”  按钮。
+   有关获取 iOS 签名标识的详细信息，请参阅 iOS Developer Library 中的[维护签名标识和证书](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html)。 若要查看或设置 Xcode 中的签名标识，打开 **Xcode** 菜单并选择 “首选项”。 选择“帐户”  并选择你的 Apple ID，然后选择“查看详细信息”  按钮。
 
 - 如果你使用 iOS 设备进行开发，Xcode 中已为你的设备配置了预配配置文件
 
-   有关创建预配配置文件的详细信息，请参阅 iOS Developer Library 中的 [通过成员中心创建预配配置文件](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) 。
+   有关创建预配配置文件的详细信息，请参阅 iOS Developer Library 中的[通过成员中心创建预配配置文件](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24)。
 
 - [Node.js](https://nodejs.org/)
 
@@ -70,7 +70,7 @@ ms.locfileid: "34454565"
 
 当安装用于跨平台移动开发的 Visual C++ 时，Visual Studio 可以与 [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988)进行通信，这是一个在 Mac 上运行的远程代理，用于传输文件、生成和运行 iOS 应用，以及发送调试命令。
 
-安装远程代理之前，请确保你已经满足 [先决条件](#Prerequisites) 并安装了 [用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
+安装远程代理之前，请确保已经满足[先决条件](#Prerequisites)并安装了[用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools)。
 
 ###  <a name="DownloadInstall"></a> 下载和安装远程代理
 
@@ -125,7 +125,7 @@ ms.locfileid: "34454565"
 
 #### <a name="to-stop-the-remote-agent"></a>停用远程代理
 
-- 在正在运行 vcremote 的终端窗口中，输入 `Control+C`。
+- 在正在运行 vcremote 的终端窗口中，输入 Control+C。
 
 ##  <a name="ConfigureVS"></a> 在 Visual Studio 中配置远程代理
 
@@ -158,7 +158,7 @@ ms.locfileid: "34454565"
 
    如果配对失败，请按照 [Start the remote agent](#Start)中的步骤验证远程代理是否正在运行。 如果生成远程代理 PIN 后已经过了很久，请在 Mac 上执行 [Generate a new security PIN](#GeneratePIN) 中的步骤，然后重试。 如果你使用的是 Mac 的主机名，请转而尝试在“主机名”  字段中使用 IP 地址。
 
-1. 更新“远程根目录”  字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。
+1. 更新“远程根目录”字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。
 
 1. 选择“确定”  以保存远程配对连接设置。
 
@@ -220,7 +220,7 @@ ms.locfileid: "34454565"
 
    `vcremote --serverDir directory_path`
 
-   其中， *directory_path* 是 Mac 上放置日志文件、生成项和服务器证书的位置。 默认情况下，此位置为 /Users/*username*/vcremote。 生成项会在此位置按照生成号进行整理。
+   其中， *directory_path* 是 Mac 上放置日志文件、生成项和服务器证书的位置。 默认情况下，此位置为 /Users/\<username>/vcremote。 生成项会在此位置按照生成号进行整理。
 
 - 若要使用后台进程以将 `stdout` 和 `stderr` 捕获至名为 server.log 的文件，请输入：
 
@@ -236,4 +236,4 @@ ms.locfileid: "34454565"
 
 ## <a name="see-also"></a>请参阅
 
-- [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
+- [安装用于跨平台移动开发的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)

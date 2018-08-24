@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 13e8122649b1803e627576e4cf4d4bc83d1a286b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 8f71ca67fc74c7cb852914bd4f66f053e722c435
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206817"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468567"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据 (ASP.NET)
 
@@ -31,9 +31,6 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 1. 在 Visual Studio 中，依次选择“文件” > “新建项目”。
 
 1. 在“Visual C#”下，选择“Web”，然后在中间窗格中选择“ASP.NET Web 应用程序(.NET Framework)”。
-
-    > [!NOTE]
-    > ASP.NET Core 中当前不支持 CPU 使用率工具。
 
 1. 键入名称（例如 MyProfilingApp_MVC），单击“确定”。
 

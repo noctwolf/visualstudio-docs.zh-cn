@@ -10,18 +10,18 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d1c68db8282a74ce230d573450a359060bb0d12c
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155576"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39251713"
 ---
-# <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
+# <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
 在本部分中，你将了解如何使用 Visual Studio Tools for Unity 的集成和工作效率功能，以及如何使用 Visual Studio 调试器进行 Unity 开发。
 
-## <a name="opening-unity-scripts-in-visual-studio"></a>在 Visual Studio 中打开 Unity 脚本
+## <a name="open-unity-scripts-in-visual-studio"></a>在 Visual Studio 中打开 Unity 脚本
 
 将 Visual Studio [设置为 Unity 的外部脚本编辑器](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-for-use-with-visual-studio)后，在 Unity 编辑器中打开任何脚本都会自动启动或切换到 Visual Studio，并打开选择的脚本。 只需双击在 Unity 项目中的脚本。
 
@@ -33,7 +33,7 @@ ms.locfileid: "39155576"
 
  可以从 Visual Studio 快速访问 Unity 脚本文档。 如果 Visual Studio Tools for Unity 未在本地找到 API 文档，它将尝试联机查找。
 
-- 在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 **Ctrl+Alt+M、Ctrl+H**
+- 在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 Ctrl+Alt+M、Ctrl+H
 
 ## <a name="intellisense-for-unity-api-messages"></a>针对 Unity API 消息的 Intellisense
 
@@ -71,7 +71,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 使用 MonoBehavior 向导创建 MonoBehavior 方法的空定义：
 
-1. 在 Visual Studio 中，将光标放置在你要插入方法的位置，然后按 Ctrl+Shift+M 启动 MonoBehavior 向导。
+1. 在 Visual Studio 中，将光标放置在要插入方法的位置，然后按 Ctrl+Shift+M 启动 MonoBehavior 向导。
 
 1. 在“创建脚本方法”窗口中，标记每个要添加的方法的名称旁的复选框。
 
@@ -107,7 +107,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
  Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的调试器同时调试 Unity 项目的编辑器和游戏脚本。
 
-### <a name="debugging-in-the-unity-editor"></a>在 Unity 编辑器中调试
+### <a name="debug-in-the-unity-editor"></a>在 Unity 编辑器中调试
 
 #### <a name="start-debugging"></a>“启动调试”
 
@@ -141,9 +141,9 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 “播放”按钮标记将变为“附加到 Unity 并播放”。 单击此按钮或使用键盘快捷方式 F5，除了附加 Visual Studio 调试器，现在还会自动切换到 Unity 编辑器，并在编辑器中运行游戏。
 
-在 Visual Studio 中单击“停止”按钮或使用键盘快捷方式 Shift + F5 将自动在 Unity 编辑器中停止游戏。
+在 Visual Studio 中单击“停止”按钮或使用键盘快捷方式 Shift+F5 将自动在 Unity 编辑器中停止游戏。
 
-### <a name="debugging-unity-player-builds"></a>调试 Unity 播放器版本
+### <a name="debug-unity-player-builds"></a>调试 Unity 播放器版本
 
 可以在 Visual Studio 中调试各种 Unity 播放器的开发版本。
 
@@ -177,7 +177,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 > [!IMPORTANT]
 > 由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因而你的防火墙可能会对其进行询问。 如果发生这种情况，则必须授权连接，以便 VSTU 和 Unity 可以进行通信。
 
-### <a name="debugging-a-dll-in-your-unity-project"></a>在 Unity 项目中调试 DLL
+### <a name="debug-a-dll-in-your-unity-project"></a>调试 Unity 项目中的 DLL
 
  许多 Unity 开发人员将代码组件编写为外部 Dll，以便可轻松地与其他项目共享开发的功能。 Visual Studio Tools for Unity 可以轻松无缝地调试这些 DLL 中的代码以及 Unity 项目中的其他代码。
 
@@ -214,9 +214,9 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 |命令|快捷键|快捷方式命令名|
 |-------------|--------------|---------------------------|
-|打开 Monobehavior 向导|**Ctrl+Shift+M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|打开 Unity 项目资源管理器|**Alt+Shift+E**|**View.UnityProjectExplorer**|
-|访问 Unity 文档|**Ctrl+Alt+M、 Ctrl+H**|**Help.UnityAPIReference**|
+|打开 Monobehavior 向导|Ctrl+Shift+M|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|打开 Unity 项目资源管理器|Alt+Shift+E|**View.UnityProjectExplorer**|
+|访问 Unity 文档|Ctrl+Alt+M, Ctrl+H|**Help.UnityAPIReference**|
 |附加到 Unity 调试器（播放器或编辑器）|***无默认值***|**Debug.AttachUnityDebugger**|
 
  如果不喜欢默认值，可以更改快捷键组合。 有关如何更改它的信息，请参阅[在 Visual Studio 中标识并自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

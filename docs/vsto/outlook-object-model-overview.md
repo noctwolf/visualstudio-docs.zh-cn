@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 97ba2d50c88d9bc4b62e39f24eafea9bd0416eb6
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276984"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008263"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序，<xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹，<xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
@@ -59,7 +59,7 @@ ms.locfileid: "39276984"
 ### <a name="application-object"></a>应用程序对象  
  <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示 Outlook 应用程序，并且它是 Outlook 对象模型中最高级别的对象。 此对象的一些最重要的成员包括：  
   
--   [CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece)方法，可用于创建新项，如电子邮件、 任务或约会。  
+-   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法，可用于创建新项，如电子邮件、 任务或约会。  
   
 -   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 属性，可用于访问将文件夹的内容显示在 Outlook 用户界面 (UI) 中的窗口。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "39276984"
 ### <a name="taskitem-object"></a>TaskItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象表示要在指定时间范围内执行的任务。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象位于 **“任务”** 文件夹中。  
   
- 若要创建一个任务，请使用[CreateItem](http://msdn.microsoft.com/771707fb-5f34-473d-9fdf-09a6a7f55ece)方法<xref:Microsoft.Office.Interop.Outlook.Application>对象，并传入值<xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem>参数。  
+ 若要创建一个任务，请使用[CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法<xref:Microsoft.Office.Interop.Outlook.Application>对象，并传入值<xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem>参数。  
   
 ### <a name="contactitem-object"></a>ContactItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>对象表示的联系人的**联系人**文件夹。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 对象包含它们表示的人员的各种联系信息，如街道地址、电子邮件地址和电话号码。  

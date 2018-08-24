@@ -1,5 +1,5 @@
 ---
-title: 检查自动和局部变量窗口中的变量 |Microsoft 文档
+title: 检查变量中的自动和局部变量 Windows |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/17/2017
 ms.technology: vs-ide-debug
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d3b19e8bd55320a9fbd5d8af037a9577db42a2fa
-ms.sourcegitcommit: b400528a83bea06d208d95c77282631ae4a93091
+ms.openlocfilehash: 956b3afe1308ee748ee9efa6292834754f7e8124
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34454632"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626465"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>检查自动中的变量和 Visual Studio 中的局部变量窗口
-**自动**窗口 (调试时， **CTRL + ALT + V、 A**，或**调试 > Windows > 自动**) 和**局部变量**（时调试窗口**CTRL + ALT + V、 L**，或**调试 > Windows > 局部变量**) 是非常有用，当你想要在调试时，请参阅变量值。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 在此窗口中显示哪些变量的完全是不同的语言。 请参阅下面的 [What variables appear in the Autos Window?](#bkmk_whatvariables) 下方。  
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>检查变量中的自动和局部变量在 Visual Studio 中的 Windows
+**自动**窗口 (调试时， **CTRL + ALT + V、 A**，或**调试 > Windows > 自动**) 和**局部变量**窗口 （调试时**CTRL + ALT + V，L**，或**调试 > Windows > 局部变量**) 是非常有用，当你想要在调试时查看变量值。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 在此窗口中显示哪些变量的完全是不同的语言不同。 请参阅下面的 [What variables appear in the Autos Window?](#bkmk_whatvariables) 下方。  
   
 若需了解基本调试的详细信息，请参阅 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>查看“自动”和“局部变量”窗口中的对象  
-数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 下面是一个示例的[FileStream](/dotnet/api/system.io.filestream)对象在**局部变量**窗口：  
+数组和对象在“自动”和“局部变量”窗口中显示为树控件。 单击变量名称左侧的箭头以展开显示字段和属性的视图。 下面是举例<xref:System.IO.FileStream?displayProperty=fullName>对象中**局部变量**窗口：  
   
 ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -132,7 +132,7 @@ private static int subtractVars(int i, int j)
 -   编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 即使看起来无关紧要的编辑都会导致浮点变量中某些最不重要的数据位发生变化。  
   
 ## <a name="changing-the-window-context"></a>更改窗口上下文  
-你可以使用**调试位置**工具栏来选择所需的函数、 线程或进程，这会更改变量窗口的上下文。 设置断点并开始调试。 （如果看不到此工具栏，你可以通过单击工具栏区域的空白部分启用它。 你应当看到工具栏的列表；选择“调试位置” ）。 当命中断点时，则将停止执行，你可以查看调试位置工具栏上，即下图底部的行。
+可以使用**调试位置**工具栏来选择所需的函数、 线程或进程，更改用于在变量窗口的上下文。 设置断点并开始调试。 （如果看不到此工具栏，你可以通过单击工具栏区域的空白部分启用它。 你应当看到工具栏的列表；选择“调试位置” ）。 当到达断点时，将停止执行，您可以看到调试位置工具栏，即下图的底部行。
   
 ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   

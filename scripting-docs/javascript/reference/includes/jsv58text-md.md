@@ -1,1 +1,0 @@
-Internet Explorer 8 标准模式、Internet Explorer 9 标准模式、Internet Explorer 10 标准模式、Internet Explorer 11 标准模式和 win8_appname_long 应用

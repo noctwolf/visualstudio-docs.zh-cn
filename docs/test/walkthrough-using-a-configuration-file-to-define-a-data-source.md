@@ -13,11 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de562e1000c7c1fe8976252c046b27f4751b871
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 2552dec4e564b42d2044ce0d9da51ebfb8913901
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382674"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 
@@ -45,21 +46,21 @@ ms.lasthandoff: 05/03/2018
 
 ## <a name="add-an-appconfig-file-to-the-project"></a>将 app.config 文件添加到项目
 
-1. 如果测试项目已有 app.config 文件，请转到[定义自定义配置节](#DefineCustomConfigurationSection)。
+1. 如果测试项目已有 app.config 文件，请转到[定义自定义配置节](#define-a-custom-configuration-section)。
 
-2. 在“解决方案资源管理器”中右键单击测试项目，然后选择“添加” > “新建项”。
+2. 在解决方案资源管理器中右键单击测试项目，然后选择“添加” > “新建项”。
 
      此时，“添加新项”窗口会打开。
 
 3. 选择“应用配置文件”模板，然后单击“添加”。
 
-##  <a name="DefineCustomConfigurationSection"></a>定义自定义配置节
+##  <a name="define-a-custom-configuration-section"></a>定义自定义配置节
 
 检查 app.config 文件。 它至少包含 XML 声明和一个根元素。
 
 ### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要将自定义配置节添加到 app.config 文件
 
-1. App.config 的根元素应为 configuration 元素。 在 configuration 元素中创建一个 configSections 元素。 configSections 应为 app.config 文件中的第一个元素。
+1. app.config 的根元素应为 configuration 元素。 在 configuration 元素中创建一个 configSections 元素。 configSections 应为 app.config 文件中的第一个元素。
 
 2. 在 configSections 元素中创建一个 section 元素。
 
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/03/2018
 
 section 元素应类似于：
 
-```
+```xml
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
 ```
 
@@ -94,7 +95,7 @@ section 元素应类似于：
 
 在第二个 add 元素中，创建下列特性和值以连接到 Microsoft Excel 电子表格：
 
-|||
+|特性|值|
 |-|-|
 |`name`|`"MyExcelConn"`|
 |`connectionString`|`"Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5"`|
@@ -102,7 +103,7 @@ section 元素应类似于：
 
 connectionStrings 元素应类似于：
 
-```
+```xml
 <connectionStrings>
     <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
     <add name="MyExcelConn" connectionString="Dsn=Excel Files;dbq=data.xlsx;defaultdir=.\; driverid=790;maxbuffersize=2048;pagetimeout=5" providerName="System.Data.Odbc" />
@@ -142,7 +143,7 @@ connectionStrings 元素应类似于：
 
 在第二个 add 元素中，为 Microsoft Excel 数据源创建下列特性和值：
 
-|||
+|特性|值|
 |-|-|
 |`Name`|`"MyExcelDataSource"`|
 |`connectionString`|`"MyExcelConn"`|

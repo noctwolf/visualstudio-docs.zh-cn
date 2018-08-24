@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 37d545adf33a6350f3d2484e4f820ebca8f7353d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ef5a936de8013f2ea0426d95def96a0871839e6a
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056418"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586425"
 ---
-# <a name="setting-up-unit-testing-for-python-code"></a>为 Python 代码设置单元测试
+# <a name="set-up-unit-testing-for-python-code"></a>为 Python 代码设置单元测试
 
 单元测试是测试应用程序中其他代码单元的代码片段，通常为独立函数、类等。 应用程序通过其所有单元测试后，至少可以相信其低级功能正确无误。
 
@@ -30,13 +30,13 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
 |---|---|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 中的单元测试，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567)（2 分 31 秒）。 |
 
-## <a name="discovering-and-viewing-tests"></a>发现和查看测试
+## <a name="discover-and-view-tests"></a>发现和查看测试
 
 根据惯例，Visual Studio 将测试标识为名称以“`test`”开头的方法。 若要查看此行为，请执行以下操作：
 
-1. 打开一个 Visual Studio 中加载的 [Python 项目](managing-python-projects-in-visual-studio.md)，右键单击该项目，选择“添加”>“新建项目...”，然后选择其后有“添加”的“Python 单元测试”。
+1. 打开一个 Visual Studio 中加载的 [Python 项目](managing-python-projects-in-visual-studio.md)，右键单击该项目，选择“添加” > “新建项”，然后选择其后有“添加”的“Python 单元测试” 。
 
-1. 如果直接运行脚本，此操作将创建具有导入标准 `unittest` 模块的代码的 `test1.py` 文件，从 `unittest.TestCase` 派生一个测试类，并调用 `unittest.main()`：
+1. 如果直接运行脚本，此操作将创建具有导入标准 `unittest` 模块的代码的 test1.py 文件，从 `unittest.TestCase` 派生一个测试类，并调用 `unittest.main()`：
 
     ```python
     import unittest
@@ -49,29 +49,29 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
         unittest.main()
     ```
 
-1. 根据需要保存该文件，然后通过“测试”>“窗口”>“测试资源管理器”菜单命令打开测试资源管理器。
+1. 根据需要保存该文件，然后通过“测试” > “窗口” > “测试资源管理器”菜单命令打开“测试资源管理器”。
 
-1. 测试资源管理器会搜索要测试的项目并进行显示，如下所示。 双击测试打开其源文件。
+1. “测试资源管理器”会搜索要测试的项目并进行显示，如下所示。 双击测试打开其源文件。
 
     ![显示默认 test_A 的测试资源管理器](media/unit-test-A.png)
 
-1. 向项目添加更多测试时，可以使用工具栏上的“分组”菜单整理测试资源管理器中视图：
+1. 向项目添加更多测试时，可以使用工具栏上的“分组”菜单整理“测试资源管理器”中视图：
 
     ![测试资源管理器分组工具栏菜单](media/unit-test-group-menu.png)
 
-1. 还可以在搜索字段中输入文本以按名称筛选测试。
+1. 还可以在“搜索”字段中输入文本以按名称筛选测试。
 
 有关 `unittest` 模块和编写测试的详细信息，请参阅 [Python 2.7 文档](https://docs.python.org/2/library/unittest.html)或 [Python 3.4 文档](https://docs.python.org/3/library/unittest.html) (python.org)。
 
-## <a name="running-tests"></a>运行测试
+## <a name="run-tests"></a>运行测试
 
-在测试资源管理器中，可以通过多种方式来运行测试：
+在“测试资源管理器”中，可以通过多种方式来运行测试：
 
 - “运行所有”将运行所有显示的测试（取决于筛选器）。
-- “运行...”菜单提供以下命令：运行失败的、通过的或未作为一组运行的测试。
+- “运行”菜单提供以下命令：运行失败的、通过的或未作为一组运行的测试。
 - 可以选择一个或多个测试，右键单击，然后选择“运行选定测试”。
 
-测试在后台运行，每个测试完成后，测试资源管理器将更新其状态：
+测试在后台运行，每个测试完成后，“测试资源管理器”将更新其状态：
 
 - 通过的测试将显示一个绿勾和运行测试所花费的时间：
 
@@ -83,11 +83,11 @@ Python 单元测试广泛应用于在程序设计期间验证方案。 针对 Vi
 
     ![test_A 失败及原因](media/unit-test-A-fail-reason.png)
 
-## <a name="debugging-tests"></a>调试测试
+## <a name="debug-tests"></a>调试测试
 
 因为单元测试是代码片段，所以和任何其他代码一样会受到 bug 的影响，有时需要在调试器中运行。 在调试程序中，可以设置断点、检查变量和逐行执行代码。 Visual Studio 还提供了用于单元测试的诊断工具。
 
-若要开始调试，请在代码中设置初始断点，然后在测试资源管理器中右键单击测试（或所做选择），然后选择“调试所选测试”。 Visual Studio 会启动 Python 调试程序，与为应用程序代码启动 Python 调试器一样。
+若要开始调试，请在代码中设置初始断点，然后在“测试资源管理器”中右键单击测试（或所做选择），然后选择“调试所选测试”。 Visual Studio 会启动 Python 调试程序，与为应用程序代码启动 Python 调试器一样。
 
 ![调试测试](media/unit-test-debugging.png)
 

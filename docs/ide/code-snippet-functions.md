@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ead5a3f15f5ba7f586c9dfcec86fb309cbda391f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f3362bae41b540ee097e1109848680a11d37a272
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917961"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512130"
 ---
 # <a name="code-snippet-functions"></a>代码片段函数
 
-有三个函数可与 C# 代码片段一起使用。 函数在代码片段的 [Function](../ide/code-snippets-schema-reference.md#function) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。
+有三个函数可与 C# 代码片段一起使用。 函数在代码片段的 [Function](../ide/code-snippets-schema-reference.md#function-element) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。
 
 ## <a name="functions"></a>函数
 
@@ -31,9 +31,9 @@ ms.locfileid: "31917961"
 
 |函数|描述|语言|
 |--------------|-----------------|--------------|
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`ClassName()`|返回包含插入的代码片段的类的名称。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
-|`SimpleTypeName(` `TypeName` `)`|在已调用该代码片段的上下文中将 TypeName 参数缩减为其最简单的形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|为 `EnumerationLiteral` 参数指定的枚举成员生成一个switch 语句和一组 case 语句。 `EnumerationLiteral` 参数必须是枚举文本的引用或是枚举类型。|C#|
+|`ClassName()`|返回包含插入的代码片段的类的名称。|C#|
+|`SimpleTypeName(` `TypeName` `)`|在已调用该代码片段的上下文中将 TypeName 参数缩减为其最简单的形式。|C#|
 
 ## <a name="example"></a>示例
 
@@ -159,5 +159,5 @@ ms.locfileid: "31917961"
 
 ## <a name="see-also"></a>请参阅
 
-- [Function 元素](../ide/code-snippets-schema-reference.md#function)
+- [Function 元素](../ide/code-snippets-schema-reference.md#function-element)
 - [代码片段架构参考](../ide/code-snippets-schema-reference.md)

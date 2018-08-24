@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af260a34ba7410955095b40b4f9fbee9b217401
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d2f53ae425f4942a9a14289e84798756c9fec969
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917994"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512543"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的默认键盘快捷方式
 
@@ -57,7 +57,7 @@ ms.locfileid: "31917994"
 |命令|键盘快捷方式 [上下文]|
 |--------------|-------------------------------------|
 |编辑.分行|**Enter** [文本编辑器、报表设计器、Windows 窗体设计器]<br /><br /> 或 **Shift+Enter** [文本编辑器]|
-|编辑.折叠到定义|**Ctrl+M**、**Ctrl+O** [文本编辑器]|
+|Edit.CollapseToDefinitions|**Ctrl+M**、**Ctrl+O** [文本编辑器]|
 |编辑.注释选定内容|**Ctrl+K**、**Ctrl+C** [文本编辑器]|
 |编辑.完成单词|**Alt+向右键** [文本编辑器、工作流设计器]<br /><br /> 或 **Ctrl+空格键** [文本编辑器、工作流设计器]<br /><br /> 或 **Ctrl+K**、**W** [工作流设计器]<br /><br /> 或 **Ctrl+K、Ctrl+W** [工作流设计器]|
 |编辑.复制|**Ctrl+C** [全局]<br /><br /> 或 **Ctrl+Insert** [全局]|
@@ -149,7 +149,7 @@ ms.locfileid: "31917994"
 |视图.向前定位|**Ctrl+Shift+-** [全局]|
 |视图.对象浏览器|**Ctrl+Alt+J** [全局]|
 |视图.输出|**Ctrl+Alt+O** [全局]|
-|视图.属性窗口|**F4**|
+|视图.属性窗口|F4|
 |视图.刷新|**F5** [团队资源管理器、Team Foundation Build 详细信息编辑器]|
 |视图.服务器资源管理器|**Ctrl+Alt+S** [全局]|
 |视图.显示智能标记|**Ctrl+.** [Global]<br /><br /> 或 **Shift+Alt+F10** [全局、HTML 编辑器设计视图]|

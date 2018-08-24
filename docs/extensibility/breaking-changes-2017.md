@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34f7bdcf682e1baf928d3a36a828aeaafcb6d801
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231487"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512248"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -97,7 +97,8 @@ ms.locfileid: "39231487"
   * **HKLM\Software\Microsoft\VisualStudio\{版本}**： 通过 MSI 安装程序和每个计算机上的扩展创建注册表项。
   * **HKCU\Software\Microsoft\VisualStudio\{版本}**: Visual Studio 来存储特定于用户的设置创建注册表项。
   * **HKCU\Software\Microsoft\VisualStudio\{版本} _Config**： 从 Visual Studio HKLM 密钥更高版本，加上的注册表项的副本合并 *.pkgdef*扩展插件的文件。
-* 若要减少对注册表的影响，Visual Studio 现在将使用[RegLoadAppKey](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724886(v=vs.85).aspx)函数来将注册表项存储在专用二进制文件下 *[VSAPPDATA]\privateregistry.bin*。 只有极少数的 Visual Studio 特定的密钥保留在系统注册表中。
+* 若要减少对注册表的影响，Visual Studio 现在将使用[RegLoadAppKey](/windows/desktop/api/winreg/nf-winreg-regloadappkeya)函数来将注册表项存储在专用二进制文件下 *[VSAPPDATA]\privateregistry.bin*。 只有极少数的 Visual Studio 特定的密钥保留在系统注册表中。
+
 * 在 Visual Studio 进程内运行的现有代码不会受到影响。 Visual Studio 将重定向到专用注册表 HKCU-特定于 Visual Studio 项下的所有注册表操作。 读取和写入注册表的其他位置将继续使用系统注册表。
 * 外部代码需要加载并从 Visual Studio 注册表项的此文件中读取。
 

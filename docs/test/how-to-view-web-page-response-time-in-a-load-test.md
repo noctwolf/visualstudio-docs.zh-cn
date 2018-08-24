@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85991c25844cb6e781240a394c38f798251a68b6
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 1b254856b819bda2a5d05210f9cef94968197053
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178288"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379477"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用负载测试分析器在负载测试中查看网页响应时间
 
@@ -86,7 +86,7 @@ ms.locfileid: "39178288"
 
      数据即添加到关系图中。
 
-7.  （可选）对 Avg. Page Time、Page Response Time Goal 和 Total Pages 重复上一步骤。
+7.  （可选）对 Avg. Page Time、Page Response、Time Goal 和 Total Pages 重复上一步骤。
 
     > [!NOTE]
     > Page Response Time Goal 是常数。
@@ -96,5 +96,5 @@ ms.locfileid: "39178288"
 ## <a name="see-also"></a>请参阅
 
 - [在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [如何：访问负载测试结果以进行分析](../test/how-to-access-load-test-results-for-analysis.md)
+- [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)
 - [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

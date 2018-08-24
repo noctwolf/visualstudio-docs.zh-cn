@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 76654568825bd0761097a1edd3ec8eb3bbc7060d
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e278eeb486d2a2d0150fb3ffd44176d17edbdc33
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118765"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42624443"
 ---
 # <a name="walkthrough-debug-a-sharepoint-application-by-using-intellitrace"></a>演练： 使用 IntelliTrace 调试 SharePoint 应用程序
 
@@ -52,7 +52,7 @@ ms.locfileid: "37118765"
 
 你需要以下组件来完成本演练：
 
-- 支持的 Windows 和 SharePoint 版本。 请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支持的 Windows 和 SharePoint 版本。
 
 - Visual Studio Enterprise。
 

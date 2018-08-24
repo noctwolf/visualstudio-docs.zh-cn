@@ -1,5 +1,5 @@
 ---
-title: SccGetProjPath 函数 |Microsoft 文档
+title: SccGetProjPath 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ef5041b483e85e0806827f7d1188d432b476c5b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dc429e0d1d4afab5aa85387c228b981486796d08
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142336"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638080"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
-此函数会提示用户输入是一个字符串，仅对源代码管理插件有意义的项目路径。 当用户是，将调用：  
+此函数会提示用户输入项目路径，这是一个字符串，它仅对源代码管理插件有意义。 当用户是，将调用：  
   
--   创建新项目  
+-   创建新的项目  
   
 -   将现有项目添加到版本控制  
   
@@ -46,68 +46,68 @@ SCCRTN SccGetProjPath (
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+### <a name="parameters"></a>参数  
  pvContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  hWnd  
  [in]它提供了任何对话框，父级可以使用源代码管理插件，则 IDE 窗口的句柄。  
   
  lpUser  
- [在中，out]用户名 （不超过 SCC_USER_SIZE，包括 NULL 终止符）  
+ [in、 out]用户名 （不超过 SCC_USER_SIZE，包括 NULL 终止符）  
   
  lpProjName  
- [在中，out]IDE 项目、 项目工作区中或生成文件 （不超过 SCC_PRJPATH_SIZE，包括 NULL 终止符） 的名称。  
+ [in、 out]IDE 项目、 项目工作区中或生成文件 （不超过 SCC_PRJPATH_SIZE，包括 NULL 终止符） 的名称。  
   
  lpLocalPath  
- [在中，out]项目的工作路径。 如果`bAllowChangePath`是`TRUE`，源代码管理插件可以修改此字符串 （不超过 _MAX_PATH，包括 null 结束符）。  
+ [in、 out]项目的工作路径。 如果`bAllowChangePath`是`TRUE`，源代码管理插件可以修改此字符串 （不超过 _MAX_PATH，包括 null 终止符）。  
   
  lpAuxProjPath  
- [在中，out]返回的项目路径 （不超过 SCC_PRJPATH_SIZE，包括 NULL 终止符） 的缓冲区。  
+ [in、 out]返回的项目路径 （不超过 SCC_PRJPATH_SIZE，包括 NULL 终止符） 的缓冲区。  
   
  bAllowChangePath  
- [in]如果这是`TRUE`，源代码管理插件可以查询和修改`lpLocalPath`字符串。  
+ [in]如果这是`TRUE`，可以提示和修改源代码管理插件`lpLocalPath`字符串。  
   
  pbNew  
- [在中，out]传入的值指示是否创建新项目。 返回值指示成功创建项目：  
+ [in、 out]传入的值指示是否创建新的项目。 返回值指示成功创建项目：  
   
 |传入|解释|  
 |--------------|--------------------|  
-|true|用户可能创建一个新的项目。|  
-|false|用户不可能创建一个新的项目。|  
+|true|用户可以创建一个新的项目。|  
+|false|用户可能会创建一个新的项目。|  
   
 |传出|解释|  
 |--------------|--------------------|  
-|true|创建新项目。|  
-|false|选择了现有项目。|  
+|true|创建一个新的项目。|  
+|false|选择现有的项目。|  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功创建或检索项目。|  
-|SCC_I_OPERATIONCANCELED|已取消该操作。|  
-|SCC_E_ACCESSFAILURE|没有访问源代码管理系统，可能由于网络或争用问题发生时出现问题。|  
-|SCC_E_CONNECTIONFAILURE|尝试连接到源代码管理系统时出错。|  
+|SCC_I_OPERATIONCANCELED|该操作已取消。|  
+|SCC_E_ACCESSFAILURE|访问源代码管理系统，很可能是由于网络或争用问题时出现问题时。|  
+|SCC_E_CONNECTIONFAILURE|存在时尝试连接到源代码管理系统出现问题。|  
 |SCC_E_NONSPECIFICERROR|发生了未指定的错误。|  
   
 ## <a name="remarks"></a>备注  
- 此函数的目的是供 IDE 以获取参数`lpProjName`和`lpAuxProjPath`。 源代码管理插件提示用户输入此信息后，它会将这两个字符串传递回 IDE 中。 IDE 仍然存在其解决方案文件中的这些字符串并将它们传递到[SccOpenProject](../extensibility/sccopenproject-function.md)每当用户打开此项目。 这些字符串启用要跟踪与项目关联的信息的插件。  
+ 此函数的目的是为了 IDE 获取参数`lpProjName`和`lpAuxProjPath`。 源代码管理插件会提示用户输入此信息后，它将这两个字符串传递回 IDE。 IDE 仍然存在其解决方案文件中的这些字符串并将它们传递到[SccOpenProject](../extensibility/sccopenproject-function.md)每当用户打开此项目。 这些字符串启用该插件来跟踪与项目关联的信息。  
   
- 当第一次调用函数时，`lpAuxProjPath`设置为空字符串。 `lProjName` 也可能为空，或它可能包含 IDE 项目名称，可能会使用源代码管理插件或者将其忽略。 在该函数成功返回时，该插件返回两个相应的字符串。 IDE，不作出任何假设这些字符串，不会使用它们，并且不允许用户对其进行修改。 如果用户想要更改设置，将调用 IDE`SccGetProjPath`同样，在相同的值将其传递之前接收在前一次。 这样，对这两个字符串插件的完全控制。  
+ 当首次调用该函数时，`lpAuxProjPath`设置为空字符串。 `lProjName` 也可能为空，或它可能包含源代码管理插件可能会使用或忽略的 IDE 项目名称。 该函数成功返回时，该插件返回两个相应的字符串。 IDE 不会假设即将这些字符串，不会使用它们，并将不允许用户对其进行修改。 如果用户想要更改的设置，将调用 IDE`SccGetProjPath`同样，在相同的值并向其传递以前接收了上一次。 这样，对这两个字符串插件的完全控制。  
   
- 有关`lpUser`，IDE 可能传入用户名，或者它可能只需在一个指针传递到一个空字符串。 如果没有用户名，源代码管理插件应使用它作为默认值。 但是，如果未将名称传递，或者具有给定名称的登录失败，该插件应提示用户输入登录名和密码名称后`lpUser`当它收到的有效登录。 因为插件可能会更改此字符串，IDE 将始终分配缓冲区的大小 (`SCC_USER_LEN`+ 1)。  
+ 有关`lpUser`，IDE 可能会传入用户名，或者它可能只是一个指针传递到一个空字符串。 如果用户名称，源代码管理插件应使用它作为默认值。 但是，如果未传递名称或具有给定名称的登录失败，该插件应提示用户输入的登录名和传递名称重新`lpUser`当它收到有效的登录名。 因为该插件可能会更改此字符串，IDE 会始终分配大小的缓冲区 (`SCC_USER_LEN`+ 1)。  
   
 > [!NOTE]
->  IDE 执行的第一个操作可能是调用`SccOpenProject`函数或`SccGetProjPath`函数。 因此，这两个具有相同`lpUser`参数，它使源代码管理插件在任一时记录中的用户。 即使从函数返回表示失败，该插件必须填充此字符串与有效的登录名。  
+>  IDE 将执行的第一个操作可能会调用`SccOpenProject`函数或`SccGetProjPath`函数。 因此，这两个具有相同`lpUser`参数，以使源代码管理插件在用户登录，在任一时间。 即使从函数返回表示失败，该插件必须填充此字符串与有效的登录名。  
   
- `lpLocalPath` 是用户其中保留项目的目录。 它可能是空字符串。 如果没有当前定义 （如果用户尝试从源代码管理系统中下载的项目） 的目录并且`bAllowChangePath`是`TRUE`，源代码管理插件可以提示用户输入或使用其他某种方法来将其拥有字符串插入`lpLocalPath`。 如果`bAllowChangePath`是`FALSE`，该插件不应更改为字符串，因为用户已在指定的目录中工作。  
+ `lpLocalPath` 是，用户将项目的目录。 它可能为空字符串。 如果没有当前定义 （如果尝试从源代码管理系统下载的项目是用户） 的目录，如果`bAllowChangePath`是`TRUE`，源代码管理插件可以提示用户输入或使用其他某种方法将其拥有字符串插入`lpLocalPath`。 如果`bAllowChangePath`是`FALSE`，该插件不应更改为字符串，因为用户已使用指定的目录中。  
   
- 如果用户创建新项目将在源代码管理下，源代码管理插件可能会不实际创建它在源代码管理系统时`SccGetProjPath`调用。 相反，它返回传递的非零值的字符串沿`pbNew`，指示将在源代码管理系统中创建的项目。  
+ 如果用户创建新的项目来置于源代码管理之下，源代码管理插件可能不实际创建其源代码管理系统中时`SccGetProjPath`调用。 相反，它返回传递一个非零值的字符串沿`pbNew`，指示将源代码管理系统中创建该项目。  
   
- 例如，如果中的用户**新项目**Visual Studio 中的向导将他或她的项目添加到源代码管理、 Visual Studio 会调用此函数和插件确定它是否可以在到的源控制系统中创建新项目包含 Visual Studio 项目。 如果用户单击**取消**之前完成向导，永远不会创建项目。 如果用户单击**确定**，Visual Studio 会调用`SccOpenProject`，并传入`SCC_OPT_CREATEIFNEW`，并在该时间创建受源代码管理项目。  
+ 例如，如果中的用户**新的项目**向导在 Visual Studio 中的将其自己的项目添加到源代码管理、 Visual Studio 会调用此函数和插件，则确定它是否可以向源代码管理系统中创建一个新项目包含 Visual Studio 项目。 如果用户单击**取消**之前完成向导，永远不会创建项目。 如果用户单击**确定**，Visual Studio 会调用`SccOpenProject`，并传入`SCC_OPT_CREATEIFNEW`，并在该时间创建受源代码管理项目。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)

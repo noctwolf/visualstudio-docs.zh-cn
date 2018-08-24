@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1d05670192630e0bc4903988770c52840a5e347
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118234"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586412"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 
@@ -30,13 +30,13 @@ ms.locfileid: "37118234"
 
 因此，Visual Studio 提供了一种方法，可直接在环境和项目中指定搜索路径。 在 Visual Studio 中运行或调试的代码会接收 `PYTHONPATH` 值（和其他等效变量）中的搜索路径。 通过添加搜索路径，Visual Studio 会在需要时检查这些位置中的库并为它们构建 IntelliSense 数据库（Visual Studio 2017 版本 15.5 及更早版本；构建数据库需要一些时间，具体取决于库的数量）。
 
-若要添加搜索路径，请在解决方案资源管理器中右键单击“搜索路径”，选择“将文件夹添加到搜索路径...”，并选择要包括的文件夹。 此路径将用于与该项目关联的任何环境。 （如果环境基于 Python 3，在尝试将搜索路径添加到 Python 2.7 模块时，可能会发生错误。）
+若要添加搜索路径，请在”解决方案资源管理器”中右键单击“搜索路径”，选择“将文件夹添加到搜索路径”，并选择要包括的文件夹。 此路径将用于与该项目关联的任何环境。 （如果环境基于 Python 3，在尝试将搜索路径添加到 Python 2.7 模块时，可能会发生错误。）
 
-通过选择“将 Zip 存档添加到搜索路径的...”，还可将具有 `.zip` 或 `.egg` 扩展的文件添加为搜索路径。与文件夹一样，将扫描这些文件的内容，并使其对 IntelliSense 可用。
+通过选择“将 Zip 存档添加到搜索路径的”，还可将具有 .zip 或 .egg 扩展的文件添加为搜索路径。 与文件夹一样，将扫描这些文件的内容，并使其对 IntelliSense 可用。
 
 如果定期使用相同的搜索路径，且内容不经常更改，则将其安装到 site-packages 文件夹会更高效。 搜索路径随后会进行分析并存储在 IntelliSense 数据库中，会始终与预期的环境关联且不需要向每个项目添加搜索路径。
 
-## <a name="see-also"></a>请参阅
+### <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中管理 Python 环境](managing-python-environments-in-visual-studio.md)
 - [为项目选择解释器](selecting-a-python-environment-for-a-project.md)

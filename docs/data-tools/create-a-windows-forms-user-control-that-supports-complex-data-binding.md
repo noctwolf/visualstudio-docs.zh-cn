@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b0189682576c495d031cf160261e16fd920a1615
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 11ab6a812701d371e86f07b3e8da5fa91f90cbcf
+ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758376"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39582312"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
@@ -37,7 +37,7 @@ ms.locfileid: "36758376"
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 （本演练页面描述了此过程）。|
 |在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
 
- 本演练创建显示表中多行数据的复杂控件。 本示例使用源自 Northwind 示例数据库的 `Customers` 表。 复杂用户控件将会在自定义控件中的 <xref:System.Windows.Forms.DataGridView> 中显示 Customers 表。
+本演练创建显示表中多行数据的复杂控件。 本示例使用源自 Northwind 示例数据库的 `Customers` 表。 复杂用户控件将会在自定义控件中的 <xref:System.Windows.Forms.DataGridView> 中显示 Customers 表。
 
 在本演练中，你将学会如何执行以下任务：
 
@@ -75,9 +75,7 @@ ms.locfileid: "36758376"
 
 ## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
 
- 第一步是创建**Windows 窗体应用程序**。
-
-### <a name="to-create-the-new-windows-project"></a>创建新的 Windows 项目
+第一步是创建**Windows 窗体应用程序**:
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
@@ -91,9 +89,7 @@ ms.locfileid: "36758376"
 
 ## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目
 
-因为本演练创建复杂数据绑定控件从**用户控件**，则必须添加**用户控件**到项目的项。
-
-### <a name="to-add-a-user-control-to-the-project"></a>将用户控件添加到项目中
+因为本演练创建复杂数据绑定控件从**用户控件**，添加**用户控件**项与项目：
 
 1. 从**项目**菜单中，选择**添加用户控件**。
 
@@ -103,17 +99,11 @@ ms.locfileid: "36758376"
 
 ## <a name="design-the-complexdatagridview-control"></a>设计 ComplexDataGridView 控件
 
-此步骤将 <xref:System.Windows.Forms.DataGridView> 添加到该用户控件。
-
-### <a name="to-design-the-complexdatagridview-control"></a>设计 ComplexDataGridView 控件
-
-- 拖动<xref:System.Windows.Forms.DataGridView>从**工具箱**到用户控件的设计图面。
+若要添加<xref:System.Windows.Forms.DataGridView>到用户控件中，拖动<xref:System.Windows.Forms.DataGridView>从**工具箱**到用户控件的设计图面。
 
 ## <a name="add-the-required-data-binding-attribute"></a>添加所需的数据绑定属性
 
-对于支持数据绑定的复杂控件，你可以实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。
-
-### <a name="to-implement-the-complexbindingproperties-attribute"></a>实现 ComplexBindingProperties 特性
+对于复杂控件支持数据绑定的可以实现<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>:
 
 1. 交换机**ComplexDataGridView**到代码视图的控件。 (在**视图**菜单中，选择**代码**。)
 
@@ -124,11 +114,9 @@ ms.locfileid: "36758376"
 
 1. 从 **“生成”** 菜单中选择 **“生成解决方案”**。
 
-## <a name="creating-a-data-source-from-your-database"></a>从您的数据库创建数据源
+## <a name="create-a-data-source-from-your-database"></a>从您的数据库创建数据源
 
-此步骤中使用**数据源配置**向导创建数据源基于`Customers`Northwind 示例数据库中的表。
-
-### <a name="to-create-the-data-source"></a>创建数据源
+使用**数据源配置**向导创建数据源基于`Customers`Northwind 示例数据库中的表：
 
 1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
@@ -154,9 +142,7 @@ ms.locfileid: "36758376"
 
 ## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>设置 Customers 表以使用 ComplexDataGridView 控件
 
-内**数据源**窗口中，可以设置要在项拖动到窗体之前创建的控件。
-
-### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>设置 Customers 表以绑定到 ComplexDataGridView 控件
+内**数据源**窗口中，可以设置要在项拖动到窗体之前创建的控件：
 
 1. 打开**Form1**在设计器中。
 
@@ -170,15 +156,9 @@ ms.locfileid: "36758376"
 
 ## <a name="add-controls-to-the-form"></a>将控件添加到窗体
 
-可以通过将项从创建数据绑定控件**数据源**窗口拖到窗体上的。
+可以通过将项从创建数据绑定控件**数据源**窗口拖到窗体上的。 将主**客户**从节点**数据源**拖到窗体的窗口。 确认**ComplexDataGridView**控件用于显示表的数据。
 
-### <a name="to-create-data-bound-controls-on-the-form"></a>在窗体上创建数据绑定控件
-
-将主**客户**从节点**数据源**拖到窗体的窗口。 确认**ComplexDataGridView**控件用于显示表的数据。
-
-## <a name="running-the-application"></a>运行应用程序
-
-### <a name="to-run-the-application"></a>要运行应用程序
+## <a name="run-the-application"></a>运行此应用程序
 
 按 **F5** 运行该应用程序。
 

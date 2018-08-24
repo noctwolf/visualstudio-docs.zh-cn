@@ -1,5 +1,5 @@
 ---
-title: 注册和注销 Vspackage |Microsoft 文档
+title: 注册和注销 Vspackage |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73dccc4aef061aaac5f5c33e098a591a7c51fcbb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c9abdf432664e57dd773649a88f97cf9b48675d7
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139047"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638168"
 ---
-# <a name="registering-and-unregistering-vspackages"></a>注册和注销 Vspackage
+# <a name="register-and-unregister-vspackages"></a>注册和注销 Vspackage
 特性用于注册 VSPackage，但  
   
-## <a name="registering-a-vspackage"></a>注册 VSPackage  
- 特性可用于控制托管的 Vspackage 的注册。 .Pkgdef 文件中包含的所有注册信息。 基于文件的注册的详细信息，请参阅[CreatePkgDef 实用工具](../extensibility/internals/createpkgdef-utility.md)。  
+## <a name="register-a-vspackage"></a>注册 VSPackage  
+ 属性可用于控制托管的 Vspackage 的注册。 中包含的所有注册信息 *.pkgdef*文件。 基于文件的注册的详细信息，请参阅[CreatePkgDef 实用工具](../extensibility/internals/createpkgdef-utility.md)。  
   
  下面的代码演示如何使用标准注册特性注册你的 VSPackage。  
   
@@ -36,18 +36,18 @@ public sealed class BasicPackage : Package
 {. . .}  
 ```  
   
-## <a name="unregistering-an-extension"></a>注销扩展  
- 如果你已尝试过使用大量不同的 Vspackage，并且想要从实验实例中删除它们，你可以仅运行**重置**命令。 查找**重置 Visual Studio 实验实例**在你的计算机，开始页上或从命令行运行此命令：  
+## <a name="unregister-an-extension"></a>注销扩展  
+ 如果你已尝试过很多不同的 Vspackage 使用，并想要从实验实例中删除它们，可以只需运行**重置**命令。 寻找**重置 Visual Studio 实验实例**在主页上的计算机，或从命令行运行以下命令：  
   
-```vb  
+```cmd  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp  
 ```  
   
- 如果你想要卸载已在你的 Visual Studio 的开发实例安装的扩展，请转到**工具 / 扩展和更新**，找到的扩展，然后单击**卸载**。  
+ 如果你想要卸载已在您的 Visual Studio 的开发实例安装的扩展，请转到**工具** > **扩展和更新**，查找扩展，然后单击**卸载**。  
   
- 如果出于某种原因这些方法均未成功在卸载该扩展，可以将 VSPackage 程序集，从命令行取消注册，如下所示：  
+ 如果出于某种原因这两个方法成功如何卸载该扩展，则可按如下所示注销 VSPackage 程序集从命令行：  
   
-```  
+```cmd  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>  
 ```  
   
@@ -55,9 +55,9 @@ public sealed class BasicPackage : Package
   
 ## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>使用自定义注册特性注册扩展  
   
-在某些情况下可能需要创建你的扩展的新注册属性。 若要添加新的注册表项，或将新值添加到现有的密钥，你可以使用注册特性。 新的属性必须派生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，且必须重写<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  
+在某些情况下可能需要创建新的注册属性为扩展插件。 若要添加新的注册表项或将新值添加到现有的密钥，可以使用注册属性。 新的属性必须派生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，并且必须重写<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  
   
-### <a name="creating-a-custom-attribute"></a>创建自定义属性  
+### <a name="create-a-custom-attribute"></a>创建自定义属性  
   
 下面的代码演示如何创建新的注册属性。  
   
@@ -68,11 +68,11 @@ public sealed class BasicPackage : Package
     }  
 ```  
   
- <xref:System.AttributeUsageAttribute>在特性类中用于指定对该属性有关、 是否它可以使用一次以上，和是否可以继承的程序元素 （类、 方法等）。  
+ <xref:System.AttributeUsageAttribute>属性类中用于指定该属性相关，是否可以在一次以上，和是否可以继承的程序元素 （类、 方法等）。  
   
-### <a name="creating-a-registry-key"></a>创建注册表项  
+### <a name="create-a-registry-key"></a>创建注册表项  
   
-在下面的代码中，创建自定义特性**自定义**子项下要注册的 VSPackage 的密钥。  
+在下面的代码中，创建自定义特性**自定义**子项下为其注册的 VSPackage 的键。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -96,7 +96,7 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-### <a name="creating-a-new-value-under-an-existing-registry-key"></a>创建现有的注册表项下的新值  
+### <a name="create-a-new-value-under-an-existing-registry-key"></a>创建现有的注册表项下的新值  
   
 可以将自定义值添加到现有密钥。 下面的代码演示如何将新值添加到 VSPackage 注册密钥。  
   
@@ -122,5 +122,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

@@ -23,17 +23,18 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4dc27993125c41de91e069cd4c87025f3a26ec07
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: dd67173078a81c5fc250ca993474a60057076d70
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327315"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634717"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理文档和列表项中的 SharePoint Web 站点的生命周期的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。
 
- 有关用于创建 SharePoint 项目中的先决条件的列表[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。 有关 SharePoint 的详细信息，请参阅[Microsoft SharePoint 产品和技术](http://go.microsoft.com/fwlink/?LinkId=178470)。
+[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供工具以帮助您创建自定义管理文档和列表项中的 SharePoint Web 站点的生命周期的工作流。 提供的项包括设计器、一组活动控件以及必需的程序集引用。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 此外包括**SharePoint 自定义向导**来帮助创建和配置工作流。
+
+有关 SharePoint 的详细信息，请参阅[Microsoft SharePoint 产品和技术](http://go.microsoft.com/fwlink/?LinkId=178470)。
 
 ## <a name="workflows-in-sharepoint"></a>在 SharePoint 中的工作流
  当将工作流添加到 SharePoint 库或列表时，则强制执行业务流程上的库或列表中的所有项。 工作流说明系统或用户必须对每个项，例如发送要进行编辑，然后查看的项执行的操作。 这些操作，称为*活动*，是工作流的构建基块。

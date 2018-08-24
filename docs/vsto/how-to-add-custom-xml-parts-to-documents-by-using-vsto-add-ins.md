@@ -22,11 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 803a0c146bbf17ee79f79fe5de95fdf2ee2151da
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42636230"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档
   通过在 VSTO 外接程序中创建自定义 XML 部件，可以将 XML 数据存储在以下类型的文档中：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/VisualBasic/trin_addcustomxmlpartexcelapplevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartExcelAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartExcelAppLevel/ThisAddIn.cs#1)]  
   
-2.  将 `AddCustomXmlPartToWorkbook` 方法添加到 Excel 的 VSTO 外接程序项目中的 `ThisAddIn` 类。  
+2.  添加`AddCustomXmlPartToWorkbook`方法`ThisAddIn`Excel 的 VSTO 外接程序项目中的类。  
   
 3.  从项目中的其他代码调用该方法。 例如，若要在用户打开工作簿时创建自定义 XML 部件，可从 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> 事件的事件处理程序调用该方法。  
   
@@ -63,22 +64,22 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.vb#1)]
      [!code-csharp[Trin_AddCustomXmlPartWordAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartWordAppLevel/ThisAddIn.cs#1)]  
   
-2.  将 `AddCustomXmlPartToDocument` 方法添加到 Word 的 VSTO 外接程序项目中的 `ThisAddIn` 类。  
+2.  添加`AddCustomXmlPartToDocument`方法`ThisAddIn`Word VSTO 外接程序项目中的类。  
   
 3.  从项目中的其他代码调用该方法。 例如，若要在用户打开文档时创建自定义 XML 部件，可从 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> 事件的事件处理程序调用该方法。  
   
 ## <a name="to-add-a-custom-xml-part-to-a-powerpoint-presentation"></a>向 PowerPoint 演示文稿添加自定义 XML 部件  
   
-1.  向演示文稿中的 <xref:Microsoft.Office.Core.CustomXMLPart> 集合添加新的 <xref:Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts%2A> 对象。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含你希望存储在演示文稿中的 XML 字符串。  
+1.  添加一个新<xref:Microsoft.Office.Core.CustomXMLPart>对象传递给[Microsoft.Office.Interop.PowerPoint._Presentation.CustomXMLParts](/previous-versions/office/developer/office-2010/ff760806%28v%3doffice.14%29)演示文稿中的集合。 <xref:Microsoft.Office.Core.CustomXMLPart> 包含你希望存储在演示文稿中的 XML 字符串。  
   
      下面的代码示例向指定演示文稿添加自定义 XML 部件。  
   
      [!code-csharp[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/CSharp/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddCustomXmlPartPowerPointAppLevel#1](../vsto/codesnippet/VisualBasic/Trin_AddCustomXmlPartPowerPointAppLevel/ThisAddIn.vb#1)]  
   
-2.  将 `AddCustomXmlPartToPresentation` 方法添加到 PowerPoint 的 VSTO 外接程序项目中的 `ThisAddIn` 类。  
+2.  添加`AddCustomXmlPartToPresentation`方法`ThisAddIn`PowerPoint 的 VSTO 外接程序项目中的类。  
   
-3.  从项目中的其他代码调用该方法。 例如，若要在用户打开演示文稿时创建自定义 XML 部件，可从 <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen> 事件的事件处理程序调用该方法。  
+3.  从项目中的其他代码调用该方法。 例如，若要在用户打开演示文稿时创建自定义 XML 部件，该方法从调用事件处理程序[Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v=office.14))事件。  
   
 ## <a name="robust-programming"></a>可靠编程  
  为简单起见，此示例使用在方法中定义为局部变量的 XML 字符串。 通常，应从外部源（如文件或数据库）获取 XML。  

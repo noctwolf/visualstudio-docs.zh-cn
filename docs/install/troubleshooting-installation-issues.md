@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 2017 安装问题疑难解答
 description: 有时也会遇到问题。 如果 Visual Studio 安装或升级失败，可在此页寻求帮助。
-ms.date: 11/21/2017
+ms.date: 08/01/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
@@ -14,22 +14,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ed2724f82923ed2157133c3c36b9ff06a1b7d5
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b6a7ae2bff6d35c77dc54ce07207af375b76ee77
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282949"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511686"
 ---
-# <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
+# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Visual Studio 2017 安装和升级问题疑难解答
 
-## <a name="symptoms"></a>症状
+> [!IMPORTANT]
+> 安装时遇到问题？ 我们可以为你提供帮助。 我们提供[**实时聊天**](https://visualstudio.microsoft.com/vs/support/#talktous)（仅英语）支持选项。
 
-尝试安装或更新 Visual Studio 2017 时，操作失败。
+本疑难解答指南包含可解决大多数安装问题的分步说明。
 
-## <a name="workaround"></a>解决方法
+## <a name="how-to-troubleshoot-an-online-installation"></a>如何解决联机安装问题
 
-若要解决此问题，请按照以下步骤操作。
+以下步骤针对典型的联机安装进行了优化。 有关影响脱机安装的问题，请参阅[如何解决脱机安装问题](#how-to-troubleshoot-an-offline-installation)。
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>第 1 步 - 检查此问题是否是已知问题
 
@@ -43,17 +44,17 @@ Visual Studio 安装程序存在一些已知问题，Microsoft 正在努力修�
 
 Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安装 Visual Studio 安装程序的剩余部分。 删除 Visual Studio 安装程序文件，然后重新运行引导程序，可能会修复一些更新故障。
 
->[!NOTE]
-执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
+> [!NOTE]
+> 执行以下操作将重新安装 Visual Studio 安装程序文件并重置安装元数据。
 
 1. 关闭 Visual Studio 安装程序。
 2. 删除 Visual Studio 安装程序目录。 通常，该目录是 `C:\Program Files (x86)\Microsoft Visual Studio\Installer`。
-3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 运行此可执行文件，重置安装元数据。
+3. 运行 Visual Studio 安装程序引导程序。 引导程序位于“下载”文件夹中，文件名格式为 `vs_[Visual Studio edition]__*.exe`。 如果找不到此应用程序，可以转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，然后单击你的 Visual Studio 版本所对应的“下载”，便可下载引导程序。 然后，运行此可执行文件，重置安装元数据。
 4. 尝试重新安装或更新 Visual Studio。 如果安装程序仍无法安装，请转到下一步。
 
 ### <a name="step-4---report-a-problem"></a>第 4 步 - 报告问题
 
-在某些情况下（如出现与文件损坏相关的问题时），可能需要逐个调查每个问题：
+在某些情况下（如出现与文件损坏相关的问题时），可能需要逐个调查每个问题。 为便于我们为你提供帮助，请执行以下操作：
 
 1. 收集安装日志。 有关详细信息，请参阅[如何获取 Visual Studio 安装日志](#how-to-get-the-visual-studio-installation-logs)。
 2. 打开 Visual Studio 安装程序，然后单击“报告问题”，打开 Visual Studio 反馈工具。
@@ -71,18 +72,18 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 
 ### <a name="step-6---contact-us-optional"></a>第 6 步 - 与我们联系（可选）
 
-如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
+如果上述步骤均未帮助你成功安装或升级 Visual Studio，请使用我们的[实时聊天](https://visualstudio.microsoft.com/vs/support/#talktous)支持选项（仅英语）与我们联系，以获取进一步的帮助。
 
-## <a name="how-to-troubleshoot-an-offline-installer"></a>如何解决脱机安装程序问题
+## <a name="how-to-troubleshoot-an-offline-installation"></a>如何解决脱机安装问题
 
-下面的表格列出了通过本地布局进行安装时的已知问题和解决办法，可能会对你有所帮助。
+下面的表格列出了通过本地布局进行安装时的已知问题和可能会对你有所帮助的解决办法。
 
 | 问题       | 项                   | 解决方案 |
 | ----------- | ---------------------- | -------- |
 | 用户没有访问文件的权限。 | 权限 (ACL) | 请确保调整权限 (ACL)，以便他们在共享脱机安装前先向其他用户授予“读取”权限。 |
 | 无法安装新的工作负载、组件或语言。  | `--layout`  | 若要通过部分布局进行安装，并选择之前未在此部分布局中下载过的工作负载、组件或语言，请确保可连接到 Internet。 |
 
-## <a name="how-to-get-the-visual-studio-installation-logs"></a>如何获取 Visual Studio 安装日志
+## <a name="how-to-get-visual-studio-installation-logs"></a>如何获取 Visual Studio 安装日志
 
 若要排查大部分的安装问题，需要有安装日志。 使用 Visual Studio 安装程序中的[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)提交问题时，这些日志会自动添加到报告中。
 
@@ -98,20 +99,13 @@ Visual Studio 安装程序引导程序是最轻型的可执行文件，用于安
 > [!NOTE]
 > 工具必须在安装失败时使用的同一用户帐户下运行。 若要从其他用户帐户运行工具，请设置 `–user:<name>` 选项，以指定安装失败时使用的用户帐户。 有关其他选项和使用情况信息，请通过管理员命令提示符运行 `Collect.exe -?`。
 
-## <a name="more-support-options"></a>更多支持选项
+## <a name="get-live-help"></a>获取实时帮助
 
-如果其他任何步骤都无法使你成功安装，则可以通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
-
-下面是另外几个选项：
-
-* 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
-* 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （这需要 [GitHub](https://github.com/) 帐户。）
+如果本疑难解答指南中列出的解决方案无法帮助你成功安装或升级 Visual Studio，请使用我们的[ **实时聊天** ](https://visualstudio.microsoft.com/vs/support/#talktous)支持选项（仅英语）以获取进一步的帮助。
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
-* [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
-* [在防火墙或代理服务器后安装 Visual Studio](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [删除 Visual Studio 2017](remove-visual-studio.md)
+* [在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
+* [用于检测和管理 Visual Studio 实例的工具](tools-for-managing-visual-studio-instances.md)
+* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)

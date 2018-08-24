@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: d0994b226a80385e381fa7b738c0194ec393d87a
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ffd6b8c66f0575ec07e66ea2a138f2761b20cc7a
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844688"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379633"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 
@@ -66,7 +66,7 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
 
 2. 单击“更新”选项卡，并搜索已安装的 NUnit 或 xUnit 测试适配器。
 
-3. 选择每个测试适配器，然后选择下拉列表菜单中的最新稳定版本。
+3. 选择每个测试适配器，然后选择下拉菜单中的最新稳定版本。
 
 4. 选择“安装”按钮。
 

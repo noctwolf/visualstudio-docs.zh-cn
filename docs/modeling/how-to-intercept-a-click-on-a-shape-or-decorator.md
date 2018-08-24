@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5e78438eba52a0e5d5d826ae2fa28503733c7ea3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a8f959595ec40f70b736c163299d8593883ee5e5
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952295"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567398"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：截获对形状或修饰器的单击
-以下过程演示如何截获点击形状或图标修饰器。 可以截获单击、 双击、 拖动，而且其他笔势，并进行响应的元素。
+以下过程演示如何截获的单击的形状或图标修饰器。 可以截获单击、 双击、 拖动，和其他手势，并使响应的元素。
 
-## <a name="to-intercept-clicks-on-shapes"></a>若要截获在形状上的单击
+## <a name="to-intercept-clicks-on-shapes"></a>若要截获对形状的单击
  在 Dsl 项目中，独立于生成的代码文件中，代码文件中编写形状类的分部类定义。 重写`OnDoubleClick()`或其他名称开头的方法之一`On...`。 例如：
 
-```
+```csharp
 public partial class MyShape // change
   {
     public override void OnDoubleClick(DiagramPointEventArgs e)
@@ -36,22 +36,22 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  设置`e.Handled`到`true`，除非你想要传递到包含形状或关系图的事件。
+>  设置`e.Handled`到`true`，除非你想要传递给包含形状或关系图的事件。
 
-## <a name="to-intercept-clicks-on-decorators"></a>若要截获点击修饰符
- 映像修饰符将 ImageField 类，该类具有 OnDoubleClick 方法实例上。 如果您编写 ImageField 子类，您可以截取单击。 字段在 InitializeShapeFields 方法中设置。 因此，你必须更改该方法可实例化而不是正则 ImageField 子类。 InitializeShapeFields 方法是生成的代码的形状类中。 如果你设置，你可以重写形状类其`Generates Double Derived`属性中的以下过程所述。
+## <a name="to-intercept-clicks-on-decorators"></a>若要截获对修饰器的单击
+ 图像修饰器 ImageField 类，该类包含 OnDoubleClick 方法的实例上执行。 可以截获下鼠标，如果您编写 ImageField 子类。 InitializeShapeFields 方法中设置字段。 因此，您必须更改该方法，以实例化而不是正则 ImageField 子类。 InitializeShapeFields 方法是形状类的生成的代码中。 可以重写形状类，如果您设置其`Generates Double Derived`属性，如以下过程中所述。
 
- 尽管 InitializeShapeFields 是实例方法，它是一次调用为每个类。 因此，只存在一个实例的 ClickableImageField 对于每个字段在每个类，不为每个形状图中的一个实例。 当用户双击实例时，你必须确定哪个实例已达到，如示例中的代码所示。
+ 尽管 InitializeShapeFields 是实例方法，但它是只调用一次为每个类。 因此，只有一个实例 ClickableImageField 存在未一个实例为每个形状图中的每个类中每个字段。 当用户双击实例时，则必须标识已命中哪个实例，如在示例代码所示。
 
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>若要截获图标修饰器上的单击
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>若要截获图标修饰器的单击
 
 1.  打开或创建 DSL 解决方案。
 
-2.  选择或创建具有图标修饰器的形状并将其映射到域类。
+2.  选择或创建具有图标修饰器的形状，并将其映射到域类。
 
-3.  在一个代码文件中的文件分开`GeneratedCode`文件夹中，创建新的子类的 ImageField:
+3.  在单独的文件中的代码文件中`GeneratedCode`文件夹中，创建新的 ImageField 子类：
 
-    ```
+    ```csharp
     using Microsoft.VisualStudio.Modeling;
     using Microsoft.VisualStudio.Modeling.Design;
     using Microsoft.VisualStudio.Modeling.Diagrams;
@@ -85,11 +85,11 @@ public partial class MyShape // change
     }
     ```
 
-     应设置 Handled 为 true，如果你不想要传递到包含形状的事件。
+     应设置为 true，如果你确实想要传递给包含形状的事件的处理。
 
-4.  通过添加以下的分部类定义重写中形状 classs 的 InitializeShapeFields 方法。
+4.  通过添加以下的分部类定义，重写中形状 classs InitializeShapeFields 方法。
 
-    ```
+    ```csharp
     public partial class MyShape // change
     {
      protected override void InitializeShapeFields
@@ -116,36 +116,36 @@ public partial class MyShape // change
 
 1.  生成和运行解决方案。
 
-2.  双击形状的实例上的图标。 应显示你的测试消息。
+2.  双击该形状的实例上的图标。 应显示你的测试消息。
 
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>截获单击并拖动 CompartmentShape 列表上
- 下面的示例允许用户重新整理隔离舱形状中拖动项。 若要运行此代码：
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>截获单击和拖动 CompartmentShape 列表上
+ 下面的示例，用户可以在隔离舱形状中通过拖动它们重新排序项。 若要运行此代码：
 
-1.  通过使用创建新的 DSL 解决方案**类关系图**解决方案模板。
+1.  使用创建新 DSL 解决方案**类图**解决方案模板。
 
-     你还可以使用你自己的包含隔离舱形状的解决方案。 此代码假定将是由形状，表示的模型元素和在隔离舱列表项中表示的元素之间的嵌入关系。
+     此外可以使用你自己的解决方案，其中包含隔离舱形状。 此代码假定是由形状表示的模型元素和隔离舱列表项中表示的元素之间的嵌入关系。
 
-2.  设置**生成 Double 派生**的隔离舱形状的属性。
+2.  设置**生成双派生**隔离舱形状的属性。
 
 3.  在文件中添加此代码**Dsl**项目。
 
-4.  调整此代码，以匹配你自己 DSL 中的域类和形状名称。
+4.  调整此代码，以匹配你自己的 DSL 中的域类和形状名称。
 
- 总之，代码如下所示。 在此示例中，`ClassShape`是隔离舱形状的名称。
+ 总之，代码如下所示。 在此示例中，`ClassShape`隔离舱形状的名称。
 
--   鼠标事件处理程序的一组附加到每个隔离舱实例中，创建时。
+-   在创建时，鼠标事件处理程序的一组附加到每个隔离舱实例中。
 
 -   `ClassShape.MouseDown`事件存储的当前项。
 
--   当鼠标移出的当前项创建的 MouseAction 实例，该设置的光标和捕获鼠标，直到它将被释放。
+-   当鼠标移出当前项创建 MouseAction 的实例，该设置的光标和捕获鼠标，直到它被释放。
 
-     为了避免干扰其他鼠标操作，例如选择项的文本 MouseAction 之前，将不创建鼠标离开原始项。
+     若要避免干扰其他鼠标操作，例如，选择项的文本 MouseAction 不创建直到鼠标离开原始项。
 
-     创建 MouseAction 的替代方法是只侦听 MouseUp。 但是，这将无法正常工作如果用户在拖动之外隔离舱后释放鼠标。 MouseAction 就能够执行相应的操作，无论松开鼠标。
+     创建 MouseAction 的替代方法是只需侦听 MouseUp。 但是，这会无法正常工作如果用户在拖动隔离舱之外后释放鼠标。 MouseAction 仍然能够执行相应的操作无论松开鼠标。
 
--   释放鼠标时，MouseAction.MouseUp 重新排列之间的链接的模型元素的顺序。
+-   释放鼠标后，MouseAction.MouseUp 重新排列模型元素之间的链接的顺序。
 
--   角色顺序的更改将触发更新显示的规则。 已定义此行为，并且不需要任何其他代码。
+-   角色顺序的更改会触发更新显示的规则。 已定义此行为，并且不需要任何其他代码。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

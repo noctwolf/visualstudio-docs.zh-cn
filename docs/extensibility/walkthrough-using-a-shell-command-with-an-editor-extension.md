@@ -1,5 +1,5 @@
 ---
-title: 演练： 使用 Shell 命令编辑器扩展名 |Microsoft 文档
+title: 演练： 在编辑器扩展中使用 Shell 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,74 +13,74 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112e78e6143d0a3bd67ff2a65814f2d77b85cdc1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 02ff8a2be0d13af193a204ee6711bf7dfa11dee7
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31148374"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566955"
 ---
-# <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>演练： 使用编辑器扩展名 Shell 命令
-从 VSPackage，你可以将功能，如菜单命令添加到编辑器。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。  
+# <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练： 使用编辑器扩展使用 shell 命令
+从 VSPackage，你可以向编辑器中添加功能，如菜单命令。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。  
   
- 本演练演示如何使用 VSPackage 和 Managed Extensibility Framework (MEF) 组件一部分。 你必须使用 VSPackage 来向 Visual Studio shell 中，注册菜单命令，并且可以使用命令来访问 MEF 组件部分。  
+ 本演练演示如何使用 VSPackage 和 Managed Extensibility Framework (MEF) 组件部分。 VSPackage 必须用于使用 Visual Studio shell 注册菜单命令。 并且，可以使用命令访问 MEF 组件部分。  
   
 ## <a name="prerequisites"></a>系统必备  
- 从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 从 Visual Studio 2015 开始，不要从下载中心安装 Visual Studio SDK。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展  
- 创建 VSPackage 放入名为菜单命令**添加修饰**上**工具**菜单。  
+## <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展  
+ 创建放入名为的菜单命令的 VSPackage**添加修饰**上**工具**菜单。  
   
-1.  创建一个名为的 C# VSIX 项目`MenuCommandTest`，并添加自定义命令项模板名称**AddAdornment**。 有关详细信息，请参阅[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1.  创建一个名为 C# VSIX 项目`MenuCommandTest`，并添加自定义命令项模板名称**AddAdornment**。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-2.  打开一个名为 MenuCommandTest 的解决方案。 MenuCommandTestPackage 文件具有创建菜单命令并将其放入代码**工具**菜单。 此时，该命令只会导致要显示一个消息框。 后续步骤演示如何更改此设置以显示注释修饰。  
+2.  此时将打开一个名为 MenuCommandTest 解决方案。 MenuCommandTestPackage 文件具有创建菜单命令，并将其放入的代码**工具**菜单。 此时，该命令只会导致出现一个消息框。 更高版本的步骤将演示如何更改此设置以显示注释修饰。  
   
-3.  在 VSIX 清单编辑器中打开 source.extension.vsixmanifest 文件。 `Assets` Microsoft.VisualStudio.VsPackage 命名为 MenuCommandTest，选项卡上应安装一个行。  
+3.  打开*source.extension.vsixmanifest* VSIX 清单编辑器中的文件。 `Assets` Microsoft.VisualStudio.VsPackage 名为 MenuCommandTest 选项卡上应具有一个行。  
   
-4.  保存并关闭 Source.extension.vsixmanifest 文件。  
+4.  保存并关闭*source.extension.vsixmanifest*文件。  
   
-## <a name="adding-a-mef-extension-to-the-command-extension"></a>将 MEF 扩展添加到命令扩展  
+## <a name="add-a-mef-extension-to-the-command-extension"></a>将 MEF 扩展添加到命令扩展  
   
-1.  在**解决方案资源管理器**，右键单击解决方案节点，单击**添加**，然后单击**新项目**。 在**添加新项目**对话框中，单击**扩展性**下**Visual C#**，然后**VSIX 项目**。 将项目命名为 `CommentAdornmentTest`。  
+1.  在中**解决方案资源管理器**，右键单击解决方案节点，单击**添加**，然后单击**新项目**。 在中**添加新项目**对话框中，单击**扩展性**下**Visual C#**，然后**VSIX 项目**。 将项目命名为 `CommentAdornmentTest`。  
   
-2.  因为此项目将与强名称的 VSPackage 程序集进行交互，必须对程序集进行签名。 你可以重用 VSPackage 的程序集已创建的密钥文件。  
+2.  因为此项目将与强名称的 VSPackage 程序集进行交互，必须为程序集进行签名。 可以重复使用已创建 VSPackage 程序集密钥文件。  
   
-    1.  打开项目属性并选择**签名**选项卡。  
+    1.  打开项目属性，然后选择**签名**选项卡。  
   
-    2.  选择**对程序集签名**。  
+    2.  选择**为程序集签名**。  
   
-    3.  下**选择强名称密钥文件**，选择为 MenuCommandTest 程序集生成的 Key.snk 文件。  
+    3.  下**选择强名称密钥文件**，选择*Key.snk* MenuCommandTest 程序集生成的文件。  
   
-## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>向 VSPackage 项目中的 MEF 扩展引用  
- 由于要添加到 VSPackage 的 MEF 组件，你必须在清单中指定这两种类型的资产。  
+## <a name="refer-to-the-mef-extension-in-the-vspackage-project"></a>向 VSPackage 项目中的 MEF 扩展，请参阅  
+ 要添加到 VSPackage 的 MEF 组件，因为必须在清单中指定这两种类型的资产。  
   
 > [!NOTE]
 >  有关 MEF 的详细信息，请参阅[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)。  
   
-#### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>若要引用到 VSPackage 项目中的 MEF 组件  
+### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>来指代 VSPackage 项目中的 MEF 组件  
   
-1.  在 MenuCommandTest 项目中，打开 source.extension.vsixmanifest 文件中在 VSIX 清单编辑器中。  
+1.  在 MenuCommandTest 项目中，打开*source.extension.vsixmanifest* VSIX 清单编辑器中的文件。  
   
 2.  上**资产**选项卡上，单击**新建**。  
   
-3.  在**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
+3.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
-4.  在**源**列表中，选择**当前解决方案中的项目**。  
+4.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
-5.  在**项目**列表中，选择**CommentAdornmentTest**。  
+5.  在中**项目**列表中，选择**CommentAdornmentTest**。  
   
-6.  保存并关闭 source.extension.vsixmanifest 文件。  
+6.  保存并关闭*source.extension.vsixmanifest*文件。  
   
-7.  请确保该 MenuCommandTest 项目包含对 CommentAdornmentTest 项目的引用。  
+7.  请确保 MenuCommandTest 项目具有对 CommentAdornmentTest 项目的引用。  
   
-8.  在 CommentAdornmentTest 项目中，设置要生成的程序集的项目。 在**解决方案资源管理器**，选择项目并查看**属性**窗口**复制到输出目录的生成输出**属性，并将其设置为**true**。  
+8.  在 CommentAdornmentTest 项目中，将项目生成的程序集的设置。 在**解决方案资源管理器**，选择项目，然后查看**属性**窗口**生成输出复制到输出目录**属性，并将其设置为 **，则返回 true**。  
   
-## <a name="defining-a-comment-adornment"></a>定义注释修饰  
- 注释修饰本身组成<xref:Microsoft.VisualStudio.Text.ITrackingSpan>，可以跟踪所选的文本，并表示作者和文本的说明某些字符串。  
+## <a name="define-a-comment-adornment"></a>定义注释修饰  
+ 注释修饰本身组成<xref:Microsoft.VisualStudio.Text.ITrackingSpan>的跟踪所选的文本，以及某些表示作者和文本的说明的字符串。  
   
 #### <a name="to-define-a-comment-adornment"></a>若要定义注释修饰  
   
-1.  在 CommentAdornmentTest 项目中，添加新的类文件并将其命名`CommentAdornment`。  
+1.  在 CommentAdornmentTest 项目中，添加一个新类文件并将其命名`CommentAdornment`。  
   
 2.  添加以下引用：  
   
@@ -102,7 +102,7 @@ ms.locfileid: "31148374"
   
     9. WindowsBase  
   
-3.  添加以下`using`语句。  
+3.  以下代码添加到`using`语句。  
   
     ```vb  
     using Microsoft.VisualStudio.Text;  
@@ -110,11 +110,11 @@ ms.locfileid: "31148374"
   
 4.  该文件应包含一个名为类`CommentAdornment`。  
   
-    ```  
+    ```csharp  
     internal class CommentAdornment  
     ```  
   
-5.  添加到三个字段`CommentAdornment`类<xref:Microsoft.VisualStudio.Text.ITrackingSpan>，作者和说明。  
+5.  添加到三个字段`CommentAdornment`类的<xref:Microsoft.VisualStudio.Text.ITrackingSpan>，作者和说明。  
   
     ```csharp  
     public readonly ITrackingSpan Span;  
@@ -122,7 +122,7 @@ ms.locfileid: "31148374"
     public readonly string Text;  
     ```  
   
-6.  添加的构造函数的初始化字段。  
+6.  添加初始化字段的构造函数。  
   
     ```csharp  
     public CommentAdornment(SnapshotSpan span, string author, string text)  
@@ -133,8 +133,8 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-## <a name="creating-a-visual-element-for-the-adornment"></a>为修饰创建可视元素  
- 你还必须为你修饰定义可视元素。 对于本演练中，定义继承自 Windows Presentation Foundation (WPF) 的类的控件<xref:System.Windows.Controls.Canvas>。  
+## <a name="create-a-visual-element-for-the-adornment"></a>创建修饰的可视元素  
+ 定义在修饰的可视元素。 对于本演练中，定义从 Windows Presentation Foundation (WPF) 类继承的控件<xref:System.Windows.Controls.Canvas>。  
   
 1.  在 CommentAdornmentTest 项目中，创建一个类并将其命名`CommentBlock`。  
   
@@ -159,7 +159,7 @@ ms.locfileid: "31148374"
     { }  
     ```  
   
-4.  添加一些私有字段以定义修饰的可视方面。  
+4.  添加一些私有字段以定义修饰的可视元素。  
   
     ```csharp  
     private Geometry textGeometry;  
@@ -169,7 +169,7 @@ ms.locfileid: "31148374"
     private static Pen dashPen;  
     ```  
   
-5.  添加的构造函数的定义注释修饰并添加相关的文本。  
+5.  添加一个构造函数的定义注释修饰并将相关的文本。  
   
     ```csharp  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
@@ -257,8 +257,8 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-## <a name="adding-an-iwpftextviewcreationlistener"></a>添加 IWpfTextViewCreationListener  
- <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>是 MEF 组件部分可以用于侦听以查看创建事件。  
+## <a name="add-an-iwpftextviewcreationlistener"></a>添加 IWpfTextViewCreationListener  
+ <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>是可用于侦听若要查看创建事件的 MEF 组件部分。  
   
 1.  将类文件添加到 CommentAdornmentTest 项目并将其命名`Connector`。  
   
@@ -270,12 +270,12 @@ ms.locfileid: "31148374"
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  声明的类，实现<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>，并将其与导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>"text"和<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>的<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>。 内容类型特性指定组件应用到其中的内容的类型。 文本类型是所有非二进制文件类型的基类型。 因此，此类型将是创建几乎每个文本视图。 文本查看角色属性指定组件应用到的文本视图的类型。 文档文本视图角色通常显示线的组合，并且存储在文件中的文本。  
+3.  声明的类，实现<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>，并将其与导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"text"和一个<xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>的<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>。 内容类型属性指定组件适用的内容的类型。 文本类型是所有非二进制文件类型的基类型。 因此，创建几乎每个文本视图将是此类型。 文本视图角色属性指定文本视图组件适用的类型。 文档文本视图角色通常显示由个行组成，在文件中存储的文本。  
   
      [!code-vb[VSSDKMenuCommandTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_1.vb)]
      [!code-csharp[VSSDKMenuCommandTest#11](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_1.cs)]  
   
-4.  实现<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法，以便它调用静态`Create()`事件`CommentAdornmentManager`。  
+4.  实现<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>方法以便调用静态`Create()`事件的`CommentAdornmentManager`。  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -284,7 +284,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-5.  添加一个可用于执行命令的方法。  
+5.  添加可用于执行命令的方法。  
   
     ```csharp  
     static public void Execute(IWpfTextViewHost host)  
@@ -306,12 +306,12 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-## <a name="defining-an-adornment-layer"></a>定义一个修饰层  
- 若要添加新的修饰，必须定义一个修饰层。  
+## <a name="define-an-adornment-layer"></a>定义修饰层  
+ 若要添加新的修饰，必须定义修饰层。  
   
-#### <a name="to-define-an-adornment-layer"></a>若要定义修饰层  
+### <a name="to-define-an-adornment-layer"></a>若要定义修饰层  
   
-1.  在`Connector`类，声明类型的公共字段<xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>，并将其与导出<xref:Microsoft.VisualStudio.Utilities.NameAttribute>，它指定修饰层的唯一名称和<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>修饰该层的 Z 顺序关系定义为其他文本查看层 （文本、 插入符号，和选择）。  
+1.  在中`Connector`类中，声明类型的公共字段<xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>，并将其与导出<xref:Microsoft.VisualStudio.Utilities.NameAttribute>，它指定修饰层的唯一名称和一个<xref:Microsoft.VisualStudio.Utilities.OrderAttribute>，用于定义其他文本修饰该层的 Z 顺序关系查看层 （文本、 插入符号和所选内容）。  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -321,8 +321,8 @@ ms.locfileid: "31148374"
   
     ```  
   
-## <a name="providing-comment-adornments"></a>提供注释修饰  
- 当你定义修饰时，还实现注释修饰提供程序和注释修饰管理器。 注释修饰服务供应商保留注释修饰的列表，侦听<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>基础的文本缓冲区和删除注释修饰时删除的基础文本上的事件。  
+## <a name="provide-comment-adornments"></a>提供注释修饰  
+ 定义修饰，还实现注释修饰提供程序和注释修饰管理器。 注释修饰服务供应商保留注释修饰的列表，侦听<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>上基础文本缓冲区，并删除注释修饰删除基础文本时的事件。  
   
 1.  将新的类文件添加到 CommentAdornmentTest 项目并将其命名`CommentAdornmentProvider`。  
   
@@ -344,7 +344,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-4.  添加为文本缓冲和缓冲区与相关的注释修饰的列表的私有字段。  
+4.  添加私有字段的文本缓冲区和注释修饰与缓冲区相关的列表。  
   
     ```csharp  
     private ITextBuffer buffer;  
@@ -352,7 +352,7 @@ ms.locfileid: "31148374"
   
     ```  
   
-5.  添加的构造函数`CommentAdornmentProvider`。 此构造函数应具有专用访问权限，因为提供程序通过实例化`Create()`方法。 构造函数将添加`OnBufferChanged`事件处理程序<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。  
+5.  添加的构造函数`CommentAdornmentProvider`。 此构造函数应具有专用访问权限，因为提供程序实例化`Create()`方法。 构造函数将添加`OnBufferChanged`事件处理程序<xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed>事件。  
   
     ```csharp  
     private CommentAdornmentProvider(ITextBuffer buffer)  
@@ -489,7 +489,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-13. 添加一个名为类`CommentsChangedEventArgs`、，如下所示。  
+13. 添加一个名为类`CommentsChangedEventArgs`，按如下所示。  
   
     ```csharp  
     internal class CommentsChangedEventArgs : EventArgs  
@@ -506,8 +506,8 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-## <a name="managing-comment-adornments"></a>管理注释修饰  
- 注释修饰管理器创建修饰，并将其添加到修饰层。 它侦听<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>事件以便它可以移动或删除修饰。 它还侦听`CommentsChanged`时添加或删除注释，注释修饰提供程序将触发的事件。  
+## <a name="manage-comment-adornments"></a>管理注释修饰  
+ 注释修饰管理器创建修饰，并将其添加到修饰层。 它侦听<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>事件以便其可以移动或删除修饰。 它还侦听`CommentsChanged`时添加或删除注释，注释修饰提供程序被激发的事件。  
   
 1.  将类文件添加到 CommentAdornmentTest 项目并将其命名`CommentAdornmentManager`。  
   
@@ -538,7 +538,7 @@ ms.locfileid: "31148374"
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5.  添加订阅的管理器的构造函数<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>和<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>事件，并可传承到`CommentsChanged`事件。 构造函数是私有的因为该管理器实例化的静态`Create()`方法。  
+5.  添加订阅到的管理器的构造函数<xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>并<xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed>事件，并且还`CommentsChanged`事件。 构造函数是私有的因为该管理器实例化的静态`Create()`方法。  
   
     ```csharp  
     private CommentAdornmentManager(IWpfTextView view)  
@@ -554,7 +554,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-6.  添加`Create()`获取提供程序，或者如果需要将创建一个方法。  
+6.  添加`Create()`方法，可获取一个提供程序或如有必要将创建一个。  
   
     ```csharp  
     public static CommentAdornmentManager Create(IWpfTextView view)  
@@ -620,13 +620,13 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-10. 添加绘制注释私有方法。  
+10. 添加绘制注释的私有方法。  
   
      [!code-csharp[VSSDKMenuCommandTest#35](../extensibility/codesnippet/CSharp/walkthrough-using-a-shell-command-with-an-editor-extension_3.cs)]
      [!code-vb[VSSDKMenuCommandTest#35](../extensibility/codesnippet/VisualBasic/walkthrough-using-a-shell-command-with-an-editor-extension_3.vb)]  
   
-## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>使用菜单命令添加注释修饰  
- 你可以使用菜单命令通过实现来创建注释修饰`MenuItemCallback`方法的 VSPackage。  
+## <a name="use-the-menu-command-to-add-the-comment-adornment"></a>使用菜单命令添加注释修饰  
+ 可以使用菜单命令来通过实现来创建注释修饰`MenuItemCallback`VSPackage 的方法。  
   
 1.  添加对 MenuCommandTest 项目的以下引用：  
   
@@ -636,7 +636,7 @@ ms.locfileid: "31148374"
   
     -   Microsoft.VisualStudio.Text.UI.Wpf  
   
-2.  打开 AddAdornment.cs 文件并添加以下`using`语句。  
+2.  打开*AddAdornment.cs*文件，并添加以下`using`语句。  
   
     ```csharp  
     using Microsoft.VisualStudio.TextManager.Interop;  
@@ -645,7 +645,7 @@ ms.locfileid: "31148374"
     using CommentAdornmentTest;  
     ```  
   
-3.  删除 ShowMessageBox() 方法并添加下面的命令处理程序。  
+3.  删除`ShowMessageBox()`方法并添加下面的命令处理程序。  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -653,7 +653,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-4.  添加代码以获取活动的视图。 你必须获取`SVsTextManager`的 Visual Studio shell，若要获取活动`IVsTextView`。  
+4.  添加代码以获取活动视图。 必须获取`SVsTextManager`若要获取活动的 Visual Studio shell 的`IVsTextView`。  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -665,7 +665,7 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-5.  如果此文本视图编辑器文本视图的实例，你可以将它转换到<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>接口，然后获取<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>及其关联<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>。 使用<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>调用`Connector.Execute()`方法，它获取注释修饰提供程序并添加修饰。 命令处理程序现在应如下所示：  
+5.  如果此文本视图编辑器文本视图的实例，则您可以将其转换为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>接口，然后获取<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>及其关联<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>。 使用<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>调用`Connector.Execute()`方法，用于获取注释修饰提供程序并添加了修饰。 命令处理程序现在应如下所示代码所示：  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -712,17 +712,17 @@ ms.locfileid: "31148374"
     }  
     ```  
   
-## <a name="building-and-testing-the-code"></a>生成和测试代码  
+## <a name="build-and-test-the-code"></a>生成和测试代码  
   
-1.  生成解决方案并启动调试。 应显示的实验实例。  
+1.  生成解决方案并启动调试。 应显示在实验实例。  
   
 2.  创建文本文件。 键入一些文本，然后选择它。  
   
-3.  上**工具**菜单上，单击**调用添加修饰**。 气球应显示文本窗口中，右侧，并应包含类似于以下文本的文本。  
+3.  上**工具**菜单上，单击**调用添加修饰**。 气球状应该在文本窗口中，右侧会显示，而应包含类似于以下文本的文本。  
   
      YourUserName  
   
      Fourscore...  
   
-## <a name="see-also"></a>另请参阅  
- [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## <a name="see-also"></a>请参阅  
+ [演练： 将内容类型链接到的文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

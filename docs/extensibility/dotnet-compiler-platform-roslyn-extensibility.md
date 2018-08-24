@@ -1,5 +1,5 @@
 ---
-title: .NET compiler Platform (&quot;Roslyn&quot;) 扩展性 |Microsoft 文档
+title: .NET 编译器平台 (&quot;Roslyn&quot;) 可扩展性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09287c48285bfcdc32b1a7d558d44f9d212f1b41
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab5a486866cb4bc97835a2977fec6e6eb6bc2820
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126931"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639895"
 ---
-# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET compiler Platform (&quot;Roslyn&quot;) 扩展性
-.NET Compiler Platform ("Roslyn") 的核心任务是打开的 C# 和 Visual Basic 编译器，允许工具和开发人员共享的丰富信息编译器中有程序的相关。 代码分析工具可提高代码质量和代码生成器帮助在应用程序构造。 随着越来越灵活工具，他们需要访问为越来越多的仅编译器具有深层代码知识。 而不是不透明转换器 （中的源代码和扩展对象代码），Roslyn 编译器提供可用于与代码相关工具和应用程序中的任务的 Api。  
+# <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET 编译器平台 (&quot;Roslyn&quot;) 扩展性
+.NET 编译器平台 ("Roslyn") 的核心任务是打开的 C# 和 Visual Basic 编译器，并允许工具和开发人员能够在丰富的信息的编译器中共享具有有关程序。 代码分析工具提高代码质量和代码生成器的帮助，在应用程序的构造。 随着工具更智能，他们需要访问越来越多的仅由编译器拥有极深代码知识。 而不是作为不透明转换器 （中的源代码和对象代码），Roslyn 编译器提供的 Api 可用于与代码相关工具和应用程序中的任务。  
   
- 最棒的是 Roslyn 编译器、 其 Api、 示例和演练中和这些 Api 为基础构建的实际工具是在所有完全打开源[github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)。 请转到 OSS 站点，以了解详细信息和开始使用 Roslyn。 你将找到链接以获取最新的 C# 和 VB 功能，可以使用作为最终用户，以及指向作为工具生成器利用 Roslyn Api 开始的链接。  
+ 最妙的是 Roslyn 编译器、 其 Api、 示例和演练和基于这些 Api 构建的真正工具是在所有完全开放源代码[github.com/dotnet/roslyn](https://github.com/dotnet/Roslyn)。 请转到要了解详细信息并开始使用 Roslyn 的 OSS 站点。 将查找链接以获取最新的 C# 和 VB 功能，可以使用作为最终用户，以及链接，开始为利用 Roslyn Api 的工具生成器。  
   
-## <a name="see-also"></a>另请参阅  
- [Roslyn 分析器入门](../extensibility/getting-started-with-roslyn-analyzers.md)
+## <a name="see-also"></a>请参阅  
+ [开始使用 Roslyn 分析器](../extensibility/getting-started-with-roslyn-analyzers.md)

@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 265e0a4c596a78e53de6fe92d837796f2e52a703
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079143"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511230"
 ---
 # <a name="quickstart-use-the-code-editor"></a>快速入门：使用代码编辑器
 
@@ -157,14 +157,21 @@ Visual Studio 提供了实用的代码片段，可用于快速方便地生成常
 
 ## <a name="next-steps"></a>后续步骤
 
-你已经完成了 Visual Studio 编辑器的快速入门。 接下来，可以尝试了解 Visual Studio 发展环境的一些其他快速入门，例如[快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)或[快速入门：个性化设置 Visual Studio](../ide/quickstart-personalize-the-ide.md)，查看[导航代码](../ide/navigating-code.md)的更多方法，或查看链接，详细了解我们介绍的功能。 总之，祝你编码愉快！
+你已经完成了 Visual Studio 编辑器的快速入门。 接下来，可以尝试了解的一些其他适用于 Visual Studio 开发环境的快速入门。
+
+> [!div class="nextstepaction"]
+> [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
+
+> [!div class="nextstepaction"]
+> [快速入门：个性化设置 Visual Studio](../ide/quickstart-personalize-the-ide.md)
+
+> [!div class="nextstepaction"]
+> [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
-- [快速入门：个性化设置 Visual Studio](../ide/quickstart-personalize-the-ide.md)
-- [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
 - [代码片段](../ide/code-snippets.md)
+- [导航代码](../ide/navigating-code.md)
 - [大纲显示](../ide/outlining.md)
 - [转到定义和速览定义](../ide/go-to-and-peek-definition.md)
 - [重构](../ide/refactoring-in-visual-studio.md)

@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: daaeefc8dcefecf035a70989d206564ca84bf198
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 7df6010043d1a88e08494d53ccd9eeb152899d28
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956940"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510373"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：从 Cookiecutter 模板创建项目
 
@@ -26,7 +26,7 @@ ms.locfileid: "33956940"
 
 1. 启动 Visual Studio。
 
-1. 选择“文件”>“新建”>“从 Cookiecutter...”。此命令会在 Visual Studio 中打开一个窗口，可在窗口中浏览模板。 
+1. 选择“文件” > “新建” > “从 Cookiecutter”。 此命令会在 Visual Studio 中打开一个窗口，可在窗口中浏览模板。 
 
     ![从 Cookiecutter 模板新建项目](media/projects-from-cookiecutter1.png)
 
@@ -38,7 +38,7 @@ ms.locfileid: "33956940"
 
 1. 该过程完成后，显示“已成功创建文件”消息。 选择“在解决方案资源管理器中打开”命令打开项目。
 
-1. 按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”运行程序。 
+1. 按 Ctrl+F5 或选择“调试” > “开始执行(不调试)”运行程序。 
 
     ![python-sklearn-classifier-cookiecutter 模板项目的输出](media/projects-from-cookiecutter4.png)
 
@@ -50,6 +50,6 @@ ms.locfileid: "33956940"
 ## <a name="see-also"></a>请参阅
 
 - [使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)
-- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
-- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)。
-- [安装位置](installing-python-support-in-visual-studio.md#install-locations)。
+- [手动标识现有的 Python 解释器](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [在 Visual Studio 2015 及更早版本中安装 Python 支持](installing-python-support-in-visual-studio.md)
+- [安装位置](installing-python-support-in-visual-studio.md#install-locations)

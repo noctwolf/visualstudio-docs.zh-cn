@@ -1,5 +1,5 @@
 ---
-title: PreviewImage 元素 （Visual Studio 模板） |Microsoft 文档
+title: PreviewImage 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee25a764326572531e02eb91985aa6150c310715
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5265a2d5632bd014103b557a9f024d3b7d5c5062
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136801"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39638972"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素（Visual Studio 模板）
-指定作为文件名称，对于预览图像将出现在预览图像，**新项目**或**添加新项**对话框。  
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 （Visual Studio 模板）
+指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -47,7 +47,7 @@ ms.locfileid: "31136801"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将此模板分类并定义中的显示方式**新项目**或**添加新项**对话框。|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 此模板分类并定义如何显示在**新的项目**或**添加新项**对话框。|  
   
 ## <a name="text-value"></a>文本值  
  需要一个文本值。  
@@ -57,6 +57,6 @@ ms.locfileid: "31136801"
 ## <a name="remarks"></a>备注  
  `PreviewImage` 是可选元素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

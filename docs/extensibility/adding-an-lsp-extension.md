@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9539fdb1a349fe7fc7331e8d3f352506eac9d00b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2e4d3bcd261e36d54aa84b22b32e91b89922d2f2
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081678"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39499385"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -111,26 +111,6 @@ textDocument/rename | 是
 接下来通过导航到创建新的空白 VSIXProject**文件** > **新建项目** > **Visual C#**  >  **可扩展性** > **VSIX 项目**:
 
 ![创建 vsix 项目](media/lsp-vsix-project.png)
-
-对于预览版，VS LSP 将支持的 VSIX 格式 ([Microsoft.VisualStudio.LanguageServer.Client.Preview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview))。 此 VSIX 扩展的开发人员想要创建使用 LSP 语言服务器扩展插件必须创建一个依赖项。 因此，客户想要安装的语言服务器扩展插件**必须首先安装语言服务器协议客户端预览版 VSIX。**
-
-若要定义 VSIX 依赖项，打开在 VSIX 的 VSIX 清单设计器 (通过双击*source.extension.vsixmanifest*项目文件中的)，并导航到**依赖项**:
-
-![将引用添加到语言服务器协议客户端](media/lsp-reference-lsp-dependency.png)
-
-创建新的依赖项，如下所示：
-
-![定义客户端语言服务器协议的依赖关系](media/lsp-define-lsp-dependency.png)
-
-* **源**： 手动定义
-* **名称**： 语言服务器协议客户端预览版
-* **标识符**: Microsoft.VisualStudio.LanguageServer.Client.Preview
-* **版本范围**: [1.0,2.0)
-* **如何为依赖关系解析**： 由用户安装
-* **下载 URL**: [https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview](https://marketplace.visualstudio.com/items?itemName=vsext.LanguageServerClientPreview)
-
-> [!NOTE]
-> **下载 URL**以便安装你的扩展的用户了解如何安装必需的依赖项必须填写。
 
 ### <a name="language-server-and-runtime-installation"></a>语言服务器和运行时安装
 

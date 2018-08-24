@@ -1,5 +1,5 @@
 ---
-title: 将目录添加到新建项目对话框 |Microsoft 文档
+title: 将目录添加到新建项目对话框 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,21 +13,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ad992785fdf8ab5ffdd3faa7043e2a0ee5411b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5c8686a34f52c7dc2e6c96b602811d7e12a6a7e6
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31128066"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500782"
 ---
-# <a name="adding-directories-to-the-new-project-dialog-box"></a>将目录添加到新建项目对话框
-在创建新项目类型时，你还可以注册中的新目录**新项目**对话框以显示它们用于作为模板。 下面的代码示例说明如何注册一个新目录，也称为一个节点。 在示例中，注册 VSPackage CLSID_Package 所公开的模板。 因此，左侧**新项目**对话框添加的节点中，提供与由 Folder_Label_ResID 资源的名称。 从 VSPackage 附属 DLL 加载此资源。  
+# <a name="add-directories-to-the-new-project-dialog-box"></a>将目录添加到新建项目对话框
+在创建新的项目类型时，你还可以注册中的新目录**新的项目**对话框来显示它们用于作为模板。 下面的代码示例说明如何注册一个新目录，也称为节点。 在示例中，模板由 VSPackage *CLSID_Package*，注册。 因此，左侧和右侧的**新的项目**对话框提供了添加的节点，名称由*Folder_Label_ResID*资源。 从 VSPackage 附属 DLL 中加载此资源。  
   
- **文件夹**值代表该 Folder_Label_ResID 节点是否显示在其下的文件夹的 GUID。 在示例中，GUID 表示**其他项目**文件夹中的**项目类型**窗格**新项目**对话框。 如果**其他项目**值不存在，则标签将定位在顶级。  
+ **文件夹**值表示在其下的文件夹的 GUID *Folder_Label_ResID*节点都将显示。 在示例中，GUID 表示**其他项目**中的文件夹**项目类型**窗格**新项目**对话框。 如果**其他项目**值不存在，标签将置于最高级别。  
   
- TemplatesDir 值指定包含的项目模板的目录的完整路径。 这些文件可以是.vsz 文件或要克隆的典型的模板文件。  
+ `TemplatesDir`值指定包含的项目模板的目录的完整路径。 这些文件可以是 *.vsz*文件或要克隆的典型的模板文件。  
   
- 如果指定 TemplatesLocalizedSubDir，它必须命名 TemplatesDir 包含本地化的模板的子目录的字符串的资源 ID。 因为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加载字符串资源从附属 DLL 如果你有一个，每个附属 DLL 可以包含不同的子目录的名称。 SortPriority 值指定排序的优先级。  
+ 如果指定`TemplatesLocalizedSubDir`，它必须是命名的子目录的字符串的资源 ID`TemplatesDir`保存已本地化的模板。 因为[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加载字符串资源从附属 DLL 如果有帐户，每个附属 DLL 可以包含不同子目录的名称。 `SortPriority`值指定排序优先级。  
   
 ```  
 NoRemove NewProjectTemplates  
@@ -48,7 +48,7 @@ NoRemove NewProjectTemplates
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)   
- [将项添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
- [将目录添加到“添加新项”对话框](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)
+ [将项目添加到添加新项对话框](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
+ [将目录添加到添加新项对话框](../../extensibility/internals/adding-directories-to-the-add-new-item-dialog-box.md)

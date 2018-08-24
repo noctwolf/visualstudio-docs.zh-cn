@@ -1,5 +1,5 @@
 ---
-title: 演练： 将内容类型链接到的文件名称扩展 |Microsoft 文档
+title: 演练： 将内容类型链接到的文件扩展名 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,26 +13,26 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cca12f7c04b51bcf2b695e00d9305a7feb72ebc4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 54570ec03788f88f58f14249f200ed2028686c37
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31144890"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39566748"
 ---
-# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练： 将内容类型链接到文件扩展名
-你可以定义您自己的内容类型，并将文件扩展名为链接到它，通过使用编辑器 Managed Extensibility Framework (MEF) 扩展。 在某些情况下，文件扩展名已定义由语言服务;不过，将它用于 MEF 你仍必须将其链接到的内容类型。  
+# <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练： 将内容类型链接到的文件扩展名
+您可以定义您自己的内容类型和使用的编辑器 Managed Extensibility Framework (MEF) 扩展链接到它的文件扩展名。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要使用 MEF 中使用它，你必须仍将其链接到内容类型。  
   
 ## <a name="prerequisites"></a>系统必备  
- 从 Visual Studio 2015 开始，你并不安装 Visual Studio SDK 从下载中心。 它将包括作为 Visual Studio 安装程序中的可选功能。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+ 从 Visual Studio 2015 开始，不要从下载中心安装 Visual Studio SDK。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-mef-project"></a>创建 MEF 项目  
+## <a name="create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建 C# VSIX 项目。 (在**新项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`ContentTypeTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`ContentTypeTest`。  
   
-2.  在**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并设置**类型**字段**Microsoft.VisualStudio.MefComponent**、**源**字段**当前解决方案中的项目**，和**项目**字段到项目的名称。  
+2.  在中**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并将**类型**字段**Microsoft.VisualStudio.MefComponent**，则**源**字段**当前解决方案中的项目**，和**项目**字段的项目的名称。  
   
-## <a name="defining-the-content-type"></a>定义的内容类型  
+## <a name="define-the-content-type"></a>将内容类型定义  
   
 1.  添加一个类文件并将其命名`FileAndContentTypes`。  
   
@@ -44,7 +44,7 @@ ms.locfileid: "31144890"
   
     3.  Microsoft.VisualStudio.CoreUtility  
   
-3.  添加以下`using`指令。  
+3.  以下代码添加到`using`指令。  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -60,7 +60,7 @@ ms.locfileid: "31144890"
     {. . .}  
     ```  
   
-5.  在此类中，导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名为"隐藏"，并声明为"text"其基本定义。  
+5.  在此类中，导出<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>名为"隐藏"，并声明其基本定义为"text"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -72,9 +72,9 @@ ms.locfileid: "31144890"
     }  
     ```  
   
-## <a name="linking-a-file-name-extension-to-a-content-type"></a>将文件扩展名为链接到的内容类型  
+## <a name="link-a-file-name-extension-to-a-content-type"></a>链接到内容类型的文件扩展名  
   
--   若要将此内容类型映射到文件扩展名，将导出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有扩展名".hid"和内容类型"隐藏"。  
+-   若要将此内容类型映射到的文件扩展名，将导出<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>具有扩展名 *.hid*和内容类型"隐藏"。  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -91,18 +91,18 @@ ms.locfileid: "31144890"
     }  
     ```  
   
-## <a name="adding-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出  
+## <a name="add-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出  
   
-1.  创建的编辑器扩展。 例如，你可以使用中所述的边距标志符号扩展[演练： 创建边距标志符号](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  创建编辑器扩展。 例如，可以使用边距的标志符号扩展中所述[演练： 创建边距字形](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
   
 2.  添加在此过程中定义的类。  
   
-3.  导出扩展类时，添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"隐藏"到它的类型。  
+3.  在导出的扩展类时，将添加<xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>的"隐藏"到它的类型。  
   
     ```csharp  
     [Export]  
     [ContentType("hid")]  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

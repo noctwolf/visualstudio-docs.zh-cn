@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c90d3878713d59975998c42cf17bf0722423666
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 3b060261bec61859f33d99ec3f666e1285413592
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152514"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498559"
 ---
 # <a name="add-search-to-a-tool-window"></a>将搜索添加到工具窗口
 当创建或更新您的扩展插件中的工具窗口时，可以在 Visual Studio 中添加相同的搜索功能的其他位置出现。 此功能包括以下功能：  
@@ -33,7 +33,7 @@ ms.locfileid: "39152514"
   
 -   筛选搜索按特定字段或搜索目标的各个方面的功能。  
   
- 通过完成本演练，你将了解如何执行以下任务：  
+通过完成本演练，你将了解如何执行以下任务：  
   
 1.  创建 VSPackage 项目。  
   

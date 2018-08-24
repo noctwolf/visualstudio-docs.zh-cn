@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cf6283b909229e2e4dc4713814cf5e4f850688a3
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6f36fbd480f9fc14ba382b3a9a06c2821335870d
+ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232280"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39388145"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
@@ -35,13 +35,13 @@ ms.locfileid: "39232280"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步骤 4-1：通过模板创建项目
 
-1. 在 Visual Studio 中，转到“解决方案资源管理器”，右键单击本教程中之前创建的“LearningFlask”解决方案，并选择“添加” > “新项目”。 （或者，如果想要使用新的解决方案，请改为选择“文件” > “新建” > “项目”。）
+1. 在 Visual Studio 中，转到解决方案资源管理器，右键单击本教程中之前创建的“LearningFlask”解决方案，并选择“添加” > “新项目”。 （或者，如果想要使用新的解决方案，请改为选择“文件” > “新建” > “项目”。）
 
 1. 在“新建项目”对话框中，搜索并选择“Flask Web 项目”模板，调用项目“FlaskWeb”并选择“确定”。
 
-1. 因为模板再次包含 `requirements.txt` 文件，Visual Studio 会询问在何处安装这些依赖项。 选择“安装到虚拟环境”选项，然后在“添加虚拟环境”对话框中，选择“创建”以接受默认设置。
+1. 因为模板再次包含 requirements.txt 文件，Visual Studio 会询问在何处安装这些依赖项。 选择“安装到虚拟环境”选项，然后在“添加虚拟环境”对话框中，选择“创建”以接受默认设置。
 
-1. Visual Studio 完成虚拟环境的设置后，若要将“FlaskWeb”项目设置为 Visual Studio 解决方案的默认值，可以在“解决方案资源管理器”中右键单击该项目，然后选择“设为启动项目”。 启动项目（以粗体显示）会在启动调试器时运行。
+1. Visual Studio 完成虚拟环境的设置后，若要将“FlaskWeb”项目设置为 Visual Studio 解决方案的默认值，可以在解决方案资源管理器中右键单击该项目，然后选择“设为启动项目”。 启动项目（以粗体显示）会在启动调试器时运行。
 
     ![将 FlaskWeb 项目显示为启动项目的解决方案资源管理器](media/flask/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -59,20 +59,20 @@ ms.locfileid: "39232280"
 
 1. 可以在以下各节中使应用保持运行状态。
 
-    若要停止应用并[将更改提交到源代码管理](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，首先打开“团队资源管理器”中的“更改”页，右键单击虚拟环境的文件夹（可能是 `env`），然后选择“忽略这些本地项”。
+    若要停止应用并[将更改提交到源代码管理](learn-flask-visual-studio-step-02-create-app.md#commit-to-source-control)，首先打开团队资源管理器中的“更改”页，右键单击虚拟环境的文件夹（可能是 env），然后选择“忽略这些本地项”。
 
 ### <a name="examine-what-the-template-creates"></a>检查模板创建的内容
 
-“Flask Web 项目”模板创建以下结构。 这些内容与之前在步骤中创建的内容非常相似。 不同的是，“Flask Web 项目”模板在 `static` 文件夹中包含多个结构，因为它包含用于响应式设计的 jQuery 和 Bootstrap。 该模板还将添加“联系人”页。 总体而言，如果已按照本教程中的前几个步骤操作，你应当熟悉模板中的所有内容。
+“Flask Web 项目”模板创建以下结构。 这些内容与之前在步骤中创建的内容非常相似。 不同的是，“Flask Web 项目”模板在 static 文件夹中包含多个结构，因为它包含用于响应式设计的 jQuery 和 Bootstrap。 该模板还将添加“联系人”页。 总体而言，如果已按照本教程中的前几个步骤操作，你应当熟悉模板中的所有内容。
 
 - 项目根目录中的文件：
-  - `runserver.py`，即开发服务器中运行应用的脚本。
-  - `requirements.txt`，它包含 Flask 0.x 上的依赖项。
-- `FlaskWeb` 文件夹包含所有应用文件：
-  - `__init.py__` 将应用代码标记为 Python 模块、创建 Flask 对象并导入应用的视图。
-  - `views.py` 包含用于呈现页的代码。
-  - `static` 文件夹包含名为 `content`（CSS 文件）、`fonts`（字体文件）和 `scripts`（JavaScript 文件）的子文件夹。
-  - `templates` 文件夹包含 `layout.html` 基本模板，对于每个扩展 `layout.html` 的特定页面，还包含 `about.html`、`contact.html` 和 `index.html`。
+  - runserver.py，即开发服务器中运行应用的脚本。
+  - requirements.txt 包含了 Flask 0.x 上的依赖项。
+- FlaskWeb 文件夹包含所有应用文件：
+  - \_\_init.py\_\_ 将应用代码标记为 Python 模块，创建 Flask 对象并导入应用的视图。
+  - views.py 包含了用于呈现页面的代码。
+  - Static 文件夹包含名为 content（CSS 文件）、fonts（字体文件）和 scripts（JavaScript 文件）的子文件夹。
+  - templates 文件夹包含 layout.html 基本模板以及每个扩展 layout.html 的特定网页的 about.html、contact.html 和 index.html。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否在 Visual Studio 项目之间共享虚拟环境？
 
@@ -86,7 +86,7 @@ ms.locfileid: "39232280"
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 4-2：了解通过项目模板创建的视图和页面模板
 
-正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 `FlaskWeb/views.py` 中。 每个视图函数只需借助指向模板的路径，以及提供给模板的值的参数变量列表即可调用 `flask.render_template`。 例如，`about` 函数（它的修饰器提供 URL 路由）处理“关于”页：
+正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 FlaskWeb/views.py 文件夹中。 每个视图函数只需借助指向模板的路径，以及提供给模板的值的参数变量列表即可调用 `flask.render_template`。 例如，`about` 函数（它的修饰器提供 URL 路由）处理“关于”页：
 
 ```python
 @app.route('/about')
@@ -102,7 +102,7 @@ def about():
 
 `home` 和 `contact` 函数几乎完全相同，两者的装饰器类似，参数略有不同。
 
-模板位于应用的 `templates` 文件夹中。 基本模板 `layout.html` 的使用最为广泛。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 `layout.html` 的注释的摘录内容显示了这些特定区域：
+模板位于应用的 templates 文件夹中。 基本模板 layout.html 的使用最为广泛。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 layout.html 的注释的摘录内容显示了这些特定区域：
 
 ```html
 <!DOCTYPE html>
@@ -141,7 +141,7 @@ def about():
 </html>
 ```
 
-页面模板 `about.html`、`contact.html` 和 `index.html` 均扩展基本模板 `layout.html`。 `about.html` 最简单，它显示 `{% extends %}` 和 `{% block content %}` 标记：
+每个单页模板 about.html、contact.html、index.html 均扩展了基本模板 layout.html。 about.html 最简单，它显示 `{% extends %}` 和 `{% block content %}` 标记：
 
 ```html
 {% extends "app/layout.html" %}
@@ -156,22 +156,22 @@ def about():
 {% endblock %}
 ```
 
-`index.html` 和 `contact.html` 使用相同的结构，在“内容”块中提供更长的内容。
+index.html 和 contact.html 使用相同的结构，在“内容”块中提供更长的内容。
 
 ## <a name="the-flaskjade-web-project-template"></a>Flask/Jade Web 项目模板
 
 如本文开头所述，Visual Studio 提供“Flask/Jade Web 项目”模板，该模板创建的应用程序与“Flask Web 项目”生成的应用程序在视觉上相同。 主要区别在于它使用 Jade 模板引擎，该引擎是 Jinja 的扩展，Jinja 使用更简洁的语言来实现相同的概念。 具体来说，例如，Jade 使用关键字而不是括在 {% %} 分隔符中的标记，使你可以使用关键字引用 CSS 样式和 HTML 元素。
 
-要启用 Jade，项目模板首先在 `requirements.txt` 中包含 pyjade 包。 
+要启用 Jade，项目模板首先在 requirements.txt 中包含 pyjade 包。 
 
-该应用的 `__init__.py` 文件包含一行
+该应用的 \_\_init\_\_.py 文件包含一行
 
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
-在 `templates` 文件夹中，会看到 `.jade` 文件而不是 `.html` 模板，并且 `views.py` 中的视图在对 `flask.render_template` 的调用中引用这些文件。 否则，视图代码相同。
+在 templates 文件夹中，会看到 .jade 文件而不是 .html 模板，并且 views.py 中的视图在对 `flask.render_template` 的调用中引用这些文件。 否则，视图代码相同。
 
-打开其中一个 `.jade` 文件，可以看到模板更简洁的表达式。 例如，以下是由“Flask/Jade Web 项目”模板创建的 `templates/layout.jade` 的内容：
+打开其中一个 .jade 文件，可以看到模板更简洁的表达式。 例如，以下是由“Flask/Jade Web 项目”模板创建的 templates/layout.jade 的内容：
 
 ```jade
 doctype html
@@ -213,7 +213,7 @@ html
     block scripts
 ```
 
-以下是 `templates/about.jade` 的内容，显示了占位符的 `#{ <name>}` 用法：
+以下是 templates/about.jade 的内容，显示了占位符的 `#{ <name>}` 用法：
 
 ```jade
 extends layout

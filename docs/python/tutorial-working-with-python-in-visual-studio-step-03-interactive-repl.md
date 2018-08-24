@@ -11,22 +11,22 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a93c7f717587e5485c1eb7f0066245844069b35
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 00a66cb56fb3ada8f48018c644a37189b494cc98
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057231"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511751"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步骤 3：使用交互式 REPL 窗口
 
 **上一步：[编写和运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
-适用于 Python 的 Visual Studio *交互窗口*提供丰富的“读取–求值–打印-循环”(REPL) 体验，极大地缩短了常用的“编辑-生成-调试”周期。 该交互窗口提供 Python 命令行 REPL 体验的所有功能。 通过该窗口还可以非常轻松地与 Visual Studio 编辑器中的源文件交换代码，免去了使用命令行时的繁琐操作。
+适用于 Python 的 Visual Studio 交互窗口提供丰富的“读取–求值–打印-循环”(REPL) 体验，极大地缩短了常用的“编辑-生成-调试”周期。 该交互窗口提供 Python 命令行 REPL 体验的所有功能。 通过该窗口还可以非常轻松地与 Visual Studio 编辑器中的源文件交换代码，免去了使用命令行时的繁琐操作。
 
-1. 通过以下方式打开交互窗口：在解决方案资源管理器中右键单击项目的 Python 环境（比如先前图片中显示的“Python 3.6（32 位）”），选择“打开交互窗口”。 也可以从 Visual Studio 主菜单选择“视图”>“其他窗口”>“Python 交互窗口”。
+1. 通过以下方式打开交互窗口：在“解决方案资源管理器”中右键单击项目的 Python 环境（比如先前图片中显示的“Python 3.6（32 位）”），选择“打开交互窗口”。 也可以从 Visual Studio 主菜单选择“视图” > “其他窗口” > “Python 交互窗口”。
 
-1. 交互窗口在编辑器下方打开，其中显示标准的 `>>>` Python REPL 提示符。 可通过“环境”下拉列表选择要使用的特定解释器。 通常还会想要放大交互窗口，这一点可通过拖动两个窗口之间的分隔条实现：
+1. 交互窗口在编辑器下方打开，其中显示标准的 **>>>** Python REPL 提示符。 可通过“环境”下拉列表选择要使用的特定解释器。 通常还会想要放大交互窗口，这一点可通过拖动两个窗口之间的分隔条实现：
 
     ![Python 交互窗口以及通过拖动重设大小](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -37,13 +37,13 @@ ms.locfileid: "37057231"
 
     ![Python 交互窗口即时结果](media/vs-getting-started-python-12-interactive2.png)
 
-1. 开始编写多行语句（如函数定义）时，交互窗口将针对后续行显示 Python 的 `...` 提示符，它与命令行 REPL 不同，可以提供自动缩进：
+1. 开始编写多行语句（如函数定义）时，交互窗口将针对后续行显示 Python 的 ... 提示符，它与命令行 REPL 不同，可以提供自动缩进：
 
     ![含语句后续符的 Python 交互窗口](media/vs-getting-started-python-13-interactive3.png)
 
 1. 交互窗口提供所有已输入内容的完整历史记录，并通过多行历史记录项改进了命令行 REPL。 例如，可以轻松地将 `f` 函数的整个定义重新调用为单个单元，并轻松地将名称更改为 `make_double`，而不用逐行重新创建函数。
 
-1. Visual Studio 可从编辑器窗口向交互窗口发送多行代码。 此功能可用于维护源文件中的代码并将其选定部分轻松发送到交互窗口。 然后就可以在快速 REPL 环境中使用此类代码片段，而不必运行整个程序。 若要查看此功能，应先将 `PythonApplication1.py` 文件中的 `for` 循环替换为以下代码：
+1. Visual Studio 可从编辑器窗口向交互窗口发送多行代码。 此功能可用于维护源文件中的代码并将其选定部分轻松发送到交互窗口。 然后就可以在快速 REPL 环境中使用此类代码片段，而不必运行整个程序。 若要查看此功能，应先将 PythonApplication1.py 文件中的 `for` 循环替换为以下代码：
 
     ```python
     # Create a string with spaces proportional to a cosine of x in degrees
@@ -51,12 +51,12 @@ ms.locfileid: "37057231"
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. 仅选择 `.py` 文件中的 `import` 和 `from` 语句，单击右键，选择“发送到交互窗口”（或按 Ctrl+Enter）。 代码片段会立即粘贴至交互窗口并运行。 现在选择 `make_dot_string` 函数，重复相同的命令，即再次运行该代码片段。 由于代码定义了一个函数，因此可通过数次调用它来快速测试该函数：
+1. 仅选择 .py 文件中的 `import` 和 `from` 语句，单击鼠标右键，选择“发送到交互窗口”（或按 Ctrl++Enter）。 代码片段会立即粘贴至交互窗口并运行。 现在选择 `make_dot_string` 函数，重复相同的命令，即再次运行该代码片段。 由于代码定义了一个函数，因此可通过数次调用它来快速测试该函数：
 
     ![将代码发送到交互窗口并测试它](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
-    > 如果在*未*选择任何内容的情况下，在编辑器中使用 Ctrl+Enter，则会在交互窗口中运行当前代码行，并自动在下一行放置插入点。 利用此功能，通过反复按 Ctrl+Enter 即可便捷地单步调试代码，仅使用 Python 命令行则无法做到这一点。 它还允许在不运行调试器的情况下单步调试代码，而且不必从头开始启动程序。
+    > 如果在未选择任何内容的情况下，在编辑器中使用 Ctrl+Enter，则会在交互窗口中运行当前代码行，并自动在下一行放置插入点。 利用此功能，通过反复按 Ctrl+Enter 即可便捷地单步调试代码，仅使用 Python 命令行则无法做到这一点。 它还允许在不运行调试器的情况下单步调试代码，而且不必从头开始启动程序。
 
 1. 还可以将任何源中的多行代码复制并粘贴到交互窗口，比如下面的代码片段，使用 Python 命令行 REPL 则难以实现此操作。 粘贴后，交互窗口会运行该代码，就像直接在窗口中键入的一样：
 
@@ -88,7 +88,7 @@ ms.locfileid: "37057231"
 
     若想复制交互窗口的准确内容，包括提示符和输出，只需使用标准的“复制”命令。
 
-1. 刚刚已经了解如何使用交互窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试”>“开始执行(不调试)”）再次运行代码，则会看到想要的准确结果。
+1. 刚刚已经了解如何使用交互窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试” > “启动而不调试”**Start without Debugging**）再次运行代码，则会看到想要的准确结果。
 
 ## <a name="next-step"></a>下一步
 

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8831dd8af13d111db833fe46d685e9a6e3af767
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177313"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381154"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -73,11 +73,11 @@ ms.locfileid: "39177313"
 
      如果你刚创建了编码的 UI 项目，则自动添加第一个 CUIT 文件。 要添加另一个测试文件，请在解决方案资源管理器中打开编码的 UI 测试项目上的快捷菜单，然后选择“添加” > “编码的 UI 测试”。
 
-     在“为编码的 UI 测试生成代码”对话框中，选择“录制操作、编辑 UI 映射或添加断言”。
+     在“为编码的 UI 测试生成代码”对话框中，选择“录制操作” > “编辑 UI 映射”或“添加断言”。
 
      ![“为编码的 UI 测试生成代码”对话框](media/generate-code-for-coded-ui-test.png)
 
-     出现编码的 UI 测试生成器。
+     出现“编码的 UI 测试生成器”。
 
      ![编码的 UI 测试生成器](../test/media/codedui_testbuilder.png)
 
@@ -96,7 +96,7 @@ ms.locfileid: "39177313"
 
 4. 验证 UI 字段（如文本框）中的值。
 
-     在编码的 UI 测试生成器中，选择“添加断言”，然后在你的运行的应用程序中选择 UI 控件。 在显示的属性列表中，选择属性，例如，在文本框中的“文本”。 在快捷菜单上，选择“添加断言”。 在对话框中，选择比较运算符、比较值以及错误消息。
+     在“编码的 UI 测试生成器”中，选择“添加断言”，然后在运行的应用程序中选择 UI 控件。 在显示的属性列表中，选择属性，例如，在文本框中的“文本”。 在快捷菜单上，选择“添加断言”。 在对话框中，选择比较运算符、比较值以及错误消息。
 
      关闭断言窗口并且选择“生成代码”。
 
@@ -132,7 +132,7 @@ ms.locfileid: "39177313"
 
 7. 编辑测试操作和断言的详细信息。
 
-     打开 UIMap.uitest。 该文件在编码的 UI 测试编辑器中打开，其中你可以编辑你所录制的操作的任何序列，你还可以编辑断言。
+     打开 UIMap.uitest。 该文件在“编码的 UI 测试编辑器”中打开，其中可编辑所录制的操作的任何序列，还可编辑断言。
 
      ![编码的 UI 测试编辑器](../test/media/cuit_editor_edit.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "39177313"
 
 使用“编码的 UI 测试生成器”，可以向测试的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 添加用户界面 (UI) 控件，也可为使用 UI 控件断言的验证方法生成代码。
 
-若要为 UI 控件生成断言，请选择编码的 UI 测试生成器中的“添加断言”工具，并且将其拖放到受测应用程序上的控件，因为你希望验证该应用程序是否正确。 在框确定控件的轮廓时，释放鼠标。 将立即在 `UIMap.Designer.cs` 文件中创建该控件类代码。
+要为 UI 控件生成断言，请选择“编码的 UI 测试生成器”中的“添加断言”工具，并且将其拖放到想要验证是否正确的受测应用程序上的控件。 在框确定控件的轮廓时，释放鼠标。 此时将立即在 UIMap.Designer.cs 文件中创建该控件类代码。
 
 ![编码的 UI 测试目标元素](../test/media/codedui_1.png)
 
@@ -196,13 +196,13 @@ ms.locfileid: "39177313"
 
      你可以编辑此文件以更改步骤和断言的顺序，或创建新测试方法。 若要添加更多代码，请将光标放在测试方法上并且在快捷菜单上选择“为编码的 UI 测试生成代码”。
 
-- 将名为 `AssertForAddTwoNumbers` 的方法添加到你的 UI 映射 (UIMap.uitest)。 此文件在编码的 UI 测试编辑器中打开，其中你可以编辑断言。
+- 将名为 `AssertForAddTwoNumbers` 的方法添加到你的 UI 映射 (UIMap.uitest)。 此文件在可编辑断言的“编码的 UI 测试编辑器”中打开。
 
      ![使用编码的 UI 测试编辑器编辑断言](../test/media/cuit_editor_assert.png)
 
      有关详细信息，请参阅[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
-     你还可以在 UIMap.Designer.cs 中查看断言方法的生成代码。 但是，不应编辑此文件。 如果你想要制作代码的改编版，则将方法复制到另一个文件，如 UIMap.cs，重命名方法，并在此处对它们进行编辑。
+     还可在 UIMap.Designer.cs 中查看断言方法的生成代码。 但是，不应编辑此文件。 如果想要制作代码的改编版，将方法复制到另一个文件（如 UIMap.cs），重命名方法，并在此处对它们进行编辑。
 
     ```csharp
     public void AssertForAddTwoNumbers()
@@ -213,28 +213,25 @@ ms.locfileid: "39177313"
 
 ### <a name="select-a-hidden-control-using-the-keyboard"></a>使用键盘选择隐藏控件
 
-如果尝试从编码的 UI 测试生成器选择“添加断言”工具时，想要选择的控件失去焦点并且消失：
+如果尝试从“编码的 UI 测试生成器”选择“添加断言”工具时，想要选择的控件失去焦点并且消失：
 
-有时，添加控件并验证它们的属性时，可能必须使用键盘。 例如，当你尝试录制使用上下文菜单控件的编码的 UI 测试时，如果你尝试从编码的 UI 测试生成器选择“添加断言”工具，则在该控件中的菜单项列表会失去焦点并消失。 下图说明了这一点，如果尝试使用“添加断言”工具选择上下文菜单，Internet Explorer 中的上下文菜单会失去焦点并且消失。
+有时，添加控件并验证它们的属性时，可能必须使用键盘。 例如，尝试录制使用上下文菜单控件的编码的 UI 测试时，如果尝试从“编码的 UI 测试生成器”选择“添加断言”工具，则在该控件中的菜单项列表会失去焦点并消失。 下图说明了这一点，如果尝试使用“添加断言”工具选择上下文菜单，Internet Explorer 中的上下文菜单会失去焦点并且消失。
 
 ![CodedUITest&#95;SelectControlKeyboard](../test/media/codeduitest_selectcontrolkeyboard.png)
 
-若要使用键盘选择 UI 控件，请使用鼠标悬停在该控件上。 然后，同时按住“Ctrl”键和“I”键。 释放这些键。 此控件由编码的 UT 测试生成器录制。
-
-> [!WARNING]
-> 如果你使用 Microsoft Lync，必须在启动编码的 UI 测试生成器前关闭 Lync。 Microsoft Lync 会影响“Ctrl+I”键盘快捷方式。
+若要使用键盘选择 UI 控件，请使用鼠标悬停在该控件上。 然后，同时按住“Ctrl”键和“I”键。 释放这些键。 此控件由“编码的 UI 测试生成器”录制。
 
 #### <a name="manually-record-mouse-hovers"></a>手动录制鼠标悬停
 
 如果无法录制控件上的鼠标悬停：
 
-某些情况下，编码的 UI 测试中使用的特定控件可能需要用户使用键盘来手动记录鼠标悬停事件。 例如，当你测试 Windows 窗体或 Windows Presentation Foundation (WPF) 应用程序时，可能是自定义代码。 或者，可能是针对悬停控件所定义的特殊行为，如当用户在树节点上悬停时，树节点会展开。 若要测试类似这样的情况，你必须通过按下预定义的键盘按键，手动通知编码的 UI 测试生成器你正在控件上悬停。
+某些情况下，编码的 UI 测试中使用的特定控件可能需要用户使用键盘来手动记录鼠标悬停事件。 例如，当你测试 Windows 窗体或 Windows Presentation Foundation (WPF) 应用程序时，可能是自定义代码。 或者，可能是针对悬停控件所定义的特殊行为，如当用户在树节点上悬停时，树节点会展开。 要测试类似这样的情况，必须通过按下预定义的键盘按键，手动通知“编码的 UI 测试生成器”正在控件上悬停。
 
-当你执行编码的 UI 测试时，在该控件上悬停。 当你在键盘上按住 Shift 和 R 键时，同时按住 Ctrl 键。 释放这些键。 鼠标悬停事件由编码的 UT 测试生成器录制。
+当你执行编码的 UI 测试时，在该控件上悬停。 在键盘上按住 Shift 和 R 键时，同时按住 Ctrl 键。 释放这些键。 鼠标悬停事件由“编码的 UI 测试生成器”录制。
 
 ![CodedUI&#95;Hover](../test/media/codedui_hover.png)
 
-在你生成测试方法后，会将类似于以下示例的代码添加到 UIMap.Desinger.cs 文件：
+生成测试方法后，类似于以下示例的代码将添加到 UIMap.Designer.cs 文件：
 
 ```csharp
 // Mouse hover '1' label at (87, 9)
@@ -284,13 +281,13 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 在创建编码的 UI 测试之后，你可以通过使用 Visual Studio 中的以下任何工具对其进行编辑：
 
-- 使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证它们的属性](#validate-the-properties-of-ui-controls)部分。
+- 使用编码的 UI 测试生成器来将其他控件和验证添加到你的测试。 请参阅本主题中的[添加控件并验证其属性](#validate-the-properties-of-ui-controls)部分。
 
 - 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可查找、查看和编辑测试方法。 也可以在 UI 控件映射中编辑 UI 操作及其关联的控件。 有关详细信息，请参阅[使用编码的 UI 测试编辑器编辑编码的 UI 测试](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)。
 
 - **代码编辑器：**
 
-    - 按照本主题中的[编码 UI 控件操作和属性](#coded-ui-control-actions-and-properties)部分的描述，为测试中的控件手动添加代码。
+    - 按照本主题中的[编码的 UI 控件操作和属性](#coded-ui-control-actions-and-properties)部分的描述，为测试中的控件手动添加代码。
 
     - 在创建编码的 UI 测试以后，你可以将其修改为数据驱动。 有关详细信息，请参阅[创建数据驱动的编码的 UI 测试](../test/creating-a-data-driven-coded-ui-test.md)。
 
@@ -304,7 +301,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
        - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
 
-       - [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+       - [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
        - [支持编码的 UI 测试和操作录制的配置和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
@@ -333,9 +330,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - UIMap.uitest 中的方法。
 
-     此方法包括你所录制的方法的详细信息或你验证的值。 通过打开 UIMap.uitest，你可以编辑此代码。 它在专用编辑器中打开，你可以从中删除或重构录制的操作。
+     此方法包括你所录制的方法的详细信息或你验证的值。 打开 UIMap.uitest，可编辑此代码。 它在专用编辑器中打开，你可以从中删除或重构录制的操作。
 
-     你还可以在 UIMap.Designer.cs 中查看生成的方法。 此方法执行运行测试时录制的操作。
+     还可在 UIMap.Designer.cs 中查看生成的方法。 此方法执行运行测试时录制的操作。
 
     ```csharp
     // File: UIMap.Designer.cs
@@ -375,7 +372,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
     可以添加多个编码的 UI 测试以及多个 UI 映射对象和文件以便于测试大型应用程序。 有关详细信息，请参阅[使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)。
 
-有关生成的代码的更多信息，请参阅[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
+有关生成的代码的详细信息，请参阅[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
 
 ## <a name="coded-ui-control-actions-and-properties"></a>编码的 UI 控件操作和属性
 
@@ -464,4 +461,4 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 - [创建编码的 UI 测试来测试 UWP 应用](test-uwp-app-with-coded-ui-test.md)
 - [编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)
 - [编码的 UI 测试的最佳做法](../test/best-practices-for-coded-ui-tests.md)
-- [使用多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)
+- [通过多个 UI 映射测试大型应用程序](../test/testing-a-large-application-with-multiple-ui-maps.md)

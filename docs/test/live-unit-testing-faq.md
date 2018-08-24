@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: c49c23bc9ca77721ba6c39fb6c94a0994a70e7d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3fbe25acc776e6407a5f10bab78ff7affaef8d78
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31979095"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586495"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常见问题解答
 
@@ -75,15 +75,15 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 - 如果在项目中使用基于 MSTest 的测试，请确保删除对 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的引用，并添加对最新 MSTest NuGet 包 `MSTest.TestAdapter`（要求最低版本为 1.1.11）和 `MSTest.TestFramework`（要求最低版本为 1.1.11）的引用。 有关详细信息，请参阅[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 一文的“支持的测试框架”部分。
 
-- 解决方案中至少一个项目应有针对 xUnit、NUnit 或 MSTest 测试框架的 NuGet 引用或直接引用。 此项目还应引用相应的 Visual Studio 测试适配器 NuGet 包。 还可以通过 `.runsettings` 文件引用 Visual Studio 测试适配器。 `.runsettings` 文件必须包含如下示例所示的条目：
+- 解决方案中至少一个项目应有针对 xUnit、NUnit 或 MSTest 测试框架的 NuGet 引用或直接引用。 此项目还应引用相应的 Visual Studio 测试适配器 NuGet 包。 还可以通过 .runsettings 文件引用 Visual Studio 测试适配器。 .runsettings 文件必须包含如下示例所示的条目：
 
-   ```xml
-    <RunSettings>
-       <RunConfiguration>
+```xml
+<RunSettings>
+    <RunConfiguration>
           <TestAdaptersPaths>path-to-your-test-adapter</TestAdaptersPaths>
-       </RunConfiguration>
-    </RunSettings>
-   ```
+     </RunConfiguration>
+</RunSettings>
+```
 
 ## <a name="why-does-live-unit-testing-show-incorrect-coverage-after-you-upgrade-the-test-adapter-referenced-in-your-visual-studio-projects-to-the-supported-version"></a>将 Visual Studio 项目中引用的测试适配器升级到支持的版本后，为什么 Live Unit Testing 显示错误的覆盖范围？
 
@@ -101,7 +101,7 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 **答：**
 
-如果解决方案需要为检测 (Live Unit Testing) 而生成的自定义步骤，而非检测的“常规”生成不需要，可向项目或目标文件添加代码，检查 `BuildingForLiveUnitTesting` 属性并执行自定义生成前/后步骤。 还可以选择删除特定的生成步骤（如发布或生成包），或将生成步骤（如复制先决条件）添加到基于此项目属性的 Live Unit Testing 生成。 这不会以任何方式更改常规生成，只会影响 Live Unit Testing 生成。
+如果解决方案需要为检测 (Live Unit Testing) 而生成的自定义步骤，但非检测的“常规”生成不需要，可向项目或 .targets 文件添加代码，检查 `BuildingForLiveUnitTesting` 属性并执行自定义生成前/后步骤。 还可以选择删除特定的生成步骤（如发布或生成包），或将生成步骤（如复制先决条件）添加到基于此项目属性的 Live Unit Testing 生成。 基于此属性自定义生成不会以任何方式改变常规生成，只会影响 Live Unit Testing 生成。
 
 例如，常规生成过程中可能有生成 NuGet 包的目标。 可能不需要每次编辑后都生成 NuGet 包。 因此，可以通过执行以下操作在 Live Unit Testing 生成中禁用该目标：  
 
@@ -117,7 +117,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 **答：**
 
-如果解决方案的生成过程无条件地替代 `<OutputPath>` 或 `<OutDir>`，使其不是 `<BaseOutputPath>` 的子目录，则可能会出现这种情况。 在这种情况下，Live Unit Testing 不会工作，因为它也会替代这些内容以确保将生成项目拖放到 `<BaseOutputPath>` 下的文件夹。 如果在一个常规生成中，必须替代要放入生成项目的位置，请基于 `<BaseOutputPath>` 有条件地替代 `<OutputPath>`。
+如果解决方案的生成过程无条件地替代 `<OutputPath>` 或 `<OutDir>`，使其不是 `<BaseOutputPath>` 的子目录，则可能会出现此错误。 在这种情况下，Live Unit Testing 不会工作，因为它也会替代这些值以确保将生成项目拖放到 `<BaseOutputPath>` 下的文件夹。 如果在一个常规生成中，必须替代要放入生成项目的位置，请基于 `<BaseOutputPath>` 有条件地替代 `<OutputPath>`。
 
 例如，如果生成过程如下所示替代 `<OutputPath>`：
 
@@ -129,7 +129,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 </Project>
 ```
 
-然后使用以下代码替换它：
+然后可使用以下 XML 替换它：
 
 ```xml 
 <Project>
@@ -139,14 +139,14 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
   </PropertyGroup>
 </Project>
 ```
- 
+
 这可确保 `<OutputPath>` 位于 `<BaseOutputPath>` 文件夹中。
 
 请勿直接在生成过程中替代 `<OutDir>`；请转而替代 `<OutputPath>` 以将生成项目放置到特定位置。
- 
-## <a name="setting-the-location-of-live-unit-testing-build-artifacts"></a>设置 Live Unit Testing 生成项目的位置
 
-**我想要将 Live Unit Testing 生成的项目转到特定位置，而不是 `.vs` 文件夹下的默认位置。可如何进行更改？**
+## <a name="set-the-location-of-live-unit-testing-build-artifacts"></a>设置 Live Unit Testing 生成项目的位置
+
+**我想要将 Live Unit Testing 生成的项目转到特定位置，而不是 .vs 文件夹下的默认位置。可如何进行更改？**
 
 **答：**
 
@@ -164,7 +164,7 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 - Live Unit Testing 按顺序运行每个测试程序集中的测试，但如果从测试资源管理器窗口运行多个测试，并选择“并行运行测试”按钮，它们将并行运行。
 
-- Live Unit Testing 中测试的发现和执行使用 `TestPlatform` 版本 2，而测试资源管理器窗口使用版本 1。 但在大多数情况下，应该不会注意到有差异。 
+- Live Unit Testing 中测试的发现和执行使用 `TestPlatform` 版本 2，而测试资源管理器窗口使用版本 1。 但在大多数情况下，将不会注意到有差异。
 
 - 测试资源管理器当前默认以单线程单元 (STA) 运行测试，而 Live Unit Testing 以多线程单元 (MTA) 运行测试。 若要在 Live Unit Testing 中以 STA 实运行 MSTest 测试，请 `MSTest.STAExtensions 1.0.3-beta` NuGet 包中可找到的 `<STATestMethod>` 或 `<STATestClass>` 属性修饰测试方法或所包含的类。 对于 NUnit，请使用 `<RequiresThread(ApartmentState.STA)>` 属性修饰测试方法，对于 xUnit，则使用 `<STAFact>` 属性。
 
@@ -172,11 +172,11 @@ Live Unit Testing 尝试生成解决方案时为什么出现了以下错误：�
 
 **答：**
 
-请参阅[使用 Visual Studio 2017 Enterprise Edition 中的实时单元测试](live-unit-testing.md#including-and-excluding-test-projects-and-test-methods)一文的“包括和排除测试项目和测试方法”部分，了解特定于用户的设置。 想要针对特定的编辑会话运行一组特定的测试或者保留个人偏好设置时，这非常有用。
+请参阅[在 Visual Studio 2017 Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md#include-and-exclude-test-projects-and-test-methods) 一文的“包括和排除测试项目和测试方法”部分，了解特定于用户的设置。 想要针对特定的编辑会话运行一组特定的测试或者保留个人偏好设置时，包括和排除测试非常有用。
  
 对于特定于解决方案的设置，可采用编程方式应用 <xref:System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute?displayProperty=fullName> 属性，避免由 Live Unit Testing 来检测方法、属性、类或结构。 此外，还可以在项目文件中将 `<ExcludeFromCodeCoverage>` 属性设置为 `true`，排除整个项目进行检测。 Live Unit Testing 仍将运行未经检测的测试，但其范围将不进行可视化。
 
-还可以检查是否在当前应用程序域中加载 `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` 并禁用基于其的测试。 例如，可使用 xUnit 执行诸如以下所示的操作：
+还可检查是否在当前应用程序域中加载 `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` 并禁用基于其的测试。 例如，可使用 xUnit 执行诸如以下所示的操作：
 
 ```csharp
 [ExcludeFromCodeCoverage]
@@ -217,11 +217,11 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 **答：**
 
-如果解决方案的生成过程生成的源代码属于解决方案本身，并且生成目标文件没有指定的相应输入和输出，则可能会发生这种情况。 应给定目标一个输入和输出列表，使 MSBuild 可执行适当的最新检查，并确定是否需要新的生成。
+如果解决方案的生成过程生成的源代码属于解决方案本身，并且生成目标文件没有指定相应的输入和输出，即使没有进行编辑，也可生成解决方案。 应给定目标一个输入和输出列表，使 MSBuild 可执行适当的最新检查，并确定是否需要新的生成。
 
-Live Unit Testing 只要检测到源文件已更改，就会启动一个生成。 由于解决方案的生成过程生成源文件，Live Unit Testing 将进入一个无限的生成循环。 但如果 Live Unit Testing 启动第二次生成时（从上一生成中检测到新生成的源代码文件后）检查了目标的输入和输出，它将中断该循环，因为输入和输出检查将表明所有内容都为最新。  
+Live Unit Testing 只要检测到源文件已更改，就会启动一个生成。 由于解决方案的生成过程生成源文件，Live Unit Testing 将进入一个无限的生成循环。 但如果 Live Unit Testing 启动第二次生成时（从上一生成中检测到新生成的源代码文件后）检查了目标的输入和输出，它将中断该生成循环，因为输入和输出检查将表明所有内容都为最新。  
 
-## <a name="how-does-live-unit-testing-work-with-the-lightweight-solution-load-feature"></a>Live Unit Testing 如何与轻型解决方案加载功能一起工作？
+## <a name="how-does-live-unit-testing-work-with-the-lightweight-solution-load-feature"></a>Live Unit Testing 如何与轻型解决方案加载功能配合使用？
 
 **答：**
 
@@ -230,7 +230,7 @@ Live Unit Testing 暂不能很好地支持轻型解决方案加载功能。 仅�
 > [!NOTE]
 > Visual Studio 2017 版本 15.5 及更高版本中不再提供轻型解决方案加载。 在 Visual Studio 2017 版本 15.5 及更高版本中，包含托管代码的大型解决方案的加载速度比以前快许多，即使在不具备轻型解决方案加载功能的情况下亦如此。
 
-## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>为什么 Live Unit Testing 不会从由测试创建的新进程中捕获覆盖率？
+## <a name="why-doesnt-live-unit-testing-capture-coverage-from-a-new-process-created-by-a-test"></a>为什么 Live Unit Testing 不会从由测试创建的新进程中捕获覆盖率？
 
 **答：**
 
@@ -246,11 +246,11 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 ## <a name="live-unit-testing-and-editor-icons"></a>Live Unit Testing 和编辑器图标
 
-**为什么即使 Live Unit Testing 似乎正基于输出窗口中的消息运行测试，但仍在编辑器中看不到任何图标？**
+**为什么即使 Live Unit Testing 似乎正基于“输出”窗口中的消息运行测试，但仍在编辑器中看不到任何图标？**
 
 **答：**
 
-如果 Live Unit Testing 正在操作的程序集出于任何原因未进行检测，将发生这种情况。 例如，Live Unit Testing 与设置 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的项目不兼容。 在这种情况下，需要将生成过程更新为，删除此设置或将设置更改为 `true`，以便 Live Unit Testing 可以正常运行。 
+如果 Live Unit Testing 正在操作的程序集出于任何原因未进行检测，则可能无法在编辑器中看到图标。 例如，Live Unit Testing 与设置 `<UseHostCompilerIfAvailable>false</UseHostCompilerIfAvailable>` 的项目不兼容。 在这种情况下，需要将生成过程更新为，删除此设置或将设置更改为 `true`，以便 Live Unit Testing 可以正常运行。 
 
 ## <a name="how-do-i-collect-more-detailed-logs-to-file-bug-reports"></a>如何收集更详细的日志到文件 Bug 报告？
 
@@ -258,7 +258,7 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 可以执行以下几个操作来收集更详细的日志：
 
-- 转到“工具”、“选项”、“Live Unit Testing”，将日志记录选项更改为“详细”。 这会使显示在输出窗口中的日志更详细。
+- 转到“工具” > “选项” > “Live Unit Testing”，将日志记录选项更改为“详细”。 详细日志记录会使“输出”窗口显示更详细的日志。
 
 - 将 `LiveUnitTesting_BuildLog` 用户环境变量设置为想要用于捕获 MSBuild 日志的文件名称。 然后就可从该文件中检索 Live Unit Testing 生成中详细的 MSBuild 日志消息。
 
@@ -268,5 +268,4 @@ Visual Studio 2017 版本 15.3 已修复此问题，再也不会遇到了。 请
 
 ## <a name="see-also"></a>请参阅
 
-[实时单元测试](live-unit-testing.md)
-
+- [实时单元测试](live-unit-testing.md)

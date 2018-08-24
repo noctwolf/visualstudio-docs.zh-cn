@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3d1204e387a10bf7b5512ca0fa6fc4528901a52f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 639e6dc4fb2d62258f94ca09d9f9155396748379
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176208"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382060"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 
-通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，可以修改记录的 Web 性能测试。 应在你在 Web 性能测试记录器工具栏中选择“停止”之后，但在“Web 性能测试编辑器”中保存和显示测试之前执行此修改。
+通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，可以修改记录的 Web 性能测试。 应在“Web 性能测试记录器”工具栏中选择“停止”之后，但在“Web 性能测试编辑器”中保存和显示测试之前执行此修改。
 
-记录器插件使你可对动态参数执行自己的自定义关联。 通过内置的关联功能，Web 性能测试会在测试完成时或在使用“Web 性能测试编辑器”工具栏上的“将动态参数提升为 Web 测试参数”时，在 Web 记录中检测动态参数。 但是，内置的检测功能并不是总能找到所有动态参数。 例如，该功能找不到通常会在 5 到 30 分钟之间更改其值的会话 ID。 因此，必须手动执行关联过程。
+记录器插件使你可对动态参数执行自己的自定义关联。 通过内置的关联功能，Web 性能测试会在测试完成时或在使用 Web 性能测试编辑器工具栏上的“将动态参数提升为 Web 测试参数”时，在 Web 记录中检测动态参数。 但是，内置的检测功能并不是总能找到所有动态参数。 例如，该功能找不到通常会在 5 到 30 分钟之间更改其值的会话 ID。 因此，必须手动执行关联过程。
 
 通过 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>，您可以为自己的自定义插件编写代码。 在“Web 性能测试编辑器”中保存和显示 Web 性能测试之前，此插件可以多种方式执行关联或修改该 Web 性能测试。 因此，如果您确定必须为许多记录关联特定动态变量，则可自动执行此过程。
 
@@ -29,15 +29,15 @@ ms.locfileid: "39176208"
 
 下面的过程介绍如何为记录器插件创建基本代码、部署插件和执行插件。 这些过程之后的示例代码演示如何使用 Visual C# 创建自定义动态参数关联记录器插件。
 
-## <a name="creating-a-recorder-plug-in"></a>创建记录器插件
+## <a name="create-a-recorder-plug-in"></a>创建记录器插件
 
 ### <a name="to-create-a-recorder-plug-in"></a>创建记录器插件
 
 1.  打开包含 Web 性能和负载测试项目以及要为之创建记录器插件的 Web 性能测试的解决方案。
 
-2.  在“解决方案资源管理器”中，右键单击解决方案，选择“添加”，然后选择“新建项目”。
+2.  在解决方案资源管理器中，右键单击解决方案，选择“添加”，然后选择“新建项目”。
 
-     随即显示“添加新项目”对话框。
+     随即出现“添加新项目”对话框。
 
 3.  在“已安装的模板”下，选择“Visual C#”。
 
@@ -47,7 +47,7 @@ ms.locfileid: "39176208"
 
      类库将添加到解决方案资源管理器中，并且将在代码编辑器中打开新类。
 
-6.  在“解决方案资源管理器”的新类库项目文件夹中，右键单击“引用”文件夹，然后选择“添加引用”。
+6.  在解决方案资源管理器的新类库项目文件夹中，右键单击“引用”文件夹，然后选择“添加引用”。
 
     > [!TIP]
     > 新类库项目文件夹的一个示例为“RecorderPlugins”。
@@ -58,7 +58,7 @@ ms.locfileid: "39176208"
 
 8.  向下滚动并选择“Microsoft.VisualStudio.QualityTools.WebTestFramework”，然后选择“确定”。
 
-     将“Microsoft.VisualStudio.QualityTools.WebTestFramework”添加到“解决方案资源管理器”的“引用”文件夹中。
+     将“Microsoft.VisualStudio.QualityTools.WebTestFramework”添加到解决方案资源管理器的“引用”文件夹中。
 
 9. 为记录器插件编写代码。 首先，创建一个从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> 派生的新公共类。
 
@@ -81,7 +81,7 @@ ms.locfileid: "39176208"
 
 11. 根据希望记录器插件在 Web 记录发生后执行的操作来添加更多代码。 例如，可以添加代码来处理自定义关联，如以下示例所示。 还可以为将注释转换为事务或向 Web 性能测试添加验证规则等操作创建记录器插件。
 
-12. 在“生成”菜单上，选择“生成”\<“类库项目名称>”。
+12. 在“生成”菜单上，选择“生成 \<类库项目名称>”。
 
 13. 接下来，必须部署记录器插件以使其向 Visual Studio 注册。
 

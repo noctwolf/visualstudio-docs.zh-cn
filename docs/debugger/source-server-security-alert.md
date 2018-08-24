@@ -1,5 +1,5 @@
 ---
-title: 源服务器安全警报 |Microsoft 文档
+title: 源服务器安全警报 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb2233ffcc041a9d756ff51ac9fd3f1b9dc669e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474120"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511168"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 使用源服务器时，只能使用来自已知和受信任位置的符号文件。  
@@ -35,4 +35,4 @@ ms.locfileid: "31474120"
 ## <a name="see-also"></a>请参阅  
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
  [调试器安全](../debugger/debugger-security.md)   
- [源服务器](http://msdn.microsoft.com/library/windows/desktop/ms680641.aspx)
+ [源服务器](/windows/desktop/Debug/source-server-and-source-indexing)

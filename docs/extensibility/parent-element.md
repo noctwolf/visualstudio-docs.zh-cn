@@ -1,5 +1,5 @@
 ---
-title: 父元素 |Microsoft 文档
+title: 父元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 795654925a92f3e9ac0718e070e85c0f4f7f21c7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a66f9fff773fb9a9542de13ceb97ad8732c319b
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137100"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39635851"
 ---
 # <a name="parent-element"></a>父元素
-父级的按钮或组合框只能是一个组。 菜单或组的父级可以是任何其他菜单或组。 在[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中是可选的。 如果省略此元素的父`Group_Undefined:0`将隐式。  
+按钮或组合框的父节点可能只是一个组。 菜单或组的父节点可能是任何其他菜单或组。 在中[CommandPlacement 元素](../extensibility/commandplacement-element.md)，此元素是必需的; 所有其他实例中为可选属性。 如果省略此元素，则父级的`Group_Undefined:0`将隐式。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Parent guid="guidMyCommandSet" id="MyParentGroupOrMenu" />  
 ```  
   
@@ -37,7 +37,7 @@ ms.locfileid: "31137100"
   
 |特性|描述|  
 |---------------|-----------------|  
-|guid|必须的。 GUID GUID/ID 的命令标识符。|  
+|guid|必须的。 GUID 的 GUID/ID 命令标识符。|  
 |id|必须的。 ID 的 GUID/ID 命令标识符。|  
   
 ### <a name="child-elements"></a>子元素  
@@ -47,10 +47,10 @@ ms.locfileid: "31137100"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 提供的命令对集成的开发环境 (IDE) 的所有元素。 例如，菜单项、 菜单、 工具栏和组合框。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的 VSPackage 提供对集成的开发环境 (IDE) 的所有元素。 例如，菜单项、 菜单、 工具栏和组合框。|  
 |[Buttons 元素](../extensibility/buttons-element.md)|组[Button 元素](../extensibility/button-element.md)元素。|  
 |[Menus 元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|  
-|[Groups 元素](../extensibility/groups-element.md)|包含定义的 VSPackage 命令组的条目。|  
+|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

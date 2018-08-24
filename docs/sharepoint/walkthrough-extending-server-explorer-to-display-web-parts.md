@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b0bbea76c3c63cf562203f9a622acb2a54804bde
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117831"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42634733"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练： 扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。  
@@ -48,7 +48,7 @@ ms.locfileid: "37117831"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Windows、 SharePoint 和 Visual Studio 版本。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的 Windows、 SharePoint 和 Visual Studio 版本。  
   
 -   Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   

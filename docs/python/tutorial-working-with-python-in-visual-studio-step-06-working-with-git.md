@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dc9128a28ea0fd007a97b20331f15227b86d46f7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056490"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511322"
 ---
 # <a name="step-6-work-with-git"></a>步骤 6：使用 Git
 
-**上一步：[安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)**
+上一步：[安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team Services 等服务上的远程存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
 
@@ -32,7 +32,7 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team 
 
     ![将鼠标悬停在 Visual Studio 窗口中的 Git 控件上时显示附加信息](media/working-with-git-01.png)
 
-1. 新建一个存储库或选择任意 Git 控件时，Visual Studio 会打开“团队资源管理器”窗口。 （可随时通过“视图”>“团队资源管理器”菜单命令打开该窗口。）窗口带有三个主窗格，你可使用“团队资源管理器”标题上的下拉菜单进行切换。 选择“推送”控件（向上箭头图标）时，还显示可用于发布内容的“同步”窗格：
+1. 新建一个存储库或选择任意 Git 控件时，Visual Studio 会打开“团队资源管理器”窗口。 （可随时通过“视图” > “团队资源管理器”菜单命令打开该窗口。）窗口带有三个主窗格，你可使用“团队资源管理器”标题上的下拉菜单进行切换。 在选择“推送”控件（向上箭头图标）时，还显示可用于发布内容的“同步”窗格：
 
     ![创建本地存储库后 Visual Studio 中的团队资源管理器](media/working-with-git-02.png)
 
@@ -48,9 +48,9 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team 
 
     ![Visual Studio 中显示分支的团队资源管理器](media/working-with-git-04.png)
 
-1. 选择带存储库名称的 Git 控件（上图中的“CosineWave”）之后，团队资源管理器将显示可用于迅速彻底切换到其他存储库的“连接”接口。
+1. 选择带存储库名称的 Git 控件（上图中的“CosineWave”）之后，“团队资源管理器”将显示可用于迅速彻底切换到其他存储库的“连接”接口。
 
-1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择团队资源管理器中的下拉列表标题，再选择“同步”以切换到“同步”部分，然后处理此处显示的拉取和提取命令。
+1. 使用本地存储库时，提交的更改直接进入存储库。 如果已连接到远程存储库，则选择“团队资源管理器”中的下拉列表标题，再选择“同步”以切换到“同步”部分，然后处理此处显示的拉取和提取命令。
 
 ## <a name="go-deeper"></a>深入了解
 
@@ -66,12 +66,12 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team 
 - 使用代码编辑器和运行项目。
 - 使用交互窗口开发新代码，并将该代码轻松复制到编辑器中。
 - 在 Visual Studio 调试器中运行已完成的程序。
-- 安装程序包和管理 Python 环境
-- 使用 Git 存储库中的代码
+- 安装程序包和管理 Python 环境。
+- 使用 Git 存储库中的代码。
 
 在此处了解概念和操作说明指南，其中包括下文：
 
 - [创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)
-- [发布到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
+- [发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - [分析](profiling-python-code-in-visual-studio.md)
 - [单元测试](unit-testing-python-in-visual-studio.md)

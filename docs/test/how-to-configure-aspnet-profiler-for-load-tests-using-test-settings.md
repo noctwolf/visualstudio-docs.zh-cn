@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c6e863ed52402dd56a81924f8ef7f4ecbd6ad258
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175547"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39379801"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置为负载测试配置 ASP.NET 探查器
 
@@ -52,7 +52,7 @@ ms.locfileid: "39175547"
 
 4.  若要启用层交互分析，请选择“启用层交互分析”。
 
-     层交互分析将对发送给每个项目（例如 MyPage.aspx 或 CompanyLogo.gif）的 Web 服务器的请求数以及处理每个请求所需的时间进行计数。 此外，层交互分析还将收集在页请求期间使用了哪些 ADO.NET 连接，以及在处理该请求期间执行了多少查询和存储过程调用。
+     层交互分析对发送给每个项目（例如 MyPage.aspx 或 CompanyLogo.gif）的 Web 服务器的请求数以及处理每个请求所需的时间进行计数。 此外，层交互分析还将收集在页请求期间使用了哪些 ADO.NET 连接，以及在处理该请求期间执行了多少查询和存储过程调用。
 
      将收集两个不同的计时信息集：
 

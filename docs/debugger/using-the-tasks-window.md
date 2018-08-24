@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 610372abd2aa8b4c45a18f5f1b3b171262308a66
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179991"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39512286"
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 
@@ -52,7 +52,7 @@ ms.locfileid: "39179991"
 |**标志**|显示哪些任务已被标记，并且你可以标记或取消标记任务。|
 |**图标**|黄色箭头指示当前任务。 当前任务是当前线程上处于最顶层的任务。<br /><br /> 白色箭头指示中断的任务，即调用调试器时的任务。<br /><br /> 暂停图标指示已被用户冻结的任务。 在列表中右击某一任务可以冻结或取消冻结该任务。|
 |**ID**|系统为任务提供的编号。 在本机代码中，该编号是任务的地址。|
-|**状态**|任务当前状态 （计划、 活动、 已阻止、 死锁、 正在等待，或已完成）。 已计划的任务是指尚未运行的任务，因此它没有调用堆栈、已分配的线程或相关信息。<br /><br /> 活动任务是指在中断调试器之前正在执行代码的任务。<br /><br /> 正在等待或阻塞任务是指被阻止，因为它正在等待事件收到信号，锁被释放或另一个任务完成。<br /><br /> 死锁任务是指其线程与其他线程相互死锁的正在等待的任务。<br /><br /> 将鼠标悬停**状态**单元格都已死锁或正在等待的任务来了解有关块的详细信息。 **警告：** **任务**窗口报告死锁仅为使用支持等待链遍历 (WCT) 的同步基元的受阻任务。 例如，对于死锁<xref:System.Threading.Tasks.Task>对象，后者使用 WCT，调试器会报告**等待-死锁**。 对于由并发运行时不使用 WCT 的死锁任务调试器报告**等待**。 有关 WCT 的详细信息，请参阅[Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx)。|
+|**状态**|任务当前状态 （计划、 活动、 已阻止、 死锁、 正在等待，或已完成）。 已计划的任务是指尚未运行的任务，因此它没有调用堆栈、已分配的线程或相关信息。<br /><br /> 活动任务是指在中断调试器之前正在执行代码的任务。<br /><br /> 正在等待或阻塞任务是指被阻止，因为它正在等待事件收到信号，锁被释放或另一个任务完成。<br /><br /> 死锁任务是指其线程与其他线程相互死锁的正在等待的任务。<br /><br /> 将鼠标悬停**状态**单元格都已死锁或正在等待的任务来了解有关块的详细信息。 **警告：** **任务**窗口报告死锁仅为使用支持等待链遍历 (WCT) 的同步基元的受阻任务。 例如，对于死锁<xref:System.Threading.Tasks.Task>对象，后者使用 WCT，调试器会报告**等待-死锁**。 对于由并发运行时不使用 WCT 的死锁任务调试器报告**等待**。 有关 WCT 的详细信息，请参阅[Wait Chain Traversal](/windows/desktop/Debug/wait-chain-traversal)。|
 |**开始时间**|任务变为活动状态的时间。|
 |**持续时间**|任务已处于活动状态的秒数。|
 |**完成时间**|任务完成的时间。|

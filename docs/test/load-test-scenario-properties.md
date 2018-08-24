@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6f18376637cf7156fc0165b0360281e9415b7c80
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e79546c9961af6bf87eb9e7f3b90ebb96150b978
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176783"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39382231"
 ---
 # <a name="load-test-scenario-properties"></a>负载测试方案属性
 
@@ -45,7 +45,7 @@ ms.locfileid: "39176783"
 |**对节奏延迟应用分布**|该布尔值用于指定是否要在用户节奏测试组合模型中应用典型分布延迟。 此属性仅在“测试组合类型”属性设置为“基于用户节奏”时适用。<br /><br />有关详细信息，请参阅[如何：对节奏延迟应用分布](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
 |**IP 切换**|该布尔值用于指定是否使用 IP 切换。<br /><br />IP 切换使测试代理可以使用一些不同的 IP 地址向服务器发送请求。 这模拟了来自不同客户端计算机的调用。 针对负载平衡的 Web 场进行测试时，IP 切换很重要。 大多数负载均衡器通过使用客户端的 IP 地址在客户端与特定的 Web 服务器之间建立关联。 如果所有请求看上去都来自单个客户端，则负载均衡器不会均衡负载。 若要在 Web 场中实现较好的负载平衡，请求来自某个范围内的 IP 地址很重要。<br /><br />IP 切换仅适用于测试代理。|
 |**最大测试迭代数**|该数值用于指定要在方案中运行的最大测试次数。 值 0 表示未指定最大次数。<br /><br />有关详细信息，请参阅[为方案配置测试迭代](../test/configure-test-iterations-in-a-load-test-scenario.md)。|
-|**新用户的百分比**|该数值用于指定方案中的新用户或者首次访问者所占的百分比。<br /><br />有关详细信息，请参阅[如何：指定使用 Web 缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
+|**新用户的百分比**|该数值用于指定方案中的新用户或者首次访问者所占的百分比。<br /><br />有关详细信息，请参阅[如何：指定使用 Web 高速缓存数据的虚拟用户的百分比](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)。|
 |**思考时间配置文件**|指定方案是否将使用“正态分布”，或者是“打开”还是“关闭”思考时间配置文件。<br /><br />有关详细信息，请参阅[编辑思考时间以模拟网站上的人机交互延迟](../test/edit-think-times-in-load-test-scenarios.md)。|
 
 ## <a name="timing"></a>执行时间

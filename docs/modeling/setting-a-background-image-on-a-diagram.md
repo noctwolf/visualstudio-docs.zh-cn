@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6b81bfcf0be55236b9b9321a4f04a8dd03f8e3ab
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3086f6f99497789eace3ff999a8fa0693b497324
+ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949888"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39567359"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可视化和建模 SDK 中，可以使用自定义代码为生成的设计器设置背景图像。
@@ -25,11 +25,11 @@ ms.locfileid: "31949888"
 
 1.  将要用作关系图的背景的图像文件复制到当前项目的 Dsl\Resources 目录中。
 
-2.  在**解决方案资源管理器**，右键单击 Dsl\Resources 文件夹，指向**添加**，然后单击**现有项**。
+2.  在中**解决方案资源管理器**，右键单击 Dsl\Resources 文件夹，指向**添加**，然后单击**现有项**。
 
-3.  在**添加现有项**对话框中，浏览到 Dsl\Resources 文件夹。
+3.  在中**添加现有项**对话框中，浏览到 Dsl\Resources 文件夹。
 
-4.  在**类型的文件**列表中，单击**映像文件**。
+4.  在中**类型的文件**列表中，单击**图像文件**。
 
 5.  单击复制到目录，该图像文件，然后单击**添加**。
 
@@ -37,31 +37,31 @@ ms.locfileid: "31949888"
 
 7.  上**资源**选项卡上，单击**此项目不包含默认资源文件。单击此处创建一个资源文件。”**。
 
-8.  将图像文件添加到资源文件，通过拖动从图片**解决方案资源管理器**到资源窗口。
+8.  将图像文件添加到资源文件，通过将图片从**解决方案资源管理器**到资源窗口。
 
 9. 打开“文件”菜单，然后单击该选项以保存项目属性。
 
 10. 验证文件 Dsl\Properties\Resources.resx 是否存在，以及该文件下面是否具有文件 Resources.Designer.cs。
 
-11. 如果缺少 Resources.Designer.cs 时，请单击文件 Resources.resx 中**解决方案资源管理器**。
+11. 如果缺少 Resources.Designer.cs，则单击文件 Resources.resx 中**解决方案资源管理器**。
 
-12. 在**属性**窗口中，设置`Custom Tool`属性`ResXFileCodeGenerator`。
+12. 在中**属性**窗口中，将`Custom Tool`属性设置为`ResXFileCodeGenerator`。
 
-13. 在**解决方案资源管理器**，右键单击 Dsl 项目，指向**添加**，然后单击**新文件夹**。
+13. 在**解决方案资源管理器**，右键单击 Dsl 项目，依次指向**添加**，然后单击**新文件夹**。
 
 14. 将文件夹命名为**自定义**。
 
-15. 右键单击自定义文件夹，指向**添加**，然后单击**新项**。
+15. 右键单击自定义文件夹，指向**外**，然后单击**新项**。
 
-16. 在**添加新项**对话框中，在**模板**列表中，单击**代码文件**。
+16. 在中**添加新项**对话框中**模板**列表中，单击**代码文件**。
 
-17. 在**名称**框中，键入`BackgroundImage.cs`，然后单击**添加**。
+17. 在中**名称**框中，键入`BackgroundImage.cs`，然后单击**添加**。
 
 18. 将以下代码复制到 BackgroundImage.cs 文件，从而调整命名空间、关系图类名以及图像文件资源名称。
 
      将“MyDiagramClass”替换为在 Dsl\GeneratedCode\Diagrams.cs 中定义的关系图分部类的名称。 还可以从文件 Dsl\GeneratedCode\Diagrams.cs 中检索正确的命名空间。
 
-    ```
+    ```csharp
     using System;
     using Microsoft.VisualStudio.Modeling.Diagrams;
 
@@ -100,7 +100,7 @@ ms.locfileid: "31949888"
     }
     ```
 
-     有关自定义与程序代码模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     有关自定义使用程序代码模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 ## <a name="see-also"></a>请参阅
 

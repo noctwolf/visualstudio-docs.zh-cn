@@ -10,19 +10,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d1b6655dd493a2ac62ba333f3858b299ee398f8d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ee961a3f6fa62d46feebdedd10fb62ea8a9ee2a4
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31974801"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381724"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：设置测试代理以运行与桌面交互的测试
 
 如果要运行的自动测试将与桌面交互，必须将代理设置为作为进程而非服务运行。 例如，如果想要使用测试控制器和测试代理远程运行编码的 UI 测试，或者想要运行测试并在运行测试时捕获视频录制，则必须将代理设置为作为进程运行。 使用 Visual Studio 将代理分配给测试设置中的角色时，或者使用 Microsoft 测试管理器将代理分配给环境中的角色时，对于分配给必须与桌面交互的角色的任何代理，必须为其更改设置。
 
 > [!WARNING]
-> 如果使用 Microsoft 测试管理器设置实验室环境，则会安装测试代理。 你可在环境创建向导中指定你要配置一个角色来运行编码的 UI 测试。
+> 如果使用 Microsoft 测试管理器设置实验室环境，则会安装测试代理。 可在“环境创建向导”中指定要配置某个角色以运行编码的 UI 测试。
 
 > [!IMPORTANT]
 > 如果计算机正在运行代理，而你想要针对该代理运行编码的 UI 测试，则不能锁定该计算机，或者该计算机不能具有活动的屏幕保护程序。
@@ -79,7 +79,7 @@ ms.locfileid: "31974801"
 
      将显示“配置摘要”对话框，其中显示了配置测试代理的每个步骤的状态。
 
-9. 若要关闭“配置摘要”对话框中，请选择“关闭”。 然后再次选择“关闭”以关闭 Test Agent 配置工具。
+9. 若要关闭“配置摘要”对话框中，请选择“关闭”。 然后再次选择“关闭”以关闭“Test Agent 配置工具”。
 
     > [!NOTE]
     > 在该计算机上有一个针对作为进程运行的测试代理而运行的通知区域图标。 它显示测试代理的状态。 如果代理作为使用此工具的进程运行，你可以启动、停止或重新启动代理。 若要在测试代理未运行时将其作为进程启动，请依次选择“开始”、“所有程序”、“Microsoft Visual Studio”和“Microsoft Visual Studio Test Agent”。

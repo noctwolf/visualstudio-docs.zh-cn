@@ -1,5 +1,5 @@
 ---
-title: 隐藏元素 （Visual Studio 模板） |Microsoft 文档
+title: 隐藏元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b41005dc789cf464973b225c76b2845db5565772
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 18c5783eb6e9572e030e4ea764ad0393f61f6049
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127292"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498257"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Hidden 元素（Visual Studio 模板）
-指定模板是否出现在**新项目**或**添加新项**对话框。  
+# <a name="hidden-element-visual-studio-templates"></a>Hidden 的元素 （Visual Studio 模板）
+指定模板是否出现在**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -58,7 +58,7 @@ ms.locfileid: "31127292"
 ## <a name="remarks"></a>备注  
  `Hidden` 是可选元素。  
   
- 如果不指定的任何其他子元素`TemplateData`是必需的元素。  
+ 如果不指定的任何其他子元素`TemplateData`元素是必需的。  
   
 ## <a name="example"></a>示例  
  以下示例阐释 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 模板的元数据。  
@@ -88,6 +88,6 @@ ms.locfileid: "31127292"
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)   
  [创建项目和项模板](../ide/creating-project-and-item-templates.md)

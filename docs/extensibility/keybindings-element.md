@@ -1,5 +1,5 @@
 ---
-title: 键绑定元素 |Microsoft 文档
+title: KeyBindings 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,19 +16,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91a5fd99216e712e567d4543f3f29dc2b6b21aa1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6f99c761eb10a80fa8a32413b03b42840a752540
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141410"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636806"
 ---
-# <a name="keybindings-element"></a>键绑定元素
+# <a name="keybindings-element"></a>KeyBindings 元素
 键绑定元素进行分组键绑定元素和其他键绑定分组。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding>... </KeyBinding>  
   <KeyBinding>... </KeyBinding>  
@@ -49,7 +49,7 @@ ms.locfileid: "31141410"
 |元素|描述|  
 |-------------|-----------------|  
 |[KeyBinding 元素](../extensibility/keybinding-element.md)|指定的命令的键盘快捷方式。|  
-|[键绑定](../extensibility/keybindings-element.md)|组键绑定元素和其他键绑定分组。|  
+|[键绑定](../extensibility/keybindings-element.md)|键绑定元素进行分组和其他键绑定分组。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -59,7 +59,7 @@ ms.locfileid: "31141410"
   
 ## <a name="example"></a>示例  
   
-```  
+```xml  
 <KeyBindings>  
   <KeyBinding guid="guidWidgetPackage" id="cmdidUpdateWidget"   
     editor="guidWidgetEditor" key1="VK_F5"/>  
@@ -68,6 +68,6 @@ ms.locfileid: "31141410"
 </KeyBindings>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [键绑定元素](../extensibility/keybinding-element.md)   
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [KeyBinding 元素](../extensibility/keybinding-element.md)   
+ [Visual Studio 命令表格 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

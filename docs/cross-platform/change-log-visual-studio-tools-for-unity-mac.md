@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Mac）| Microsoft Docs
 ms.custom: ''
-ms.date: 04/05/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,18 +10,62 @@ ms.author: v-davian
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: d43542dc78c8bc0eaeb05e1a620edff7a88efa37
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31084115"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39639720"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 Visual Studio Tools for Unity 更改日志。
 
+## <a name="1602"></a>1.6.0.2
+ 发布时间：2018 年 7 月 24 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+     -   回滚 Unity 性能 Bug 的解决方法（因为 Unity 已解决此问题）。
+     
+## <a name="1601"></a>1.6.0.1
+ 发布时间：2018 年 7 月 10 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+     -   支持固定着色器代码着色。
+     
+## <a name="1600"></a>1.6.0.0
+ 发布时间：2018 年 6 月 26 日
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **向导：**
+
+    -   修复了 OnApplicationFocus 消息拼写错误。
+
+-   **项目生成：**
+
+     -   Unity 性能 Bug 的暂时解决方法：生成项目时缓存 MonoIsland。
+     
+     -   使用新版 Unity 运行时，不要再将可移植 pdb 转换为 mdb。
+     
+## <a name="1502"></a>1.5.0.2
+ 发布时间：2018 年 4 月 18 日
+ 
+### <a name="new-features"></a>新增功能
+
+-   **集成：**
+
+    -   添加了对基本着色器代码补全的支持。
+    
+    -   添加了对在着色器文件中切换注释的支持。
+
 ## <a name="1501"></a>1.5.0.1
- 发布时间 2018-03-28
+ 发布时间：2018 年 3 月 28 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -30,7 +74,7 @@ Visual Studio Tools for Unity 更改日志。
     -   添加了对 Unity 项目资源管理器中的额外模板的支持。
 
 ## <a name="1500"></a>1.5.0.0
- 发布时间 2018-03-21
+ 发布时间：2018 年 3 月 21 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -39,7 +83,7 @@ Visual Studio Tools for Unity 更改日志。
     -   添加了对检测并附加到通过 USB 连接的 Android 播放器的支持。
 
 ## <a name="1403"></a>1.4.0.3
- 发布时间 2018-03-05
+ 发布时间：2018 年 3 月 5 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -52,7 +96,7 @@ Visual Studio Tools for Unity 更改日志。
     -   为专用设置添加了选项面板。
 
 ## <a name="1402"></a>1.4.0.2
- 发布时间 2018-01-24
+ 发布时间：2018 年 1 月 24 日
  
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -67,7 +111,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了检测新播放器时的通知。
 
 ## <a name="1401"></a>1.4.0.1
- 发布时间 2018-01-23
+ 发布时间：2018 年 1 月 23 日
  
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -76,7 +120,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了双击展开/折叠文件夹
 
 ## <a name="1400"></a>1.4.0.0
- 发布时间 2017-12-13
+ 发布时间：2017 年 12 月 13 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -91,7 +135,7 @@ Visual Studio Tools for Unity 更改日志。
     -   固定自动 pdb 到 mdb 调试符号转换。
 
 ## <a name="1301"></a>1.3.0.1
- 发布时间 2017-12-12
+ 发布时间：2017 年 12 月 12 日
  
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -104,7 +148,7 @@ Visual Studio Tools for Unity 更改日志。
     -   在插入方法前刷新 roslyn 上下文。
 
 ## <a name="1300"></a>1.3.0.0
- 发布时间 2017-11-20
+ 发布时间：2017 年 11 月 20 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -115,7 +159,7 @@ Visual Studio Tools for Unity 更改日志。
     -   添加了对 Mac 7.4 的 VS 中 API 新完成的支持。
 
 ## <a name="1200"></a>1.2.0.0
- 发布时间 2017-10-23
+ 发布时间：2017 年 10 月 23 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -132,7 +176,7 @@ Visual Studio Tools for Unity 更改日志。
     -   不强制 AllowAttachedDebuggingOfEditor Unity，因为现在默认为“true”。
 
 ## <a name="1103"></a>1.1.0.3
- 发布时间 2017-10-23
+ 发布时间：2017 年 10 月 23 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -141,7 +185,7 @@ Visual Studio Tools for Unity 更改日志。
     -   添加了对 .NET 4.6 配置文件的支持。
 
 ## <a name="1102"></a>1.1.0.2
- 发布时间 2017-08-08
+ 发布时间：2017 年 8 月 8 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -154,7 +198,7 @@ Visual Studio Tools for Unity 更改日志。
     -   使用 Unity 5.6 时，始终启用不安全编译开关。
 
 ## <a name="1101"></a>1.1.0.1
- 发布时间 2017-07-20
+ 发布时间：2017 年 7 月 20 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -163,7 +207,7 @@ Visual Studio Tools for Unity 更改日志。
     -   添加了对本地化资源的支持。
 
 ## <a name="1100"></a>1.1.0.0
- 发布时间 2017-07-12
+ 发布时间：2017 年 7 月 12 日
  
 ### <a name="new-features"></a>新增功能
 
@@ -186,7 +230,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了编译时的着色器错误消息。
 
 ## <a name="1001"></a>1.0.0.1
- 发布时间 2017-05-04
+ 发布时间：2017 年 5 月 4 日
  
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -195,4 +239,4 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了混合和常规项目的活动文档跟踪。
 
 ## <a name="1000"></a>1.0.0.0
- 发布时间 2017-05-03
+ 发布时间：2017 年 5 月 3 日

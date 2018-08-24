@@ -1,5 +1,5 @@
 ---
-title: SccGetEvents 函数 |Microsoft 文档
+title: SccGetEvents 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79e517d87acd61eafcd2eb0a12f5a8978912db81
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 21cc159f4ea09d817e81f74f338cc748833e1b62
+ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136739"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39636936"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函数
-此函数可检索排队的状态事件。  
+此函数检索排队的状态事件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,33 +36,33 @@ SCCRTN SccGetEvents (
 );  
 ```  
   
-#### <a name="parameters"></a>参数  
+### <a name="parameters"></a>参数  
  pvContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  lpFileName  
- [在中，out]源代码管理插件其中放入 （最多 _MAX_PATH 个字符） 返回的文件名的缓冲区。  
+ [in、 out]缓冲区的源控件插件会将返回的文件名 （最多 _max_path(256 个字符）。  
   
  lpStatus  
- [在中，out]将返回状态代码 (请参阅[文件状态代码](../extensibility/file-status-code-enumerator.md)有关可能的值)。  
+ [in、 out]将返回状态代码 (请参阅[状态代码的文件](../extensibility/file-status-code-enumerator.md)有关可能的值)。  
   
  pnEventsRemaining  
- [在中，out]返回此调用后留在队列的条目数。 如果此数量很大，调用方可能会决定要调用[SccQueryInfo](../extensibility/sccqueryinfo-function.md)以获取所有相关信息一次。  
+ [in、 out]返回此调用后保留在队列的项数。 如果此数值较大，可能会决定调用方调用[SccQueryInfo](../extensibility/sccqueryinfo-function.md)若要获取的所有信息在一次。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|SCC_OK|获取事件成功。|  
+|SCC_OK|获取事件已成功。|  
 |SCC_E_OPNOTSUPPORTED|不支持此函数。|  
-|SCC_E_NONSPECIFICERROR|非特定的失败。|  
+|SCC_E_NONSPECIFICERROR|非特定故障。|  
   
 ## <a name="remarks"></a>备注  
- 在空闲处理，以查看是否已在源代码管理下的文件的任何状态更新过程中调用此函数。 源代码管理插件保持它知道的所有文件的状态，每当更改状态记录由该插件的状态和关联的文件存储在队列中。 当`SccGetEvents`调用时，顶部检索并返回队列的元素。 此函数被约束为返回唯一以前缓存的信息，并且必须具有非常快速周转时间 （即，没有读取的磁盘或状态请求的源控制系统）;否则，可能会启动 IDE 的性能下降。  
+ 若要查看是否已在源代码管理下的文件的任何状态更新，空闲处理过程中调用此函数。 源代码管理插件维护它了解的所有文件的状态，每当更改的状态记录了该插件的状态和关联的文件存储在队列中。 当`SccGetEvents`调用时，顶部检索并返回队列的元素。 此函数被约束为返回唯一以前缓存的信息，并且必须具有非常快速周转时间 （即，任何磁盘的读取或状态请求的源控制系统）;否则，IDE 的性能可能开始下降。  
   
- 如果报表没有状态更新，源代码管理插件会将空字符串存储在通过指向的缓冲区`lpFileName`。 否则，该插件将存储该文件的完整路径名称为该状态信息已更改并返回相应的状态代码 (中详述的值之一[文件状态代码](../extensibility/file-status-code-enumerator.md))。  
+ 如果不没有报告任何状态更新，源代码管理插件会将空字符串存储在通过指向的缓冲区`lpFileName`。 否则，该插件将存储该文件的完整路径名称为它的状态信息已更改并返回相应的状态代码 (中详述的值之一[状态代码的文件](../extensibility/file-status-code-enumerator.md))。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 功能](../extensibility/source-control-plug-in-api-functions.md)   
  [文件状态代码](../extensibility/file-status-code-enumerator.md)

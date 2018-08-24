@@ -1,5 +1,5 @@
 ---
-title: VSCT XML 架构条件属性 |Microsoft 文档
+title: VSCT XML 架构条件属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,24 +14,24 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 975ca2f5fa6f070baf07b26cbfa0d8c3aa3b67d2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b31b99e38eeec2ff1e5e31bc6bdaeed3d3be3d83
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31138351"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586816"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 架构条件属性
-条件属性可以应用于所有列表和项。 逻辑运算符和符号扩展表达式计算结果为 true 或 false。 如果为 true，生成的输出中包含的关联的列表或项。  
+您可以将条件特性应用于所有列表和项。 逻辑运算符和符号扩展表达式的计算结果为 true 或 false。 如果为 true，生成的输出中包含关联的列表或项。  
   
- 可以针对其他令牌扩展或常量测试令牌的扩展。 函数 Defined() 用于测试是否已定义特定名称，即使它具有任何值。  
+ 你可以测试针对其他标记扩展或常量的标记扩展。 该函数`Defined()`测试是否定义了特定名称，即使它没有任何价值。  
   
- 当 Condition 特性应用于列表中时，条件被应用于列表中每个子元素。 如果子元素本身包含的 Condition 属性，然后其条件与相结合的父表达式由 AND 运算。  
+ 当条件特性应用于列表中时，条件被应用于列表中每个子元素。 如果子元素本身包含条件属性，然后其条件与父级表达式通过结合 AND 运算。  
   
- 1、 '1' 和 'true' 的值计算结果为 true，并且 0、 '0' 和 'false' 计算结果为 false。  
+ 值 1、 '1' 和 'true' 的计算结果为 true，和 0、"0"和 false 计算结果为 false。  
   
 ## <a name="operators"></a>运算符  
- 以下运算符可能用于评估的条件表达式。  
+ 使用以下运算符来评估条件表达式。  
   
 |运算符|定义|  
 |--------------|----------------|  
@@ -43,7 +43,7 @@ ms.locfileid: "31138351"
   
 ## <a name="examples"></a>示例  
   
-```  
+```xml  
 <Menu Condition="Defined(DEBUG)" ...  
 </Menu>  
   
@@ -72,5 +72,5 @@ and !Defined(DEBUG)">
 </Menus>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅  
+ [Visual Studio 命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

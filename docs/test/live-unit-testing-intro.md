@@ -12,12 +12,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63f10359563e653dd896f47137126bb0991f7784
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 7ad8526f8e44165dc92a914ddf15765065f42569
+ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280271"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39586881"
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 简介
 
@@ -27,13 +27,13 @@ Live Unit Testing 是 Visual Studio 2017 版本 15.3 中提供的一项技术，
 
 - 指示单元测试是否充分覆盖代码，并显示未被单元测试覆盖的代码。 Live Unit Testing 以图形方式实时描绘代码覆盖率，以便一眼就能看到每行代码覆盖的测试数，目和未被任何单元测试覆盖的行。
 
-如果有包含一个或多个单元测试项目的解决方案，那么可以从顶级的 Visual Studio 菜单中依次选择“测试”、“Live Unit Testing”、“启动”来启用 Live Unit Testing。
+如果有包含一个或多个单元测试项目的解决方案，可从顶级 Visual Studio 菜单中依次选择“测试” > “Live Unit Testing” > “启动”来启用 Live Unit Testing。
 
 了解有关 Live Unit Testing 的详细信息：
 
 - 请尝试使用入门教程，[Visual Studio 中的 Live Unit Testing 入门](live-unit-testing-start.md)。
 
-- 阅读详细的文档，[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit testing](live-unit-testing.md)。
+- 阅读详细的文档：[在 Visual Studio 2017 Enterprise Edition 中使用 Live Unit Testing](live-unit-testing.md)。
 
 - 阅读 [Live Unit Testing 常见问题解答](live-unit-testing-faq.md)，了解 Live Unit Testing 中的新增功能以及使用 Live Unit Testing 的提示和技巧。
 
@@ -42,6 +42,6 @@ Live Unit Testing 是 Visual Studio 2017 版本 15.3 中提供的一项技术，
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>相关资源
-[代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
-[对代码进行单元测试](unit-test-your-code.md)
+- [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
+- [单元测试代码](unit-test-your-code.md)
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86bc73800a8532f1fb2e2c82005439a5579162b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 7a238e0bb35efd3ddf984a692a032535c37dfd88
+ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155511"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39468694"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -144,7 +144,7 @@ $([MSBuild]::Method(Parameters))
 例如，要一起添加两个具有数字值的属性，请使用以下代码。
 
 ```fundamental
-$([MSBuild]::Add($(NumberOne), $(NumberTwo))
+$([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 ```
 
 下面列出了 MSBuild 属性函数：

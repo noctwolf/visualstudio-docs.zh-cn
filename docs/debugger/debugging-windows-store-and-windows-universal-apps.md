@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: bc626ce4c9639fcd8dfdf0f0992cead484ced2c4
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 628c847817db073daeed3cd6c04b1722502e80ca
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056838"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39511526"
 ---
 # <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>调试 Visual Studio 中的通用 Windows 应用 (UWP)
 
@@ -27,8 +27,7 @@ Visual Studio 调试器为调试 UWP 应用提供完整支持。 请参阅以下
 
 |调试任务|文章|
 |-|-|  
-|调试 Windows 8.1 应用|[在 Visual Studio 中调试应用商店应用](https://msdn.microsoft.com/en-us/library/hh441472.aspx)|
-|调试 Windows Phone 8 应用|[调试适用于 Windows Phone 8 应用程序](https://msdn.microsoft.com/library/windows/apps/ff402572(v=vs.105).aspx)|
+|调试 Windows 8.1 应用|[在 Visual Studio 中调试应用商店应用](debug-store-apps-in-visual-studio.md)|
 |在本地计算机、 远程或已连接的设备或应用模拟器上运行 UWP 应用。|[启动 UWP 应用的调试会话](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
 |调试已部署的应用、 本地和远程。|[调试安装的应用包](../debugger/debug-installed-app-package.md)|
 |分析 UWP 应用上的 ContentPrefetcher 类的效果。|[UWP 应用的预提取内容](../debugger/prefetch-content-for-windows-store-apps.md)|

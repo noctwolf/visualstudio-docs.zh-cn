@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c7430b6fc2afc5af872c9f03174451a223e05b3e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 1a03d94b09464fd2daeeea265d5c4e8b64fac2fd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118494"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635403"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>演练： 创建 SharePoint web 部件
 
@@ -49,7 +49,7 @@ Web 部件显示数据网格中的员工。 用户指定包含员工数据的文
 
 ## <a name="prerequisites"></a>系统必备
 
-- 支持的 Microsoft Windows 和 SharePoint 版本。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。
+- 支持的 Microsoft Windows 和 SharePoint 版本。
 
 - Visual Studio 2017 或版本的 Visual Studio 应用程序生命周期管理 (ALM)。
 

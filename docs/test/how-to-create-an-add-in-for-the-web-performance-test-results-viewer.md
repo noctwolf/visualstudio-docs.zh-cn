@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 92c41fec7cf481c058f158e91c486134ca6c1740
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0ea42942fc06225bc5c64c02eba85a766a94ef1
+ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177248"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39381102"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
@@ -41,17 +41,17 @@ ms.locfileid: "39177248"
 
 ## <a name="create-a-visual-studio-add-in"></a>创建 Visual Studio 外接程序
 
-外接程序是在 Visual Studio 集成开发环境 (IDE) 中运行的已编译的 DLL。 编译有助于保护知识产权和提高性能。 虽然可以手动创建外接程序，但您可能会发现使用“外接程序向导”更为简便。 此向导创建一个功能全面但却很基本的外接程序，创建完该程序后可立即运行它。 “外接程序向导”生成基本程序后，可向其添加代码并对其进行自定义。
+外接程序是在 Visual Studio 集成开发环境 (IDE) 中运行的已编译的 DLL。 编译有助于保护知识产权和提高性能。 虽然可以手动创建外接程序，但可能会发现使用“外接程序向导”更为简便。 此向导创建一个功能全面但却很基本的外接程序，创建完该程序后可立即运行它。 “外接程序向导”生成基本程序后，可向其添加代码并对其进行自定义。
 
- “外接程序向导”让您可以为外接程序提供显示名称和说明。 这两项内容都将出现在“外接程序管理器”中。 还可以选择让向导生成代码，用于向“工具”菜单中添加可打开外接程序的命令。 也可以选择为外接程序显示一个自定义“关于”对话框。 向导完成时，将生成只有一个实现外接程序的类的新项目。 该类名为“Connect”。
+ “外接程序向导”让你可以为外接程序提供显示名称和说明。 这两项内容都将出现在“外接程序管理器”中。 还可以选择让向导生成代码，用于向“工具”菜单中添加可打开外接程序的命令。 也可以选择为外接程序显示一个自定义“关于”对话框。 向导完成时，将生成只有一个实现外接程序的类的新项目。 该类名为“Connect”。
 
- 本主题末尾将使用“外接程序管理器”。
+ 本主题末尾将使用外接程序管理器。
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>使用“外接程序向导”创建外接程序
 
-1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新建项目”。
+1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
-     “新建项目”对话框随即显示。
+     随即显示“新建项目”对话框。
 
 2.  在“已安装的模板”下，展开“其他项目类型”并选择“扩展性”。
 
@@ -61,7 +61,7 @@ ms.locfileid: "39177248"
 
 5.  选择 **“确定”**。
 
-     此时 Visual Studio 外接程序向导将启动。
+     此时 Visual Studio“外接程序向导”将启动。
 
 6.  选择“下一步”。
 
@@ -92,13 +92,13 @@ ms.locfileid: "39177248"
 
 16. 所选的选项将显示在“摘要”页上以供检查。 如果满意，请选择“完成”以创建外接程序。 若要更改某些内容，请选择“返回”按钮。
 
-     将创建新的解决方案和项目，并且新外接程序的 Connect.cs 文件将显示在代码编辑器中。
+     此时将创建新的解决方案和项目，并且新外接程序的 Connect.cs 文件将显示在代码编辑器中。
 
-     在完成下面的创建将由此 WebPerfTestResultsViewerAddin 项目引用的用户控件的过程后，你将向 Connect.cs 文件添加代码。
+     在完成下面的创建将由此 WebPerfTestResultsViewerAddin 项目引用的用户控件的过程后，将向 Connect.cs 文件添加代码。
 
  创建了外接程序后，必须先向 Visual Studio 注册此外接程序，然后才能在“外接程序管理器”中激活它。 使用具有 .addin 文件扩展名的 XML 文件来执行此操作。
 
- .addin 文件描述了 Visual Studio 在“外接程序管理器”中显示外接程序所需的信息。 启动 Visual Studio 时，它会查找 .addin 文件位置，获取任何可用的 .addin 文件。 如果找到相应文件，则会读取 XML 文件，并向“外接程序管理器”提供在单击外接程序进行启动时所需的信息。
+ .addin 文件描述了 Visual Studio 在外接程序管理器中显示外接程序所需的信息。 启动 Visual Studio 时，它会查找 .addin 文件位置，获取任何可用的 .addin 文件。 如果找到相应文件，则会读取 XML 文件，并向“外接程序管理器”提供在单击外接程序进行启动时所需的信息。
 
  使用外接程序向导创建外接程序时，会自动创建一个 .addin 文件。
 
@@ -117,7 +117,7 @@ ms.locfileid: "39177248"
 
 ### <a name="to-create-a-control-to-be-used-in-the-web-test-results-viewer"></a>创建要在 Web 测试结果查看器中使用的控件
 
-1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新建项目”。
+1.  在解决方案资源管理器中，右键单击该解决方案，选择“添加”，然后选择“新项目”。
 
      随即显示“新建项目”对话框。
 
@@ -132,7 +132,7 @@ ms.locfileid: "39177248"
 
 5.  选择 **“确定”**。
 
-     将在“解决方案资源管理器”中添加 Windows 窗体控件库项目 WebPerfTestResultsViewerControl，并在设计模式下显示 UserControl1.cs。
+     将在解决方案资源管理器中添加 Windows 窗体控件库项目 WebPerfTestResultsViewerControl，并在设计模式下显示 UserControl1.cs。
 
 6.  从“工具箱”中将 <xref:System.Windows.Forms.DataGridView> 拖动到 userControl1 的图面上。
 
@@ -173,9 +173,9 @@ ms.locfileid: "39177248"
             }
     ```
 
-     在下一过程中，你将向 WebPerfTestResultsViewerAddin 项目的引用 resultControl 类的 Connect.cs 文件添加代码。
+     在下一过程中，将向 WebPerfTestResultsViewerAddin 项目的引用 resultControl 类的 Connect.cs 文件添加代码。
 
-     你稍后将向 Connect.cs 文件添加一些附加代码。
+     稍后将向 Connect.cs 文件添加一些附加代码。
 
 ## <a name="add-code-to-the-webperftestresultsvieweraddin"></a>向 WebPerfTestResultsViewerAddin 添加代码
 
@@ -218,7 +218,7 @@ ms.locfileid: "39177248"
 
 14. 向下滚动到 Connect.cs 文件的底端。 如果打开“Web 性能测试结果查看器”的多个实例，则需要为 <xref:System.Windows.Forms.UserControl> 添加 GUID 列表。 稍后你将添加使用此列表的代码。
 
-     你稍后将编码的 OnDiscconection 方法中使用另一个字符串列表。
+     稍后在将编码的 OnDiscconection 方法中使用另一个字符串列表。
 
     ```csharp
     private DTE2 _applicationObject;
@@ -273,19 +273,19 @@ ms.locfileid: "39177248"
     }
     ```
 
-     现在 Visual Studio 外接程序的代码已完成，您需要向 WebPerfTestResultsViewerControl 项目中的 resultControl 添加 Update 方法。
+     现在 Visual Studio 外接程序的代码已完成，你需要向 WebPerfTestResultsViewerControl 项目中的 resultControl 添加 Update 方法。
 
 ## <a name="add-code-to-the-webperftestresultsviewercontrol"></a>向 WebPerfTestResultsViewerControl 添加代码
 
 ### <a name="to-add-code-to-the-user-control"></a>向用户控件添加代码
 
-1.  在“解决方案资源管理器”中右键单击 WebPerfTestResultsViewerControl 项目节点，然后选择“属性”。
+1.  在解决方案资源管理器中右键单击 WebPerfTestResultsViewerControl 项目节点，然后选择“属性”。
 
 2.  选择“应用程序”选项卡，再选择“目标框架”下拉列表，然后选择“.NET Framework 4”并关闭“属性”。
 
      为支持扩展“Web 性能测试结果查看器”所需的 DLL 引用，此操作是必需的。
 
-3.  在“解决方案资源管理器”中，在 WebPerfTestResultsViewerControl 项目中右键单击“引用”节点，然后选择“添加引用”。
+3.  在解决方案资源管理器中，在 WebPerfTestResultsViewerControl 项目中右键单击“引用”节点，然后选择“添加引用”。
 
 4.  在“添加引用”对话框中，单击“.NET”选项卡。
 
@@ -355,7 +355,7 @@ ms.locfileid: "39177248"
 
 为了通过防止恶意外接程序自动激活来改进安全性，Visual Studio 在名为“外接程序/宏的安全性”的“工具选项”页中提供了一些设置。
 
-另外，该选项页使你可以指定供 Visual Studio 在其中搜索 .AddIn 注册文件的文件夹。 这种方式可让您对可读取 .AddIn 注册文件的位置进行限制，从而改进了安全性。 这种方式可防止无意中使用 .AddIn 恶意文件。
+另外，通过该选项页，可指定供 Visual Studio 在其中搜索 .AddIn 注册文件的文件夹。 通过此方式，可对可读取 .AddIn 注册文件的位置进行限制，从而提高安全性。 这可防止无意中使用 .AddIn 恶意文件。
 
  **外接程序安全性设置**
 
@@ -363,7 +363,7 @@ ms.locfileid: "39177248"
 
 -   **允许加载外接程序组件。** 默认情况下选中此选项。 在选中时，允许在 Visual Studio 中加载外接程序。 在未选中时，禁止在 Visual Studio 中加载外接程序。
 
--   **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，允许从外部网站加载加载项。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
+-   **允许从 URL 加载外接程序组件。** 默认情况下不选择此选项。 在选中时，可从外部网站加载外接程序。 在未选中时，禁止在 Visual Studio 中加载远程外接程序。 如果某个外接程序由于某种原因无法加载，则无法从网站加载它。 此设置只控制外接程序 DLL 的加载。 .Addin 注册文件必须始终位于本地系统上。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b91c0cb6357d465f612d1002476c03781822475c
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
+ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433163"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39510144"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 生成变量
 对非呈现器目标的纹理启用 mip 贴图。  
@@ -28,11 +28,11 @@ ms.locfileid: "37433163"
  如果此变体显示显著的性能提升，则表示你使用的是纹理，而未启用 mip 贴图，因此无法充分利用纹理缓存。  
   
 ## <a name="remarks"></a>备注  
- 每次调用创建源纹理的 `ID3D11Device::CreateTexture2D` 时，都强制执行 mip 贴图生成。 具体而言，当在 `pDesc` 中传递的 D3D11_TEXTUR2D_DESC 对象描述不变的着色器资源时，将强制执行 mip 贴图生成；即：  
+ 每次调用创建源纹理的 `ID3D11Device::CreateTexture2D` 时，都强制执行 mip 贴图生成。 Mip 贴图生成时在传递的 D3D11_TEXTURE2D_DESC 对象，具体而言，将强制`pDesc`描述不变的着色器资源; 即：  
   
 -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
   
--   将 Usage 成员设置为 D3D11_USAGE_DEFUALT 或 D3D11_USAGE_IMMUTABLE。  
+-   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
 -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
   

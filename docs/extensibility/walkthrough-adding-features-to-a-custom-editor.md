@@ -1,5 +1,5 @@
 ---
-title: 演练： 将功能添加到自定义编辑器 |Microsoft 文档
+title: 演练： 将功能添加到自定义编辑器 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,92 +13,92 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14642a13553f3c4a09b86daa2d7638183fe7d8d9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31146018"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39498936"
 ---
-# <a name="walkthrough-adding-features-to-a-custom-editor"></a>演练： 将功能添加到自定义编辑器
-创建自定义编辑器后，你可以向其添加更多的功能。  
+# <a name="walkthrough-add-features-to-a-custom-editor"></a>演练： 将功能添加到自定义编辑器
+创建自定义编辑器后，您可以向其添加更多的功能。  
   
-### <a name="to-create-an-editor-for-a-vspackage"></a>若要创建 VSPackage 的编辑器  
+## <a name="to-create-an-editor-for-a-vspackage"></a>若要创建 VSPackage 的编辑器  
   
-1.  通过使用 Visual Studio 包项目模板创建自定义编辑器。  
+1.  使用 Visual Studio 包项目模板创建自定义编辑器。  
   
      有关详细信息，请参阅[演练： 创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。  
   
-2.  决定您编辑器来支持单一视图或多个视图。  
+2.  决定您编辑器来支持单个视图或多个视图。  
   
-     支持的编辑器**新窗口**命令时，或具有窗体视图和代码视图，需要单独的文档数据对象和文档视图对象。 在编辑器中，支持单个视图，文档数据对象和文档视图对象可以实现对同一个对象。  
+     支持的编辑器**新的窗口**命令，或具有窗体视图和代码视图，需要单独的文档数据对象和文档视图对象。 在一个编辑器，支持单个视图，文档数据对象和文档视图对象可以实现对同一个对象。  
   
      多个视图的示例，请参阅[支持多个文档视图](../extensibility/supporting-multiple-document-views.md)。  
   
-3.  编辑器工厂实现通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
+3.  通过设置实现编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
   
      有关详细信息，请参阅[编辑器工厂](../extensibility/editor-factories.md)。  
   
-4.  决定要使用就地激活编辑器还是简化嵌入来管理文档视图对象窗口。  
+4.  决定是否希望在使用就地激活编辑器或简化的嵌入来管理文档视图对象窗口。  
   
-     简化的嵌入编辑器窗口承载标准文档视图中，而非就地激活编辑器窗口托管 ActiveX 控件或其他活动作为其文档视图对象。 有关详细信息，请参阅[简化嵌入](../extensibility/simplified-embedding.md)和[就地激活](../extensibility/in-place-activation.md)。  
+     简化的嵌入编辑器窗口承载标准文档视图中，而在就地激活编辑器窗口承载 ActiveX 控件或其他活动作为其文档视图对象。 有关详细信息，请参阅[简化的嵌入](../extensibility/simplified-embedding.md)并[就地激活](../extensibility/in-place-activation.md)。  
   
 5.  实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口以处理命令。  
   
-6.  通过执行以下提供文档持久性和响应的外部文件更改：  
+6.  提供文档暂留和响应的外部文件更改：  
   
-    1.  若要保存该文件，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>编辑器的文档数据对象上。  
+    1.  若要保存该文件，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>和<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>编辑器的文档的数据对象。  
   
-    2.  若要对外部文件更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档数据对象上。  
+    2.  若要对外部文件的更改做出响应，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>编辑器的文档的数据对象。  
   
         > [!NOTE]
-        >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>用于获取指向`IVsFileChangeEx`。  
+        >  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx>获取一个指向`IVsFileChangeEx`。  
   
-7.  与源代码管理的文档编辑事件协调。 具体方法为：  
+7.  协调与源代码管理的文档编辑事件。 请执行这些步骤：  
   
-    1.  获取指向的`IVsQueryEditQuerySave2`通过调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。  
+    1.  获取一个指向`IVsQueryEditQuerySave2`通过调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>。  
   
     2.  第一个编辑事件发生时，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>方法。  
   
-         这将提示用户签出该文件，如果未签出。请务必"未签出文件"条件，以避免遭受错误处理  
+         此方法会提示用户签出该文件，如果它尚未签出。请务必处理要避免出现错误"未签出文件"条件。  
   
-    3.  同样，在保存文件之前, 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。  
+    3.  同样，保存该文件之前, 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>方法。  
   
-         此方法会提示用户以保存该文件，如果尚未保存的或自上次保存以来已更改。  
+         此方法会提示用户保存文件，如果它尚未保存，或自上次保存以来已更改。  
   
-8.  启用**属性**窗口以显示属性编辑器中选定的文本。 具体方法为：  
+8.  启用**属性**窗口中显示的文本在编辑器中选择的属性。 请执行这些步骤：  
   
-    1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每个时间文本所选内容更改，传递的实现中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
+    1.  调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每个时间文本选择发生更改，传递的实现中<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>。  
   
-    2.  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服务，以获取指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
+    2.  调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服务，以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
   
-9. 启用用户拖放项之间编辑器和**工具箱**，或两个外部编辑器 （例如 Microsoft Word) 之间与**工具箱**。 具体方法为：  
+9. 使用户能够拖放到编辑器之间的项和**工具箱**，或之间外部编辑器 （如 Microsoft Word) 和**工具箱**。 请执行这些步骤：  
   
-    1.  实现`IDropTarget`在你的编辑器来提醒 IDE 你的编辑器是放置目标上。  
+    1.  实现`IDropTarget`上您的编辑器来提醒你的编辑器是拖放目标的 IDE。  
   
-    2.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>视图使你的编辑器可以启用和禁用中的项上的接口**工具箱**。  
+    2.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>使您的编辑器可以启用和禁用中的项在视图上的接口**工具箱**。  
   
-    3.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>并调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服务，以获取指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>接口。  
+    3.  实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A>，并调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox>服务，以获取指向的指针<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3>接口。  
   
-         这使你的 VSPackage，若要添加新项目添加到**工具箱**。  
+         这些步骤可添加新项目添加到你的 VSPackage**工具箱**。  
   
 10. 确定编辑器是否需要任何其他可选功能。  
   
-    -   如果您希望您编辑器来支持查找和替换的命令，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。  
+    -   如果你想您编辑器来支持查找和替换命令，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>。  
   
-    -   如果你想要使用你的编辑器中的文档大纲工具窗口，实现`IVsDocOutlineProvider`。  
+    -   如果你想要使用文档大纲工具窗口在编辑器中的，实现`IVsDocOutlineProvider`。  
   
-    -   如果你想要在你的编辑器中使用状态栏，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>并调用`QueryService`为<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>用于获取指向`IVsStatusBar`。  
+    -   如果你想要在编辑器中使用一个状态栏，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>，并调用`QueryService`有关<xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar>若要获取指向的`IVsStatusBar`。  
   
-         例如，编辑器可以显示行 / 列信息、 选择模式 （流式传输 / 框中），并插入模式 （插入 / 重叠）。  
+         例如，编辑器可以显示行 / 列信息、 选择模式 （流式传输 / 框），并插入模式 （插入 / 重叠）。  
   
-    -   如果您希望支持你编辑器`Undo`命令时，建议的方法是使用 OLE 撤消管理器模型。 作为替代方法，你可以编辑器句柄`Undo`直接命令。  
+    -   如果希望支持您编辑器`Undo`命令时，建议的方法是使用 OLE 撤消管理器模型。 或者，可以使编辑器处理`Undo`直接命令。  
   
-11. 创建注册表信息，包括有关 VSPackage、 菜单、 编辑器和其他功能的 Guid。  
+11. 创建注册表信息，包括 VSPackage、 菜单、 编辑器和其他功能的 Guid。  
   
-     下面是代码的可使在.rgs 文件脚本来演示如何正确注册编辑器中的泛型示例。  
+     以下是一般示例的代码将放在你 *.rgs*文件脚本，以演示如何正确注册编辑器。  
   
-    ```  
+    ```csharp  
     NoRemove Editors  
     {  
           ForceRemove {...guidEditor...} = s 'RTF Editor'  
@@ -118,19 +118,19 @@ ms.locfileid: "31146018"
   
 12. 实现上下文相关帮助支持。  
   
-     这使您可以提供 F1 帮助和动态帮助窗口支持适用于你的编辑器中的项。 有关这方面的详细信息，请参阅[如何： 提供上下文为编辑器](../extensibility/how-to-provide-context-for-editors.md)。  
+     此步骤允许您提供的 F1 帮助和动态帮助窗口支持你的编辑器中的项。 有关详细信息，请参阅[如何： 为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)。  
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   
-     有关详细信息，请参阅[导致自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)。  
+     有关详细信息，请参阅[参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)。  
   
 ## <a name="robust-programming"></a>可靠编程  
   
--   当 IDE 调用创建编辑器实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果编辑器支持多个视图，`CreateEditorInstance`创建文档数据和文档视图对象。 如果文档数据对象已打开，非 null`punkDocDataExisting`值传递到`IVsEditorFactory::CreateEditorInstance`。 编辑器工厂实现必须确定是否兼容的查询在其上的相应接口访问现有的文档数据对象。 有关详细信息，请参阅[支持多个文档视图](../extensibility/supporting-multiple-document-views.md)。  
+-   IDE 调用时将创建编辑器实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果编辑器支持多个视图`CreateEditorInstance`创建文档的数据和文档视图对象。 如果文档数据对象已打开，非 null`punkDocDataExisting`值传递给`IVsEditorFactory::CreateEditorInstance`。 编辑器工厂实现必须确定现有的文档数据对象是否通过查询在其上的相应接口兼容。 有关详细信息，请参阅[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
   
--   如果你使用简化的嵌入方法，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口。  
+-   如果您使用简化的嵌入方法，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口。  
   
--   如果你决定使用就地激活，实现以下接口：  
+-   如果您决定使用就地激活，实现以下接口：  
   
      <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
@@ -141,13 +141,13 @@ ms.locfileid: "31146018"
     > [!NOTE]
     >  `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。  
   
-     你`IOleCommandTarget`实现处理命令，如**剪切**，**复制**，和**粘贴**。 在实现时`IOleCommandTarget`，确定你的编辑器是否需要其自己的.vsct 文件以定义其自己的命令菜单结构，或者如果它可以实现所定义的标准命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单，定义其自己的工具栏。 但是，它通常是必要的编辑器来定义其自己特定的命令，除了使用 IDE 的标准命令集。 若要执行此操作，你的编辑器必须声明其使用，然后在.vsct 文件中定义任何新的命令、 上下文菜单、 顶级菜单和工具栏的标准命令。 如果您创建就地激活编辑器，然后实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>和为而不是使用 OLE 2 菜单合并的.vsct 文件中的编辑器中定义的菜单和工具栏。  
+     你`IOleCommandTarget`实现处理命令，如**剪切**，**副本**，并且**粘贴**。 在实现时`IOleCommandTarget`，确定您的编辑器需要自己 *.vsct*文件以定义其自己的命令菜单结构或如果它可以实现定义的标准命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单并定义其自己的工具栏。 但是，它通常是一个编辑器，用于定义其自己特定的命令，除了使用 IDE 的标准命令集所需的。 你的编辑器必须声明它使用标准命令，再定义任何新的命令、 上下文、 顶级菜单中菜单和工具栏 *.vsct*文件。 如果您创建就地激活编辑器，实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，并为在编辑器中定义的菜单和工具栏 *.vsct*文件而不是使用 OLE 2 菜单合并。  
   
--   若要防止出现拥挤的 UI 中的菜单命令，你应使用的现有命令在 IDE 中之前在发明新的命令。 共享的命令 SharedCmdDef.vsct 和 ShellCmdDef.vsct 中定义。 这些文件安装的 VisualStudioIntegration\Common\Inc 子目录中的默认情况下你[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安装。  
+-   若要防止出现拥挤的 UI 中的菜单命令，您应使用现有的命令在 IDE 中创建新的命令之前。 共享的命令中定义*SharedCmdDef.vsct*并*ShellCmdDef.vsct*。 这些文件安装的 VisualStudioIntegration\Common\Inc 子目录中的默认情况下你[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安装。  
   
--   `ISelectionContainer` 可以表示单个和多个选择。 每个选定的对象作为实现`IDispatch`对象。  
+-   `ISelectionContainer` 可以表示单个和多个选择。 每个所选的对象作为`IDispatch`对象。  
   
--   IDE 实现`IOleUndoManager`作为服务从可访问<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或对象可通过实例化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 编辑器实现`IOleUndoUnit`每个接口`Undo`操作。  
+-   IDE 实现`IOleUndoManager`作为一项服务可从访问<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或作为一个对象，可以通过实例化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 编辑器实现`IOleUndoUnit`为每个接口`Undo`操作。  
   
 -   有两个位置的自定义编辑器可以公开自动化对象：  
   
@@ -155,6 +155,6 @@ ms.locfileid: "31146018"
   
     -   `Window.Object`  
   
-## <a name="see-also"></a>另请参阅  
- [导致自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
+## <a name="see-also"></a>请参阅  
+ [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   
  [如何： 为编辑器提供的上下文](../extensibility/how-to-provide-context-for-editors.md)

@@ -22,12 +22,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ThumbMode
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 6e4f7da0c8d1727446c23ad25db2bf64228cbc9a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b72cbb0d2660507a0578781c79a7cbdf60be7d8b
+ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31061846"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39252233"
 ---
 # <a name="general-project-properties-android-c"></a>常规项目属性 (Android C++)
 

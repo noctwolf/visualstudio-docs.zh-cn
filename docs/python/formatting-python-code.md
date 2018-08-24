@@ -11,27 +11,27 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91a3651dcc7fd16bec2e094fd152242e67fa2d70
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: c8638f9398be823b05d2575157c1992e230674f9
+ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056906"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40008663"
 ---
-# <a name="formatting-python-code"></a>设置 Python 代码格式
+# <a name="format-python-code"></a>设置 Python 代码格式
 
-在 Visual Studio 中，可以快速重新设置代码格式以匹配预先配置的格式设置选项。
+在 Visual Studio 中，可以快速重新设置代码格式以匹配预配置的格式设置选项。
 
-- 若要设置选定内容的格式：请选择“编辑”>“高级”>“设置选定内容的格式”或按 Ctrl+E、F。
-- 若要设置整个文件的格式：请选择“编辑”>“高级”>“设置文档的格式”或按 Ctrl+E、D。
+- 若要设置选定内容的格式：请选择“编辑” > “高级” > “设置选定内容的格式”或按 Ctrl+E > F。
+- 若要设置整个文件的格式：请选择“编辑” > “高级” > “设置文档的格式”或按 Ctrl+E > D。
 
-可通过“工具”>“选项”>“文本编辑器”>“Python”>“格式”及其嵌套选项卡来设置选项。 需要选择“显示所有设置”来显示这些选项：
+可通过“工具” > “选项” > “文本编辑器” > “Python” > “格式”及其嵌套选项卡来设置选项。 需要选择“显示所有设置”来显示这些选项：
 
 ![Visual Studio 中的 Python“格式”选项](media/options-editor-formatting.png)
 
 默认情况下，“格式”选项设置为匹配 [PEP 8 样式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 “常规”选项卡确定何时应用格式；本文介绍了其他三个选项卡的设置。
 
-借助 [Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)，还可在“编辑”>“高级”菜单中添加有用的[“填充注释段落”](#fill-comment-paragraph-command)命令，如下节所述。
+借助 [Visual Studio 中的 Python 支持](installing-python-support-in-visual-studio.md)，还可在“编辑” > “高级”菜单中添加有用的[“Fill Comment Paragraph”](#fill-comment-paragraph-command)命令，如下节所述。
 
 ## <a name="spacing"></a>间距
 
@@ -45,41 +45,41 @@ ms.locfileid: "37056906"
 
 | 类定义选项 | 已选中 | 清除 |
 | --- | --- | --- | 
-| 在类定义名称和基列表之间插入空格 | `class X (object): pass` | `class X(object): pass` | 
-| 在基列表括号内插入空格 | `class X( object ): pass` | `class X(object): pass` |
-| 在空的基列表括号内插入空格 | `class X( ): pass` | `class X(): pass` |
+| **在类定义名称和基列表之间插入空格** | `class X (object): pass` | `class X(object): pass` | 
+| **在基列表括号内插入空格** | `class X( object ): pass` | `class X(object): pass` |
+| **在空的基列表括号内插入空格** | `class X( ): pass` | `class X(): pass` |
 
 <br/>
 
 | 函数定义选项 | 已选中 | 清除 |
 | --- | --- | --- |
-| 在函数声明名称和参数列表间插入空格 | `def X (): pass` | `def X(): pass` | 
-| 在参数列表括号内插入空格 | `def X( a, b ): pass` | `def X(a, b): pass` |
-| 在空的参数列表括号内插入空格 | `def X( ): pass` | `def X(): pass` |
-| 在默认参数值中的“=”周围插入空格 | `includes X(a = 42): pass` | `includes X(a=42): pass` |
-| 在返回批注运算符前后插入空格 | `includes X() -> 42: pass` | `includes X()->42: pass` |
+| **在函数声明名称和参数列表间插入空格** | `def X (): pass` | `def X(): pass` | 
+| **在参数列表括号内插入空格** | `def X( a, b ): pass` | `def X(a, b): pass` |
+| **在空的参数列表括号内插入空格** | `def X( ): pass` | `def X(): pass` |
+| **在默认参数值中的“=”周围插入空格** | `includes X(a = 42): pass` | `includes X(a=42): pass` |
+| **在返回批注运算符前后插入空格** | `includes X() -> 42: pass` | `includes X()->42: pass` |
 
 <br/>
 
 | 运算符选项 | 已选中 | 清除 |
 | --- | --- | --- |
-| 在二元运算符周围插入空格 | `a + b` | `a+b` |
-| 在赋值周围插入空格 | `a = b` | `a=b` |
+| **在二元运算符周围插入空格** | `a + b` | `a+b` |
+| **在赋值周围插入空格** | `a = b` | `a=b` |
 
 <br/>
 
 | 表达式间距选项 | 已选中 | 清除 |
 | --- | --- | --- |
-| 在函数调用名称和参数列表间插入空格 | `X ()` | `X()` |
-| 在空参数列表的括号中插入空格 | `X( )` | `X()` |
-| 在参数列表的括号中插入空格 | `X( a, b )` | `X(a, b)` |
-| 在表达式的括号内插入空格 | `( a )` | `(a)` |
-| 在空的元组括号内插入空格 | `( )` | `()` |
-| 在元组括号内插入空格 | `( a, b )` | `(a, b)` |
-| 在空方括号中插入空格 | `[ ]` | `[]` |
-| 在列表的方括号内插入空格 | `[ a, b ]` | `[a, b]` |
-| 在左方括号前插入空格 | `x [i]` | `x[i]` |
-| 在方括号中插入空格 | `x[ i ]` | `x[i]` |
+| **在函数调用名称和参数列表间插入空格** | `X ()` | `X()` |
+| **在空参数列表的括号中插入空格** | `X( )` | `X()` |
+| **在参数列表的括号中插入空格** | `X( a, b )` | `X(a, b)` |
+| **在表达式的括号内插入空格** | `( a )` | `(a)` |
+| **在空的元组括号内插入空格** | `( )` | `()` |
+| **在元组括号内插入空格** | `( a, b )` | `(a, b)` |
+| **在空方括号中插入空格** | `[ ]` | `[]` |
+| **在列表的方括号内插入空格** | `[ a, b ]` | `[a, b]` |
+| **在左方括号前插入空格** | `x [i]` | `x[i]` |
+| **在方括号中插入空格** | `x[ i ]` | `x[i]` |
 
 <br/>
 
@@ -89,9 +89,9 @@ ms.locfileid: "37056906"
 
 | 选项 | 设置格式前 | 设置格式后 |
 | --- | --- | --- |
-| 将导入的模块置于新行 | `import sys, pickle` | `import sys`<br/>`import pickle` |
-| 移除不必要的分号 | `x = 42;` | `x = 42` |
-| 将多个语句置于新行 | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
+| **将导入的模块置于新行** | `import sys, pickle` | `import sys`<br/>`import pickle` |
+| **移除不必要的分号** | `x = 42;` | `x = 42` |
+| **将多个语句置于新行** | `x = 42; y = 100` | `x = 42`<br/>`y = 100` |
 
 ## <a name="wrapping"></a>换行
 
@@ -110,7 +110,7 @@ ms.locfileid: "37056906"
 
 ## <a name="fill-comment-paragraph-command"></a>填充注释段落命令
 
-使用“编辑”>“高级”>“填充注释段落”（Ctrl+E、P）可重排并设置注释文本格式，从而组合短行、分割长行。
+使用“编辑” > “高级” > “填充注释段落”(Ctrl+E > P) 可重排并设置注释文本格式，从而组合短行、分割长行。
 
 例如:
 

@@ -1,5 +1,5 @@
 ---
-title: Groups 元素 |Microsoft 文档
+title: Groups 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f10983961f5449d75d63555b593350199921fbd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bb437530e121daab218d8506bb41493c0423e826
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126918"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39497342"
 ---
-# <a name="groups-element"></a>组元素
-包含定义的 VSPackage 命令组的条目。  
+# <a name="groups-element"></a>Groups 元素
+包含定义 VSPackage 的命令组的条目。  
   
 ## <a name="syntax"></a>语法  
   
-```  
+```xml  
 <Groups>  
   <Group>... </Group>  
   <Group>... </Group>  
@@ -47,7 +47,7 @@ ms.locfileid: "31126918"
 |元素|描述|  
 |-------------|-----------------|  
 |[Group 元素](../extensibility/group-element.md)|表示单个命令组。|  
-|[Groups 元素](../extensibility/groups-element.md)|包含定义的 VSPackage 命令组的条目。|  
+|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -57,7 +57,7 @@ ms.locfileid: "31126918"
   
 ## <a name="example"></a>示例  
   
-```  
+```xml  
 <Groups>  
   <Group guid="cmdSetGuidWidgetCommands" id="groupIDFileEdit">  
     <Parent guid="guidSHLMainMenu" id="IDM_VS_TOOL_MAINMENU"/>  
@@ -65,6 +65,6 @@ ms.locfileid: "31126918"
 </Groups>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
+ [命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

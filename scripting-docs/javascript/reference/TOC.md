@@ -1,5 +1,0 @@
-# [JavaScript 引用](javascript-reference.md)
-## [版本信息](javascript-version-information.md)
-## [JavaScript 错误](javascript-errors.md)
-### [JavaScript 运行时错误](javascript-run-time-errors.md)
-### [JavaScript 语法错误](javascript-syntax-errors.md)

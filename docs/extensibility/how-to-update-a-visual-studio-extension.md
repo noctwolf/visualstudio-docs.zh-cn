@@ -1,5 +1,5 @@
 ---
-title: 如何： 更新 Visual Studio 扩展 |Microsoft 文档
+title: 如何： 更新 Visual Studio 扩展 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,21 +15,21 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c37f26ed8215bb7eac360c978ba902c8e95975ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8bf951215dfb4f6837c157a7b8510fba2d09f140
+ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134661"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39500182"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何： 更新 Visual Studio 扩展
-可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果你创建的扩展的更新的版本，你可以将其表示为更新的 VSIX 清单中的版本号递增。  
+可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果您创建扩展的更新的版本，您可以将其表示为更新的 VSIX 清单中的版本号递增。  
   
- 更新安装时传入的扩展的 VSIX 清单具有相同`ID`以及安装的一个更高`Version`数。 如果`Version`数量是相同或更低时，无法安装此包。 如果`ID`值不匹配、 尚未安装的包被识别为单独的扩展。  
+ 安装更新时传入的扩展的 VSIX 清单具有相同`ID`已安装的证书和更高版本作为`Version`数。 如果`Version`数是相同或更低时，无法安装此包。 如果`ID`值不匹配、 尚未安装的包识别为单独的扩展。  
   
- 为了帮助在开发过程中防止冲突，我们建议您卸载早期版本的进度中的扩展和也卸载或禁用可能会有冲突的任何其他扩展。  
+ 若要帮助防止冲突，在开发过程中，我们建议您卸载早期版本的扩展正在运行，并还卸载或禁用发生潜在冲突的任何其他扩展。  
   
-### <a name="to-update-an-extension-on-your-system"></a>若要更新你的系统上的某个扩展  
+## <a name="to-update-an-extension-on-your-system"></a>若要更新你的系统上的扩展  
   
 1.  在  “工具”菜单上，单击 “扩展和更新”。  
   
@@ -41,28 +41,28 @@ ms.locfileid: "31134661"
   
 4.  在右窗格的底部，单击**更新**。  
   
-### <a name="to-publish-an-update-of-an-extension"></a>若要发布的扩展更新  
+## <a name="to-publish-an-update-of-an-extension"></a>若要发布扩展的更新  
   
 1.  在 Visual Studio 中，打开你想要更新的扩展的解决方案。 进行更改。  
   
     > [!IMPORTANT]
-    >  无符号执行不会自动更新所有的用户扩展。 始终应登录你的扩展。  
+    >  无符号不会自动更新所有用户扩展。 你始终应登录你的扩展。  
   
-2.  在**解决方案资源管理器**，打开 source.extension.manifest。  
+2.  在中**解决方案资源管理器**，打开*source.extension.manifest*。  
   
-3.  在清单设计器中的数字的值增加**版本**字段。  
+3.  在清单设计器中的数字将值增加**版本**字段。  
   
-4.  保存解决方案并生成它。  
+4.  保存解决方案，并生成它。  
   
-5.  （在项目的 \bin\Debug\ 文件夹） 的新.vsix 文件上载到[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web 站点。  
+5.  上传新 *.vsix*文件 (在 * \bin\Debug\*项目文件夹中的) 到[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) Web 站点。  
   
-     当有早期版本的扩展的用户打开**扩展和更新**，新的版本将出现在**更新**列表，前提是该工具设置为自动查找更新。  
+     当具有扩展的早期版本的用户身份打开**扩展和更新**，新版本将出现在**更新**列表中，前提是该工具将自动查找更新。  
   
-     你可以启用或禁用自动检查更新底部**更新**窗格 (**启用/禁用自动检测可用的更新**)，哪些更改**检查更新**中设置**工具 / 选项 / 环境 / 扩展和更新**。  
+     可以启用或禁用自动检查更新的底部**更新**窗格 (**可用更新的启用/禁用自动检测**)，哪些更改**检查更新**中设置**工具** > **选项** > **环境** >  **扩展和更新**。  
   
     > [!NOTE]
-    >  从 Visual Studio 2015 Update 2 开始，可以指定（在“工具”/“选项”/“环境”/“扩展和更新”中）是否需要为每用户扩展、所有用户扩展或两者（默认设置）进行自动更新。  
+    >  从 Visual Studio 2015 Update 2 开始，你可以指定 (在**工具** > **选项** > **环境** >  **扩展和更新**) 是否需要自动更新为每用户扩展、 所有用户扩展或两者 （默认设置）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
  [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)
