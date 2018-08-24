@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a83dbde9bbb9907ee58909c254953554ad7de285
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118776"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635676"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练： 使用关联和初始化表单创建工作流
   本演练演示如何创建一个基本顺序工作流，其中包含使用关联和初始化窗体。 这些是启用 SharePoint 管理员 （关联窗体），首次关联以及由用户 （启动窗体） 启动工作流时要添加到工作流参数的 ASPX 窗体。  
@@ -62,7 +62,7 @@ ms.locfileid: "37118776"
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。  
   
 -   Visual Studio。  
   

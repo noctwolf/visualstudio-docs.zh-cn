@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 614a2e04cd1a7cba054ca209784619021b128e5e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118496"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627352"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练： 创建自定义站点工作流活动
   本演练演示如何创建自定义活动的站点级工作流使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （站点级工作流应用于整个站点，而不仅仅是在站点上的列表。）自定义活动创建的备份通知列表，然后将公告列表的内容复制到其中。  
@@ -48,7 +48,7 @@ ms.locfileid: "37118496"
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 有关详细信息，请参阅[开发 SharePoint 解决方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   支持的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。
   
 -   Visual Studio。  
   

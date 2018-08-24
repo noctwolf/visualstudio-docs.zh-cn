@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 921c426fd406c7ed256a50674ac617a75d4c1115
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 2188df700977fdb098b0af7faa4db1edd9f72e1d
+ms.sourcegitcommit: 4400926d00b5f5d52f03cb5d6f8a582d6049ecd9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081574"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42623578"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;入口点&gt;元素 （ClickOnce 应用程序）
 标识应为程序集时执行此[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]客户端计算机上运行应用程序。  
@@ -33,8 +33,7 @@ ms.locfileid: "39081574"
 ## <a name="syntax"></a>语法  
   
 ```xml  
-  
-      <entryPoint  
+<entryPoint  
    name  
 >  
    <assemblyIdentity  

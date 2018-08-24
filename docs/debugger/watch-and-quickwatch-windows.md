@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a29a5d8961688f710181dce553d0895a4bb475
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: aaba3f16ccf08fa56e6f529192ae9ad9cab6d496
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057156"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635432"
 ---
 # <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>使用监视和 Visual Studio 中的快速监视 Windows 对变量设置监视
 在调试时可以使用**Watch**并**快速监视**监视变量和表达式。  区别是“监视”  窗口可以显示多个变量，而“快速监视”  窗口一次仅显示单个变量。 
@@ -231,7 +231,7 @@ public class Program
 ## <a name="dynamic-view-and-the-watch-window"></a>动态视图和监视窗口  
  某些脚本语言 （例如，JavaScript 或 Python） 使用动态或[鸭子类型化](https://en.wikipedia.org/wiki/Duck_typing)，而.NET 语言 （在版本 4.0 以及更高版本） 支持对象难以观察使用一般调试窗口中，因为它们可能无法显示的运行时属性和方法。  
   
- 当监视窗口显示从实现的类型创建的对象[IDynamicMetaObjectProvider 接口](/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7)，调试器将添加一个特殊**动态视图**节点到**自动**显示。 此节点显示动态对象的动态成员，但不允许编辑成员值。  
+ 当监视窗口显示从实现的类型创建的对象<xref:System.Dynamic.IDynamicMetaObjectProvider>，调试器将添加一个特殊**动态视图**到节点**自动**显示。 此节点显示动态对象的动态成员，但不允许编辑成员值。  
   
  如果你右键单击任何一个“动态视图”  的子级，并选择“添加监视” ，调试器会插入一个将对象强制转换为一个动态对象的新监视变量。 换言之，“object Name”  变为“((dynamic)object).Name”。  
   

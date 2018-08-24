@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23512005bed66550b4a1de0f0a2de830d9fb823b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4f2cf01bcc8b2854eb1e4c3c711af524a8480bdc
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498988"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42635127"
 ---
 # <a name="ide-constants"></a>IDE 常量
 
@@ -54,30 +54,30 @@ ms.locfileid: "39498988"
 |“值”|描述|
 |-----------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|返回到异步行为的接口的常量时在相关对象已经忙|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]"不兼容的文档数据"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"未加载的包。"|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和该异常指示"已存在项目。"|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"项目配置失败。"|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"未加载的项目。"|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"已打开解决方案"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"未打开解决方案"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|错误的 HRESULT 的特定于 Visual Studio"不兼容的文档数据"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|错误的 HRESULT 的特定于 Visual Studio，并指示"未加载的包。"|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|错误的 HRESULT 的特定于 Visual Studio，并指示"已存在项目。"|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|错误的 HRESULT 的特定于 Visual Studio，并指示"项目配置失败。"|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|错误的 HRESULT 的特定于 Visual Studio，并指示"未加载的项目。"|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|错误的 HRESULT 的特定于 Visual Studio，并指示"已打开的解决方案。"|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|错误的 HRESULT 的特定于 Visual Studio，并指示"未打开解决方案。"|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|返回具有指定一个字符串数组中的参数的生成接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput>接口，但实现仅可以对所有输出应用方法。|
 |<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>方法返回此值，如果文档具有格式不能在编辑器中打开。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|HRESULT 值，该值指示在用户单击后退按钮在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]向导。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|HRESULT 值，该值指示在用户单击 Visual Studio 向导中的后退按钮。|
 
 ## <a name="visual-studio-constants"></a>Visual Studio 常量
 
 |“值”|描述|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|错误的 HRESULT 的特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，指示"项目转发。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|一个常量，它是特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]为"工具箱标记"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|一个常量，它是特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以便为广播一条通知消息通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>方法指示模态的开头。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|一个常量，它是特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以便为广播一条通知消息通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>指示模式末尾的方法。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|一个常量，它是特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以便为广播一条通知消息通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>，该值指示已更改的命令栏度量值的方法。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|一个常量，它是特定于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，该值指示尚未设置 cookie。|
-|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]表示项目项不存在的项标识符。 当前没有选定内容时，使用此值。|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]表示项目层次结构的根，用于标识整个层次结构，而不是单个项的项标识符。|
-|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]表示当前所选的一个或多个项目，可以包含层次结构的根的项标识符。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|错误的 HRESULT 的特定于 Visual Studio，并指示"项目转发。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|一个常量，它是特定于 Visual Studio 的"工具箱标记"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|一个常量，它是特定于 Visual Studio 的广播通知消息，通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>方法指示模态的开头。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|一个常量，它是特定于 Visual Studio 的广播通知消息，通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>指示模式末尾的方法。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|一个常量，它是特定于 Visual Studio 的广播通知消息，通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A>，该值指示已更改的命令栏度量值的方法。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|一个常量，它是特定于 Visual Studio，指示尚未设置 cookie。|
+|[VSITEMID.Nil](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|表示项目项不存在的 Visual Studio 项标识符。 当前没有选定内容时，使用此值。|
+|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|Visual Studio 项标识符，表示项目层次结构的根，用于标识整个层次结构，而不是单个项。|
+|[VSITEMID.Selection](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|一个表示当前所选的一个或多个项目，可以包含层次结构的根 Visual Studio 项标识符。|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
  描述在 IDE 的哪个组件只是已选择，在<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>调用，例如。

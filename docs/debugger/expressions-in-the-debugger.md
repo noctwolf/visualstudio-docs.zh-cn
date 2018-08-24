@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: caaa13d67c30e07cd95c7a959e17117199188c0c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056643"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42626027"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支持的表达式  
   
 ### <a name="dynamic-objects"></a>动态对象  
- 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现[IDynamicMetaObjectProvider 接口](/dotnet/api/system.dynamic.idynamicmetaobjectprovider)中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
+ 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现<xref:System.Dynamic.IDynamicMetaObjectProvider>中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
   
  不支持动态对象的下列功能：  
   

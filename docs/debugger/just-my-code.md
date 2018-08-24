@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb5534d376cf1a0c60b20080df8c8bfc6ad6689
-ms.sourcegitcommit: 886759fb35a88f6ef5452c5b2e33a1f71da4489a
+ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34851820"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627336"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否仅在 Visual Studio 中使用仅我的代码的用户代码进行调试
 你可以配置 Visual Studio 可自动逐过程执行系统、 框架和其他非用户调用和折叠调用堆栈窗口中的这些调用。 启用或禁用此行为的功能称为*仅我的代码*。 本主题介绍如何在 C#、 Visual Basic、 c + + 和 JavaScript 项目中使用仅我的代码。
@@ -67,7 +67,9 @@ ms.locfileid: "34851820"
 ##  <a name="BKMK_C___Just_My_Code"></a> C + + 仅我的代码  
   
 ###  <a name="BKMK_CPP_User_and_non_user_code"></a> 用户和非用户代码  
- C++“仅我的代码”与 .NET Framework 和 JavaScript“仅我的代码”不同，因为单步执行行为独立于调用堆栈行为。  
+C++“仅我的代码”与 .NET Framework 和 JavaScript“仅我的代码”不同，因为单步执行行为独立于调用堆栈行为。  
+
+从 Visual Studio 2017 15.8 开始，你可以指定是否启用仅我的代码使用 c + +**工具** > **选项** > **调试** > **常规** > **启用 ' 仅我的代码**（默认情况下已启用）。 这相当于使用[/JMC （仅我的代码的调试）](/cpp/build/reference/jmc)编译器开关。
   
  **调用堆栈**  
   
@@ -88,7 +90,7 @@ ms.locfileid: "34851820"
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 单步执行行为  
  当您**单步执行**(键盘快捷键： F11) 从用户代码的非用户代码时，调试器将逐步执行代码到下一行用户代码。 当您**单步跳出**(键盘： Shift + F11)，调试器会运行到下一行用户代码。 如果遇到没有用户代码，则执行将继续，直到应用退出、 命中断点，或发生异常。  
   
- 如果调试器在非用户代码中中断（例如，如果“全部中断”命令在非用户代码中停止），则单步执行会继续在非用户代码中进行。  
+ 如果调试器在非用户代码中中断（例如，如果“全部中断”命令在非用户代码中停止），则单步执行会继续在非用户代码中进行。
   
 ###  <a name="BKMK_CPP_Exception_behavior"></a> 异常行为  
  当调试器遇到异常时，它将停止上而不考虑它是否在用户或非用户代码中的异常。 **未经用户处理**中的选项**异常**对话框将被忽略。  

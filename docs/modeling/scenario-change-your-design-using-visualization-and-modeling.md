@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e87ece3deb5d55f1e184974135eeddcec1ebbfc
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
+ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177326"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "42623795"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -218,7 +218,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 - [使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
 
-- [适用于 Visual Studio ALM 的图表、仪表板和报表](http://msdn.microsoft.com/Library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)
+- [图表、 仪表板和小组件 (VSTS)](/vsts/report/dashboards/overview?view=vsts)
 
 - [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
