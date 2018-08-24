@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ---
 title: 如何：仅使用键盘进行操作
 description: 了解如何使用默认快捷键组合在 Visual Studio 集成开发环境 (IDE) 中轻松导航和编码。
