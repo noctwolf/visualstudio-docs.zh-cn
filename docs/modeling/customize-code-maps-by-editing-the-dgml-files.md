@@ -1,5 +1,5 @@
 ---
-title: Customize code maps by editing the DGML files
+title: 通过编辑 DGML 文件自定义代码图
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -29,7 +29,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/26/2018
 ms.locfileid: "31952710"
 ---
-# <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
+# <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 若要自定义代码图，可以编辑代码图的定向关系图标记语言 (.dgml) 文件。 例如，可以编辑元素来指定自定义样式，向代码元素和链接分配属性和类别，或将文档（或 URL）链接到代码元素（或链接）。 有关 DGML 元素的详细信息，请参阅[定向图形标记语言 (DGML) 引用](../modeling/directed-graph-markup-language-dgml-reference.md)。
 
  在文本编辑器或 XML 编辑器中编辑代码图的 .dgml 文件。 如果映射为 Visual Studio 解决方案的一部分，选择在**解决方案资源管理器**，打开快捷菜单，然后选择**打开**， **XML （文本） 编辑器**。
