@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: b354045ceb464a14ff909a503aa62477c73b983c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280872"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054567"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>开始使用 Visual Studio 的 Kubernetes 工具
 
@@ -24,7 +24,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 若要利用这一新功能，你将需要：
 
-- 最新预览[Visual Studio 2017](https://visualstudio.microsoft.com/vs/preview) Azure 开发工作负荷。
+- 最新版[Visual Studio 2017](https://visualstudio.microsoft.com/download)与*ASP.NET 和 web 开发*工作负荷。
 
 - [用于 Visual Studio 的 Kubernetes 工具](https://aka.ms/get-vsk8stools)、 作为单独的下载可用。
 

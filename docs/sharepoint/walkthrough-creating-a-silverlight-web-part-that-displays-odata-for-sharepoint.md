@@ -80,7 +80,7 @@ ms.locfileid: "42626160"
   
 3.  中的地址框**添加服务引用**对话框框中，输入您的 SharePoint 站点的 URL，例如**http://MySPSite**，然后选择**转**按钮。  
   
-     时 Silverlight 定位 SharePoint OData 服务 ListData.svc，将使用完整的服务的 URL 替换该地址。 对于本例，请http://myserver变得http://myserver/_vti_bin/ListData.svc。  
+     时 Silverlight 定位 SharePoint OData 服务 ListData.svc，将使用完整的服务的 URL 替换该地址。 对于本例，请 http://myserver 变得 http://myserver/_vti_bin/ListData.svc 。  
   
 4.  选择**确定**按钮添加到项目中，服务引用，然后使用默认服务名称 ServiceReference1。  
   
