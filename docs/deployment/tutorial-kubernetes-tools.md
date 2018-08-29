@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 26aa451aa58017720b058266813ad465fbbc740e
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054567"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138938"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>开始使用 Visual Studio 的 Kubernetes 工具
 
-Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应用程序的开发。 Visual Studio 可以自动创建支持 Kubernetes 部署，如 Dockerfile 和 Helm 图表所需的配置即代码文件。 此外，您可以直接发布到 Azure Kubernetes 服务 (AKS) 群集从 Visual Studio。
+Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应用程序的开发。 Visual Studio 可以自动创建支持 Kubernetes 部署，如 Dockerfile 和 Helm 图表所需的配置即代码文件。 可以调试实时 Azure Kubernetes 服务 (AKS) 群集使用 Azure 开发人员空间中的代码，也可以直接发布到 AKS 群集从 Visual Studio 内部。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -28,7 +28,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 - [用于 Visual Studio 的 Kubernetes 工具](https://aka.ms/get-vsk8stools)、 作为单独的下载可用。
 
-- [适用于 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)开发工作站上安装 （即，在其中运行 Visual Studio）
+- [适用于 Windows 的 docker](https://store.docker.com/editions/community/docker-ce-desktop-windows)开发工作站上安装 （即，其中你运行 Visual Studio），如果你想要生成 Docker 映像，调试本地运行的 Docker 容器或发布到 AKS。
 
 - 如果你想要从 Visual Studio 发布到 AKS:
 
@@ -74,7 +74,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 - 一个 Helm 图表和一个*图表*文件夹。 这些 yaml 文件构成了为应用程序，可用来将其部署到 Kubernetes Helm 图表。 Helm 的详细信息，请参阅[ https://www.helm.sh ](https://www.helm.sh)。
 
-- *azds.yaml*。 这包含 Azure 开发人员空格，提供快速、 迭代的调试体验，在 Azure Kubernetes 服务中的新服务的设置。 此文件是当前未使用，但保留供将来使用由 Azure 开发人员空格。
+- *azds.yaml*。 这包含 Azure 开发人员空格，这提供了快速、 迭代的调试体验，在 Azure Kubernetes 服务中的设置。 有关详细信息，请参阅[Azure 开发人员空间文档](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces)。
 
 ## <a name="publish-to-azure-kubernetes-service-aks"></a>发布到 Azure Kubernetes 服务 (AKS)
 
