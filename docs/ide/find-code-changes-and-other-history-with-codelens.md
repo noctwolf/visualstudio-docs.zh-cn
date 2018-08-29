@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f0c8dd142f9517dcaef3a40d613d43b8e650a3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 22d3a6ea380fdbfb8f6a41fce21d0ad283808d85
+ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36235218"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43054473"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -206,7 +206,7 @@ ms.locfileid: "36235218"
 
 1. 转到具有关联的[单元测试代码](../test/unit-test-your-code.md)的应用程序代码。
 
-2. 如果还没有，请生成应用程序以加载 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)。
+2. 如果还没有，请生成应用程序以加载 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#assembly-based-discovery)。
 
 3. 按 Alt+3，查看代码的测试。
 
@@ -327,7 +327,8 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>问：首次打开解决方案时，文件中不再显示 CodeLens 测试指示器。 如何加载它们？
 
-**答：** 重新生成项目，获取要加载到文件中的 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#3-assembly-based-discovery-is-no-longer-working-for-my-project-how-do-i-turn-it-back-on)。 为了提高性能，Visual Studio 在加载代码文件时不再提取测试指示器的源信息。 测试指示器在生成后或在导航到测试时（通过在“测试资源管理器”中双击该测试）加载。
+**答：** 重新生成项目，获取要加载到文件中的 CodeLens 测试指示器。 确保已打开[各生成程序集的发现](../test/test-explorer-faq.md#assembly-based-discovery
+)。 为了提高性能，Visual Studio 在加载代码文件时不再提取测试指示器的源信息。 测试指示器在生成后或在导航到测试时（通过在“测试资源管理器”中双击该测试）加载。
 
 ## <a name="see-also"></a>请参阅
 
