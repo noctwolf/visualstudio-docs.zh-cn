@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ad01352b9b5376d1a55946a7c5da9029b52fd064
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978406"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901480"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -219,6 +219,7 @@ DataCollectors 元素指定诊断数据适配器的设置。 诊断数据适配�
 public void HomePageTest()
 {
     string appURL = TestContext.Properties["webAppUrl"];
+}
 ```
 
 若要使用测试运行参数，请将专用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 字段和公共 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> 属性添加到测试类。
@@ -234,7 +235,7 @@ public void HomePageTest()
     <AssemblyResolution>
       <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/>
     </AssemblyResolution>
-</MSTest
+</MSTest>
 ```
 
 这些设置特定于运行具有 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> 特性的测试方法的测试适配器。
