@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ba7338645ab6cc421716832a3d6f424bb57dfc
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34844386"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42627310"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -34,7 +34,6 @@ ms.locfileid: "34844386"
 |----------|----------|--------------------------|
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
 ||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../ide/install-and-manage-local-content.md)|
-|应用程序类型|部署 SharePoint 的解决方案。|[开发 SharePoint 解决方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|
 |生成|使用注册组件的生成后事件。|[了解自定义生成步骤和生成事件](/cpp/ide/understanding-custom-build-steps-and-build-events)|
 ||在生成 C++ 项目时包括一个注册步骤。||

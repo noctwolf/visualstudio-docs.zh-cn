@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6cafcf7668cf4dba84ef6afc35f87d5bf93bf08
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: dd700d822ca50f67060400578bca8e0757e84a89
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978419"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42627170"
 ---
 # <a name="model-editor"></a>模型编辑器
 
@@ -48,14 +48,14 @@ ms.locfileid: "38978419"
 
    ![“添加新项”对话框（已选择 3D 场景）](media/add-new-3d-scene.png)
 
-3. 输入模型文件的名称，然后选择“添加”。
+   > [!NOTE]
+   > 如果“添加新项”对话框中没有“图形”类别，则可能需要安装“图像和三维模型编辑器”组件。 关闭对话框，然后从菜单栏选择“工具” > “获取工具和功能”，以打开“Visual Studio 安装程序”。 选择“单个组件”选项卡，然后选择“游戏和图形”类别下的“图像和三维模型编辑器”组件。 选择“修改”。
+   >
+   > ![图像和三维模型编辑器组件](media/image-3d-model-editors-component.png)
+   >
+   > 如果已安装“图像和三维模型编辑器”组件，但仍未显示“图形”模板类别，则请注意，该类别仅针对某些项目类型显示（如控制台应用程序）。
 
-> [!NOTE]
-> 如果“添加新项”对话框中没有“图形”类别，则可能需要安装“图像和三维模型编辑器”组件。 关闭对话框，然后从菜单栏选择“工具” > “获取工具和功能”，以打开“Visual Studio 安装程序”。 选择“单个组件”选项卡，然后选择“游戏和图形”类别下的“图像和三维模型编辑器”组件。 选择“修改”。
->
-> ![图像和三维模型编辑器组件](media/image-3d-model-editors-component.png)
->
-> 如果已安装“图像和三维模型编辑器”组件，但仍未显示“图形”模板类别，则请注意，该类别仅针对某些项目类型显示（如控制台应用程序）。
+3. 输入模型文件的名称，然后选择“添加”。
 
 ### <a name="axis-orientation"></a>轴方向
 
