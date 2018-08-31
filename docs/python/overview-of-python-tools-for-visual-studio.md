@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 368809792e05ad418fccf65640ae99470128f6aa
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468772"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626924"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -84,7 +84,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 项目和项模板可自动完成不同类型的项目和文件的设置过程，能为用户节省宝贵的时间，无需用户管理错综复杂又容易出错的细枝末节。 Visual Studio 提供适用于 Web、Azure、数据科学、控制台和其他类型项目的模板，以及适用于 Python 类、单元测试、Azure Web 配置、HTML 甚至 Django 应用等文件的模板。
 
-[![Visual Studio 中的 Python 项目和项模板](media/project-and-item-templates.png)](media/project-and-item-templates.png)
+[![Visual Studio 中的 Python 项目和项模板](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 更多相关信息：
 
@@ -114,7 +114,7 @@ Visual Studio 可帮助管理项目随时间增加的复杂性。 项目不仅�
 
 通过分析可以了解应用程序内的时间分配。 Visual Studio 支持使用基于 CPython 的解释器进行分析，并且能比较运行的不同分析之间的性能差异。
 
-[![Visual Studio 探查器处理 Python 项目的结果](media/profiling-results.png)](media/profiling-results.png)
+[![Visual Studio 探查器处理 Python 项目的结果](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 更多相关信息：
 
