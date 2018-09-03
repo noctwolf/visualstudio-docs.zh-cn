@@ -49,6 +49,7 @@
 ##### [VLSC 管理迁移常见问题解答](vlsc-admin-faq.md)
 ##### 加入组织
 ###### [迁移后加入](post-migration-onboarding.md)
+###### [开放式许可证迁移](open-migration.md)
 ###### [加入电子邮件通信](volume-license-onboarding-email.md)
 ###### [查找你的 PCN](find-pcn.md)
 ###### [查找你的主要联系人](find-primary-contact.md)
