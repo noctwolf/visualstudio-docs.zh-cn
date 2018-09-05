@@ -13,11 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab4e8bacb4d8188667822cd060166f217ba05df2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626891"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -31,7 +32,9 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 ![诊断工具摘要视图](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Diagnostic Tools Summary")
 
-“诊断工具”窗口通常是探查应用的首选方式，但对于版本生成，也可改为对应用执行事后分析。 如果想要了解关于不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要了解不同应用类型对应的探查工具支持，请参阅[我应使用哪个工具？](#tool_support_info)。
+“诊断工具”窗口通常是探查应用的首选方式，但对于版本生成，也可改为对应用执行事后分析。 若要详细了解不同方法，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要了解不同应用类型对应的探查工具支持，请参阅[我应使用哪个工具？](#which-tool-should-i-use)。
+
+> [注意] 可在 Windows 7 及更高版本中使用事后分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
 
 ## <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
 
@@ -51,9 +54,9 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 ![诊断工具调用方被调用方“蝶形”视图](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Diagnostics Tools Caller Callee View")
 
-## <a name="analyze-memory-usage"></a>分析内存使用量
+## <a name="analyze-memory-usage"></a>分析内存使用情况
 
-“诊断工具”窗口还可用于评估应用中的内存使用量。 例如，你可以查看堆上对象的数量和大小。 若要详细了解如何分析内存，请参阅[分析内存使用情况](../profiling/memory-usage.md)。
+“诊断工具”窗口还可用于评估应用中的内存使用情况。 例如，你可以查看堆上对象的数量和大小。 要更详细了解地如何分析内存，请参阅[分析内存使用情况](../profiling/memory-usage.md)。
 
 若要分析内存使用量，你需要在进行调试时拍摄至少一张内存快照。 通常，分析内存的最好方法是拍摄两张快照；一张正好拍摄于发生可疑内存问题之前，另一张拍摄于发生可疑内存问题之后。 然后可以查看两张快照的差异，并发现实际更改的内容。
 
@@ -78,19 +81,19 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 ![分析教程性能提示](../profiling/media/prof-tour-perf-tips.png "Profiling Tour PerfTips")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>检查 UI 性能和辅助功能事件 (UWP)
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>检查 UI 性能和可访问性事件 (UWP)
 
-在 UWP 应用中，你可以在“诊断工具”窗口中启用“UI 分析”。 该工具搜索常见的性能和辅助功能问题，在你进行调试时将其显示在“事件”视图中。 事件描述可提供有助于解决问题的信息。
+在 UWP 应用中，可在“诊断工具”窗口中启用“UI 分析”。 该工具搜索常见的性能和辅助功能问题，在你进行调试时将其显示在“事件”视图中。 事件描述可提供有助于解决问题的信息。
 
-![在诊断工具中查看 UI 分析事件](../profiling/media/prof-tour-ui-analysis.png "Diagnostic Tools View UI Analysis Events")
+![在诊断工具中查看 UI 分析事件](../profiling/media/prof-tour-ui-analysis.png "诊断工具查看 UI 分析事件")
 
-## <a name="profile-release-builds-without-the-debugger"></a>不使用调试器分析发行版本
+## <a name="post_mortem"></a>不使用调试器分析发行版本
 
-CPU 使用率和内存使用量等分析工具可以与调试器配合使用（参见前面部分），或者可以使用性能探查器运行分析工具，其目的是为**发行**生成提供分析。 在性能探查器中，可以在应用仍在运行时收集诊断信息，然后在应用停止后检查收集的信息。 有关这些不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
+CPU 使用率和内存使用量等分析工具可与调试器配合使用（见前文），你也可事后使用性能探查器运行分析工具，其的是就发行版本进行分析。 在性能探查器中，可以在应用仍在运行时收集诊断信息，然后在应用停止后检查收集的信息。 有关这些不同方法的详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
 
 ![性能探查器](../profiling/media/prof-tour-performance-profiler.png "Performance Profiler")
 
-选择“调试”>“性能探查器”打开性能探查器。
+选择“调试” > “性能探查器”以打开性能探查器。
 
 该窗口使你能够在某些应用场景中选择多个分析工具。 CPU 使用率等工具可提供在分析中有所帮助的补充性数据。
 
@@ -146,7 +149,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 
 ![性能资源管理器工具](../profiling/media/prof-tour-performance-explorer.png "Performance Explorer")
 
-## <a name="tool_support_info"></a>应使用哪一种工具？  
+## <a name="which-tool-should-i-use"></a>应使用哪一种工具？  
 
 下表列出了 Visual Studio 提供的不同工具以及适用的不同项目类型：
   
@@ -162,9 +165,6 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |[网络使用情况](../profiling/network-usage.md)|否|是|否|
 |[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|HTML 适用，XAML 不适用|否| 
 |[JavaScript 内存](../profiling/javascript-memory.md)|否|HTML 适用，XAML 不适用|否|
-
-> [!NOTE]
-> 对于 .NET Core 和 ASP.NET Core，CPU 使用情况工具当前不通过可移植 PBD 提供精确结果。 请改为使用完整的 PDB。
 
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)

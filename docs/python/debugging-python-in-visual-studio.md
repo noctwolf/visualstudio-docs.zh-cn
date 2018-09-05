@@ -1,7 +1,7 @@
 ---
 title: 调试 Python 代码
 description: Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
-ms.date: 07/13/2018
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 944dbd13472c7dda3149aef4496fab2bcd505df1
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498962"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626736"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -80,7 +80,7 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 | **跳出** | Shift+F11 | 运行代码，到达当前函数的结尾，然后执行调用语句。  不需要调试当前函数的其余部分时，可以使用此命令。 |
 | **运行到光标处** | Ctrl+F10 | 运行代码，直到编辑器中的插入符号位置。 使用此命令可以轻松跳过不需要调试的代码段。 |
 | **设置下一语句** | Ctrl+Shift+F10 | 将代码中的当前运行点更改为插入符号的位置。 此命令允许忽略运行某个代码段，例如，当已知代码出现故障或产生不良副作用时，可使用此命令。 |
-| **显示下一语句** | **Alt**+**Num**+**&#42;**| 返回到下一个要运行的语句。 已仔细查看代码但不记得调试器停止的位置时，可以使用此命令。 |
+| **显示下一语句** | **Alt**+**Num** **&#42;**| 返回到下一个要运行的语句。 已仔细查看代码但不记得调试器停止的位置时，可以使用此命令。 |
 
 ### <a name="inspect-and-modify-values"></a>检查和修改值
 
@@ -153,7 +153,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 | **脚本参数** | 这些参数添加到用于启动脚本的命令中，并且显示在脚本的文件名后。 此处可供脚本使用的第一项为 `sys.argv[1]`，第二项为 `sys.argv[2]`，以此类推。 |
 | **解释器参数** | 这些参数添加到启动程序命令行中的脚本名称之前。 此处常见的参数有：用于控制警告的 `-W ...`、用于略微优化程序的 `-O` 和用于使用未缓冲 IO的 `-u`。 IronPython 用户可能会使用此字段来传递 `-X` 选项，例如 `-X:Frames` 或 `-X:MTA`。 |
 | **解释器路径** | 替代与当前环境相关联的路径。 值可能可用于通过非标准解释器启动脚本。 |
-| **环境变量** | 在此多行文本框中，添加 \<NAME>=\<VALUE> 形式的条目。 由于除任何现有全局环境变量外，此设置是最后应用，因此在根据搜索路径设置设定 `PYTHONPATH` 之后，可以将该设置用于手动替代任何设置。 |
+| **环境变量** | 在此多行文本框中，添加 \<NAME>=\<VALUE> 形式的条目。 由于除任何现有全局环境变量外，此设置是最后应用，因此在根据搜索路径设置设定 `PYTHONPATH` 之后，可以将该设置用于手动替代任何其他变量。 |
 
 ## <a name="immediate-and-interactive-windows"></a>即时窗口和交互窗口
 
@@ -192,48 +192,44 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 
 ![调试交互窗口选项](media/debugging-interactive-options.png)
 
-## <a name="use-the-experimental-debugger"></a>使用试验性调试程序
+<a name="use-the-experimental-debugger"></a>
 
-从 Visual Studio 2017 预览版 4.0 开始，可以选择使用基于 ptvsd 4.1+ 版本的“试验性调试程序”。 若要选择使用该调试程序，请选择“工具” > “选项”菜单命令，然后在“选项”对话框中导航到“Python” > “试验”，然后选择“使用试验性调试程序”。
+## <a name="use-the-legacy-debugger"></a>使用旧版调试程序
 
-试验性调试程序仅与有限的 Python 环境兼容，如下表所述：
+Visual Studio 2017 版本 15.8 及更高版本使用基于 ptvsd 版本 4.1+ 的调试程序。 此版本的 ptvsd 与 Python 2.7 和 Python 3.5+ 兼容。 如果使用 Python 2.6、3.1 到 3.4 或 IronPython，Visual Studio 会显示“调试程序不支持此 Python 环境”错误：
 
-| Python 版本 | 是否与试验性调试程序兼容 |
-| --- | --- |
-| 2.6 | 否 |
-| 2.7 | 是 |
-| 3.1 到 3.4 | 否 |
-| 3.5 及更高版本 | 是 |
-| IronPython | 否 |
+![使用调试程序时，出现“调试程序不支持此 Python 环境”错误](media/debugging-experimental-incompatible-error.png)
 
-如果尝试在不兼容的环境中使用试验性调试程序，Visual Studio 将显示错误“调试程序与此环境不兼容”：
+在这些情况下，必须使用较早的调试程序（Visual Studio 2017 版本 15.7 及更早版本中的默认调试程序）。 选择“工具” > “选项”菜单命令，导航到“Python” > “调试”，然后选择“使用旧版调试程序”选项。
 
-![使用试验性调试程序时，出现“调试程序与此环境不兼容”错误](media/debugging-experimental-incompatible-error.png)
+如果已在当前环境中安装了旧版本的 ptvsd（例如早期的 4.0.x 版本或远程调试所需的 3.x 版本），则 Visual Studio 会显示错误或警告。
 
-选择“禁用试验性调试程序”命令，该命令将取消选中“使用试验性调试程序”选项。
+安装 ptvsd 3.x 时，出现“无法加载调试程序包”错误：
 
-> [!Note]
-> Python 3.3 和 3.4 目前不会显示警告。
+![使用调试程序时，出现“无法加载调试程序包”错误](media/debugging-experimental-version-error.png)
 
-如果已在当前环境中安装了旧版本的 ptvsd（例如远程调试所需的 3.x 版本的早期 4.0.x 版本），则 Visual Studio 会显示错误“无法加载调试程序包”或警告“调试程序包已过时”：
+在这种情况下，请选择“使用旧版调试程序”来设置“使用旧版调试程序”选项，然后重启调试程序。
 
-![使用试验性调试程序时，出现“无法加载调试程序包”错误](media/debugging-experimental-version-error.png)
+安装早期 4.x 版本的 ptvsd 时，出现“调试程序包已过时”警告：
 
-![使用试验性调试程序时，出现“调试程序包已过时”警告](media/debugging-experimental-version-warning.png)
-
-若要管理 ptvsd 安装，请使用“Python 环境”窗口中的“包”选项卡，或使用命令行中的以下命令：
-
-```powershell
-# Uninstalling ptvsd causes VS to default to its bundled 4.1.x version.
-pip uninstall ptvsd
-
-# Upgrading ptvsd gives you the latest version, which may be newer than the bundled version.
-# -pre is required to allow pre-release versions as currently required by the experimental debugger.
-pip install --upgrade ptvsd -pre
-```
+![使用调试程序时，出现“调试程序包已过时”警告](media/debugging-experimental-version-warning.png)
 
 > [!Important]
 > 虽然可以选择忽略某些 ptvsd 版本的警告，但 Visual Studio 可能无法正常运行。
+
+管理 ptvsd 安装：
+
+1. 导航到“Python 环境”窗口中的“包”选项卡。
+
+1. 在搜索框中输入“ptvsd”并检查已安装的 ptvsd 版本：
+
+    ![在“Python 环境”窗口中检查 ptvsd 版本](media/debugging-experimental-check-ptvsd.png)
+
+1. 如果版本低于 4.1.1a9（与 Visual Studio 捆绑的版本），请选择包右侧的“X”以卸载旧版本。 随后，Visual Studio 使用其捆绑版本。 （也可使用 `pip uninstall ptvsd` 从 PowerShell 卸载。）
+
+1. 或者，可将 ptvsd 包更新到其最新版本。 在搜索框中输入 `ptvsd --upgrade -pre`，然后选择“运行命令: pip install ptvsd --upgrade -pre”。 （也可使用 PowerShell 中的相同命令。）
+
+    ![在“Python 环境”窗口中提供升级命令](media/debugging-experimental-upgrade-ptvsd.png)
 
 ## <a name="see-also"></a>请参阅
 

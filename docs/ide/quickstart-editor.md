@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的编辑功能简介
+title: 编辑简介
 ms.date: 11/30/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f4dd635e2d90a0ed56b4732c79bb67b569f09b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 420250a9e8dc99d6a02505efa7efb8f44e287e12
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511230"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627059"
 ---
-# <a name="quickstart-use-the-code-editor"></a>快速入门：使用代码编辑器
+# <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
 在这个 10 分钟的 Visual Studio 代码编辑器简介中，我们会向文件添加代码，了解 Visual Studio 编写、导航和了解代码的简便方法。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
-此快速入门假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 创建控制台应用。
+本文假定你已熟悉编程语言。 如果不熟悉，则建议首先查看其中一个编程快速入门，如使用 [Python](../ide/quickstart-python.md) 或 [C#](../ide/tutorial-csharp-aspnet-core.md) 创建 Web 应用，或使用 [Visual Basic](../ide/quickstart-visual-basic-console.md) 或 [C++](../ide/getting-started-with-cpp-in-visual-studio.md) 创建控制台应用。
 
 ## <a name="create-a-new-code-file"></a>创建新代码文件
 
@@ -157,16 +157,8 @@ Visual Studio 提供了实用的代码片段，可用于快速方便地生成常
 
 ## <a name="next-steps"></a>后续步骤
 
-你已经完成了 Visual Studio 编辑器的快速入门。 接下来，可以尝试了解的一些其他适用于 Visual Studio 开发环境的快速入门。
-
 > [!div class="nextstepaction"]
-> [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：个性化设置 Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
+> [了解项目和解决方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>请参阅
 

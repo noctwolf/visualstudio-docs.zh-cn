@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a6b95e375fa509c18c44c9c5ba462e1b6b27fb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: a309dd0abe1332a37c9865a6e38bba9c0eb00dde
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500116"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626648"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -34,7 +34,7 @@ ms.locfileid: "39500116"
 
 ## <a name="intellisense"></a>IntelliSense
 
-IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 Visual Studio 2017 版本 15.7 和更高版本还支持[类型提示](#type-hints)。
+IntelliSense 可提供[完成](#completions)、[签名帮助](#signature-help)、[快速信息](#quick-info)和[代码着色](#code-coloring)等功能。 Visual Studio 2017 版本 15.7 及更高版本还支持[类型提示](#type-hints)。
 
 为了提高性能，**Visual Studio 2017 版本 15.5** 和更早版本中的 IntelliSense 将取决于为项目中的每个 Python 环境生成的完成数据库。 添加、删除或更新包后可能需要刷新数据库。 数据库状态将显示在“IntelliSense”选项卡上的“Python 环境”窗口（解决方案资源管理器的同级）中（请参阅[环境窗口引用](python-environments-window-tab-reference.md#intellisense-tab)）。
 

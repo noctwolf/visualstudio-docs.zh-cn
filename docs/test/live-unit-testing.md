@@ -11,12 +11,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: fcdb8a25f9f82f317a1fcf5de1dd50a90bf6c4a7
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6e0bd322b200fba3bf41f99c4119cbe287ce2967
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586442"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42627070"
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>使用 Visual Studio 2017 进行实施单元测试
 
@@ -59,29 +59,42 @@ Live Unit Testing 适用于下表中列出的三个常用的单元测试框架�
 
 ## <a name="configure-live-unit-testing"></a>配置 Live Unit Testing
 
-可通过从顶级 Visual Studio 菜单中选择“工具” > “选项”，然后在“选项”对话框左窗格中选择“Live Unit Testing”来配置 Live Unit Testing。 下图显示对话框中可用的 Live Unit Testing 配置选项。
+可按以下方式配置 Live Unit Testing：从顶级 Visual Studio 菜单栏中选择“工具” > “选项”，然后在“选项”对话框左窗格中选择“Live Unit Testing”。
+
+> [!TIP]
+> 启用 Live Unit Testing 后（详见[启动、暂停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing) 部分），还可通过选择“测试” > “Live Unit Testing” > “选项”打开“选项”对话框。
+
+下图显示对话框中可用的 Live Unit Testing 配置选项：
 
   ![图像](./media/lut-options.png)
 
 可配置选项包括：
 
-- 是否在生成和调试解决方案时暂停 Live Unit Testing
+- 是否在生成和调试解决方案时暂停 Live Unit Testing。
 
 - 是否在系统电量低于指定阈值时暂停 Live Unit Testing。
+
 - 打开解决方案时 Live Unit Testing 是否自动运行。
+
+- 是否启用调试符号和 XML 文档注释生成。
+
 - 持久化数据存储目录。
-   使用“删除持久化数据”按钮，可以删除所有持久化数据。 当 Live Unit Testing 的行为不可预测或出现异常时（表明持久化数据已损坏），这就很有用。
+
+- 删除所有持久化数据的功能。 当 Live Unit Testing 的行为不可预测或出现异常时（表明持久化数据已损坏），这就很有用。
+   
 - 测试用例超时之前的时间间隔；隔默认值为 30 秒。
+
 - Live Unit Testing 可创建的测试进程数上限。
+
 - Live Unit Testing 进程可占用的内存上限。
+
 - 写入 Live Unit Testing“输出”窗口的信息级别。
+
    选项包括无日志记录（“无”）、仅限错误消息（“错误”）、错误和信息性消息（默认值为“信息”）或所有详细信息（“详细”）。
 
-还可以通过向名为 `VS_UTE_DIAGNOSTICS` 的用户级环境变量分配值“1”并重启 Visual Studio 在 Live Unit Testing“输出”窗口显示详细输出。
+   还可向名为 `VS_UTE_DIAGNOSTICS` 的用户级环境变量分配值“1”，再重启 Visual Studio，从而在 Live Unit Testing 的“输出”窗口显示详细输出。
 
-若要捕获从 Live Unit Testing 到文件的详细 MSBuild 日志消息，请将 `LiveUnitTesting_BuildLog` 用户级环境变量设为该文件的名称以包含日志。
-
-启用 Live Unit Testing 后（见下一部分[启动、暂停和停止 Live Unit Testing](#start-pause-and-stop-live-unit-testing)），还可以选择“测试” > “Live Unit Testing” > “选项”，打开“选项”对话框。
+   要捕获文件中 Live Unit Testing 的详细 MSBuild 日志消息，请将 `LiveUnitTesting_BuildLog` 用户级环境变量设为该文件的名称以包含日志。
 
 ## <a name="start-pause-and-stop-live-unit-testing"></a>启动、暂停和停止 Live Unit Testing
 

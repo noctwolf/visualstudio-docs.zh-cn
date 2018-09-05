@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 9758aab8d36b113a5e4ba2fea5d475f1967dabab
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39469049"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627066"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -23,7 +23,7 @@ ms.locfileid: "39469049"
 许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
 
 > [!NOTE]
-> 在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（“编辑” > “高级” > “设置文档格式”或 Ctrl+K，Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。
+> 在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。 可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
 
 ## <a name="coding-consistency"></a>编码一致性
 

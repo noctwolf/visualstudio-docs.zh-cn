@@ -10,15 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ea0d4d51a7dfbd9a7e1fb58e6297d0842d83b3
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34268264"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626960"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
+
+可 Windows 7 及更高版本中使用不带调试器的分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>应在带还是不带调试器的情况下运行该工具？  
  集成了调试器的性能工具让你能够进行很多未集成调试器的工具不能执行的操作，例如设置断点和检查变量值。 而未集成调试器的工具提供的体验则更接近于用户将在发布的应用程序中获得的体验。  

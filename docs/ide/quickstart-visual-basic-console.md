@@ -1,6 +1,6 @@
 ---
 title: 快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
-description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的控制台应用。
+description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的 Hello World 控制台应用。
 ms.custom: ''
 ms.date: 12/10/2017
 ms.prod: visual-studio-dev15
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f88e305e7ece1bcdf9eecb920c4e2aa567f3439
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 4d75c178abdaae516b8694e9278d8df2007c2e1d
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282341"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626611"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 

@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 中导航代码
-ms.date: 09/26/2017
+title: 代码导航命令
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9293565b4a238b1486f491c5a343d83364fba088
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: eb711763e96cf6959a71b002f09cefa1ced44734
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448605"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626698"
 ---
 # <a name="navigate-code"></a>导航代码
 
@@ -80,15 +80,23 @@ Visual Studio 提供了许多用于在编辑器中导航代码的方法。 本�
 
 - “转到行”(Ctrl+G)：移到活动文档中的指定行号。
 
-- “转到所有”（Ctrl+T 或 Ctrl+,）：移到指定的行、类型、文件、成员或符号。
+- **转到所有（Ctrl+T 或 Ctrl+,）**：移到指定的行、类型、文件、成员或符号。
 
-- “转到文件”（Ctrl+1、Ctrl+F）：移到解决方案中的指定文件。
+- **转到文件（Ctrl+1、Ctrl+F）**：移到解决方案中的指定文件。
 
-- “转到类型”（Ctrl+1、Ctrl+T）：移到解决方案中的指定类型。
+- **转到最近使用的文件（Ctrl+1、Ctr+R）**：转到解决方案中最近访问过的指定文件（Visual Studio 2017 版本 15.8 中的新增内容）。
 
-- “转到成员”（Ctrl+1、Ctrl+M）：移到解决方案中的指定成员。
+- **转到类型（Ctrl+1、Ctrl+T）**：移到解决方案中的指定类型。
 
-- “转到符号”（Ctrl+1、Ctrl+S）：移到解决方案中的指定符号。
+- **转到成员（Ctrl+1、Ctrl+M）**：移到解决方案中的指定成员。
+
+- **转到符号（Ctrl+1、Ctrl+S）**：移到解决方案中的指定符号。
+
+在 Visual Studio 2017 版本 15.8 及更高版本中，还提供了以下“转到”导航命令：
+
+- 转到文件中的下一个问题 (Alt+PgDn)和转到文件中的上一个问题 (Alt+PgUp)
+
+- 转到上次编辑位置 (Ctrl+Shift+Backspace)
 
 有关这些命令的详细信息，请参阅[使用“转到”命令查找代码](../ide/go-to.md)主题。
 

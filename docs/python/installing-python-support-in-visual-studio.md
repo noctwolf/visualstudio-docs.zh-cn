@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9dbc56994f741f48dd97c9eba365c7228585c2a3
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499898"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627171"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -26,7 +26,7 @@ ms.locfileid: "39499898"
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 及更早版本](#visual-studio-2013-and-earlier)
 
-对于 Visual Studio 2015 和更早版本，还需要选择单独[安装 Python 解释器](installing-python-interpreters.md)（Python 3.5 和更早版本；3.6 不受支持，并生成消息“Python 版本 3.6 不受支持”）。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
+对于 Visual Studio 2015 及更早版本，还需要单独[安装 Python 解释器](installing-python-interpreters.md)（Python 3.5 及更早版本；3.6+ 不受支持且会生成“Python 版本 3.6 不受支持”之类的消息）。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
 
 若要在执行安装步骤后快速测试 Python 支持，请按 Alt+I 并输入 `2+2` 打开 Python 交互式窗口。 如果看不到输出 `4`，请重新检查步骤。
 
