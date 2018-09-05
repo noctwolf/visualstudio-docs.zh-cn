@@ -11,11 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ecbd5d1fce685243d889b39017efed24ca4492a0
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 3d9815c72a500f9edd3b01f76dae3411ac0ee50f
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627064"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 04/27/2018
 R 和 Python 是用于数据科学的两大脚本语言。 这两种语言易于学习，并且有丰富的程序包生态系统提供支持。 这些程序包可应对各种情况，比如数据采集、清理、模型定型、部署和绘制。 F# 还是首款功能强大的 .NET 函数式语言，适用于各种数据处理任务。
 
 <!--Note link on the image because this one is large -->
-[![Visual Studio 与 R、Python 和 F# 的屏幕截图](media/data-science-workload-screens.png)](media/data-science-workload-screens.png)
+[![Visual Studio 与 R、Python 和 F# 的屏幕截图](media/data-science-workload-screens.png)](media/data-science-workload-screens.png#lightbox)
 
 ## <a name="workload-options"></a>工作负载选项
 
@@ -49,9 +50,9 @@ R 和 Python 是用于数据科学的两大脚本语言。 这两种语言易于
 
 尽管其他许多工作负载附带 F#，Python 也有属于自己的工作负载，但数据科学和分析应用程序仍然是目前唯一一个包含 R 的 工作负载。然而，你也可以不管工作负载，单独安装 R。 在安装程序的“单个组件”选项卡上，选择以下 R 选项：
 
-- “开发活动”>“R 语言支持”
-- “开发活动”>“Microsoft R Client”
-- “编译器、生成工具和运行时”>“R 开发工具的运行时支持”
+- “开发活动” > “R 语言支持”
+- “开发活动” > “Microsoft R Client”
+- “编译器、生成工具和运行时” > “R 开发工具的运行时支持”
 
 ## <a name="sql-server-integration"></a>SQL Server 集成
 
@@ -75,7 +76,7 @@ SQL Server 支持使用 R 和 Python 直接在 SQL Server 内执行高级分析�
 
 更多相关信息：
 
-- [使用 SQL Server 和 R](../rtvs/sql-server.md)
+- [使用 SQL Server 和 R](integrating-sql-server-with-r.md)
 - [In-database Advanced Analytics with R in SQL Server 2016](https://blogs.technet.microsoft.com/dataplatforminsider/2016/03/29/in-database-advanced-analytics-with-r-in-sql-server-2016/)（在 SQL Server 2016 中利用 R 执行数据库内高级分析）（博客）
 - [Python in SQL Server 2017: enhanced in-database machine learning](https://blogs.technet.microsoft.com/dataplatforminsider/2017/04/19/python-in-sql-server-2017-enhanced-in-database-machine-learning/)（SQL Server 2017 中的 Python：增强版数据库内机器学习）（博客）
 
@@ -88,4 +89,4 @@ Azure SDK for Python 使得从运行在 Windows、Mac 和 Linux 上的应用程�
 Azure Notebooks（当前为预览版）对 Microsoft Azure 云中运行的 Jupyter 笔记本提供免费在线访问。 此服务包括用 Python、R 和 F# 编写的示例笔记本，可帮助用户入门。 请访问 [notebooks.azure.com](https://notebooks.azure.com/)。
 
 <!--Note link on the image because this one is large -->
-[![包含 R 简介示例的 Azure Notebooks 屏幕截图](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png)
+[![包含 R 简介示例的 Azure Notebooks 屏幕截图](media/data-science-workload-notebooks.png)](media/data-science-workload-notebooks.png#lightbox)

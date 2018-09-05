@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 4
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的功能。
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f7b62914a1a0d895aaf3e1322c4ef7a68a555e0c
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 4e37b8f5b50a7145ca5fbaa0597fd6109b1be98a
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388171"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626650"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
@@ -31,7 +31,7 @@ ms.locfileid: "39388171"
 > - 了解由项目模板创建的视图和页面模板，该模板由三个继承自基本页面模板的页面组成，并使用 jQuery 和 Bootstrap 等静态 JavaScript 库（步骤 4-2）
 > - 了解模板提供的 URL 路由（步骤 4-3）
 
-该模板还提供基本身份验证，在步骤 5 中对此进行了介绍。
+该模板还提供基本身份验证，详情请参见步骤 5。
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步骤 4-1：通过模板创建项目
 

@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 2
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了创建应用以及使用视图和模板的步骤。
-ms.date: 04/25/2018
+ms.date: 08/13/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cb19107cefc5638449f2acf7511cba46ef131a1d
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: f568af59a638024275bdab41b33ac4fbbaf24dd3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388249"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627234"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -52,7 +52,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 | --- | --- |
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
 | **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 步骤 6 中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init\_\_.py 文件（指示文件夹定义其自己的 Python 包）。 |
-| **模板** | 包含单个文件 index.html 的 Django 页面模板文件夹。 模板是若干个 HTML 块，视图可以将信息添加到其中并以动态方式呈现页面。 页面模板“变量”（如 index.html 中的 `{{ content }}`）都是动态值占位符，如本文后面所述（步骤 2）。 通常情况下，Django 应用通过将模板放置在与应用名称匹配的子文件夹中来创建其模板的命名空间。 |
+| **模板** | Django 页面模板文件夹，其中包含与应用名匹配的文件夹中的一个 index.html 文件。 （在 Visual Studio 2017 15.7 及更早版本中，该文件直接包含在模板中，步骤 2-4 指示你创建子文件夹。）模板是若干个 HTML 块，视图可以将信息添加到其中并以动态方式呈现页面。 页面模板“变量”（如 index.html 中的 `{{ content }}`）都是动态值占位符，如本文后面所述（步骤 2）。 通常情况下，Django 应用通过将模板放置在与应用名称匹配的子文件夹中来创建其模板的命名空间。 |
 | **admin.py** | 在其中扩展应用管理界面的 Python 文件（请参阅步骤 6），用于查看和编辑数据库中的数据。 最初，此文件仅包含语句 `from django.contrib import admin`。 默认情况下，Django 在 Django 项目 settings.py 文件中的条目中包含一个标准的管理界面，可以通过取消评论 urls.py 中的现有条目将其打开。 |
 | **apps.py** | 定义应用配置类的 Python 文件（参见下文，在此表后）。 |
 | **models.py** | 模型是由函数识别的数据对象，视图通过模型与应用的基础数据库进行交互（请参阅步骤 6）。 Django 提供数据库连接层，这样应用就无需考虑这些细节。 models.py 文件是用于创建模型的默认位置，最初只包含语句 `from django.db import models`。 |
@@ -129,7 +129,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 ## <a name="step-2-3-render-a-view-using-html"></a>步骤 2-3：使用 HTML 呈现视图
 
-到目前为止，你在 views.py 中所拥有的 `index` 函数只会针对页面生成一个纯文本 HTTP 响应。 当然，大多数实际 Web 页面都使用丰富的 HTML 页面进行响应，这些页面通常包含实时数据。 实际上，使用函数定义视图的主要原因是，可以通过动态方式生成该内容。
+到目前为止，你在 views.py 中所拥有的 `index` 函数只会针对页面生成一个纯文本 HTTP 响应。 当然，大多数实际 Web 页面都使用丰富的 HTML 页面进行响应，这些页面通常包含实时数据。 实际上，使用函数定义视图的主要原因是让你能够通过动态方式生成该内容。
 
 `HttpResponse` 的参数只是一个字符串，因此可以在一个字符串中随意生成任何 HTML。 举一个简单的例子，用下面的代码替换 `index` 函数（保留现有 `from` 语句），这将使用动态内容生成 HTML 响应，每次刷新页面时都会更新：
 
@@ -149,7 +149,7 @@ def index(request):
 再次运行该项目并看到类似于“Hello Django! 2018 年 4 月 16 日(星期一) 16:28:10”的消息。 刷新页面以更新时间并确认通过每个请求生成了内容。 完成后，请停止服务器。
 
 > [!Tip]
-> 停止并重新启动项目的快捷方式是使用“调试” > “重启”菜单命令 (Ctrl+Shift+F5) 或者使用调试工具栏上的重启按钮：
+> 要停止并重启项目，其快捷方式是使用“调试” > “重启”菜单命令 (Ctrl+Shift+F5)，或者使用调试工具栏上的“重启”按钮：
 >
 > ![Visual Studio 中调试工具栏上的重启按钮](media/debugging-restart-toolbar-button.png)
 
@@ -176,7 +176,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
     'APP_DIRS': True,
     ```
 
-1. 在 HelloDjangoApp 文件夹中，打开 templates/index.html 页面模板文件，观察它是否包含一个变量 `{{ content }}`：
+1. 在 HelloDjangoApp 文件夹中，打开 templates/HelloDjangoApp/index.html 页面模板文件（在 VS 2017 15.7 及更早版本中，则为 templates/index.html），查看其是否包含一个变量 `{{ content }}`：
 
     ```html
     <html>
@@ -200,7 +200,8 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'content': "<strong>Hello Django!</strong> on " + now.strftime("%A, %d %B, %Y at %X")
             }
@@ -209,9 +210,9 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
     如你所见，`render` 的第一个参数是后跟应用的 templates 文件夹中模板文件相对路径的请求对象。 在适当情况下，将为视图支持的模板文件命名。 `render` 的第三个参数则是模板引用的变量字典。 可以在字典中包含对象，在这种情况下，模板中的变量可以引用 `{{ object.property }}`。
 
-1. 运行项目并观察输出。 应该会看到类似于步骤 2-2 中看到的消息，表明模板可正常使用。
+1. 运行项目并观察输出。 应会看到与步骤 2-2 中所示类似的消息，它表示模板可正常使用。
 
-    但是，请注意，在 `content` 属性中使用的 HTML 只呈现为纯文本，因为 `render` 函数会自动转义该 HTML。 自动转义防止意外漏洞注入攻击：开发人员通常从一页收集输入并通过模板占位符将其用作另一页的值。 转义还充当提醒：最好将 HTML 放置在页面模板中以及代码外。 还好，在需要时创建其他变量比较简单。 例如，更改 templates/index.html 以匹配下列标记，将添加一个页标题并在页面模板中保留所有格式：
+    但是，请注意，在 `content` 属性中使用的 HTML 只呈现为纯文本，因为 `render` 函数会自动转义该 HTML。 自动转义防止意外漏洞注入攻击：开发人员通常从一页收集输入并通过模板占位符将其用作另一页的值。 转义还充当提醒：最好将 HTML 放置在页面模板中以及代码外。 还好，在需要时创建其他变量比较简单。 例如，通过“模板”更改 index.html，使其匹配下列标记，这会添加一个页标题并在页面模板中保留所有格式：
 
     ```html
     <html>
@@ -232,7 +233,8 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
         return render(
             request,
-            "index.html",  # Relative path from the 'templates' folder to the template file
+            "HelloDjangoApp/index.html",  # Relative path from the 'templates' folder to the template file
+            # "index.html", # Use this code for VS 2017 15.7 and earlier
             {
                 'title' : "Hello Django",
                 'message' : "Hello Django!",
@@ -245,7 +247,7 @@ Django 页面模板是一个 HTML 块，它可以包含称为“变量”的任�
 
     ![使用模板运行应用](media/django/step02-result.png)
 
-1. <a name="template-namespacing"></a>作为最后一步，将模板移动到与应用名称相同的子文件夹中，这样就可以创建一个命名空间，并避免与可能添加到项目中的其他应用发生潜在冲突。 即，在 templates 中创建名为 HelloDjangoApp 的子文件夹，将 index.html 移动到该子文件夹，并修改 `index` 查看函数以引用模板的新路径 HelloDjangoApp/index.html。 然后运行项目，验证页面是否正确呈现，并停止服务器。
+1. <a name="template-namespacing"></a>Visual Studio 2017 版本 15.7 及更早版本：最后，将模板移动到与应用名称相同的子文件夹中，这样就可创建一个命名空间，并避免与可能添加到项目中的其他应用发生潜在冲突。 （VS 2017 15.8 及更高版本中的模板会自动执行此操作。）即，在 templates 中创建名为 HelloDjangoApp 的子文件夹，将 index.html 移动到该子文件夹，并修改 `index` 查看函数以引用模板的新路径 HelloDjangoApp/index.html。 然后运行项目，验证页面是否正确呈现，并停止服务器。
 
 1. 如果需要，将更改提交到源代码管理并更新远程存储库，如[步骤 2-2](#commit-to-source-control) 中所述。
 

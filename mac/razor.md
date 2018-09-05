@@ -1,18 +1,18 @@
 ---
 title: Razor
 description: 有关 Visual Studio for Mac 中 asp.net core 应用的 razor 支持的信息
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 622867e28b67b39aae717ae064c44579450e2087
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 09ff83abbfe3016bd4bd40e7bcb08bda10d9038c
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33886955"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224264"
 ---
 # <a name="razor-support"></a>Razor 支持
 

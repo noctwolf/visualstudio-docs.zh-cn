@@ -1,18 +1,18 @@
 ---
 title: TF 版本控制
 description: 使用 Team Foundation 版本控制连接到 Team Foundation Server 或 Visual Studio Team Services。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 51d066289809842cd50974cbb37a89bc7a73d5dc
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438351"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224319"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制 
 
@@ -21,7 +21,7 @@ ms.locfileid: "37438351"
 
 Visual Studio Team Services (VSTS) 和 Team Foundation Server (TFS) 提供两个版本控制模型：Git（分布式版本控制）和 Team Foundation 版本控制 (TFVC)（集中式版本控制）。 本文提供概述和借助 Visual Studio for Mac 使用 Team Foundation 版本控制的起点。
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>需求
 
 * Visual Studio Community、Professional 或 Enterprise for Mac 版本 7.5 或更高版本。
 * Visual Studio Team Services 或 Team Foundation Server 2013 及更高版本。

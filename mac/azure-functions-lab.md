@@ -1,18 +1,18 @@
 ---
 title: 教程：Azure Functions
 description: 在 Visual Studio for Mac 中使用 Azure Functions。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 53684537d20b483f74cbc270e988b130df3ba8c8
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232278"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43223963"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -25,7 +25,7 @@ ms.locfileid: "39232278"
 > * 与 Web 和 Azure 存储资源集成
 > * 安排涉及多个 Azure Functions 的工作流
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>需求
 
 - Visual Studio for Mac 7.5 或更高版本。
 - Azure 订阅（[https://azure.com/free](https://azure.com/free) 中免费提供）。
@@ -408,7 +408,7 @@ ms.locfileid: "39232278"
     ![](https://user-images.githubusercontent.com/3944468/29033725-be9d5a5e-7b4a-11e7-8b55-df0a200b6320.png)
 -->
 
-## <a name="summary"></a>总结
+## <a name="summary"></a>摘要
 
 在本实验室中，你已了解如何使用 Visual Studio for Mac 开始生成 Azure Functions。
 

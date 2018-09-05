@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbbe18bcfdc4b90960abeae9ae88dcee8817780b
-ms.sourcegitcommit: b544e2157ac20866baf158eef9cfed3e3f1d68b9
+ms.openlocfilehash: 533db5643359c245b2fc725e1eebcbb39487317b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39388119"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627060"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -104,12 +104,13 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 
 我们只介绍了 Visual Studio 的一些功能以便熟悉用户界面。 若要进一步了解，请继续：
 
-- 如需更深入地了解 Visual Studio，请参阅 [Visual Studio IDE 概述](../ide/visual-studio-ide.md)，其中还涉足到了调试信息。
+> [!div class="nextstepaction"]
+> [了解代码编辑器](../ide/quickstart-editor.md)
 
-- 浏览 VS 文档的“常规用户界面元素”部分，该部分对[错误列表](../ide/reference/error-list-window.md)、[“输出”窗口](../ide/reference/output-window.md)、[“属性”窗口](../ide/reference/properties-window.md)，以及[“选项”对话框](../ide/reference/options-dialog-box-visual-studio.md)等窗口进行了深入介绍
+> [!div class="nextstepaction"]
+> [了解项目和解决方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>请参阅
 
-- [快速入门：个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [快速入门：在编辑器中编写代码](../ide/quickstart-editor.md)
-- [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
+- [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+- [更改主题和字体颜色](../ide/quickstart-personalize-the-ide.md)

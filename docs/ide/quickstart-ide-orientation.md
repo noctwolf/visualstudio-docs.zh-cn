@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 249ea0c20bc47f63999a08962ba6cf7d1effd2b1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbf969e6e9a37179621cad52243418a2d0536f1a
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513268"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42626775"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -105,15 +105,13 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 我们只介绍了 Visual Studio 的一些功能以便熟悉用户界面。 若要进一步了解，请继续：
 
 > [!div class="nextstepaction"]
-> [快速入门：个性化设置 IDE](../ide/quickstart-personalize-the-ide.md)
+> [了解代码编辑器](../ide/quickstart-editor.md)
 
 > [!div class="nextstepaction"]
-> [快速入门：在编辑器中编写代码](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
+> [了解项目和解决方案](../ide/quickstart-projects-solutions.md)
 
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
-- [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)
+- [Visual Studio 2017 的更多功能](../ide/advanced-feature-overview.md)
+- [更改主题和字体颜色](../ide/quickstart-personalize-the-ide.md)

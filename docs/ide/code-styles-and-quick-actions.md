@@ -12,16 +12,16 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dd046fa8a01cde7abdc33484da3ff8227eda966
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: c008462ded2b84b5978b65fc41344477c36bee76
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34063679"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626803"
 ---
 # <a name="code-style-preferences"></a>代码样式首选项
 
-打开“工具”菜单中的“选项”对话框，即可设置 C# 和 Visual Basic 项目的代码样式首选项。 选择“文本编辑器” > “C#”或“基本” > “代码样式” > “常规”。 此窗口中设置的选项适用于本地计算机。
+打开“工具”菜单中的“选项”对话框，即可设置 C# 和 Visual Basic 项目的代码样式首选项。 在“选项”对话框中，选择“文本编辑器”>“[C# 或 Basic]”>“代码样式” > “常规”。 此窗口中设置的选项仅适用于本地计算机。
 
 列表中的每一项都会显示所选首选项的预览：
 
@@ -29,11 +29,22 @@ ms.locfileid: "34063679"
 
 ## <a name="preference-and-severity"></a>首选项和严重级别
 
-对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 快速操作灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png)将在使用了非首选样式时出现，可以选择“快速操作”列表上的选项来自动将代码重写为首选样式。
+对于每个项，可使用每行相应的下拉列表设置“首选项”和“严重性”值。 严重性可设置为“无”、“建议”、“警告”或“错误”。 如果想要为某个代码样式启用[快速操作](../ide/quick-actions.md)，请确保“严重性”设置为“无”以外的其他项。 “快速操作”灯泡图标![小灯泡图标](media/vs2015_lightbulbsmall.png)将在使用了非首选样式时出现，你可选择“快速操作”列表上的选项将代码自动重写为首选样式。
 
 ## <a name="editorconfig-files"></a>EditorConfig 文件
 
 也可以通过 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 文件管理 .NET 的代码样式设置。 EditorConfig 文件中的设置优先于“选项”对话框所选选项。 可使用 EditorConfig 文件为整个存储库或项目强制执行和配置代码样式。
+
+## <a name="format-document-command"></a>“设置文档格式”命令
+
+在 Visual Studio 2017 版本 15.8 及更高版本中，可配置“设置文档格式”命令（“编辑” > “高级” > “设置文档格式”），从而对文件执行其他代码清理，例如删除 Using 和对其排序，或者应用代码样式首选项。 可定义希望“设置文档格式”在[设置格式”选项页面](reference/options-text-editor-csharp-formatting.md#format-document-settings)上应用的设置。
+
+代码清理按照 .editorconfig 文件中配置的设置进行操作。如果缺少该规则或文件，则按照通过“工具” > “选项” > “文本编辑器” > “C#”>[“代码样式”或“格式”]中设定的设置进行操作。
+
+在 Visual Studio 2017 中首次触发“设置文档格式”命令时，将显示一个黄色信息栏，提示你配置代码清理设置。
+
+> [!TIP]
+> .editorconfig 文件中配置为“无”的规则不参与代码清理，但可通过“快速操作和重构”菜单单独应用。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 1e68542de70c868f6113348e519f866bf60bc381
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f297b9202dabfcfe40ea63b187bc914e187b974f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758990"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626848"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析资源消耗情况和 UI 线程活动 (XAML)
 使用 **“应用程序时间线”** 探查器查找并修正 XAML 应用程序中应用程序交互的相关性能问题。 此工具提供应用程序资源使用情况的详细视图，可帮助提高 XAML 应用程序的性能。 可以分析应用程序准备 UI 框架（布局和呈现）以及为网络和磁盘请求提供服务所花费的时间，以及在应用程序启动、页面加载以及调整窗口大小等应用场景中花费的时间。  
@@ -97,7 +97,7 @@ ms.locfileid: "36758990"
 |||  
 |-|-|  
 |**分析**|分析 XAML 文件并创建对象所耗用的时间。<br /><br /> 展开“时间线详细信息”  中的  “分析”节点将显示作为根事件分析结果的所有 XAML 文件的依赖关系链。 这将使你能够识别性能敏感方案中的不必要的文件分析和对象创建并对其进行优化。|  
-|**布局**|在大型应用程序中，可能会同时在屏幕上显示数千个元素。 这可能会导致 UI 帧速率降低以及应用程序响应能力相应地变差。 布局事件可准确地确定对每个元素进行布局的成本（即 Arrange、Measure、ApplyTemplate 和 ArrangeOverride 所用的时间），并生成参与了布局过程的可视化树。 可以使用此可视化效果来确定要删除的逻辑树，或评估其他延期机制，以优化布局过程。|  
+|**布局**|在大型应用程序中，可能会同时在屏幕上显示数千个元素。 这可能会导致 UI 帧速率降低以及应用程序响应能力相应地变差。 布局事件可准确地确定布局每个元素所耗的成本（即 Arrange、Measure、ApplyTemplate、ArrangeOverride 和 MeasureOverride 所用的时间），并生成参与了布局过程的可视化树。 可以使用此可视化效果来确定要删除的逻辑树，或评估其他延期机制，以优化布局过程。|  
 |**呈现**|在屏幕上绘制 XAML 元素所耗用的时间。|  
 |**I/0**|从本地磁盘或从通过 [Microsoft Windows Internet (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)访问的网络资源中检索数据所耗用的时间。|  
 |**应用程序代码**|执行与分析或布局无关的应用程序（用户）代码所耗用的时间。|  

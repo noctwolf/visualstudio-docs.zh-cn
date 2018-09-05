@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 64958097b7a5fe86cda1d2b7dee62c69cd2fea63
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 2a02bf78d731764b0725c03cefb4959451a40b9c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586412"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626778"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 
@@ -26,7 +26,7 @@ ms.locfileid: "39586412"
 1. 包含正在运行的 Python 代码的文件夹。
 1. 适用环境变量定义的“模块搜索路径”。 （请参阅核心 Python 文档中的[模块搜索路径](https://docs.python.org/2/tutorial/modules.html#the-module-search-path)和[环境变量](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH)。）
 
-但 Visual Studio 会忽略搜索路径环境变量，即使已为整个系统设置了该变量。 实际上，此变量被忽略的具体原因是整个系统都设置了此变量，从而引发了一些无法自动解答的问题，例如引用的模块是适用于 Python 2.7 还是 Python 3.6。 它们是否将替代标准库模块？ 开发人员是否注意到此行为，或者它是一个恶意的攻击尝试？
+但 Visual Studio 会忽略搜索路径环境变量，即使已为整个系统设置了该变量。 实际上，此变量被忽略的具体原因是整个系统都设置了此变量，从而引发了一些无法自动解答的问题，例如引用的模块是适用于 Python 2.7 还是 Python 3.6+。 它们是否将替代标准库模块？ 开发人员是否注意到此行为，或者它是一个恶意的攻击尝试？
 
 因此，Visual Studio 提供了一种方法，可直接在环境和项目中指定搜索路径。 在 Visual Studio 中运行或调试的代码会接收 `PYTHONPATH` 值（和其他等效变量）中的搜索路径。 通过添加搜索路径，Visual Studio 会在需要时检查这些位置中的库并为它们构建 IntelliSense 数据库（Visual Studio 2017 版本 15.5 及更早版本；构建数据库需要一些时间，具体取决于库的数量）。
 

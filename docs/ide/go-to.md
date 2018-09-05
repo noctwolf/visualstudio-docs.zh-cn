@@ -1,10 +1,9 @@
 ---
-title: 使用“转到”命令查找代码
-ms.date: 09/26/2017
+title: 依次转到文件、符号和行
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
 helpviewer_keywords:
 - code editor, go to
 - code editor, go to line
@@ -15,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aca1106bb6dfa3838890e4ae5c1886875e3e357
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447188"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627001"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 
@@ -31,7 +30,7 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 输入        | 函数
 ------------ | ---
 **键盘** | 按 Ctrl+T 或 Ctrl+,
-**鼠标**    | 选择“编辑” > “转到” > “转到全部”
+**鼠标**    | 选择“编辑” > “转到” > “转到所有”
 
 代码编辑器的右上方会显示一个小窗口。
 
@@ -43,7 +42,7 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 还可以输入一个问号 (?) 来获取更多帮助。
 
-![转到全部帮助](media/go-to-all-help.png)
+![“转到所有”帮助](media/go-to-all-help.png)
 
 ## <a name="filtered-searches"></a>经过筛选的搜索
 
@@ -55,13 +54,14 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 要缩小对特定类型的码位元素的搜索范围，可以在搜索框中指定一个前缀，也可以从以下五个筛选器图标中选择一个：
 
-前缀 | 图标 | 快捷键 | 描述
-:----: | ---- | -------- | ---
-\#     | ![符号图标](media/gotoall_symbolicon.png) | Ctrl+1、Ctrl+S | 转到指定符号
-f      | ![文件图标](media/gotoall_fileicon.png)     | Ctrl+1、Ctrl+F | 转到指定文件
-m      | ![成员图标](media/gotoall_membericon.png) | Ctrl+1、Ctrl+M | 转到指定成员
-t      | ![类型图标](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 转到指定类型
-:      | ![行图标](media/gotoall_lineicon.png)     | Ctrl+G         | 转到指定行号
+前缀 | 图标 | 快捷键 | 说明
+:-: | - | - | -
+:| ![行图标](media/gotoall-line-icon.png) | Ctrl+G         | 转到指定行号
+f| ![文件图标](media/gotoall-files-icon.png) | Ctrl+1、Ctrl+F | 转到指定文件
+r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1****Ctrl**+**R** | 转到最近访问的指定文件
+t| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
+m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指定成员
+\#| ![符号图标](media/gotoall-symbols-icon.png) | Ctrl+1、Ctrl+S | 转到指定符号
 
 ### <a name="filter-to-a-specific-location"></a>筛选到特定位置
 

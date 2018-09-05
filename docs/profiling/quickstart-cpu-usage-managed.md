@@ -2,7 +2,7 @@
 title: 分析 CPU 使用情况数据（托管代码）
 description: 使用 CPU 使用情况诊断工具衡量 C++ 和 Visual Basic 中的应用性能
 ms.custom: mvc
-ms.date: 12/05/2017
+ms.date: 08/06/2018
 ms.technology: vs-ide-debug
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 886abf16e958afd2870399c7dfdef55cb27e108f
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 35c6fd1ea079dd95367bcb7763787f0b06839ecb
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39206820"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626888"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（托管代码）
 
@@ -26,11 +26,15 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
 诊断中心提供了大量其他选项来运行和管理诊断会话。 如果此处介绍的“CPU 使用率”工具未提供所需数据，[其他分析工具](../profiling/profiling-feature-tour.md)可提供可能有帮助的不同种类的信息。 在许多情况下，CPU 以外的因素可能会导致应用程序性能瓶颈，例如内存、呈现 UI 或网络请求时间。 诊断中心提供大量其他选项，可用于记录和分析此种数据。
 
+要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。 在 Windows 7 及更高版本中，可使用事后分析工具（即[性能探查器](../profiling/profiling-feature-tour.md)）。
+
 ## <a name="create-a-project"></a>创建项目
 
 1. 在 Visual Studio 中，依次选择“文件” > “新建项目”。
 
 2. 在“Visual C#”或“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”。
+
+    如果没有看到“控制台应用”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
 
 3. 键入名称（例如 MyProfilerApp），单击“确定”。
 

@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140fdf2089d44ba93b9617d2dd05b71556106fdb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: d68bdf8ae879506e89aace7f3e176a862289a8bd
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512556"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627029"
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入门：个性化设置 Visual Studio IDE 和编辑器
 
-在这个 5-10 分钟的快速入门中，我们将在文本编辑器中自定义 Visual Studio 颜色主题和两种文本颜色。
+在这个 5-10 分钟的快速入门中，我们将选择深色主题来自定义 Visual Studio 颜色主题。 我们还将在文本编辑器中为两种不同类型的文本自定义颜色。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -97,19 +97,7 @@ Visual Studio 2017 用户界面的默认颜色主题命名为“蓝色”。 让
 
 我们探讨了几种在 Visual Studio 中自定义颜色的方法。 希望你继续深入了解“选项”对话框中的其他自定义选项，以真正使 Visual Studio 为你所用。
 
-## <a name="next-steps"></a>后续步骤
-
-> [!div class="nextstepaction"]
-> [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：在编辑器中编写代码](../ide/quickstart-editor.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：项目和解决方案](../ide/quickstart-projects-solutions.md)
-
 ## <a name="see-also"></a>请参阅
 
-- [个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [自定义编辑器](../ide/customizing-the-editor.md)
 - [Visual Studio IDE 概述](../ide/visual-studio-ide.md)

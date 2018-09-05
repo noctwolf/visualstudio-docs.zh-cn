@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 289d22798b243a7276d74257b0d3b1f7213b3a32
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586555"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626612"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -48,7 +48,7 @@ ms.locfileid: "39586555"
 
 1. 要在 Visual Studio 中创建新 Python 项目，请选择“文件” > “新建” > “项目”。 搜索"Python"，选择“Python 应用程序”模板，为其提供合适的名称和位置，然后选择“确定”。
 
-1. 必须具备 32 位 Python 解释器才可使用 C++（推荐 Python 3.6）。 在 Visual Studio 的“解决方案资源管理器”窗口中，展开项目节点，然后展开“Python 环境”节点。 如果发现默认值不是 32 位环境（加粗或标记为“全局默认值”），请按照[选择项目的 Python 环境](selecting-a-python-environment-for-a-project.md)中的说明进行操作。 如果未安装 32 位解释器，请参阅[安装 Python 解释器](installing-python-interpreters.md)。
+1. 必须具备 32 位 Python 解释器才可使用 C++（推荐 Python 3.6 或更高版本）。 在 Visual Studio 的“解决方案资源管理器”窗口中，展开项目节点，然后展开“Python 环境”节点。 如果发现默认值不是 32 位环境（加粗或标记为“全局默认值”），请按照[选择项目的 Python 环境](selecting-a-python-environment-for-a-project.md)中的说明进行操作。 如果未安装 32 位解释器，请参阅[安装 Python 解释器](installing-python-interpreters.md)。
 
 1. 在项目的 .py 文件中，粘贴以下代码，用于对双曲正切的计算进行基准测试（无需使用数学库即可实现，以便简化比较）。 可随意手动输入代码，体验某些 [Python 编辑功能](editing-python-code-in-visual-studio.md)。
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb54b8fa21ae5d2c0580c5d9bc7a570469877c3f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 397ed4ea94aa54c8f8d31fc6ff0d08da16a93479
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283453"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627135"
 ---
 # <a name="features-of-the-code-editor"></a>代码编辑器功能
 
@@ -51,7 +51,7 @@ Visual Studio 编辑器提供了许多功能，可方便你更加轻松地编写
 
 |||
 |-|-|
-|设置文档的格式|设置适当的代码行缩进，并移动大括号以分隔文档中的行。|
+|[设置文档格式](code-styles-and-quick-actions.md#format-document-command)|设置适当的代码行缩进，并移动大括号以分隔文档中的行。|
 |设置选定内容的格式|设置适当的代码行缩进，并移动大括号以分隔选定内容中的行。|
 |将选定行中的空格替换为制表符|在适当的位置将前导空格更改为选项卡。|
 |将选定行中的制表符替换为空格|将前导制表符更改为空格。 如果要将文件中的所有空格都转换为制表符（或将所有制表符转换为空格），可以使用 `Edit.ConvertSpacesToTabs` 和 `Edit.ConvertTabsToSpaces` 命令。 这些命令不会出现在 Visual Studio 菜单中，但可以从快速访问窗口或命令窗口中进行调用。|

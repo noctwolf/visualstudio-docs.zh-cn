@@ -1,17 +1,17 @@
 ---
 title: 调试 - 数据可视化效果
 description: 调试是编程中常见且必要的部分。 Visual Studio for Mac 提供了一整套易于调试的功能。 本文介绍在调试程序中检查对象时可以查看的各种数据可视化效果。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 5ee16324a312eca79de2f3b356a5f3be941f5e7b
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: f2d9e05a9325073e2844b0cdce97f2cfb480b880
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33868415"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224190"
 ---
 # <a name="data-visualizations"></a>数据可视化效果
 
@@ -64,7 +64,7 @@ iOS 和 Mac 中的 Rectangle/RectangleF 或 CGRect 显示维度和原点。 和�
 ![贝塞尔曲线可视化效果](media/data-visualizations-image16.png)
 
 
-## <a name="string"></a>String
+## <a name="string"></a>字符串
 
 少于 100 个字符的字符串会完整显示，没有预览。 更长的字符串会在预览中完整显示。 字符串可编辑，可视化工具有一个编辑按钮，可在预览或在字符串值编辑器中编辑字符串值，如下所示：
 

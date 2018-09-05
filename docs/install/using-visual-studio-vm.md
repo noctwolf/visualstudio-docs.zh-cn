@@ -15,17 +15,16 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f00291fded1f289d07aafd6124a96f38d3d99b78
-ms.sourcegitcommit: 8d38d5d2f2b75fc1563952c0d6de0fe43af12766
+ms.openlocfilehash: 2fa13718a27b2840ee027a20238702fccd2bc8f4
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39276801"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626656"
 ---
 # <a id="top"> </a> Azure 上的 Visual Studio 映像
 
-使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 
-  [Azure 市场](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
+使用预配置的 Azure 虚拟机 (VM) 中的 Visual Studio 是从零构建开发环境的一种简单快速的方法。 [Azure 市场](https://azuremarketplace.microsoft.com/marketplace/apps?search=%22visual%20studio%202017%22&page=1) 中提供了具有不同 Visual Studio 配置的系统映像。
 
 初次使用 Azure？ [创建免费的 Azure 帐户](https://azure.microsoft.com/free)。
 
@@ -35,9 +34,9 @@ ms.locfileid: "39276801"
 
 | 发行版本                                              | 版本                     |     产品版本     |
 |:------------------------------------------------------------:|:----------------------------:|:-----------------------:|
-| Visual Studio 2017：最新（版本 15.7）                    |    Enterprise，Community     |      版本 15.7.5     |
+| Visual Studio 2017：最新版（版本 15.8）                    |    Enterprise，Community     |      版本 15.8.0     |
 | Visual Studio 2017：最新预览版（版本 15.8，预览版 5） |    Enterprise，Community     |      版本 15.8.5     |
-|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.15    |
+|         Visual Studio 2017：RTW                              |    Enterprise，Community     |      版本 15.0.17    |
 |   Visual Studio 2015：最新 (Update 3)                      |    Enterprise，Community     |  版本 14.0.25431.01  |
 |         Visual Studio 2015：RTW                              |             无             | （已过维护期限） |
 
