@@ -1,17 +1,17 @@
 ---
 title: 扩展 Visual Studio for Mac
 description: 可使用被称为“扩展包”的模块扩展 Visual Studio for Mac 的特性和功能。 本指南的第一部分创建了一个简单的 Visual Studio for Mac 扩展包，用于在文档中插入日期和时间。 本指南的第二部分介绍了该扩展包系统和一些构成 Visual Studio for Mac 基础的核心 API 的基础知识。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: eeca19a8724a93c46f832ead0ac16ecda84b70bf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 10bfb61ae9e3750926dad39ad3c614d8daf8f867
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178255"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43224957"
 ---
 # <a name="extending-visual-studio-for-mac"></a>扩展 Visual Studio for Mac
 
@@ -56,7 +56,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 ## <a name="extensions-and-extension-points"></a>扩展和扩展点
 
-扩展点是定义数据结构（类型）的占位符，扩展则定义符合特定扩展点所指定结构的数据。 扩展点指定它们在声明中可接受的扩展类型。 可通过使用类型名称或扩展路径声明扩展。 若要深入了解如何创建所需的扩展点，请参阅 [Extension Point reference](http://monoaddins.codeplex.com/wikipage?title=Extension%20Points&referringTitle=Description%20of%20Add-ins%20and%20Add-in%20Roots)（扩展点引用）。
+扩展点是定义数据结构（类型）的占位符，扩展则定义符合特定扩展点所指定结构的数据。 扩展点指定它们在声明中可接受的扩展类型。 可通过使用类型名称或扩展路径声明扩展。 若要深入了解如何创建所需的扩展点，请参阅 [Extension Point reference](https://github.com/mono/mono-addins/wiki/Extension-Points)（扩展点引用）。
 
 扩展/扩展点体系结构保证了快速且模块化的 Visual Studio for Mac 开发。 
 

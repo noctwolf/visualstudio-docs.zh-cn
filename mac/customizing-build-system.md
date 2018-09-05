@@ -1,16 +1,16 @@
 ---
 title: 自定义生成系统
 description: 本文简要介绍 Visual Studio for Mac 使用的 MSBuild 生成系统
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 16f14d1acb31612d2997937b9aa34f918b6376d6
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 9549a9d51fa2d86f60564e842bfc5e13a5f6523c
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000394"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224051"
 ---
 # <a name="customizing-the-build-system"></a>自定义生成系统
 

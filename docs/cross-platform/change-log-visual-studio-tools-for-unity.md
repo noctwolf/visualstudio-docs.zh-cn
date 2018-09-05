@@ -1,7 +1,7 @@
 ---
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,18 +10,91 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 65d78b5b37396572e73928a51f2f215b72dfa311
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 6a8f2b866bd1bb2c4d13f3cb3c40c1f6fbc14683
+ms.sourcegitcommit: 58a0b227f29b95e3ed55101ef66c68913682862b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381050"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42626553"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
 
+## <a name="3804"></a>3.8.0.4
+ 发布时间：2018 年 8 月 14 日
+ 
+### <a name="new-features"></a>新增功能
+
+-   **评估版：**
+
+    -   添加了对指针值的支持。
+    
+    -   添加了对泛型方法的支持。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **集成：**
+
+    -   在多个项目更改的情况下智能重载。
+
+## <a name="3803"></a>3.8.0.3
+ 发布时间：2018 年 7 月 24 日
+ 
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
+
+## <a name="3802"></a>3.8.0.2
+ 发布时间：2018 年 7 月 7 日
+ 
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   Unity 性能 Bug 的暂时解决方法：生成项目时缓存 MonoIsland。
+    
+## <a name="3801"></a>3.8.0.1
+ 发布时间：2018 年 6 月 26 日
+ 
+### <a name="new-features"></a>新增功能
+
+-   **调试：**
+
+    -   添加了对 UserLog 和 UserBreak 命令的支持。
+    
+    -   添加了对延迟加载的支持（优化了网络负载和调试程序响应延迟）。
+       
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **评估版：**
+
+    -   改进了二元运算符表达式计算和方法搜索。
+
+## <a name="3800"></a>3.8.0.0
+ 发布时间：2018 年 5 月 30 日
+ 
+### <a name="new-features"></a>新增功能
+
+-   **调试：**
+
+    -   现支持在异步构造中显示变量。
+    
+    -   现支持在设置断点时处理嵌套类型以防止编译器构造出现警告。
+    
+-   **集成：**
+
+    -   现支持着色器的 textmate 语法（Shader 代码着色不再需要 C++ 工作负载）。
+    
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **项目生成：**
+
+    -   使用新版 Unity 运行时，不要再将可移植 pdb 转换为 mdb。
+
 ## <a name="3701"></a>3.7.0.1
- 发布时间 2018-05-07
+ 发布时间：2018 年 5 月 7 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -30,7 +103,7 @@ Visual Studio Tools for Unity 更改日志。
     -   使用实验性生成时修复了依赖项问题。
 
 ## <a name="3700"></a>3.7.0.0
- 发布时间 2018-05-07
+ 发布时间：2018 年 5 月 7 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -59,7 +132,7 @@ Visual Studio Tools for Unity 更改日志。
     -   从生成中排除包管理器编译单位。
 
 ## <a name="3605"></a>3.6.0.5
- 发布时间 2018-03-13
+ 发布时间：2018 年 3 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -78,7 +151,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了设置下一语句方面的问题。
 
 ## <a name="3604"></a>3.6.0.4
- 发布时间 2018-03-05
+ 发布时间：2018 年 3 月 5 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -91,7 +164,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了 2018.1 和插件激活的计时问题。
 
 ## <a name="3603"></a>3.6.0.3
- 发布时间 2018-02-23
+ 发布时间：2018 年 2 月 23 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -110,7 +183,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了用户代码外部引发的异常中断的问题。
 
 ## <a name="3602"></a>3.6.0.2
- 发布时间 2018-02-07
+ 发布时间：2018 年 2 月 7 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -125,7 +198,7 @@ Visual Studio Tools for Unity 更改日志。
     -   仅对外部更改重载项目（含有限制）。
 
 ## <a name="3601"></a>3.6.0.1
- 发布时间 2018-01-24
+ 发布时间：2018 年 1 月 24 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -136,7 +209,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了在尝试更改数组大小时对 EditorPrefs.GetBool 的间接调用影响检查器的问题。
 
 ## <a name="3600"></a>3.6.0.0
- 发布时间 2018-01-10
+ 发布时间：2018 年 1 月 10 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -171,7 +244,7 @@ Visual Studio Tools for Unity 更改日志。
     -   在插入方法前刷新 roslyn 上下文。
 
 ## <a name="3503"></a>3.5.0.3
- 发布时间 2018-01-09
+ 发布时间：2018 年 1 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -180,7 +253,7 @@ Visual Studio Tools for Unity 更改日志。
     -   固定自动 pdb 到 mdb 调试符号转换。
 
 ## <a name="3502"></a>3.5.0.2
- 发布时间 2017-12-04
+ 发布时间：2017 年 12 月 4 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -213,7 +286,7 @@ Visual Studio Tools for Unity 更改日志。
     -   不强制 AllowAttachedDebuggingOfEditor Unity，因为现在默认为“true”。
 
 ## <a name="3402"></a>3.4.0.2
- 发布时间 2017-09-19
+ 发布时间：2017 年 9 月 19 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -244,7 +317,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了对 4.6 API 级别的 Microsoft.CSharp 的引用。
 
 ## <a name="3302"></a>3.3.0.2
- 发布日期：2017-08-15
+ 发布时间：2017 年 8 月 15 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -253,7 +326,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了 Unity 5.5 及更低版本上 Visual Studio 解决方案的生成问题。
 
 ## <a name="3300"></a>3.3.0.0
- 发布时间 2017-08-14
+ 发布时间：2017 年 8 月 14 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -282,7 +355,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了通过 API 级别进行定义的问题。
 
 ## <a name="3200"></a>3.2.0.0
- 发布时间 2017-05-10
+ 发布时间：2017 年 5 月 10 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -299,7 +372,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复 Unity 消息闪烁的问题。
 
 ## <a name="3100"></a>3.1.0.0
- 发布时间 2017-04-07
+ 发布时间：2017 年 4 月 7 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -328,12 +401,12 @@ Visual Studio Tools for Unity 更改日志。
     -   删除了程序集版本后处理。
 
 ## <a name="3001"></a>3.0.0.1
- 发布时间 2017-03-07
+ 发布时间：2017 年 3 月 7 日
 
 ### <a name="this-version-includes-all-new-features-and-bug-fixes-introduced-with-28x-series"></a>此版本包括 2.8.x 系列引入的所有新功能和 Bug 修复。
 
 ## <a name="2820---30-preview-3"></a>2.8.2.0 - 3.0 预览版 3
- 发布时间 2017-01-25
+ 发布时间：2017 年 1 月 25 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -342,7 +415,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了两次引用插件项目（首次为二进制 DLL，然后为项目引用）方面的性能退化问题。
 
 ## <a name="2810---30-preview-2"></a>2.8.1.0 - 3.0 预览版 2
- 发布时间 2017-01-23
+ 发布时间：2017 年 1 月 23 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -369,7 +442,7 @@ Visual Studio Tools for Unity 更改日志。
     -   切换到了 https 以面向远程 Unity 文档。
 
 ## <a name="2800---30-preview"></a>2.8.0.0 - 3.0 预览版
- 发布时间 2016-11-17
+ 发布时间：2016 年 11 月 17 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -436,7 +509,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了在使用 Web 编码的文件名编译脚本时阻止编译的 bug。
 
 ## <a name="2300"></a>2.3.0.0
- 发布时间 2016-07-14
+ 发布时间：2016 年 7 月 14 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -471,7 +544,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了多个表达式计算问题。
 
 ## <a name="2200"></a>2.2.0.0
- 发布时间 2016-02-04
+ 发布时间：2016 年 2 月 4 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -518,7 +591,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了针对多个不同版本的 Visual Studio 安装相同版本的 VSTU 时卸载 VSTU 的问题。 例如，同时安装了 VSTU **2015** 2.1.0.0 和 VSTU **2013** 2.1.0.0 的情况。
 
 ## <a name="2100"></a>2.1.0.0
- 发布时间 2015-09-08
+ 发布时间：2015 年 9 月 8 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -539,7 +612,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 Visual Studio 2015 中的命中次数断点。
 
 ## <a name="2000"></a>2.0.0.0
- 发布时间 2015-07-20
+ 发布时间：2015 年 7 月 20 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -574,7 +647,7 @@ Visual Studio Tools for Unity 更改日志。
     -   修复了检查空数组。
 
 ## <a name="1990---20-preview-2"></a>1.9.9.0 - 2.0 预览版 2
- 发布日期 2015-04-02
+ 发布时间：2015 年 4 月 2 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -663,7 +736,7 @@ Visual Studio Tools for Unity 更改日志。
 -   **UI：** 支持 Visual Studio 主题的上下文菜单和图标。
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 预览版
- 发布日期 2014-11-12
+ 发布时间：2014 年 11 月 12 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -702,7 +775,7 @@ Visual Studio Tools for Unity 更改日志。
 -   如果没有必要，则无需注册日志回调。
 
 ## <a name="1920"></a>1.9.2.0
- 发布日期 2014-10-09
+ 发布时间：2014 年 10 月 9 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -725,7 +798,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复如果扩展名筛选器为空，则在项目文件中包含所有资产这一 bug。
 
 ## <a name="1910"></a>1.9.1.0
- 发布时间 2014-09-22
+ 发布时间：2014 年 9 月 22 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -770,7 +843,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复在 64 位版本 Unity 中使用 VSTU 打开脚本的问题。
 
 ## <a name="1900"></a>1.9.0.0
- 发布时间 2014-07-29
+ 发布时间：2014 年 7 月 29 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -818,7 +891,7 @@ Visual Studio Tools for Unity 更改日志。
 >  C# 是 Unity 生态系统中的主要语言（即新的示例资产均以 C# 表示，Unity 文档将默认采用 C#），我们删除了对 UnityScript 和 Boo 的基本支持，以便更好地关注 C# 体验。 因此，VSTU 解决方案现在仅使用 C#，加载速度更快。
 
 ## <a name="1820"></a>1.8.2.0
- 发布时间 2014-01-07
+ 发布时间：2014 年 1 月 7 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -845,7 +918,7 @@ Visual Studio Tools for Unity 更改日志。
 -   当版本特定生成的程序集不同步时，防止 Unity 中发生崩溃。
 
 ## <a name="1810"></a>1.8.1.0
- 发布时间 2013-11-21
+ 发布时间：2013 年 11 月 21 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -878,7 +951,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了从 Unity 打开脚本的问题，以便不混淆 Unity 4.2 及更高版本的 ALT+TAB 顺序。
 
 ## <a name="1800"></a>1.8.0.0
- 发布时间 2013-09-24
+ 发布时间：2013 年 9 月 24 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -919,7 +992,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了局部视图中不断变化的布尔值。
 
 ## <a name="1220"></a>1.2.2.0
- 发布时间 2013-07-09
+ 发布时间：2013 年 7 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -942,7 +1015,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 Unity 4.2 Beta 版程序集的处理问题。
 
 ## <a name="1210"></a>1.2.1.0
- 发布时间 2013-04-09
+ 发布时间：2013 年 4 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -955,7 +1028,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了某些外部 DLL 中断点绑定问题。
 
 ## <a name="1200"></a>1.2.0.0
- 发布时间 2013-03-25
+ 发布时间：2013 年 3 月 25 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1022,10 +1095,10 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 bug UV-11：协同程序中的局部变量。
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Beta 版本
- 发布日期 2014-10-09
+ 发布时间：2013 年 3 月 9 日
 
 ## <a name="10130"></a>1.0.13.0
- 发布日期 2013-01-21
+ 发布时间：2013 年 1 月 21 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1048,7 +1121,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了从 Unity 向 UnityVS 发送的长消息的处理。 在此之前，长消息可能会使 UnityVS 的消息传递部分崩溃。 因此，有时 UnityVS 不会从 Unity 打开文件。
 
 ## <a name="10120"></a>1.0.12.0
- 发布时间 2013-01-03
+ 发布时间：2013 年 1 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1067,7 +1140,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了用户代码无法参与日志回调处理程序的 API 故障。
 
 ## <a name="10110"></a>1.0.11.0
- 发布时间 2012-11-28
+ 发布时间：2012 年 11 月 28 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1098,7 +1171,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了不能在 Visual Studio 状态栏中注入图标的崩溃。
 
 ## <a name="10100"></a>1.0.10.0
- 发布时间 2012-10-09
+ 发布时间：2012 年 10 月 9 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1111,7 +1184,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了从 Unity 检索程序集的方式，以避免锁定文件和干扰 Unity 生成进程。
 
 ## <a name="1090"></a>1.0.9.0
- 发布时间 2012-10-03
+ 发布时间：2012 年 10 月 3 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1130,7 +1203,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 bug UV-21：评估对 Unity Math API 的方法调用时的指针无效。
 
 ## <a name="1080"></a>1.0.8.0
- 发布时间 2012-09-26
+ 发布时间：2012 年 9 月 26 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1141,7 +1214,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了在 Visual Studio 2010 中注册 UnityVS 的方式。
 
 ## <a name="1070"></a>1.0.7.0
- 发布时间 2012-09-14
+ 发布时间：2012 年 9 月 14 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1157,10 +1230,10 @@ Visual Studio Tools for Unity 更改日志。
 >  由于 Visual Studio 2012 支持，我们不得不重命名几个文件并移动某些其他文件。 要导入 Unity 的 UnityVS 包现在分别为 Visual Studio 2010 和 Visual Studio 2012 命名为 UnityVS 2010 或 UnityVS 2012。 此版本还需要重新生成 UnityVS 项目文件。
 
 ## <a name="1060---internal-build"></a>1.0.6.0 - 内部版本
- 发布时间 2012-09-12
+ 发布时间：2012 年 9 月 12 日
 
 ## <a name="1050"></a>1.0.5.0
- 发布时间 2012-09-10
+ 发布时间：2012 年 9 月 10 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1169,7 +1242,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 Unity 连接到资产服务器时 Unity 实例的检测。 这会触发从 Unity 打开文件和自动连接 Visual Studio 调试器的失败。
 
 ## <a name="1040"></a>1.0.4.0
- 发布时间 2012-09-05
+ 发布时间：2012 年 9 月 5 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1182,7 +1255,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了由方法或 Unity 内部属性引发的异常导致调试时的 UnityVS 崩溃。
 
 ## <a name="1030"></a>1.0.3.0
- 发布时间 2012-09-04
+ 发布时间：2012 年 9 月 4 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1197,7 +1270,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了由自定义状态栏导致的随机 VS 崩溃。
 
 ## <a name="1020"></a>1.0.2.0
- 发布时间 2012-08-30
+ 发布时间：2012 年 8 月 30 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -1208,7 +1281,7 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了使用 Unity 4 b7 从 Unity 检索脚本程序集的方式中的 bug。
 
 ## <a name="1010"></a>1.0.1.0
- 发布时间 2012-08-28
+ 发布时间：2012 年 8 月 28 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -1225,4 +1298,4 @@ Visual Studio Tools for Unity 更改日志。
 -   修复了 UnityScript 和 Boo 的资产文件夹内 dll 的完成。
 
 ## <a name="1000---initial-release"></a>1.0.0.0 - 初始版本
- 发布时间 2012-08-22
+ 发布时间：2012 年 8 月 22 日

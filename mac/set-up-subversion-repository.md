@@ -1,16 +1,16 @@
 ---
 title: 设置 Subversion 存储库
 description: 使用 Visual Studio for Mac 中的 Subversion。
-author: asb3993
-ms.author: amburns
+author: conceptdev
+ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: e5f395511ad3b2b3cc4568a4d701ca5dbcc02736
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 8e8e17f7787486e5f14fd94927278bb957439e81
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34000252"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "43224050"
 ---
 # <a name="setting-up-a-subversion-repository"></a>设置 Subversion 存储库
 
