@@ -12,21 +12,21 @@ ms.author: gewarren
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.openlocfilehash: c80ee0791c1c073c82681e59e124c5c45b378a07
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
+ms.lasthandoff: 09/05/2018
 ms.locfileid: "34335702"
 ---
-# F1 帮助
+# <a name="f1-help"></a>F1 帮助
 
 很抱歉，我们似乎找不到你要找的东西。 请[帮助我们改进 ](#help-us-improve-f1)。
 
-## 游标位置
+## <a name="cursor-position"></a>游标位置
 
 若要按 F1 以寻求关键字或 API 名称方面的帮助，请务必先将光标放在相应单词内部或右侧（紧挨着它），再按 F1。 如果仍然无法使用，请从[有用的链接](#useful-links)列表中进行选择，或在 https://docs.microsoft.com 上进行搜索。
 
-## 有用的链接
+## <a name="useful-links"></a>有用的链接
 
 - 有关 Visual Studio 的常规信息，请参阅 [Visual Studio 概述](../../ide/visual-studio-ide.md)。
 - 有关 Visual Studio 文本编辑器的帮助信息，请参阅[使用代码编辑器](../../ide/writing-code-in-the-code-and-text-editor.md)。
@@ -36,6 +36,6 @@ ms.locfileid: "34335702"
 - 有关 Python 帮助，请参阅 [Visual Studio 中的 Python](../../python/overview-of-python-tools-for-visual-studio.md)。
 - 有关 C++ 帮助，请参阅 [Visual Studio 中的 C++](/cpp/visual-cpp-in-visual-studio)。
 
-## 帮助我们改进 F1 功能
+## <a name="help-us-improve-f1"></a>帮助我们改进 F1 功能
 
 请帮助我们改进 F1 帮助体验。 通过单击下方的“提供产品反馈”按钮，记录产品帮助问题。 按 F1 时，请包括寻求帮助的相关内容，如光标所在的符号或窗口。 谢谢！
