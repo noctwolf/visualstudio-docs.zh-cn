@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 512952a27e2b1c22df256e36f8cbea59f04a3295
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ee297628e64d61e108483565613951d0b490a8b0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692826"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670603"
 ---
 # <a name="program-document-level-customizations"></a>文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：  
@@ -111,16 +111,16 @@ Globals.ThisDocument.Save();
   
  由于 `ThisDocument` 类从 <xref:Microsoft.Office.Tools.Word.Document> 宿主项中获取了其大多数成员，所以在此代码中调用的 `Save` 方法实际上是 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 宿主项的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 此方法与 Word 对象模型中 <xref:Microsoft.Office.Interop.Word._Document.Save%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Document> 方法相对应。  
   
- 有关使用 Word 和 Excel 的对象模型的详细信息，请参阅[Word 对象模型概述](../vsto/word-object-model-overview.md)和[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
+ 有关使用的 Word 和 Excel 对象模型的详细信息，请参阅[Word 对象模型概述](../vsto/word-object-model-overview.md)并[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   
- 有关详细信息`Globals`对象，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
+ 有关详细信息`Globals`对象，请参阅[对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  
   
 ## <a name="add-controls-to-documents"></a>向文档添加控件  
  若要自定义文档的 UI，可以向文档图面添加 Windows 窗体控件或 *宿主控件* 。 通过组合不同的控件集并编写代码，可将控件绑定到数据、从用户处收集信息并响应用户操作。  
   
  宿主控件是用于扩展 Word 和 Excel 对象模型中某些对象的类。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject> 宿主控件提供了 Excel 中的 <xref:Microsoft.Office.Interop.Excel.ListObject> 的所有功能。 但是， <xref:Microsoft.Office.Tools.Excel.ListObject> 宿主控件还具有其他事件和数据绑定功能。  
   
- 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+ 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)并[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ## <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项  
  可以在属于文档级自定义项的文档中使用 VBA 代码。 可以从自定义程序集文档中调用 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。  
@@ -137,7 +137,7 @@ Globals.ThisDocument.Save();
   
 -   向文档图面添加宿主控件或 Windows 窗体控件。  
   
-     有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)，[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows 窗体控件上 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+     有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)，[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
 -   将操作窗格添加到文档。  
   
@@ -153,22 +153,22 @@ Globals.ThisDocument.Save();
   
  有关自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
-## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>从文档级自定义项中的本机 Office 对象中获取扩展的对象  
+## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>从文档级自定义项中的本机 Office 对象获取扩展的对象  
  许多 Office 事件的事件处理程序可接受本机 Office 对象，这些对象表示工作簿、工作表或引发事件的文档。 在某些情况下，可能仅当工作簿或文档级自定义项中的文档引发事件时，才需要运行某些代码。 例如，在 Excel 文档级自定义项中，当用户激活自定义工作簿中的一个工作表时可能需要运行某些代码，而当用户激活当时恰好处于打开状态的其他工作簿中的工作表时则不运行。  
   
  具有本机 Office 对象时，你可以测试该对象是否已扩展为文档级自定义项中的 *宿主项* 或 *宿主控件* 。 宿主项和宿主控件是由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供的类型，可向以本机方式存在于 Word 或 Excel 对象模型中的对象（称为 *本机 Office 对象*）添加功能。 宿主项和宿主控件又统称 *扩展的对象*。 有关主机项和主机控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>了解 GetVstoObject 和 HasVstoObject 方法  
- 若要测试本机 Office 对象，使用`HasVstoObject`和`GetVstoObject`你的项目中的方法：  
+ 若要测试本机 Office 对象，请使用`HasVstoObject`和`GetVstoObject`你的项目中的方法：  
   
--   使用`HasVstoObject`方法如果你想要确定本机 Office 对象是否在你的自定义具有扩展的对象。 如果本机 Office 对象具有扩展的对象，则此方法返回 **true** ，否则返回 **false** 。  
+-   使用`HasVstoObject`方法如果你想要确定是否本机 Office 对象具有扩展的对象在自定义项中。 如果本机 Office 对象具有扩展的对象，则此方法返回 **true** ，否则返回 **false** 。  
   
--   使用`GetVstoObject`方法如果你想要将本机 Office 对象中获取扩展的对象。 如果指定的本机 Office 对象具有扩展的对象，则此方法返回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 对象。 否则为`GetVstoObject`返回**null**。 例如，`GetVstoObject`方法返回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文档项目中的文档的基础对象。  
+-   使用`GetVstoObject`方法如果你想要获取本机 Office 对象的扩展的对象。 如果指定的本机 Office 对象具有扩展的对象，则此方法返回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 对象。 否则为`GetVstoObject`将返回**null**。 例如，`GetVstoObject`方法将返回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文档项目中的文档的基础对象。  
   
- 在文档级项目中，不能使用`GetVstoObject`方法来创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时主机项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果你想要在运行时创建新的主机项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)和[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在文档级项目中，不能使用`GetVstoObject`方法来创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时宿主项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果你想要在运行时创建新的宿主项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)并[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
- 若要调用`HasVstoObject`和`GetVstoObject`方法，请使用`Globals.Factory.GetVstoObject`或`Globals.Factory.HasVstoObject`方法，并传入的本机 Word 或 Excel 对象 (如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>)，你想要测试。  
+ 若要调用`HasVstoObject`并`GetVstoObject`方法，请使用`Globals.Factory.GetVstoObject`或`Globals.Factory.HasVstoObject`方法，并传入本机 Word 或 Excel 对象 (如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 想要测试。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式检索收件箱的未读的邮件 |Microsoft 文档
+title: 如何： 以编程方式从收件箱中检索未读的邮件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,14 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ec08c95a0543ab6ec47c0bded8126c6c2030c87e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3442ecd10bc18e0336542ce2b8396b8b7f654b78
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670702"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以编程方式检索收件箱中的未读邮件
-  此示例从 Outlook **收件箱** 检索未读电子邮件并显示项数。  
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何： 以编程方式从收件箱中检索未读的邮件
+  此示例从 Outlook 检索未读的电子邮件**收件箱**和显示项的数目。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
@@ -35,9 +36,9 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="see-also"></a>请参阅  
  [使用邮件项](../vsto/working-with-mail-items.md)   
- [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)   
+ [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)   
  [如何： 以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)   
  [如何： 以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)   
- [如何：以编程方式在收到电子邮件后执行操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+ [如何： 以编程方式执行操作时收到一封电子邮件](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

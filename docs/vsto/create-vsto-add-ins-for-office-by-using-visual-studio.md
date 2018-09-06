@@ -13,11 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c935d4b71ccea16c450e65c0a153700bfa889583
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671728"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。  
@@ -25,16 +26,16 @@ ms.lasthandoff: 05/17/2018
  Office 开发人员工具提供了一些功能，可帮助你创建适合于各种业务需求的 Office 解决方案。 这些工具包括项目模板和可视化设计器，前者有助于你通过使用 Visual Basic 或 Visual C# 创建 Office 解决方案，后者有助于你为 Office 解决方案创建自定义用户界面。  
   
 > [!NOTE]  
->  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有内存占用较小与 VSTO 外接程序和解决方案，相比，并且你可以通过使用几乎任何 web 编程技术，例如 HTML5、 JavaScript、 CSS3 和 XML 生成它们。  
+>  开发扩展的 Office 体验跨解决方案是否有兴趣[多个平台](https://dev.office.com/add-in-availability)？ 查看全新[Office 外接程序模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 外接程序具有较小的需求量与 VSTO 外接程序和解决方案，相比，您可以使用几乎任何 web 编程技术，HTML5、 JavaScript、 CSS3 和 XML 等来生成。  
   
  有关 Office 开发的最新信息，请访问 MSDN 上的以下开发中心：  
   
--   [使用 Visual Studio 开发人员门户进行 Office 开发](http://go.microsoft.com/fwlink/?LinkId=123844)包含指向产品信息、 代码示例、 视频和有关使用 Visual Studio 自 Office 应用程序定义为解决方案的一部分的社区资源.  
+-   [与 Visual Studio 开发人员门户的 Office 开发](http://go.microsoft.com/fwlink/?LinkId=123844)包含指向产品信息、 代码示例、 视频和有关使用 Visual Studio 作为解决方案的一部分的自定义 Office 应用程序的社区资源.  
   
--   [Microsoft Office 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含的技术文章、 代码示例、 下载、 社区信息、 支持和有关 Office 自定义项和 Office 业务应用程序 (Oba 其他文档链接).  
+-   [Microsoft Office 开发人员中心](http://go.microsoft.com/fwlink/?LinkId=83467)包含指向技术文章、 代码示例、 下载、 社区信息、 支持和有关 Office 自定义项和 Office 业务应用程序 (Oba 的其他文档).  
   
 ## <a name="in-this-section"></a>本节内容  
- [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
+ [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)  
  提供一些链接，这些链接指向有关如何配置开发计算机以创建 Office 解决方案、如何开始创建 Office 解决方案以及 Visual Studio 中的 Office 开发的新增功能的信息。  
   
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)  
@@ -86,10 +87,10 @@ ms.lasthandoff: 05/17/2018
  提供指向示例应用程序和主题的链接，这些主题提供有关执行常规任务的分步说明。  
   
  [常规参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/general-reference-office-development-in-visual-studio.md)  
- 提供指向有关 Office 主互操作程序集、 清单、 用户界面元素和错误信息的详细信息。  
+ 提供指向有关 Office 主互操作程序集、 清单、 用户界面元素和错误消息的详细信息。  
   
  [托管参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/managed-reference-office-development-in-visual-studio.md)  
- 提供指向有关在 Office 项目中使用的针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 API 命名空间和类型的链接。 有关命名空间和在面向.NET Framework 3.5 的 Office 项目中使用的类型的 API 参考文档，请参阅 Visual Studio 2008 文档中的以下参考部分： [2007年系统托管参考](http://go.microsoft.com/fwlink/?LinkId=160658).  
+ 提供指向有关在 Office 项目中使用的针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]的 API 命名空间和类型的链接。 有关命名空间和类型的.NET Framework 3.5 为目标的 Office 项目中使用的 API 参考文档，请参阅 Visual Studio 2008 文档中的以下参考部分： [2007年系统托管参考](http://go.microsoft.com/fwlink/?LinkId=160658).  
   
  [非托管 API 参考&#40;Visual Studio 中的 Office 开发&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)  
  包含一些链接，这些链接指向有关可以使用 COM 接口执行各种操作（例如加载和卸载 Office 应用程序中托管 VSTO 外接程序）方面的信息。  
@@ -104,13 +105,13 @@ ms.lasthandoff: 05/17/2018
  [Office 业务应用程序开发人员门户](http://go.microsoft.com/fwlink/?LinkId=99125)  
  提供有关 Office 业务应用程序 (Oba) 的信息以及如何使用 Office 系统平台生成。  
   
- [MSDN library 的 Microsoft Office 开发部分](http://go.microsoft.com/fwlink/?LinkId=149870)  
- 在此可找到文章和参考文档，有关开发解决方案的多个版本的 Office （不特定于使用 Visual Studio 的 Office 开发） MSDN library 的区域。  
+ [MSDN 库的 Microsoft Office 开发部分](http://go.microsoft.com/fwlink/?LinkId=149870)  
+ 可以在其中查找文章，并可参考有关开发解决方案的多个版本的 Office （不特定于使用 Visual Studio 的 Office 开发） 的文档上的 MSDN library 的区域。  
   
- [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/en-us/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
- 包含指向这些主题介绍如何使用 Visual Studio 设计、 开发、 调试和部署 web 应用程序、 XML web 服务和传统的客户端应用程序。  
+ [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ 包含指向这些主题介绍如何使用 Visual Studio 设计、 开发、 调试和部署 web 应用程序、 XML web 服务和传统客户端应用程序。  
   
- [Visual Studio 中的.NET framework 编程](http://msdn.microsoft.com/en-us/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [在 Visual Studio 中的.NET framework 编程](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
  讨论在 Visual Basic 和 Visual C# 中使用 .NET Framework 的应用程序开发。  
   
   

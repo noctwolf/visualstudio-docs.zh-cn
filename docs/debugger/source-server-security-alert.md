@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 826669924cc538a63d61ffe5051aa32152a6152d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 145dd426390e84ae8bf9be14ad3266c3006e22da
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511168"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774653"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 使用源服务器时，只能使用来自已知和受信任位置的符号文件。  
   
- 此警告会在你启用源服务器支持时出现。 源服务器命令嵌套在调试符号文件 (***.pdb**文件)。 请确保你知道自己的 PDB 文件来自何处。  
+ 此警告会在你启用源服务器支持时出现。 源服务器命令嵌套在调试符号文件 (**\*.pdb**文件)。 请确保你知道自己的 PDB 文件来自何处。  
   
 > [!IMPORTANT]
 >  使用源服务器时必须考虑以下潜在的安全威胁：因为任何命令都可以嵌入到应用程序的 PDB 文件中，所以请确保只将要执行的命令放到 srcsrv.ini 文件中。 任何尝试执行不在 srcsvr.ini 文件中的命令都将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果你信任 cmd.exe，恶意用户则可能会指定使该命令变得危险的参数。  

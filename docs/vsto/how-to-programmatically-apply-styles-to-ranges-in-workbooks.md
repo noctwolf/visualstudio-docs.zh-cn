@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式将样式应用于工作簿中的 |Microsoft 文档
+title: 如何： 以编程方式将样式应用于工作簿中的范围
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14fd6ddc049214439a69fa3fabf0140256755da3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d19c886a7b3ae1a1976ab2a47fe139ba830a4ea5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670476"
 ---
-# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以编程方式将样式应用于工作簿中的所选区域
+# <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何： 以编程方式将样式应用于工作簿中的范围
   可以将已命名的样式应用到工作簿中的区域。 Excel 提供了大量预定义样式。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
  **“设置单元格格式”** 对话框显示了可用于设置单元格格式的所有选项，且其中每个选项都可从你的代码获取。 若要在 Excel 中显示此对话框，请单击 **“格式”** 菜单上的 **“单元格”** 。  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>将样式应用到文档级自定义项中的命名区域  
+## <a name="to-apply-a-style-to-a-named-range-in-a-document-level-customization"></a>将样式应用到文档级自定义项中的命名区域  
   
 1.  创建一个新样式并设置其属性。  
   
@@ -42,14 +43,14 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#54)]
      [!code-vb[Trin_VstcoreExcelAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#54)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>从文档级自定义项的命名区域中清除样式  
+## <a name="to-clear-a-style-from-a-named-range-in-a-document-level-customization"></a>从文档级自定义项的命名区域中清除样式  
   
 1.  将正文样式应用到该区域中。 必须将此代码置于表类中，而不是在 `ThisWorkbook` 类中。  
   
      [!code-csharp[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#55)]
      [!code-vb[Trin_VstcoreExcelAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#55)]  
   
-### <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>将样式应用到 VSTO 外接程序中的命名区域  
+## <a name="to-apply-a-style-to-a-named-range-in-a-vsto-add-in"></a>将样式应用到 VSTO 外接程序中的命名区域  
   
 1.  创建一个新样式并设置其属性。  
   
@@ -61,7 +62,7 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#29)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#29](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#29)]  
   
-### <a name="to-clear-a-style-from-a-named-range-in-an-vsto-add-in"></a>从 VSTO 外接程序的命名区域中清除样式  
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>若要从 VSTO 外接程序中的命名区域清除样式  
   
 1.  将正文样式应用到该区域中。  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>请参阅  
  [使用范围](../vsto/working-with-ranges.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
+ [对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -33,12 +33,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfd3db7a029497a0f9a5b5c2c6c89cde38524c23
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692608"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670418"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：  
@@ -51,7 +51,7 @@ ms.locfileid: "34692608"
   
  Office 项目模板位于 **“新建项目”** 对话框中，你可以从 **“Visual C#”** 和 **“Visual Basic”** 语言节点的 **“Office”** 节点下找到该对话框。 每个模板都使用目标应用程序的相应配置来生成项目，包括程序集引用和调试设置。  
   
- 每个项目都提供了文件和代码，使你可以开始使用特定类型的解决方案。 每个项目的生成代码都包括启动和关闭事件处理程序。 可以向这些事件处理程序添加代码，以便在加载解决方案时对其进行初始化，并在卸载解决方案时对其进行清理。 有关详细信息，请参阅[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)和[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
+ 每个项目都提供了文件和代码，使你可以开始使用特定类型的解决方案。 每个项目的生成代码都包括启动和关闭事件处理程序。 可以向这些事件处理程序添加代码，以便在加载解决方案时对其进行初始化，并在卸载解决方案时对其进行清理。 有关详细信息，请参阅[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)并[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
   
 > [!NOTE]  
 >  Office 开发工具随某些 Visual Studio 版本提供。 有关详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -90,9 +90,9 @@ ms.locfileid: "34692608"
   
 -   [Excel 解决方案](../vsto/excel-solutions.md)  
   
--   [演练： 创建你的第一个文档级自定义 word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
+-   [演练： 创建 word 在第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)  
   
--   [演练： 创建你的第一个文档级自定义 excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
+-   [演练： 创建你的 Excel 的第一个文档级自定义](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
   
 ##  <a name="AppLevel"></a> VSTO 外接程序  
  **“新建项目”** 对话框中的 **“Office/SharePoint”** 节点提供下列项目模板，可以使用这些模板开始创建 VSTO 外接程序。  
@@ -129,21 +129,21 @@ ms.locfileid: "34692608"
   
  有关这些项目类型入门的详细信息，请参阅下列主题：  
   
--   [要开始 VSTO 外接程序编程](../vsto/getting-started-programming-vsto-add-ins.md)  
+-   [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
   
 -   [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
   
--   [演练： 为 Excel 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+-   [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [演练： 创建第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+-   [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
 -   [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [演练： 创建第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+-   [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
 -   [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
-## <a name="document-vs-template-solutions"></a>模板解决方案与文档  
+## <a name="document-vs-template-solutions"></a>记录与模板解决方案  
  在围绕 Word 文档或 Excel 工作簿设计解决方案时，必须确定将该文档提供给用户的最佳方式。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
@@ -166,15 +166,15 @@ ms.locfileid: "34692608"
 ## <a name="word-templates"></a>Word 模板  
  当 Microsoft Office Word 模板具有托管代码扩展时，如果该模板作为全局模板附加或者从 Word 的 Startup 目录中加载，则不会调用项目程序集。 此外，文档不识别属于 Office 解决方案的模板的格式。  
   
-## <a name="excel-add-ins-xla-files"></a>Excel 外接程序（.xla 文件）  
- 没有用于创建 Excel VSTO 外接程序（.xla 文件）的 Office 项目。 可以将工作簿另存为 .xla 文件，但这不是一种受支持的操作，建议你不要这样做。 如果你保存的工作簿具有托管代码扩展作为**Microsoft Office Excel 外接程序 (\*.xla)** 文件，你可以选择在**外接程序**对话框中，将应用于另一个工作簿。 某些情况下，你的代码将在应用 VSTO 外接程序后在目标工作簿中运行，但不支持这样使用 Office 解决方案。  
+## <a name="excel-add-ins-xla-files"></a>Excel 加载项 （.xla 文件）  
+ 没有用于创建 Excel VSTO 外接程序中的 Office 项目 (*.xla*文件)。 可以将工作簿另存为 .xla 文件，但这不是一种受支持的操作，建议你不要这样做。 如果保存具有托管作为代码扩展的工作簿**Microsoft Office Excel 外接程序 (\*.xla)** 文件，则可以选择在它**外接程序**对话框可以将应用于另一个工作簿。 在某些情况下，你的代码将运行目标工作簿中之后应用 VSTO 外接程序时，但不是支持这样使用 Office 解决方案。  
   
 ## <a name="see-also"></a>请参阅  
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [开始编程 Excel 文档级自定义项](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
- [要开始使用 word 的文档级自定义项编程](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
- [要开始 VSTO 外接程序编程](../vsto/getting-started-programming-vsto-add-ins.md)  
+ [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
+ [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
+ [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

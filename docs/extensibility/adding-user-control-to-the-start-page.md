@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 095325fc8312747b61ff4312c5fe616ae79ce045
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8bcac83d23bae3d8c269a53a95fedb9507245e9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152953"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775821"
 ---
 # <a name="add-user-control-to-the-start-page"></a>将用户控件添加到启动页
 本演练演示如何添加对自定义起始页的 DLL 引用。 该示例向解决方案添加一个用户控件、 生成用户控件，然后从启动页中引用生成的程序集 *.xaml*文件。 一个新选项卡承载用户控件，该函数作为基本的 Web 浏览器控件。  
@@ -177,7 +177,7 @@ ms.locfileid: "39152953"
   
 1.  将你的 XAML 文件，和任何支持的文本文件或标记文件，为复制 *%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\* 文件夹。  
   
-2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，这些程序集然后复制并粘贴在 * Visual Studio 安装文件夹 ***\Common7\IDE\PrivateAssemblies\\** .  
+2.  如果你的起始页引用的任何控件或未安装 Visual studio 的程序集中的类型，复制程序集，然后将其粘贴_Visual Studio 安装文件夹_**\Common7\IDE\PrivateAssemblies\\**。  
   
 3.  在 Visual Studio 命令提示符下键入**devenv /rootsuffix Exp**打开 Visual Studio 的实验实例。  
   

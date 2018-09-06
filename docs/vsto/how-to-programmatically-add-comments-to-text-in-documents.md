@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式向文档中的文本添加注释 |Microsoft 文档
+title: 如何： 以编程方式向文档中的文本添加注释
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,27 +16,28 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 752c79bf6bd586d19b9ec572d3cd643cdfd90e70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ca0d15ee69bb58aae765c03c1233a78bfeeb119c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670312"
 ---
-# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以编程方式向文档中的文本添加注释
-  文档类的注释属性将添加到的 Microsoft Office Word 文档中的文本范围的注释。  
+# <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何： 以编程方式向文档中的文本添加注释
+  文档类的注释属性将注释添加到 Microsoft Office Word 文档中的文本范围。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
  下列示例将在文档中的第一个段落添加注释。  
   
-### <a name="to-add-a-new-comment-to-text-in-a-document-level-customization"></a>向文档级自定义项中的文本添加新注释  
+## <a name="to-add-a-new-comment-to-text-in-a-document-level-customization"></a>向文档级自定义项中的文本添加新注释  
   
 1.  调用 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 属性的 <xref:Microsoft.Office.Tools.Word.Document.Comments%2A> 方法并提供范围和注释文本。 若要使用下面的代码示例，请从项目的 `ThisDocument` 类中运行它。  
   
      [!code-vb[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#118)]
      [!code-csharp[Trin_VstcoreWordAutomation#118](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#118)]  
   
-### <a name="to-add-a-new-comment-to-text-in-an-vsto-add-in"></a>向 VSTO 外接程序中的文本添加新注释  
+## <a name="to-add-a-new-comment-to-text-in-a-vsto-add-in"></a>若要将新的注释添加到 VSTO 外接程序中的文本  
   
 1.  调用 <xref:Microsoft.Office.Interop.Word.Comments.Add%2A> 属性的 <xref:Microsoft.Office.Interop.Word._Document.Comments%2A> 方法并提供范围和注释文本。  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 04/16/2018
  若要更改 Word 在注释中添加的用户缩写，请使用 <xref:Microsoft.Office.Interop.Word._Application.UserInitials%2A> 属性。  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式移除文档中所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
+ [如何： 以编程方式从文档中删除所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)   
  [文档主机项](../vsto/document-host-item.md)  
   
   

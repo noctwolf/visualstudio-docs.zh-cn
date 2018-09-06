@@ -1,5 +1,5 @@
 ---
-title: 如何： 读取和写入向文档属性 |Microsoft 文档
+title: 如何： 读取和写入文档属性
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0f420968461b8f4d11416abe85521ed002cf11ae
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671676"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>如何：从文档属性中读取或向文档属性写入
+# <a name="how-to-read-from-and-write-to-document-properties"></a>如何： 读取和写入文档属性
   可以存储文档以及文档属性。 Office 应用程序提供了许多内置的属性，例如作者、标题和主题。 本主题演示如何在 Microsoft Office Excel 和 Microsoft Office Word 中设置文档属性。  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 访问和 Microsoft Word 中操作自定义文档属性？](http://go.microsoft.com/fwlink/?LinkId=136772)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 访问和操作在 Microsoft Word 中的自定义文档属性？](http://go.microsoft.com/fwlink/?LinkId=136772)。  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## <a name="setting-document-properties-in-excel"></a>在 Excel 中设置文档属性  
+## <a name="set-document-properties-in-excel"></a>在 Excel 中设置文档属性  
  要使用 Excel 中的内置属性，请使用以下属性：  
   
 -   在文档级项目中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 类的 `ThisWorkbook` 属性。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
   
  下面的代码示例演示了如何更改文档级项目中的内置 **Revision Number** 属性。  
   
-#### <a name="to-change-the-revision-number-property-in-excel"></a>若要更改在 Excel 中的修订号属性  
+### <a name="to-change-the-revision-number-property-in-excel"></a>若要更改在 Excel 中的修订号属性  
   
 1.  将内置文档属性分配给变量。  
   
@@ -54,7 +55,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## <a name="setting-document-properties-in-word"></a>在 Word 中设置文档属性  
+## <a name="set-document-properties-in-word"></a>在 Word 中设置文档属性  
  若要使用 Word 中的内置属性，请使用以下属性：  
   
 -   在文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 类的 `ThisDocument` 属性。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
  下面的代码示例演示了如何更改文档级项目中的内置 **Subject** 属性。  
   
-#### <a name="to-change-the-subject-property"></a>若要更改主题属性  
+### <a name="to-change-the-subject-property"></a>若要更改主题属性  
   
 1.  将内置文档属性分配给变量。  
   
@@ -83,8 +84,8 @@ ms.lasthandoff: 04/16/2018
  虽然你可以使用 Word 和 Excel 及其对象，但 Microsoft Office 仍然提供了可用的内置文档属性的列表。 尝试访问未定义的属性会引发异常。  
   
 ## <a name="see-also"></a>请参阅  
- [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [文档级自定义项编程](../vsto/programming-document-level-customizations.md)   
- [如何：创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+ [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
+ [文档级自定义项进行编程](../vsto/programming-document-level-customizations.md)   
+ [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

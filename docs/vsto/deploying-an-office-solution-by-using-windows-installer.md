@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2549f8646d5289925a45737d8d5b2e7707ea301f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 58d41395a7abd05b5bce353655f9149b7a2fbd44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382612"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775709"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 了解如何使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]为你的 Office 解决方案创建 Windows Installer。  
@@ -526,7 +526,7 @@ ms.locfileid: "39382612"
   
 9. 在菜单栏上依次选择**构建** > **构建 officeaddinsetup**。  
   
-   在生成完成后，可以找到*setup.exe*的文件**OfficeAddInSetup**项目上的以下位置： *OfficeAddInSetupProjectRoot * * * \OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
+   在生成完成后，可以找到*setup.exe*的文件**OfficeAddInSetup**项目上的以下位置： _OfficeAddInSetupProjectRoot_ **\OfficeAddInSetup\Express\SingleImage\DiskImages\DISK1\**  
   
   
 ## <a name="see-also"></a>请参阅  

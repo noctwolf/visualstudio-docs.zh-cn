@@ -39,11 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: afc067e46f3cad5baa46bb5fef2381e82791dc76
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670331"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主机项和主机控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  
@@ -72,19 +73,19 @@ ms.lasthandoff: 05/25/2018
 ### <a name="understand-host-items-in-document-level-projects"></a>了解文档级项目中的主机项  
  在文档级项目中，宿主项提供了代码的入口点，并且它们的设计器可帮助你开发解决方案。  
   
- <xref:Microsoft.Office.Tools.Word.Document> 和 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项具有作为文档或工作表的可视表示形式的关联设计器，例如 Windows 窗体设计器。 你可以使用此设计器直接在 Word 或 Excel 中修改文档或工作表的内容，以及将控件拖动到设计图面上。 有关详细信息，请参阅[文档主机项](../vsto/document-host-item.md)和[工作表主机项](../vsto/worksheet-host-item.md)。  
+ <xref:Microsoft.Office.Tools.Word.Document> 和 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项具有作为文档或工作表的可视表示形式的关联设计器，例如 Windows 窗体设计器。 你可以使用此设计器直接在 Word 或 Excel 中修改文档或工作表的内容，以及将控件拖动到设计图面上。 有关详细信息，请参阅[文档宿主项](../vsto/document-host-item.md)并[工作表主机项](../vsto/worksheet-host-item.md)。  
   
  <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项并不会充当具有用户界面的控件的容器。 相反，此宿主项的设计器充当组件栏，这使你可以将一个组件（如 <xref:System.Data.DataSet>拖动到其设计图面上。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。  
   
- 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet` *n* Visual Studio 自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
+ 宿主项不能在文档级项目中以编程方式创建。 请改用`ThisDocument`， `ThisWorkbook`，或`Sheet` *n* Visual Studio 会自动生成你的项目中在设计时的类。 这些生成的类派生自宿主项，并提供代码的入口点。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。  
   
 ### <a name="understand-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的主机项  
- 在创建 VSTO 外接程序时，默认情况下你没有访问任何宿主项的权限。 但是，你可以生成<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，和<xref:Microsoft.Office.Tools.Excel.Worksheet>主机 Word 和 Excel VSTO 外接程序在运行时中的项。  
+ 当创建 VSTO 外接程序中时，你无法访问任何宿主项默认情况下。 但是，可以生成<xref:Microsoft.Office.Tools.Word.Document>， <xref:Microsoft.Office.Tools.Excel.Workbook>，和<xref:Microsoft.Office.Tools.Excel.Worksheet>主机在 Word 和 Excel VSTO 外接在运行时中的项。  
   
- 生成宿主项后，可以执行诸如向文档添加控件等任务。 有关详细信息，请参阅[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 生成宿主项后，可以执行诸如向文档添加控件等任务。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="host-controls"></a>主机控件  
- 主机控件扩展各种用户界面 (UI) 对象，在 Word 和 Excel 对象模型中，例如`Microsoft.Office.Interop.Word.ContentControl`和<xref:Microsoft.Office.Interop.Excel.Range>对象。  
+ 宿主控件扩展 Word 和 Excel 对象模型中的各种用户界面 (UI) 对象，如`Microsoft.Office.Interop.Word.ContentControl`和<xref:Microsoft.Office.Interop.Excel.Range>对象。  
   
  以下宿主控件可用于 Excel 项目：  
   
@@ -108,16 +109,16 @@ ms.lasthandoff: 05/25/2018
   
  添加到 Office 文档的宿主控件的行为类似于本机的 Office 对象；但是，宿主控件具有包括事件和数据绑定功能的附加功能。 例如，要捕获 Excel 中的本机 <xref:Microsoft.Office.Interop.Excel.Range> 对象的事件时，必须首先处理工作表的更改事件。 然后必须确定 <xref:Microsoft.Office.Interop.Excel.Range>中是否发生了更改。 与此相反， <xref:Microsoft.Office.Tools.Excel.NamedRange> 宿主控件具有可直接处理的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件。  
   
- 宿主项和宿主控件之间的关系非常类似于 Windows 窗体和 Windows 窗体控件之间的关系。 就像你将文本框控件置于 Windows 窗体上，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件置于 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项上。 下图显示宿主项和宿主控件之间的关系。  
+ 主机项和宿主控件之间的关系是类似于 Windows 窗体和 Windows 窗体控件之间的关系。 就像你将文本框控件置于 Windows 窗体上，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件置于 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项上。 下图显示宿主项和宿主控件之间的关系。  
   
- ![主机项和主机控件之间的关系](../vsto/media/hostitemscontrols.png "主机项和主机控件之间的关系")  
+ ![主机项和宿主控件之间的关系](../vsto/media/hostitemscontrols.png "主机项和宿主控件之间的关系")  
   
- 您还可以通过将 Windows 窗体控件添加到 Word 和 Excel 文档图面，从而在 Office 解决方案中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件上 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+ 您还可以通过将 Windows 窗体控件添加到 Word 和 Excel 文档图面，从而在 Office 解决方案中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 > [!NOTE]  
 >  不支持将宿主控件或 Windows 窗体控件添加到 Word 子文档。  
   
-### <a name="add-host-controls-to-your-documents"></a>将主机控件添加到你的文档  
+### <a name="add-host-controls-to-your-documents"></a>将宿主控件添加到你的文档  
  在文档级项目中，你可以在设计时通过以下方式将宿主控件添加到 Word 文档或 Excel 工作表：  
   
 -   在设计时按与添加本机对象相同的方式将宿主控件添加到你的文档。  
@@ -126,7 +127,7 @@ ms.lasthandoff: 05/25/2018
   
 -   将宿主控件从“数据源”  窗口拖动到文档和工作表。 这使你能够添加已绑定到数据的控件。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 在文档级和 VSTO 外接程序项目中，你还可以在运行时向文档添加某些主机控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+ 在文档级和 VSTO 外接程序项目中，您还可以在运行时向文档添加某些宿主控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
  有关如何将宿主控件添加到文档的详细信息，请参阅以下主题：  
   
@@ -140,7 +141,7 @@ ms.lasthandoff: 05/25/2018
   
 -   [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [如何： 添加内容控件添加到 Word 文档](../vsto/how-to-add-content-controls-to-word-documents.md)  
+-   [如何： 将内容添加到 Word 文档的控件](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
 -   [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
@@ -152,19 +153,19 @@ ms.lasthandoff: 05/25/2018
 > [!NOTE]  
 >  不能使用保留字来命名宿主控件。 例如，如果你将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到工作表，并将名称更改为 **System**，生成项目时将出现错误。  
   
-### <a name="delete-host-controls"></a>删除主机控件  
- 在文档级项目中，你可以删除主机控件在设计时通过选择 Excel 工作表或 Word 文档上的控件并按**删除**密钥。 但是，在 Excel 中必须使用“定义名称”  对话框来删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。  
+### <a name="delete-host-controls"></a>删除宿主控件  
+ 在文档级项目中，您可以删除宿主控件在设计时通过选择 Excel 工作表或 Word 文档上的控件并按**删除**密钥。 但是，在 Excel 中必须使用“定义名称”  对话框来删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。  
   
- 如果在设计时向文档添加宿主控件，你不应删除它以编程方式在运行时由于的下次尝试使用控件在代码中，将引发异常。 `Delete`的主机控件的方法仅删除主机控件添加到在运行时的文档。 如果调用在设计时创建的宿主控件的 `Delete` 方法，将引发异常。  
+ 如果在设计时向文档添加宿主控件，您不应删除它以编程方式在运行时由于下一次尝试在代码中，使用该控件将引发异常。 `Delete`主机控件的方法仅删除宿主控件添加到在运行时文档。 如果调用在设计时创建的宿主控件的 `Delete` 方法，将引发异常。  
   
  例如，如果以编程方式添加到工作表，则 <xref:Microsoft.Office.Tools.Excel.NamedRange.Delete%2A> 方法 <xref:Microsoft.Office.Tools.Excel.NamedRange> 仅成功删除 <xref:Microsoft.Office.Tools.Excel.NamedRange> ，这被称为动态创建宿主控件。 也可以通过将控件名称传递到 `Remove` 或 <xref:Microsoft.Office.Tools.Excel.Worksheet.Controls%2A> 属性的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 方法来删除动态创建的宿主控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 如果最终用户在运行时从文档中删除主机控件，该解决方案可能会失败以意想不到的方式。 你可以使用 Word 和 Excel 中的文档保护功能来防止删除宿主控件。 有关详细信息，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
+ 如果最终用户在运行时从文档删除宿主控件，该解决方案可能会以意外的方式失败。 你可以使用 Word 和 Excel 中的文档保护功能来防止删除宿主控件。 有关详细信息，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
 > [!NOTE]  
 >  请不要在文档或工作表的 `Shutdown` 事件处理程序过程中以编程方式删除控件。 发生 `Shutdown` 事件时，UI 元素将不再可用。 如果要在应用程序关闭之前删除控件，请将你的代码添加到另一个事件处理程序中，如 `BeforeClose` 或 `BeforeSave`。  
   
-### <a name="program-against-host-control-events"></a>针对主机控件事件进行编程  
+### <a name="program-against-host-control-events"></a>针对宿主控件事件进行编程  
  宿主控件扩展 Office 对象的一种方法是通过添加事件。 例如，在 Excel 中的 <xref:Microsoft.Office.Interop.Excel.Range> 对象和在 Word 中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象不具有事件，但 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 通过添加可编程事件来扩展这些对象。 你可以用访问 Windows 窗体上控件的事件的方式对这些事件进行访问和编码：通过 Visual Basic 中的事件下拉列表和 C# 中的事件属性页。 有关详细信息，请参阅[演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)。  
   
 > [!NOTE]  

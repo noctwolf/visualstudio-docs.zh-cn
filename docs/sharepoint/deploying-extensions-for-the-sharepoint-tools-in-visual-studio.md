@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58b430d1331a12e080d238d34a4817afea8585d1
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f5ee0493a8a780710eb4b6bbbd9426e23baf48e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326860"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774911"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>部署 Visual Studio 中的 SharePoint 工具扩展
 
@@ -134,7 +134,7 @@ ms.locfileid: "36326860"
 
 6.  在中**解决方案资源管理器**，打开你的项目模板或项模板项目的快捷菜单，然后选择**卸载项目**。
 
-7.  再次，打开项目节点的快捷菜单，然后选择**编辑***YourTemplateProjectName***.csproj**或**编辑***YourTemplateProjectName***。vbproj**。
+7.  再次，打开项目节点的快捷菜单，然后选择**编辑**_YourTemplateProjectName_**.csproj**或者**编辑**_YourTemplateProjectName_**.vbproj**。
 
 8.  找到以下`VSTemplate`项目文件中的元素。
 

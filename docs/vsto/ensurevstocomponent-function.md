@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 20c4e363b11647609b67a898878dd4b4e59ba180
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 08b22ed86851a35f23306fc765f62f265da4701e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670483"
 ---
 # <a name="ensurevstocomponent-function"></a>EnsureVSTOComponent 函数
   此 API 支持 Office 基础结构，不应在代码中直接使用。  
   
 ## <a name="syntax"></a>语法  
   
-```c  
+```csharp  
 HRESULT EnsureVSTOComponent(  
     IVSTProject *pProject  
 );  

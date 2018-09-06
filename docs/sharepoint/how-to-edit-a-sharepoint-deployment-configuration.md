@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9640d98522c74fb33f8845e255511a807e03961e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: f06c26f2f274615058c46ecd45a6d73757b78db9
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118502"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774789"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何： 编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，无法运行单步执行或更改的部署过程中的步骤顺序。 您可能想要创建或修改部署配置，因为不能更改的内置和以编程方式添加了配置。  
@@ -33,7 +33,7 @@ ms.locfileid: "37118502"
   
 #### <a name="to-create-a-sharepoint-deployment-configuration"></a>若要创建的 SharePoint 部署配置  
   
-1.  在中**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上选择**项目**，* ProjectName ***属性**。  
+1.  在中**解决方案资源管理器**，选择 SharePoint 项目，，然后，在菜单栏上选择**项目**， _ProjectName_**属性**。  
   
 2.  上**SharePoint**选项卡上，选择**新建**按钮。  
   

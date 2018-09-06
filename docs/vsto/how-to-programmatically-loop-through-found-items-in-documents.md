@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式遍历在文档中找到的项 |Microsoft 文档
+title: 如何： 以编程方式遍历在文档中找到的项
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,18 +17,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 660434790ab4bf3073a00f2ec7ab9db737381707
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0ff9a85319ac35e051b41ff65ab5b027dc226f44
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670610"
 ---
-# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何：以编程方式遍历在文档中找到的项
-  <xref:Microsoft.Office.Interop.Word.Find>类具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>属性，它返回**true**每当找到搜索项。 你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法循环访问在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有实例。  
+# <a name="how-to-programmatically-loop-through-found-items-in-documents"></a>如何： 以编程方式遍历在文档中找到的项
+  <xref:Microsoft.Office.Interop.Word.Find>类具有<xref:Microsoft.Office.Interop.Word.Find.Found%2A>属性，它返回**true**每当找到搜索的项。 你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 方法循环访问在 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 中找到的所有实例。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-loop-through-found-items"></a>循环访问找到的项  
+## <a name="to-loop-through-found-items"></a>循环访问找到的项  
   
 1.  声明 <xref:Microsoft.Office.Interop.Word.Range> 对象。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
   
-#### <a name="to-loop-through-items-in-a-document-level-customization"></a>循环访问文档级自定义项中的项  
+### <a name="to-loop-through-items-in-a-document-level-customization"></a>循环访问文档级自定义项中的项  
   
 1.  下面的示例显示文档级自定项的完整代码。 若要使用此代码，请从项目中的 `ThisDocument` 类运行它。  
   
@@ -65,7 +66,7 @@ ms.lasthandoff: 04/16/2018
   
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
-#### <a name="to-loop-through-items-in-an-vsto-add-in"></a>循环访问 VSTO 外接程序中的项  
+### <a name="to-loop-through-items-in-a-vsto-add-in"></a>循环访问 VSTO 外接程序中的项  
   
 1.  下面的示例显示 VSTO 外接程序的完整代码。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。  
   
@@ -73,10 +74,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#78](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#78)]  
   
 ## <a name="see-also"></a>请参阅  
- [如何： 以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何： 以编程方式搜索和替换文档中的 rext](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
  [如何： 以编程方式在 Word 中设置搜索选项](../vsto/how-to-programmatically-set-search-options-in-word.md)   
  [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [如何： 以编程方式在搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何： 以编程方式搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)  
   
   
