@@ -1,5 +1,5 @@
 ---
-title: 演练： 在 VSTO 外接程序中运行时向文档添加控件
+title: 演练： 在 VSTO 外接程序中的运行时向文档添加控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,15 +18,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 74a136bfecf20fd496f97bedc2d871de041fe65b
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: bf0e2fb5039df40ee43e89513ddbedd9a68b7fbb
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767342"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670617"
 ---
-# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练： 在 VSTO 外接程序中运行时向文档添加控件
-  你可以使用 VSTO 外接程序向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区使用户能够添加<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>到文档。  
+# <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>演练： 在 VSTO 外接程序中的运行时向文档添加控件
+  通过使用 VSTO 外接程序中，可以向任何打开的 Microsoft Office Word 文档添加控件。 本演练演示如何使用功能区使用户能够添加<xref:Microsoft.Office.Tools.Word.Controls.Button>或<xref:Microsoft.Office.Tools.Word.RichTextContentControl>到文档。  
   
  **适用于：** 本主题中的信息适用于 Word 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "34767342"
   
 -   提供用于向文档添加控件的用户界面 (UI)。  
   
--   将控件添加到在运行时的文档。  
+-   将控件添加到在运行时文档。  
   
 -   从文档中删除控件。  
   
@@ -49,12 +49,12 @@ ms.locfileid: "34767342"
   
 -   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
   
-## <a name="create-a-new-word-add-in-project"></a>创建一个新的 Word 外接程序项目  
+## <a name="create-a-new-word-add-in-project"></a>创建新的 Word 外接程序项目  
  首先创建 Word VSTO 外接程序项目。  
   
 ### <a name="to-create-a-new-word-vsto-add-in-project"></a>创建新的 Word VSTO 外接程序项目  
   
-1.  为 Word 创建一个名为 **WordDynamicControls**的 VSTO 外接程序项目。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  名称为 Word 创建一个 VSTO 外接程序项目**WordDynamicControls**。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  添加对 **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** 程序集的引用。 在本演练后面的部分中，需要此引用才能以编程方式向文档中添加 Windows 窗体控件。  
   
@@ -104,13 +104,13 @@ ms.locfileid: "34767342"
  在本演练后面的部分中，你将向这些事件处理程序添加代码，以在活动文档中添加和删除控件。  
   
 ## <a name="add-and-remove-controls-on-the-active-document"></a>添加和删除在活动文档的控件  
- 在 VSTO 外接程序代码中，你必须先将活动文档转换为 <xref:Microsoft.Office.Tools.Word.Document>*宿主项* ，然后才能添加控件。 在 Office 解决方案中，只能将托管控件添加到充当控件容器的宿主项中。 在 VSTO 外接程序项目中，主机可以在创建项运行时通过使用`GetVstoObject`方法。  
+ 在 VSTO 外接程序代码中，你必须先将活动文档转换为 <xref:Microsoft.Office.Tools.Word.Document>*宿主项* ，然后才能添加控件。 在 Office 解决方案中，只能将托管控件添加到充当控件容器的宿主项中。 在 VSTO 外接程序项目中，主机项可以创建在运行时通过使用`GetVstoObject`方法。  
   
  向 `ThisAddIn` 类添加相应的方法，调用这些方法可在活动文档中添加或删除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 在本演练后面的部分中，你将在功能区中从复选框的 <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> 事件处理程序调用这些方法。  
   
 ### <a name="to-add-and-remove-controls-on-the-active-document"></a>若要在活动文档中添加和删除控件  
   
-1.  在**解决方案资源管理器**，双击*ThisAddIn.cs*或*ThisAddIn.vb*以在代码编辑器中打开该文件。  
+1.  在中**解决方案资源管理器**，双击*ThisAddIn.cs*或*ThisAddIn.vb*代码编辑器中打开该文件。  
   
 2.  向 `ThisAddIn` 类添加下面的代码。 此代码声明 <xref:Microsoft.Office.Tools.Word.Controls.Button> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 对象，这两个对象表示将要添加到文档中的控件。  
   
@@ -127,12 +127,12 @@ ms.locfileid: "34767342"
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]  
   
-## <a name="remove-the-button-control-when-the-document-is-saved"></a>当保存文档后删除 Button 控件  
+## <a name="remove-the-button-control-when-the-document-is-saved"></a>保存文档后删除 Button 控件  
  保存并关闭文档后，Windows 窗体控件不会保留在文档中。 但是，每个控件的 ActiveX 包装会保留在文档中，并且重新打开文档后，最终用户会看到各包装的边框。 可通过多种方法清除在 VSTO 外接程序中动态创建的 Windows 窗体控件。在本演练中，你将以编程方式在保存文档后删除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控件。  
   
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>保存文档后删除 Button 控件  
   
-1.  在*ThisAddIn.cs*或*ThisAddIn.vb*代码文件中，添加以下方法`ThisAddIn`类。 此方法是 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件处理程序。 如果保存的文档有一个与之关联的 <xref:Microsoft.Office.Tools.Word.Document> 宿主项，该事件处理程序会获取此宿主项，并删除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控件（如果存在）。  
+1.  在中*ThisAddIn.cs*或*ThisAddIn.vb*代码文件中，添加以下方法`ThisAddIn`类。 此方法是 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件处理程序。 如果保存的文档有一个与之关联的 <xref:Microsoft.Office.Tools.Word.Document> 宿主项，该事件处理程序会获取此宿主项，并删除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控件（如果存在）。  
   
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]  
@@ -144,9 +144,9 @@ ms.locfileid: "34767342"
 ## <a name="add-and-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>添加和删除控件，当用户单击功能区上的复选框  
  最后，修改<xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>向功能区添加或删除文档上的控件添加事件处理程序的复选框。  
   
-### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>若要添加或删除控件当用户单击功能区上的复选框  
+### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>若要添加或删除时用户单击功能区上的复选框控件  
   
-1.  在*MyRibbon.cs*或*MyRibbon.vb*代码文件中，将生成`addButtonCheckBox_Click`和`addRichTextCheckBox_Click`事件处理程序替换为以下代码。 此代码重新定义这些事件处理程序，以调用之前在本演练中添加到 `ToggleButtonOnDocument` 类中的 `ToggleRichTextControlOnDocument` 和 `ThisAddIn` 方法。  
+1.  在中*MyRibbon.cs*或*MyRibbon.vb*代码文件中，替换生成`addButtonCheckBox_Click`和`addRichTextCheckBox_Click`事件处理程序替换下面的代码。 此代码重新定义这些事件处理程序，以调用之前在本演练中添加到 `ToggleButtonOnDocument` 类中的 `ToggleRichTextControlOnDocument` 和 `ThisAddIn` 方法。  
   
      [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]  
@@ -156,9 +156,9 @@ ms.locfileid: "34767342"
   
 ### <a name="to-test-the-solution"></a>若要测试解决方案。  
   
-1.  按**F5**运行项目。  
+1.  按**F5**运行你的项目。  
   
-2.  在活动文档时，按**Enter**数次以添加新的空到文档的段落。  
+2.  在活动文档中，按**Enter**数次以添加新的空文档的段落。  
   
 3.  选择第一个段落。  
   
@@ -181,16 +181,16 @@ ms.locfileid: "34767342"
 ## <a name="next-steps"></a>后续步骤  
  你可以从以下主题中了解有关 VSTO 外接程序中的控件的详细信息：  
   
--   有关演示如何在运行时向文档添加许多其他类型的控件并重新打开文档时重新创建这些控件的示例，请参阅 Word 外接程序动态控件示例在[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md).  
+-   有关演示如何在运行时向文档添加许多其他类型的控件和重新打开文档时重新创建这些控件的示例，请参阅 Word 外接程序动态控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md).  
   
--   有关演示如何将控件添加到工作表，VSTO 外接程序中使用 for Excel 的演练，请参阅[演练： 在运行时在 VSTO 外接程序项目时向工作表添加控件](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
+-   有关演示如何使用用于 Excel 的 VSTO 外接程序将控件添加到工作表的演练，请参阅[演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Word 解决方案](../vsto/word-solutions.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [保留在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
+ [持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)   
  [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
  [如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
+ [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
   
   

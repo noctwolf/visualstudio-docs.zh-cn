@@ -14,18 +14,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b5f8e94ebcd0aec8e17cac8d651017ed1565d2ec
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: d1ea659d59e780beba3949e7cae363affa312c17
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671729"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   在加载托管 VSTO 外接程序时调用。  
   
 ## <a name="syntax"></a>语法  
   
-```c++
+```csharp
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
@@ -35,7 +36,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
 |参数|描述|  
 |---------------|-----------------|  
 |*bstrManifestURL*|VSTO 外接程序清单的完整路径。|  
-|*pdispApplication*|指向代表正在加载 VSTO 外接程序的主机应用 IDispatch 的指针。|  
+|*pdispApplication*|指向表示主机应用程序加载 VSTO 外接程序 IDispatch 指针。|  
   
 ## <a name="return-value"></a>返回值  
  HRESULT 值，指示方法是否已成功完成。  

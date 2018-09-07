@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 234436b0c8b81d4de83e00b1bb3635916eb459b8
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: d50751b00a1a713a9f8848bdbebaaff1463c45c0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767749"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671556"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>通过使用扩展的对象自动化 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。  
@@ -40,7 +40,7 @@ ms.locfileid: "34767749"
 ## <a name="excel-host-items"></a>Excel 主机项  
  Excel 项目可授予你访问几个主机项的权限：  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>。 此主机项包含项目中的一个工作表。 它还可充当托管控件（包括主机控件和 Windows 窗体控件），的容器并且还可保留有关其界面上的控件的信息。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。  
+-   <xref:Microsoft.Office.Tools.Excel.Worksheet>。 此主机项包含并表示你的项目中的工作表。 它还可充当托管控件（包括主机控件和 Windows 窗体控件），的容器并且还可保留有关其界面上的控件的信息。 有关详细信息，请参阅[工作表主机项](../vsto/worksheet-host-item.md)。  
   
 -   <xref:Microsoft.Office.Tools.Excel.Workbook>。 此主机项表示你项目中的工作簿，可充当工作簿中所有工作表共享的组件的容器。 有关详细信息，请参阅[工作簿主机项](../vsto/workbook-host-item.md)。  
   
@@ -71,10 +71,10 @@ ms.locfileid: "34767749"
  [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [如何： 调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)   
  [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)   
- [如何： 在向 ListObject 控件添加新行时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
+ [如何： 在新行添加到 ListObject 控件时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)   
  [如何： 对数据的映射 ListObject 列](../vsto/how-to-map-listobject-columns-to-data.md)   
  [演练： 针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)   
- [扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   

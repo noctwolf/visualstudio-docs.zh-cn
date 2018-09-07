@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案安全性疑难解答 |Microsoft 文档
+title: Office 解决方案安全性疑难解答
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,20 +15,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 547ba6d1e58376c50d0e01ab8fd3d55f62d5a935
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693313"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670695"
 ---
-# <a name="troubleshooting-office-solution-security"></a>Office 解决方案安全性疑难解答
+# <a name="troubleshoot-office-solution-security"></a>Office 解决方案安全性疑难解答
   本主题包含用于解决在保护 Office 解决方案时可能遇到的常见问题的提示。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>受信任的解决方案不能从受限制的站点中安装  
- 如果在 Internet Explorer 受限的站点区域中列出的网站，用户不能从某一 web 位置安装解决方案。 即使解决方案使用受信任的证书进行签名，也是如此。  
+## <a name="trusted-solutions-cannot-be-installed-from-restricted-sites"></a>不能从受限制的站点安装受信任的解决方案  
+ 如果在 Internet Explorer 受限的站点区域中列出该网站，用户不能从 web 位置安装解决方案。 即使该解决方案使用受信任的证书进行签名，这是如此。  
   
  部署清单的 URL 可以分为五个区域之一：  
   
@@ -42,16 +42,16 @@ ms.locfileid: "34693313"
   
 -   受限制的站点  
   
- 如果向受限的站点区域中，分配了部署清单的位置[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不会安装解决方案。 如果位置称为，它可以是受信任，则用户可以从受限制的站点区域中删除位置并安装解决方案。 有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
+ 如果已分配给受限制的站点区域中，部署清单的位置[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不会安装该解决方案。 如果位置已知，并且可以是受信任的用户可以从受限制的站点区域中删除位置和安装该解决方案。 有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
-## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>Internet Explorer 增强的安全配置或安装 Internet Explorer 7 时，不能从网络文件共享或 Web 位置安装解决方案  
- Internet Explorer 增强安全配置 （安装 ieesc 时） 在 Windows Server 2003 和更高版本和 Internet Explorer 7 及更高版本，显著限制用户能够浏览 Internet。 当用户尝试从网络文件共享或 web 位置安装 Office 解决方案时，它们可能会收到以下错误消息:"由于使用的部署清单签名的证书，此应用程序中的自定义功能将无法工作*SolutionName*不受信任。 请联系您的管理员联系以获得进一步帮助。"  
+## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>安装 Internet Explorer 增强安全配置或 Internet Explorer 7 时，不能从网络文件共享或 web 位置安装解决方案  
+ Internet Explorer 增强安全配置 （安装 ieesc 时） 在 Windows Server 2003 和更高版本和 Internet Explorer 7 及更高版本，大大限制的用户浏览 Internet 的功能。 当用户尝试从网络文件共享或 web 位置中安装 Office 解决方案时，他们可能会收到以下错误消息:"由于使用证书来签署的部署清单中此应用程序的自定义功能无法工作*SolutionName*不受信任。 与管理员联系以获得进一步帮助。"  
   
- 与安装 ieesc 时和 Internet Explorer 7 及更高版本，如果在 Internet 区域中，部署清单的 URL 进行分类，清单必须具有受信任的发布者的证书，或无法安装解决方案。 未安装 ieesc 时，默认行为是提示最终用户做出信任决定。  
+ 使用安装 ieesc 时和 Internet Explorer 7 及更高版本，如果部署清单的 URL 进行分类在 Internet 区域中，清单必须具有来自受信任的发行者的证书，或不能安装解决方案。 未安装 ieesc 时，默认行为是提示最终用户做出信任决定。  
   
- 若要管理的效果安装 ieesc 时和 Internet Explorer 7 和更高版本，确定网站和通用命名约定 (UNC) 路径你信任并将它们添加到受信任的安全区域 （本地 intranet 或受信任的站点） 之一。有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
+ 若要管理影响安装 ieesc 时和 Internet Explorer 7 和更高版本，确定网站和通用命名约定 (UNC) 路径您信任，并将它们添加到其中一个受信任的安全区域 （本地 intranet 或受信任的站点）。有关如何管理区域的信息，请参阅[配置 ClickOnce 受信发布方](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
 ## <a name="see-also"></a>请参阅  
- [确保 Office 解决方案的安全](../vsto/securing-office-solutions.md)  
+ [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

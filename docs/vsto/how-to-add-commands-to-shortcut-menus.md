@@ -1,5 +1,5 @@
 ---
-title: 如何： 向快捷菜单添加命令
+title: 如何： 将命令添加到快捷菜单
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: eb86a0c906ae2ae43308833cdec79195344abb7a
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9accca69c5d56461f07d21d25821c0f4181c8fbd
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670561"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 向快捷菜单添加命令
-  本主题演示如何使用 VSTO 外接程序将命令添加到 Office 应用程序的快捷菜单中。  
+# <a name="how-to-add-commands-to-shortcut-menus"></a>如何： 将命令添加到快捷菜单
+  本主题演示如何使用 VSTO 外接程序中将命令添加到 Office 应用程序中的快捷菜单。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
@@ -50,7 +51,7 @@ ms.lasthandoff: 05/25/2018
   
 7.  在代码编辑器中添加 XML，该 XML 描述快捷菜单以及要添加到快捷菜单的控件。  
   
-     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 Office 2010 快捷控件的完整列表 ID，请参阅[Office 2010 帮助文件： Office fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
+     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关完整列表的 Office 2010 快捷控件 ID，请参阅[Office 2010 帮助文件： Office fluent 用户界面控件标识符](http://go.microsoft.com/fwlink/?LinkID=181052)。  
   
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>  
@@ -74,7 +75,7 @@ ms.lasthandoff: 05/25/2018
   
 8.  在“解决方案资源管理器” 中，选择“MyRibbon.cs”  或“MyRibbon.vb” 。  
   
-9. 向要处理的每个控件的 `Ribbon1` 类添加一个回叫方法。  
+9. 添加回调方法送入`Ribbon1`你想要处理的每个控件的类。  
   
      下面的回叫方法将处理“我的按钮”  按钮。 此代码会在光标当前位置向活动文档添加一个字符串。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 05/25/2018
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]  
   
 ## <a name="see-also"></a>请参阅  
- [Office UI 自定义项](../vsto/office-ui-customization.md)   
+ [Office UI 自定义](../vsto/office-ui-customization.md)   
  [演练： 创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)   
  [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)   
  [自定义 Office 2010 中的上下文菜单](http://go.microsoft.com/fwlink/?LinkId=182186)  

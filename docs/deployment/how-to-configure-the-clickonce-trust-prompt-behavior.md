@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: badee4bfb98ef34f8d730f35d29f456d783d7d43
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 103fcd8b47e423aaa8d66c3df96afe3598818de2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39155092"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774802"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何： 配置 ClickOnce 信任提示行为
 您可以配置 ClickOnce 信任提示来控制是否最终用户提供的安装 ClickOnce 应用程序，如 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序、 控制台应用程序、 WPF 浏览器选项应用程序和 Office 解决方案。 通过在每个最终用户的计算机上设置注册表项配置信任提示。  
@@ -59,11 +59,11 @@ ms.locfileid: "39155092"
   
     1.  单击**启动**，然后单击**运行**。  
   
-    2.  在中**开放**框中，键入`regedit32`，然后单击**确定**。  
+    2.  在中**开放**框中，键入`regedit`，然后单击**确定**。  
   
 2.  找到以下注册表项：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
   
      如果不存在该键，则创建它。  
   
@@ -122,7 +122,7 @@ ms.locfileid: "39155092"
   
 2.  找到以下注册表项：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\.NETFramework\Security\TrustManager\PromptingLevel** 
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel** 
   
      如果不存在该键，则创建它。  
   

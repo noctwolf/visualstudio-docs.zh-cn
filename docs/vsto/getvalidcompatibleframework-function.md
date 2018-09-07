@@ -13,18 +13,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a7df1e2d197147399fd6492222978dcf748a4bb2
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 18ef1d61d0e203744cc6436d884c37339a4a1ef0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670280"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 函数
   此 API 支持 Office 基础结构，不应在代码中直接使用。  
   
 ## <a name="syntax"></a>语法  
   
-```c  
+```csharp 
 HRESULT WINAPI GetValidCompatibleFramework(  
     LPCWSTR lpwszCompatibleFrameworksXML,  
     BSTR* pbstrValidFrameworkTag  

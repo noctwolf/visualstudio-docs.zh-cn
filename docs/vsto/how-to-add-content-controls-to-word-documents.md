@@ -1,5 +1,5 @@
 ---
-title: 如何： 添加内容控件添加到 Word 文档
+title: 如何： 将内容添加到 Word 文档的控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -29,14 +29,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ac9fbb7528559189dc74d1bf5c1d9645e47f261
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: 9d3cce301d5d49a7660751ee1580c99794c16d38
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670449"
 ---
-# <a name="how-to-add-content-controls-to-word-documents"></a>如何： 添加内容控件添加到 Word 文档
-  在文档级 Word 项目中，你可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，你可以向任何打开的文档，在运行时添加内容控件。  
+# <a name="how-to-add-content-controls-to-word-documents"></a>如何： 将内容添加到 Word 文档的控件
+  在文档级 Word 项目中，您可以添加内容控件到文档中你的项目在设计时或在运行时。 在 Word VSTO 外接程序项目中，可以向任何打开的文档在运行时添加内容控件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
@@ -44,7 +45,7 @@ ms.lasthandoff: 05/25/2018
   
 -   [在设计时添加内容控件](#designtime)  
   
--   [在文档级项目中的运行时添加内容控件](#runtimedoclevel)  
+-   [在运行时在文档级项目中添加内容控件](#runtimedoclevel)  
   
 -   [在运行时在 VSTO 外接程序项目中添加内容控件](#runtimeaddin)  
   
@@ -57,7 +58,7 @@ ms.lasthandoff: 05/25/2018
   
 -   用和在 Word 中添加本机内容控件相同的方式向文档添加内容控件。  
   
--   从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关详细信息，请参阅[如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)和[如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
+-   从 **“数据源”** 窗口将内容控件拖动到你的文档中。 当你想要在创建控件后将控件绑定到数据时会非常有用。 有关详细信息，请参阅[如何： 用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)并[如何： 用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
@@ -73,14 +74,14 @@ ms.lasthandoff: 05/25/2018
   
          或  
   
-    -   单击中的内容控件**工具箱**然后按**Enter**密钥。  
+    -   单击中的内容控件**工具箱**，然后按**Enter**密钥。  
   
          或  
   
     -   将某个内容控件从 **“工具箱”** 拖动到文档中。 内容控件将添加到文档中当前所选内容的位置，而不是鼠标指针的位置。  
   
 > [!NOTE]  
->  你不能使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> “工具箱” **添加**。 你可以仅添加<xref:Microsoft.Office.Tools.Word.GroupContentControl>在 Word 中或在运行时。  
+>  你不能使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> “工具箱” **添加**。 您可以只添加<xref:Microsoft.Office.Tools.Word.GroupContentControl>在 Word 中，或在运行时。  
   
 > [!NOTE]  
 >  Visual Studio 在工具箱中不提供复选框内容控件。 若要向文档添加复选框内容控件，则必须以编程方式创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。  
@@ -96,8 +97,8 @@ ms.lasthandoff: 05/25/2018
   
 3.  在 **“控件”** 组中，单击你想要添加的内容控件的图标。  
   
-##  <a name="runtimedoclevel"></a> 在文档级项目中的运行时添加内容控件  
- 你可以添加内容控件以编程方式向文档在运行时通过使用方法的<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>属性`ThisDocument`项目中的类。 每种方法有三个重载可用于按以下方式添加内容控件：  
+##  <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加内容控件  
+ 您可以添加内容控件以编程方式向文档在运行时使用的方法<xref:Microsoft.Office.Tools.Word.Document.Controls%2A>属性的`ThisDocument`在项目中的类。 每种方法有三个重载可用于按以下方式添加内容控件：  
   
 -   在当前所选内容中添加控件。  
   
@@ -112,7 +113,7 @@ ms.lasthandoff: 05/25/2018
   
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>在当前所选内容中添加内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件的类名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有单个参数的新控件的名称。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件的类名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有新控件的名称的单个参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法将一个新 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到文档的开头。 若要运行此代码，将此代码添加到项目的 `ThisDocument` 类中，然后从 `AddRichTextControlAtSelection` 事件处理程序调用 `ThisDocument_Startup` 方法。  
   
@@ -121,7 +122,7 @@ ms.lasthandoff: 05/25/2018
   
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>在指定范围内添加内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有<xref:Microsoft.Office.Interop.Word.Range>参数。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有<xref:Microsoft.Office.Interop.Word.Range>参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法将一个新 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到文档的开头。 若要运行此代码，将此代码添加到项目的 `ThisDocument` 类中，然后从 `AddRichTextControlAtRange` 事件处理程序调用 `ThisDocument_Startup` 方法。  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 05/25/2018
   
 ### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>要添加基于本机内容控件的内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有`Microsoft.Office.Interop.Word.ContentControl`参数。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有`Microsoft.Office.Interop.Word.ContentControl`参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法为文档中的每个本机多格式文本控件创建一个新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要运行此代码，将此代码添加到项目的 `ThisDocument` 类中，然后从 `CreateRichTextControlsFromNativeControls` 事件处理程序调用 `ThisDocument_Startup` 方法。  
   
@@ -138,7 +139,7 @@ ms.lasthandoff: 05/25/2018
      [!code-vb[Trin_ContentControlReference#702](../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/RichText.vb#702)]  
   
 ##  <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加内容控件  
- 你可以添加内容控件以编程方式向任何打开的文档，在运行时通过使用 VSTO 外接程序中。 若要执行此操作，生成基于打开的文档的 <xref:Microsoft.Office.Tools.Word.Document> 主机项，然后使用此主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 每种方法有三个重载可用于按以下方式添加内容控件：  
+ 您可以添加内容控件以编程方式向任何打开的文档在运行时通过使用 VSTO 外接程序中。 若要执行此操作，生成基于打开的文档的 <xref:Microsoft.Office.Tools.Word.Document> 主机项，然后使用此主机项的 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 属性的方法。 每种方法有三个重载可用于按以下方式添加内容控件：  
   
 -   在当前所选内容中添加控件。  
   
@@ -146,16 +147,16 @@ ms.lasthandoff: 05/25/2018
   
 -   添加基于文档中的本机内容控件的控件。  
   
- 文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[保留在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+ 文档关闭时，动态创建的内容控件将不保留在文档中。 但是，本机内容控件会保留在文档中。 在下次打开该文档时，你可以重新创建基于本机内容控件的内容控件。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
- 有关在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 在 VSTO 外接程序项目中生成主机项的详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 > [!NOTE]  
 >  若要向文档添加复选框内容控件，则必须创建一个 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象。 有关详细信息，请参阅[内容控件](../vsto/content-controls.md)。  
   
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>在当前所选内容中添加内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件的类名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有单个参数的新控件的名称。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件的类名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有新控件的名称的单个参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法将一个新 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到活动文档的开头。 若要运行此代码，将此代码添加到项目的 `ThisAddIn` 类中，然后从 `AddRichTextControlAtSelection` 事件处理程序调用 `ThisAddIn_Startup` 方法。  
   
@@ -164,7 +165,7 @@ ms.lasthandoff: 05/25/2018
   
 ### <a name="to-add-a-content-control-at-a-specified-range"></a>在指定范围内添加内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有<xref:Microsoft.Office.Interop.Word.Range>参数。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有<xref:Microsoft.Office.Interop.Word.Range>参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法将一个新 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 添加到活动文档的开头。 若要运行此代码，将此代码添加到项目的 `ThisAddIn` 类中，然后从 `AddRichTextControlAtRange` 事件处理程序调用 `ThisAddIn_Startup` 方法。  
   
@@ -173,7 +174,7 @@ ms.lasthandoff: 05/25/2018
   
 #### <a name="to-add-a-content-control-that-is-based-on-a-native-content-control"></a>要添加基于本机内容控件的内容控件  
   
-1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>具有名称的方法`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有`Microsoft.Office.Interop.Word.ContentControl`参数。  
+1.  使用<xref:Microsoft.Office.Tools.Word.ControlCollection>方法具有名称`Add` \<*控件类*> (其中*控件类*是你想要添加，如的内容控件类的名称<xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A>)，并具有`Microsoft.Office.Interop.Word.ContentControl`参数。  
   
      下面的代码示例使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddRichTextContentControl%2A> 方法以在文档打开之后为文档中的每个本机多格式文本控件创建一个新的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 若要运行此代码，将代码添加到项目中的 `ThisAddIn` 类。  
   

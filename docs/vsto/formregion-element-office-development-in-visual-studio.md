@@ -15,14 +15,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2fd8036ea2a437ffc9fb68a523d8f25db964b5f6
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 4fc98e66cd16298839e79f25c95e256f10398c49
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671512"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;formRegion&gt;元素 （Visual Studio 中的 Office 开发）
-  `formRegion` 命名空间的 `vstov4` 元素标识与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。  
+  `formRegion`元素的`vstov4`命名空间标识与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
   
 ## <a name="syntax"></a>语法  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 05/22/2018
 ## <a name="see-also"></a>请参阅  
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   

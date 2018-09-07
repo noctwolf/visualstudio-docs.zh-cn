@@ -13,20 +13,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f8573576b40afabb5ec568a0c471e7b1d79560ba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 7e3e0fda420682e4f33c0d22a3e9c8caa920895b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670615"
 ---
 # <a name="getautoinsertextensions-method"></a>GetAutoInsertExtensions 方法
-  获取有关要自动插入在调试过程中的 Office 应用程序的信息。  
+  获取要在调试期间自动插入的 Office 应用的相关信息。  
   
  此方法保留供将来使用。  
   
 ## <a name="syntax"></a>语法  
   
-```c  
+```csharp
 HRESULT GetAutoInsertExtensions(  
     [out, retval] SAFEARRAY(BSTR)* psaExtensionNames  
 );  
@@ -36,12 +37,12 @@ HRESULT GetAutoInsertExtensions(
   
 |参数|描述|  
 |---------------|-----------------|  
-|*psaExtensionNames*|Office 应用程序扩展名称。|  
+|*psaExtensionNames*|适用于 Office 的应用的扩展名称。|  
   
 ## <a name="return-value"></a>返回值  
  HRESULT 值，指示方法是否已成功完成。  
   
 ## <a name="remarks"></a>备注  
- 作为 Office 应用程序扩展名称，它对应于下一个值返回办公室要插入的每个应用**HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**。 主机必须查找注册表中的这些值，然后自动插入扩展。  
+ 作为 Office 应用程序扩展名称，它对应于下的值返回 Office 要插入的每个应用**HKEY_CURRENT_USER\Software\Microsoft\Office\WEF\Developer**。 主机必须查找注册表中的这些值，然后自动插入扩展。  
   
   

@@ -1,5 +1,5 @@
 ---
-title: 为 InfoPath 中自定义功能区
+title: 自定义 InfoPath 功能区
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,13 +16,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 82238cc29504b3ad2b757e94efa89a3c521bca90
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670422"
 ---
-# <a name="customize-a-ribbon-for-infopath"></a>为 InfoPath 中自定义功能区
+# <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：  
   
 -   显示在设计模式下打开的窗体模板的窗口。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 05/17/2018
  必须为希望在其中显示功能区的每个窗口指定功能区类型。  
   
 ## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>在功能区设计器中指定功能区类型  
- 如果使用的是“功能区(可视化设计器)”  项，请在“属性”  窗口中单击功能区的“RibbonType”  属性，然后选择下表中描述的任意功能区 ID。  
+ 如果使用的**功能区 （可视化设计器）** 项，单击**RibbonType**属性中的功能区**属性**窗口中，然后选择任何功能区 Id下表中所述。  
   
 |功能区 ID|运行项目时将在其中显示功能区的窗口|  
 |---------------|---------------------------------------------------------------------|  
@@ -53,8 +54,8 @@ ms.lasthandoff: 05/17/2018
   
  你可以向项目添加多个功能区。 如果多个功能区共享一个功能区 ID，请重写项目的 `ThisAddin` 类中的 `CreateRibbonExtensibilityObject` 方法，以指定要在运行时显示的功能区。 有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
   
-## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>通过使用功能区 XML 指定功能区类型  
- 如果你使用**功能区 (XML)** 项，请检查的值*ribbonID*中的参数<xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>方法并返回相应的功能区。  
+## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>使用功能区 XML 指定功能区类型  
+ 如果使用的**功能区 (XML)** 项，请检查的值*ribbonID*中的参数<xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A>方法并返回相应的功能区。  
   
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法由 Visual Studio 在功能区代码文件中自动生成。 *ribbonID* 参数是一个字符串，标识当前打开的 InfoPath 窗口的类型。  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 05/17/2018
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]  
   
 ## <a name="see-also"></a>请参阅  
- [访问在运行时的功能区](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [在运行时在功能区的访问](../vsto/accessing-the-ribbon-at-run-time.md)   
  [功能区概述](../vsto/ribbon-overview.md)   
  [功能区设计器](../vsto/ribbon-designer.md)   
  [Ribbon XML](../vsto/ribbon-xml.md)  

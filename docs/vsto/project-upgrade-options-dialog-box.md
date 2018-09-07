@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e279e6db1acf4cb277c8734fa24f965a8236e7ec
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: ccdff67cc9c918818a28bf60a94ea1f1119e7d2e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692754"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671724"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>项目升级，选项对话框
   使用“项目升级”  页可指定 Visual Studio 是否将自动更改 VSTO 外接程序项目以面向开发计算机上安装的 Office 版本。  
@@ -37,6 +37,6 @@ ms.locfileid: "34692754"
   
 ## <a name="see-also"></a>请参阅  
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)   
- [如何： 升级 Office 解决方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)  
+ [如何： 升级 Office 解决方案](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)  
   
   

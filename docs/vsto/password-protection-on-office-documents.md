@@ -1,5 +1,5 @@
 ---
-title: Office 文档上的密码保护 |Microsoft 文档
+title: Office 文档上的密码保护
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -19,31 +19,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a278677b40f8da703c7f3287851c2f82fb95a21c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 02deaccdd615bae0c948d50abdd41758dc701704
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572707"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670282"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档上的密码保护
-  很可能你的 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道的密码。 此选项称为**处于打开状态的密码**。  
+  就可以在 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿上设置密码，以便它们不能打开的人不知道密码。 此选项将称为**处于打开状态的密码**。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 你可以创建文档级项目中使用现有的文档和工作簿具有**处于打开状态的密码**启用。 Visual Studio 中的行为是不同的 Word 和 Excel 的文档具有**处于打开状态的密码**启用。  
+ 可以创建文档级项目中使用现有的文档和工作簿具有**处于打开状态的密码**启用。 在 Visual Studio 中的行为是不同的 Word 和 Excel 文档，具有**处于打开状态的密码**启用。  
   
- 有关启用信息**处于打开状态的密码**，请参阅在 Word 或 Excel 中的帮助。  
+ 有关启用信息**处于打开状态的密码**，请参阅在 Word 或 Excel 的帮助。  
   
 ## <a name="behavior-of-excel-and-word"></a>Excel 和 Word 的行为  
- 每次在 Visual Studio 中具有打开的 Excel 工作簿**处于打开状态的密码**启用，Excel 将提示你输入密码。 生成你的解决方案时你将会再次提示输入的密码，因为在生成期间打开该文档。  
+ 每次在 Visual Studio 中具有打开的 Excel 工作簿**处于打开状态的密码**启用，Excel 会提示你输入密码。 生成解决方案时，将会再次提示输入密码，因为在生成期间打开文档。  
   
- 第一次你打开 Word 文档在 Visual Studio 中具有**处于打开状态的密码**启用，Word 将提示你输入密码。 成功输入密码之后,**处于打开状态的密码**从文档中移除并打开该文档将不再要求输入密码。 如果您要在你的解决方案中的文档要需要密码才能它可以打开，则必须启用**处于打开状态的密码**最终生成之后且在部署解决方案之前。  
+ 第一次您打开一个 Word 文档在 Visual Studio 中具有**处于打开状态的密码**启用，Word 会提示您输入密码。 成功输入密码之后,**处于打开状态的密码**从文档中删除并打开该文档将不再要求输入密码。 如果想要在文档中你的解决方案需要密码，然后它可以打开，则必须启用**处于打开状态的密码**最终生成和部署解决方案之前。  
   
 ## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
- [信息权限管理与托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [如何： 允许代码使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [信息权限管理和托管的代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
+ [如何： 允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
   
   

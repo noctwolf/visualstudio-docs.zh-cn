@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式统计文档中的字符 |Microsoft 文档
+title: 如何： 以编程方式统计文档中的字符
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4ae05466c871b51d790f1031755be062806fc120
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 46ead2f1774d779706e8aa6eeb3f1e9c6b1d0ce1
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670574"
 ---
-# <a name="how-to-programmatically-count-characters-in-documents"></a>如何：以编程方式统计文档中的字符数
+# <a name="how-to-programmatically-count-characters-in-documents"></a>如何： 以编程方式统计文档中的字符
   文档中的第一个字符位于字符位置 0，它表示插入点。 末尾字符位置值与文档中的字符总数相同。 可以使用 <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> 集合的 <xref:Microsoft.Office.Interop.Word.Characters> 属性确定文档中的字符数。  
   
  文档中的所有字符都被计算在内，包括空格、段落标记及通常是隐藏的其他字符。 甚至一个新的空文档的计数结果都返回一个字符，因为它包含一个段落标记。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>显示文档级自定义项中的字符数  
+## <a name="to-display-the-number-of-characters-in-a-document-level-customization"></a>显示文档级自定义项中的字符数  
   
 1.  选择整个文档。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomation#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#99)]  
   
-### <a name="to-display-the-number-of-characters-in-an-vsto-add-in"></a>显示 VSTO 外接程序中的字符数  
+## <a name="to-display-the-number-of-characters-in-a-vsto-add-in"></a>VSTO 外接程序中显示的字符数  
   
 1.  选择整个文档。 下面的示例将选择活动文档。  
   
@@ -54,8 +55,8 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#99)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#99](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#99)]  
   
-## <a name="see-also"></a>另请参阅  
- [如何： 以编程方式检索开始和结束范围中的字符](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
- [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
+## <a name="see-also"></a>请参阅  
+ [如何： 以编程方式检索范围中的开始和结束字符](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)   
+ [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)  
   
   

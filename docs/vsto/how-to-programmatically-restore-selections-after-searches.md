@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式在搜索后还原选定内容 |Microsoft 文档
+title: 如何： 以编程方式搜索后还原选定内容
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,20 +17,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7d1f4181a1ce9431ecbdb69a4b4f00a70f8259d0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b288ec65bed95a508d161b33cc49d7d8e2540362
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670458"
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以编程方式在搜索后还原选定内容
-  如果查找和替换文档中的文本时，你可能想要完成搜索后还原用户的原选定内容。  
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>如何： 以编程方式搜索后还原选定内容
+  如果您查找和替换文档中的文本，可能想要完成搜索后还原用户的原选定内容。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- 示例过程中的代码使用两个<xref:Microsoft.Office.Interop.Word.Range>对象。 一个存储当前<xref:Microsoft.Office.Interop.Word.Selection>，和一个设置要用作搜索范围的整个文档。  
+ 示例过程中的代码使用两个<xref:Microsoft.Office.Interop.Word.Range>对象。 其中一个存储当前<xref:Microsoft.Office.Interop.Word.Selection>，且其中一人整篇文档，使用作为搜索范围。  
   
-### <a name="to-restore-the-users-original-selection-after-a-search"></a>若要还原后搜索的用户的原选定内容  
+## <a name="to-restore-the-users-original-selection-after-a-search"></a>若要还原后搜索的用户的原选定内容  
   
 1.  创建<xref:Microsoft.Office.Interop.Word.Range>文档和当前选择的对象。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
      [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
   
-3.  选择要还原所选用户的原始项目的开始范围。  
+3.  选择要还原用户的原选定内容的开始范围。  
   
      [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
      [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  

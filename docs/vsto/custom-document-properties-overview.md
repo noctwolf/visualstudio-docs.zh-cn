@@ -20,42 +20,43 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b85dfe077f73a26eadf173197de2ca514ff44679
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 01a85b214c44f3b48a91d82a5abd59bcf4c9ac5c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671504"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
-当生成文档级项目时，Visual Studio 会将两个自定义属性添加到项目中的文档： \_AssemblyLocation 和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以启动自定义项。 有关详细信息，请参阅[Visual Studio 中的体系结构的 Office 解决方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
+Visual Studio 生成的文档级项目时，将两个自定义属性添加到项目中的文档： \_AssemblyLocation 和\_程序集名称。 当用户打开的文档时，Microsoft Office 应用程序将检查这些自定义文档属性。 如果它们存在文档中，应用程序加载[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，从而启动自定义项。 有关详细信息，请参阅[Visual Studio 中的体系结构的 Office 解决方案](../vsto/architecture-of-office-solutions-in-visual-studio.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="assemblyname"></a>\_程序集名称
 
-此属性包含中的 Office 解决方案加载程序组件的接口的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 CLSID 值为 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B。 你应该永不更改此值。
+此属性包含的接口中的 Office 解决方案加载程序组件的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 CLSID 值为 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B。 永远不应更改此值。
 
 ## <a name="assemblylocation"></a>\_程序集位置
 
-此属性包含的自定义项中提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
+此属性包含用于自定义提供有关部署清单的详细信息的字符串。 有关清单的详细信息，请参阅[应用程序和部署清单在 Office 解决方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
  The_AssemblyLocation 属性值可以具有不同的格式，具体取决于解决方案的部署方式：
 
-- 如果已发布解决方案，安装从 Web 站点、 UNC 路径或 CD 或 USB 驱动器，_AssemblyLocation 属性具有格式*部署清单路径*|*解决方案 Id*。 以下字符串是一个示例：
+- 如果发布的解决方案安装从 Web 站点、 UNC 路径或 CD 或 USB 驱动器，_AssemblyLocation 属性具有格式*部署清单路径*|*SolutionID*。 以下字符串是一个示例：
 
      file://deployserver/MyShare/ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9
 
-- 如果你正在运行或调试从 Visual Studio 解决方案，_AssemblyLocation 属性具有格式*DeploymentManifestName*|*解决方案 Id*| vstolocal。 以下字符串是一个示例：
+- 如果你正在运行或调试从 Visual Studio 解决方案，_AssemblyLocation 属性具有格式*DeploymentManifestName*|*SolutionID*| vstolocal。 以下字符串是一个示例：
 
      ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9|vstolocal
 
- *解决方案 Id*是一个 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]用于标识解决方案。 *解决方案 Id*生成项目时自动生成。 **Vstolocal**术语指示到[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，程序集应加载从文档所在的文件夹。
+ *SolutionID*是一个 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]使用其标识解决方案。 *SolutionID*生成项目时自动生成。 **Vstolocal**词表明到[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，该程序集应加载从该文档所在的文件夹。
 
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)

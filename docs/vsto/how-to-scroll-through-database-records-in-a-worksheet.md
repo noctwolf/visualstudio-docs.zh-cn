@@ -1,5 +1,5 @@
 ---
-title: 如何： 在工作表中的数据库记录滚动 |Microsoft 文档
+title: 如何： 滚动查看数据库记录工作表中
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,20 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a092cec68e59914b498ab3b935f58b6ef0c37f05
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7e9ffaffdefda98e3e074467fcd4df8cacce91b4
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670613"
 ---
-# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何：在工作表中滚动查看数据库记录
-  以下过程演示如何使用设计器显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户能够滚动所有记录的控件。  
+# <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>如何： 滚动查看数据库记录工作表中
+  以下过程说明如何使用设计器来显示单个字段从数据库表中的 Microsoft Office Excel 工作表，使最终用户可以滚动浏览所有记录的控件。  
   
- 仅在文档级项目中，可以使用设计器。 但是，你可以添加控件和将其绑定到数据以编程方式在运行时。 有关详细信息，请参阅[演练： 简单的数据绑定，在 VSTO 外接程序项目](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
+ 仅在文档级项目中，可以使用设计器。 但是，还可以添加控件并将其绑定到以编程方式在运行时数据。 有关详细信息，请参阅[演练： VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
-### <a name="to-scroll-through-database-records-in-a-worksheet"></a>若要滚动工作表中的数据库记录  
+## <a name="to-scroll-through-database-records-in-a-worksheet"></a>可滚动显示各个工作表中的数据库记录  
   
 1.  在 Visual Studio 中打开一个 Excel 应用程序项目。  
   
@@ -39,11 +40,11 @@ ms.lasthandoff: 04/16/2018
   
 3.  展开包含你想要显示的数据的表并选择特定列。  
   
-4.  打开的控件，然后选择列表**NamedRange**。  
+4.  打开列表控件，然后选择**NamedRange**。  
   
-5.  拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>拖到想要显示的数据单元格中的控件。  
+5.  拖动<xref:Microsoft.Office.Tools.Excel.NamedRange>控件拖动到想要显示的数据的单元格。  
   
-6.  从**Windows 窗体**选项卡**工具箱**，添加<xref:System.Windows.Forms.BindingNavigator>控制转移到你的工作表，并设置你想要使用的控件。 有关详细信息，请参阅[BindingNavigator 控件概述&#40;Windows 窗体&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
+6.  从**Windows 窗体**选项卡**工具箱**，将添加<xref:System.Windows.Forms.BindingNavigator>控制到工作表，并设置你想要使用的控件。 有关详细信息，请参阅[BindingNavigator 控件概述&#40;Windows 窗体&#41;](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms)。  
   
 ## <a name="see-also"></a>请参阅  
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)  

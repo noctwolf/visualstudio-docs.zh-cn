@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式移除文档中所有注释 |Microsoft 文档
+title: 如何： 以编程方式从文档中删除所有注释
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,25 +16,26 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19c713356a8949261524eda9f44fee8fae9f9f21
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 005414fce7b7bc04c22b266f5f5f6d54a399a182
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670606"
 ---
-# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>如何：以编程方式移除文档中的所有注释
-  DeleteAllComments 方法用于从 Microsoft Office Word 文档中删除所有注释。  
+# <a name="how-to-programmatically-remove-all-comments-from-documents"></a>如何： 以编程方式从文档中删除所有注释
+  使用`DeleteAllComments`方法以从 Microsoft Office Word 文档中删除所有注释。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>从属于文档级自定义项的文档中删除所有注释  
+## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>从属于文档级自定义项的文档中删除所有注释  
   
 1.  调用项目中 <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> 类的 `ThisDocument` 方法。 若要使用此代码示例，请从 `ThisDocument` 类中运行它。  
   
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]  
   
-### <a name="to-remove-all-comments-from-a-document-by-using-an-vsto-add-in"></a>使用 VSTO 外接程序从文档中删除所有注释  
+## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>若要通过使用 VSTO 外接程序从文档中删除所有注释  
   
 1.  调用要从中删除注释的 <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。  
   
@@ -43,7 +44,7 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#119)]  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何： 以编程方式向文档中的文本添加注释](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)   
  [文档主机项](../vsto/document-host-item.md)  
   

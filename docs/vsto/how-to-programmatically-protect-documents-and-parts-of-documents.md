@@ -1,5 +1,5 @@
 ---
-title: 如何： 以编程方式保护文档和文档的某些部分 |Microsoft 文档
+title: 如何： 以编程方式保护文档和文档的某些部分
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2e25dd6af67307ebf28a63893411bb2dfaa7bf61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9acef141944b106a9bace38fef8ede7041bfecc5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670283"
 ---
-# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以编程方式保护文档和文档的某些部分
+# <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何： 以编程方式保护文档和文档的某些部分
   你可以为 Microsoft Office Word 文档添加保护，以防止用户对文档进行任何编辑操作。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
@@ -31,20 +32,20 @@ ms.lasthandoff: 04/16/2018
  还可以将文档的特定区域标记为例外，使指定用户只能编辑文档的这些区域。 例如，你可能希望保护整个文档，但某个特定的书签除外。 可选择添加密码，这样一来，除非用户知道此密码，否则无法删除文档保护。  
   
 > [!NOTE]  
->  下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅 [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)中的“文档保护器示例”。  
+>  下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅文档保护器示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
- 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅 [如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
+ 你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅[如何： 使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
-## <a name="protecting-a-document-that-is-part-of-a-document-level-customization"></a>保护属于文档级自定义项的文档  
+## <a name="protect-a-document-that-is-part-of-a-document-level-customization"></a>保护属于文档级自定义文档  
   
-#### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>若要保护属于文档级自定义项的文档  
+### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>若要保护属于文档级自定义项的文档  
   
 1.  调用项目中 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 类的 `ThisDocument` 方法。  
   
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]  
   
-#### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>从文档保护中排除 Bookmark 控件  
+### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>从文档保护中排除 Bookmark 控件  
   
 1.  使用 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 方法保护整个文档。  
   
@@ -56,12 +57,12 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]  
   
-### <a name="compiling-the-code"></a>编译代码  
+### <a name="compile-the-code"></a>编译代码  
  若要使用这些代码示例，请从项目内的 `ThisDocument` 类中运行这些示例。 这些代码示例假定在出现此代码的文档中有一个名为 <xref:Microsoft.Office.Tools.Word.Bookmark> 的现有 `Bookmark1` 控件。  
   
-## <a name="protecting-a-document-by-using-an-vsto-add-in"></a>使用 VSTO 外接程序保护文档  
+## <a name="protect-a-document-by-using-a-vsto-add-in"></a>通过使用 VSTO 外接程序保护文档  
   
-#### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>使用应用程序级 VSTO 外接程序保护文档  
+### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>使用应用程序级 VSTO 外接程序保护文档  
   
 1.  调用要保护的 <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> 的 <xref:Microsoft.Office.Interop.Word.Document> 方法。  
   
@@ -73,8 +74,8 @@ ms.lasthandoff: 04/16/2018
 ## <a name="see-also"></a>请参阅  
  [在文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)   
- [如何： 允许代码使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
- [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
+ [如何： 允许代码以使用受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
   
   
