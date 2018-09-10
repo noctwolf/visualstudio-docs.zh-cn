@@ -1,5 +1,5 @@
 ---
-title: 使用已保存 IntelliTrace 数据 |Microsoft 文档
+title: 使用保存的 IntelliTrace 数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54412cff3047f12ec17c8192dc40cd4ebfcbf55b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 19bc4c0fd91284a5dd4da4a50bba5f2778904a28
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479593"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280060"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。  
   
  确保你有：  
   
--   应用程序代码的匹配源文件和符号 (.pdb) 文件。 如果没有，Visual Studio 无法解析源位置并显示消息“未找到符号”。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)和[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。  
+-   应用程序代码的匹配源文件和符号 (.pdb) 文件。 如果没有，Visual Studio 无法解析源位置并显示消息“未找到符号”。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)并[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。  
   
 -   开发计算机或其他计算机上的 Visual Studio Enterprise（但不是 Professional 或 Community 版本），可用来打开 .iTrace 文件  
   
@@ -38,8 +38,8 @@ ms.locfileid: "31479593"
     |**源**|**请参阅**|  
     |----------------|-------------|  
     |Visual Studio Enterprise（但不是 Professional 或 Community 版）中的 IntelliTrace 会话|[IntelliTrace 功能](../debugger/intellitrace-features.md)|  
-    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
-    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|  
+    |Microsoft 测试管理器中的测试会话。 这会将 .iTrace 文件附加到 Team Foundation Server 工作项。|[在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|  
+    |Microsoft Monitoring Agent（单独使用或与 System Center 2012 R2 Operations Manager 一起使用），用于监视部署中运行的 ASP.NET Web 应用和 SharePoint 应用程序|-   [在部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)<br />-   [System Center 2012 R2 Operations Manager 的新增功能](http://technet.microsoft.com/library/dn249700.aspx)|  
   
 ##  <a name="GetStarted"></a> 你希望做什么？  
   
@@ -72,14 +72,14 @@ ms.locfileid: "31479593"
   
 |**节**|**包含**|**集合源**|  
 |-----------------|------------------|---------------------------|  
-|[性能冲突](#Performance)|函数调用超出已配置阈值的性能事件|Microsoft Monitoring Agent，或者独立收集器或与 System Center 2012 R2 Operations Manager 用于在 IIS 上托管的 ASP.NET web 应用|  
+|[性能冲突](#Performance)|函数调用超出已配置阈值的性能事件|Microsoft Monitoring Agent，或者独立收集器或与 System Center 2012 R2 Operations Manager 的 IIS 上托管的 ASP.NET web 应用|  
 |[异常数据](#ExceptionData)|异常，包括每个异常的完整调用堆栈|所有源|  
 |[分析](#Analysis)|仅限于 SharePoint 2010 和 SharePoint 2013 应用程序。 诊断 IntelliTrace 和 SharePoint 事件，如调试器事件、ULS 事件、未经处理的异常以及 Microsoft Monitoring Agent 记录的其他数据。|Microsoft Monitoring Agent，或者独立收集器或与 System Center 2012 R2 Operations Manager|  
 |[系统信息](#SystemInfo)|主机系统的设置和规范|所有源|  
 |[线程列表](#ThreadsList)|在集合期间运行的线程|所有源|  
 |[测试数据](#TestData)|从测试会话测试步骤及其结果|测试管理器|  
 |[模块](#Modules)|目标进程按其加载顺序加载的模块。|所有源| 
-|[Web 请求](#Modules)|生产 IIS 的 web 请求数据的 web 应用程序和 SharePoint 2010 和 SharePoint 2013|Microsoft Monitoring Agent 和独立收集器| 
+|[Web 请求](#Modules)|Web 请求数据进行 IIS 生产 web 应用程序和 SharePoint 2010 和 SharePoint 2013|Microsoft Monitoring Agent 和独立收集器| 
   
  下面提供的一些提示可帮助你找到每个部分中的信息：  
   
@@ -120,7 +120,7 @@ ms.locfileid: "31479593"
   
      如果方法在应用程序代码中，Visual Studio 将转到该方法。  
   
-     ![从性能事件转到应用程序代码](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![转到应用程序代码在性能事件](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
      现在你可以查看其他记录的值和调用堆栈、单步执行代码，或者使用“IntelliTrace”  窗口在此性能事件期间调用的 [其他方法之间“及时”前后移动](../debugger/intellitrace.md) 。  
   
@@ -137,7 +137,7 @@ ms.locfileid: "31479593"
   
      如果应用程序代码发生异常，Visual Studio 将转到发生异常的位置。  
   
-     ![从异常事件转到应用程序代码](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![转到应用程序代码在异常事件](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
      现在你可以查看其他记录的值和调用堆栈，或者使用“IntelliTrace”  窗口 [在其他记录的事件、相关代码和在这些时间点记录的值之间“及时”前后移动](../debugger/intellitrace.md)。  
   
@@ -167,7 +167,7 @@ ms.locfileid: "31479593"
   
 2.  打开 .iTrace 文件，然后转到“分析”  并输入 SharePoint 相关 ID，以查看匹配的 Web 请求和记录的事件。  
   
-     ![IntelliTrace 日志&#45;输入 SharePoint 关联 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+     ![IntelliTrace 日志&#45;输入 SharePoint 相关 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3.  在“请求事件” 下，检查事件。 从顶部开始，事件按发生顺序显示。  
   
@@ -207,7 +207,7 @@ ms.locfileid: "31479593"
   
      ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions_intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- 有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 类型的数据的代理记录，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+ 有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ###  <a name="ThreadsList"></a> 线程列表  
  检查目标进程中运行的记录线程。 你可以从选定线程的第一个有效 IntelliTrace 事件开始调试。  
@@ -225,7 +225,7 @@ ms.locfileid: "31479593"
 |**列**|**显示**|  
 |----------------|-------------------|  
 |**ID**|线程 ID 号|  
-|**名称**|线程名。 未命名的线程显示为"\<没有名称 >"。|  
+|**名称**|线程名。 未命名的线程显示为"\<无名称 >"。|  
 |**开始时间**|线程创建时间|  
 |**结束时间**|线程完成时间|  
   
@@ -258,14 +258,14 @@ ms.locfileid: "31479593"
 |----------------|-------------------|  
 |**模块名**|模块文件名|  
 |**模块路径**|加载模块的磁盘位置|  
-|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅 [Finding symbol (.pdb) files and source files](http://msdn.microsoft.com/en-us/05384c85-d264-4e18-abaa-aa482ab25470)。|  
+|**模块 ID**|模块的唯一标识符特定于版本，并分配给匹配的符号 (PDB) 文件。 请参阅[查找符号 (.pdb) 文件和源文件](/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。|  
   
 ### <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？  
  [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [IntelliTrace 功能](../debugger/intellitrace-features.md)  
   
- [在手动测试中收集更多诊断数据](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)  
+ [在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)  
   
  [IntelliTrace](../debugger/intellitrace.md)  
   
@@ -273,4 +273,4 @@ ms.locfileid: "31479593"
  [Visual Studio 调试器](http://go.microsoft.com/fwlink/?LinkId=262263)  
   
 #### <a name="guidance"></a>指导  
- [对使用 Visual Studio 2012-第 6 章的连续交付进行测试： 测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)
+ [测试持续交付与 Visual Studio 2012-第 6 章： 测试工具箱](http://go.microsoft.com/fwlink/?LinkID=255203)

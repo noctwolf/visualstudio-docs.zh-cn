@@ -14,16 +14,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 458b320b971cbb3c4db74d6f2202455332ca5465
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d511934dc185ed6dac8034ee3e149391b2dd185e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056315"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281541"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>调试 UWP 应用使用 Visual Studio 中的预提取的内容
   
- 若要使 UWP 应用的响应速度更快，可以请求 Windows 将预一些 web 内容，如网页或图像加载到应用程序的[WinINet](/windows/desktop/WinInet/about-wininet)缓存。 此功能称为“预提取”。 在启动时使用的内容特别有效，但太预提取其他常用的内容。 方法[Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher)类允许您指定你想要预加载内容的 Uri。 请参阅 Windows SDK[内容预提取示例](http://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)有关如何将 ContentPrefetcher 功能添加到您的应用程序的示例。  
+ 若要使 UWP 应用的响应速度更快，可以请求 Windows 将预一些 web 内容，如网页或图像加载到应用程序的[WinINet](/windows/desktop/WinInet/about-wininet)缓存。 此功能称为“预提取”。 在启动时使用的内容特别有效，但太预提取其他常用的内容。 方法[Windows.Networking.BackgroundTransfer.ContentPrefetcher](/uwp/api/Windows.Networking.BackgroundTransfer.ContentPrefetcher)类允许您指定你想要预加载内容的 Uri。 请参阅 Windows SDK[内容预提取示例](https://code.msdn.microsoft.com/windowsapps/ContentPrefetcher-Sample-432c8309)有关如何将 ContentPrefetcher 功能添加到您的应用程序的示例。  
   
  Windows 使用试探法来确定何时及是否应进行预提取，以及将下载哪些资源。 试探法将考虑系统网络和电源情况、用户应用使用情况历史记录和之前预提取尝试的结果。 在 Visual Studio 中，你可以使用**触发 Windows 应用商店应用预提取**命令强制 Windows 忽略 ContentPrefetcher 试探法并预加载所有指定的 web 内容。 若要在已知状态（已加载或未加载）下使用要预提取的内容测试应用程序的行为或性能，这会很有用。  
   
@@ -42,4 +42,4 @@ ms.locfileid: "37056315"
 >  当你添加或修改指定的 Web 内容时，请重复上述步骤。  
   
 ## <a name="see-also"></a>请参阅  
- [博客文章： 触发预提取适用于 Windows 应用商店应用的 Visual Studio 2013 Update 2 中](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)
+ [博客文章： 触发预提取适用于 Windows 应用商店应用的 Visual Studio 2013 Update 2 中](https://blogs.msdn.microsoft.com/devops/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

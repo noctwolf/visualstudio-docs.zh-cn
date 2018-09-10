@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d46bbe3eb392de21cc1b165819fe469eb4de726d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755880"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281021"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio 中使用转储文件
 使用或不带堆; 的转储文件创建转储文件;打开转储文件;查找二进制文件、 pdb 的和转储文件的源文件。
@@ -55,7 +55,7 @@ ms.locfileid: "36755880"
 
 -   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。
 
--   若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件，请下载适用于一部分的 Windows 调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
+-   若要调试[内核模式](/windows-hardware/drivers/debugger/kernel-mode-dump-files)转储文件，请下载适用于一部分的 Windows 调试工具[Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)。
 
 -   Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。
 

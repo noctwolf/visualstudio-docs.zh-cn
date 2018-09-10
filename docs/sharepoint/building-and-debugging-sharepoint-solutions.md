@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: cf89354880059b8fe743e5558b2c406467a38014
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 82733a8d3e908e82ad8f841857aa70374495e556
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326109"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283530"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>生成和调试 SharePoint 解决方案
   一般情况下，生成和调试 SharePoint 解决方案是生成和调试其他类型中的项目的相同[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 本部分的主题介绍存在的差异。  
@@ -44,8 +44,8 @@ ms.locfileid: "36326109"
 ## <a name="debug-and-test-sharepoint-solutions"></a>调试和测试 SharePoint 解决方案
  在调试时前,[!include[vsprvs](../sharepoint/includes/vsprvs-md.md)]副本 *.wsp*包到 SharePoint 服务器激活的站点和 Web 范围的功能，并在某些情况下，将启动项目。 在某些情况下，您可能必须手动打开项目。 有关详细信息，请参阅[进行故障排除 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)并[调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)。  
   
-## <a name="debug-and-verify-sharepoint-solutions-by-using-alm-features"></a>调试和使用 ALM 功能验证 SharePoint 解决方案
- Visual Studio ALM 功能（例如单元测试和 IntelliTrace）可以更准确地查明 SharePoint 解决方案中的问题。 通过分析，您可以查找并确定 SharePoint 解决方案中的性能问题区域。 有关详细信息，请参阅[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)并[分析 SharePoint 应用程序性能](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)。  
+## <a name="debug-and-verify-sharepoint-solutions-by-using-azure-devops-services-features"></a>调试和使用 Azure DevOps 服务功能来验证 SharePoint 解决方案
+ Azure DevOps 服务功能，例如单元测试和 IntelliTrace，您在 SharePoint 解决方案中的更多准确地查明问题。 通过分析，您可以查找并确定 SharePoint 解决方案中的性能问题区域。 有关详细信息，请参阅[验证和调试 SharePoint 代码](../sharepoint/verifying-and-debugging-sharepoint-code.md)并[分析 SharePoint 应用程序性能](../sharepoint/profiling-the-performance-of-sharepoint-applications.md)。  
   
 ## <a name="security-during-the-build-process"></a>在生成过程中的安全
  若要打包或部署 SharePoint 解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]必须有权将文件复制到 SharePoint 服务器。 您必须运行[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提升的进程，以及你的用户帐户必须是 SharePoint 服务器上的站点集合管理员。 此外，必须指定你的项目是沙盒解决方案或场解决方案。 有关详细信息，请参阅[Differences Between Sandboxed 和场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)。  

@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f86812bc1258c0381adc716a883a8cbc98b48eec
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 6d22202e50c973c52bf2b47374b9eda583fb3fe8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512286"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280878"
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 
-**任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)对象而不是每个线程。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。
+**任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class)，或[WinJS.Promise](/previous-versions/windows/apps/br211867(v=win.10))对象而不是每个线程。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。
 
 在托管代码中，可以使用**任务**窗口中使用时<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象或使用**await**并**异步**关键字 (**Await**并**异步**在 visual Basic 中)。 有关在托管代码中的任务的详细信息，请参阅[并行编程](/dotnet/standard/parallel-programming/index)。
 
 在本机代码中，可以使用**任务**窗口中使用时[任务组](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[并行算法](/cpp/parallel/concrt/parallel-algorithms)，[异步代理](/cpp/parallel/concrt/asynchronous-agents)，和[轻量级任务](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。 有关本机代码中的任务的详细信息，请参阅[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。
 
-在 JavaScript 中，您可以使用任务窗口时你正在使用 promise`.then`代码。 请参阅[JavaScript （UWP 应用） 中的异步编程](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)有关详细信息。
+在 JavaScript 中，您可以使用任务窗口时你正在使用 promise`.then`代码。 请参阅[JavaScript （UWP 应用） 中的异步编程](/previous-versions/windows/apps/hh700330(v=win.10))有关详细信息。
 
 可以使用**任务**窗口时进入调试器。 你可以访问它的计算机上**调试**菜单中单击**Windows** ，然后单击**任务**。 如下图所示**任务**窗口处于默认模式。
 

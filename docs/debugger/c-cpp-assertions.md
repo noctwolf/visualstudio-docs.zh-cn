@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 325641a143df2fe14a02d96f1103f58ddf533cd8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 455dc578e99700e4d6f53efae5a1bb5747e28d02
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37438034"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280020"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 断言语句指定您希望在您的程序中的点，则返回 true 的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，并[断言失败对话框](../debugger/assertion-failed-dialog-box.md)出现。  
@@ -159,7 +159,7 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_MFC_assertions"></a> MFC 断言  
- 定义 MFC [ASSERT](http://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏用于断言检查。 它还定义了`MFC ASSERT_VALID`并`CObject::AssertValid`方法用于检查的内部状态`CObject`-派生的对象。  
+ 定义 MFC [ASSERT](https://msdn.microsoft.com/Library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c)宏用于断言检查。 它还定义了`MFC ASSERT_VALID`并`CObject::AssertValid`方法用于检查的内部状态`CObject`-派生的对象。  
   
  如果参数的 MFC`ASSERT`宏计算结果为零或为 false，宏将暂停程序执行并警告用户; 否则，继续执行。  
   

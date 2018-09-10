@@ -1,5 +1,5 @@
 ---
-title: 在调试器中查看 Dll 和可执行文件 |Microsoft 文档
+title: 在调试器中查看 Dll 和可执行文件 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,56 +25,56 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46dc913b95396e16f208611bcfc926378609bef6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f582c435239c83503b179d6bb5e142936a41cb4b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476655"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279006"
 ---
 # <a name="view-dlls-and-executables-using-the-modules-window-in-the-visual-studio-debugger"></a>查看 Dll 和可执行文件使用 Visual Studio 调试器中的模块窗口
  
-**模块**窗口列出的 Dll 与可执行文件 (EXE)，使用由你的程序并显示每个相关信息。 
+**模块**窗口列出了 Dll 和可执行文件 (EXE)，由您的程序并显示每个阶段的相关信息。 
 
 > [!NOTE]
 >  此功能不可用于 SQL 或脚本调试。 
   
 ### <a name="to-display-the-modules-window"></a>若要显示模块窗口  
   
--   在调试过程选择**调试 > Windows** ，然后单击**模块**。  
+-   在调试时选择**调试 > Windows** ，然后单击**模块**。  
   
-     默认情况下，**模块**窗口按加载顺序对模块进行排序。 但是，可以选择按任意列来排序。  
+     默认情况下**模块**窗口按加载顺序对模块进行排序。 但是，可以选择按任意列来排序。  
   
 ### <a name="to-sort-by-any-column"></a>按任意列排序  
   
 -   单击该列顶部的按钮。  
   
-     你可以加载符号或指定符号路径**模块**窗口是通过使用快捷菜单。  
+     您可以加载符号或指定符号路径**模块**窗口中使用的快捷菜单。  
   
 ## <a name="loading-symbols"></a>加载符号  
- 在**模块**窗口中，你可以看到哪些模块加载了调试符号。 此信息显示在**符号状态**列。 如果该状态显示**已跳过 loadingCannot 找到或打开 PDB 文件**，或**加载包括 '/' 排除 ' 设置禁用**，则您可以指示调试器从 Microsoft 公共符号下载符号服务器或从你的计算机上的符号目录加载符号。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+ 在中**模块**窗口中，您可以看到哪些模块加载了调试符号。 此信息显示在**符号状态**列。 如果状态显示为**已跳过 loadingCannot 找到或打开 PDB 文件**，或**包括/排除设置已禁用加载**，可以指示调试器从 Microsoft 公共符号下载符号服务器或者从您的计算机上的符号目录加载符号。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 #### <a name="to-load-symbols-manually"></a>手动加载符号  
   
-1.  在**模块**窗口中，右击还未加载符号的模块的。  
+1.  在中**模块**窗口中，右击还未加载符号的模块的。  
   
-2.  指向**负载符号从**，然后单击**Microsoft 符号服务器**或**符号路径**。  
+2.  指向**负载从符号**，然后单击**Microsoft 符号服务器**或**符号路径**。  
   
 #### <a name="to-change-symbol-load-settings"></a>更改符号加载设置  
   
-1.  在**模块**窗口中，右击任一模块。  
+1.  在中**模块**窗口中，右键单击任何模块。  
   
 2.  单击**符号设置**。  
   
-     中所述，你现在可以更改符号加载设置，[指定符号位置和加载行为](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior)。 只有重新启动调试会话，更改才会生效。  
+     现在可以更改符号加载设置，如中所述[指定符号位置和加载行为](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior)。 只有重新启动调试会话，更改才会生效。  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>为特定模块更改符号加载行为  
   
-1.  在**模块**窗口中，右键单击该模块。  
+1.  在中**模块**窗口中，右键单击模块。  
   
 2.  指向**自动符号加载设置**，然后单击**始终手动加载**或**默认**。 只有重新启动调试会话，更改才会生效。  
   
 ## <a name="see-also"></a>请参阅  
- [中断执行](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)   
+ [中断执行](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))   
+ [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

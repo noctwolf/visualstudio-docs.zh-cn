@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 140d140b94446cf6e778caf33252d4c95bf2334b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: f744848292c4d288be82bf4ca462d7ccae257d8a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512052"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280074"
 ---
 # <a name="graphics-frame-analysis"></a>图形帧分析
 使用 Visual Studio 图形分析器中的图形帧分析可分析并优化你的 Direct3D 游戏或应用的呈现性能。  
@@ -34,7 +34,7 @@ ms.locfileid: "39512052"
   
  虽然帧分析主要用于帮助你获得更快的呈现性能，但是它同样可以帮助你使给定的性能目标获得更好的视觉质量，或者减少 GPU 耗电量。  
   
- 若要查看演示，帧分析可以为你的应用执行的操作，可以观看[Visual Studio 图形帧分析](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)第 9 频道上的视频。  
+ 若要查看演示，帧分析可以为你的应用执行的操作，可以观看[Visual Studio 图形帧分析](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)第 9 频道上的视频。  
   
 ## <a name="using-frame-analysis"></a>使用帧分析  
  在可以使用帧分析之前，你必须在应用运行时从应用中捕获图形信息，正如你在使用任何其他图形分析器工具时进行的操作。 然后，在图形日志文档 (.vsglog) 窗口中，选择**帧分析**选项卡。  
@@ -72,14 +72,14 @@ ms.locfileid: "39512052"
 #### <a name="timeline"></a>时间线  
  时间线显示彼此相关的绘图调用计时的概述。 因为较大的直条对应于较长的绘图时间，所以你可以使用它快速地定位帧中能耗最高的绘图调用。 当捕获的帧包含大量绘图调用时，多个绘图调用将合并到一个直条中，其长度为这些绘图调用的总和。  
   
- ![时间线显示绘图&#45;调用成本。] (media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
+ ![时间线显示绘图&#45;调用成本。](media/pix_frame_analysis_timeline.png "pix_frame_analysis_timeline")  
   
  你可以释放直条上的指针，以查看该直条对应于哪个绘图调用事件。 选择该直条会使事件列表同步到该事件。  
   
 #### <a name="table"></a>表  
  时间线下的数字表显示了与应用的默认呈现有关的每个绘图调用的每个呈现变体的相对性能。 每一列都显示一个不同的呈现变体，每一行都表示一个在最左边的列中标识的不同的绘图调用；你可以从此处遵循指向“图形事件列表”窗口中的事件的链接。  
   
- ![摘要表显示了不同变体。] (media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
+ ![摘要表显示了不同变体。](media/pix_frame_analysis_summary.png "pix_frame_analysis_summary")  
   
  摘要表左起第二列显示应用的基线呈现时间，即应用用以完成绘图调用所需的默认呈现时长。 其余各列将每个呈现变体的相对性能显示为基线的百分比，以便更容易看出性能是否有所提升。 大于 100% 的百分比花费的时间比基线长（即降低了性能），小于 100% 的百分比花费的时间比基线短（即提升了性能）。  
   
@@ -88,7 +88,7 @@ ms.locfileid: "39512052"
 #### <a name="hot-draw-calls"></a>“热点”绘图调用  
  为了引起对消耗了较大部分的整体呈现时间或由于无法避免的原因而可能速度异常缓慢的绘图调用的注意，当其本身的基线计时大于一个标准偏差，长于帧中所有绘图调用的平均基线计时时，会将包含这些“热点”绘图调用的行着色为红色。  
   
- ![此 DrawIndexed 调用具有热和冷变体。] (media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
+ ![此 DrawIndexed 调用具有热和冷变体。](media/pix_frame_analysis_hot_calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>统计意义  
  为了引起对具有最高相关性的呈现变体的注意，帧分析将确定每个呈现变体的统计意义，并将有意义的变体显示为黑体字。 它将提升性能的变体显示为绿色，将降低性能的变体显示为红色。 它还将不具有统计学意义的结果显示为正常字体。  
@@ -103,12 +103,12 @@ ms.locfileid: "39512052"
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>不支持硬件计数器的平台  
  大多数平台不完全支持硬件 GPU 计数器，其中包括当前由 Intel、AMD 和 nVidia 提供的所有 GPU。 当不存在要收集的硬件计数器时，将仅显示一张“详细信息”表，它包含所有变体的平均绝对计时。  
   
- ![详细信息表和某些播放变体。] (media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
+ ![详细信息表和某些播放变体。](media/pix_frame_analysis_details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>支持硬件计数器的平台  
  对于支持硬件 GPU 计数器的平台（例如，nVidia T40 SOC 和所有 Qualcomm SOC），将显示几张“详细信息”表，每张表对应一个变体。 为每个呈现变体收集每个可用的硬件计数器，它们显示在其本身的“详细信息”表中。  
   
- ![支持时，将显示硬件计数器。] (media/pix_frame.png "pix_frame")  
+ ![支持时，将显示硬件计数器。](media/pix_frame.png "pix_frame")  
   
  硬件计数器信息为每个绘图调用都提供了一个特定硬件平台行为的非常详细的视图，可帮助你非常准确地标识出现性能瓶颈的原因。  
   
