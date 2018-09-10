@@ -12,16 +12,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 269f885350283520768af5dfa4cb05fe9319d51b
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468268"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42626655"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
-了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
+了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到所有”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式
 
@@ -39,19 +39,19 @@ Visual Studio 常用快捷方式如下：
 
 | 快捷方式（所有配置文件） | 命令 | 描述 |
 |-|-|-|
-| Ctrl + T | 转到全部 | 导航到任何文件/类型/成员/符号声明 |
+| Ctrl + T | 转到所有 | 导航到任何文件/类型/成员/符号声明 |
 | F12（也可使用 Ctrl+单击） | 转到定义 | 导航到定义符号的位置 |
 | Ctrl+F12 | 转到实现 | 从基类型或基成员导航到各种实现 |
 | Shift+F12 | 查找所有引用 | 查看所有符号或文本引用 |
 | Ctrl+. （也可使用 C# 配置文件中的 Alt+Enter） | 快速操作和重构 | 查看光标位置或代码选定内容处可用的代码修复、代码生成操作、重构或其他快速操作 |
 | **Ctrl**+**D** | 复制行 | 复制光标所在的代码行（适用于 Visual Studio 2017 版本 15.6  及更高版本） |
 | **Shift**+**Alt**+**+**/**-** | 扩大/收缩选定内容 | 在编辑器中扩大或收缩当前选定内容（适用于 Visual Studio 2017 版本 15.5 及更高版本） |
-| **Shift** + **Alt** + **Ins** | 插入下一个匹配的脱字号 | 在与当前选择匹配的下一个位置添加选择和脱字号（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
+| **Ctrl** + **Alt** + **.** | 插入下一个匹配的脱字号 | 在与当前选择匹配的下一个位置添加选择和脱字号（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
 | Ctrl+Q | 快速启动 | 搜索所有 Visual Studio 设置 |
 | **F5** | 开始调试 | 开始调试应用程序 |
 | Ctrl+F5 | 不进行调试直接运行 | 不进行调试，直接在本地运行应用程序 |
-| Ctrl+K,D（默认配置文件）或 Ctrl+E,D（C# 配置文件） | 设置文档的格式 | 基于换行、间距和缩进设置，清理文件中的格式设置冲突 |
-| Ctrl+\\,E（默认配置文件）或 Ctrl+W,E（C# 配置文件） | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
+| Ctrl+K,D（默认配置文件）或 Ctrl+E,D（C# 配置文件） | [设置文档格式](code-styles-and-quick-actions.md#format-document-command) | 基于换行、间距和缩进设置，清理文件中的格式设置冲突 |
+| Ctrl+\\、Ctrl+E（默认配置文件）或 Ctrl+W,E（C# 配置文件） | 查看错误列表 | 查看文档、项目或解决方案中的所有错误 |
 | **Alt** + **PgUp/PgDn** | 转到下一个/上一个问题 | 跳转到文档中的上一个/下一个错误、警告和建议（适用于 Visual Studio 2017 版本 15.8 及更高版本） |
 
 > [!NOTE]
@@ -61,13 +61,13 @@ Visual Studio 常用快捷方式如下：
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法
 
-Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“转到全部”可快速跳转到任何文件、类型、成员或符号声明。
+Visual Studio 2017 有一种名为“转到所有”(Ctrl+T) 的功能。 通过“转到所有”可快速跳转到任何文件、类型、成员或符号声明。
 
 - 更改此搜索栏的位置或使用“齿轮”图标关闭“实时导航预览”。
 - 使用查询语法（例如“t mytype”）筛选结果。 还可以将搜索范围限定在当前文档。
 - 支持 camelCase 匹配！
 
-![Visual Studio 中的转到全部](../ide/media/VS2017Guide-go-to-all.png)
+![Visual Studio 中的转到所有](../ide/media/VS2017Guide-go-to-all.png)
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的团队对基本代码强制实施代码样式规则
 
@@ -117,7 +117,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 结构可视化工具 | 括号中的灰色虚线 | 悬停鼠标查看代码结构 |
 | 导航到反编译的程序集 | F12 或 Ctrl+单击 | 通过启用以下功能导航到外部源（使用 ILSpy 反编译）：“工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源”。 |
 
-![转到全部和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
+![转到所有和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>我想要运行并查看我的单元测试
 

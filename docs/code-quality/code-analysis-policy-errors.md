@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc42977953c70a9d17e1e26401a4d3c0576106e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e4c06afd005d4d667d168429a922c32120987763
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175886"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278915"
 ---
 # <a name="code-analysis-policy-errors"></a>代码分析策略错误
 如果在签入时未满足代码分析策略，会发生以下错误：
 
  **一个或多个项目的代码分析设置不兼容与代码分析策略。**
 
- 一个或多个代码项目未满足签入到团队项目源代码管理的代码分析需求。 此错误可能是由以下一种或多种情况引起的：
+ 一个或多个代码项目不符合在签入到源代码管理项目的代码分析需求。 此错误可能是由以下一种或多种情况引起的：
 
 1.  未对解决方案中所有项目的生成版本启用代码分析。
 
-2.  本地规则集 for Visual Studio 中的项目的限制更少**操作**设置不是团队项目规则等设置的规则，设置为**操作**=**错误**服务器上具有其**操作**设置为**警告**或**无**中设置要在 Visual Studio 中运行的规则)。
+2.  本地规则集 for Visual Studio 中的项目的限制更少**操作**设置不是项目规则等设置的规则，设置为**操作**=**错误**服务器上具有其**操作**设置为**警告**或**无**中设置要在 Visual Studio 中运行的规则)。
 
-3.  在 Visual Studio 指定的规则集不包含在团队项目代码分析签入策略中指定的规则集中指定的所有规则。
+3.  在 Visual Studio 中指定的规则集不包含所有设置中的代码分析签入策略项目指定规则中指定的规则。
 
  **代码分析策略失败。在项目中有错误{0}或生成不是最新。**
 

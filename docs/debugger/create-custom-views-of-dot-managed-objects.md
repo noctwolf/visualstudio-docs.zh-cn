@@ -1,5 +1,5 @@
 ---
-title: 创建托管对象的自定义视图 |Microsoft 文档
+title: 创建托管对象的自定义视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6be491a5c7a0ceb0ed536416cdd3b273f96b4bb1
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 970051c5f53c152ea6fee334c3c1f856172b5ed9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457675"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280540"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>创建托管对象的自定义视图
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。  
@@ -49,10 +49,10 @@ ms.locfileid: "31457675"
 > [!CAUTION]
 >  在 Visual Studio 的不同版本中，此文件的结构和 autoexp 规则的语法可能不同。  
   
- 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例： 调试表达式计算器外接程序](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
+ 通过编写表达式计算器外接程序，还可以自定义本机类型视图。 有关详细信息，请参阅[EEAddIn 示例： 调试表达式计算器外接程序](https://msdn.microsoft.com/library/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 特性](../debugger/using-the-debuggerdisplay-attribute.md)   
- [监视和快速监视窗口](../debugger/watch-and-quickwatch-windows.md)   
+ [监视窗口和快速监视 Windows](../debugger/watch-and-quickwatch-windows.md)   
  [使用调试器显示特性增强调试](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

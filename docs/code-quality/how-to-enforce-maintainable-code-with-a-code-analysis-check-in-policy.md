@@ -12,52 +12,52 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6269b4839c552fa6a1e982226bbb311cb7d5e9d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921122"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281034"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 使用代码分析签入策略强制实现代码
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 强制实现代码使用代码分析签入策略
 
-开发人员可以使用代码度量工具来测量的复杂性和可维护性其代码，但不是能作为签入策略的一部分中调用代码度量值。 但是，可以启用代码分析规则，验证你的代码符合代码度量值标准，并强制实施通过签入策略规则。 有关代码度量值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。
+开发人员可以使用代码度量值工具来衡量的复杂性和可维护性的其代码，但你不能作为签入策略的一部分调用代码度量值。 但是，可以启用代码分析规则，验证你的代码符合代码度量标准，并强制实施通过签入策略的规则。 代码度量值的详细信息，请参阅[代码的指标值](../code-quality/code-metrics-values.md)。
 
-你可以启用的继承深度、 类耦合、 可维护性指数和复杂性规则来借助代码分析签入策略强制实现代码。 所有四个。 这些规则在代码分析策略编辑器中"可维护性规则"类别下都找到。
+可以启用继承深度、 类耦合、 可维护性指数和复杂性规则以强制实施通过代码分析签入策略可维护的代码。 这些规则的所有四个代码分析策略编辑器中找到"可维护性规则"类别下。
 
-Team foundation 版本控制的管理员可以将代码分析可维护性规则添加到的签入策略要求。 这些签入策略需要开发人员运行代码分析在启动签入前根据这些规则的更改。
+Team foundation 版本控制的管理员可以将代码分析可维护性规则添加到签入策略要求。 这些签入策略要求开发人员运行代码分析签入启动之前基于这些规则的更改。
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>若要打开代码分析策略编辑器
 
-1. 在**团队资源管理器**，右键单击团队项目，单击**团队项目设置**，然后单击**源代码管理**。
+1. 在中**团队资源管理器**，右键单击项目，单击**项目设置**，然后单击**源代码管理**。
 
      **源代码管理**对话框随即出现。
 
-2. 上**签入策略**卡，然后单击**添加**。
+2. 上**签入策略**选项卡，然后单击**添加**。
 
      **添加签入策略**对话框随即出现。
 
-3. 在**签入策略**列表中，选择**代码分析**复选框，并依次**确定**。
+3. 在中**签入策略**列表中，选择**代码分析**复选框，然后依次**确定**。
 
      **代码分析策略编辑器**对话框随即出现。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>若要启用代码分析可维护性规则
 
-1. 在**代码分析策略编辑器**对话框中，在**规则设置**，展开**可维护性规则**节点。
+1. 在中**代码分析策略编辑器**对话框中的**规则设置**，展开**可维护性规则**节点。
 
-2. 选择以下的规则所对应的复选框：
+2. 选择以下规则对应的复选框：
 
-    -   继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 在 5 个以上的层深度警告
+    -   继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 警告在 5 个以上级别的深度
 
-    -   复杂性： **CA1502 AvoidExcessiveComplexity** -阈值： 多个 25 处出现警告
+    -   复杂性： **CA1502 AvoidExcessiveComplexity** -阈值： 在超过 25 种的警告
 
-    -   可维护性指数： **CA1505 AvoidUnmaintainableCode** -阈值： 少于 20 处出现警告
+    -   可维护性索引： **CA1505 AvoidUnmaintainableCode** -阈值： 少于 20 发出警告
 
-    -   类耦合： **CA1506 AvoidExcessiveClassCoupling** -阈值： 在多个类的 80 和多个方法的 30 警告
+    -   类耦合度： **CA1506 AvoidExcessiveClassCoupling** -阈值： 多个方法，为 30 个禬筁 80 类发出警告
 
     此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
 
-3. 单击 **“确定”**。 现在，新签入策略应用到以后进行签入时。
+3. 单击 **“确定”**。 新签入策略现在适用于未来的签入。
 
 ## <a name="see-also"></a>请参阅
 

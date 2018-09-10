@@ -1,5 +1,5 @@
 ---
-title: 在 UWP 应用中进行调试 HTML 和 CSS |Microsoft 文档
+title: 在 UWP 应用中调试 HTML 和 CSS |Microsoft Docs
 ms.custom: ''
 ms.date: 07/17/2017
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: b5673a2ab191f71b9aec14f08c5adfc65883ff24
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 563fed2a6622e56f76e604ead0da6c599e91b6db
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479115"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281437"
 ---
-# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中进行调试 HTML 和 CSS
+# <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中的 UWP 应用中调试 HTML 和 CSS
   
- Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 适用于 UWP 应用以及创建使用 Visual Studio Tools for Apache Cordova 的应用支持这些功能。  
+ Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 适用于 UWP 应用和创建使用 Visual Studio Tools for Apache Cordova 的应用支持这些功能。  
   
  通过使用 DOM 检查工具所提供的交互式调试模型，你可以查看并修改所呈现的 HTML 和 CSS 代码。 你可以在不停止并重新启动调试器的情况下执行这一切操作。
   
- 有关其他 JavaScript 调试功能，例如使用 JavaScript 控制台窗口和设置断点，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)和[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 有关其他 JavaScript 调试功能，例如使用 JavaScript 控制台窗口，并设置断点，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InspectingDOM"></a> 检查实时 DOM  
  DOM 资源管理器展示所呈现的页面的视图，还可使用 DOM 资源管理器更改值并立即看到结果。 这使你可以在无需停止和重新启动调试器的情况下测试更改。 使用此方法与页面进行交互时不更改项目中的源代码，因此当发现代码中要更正的内容时，请对源代码作出更改。  
@@ -47,7 +47,7 @@ ms.locfileid: "31479115"
   
 -   检查如何将 CSS 样式应用到页元素，并跟踪已应用的规则。  
   
- 调试应用程序时，通常需要在 DOM 资源管理器中选择元素。 选择某个元素后，DOM 资源管理器右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的选定元素。 这些选项卡是：“样式” 、“计算” 、“布局” 。 UWP 应用还支持**事件**和**更改**选项卡。 有关选择元素的详细信息，请参见 [Selecting elements](#SelectingElements)。  
+ 调试应用程序时，通常需要在 DOM 资源管理器中选择元素。 选择某个元素后，DOM 资源管理器右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的选定元素。 这些选项卡是：“样式” 、“计算” 、“布局” 。 UWP 应用还支持**事件**并**更改**选项卡。 有关选择元素的详细信息，请参见 [Selecting elements](#SelectingElements)。  
   
 > [!TIP]
 >  如果“DOM 资源管理器”窗口已关闭，请依次选择“调试” > >  以重新打开它。 仅在脚本调试会话期间显示该窗口。  
@@ -55,17 +55,17 @@ ms.locfileid: "31479115"
  在后续过程中，我们将通过使用 DOM 资源管理器完成以交互方式调试应用程序的过程。 我们将创建一个使用 `FlipView` 控件的应用程序，然后调试它。 此应用程序包含若干错误。  
   
 > [!WARNING]
->  下面的示例应用程序是一个 UWP 应用。 Cordova 支持以上相同的功能，但应用会有所不同。  
+>  下面的示例应用是 UWP 应用。 Cordova 支持以上相同的功能，但应用会有所不同。  
   
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>通过检查实时 DOM 进行调试  
   
 1.  通过选择 **“文件”** > **“新建项目”**。  
   
-2.  选择**JavaScript** > **Windows 通用**，然后选择**WinJS 应用**。  
+2.  选择**JavaScript** > **Windows Universal**，然后选择**WinJS 应用**。  
   
 3.  为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
   
-4.  在 index.html 正文元素中，添加以下代码：  
+4.  在正文元素的 index.html 中，添加以下代码：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -142,29 +142,29 @@ ms.locfileid: "31479115"
     })();  
     ```  
   
-     下图显示我们想要查看运行该应用程序是否。 但是，若要让应用程序进入此状态，我们必须先修复大量 Bug。  
+     下图显示了我们想要查看运行该应用程序是否。 但是，若要让应用程序进入此状态，我们必须先修复大量 Bug。  
   
      ![显示预期的结果的 FlipView 应用](../debugger/media/js_dom_appfixed.png "JS_DOM_AppFixed")  
   
-7.  选择**本地计算机**下拉列表中下一步**启动调试**按钮上**调试**工具栏：  
+7.  选择**本地计算机**下拉列表中下一步**开始调试**按钮**调试**工具栏：  
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
 8.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“模拟器”** 或按 F5，以调试模式运行应用。  
   
-     这将运行应用程序中，但你将看到几乎空白的屏幕，因为样式中有几个 bug。 第一个 `FlipView` 图像显示在屏幕中间附近的小正方形中。  
+     这将在运行应用程序中，但你将看到几乎空白的屏幕，因为样式中有几个 bug。 第一个 `FlipView` 图像显示在屏幕中间附近的小正方形中。  
   
 10. 切换到 Visual Studio 并选择 **“DOM 资源管理器”** 选项卡。  
   
     > [!TIP]
     >  可按 Alt+Tab 或 F12，在 Visual Studio 和正在运行的应用程序之间切换。  
   
-11. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （使用右键头键可以查看元素的子元素。）  
+11. 在“DOM 资源管理器”窗口中，选择 ID 为 `"fView"`的部分的 DIV 元素。 使用箭头键可以查看并选择正确的 DIV 元素。 （向右箭头键可以查看元素的子元素。）  
   
      ![DOM 资源管理器](../debugger/media/js_dom_explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  你还可以选择此 DIV 元素在 JavaScript 控制台窗口的左下角中通过键入`select(fView)`在 >> 输入提示符，然后按 enter 键。  
+    >  您还可以选择 DIV 元素在 JavaScript 控制台窗口的左下角中通过键入`select(fView)`在 >> 输入提示符，然后按 enter 键。  
   
      “DOM 资源管理器”窗口的右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的当前元素。  
   
@@ -172,24 +172,24 @@ ms.locfileid: "31479115"
   
      此选项卡显示选定 DOM 元素的每个属性的计算值或最终值。  
   
-13. 打开高度 CSS 规则。 请注意，有一个级联样式设置为 100px，似乎与为设置的 100%的高度值不一致`#fView`CSS 选择器。 `#fView` 选择器的带有删除线的文本指示内联样式优先于该样式。  
+13. 打开高度 CSS 规则。 请注意，没有一个级联样式设置为 100px，似乎与为设置的 100%的高度值不一致`#fView`CSS 选择器。 `#fView` 选择器的带有删除线的文本指示内联样式优先于该样式。  
   
      下图显示了 **“已计算”** 选项卡。  
   
-     ![DOM 资源管理器计算选项卡](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
+     ![DOM 资源管理器中计算选项卡](../debugger/media/js_dom_explorer_computed.png "JS_DOM_Explorer_Computed")  
   
 14. 在“DOM 资源管理器”主窗口中，双击 `fView` DIV 元素的高度和宽度的级联样式。 现在可以在此处编辑这些值。 在此方案中，我们需要完全移除它们。  
   
-15. 在主窗口中，双击`width: 100px;height: 100px;`，按**删除**键，，然后按**Enter**。 按 Enter 后，将立即反映新值在应用中，即使尚未停止调试会话。  
+15. 在主窗口中，双击`width: 100px;height: 100px;`，按**删除**键，，然后按**Enter**。 按 Enter 后，新值将立即在应用中，反映，尽管尚未停止调试会话。  
   
     > [!IMPORTANT]
-    >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”** 和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)和[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
+    >  你不但可以在“DOM 资源管理器”窗口中更新特性，还可更新 **“样式”**、 **“已计算”** 和 **“布局”** 选项卡上显示的值。 有关详细信息，请参阅[使用 DOM 资源管理器调试 CSS 样式](../debugger/debug-css-styles-using-dom-explorer.md)并[使用 DOM 资源管理器调试布局](../debugger/debug-layout-using-dom-explorer.md)。  
   
-16. 通过选择它，或通过使用 Alt + Tab 切换到应用程序。  
+16. 通过选择或通过使用 Alt + Tab 切换到应用。  
   
      现在， `FlipView` 控件的外观大于模拟器或 Phone 仿真程序的屏幕大小。 这并不是预期的结果。 若要进行调查，请切回到 Visual Studio。  
   
-17. 在 DOM 资源管理器中，再次选择 **“计算”** 选项卡并打开高度规则。 FView 元素仍显示 CSS 中的预期值为 100%，但计算的值等于应用的屏幕高度 (例如，800px，667.67 p x 或某个其他值)，这是不是我们希望此应用程序。 要进行调查，后续步骤中我们删除的高度和宽度`fView`DIV 元素。  
+17. 在 DOM 资源管理器中，再次选择 **“计算”** 选项卡并打开高度规则。 FView 元素仍然显示 CSS 中的预期值为 100%，但计算的值等于应用的屏幕高度 (例如，800px，667.67px 或某个其他值)，这是不是我们希望此应用程序。 若要调查，请在后续步骤中我们删除的高度和宽度`fView`DIV 元素。  
   
 18. 在 **“样式”** 选项卡中，取消选中 `#fView` CSS 选择器的高度和宽度属性。  
   
@@ -199,13 +199,13 @@ ms.locfileid: "31479115"
   
      情况有所好转。 然而，还有一个问题有待解决，那就是边距看上去太大。  
   
-20. 要进行调查，切换到 Visual Studio 并选择**布局**选项卡查看元素的框模型。  
+20. 若要调查，切换到 Visual Studio 并选择**布局**选项卡查看元素的框模型。  
   
-     在**布局**选项卡上，你将看到以下：  
+     在中**布局**选项卡上，可以看到如下：  
   
-    -   255px （偏移量） 和 255px （边距） 或类似的值，具体取决于你设备的分辨率。 
+    -   255px （偏移量） 和 255px （边距） 或类似的值，具体取决于设备分辨率。 
   
-     下图显示了**布局**选项卡的外观如果你使用仿真程序与 100px 的偏移量和边距)。  
+     下图显示如何**布局**使用 100px 的偏移量和边距的仿真程序选项卡的外观)。  
   
      ![DOM 资源管理器布局选项卡](../debugger/media/js_dom_explorer_layout.png "JS_DOM_Explorer_Layout")  
   
@@ -225,7 +225,7 @@ ms.locfileid: "31479115"
   
 2.  打开 default.html，然后通过将 `"fView"` DIV 元素的 height 和 width 均设置为 100%，对源代码进行修改。  
   
-3.  选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 该按钮如下所示：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。  
+3.  选择“调试”工具栏上的 **“刷新 Windows 应用程序”** 按钮（或按 F4）。 按钮外观如下所示：![刷新 Windows 应用程序按钮](../debugger/media/js_refresh.png "JS_Refresh")。  
   
      随后将重新加载应用程序页面，并且模拟器或 Phone 仿真程序将返回前台。  
   
@@ -262,4 +262,4 @@ ms.locfileid: "31479115"
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [JavaScript 控制台命令](../debugger/javascript-console-commands.md)   
  [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [产品支持和辅助功能](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [产品支持和辅助功能](https://msdn.microsoft.com/library/tzbxw1af(VS.120).aspx)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中项目和解决方案简介
+title: 项目和解决方案简介
 ms.date: 12/11/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c10d09b1fd66572b45e3fde16c999c39b803523
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512299"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627198"
 ---
-# <a name="quickstart-projects-and-solutions"></a>快速入门：项目和解决方案
+# <a name="learn-about-projects-and-solutions"></a>了解项目和解决方案
 
-这个 10 分钟的快速入门将探讨如何在 Visual Studio 中创建解决方案和项目。 解决方案是一个容器，用于组织一个或多个相关的代码项目，例如，一个类库和一个对应的测试项目。 我们会介绍项目的属性和其中包含的一些文件。 此外，我们还会在一个项目中创建对另一项目的引用。
+在这篇介绍性的文章中，我们将探讨在 Visual Studio 中创建解决方案和项目的含义。 解决方案是一个容器，用于组织一个或多个相关的代码项目，例如，一个类库和一个对应的测试项目。 我们会介绍项目的属性和其中包含的一些文件。 此外，我们还会在一个项目中创建对另一项目的引用。
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
 
@@ -176,19 +176,9 @@ ms.locfileid: "39512299"
 
 若希望检查单元测试是否正常工作，请从菜单栏依次选择“测试” > “运行” > “所有测试”。 此时名为“测试资源管理器”的窗口打开，你应该会看到“TestGetCurrentDate”测试通过。
 
-祝贺你完成此快速入门！ 接下来，你可能想要了解 Visual Studio 的一些其他快速入门知识，或者详细了解如何[创建项目和解决方案](../ide/creating-solutions-and-projects.md)。
-
-> [!div class="nextstepaction"]
-> [快速入门：初步了解 Visual Studio IDE](../ide/quickstart-ide-orientation.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：个性化设置 Visual Studio](../ide/quickstart-personalize-the-ide.md)
-
-> [!div class="nextstepaction"]
-> [快速入门：在编辑器中编码](../ide/quickstart-editor.md)
-
 ## <a name="see-also"></a>请参阅
 
+- [创建项目和解决方案](../ide/creating-solutions-and-projects.md)
 - [管理项目和解决方案属性](../ide/managing-project-and-solution-properties.md)
 - [管理项目中的引用](../ide/managing-references-in-a-project.md)
 - [在 Visual Studio 中开发代码而无需项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)

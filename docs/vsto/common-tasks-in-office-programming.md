@@ -17,11 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2c095b6792b2cde9596e1d955a1ddffbc568c801
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: a92a0e9cc8c82345e1d8a57449317f8e6937dad6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670317"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常见任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
--   [如何： 升级 Office 解决方案](http://msdn.microsoft.com/en-us/a269e539-b717-4680-a568-2152b070347e)。  
+-   [如何： 升级 Office 解决方案](http://msdn.microsoft.com/a269e539-b717-4680-a568-2152b070347e)。  
   
 -   [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
@@ -56,7 +57,7 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 打开 Office 解决方案，而无需运行代码](../vsto/how-to-open-office-solutions-without-running-code.md)。  
   
--   [如何： 设置以便为 Office 解决方案的配置信息](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)。  
+-   [如何： 设置 Office 解决方案的配置信息](../vsto/how-to-set-up-configuration-information-for-an-office-solution.md)。  
   
 -   [如何： 在功能区上显示开发人员选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
@@ -64,39 +65,39 @@ ms.lasthandoff: 05/17/2018
   
 ##  <a name="ui"></a> 用户界面自定义任务  
   
-### <a name="controls-on-documents-and-worksheets"></a>文档和工作表上的控件  
+### <a name="controls-on-documents-and-worksheets"></a>文档和工作表中的控件  
   
--   [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+-   [如何： 将 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
 -   [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
   
 -   [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)。  
   
--   [如何： 向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
+-   [如何： 将 Windows 窗体控件添加到 Office 文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)。  
   
--   [如何： 将内容添加到 Word 文档控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+-   [如何： 添加内容控件添加到 Word 文档](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 -   [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。  
   
-### <a name="task-panes-in-document-level-customizations"></a>文档级自定义项中的任务窗格  
+### <a name="task-panes-in-document-level-customizations"></a>在文档级自定义任务窗格  
   
 -   [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
   
-### <a name="task-panes-in-vsto-add-ins"></a>在 VSTO 外接程序中的任务窗格  
+### <a name="task-panes-in-vsto-add-ins"></a>VSTO 外接程序中的任务窗格  
   
--   [如何： 向应用程序中添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+-   [如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
 ### <a name="ribbon-customizations"></a>功能区自定义  
   
 -   [如何： 开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。  
   
--   [如何： 更改的功能区上的选项卡位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)。  
+-   [如何： 更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)。  
   
 -   [如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
   
 -   [如何： 将控件添加到 Backstage 视图](../vsto/how-to-add-controls-to-the-backstage-view.md)。  
   
--   [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)。  
+-   [如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)。  
   
 ### <a name="outlook-form-regions"></a>Outlook 窗体区域  
   
@@ -124,23 +125,23 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)。  
   
--   [如何： 以编程方式移动在工作簿中的工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)。  
+-   [如何： 以编程方式移动工作簿内的工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)。  
   
 -   [如何： 以编程方式保护工作簿](../vsto/how-to-programmatically-protect-workbooks.md)。  
   
--   [如何： 以编程方式引用代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)。  
+-   [如何： 以编程方式引用在代码中的工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)。  
   
--   [如何： 以编程方式将样式应用于工作簿中](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)。  
+-   [如何： 以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)。  
   
--   [如何： 以编程方式更改包含选定单元格的工作表行中格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)。  
+-   [如何： 以编程方式更改中包含选定单元格的工作表行的格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)。  
   
--   [如何： 以编程方式搜索中工作表范围内的文本](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)。  
+-   [如何： 以编程方式在工作表范围内的文本搜索](../vsto/how-to-programmatically-search-for-text-in-worksheet-ranges.md)。  
   
 -   [如何： 以编程方式打印工作表](../vsto/how-to-programmatically-print-worksheets.md)。  
   
--   [如何： 以编程方式进行 Excel 计算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)。  
+-   [如何： 以编程方式运行 Excel 计算](../vsto/how-to-programmatically-run-excel-calculations-programmatically.md)。  
   
--   [如何： 以编程方式在工作表中的数据排序](../vsto/how-to-programmatically-sort-data-in-worksheets.md)。  
+-   [如何： 以编程方式对工作表中的数据进行排序](../vsto/how-to-programmatically-sort-data-in-worksheets.md)。  
   
 ##  <a name="word"></a> Word 自动化任务  
   
@@ -152,15 +153,15 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 以编程方式关闭文档](../vsto/how-to-programmatically-close-documents.md)。  
   
--   [如何： 以编程方式在 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)。  
+-   [如何： 以编程方式向 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)。  
   
--   [如何： 以编程方式定义和选择文档中的范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
+-   [如何： 以编程方式定义和在文档中选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。  
   
 -   [如何： 以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)。  
   
 -   [如何： 以编程方式设置的文档中的文本格式](../vsto/how-to-programmatically-format-text-in-documents.md)。  
   
--   [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)。  
+-   [如何： 将 XMLNode 控件添加到 Word 文档](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)。  
   
 -   [如何： 以编程方式更新书签文本](../vsto/how-to-programmatically-update-bookmark-text.md)。  
   
@@ -194,7 +195,7 @@ ms.lasthandoff: 05/17/2018
   
 ### <a name="cached-data-in-document-level-solutions"></a>文档级解决方案中的缓存的数据  
   
--   [如何： 缓存数据以供使用，脱机或服务器上](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   [如何： 脱机状态或服务器上缓存数据以供使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
   
 -   [如何： 以编程方式缓存中的 Office 文档的数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)。  
   
@@ -210,30 +211,30 @@ ms.lasthandoff: 05/17/2018
   
 -   [如何： 删除文档从托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。  
   
--   [如何： 附加托管代码扩展到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)。  
+-   [如何： 将附加的托管代码扩展到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)。  
   
-##  <a name="security"></a> 安全性任务  
+##  <a name="security"></a> 安全任务  
   
--   [如何： 登录 Office 解决方案](../vsto/how-to-sign-office-solutions.md)。  
+-   [如何： 对 Office 解决方案进行签名](../vsto/how-to-sign-office-solutions.md)。  
   
 ##  <a name="deployment"></a> 部署任务  
   
--   [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
+-   [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)。  
   
--   [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)。  
+-   [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)。  
   
--   [如何： 安装 ClickOnce Office 解决方案](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)。  
+-   [如何： 安装 ClickOnce Office 解决方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)。  
   
--   [如何： 若要运行 Office 解决方案的最终用户计算机上安装必备组件](http://msdn.microsoft.com/en-us/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+-   [如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
--   [如何： 为部署的 Office 解决方案准备 IIS](http://msdn.microsoft.com/en-us/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
+-   [如何： 为部署 Office 解决方案准备 IIS](http://msdn.microsoft.com/f62bce70-81d4-4f8b-86e6-2f2afec5d9b4)。  
   
--   [如何： 更新部署 Office 解决方案](http://msdn.microsoft.com/en-us/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
+-   [如何： 更新部署的 Office 解决方案](http://msdn.microsoft.com/be96db53-b6ea-46ab-b8d9-b76b098b3b13)。  
   
--   [如何： 更改 Office 解决方案的安装路径](http://msdn.microsoft.com/en-us/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+-   [如何： 更改 Office 解决方案的安装路径](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
 ## <a name="see-also"></a>请参阅  
- [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)   
  [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)  
   

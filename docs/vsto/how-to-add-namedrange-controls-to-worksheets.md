@@ -17,24 +17,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 88f427dd22b7395141ce4ffe0c970cdf9c07ff71
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: cd2b4802d5078a007d6e2c4fab081b88481156de
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670577"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何： 向工作表添加 NamedRange 控件
-  你可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>到 Microsoft Office Excel 工作表在设计时和在运行时在文档级项目中的控件。  
+  您可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>到 Microsoft Office Excel 工作表在设计时和运行时在文档级项目中的控件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 你还可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>在运行时在 VSTO 外接程序项目中的控件。  
+ 您还可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>控件在运行时在 VSTO 外接程序项目中。  
   
  本主题介绍了以下任务：  
   
 -   [在设计时添加 NamedRange 控件](#designtime)  
   
--   [在文档级项目中的运行时添加 NamedRange 控件](#runtimedoclevel)  
+-   [在运行时在文档级项目中添加 NamedRange 控件](#runtimedoclevel)  
   
 -   [在运行时在 VSTO 外接程序项目中添加 NamedRange 控件](#runtimeaddin)  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 05/17/2018
   
 1.  选择要包含在命名范围中的一个或多个单元格。  
   
-2.  在**名称框**，键入的名称的范围和按**Enter**。  
+2.  在中**名称框**，键入的名称的范围和按**Enter**。  
   
      **“名称框”** 位于公式栏旁边，也即工作表 **A** 列的正上方。  
   
@@ -75,8 +76,8 @@ ms.lasthandoff: 05/17/2018
   
      数据绑定 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件将添加到工作表中。 有关详细信息，请参阅[数据绑定和 Windows 窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
-##  <a name="runtimedoclevel"></a> 在文档级项目中的运行时添加 NamedRange 控件  
- 你可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>以编程方式向你在运行时的工作表的控件。 这使得你可以创建宿主控件以响应事件。 工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+##  <a name="runtimedoclevel"></a> 在运行时在文档级项目中添加 NamedRange 控件  
+ 您可以添加<xref:Microsoft.Office.Tools.Excel.NamedRange>控件以编程方式与您在运行时的工作表。 这使得你可以创建宿主控件以响应事件。 工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>以编程方式将 NamedRange 控件添加到工作表中  
   
@@ -86,7 +87,7 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
 ##  <a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加 NamedRange 控件  
- 可以按编程方式将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 VSTO 外接程序项目中任何打开的工作表中。 工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+ 可以按编程方式将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 VSTO 外接程序项目中任何打开的工作表中。 工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>以编程方式将 NamedRange 控件添加到工作表中  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 05/17/2018
      [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]  
   
 ## <a name="see-also"></a>请参阅  
- [扩展 Word 文档和 Excel VSTO 外接程序在运行时中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   

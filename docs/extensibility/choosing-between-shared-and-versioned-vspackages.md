@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d81aa731a12dedc1237d8af661c718930318f8cd
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 62033dc78e5595cefdf4f3ae39a95e68c64b9ee4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231488"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283218"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>共享和版本控制的 Vspackage 之间进行选择
 不同版本的 Visual Studio 可以在同一台计算机上共存。 Vspackage 可以支持的任意组合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]版本。  
@@ -38,7 +38,7 @@ ms.locfileid: "39231488"
   
     -   程序 VSPackage 以适应的版本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]正在其中运行。 然后，如果较新的服务的查询失败，你的 VSPackage 可以提供的较旧版本中支持的其他服务[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
--   适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
+-   适当地注册你的 VSPackage。 有关详细信息，请参阅[VSPackage 注册](../extensibility/internals/vspackage-registration.md)并[托管 VSPackage 注册](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)。  
   
 -   适当地注册文件扩展名。 有关详细信息，请参阅[注册的并行部署的文件扩展名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。  
   

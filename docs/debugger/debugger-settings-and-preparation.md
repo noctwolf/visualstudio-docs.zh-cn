@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 48cc5bfdf53f6a3d6e214b73b46c0fa46267787e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: d0bde2f36aa644bf9335ce74cf4a1ac3bd433a6c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468294"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282061"
 ---
 # <a name="debugger-settings-and-preparation"></a>调试器设置和准备
 本节描述与调试器相关的属性设置，以及为了使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试器调试程序所需要的准备工作。 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用项目模板创建程序，则调试配置中将为你正确配置这些设置。  
@@ -46,7 +46,7 @@ ms.locfileid: "39468294"
  解释如何调试未作为 Visual Studio 项目的一部分创建的可执行文件。  
   
  [如何：调试 Code Center Premium 源代码](../debugger/how-to-debug-with-code-center-premium-source.md)  
- 描述如何在 Visual Studio 项目中调试来自 Microsoft Code Center Premium 的源代码。  
+ 描述如何调试来自 Microsoft Code Center Premium 的 Visual Studio 项目中的源。  
   
  [调试 64 位应用程序](../debugger/debug-64-bit-applications.md)  
  描述如何调试 64 位应用程序。  

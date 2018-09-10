@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 |Microsoft 文档
+title: IDebugProgramPublisher2 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f927a3215a415745c2e9004573810101c229ab5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e085cc144c35c59a50ec7c46f8087ccbae46fcd7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119554"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283244"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此接口允许调试引擎 (DE) 或自定义端口供应商注册以进行调试的程序。  
@@ -31,25 +31,25 @@ ms.locfileid: "31119554"
 IDebugProgramPublisher2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>实施者注意事项  
- Visual Studio 实现此接口来注册才能使其可见的调试跨多个进程被调试的程序。  
+## <a name="notes-for-implementers"></a>实施者的说明  
+ Visual Studio 实现此接口以注册才能使其可见的调试跨多个进程正在调试的程序。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
- 调用 COM 的`CoCreateInstance`起作用`CLSID_ProgramPublisher`以获取此接口 （请参阅示例）。 DE 或自定义端口供应商可以使用此接口进行注册表示正在调试的程序的程序节点。  
+ 调用 COM 的`CoCreateInstance`函数和`CLSID_ProgramPublisher`若要获取此接口 （请参阅示例）。 DE 或自定义端口提供程序使用此接口注册程序节点表示正在调试的程序。  
   
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法  
  此接口实现以下方法：  
   
 |方法|描述|  
 |------------|-----------------|  
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|使程序节点可供 DEs 和会话调试管理器 (SDM)。|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程序节点，以便不再可用。|  
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|向 DEs 和 SDM 发出程序可用。|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|删除程序，以便不再可用。|  
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|设置一个标志，指示存在调试程序。|  
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|使程序节点 DEs 和会话调试管理器 (SDM)。|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|删除程序节点，以便不再可用。|  
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|使程序可供 DEs 和 SDM。|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|删除一个程序，以便不再可用。|  
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|设置一个标志，指示调试器存在。|  
   
 ## <a name="remarks"></a>备注  
- 此接口提供程序和程序节点 （即，""将其发布） 以供 DEs 和会话调试管理器 (SDM)。 若要访问已发布的程序和程序节点，使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)接口。 这是 Visual Studio 可以识别正在调试程序的唯一方法。  
+ 此接口提供程序和程序节点 （即，"发布"） 以供 DEs 和会话调试管理器 (SDM)。 若要访问发布的程序和程序节点，请使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)接口。 这是 Visual Studio 可以识别正在调试程序的唯一方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,7 +59,7 @@ IDebugProgramPublisher2 : IUnknown
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="example"></a>示例  
- 此示例演示如何实例化程序发布者和注册程序节点。 这从本教程中，获取[发布程序节点](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
+ 此示例演示如何实例化程序发行者和注册程序节点。 这会从本教程中，[发布程序节点](https://msdn.microsoft.com/library/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
   
 ```cpp  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -92,6 +92,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

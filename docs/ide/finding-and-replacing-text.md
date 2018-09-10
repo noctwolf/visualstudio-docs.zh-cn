@@ -1,6 +1,6 @@
 ---
-title: 查找和替换文本
-ms.date: 05/07/2018
+title: 查找和替换文本以及多个插入点选择
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -27,22 +27,22 @@ helpviewer_keywords:
 - find and replace
 - find text
 - replace text
-ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
+- multi-caret selection
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7051b90dde45965b76e8a9e08b33b5326ff2848c
-ms.sourcegitcommit: 56018fb1f52f17bf35ae2ce71c50c763486e6173
+ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106747"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42626850"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
-可以使用[查找和替换](#find-and-replace-control)或[在文件中查找/替换](#find-in-files-and-replace-in-files)，在 Visual Studio 编辑器中查找和替换文本。
+可以使用[查找和替换](#find-and-replace-control)或[在文件中查找/替换](#find-replace-in-files)，在 Visual Studio 编辑器中查找和替换文本。 在 Visual Studio 2017 版本 15.8 中的新增功能：现可通过[多个插入点选择](#multi-caret-selection)来查找并替换模式的某些实例。
 
 > [!TIP]
 > 如果要重命名代码符号（例如变量和方法），最好*[重构](../ide/reference/rename.md)* 它们，而不是使用查找和替换。 重构不仅智能而且知道应用范围，而查找和替换会盲目替换所有实例。
@@ -58,7 +58,7 @@ ms.locfileid: "33106747"
 
 “查找和替换”控件显示在代码编辑器窗口的右上角。 “查找和替换”控件会立即突出显示给定搜索字符串在当前文档中的每个匹配项。 通过在搜索控件上选择“查找下一个”按钮或“查找上一个”按钮，可以从一个匹配项导航到另一个匹配项。
 
-![“查找和替换”控件](media/find-and-replace-box.png)
+![在 Visual Studio 中查找和替换](media/find-and-replace-box.png)
 
 通过选择“查找”文本框旁边的按钮，可以访问替换选项。 若要一次替换一个，请选择“替换”文本框旁边的“替换下一个”按钮。 若要替换所有匹配项，请选择“全部替换”按钮。
 
@@ -74,7 +74,7 @@ ms.locfileid: "33106747"
 
 “在文件中查找/替换”与“查找和替换”控件类似，区别在于可以定义搜索范围。 不仅可以搜索当前在编辑器中打开的文件，还可以搜索所有打开的文档、整个解决方案、当前项目，及所选文件夹集。 还可以按文件扩展名搜索。 若要访问“在文件中查找/替换”对话框，请在“编辑”菜单上选择“查找和替换”，或按 Ctrl+Shift+F。
 
-![“在文件中查找”对话框](media/find-in-files-box.png)
+![在 Visual Studio 中的文件中查找](media/find-in-files-box.png)
 
 ### <a name="find-results"></a>查找结果
 
@@ -90,6 +90,41 @@ ms.locfileid: "33106747"
 ### <a name="create-custom-component-sets"></a>创建自定义组件集
 
 通过选择“查找范围”框旁边的“编辑自定义组件集”按钮，可以将组件集定义为搜索范围。 可以指定已安装的 .NET 或 COM 组件，以及包含在解决方案或任何程序集或类型库（.dll、.tlb、.olb、.exe 或 .ocx）中的 Visual Studio 项目。 若要搜索引用，请选择“查找引用”框。
+
+## <a name="multi-caret-selection"></a>多个插入点选择
+
+**Visual Studio 2017 版本 15.8 中的新增内容**
+
+使用“多个插入点选择”同时在两个或多个位置进行相同编辑。 例如，可同时插入相同的文本或修改多个位置的现有文本。
+
+在以下屏幕截图中，在三个位置选择了 `-0000`；如果用户按 Delete，则删除所有三个选项：
+
+![Visual Studio 中 XML 文件中的多个插入点选择](media/multi-caret-selection.png)
+
+要选择多个插入点，请像往常一样单击或进行第一个文本选择，然后在单击或选择其他位置的文本时按 Alt。 还可自动添加匹配的文本作为其他选择，或选择一个文本框以在每行上进行相同的编辑。
+
+> [!TIP]
+> 如果已选择 Alt 作为鼠标的修改键，请单击“工具” > “选项”中的“转到定义”，禁用多个插入点选择。
+
+### <a name="commands"></a>命令
+
+对多个插入点选择行为使用以下键和操作：
+
+|快捷键|操作|
+|-|-|
+|**Ctrl**+**Alt** + 单击|添加辅助插入点|
+|**Ctrl**+**Alt** + 双击|添加辅助字选择|
+|**Ctrl**+**Alt** + 单击 + 拖动|添加辅助选择|
+|**Shift**+**Alt**+**.**|添加下一个匹配文本作为选择|
+|**Ctrl**+**Shift**+**Alt**+**,**|添加所有匹配的文本作为选择|
+|**Shift**+**Alt**+**,**|删除上次选择的匹配项|
+|**Ctrl**+**Shift**+**Alt**+**.**|跳过下一个匹配的项|
+|**Alt** + 单击|添加框选择|
+|**Esc** 或单击|清除所有选择项|
+
+“编辑”菜单上的“多个插入点”下也提供了一些命令：
+
+![Visual Studio 中的“多个插入点”飞出式菜单](media/edit-menu-multiple-carets.png)
 
 ## <a name="see-also"></a>请参阅
 

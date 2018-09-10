@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.workload:
 - multiple
-ms.openlocfilehash: 3571ce02bdbe90b406175782ba1e147fdf8f663e
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c79682cf51a9b09ad6a772eade421d6b4f9e252f
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281415"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43138810"
 ---
 # <a name="visual-studio-enterprise-2017-component-directory"></a>Visual Studio Enterprise 2017 组件目录
 
@@ -49,7 +49,7 @@ ms.locfileid: "36281415"
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心编辑器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心编辑器 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual Studio 起始页 | 15.0.27128.1 | Optional
 
 ## <a name="azure-development"></a>Azure 开发
@@ -64,36 +64,37 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual 
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 必需
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Component.NetFX.Core.Runtime | .NET Core 运行时 | 15.0.26208.0 | 必需
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.7.27617.1 | 必需
-Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.0.26621.2 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 的 Azure 库 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 计算仿真程序 | 15.0.26621.2 | 必需
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.6.27413.0 | 必需
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 必需
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | 必需
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.7.27604.0 | 必需
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.7.27703.1 | 必需
+Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.8.27705.0 | 必需
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | 必需
@@ -103,14 +104,13 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必需
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Azure 开发必备组件 | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
 Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 和流分析工具 | 15.7.27604.0 | 建议
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | 建议
@@ -119,28 +119,34 @@ Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 �
 Microsoft.VisualStudio.Component.AspNet45 | 高级 ASP.NET 功能 | 15.7.27625.0 | 建议
 Microsoft.VisualStudio.Component.Azure.MobileAppsSdk | Azure 移动应用 SDK | 15.7.27625.0 | 建议
 Microsoft.VisualStudio.Component.Azure.ResourceManager.Tools | Azure 资源管理器核心工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric 工具 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Service Fabric 工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 云服务生成工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 建议
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.8.28010.0 | 建议
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Azure 云服务工具 | 15.0.26504.0 | 建议
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Azure 资源管理器工具 | 15.0.27005.2 | 建议
-Component.PowerShellTools.VS2017 | PowerShell 工具 | 3.0.552 | Optional
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目标包 | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 开发工具 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | Optional
 Microsoft.NetCore.1x.ComponentGroup.Web | .NET Core 1.0 - 1.1 Web 版开发工具 | 15.6.27406.0 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.8.27729.1 | Optional
+Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.Azure.Storage.AzCopy | Azure 存储 AzCopy | 15.0.26906.1 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.7.27604.0 | Optional
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Optional
 
 ## <a name="data-storage-and-processing"></a>数据存储和处理
 
@@ -153,12 +159,13 @@ Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 建议
-Component.Redgate.ReadyRoll | Redgate ReadyRoll Core | 1.14.17.5347 | 建议
-Component.Redgate.SQLPrompt.VsPackage | Redgate SQL Prompt Core | 8.2.5.2924 | 建议
-Component.Redgate.SQLSearch.VSExtension | Redgate SQL Search | 2.4.2.1439 | 建议
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 建议
+Component.Redgate.ReadyRoll | Redgate ReadyRoll Core | 1.17.18155.10346 | 建议
+Component.Redgate.SQLPrompt.VsPackage | Redgate SQL Prompt Core | 9.2.0.5601 | 建议
+Component.Redgate.SQLSearch.VSExtension | Redgate SQL Search | 3.1.7.2062 | 建议
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 建议
 Microsoft.Component.Azure.DataLake.Tools | Azure Data Lake 和流分析工具 | 15.7.27604.0 | 建议
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 建议
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 建议
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 建议
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 建议
@@ -167,27 +174,27 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | �
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | 建议
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 建议
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 建议
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.6.27406.0 | 建议
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.0.26621.2 | 建议
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 的 Azure 库 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 计算仿真程序 | 15.0.26621.2 | 建议
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.6.27413.0 | 建议
-Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 云服务生成工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.8.27924.0 | 建议
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 建议
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | 建议
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | 建议
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 建议
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 建议
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 建议
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 建议
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 建议
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | 建议
@@ -197,13 +204,12 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | 建议
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 建议
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 建议
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
-Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.7.27604.0 | Optional
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.8.27825.0 | Optional
 
 ## <a name="data-science-and-analytical-applications"></a>数据科学和分析应用程序
 
@@ -215,39 +221,39 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.7.2
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Component.Anaconda3.x64 | Anaconda3（64 位）(5.1.0) | 5.1.0 | 建议
+Component.Anaconda3.x64 | Anaconda3（64 位）(5.2.0) | 5.2.0 | 建议
 Microsoft.Component.CookiecutterTools | Cookiecutter 模板支持 | 15.0.26621.2 | 建议
 Microsoft.Component.PythonTools | Python 语言支持 | 15.0.26823.1 | 建议
 Microsoft.Component.PythonTools.Web | Python Web 支持 | 15.0.27005.2 | 建议
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 建议
-Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.7.27604.0 | 建议
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 建议
+Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.R.Open | Microsoft R 客户端 (3.3.2) | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.RHost | R 开发工具运行时支持 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 建议
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 建议
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.RTools | R 语言支持 | 15.0.26919.1 | 建议
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 建议
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 建议
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
-Component.Anaconda2.x64 | Anaconda2（64 位）(5.1.0) | 5.1.0 | Optional
-Component.Anaconda2.x86 | Anaconda2（32 位）(5.1.0) | 5.1.0 | Optional
-Component.Anaconda3.x86 | Anaconda3（32 位）(5.1.0) | 5.1.0 | Optional
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 建议
+Component.Anaconda2.x64 | Anaconda2（64 位）(5.2.0) | 5.2.0 | Optional
+Component.Anaconda2.x86 | Anaconda2（32 位）(5.2.0) | 5.2.0 | Optional
+Component.Anaconda3.x86 | Anaconda3（32 位）(5.2.0) | 5.2.0 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 本机开发工具 | 15.7.27617.1 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 本机开发工具 | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | 适用于 DirectX 的图形调试器和 GPU 探查器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | 图形工具 Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.140 | 适用于桌面的 VC++ 2015.3 v14.00 (v140) 工具集 | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 
 ## <a name="net-desktop-development"></a>.NET 桌面开发
@@ -260,16 +266,16 @@ Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 |
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET 桌面开发工具 | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 必需
@@ -282,51 +288,56 @@ Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.Debugger.JustInTime | 实时调试器 | 15.0.27005.2 | 建议
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 建议
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26720.2 | 建议
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | Optional
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | Optional
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目标包 | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 开发工具 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | Optional
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.7.27617.1 | Optional
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.8.27729.1 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | 代码图 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | Optional
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 实时依赖项验证 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | Optional
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | Optional
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.7.27604.0 | Optional
-Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.7.27604.0 | Optional
+Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.FSharp.Desktop | F# 桌面语言支持 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | DGML 编辑器 | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | Optional
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | Optional
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | Optional
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支持的数据源 | 15.0.26621.2 | Optional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | Optional
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.7.27604.0 | Optional
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | Optional
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | Optional
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | Optional
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构和分析工具 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | Optional
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | Optional
 
 ## <a name="game-development-with-unity"></a>使用 Unity 的游戏开发
 
@@ -340,12 +351,12 @@ Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开�
 --- | --- | --- | ---
 Microsoft.Net.Component.3.5.DeveloperTools | .NET Framework 3.5 开发工具 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.Unity | Visual Studio Tools for Unity | 15.7.27617.1 | 必需
-Component.UnityEngine.x64 | Unity 2017.2 64 位编辑器 | 15.6.27406.0 | 建议
+Component.UnityEngine.x64 | Unity 2018.1 64 位编辑器 | 15.8.27924.0 | 建议
 Component.UnityEngine.x86 | Unity 5.6 32 位编辑器 | 15.6.27406.0 | 建议
 
 ## <a name="linux-development-with-c"></a>使用 C++ 的 Linux 开发
@@ -361,11 +372,11 @@ Component.UnityEngine.x86 | Unity 5.6 32 位编辑器 | 15.6.27406.0 | 建议
 Component.MDD.Linux | 适用于 Linux 开发的 Visual C++ | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.6.27406.0 | 必需
-Component.Linux.CMake | 用于 CMake 和 Linux 的 Visual C++ 工具 | 15.7.27617.1 | 建议
+Component.Linux.CMake | 用于 CMake 和 Linux 的 Visual C++ 工具 | 15.8.27906.1 | 建议
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | 建议
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 建议
 Component.MDD.Linux.GCC.arm | 嵌入和 IoT 开发 | 15.6.27309.0 | Optional
 
 ## <a name="desktop-development-with-c"></a>使用 C++ 的桌面开发
@@ -389,20 +400,20 @@ Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.2620
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 Redistributable 更新 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Native | 适用于 C++ 的体系结构工具 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ 核心桌面功能 | 15.6.27406.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Visual C++ 核心桌面功能 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.Debugger.JustInTime | 实时调试器 | 15.0.27005.2 | 建议
 Microsoft.VisualStudio.Component.Graphics.Tools | 适用于 DirectX 的图形调试器和 GPU 探查器 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.Graphics.Win81 | 图形工具 Windows 8.1 SDK | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 建议
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.VC.ATL | 用于 x86 和 x64 的 Visual C++ ATL | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.VC.CMake.Project | 适用于 CMake 的 Visual C++ 工具 | 15.7.27617.1 | 建议
+Microsoft.VisualStudio.Component.VC.CMake.Project | 适用于 CMake 的 Visual C++ 工具 | 15.8.27906.1 | 建议
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | 建议
-Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Boost.Test 测试适配器 | 15.6.27309.0 | 建议
-Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Google Test 测试适配器 | 15.6.27309.0 | 建议
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | 建议
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
+Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Boost.Test 测试适配器 | 15.8.27906.1 | 建议
+Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Google Test 测试适配器 | 15.8.27906.1 | 建议
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 建议
 Component.Incredibuild | IncrediBuild - 生成加速 | 15.7.27617.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
@@ -422,9 +433,9 @@ Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C+
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.WinXP | 针对 C++ 的 Windows XP 支持 | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.WinXP | 针对 C++ 的 Windows XP 支持 | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 UCRT SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | 针对 C++ 的 Windows XP 支持 | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | 针对 C++ 的 Windows XP 支持 | 15.8.27705.0 | Optional
 
 ## <a name="game-development-with-c"></a>使用 C++ 的游戏开发
 
@@ -439,21 +450,21 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.WinXP | 针对 C++ 的 Windo
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 Redistributable 更新 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | 必需
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.Graphics.Tools | 适用于 DirectX 的图形调试器和 GPU 探查器 | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.Graphics.Win81 | 图形工具 Windows 8.1 SDK | 15.6.27406.0 | 建议
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | 建议
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | 建议
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 建议
 Component.Android.NDK.R12B | Android NDK (R12B) | 12.1.9 | Optional
-Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | Optional
+Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | Optional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.7 | Optional
 Component.Cocos | Cocos | 15.0.26906.1 | Optional
 Component.Incredibuild | IncrediBuild - 生成加速 | 15.7.27617.1 | Optional
 Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.2 | Optional
 Component.JavaJDK | Java SE 开发工具包 (8.0.1120.15) | 15.6.27406.0 | Optional
 Component.MDD.Android | C++ Android 开发工具 | 15.0.26606.0 | Optional
-Component.Unreal | Unreal 引擎安装程序 | 15.6.27406.0 | Optional
+Component.Unreal | Unreal 引擎安装程序 | 15.8.27729.1 | Optional
 Component.Unreal.Android | Visual Studio Android 支持 Unreal Engine | 15.0.27005.2 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.6.27406.0 | Optional
@@ -463,10 +474,11 @@ Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Op
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | Optional
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.0.26919.1 | Optional
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | Optional
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
@@ -474,10 +486,13 @@ Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C+
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 UCRT SDK | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="mobile-development-with-c"></a>使用 C++ 的移动开发
 
@@ -489,11 +504,11 @@ Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Win81 | Windows 8.1 SDK 和 
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Component.Android.SDK19.Private | Android SDK 安装（API 级别 19）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | 必需
-Component.Android.SDK21.Private | Android SDK 安装（API 级别 21）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | 必需
-Component.Android.SDK22.Private | Android SDK 安装（API 级别 22）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | 必需
-Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | 必需
-Component.Android.SDK25.Private | Android SDK 安装（API 级别 25）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | 必需
+Component.Android.SDK19.Private | Android SDK 安装（API 级别 19）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | 必需
+Component.Android.SDK21.Private | Android SDK 安装（API 级别 21）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | 必需
+Component.Android.SDK22.Private | Android SDK 安装（API 级别 22）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | 必需
+Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | 必需
+Component.Android.SDK25.Private | Android SDK 安装（API 级别 25）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | 必需
 Component.JavaJDK | Java SE 开发工具包 (8.0.1120.15) | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | 必需
 Component.Android.NDK.R15C | Android NDK (R15C) | 15.2 | 建议
@@ -521,30 +536,31 @@ Component.MDD.IOS | C++ iOS 开发工具 | 15.0.26621.2 | Optional
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.7.27617.1 | 必需
-Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 必需
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | 必需
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.7.27604.0 | 必需
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.7.27703.1 | 必需
+Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.8.27705.0 | 必需
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | 必需
@@ -554,27 +570,30 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.0.26621.2 | 建议
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 的 Azure 库 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 计算仿真程序 | 15.0.26621.2 | 建议
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.6.27413.0 | 建议
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 建议
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.8.28010.0 | 建议
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26720.2 | 建议
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | 建议
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 用于 Web 开发的云工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 用于 Web 开发的云工具 | 15.8.27729.1 | 建议
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | Optional
 Microsoft.NetCore.1x.ComponentGroup.Web | .NET Core 1.0 - 1.1 Web 版开发工具 | 15.6.27406.0 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.8.27729.1 | Optional
+Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 开发时 IIS 支持 | 15.7.27520.0 | Optional
 
 ## <a name="mobile-development-with-net"></a>使用 .NET 的移动开发
@@ -587,43 +606,43 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 开发时 IIS 支持 | 15
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Component.Xamarin | Xamarin | 15.7.27617.1 | 必需
+Component.Xamarin | Xamarin | 15.8.27906.1 | 必需
 Component.Xamarin.RemotedSimulator | Xamarin 远程模拟器 | 15.6.27323.2 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
 Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.7.27604.0 | 必需
-Microsoft.VisualStudio.Component.Merq | 常见 Xamarin 内部工具 | 15.0.26720.2 | 必需
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.Merq | 常见 Xamarin 内部工具 | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.Component.MonoDebugger | Mono 调试程序 | 15.0.26720.2 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET 模板化引擎 | 15.6.27323.2 | 必需
-Component.Android.SDK27 | Android SDK 安装程序（API 级别 27） | 15.7.27625.0 | 建议
-Component.Google.Android.Emulator.API27 | Google Android 仿真程序（API 级别 27） | 15.7.27625.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | ASP.NET 模板化引擎 | 15.8.27729.1 | 必需
+Component.Android.SDK27 | Android SDK 安装程序（API 级别 27） | 15.8.27906.1 | 建议
+Component.Google.Android.Emulator.API27 | Google Android 仿真程序（API 级别 27） | 15.8.27906.1 | 建议
 Component.HAXM | Intel 硬件加速执行管理器 (HAXM)（全局安装） | 15.6.27413.0 | 建议
 Component.JavaJDK | Java SE 开发工具包 (8.0.1120.15) | 15.6.27406.0 | 建议
-Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | 建议
 Component.Xamarin.Profiler | Xamarin Profiler | 15.0.27005.2 | 建议
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | Optional
+Component.Xamarin.Inspector | Xamarin Workbooks | 15.0.26606.0 | Optional
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | 代码图 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 实时依赖项验证 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | Optional
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | DGML 编辑器 | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.Graphics | 图像和 3D 模型编辑器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构和分析工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 适用于 Xamarin 的通用 Windows 平台工具 | 15.7.27617.1 | Optional
 
@@ -638,30 +657,31 @@ Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 适用于 Xamarin 的通用 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.7.27617.1 | 必需
-Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.NetCore.ComponentGroup.Web.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 必需
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | 必需
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.7.27604.0 | 必需
-Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.7.27703.1 | 必需
+Microsoft.VisualStudio.Component.FSharp | F# 语言支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.FSharp.WebTemplates | 针对 Web 项目的 F# 语言支持 | 15.8.27705.0 | 必需
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | 必需
@@ -671,48 +691,54 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 建议
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | 建议
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 开发工具 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | 建议
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.AspNet45 | 高级 ASP.NET 功能 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.0.26621.2 | 建议
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.8.27825.0 | 建议
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 的 Azure 库 | 15.0.26208.0 | 建议
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 计算仿真程序 | 15.0.26621.2 | 建议
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.6.27413.0 | 建议
-Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.7.27520.0 | 建议
-Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.7.27625.0 | 建议
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 建议
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.Debugger.Snapshot | 快照调试程序 | 15.8.28010.0 | 建议
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.LiveUnitTesting | Live Unit Testing | 15.0.26720.2 | 建议
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.7.27604.0 | 建议
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | 建议
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Microsoft Azure WebJobs 工具 | 15.7.27617.1 | 建议
-Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 用于 Web 开发的云工具 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | 用于 Web 开发的云工具 | 15.8.27729.1 | 建议
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目标包 | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 开发工具 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | Optional
 Microsoft.NetCore.1x.ComponentGroup.Web | .NET Core 1.0 - 1.1 Web 版开发工具 | 15.6.27406.0 | Optional
+Microsoft.NetCore.ComponentGroup.DevelopmentTools | .NET Core 2.0 开发工具 | 15.8.27729.1 | Optional
+Microsoft.NetCore.ComponentGroup.Web | .NET Core 2.0 开发工具 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | 代码图 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.DependencyValidation.Enterprise | 实时依赖项验证 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | DGML 编辑器 | 15.0.27005.2 | Optional
-Microsoft.VisualStudio.Component.TestTools.WebLoadTest | Web 性能和负载测试工具 | 15.7.27520.0 | Optional
+Microsoft.VisualStudio.Component.TestTools.WebLoadTest | Web 性能和负载测试工具 | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构和分析工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.IISDevelopment | 开发时 IIS 支持 | 15.7.27520.0 | Optional
 Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | Optional
@@ -721,27 +747,27 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.6.27406.0 | 
 
 **ID：** Microsoft.VisualStudio.Workload.Node
 
-**说明：** 使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。
+**说明：** 使用 Node.js（事件驱动的异步 JavaScript 运行时）生成可扩展的网络应用程序。 
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.Node.Build | Node.js 支持 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.Node.Tools | Node.js 支持 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.Node.Build | Node.js MSBuild 支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.Node.Tools | Node.js 开发支持 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.TestTools.Core | 测试工具核心功能 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | Optional
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | Optional
 
 ## <a name="officesharepoint-development"></a>Office/SharePoint 开发
 
@@ -754,30 +780,31 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | 必需
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 必需
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | 必需
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | 必需
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | .NET 桌面开发工具 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
-Microsoft.VisualStudio.Component.Sharepoint.Tools | Visual Studio 的 Office 开发工具 | 15.7.27625.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.Sharepoint.Tools | Visual Studio 的 Office 开发工具 | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | 必需
@@ -787,25 +814,28 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.SQL.SSDT | SQL Server Data Tools | 15.7.27625.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.7.27604.0 | 必需
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
+Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.TeamOffice | Visual Studio Tools for Office (VSTO) | 15.7.27625.0 | 建议
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
 Microsoft.Net.Component.4.6.2.SDK | .NET Framework 4.6.2 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.2.TargetingPack | .NET Framework 4.6.2 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.TargetingPack | .NET Framework 4.7.1 目标包 | 15.6.27406.0 | Optional
+Microsoft.Net.Component.4.7.2.SDK | .NET Framework 4.7.2 SDK | 15.8.27825.0 | Optional
+Microsoft.Net.Component.4.7.2.TargetingPack | .NET Framework 4.7.2 目标包 | 15.8.27825.0 | Optional
 Microsoft.Net.Component.4.7.SDK | .NET Framework 4.7 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.TargetingPack | .NET Framework 4.7 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.6.2.DeveloperTools | .NET Framework 4.6.2 开发工具 | 15.6.27406.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.1.DeveloperTools | .NET Framework 4.7.1 开发工具 | 15.6.27406.0 | Optional
+Microsoft.Net.ComponentGroup.4.7.2.DeveloperTools | .NET Framework 4.7.2 开发工具 | 15.8.27825.0 | Optional
 Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工具 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | Optional
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | Optional
 
 ## <a name="python-development"></a>Python 开发
 
@@ -818,62 +848,63 @@ Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.273
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Python 语言支持 | 15.0.26823.1 | 必需
-Component.CPython3.x64 | Python 3（64 位）(3.6.5) | 3.6.5 | 建议
+Component.CPython3.x64 | Python 3（64 位）(3.6.6) | 3.6.6 | 建议
 Microsoft.Component.CookiecutterTools | Cookiecutter 模板支持 | 15.0.26621.2 | 建议
 Microsoft.Component.PythonTools.Web | Python Web 支持 | 15.0.27005.2 | 建议
 Microsoft.VisualStudio.Component.Common.Azure.Tools | 连接和发布工具 | 1.10.50912.1 | 建议
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 建议
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 建议
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 建议
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 建议
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 建议
-Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 建议
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 建议
-Component.Anaconda2.x64 | Anaconda2（64 位）(5.1.0) | 5.1.0 | Optional
-Component.Anaconda2.x86 | Anaconda2（32 位）(5.1.0) | 5.1.0 | Optional
-Component.Anaconda3.x64 | Anaconda3（64 位）(5.1.0) | 5.1.0 | Optional
-Component.Anaconda3.x86 | Anaconda3（32 位）(5.1.0) | 5.1.0 | Optional
+Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 建议
+Component.Anaconda2.x64 | Anaconda2（64 位）(5.2.0) | 5.2.0 | Optional
+Component.Anaconda2.x86 | Anaconda2（32 位）(5.2.0) | 5.2.0 | Optional
+Component.Anaconda3.x64 | Anaconda3（64 位）(5.2.0) | 5.2.0 | Optional
+Component.Anaconda3.x86 | Anaconda3（32 位）(5.2.0) | 5.2.0 | Optional
 Component.CPython2.x64 | Python 2（64 位）(2.7.14) | 2.7.14 | Optional
 Component.CPython2.x86 | Python 2（32 位）(2.7.14) | 2.7.14 | Optional
-Component.CPython3.x86 | Python 3（32 位）(3.6.5) | 3.6.5 | Optional
+Component.CPython3.x86 | Python 3（32 位）(3.6.6) | 3.6.6 | Optional
 Component.Microsoft.VisualStudio.RazorExtension | Razor 语言服务 | 15.0.26720.2 | Optional
+Component.Microsoft.Web.LibraryManager | 库管理器 | 15.8.27705.0 | Optional
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | Optional
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | Optional
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | Optional
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
 Microsoft.Component.PythonTools.UWP | Python IoT 支持 | 15.0.26606.0 | Optional
 Microsoft.Component.VC.Runtime.UCRTSDK | Windows 通用 CRT SDK | 15.6.27309.0 | Optional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 本机开发工具 | 15.7.27617.1 | Optional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Python 本机开发工具 | 15.8.27729.1 | Optional
 Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | Optional
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | Optional
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.0.26621.2 | Optional
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | Optional
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 创作工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Azure.ClientLibs | .NET 的 Azure 库 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 计算仿真程序 | 15.0.26621.2 | Optional
-Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.6.27413.0 | Optional
-Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.7.27520.0 | Optional
+Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Azure 存储仿真程序 | 15.8.27924.0 | Optional
+Microsoft.VisualStudio.Component.Azure.Waverton | Azure 云服务核心工具 | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Azure 云服务生成工具 | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.ClassDesigner | 类设计器 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | 代码图 | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | Optional
-Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.7.27520.0 | Optional
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | Optional
+Microsoft.VisualStudio.Component.DockerTools | 容器开发工具 | 15.8.27906.1 | Optional
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | 容器开发工具 - 生成工具 | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.GraphDocument | DGML 编辑器 | 15.0.27005.2 | Optional
 Microsoft.VisualStudio.Component.Graphics | 图像和 3D 模型编辑器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Tools | 适用于 DirectX 的图形调试器和 GPU 探查器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Graphics.Win81 | 图形工具 Windows 8.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | Optional
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | Optional
-Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.6.27323.2 | Optional
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | Optional
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | Optional
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | Optional
+Microsoft.VisualStudio.Component.ManagedDesktop.Core | 托管桌面工作负载核心 | 15.8.27729.1 | Optional
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | Optional
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | Optional
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | Optional
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.SQL.ADAL | SQL ADAL 运行时 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CMDUtils | SQL Server 命令行实用工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.SQL.DataSources | SQL Server 支持的数据源 | 15.0.26621.2 | Optional
@@ -885,13 +916,13 @@ Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.2620
 Microsoft.VisualStudio.Component.VC.140 | 适用于桌面的 VC++ 2015.3 v14.00 (v140) 工具集 | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | C++ 分析工具 | 15.0.26823.1 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | Optional
-Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.7.27520.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.Web | ASP.NET 和 Web 开发工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK | Windows 通用 C 运行时 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.Component.Windows81SDK | Windows 8.1 SDK | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决条件 | 15.8.27825.0 | Optional
 
 ## <a name="universal-windows-platform-development"></a>通用 Windows 平台开发
 
@@ -904,32 +935,32 @@ Microsoft.VisualStudio.ComponentGroup.Web | ASP.NET 和 Web 开发工具先决�
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | 必需
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
-Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 必需
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.Graphics | 图像和 3D 模型编辑器 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
-Microsoft.VisualStudio.Component.UWP.Support | 通用 Windows 平台工具 | 15.7.27617.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
+Microsoft.VisualStudio.Component.UWP.Support | 通用 Windows 平台工具 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | 必需
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | 必需
 Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 适用于 Cordova 的通用 Windows 平台工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET 本机和 .NET 标准 | 15.7.27512.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET 本机和 .NET 标准 | 15.8.27906.1 | 必需
 Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | 适用于 Xamarin 的通用 Windows 平台工具 | 15.7.27617.1 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
 Microsoft.Component.VC.Runtime.OSSupport | 适用于 UWP 的 Visual C++ 运行时 | 15.6.27406.0 | Optional
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
@@ -942,16 +973,23 @@ Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿�
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 15.7.27617.1 | Optional
 Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.14393 | Windows 10 SDK (10.0.14393.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.15063.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.15063.0)：C++ | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop | 适用于桌面 C++ [x86 和 x64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C#、VB 和 JS | 15.6.27406.0 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.16299.UWP.Native | 适用于 UWP 的 Windows 10 SDK (10.0.16299.0)：C++ | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | USB 设备连接性 | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构和分析工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 通用 Windows 平台工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.15063 | Windows 10 SDK (10.0.15063.0) | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.16299.0) | 15.8.27825.0 | Optional
 
 ## <a name="visual-studio-extension-development"></a>Visual Studio 扩展开发
 
@@ -963,26 +1001,26 @@ Microsoft.VisualStudio.ComponentGroup.UWP.VC | C++ 通用 Windows 平台工具 |
 
 组件 ID | name | 版本 | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | 必需
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | 必需
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目标包 | 15.6.27406.0 | 必需
-Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.6.27309.0 | 必需
+Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
+Microsoft.VisualStudio.Component.NuGet | NuGet 程序包管理器 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.PortableLibrary | .NET 可移植库目标包 | 15.6.27309.0 | 必需
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.27205.0 | 必需
+Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
-Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.0.26919.1 | 必需
+Microsoft.VisualStudio.Component.VSSDK | Visual Studio SDK | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Visual Studio 扩展开发必备组件 | 15.7.27625.0 | 必需
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | 建议
-Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.6.27323.2 | 建议
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | 建议
+Microsoft.VisualStudio.Component.IntelliTrace.FrontEnd | IntelliTrace | 15.8.27729.1 | 建议
 Microsoft.VisualStudio.Component.TextTemplating | 文本模板转换 | 15.0.26208.0 | 建议
 Component.Dotfuscator | PreEmptive Protection - Dotfuscator | 15.0.26208.0 | Optional
-Microsoft.Component.CodeAnalysis.SDK | .NET 编译器平台 SDK | 15.0.27323.2 | Optional
+Microsoft.Component.CodeAnalysis.SDK | .NET 编译器平台 SDK | 15.0.27729.1 | Optional
 Microsoft.Component.VC.Runtime.OSSupport | 适用于 UWP 的 Visual C++ 运行时 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | Optional
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.Component.ClassDesigner | 类设计器 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeClone | 代码克隆 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.CodeMap | 代码图 | 15.0.26208.0 | Optional
@@ -994,7 +1032,7 @@ Microsoft.VisualStudio.Component.SQL.NCLI | SQL Server Native Client | 15.0.2620
 Microsoft.VisualStudio.Component.VC.ATL | 用于 x86 和 x64 的 Visual C++ ATL | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.VC.ATLMFC | 用于 x86 和 x64 的 Visual C++ MFC | 15.7.27625.0 | Optional
 Microsoft.VisualStudio.Component.VC.CoreIde | Visual Studio C++ 核心功能 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.7 v14.14 最新 v141 工具 | 15.7.27625.0 | Optional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.8 v14.15 最新 v141 工具 | 15.8.27825.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构和分析工具 | 15.0.26208.0 | Optional
 
 ## <a name="mobile-development-with-javascript"></a>使用 JavaScript 的移动开发
@@ -1010,26 +1048,26 @@ Microsoft.VisualStudio.ComponentGroup.ArchitectureTools.Managed | 体系结构�
 Component.CordovaToolset.6.3.1 | Cordova 6.3.1 工具集 | 15.7.27625.0 | 必需
 Component.WebSocket | WebSocket4Net | 15.0.26606.0 | 必需
 Microsoft.VisualStudio.Component.Cordova | 使用 JavaScript 核心功能的移动开发 | 15.0.26606.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.7.27520.0 | 必需
+Microsoft.VisualStudio.Component.JavaScript.Diagnostics | JavaScript 诊断 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.JavaScript.ProjectSystem | JavaScript ProjectSystem 和共享工具 | 15.0.26606.0 | 必需
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.7.27520.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.6.27406.0 | 必需
-Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27617.1 | 必需
-Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.0.27005.2 | 必需
-Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | JavaScript 和 TypeScript 语言支持 | 15.8.27924.0 | 必需
+Microsoft.VisualStudio.Component.TypeScript.2.3 | TypeScript 2.3 SDK | 15.8.27729.1 | 必需
+Microsoft.VisualStudio.Component.TypeScript.3.0 | TypeScript 3.0 SDK | 15.0.27924.0 | 必需
+Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | ASP.NET 和 Web 开发 | 15.8.27825.0 | 必需
+Component.Android.SDK23.Private | Android SDK 安装（API 级别 23）（用于 JavaScript/C++ 的移动开发的本地安装） | 15.8.27924.0 | Optional
 Component.Google.Android.Emulator.API23.Private | Google Android Emulator（API 级别 23）（本地安装） | 15.6.27413.0 | Optional
 Component.HAXM.Private | Intel 硬件加速执行管理器 (HAXM)（本地安装） | 15.6.27413.0 | Optional
 Component.JavaJDK | Java SE 开发工具包 (8.0.1120.15) | 15.6.27406.0 | Optional
-Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.7.27520.0 | Optional
+Microsoft.Component.ClickOnce | ClickOnce 发布 | 15.8.27825.0 | Optional
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | Optional
-Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.7.27617.1 | Optional
-Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.7.27512.0 | Optional
+Microsoft.VisualStudio.Component.AppInsights.Tools | 开发人员分析工具 | 15.8.27825.0 | Optional
+Microsoft.VisualStudio.Component.DiagnosticTools | .NET 分析工具 | 15.8.27729.1 | Optional
 Microsoft.VisualStudio.Component.Git | 用于 Windows 的 Git | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Graphics | 图像和 3D 模型编辑器 | 15.6.27406.0 | Optional
 Microsoft.VisualStudio.Component.Phone.Emulator.15254 | Windows 10 移动版仿真程序（秋季创意者更新） | 15.0.27406.0 | Optional
 Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 数据类型 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.VisualStudioData | 数据源和服务引用 | 15.6.27406.0 | Optional
-Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.7.27703.1 | Optional
+Microsoft.VisualStudio.Component.Windows10SDK.17134 | Windows 10 SDK (10.0.17134.0) | 15.8.27924.0 | Optional
 Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 适用于 Cordova 的通用 Windows 平台工具 | 15.7.27617.1 | Optional
 
 ## <a name="unaffiliated-components"></a>独立组件
@@ -1043,7 +1081,7 @@ Component.Android.NDK.R11C | Android NDK (R11C) | 11.3.13
 Component.Android.NDK.R11C_3264 | Android NDK (R11C)（32 位） | 11.3.15
 Component.Android.SDK23 | Android SDK 安装程序（API 级别 23）（全局安装） | 15.6.27413.0
 Component.Android.SDK25 | Android SDK 安装程序（API 级别 25） | 15.6.27413.0
-Component.GitHub.VisualStudio | 适用于 Visual Studio 的 GitHub 扩展 | 2.2.0.10
+Component.GitHub.VisualStudio | 适用于 Visual Studio 的 GitHub 扩展 | 2.5.2.2500
 Component.Google.Android.Emulator.API23.V2 | Google Android Emulator（API 级别 23）（全局安装） | 15.6.27413.0
 Component.Google.Android.Emulator.API25 | Google Android Emulator（API 级别 25） | 15.7.27604.0
 Microsoft.Component.Blend.SDK.WPF | 用于 .NET 的 Blend for Visual Studio SDK | 15.6.27406.0
@@ -1056,14 +1094,18 @@ Microsoft.VisualStudio.Component.Runtime.Node.x86.7.4.0 | 基于 Node.js v7.4.0 
 Microsoft.VisualStudio.Component.TestTools.CodedUITest | 编码的 UI 测试 | 15.0.26606.0
 Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft 测试管理器 | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.6.27406.0
+Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.8.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.8.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.2 | TypeScript 2.2 SDK | 15.8.27729.1
 Microsoft.VisualStudio.Component.TypeScript.2.5 | TypeScript 2.5 SDK | 15.6.27406.0
-Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27520.0
-Microsoft.VisualStudio.Component.TypeScript.2.7 | TypeScript 2.7 SDK | 15.0.27617.1
-Microsoft.VisualStudio.Component.UWP.VC.ARM64 | 适用于 ARM64 的 C++ 通用 Windows 平台工具 | 15.0.27617.1
+Microsoft.VisualStudio.Component.TypeScript.2.6 | TypeScript 2.6 SDK | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.7 | TypeScript 2.7 SDK | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.8 | TypeScript 2.8 SDK | 15.0.27729.1
+Microsoft.VisualStudio.Component.TypeScript.2.9 | TypeScript 2.9 SDK | 15.0.27924.0
+Microsoft.VisualStudio.Component.UWP.VC.ARM64 | 适用于 ARM64 的 C++ 通用 Windows 平台工具 | 15.0.27729.1
+Microsoft.VisualStudio.Component.VC.ATL.ARM | Visual C++ ATL for ARM | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | 带有 Spectre 缓解措施的 Visual C++ ATL for ARM | 15.7.27625.0
+Microsoft.VisualStudio.Component.VC.ATL.ARM64 | Visual C++ ATL for ARM64 | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.ARM64.Spectre | 带有 Spectre 缓解措施的 Visual C++ ATL for ARM64 | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATL.Spectre | 带有 Spectre 缓解措施的 Visual C++ ATL (x86/x64) | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.ATLMFC.Spectre | 带有 Spectre 缓解措施的 Visual C++ MFC for x86/x64 | 15.7.27625.0
@@ -1072,25 +1114,16 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM | Visual C++ MFC for ARM | 15.7.2762
 Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | 带有 Spectre 缓解措施的 Visual C++ MFC for ARM | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | Visual C++ MFC for ARM64 | 15.7.27625.0
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | 带有 Spectre 缓解措施的针对 ARM64 的 Visual C++ MFC 支持 | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.7 v14.14 库 (ARM) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.7 v14.14 库 (ARM64) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.7 v14.14 库 (x86 和 x64) | 15.7.27625.0
-Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC++ 2017 版本 15.4 v14.11 工具集 | 15.0.27406.0
-Microsoft.VisualStudio.Component.VC.Tools.14.12 | VC++ 2017 版本 15.5 v14.12 工具集 | 15.0.27406.0
-Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC++ 2017 版本 15.6 v14.13 工具集 | 15.0.27625.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.8 v14.15 库 (ARM) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.8 v14.15 库 (ARM64) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | 面向 Spectre 的 VC++ 2017 版本 15.8 v14.15 库 (x86 和 x64) | 15.8.27825.0
+Microsoft.VisualStudio.Component.VC.Tools.14.11 | VC++ 2017 版本 15.4 v14.11 工具集 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.12 | VC++ 2017 版本 15.5 v14.12 工具集 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.13 | VC++ 2017 版本 15.6 v14.13 工具集 | 15.0.27924.0
+Microsoft.VisualStudio.Component.VC.Tools.14.14 | VC++ 2017 版本 15.7 v14.14 工具集 | 15.0.27924.0
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | 用于 ARM64 的 Visual C++ 编译器和库 | 15.6.27309.0
-Microsoft.VisualStudio.Component.Windows10SDK.16299.Desktop.arm | 适用于桌面 C++ [ARM 和 ARM64] 的 Windows 10 SDK (10.0.16299.0) | 15.6.27406.0
 
-## <a name="get-support"></a>获取支持
-
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
-
-下面是另外几个支持选项：
-
-* 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
-* 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 

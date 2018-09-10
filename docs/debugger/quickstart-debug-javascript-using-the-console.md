@@ -1,5 +1,5 @@
 ---
-title: 使用控制台调试 JavaScript |Microsoft 文档
+title: 使用控制台调试 JavaScript |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -17,16 +17,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b21cd5a4c0e6852553c2ca601d22eb9f45bb48d7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478299"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280826"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用控制台调试 JavaScript
   
- 可以使用 JavaScript 控制台窗口与交互和调试使用 JavaScript 生成的 UWP 应用。 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用支持这些功能。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 可以使用 JavaScript 控制台窗口进行交互并调试 UWP 应用使用 JavaScript 构建的。 适用于 UWP 应用和创建使用 Visual Studio Tools for Apache Cordova 的应用支持这些功能。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  “JavaScript 控制台”窗口允许你执行以下操作：  
   
@@ -43,9 +43,9 @@ ms.locfileid: "31478299"
 -   执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
 > [!TIP]
->  如果 JavaScript 控制台窗口已关闭，选择**调试**> **Windows** > **JavaScript 控制台**以重新打开它。 该窗口仅在脚本调试会话期间出现。  
+>  如果 JavaScript 控制台窗口已关闭，请选择**调试**> **Windows** > **JavaScript 控制台**以重新打开它。 该窗口仅在脚本调试会话期间出现。  
   
- 使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)和[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
+ 使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
 ##  <a name="InteractiveConsole"></a> 使用“JavaScript 控制台”窗口进行调试  
  以下步骤会创建一个 `FlipView` 应用并演示如何以交互方式调试 JavaScript 编码错误。  
@@ -57,11 +57,11 @@ ms.locfileid: "31478299"
   
 1.  通过选择 **“文件”** > **“新建项目”**。  
   
-2.  选择**JavaScript** > **Windows 通用**，然后选择**WinJS 应用**。  
+2.  选择**JavaScript** > **Windows Universal**，然后选择**WinJS 应用**。  
   
 3.  为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
   
-4.  在 index.html 的 BODY 元素，将现有 HTML 代码替换此代码：  
+4.  在正文元素的 index.html 中，将现有的 HTML 代码替换此代码：  
   
     ```html  
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -137,7 +137,7 @@ ms.locfileid: "31478299"
     })();  
     ```  
   
-7.  如果尚未选择调试目标，选择**本地计算机**下拉列表中下一步**设备**按钮上**调试**工具栏：  
+7.  如果尚未选择调试目标，选择**本地计算机**下拉列表中下一步**设备**按钮**调试**工具栏：  
   
      ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
@@ -145,7 +145,7 @@ ms.locfileid: "31478299"
   
      应用会运行，但缺少图像。 JavaScript 控制台窗口中的 APPHOST 错误指示缺少图像。  
   
-9. 与`FlipView`运行，应用程序类型`Data.items`在控制台窗口输入提示符 (旁边">>"符号)，然后按 enter 键。  
+9. 与`FlipView`应用程序运行，类型`Data.items`在控制台窗口输入提示符 (下一步">>"符号)，按 Enter。  
   
      `items` 对象的可视化工具会出现在控制台窗口中。 这指示 `items` 对象进行了实例化，并且在当前脚本上下文中可用。 在控制台窗口中，可以在对象的各个节点中单击以查看属性值（或使用箭头键）。 如果向下单击到 `items._data` 对象（如图所示），则会发现其图像源引用不正确（与预期一样）。 该对象中存在的仍是默认图像 (logo.png)，并且有缺少的图像与预期的图像交织在一起。  
   
@@ -181,11 +181,11 @@ ms.locfileid: "31478299"
   
 13. 选择绿色箭头符号以运行脚本。  
   
-14. 按 Ctrl + Alt + M 以将控制台输入提示切换为单行模式，然后选择**清除输入**（红色"X"） 以从输入提示符中删除代码。  
+14. 按 Ctrl + Alt + M 以将控制台输入提示切换到单行模式，然后选择**清除输入**（红色"X"） 以从输入提示符中删除代码。  
   
 15. 在提示符下，键入 `Data.items.length = 3` ，并按 Enter。 这会从数据中移除额外的元素。  
   
-16. 再次，检查应用程序，你将看到，正确的图像位于正确`FlipView`页。  
+16. 同样，查看应用程序，您将看到正确的图像位于上正确`FlipView`页。  
   
 17. 在 DOM 资源管理器中，可以查看更新后的 DIV 元素，并且可以导航到子树中以查找预期的 IMG 元素。  
   
@@ -202,7 +202,7 @@ ms.locfileid: "31478299"
   
 1.  在之前创建的 `FlipView` 应用的 default.html 文件中，打开 `updateImages()` 函数的快捷菜单，然后选择 **“断点”** > **“插入断点”**。  
   
-2.  选择**本地计算机**列表下拉列表中**启动调试**按钮上**调试**工具栏。  
+2.  选择**本地计算机**下拉列表中下一步**开始调试**按钮**调试**工具栏。  
   
 3.  选择 **“仿真程序 8.1 WVGA 4 英寸 512MB”** > **“本地计算机”**，或按 F5。  
   
@@ -218,7 +218,7 @@ ms.locfileid: "31478299"
   
      下图显示了此时的控件台窗口。  
   
-     ![JavaScript 控制台窗口中显示可视化工具](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
+     ![JavaScript 控制台窗口，其中显示可视化工具](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")  
   
 6.  将下面这行函数从输出窗口复制到输入提示符下，并将索引值更改为 3：  
   
@@ -239,7 +239,7 @@ ms.locfileid: "31478299"
   
  单行模式提供输入历史记录。 可以使用向上键和向下键在输入历史记录中进行导航。 运行脚本时，单行模式会清除输入提示。 若要在单行模式下运行脚本，请按 Enter。  
   
- 运行脚本时，多行模式不清除输入提示。 当你从多行模式切换到单行模式时，你可以通过按来清除输入的行**清除输入**（红色"X"）。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。  
+ 运行脚本时，多行模式不清除输入提示。 当从多行模式切换到单行模式时，您可以通过按来清除输入的行**清除输入**（红色"X"）。 若要在多行模式下运行脚本，请按 Ctrl+Enter 或选择窗口右下角的箭头符号。  
   
 ##  <a name="Switching"></a> 切换脚本执行上下文  
  JavaScript 控制台窗口允许一次与单个执行上下文（表示 Web 平台主机 (WWAHost.exe) 的单个实例）进行交互。 在某些情况下，应用可能会启动主机的另一个实例，例如在使用 `iframe`、共享协定、Web 辅助进程或 `WebView` 控件时。 如果主机的另一个实例正在运行，则可以通过在 **“目标”** 列表中选择执行上下文，在运行应用时选择不同的执行上下文。  
@@ -258,4 +258,4 @@ ms.locfileid: "31478299"
  [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
- [产品支持和辅助功能](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [产品支持和辅助功能](https://visualstudio.microsoft.com/vs/support/)

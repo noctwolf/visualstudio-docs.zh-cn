@@ -1,5 +1,5 @@
 ---
-title: 如何： 调整 NamedRange 控件的大小 |Microsoft 文档
+title: 如何： 调整 NamedRange 控件的大小
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,13 +17,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6d475f9140607ba0ae7415a60a9589aef11a44a1
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d785aba9d08f71aa8530bc2edd015f497caafef
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670301"
 ---
-# <a name="how-to-resize-namedrange-controls"></a>如何：调整 NamedRange 控件的大小
+# <a name="how-to-resize-namedrange-controls"></a>如何： 调整 NamedRange 控件的大小
   将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 Microsoft Office Excel 文档时，可以设置该控件的大小；但是，你可能需要在以后调整其大小。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
@@ -34,14 +35,14 @@ ms.lasthandoff: 04/16/2018
   
 -   [在设计时调整 NamedRange 控件的大小](#designtime)  
   
--   [在运行时，在文档级项目中调整 NamedRange 控件的大小](#runtimedoclevel)  
+-   [调整 NamedRange 控件在运行时在文档级项目中的大小](#runtimedoclevel)  
   
--   [在运行时，在 VSTO 外接程序项目中调整 NamedRange 控件的大小](#runtimeaddin)  
+-   [调整 NamedRange 控件在运行时在 VSTO 外接程序项目中的大小](#runtimeaddin)  
   
-##  <a name="designtime"></a> Resizing NamedRange Controls at Design Time  
+##  <a name="designtime"></a> 在设计时调整 NamedRange 控件的大小  
  可以通过在“定义名称”  对话框中重新定义其大小来调整命名范围的大小。  
   
-#### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>使用“定义名称”对话框来调整命名范围的大小  
+### <a name="to-resize-a-named-range-by-using-the-define-name-dialog-box"></a>使用“定义名称”对话框来调整命名范围的大小  
   
 1.  右击 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。  
   
@@ -57,13 +58,13 @@ ms.lasthandoff: 04/16/2018
   
 6.  单击 **“确定”**。  
   
-##  <a name="runtimedoclevel"></a> Resizing NamedRange Controls at Run Time in a Document-Level Project  
+##  <a name="runtimedoclevel"></a> 调整 NamedRange 控件在运行时在文档级项目中的大小  
  可以通过编程的方式，使用 <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 属性调整命名范围的大小。  
   
 > [!NOTE]  
 >  在“属性”  窗口中， <xref:Microsoft.Office.Tools.Excel.NamedRange.RefersTo%2A> 属性标记为“只读”。  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>以编程方式调整命名范围大小  
+### <a name="to-resize-a-named-range-programmatically"></a>以编程方式调整命名范围大小  
   
 1.  在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的单元格 **A1** 中创建一个 `Sheet1`控件。  
   
@@ -75,10 +76,10 @@ ms.lasthandoff: 04/16/2018
      [!code-csharp[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreHostControlsExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#5)]  
   
-##  <a name="runtimeaddin"></a> Resizing NamedRange Controls at Run Time in an VSTO Add-in project  
- 你可以在运行时在任何打开的工作表中调整 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件的大小。 有关如何使用 VSTO 外接程序向工作表添加 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件的详细信息，请参阅 [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
+##  <a name="runtimeaddin"></a> 调整 NamedRange 控件在运行时在 VSTO 外接程序项目中的大小  
+ 可以调整大小<xref:Microsoft.Office.Tools.Excel.NamedRange>在运行时任何打开的工作表上的控件。 有关如何添加详细信息<xref:Microsoft.Office.Tools.Excel.NamedRange>VSTO 外接程序中使用控制到工作表，请参阅[如何： 添加 NamedRange 控件添加到工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)。  
   
-#### <a name="to-resize-a-named-range-programmatically"></a>以编程方式调整命名范围大小  
+### <a name="to-resize-a-named-range-programmatically"></a>以编程方式调整命名范围大小  
   
 1.  在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的单元格 **A1** 中创建一个 `Sheet1`控件。  
   
@@ -91,14 +92,14 @@ ms.lasthandoff: 04/16/2018
      [!code-vb[Trin_Excel_Dynamic_Controls#11](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#11)]  
   
 ## <a name="see-also"></a>请参阅  
- [在运行时扩展 Word 文档和 Excel 工作簿在 VSTO 外接程序](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [扩展 Word 文档和 Excel 工作簿在 VSTO 外接在运行时](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
  [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
- [宿主项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)   
- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
+ [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)   
+ [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
  [如何： 调整书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)   
- [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)  
+ [如何： 调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)  
   
   

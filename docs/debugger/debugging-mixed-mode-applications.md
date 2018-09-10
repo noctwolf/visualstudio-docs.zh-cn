@@ -1,5 +1,5 @@
 ---
-title: 调试混合模式应用程序 |Microsoft 文档
+title: 调试混合模式应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0564a1e4a03d0b2d72298f0467e6cd1a91cdab9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480314"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283303"
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
 混合模式应用程序是任何组合了本机代码 (C++) 与托管代码（在公共语言运行时上运行的 Visual Basic、Visual C# 或 C++）的应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试混合模式应用程序基本上是透明的；它与调试单模式应用程序没有太大区别。 但有几个特殊的注意事项。  
@@ -38,10 +38,10 @@ ms.locfileid: "31480314"
 若要启用 c + + 编辑并继续，请参阅[如何启用和禁用编辑并继续](../debugger/how-to-enable-and-disable-edit-and-continue.md)。
 
 > [!NOTE]
-> 若要使用 Visual Studio 2013 中的 C++“编辑并继续”功能，你必须还原为旧调试引擎。 请参阅[切换到 Visual Studio 2013 中托管兼容模式](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013.aspx)Microsoft 应用程序生命周期管理博客上。  
+> 若要使用 Visual Studio 2013 中的 C++“编辑并继续”功能，你必须还原为旧调试引擎。 请参阅[切换到 Visual Studio 2013 中托管兼容模式](https://blogs.msdn.microsoft.com/devops/2013/10/16/switching-to-managed-compatibility-mode-in-visual-studio-2013/)Microsoft 应用程序生命周期管理博客上。  
   
 ## <a name="property-evaluation-in-mixed-mode-applications"></a>混合模式应用程序中的属性求值  
- 在混合模式应用程序中，调试器执行的属性求值是一个资源消耗很大的操作。 因此，调试操作（如单步执行）可能会很慢。 有关详细信息，请参阅[单步执行](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。 如果混合模式调试的性能很低，你可能希望在调试器窗口中关闭属性求值。  
+ 在混合模式应用程序中，调试器执行的属性求值是一个资源消耗很大的操作。 因此，调试操作（如单步执行）可能会很慢。 有关详细信息，请参阅[单步执行](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))。 如果混合模式调试的性能很低，你可能希望在调试器窗口中关闭属性求值。  
   
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
@@ -50,7 +50,7 @@ ms.locfileid: "31480314"
   
 1.  在 **“工具”** 菜单上，选择 **“选项”**。  
   
-2.  在**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
+2.  在中**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
   
 3.  清除**启用属性求值和其他隐式函数调用**复选框。  
   

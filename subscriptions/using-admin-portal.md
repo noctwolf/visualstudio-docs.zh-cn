@@ -9,12 +9,12 @@ description: 了解如何使用管理员门户管理组织的 Visual Studio 订�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 956670d624a5c36547a23a06773e7ee254acd7f4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 63f3cbc3b4eb108a17c85eaa46992989a6dac742
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380813"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289524"
 ---
 #  <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>使用 Visual Studio 订阅管理员门户
 
@@ -68,9 +68,11 @@ ms.locfileid: "39380813"
 - 用于通信而不是登录的其他电子邮件地址的可选字段。 
 
 在本页左侧，可以看到有关已购买、已分配以及针对每个协议在组织中仍然可用的订阅许可证数量的更多信息。
-    ![Visual Studio 订阅管理员门户订阅者页](_img/using-admin-portal/subscribers-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 订阅管理员门户订阅者页](_img/using-admin-portal/subscribers-page.png)
 
 ### <a name="understanding-the-details-page"></a>了解“详细信息”页
 有关正在查看的协议的更多信息，请选择“详细信息”选项卡。该选项卡显示协议状态、购买帐户、组织详细信息、主要联系人 (VLSC)、超级管理员（如果可用）和其他相关信息。
-    ![Visual Studio 订阅管理门户的“详细信息”页](_img/using-admin-portal/details-page.png)
+> [!div class="mx-imgBorder"]
+> ![Visual Studio 订阅管理门户的“详细信息”页](_img/using-admin-portal/details-page.png)
 

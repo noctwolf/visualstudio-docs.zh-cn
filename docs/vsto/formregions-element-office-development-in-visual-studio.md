@@ -17,14 +17,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36741e5e3bcd39dbb6e4ea0746e1877acc581e70
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: b978ef47db6b8803b7730aef14173c3eb19b16e8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670324"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions&gt;元素 （Visual Studio 中的 Office 开发）
-  `formRegions` 命名空间的 `vstov4` 元素包含与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
+  `formRegions`元素的`vstov4`命名空间包含与 VSTO 外接程序相关联的 Microsoft Office Outlook 窗体区域。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,7 +46,7 @@ ms.lasthandoff: 05/22/2018
  `formRegions` 元素具有以下元素。  
   
 ### <a name="formregion"></a>formRegion  
- 为包含窗体区域的 Outlook VSTO 外接程序所需。 `formRegion`中定义了元素[ &#60;formRegion&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)。  
+ 为包含窗体区域的 Outlook VSTO 外接程序所需。 `formRegion`中定义元素[ &#60;formRegion&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)。  
   
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/22/2018
   
 ## <a name="see-also"></a>请参阅  
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
- [部署 Office 解决方案的清单](../vsto/deployment-manifests-for-office-solutions.md)   
+ [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   
   

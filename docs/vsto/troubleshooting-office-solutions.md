@@ -17,31 +17,31 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1f3fa22f6f6c0b6bb980be28faa46912bacbe341
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9c2997e199699bbae30e5ea02c9be400eb8250fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693180"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670299"
 ---
 # <a name="troubleshoot-office-solutions"></a>对 Office 解决方案进行故障排除
   本部分包含用于解决常见问题的提示，你在通过使用 Visual Studio 中的 Office 开发工具创建解决方案时可能会遇到这些问题。  
   
 ## <a name="in-this-section"></a>本节内容  
- [解决 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)  
+ [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)  
  描述你在 Visual Studio 中设计、运行和测试 Office 解决方案时可能会产生的常见问题。  
   
  [如何： 重新启用 VSTO 外接程序中已禁用](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)  
- 描述如何重新启用已被硬禁用或软禁用的 VSTO 外接程序。  
+ 介绍如何重新启用 VSTO 外接程序中已硬或软禁用的。  
   
- [在 Office 解决方案中的错误的附加支持](../vsto/additional-support-for-errors-in-office-solutions.md)  
+ [Office 解决方案错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)  
  描述用于排除 Office 解决方案中的错误和警告的其他资源。  
   
 ## <a name="related-sections"></a>相关章节  
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)  
  描述在保护 Office 解决方案时可能遇到的常见问题。  
   
- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)  
+ [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)  
  描述在部署 Office 解决方案时可能遇到的常见问题。  
   
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)  

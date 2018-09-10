@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e13d4c1dbda200c2e2660e4b3b44e62ed99496
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 133f15f6c160e9ec48b1db4ab8713023e492cbae
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33998182"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42901293"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
@@ -59,11 +59,14 @@ ms.locfileid: "33998182"
 
 ## <a name="add-a-class-diagram-based-on-existing-types"></a>基于现有类型添加类图
 
-在“解决方案资源管理器”中，打开类文件上下文菜单，然后选择“查看类图”。
+在“解决方案资源管理器”中，打开类文件上下文菜单（右键单击），然后选择“查看类图”。
 
 或
 
 在“类视图”中，打开命名空间或类型上下文菜单，然后选择“查看类图”。
+
+> [!TIP]
+> 如果类视图尚未打开，则从“视图”菜单打开类视图。
 
 ## <a name="to-display-the-contents-of-a-complete-project-in-a-class-diagram"></a>在类图中显示完整项目的内容
 

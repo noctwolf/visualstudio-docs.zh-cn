@@ -14,23 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36945273c58211865eccf464d810fb276598b665
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 8a1419a473bc0edc9fbc68ab978feb776ed63636
+ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447986"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42627136"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
 
 可以设置和清除“自动换行”选项。 如果设置了此选项，较长行中超出代码编辑器窗口当前宽度的部分将在下一行显示。 如果清除了此选项，例如，为方便使用行号，则可以向右滚动查看较长行的末尾。
 
-> [!NOTE]
-> 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
-## <a name="procedure"></a>过程
-
-### <a name="to-set-word-wrap-preferences"></a>设置换行首选项
+## <a name="to-set-word-wrap-preferences"></a>设置换行首选项
 
 1.  在“工具”菜单上选择“选项”。
 
@@ -47,7 +42,15 @@ ms.locfileid: "34447986"
 4.  如果希望在较长行换行到下一行的位置处显示回车箭头指示符，请选择“显示可视的自动换行标志符号”选项。 如果不希望显示这些指示箭头，则清除此复选框。
 
     > [!NOTE]
-    >  这些提醒箭头不会添加到代码中：它们仅用于显示。
+    > 这些提醒箭头不会添加到代码中，它们仅用于显示。
+
+## <a name="known-issues"></a>已知问题
+
+如果熟悉 Notepad++、Sublime Text 或 Visual Studio Code 中的自动换行功能，请注意 Visual Studio 的行为在以下方面与其他编辑器的行为不同：
+
+* [三次单击不会选择整行](https://developercommunity.visualstudio.com/content/problem/268989/triple-click-doesnt-select-whole-line-when-word-wr.html)
+* [剪切命令不会删除整行](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
+* [按两次 End 键不会将光标移动到行尾](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
 ## <a name="see-also"></a>请参阅
 

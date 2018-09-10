@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91935bc819987823f5a2f3ad0781e975c72f7e0d
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 10a5883e655fc5ee8a37bbe61f531b6b266ebb55
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077927"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281881"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的先决条件
 ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**x86**对于 32 位平台， **x64**的计算机支持 AMD64 和 EM64T 指令集，并**Itanium**为 64 位 Itanium 处理器。  
@@ -46,4 +46,4 @@ ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台是**
 ## <a name="see-also"></a>请参阅  
  [部署应用程序、 服务和组件](../deployment/deploying-applications-services-and-components.md)   
  [如何： 与 ClickOnce 应用程序安装的必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+ [64 位应用程序](/dotnet/framework/64-bit-apps)

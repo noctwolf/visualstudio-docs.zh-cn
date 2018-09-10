@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fee2a4480f3fe8e5439decfd4852a020a734ff
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 2343218da765ad8bb9a10d585001c5f3321a0137
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232252"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42902394"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第 1 部分
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和其他资产的容器。 项目显示为解决方案中的子级**解决方案资源管理器**。 项目可组织、 生成、 调试和部署的源代码和创建对 Web 服务、 数据库和其他资源的引用。  
@@ -61,7 +61,7 @@ ms.locfileid: "39232252"
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
- 您还必须下载的源代码[项目的托管包框架](http://mpfproj12.codeplex.com/)。 将文件提取到要创建的解决方案可以访问的位置。  
+ 您还必须下载的源代码[项目的托管包框架](https://github.com/tunnelvisionlabs/MPFProj10)。 将文件提取到要创建的解决方案可以访问的位置。  
   
 ## <a name="create-a-basic-project-type"></a>创建基本项目类型  
  创建一个名为 C# VSIX 项目**SimpleProject**。 (**文件** > **新** > **项目**，然后**Visual C#**  >  **可扩展性** > **VSIX 项目**)。 Visual Studio 包项目项模板添加 (上**解决方案资源管理器**，右键单击项目节点并选择**添加** > **新项**，然后转到**扩展性** > **Visual Studio 包**)。 将文件命名*SimpleProjectPackage*。  

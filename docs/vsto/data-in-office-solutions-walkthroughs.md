@@ -16,11 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a8c63a98d47a3846ea6482624aa71cd0a7378f1a
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 35dbc38bf4e0873e9f3fb0fc1bf5c0525e56a61e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670600"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 解决方案演练中的数据
   下列演练演示了如何将文档级自定义项和 VSTO 外接程序中的数据用于 Microsoft Office Word 和 Microsoft Office Excel。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 05/17/2018
  演示如何将 SQL Server 数据库中的表绑定到 Excel 文档级自定义项中的 <xref:Microsoft.Office.Tools.Excel.ListObject> 。  
   
  [演练： VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)  
- 演示如何将 SQL Server 数据库中的单个数据字段绑定到 Word VSTO 外接程序中的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。  
+ 演示如何将绑定到 SQL Server 数据库中的单个数据字段<xref:Microsoft.Office.Tools.Word.RichTextContentControl>VSTO 外接程序中的单词。  
   
  [演练： VSTO 外接程序项目中的复杂数据绑定](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
  演示如何将 SQL Server 数据库中的表绑定到 Excel VSTO 外接程序中的 <xref:Microsoft.Office.Tools.Excel.ListObject> 。  
@@ -47,17 +48,17 @@ ms.lasthandoff: 05/17/2018
  [演练： 将内容控件绑定到自定义 XML 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)  
  演示如何将 Word 文档中的内容控件绑定到文档中存储的 XML 数据。  
   
-## <a name="cache-data-in-document-level-solutions"></a>在文档级解决方案中缓存数据  
+## <a name="cache-data-in-document-level-solutions"></a>文档级解决方案中的缓存数据  
  [演练： 创建使用缓存的数据集的主从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)  
  演示如何在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。  
   
- [演练： 将数据插入到一台服务器上的工作簿](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
+ [演练： 将数据插入到的服务器上的工作簿](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)  
  演示如何将数据插入 Microsoft Office Excel 工作簿中缓存的数据集而不启动 Excel。  
   
  [演练： 从一台服务器上的工作簿中检索缓存的数据](../vsto/walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md)  
  演示如何从 Microsoft Office Excel 工作簿中缓存的数据集检索数据而不启动 Excel。  
   
- [演练： 更改服务器上的工作簿中缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
+ [演练： 更改服务器上的工作簿中的缓存的数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)  
  演示如何修改 Microsoft Office Excel 工作簿中缓存的数据集而不启动 Excel。  
   
 ## <a name="see-also"></a>请参阅  
@@ -66,7 +67,7 @@ ms.lasthandoff: 05/17/2018
  [Office UI 自定义演练](../vsto/office-ui-customization-walkthroughs.md)   
  [安全和部署演练](../vsto/security-and-deployment-walkthroughs.md)   
  [Office 开发示例](../vsto/office-development-samples.md)   
- [要开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
+ [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)  
   

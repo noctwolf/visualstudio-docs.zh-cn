@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c7368369b0c15f7ae159896f30ee59066a18728
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: cce175f487d24e528d7527c424a1f76fa2a82824
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078636"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280670"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何： 对应用程序和部署清单重新签名
 对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，必须重新签名的应用程序和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
@@ -33,7 +33,7 @@ ms.locfileid: "39078636"
  你的客户想要为应用程序签名和部署清单具有自己的证书时可能会重新对清单签名的另一种情况。  
   
 ## <a name="re-sign-the-application-and-deployment-manifests"></a>应用程序和部署清单重新签名  
- 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)。 有关详细信息，请参阅[如何： 更改部署属性](http://msdn.microsoft.com/en-us/66052a3a-8127-4964-8147-2477ef5d1472)。  
+ 此过程假定您已对你的应用程序清单文件中做出了更改 (*.manifest*)。 有关详细信息，请参阅[如何： 更改部署属性](https://msdn.microsoft.com/library/66052a3a-8127-4964-8147-2477ef5d1472)。  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>使用 Mage.exe 重新签名的应用程序和部署清单  
   

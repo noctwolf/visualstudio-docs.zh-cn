@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案中的可选参数 |Microsoft 文档
+title: Office 解决方案中的可选参数
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -21,22 +21,22 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b03f6112ebf44a89da3b4d5cbf6f7ff23f54b9c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a086fc37be7d9cd8ba4d4f51c1012b6ad0ba7046
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571975"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670281"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
-  Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，不能省略可选**ref**参数`ThisDocument`在文档级 Word 项目中的类。  
+  Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，也可以省略 Visual C# 项目中的可选参数。 但是，您不能省略可选**ref**的参数`ThisDocument`在文档级 Word 项目中的类。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- 有关使用 Visual C# 和 Visual Basic 项目中的可选参数的详细信息，请参阅[命名实参和可选实参&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)和[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)。  
+ 有关使用 Visual C# 和 Visual Basic 项目中的可选参数的详细信息，请参阅[命名参数和可选参数&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)并[&#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)。  
   
 > [!NOTE]  
->  在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual C# 项目的 Visual Studio 中的 Office 仍包含`missing`变量，但你通常不需要开发中的 Office 解决方案时使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，除非调用具有可选的方法**ref**中的参数`ThisDocument`Word 的文档级项目中的类。  
+>  在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual C# 项目在 Visual Studio 中的 office 仍然包含`missing`变量，但你通常不需要开发中的 Office 解决方案时使用它[!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]，当您调用具有可选的方法除外**ref**中的参数`ThisDocument`Word 的文档级项目中的类。  
   
 ## <a name="example-in-excel"></a>Excel 中的示例  
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法具有多个可选参数。 可以为某些参数指定值，并接受其他参数的默认值，如下面的代码示例所示。 此示例需要一个具有名为 `Sheet1` 的工作表类的文档级项目。  
@@ -50,26 +50,26 @@ ms.locfileid: "34571975"
  [!code-vb[Trin_VstrefGeneralWord#1](../vsto/codesnippet/VisualBasic/worddocument1/ThisDocument.vb#1)]
  [!code-csharp[Trin_VstrefGeneralWord#1](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#1)]  
   
-## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word 中 Visual C# 文档级项目中使用 ThisDocument 类中使用方法的可选的参数  
- Word 对象模型包含许多具有可选方法**ref**接受的参数<xref:System.Object>值。 但是，不能省略可选**ref**的生成的方法的参数`ThisDocument`Word 的 Visual C# 文档级项目中的类。 Visual C# 允许你忽略可选**ref**接口，方法参数而不是类。 例如，下面的代码示例无法进行编译，因为不能省略可选**ref**参数<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>方法`ThisDocument`类。  
+## <a name="use-optional-parameters-of-methods-in-the-thisdocument-class-in-visual-c-document-level-projects-for-word"></a>Word ThisDocument 类中 Visual C# 文档级项目中使用方法的可选的参数  
+ Word 对象模型包含许多方法具有可选**ref**接受的参数<xref:System.Object>值。 但是，您不能省略可选**ref**所生成的方法的参数`ThisDocument`Word 的 Visual C# 文档级项目中的类。 Visual C#，可省略可选**ref**参数仅对方法的接口，而不是类。 例如，下面的代码示例不会进行编译，因为不能省略可选**ref**的参数<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>方法的`ThisDocument`类。  
   
  [!code-csharp[Trin_VstrefGeneralWord#3](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#3)]  
   
  调用 `ThisDocument` 类的方法时，请遵循以下准则：  
   
--   若要接受可选的默认值**ref**参数，传递`missing`参数变量。 在 Visual C# Office 项目中自动定义 `missing` 变量，并分配给生成的项目代码中的值 <xref:System.Type.Missing>。  
+-   若要接受默认值的可选**ref**参数，传递`missing`变量到参数。 在 Visual C# Office 项目中自动定义 `missing` 变量，并分配给生成的项目代码中的值 <xref:System.Type.Missing>。  
   
--   若要指定你自己的值为可选**ref**参数，声明一个分配给你想要指定，值的对象，并将对象传递到参数。  
+-   若要指定自己的值的可选**ref**参数，分配给你想要指定，值将对象声明，然后将该对象传递给参数。  
   
- 下面的代码示例演示如何调用<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>通过指定的值的方法*ignoreUppercase*参数并接受其他参数的默认值。  
+ 下面的代码示例演示如何调用<xref:Microsoft.Office.Tools.Word.DocumentBase.CheckSpelling%2A>方法，并指定的值*ignoreUppercase*参数并接受其他参数的默认值。  
   
  [!code-csharp[Trin_VstrefGeneralWord#4](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#4)]  
   
- 如果你想要编写代码的省略了可选**ref**中的方法的参数`ThisDocument`类，你可以或者相同的方法对调用<xref:Microsoft.Office.Interop.Word.Document>返回对象<xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A>属性，并忽略该方法中的参数。 可以这样做是因为 <xref:Microsoft.Office.Interop.Word.Document> 是接口而不是类。  
+ 如果你想要编写代码的省略了可选**ref**中的方法的参数`ThisDocument`类，您可以或者调用相同的方法上<xref:Microsoft.Office.Interop.Word.Document>返回对象<xref:Microsoft.Office.Tools.Word.Document.InnerObject%2A>属性，并省略该方法的参数。 可以这样做是因为 <xref:Microsoft.Office.Interop.Word.Document> 是接口而不是类。  
   
  [!code-csharp[Trin_VstrefGeneralWord#5](../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs#5)]  
   
- 有关值和引用类型参数的详细信息，请参阅[按值和按引用传递自变量&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[将参数传递&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。  
+ 有关值和引用类型参数的详细信息，请参阅[按值和按引用传递参数&#40;Visual Basic&#41; ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) （对于 Visual Basic) 和[将参数传递给&#40;C&#35;编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。  
   
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

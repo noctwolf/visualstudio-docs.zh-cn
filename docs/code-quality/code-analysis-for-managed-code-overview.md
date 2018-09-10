@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ad1edbd9d093fc5f1c7f746b7b5f2a2b9d2bd31
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 78a7abc8c0d13de7ec3c9c8d196e3b47cf867403
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131877"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279084"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>托管代码的代码分析概述
 
@@ -71,14 +71,14 @@ Public class MyClass
 
 - 作为最新生成的一部分运行代码分析。
 
-可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用团队项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
+可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。
 
 ## <a name="team-build-integration"></a>Team build 集成
 
-你可以使用生成系统的集成功能在生成过程中运行分析工具。 有关详细信息，请参阅[生成和发布 (VSTS)](/vsts/build-release/index)。
+你可以使用生成系统的集成功能在生成过程中运行分析工具。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index)。
 
 ## <a name="see-also"></a>请参阅
 
 - [Roslyn 分析器的概述](../code-quality/roslyn-analyzers-overview.md)
 - [使用规则集对代码分析规则进行分组](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [如何： 启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [如何：启用和禁用自动代码分析](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f125a2b8a62690cd31d53d145ea9d7b1e54a3ce
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008691"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774643"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 解决方案部署故障排除
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。  
@@ -72,7 +72,7 @@ ms.locfileid: "40008691"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下载程序集而不是加载缓存副本  
   
-1.  在菜单栏上依次选择**项目**，* ProjectName ***属性**。  
+1.  在菜单栏上依次选择**项目**， _ProjectName_**属性**。  
   
 2.  在“应用程序”  页上，选择“程序集信息” 。  
   

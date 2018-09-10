@@ -1,21 +1,20 @@
 ---
-title: Visual Studio 性能提示和技巧
-ms.date: 08/31/2017
+title: 有关提高性能的提示
+ms.date: 08/14/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-ms.assetid: 2fbcb59e-e981-4b40-8b7a-c1140d31ec4b
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3dcd85ee926e545aa17597f5597fac985645dd
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37433530"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42627030"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -40,7 +39,13 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 
 1. 在“项目和解决方案” > “常规”页面上，取消选中“重新打开解决方案加载文档”。
 
-如果禁用了自动文件还原，则可以使用“[转到](../ide/go-to.md)”快速导航到要打开的文件。 选择“编辑” > “转到” > “转到全部”，或按 Ctrl+T。
+如果禁止自动还原文件，可使用任一[转到](../ide/go-to.md)命令快速导航到要打开的文件：
+
+- 对于常规“转到”功能，请选择“编辑” > 转到” > 转到所有”（或按 Ctrl+T）。
+
+- 在 Visual Studio 2017 版本 15.8 及更高版本中，可使用“编辑” > “转到” > “转到上次编辑位置”（或按 Ctrl+Shift+Backspace）跳转到解决方案中上次编辑的位置。
+
+- 在 Visual Studio 2017 版本 15.8 及更高版本中，使用“转到最近使用的文件”以查看解决方案中最近访问的文件的列表。 选择“编辑” > “转到” > “转到最近使用的文件”（或按 Ctrl+1、Ctrl +R）。
 
 ## <a name="configure-debugging-options"></a>配置调试选项
 

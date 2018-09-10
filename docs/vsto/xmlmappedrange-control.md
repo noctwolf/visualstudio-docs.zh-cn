@@ -1,5 +1,5 @@
 ---
-title: XmlMappedRange 控件 |Microsoft 文档
+title: XmlMappedRange 控件
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -17,31 +17,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1bc4516f0ca14427e5e63a40ae58ddd60436dfd6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9cf21ceda64fe79996e05426a3379972c3c4be33
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670655"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange 控件
-  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件是仅当非重复架构元素映射到 Microsoft Office Excel 中的单元格上时，才创建一个范围。 例如，当`maxOccurs`属性的架构元素等于 1。 Visual Studio 创建的映射的 XML 范围后，你可以对其编程直接而无需遍历 Excel 对象模型。 你只能删除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>中 Excel 时元素映射将会删除控件。  
+  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件是仅在非重复架构元素映射到 Microsoft Office Excel 中的单元格上时创建一个范围。 例如，当`maxOccurs`架构元素的特性等于 1。 Visual Studio 将创建 XML 映射范围后，你可以针对它编程直接而无需遍历 Excel 对象模型。 您只能删除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>中移除的元素映射时，在 Excel 内的控件。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "视频链接")相关的视频演示，请参阅[如何执行 i： 使用 XML 映射在 Excel 中？](http://go.microsoft.com/fwlink/?LinkID=130288)。  
+ ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何在 Excel 中的实现： 使用 XML 映射？](http://go.microsoft.com/fwlink/?LinkID=130288)。  
   
-## <a name="binding-data-to-the-control"></a>将数据绑定到控件  
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件支持绑定到单个数据字段 （简单数据绑定）。 <xref:Microsoft.Office.Tools.Excel.ListObject>控件可以支持复杂数据绑定，并将重复架构元素映射到单元格上时自动创建。 有关更多信息，请参见 [ListObject Control](../vsto/listobject-control.md)。  
+## <a name="bind-data-to-the-control"></a>将数据绑定到控件  
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件支持绑定到单个数据字段 （简单数据绑定）。 <xref:Microsoft.Office.Tools.Excel.ListObject>控件可支持复杂数据绑定和重复架构元素映射到单元格上时自动创建。 有关详细信息，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件绑定到数据源使用<xref:System.Windows.Forms.Control.DataBindings%2A>属性。 当<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Visual Studio 自动从映射的单元格中的数据生成数据集，并将控件绑定到该数据集添加到工作表单元格。 默认数据绑定属性<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>是<xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>。  
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件绑定到数据源使用<xref:System.Windows.Forms.Control.DataBindings%2A>属性。 当<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Visual Studio 自动生成数据集从数据中映射的单元格，并将控件绑定到该数据集添加到工作表单元格。 默认数据绑定属性<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>是<xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>。  
   
- 如果在绑定数据集中的数据通过任何机制进行了更新<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件会反映这些变化。  
+ 如果绑定数据集中的数据通过任何机制进行了更新<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件会反映出所做的更改。  
   
 ## <a name="formatting"></a>格式化  
- 你可以应用相同的格式<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件可以应用于<xref:Microsoft.Office.Interop.Excel.Range>。 这包括边框、字体、数字格式和样式。  
+ 您可以应用相同的格式<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件，可以将应用于<xref:Microsoft.Office.Interop.Excel.Range>。 这包括边框、字体、数字格式和样式。  
   
 ## <a name="events"></a>事件  
- 可用于事件<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控件：  
+ 可用于事件<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制是：  
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 04/16/2018
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>  
   
 ## <a name="see-also"></a>请参阅  
- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)   
+ [通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
  [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)   
  [如何： 将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   

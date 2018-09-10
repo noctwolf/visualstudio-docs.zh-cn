@@ -1,5 +1,5 @@
 ---
-title: 如何： 在功能区上显示开发人员选项卡 |Microsoft 文档
+title: 如何： 在功能区上显示开发人员选项卡
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -16,14 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9921c10d8a886eb4051b3d5f3d8392ddc77c2da7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fea1b0fa804726cb43bdc5b6d866ceedc186924c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43780421"
 ---
-# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何：在功能区上显示“开发人员”选项卡
-  访问**开发人员**选项卡功能区中的 Office 应用程序，你必须将它配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。  
+# <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>如何： 在功能区上显示开发人员选项卡
+  访问**开发人员**选项卡上的 Office 应用程序功能区中，您必须将其配置为显示该选项卡，因为它不会显示默认情况下。 例如，如果要向 Word 的文档级自定义项添加一个 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则必须显示该选项卡。  
   
 > [!NOTE]  
 >  本指南仅适用于 Office 2010 或更高版本的应用程序。 如果你想要在 2007 Microsoft Office System 中显示此选项卡，请参阅本主题的以下版本[如何： 在功能区上显示开发人员选项卡](http://msdn.microsoft.com/library/bb608625(v=vs.90).aspx)。  
@@ -31,17 +32,17 @@ ms.lasthandoff: 04/16/2018
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
 > [!NOTE]  
->  Access 没有**开发人员**选项卡。  
+>  不具有访问权限**开发人员**选项卡。  
   
-### <a name="to-show-the-developer-tab"></a>显示“开发工具”选项卡  
+## <a name="to-show-the-developer-tab"></a>显示“开发工具”选项卡  
   
-1.  启动本主题支持的任何 Office 应用程序。 请参阅**适用于：**本主题前面的注意。  
+1.  启动本主题支持的任何 Office 应用程序。 请参阅**适用于：** 本主题前面的注意。  
   
 2.  上**文件**选项卡上，选择**选项**按钮。  
   
      下图显示**文件**选项卡和**选项**Office 2010 中的按钮。  
   
-     ![选择文件，Outlook 2010 中的选项](../vsto/media/vsto-office-file-tab.png "Outlook 2010 中选择文件，选项")  
+     ![选择文件，Outlook 2010 中的选项](../vsto/media/vsto-office-file-tab.png "选择文件，Outlook 2010 中的选项")  
   
      下图显示**文件**Office 2013 中的选项卡。  
   
@@ -51,17 +52,17 @@ ms.lasthandoff: 04/16/2018
   
      ![Outlook 2013 Preview 中的选项按钮](../vsto/media/vsto-office2013-optionsbutton.png "Outlook 2013 Preview 中的选项按钮")  
   
-3.  在*ApplicationName * * * 选项** 对话框中，选择**自定义功能区**按钮。  
+3.  在中_ApplicationName_**选项**对话框中，选择**自定义功能区**按钮。  
   
-     下图显示**选项**对话框中和**自定义功能区**Excel 2010 中的按钮。 此按钮的位置在本主题顶部附近“适用于”部分中列出的所有其他应用程序中是类似的。  
+     下图显示**选项**对话框和**自定义功能区**Excel 2010 中的按钮。 此按钮的位置在本主题顶部附近“适用于”部分中列出的所有其他应用程序中是类似的。  
   
-     ![自定义功能区按钮](../vsto/media/vsto-office2010-customizeribbonbutton.png "在自定义功能区按钮")  
+     ![自定义功能区按钮](../vsto/media/vsto-office2010-customizeribbonbutton.png "自定义功能区按钮")  
   
-4.  在主选项卡的列表中，选择**开发人员**复选框。  
+4.  在主选项卡的列表中选择**开发人员**复选框。  
   
      下图显示**开发人员**Word 2010 中的复选框和[!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]。 此复选框的位置在本主题顶部附近“适用于”部分中列出的所有其他应用程序中是类似的。  
   
-     ![Word 选项对话框中的开发人员复选框](../vsto/media/vsto-office2010-developercheckbox.png "Word 选项对话框中的开发人员复选框")  
+     ![Word 选项对话框中的开发人员复选框](../vsto/media/vsto-office2010-developercheckbox.png "The Developer Word 选项对话框中的复选框")  
   
 5.  选择**确定**按钮以关闭**选项**对话框。  
   

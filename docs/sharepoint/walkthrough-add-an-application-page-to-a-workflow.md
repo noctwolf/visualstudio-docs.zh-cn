@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c69e6d5ddf9cd1691b3ddd736155dbd58a82419e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625995"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774583"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练： 将应用程序页添加到工作流
   本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
@@ -337,7 +337,7 @@ ms.locfileid: "42625995"
 
 14. 重复步骤 11-13 共享文档列表中的其他文档。 （精确的文档数并不重要。）
 
-15. 通过 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**。
+15. 通过 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      零用金报销单摘要页列出所有超过分配的量的费用报告，它们超出了它，通过量，以及所有报表的总金额。
 

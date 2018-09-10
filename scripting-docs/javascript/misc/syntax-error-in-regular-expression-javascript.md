@@ -1,5 +1,5 @@
 ---
-title: 正则表达式 (JavaScript) 中的语法错误 |Microsoft 文档
+title: 正则表达式 (JavaScript) 中的语法错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,21 +20,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23492c5a5066bf3430430b544b97ee765d26512b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5f256639fbef222042ca3137eb9d19c2a97d702
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632917"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280372"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>正则表达式中有语法错误 (JavaScript)
-你的搜索字符串的结构违反了一个或多个的语法规则[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正则表达式。  
+在搜索字符串的结构违反了一个或多个语法规则的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正则表达式。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保你正则表达式搜索字符串的结构遵从[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正则表达式语法。  
+-   确保在正则表达式搜索字符串的结构符合[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]正则表达式语法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [正则表达式对象](../../javascript/reference/regular-expression-object-javascript.md)   
- [正则表达式语法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [正则表达式语法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [compile 方法 (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

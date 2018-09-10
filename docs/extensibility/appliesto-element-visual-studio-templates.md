@@ -11,19 +11,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 567b9f2651c2140f101aa3848e4136d47a75ef1e
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 6f399e0b054b5f9b112733399d644e1357837049
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151111"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280711"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo 元素 （Visual Studio 模板）
 指定一个可选表达式以匹配一个或多个功能。 （请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>）。 项目类型通过层次结构将功能公开为属性 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5>。 这使得具有公共适用功能的多个项目类型可以共享此模板。  
   
  此元素为可选元素。 一个模板文件中最多只能包含一个实例。 根据当前选择的活动项目的功能，此元素仅启用一个项模板以在适用时选择使用。 此元素无法用于设置不适用的项模板。 如果缺少 `AppliesTo` 或表达式未成功选择使用，则 `TemplateID` 或 `TemplateGroupID` 将用于使模板可用，如使用产品的早期版本一样。  
   
- 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
+ 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅[引用程序集提供的 Visual Studio 2013 SDK 更新 2](https://msdn.microsoft.com/library/42b65c3e-e42b-4c39-98c8-bea285f25ffb)。  
   
  \<VSTemplate >  
  \<TemplateData >  

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b564c208892ac169fd88b13101945bbf7223d20
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9d5b5eeefe2bbed542ef18689fd7e16073174bd3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152000"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284102"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照调试 Visual Studio 中的疑难解答和已知问题
 
@@ -42,7 +42,7 @@ ms.locfileid: "39152000"
 
 - 单击**更改符号设置...** 此页上的链接。 在中**调试 > 符号**设置，添加一个符号缓存目录。 重新启动快照调试后设置符号路径。
 
-   符号或你的项目中可用的.pdb 文件必须匹配你的应用服务部署。 大多数部署 (通过 Visual Studio、 VSTS 或 Kudu 中，使用 CI/CD 部署等) 将沿符号文件发布到应用服务。 设置符号缓存目录可使 Visual Studio 以使用这些符号。
+   符号或你的项目中可用的.pdb 文件必须匹配你的应用服务部署。 大多数部署 (通过 Visual Studio、 Azure 管道或 Kudu 中，使用 CI/CD 部署等) 将沿符号文件发布到应用服务。 设置符号缓存目录可使 Visual Studio 以使用这些符号。
 
    ![符号设置](../debugger/media/snapshot-troubleshooting-symbol-settings.png "符号设置")
 

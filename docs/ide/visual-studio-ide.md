@@ -13,20 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5647bbc6aa520fdf5427b61f53a54c28b9a0a48d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
+ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381167"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42627061"
 ---
-# <a name="visual-studio-overview"></a>Visual Studio 概述
+# <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
 Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。
 
-本文主要介绍用于 Windows 的 Visual Studio 2017。 本文介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
+这篇概括性的文章主要介绍了 Visual Studio 2017 for Windows。 本文介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
@@ -64,7 +64,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 - [IntelliSense](../ide/using-intellisense.md)
 
-   IntelliSense 是一组功能的术语，这些功能可用于在编辑器中直接显示代码的信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在其他位置查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了 IntelliSense 如何显示类型的成员列表：
+   IntelliSense 由一组功能构成，它可用于在编辑器中直接显示代码相关信息，还能在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在其他位置查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ IntelliSense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了 IntelliSense 如何显示类型的成员列表：
 
    ![Visual Studio 成员列表](../ide/media/intellisense-list-members.png)
 
@@ -256,21 +256,32 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    此时，整个 IDE 的颜色主题更改为“深色”。
 
-   ![深色主题下的 VS](media/quickstart-personalize-dark-theme.png)
+   ![深色主题中的 Visual Studio](media/quickstart-personalize-dark-theme.png)
 
 若要了解有关 IDE 个性化设置的其他方法，请参阅[个性化设置 Visual Studio](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="next-steps"></a>后续步骤
 
-想创建一个适用于 Android 或 iOS 手机的应用？ 例如 3D 游戏或支持云的应用？ 若要了解以上和其他 Visual Studio 功能，请参阅 [Visual Studio 2017 的功能](../ide/advanced-feature-overview.md)。
+查看下述一篇介绍性的文章，进一步了解 Visual Studio：
 
-如果希望即刻开始编码，可从目录中选择某个快速入门主题，如[创建首个 ASP.NET Core Web 应用](quickstart-aspnet-core.md)。
+- 在[学习使用代码编辑器](quickstart-editor.md)中熟悉代码编辑器
 
-还可访问 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 观看免费的 Visual Studio 视频。
+- 在[了解项目和解决方案](quickstart-projects-solutions.md)中学习 Visual Studio 如何整理代码
+
+如果准备深入了解更多编码，接下来可阅读下述一篇针对语言的快速入门：
+
+- [使用 Visual Studio 创建第一个 Python Web 应用](quickstart-python.md)
+
+- [使用 Visual Studio 创建第一个 C# Web 应用](quickstart-aspnet-core.md)
+
+- [使用 Visual Studio 创建第一个 Node.js 应用](quickstart-nodejs.md)
+
+- [Visual Studio 中的 C++ 入门](getting-started-with-cpp-in-visual-studio.md)
 
 ## <a name="see-also"></a>请参阅
 
-* [更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
-* [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-* [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
-* [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+- 发现[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
+- 访问 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
+- 阅读 [Visual Studio 博客](https://blogs.msdn.microsoft.com/visualstudio/)
+- 查看 [Microsoft Virtual Academy](https://mva.microsoft.com/product-training/visual-studio-courses#!index=2&lang=1033) 上的免费 Visual Studio 课程
+- 从 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)中下载 Visual Studio

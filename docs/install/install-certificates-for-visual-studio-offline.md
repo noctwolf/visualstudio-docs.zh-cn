@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e7a43ce46bc34ed6341d92833ee066479ca2392b
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 70147dac62ad0aaa59a1c6823b321afe54b2d3a7
+ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280437"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43139119"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -34,6 +34,8 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>选项 1 - 从布局文件夹手动安装证书
 
 创建网络布局时，所需证书会下载到 Certificates 文件夹。 然后可以双击每个证书文件，并单击完成证书管理器向导，从而手动安装证书。 如果看到输入密码提示，请将密码留空。
+
+更新：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。
 
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>选项 2 - 在企业环境中分发受信任的根证书
 
@@ -60,6 +62,15 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
    certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   更新：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，使用以下命令创建批处理文件：
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestSignCertificates.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignCertificates.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.SignCertificates.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
 
 3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。
 
@@ -82,6 +93,8 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
         * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
     * 根证书： Microsoft 根证书颁发机构
         * 必须的。 运行 Windows 7 或更高版本的系统附带此证书。
+
+更新：对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>为什么无法自动安装 Certificates 文件夹中的证书？
 
@@ -113,16 +126,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 安装证书后，可以根据“创建 Visual Studio 网络安装”页中的[从网络安装部署](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation)部分中的说明，继续部署 Visual Studio。
 
-## <a name="get-support"></a>获取支持
-
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
-
-下面是另外几个支持选项：
-
-* 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
-* 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>请参阅
 

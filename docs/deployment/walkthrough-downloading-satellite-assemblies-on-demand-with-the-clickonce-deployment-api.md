@@ -23,25 +23,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b558ca0d5b8080e581dcddd07e2f89511d062cc4
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154406"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281216"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练： 下载使用 ClickOnce 部署 API 按需的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  
   
  如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。  
   
- 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中执行此任务。  另请参阅[演练： 下载 ClickOnce 部署 API 使用设计器中使用按需的附属程序集](http://msdn.microsoft.com/library/ms366788\(v=vs.110\))或[演练： 使用 ClickOnce 部署 API 使用按需的附属程序集下载在设计器](http://msdn.microsoft.com/library/ms366788\(v=vs.120\))。  
+ 本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。 下面的过程使用 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]中可用的工具。 还可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中执行此任务。  另请参阅[演练： 下载 ClickOnce 部署 API 使用设计器中使用按需的附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))或[演练： 使用 ClickOnce 部署 API 使用按需的附属程序集下载在设计器](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。  
   
 > [!NOTE]
 >  出于测试目的，下面的代码示例以编程方式将区域性设置为 `ja-JP`。 有关如何为生产环境调整此代码的信息，请参阅本主题中后面的“后续步骤”部分。  
   
 ## <a name="prerequisites"></a>系统必备  
- 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅[演练： 本地化 Windows 窗体](https://msdn.microsoft.com/library/vstudio/y99d1cd3\(v=vs.100\).aspx)。  
+ 本主题假定你知道如何使用 Visual Studio 将本地化的资源添加到应用程序。 有关详细说明，请参阅[演练： 本地化 Windows 窗体](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))。  
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>按需下载附属程序集  
   

@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cedc3a66b3c6b73dd778011afd8e96b7e1e2d762
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31926478"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626777"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -46,9 +46,10 @@ ms.locfileid: "31926478"
 以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。
 
 - \*（使用此值可指定所有符号）
-- 类
+- namespace
+- class
 - struct
-- 接口
+- interface
 - enum
 - 属性
 - 方法
@@ -56,6 +57,9 @@ ms.locfileid: "31926478"
 - Event — 事件
 - 委托
 - 参数
+- type_parameter
+- 本地
+- local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>符号的可访问性级别
 
@@ -71,6 +75,7 @@ ms.locfileid: "31926478"
 - private
 - protected
 - protected\_internal 或 protected_friend
+- 本地
 
 > [!NOTE]
 > 如果可访问性不适用于目标符号种类，请勿在命名约定中指定可访问性级别。 例如，参数就没有可访问性级别。 如果为参数命名约定指定可访问性级别，那么命名规则将无法正常运行。

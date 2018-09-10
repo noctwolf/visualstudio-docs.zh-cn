@@ -45,7 +45,7 @@ ms.locfileid: "39081233"
 >  卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，也会删除其数据目录。 永远不会使用数据目录来存储最终用户管理的数据，如文档。  
   
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>在 ClickOnce 分发中的标记数据文件  
- 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅[如何： 将数据文件包括在 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅[如何：将数据文件包括在 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
 #### <a name="read-from-and-write-to-the-data-directory"></a>读取和写入的数据目录  
  读取数据目录要求你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序请求读取权限；同样，写入目录也需要写入权限。 如果它被配置为使用完全信任的权限运行，则你的应用程序将自动拥有此权限。 有关提升权限的使用权限提升或受信任的应用程序部署的应用程序的详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
@@ -58,7 +58,7 @@ ms.locfileid: "39081233"
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]  
   
- 有关在部署中将文件标记为数据文件的详细信息，请参阅 [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
+ 有关在部署中将文件标记为数据文件的详细信息，请参阅 [如何：将数据文件包括在 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。  
   
  你还可以使用 <xref:System.Windows.Forms.Application> 类上的相关变量（如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>）来获取数据目录路径。  
   

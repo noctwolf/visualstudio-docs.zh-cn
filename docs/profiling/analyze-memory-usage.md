@@ -9,11 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c483b40cf1cc45b730ea67bf01ea452c42af1e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 3cee40dd1dab8c3a9d9b57b84e6e299651bc5fc8
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42626579"
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用情况
 使用集成了调试器的内存使用率诊断工具，查找内存泄漏和低效内存使用的情况。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
@@ -23,6 +24,8 @@ ms.lasthandoff: 05/17/2018
 -   你还可以比较 (diff) 一个应用的两个快照，以便在你的代码中查找导致内存使用随时间增加的区域。  
 
 有关详细说明，请参阅[分析内存使用率](../profiling/memory-usage.md)教程。 若要分析不附加调试器时的内存使用率，请参阅[不使用调试器情况下的内存使用率](memory-usage-without-debugging2.md)。
+
+可 Windows 7 及更高版本中使用不带调试器的分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
   
 ## <a name="blogs-and-videos"></a>博客和视频  
 
@@ -36,4 +39,4 @@ ms.lasthandoff: 05/17/2018
 
 ## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能导览](../profiling/profiling-feature-tour.md)
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)

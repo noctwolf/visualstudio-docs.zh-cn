@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3b8333f116ea5606a354dd9d0f88f111077a1b
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 5b9be1d03c8635b1d6b01556c8b4c3963db1d7a2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057169"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279331"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向您演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，并在中检查变量**监视**窗口。  
@@ -99,7 +99,7 @@ ms.locfileid: "37057169"
     textBox1.Text = "Button was clicked!";  
     ```  
   
-     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。 有关详细信息，请参阅[断点](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+     出现一个红点并且该行上的文本突出显示为红色。 红点表示一个断点。 当您在调试器下运行该应用程序时，此调试器将在命中该代码时在该位置中断执行。 然后您可以查看应用程序的状态并调试它。 有关详细信息，请参阅[断点](https://msdn.microsoft.com/library/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
 2.  在“调试”菜单上，单击“启动调试”。  
   

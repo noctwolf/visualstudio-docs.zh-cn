@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 58acebc2607ba05f121a7673f726d8f4bbcb38bd
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 138567792ed57aff0c1471b7f9004999c357764b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057208"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281099"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 内存泄漏，即未能正确释放以前分配的内存，是 C/C++ 应用程序中最难以捉摸也最难以检测到的 Bug 之一。 最初少量内存泄漏可能不引人注目，但随着时间的推移，内存泄漏越来越多，就会出现一些征兆，包括性能下降，在应用程序内存不足时发生崩溃。 更严重的是，占用了所有可用内存的泄漏应用程序可能会导致其他应用程序崩溃，从而无法确定问题出在哪个应用程序。 即使看似无害的内存泄漏也可能说明存在其他问题应当纠正。  
@@ -108,7 +108,7 @@ Object dump complete.
   
 -   内存分配编号，在本例中为 `18`  
   
--   [块类型](http://msdn.microsoft.com/en-us/e2f42faf-0687-49e7-aa1f-916038354f97)，在本例中为 `normal` 。  
+-   [块类型](https://msdn.microsoft.com/library/e2f42faf-0687-49e7-aa1f-916038354f97)，即`normal`在此示例中。  
   
 -   十六进制内存位置，在本例中为 `0x00780E80` 。  
   

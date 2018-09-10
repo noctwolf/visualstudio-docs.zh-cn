@@ -1,5 +1,5 @@
 ---
-title: '&lt;应用程序&gt;元素 （Visual Studio 中的 Office 开发） |Microsoft 文档'
+title: '&lt;应用程序&gt;元素 （Visual Studio 中的 Office 开发）'
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,18 +15,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 90810bf6e9a3b47148598c3e9c3d217989f115ea
-ms.sourcegitcommit: 928885ace538bef5b25961358d4f166d648f196a
+ms.openlocfilehash: 72e9340a062b0b394b423d0403b46cbb2ecb8628
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35671712"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;应用程序&gt;元素 （Visual Studio 中的 Office 开发）
   `application` 命名空间的 `vstav3` 元素包装 Office 解决方案的描述。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。  
   
-## <a name="syntax-for-document-level-customizations"></a>文档级自定义项的语法  
+## <a name="syntax-for-document-level-customizations"></a>对于文档级自定义项的语法  
   
-```  
+```xml 
 <application>  
   <customization  
     id  
@@ -37,9 +38,9 @@ ms.lasthandoff: 04/27/2018
 </application>  
 ```  
   
-## <a name="syntax-for-application-level-add-ins"></a>应用程序级外接程序的语法  
+## <a name="syntax-for-application-level-add-ins"></a>应用程序级加载项的语法  
   
-```  
+```xml
 <application>  
   <customization  
     id  
@@ -71,7 +72,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>代码  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -90,7 +91,7 @@ ms.lasthandoff: 04/27/2018
   
 ### <a name="code"></a>代码  
   
-```  
+```xml  
 <vstav3:application>  
   <vstov4:customizations   
     xmlns:vstov4="urn:schemas-microsoft-com:vsto.v4">  
@@ -121,7 +122,7 @@ ms.lasthandoff: 04/27/2018
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
+ [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
  [ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)  
   

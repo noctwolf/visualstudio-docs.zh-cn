@@ -1,5 +1,5 @@
 ---
-title: Office 开发示例 |Microsoft 文档
+title: Office 开发示例
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -15,17 +15,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 475da9720d0d29456fca4f06046b3f3778ec22f7
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: a082137632399bee10ba2f4f91d00f153e9fe625
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34571412"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35670578"
 ---
 # <a name="office-development-samples"></a>Office 开发示例
   Visual Studio 包含示例应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具来创建 Office 解决方案。 这些示例中的代码阐释了用于生成 Office 解决方案的语法、结构和技术。  
   
- 有关最新示例，请参阅[MSDN 开发人员示例： 通过代码学习](http://go.microsoft.com/fwlink/?LinkID=248199)Microsoft 网站上。  
+ 有关最新的示例，请参阅[MSDN 开发人员示例： 通过代码学习](http://go.microsoft.com/fwlink/?LinkID=248199)Microsoft 网站上。  
   
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]  
   
@@ -44,7 +44,7 @@ ms.locfileid: "34571412"
 |VBA 和 VSTO 互操作性示例|演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Excel 文档级自定义项中的方法。<br /><br /> 只能联机访问本示例。|  
   
 ## <a name="see-also"></a>请参阅  
- [MSDN 开发人员示例： 了解整个代码示例](http://go.microsoft.com/fwlink/?LinkID=248199)   
+ [MSDN 开发人员示例： 代码示例中学习](http://go.microsoft.com/fwlink/?LinkID=248199)   
  [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)  
   
   
