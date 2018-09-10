@@ -1,31 +1,40 @@
+items:
 - name: Node.js 文档
 - name: 快速入门
   items:
-    - name: 创建 Node.js 项目
-      href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
-    - name: 创建 Vue.js 项目
-      href: quickstart-vuejs-with-nodejs.md
+  - name: 创建 Node.js 项目
+    href: /visualstudio/ide/quickstart-nodejs?toc=/visualstudio/javascript/toc.json
+  - name: 创建 Vue.js 项目
+    href: quickstart-vuejs-with-nodejs.md
 - name: 教程
   items:
-    - name: 使用 Express 创建 Node.js 应用
-      href: tutorial-nodejs.md
-    - name: 使用 React 创建 Node.js 应用
-      href: tutorial-nodejs-with-react-and-jsx.md
-    - name: 发布到 Linux 应用服务
-      href: publish-nodejs-app-azure.md
+  - name: 使用 Express 创建 Node.js 应用
+    href: tutorial-nodejs.md
+  - name: 使用 React 创建 Node.js 应用
+    href: tutorial-nodejs-with-react-and-jsx.md
+  - name: 发布到 Linux 应用服务
+    href: publish-nodejs-app-azure.md
 - name: 操作指南
   items:
-    - name: 创建 Vue.js 应用程序
-      href: create-application-with-vuejs.md
-    - name: 管理 npm 包
-      href: npm-package-management.md
-    - name: 不使用项目或解决方案而进行开发（“打开文件夹”）
-      href: develop-javascript-code-without-solutions-projects.md
-    - name: 对 JavaScript 代码进行单元测试
-      href: unit-testing-javascript-with-visual-studio.md
-    - name: JavaScript IntelliSense
-      href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
+  - name: 创建 Vue.js 应用程序
+    href: create-application-with-vuejs.md
+  - name: 管理 npm 包
+    href: npm-package-management.md
+  - name: 不使用项目或解决方案而进行开发（“打开文件夹”）
+    href: develop-javascript-code-without-solutions-projects.md
+  - name: 对 JavaScript 代码进行单元测试
+    href: unit-testing-javascript-with-visual-studio.md
+  - name: JavaScript IntelliSense
+    href: /visualstudio/ide/javascript-intellisense?toc=/visualstudio/javascript/toc.json
 - name: 资源
   items:
-    - name: 介绍 Node.js 工具的 Wiki 页面
-      href: 'https://github.com/Microsoft/nodejstools'
+  - name: package.json 配置
+    href: configure-packages-with-package-json.md
+  - name: 介绍 Node.js 工具的 Wiki 页面
+    href: https://github.com/Microsoft/nodejstools
+ms.openlocfilehash: 934d7cd68dd61dacb5bd60d06e07aef72c34dd04
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124939"
