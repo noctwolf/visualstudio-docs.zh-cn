@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4752556fadead75bb29b6920d51ebbb54a5679aa
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 26e96116ca03cad074639c5753a8cb076dc70adf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080794"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281970"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何： 发布具有特定的区域设置的项目
 一个应用程序包含多个具有不同区域设置的组件的现象并不少见。 在本方案中，你将创建一个包含若干个项目的解决方案，然后为每个区域设置发布不同的项目。 本过程演示如何使用宏，用“en”区域设置发布解决方案中第一个项目。 如果希望使用“en”之外的其他区域设置来尝试此过程，请务必将宏中的 `localeString` 设置为与所用区域设置（例如，“de”或“de-DE”）相匹配的值。  
@@ -165,6 +165,6 @@ ms.locfileid: "39080794"
   
 ## <a name="see-also"></a>请参阅  
  [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)   
- [宏开发环境](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [宏资源管理器窗口](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [如何： 编辑和以编程方式创建宏](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)
+ [宏开发环境](/previous-versions/visualstudio/visual-studio-2010/fb30sxt3(v=vs.100))   
+ [宏资源管理器窗口](/previous-versions/visualstudio/visual-studio-2010/wwkx67sw(v=vs.100))   
+ [如何： 编辑和以编程方式创建宏](/previous-versions/visualstudio/visual-studio-2010/k91y6132(v=vs.100))

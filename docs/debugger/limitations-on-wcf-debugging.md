@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b579712827033dab1556739f4ea79340232e761
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: ce5fda0eee836a8da5ad69053faa23d3c6e60082
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058518"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280645"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 有三种开始 WCF 服务调试的方式：  
@@ -63,7 +63,7 @@ ms.locfileid: "37058518"
   
 -   该服务必须是要调试的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案的一部分。  
   
--   该服务必须进行托管。 它可以是网站项目（文件系统和 HTTP）、Web 应用程序项目（文件系统和 HTTP）或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
+-   该服务必须进行托管。 它可能是网站项目 （文件系统和 HTTP）、 Web 应用程序项目 （文件系统和 HTTP） 或 WCF 服务库项目的一部分。 WCF 服务库项目可以是服务库或工作流服务库。  
   
 -   必须从 WCF 客户端调用该服务。  
   

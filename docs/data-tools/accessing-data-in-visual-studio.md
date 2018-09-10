@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0a880604f14f840c3f4712e1a8d0e4d8e9cf1822
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 463bc06bb023e973ac6fe62f5f92a3d9067b2841
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283466"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280592"
 ---
 # <a name="access-data-in-visual-studio"></a>在 Visual Studio 中访问数据
 
@@ -83,7 +83,7 @@ C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microso
 
 ### <a name="data-providers"></a>数据提供程序
 
-若要用于在 ADO.NET 中的数据库，它必须能够自定义*ADO.NET 数据提供程序*或其他必须公开一个 ODBC 或 OLE DB 接口。 Microsoft 提供了[ADO.NET 数据提供程序的列表](https://msdn.microsoft.com/data/dd363565)SQL Server 产品以及 ODBC 和 OLE DB 访问接口。
+若要用于在 ADO.NET 中的数据库，它必须能够自定义*ADO.NET 数据提供程序*或其他必须公开一个 ODBC 或 OLE DB 接口。 Microsoft 提供了[ADO.NET 数据提供程序的列表](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview)SQL Server 产品以及 ODBC 和 OLE DB 访问接口。
 
 ### <a name="data-modeling"></a>数据建模
 
@@ -99,7 +99,7 @@ C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microso
 
 ## <a name="native-c"></a>本机 C++
 
-连接到 SQL Server 的 c + + 应用程序应使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大多数情况下。 如果链接服务器，则 OLE DB 是必要和为此，您使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 可以使用访问其他数据库[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。 OLE DB 是一项传统 COM 数据访问技术，是仍受支持但不是建议用于新的应用程序。 有关详细信息，请参阅[Visual c + + 中的数据访问](/cpp/data/data-access-in-cpp)。
+连接到 SQL Server 的 c + + 应用程序应使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大多数情况下。 如果链接服务器，则 OLE DB 是必要和为此，您使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 可以使用访问其他数据库[ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017)或 OLE DB 驱动程序直接。 ODBC 是当前的标准数据库接口，但大多数数据库系统提供无法通过 ODBC 接口访问的自定义功能。 OLE DB 是一项传统 COM 数据访问技术，是仍受支持但不是建议用于新的应用程序。 有关详细信息，请参阅[Visual c + + 中的数据访问](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服务的 c + + 程序可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
@@ -133,7 +133,7 @@ C# 或 Visual Basic 中的通用 Windows 平台 (UWP) 应用可以使用 Microso
 
 [ADO.NET](/dotnet/framework/data/adonet/index)&mdash;介绍 ADO.NET 体系结构以及如何使用 ADO.NET 类来管理应用程序数据和与数据源和 XML 进行交互。
 
-[ADO.NET 实体框架](https://msdn.microsoft.com/data/ef)&mdash;介绍如何创建数据应用程序，使开发人员针对概念模型而不是直接针对关系数据库进行编程。
+[ADO.NET 实体框架](https://docs.microsoft.com/ef/ef6/)&mdash;介绍如何创建数据应用程序，使开发人员针对概念模型而不是直接针对关系数据库进行编程。
 
 [WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)&mdash;介绍如何使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]部署 web 或 intranet 上的数据服务，实现[开放数据协议 (OData)](http://go.microsoft.com/fwlink/?LinkID=182204)。
 

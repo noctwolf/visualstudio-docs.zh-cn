@@ -1,5 +1,5 @@
 ---
-title: 调试错误和警告对话框 |Microsoft 文档
+title: 调试错误和警告对话框 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b87a662b888582a14526a03edf9df13e6492880b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bb7ed7b66483bcda01df00e92907801d994553e9
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31472197"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279038"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 以下是在调试应用程序时可能遇到的错误和警告对话框。  
@@ -42,13 +42,13 @@ ms.locfileid: "31472197"
   
  [“调试会话的可执行文件”对话框](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [无法应用代码更改对话框](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [未能应用代码更改对话框](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [“Microsoft Visual Studio 调试器（引发异常）”对话框](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [没有可用于当前的位置对话框中的源代码](../debugger/no-source-available.md)  
+ [没有可用于当前的位置对话框的源代码](../debugger/no-source-available.md)  
   
- [没有对应符号信息对话框中](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [无符号信息对话框](https://msdn.microsoft.com/library/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [“解析多义性”对话框](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -63,9 +63,9 @@ ms.locfileid: "31472197"
   
  [远程调试错误](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [附加错误](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [附加错误](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))  
   
- [故障排除 SQL 调试安装程序](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [SQL 调试安装程序问题疑难解答](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))  
   
  [调试 Visual c + + 常见问题](../debugger/debugging-native-code-faqs.md)  
   

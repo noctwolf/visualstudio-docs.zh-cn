@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39;) &#39;在正则表达式 (JavaScript) |Microsoft 文档
+title: 预期&#39;)&#39;在正则表达式 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,23 +20,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca4560c638cc0e9209141ba9b0878208eb84eb0c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: b5d1075a41d2b97d10166b1372e8df3a93dd9d8e
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633877"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279123"
 ---
-# <a name="expected-3939-in-regular-expression-javascript"></a>预期 &#39;) &#39;在正则表达式 (JavaScript)
-你试图创建正则表达式捕获、 断言或组，但不是包括的右括号。 括号具有正则表达式中有多种用途。 它们用于捕获子表达式，以指定断言，或将模式组合在一起，以便可作为单个单元通过视为项的主要原因是，*，+，？，依次类推。  
+# <a name="expected-3939-in-regular-expression-javascript"></a>预期&#39;)&#39;在正则表达式 (JavaScript)
+试图创建正则表达式捕获、 断言或组，但不是包括右括号。 括号的正则表达式中具有多个用途。 首先，它们用来捕获子表达式，若要指定断言，或将模式组合在一起，以便可以将项视为单个单元通过 *，+、？、，等等。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   添加最右边的右括号。  
+-   添加最右侧的右括号。  
   
     > [!NOTE]
-    >  如果你想要匹配单个括号，对其进行转义以反斜杠- \\(以便它不被视为特殊字符- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]。  
+    >  如果您希望匹配单个括号，对其进行转义反斜杠- \\(-，以便它不被视为特殊字符的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [正则表达式对象](../../javascript/reference/regular-expression-object-javascript.md)   
- [正则表达式语法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [正则表达式语法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

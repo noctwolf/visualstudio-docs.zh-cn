@@ -1,5 +1,5 @@
 ---
-title: 更多调试功能 |Microsoft 文档
+title: 更多调试功能 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,17 +15,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a46c62c05b762bee3233062a5b84e3ffca20e15a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 38783f5ec228965010dbe8054373803185fe2e7c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31482121"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282698"
 ---
 # <a name="more-debugging-features"></a>更多调试功能
 本节包含可用于 Visual Studio 调试器的其他功能。  
   
- 有关使调试更快、更容易的提示和技巧的列表，请参阅 [调试提示和技巧](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx)。  
+ 提示和技巧，以使调试更快、 更容易的列表，请参阅[调试提示和技巧](https://blogs.msdn.microsoft.com/visualstudio/2015/05/22/debugging-tips-and-tricks/)。  
   
 ## <a name="additional-features"></a>其他功能  
  [在调试时检查 XAML 属性](../debugger/inspect-xaml-properties-while-debugging.md)  

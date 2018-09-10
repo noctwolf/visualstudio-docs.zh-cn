@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46f165896947f541a7f7be2c48658b83dfd3d102
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671557"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279536"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其分配处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。  
@@ -95,7 +95,7 @@ Visual Studio 还提供了功能强大的断点和跟踪点，在调试多线程
  [线程处理](/dotnet/standard/threading/index)  
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 编程中的线程处理概念，包括代码示例。  
   
- [组件中的多线程处理](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ [组件中的多线程处理](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
  如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 组件中使用多线程处理。  
   
  [针对旧代码的多线程支持 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  

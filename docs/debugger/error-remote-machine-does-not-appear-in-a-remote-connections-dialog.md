@@ -1,5 +1,5 @@
 ---
-title: 错误： 远程计算机未显示在远程连接对话框 |Microsoft 文档
+title: 错误： 远程计算机未显示在远程连接对话框中，|Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,17 +14,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c52a2ebd99b052171220fd8a06f1ae7ff5dc258e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f91358597ce19f9dac1341831364dafb1fcabae
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471328"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284154"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>错误：远程计算机未显示在“远程连接”对话框中
 如果远程计算机未显示在“远程连接”对话框中，请检查以下常见原因。  
   
- 如果你使用托管的兼容模式，请检查的 Visual Studio 2010 文档： [远程调试疑难解答 - Visual Studio 2010](https://msdn.microsoft.com/en-us/library/2ys11ead\(v=vs.100\).aspx) 。  
+ 如果使用托管的兼容模式，请查看 Visual Studio 2010 文档：[远程调试疑难解答-Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/2ys11ead(v=vs.100))。  
   
 ### <a name="common-causes-for-this-error"></a>导致此错误的常见原因  
   

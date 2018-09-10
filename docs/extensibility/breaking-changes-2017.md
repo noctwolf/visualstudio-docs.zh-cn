@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb117a10a7f736e36b30806adfc5e07fe0b8aecf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512248"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280566"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -73,7 +73,7 @@ ms.locfileid: "39512248"
     "culture"="neutral"
     "version"=15.0.0.0
     ```
-    在运行时，Visual Studio pkgdef 子系统将这些将项合并到 Visual Studio 进程的运行时配置文件 (在 *[VSAPPDATA]\devenv.exe.config*) 作为[ `<codeBase>` ](https://msdn.microsoft.com/en-us/library/efs781xb(v=vs.110).aspx)元素。 这是让 Visual Studio 进程查找您的程序集，因为它可以避免通过探测路径搜索的建议的方法。
+    在运行时，Visual Studio pkgdef 子系统将这些将项合并到 Visual Studio 进程的运行时配置文件 (在 *[VSAPPDATA]\devenv.exe.config*) 作为[ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element)元素。 这是让 Visual Studio 进程查找您的程序集，因为它可以避免通过探测路径搜索的建议的方法。
 
 ### <a name="reacting-to-this-breaking-change"></a>对此项重大更改做出反应
 
@@ -87,7 +87,7 @@ ms.locfileid: "39512248"
 
 ### <a name="global-com-registration"></a>全局 COM 注册
 
-* 以前，Visual Studio 安装到 HKEY_CLASSES_ROOT 和 HKEY_LOCAL_MACHINE 配置单元，以支持本机 COM 注册多个注册表项。 若要消除这种影响，Visual Studio 现在将使用[COM 组件免注册激活](https://msdn.microsoft.com/en-us/library/ms973913.aspx)。
+* 以前，Visual Studio 安装到 HKEY_CLASSES_ROOT 和 HKEY_LOCAL_MACHINE 配置单元，以支持本机 COM 注册多个注册表项。 若要消除这种影响，Visual Studio 现在将使用[COM 组件免注册激活](https://msdn.microsoft.com/library/ms973913.aspx)。
 * 因此，大多数 TLB / OLB / Visual studio 默认情况下不再安装在 %programfiles (x86) %\Common Files\Microsoft Shared\MSEnv DLL 文件。 这些文件现在安装下 [INSTALLDIR] 使用 Visual Studio 主机进程使用的相应免注册 COM 清单。
 * 因此，依赖于全局 Visual Studio COM 接口的 COM 注册的外部代码将无法再找到这些注册。 在 Visual Studio 进程内运行的代码不会看到差异。
 
@@ -106,5 +106,5 @@ ms.locfileid: "39512248"
 
 * 外部代码应将转换为的 COM 组件以及使用免注册激活。
 * 外部组件可以找到 Visual Studio 位置[按照此处的指南](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)。
-* 我们建议使用外部组件[外部设置管理器](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx)而不是直接向 Visual Studio 的注册表项读取/写入。
+* 我们建议使用外部组件[外部设置管理器](/dotnet/api/microsoft.visualstudio.settings.externalsettingsmanager)而不是直接向 Visual Studio 的注册表项读取/写入。
 * 检查是否可能已使用您的扩展插件的组件实现注册的另一种方法。 例如，可能能够利用新的调试器扩展[msvsmon JSON 文件 COM 注册](migrate-debugger-COM-registration.md)。

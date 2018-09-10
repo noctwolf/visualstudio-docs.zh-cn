@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6ada3b5375737cb4deec777f64344096fbdaae
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 47b26883d0800611f2fba5cbf7a02907fef1d948
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058505"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280813"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 > [!NOTE]
@@ -88,7 +88,7 @@ ms.locfileid: "37058505"
 for (x=0; x<10; x++)  
 ```  
   
- 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 当您查看**反汇编**窗口中，[单步执行单元](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)为了更好的控制，这很有用，当您单步执行优化的代码时自动设置到指令。  
+ 假定在该行设置了一个断点。 可能希望该断点被命中 10 次，但如果代码进行了优化，则只会命中该断点一次。 因为第一个指令将 `x` 的值设置为 0。 编译器认定该指令只需执行一次，将其移出循环。 断点随之移动。 而比较和递增 `x` 的指令仍留在循环内。 当您查看**反汇编**窗口中，[单步执行单元](/previous-versions/visualstudio/visual-studio-2010/ek13f001(v=vs.100))为了更好的控制，这很有用，当您单步执行优化的代码时自动设置到指令。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

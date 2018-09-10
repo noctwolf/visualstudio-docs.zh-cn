@@ -1,5 +1,5 @@
 ---
-title: 客户端脚本调试 |Microsoft 文档
+title: 客户端脚本调试 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f31897cc4fb48fd7c814d4d25cb41ce0cb7e57da
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: aa5a21a60ab95b6dbc9aeb27a0c7d6e27ab32773
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464805"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283103"
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 Visual Studio 调试器提供了一个全面的调试环境，以便查找和更正 ASP.NET 页上客户端脚本中的错误。  
   
 ## <a name="opening-script-documents"></a>打开脚本文档  
-你可以看到列表中的服务器端和客户端脚本文档**解决方案资源管理器**查看。 可以从 **“解决方案资源管理器”** 中打开任何脚本文档。 有关详细信息，请参阅 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
+可以看到在服务器端和客户端脚本文档的列表**解决方案资源管理器**查看。 可以从 **“解决方案资源管理器”** 中打开任何脚本文档。 有关详细信息，请参阅 [How to: View Script Documents](../debugger/how-to-view-script-documents.md)。  
   
 ## <a name="breakpoint-mapping"></a>断点映射  
  在 Visual Studio 中，不能直接调试服务器端代码，但可以在服务器端文件中设置断点。 Visual Studio 会自动将断点映射到客户端文件中的对应位置，并在客户端代码中创建映射的断点。  
@@ -59,11 +59,11 @@ Visual Studio 调试器提供了一个全面的调试环境，以便查找和更
 ## <a name="debugging-ajax-script-applications"></a>调试 AJAX 脚本应用程序  
  支持 AJAX 的 Web 应用程序大量使用脚本代码，从而给调试带来特别大的难度。 有关 AJAX 调试技术的信息，请参见  
   
- [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)中打开任何脚本文档。  
+ [调试和跟踪 Ajax 应用程序概述](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试 ASP.NET 和 AJAX 应用程序](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [脚本调试的限制](../debugger/limitations-on-script-debugging.md)   
- [变量窗口](../debugger/debugger-windows.md)   
+ [变量的 Windows](../debugger/debugger-windows.md)   
  [即时窗口](../ide/reference/immediate-window.md)   
- [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [调试和跟踪 Ajax 应用程序概述](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

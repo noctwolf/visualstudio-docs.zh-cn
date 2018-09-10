@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 093b7732f78f7257a2e58812ca2697496d65682f
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 97d39a171d812915a1cf3c1c6450c73098067949
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056477"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284193"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
 使用安装的报表挂钩函数[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次调用[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)生成调试报告。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：  
@@ -51,4 +51,4 @@ typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
   
 ## <a name="see-also"></a>请参阅  
  [编写调试挂钩函数](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 示例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2 示例](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

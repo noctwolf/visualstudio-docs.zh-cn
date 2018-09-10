@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838cbbe1b2f053a20113fddce238c84e646cbd62
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2187e0d930195a7e40464d431d51d788dd26a119
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638660"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281164"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。  
@@ -229,7 +229,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>启用到 WebOC 的 HDPI 支持  
  默认情况下，HDPI 检测和支持，不要启用 WebOC 控件 （如 WPF 中或 IWebBrowser2 接口中的 WebBrowser 控件）。 结果将是太小，高分辨率显示器的显示内容与嵌入的控件。 下面介绍如何启用特定的 web WebOC 实例中的高 DPI 支持。  
   
- 实现 IDocHostUIHandler 接口 (请参阅 MSDN 文章[IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx)接口):  
+ 实现 IDocHostUIHandler 接口 (请参阅 MSDN 文章[IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85)):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -308,7 +308,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- （可选） 实现 ICustomDoc 接口 (请参阅 MSDN 文章[ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx)接口):  
+ （可选） 实现 ICustomDoc 接口 (请参阅 MSDN 文章[ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85)):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

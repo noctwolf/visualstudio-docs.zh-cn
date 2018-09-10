@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3364bdcab6ac455833e33cf59391aaef4f0af81d
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 6884ec7284fa99a9221b378935250cc676d11de8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058004"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280199"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。  
@@ -41,11 +41,11 @@ ms.locfileid: "37058004"
  
  ####  <a name="TFS2017"></a> Team Foundation Server 2017
 
- 设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
+ 设置生成管道以将源、 生成和符号的位置添加到生成清单 （BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
   
-1.  如果已使用 ASP.NET Core (.NET Framework) 模板的生成定义，你可以[编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)
+1.  如果已使用 ASP.NET Core (.NET Framework) 模板的生成管道，你可以[编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer)
   
-     ![查看生成定义 TFS 2017 中的](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+     ![查看生成在 TFS 2017 中的管道](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
   
 2.  如果创建新的模板，请选择 ASP.NET Core (.NET Framework) 模板。 
   
@@ -55,9 +55,9 @@ ms.locfileid: "37058004"
   
      如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。
   
-     ![设置生成定义 TFS 2017 中的符号路径](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![设置符号路径中生成管道 TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     有关符号的详细信息，请参阅[发布符号数据](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     有关符号的详细信息，请参阅[发布符号数据](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)。  
   
 4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
   
@@ -70,11 +70,11 @@ ms.locfileid: "37058004"
     转到[步骤 2： 发布你的应用](#DeployRelease)  
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
- 设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。  
+ 设置生成管道以将源、 生成和符号的位置添加到生成清单 （BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。  
 
-1.  [编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/Library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1.  [编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer)  
 
-     ![查看生成定义 TFS 2013 中的](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+     ![查看生成在 TFS 2013 中的管道](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
 
 2.  选择默认模板 (TfvcTemplate.12.xaml) 或自己的自定义模板。  
 
@@ -84,9 +84,9 @@ ms.locfileid: "37058004"
 
      如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。  
 
-     ![设置生成定义 TFS 2013 中的符号路径](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+     ![设置符号路径中生成管道 TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
 
-     有关符号的详细信息，请参阅[发布符号数据](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     有关符号的详细信息，请参阅[发布符号数据](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols)。  
 
 4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
 
@@ -119,11 +119,11 @@ ms.locfileid: "37058004"
 
 1.  在你的 Team Foundation Build 服务器上安装 Visual Studio 2013（任意版本）。  
 
-2.  在你的生成定义中，指定保存符号的位置，以便自动为你的源编制索引。  
+2.  在生成管道中，指定保存符号，以便您的源自动编制索引的位置。  
 
      如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。  
 
-3.  将这些 MSBuild 参数添加到你的生成定义：  
+3.  将这些 MSBuild 参数添加到你的生成管道：  
 
     -   **/p:VisualStudioVersion = 12.0**  
 
@@ -176,7 +176,7 @@ ms.locfileid: "37058004"
  **/p: buildsymbolstorepath =**\<*符号的路径*>  
 
 ##  <a name="DeployRelease"></a> 步骤 2： 发布你的应用  
- 如果使用生成过程创建的 [Web.Deploy 包](http://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
+ 如果您使用[Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx)创建的生成过程以将应用部署、 生成清单从自动重命名"*ProjectName*。BuildInfo.config"为"BuildInfo.config"，与你的 web 服务器上的应用程序的 Web.config 文件一起放在同一文件夹中。  
 
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
 
@@ -234,7 +234,7 @@ ms.locfileid: "37058004"
 
      ![转到应用程序代码在性能事件](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
 
-     现在你可以查看其他记录的值和调用堆栈、单步执行代码，或者使用“IntelliTrace”  窗口在此性能事件期间调用的 [其他方法之间“及时”前后移动](../debugger/intellitrace.md) 。 [所有这些其他事件和 IntelliTrace 日志中的信息是什么？](../debugger/using-saved-intellitrace-data.md)[可以做些什么我在这里？](#WhatElse)[要了解有关性能事件的详细信息？](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     现在你可以查看其他记录的值和调用堆栈、单步执行代码，或者使用“IntelliTrace”  窗口在此性能事件期间调用的 [其他方法之间“及时”前后移动](../debugger/intellitrace.md) 。 [所有这些其他事件和 IntelliTrace 日志中的信息是什么？](../debugger/using-saved-intellitrace-data.md)[可以做些什么我在这里？](#WhatElse)[要了解有关性能事件的详细信息？](https://blogs.msdn.microsoft.com/devops/2013/09/20/performance-details-in-intellitrace/)  
 
 ### <a name="diagnose-an-exception"></a>诊断异常  
 
@@ -336,7 +336,7 @@ ms.locfileid: "37058004"
 
      有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：  
 
-    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号码的详细信息，请参阅[使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/Library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号码的详细信息，请参阅[使用生成号为已完成的生成提供有意义的名称](/azure/devops/pipelines/build/options)。  
 
     -   **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。  
 
@@ -396,9 +396,9 @@ ms.locfileid: "37058004"
      ![源代码管理中打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
 
 ####  <a name="WhatWorkspace"></a> 问： 什么是工作区？  
- **答：** 你[工作区存储源的副本](http://msdn.microsoft.com/Library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)以便您可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
+ **答：** 你[工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces)以便您可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
 
 ####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的此消息？  
- ![使用不受信任的符号路径进行调试？] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
+ ![使用不受信任的符号路径进行调试？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  
 
  **答：** 何时会出现此消息中生成清单文件的符号路径 (\<*ProjectName*>。中的受信任的符号路径列表不包含 BuildInfo.config)。 你可将路径添加到调试器选项中的符号路径列表。

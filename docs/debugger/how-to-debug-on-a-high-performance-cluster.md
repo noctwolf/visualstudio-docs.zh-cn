@@ -18,19 +18,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4a82f8974576b2a917b7bbaee7e757513501c7
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 9964621c216d058581d9298956ba90ac6cdbef86
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058030"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280787"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>如何：在高性能群集上进行调试
 在高性能群集上调试多处理程序类似于在远程计算机上调试普通程序。 但是，还有一些其他注意事项。 有关常规远程设置要求，请参阅[远程调试](../debugger/remote-debugging.md)。  
   
  当在高性能群集上进行调试时，可以使用所有可用于远程调试的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 调试窗口和技术。 但是由于你正在进行远程调试，所以外部控制台窗口不可用。  
   
- **线程**窗口和**进程**窗口是对于调试并行应用程序特别有用。 有关如何使用这些窗口的提示，请参阅[如何： 使用进程窗口](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)并[演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
+ **线程**窗口和**进程**窗口是对于调试并行应用程序特别有用。 有关如何使用这些窗口的提示，请参阅[如何： 使用进程窗口](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))并[演练： 使用线程窗口进行调试](../debugger/how-to-use-the-threads-window.md)。  
   
  下面的过程演示在高性能群集上调试时特别有用的一些技术。  
   
@@ -101,7 +101,7 @@ ms.locfileid: "37058030"
 ## <a name="see-also"></a>请参阅  
  [调试多线程应用程序](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)   
- [如何： 使用进程窗口](http://msdn.microsoft.com/en-us/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [如何： 使用进程窗口](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))   
  [开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)   
- [线程和进程](http://msdn.microsoft.com/en-us/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [线程和进程](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))   
  [使用断点](../debugger/using-breakpoints.md)

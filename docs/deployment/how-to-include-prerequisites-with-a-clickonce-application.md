@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f961229e60cb291efdd7630f9df10e162c2f17b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 8026bb0cc85ef71766ab5c2538a3d6476d871cb8
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153837"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280710"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何： 将必备组件与 ClickOnce 应用程序包括
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发这些软件。 当你发布的应用程序并选择**从与我的应用程序相同的位置下载系统必备组件**，如果安装程序包不在将会出错**包**文件夹。  
   
 > [!NOTE]
->  若要添加.NET Framework 的安装程序包，请参阅[开发人员的.NET Framework 部署指南](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx)。  
+>  若要添加.NET Framework 的安装程序包，请参阅[开发人员的.NET Framework 部署指南](/dotnet/framework/deployment/deployment-guide-for-developers)。  
   
 ##  <a name="Package"></a> 若要使用 Package.xml 添加安装程序包  
   

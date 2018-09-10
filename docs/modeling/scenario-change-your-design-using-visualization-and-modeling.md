@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 27a4204394003f0b4ea6baf7691c9591d3a5b613
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623795"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280219"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -216,9 +216,9 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 请参阅：
 
-- [使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)
+- [有关敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)
 
-- [图表、 仪表板和小组件 (VSTS)](/vsts/report/dashboards/overview?view=vsts)
+- [图表、 仪表板和小组件 （Azure DevOps 服务）](/azure/devops/report/dashboards/overview?view=vsts)
 
 - [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
 
@@ -238,13 +238,13 @@ Dinner Now 提供了大批自动测试，Lucerne 可以重用这些测试，因�
 
 请参阅：
 
-- [测试应用程序](/vsts/test/overview?view=vsts)
+- [测试应用程序](/azure/devops/test/overview?view=vsts)
 
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
 
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [生成和发布](/vsts/build-release/index)
+- [Azure 的管道](/azure/devops/pipelines/index)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>更新系统使用可视化和建模
 
@@ -377,8 +377,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - *“依赖关系”* ，指示更改一个分类器的定义可能会更改另一个分类器的定义。
 
-- *“泛化”* ，指示特定分类器从通用分类器继承部分定义。 
-  *“实现”* ，指示类将实现由接口提供的操作和属性。
+- *“泛化”* ，指示特定分类器从通用分类器继承部分定义。 *“实现”* ，指示类将实现由接口提供的操作和属性。
 
      要创建这些关系，请使用“继承”  工具。 也可以将实现表示为 *“棒糖形”*。
 
