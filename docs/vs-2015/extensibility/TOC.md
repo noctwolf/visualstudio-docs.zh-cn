@@ -94,7 +94,7 @@
 ## [扩展解决方案资源管理器筛选器](extending-the-solution-explorer-filter.md)
 ## [管理解决方案中的项目加载](managing-project-loading-in-a-solution.md)
 # [创建自定义项目和项模板](creating-custom-project-and-item-templates.md)
-## [升级 Visual Studio“15” 的自定义项目和项模板](upgrading-custom-project-and-item-templates-for-visual-studio-“15”.md)
+## [升级 Visual Studio“15” 的自定义项目和项模板](upgrading-custom-project-and-item-templates-for-visual-studio-2017.md)
 ## [如何：使用向导来处理项目模板](how-to-use-wizards-with-project-templates.md)
 ## [Visual Studio 模板架构参考](visual-studio-template-schema-reference.md)
 ### [AppliesTo 元素（Visual Studio 模板）](appliesto-element-visual-studio-templates.md)
