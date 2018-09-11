@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 37b71d51a62ab83f604c084ec2b5a1fda7594c14
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280295"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289293"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -25,40 +25,40 @@ ms.locfileid: "36280295"
 1.  若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。
-
-    ![WhiteSource 权益磁贴](_img\vs-whitesource\vs-whitesource-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益磁贴](_img\vs-whitesource\vs-whitesource-tile.png)
 
 2.  你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。
-
-    ![WhiteSource 权益代码 ](_img\vs-whitesource\vs-whitesource-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益代码](_img\vs-whitesource\vs-whitesource-code.png)
 
 3.  在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。
-
-    ![激活 WhiteSource 权益](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![激活 WhiteSource 权益](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
 
 4.  该页面的“激活帐户”部分将引导你完成以下四个步骤：
 
     - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 VSTS 的免费扩展](/vsts/marketplace/install-vsts-extension?view=vsts)。
 
     如果使用的是 VSTS，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此处以使用 VSTS 为例。
-
-    ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
 
     - 接下来，选择想要使用的 VSTS 帐户，然后单击“确定”。  （如果尚未设置 VSTS，请访问[权益](https://my.visualstudio.com/benefits)页并激活 VSTS 权益。）
-
-    ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
     - 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。
-
-    ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
 5.  打开 Visual Studio Team Services (VSTS) 项目仪表板，单击“生成和发布”菜单，然后选择“WhiteSource Bolt”。
-
-    ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
 6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”。 一个激活代码只能激活一个项目。
-
-    ![WhiteSource 权益激活代码](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![WhiteSource 权益激活代码](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
 
 7.  激活现已完成，订阅还剩 180 天。
 
