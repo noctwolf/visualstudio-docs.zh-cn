@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e18ee3a48320c076659d54a7ae9d996a982162b
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: b3c0c17da3bd5b83260556a7762733924cfe276c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623579"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283610"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。
@@ -42,7 +42,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 
 ## <a name="see-also"></a>请参阅
 
-- [测试应用程序](/vsts/test/overview?view=vsts)
+- [测试应用程序](/azure/devops/test/overview?view=vsts)
 - [建立用户需求模型](../modeling/model-user-requirements.md)
 - [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)
 
