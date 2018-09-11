@@ -1,5 +1,5 @@
 ---
-title: 意外的限定符 (JavaScript) |Microsoft 文档
+title: 意外的限定符 (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -20,39 +20,39 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb6d6d3129057c399dd7369c6f69eb7396f07ab4
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: ef0955bac35009d9b6c82f1856bb9005a08043ad
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633247"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282256"
 ---
 # <a name="unexpected-quantifier-javascript"></a>意外的限定符 (JavaScript)
-当撰写正则表达式搜索模式时，你将创建非法重复重模式元素。 例如，模式  
+编写正则表达式搜索模式，创建的 pattern 元素非法的重复因子。 例如，模式  
   
 ```  
 /^+/  
 ```  
   
- 是非法的因为元素 ^ （输入开头） 不能具有重复因素。 下表列出的元素，不能具有重复因素。  
+ 是非法的因为元素 ^ （输入的开头） 不能具有重复因子。 下表列出了这些元素不能具有重复因素。  
   
 |元素|描述|  
 |-------------|-----------------|  
-|^|输入的开头|  
+|^|输入起始处|  
 |$|输入结束|  
-|\b|在单词边界|  
+|\b|字边界|  
 |\B|非字边界|  
-|*|零个或多个重复|  
-|+|一个或多个重复|  
-|?|零个或一个重复|  
-|{n}|重复 n 次|  
-|{n}|n 次或多次重复|  
-|{n，m}|从 n 到 m 重复，（含）|  
+|*|零个或多个重复项|  
+|+|一个或多个重复项|  
+|?|零个或一个重复项|  
+|{n}|n 重复|  
+|{n}|n 个或多个重复项|  
+|{n，m}|从 n 到 m 次重复，非独占|  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   请确保您的搜索模式元素包含仅合法重复因素。  
+-   请确保您的搜索模式元素包含仅法律重复因素。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [正则表达式对象](../../javascript/reference/regular-expression-object-javascript.md)   
- [正则表达式语法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [正则表达式语法 (JavaScript)](https://msdn.microsoft.com/library/1400241x)

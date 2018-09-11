@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3c61fc3e2b36dfc28ee7f1a56ace7035360064
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 37ff64b5c1b5cec9a4b05f293bfc8c43ac7e1bb7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077560"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282259"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
 本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序。  
@@ -40,5 +40,5 @@ ms.locfileid: "39077560"
 |[下载 ClickOnce 部署 API 使用设计器中使用按需程序集](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|说明如何仅在应用程序首次使用程序集时进行下载。|  
   
 ## <a name="see-also"></a>请参阅  
- [Visual Studio 演练](http://msdn.microsoft.com/en-us/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
+ [Visual Studio 演练](https://msdn.microsoft.com/library/f5399a1f-2d3d-42fb-b989-134ccda2159f)   
  [Visual Studio 示例](../ide/visual-studio-samples.md)

@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccaafc15d2aff7e9ecfd32dbdb225d450198780c
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: d22c040857db1b10d084bfdba2e4387071a8ebc1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37059253"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282998"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 如果要调试 MFC 程序，这些调试技术可能会有用。  
@@ -83,7 +83,7 @@ _asm int 3
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_The_TRACE_macro"></a> TRACE 宏  
- 若要在调试器的 [“输出”窗口](../ide/reference/output-window.md)中显示来自程序的消息，可以使用 [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) 宏或 MFC [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) 宏。 与 [断言](../debugger/c-cpp-assertions.md)类似，跟踪宏只在程序的“Debug”版本中起作用，在“Release”版本中编译时将消失。  
+ 若要在调试器中显示来自程序的消息[输出窗口](../ide/reference/output-window.md)，可以使用[ATLTRACE](https://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e)宏或 MFC[跟踪](https://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f)宏。 与 [断言](../debugger/c-cpp-assertions.md)类似，跟踪宏只在程序的“Debug”版本中起作用，在“Release”版本中编译时将消失。  
   
  下面的示例显示几种 **TRACE** 宏的用法。 与 `printf`类似， **TRACE** 宏可处理许多参数。  
   
@@ -119,7 +119,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
  MFC 提供一些类和函数来检测曾经被分配但从未释放的内存。  
   
 ###  <a name="BKMK_Tracking_memory_allocations"></a> 跟踪内存分配  
- 在 MFC 中，可以使用 [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) 宏代替 **new** 运算符来帮助定位内存泄漏。 在程序的“Debug”版本中， `DEBUG_NEW` 将为所分配的每个对象跟踪文件名和行号。 当编译程序的“Release”版本时， `DEBUG_NEW` 将解析为不包含文件名和行号信息的简单 **new** 操作。 因此，在程序的“Release”版本中不会造成任何速度损失。  
+ 在 MFC 中，可以使用该宏[DEBUG_NEW](https://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d)来代替**新**运算符来帮助定位内存泄漏。 在程序的“Debug”版本中， `DEBUG_NEW` 将为所分配的每个对象跟踪文件名和行号。 当编译程序的“Release”版本时， `DEBUG_NEW` 将解析为不包含文件名和行号信息的简单 **new** 操作。 因此，在程序的“Release”版本中不会造成任何速度损失。  
   
  如果不想重写整个程序来使用 `DEBUG_NEW` 代替 **new**，则可以在源文件中定义下面的宏：  
   
@@ -138,11 +138,11 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **启用或禁用内存诊断**  
   
--   调用全局函数 [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 来启用或禁用诊断内存分配器。 由于默认情况下内存诊断在调试库中是打开的，所以通常会使用该函数暂时关闭内存诊断，这会提高程序执行速度并减少诊断输出。  
+-   调用全局函数[AfxEnableMemoryTracking](https://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db)启用或禁用诊断内存分配器。 由于默认情况下内存诊断在调试库中是打开的，所以通常会使用该函数暂时关闭内存诊断，这会提高程序执行速度并减少诊断输出。  
   
  **使用 afxMemDF 选择特定内存诊断功能**  
   
--   如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
+-   如果你想对内存诊断功能更精确的控制，您可以有选择地启用单个内存诊断功能打开和关闭通过设置 MFC 全局变量的值[afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086)。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
   
     |“值”|描述|  
     |-----------|-----------------|  
@@ -160,7 +160,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 拍摄内存快照  
   
-1.  创建[CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2)对象，并调用[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)成员函数。 这将创建第一个内存快照。  
+1.  创建[CMemoryState](/previous-versions/visualstudio/visual-studio-2010/2ads32e2(v=vs.100))对象，并调用[cmemorystate:: Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint)成员函数。 这将创建第一个内存快照。  
   
 2.  在程序执行了其内存分配和释放操作以后，创建另一个 `CMemoryState` 对象，并为该对象调用 `Checkpoint` 。 这将得到内存使用的第二个快照。  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
     1.  在中**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
   
-    2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
+    2.  在中[配置管理器对话框](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100))，网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
   
-    3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
+    3.  在中[新建项目配置对话框](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100))，键入新配置，如"Partial debug 调试"，名称**项目配置名称**框。  
   
     4.  在 **“从此处复制设置”** 列表中，选择 **“Release”**。  
   
