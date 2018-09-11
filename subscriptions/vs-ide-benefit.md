@@ -9,12 +9,12 @@ description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Vis
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 571bca9d5192f8499d36819299e76648beebe1a6
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: f65deb92684f043597256d8e2f0664f18da9cfa1
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282621"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289289"
 ---
 # <a name="using-the-visual-studio-2017-benefit"></a>使用 Visual Studio 2017 权益
 
@@ -28,34 +28,36 @@ ms.locfileid: "36282621"
 下载 IDE：
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2. 在“工具”部分中找到“Visual Studio IDE”磁贴，然后单击“权益”磁贴底部的“下载”链接。  也可从[下载](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)页下载。
-
-    ![Visual Studio Enterprise 磁贴](_img\vs-ide-experience\vs-ide-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Visual Studio Enterprise 磁贴](_img\vs-ide-experience\vs-ide-tile.png)
 
 3.  单击此链接，你将被重定向到 Visual Studio Enterprise 的“下载结果”页，可在此处下载 IDE 并获取用于激活的产品密钥。 也可通过单击蓝色的“获取密钥”链接索取产品密钥，或稍后在[产品密钥](https://my.visualstudio.com/productkeys)页上索取产品密钥。
 4.  在“下载结果”页的“详细信息”选项卡上：
     - 选择所需体系结构（x86、x64）
     - 选择语言首选项。
 5.  单击蓝色的“下载”按钮。
-    ![Visual Studio Enterprise 下载详情](_img\vs-ide-experience\vs-ide-download-details.png)
+    > [!div class="mx-imgBorder"]
+    > ![Visual Studio Enterprise 下载详情](_img\vs-ide-experience\vs-ide-download-details.png)
 6.  若要立即安装，请单击“运行”。
 7.  在“用户帐户控制”对话框中，单击“是”。
 8.  单击“继续”接受许可条款。
 9.  安装程序启动时，在相应的选项卡上选择所需的工作负荷、各个组件和语言包。
-    ![自定义 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![自定义 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-customize-install-cropped.png)
 
-10.  单击“安装” 。
+10.  单击“安装”。
 
 11. 安装完成后，可以选择修改安装或启动 Visual Studio。  单击“启动”开始操作。
-
-    ![启动 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![启动 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-launch-cropped.png)
 
 12. 使用与 Visual Studio 订阅关联的帐户登录。
 
 13. 选择喜欢的主题，然后单击“启动 Visual Studio”。
 
 14. 此时将显示“开始”页。  现在就可以使用 Visual Studio 了！
-
-    ![开始使用 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![开始使用 Visual Studio Enterprise](_img\vs-ide-experience\vs-ide-start-cropped.png)
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
@@ -63,8 +65,8 @@ ms.locfileid: "36282621"
 | Visual Studio Enterprise（标准、年度云、月度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是          |
 | Visual Studio Professional（标准、年度云、月度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-| Visual Studio Dev Essentials | 不可用  | Visual Studio 社区 |是 |
+| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不适用          |
+| Visual Studio Dev Essentials | 不适用  | Visual Studio 社区 |是 |
 
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务。
 

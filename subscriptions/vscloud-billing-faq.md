@@ -9,12 +9,12 @@ description: 云订阅的计费问题。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2df0604cff45f6af63070be6c1ba10f23a84b060
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 185b4ebcb374973fdbcc56c81a3474797161736f
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303317"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289304"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 云订阅计费常见问题解答
 
@@ -26,9 +26,9 @@ ms.locfileid: "36303317"
 答：不能。 所有 Visual Studio 云订阅都必须使用 Azure 订阅购买。 （可将其视作你的 Azure 计费帐户。）
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>问：哪些类型的 Azure 订阅可用于购买 Visual Studio 云订阅？
-答：可使用几乎所有 Azure 订阅 - 我们支持使用以下订阅进行购买：连接到[企业协议 (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) 的 Azure 订阅、由云解决方案提供商 (CSP) 设置的 Azure 订阅、通过 Microsoft 开放式许可证经销商设置的 Azure 订阅、即用即付 Azure 订阅，甚至还支持使用 Visual Studio 订阅者设置为订阅者权益的 Azure 订阅进行购买（但不能使用每月额度支付更多 Visual Studio 订阅）。
+答：可使用大多数 Azure 订阅 - 我们支持连接到[企业协议 (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/) 的 Azure 订阅、由云解决方案提供商 (CSP) 设置的 Azure 订阅、通过 Microsoft Open License 经销商设置的 Azure 订阅和即用即付 Azure 订阅。
 
-唯一值得注意的例外是，无法使用 [Azure 免费试用版](https://azure.microsoft.com/pricing/free-trial/)进行购买。
+无法使用某些类型的 Azure 订阅，包括 [Azure 免费试用版](https://azure.microsoft.com/pricing/free-trial/)和作为订阅者权益包含在 Visual Studio 订阅中的订阅。
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>问：我是否需要购买其他 Azure 服务？
 答：完全不需要。 通过 Azure，可以仅购买 Visual Studio 云订阅。

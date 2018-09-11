@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区权
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ded290950425801f4e75dc03156f4260db264cfd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280372"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289462"
 ---
 # <a name="azure-community"></a>Azure 社区
 
@@ -37,16 +37,16 @@ Azure 社区入门很简单。
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在支持部分中，找到“Azure 社区”磁贴，然后单击“获取帮助”链接。
-
-   ![“Azure 社区”磁贴](_img/vs-azure-community/vs-azure-community-tile.png)
+    > [!div class="mx-imgBorder"]
+    >![“Azure 社区”磁贴](_img/vs-azure-community/vs-azure-community-tile.png)
 
 3. 你将看到可用的论坛列表。  只需单击你选择的论坛。
-
-   ![Azure 社区论坛](_img/vs-azure-community/vs-azure-community-forums.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 社区论坛](_img/vs-azure-community/vs-azure-community-forums.png)
 
 4.  在论坛中，你可以查看主题和回复，搜索问题的答案或发布新问题。
-
-   ![Azure 社区示例](_img/vs-azure-community/vs-azure-community-example.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 社区示例](_img/vs-azure-community/vs-azure-community-example.png)
 
 ## <a name="eligibility"></a>资格
 Azure 社区权益的可用性取决于订阅级别，如下所示：
@@ -58,7 +58,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 一年                                             |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              |一年                                              |  是          |
 | Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）、NFR<sup>1</sup>                                          | 全部                                              |不可用                                              |  否          |
-| Visual Studio Dev Essentials                                        | 不可用                                              |不可用                                              |  否          |
+| Visual Studio Dev Essentials                                        | 不适用                                              |不可用                                              |  否          |
 |
 <sup>1</sup> 包括：限制转售 (NFR)、Microsoft FTE、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)
 

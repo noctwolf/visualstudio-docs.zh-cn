@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5769acd07d41acc5f43773e88fdda6aec301f09b
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326928"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289526"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -23,7 +23,8 @@ ms.locfileid: "36326928"
    > [!NOTE]
    > 并非所有给定级别的订阅都符合接收支持事件的条件。 通过 FTE、NFR、MPN、MCT 和其他程序获得的订阅不会收到支持事件。 如果订阅不符合接收技术支持事件的条件，则可用权益中不会显示“技术支持”磁贴。
 
-   ![技术支持权益磁贴](_img\vs-tech-support\vs-tech-support-tile.png)
+> [!div class="mx-imgBorder"]
+> ![技术支持权益磁贴](_img\vs-tech-support\vs-tech-support-tile.png)
 
 
 1.  若要开始使用技术支持权益，请单击“技术支持”磁贴上的“聊天以激活”。 
@@ -31,8 +32,8 @@ ms.locfileid: "36326928"
 3.  若要完成该进程，需向代表提供：
     - 用于登录到订阅的电子邮件地址
     - 订阅 ID，可在“[订阅](https://my.visualstudio.com/subscriptions)”选项卡中找到。
-
-    ![技术支持权益查找订阅 ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![技术支持权益查找订阅 ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
     > [!NOTE]
@@ -46,11 +47,13 @@ ms.locfileid: "36326928"
 ### <a name="submit-an-incident-online"></a>联机提交事件
 
 1.  若要[联机提交事件](http://support.microsoft.com/oas/)，请指定需要帮助的产品。 可从各种列表中进行选择，也可按名称进行搜索。 例如，如果要为 Visual Studio Enterprise 2017 提交事件，可以单击“开发人员工具”组中的“Visual Studio”。
-    ![技术支持权益选择事件产品](_img\vs-tech-support\vs-tech-support-select-product.png)
+    > [!div class="mx-imgBorder"]    
+    > ![技术支持权益选择事件产品](_img\vs-tech-support\vs-tech-support-select-product.png)
 
 2.  选择需要获得相应支持的产品。 （例如，单击 Visual Studio 产品列表中的“Visual Studio Enterprise 2017”。）
 3.  在“创建事件”页上，从下拉列表中选择合适的问题类型。 对于本示例，我们选择“集成开发环境(IDE)”。
-    ![技术支持权益创建事件](_img\vs-tech-support\vs-tech-support-create-incident.png)
+    > [!div class="mx-imgBorder"]    
+    > ![技术支持权益创建事件](_img\vs-tech-support\vs-tech-support-create-incident.png)
 
 4.  然后选择最符合你的疑问/问题的“类别”。 对于本示例，我们选择“架构师工具”。
 5.  单击“启动请求”。
@@ -60,7 +63,8 @@ ms.locfileid: "36326928"
     - 输入访问 ID 和合同 ID
     - 单击“添加”
 7.  添加支持合同后，该合同将出现在专业技术支持合同列表中。 选择该合同，然后单击“继续”。
-     ![技术支持权益支付](_img\vs-tech-support\vs-tech-support-payment.png)
+    > [!div class="mx-imgBorder"]     
+    > ![技术支持权益支付](_img\vs-tech-support\vs-tech-support-payment.png)
 
 8.  提供联系信息和首选联系方式，然后单击“继续”。
 9.  为支持事件提供一个标题，然后对问题进行描述。

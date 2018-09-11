@@ -9,16 +9,19 @@ description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d116e4c08f3a95eeceded590b6384e97ab47e839
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281646"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289354"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
 Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + 安全性 (EMS)。  使用 EMS - Azure Active Directory、Microsoft Intune、Azure 信息保护、Microsoft Advanced Threat Analytics 和 Microsoft Cloud App Security 保护和管理标识、设备、应用程序和数据。
+
+> [!NOTE]
+> 如果通过批量许可购买多年订阅，EMS 权益当前仅在第一年可用。  
 
 ## <a name="activation-steps"></a>激活步骤
 
@@ -27,24 +30,24 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。
-
-    ![EMS 权益磁贴](_img\vs-ems\vs-ems-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 权益磁贴](_img\vs-ems\vs-ems-tile.png)
 
 2.  在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”。
-
-    ![EMS 权益：创建帐户](_img\vs-ems\vs-ems-create-account-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 权益：创建帐户](_img\vs-ems\vs-ems-create-account-cropped.png)
 
 3. 创建用户 ID 和密码。  单击“创建我的帐户”，然后继续。
-
-    ![EMS 权益：创建用户 ID](_img\vs-ems\vs-ems-userID-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![EMS 权益：创建用户 ID](_img\vs-ems\vs-ems-userID-cropped.png)
 
 4.  接下来，请提供电话号码，以通过电话或短信接收验证码。  输入验证码，然后单击“下一步”。
+    > [!div class="mx-imgBorder"]
+    > ![EMS 权益：验证](_img\vs-ems\vs-ems-robot-cropped.png)
 
-    ![EMS 权益：验证](_img\vs-ems\vs-ems-robot-cropped.png)
-
-5.  下一页将显示登录页和用户 ID。  保存该信息，供之后使用。  单击“你已准备就绪….”。
-
-    ![已创建 EMS 权益帐户](_img\vs-ems\vs-ems-save-info-cropped.png)
+5.  下一页将显示登录页和用户 ID。  保存该信息，供之后使用。  单击“你已准备就绪….”
+    > [!div class="mx-imgBorder"]
+    > ![已创建 EMS 权益帐户](_img\vs-ems\vs-ems-save-info-cropped.png)
 
 6.  EMS 需要访问 Microsoft [Azure 门户](https://azure.microsoft.com)。  按照 EMS 登录页的三个步骤激活 Azure 订阅、添加用户并配置 EMS。
 
@@ -53,12 +56,12 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是          |
 | Visual Studio Professional（标准<sup>2</sup>、年度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用          |
-| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
-| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
-| Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不适用          |
+| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不适用          |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不适用 |
+| Visual Studio Dev Essentials | 不适用  | 不可用 |不适用 |
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)*。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional)
 

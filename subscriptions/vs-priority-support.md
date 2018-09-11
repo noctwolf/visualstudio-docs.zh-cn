@@ -9,18 +9,18 @@ description: 了解有关 Visual Studio 订阅中包含的优先支持权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 286223c52a05e9dae709d7a07bde84f8e3c4d6b3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 73665a2d423d5284f616354ccd341a8b5ce476f3
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567150"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289407"
 ---
 # <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的优先支持权益
 
 优先支持权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。  如果社区在两天内未回答你的问题，Microsoft 的支持团队将给予答复。
 
-具有选定的 Visual Studio 订阅的订阅者有资格通过涵盖各类主题的大量论坛受到优先支持。
+具有选定的 Visual Studio 订阅的订阅者有资格通过涵盖各类主题的大量论坛受到优先支持。  单击以下任何链接直接进入该论坛。  
 
 ## <a name="included-forums"></a>包含的论坛
 

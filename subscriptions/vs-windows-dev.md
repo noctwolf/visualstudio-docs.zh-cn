@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 406189fb2e9437c5a7b767d7abc7f7aa2c83e84f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382446"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289414"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 
@@ -29,12 +29,12 @@ ms.locfileid: "39382446"
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在“工具”部分中找到“Windows 开发人员帐户”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。  将代码复制到剪贴板，然后单击“激活”。
-
-    ![Windows 开发者权益磁贴](_img\vs-windows-dev\vs-windows-dev-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 开发者权益磁贴](_img\vs-windows-dev\vs-windows-dev-tile.png)
 
 2. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 站点上可以开始注册过程。  单击“注册”以继续。
-
-    ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
 
 3. 登录到你的订阅。  如果有多个帐户，请选择与你的企业订阅相关联的帐户。
 4. 在下一页中，选择居住地或业务所在地的国家/地区，然后单击“下一步”。
@@ -43,8 +43,8 @@ ms.locfileid: "39382446"
 7. 提供你的联系信息和首选电子邮件语言，然后单击“下一步”。
 8. 可能需要验证密码。  输入密码，然后单击“登录”。
 9. 在“注册 – 付款”页上，将之前复制的代码粘贴到“促销代码”字段中。  该页面将更新，显示“不需要付款”。  单击 **“下一步”**。
-
-    ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
 
 10. 查看帐户信息、应用开发人员协议，然后单击复选框以指示接受条款和条件。  然后，单击“完成”。
 11. 单击“转到仪表板”，开始使用你的 Windows 开发者帐户！

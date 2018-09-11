@@ -9,12 +9,12 @@ description: 了解 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 4ae10da644f61d518370605322fee842d3a4e4a7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380787"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289366"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -27,8 +27,8 @@ ms.locfileid: "39380787"
 
 ## <a name="activation-steps"></a>激活步骤
 1. 要激活订阅，请连接到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)，然后在“专业开发”部分中的 Pluralsight 权益磁贴上单击“获取代码”链接。
-
-    ![Pluralsight 权益磁贴](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益磁贴](_img\vs-pluralsight\vs-pluralsight-3month-tile.png)
 
     > [!IMPORTANT]
     > 单击 Pluralsight 权益磁贴上的“获取代码”链接时，可能会收到以下消息：
@@ -36,40 +36,40 @@ ms.locfileid: "39380787"
     > “请注意：如果此前已通过 Visual Studio 订阅激活其他 Pluralsight 套餐，使用此代码可能无法创建新的 Pluralsight 帐户。”
 
 2. 你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”。
-
-    ![Pluralsight 权益激活](_img\vs-pluralsight\vs-pluralsight-activate.png)
+    > [!div class="mx-imgBorder"]
+    > ![激活 Pluralsight 权益](_img\vs-pluralsight\vs-pluralsight-activate.png)
 
 3.  将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。  在此示例中，我们将激活通过 Visual Studio Dev Essentials 成员身份提供的权益。 单击“激活权益”。
-
-    ![Pluralsight VSDE 登录页](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight VSDE 登录页](_img\vs-pluralsight\vs-pluralsight-vsde-landing.png)
 
 4.  在激活页上执行以下操作：
     - 在窗体上提供所需的联系人信息
     - 单击复选框接受使用和隐私策略条款
     - 单击“我同意，激活权益”。
-
-    ![激活 Pluralsight 权益](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
-
-    ![Pluralsight 权益条款](_img\vs-pluralsight\vs-pluralsight-terms.png)
+    > [!div class="mx-imgBorder"]
+    > ![激活 Pluralsight 权益](_img\vs-pluralsight\vs-pluralsight-create-account-no-code.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益条款](_img\vs-pluralsight\vs-pluralsight-terms.png)
 
 5.  设置帐户可能需要一段时间。  设置完成后，会在页面上看到一条确认消息，并收到含有登录信息的电子邮件。  电子邮件将发送到创建帐户时指定的别名。  如果在查找邮件时遇到问题，请务必检查垃圾邮件文件夹。
-
-    ![Pluralsight 权益确认](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益确认](_img\vs-pluralsight\vs-pluralsight-confirmation-vse.png)
 
     > [!NOTE]
     > 如果帐户不符合兑换新产品/服务的条件，则会在收到的电子邮件中说明因不符合条件以致创建帐户时出现问题。  其中还包含用于联系 Pluralsight 支持团队的信息，他们可解答有关帐户的任何问题。
 
 6.  成功创建帐户后，收到的电子邮件将包含用户名，并请求创建密码。  提供密码，再次输入以确认，然后单击“登录到 Pluralsight”。
-
-    ![Pluralsight 权益欢迎电子邮件](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益欢迎电子邮件](_img\vs-pluralsight\vs-pluralsight-welcome-email.png)
 
 7.  输入欢迎电子邮件提供的用户名和刚刚创建的密码，然后单击“登录”。
-
-    ![Pluralsight 权益登录](_img\vs-pluralsight\vs-pluralsight-login.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益登录](_img\vs-pluralsight\vs-pluralsight-login.png)
 
 8.  就这么简单！  现在便可以开始学习数以千计的 Pluralsight 课程了！
-
-    ![Pluralsight 权益主页](_img\vs-pluralsight\vs-pluralsight-home.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pluralsight 权益主页](_img\vs-pluralsight\vs-pluralsight-home.png)
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
@@ -80,7 +80,7 @@ ms.locfileid: "39380787"
 | MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                                           |否<sup>2</sup>         |
 | Visual Studio Dev Essentials | NA  | 3 个月 |否|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                  |NA|
-| Visual Studio Enterprise (NFR<sup>1</sup> ) | 计划                                       | 不可用                                  |NA|
+| Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | 不可用                                  |NA|
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
 
 <sup>2</sup> *Pluralsight 权益绑定到个人，仅限使用一次。订阅者使用该权益后便无法再重置。有关详细信息，请参阅下列常见问题解答。Pluralsight 订阅过期后，你可能有资格在三个研究区域之一访问 50 个选定的 Pluralsight 课程，为期 12 个月。*
