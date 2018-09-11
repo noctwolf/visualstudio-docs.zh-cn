@@ -9,16 +9,16 @@ description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 99c03b19281ef9e53695b956a34b0682fb042f56
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e183b74e326efa65b810f7f46fd198e43aa796bf
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380598"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289362"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 
-可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为云订阅。
+可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”。
 
 [比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)
 
@@ -31,36 +31,41 @@ ms.locfileid: "39380598"
 0.  登录到[“Visual Studio Marketplace”&gt;“订阅”](https://marketplace.visualstudio.com/subscriptions)。
 
 0.  选择想购买的订阅，例如：
-
-    <img alt="Buy a Visual Studio subscription" src="_img/buy-vs-subscriptions/buy-vs-sub-start.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![购买 Visual Studio 订阅](_img/buy-vs-subscriptions/buy-vs-sub-start.png)
 
 0.  选择用于计费的 Azure 订阅。 如果没有 Azure 订阅，可新建一个。
-
-    <img alt="Select Azure subscription for billing" src="_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![选择 Azure 订阅以进行结算](_img/buy-vs-subscriptions/buy-vs-sub-Azure-sub.png)
 
 0.  选择要购买的订阅数。
-
-    <img alt="Select number of subscriptions" src="_img/buy-vs-subscriptions/buy-vs-sub-users.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![选择订阅数量](_img/buy-vs-subscriptions/buy-vs-sub-users.png)
 
     如果不希望将订阅分配给自己，则清除“将此订阅分配给我”。
 
 0.  确认并完成购买。 如果为自己分配了订阅，则可访问 [Visual Studio 订阅者门户](https://my.visualstudio.com)，开始下载软件并使用其他订阅者权益。
 
-    <img alt="Finish purchase successfully" src="_img/buy-vs-subscriptions/buy-vs-sub-success.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![成功完成购买](_img/buy-vs-subscriptions/buy-vs-sub-success.png)
 
-    <img alt="Go to Visual Studio subscriber portal" src="_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![转到 Visual Studio 订阅者门户](_img/buy-vs-subscriptions/view-subscription-benefits-subscriptions-portal.png)
 
-    如果购买了多个订阅，请转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)，将订阅分配给其他人。
+如果购买了多个订阅，请转到 [Visual Studio 订阅管理门户](https://manage.visualstudio.com)，将订阅分配给其他人。
 
-    <img alt="Assign subscriptions to others" src="_img/buy-vs-subscriptions/buy-vs-sub-success-many.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![将订阅分配给其他人](_img/buy-vs-subscriptions/buy-vs-sub-success-many.png)
 
-    <img alt="View subscriptions" src="_img/buy-vs-subscriptions/assign-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![查看订阅](_img/buy-vs-subscriptions/assign-subscriptions.png)
 
 ## <a name="manage-subscriptions"></a>取消续订已购买的云订阅
 
 *   若要更改已购买的订阅数，请执行以下操作：
 
-    <img alt="Change subscriptions" src="_img/buy-vs-subscriptions/manage-subscriptions.png" style="border: 1px solid #CCCCCC" />
+> [!div class="mx-imgBorder"]
+> ![更改订阅](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
 *   若要取消这些订阅，可将订阅数减为零 (0)。 下一个计费周期开始时（对于月度云订阅，为次月第一天；对于年度云订阅，为 12 个月后），它们不再续订。
 

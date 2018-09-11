@@ -12,16 +12,16 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af331926cdcf1532f0672539b08426b433052bf
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: e37645f8960aae54907dffeb0bcb88848d9cd63f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510817"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320574"
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 
-版本控制系统有助于跟踪一段时间内的代码更改。 在用户进行更改的同时，版本控制系统会生成文件快照。 版本控制系统会永久保存此文件快照，以便用户稍后能够根据需要进行查阅。 Visual Studio 提供 [Git](/vsts/git/index) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/index)。 若要在这两个系统之间做出选择，请参阅[选择适合项目的版本控制](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json)。
+版本控制系统有助于跟踪一段时间内的代码更改。 在用户进行更改的同时，版本控制系统会生成文件快照。 版本控制系统会永久保存此文件快照，以便用户稍后能够根据需要进行查阅。 Visual Studio 提供 [Git](/azure/devops/repos/git/index?view=vsts) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/index?view=vsts)。 若要在这两个系统之间做出选择，请参阅[选择适合项目的版本控制](/azure/devops/repos/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json)。
 
 ## <a name="git"></a>Git
 Git 是现今最常用的版本控制系统，并迅速成为版本控制标准。 Git 是分布式版本控制系统。也就是说，代码的本地副本就是一个完整的版本控制存储库。 使用这些功能齐全的本地存储库，可以轻松开展脱机或远程工作。 先在本地提交工作，再将存储库的副本与服务器上的副本进行同步。 这种范例不同于集中式版本控制，后者要求客户端必须先与服务器同步代码，然后才能创建新版代码。
@@ -46,7 +46,7 @@ Git 是现今最常用的版本控制系统，并迅速成为版本控制标准�
         </a>
     </li>
     <li>
-        <a href="/vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -64,7 +64,7 @@ Git 是现今最常用的版本控制系统，并迅速成为版本控制标准�
         </a>
     </li>
     <li>
-        <a href="/vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/git/clone?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -89,7 +89,7 @@ Team Foundation 版本控制 (TFVC) 是一个集中式版本控制系统。 通�
 
 <ul class="panelContent cardsFTitle">
     <li>
-        <a href="/vsts/tfvc/overview">
+        <a href="/azure/devops/repos/tfvc/overview">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -107,7 +107,7 @@ Team Foundation 版本控制 (TFVC) 是一个集中式版本控制系统。 通�
         </a>
     </li>
     <li>
-        <a href="/vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -125,7 +125,7 @@ Team Foundation 版本控制 (TFVC) 是一个集中式版本控制系统。 通�
         </a>
     </li>
    <li>
-        <a href="/vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <a href="/azure/devops/repos/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65929ec5b58e0629b3f52e31299f670543b3cd08
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 56b9e68767d4191aab016e3c0d976efb808aff01
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154380"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282607"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。  
@@ -41,7 +41,7 @@ ms.locfileid: "39154380"
   
 -   *.deploy* 
   
- 但是，可以禁用此选项通过清除**使用".deploy"文件扩展名**选项卡上[Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在这种情况下必须配置 Web 服务器以允许所有文件扩展名在应用程序中使用。  
+ 但是，可以禁用此选项通过清除**使用".deploy"文件扩展名**选项卡上[Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100))，在这种情况下必须配置 Web 服务器以允许所有文件扩展名在应用程序中使用。  
   
  必须配置 *.manifest*， *.application*，并 *.deploy*，例如，如果您将不具有安装的 IIS [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，或如果您是使用另一台 Web 服务器 (例如 Apache)。  
   

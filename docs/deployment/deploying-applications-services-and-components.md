@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 91dc83a1599058e1357c3ac7869f4284a1fc7fc5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 83b6449d3f9fb41280d9e0b051c5baf3edbf5a66
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279110"
+ms.locfileid: "44320548"
 ---
 # <a name="quickstart-first-look-at-deployment-in-visual-studio"></a>快速入门： 首先看一下 Visual Studio 中的部署
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279110"
 
     ![选择发布](../deployment/media/quickstart-publish.png)
 
-- **Visual c + + 运行时**： 可以部署 Visual c + + 运行时使用本地部署或静态链接。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
+- **Visual c + + 运行时**： 可以部署 Visual c + + 运行时使用本地部署或静态链接。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
@@ -76,7 +76,7 @@ ms.locfileid: "44279110"
 
     您还可以部署 ASP.NET 应用程序和服务中的其他方法的数量。 有关详细信息，请参阅[部署 ASP.NET web 应用程序和服务](http://www.asp.net/aspnet/overview/deployment)。
 
-- **Visual c + + 运行时**： 可以部署使用集中部署 Visual c + + 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。 
+- **Visual c + + 运行时**： 可以部署使用集中部署 Visual c + + 运行时。 有关详细信息，请参阅[部署本机桌面应用程序 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp)。
 
 - **Windows 桌面**可以发布到 web 服务器或网络文件共享使用 ClickOnce 部署的 Windows 桌面应用程序。 用户随后只需一次单击即可安装应用程序。 有关详细信息，请参阅[部署桌面应用使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)并[将本机应用使用 ClickOnce 部署](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "44279110"
 
 ## <a name="devops-deployment"></a>DevOps 部署
 
-在团队环境中，可以使用 Azure 管道以启用对应用程序的持续部署。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index)并[部署到 Azure](/azure/devops/deploy-azure/index)。
+在团队环境中，可以使用 Azure 管道以启用对应用程序的持续部署。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index?view=vsts)并[部署到 Azure](/azure/devops/deploy-azure/index?view=vsts)。
 
 ## <a name="deployment-for-other-app-types"></a>对于其他应用类型的部署
 
@@ -122,7 +122,7 @@ ms.locfileid: "44279110"
 | --- | --- | --- |
 | **Office 应用程序** | 可以从 Visual Studio 的 Office 发布外接程序。 | [部署和发布 Office 外接程序](https://dev.office.com/docs/add-ins/publish/publish) |
 | **WCF 或 OData 服务**  | 其他应用程序可以使用 WCF RIA 服务部署到 web 服务器。 | [开发和部署 WCF 数据服务](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | LightSwitch 在 Visual Studio 2017 中，不再受支持，但仍然可以从 Visual Studio 2015 及更早版本部署。 | [部署 LightSwitch 应用程序](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+| **LightSwitch** | LightSwitch 在 Visual Studio 2017 中，不再受支持，但仍然可以从 Visual Studio 2015 及更早版本部署。 | [部署 LightSwitch 应用程序](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>后续步骤
 

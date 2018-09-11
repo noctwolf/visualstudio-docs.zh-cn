@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b8400ce0d407af2318c4fffa19bc2b41e23f034d
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 40e265e5bdc453ec658de16f288e9c184979975f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284128"
+ms.locfileid: "44321250"
 ---
 # <a name="using-the-code-metrics-results-window"></a>使用代码度量结果窗口
 
@@ -102,9 +102,9 @@ ms.locfileid: "44284128"
 
 ## <a name="creating-a-work-item-based-on-code-metric-results"></a>创建基于代码度量结果的工作项
 
-您可以创建[Azure 板](/azure/devops/boards/index)基于工作项会导致**代码度量结果**窗口。 当创建工作项时，Visual Studio 会自动输入中的标题**标题**下的字段和代码度量值数据**历史记录**选项卡。
+您可以创建[Azure 板](/azure/devops/boards/index?view=vsts)基于工作项会导致**代码度量结果**窗口。 当创建工作项时，Visual Studio 会自动输入中的标题**标题**下的字段和代码度量值数据**历史记录**选项卡。
 
-详细了解 Azure 板的工作项，请参阅[的工作项](/azure/devops/boards/work-items/index)。
+详细了解 Azure 板的工作项，请参阅[的工作项](/azure/devops/boards/work-items/index?view=vsts)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要创建基于某一结果的工作项
 

@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7fc119bbd990dab11a144ccc4e1894bb827a2fe1
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 67623989fc8ff2bf2d44bc435a48db81fecb1fba
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118049"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282336"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>配置文件的 SharePoint 应用程序性能
 
@@ -65,7 +65,7 @@ Web 性能测试模拟最终用户可能与 SharePoint 应用程序中进行交�
 |标题|描述|
 |-----------|-----------------|
 |[演练： 分析 SharePoint 应用程序](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|演示如何对 SharePoint 应用程序执行采样配置文件分析。|
-|[发布前对应用进行性能测试](/vsts/test/load-test/run-performance-tests-app-before-release?view=vsts)|介绍如何创建负载测试，帮助您进行压力测试 SharePoint 应用程序。|
+|[发布前对应用进行性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts)|介绍如何创建负载测试，帮助您进行压力测试 SharePoint 应用程序。|
 |[单元测试代码](/visualstudio/test/unit-test-your-code)|介绍如何使用单元测试在代码中查找逻辑错误。|
 |[使用编码的 UI 测试来测试 SharePoint 2010 应用程序](/visualstudio/test/testing-sharepoint-2010-applications-with-coded-ui-tests)|介绍如何测试 SharePoint 应用程序的用户界面。|
 

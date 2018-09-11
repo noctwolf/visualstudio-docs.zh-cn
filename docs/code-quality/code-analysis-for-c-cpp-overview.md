@@ -23,12 +23,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 152d57b0b1d1659883a9096c84b650ad192c34d1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 35f694d9cc397800249dd9b4acd86bf63d22ad93
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280982"
+ms.locfileid: "44320704"
 ---
 # <a name="code-analysis-for-cc-overview"></a>代码分析 C/c + + 概述
 
@@ -64,7 +64,7 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="team-build-integration"></a>Team Build 集成
 
-您可以使用生成系统的集成的功能的步骤的形式运行代码分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]生成过程。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index)。
+您可以使用生成系统的集成的功能的步骤的形式运行代码分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]生成过程。 有关详细信息，请参阅[Azure 管道](/azure/devops/pipelines/index?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 

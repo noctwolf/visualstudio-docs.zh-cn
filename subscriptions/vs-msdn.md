@@ -9,12 +9,12 @@ description: 注册后，可以接收包含在 Visual Studio 订阅中的 MSDN �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7139bbe46b931ce32ea521eab27e7a26f77652dc
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280297"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289545"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MSDN 杂志权益
 
@@ -33,27 +33,27 @@ ms.locfileid: "36280297"
 ### <a name="printed-edition"></a>印刷版
 1.  若要开始接收 MSDN 杂志订阅，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
 2.  在“专业开发”部分，找到“MSDN 杂志”磁贴，然后单击“MSDN 杂志订阅”磁贴上的“订阅”。 （单击磁贴右下角的“!”以访问数字版。）
-
-    ![MSDN 杂志权益磁贴](_img\vs-msdn\vs-msdn-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN 杂志权益：磁贴](_img\vs-msdn\vs-msdn-tile.png)
 
 
 3.  在 MSDN 杂志页上，选择首选订阅类型。  可以选择数字版本，无论你居住在何处都不收取费用。  印刷版本仅对美国居民免费提供。  印刷版本发往非美国地区将收取运费。
-
-    ![MSDN 杂志权益：订阅](_img\vs-msdn\vs-msdn-subs-page-resized.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN 杂志权益：订阅](_img\vs-msdn\vs-msdn-subs-page-resized.png)
 
 4.  提供所需联系信息，然后单击“提交”。  （所选的杂志版本将显示在“杂志订阅”部分。  如果选择印刷版本，第一个选项将显示“是！我想免费接收 1 年（12 期）的 MSDN 杂志”。）
-
-    ![MSDN 杂志权益：个人资料](_img\vs-msdn\vs-msdn-profile.png)
+    > [!div class="mx-imgBorder"]
+    > ![MSDN 杂志权益：配置文件](_img\vs-msdn\vs-msdn-profile.png)
 
 5.  就这么简单。  根据所选的杂志版本，你将开始接收印刷版杂志或附有最新在线版本链接的电子邮件。  请尽情体验吧！
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> |印刷版       |  不是。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 印刷版                                                            |不是。  仅对新订阅者可用         |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不是。  仅对新订阅者可用         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不是。  仅对新订阅者可用         |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> |印刷版       |  不支持。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 印刷版                                                            |不支持。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不支持。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不支持。  仅对新订阅者可用         |
 |Visual Studio Enterprise、Visual Studio Professional（月度云）   | Azure |不可用      |  NA         |
 |Visual Studio Dev Essentials| NA |数字版       |  是|
 
