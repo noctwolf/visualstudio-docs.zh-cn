@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 592c2404d45619d313106526d051d4e18ffc8888
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: ad0b8d2de1cad4f4575ca9ee7f35713383149314
+ms.sourcegitcommit: b45daa3c4f0820b69f9e702c8c1f352ef6856b4d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138659"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43288978"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 
@@ -57,7 +57,6 @@ ms.locfileid: "43138659"
 
 ## <a name="see-also"></a>请参阅
 
-* [安装 Visual Studio](install-visual-studio.md)
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [更新 Visual Studio](update-visual-studio.md)
-* [删除 Visual Studio](remove-visual-studio.md)
+* [卸载 Visual Studio for Mac](/visualstudio/mac/uninstall)

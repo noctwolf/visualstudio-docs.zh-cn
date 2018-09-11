@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c30bf7ab44728d8a10eaa2f420caddcde154f9d3
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282533"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289506"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -29,16 +29,16 @@ Visual Studio App Center 入门十分简单。
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 找到“Visual Studio App Center”磁贴，并单击“开始”。
-
-    ![VS App Center 磁贴](_img/vs-app-center/vs-app-center-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 磁贴](_img/vs-app-center/vs-app-center-tile.png)
 
 3. 下一步，创建帐户。  通过提供你的用户名、电子邮件和密码，你可以使用现有的 Microsoft、Google、GitHub 或 Facebook 帐户进行登录。  单击“创建帐户”，然后继续。
-
-    ![VS App Center 创建帐户](_img/vs-app-center/vs-app-center-create-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 创建帐户](_img/vs-app-center/vs-app-center-create-account.png)
 
 4. 就这么简单。  只需单击“添加新组织”或“添加新应用”即可开始使用！
-
-    ![VS App Center 门户](_img/vs-app-center/vs-app-center-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![VS App Center 门户](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |

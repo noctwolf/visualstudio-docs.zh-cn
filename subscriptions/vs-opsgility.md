@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 中包含的 Opsgility 培训权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f166fe0555bf7eea68927d8c93cdea9790561368
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380305"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289475"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Opsgility 权益
 
@@ -26,26 +26,26 @@ ms.locfileid: "39380305"
 2.  在“权益”页上的“工具”部分中找到“Opsgility”磁贴，然后单击“权益”磁贴底部的“激活”链接。
 
 3.  要使用 Opsgility 权益，请单击权益磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到优惠券代码。  单击“激活”，然后继续。
-
-    ![Opsgility 权益磁贴](_img\vs-opsgility\vs-opsgility-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 权益磁贴](_img\vs-opsgility\vs-opsgility-tile.png)
 
 
 4.  随即重定向到 [Visual Studio Enterprise 的 Opsgility 联机培训](https://www.opsgility.com/vse)登录页。  （你可能会获得与支持专家开始聊天会话的机会。  如果不希望开始聊天，可以将该窗口最小化。）填写所需的联系人信息，然后单击“注册”。
-
-    ![Opsgility 权益登录页](_img\vs-opsgility\vs-opsgility-registration.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 权益登录页](_img\vs-opsgility\vs-opsgility-registration.png)
 
 5.  就这么简单！  准备开始学习吧。  为帮助你入门，页面左侧提供了建议的学习路径列表。  请尽情体验吧！
-
-    ![Opsgility 权益主页](_img\vs-opsgility\vs-opsgility-home-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Opsgility 权益主页](_img\vs-opsgility\vs-opsgility-home-cropped.png)
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售 | 12 个月       |  不是。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 6 个月                                                            |不是。  仅对新订阅者可用         |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 6 个月                                             |  不是。  仅对新订阅者可用         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 6 个月                                              | 不是。  仅对新订阅者可用         |
-| Visual Studio Dev Essentials | NA  | 3 个月 |不是。  仅对新订阅者可用 |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售 | 12 个月       |  不支持。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 6 个月                                                            |不支持。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 6 个月                                             |  不支持。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 6 个月                                              | 不支持。  仅对新订阅者可用         |
+| Visual Studio Dev Essentials | NA  | 3 个月 |不支持。  仅对新订阅者可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
 不包括：Microsoft 合作伙伴网络 (MPN)、Microsoft 重要合作伙伴 (MVP)、Microsoft 认证培训师、BizSpark、Imagine、NFR、FTE

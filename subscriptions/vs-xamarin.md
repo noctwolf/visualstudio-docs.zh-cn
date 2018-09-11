@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中随附的 Xamarin Univers
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 0ba8ec977c0a59e5ae5406cb6bb381c24338d333
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 631a8e692f494c672b8c0894ca7b8434f11525dd
+ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281139"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "43289365"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Xamarin University 培训权益
 
@@ -28,12 +28,12 @@ Visual Studio Dev Essentials 成员有资格创建一个免费帐户，其中包
 ## <a name="activation-steps"></a>激活步骤
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 2.  在“专业开发”部分中找到“Xamarin University 培训”磁贴，然后单击“权益”磁贴左下角的“激活”链接。
-
-    <img alt="Xamarin University Training Benefit Tile" src="_img/vs-xamarin/vs-xamarin-tile.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 培训权益磁贴](_img/vs-xamarin/vs-xamarin-tile.png)
 
 3.  你将被重定向到一个名为“面向 Microsoft Visual Studio 的 Xamarin University 移动培训”的 Xamarin University 网页。  单击“立即激活我的订阅”。
-
-    <img alt="Activate My Subscription Now" src="_img/vs-xamarin/vs-xamarin-activate.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![立即激活我的订阅](_img/vs-xamarin/vs-xamarin-activate.png)
 
     > [!NOTE]
     > 根据屏幕分辨率和缩放级别，可能需要向下滚动才能看到“立即激活我的订阅”按钮。
@@ -47,24 +47,24 @@ Visual Studio Dev Essentials 成员有资格创建一个免费帐户，其中包
     > 5. 再次激活 Xamarin University 培训权益。
 
 4.  将会看到一个登录页，显示一个通知，Xamarin 最近已开始使用 Microsoft 身份验证。  单击“与 Microsoft 联系”。
-
-    <img alt="Connect with Microsoft" src="_img/vs-xamarin/vs-xamarin-connect.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![与 Microsoft 连接](_img/vs-xamarin/vs-xamarin-connect.png)
 
 5. 接下来，系统要求你允许 Xamarin University 让你登录，并允许其访问你的电子邮件地址和基本个人资料。  单击“是”以继续。 如果愿意，可以稍后更改应用程序权限。
-
-    <img alt="Approve access" src="_img/vs-xamarin/vs-xamarin-access.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![批准访问权限](_img/vs-xamarin/vs-xamarin-access.png)
 
     > [!NOTE]
     > 由于登录需要使用 Xamarin University 权益，因此单击“否”将返回到上一页，你将无法继续进行培训。
 
 
 6. 你会看到有关新帐户的欢迎信息。  单击“开始学习”。
-
-    <img alt="Welcome message" src="_img/vs-xamarin/vs-xamarin-confirm.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![欢迎使用消息](_img/vs-xamarin/vs-xamarin-confirm.png)
 
 7. 就这么简单！  你将看到 Xamarin University 门户，然后就可以开始学习了。
-
-     <img alt="Xamarin University portal" src="_img/vs-xamarin/vs-xamarin-portal.png" style="border: 1px solid #CCCCCC" />
+    > [!div class="mx-imgBorder"]
+    > ![Xamarin University 门户](_img/vs-xamarin/vs-xamarin-portal.png)
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
@@ -76,7 +76,7 @@ Visual Studio Dev Essentials 成员有资格创建一个免费帐户，其中包
 | Visual Studio Dev Essentials | NA  | 免费计划                                             |  是        |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。 不包括：MCT 软件和服务*。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。 不包括：MCT 软件和服务。
 
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。

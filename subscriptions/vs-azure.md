@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2f9a0ed97cc0792387e61bfe15e6bb94cd5e1c57
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379731"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289350"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -53,21 +53,22 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2.  在“权益”页上的“工具”部分中找到“Azure”磁贴，然后单击“权益”磁贴底部的“激活”链接。
-
-    ![Azure 磁贴](_img\vs-azure\vs-azure-tile.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 磁贴](_img\vs-azure\vs-azure-tile.png)
 
 3.  填写所需信息以创建 Azure 订阅，单击复选框以接受条款和条件，然后单击“注册”：
-
-    ![Azure 注册](_img\vs-azure\vs-azure-sign-up-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 注册](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
 4.  帐户准备就绪后，可以选择使用 Azure 支持计划（单独出售）或开始使用 Azure 订阅。
-
-    ![Azure 准备工作](_img\vs-azure\vs-azure-getting-ready-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 准备工作](_img\vs-azure\vs-azure-getting-ready-cropped.png)
 
 5.  系统会加载 Azure 仪表板。初次使用时，可以选择观看教程。  教程包含一系列屏幕提示，指示应如何完成各种任务和查找相关信息。  完成或关闭教程后将显示 Azure 仪表板。
 
 6.  可将 [Azure 门户](https://portal.azure.com)收藏为书签，方便以后访问。
-![Azure 仪表板](_img\vs-azure\vs-azure-dashboard-cropped.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure 仪表板](_img\vs-azure\vs-azure-dashboard-cropped.png)
 
 ## <a name="faq"></a>FAQ
 

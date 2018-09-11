@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51543921049082b4fca5a04f20b8adfc753d8112
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 77438e8e98e5cc64564e8903babe3dd0817067ac
+ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283440"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43225079"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
@@ -138,16 +138,7 @@ ms.locfileid: "36283440"
    例如，若要[生成 C++ 应用](../ide/getting-started-with-cpp-in-visual-studio.md)，请单击“已安装”，展开“Visual C++”，然后选择要生成的 C++ 项目类型。 <br><br>
    若要[生成 C# 应用](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)，请单击“已安装”，展开“Visual C#”，然后选择要生成的 C# 项目类型。
 
-## <a name="get-support"></a>获取支持
-
-有时也会遇到问题。 如果 Visual Studio 安装失败，请参阅 [Visual Studio 2017 安装和升级问题疑难解答](troubleshooting-installation-issues.md)页。 如果所有的疑难解答步骤都没有帮助，请通过实时聊天与我们联系，以获得安装帮助（仅限英语）。 有关详细信息，请参阅 [Visual Studio 支持页](https://visualstudio.microsoft.com/vs/support/#talktous)。
-
-下面是另外几个支持选项：
-
-* 可以通过[报告问题](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具（会出现在 Visual Studio 安装程序和 Visual Studio IDE 中）向我们报告产品问题。
-* 可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上与我们分享产品建议。
-* 可以在 [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/)中跟踪产品问题并找到答案。
-* 此外，还可以通过 [Gitter 社区的 Visual Studio 对话](https://gitter.im/Microsoft/VisualStudio)与我们和其他 Visual Studio 开发人员进行交流。 （此选项需要 [GitHub](https://github.com/) 帐户。）
+[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]  
 
 ## <a name="see-also"></a>请参阅
 
@@ -155,6 +146,5 @@ ms.locfileid: "36283440"
 * [修改 Visual Studio 2017](modify-visual-studio.md)
 * [卸载 Visual Studio 2017](uninstall-visual-studio.md)
 * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
-* [Visual Studio 2017 管理员指南](visual-studio-administrator-guide.md)
-  * [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [将生成工具安装到容器](build-tools-container.md)
+* [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [设置和安装 Visual Studio for Mac](/visualstudio/mac/installation)

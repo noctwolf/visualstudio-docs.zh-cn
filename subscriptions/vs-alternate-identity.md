@@ -9,12 +9,12 @@ description: 如何向 Visual Studio 订阅添加备用标识以用于 VSTS 和 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: vs subscription
-ms.openlocfilehash: 70d11f83584d776fef9dae7e771bcdeb40a3c477
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 30aa1e918e289a6cfe8f11329d5df7682cd90239
+ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326301"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "43289329"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 
@@ -43,20 +43,20 @@ ms.locfileid: "36326301"
 
 2. 转到“订阅”。
 
-
-   ![添加备用帐户 - 转到 VS 中的订阅](_img/vs-alternate-identity/my-vs-subscriptions.png)
+    > [!div class="mx-imgBorder"]
+    > ![添加备用帐户 - 转到 VS 中的订阅](_img/vs-alternate-identity/my-vs-subscriptions.png)
 
 3. 选择“添加备用帐户”。
-
-   ![选择添加备用帐户 ](_img/vs-alternate-identity/choose-add-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![选择添加备用帐户](_img/vs-alternate-identity/choose-add-alternate-account.png)
 
 4. 添加工作或学校帐户。
-
-   ![添加工作或学校帐户](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
+    > [!div class="mx-imgBorder"]
+    > ![添加工作或学校帐户](_img/vs-alternate-identity/enter-alternate-account-my-visual-studio-com-portal.png)
 
 5. 使用工作或学校帐户登录到 Visual Studio Team Services (https://{youraccount}.visualstudio.com)。
-
-   ![使用工作或学校帐户](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
+    > [!div class="mx-imgBorder"]
+    > ![使用工作或学校帐户](_img/vs-alternate-identity/sign-in-with-alternate-account.png)
 
 向 Visual Studio 订阅添加备用帐户后，这两个标识可以利用需要使用备用帐户（IDE、VSTS 和 Azure）登录的订阅权益。
 
