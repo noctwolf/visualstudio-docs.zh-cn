@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb3eda4cc3e8615312353cae064e9179514820c4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280219"
+ms.locfileid: "44321159"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -244,7 +244,7 @@ Dinner Now 提供了大批自动测试，Lucerne 可以重用这些测试，因�
 
 - [使用版本控制](http://go.microsoft.com/fwlink/?LinkID=525605)
 
-- [Azure 的管道](/azure/devops/pipelines/index)
+- [Azure 的管道](/azure/devops/pipelines/index?view=vsts)
 
 ## <a name="update-the-system-using-visualization-and-modeling"></a>更新系统使用可视化和建模
 

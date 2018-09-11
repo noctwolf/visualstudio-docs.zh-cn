@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 972338fa4b52a61024cabd098c29cd0f5d9c8a4f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7bddba938360b56b0ed86d4aca35aa963cdd7a84
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280774"
+ms.locfileid: "44321014"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -35,7 +35,7 @@ ms.locfileid: "44280774"
 
 - 记录特定事件
 
-     检查相关的代码，在显示的数据**局部变量**窗口期间调试器事件和函数调用信息
+   检查相关的代码，在显示的数据**局部变量**窗口期间调试器事件和函数调用信息
 
 - 调试难以重现或在部署中出现的错误
 
@@ -46,7 +46,7 @@ ms.locfileid: "44280774"
 |||
 |-|-|
 |**调试我的应用程序使用 IntelliTrace:**<br /><br /> -向我显示过去的事件。<br />-显示我调用与过去的事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|- [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)<br />- [使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)|
-|**测试管理器中的测试会话期间收集 IntelliTrace 数据**|- [收集在手动测试中的更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)|
+|**测试管理器中的测试会话期间收集 IntelliTrace 数据**|- [收集在手动测试中的更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**从已部署应用程序收集 IntelliTrace 数据**|- [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**开始调试从 IntelliTrace 日志文件 （.iTrace 文件）。**|- [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|
 
@@ -89,7 +89,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - 你的应用程序在测试计算机上崩溃，但在开发计算机上成功运行。
 
-     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[手动测试中的更多诊断数据收集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests)并[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
+     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[手动测试中的更多诊断数据收集](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)并[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
 
 - 在已部署的应用程序中发生 Bug 或崩溃。
 
@@ -129,9 +129,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - **.NET framework 事件**
 
-     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如：
-
-    - 对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。
+   默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如，ror 选中复选框事件，IntelliTrace 将收集复选框状态和文本。
 
 - **SharePoint 2010 和 SharePoint 2013 应用程序事件**
 
@@ -175,12 +173,14 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 默认情况下，IntelliTrace 仅收集所选 IntelliTrace 事件的数据。 这可能会让应用程序的速度变慢，也可能不会，具体取决于代码的结构和组织。 例如，如果 IntelliTrace 经常记录某个事件，则这可能会让应用程序的速度变慢。 它还可能会让你考虑重构应用程序。
 
-收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加您保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改.iTrace 文件的最大大小，请转到**工具**，**选项**， **IntelliTrace**，**高级**。 
+收集调用信息可能会让应用程序的速度显著变慢。 它还可能增加您保存到磁盘的任何 IntelliTrace 日志文件（.iTrace 文件）的大小。 若要尽可能减少这些影响，请仅收集你关注的模块的调用信息。  若要更改.iTrace 文件的最大大小，请转到**工具**，**选项**， **IntelliTrace**，**高级**。
 
 ## <a name="in-this-section"></a>本节内容
 
 [IntelliTrace 功能](../debugger/intellitrace-features.md)
-[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)
+
+[诊断部署后出现的问题](../debugger/diagnose-problems-after-deployment.md)
+
 [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)
 
 ### <a name="blogs"></a>博客

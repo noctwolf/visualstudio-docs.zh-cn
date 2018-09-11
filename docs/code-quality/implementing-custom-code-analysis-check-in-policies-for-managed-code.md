@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1c5de11ca7c49070e238125162aa1eeb08ad5bb
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 47973228fbb4d2c7380e4b20537aaf301ed937db
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281450"
+ms.locfileid: "44321094"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>实现托管代码的自定义代码分析签入策略
 
@@ -60,7 +60,7 @@ ms.locfileid: "44281450"
 
 1. 在中**源控件资源管理器**，右键单击新文件夹，然后单击**项目添加到文件夹**。
 
-     有关详细信息，请参阅[Git 和 Azure 存储库](/azure/devops/repos/git/overview)。
+     有关详细信息，请参阅[Git 和 Azure 存储库](/azure/devops/repos/git/overview?view=vsts)。
 
 2. 单击规则集文件的创建，然后单击**完成**。
 
