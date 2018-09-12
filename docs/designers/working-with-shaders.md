@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8992886290b33027692476988f47454409eb0643
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e77085c840a7ef52bdf40d0c0491bfdfc9d384c3
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078311"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280193"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 
@@ -33,7 +33,7 @@ ms.locfileid: "39078311"
 
 着色器设计器以有向图着色器语言 (DGSL) 格式保存着色器，该格式是一种基于有向图标记语言 (DGML) 的 XML 格式。 可以在模型编辑器中直接对 3D 模型应用 DGSL 着色器。 但是，在应用中使用 DGSL 着色器之前，必须将其导出为 DirectX 理解的格式（例如 HLSL）。
 
-由于 DGSL 与 DGML 兼容，因此可以使用旨在分析 DGML 文档的工具来分析 DGSL 着色器。 有关 DGML 的信息，请参阅[了解有向图形标记语言 (DGML)](http://msdn.microsoft.com/library/ee842619.aspx)。
+由于 DGSL 与 DGML 兼容，因此可以使用旨在分析 DGML 文档的工具来分析 DGSL 着色器。 有关 DGML 的信息，请参阅[了解有向图形标记语言 (DGML)](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -10,12 +10,12 @@ ms.author: amburns
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: f47d5c013de34a64591100b8a459f6b18721e0b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0251dd1630ca20e13bcc2238acb32a50031dd122
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635598"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280312"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -82,7 +82,7 @@ ms.locfileid: "42635598"
 |[通用 Windows 平台简介](/windows/uwp/get-started/universal-application-platform-guide)|
 |[创建第一个应用](/windows/uwp/get-started/your-first-app)|
 |[开发通用 Windows 平台 (UWP) 的应用](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[将应用迁移到通用 Windows 平台 (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
+|[将应用迁移到通用 Windows 平台 (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a>构建面向 Android、iOS 和 Windows 的应用 (HTML/JavaScript)
 
@@ -136,9 +136,9 @@ ms.locfileid: "42635598"
 |**了解更多信息**|
 |--------------------|
 |[下载 Visual Studio。](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
-|[安装用于跨平台移动开发的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) （MSDN 库）|
+|[安装用于跨平台移动开发的 Visual C++ 工具。](https://msdn.microsoft.com/library/dn707591.aspx) （MSDN 库）|
 |[了解面向多个平台使用 C++ 的更多信息。](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[安装所需内容，然后针对 Android 创建本机活动应用程序](https://msdn.microsoft.com/library/dn872463\(v=vs.140\).aspx) （MSDN 库）|
+|[安装所需内容，然后针对 Android 创建本机活动应用程序](https://msdn.microsoft.com/library/dn707595.aspx) （MSDN 库）|
 |[深入了解如何与 Android 和 Windows 应用共享 C++ 代码](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[C++ 的跨平台移动开发示例](https://msdn.microsoft.com/library/dn707596.aspx)（MSDN 库）|
 |[C++ 的其他跨平台移动开发示例](https://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=android&f%5B1%5D.Type=ProgrammingLanguage&f%5B1%5D.Value=C%2B%2B&f%5B1%5D.Text=C%2B%2B) (code.msdn)|
@@ -158,12 +158,12 @@ ms.locfileid: "42635598"
 |[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[阅读有关 Visual Studio Tools for Unity 的详细信息](../cross-platform/visual-studio-tools-for-unity.md) |
 |[开始使用 Visual Studio Tools for Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[了解关于 Visual Studio Tools for Unity 2.0 预览版的最新增强功能](http://blogs.msdn.com/b/visualstudio/archive/2014/12/03/visual-studio-tools-for-unity-2-0-preview.aspx) （Visual Studio 博客）|
+|[了解关于 Visual Studio Tools for Unity 2.0 预览版的最新增强功能](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) （Visual Studio 博客）|
 |[观看 Visual Studio Tools for Unity 2.0 预览版的简介视频](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) （视频）|
 |[了解 Unity](http://unity3d.com/) （Unity 网站）|
 
 ## <a name="see-also"></a>请参阅
 
-- [向 Visual Studio 项目添加 Office 365 API](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [向 Visual Studio 项目添加 Office 365 API](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
 - [Azure App Service - 移动应用](https://azure.microsoft.com/services/app-service/mobile/)
 - [Visual Studio App Center](https://docs.microsoft.com/appcenter)
