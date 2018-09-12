@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 235e9386070d316cd9a4f9751ac1d8f1e8fd92b4
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42623851"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384222"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程： 了解如何使用 Visual Studio 进行调试
 
@@ -31,7 +31,7 @@ ms.locfileid: "42623851"
 |---------|---------|
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)上调试，显示了类似的步骤。 |
 
-尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。 若要切换 C# 和 c + + 示例代码，请使用页面的右上角的语言筛选器。
+尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。 若要切换 C# 和 c + + 这篇文章中的代码示例，请使用此页的右上角的语言筛选器。
 
 在本教程中，你将：
 
@@ -286,9 +286,9 @@ ms.locfileid: "42623851"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>设置断点并启动调试器
 
-1. 在中`foreach`循环`Main`函数 (`for` c + + 中的循环`main`函数)，通过单击左边的距的第一行代码中设置断点。
+1. 在中`foreach`循环`Main`函数 (`for` c + + 中的循环`main`函数)，通过单击下面的代码行的左边的距中设置断点：
 
-    ![设置断点](../debugger/media/get-started-set-breakpoint.png "SetABreakPoint")
+    `shape.Draw()` (或者，`shape->Draw()`中 c + +)
 
     将断点设置会显示一个红色圆圈。
 
@@ -296,7 +296,7 @@ ms.locfileid: "42623851"
 
 6. 按**F5**或**开始调试**按钮，该应用启动时，和调试器的运行的代码行到设置了断点。
 
-    ![命中断点](../debugger/media/get-started-hit-breakpoint.png "HitABreakPoint")
+    ![设置并命中断点](../debugger/media/get-started-set-breakpoint.gif)
 
     黄色箭头表示在其暂停调试器，还在相同的点 （此语句具有尚未执行） 处挂起应用程序执行的语句。
 
@@ -308,9 +308,7 @@ ms.locfileid: "42623851"
 
 大多数情况下，我们使用的键盘快捷方式，因为它是好办法获取快速在调试器 （等效命令如菜单命令显示在括号中） 中执行您的应用程序。
 
-1. 按**F11** (或选择**调试 > 单步执行**) （多次在 C# 中) 的一次上暂停直到`shape.Draw`方法调用中`Main`方法 (`shape->Draw` c + + 中)。
-
-1. 按**F11**一次以转到代码`Rectangle`类。
+1. 在暂停时`shape.Draw`方法中调用`Main`方法 (`shape->Draw` c + + 中)，按**F11** (或选择**调试 > 单步执行**) 转到代码`Rectangle`类。
 
      ![使用 F11 来单步执行代码](../debugger/media/get-started-f11.png "F11 单步执行")
 
@@ -364,19 +362,19 @@ ms.locfileid: "42623851"
 
 当您按下**重新启动**，从而节省了时间和停止应用程序并重新启动调试器。 调试器会在执行代码被命中的第一个断点处暂停。
 
-在调试器中设置的断点处停止再次`foreach`循环 (`for` c + + 中的循环)。
+调试器在设置的断点处停止再次`shape.Draw()`方法 (`shape->Draw()` c + + 中)。
 
 ## <a name="inspect-variables-with-data-tips"></a>检查与数据提示中的变量
 
 功能，可使您可以检查变量是在调试器的最有用的功能之一，通过不同的方式来执行此操作。 通常情况下，当你尝试调试问题，您正在尝试找出变量是否存储您期望它们已在特定时间的值。
 
-1. 在暂停时`foreach`循环 (`for` c + + 中的循环)，按**F11**后。
-
-1. 将鼠标悬停`shapes`对象，并查看其默认属性值`Count`属性。
+1. 在暂停时`shape.Draw()`方法 (`shape->Draw()` c + + 中)，将鼠标悬停`shapes`对象，并查看其默认属性值`Count`属性。
 
 1. 展开`shapes`对象以查看所有属性，如数组的第一个索引`[0]`，其中包含的值为`Rectangle`(C#) 或内存地址 （c + +）。
 
-     ![查看数据提示](../debugger/media/get-started-data-tip.png "查看数据提示")
+     ![查看数据提示](../debugger/media/get-started-data-tip.gif "查看数据提示")
+
+    可以进一步展开对象，若要查看其属性，例如`Height`矩形的属性。
 
     通常情况下，在调试时，你想要快速检查对象的属性值和数据提示是执行此操作的好办法。
 
