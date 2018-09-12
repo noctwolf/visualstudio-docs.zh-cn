@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b632e4aa7ce26c9a64517cc3a02b17fc3f939b07
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: ae09c6921bc4f6e0b3bb2a91eb9c3972c997d566
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37890352"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282165"
 ---
 # <a name="display-data-in-blend"></a>显示 Blend 中的数据
 
@@ -43,7 +43,7 @@ ms.locfileid: "37890352"
 
 若要从类生成示例数据，请打开一个 XAML 文档，然后在“数据”面板中，单击“创建示例数据”![创建示例数据图标](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png)按钮，然后单击“从类创建示例数据”。
 
-**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[从类中创建示例数据](http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=1&cad=rja&uact=8&ved=0CB0QtwIwAA&url=http%3A%2F%2Fchannel9.msdn.com%2FShows%2FInside%2BWindows%2BPhone%2FIWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML&ei=F1oHVNryM4ysogSJ2oDYDw&usg=AFQjCNEYvw1WA1rdF7bfpj5RwMLUs7RCVg)。
+**观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG)[从类中创建示例数据](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML)。
 
 **观看简短视频：**![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [通过 Blend 混合数据绑定](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "37890352"
 
 ## <a name="show-live-data-in-a-store-or-phone-app"></a>在应用商店或 Phone 应用中显示实时数据
 
-请参阅[使用数据和文件 (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)。
+请参阅[使用数据和文件 (XAML)](/previous-versions/windows/apps/br229562(v=win.10))。
 
 ## <a name="see-also"></a>请参阅
 
