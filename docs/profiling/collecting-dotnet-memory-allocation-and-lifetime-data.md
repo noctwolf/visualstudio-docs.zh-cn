@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7e8c63316cc4ca13f74e1b66b2346cf329465e0c
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 2484072a0f85b002ff2e59512f44ca0826540fd3
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548630"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775201"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配和生存期数据
 
@@ -53,11 +53,11 @@ Visual Studio 分析工具支持收集 .NET 内存分配和对象生存期数据
 
 ## <a name="common-tasks"></a>常见任务
 
-可以指定“性能会话”中性能会话***属性页*对话框中的附加选项。 若要打开此对话框：
+可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：
 
 - 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。
 
-下表中的任务说明了在收集 .NET 内存数据时，可以在性能会话***属性页*对话框中指定的选项。
+下表中的任务说明了在收集 .NET 内存数据时，可以在“性能会话属性页”对话框中指定的选项。
 
 |任务|相关内容|
 |----------|---------------------|

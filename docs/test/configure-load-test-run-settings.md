@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: acd2ccd526e32670afa947148f25606aee1299be
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: fb1f9ad69ebe012151a911bf8d7c02ded6af5e11
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382417"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283324"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 
@@ -37,6 +37,6 @@ ms.locfileid: "39382417"
 |**在负载测试运行设置中指定测试迭代计数：** 可以通过配置“测试迭代”属性来指定在所有负载测试方案中运行所有 Web 性能测试和单元测试的次数。|-   [如何：在运行设置中指定测试迭代数](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md)|
 |**指定负载测试运行设置的采样率：** 可以通过配置“采样率”属性来指定负载测试收集性能计数器数据的频率。|-   [如何：指定采样率](../test/how-to-specify-the-sample-rate-for-a-load-test.md)|
 |**指定计时详细信息存储选项：** 可以通过配置“计时详细信息存储”属性来指定希望如何保存负载测试的详细信息。|-   [如何：指定计时详细信息存储属性](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md)|
-|**指定测试资源保留期：** 通过设置“资源保留期”属性在指定期间内保留测试资源，从而加快测试>修复>重测循环。|-   [保留资源以加快负载测试](/vsts/test/load-test/getting-started-with-performance-testing?view=vsts)|
+|**指定测试资源保留期：** 通过设置“资源保留期”属性在指定期间内保留测试资源，从而加快测试>修复>重测循环。|-   [保留资源以加快负载测试](/azure/devops/test/load-test/getting-started-with-performance-testing?view=vsts)|
 |**使用上下文参数：** 可以使用上下文参数来参数化字符串。 例如，如果负载测试中包含使用参数化 Web 服务器的 Web 性能测试，则可以向映射到不同服务器的运行设置中添加上下文参数。|-   [如何：向运行设置中添加上下文参数](../test/how-to-add-context-parameters-to-a-load-test-run-setting.md)|
 |**配置测试日志记录属性：** 可以配置将与负载测试运行设置关联的数据写入日志的频率。 这在运行大型或复杂负载测试时很有用，因为该日志的大小可能会达到数个 GB。<br /><br /> 还可以将日志文件配置为在负载测试无法帮助调试和分析应用程序时自动保存。|-   [修改负载测试记录设置](../test/modify-load-test-logging-settings.md)|
