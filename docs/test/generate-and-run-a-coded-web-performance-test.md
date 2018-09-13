@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1920037b84871b388a1cc746b634b73577efd89
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 663b2e18eb71cb627bd521df0de6bc21c95cef05
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179571"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320744"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 
@@ -29,7 +29,7 @@ ms.locfileid: "39179571"
 
 ## <a name="generate-a-coded-web-performance-test"></a>生成编码的 Web 性能测试
 
-1.  如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/vsts/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project)。
+1.  如果尚未创建 Web 性能测试，请参阅[记录 Web 性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts)。
 
 2.  生成编码的测试。
 

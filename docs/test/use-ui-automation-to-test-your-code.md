@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 396fde582c10640bae95261a696c0d752543fc8d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 491a70cd8ef35a1401bfe0cd8b6118709751d183
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381154"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321198"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -35,7 +35,7 @@ ms.locfileid: "39381154"
 
 创建编码的 UI 测试很容易。 当编码的 UI 测试生成器在后台运行时，只需手动执行该测试。 你还可以指定在特定字段中应显示哪些值。 编码的 UI 测试生成器录制操作并从中生成代码。 在创建测试后，你可以在专用编辑器中对其进行编辑，该编辑器使你能够修改操作的序列。
 
-或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/vsts/test/mtm/record-play-back-manual-tests)。
+或者，如果你具有在 Microsoft 测试管理器中录制的测试用例，你可以从中生成代码。 有关详细信息，请参阅[录制和播放手动测试](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)。
 
 专用的编码的 UI 测试生成器和编辑器可轻松创建和编辑编码的 UI 测试，即使你的主要技能都集中于测试而不是编码。 但如果你是一位开发人员，想要以更先进的方式扩展测试，则结构化代码，以便于更简单地复制和改写。 例如，你可以录制在网站购物的测试，然后编辑生成的代码以添加购买许多商品的循环。
 
@@ -441,7 +441,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)
 
-- [在你的生成过程中运行测试](/vsts/build-release/test/getting-started-with-continuous-testing)
+- [在你的生成过程中运行测试](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
 - [如何：设置测试代理以运行与桌面交互的测试](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
@@ -451,7 +451,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [扩展编码的 UI 测试和操作录制](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-编码的 UI 测试通常用于自动化手动测试。 有关手动测试的详细信息，请参阅[使用 Microsoft 测试管理器运行手动测试](/vsts/test/mtm/run-manual-tests-with-microsoft-test-manager)。 有关自动测试的详细信息，请参阅 [Visual Studio 中的测试工具](../test/improve-code-quality.md)。
+编码的 UI 测试通常用于自动化手动测试。 有关手动测试的详细信息，请参阅[使用 Microsoft 测试管理器运行手动测试](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts)。 有关自动测试的详细信息，请参阅 [Visual Studio 中的测试工具](../test/improve-code-quality.md)。
 
 ## <a name="see-also"></a>请参阅
 

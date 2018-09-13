@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c4cedcdc55d5c0103c7005289191928fa14ac7a3
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 8cd9884c950d7cf6adefe997cf13fdd78fa7203d
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251537"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279396"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序的系统要求
 适用于 Android 的 Visual Studio 仿真程序在 Hyper-V（Windows 8 及以上版本的虚拟化技术）上作为虚拟机运行。 要运行仿真器，计算机必须满足本主题中所述的 Hyper-V 运行要求。  
@@ -117,7 +117,7 @@ ms.locfileid: "39251537"
   
 |需求|如何检查并实现此要求|  
 |-----------------|----------------------------------------------|  
-|必须安装 Hyper-V|按照用于 [为 Windows Phone 仿真程序启用 Hyper-V](https://msdn.microsoft.com/en-us/library/windows/apps/jj863509\(v=vs.105\).aspx)相同说明操作。<br /><br /> 检查服务管理单元中的 **Hyper-V 虚拟机管理** 服务的状态。|  
+|必须安装 Hyper-V|按照用于 [为 Windows Phone 仿真程序启用 Hyper-V](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105))相同说明操作。<br /><br /> 检查服务管理单元中的 **Hyper-V 虚拟机管理** 服务的状态。|  
 |必须正在运行 Hyper-V。|有关管理服务的详细信息，请参阅以下主题：<br /><br /> -   [启动、停止、暂停、继续或重新启动服务](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [配置服务启动方式](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|  
   
  你需要成为本地 Hyper-V 管理员组的成员。  

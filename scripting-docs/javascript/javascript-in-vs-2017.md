@@ -18,12 +18,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: ghogen
-ms.openlocfilehash: ffe531cf9dab315a43a37688c2b4e9eddf89b470
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 2f58a6b22aa2e7274c6fcf8d702d264a9a592c33
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008403"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280033"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 
@@ -255,7 +255,7 @@ XML 文档注释（有时称为 VSDoc）以前可用于修饰包含额外可强�
 
 ### <a name="intellisensejs-extensions"></a>`.intellisense.js` 扩展
 
-以前，可以创建 [IntelliSense 扩展](https://msdn.microsoft.com/en-us/library/hh874692.aspx)，通过此扩展可以为第三方库添加自定义完成结果。
+以前，可以创建 [IntelliSense 扩展](https://msdn.microsoft.com/library/hh874692.aspx)，通过此扩展可以为第三方库添加自定义完成结果。
 这些扩展难以编写并且安装和引用它们也很繁琐，因此，以后的新语言服务不再支持这些文件。
 作为更简单的替代方法，可以编写 TypeScript 定义文件，来提供与旧版 `.intellisense.js` 扩展相同的 IntelliSense 优势。
 可以在[此处](http://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)了解有关声明 (`.d.ts`) 文件创作的详细信息。

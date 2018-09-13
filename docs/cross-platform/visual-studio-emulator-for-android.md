@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b39adc2c2b91016d14eb73787b17f8c4da51c9f
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d6799bc7d3a2a79fadfb6d0535b8ccbbf0b0cffd
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233147"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283661"
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 
@@ -84,7 +84,7 @@ ms.locfileid: "39233147"
  安装想要设为目标的配置文件集后，可按绿色“播放”按钮直接从管理器启用这些新的配置文件。 它们还将在任何 Visual Studio 跨平台移动项目类型中的调试目标下拉列表菜单中显示。  
   
 ##  <a name="FeaturesTest"></a> 可在仿真程序中测试的功能  
- 有关可以在仿真器中测试的功能的详细信息，请参阅此[博客文章](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)。  
+ 有关可以在仿真器中测试的功能的详细信息，请参阅此[博客文章](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/)。  
   
 ##  <a name="FeaturesNonTest"></a> 无法在仿真程序中测试的功能  
  下表描述无法在仿真程序中测试的 Android 平台的功能。 必须在物理设备上测试这些功能。  

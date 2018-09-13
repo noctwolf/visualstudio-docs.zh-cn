@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c8565e6169167089ac425d7c6689c517f5ca61d
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 8a5adc68df8b56d69389807e2e1502b2891c73a0
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567202"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384300"
 ---
 # <a name="code-snippets-schema-reference"></a>代码片段架构参考
 
@@ -176,7 +176,7 @@ $selected$ is a great color. I love $selected$.
 
 |子元素|描述|
 |-------------------|-----------------|
-|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet)|可选元素。 所有代码段数据的父元素。 `CodeSnippet` 元素中可能有零个或零个以上的 `CodeSnippets` 元素。|
+|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet-element)|可选元素。 所有代码段数据的父元素。 `CodeSnippet` 元素中可能有零个或零个以上的 `CodeSnippets` 元素。|
 
 ## <a name="declarations-element"></a>Declarations 元素
 
@@ -196,7 +196,7 @@ $selected$ is a great color. I love $selected$.
 
 |父元素|描述|
 |--------------------|-----------------|
-|[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet)|包含用于代码段的引用、导入、声明和代码。|
+|[Snippet 元素](../ide/code-snippets-schema-reference.md#snippet-element)|包含用于代码段的引用、导入、声明和代码。|
 
 ## <a name="default-element"></a>Default 元素
 
@@ -279,7 +279,7 @@ $selected$ is a great color. I love $selected$.
 
 |父元素|描述|
 |--------------------|-----------------|
-|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet)|所有代码段数据的父元素。|
+|[CodeSnippet 元素](../ide/code-snippets-schema-reference.md#codesnippet-element)|所有代码段数据的父元素。|
 
 ## <a name="helpurl-element"></a>HelpUrl 元素
 
@@ -422,7 +422,7 @@ $selected$ is a great color. I love $selected$.
 
 |父元素|描述|
 |--------------------|-----------------|
-|[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations)|包含代码段的可编辑文本和对象。|
+|[Declarations 元素](../ide/code-snippets-schema-reference.md#declarations-element)|包含代码段的可编辑文本和对象。|
 
 ## <a name="namespace-element"></a>Namespace 元素
 
@@ -491,7 +491,7 @@ $selected$ is a great color. I love $selected$.
 
 |父元素|描述|
 |--------------------|-----------------|
-|[References 元素](../ide/code-snippets-schema-reference.md#references)|对 `Reference` 元素进行分组。|
+|[References 元素](../ide/code-snippets-schema-reference.md#references-element)|对 `Reference` 元素进行分组。|
 
 ## <a name="references-element"></a>References 元素
 

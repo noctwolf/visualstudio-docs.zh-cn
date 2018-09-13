@@ -12,16 +12,16 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cdff316b5553a8c1425927275e1547294040002
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 98fc473a9459aa6d1a1d7c10be7b6f240a4ab7d0
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749455"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668180"
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
-Visual Studio 包含本机内存探查器等各种[分析和诊断工具](../profiling/profiling-tools.md)。  此探查器与堆提供程序中的 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)挂钩，并分析如何分配和使用内存。  默认情况下，此工具仅可以分析从标准的 Windows 堆进行的分配，不会显示此本机堆以外的任何分配。
+Visual Studio 包含本机内存探查器等各种[分析和诊断工具](../profiling/profiling-feature-tour.md)。  此探查器与堆提供程序中的 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)挂钩，并分析如何分配和使用内存。  默认情况下，此工具仅可以分析从标准的 Windows 堆进行的分配，不会显示此本机堆以外的任何分配。
 
 在很多情况下，你可能想要用自己的自定义堆，并避免标准堆的分配开销。  例如，可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) 在应用或游戏的开头分配大量内存，然后管理该列表中属于自己的块。  在此方案中，内存探查器工具只会看到初始分配，并且看不到在内存块内执行的自定义管理。  但是，通过使用自定义本机堆 ETW 提供程序，可让工具了解你在标准堆外进行的分配。
 
@@ -155,8 +155,8 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 如[内存使用量](../profiling/memory-usage.md)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
 
 > [!TIP]
-> Visual Studio 在性能分析工具集中还包含内存使用情况工具，可在“调试”>“性能探查器”菜单选项或通过 Alt+F2 组合键启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可通过选择“调试”>“Windows”>“显示诊断工具”菜单或 Ctrl+Alt+F2 组合键来启用此窗口。
+> Visual Studio 在性能分析工具集中还包含内存使用情况工具，可在“调试” > “性能探查器”菜单选项或通过 Alt+F2 组合键启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可通过选择“调试” > “Windows” > “显示诊断工具”菜单或 Ctrl+Alt+F2 组合键来启用此窗口。
 
 ## <a name="see-also"></a>请参阅
-[分析工具](../profiling/profiling-tools.md)  
+[首先了解分析工具](../profiling/profiling-feature-tour.md)  
 [内存使用率](../profiling/memory-usage.md)

@@ -5,17 +5,17 @@ ms.date: 08/06/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f2bea6bca74fa3c97e6501a44f7d9ea950369d6c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 197701258a47b3edc49f4e9477c6634d17b22920
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639720"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775182"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 Visual Studio Tools for Unity 更改日志。
@@ -27,7 +27,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   **集成：**
 
-     -   回滚 Unity 性能 Bug 的解决方法（因为 Unity 已解决此问题）。
+     -   回滚了针对 Unity 性能缺陷的解决方案（此缺陷已由 Unity 修复）。
      
 ## <a name="1601"></a>1.6.0.1
  发布时间：2018 年 7 月 10 日

@@ -1,8 +1,8 @@
 ---
 title: 提高 .NET 开发工作效率
 description: 概述导航、代码分析、单元测试和其他功能，帮助提升编写 .NET 代码的速度和质量。
-author: kuhlenh
-ms.author: kaseyu
+author: gewarren
+ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -12,16 +12,16 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef9101a0dbad68dd75792f34526bac550a331286
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 47c24aecce518cc62c93fe5e6885d77f64d49cad
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42626655"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44125021"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
-了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到所有”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
+了解 [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 如何提高开发人员的工作效率。 充分利用性能和生产效率改进，如：导航到反编译程序集、键入时的变量名称建议、“测试资源管理器”中的层次结构视图、“转到全部”(Ctrl+T) 导航到文件/类型/成员/符号声明、智能“异常帮助程序”、代码样式配置和执行、以及众多重构和代码修补程序。
 
 ## <a name="im-used-to-my-keyboard-shortcuts-from-a-different-extensioneditoride"></a>我已经习惯了不同扩展/编辑器/IDE 的键盘快捷方式
 
@@ -39,7 +39,7 @@ Visual Studio 常用快捷方式如下：
 
 | 快捷方式（所有配置文件） | 命令 | 描述 |
 |-|-|-|
-| Ctrl + T | 转到所有 | 导航到任何文件/类型/成员/符号声明 |
+| Ctrl + T | 转到全部 | 导航到任何文件/类型/成员/符号声明 |
 | F12（也可使用 Ctrl+单击） | 转到定义 | 导航到定义符号的位置 |
 | Ctrl+F12 | 转到实现 | 从基类型或基成员导航到各种实现 |
 | Shift+F12 | 查找所有引用 | 查看所有符号或文本引用 |
@@ -61,13 +61,13 @@ Visual Studio 常用快捷方式如下：
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法
 
-Visual Studio 2017 有一种名为“转到所有”(Ctrl+T) 的功能。 通过“转到所有”可快速跳转到任何文件、类型、成员或符号声明。
+Visual Studio 2017 有一种名为“转到全部”(Ctrl+T) 的功能。 通过“转到全部”可快速跳转到任何文件、类型、成员或符号声明。
 
 - 更改此搜索栏的位置或使用“齿轮”图标关闭“实时导航预览”。
 - 使用查询语法（例如“t mytype”）筛选结果。 还可以将搜索范围限定在当前文档。
 - 支持 camelCase 匹配！
 
-![Visual Studio 中的转到所有](../ide/media/VS2017Guide-go-to-all.png)
+![Visual Studio 中的转到全部](../ide/media/VS2017Guide-go-to-all.png)
 
 ## <a name="my-team-enforces-code-style-rules-on-our-codebase"></a>我的团队对基本代码强制实施代码样式规则
 
@@ -117,7 +117,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 结构可视化工具 | 括号中的灰色虚线 | 悬停鼠标查看代码结构 |
 | 导航到反编译的程序集 | F12 或 Ctrl+单击 | 通过启用以下功能导航到外部源（使用 ILSpy 反编译）：“工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源”。 |
 
-![转到所有和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
+![转到全部和查找所有引用](../ide/media/VSIDE_Productivity_Navigation.png)
 
 ## <a name="i-want-to-run-and-see-my-unit-tests"></a>我想要运行并查看我的单元测试
 
