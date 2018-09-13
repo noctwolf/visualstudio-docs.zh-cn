@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3daf20ee3fcb2472e88d2387abf870862b0d5c47
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f18814d14c28d1f0263950579767490cd7deca38
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889962"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283686"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
 Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于 XAML 的 Windows 和 Web 应用。 可以通过拖动“工具箱”  中的控件，并在“属性”  窗口设置属性，为应用程序创建用户界面。 还可以直接在 XAML 视图中编辑 XAML。
@@ -41,7 +41,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  对齐线：对齐线是显示为红色虚线的“对齐边界”，在控件的边缘对齐时或文本基线对齐时显示。 仅当启用了“对齐线对齐”  时，才会显示对齐边界。
 
- **网格滑轨** 使用 `Grid` 滑轨可以管理 [网格](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx)面板中的行和列。 可以创建和删除行和列，并可以调整其相对宽度和高度。 显示在美工板左侧的垂直网格轨道用于行，而显示在顶部的水平线则用于列。
+ **网格滑轨** 使用 `Grid` 滑轨可以管理 [网格](/uwp/api/Windows.UI.Xaml.Controls.Grid)面板中的行和列。 可以创建和删除行和列，并可以调整其相对宽度和高度。 显示在美工板左侧的垂直网格轨道用于行，而显示在顶部的水平线则用于列。
 
  **网格装饰器** 网格装饰器显示为网格轨道上具有垂直或水平线条附加到其上的一个三角形。 拖动网格装饰器时，相邻的列或行的宽度或高度随鼠标的移动而改变。
 
@@ -49,7 +49,7 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 
  **重设句柄大小** 重设句柄大小显示在所选控件上，通过它可调整控件的大小。 当调整控件大小时，通常会出现宽度和高度值，帮助设置控件的大小。 有关在“设计”视图中操作控件的详细信息，请参阅[使用 XAML 设计器中的元素](../designers/working-with-elements-in-xaml-designer.md)。
 
- **边距** 边距表示控件边缘与其容器边缘之间的固定空间量。 可使用“属性”窗口中 **“布局”** 下的 [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 属性来设置控件的边距。
+ **边距** 边距表示控件边缘与其容器边缘之间的固定空间量。 可使用“属性”窗口中 **“布局”** 下的 [Margin](/uwp/api/windows.ui.xaml.frameworkelement.margin) 属性来设置控件的边距。
 
  **边距装饰器** 可使用边距装饰器更改元素相对于其布局容器的边距。 打开边距装饰器，未设置边距时，边距装饰器将显示断开的锁链。 未设置边距时，元素在运行时调整布局容器的大小时保留在原处。 边距装饰器关闭时，边距装饰器将显示完好的锁链，且在运行时调整布局容器的大小时，元素随边距一起移动（边距保持固定）。
 

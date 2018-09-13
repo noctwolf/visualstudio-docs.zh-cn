@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: db48b940fecb27dd4f41b5fc56f32ee2cc4f5f02
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 531080945413bbc0959d2cdf91e2096c1e51f61d
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34572340"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668237"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>性能工具问题疑难解答
 使用分析工具时，可能会遇到以下问题之一：  
   
--   [分析工具未收集任何数据](#NoDataCollected)  
+-   [分析工具未收集任何数据](#no-data-is-collected-by-the-profiling-tools)  
   
--   [性能视图和报告显示函数名的编号](#NoSymbols)  
+-   [性能视图和报告显示函数名的编号](#performance-views-and-reports-display-numbers-for-function-names)  
   
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>分析工具未收集任何数据  
  分析应用程序之后，未创建分析数据 (.vsp) 文件，你在“输出”窗口或命令窗口中收到以下警告：  

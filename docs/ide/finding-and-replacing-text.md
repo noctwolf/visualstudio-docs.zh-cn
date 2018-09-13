@@ -33,16 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b451ed12f39bbac646a9cb50b5d1ff02365b0a93
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626850"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384235"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
-可以使用[查找和替换](#find-and-replace-control)或[在文件中查找/替换](#find-replace-in-files)，在 Visual Studio 编辑器中查找和替换文本。 在 Visual Studio 2017 版本 15.8 中的新增功能：现可通过[多个插入点选择](#multi-caret-selection)来查找并替换模式的某些实例。
+可以使用[查找和替换](#find-and-replace-control)或[在文件中查找/替换](#find-in-files-and-replace-in-files)，在 Visual Studio 编辑器中查找和替换文本。 在 Visual Studio 2017 版本 15.8 中的新增功能：现可通过[多个插入点选择](#multi-caret-selection)来查找并替换模式的某些实例。
 
 > [!TIP]
 > 如果要重命名代码符号（例如变量和方法），最好*[重构](../ide/reference/rename.md)* 它们，而不是使用查找和替换。 重构不仅智能而且知道应用范围，而查找和替换会盲目替换所有实例。

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4666bbd295f32e9782e445661c1a4736ec6c06c1
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 4fd6a2483ebd0255056f471a37744a5b358c185f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924035"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278801"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用
 图像内容管道可以生成与 Direct2D 的内部呈现约定兼容的纹理。 这种类型的纹理适合在使用 Direct2D 的应用和使用 JavaScript 创建的 UWP 应用中使用。
@@ -53,7 +53,7 @@ ms.locfileid: "37924035"
 
 2.  配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开刚刚创建的纹理文件的快捷菜单，然后选择“属性”。 在“配置属性” > “常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。
 
-3.  将输出格式设置为块压缩的格式之一。 在“配置属性” > “图像内容管道” > “常规”页上，将“压缩”属性设置为“BC3_UNORM 压缩 (/compress:BC3_UNORM)”。 根据具体需求，还可以选择任何其他的 BC1、BC2 或 BC3 格式。 Direct2D 当前不支持 BC4、BC5、BC6 或 BC7 纹理。 有关不同 BC 格式的详细信息，请参阅 [Block Compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)（块压缩 (Direct3D 10)）。
+3.  将输出格式设置为块压缩的格式之一。 在“配置属性” > “图像内容管道” > “常规”页上，将“压缩”属性设置为“BC3_UNORM 压缩 (/compress:BC3_UNORM)”。 根据具体需求，还可以选择任何其他的 BC1、BC2 或 BC3 格式。 Direct2D 当前不支持 BC4、BC5、BC6 或 BC7 纹理。 有关不同 BC 格式的详细信息，请参阅 [Block Compression (Direct3D 10)](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)（块压缩 (Direct3D 10)）。
 
     > [!NOTE]
     >  指定的压缩格式确定图像内容管道生成的文件的格式。 这不同于“图像编辑器”中源映像的“格式”属性，该“格式”属性确定存储在磁盘上时源映像文件的格式 - 即工作格式。 通常情况下，不需要已压缩的工作格式。

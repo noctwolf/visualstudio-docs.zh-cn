@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: bdc196ed997410957412ec02ff4eb4912b3ee63c
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39252461"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283102"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 
@@ -85,7 +85,7 @@ ms.locfileid: "39252461"
 
 - 对于 Visual Studio 2015 Community、Visual Studio 2015 Professional 或 Visual Studio 2015 Enterprise：
 
-   [下载 Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
+   [下载 Visual Studio 2015 Tools for Unity](https://marketplace.visualstudio.com/items?itemName=SebastienLebreton.VisualStudio2015ToolsforUnity)
 
 > [!NOTE]
 > Visual Studio Tools for Unity 要求 Unity 5.2 和更高版本，以及支持扩展的 Visual Studio 版本，例如，Visual Studio Community、Professional、Premium 或 Enterprise。 若要验证你安装的 Unity 是否启用了 Visual Studio Tools for Unity，请从“帮助”菜单中选择“关于 Unity”，并在对话框左下角查看“Microsoft Visual Studio Tools for Unity 已启用”文本。
