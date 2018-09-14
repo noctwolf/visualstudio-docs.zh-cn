@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fdbf907d851ee3772b917ea6ca4adcd2b81404
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 536072f8dc019921fecd1fc6f53d255a1a0ae0d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918686"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551540"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137：透明方法必须仅包含可验证 IL
 |||
@@ -33,15 +33,15 @@ ms.locfileid: "31918686"
 ## <a name="rule-description"></a>规则说明
  在尝试通过安全透明代码执行无法验证的 MSIL（Microsoft 中间语言）时将引发此规则。 但是，此规则不包含完整的 IL 验证程序，而是使用试探法来捕捉 MSIL 验证的大部分冲突。
 
- 若要确保你的代码包含仅可验证的 MSIL，运行[Peverify.exe （PEVerify 工具）](/dotnet/framework/tools/peverify-exe-peverify-tool)对程序集。 运行与 PEVerify **/ 透明**将输出限制为只有无法验证透明方法从而导致错误的选项。 如果 / 不使用透明的选项，PEVerify 还会验证是否允许包含无法验证的代码的关键方法。
+ 若要确保你的代码包含仅可验证的 MSIL，运行[Peverify.exe （PEVerify 工具）](/dotnet/framework/tools/peverify-exe-peverify-tool)上您的程序集。 运行与 PEVerify **/ 透明**将输出限制为仅无法验证透明方法将导致错误的选项。 如果 / 不使用透明的选项，PEVerify 还会验证是否允许包含不可验证的代码的关键方法。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，此方法标记<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>特性，或删除无法验证的代码。
+ 若要解决此规则的冲突，此方法标记<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>特性，或移除不可验证的代码。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 此示例中的方法使用无法验证的代码，并且应标记为<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>属性。
+ 此示例中的方法使用无法验证的代码，并且应标有<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>属性。
 
  [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

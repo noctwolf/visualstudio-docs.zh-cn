@@ -16,45 +16,55 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acd90414e101c03bae1d3d74f1be4f538cacfce2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ed69ba759d63ba27114bc097ac1fd9ccbe424edd
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900612"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547732"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：重写可比较类型中的方法
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
 |类别|Microsoft.Design|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 公共或受保护类型实现<xref:System.IComparable?displayProperty=fullName>接口，并在不重写<xref:System.Object.Equals%2A?displayProperty=fullName>也不重载表示相等、 不等、 小于或大于的语言特定运算符。 如果该类型继承仅接口的实现，该规则不会报告发生的冲突。
+ 公共或受保护类型实现<xref:System.IComparable?displayProperty=fullName>接口，并不会覆盖<xref:System.Object.Equals%2A?displayProperty=fullName>或不太不会重载相等、 不等，特定于语言的运算符-或更高的比。 如果该类型继承接口的实现，该规则不报告冲突。
 
 ## <a name="rule-description"></a>规则说明
- 定义自定义排序顺序的类型实现<xref:System.IComparable>接口。 <xref:System.IComparable.CompareTo%2A>方法返回一个整数值，该值指示两个类型的正确的排序顺序。 此规则标识设置的排序顺序; 的类型这意味着，相等、 不等的普通含义小于且大于不适用于。 提供的实现时<xref:System.IComparable>，通常必须还重写<xref:System.Object.Equals%2A>从而使其返回值与相一致<xref:System.IComparable.CompareTo%2A>。 如果你重写<xref:System.Object.Equals%2A>和在编码中支持的语言中运算符重载，你还应提供与相一致的运算符<xref:System.Object.Equals%2A>。
+
+定义自定义排序顺序的类型可实现<xref:System.IComparable>接口。 <xref:System.IComparable.CompareTo%2A>方法返回一个整数值，指示该类型的两个实例的正确的排序顺序。 此规则可确定排序顺序设置的类型。 设置排序顺序意味着普通意义上的相等、 不等，更少的和大于-比不适用。 提供的实现时<xref:System.IComparable>，通常必须还重写<xref:System.Object.Equals%2A>，以便它将返回值与相一致<xref:System.IComparable.CompareTo%2A>。 如果重写<xref:System.Object.Equals%2A>进行编码和支持的运算符重载的语言，您还应提供与一致的运算符<xref:System.Object.Equals%2A>。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，重写<xref:System.Object.Equals%2A>。 如果您的编程语言支持运算符重载，提供以下运算符：
 
--   op_Equality
+若要修复此规则的冲突，请重写<xref:System.Object.Equals%2A>。 如果您的编程语言支持运算符重载，提供以下运算符：
 
--   op_Inequality
+- op_Equality
 
--   op_LessThan
+- op_Inequality
 
--   op_GreaterThan
+- op_LessThan
 
- 在 C# 中，用于表示这些运算符的令牌如下所示: = =、 ！ =、 \<，和 >。
+- op_GreaterThan
+
+在 C# 中，用来表示这些运算符的令牌如下所示：
+
+```csharp
+==
+!=
+<
+>
+```
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，当因缺少运算符引起冲突和您的编程语言不支持运算符重载，就像使用 Visual Basic 情况一样。 还有安全地禁止显示此规则的警告，而非 op_Equality 如果你确定实现运算符没有意义应用程序上下文中激发上相等运算符时。 但是，你应始终通过 op_Equality 与 = = 运算符，如果重写 Object.Equals。
+ 它可以安全地禁止显示 CA1036 冲突是由缺少运算符和您的编程语言不支持运算符重载，而是使用 Visual Basic 这种情况的规则的警告。 它也是安全地禁止显示此规则的警告，而不 op_Equality 如果你确定实现了运算符的应用程序上下文中不难理解它触发上相等运算符时。 但是，您应始终通过 op_Equality 和 = = 运算符，如果重写 Object.Equals。
 
 ## <a name="example"></a>示例
- 下面的示例包含的类型正确实现<xref:System.IComparable>。 标识满足与相关的各种规则的方法的代码注释<xref:System.Object.Equals%2A>和<xref:System.IComparable>接口。
+ 下面的示例包含正确实现的类型<xref:System.IComparable>。 代码注释标识满足与相关的各种规则的方法<xref:System.Object.Equals%2A>和<xref:System.IComparable>接口。
 
  [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
@@ -64,4 +74,7 @@ ms.locfileid: "31900612"
  [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 
 ## <a name="see-also"></a>请参阅
- <xref:System.IComparable?displayProperty=fullName> <xref:System.Object.Equals%2A?displayProperty=fullName> [相等运算符](/dotnet/standard/design-guidelines/equality-operators)
+
+- <xref:System.IComparable?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
+- [相等运算符](/dotnet/standard/design-guidelines/equality-operators)

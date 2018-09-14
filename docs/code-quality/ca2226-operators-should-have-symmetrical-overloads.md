@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67cdfd3799b0ba3e1af53cb9e95bb426fec02ddf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920623"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549766"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：运算符应有对称重载
 |||
@@ -35,15 +35,15 @@ ms.locfileid: "31920623"
  某个类型实现了相等运算符或不等运算符，却未实现相反运算符。
 
 ## <a name="rule-description"></a>规则说明
- 有任何情况下，其中相等或不相等是适用于类型的实例，未定义相反运算符。 通过返回的相反的值的相等运算符，类型通常实现不等运算符。
+ 有任何情况下，其中等式或不等式是适用于某种类型的实例，未定义相反运算符。 类型通常通过返回的相反的值的相等运算符实现不等运算符。
 
- C# 编译器会发出错误的违反此规则。
+ C# 编译器会发出有关此规则冲突错误。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，实现相等和不相等运算符，或者删除存在的一个。
+ 若要解决此规则的冲突，可实现相等和不相等运算符或删除的存在。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。 你的类型不起作用与一致的方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 不禁止显示此规则发出的警告。 你的类型不起与一致的方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1046：不要对引用类型重载相等运算符](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

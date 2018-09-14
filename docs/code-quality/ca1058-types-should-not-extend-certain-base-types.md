@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e3c1e4635a654cac608985766884ddb66e353d03
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2a18abfa94d3d53c6b96558fdf1cfc8d0c1c9cc5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898271"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549701"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：类型不应扩展某些基类型
 |||
@@ -32,31 +32,31 @@ ms.locfileid: "31898271"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 外部可见的类型扩展某些基类型。 目前，此规则将报告以下类型派生的类型：
+ 外部可见的类型扩展某些基类型。 目前，此规则将报告从以下类型派生的类型：
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.Xml.XmlDocument?displayProperty=fullName>
+- <xref:System.Xml.XmlDocument?displayProperty=fullName>
 
--   <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.DictionaryBase?displayProperty=fullName>
+- <xref:System.Collections.DictionaryBase?displayProperty=fullName>
 
--   <xref:System.Collections.Queue?displayProperty=fullName>
+- <xref:System.Collections.Queue?displayProperty=fullName>
 
--   <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
 
--   <xref:System.Collections.SortedList?displayProperty=fullName>
+- <xref:System.Collections.SortedList?displayProperty=fullName>
 
--   <xref:System.Collections.Stack?displayProperty=fullName>
+- <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>规则说明
- 有关[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]版本 1，它建议派生新异常从<xref:System.ApplicationException>。 此建议已更改和新的异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。
+ 有关[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]版本 1 中，会建议派生新异常从<xref:System.ApplicationException>。 已更改的建议和新的异常应派生自<xref:System.Exception?displayProperty=fullName>或在其子类之一<xref:System>命名空间。
 
- 不创建的一个子类<xref:System.Xml.XmlDocument>如果你想要创建基础的对象模型或数据源的 XML 视图。
+ 不创建一个子类<xref:System.Xml.XmlDocument>如果你想要创建的基础对象模型或数据源的 XML 视图。
 
 ### <a name="non-generic-collections"></a>非泛型集合
- 使用和/或延长尽可能的泛型集合。 除非以前传送不会扩展在代码中，有非泛型集合。
+ 使用和/或扩展尽可能的泛型集合。 除非以前交付之后不会扩展在代码中，非泛型集合。
 
  **不正确的用法的示例**
 
@@ -70,7 +70,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **正确用法示例**
+ **正确用法的示例**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -83,7 +83,7 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请从不同的基类型或泛型集合派生类型。
+ 若要修复与此规则的冲突，派生从不同的基类型或泛型集合类型。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止有关显示此规则，冲突的警告<xref:System.ApplicationException>。 则可以安全地禁止违反此规则的警告显示有关<xref:System.Xml.XmlDocument>。 则可以安全地禁止显示警告有关非泛型集合，如果以前发布的代码。
+ 不禁止有关显示此规则冲突的警告<xref:System.ApplicationException>。 则可以安全地禁止有关显示此规则冲突的警告<xref:System.Xml.XmlDocument>。 安全地禁止显示非泛型集合有关的警告，如果代码以前发布它。

@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4faed3f5d49c6c08ca0a9bc90465f4e21ef3fec8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e3c9b23e555d0752ee33f2031fb883bdf50ff897
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916932"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549727"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：标识符应采用正确的后缀
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -32,12 +33,14 @@ ms.locfileid: "31916932"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 标识符具有不正确的后缀。
+
+标识符具有正确的后缀。
 
 ## <a name="rule-description"></a>规则说明
- 按照约定，只有扩展某些基类型或实现某些接口或从这些类型派生的类型的类型的名称应该以特定的保留后缀结尾。 其他类型名称不应使用这些保留的后缀。
 
- 下表列出了保留的后缀的基类型和是对与其关联的接口。
+按照约定，只有扩展某些基类型或实现特定接口或从这些类型派生的类型的类型的名称应与特定的保留后缀结尾。 其他类型名称不应使用这些保留的后缀。
+
+下表列出了保留的后缀的基类型和接口与它们相关联。
 
 |后缀|基类型/接口|
 |------------|--------------------------|
@@ -45,33 +48,38 @@ ms.locfileid: "31916932"
 |集合|<xref:System.Collections.ICollection?displayProperty=fullName><br /><br /> <xref:System.Collections.IEnumerable?displayProperty=fullName><br /><br /> <xref:System.Collections.Queue?displayProperty=fullName><br /><br /> <xref:System.Collections.Stack?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.ICollection%601?displayProperty=fullName><br /><br /> <xref:System.Data.DataSet?displayProperty=fullName><br /><br /> <xref:System.Data.DataTable?displayProperty=fullName>|
 |词典|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|
-|事件处理程序|一个事件处理程序委托|
+|事件处理程序|事件处理程序委托|
 |例外|<xref:System.Exception?displayProperty=fullName>|
 |权限|<xref:System.Security.IPermission?displayProperty=fullName>|
 |Queue|<xref:System.Collections.Queue?displayProperty=fullName>|
 |堆栈|<xref:System.Collections.Stack?displayProperty=fullName>|
 |流|<xref:System.IO.Stream?displayProperty=fullName>|
 
- 此外，以下后缀应**不**使用：
+此外，以下后缀应**不**使用：
 
--   委托
+- `Delegate`
 
--   Enum
+- `Enum`
 
--   以 Impl-改为使用的 Core
+- `Impl` (使用`Core`相反)
 
--   Ex 或类似的后缀，以便进行区分相同类型的早期版本
+- `Ex` 或类似的后缀，以使其不同于早期版本的相同的类型
 
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 类型名中删除后缀。
+
+删除类型名称的后缀。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非后缀在应用程序域中具有明确的含义，否则不要禁止显示来自此规则的警告。
+
+除非后缀在应用程序域中具有明确的含义，否则不要禁止显示来自此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1710：标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+
+- [CA1710：标识符应具有正确的后缀](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>请参阅
- [属性](/dotnet/standard/design-guidelines/attributes)[处理和引发事件](/dotnet/standard/events/index)
+
+- [特性](/dotnet/standard/design-guidelines/attributes)
+- [处理和引发事件](/dotnet/standard/events/index)

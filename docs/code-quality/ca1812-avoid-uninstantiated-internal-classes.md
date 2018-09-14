@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2b59e9b0947c6d2b1cbb37cdc850a144976d495
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915592"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551764"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免未实例化的内部类
 |||
@@ -29,47 +29,47 @@ ms.locfileid: "31915592"
 |TypeName|AvoidUninstantiatedInternalClasses|
 |CheckId|CA1812|
 |类别|Microsoft.Performance|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
  程序集级别类型的实例不是由程序集中的代码创建的。
 
 ## <a name="rule-description"></a>规则说明
- 此规则尝试进行查找到的类型的构造函数之一的调用，并且如果不找到任何调用将报告冲突。
+ 此规则会尝试查找对该类型的构造函数之一的调用，并报告冲突，如果不找到任何调用。
 
- 此规则不能检查以下类型：
+ 该规则不检查以下类型：
 
--   值类型
+- 值类型
 
--   抽象类型
+- 抽象类型
 
--   枚举
+- 枚举
 
--   委托
+- 委托
 
--   编译器发出数组类型
+- 编译器发出的数组类型
 
--   类型不能实例化且定义了`static`(`Shared`在 Visual Basic 中) 仅方法。
+- 类型无法实例化和用于定义`static`(`Shared`在 Visual Basic 中) 只方法。
 
- 如果将应用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>对所分析的程序集，此规则不会标记为任何构造函数上发生`internal`因为不能判断是否正在由另一个使用字段`friend`程序集。
+ 如果将应用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>对所分析的程序集，此规则不会标记为任何构造函数上发生`internal`因为无法确定是否一个字段正由另一个`friend`程序集。
 
- 即使你不能解决此限制在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]代码分析，外部独立 FxCop 将发生在内部构造函数上如果每个`friend`程序集都在分析中存在。
+ 即使您不能解决此限制在 Visual Studio 代码分析中，外部的独立 FxCop 会发生内部构造函数上每个`friend`程序集是在分析中存在。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，删除类型或添加的代码与使用它。 如果类型仅包含静态方法，请将以下项之一添加到要阻止编译器发出默认公共实例构造函数的类型：
+ 若要修复此规则的冲突，请删除类型或添加使用它的代码。 如果类型仅包含静态方法，请将以下项之一添加到要阻止编译器发出的默认公共实例构造函数的类型：
 
--   私有构造函数的类型面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]1.0 和 1.1 版。
+- 私有构造函数的类型面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]1.0 和 1.1 版。
 
--   `static` (`Shared`在 Visual Basic 中) 修饰符类型面向[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
+- `static` (`Shared`在 Visual Basic 中) 修饰符类型面向[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告。 我们建议您禁止显示此警告在以下情况：
+ 它可以安全地禁止显示此规则的警告。 我们建议您取消显示在以下情况下的此警告：
 
--   如通过反射后期绑定方法创建的类<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
+- 如通过反射后期绑定方法创建的类<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
 
--   类是由运行时或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自动创建的。 例如，用于实现 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 或 <xref:System.Web.IHttpHandler?displayProperty=fullName> 的类。
+- 类是由运行时或 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自动创建的。 例如，用于实现 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 或 <xref:System.Web.IHttpHandler?displayProperty=fullName> 的类。
 
--   类是作为具有新的约束的泛型类型参数传递。 例如，下面的示例将引发此规则。
+- 类是作为具有一个新约束的泛型类型参数传递。 例如，下面的示例将引发此规则。
 
     ```csharp
     internal class MyClass
@@ -90,7 +90,7 @@ ms.locfileid: "31915592"
     mc.Create();
     ```
 
- 在这些情况下，我们建议您禁止显示此警告。
+ 在这些情况下，我们建议您取消显示此警告。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)

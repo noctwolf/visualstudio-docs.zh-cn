@@ -14,16 +14,20 @@ ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a49671c4efc725a8796b050764dc4d9949f808
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ad4328c13403b1bea6a4358661b3347404592c02
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31922251"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549714"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235：标记所有不可序列化的字段
+
 |||
 |-|-|
 |TypeName|MarkAllNonSerializableFields|
@@ -35,16 +39,16 @@ ms.locfileid: "31922251"
  在可以序列化的类型中声明了类型不可序列化的实例字段。
 
 ## <a name="rule-description"></a>规则说明
- 可序列化的类型是指将标有<xref:System.SerializableAttribute?displayProperty=fullName>属性。 当序列化该类型时，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>如果某个类型包含不可序列化的类型的实例字段将引发异常。
+ 可序列化类型是指将标有<xref:System.SerializableAttribute?displayProperty=fullName>属性。 当序列化类型时，<xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName>类型包含不可序列化的类型的实例字段而引发异常。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，将应用<xref:System.NonSerializedAttribute?displayProperty=fullName>属性不是可序列化的字段。
+ 若要修复此规则的冲突，请应用<xref:System.NonSerializedAttribute?displayProperty=fullName>属性不是可序列化的字段。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 如果仅禁止显示此规则的警告<xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName>类型被声明为允许字段序列化和反序列化的实例。
+ 如果仅禁止显示此规则的警告<xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName>类型被声明为允许要进行序列化和反序列化的字段的实例。
 
 ## <a name="example"></a>示例
- 下面的示例演示满足该规则的类型和类型的与该规则冲突。
+ 下面的示例演示了违反规则的类型，并满足该规则的类型。
 
  [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]

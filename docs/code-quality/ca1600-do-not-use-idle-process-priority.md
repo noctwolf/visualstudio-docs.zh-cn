@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcac11312b15049c743d596914b06819000801
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bc5c3432c13850c1fcd619629ef0368d4e78126e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915957"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550500"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 进程优先级
 |||
@@ -32,13 +32,13 @@ ms.locfileid: "31915957"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 进程被设置为时，将引发此规则`ProcessPriorityClass.Idle`。
+ 当进程设置为时将引发此规则`ProcessPriorityClass.Idle`。
 
 ## <a name="rule-description"></a>规则说明
- 不要将进程优先级设置为 Idle。 进程`System.Diagnostics.ProcessPriorityClass.Idle`将 CPU 时占用它本应处于空闲状态，因此将阻止进入待机状态。
+ 不要将进程优先级设置为 Idle。 进程`System.Diagnostics.ProcessPriorityClass.Idle`它本应处于空闲状态，并因此将阻止进入待机状态时占用 CPU。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  设置为进程`ProcessPriorityClass.BelowNormal`。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 仅当需要 Idle 进程优先级也可以安全地忽略移动性注意事项时，应禁止显示此规则。
+ 仅当 Idle 进程优先级是必需的且可以安全地忽略移动性注意事项时，应禁止显示此规则。

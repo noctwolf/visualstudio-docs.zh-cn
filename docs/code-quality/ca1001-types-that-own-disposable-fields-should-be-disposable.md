@@ -14,37 +14,41 @@ ms.assetid: c85c126c-2b16-4505-940a-b5ddf873fb22
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d14fe8bcf21b3ad55b8a1e80591caff60f14f7d2
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a73acee1c01aba7a638d27c0e772e4fbf5e19384
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898806"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546926"
 ---
 # <a name="ca1001-types-that-own-disposable-fields-should-be-disposable"></a>CA1001：具有可释放字段的类型应该是可释放的
+
 |||
 |-|-|
 |TypeName|TypesThatOwnDisposableFieldsShouldBeDisposable|
 |CheckId|CA1001|
 |类别|Microsoft.Design|
-|是否重大更改|无间断-如果类型不是程序集外部可见。<br /><br /> 中断性-如果该类型是在程序集外可见。|
+|是否重大更改|无间断-如果类型不是程序集外部可见。<br /><br /> 是-如果该类型是在程序集外可见。|
 
 ## <a name="cause"></a>原因
- 一个类声明并实现一个实例字段，它是<xref:System.IDisposable?displayProperty=fullName>类型和类未实现<xref:System.IDisposable>。
+ 一个类声明并实现是实例字段<xref:System.IDisposable?displayProperty=fullName>类型和类不实现<xref:System.IDisposable>。
 
 ## <a name="rule-description"></a>规则说明
- 类实现<xref:System.IDisposable>接口来释放它拥有的非托管资源。 是的实例字段<xref:System.IDisposable>类型指示该字段拥有非托管的资源。 声明的类<xref:System.IDisposable>字段间接拥有非托管的资源，并且应该实现<xref:System.IDisposable>接口。 如果类不直接拥有任何非托管的资源，它不应实现终结器。
+ 一个类实现<xref:System.IDisposable>接口来释放它拥有的非托管资源。 是的实例字段<xref:System.IDisposable>类型指示该字段拥有非托管的资源。 声明的类<xref:System.IDisposable>字段间接拥有非托管的资源，应实现<xref:System.IDisposable>接口。 如果类不直接拥有任何非托管的资源，它不应实现终结器。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，实现<xref:System.IDisposable>和从<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用<xref:System.IDisposable.Dispose%2A>字段方法。
+ 若要修复此规则的冲突，请实现<xref:System.IDisposable>来回<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法调用<xref:System.IDisposable.Dispose%2A>字段的方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示与该规则冲突的类和类通过实现满足该规则<xref:System.IDisposable>。 类未实现终结器，因为类不直接拥有任何非托管的资源。
+ 下面的示例演示与规则冲突的类和类，用以通过实现来满足该规则<xref:System.IDisposable>。 类不实现终结器，因为类直接拥有任何非托管的资源。
 
  [!code-vb[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/VisualBasic/ca1001-types-that-own-disposable-fields-should-be-disposable_1.vb)]
  [!code-csharp[FxCop.Design.DisposableFields#1](../code-quality/codesnippet/CSharp/ca1001-types-that-own-disposable-fields-should-be-disposable_1.cs)]

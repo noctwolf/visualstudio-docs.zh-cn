@@ -14,16 +14,20 @@ ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ec1e0f13d3d26973dc2dc46c6a41a2dc962c91bb
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e4360ff6c6355827a77d165c9a4975ffa8bdc89a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897835"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549006"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402：避免在 COM 可见接口中进行重载
+
 |||
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
@@ -32,35 +36,35 @@ ms.locfileid: "31897835"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 组件对象模型 (COM) 可见的接口声明的重载方法。
+ 组件对象模型 (COM) 可见的接口声明重载的方法。
 
 ## <a name="rule-description"></a>规则说明
- 在向 COM 客户端公开重载的方法时，只有第一个方法重载保留其名称。 对于后续重载将唯一名称，名称后面追加下划线字符 _ 和一个整数，该重载的声明顺序对应方法。 例如，考虑以下方法。
+ 在向 COM 客户端公开重载的方法时，只有第一个方法重载保留其名称。 对于后续重载将唯一名称，方法名称后面追加的下划线字符 _ 和一个整数，该重载的声明顺序对应。 例如，考虑以下方法：
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);
 ```
 
- 这些方法公开给 COM 客户端，如下所示。
+向 COM 客户端，如下所示公开这些方法。
 
-```
+```csharp
 void SomeMethod(int valueOne);
 void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- Visual Basic 6 COM 客户端不能实现接口方法的名称中使用下划线。
+Visual Basic 6 COM 客户端不能实现接口方法的名称中使用下划线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请重命名的重载的方法，使名称是唯一的。 或者，使该接口不可见向 COM 通过更改到的可访问性`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或通过应用<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>属性设置为`false`。
+ 若要解决此规则的冲突，请重命名的重载的方法，使名称是唯一的。 或者，使该接口不可见 COM 通过更改到的可访问性`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或通过应用<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>属性设置为`false`。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示与该规则冲突的接口和满足该规则的接口。
+ 下面的示例演示一个违反了此规则的接口和满足该规则的接口。
 
  [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
  [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]
@@ -73,4 +77,6 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [CA1017：用 ComVisibleAttribute 标记程序集](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>请参阅
- [非托管代码交互操作与](/dotnet/framework/interop/index) [Long 数据类型](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+
+- [与非托管代码交互操作](/dotnet/framework/interop/index)
+- [Long 数据类型](/dotnet/visual-basic/language-reference/data-types/long-data-type)

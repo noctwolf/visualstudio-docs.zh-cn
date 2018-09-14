@@ -14,16 +14,20 @@ ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b861591355a47d38beec921a13643841b40e4465
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b7b5b360a6288b6ff2e13b6d7fc29df6728fad6f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915711"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546244"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用未密封的特性
+
 |||
 |-|-|
 |TypeName|AvoidUnsealedAttributes|
@@ -32,27 +36,33 @@ ms.locfileid: "31915711"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 公共类型都继承自<xref:System.Attribute?displayProperty=fullName>、 不是抽象的和未密封 (`NotInheritable`在 Visual Basic 中)。
+
+公共类型都继承<xref:System.Attribute?displayProperty=fullName>、 不是抽象的并且未密封 (`NotInheritable`在 Visual Basic 中)。
 
 ## <a name="rule-description"></a>规则说明
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构;例如<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的属性类型或任何扩展的指定的属性类型的属性类型。 密封特性，无需搜索继承层次结构中，且可以提高性能。
+
+[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类库提供用于检索自定义特性的方法。 默认情况下，这些方法搜索特性继承层次结构。 例如，<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜索指定的特性类型或任何扩展指定的特性类型的属性类型。 密封特性无需通过继承层次结构中，搜索并提高性能。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，密封属性类型，或使其成为抽象。
+
+若要解决此规则的冲突，密封特性类型或使其成为抽象类型。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告。 仅当定义了属性层次结构和不能密封属性或使其成为抽象时，应执行此操作。
+
+它可以安全地禁止显示此规则的警告。 禁止显示仅当要定义属性层次结构和不能密封特性或使其成为抽象。
 
 ## <a name="example"></a>示例
- 下面的示例演示满足此规则的自定义特性。
 
- [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
- [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
+下面的示例显示了满足此规则的自定义属性。
+
+[!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
+[!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
+- [CA1019：定义特性参数的访问器](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+- [CA1018：用 AttributeUsageAttribute 标记特性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)
 
 ## <a name="see-also"></a>请参阅
- [特性](/dotnet/standard/design-guidelines/attributes)
+
+- [特性](/dotnet/standard/design-guidelines/attributes)

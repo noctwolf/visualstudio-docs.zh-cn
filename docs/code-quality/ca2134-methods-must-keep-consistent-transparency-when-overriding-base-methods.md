@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c02ce23c341df377bc16b56cdd85769acf5582c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0f56b81f3f3ce16f509f29791e28992402c222f9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917741"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551989"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134：在重写基方法时，方法必须保持一致的透明度
 |||
@@ -28,20 +28,20 @@ ms.locfileid: "31917741"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 当的方法标记为引发此规则<xref:System.Security.SecurityCriticalAttribute>重写一个透明的或用标记的方法<xref:System.Security.SecuritySafeCriticalAttribute>。 是透明的或与标记的方法时，还会引发此规则<xref:System.Security.SecuritySafeCriticalAttribute>重写方法将标有<xref:System.Security.SecurityCriticalAttribute>。
+ 此规则时的方法标记为激发<xref:System.Security.SecurityCriticalAttribute>方法重写一个透明的或标有<xref:System.Security.SecuritySafeCriticalAttribute>。 是透明的或与标记的方法时，规则还会激发<xref:System.Security.SecuritySafeCriticalAttribute>重写方法将标有<xref:System.Security.SecurityCriticalAttribute>。
 
  该规则在重写虚方法或实现接口时应用。
 
 ## <a name="rule-description"></a>规则说明
- 在尝试更改进一步继承链向上的方法的安全可访问性引发此规则。 例如，如果透明或安全关键，基类中的虚拟方法，然后派生的类必须重写它使用透明或安全关键方法。 相反，如果虚拟是安全关键的派生的类必须重写它使用安全关键方法。 同一规则适用于实现接口方法。
+ 进行更改的方法进一步继承链安全可访问性的尝试将引发此规则。 例如，如果基类中的虚拟方法为透明或安全关键，然后派生的类必须重写它使用透明或安全关键方法。 相反，如果虚拟是安全关键的派生的类必须重写它与安全关键方法。 该规则同样适用于实现接口方法。
 
- 执行代码的 JIT 编译时而不是在运行时，以便透明度计算没有动态类型信息，则会强制执行透明度规则。 因此，透明度计算结果必须能够确定仅从受 JIT 编译的而不考虑动态类型的静态类型。
+ 执行代码，以便透明度计算不具有动态类型信息的 JIT 编译而不是在运行时，强制执行透明度规则。 因此，透明度计算结果必须能够确定仅从受 JIT 编译，而不考虑动态类型的静态类型。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改是重写虚拟方法或实现透明虚拟或接口方法相匹配的接口的方法的透明度。
+ 若要解决此规则的冲突，更改是重写虚拟方法或实现一个接口以匹配透明虚拟或接口方法的方法的透明度。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不要禁止显示此规则的警告。 违反此规则将导致运行时<xref:System.TypeLoadException>使用 2 级透明度的程序集。
+ 不要禁止显示此规则的警告。 违反此规则将导致运行时<xref:System.TypeLoadException>的程序集，使用 2 级透明度。
 
 ## <a name="examples"></a>示例
 
@@ -49,4 +49,4 @@ ms.locfileid: "31917741"
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../code-quality/codesnippet/CSharp/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods_1.cs)]
 
 ## <a name="see-also"></a>请参阅
- [安全透明的代码，级别 2](/dotnet/framework/misc/security-transparent-code-level-2)
+ [安全透明代码，级别 2](/dotnet/framework/misc/security-transparent-code-level-2)

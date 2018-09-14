@@ -14,22 +14,26 @@ ms.assetid: 00882cf9-e10d-4d40-9126-3e6753e3c934
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a26c2b941289ed7a83e66e1677db172660d270
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 25bb1d9d26c9f5f4b4447af46cb48b5492429136
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920250"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549321"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：正确实现序列化方法
+
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
 |类别|Microsoft.Usage|
-|是否重大更改|中断性-如果该方法是程序集外部可见。<br /><br /> 非重大更改-如果此方法不是程序集外部可见。|
+|是否重大更改|是-如果方法为程序集外部可见。<br /><br /> 否-如果此方法不是程序集外部可见。|
 
 ## <a name="cause"></a>原因
  处理序列化事件的方法的签名、返回类型或可见性不正确。
@@ -37,18 +41,18 @@ ms.locfileid: "31920250"
 ## <a name="rule-description"></a>规则说明
  一种方法是通过应用以下序列化事件属性之一指定序列化事件处理程序：
 
--   <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnSerializedAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializingAttribute?displayProperty=fullName>
 
--   <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
+- <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
- 序列化事件处理程序采用单个参数的类型<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>，则返回`void`，并且具有`private`可见性。
+ 序列化事件处理程序采用一个参数的类型<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>，则返回`void`，并且具有`private`可见性。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更正签名、 返回类型或可见性序列化事件处理程序。
+ 若要修复此规则的冲突，请更正签名、 返回类型或序列化事件处理程序的可见性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

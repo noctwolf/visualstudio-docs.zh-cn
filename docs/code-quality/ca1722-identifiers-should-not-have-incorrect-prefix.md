@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959ce5c3e108aa9a1aa339d33b7bad8243adfb7c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: bcb0bfe07c9e9fb843ea6c7a0960b96cc09339b9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915003"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549451"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：标识符应采用正确的前缀
 |||
@@ -37,12 +37,12 @@ ms.locfileid: "31915003"
 ## <a name="rule-description"></a>规则说明
  按照约定，只有某些编程元素具有以特定前缀开头的名称。
 
- 类型名称并不一定特定前缀，不应以 C 作为前缀。 此规则报告类型名称，例如 CMyClass 的冲突，并不会报告作为类型名称，例如缓存的冲突。
+ 类型名称不具有特定前缀，并且不应使用 C 作为前缀。 此规则报告的类型名称，例如 CMyClass 冲突，并不会报告的类型名称，例如缓存冲突。
 
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+ 命名约定提供了通用的外观对于库面向公共语言运行时。 这种一致性可减少所需的新软件库，并使客户进一步库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 删除从标识符前缀。
+ 删除从标识符的前缀。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

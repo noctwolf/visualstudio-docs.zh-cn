@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6b495572786bc4934d2972dfdfd27642803d3f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 74fe556d775e60dec5dde4528a1924e55ab4c2ed
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919838"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546387"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: 不安全的 XSLT 脚本执行
 
@@ -31,13 +31,13 @@ ms.locfileid: "31919838"
 
 ## <a name="rule-description"></a>规则说明
 
-**XSLT**是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表，以将 XML 数据转换为其他格式，如 HTML、固定长度的文本、以逗号分隔的文本或其他 XML 格式。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
+**XSLT**是万维网联合会 (W3C) 标准，用于转换 XML 数据。 XSLT 通常用于编写样式表转换为其他格式，如 HTML、 固定长度的文本、 以逗号分隔的文本或以不同的 XML 格式的 XML 数据。 尽管默认情况下禁止，你仍可以选择为项目启用该功能。
 
-若要确保不暴露攻击面，此规则将触发每当 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全组合实例<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，这允许处理恶意脚本。
+若要确保不会公开攻击面，此规则将触发每当 XslCompiledTransform。<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 接收的不安全组合实例<xref:System.Xml.Xsl.XsltSettings>和<xref:System.Xml.XmlResolver>，它允许处理恶意脚本。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-- 不安全的 XsltSettings 参数替换为 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或与实例的已禁用文档函数和脚本执行。
+- 不安全的 XsltSettings 参数替换为 XsltSettings。<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或者与实例的已禁用文档函数和脚本执行。
 
 - 将 <xref:System.Xml.XmlResolver> 参数替换为 null 或 <xref:System.Xml.XmlSecureResolver> 实例。
 
@@ -47,7 +47,7 @@ ms.locfileid: "31919838"
 
 ## <a name="pseudo-code-examples"></a>伪代码示例
 
-### <a name="violationmdashuses-xsltsettingstrustedxslt"></a>冲突&mdash;使用 XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>使用 XsltSettings.TrustedXslt 的冲突
 
 ```csharp
 using System.Xml;
@@ -68,7 +68,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashuse-xsltsettingsdefault"></a>解决方案&mdash;使用 XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>使用 XsltSettings.Default 解决方案
 
 ```csharp
 using System.Xml;
@@ -89,7 +89,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>冲突&mdash;文档未被禁用的函数和脚本执行
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>冲突&mdash;文档未禁用的函数和脚本执行
 
 ```csharp
 using System.Xml;
@@ -143,4 +143,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>请参阅
 
-[XSLT 安全注意事项 （.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)
+- [XSLT 安全注意事项 （.NET 指南）](/dotnet/standard/data/xml/xslt-security-considerations)

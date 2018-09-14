@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4039e7f0d3c520a85d152329720d3253cab2140a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1ba8ef8cc0b75ed70ea6e98be2a4bac3e041e1d8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901586"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552011"
 ---
 # <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407：避免在 COM 可见类型中使用静态成员
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31901586"
 |TypeName|AvoidStaticMembersInComVisibleTypes|
 |CheckId|CA1407|
 |类别|Microsoft.Interoperability|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 专门标记为到组件对象模型 (COM) 可见类型包含`public``static`方法。
+ 专门标记为可见组件对象模型 (COM) 到某个类型包含`public``static`方法。
 
 ## <a name="rule-description"></a>规则说明
  COM 不支持`static`方法。
 
- 属性和事件访问器、 运算符重载方法或通过使用标记的方法，将忽略此规则<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性。
+ 此规则将忽略属性和事件访问器中，运算符重载方法或通过使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>属性或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性。
 
- 默认情况下，以下是对 COM 可见： 程序集、 公共类型，公共类型中的公共实例成员和公共值类型的所有成员。
+ 默认情况下，以下是对 COM 可见： 程序集、 公共类型、 公共类型中的公共实例成员和公共值类型的所有成员。
 
- 此规则发生，程序集级别<xref:System.Runtime.InteropServices.ComVisibleAttribute>必须设置为`false`和类-<xref:System.Runtime.InteropServices.ComVisibleAttribute>必须设置为`true`，如下面的代码所示。
+ 此规则发生程序集级别<xref:System.Runtime.InteropServices.ComVisibleAttribute>必须设置为`false`和类-<xref:System.Runtime.InteropServices.ComVisibleAttribute>必须设置为`true`，如下面的代码所示。
 
 ```csharp
 using System;
@@ -61,10 +61,10 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改设计，以使用提供的相同功能的实例方法`static`方法。
+ 若要修复此规则的冲突，请更改设计以使用提供的相同功能与实例方法`static`方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果 COM 客户端不需要访问由提供的功能`static`方法。
+ 则可以安全地禁止显示此规则的警告，如果 COM 客户端不需要对提供的功能的访问`static`方法。
 
 ## <a name="example-violation"></a>冲突的示例
 
@@ -75,14 +75,14 @@ namespace Samples
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
 
 ### <a name="comments"></a>注释
- 在此示例中， **Book.FromPages**不能调用方法，从 com。
+ 在此示例中， **Book.FromPages**方法不能从 COM 调用
 
 ## <a name="example-fix"></a>解决冲突的示例
 
 ### <a name="description"></a>描述
- 若要在前面的示例解决了冲突，无法更改的方法实例方法，但这样做不意义上此实例中。 更好的解决方案，将显式应用`ComVisible(false)`到此方法使它清楚地了解其他开发人员，该方法无法查看从 com。
+ 若要在前面的示例中解决冲突，可以将方法更改为实例方法，但是，在这种情况不难理解。 更好的解决方案是显式应用`ComVisible(false)`给方法，以将其清除给其他开发人员，该方法不能看到从 com。
 
- 下面的示例应用<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>到方法。
+ 下面的示例应用<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>方法。
 
 ### <a name="code"></a>代码
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 21c7d4fcf2ec1e16a225879b7feceef2a61a8161
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ae63583edac9b3ff6fefef416c8c1ce19d6e88f6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918007"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549084"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077：API 设计、XML 文档和 XML 文本读取器中的不安全处理
 |||
@@ -29,17 +29,17 @@ ms.locfileid: "31918007"
  当设计派生自 XMLDocument 和 XMLTextReader 的 API 时，请注意 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>。  当引用或解析外部实体源或设置 XML 中的不安全值时，使用不安全的 DTDProcessing 实例可能会导致信息泄露。
 
 ## <a name="rule-description"></a>规则说明
- A*文档类型定义 (DTD)* 了 XML 分析器可以确定文档有效性的两种方式之一定义[World Wide Web Consortium (W3C) 可扩展标记语言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此规则查找接受不受信任数据的某些属性和实例以提醒开发人员有关的潜在 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威胁，该威胁可能会导致 [拒绝服务 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻击。 在以下情况下触发此规则：
+ 一个*文档类型定义 (DTD)* 定义的是 XML 分析器可以确定文档有效性的两种方式之一[World Wide Web 联合会 (W3C) 可扩展标记语言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此规则查找接受不受信任数据的某些属性和实例以提醒开发人员有关的潜在 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威胁，该威胁可能会导致 [拒绝服务 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻击。 在以下情况下触发此规则：
 
--   <xref:System.Xml.XmlDocument> 或<xref:System.Xml.XmlTextReader>类使用默认冲突解决程序值进行 DTD 处理。
+- <xref:System.Xml.XmlDocument> 或<xref:System.Xml.XmlTextReader>类使用默认冲突解决程序值进行 DTD 处理。
 
--   没有为 XmlDocument 或 XmlTextReader 派生类定义的构造函数或没有用于 <xref:System.Xml.XmlResolver>的安全值。
+- 没有为 XmlDocument 或 XmlTextReader 派生类定义的构造函数或没有用于 <xref:System.Xml.XmlResolver>的安全值。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
--   捕获和处理所有 XmlTextReader 异常正确以避免路径信息泄露。
+- 捕获和处理所有 XmlTextReader 异常正确以避免路径信息泄露。
 
--   使用<xref:System.Xml.XmlSecureResolver>而不是 XmlResolver 来限制 XmlTextReader 可以访问的资源。
+- 使用<xref:System.Xml.XmlSecureResolver>而不是 XmlResolver 来限制 XmlTextReader 可以访问的资源。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  除非确信已知道输入是来自受信任的源，否则请勿禁止显示此警告的规则。

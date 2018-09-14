@@ -14,16 +14,21 @@ ms.assetid: 07b604e5-5579-4df9-a578-dadd0d8370a7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d3143bb7508af1fcb0a946ce7e3a3f0a8697b204
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 82fe9045173e65b24204a3b04e12b6a7f655c651
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917457"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548381"
 ---
 # <a name="ca2126-type-link-demands-require-inheritance-demands"></a>CA2126：类型链接请求需要继承请求
+
 |||
 |-|-|
 |TypeName|TypeLinkDemandsRequireInheritanceDemands|
@@ -32,19 +37,19 @@ ms.locfileid: "31917457"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 一个公共的非密封的类型受链接要求，具有可重写的方法，与类型和方法都不受继承要求保护。
+ 一个公共的非密封的类型受保护的链接要求，具有可重写的方法，并且类型和方法都不受继承要求保护。
 
 ## <a name="rule-description"></a>规则说明
- 链接要求对方法或其声明类型要求立即方法的调用方拥有指定的权限。 继承要求的方法上需要的重写一个方法具有指定的权限。 对一种类型的继承请求要求派生类必须具有指定的权限。
+ 对方法或其声明类型链接请求要求直接调用方的方法具有指定的权限。 在方法上的继承请求要求重写方法，以使指定的权限。 对一种类型的继承请求要求派生类具有指定的权限。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，保护类型或具有一个针对作为此链接要求相同的权限继承要求的方法。
+ 若要解决此规则的冲突，安全的类型或方法替换为链接要求相同的权限继承要求。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示与该规则冲突的类型。
+ 下面的示例显示了违反了此规则的类型。
 
  [!code-cpp[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/CPP/ca2126-type-link-demands-require-inheritance-demands_1.cpp)]
  [!code-vb[FxCop.Security.TypesWithLinkDemands#1](../code-quality/codesnippet/VisualBasic/ca2126-type-link-demands-require-inheritance-demands_1.vb)]
@@ -60,4 +65,6 @@ ms.locfileid: "31917457"
  [CA2123：重写的链接请求应与基相同](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)
 
 ## <a name="see-also"></a>请参阅
- [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)[链接需求](/dotnet/framework/misc/link-demands)
+
+- [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)
+- [链接需求](/dotnet/framework/misc/link-demands)

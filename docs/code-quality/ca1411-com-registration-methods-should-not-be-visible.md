@@ -14,16 +14,20 @@ ms.assetid: a59f96f1-1f38-4596-b656-947df5c55311
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e7407609e587049965cf513a16c9b03d1e7fa90
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0cd599ee67182084e7f2fb663d343281b0a8b079
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916933"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551693"
 ---
 # <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411：COM 注册方法应该是不可见的
+
 |||
 |-|-|
 |TypeName|ComRegistrationMethodsShouldNotBeVisible|
@@ -32,13 +36,14 @@ ms.locfileid: "31916933"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 将标有一个方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性是外部可见。
+
+使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>属性是外部可见。
 
 ## <a name="rule-description"></a>规则说明
- 程序集注册时与组件对象模型 (COM)，会将条目添加到程序集中的每个 COM 可见类型的注册表。 使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性可通过调用在注册和注销过程，分别运行特定于这些类型注册/注销的用户代码。 此代码不应在这些进程外部调用。
+ 程序集注册时使用组件对象模型 (COM)，条目添加到注册表中的程序集中每个 COM 可见类型。 使用标记的方法<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>和<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>属性在注册和注销过程中，分别称为，若要运行的是特定于注册/注销这些类型的用户代码。 此代码不应在这些进程外部调用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改到方法的可访问性`private`或`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 若要修复此规则的冲突，请更改到方法的可访问性`private`或`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
@@ -53,4 +58,7 @@ ms.locfileid: "31916933"
  [CA1410：应对 COM 注册方法进行匹配](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [向 COM 注册程序集](/dotnet/framework/interop/registering-assemblies-with-com) [Regasm.exe （程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)
+
+- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
+- [向 COM 注册程序集](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Regasm.exe（程序集注册工具）](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

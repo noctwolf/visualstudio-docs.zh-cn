@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e4bad795ccf89b36d4fc6a12b29ba4ada7fbb9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 88e38a2ae9c7cdf1cd8f8e664571add353a87dd7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31917575"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551293"
 ---
 # <a name="ca2143-transparent-methods-should-not-use-security-demands"></a>CA2143：透明方法不应使用安全要求
 |||
@@ -28,19 +28,19 @@ ms.locfileid: "31917575"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 透明类型或方法以声明方式标记有<xref:System.Security.Permissions.SecurityAction?displayProperty=fullName>`.Demand`需或方法调用<xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>方法。
+ 透明类型或方法将以声明方式标有<xref:System.Security.Permissions.SecurityAction?displayProperty=fullName>`.Demand`方法调用或需<xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>方法。
 
 ## <a name="rule-description"></a>规则说明
- 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 安全透明代码应使用完整的需求来作出安全决策并且安全关键代码不应依赖透明代码以进行完全的请求。 执行安全检查，如安全请求，任何代码改为应为安全关键。
+ 安全透明代码不应负责验证某个操作的安全，因此不应要求权限。 安全透明代码应使用完整的需求来作出安全决策并且安全关键代码不应依赖透明代码以进行完全的请求。 执行安全检查，如安全请求，任何代码而是应该是可靠关键。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 一般情况下，若要修复与此规则的冲突，此方法标记<xref:System.Security.SecuritySafeCriticalAttribute>属性。 你还可以删除此要求。
+ 一般情况下，若要解决此规则的冲突，此方法标记<xref:System.Security.SecuritySafeCriticalAttribute>属性。 此外可以删除该要求。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 在下面的代码上的规则文件，因为透明的方法发出的声明性安全要求。
+ 规则文件上的以下代码，因为透明方法发出一个声明性安全要求。
 
  [!code-csharp[FxCop.Security.CA2143.TransparentMethodsShouldNotDemand#1](../code-quality/codesnippet/CSharp/ca2143-transparent-methods-should-not-use-security-demands_1.cs)]
 
