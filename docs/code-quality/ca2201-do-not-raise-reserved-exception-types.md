@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 696eed674dd2b85ec048290ba88084751230635d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 763c8656507f8a1d9c1f59bd548469c338aeb012
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924032"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547509"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引发保留的异常类型
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -32,60 +33,65 @@ ms.locfileid: "31924032"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 某方法引发的异常类型过于一般或者保留的运行时。
+
+某方法引发的异常类型过于一般或者保留的运行时。
 
 ## <a name="rule-description"></a>规则说明
- 下面的异常类型是太通用，向用户提供足够的信息：
 
--   <xref:System.Exception?displayProperty=fullName>
+下面的异常类型是太通用，向用户提供足够的信息：
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
- 下面的异常类型保留，并且应仅由公共语言运行时引发：
+- <xref:System.SystemException?displayProperty=fullName>
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+下面的异常类型被保留，应仅由公共语言运行时引发：
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
- **不会引发一般异常**
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- 如果您引发一般异常类型，如<xref:System.Exception>或<xref:System.SystemException>在库或框架中，它会强制使用者能够捕捉所有异常，包括它们不知道如何处理的未知的异常。
+**不会引发一般异常**
 
- 请改为引发派生程度更大的类型在框架中，已存在，或者创建你自己的类型派生自<xref:System.Exception>。
+如果您引发一般异常类型，如<xref:System.Exception>或<xref:System.SystemException>中的库或框架，它会强制使用者能够捕捉所有异常，包括未知他们不知道如何处理的异常。
 
- **引发特定异常**
+相反，引发在 framework 中，已存在的派生程度更大的类型，或创建您自己的派生类型<xref:System.Exception>。
 
- 下表显示参数和验证的参数，包括值参数中的一个属性 set 访问器时引发的异常：
+**引发特定异常**
+
+下表显示了参数和验证属性的 set 访问器中包含值参数的参数时引发的异常：
 
 |参数说明|例外|
 |---------------------------|---------------|
 |`null` 引用|<xref:System.ArgumentNullException?displayProperty=fullName>|
 |超出允许的范围的值 （如集合或列表的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|
 |无效`enum`值|<xref:System.ComponentModel.InvalidEnumArgumentException?displayProperty=fullName>|
-|包含不符合的一种方法的参数规范的格式 (如的格式字符串`ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
+|包含不符合一种方法的参数规范的格式 (例如的格式字符串`ToString(String)`)|<xref:System.FormatException?displayProperty=fullName>|
 |否则为无效|<xref:System.ArgumentException?displayProperty=fullName>|
 
- 当操作对对象引发的当前状态无效 <xref:System.InvalidOperationException?displayProperty=fullName>
+当操作对象引发的当前状态无效 <xref:System.InvalidOperationException?displayProperty=fullName>
 
- 对已释放的对象执行操作时引发 <xref:System.ObjectDisposedException?displayProperty=fullName>
+当对已释放的对象执行操作时引发 <xref:System.ObjectDisposedException?displayProperty=fullName>
 
- 当不支持操作 (如在被重写**Stream.Write**打开以进行读取流中) 引发 <xref:System.NotSupportedException?displayProperty=fullName>
+不支持操作时 (如在被重写**Stream.Write**中打开进行读操作 Stream) 引发 <xref:System.NotSupportedException?displayProperty=fullName>
 
- 当转换会导致溢出 （如显式强制转换运算符重载） 时引发 <xref:System.OverflowException?displayProperty=fullName>
+当转换会导致溢出 （例如在显式强制转换运算符重载） 时引发 <xref:System.OverflowException?displayProperty=fullName>
 
- 对于所有其他情况下，请考虑创建您自己的派生自类型<xref:System.Exception>并引发该异常。
+对于所有其他情况下，请考虑创建自己的派生类型<xref:System.Exception>并引发该异常。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，将更改为不是保留的类型之一的特定类型的引发的异常的类型。
+
+若要修复此规则的冲突，请更改为不是保留的类型之一的特定类型引发的异常的类型。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+
+不禁止显示此规则发出的警告。
 
 ## <a name="related-rules"></a>相关的规则
- [CA1031：不要捕捉一般异常类型](../code-quality/ca1031-do-not-catch-general-exception-types.md)
+
+- [CA1031：不要捕捉一般异常类型](../code-quality/ca1031-do-not-catch-general-exception-types.md)

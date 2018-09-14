@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3944aba1a8b967e8da2bee007a4bbd4bacf4d6b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c178558743ca69fb3b62eccaf8164e4b49167ad3
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915823"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547563"
 ---
 # <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724：类型名不应与命名空间冲突
 |||
@@ -32,7 +32,7 @@ ms.locfileid: "31915823"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 类型名与匹配[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]不区分大小写的比较中的命名空间名称。
+ 类型名称匹配[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]不区分大小写的比较中的命名空间名称。
 
 ## <a name="rule-description"></a>规则说明
  类型名称不应该与 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 类库中定义的命名空间的名称匹配。 与该规则冲突将使库的可用性下降。
@@ -41,4 +41,4 @@ ms.locfileid: "31915823"
  选择的名称不匹配的类型名称[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类库命名空间。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 对于新开发，没有已知会出现情况，必须在此禁止显示此规则的警告。 禁止显示警告之前，请仔细考虑如何你的库的用户也可能因匹配名称产生混淆。 发布库，你可能需要禁止显示此规则的警告。
+ 对于新开发，没有已知情况下，必须在此禁止显示此规则的警告。 禁止显示警告之前，请仔细考虑如何库用户可能会被搞糊涂了匹配的名称。 发布库，您可能需要禁止显示此规则的警告。

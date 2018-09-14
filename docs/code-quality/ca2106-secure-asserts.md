@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5863f4d8ca4db47f7e537f0b1abc5eb280434c80
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5ff16cdce4be04bd076c93763fb6a22d2721675f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916794"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551777"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106：保护断言
+
 |||
 |-|-|
 |TypeName|SecureAsserts|
@@ -32,16 +33,18 @@ ms.locfileid: "31916794"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 某个方法断言权限，但不对调用方执行任何安全检查。
+ 一种方法断言权限，并不执行调用方的任何安全检查。
 
 ## <a name="rule-description"></a>规则说明
- 如果在不执行任何安全检查的情况下断言安全权限，则会在代码中留下可利用的安全漏洞。 安全堆栈审核将停止时对以下安全权限进行断言。 如果在调用方执行任何检查的情况下断言权限，调用方无法通过使用你的权限间接地执行代码。 断言无安全检查是允许仅当你确信，该断言不能有害的方式。 声明是无害的如果您调用的代码不会造成损害，或用户不能将任意信息传递给调用的代码。
+ 如果在不执行任何安全检查的情况下断言安全权限，则会在代码中留下可利用的安全漏洞。 安全堆栈审核停止时断言安全权限。 如果在调用方执行任何检查的情况下断言权限，调用方可以通过使用你的权限间接执行代码。 断言没有安全检查是允许当您确定无法以有害方式使用断言。 声明是无害的如果您调用的代码是无害的或者用户不能将任意信息传递给调用的代码。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，添加对方法或其声明的类型安全要求。
+ 若要修复此规则的冲突，请添加对方法或其声明类型安全要求。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 禁止显示此规则仅在仔细的安全检查后的警告。
+ 禁止显示此规则在仔细检查安全性后，才的警告。
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)
+
+- <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
+- [安全编码准则](/dotnet/standard/security/secure-coding-guidelines)

@@ -14,37 +14,43 @@ ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 63386e73cee4d2e0c1c34f31f0042312fef4869f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 44130632cb416bf03819ddff13b797ac3b799354
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898007"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547170"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057：字符串 URI 重载调用 System.Uri 重载
+
 |||
 |-|-|
 |TypeName|StringUriOverloadsCallSystemUriOverloads|
 |CheckId|CA1057|
 |类别|Microsoft.Design|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 某个类型声明只是与字符串参数替换不同的方法重载<xref:System.Uri?displayProperty=fullName>参数，并且采用字符串参数的重载不调用采用的重载<xref:System.Uri>参数。
+
+一种类型声明的差异仅在于替换的字符串参数的方法重载<xref:System.Uri?displayProperty=fullName>参数，并采用字符串参数的重载不会调用的重载的<xref:System.Uri>参数。
 
 ## <a name="rule-description"></a>规则说明
- 因为重载差异仅在于字符串 /<xref:System.Uri>参数，则假定该字符串来表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri>类以安全的方式提供这些服务。 若要获得的好处<xref:System.Uri>类，字符串重载应调用<xref:System.Uri>重载使用字符串自变量。
+ 因为重载的区别仅由字符串或<xref:System.Uri>参数，则假定该字符串来表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri>类以安全的方式提供这些服务。 若要获得的好处<xref:System.Uri>类，字符串重载应调用<xref:System.Uri>重载使用字符串自变量。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 重新实现，因此，它将创建的实例使用的字符串表示形式的 URI 的方法<xref:System.Uri>类使用字符串自变量，并随后将传递<xref:System.Uri>对象的重载都<xref:System.Uri>参数。
+ 重新实现的方法，使其创建的实例使用的 uri 的字符串表示形式<xref:System.Uri>类使用的字符串参数，并随后将传递<xref:System.Uri>对象的重载都<xref:System.Uri>参数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果字符串参数不表示一个 URI。
+ 它可以安全地禁止显示此规则的警告，如果字符串参数不表示一个 URI。
 
 ## <a name="example"></a>示例
- 下面的示例演示一个正确实现的字符串的重载。
+ 下面的示例显示了正确实现的字符串重载。
 
  [!code-csharp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CSharp/ca1057-string-uri-overloads-call-system-uri-overloads_1.cs)]
  [!code-cpp[FxCop.Design.CallUriOverload#1](../code-quality/codesnippet/CPP/ca1057-string-uri-overloads-call-system-uri-overloads_1.cpp)]

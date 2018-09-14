@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 70bc0065957321894c53726790b73b432dfdea6f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 961052d778551818942977b4d8895b85e96091d6
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901035"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551816"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039：列表已强类型化
+
 |||
 |-|-|
 |TypeName|ListsAreStronglyTyped|
@@ -32,35 +33,37 @@ ms.locfileid: "31901035"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 公共或受保护类型实现<xref:System.Collections.IList?displayProperty=fullName>但未提供的一个或多个以下的强类型化的方法：
 
--   IList.Item
+公共或受保护类型实现<xref:System.Collections.IList?displayProperty=fullName>但不提供强类型化的方法的一个或多项操作：
 
--   IList.Add
+- IList.Item
 
--   IList.Contains
+- IList.Add
 
--   IList.IndexOf
+- IList.Contains
 
--   IList.Insert
+- IList.IndexOf
 
--   IList.Remove
+- IList.Insert
+
+- IList.Remove
 
 ## <a name="rule-description"></a>规则说明
- 此规则要求<xref:System.Collections.IList>实现提供强类型化成员，以便用户不需要强制转换到的自变量<xref:System.Object?displayProperty=fullName>键入当用户界面中使用提供的功能时。 <xref:System.Collections.IList>接口由可按照索引访问的对象的集合。 此规则假定该类型实现<xref:System.Collections.IList>这样做是为了管理集合的实例的类型属于强于<xref:System.Object>。
 
- <xref:System.Collections.IList> 实现<xref:System.Collections.ICollection?displayProperty=fullName>和<xref:System.Collections.IEnumerable?displayProperty=fullName>接口。 如果你实现<xref:System.Collections.IList>，你必须提供必需的强类型的成员<xref:System.Collections.ICollection>。 如果集合中的对象扩展<xref:System.ValueType?displayProperty=fullName>，你必须提供强类型的成员的<xref:System.Collections.IEnumerable.GetEnumerator%2A>以避免导致性能降低由装箱导致; 这不是必需的对象集合的引用类型时。
+此规则要求<xref:System.Collections.IList>实现提供强类型成员，以便用户不需要强制转换的自变量<xref:System.Object?displayProperty=fullName>键入时它们使用由接口提供的功能。 <xref:System.Collections.IList>接口由可按照索引访问的对象的集合实现。 此规则假定，该类型的实现<xref:System.Collections.IList>管理的强于类型的实例集合<xref:System.Object>。
 
- 若要符合此规则，实现接口成员显式使用名称的形式 InterfaceName.InterfaceMemberName，类似于<xref:System.Collections.IList.Add%2A>。 显式接口成员的界面使用声明的数据类型。 通过使用接口成员的名称，如实现强类型的成员`Add`。 声明为公共的强类型的成员和声明的参数和返回值可由集合的强类型。 强类型替代较弱类型，如<xref:System.Object>和<xref:System.Array>由接口声明。
+<xref:System.Collections.IList> 实现<xref:System.Collections.ICollection?displayProperty=fullName>和<xref:System.Collections.IEnumerable?displayProperty=fullName>接口。 如果你实现了<xref:System.Collections.IList>，则必须提供必需的强类型化的成员<xref:System.Collections.ICollection>。 如果集合中的对象扩展<xref:System.ValueType?displayProperty=fullName>，则必须提供的强类型化的成员<xref:System.Collections.IEnumerable.GetEnumerator%2A>以避免性能降低由装箱造成; 这不是必需的对象的集合属于引用类型时。
+
+若要符合此规则，实现接口成员显式使用名称形式 InterfaceName.InterfaceMemberName，类似于<xref:System.Collections.IList.Add%2A>。 显式接口成员由接口中使用的数据类型的声明。 通过使用接口成员名称，如实现强类型的成员`Add`。 声明为公共的强类型化的成员和声明参数和返回值是由集合的强类型。 强类型替换较弱的类型，如<xref:System.Object>和<xref:System.Array>，通过接口进行声明。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，显式实现<xref:System.Collections.IList>成员和前面所述的成员提供强类型替代项。 正确实现的代码<xref:System.Collections.IList>接口，并提供所需强类型的成员，请参阅下面的示例。
+ 若要解决此规则的冲突，显式实现<xref:System.Collections.IList>成员，并为前面记下的成员提供强类型替代项。 代码正确地实现<xref:System.Collections.IList>接口，并提供所需强类型的成员，请参阅下面的示例。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 实现基于对象的一个新集合，如链接列表，其中扩展新集合的类型决定强类型时，禁止显示此规则的警告。 这些类型应符合此规则，并公开强类型的成员。
+ 实现基于对象的新集合，如链接列表，其中扩展新集合的类型决定强类型时，禁止显示此规则的警告。 这些类型应符合此规则，并将强类型化的成员公开。
 
 ## <a name="example"></a>示例
- 在下面的示例中，类型`YourType`扩展<xref:System.Collections.CollectionBase?displayProperty=fullName>，所有强类型的集合也应如此。 请注意，<xref:System.Collections.CollectionBase>提供的显式实现<xref:System.Collections.IList>接口供你。 因此，你必须只提供的强类型的成员<xref:System.Collections.IList>和<xref:System.Collections.ICollection>。
+ 在下面的示例中，类型`YourType`扩展了<xref:System.Collections.CollectionBase?displayProperty=fullName>，也应如此所有强类型的集合。 <xref:System.Collections.CollectionBase> 提供的显式实现<xref:System.Collections.IList>接口供你。 因此，您必须仅提供的强类型化的成员<xref:System.Collections.IList>和<xref:System.Collections.ICollection>。
 
  [!code-csharp[FxCop.Design.IListStrongTypes#1](../code-quality/codesnippet/CSharp/ca1039-lists-are-strongly-typed_1.cs)]
 
@@ -70,4 +73,9 @@ ms.locfileid: "31901035"
  [CA1038：枚举数应强类型化](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Collections.CollectionBase?displayProperty=fullName> <xref:System.Collections.ICollection?displayProperty=fullName> <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.IList?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
+
+- <xref:System.Collections.CollectionBase?displayProperty=fullName>
+- <xref:System.Collections.ICollection?displayProperty=fullName>
+- <xref:System.Collections.IEnumerable?displayProperty=fullName>
+- <xref:System.Collections.IList?displayProperty=fullName>
+- <xref:System.Object?displayProperty=fullName>

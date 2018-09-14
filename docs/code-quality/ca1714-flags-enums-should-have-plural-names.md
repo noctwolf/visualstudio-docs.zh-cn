@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e00c0e7eaf3b88588f0914d78a23db40082d63f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 76b946e5fc5216d11eee98ceb8cc7eeb13ff186b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915726"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545643"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714：Flags 枚举应采用复数形式的名称
 |||
@@ -32,18 +32,18 @@ ms.locfileid: "31915726"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 公共枚举具有<xref:System.FlagsAttribute?displayProperty=fullName>，并且其名称不结尾中。
+ 公共枚举具有<xref:System.FlagsAttribute?displayProperty=fullName>和其名称不会结束中的。
 
 ## <a name="rule-description"></a>规则说明
- 使用标记的类型<xref:System.FlagsAttribute>具有采用复数形式，因为该特性指明可以指定多个值的名称。 例如，定义每周天数的枚举可能被用于在中使用应用程序可以在其中指定多天。 此枚举应具有<xref:System.FlagsAttribute>和可称为天。 允许仅指定一天的类似枚举将没有属性，并可能是称为 Day。
+ 使用标记的类型<xref:System.FlagsAttribute>具有采用复数形式，因为该属性指示可以指定多个值的名称。 例如，枚举，用于定义每周天数可能被用于应用程序中您可以在其中指定多天。 此枚举应具有<xref:System.FlagsAttribute>且无法调用天。 允许仅指定一天的类似枚举将没有属性，并可能是名为 Day。
 
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+ 命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 复数形式的单词，请在枚举的名称，或删除<xref:System.FlagsAttribute>属性如果不应同时指定多个枚举值。
+ 确保枚举名称的复数形式的单词，或删除<xref:System.FlagsAttribute>属性如果不应同时指定多个枚举值。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示冲突，如果名称为复数形式的单词，但不是以结尾的。 例如，如果以前所述在多个天枚举已命名 DaysOfTheWeek，这将违反规则，但不是其意图的逻辑。 此类冲突应禁止显示。
+ 则可以安全地禁止显示冲突，如果名称为复数形式的单词，但不是以结尾的。 例如，如果所述的多个天枚举以前名为 DaysOfTheWeek，这会违反该规则，但不是其意图的逻辑。 应禁止显示此类违规情况。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1027：用 FlagsAttribute 标记枚举](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
@@ -51,4 +51,6 @@ ms.locfileid: "31915726"
  [CA2217：不要使用 FlagsAttribute 标记枚举](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>请参阅
- <xref:System.FlagsAttribute?displayProperty=fullName> [枚举设计](/dotnet/standard/design-guidelines/enum)
+
+- <xref:System.FlagsAttribute?displayProperty=fullName>
+- [枚举设计](/dotnet/standard/design-guidelines/enum)

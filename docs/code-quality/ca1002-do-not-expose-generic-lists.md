@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a2131ef8cb0b8f0ba540d7403d7c5f8dbb8b89df
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 016b9f72567f6ff70b19bfa9e781e0f0d14cb702
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901091"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549347"
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002：不要公开泛型列表
 |||
@@ -32,22 +32,22 @@ ms.locfileid: "31901091"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 某个类型包含外部可见成员即<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型，返回<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型或其签名包括<xref:System.Collections.Generic.List%601?displayProperty=fullName>参数。
+ 某个类型包含外部可见成员<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型，将返回<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型或其签名包含<xref:System.Collections.Generic.List%601?displayProperty=fullName>参数。
 
 ## <a name="rule-description"></a>规则说明
- <xref:System.Collections.Generic.List%601?displayProperty=fullName> 是旨在用于性能和而非继承的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 不包含虚拟成员，它可以更轻松地更改继承的类的行为。 下面的泛型集合针对继承设计，并应公开而不是<xref:System.Collections.Generic.List%601?displayProperty=fullName>。
+ <xref:System.Collections.Generic.List%601?displayProperty=fullName> 是专为性能和不继承的泛型集合。 <xref:System.Collections.Generic.List%601?displayProperty=fullName> 不包含虚拟成员，从而使更轻松地更改继承的类的行为。 下面的泛型集合用于继承，因此而不是不应公开<xref:System.Collections.Generic.List%601?displayProperty=fullName>。
 
--   <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>
 
--   <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
+- <xref:System.Collections.ObjectModel.KeyedCollection%602?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型设置为一个针对继承设计的泛型集合。
+ 若要修复此规则的冲突，请更改<xref:System.Collections.Generic.List%601?displayProperty=fullName>类型设置为一个针对继承设计的泛型集合。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非引发此警告的程序集不是可重用库不禁止显示此规则的警告。 例如，它可以放心地禁止显示此警告在性能优化应用程序中的其中泛型列表使用过程中获得性能优势。
+ 除非引发此警告的程序集不应为可重用的库，否则不要禁止显示此规则的警告。 例如，它可以放心地取消显示此警告在性能优化应用程序中的泛型列表使用获得性能优势，是。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1005：避免泛型类型的参数过多](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)

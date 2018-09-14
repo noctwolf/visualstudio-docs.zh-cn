@@ -14,16 +14,21 @@ ms.assetid: 14616b37-74c4-4286-b051-115d00aceb5f
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 07e0bbaa05b0674666a7d4403daeeee8b23348be
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: fcc7994e67e268aff21af925632d2ee9cf102ff4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919972"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547151"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234：传递 System.Uri 对象，而不传递字符串
+
 |||
 |-|-|
 |TypeName|PassSystemUriObjectsInsteadOfStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31919972"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 具有名称中包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"; 一个字符串参数的方法进行调用和方法的声明类型包含具有的对应方法重载<xref:System.Uri?displayProperty=fullName>参数。
+ 调用具有其名称包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"; 一个字符串参数的方法该方法的声明类型包含具有相应的方法重载和<xref:System.Uri?displayProperty=fullName>参数。
 
 ## <a name="rule-description"></a>规则说明
- 参数名称拆分为基于 camel 大小写约定的标记，然后检查每个令牌以确定它是否等于"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果没有匹配项，则假定该参数表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri>类以安全的方式提供这些服务。 在不同的表示形式的 URI 方面的两种重载之间存在一个选择时，用户应该选择采用的重载<xref:System.Uri>自变量。
+ 参数名称拆分为基于驼峰式大小写约定的标记，然后检查每个令牌，以确定它是否等于"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果没有匹配项，则假定该参数表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri>类以安全的方式提供这些服务。 在两个唯一的表示形式的 URI 方面的差别的重载之间存在一个选择时，用户应选择的重载的<xref:System.Uri>参数。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，调用的重载采用<xref:System.Uri>自变量。
+ 若要修复此规则的冲突，请调用的重载的<xref:System.Uri>参数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果字符串参数不表示一个 URI。
+ 它可以安全地禁止显示此规则的警告，如果字符串参数不表示一个 URI。
 
 ## <a name="example"></a>示例
- 下面的示例演示一种方法， `ErrorProne`，这违反了规则和方法， `SaferWay`，从而正确调用<xref:System.Uri>重载。
+ 下面的示例演示一种方法， `ErrorProne`，这违反了规则和方法， `SaferWay`，以及正确调用<xref:System.Uri>重载。
 
  [!code-vb[FxCop.Usage.PassUri#1](../code-quality/codesnippet/VisualBasic/ca2234-pass-system-uri-objects-instead-of-strings_1.vb)]
  [!code-cpp[FxCop.Usage.PassUri#1](../code-quality/codesnippet/CPP/ca2234-pass-system-uri-objects-instead-of-strings_1.cpp)]

@@ -14,16 +14,21 @@ ms.assetid: e2a48939-d9fa-478c-b2f9-3bdbce07dff7
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc4a13746182136e10cb550bb7235a8bad2528fd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f7a10d126d5432a80b146fe2086c01064d83006e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919122"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547430"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208：正确实例化自变量异常
+
 |||
 |-|-|
 |TypeName|InstantiateArgumentExceptionsCorrectly|
@@ -32,16 +37,18 @@ ms.locfileid: "31919122"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 可能的原因包括以下情况下：
 
--   异常类型，或派生自的默认 （无参数） 构造函数进行调用<xref:System.ArgumentException>。
+可能的原因包括以下情况：
 
--   不正确的字符串自变量传递给参数化构造函数的异常类型，或派生自<xref:System.ArgumentException>。
+- 调用，或其派生的异常类型的默认 （无参数） 构造函数<xref:System.ArgumentException>。
+
+- 不正确的字符串参数传递给参数化构造函数，或其派生的异常类型的<xref:System.ArgumentException>。
 
 ## <a name="rule-description"></a>规则说明
- 而不是调用默认构造函数，调用允许更有意义的异常消息，必须提供的构造函数重载之一。 异常消息应面向开发人员，并清楚地介绍错误条件以及如何更正或避免异常。
 
- 一个或两个字符串的构造函数的签名<xref:System.ArgumentException>和其派生的类型不一致相对于`message`和`paramName`参数。 请确保用正确的字符串自变量调用这些构造函数。 签名如下所示：
+而不是调用默认构造函数，调用允许更有意义的异常消息提供的构造函数重载之一。 异常消息应面向开发人员，并清楚地解释错误条件以及如何更正或避免异常。
+
+一个或两个字符串的构造函数的签名<xref:System.ArgumentException>及其派生的类型而不相对于一致`message`和`paramName`参数。 请确保使用正确的字符串参数调用这些构造函数。 签名如下所示：
 
  <xref:System.ArgumentException>(字符串`message`)
 
@@ -60,20 +67,20 @@ ms.locfileid: "31919122"
  <xref:System.DuplicateWaitObjectException>(字符串`parameterName`，字符串`message`)
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，调用的构造函数的消息、 参数名称，或两者，并确保自变量类型的正确<xref:System.ArgumentException>调用。
+ 若要修复此规则的冲突，请调用的构造函数的一条消息、 参数名称，或两者，并确保参数是正确的类型的<xref:System.ArgumentException>被调用。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，仅当参数化构造函数调用使用正确的字符串自变量。
+ 它可以安全地禁止显示此规则的警告，如果使用正确的字符串自变量调用参数化构造函数。
 
-## <a name="example"></a>示例
- 下面的示例演示不正确实例化 ArgumentNullException 类型的实例的构造函数。
+## <a name="example-1"></a>示例 1
+ 下面的示例显示了不正确实例化 ArgumentNullException 类型的实例的构造函数。
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_1.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_1.cs)]
  [!code-vb[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#1](../code-quality/codesnippet/VisualBasic/ca2208-instantiate-argument-exceptions-correctly_1.vb)]
 
-## <a name="example"></a>示例
- 下面的示例通过切换构造函数自变量中修复了上面的冲突。
+## <a name="example-2"></a>示例 2
+ 下面的示例通过切换构造函数参数修复了上面的冲突。
 
  [!code-cpp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CPP/ca2208-instantiate-argument-exceptions-correctly_2.cpp)]
  [!code-csharp[FxCop.Usage.InstantiateArgumentExceptionsCorrectly#2](../code-quality/codesnippet/CSharp/ca2208-instantiate-argument-exceptions-correctly_2.cs)]

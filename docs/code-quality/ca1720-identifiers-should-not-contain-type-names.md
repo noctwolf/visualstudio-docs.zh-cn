@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a8f86037b54b2b7ad5cce1ea683341ca6656c2b3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: eb4fc066e45017638eda863c0070e9ee067fcf8e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915624"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548795"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：标识符不应包含类型名称
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -32,112 +33,112 @@ ms.locfileid: "31915624"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 外部可见成员中的参数的名称包含一个数据类型名称。
+ 外部可见成员中的参数的名称包含的数据类型名称。
 
- -或-
+ 或
 
  外部可见成员的名称包含特定于语言的数据类型名称。
 
 ## <a name="rule-description"></a>规则说明
- 参数和成员的名称更好地用于传达它们的含义来说明它们需要由开发工具提供的类型。 对于成员的名称，如果必须使用一个数据类型名称，则使用而不是特定于语言的一个独立于语言的名称。 例如，而不是 C# 类型名称 int，使用独立于语言的数据类型名称，Int32。
+ 参数和成员的名称更好地用于进行通信来说明它们应由开发工具提供的类型及其含义。 有关成员的名称，如果必须使用数据类型名称，则使用而不是特定于语言的一个独立于语言的名称。 例如，而不是 C# 类型名称 int，使用独立于语言的数据类型名称，Int32。
 
- 对照以下特定于语言的数据类型名称，不区分大小写的方式，检查每个离散令牌参数或成员的名称：
+ 每个离散的标记参数或成员的名称被签入以下特定于语言的数据类型名称，不区分大小写的方式：
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   整数
+- 整数
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   无符号
+- 无符号
 
--   签名
+- 签名
 
--   Float
+- Float
 
--   Float32
+- float32
 
--   Float64
+- float64
 
- 此外，参数的名称还检查针对以下独立于语言的数据类型名称，不区分大小写方式：
+此外，参数的名称是还会检查以下独立于语言的数据类型名称，不区分大小写的方式：
 
--   对象
+- 对象
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   Ptr
+- ptr
 
--   指针
+- 指针
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   Decimal
+- 十进制
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  **如果针对参数引发的：**
 
- 将替换为更好地说明了其含义的词或更通用术语，例如 'value' 参数的名称的数据类型标识符。
+ 在参数名的数据类型标识符替换为更好地描述其含义的术语或更通用的词条，如 value。
 
- **如果激发针对成员：**
+ **如果触发针对成员：**
 
- 将替换术语，用于更好地描述它的含义、 独立于语言的同等或更通用术语，例如 value 成员的名称的语言特定的数据类型标识符。
+ 替换为与更好地描述其含义，独立于语言的同等或更通用的词条，如 value 成员的名称的特定于语言的数据类型标识符。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 偶尔使用的基于类型的参数和成员名称可能正合适。 但是，对于新开发，没有已知会出现情况，则应该禁止显示此规则的警告。 对于以前发布的库，你可能需要禁止显示此规则的警告。
+ 可能需要偶尔使用的基于类型的参数和成员名称。 但是，对于新的开发，没有已知情况下，则应该禁止显示此规则的警告。 对于以前发布的库，您可能需要禁止显示此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1709：标识符的大小写应当正确](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

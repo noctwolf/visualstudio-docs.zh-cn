@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb3a7e1818013694633a5337e415a01baaae286
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14df76b363f4df5d09b06436765b5f0c66ad2c5d
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918699"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551882"
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有关键类型的字段应是安全关键的
+
 |||
 |-|-|
 |TypeName||
@@ -26,7 +27,8 @@ ms.locfileid: "31918699"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 声明了安全透明字段或可靠关键字段。 其类型被指定为安全关键。 例如：
+
+声明了安全透明字段或可靠关键字段。 其类型被指定为安全关键。 例如：
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -38,16 +40,17 @@ ms.locfileid: "31918699"
    {
       Type1 m_field; // CA2151, transparent field of critical type
    }
-
 ```
 
- 在此示例中，`m_field` 是一个安全关键类型的安全透明字段。
+在此示例中，`m_field` 是一个安全关键类型的安全透明字段。
 
 ## <a name="rule-description"></a>规则说明
- 若要使用安全关键类型，引用该类型的代码必须是安全关键或安全可靠关键。 即使引用是间接的，也需如此。 例如，当你引用具有关键类型的透明字段时，你的代码必须是安全关键的或安全可靠的。 因此，具有安全透明字段或安全可靠关键字段具有误导性，因为透明代码仍然无法访问该字段。
+
+若要使用安全关键类型，引用该类型的代码必须是安全关键或安全可靠关键。 即使引用是间接的，也需如此。 例如，当你引用具有关键类型的透明字段时，你的代码必须是安全关键的或安全可靠的。 因此，具有安全透明字段或安全可靠关键字段具有误导性，因为透明代码仍然无法访问该字段。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要解决此规则的冲突，请使用 <xref:System.Security.SecurityCriticalAttribute> 特性标记该字段，或将该字段引用的类型设为安全透明或安全关键。
+
+若要修复此规则的冲突，请将标记与字段<xref:System.Security.SecurityCriticalAttribute>属性，或创建为该类型由字段引用或者安全透明或安全关键。
 
 ```csharp
 // Fix 1: Make the referencing field security critical
@@ -72,13 +75,12 @@ ms.locfileid: "31918699"
       [SecurityCritical]
       Type1 m_field; // Fixed: critical type, critical field
    }
-
 ```
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+
+不禁止显示此规则发出的警告。
 
 ### <a name="code"></a>代码
- [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]
 
-### <a name="comments"></a>注释
+[!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2151-fields-with-critical-types-should-be-security-critical_1.cs)]

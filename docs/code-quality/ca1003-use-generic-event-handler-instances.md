@@ -14,16 +14,20 @@ ms.assetid: 402101b6-555d-4cf7-b223-1d9fdfaaf1cd
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e605cb0188ca72cb74905e34ee5196a07f748cd6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 29bd98677715a8772143ab448206f2a5ccddd763
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31899959"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551608"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003：使用泛型事件处理程序实例
+
 |||
 |-|-|
 |TypeName|UseGenericEventHandlerInstances|
@@ -32,25 +36,25 @@ ms.locfileid: "31899959"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 包含的类型的委托返回 void，该签名包含两个参数 （一个对象的第一个和第二个是可以分配给 EventArgs 的类型） 和包含程序集针对[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
+ 一种类型包含一个委托，它返回 void，其签名包含两个参数 （一个的对象的第一个和第二个是分配给 EventArgs 的类型） 和包含程序集针对[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 
 ## <a name="rule-description"></a>规则说明
- 之前[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，以便将自定义信息传递给事件处理程序，新的委托，必须指定派生自的类声明<xref:System.EventArgs?displayProperty=fullName>类。 这已不再是实际中[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，后者引入<xref:System.EventHandler%601?displayProperty=fullName>委托。 此泛型委托允许的任何类都派生自<xref:System.EventArgs>与事件处理程序一起使用。
+ 之前[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，以便将自定义信息传递给事件处理程序，一个新委托，必须指定派生自的类声明<xref:System.EventArgs?displayProperty=fullName>类。 这已不再是在实际[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，它引入了<xref:System.EventHandler%601?displayProperty=fullName>委托。 此泛型委托允许的任何类都派生自<xref:System.EventArgs>来与事件处理程序一起使用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 要修复与此规则的冲突，移除了该委托，并通过使用取代其用途<xref:System.EventHandler%601?displayProperty=fullName>委托。 如果该委托是通过自动生成[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]编译器，更改用于事件声明中的语法<xref:System.EventHandler%601?displayProperty=fullName>委托。
+ 若要解决此规则的冲突，移除了该委托，并将其用途为通过使用<xref:System.EventHandler%601?displayProperty=fullName>委托。 如果该委托将自动生成[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]编译器，更改要使用的事件声明的语法<xref:System.EventHandler%601?displayProperty=fullName>委托。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例显示一个与该规则冲突的委托。 在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]示例中，注释说明了如何修改以满足该规则的示例。 对于 C# 示例，后面的示例演示修改后的代码。
+ 下面的示例显示了一个委托，它违反了此规则。 在[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]示例中，注释说明了如何修改示例以满足该规则。 对于 C# 示例，以下是一个示例显示修改后的代码。
 
  [!code-vb[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/VisualBasic/ca1003-use-generic-event-handler-instances_1.vb)]
  [!code-csharp[FxCop.Design.CustomEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_1.cs)]
 
 ## <a name="example"></a>示例
- 下面的示例从前面的示例，其中满足该规则，并替换在中的使用它删除与委托声明`ClassThatRaisesEvent`和`ClassThatHandlesEvent`方法通过使用<xref:System.EventHandler%601?displayProperty=fullName>委托。
+ 以下示例从上一示例中，满足该规则，并将在中的使用它删除委托声明`ClassThatRaisesEvent`并`ClassThatHandlesEvent`方法通过使用<xref:System.EventHandler%601?displayProperty=fullName>委托。
 
  [!code-csharp[FxCop.Design.GenericEventHandler#1](../code-quality/codesnippet/CSharp/ca1003-use-generic-event-handler-instances_2.cs)]
 
@@ -70,4 +74,5 @@ ms.locfileid: "31899959"
  [CA1007：在适用处使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>请参阅
- [泛型](/dotnet/csharp/programming-guide/generics/index)
+
+- [泛型](/dotnet/csharp/programming-guide/generics/index)

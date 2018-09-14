@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 991358ec361e414c9f5d335feb43eadde628a763
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 83dc61c31d2951d230c04fb52d7d1e6ffd932a03
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924669"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550302"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225：运算符重载具有命名的备用项
 |||
@@ -35,9 +35,9 @@ ms.locfileid: "31924669"
  检测到运算符重载，但未找到预期的指定备用方法。
 
 ## <a name="rule-description"></a>规则说明
- 运算符重载允许使用的符号来表示类型的计算。 例如，添加重载加号 （+） 的类型通常具有名为 Add 的可选成员。 命名的备用成员提供对与运算符相同的功能的访问，并提供给开发人员的不支持重载的运算符的语言进行编程。
+ 运算符重载允许使用的符号来表示类型的计算。 例如，添加重载加号 （+） 的类型通常具有名为 Add 的可选成员。 命名的备用成员提供对与运算符相同的功能的访问，并提供给开发人员的语言不支持重载的运算符进行编程。
 
- 此规则检查下表中列出的运算符。
+ 此规则将检查下表中列出的运算符。
 
 |C#|Visual Basic|C++|备用名称|
 |---------|------------------|-----------|--------------------|
@@ -52,46 +52,46 @@ ms.locfileid: "31924669"
 |/=|/=|/=|除|
 |==|=|==|Equals|
 |^|Xor|^|Xor|
-|^=|Xor =|^=|Xor|
+|^=|异或 =|^=|Xor|
 |>|>|>|比较|
 |>=|>=|>=|比较|
 |++|不可用|++|递增|
 |<>|!=|Equals|
-|<<|<<|<<|LeftShift|
-|<<=|<<=|<<=|LeftShift|
+|<<|<<|<<|左向右|
+|<<=|<<=|<<=|左向右|
 |<|<|<|比较|
 |<=|<=|\<=|比较|
 |&&|不可用|&&|LogicalAnd|
 |&#124;&#124;|不可用|&#124;&#124;|LogicalOr|
 |!|不可用|!|LogicalNot|
-|%|Mod|%|Mod 或余数|
+|%|Mod|%|Mod 或其余部分|
 |%=|不可用|%=|Mod|
 |* （二进制）|*|*|相乘|
 |*=|不可用|*=|相乘|
-|~|不|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|不可用|>>=|RightShift|
+|~|Not|~|OnesComplement|
+|>>|>>|>>|组合键|
+=|不可用|>>=|组合键|
 |-（二进制）|-（二进制）|-（二进制）|减|
 |-=|不可用|-=|减|
-|true|IsTrue|不可用|IsTrue （属性）|
-|-（一元）|不可用|-|要求反|
-|+ （一元）|不可用|+|加号|
+|true|为 true 时|不可用|IsTrue （属性）|
+|-（一元）|不可用|-|求反|
+|+ （一元）|不可用|+|Plus|
 |False|IsFalse|False|IsTrue （属性）|
 
- 不适用 = = 所选的语言不能重载。
+ N/A = = 无法在所选语言中重载。
 
- 规则还检查类型中的隐式和显式强制转换运算符 (`SomeType`) 通过检查方法名为`ToSomeType`和`FromSomeType`。
+ 该规则还会检查类型中的隐式和显式强制转换运算符 (`SomeType`) 通过检查方法名为`ToSomeType`和`FromSomeType`。
 
- 在 C# 中，在一个二元运算符重载时，相应的赋值运算符，如果有的话，也会隐式重载。
+ 在 C# 中，当重载二元运算符时，相应的赋值运算符，如果有的话，也会隐式重载。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，可对运算符; 实现的替代方法将它使用建议的替代名称。
+ 若要解决此规则的冲突，实现对运算符; 的替代方法使用建议的替代名称将其命名。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 如果你要实现共享的库不禁止显示此规则的警告。 应用程序可以忽略此规则的警告。
+ 如果要实现共享的库不禁止显示此规则的警告。 应用程序可以忽略此规则的警告。
 
 ## <a name="example"></a>示例
- 下面的示例定义一个结构，它与该规则冲突。 若要更正该示例，将添加一个公共`Add(int x, int y)`的结构的方法。
+ 下面的示例定义与此规则冲突的结构。 若要更正示例中，添加公共`Add(int x, int y)`方法的结构。
 
  [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
