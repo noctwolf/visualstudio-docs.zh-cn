@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f39b2ce216ce909837f37fd09fb556a4733098ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a2873f691fdaa1251a5562e21e2bbd0467eb2e2
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627336"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612748"
 ---
 # <a name="specify-whether-to-debug-only-user-code-using-just-my-code-in-visual-studio"></a>指定是否仅在 Visual Studio 中使用仅我的代码的用户代码进行调试
 你可以配置 Visual Studio 可自动逐过程执行系统、 框架和其他非用户调用和折叠调用堆栈窗口中的这些调用。 启用或禁用此行为的功能称为*仅我的代码*。 本主题介绍如何在 C#、 Visual Basic、 c + + 和 JavaScript 项目中使用仅我的代码。
@@ -37,6 +37,10 @@ ms.locfileid: "42627336"
   
 > [!NOTE]
 >  **显示外部代码**设置保存到当前用户的探查器。 它会应用于所有语言中由用户打开的所有项目。
+
+##  <a name="identify-user-code-while-debugging"></a>调试时标识用户代码 
+
+**模块**窗口可以告诉您调试器视为用户代码或我的代码，以及如符号加载模块的状态信息以及代码模块。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
   
 ##  <a name="BKMK__NET_Framework_Just_My_Code"></a> .NET framework 仅我的代码  
   

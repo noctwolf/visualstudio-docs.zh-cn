@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 145640d63191b72d2bce880f9ecab637dcbf0246
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552092"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612735"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 程序数据库 (.pdb) 文件，也称为符号文件，将映射为类、 方法和其他代码在你的项目的已编译可执行文件中使用的标识符为源代码中创建的标识符。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息来确定两个关键信息：
@@ -45,7 +45,11 @@ ms.locfileid: "45552092"
 符号文件还包含源文件的原始位置以及（可选）源服务器的位置（可从中检索源文件）。
   
 > [!TIP]
-> 如果你想要项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，则必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。  
+> 如果你想要项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，则必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>调试时如何管理符号文件？ 
+
+**模块**窗口可以告知调试器将视为用户代码，或我的代码和符号加载模块的状态以及代码模块。 此外可以使用此窗口进行调试时加载符号。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 在其中 does 调试器搜索符号文件？ 
   

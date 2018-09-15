@@ -13,15 +13,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 303e7abfd2ea820de660ed70df915765f11b68a5
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31975515"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612709"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
-文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html > …"和所有其他标准部件的 HTML 页。 插入模板是*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
+文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html >..."和所有其他标准部件的 HTML 页。 插入到模板中都*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
 
  使用这一结构很容易开发模板，因为可以以生成文件为原型，然后逐步插入用于改变结果的控制块。
 
@@ -29,11 +29,11 @@ ms.locfileid: "31975515"
 
 -   **指令**-控制模板的处理方式的元素。
 
--   **文本块**-内容，直接复制到输出。
+-   **文本块**-内容的直接复制到输出。
 
--   **控制块**-向文本插入可变值并控制文本的条件或重复部件程序代码。
+-   **控制块**-程序代码，用于将变量值插入到文本，以及控制条件或重复的文本部分。
 
- 若要尝试此主题中的示例，将它们复制到的模板文件中所述[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 后编辑的模板文件，保存它，然后检查输出 **.txt**文件。
+若要试用此主题中的示例，将它们复制到模板文件中所述[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 编辑模板文件后, 保存该文件，，然后检查输出 **.txt**文件。
 
 ## <a name="directives"></a>指令
  文本模板指令向文本模板化引擎提供关于如何生成转换代码和输出文件的一般指令。
@@ -41,7 +41,6 @@ ms.locfileid: "31975515"
  例如，下面的指令指定输出文件应具有 .txt 扩展名：
 
 ```
-
 <#@ output extension=".txt" #>
 ```
 
@@ -72,8 +71,7 @@ Hello
  例如，如果使用下面的控制块和文本块，则输出文件包含行“0, 1, 2, 3, 4 Hello!”：
 
 ```
-
-      <#
+<#
     for(int i = 0; i < 4; i++)
     {
         Write(i + ", ");
@@ -82,7 +80,7 @@ Hello
 #> Hello!
 ```
 
- 你可以交错文本和代码，而不必使用显式 `Write()` 语句。 下面的示例将打印"Hello ！" 四次：
+ 你可以交错文本和代码，而不必使用显式 `Write()` 语句。 下面的示例输出"Hello ！" 四次：
 
 ```
 <#
@@ -98,7 +96,7 @@ Hello!
  在代码中，可以使用 `Write();` 语句的位置都可以插入文本块。
 
 > [!NOTE]
->  当您嵌入例如循环或条件的复合语句内的文本块时，始终使用大括号 {...} 包含文本块。
+>  当嵌入例如循环或条件的复合语句内的文本块时，请始终使用大括号 {...} 若要包含文本块。
 
 ### <a name="expression-control-blocks"></a>表达式控制块
  表达式控制块计算表达式并将其转换为字符串。 该字符串将插入到输出文件中。
@@ -128,7 +126,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>类功能控制块
- 类功能控制块定义属性、方法或不应包含在主转换中的所有其他代码。 类功能块常用于编写帮助器函数。  通常，类功能块位于单独的文件，以便它们可以成为[包含](#Include)在多个文本模板。
+ 类功能控制块定义属性、方法或不应包含在主转换中的所有其他代码。 类功能块常用于编写帮助器函数。  通常情况下，类功能块位于单独的文件，以便它们可以成为[包含](#Include)由多个文本模板。
 
  类功能控制块以 `<#+ ... #>` 符号分隔。
 
@@ -195,7 +193,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- 程序集指令在中不起[预处理的文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 程序集指令中不起[预处理的文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
  有关详细信息，请参阅[T4 程序集指令](../modeling/t4-assembly-directive.md)。
 
@@ -210,10 +208,12 @@ private void WriteSquareLine(int i)
 
  有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。
 
-###  <a name="Include"></a> 包含代码和文本
+###  <a name="Include"></a> 包括代码和文本
  `include` 指令插入其他模板文件的文本。 例如，下面的指令插入 `test.txt` 的内容。
 
- `<#@ include file="c:\test.txt" #>`
+```
+<#@ include file="c:\test.txt" #>
+```
 
  在处理时，被包含内容就像是包含文本模板的组成部分一样。 不过，即使 include 指令后跟普通文本块和标准控制块，也可以包含编写有类功能块 `<#+...#>` 的文件。
 
@@ -238,14 +238,14 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **加载文件作为可导航模型**。 更有效的方法是将数据作为模型读取，文本模板代码可以导航该模型。 例如，可以加载 XML 文件，然后使用 XPath 表达式对其导航。 你也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)创建一组可用于读取 XML 数据的类。
+ **加载文件作为可导航模型**。 更有效的方法是将数据作为模型读取，文本模板代码可以导航该模型。 例如，可以加载 XML 文件，然后使用 XPath 表达式对其导航。 您还可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)创建一组类，类可以用于读取 XML 数据。
 
- **编辑关系图或窗体中的模型文件。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供允许编辑模型作为关系图或 Windows 窗体的工具。 这样便于与生成的应用程序的用户讨论模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 还创建一组反映模型结构的强类型类。 有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **编辑关系图或窗体中的模型文件。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供了工具，可将模型作为关系图或 Windows 窗体进行编辑。 这样便于与生成的应用程序的用户讨论模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 还创建一组反映模型结构的强类型类。 有关详细信息，请参阅[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>设计时模板中的相对文件路径
- 在[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，如果你想要引用相对于文本模板，使用的位置中的文件`this.Host.ResolvePath()`。 还必须在 `hostspecific="true"` 指令中设置 `template`：
+ 在中[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，如果你想要引用的文件中的位置相对于文本模板，使用`this.Host.ResolvePath()`。 还必须在 `hostspecific="true"` 指令中设置 `template`：
 
-```csharp
+```
 <#@ template hostspecific="true" language="C#" #>
 <#@ output extension=".txt" #>
 <#@ import namespace="System.IO" #>
@@ -258,23 +258,23 @@ Content of MyFile.txt is:
 
 ```
 
-还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或其他主机从模板](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
+还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行
 
- 应该注意，[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)主应用程序分开的 AppDomain 中运行。 在大多数情况下这并不重要，但在某些复杂的情况下你可能会发现一些限制。 例如，如果要从单独的服务将数据传入模板或从中传出数据，则该服务必须提供可序列化的 API。
+ 请注意，[设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)独立于主应用程序的 AppDomain 中运行。 在大多数情况下这并不重要，但在某些复杂的情况下你可能会发现一些限制。 例如，如果要从单独的服务将数据传入模板或从中传出数据，则该服务必须提供可序列化的 API。
 
- (这不是如此[运行时文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)，其中提供了你代码的其余部分一起编译的代码。)
+ (这不是这样[运行时文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)，其中提供了你代码的其余部分一起编译的代码。)
 
 ## <a name="editing-templates"></a>编辑模板
- 可从扩展管理器联机库下载专用文本模板编辑器。 上**工具**菜单上，单击**扩展管理器**。 单击**联机库**，然后使用搜索工具。
+ 可从扩展管理器联机库下载专用文本模板编辑器。 上**工具**菜单上，单击**扩展管理器**。 单击**联机库**，以及如何将搜索工具。
 
 ## <a name="related-topics"></a>相关主题
 
 |任务|主题|
 |----------|-----------|
 |编写模板。|[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)|
-|使用程序代码生成文本。|[文本模板结构](../modeling/writing-a-t4-text-template.md)|
+|使用程序代码生成文本。|[文本模板的结构](../modeling/writing-a-t4-text-template.md)|
 |在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
 |在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
