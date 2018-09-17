@@ -13,15 +13,20 @@ helpviewer_keywords:
 ms.assetid: fd805687-0817-481e-804e-b62cfb3b1076
 author: gewarren
 ms.author: gewarren
+dev_langs:
+- CPP
+- CSharp
+- VB
 manager: douge
-ms.openlocfilehash: 6b0d5870b29fea9d6ef99a3951ef12d938b0eab3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ebbad9eb48a448aa756f580ade794ba70eb25611
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914661"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546832"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法结果
+
 |||
 |-|-|
 |TypeName|DoNotIgnoreMethodResults|
@@ -30,41 +35,42 @@ ms.locfileid: "31914661"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 有几个可能的原因，此警告：
 
--   一个新的对象已创建，但从未使用过。
+有多种原因引起此警告：
 
--   创建并返回一个新字符串的方法称为，永远不会使用新的字符串。
+- 一个新的对象将创建但从未使用过。
 
--   COM 或 P/Invoke 方法，返回从未使用过的 HRESULT 或错误代码。 规则说明
+- 创建并返回新字符串的方法称为，从未使用过的新字符串。
 
- 不必要的对象创建和未使用的对象的关联的垃圾回收会降低性能。
+- 永远不会使用返回的 HRESULT 或错误代码的 COM 或 P/Invoke 方法。 规则说明
 
- 字符串是不可变，并如 String.ToUpper 方法返回的字符串，而非修改在调用方法中字符串的实例的新实例。
+不必要的对象的创建和未使用的对象的关联的垃圾回收会降低性能。
 
- 忽略 HRESULT 或错误代码可能会导致意外行为在错误条件或资源不足的情况。
+字符串是固定不变，并等 String.ToUpper 方法返回的字符串，而非修改实例时调用的方法中字符串的新实例。
+
+忽略 HRESULT 或错误代码可能会导致错误条件中出现意外行为或资源不足的情况。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 如果方法 A 创建从未使用过的 B 对象的新实例，将实例作为参数传递到另一种方法，或将实例分配给一个变量。 如果创建对象是不必要的则删除它。-或-
+ 如果一个方法创建从未使用过的 B 对象的新实例，将实例作为参数传递给另一种方法，或将此实例赋给变量。 如果对象创建不必要，请删除它。-或-
 
- 如果方法 A 调用 B，但未使用新 B 该方法返回的字符串实例。 将实例作为参数传递到另一种方法，将实例分配给一个变量。 或者，如果它是不必要移除此调用。
+ 如果方法 A 调用 B，方法，但不使用新方法 B 返回的字符串实例。 将该实例作为参数传递给另一种方法，将实例分配给一个变量。 或者，如果不需要移除此调用。
 
- -或-
+ 或
 
- 如果方法 A 调用 B，但未使用的 HRESULT 或错误代码，该方法返回。 在条件语句中使用的结果、 将结果赋给一个变量，或将其作为自变量传递到另一种方法。
+ 如果方法 A 调用 B，方法，但不会使用相应的 HRESULT 或错误代码，该方法返回。 使用中的条件语句的结果、 将结果分配给一个变量，或将其作为参数传递给另一种方法。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非创建对象的操作有特定的用途不禁止显示此规则的警告。
+ 除非创建对象的操作有特定的用途，否则不要禁止显示此规则的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示将忽略调用 String.Trim 的结果的类。
+ 下面的示例演示将忽略调用 String.Trim 结果的类。
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_1.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_1.vb)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_1.cpp)]
 
 ## <a name="example"></a>示例
- 下面的示例修复 String.Trim 的结果赋回给调用了该变量的前面的冲突。
+ 下面的示例通过将 String.Trim 结果赋回给调用它的变量中修复了上一冲突。
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_2.cs)]
  [!code-vb[FxCop.Usage.DoNotIgnoreMethodResults4#1](../code-quality/codesnippet/VisualBasic/ca1806-do-not-ignore-method-results_2.vb)]
@@ -74,13 +80,13 @@ ms.locfileid: "31914661"
  下面的示例演示不使用它创建的对象的方法。
 
 > [!NOTE]
->  无法在 Visual Basic 中重现此冲突。
+> 无法在 Visual Basic 中重现此冲突。
 
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_3.cpp)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults5#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_3.cs)]
 
 ## <a name="example"></a>示例
- 下面的示例通过删除不必要创建对象修复前面的冲突。
+ 下面的示例通过删除不必要创建对象修复了上一冲突。
 
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CSharp/ca1806-do-not-ignore-method-results_4.cs)]
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults6#1](../code-quality/codesnippet/CPP/ca1806-do-not-ignore-method-results_4.cpp)]

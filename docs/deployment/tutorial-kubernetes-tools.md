@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: f842d1f9c103e9673d3295b2b285498d6ff58045
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 778ad9112d4133871bd15292847d21af73c3ad86
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138938"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701704"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>开始使用 Visual Studio 的 Kubernetes 工具
 
@@ -38,7 +38,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
     1.  Helm CLI 安装在开发工作站上。 有关详细信息请参阅[安装 Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md)。
 
-    1.  根据你的 AKS 群集配置 helm。 有关如何执行此操作的详细信息，请参阅[如何配置 Helm](/azure/aks/kubernetes-helm#configure-helm)。
+    1.  通过使用针对你的 AKS 群集配置 helm`helm init`命令。 有关如何执行此操作的详细信息，请参阅[如何配置 Helm](/azure/aks/kubernetes-helm#configure-helm)。
 
 ## <a name="create-a-new-kubernetes-project"></a>创建新的 Kubernetes 项目
 
@@ -82,7 +82,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
 一旦您具有运行所需的方式的代码可以直接从 Visual Studio 发布到 AKS 群集。
 
-若要执行此操作，首先需要设置发布到 Azure 容器注册表 (ACR) 的容器映像的发布配置文件。 然后 AKS 可以从 ACR 提取容器映像并将其部署到群集。
+若要执行此操作，首先需要仔细检查，你已安装的所有内容中所述[先决条件](#prerequisities)部分下的项发布到 AKS，并通过提供的链接中的所有命令行步骤运行。 然后，设置发布到 Azure 容器注册表 (ACR) 的容器映像的发布配置文件。 然后 AKS 可以从 ACR 提取容器映像并将其部署到群集。
 
 1. 在中**解决方案资源管理器**，右键单击你*项目*，然后选择**发布**。
 

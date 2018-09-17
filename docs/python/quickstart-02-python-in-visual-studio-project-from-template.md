@@ -1,7 +1,7 @@
 ---
 title: 快速入门 - 使用模板创建 Python 项目
 description: 在此快速入门教程中，使用基本 Flask 应用的内置模板创建适合 Python 的 Visual Studio 项目。
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: quickstart
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3478e5b6156cdcf9c1aa6d814cb3cdd35e9579d1
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: b9f361ba73f8fd1d3963ca39a90ac01ba9effe6f
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586459"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995997"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 
@@ -76,8 +76,7 @@ ms.locfileid: "39586459"
 
 1. 选择“调试” > “启动而不调试”，以运行应用并打开指向 `localhost:5555` 的浏览器。
 
-
-  **问：Visual Studio 还提供哪些 Python 模板？**
+**问：Visual Studio 还提供哪些 Python 模板？**
 
 **答**：在安装了 Python 工作负载的情况下，Visual Studio 提供多种项目模板，其中包括用于 [Flask、Bottle 和 Django Web 框架](../python/python-web-application-project-templates.md)、Azure 云服务以及不同机器学习方案的模板，甚至还有一个模板用于根据带 Python 应用的现有文件夹结构创建项目。 要访问模板，可选择“Python”语言节点及其子节点，再依次单击“文件” > “新建” > “项目”。
 

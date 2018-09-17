@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 498a3638a02891683aff1b343431418d1a82bab0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 09aa3a879fad84f511d3649e98e5be98e62f4038
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31914980"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45546788"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822：将成员标记为 static
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31914980"
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
 |类别|Microsoft.Performance|
-|是否重大更改|无间断-如果不是程序集外部可见成员而不考虑更改你进行。 非重大更改-如果你只需更改成员的实例成员为`this`关键字。<br /><br /> 中断性-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|
+|是否重大更改|无间断-如果该成员不可见程序集外部的而不考虑更改进行。 否-如果只需将该成员更改为实例成员与`this`关键字。<br /><br /> 是-如果从实例成员的成员更改为静态成员，并且它是程序集外部可见。|
 
 ## <a name="cause"></a>原因
- 不会访问实例数据的成员未标记为 static (在共享[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 不访问实例数据成员未标记为静态 (共享中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ## <a name="rule-description"></a>规则说明
- 可以将不访问实例数据或不调用实例方法的成员标记为 static（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中为 Shared）。 在将这些方法标记为 static 之后，编译器将向这些成员发出非虚拟调用站点。 发出非虚拟调用站点将禁止在每个调用，以确保当前的对象指针为非 null 的运行时检查。 这可以实现使性能敏感的代码得到显著提高。 在某些情况下，无法访问当前的对象实例表示的正确性问题。
+ 可以将不访问实例数据或不调用实例方法的成员标记为 static（在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中为 Shared）。 在将这些方法标记为 static 之后，编译器将向这些成员发出非虚拟调用站点。 发出非虚拟调用站点将禁止在运行时为每个调用，以确保当前的对象指针为非 null 检查。 这可以实现使性能敏感的代码得到显著提高。 在某些情况下，无法访问当前的对象实例表示存在正确性问题。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 将标记为静态成员 (或共享中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或使用 this / Me 方法中的正文，如果适用。
+ 将标记为静态成员 (或共享中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或使用 this / Me 在方法正文，如果适用。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则，以前发布的解决方法将一项重大更改的代码的警告。
+ 它可以安全地禁止显示以前发布的代码的修复程序将为其在一项重大更改此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af499ac6299498f09ab7e6a6ff54b02dc4901815
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c05d8f6218166dc57e832412649bb04d9151f36
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31919436"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549785"
 ---
 # <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138：透明方法不得调用具有 SuppressUnmanagedCodeSecurity 特性的方法
 |||
@@ -28,15 +28,15 @@ ms.locfileid: "31919436"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 安全透明方法调用的方法，将标有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性。
+ 安全透明方法调用的方法将标有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性。
 
 ## <a name="rule-description"></a>规则说明
- 直接调用到本机代码，例如，通过使用任何透明方法，将引发此规则通过使用 P/Invoke (平台 invoke) 调用。 P/Invoke 和 COM 互操作方法是，标记有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性中进行调用的方法的 LinkDemand 结果。 由于安全透明代码不能满足 Linkdemand，代码还无法调用具有 SuppressUnmanagedCodeSecurity 特性标记的方法或方法的标记使用 SuppressUnmanagedCodeSecurity 特性的类。 该方法将失败，或需将转换为的完全要求。
+ 直接调用到本机代码，例如，通过使用 P/Invoke 的任何透明方法将引发此规则 (平台 invoke) 调用。 P/Invoke 和 COM 互操作方法标记有<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性结果在完成针对调用方法的 LinkDemand。 由于安全透明代码无法满足 LinkDemands，代码也不能调用具有 SuppressUnmanagedCodeSecurity 特性标记的方法或具有 SuppressUnmanagedCodeSecurity 特性标记的类的方法。 该方法将失败，或需将转换为的完全要求。
 
- 违反此规则会导致<xref:System.MethodAccessException>级别 2 安全透明度模型中中的完全要求<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>级别 1 透明度模型中。
+ 违反此规则会导致<xref:System.MethodAccessException>中的第 2 级安全性透明模型，以及为的完全要求<xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A>级别 1 透明度模型中。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，移除<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性，此方法标记<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>属性。
+ 若要修复此规则的冲突，请删除<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>属性，此方法标记<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

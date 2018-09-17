@@ -14,16 +14,21 @@ ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a413f446a0fcd5dabdd430bc43dc48a1882ab80e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 14c0837d482341e1ba60191c8b6bb3f5bd8e6dd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900691"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550942"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034：嵌套类型不应是可见的
+
 |||
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
@@ -32,25 +37,26 @@ ms.locfileid: "31900691"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 外部可见类型包含外部可见的类型声明。 嵌套的枚举和受保护的类型将与该规则中免除。
+
+外部可见类型包含的外部可见的类型声明。 嵌套的枚举和受保护的类型不受此规则。
 
 ## <a name="rule-description"></a>规则说明
- 嵌套的类型是在另一种类型的范围内声明的类型。 嵌套的类型可用于封装包含类型的私有实现详细信息。 如果用于此用途，则嵌套类型不应是外部可见的。
+ 嵌套的类型是另一种类型的范围内声明的类型。 嵌套的类型可用于封装包含类型的私有实现详细信息。 如果用于此用途，则嵌套类型不应是外部可见的。
 
- 用于逻辑分组，或以避免名称冲突; 请不要使用外部可见的嵌套的类型请改用命名空间。
+ 不使用外部可见的嵌套的类型的逻辑分组或以避免名称冲突;相反，使用命名空间。
 
- 嵌套的类型包括的成员可访问性，其中某些程序员来说不清楚地了解的概念。
+ 嵌套的类型包括成员可访问性，其中一些程序员不清楚地了解这一概念。
 
- 子类和高级自定义应用场景中的嵌套的类型中，可以使用受保护的类型。
+ 子类和高级自定义方案中的嵌套的类型中，可以使用受保护的类型。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 如果你确实想要是外部可见的嵌套的类型，更改类型的可访问性。 否则，请从其父级中删除的嵌套的类型。 如果嵌套的目的是对其进行分类的嵌套的类型，使用命名空间以改为创建层次结构。
+ 如果你确实想要从外部可见的嵌套的类型，更改类型的可访问性。 否则，删除从其父级的嵌套的类型。 如果嵌套的目的是进行分类的嵌套的类型，使用命名空间改为创建层次结构。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示与该规则冲突的类型。
+ 下面的示例显示了违反了此规则的类型。
 
  [!code-cpp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CPP/ca1034-nested-types-should-not-be-visible_1.cpp)]
  [!code-csharp[FxCop.Design.NestedTypes#1](../code-quality/codesnippet/CSharp/ca1034-nested-types-should-not-be-visible_1.cs)]

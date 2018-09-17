@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 481f03cc9f1699a794c0f34159afd7faa6a50c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4df271f5427d005ef94c4c09d6c0a1eb05c850b0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915061"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548852"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109：检查可见的事件处理程序
+
 |||
 |-|-|
 |TypeName|ReviewVisibleEventHandlers|
@@ -35,32 +36,34 @@ ms.locfileid: "31915061"
  检测到公共事件处理方法或受保护事件处理方法。
 
 ## <a name="rule-description"></a>规则说明
- 外部可见的事件处理方法显示需要查看安全问题。
+ 外部可见的事件处理方法提供了需要查看安全问题。
 
- 除非绝对必要，否则不应公开事件处理方法。 事件处理程序，调用公开的方法的委托类型，可以添加到的任何事件，只要的处理程序和事件的签名匹配。 事件经常引起以响应用户操作，例如单击按钮的高度受信任的系统代码和可能引起的任何代码。 将一种安全检查添加到事件处理方法不会阻止代码注册事件处理程序调用的方法。
+不要公开事件处理方法，除非绝对必要。 可以向任何事件添加一个事件处理程序委托类型，用于调用公开的方法，只要处理程序和事件的签名匹配。 事件可能会引起的任何代码，并频繁地引发的高度受信任的系统代码以响应用户操作，例如单击按钮。 将安全检查添加到的事件处理方法不会阻止代码注册事件处理程序调用的方法。
 
- 要求不能可靠地保护由事件处理程序调用的方法。 安全请求有助于防止不受信任的调用方的代码，通过检查调用堆栈上的调用方。 事件处理程序的方法运行时，将事件处理程序添加到事件的代码不一定存在调用堆栈上。 因此，调用堆栈可能仅高度受信任的调用方调用事件处理程序方法时。 这将导致发出的事件处理程序方法的成功请求。 此外，调用方法时，可能会声明要求的权限。 出于这些原因，仅可以在查看事件处理方法后评估不修复与此规则的冲突的风险。 当查看你的代码时，请考虑以下问题：
+ 要求不能可靠地保护由事件处理程序调用的方法。 安全请求有助于防止代码免受不受信任调用方通过检查调用堆栈上的调用方。 事件处理程序的方法在运行时，将事件处理程序添加到事件的代码不一定存在调用堆栈上。 因此，调用堆栈可能具有仅高度受信任的调用方调用事件处理程序方法时。 这将导致发出的事件处理程序方法才能成功请求。 此外，调用此方法，则可能会添加要求的权限。 出于这些原因，仅可以查看的事件处理方法后评估不修复该规则的冲突的风险。 当查看你的代码时，请考虑以下问题：
 
--   事件处理程序是否执行任何危险或利用，如断言权限或禁止显示非托管的代码权限的操作？
+- 事件处理程序是否执行危险或可被利用，如断言权限或禁止显示非托管的代码权限的任何操作？
 
--   什么是与你的代码的安全威胁，因为它可以仅高度运行随时与受信任调用方在堆栈上？
+- 什么是与你的代码的安全威胁，因为可以随时与高度仅运行受信任调用方在堆栈上？
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请检查该方法，并评估以下：
+ 若要修复此规则的冲突，请检查该方法并评估以下：
 
--   你可以将此事件处理方法非公共？
+- 您可以将事件处理方法非公共？
 
--   可以将事件处理程序外的所有危险功能？
+- 是否可以移动的事件处理程序的所有危险多功能？
 
--   如果施加安全要求，这可以以某种其他方式？
+- 如果施加的安全要求，这可以以某种其他方式？
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 禁止显示此规则警告只有在仔细的安全检查后，若要确保你的代码不会带来的安全威胁。
+ 禁止显示此规则警告在仔细检查安全性后，才以确保你的代码不会构成安全威胁。
 
 ## <a name="example"></a>示例
- 下面的代码演示了可能被恶意代码误用了事件处理方法。
+ 下面的代码演示可被恶意代码误用的事件处理方法。
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
+
+- <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>
+- <xref:System.EventArgs?displayProperty=fullName>

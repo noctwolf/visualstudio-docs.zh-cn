@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d48ca35940d9635489d65b18794604c29d7a507
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626891"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320834"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -156,7 +156,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |性能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
 |[内存使用率](../profiling/memory-usage.md)|是|是|是| 
-|[CPU 使用率](../profiling/cpu-usage.md)|是（参见注释）|是|是（参见注释）|
+|[CPU 使用率](../profiling/cpu-usage.md)|是|是|是|
 |[GPU 使用情况](../debugger/gpu-usage.md)|是|是|否| 
 |[应用程序时间线](../profiling/application-timeline.md)|是|是|否|
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|

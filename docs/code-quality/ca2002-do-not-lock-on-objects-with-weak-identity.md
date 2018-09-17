@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7708f5e968fed8765ca27bff99d479957927440b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0ddeb32032f7fbd6ff088980c342405261e5b473
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916549"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548460"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002：不要锁定具有弱标识的对象
 
@@ -32,17 +32,17 @@ ms.locfileid: "31916549"
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
 |类别|Microsoft.Reliability|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
 
-线程尝试获取对具有弱标识的对象的锁。
+一个线程尝试获取具有弱标识的对象上的锁。
 
 ## <a name="rule-description"></a>规则说明
 
 当可以跨应用程序域边界直接进行访问对象时，则认为该对象具有弱标识。 对于尝试获取对具有弱标识的对象的锁的线程，该线程可能会被其他应用程序域中持有对同一对象的锁的另一线程所阻止。
 
-以下类型具有弱标识，并会将标记规则：
+下面的类型具有弱标识，该规则标记：
 
 - <xref:System.String>
 
@@ -64,7 +64,7 @@ ms.locfileid: "31916549"
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
-若要修复与此规则的冲突，使用不在描述部分的列表中的类型中的对象。
+若要修复此规则的冲突，请使用来自不在列表中的说明部分中的类型的对象。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 
@@ -76,14 +76,14 @@ ms.locfileid: "31916549"
 
 ## <a name="example"></a>示例
 
-下面的示例演示某些违反规则的对象锁。
+下面的示例演示一些违反规则的对象锁。
 
 [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
 [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]
 
 ## <a name="see-also"></a>请参阅
 
-<xref:System.Threading.Monitor>
-<xref:System.AppDomain>
-[锁定语句 (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
-[SyncLock 语句 (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+- <xref:System.Threading.Monitor>
+- <xref:System.AppDomain>
+- [lock 语句 (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [SyncLock 语句 (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

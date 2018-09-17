@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fef6883056affd6ee47da86d8f2860c8c9ca047
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 4085fa30d1732e6943453a85d25fee2638fa0638
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548253"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774618"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>通过采样收集性能统计信息
 
@@ -34,11 +34,11 @@ ms.locfileid: "34548253"
 
 ## <a name="common-tasks"></a>常见任务
 
-可以指定“性能会话”中性能会话***属性页*对话框中的附加选项。 若要打开此对话框：
+可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：
 
 - 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。
 
- 下表中的任务描述了在使用采样方法进行分析时，可以在性能会话***属性页*对话框中指定的选项。
+ 下表中的任务描述了在使用采样方法进行分析时，可以在“性能会话属性”对话框中指定的选项。
 
 |任务|相关内容|
 |----------|---------------------|

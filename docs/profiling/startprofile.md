@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4de525650c7e93497c86fa7ebf493922d8fad6ef
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 6aa365df2d7cdc1219ceea718594682685f2a759
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668245"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 函数将指定分析级别的计数器设置为 1（开启）。  

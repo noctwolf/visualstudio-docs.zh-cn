@@ -18,30 +18,34 @@ ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 11841248192bc9b726076641e1219f54ab526447
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e8f0f3d40ea24828430983efd2cf39f4fa399238
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31897426"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547716"
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013：重载加法方法和减法方法时重载相等运算符
+
 |||
 |-|-|
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
 |类别|Microsoft.Design|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
  公共或受保护类型实现加或减运算符时没有实现相等运算符。
 
 ## <a name="rule-description"></a>规则说明
- 类型的实例可以组合使用等加法和减法操作中，你几乎始终应定义相等，以便返回`true`的任何两个实例，具有相同的构成值。
+ 类型的实例可以使用加法和减法运算来组合时应几乎始终定义相等，以便返回`true`的任何具有相同的构成值的两个实例。
 
- 相等运算符的重载实现中，不能使用默认的相等运算符。 这样将导致堆栈溢出。 若要实现相等运算符，请在实现使用 Object.Equals 方法。 请参见以下示例。
+ 相等运算符的重载实现中，不能使用默认的相等运算符。 执行此操作将导致堆栈溢出。 若要实现相等运算符，请在实现中使用 Object.Equals 方法。 请参见以下示例。
 
 ```vb
 If (Object.ReferenceEquals(left, Nothing)) Then
@@ -58,27 +62,31 @@ return left.Equals(right);
 ```
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，实现相等运算符，以便它与加法和减法运算符数学上一致。
+ 若要修复此规则的冲突，请实现相等运算符，这样就与加法和减法运算符从数学上保持一致。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，当相等运算符的默认实现提供正确的行为的类型。
+ 它可以安全地禁止显示此规则的警告时的默认实现相等运算符的类型提供正确的行为。
 
 ## <a name="example"></a>示例
- 下面的示例定义一个类型 (`BadAddableType`) 了违反此规则。 此类型应实现相等运算符以使具有相同的字段值测试任何两个实例`true`是否相等。 类型`GoodAddableType`显示的已更正的实现。 请注意，此类型还实现不等运算符，重写<xref:System.Object.Equals%2A>以满足其他规则。 此外将实现一个完整实现<xref:System.Object.GetHashCode%2A>。
+ 以下示例定义一个类型 (`BadAddableType`) 这违反了此规则。 此类型应实现相等运算符，使任何具有测试相同的字段值的两个实例`true`是否相等。 类型`GoodAddableType`显示了已更正的实现。 请注意，此类型还实现是否不相等运算符，重写<xref:System.Object.Equals%2A>以满足其他规则。 完整的实现中还将实现<xref:System.Object.GetHashCode%2A>。
 
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
 
 ## <a name="example"></a>示例
- 下面的示例通过使用以前在本主题阐释相等运算符的默认和正确的行为中定义的类型的实例来测试相等性。
+ 下面的示例为确定相等性测试，通过使用以前已在本主题阐释相等运算符的默认值和正确的行为中定义的类型的实例。
 
  [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]
 
- 本示例生成以下输出。
+该示例产生下面的输出：
 
- **错误类型： {2,2} {2,2}相等？不**
-**良好类型： {3,3} {3,3}相等？是**
-**良好类型： {3,3} {3,3}包括 = =？ 是**
-**错误类型： {2,2} {9,9}相等？不**
-**良好类型： {3,3} {9,9}包括 = =？ 不**
+```txt
+Bad type:  {2,2} {2,2} are equal? No
+Good type: {3,3} {3,3} are equal? Yes
+Good type: {3,3} {3,3} are == ?   Yes
+Bad type:  {2,2} {9,9} are equal? No
+Good type: {3,3} {9,9} are == ?   No
+```
+
 ## <a name="see-also"></a>请参阅
- [相等运算符](/dotnet/standard/design-guidelines/equality-operators)
+
+- [相等运算符](/dotnet/standard/design-guidelines/equality-operators)

@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1572f1473e2da8f84887b6571755dc259e19762b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: b15c57766c2deadc65e0d2d7d2b41baa50bf50e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668387"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法递减指定分析级别的挂起/继续计数器的值。  

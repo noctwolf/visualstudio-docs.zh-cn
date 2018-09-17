@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a156e7acfdb68d1fa523263835eeee4a573ff78
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ae610539ded12c626fb69bffcc973d0424ca2f08
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668470"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法递增指定分析级别的挂起/继续计数器的值。  

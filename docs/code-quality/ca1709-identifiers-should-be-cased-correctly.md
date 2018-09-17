@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ef84b5291b9e674d5d540b75edd5e7f8edbaf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0cf5b5bba2339b7b7fad84420e1ee148d6fee3b7
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915637"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548772"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709：标识符的大小写应当正确
 |||
@@ -29,37 +29,37 @@ ms.locfileid: "31915637"
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |类别|Microsoft.Naming|
-|是否重大更改|中断性-如果是针对程序集、 命名空间、 类型、 成员和参数引发。<br /><br /> 非重大的泛型类型参数上激发时。|
+|是否重大更改|-时中断程序集、 命名空间、 类型、 成员和参数的方法引发。<br /><br /> 无间断-触发泛型类型参数上时。|
 
 ## <a name="cause"></a>原因
  标识符名称的大小写不正确。
 
  \- 或 -
 
- 标识符名称包含两个字母缩略词和第二个字母为小写。
+ 标识符名称包含两个字母缩写词和第二个字母为小写形式。
 
  \- 或 -
 
- 标识符名称包含三个或多个大写字母的首字母的缩写。
+ 标识符名称包含三个或多个大写字母的首字母缩写。
 
 ## <a name="rule-description"></a>规则说明
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+ 命名约定提供了通用的外观对于库面向公共语言运行时。 这种一致性可减少所需的新软件库，并使客户进一步库由必须在托管代码中开发的专业知识的人学习曲线。
 
- 按照约定，参数名使用 camel 大小写;命名空间、 类型和成员名称使用 Pascal 大小写。 中混合使用大小写的名称，第一个字母为小写，，并在名称中任何其他单词的第一个字母为大写。 混合使用大小写的名称的示例包括"packetSniffer"、"ioFile"和"fatalErrorCode"。 采用 Pascal 大小写的名称中的第一个字母都大写，并在名称中任何其他单词的第一个字母为大写。 采用 Pascal 大小写的名称的示例包括"PacketSniffer"、"IOFile"和"FatalErrorCode"。
+ 按照约定，参数名称使用驼峰式大小写和命名空间中，类型和成员名称使用 Pascal 大小写。 Camel 大小写的名称，第一个字母为小写，并在名称中的其他所有单词的第一个字母是大写。 Camel 大小写名称的示例`packetSniffer`， `ioFile`，和`fatalErrorCode`。 Pascal 大小写的名称中的第一个字母为大写，并在名称中的其他所有单词的第一个字母是大写。 Pascal 大小写名称的示例`PacketSniffer`， `IOFile`，和`FatalErrorCode`。
 
- 此规则将名称拆分成几个单词根据大小写，并检查任何两个字母的词与常见的两个字母字，例如"中"或"我的"的列表。 如果未找到匹配项，word 被假定为缩写词。 此外，此规则假定它找到的名称包含在行中的使用四个大写字母，或者在名称末尾处的行中使用三个大写字母时首字母缩写词。
+ 此规则将名称拆分成单词根据大小写，并检查任何两个字母的词与一系列常见的两个字母单词，如"In"或"My"。 如果找不到匹配项，单词被假定为首字母缩写词。 此外，此规则假定它找到一个缩写词时名称包含在行中的四个大写字母或名称的末尾处的行中的三个大写字母。
 
- 按照约定，两个字母首字母缩写词使用全大写字母和三个或多个字符的首字母缩写词使用 Pascal 大小写。 下面的示例使用此命名约定: 数据库、 CR、 注册会计师和 Ecma。 下面的示例违反约定: 'Io'、 'XML' 和 'DoD，以及用于 nonparameter 名称、 xp 和 cpl。
+ 按照约定，两字母缩写词使用全大写字母和首字母缩写词的三个或多个字符使用 Pascal 大小写。 下面的示例使用此命名约定: 'DB'、 CR、 Cpa 和 Ecma。 下面的示例违反约定: 'Io'、 'XML' 和 'DoD，以及用于非参数名称、 xp 和 cpl。
 
  ID 是特殊情况，若要使此规则的冲突。 “Id”不是首字母缩略词，而是“identification”的缩写。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 更改名称，以便它正确的大小写。
+ 更改名称，使其具有正确的大小写。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此警告，如果你有自己的命名约定，或者如果标识符表示正确的名称，例如，一家公司或技术的名称。
+ 它可以安全地禁止显示此警告，如果有自己的命名约定，或者如果标识符表示正确的名称，例如，一家公司或一种技术的名称。
 
- 你还可以添加特定条款、 缩写，以及首字母缩写词，则为代码分析自定义字典。 指定自定义字典中的条款不会导致违反此规则。 有关详细信息，请参阅[如何： 自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ 您还可以添加特定的字词、 缩写和首字母缩写词给代码分析自定义字典。 指定自定义字典中的字词不会导致违反此规则。 有关详细信息，请参阅[如何： 自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 ## <a name="related-rules"></a>相关的规则
  [CA1708：标识符不应仅以大小写进行区分](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

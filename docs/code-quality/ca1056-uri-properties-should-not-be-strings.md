@@ -14,16 +14,21 @@ ms.assetid: fdc99d29-0904-4a65-baa8-4f76833c953e
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CPP
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6379598194e3836ea3e77efa68741c2c4b596b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 71c4428596281abf0ad606624bd67c40a490ee49
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900896"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549373"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056：URI 属性不应是字符串
+
 |||
 |-|-|
 |TypeName|UriPropertiesShouldNotBeStrings|
@@ -32,19 +37,19 @@ ms.locfileid: "31900896"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 某个类型声明字符串属性名称中包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。
+ 类型可声明一个字符串属性，其名称包含"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。
 
 ## <a name="rule-description"></a>规则说明
- 此规则将属性名称拆分为基于 Pascal 大小写约定的令牌，并检查每个令牌等于"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果没有匹配项，该规则将假定该属性表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri?displayProperty=fullName>类以安全的方式提供这些服务。
+ 此规则将属性名称拆分为令牌基于 Pascal 大小写约定，并检查每个令牌等于"uri"、"Uri"、"urn"、"Urn"、"url"或"Url"。 如果没有匹配项，该规则将假定该属性表示统一资源标识符 (URI)。 URI 的字符串表示形式容易导致分析和编码错误，并且可造成安全漏洞。 <xref:System.Uri?displayProperty=fullName>类以安全的方式提供这些服务。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改将属性设为<xref:System.Uri>类型。
+ 若要解决此规则的冲突，将属性更改为<xref:System.Uri>类型。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果属性不表示一个 URI。
+ 它可以安全地禁止显示此规则的警告，如果该属性不表示一个 URI。
 
 ## <a name="example"></a>示例
- 下面的示例演示一种类型， `ErrorProne`，了违反此规则，并使用一种类型， `SaferWay`，满足该规则。
+ 下面的示例演示一种类型， `ErrorProne`，这违反了此规则和一个类型， `SaferWay`，满足该规则。
 
  [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1056-uri-properties-should-not-be-strings_1.cs)]
  [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1056-uri-properties-should-not-be-strings_1.vb)]

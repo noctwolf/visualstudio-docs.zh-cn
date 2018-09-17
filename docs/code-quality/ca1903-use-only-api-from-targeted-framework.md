@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f49c8a4da3ad746e5221bb689285c89d48e6e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 04d08cc9d20759796c35f0145e519a27fdb12fdf
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918554"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547248"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903：仅使用目标框架中的 API
 |||
@@ -29,41 +29,43 @@ ms.locfileid: "31918554"
 |TypeName|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |类别|Microsoft.Portability|
-|是否重大更改|是-如果引发对该签名的外部可见成员或类型。<br /><br /> 非重大更改的方法的正文中激发时。|
+|是否重大更改|是-如果引发对外部可见成员或类型的签名。<br /><br /> 无间断-时触发方法的正文中。|
 
 ## <a name="cause"></a>原因
- 成员或类型使用一个成员或未包含与项目的目标框架的 service pack 中引入的类型。
+ 将成员或类型使用一个成员或未包含与项目的目标框架的 service pack 中引入的类型。
 
 ## <a name="rule-description"></a>规则说明
- 新成员和类型均包含在.NET Framework 2.0 Service Pack 1 和 2，.NET Framework 3.0 Service Pack 1 和 2 和.NET Framework 3.5 Service Pack 1。 面向.NET Framework 的主要版本的项目可能会无意中需要依赖这些新的 Api。 若要防止此依赖关系，将引发此规则上的任何新的成员和类型不包含默认情况下，与项目的目标框架的用法。
+ 在.NET Framework 2.0 Service Pack 1 和 2，.NET Framework 3.0 Service Pack 1 和 2 和.NET Framework 3.5 Service Pack 1 中包含新成员和类型。 面向.NET Framework 的主要版本的项目可能会无意中需要这些依赖项新的 Api。 若要防止此依赖项，将触发此规则上的任何新成员和类型不包含与项目的目标框架的默认值的用法。
 
  **目标框架和服务包依赖关系**
 
 |||
 |-|-|
-|目标框架时|在中引入的成员的用法激发|
-|.NET Framework 2.0|.NET framework 2.0 SP1、.NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET framework 2.0 SP1、.NET Framework 2.0 SP2、.NET Framework 3.0 SP1、.NET Framework 3.0 SP2|
+|当目标框架是|针对成员中引入的用法，触发|
+|.NET Framework 2.0|.NET framework 2.0 SP1 中，.NET Framework 2.0 SP2|
+|.NET Framework 3.0|.NET framework 2.0 SP1，.NET Framework 2.0 SP2，.NET Framework 3.0 SP1，.NET Framework 3.0 SP2|
 |.NET Framework 3.5|.NET Framework 3.5 SP1|
 |.NET Framework 4|不可用|
 
  若要更改项目的目标框架，请参阅[面向特定的.NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要删除的服务包的依赖，删除所有使用新成员或类型的实例。 如果这是有意的依赖项，则禁止显示警告，或关闭此规则。
+ 若要删除对该服务包的依赖关系，请删除所有新成员或类型的用法。 如果这是有意的依赖关系，禁止显示警告，或关闭此规则。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 如果这不是故意依赖于指定的服务包不禁止显示此规则的警告。 在此情况下，你的应用程序可能无法在系统上运行不带安装此 service pack。 禁止显示警告，或如果这是有意的依赖项关闭此规则。
+ 如果这不是有意依赖于指定的服务包不禁止显示此规则的警告。 在此情况下，你的应用程序可能无法运行在系统上未安装此 service pack。 禁止显示警告，或者如果这是有意的依赖项将关闭此规则。
 
 ## <a name="example"></a>示例
- 下面的示例演示使用类型选项仅适用于.NET 2.0 Service Pack 1 的 DateTimeOffset 的类。 此示例需要的项目属性中的目标框架下拉列表中已选择了.NET Framework 2.0。
+ 下面的示例演示使用类型选项仅适用于.NET 2.0 Service Pack 1 的 DateTimeOffset 的类。 此示例需要在项目属性中的目标框架下拉列表中选择了.NET Framework 2.0。
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>示例
- 下面的示例通过将替换为 DateTime 类型的 DateTimeOffset 类型用法修复了前面所述的冲突。
+ 下面的示例通过替换 DateTime 类型为 DateTimeOffset 类型的用法，修复了前面所述的冲突。
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>请参阅
- [可移植性警告](../code-quality/portability-warnings.md)[面向特定的.NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)
+
+- [Portability Warnings](../code-quality/portability-warnings.md)
+- [面向特定的 .NET Framework 版本](../ide/targeting-a-specific-dotnet-framework-version.md)

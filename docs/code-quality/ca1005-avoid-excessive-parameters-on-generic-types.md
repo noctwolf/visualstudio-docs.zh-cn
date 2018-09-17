@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 302ecdfaf4c621f0a9a34b0a5cba79ff652990a9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8b13441c279254525c4ffd892e60ae2b018e39ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31898033"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547681"
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005：避免泛型类型的参数过多
 |||
@@ -35,13 +35,13 @@ ms.locfileid: "31898033"
  外部可见的泛型类型具有两个以上的类型参数。
 
 ## <a name="rule-description"></a>规则说明
- 泛型类型包含的类型参数越多，越难以知道并记住每个类型参数各代表什么。 它是使用一个类型参数，如下所示通常明显`List<T>`，并在某些情况下有两个类型参数，如下所示`Dictionary<TKey, TValue>`。 如果存在两个以上的类型参数，都会感到过于困难适用于大多数用户 (例如，`TooManyTypeParameters<T, K, V>`在 C# 或`TooManyTypeParameters(Of T, K, V)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
+ 泛型类型包含的类型参数越多，越难以知道并记住每个类型参数各代表什么。 它是使用一个类型参数，如下所示通常明显`List<T>`，并在某些情况下，使用两个类型参数，如下所示`Dictionary<TKey, TValue>`。 如果两个以上的类型参数已存在，都会感到过于困难对于大多数用户 (例如， `TooManyTypeParameters<T, K, V>` C# 中或`TooManyTypeParameters(Of T, K, V)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改为使用不能超过两个类型参数的设计。
+ 若要修复此规则的冲突，请更改设计以使用不超过两个类型参数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非设计确实需要两个以上的类型参数不禁止显示此规则的警告。 提供易于了解和使用的语法中的泛型可以减少需要了解并增加新库采用率的时间。
+ 除非设计确实需要两个以上的类型参数，否则不要禁止显示此规则的警告。 提供易于理解和使用的语法中的泛型可减少所需了解和提高新库的使用率的时间。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1010：集合应实现泛型接口](../code-quality/ca1010-collections-should-implement-generic-interface.md)

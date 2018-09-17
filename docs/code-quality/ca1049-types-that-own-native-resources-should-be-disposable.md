@@ -14,39 +14,45 @@ ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f96f737274204018be3b30aaa4d85e07cc59f53
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f9a2eeb032951df86d38075220c14fe98488edef
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900477"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551985"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049：拥有本机资源的类型应是可释放的
+
 |||
 |-|-|
 |TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
 |类别|Microsoft.Design|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 一种类型引用<xref:System.IntPtr?displayProperty=fullName>字段，<xref:System.UIntPtr?displayProperty=fullName>字段，或<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>字段，但不实施<xref:System.IDisposable?displayProperty=fullName>。
+
+一种类型引用<xref:System.IntPtr?displayProperty=fullName>字段中，<xref:System.UIntPtr?displayProperty=fullName>字段中，或<xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>字段中，但不实现<xref:System.IDisposable?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>规则说明
- 此规则假定<xref:System.IntPtr>， <xref:System.UIntPtr>，和<xref:System.Runtime.InteropServices.HandleRef>字段存储指向非托管资源。 分配非托管的资源的类型应该实现<xref:System.IDisposable>以使调用方以释放这些资源按需并缩短持有这些资源的对象的生存期。
 
- 要清理非托管资源的推荐的设计模式是提供一种隐式和显式方式使用释放这些资源<xref:System.Object.Finalize%2A?displayProperty=fullName>方法和<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法，分别。 垃圾回收器调用<xref:System.Object.Finalize%2A>处一些不确定的时间之后确定该对象为不再可访问的对象的方法。 后<xref:System.Object.Finalize%2A>调用时，附加释放该对象所需的垃圾回收。 <xref:System.IDisposable.Dispose%2A>方法允许调用方显式释放这些资源按需、 早于如果留给垃圾回收器将释放资源。 清理非托管资源之后,<xref:System.IDisposable.Dispose%2A>应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>方法以允许垃圾回收器知道<xref:System.Object.Finalize%2A>不再具有要调用; 这可以避免需要附加的垃圾回收并缩短对象生存期。
+此规则假定<xref:System.IntPtr>， <xref:System.UIntPtr>，和<xref:System.Runtime.InteropServices.HandleRef>字段存储指向非托管资源。 分配非托管的资源的类型应实现<xref:System.IDisposable>让调用方释放这些资源按需和缩短持有这些资源的对象的生存期。
+
+要清理非托管资源的建议的设计模式是提供一种隐式和显式方式释放这些资源通过<xref:System.Object.Finalize%2A?displayProperty=fullName>方法和<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>方法，分别。 垃圾回收器调用<xref:System.Object.Finalize%2A>在不确定的时间段后该对象被确定为不再可访问一个对象的方法。 之后<xref:System.Object.Finalize%2A>调用时，其他释放该对象所需的垃圾回收。 <xref:System.IDisposable.Dispose%2A>方法允许调用方来显式释放资源按需、 早于将释放的资源，如果从左到垃圾回收器。 清理非托管资源之后,<xref:System.IDisposable.Dispose%2A>应调用<xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>方法，用于通知垃圾回收器知道<xref:System.Object.Finalize%2A>不再具有要调用; 这就不必进行其他垃圾回收并缩短了对象的生存期。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，实现<xref:System.IDisposable>。
+ 若要修复此规则的冲突，请实现<xref:System.IDisposable>。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果类型未引用非托管的资源。 否则，不要禁止显示此规则的警告因为无法实现<xref:System.IDisposable>可能会导致非托管的资源变得不可用或未被充分利用。
+ 它可以安全地禁止显示此规则的警告，如果类型不引用非托管的资源。 否则，不要禁止显示此规则的警告因为未能实现<xref:System.IDisposable>可能会导致非托管的资源变得不可用或未充分利用。
 
 ## <a name="example"></a>示例
- 下面的示例演示一个实现类型<xref:System.IDisposable>清理非托管资源。
+ 下面的示例演示实现的类型<xref:System.IDisposable>以清理非托管资源。
 
  [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
  [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
@@ -61,4 +67,6 @@ ms.locfileid: "31900477"
  [CA1001：具有可释放字段的类型应该是可释放的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>请参阅
- [清理非托管资源](/dotnet/standard/garbage-collection/unmanaged)[释放模式](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged)（清理未托管资源）
+- [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

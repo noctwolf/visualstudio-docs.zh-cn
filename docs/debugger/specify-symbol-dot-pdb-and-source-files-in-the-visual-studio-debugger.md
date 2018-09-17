@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8072c19a5ee5bdf8e8fe28e94334faf0cf7fd44a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b9167970030919073bf5a58ccf7368cff69dc896
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281723"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612735"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 程序数据库 (.pdb) 文件，也称为符号文件，将映射为类、 方法和其他代码在你的项目的已编译可执行文件中使用的标识符为源代码中创建的标识符。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息来确定两个关键信息：
@@ -45,7 +45,11 @@ ms.locfileid: "44281723"
 符号文件还包含源文件的原始位置以及（可选）源服务器的位置（可从中检索源文件）。
   
 > [!TIP]
-> 如果你想要项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，则必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。  
+> 如果你想要项目源代码之外调试代码，如 Windows 代码或第三方代码项目调用，则必须指定.pdb （和 （可选） 的外部代码的源文件） 的位置，这些文件需要与 t 的内部版本完全匹配他可执行文件。 
+
+##  <a name="how-can-i-manage-symbol-files-while-debugging"></a>调试时如何管理符号文件？ 
+
+**模块**窗口可以告知调试器将视为用户代码，或我的代码和符号加载模块的状态以及代码模块。 此外可以使用此窗口进行调试时加载符号。 有关详细信息，请参阅[更深入了解如何将调试器附加到您的应用程序](../debugger/debugger-tips-and-tricks.md#modules_window)。
  
 ##  <a name="BKMK_Find_symbol___pdb__files"></a> 在其中 does 调试器搜索符号文件？ 
   
@@ -215,7 +219,7 @@ ms.locfileid: "44281723"
 4.  模块的 .pdb 的源信息。 这可能是生成模块时源文件的位置，也可能是源服务器的命令。  
   
 ###  <a name="BKMK_Find_and_load_source_files_with_the_No_Source___No_Symbols_Loaded_pages"></a> 查找并加载源文件使用的 Source/No 符号未加载任何页  
- 当调试器在源文件不可用的位置中断执行时，它将显示 **“未加载任何源”** 或 **“未加载任何符号”** 页，这些页可帮助你查找源文件。 当调试器无法找到可执行文件的符号 (.pdb) 文件来完成搜索时，将显示 **“未加载任何符号”** 。 “无符号”页将提供用于搜索文件的选项。 如果在执行选项之一后找到 .pdb，并且调试器可以使用符号文件中的信息检索源文件，则将显示源。 否则，将显示描述问题的 **“未加载任何源”** 页。 此页将显示选项链接，这些链接可执行可以解决问题的操作。  
+ 当调试器在源文件不可用的位置中断执行时，它将显示 **“未加载任何源”** 或 **“未加载任何符号”** 页，这些页可帮助你查找源文件。 当调试器无法找到可执行文件的符号 (.pdb) 文件来完成搜索时，将显示 **“未加载任何符号”** 。 “无符号”页将提供用于搜索文件的选项。 如果找到.pdb，执行选项之一并调试程序可以检索源文件使用的符号文件中的信息后，源将显示。 否则，将显示描述问题的 **“未加载任何源”** 页。 此页将显示选项链接，这些链接可执行可以解决问题的操作。  
   
 ###  <a name="BKMK_Add_source_file_search_paths_to_a_solution"></a> 将源文件搜索路径添加到解决方案  
  你可指定网络或本地目录来搜索源文件。  

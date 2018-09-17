@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 142ed6bca0513022b8edd1a062c443aa50d08191
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 708d2175afe8d1b0e6bec7c7ec419eac1ee4821f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918616"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551959"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801：检查未使用的参数
 |||
@@ -30,36 +30,36 @@ ms.locfileid: "31918616"
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
 |类别|Microsoft.Usage|
-|是否重大更改|非重大更改-如果成员不是程序集，而不考虑所做的更改外部可见。<br /><br /> 非重大更改-如果你更改要使用其主体中的参数的成员。<br /><br /> 中断性-如果删除参数，并且它是程序集外部可见。|
+|是否重大更改|否-如果成员不是程序集，而不考虑所做的更改外部可见。<br /><br /> 否-如果您更改要使用其主体中的参数的成员。<br /><br /> 是-如果删除参数，它是程序集外部可见。|
 
 ## <a name="cause"></a>原因
- 方法签名包含一个没有在方法体中使用的参数。 此规则将不检查以下方法：
+ 方法签名包含一个没有在方法体中使用的参数。 此规则不检查以下方法：
 
--   引用的委托的方法。
+- 由委托所引用的方法。
 
--   作为事件处理程序使用的方法。
+- 用作事件处理程序方法。
 
--   使用方法声明`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。
+- 方法声明为具有`abstract`(`MustOverride`在 Visual Basic 中) 修饰符。
 
--   使用方法声明`virtual`(`Overridable`在 Visual Basic 中) 修饰符。
+- 方法声明为具有`virtual`(`Overridable`在 Visual Basic 中) 修饰符。
 
--   使用方法声明`override`(`Overrides`在 Visual Basic 中) 修饰符。
+- 方法声明为具有`override`(`Overrides`在 Visual Basic 中) 修饰符。
 
--   使用方法声明`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。
+- 方法声明为具有`extern`(`Declare`在 Visual Basic 中的语句) 修饰符。
 
 ## <a name="rule-description"></a>规则说明
- 检查在不使用的方法体中以确保不存在环绕故障对其进行访问的非虚拟方法中的参数。 未使用的参数会产生维护和性能成本。
+ 查看不用于方法体中请确保没有正确性存在应该对其进行访问的非虚拟方法中的参数。 未使用的参数会产生维护和性能成本。
 
- 此规则的冲突有时，可能实现中的 bug 的方法。 例如，该参数应该具有已使用的方法体中。 如果该参数必须存在由于向后兼容性，禁止显示此规则的警告。
+ 有时该规则的冲突可以指向该方法中实现错误。 例如，参数应该具有已使用的方法体中。 如果该参数必须存在由于向后兼容性，禁止显示此规则的警告。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，删除未使用的参数 （一项重大更改），或在方法体 （非重大更改） 中使用参数。
+ 若要修复此规则的冲突，请删除未使用的参数 （重大更改） 或者 （非重大更改） 的方法体中使用的参数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则，以前发布的解决方法将一项重大更改的代码的警告。
+ 它可以安全地禁止显示以前发布的代码的修复程序将为其在一项重大更改此规则的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示两种方法。 一种方法违反了规则和其他方法满足该规则。
+ 下面的示例演示两种方法。 一种方法与该规则冲突和另一种方法满足该规则。
 
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../code-quality/codesnippet/CSharp/ca1801-review-unused-parameters_1.cs)]
 

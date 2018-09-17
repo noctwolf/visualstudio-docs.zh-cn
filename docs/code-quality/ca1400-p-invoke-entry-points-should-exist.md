@@ -1,5 +1,5 @@
 ---
-title: 'CA1400: P Invoke 入口点应该存在'
+title: CA1400：P-Invoke 入口点应该存在
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36bd2e74b5abb021b66dda8ddd62260cc58fe181
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e7f3aaa373da4fbf13efcc1d836a6de688cc1117
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31901655"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549620"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400：P/Invoke 入口点应该存在
 |||
@@ -29,22 +29,22 @@ ms.locfileid: "31901655"
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |类别|Microsoft.Interoperability|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 公共或受保护的方法标记为<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 未能找到非托管库，或者未能将方法与库中的函数匹配。 如果规则找不到方法名称，严格按照指定，则查找 ANSI 或方法的宽字符版本通过在 A 或 W 的方法名。 如果不找到任何匹配项，则该规则将尝试使用 __stdcall 名称格式中定位函数 (_MyMethod@12，其中，12 表示自变量的长度)。 如果未找到匹配，并且方法名称以 '#' 开头，该规则会搜索该函数作为序号引用而非名称引用。
+ 公共或受保护的方法标记为<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 未能找到非托管库，或者未能将方法与库中的函数匹配。 如果指定它的样子，规则找不到方法名称，它会查找 ANSI 或方法的宽字符版本后缀 A 或 W 的方法名。 如果不找到任何匹配项，则该规则将尝试使用 __stdcall 名称格式来定位函数 (_MyMethod@12，其中，12 表示参数的长度)。 如果未找到匹配，并且方法名称以 '#' 开头，该规则会搜索该函数作为引用而不是名称引用的序号。
 
 ## <a name="rule-description"></a>规则说明
- 没有编译时检查是可用于确保方法标记有<xref:System.Runtime.InteropServices.DllImportAttribute>位于引用非托管 DLL 中。 如果没有具有指定的名称的函数是在库中，或该方法的自变量不匹配的函数自变量，公共语言运行时将引发异常。
+ 不进行编译时检查是可用于确保使用标记的方法<xref:System.Runtime.InteropServices.DllImportAttribute>位于引用的非托管 DLL。 如果没有具有指定的名称的函数是在库中，或该方法的参数不匹配函数自变量，公共语言运行时将引发异常。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，更改该方法具有<xref:System.Runtime.InteropServices.DllImportAttribute>属性。 请确保非托管的库存在并处于正在与包含该方法的程序集相同的目录。 如果库已存在并正确引用，请验证方法名称、 返回类型和自变量签名匹配的库函数。
+ 若要修复此规则的冲突，请更正的方法具有<xref:System.Runtime.InteropServices.DllImportAttribute>属性。 请确保非托管的库存在并处于与包含该方法的程序集相同的目录。 如果库已存在且正确引用，请验证方法名称、 返回类型和参数签名匹配的库函数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 与引用它的托管程序集位于同一目录中的非托管的库时不禁止显示此规则的警告。 它可以安全地禁止显示此规则在其中的非托管的库找不到的情况下的警告。
+ 在引用它的托管程序集所在的目录中的非托管的库时，不要禁止显示此规则的警告。 它可以安全地禁止显示在其中的非托管的库无法找到的情况下此规则的警告。
 
 ## <a name="example"></a>示例
- 下面的示例演示与该规则冲突的类型。 函数名为`DoSomethingUnmanaged`kernel32.dll 中发生。
+ 下面的示例显示了违反了此规则的类型。 名为没有函数`DoSomethingUnmanaged`kernel32.dll 中发生。
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 

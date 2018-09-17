@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a33d6e0301894b23f4671e16b24ea0b34eac4904
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9bcc9e33974d2af824444aae586c4d429de1cdd4
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918489"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549392"
 ---
 # <a name="ca1823-avoid-unused-private-fields"></a>CA1823：避免未使用的私有字段
 |||
@@ -29,19 +29,19 @@ ms.locfileid: "31918489"
 |TypeName|AvoidUnusedPrivateFields|
 |CheckId|CA1823|
 |类别|Microsoft.Performance|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 你的代码中的私有字段存在，但不是使用任何代码路径时，将报告此规则。
+ 在代码中的私有字段存在，但不是由任何代码路径时，会报告此规则。
 
 ## <a name="rule-description"></a>规则说明
  检测到程序集内有似乎未访问过的私有字段。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请删除该字段或添加使用它的代码。
+ 若要修复此规则的冲突，请删除字段或添加使用它的代码。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告。
+ 它可以安全地禁止显示此规则的警告。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1812：避免未实例化的内部类](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)

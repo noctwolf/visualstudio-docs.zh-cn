@@ -14,16 +14,20 @@ ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3c508aaf8632ff7fc064fabb4367044e079fa8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0e40065351342ab49b86b21bb525b45ce78c6028
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31921174"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550539"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211：非常量字段不应是可见的
+
 |||
 |-|-|
 |TypeName|NonConstantFieldsShouldNotBeVisible|
@@ -32,19 +36,19 @@ ms.locfileid: "31921174"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 公共或受保护的静态字段不是常数也不是只读的。
+ 公共或受保护的静态字段不是常量也不是只读的。
 
 ## <a name="rule-description"></a>规则说明
- 不是常数也不是只读字段的静态字段不是线程安全的。 对此类字段的访问必须严格控制，并需要高级编程技术来同步对类对象的访问。 因为这些是技巧难以学习和 master，和测试此类对象又带来了其自己的挑战，静态字段最适合用于存储不会更改的数据。 此规则适用于库;应用程序不应公开任何字段。
+ 不是常数也不是只读字段的静态字段不是线程安全的。 对此类字段的访问必须严格控制，并需要高级编程技术来同步对类对象的访问。 这些是技巧难以学习和母版和测试此类对象会带来独特挑战，因为静态字段最适合用于存储不会更改的数据。 此规则适用于库;应用程序不应公开任何字段。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请将静态字段常量或只读的。 如果这是不可能，重新设计要使用替代机制，如管理的基础字段对线程安全的访问的线程安全属性的类型。 请注意，例如锁争用和死锁问题的性能和库的行为可能会影响。
+ 若要解决此规则的冲突，请将静态字段常数或只读的。 如果无法做到这一点，重新设计要使用替代机制，例如管理的基础字段对线程安全的访问的线程安全属性的类型。 意识到问题，如锁争用和死锁可能影响性能和行为的库。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果你正在开发应用程序，因此具有完全控制访问，其中包含静态字段的类型。 库设计器不应禁止显示此规则; 的警告使用非常量静态字段，可以使用库使开发人员难以正确使用。
+ 它可以安全地禁止显示此规则的警告，如果你正在开发的应用的因此有权访问包含静态字段的类型的完全控制。 库设计器不应取消与该规则; 警告使用非常量静态字段可使用库开发人员难以正确使用。
 
 ## <a name="example"></a>示例
- 下面的示例演示了违反此规则的类型。
+ 下面的示例显示了与此规则冲突的类型。
 
  [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
  [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f24b0f4c6358da459525288a2812446c1c73f3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c67cd83f8487b67c580d544fd2d350612dfb48a8
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915227"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549633"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821：移除空的终结器
 |||
@@ -28,21 +28,21 @@ ms.locfileid: "31915227"
 |TypeName|RemoveEmptyFinalizers|
 |CheckId|CA1821|
 |类别|Microsoft.Performance|
-|是否重大更改|非重大|
+|是否重大更改|非换行|
 
 ## <a name="cause"></a>原因
- 一个类型实现一个为空、 调用仅基类型终结器，或只有条件地发出方法调用的终结器。
+ 一个类型实现终结器为空、 调用仅基类型终结器，或只按条件发出的方法调用。
 
 ## <a name="rule-description"></a>规则说明
- 应尽可能避免终结器，因为跟踪对象生存期会产生额外的性能系统开销。 它收集对象之前，垃圾回收器将运行终结器。 这意味着两个集合，将需要回收该对象。 空的终结器会产生此增加的开销没有任何优势。
+ 应尽可能避免终结器，因为跟踪对象生存期会产生额外的性能系统开销。 它收集对象前，垃圾回收器将运行终结器。 这意味着两个集合需要回收该对象。 空终结器会产生此增加的开销毫无益处。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 移除空终结器。 如果需要调试终结器，则请将括在整个终结器`#if DEBUG / #endif`指令。
+ 移除空终结器。 如果终结器才可进行调试，则将在整个终结器`#if DEBUG / #endif`指令。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不要禁止显示此规则的消息。 取消终止失败会降低性能，并不提供任何好处。
 
 ## <a name="example"></a>示例
- 下面的示例演示应删除空终结器，应包含在终结器`#if DEBUG / #endif`指令和使用一个终结器`#if DEBUG / #endif`指令正确。
+ 下面的示例显示了应移除空终结器、 终结器应括起来的`#if DEBUG / #endif`指令和使用终结器`#if DEBUG / #endif`指令正确。
 
  [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

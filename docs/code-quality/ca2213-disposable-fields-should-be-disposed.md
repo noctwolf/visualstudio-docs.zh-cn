@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: be4efbd197a8146789b9646f6b5c467cc42815b1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 143a094375871bf8073999f89d7fac5d6df01b4f
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920480"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551855"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213：应释放可释放的字段
+
 |||
 |-|-|
 |TypeName|DisposableFieldsShouldBeDisposed|
@@ -32,26 +33,28 @@ ms.locfileid: "31920480"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 实现一种<xref:System.IDisposable?displayProperty=fullName>声明还实现的类型的字段<xref:System.IDisposable>。 <xref:System.IDisposable.Dispose%2A>的字段的方法不由调用<xref:System.IDisposable.Dispose%2A>声明类型的方法。
+ 实现的类型<xref:System.IDisposable?displayProperty=fullName>声明还实现的类型的字段<xref:System.IDisposable>。 <xref:System.IDisposable.Dispose%2A>字段的方法不由调用<xref:System.IDisposable.Dispose%2A>声明类型的方法。
 
 ## <a name="rule-description"></a>规则说明
- 一种类型负责释放所有其非托管资源;这通过实现实现<xref:System.IDisposable>。 此规则检查以确定是否可释放类型`T`声明字段`F`，它是可释放类型的实例`FT`。 每个字段`F`，规则将尝试查找调用`FT.Dispose`。 规则将搜索由调用的方法`T.Dispose`，和一个级别较低 (由调用的方法调用的方法`FT.Dispose`)。
+ 一种类型负责释放所有非托管资源;这通过实现来实现<xref:System.IDisposable>。 此规则检查以查看是否可释放类型`T`声明字段`F`，它是可释放类型的实例`FT`。 每个字段`F`，规则将尝试查找调用`FT.Dispose`。 该规则会搜索调用的方法`T.Dispose`，和一个级别较低 (调用的方法调用的方法`FT.Dispose`)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，调用<xref:System.IDisposable.Dispose%2A>上实现的类型的字段<xref:System.IDisposable>如果你将负责分配和释放的非托管的资源包含的字段。
+ 若要修复此规则的冲突，请调用<xref:System.IDisposable.Dispose%2A>所实现的类型的字段上<xref:System.IDisposable>如果你负责分配和释放非托管的资源持有的字段。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告，如果不能负责为释放资源包含字段，或者如果调用<xref:System.IDisposable.Dispose%2A>发生时的更深入地调用级别比规则检查。
+ 则可以安全地禁止显示此规则的警告，如果你负责不释放资源持有的字段，或如果调用<xref:System.IDisposable.Dispose%2A>在更深层次的调用规则检查级别上发生。
 
 ## <a name="example"></a>示例
- 下面的示例演示一种类型`TypeA`实现<xref:System.IDisposable>(`FT`上文中讨论)。
+ 下面的示例演示一种类型`TypeA`，它实现<xref:System.IDisposable>(`FT`上文中讨论)。
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]
 
 ## <a name="example"></a>示例
- 下面的示例演示一种类型`TypeB`了违反此规则通过声明一个字段`aFieldOfADisposableType`(`F`前面讨论中) 为可释放类型 (`TypeA`) 而不调用<xref:System.IDisposable.Dispose%2A>字段。 `TypeB` 对应于`T`中前面的讨论。
+ 下面的示例演示一种类型`TypeB`违反该规则通过声明一个字段`aFieldOfADisposableType`(`F`前面讨论中) 作为可释放类型 (`TypeA`) 而不调用<xref:System.IDisposable.Dispose%2A>字段上。 `TypeB` 对应于`T`前面讨论中。
 
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]
 
 ## <a name="see-also"></a>请参阅
- <xref:System.IDisposable?displayProperty=fullName> [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)
+
+- <xref:System.IDisposable?displayProperty=fullName>
+- [释放模式](/dotnet/standard/design-guidelines/dispose-pattern)

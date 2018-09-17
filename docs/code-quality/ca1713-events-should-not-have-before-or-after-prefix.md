@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66e3d513188093a29aa9f7bb1c9f83b9c70e54d3
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: dc6d8b78ff1b00d1c5e5a6c6a597855243ea12fb
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31915308"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45550710"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713：事件不应具有 before 或 after 前缀
 |||
@@ -32,15 +32,15 @@ ms.locfileid: "31915308"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 事件的名称以 Before 或之后开头。
+ 'Before' 或 'After' 的事件名称开头。
 
 ## <a name="rule-description"></a>规则说明
- 事件名称应说明引发事件的操作。 若要命名按特定顺序引发的相关事件，请使用现在时或过去时指示一系列操作中的相对位置。 例如，命名的成对的事件都发出时关闭资源时，你可能会将其关闭和已关闭，而不是 BeforeClose 和 AfterClose。
+ 事件名称应描述引发事件的操作。 若要命名按特定顺序引发的相关事件，请使用现在时或过去时指示一系列操作中的相对位置。 例如，当命名的一对事件引发时关闭资源时，您可以命名它关闭和已关闭，而不是应使用 BeforeClose 和 AfterClose。
 
- 命名约定提供了通用的外观的库，面向公共语言运行时。 这减少了学习曲线，才能使用新的软件库和客户更有信心库由在开发的托管代码中有专业技能的人员。
+ 命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 前缀移除的事件名称，并考虑将名称更改为使用现在时或过去时的谓词。
+ 从事件名称中删除前缀，并考虑将名称更改为使用现在时或过去时的谓词。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。

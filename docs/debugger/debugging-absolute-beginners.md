@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb37faa194e3c370f92f9a82c7866373dd8f26d3
-ms.sourcegitcommit: a6734c4d76dae3d21b55b10f3bc618dfa6b62dea
+ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42623794"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612670"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>如何调试零基础
 
@@ -332,4 +332,4 @@ ms.locfileid: "42623794"
 在本文中，已了解的一些常规调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试。
 
 > [!div class="nextstepaction"]
-> [调试器功能简介](../debugger/debugger-feature-tour.md)
+> [了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)

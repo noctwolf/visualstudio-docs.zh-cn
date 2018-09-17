@@ -18,14 +18,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c02de86564f6d7754b3c9db86d93577c374a72e0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 98f7793890bc938f6f1e89f653985b91a99393a9
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918431"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548255"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140：透明代码不得引用安全关键项
+
 |||
 |-|-|
 |TypeName|TransparentMethodsMustNotReferenceCriticalCode|
@@ -34,43 +35,53 @@ ms.locfileid: "31918431"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 透明的方法：
 
--   处理安全关键安全异常类型
+透明的方法：
 
--   具有标记为安全关键类型的参数
+- 处理安全关键的安全异常类型
 
--   具有安全关键约束的泛型参数
+- 包含标记为安全关键类型的参数
 
--   具有的安全关键类型的局部变量
+- 已使用安全关键约束泛型参数
 
--   引用了被标记为安全关键的类型
+- 具有的安全关键类型的局部变量
 
--   调用被标记为安全关键的方法
+- 引用被标记为安全关键的类型
 
--   引用被标记为安全关键的字段
+- 调用标记为安全关键的方法
 
--   返回被标记为安全关键的类型
+- 引用被标记为安全关键的字段
+
+- 返回标记为安全关键类型
 
 ## <a name="rule-description"></a>规则说明
- 将标有一个代码元素<xref:System.Security.SecurityCriticalAttribute>是安全关键的属性。 透明方法不能使用安全关键元素。 如果透明类型尝试使用安全关键类型<xref:System.TypeAccessException>， <xref:System.MethodAccessException> ，或<xref:System.FieldAccessException>引发。
+
+将标有一个代码元素<xref:System.Security.SecurityCriticalAttribute>是安全关键的属性。 透明方法不能使用安全关键元素。 如果透明类型尝试使用安全关键类型<xref:System.TypeAccessException>， <xref:System.MethodAccessException> ，或<xref:System.FieldAccessException>引发。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，请执行以下操作：
 
--   将使用与对安全关键代码的代码元素的标记<xref:System.Security.SecurityCriticalAttribute>属性
+若要解决此规则的冲突，请执行以下操作：
+
+- 标记使用与安全关键代码的代码元素<xref:System.Security.SecurityCriticalAttribute>属性
 
      \- 或 -
 
--   删除<xref:System.Security.SecurityCriticalAttribute>从被标记为安全关键，而是将其与标记的代码元素的属性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>属性。
+- 删除<xref:System.Security.SecurityCriticalAttribute>从被标记为安全关键，而是将它们标记的代码元素的特性<xref:System.Security.SecuritySafeCriticalAttribute>或<xref:System.Security.SecurityTransparentAttribute>属性。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。
+
+不禁止显示此规则发出的警告。
 
 ## <a name="example"></a>示例
- 在以下示例中，透明方法尝试引用安全关键泛型集合、 安全的关键领域和安全关键方法。
 
- [!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
+在以下示例中，透明方法尝试引用安全关键泛型集合、 安全关键字段和安全关键方法。
+
+[!code-csharp[FxCop.Security.CA2140.TransparentMethodsMustNotReferenceCriticalCode#1](../code-quality/codesnippet/CSharp/ca2140-transparent-code-must-not-reference-security-critical-items_1.cs)]
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityCriticalAttribute> <xref:System.Security.SecurityTransparentAttribute> <xref:System.Security.SecurityTreatAsSafeAttribute> <xref:System.Security?displayProperty=fullName>
+
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityCriticalAttribute>
+- <xref:System.Security.SecurityTransparentAttribute>
+- <xref:System.Security.SecurityTreatAsSafeAttribute>
+- <xref:System.Security?displayProperty=fullName>

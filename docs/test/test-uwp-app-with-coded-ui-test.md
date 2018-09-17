@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 081c61cb0d5a2db28b04ebdd12fd53713b41363f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 92764cbb78dfc11b718d2640cd059febe913a9b2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34694063"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668382"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>创建编码的 UI 测试来测试 UWP 应用
 
@@ -128,7 +128,7 @@ ms.locfileid: "34694063"
         Assert.AreEqual(Me.AssertMethod1ExpectedValues.UITextBoxEditText, uITextBoxEdit.Text, "Textbox value is unexpected.")
     End Sub
     ```
-1. 接下来，需要获取想要测试的 UWP [应用](#create-a-simple-universal-windows-app)的 AutomationId。 打开 Windows“启动”菜单，查看应用的磁贴。 然后，将十字准线工具![目标图标](media/target-icon.png) 从“编码的 UI 测试生成器”对话框拖动到应用的磁贴中。 当磁贴周围出现蓝色框时，释放鼠标。
+1. 接下来，需要获取想要测试的 UWP [应用](#create-a-uwp-app-to-test)的 AutomationId。 打开 Windows“启动”菜单，查看应用的磁贴。 然后，将十字准线工具![目标图标](media/target-icon.png) 从“编码的 UI 测试生成器”对话框拖动到应用的磁贴中。 当磁贴周围出现蓝色框时，释放鼠标。
 
    ![十字准线工具](media/cross-hair-tool.png)
 

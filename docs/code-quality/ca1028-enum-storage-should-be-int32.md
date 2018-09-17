@@ -14,16 +14,20 @@ ms.assetid: 87160825-9f39-4142-8d7f-a31fe7ac7b84
 author: gewarren
 ms.author: gewarren
 manager: douge
+dev_langs:
+- CSharp
+- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f0f9dec006f3684259541811e905eaf75a790c3a
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 51e4177b01dc15177b74394d6967651905da2122
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31900283"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547823"
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028：枚举存储应为 Int32
+
 |||
 |-|-|
 |TypeName|EnumStorageShouldBeInt32|
@@ -35,18 +39,18 @@ ms.locfileid: "31900283"
  公共枚举的基础类型不是<xref:System.Int32?displayProperty=fullName>。
 
 ## <a name="rule-description"></a>规则说明
- 枚举是一种值类型，它定义一组相关的已命名常数。 默认情况下，<xref:System.Int32?displayProperty=fullName>数据类型用于存储常量值。 即使您可以更改此基础类型，它是不必要或建议在大多数情况下。 请注意，通过使用小于数据类型实现没有显著的性能提升<xref:System.Int32>。 如果无法使用默认数据类型，则应使用一个公共语言系统 (CLS) 的符合整型<xref:System.Byte>， <xref:System.Int16>， <xref:System.Int32>，或<xref:System.Int64>若要确保枚举的所有值可以都表示的符合 CLS 的编程语言。
+ 枚举是一种值类型，它定义一组相关的已命名常数。 默认情况下，<xref:System.Int32?displayProperty=fullName>数据类型用于存储常量值。 即使您可以更改此基础类型，不需要或不建议在大多数情况下。 请注意，通过使用数据类型的最小实现任何显著的性能提升<xref:System.Int32>。 如果您不能使用默认数据类型，则应使用一个公共语言系统 (CLS)-符合整型<xref:System.Byte>， <xref:System.Int16>， <xref:System.Int32>，或<xref:System.Int64>以确保所有枚举值，可以都表示符合 cls 的编程语言。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，除非存在大小或兼容性问题，请使用<xref:System.Int32>。 对于情况其中<xref:System.Int32>足够大，无法保存的值，请使用<xref:System.Int64>。 如果向后兼容性要求将较小的数据类型，使用<xref:System.Byte>或<xref:System.Int16>。
+ 若要修复与此规则的冲突，除非存在大小或兼容性问题，请使用<xref:System.Int32>。 情况下，<xref:System.Int32>不够大，若要保存的值，请使用<xref:System.Int64>。 如果向后兼容性需要较小的数据类型，请使用<xref:System.Byte>或<xref:System.Int16>。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 只有当向后兼容性问题需要它，禁止显示此规则的警告。 在应用程序，不符合此规则通常不会导致问题。 在库中，其中语言互操作性是必需的不符合此规则可能产生不良影响你的用户。
+ 仅当需要向后兼容性，禁止显示此规则的警告。 在应用程序中，不符合此规则通常不会导致问题。 在库中，其中语言互操作性是必需的不符合此规则可能产生负面影响你的用户。
 
 ## <a name="example-of-a-violation"></a>冲突的示例
 
 ### <a name="description"></a>描述
- 下面的示例演示两个不使用建议的基础数据类型的枚举。
+ 下面的示例演示两个不使用推荐的基础数据类型的枚举。
 
 ### <a name="code"></a>代码
  [!code-vb[FxCop.Design.EnumIntegralType#1](../code-quality/codesnippet/VisualBasic/ca1028-enum-storage-should-be-int32_1.vb)]
@@ -55,7 +59,7 @@ ms.locfileid: "31900283"
 ## <a name="example-of-how-to-fix"></a>修复方法的示例
 
 ### <a name="description"></a>描述
- 下面的示例通过更改基础数据类型设置为修复前面的冲突<xref:System.Int32>。
+ 下面的示例通过将基础数据类型更改为修复了上一冲突<xref:System.Int32>。
 
 ### <a name="code"></a>代码
  [!code-csharp[FxCop.Design.EnumIntegralTypeFixed#1](../code-quality/codesnippet/CSharp/ca1028-enum-storage-should-be-int32_2.cs)]
@@ -73,4 +77,8 @@ ms.locfileid: "31900283"
  [CA1712：不要将类型名用作枚举值的前缀](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>请参阅
- <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName> <xref:System.Int32?displayProperty=fullName> <xref:System.Int64?displayProperty=fullName>
+
+- <xref:System.Byte?displayProperty=fullName>
+- <xref:System.Int16?displayProperty=fullName>
+- <xref:System.Int32?displayProperty=fullName>
+- <xref:System.Int64?displayProperty=fullName>

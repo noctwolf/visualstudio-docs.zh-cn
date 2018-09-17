@@ -15,11 +15,11 @@ manager: douge
 ms.workload:
 - multiple
 ms.openlocfilehash: a2831dd07bcbb5e909357ebdf89496cf92bb815d
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573162"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668216"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 线程视图是并发可视化工具中最详细且具备丰富功能的视图（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 使用此视图可以确定线程是在执行还是由于同步、I/O 或某些其他原因而阻塞。  

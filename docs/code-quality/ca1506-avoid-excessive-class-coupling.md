@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a613ecfd339399b161292a75f7fb2abeb972d986
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 57c23ea9c6afb27ee89886936fff690a4285f5c0
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31916672"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549886"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506：避免过度类耦合
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveClassCoupling|
@@ -37,13 +38,15 @@ ms.locfileid: "31916672"
 ## <a name="rule-description"></a>规则说明
  此规则通过计算类型或方法包含的唯一类型引用的个数来衡量类耦合。
 
- 类型和具有类耦合度很高的方法可能很难维护。 它是一个好办法具有类型和低耦合、 内聚高的方法。
+ 具有类耦合度很高的类型和方法可能很难维护。 最好能够表现出低耦合和高度聚合的类型和方法。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要解决此冲突，请尝试重新设计的类型或方法，以减少之耦合的类型的数量。
+ 若要解决此冲突，请尝试重新设计的类型或方法来减少之耦合的类型的数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 在类型或方法仍被视为可维护尽管其大量的其他类型的依赖关系时，请排除此警告。
+ 如果类型或方法仍被视为可维护性，尽管其大量的其他类型的依赖项，请排除此警告。
 
 ## <a name="see-also"></a>请参阅
- [可维护性警告](../code-quality/maintainability-warnings.md)[测量复杂性和可维护性托管代码](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
+
+- [维护性警告](../code-quality/maintainability-warnings.md)
+- [测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
