@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b67722884a675dd991cad608ca22cf277e2d6777
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303076"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612722"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中调试器的工作效率提示和技巧
 
@@ -145,7 +145,7 @@ ms.locfileid: "36303076"
 
 有关详细信息，请参阅[网络使用情况](../profiling/network-usage.md)。
 
-## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app"></a>更深入了解如何将调试器附加到您的应用程序
+## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序
 
 若要附加到正在运行的应用，调试器将加载为想要调试的应用的确切相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，符号文件的一些知识非常有用。 你可以检查 Visual Studio 将使用的符号文件的加载**模块**窗口。
 

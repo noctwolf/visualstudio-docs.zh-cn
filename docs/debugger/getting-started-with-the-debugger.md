@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8717c8f4c9d4bae12acf576620368b4aac64a185
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384222"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612683"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程： 了解如何使用 Visual Studio 进行调试
 
@@ -444,4 +444,4 @@ ms.locfileid: "44384222"
 在本教程中，已学习了如何启动调试器，单步执行代码，并检查变量。 您可能想要深入了解调试器功能，此外还提供详细信息链接。
 
 > [!div class="nextstepaction"]
-> [调试器功能简介](../debugger/debugger-feature-tour.md)
+> [调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)
