@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 63fa8e83fd94be5307541ca7e070d47c8fa04488
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586373"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551657"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何分配用于项目的 Python 环境
 
@@ -114,7 +114,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 另请注意，Visual Studio 目前不支持使用 `conda` 将包安装到 conda 环境中。 而是使用命令行中的 `conda`。
 
 > [!Tip]
-> 当包中包含用于 .pyd*\** 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在这种情况下显示的错误消息是“错误: 找不到 vcvarsall.bat。 `easy_install` 通常可下载预编译的二进制文件，且你可通过 [http://aka.ms/VCPython27](http://aka.ms/VCPython27) 下载适合旧版 Python 的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。
+> 当包中包含用于 .pyd*\** 文件中本机组件的源代码时，pip 无法安装包，这种情况很常见。 如果没有安装要求的 Visual Studio 版本，pip 无法编译这些组件。 在这种情况下显示的错误消息是“错误: 找不到 vcvarsall.bat。 `easy_install` 通常可下载预编译的二进制文件，且你可通过 [https://aka.ms/VCPython27](https://aka.ms/VCPython27) 下载适合旧版 Python 的编译器。 有关详细信息，请参阅 Python 工具团队博客上的[How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)（如何处理“找不到 vcvarsallbat”问题）。
 
 ## <a name="see-also"></a>请参阅
 
