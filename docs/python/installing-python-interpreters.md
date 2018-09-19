@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd52efc61baa2dbdb6d458e87e663233ddd27a79
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43996046"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548949"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -34,10 +34,10 @@ Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studi
 
 | 解释器 | 描述 |
 | --- | --- |
-| [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
+| [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](http://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki,python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |
 | [Anaconda](https://www.continuum.io) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
-| [PyPy](http://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
+| [PyPy](https://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 | [Jython](http://www.jython.org/) | Java 虚拟机 (JVM) 上 Python 的实现。 与 IronPython 类似，Jython 中运行的代码可与 Java 类和库交互，但可能无法使用许多适用于 CPython 的库。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 
 对于想要提供新形式的 Python 环境检测的开发人员，请参阅 [PTVS 环境检测](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com)。

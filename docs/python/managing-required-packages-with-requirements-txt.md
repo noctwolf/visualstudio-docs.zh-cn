@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: de337856299d8aa164f120a6bff78495925e4ac1
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 478cb56856a5177f74b92542afadb0c36ac946c2
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468240"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548785"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理所需的包
 
-若要与其他人共享项目，使用生成系统或计划[将其发布到 Microsoft Azure](python-azure-cloud-service-project-template.md)，需要指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。
+若要与其他人共享项目，使用生成系统或计划[将其发布到 Microsoft Azure](python-azure-cloud-service-project-template.md)，需要指定项目需要的外部包。 建议的方法是使用 [requirements.txt 文件](https://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，文件中包含安装相关包所需版本的 pip 命令列表。
 
 从技术上讲，任何文件名都可用于跟踪要求（通过安装包时使用 `-r <full path to file>`），但 Visual Studio 提供针对 requirements.txt 的特定支持：
 
@@ -38,7 +38,7 @@ ms.locfileid: "39468240"
 
 因为 requirements.txt 文件的目的是冻结环境的要求，因此所有已安装的包都采用精确的版本编写。 使用精确的版本可确保轻松地在其他计算机上重现环境。 即使采用一个版本范围（作为另一个包的依赖项）或使用安装程序而非 pip 安装了包，也会包含这些包。
 
-如果包不能通过 pip 安装，且它出现在 requirements.txt 文件中，则整个安装会失败。 在这种情况下，手动编辑文件以排除此包或使用 [pip 的选项](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)来指包的可安装版本。 例如，你可能更喜欢使用 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 来编译依赖项，并向 requirements.txt 添加 `--find-links <path>` 选项：
+如果包不能通过 pip 安装，且它出现在 requirements.txt 文件中，则整个安装会失败。 在这种情况下，手动编辑文件以排除此包或使用 [pip 的选项](https://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)来指包的可安装版本。 例如，你可能更喜欢使用 [`pip wheel`](https://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 来编译依赖项，并向 requirements.txt 添加 `--find-links <path>` 选项：
 
 ```output
 C:\Project>pip wheel azure

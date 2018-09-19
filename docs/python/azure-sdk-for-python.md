@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4dd7e5841db4c05de5607f9aefe7b9a3a36fee19
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 6c7f38dbe58c5172c8480c88ae84c6e28f5d512b
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341233"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45545549"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -39,7 +39,7 @@ pip install azure
 
 文档可能位于 [azure-sdk-for-python.readthedocs.org](https://docs.microsoft.com/en-us/python/azure/?view=azure-python)。
 
-[Azure SDK for Python 开发人员中心](http://azure.microsoft.com/develop/python/)也有大量有用资源，其中包括许多教程：
+[Azure SDK for Python 开发人员中心](https://azure.microsoft.com/develop/python/)也有大量有用资源，其中包括许多教程：
 
 - 使用 [Django](/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 创建 Web 应用。
 - [Blob 存储](/azure/storage/storage-python-how-to-use-blob-storage)

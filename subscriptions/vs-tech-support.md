@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的技术支持权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: df279c52c0e971acdac3e9f4ad22550cd05b0aa5
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 072a0c7dc7679f965c84de06c969034db02766a2
+ms.sourcegitcommit: 12e2f963dac76d53f87569c01198f6d0396d64cf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289526"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44701761"
 ---
 # <a name="activate-the-technical-support-benefit-in-visual-studio-subscriptions"></a>激活 Visual Studio 订阅中的技术支持权益
 
@@ -32,12 +32,13 @@ ms.locfileid: "43289526"
 3.  若要完成该进程，需向代表提供：
     - 用于登录到订阅的电子邮件地址
     - 订阅 ID，可在“[订阅](https://my.visualstudio.com/subscriptions)”选项卡中找到。
+
     > [!div class="mx-imgBorder"]
     > ![技术支持权益查找订阅 ID](_img\vs-tech-support\vs-tech-support-subID-cropped.png)
 
 
-    > [!NOTE]
-    > 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择所在国家/地区。   
+> [!NOTE]
+> 若要激活非英语的支持帐户，请从[此列表](https://support.microsoft.com/help/14084/activate-support-contract)选择所在国家/地区。   
 
 
 ## <a name="how-to-submit-an-incident"></a>如何提交事件

@@ -1,5 +1,5 @@
 ---
-title: 创建 Visual Studio 脱机安装缓存
+title: 创建 Visual Studio 的脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
 ms.custom: ''
 ms.date: 08/28/2018
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b43fae1bb43fef7ca56e7967e6631920df6f0a
-ms.sourcegitcommit: e2373d40ca9829cee63519152a97172763471e21
+ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43370946"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135573"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -106,7 +106,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 | ----------------------- | --------------- |
 | cs-CZ | 捷克语 |
 | de-DE | 德语 |
-| zh-CN | 英语 |
+| en-US | 英语 |
 | es-ES | 西班牙语 |
 | fr-FR | 法语 |
 | it-IT | 意大利语 |
