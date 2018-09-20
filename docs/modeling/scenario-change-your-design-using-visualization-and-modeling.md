@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca90a78643b8abc1f73ca61da3d1627261fff59c
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321159"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371090"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -182,7 +182,7 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
  **依赖项关系图**
 
-若要确保与设计发生冲突不会发生在代码开发过程中上的依赖项验证生成的团队使用 Team Foundation Build 上运行。 他们还可以创建自定义 MSBuild 任务需要在其签入操作中的依赖项验证。 他们使用生成报告来收集验证错误。
+若要确保与设计发生冲突不会发生在代码开发过程中上的依赖项验证生成的团队使用 Azure DevOps 上运行。 他们还可以创建自定义 MSBuild 任务需要在其签入操作中的依赖项验证。 他们使用生成报告来收集验证错误。
 
 请参阅：
 
@@ -234,7 +234,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 Dinner Now 提供了大批自动测试，Lucerne 可以重用这些测试，因为它们几乎都仍适用。 Lucerne 也可以基于这些测试进行生成并添加新测试以涵盖新的功能。 两个均使用 Visual Studio 运行手动测试。
 
-若要确保代码与设计保持一致，团队需在 Team Foundation Build 来包括依赖项验证配置生成。 如果发生任何冲突，系统会生成包含详细信息的报告。
+若要确保代码与设计保持一致，团队需在 Azure DevOps，以包含依赖项验证配置生成。 如果发生任何冲突，系统会生成包含详细信息的报告。
 
 请参阅：
 

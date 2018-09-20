@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5b3b86736a5425640c1a87df6a3e2c6e6cec0c5
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 629e7076335ee3cd9e2260d6242f586579bd8e0d
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513343"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370689"
 ---
 # <a name="best-practices-for-security-in-vspackages"></a>在 Vspackage 中安全性的最佳做法
 若要安装[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]计算机时，你必须在运行具有管理凭据的上下文。 安全和部署的基本单位[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]应用程序是[VSPackage](../../extensibility/internals/vspackages.md)。 必须使用注册 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，这也要求管理凭据。  
@@ -31,8 +31,8 @@ ms.locfileid: "39513343"
   
  用户应确保它们仅从受信任来源安装 Vspackage。 公司开发 VSPackages 应强命名，并加上签名，以确保用户该篡改阻止。 公司开发 VSPackages 应检查其外部依赖项，如 web 服务和远程安装，以评估并更正任何安全问题。  
   
- 有关详细信息，请参阅[安全编码准则适用于.NET Framework](http://msdn.microsoft.com/library/d55zzx87.aspx)。  
+ 有关详细信息，请参阅[安全编码准则适用于.NET Framework](/previous-versions/visualstudio/visual-studio-2008/d55zzx87(v=vs.90))。  
   
 ## <a name="see-also"></a>请参阅  
- [外接程序安全性](http://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
- [DDEX 安全](http://msdn.microsoft.com/en-us/44a52a70-5c98-450e-993d-4a3b32f69ba8)
+ [外接程序安全性](https://msdn.microsoft.com/Library/44a5c651-6246-4310-b371-65378917c799)   
+ [DDEX 安全](https://msdn.microsoft.com/library/44a52a70-5c98-450e-993d-4a3b32f69ba8)
