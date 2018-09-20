@@ -11,20 +11,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2599a0c9e4390ed3d25cfc6393a32d72d803bd0e
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: ffb018e590b95a13e811180e88d1906bf5f703b0
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952539"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370830"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
-在 Visual Studio 中，用户可以验证在对照层模型项目中的源代码，以便它们可以验证源代码符合依赖关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。
+在 Visual Studio 中，用户可以验证对照层模型项目中的源代码，以便他们可以验证源代码符合对依赖项关系图的依赖项。 有标准的验证算法，但你可以定义自己的验证扩展。
 
- 当用户选择**验证体系结构**命令依赖项关系图中，在调用标准验证方法时后, 跟任意验证扩展已安装。
+ 当用户选择**验证体系结构**命令在依赖项关系图中，调用标准验证方法时后, 跟任意验证扩展已安装的。
 
 > [!NOTE]
->  在依赖关系图中，验证的主要用途是比较将关系图与解决方案的其他部分中的程序代码。
+>  在依赖项关系图中，验证的主要用途是将关系图与解决方案的其他部分中的程序代码进行比较。
 
  你可以将层验证扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。 你可以通过其自身将你的验证程序放入 VSIX 中，也可以作为其他扩展在同一 VSIX 中组合使用。 应在其自身的 Visual Studio 项目中编写验证程序的代码，而不是在与其他扩展相同的项目中编写。
 
@@ -49,7 +49,7 @@ ms.locfileid: "31952539"
     >  到 makethe 模板正常工作：
     >
     >  -   编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。
-    > -   如果你使用自定义属性，应用中提及的更新[向依赖项关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。
+    > -   如果使用自定义属性，应用更新中所述[将自定义属性添加到依赖项关系图](../modeling/add-custom-properties-to-layer-diagrams.md)。
 
 3.  编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
 
@@ -58,7 +58,7 @@ ms.locfileid: "31952539"
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
-5.  若要安装扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 **.vsix**文件中**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
+5.  若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 **.vsix**中的文件**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证程序
  如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。
@@ -115,7 +115,7 @@ ms.locfileid: "31952539"
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
-8.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**文件中**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
+8.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
 
@@ -198,22 +198,23 @@ ms.locfileid: "31952539"
 
 -   模型中存在于代码元素相关联的层。
 
- 首次开始测试验证扩展，Visual Studio 的实验实例打开或创建具有这些特征的解决方案。
+ 启动测试验证扩展，Visual Studio 的实验实例第一次打开或创建具有以下特征的解决方案。
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案
- 每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果你未更新测试依赖项关系图或其代码，将不会执行验证方法。
+ 每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果未更新测试依赖项关系图或其代码，将不会执行验证方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器
  验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。
 
  若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当出现调试对话框中，选择 Visual Studio 的主实例。
 
- 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到的主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。
+ 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。
 
  始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
 
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展
- 若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。 若要在安装了 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的计算机上进行安装，则必须将 VSIX 内容手动解压到 Extensions 文件夹中。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。
+
+若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。
 
 ##  <a name="example"></a> Example code
 

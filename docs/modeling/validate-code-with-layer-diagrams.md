@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 22d51fff3dcfea81676e18c7b13d91bb5567dde8
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 8046e5fe494839c051662bf313a17c49eea8746b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321120"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371057"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -52,16 +52,14 @@ ms.locfileid: "44321120"
 
 -   Visual Studio
 
--   Team Foundation Build 服务器上的 Visual Studio，用于使用 Team Foundation Build 自动验证代码
-
 -   一个具有建模项目和依赖项关系图的解决方案。 此依赖项关系图必须链接到你想要验证的 C# 或 Visual Basic 项目中的项目。 请参阅[从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)。
 
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
- 你可以验证代码手动从 Visual Studio 中打开的依赖项关系图或从命令提示符。 你还可以在运行本地生成或 Team Foundation Build 时自动验证代码。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
+你可以验证代码手动从 Visual Studio 中打开的依赖项关系图或从命令提示符。 您还可以验证代码自动运行本地生成或 Azure 管道构建系统时。 请参阅[第 9 频道视频： 设计和验证体系结构使用依赖项关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。
 
 > [!IMPORTANT]
->  如果想要使用 Team Foundation Build 运行层验证，则还必须在生成服务器上安装相同版本的 Visual Studio。
+> 如果你想要运行层验证使用 Team Foundation Server，还必须在生成服务器上安装相同版本的 Visual Studio。
 
 -   [请参阅项是否支持验证](#SupportsValidation)
 
@@ -182,51 +180,32 @@ ms.locfileid: "44321120"
 |隐藏所有禁止显示的错误**错误列表**窗口|中的任意位置右击**错误列表**窗口中，依次指向**管理验证错误**，然后单击**隐藏所有禁止显示的错误**。|
 
 ##  <a name="ValidateAuto"></a> 自动验证代码
- 每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Team Foundation Build，则可使用能够通过创建自定义 MSBuild 任务指定的封闭签入来执行层验证，并使用生成报告来收集验证错误。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
+
+每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Azure DevOps，则可以执行与封闭签入，这可以通过创建自定义 MSBuild 任务，并使用生成报告来收集验证错误指定的层验证。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
 
 #### <a name="to-validate-code-automatically-during-a-local-build"></a>在本地生成期间自动验证代码
 
--   使用文本编辑器打开建模项目 (.modelproj) 文件，然后包括以下属性：
+使用文本编辑器打开建模项目 (.modelproj) 文件，然后包括以下属性：
 
 ```xml
 <ValidateArchitecture>true</ValidateArchitecture>
 ```
 
- \- 或 -
+\- 或 -
 
 1.  在中**解决方案资源管理器**，右键单击包含依赖项关系图或关系图的建模项目，然后单击**属性**。
 
 2.  在中**属性**窗口中，将建模项目**验证体系结构**属性设置为**True**。
 
-     这将在验证过程中包括建模项目。
+    这将在验证过程中包括建模项目。
 
 3.  在中**解决方案资源管理器**，单击你想要用于验证的依赖项关系图 (.layerdiagram) 文件。
 
 4.  在中**属性**窗口中，请确保关系图的**生成操作**属性设置为**Validate**。
 
-     这包括在验证过程中的依赖项关系图。
+    这包括在验证过程中的依赖项关系图。
 
- 若要管理错误列表窗口中的错误，请参阅[管理验证错误](#ManageErrors)。
-
-#### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>在 Team Foundation Build 期间自动验证代码
-
-1.  在中**团队资源管理器**，双击生成定义，然后单击**进程**。
-
-2.  下**生成过程参数**，展开**编译**，并键入以下内容中的**MSBuild 参数**参数：
-
-     `/p:ValidateArchitecture=true`
-
- 有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。 有关 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的详细信息，请参阅：
-
--   [Azure 的管道](/azure/devops/pipelines/index?view=vsts)
-
--   [在生成过程中使用默认模板](http://msdn.microsoft.com/Library/43930b12-c21b-4599-a980-2995e3d16e31)
-
--   [修改基于 UpgradeTemplate.xaml 的旧式生成](http://msdn.microsoft.com/Library/ee1a8259-1dd1-4a10-9563-66c5446ef41c)
-
--   [自定义生成过程模板](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
-
--   [监视运行的生成的进度](http://msdn.microsoft.com/Library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+若要管理错误列表窗口中的错误，请参阅[管理验证错误](#ManageErrors)。
 
 ##  <a name="TroubleshootingValidation"></a> 层验证问题疑难解答
  下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。

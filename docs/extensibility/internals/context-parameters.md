@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 718642c65920072da20a7e2193755d0e24ed32cb
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 03e95dce70b38a6c2b51e0b610cb8e8bd6379239
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512260"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370986"
 ---
 # <a name="context-parameters"></a>上下文参数
 在中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 中，您可以添加到向导**新建项目**，**添加新项**，或**添加子项目**对话框。 添加了的向导位于**文件**菜单或通过右键单击项目中的**解决方案资源管理器**。 IDE 将上下文参数传递给该向导的实现。 IDE 调用向导时，上下文参数定义项目的状态。  
@@ -67,4 +67,4 @@ ms.locfileid: "39512260"
  [自定义参数](../../extensibility/internals/custom-parameters.md)   
  [向导](../../extensibility/internals/wizards.md)   
  [向导 (.vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)   
- [用于启动向导的上下文参数](http://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)
+ [用于启动向导的上下文参数](https://msdn.microsoft.com/Library/051a10f4-9e45-4604-b344-123044f33a24)

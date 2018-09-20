@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69eaf52f9864b61cfc5045da9dbaf0ca6b4410b9
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 3da952e22515b48f06fdc50b34b2eb49f5709cc2
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511660"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370570"
 ---
 # <a name="checklist-create-new-project-types"></a>清单： 创建新的项目类型
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南：  
@@ -36,7 +36,7 @@ ms.locfileid: "39511660"
   
     -   项目工厂，来管理创建新项目和打开现有项目。 有关详细信息，请参阅[使用项目工厂创建的项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。  
   
-    -   项目层次结构和命令处理。 有关详细信息，请参阅[使用 HierUtil7 项目类以实现一种项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[的项目模型元素](../../extensibility/internals/elements-of-a-project-model.md)，[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)，并且[MenuCommands 与OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。  
+    -   项目层次结构和命令处理。 有关详细信息，请参阅[使用 HierUtil7 项目类以实现一种项目类型 （c + +）](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)，[的项目模型元素](../../extensibility/internals/elements-of-a-project-model.md)，[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)，并且[MenuCommands 与OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)。  
   
     -   项目项管理，包括添加到项目**新的项目**对话框。 有关详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)并[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。  
   
