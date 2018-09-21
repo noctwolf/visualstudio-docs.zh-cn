@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 397147bdc5c6ae11c06bfaa47667ad24aa53e2dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bf5d738751a4873858aaa1ad80179663d9a7b767
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497870"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495942"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练： 创建使用 C# 或 Visual Basic SDK
 在本演练中，将了解如何使用 Visual C# 创建一个简单的数学库 SDK，然后打包 SDK 作为 Visual Studio 扩展 (VSIX)。 将完成以下过程：  
@@ -93,7 +93,7 @@ ms.locfileid: "39497870"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```
 
@@ -105,7 +105,7 @@ ms.locfileid: "39497870"
       TargetFramework=".NETCore,version=v4.5"
       AppliesTo="WindowsAppContainer"
       SupportsMultipleVersions="Error"
-      MoreInfo="http://www.msdn.microsoft.com/">
+      MoreInfo="https://msdn.microsoft.com/">
     </FileList>
     ```  
   
@@ -166,7 +166,7 @@ ms.locfileid: "39497870"
   
 6.  在细节窗格中，选择**简单数学 SDK**扩展。  
   
-     有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开http://www.msdn.microsoft.com，如在本演练前面在 SDKManifest.xml 文件中指定。  
+     有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开 https://msdn.microsoft.com/，如在本演练前面在 SDKManifest.xml 文件中指定。  
   
 7.  在中**引用管理器**对话框中，选择**简单数学 SDK**复选框，，然后选择**确定**按钮。  
   
@@ -243,5 +243,5 @@ ms.locfileid: "39497870"
   
 ## <a name="see-also"></a>请参阅  
  [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
- [演练： 创建使用 JavaScript SDK](http://msdn.microsoft.com/en-us/6195ff56-4a27-45fc-bd29-4b0451225f4b)   
+ [演练： 创建使用 JavaScript SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)   
  [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

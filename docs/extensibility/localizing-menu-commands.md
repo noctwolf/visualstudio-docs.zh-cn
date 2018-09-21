@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94294078ccb1dd2620127fa85acf0ae4564080dd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 782cec69f5129aaa4bbea66d0adb52d2bd172032
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638025"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495448"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 您可以通过创建本地化提供菜单和工具栏命令的本地化的文本 *.vsct*文件，并本地化 *.resx*为你的 VSPackage，以及然后更新项目文件将合并的文件更改。  
@@ -37,7 +37,7 @@ ms.locfileid: "39638025"
   
 2.  制作一份*filename.en US.vsct*为每个本地化语言。  
   
-     命名每个副本*文件名。 {区域设置}.vsct*，其中 *{区域}* 是特定区域性名称。 有关区域性名称值的列表，请参阅[Microsoft 分配的区域设置 Id](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
+     命名每个副本*文件名。 {区域设置}.vsct*，其中 *{区域}* 是特定区域性名称。 有关区域性名称值的列表，请参阅[Microsoft 分配的区域设置 Id](/windows/uwp/publish/supported-languages)。  
   
      这些*文件名。Locale.vsct*文件将包含包的本地化的菜单文本。  
   

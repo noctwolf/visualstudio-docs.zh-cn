@@ -1,5 +1,5 @@
 ---
-title: 使用文本标记用于旧 API |Microsoft 文档
+title: 旧版 API 中使用文本标记 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,62 +13,62 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ebef6593a019b09e7ee00cced56777d8488323f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31141937"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496124"
 ---
-# <a name="using-text-markers-with-the-legacy-api"></a>使用文本标记用于旧 API
-文本标记是文本的一个浮点的缓冲区中，可能会影响显示范围和文本区域的行为。 标记包括断点、 书签、 波浪形下划线，和只读的区域。 文本标记存在基本上不同语法着色。 语法着色可快速，进行通信的文本区域与关联的语言语法。 Windows 屏幕上，可时重新绘制速度很重要时，通常被请求语法着色。 语法着色的文本颜色的更改。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"，应用特殊行为和着色。  
+# <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
+文本标记是区域的文本的浮动的范围内的缓冲区中，可能会影响显示和文本的行为。 标记包括断点、 书签、 波浪形下划线和只读区域。 文本标记为基本上不同于语法颜色设置。 语法颜色设置是通信与文本的区域关联的语言语法的快速方法。 Windows 重新绘制屏幕时速度很重要时通常所请求语法颜色设置。 语法颜色设置更改文本的颜色。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"并将应用特殊行为和颜色设置。  
   
- 由于与文本标记相关的性能开销，而不要创建多个标记文本缓冲区。 每个标记是用户编辑缓冲区内容每次更新。  
+ 由于与文本标记相关的性能开销，而不要创建多个标记的文本缓冲区。 每个标记是用户编辑缓冲区内容每次更新。  
   
 > [!NOTE]
->  用户可以更改可见标记类型，但其不形状和样式的颜色。 有关详细信息，请参阅[字体和颜色，环境中，选项对话框](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
+>  用户可以更改可见标记类型，但不是其形状和样式的颜色。 有关详细信息，请参阅[字体和 Colors，Environment，Options Dialog Box](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)。  
   
 ## <a name="related-topics"></a>相关主题  
   
 |标题|描述|  
 |-----------|-----------------|  
-|[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)|描述如何添加标准文本标记类型提供的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器到文本视图。|  
-|[如何： 实现错误标记](../extensibility/how-to-implement-error-markers.md)|描述如何实现的实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用于通过使用红色的波浪形下划线指示错误的标记。|  
-|[如何： 创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)|描述如何创建和自定义文本标记类型添加到文本视图。|  
-|[如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)|说明如何添加文本标记。|  
-|[在核心编辑器](../extensibility/inside-the-core-editor.md)|描述的核心编辑器的功能，并提供有关如何自定义核心编辑器的详细信息。|  
-|[编辑器功能](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述中提供的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。|  
+|[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)|描述如何添加由提供的标准文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器文本视图。|  
+|[如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)|介绍如何实现的实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]标记，用于通过使用红色的波浪形下划线指示错误。|  
+|[如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)|介绍如何创建和自定义文本标记类型添加到文本视图。|  
+|[如何：使用文本标记](../extensibility/how-to-use-text-markers.md)|介绍如何添加文本标记。|  
+|[核心编辑器内](../extensibility/inside-the-core-editor.md)|介绍核心编辑器的功能，并提供有关如何自定义核心编辑器的详细信息。|  
+|[编辑器功能](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述中提供的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。|  
   
 ## <a name="reference"></a>参考  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
- 提供预定义的由编辑器还是由 VSPackage 注册获取有关特定文本标记类型，信息的统一机制。  
+ 提供了统一的预定义的由编辑器还是由 VSPackage 注册获取有关特定文本标记类型的信息的机制。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLineMarker>  
- 可以访问和使用二维坐标调整文本标记中的文本缓冲区的位置。  
+ 提供对访问和使用二维坐标，调整文本标记的文本缓冲区中的位置。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarker>  
  提供用于管理文本标记的方法。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>  
- 提供到回调[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE 和其他进程，用于调整文本标记。  
+ 提供对回调[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE 和其他进程，用于调整文本标记。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>  
- 扩展的功能通过提供<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>通过提供其他回调接口。  
+ 扩展了可通过功能<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>通过提供其他回调接口。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>  
- 扩展的功能通过提供<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>通过提供其他回调接口。  
+ 扩展了可通过功能<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>通过提供其他回调接口。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerColorSet>  
- 使标记类型以确定其他标记类型是否共享相同的颜色集。  
+ 启用标记类型以确定其他标记类型是否共享相同的颜色集。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>  
- 提供用于在核心编辑器中的文本标记上下文。 对于每个核心编辑器中的文本标记类型，IDE 将创建一个单独<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>对象。  
+ 提供核心编辑器中的文本标记的上下文。 对于每个核心编辑器中的文本标记类型，则 IDE 将创建一个单独<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>对象。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerGlyphDropHandler>  
- 提供有关其标志符号支持拖放编辑的标记处理程序。 标志符号是一个图标，指示一个标记的位置。  
+ 提供标记标志符号支持拖放编辑处理程序。 标志符号是一个图标，指示标记的位置。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>  
- 返回<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>接口从服务中提供到其他 Vspackage 的标记的文本。  
+ 返回<xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>接口从服务提供到其他 Vspackage 的标记的文本。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
- 可以访问和使用一维坐标调整文本标记中的文本缓冲区的位置。 如果可能，则不要使用此接口。
+ 提供对访问和使用一维的坐标调整文本标记的文本缓冲区中的位置。 如果可能，不要使用此接口。

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7620922bad8f35186beb4086dd3c24a98ada6d34
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8d4f701b58c95a08f9017043138c98b824d4e406
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499986"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496098"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练： 创建视图修饰、 命令和设置 （列参考线）
 您可以扩展 Visual Studio 文本/代码编辑器与命令和查看效果。 本文介绍如何开始使用常用扩展功能，列参考线。 列参考线是以可视方式浅色文本编辑器的视图，以帮助您管理您的代码与特定的列宽度上绘制的线条。 具体而言，格式化的代码非常重要的示例包括在文档中，博客文章或 bug 报告。  
@@ -35,7 +35,7 @@ ms.locfileid: "39499986"
   
 -   添加调用 Visual Studio 命令窗口中的命令支持  
   
- 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+ 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
  **请注意**： 在本演练中，你将粘贴非常高的代码到几个文件生成的 Visual Studio 扩展模板。 但是，本演练将很快引用与其他扩展插件示例的 github 上的已完成的解决方案。 因为它可以真正命令图标而不是使用 generictemplate 图标已完成的代码略有不同。  
   
@@ -1349,7 +1349,7 @@ private int GetApplicableColumn(EventArgs e)
 ## <a name="finished-code-project"></a>完成的代码项目  
  很快将 Visual Studio 扩展性示例的 github 项目和已完成的项目会在那里。 若要在这种情况存在点，将更新这篇文章。 已完成的示例项目可能具有不同的 guid，将有不同的位图条命令图标。  
   
- 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://visualstudiogallery.msdn.microsoft.com/da227a0b-0e31-4a11-8f6b-3a149cf2e459?SRC=Home)。  
+ 您可以试用版本的列参考线功能使用此 Visual Studio 库[扩展](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。  
   
 ## <a name="see-also"></a>请参阅  
  [在编辑器内](../extensibility/inside-the-editor.md)   

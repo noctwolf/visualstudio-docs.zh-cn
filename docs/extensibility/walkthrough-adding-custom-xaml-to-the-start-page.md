@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a462501637fab8ea916dd5488b0796351164d5
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b0b6d095ad9fb45d5cc9bd8979a267cb2ccf961f
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500704"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495617"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>演练： 将自定义 XAML 添加到起始页
 本演练演示如何创建自定义 Visual Studio 起始页，其中包含 Web 浏览器。  
@@ -93,4 +93,4 @@ ms.locfileid: "39500704"
   
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   
- [WPF 容器控件](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)
+ [WPF 容器控件](https://msdn.microsoft.com/library/a0177167-d7db-4205-9607-8ae316952566)

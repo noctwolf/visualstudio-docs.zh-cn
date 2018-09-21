@@ -1,5 +1,5 @@
 ---
-title: 源控件插件 |Microsoft 文档
+title: 源代码管理插件 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,28 +13,28 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3395275938d78178f6f39ccd0f67dca01194bcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4be7a1d0739b6a0c8431d588b05de58a296b809c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140211"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495695"
 ---
-# <a name="source-control-plug-ins"></a>源控件插件
-源控件插件 SDK 引用部分包含完整接口规范，支持使用源代码管理系统以与集成[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和语义到接口与源代码管理插件必须实现的各种函数和数据类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  
+# <a name="source-control-plug-ins"></a>源代码管理插件
+源代码控制插件 SDK 参考部分包含启用源代码管理系统集成的完整接口规范[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它指定的语法和各种源代码管理插件必须实现到接口使用的函数和数据类型的语义[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)  
  列出必须由源代码管理插件为了遵守源控制插件 API 实现的函数。  
   
  [通过 IDE实现的回叫函数](../extensibility/callback-functions-implemented-by-the-ide.md)  
- 描述源代码管理插件使用某些命令正在执行时将信息传递回 IDE 的函数。  
+ 介绍了源代码管理插件用于执行特定命令时，将信息传回给 IDE 的函数。  
   
  [枚举器](../extensibility/enumerators.md)  
- 列出源代码管理插件必须要知道源控件插件 API 中的枚举器数据类型。  
+ 列出了源代码管理插件必须要知道源控制插件 API 中的枚举器的数据类型。  
   
  [功能标志](../extensibility/capability-flags.md)  
- 描述`SCC_CAP_xxx`标志，是指示提供程序的功能。  
+ 介绍`SCC_CAP_xxx`标志，是指示提供程序的功能。  
   
  [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)  
  列出在特定命令的上下文中有用的标志。  
@@ -43,32 +43,32 @@ ms.locfileid: "31140211"
  列出了作为函数返回的常见错误值`SCCTRN`。  
   
  [作为用于查找源代码管理插件的密钥的字符串](../extensibility/strings-used-as-keys-for-finding-a-source-control-plug-in.md)  
- 描述用于访问注册表来查找源代码管理插件的项。  
+ 介绍用于访问注册表，以查找源代码管理插件的密钥。  
   
  [MSSCCPRJ.SCC 文件](../extensibility/mssccprj-scc-file.md)  
- 描述，其中包含信息不透明的 IDE 中，但用于通过源代码管理插件在版本控制中找到解决方案或项目的客户端文件。  
+ 介绍了一个客户端的文件，其中包含信息不透明的 IDE，但源代码管理插件使用，以在版本控制中找到解决方案或项目。  
   
  [实现源代码管理插件的最佳做法](../extensibility/best-practices-for-implementing-a-source-control-plug-in.md)  
- 提供要记住你要实现源控制插件 API 时的重要技术提醒的集合。  
+ 提供了一系列技术的重要提醒记住时要实现源控件插件 API。  
   
  [字符串长度限制](../extensibility/restrictions-on-string-lengths.md)  
- 描述在各种函数中使用的字符串的长度上的源控件插件 API 中的限制。  
+ 描述源控件插件 API 中的限制上各种不同的函数中使用的字符串的长度。  
   
  [术语表](../extensibility/source-control-plug-in-glossary.md)  
- 提供有用的术语和用于读取的源控件插件 SDK 文档其定义。  
+ 提供了有用的术语和用于读取源控制插件 SDK 文档及其定义。  
   
  [如何：关闭源代码管理插件的兼容性警告](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
- 描述如何禁用警告。  
+ 介绍如何禁用警告。  
   
 ## <a name="related-sections"></a>相关章节  
- [源控件插件示例](http://msdn.microsoft.com/en-us/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [源控件插件示例](https://www.microsoft.com/download/details.aspx?id=55984)  
  提供的源代码管理插件功能的示例。  
   
  [源代码管理插件的测试指南](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  
  介绍与源代码管理插件相关的测试过程。  
   
  [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)  
- 讨论如何创建了源代码管理插件，提供源代码管理功能，在使用时[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]源控制用户界面 (UI)。  
+ 讨论如何创建一个源代码管理插件，而使用提供的源代码管理功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]源代码管理用户界面 (UI)。  
   
  [Visual Studio SDK 引用](../extensibility/visual-studio-sdk-reference.md)  
- 显示一个列表的参考主题。
+ 显示参考主题的列表。

@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a47f45889744db51d68c0f8aeb51b11863823965
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639721"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495253"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 与应用程序的文件扩展名关联通常具有首选的操作，当用户双击文件时发生。 此首选的操作链接到动词，例如打开对应于该操作。  
   
- 您可以注册使用 Shell 密钥扩展位于与编程标识符 (ProgID) 关联的谓词**HKEY_CLASSES_ROOT\{progid} \shell**。 有关详细信息，请参阅[文件类型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  
+ 您可以注册使用 Shell 密钥扩展位于与编程标识符 (ProgID) 关联的谓词**HKEY_CLASSES_ROOT\{progid} \shell**。 有关详细信息，请参阅[文件类型](/windows/desktop/shell/fa-file-types)。  
   
 ## <a name="register-standard-verbs"></a>注册标准谓词  
  操作系统识别出以下标准谓词：  

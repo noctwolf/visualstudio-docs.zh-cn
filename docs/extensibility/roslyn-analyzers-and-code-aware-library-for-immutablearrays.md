@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad8f58e1d576a738c17095b6306261964e448651
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637716"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495916"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 immutablearrays 的代码识别库
 
@@ -307,13 +307,13 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 
 ## <a name="talk-video-and-finish-code-project"></a>视频和完成的代码项目
 
-您可以看到开发和讨论了此示例中进一步[本次讨论](http://channel9.msdn.com/events/Build/2015/3-725)。  讨论演示工作分析器，并指导您生成它。
+您可以看到开发和讨论了此示例中进一步[本次讨论](https://channel9.msdn.com/events/Build/2015/3-725)。  讨论演示工作分析器，并指导您生成它。
 
 可以看到所有已完成的代码[此处](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)。  子文件夹*DoNotUseImmutableArrayCollectionInitializer*并*DoNotUseImmutableArrayCtor*每个具有 C# 文件查找问题的实现代码的 C# 文件中与修复显示Visual Studio 灯泡 UI。  请注意，完成的代码有一些更多的抽象来避免提取 ImmutableArray\<T > 遍又一遍地键入对象。  它使用嵌套的已注册的操作类型对象保存在可用的上下文中时的子操作 （分析对象创建和分析集合初始化） 执行。
 
 ## <a name="see-also"></a>请参阅
 
-* [\\\Build 2015年对话](http://channel9.msdn.com/events/Build/2015/3-725)
+* [\\\Build 2015年对话](https://channel9.msdn.com/events/Build/2015/3-725)
 * [GitHub 上的已完成的代码](https://github.com/DustinCampbell/CoreFxAnalyzers/tree/master/Source/CoreFxAnalyzers)
 * [GitHub 上的几个示例分为三种类型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 * [GitHub OSS 站点上的其他文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
