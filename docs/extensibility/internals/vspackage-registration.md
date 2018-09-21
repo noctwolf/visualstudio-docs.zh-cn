@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29592f7956177a4894967d7f393605a54f7ec07b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513156"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495279"
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]他们安装，并应被加载。 通过在注册表中写入信息来完成此过程。 这是安装程序的典型的作业。  
@@ -60,4 +60,4 @@ Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
 ## <a name="see-also"></a>请参阅  
  [Windows 安装程序](/windows/desktop/Msi/windows-installer-portal)   
- [托管的包注册](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [托管的包注册](https://msdn.microsoft.com/library/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

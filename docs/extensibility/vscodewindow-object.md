@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9ef7d4b190a9b2c1a487fb70df33726ca9b3ed4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: dcd2bf5768b26237c5bc9301de9480b549ce01de
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586269"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495357"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 对象
 代码窗口是可以包含一个或多个文本视图，通常一个专用的文档窗口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>对象。  
@@ -38,4 +38,4 @@ ms.locfileid: "39586269"
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>   
- [图编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [图编辑](https://www.microsoft.com/download/details.aspx?id=55984)

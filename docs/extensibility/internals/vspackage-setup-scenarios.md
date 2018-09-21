@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3dfe3f3c135cb3ed16c7550fc62d334cc548cd1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c194588de8dfa8746bb79a8d86bff005d90e7550
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510661"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495929"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 
@@ -31,7 +31,7 @@ ms.locfileid: "39510661"
 
 ### <a name="make-your-components-independent"></a>使您的组件独立
 
-一旦识别并填充一个组件，将分配`GUID`，和部署组件，则不能更改其构成。 如果您更改组件的组合，生成的组件必须具有一个新的新组件`GUID`。 给定这些事实，每个组件独立、 以及独自单位，从而能够提供最大的版本控制灵活性。 有关用于管理组件的规则的详细信息，请参阅[更改组件代码](/windows/desktop/Msi/changing-the-component-code)并[会发生什么情况组件规则被破坏？](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)。
+一旦识别并填充一个组件，将分配`GUID`，和部署组件，则不能更改其构成。 如果您更改组件的组合，生成的组件必须具有一个新的新组件`GUID`。 给定这些事实，每个组件独立、 以及独自单位，从而能够提供最大的版本控制灵活性。 有关用于管理组件的规则的详细信息，请参阅[更改组件代码](/windows/desktop/Msi/changing-the-component-code)并[会发生什么情况组件规则被破坏？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)。
 
 ### <a name="do-not-mix-shared-and-private-resources-in-a-component"></a>不混用在组件中的共享和专用资源
 
@@ -77,7 +77,7 @@ ms.locfileid: "39510661"
 
 ![VS 通过并行 VS 包更新安装程序](../../extensibility/internals/media/vs_sbys_packageupdate.gif "VS_SbyS_PackageUpdate")
 
-通过并行程序集部署的详细信息，请参阅[简化了部署和使用.NET Framework 解决 DLL Hell](http://msdn.microsoft.com/library/ms973843.aspx)。
+通过并行程序集部署的详细信息，请参阅[简化了部署和使用.NET Framework 解决 DLL Hell](https://msdn.microsoft.com/library/ms973843.aspx)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e763b8006dd2c01f8e2ee4beeffa7c78100b15b3
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 587a0193dea0f4a8d16ea0555cf5788cd1ead1d5
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586296"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495344"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 对象
 文本缓冲区对象表示 Unicode 文本，这是通常与文件相关联的流。 一个<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>上下文之外的核心编辑器，如中所示，一个向导，可以使用对象。  
@@ -30,9 +30,9 @@ ms.locfileid: "39586296"
   
 |方法|描述|  
 |------------|-----------------|  
-|[不需要此行为](http://msdn.microsoft.com/library/windows/desktop/ms683797)|标准 OLE 接口。 用于处理在缓冲区中撤消/重做。|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|标准 OLE 接口。|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|标准 OLE 接口。|  
+|[不需要此行为](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|标准 OLE 接口。 用于处理在缓冲区中撤消/重做。|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|标准 OLE 接口。|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|标准 OLE 接口。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|可以创建复合音操作 （即，在撤消/重做单个单元进行分组的操作）。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|使文档数据管理的文本缓冲区的持久性。|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|提供基本服务;由多个客户端。|  
@@ -49,4 +49,4 @@ ms.locfileid: "39586296"
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [图编辑](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [图编辑](https://www.microsoft.com/download/details.aspx?id=55984)

@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c527604639d701c3cda5bddba9ee61c01e5c8dd
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 794d1bae562bf107d9986a132a44d4fa95aec20d
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586770"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495812"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Studio 的新功能。 可以将分发给其他用户，以及 Visual Studio Marketplace 扩展。 以下是一些扩展 Visual Studio 的方式：  
@@ -68,7 +68,7 @@ Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Stu
 ## <a name="other-visual-studio-sdk-resources"></a>其他 Visual Studio SDK 资源  
  如果您有关于 VSSDK 的问题，或者想要分享经验开发扩展，则可以使用[Visual Studio Extensibility Forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)或[ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs)。  
   
- 你可以找到详细信息中的[VSX Arcana 博客](http://blogs.msdn.com/b/vsx/)和一些由 Microsoft Mvp 撰写的博客：  
+ 你可以找到详细信息中的[VSX Arcana 博客](https://blogs.msdn.microsoft.com/vsx/)和一些由 Microsoft Mvp 撰写的博客：  
   
 -   [最喜爱的 Visual Studio 扩展](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)  
   

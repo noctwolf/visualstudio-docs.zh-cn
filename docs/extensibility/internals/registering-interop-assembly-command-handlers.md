@@ -1,5 +1,5 @@
 ---
-title: 注册互操作程序集命令处理程序 |Microsoft 文档
+title: 注册互操作程序集命令处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,30 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4b2c0d40029cbc84d64a4ffe5ee50c59c893b95
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: da8c70517fe8d8ce08f886e70f5dea9827739f55
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31131905"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495825"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
-VSPackage 必须注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便集成的开发环境 (IDE) 将正确路由其命令。  
+VSPackage 必须使用注册[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，以便在集成的开发环境 (IDE) 将正确路由命令。  
   
- 通过手动编辑或通过注册机构 (.rgs) 文件，可以更新注册表。 有关详细信息，请参阅[创建注册器脚本](/cpp/atl/creating-registrar-scripts)。  
+ 通过手动编辑或使用注册机构 (.rgs) 文件，可以更新注册表。 有关详细信息，请参阅[Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。  
   
  托管包框架 (MPF) 提供此功能通过<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>类。  
   
- [命令表格式引用](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f)资源位于非托管附属 UI dll。  
+ [命令表格式参考](https://msdn.microsoft.com/library/09e9c6ef-9863-48de-9483-d45b7b7c798f)资源位于非托管附属 UI dll 中。  
   
-## <a name="command-handler-registration-of-a-vspackage"></a>命令处理程序注册的 VSPackage  
- VSPackage 充当的处理程序用户界面 (UI) 的基于的命令需要一个名为后 VSPackage 的注册表项`GUID`。 此注册表项指定的 VSPackage 的 UI 资源文件以及该文件中的菜单资源的位置。 本身的注册表项位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >* \Menus，其中*\<版本 >* 是的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。  
+## <a name="command-handler-registration-of-a-vspackage"></a>命令的 VSPackage 的处理程序注册  
+ VSPackage 充当用户界面 (UI) 的处理程序的基于的命令需要名为后 VSPackage 的注册表项`GUID`。 此注册表项指定 VSPackage 的用户界面资源文件和文件内的菜单资源的位置。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<版本 >* \Menus，其中*\<版本 >* 是的版本[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，例如 9.0。  
   
 > [!NOTE]
->  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以替换备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]初始化 shell。 根路径有关的详细信息，请参阅[与 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
+>  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路径\\*\<版本 >* 可以重写使用备用根时[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]shell 进行初始化。 根路径的详细信息，请参阅[使用 Windows Installer 安装 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
   
-### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 资源注册表条目  
- 注册表项的结构是：  
+### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 资源注册表项  
+ 注册表项的结构为：  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
@@ -45,9 +45,9 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>  
 ```  
   
- \<*GUID*> 是`GUID`{XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} 形式的 vspackage。  
+ \<*GUID*> 是`GUID`的 VSPackage 中窗体 {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX}。  
   
- *\<资源信息 >* 用逗号分隔的三个元素组成。 这些元素处于顺序的不同而不同：  
+ *\<资源信息 >* 逗号分隔的三个元素组成。 这些元素按顺序是：  
   
  \<*资源 DLL 路径*>， \<*菜单资源 ID*>， \<*菜单版本*>  
   
@@ -55,12 +55,12 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
 |元素|描述|  
 |-------------|-----------------|  
-|\<*资源 DLL 路径*>|这是资源包含菜单资源 DLL 的完整路径或此保留为空，指示 VSPackage 的资源 DLL 要使用 （如指定在其中注册 VSPackage 本身的包子项）。<br /><br /> 它是通常将此字段保留为空。|  
-|\<*菜单资源 ID*>|这是资源 ID `CTMENU` vspackage 包含所有的 UI 元素，如从编译的资源[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)文件。|  
-|\<*菜单版本*>|这是用来为进行版本`CTMENU`资源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值来确定它是否需要 remerge 的内容`CTMENU`具有其缓存的所有资源`CTMENU`资源。 Remerge 触发的执行 devenv 安装程序命令。<br /><br /> 此值应最初设置为 1，在每次更改后递增`CTMENU`资源和 remerge 发生之前。|  
+|\<*资源 DLL 路径*>|这是包含该菜单资源 DLL 的资源的完整路径或此留空，指示，VSPackage 的资源 DLL 要使用 （如指定在其中注册自己的 VSPackage 的包子项中）。<br /><br /> 这也十分常见将此字段留空。|  
+|\<*菜单资源 ID*>|这是资源 ID `CTMENU` vspackage 包含的所有 UI 元素，如从编译的资源[.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)文件。|  
+|\<*菜单版本*>|这是一个数字作为版本使用`CTMENU`资源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值来确定它是否需要重新合并的内容`CTMENU`具有其所有的缓存资源`CTMENU`资源。 通过执行 devenv 安装程序命令来触发重新合并。<br /><br /> 此值最初应设置为 1，在每次更改后递增`CTMENU`资源并重新合并发生之前。|  
   
 ### <a name="example"></a>示例  
- 下面是几个资源条目示例：  
+ 下面是几个资源条目的示例：  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  
@@ -69,6 +69,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\
     {1b027a40-8f43-11d0-8d11-00a0c91bc942} = , 10211, 3  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [使用互操作程序集的命令和菜单](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)

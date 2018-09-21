@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51c83a6048102ed3b314c3c862023004cb18bc4
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 6a14079c4d936dcc6cd632e28d7b8628983cb990
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586803"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495682"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
 本部分包含有关 Visual Studio 的命名空间、 相关命名空间和感兴趣的其他区域的开发人员使用 Visual Studio SDK 的信息。  
@@ -223,7 +223,7 @@ ms.locfileid: "39586803"
  <xref:Microsoft.VisualStudio.Threading>  
  用于 Visual Studio 线程处理。  
   
- [Microsoft.VisualStudio.ConnectedServices Namespace](https://msdn.microsoft.com/library/microsoft.visualstudio.connectedservices.aspx)用于 Visual Studio 连接服务。  
+ [Microsoft.VisualStudio.ConnectedServices Namespace](/dotnet/api/microsoft.visualstudio.connectedservices)用于 Visual Studio 连接服务。  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)枚举  
  指定 IntelliSense 主机标志。  
@@ -231,7 +231,7 @@ ms.locfileid: "39586803"
  [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)  
  提供 Visual Studio 命令表架构元素，其中包含允许的子元素和属性为每个。  
   
- [Guid 和常量](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
+ [GUID 和常量](../extensibility/guids-and-constants-in-the-visual-studio-sdk.md)  
  提供整个 SDK 中使用的 Guid 的列表。  
   
  [托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)  

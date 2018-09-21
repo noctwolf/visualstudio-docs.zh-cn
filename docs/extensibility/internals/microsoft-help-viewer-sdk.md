@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6dfd62d8bf9deb296d5530a5c9a371f1d2484d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 808cd12386e6bf0431c3786f7afd89ecd38af372
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513369"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46495994"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 本文包含 Visual Studio 帮助查看器集成商的以下任务：  
@@ -822,13 +822,13 @@ Visual Studio 内容显示 Visual Studio 徽标，以及其他图形。  Visual 
 ### <a name="additional-resources"></a>其他资源  
 运行时 API，请参阅[Windows 帮助 API](/previous-versions/windows/desktop/helpapi/helpapi-portal)。  
   
-有关如何利用帮助 API 的其他信息，请参阅[帮助查看器的代码示例](http://visualstudiogallery.msdn.microsoft.com/f08f296f-7076-4aec-8da3-8f0fbe04461e)  
+有关如何利用帮助 API 的其他信息，请参阅[帮助查看器的代码示例](https://marketplace.visualstudio.com/items?itemName=RobChandlerHelpMVP.HelpViewer20CodeExamples)  
   
 若要提供有关这些组件的反馈，请使用[Microsoft Connect](http://connect.microsoft.com/)。  
   
 请提交功能建议[Microsoft 用户之声](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
   
-若要获取更多帮助，请尝试[MSDN 开发人员文档和帮助系统论坛](http://social.msdn.microsoft.com/Forums/devdocs/threads)  
+若要获取更多帮助，请尝试[MSDN 开发人员文档和帮助系统论坛](https://social.msdn.microsoft.com/Forums)  
   
 更新的重大问题，请参阅[帮助查看器自述文件](http://go.microsoft.com/fwlink/?LinkID=231397&clcid=0x409)  
   
