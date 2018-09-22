@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba3225d793baed9325612ad5b88bd55d629c44f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 59ff5fa898aa808c99dd5f52df1605336edd1694
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495721"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542463"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 
@@ -50,7 +50,7 @@ Visual Studio Enterprise 版中提供 IntelliTrace，但 Visual Studio Professio
 
 ## <a name="Snapshots"></a> 收集快照
 
-这不默认启用，但 IntelliTrace 可以捕获每个断点和调试程序单步执行事件，应用程序的快照和历史调试会话中，可以查看这些快照。 快照提供完整的应用程序状态的视图。 若要启用捕获的快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 快照 （托管和本机）**。 有关详细信息，请参阅[查看快照使用 IntelliTrace 后退](../debugger/how-to-use-intellitrace-step-back.md)
+这不默认启用，但 IntelliTrace 可以捕获每个断点和调试程序单步执行事件，应用程序的快照和历史调试会话中，可以查看这些快照。 快照提供完整的应用程序状态的视图。 若要启用捕获的快照，请转到**工具 > 选项 > IntelliTrace > 常规**，然后选择**IntelliTrace 快照 （托管和本机）**。 有关详细信息，请参阅[检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)
 
 快照可在 Visual Studio Enterprise 2017 版本 15.5 和更高版本，以及它需要 Windows 10 周年更新或更高版本。  对于.NET Core 和 ASP.NET Core 应用，Visual Studio Enterprise 2017 版本 15.7 是必需的。 对于本机应用程序面向 Windows，Visual Studio Enterprise 2017 15.9 版预览版 2 是必需的。
 

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba9f5f3ad855cdeb4f5c137ebaea04bca078cebb
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: cfa8b1430bde66416a47d2bbc93bd6f728c0709b
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496007"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542445"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 
@@ -45,7 +45,7 @@ ms.locfileid: "46496007"
 
 |||
 |-|-|
-|**调试我的应用程序使用 IntelliTrace:**<br /><br /> -向我显示过去的事件。<br />-显示我调用与过去的事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|- [使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)<br />- [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)|
+|**调试我的应用程序使用 IntelliTrace:**<br /><br /> -向我显示过去的事件。<br />-显示我调用与过去的事件的信息。<br />-保存我的 IntelliTrace 会话。<br />控制 IntelliTrace 收集的数据。|- [检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)<br />- [演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [IntelliTrace 功能](../debugger/intellitrace-features.md)<br />- [历史调试](../debugger/historical-debugging.md)|
 |**测试管理器中的测试会话期间收集 IntelliTrace 数据**|- [收集在手动测试中的更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**从已部署应用程序收集 IntelliTrace 数据**|- [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**开始调试从 IntelliTrace 日志文件 （.iTrace 文件）。**|- [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)|
@@ -149,7 +149,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 可以配置 IntelliTrace 以捕获每个断点处的快照和调试器单步执行事件。 IntelliTrace 记录在每个快照，可查看复杂变量，并可对表达式求值的完整的应用程序状态。
 
-请参阅[查看快照使用 IntelliTrace 后退](../debugger/how-to-use-intellitrace-step-back.md)。
+请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)。
 
 **收集函数调用信息**
 
