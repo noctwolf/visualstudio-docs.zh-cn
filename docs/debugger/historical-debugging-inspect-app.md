@@ -1,5 +1,5 @@
 ---
-title: 检查你的应用使用历史调试 |Microsoft 文档
+title: 检查使用历史调试对应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,20 +10,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6a8e4ec27c73516d2eb4ea79ee8beee91dfd19c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2309a3213344607fa0f5b2f626fc67af2eff8f79
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476817"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542333"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio"></a>检查 IntelliTrace 历史调试在 Visual Studio 中使用对应用程序
-你可以使用[历史调试](../debugger/historical-debugging.md)向后移动和向前移动应用程序执行，以查看其状态。  
+可以使用[历史调试](../debugger/historical-debugging.md)向后移动和向前浏览应用程序的执行，以查看其状态。  
   
-你可以在 Visual Studio Enterprise 版但不可在 Professional 或 Community 版中使用 IntelliTrace。  
+在 Visual Studio Enterprise 版，但不是 Professional 或 Community 版本，可以使用 IntelliTrace。  
   
 ## <a name="navigate-your-code-with-historical-debugging"></a>导航使用历史调试代码  
- 让我们从有 bug 的简单程序开始。 在 C# 控制台应用程序中，添加以下代码：  
+ 让我们开始一个简单的程序有 bug。 在 C# 控制台应用程序中，添加以下代码：  
   
 ```csharp  
 static void Main(string[] args)  
@@ -51,9 +51,9 @@ private static int AddInt(int add)
 }  
 ```  
   
- 我们将假定的预期值`resultInt`之后调用`AddAll()`为 20 (的递增结果`testInt`20 倍)。 (我们还假设你无法看到中的 bug `AddInt()`)。但结果实际上是 44。 如何在不逐句通过 `AddAll()` 10 次的情况下找到 Bug？ 我们可以使用历史调试更快、 更轻松地查找 bug。 操作方法如下：  
+ 我们将假定的期望值`resultInt`后调用`AddAll()`为 20 (的递增结果`testInt`20 次)。 (我们还假定您不能看到该 bug 的`AddInt()`)。但结果实际上是 44。 如何在不逐句通过 `AddAll()` 10 次的情况下找到 Bug？ 我们可以使用历史调试更快、 更轻松地查找 bug。 操作方法如下：  
   
-1.  在**工具 > 选项 > IntelliTrace > 常规**，请确保启用了 IntelliTrace，然后选择**IntelliTrace 事件和调用信息**。 如果没有选择此选项，则将无法看到导航线（如下所述）。  
+1.  在中**工具 > 选项 > IntelliTrace > 常规**，请确保启用了 IntelliTrace，然后选择**IntelliTrace 事件和调用信息**。 如果没有选择此选项，则将无法看到导航线（如下所述）。  
   
 2.  在 `Console.WriteLine(resultInt);` 行上设置断点。  
   
@@ -63,21 +63,21 @@ private static int AddInt(int add)
   
      ![在断点处的代码窗口](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  你应该在左边距旁边看到一个双箭头，就在断点上方。 此区域称为导航线，用于历史调试。 单击箭头。  
+5.  你应该在左边距旁边看到一个双箭头，就在断点上方。 此区域称为导航线，并用于历史调试。 单击箭头。  
   
-     在代码窗口中，应该看待前面的代码行 (`int resultInt = AddIterative(testInt);`) 变为粉红色。 在窗口上方，你应看到一条消息，你现在处于历史调试。  
+     在代码窗口中，应该看待前面的代码行 (`int resultInt = AddIterative(testInt);`) 变为粉红色。 在窗口上方，您应看到一条消息，你现在处于历史调试。  
   
      代码窗口现在如下所示：  
   
-     ![在历史调试模式下的代码窗口](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![历史调试模式中的代码窗口](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  现在可以单步执行`AddAll()`方法 (**F11**，或**单步执行**导航线中的按钮。 单步前进 (**F10**，或**转到下一个调用**导航线中。 粉红色的行现在变为 `j = AddInt(j);` 行。 **F10**在这种情况下不会单步执行到下一行代码。 相反，它将单步执行到下一个函数调用。 历史调试在调用之间进行导航，并跳过不包括函数调用的代码行。  
+6.  现在，可以单步执行`AddAll()`方法 (**F11**，则**单步执行**导航线中的按钮。 单步前进 (**F10**，或**转到下一个调用**导航线中。 粉红色的行现在变为 `j = AddInt(j);` 行。 **F10**这种情况下不会单步执行到下一行代码。 相反，它将单步执行到下一个函数调用。 历史调试在调用之间进行导航，并跳过不包括函数调用的代码行。  
   
 7.  现在单步执行到 `AddInt()` 方法。 应该立即看到此代码中的 Bug。  
 
 ## <a name="next-steps"></a>后续步骤
 
-此过程仅粗略介绍使用历史调试可以执行的操作。
+此过程只是简单介绍了使用历史调试可以执行的操作。
 
-- 若要查看在调试时的快照，请参阅[查看快照使用 IntelliTrace 步骤回](../debugger/how-to-use-intellitrace-step-back.md)。
-- 若要了解有关不同设置和导航线中不同按钮的效果的详细信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
+- 若要查看在调试时的快照，请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)。
+- 若要了解有关不同的设置和导航线中的不同按钮的效果的详细信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。

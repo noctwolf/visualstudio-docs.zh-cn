@@ -1,5 +1,5 @@
 ---
-title: 查看使用 IntelliTrace 事件 |Microsoft 文档
+title: 查看事件使用 IntelliTrace |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,24 +10,24 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fd43297dcf6a15e7d064809a5c4b5091f51ac63
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f46113365b66a75d3f9e149181637c79068645ab
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477714"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542320"
 ---
-# <a name="view-events-with-intellitrace-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 查看事件
+# <a name="view-events-with-intellitrace-in-visual-studio"></a>在 Visual Studio 中使用 IntelliTrace 的视图事件
 你可以使用 IntelliTrace 来收集关于特定事件或事件类别的信息，或收集关于除了事件外的单个函数调用的信息。 下列过程演示如何执行此操作。  
   
- 你可以在 Visual Studio Enterprise 版，但不可在 Professional 或 Community 版中使用 IntelliTrace。  
+ 在 Visual Studio Enterprise 版，但不是 Professional 或 Community 版本，可以使用 IntelliTrace。  
   
 ##  <a name="GettingStarted"></a> 配置 Intellitrace  
  你可以尝试仅使用 IntelliTrace 事件进行调试。 IntelliTrace 事件是调试器事件、异常、.NET Framework 事件和其他系统事件。 你应在开始调试之前打开或关闭特定事件以控制 IntelliTrace 记录的事件。 有关详细信息，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
  - 打开 IntelliTrace 事件以进行文件访问。 转到**工具 > 选项 > IntelliTrace > IntelliTrace 事件**页，然后展开**文件**类别。 检查 **“文件”** 事件类别。 这将导致检查所有文件事件（访问、关闭、删除）。
 
-## <a name="create-your-app"></a>创建你的应用程序
+## <a name="create-your-app"></a>创建您的应用程序
   
 1.  创建 C# 控制台应用程序。 在 Program.cs 文件中，添加以下 `using` 语句：  
   
@@ -51,14 +51,14 @@ ms.locfileid: "31477714"
   
 3.  在 `Console.WriteLine("done");`上设置断点  
 
-## <a name="start-debugging-and-view-intellitrace-events"></a>启动调试以及查看 IntelliTrace 事件
+## <a name="start-debugging-and-view-intellitrace-events"></a>开始调试并查看 IntelliTrace 事件
   
 1.  照常启动调试。 (按**F5**或单击**调试 > 启动调试**。  
   
     > [!TIP]
-    >  保留**局部变量**和**自动**调试以查看并记录这些窗口中的值时，窗口将打开。  
+    >  保持**局部变量**并**自动**进行调试以查看并记录这些窗口中的值时打开的窗口。  
   
-2.  执行在断点处停止。 如果看不到**诊断工具**窗口中，单击**调试 > Windows > IntelliTrace 事件**。  
+2.  执行在断点处停止。 如果没有看到**诊断工具**窗口中，单击**调试 > Windows > IntelliTrace 事件**。  
   
      在 **“诊断工具”** 窗口中，找到 **“事件”** 选项卡（应该看到 **“事件”**、 **“内存使用”** 和 **“CPU ”** 三个选项卡）。 **“事件”** 选项卡显示按时间排序的事件列表，以调试器中断执行之前的最后一个事件结尾。 你应会看到一个名为 **“访问 WordSearchInputs.txt”** 的事件。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "31477714"
   
      你可以选择路径名链接以打开文件。 如果完整的路径名不可用，则将显示 **“打开文件”** 对话框。  
   
-     单击**激活历史调试**，这将调试器的上下文设置为所选的事件的时间收集、 显示历史数据**调用堆栈**，**局部变量**和其他参与的调试器窗口。 如果源代码可用，则 Visual Studio 会将指针移到源窗口中的相应代码，以便你可以检查它。  
+     单击**激活历史调试**，这在调试器的上下文设置为所选的事件的时间收集、 显示历史数据**调用堆栈**，**局部变量**和其他参与的调试器窗口。 如果源代码可用，则 Visual Studio 会将指针移到源窗口中的相应代码，以便你可以检查它。  
   
      以下屏幕截图取自 Visual Studio 2015 Update 1。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "31477714"
   
 ## <a name="next-steps"></a>后续步骤
 
-你可以使用的一些高级功能的 IntelliTrace 历史调试：
+可以使用一些高级功能的 IntelliTrace 进行历史调试：
 
- - 若要查看快照，请参阅[查看使用 IntelliTrace 步骤后的快照](../debugger/how-to-use-intellitrace-step-back.md)
- - 若要了解如何检查变量和浏览代码，请参阅[检查你的应用使用历史调试](../debugger/historical-debugging-inspect-app.md)
+ - 若要查看快照，请参阅[检查使用 IntelliTrace 的上一个应用程序状态](../debugger/view-historical-application-state.md)
+ - 若要了解如何检查变量和导航代码，请参阅[检查使用历史调试对应用程序](../debugger/historical-debugging-inspect-app.md)

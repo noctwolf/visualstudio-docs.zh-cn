@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fac267dfaf27d9afccdb6236244dbd21e99b253b
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: cdb56a12f2f9fb6838579165bbe374e4dfbdca47
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433449"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542425"
 ---
 # <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>什么是调试器中的新增功能 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "37433449"
 
     ![单步执行向后和向前按钮](../debugger/media/intellitrace-step-back-icons-description.png  "后退一步和前进按钮")
 
-    有关详细信息，请参阅[使用 IntelliTrace 后退查看快照](../debugger/how-to-use-intellitrace-step-back.md)页。
+    有关详细信息，请参阅[检查上一应用程序状态使用 IntelliTrace](../debugger/view-historical-application-state.md)页。
 
 - **异常帮助器**替换异常助手，将出现在错误发生位置的非模式对话框。 **异常帮助程序**提供更快地访问任何内部异常，调试器使用 （如果可用），其他分析和立即访问**异常设置**异常。 异常帮助器还可以拖动到浮点视图，如果它阻止您需要查看的内容。
 
