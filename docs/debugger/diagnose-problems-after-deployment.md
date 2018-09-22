@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 886ad4b022f69034bae0e6188274676522488d8b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320730"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542502"
 ---
-# <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
+# <a name="diagnose-problems-after-deployment-using-intellitrace"></a>使用 IntelliTrace 部署后诊断问题
 
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。
 
@@ -27,48 +27,27 @@ ms.locfileid: "44320730"
 
  **你将需要：**
 
--   Visual Studio 2017，Visual Studio 2015 中或 Team Foundation Server 2017、 2015年、 2013年、 2012年或 2010 来设置生成
+-   Visual Studio、 Azure DevOps 或 Team Foundation Server 2017、 2015年、 2013年、 2012年或 2010 来设置生成
 
 -   用于监视应用和记录诊断数据的 Microsoft Monitoring Agent
 
 -   用于查看诊断数据并使用 IntelliTrace 调试代码的 Visual Studio Enterprise（但不是 Professional 或 Community 版本）
 
 ##  <a name="SetUpBuild"></a> 步骤 1： 包含生成信息与你的发布
- 设置生成过程以为你的 Web 项目创建生成清单（BuildInfo.config 文件）并在发布中包含此清单。 此清单包含有关项目、源代码管理和用于创建特定生成的生成系统的信息。 在你打开 IntelliTrace 日志以查看记录的事件时，此信息可帮助 Visual Studio 查找匹配的源和符号。
+ 设置你的生成过程以创建生成清单 (*BuildInfo.config*文件) 的 web 项目，并包含在发布此清单。 此清单包含有关项目、源代码管理和用于创建特定生成的生成系统的信息。 在你打开 IntelliTrace 日志以查看记录的事件时，此信息可帮助 Visual Studio 查找匹配的源和符号。
 
 ###  <a name="AutomatedBuild"></a> 创建使用 Team Foundation Server 的自动生成的生成清单
 
  无论你使用 Team Foundation 版本控制还是 Git，请按照这些步骤进行操作。
 
- ####  <a name="TFS2017"></a> Team Foundation Server 2017
+####  <a name="TFS2017"></a> Azure DevOps 和 Team Foundation Server 2017
 
- 设置生成管道以将源、 生成和符号的位置添加到生成清单 （BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
+Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，之后被删除。 若要在部署后调试 ASP.NET web 应用程序，请使用以下方法之一：
 
-1.  如果已使用 ASP.NET Core (.NET Framework) 模板的生成管道，你可以[编辑生成管道或创建新的生成管道。](/azure/devops/pipelines/get-started-designer?view=vsts)
+* 对于部署到 Azure，请使用[Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/)。
 
-     ![查看生成在 TFS 2017 中的管道](../debugger/media/ffr_tfs2017viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
+* 如果需要使用 IntelliTrace，在 Visual Studio 中打开项目并从匹配生成加载符号文件。 您可以加载符号文件从**模块**窗口中或通过配置中的符号**工具** > **选项** > **调试**  > **符号**。
 
-2.  如果创建新的模板，请选择 ASP.NET Core (.NET Framework) 模板。
-
-     ![选择生成过程模板&#45;TFS 2017](../debugger/media/ffr_tfs2017buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
-
-3.  指定保存符号 (PDB) 文件的位置，以便自动为你的源编制索引。
-
-     如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。
-
-     ![设置符号路径中生成管道 TFS 2017](../debugger/media/ffr_tfs2017builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
-
-     有关符号的详细信息，请参阅[发布符号数据](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
-
-4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：
-
-     **/p:IncludeServerNameInBuildInfo = true**
-
-     任何可访问你的 Web 服务器的人都可以在生成清单中看见这些位置。 请确保你的源服务器是安全的。
-
-6.  运行新的生成。
-
-    转到[步骤 2： 发布你的应用](#DeployRelease)
 
 ####  <a name="TFS2013"></a> Team Foundation Server 2013
  设置生成管道以将源、 生成和符号的位置添加到生成清单 （BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。
