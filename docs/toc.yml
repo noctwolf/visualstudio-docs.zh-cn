@@ -115,12 +115,14 @@ items:
     href: ide/quickstart-python.md
   - name: Node.js：创建 Web 应用
     href: ide/quickstart-nodejs.md
-  - name: C#：创建 Web 应用
-    href: ide/quickstart-aspnet-core.md
   - name: F#：创建 Web 服务
     href: ide/quickstart-fsharp.md
+  - name: C#：创建 Web 应用
+    href: ide/quickstart-aspnet-core.md
   - name: C#：创建 UWP 应用
     href: ide/quickstart-uwp-csharp.md
+  - name: C#：创建控制台应用
+    href: ide/quickstart-csharp-console.md
   - name: Visual Basic：创建控制台应用
     href: ide/quickstart-visual-basic-console.md
 - name: 教程
@@ -138,7 +140,7 @@ items:
   - name: Visual Studio 中的 Visual Basic
     href: ide/tutorial-visual-basic-console.md
   - name: 在 Visual Studio 中调试
-    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default
+    href: debugger/getting-started-with-the-debugger.md?context=visualstudio/default&contextView=vs-2017
 - name: 操作指南
   items:
   - name: 开发
@@ -1036,25 +1038,25 @@ items:
   - name: 发行说明和系统要求
     items:
     - name: 当前发行说明
-      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017
     - name: 预览发行说明
-      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017
     - name: 发行说明历史记录
-      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default
+      href: /visualstudio/releasenotes/vs2017-relnotes-history?context=visualstudio/default&contextView=vs-2017
     - name: 发行节奏
-      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-release-rhythm?context=visualstudio/default&contextView=vs-2017
     - name: Visual Studio 路线图
-      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2018-roadmap?context=visualstudio/default&contextView=vs-2017
     - name: 系统要求
-      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-system-requirements-vs?context=visualstudio/default&contextView=vs-2017
     - name: 平台兼容性
-      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs2017-compatibility-vs?context=visualstudio/default&contextView=vs-2017
     - name: 授权
       href: https://visualstudio.microsoft.com/license-terms/
     - name: 可分发代码
-      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/2017-redistribution-vs?context=visualstudio/default&contextView=vs-2017
     - name: 支持生命周期和维护服务
-      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default
+      href: /visualstudio/productinfo/vs-servicing-vs?context=visualstudio/default&contextView=vs-2017
   - name: 报告 Visual Studio 的问题
     href: ide/how-to-report-a-problem-with-visual-studio-2017.md
     items:
@@ -1069,9 +1071,9 @@ items:
     href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
   - name: 与我们交流
     href: ide/talk-to-us.md
-ms.openlocfilehash: e8506d9d6ed3fcaff6e69c42fdcc89a87477d115
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 5ef237f64da0664b3847f16f7d2d643899d74697
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384261"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029090"
