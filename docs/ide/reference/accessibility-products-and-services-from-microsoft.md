@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a389652b969ef4e4d29defbef40c91979d959e1
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 17a63dc86e77692538ea75ba708a1ff39f9fb1b9
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948738"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384248"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 
@@ -65,15 +65,15 @@ Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 
 
 ##  <a name="altfortmats"></a> 替代格式的文档
 
- 如果你有阅读困难或难以处理印刷材料，可以获取许多 Microsoft 产品的更易于访问的格式的文档。 可以在 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站上查看可访问产品文档的索引。
+如果你有阅读困难或难以处理印刷材料，可以获取许多 Microsoft 产品的更易于访问的格式的文档。 可以在 [Microsoft 辅助功能](http://go.microsoft.com/fwlink/?LinkId=8431)网站上查看可访问产品文档的索引。
 
- 此外，还可以从 Blind & Dyslexic, Inc (RFB&D) 获得其他的 Microsoft 出版物。 RFB&D 将这些文档分发给已注册使用其分发服务的合格成员。 有关 Microsoft 产品文档和 Microsoft 出版社所出版书籍的提供情况信息，请联系：
+此外，还可以从 Learning Ally 获得其他的 Microsoft 出版物。 Learning Ally 将这些文档分发给已注册使用其分发服务的合格成员。 有关 Microsoft 产品文档和 Microsoft 出版社所出版书籍的提供情况信息，请联系：
 
-|Recording for the Blind & Dyslexic Inc.|
+|了解 Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> 美国境内电话号码：(800) 221-4792<br /><br /> 美国及加拿大境外电话号码：(609) 452-0606<br /><br /> 传真：(609) 987-8116<br /><br /> Recording for the Blind & Dyslexic 网站：[http://www.rfbd.org](http://go.microsoft.com/fwlink/?LinkId=62504)。|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Learning Ally 网站：[http://www.learningally.org](http://www.learningally.org/)。|
 
- Web 地址可能会有所更改，因此你可能无法连接此处提及的网站或站点。
+Web 地址可能会有所更改，因此你可能无法连接此处提及的网站或站点。
 
 ##  <a name="hearing"></a> 针对有听力障碍人士的客户服务
 

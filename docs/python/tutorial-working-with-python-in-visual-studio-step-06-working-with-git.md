@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0eae43e894b521cc9633df3d6e0c84e8dbb0b20
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5f21528571a929fe31e8eb8cf891918a32fe2dce
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511322"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278721"
 ---
 # <a name="step-6-work-with-git"></a>步骤 6：使用 Git
 
 上一步：[安装程序包和管理 Python 环境](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
-Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team Services 等服务上的远程存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
+Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Azure Repos 等服务上的远程存储库的直接集成。 集成包括克隆存储库、提交更改和管理分支。
 
 本文简要概述了如何创建现有项目的本地 Git 存储库，并介绍 Visual Studio 的一些 Git 相关功能。
 
@@ -56,7 +56,7 @@ Visual Studio 提供与本地 Git 存储库以及 GitHub 和 Visual Studio Team 
 
 有关基于远程 Git 存储库创建项目的简短演练，请参阅[快速入门：在 Visual Studio 中克隆 Python 代码存储库](quickstart-03-python-in-visual-studio-project-from-repository.md)。
 
-有关更全面的教程（包括处理合并冲突、使用拉取请求查看代码、变基和挑拣分支之间的更改），请参阅[开始使用 Git 和 VSTS](/vsts/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
+有关更全面的教程（包括处理合并冲突、使用拉取请求查看代码、变基和挑拣分支之间的更改），请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio)。
 
 ## <a name="tutorial-review"></a>教程回顾
 

@@ -9,15 +9,15 @@ description: 有关通过 Microsoft for Startups 计划提供的订阅的详细�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7ced656e28b9f9bc30134df467e1a2cad05d376c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: cef3c37d2b80a360e680fa59f66d2bfb195ef63f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36280189"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278968"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初创企业提供的 Visual Studio 订阅
-加入 Microsoft for Startups 计划的合格初创企业可以获得 5 个 [Visual Studio Enterprise 月度云订阅](https://visualstudio.microsoft.com/vs/pricing/)。 这些订阅与商用订阅相同，没有特殊限制。 必须先将每个订阅分配给最终用户（许可用户），用户才能运行 Visual Studio 并在 VSTS 中被识别为 Visual Studio Enterprise 订阅者。
+加入 Microsoft for Startups 计划的合格初创企业可以获得 5 个 [Visual Studio Enterprise 月度云订阅](https://visualstudio.microsoft.com/vs/pricing/)。 这些订阅与商用订阅相同，没有特殊限制。 必须先将每个订阅分配给最终用户（许可用户），用户才能运行 Visual Studio 并在 Azure DevOps Services 中被识别为 Visual Studio Enterprise 订阅者。
 
 [了解有关 Microsoft for Startups 的详细信息](https://startups.microsoft.com/program-details/)
 

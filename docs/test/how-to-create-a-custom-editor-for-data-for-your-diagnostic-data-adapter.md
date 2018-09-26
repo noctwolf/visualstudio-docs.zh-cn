@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e46b8af413f7f86592ed6c9362ca9f11e61c436f
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380373"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320535"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>如何：为诊断数据适配器创建自定义数据编辑器
 
@@ -184,7 +184,7 @@ ms.locfileid: "39380373"
 
      你在编辑器中指定的数据文件将被附加到测试结果中。
 
- 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[测试时收集诊断数据 (VSTS) ](/vsts/manual-test/collect-diagnostic-data)或[在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+ 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[测试时收集诊断数据 (Azure Test Plans) ](/azure/devops/test/collect-diagnostic-data?view=vsts)或[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 

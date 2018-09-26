@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ecd73fceda6916f547c67e599777a9cd139d3bb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176367"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283479"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -27,7 +27,7 @@ ms.locfileid: "39176367"
 
 ## <a name="required-permissions"></a>所需权限
 
-若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅[为 Team Services 和 TFS 定义的权限和组](/vsts/organizations/security/permissions?view=vsts)。
+若要使用 **CodeIndex** 命令，必须是“Team Foundation Administrators”安全组的成员。 请参阅[为 Azure DevOps Services 和 TFS 定义的权限和组](/azure/devops/organizations/security/permissions?view=vsts)。
 
 > [!NOTE]
 > 即使你使用管理凭据进行登录，也必须使用提升权限打开命令提示符窗口以运行此命令。 你还必须从 Team Foundation 的应用层运行此命令。
@@ -42,8 +42,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 
 |**参数**|**说明**|
 |------------------|---------------------|
-|`CollectionName`|指定团队项目集合的名称。 如果名称包含空格，则用引号将该名称引起来，例如“Fabrikam 网站”。|
-|`CollectionId`|指定团队项目集合的标识号。|
+|`CollectionName`|指定项目集合的名称。 如果名称包含空格，则用引号将该名称引起来，例如“Fabrikam 网站”。|
+|`CollectionId`|指定项目集合的标识号。|
 |`ServerPath`|指定代码文件的路径。|
 
 |**选项**|**说明**|
@@ -56,8 +56,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/destroyCodeIndex [/noPrompt]**|删除代码索引并移除所有索引的数据。 如果使用 **/noPrompt** 选项，则无需确认。|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|控制处理变更集时 CodeLens 创建的临时数据量。 默认限制为 2 GB。<br /><br /> -   **view**：显示当前大小限制。<br />-   `SizeInGBs`：更改大小限制。<br />-   **disable**：删除大小限制。<br /><br /> 在检查过该限制后，CodeLens 才处理新的变更集。 如果临时数据超出此限制，CodeLens 将暂停处理过去的变更集，而不是新的变更集。 数据清理完毕并减少到此限制以下时，CodeLens 将重新开始处理。 清理会在每天自动运行一次。 这意味着临时数据可能超出此限制，直到清理开始运行。|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|控制对更改历史记录编制索引的时间长度。 这会影响 CodeLens 向你显示的历史记录量。 默认限值为 12 个月。 这表示 CodeLens 仅显示过去 12 个月的更改历史记录。<br /><br /> -   **view**：显示当前月数。<br />-   **all**：对所有更改历史记录编制索引。<br />-   `NumberOfMonths`：更改用于对更改历史记录编制索引的月数。|
-|**/collectionName:** `CollectionName`|指定运行 **CodeIndex** 命令的团队项目集合的名称。 如果不使用 **/CollectionId**，则为必需。|
-|**/collectionId:** `CollectionId`|指定运行 **CodeIndex** 命令的团队项目集合的标识号。 如果不使用 **/CollectionName**，则为必需。|
+|**/collectionName:** `CollectionName`|指定运行 CodeIndex 命令的项目集合的名称。 如果不使用 **/CollectionId**，则为必需。|
+|**/collectionId:** `CollectionId`|指定运行 CodeIndex 命令的项目集合的标识号。 如果不使用 **/CollectionName**，则为必需。|
 
 ## <a name="examples"></a>示例
 

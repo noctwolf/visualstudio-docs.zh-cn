@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2821e785d0caf504cd64eb90a6538b1a69e9a26
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978649"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279682"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -46,7 +46,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/Framework: [Framework 版本]**|要用于测试执行的目标 .NET Framework 版本。<br />有效值为 Framework35、Framework40、Framework45 和 FrameworkUap10。<br />如果将目标框架指定为 Framework35，则测试在 CLR 4.0“兼容模式”下运行。<br />示例：`/Framework:framework40`|
 |**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|显示使用情况信息。|
-|**/Logger:[*uri/friendlyname*]**|为测试结果指定一个记录器。<br />示例：若要将结果记录到 Visual Studio 测试结果文件 (TRX)，请使用 /Logger:trx。<br />示例：若要将测试结果发布到 Team Foundation Server，请使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<team project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<team project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
+|**/Logger:[*uri/friendlyname*]**|为测试结果指定一个记录器。<br />示例：若要将结果记录到 Visual Studio 测试结果文件 (TRX)，请使用 /Logger:trx。<br />示例：若要将测试结果发布到 Team Foundation Server，请使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[文件名]**|列出给定测试容器中的已发现的测试。|
 |**/ListDiscoverers**|列出已安装的测试发现器。|
 |**/ListExecutors**|列出已安装的测试执行器。|

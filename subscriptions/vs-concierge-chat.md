@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的接待聊天室权益�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 395b05d3b3caa7a800cc28ca1f93c944e6320d1e
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1163feb7b1a55a816eef3b4b5f106de01c34669a
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289463"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282517"
 ---
 # <a name="concierge-chat"></a>接待聊天室
 
@@ -45,8 +45,8 @@ ms.locfileid: "43289463"
 | Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  是          |
-| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不适用 |
-| Visual Studio Dev Essentials | NA  | 不可用 |不适用 |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
+| Visual Studio Dev Essentials | NA  | 不可用 |不可用 |
 
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 认证培训师、BizSpark。不包括：FTE、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、Imagine。
 
@@ -59,7 +59,7 @@ ms.locfileid: "43289463"
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 
 

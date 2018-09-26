@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42bc0ed6cea6025ad59c13566504daed7222ac2b
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 30a6cb4f2d39e16a9ff5334bc0676707e4c65dce
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203847"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321146"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>如何：收集 IntelliTrace 数据以帮助调试难题
 
@@ -110,7 +110,7 @@ IntelliTrace 数据存储在扩展名为“.iTrace”的文件中。 运行测�
 
 ## <a name="see-also"></a>请参阅
 
-- [在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data)
-- [在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
+- [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
+- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
 - [收集 IntelliTrace 数据](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)

@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区权
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2fd37e00e447a380dc35557f2601d570b7eccbf5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92115e0beef07b50e2ea0783ccde6a9cc792c838
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289462"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283725"
 ---
 # <a name="azure-community"></a>Azure 社区
 
@@ -58,7 +58,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 一年                                             |  是          |
 | MSDN 平台（标准）                                          | VL、零售                                              |一年                                              |  是          |
 | Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）、NFR<sup>1</sup>                                          | 全部                                              |不可用                                              |  否          |
-| Visual Studio Dev Essentials                                        | 不适用                                              |不可用                                              |  否          |
+| Visual Studio Dev Essentials                                        | 不可用                                              |不可用                                              |  否          |
 |
 <sup>1</sup> 包括：限制转售 (NFR)、Microsoft FTE、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)
 
@@ -68,4 +68,4 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 -  对于其他 Azure 社区资源，请访问 Azure 社区[支持页](https://azure.microsoft.com/support/forums/)。
 -  [Azure 文档](/azure/)。
 -  需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 Visual Studio [订阅支持团队](https://visualstudio.microsoft.com/subscriptions/support/)。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

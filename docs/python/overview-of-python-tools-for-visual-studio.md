@@ -1,7 +1,7 @@
 ---
 title: Windows 上 Visual Studio 中的 Python 支持概述
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
-ms.date: 05/07/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: overview
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0176b596ecf432ab74a29c29d4af6848ee1d4820
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626924"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320964"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -38,6 +38,8 @@ Python 目前不支持在 Visual Studio for Mac 中使用，但可通过 Visual 
 Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视图）具有一块用于管理所有全局 Python 环境、conda 环境和虚拟环境的单独区域。 Visual Studio 可自动检测出标准位置是否安装 Python，并且允许用户配置自定义安装。 在每个环境中，用户都可以轻松管理包、打开该环境的交互窗口和访问环境文件夹。
 
 ![“Python 环境”窗口扩展后的视图](media/environments-expanded-view.png)
+
+使用“打开交互窗口”命令，在 Visual Studio 的上下文中以交互方式运行 Python。 使用“在 PowerShell 中打开”命令，在所选环境的文件夹中打开单独的命令窗口。 可从该命令窗口运行任何 python 脚本。 
 
 更多相关信息：
 
@@ -62,7 +64,7 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 
 ## <a name="interactive-window"></a>交互窗口
 
-对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。
+对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。 （若要打开单独的命令提示符，请在“Python环境”窗口中选择所需的环境，然后如之前的[对多个解释器的支持](#support-for-multiple=interpreters)下所述，选择“在 PowerShell 中打开”命令）。
 
 ![Visual Studio 中的 Python 交互窗口](media/interactive-window.png)
 
@@ -163,7 +165,7 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 
 **问：Python 项目是否可以生成独立的可执行文件？**
 
-答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区中有多种方法可以创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
+答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
 
 ## <a name="features-matrix"></a>功能矩阵
 

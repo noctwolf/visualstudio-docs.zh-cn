@@ -1,11 +1,11 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: 73292b9e0c7df23db839a7a13f70dbc2432d564f
-ms.sourcegitcommit: 8cbe6b38b810529a6c364d0f1918e5c71dee2c68
+ms.openlocfilehash: 5abaf2aafe2ff265123e9d4ed12f0ee350b22879
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29708769"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283517"
 ---
 # <a name="clone-a-repository-of-python-code-in-visual-studio"></a>在 Visual Studio 中克隆 Python 代码存储库
 
@@ -17,9 +17,9 @@ ms.locfileid: "29708769"
 
 2. 启动 Visual Studio。
 
-3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Visual Studio Team Services，或者克隆存储库。
+3. 选择“视图”>“团队资源管理器...”，打开“团队资源管理器”窗口，可在该窗口中连接到 GitHub 或 Azure DevOps Services，或者克隆存储库。
 
-    ![显示 Visual Studio Team Services、GitHub 并克隆存储库的“团队资源管理器”窗口](media\create-project-repo\team-explorer.png)
+    ![显示 Azure DevOps、GitHub 并克隆存储库的“团队资源管理器”窗口](media\create-project-repo\team-explorer.png)
 
 4. 在“本地 Git 存储库”下的 URL 字段中，输入 `https://github.com/Microsoft/samples-for-ai`，为克隆文件输入一个文件夹，然后选择“克隆”。
 

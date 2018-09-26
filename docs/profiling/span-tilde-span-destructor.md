@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e7c2d2985946ddd27c5786c22a724c9b2c4eaa
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: ebde2e9659716a73943e2861f8856f6a9817b34b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668526"
 ---
 # <a name="spanspan-destructor"></a>span::~span 析构函数
 销毁 `span` 对象并释放其资源。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 05/11/2018
 ~span();  
 ```  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  **标头：** cvmarkersobj.h  
   
  **命名空间：** Concurrency::diagnostic

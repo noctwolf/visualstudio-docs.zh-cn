@@ -10,15 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 8086d28c9591195c90268b52a03325b8acc2e420
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 4063787711ae825cd587f72d735710444906d99b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35666509"
 ---
 # <a name="package-manager"></a>程序包管理器
 
-针对 Visual Studio 的 R 工具 (RTVS) 程序包管理器是一个用于管理 R 程序包的UI。 若要打开它，请选择“R 工具”>“窗口”>“程序包”或按 Ctrl+7。
+针对 Visual Studio 的 R 工具 (RTVS) 程序包管理器是一个用于管理 R 程序包的UI。 若要打开它，请选择“R 工具” > “窗口” > “程序包”或按 Ctrl+7。
 
 程序包管理器包含三个选项卡。 每个选项卡均在左侧显示相关程序包的列表，右侧显示所选程序包的特定详细信息，包括程序包版本、说明、许可证、安装位置和指向其他相关信息的链接。 右上角的搜索框可用于筛选列表。
 
@@ -41,5 +42,5 @@ ms.lasthandoff: 04/19/2018
 
 程序包安装在以下位置:
 
-- RTVS 随附的核心程序包安装在 `C:\Program Files\Microsoft\R Client\R_SERVER\library` 中
-- 其他程序包的安装位置为：`%userprofile%\Documents\R\win-library\3.3`
+- RTVS 附带的核心程序包安装在 C:\Program Files\Microsoft\R Client\R_SERVER\library 中
+- 其他程序包安装到了 %userprofile%\Documents\R\win-library\3.3

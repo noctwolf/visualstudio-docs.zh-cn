@@ -10,17 +10,18 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 0ce8e2ea6ec0cb0d2d70cfab36687f108dd73e82
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 0c9db243b3903ddcbaa310bbf5ba3fd911eee7fc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667725"
 ---
 # <a name="code-snippets"></a>代码片段
 
 Visual Studio 中的代码片段提供了一些快捷方式，可用于快速插入任意长度的代码块，有助于避免反复键入相似的代码。 针对 Visual Studio 的 R 工具 (RTVS) 向 Visual Studio 的集合添加了许多有用的 R 代码片段。
 
-要插入代码片段，请键入代码片段的缩写名称（支持 IntelliSense），然后按 Tab 插入。
+要插入代码片段，请键入代码片段的缩写名称（提供 IntelliSense），然后按 Tab 插入。
 
 一些简单示例如下：
 
@@ -33,7 +34,7 @@ Visual Studio 中的代码片段提供了一些快捷方式，可用于快速插
 
 在这种情况下，当键入 `readc` 时，IntelliSense 将显示一个完成列表。 在下拉菜单中选择该完成列表，按 Tab 选择 `readc`，然后再次按 Tab 展开代码片段。 （因此，通常认为展开代码片段是“键入代码片段并按 Tab 两次”）。 在大多数情况下，第一次按 Tab 完成 IntelliSense 选择，第二次按 Tab 触发展开。
 
-要查看所有可用的代码片段，请打开“工具”>“代码片段管理器...”对话框（Ctrl+K、B），并为“语言”选择“R”。 展开组并选择单独的代码片段，查看说明和快捷方式文本：
+要查看所有可用的代码片段，请打开“工具” > “代码片段管理器”对话框（Ctrl+K、B），并为“语言”选择“R”。 展开组并选择单独的代码片段，查看说明和快捷方式文本：
 
 ![R 的代码片段对话框](media/code-snippet-dialog.png)
 

@@ -9,12 +9,12 @@ description: 有关在 MPN 中提供的订阅、应用的规则以及提供的�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7db3d68b904ee6ec21f9f43e165291cfa7cbfc10
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: b3bea3831e2d16f43d378bfe77a4dc8f84fdda3f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36281025"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283569"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 具备相应资格或在 MPN 中购买了Action Pack 的合作伙伴可以使用 Visual Studio 订阅。 这些订阅按用户授权，并且仅在分配给为合作伙伴公司工作的特定命名用户时才有效。
@@ -54,7 +54,7 @@ ms.locfileid: "36281025"
 
 Visual Studio Professional (MPN) 订阅者还可下载和使用 SQL Server Developer Edition 等免费软件进行开发。
 
-Visual Studio Professional (MPN) 订阅不包括 VSTS 权益、每月 Azure 额度、技术支持、培训或商用 Visual Studio 订阅中提供的其他订阅者权益。
+Visual Studio Professional (MPN) 订阅不包括 Azure DevOps Services 权益、每月 Azure 额度、技术支持、培训或商用 Visual Studio 订阅中提供的其他订阅者权益。
 
 ## <a name="internal-use-only-restriction"></a>仅限内部使用
 MPN 规则规定，作为计划权益提供的所有软件只能在内部使用。 这一规定适用于为个人 Visual Studio 订阅者提供的软件以及所有 MPN 软件许可证权益。
@@ -69,5 +69,4 @@ MPN 规则规定，作为计划权益提供的所有软件只能在内部使用�
 
 - [MPN 计划管理员指南](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) - 包含有关如何为 MPN 员工分配 Visual Studio 订阅的说明。
 - [为 MPN 员工分配 Visual Studio 订阅](manage-mpn-subscriptions.md)
-- 
-  [使用条款](http://www.microsoft.com/useterms/) - 通过 MPN 提供的 Visual Studio 订阅应遵循 Visual Studio 订阅不得转售 (NFR) EULA。
+- [使用条款](http://www.microsoft.com/useterms/) - 通过 MPN 提供的 Visual Studio 订阅应遵循 Visual Studio 订阅不得转售 (NFR) EULA。

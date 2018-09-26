@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cf63d830a90e7240ec0adb4d191b8b765ebb1d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380349"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320899"
 ---
 # <a name="unit-test-your-code"></a>对代码进行单元测试
 
@@ -49,8 +49,8 @@ ms.locfileid: "39380349"
 |**对 C++ 代码进行单元测试**|-   [通过适用于 C++ 的 Microsoft 单元测试框架编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|
 |**隔离单元测试**|-   [使用 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)|
 |**使用代码覆盖率确定测试的项目代码的比例：** 了解 Visual Studio 测试工具的代码覆盖率功能。|-   [使用代码覆盖率确定正在测试的代码量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**通过使用负载测试来执行压力和性能分析：** 可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（VSTS 和 TFS）](/vsts/load-test/)|
-|**设置质量要求：** 可以创建质量要求以在签入代码之前强制运行测试，从而帮助确保代码质量。|-   [签入策略 (VSTS)](/vsts/tfvc/add-check-policies)|
+|**通过使用负载测试来执行压力和性能分析：** 可以创建负载测试并向其添加单元测试，以帮助隔离应用程序中的性能和压力问题。|-   [负载测试（Azure Test Plans 和 TFS）](/azure/devops/test/load-test/index?view=vsts)|
+|**设置质量要求：** 可以创建质量要求以在签入或合并代码之前强制运行测试，从而帮助确保代码质量。|-   [签入策略 (Azure Repos TFVC)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**设置测试选项：** 例如，可以指定测试结果的存储位置。|[使用 .runsettings 文件配置单元测试](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>API 参考文档

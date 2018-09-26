@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5cb0899296aa24aa41c0caa2b808b02f27dc80be
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: 83339ebabd3bb8a00f56b90ba9f162084bd43043
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302921"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282842"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>开发人员测试工具、方案和功能
 
@@ -60,7 +60,7 @@ ms.locfileid: "36302921"
 
 代码覆盖率是使用测试资源管理器运行测试方法时的一个选项。 结果表将显示在各个程序集、类和方法中运行的代码的百分比。 此外，源编辑器将显示已测试的代码。
 
-![使用 Visual Studio Team Services 和 Team Foundation Server 进行测试](media/devtest-codecoverage.png)
+![使用 Azure Test Plans 和 Team Foundation Server 进行测试](media/devtest-codecoverage.png)
 
 * [使用代码覆盖率确定所测试的代码量](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [使用 Visual Studio（实验室）进行单元测试、代码覆盖率分析和代码克隆分析](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)

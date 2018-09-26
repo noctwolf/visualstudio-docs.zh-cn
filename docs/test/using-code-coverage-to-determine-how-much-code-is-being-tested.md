@@ -15,12 +15,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a4164f9911ae9ca0eade08c1ef8c12fc6bc46300
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 8dc6ff1e2813f1457e8a41328f759e8e27d9aa65
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381711"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279942"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 
@@ -249,9 +249,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 可通过编写 .runsettings 文件来加强控制为代码覆盖率分析选择哪些程序集和元素。 例如，你可以排除特定类型的程序集，而不必向它们的类添加特性。 有关详细信息，请参阅[自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)。
 
-## <a name="analyze-code-coverage-in-the-build-service"></a>分析生成服务中的代码覆盖率
+## <a name="analyze-code-coverage-in-azure-pipelines"></a>分析 Azure Pipelines 中的代码覆盖率
 
-签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅[在生成过程中运行测试](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。）对生成服务分析代码覆盖率很有用，因为这样能提供整个项目中的覆盖率的最新、最全面的情报。 它还包含用户不常在开发计算机上运行的自动系统测试和其他编码的测试。
+签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅[在生成过程中运行测试](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。）这对分析 Azure Pipelines 中的代码覆盖率很有用，因为这样能提供整个项目中最新、最全面的覆盖率信息。 它还包含用户不常在开发计算机上运行的自动系统测试和其他编码的测试。
 
 1. 在团队资源管理器中，打开“生成”，然后添加或编辑生成定义。
 

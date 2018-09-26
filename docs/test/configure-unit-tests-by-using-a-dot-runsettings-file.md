@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: abecc0968862fd5547e8a2bdff113f1c21abb8d9
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: e4c778e66a8fa9ca2008345675c6c3504786fcdf
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42901480"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280280"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -24,7 +24,7 @@ ms.locfileid: "42901480"
 
 ## <a name="specify-a-run-settings-file"></a>指定运行设置文件
 
-运行设置文件可以用来在 IDE 中配置从[命令行](vstest-console-options.md)运行的测试，或者在使用 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的[生成工作流](/vsts/pipelines/test/getting-started-with-continuous-testing?view=vsts)中。
+运行设置文件可以用来在 IDE 中或者在使用 Azure Test Plans 或 Team Foundation Server (TFS) 的[生成工作流](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)中，配置从[命令行](vstest-console-options.md)运行的测试。
 
 ### <a name="specify-a-run-settings-file-in-the-ide"></a>在 IDE 中指定运行设置文件
 
@@ -256,4 +256,4 @@ public void HomePageTest()
 ## <a name="see-also"></a>请参阅
 
 - [自定义代码覆盖率分析](../test/customizing-code-coverage-analysis.md)
-- [Visual Studio 测试任务 (VSTS)](/vsts/pipelines/tasks/test/vstest?view=vsts)
+- [Visual Studio 测试任务 (Azure Test Plans)](/azure/devops/pipelines/tasks/test/vstest?view=vsts)

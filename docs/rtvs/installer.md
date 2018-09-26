@@ -10,11 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 5370a399ba5d66a868f3804106e062c214e4fe30
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 2dd23b87bc3d362f7d198cdd0e5d63e0ebac26d5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667049"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 
@@ -25,7 +26,7 @@ ms.lasthandoff: 04/19/2018
 ## <a name="resources"></a>资源
 
 - [文档](index.md)
-- [安装步骤](installing-r-tools-for-visual-studio.md)
+- [如何安装针对 Visual Studio 的 R 工具](installing-r-tools-for-visual-studio.md)
 - [在 GitHib 上提交和浏览 bug 以及功能请求](https://github.com/Microsoft/RTVS/issues)
 - [浏览和编写源代码](https://github.com/Microsoft/RTVS/blob/master/LICENSE)
 - 若要通过 Github（首选）之外的途径发送反馈，请使用 Visual Studio 中的“R 工具”>“反馈”菜单。

@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ec1938dca476dcc04c892d183cedbf7f057aef40
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289506"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283166"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -69,4 +69,4 @@ Visual Studio App Center 入门十分简单。
     - 从 [App Center 帮助中心](https://intercom.help/appcenter/)的 App Center 团队获取建议和答案。
     - 签出完整的 [App Center 文档](/appcenter/)
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

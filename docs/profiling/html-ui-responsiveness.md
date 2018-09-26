@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 94398b39e6e1c2f97e2b6851639649fc33dd217c
-ms.sourcegitcommit: eefffa7ebe339d1297cdc12f51a813e7849d7e95
+ms.openlocfilehash: 482c7213f695fce68026acbd0fd953cf2d4792ad
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668188"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -34,12 +35,12 @@ ms.lasthandoff: 05/14/2018
   
 -   视觉对象更新频率比预期频率低。 如果 UI 线程太忙而无法保持平稳的帧速率，就会出现此情况。 例如，UI 线程忙碌时，可能会丢弃帧。 某些非 UI 线程工作（例如网络请求、图像解码和绘制工作）也会限制视觉对象更新频率。 （并非所有绘制工作都在 UI 线程上执行。  
   
-##  <a name="RunningProfiler"></a> 运行 HTML UI 响应能力工具  
+## <a name="run-the-html-ui-responsiveness-tool"></a>运行 HTML UI 响应能力工具  
  在 Visual Studio 中打开有效 UWP 应用时，可以使用“HTML UI 响应能力”工具。  
   
 1.  如果是通过 Visual Studio 运行应用，请在“标准”工具栏上的“开始调试”列表中，选择部署目标，即“本地计算机”或“设备”。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2.  在“调试”菜单上，选择“性能探查器”。  
   
      如果要更改探查器的分析目标，请选择“更改目标”。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 05/14/2018
   
 6.  若要停止分析探查器收集的应用程序和视图数据，请选择 **“停止收集”**。  
   
-##  <a name="IsolateAnIssue"></a> 隔离问题  
+## <a name="isolate-an-issue"></a>隔离问题  
  下一节会提供帮助你隔离性能问题的建议。 有关如何通过使用样本性能测试应用来标识和修复性能问题的分步说明，请参阅[演练：改进 UI 响应能力 (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md)。  
   
 ###  <a name="Workflow"></a> 隔离 UI 响应能力问题  
@@ -75,11 +76,11 @@ ms.lasthandoff: 05/14/2018
   
 1.  在 Visual Studio 中打开应用程序。  
   
-2.  测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用程序而不进行调试。  
+2.  测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用而不进行调试。）  
   
      如果发现问题，请继续测试以尝试缩小发生问题的时间范围，或尝试确定导致该行为的触发器。  
   
-3.  切换回 Visual Studio（按 Alt+Tab），并停止应用程序 (Shift+F5)。  
+3.  切换回 Visual Studio（按 Alt+Tab），并停止应用 (Shift+F5)。  
   
 4.  或者，使用 performance.mark [标记要分析的代码](#ProfileMark)。  
   
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/14/2018
   
     -   应用程序加载的页面或 URL 资源，例如 HTML 分析事件的脚本计算。 提供文件名或资源。  
   
-    -   在以下部分中指定的其他事件： [Profiler event reference](#ProfilerEvents)。  
+    -   在以下部分中指定的其他事件： [Profiler event reference](#profiler-event-reference)。  
   
     > [!TIP]
     >  探查器中的大部分有用信息显示在“时间线详细信息”图中。  
@@ -168,7 +169,7 @@ if (performance.mark && performance.measure) {
   
  ![时间线详细视图中的用户评估事件](../profiling/media/js_htmlvizprofiler_user_measure.png "JS_HTMLVizProfiler_User_Measure")  
   
-##  <a name="AnalyzeData"></a> 分析数据  
+## <a name="analyze-data"></a>分析数据  
  以下各节提供了有助于解释在探查器中显示的数据的信息。  
   
 ###  <a name="Ruler"></a> 查看诊断会话时间线  
@@ -187,7 +188,7 @@ if (performance.mark && performance.measure) {
 -   导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。  
   
 ###  <a name="CPUUtilization"></a> 查看 CPU 使用率  
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#ProfilerEvents) 。  
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。  
   
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。  
   
@@ -247,7 +248,7 @@ if (performance.mark && performance.measure) {
   
  如果选择“CPU 使用率”图和“可视吞吐量”(FPS) 图的时间线的一部分，则“时间线详细信息”图将显示选定时间段的详细信息。  
   
- “时间线详细信息”图中的事件使用彩色编码表示“CPU 使用率”图中所示的相同类别的工作。 有关事件类别和特定事件的更多信息，请参阅本主题中的 [Profiler event reference](#ProfilerEvents) 。  
+ “时间线详细信息”图中的事件使用彩色编码表示“CPU 使用率”图中所示的相同类别的工作。 有关事件类别和特定事件的更多信息，请参阅本主题中的 [Profiler event reference](#profiler-event-reference) 。  
   
  使用“时间线详细信息”图可以：  
   
@@ -300,10 +301,10 @@ if (performance.mark && performance.measure) {
   
  ![按帧分组的时间线事件](../profiling/media/js_htmlvizprofiler_frame_grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
   
-##  <a name="SaveSession"></a> 保存诊断会话  
+## <a name="save-a-diagnostic-session"></a>保存诊断会话  
  在 Visual Studio 中，你可以在关闭与诊断会话关联的选项卡时保存此会话。 保存的会话以后可以重新打开。  
   
-##  <a name="ProfilerEvents"></a> Profiler event reference  
+## <a name="profiler-event-reference"></a>Profiler event reference  
  UI 响应能力探查器中对探查器事件进行了分类和彩色编码。 事件类别如下：  
   
 -   **加载。** 指示应用程序首次加载时检索应用程序资源和解析 HTML 与 CSS 所用的时间。 这可能包括网络请求。  
@@ -348,7 +349,7 @@ if (performance.mark && performance.measure) {
 |Frame|不可用|对需要重新提取页面的所有受影响部分的 DOM 进行了可视更改。 这是用于分组的工具生成的事件。|  
 |“用户测量”|不可用|使用 `performance.measure` 方法测量应用特定的方案。 这是用于分析代码的工具生成的事件。|  
   
-##  <a name="Tips"></a> 其他信息  
+## <a name="additional-information"></a>其他信息  
   
 -   观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
   
@@ -357,4 +358,4 @@ if (performance.mark && performance.measure) {
 -   若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
 ## <a name="see-also"></a>请参阅  
- [分析工具](../profiling/profiling-tools.md)
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)

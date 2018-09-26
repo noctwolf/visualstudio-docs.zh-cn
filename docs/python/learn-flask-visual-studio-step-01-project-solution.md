@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Flask，步骤 1
 description: 有关 Visual Studio 项目上下文中 Flask 基础知识的演练。
-ms.date: 06/04/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f64c603d9902343d83b57d56ab891c7b41d021ae
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586399"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283413"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
@@ -95,7 +95,7 @@ Visual Studio for Mac 当前不支持 Python 开发。 在 Mac 和 Linux 上，�
 
     ![用于推送到现有远程存储库的团队资源管理器窗口](media/flask/step01-push-to-github.png)
 
-    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Visual Studio Team Services”选项直接从 Visual Studio 创建一个存储库。
+    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Azure DevOps”选项直接从 Visual Studio 创建一个存储库。
 
 1. 按照本教程执行操作时，请养成定期在 Visual Studio 中使用控件提交和推送更改的习惯。 本教程会在适当时机提醒你。
 

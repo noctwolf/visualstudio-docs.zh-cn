@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: bb3611b485bd36b1268f12ca06b29d8962eab8ae
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: a1007f8cafe162f6afa09690bfa500f359793962
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289443"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44278798"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 
@@ -94,11 +94,11 @@ ms.locfileid: "43289443"
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  不支持。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 3 个月                                                            |不支持。  仅对新订阅者可用         |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不支持。  仅对新订阅者可用         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              | 不支持。  仅对新订阅者可用         |
-| Visual Studio Dev Essentials | NA  | 3 个月 |不支持。  仅对新订阅者可用 |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 3 个月                                                            |不是。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 3 个月                                             |  不是。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                              | 不是。  仅对新订阅者可用         |
+| Visual Studio Dev Essentials | NA  | 3 个月 |不是。  仅对新订阅者可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)。不包括：Microsoft 合作伙伴网络（MPN）、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务。
@@ -116,4 +116,4 @@ ms.locfileid: "43289443"
     - 与[使用 LinkedIn 学习](https://www.linkedin.com/help/learning)有关的帮助。
     - 帮助解答有关 [LinkedIn](https://www.linkedin.com/help/linkedin) 的常规问题，例如创建帐户和个人资料，以及维护网络。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

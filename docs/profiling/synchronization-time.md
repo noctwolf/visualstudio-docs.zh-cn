@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b968ead26d632c70f0b1adc8864600769629a90
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: f3236530c1a7b92fd1cba1bdd61e3e1c0973b58c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668217"
 ---
 # <a name="synchronization-time"></a>同步时间
 时间线中的这些段与归类为同步的阻止时间关联。 当线程被标记为在同步中阻止时，表示出现了下列情况之一：  
@@ -30,4 +31,4 @@ ms.lasthandoff: 04/19/2018
  若要了解线程阻止事件的基本原因，可仔细检查阻止调用堆栈和分析报告。  
   
 ## <a name="see-also"></a>请参阅  
- [线程视图](../profiling/threads-view-parallel-performance.md)
+ [“线程”视图](../profiling/threads-view-parallel-performance.md)

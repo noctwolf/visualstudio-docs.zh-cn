@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0755f77b2eea2860a3514480504c7aed041711d4
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9d2d6c30696636bc8fd2ca571940ac0165eabbcf
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379284"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321042"
 ---
 # <a name="how-to-install-a-custom-diagnostic-data-adapter"></a>如何：安装自定义诊断数据适配器
 
@@ -46,7 +46,7 @@ ms.locfileid: "39379284"
     > [!NOTE]
     > 虽然诊断数据适配器和配置编辑器可以在同一个项目中创建并且可以构建到同一个程序集中，但只要您愿意，也可以为它们使用单独的项目或创建单独的程序集。
 
-     有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+     有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
 2.  若要为测试选择诊断数据适配器，必须先选择一个现有测试设置或从 Microsoft 测试管理器或 Visual Studio 创建一个新的测试设置，然后在所选测试设置的“数据和诊断”选项卡上选择诊断数据适配器。
 

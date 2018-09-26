@@ -1,31 +1,31 @@
 ---
-title: TF 版本控制
-description: 使用 Team Foundation 版本控制连接到 Team Foundation Server 或 Visual Studio Team Services。
+title: Team Foundation 版本控制 (TFVC)
+description: 使用 Team Foundation 版本控制 (TFVC) 连接到 Team Foundation Server 或 Azure DevOps Services。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/03/2018
+ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 101f002f6c311fe5aaefa78c246602fd45514603
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224319"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279837"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制 
 
 > [!NOTE]
 > 请注意：Team Foundation 版本控制支持目前处于预览状态，某些功能尚未完全正常工作。 我们衷心期待能在[开发者社区](https://developercommunity.visualstudio.com/spaces/41/index.html)收到你有关任何问题的反馈意见。 更多更改陆续到来！
 
-Visual Studio Team Services (VSTS) 和 Team Foundation Server (TFS) 提供两个版本控制模型：Git（分布式版本控制）和 Team Foundation 版本控制 (TFVC)（集中式版本控制）。 本文提供概述和借助 Visual Studio for Mac 使用 Team Foundation 版本控制的起点。
+Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 Team Foundation 版本控制 (TFVC)（集中式版本控制）。 本文提供借助 Visual Studio for Mac 使用 TFVC 的概述和起点。
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>要求
 
 * Visual Studio Community、Professional 或 Enterprise for Mac 版本 7.5 或更高版本。
-* Visual Studio Team Services 或 Team Foundation Server 2013 及更高版本。
-* Visual Studio Team Services 或 Team Foundation Server 中的项目，配置为使用 Team Foundation 版本控制。
+* Azure DevOps Services 或 Team Foundation Server 2013 及更高版本。
+* Azure DevOps Services 或 Team Foundation Server 中的项目，配置为使用 Team Foundation 版本控制。
 
 ## <a name="installation"></a>安装
 
@@ -47,17 +47,19 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 ## <a name="using-the-add-in"></a>使用加载项
 
-安装扩展后，选择“版本控制”>“TFS/VSTS”>“从远程存储库打开”菜单项。 
+安装扩展后，选择“版本控制”>“TFS/Azure DevOps”>“从远程存储库打开”菜单项。
 
-选择 Visual Studio Team Services 或 Team Foundation Server 以开始使用，然后选择“继续”：
+  ![用于打开扩展的菜单项](media/tfvc-source-control-explorer-devops.png)
 
-  ![与服务器连接](media/tfvc-choose-server-type.png)
+选择 VSTS 或 Team Foundation Server 以开始使用，然后选择“继续”：
 
-### <a name="vsts-authentication"></a>VSTS 身份验证
+  ![与服务器连接](media/tfvc-choose-server-type-devops.png)
 
-选择在 VSTS 上托管的项目时，系统会提示输入 Microsoft 帐户详细信息：
+### <a name="azure-repos-authentication"></a>Azure Repos 身份验证
 
-  ![与 VSTS 服务器连接](media/tfvc-vsts-login.png)
+选择在 Azure Repos 上托管的项目时，系统会提示输入 Microsoft 帐户详细信息：
+
+  ![与 Azure Repos 连接](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS 身份验证
 
@@ -73,10 +75,10 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 此对话框分为以下节点：
 
-- VSTS 帐户或集合 - 此节点显示与登录所用的 Microsoft 帐户相连接的所有帐户
-- 团队项目 - 每个 VSTS 中可拥有大量团队项目。 团队项目中托管有源代码、工作项和自动生成。
+- Azure DevOps Services 组织或集合 - 这显示连接到所登录 Microsoft 帐户的所有组织。
+- 项目 - 在每个组织或集合中，可以拥有许多项目。 项目中托管源代码、工作项和自动生成。
 
-现在可按项目或帐户的名称进行搜索和筛选。
+现在可按项目或组织的名称进行搜索和筛选。
 
 ### <a name="adding-a-new-server"></a>添加新服务器
 
@@ -86,7 +88,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 从列表中选择提供程序并输入凭据：
 
-![显示源代码管理提供程序的选项的对话框](media/tfvc-add-new-creds.png)
+![显示源代码管理提供程序的选项的对话框](media/tfvc-add-new-creds-devops.png)
 
 ## <a name="creating-a-new-workspace"></a>创建一个新工作区
 
@@ -102,9 +104,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 创建工作区并映射项目后，则可开始使用“源代码资源管理器”。
 
-若要打开源代码资源管理器，请选择“版本控制”>“TFS/VSTS”>“源代码管理器”：
-
-![用于打开源代码资源管理器的菜单项](media/tfvc-source-control-explorer.png)
+若要打开源代码资源管理器，请选择“版本控制”>“TFS/Azure DevOps”>“源代码管理器”菜单项。
 
 利用源代码资源管理器可以浏览所有映射的项目及其文件和文件夹。 还可以执行所有基本源代码管理操作，例如：
 
@@ -134,7 +134,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
     
     ![显示默认选项的“创建新工作区”对话框](media/tfvc-workspace1.png) 
 
-1. 选择“$”文件夹，将服务器上的所有团队项目映射到同一工作区；或选择单个项目，然后单击“确定”：
+1. 选择“$”文件夹，将服务器上的所有项目映射到同一工作区；或选择单个项目，然后单击“确定”：
     
     ![显示所有项目的“浏览文件夹”对话框](media/tfvc-workspace2.png) 
 
@@ -157,10 +157,10 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 - Basic
 - Ntlm
 
-若要使用基本身份验证，需要在 VSTS 中启用“其他身份验证凭据”，具体步骤如下：
+若要使用基本身份验证，需要在 Azure DevOps Services 中启用“其他身份验证凭据”，具体步骤如下：
 
-1. 以帐户所有者身份登录到 VSTS 帐户 (https://{youraccount}.visualstudio.com)。
-2. 在帐户工具栏中，选择齿轮图标，然后选择“策略”：
+1. 以所有者身份登录 Azure DevOps Services 组织 (https://dev.azure.com/{organization}/{project})。
+2. 在组织工具栏中，选择齿轮图标，然后选择“策略”：
     
     ![选中的策略设置选项](media/tfvc-auth2.png) 
 
@@ -172,7 +172,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 若要在开发计算机上设置 Team Foundation 版本控制 (TFVC)，必须按照[管理工作区](#managing-workspaces)部分所述创建工作区。
 
-在源代码管理器中，按“管理工作区”按钮。 按照步骤将团队项目映射到开发计算机上的文件夹。
+在源代码管理器中，按“管理工作区”按钮。 按照步骤将项目映射到开发计算机上的文件夹。
 
 ### <a name="i-do-not-see-any--all-of-my-projects"></a>我没有看到任何/所有项目
 

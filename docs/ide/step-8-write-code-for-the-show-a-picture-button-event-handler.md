@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc9bc3e5b0c3a61e911f7e49395f940ac07e2548
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 7f1763f7688dcb74781688e31af856fe531e69c8
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748599"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384131"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 在此步骤中，将生成按如下方式工作的“显示图片”按钮：
@@ -27,7 +27,7 @@ ms.locfileid: "34748599"
 
  IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码。 当您输入代码时，IDE 会打开一个框，其中显示与您所输入的部分单词对应的完整建议内容。 它尝试确定您接下来要做的事情，并自动跳到您从列表中选择的最后一项。 您可以使用向上键或向下键在列表中进行移动，也可以继续键入字母以缩小选择范围。 当你看到所需的选项时，请选择 Tab 键以将其选中。 或者，也可以忽略不需要的建议。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](http://go.microsoft.com/fwlink/?LinkId=205215) 或[教程 1：在 C# 中创建图片查看器 - 视频 4](http://go.microsoft.com/fwlink/?LinkId=205203)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+ ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx)。 此视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>为“显示图片”按钮事件处理程序编写代码
 

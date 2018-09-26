@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c202dbaec3ad1bf894d3892f4f89be75c3a7ad7
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 567510bba3e7503fccb1273c306990eb17a93525
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668466"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-VSPerfCmd.exe **Sys** 选项将采样的分析事件设置为系统调用事件（被分析的应用程序中对操作系统的函数调用），还可以选择将采样间隔内的系统调用数从默认值 10 改为其他值。  
+VSPerfCmd.exe Sys 选项将采样的分析事件设置为系统调用事件（被分析的应用程序中对操作系统的函数调用），还可以选择将采样间隔内的系统调用数从默认值 10 改为其他值。  
   
  只能在包含 **Launch** 或 **Attach** 选项的命令行中使用 **Sys**。  
   

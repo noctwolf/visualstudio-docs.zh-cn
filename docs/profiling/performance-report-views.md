@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 553a2a53543f25d3794cf07ef760e42a010197f1
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 16082a3d04a27355033fd96f3387652063f00cce
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668455"
 ---
 # <a name="performance-report-views"></a>性能报告视图
 本节提供有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具报告和视图的参考信息。 分析数据文件的视图显示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 集成开发环境 (IDE) 中。 报告由 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具生成。  

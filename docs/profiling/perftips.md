@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e5f0696db8f8e29204f9fbed49cc347a4afb74
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 28e103e278ab044ee9dcef8226a65afc78da9829
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668241"
 ---
 # <a name="perftips"></a>性能提示
 Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具”** 可帮助在调试时监视和分析应用的性能。  
   
- 虽然调试器集成的诊断工具是在开发时注意性能问题的极佳方式，但是调试器可能会显著影响应用的性能。 若要收集更准确的性能数据，请考虑使用也在调试器外部作为性能调查的其他部分运行的 Visual Studio 诊断工具。 请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。  
+ 虽然调试器集成的诊断工具是在开发时注意性能问题的极佳方式，但是调试器可能会显著影响应用的性能。 若要收集更准确的性能数据，请考虑使用也在调试器外部作为性能调查的其他部分运行的 Visual Studio 诊断工具。 请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。  
   
 ## <a name="perftips"></a>性能提示  
  调试器在断点或单步执行操作中停止执行时，中断与上一个断点之间经过的时间会显示为在编辑器窗口中的提示。 有关详细信息，请参阅 [“性能提示：使用 Visual Studio 进行调试时的性能信息一览”](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)。  
@@ -27,9 +28,9 @@ Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具�
  ![PerfTip](../profiling/media/dbgdiag_perf_perftip.png "DBGDIAG_PERF_PerfTip")  
   
 ## <a name="diagnostics-tools-window"></a>“诊断工具”窗口  
- 断点以及关联计时数据记录在“诊断工具”窗口中  
+ 断点以及关联计时数据记录在“诊断工具”窗口中。  
   
- 下图显示了 Visual Studio 2015 Update 1 中的“诊断工具”窗口：  
+ 下图显示 Visual Studio 2015 Update 1 中的“诊断工具”  窗口：  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
@@ -57,4 +58,4 @@ Visual Studio 调试器 *性能提示* 和调试器集成的 **“诊断工具�
 
 ## <a name="see-also"></a>请参阅
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能简介](../profiling/profiling-feature-tour.md)
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)

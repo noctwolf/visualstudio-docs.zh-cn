@@ -5,17 +5,17 @@ ms.date: 07/03/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 84a665a39c9cfa9e0eee030d7bf4fdb9b3194bc1
-ms.sourcegitcommit: 71b307ce86c4079cc7ad686d8d5f96a6a123aadd
+ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39251713"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283322"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -188,7 +188,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>调试 Unity 项目中使用的托管 DLL 项目
 
-1. 将现有的 DLL 项目添加到由 Visual Studio Tools for Unity 生成的 Visual Studio 解决方案中。 不太常见的情况是：你可能会启动一个新的托管 DLL 项目，以便在 Unity 项目中包含代码组件；如果是这种情况，则可将新的托管 DLL 项目添加到 Visual Studio 解决方案。 有关向解决方案添加新项目或现有项目的详细信息，请参阅[如何：向解决方案添加项目](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)。
+1. 将现有的 DLL 项目添加到由 Visual Studio Tools for Unity 生成的 Visual Studio 解决方案中。 不太常见的情况是：你可能会启动一个新的托管 DLL 项目，以便在 Unity 项目中包含代码组件；如果是这种情况，则可将新的托管 DLL 项目添加到 Visual Studio 解决方案。 有关向解决方案添加新项目或现有项目的详细信息，请参阅[如何：向解决方案添加项目](https://msdn.microsoft.com/library/ff460187.aspx)。
 
      ![将现有的 DLL 项目添加到解决方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -217,6 +217,6 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 |打开 Monobehavior 向导|Ctrl+Shift+M|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |打开 Unity 项目资源管理器|Alt+Shift+E|**View.UnityProjectExplorer**|
 |访问 Unity 文档|Ctrl+Alt+M, Ctrl+H|**Help.UnityAPIReference**|
-|附加到 Unity 调试器（播放器或编辑器）|***无默认值***|**Debug.AttachUnityDebugger**|
+|附加到 Unity 调试器（播放器或编辑器）|无默认值|**Debug.AttachUnityDebugger**|
 
  如果不喜欢默认值，可以更改快捷键组合。 有关如何更改它的信息，请参阅[在 Visual Studio 中标识并自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。

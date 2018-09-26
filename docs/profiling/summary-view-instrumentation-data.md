@@ -12,11 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a62c7dc2d8f0e0e80b3cfd8ba74b968ebd2e116
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 606ba5ebe7c485adb33fbcfa6884ad5e625d821e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668229"
 ---
 # <a name="summary-view---instrumentation-data"></a>“摘要”视图 - 检测数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
@@ -46,5 +47,5 @@ ms.lasthandoff: 04/19/2018
 |**独占时间百分比**|此函数在其函数体中执行代码所花的时间占分析数据中所有时间的百分比。 不包含在此函数调用的函数中所花的时间。|  
   
 ## <a name="see-also"></a>请参阅  
- [“摘要”视图](../profiling/summary-view-sampling-data.md)   
- [“摘要”视图](../profiling/summary-view-dotnet-memory-data.md)
+ [“摘要”视图 - 采样数据](../profiling/summary-view-sampling-data.md)   
+ [“摘要”视图 - .NET 内存数据](../profiling/summary-view-dotnet-memory-data.md)

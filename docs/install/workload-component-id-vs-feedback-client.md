@@ -1,6 +1,6 @@
 ---
 title: Visual Studio Feedback Client 2017 工作负载和组件 ID
-description: 使用 Visual Studio 工作负载和组件 ID 提供有关 Visual Studio Team Services 或 Team Foundation Server 的大量反馈
+description: 使用 Visual Studio 工作负载和组件 ID 提供有关 Azure DevOps Services 或 Team Foundation Server 的大量反馈
 keywords: ''
 author: TerryGLee
 ms.author: tglee
@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.workload:
 - multiple
-ms.openlocfilehash: d56d68768be45fc3ab4eb8e30b777ae14abe4343
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 5037870cfbe1df0a4f997f16ef196d78de983aaa
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138774"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281554"
 ---
 # <a name="visual-studio-feedback-client-2017-component-directory"></a>Visual Studio Feedback Client 2017 组件目录
 
@@ -43,7 +43,7 @@ ms.locfileid: "43138774"
 
 **ID:** Microsoft.VisualStudio.Workload.FeedbackClient
 
-**说明：** 利益干系人可以使用 Feedback 客户端提供有关 Visual Studio Team Services 或者 Team Foundation Server 的大量反馈。
+**说明：** 利益干系人可以使用 Feedback Client 提供有关 Azure DevOps Services 或者 Team Foundation Server 的大量反馈。
 
 ### <a name="components-included-by-this-workload"></a>此工作负载所包含的组件
 

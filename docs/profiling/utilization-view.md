@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 835226dc867f290c3cd3f553895687abdb895207
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 223535ef0b90869db191327abc7a757b5b79ae6b
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477101"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668248"
 ---
-# <a name="utilization-view"></a>使用率视图
-使用率视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
+# <a name="utilization-view"></a>“使用率”视图
+“使用率”视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
   
  ![CPU 使用率视图](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: douge
-ms.date: 05/07/2018
+ms.date: 08/14/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,14 +17,16 @@ ms.prod: visual-studio-dev15
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fa29ef14f6fa4c4ff63c0dd697bfa362347e9c9
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: c46ce842bc9d95ffe783918b364a8cedaabf95c2
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43139188"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44284050"
 ---
 # <a name="visual-studio-2017-workload-and-component-ids"></a>Visual Studio 2017 工作负荷和组件 ID
+
+[版本 15.8](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default) 的更新内容
 
 单击下表中的版本名称，查看使用命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项所需的工作负载和组件 ID。
 
@@ -33,7 +35,7 @@ ms.locfileid: "43139188"
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md) | Microsoft.VisualStudio.Product.Enterprise | 面向任何规模的团队的工作效率和协作的 Microsoft DevOps 解决方案 |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md) | Microsoft.VisualStudio.Product.Professional | 面向小团队的开发人员工具和服务 |
 | [Visual&nbsp;Studio Community&nbsp;2017](workload-component-id-vs-community.md) | Microsoft.VisualStudio.Product.Community | 面向学生、开源和个人开发人员的功能完备的免费 IDE |
-| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | 与 Team Foundation Server 和 Visual Studio Team Services 交互，不包含 Visual Studio 开发人员工具集 |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2017](workload-component-id-vs-team-explorer.md) | Microsoft.VisualStudio.Product.TeamExplorer | 与 Team Foundation Server 和 Azure DevOps Services 交互，不包含 Visual Studio 开发人员工具集 |
 | [Visual Studio Desktop Express 2017](workload-component-id-vs-express.md) | Microsoft.VisualStudio.Workload.WDExpress | 通过语法感知代码编辑、源代码管理和工作项管理，生成原生和托管应用，如 WPF、WinForms 和 Win32。 现已支持 C#、Visual Basic 和 Visual C++。 |
 | [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2017](workload-component-id-vs-build-tools.md) | Microsoft.VisualStudio.Product.BuildTools | 使用 Visual Studio 生成工具，无需借助 Visual Studio IDE，即可生成本机和托管的基于 MSBuild 的应用程序。 这些选项用于安装 Visual C++ 编译器和库、MFC、ATL 以及 C++/CLI 支持。 |
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2017](workload-component-id-vs-test-agent.md)  | Microsoft.VisualStudio.Product.TestAgent | 支持运行自动测试和远程加载测试 |

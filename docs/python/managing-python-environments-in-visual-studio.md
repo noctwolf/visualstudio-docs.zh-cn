@@ -1,7 +1,7 @@
 ---
 title: 管理 Python 环境和解释器
 description: 使用 Python 环境窗口来管理全局、虚拟和 Conda 环境、安装 Python 解释器和包以及将环境分配给 Visual Studio 项目。
-ms.date: 07/23/2018
+ms.date: 09/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bb2a93ae9c05bef49551e3dd3fa6d68d998e09ec
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586569"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320814"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -38,7 +38,7 @@ Python 环境是在其中运行 Python 代码的上下文，它包括全局、�
 
 ### <a name="global-environments"></a>全局环境
 
-每个 Python 安装（例如，Python 2.7、Python 3.6 和 Anaconda 4.4.0 等，请参阅[安装 Python 解释器](installing-python-interpreters.md)）都会维护自己的全局环境。 每个环境都包括特定的 Python 解释器、其标准库和一组预安装包。 将包安装到全局环境使其适用于使用此环境的所有项目。 如果环境位于文件系统的保护区域内（例如，c:\program files 内），则安装包时需要管理员权限。
+每个 Python 安装（例如，Python 2.7、Python 3.6、Python 3.7 和 Anaconda 4.4.0 等，请参阅[安装 Python 解释器](installing-python-interpreters.md)）都会维护自己的全局环境。 每个环境都包括特定的 Python 解释器、其标准库和一组预安装包。 将包安装到全局环境使其适用于使用此环境的所有项目。 如果环境位于文件系统的保护区域内（例如，c:\program files 内），则安装包时需要管理员权限。
 
 全局环境适用于计算机上的所有项目。 在 Visual Studio 中，选择一个全局环境作为默认环境，此环境可用于所有项目，除非为项目专门选择了其他环境。 有关详细信息，请参阅[选择项目环境](selecting-a-python-environment-for-a-project.md)。
 
@@ -76,6 +76,9 @@ conda 环境文件夹如下所示：
 根据下一节所述，Visual Studio 2017 版本 15.7 及更高版本自动检测 Conda 环境，并在“Python 环境”窗口中显示这些环境。
 
 ## <a name="the-python-environments-window"></a>“Python 环境”窗口
+
+> [!Note]
+> 本节中所示的屏幕截图表示 Visual Studio 15.8。 根据 Visual Studio 的版本，UI 可能会略有不同。
 
 Visual Studio 了解的环境显示在“Python 环境”窗口中。 要打开该窗口，请使用以下某个方法：
 

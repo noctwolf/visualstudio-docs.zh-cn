@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bebbc778c71c464a6e4eabaebfff15760b99478
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 78e83a69e21c1c6cd1aa10235d66f63fb1e5e27a
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31954254"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775214"
 ---
 # <a name="shortcut-keys-help-viewer"></a>快捷键 (Help Viewer)
 
@@ -34,16 +34,16 @@ ms.locfileid: "31954254"
 |Toolbar|Alt + Home|显示“帮助审阅者”主页。|
 |Toolbar|Ctrl + S|突出显示目录的当前主题（在“内容”选项卡）。|
 |Toolbar|**Ctrl**+**D**|将当前主题添加到“收藏夹”选项卡。|
-|Toolbar|Ctrl + F|显示主题区域中的“查找”栏，便于在当前主题中搜索文本。|
+|Toolbar|Ctrl+F|显示主题区域中的“查找”栏，便于在当前主题中搜索文本。|
 |Toolbar|Ctrl + P|打印当前页。|
 |Toolbar|Ctrl + F2|显示当前页的打印预览。|
 |Toolbar|Ctrl + O|显示“查看器选项”对话框。|
-|Toolbar|Ctrl + Shift + M|显示“管理内容”选项卡。|
+|Toolbar|Ctrl+Shift+M|显示“管理内容”选项卡。|
 |导航器|Alt + C<br /><br /> - 或 -<br /><br /> Ctrl + Shift + C|显示“内容”选项卡。|
 |导航器|Alt + I<br /><br /> - 或 -<br /><br /> Ctrl + Shift + I|显示“索引”选项卡。|
-|导航器|Alt + F<br /><br /> - 或 -<br /><br /> Ctrl + Shift + F|显示“收藏夹”选项卡。|
+|导航器|Alt + F<br /><br /> - 或 -<br /><br /> Ctrl+Shift+F|显示“收藏夹”选项卡。|
 |导航器|Alt + S<br /><br /> - 或 -<br /><br /> Ctrl + E<br /><br /> - 或 -<br /><br /> Ctrl + Shift + S|显示“搜索”选项卡。|
-|导航器|Alt + M<br /><br /> - 或 -<br /><br /> Ctrl + Shift + M|显示“管理内容”选项卡。|
+|导航器|Alt + M<br /><br /> - 或 -<br /><br /> Ctrl+Shift+M|显示“管理内容”选项卡。|
 |主题|快捷菜单键<br /><br /> 或<br /><br /> Shift + F10|显示当前 UI 元素的快捷菜单。|
 |主题|向上键|滚动到文档开头，一次滚动一行。|
 |主题|向下键|滚动到文档末尾，一次滚动一行。|
@@ -51,7 +51,7 @@ ms.locfileid: "31954254"
 |主题|Page Down|滚动到文档末尾，一次滚动一屏幕。|
 |主题|**主文件夹**|移动到文档开头。|
 |主题|**End**|移动到文档末尾。|
-|主题|Ctrl + F|在此页上查找搜索文本。|
+|主题|Ctrl+F|在此页上查找搜索文本。|
 |主题|**F5**|刷新当前页。|
 |主题|Ctrl + P|打印当前页。|
 |主题|Ctrl + F2|显示当前页的打印预览。|
@@ -61,7 +61,7 @@ ms.locfileid: "31954254"
 |主题|Ctrl + Tab|在选项卡之间按从左到右的顺序切换。|
 |主题|Ctrl + Shift + Tab|在选项卡之间按从右到左的顺序切换。|
 |主题|**Ctrl**+**W**|关闭当前选项卡。|
-|主题|Ctrl + 数字|切换到特定选项卡，其中“数字”介于 1 到 9 之间，表示序列中相应的选项卡。|
+|主题|**Ctrl**+**_数字_**|切换到特定选项卡，其中“数字”介于 1 到 9 之间，表示序列中相应的选项卡。|
 |主题|Ctrl + Alt + F4|关闭其他的内容选项卡。|
 |主题|Ctrl + Shift + 正号|缩放比例增大 10%。|
 |主题|Ctrl + 负号|缩放比例减小 10%。|
@@ -76,15 +76,15 @@ ms.locfileid: "31954254"
 |内容 & 索引 & 搜索 & 收藏夹|Ctrl + P|打印指定的主题。|
 |内容 & 索引 & 搜索 & 收藏夹|Ctrl + F2|显示指定主题的打印预览。|
 |内容 & 索引 & 搜索 & 收藏夹|Ctrl + 单击|在新的选项卡中打开主题。|
-|搜索|Esc|清除搜索文本框。|
+|搜索|**Esc**|清除搜索文本框。|
 |查看器选项|Alt + T|将焦点更改到“文本大小”列表。|
 |查看器选项|Alt + S|将焦点更改到“最大搜索结果”列表。|
 |查看器选项|Alt + H|将焦点更改到“保存的最大历史记录条目”列表。|
 |查看器选项|Alt + E|选择或清空“在所有导航选项卡和 F1 请求中包括英语内容”复选框（如果启用）。|
 |查看器选项|Alt + O|选择或清除“联机检查内容更新”复选框。|
 |查找|Enter|将焦点更改到下一项。|
-|查找|Shift + Enter|将焦点更改到上一项。|
-|查找|Esc|隐藏“查找”文本框。|
+|查找|Shift+Enter|将焦点更改到上一项。|
+|查找|**Esc**|隐藏“查找”文本框。|
 |状态栏|Alt + E|如果状态栏显示已发生错误，则打开“错误”对话框。|
 |状态栏|Alt + U|如果状态栏显示有可用更新，则下载内容|
 

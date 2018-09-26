@@ -10,17 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ef0bfc6c2030fc12d5743e91cb7b660cbe241f
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 19a183b9285e53a93f6fe6e44c94f5dcd14957e5
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476672"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668510"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
-VSPerfCmd.exe **ThreadOff** 和 **ThreadOn** 子命令只能在使用检测方法的命令行分析会话中使用。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。  
+VSPerfCmd.exe ThreadOff 和 ThreadOn 子命令只能在使用检测方法的命令行分析会话中使用。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。  
   
- 大多数情况下，可指定 **ThreadOn** 或 **ThreadOff** 作为 VSPerfCmd.exe 命令行中唯一的选项，但它们也可与 **GlobalOn**、**GlobalOff**、**ProcessOn** 和 **ProcessOff** 子命令组合使用。  
+ 大多数情况下，可指定 ThreadOn 或 ThreadOff 作为 VSPerfCmd.exe 命令行中唯一的选项，但它们也可与 GlobalOn、GlobalOff、ProcessOn 和 ProcessOff 子命令组合使用。  
   
  **ThreadOn** 和 **ThreadOff** 子命令与控制命令行分析会话中所有进程的数据收集的 **GlobalOn** 和 **GlobalOff** 子命令交互，并与控制指定进程的数据收集的 **ProcessOn** 和 **ProcessOff** 子命令交互。  
   
