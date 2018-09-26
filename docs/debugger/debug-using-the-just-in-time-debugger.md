@@ -1,7 +1,7 @@
 ---
 title: 使用实时调试器进行调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 07/06/17
+ms.date: 09/24/18
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa31d9d9b536a614cc1000f7c25ae6fbb5e4d510
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 7a2e6cfbd6d26d575bab5d7592f320779ffd8888
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176436"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168391"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 在实时调试 Visual Studio 会自动启动 Visual Studio 之外运行的应用程序中发生异常或崩溃时。 这使您测试应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。
@@ -48,6 +48,8 @@ ms.locfileid: "39176436"
 4.  在中**这些类型的代码启用实时调试**框中，选择或清除相关的程序类型：**托管**，**本机**，或**脚本**.
 
 5.  单击 **“确定”**。
+
+    如果启用了实时中调试器，但你看不到它在应用程序崩溃或异常，请参阅[中实时调试错误](#jit_errors)。
 
 即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 未安装 Visual Studio 时，不能禁用中实时从 Visual Studio 调试**选项**对话框。 对于这种情况，你可以通过编辑 Windows 注册表来禁用实时调试。
 
@@ -152,28 +154,33 @@ static void Main(string[] args)
 
  你可以开始调试在这里。 如果这是实际的应用程序，您需要找出原因代码抛出异常。
 
-## <a name="just-in-time-debugging-errors"></a>实时调试错误
- 如果看不到对话框中，此程序发生故障时，这可能会由于您的计算机上的 Windows 错误报告设置。 有关详细信息，请参阅[。WER 设置](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started)。
+## <a name="jit_errors"></a> 在实时调试错误
+ 如果看不到对话框中，当程序出现故障，需要启用该功能时，这可能会由于您的计算机上的 Windows 错误报告设置。 请确保添加**禁用**对以下注册表项值，并将值设置为 1:
 
- 你可能会遇到与实时调试相关联的下列错误消息。
+* HKLM\Software\Microsoft\Windows\Windows 错误报告
+* HKLM\Software\WOW6432Node\Microsoft\Windows\Windows 错误报告
+ 
+有关这些设置的详细信息，请参阅[。WER 设置](https://docs.microsoft.com/windows/desktop/wer/wer-settings)。
 
--   **无法附加到崩溃进程。指定的程序不是 Windows 或 MS-DOS 程序。**
+此外，可能会看到以下错误消息与在实时调试。
 
-     当你尝试附加到以其他用户身份运行的进程时，将发生此错误。
+- **无法附加到崩溃进程。指定的程序不是 Windows 或 MS-DOS 程序。**
 
-     若要解决此问题，请启动 Visual Studio 中，打开**附加到进程**对话框从**调试**菜单中，并查找过程，你想要在调试**可用进程**列表。 如果不知道进程名称，看看**Visual Studio 实时调试器**对话框并记下进程 id。 选择中的过程**可用进程**列表中，单击**附加**。 在中**Visual Studio 实时调试器**对话框中，单击**否**以关闭对话框。
+    当你尝试附加到以其他用户身份运行的进程时，将发生此错误。
 
--   **无法启动调试器，因为没有用户登录。**
+    若要解决此问题，请启动 Visual Studio 中，打开**附加到进程**对话框从**调试**菜单中，并查找过程，你想要在调试**可用进程**列表。 如果不知道进程名称，看看**Visual Studio 实时调试器**对话框并记下进程 id。 选择中的过程**可用进程**列表中，单击**附加**。 在中**Visual Studio 实时调试器**对话框中，单击**否**以关闭对话框。
 
-     在没有用户登录到控制台的计算机中，如果实时调试尝试启动 Visual Studio，则会发生此错误。 因为没有用户登录，所以没有用户会话来显示“实时调试”对话框。
+- **无法启动调试器，因为没有用户登录。**
 
-     要解决此问题，请登录到计算机。
+    在没有用户登录到控制台的计算机中，如果实时调试尝试启动 Visual Studio，则会发生此错误。 因为没有用户登录，所以没有用户会话来显示“实时调试”对话框。
 
--   **未注册的类。**
+    要解决此问题，请登录到计算机。
 
-     此错误指出：调试器尝试创建一个可能是因为安装问题而没有注册的 COM 类。
+- **未注册的类。**
 
-     若要解决此问题，请使用安装盘重新安装或修复 Visual Studio 安装。
+    此错误指出：调试器尝试创建一个可能是因为安装问题而没有注册的 COM 类。
+
+    若要解决此问题，请使用安装盘重新安装或修复 Visual Studio 安装。
 
 ## <a name="see-also"></a>请参阅
  [调试器安全](../debugger/debugger-security.md)[调试器基础知识](../debugger/getting-started-with-the-debugger.md)[中的实时，调试，Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md) [安全警告： 附加到不受信任的用户拥有的进程可以是危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
