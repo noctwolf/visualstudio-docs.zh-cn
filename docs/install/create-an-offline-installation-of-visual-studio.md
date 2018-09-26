@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 987584be6d2d0a2ee794622e64e989de9ea80334
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135573"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028944"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -34,7 +34,7 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ## <a name="use-the-download-all-then-install-feature"></a>使用“全部下载，然后安装”功能
 
-[15.8 中的新增功能](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&view=vs-2017#install
+[15.8 中的新增功能](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017#install
 )：下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项********。 然后，继续安装。
 
    ![“全部下载后再安装”选项](media/download-all-then-install.png)

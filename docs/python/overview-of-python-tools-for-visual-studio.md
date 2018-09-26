@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 99d87f5b8a8a5ee0ad69b6f6d0da121799262c9f
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320964"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45552105"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -64,7 +64,7 @@ Visual Studio 具备出色的 Python 编辑器，包括语法着色、跨代码�
 
 ## <a name="interactive-window"></a>交互窗口
 
-对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。 （若要打开单独的命令提示符，请在“Python环境”窗口中选择所需的环境，然后如之前的[对多个解释器的支持](#support-for-multiple=interpreters)下所述，选择“在 PowerShell 中打开”命令）。
+对于 Visual Studio 已知的每个 Python 环境，用户都可以直接在 Visual Studio 中轻松打开 Python 解释器的相同交互 (REPL) 环境，而无需使用单独的命令提示符。 也可以轻松地切换环境。 （若要打开单独的命令提示符，请在“Python环境”窗口中选择所需的环境，然后如之前的[对多个解释器的支持](#support-for-multipleiinterpreters)下所述，选择“在 PowerShell 中打开”命令）。
 
 ![Visual Studio 中的 Python 交互窗口](media/interactive-window.png)
 
@@ -161,11 +161,11 @@ Visual Studio 集成了对将 Web 应用和云服务发布到 Azure 的支持。
 
 **问：构建 Python UI 可以使用什么工具？**
 
-答： 该领域的主要产品是 [Qt 项目](https://www.qt.io/qt-for-application-development/)，其中与 Python 的绑定称为 [PySide（官方绑定）](http://wiki.qt.io/PySide)（另请参阅 [PySide 下载](https://download.qt.io/official_releases/pyside/.)）和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支持不包括用于 UI 开发的任何特定工具。
+答： 该领域的主要产品是 [Qt 项目](https://www.qt.io/qt-for-application-development/)，其中与 Python 的绑定称为 [PySide（官方绑定）](https://wiki.qt.io/PySide)（另请参阅 [PySide 下载](https://download.qt.io/official_releases/pyside/.)）和 [PyQt](https://wiki.python.org/moin/PyQt)。 目前，Visual Studio 中的 Python 支持不包括用于 UI 开发的任何特定工具。
 
 **问：Python 项目是否可以生成独立的可执行文件？**
 
-答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
+答： Python 通常是一种解释型语言，其代码在适合 Python 功能的环境（如 Visual Studio 和 Web 服务器）中按需运行。 目前，Visual Studio 本身不提供创建独立可执行文件的方法，它本质上是一个具有嵌入式 Python 解释器的程序。 但是，如 [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency) 所述，Python 社区提供了不同的方法来创建可执行文件。 如博客文章[使用 CPython 可嵌入 zip 文件](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/26/cpython-embeddable-zip-file/)中所述，CPython 还支持嵌入到本机应用程序中。
 
 ## <a name="features-matrix"></a>功能矩阵
 
@@ -283,19 +283,19 @@ Visual Studio 2015 及更早版本可在 [visualstudio.microsoft.com/vs/older-do
 | 调试测试 | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10004; | &#10007; |
 <br/>
 
-1. Visual Studio Tools for Git 扩展中提供了对 Visual Studio 2012 的 Git 支持，可从 [Visual Studio 库](http://visualstudiogallery.msdn.microsoft.com/abafc7d6-dcaa-40f4-8a5e-d6724bdb980c)中获得。
+1. Visual Studio Tools for Git 扩展中提供了对 Visual Studio 2012 的 Git 支持，可从 [Visual Studio 库](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit)中获得。
 
-1. 部署到 Azure 网站需要 [Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](http://go.microsoft.com/fwlink/?LinkId=313855)。 更高版本不支持 Visual Studio 2010。
+1. 部署到 Azure 网站需要 [Azure SDK for .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855)。 更高版本不支持 Visual Studio 2010。
 
-1. 对 Azure Web 角色和辅助角色的支持需要[用于 .NET 2.3 - VS 2012 的 Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323511) 或更高版本。
+1. 对 Azure Web 角色和辅助角色的支持需要[用于 .NET 2.3 - VS 2012 的 Azure SDK](https://go.microsoft.com/fwlink/?LinkId=323511) 或更高版本。
 
-1. 对 Azure Web 角色和辅助角色的支持需要[用于 .NET 2.3 - VS 2013 的 Azure SDK](http://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
+1. 对 Azure Web 角色和辅助角色的支持需要[用于 .NET 2.3 - VS 2013 的 Azure SDK](https://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
 
 1. Visual Studio 2013 中的 Django 模板编辑器具有一些已知问题，可通过安装 Update 2 解决。
 
-1. 需要 Windows 8 或更高版本。 Visual Studio 2013 Express for Web 没有“附加到进程”对话框，但 Azure 网站远程调试仍然可能在服务器资源管理器中使用附加调试器 (Python) 命令。 远程调试需要安装 [Azure SDK for .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
+1. 需要 Windows 8 或更高版本。 Visual Studio 2013 Express for Web 没有“附加到进程”对话框，但 Azure 网站远程调试仍然可能在服务器资源管理器中使用附加调试器 (Python) 命令。 远程调试需要安装 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
 
-1. 需要 Windows 8 或更高版本。 使用服务器资源管理器中的附加调试器 (Python) 命令需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](http://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
+1. 需要 Windows 8 或更高版本。 使用服务器资源管理器中的附加调试器 (Python) 命令需要 [Azure SDK for .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) 或更高版本。
 
 1. 需要 Windows 8 或更高版本。
 

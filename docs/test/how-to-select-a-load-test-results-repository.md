@@ -17,20 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ae5d4dc14cd97a81a386d3879831fce1a030673a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 25db0c85f014aa92c103f4afbb0192c5cb57c659
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379574"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371116"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>如何：选择负载测试结果存储库
 
 并不局限于使用本地结果存储区。 通常，负载测试是在一组远程代理计算机上运行。 多个代理和一个控制器一起可生成比任何单台计算机更多的模拟负载。 有关详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
 代理或本地计算机生成的测试结果可保存到任何已创建负载测试结果存储区的 SQL 服务器中。 在任一情况下，都必须使用“管理测试控制器”窗口标识要存储负载测试结果的存储区。
-
-有关代理的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>标识负载测试数据的结果存储区
 

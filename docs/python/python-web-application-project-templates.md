@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 75f7a7d5a30fd3fb84bfd038c55b0731ae017ef1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638708"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029022"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -44,7 +44,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | **空白 Bottle Web 项目** | 在 app.py 中生成最小的应用，其中包括 `/` 的主页和 `/hello/<name>` 页，它使用非常短的内嵌页模板回显 `<name>`。 |
 | **空白 Django Web 项目** | 使用核心 Django 网站结构生成 Django 项目，但没有 Django 应用。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 1](learn-django-in-visual-studio-step-01-project-and-solution.md)。 |
-| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
+| **空白 Flask Web 项目** | 生成包含 `/` 的单个“Hello World!”页的最小应用。 此应用类似于按[快速入门：使用 Visual Studio 创建第一个 Python Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)中的详细步骤操作的结果。 另请参阅[学习 Flask 步骤 1](learn-flask-visual-studio-step-01-project-solution.md)。
 
 ### <a name="web-group"></a>Web 组
 

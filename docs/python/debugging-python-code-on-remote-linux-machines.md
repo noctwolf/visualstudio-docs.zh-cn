@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c17ca59959107d25b7752297ec209f647886362d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3462e3e46a551b9f9245dc2cb5bf25bbcde768a5
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774682"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549306"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 
@@ -99,7 +99,7 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 1. 在“连接目标”字段（旧版本中为“限定符”）中，输入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是 Python 代码中传递给 `enable_attach` 的字符串，`<ip_address>` 是远程计算机（可以是显式地址或名称，如 myvm.cloudapp.net），而 `:5678` 是远程调试的端口号。
 
     > [!Warning]
-    > 如果要连接公共 Internet，应改用 `tcps`，并按照以下说明[使用 SSL 保护调试器连接](#securing-the-debugger-connection-with-ssl)。
+    > 如果要连接公共 Internet，应改用 `tcps`，并按照以下说明[使用 SSL 保护调试器连接](#secure-the-debugger-connection-with-ssl)。
 
 1. 按 Enter 填充该计算机上可用 ptvsd 进程的列表：
 
@@ -148,7 +148,7 @@ Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应�
 
     出现提示时，如果是 openssl 提示，请使用主机名或 IP 地址（任选一个用于连接）作为“公用名”。
 
-    （有关详细信息，请参阅 Python `ssl` 模块文档中的[自签名证书](http://docs.python.org/3/library/ssl.html#self-signed-certificates)。 请注意，这些文档中的命令仅生成单个合并文件。）
+    （有关详细信息，请参阅 Python `ssl` 模块文档中的[自签名证书](https://docs.python.org/3/library/ssl.html#self-signed-certificates)。 请注意，这些文档中的命令仅生成单个合并文件。）
 
 1. 在代码中，修改对 `enable_attach` 的调用，使其包含 `certfile` 和 `keyfile` 参数（这些参数使用文件名作为值，其含义与标准 `ssl.wrap_socket` Python 函数中的含义相同）：
 

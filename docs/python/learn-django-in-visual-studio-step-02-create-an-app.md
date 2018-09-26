@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1458fc07bf90257ae2cc6f404d5d0661df01c18
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: 7e9f5506efb74735975bdddc6f1f5c483c1e5dea
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995958"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45547927"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -125,7 +125,7 @@ class HelloDjangoAppConfig(AppConfig):
 
 如果在正则表达式中不使用尾随 $，比如 `^home`，那么 URL 模式匹配任何以“home”开头的 URL，如“home”、“homework”、“homestead”和“home192837”。
 
-若要尝试使用不同的正则表达式，请尝试使用联机工具，如 [pythex.org](http://www.pythex.org) 中的 [regex101.com](https://regex101.com)。
+若要尝试使用不同的正则表达式，请尝试使用联机工具，如 [pythex.org](https://www.pythex.org) 中的 [regex101.com](https://regex101.com)。
 
 ## <a name="step-2-3-render-a-view-using-html"></a>步骤 2-3：使用 HTML 呈现视图
 

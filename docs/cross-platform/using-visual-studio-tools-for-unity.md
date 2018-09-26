@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 574f6bb6a48df9df600c4c8be3bd97ffbb9d0382
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9dc5de54ee4c983fd422437af170c065ac72413c
+ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283322"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46496059"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -94,14 +94,6 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 - 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷方式：Alt+Shift+E
 
      ![查看 Unity 项目资源管理器窗口。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
-
-## <a name="unity-error-list"></a>Unity 错误列表
-
- 连接到 Unity 实例时，可以从 Visual Studio 内部的 Unity 控制台查看消息。 这包括 Unity 中的错误和警告。 消息将显示在 Visual Studio 的“错误列表”窗口中；Unity 中的错误消息将显示在“错误”选项卡上，警告消息将显示在“警告”选项卡，而其他消息（比如通过使用 Debug.Log Unity API 发送的消息）将显示在“消息”选项卡上。
-
- 为了查看消息，Unity 项目必须连接到 Visual Studio，如 [Unity 调试](#unity-debugging)部分所述。
-
- 如果不想在 Visual Studio 的“错误列表”窗口中看到 Unity 中的错误、警告和消息，则可在“配置”菜单中禁用它们。
 
 ## <a name="unity-debugging"></a>Unity 调试
 
