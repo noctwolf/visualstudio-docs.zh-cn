@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1bc542665e69a3997b8633ca5e351875f06848
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: cd9f04b616ee7551f04a8c0b260eb69995943a8b
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513169"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46371155"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -761,12 +761,6 @@ ms.locfileid: "39513169"
 |Team Foundation 上下文菜单.命令.团队资源管理器向前定位|**Alt+向右键**|
 |Team Foundation 上下文菜单.我的工作页正在进行.Tfs 上下文我的工作页创建副本 WI|**Shift+Alt+C**|
 |Team Foundation 上下文菜单.我的工作页正在进行.Tfs 上下文我的工作页新建链接 WI|**Shift+Alt+L**|
-|视图.刷新|**F5**|
-
-##  <a name="team-foundation-build-detail-editor"></a>Team Foundation Build 详细信息编辑器
-
-|命令|键盘快捷键|
-|-------------|-----------------------|
 |视图.刷新|**F5**|
 
 ##  <a name="test-explorer"></a>测试资源管理器

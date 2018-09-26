@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e010dd429c0ef182d9e6dc5ed205e04624c1f367
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9865e8e6faaac7b0c3af28532223ea2d5c9f7c01
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283413"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029061"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
@@ -36,7 +36,7 @@ Flask 被称为“微”框架，因为它不直接提供窗体验证、数据�
 在这些步骤的过程中，将创建一个包含三个单独项目的 Visual Studio 解决方案。 使用 Visual Studio 中包含的不同 Flask 项目模板创建项目。 通过将项目保留在同一解决方案中，可以轻松地在不同文件之间来回切换以进行比较。
 
 > [!Note]
-> 本教程与 [Flask 快速入门](../ide/quickstart-python.md?context=visualstudio/python/default)的区别在于，可以更详细地了解 Flask 并了解如何使用不同的 Flask 项目模板（为自己的项目提供更全面的起点）。 例如，创建项目时，项目模板自动安装 Flask 包，而无需按快速入门所示手动安装包。
+> 本教程与 [Flask 快速入门](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的区别在于，可以更详细地了解 Flask 并了解如何使用不同的 Flask 项目模板（为自己的项目提供更全面的起点）。 例如，创建项目时，项目模板自动安装 Flask 包，而无需按快速入门所示手动安装包。
 
 ## <a name="prerequisites"></a>系统必备
 

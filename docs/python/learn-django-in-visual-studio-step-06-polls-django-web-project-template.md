@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 433ec0e4df5108dfcf0bae1c8c62af5b0536bc5e
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281060"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548226"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
@@ -118,7 +118,7 @@ class Choice(models.Model):
 
 字段类型的完整列表包括 `CharField`（受限文本）、`TextField`（不受限制的文本）、`EmailField`、`URLField`、`DateTimeField`、`IntegerField`、`DecimalField`、`BooleanField`、`ForeignKey`，和 `ManyToMany`。 每个字段都采用一些属性，如 `max_length`。 `blank=True` 属性表示字段是可选的；`null=true` 表示值是可选的。 此外还有一个 `choices` 属性，它限制数据值/显示值元组数组中值的值。 （请参阅 Django 文档中的[模型字段引用](https://docs.djangoproject.com/en/2.0/ref/models/fields/)。）
 
-可使用像 [SQLite 浏览器](http://sqlitebrowser.org/)这样的工具检查项目中的 db.sqlite3 文件，从而准确地确认数据库中存储的内容。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
+可使用像 [SQLite 浏览器](https://sqlitebrowser.org/)这样的工具检查项目中的 db.sqlite3 文件，从而准确地确认数据库中存储的内容。 在数据库中，会看到“选择”模型中像 `poll` 这样的外键字段存储为 `poll_id`；Django 会自动处理映射。
 
 一般来说，在 Django 中使用数据库意味着可以以独占方式通过模型进行工作，使 Django 可以代表你管理基础数据库。
 
@@ -154,7 +154,7 @@ def seed(request):
     return HttpResponseRedirect(reverse('app:home'))
 ```
 
-要想看到效果，首先运行应用，查看是否尚不存在投票。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](http://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
+要想看到效果，首先运行应用，查看是否尚不存在投票。 然后访问“/seed”URL，当应用返回到主页时，应会看到投票已变得可用。 同样，可以随时使用 [SQLite 浏览器](https://sqlitebrowser.org/)之类的工具检查原始 db.sqlite3 文件。
 
 ![使用接受种子设定的数据库的投票 Django Web 项目应用](media/django/step06-app-with-seeded-database.png)
 
