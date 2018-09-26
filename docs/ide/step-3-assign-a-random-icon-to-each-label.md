@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8aac613f4fe8a93ebd31127e26bcd92218b6300
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 933f31d6cbfe34846b0331d76abdc39cdf261d29
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748239"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775846"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 如果图标显示在每个游戏的相同单元格中，就不是很有挑战性。 为避免这种情况，请使用 `AssignIconsToSquares()` 方法将图标随机分配给 Label 控件。
@@ -49,7 +49,7 @@ ms.locfileid: "34748239"
 
      请记住，如果你不确定部分代码的行为，可将鼠标指针定位在代码元素的上方，并查看生成的工具提示。 你还可以在使用 Visual Studio 调试器运行程序时，逐步调试每行代码。 有关详细信息，请参阅[如何：在 Visual Studio 中使用调试器逐步调试？](http://msdn.microsoft.com/vstudio/ee672313.aspx)或[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
-3.  若要用图标填充游戏板，你需要在程序启动时调用 `AssignIconsToSquares()` 方法。 如果使用 Visual C#，则在 *Form1***构造函数中 `InitializeComponent()` 方法调用下方直接添加一条语句，这样窗体便可以调用新方法以在显示之前对自身进行设置。 创建新对象（例如类或结构）时，将调用构造函数。 有关详细信息，请参阅 Visual Basic 中的[构造函数（C# 编程指南）](http://msdn.microsoft.com/library/ace5hbzh.aspx)或[使用构造函数和析构函数](http://msdn.microsoft.com/library/2z08e49e.aspx)。
+3.  若要用图标填充游戏板，你需要在程序启动时调用 `AssignIconsToSquares()` 方法。 如果使用 Visual C#，则在 Form1 构造函数中 `InitializeComponent()` 方法调用下方直接添加一条语句，这样窗体便可以调用新方法以在显示之前对自身进行设置。 创建新对象（例如类或结构）时，将调用构造函数。 有关详细信息，请参阅 Visual Basic 中的[构造函数（C# 编程指南）](http://msdn.microsoft.com/library/ace5hbzh.aspx)或[使用构造函数和析构函数](http://msdn.microsoft.com/library/2z08e49e.aspx)。
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../ide/codesnippet/CSharp/step-3-assign-a-random-icon-to-each-label_4.cs)]
 

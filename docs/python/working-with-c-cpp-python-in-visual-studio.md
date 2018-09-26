@@ -1,7 +1,7 @@
 ---
 title: 使用 C++ 和 Python
-description: 使用 Visual Studio 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
-ms.date: 06/27/2018
+description: 使用 Visual Studio、CPython 和 PyBind11 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4de603bd1daec4d50f3f57eaa28cdff2316e8e8c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
+ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626612"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43995971"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -28,7 +28,12 @@ ms.locfileid: "42626612"
 
 本文介绍了如何为 CPython 生成 C++ 扩展模块，该模块计算双曲正切并从 Python 代码中调用它。 首先使用 Python 实现此例程，以演示使用 C++ 实现此相同例程时可获得的相对性能提升。
 
-此处采用的方法适用于 [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展。 本文末尾的[替代方法](#alternative-approaches)下将此方法与其他方法进行了比较。
+本文还演示了使 C++ 可用于 Python 的两种方法：
+
+- [Python 文档](https://docs.python.org/3/c-api/)中所述的标准 CPython 扩展
+- [PyBind11](https://github.com/pybind/pybind11)，由于其简单易用，推荐用于 C++ 11。
+
+本文末尾的[替代方法](#alternative-approaches)下可找到这些方法与其他方法的比较。
 
 要获取本演练的完整示例，请访问 [python-samples-vs-cpp-extension](https://github.com/Microsoft/python-sample-vs-cpp-extension) (GitHub)。
 
@@ -72,15 +77,6 @@ ms.locfileid: "42626612"
         tanh_x = sinh(x) / cosh(x)
         return tanh_x
 
-    def sequence_tanh(data):
-        '''Applies the hyperbolic tangent function to map all values in
-        the sequence to a value between -1.0 and 1.0.
-        '''
-        result = []
-        for x in data:
-            result.append(tanh(x))
-        return result
-
     def test(fn, name):
         start = perf_counter()
         result = fn(DATA)
@@ -93,18 +89,21 @@ ms.locfileid: "42626612"
     if __name__ == "__main__":
         print('Running benchmarks with COUNT = {}'.format(COUNT))
 
-        test(sequence_tanh, 'sequence_tanh')
-
-        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
+        test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
     ```
 
-1. 使用“调试” > “启动而不调试”(Ctrl+F5) 运行程序以查看结果。 用户可调整 `COUNT` 变量，更改基准测试的运行时长。 对于本演练，请将计数设置为让每个基准测试运行约 2 秒。
+1. 使用“调试” > “启动而不调试”(Ctrl+F5) 运行程序以查看结果。 用户可调整 `COUNT` 变量，更改基准检验的运行时长。 对于本演练，请将计数设置为让基准检验运行约 2 秒。
 
-## <a name="create-the-core-c-project"></a>创建核心 C++ 项目
+> [!TIP]
+> 运行基准检验时，请始终使用“调试” > “启动而不调试”，从而避免在 Visual Studio 调试器中运行代码时产生开销。
+
+## <a name="create-the-core-c-projects"></a>创建核心 C++ 项目
+
+按照本节中的说明，创建名为“superfastcode”和“superfastcode2”的两个完全相同的 C++ 项目。 之后，在每个项目中使用不同的方法将 C++ 代码公开到 Python。
 
 1. 在“解决方案资源管理器”中右键单击此解决方案并选择“添加” > “新建项目”。 一个 Visual Studio 解决方案可同时包含 Python 和 C++ 项目（这是使用 Visual Studio for Python 的优势之一）。
 
-1. 搜索“C++”，选择“空项目”，指定名称（本文使用“superfastcode”），并选择“确定”。
+1. 搜索“C++”，选择“空项目”，指定名称“superfastcode”（第二个项目则指定名称“superfastcode2”），然后选择“确定”。
 
     > [!Tip]
     > 如果在 Visual Studio 2017 中安装了 Python 本机开发工具，则可改为从 Python 扩展模块模板开始，其中有许多现成的以下所述的内容。 但是，对于本演练，从空项目开始可以逐步演示如何生成扩展模块。 了解该过程后，在编写自己的扩展时，使用模板可帮助你节省时间。
@@ -163,15 +162,21 @@ ms.locfileid: "42626612"
 
 1. 再次生成 C++ 项目以确认代码正确。
 
-## <a name="convert-the-c-project-to-an-extension-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
+1. 如果尚未执行此操作，请重复上述步骤，再创建一个内容相同的项目，且名为“superfastcode2”。
+
+## <a name="convert-the-c-projects-to-extensions-for-python"></a>将 C++ 项目转换为适用于 Python 的扩展
 
 若要使 C++ DLL 成为适用于 Python 的扩展，首先应修改导出的方法以与 Python 类型交互。 然后，添加一个可导出模块的函数以及该模块的方法的定义。
+
+以下各节介绍如何使用 CPython 扩展和 PyBind11 执行这些步骤。
+
+### <a name="cpython-extensions"></a>CPython 扩展
 
 要了解本节介绍的有关 Python 3.x 的背景信息，请在 python.org 上参阅 [Python/C API Reference Manual](https://docs.python.org/3/c-api/index.html)（Python/C API 参考手册），并着重了解 [Module Objects](https://docs.python.org/3/c-api/module.html)（模块对象）（请不要忘记从右上角的下拉列表中选择你的 Python 版本，以便查看正确的文档）。
 
 如果使用的是 Python 2.7，请改为参阅 python.org 上的 [Extending Python 2.7 with C or C++](https://docs.python.org/2.7/extending/extending.html)（使用 C 或 C++ 扩展 Python 2.7）和 [Porting Extension Modules to Python 3](https://docs.python.org/2.7/howto/cporting.html)（将扩展模块移植到 Python 3）。
 
-1. 在 C++ 文件的顶部，添加 Python.h：
+1. 在 module.cpp 的顶部，包含 Python.h：
 
     ```cpp
     #include <Python.h>
@@ -220,20 +225,59 @@ ms.locfileid: "42626612"
     }
     ```
 
-1. 将目标配置设置为“发布”并再次生成 C++ 项目来验证代码。 如果遇到错误，请检查以下事例：
-    - 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++” > “常规” > “附加包含目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
-    - 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
-    - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。 例如，如果你将 C++ 项目的目标定为 x64，但是 Python 安装是 x86，则将 C++ 项目更改为目标 x86。
+1. 将目标配置设置为“发布”并再次生成 C++ 项目来验证代码。 如果遇到错误，请参阅下面的[疑难解答](#troubleshooting)一节。
+
+### <a name="pybind11"></a>PyBind11
+
+如果已完成上一节中的步骤，你肯定已注意到，你使用了大量样本代码来为 C++ 代码创建必要的模块结构。 PyBind11 通过 C++ 头文件中的宏简化了进程，这些宏通过更少的代码实现了相同的结果。 有关本节所示内容的背景信息，请参阅[PyBind11 基础知识](https://github.com/pybind/pybind11/blob/master/docs/basics.rst)。
+
+1. 使用 pip 安装 PyBind11：`pip install pybind11` 或 `py -m pip install pybind11`。
+
+1. 在 module.cpp 的顶部，包含 pybind11.h：
+
+    ```cpp
+    #include <pybind11/pybind11.h>
+    ```
+
+1. 在 module.cpp 的底部，使用 `PYBIND11_MODULE` 宏来定义 C++ 函数的入口点：
+
+    ```cpp
+    namespace py = pybind11;
+
+    PYBIND11_MODULE(superfastcode2, m) {
+        m.def("fast_tanh2", &tanh_impl, R"pbdoc(
+            Compute a hyperbolic tangent of a single argument expressed in radians.
+        )pbdoc");
+
+    #ifdef VERSION_INFO
+        m.attr("__version__") = VERSION_INFO;
+    #else
+        m.attr("__version__") = "dev";
+    #endif
+    }
+    ```
+
+1. 将目标配置设置为“发布”并生成 C++ 项目来验证代码。 如果遇到错误，请参阅下一节有关疑难解答的内容。
+
+### <a name="troubleshooting"></a>疑难解答
+
+C++ 模块可能无法编译的原因如下：
+
+- 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++” > “常规” > “附加包含目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
+
+- 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
+
+- 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。 例如，如果你将 C++ 项目的目标定为 x64，但是 Python 安装是 x86，则将 C++ 项目更改为目标 x86。
 
 ## <a name="test-the-code-and-compare-the-results"></a>测试代码和比较结果
 
-将 DLL 结构化为 Python 扩展后，便可从 Python 项目引用该扩展，导入模块，并使用其方法。
+将 DLL 结构化为 Python 扩展后，便可从 Python 项目引用它们，导入模块，并使用其方法。
 
 ### <a name="make-the-dll-available-to-python"></a>使 DLL 可供 Python 使用
 
 可通过两种方法使 DLL 可供 Python 使用。
 
-如果 Python 项目和 C++ 项目在相同的解决方案中，则使用第一种方法。 转到“解决方案资源管理器”，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，依次选择“项目”选项卡、“superfastcode”项目（或任何使用的名称），然后选择“确定”。
+如果 Python 项目和 C++ 项目在相同的解决方案中，则使用第一种方法。 转到“解决方案资源管理器”，右键单击 Python 项目中的“引用”节点，然后选择“添加引用”。 在随即出现的对话框中，选择“项目”选项卡，同时选择“superfastcode”和“superfastcode2”项目，然后选择“确定”。
 
 ![添加对 superfastcode 项目的引用](media/cpp-add-reference.png)
 
@@ -241,7 +285,9 @@ ms.locfileid: "42626612"
 
 1. 如果使用的是 Visual Studio 2017，请运行 Visual Studio 安装程序，选择“修改”，然后选择“各个组件” > “编译器、生成工具和运行时” > “Visual C++ 2015.3 v140 工具集”。 此步骤是必需的，因为 Python（适用于 Windows）本身是使用 Visual Studio 2015（版本 14.0）生成的，并期望通过此处所述的方法生成扩展时能够使用这些工具。 （请注意，可能需要安装 32 位版本的 Python，并将 DLL 定向到 Win32 而不是 x64。）
 
-1. 右键单击 C++ 项目，然后选择“添加” > “新建项”，在项目中创建名为 setup.py 的文件。 然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 .py 扩展命名文件可让 Visual Studio 将其识别为 Python）。 当编辑器中出现该文件时，将以下代码粘贴到其中：
+1. 右键单击 C++ 项目，然后选择“添加” > “新建项”，在项目中创建名为 setup.py 的文件。 然后选择“C++ 文件 (.cpp)”并命名为 `setup.py`，再选择“确定”（尽管使用了 C++ 文件模板，但使用 .py 扩展命名文件可让 Visual Studio 将其识别为 Python）。 编辑器中出现该文件时，以适合扩展方法的形式将以下代码粘贴到其中：
+
+    CPython 扩展（superfastcode 项目）：
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -256,41 +302,78 @@ ms.locfileid: "42626612"
 
     请参阅 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html)（生成 C 和 C++ 扩展）(python.org)，获取此脚本相关文档。
 
+    PyBind11（superfastcode2 项目）：
+
+    ```python
+    import os, sys
+
+    from distutils.core import setup, Extension
+    from distutils import sysconfig
+
+    cpp_args = ['-std=c++11', '-stdlib=libc++', '-mmacosx-version-min=10.7']
+
+    sfc_module = Extension(
+        'superfastcode2', sources = ['module.cpp'],
+        include_dirs=['pybind11/include'],
+        language='c++',
+        extra_compile_args = cpp_args,
+        )
+
+    setup(
+        name = 'superfastcode2',
+        version = '1.0',    
+        description = 'Python package with superfastcode2 C++ extension (PyBind11)',
+        ext_modules = [sfc_module],
+    )
+    ```
+
 1. setup.py 代码指示 Python 通过命令行使用 Visual Studio 2015 C++ 工具集生成扩展。 打开提升的命令提示符，导航到包含 C++ 项目（即，包含 setup.py 的文件夹），然后输入以下命令：
 
     ```command
     pip install .
     ```
 
+    或：
+
+    ```command
+    py -m pip install .
+    ```
+
 ### <a name="call-the-dll-from-python"></a>从 Python 调用 DLL
 
-完成上述任一方法后，即可从 Python 代码调用 `fast_tanh` 函数并将其性能与 Python 实现比较：
+如上一节所述，使 DLL 可用于 Python 之后，现在可以从 Python 代码中调用 `superfastcode.fast_tanh` 和 `superfastcode2.fast_tanh2` 函数，并将它们的性能与 Python 实现进行比较：
 
-1. 在 .py 文件中添加以下行，调用从 DLL 中导出的 `fast_tanh` 方法并显示其输出。
+1. 在 .py 文件中添加以下行，调用从 DLL 中导出的方法并显示其输出：
 
     ```python
     from superfastcode import fast_tanh
-    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d]')
+    test(lambda d: [fast_tanh(x) for x in d], '[fast_tanh(x) for x in d] (CPython C++ extension)')
+
+    from superfastcode2 import fast_tanh2
+    test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (PyBind11 C++ extension)')
     ```
 
-1. 运行 Python 程序（“调试” > “启动而不调试”或按 Ctrl+F5），观察 C++ 例程的运行速度比 Python 实现快 5 到 20 倍。 典型输出形式如下：
+1. 运行 Python 程序（“调试” > “启动而不调试”或按 Ctrl+F5），观察到 C++ 例程的运行速度约比 Python 实现快 5 到 20 倍。 典型输出形式如下：
 
     ```output
     Running benchmarks with COUNT = 500000
-    sequence_tanh took 1.542 seconds
+    [tanh(x) for x in d] (Python implementation) took 0.758 seconds
 
-    [tanh(x) for x in d] took 1.087 seconds
+    [fast_tanh(x) for x in d] (CPython C++ extension) took 0.076 seconds
 
-    [fast_tanh(x) for x in d] took 0.158 seconds
+    [fast_tanh2(x) for x in d] (PyBind11 C++ extension) took 0.204 seconds
     ```
 
     如果已禁用“启动而不调试”命令，请右键单击“解决方案资源管理器”中的 Python 项目，选择“设为启动项目”。
 
 1. 尝试增加 `COUNT` 变量，让差异变得更明显。 C++ 模块调试版本的运行速度慢于发布版本的运行速度，因为调试版本优化程度较低，并包含各种错误检查。 请随意在这些配置之间切换，以便比较。
 
+> [!NOTE]
+> 在输出中，可以看到尽管 PyBind11 扩展仍然明显快于直接 Python 实现，但其速度不如 CPython 扩展。 这种差异是由于 PyBind11 引入了少量的单调用开销，使其 C++ 接口变得更加简单。 实际上，这种单调用差异可以忽略不计：因为测试代码调用扩展函数 500,000 次，所以此处显示的结果大大放大了开销！ 通常，C++ 函数比此处使用的普通 `fast_tanh[2]` 方法执行的工作更多，在这种情况下，开销并不重要。 但是，如果实现的方法每秒可能会被调用数千次，则使用 CPython 方法可以获得比 PyBind11 更佳的性能。
+
 ## <a name="debug-the-c-code"></a>调试 C++ 代码
 
-Visual Studio 支持一起调试 Python 和 C++ 代码。
+Visual Studio 支持一起调试 Python 和 C++ 代码。 本节演示了使用 superfastcode 项目的整个过程；superfastcode2 项目的步骤与此相同。
 
 1. 在“解决方案资源管理器”中，右键单击 Python 项目，依次选择“属性”、“调试”选项卡，然后选择“调试” > “启用本机代码调试”选项。
 
@@ -313,12 +396,12 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。
 
 ## <a name="alternative-approaches"></a>替代方法
 
-下表描述了创建 Python 扩展的各种方法。 本文已经讨论了 CPython 的第一项。
+下表描述了创建 Python 扩展的各种方法。 CPython 和 PyBind11 的前两项已在本文中讨论过。
 
 | 方法 | 年份 | 代表用户 | 优点 | 缺点 |
 | --- | --- | --- | --- | --- |
 | 适用于 CPython 的 C/C++ 扩展模块 | 1991 | 标准库 | [丰富的文档和教程](https://docs.python.org/3/c-api/)。 完全控制。 | 编译、可移植性、引用管理。 扎实的 C 知识。 |
-| [pybind11](https://github.com/pybind/pybind11)（推荐用于 C++） | 2015 |  | 用于创建现有 C++ 代码的 Python 绑定的轻量型纯标头库。 依赖项少。 兼容 PyPy。 | 较新，不够成熟。 需使用大量 C++11 功能。 支持的编译器较少（包含 Visual Studio）。 |
+| [PyBind11](https://github.com/pybind/pybind11)（推荐用于 C++） | 2015 |  | 用于创建现有 C++ 代码的 Python 绑定的轻量型纯标头库。 依赖项少。 兼容 PyPy。 | 较新，不够成熟。 需使用大量 C++11 功能。 支持的编译器较少（包含 Visual Studio）。 |
 | Cython（推荐用于 C） | 2007 | [gevent](http://www.gevent.org/)、[kivy](https://kivy.org/) | 类似于 Python。 非常成熟。 高性能。 | 编译、新语法、新工具链。 |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 几乎可与任何 C++ 编译器一起使用。 | 库套件较大且复杂；包含旧编译器的许多解决方法。 |
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |

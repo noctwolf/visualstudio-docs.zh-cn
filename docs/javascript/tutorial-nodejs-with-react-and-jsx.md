@@ -2,7 +2,7 @@
 title: 创建 Node.js 和 React 应用
 description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: mvc
-ms.date: 05/23/2018
+ms.date: 09/06/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f7bb4dfea8e23941e6d9ad29b9760c9e7c85fc5f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567137"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124997"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -31,6 +31,30 @@ ms.locfileid: "39567137"
 > * 将 React 代码添加到应用
 > * 转译 JSX
 > * 附加调试器
+
+## <a name="before-you-begin"></a>在开始之前
+
+下面是一个快速 FAQ，介绍一些关键概念。
+
+### <a name="what-is-nodejs"></a>什么是 Node.js？
+
+Node.js 是执行 JavaScript 服务器端的服务器端 JavaScript 运行时环境。
+
+### <a name="what-is-npm"></a>什么是 npm？
+
+Npm 是 Node.js 的默认包管理器。 包管理器使程序员更容易发布和共享 Node.js 库的源代码，并且可简化库的安装、更新和卸载。
+
+### <a name="what-is-react"></a>什么是 React？
+
+React 是用于创建 UI 的前端框架。
+
+### <a name="what-is-jsx"></a>什么是 JSX？
+
+JSX 是一个 JavaScript 语法扩展，通常用于 React 以描述 UI 元素。 JSX 代码必须转译为普通 JavaScript 方可在浏览器中运行。
+
+### <a name="what-is-webpack"></a>什么是 webpack？
+
+webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还可以转换或打包其他资源和资产。 它通常用于指定编译器（如 Babel 或 TypeScript），以将 JSX 或 TypeScript 代码转译为普通 JavaScript。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -62,13 +86,15 @@ ms.locfileid: "39567137"
 
     ![解决方案资源管理器中的 Node.js 项目](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    * 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
+    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
-    * 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
+    (2) 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。
 
-    * Npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+    (3) Npm 节点显示任何已安装的 npm 包。 可右键单击 npm 节点以使用对话框搜索并安装 npm 包，也可使用 package.json 中的设置来安装和更新包，并右键单击 npm 节点中的选项。
 
-    * 项目文件（例如 server.js）显示在项目节点下。 server.js 是项目启动文件。
+    (4) package.json 是 npm 用于管理本地安装包的包依赖关系和包版本的文件。 有关此文件的详细信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)
+
+    (5) 项目文件（例如 server.js）显示在项目节点下。 server.js 是项目启动文件，因此它以粗体形式显示。 可设置启动文件，方法是右键单击项目中的文件并选择“设置为 Node.js 启动文件”。
 
 ## <a name="add-npm-packages"></a>添加 npm 包
 
@@ -95,22 +121,22 @@ ms.locfileid: "39567137"
 
     项目的 package.json 文件中的信息更新为新的包信息（包括包版本）。
 
-1. 将以下代码复制到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 为执行此操作，使用此代码替换 `dependencies` 部分：
+1. 将以下代码复制到 package.json，而不用使用 UI 一个一个搜索并添加其余的包。 为此，请使用以下代码添加 `dependencies` 部分：
 
-    ```js
+    ```json
     "dependencies": {
-      "express": "4.16.2",
-      "path": "0.12.7",
-      "react": "16.4.0",
-      "react-dom": "16.4.0",
-      "ts-loader": "4.0.1",
-      "typescript": "2.7.2",
-      "webpack": "4.1.1",
-      "webpack-cli": "2.0.11"
+      "express": "~4.16.3",
+      "path": "~0.12.7",
+      "react": "~16.4.2",
+      "react-dom": "~16.4.2",
+      "ts-loader": "~4.5.0",
+      "typescript": "~2.9.2",
+      "webpack": "~4.17.1",
+      "webpack-cli": "~2.1.5"
     }
     ```
 
-    如果你的空白模板版本中没有 `dependencies` 部分，则必须添加它而不是替换现有部分。
+    如果空白模板版本中已存在 `dependencies` 部分，请将其替换为前面的 JSON 代码。 有关此文件用法的详细信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)
 
 1. 右键单击项目中的“npm”节点，然后选择“更新 npm 包”。
 
@@ -270,7 +296,7 @@ ms.locfileid: "39567137"
 
     ![运行 webpack](../javascript/media/tutorial-nodejs-react-run-webpack.png)
 
-    如果看到错误而不是前面的输出，则必须在应用开始运行之前解决这些错误。 如果 npm 包版本不是本教程中所示的版本，则可能引发错误。 修复错误的一种方法是使用前面步骤中使用的版本。 此外，如果所使用的一个或多个包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。
+    如果看到错误而不是前面的输出，则必须在应用开始运行之前解决这些错误。 如果 npm 包版本不是本教程中所示的版本，则可能引发错误。 修复错误的一种方法是使用前面步骤中使用的版本。 此外，如果所使用的一个或多个包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。 有关使用 package.json 控制 npm 包版本的信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)。
 
 1. 在解决方案资源管理器中，右键单击项目节点并选择“添加” > “现有文件夹”，然后依次选择 dist 文件夹和“选择文件夹”。
 

@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ff8d28a0fa6b8889dcc90632126f8b4dd75b70dc
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
+ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132212"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44124913"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://visualstudio.microsoft.com)免费安装。
@@ -85,7 +85,7 @@ Visual Studio 管理项目中的单个应用程序的文件。 该项目包括�
 
     (3) Npm 节点显示任何已安装的 npm 包。 可右键单击 npm 节点以使用对话框搜索并安装 npm 包，也可使用 package.json 中的设置来安装和更新包，并右键单击 npm 节点中的选项。
 
-    (4) package.json 是 npm 用于管理本地安装包的包依赖关系和包版本的文件。
+    (4) package.json 是 npm 用于管理本地安装包的包依赖关系和包版本的文件。 有关此文件的详细信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)
 
     (5) 项目文件（例如 app.js）显示在项目节点下。 app.js 是项目启动文件，因此它以粗体形式显示。 可设置启动文件，方法是右键单击项目中的文件并选择“设置为 Node.js 启动文件”。
 

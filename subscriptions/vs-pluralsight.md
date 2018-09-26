@@ -9,12 +9,12 @@ description: 了解 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 5f1582023032dc3581090937d18feddf428033ca
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3b90ac75cf92ac9adfef5023b3677b8044d44350
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289366"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283140"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -80,7 +80,7 @@ ms.locfileid: "43289366"
 | MSDN 平台（标准）                                          | VL、零售                                              | 3 个月                                                           |否<sup>2</sup>         |
 | Visual Studio Dev Essentials | NA  | 3 个月 |否|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                  |NA|
-| Visual Studio Enterprise (NFR<sup>1</sup> ) | Program                                       | 不可用                                  |NA|
+| Visual Studio Enterprise (NFR<sup>1</sup> ) | 计划                                       | 不可用                                  |NA|
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
 
 <sup>2</sup> *Pluralsight 权益绑定到个人，仅限使用一次。订阅者使用该权益后便无法再重置。有关详细信息，请参阅下列常见问题解答。Pluralsight 订阅过期后，你可能有资格在三个研究区域之一访问 50 个选定的 Pluralsight 课程，为期 12 个月。*
@@ -113,4 +113,4 @@ ms.locfileid: "43289366"
 ## <a name="support-resources"></a>支持资源
 -  [Pluralsight 帮助中心](https://help.pluralsight.com/help)可以在参加 Pluralsight 课程或使用 Pluralsight 网站方面提供帮助。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

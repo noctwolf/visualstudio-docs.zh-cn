@@ -11,11 +11,12 @@ ms.reviewer: karthiknadig
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: ec988b9739dfbec60fe19b41145ae0de1b3d3f77
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: fa985b88e5857d12324f25a5bd1581ca3f9e211e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35667920"
 ---
 # <a name="remote-r-service-for-linux"></a>适用于 Linux 的远程 R 服务
 
@@ -23,14 +24,14 @@ ms.lasthandoff: 04/19/2018
 
 配置远程计算机后，以下步骤将针对 Visual Studio 的 R 工具 (RTVS) 连接到该服务：
 
-1. 选择“R 工具”>“窗口”>“工作区”，打开“工作区”窗口。
+1. 选择“R 工具” > “窗口” > “工作区”，打开“工作区”窗。
 1. 选择“添加连接”。
 1. 为连接命名并提供其 URL，例如 `https://localhost:5444`（适用于 Linux 的 Windows 子系统）或 `https://public-ip:5444`（Azure 容器）。 完成后，选择“保存”。
 1. 选择连接图标或双击连接项。
 1. 提供登录凭据。 用户名的前缀必须为 `<<unix>>\`，如 `<<unix>>\ruser1`（所有与Linux 远程计算机的连接都有此要求）。
 1. 如果在使用自签名证书，可能会看到一条警告。 该消息提供了更正警告的说明。
 
-## <a name="setting-up-remote-r-service"></a>设置远程 R 服务
+## <a name="set-up-remote-r-service"></a>设置远程 R 服务
 
 本节介绍下列选项：
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 04/19/2018
     sudo systemctl start rtvsd
     ```
 
-1. 配置 SSL 证书（生产所需）。 默认情况下，rtvs-daemon 使用 `ssl-cert` 包生成的 `ssl-cert-snakeoil.pem` 和 `ssl-cert-snakeoil.pem`。 安装期间，它们合并为 `ssl-cert-snakeoil.pfx`。 如果要用于生产目的，请使用管理员提供的 SSL 证书。 可通过在 `/etc/rtvs/rtvsd.config.json` 中提供 `.pfx` 文件和可选导入密码配置 SSL 证书。
+1. 配置 SSL 证书（生产所需）。 默认情况下，rtvs-daemon 使用 `ssl-cert` 包生成的 `ssl-cert-snakeoil.pem` 和 `ssl-cert-snakeoil.pem`。 安装期间，它们合并为 `ssl-cert-snakeoil.pfx`。 如果要用于生产目的，请使用管理员提供的 SSL 证书。 可通过在 /etc/rtvs/rtvsd.config.json 中提供 .pfx 文件和可选导入密码配置 SSL 证书。
 
 1. （可选）检查服务正在运行：
 
@@ -100,7 +101,7 @@ ms.lasthandoff: 04/19/2018
 
 #### <a name="configure-the-vm"></a>配置 VM
 
-1. 在 VM 的“网络”部分中，将 5444 添加为允许的入站端口。 要使用不同端口，请更改 RTVS 守护程序配置文件 (`/etc/rtvs/rtvsd.config.json`) 中的设置。
+1. 在 VM 的“网络”部分中，将 5444 添加为允许的入站端口。 要使用不同端口，请更改 RTVS 守护程序配置文件 (/etc/rtvs/rtvsd.config.json) 中的设置。
 1. （可选）设置 DNS 名称，也可以使用 IP 地址。
 1. 使用 SSH 客户端（如适用于 Windows 的 PuTTY）连接到 VM。
 1. 按照上文[物理 Ubuntu 计算机](#physical-ubuntu-computer)中的说明操作。
@@ -155,7 +156,7 @@ ms.lasthandoff: 04/19/2018
     docker run -p 5444:5444 myrimage rtvsd
     ```
 
-1. 要从 RTVS 连接到容器，请使用 `https://localhost:5444` 作为路径，并使用 `<<unix>>\ruser1` 作为用户名、`foobar` 作为密码。 如果容器在远程计算器上运行，则改用 `https://remote-host-name:5444` 作为路径。 可通过更新 `/etc/rtvs/rtvsd.config.json` 更改端口。
+1. 要从 RTVS 连接到容器，请使用 `https://localhost:5444` 作为路径，并使用 `<<unix>>\ruser1` 作为用户名、`foobar` 作为密码。 如果容器在远程计算器上运行，则改用 `https://remote-host-name:5444` 作为路径。 可以通过更新 /etc/rtvs/rtvsd.config.json 来更改端口。
 
 ### <a name="container-running-on-azure-container-instances"></a>在 Azure 容器实例上运行的容器
 

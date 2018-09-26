@@ -9,12 +9,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e51bd43d278eb681d08b785c2a7d0c9539ee23
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 0eaba2b81467c60e900aa70b633e15b81175ffc7
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179692"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283465"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 
@@ -59,9 +59,9 @@ Azure AD 支持 ASP.NET MVC web 应用程序中的最终用户单一登录或 We
 
 有关 ASP.NET 中不同种类的身份验证的详细信息，请参阅[在 Visual Studio 2013 中创建 ASP.NET Web 项目](http://www.asp.net/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth)（有关身份验证的信息仍适用于当前版本的 Visual Studio）。
 
-### <a name="access-your-visual-studio-team-services-account"></a>访问你的 Visual Studio Team Services 帐户
+### <a name="access-your-team-foundation-server-tfs-organization"></a>访问 Team Foundation Server (TFS) 组织
 
-在主菜单中，选择“团队” > “连接到 Team Foundation Server”打开“团队资源管理器”窗口。 单击“选择团队项目” ，在“选择 Team Foundation Server” 下的列表框中，你应该看到你的 Visual Studio Team Services 帐户的 URL。 当你选择 URL 时，无需重新输入你的凭据就可登录。
+在主菜单中，选择“团队” > “连接到 Team Foundation Server”打开“团队资源管理器”窗口。 单击“选择项目”，然后在“选择 Team Foundation Server”下的列表框中，应可看到 TFS 组织的 URL。 当你选择 URL 时，无需重新输入你的凭据就可登录。
 
 ## <a name="add-a-second-user-account-to-visual-studio"></a>向 Visual Studio 添加第二个用户帐户
 

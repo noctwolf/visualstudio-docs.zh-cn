@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa0f5b35ec5f5f3e68955d3768da9530000319
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: bbb950947b3f97a4f6d6e9c1461dd2023595058c
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34548656"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775028"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 
@@ -33,7 +33,7 @@ ms.locfileid: "34548656"
 
 **在远程计算机上收集 TIP 数据**
 
-若要在远程计算机上收集层交互数据，必须从 Visual Studio 计算机上的 %VSInstallDir%***\Team Tools\Performance Tools\Setups* 文件夹中将 vs_profiler_\<Platform>_\<Language>.exe 文件复制到远程计算机上并进行安装。 不能使用[远程调试](../debugger/remote-debugging.md)下载包中的分析工具。
+若要在远程计算机上收集层交互数据，必须从 Visual Studio 计算机的 %VSInstallDir%\Team Tools\Performance Tools\Setups 文件夹中将 vs_profiler\_\<Platform>\_\<Language>.exe 文件复制到远程计算机上并进行安装。 不能使用[远程调试](../debugger/remote-debugging.md)下载包中的分析工具。
 
 **TIP 报表**
 

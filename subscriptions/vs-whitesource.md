@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4c1039018eb745c7a04c6269b4b98e737461f7c
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289293"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279162"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -38,13 +38,15 @@ ms.locfileid: "43289293"
 
 4.  该页面的“激活帐户”部分将引导你完成以下四个步骤：
 
-    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 VSTS 的免费扩展](/vsts/marketplace/install-vsts-extension?view=vsts)。
+    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
 
-    如果使用的是 VSTS，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此处以使用 VSTS 为例。
+
+    如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此示例中，我们将使用 Azure DevOps Services。
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 接下来，选择想要使用的 VSTS 帐户，然后单击“确定”。  （如果尚未设置 VSTS，请访问[权益](https://my.visualstudio.com/benefits)页并激活 VSTS 权益。）
+    - 接下来，选择要使用的 Azure DevOps Services 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
+
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
@@ -52,7 +54,7 @@ ms.locfileid: "43289293"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  打开 Visual Studio Team Services (VSTS) 项目仪表板，单击“生成和发布”菜单，然后选择“WhiteSource Bolt”。
+5.  打开 Azure DevOps Services 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 
@@ -90,4 +92,4 @@ ms.locfileid: "43289293"
 
 -  需要 WhiteSource Bolt 帮助？  在 https://www.whitesourcesoftware.com/vse_whitesource_bolt/ 与 WhiteSource Bolt 代表实时聊天
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

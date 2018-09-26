@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 110e8477384e7f13da6a4f9ca0b81235f2f2446b
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627061"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320782"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -50,7 +50,7 @@ Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio
 
 - [“输出”窗口](../ide/reference/output-window.md)（底部中心）是 Visual Studio 发送通知（例如，调试和错误消息、编译器警告、发布状态消息等）的位置。 每个消息源都有自己的选项卡。
 
-- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/overview)），[团队资源管理器](/vsts/user-guide/work-team-explorer)（右下方）可让你跟踪工作项并与他人共享代码。
+- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)），[团队资源管理器](/azure/devops/user-guide/work-team-explorer?view=vsts)（右下方）可让你跟踪工作项并与他人共享代码。
 
 ### <a name="popular-productivity-features"></a>高效性方面的常用功能
 
@@ -273,6 +273,8 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 - [使用 Visual Studio 创建第一个 Python Web 应用](quickstart-python.md)
 
 - [使用 Visual Studio 创建第一个 C# Web 应用](quickstart-aspnet-core.md)
+
+- [使用 Visual Studio 创建第一个 F# Web 应用](quickstart-fsharp.md)
 
 - [使用 Visual Studio 创建第一个 Node.js 应用](quickstart-nodejs.md)
 

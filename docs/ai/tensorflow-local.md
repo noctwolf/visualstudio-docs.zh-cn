@@ -12,12 +12,12 @@ ms.service: multiple
 ms.technology: vs-ai-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: d8c8c5e06b5d7345a5234e4c4adb04283528f301
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 7f60fa346df7d2b9e89f3d6905e273d0191bdf3b
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379506"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281736"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本地训练 TensorFlow 模型
 
@@ -51,7 +51,7 @@ C:\>pip.exe install tensorflow
 
 ![打开解决方案](media\tensorflow-local\open-solution.png)
 
-- 在解决方案资源管理器中找到 MNIST 项目，右键单击并选择“设为启动项目”。
+- 在“解决方案资源管理器”中找到 MNIST 项目，右键单击并选择“设为启动项目”。
 
 - 单击“开始” 。
 

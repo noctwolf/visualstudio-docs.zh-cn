@@ -9,16 +9,16 @@ description: 了解有关所选 Visual Studio Enterprise 订阅中包含的 Mode
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20ba0a34c54bc0b9a54282bbc50bd1e9bd61c16b
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 5df418e14d3aa9a85ceaca341cdfeb4b203ee97c
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289455"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279019"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MODERNRequirements4TFS 权益
 
-所选的 Visual Studio 订阅包含 6 个月的 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 订阅。  MODERNRequirements 的 SmartOffice4TFS 通过基于 Microsoft Word 的报告以及快捷简化的富文本编写功能扩展了 TFS 或 Visual Studio Team Services 的功能。  ModernRequirements4TFS 提供工作项基线和 HTML5 模拟功能。
+所选的 Visual Studio 订阅包含 6 个月的 MODERNRequirements SmartOffice 4TFS 和 ModernRequirements4TFS 订阅。  MODERNRequirements SmartOffice4TFS 通过基于 Microsoft Word 的报告以及快捷简化的富文本编写功能扩展了 TFS 或 Azure DevOps Services 的功能。  ModernRequirements4TFS 提供工作项基线和 HTML5 模拟功能。
 
 
 ## <a name="activation-steps"></a>激活步骤
@@ -80,14 +80,14 @@ ms.locfileid: "43289455"
 
 20. 安装完成后，单击“关闭”。
 
-21. 下次启动 Microsoft Word 时，可以看到一个“Microsoft Office 自定义安装程序”对话框，需要确认是否希望安装 SmartWord4TFS 加载项。  单击“安装”。
+21. 下次启动 Microsoft Word 时，可以看到一个“Microsoft Office 自定义安装程序”对话框，需要确认是否希望安装 SmartWord4TFS 加载项。  单击“安装” 。
 
 22. Word 打开时，可以看到已添加的 SmartWord4TFS 选项卡。 单击该选项卡，显示 SmartWord4TFS 工具集。
 
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  不支持。  仅对新订阅者可用          |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  不是。  仅对新订阅者可用          |
 | Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 不可用                                                          |NA     |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                                          |NA     |
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                                          |NA     |
@@ -101,4 +101,4 @@ ms.locfileid: "43289455"
 ## <a name="support-resources"></a>支持资源
 -  需要与 ModernRequirements 产品相关的帮助？  请访问 https://www.modernrequirements.com/support-2/。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

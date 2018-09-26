@@ -1,7 +1,7 @@
 ---
 title: 教程 - 了解 Visual Studio 中的 Flask，步骤 5
 description: Visual Studio 项目上下文中 Flask 基础知识的演练，具体介绍了投票 Flask Web 项目和投票 Flask/Jade Web 项目模板的功能。
-ms.date: 05/25/2018
+ms.date: 09/04/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: tutorial
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 016305c47da13c879e2895660915121cd93f33e3
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637612"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280089"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步骤 5：使用投票 Flask Web 项目模板
 
@@ -356,7 +356,7 @@ def results(key):
 
 - 添加一个使用其他生产级数据存储的存储库实现，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 另外，还可使用 [Azure SDK for Python](azure-sdk-for-python.md)，以便使用表和 blob 等 Azure 存储服务以及 Cosmos DB。
 
-- 在 Visual Studio Team Services (VSTS) 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 VSTS、GitHub 或其他位置）外，还可以让 VSTS 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，VSTS 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
+- 在 Azure Pipelines 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 Azure Repos、GitHub 或其他位置）外，还可以让 Azure Test Plans 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps Services 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
 
-  - [在 Azure DevOps 项目中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [使用 Azure DevOps Projects 为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [通过 Visual Studio Team Services 在 Azure 中开发 Python（视频，11 分 21 秒）](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。

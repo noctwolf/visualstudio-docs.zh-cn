@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 4ac7aa7d9fbbf4e6f6ffbe5eafd82ff8f1e0bc44
-ms.sourcegitcommit: e04e52bddf81239ad346efb4797f52e38de5cb98
+ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43054551"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43775099"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -30,7 +30,7 @@ ms.locfileid: "43054551"
 
   请生成项目，并确保在“工具” > “选项” > “测试”中打开基于程序集的发现。
 
-  [实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是一种基于源的测试发现功能。 该功能无法发现使用理论、自定义适配器、自定义特性和 `#ifdef` 语句等的测试，因为这些项是在运行时定义的。 此类测试需要在生成后才能被准确发现。 在 15.6 预览版中，基于程序集的发现（传统发现）仅在生成后运行。 此设置表示“实时测试发现”可在你编辑时发现尽可能多的测试，而通过基于程序集的发现，可在生成后显示自动定义的测试。 “实时测试发现”改进了响应能力，但仍可让你在生成后获取完整且准确的结果。
+  [实时测试发现](https://go.microsoft.com/fwlink/?linkid=862824)是一种基于源的测试发现功能。 该功能无法发现使用理论、自定义适配器、自定义特性和 `#ifdef` 语句等的测试，因为这些项是在运行时定义的。 此类测试需要在生成后才能被准确发现。 在 Visual Studio 2017 版本 15.6 及更高版本中，基于程序集的发现（传统发现）仅在生成后运行。 此设置表示“实时测试发现”可在你编辑时发现尽可能多的测试，而通过基于程序集的发现，可在生成后显示自动定义的测试。 “实时测试发现”改进了响应能力，但仍可让你在生成后获取完整且准确的结果。
 
 ## <a name="test-explorer--plus-symbol"></a>测试资源管理器加号 (+)
 测试资源管理器首行中出现的加号 (+) 是什么意思？
@@ -93,6 +93,31 @@ Visual Studio 2017 版本 15.7 预览版 3 已删除“测试资源管理器”�
 测试项目 {} 不引用任何 .NET NuGet 适配器。测试发现或执行可能不适用于此项目。建议在解决方案的每个 .NET 测试项目中引用 NuGet 测试适配器。
 
 项目需要使用测试适配器 NuGet 包，而不使用测试适配器扩展。 这极大地提高了性能，并通过持续集成减少产生的问题。 阅读[发行说明](/visualstudio/releasenotes/vs2017-preview-relnotes#testadapterextension)中有关 .NET 测试适配器扩展弃用的详细信息。
+
+> [!NOTE]
+> 如果使用 NUnit 2 测试适配器且无法迁移到 NUnit 3 测试适配器，则可以在 Visual Studio 15.8 版的“工具” > “选项” > “测试”中关闭这一新发现行为。 
+
+  ![“工具”选项中的测试资源管理器适配器行为](media/testex-adapterbehavior.png)
+
+## <a name="uwp-testcontainer-was-not-found"></a>未找到 UWP TestContainer
+我的 UWP 测试不再在 Visual Studio 2017 版本 15.7 及更高版本中执行。
+
+最近的 UWP 测试项目指定了一个测试平台生成属性，通过它可提供更佳的测试应用识别性能。 如果具有在 Visual Studio 版本 15.7 之前初始化的 UWP 测试项目，可能会在“输出” > “测试”中看到以下错误：
+
+System.AggregateException: 发生一个或多个错误。---> System.InvalidOperationException: 在 {}Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext() 中找不到以下 TestContainer
+  
+修复此问题的方法：
+- 将测试项目生成属性更新为以下内容：
+
+```XML
+<UnitTestPlatformVersion Condition="'$(UnitTestPlatformVersion)' == ''">$(VisualStudioVersion)</UnitTestPlatformVersion>
+```
+
+- 将 TestPlatform SDK 版本更新为以下内容：
+
+```XML
+<SDKReference Include="TestPlatform.Universal, Version=$(UnitTestPlatformVersion)" />
+```
 
 ## <a name="using-feature-flags"></a>使用功能标志
 如何打开功能标志来试用新的测试功能？

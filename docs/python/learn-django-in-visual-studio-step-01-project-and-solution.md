@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2e561e7e5ba060258f88593cdfee0bcfb3ece5c7
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626962"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280163"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -100,7 +100,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![用于推送到现有远程存储库的团队资源管理器窗口](media/django/step01-push-to-github.png)
 
-    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Visual Studio Team Services”选项直接从 Visual Studio 创建一个存储库。
+    如果没有现有存储库，可通过“发布到 GitHub”和“推送到 Azure DevOps”选项直接从 Visual Studio 创建一个存储库。
 
 1. 按照本教程执行操作时，请养成定期在 Visual Studio 中使用控件提交和推送更改的习惯。 本教程会在适当时机提醒你。
 

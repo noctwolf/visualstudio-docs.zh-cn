@@ -1,7 +1,7 @@
 ---
 title: 目标生成顺序 | Microsoft Docs
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/04/2018
 ms.technology: msbuild
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 90118003afcb8227ec3598110c38f3f0951e9adb
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 9bab71bce4ccec17f485f6aafad7389e3b981b6e
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178951"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43774940"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
@@ -114,7 +114,7 @@ ms.locfileid: "39178951"
 
     仍按指定顺序执行列出 `BeforeTargets` 或 `AfterTargets` 中条件目标的目标
   
-4.  执行目标前，运行其 `DependsOnTargets` 目标。  
+4.  在执行或跳过目标之前，如果其 `Condition` 属性不存在或评估结果不是 `false`，则运行其 `DependsOnTargets` 目标。  
   
 5.  执行或跳过目标之前，运行 `BeforeTargets` 属性中列出的所有目标。  
   

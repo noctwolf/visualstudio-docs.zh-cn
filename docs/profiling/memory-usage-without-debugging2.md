@@ -14,11 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b31fde9497438b6abbcbd314462daf4c23f5e7
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668394"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>分析不使用 Visual Studio 调试器情况下的内存使用情况
 可以在不调试的情况下使用**内存使用率**执行以下操作  
@@ -31,7 +32,7 @@ ms.lasthandoff: 05/17/2018
   
  本主题介绍了如何使用“内存使用”工具分析 UWP XAML 应用。 若要对使用 JavaScript 和 HTML 的 UWP 应用分析内存使用，请参阅[分析内存使用 (JavaScript)](../profiling/javascript-memory.md)。  
   
-##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>启动内存使用率诊断会话  
+## <a name="start-a-memory-usage-diagnostic-session"></a>启动内存使用量诊断会话  
   
 1.  在 Visual Studio 中打开 C# 通用 Windows 项目。  
   
@@ -41,7 +42,7 @@ ms.lasthandoff: 05/17/2018
   
      ![启动内存使用率诊断会话](../profiling/media/memuse_start_diagnosticssession.png "MEMUSE_Start_DiagnosticsSession")  
   
-##  <a name="BKMK_Monitor_memory_use"></a>监视内存使用率  
+## <a name="monitor-memory-use"></a>监视内存使用情况  
  虽然可以使用**内存使用率**工具生成可用于查找并修复问题的详细报告，但也可以使用它来研究主动制订的方案的实时内存效果。  
   
  启动诊断会话时，应用将启动，并且“诊断工具”窗口将显示此应用的内存使用情况的时间线关系图。  
@@ -55,12 +56,12 @@ ms.lasthandoff: 05/17/2018
   
  若要在不创建报告的情况下监视会话，只需关闭诊断窗口。 若要在拍摄内存快照后生成报告，请选择“停止”。  
   
-##  <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a>拍摄应用的内存状态快照  
+## <a name="take-snapshots-of-the-memory-state-of-your-app"></a>拍摄应用的内存状态快照  
  如果发现要调查的内存问题，可以在诊断会话期间拍摄快照，以在特定时刻捕获内存中的对象。 由于应用使用大量不同类型的对象，因此你可能希望集中分析某一种情况。 还有一个较好的办法是，获取应用在出现内存问题之前的基线快照、首次出现问题后的另一个快照，以及一个或多个其他快照（如果可重复执行该方案）。  
   
  若要收集快照，请启动新的诊断会话。 在想要捕获内存数据时选择“拍摄快照”。 若要生成报告，请选择“停止”。  
   
-##  <a name="BKMK_Memory_Usage_overview_page"></a>“内存使用率”概述页  
+##  <a name="memory-usage-overview-page"></a>内存使用量概述页  
  在停止收集数据后，内存使用量工具将停止应用并显示概述报告。  
   
  ![“内存使用率”概述页](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
@@ -68,9 +69,9 @@ ms.lasthandoff: 05/17/2018
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>“内存使用率”快照视图  
  使用快照视图以在新的 Visual Studio 窗口中打开详细的报告。 存在两种类型的快照视图：  
   
--   [快照详细报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)显示某个快照中的类型和实例。  
+-   [快照详细报告](#snapshot-reports)显示某个快照中的类型和实例。  
   
--   [快照差异报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)比较两个快照中的类型和实例。  
+-   [快照差异报告](#snapshot-difference-diff-reports)比较两个快照中的类型和实例。  
   
  ![快照视图链接](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
@@ -83,7 +84,7 @@ ms.lasthandoff: 05/17/2018
 |![第 3 步](../profiling/media/procguid_3.png "ProcGuid_3")|该链接文本显示拍摄此快照时内存中对象的总大小和上一个快照的总大小之间的差异。<br /><br /> 如果此快照的内存大于上一个快照的内存，则该链接文本将显示正数，反之，该链接文本将显示负数。 链接文本**基线**表明此快照是诊断会话中的第一个快照；**无差异**表明差异为零。<br /><br /> 选择此链接以显示快照差异报告，该报告按类型实例的总大小中的差异进行排序。|  
 |![第 4 步](../profiling/media/procguid_4.png "ProcGuid_4")|此链接文本显示此快照中内存对象的总数与上一个快照中对象总数之间的差异。<br /><br /> 选择此链接以显示快照差异报告，该报告按类型实例的总计数中的差异进行排序。|  
   
-##  <a name="BKMK_Snapshot_reports"></a>快照报告  
+## <a name="snapshot-reports"></a>快照报告  
  ![“内存使用量”快照报告](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
   
 ###  <a name="BKMK_Snapshot_report_trees"></a>快照报告树  
@@ -118,7 +119,7 @@ ms.lasthandoff: 05/17/2018
 ####  <a name="BKMK_Just_My_Code"></a>仅我的代码  
  **仅我的代码**筛选器将隐藏外部代码生成的大多数实例。 外部类型属于操作系统或 Framework 组件，或者由编译器生成。  
   
-##  <a name="BKMK_Snapshot_details_reports"></a>快照详细信息报告  
+## <a name="snapshot-details-reports"></a>快照详细信息报告  
  可以使用快照详细信息报告专注于诊断会话中的某个快照。 若要打开详细信息报告，可在快照视图中选择一个链接，如下图所示。 这两个链接打开的都是相同的报告；唯一的差异是在报告中**托管堆**树的启动排序顺序不同。 在这两种情况下，你可以在报告打开后更改排序顺序。  
   
  ![转至快照视图中快照报表的链接](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
@@ -157,7 +158,7 @@ ms.lasthandoff: 05/17/2018
 |“大小(字节)”|对于类型，则为所有类型实例的大小，排除类型中包含的对象的大小。<br /><br /> 对于实例，则为对象的大小，排除实例中包含的对象大小。|  
 |“非独占大小(字节)”|类型实例的总大小或实例的大小，其中包括所包含的对象的大小。|  
   
-##  <a name="BKMK_Snapshot_difference__diff__reports"></a>快照差异报告  
+## <a name="snapshot-difference-diff-reports"></a>快照差异报告  
  快照差异报告显示主要快照和紧接着在它之前拍摄的快照之间的更改。 若要打开差异报告，可在快照视图中选择一个链接，如下图所示。 这两个链接打开的都是相同的报告；唯一的差异是在报告中**托管堆**树的启动排序顺序不同。 你可以在报告打开后更改排序顺序。  
   
  ![转至快照视图中差异报表的链接](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
@@ -202,6 +203,6 @@ ms.lasthandoff: 05/17/2018
 ## <a name="see-also"></a>请参阅  
  [JavaScript 内存](../profiling/javascript-memory.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能导览](../profiling/profiling-feature-tour.md)  
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)  
  [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)（在 Visual Studio 中使用新的内存使用情况工具诊断内存问题）

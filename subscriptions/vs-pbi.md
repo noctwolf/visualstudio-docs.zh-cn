@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c09035a14cf571523f7d5c757c9c41e807b0c86b
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 08e3fb3cc41ef7ada1acd984671150c1f61a0e05
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289292"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280462"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
@@ -101,4 +101,4 @@ ms.locfileid: "43289292"
     - 注册时有问题？  签出[以个人身份注册的 Power BI](/power-bi/service-self-service-signup-for-power-bi)
     - 浏览首要的问题，从社区获得帮助或在[支持页](https://powerbi.microsoft.com/support/)上提交支持票证。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

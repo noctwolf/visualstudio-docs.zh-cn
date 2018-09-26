@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8b8ec4495c12132b89561bcbbaaf8ebfdbe3483
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 10dc2effb90e754a91f6c9f008c6f8b1692bc252
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626857"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281060"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 
@@ -376,8 +376,8 @@ admin.site.register(Poll, PollAdmin)
 
 - 将应用从 SQLite 更改为生产级数据存储，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 如[何时使用 SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org) 中所述，SQLite 适用于低到中等规模的流量站点（一天点击量不足 100K），不建议用于高点击量网站。 此外，它还仅限于一台计算机，因此不能在任何多服务器场景中使用，例如负载均衡和异地复制。 有关 Django 对其他数据库的支持的信息，请参阅[数据库设置](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup)。 另外，还可以使用 [Azure SDK for Python](azure-sdk-for-python.md)，以便使用 Azure 存储服务，如表和 blob。
 
-- 在 Visual Studio Team Services (VSTS) 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 VSTS、GitHub 或其他位置）外，还可以让 VSTS 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，VSTS 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
+- 在 Azure Pipelines 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 Azure Repos、GitHub 或其他位置）外，还可以让 Azure Test Plans 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps Services 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
 
-  - [在 Azure DevOps 项目中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
+  - [使用 Azure DevOps Projects 为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
   - [通过 Visual Studio Team Services 在 Azure 中开发 Python（视频，11 分 21 秒）](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
 

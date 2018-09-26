@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a64558f442b6d3ad77a34bb8ae4acb2860273c05
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176464"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321107"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
 Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载。 这些机器必须由一个测试控制器和一个或多个测试代理组成。 可以使用测试控制器和测试代理生成超出一台计算机单机生成能力的负载。
 
 > [!NOTE]
-> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 请在[使用 VSTS 运行负载测试](/vsts/load-test/get-started-simple-cloud-load-test)中了解有关基于云的负载测试的详细信息。
+> 还可以使用基于云的负载测试来提供同时生成访问网站的多个用户的负载的虚拟机。 在[使用 Azure Test Plans 运行负载测试](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts)中详细了解基于云的负载测试。
 
 ## <a name="load-simulation-architecture"></a>负载模拟体系结构
 

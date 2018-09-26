@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 52da738cc6e123c435e54523c240cd1b6d83dc8d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289354"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283283"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
@@ -56,10 +56,10 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是          |
 | Visual Studio Professional（标准<sup>2</sup>、年度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不适用          |
-| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不适用          |
-| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不适用 |
-| Visual Studio Dev Essentials | 不适用  | 不可用 |不适用 |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 不可用                                             |  不可用          |
+| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
+| Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
+| Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
 <sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
 
@@ -71,4 +71,4 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 -  需要 EMS 的帮助？  签出联机 [EMS 文档](/enterprise-mobility-security/)。
 -  有关对 EMS 任何组件的技术支持，请访问 https://support.microsoft.com/allproducts，然后选择产品。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 Azure 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 20d8474189df34dda9eb2ed7ef2b0e158f06f3b5
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: b8f3542fce0d04e4e6efeba6e2558740c5f5d12f
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "43289350"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44282308"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 
@@ -97,7 +97,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
 
 比较所有的[订阅及其权益](https://visualstudio.microsoft.com/vs/pricing/)。
 
-如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，则可以通过在 Visual Studio 订阅门户中添加[备用帐户](manage-vs-subscriptions.md#linking-my-subscription-to-existing-vsts-or-azure-subscriptions)，将该订阅与此 Azure 权益关联。 如果该操作不起作用，还可以尝试[将 Azure 权益传输](/azure/billing/billing-subscription-transfer/)到活动 Visual Studio 订阅。
+如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，则可以通过在 Visual Studio 订阅门户中添加[备用帐户](manage-vs-subscriptions.md#linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions)，将该订阅与此 Azure 权益关联。 如果该操作不起作用，还可以尝试[将 Azure 权益传输](/azure/billing/billing-subscription-transfer/)到活动 Visual Studio 订阅。
 
 如果在 Microsoft 帐户下的不同订阅级别具有其他活动 Visual Studio 订阅，请联系 [Azure 支持](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade)以获取帮助。
 
@@ -113,4 +113,4 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  由于
     - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
     - [Azure 文档](/azure/)
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

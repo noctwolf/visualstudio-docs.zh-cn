@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d45255b3d92ad57fa57d347b7544a700fa22ae
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 42131bc1a596cf14a219f674227dbbadeb26c370
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34573175"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668390"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用**采样**数据。
@@ -41,7 +41,7 @@ ms.locfileid: "34573175"
 ## <a name="create-and-run-a-performance-session"></a>创建并运行性能会话  
  若要获取需要分析的数据，必须先创建性能会话，然后运行会话。 可通过**性能向导**实现这两项操作。  
   
- 如果不对 Windows 桌面应用或 ASP.NET 应用进行性能分析，则必须使用一种其他分析工具。 请参阅[首先了解分析工具](../profiling/profiling-tools.md)。  
+ 如果不对 Windows 桌面应用或 ASP.NET 应用进行性能分析，则必须使用一种其他分析工具。 请参阅[首先了解分析工具](../profiling/profiling-feature-tour.md)。  
   
 #### <a name="to-create-and-run-a-performance-session"></a>创建并运行性能会话  
   
@@ -129,4 +129,4 @@ ms.locfileid: "34573175"
  [入门](../profiling/getting-started-with-performance-tools.md)   
  [概述](../profiling/overviews-performance-tools.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
- [分析功能导览](../profiling/profiling-feature-tour.md)
+ [首先了解分析工具](../profiling/profiling-feature-tour.md)

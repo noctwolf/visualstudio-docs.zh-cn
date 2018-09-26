@@ -10,14 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b9c699056a3ef4ee493397e99e37f41cbd2cf3e
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: dbecc61e5203495e33aa4417e954607d8cdf6be8
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668483"
 ---
 # <a name="start"></a>Start
-**Start** 选项是一个 VSPerfCmd.exe 选项卡，可将探查器初始化为指定分析方法。  
+Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法。  
   
 ## <a name="syntax"></a>语法  
   
@@ -65,7 +66,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  关闭探查器。  
   
 ## <a name="example"></a>示例  
- 以下示例演示如何使用 VSPerfCmd.exe **Start** 选项来初始化探查器。  
+ 以下示例演示如何使用 VSPerfCmd.exe Start 选项来初始化探查器。  
   
 ```cmd  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 0973e110d7f321caa88bef0a3672191298f8fe8e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380887"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44321185"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
@@ -257,7 +257,7 @@ ms.locfileid: "39380887"
     >
     > 在基于安装目录的以下路径中，还存在其他配置文件示例：Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors。
 
-     有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+     有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
      有关安装配置文件的详细信息，请参阅[如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)
 
@@ -265,7 +265,7 @@ ms.locfileid: "39380887"
 
 13. 有关安装自定义编辑器的详细信息，请参阅[如何：安装自定义诊断数据适配器](../test/how-to-install-a-custom-diagnostic-data-adapter.md)。
 
-14. 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)。
+14. 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
 15. 若要选择诊断数据适配器，必须先选择现有的测试设置，或从 Microsoft 测试管理器或 Visual Studio 中创建一个新测试设置。 该适配器将显示在测试设置的“数据和诊断”选项卡上，并具有你指派给该类的友好名称。
 
@@ -285,6 +285,6 @@ ms.locfileid: "39380887"
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute>
 - <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute>
 - [使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)
-- [在手动测试中收集诊断数据 (VSTS)](/vsts/manual-test/mtm/collect-more-diagnostic-data-in-manual-tests)
-- [在测试时收集诊断数据 (VSTS)](/vsts/manual-test/collect-diagnostic-data)
+- [在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+- [在测试时收集诊断数据 (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [如何：为诊断数据适配器创建自定义数据编辑器](../test/how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter.md)

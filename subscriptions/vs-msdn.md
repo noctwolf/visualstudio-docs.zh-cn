@@ -9,12 +9,12 @@ description: 注册后，可以接收包含在 Visual Studio 订阅中的 MSDN �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ea89d30c9174cc0bd3080131363edad4ef66eb77
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: a988c6cd546aee767c0900f2319bc456a79da266
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289545"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44283582"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 MSDN 杂志权益
 
@@ -50,10 +50,10 @@ ms.locfileid: "43289545"
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> |印刷版       |  不支持。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 印刷版                                                            |不支持。  仅对新订阅者可用         |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不支持。  仅对新订阅者可用         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不支持。  仅对新订阅者可用         |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> |印刷版       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 印刷版                                                            |不是。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 印刷版                                             |  不是。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 印刷版                                              | 不是。  仅对新订阅者可用         |
 |Visual Studio Enterprise、Visual Studio Professional（月度云）   | Azure |不可用      |  NA         |
 |Visual Studio Dev Essentials| NA |数字版       |  是|
 
@@ -68,4 +68,4 @@ ms.locfileid: "43289545"
 
 ## <a name="support-resources"></a>支持资源
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

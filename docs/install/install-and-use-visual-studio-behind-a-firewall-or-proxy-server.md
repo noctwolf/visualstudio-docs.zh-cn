@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e96da4ad8f55db251f816516c00502991053f7
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: b3a3b798b704111c8afdbaaaa3b219b876ebf6ff
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138417"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280579"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -119,7 +119,7 @@ ms.locfileid: "43138417"
 |Azure 流分析 <br><br>HDInsight | Management.azure.com |https|443 |用于查看、提交、运行和管理 ASA 作业 <br><br> 用于浏览 HDI 群集，以及提交、诊断和调试 HDI 作业 |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | https | 443 | 用于编译、提交、查看、诊断和调试作业；用于浏览 ADLS 文件；用于上传和下载文件 |
 | 打包服务 | [account].visualstudio.com <br/> [account].*.visualstudio.com <br/> *.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | https | 443 | 只有某些生成任务方案（例如 NuGet 工具安装程序、节点工具安装程序）或在计划通过 Feeds 使用公共上游时，才需要 *.npmjs.org、*.nuget.org 和 *.nodejs.org。 要使用打包服务的核心功能，还需具备其他三个域。 |
-| VSTS | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用于连接 VSTS |
+| Azure DevOps Services | *.vsassets.io <br/> static2.sharepointonline.com  |  |  | 用于连接 Azure DevOps Services |
 |||||||
 
 ## <a name="troubleshoot-network-related-errors"></a>与网络相关错误的疑难解答

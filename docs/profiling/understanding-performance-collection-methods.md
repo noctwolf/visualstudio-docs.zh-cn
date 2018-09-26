@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6312a674cc3e9764971f2add59c8e1f0441790
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: d278f8ca6019dd8a29d5e4c57e1e191137a32972
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34477478"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668242"
 ---
 # <a name="understand-performance-collection-methods"></a>了解性能收集方法
 
@@ -32,8 +32,8 @@ Visual Studio 分析工具提供了五种可以用于收集性能数据的方法
 |[采样](#sampling)|收集有关应用程序执行的工作的统计数据。|
 |[检测](#instrumentation)|收集有关每个函数调用的详细计时信息。|
 |[并发](#concurrency)|收集有关多线程应用程序的详细信息。|
-|[.NET 内存](#net_memory)|收集有关 .NET 内存分配和垃圾回收的详细信息。|
-|[层交互](#tier_interaction)|收集有关对 SqlServer 数据库的同步 ADO.NET 函数调用的信息。<br /><br /> 可以使用任何版本的 Visual Studio 收集层交互分析。 但是，层交互分析数据只能在 Visual Studio Enterprise 中查看。|
+|[.NET 内存](#net-memory)|收集有关 .NET 内存分配和垃圾回收的详细信息。|
+|[层交互](#tier-interaction)|收集有关对 SqlServer 数据库的同步 ADO.NET 函数调用的信息。<br /><br /> 可以使用任何版本的 Visual Studio 收集层交互分析。 但是，层交互分析数据只能在 Visual Studio Enterprise 中查看。|
 
 通过使用一些分析方法，还可以收集其他数据，如软件和硬件性能计数器。 有关详细信息，请参阅[收集其他性能数据](../profiling/collecting-additional-performance-data.md)。
 

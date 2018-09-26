@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d57aa718216b796cf5e7f008186abedc709d108
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 90dfae7e891c805a785db8bba00d3c75d2a84bf3
+ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177001"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384157"
 ---
 # <a name="toolbox-html-tab"></a>“工具箱”->“HTML”选项卡
 
@@ -117,7 +117,7 @@ ms.locfileid: "39177001"
 ```
 
 > [!IMPORTANT]
-> 如果应用程序传输用户名和密码，则应配置网站使用安全套接字层 (SSL) 对传输进行加密。 有关详细信息，请参阅 [IIS 操作指南](http://go.microsoft.com/fwlink/?linkid=47856)中的“使用 SSL 保护连接”。 此外，建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。
+> 如果应用程序传输用户名和密码，则应配置网站使用安全套接字层 (SSL) 对传输进行加密。 有关详细信息，请参阅[保护连接](/previous-versions/tn-archive/bb418917(v=technet.10))。 此外，建议对所有用户输入进行验证。 有关详细信息，请参阅[在 ASP.NET 网页 (Razor) 站点中验证用户输入](/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。
 
 **Input (Check box)**
 

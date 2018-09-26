@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b31a8631497b5c4f39b2c0e6ebffa469282da157
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138386"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44281086"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -73,7 +73,7 @@ ms.locfileid: "43138386"
 
 ## <a name="error-the-underlying-connection-was-closed"></a>错误：“基础连接已关闭”
 
-如果在有防火墙的专用网络中使用 Visual Studio，则 Visual Studio 可能无法连接到某些网络资源。 这些资源可能会包括用于登录和授权的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服务。 如果 Visual Studio 无法连接到上述某个资源，则可能出现以下错误消息：
+如果在有防火墙的专用网络中使用 Visual Studio，则 Visual Studio 可能无法连接到某些网络资源。 这些资源可能会包括用于登录和授权的 Azure DevOps Services、NuGet 和 Azure 服务。 如果 Visual Studio 无法连接到上述某个资源，则可能出现以下错误消息：
 
   **基础连接已关闭：发送时出现意外错误**
 
@@ -103,7 +103,7 @@ Visual Studio 使用传输层安全性 (TLS) 1.2 协议连接到网络资源。 
 
 - cdn.vsassets.io（主机内容分发网络或 CDN、内容）
 
-- &#42;.gallerycdn.vsassets.io（主机 VSTS 扩展）
+- &#42;.gallerycdn.vsassets.io（托管 Azure DevOps Services 扩展）
 
 - static2.sharepointonline.com（Visual Studio 在字体等 Office UI Fabric 工具包中使用的主机资源）
 

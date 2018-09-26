@@ -4,29 +4,29 @@ ms.date: 08/21/2018
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 2dc61e63-9ba2-4c16-b1ad-f46249e576b6
-author: dantogno
-ms.author: v-davian
+author: conceptdev
+ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: c356e5d9138c73d187f96775fbe6a09ed7e448e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41e27d2d7a3fc79695fa1d476a76e199348c5320
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634613"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320886"
 ---
 # <a name="devops-with-unity-apps"></a>适用于 Unity 应用的 DevOps
 
 开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发 + 操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断，以及通过遥测和分析实时监控应用的性能和用户行为。
 
-Visual Studio、Visual Studio Team Services 和 Team Foundation Server 提供了各种 DevOps 功能。 其中许多都适用于跨平台项目，包括采用 Unity 创建的游戏和沉浸式图形应用 &mdash; 特别是在将 C# 用作脚本语言时。 但是，由于 Unity 具有自己的开发环境和运行时引擎，因此很多 DevOps 功能并不能像适用于 Visual Studio 中生成的其他项目一样适用。
+Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种 DevOps 功能。 其中许多都适用于跨平台项目，包括采用 Unity 创建的游戏和沉浸式图形应用 &mdash; 特别是在将 C# 用作脚本语言时。 但是，由于 Unity 具有自己的开发环境和运行时引擎，因此很多 DevOps 功能并不能像适用于 Visual Studio 中生成的其他项目一样适用。
 
 下表标识了在使用 Unity 时，Visual Studio 中的 DevOps 功能在哪些方面适用/不适用。 请参阅链接文档，获取功能自身的详细信息。
 
 ## <a name="agile-tools"></a>敏捷工具
 
-参考链接：[关于敏捷工具和敏捷项目管理](/vsts/work/backlogs/overview?view=vsts)（使用 Visual Studio Team Services 或 TFS，包括 Team Explorer Everywhere）
+参考链接：[关于敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/overview?view=vsts)（使用 Azure Boards 或 TFS，包括 Team Explorer Everywhere）
 
 常规注释：所有的计划和跟踪功能均独立于项目类型和编码语言。
 
@@ -59,8 +59,8 @@ Visual Studio、Visual Studio Team Services 和 Team Foundation Server 提供了
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
-|[使用 Team Foundation 版本控制](/vsts/tfvc/overview?view=vsts)或 Visual Studio Team Services|是|像其他项目一样，Unity 项目仅可放入版本控制系统的文件集合，但有几点需要特别注意，见此表后所述内容。|
-|[Team Services 中的 Git 入门](/vsts/git/gitquickstart?view=vsts&tabs=visual-studio)|是|请参阅表后的注释。|
+|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|像其他项目一样，Unity 项目仅可放入版本控制系统的文件集合，但有几点需要特别注意，见此表后所述内容。|
+|[Azure Repos 中的 Git 入门](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|请参阅表后的注释。|
 |[提高代码质量](../test/improve-code-quality.md)|是||
 |[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)|是||
@@ -75,13 +75,13 @@ Visual Studio、Visual Studio Team Services 和 Team Foundation Server 提供了
 
 ## <a name="build"></a>生成
 
-参考链接：**[生成和发布](/vsts/build-release/index)**
+参考链接：[Azure Pipelines](/azure/devops/pipelines/index?view=vsts)
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
-|本地 TFS 服务器|可能|Unity 项目通过 Unity 环境生成，而不是 Visual Studio 生成系统（在 Visual Studio Tools 中为 Unity 生成项目将对脚本进行编译，但不是会生成可执行文件）。 可以[从命令行生成 Unity 项目](http://docs.unity3d.com/Manual/CommandLineArguments.html)（Unity 文档），因此用户可以在 TFS 服务器上配置 MSBuild 进程，以执行相应的 Unity 命令，前提是该计算机已经安装了 Unity。<br /><br /> Unity 也提供 [Unity 云生成](https://build.cloud.unity3d.com/landing/)，它会监视 Git 或 SVN 储存库，并定期运行生成。 目前它并不适用于 Team Foundation 版本控制或 Visual Studio Team Services。|
-|链接到 Visual Studio Team Services 的本地生成服务器|可能|给定上述相同条件，更有可能指向通过 Visual Studio Team Services 触发的生成，以便使用本地 TFS 计算机。 请参阅[生成和发布代理](/vsts/build-release/concepts/agents/agents)了解相关介绍。|
-|Visual Studio Team Services 承载的控制器服务|否|目前不支持 Unity 生成。|
+|本地 Team Foundation Server (TFS)|可能|Unity 项目通过 Unity 环境生成，而不是 Visual Studio 生成系统（在 Visual Studio Tools 中为 Unity 生成项目将对脚本进行编译，但不是会生成可执行文件）。 可以[从命令行生成 Unity 项目](http://docs.unity3d.com/Manual/CommandLineArguments.html)（Unity 文档），因此用户可以在 TFS 服务器上配置 MSBuild 进程，以执行相应的 Unity 命令，前提是该计算机已经安装了 Unity。<br /><br /> Unity 也提供 [Unity 云生成](https://build.cloud.unity3d.com/landing/)，它会监视 Git 或 SVN 储存库，并定期运行生成。 目前，它不适用于 TFVC 或 Azure DevOps Services。|
+|链接到 Azure DevOps Services 的本地生成服务器|可能|给定上述相同条件，更有可能指向通过 Azure DevOps Services 触发的生成，以便使用本地 TFS 计算机。 请参阅[生成和发布代理](/azure/devops/pipelines/agents/agents?view=vsts)了解相关介绍。|
+|Azure DevOps Services 的托管控制器服务|否|目前不支持 Unity 生成。|
 |生成带有前脚本和后脚本的定义|是|使用 Unity 命令行运行生成的自定义生成定义还可以配置为预生成和后生成脚本。|
 |包括封闭签入的持续集成|是|仅在 Git 用于拉取请求（而非签入）时，封闭签入才适用于 TFVC。|
 
@@ -103,20 +103,20 @@ Visual Studio、Visual Studio Team Services 和 Team Foundation Server 提供了
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
 |[分析托管代码的质量](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是|可以分析 Visual Studio 中的 C# 脚本代码。|
-|[使用代码克隆检测功能查找重复代码](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是|可以分析 Visual Studio 中的 C# 脚本代码。|
+|[使用代码克隆检测功能查找重复代码](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以分析 Visual Studio 中的 C# 脚本代码。|
 |[测量托管代码的复杂性和可维护性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是|可以分析 Visual Studio 中的 C# 脚本代码。|
 |[性能资源管理器](../profiling/performance-explorer.md)|否|使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 网站）。|
-|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|
+|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity 探查器](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|
 
 ## <a name="release-management"></a>版本管理
 
-参考链接：[生成和发布概述](/vsts/pipelines/overview?view=vsts)
+参考链接：[Azure Pipelines 和 TFS 中的生成和发布](/azure/devops/pipelines/overview?view=vsts)
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
 |管理发布进程|是||
 |通过脚本部署到旁加载的服务器|是||
-|上载到应用商店|部分|提供了一些扩展，这些扩展可使某些应用商店的此进程自动化。 请参阅 [Visual Studio Team Services 的扩展](https://marketplace.visualstudio.com/VSTS)；例如，[Google Play 的扩展](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|
+|上载到应用商店|部分|提供了一些扩展，这些扩展可使某些应用商店的此进程自动化。 请参阅 [Azure DevOps Services 扩展](https://marketplace.visualstudio.com/VSTS)；例如，[Google Play 扩展](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play)。|
 
 ## <a name="monitor-with-hockeyapp"></a>使用 HockeyApp 进行监控
 

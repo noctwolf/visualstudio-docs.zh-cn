@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 中包含的 Opsgility 培训权�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 036c063aa49f3f5221736f35cb3ada35f854c325
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cd0409eef71ebd97b98f93631b0229d5d8526362
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289475"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44280891"
 ---
 # <a name="the-opsgility-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Opsgility 权益
 
@@ -41,11 +41,11 @@ ms.locfileid: "43289475"
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售 | 12 个月       |  不支持。  仅对新订阅者可用          |
-| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 6 个月                                                            |不支持。  仅对新订阅者可用         |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 6 个月                                             |  不支持。  仅对新订阅者可用         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 6 个月                                              | 不支持。  仅对新订阅者可用         |
-| Visual Studio Dev Essentials | NA  | 3 个月 |不支持。  仅对新订阅者可用 |
+| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售 | 12 个月       |  不是。  仅对新订阅者可用          |
+| Visual Studio Professional（标准、年度云） | VL、Azure、零售                                       | 6 个月                                                            |不是。  仅对新订阅者可用         |
+| Visual Studio Test Professional（标准）                         | VL、零售                                              | 6 个月                                             |  不是。  仅对新订阅者可用         |
+| MSDN 平台（标准）                                          | VL、零售                                              | 6 个月                                              | 不是。  仅对新订阅者可用         |
+| Visual Studio Dev Essentials | NA  | 3 个月 |不是。  仅对新订阅者可用 |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
 不包括：Microsoft 合作伙伴网络 (MPN)、Microsoft 重要合作伙伴 (MVP)、Microsoft 认证培训师、BizSpark、Imagine、NFR、FTE
@@ -55,4 +55,4 @@ ms.locfileid: "43289475"
 ## <a name="support-resources"></a>支持资源
 -  需要 Opsgility 帮助？  通过[联系我们](https://www.opsgility.com/SupportTicket)页面可提交支持票证。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
--  对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+-  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

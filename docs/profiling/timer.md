@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc361925d26bb6274a90d62c0b0c2085b47210c4
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 914b0c3e493e8486247704ef22967c8ccd511ed2
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34476696"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668178"
 ---
 # <a name="timer"></a>计时器
-VSPerfCmd.exe **Timer** 选项将采样的分析事件设置为处理器时钟周期，还可以选择将采样间隔内的周期数从默认值 10,000,000 改为其他值。 在 1GH（1 千兆赫）的处理器上，10,000,000 个时钟周期大约为每秒 100 个样本。 可指定的最小周期数为 50,000。  
+VSPerfCmd.exe Timer 选项将采样的分析事件设置为处理器时钟周期，还可以选择将采样间隔内的周期数从默认值 10,000,000 改为其他值。 在 1GH（1 千兆赫）的处理器上，10,000,000 个时钟周期大约为每秒 100 个样本。 可指定的最小周期数为 50,000。  
   
  只有在使用采样分析方法时才能使用 **Timer**，并且只能在包含 **Launch** 或 **Attach** 选项的命令行中使用它。  
   

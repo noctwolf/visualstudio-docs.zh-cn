@@ -17,11 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51747dca8e11f7a23b911bbfe8ddcdb81d275d69
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: d96f8fcd1e89fa43b3fe06d6dda1ad310da59f00
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668176"
 ---
 # <a name="summary-view"></a>“摘要”视图
 “摘要”视图显示有关分析运行期间，性能开销最大的函数或对象的信息。 此视图根据分析方法的性能指标，提供一个时间线图，以及性能开销最大的函数或对象的两个或多个列表。 此视图中的数据取决于所用的分析方法（采样、检测或并发）以及是否收集 .NET 内存分配。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 04/19/2018
   
 |||  
 |-|-|  
-|**显示已修整的调用树**|在“调用树”视图中，显示性能开销最大的的执行路径。 有关详细信息，请参阅[“调用关系树”视图](../profiling/call-tree-view.md)。|  
+|**显示已修整的调用树**|在“调用树”视图中，显示性能开销最大的的执行路径。 有关详细信息，请参阅[“调用树”视图](../profiling/call-tree-view.md)。|  
 |**显示热行**|不可用于使用检测方法收集的分析数据。 在“行”视图中，显示性能开销最大的源代码行。 有关详细信息，请参阅[“行”视图](../profiling/lines-view.md)。|  
 |**比较报告**|显示“选择要比较的分析文件”对话框，可在其中指定要与当前文件进行比较的另一个分析数据文件。 有关详细信息，请参阅[比较性能数据文件](../profiling/comparing-performance-data-files.md)。|  
 |**导出报告数据**|显示“导出报告”对话框，可在其中指定一个或多个要保存为逗号分隔值 (.csv) 文件或 .xml 文件的报告视图。 有关详细信息，请参阅[如何：导出分析工具报告](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)。|  
@@ -56,6 +57,6 @@ ms.lasthandoff: 04/19/2018
 |**切换全屏显示**|切换报告视图的全屏模式。|  
   
 ## <a name="see-also"></a>请参阅  
- [“摘要”视图](../profiling/summary-view-sampling-data.md)   
- [“摘要”视图](../profiling/summary-view-instrumentation-data.md)   
- [“摘要”视图](../profiling/summary-view-dotnet-memory-data.md)
+ [“摘要”视图 - 采样数据](../profiling/summary-view-sampling-data.md)   
+ [“摘要”视图 - 检测数据](../profiling/summary-view-instrumentation-data.md)   
+ [“摘要”视图 - .NET 内存数据](../profiling/summary-view-dotnet-memory-data.md)

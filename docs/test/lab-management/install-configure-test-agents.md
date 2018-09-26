@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cfa50ef447675969110a2294d10a596469b87c3
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
+ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204201"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44320626"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安装测试代理和测试控制器
 
-对于使用 Visual Studio 和 Visual Studio Team Services (VSTS) 或 Team Foundation Server (TFS) 的测试方案，无需测试控制器。 Visual Studio 的代理通过与 VSTS 或 TFS 通信来处理业务流程。 一种情况可能是你在 VSTS 或 TFS 中运行用于生成和发布工作流的连续测试。
+对于使用 Visual Studio 和 Azure Test Plans 或 Team Foundation Server (TFS) 的测试方案，无需测试控制器。 Visual Studio 的代理通过与 Azure Test Plans 或 TFS 通信来处理业务流程。 一种情况可能是你在 Azure Test Plans 或 TFS 中运行用于生成和发布工作流的连续测试。
 
 还可考虑[改为使用 Build Management 或 Release Management ](use-build-or-rm-instead-of-lab-management.md)来替代实验室管理是否会更好。
 
@@ -58,13 +58,13 @@ ms.locfileid: "39204201"
 
 ## <a name="upgrade-from-visual-studio-2013-test-agents"></a>从 Visual Studio 2013 测试代理升级
 
-建议在所有新的自动测试方案中都使用 Visual Studio 的代理。 可以在生成定义中使用“部署测试代理”任务在计算机上下载和安装测试代理。
+建议在所有新的自动测试方案中都使用 Visual Studio 的代理。 可以在生成管道中使用“部署测试代理”任务在计算机上下载和安装测试代理。
 
-下表显示了 Agents for Visual Studio 2013 支持的方案，以及 Team Foundation Server (TFS) 2015 和 VSTS 的替代方案：
+下表显示了 Agents for Visual Studio 2013 支持的方案，以及 Team Foundation Server (TFS) 2015 和 Azure Test Plans 的替代方案：
 
-| Agents for Visual Studio 2013 支持的方案 | TFS 和 VSTS 中的替代方案 |
+| Agents for Visual Studio 2013 支持的方案 | TFS 和 Azure Test Plans 中的替代方案 |
 | --- | --- |
-| Visual Studio 中的“生成-部署-测试工”作流 | 用户可以在 TFS 中使用[生成定义](/vsts/build-release/)（而不是 XAML 生成）生成、部署和测试方案。 |
+| Visual Studio 中的“生成-部署-测试工”作流 | 用户可以在 TFS 中使用[生成管道](/azure/devops/pipelines/index?view=vsts)（而不是 XAML 生成）生成、部署和测试方案。 |
 | 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller 和 Test Agents 2013 Update 5 在本地运行负载测试。 |
 | 使用实验室环境从 Microsoft 测试管理器远程执行自动测试 | 目前此方案没有替代方案。 建议在生成和发布定义（而不是 XAML 生成）中使用“运行功能测试”任务来远程执行测试。 |
 | 开发人员在 Visual Studio 中执行远程测试 | 不再支持。 |

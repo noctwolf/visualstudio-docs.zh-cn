@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: f134289fbc110fa68b4600841a15ec118bcb5223
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
+ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "43289414"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44279318"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 
@@ -68,4 +68,4 @@ ms.locfileid: "43289414"
 * 使用 Windows 开发人员帐户需要帮助？  请查看 [Windows 开发人员中心](https://developer.microsoft.com/windows)上的[支持](https://developer.microsoft.com/windows/support)资源。
 * [Windows 开发](/windows/)
 * 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
-* 对有关 Visual Studio IDE、Visual Studio Team Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+* 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。

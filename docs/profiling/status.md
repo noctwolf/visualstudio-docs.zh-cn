@@ -10,16 +10,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b1e39743b8e3e6602961dfec693d5dc92c0ee63
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 5cd721dc6682057519821ee155ac8a5d803769dc
+ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "35668236"
 ---
 # <a name="status"></a>状态
-VSPerfCmd.exe **Status** 选项显示有关探查器状态以及当前正在分析的任何进程的信息。  
+VSPerfCmd.exe Status 选项显示有关探查器状态以及当前正在分析的任何进程的信息。  
   
- **Status** 选项必须是命令行中指定的唯一选项。 必须先使用 VSPerfCmd.exe **Start** 选项初始化探查器，然后才能显示任何状态。  
+ **Status** 选项必须是命令行中指定的唯一选项。 必须先使用 VSPerfCmd.exe Start 选项初始化探查器，然后才能显示任何状态。  
   
 ## <a name="syntax"></a>语法  
   
