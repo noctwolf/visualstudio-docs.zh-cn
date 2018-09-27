@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c03387c20601b8d0af79067d7ff8dc1ce7bc599
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 117bf47fb5a733dfba02da98b5cae610a0aab5c7
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513606"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228846"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>在 Visual Studio 中安装 FxCop 分析器
 
@@ -26,7 +26,7 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
 
 ## <a name="to-install-fxcop-analyzers-as-a-nuget-package"></a>若要安装 FxCop 分析器作为 NuGet 包
 
-1. [确定分析器包版本](#analyzer-package-versions)若要安装，根据你的 Visual Studio 版本。
+1. [确定分析器包版本](#fxcopanalyzers-package-versions)若要安装，根据你的 Visual Studio 版本。
 
 1. 在 Visual Studio 中，使用安装包[程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[包管理器 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
 
@@ -45,11 +45,11 @@ Microsoft 创建了一组调用的分析器[Microsoft.CodeAnalysis.FxCopAnalyzer
 
 |Visual Studio 版本|FxCop 分析器包版本|
 |-|-|
-|Visual Studio 2017 版本 15.5 及更高版本|2.6.1 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.1|
+|Visual Studio 2017 版本 15.5 及更高版本|2.6.2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2|
 |Visual Studio 2017 版本 15.3 到 15.4|2.3.0-beta1 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1|
 |Visual Studio 2017 版本 15.0 到 15.2|2.0.0-beta2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2|
 |Visual Studio 2015 更新 2 和 3|版本 1.2.0-beta2 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2|
-|Visual Studio 2015 Update 1|版本 1.1.0，例如https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1。|
+|Visual Studio 2015 Update 1|版本 1.1.0，例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1。|
 |Visual Studio 2015 RTW|版本 1.0.1 例如 https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1|
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>若要为 VSIX 安装 FxCop 分析器

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa212ec1c01a19668cafd951ea5defe5383b17ed
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232239"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228768"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 通过更改命令的外观，可以向用户提供反馈。 例如，可能想要看起来不同，它不可用时的命令。 可以使命令可用或不可用、 隐藏或显示它们，或选中或取消它们选中的菜单上。  
@@ -58,7 +58,7 @@ ms.locfileid: "39232239"
     {  
         var command = sender as OleMenuCommand;  
         if (command.Text == "New Text")  
-            ChangeMyCommand(command.CommandID.ID, false);}  
+            ChangeMyCommand(command.CommandID.ID, false);
     }  
     ```  
   
@@ -77,7 +77,7 @@ ms.locfileid: "39232239"
             mc.Enabled = enableCmd;  
             cmdUpdated = true;  
         }  
-        return cmdUpdated;    }  
+        return cmdUpdated;
     }  
     ```  
   
