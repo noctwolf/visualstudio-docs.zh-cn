@@ -1,0 +1,54 @@
+---
+title: 调试前台程序时如何使用调试器窗口？ | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.debug.background
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+- C++
+helpviewer_keywords:
+- foreground program debugging
+- remote debugging, debugging foreground programs
+- debugging [Visual Studio], while observing foreground programs
+- focus, debugging while observing foreground programs
+- debugging [Visual Studio], foreground programs
+ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
+caps.latest.revision: 19
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9ee4f9f7635fbd588d9bb6553e89a4b61b48491d
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47480432"
+---
+# <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+本主题的最新版本，请参阅[可以怎样使用调试器 Windows 时调试前台程序？](https://docs.microsoft.com/visualstudio/debugger/how-can-i-use-debugger-windows-while-debugging-a-foreground-program-q)。  
+  
+问题描述  
+ 我在尝试调试屏幕绘制问题。 若要观察该问题，必须将程序保持在前台，这意味着不能访问调试窗口。 我该怎么办？  
+  
+## <a name="solution"></a>解决方案  
+ 如果有另一台计算机，则可以使用远程调试。 通过两台计算机的设置，当在主机上运行调试器时，可以监视远程计算机上的屏幕绘制。 有关远程调试的详细信息，请参阅[设置远程调试](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
+  
+## <a name="see-also"></a>请参阅  
+ [调试本机代码常见问题解答](../debugger/debugging-native-code-faqs.md)   
+ [调试本机代码](../debugger/debugging-native-code.md)
+
+
+
