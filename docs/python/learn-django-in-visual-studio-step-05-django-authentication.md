@@ -198,9 +198,9 @@ ms.locfileid: "42627282"
 
 1. 完成所有操作后，停止服务器，并再次将所做的更改提交到源代码管理。
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a>问：\<form\> 元素中显示的 {% crsf_token %} 标记的用途是什么？
+### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>问：\<form\> 元素中显示的 {% csrf_token %} 标记的用途是什么？
 
-答：`{% crsf_token %}` 标记包含 Django 的内置[跨网站请求伪造 (crsf) 保护](https://docs.djangoproject.com/en/2.0/ref/csrf/)（Django 文档）。 通常将此标记添加到涉及 POST、PUT 或 DELETE 请求方法的任何元素（如窗体）。 然后，模板呈现函数 (`render`) 会插入必要的保护。
+答：`{% csrf_token %}` 标记包含 Django 的内置[跨网站请求伪造 (csrf) 保护](https://docs.djangoproject.com/en/2.0/ref/csrf/)（Django 文档）。 通常将此标记添加到涉及 POST、PUT 或 DELETE 请求方法的任何元素（如窗体）。 然后，模板呈现函数 (`render`) 会插入必要的保护。
 
 ## <a name="next-steps"></a>后续步骤
 
