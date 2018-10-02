@@ -21,12 +21,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bbfafb78022e462c1f629019ddb40c711fcd581b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 69c8ba3b5cd30b71828a34c4b3dc8d7b4584b613
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551462"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859041"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：检查 SQL 查询中是否有安全漏洞
 
@@ -50,7 +50,7 @@ ms.locfileid: "45551462"
 
 - 验证类型和内容的用户输入，然后构建命令字符串。
 
-以下[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类型可实现<xref:System.Data.IDbCommand.CommandText%2A>属性或提供通过使用字符串自变量来设置属性的构造函数。
+以下.NET Framework 类型实现<xref:System.Data.IDbCommand.CommandText%2A>属性或提供通过使用字符串自变量来设置属性的构造函数。
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 

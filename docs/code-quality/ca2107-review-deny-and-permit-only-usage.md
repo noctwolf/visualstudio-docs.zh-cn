@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ef4857b88c6e18b83cdc0e43bb1b8cf031221f4
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 153077e7231aba485b6f8e08efcf5e6d5752b89a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550107"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859323"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：检查 deny 权限和 permit only 权限的使用情况
 |||
@@ -35,7 +35,7 @@ ms.locfileid: "45550107"
  方法包含指定 PermitOnly 或拒绝安全操作的安全检查。
 
 ## <a name="rule-description"></a>规则说明
- <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>应仅通过具有高级的知识的用户使用安全操作的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全。 应当对使用这些安全操作的代码进行安全检查。
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全操作应仅由具有.NET Framework 安全性的高级的知识的用户使用。 应当对使用这些安全操作的代码进行安全检查。
 
  拒绝更改而发生响应安全要求的堆栈审核的默认行为。 它允许你指定必须未在拒绝的方法，而不考虑调用堆栈中的调用方的实际权限的持续时间内授予的权限。 如果堆栈遍历检测到拒绝，受保护的方法，并且如果要求的权限包含在被拒绝的权限，则堆栈审核失败。 PermitOnly 也会更改堆栈遍历的默认行为。 它允许指定调用方的权限也是如此，可授予这些权限的代码。 如果堆栈遍历检测到 PermitOnly，受保护的方法和中所指定的 PermitOnly 的权限不包括所需的权限，则堆栈审核失败。
 

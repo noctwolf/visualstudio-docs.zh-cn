@@ -12,17 +12,17 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc87ba31e1f693559384977588471af753738e7
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7af41e9e66c22e514961dc888a42153c078667cf
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950837"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47857776"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
-通过使用适用于的建模 SDK [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，你可以创建功能强大的基于模型的开发工具，你可以将集成到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。
+通过使用针对 Visual Studio 的建模 SDK，可以创建功能强大的基于模型的开发工具，您可以将它们集成到 Visual Studio。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。
 
- MSDK 的核心是你创建的用于表示业务领域内概念的模型的定义。 你可以使用各种工具环绕模型，例如关系图视图、生成代码和其他项目的功能、用于转换模型的命令和在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中与代码和其他对象进行交互的能力。 在开发模型时，你可以将其与其他模型和工具结合以形成一个以开发为中心的功能强大的工具集。
+ MSDK 的核心是你创建的用于表示业务领域内概念的模型的定义。 您可围绕具有各种工具，如关系图视图、 生成代码和其他项目，用于转换该模型的命令的功能和能力与代码和 Visual Studio 中的其他对象进行交互的模型。 在开发模型时，你可以将其与其他模型和工具结合以形成一个以开发为中心的功能强大的工具集。
 
  MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使用专用编辑器来将架构或抽象语法与图形表示法一起定义。 根据此定义，VMSDK 将生成：
 
@@ -42,7 +42,7 @@ ms.locfileid: "31950837"
 
  [相关的博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
 
- 有关高级的技术和故障排除指南，请访问[Visual Studio DSL 和建模工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkID=186074)。
+ 高级的技术和故障排除指导，请访问[Visual Studio DSL 和建模工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkID=186074)。
 
 ## <a name="in-this-section"></a>本节内容
  [域特定语言入门](../modeling/getting-started-with-domain-specific-languages.md)

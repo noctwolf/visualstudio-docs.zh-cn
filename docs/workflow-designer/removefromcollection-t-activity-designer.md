@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fc58e231e5ef1cbbc6106e279b4925d145dd9f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755932"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860207"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活动设计器
 
@@ -33,13 +33,13 @@ ms.locfileid: "36755932"
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\>属性
 
-下表列出 <xref:System.Activities.Statements.RemoveFromCollection%601> 属性并说明如何在设计器中使用它们。
+下表显示<xref:System.Activities.Statements.RemoveFromCollection%601>属性并说明如何在设计器中使用：
 
 |属性名|必需|用法|
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 活动的可选友好名称。 默认值为 RemoveFromCollection < Int32\>。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要添加到的项**集合\<T >**。 此项的类型是*T*，它属于类型*TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|项应添加到的集合。 此集合属于类型**ICollection < TypeArgument\>。** 若要指定集合，请键入在属性网格中的 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要移除的项**集合\<T >**。 此项的类型是*T*，它属于类型*TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|应从中删除项的集合。 此集合属于类型**ICollection < TypeArgument\>。** 若要指定集合，请键入在属性网格中的 Visual Basic 表达式。|
 |*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，这*TypeArgument*类型设置为**Int32**。 若要更改的类型，更改的值*TypeArgument*在属性网格中的组合框中。|
 |<xref:System.Activities.Activity%601.Result%2A>|False|一个指示指定项是否已从集合中移除的值。 若要指定要绑定到结果的变量，请在属性网格中键入一个变量。|
 

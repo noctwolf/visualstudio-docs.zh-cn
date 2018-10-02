@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: da03087ae5f4b1e2e8044229ece5b8a6177c11ef
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6a2388619dea31696fe4416032cc12cd1fe5b372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176071"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860363"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展域特定语言设计器
 
@@ -68,19 +68,19 @@ ms.locfileid: "39176071"
 
 ## <a name="test-and-deployment"></a>测试和部署
 
-若要测试本主题中的任何扩展，生成并运行解决方案。 将打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的实验实例。 在本例中，打开 DSL 解决方案。 编辑 DslDefinition 关系图。 可以查看扩展行为。
+若要测试本主题中的任何扩展，生成并运行解决方案。 这将打开一个 Visual Studio 实验实例。 在本例中，打开 DSL 解决方案。 编辑 DslDefinition 关系图。 可以查看扩展行为。
 
-若要将扩展部署到主[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他计算机，请执行以下步骤：
+将扩展部署到主要的 Visual Studio 和其他计算机，请执行以下步骤：
 
 1.  查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix
 
 2.  将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。
 
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展管理器将打开，以确认是否已安装扩展。
+     Visual Studio 扩展管理器将打开，以确认已安装扩展。
 
 若要卸载该扩展，请按照下列步骤：
 
-1.  在中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然后在**工具**菜单中，单击**扩展管理器**。
+1.  在 Visual Studio 中，在**工具**菜单上，单击**扩展管理器**。
 
 2.  选择扩展，并将其删除。
 

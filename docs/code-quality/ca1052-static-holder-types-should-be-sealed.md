@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bc264b9e47fe9169c0b1ad9d3257323c437620f7
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 2c5d22db6a973947faf228e2e3844d63a916e24e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550422"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859492"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052：应密封静态容器类型
 
@@ -43,7 +43,7 @@ ms.locfileid: "45550422"
  此规则假定只包含静态成员的类型未设计为继承，因为该类型不提供可以在派生类型中重写任何功能。 未计划继承的类型应该用 `sealed` 修饰符进行标记，以便禁止其作为基类型使用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要解决此规则的冲突，将类型标记为`sealed`。 如果你正面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]2.0 或更高版本，更好的方法是将类型标记为`static`。 以这种方式，您无需专用的构造函数，以防止此类创建声明。
+ 若要解决此规则的冲突，将类型标记为`sealed`。 如果您面向的.NET Framework 2.0 或更高版本，更好的方法是将类型标记为`static`。 以这种方式，您无需专用的构造函数，以防止此类创建声明。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  仅当类型能被继承，禁止显示此规则的警告。 如果没有`sealed`修饰符，则表明该类型用作基类型。

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 68597c0748fbc235178da6b6e583c48b9f1b422f
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b82f18f4cc6ff5bb2666a51c4e8f37e22fd7d32b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551764"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858998"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免未实例化的内部类
 |||
@@ -58,7 +58,7 @@ ms.locfileid: "45551764"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请删除类型或添加使用它的代码。 如果类型仅包含静态方法，请将以下项之一添加到要阻止编译器发出的默认公共实例构造函数的类型：
 
-- 私有构造函数的类型面向[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]1.0 和 1.1 版。
+- 私有构造函数的类型的目标.NET Framework 1.0 和 1.1 版。
 
 - `static` (`Shared`在 Visual Basic 中) 修饰符类型面向[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。
 
