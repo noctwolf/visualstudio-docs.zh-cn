@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2dc7b322d6a1e812e88930f1586458ac892249b
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: ca9047866b5b8f030ee8e1f5a043683234edeb72
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549782"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859531"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明方法不得使用安全断言
 |||
@@ -40,7 +40,7 @@ ms.locfileid: "45549782"
 
  在运行时，对任何调用<xref:System.Security.CodeAccessPermission.Assert%2A>从透明代码将导致<xref:System.InvalidOperationException>引发。 这可能在两个 100%透明程序集，以及程序集中混合透明/关键方法或类型被声明为透明，但包括声明性或命令性断言。
 
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 引入了一个名为功能*透明度*。 单个方法、 字段、 接口、 类和类型可以是透明或关键。
+ .NET Framework 2.0 引入了一个名为功能*透明度*。 单个方法、 字段、 接口、 类和类型可以是透明或关键。
 
  透明代码不能提升的安全特权。 因此，授予或其请求的任何权限都会自动通过代码传递给调用方或主机应用程序域。 提升的示例包括 assert 语句、 Linkdemand、 SuppressUnmanagedCode，和`unsafe`代码。
 

@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 420a17dbac9e0a3bf10b4c92baa108067ad44949
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cfd6188bc4d48f26e85ae8778d75d2fa99ef0f25
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775576"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859674"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 如果你在一个不支持创建模型的 Visual Studio 中打开模型，该模型将以只读模式打开。 在此模式下，你可以更改的关系图的布局，但不能更改该模型。
@@ -26,7 +26,7 @@ ms.locfileid: "43775576"
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>获取对某一模型和关系图的访问权限
  若要读取依赖项关系图，必须首先使用 Visual Studio 打开建模项目中，并打开关系图中。
 
- 出于此原因，如果你想要读取依赖项关系图中，您还必须在其中创建建模项目的访问权限。 可以通过从 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)] 来获得访问权限，也可以通过获取项目文件的副本来获得访问权限。
+ 出于此原因，如果你想要读取依赖项关系图中，您还必须在其中创建建模项目的访问权限。 您可以执行此操作通过访问从源代码管理项目或获取项目文件的副本。
 
 > [!NOTE]
 >  这不适用于从代码生成的代码图和 .NET 类图。 这些关系图可以独立建模项目中查看。
@@ -53,7 +53,7 @@ ms.locfileid: "43775576"
 
  你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送已更新 **.layout**文件。
 
-##  <a name="RelatedTopics"></a> 相关的主题
+## <a name="RelatedTopics"></a> 相关的主题
 
 |标题|描述|
 |-----------|-----------------|

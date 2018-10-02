@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a0d17249ad15a8d5efd7717420a8b6a94115509f
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6567be5a82d4b344b3850a1a66e0b5b23f1b8f9d
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566763"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859089"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
-不可变性 API[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK 允许程序对锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
+Visual Studio 可视化和建模 SDK 的不可变性 API 允许程序锁定部分或全部域特定语言 (DSL) 模型，以便它可以读取但不是会更改。 无法使用此只读选项，例如，以便用户可以请求添加批注并查看 DSL 模型的同事，但可以禁止这些更改原始。
 
  此外，作为 DSL，作者可以定义*锁定策略。* 锁定策略定义哪些锁是允许、 不允许，或强制。 例如，当发布 DSL 时，您可以鼓励第三方开发人员能够扩展使用的新命令。 但也可以使用锁定策略以防止其更改模型的指定部分的只读状态。
 

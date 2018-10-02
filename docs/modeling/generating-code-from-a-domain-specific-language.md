@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 63599452347ce08140d4c530aa87f2deb938104d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 77d26595bd97a98ef9a4cd1f72c14739695bb755
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948088"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859843"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
-Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供一种强大的方法，从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]、 你可以创建一组类，表示数据，并可以编写你的文本模板中的类名称和属性将反映该数据。
+Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一种强大方法从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，可以创建一组类，表示数据，可以编写文本模板中的类名称和属性反映了该数据。
 
- 例如，Fabrikam 都有客户名称和电子邮件地址的 XML 文件。 其开发人员创建客户具有属性名称和电子邮件的类的模型。 他们编写多个文本模板处理的数据，包括此片段这样会生成 HTML 页的一部分的所有客户的表：
+ 例如，Fabrikam 有客户名称和电子邮件地址的一个 XML 文件。 其开发人员创建一个模型中的客户是一个类，使用属性名称和电子邮件。 他们编写多个文本模板来处理数据，包括此代码段的 HTML 页的一部分生成的所有客户表：
 
 ```
 <table>
@@ -29,28 +29,28 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供一种强大的方
 <# } #>  </table>
 ```
 
- 处理客户数据库时，XML 文件读取到模型存储区中。 A*指令处理器*、 通过使用创建[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，使 Customer 类可供代码文本模板中。 可以针对相同的存储运行多个文本模板。
+ 处理客户数据库时，XML 文件读取到模型存储区中。 一个*指令处理器*、 创建使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]，使客户类可供代码中的文本模板。 可以针对相同的存储区运行多个文本模板。
 
- 文本模板是至关重要的[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 它们用于生成域模型以及用于 VSPackage 和用于将集成在工具的控件的元素的源代码[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+ 文本模板对至关重要[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。 它们用于生成的 VSPackage 和用于与 Visual Studio 集成工具的控件以及在域模型元素的源代码。
 
- 本部分讨论如何创建、 修改和调试文本模板中使用的一些[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。
+ 本部分讨论的一些方法来创建、 修改和调试文本模板中使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]。
 
 ## <a name="in-this-section"></a>本节内容
  [从文本模板访问模型](../modeling/accessing-models-from-text-templates.md)
 
- 提供有关在文本模板中的域特定语言引用的基本信息。
+ 提供有关特定于域的语言在文本模板中引用的基本信息。
 
  [演练：调试访问模型的文本模板](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
- 描述如何执行故障排除和调试引用的域特定语言的文本模板上的操作。
+ 描述如何进行故障排除和调试特定于域的语言是指在文本模板。
 
  [演练：将主机连接到生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
- 介绍如何连接到生成的指令处理器的自定义主机。
+ 介绍如何连接到生成的指令处理器自定义主机。
 
  [DslTextTransform 命令](../modeling/the-dsltexttransform-command.md)
 
- 描述引用域特定语言的文本模板在命令行执行 TextTransform 可执行文件的命令文件。
+ 介绍引用域特定语言的文本模板在命令行执行的 TextTransform 可执行文件的命令文件。
 
 ## <a name="reference"></a>参考
  [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)
@@ -64,4 +64,4 @@ Microsoft[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供一种强大的方
 
  [生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)
 
- 如果要从在生成服务器上 DSL 生成文件，请阅读本主题。
+ 如果要从生成服务器上的 DSL 生成的文件，请阅读本主题。

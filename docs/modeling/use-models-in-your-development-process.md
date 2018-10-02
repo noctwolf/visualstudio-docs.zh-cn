@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d780f8ab293a9503f3c2c8675e4de1e3584b28
-ms.sourcegitcommit: d7209d61e812b34d06c2aa267bdf50fbc714d0e0
+ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2018
-ms.locfileid: "42623828"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859388"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -48,7 +48,7 @@ ms.locfileid: "42623828"
 
 ## <a name="use-models-with-other-artifacts"></a>将模型与其他项目使用
 
-一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此，模型应当与其他通信方法一起使用，如 OneNote 页面或段落、Microsoft Office 文档、[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作项，或项目文件室墙上的粘滞便笺。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
+一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此应与通信，如 OneNote 页面或段落、 Microsoft Office 文档、 工作项，在 Team Foundation 或项目文件室墙上的粘滞便笺中的其他方式一起使用的模型。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
 
 通常与模型一起使用的其他方面的规范包括以下内容。 具体取决于项目的大小和样式，你可以使用这些方面中的几个，也可以根本不适用它们：
 
@@ -88,7 +88,7 @@ ms.locfileid: "42623828"
 
 - 每次迭代接近结束时，举办一次需求研讨会，以详细定义将在下个迭代中开发的需求或用户情景。 邀请能够确定优先级的用户和业务利益干系人，以及开发人员和系统测试员。 允许用三个小时为一个 2 周的迭代定义需求。
 
-- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 该研讨会的输出是一个迭代积压工作：即 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的开发任务列表和 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 中的测试套件。
+- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 该研讨会的输出是一个迭代积压工作： 即，在 Team Foundation 和测试套件中的开发任务的列表[!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]。
 
 - 在需求研讨会中，仅在你需要为开发任务确定估计值的范围内讨论设计。 否则，请保持讨论用户可以直接体验的系统行为。 保持需求模型与体系结构模型分开。
 
@@ -96,7 +96,7 @@ ms.locfileid: "42623828"
 
 ### <a name="link-model-to-work-items"></a>将模型链接到工作项
 
-需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 你可以通过将 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作项链接到模型中的元素来实现此操作。
+需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 可以通过将 Team Foundation 中的工作项链接到模型中的元素来执行此操作。
 
 你可以将任意元素链接到工作项，但最有用的元素如下所示：
 
