@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b9c1aec06469e5ea0845a8658d9dcb88563e1984
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 7b20aed36dbde31b63956fa104c5c1a50e0088d1
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567163"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859297"
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
-您可以自定义外观和行为的属性窗口中你的域特定语言 (DSL) 中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 在 DSL 定义中，每个域类上定义域属性。 默认情况下，选择关系图上或在模型资源管理器中的类的实例时每个域的属性已列出在属性窗口中。 这样可以查看和编辑域属性的值即使您有不到关系图上的形状字段映射它们。
+你在 Visual Studio 中的特定于域的语言 (DSL)，可以自定义外观和行为的属性窗口。 在 DSL 定义中，每个域类上定义域属性。 默认情况下，选择关系图上或在模型资源管理器中的类的实例时每个域的属性已列出在属性窗口中。 这样可以查看和编辑域属性的值即使您有不到关系图上的形状字段映射它们。
 
 ## <a name="names-descriptions-and-categories"></a>名称、 说明和类别
  **名称和显示名称**。 在域属性的定义中，该属性的显示名称是在运行时在属性窗口中显示的名称。 与此相反，编写程序代码来更新属性时使用的名称。 名称必须是正确的 CLR 字母数字名称，但显示名称可以包含空格。

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5ee844da2c04a1dd6eac6a7ca458957dd22a71
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: a2c95219ea13e8d2e4d989a2ac9950c4d04e65bd
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45550604"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858188"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：标识符不应与关键字冲突
 |||
@@ -51,4 +51,4 @@ ms.locfileid: "45550604"
  关键字的列表中选择不会出现的名称。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 如果您确信标识符将混淆的 API，用户和库是所有可用语言中可用，可以禁止显示此规则的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 如果您确信标识符将混淆的 API，用户和库是在.NET Framework 中的所有可用语言中可用，可以禁止显示此规则的警告。

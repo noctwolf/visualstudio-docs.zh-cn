@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 08e18d654023dbf92f5c9e52fcd82f0c2ac3471c
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 45bc88be425acf8532debc47a28ee3ea20c18c71
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178457"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859622"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 文本模板编写准则
-这些常规准则可能会有帮助，如果要生成程序代码或中的其他应用程序资源[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 它们不被固定的规则。
+这些常规准则可能会有帮助，如果在 Visual Studio 中生成程序代码或其他应用程序资源。 它们不被固定的规则。
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>设计时 T4 模板的指导原则
- 设计时 T4 模板是模板，生成代码中的你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在设计时的项目。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+ 设计时 T4 模板是模板，在设计时在 Visual Studio 项目中生成代码。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
  生成的应用程序的可变方面。
 代码生成是最适用于这些方面可能会更改该项目，或将更改应用程序的不同版本之间的应用程序。 这些变量部分分开更固定的方面，以便可以更轻松地确定必须为其生成的内容。 例如，如果你的应用程序提供了一个网站，单独的标准页面服务定义到另一个页面中的导航路径的逻辑函数。
 
  对一个或多个源模型中的变量部分进行编码。
-模型是代码的文件或数据库的每个模板都可以读取以获得要生成的可变部分的特定值。 模型可以是数据库、 设计、 关系图或域特定语言的 XML 文件。 通常情况下，使用一个模型来生成多个文件中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 从单独的模板生成每个文件。
+模型是代码的文件或数据库的每个模板都可以读取以获得要生成的可变部分的特定值。 模型可以是数据库、 设计、 关系图或域特定语言的 XML 文件。 通常情况下，一个模型用于 Visual Studio 项目中生成多个文件。 从单独的模板生成每个文件。
 
  在项目中，可以使用多个模型。 例如，可以定义 web 页和页的布局的单独的模型之间的导航模型。
 
@@ -122,7 +122,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 ## <a name="guidelines-for-all-t4-templates"></a>对于所有 T4 模板的指导原则
  从文本生成的单独数据收集尽量避免混合计算和文本块。 在每个文本模板中，使用第一个\<# 代码块 #> 若要设置变量并执行复杂计算。 从模板或第一个末尾到第一个文本块\<#+ 类功能块 #>、 避免长表达式，并避免循环和条件语句，除非它们包含文本块。 这种做法使模板更轻松地阅读和维护。
 
- 不要使用`.tt`include 文件使用不同的文件扩展名如`.ttinclude`包含文件。 使用`.tt`仅为你想要的文件处理为运行时或设计时文本模板。 在某些情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可识别`.tt`文件，并自动设置其属性以进行处理。
+ 不要使用`.tt`include 文件使用不同的文件扩展名如`.ttinclude`包含文件。 使用`.tt`仅为你想要的文件处理为运行时或设计时文本模板。 在某些情况下，Visual Studio 能够识别`.tt`文件，并自动设置其属性以进行处理。
 
  以固定的原型中启动每个模板。
 编写你想要生成，并确保它是正确的代码或文本的示例。 然后将其扩展名更改为.tt 和以增量方式插入通过读取模型修改内容的代码。
