@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5562ed74de4dd1c7068fabef4f67fdc421ee03d6
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 22290b9a65e512ba897641b076d74927aee712c0
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381854"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860129"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -239,7 +239,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>当发生更改时运行验证
  如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了验证代码中，自定义代码将文件添加到您**DslPackage**项目，其内容类似于下面的示例。 此代码使用附加到文档的 `ValidationController`。 此控制器将在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误列表中显示验证错误。
+ 除了验证代码中，自定义代码将文件添加到您**DslPackage**项目，其内容类似于下面的示例。 此代码使用附加到文档的 `ValidationController`。 此控制器在 Visual Studio 错误列表中显示验证错误。
 
 ```csharp
 using System;
@@ -302,7 +302,7 @@ namespace Company.FamilyTree
 
  在影响链接或元素的“撤消”或“重做”操作后，还将调用处理程序。
 
-##  <a name="custom"></a> 自定义验证类别
+## <a name="custom"></a> 自定义验证类别
  除了标准验证类别（如“菜单”和“打开”），还可以定义自己的类别。 可以从程序代码调用这些类别。 用户无法直接调用它们。
 
  自定义类别通常用于定义测试模型是否满足特定工具的前提条件的类别。
@@ -330,7 +330,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");
 ```
 
-##  <a name="alternatives"></a> 验证的替代方法
+## <a name="alternatives"></a> 验证的替代方法
  验证约束报告错误，但不更改模型。 相反，如果你想要防止模型变为无效，则可以使用其他技术。
 
  但是，不建议使用这些技术。 通常，最好让用户决定如何更正无效的模型。

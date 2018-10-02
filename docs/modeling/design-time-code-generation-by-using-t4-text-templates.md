@@ -17,22 +17,22 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4bc2b55e0e287caea0db0c5fcdabccf454be0154
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567228"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860402"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
-使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
+设计时 T4 文本模板，您在 Visual Studio 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
 
  例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的需求更改时，很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。
 
 > [!NOTE]
 >  一个*模型*是描述应用程序的特定方面的数据源。 它可以是任何形式、任何类型的文件或数据库。 它不必是任何特定形式，例如 UML 模型或域特定语言模型。 典型的模型是表或 XML 文件形式。
 
- 你可能已熟悉代码生成。 在定义中的资源 **.resx**文件中您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案、 类和方法的一组自动生成。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。
+ 你可能已熟悉代码生成。 在定义中的资源 **.resx**自动生成 Visual Studio 解决方案、 类和方法的一组中的文件。 通过资源文件编辑资源比必须编辑类和方法要更加容易和可靠。 通过文本模板，可以使用相同的方式从自己设计的源中生成代码。
 
  文本模板包含你要生成的文本以及用于生成文本的变量部分的程序代码。 程序代码允许你重复或有条件地省略部分已生成的文本。 生成的文本本身可以是将组成应用程序一部分的程序代码。
 
@@ -40,7 +40,7 @@ ms.locfileid: "39567228"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中创建设计时 T4 模板
 
-1.  创建[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目，或打开现有实验。
+1.  创建 Visual Studio 项目，或打开现有实验。
 
      例如，在**文件**菜单中，选择**新建** > **项目**。
 
@@ -77,15 +77,15 @@ ms.locfileid: "39567228"
 ### <a name="regenerating-the-code"></a>重新生成代码
  在下列任何一种情况下，将执行模板，同时生成附属文件：
 
--   编辑该模板，然后将焦点更改到其他 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 窗口。
+-   编辑该模板，然后将焦点更改为不同的 Visual Studio 窗口。
 
 -   保存模板。
 
--   单击**转换所有模板**中**生成**菜单。 这将转换 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的所有模板。
+-   单击**转换所有模板**中**生成**菜单。 这将转换的 Visual Studio 解决方案中的所有模板。
 
 -   在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
 
- 还可以设置 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目，以便在模板读取的数据文件更改时执行这些模板。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
+ 此外可以设置 Visual Studio 项目，以便执行模板时，会读取数据文件已更改。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
 
 ## <a name="generating-variable-text"></a>生成可变文本
  通过文本模板，可以使用程序代码更改已生成文件的内容。
@@ -220,7 +220,7 @@ ms.locfileid: "39567228"
 <#@ import namespace="System.IO" #>
 ```
 
- `assembly` 指令使指定的程序集可供模板代码使用，方式与 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中的“引用”部分相同。 你无需包括对 System.dll 的引用，它是自动引用的。 `import` 指令允许你使用类型而不使用其完全限定名，方式与普通程序文件中的 `using` 指令相同。
+ `assembly`指令使指定的程序集可供模板代码中中的参考资料部分与 Visual Studio 项目的相同的方式。 你无需包括对 System.dll 的引用，它是自动引用的。 `import` 指令允许你使用类型而不使用其完全限定名，方式与普通程序文件中的 `using` 指令相同。
 
  例如，在导入后**System.IO**，可以编写：
 
@@ -274,8 +274,8 @@ ms.locfileid: "39567228"
 
  `this.Host` 的类型（在 VB 中是 `Me.Host`）是 `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`。
 
-### <a name="getting-data-from-includevsprvscode-qualityincludesvsprvsmdmd"></a>从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 获取数据
- 若要使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中提供的服务，请设置 `hostSpecific` 特性并加载 `EnvDTE` 程序集。 然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如：
+### <a name="getting-data-from-visual-studio"></a>从 Visual Studio 中获取数据
+ 若要使用 Visual Studio 中提供的服务，设置`hostSpecific`特性并加载`EnvDTE`程序集。 然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如：
 
 ```scr
 <#@ template hostspecific="true" language="C#" #>
@@ -293,8 +293,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  文本模板在它自己的应用域中运行，并通过封送访问服务。 在此情况下，GetCOMService() 比 GetService() 更可靠。
 
-##  <a name="Regenerating"></a> 自动重新生成代码
- 通常，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。
+## <a name="Regenerating"></a> 自动重新生成代码
+ 通常情况下，Visual Studio 解决方案中的多个文件都使用一个输入模型生成。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。
 
  如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，请选择**转换所有模板**上**生成**菜单。
 
@@ -314,19 +314,19 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
  有关详细信息，请参阅[生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)。
 
 ## <a name="error-reporting"></a>错误报告
- 若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误窗口中放置错误消息和警告消息，可以使用以下方法：
+ 若要在 Visual Studio 错误窗口中将错误和警告消息，可以使用这些方法：
 
 ```
 Error("An error message");
 Warning("A warning message");
 ```
 
-##  <a name="Converting"></a> 将现有文件转换为模板
+## <a name="Converting"></a> 将现有文件转换为模板
  模板的一个非常有用的功能是：它们看起来与其生成的文件（加上一些插入的程序代码）非常相似。 这暗示了创建模板的一种有用方法。 首先创建作为原型，一个普通的文件，如[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]文件，然后逐步引入可更改所生成文件的生成代码。
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板
 
-1.  对于你的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目，添加要生成的类型的文件，例如 `.cs`、`.vb` 或 `.resx` 文件。
+1.  将你想要生成，如类型的文件添加到你的 Visual Studio 项目`.cs`， `.vb`，或`.resx`文件。
 
 2.  测试新文件以确保其工作。
 
@@ -367,7 +367,7 @@ Warning("A warning message");
 |---------------|-----------|
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|
-|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
+|运行 Visual Studio 外部的文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|
 

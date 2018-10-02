@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1eb8492a1f4432eb54e7333eb59cd14eb06335b9
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: b4ab0a7cf012d2230437bceb96da80c78a4b493a
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176806"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858492"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 你可从模型生成或配置你的应用程序的不同部件。
@@ -22,7 +22,7 @@ ms.locfileid: "39176806"
  模型比代码更能直接表示要求。 与更新代码相比，通过直接从模型派生应用程序的行为，你可以更加快速可靠地对更改的需求做出响应。 尽管需要做一些初始工作来设置派生，但如果你预计要求会发生改变，或者你计划生成产品的几个变体，则这种投资是会有回报的。
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>从模型生成应用程序代码
- 生成代码的最便捷方法是使用模板。 可以在同一个生成代码[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案在其中保留的模型。 有关详细信息，请参见:
+ 生成代码的最便捷方法是使用模板。 你可以在其中保留的模型相同的 Visual Studio 解决方案中生成代码。 有关详细信息，请参见:
 
 -   [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 

@@ -9,21 +9,21 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 02d6dcfe0ed84b8f48af40162edb1ac4895c97fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 49329dab868e5d8fb1418915a27449de3cbd1f7e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950727"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858244"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 设计时文本模板中，`assembly` 指令可加载程序集，以便您的模板代码可使用其类型。 该作用类似于在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中添加程序集引用。
+在 Visual Studio 设计时文本模板中，`assembly`指令可加载程序集，以便在模板代码可以使用它的类型。 结果相当于将程序集引用添加到 Visual Studio 项目中。
 
- 编写文本模板的常规概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
+ 编写文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
 
 > [!NOTE]
->  运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，请添加必要的程序集到**引用**的你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。
+>  运行时（预处理）文本模板中不需要 `assembly` 指令。 相反，将添加到必需的程序集**引用**的 Visual Studio 项目。
 
 ## <a name="using-the-assembly-directive"></a>使用 Assembly 指令
  该指令的语法如下所示：
@@ -38,13 +38,13 @@ ms.locfileid: "31950727"
 
 -   程序集的绝对路径
 
- 你可以使用 `$(variableName)` 语法引用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 变量（如 `$(SolutionDir)`），以及使用 `%VariableName%` 来引用环境变量。 例如：
+ 可以使用`$(variableName)`语法来引用 Visual Studio 变量，如`$(SolutionDir)`，和`%VariableName%`来引用环境变量。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- 在预处理文本模板中，assembly 指令无效。 相反，包括在必要的引用**引用**部分你[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 在预处理文本模板中，assembly 指令无效。 相反，包括必要的引用**引用**部分中的 Visual Studio 项目。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
 ## <a name="standard-assemblies"></a>标准程序集
  将自动加载以下程序集，您无需为它们编写程序集指令：
@@ -65,8 +65,8 @@ ms.locfileid: "31950727"
 
 -   包含 DSL 的程序集。
 
-##  <a name="msbuild"></a> 使用在 MSBuild 和 Visual Studio 中的项目属性
- MSBuild 中，如 $ （solutiondir） 的 visual Studio 宏不起作用。 如果你想要在生成计算机中转换模板，则必须改用项目属性。
+## <a name="msbuild"></a> 使用 MSBuild 和 Visual Studio 中的项目属性
+ 在 MSBuild 中无法使用 visual Studio 宏 $ （solutiondir） 等。 如果你想要在生成计算机中转换模板，则必须改用项目属性。
 
  编辑 .csproj 或 .vbproj 文件以定义项目属性。 此示例定义一个名为 `myLibFolder` 的属性：
 

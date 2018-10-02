@@ -9,15 +9,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 20c4c9e9c91fd93a190463bc35fe016be4cdf838
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6e5f72b079af3c1c82783cb5bb91e676c0f14bf6
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949483"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859284"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
-如果你正在编写 Visual Studio 扩展，如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，则可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
+如果您正在编写 Visual Studio 扩展，如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
 
 ## <a name="getting-the-text-templating-service"></a>获取文本模板化服务
 
@@ -39,7 +39,7 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ## <a name="passing-parameters-to-the-template"></a>将参数传递给模板
  可以将参数传递给模板。 在模板内，可以使用 `<#@parameter#>` 指令获取参数值。
 
- 对于参数类型，必须使用可序列化的或可封送的类型。 也就是说，必须使用 <xref:System.SerializableAttribute> 声明该类型，或者它必须派生自 <xref:System.MarshalByRefObject>。 此限制是必要的，因为文本模板在单独的 AppDomain 中执行。 所有内置类型，例如**System.String**和**System.Int32**是可序列化。
+ 对于参数类型，必须使用可序列化的或可封送的类型。 也就是说，必须使用 <xref:System.SerializableAttribute> 声明该类型，或者它必须派生自 <xref:System.MarshalByRefObject>。 此限制是必要的，因为文本模板在单独的 AppDomain 中执行。 所有内置类型，如**System.String**并**System.Int32**是可序列化。
 
  为传递参数值，调用代码可将值放在 `Session` 字典或 <xref:System.Runtime.Remoting.Messaging.CallContext> 中。
 
@@ -78,7 +78,7 @@ string result = t4.ProcessTemplate("",
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>错误报告和输出指令
- 处理过程中出现的任何错误都将显示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误窗口中。 另外，你还可以通过指定实现 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> 的回调来获得错误通知。
+ 在 Visual Studio 错误窗口中，将显示处理过程中出现任何错误。 另外，你还可以通过指定实现 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> 的回调来获得错误通知。
 
  如果要将结果字符串写入文件，你可能需要知道模板的 `<#@output#>` 指令中指定的文件扩展名和编码。 此信息也将传递给你的回调。 有关详细信息，请参阅[T4 输出指令](../modeling/t4-output-directive.md)。
 
@@ -132,7 +132,7 @@ class T4Callback : ITextTemplatingCallback
 Sample text.
 ```
 
- 编辑器警告将显示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 错误窗口中，还将生成对 `ErrorCallback` 的调用。
+ 编译器警告将显示在 Visual Studio 错误窗口中，并且它还将生成调用`ErrorCallback`。
 
 ## <a name="reference-parameters"></a>引用参数
  可以使用从 <xref:System.MarshalByRefObject> 派生的参数类将值从文本模板传出。
@@ -140,6 +140,6 @@ Sample text.
 ## <a name="related-topics"></a>相关主题
  若要从预处理的文本模板生成文本： 调用`TransformText()`生成的类的方法。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 若要外生成文本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]扩展： 定义自定义宿主。 有关详细信息，请参阅[使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+ 若要在 Visual Studio 扩展外生成文本： 定义自定义宿主。 有关详细信息，请参阅[通过使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
- 若要生成源代码，可以稍后编译并执行： 调用`t4.PreprocessTemplate()`方法<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
+ 若要生成更高版本可以编译和执行的源代码： 调用`t4.PreprocessTemplate()`方法的<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。

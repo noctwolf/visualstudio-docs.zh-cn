@@ -1,0 +1,72 @@
+---
+title: CA1414： 标记布尔型 P-invoke 参数用 MarshalAs |Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- CA1414
+- MarkBooleanPInvokeArgumentsWithMarshalAs
+helpviewer_keywords:
+- CA1414
+- MarkBooleanPInvokeArgumentsWithMarshalAs
+ms.assetid: c0c84cf5-7701-4897-9114-66fc4b895699
+caps.latest.revision: 16
+author: gewarren
+ms.author: gewarren
+manager: wpickett
+ms.openlocfilehash: 5753affc1f635e322d17ea10617297d3ec71077a
+ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "47587646"
+---
+# <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414：用 MarshalAs 标记布尔型 P/Invoke 参数
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+本主题的最新版本，请参阅[CA1414： 标记布尔型 P-invoke 参数用 MarshalAs](https://docs.microsoft.com/visualstudio/code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas)。
+
+|||
+|-|-|
+|TypeName|MarkBooleanPInvokeArgumentsWithMarshalAs|
+|CheckId|CA1414|
+|类别|Microsoft.Interoperability|
+|是否重大更改|重大|
+
+## <a name="cause"></a>原因
+ 平台调用方法声明中包括<xref:System.Boolean?displayProperty=fullName>参数或返回值，但<xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName>属性不应用于参数或返回值。
+
+## <a name="rule-description"></a>规则说明
+ 将平台调用方法访问非托管的代码与使用定义`Declare`中的关键字[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 <xref:System.Runtime.InteropServices.MarshalAsAttribute> 指定用于托管和非托管代码之间转换数据类型的封送处理行为。 很多简单数据类型，如<xref:System.Byte?displayProperty=fullName>和<xref:System.Int32?displayProperty=fullName>、 在非托管代码中有一种表示形式和不需要其封送处理行为的规范; 公共语言运行时自动提供正确的行为。
+
+ <xref:System.Boolean>数据类型在非托管代码中有多种表示形式。 当<xref:System.Runtime.InteropServices.MarshalAsAttribute>未指定，默认封送处理行为<xref:System.Boolean>数据类型是<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 这是一个 32 位整数，不是适用于所有情况。 所需的非托管方法的布尔值表示应进行确定和匹配到适当<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>。 UnmanagedType.Bool 是 Win32 BOOL 类型，它始终为 4 个字节。 UnmanagedType.U1 应该用于 c + +`bool`或其他 1 字节类型。 有关详细信息，请参阅[默认为布尔值类型封送处理](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)。
+
+## <a name="how-to-fix-violations"></a>如何解决冲突
+ 若要修复此规则的冲突，请应用<xref:System.Runtime.InteropServices.MarshalAsAttribute>到<xref:System.Boolean>参数或返回值。 将属性的值设置为相应<xref:System.Runtime.InteropServices.UnmanagedType>。
+
+## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
+ 不禁止显示此规则发出的警告。 即使是合适的默认封送处理行为，当显式指定行为更轻松地维护代码。
+
+## <a name="example"></a>示例
+ 下面的示例演示两个平台调用标记有适当的方法<xref:System.Runtime.InteropServices.MarshalAsAttribute>属性。
+
+ [!code-cpp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cpp/FxCop.Interoperability.BoolMarshalAs.cpp#1)]
+ [!code-csharp[FxCop.Interoperability.BoolMarshalAs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/cs/FxCop.Interoperability.BoolMarshalAs.cs#1)]
+ [!code-vb[FxCop.Interoperability.BoolMarshalAs#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.BoolMarshalAs/vb/FxCop.Interoperability.BoolMarshalAs.vb#1)]
+
+## <a name="related-rules"></a>相关的规则
+ [CA1901：P/Invoke 声明应为可移植声明](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)
+
+ [CA2101：指定对 P/Invoke 字符串参数进行封送处理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+
+## <a name="see-also"></a>请参阅
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [默认封送处理的布尔值类型](http://msdn.microsoft.com/en-us/d4c00537-70f7-4ca6-8197-bfc1ec037ff9)[与进行互操作非托管代码](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+
+
+
