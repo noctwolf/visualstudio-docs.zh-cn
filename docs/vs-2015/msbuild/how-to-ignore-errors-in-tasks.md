@@ -1,0 +1,80 @@
+---
+title: 如何：忽略任务中的错误 | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: ''
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, ignoring errors
+- ContinueOnError attribute [MSBuild]
+ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
+caps.latest.revision: 21
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 186662f9c9bca72ca7ee840d1f2efc6437a7ccc4
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47478070"
+---
+# <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+本主题的最新版本，请参阅[如何： 忽略任务中的错误](https://docs.microsoft.com/visualstudio/msbuild/how-to-ignore-errors-in-tasks)。  
+  
+  
+有时你希望生成能够容忍某些任务中的错误。 如果这些非关键任务失败，你希望生成能够继续进行，因为它仍然可以产生所需的输出。 例如，如果一个项目在每个组件生成之后都使用 `SendMail` 任务发送电子邮件消息，那么即使邮件服务器变得不可用而导致状态邮件无法发送，但依然让生成继续完成，这一情况或许便是可以接受的。 或者，如果在生成过程中，中间文件通常会被删除，但即使无法删除这些文件，那么让生成继续完成也是可以接受的。  
+  
+## <a name="using-the-continueonerror-attribute"></a>使用 ContinueOnError 属性  
+ `Task` 元素的 `ContinueOnError` 属性控制在发生任务失败时，是停止还是继续生成。 此属性还可以控制在生成继续操作时，错误被视为错误还是警告。  
+  
+ `ContinueOnError` 属性可以包含下列值之一：  
+  
+-   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。  
+  
+-   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。  
+  
+-   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。  
+  
+ 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。  
+  
+ `ContinueOnError` 的默认值为 `ErrorAndStop`。 如果你将属性设置为 `ErrorAndStop`，则会使此行为对读取项目文件的任何人都显式可见。  
+  
+#### <a name="to-ignore-an-error-in-a-task"></a>忽略任务中的错误  
+  
+-   使用任务的 `ContinueOnError` 属性。 例如：  
+  
+     `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
+  
+## <a name="example"></a>示例  
+ 以下代码示例阐释即使 `Delete` 任务失败，`Build` 目标仍将运行并且生成将被视为成功。  
+  
+```  
+<Project DefaultTargets="FakeBuild"  
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+    <ItemGroup>  
+        <Files Include="*.obj"/>  
+    </ItemGroup>  
+    <Target Name="Clean">  
+        <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>  
+    </Target>  
+  
+    <Target Name="FakeBuild" DependsOnTargets="Clean">  
+        <Message Text="Building after cleaning..."/>  
+    </Target>  
+</Project>  
+```  
+  
+## <a name="see-also"></a>请参阅
+[MSBuild](msbuild.md)  
+ [任务参考](../msbuild/msbuild-task-reference.md)   
+ [任务](../msbuild/msbuild-tasks.md)
+
+
