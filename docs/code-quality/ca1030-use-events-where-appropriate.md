@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d1b0bac434ad7a182dc56ac08173646068623bd
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 31eb949588353a6f2f11ddbbdf516d1a5da63488
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45547538"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859727"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030：在适用处使用事件
 |||
@@ -45,10 +45,10 @@ ms.locfileid: "45547538"
 ## <a name="rule-description"></a>规则说明
  该规则检测名称通常用于事件的方法。 事件遵循观察者或发布-订阅设计模式;一个对象的状态更改必须传递给其他对象时使用它们。 如果调用的方法获取响应明确定义的状态更改，应通过事件处理程序调用该方法。 调用该方法的对象应引发事件而不是直接调用该方法。
 
- 在用户界面应用程序的用户操作，例如单击按钮会导致要执行的代码段中找到事件的一些常见示例。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型并不局限于用户界面; 应使用任何位置您必须进行通信的状态更改为一个或多个对象。
+ 在用户界面应用程序的用户操作，例如单击按钮会导致要执行的代码段中找到事件的一些常见示例。 .NET Framework 事件模型并不局限于用户界面;它应使用任何位置您必须进行通信的状态更改为一个或多个对象。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 如果对象的状态发生更改时调用该方法，则应考虑更改设计以确保使用[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型。
+ 如果对象的状态发生更改时调用该方法，则应考虑更改设计为使用.NET Framework 事件模式。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 如果该方法并不适用于禁止显示此规则的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]事件模型。
+ 如果该方法并不适用于.NET Framework 事件模型，禁止显示此规则的警告。
