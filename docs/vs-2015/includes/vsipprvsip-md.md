@@ -1,0 +1,1 @@
+Visual Studio 行业合作伙伴 (VSIP) 计划
