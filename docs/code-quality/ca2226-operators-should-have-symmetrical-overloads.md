@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f31abd49b2d9ef8c00e7d308d66583d968691f8
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 16dab94809d74bbea3400202e4920952b4d7e9f5
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549766"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860324"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：运算符应有对称重载
 |||
@@ -43,7 +43,7 @@ ms.locfileid: "45549766"
  若要解决此规则的冲突，可实现相等和不相等运算符或删除的存在。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不禁止显示此规则发出的警告。 你的类型不起与一致的方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
+ 不禁止显示此规则发出的警告。 你的类型不会与.NET Framework 是一致的方式。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1046：不要对引用类型重载相等运算符](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23b84b1ad2b29a842389fb2852abdcfb8e76ea92
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371090"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860506"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -112,7 +112,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 - [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 某些版本的 Visual Studio 支持依赖关系验证和代码映射的只读版本以进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+> 某些版本的 Visual Studio 支持依赖关系验证和代码映射的只读版本以进行可视化和建模。 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>了解和传达系统相关信息
 
@@ -169,12 +169,12 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 |------------------|-------------------|
 |*基于代码的类图*<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|代码中的现有类。|
 
-###  <a name="ValidatingCode"></a> 使代码与设计保持一致
+### <a name="ValidatingCode"></a> 使代码与设计保持一致
  Dinner Now 必须确保更新的代码与设计保持一致。 他们创建依赖项关系图的功能层的描述系统中，指定到了这些层，并将解决方案项目之间存在的依赖关系。
 
 |**关系图**|**描述**|
 |-----------------|-------------------|
-|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射中的项目到依赖项关系图[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]解决方案抽象组调用*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
+|*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射抽象组名为 Visual Studio 解决方案中的项目到依赖项关系图*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
 
  例如，以下依赖项关系图描述了层与每个层相关联的项目数之间的依赖关系：
 
@@ -224,7 +224,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 ### <a name="TestValidateCheckInCode"></a> 测试、 验证和签入代码
 
-当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 Team Foundation Server 接受其签入之前，团队会运行单元测试和依赖项验证，以验证针对其测试用例和设计代码。 他们使用 Team Foundation Server 来运行生成、 自动的单元测试和定期依赖项验证。 这有助于确保代码满足以下条件：
+当团队完成每个任务，它们其代码签入源代码管理，并收到来自 Team Foundation Server 的提醒，如果忘记了。 Team Foundation Server 接受其签入之前，团队会运行单元测试和依赖项验证，以验证针对其测试用例和设计代码。 他们使用 Team Foundation Server 来运行生成、 自动的单元测试和定期依赖项验证。 这有助于确保代码满足以下条件：
 
 - 有效。
 

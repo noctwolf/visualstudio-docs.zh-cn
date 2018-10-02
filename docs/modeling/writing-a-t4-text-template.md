@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f2427b54cd19e808bed217c981a95d70e4d020fd
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612709"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860389"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html >..."和所有其他标准部件的 HTML 页。 插入到模板中都*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
@@ -208,7 +208,7 @@ private void WriteSquareLine(int i)
 
  有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。
 
-###  <a name="Include"></a> 包括代码和文本
+### <a name="Include"></a> 包括代码和文本
  `include` 指令插入其他模板文件的文本。 例如，下面的指令插入 `test.txt` 的内容。
 
 ```
@@ -275,7 +275,7 @@ Content of MyFile.txt is:
 |----------|-----------|
 |编写模板。|[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |使用程序代码生成文本。|[文本模板的结构](../modeling/writing-a-t4-text-template.md)|
-|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
+|在 Visual Studio 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
+|运行 Visual Studio 外部的文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|
