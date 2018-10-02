@@ -9,24 +9,24 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ab671cfffdf43d9b69ecda7f06c27a0e8df6bf70
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a238eabbcba4f28b12f899de5b2d4eae30cfef9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775908"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858764"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本从[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]一起分发[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
 
- 作为的一部分提供迁移工具[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]。 该工具将为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目和解决方案的使用或定义 DSL 工具。
+ 作为的一部分提供迁移工具[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]。 工具将为 Visual Studio 项目和解决方案的使用或定义 DSL 工具。
 
- 您必须显式运行迁移工具： 它就不会启动自动打开中的解决方案时[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 可在下列路径找到的工具和详细的指导文档：
+ 您必须显式运行迁移工具： 它就不会启动自动在 Visual Studio 中打开解决方案时。 可在下列路径找到的工具和详细的指导文档：
 
  **%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
 ## <a name="before-you-migrate-your-dsl-projects"></a>将 DSL 项目的迁移之前
- 迁移工具修改[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目文件 (**.csproj**) 和解决方案文件 (**.sln**)。
+ 迁移工具修改 Visual Studio 项目文件 (**.csproj**) 和解决方案文件 (**.sln**)。
 
 #### <a name="to-prepare-projects-for-migration"></a>若要准备迁移项目。
 

@@ -9,18 +9,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b26f0a6b58a1851e7e348ff367fe81f31eec4a56
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 1c36d4d38079a74c27f41829852d3b4e242825d9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952649"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858959"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文本模板通常以 `template` 指令开头，该指令指定应如何处理模板。 文本模板及其包括的任何文件中不应有多个 template 指令。
+Visual Studio T4 文本模板通常以开头`template`指令，指定应如何处理模板。 文本模板及其包括的任何文件中不应有多个 template 指令。
 
- 编写文本模板的常规概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
+ 编写文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
 
 ## <a name="using-the-template-directive"></a>使用 Template 指令
 
@@ -33,7 +33,7 @@ ms.locfileid: "31952649"
 ## <a name="compileroptions-attribute"></a>compilerOptions 特性
  示例：`compilerOptions="optimize+"`
 
- 有效值： 任何有效的编译器选项。
+ 有效的值： 任何有效的编译器选项。
 
  对运行时（预处理过的）模板忽略。
 
@@ -58,9 +58,9 @@ debug="true"
 
  如果 `debug` 特性为 `true`，则中间代码文件将包含使调试器能够更精确地识别模板中出现中断或异常的位置的信息。
 
- 对于设计时模板，中间代码文件将写入到你 **%TEMP%** 目录。
+ 为设计时模板的中间代码文件将写入到您 **%TEMP%** 目录。
 
- 若要在调试器中运行设计时模板，请保存文本模板，然后在解决方案资源管理器中打开文本模板的快捷菜单并选择**调试 T4 模板**。
+ 若要在调试器中运行设计时模板，保存文本模板，然后在解决方案资源管理器中打开文本模板的快捷菜单，并选择**调试 T4 模板**。
 
 ## <a name="hostspecific-attribute"></a>hostspecific 特性
  示例:
@@ -72,9 +72,9 @@ hostspecific="true"
 
  如果将此特性的值设置为 `true`，则会将名为 `Host` 的属性添加到由文本模板生成的类中。 该属性是对转换引擎的宿主的引用，并声明为 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 如果已经定义了自定义宿主，则可以将其转换为自定义主机类型。
 
- 因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它是适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它也适用于[设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不是[运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 当 `hostspecific` 为 `true`，而且正在使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 时，可以将 `this.Host` 强制转换为 IServiceProvider，以访问 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如：
+ 当`hostspecific`是`true`和使用的 Visual Studio，可以强制转换`this.Host`为 IServiceProvider，以访问 Visual Studio 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如：
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,7 +128,7 @@ Squares of numbers:
  可以指定模板的程序代码可以继承自另一个类，这个类也可以从文本模板生成。
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>运行时（预处理过的）文本模板中的继承
- 可以在运行时文本模板之间使用继承，来创建具有多个派生变量的基本模板。 运行时模板也具有**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 运行时模板生成你可以在应用程序中调用的代码，以便创建模板中定义的文本。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
+ 可以在运行时文本模板之间使用继承，来创建具有多个派生变量的基本模板。 运行时模板是那些有**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。 运行时模板生成你可以在应用程序中调用的代码，以便创建模板中定义的文本。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
  如果不指定 `inherits` 特性，则会从您的文本模板生成基类和派生类。 指定 `inherits` 特性时，仅生成派生类。 您可以手动编写基类，但是它必须提供派生类所使用的方法。
 
@@ -200,11 +200,11 @@ This is the common footer.
 >  如果同时使用 `inherits` 和 `hostspecific` 特性，则请在派生类和基类中分别指定 hostspecific="trueFromBase" 和 host="true"。 这样可避免双重定义生成代码中的 `Host` 属性。
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>设计时文本模板中的继承
- 设计时文本模板是为其文件**自定义工具**设置为**TextTemplatingFileGenerator**。 该模板会生成代码或文本的输出文件，此文件将组成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目的一部分。 若要生成输出文件，首先要将模板转换为中间程序代码文件，你通常不会看到该文件。 `inherits` 特性为此中间代码指定基类。
+ 设计时文本模板是为其文件**自定义工具**设置为**TextTemplatingFileGenerator**。 该模板生成代码或文本，窗体 Visual Studio 项目的一部分输出的文件。 若要生成输出文件，首先要将模板转换为中间程序代码文件，你通常不会看到该文件。 `inherits` 特性为此中间代码指定基类。
 
  对于设计时文本模板来说，可以指定从 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName> 派生的任何基类。 使用 `<#@assembly#>` 指令来加载包含基类的程序集或项目。
 
- 有关详细信息，请参阅["继承在文本中的模板"Gareth Jones 博客](http://go.microsoft.com/fwlink/?LinkId=208373)。
+ 有关详细信息，请参阅["继承中的文本模板"Gareth Jones 博客中](http://go.microsoft.com/fwlink/?LinkId=208373)。
 
 ## <a name="linepragmas-attribute"></a>LinePragmas 特性
  示例：`linePragmas="false"`
@@ -215,7 +215,7 @@ This is the common footer.
 
  将此特性设置为 false 将移除标识你在生成代码中的行号的标记。 这意味着，编译器将通过使用生成代码的行号来报告所有错误。这将为你提供更多调试选项，如你可选择调试文本模板或生成代码。
 
- 如果你发现杂注中的绝对文件名导致源代码管理下让人分散注意力的合并，还可以帮助此属性。
+ 如果你发现杂注中的绝对文件名导致源代码管理下的让人分散注意力合并，此属性还可以帮助。
 
 ## <a name="visibility-attribute"></a>可见性特性
  示例：`visibility="internal"`

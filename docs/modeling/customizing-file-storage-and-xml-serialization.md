@@ -13,16 +13,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 2009e4c186682157eab6803ad3055fd5818fd02d
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511806"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860493"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
-当用户保存实例，或*模型*，域特定语言 (DSL) 中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，创建或更新的 XML 文件。 可以重新加载该文件以重新创建该模型存储区中。
+当用户保存实例，或*模型*，Visual Studio 中的特定于域的语言 (DSL)，创建或更新的 XML 文件。 可以重新加载该文件以重新创建该模型存储区中。
 
 可以通过调整下的设置自定义序列化方案**Xml 序列化行为**在 DSL 资源管理器。 在某个节点**Xml 序列化行为**为每个域类、 属性和关系。 关系都位于其源类下。 另外还有对应形状、 连接器和关系图类的节点。
 

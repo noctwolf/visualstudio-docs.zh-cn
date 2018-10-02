@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e087a7be95cfc6ba97d62720f2950672ca4bf199
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: bd22b0e28859ea153466b58f5f27ab458f5aa529
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45545574"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858939"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：程序集应具有有效的强名称
 
@@ -66,9 +66,9 @@ ms.locfileid: "45545574"
 
 使用以下过程之一：
 
-- 使用提供的程序集链接器工具 (Al.exe) [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK。
+- 使用.NET Framework SDK 提供的程序集链接器工具 (Al.exe)。
 
-- 有关[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]v1.0 或 v1.1，使用<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
+- 对于.NET Framework v1.0 或 v1.1 中，使用两种<xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>或<xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>属性。
 
 - 有关[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]，可以使用两种`/keyfile`或`/keycontainer`编译器选项[/KEYFILE （指定密钥或密钥对以便为程序集签名）](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly)或[/KEYCONTAINER （指定密钥容器以便为程序集签名）](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) c + + 中的链接器选项)。
 
@@ -92,7 +92,7 @@ ms.locfileid: "45545574"
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>使用 Visual Studio 外部强名称对程序集签名
 
-使用提供的强名称工具 (Sn.exe) [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] SDK。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。
+使用强名称工具 (Sn.exe) 提供的.NET Framework SDK。 有关详细信息，请参阅 [Sn.exe （强名称工具）](/dotnet/framework/tools/sn-exe-strong-name-tool)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
 

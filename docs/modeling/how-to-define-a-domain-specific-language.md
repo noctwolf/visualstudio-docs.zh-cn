@@ -18,19 +18,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 314fe4fb88fedb1b287c41fddd9aef4a20bbd1af
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 56381b86b367d7ca93c43b2918d98eb0fdc092bb
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774927"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860480"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义特定于域的语言 (DSL)，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
 
 如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
 
-##  <a name="templates"></a> 选择模板解决方案
+## <a name="templates"></a> 选择模板解决方案
  若要定义 DSL，必须安装以下组件：
 
 |||
@@ -122,7 +122,7 @@ ms.locfileid: "43774927"
 
  删除或重命名其他类以满足你的要求。
 
-##  <a name="patterns"></a> 用于定义 DSL 的模式
+## <a name="patterns"></a> 用于定义 DSL 的模式
  建议通过一次添加或调整一个或两个功能来开发 DSL。 添加功能、运行 DSL 并对其进行测试，然后再多添加一个或两个功能。 你的 DSL 的典型功能可能是：
 
 -   域类、将元素连接到模型的嵌入关系、在关系图上显示该类的元素所需的形状，以及允许用户创建元素的元素工具。
@@ -149,7 +149,7 @@ ms.locfileid: "43774927"
 > [!NOTE]
 >  “模型”是指用户创建的 DSL 的实例，并且通常显示为关系图。 本主题讨论了 DSL 定义关系图和在使用 DSL 时显示的模型关系图。
 
-##  <a name="classes"></a> 定义域类
+## <a name="classes"></a> 定义域类
  域类表示 DSL 的概念。 两个实例*模型元素*。 例如在**MusicLibrary** DSL 可能具有名为的域类**唱片集**并**歌曲**。
 
  若要创建域类，可以将从**名为域类**到关系图中，工具，然后将类重命名。
@@ -231,7 +231,7 @@ ms.locfileid: "43774927"
 
 7.  **保存该文件，其关闭，然后重新打开它**。 在展开节点后，你创建的所有实例都应在资源管理器中可见。
 
-##  <a name="shapes"></a> 在关系图上定义形状
+## <a name="shapes"></a> 在关系图上定义形状
  可以将显示在关系图上的元素的类定义为矩形、椭圆或图标。
 
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定义显示为关系图上的形状的元素的类
@@ -327,7 +327,7 @@ ms.locfileid: "43774927"
 
  在首次测试形状后，你可能想要调整它的某些属性并添加一些更高级的功能。 有关详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-##  <a name="references"></a> 定义引用关系
+## <a name="references"></a> 定义引用关系
  可以在任何源域类和任何目标域类之间定义引用关系。 引用关系通常在关系图上显示为连接符，它们是形状之间的线条。
 
  例如，如果音乐 Album 和 Artist 在关系图上显示为形状，则可以定义名为 ArtistsAppearedOnAlbums 的关系，该关系可将 Artist 链接到所参与的 Album。 请参阅图中的示例。
@@ -409,7 +409,7 @@ ms.locfileid: "43774927"
 
  在首次测试连接符后，你可能想要调整它的某些属性并添加一些更高级的功能。 有关详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-##  <a name="compartments"></a> 定义包含列表的形状： 隔离舱形状
+## <a name="compartments"></a> 定义包含列表的形状： 隔离舱形状
  隔离舱形状包含一个或多个项列表。 例如，在“音乐库”DSL 中，可以使用隔离舱形状来表示音乐 Album。 在每个 Album 中，存在一个 Song 列表。
 
  ![隔离舱形状](../modeling/media/compartmentshape.png)
@@ -537,7 +537,7 @@ ms.locfileid: "43774927"
 
 7.  在隔离舱形状中选择链接或项。 链接和项都应消失。
 
-##  <a name="ports"></a> 定义另一个形状的边界上的端口
+## <a name="ports"></a> 定义另一个形状的边界上的端口
  端口是位于另一个形状的边界上的形状。
 
  端口可以用于在另一个形状上提供固定连接点，用户可以将连接符绘制到端口。 在这种情况下，可以使端口形状变为透明。
@@ -560,7 +560,7 @@ ms.locfileid: "43774927"
 
  有关详细信息，请参阅[端口形状属性](../modeling/properties-of-port-shapes.md)。
 
-##  <a name="swimlanes"></a> 定义具有泳道的 DSL
+## <a name="swimlanes"></a> 定义具有泳道的 DSL
  泳道是关系图中的水平或垂直分区。 每个泳道都对应于一个模型元素。 DSL 定义需要一个用于泳道元素的域类。
 
  创建具有泳道的 DSL 的最佳方式是创建新 DSL 解决方案并选择“任务流”解决方案模板。 在 DSL 定义中，Actor 类是映射到泳道的域类。 重命名此类和其他类以符合你的项目。
@@ -571,7 +571,7 @@ ms.locfileid: "43774927"
 
  有关详细信息，请参阅[属性的泳道](../modeling/properties-of-swimlanes.md)。
 
-##  <a name="addTypes"></a> 添加属性类型
+## <a name="addTypes"></a> 添加属性类型
 
 ### <a name="domain-enumerations-and-literals"></a>域枚举和文本
  域枚举是具有多种文本值的类型。
@@ -587,7 +587,7 @@ ms.locfileid: "43774927"
 
  要添加一种类型，请右键单击 DSL 资源管理器中的模型的根，然后单击**添加新的外部类型**。 在属性窗口中，将名称设置为**颜色**和到命名空间**System.Drawing**。 此类型现在将显示在 DSL 资源管理器下**域类型**。 无论何时设置域属性的类型，你都可以选择此类型。
 
-##  <a name="custom"></a> 自定义 DSL
+## <a name="custom"></a> 自定义 DSL
  使用本主题中所述的技术，可以通过关系图表示法、可读 XML 格式以及生成代码和其他项目所需的基础工具快速创建 DSL。
 
  有两种扩展 DSL 定义的方法：
@@ -607,7 +607,7 @@ ms.locfileid: "43774927"
 
  另请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。
 
-##  <a name="trouble"></a> 故障排除
+## <a name="trouble"></a> 故障排除
  下表列出了在设计 DSL 时遇到的一些最常见问题，以及其解决方案的建议。 上提供了更多建议[可视化工具扩展性论坛](http://go.microsoft.com/fwlink/?LinkId=186074)。
 
 |问题|建议|
@@ -619,7 +619,7 @@ ms.locfileid: "43774927"
 |在 DSL 的资源管理器中，只显示元素及其类型名称。|在 DSL 定义中，选择域属性的类并在属性窗口中，设置**元素名称**为 true。|
 |始终在 XML 编辑器中打开 DSL。|发生这种情况是由于在读取文件的同时出现一个错误。 但是，即使在修复该错误后，也必须显式将该编辑器重置为 DSL 设计器。<br /><br /> 右键单击项目项，单击**打开**，然后选择_YourLanguage_**设计器 （默认值）**。|
 |在更改程序集名称后，不会显示 DSL 的工具箱。|检查并更新**DslPackage\GeneratedCode\Package.tt**有关详细信息，请参阅[如何： 更改域特定语言的 Namespace](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。|
-|不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单下**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.在 Visual Studio**构建**菜单上，单击**重新生成解决方案**。|
+|不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。|重置实验实例，并重新生成解决方案。<br /><br /> 1.在 Windows 开始菜单下**所有程序**，展开[!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)]，然后**工具**，然后单击**重置 Microsoft Visual Studio 实验实例**。<br />2.上**构建**菜单上，单击**重新生成解决方案**。|
 
 ## <a name="see-also"></a>请参阅
 
