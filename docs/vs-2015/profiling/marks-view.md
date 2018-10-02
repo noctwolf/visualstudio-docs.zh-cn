@@ -1,0 +1,64 @@
+---
+title: “标记”视图 | Microsoft Docs
+ms.custom: ''
+ms.date: 2018-06-30
+ms.prod: visual-studio-dev14
+ms.reviewer: ''
+ms.suite: ''
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: ''
+ms.topic: article
+f1_keywords:
+- vs.performance.view.marks
+helpviewer_keywords:
+- profiling tools, Marks view
+- profiling tools reports, Marks view
+ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
+caps.latest.revision: 23
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0575d033916486ef4d8e5d9545ae07d0cd3973e4
+ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "47469122"
+---
+# <a name="marks-view"></a>“标记”视图
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+本主题的最新版本，请参阅[标记视图](https://docs.microsoft.com/visualstudio/profiling/marks-view)。  
+  
+“标记”视图显示插入到应用程序的采样和 ETW 事件。  
+  
+ 在报表中预先填充的默认标记可用来标记程序开始和程序结束。  
+  
+ 来自自动生成的标记的 Windows 计数器数据也显示在此视图中。 有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。  
+  
+ 若要创建两个标记之间的筛选器，请选择标记，右键单击，然后单击“添加筛选器(按标记)”或“添加筛选器(按时间戳)”。  
+  
+ 下表提供了“标记”视图中可用列的定义。  
+  
+ **标记 ID**  
+ 分析标记的唯一标识符。  
+  
+ **标记名**  
+ 事件的名称。  
+  
+ **时间戳**  
+ 从开始分析到记录事件的时间。  
+  
+ Windows 性能计数器数据  
+ 收集 Windows 性能计数器数据时，值将显示在具有该计数器名称的列中。  
+  
+## <a name="see-also"></a>请参阅  
+ [性能报告概述](../profiling/performance-report-overview.md)   
+ [< PAVE_OVER > 如何： 配置分析标记](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > 如何： 在 Profiler 数据文件中插入标记](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)   
+ [&#91;NIB&#93; 数据收集控件窗口](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+
+
+
