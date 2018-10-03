@@ -9,17 +9,17 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: d826787a028aba4f5397ce5577acf60f67120973
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39567336"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859219"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。
 
- 每当你的程序代码修改、 添加，或删除中的存储区中的任何元素[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可视化和建模 SDK，它必须在事务内执行此操作。 必须有应用的活动实例<xref:Microsoft.VisualStudio.Modeling.Transaction>更改发生时与应用商店相关联。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。
+ 每次您的程序代码修改、 添加，或删除 Visual Studio 可视化和建模 SDK 中的存储区中的任何元素，它必须在事务内执行。 必须有应用的活动实例<xref:Microsoft.VisualStudio.Modeling.Transaction>更改发生时与应用商店相关联。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。
 
  事务机制可帮助您避免不一致的状态。 如果在事务期间发生错误，将回滚所有更改。 如果用户执行的撤消命令时，每个新的事务被视为单步执行。 除非显式将其放在单独的事务，则用户不能撤消的最新更改的部分。
 

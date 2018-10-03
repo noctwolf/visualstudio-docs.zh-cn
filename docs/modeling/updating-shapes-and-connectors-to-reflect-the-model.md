@@ -9,42 +9,42 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 313ae439ffa934341f4a911ebaab1874141547d4
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: e436999b16a89f4956f0fef48a8878a7f609d1f9
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950408"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47860038"
 ---
-# <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接符以反映模型
+# <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 
-域特定语言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，你可以反映的基础模型的状态的形状的外观。
+在 Visual Studio 中特定于域的语言中，可以使形状的外观反映基础模型的状态。
 
-本主题中的代码示例应添加到`.cs`文件在你`Dsl`项目。 你需要每个文件中的这些语句：
+本主题中的代码示例应添加到`.cs`文件中您`Dsl`项目。 你需要每个文件中的这些语句：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
 using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>设置形状地图属性以控制可见性修饰器
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>设置形状映射的属性以控制修饰器的可见性
 
-你可以控制的可见性修饰器，而无需编写程序代码中，通过配置 DSL 定义中的形状和域类之间的映射。 有关详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。
+您可以控制修饰器的可见性，而无需编写程序代码中，通过在 DSL 定义中配置形状和域类之间的映射。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
 
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>将作为属性公开的颜色和样式的形状
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>将作为属性公开的颜色和形状的样式
 
-在 DSL 定义中，右击形状类，指向**添加公开**，然后单击某一项如**填充颜色**。
+在 DSL 定义中，右键单击形状类、 指向**添加公开**，然后单击某一项诸如**填充颜色**。
 
-形状现在具有一个域属性，你可以在程序代码中或作为用户设置。 例如，若要在命令或规则的程序代码中设置它，你可以编写：
+现在，该形状具有域设置的属性，您可以在程序代码中或以用户身份。 例如，若要将其设置的命令或规则的程序代码中，可以编写：
 
 `shape.FillColor = System.Drawing.Color.Red;`
 
-如果你想要使属性变量，仅在程序控制，而不是用户，选择新的域属性，如**填充颜色**DSL 定义关系图中。 然后，在属性窗口中，设置**是可浏览**到`false`或设置**是 UI Readonly**到`true`。
+如果你想要使属性变量仅在程序控制，而不是由用户，选择新的域属性，如**填充颜色**DSL 定义关系图中。 然后，在属性窗口中设置**是可浏览**到`false`，或者设置**是 UI Readonly**到`true`。
 
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定义更改规则，以使颜色、 样式或依赖于模型元素属性的位置
- 你可以定义更新依赖于模型的其他部分的形状的外观的规则。 例如，你可以更改规则定义更新其依赖于模型元素的属性的形状的颜色的模型元素。 有关更改规则的详细信息，请参阅[规则传播更改内模型](../modeling/rules-propagate-changes-within-the-model.md)。
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定义更改规则，以使颜色、 样式或位置取决于模型元素属性
+ 可以定义规则，更新依赖于模型的其他部分的形状的外观。 例如，您可以更新其依赖于模型元素的属性的形状的颜色的模型元素上定义更改规则。 有关更改规则的详细信息，请参阅[规则将传播的更改中的模式](../modeling/rules-propagate-changes-within-the-model.md)。
 
- 应使用规则仅用于更新内应用商店中，保留的属性，因为规则不会在执行撤销命令时调用。 这不包括一些图形功能，例如大小和形状的可见性。 若要更新的一种形状的这些功能，请参阅[更新非存储图形功能](#OnAssociatedProperty)。
+ 应使用规则仅用于更新的存储中维护的属性，因为规则不会在执行撤消命令时调用。 这不包括某些图形功能，例如大小和形状的可见性。 若要更新形状的这些功能，请参阅[更新应用商店的非图形功能](#OnAssociatedProperty)。
 
  下面的示例假定你具有公开`FillColor`作为域属性上一节中所述。
 
@@ -87,7 +87,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化形状的属性
 
-若要设置形状的属性，第一个时创建，重写`OnChildConfigured()`图类的分部定义中。 关系图类指定在 DSL 定义中，并且生成的代码是在**Dsl\Generated Code\Diagram.cs**。 例如：
+若要设置形状的属性，首次创建、 重写`OnChildConfigured()`在关系图类的分部定义中。 在 DSL 定义中，指定的关系图类和生成的代码处于**Dsl\Generated Code\Diagram.cs**。 例如：
 
 ```csharp
 partial class MyLanguageDiagram
@@ -110,13 +110,13 @@ partial class MyLanguageDiagram
 
 ```
 
-域属性和非应用商店功能，例如形状的大小，则可以使用此方法。
+可以使用此方法，为域属性和非应用商店功能，例如形状的大小。
 
-##  <a name="OnAssociatedProperty"></a> 使用 AssociateValueWith() 更新形状的其他功能
+## <a name="OnAssociatedProperty"></a> 使用 AssociateValueWith() 更新形状的其他功能
 
-对于一个形状上，例如是否具有阴影或连接器的箭头样式的某些功能公开域属性的功能没有内置方法。  此类功能的更改不受控制的事务系统中。 因此，不合适更新它们使用规则，因为用户执行撤销命令时，不会调用规则。
+形状，例如是否具有阴影或连接器的箭头样式的某些功能没有公开为域属性的功能的内置方法。  此类功能的更改不受控制的事务系统中。 因此，不适合更新这些使用规则，因为当用户执行撤消命令不会调用规则。
 
-相反，您可以通过使用更新此类功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下面的示例中，连接器的箭头样式控制的连接器显示的关系中的域属性值：
+相反，可以通过使用更新此类功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在以下示例中，由连接器显示在关系中的域属性的值控制连接线的箭头样式：
 
 ```csharp
 public partial class ArrowConnector // My connector class.
@@ -157,6 +157,6 @@ public partial class ArrowConnector // My connector class.
 }
 ```
 
-`AssociateValueWith()` 应调用一次为每个你想要注册的域属性。 已调用后，将调用对指定的属性的任何更改`OnAssociatedPropertyChanged()`中存在该属性的模型元素的任何形状。
+`AssociateValueWith()` 应调用一次为每个你想要注册的域属性。 已调用后，将调用对指定的属性的任何更改`OnAssociatedPropertyChanged()`中存在该属性的模型元素的所有形状。
 
-不需要调用`AssociateValueWith()`每个实例。 尽管 InitializeResources 是实例方法，它被调用一次只能为每个形状类。
+不需要调用`AssociateValueWith()`每个实例。 尽管 InitializeResources 是实例方法，但它是只调用一次为每个形状类。

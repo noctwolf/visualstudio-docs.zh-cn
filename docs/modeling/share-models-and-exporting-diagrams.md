@@ -12,31 +12,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3aa9a3157731d70971d15c514a088af761360848
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7210a5c156b779b9064f72db9cab5445d0ce20c3
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31948296"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47858349"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共享模型和导出关系图
 在 Visual Studio 中，你可以通过多种方式与同事共享模型和关系图。
 
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
 ## <a name="working-on-a-model-as-a-team"></a>作为团队处理模型
  Visual Studio 的用户可以创建和编辑模型、 依赖项关系图和定向关系图。
 
- 不同的用户可以同时在模型上工作，但应适用于不同的包。
+ 不同的用户可以同时在一个模型上工作，但应适用于不同的包。
 
- 我们建议你使用 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]。
-
- 有关组织中型或大型项目中的模型的建议，请参阅[结构建模解决方案](../modeling/structure-your-modeling-solution.md)。
+ 组织在中型或大型项目中的模型的建议，请参阅[安排建模解决方案](../modeling/structure-your-modeling-solution.md)。
 
 ## <a name="reading-and-reviewing-models"></a>读取和查看模型
- 使用某些版本的 Visual Studio （这不能创建模型） 的团队成员可以读取模型、 建模关系图和定向关系图，但不能对其进行编辑。  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+ 使用某些版本的 Visual Studio （它不能创建模型） 的团队成员可以读取模型中，建模图和定向关系图，但不能对其进行编辑。  若要查看哪些版本的 Visual Studio 支持此功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
- 仅在其中创建的模型中，可以打开依赖项关系图。 若要提供对关系图的访问，你必须提供对所有建模项目文件的访问，或提供其副本。
+ 仅在其中创建该模型中，可以打开依赖项关系图。 若要提供对关系图的访问，你必须提供对所有建模项目文件的访问，或提供其副本。
 
  有关详细信息，请参阅[读取模型和其他 Visual Studio 版本中的关系图](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)。
 
