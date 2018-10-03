@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b49e5659787420c90fb708f21b2810bb56fea1
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
+ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542589"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48243947"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>检查 Visual Studio 中使用 IntelliTrace 后退的上一个应用程序状态
 
@@ -106,6 +106,8 @@ IntelliTrace 事件的唯一模式允许您进行激活历史调试对调试器�
 * 如果使用 IntelliTrace 事件和快照模式下的早于 Windows 10 Fall Creators Update (RS3) 的 Windows 版本上，并且如果应用程序的调试平台目标设置为 x86，IntelliTrace 不拍摄快照。
 
     解决方法：
+    * 如果您是在 Windows 10 周年更新 (RS1) 及更低版本 10.0.14393.2273，[安装 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
+    * 如果您是在 Windows 10 创意者更新 (RS2) 及更低版本 10.0.15063.1112，[安装 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
     * 安装或升级到 Windows 10 Fall Creators Update (RS3)。 
     * 或者： 
         1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
