@@ -2,7 +2,7 @@
 title: 创建 Node.js 和 Express 应用
 description: 在本教程中，使用 Visual Studio 的 Node.js 工具创建应用
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2093f8a2f2d048661b7fb23f45c5317011f25076
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 8e7a1d04b83ffef2f7ec6efc786af6f5bc6e992e
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124913"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168339"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 本教程介绍如果使用 Node.js 和 Express 进行 Visual Studio 开发，教程会创建一个简单的 Node.js Web 应用，添加一些代码，浏览 IDE 的某些功能并运行应用。 如果尚未安装 Visual Studio，请在[此处](http://visualstudio.microsoft.com)免费安装。
@@ -192,9 +192,11 @@ IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-1. 在调试工具栏中选择调试目标。
+1. 在调试工具栏中选择调试目标，例如 Edge 或 Chrome。
 
     ![选择调试目标](../javascript/media/tutorial-nodejs-deploy-target.png)
+
+    如果计算机上有 Chrome，但未显示为选项，请从调试目标下拉列表中选择“浏览方式”，然后选择 Chrome 作为默认浏览器目标（选择“设为默认值”）。
 
 1. 按 F5（“调试” > “启动调试”）来运行该应用程序。
 
