@@ -1,7 +1,7 @@
 ---
 title: 安装 Python 支持
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
-ms.date: 06/26/2018
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a01f8bbc90beb4e6dab5ff9b0d7d745778c3c2d
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627171"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168365"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -25,8 +25,6 @@ ms.locfileid: "42627171"
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 及更早版本](#visual-studio-2013-and-earlier)
-
-对于 Visual Studio 2015 及更早版本，还需要单独[安装 Python 解释器](installing-python-interpreters.md)（Python 3.5 及更早版本；3.6+ 不受支持且会生成“Python 版本 3.6 不受支持”之类的消息）。 该页面还包含如何将现有 Python 解释器添加到 Visual Studio 2017 中的说明。
 
 若要在执行安装步骤后快速测试 Python 支持，请按 Alt+I 并输入 `2+2` 打开 Python 交互式窗口。 如果看不到输出 `4`，请重新检查步骤。
 
@@ -96,7 +94,7 @@ ms.locfileid: "42627171"
 
     ![Visual Studio 2015 安装程序中的 PTVS 选项](media/installation-vs2015.png)
 
-1. Visual Studio 安装程序完成后，[安装所选的 Python 解释器](installing-python-interpreters.md)。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
+1. Visual Studio 安装程序完成后，[安装所选的 Python 解释器](installing-python-interpreters.md)。 Visual Studio 2015 仅支持 Python 3.5 及更早版本；更高版本生成类似“Python 3.6 版本不受支持”的消息。 如果你已安装解释器且 Visual Studio 不会自动检测它，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 及更早版本
 

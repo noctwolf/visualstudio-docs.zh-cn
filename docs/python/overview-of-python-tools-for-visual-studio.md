@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef83d9caebbeea1496a627282ba2c30b47cc0e22
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: fe19c1239c2f08417b1b7ee76cb07ae150c891d1
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45552105"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47029142"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -30,7 +30,7 @@ Python 目前不支持在 Visual Studio for Mac 中使用，但可通过 Visual 
 
 - 按照[安装说明](installing-python-support-in-visual-studio.md)安装 Python 工作负载。
 - 通过本文中各部分的内容熟悉 Visual Studio 的 Python 功能。 还可以[观看视频系列（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121)，了解 Visual Studio 中的 Python（共 22 分钟）。
-- 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[通过 Flask 创建 Web 应用](../ide/quickstart-python.md?context=visualstudio/python/default)开始。
+- 阅读一个或多个指导如何创建项目的快速入门教程。 如果不确定，可先从[通过 Flask 创建 Web 应用](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)开始。
 - 按照[在 Visual Studio 中使用 Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) 教程操作，获得完整的端到端体验。
 
 ## <a name="support-for-multiple-interpreters"></a>对多个解释器的支持
@@ -45,7 +45,7 @@ Visual Studio 的“Python 环境”窗口（下方为其扩展后的加宽视�
 
 - 视频（2 分 35 秒）：[管理 Python 环境](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567)
 - 文档：[管理 Python 环境](managing-python-environments-in-visual-studio.md)
-- 文档：[“Python 环境”窗口引用](python-environments-window-tab-reference.md)
+- 文档：[“Python 环境”引用](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>多种多样的编辑、IntelliSense 和代码理解
 

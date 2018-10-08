@@ -30,7 +30,7 @@ ms.locfileid: "47469455"
  使用时，您必须选择父类和子类**关联编辑器**对话框来创建的关联。 父类是包含主键的实体类；子类是包含外键的实体类。 例如，如果创建映射到 Northwind Customers 和 Orders 表的实体类，则 Customer 类将是父类，而 Order 类将是子类。  
   
 > [!NOTE]
->  当您将从表**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)]([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，自动创建基于现有关联在数据库中的外键关系。  
+>  当您将从表**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，自动创建基于现有关联在数据库中的外键关系。  
   
  在 O/R 设计器中选择该关联时创建关联后，就会中的某些可配置属性**属性**窗口。 （关联是用相关类之间的连线表示的。）下表提供对关联的属性的说明。  
   

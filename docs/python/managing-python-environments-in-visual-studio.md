@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1efa65542fa22f1cb8cfb8c6988b18d86ea66c9b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 2c7706e635cc159b7ae85274d46c2be762926ccc
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320814"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551255"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -78,7 +78,7 @@ conda 环境文件夹如下所示：
 ## <a name="the-python-environments-window"></a>“Python 环境”窗口
 
 > [!Note]
-> 本节中所示的屏幕截图表示 Visual Studio 15.8。 根据 Visual Studio 的版本，UI 可能会略有不同。
+> 本节中所示的屏幕截图表示 Visual Studio 15.8。 根据 Visual Studio 的版本，UI 可能会不同。
 
 Visual Studio 了解的环境显示在“Python 环境”窗口中。 要打开该窗口，请使用以下某个方法：
 

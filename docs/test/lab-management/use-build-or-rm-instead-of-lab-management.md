@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用 Build Management 或 Release Management 进行自动测试
+title: 通过生成或发布管理过程进行自动测试
 ms.date: 03/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,14 +11,14 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cc8935db33f5c4b584cf825a46ae62f0d31d2351
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
+ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320613"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46135590"
 ---
-# <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build Management 或 Release Management（而不是实验室管理工具版）进行自动测试
+# <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 代替实验室管理工具版进行自动测试
 
 如果使用 Microsoft 测试管理器 (MTM) 和实验室管理工具版进行自动测试或生成-部署-测试自动化，请参阅本主题，本主题介绍了如何使用 Team Foundation Server (TFS) 和 Azure Test Plans 中的[生成和发布](/azure/devops/pipelines/index?view=vsts)功能实现相同的目的。
 
@@ -64,7 +64,7 @@ MTM 和实验室管理工具版依赖 XAML 生成定义来自动生成、部署�
 | 连接到计算机。 | 在“环境查看器”中打开实验室环境。 | 使用 SCVMM 管理控制台直接连接到虚拟机。 或者使用虚拟机的 IP 地址或 DNS 名称打开远程桌面会话。 |
 | 执行环境的检查点，或将环境还原到干净的检查点。 | 在“环境查看器”中打开实验室环境。 选择执行检查点或还原到之前的检查点的选项。 | 使用 SCVMM 管理控制台直接对虚拟机执行这些操作。 或者若要在更大的自动化过程中执行这些步骤，则在发布定义的环境中包括 [SCVMM 集成扩展](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)中的检查点任务。 |
 
-## <a name="creation-of-network-isolated-environments"></a>创建网络隔离环境
+## <a name="create-network-isolated-environments"></a>创建已隔离网络的环境
 
 网络隔离实验室环境是一系列 SCVMM 虚拟机，这些虚拟机可以在不引起网络冲突的情况下进行安全克隆。 根据使用一组网络接口卡在专用网络中配置虚拟机和使用另一组网络接口卡在公用网络中配置虚拟机的一系列说明，在 MTM 中完成此操作。
 
