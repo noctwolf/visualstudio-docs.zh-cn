@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0615f557d67c16698e0c737d97e45639be8a5eac
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 1d02922d4d28f41ced952c9ef8c990d55f78a226
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124997"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45548200"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -312,9 +312,11 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 ## <a name="run-the-app"></a>运行应用
 
-1. 请确保将 Chrome 选为当前的调试目标。
+1. 选择 Chrome 作为当前调试目标。
 
     ![选择 Chrome 作为调试目标](../javascript/media/tutorial-nodejs-react-debug-target.png)
+
+    如果计算机上有 Chrome，但未显示为选项，请从调试目标下拉列表中选择“浏览方式”，然后选择 Chrome 作为默认浏览器目标（选择“设为默认值”）。
 
 1. 若要运行应用，请按 F5（“调试” > “开始调试”）或者绿色箭头按钮。
 
@@ -361,6 +363,8 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 1. 如下图所示，切换到 Visual Studio 并在 `render()` 函数的 app-bundle.js 代码中设置断点：
 
     ![设置断点](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
+
+    若要查找 app-bundle.js 中的 `render()` 函数，请使用 Ctrl+F（“编辑” > “查找和替换” > “快速查找”）。
 
 1. 在选择 Chrome 作为 Visual Studio 中调试目标的情况下，按 Ctrl+F5（“调试” > “启动时不调试”）在浏览器中运行应用。
 

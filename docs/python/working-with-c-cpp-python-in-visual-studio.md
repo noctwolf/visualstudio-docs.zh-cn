@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60f4081f205b160ad74dca52dec68a10d36e43fd
-ms.sourcegitcommit: 9ea4b62163ad6be556e088da1e2a355f31366f39
+ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43995971"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45549464"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -100,6 +100,8 @@ ms.locfileid: "43995971"
 ## <a name="create-the-core-c-projects"></a>创建核心 C++ 项目
 
 按照本节中的说明，创建名为“superfastcode”和“superfastcode2”的两个完全相同的 C++ 项目。 之后，在每个项目中使用不同的方法将 C++ 代码公开到 Python。
+
+1. 确保将 `PYTHONHOME` 环境变量设置为要使用的 Python 解释器。 Visual Studio 中的 C++ 项目依赖此变量来定位 python.h 等文件，这些文件在创建 Python 扩展时使用。
 
 1. 在“解决方案资源管理器”中右键单击此解决方案并选择“添加” > “新建项目”。 一个 Visual Studio 解决方案可同时包含 Python 和 C++ 项目（这是使用 Visual Studio for Python 的优势之一）。
 
@@ -263,9 +265,9 @@ ms.locfileid: "43995971"
 
 C++ 模块可能无法编译的原因如下：
 
-- 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++” > “常规” > “附加包含目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
+- 找不到 Python.h（E1696：无法打开源文件“Python.h”和/或 C1083：无法打开包含文件：“Python.h”：没有此类文件或目录）：请验证项目属性中“C/C++” > “常规” > “附加包含目录”中的路径是否指向 Python 安装的“include”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
-- 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-project)中的步骤 6。
+- 无法找到 Python 库：验证项目属性中的“链接器” > “常规” > “附加库目录”中的路径是否指向 Python 安装的“libs”文件夹。 请参阅[创建核心 C++ 项目](#create-the-core-c-projects)中的步骤 6。
 
 - 与目标体系结构相关的链接器错误：更改 C++ 目标的项目体系结构以匹配 Python 安装。 例如，如果你将 C++ 项目的目标定为 x64，但是 Python 安装是 x86，则将 C++ 项目更改为目标 x86。
 
@@ -406,7 +408,7 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。 本节演示了使用 
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | 几乎可与任何 C++ 编译器一起使用。 | 库套件较大且复杂；包含旧编译器的许多解决方法。 |
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |
-| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](http://pypy.org/) | 易于集成，与 PyPy 兼容。 | 较新，不够成熟。 |
+| cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](https://pypy.org/) | 易于集成，与 PyPy 兼容。 | 较新，不够成熟。 |
 
 ## <a name="see-also"></a>请参阅
 

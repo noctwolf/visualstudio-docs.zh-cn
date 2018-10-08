@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 681d687432cdfc6c3e5cf4d4d549b2148c2eeff3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284180"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542489"
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
@@ -36,7 +36,7 @@ ms.locfileid: "44284180"
 
 - **延长 Visual Studio 试用期** - 可将 Visual Studio Professional 或 Visual Studio Enterprise 的使用延长 90 天，而不会限定为 30 天试用期。
 
-- 如果使用与 Microsoft Visual Studio 订阅或 Azure DevOps Services 组织相关联的帐户，解锁 Visual Studio。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
+- 如果使用与 Microsoft Visual Studio 订阅或 Azure DevOps 组织相关联的帐户，解锁 Visual Studio。 请参阅 [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)。
 
 - 在 IDE 中自动连接到服务（如 Azure 和 Azure DevOps Services），而不会再次提示对同一帐户输入凭据。
 

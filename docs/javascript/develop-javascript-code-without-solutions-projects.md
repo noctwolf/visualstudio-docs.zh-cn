@@ -2,7 +2,7 @@
 title: 在无需解决方案或项目的情况下在 Visual Studio 中编写 JavaScript 代码
 description: Visual Studio 支持创建代码，而无需依赖于项目文件或解决方案文件
 ms.custom: ''
-ms.date: 06/06/2018
+ms.date: 09/24/2018
 ms.technology: vs-nodejs
 ms.topic: conceptual
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7f4c98c9279fe4153fb69e371f51833be382090d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: db0685851113a5b85c506e250f6335e7ae83dcf4
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774596"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168326"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>在 Visual Studio 中开发 JavaScript 和 TypeScript 代码，而无需解决方案或项目
 
@@ -28,7 +28,7 @@ Visual Studio 2017 引入了[开发代码而无需项目或解决方案](../ide/
 若要开始，请从打开 Visual Studio 时出现的“开始”页中选择“打开文件夹”，或者从工具栏选择“文件” > “打开” > “文件夹”。 解决方案资源管理器显示文件夹中的所有文件，你可以打开任何文件以开始编辑。 在后台，Visual Studio 对文件编制索引，启用 npm、生成和调试功能。
 
 > [!IMPORTANT]
-> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8 预览版 3。
+> 本文所述的很多功能（包括 npm 集成）均要求 Visual Studio 2017 版本 15.8。
 
 ## <a name="npm-integration"></a>npm 集成
 

@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e78491f9e811a6ee9e6166734e11077fad272370
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
+ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279682"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45612657"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -54,6 +54,10 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/ListSettingsProviders**|列出已安装的测试设置提供程序。|
 |**/Blame**|在测试执行时进行跟踪，如果测试主机进程崩溃，则按照执行顺序发出测试名称，包括崩溃发生时正在运行的特定测试。 此输出有助于轻松隔离有问题的测试并进行深入诊断。 [详细信息](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md)。|
 |**/Diag:[文件名]**|将诊断跟踪日志写入指定文件。|
+|**/ResultsDirectory:[*path*]**|如果不存在，则将在指定路径中创建测试结果目录。<br />示例：`/ResultsDirectory:<pathToResultsDirectory>`|
+|**/ParentProcessId:[*parentProcessId*]**|父进程的进程 ID 负责启动当前进程。|
+|**/Port:[*port*]**|套接字连接和接收事件消息的端口。|
+|**/Collect:[*dataCollector friendlyName*]**|为测试运行启用数据收集器。 [详细信息](https://aka.ms/vstest-collect)。|
 
 > [!TIP]
 > 选项和值不区分大小写。

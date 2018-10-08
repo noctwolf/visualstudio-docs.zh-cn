@@ -2,7 +2,7 @@
 title: 在 Visual Studio 中使用 C# 创建 ASP.NET Core web 应用
 description: 了解如何在 Visual Studio 中使用 C# 和 ASP.NET Core 逐步创建简单的 Hello World Web 应用。
 ms.custom: mvc
-ms.date: 07/30/2018
+ms.date: 09/23/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ae4dc5f14db66bee10c8b2e95ea687f71ced2abb
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 53bed90ea686897c2a668ddbc64c60a95c8edfe8
+ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135589"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028931"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -39,9 +39,9 @@ ms.locfileid: "46135589"
 
 1. 在“新建 ASP.NET Core Web 应用程序”对话框中，验证“ASP.NET Core 2.0”是否显示在顶部下拉菜单中。 然后，选择“Web 应用程序”，并选择“确定”。
 
-  ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建 C# ASP.NET Core 项目](../ide/media/csharp-aspnet-animated-create-project.gif)
+   ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建 C# ASP.NET Core 项目](../ide/media/csharp-aspnet-animated-create-project.gif)
 
-  不久之后，Visual Studio 将打开你的项目文件。
+   不久之后，Visual Studio 将打开你的项目文件。
 
    > [!NOTE]
    > 如果没有看到“.NET Core”项目模板类别，请选择左侧窗格中的“打开 Visual Studio 安装程序”链接。
@@ -58,13 +58,15 @@ ms.locfileid: "46135589"
 
 接下来，将创建并运行“Hello World”Web 应用。 操作方法如下。
 
-1. 在“解决方案资源管理器”中，展开“Pages”文件夹，然后选择“About.cshtml”。
+1. 在 Visual Studio 的“解决方案资源管理器”中，展开“Pages”文件夹。 然后选择“About.cshtml”。
 
-   此文件对应于 Web 应用中名为“About”的页。
+   ![从“解决方案资源管理器”中选择 About.cshtml 文件](../ide/media/csharp-aspnet-about-page-html-file.png)
+
+   此文件对应于 Web 应用中名为“关于”的页，该页在 Web 浏览器中运行。
 
    ![Web 应用中的“About”页](../ide/media/csharp-aspnet-about-page.png)
 
-1. 将“其他信息”文本更改为“Hello World!”。
+1. 在 Visual Studio 代码编辑器中，将“其他信息”文本更改为“Hello World!”。
 
 1. 在“解决方案资源管理器”中，展开“About.cshtml”，然后选择“About.cshtml.cs”。
 
@@ -72,12 +74,12 @@ ms.locfileid: "46135589"
 
 1. 选择“IIS Express”或按 Ctrl+F5 运行此应用，并在 Web 浏览器中打开它。
 
-  ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建和运行 C# ASP.NET Core Web 应用](../ide/media/csharp-aspnet-animated-hello-world.gif)
+   ![查看动画 .gif 文件，该文件显示如何在 Visual Studio 中创建和运行 C# ASP.NET Core Web 应用](../ide/media/csharp-aspnet-animated-hello-world.gif)
 
    > [!NOTE]
    > 如果看到内容为“无法连接到 Web 服务器‘IIS Express’”的错误消息，请关闭 Visual Studio，再使用右键单击菜单或上下文菜单中的“以管理员身份运行”选项打开它。 然后，再次运行应用。
 
-1. 验证“关于”页包含更新的文本。
+1. 在 Web 浏览器中，验证“关于”页是否包含更新的文本。
 
 1. 关闭 Web 浏览器。
 

@@ -1,7 +1,7 @@
 ---
 title: 快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 description: 在此快速入门中，将使用针对 Visual Studio 的 Node.js 工具在 Visual Studio 中创建 Vue.js 应用
-ms.date: 11/15/2017
+ms.date: 09/24/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-nodejs
 ms.topic: quickstart
@@ -14,19 +14,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cced69988b6f863380ac88ee27a8a963229f966a
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
+ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131903"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168352"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
 在这个对 Visual Studio 集成开发环境 (IDE) 的 5-10 分钟简介中，可以创建并运行简单的 Vue.js Web 应用程序。 如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)页免费安装。
 
 > [!IMPORTANT]
-> 本文需要从 Visual Studio 2017 版本 15.8 预览版 3 开始提供的 Vue.js 模板。
+> 本文需要从 Visual Studio 2017 版本 15.8 开始提供的 Vue.js 模板。
 
 ## <a name="create-a-project"></a>创建项目
 

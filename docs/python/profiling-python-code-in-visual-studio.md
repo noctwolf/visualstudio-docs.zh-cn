@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: feafc7d53e8d450bc980b6d842e9c2a5f0ade2e4
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 4f395d146b01548d90cf74dc67b4ea8fda1bcade
+ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468811"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45551749"
 ---
 # <a name="profile-python-code"></a>分析 Python 代码
 
@@ -37,7 +37,7 @@ ms.locfileid: "39468811"
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | 有关 Python 分析的演示，请[观看视频（Microsoft 虚拟学院）](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567)（3 分 00 秒）。|
 
 > [!Note]
-> 目前，Visual Studio 仅支持此级别的全应用程序分析，但是我们当然希望听到你关于未来功能的反馈。 使用此页底部的[**提供产品反馈**按钮](#feedback)。
+> 目前，Visual Studio 仅支持此级别的全应用程序分析，但是我们当然希望听到你关于未来功能的反馈。 使用此页底部的[“产品反馈”按钮](#feedback)。
 
 ## <a name="profiling-for-ironpython"></a>IronPython 的分析
 
@@ -45,4 +45,4 @@ ms.locfileid: "39468811"
 
 请通过直接启动 ipy.exe 作为目标应用程序并使用适当的参数来启动你的启动脚本，从而改用 Visual Studio.NET 探查器。 在命令行上包含 `-X:Debug`，以确保所有 Python 代码可进行调试和分析。 此参数会生成一个性能报告，其中包括在 IronPython 运行时和代码中所用的时间。 代码使用重整名称进行标识。
 
-另外，IronPython 本身内置某些分析功能，但目前没有适合的可视化工具。 请参阅 [IronPython 探查器](http://blogs.msdn.com/b/curth/archive/2009/03/29/an-ironpython-profiler.aspx)（MSDN 博客）查看可用内容。
+另外，IronPython 本身内置某些分析功能，但目前没有适合的可视化工具。 请参阅 [IronPython 探查器](https://blogs.msdn.microsoft.com/curth/2009/03/30/an-ironpython-profiler/)（MSDN 博客）查看可用内容。

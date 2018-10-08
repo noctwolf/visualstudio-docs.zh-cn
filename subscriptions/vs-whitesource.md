@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 765b96955b27b83acd0c0674eed6a40f8d153ee1
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279162"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542346"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -45,7 +45,7 @@ ms.locfileid: "44279162"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 接下来，选择要使用的 Azure DevOps Services 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
+    - 接下来，选择要使用的 Azure DevOps 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
 
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
@@ -54,7 +54,7 @@ ms.locfileid: "44279162"
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
 
-5.  打开 Azure DevOps Services 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
+5.  打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
     > [!div class="mx-imgBorder"]
     > ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
 

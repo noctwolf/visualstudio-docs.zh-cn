@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 83a5716d5a548980b85108b6bbc15329a755bc2b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: bcdc556366a84deffa37d7e0234b1c543882022c
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320626"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370960"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>安装测试代理和测试控制器
 
@@ -36,7 +36,7 @@ ms.locfileid: "44320626"
 
 ## <a name="install-the-test-controller-and-test-agents"></a>安装测试控制器和测试代理
 
-可从 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。 滚动到页面底部，然后查找适用于 Visual Studio 2017 的代理。 选择“代理”或“控制器”，然后选择“下载”。 运行已下载的可执行文件，以安装测试代理或控制器。
+可从 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents) 中下载 Visual Studio 2017 的代理。 查找 Visual Studio 2017 的代理 ，选择“代理”或“控制器”，然后选择“下载”。 运行已下载的可执行文件，以安装测试代理或控制器。
 
 可以从[早期下载](https://visualstudio.microsoft.com/vs/older-downloads/)页中下载 Visual Studio 2015 和 Visual Studio 2013 的代理。
 
@@ -63,7 +63,7 @@ ms.locfileid: "44320626"
 下表显示了 Agents for Visual Studio 2013 支持的方案，以及 Team Foundation Server (TFS) 2015 和 Azure Test Plans 的替代方案：
 
 | Agents for Visual Studio 2013 支持的方案 | TFS 和 Azure Test Plans 中的替代方案 |
-| --- | --- |
+| - | - |
 | Visual Studio 中的“生成-部署-测试工”作流 | 用户可以在 TFS 中使用[生成管道](/azure/devops/pipelines/index?view=vsts)（而不是 XAML 生成）生成、部署和测试方案。 |
 | 使用本地远程计算机进行负载测试（性能测试） | 使用 Test Controller 和 Test Agents 2013 Update 5 在本地运行负载测试。 |
 | 使用实验室环境从 Microsoft 测试管理器远程执行自动测试 | 目前此方案没有替代方案。 建议在生成和发布定义（而不是 XAML 生成）中使用“运行功能测试”任务来远程执行测试。 |

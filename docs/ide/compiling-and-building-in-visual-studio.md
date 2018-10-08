@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7ee37ddd9899b979d8440202c89d03284b26f48
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0c1e911dad2b4abe2fb092b2adb221c4aebec136
+ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279071"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46370765"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
@@ -28,13 +28,13 @@ ms.locfileid: "44279071"
 
 成功的生成实质上是确认应用程序的源代码包含正确的语法，并且已解决对库、程序集和其他组件的所有静态引用。 这会生成一个应用程序可执行文件，然后可以在[调试环境](../debugger/index.md)中通过各种手动和自动测试[验证代码质量](../test/improve-code-quality.md)，测试该可执行文件以便正常运行。 该应用程序经过完全测试后，你可以编译一个发布版本以部署到你的客户。 要简要了解此过程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
 
-可以使用以下任何方法来生成应用程序：Visual Studio IDE、MSBuild 命令行工具、Team Foundation 生成和 Azure DevOps Services：
+可以使用以下任何方法来生成应用程序：Visual Studio IDE、MSBuild 命令行工具和 Azure Pipelines：
 
 | 生成方法 | 优点 |
 | --- |--- | --- |
 | IDE |- 立即创建生成并在调试程序中对其进行测试。<br />- 运行 C++ 和 C# 项目的多处理器生成。<br />- 自定义生成系统的不同方面。 |
 | MSBuild 命令行| - 在无需安装 Visual Studio 的情况下生成项目。<br />- 运行所有项目类型的多处理器生成。<br />- 自定义生成系统的大多数区域。|
-| Team Foundation Build | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
+| Azure Pipelines | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
 
 本节中的文档将详细介绍基于 IDE 的生成过程。 有关其他方法的详细信息，请分别参阅 [MSBuild](../msbuild/msbuild.md) 和 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts)。
 

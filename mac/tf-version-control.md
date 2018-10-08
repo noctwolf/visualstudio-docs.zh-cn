@@ -7,14 +7,14 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: b8d5f8f39b524bbde9e6988a924cf3b938fedb23
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
+ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279837"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46542426"
 ---
-# <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制 
+# <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
 > [!NOTE]
 > 请注意：Team Foundation 版本控制支持目前处于预览状态，某些功能尚未完全正常工作。 我们衷心期待能在[开发者社区](https://developercommunity.visualstudio.com/spaces/41/index.html)收到你有关任何问题的反馈意见。 更多更改陆续到来！
@@ -31,7 +31,7 @@ Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 T
 
 在 Visual Studio for Mac 中，从菜单中选择“Visual Studio”>“扩展...”。 在“库”选项卡中，选择“版本控制”>“适用于 TFS 和 VSTS 的 Team Foundation 版本控制”，然后单击“安装...”：
 
-  ![扩展管理器](media/tfvc-install.png) 
+  ![扩展管理器](media/tfvc-install.png)
 
 按照提示安装扩展。 安装后，重启 IDE。
 
@@ -39,7 +39,7 @@ Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 T
 
 TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual Studio”>“扩展...”，然后选择“更新”选项卡。从列表中选择扩展，然后选择“更新”按钮：
 
-  ![显示更新的扩展管理器](media/tfvc-update.png) 
+  ![显示更新的扩展管理器](media/tfvc-update.png)
 
 选择下一对话框中的“安装”来卸载旧包并安装新包。
 
@@ -63,7 +63,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 ### <a name="tfs-authentication"></a>TFS 身份验证
 
-若要连接到 TFS，请输入服务器详细信息和帐户凭据。 若要使用 NTLM 身份验证，请输入域；若要使用基本身份验证，则留空。 选择“添加服务器”： 
+若要连接到 TFS，请输入服务器详细信息和帐户凭据。 若要使用 NTLM 身份验证，请输入域；若要使用基本身份验证，则留空。 选择“添加服务器”：
 
 ![登录 TFS 服务器](media/tfvc-login.png)
 
@@ -75,7 +75,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 此对话框分为以下节点：
 
-- Azure DevOps Services 组织或集合 - 这显示连接到所登录 Microsoft 帐户的所有组织。
+- Azure DevOps 组织或集合 - 这显示连接到所登录 Microsoft 帐户的所有组织。
 - 项目 - 在每个组织或集合中，可以拥有许多项目。 项目中托管源代码、工作项和自动生成。
 
 现在可按项目或组织的名称进行搜索和筛选。
@@ -124,24 +124,24 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 如果尚未创建工作区（如[创建工作区](#creating-a-new-workspace)部分所述），则会发现源代码资源管理器是空的：
 
-![空源代码资源管理器](media/tfvc-setup-empty-sce.png) 
+![空源代码资源管理器](media/tfvc-setup-empty-sce.png)
 
 若要使用本地工作区设置远程项目，请执行以下步骤：
 
 1. 从组合框中选择“服务器”。
 1. 请注意，此时显示“无工作区”，并且本地路径为“未映射”。 选择“未映射”链接，以显示“创建新工作区”对话框。
 1. 为工作区提供一个名称，然后单击“添加工作文件夹”，将项目映射到计算机上的本地文件夹：
-    
-    ![显示默认选项的“创建新工作区”对话框](media/tfvc-workspace1.png) 
+
+    ![显示默认选项的“创建新工作区”对话框](media/tfvc-workspace1.png)
 
 1. 选择“$”文件夹，将服务器上的所有项目映射到同一工作区；或选择单个项目，然后单击“确定”：
-    
-    ![显示所有项目的“浏览文件夹”对话框](media/tfvc-workspace2.png) 
+
+    ![显示所有项目的“浏览文件夹”对话框](media/tfvc-workspace2.png)
 
 1. 在本地计算机上选择希望将项目映射到的位置，然后单击“选择文件夹”。
 1. 选择“确定”，确认新工作区的详细信息后
-    
-    ![添加了工作文件夹的“创建新工作区”对话框](media/tfvc-workspace3.png) 
+
+    ![添加了工作文件夹的“创建新工作区”对话框](media/tfvc-workspace3.png)
 
 设置工作区后，可通过单击源代码资源管理器中的“管理工作区”按钮来进行更改或将其删除。
 
@@ -159,14 +159,15 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 若要使用基本身份验证，需要在 Azure DevOps Services 中启用“其他身份验证凭据”，具体步骤如下：
 
-1. 以所有者身份登录 Azure DevOps Services 组织 (https://dev.azure.com/{organization}/{project})。
+1. 以所有者身份登录 Azure DevOps 组织 (https://dev.azure.com/{organization}/{project})。
+
 2. 在组织工具栏中，选择齿轮图标，然后选择“策略”：
-    
-    ![选中的策略设置选项](media/tfvc-auth2.png) 
+
+    ![选中的策略设置选项](media/tfvc-auth2.png)
 
 3. 查看应用程序连接设置。 根据安全策略更改这些设置：
-    
-    ![选中的策略设置选项](media/tfvc-auth.png)  
+
+    ![选中的策略设置选项](media/tfvc-auth.png)
 
 ### <a name="i-do-not-see-anything-in-tfvc"></a>我在 TFVC 中没有看到任何内容
 
