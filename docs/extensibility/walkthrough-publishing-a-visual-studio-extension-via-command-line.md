@@ -14,16 +14,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 497aa6a85bd47813aa20bd5c2e89ca26ddffbe5a
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39082118"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863880"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练： 发布 Visual Studio 扩展中的通过命令行
 
-此演练演示如何将 Visual Studio 扩展发布到 Visual Studio Marketplace 使用命令行。 当你的扩展添加到 Marketplace 后时，开发人员可以使用**扩展和更新**对话框从中浏览新建和更新的扩展。
+此演练演示如何将 Visual Studio 扩展发布到 Visual Studio Marketplace 使用命令行。 当你的扩展添加到 Marketplace 后时，开发人员可以使用[**扩展和更新**](../ide/finding-and-using-visual-studio-extensions.md)对话框从中浏览新建和更新的扩展。
 
 VsixPublisher.exe 是发布到 Marketplace 的 Visual Studio 扩展的命令行工具。 可以从 ${VSInstallDir}\VSSDK\VisualStudioIntegration\Tools\Bin\VsixPublisher.exe 访问。 可在上找到此工具的命令是：**发布**， **createPublisher**， **deletePublisher**， **deleteExtension**， **登录名**，**注销**。
 

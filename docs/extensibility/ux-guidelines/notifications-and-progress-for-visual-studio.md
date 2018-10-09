@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8018f3f72fd774a1ac64cd1d6d968ad8be65b453
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aee6e5656142d0597ff6101da5e2e5f690f8fcc5
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512234"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863942"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 ##  <a name="BKMK_NotificationSystems"></a> 通知系统  
@@ -213,7 +213,7 @@ ms.locfileid: "39512234"
  微调框 （也称为"进度环"） 是不确定的进度指示器主要用于相对于上下文的 UI。 在紧靠其相关内容，例如文本类别标题、 消息传递，或控件中显示微调控件。  
   
 ##### <a name="cursor-feedback"></a>游标的反馈  
- 对于需要 2 到 7 秒钟的操作，提供游标反馈。 通常情况下，这意味着使用操作系统提供的将等待光标。 有关指南，请参阅 MSDN 文章[Cursors.Wait 属性](https://msdn.microsoft.com/en-us/library/system.windows.input.cursors.wait\(v=vs.110\).aspx)。  
+ 对于需要 2 到 7 秒钟的操作，提供游标反馈。 通常情况下，这意味着使用操作系统提供的将等待光标。 有关指南，请参阅 MSDN 文章[Cursors.Wait 属性](/dotnet/api/system.windows.input.cursors.wait)。  
   
 #### <a name="progress-indicator-locations"></a>进度指示器位置  
   
