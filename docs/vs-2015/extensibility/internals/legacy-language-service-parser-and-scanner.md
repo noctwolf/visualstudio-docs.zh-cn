@@ -16,12 +16,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8aaf608c4a03816fb109e65c2b8d71d06a279799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480037"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880228"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ namespace MyNamespace
 ## <a name="parsing-for-matching-braces"></a>分析，以进行匹配的大括号  
  此示例演示用于匹配用户键入一个右大括号的控制流。 在此过程中，用于着色的扫描程序还用于确定令牌和令牌是否可以触发匹配大括号操作的类型。 如果找到该触发器，则<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>调用方法来查找匹配的括号。 最后，将突出显示两个大括号。  
   
- 即使在大括号中的触发器的名称使用和分析的原因，此过程不局限于实际大括号。 支持的字符，这些指定要匹配的课程将任何对。 示例包括 （和），\<和 >，和 [和]。  
+ 即使在大括号中的触发器的名称使用和分析的原因，此过程不局限于实际大括号。 支持任何被指定为一对匹配的字符对。 示例包括 （和），\<和 >，和 [和]。  
   
  假定该语言服务支持匹配大括号。  
   

@@ -35,12 +35,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c102bba09901e55e9ec6196009965b912f8be967
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d2c45ed2377b400fb00ac264aa2dcf8e5df8410
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484520"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879767"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>使用 CRT 库查找内存泄漏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ ms.locfileid: "47484520"
   
  为了 CRT 函数能够正常工作， `#include` 语句必须遵循此处所示的顺序。  
   
- 包含 crtdbg.h 地图`malloc`并[免费](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8)函数对它们的调试版本[_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb)和`free`，它们将跟踪内存分配和解除分配。 此映射只在包含 `_DEBUG`的调试版本中发生。 发布版本使用普通的 `malloc` 和 `free` 函数。  
+ 包含 crtdbg.h，将 `malloc` 和 [free](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) 函数映射到它们的调试版本，即 [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) 和 `free`，它们将跟踪内存分配和释放。 此映射只在包含 `_DEBUG`的调试版本中发生。 发布版本使用普通的 `malloc` 和 `free` 函数。  
   
  `#define` 语句将 CRT 堆函数的基础版本映射到对应的调试版本。 如果省略 `#define` 语句，内存泄漏转储将有所简化。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "47484520"
 _CrtDumpMemoryLeaks();  
 ```  
   
- 如果你的应用程序有多个退出，不需要手动将置于调用[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)在每个退出点。 应用程序开头部分对 `_CrtSetDbgFlag` 的调用会导致在每个退出点自动调用 `_CrtDumpMemoryLeaks` 。 你必须设置两个位域，如下所示：  
+ 如果应用程序有多个退出点，并不需要在每个退出点都手动设置一个对 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 的调用。 应用程序开头部分对 `_CrtSetDbgFlag` 的调用会导致在每个退出点自动调用 `_CrtDumpMemoryLeaks` 。 你必须设置两个位域，如下所示：  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -89,7 +89,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>解释内存泄漏报告  
- 如果你的应用程序未定义`_CRTDBG_MAP_ALLOC`， [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)显示内存泄漏报告如下所示：  
+ 如果应用程序未定义 `_CRTDBG_MAP_ALLOC`，则 [_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) 显示的内存泄漏报告如下所示：  
   
 ```  
 Detected memory leaks!  
@@ -194,7 +194,7 @@ Object dump complete.
   
 2.  当应用程序在断点处中断时，会出现  “监视”窗口。  
   
-3.  在  “监视”窗口中，在 `_crtBreakAlloc`**“名称”列中键入** 。  
+3.  在中**Watch**窗口中，键入`_crtBreakAlloc`中**名称**列。  
   
      如果要使用 CRT 库的多线程 DLL 版本（/MD 选项），请加入上下文运算符： `{,,ucrtbased.dll}_crtBreakAlloc`  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e213f6c009ff5fdd5caa48a326c18026f02ec5e6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a16bef2afa14d992300649d4ec9ffd9752def099
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588754"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880677"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 进行快速网站分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ ms.locfileid: "47588754"
 > [!WARNING]
 >  可以使用 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]、[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 或 [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)] 收集层交互分析 (TIP) 数据。 但是，层交互分析数据只能在 [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] 和 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]中查看。  
 >   
->  若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (**/trace**) 选项。  
+>  若要收集有关 Windows 8 或 Windows Server 2012 的 TIP 数据，必须使用检测 (/trace) 选项。  
   
  随采样数据收集层交互数据：  
   

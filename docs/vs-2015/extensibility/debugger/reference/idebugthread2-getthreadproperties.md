@@ -17,12 +17,12 @@ ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5eddc47f35268fd62e0d4361e5cc1a99bf082107
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ddfe67b74b53d849fd131b0968af4e8cacbc148f
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483101"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880846"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ int GetThreadProperties (
  [in]中的标志的组合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)枚举，它确定的哪些字段`ptp`要填充的。  
   
  `ptp`  
- [in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)结构的使用线程的属性填充。  
+ [in、 out]一个[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)填充线程的属性的结构。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

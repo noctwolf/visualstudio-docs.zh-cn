@@ -17,17 +17,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad7a83ac3eb7f0af57eed382ace32fdb80ccef2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 630d0f55792b06cd1c99f9c1947a5ae73bce2683
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483389"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881028"
 ---
 # <a name="statement-completion-for-identifiers"></a>适用于标识符的语句结束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
   
 JavaScript 不允许显式类型的变量声明。 因此，IntelliSense 始终不能为对象提供完成列表。 这可能在不同情况下。 以下是几个常见的。  
   

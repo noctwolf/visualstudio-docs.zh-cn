@@ -19,17 +19,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74302bb9aea552bfc4e8fedc93fd7aebc69fb4b2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483662"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881015"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>为 JavaScript IntelliSense 创建 XML 文档注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
   
 *XML 文档注释*是 JavaScript 注释添加到脚本中以便提供有关代码元素，如函数、 字段和变量的信息。 在 Visual Studio 中，这些文本说明时引用的脚本函数与 IntelliSense 一起显示。  
   

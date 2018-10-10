@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb14269c933d8e8de191b8a8c52e9f41e63ca79d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d31863e3dfdf39481a6215a29f37186a2f528050
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478975"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880365"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>什么&#39;Visual Studio 2015 中的 s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "47478975"
   
  此页面展示了自 Visual Studio 2013 RTM 以来的一些最重要的新功能，包括首先在 Visual Studio 2013 的一个更新中推出的功能。 有关 Visual Studio 2015 中新增功能的完整列表，请参见 [发行说明](https://www.visualstudio.com/news/vs2015-vs)。  
   
- 若要了解有关的许多改进和 Visual Studio ALM 中的新增功能的详细信息，请参阅[What's new for Visual Studio 2015 中的应用程序生命周期管理](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)。  
+ 若要了解有关 Visual Studio ALM 中的许多改进和新增功能的详细信息，请参阅 [Visual Studio 2015 应用程序生命周期管理的新增功能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)。  
   
 ## <a name="a-new-setup-experience"></a>新的安装体验  
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]  
@@ -43,7 +43,7 @@ ms.locfileid: "47478975"
 ## <a name="sign-in-across-multiple-accounts"></a>使用多个帐户登录  
  借助 Visual Studio 2015，全新简化的登录体验旨在大大简化对联机资源的访问，即使你拥有多个 Visual Studio 帐户也是如此。 登录到 Visual Studio 后，你会自动登录到 Visual Studio 2015 的所有实例和你计算机上的 Blend。 登录操作会自动开始为你漫游设置。 在 Visual Studio 2015 中，你的帐户跨功能共享，所以只要拥有适当令牌，就可以从“团队资源管理器” 访问你的 Visual Studio Team Services 帐户，从服务器资源管理器中的 Microsoft Azure 订阅访问资源和网站。 你也将在 Application Insights 项目的“新建项目”对话框中看到你的 Azure 资源，并且在新的 **“添加连接的服务”**  对话框中看到你的 Azure 移动、Azure 存储、 [Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) 和 [Saleforce.com 开发人员](https://developer.salesforce.com/) 帐户。  
   
- 你可以随时添加多个用户帐户或通过新的帐户管理器进行添加，从而在 Visual Studio 中使用这些帐户。 然后，你可以在连接到服务或访问联机资源时在这些帐户之间即时切换。 Visual Studio 会记住你添加的帐户，因此你可从 Visual Studio 或 Blend 的任何实例使用这些帐户。 Visual Studio 还将随你的个性化帐户一起漫游帐户列表（但我们不会漫游你的重要凭据），因此你可以在另一台设备上快速地开始使用其中的一个帐户。 当然，你可以随时从“帐户设置”对话框中移除帐户。 若要开始，请参阅[使用多个用户帐户](./ide/work-with-multiple-user-accounts.md)。  
+ 你可以随时添加多个用户帐户或通过新的帐户管理器进行添加，从而在 Visual Studio 中使用这些帐户。 然后，你可以在连接到服务或访问联机资源时在这些帐户之间即时切换。 Visual Studio 会记住你添加的帐户，因此你可从 Visual Studio 或 Blend 的任何实例使用这些帐户。 Visual Studio 还将随你的个性化帐户一起漫游帐户列表（但我们不会漫游你的重要凭据），因此你可以在另一台设备上快速地开始使用其中的一个帐户。 当然，你可以随时从“帐户设置”对话框中移除帐户。 若要开始操作，请参见 [Work with multiple user accounts](./ide/work-with-multiple-user-accounts.md)。  
   
  ![帐户管理器](./ide/media/vs2015-accountmanager.gif "VS2015_AccountManager")  
   
@@ -53,7 +53,7 @@ ms.locfileid: "47478975"
  同时当然，对语言、库和工具进行了一些改进，因而对经典桌面应用程序的支持更胜一筹。  
   
 ### <a name="cross-platform-mobile-apps-in-c-with-xamarin-for-visual-studio"></a>通过适用于 Visual Studio 的 Xamarin 用 C# 编写的跨平台移动应用  
- Xamarin 是移动框架，通过此框架，你可以使用 C# 编写代码，代码会在本机绑定到 iOS 和 Android API。 Microsoft 与 Xamarin 在发行 Xamarin for Visual Studio 时密切合作，这款扩展使你可以在具有共享代码的单个解决方案中针对 Android、iOS 和 Windows Phone 进行开发。 借助 Xamarin，你将使用一种语言和一个代码库，且平台间的增量可以保持最低。  Xamarin for Visual Studio 在 Visual Studio 2010 及更高版本上受到支持。 Visual Studio 2015 中包括 Xamarin 入门版。 若要开始，请参阅[应用程序生成具有 Visual Studio 中使用 Xamarin 的本机 UI](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。  
+ Xamarin 是移动框架，通过此框架，你可以使用 C# 编写代码，代码会在本机绑定到 iOS 和 Android API。 Microsoft 与 Xamarin 在发行 Xamarin for Visual Studio 时密切合作，这款扩展使你可以在具有共享代码的单个解决方案中针对 Android、iOS 和 Windows Phone 进行开发。 借助 Xamarin，你将使用一种语言和一个代码库，且平台间的增量可以保持最低。  Xamarin for Visual Studio 在 Visual Studio 2010 及更高版本上受到支持。 Xamarin 入门版包含在 Visual Studio 2015 中。 若要开始，请参阅[应用程序生成具有 Visual Studio 中使用 Xamarin 的本机 UI](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)。  
   
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>带 Apache Cordova 的 HTML/JavaScript 中的跨平台移动应用  
  适用于 Apache Cordova 的 Visual Studio 工具是 Microsoft 和开放源 Apache Cordova 社区紧密合作的成果。 通过这些工具，可使用 HTML、CSS 和 JavaScript（或 Typescript）进行跨平台移动开发。 你可将单一基本代码面向 Android、iOS 和 Windows，并且享受 Visual Studio IDE 的丰富功能，包括 JavaScript IntelliSense、DOM 资源管理器、JavaScript 控制台、断点、监视、局部变量、仅我的代码等等。  凭借适用于 Apache Cordova 的 Visual Studio 工具，你的应用可通过提供通用 JavaScript API 的插件使用所有平台上的原生设备功能。 若要开始，请参阅[开始使用 Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)。  
@@ -103,7 +103,7 @@ ms.locfileid: "47478975"
  ![设备预览菜单](./ide/media/vs2015-device-preview.png "vs2015_device_preview")  
   
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断  
- 自 Visual Studio 2013 开始，Visual Studio 图形诊断已添加许多新功能，包括帧分析，Windows Phone 支持、着色器编辑和应用，以及命令行捕获工具。 它还添加了对 DirectX12 应用调试的支持。 有关详细信息，请参阅[Visual Studio 图形诊断](./debugger/visual-studio-graphics-diagnostics.md)。  
+ 自 Visual Studio 2013 开始，Visual Studio 图形诊断已添加许多新功能，包括帧分析，Windows Phone 支持、着色器编辑和应用，以及命令行捕获工具。 它还添加了对 DirectX12 应用调试的支持。 有关详细信息，请参阅 [Visual Studio 图形诊断](./debugger/visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="connect-to-services"></a>连接到服务  
  Visual Studio 2015 让你比以往任何时候都更轻松地将应用连接到服务。  新的“添加连接的服务”向导会配置你的项目，添加必要的身份验证支持并下载必要的 NuGet 数据包，帮助你开始根据你的服务需要进行快速轻松的编码。 “添加连接的服务”向导还集成新的帐户管理器，令使用多个用户帐户和订阅变得容易。 在 Visual Studio 2015 中，对以下服务的支持立即可用（如果拥有帐户）：  
@@ -137,7 +137,7 @@ ms.locfileid: "47478975"
 -   **C++/Android**。 配合使用 [用于跨平台移动开发的 Visual C++](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) 模板和 [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) 等第三方工具，创建适用于 Windows 和 Android 的本机应用。  
   
 ## <a name="debugging-and-diagnostics"></a>调试和诊断  
- 有关新增调试中的新增功能的信息，请参阅[What's New for Visual Studio 2015 中调试器](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。  
+ 有关新增调试功能的信息，请参阅 [What’s New for the Debugger in Visual Studio 2015](./debugger/what’s-new-for-the-debugger-in-visual-studio-2015.md)。  
   
  有关新增诊断中的新增功能的信息，请参阅[What's New in 分析工具](./profiling/what-s-new-in-profiling-tools.md)。  
   
@@ -147,7 +147,7 @@ ms.locfileid: "47478975"
  性能提示显示调试过程中方法的执行时间，可使你快速确认瓶颈，而无需调用探查器。 若要开始使用，请参阅 [性能提示：使用 Visual Studio 调试时的性能信息一览](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
 ### <a name="error-list"></a>错误列表  
- 错误列表现在支持任何列的筛选。 它还在你输入时显示整个 C# 或 Visual Basic 解决方案中错误、警告和代码分析的实时视图，即使代码更改生成上千个警告时也是如此。 新的“错误列表”重新兼容现有的用法。 有关详细信息，请参阅[错误列表窗口](./ide/reference/error-list-window.md)。  
+ 错误列表现在支持任何列的筛选。 它还在你输入时显示整个 C# 或 Visual Basic 解决方案中错误、警告和代码分析的实时视图，即使代码更改生成上千个警告时也是如此。 新的“错误列表”重新兼容现有的用法。 有关更多信息，请参见 [Error List Window](./ide/reference/error-list-window.md)。  
   
 ### <a name="gpu-usage-tool"></a>GPU 使用情况工具  
  GPU 使用情况工具可帮助你收集和分析 DirectX 应用和游戏中的 GPU 使用数据，并就 CPU 或 GPU 中是否出现性能瓶颈进行故障排除。 若要开始使用该工具，请参阅 [Visual C++ 团队博客文章](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)。  
@@ -163,7 +163,7 @@ ms.locfileid: "47478975"
  Visual Studio 2013 针对最常用的设置（例如文本编辑器、键盘关联、主题和字体及颜色、启动以及环境别名）引入同步设置。  Visual Studio 2015 通过同步更多设置并在 Professional、Enterprise、Express SKU、Blend 等 Visual Studio 应用程序系列中同步设置，使这种体验获得提升。 当你使用在 Visual Studio 2013 中使用的同一帐户首次登录 Visual Studio 2015 时，你会发现你的 Visual Studio 2013 设置同步到了 Visual Studio 2015 中。 可以通过输入"sync"访问你的设置，在**快速启动**，或导航到**工具 > 选项 > 环境 > 的同步设置**。  
   
 ### <a name="automatic-extension-updates"></a>“自动扩展更新”  
- 当 Visual Studio 库里有可用的新版本时，已安装的 Visual Studio 扩展现在将会自动更新。 请参阅[查找和使用 Visual Studio 扩展](./ide/finding-and-using-visual-studio-extensions.md)有关如何自定义自动扩展更新的详细信息。  
+ 当 Visual Studio 库里有可用的新版本时，已安装的 Visual Studio 扩展现在将会自动更新。 请参阅 [查找和使用 Visual Studio 拓展](./ide/finding-and-using-visual-studio-extensions.md) 以获取有关可如何自定义自动扩展更新的详细信息。  
   
 ### <a name="title-case-menus"></a>标题首字母大写菜单  
  我们专心聆听你的需求。 默认情况下，Visual Studio 菜单为标题首字母大写。 但是，如果你喜欢全大写风格，您可以将其启动时设置，或在**工具 > 选项 > 常规**属性页：  
@@ -176,7 +176,7 @@ ms.locfileid: "47478975"
  ![编辑器中的触控支持](./ide/media/vs2015-touchsupport.png "VS2015_TouchSupport")  
   
 ### <a name="custom-layouts"></a>自定义布局  
- 你可以创建、保存和漫游自定义窗口布局。 例如，你可以定义一个在台式计算机上使用的首选布局以及在笔记本电脑或小屏幕设备上使用的不同布局。 或者你可为 UI 项目定义一个布局，为数据库项目定义另一个布局。 键盘关联可使你在不同布局之间快速切换。 登录 Visual Studio 后，Visual Studio 的任何实例均可提供这些布局。 有关详细信息，请参阅[创建自定义窗口布局](./misc/create-custom-window-layouts.md)。  
+ 你可以创建、保存和漫游自定义窗口布局。 例如，你可以定义一个在台式计算机上使用的首选布局以及在笔记本电脑或小屏幕设备上使用的不同布局。 或者你可为 UI 项目定义一个布局，为数据库项目定义另一个布局。 键盘关联可使你在不同布局之间快速切换。 登录 Visual Studio 后，Visual Studio 的任何实例均可提供这些布局。 有关详细信息，请参阅 [创建自定义窗口布局](./misc/create-custom-window-layouts.md)。  
   
  ![Visual Studio 自定义布局菜单项](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")  
   
@@ -200,7 +200,7 @@ ms.locfileid: "47478975"
   
 -   查找会影响你代码的其他分支中的更改。  
   
- 请参阅[CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
+ 请参阅 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>设计和建模工具（仅限于 Enterprise 版）  
  **代码图和依赖项关系图**  
@@ -233,7 +233,7 @@ ms.locfileid: "47478975"
   
 -   **根据类视图和对象浏览器创建关系图**。 从类视图和对象浏览器窗口将文件和程序集拖放到新的代码图或现有代码图中。  
   
- 请参阅[映射解决方案之间的依赖项](./modeling/map-dependencies-across-your-solutions.md)。  
+ 请参阅 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
   
  **在此版本中其他设计和建模更改：**  
   
@@ -244,7 +244,7 @@ ms.locfileid: "47478975"
 -   **体系结构资源管理器**。 不再能够使用体系结构资源管理器创建关系图。 但你仍可使用解决方案资源管理器。  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 扩展性工具  
- 安装 Visual Studio 扩展性工具（VS SDK 和模板）前所未有地容易，因为现在它们作为可选组件包含在安装过程中。  扩展性工具允许开发人员编写扩展以自定义并将功能添加到 Visual Studio。 有关 Visual Studio 扩展性的详细信息，请参阅[Visual Studio SDK](./extensibility/visual-studio-sdk.md)  
+ 安装 Visual Studio 扩展性工具（VS SDK 和模板）前所未有地容易，因为现在它们作为可选组件包含在安装过程中。  扩展性工具允许开发人员编写扩展以自定义并将功能添加到 Visual Studio。 有关 Visual Studio 扩展性的详细信息，请参阅 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)  
   
  如果你想要将你的自定义安装包含在扩展性工具中，可以在 **“功能”/“常用工具”/“Visual Studio 扩展性工具”** 下找到它们。  你还可以通过打开 **“新建项目”** 对话框并选择 **“Visual C#”/“扩展性”** 下的 **“安装 Visual Studio 扩展性工具”** 项来稍后安装扩展性工具。  
   
@@ -261,7 +261,7 @@ ms.locfileid: "47478975"
 ### <a name="send-a-frown"></a>发送哭脸  
  了解我们在产品中的改进之处有助于我们首先关注对客户最重要的事，从而管理我们的积压工作 (backlog)。 若有任何相关的疑难之事，请直接从 IDE 内使用“发送哭脸”  功能告诉我们。 我们也让这一流程异常简单：  
   
- 单击标题栏上的黄色笑脸，然后单击“发送哭脸” 。 告诉我们你不喜欢的内容，然后单击“发送哭脸”按钮。 有关详细信息，请参阅[与我们交流](./ide/talk-to-us.md)。  
+ 单击标题栏上的黄色笑脸，然后单击“发送哭脸” 。 告诉我们你不喜欢的内容，然后单击“发送哭脸”按钮。 有关更多信息，请参见 [Talk to Us](./ide/talk-to-us.md)。  
   
 ### <a name="report-crashes-hangs-and-performance-issues"></a>报告崩溃、挂起和性能问题  
  有时，快速标记哭脸不足以传达你不喜欢的内容造成的完全影响。 当你遭遇挂起、崩溃或性能问题时，你可以通过使用发送哭脸后显示的对话框方便地共享重现步骤、故障转储和跟踪文件。  
@@ -280,4 +280,4 @@ ms.locfileid: "47478975"
 * [创建自定义窗口布局](./misc/create-custom-window-layouts.md)   
 * [使用灯泡执行快速操作](./ide/perform-quick-actions-with-light-bulbs.md)   
 * [什么是 Visual Studio 2015 中的应用程序生命周期管理的新增功能](http://msdn.microsoft.com/en-us/54b98a53-6083-4303-869a-8063d8fae938)
-* [Visual Studio 2017 中的新增功能](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+* [Visual Studio 2017 中的新增功能](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)

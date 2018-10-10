@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 13d0bcf02bb46de9116ab4dbd33b4a034c786252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b180eed67b617cd7e46610b78865fe0ae088d85e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479460"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879812"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>演练：因顶点着色而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题的最新版本，请参阅[演练： 缺少对象由于顶点明暗度](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-vertex-shading)。  
   
-本演练演示如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]图形诊断工具来调查由于在顶点着色器阶段期间发生的错误而缺失的对象。  
+本演练演示了如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具调查因顶点着色器阶段出现的错误而缺少的对象。  
   
  此演练阐释了以下任务：  
   
@@ -50,7 +50,7 @@ ms.locfileid: "47479460"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>检查图形日志中的帧  
   
-1.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，加载包含展现丢失对象的帧的图形日志。 新的图形日志选项卡显示在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，加载包含显示缺少对象的帧的图形日志。 新的图形日志选项卡将出现在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
   
 2.  在“帧列表” 中，选择演示未显示该对象的帧。 更新呈现目标以反映所选的帧。 在此方案中，图形日志选项卡如下所示：  
   
@@ -116,7 +116,7 @@ ms.locfileid: "47479460"
     > [!TIP]
     >  如果同时调试你的应用，则可以在此位置设置一个断点，在呈现下一帧时将命中该断点。 你随后还可以检查 `m_marbleConstantBufferData` 的成员，以确认填充常量缓冲区后是否已将 `projection` 成员的值设置为全零。  
   
- 找到填充常量缓冲区的位置，并发现其值来自变量 `m_marbleConstantBufferData`之后，下一步是找出将 `m_marbleConstantBufferData.projection` 成员设置为全零的位置。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
+ 找到填充常量缓冲区的位置并发现其值来自该变量后`m_marbleConstantBufferData`下, 一步是找出`m_marbleConstantBufferData.projection`成员设置为全零。 可以使用“查找所有引用”  快速扫描更改 `m_marbleConstantBufferData.projection`的值的代码。  
   
 #### <a name="to-find-where-the-projection-member-is-set-in-your-apps-source-code"></a>在应用的源代码中查找设置投影成员的位置  
   

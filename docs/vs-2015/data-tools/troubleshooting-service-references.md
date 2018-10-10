@@ -20,12 +20,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6d9510bf667b95dde4619f469b51041c07c0b4e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 696c6f2a0e738d965b5992e3df52a77831ab27a0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484475"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880885"
 ---
 # <a name="troubleshooting-service-references"></a>服务引用疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,9 +70,9 @@ ms.locfileid: "47484475"
 ## <a name="error-debugging-service-code"></a>错误调试服务代码
  当您单步执行 WCF 服务的代码从客户端代码时，可能会收到与缺少符号相关的错误。 这可能是你的解决方案的一部分的服务已移动或从解决方案中移除时。
 
- 首次添加到当前解决方案的一部分的 WCF 服务的引用，该服务项目和服务客户端项目之间添加显式生成依赖项。 这可以保证，客户端始终访问最新的服务二进制文件，这一点尤为重要的调试方案，如单步执行客户端代码从服务代码。
+ 首次添加到当前解决方案的一部分的 WCF 服务的引用，该服务项目和服务客户端项目之间添加显式生成依赖项。 这可以保证，客户端将始终访问最新的服务二进制文件，这一点尤为重要的调试方案，例如从客户端代码单步服务代码。
 
- 如果从解决方案中删除服务项目，此显式生成依赖项会失效。 Visual Studio 无法再保证的服务项目重新生成在必要时。
+ 如果从解决方案中删除服务项目，此显式生成依赖项会失效。 Visual Studio 无法再保证，重新生成服务项目在必要时。
 
  若要修复此错误，您必须手动重新生成服务项目：
 

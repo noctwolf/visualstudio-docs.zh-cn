@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e27769990f118b23cc4667d7b36d54d8fe67605f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14e265562b325352b42741ca505233a64e0ac1af
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471147"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879338"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "47471147"
 >  对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
 >   
 >  -   下载              [并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 扩展。  
-> -   下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
+> -   下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。  
 >   
 >      [并发可视化工具命令行实用工具(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) 使你能够从命令行收集跟踪，可以在 Visual Studio 2015 的并发可视化工具中查看该命令行。 该工具可以在未安装 Visual Studio 的计算机上使用。  
   

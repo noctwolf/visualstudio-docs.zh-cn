@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c681acc80b0646f3cb6f51435bf8358d12bf44b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476776"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879352"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "47476776"
   
  可以使用预定义的引用组指定特定 IntelliSense .js 文件位于不同 JavaScript 项目的范围内。 提供四个引用组：  
   
--   隐式 (Windows*版本*)，为[!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]使用 JavaScript 的应用。 包含在该组中的文件位于代码编辑器中打开的每个 .js 文件的范围内，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]应用。  
+-   隐式 (Windows *version*)，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 应用。 包含在该组中的文件位于代码编辑器中打开的每个 .js 文件的范围内，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)] 应用。  
   
 -   隐式 (Web)，用于 HTML5 项目。 包含在该组中的文件位于代码编辑器中为这些项目类型打开的每个 .js 文件的范围中。  
   

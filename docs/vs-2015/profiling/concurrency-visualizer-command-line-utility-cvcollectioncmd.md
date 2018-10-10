@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1925a240c011e4a9e7ede1a0aeb673b5d33c23bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dbc4f235d56554b37033703158126a003ddbca93
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469176"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880820"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>并发可视化工具命令行实用工具 (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ ms.locfileid: "47469176"
 你可以使用并发可视化工具命令行实用程序 (CVCollectionCmd.exe) 以从命令行收集跟踪，使你可以在 Visual Studio 的并发可视化工具中查看它们。 这些工具可以在未安装 Visual Studio 的计算机上使用。  
   
 > [!NOTE]
->  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/en-in/download/details.aspx?id=49103)（Visual Studio 2015 并发可视化工具收集工具）。  
+>  从 Visual Studio 2013 开始，并发可视化工具是可选扩展。 （以前它包含在 Visual Studio 中。）可从下载中心下载 [Concurrency Visualizer Collection Tools for Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103)（Visual Studio 2015 并发可视化工具收集工具）。  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>下载并发可视化工具命令行实用程序  
- 若要下载并安装命令行实用程序，请转到 [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103) ，按照说明进行操作。 默认情况下，CVCollectionCmd.exe 安装在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\（在 x64 计算机上为 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\）。  
+ 若要下载并安装命令行实用程序，请转到 [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103) ，按照说明进行操作。 默认情况下，CVCollectionCmd.exe 安装在 %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\（在 x64 计算机上为 %ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\）。  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>使用 CVCollectionCmd 收集跟踪  
  通过使用 CVCollectionCmd 启动应用，或通过附加到该应用，你可以收集跟踪。 对于选项，请参阅以下命令参考。 例如  

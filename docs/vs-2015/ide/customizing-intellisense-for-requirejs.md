@@ -14,17 +14,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fbc4d9b85a3eb8e0fe5f3a890a76bae4695912e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468772"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880664"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>为 RequireJS 自定义 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
   
 从 Visual Studio 2013 Update 4 开始，支持对常用 RequireJS JavaScript 文件和模块化加载程序的支持。 RequireJS 使定义代码模块之间的依赖关系和仅在需要时动态加载模块更容易了。 编写使用 RequireJS 的 JavaScript 代码时，会针对你从你的模块定义中引用的模块或通过调用 `require()` 从你的代码中引用的模块提供 IntelliSense 建议。  
   

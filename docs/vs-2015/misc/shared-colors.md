@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: v-brickg
-ms.openlocfilehash: 3871ee1f31b2bc63f575e308b3b9008b3335a224
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d2f36b3b5213003e65f51f7d93a2d7d90a3ff12
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472315"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881171"
 ---
 # <a name="shared-colors"></a>共享颜色
 在此处插入介绍。  
@@ -25,7 +25,7 @@ ms.locfileid: "47472315"
 ## <a name="shared-colors"></a>共享颜色  
  在设计使用公共 Visual Studio shell 元素的 UI，或者希望界面元素与类似功能一致时，可使用包定义文件中的现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
   
- 本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参阅[The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
+ 本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参见 [The VSColor Service](../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
   
  请确保正确使用标记名称：  
   
@@ -245,7 +245,7 @@ ms.locfileid: "47472315"
 #####  <a name="BKMK_CommandComboBox"></a> 组合框  
   
 > [!IMPORTANT]
->  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，使用的颜色标记下找到[下拉列表](../misc/shared-colors.md#BKMK_CommandDropDown)。  
+>  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown)下的颜色标记。  
   
  ![组合框红线](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303年 029_ComboBoxRedline")  
   
@@ -323,7 +323,7 @@ ms.locfileid: "47472315"
 #####  <a name="BKMK_CommandDropDown"></a> 下拉列表  
   
 > [!IMPORTANT]
->  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色标记下找到[组合框](../misc/shared-colors.md#BKMK_CommandComboBox)。  
+>  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox)下的颜色标记。  
   
  ![删除&#45;向下红线](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")  
   
@@ -387,7 +387,7 @@ ms.locfileid: "47472315"
 |![删除&#45;向下按钮禁用](../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")|前景（标志符号）|`Environment.DropDownDisabledGlyph`|  
   
 ##### <a name="split-button"></a>“拆分”按钮  
- 拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏实现[菜单](../misc/shared-colors.md#BKMK_CommandMenus)。  
+ 拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [Menus](../misc/shared-colors.md#BKMK_CommandMenus)的实现。  
   
  ![拆分按钮红线](../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")  
   
@@ -648,7 +648,7 @@ ms.locfileid: "47472315"
 |![悬停时的预览背景选项卡](../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303年 082_PreviewBackgroundTabHover")<br /><br /> **悬停时的预览选项卡的背景选项卡**|Border|`Environment.FileTabProvisionalHoverBorder`<br /><br /> 设置为与背景相同的颜色。|  
   
 ##### <a name="document-overflow-button"></a>文档溢出按钮  
- 如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 文档溢出下拉菜单中，通过控制**CommandBarMenu**颜色 (请参阅[菜单](../misc/shared-colors.md#BKMK_CommandMenus))，显示所有打开的文档，可见或隐藏，溢出标志符号更改的列表根据是否所有打开的文档都显示在选项卡通道中。  
+ 如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 通过 **CommandBarMenu** 颜色（请参见 [Menus](../misc/shared-colors.md#BKMK_CommandMenus)）控制的文档溢出下拉菜单会显示所有打开的文档（可见或隐藏）的列表，溢出标志符号会根据是否所有打开的文档都显示在选项卡通道中而更改。  
   
  ![溢出红线](../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")  
   
@@ -1085,7 +1085,7 @@ ms.locfileid: "47472315"
 |![信息栏](../extensibility/ux-guidelines/media/0303-139-infobar.png "0303年 139_Infobar")<br /><br /> **信息栏**|Border|`Environment.ToolWindowBorder`|  
   
 #### <a name="scroll-bar"></a>滚动条  
- 滚动条由 Visual Studio 环境设置样式，无需具有主题。 但是，你可能会决定要利用滚动条中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。  
+ 滚动条由 Visual Studio 环境设置样式，无需具有主题。 但是，你可能决定你想要利用滚动条中使用，因此，UI 显示方式始终与这部分 Visual Studio 环境一致的颜色。  
   
  ![滚动条红线](../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303年 140_ScrollbarRedline")  
   
@@ -1421,7 +1421,7 @@ ms.locfileid: "47472315"
 |已选定（非活动）|Border|无|  
   
 ### <a name="manifest-designer"></a>清单设计器  
- 清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的详细信息，请参阅[Visual Studio 的布局](../extensibility/ux-guidelines/layout-for-visual-studio.md)。  
+ 清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的更多信息，请参见 [Layout for Visual Studio](../extensibility/ux-guidelines/layout-for-visual-studio.md)。  
   
  ![清单设计器红线](../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")  
   
@@ -1600,22 +1600,22 @@ ms.locfileid: "47472315"
   
 |组件|元素|标记名称：Category.color|  
 |---------------|-------------|--------------------------------|  
-|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|背景|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|背景|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|Border|`TreeView.FocusVisualBorder`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|Border|`TreeView.FocusVisualBorder`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|前景（标志符号）|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|前景（标志符号）|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|前景（文本）|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|前景（文本）|`TreeView.SelectedItemActive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|背景|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|背景|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
+|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|背景|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|背景|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|Border|`TreeView.FocusVisualBorder`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|Border|`TreeView.FocusVisualBorder`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|前景（标志符号）|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|前景（标志符号）|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-193-toolboxparentnodefocused.png "0303年 193_ToolboxParentNodeFocused")<br /><br /> **已设定焦点的父节点**|前景（文本）|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![已设定焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-194-toolboxchildnodefocused.png "0303年 194_ToolboxChildNodeFocused")<br /><br /> **已设定焦点的子节点**|前景（文本）|`TreeView.SelectedItemActive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|背景|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|背景|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
 |![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|Border|无|  
 |![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|Border|无|  
-|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|前景（标志符号）|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|前景（标志符号）|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|前景（文本）|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
-|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|前景（文本）|`TreeView.SelectedItemInactive`<br /><br /> 从[树视图](../misc/shared-colors.md#BKMK_TreeView)类别|  
+|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|前景（标志符号）|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|前景（标志符号）|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![失去焦点的工具箱父节点](../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")<br /><br /> **失去焦点的父节点**|前景（文本）|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
+|![失去焦点的工具箱子节点](../extensibility/ux-guidelines/media/0303-196-toolboxchildnodeunfocused.png "0303年 196_ToolboxChildNodeUnfocused")<br /><br /> **失去焦点的子节点**|前景（文本）|`TreeView.SelectedItemInactive`<br /><br /> 来自 [Tree view](../misc/shared-colors.md#BKMK_TreeView) 类别|  
   
 ## <a name="color-value-reference"></a>颜色值参考  
   

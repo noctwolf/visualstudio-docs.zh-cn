@@ -16,12 +16,12 @@ ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34cf96f38d169994d85f758c9453b6ad15ad6390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99561ea9e1fe46f5e0f90bf994c8b9eaf4b11d32
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471688"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880514"
 ---
 # <a name="registering-an-expression-evaluator"></a>注册表达式计算器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "47471688"
 ## <a name="managed-code-expression-evaluator"></a>托管的代码表达式计算器  
  托管的代码类库，这是一个 DLL，它向 COM 环境，通常通过 VSIP 计划，对的调用来启动注册自身作为实现 EE **regpkg.exe**。 自动处理实际编写 COM 环境的注册表项的过程。  
   
- 主类的方法标记为<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>，指示正在 com 注册 DLL 时要调用该方法 此注册方法中，通常称为`RegisterClass`，执行向 Visual Studio 注册该 DLL 的任务。 相应`UnregisterClass`(标有<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)，撤消的影响`RegisterClass`卸载 DLL 时。  
+ 主类的方法标记为<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>，指示正在 com 注册 DLL 时要调用方法 此注册方法中，通常称为`RegisterClass`，执行向 Visual Studio 注册该 DLL 的任务。 相应`UnregisterClass`(标有<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>)，撤消的影响`RegisterClass`卸载 DLL 时。  
   
  与非托管代码; 编写 EE 进行相同的注册表条目唯一的区别是，没有任何帮助器函数如`SetEEMetric`来完成工作。 此注册/取消注册过程的示例如下所示：  
   
