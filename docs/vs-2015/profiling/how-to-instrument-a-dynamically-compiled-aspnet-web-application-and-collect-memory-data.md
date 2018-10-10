@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 37ace853b737f7e7031ac003240463d250fd49f9
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588606"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879289"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序并收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "47588606"
 本主题介绍如何使用检测分析方法，通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集详细 .NET 内存分配和对象生存期数据。  
   
 > [!NOTE]
->  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  分析工具的命令行工具位于 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 安装目录的 \Team Tools\Performance Tools 子目录中。 在 64 位计算机上，同时提供 64 位和 32 位版本的工具。 若要使用探查器命令行工具，必须将工具路径添加到命令提示符窗口的 PATH 环境变量中，或将其添加到命令本身。 有关详细信息，请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
  若要从 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集性能数据，请修改目标应用程序的 web.config 文件以启用 [VSInstr.exe](../profiling/vsinstr.md) 工具，来检测动态编译的应用程序文件。 然后使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具来配置承载 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序的服务器并通过设置适当的环境变量启用 .NET 内存分析，然后重启计算机。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "47588606"
     |选项|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定拥有 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 工作进程的帐户的可选域和用户名。 在进程以已登录用户外的用户身份运行时才需要此选项。 名称在 Windows 任务管理器“进程”选项卡上的“用户名”列中列出。|  
-    |[/crosssession](../profiling/crosssession.md)|启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话 id 在会话 ID 列中列出的 Windows 任务管理器中的进程选项卡。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
+    |[/crosssession](../profiling/crosssession.md)|启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话 ID 在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出。 可以将 **/CS** 指定为 **/crosssession** 的缩写。|  
     |[/globaloff](../profiling/globalon-and-globaloff.md)|在暂停数据收集的情况下启动探查器。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 可恢复分析。|  
     |[/counter](../profiling/counter.md) **:** `Config`|从 `Config` 中所指定的处理器性能计数器收集信息。 计数器信息将添加到在每个分析事件中收集的数据中。|  
     |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定要在分析期间收集的 Windows 性能计数器。|  

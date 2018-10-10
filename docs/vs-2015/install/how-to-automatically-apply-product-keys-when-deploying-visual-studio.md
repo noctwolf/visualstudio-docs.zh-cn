@@ -14,17 +14,17 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 45ed6a059c0a9cf9ae5063e538ec9b9c87698ef1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07f09cbc2deedaeb701a52ffc09532e36e30c308
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482342"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879066"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>How to: Automatically apply product keys when deploying Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[部署 Visual Studio 时自动应用产品密钥](https://docs.microsoft.com/en-us/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)。
+Visual Studio 2017 的最新文档，请参阅[部署 Visual Studio 时自动应用产品密钥](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio)。
 
 您可以应用产品密钥以编程方式作为用于自动化 Visual Studio 2015 的部署脚本的一部分。 在安装 Visual Studio 期间或安装已完成后，产品密钥可以以编程方式在设备上设置。  
   
@@ -58,7 +58,7 @@ Visual Studio 2017 的最新文档，请参阅[部署 Visual Studio 时自动应
 |Visual Studio Professional 2013|06177|  
 |Visual Studio Test Professional 2013|06194|  
   
- 有关获取产品密钥的详细信息，请参阅[如何： 查找 Visual Studio 产品密钥](../install/how-to-locate-the-visual-studio-product-key.md)。  
+ 有关获取产品密钥的详细信息，请参阅 [How to: Locate the Visual Studio Product Key](../install/how-to-locate-the-visual-studio-product-key.md)。  
   
  如果 StorePID.exe 成功应用产品密钥，则它将返回 0。 如果遇到错误，它将返回 1 到 6 之间的一个数字。  
   

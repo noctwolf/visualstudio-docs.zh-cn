@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: db32eaaefd89bce9b3972853b7bb02a307b8df4d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5f28f547d6d206cce7fe4face3b92d5fdf0ae4b
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471010"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880119"
 ---
 # <a name="install-visual-studio-2015"></a>安装 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Visual Studio 2017 的最新安装文档，请参阅[安装 Visual Studio 2017](
  有关此本地管理员帐户要求的详细信息，请参阅知识库文章： [如果安装帐户没有某些用户权限，则 SQL Server 安装失败](https://support.microsoft.com/en-us/kb/2000257)。  
   
 ###  <a name="BKMK_Media"></a> 使用安装媒体  
- 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 安装媒体上的根目录中安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，请运行所需版本的安装文件：  
+ 若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安装媒体上的根目录中安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，请运行所需版本的安装文件：  
   
 |版本|安装文件|  
 |-------------|-----------------------|  
@@ -135,7 +135,7 @@ Visual Studio 2017 的最新安装文档，请参阅[安装 Visual Studio 2017](
   
 #### <a name="to-install-or-uninstall-help-content"></a>安装或卸载帮助内容  
   
-1.  上[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]菜单栏上，选择**帮助**，**添加和删除帮助内容**。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 菜单栏上，选择“帮助” 和“添加和移除帮助内容” 。  
   
 2.  在“Microsoft 帮助查看器”  的“管理内容” 选项卡上，选择你的帮助内容对应的安装源。  
   
@@ -203,7 +203,7 @@ Visual Studio 2017 的最新安装文档，请参阅[安装 Visual Studio 2017](
 |-----------|-----------------|  
 |[创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)|介绍如何安装 Visual Studio 未连接到 Internet 时。
 |[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)|提供有关如何在同一台计算机上安装多个 Visual Studio 版本的信息。|  
-|[使用命令行参数安装 Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|列出了在命令提示符下安装 Visual Studio 时，可以使用的命令行参数。|  
+|[使用命令行参数安装 Visual Studio](/visualstudio/install/use-command-line-parameters-to-install-visual-studio)|列出了在命令提示符下安装 Visual Studio 时，可以使用的命令行参数。|  
 |[卸载 Visual Studio](../install/uninstall-visual-studio.md)|介绍如何卸载 Visual Studio。|  
 |[Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)|提供有关 Visual Studio 部署选项的信息。|  
 |[Visual Studio 图像库](../designers/the-visual-studio-image-library.md)|提供有关如何安装可在 Visual Studio 应用程序中使用的图形的信息。|  

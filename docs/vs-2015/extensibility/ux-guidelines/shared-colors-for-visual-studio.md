@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 587da32a1216c219b1811e8fbc8c1dd9ed2b01ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b8b352b5abdeb975c09d3be95fc7384930eb022
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481343"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880924"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47481343"
   
 在设计使用公共 Visual Studio shell 元素的 UI，或者希望界面元素与类似功能一致时，可使用包定义文件中的现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。  
   
- 本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参阅[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
+ 本文介绍公共 UI 元素以及它们使用的标记名称（可以在构建类似 UI 时引用这些名称）。 有关如何访问这些颜色标记的特定信息，请参见 [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
   
  请确保正确使用标记名称：  
   
@@ -561,7 +561,7 @@ ms.locfileid: "47481343"
 ####  <a name="BKMK_CommandComboBox"></a> 组合框  
   
 > [!IMPORTANT]
->  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，使用的颜色标记下找到[下拉列表](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)。  
+>  组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑文本区域，请使用位于 [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)下的颜色标记。  
   
  ![组合框红线](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303年 029_ComboBoxRedline")  
   
@@ -808,7 +808,7 @@ ms.locfileid: "47481343"
 ####  <a name="BKMK_CommandDropDown"></a> 下拉列表  
   
 > [!IMPORTANT]
->  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，使用的颜色标记下找到[组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。  
+>  下拉列表类似于组合框，但缺少可编辑文本区域。 如果下拉列表包含可编辑文本区域，请使用位于 [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)下的颜色标记。  
   
  ![删除&#45;向下红线](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303年 042_DropdownRedline")  
   
@@ -1017,7 +1017,7 @@ ms.locfileid: "47481343"
  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>“拆分”按钮  
- 拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏实现[菜单](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)。  
+ 拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的实现。  
   
  ![拆分按钮红线](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303年 053_SplitButtonRedline")  
   
@@ -1668,7 +1668,7 @@ ms.locfileid: "47481343"
  设置为与背景相同的颜色。  
   
 #### <a name="document-overflow-button"></a>文档溢出按钮  
- 如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 文档溢出下拉菜单中，通过控制**CommandBarMenu**颜色 (请参阅[菜单](../../misc/shared-colors.md#BKMK_CommandMenus))，显示所有打开的文档，可见或隐藏，溢出标志符号更改的列表根据是否所有打开的文档都显示在选项卡通道中。  
+ 如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 通过 **CommandBarMenu** 颜色（请参见 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)）控制的文档溢出下拉菜单会显示所有打开的文档（可见或隐藏）的列表，溢出标志符号会根据是否所有打开的文档都显示在选项卡通道中而更改。  
   
  ![溢出红线](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303年 083_OverflowRedline")  
   
@@ -2802,7 +2802,7 @@ ms.locfileid: "47481343"
  `Environment.ToolWindowBorder`  
   
 ### <a name="scroll-bar"></a>滚动条  
- 滚动条由 Visual Studio 环境设置样式，无需具有主题。 但是，你可能会决定要利用滚动条中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。  
+ 滚动条由 Visual Studio 环境设置样式，无需具有主题。 但是，你可能决定你想要利用滚动条中使用，因此，UI 显示方式始终与这部分 Visual Studio 环境一致的颜色。  
   
  ![滚动条红线](../../extensibility/ux-guidelines/media/0303-140-scrollbarredline.png "0303年 140_ScrollbarRedline")  
   
@@ -3698,7 +3698,7 @@ ms.locfileid: "47481343"
  无  
   
 ## <a name="manifest-designer"></a>清单设计器  
- 清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的详细信息，请参阅[Visual Studio 的布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。  
+ 清单设计器旨在作为可用于更加轻松地在 Windows 8 和 Windows Phone 8 项目中编辑清单文件的方法。 虽然没有可供使用的共享框架，不过匹配方向/导航选项卡和整体结构的设计布局和颜色是合适的。 有关布局详细信息的更多信息，请参见 [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md)。  
   
  ![清单设计器红线](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303年 175_ManifestDesignerRedline")  
   
@@ -4156,25 +4156,25 @@ ms.locfileid: "47481343"
   
  `TreeView.SelectedItemActive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  Border  
   
  `TreeView.FocusVisualBorder`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  前景（标志符号）  
   
  `TreeView.SelectedItemActive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  前景（文本）  
   
  `TreeView.SelectedItemActive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  ![失去焦点的工具箱父节点](../../extensibility/ux-guidelines/media/0303-195-toolboxparentnodeunfocused.png "0303年 195_ToolboxParentNodeUnfocused")  
   
@@ -4188,7 +4188,7 @@ ms.locfileid: "47481343"
   
  `TreeView.SelectedItemInactive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  Border  
   
@@ -4198,11 +4198,11 @@ ms.locfileid: "47481343"
   
  `TreeView.SelectedItemInactive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别  
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别  
   
  前景（文本）  
   
  `TreeView.SelectedItemInactive`  
   
- 从[树视图](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView)类别
+ 来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别
 

@@ -13,12 +13,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9363362f5f0c701250d10b6cb5b4226c05d6dbaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a3c89384c7c095160c5c77753b084540bed6339
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481853"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881145"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -360,7 +360,7 @@ some F# code
 |属性 （HTML 表示形式）|描述|  
 |--------------------------------------|-----------------|  
 |\< 元 name="Microsoft.Help.Locale"内容 ="[语言代码]"/ >|设置本主题中的区域设置。 如果在主题中使用此标记，则它必须使用只需一次并且必须插入以上任何其他 Microsoft 帮助标记该域。 如果未使用此标记，通过使用断字符与该键关联的产品区域设置中，如果指定它，则为索引的主题的正文文本否则为 en-我们使用断字符。 ISOC RFC 4646 符合此标记。 若要确保 Microsoft 帮助正确工作，而不是常规的语言属性使用此属性。|  
-|\< 元 name="Microsoft.Help.TopicLocale"内容 ="[语言代码]"/ >|设置本主题中的区域设置时也可使用其他区域设置。 如果在主题中使用此标记，则必须使用它只需一次。 该目录包含多个语言的内容时，请使用此标记。 在目录中的多个主题可以有相同的 ID，但每次必须指定唯一 TopicLocale。 指定匹配的目录的区域设置 TopicLocale 的主题是目录中显示的主题。 但是，在搜索结果中显示的主题的所有语言版本。|  
+|\< 元 name="Microsoft.Help.TopicLocale"内容 ="[语言代码]"/ >|设置本主题中的区域设置时也可使用其他区域设置。 如果在主题中使用此标记，则必须使用它只需一次。 该目录包含多个语言的内容时，请使用此标记。 在目录中的多个主题可以有相同的 ID，但每次必须指定唯一 TopicLocale。 指定匹配的区域设置 TopicLocale 的主题是目录的目录中显示的主题。 但是，在搜索结果中显示的主题的所有语言版本。|  
 |\< 标题 > [Title] \< /t >|指定此主题的标题。 此标记是必需的并且必须使用在主题中的只是一次。 如果该主题的正文不包含标题\<d i v > 部分中，此标题将显示在主题以及目录中。|  
 |\< 元名称 ="Microsoft.Help.Keywords"内容 ="[aKeywordPhrase]"/ >|指定在帮助查看器的索引窗格中显示的链接的文本。 单击该链接时，将显示主题。你可以指定多个索引关键字主题，或如果不希望出现在索引中本主题的链接，则可以忽略此标记。 从早期版本的帮助"K"关键字可以转换为此属性。|  
 |\< 元 name="Microsoft.Help.Id"内容 ="[TopicID]"/ >|设置本主题的标识符。 此标记是必需的并且必须使用在主题中的只是一次。 ID 必须是唯一的目录中的主题，具有相同的区域设置。 在另一个主题中，可以创建此主题的链接，通过使用此 id。|  

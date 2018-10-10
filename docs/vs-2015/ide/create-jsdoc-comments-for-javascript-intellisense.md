@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10e5db2b81df20ab4b3002f367104fce61631faf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e24338a75dd631cee86ea8ac81e774e81732bba5
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482908"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878987"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>为 JavaScript IntelliSense 创建 JSDoc 注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
   
 Visual Studio 中的 IntelliSense 显示你使用标准 JSDoc 注释添加到脚本中的信息。 你可以使用 JSDoc 注释来提供有关代码元素（如函数、字段和变量）的信息。  
   

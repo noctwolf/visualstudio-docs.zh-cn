@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5725dc2be204ae3b657a857c5a358a29b8c3709
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470892"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881132"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>在 Windows 应用商店应用的 Visual Studio 调试会话中控制应用商店应用的执行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -301,7 +301,7 @@ ms.locfileid: "47470892"
   
     -    “匿名函数”显示 `module` 函数中挂起执行的行。 它位于调用堆栈的顶部。  
   
-4.  **单步执行函数以到达 example5_d 函数。** 选择“Ctrl+ S”  on the  （键盘： **F11**），以在调用路径中执行调用，直到达到 example5_d 函数的入口点。 请注意，函数每次调用函数时，都会保存调用函数的行号，并将被调用的函数置于堆栈的顶部。 调用函数的行号是调用函数已挂起执行的点。 黄色箭头指向当前正在执行的函数。  
+4.  **单步执行函数以到达 example5_d 函数。** 选择**单步执行**上**调试**菜单 (键盘： **F11**) 以在调用路径中执行调用，直到达到 example5_d 函数的入口点。 请注意，函数每次调用函数时，都会保存调用函数的行号，并将被调用的函数置于堆栈的顶部。 调用函数的行号是调用函数已挂起执行的点。 黄色箭头指向当前正在执行的函数。  
   
      ![调用堆栈窗口](../debugger/media/dbg-jsnav-callstack-windows.png "DBG_JSNAV_CallStack_windows")  
   

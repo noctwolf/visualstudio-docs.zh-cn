@@ -24,12 +24,12 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cc6cbcb4bba7e808a72ca389ab8ad9157e80375c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482070"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880716"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "47482070"
 
 ### <a name="to-download-and-install-the-remote-tools"></a>若要下载并安装远程工具
   
-1.  你想要调试 （而不是运行 Visual Studio 的计算机） 的设备或服务器计算机上, 获取的正确版本的远程工具。
+1.  在设备或服务器您想要调试的计算机 （而不运行 Visual Studio 的计算机），获取远程工具的正确版本。
 
     |版本|链接|说明|
     |-|-|-|
@@ -59,7 +59,7 @@ ms.locfileid: "47482070"
     > [!IMPORTANT]
     >  我们建议安装最新版本的远程工具与你的 Visual Studio 版本匹配。 不建议版本不匹配。  
     >   
-    >  此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试的 32 位应用程序上运行 64 位操作系统的远程计算机，你必须在远程计算机上安装远程工具的 64 位版本。  
+    >  此外，必须安装具有相同的体系结构作为你想要将其安装操作系统的远程工具。 换而言之，如果你想要调试远程计算机运行 64 位操作系统上的 32 位应用程序，您必须在远程计算机上安装远程工具的 64 位版本。  
   
 3.  完成下载可执行文件后，请按照说明在远程计算机上安装该应用程序。 请参阅[安装说明进行操作](#bkmk_setup)
 
@@ -286,7 +286,7 @@ ms.locfileid: "47482070"
 ## <a name="set-up-debugging-with-remote-symbols"></a>使用远程符号设置调试  
  你应能够使用你在 Visual Studio 计算机生成的符号调试你的代码。 使用本地符号时远程调试器的性能更佳。  如果必须使用远程符号，则需要告诉远程调试监视器以查找远程计算机上的符号。  
   
- 从 Visual Studio 2013 Update 2 开始，你可以使用以下 msvsmon 命令行开关以托管代码中使用远程符号： `Msvsmon / /FallbackLoadRemoteManagedPdbs`  
+ 从 Visual Studio 2013 Update 2 开始，你可以使用以下 msvsmon 命令行开关来使用用于托管代码的远程符号：`Msvsmon / /FallbackLoadRemoteManagedPdbs`  
   
  有关详细信息，请参阅远程调试帮助 (按**F1**中的远程调试器窗口中或单击**帮助 / 用法**)。 你可以找到详细信息在[.NET 远程符号加载更改 Visual Studio 2012 和 2013年中](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx)  
   
@@ -304,7 +304,7 @@ ms.locfileid: "47482070"
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)   
  [配置 Windows 防火墙以允许远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)   
- [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)   
+ [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md)   
  [远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)
 

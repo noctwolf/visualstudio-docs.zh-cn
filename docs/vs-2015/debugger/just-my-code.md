@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dbb444a8de184f47bc8c6915bbf0fafcaf6c7ca3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0a9787e7e0a203a77e456ec61ea8a80057ce92
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484327"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879975"
 ---
 # <a name="just-my-code"></a>仅我的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -195,7 +195,7 @@ ms.locfileid: "47484327"
 |-|-|  
 |**MyCode**|你拥有或控制的用户代码。|  
 |**LibraryCode**|库中由你定期使用以及应用程序为正常运行而依赖的非用户代码（例如 WinJS 或 jQuery）。|  
-|**UnrelatedCode**|可以在应用程序中运行，但不由你拥有并且应用程序并不直接依赖它才能正常运行的非用户代码（例如，可以显示广告的广告 SDK）。 在 Windows 应用商店项目中，从 HTTP 或 HTTPS URI 加载到应用中的任何代码也被视为 UnrelatedCode。|  
+|**UnrelatedCode**|在您的应用程序，但您可能运行的非用户代码不拥有和你的应用程序并不直接依赖它才能正确 （例如，可以显示广告的广告 SDK）。 在 Windows 应用商店项目中，从 HTTP 或 HTTPS URI 加载到应用中的任何代码也被视为 UnrelatedCode。|  
   
  JavaScript 调试器会自动对这些类型的代码进行分类：  
   

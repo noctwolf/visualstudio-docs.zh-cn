@@ -18,17 +18,17 @@ caps.latest.revision: 76
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: e95970c19020e28c3b7592068b0ef1df7f1c56f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8f25b995079aeedca262dedd62b2f9c880efb52
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482474"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879190"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指南](https://docs.microsoft.com/en-us/visualstudio/install/visual-studio-administrator-guide)。
+Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指南](/visualstudio/install/visual-studio-administrator-guide)。
 
 您可以在网络上部署 Visual Studio 2015，只要每台目标计算机满足[最低安装要求](http://www.microsoft.com/visualstudio/eng/products/2013-editions)。 可以通过使用 /layout 开关运行安装文件创建一个网络共享 (如所述[创建脱机安装 Visual Studio 的](../install/create-an-offline-installation-of-visual-studio.md)页)，然后将其从本地计算机复制到网络共享。 如果使用的 ISO，可以装载 ISO 并共享它或将 ISO 复制到网络共享。  
   
@@ -59,7 +59,7 @@ Visual Studio 2017 的最新文档，请参阅[Visual Studio 2017 管理员指�
 ## <a name="controlling-what-is-installed"></a>控制安装的内容  
  如果要控制最终用户可以安装的内容，有两个选择：管理员文件安装和命令行选项。 如果你的目标是限制最终用户可以从其 Visual Studio 安装程序体验中所选的内容，请选择管理员文件安装。 如果要创建初始配置，但允许最终用户选择他们自己的 Visual Studio 安装程序体验，请选择命令行参数。  
   
- 有关管理员文件体验的详细信息，请参阅[如何： 创建并运行无人参与安装的 Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)和[如何： 部署 Visual Studio时自动应用产品密钥](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md).  有关命令行控件的详细信息，请参阅[使用命令行参数安装 Visual studio](../install/use-command-line-parameters-to-install-visual-studio.md)页。  
+ 有关管理员文件体验的详细信息，请参阅 [How to: Create and Run an Unattended Installation of Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md) 和 [How to: Automatically apply product keys when deploying Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)。  有关命令行控件的详细信息，请参阅[使用命令行参数安装 Visual studio](../install/use-command-line-parameters-to-install-visual-studio.md)页。  
   
 ## <a name="specifying-customer-feedback-settings"></a>指定客户反馈设置  
  默认情况下，Visual Studio 安装会启用客户反馈。 可以通过将以下注册表项的值更改为字符串 "0"，将 Visual Studio 配置为在单台计算机上禁用客户反馈：  

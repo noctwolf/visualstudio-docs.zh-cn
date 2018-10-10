@@ -15,12 +15,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 628e4128877eb6872dd8d6af6fd0902b4e10bb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471491"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880690"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "47471491"
   
  `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`  
   
- 自定义指令处理器将变量和属性添加到生成转换类。 您编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom> 类使用 Visual C# 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 创建代码，具体取决于在 `language` 指令的 `template` 参数中指定的语言。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。  
+ 自定义指令处理器将变量和属性添加到生成转换类。 你编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom> 类使用 Visual C# 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 创建代码，具体取决于在 `language` 指令的 `template` 参数中指定的语言。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。  
   
  指令创建的代码如下所示：  
   
@@ -136,7 +136,7 @@ End Property
   
             //These are the errors that occur during processing. The engine passes   
             //the errors to the host, and the host can decide how to display them,  
-            //for example the the host can display the errors in the UI  
+            //for example the host can display the errors in the UI  
             //or write them to a file.  
             //---------------------------------------------------------------------  
             private CompilerErrorCollection errorsValue;  
@@ -396,7 +396,7 @@ End Property
   
             'These are the errors that occur during processing. The engine passes   
             'the errors to the host, and the host can decide how to display them,  
-            'for example the the host can display the errors in the UI  
+            'for example the host can display the errors in the UI  
             'or write them to a file.  
             '---------------------------------------------------------------------  
             Private errorsValue As CompilerErrorCollection  
@@ -613,7 +613,7 @@ End Property
   
 4.  有关[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]仅，打开**项目**菜单，然后单击**CustomDP 属性**。 上**应用程序**选项卡上，在**根命名空间**，删除默认值为`CustomDP`。  
   
-5.  上**文件**菜单上，单击**全部保存**。  
+5.  在“文件”  菜单上，单击“全部保存” 。  
   
 6.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
@@ -837,7 +837,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  在本示例中，`Processor` 参数的值为 `CustomDirectiveProcessor`。 `Processor` 参数的值必须与处理器的注册表项的名称一致。  
   
-5.  上**文件**菜单上，单击**全部保存**。  
+5.  在“文件”  菜单上，单击“全部保存” 。  
   
 #### <a name="to-test-the-directive-processor"></a>测试指令处理器  
   

@@ -17,17 +17,17 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 623e964255aa2eda70ddc67dd752faeeb80fa38a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 155d3e771362949288d31a20245c7fb45a022969
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477702"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880963"
 ---
 # <a name="ltfieldgt-javascript"></a>&lt;字段&gt;(JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/en-us/visualstudio/)。  
+本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
   
 指定文档的信息，包括说明，为字段或在对象定义的成员。  
   

@@ -17,12 +17,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e9827186ad2e7310f2a7554c8d830518f9979411
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26dd5652b2c167e8ae33be4250015ba32c34a96
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481042"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878870"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder 元素（Visual Studio 项目模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "47481042"
 ## <a name="remarks"></a>备注  
  `Folder` 是的一个可选子级`Project`。  
   
- 可以使用任何以下方法来组织到文件夹在模板中的项目项：  
+ 可以使用任何以下方法以将项目项组织到模板中的文件夹：  
   
 -   在模板的.zip 文件，包括文件夹并将其添加到项目的.vstemplate 文件中通过指定的路径中的文件`ProjectItem`元素，没有`Folder`元素。 这是建议的方法。 例如：  
   

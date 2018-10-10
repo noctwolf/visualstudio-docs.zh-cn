@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a211048e287bd3ef3e45625022f7389e06358e32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802627f59f54b9a4b1179ba5c643b4671f4f7ce0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480305"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48878948"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "47480305"
 >  [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 会自动为标识（自动递增）列、rowguidcol（数据库生成的 GUID）列和时间戳列处理数据库生成的值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 设置为 `true` 并将 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 设置为下列值之一：<xref:System.Data.Linq.Mapping.AutoSync>、<xref:System.Data.Linq.Mapping.AutoSync> 或 <xref:System.Data.Linq.Mapping.AutoSync>。  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>配置实体类的更新行为  
- 默认情况下，在使用对 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类中的数据所做的更改来更新数据库（插入、更新和删除）时，更新逻辑是由 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 运行时提供的。 该运行时创建默认的 Insert、Update 和 Delete 命令，这些命令基于表的架构（列和主键信息）。 当不需要默认行为时，可以通过分配特定的存储过程，以执行操作表中数据所必需的插入、更新和删除来配置更新行为。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 最后，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。  
+ 默认情况下，在使用对 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类中的数据所做的更改来更新数据库（插入、更新和删除）时，更新逻辑是由 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 运行时提供的。 在运行时创建默认的基于表 （列和主键信息） 的架构的 Insert、 Update 和 Delete 命令。 当不需要默认行为时，可以通过分配特定的存储过程，以执行操作表中数据所必需的插入、更新和删除来配置更新行为。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 最后，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
