@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5f39e1a5c5271e806a8e90499e50cb9bd4705a5d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 725d902c181e6082c7f995ceec805aa05441bbaa
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671533"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074047"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何： 在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -157,7 +157,7 @@ ms.locfileid: "35671533"
   
     -   要创建 Word 模板项目基于 *.dotx*文件。 必须将项目文件夹添加到受信任位置列表中，以便可以运行并调试项目。  
   
-     有关如何将文档添加到受信任的位置的详细信息，请参阅 Microsoft Office Online 网站[创建、 删除或更改你的文件的受信任位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+     有关如何将文档添加到受信任的位置的详细信息，请参阅 Microsoft Office Online 网站[创建、 删除或更改你的文件的受信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ## <a name="see-also"></a>请参阅  
  [Office 项目模板概述](../vsto/office-project-templates-overview.md)   

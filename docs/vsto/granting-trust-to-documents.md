@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c78db0a141d711a1a0ac3e46fa49255e754bf52d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 717bfaf8bc97c0f45a45bdc8ba686d4c1df12e49
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671732"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49073436"
 ---
 # <a name="grant-trust-to-documents"></a>向文档授予信任
   文档级项目与应用程序级项目具有相同的安全要求：使用证书对清单进行签名，或单击信任提示。 此外，文档或工作簿必须位于指定为受信任位置的目录中。  
@@ -33,7 +33,7 @@ ms.locfileid: "35671732"
 ## <a name="trusted-locations"></a>受信任的位置  
  中的应用程序[!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)]和 Office 2010 具有用户可在其中配置安全和隐私设置，如受信任位置的信任中心。 Office 解决方案的本地计算机视为受信任的位置。 但是，由于具有较高风险，因此某些特定目录（如系统、用户和 Internet Explorer 的临时文件夹）也无法信任。  
   
- 有关信任中心的详细信息，请参阅[安全策略和 Office 2010 中的设置](http://go.microsoft.com/fwlink/?LinkId=89202)。 有关如何创建、 管理、 删除和配置受信任的文件夹的详细信息，请参阅[2007 Office 系统中配置受信任的位置和受信任的发行者设置](http://go.microsoft.com/fwlink/?LinkId=89203)和[创建、 删除或更改受信任文件位置](https://support.office.com/en-au/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+ 有关信任中心的详细信息，请参阅[安全策略和 Office 2010 中的设置](http://go.microsoft.com/fwlink/?LinkId=89202)。 有关如何创建、 管理、 删除和配置受信任的文件夹的详细信息，请参阅[2007 Office 系统中配置受信任的位置和受信任的发行者设置](http://go.microsoft.com/fwlink/?LinkId=89203)和[创建、 删除或更改受信任文件位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ## <a name="security-considerations-for-office-solutions"></a>有关 Office 解决方案的安全注意事项  
  在考虑将哪些文件夹添加到受信任的位置时，存在几个安全问题：  

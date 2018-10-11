@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a0a235062b24ab940057a020ce3f9e20ceaebaa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: ac8c8bb1b206461749b20660d8131f747fd637de
+ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279578"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49074112"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>错误:“Microsoft Visual Studio 远程调试监视器”(MSVSMON.EXE) 似乎没有在远程计算机上运行。
 此错误消息表示 Visual Studio 未能在远程计算机上找到 Visual Studio 远程调试监视器的正确实例。 必须安装 Visual Studio 远程调试监视器以便进行远程调试。 有关下载和设置远程调试器的信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
@@ -38,13 +38,13 @@ ms.locfileid: "44279578"
  以下各节列出其他一些你可能收到此消息的原因，以及解决此问题的操作。  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>远程计算机不可访问  
- 尝试 [ping](https://technet.microsoft.com/en-us/library/ee624059\(v=ws.10\).aspx) 远程计算机。 如果它不响应 ping 操作，远程工具将无法连接。 请尝试重新启动远程计算机，或者确保它在网络上正确配置。  
+ 尝试 [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) 远程计算机。 如果它不响应 ping 操作，远程工具将无法连接。 请尝试重新启动远程计算机，或者确保它在网络上正确配置。  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>远程调试器的版本与 Visual Studio 的版本不匹配  
  在本地运行的 Visual Studio 的版本必须与远程计算机上运行的远程调试监视器的版本匹配。 若要解决此问题，请下载并安装匹配的远程调试监视器版本。 转到 [下载中心](http://www.microsoft.com/en-us/download) 以查找正确版本的远程调试器。  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本地和远程计算机具有不同的身份验证模式  
- 本地和远程计算机需要使用相同的身份验证模式。 若要解决此问题，请确保这两台计算机使用相同的身份验证模式。 有关身份验证模式的详细信息，请参阅 [Windows 身份验证概述](https://technet.microsoft.com/en-us/library/hh831472.aspx)。  
+ 本地和远程计算机需要使用相同的身份验证模式。 若要解决此问题，请确保这两台计算机使用相同的身份验证模式。 有关身份验证模式的详细信息，请参阅 [Windows 身份验证概述](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11))。  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>远程调试器使用不同的用户帐户运行  
  可通过下列方法之一解决此问题：  
