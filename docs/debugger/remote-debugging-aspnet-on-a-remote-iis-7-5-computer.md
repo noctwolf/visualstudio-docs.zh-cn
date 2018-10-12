@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4a08c957e03dd2df80d9b3b770e569ba1e64104f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: d64850910d1a6a25514eb48e46f70168d245e168
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38780983"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101075"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试已部署到 IIS 的 ASP.NET 应用程序，安装和运行远程工具的计算机上在其中部署您的应用程序，然后从 Visual Studio 附加到正在运行的应用。
@@ -166,12 +166,7 @@ ms.locfileid: "38780983"
 
 在本教程中，我们将使用 Visual Studio 2017。
 
-如果你遇到打开与远程调试器下载中的页的问题，请参阅[取消阻止文件下载](../debugger/remote-debugging.md#unblock_msvsmon)有关的帮助。
-
 [!INCLUDE [remote-debugger-download](../debugger/includes/remote-debugger-download.md)]
-
-> [!TIP]
-> 在某些情况下，它可以是最有效，若要从文件共享运行远程调试器。 有关详细信息，请参阅[从文件共享运行远程调试器](../debugger/remote-debugging.md#fileshare_msvsmon)。
   
 ## <a name="BKMK_setup"></a> 设置 Windows Server 上的远程调试器
 

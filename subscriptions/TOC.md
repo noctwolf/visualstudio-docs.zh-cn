@@ -17,7 +17,7 @@
 ## 使用订阅者权益
 ### 工具
 #### [Visual Studio IDE ](vs-ide-benefit.md)
-#### [Azure DevOps Services](vs-azure-devops.md)
+#### [Azure DevOps](vs-azure-devops.md)
 #### [Azure 信用额度](vs-azure.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
 #### [Parasoft ](vs-parasoft.md)
@@ -31,7 +31,7 @@
 ### [专业开发](professional-development.md)
 #### [LinkedIn 学习](vs-linkedin-learning.md)
 #### [DataCamp](vs-datacamp.md)
-#### [Opsgility](vs-opsgility.md)
+#### [提升技能](vs-opsgility.md)
 #### [Pluralsight](vs-pluralsight.md)
 #### [Xamarin University 培训](vs-xamarin.md)
 #### [MSDN Magazine 订阅](vs-msdn.md)
