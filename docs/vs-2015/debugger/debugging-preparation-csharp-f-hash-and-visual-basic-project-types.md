@@ -1,7 +1,7 @@
 ---
 title: '调试准备： C#、 F # 和 Visual Basic 项目类型 |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70bdc94339af45295599adac8fab03fbe30a93a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54dc950c606a78f277252b30a57e5de8c796df15
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274906"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>调试准备：C#、F# 和 Visual Basic 项目类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试准备： C#、 F # 和 Visual Basic 项目类型](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types)。  
-  
 本节主题描述如何调试由 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目模板创建的 C#、F# 和 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目类型。  
   
  请注意，创建 Dll 作为其输出的这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  

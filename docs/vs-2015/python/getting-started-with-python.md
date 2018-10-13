@@ -1,7 +1,7 @@
 ---
 title: Python 入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 08e059955a6552323453e08882bc2bcebd0fc586
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5cb04bb01aaa6eb06c5e3c50aa13ab51c136678c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "47588970"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275283"
 ---
 # <a name="getting-started-with-python"></a>Python 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的 Python](https://docs.microsoft.com/visualstudio/python/python-in-visual-studio)。  
-  
 Python Tools for Visual Studio (PTVS)，是一种免费，[开放源代码](https://github.com/Microsoft/ptvs)插件 Visual studio 的功能强大的 Python 开发体验。  
   
 ## <a name="python-the-language"></a>Python 语言

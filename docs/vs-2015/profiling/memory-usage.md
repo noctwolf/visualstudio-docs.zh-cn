@@ -1,7 +1,7 @@
 ---
 title: 内存使用情况 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ef562e1123035e42ffc6d4e5a1c24d1ef936ecc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f07c169b6c282b68c96c2e1c9be821ef4e00700
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477069"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276030"
 ---
 # <a name="memory-usage"></a>内存使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中分析内存使用情况](https://docs.microsoft.com/visualstudio/profiling/memory-usage)。  
-  
 使用调试器集成的 **内存使用率** 诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
   
 -   你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
@@ -41,7 +39,7 @@ ms.locfileid: "47477069"
  还可以在调试器外部使用内存工具。 请参阅 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
 > [!NOTE]
->  **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  如果你正在编写你自己的分配器，则返回一个指向新分配的堆内存的任何函数都可用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)（分配器）进行修饰，如此 myMalloc 示例所示：  
+>  **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  如果你正在编写你自己的分配器，则返回一个指向新分配的堆内存的任何函数可用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)（分配器）进行修饰，如此 myMalloc 示例所示：  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)`  
   

@@ -1,7 +1,7 @@
 ---
 title: 堆栈帧 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b5e439d4-1e9d-4e13-9cad-bb8b136d4ca8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1efbc05528dd009098749fbe75316c0261b1b20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 301a782ebf0eda9b1e97c9f0f09c10a0985de4c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271591"
 ---
 # <a name="stack-frames"></a>堆栈帧
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[堆栈帧](https://docs.microsoft.com/visualstudio/extensibility/debugger/stack-frames)。  
-  
 在调试器体系结构，方面**堆栈帧**:  
   
 -   是提供一个线程的执行上下文堆栈的抽象。 函数内始终执行线程。 堆栈帧保存到它的函数和参数的本地变量。 若要使用 Visual Studio 进行调试，语言或正在调试的环境必须支持堆栈帧。  

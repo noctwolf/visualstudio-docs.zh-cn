@@ -1,7 +1,7 @@
 ---
 title: 如何： 关闭源代码管理插件的兼容性警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5cfa9ed4b06f8a2f567f6446f85f35e3f0cde244
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e77bfb81df5b9c30ae6b99076480f8ff72cd27a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273502"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 关闭源代码管理插件的兼容性警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[打开关闭的兼容性警告源代码管理插件](https://docs.microsoft.com/visualstudio/extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins)。  
-  
 使用源代码管理中的时，用户可能会看到几个兼容性警告[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 显示警告取决于源代码管理插件的功能，可禁用详细信息如下。  
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要禁用此警告:"以确保获得最佳的源代码管理集成，使用 Visual Studio..."  

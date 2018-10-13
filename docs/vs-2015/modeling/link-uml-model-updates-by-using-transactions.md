@@ -1,7 +1,7 @@
 ---
 title: 通过使用事务链接 UML 模型更新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 18
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b05f0f1d178099337122cba2213b4bba22d2eead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63b7df949f87407735c994ffe5ca7aa65fcd29a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274256"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>使用事务链接 UML 模型更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用事务链接 UML 模型更新](https://docs.microsoft.com/visualstudio/modeling/link-uml-model-updates-by-using-transactions)。  
-  
-在定义扩展到 Visual Studio 中的 UML 设计器时，可以分组到单个事务中调用多项更改*链接的撤消上下文*。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+在定义扩展到 Visual Studio 中的 UML 设计器时，可以分组到单个事务中调用多项更改*链接的撤消上下文*。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  默认情况下，代码对模型进行的每处修改都可以由用户单独撤销。 例如，如果定义交换两个 UML 类的名称的菜单命令，用户可以调用该命令，然后执行单次撤消。 这将撤消对其中一个名称的更改，但不会撤销对另一个名称的更改，从而让你的模型处于意外状态。  
   

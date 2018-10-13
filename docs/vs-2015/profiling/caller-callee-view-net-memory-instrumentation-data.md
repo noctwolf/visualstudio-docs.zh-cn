@@ -1,7 +1,7 @@
 ---
 title: “调用方 - 被调用方”视图 - .NET 内存检测数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2cd30b9dcc72ba2afd97577f69ac059a2e8a1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8cb22cb8274ea9af8fbea045eeeb779835c84a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482593"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273827"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>“调用方/被调用方”视图 - .NET 内存检测数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用方-被调用方视图-NET 内存检测数据](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-net-memory-instrumentation-data)。  
-  
 通过使用检测方法收集 .NET 内存分析数据的“调用方/被调用方”视图，此视图显示所选函数的分配和计时数据及该所选函数的父函数和子函数。 “调用方/被调用方”视图包含三个网格。  
   
  **当前函数**在中间网格中显示，并且显示所选函数的内存分析信息。 这些值包括对函数的所有采样调用。  

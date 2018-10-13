@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b68e103edcd3162b72bc5fddd4d1401b2430df3
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273086"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ##  <a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -83,7 +83,7 @@ window.ShowModal()
   
  `ShowModal` 返回一个布尔值？ （可以为 null 的布尔值） 与`DialogResult`，如果需要可使用它。 返回值为 true，如果对话框中，已关闭**确定**。  
   
- 如果你需要在其自身中显示一些 WPF UI，不是一个对话框，并位于`HwndSource`，如弹出窗口或 Win32/WinForms 父窗口窗口的 WPF 子窗口，您将需要设置`FontFamily`和`FontSize`WPF e 的根元素上lement。 (在 shell 上主窗口中，设置的属性，但将无法继承过去`HWND`)。 在 shell 提供了属性可以绑定到，此类资源：  
+ 如果你需要在其自身中显示一些 WPF UI，不是一个对话框，并位于`HwndSource`，如弹出窗口或 Win32/WinForms 父窗口的 WPF 子窗口，您将需要设置`FontFamily`和`FontSize`WPF 元素的根元素上。 (在 shell 上主窗口中，设置的属性，但将无法继承过去`HWND`)。 在 shell 提供了属性可以绑定到，此类资源：  
   
 ```xaml
 <Setter Property="FontFamily" Value="{DynamicResource VsFont.EnvironmentFontFamily}" />  

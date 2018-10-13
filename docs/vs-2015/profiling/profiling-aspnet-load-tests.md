@@ -1,7 +1,7 @@
 ---
 title: 分析 ASP.NET 负载测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78825dd76015df73f514e5adb0f3dffb6d60644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8922476ec3db980254a15daab8bc67d16d4e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271916"
 ---
 # <a name="profiling-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分析 ASP.NET 负载测试](https://docs.microsoft.com/visualstudio/profiling/profiling-aspnet-load-tests)。  
-  
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../includes/tcmext-md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：  
   
  [(NIB) 如何：从 Web 性能测试编辑器对 Web 应用程序运行性能会话](http://msdn.microsoft.com/en-us/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)  
