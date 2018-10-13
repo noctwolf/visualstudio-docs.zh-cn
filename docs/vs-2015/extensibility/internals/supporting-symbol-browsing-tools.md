@@ -1,7 +1,7 @@
 ---
 title: 支持符号浏览工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7c406cdf7b975e37522bccc0d45687593b1a35ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df1b61d387497c1e83519fde104ad6a66d92133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187312"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>支持符号浏览工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[支持符号浏览工具](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-symbol-browsing-tools)。  
-  
 **对象浏览器**，**类视图**，**调用浏览器**并**查找符号结果**工具提供浏览功能在 Visual Studio 中的符号。 这些工具显示的符号的层次结构树视图，并显示在树中的符号之间的关系。 符号可能代表命名空间、 对象、 类、 类成员和不同组件中包含其他语言元素。 这些组件包括 Visual Studio 项目中，外部[!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]组件和类型 (.tlb) 库。 有关详细信息，请参阅[查看代码的结构](../../ide/viewing-the-structure-of-code.md)。  
   
 ## <a name="symbol-browsing-libraries"></a>符号浏览库  

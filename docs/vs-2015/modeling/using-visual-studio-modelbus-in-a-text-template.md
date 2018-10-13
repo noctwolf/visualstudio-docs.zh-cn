@@ -1,7 +1,7 @@
 ---
 title: 在文本模板中使用 Visual Studio ModelBus |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3c6c3d9e35f14a03f8130982c562ba812ac11d6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6defdf3613f9ac8f270a8e0140115cdca2328e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483546"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189392"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[文本模板中使用 Visual Studio ModelBus](https://docs.microsoft.com/visualstudio/modeling/using-visual-studio-modelbus-in-a-text-template)。  
-  
 如果您编写读取模型包含的文本模板[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]ModelBus 引用，你可能想要解析对访问目标模型的引用。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):  
   
 -   引用目标 DSL 必须具有配置为从文本模板访问 ModelBus 适配器。 如果你还可以从其他代码访问 DSL，除了标准的 ModelBus 适配器需要重新配置的适配器。  

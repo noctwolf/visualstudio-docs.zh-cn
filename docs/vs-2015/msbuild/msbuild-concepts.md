@@ -1,7 +1,7 @@
 ---
 title: MSBuild 概念 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bfaa3da19a9c6eda46d09fbb4c9d30c96e04b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54c8fcd52a6d3650726281f55c3d6192c089ce78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174117"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 概念](https://docs.microsoft.com/visualstudio/msbuild/msbuild-concepts)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供可用于控制生成平台如何生成软件的基本 XML 架构。 若要指定生成中的组件及其生成方式，请使用这四个 MSBuild 部件：属性、项、任务和目标。  
   

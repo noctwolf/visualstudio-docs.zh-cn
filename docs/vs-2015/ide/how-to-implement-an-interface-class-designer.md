@@ -1,7 +1,7 @@
 ---
 title: 如何：实现接口（类设计器）|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3626d35867902f96b7f3d48d0b7528fa16fc7a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bbe5eec0a512dafd6689f1420e721d6a2a63e1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189844"
 ---
 # <a name="how-to-implement-an-interface-class-designer"></a>如何：实现接口（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 实现接口 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-implement-an-interface-class-designer)。  
-  
 在类设计器中，可以在类图上将接口连接至为接口方法提供代码的类，以此来实现接口。 类设计器可生成接口实现，并将接口与类之间的关系显示为继承关系。 可以通过在接口与类之间绘制继承连线或从类视图拖动接口来实现接口。  
   
 > [!TIP]

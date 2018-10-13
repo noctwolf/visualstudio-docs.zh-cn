@@ -1,7 +1,7 @@
 ---
 title: 服务的命令行分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc44d7f9ea822dfb7c5d68e6769e36a0ff9aeae4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86613c66cf7c52419d75a858d7ad7d7fbcf6a83d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178773"
 ---
 # <a name="command-line-profiling-of-services"></a>服务的命令行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[服务的命令行分析](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-services)。  
-  
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具收集 Windows 服务的性能数据的步骤和选项。  
   
 > [!NOTE]

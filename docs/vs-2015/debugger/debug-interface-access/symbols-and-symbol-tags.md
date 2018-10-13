@@ -1,7 +1,7 @@
 ---
 title: 符号和符号标记 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04dfbe961b122ded6ddb5ff19d70091ba6c408c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7eaf514ce88b20954ace1206ab625ae55ed12cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189782"
 ---
 # <a name="symbols-and-symbol-tags"></a>符号和符号标记
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[符号和符号标记](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/symbols-and-symbol-tags)。  
-  
 使用调试接口访问 (DIA) SDK Api 可以访问的符号作为在程序数据库 (.pdb) 文件中存储有关已编译的程序的调试信息。 所有符号都有[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)和一个[idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)属性。 `symTag`属性指示符号的类型由定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 `symIndexId`属性是`DWORD`值，该值包含一个符号的每个实例的唯一标识符。  
   
  符号还具有属性，可以指定有关其他信息的符号以及对其他符号的引用通常[idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)或[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). 当查询包含的引用的属性时，作为返回的引用[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象。 此类属性始终配对与另一个属性的名称相同但后缀"id"，例如， [idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)并[idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)。 中的表[符号位置](../../debugger/debug-interface-access/symbol-locations.md)，[符号类型的词法层次结构](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)，并[符号类型的类层次结构的](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)概述不同类型的每个属性的符号。 这些属性可能具有相关的信息或对其他符号的引用。 因为`*Id`属性是只需数字序号标识符的相关属性，进一步讨论中省略了这些。 称其仅在需要时参数获取的。  

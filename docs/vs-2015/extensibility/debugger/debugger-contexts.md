@@ -1,7 +1,7 @@
 ---
 title: 调试器上下文 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7f24360b29557ef767d1a9a5f91a6f116db9ec12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f84bda705378a6bdb9cbc614f7e76cd38b0d709
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183503"
 ---
 # <a name="debugger-contexts"></a>调试器上下文
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试器上下文](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugger-contexts)。  
-  
 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试，调试引擎 (DE) 同时在内运行多个不同的上下文中，按如下所示：  
   
 -   代码上下文，其中描述了用于控制程序执行流中的当前位置。  

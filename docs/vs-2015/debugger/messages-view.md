@@ -1,7 +1,7 @@
 ---
 title: 消息视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d603ad157786df756f130c3bf203961b48a610f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76d033cdbe0949cfe861f44be8f390d72c316af8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182086"
 ---
 # <a name="messages-view"></a>消息视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[消息视图](https://docs.microsoft.com/visualstudio/debugger/messages-view)。  
-  
 每个窗口都有相关联的消息流。 消息视图窗口会显示此消息流。 显示的窗口句柄、 消息代码和消息。 可以创建线程或进程以及消息视图。 这样，您可以查看发送到特定的进程或线程，尤其是用于捕获窗口初始化消息所拥有的所有窗口的消息。  
   
  一个典型的消息视图窗口，如下所示。 请注意，第一列包含窗口句柄，并且第二列包含消息代码 (中所述[消息代码](../debugger/message-codes.md))。 已解码的消息参数和返回值将位于右侧。  

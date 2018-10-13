@@ -1,7 +1,7 @@
 ---
 title: 创建设置类别 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 91c46e5a222526dd68d98be0c855067cd96b10f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1a59e2c185460ffd9b9326c8458681f5953de76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471154"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186142"
 ---
 # <a name="creating-a-settings-category"></a>创建设置类别
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Creating a Settings Category](https://docs.microsoft.com/visualstudio/extensibility/creating-a-settings-category)。  
-  
 在本演练中创建 Visual Studio 设置类别和使用它来保存到的值并设置文件中还原值。 设置类别是一组显示为"自定义设置点;"的相关属性也就是说，作为中的复选框**导入和导出设置**向导。 (您可以在找到它**工具**菜单。)设置进行保存或还原为类别，以及各项设置不会显示在该向导。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
  通过从它派生来创建设置类别<xref:Microsoft.VisualStudio.Shell.DialogPage>类。  

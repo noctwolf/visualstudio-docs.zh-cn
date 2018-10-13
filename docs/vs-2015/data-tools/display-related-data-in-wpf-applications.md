@@ -1,7 +1,7 @@
 ---
 title: 在 WPF 应用程序中显示相关的数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4068bcbf3ead7114013b93f02a784d682e5b4d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6c939ee1a64834bd305d0ae744d9ac02e3b4410
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480947"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174135"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[WPF 应用程序中显示相关的数据](https://docs.microsoft.com/visualstudio/data-tools/display-related-data-in-wpf-applications)。  
-  
   
 在某些应用程序，你可能想要使用来自多个表或相关对每个其他父-子关系中的实体的数据。 例如，你可能想要显示一个网格，其中显示从客户`Customers`表。 当用户选择某个特定客户时，另一个网格将显示该客户的相关订单`Orders`表。  
   

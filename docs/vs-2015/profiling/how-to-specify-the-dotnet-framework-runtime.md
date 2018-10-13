@@ -1,7 +1,7 @@
 ---
 title: 如何：指定 .NET Framework 运行时 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25d7d9e63f5ab5581960f08d32f920b24f2f9906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2508d9b0a7ab1c2511dd1bbe2a46ea486ce86a32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189275"
 ---
 # <a name="how-to-specify-the-net-framework-runtime"></a>如何：指定 .NET Framework 运行时
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定.NET Framework 运行时](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-the-dotnet-framework-runtime)。  
-  
 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 发布后，应用程序可以由使用不同的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 运行时版本生成的模块构成。 默认情况下，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具会分析应用程序加载的第一个运行时。 用探查器启动应用程序时，以及将探查器附加到已在运行的应用程序时，可以指定要分析的运行时。  
   
  **要求**  

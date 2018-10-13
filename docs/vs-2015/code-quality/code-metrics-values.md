@@ -1,7 +1,7 @@
 ---
 title: 代码度量值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7b14dd65be49fdc6f7da8de6c605683dd7089410
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0c22a6659105a3d00f5c73cd880a33d357e216e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183451"
 ---
 # <a name="code-metrics-values"></a>代码度量值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码度量值](https://docs.microsoft.com/visualstudio/code-quality/code-metrics-values)。  
-  
 代码度量是一组软件度量值，使开发人员可以更好地了解他们正在开发的代码。 通过利用代码度量值，开发人员可以了解哪些类型和/或方法应该返工或更全面的测试。 开发团队可以确定潜在风险、 了解项目的当前状态并在软件开发过程中跟踪进度。  
   
 ## <a name="software-measurements"></a>软件度量值  

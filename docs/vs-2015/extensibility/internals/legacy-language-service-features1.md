@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务功能 1 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed5b66c8148df36b89cfb6e6ae048a05f393551
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e864f9899c274fe58da16cdb5581058dd20f725
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472355"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185377"
 ---
 # <a name="legacy-language-service-features"></a>旧版语言服务功能
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务功能 1](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-features1)。  
-  
 托管的包框架 (MPF) 语言服务可以支持一个或多个[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]功能，如语法突出显示、 IntelliSense 和断点验证。 每个功能可以实现相互独立，但所有都需要一个分析器和除语法突出显示，这要求仅扫描程序扫描程序。  
   
 ## <a name="in-this-section"></a>本节内容  

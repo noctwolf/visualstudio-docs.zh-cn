@@ -1,7 +1,7 @@
 ---
 title: 创建单元测试项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eb9c64fca2bcd4086073fc349d2c81fa2a62be31
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c592b634b6005033b5b43dcdccf2fdef83025a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179045"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建单元测试项目](https://docs.microsoft.com/visualstudio/test/create-a-unit-test-project)。  
-  
 单元测试往往反映被测代码的结构。 例如，系统会为项目中的每个代码项目创建一个单元测试项目。 测试项目可以与成品代码位于同一解决方案中，也可以位于单独的解决方案中。 解决方案中可以有多个单元测试项目。  
   
 > [!NOTE]

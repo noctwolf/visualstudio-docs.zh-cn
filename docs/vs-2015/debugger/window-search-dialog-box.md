@@ -1,7 +1,7 @@
 ---
 title: 窗口搜索对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd352f1943d4576f848f5bd8d1a51b9196d72d03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9ec54fb45a84ade7d0f87cb2c7a7c5d953b9df4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179967"
 ---
 # <a name="window-search-dialog-box"></a>“窗口搜索”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[窗口搜索对话框](https://docs.microsoft.com/visualstudio/debugger/window-search-dialog-box)。  
-  
 使用此对话框来查找和选择的节点中的特定窗口[Windows 视图](../debugger/windows-view.md)。 若要显示此对话框中，将焦点移到 Windows 视图窗口中。 然后选择**查找窗口**从**搜索**菜单。  
   
  可以使用**查找程序工具**来选择一个窗口，或者可以输入窗口句柄，或者标识窗口的标题和类。  

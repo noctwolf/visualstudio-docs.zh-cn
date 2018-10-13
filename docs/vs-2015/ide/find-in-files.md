@@ -1,7 +1,7 @@
 ---
 title: 在文件中查找 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2f6f51f53642f0eb17cbbae5498ce1c4c288a867
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af1eb1b42281e001bb56f9556c2b0eb21d859758
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178251"
 ---
 # <a name="find-in-files"></a>在文件中查找
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在文件中查找](https://docs.microsoft.com/visualstudio/ide/find-in-files)。  
-  
 在文件 * * 中的查找，可搜索指定的一组文件。 找到的匹配项与所执行的操作在“结果选项”中选择的“查找结果”窗口中列出。  
   
  可以使用以下任一方法在“查找和替换”窗口中显示“在文件中查找”。  

@@ -1,7 +1,7 @@
 ---
 title: 一个或多个选定的项包含设计器不支持的数据类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6acf9d49d2deae1c46466f5bd39d1385fa8c32e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 640dd69990e3c659efe98ef5e73ae83098c58c1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176966"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>一个或多个所选项包含设计器不支持的数据类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[一个或多个选定的项包含设计器不支持的数据类型](https://docs.microsoft.com/visualstudio/data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer)。  
-  
   
 从一个或多个项拖动**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]包含不支持的数据类型[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]（例如，[CLR 用户定义类型](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2))。  
   

@@ -1,7 +1,7 @@
 ---
 title: IDebugManagedObject |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: abac68c7f2aeec3835391b476854d33accb230ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 99b3dc63a1c2ce33cebdf9e7c84e617b59fffb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478074"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183737"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugManagedObject](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugmanagedobject)。  
-  
 > [!IMPORTANT]
 >  在 Visual Studio 2015 中，这种方式实现表达式计算器已弃用。 有关实现 CLR 表达式计算器的信息，请参阅[CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)并[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   

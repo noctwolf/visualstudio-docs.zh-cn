@@ -1,7 +1,7 @@
 ---
 title: 选择 ClickOnce 部署策略 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 24eee31385ea2ef1c01924660e47e370fbed83f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bf4f58a4cfe8622e12b3808ea9f36c8cf1ee49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469837"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175625"
 ---
 # <a name="choosing-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选择 ClickOnce 部署策略](https://docs.microsoft.com/visualstudio/deployment/choosing-a-clickonce-deployment-strategy)。  
-  
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：  
   
 -   从 Web 或网络共享安装  

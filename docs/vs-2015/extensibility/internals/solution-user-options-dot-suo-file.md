@@ -1,7 +1,7 @@
 ---
 title: 解决方案用户选项 (。Suo) 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408acad4031417f4c3dd70b49758f8bee8e2819d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e6e9ccc973c4187cce5f44f6f13262fbee0ea53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186781"
 ---
 # <a name="solution-user-options-suo-file"></a>解决方案用户选项 (.Suo) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[解决方案用户选项 (。Suo) 文件](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-user-options-dot-suo-file)。  
-  
 解决方案用户选项 (.suo) 文件包含每个用户解决方案选项。 此文件应不会签入到源代码管理。  
   
  解决方案用户选项 (.suo) 文件是结构化的存储或复合，以二进制格式存储的文件。 正在将用于标识.suo 文件中的信息的键的流的名称与保存到流的用户信息。 解决方案用户选项文件用于存储用户首选项设置，并在 Visual Studio 将保存在一个解决方案时自动创建。  

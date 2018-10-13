@@ -1,7 +1,7 @@
 ---
 title: 什么是 Visual Studio 2015 中调试器的新增功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 86
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b7a854e872a7739054379b1f6d01794f142f448
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 743875ef4ab7582bd4c1a254c82f168b96ba8208
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188612"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2015"></a>Visual Studio 2015 中调试器的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[What's New for 调试器](https://docs.microsoft.com/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio)。  
-  
 有关 Visual Studio 2015 Update 1 调试和诊断中的所有新增功能的信息，请参阅 [Visual Studio 2015 Update 1 发行说明](https://www.visualstudio.com/news/vs2015-update1-vs#debug)。  
   
  有关 Visual Studio 2015 RTM 调试和诊断中的所有新增功能的信息，请参阅 [Visual Studio 2015 发行说明](https://www.visualstudio.com/news/vs2015-vs#debug)。  
@@ -43,7 +41,7 @@ ms.locfileid: "47588903"
 ## <a name="visual-studio-2015-update-1-changes"></a>Visual Studio 2015 Update 1 更改  
  C++“编辑并继续”支持更多功能。 有关详细信息，请参阅[编辑并继续 （Visual c + +）](../debugger/edit-and-continue-visual-cpp.md)。  
   
- 为调试 Visual C++ 访问冲突，将由新建异常对话框指定导致异常的指针。 有关详细信息，请参阅[如何调试访问冲突？](../debugger/how-can-i-debug-an-access-violation-q.md)和[改进 Visual Studio 2015 Update 1 中的调试 c + + 访问冲突](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
+ 为调试 Visual C++ 访问冲突，将由新建异常对话框指定导致异常的指针。 有关详细信息，请参阅 [How Can I Debug an Access Violation?](../debugger/how-can-i-debug-an-access-violation-q.md) 和 [Visual Studio 2015 Update 1 中为调试 C++ 访问冲突而进行的改进](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/improvement-to-debugging-c-access-violations-in-visual-studio-2015-update-1.aspx)  
   
 ## <a name="visual-studio-2015-rtm-debugger-ui-and-hotkey-changes"></a>Visual Studio 2015 RTM 调试程序 UI 和热键更改  
  异常和断点 UI 中有重大 UI 更改。  

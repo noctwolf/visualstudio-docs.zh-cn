@@ -1,7 +1,7 @@
 ---
 title: 基本更正规则规则设置对于托管代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83f0ac2eb1345a8a933e92682e0f6a76ed3d0edf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4b435d813ad1e7c9308bfa6a7d8d243b877d6d6b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184560"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[托管代码的基本正确性规则规则集](https://docs.microsoft.com/visualstudio/code-quality/basic-correctness-rules-rule-set-for-managed-code)。  
-  
 基本正确性规则规则集重点关注逻辑错误和使用的框架 Api 中的常见错误。 基本正确性规则最少量建议规则规则集中包含的规则。 有关详细信息，请参阅[托管代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)应包含此规则集可展开上的所需的最低建议规则所报告的警告的列表。  
   
  下表介绍了 Microsoft 基本正确性规则规则集中的所有规则。  

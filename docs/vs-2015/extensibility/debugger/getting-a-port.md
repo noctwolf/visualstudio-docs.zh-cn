@@ -1,7 +1,7 @@
 ---
 title: 获取端口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 719da05cf3d408322480ed5a7edb1f20dd12fa89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 809757df7d3a69eaf82bcda9fce78a45cece4e70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183061"
 ---
 # <a name="getting-a-port"></a>获取端口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[获取端口](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-a-port)。  
-  
 端口表示进程正在其运行的计算机的连接。 该计算机可以是本地计算机或远程计算机 (这可能可能运行非基于 Windows 的操作系统，请参阅[端口](../../extensibility/debugger/ports.md)有关详细信息)。  
   
  表示一个端口[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。 它用于获取的端口连接到计算机上运行的进程的信息。  

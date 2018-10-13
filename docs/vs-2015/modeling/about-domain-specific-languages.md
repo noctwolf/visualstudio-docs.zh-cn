@@ -1,7 +1,7 @@
 ---
 title: 关于域特定语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 971c63d25aee9c8676921b5ee7e112ae41a8a251
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175261"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[有关特定于域的语言](https://docs.microsoft.com/visualstudio/modeling/about-domain-specific-languages)。  
-  
 与常规用途语言如 C# 或 UML，不同域特定语言 (DSL) 被用于 express 的特定问题空间或域中的语句。  
   
  熟知的 Dsl 包括正则表达式和 SQL。 每个 DSL 是大大优于通用语言用于描述文本字符串或数据库，但差很多操作来描述其自己的作用域外的想法。 各个行业也有其自己的 Dsl。 例如，在电信行业中，调用的说明语言都广泛使用电话呼叫，在指定状态的序列，并且在无线移动行业的标准 DSL 用于描述航班预订。  

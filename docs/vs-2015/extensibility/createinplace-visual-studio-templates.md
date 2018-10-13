@@ -1,7 +1,7 @@
 ---
 title: CreateInPlace （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6973c73349a63eaf4e55c4b40fc71e6fc097c90d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 785e68329b358568f08a0e8c06d94182a5be263e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180773"
 ---
 # <a name="createinplace-visual-studio-templates"></a>CreateInPlace（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CreateInPlace （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/createinplace-visual-studio-templates)。  
-  
 指定是否要创建项目和在指定位置中，执行参数替换或在一个临时位置执行参数替换，然后将项目保存到指定的位置。  
   
  \<VSTemplate >  

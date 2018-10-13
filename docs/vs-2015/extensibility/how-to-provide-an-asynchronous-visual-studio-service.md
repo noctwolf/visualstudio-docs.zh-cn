@@ -1,7 +1,7 @@
 ---
 title: 如何： 提供异步 Visual Studio 服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a58d249c68a0b28158edb92428d1470973cc094
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185661"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供异步 Visual Studio 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 提供异步 Visual Studio 服务](https://docs.microsoft.com/visualstudio/extensibility/how-to-provide-an-asynchronous-visual-studio-service)。  
-  
 如果你想要获取服务而不会阻塞 UI 线程，您应创建异步服务，并加载在后台线程上的包。 可以使用为此目的<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，使用异步包的特殊异步方法中添加服务  
   
  有关提供同步 Visual Studio 服务的信息，请参阅[如何： 提供的服务](../extensibility/how-to-provide-a-service.md)。  

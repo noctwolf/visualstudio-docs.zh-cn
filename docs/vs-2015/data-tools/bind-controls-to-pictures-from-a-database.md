@@ -1,7 +1,7 @@
 ---
 title: 将控件绑定到图片中，从数据库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,24 +26,22 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab997b01c0155b48cb9dd3033e5bbfd4724d7ba6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fbaca836cb5b620c596b72bc991e91c1cfc2312c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189496"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到数据库中的图片
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[数据库中将控件绑定到图片](https://docs.microsoft.com/visualstudio/data-tools/bind-controls-to-pictures-from-a-database)。  
-  
   
 可以使用**数据源**窗口将在数据库中的图像绑定到你的应用程序中的控件。 例如，将绑定到图像<xref:System.Windows.Controls.Image>控制在 WPF 应用程序中，或为<xref:System.Windows.Forms.PictureBox>Windows 窗体应用程序中的控件。  
   
  作为字节数组通常存储在数据库中的图片。 中的项**数据源**将存储为字节数组具有键入其控件的窗口将设置为**None**默认情况下，原因是字节数组可以包含任何内容，从简单的可执行文件的字节数组大型应用程序。 若要创建数据绑定控件中的字节数组项**数据源**表示的图像的窗口中，您必须选择要创建的控件。  
   
- 以下过程假设**数据源**窗口已填充的项的绑定到你的映像。 有关详细信息，请参阅[如何： 连接到数据库中的数据](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+ 以下过程假设**数据源**窗口已填充的项的绑定到你的映像。 有关详细信息，请参阅 [How to: Connect to Data in a Database](../data-tools/how-to-connect-to-data-in-a-database.md)。  
   
 ### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>若要在数据库中的图片绑定到控件  
   

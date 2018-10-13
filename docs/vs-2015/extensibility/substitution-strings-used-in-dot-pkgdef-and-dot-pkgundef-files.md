@@ -1,7 +1,7 @@
 ---
 title: 替换字符串中使用。Pkgdef 和。Pkgundef 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b1755d63-d794-4fd7-864b-70a9684881c2
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24996e4e32ab86af46fce5280947719f906ffc3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f679f5c4f817002fa92475a1fba7dc38caa34984
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175287"
 ---
 # <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>替换字符串中使用。Pkgdef 和。Pkgundef 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[中使用的替换字符串。Pkgdef 和。Pkgundef 文件](https://docs.microsoft.com/visualstudio/extensibility/substitution-strings-used-in-dot-pkgdef-and-dot-pkgundef-files)。  
-  
 可以使用在.pkgdef 下面列出的替换字符串和.pkgundef 文件定义为您的 Visual Studio 独立 shell 应用程序。  
   
 ## <a name="substitution-strings"></a>替换字符串  

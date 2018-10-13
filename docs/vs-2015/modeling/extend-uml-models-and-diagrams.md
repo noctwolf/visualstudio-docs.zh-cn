@@ -1,7 +1,7 @@
 ---
 title: 扩展 UML 模型和关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,17 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d15da471e077e737bb7ba82d19d68f24f15db687
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fa0196000e2349f5f323d28138186b59ae07cfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179122"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>扩展 UML 模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展 UML 模型和关系图](https://docs.microsoft.com/visualstudio/modeling/extend-uml-models-and-diagrams)。  
-  
-本主题汇总了扩展 Visual Studio 包含的 UML 建模工具可使用的不同方法。 若要查看支持每个模型类型和工具的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+本主题汇总了扩展 Visual Studio 包含的 UML 建模工具可使用的不同方法。 若要查看支持每个模型类型和工具的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  在下面的示例方案中，Fabrikam 设计并安装机场行李处理系统。 从一个机场项目到下一个机场项目，基本设备及其控制软件有许多相似之处。 但也有若干因素大不相同，例如传送带、签入服务台、行李箱和其他行李处理设备的配置。  
   

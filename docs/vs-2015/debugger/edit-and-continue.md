@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26e1215bfbc8696c86a4ac2ec976b8302089b977
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df27a9f2eaa9c6a923a17c640f19ab94c608d6df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480325"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175716"
 ---
 # <a name="edit-and-continue"></a>编辑并继续
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑并继续](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue)。  
-  
 “编辑并继续”是一种省时的功能，使你能够在程序处于中断模式时更改源代码。 通过选择执行命令如恢复程序执行时**继续**或**步骤**、 编辑和继续自动应用代码更改有一些限制。 这允许你在调试会话期间更改代码，而不是停止程序，重新编译整个程序，再重新启动调试会话。  
   
  本节包括下列主题：  

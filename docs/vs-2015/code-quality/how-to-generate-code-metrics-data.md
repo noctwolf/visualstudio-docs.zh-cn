@@ -1,7 +1,7 @@
 ---
 title: 如何： 生成代码度量数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b380fadc7fba4123297506a4f068199710014c7e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dbd9b4e0b62d1c6542231418aa99bd6d6ab0438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189795"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 生成代码度量数据](https://docs.microsoft.com/visualstudio/code-quality/how-to-generate-code-metrics-data)。  
-  
 您可以决定生成代码度量值结果为整个解决方案或所选的项目。  
   
  **要求**  

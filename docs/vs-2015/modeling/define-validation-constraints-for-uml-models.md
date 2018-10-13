@@ -1,7 +1,7 @@
 ---
 title: 为 UML 模型定义验证约束 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,26 +14,24 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1caf688f6ecc84413d3bdb86c1c1825241aa5ba3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176535"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>为 UML 模型定义验证约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为 UML 模型定义验证约束](https://docs.microsoft.com/visualstudio/modeling/define-validation-constraints-for-uml-models)。  
-  
 你可以定义测试模型是否符合所指定条件的验证约束。 例如，你可以定义一个约束以确保用户不会创建具有继承关系的循环。 用户尝试打开或保存模型时将调用该约束，此外也可手动调用。 如果约束失效，错误窗口中将增加一条你定义的错误消息。 可以将这些约束打包到 Visual Studio 集成扩展 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) 中，并将其分发到其他 Visual Studio 用户。  
   
  你还可以定义对照外部资源（如数据库）验证模型的约束。 如果你想要验证程序代码对层关系图，请参阅[向层关系图添加自定义体系结构验证](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
- 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="requirements"></a>要求  
- 请参阅[要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -192,15 +190,15 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **故障排除**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
+     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
   
     -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-    -   在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保中的字符串**启动外部程序**字段是的完整路径名[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常：  
+    -   在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开或创建一个建模项目，然后打开或创建一个建模图。  
+2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。  
   
 3.  若要为上一节中给出的示例约束设置测试：  
   
@@ -244,7 +242,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }  
 ```  
   
- 请参阅[使用 UML API 编程](../modeling/programming-with-the-uml-api.md)方法和类型有关的信息可用于导航和读取模型。  
+ 请参阅 [Programming with the UML API](../modeling/programming-with-the-uml-api.md) 了解可用于导航和读取模型的方法和类型的相关信息。  
   
 ### <a name="about-validation-constraint-methods"></a>关于验证约束方法  
  每个验证约束由如下形式的方法定义：  
@@ -270,7 +268,7 @@ public void ValidateSomething
  你可以使用第二个参数中的其他类型定义所需的尽可能多的验证方法。 调用验证时，将对符合该参数类型的每个模型元素调用每个验证方法。  
   
 ### <a name="reporting-validation-errors"></a>报告验证错误  
- 若要创建错误报告，请使用 `ValidationContext`提供的方法：  
+ 若要创建错误报告，请使用 `ValidationContext` 提供的方法：  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   

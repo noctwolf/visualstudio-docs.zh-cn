@@ -1,7 +1,7 @@
 ---
 title: IDebugPortEvents2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3eb6208d815e4951bd916d014cddfdda34a8e589
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0d5a55dd6e6f7b227477b20af4718001ab5a70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178901"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugPortEvents2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugportevents2)。  
-  
 此接口通知的过程和程序创建和析构的特定端口上的侦听器 （通常会话调试管理器 [SDM] 或调试引擎）。 此信息可以用于显示进程和端口上运行的程序的实时视图。  
   
 ## <a name="syntax"></a>语法  

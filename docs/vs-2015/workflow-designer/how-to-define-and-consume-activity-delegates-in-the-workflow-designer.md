@@ -1,7 +1,7 @@
 ---
 title: 如何： 定义和使用工作流设计器中的活动委托 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5bf6a53879e90dab2a0a57d99ee27d81bd1dfc35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183373"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 包括用于 <xref:System.Activities.Statements.InvokeDelegate> 活动的新的现成可用的设计器。  此设计器可用于将委托分配给从 <xref:System.Activities.ActivityDelegate> 派生的活动，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。  

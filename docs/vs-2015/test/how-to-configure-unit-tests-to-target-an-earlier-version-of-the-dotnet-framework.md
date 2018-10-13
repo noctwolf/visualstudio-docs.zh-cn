@@ -1,7 +1,7 @@
 ---
 title: 如何：配置单元测试以面向 .NET Framework 的早期版本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 051c6e9284ecfaa84957aa21b5966fd503a5f0a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0e608f58f19acf0d2ae01b288943f71f9983c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470909"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173103"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：配置单元测试以面向 .NET Framework 的早期版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 将单元测试配置为目标的早期版本的.NET Framework](https://docs.microsoft.com/visualstudio/test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework)。  
-  
 在 Microsoft Visual Studio 中创建测试项目时，默认将 .NET Framework 的最新版本设为要面向的版本。 此外，如果从 Visual Studio 的早期版本升级测试项目，那么它们将被升级为面向 .NET Framework 的最新版本。 通过编辑项目属性，可以显式使项目重新面向 .NET Framework 的早期版本。  
   
  可以创建面向 .NET Framework 的特定版本的单元测试项目。 所面向的版本必须为 3.5 或更高版本，并且不能为客户端版本。 Visual Studio 为面向特定版本的单元测试启用了以下基本支持：  

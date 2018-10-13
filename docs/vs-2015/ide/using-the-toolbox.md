@@ -1,7 +1,7 @@
 ---
 title: 使用工具箱 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 140387efef05d7f03812a2d5147aa3cdfc111ed1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28f142a011f86afe70bfe83fd2cec274548c7b50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173142"
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用工具箱](https://docs.microsoft.com/visualstudio/ide/using-the-toolbox)。  
-  
 可以使用工具箱将控件和其他项添加到项目中。 还可以将不同的控件拖到和放置到你使用的设计器的图面上，然后调整控件的大小并将它们定位。  
   
  工具箱与设计器视图一起显示，如 XAML 文件的设计器视图。 工具箱仅显示可在当前设计器中使用的那些控件。  

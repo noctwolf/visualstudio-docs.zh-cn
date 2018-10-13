@@ -1,7 +1,7 @@
 ---
 title: 导航和更新中的模型程序代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee04ef978714f2d4925ed14604bf700fd623ef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4630c6a277c6d9698c7fd1d65b5a292862dc3438
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190666"
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>在程序代码中导航和更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[导航和更新程序代码中的模型](https://docs.microsoft.com/visualstudio/modeling/navigating-and-updating-a-model-in-program-code)。  
-  
 可以编写代码来创建和删除模型元素、 设置其属性，并创建和删除元素之间的链接。 必须在事务中进行所有更改。 如果元素关系图上查看、 关系图将""自动更正该事务结束时。  
   
 ## <a name="in-this-topic"></a>本主题内容  
@@ -170,7 +168,7 @@ ms.locfileid: "47478870"
 -   ElementLink-所有关系都是 ElementLinks  
   
 ##  <a name="transaction"></a> 执行在事务内的更改  
- 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
+ 每当你的程序代码更改存储区中的任何内容时，它必须在事务内执行。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Modeling.Transaction> 。  
   
  管理事务的最简便的方法是使用`using`语句括在`try...catch`语句：  
   

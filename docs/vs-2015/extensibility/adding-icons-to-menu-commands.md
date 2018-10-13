@@ -1,7 +1,7 @@
 ---
 title: 将图标添加到菜单命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 051fc6b33a04870f0d21e14ecbe0adc8fcd525be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b264a6b03baf5b77796b329ef6dd05fa4614bad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184506"
 ---
 # <a name="adding-icons-to-menu-commands"></a>将图标添加到菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加到菜单命令的图标](https://docs.microsoft.com/visualstudio/extensibility/adding-icons-to-menu-commands)。  
-  
 命令可出现在菜单和工具栏。 在工具栏上很常见的命令将使用只是一个图标 （为节省空间） 时菜单上显示命令通常显示带图标和文本。  
   
  图标是 16 像素宽乘 16 像素高和可以是 8 位颜色深度 （256 色） 或 32 位颜色深度 （真彩色）。 首选 32 位颜色图标。 通常在单个位图中的单个水平行中排列图标，尽管允许多个位图。 此位图是以及可用在位图中的单个图标在.vsct 文件中声明的。 请参阅参考[Bitmaps 元素](../extensibility/bitmaps-element.md)的更多详细信息。  

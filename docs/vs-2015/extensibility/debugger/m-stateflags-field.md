@@ -1,7 +1,7 @@
 ---
 title: m_stateFlags 字段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1e95457198232493518db2ff44feb53e1b4a28ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0852425b4062b286f95406d01bc1649056967e49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171121"
 ---
 # <a name="mstateflags-field"></a>m_stateFlags 字段
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[m_stateFlags 字段](https://docs.microsoft.com/visualstudio/extensibility/debugger/m-stateflags-field)。  
-  
 存储的当前状态有关的信息<xref:System.Threading.Tasks.Task>对象。  
   
  **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  

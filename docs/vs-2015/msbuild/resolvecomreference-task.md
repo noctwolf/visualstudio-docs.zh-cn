@@ -1,7 +1,7 @@
 ---
 title: ResolveComReference 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97410c97c1625b4729e035e66d5d943afcd5924a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf70e5c2fe77f275f31ed9966df262d64ed2c23d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179356"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ResolveComReference 任务](https://docs.microsoft.com/visualstudio/msbuild/resolvecomreference-task)。  
-  
   
 获取一个或多个类型库名称或 .tlb 文件的列表，将这些类型库解析为磁盘上的位置。  
   

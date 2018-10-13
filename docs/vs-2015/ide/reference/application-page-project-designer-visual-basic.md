@@ -1,7 +1,7 @@
 ---
 title: “项目设计器”->“应用程序”页 (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6dfd1d2c3d5c7467672e604ce4d7d6b9da449210
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175482"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[应用程序页，项目设计器 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-visual-basic)。  
-  
   
 使用项目设计器的“应用程序”页可指定项目的应用程序设置和属性。  
   
@@ -89,7 +87,7 @@ ms.locfileid: "47479659"
   
  如果“启用应用程序框架”处于选中状态（默认设置），则此列表的标题为“启动窗体”，并且仅显示窗体，因为应用程序框架仅支持启动窗体，不支持对象。  
   
- 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关详细信息，请参阅<xref:System.Windows.Application.StartupUri%2A>。  
+ 如果项目是 WPF 浏览器应用程序，则此列表的标题为“启动 URI”，默认值为“Page1.xaml”。 “启动 URI”列表用于指定应用程序启动时显示的用户界面资源（一种 XAML 元素）。 有关详细信息，请参阅 <xref:System.Windows.Application.StartupUri%2A> 。  
   
  如果“启用应用程序框架”处于清除状态，则此列表将变为“启动对象”，并且同时显示窗体和带有 `Sub Main` 的类或模块。  
   

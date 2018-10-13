@@ -1,7 +1,7 @@
 ---
 title: 如何：设置权限 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4bed698bd520255dd762aa223e3eb94a5d704e6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481508"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187534"
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 设置权限](https://docs.microsoft.com/visualstudio/profiling/how-to-set-permissions)。  
-  
 本主题介绍计算机管理员如何向在该计算机上没有管理员权限的用户或组授予进行分析所需的安全权限。  
   
  一项基本的安全原则指出，应用程序运行时不应拥有超过其所需的权限。 此原则也适用于用户。 如果当用户作为用户组的成员（而不是管理员组的成员）登录时就具有足够的效力，则不应授予他们管理员权限。 第一个过程“创建拥有‘用户’权限的用户帐户”描述如何为用户组的成员创建用户帐户。  

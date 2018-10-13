@@ -1,7 +1,7 @@
 ---
 title: 使用测试资源管理器对现有 C++ 应用进行单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 040e3f0a236067a96d107f64f4c9aca06d0706e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63761dc543b327c1c8639203c80afb92d4700c8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469347"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172453"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>用测试资源管理器对现有的 C++ 应用程序进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[现有 c + + 应用程序单元测试使用测试资源管理器](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer)。  
-  
 我们建议在更改现有应用程序之前，请确保单元测试中已覆盖其各种情况。 如此，你便有信心保证你的更改不会引入 bug。 如果应用程序尚没有单元测试，可使用本主题演示的方法自己添加。 本主题介绍如何为现有 Visual C++ 代码添加单元测试 - 从确定测试代码的方法，直到测试的创建、编写和最终运行。  
   
 ## <a name="deciding-how-to-test-your-code"></a>确定测试代码的方法  

@@ -1,7 +1,7 @@
 ---
 title: SccGet 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b2e9b0d74acecfa9789ba899018058b7c61c2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb6f5204b1605969a37fd6528dda0ccaa7b8fe7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175196"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccGet 函数](https://docs.microsoft.com/visualstudio/extensibility/sccget-function)。  
-  
 此函数可检索一个或多个文件用于查看和编译但不能用于编辑的副本。 在大多数系统中，将文件标记为只读的。  
   
 ## <a name="syntax"></a>语法  

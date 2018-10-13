@@ -1,7 +1,7 @@
 ---
 title: AspNetCompiler 任务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e6e483d0267e9f267919940b85e33a355552543
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a535fd8320763123404bc1b2c6a7b732958cb78f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182437"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 AspNetCompiler 任务预编译 ASP.NET 应用程序](https://docs.microsoft.com/visualstudio/msbuild/aspnetcompiler-task)。  
-  
   
 `AspNetCompiler` 任务包装 aspnet_compiler.exe，后者是用于预编译 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序的实用工具。  
   

@@ -1,7 +1,7 @@
 ---
 title: 更新用户界面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 42
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77fa7407c6c271b66104ed6d835bc516a40c288
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52559a48b842d61dd64616af6f48c946147aa1e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181034"
 ---
 # <a name="updating-the-user-interface"></a>更新用户接口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[更新用户界面](https://docs.microsoft.com/visualstudio/extensibility/updating-the-user-interface)。  
-  
 实现命令后，可以添加代码以使用新命令的状态更新用户界面。  
   
  在典型的 Win32 应用程序，可以持续轮询设置的命令和可调整单个命令的状态，用户查看它们。 但是，因为[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]shell 可以托管无限的数量的 Vspackage，广泛轮询可能会降低响应能力，尤其在托管的代码和 COM 之间的互操作程序集之间轮询  

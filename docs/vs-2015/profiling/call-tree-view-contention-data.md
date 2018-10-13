@@ -1,7 +1,7 @@
 ---
 title: “调用树”视图 - 争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 337152a7a91f7e2f6ce4a19a4cb77b166ebe5754
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4b4b7b0ac3a6bb77c539b54162bf449e19771a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469173"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179202"
 ---
 # <a name="call-tree-view---contention-data"></a>“调用树”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用树视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-contention-data)。  
-  
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它所调用的所有函数、函数被阻止的次数，以及函数由于与其他线程或进程争用资源而被阻止的时间量。  
   
  “调用关系树”视图中的值对应于调用树中父函数所调用的函数实例。 通过将函数实例值与分析运行中的争用总数进行对比得出百分比值。  

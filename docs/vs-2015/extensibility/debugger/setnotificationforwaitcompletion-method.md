@@ -1,7 +1,7 @@
 ---
 title: SetNotificationForWaitCompletion 方法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: da149c9a-20f4-4543-a29e-429c8c1d2e19
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b1443bbbd49216330d1df9978052bf4d10f7157
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5654814931904c157f8970ee0a1046820f3be132
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468555"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173363"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SetNotificationForWaitCompletion 方法](https://docs.microsoft.com/visualstudio/extensibility/debugger/setnotificationforwaitcompletion-method)。  
-  
 设置或清除 TASK_STATE_WAIT_COMPLETION_NOTIFICATION 状态位。  
   
  **Namespace**：<xref:System.Threading.Tasks?displayProperty=fullName>  

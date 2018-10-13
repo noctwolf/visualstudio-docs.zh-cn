@@ -1,7 +1,7 @@
 ---
 title: 属性页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 544f69a8cfa90c7977a2861452fa47a570eb0bbb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479012"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181060"
 ---
 # <a name="property-pages"></a>属性页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性页](https://docs.microsoft.com/visualstudio/extensibility/internals/property-pages)。  
-  
 用户可以查看和更改项目依赖于配置和-独立属性使用属性页。 一个**属性页**中启用按钮**属性**窗口或对象，它提供所选对象的属性页面视图的解决方案资源管理器工具栏上。 属性页创建的环境，并可用于解决方案和项目。 它们，但是，也可以是可进行的项目项使用的配置相关的属性。 在项目中的文件需要不同的编译器开关设置才能正确生成时，可能会使用此功能。  
   
 ## <a name="using-property-pages"></a>使用属性页  

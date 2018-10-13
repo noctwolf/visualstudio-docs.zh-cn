@@ -1,7 +1,7 @@
 ---
 title: 输出窗口 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fa3297ca0b3843fcc427bdad4f380828ad441d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55869ff13cf4048b6d256e57892d470062847501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469136"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189899"
 ---
 # <a name="output-window"></a>输出窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[输出窗口](https://docs.microsoft.com/visualstudio/ide/reference/output-window)。  
-  
   
 “输出”窗口在集成开发环境 (IDE) 中可显示各种功能的状态消息。 若要打开“输出”窗口，请在菜单栏上选择“视图/输出”（或单击 Ctrl+Alt+O）。  
   

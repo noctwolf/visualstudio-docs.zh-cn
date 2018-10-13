@@ -1,7 +1,7 @@
 ---
 title: 如何： 访问内置的字体和配色方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4bde4bb7bf0e6fc9b5dafdc444507e985a756c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81d8998063fba9c3d51ddb1d66b2da9bd4fd8a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477079"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178693"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>如何： 访问内置的字体和配色方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 访问内置的字体和配色方案](https://docs.microsoft.com/visualstudio/extensibility/how-to-access-the-built-in-fonts-and-color-scheme)。  
-  
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。  
   
  若要使用内置的字体和颜色方案，VSPackage 必须：  

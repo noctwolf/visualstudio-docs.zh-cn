@@ -1,7 +1,7 @@
 ---
 title: 如何： 强制实现代码使用代码分析签入策略 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97b321fe5a72c6f3ace680476340eca48f7ed309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ef282bf1b19cb2d72075619539921cdb88d08f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481495"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174846"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现代码的可维护性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用代码分析签入策略强制实施可维护代码](https://docs.microsoft.com/visualstudio/code-quality/how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy)。  
-  
 开发人员可以使用代码度量值工具来衡量的复杂性和可维护性的其代码，但不是能调用代码度量值作为签入策略的一部分。 但是，团队可以启用代码分析规则，验证其代码符合代码度量标准和强制实施通过签入策略的规则。 代码度量值的详细信息，请参阅[代码度量值](../code-quality/code-metrics-values.md)。  
   
  开发人员可以实现继承深度、 类耦合、 可维护性指数和复杂性规则以强制实施通过代码分析签入策略可维护的代码。 这些规则的所有四个代码分析策略编辑器中找到"可维护性规则"类别下。  

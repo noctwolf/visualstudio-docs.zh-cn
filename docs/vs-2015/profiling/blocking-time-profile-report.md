@@ -1,7 +1,7 @@
 ---
 title: 阻塞时间分析报告 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae0c4f34f0d3447f63afbf08e9d788304b2d353f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6cf06fc37a10f6bf028d3f4ef7174e73574b604b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469126"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180799"
 ---
-# <a name="blocking-time-profile-report"></a>阻塞时间配置文件报表
+# <a name="blocking-time-profile-report"></a>阻塞时间分析报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[阻塞时间配置文件报表](https://docs.microsoft.com/visualstudio/profiling/blocking-time-profile-report)。  
-  
 分析报告提供特定于每个阻塞类别（例如，“I/O”或“同步”）的调用堆栈的合计阻塞时间数据。 优先报告列出抢占当前进程的进程以及抢占实例数。 为了生成阻塞分析报告，工具会收集阻塞 API 调用并将它们累计到调用堆栈树中。 这些报告中显示的数据因当前时间范围、隐藏线程和以下两个可能应用的筛选器而异：  
   
 -   如果选择“仅我的代码”，则仅会显示具有用户代码的堆栈帧和该用户代码下的一个级别。  

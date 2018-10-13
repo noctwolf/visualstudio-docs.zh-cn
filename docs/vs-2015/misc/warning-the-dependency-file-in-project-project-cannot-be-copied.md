@@ -1,7 +1,7 @@
 ---
 title: 警告： 依赖项&#39;文件&#39;项目中&#39;项目&#39;不能将复制到运行目录，因为它将覆盖引用&#39;文件。&#39; |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 7ea168095d67bb71d7aea9a1139a6df1956d14fb
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 95b566c719c7d6adc27039a691315e93eb43eb05
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "47588590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185596"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>警告： 依赖项&#39;文件&#39;项目中&#39;项目&#39;不能将复制到运行目录，因为它将覆盖引用&#39;文件。&#39;
 依赖项之间有冲突；为使应用程序运行，应将多个具有相同名称的不同程序集文件复制到 bin 目录中。 由于其中一个依赖项是主引用，因此运行目录能够解决该冲突。  
@@ -36,7 +36,7 @@ ms.locfileid: "47588590"
   
  **若要更正此错误**  
   
--   将一个（或零个）程序集文件复制到 bin 目录中，这可以通过将这些程序集文件放置于全局程序集缓存中来实现。 全局程序集缓存将解决文件名冲突问题。 由于公共语言运行时知道如何查找全局程序集缓存中的程序集，因此将不会生成程序集文件的本地副本。 有关详细信息，请参阅[使用程序集和全局程序集缓存](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433)和[错误： 无法将依赖关系 'file' in project 'project' 复制到运行目录，因为它将与依赖关系冲突文件](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md)。  
+-   将一个（或零个）程序集文件复制到 bin 目录中，这可以通过将这些程序集文件放置于全局程序集缓存中来实现。 全局程序集缓存将解决文件名冲突问题。 由于公共语言运行时知道如何查找全局程序集缓存中的程序集，因此将不会生成程序集文件的本地副本。 有关详细信息，请参阅 [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) 和 [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](../misc/error-the-dependency-file-in-project-project-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-file.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [管理项目中的引用](../ide/managing-references-in-a-project.md)   

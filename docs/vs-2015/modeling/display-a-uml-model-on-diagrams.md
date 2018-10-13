@@ -1,7 +1,7 @@
 ---
 title: 关系图上显示 UML 模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5439394885ecdd3801b34bb224144bad16d4c2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412bddfa7a25f613a3a400905d13dff478b5a309
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173155"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>在关系图上显示 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[关系图上显示 UML 模型](https://docs.microsoft.com/visualstudio/modeling/display-a-uml-model-on-diagrams)。  
-  
-在 Visual Studio 扩展的程序代码中，可以控制模型元素在关系图上的显示方式。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+在 Visual Studio 扩展的程序代码中，可以控制模型元素在关系图上的显示方式。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  本主题内容：  
  -   [若要在关系图上显示的元素](#Display)  

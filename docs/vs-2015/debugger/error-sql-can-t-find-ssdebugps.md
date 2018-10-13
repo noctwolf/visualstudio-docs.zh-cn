@@ -1,7 +1,7 @@
 ---
 title: 错误： SQL 可以&#39;t 不到 Ssdebugps |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1782412ded2c4edff0da29b13160107664170d20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f775bd99c019a119d1bcd5193df0efd7ceadd096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482351"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180162"
 ---
 # <a name="error-sql-can39t-find-ssdebugps"></a>错误： SQL 可以&#39;t 不到 Ssdebugps
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[错误： SQL 可以&#39;t 查找 SSDEBUGPS](https://docs.microsoft.com/visualstudio/debugger/error-sql-can-t-find-ssdebugps)。  
-  
 SSDEBUGPS.dll 为 SQL Server Debugging Host 组件。  
   
  此错误在尝试开始调试时发生，指示指定的文件在 [!INCLUDE[sqprsqlong](../includes/sqprsqlong-md.md)] 计算机上不存在。 可能的原因是从未运行远程调试安装，或是由于某种原因删除了此文件。  

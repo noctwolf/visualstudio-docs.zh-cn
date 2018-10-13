@@ -1,7 +1,7 @@
 ---
 title: 步骤 7：保持对可见 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e47b2308c085e9fd30cc18bc3afd45584e29274c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b796fa9735337b5cc8f8cb8d955b33bc6a77e76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472362"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189002"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步骤 7：保持对可见
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 7： 保持对可见](https://docs.microsoft.com/visualstudio/ide/step-7-keep-pairs-visible)。  
-  
 只要玩家仅选择不匹配的图标对，游戏即可顺畅地运行。 但是，请考虑玩家选择匹配对时发生的情况。 游戏不是通过打开计时器（使用 `Start()` 方法）来使图标消失，而应当进行重置，这样游戏就不再使用 `firstClicked` 和 `secondClicked` 引用变量跟踪任何标签，而且无需重置选择的两个标签的颜色。  
   
 ### <a name="to-keep-pairs-visible"></a>保持对可见  

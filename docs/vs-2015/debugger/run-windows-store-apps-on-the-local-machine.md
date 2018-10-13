@@ -1,7 +1,7 @@
 ---
 title: 在本地计算机上的运行 Windows 应用商店应用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d69e4224627d78d4fdd9482097ef248e69f6571f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b460d1eecfe96cddce27926ee8e31aae258d8dcf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188378"
 ---
 # <a name="run-windows-store-apps-on-the-local-machine"></a>在本地计算机上运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在本地计算机上的运行 Windows 应用商店应用](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-the-local-machine)。  
-  
 仅适用于 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
  要在 Windows 应用商店应用上调试、测试或运行性能分析，你可以在托管 Visual Studio 的相同计算机上运行该应用。 如果设备上的显示屏支持触控，你可以执行应用的完整功能；否则，你只能使用有限的鼠标和键盘手势。  

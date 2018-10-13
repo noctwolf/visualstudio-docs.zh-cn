@@ -1,7 +1,7 @@
 ---
 title: 如何： 应用程序和部署清单重新签名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: d16dfa86c4620868178687bcde3323f3e55b31b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 734258871e72e6272abcd61c4efa1a00765f8a32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469254"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185713"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：为应用程序和部署清单重新签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[How to: re-sign Application and Deployment Manifests](https://docs.microsoft.com/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)。  
-  
 对 Windows 窗体应用程序、 Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案的应用程序清单中的部署属性进行更改后，必须重新签名的应用程序和部署清单与证书。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
   
  你的客户想要为应用程序签名和部署清单具有自己的证书时可能会重新对清单签名的另一种情况。  
@@ -131,7 +129,7 @@ ms.locfileid: "47469254"
  [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [如何： 为 ClickOnce 应用程序添加到客户端计算机的受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
+ [如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)
 
 

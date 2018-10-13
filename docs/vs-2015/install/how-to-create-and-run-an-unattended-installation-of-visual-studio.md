@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建和运行 Visual Studio 的无人参与的安装 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3604c43dc3a406c303b3b056fe3b155efe182e77
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173844"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "47481506"
      安装也可能失败，如果路径中的文件夹名称包含嵌入的空格 (例如，"\\\\*ServerName*\IDE 安装"或\\ \\ *ServerName*\Visual studio\\)。  
   
 ## <a name="deploying-visual-studio-in-unattended-mode"></a>在无人参与模式下部署 Visual Studio  
- 若要在无人参与模式下部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，则必须修改 AdminDeployment.xml 文件。 若要执行此操作，您必须首先创建 AdminDeployment.xml 文件通过使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 然后，可以使用此文件将 Visual Studio 的部署推送到你的网络或拉入安装（如果将该文件放入 *Drive*:\IDEinstall\packages 目录中）。 AdminDeployment.xml 文件对于某个操作系统、体系结构、Visual Studio 版本或操作系统语言不是唯一的。  
+ 若要在无人参与模式下部署 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，则必须修改 AdminDeployment.xml 文件。 若要执行此操作，您必须首先创建 AdminDeployment.xml 文件通过使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 然后，可以使用此文件将 Visual Studio 的部署推送到你的网络或拉入安装（如果将该文件放入 *Drive*:\IDEinstall\packages 目录中）。 AdminDeployment.xml 文件对于某个操作系统、体系结构、Visual Studio 版本或操作系统语言不是唯一的。  
   
 > [!CAUTION]
 >  有时，依照 AdminDeployment.xml 文件中的所选内容而列出的项无法安装。 若要解决此问题，将标记为“Selected="yes"”的项放在 AdminDeployment.xml 文件的 **末尾** 。  
@@ -60,13 +60,13 @@ ms.locfileid: "47481506"
 >  执行此操作的另一个方法是省略可选父级的子级 - 换而言之，不要包括任何“Selected=”no””项，但你仍须将所有“Selected=”yes””项放在 AdminDeployment.xml 文件末尾。  
   
 > [!IMPORTANT]
->  在安装期间，计算机可能会自动重启一次或多次。 重启后，必须使用相同的用户帐户重新登录，以进行安全，然后再重启计算机。 在运行无人参与安装之前安装系统必备组件，可以避免自动重启。 详细信息，请参阅标题为"重新启动安装期间避免"的部分中[Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)。  
+>  在安装期间，计算机可能会自动重启一次或多次。 重启后，必须使用相同的用户帐户重新登录，以进行安全，然后再重启计算机。 在运行无人参与安装之前安装系统必备组件，可以避免自动重启。 有关详细信息，请参阅 [Visual Studio Administrator Guide](../install/visual-studio-administrator-guide.md)中标题为“安装期间避免重启”的部分。  
   
  AdminDeployment 文件架构包含下列元素：  
   
 |元素|特性|值|描述|  
 |-------------|---------------|------------|-----------------|  
-|BundleCustomizations|TargetDir|*Path*|行为与在安装应用程序的用户界面中重写路径相同。 如果已安装 Visual Studio，则忽略此元素。|  
+|BundleCustomizations|TargetDir|*路径*|行为与在安装应用程序的用户界面中重写路径相同。 如果已安装 Visual Studio，则忽略此元素。|  
 |BundleCustomizations|NoWeb|是&#124;默认值|如果此元素的值为“yes”，则安装应用程序永远不会尝试在安装操作期间转到 Web。|  
 |SelectableItemCustomization|Hidden|是&#124;否|如果此元素的值为“Yes”，则将隐藏自定义树中的可选项。|  
 |SelectableItemCustomization|已选定|是&#124;否|选择或清除自定义树中的可选项。|  
@@ -82,7 +82,7 @@ ms.locfileid: "47481506"
   
 1.  在 *Drive*:\IDEinstall\AdminDeployment.xml 文件中，将 BundleCustomizations 元素的 NoWeb 属性的值从“default”更改为“yes”，如以下示例所示：  
   
-     将 `<BundleCustomizations TargetDir="default" NoWeb="default"/>` 更改为 `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`。  
+     将 `<BundleCustomizations TargetDir="default" NoWeb="default"/>` 更改为 `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`  
   
 2.  根据可选组件的需要更改 SelectableItemCustomization 属性，然后保存该文件。  
   
@@ -111,7 +111,7 @@ ms.locfileid: "47481506"
   
 -   打开 **“控制面板”**，然后选择 **“程序和功能”**。  
   
--   选择[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后选择**更改**。  
+-   选择 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后选择 **“更改”**。  
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>在已安装 Visual Studio 之后更改客户端计算机上的 AdminDeployment 设置  
   
@@ -170,7 +170,7 @@ ms.locfileid: "47481506"
         4.  在功能页面上应显示最新的更新。 选择的其他功能，你想要安装，请单击**下一步**，然后单击**更新**安装更新和新功能。  
   
 ## <a name="registering-the-product"></a>正在注册产品  
- 安装完成后，可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内部注册 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的副本。  
+ 安装完成后，可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内部注册 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的副本。  
   
 #### <a name="to-register"></a>注册  
   

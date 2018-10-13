@@ -1,7 +1,7 @@
 ---
 title: 使用层关系图验证代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5430d436684be0bbf50004204da8bcd6a18d9bee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469130"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173714"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>用层关系图验证代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用依赖项关系图验证代码](https://docs.microsoft.com/visualstudio/modeling/validate-code-with-layer-diagrams)。  
-  
 要确保代码不与其设计冲突，可以在 Visual Studio 中使用层关系图验证代码。 这可帮助你：  
   
 -   查找代码中的依赖项和层关系图上的依赖项之间的冲突。  

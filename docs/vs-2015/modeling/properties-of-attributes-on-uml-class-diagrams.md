@@ -1,7 +1,7 @@
 ---
 title: 属性的属性在 UML 类图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a9cd12bb002efbf28443b8052382c29ed87036b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b3f1379aa692cae06c38ac6bf55c6efba4d5c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173064"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>UML 类图上特性的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性的属性在 UML 类图](https://docs.microsoft.com/visualstudio/modeling/properties-of-attributes-on-uml-class-diagrams)。  
-  
 在 UML 类图上，你可以向类和接口添加 *特性* 。 特性用于定义可以附加到类实例或接口实例的值。  
   
  若要添加特性，请右键单击类或接口，指向“添加” ，然后单击“特性” 。  

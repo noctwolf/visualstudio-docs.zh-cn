@@ -1,7 +1,7 @@
 ---
 title: 有关类设计器错误的附加信息 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e343ed5453a5751bcbd491bc7e94a8491c1f88c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a957630de193d805b1a516d45c72bd1483f0278
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188521"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>有关类设计器错误的附加信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的其他信息有关类设计器错误](https://docs.microsoft.com/visualstudio/ide/additional-information-about-class-designer-errors)。  
-  
 类设计器不会跟踪源文件的位置，因此修改项目结构或移动项目中的源文件就可能导致类设计器无法继续对类型（尤其是 typedef 的源类型、基类或关联类型）进行跟踪。 可能会收到错误，如“类设计器无法显示此类型”。 如果收到错误，要将修改过的或被重新定位的源代码再次拖到类图中以重新显示。  
   
  你在以下资源中找到关于其他错误和警告的协助：  

@@ -1,7 +1,7 @@
 ---
 title: 扩展项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 096d273d-4fe9-4f24-9b00-470bfbdf4bdf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 007e92833d8bf0ee3b1ae81e2e13fed2b08e903c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1d16cf3886fb8b60cf642a3b669b22ac07838a3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175157"
 ---
 # <a name="extending-projects"></a>扩展项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展项目](https://docs.microsoft.com/visualstudio/extensibility/extending-projects)。  
-  
 项目和解决方案是 Visual Studio 将代码和资源文件组织到编译和部署单元的方法。 您可以找到有关中的项目的详细信息[项目 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
   
  可以使用 Visual Studio SDK 和托管包框架中的项目，您可以下载在创建你自己的项目类型[项目的托管包框架](http://mpfproj12.codeplex.com/)。 若要了解如何实现自定义项目，请参阅[生成新项目： 揭秘，第一部分](../extensibility/internals/new-project-generation-under-the-hood-part-one.md)并[生成新项目： 揭秘，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。  

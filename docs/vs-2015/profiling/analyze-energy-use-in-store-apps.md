@@ -1,7 +1,7 @@
 ---
 title: 分析应用商店应用中的能量使用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b204a31e5efe9c7870a02e9eb7a0a48c19d4c6eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189249"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析应用商店应用中的能量使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分析应用商店应用程序中的能量使用](https://docs.microsoft.com/visualstudio/profiling/analyze-energy-use-in-store-apps)。  
-  
 Visual Studio 的 **“能耗”** 探查器可以帮助你分析低功率平板设备上的 Windows 应用商店应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
   
 ##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> “能量消耗”探查器的定义、工作机制和测量内容  

@@ -1,7 +1,7 @@
 ---
 title: 图形诊断示例 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee2476b8456492db52bcf802c127a22b5faec7e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02b8c3d8d21e19f671901a353af00163c17025fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472278"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188534"
 ---
 # <a name="graphics-diagnostics-examples"></a>图形诊断示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图形诊断示例](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-diagnostics-examples)。  
-  
 以下示例显示如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断调试基于 DirectX 的应用中的呈现问题。  
   
 ## <a name="capturing-graphics-information"></a>捕获图形信息  

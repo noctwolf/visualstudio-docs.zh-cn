@@ -1,7 +1,7 @@
 ---
 title: ResourcesGenerator 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63ee00754683156dad2bd34a93ff43f820eb37c7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d2d470c91d6303976e5afcbffc7f4eff968ea04
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469827"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173298"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ResourcesGenerator 任务](https://docs.microsoft.com/visualstudio/msbuild/resourcesgenerator-task)。  
-  
   
 <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> 任务将一个或多个资源（二进制格式的 .jpg、.ico、.bmp、[!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] 以及其他扩展名类型）嵌入 .resources 文件中。  
   

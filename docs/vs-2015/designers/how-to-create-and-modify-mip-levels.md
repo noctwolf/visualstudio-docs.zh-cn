@@ -1,7 +1,7 @@
 ---
 title: 如何：创建和修改 MIP 级别 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 629b7a2d2b1b80c8a2eede4ebd7a3c016651b2bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9578fd2bdafeaf8c9a3e9fcd3dd5523b4d8cc7f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481280"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184283"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：创建和修改 MIP 级别
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建和修改 MIP 级别](https://docs.microsoft.com/visualstudio/designers/how-to-create-and-modify-mip-levels)。  
-  
 本文档演示如何使用“图像编辑器”生成并修改纹理空间详细级别 (LoD) 的 MIP 级别。  
   
 ## <a name="generating-mip-levels"></a>生成 MIP 级别  
