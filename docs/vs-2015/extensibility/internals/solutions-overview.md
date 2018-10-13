@@ -1,7 +1,7 @@
 ---
 title: 解决方案概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e0512178d3c47853c9eba7c900a57738da6bed05
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292653"
 ---
 # <a name="solutions-overview"></a>解决方案概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[解决方案概述](https://docs.microsoft.com/visualstudio/extensibility/internals/solutions-overview)。  
-  
 一种解决方案是协同工作以创建应用程序的一个或多个项目的分组。 与解决方案有关的项目和状态信息存储在两个不同的解决方案文件。 解决方案 (.sln) 文件是基于文本的并可放置在源代码管理下和用户之间共享。 解决方案用户选项 (.suo) 文件是二进制文件。 因此，.suo 文件不能放置在源代码管理下，包含特定于用户的信息。  
   
  任何 VSPackage 可以写入任一类型的解决方案文件。 由于这些文件的性质，有两个不同的接口实现来写入它们。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>接口将文本信息写入到.sln 文件和<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>接口向.suo 文件中写入二进制流。  

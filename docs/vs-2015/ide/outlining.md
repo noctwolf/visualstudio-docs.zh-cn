@@ -1,7 +1,7 @@
 ---
 title: 大纲显示 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 939bb5ac1188a54217339c1bf3e9e3a828493d90
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7f854f6e097471cdd744537a4be4cbd1646400
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469788"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282511"
 ---
 # <a name="outlining"></a>大纲显示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[大纲显示](https://docs.microsoft.com/visualstudio/ide/outlining)。  
-  
 你可以选择隐藏视图中的某些代码，方法是折叠某个区域的代码，使其显示在加号 (+) 下面。 单击加号可展开折叠的区域。 （或者可以按 CTRL + M + M 折叠一个区域，再按 CTRL + M + M 将其展开。）你还可以双击大纲边距（位于代码左侧）上的区域中的任意行来折叠大纲区域。 将鼠标悬停在折叠区域时，可以看见折叠区域的内容提示。  
   
  将鼠标悬停在边距上时也会突出显示大纲边距中的区域。 在某些颜色配置中，默认的突出显示颜色可能看起来很模糊。 可以在“工具”/“选项”/“环境”/“字体和颜色”/“可折叠区域”中更改此颜色。  

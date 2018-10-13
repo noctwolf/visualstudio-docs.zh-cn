@@ -1,7 +1,7 @@
 ---
 title: 配置选项概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85fa1b9d19beca6bd879d98bc7a24af0fd5756c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294289"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[配置选项概述](https://docs.microsoft.com/visualstudio/extensibility/internals/configuration-options-overview)。  
-  
 中的项目[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可以支持多个可以生成、 调试、 运行，和/或已部署的配置。 配置是使用属性、 通常编译器开关和文件位置的命名集所述的生成类型。 默认情况下，新的解决方案包含两个配置，调试和发布。 可以使用其默认设置，或修改以满足您特定的解决方案和/或项目要求应用这些配置。 某些包可以生成两种方式： 作为一个 ActiveX 编辑器，或作为就地组件。 项目不需要支持多个配置，但是。 如果没有可用的只有一个配置，则该配置映射到的所有解决方案配置。  
   
  配置通常由两个部分-配置名称 （如调试或发布） 和平台设置。 配置的平台名称标识的配置目标，例如 API 设置的环境或操作系统平台。 用户的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不能创建一个平台中; 它们必须从选项中选择 VSPackage 允许的项目。 当用户安装 VSPackage，在包开发过程中创建的交付平台，可能会出现任何所需的平台名称基于由包创建者设置任何条件。 然后，用户可以选择从实例化的属性页时可用于通过 VSPackage 的平台列表。  

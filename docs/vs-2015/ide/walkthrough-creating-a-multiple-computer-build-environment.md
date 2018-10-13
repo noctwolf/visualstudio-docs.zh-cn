@@ -1,7 +1,7 @@
 ---
 title: 演练：创建多计算机生成环境 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: da285fd1b769aa22127a81753c6bb49ca16954cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480523"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292072"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建多计算机生成环境](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-multiple-computer-build-environment)。  
-  
 您可以在组织内创建生成环境，方式为在主计算机上安装 Visual Studio，然后将各种文件和设置复制到其他计算机以便 Visual Studio 参与生成。 您不必在另一台计算机上安装 Visual Studio。  
   
  本文档未授予在外部重新分布软件或向第三方提供生成环境的权利。  

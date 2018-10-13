@@ -1,7 +1,7 @@
 ---
 title: 内存 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 180abd9aed356613456790a328fb45d1c3ffcf69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471679"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297188"
 ---
 # <a name="memory-windows"></a>“内存”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在调试器中的变量占用的内存](https://docs.microsoft.com/visualstudio/debugger/memory-windows)。  
-  
 **内存**窗口帮助用户了解应用程序使用的内存空间。 **Watch**窗口中，**快速监视**对话框中，**自动**窗口中，以及**局部变量**窗口中显示的变量，即内容存储在内存中特定位置。 但**内存**窗口显示较大的图片。 这对于检查大片的数据（如缓冲区和大的字符串）很方便，在其他窗口中显示就不太好。 但是，**内存**窗口并不局限于显示数据。 该窗口可以显示内存空间中的任何内容，不论这些内容是数据、代码还是未分配内存中的无用随机位。  
   
  **内存**窗口才中启用了地址级调试**选项**对话框中，**调试**节点。 **内存**窗口不可用的脚本或 SQL，不能识别内存概念的语言。  

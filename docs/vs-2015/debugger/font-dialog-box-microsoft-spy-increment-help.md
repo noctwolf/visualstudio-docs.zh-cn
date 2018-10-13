@@ -1,7 +1,7 @@
 ---
 title: 字体对话框 （Microsoft Spy + + 帮助） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8e753bd3f0e00e813556813689cb0702fc43214
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0fa7fcf78180790e9f57ae2f944a9b5683e8423
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288061"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>“字体”对话框（Microsoft Spy++ 帮助）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[字体对话框 （Microsoft Spy + + 帮助）](https://docs.microsoft.com/visualstudio/debugger/font-dialog-box-microsoft-spy-increment-help)。  
-  
 使用此对话框可以配置中使用的字符字体[Spy + + 视图](../debugger/spy-increment-views.md)窗口。 若要显示此对话框中，展开**视图**菜单，然后选择**字体**。  
   
  以下设置将可用：  

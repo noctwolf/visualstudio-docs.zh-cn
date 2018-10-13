@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中插入图像、视频和音频剪辑 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097e2430feac4b5d9235a2684746f60f1cb87033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63d26d079e686339ad8ed93c5aefb8c7a468e899
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468803"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283954"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 设计器中插入图像、视频和音频剪辑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 XAML 设计器中插入图像、 视频和音频剪辑](https://docs.microsoft.com/visualstudio/designers/insert-images-videos-and-audio-clips-in-xaml-designer)。  
-  
 图像、视频和音频剪辑可向应用添加视觉效果。  
   
  ![大小合适的图像](../designers/media/b5-memory-images-sized.png "b5_memory_images_sized")  

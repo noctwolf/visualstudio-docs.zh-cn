@@ -1,7 +1,7 @@
 ---
 title: 着色器设计器节点 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f718faebef46308cf74847f75b3a05cd12386704
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293496"
 ---
 # <a name="shader-designer-nodes"></a>着色器设计器节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[着色器设计器节点](https://docs.microsoft.com/visualstudio/designers/shader-designer-nodes)。  
-  
 文档本部分文章包含关于用于创建图形效果的各种着色器设计器节点的信息。  
   
 ## <a name="nodes-and-node-types"></a>节点和节点类型  

@@ -1,7 +1,7 @@
 ---
 title: 创建数据应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,19 +23,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 9e662eedef9053a460ffbb5012a079f05239a9a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e5354d167dd6d3a1bef9beeb3dcaaaf24871bab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291301"
 ---
 # <a name="creating-data-applications"></a>创建数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 提供许多设计时工具，可帮助你创建访问数据的应用程序。 本文概述了创建数据处理应用程序所涉及的基本过程。 此处的信息有意略过了许多细节，其设计目的是提供一个一般信息来源和起点，读者可借此访问与创建数据应用程序有关的很多其他帮助页。  
   
- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中开发数据访问应用程序时的要求不尽相同。 在某些情况下，可能只是想在窗体上显示数据。 而在另一些情况下，则可能需要设计出一种方法，以与其他应用程序或过程共享信息。  
+ 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中开发数据访问应用程序时的需求不尽相同。 在某些情况下，可能只是想在窗体上显示数据。 而在另一些情况下，则可能需要设计出一种方法，以与其他应用程序或过程共享信息。  
   
  无论对数据做何处理，你都应该清楚一些基本概念。 你可能从不需要了解数据处理的某些细节（例如，你可能从不需要以编程方式创建数据库），但是了解基本数据概念以及 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中提供的数据工具（向导和设计器）将非常有用。  
   
@@ -54,7 +54,7 @@ Visual Studio 提供许多设计时工具，可帮助你创建访问数据的应
 ## <a name="connecting-to-data"></a>连接到数据  
  为了将数据引入应用程序（并将更改发回数据源），需要建立某种双向通信机制。 这种双向通信通常由数据模型中的对象进行处理。  
   
- 例如，`TableAdapter` 将使用数据集的应用程序连接到数据库，<xref:System.Data.Objects.ObjectContext> 将 Entity Framework 中的实体连接到数据库。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供了多种工具来帮助创建应用程序可使用的连接。 连接到数据的应用程序的详细信息，请参阅[连接到 Visual Studio 中的数据](../data-tools/connecting-to-data-in-visual-studio.md)。  
+ 例如，`TableAdapter` 将使用数据集的应用程序连接到数据库，<xref:System.Data.Objects.ObjectContext> 将实体框架中的实体连接到数据库。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供了多种工具来帮助创建应用程序可使用的连接。 连接到数据的应用程序的详细信息，请参阅[连接到 Visual Studio 中的数据](../data-tools/connecting-to-data-in-visual-studio.md)。  
   
  若要了解如何使用数据集应用程序连接到数据库中的数据，请参阅[演练： 连接到数据库 （Windows 窗体） 中的数据](http://msdn.microsoft.com/library/02d39aa6-8993-4602-be13-a13536af3d1c)。  
   

@@ -1,7 +1,7 @@
 ---
 title: 创建多实例工具窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca70aa6024f083cfff7de1e2ef687371eca44c8a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb5e058924d62d4c6688c95974774579f8ae81f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286359"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>创建多实例工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建多实例工具窗口](https://docs.microsoft.com/visualstudio/extensibility/creating-a-multi-instance-tool-window)。  
-  
 您可以编程的工具窗口，以便它的多个实例可以同时打开。 默认情况下，工具窗口可以打开的仅一个实例。  
   
  当使用多实例工具窗口时，可以显示多个相关的源的信息，请参阅在同一时间。 例如，您可以将多行<xref:System.Windows.Forms.TextBox>控件的多实例工具窗口中，以便多个代码段编程会话期间可同时提供。 此外例如，您可以将<xref:System.Windows.Forms.DataGrid>控件和下拉列表框中的多实例工具窗口，以便可以同时跟踪多个实时数据源。  

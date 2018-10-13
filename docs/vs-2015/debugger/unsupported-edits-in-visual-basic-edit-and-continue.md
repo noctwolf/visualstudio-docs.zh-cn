@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续在 Visual Basic 中的不支持的编辑 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 44dea7dd67653a5dbde95f10a331932a9c8c14c0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ffe536b21b5569ad3427dfe4e3b281887cc00b13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296317"
 ---
 # <a name="unsupported-edits-in-visual-basic-edit-and-continue"></a>Visual Basic“编辑并继续”中不支持的编辑
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[不支持在 Visual Basic 编辑并继续编辑](https://docs.microsoft.com/visualstudio/debugger/unsupported-edits-in-visual-basic-edit-and-continue)。  
-  
 利用“编辑并继续”，你可以在中断模式下停止程序执行，对执行代码进行更改，以及继续执行包含新更改的程序。 通常情况下，影响类的公共结构的声明性代码编辑是禁止的，但对类内部的方法、属性体或私有声明的很多编辑是允许的。  
   
  如果需要进行不受支持的更改，则必须停止调试，执行更改，然后启动新的调试会话。  
@@ -113,11 +111,11 @@ ms.locfileid: "47469794"
 ###  <a name="BKMK_CompilerOptionEdits"></a> 编译器选项编辑  
  当在中断模式下使用“编辑并继续”时，不能更改、添加或移除以下编译器选项：  
   
--   Option Strict  
+-   **Option Strict**  
   
--   Option Explicit  
+-   **Option Explicit**  
   
--   Option Compare  
+-   **Option Compare**  
   
 ###  <a name="BKMK_ConstantsEdits"></a> 常量编辑  
  当在“编辑并继续”模式下时，对常量的更改非常受限制。 具体而言，“编辑并继续”不支持以下更改：  

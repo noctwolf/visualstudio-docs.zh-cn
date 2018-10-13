@@ -1,7 +1,7 @@
 ---
 title: 卸载使用 Windows 安装程序 VSPackage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24931206b6956d77414a2885758645db71e3cfff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a00f2b9bd39d25510860d1d8da0484910b8991a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283021"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 卸载 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[卸载 VSPackage 与 Windows 安装程序](https://docs.microsoft.com/visualstudio/extensibility/internals/uninstalling-a-vspackage-with-windows-installer)。  
-  
 可以大多数情况下，Windows 安装程序只需通过卸载你的 VSPackage"撤消"像安装你的 VSPackage。 自定义操作中所述[命令，必须将运行后安装](../../extensibility/internals/commands-that-must-be-run-after-installation.md)必须也卸载后运行。 由于指向 devenv.exe 的调用发生之前进行安装和卸载的 InstallFinalize 标准操作，因此 CustomAction 和 InstallExecuteSequence 表项提供两种情况。  
   
 > [!NOTE]

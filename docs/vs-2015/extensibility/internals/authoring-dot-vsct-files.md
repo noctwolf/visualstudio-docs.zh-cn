@@ -1,7 +1,7 @@
 ---
 title: 创作。Vsct 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0c2efb41474f9eeef29cc389529541ad460d9b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478613"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283660"
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创作。Vsct 文件](https://docs.microsoft.com/visualstudio/extensibility/internals/authoring-dot-vsct-files)。  
-  
 本文档演示如何创作.vsct 文件以将菜单项、 工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成的开发环境 (IDE)。 将 UI 元素添加到不具备.vsct 文件 Visual Studio 包 (VSPackage) 时，请使用以下步骤。  
   
  对于新项目，我们建议你使用 Visual Studio 包模板，因为它会生成一个.vsct 文件，具体取决于你的选择，已具有菜单命令、 工具窗口，或自定义编辑器所需的元素。 您可以修改此.vsct 文件以满足你的 VSPackage 的要求。 有关如何修改.vsct 文件的详细信息，请参阅中的示例[扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。  

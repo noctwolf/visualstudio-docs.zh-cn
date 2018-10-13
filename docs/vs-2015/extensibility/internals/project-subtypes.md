@@ -1,7 +1,7 @@
 ---
 title: 项目子类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be128ffa861cde72440485584d2b5661bf545394
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ac5b4a0cadee02417ae0c1ab1ab93ef61e70d26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471438"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291559"
 ---
 # <a name="project-subtypes"></a>项目子类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目子类型](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes)。  
-  
 项目子类型可以自定义或 flavor 的项目系统的行为[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 自定义项包括其他数据保存在项目文件中，添加或筛选中的项**添加新项**对话框中，控制如何调试和部署，程序集和扩展项目**属性页**对话框。 Vspackage 实现项目子类型使用 COM 聚合。  
   
 > [!NOTE]

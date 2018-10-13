@@ -1,7 +1,7 @@
 ---
 title: 在远程计算机上的运行 Windows 应用商店应用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 289c7a4153a5a3485d80cc9c0739a37e4e9d6882
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477734"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289570"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在远程计算机上运行 Windows 应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在远程计算机上的运行 Windows 应用商店应用](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine)。  
-  
 仅适用于 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
  通过 Visual Studio 远程工具，可从一台运行 Visual Studio 的计算机上运行、调试、分析和测试在另一台设备上运行的 Windows 应用商店应用。 当 Visual Studio 计算机不支持 Windows 应用商店应用特有的功能（如触摸、地理位置和物理方向）时，在远程设备上运行尤为有效。 本主题介绍配置和启动远程会话的过程。  
@@ -81,7 +79,7 @@ ms.locfileid: "47477734"
 ##  <a name="BKMK_Installing_the_Remote_Tools"></a> 安装远程工具  
   
 > [!NOTE]
->  **版本和更新**  
+>  **版本与更新**  
 >   
 >  Visual Studio 的早期版本不支持 **Visual Studio 2015 远程工具** 。  
 >   

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 集成 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f49afd0b0f613e2617c7533f85e4f6efdd2db7e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2b9591ebff8708d0cd63825854c31cf297d32ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479738"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294848"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 集成 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/visual-studio-integration-msbuild)。  
-  
   
 Visual Studio 承载有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，用以加载和生成托管项目。 由于 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 负责处理项目，因此，可以在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中成功使用几乎任何 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 格式的项目（即使项目是用另一种工具编写的，而且这些项目有自定义的生成过程）。  
   

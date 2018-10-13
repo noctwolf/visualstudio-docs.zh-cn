@@ -1,7 +1,7 @@
 ---
 title: 如何： 响应 UML 模型中的更改 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: alancameronwills
 ms.author: awills
 manager: kamrani
-ms.openlocfilehash: 07af0a9ee8fb31839343e853ee7175b204b7fe09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2352a6ba3c03df7c89b8888102fd5860a2c48810
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294354"
 ---
 # <a name="how-to-respond-to-changes-in-a-uml-model"></a>如何：响应 UML 模型中的更改
-在 Visual Studio 中的 UML 模型中出现更改时可以编写已执行的代码。 它将同样会响应直接通过该用户，以及通过其他 Visual Studio 扩展所做的更改。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+在 Visual Studio 中的 UML 模型中出现更改时可以编写已执行的代码。 它将同样会响应直接通过该用户，以及通过其他 Visual Studio 扩展所做的更改。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!WARNING]
 >  这些技术不受 UML API 支持。 它们可能无法在将来版本的 Visual Studio 中使用。  

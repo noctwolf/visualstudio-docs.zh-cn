@@ -1,7 +1,7 @@
 ---
 title: 验证 UML 模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 42e0733668a1f96dc1881d4d4d58a575eeb9eb64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292690"
 ---
 # <a name="validate-your-uml-model"></a>验证 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[验证 UML 模型](https://docs.microsoft.com/visualstudio/modeling/validate-your-uml-model)。  
-  
 可在 Visual Studio 中绘制的某些 UML 模型在你的项目中可能被视作无效。 例如，你可能要求用例必须始终链接到序列图，序列图中具有表示用例的参与者的生命线。 可以安装或定义*约束*帮助团队符合这样的要求。 约束可以在用户保存或打开模型时应用，可以由菜单命令调用。  
   
  任何约束均不附带 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，因为它们依赖于团队解释和使用 UML 模型的方式。 但你可以定义你自己的约束，并安装由其他用户定义的约束。 若要了解如何定义约束并将其打包进行分发，请参阅[为 UML 模型定义验证约束](../modeling/define-validation-constraints-for-uml-models.md)。  

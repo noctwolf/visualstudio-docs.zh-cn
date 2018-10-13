@@ -1,7 +1,7 @@
 ---
 title: 演练：将数据绑定到 XAML 设计器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24c3d4cc0f2807a1aaeedb44e5004465869d2210
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 597145da912c8d80508b67f4ff47c901f5ccac1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298761"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>演练：将数据绑定到 XAML 设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 绑定到 XAML 设计器中的数据](https://docs.microsoft.com/visualstudio/designers/walkthrough-binding-to-data-in-xaml-designer)。  
-  
 在 XAML 设计器中，可以通过使用美工板和“属性”窗口设置数据绑定属性。 本演练中的示例演示如何将数据绑定到控件。 具体而言，本演练展示如何创建具有名为 `ItemCount` 的 [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) 的简单购物车类，然后将 `ItemCount` 属性绑定到 [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) 控件的 **Text** 属性。  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>创建一个类以用作数据源的步骤  

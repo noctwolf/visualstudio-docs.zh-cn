@@ -1,7 +1,7 @@
 ---
 title: 在文本模板中使用转义序列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 24e2629001d7c426193059175eab64ea0ab8dacf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be273c8cf69094a640ea7210bdbdc50005841a49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296537"
 ---
 # <a name="using-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在文本模板中使用转义序列](https://docs.microsoft.com/visualstudio/modeling/using-escape-sequences-in-text-templates)。  
-  
 在文本模板生成文本模板标记并 （在 C# 仅代码），可以使用转义序列转义控制字符和引号引起来。  
   
  若要打印的标准代码块的输出文件的打开和关闭标记，请按如下所示转义标记：  

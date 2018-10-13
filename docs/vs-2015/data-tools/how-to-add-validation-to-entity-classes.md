@@ -1,7 +1,7 @@
 ---
 title: 如何： 向实体类添加验证 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f512a330a1253f0db9b0f7e75de5f0a6ca52658d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: faa6f205bfc4033ea4adb92f5d0d0a6718d4ac47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286398"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何： 向实体类添加验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 向实体类添加验证](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-validation-to-entity-classes)。  
-  
   
 *正在验证*实体类是输入到数据对象的值符合约束在对象的架构中，以及为应用程序建立的规则的确认过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47588846"
   
     3.  `Update`*实体类名称*方法添加到分部类。  
   
-    4.  使用 `instance` 参数访问各个列值，如下面的代码所示：  
+    4.  使用 `instance` 自变量访问各个列值，如下面的代码所示：  
   
         ```vb  
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  

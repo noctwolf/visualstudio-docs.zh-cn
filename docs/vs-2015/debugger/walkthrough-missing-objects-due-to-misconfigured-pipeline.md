@@ -1,7 +1,7 @@
 ---
 title: 演练： 因而缺少对象管线 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5cbe580bed0cda79a5a218109be1fd7f633f115
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f1b0d94fcc04c8f7ca8c2deb10af4c5dcc0cbbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293522"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管线误配置而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 缺少对象由于配置错误管道](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline)。  
-  
-本演练演示如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]图形诊断工具来调查由于未设置的像素着色器而缺失的对象。  
+本演练演示如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。  
   
  此演练阐释了以下任务：  
   
@@ -50,7 +48,7 @@ ms.locfileid: "47481151"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>检查图形日志中的帧  
   
-1.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，加载包含展现丢失对象的帧的图形日志文档。 新的图形日志选项卡显示在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，加载包含展现丢失对象的帧的图形日志文档。 新的图形日志选项卡将出现在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
   
 2.  在“帧列表” 中，选择演示未显示该对象的帧。 更新呈现目标以反映所选的帧。 在此方案中，图形日志选项卡如下所示：  
   

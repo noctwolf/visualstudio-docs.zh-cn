@@ -1,7 +1,7 @@
 ---
 title: 进程视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c83b57ade3a78a4dcc926e34547ee566326e129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4af26930fc8c9f362d91656cec758c9d4a9c437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477750"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288985"
 ---
 # <a name="processes-view"></a>进程视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进程视图](https://docs.microsoft.com/visualstudio/debugger/processes-view)。  
-  
 进程视图显示在系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定系统进程，它通常对应于正在执行的程序，请使用进程视图。 进程标识由模块名称，或者它们被指定"系统进程"。  
   
  Microsoft Windows 支持多个进程。 每个进程都可以有一个或多个线程和每个线程可以具有一个或多个关联的顶级窗口。 每个顶层窗口都可以拥有一系列的 windows。 一个 + 符号指示一个级别处于折叠状态。 折叠的视图包含每个进程的一行。 单击加号以展开级别。  

@@ -1,7 +1,7 @@
 ---
 title: 通过使用修改独立的 Shell。Pkgdef 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f70036f91eb52d85054465e6eea9f82672d851f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3a9b56d946e5a337c5afeb6cdd399c3c7ba24bd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291455"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>通过使用修改独立的 Shell。Pkgdef 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[修改独立 Shell 的使用。Pkgdef 文件](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file)。  
-  
 .Pkgdef 文件支持可用于自定义独立的 shell 应用程序的设置。 它指定应用程序的计算机上安装并启动应用程序时所引用的 Visual Studio shell 时创建的值。 设置组织根据适用的注册表项在文件中。  
   
 > [!WARNING]
@@ -73,10 +71,10 @@ ms.locfileid: "47479552"
 |AppLocalizationPackage|字符串|包含应用程序的用户界面附属程序集的 VSPackage 的 GUID。 此 VSPackage 包含.vsct 文件的已编译的版本，并且可以包括其他的本地化的字符串。 功能集和菜单命令组可以启用或禁用通过更改 UI 项目.vsct 文件中的设置。<br /><br /> 默认值为"{*vsUiPackageGuid*}"，其中*vsUiPackageGuid*是分配给应用程序用户界面包的 GUID。|  
 |应用程序名|字符串|应用程序的名称。 应用程序窗口的标题栏中显示名称。<br /><br /> 默认值为应用程序解决方案文件的名称。|  
 |CommandLineLogo|字符串|在控制台窗口中运行应用程序时在横幅文本。 此设置会影响仅支持命令行生成操作的应用程序。<br /><br /> 默认值是"*companyName * * solutionName* 1.0 版。"，其中*companyName*是提供安装 Windows 时，该公司的名称和*solutionName*是应用程序解决方案文件的名称。|  
-|DefaultDebugEngine|字符串|默认 GUID 调试引擎以使用该应用程序。<br /><br /> 注意： 应用程序未指定默认调试引擎指示一个空的 GUID （均为零）。 这使调试器能够选择要使用的调试引擎。<br /><br /> 默认值为“{00000000-0000-0000-0000-000000000000}”。|  
+|DefaultDebugEngine|字符串|默认 GUID 调试引擎以使用该应用程序。<br /><br /> 注意： 应用程序未指定默认调试引擎指示一个空的 GUID （均为零）。 这使调试器能够选择要使用的调试引擎。<br /><br /> 默认值为 “ {00000000-0000-0000-0000-000000000000} ” 。|  
 |DefaultHomePage|字符串|内部 Web 浏览器窗口默认主页 URL。<br /><br /> 如果**主页上**选项现已推出应用程序，则此设置还会影响该选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，Options Dialog Box](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值为 Windows 安装时提供的公司的 URL。|  
 |DefaultProjectsLocation|字符串|默认项目文件夹的完整路径。 例如，应用于对象的<br /><br /> `"DefaultProjectsLocation"="$MyDocuments$\MyVSShellStub\Projects"`<br /><br /> 如果**Visual Studio 项目位置**选项现已推出应用程序，则此设置还会影响该选项的默认状态。 有关详细信息，请参阅[NIB： 常规、 项目和解决方案选项对话框](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca)。<br /><br /> 默认值是"$MyDocuments$\\*solutionName*"，其中*solutionName*是应用程序解决方案文件的名称。|  
-|DefaultSearchPage|字符串|内部 Web 浏览器窗口默认搜索页 URL。<br /><br /> 如果**搜索页**选项现已推出应用程序，则此设置还会影响该选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，Options Dialog Box](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值为“http://search.live.com”。|  
+|DefaultSearchPage|字符串|内部 Web 浏览器窗口默认搜索页 URL。<br /><br /> 如果**搜索页**选项现已推出应用程序，则此设置还会影响该选项的默认状态。 有关详细信息，请参阅[Web 浏览器中，环境中，Options Dialog Box](../ide/reference/web-browser-environment-options-dialog-box.md)。<br /><br /> 默认值为 “ http://search.live.com ” 。|  
 |DefaultUserFilesFolderRoot|字符串|相对于当前用户的用户文件夹的名称的我的文档文件夹。<br /><br /> 默认值为应用程序解决方案文件的名称。|  
 |DisableOutputWindow|dword|指示为已禁用独立的 shell 是否应将输出窗口。<br /><br /> 如果此值设置为 true，Visual Studio 不显示在解决方案生成管理器输出**输出**窗口和隐藏**显示输出窗口在生成开始时**中的复选框**项目和解决方案**中的类别**选项**对话框。<br /><br /> 默认值为 False。|  
 |HideMiscellaneousFilesByDefault|dword|为 true，则隐藏**杂项文件**默认情况下的文件夹**解决方案资源管理器**; 否则为 false。<br /><br /> 如果**解决方案资源管理器中的显示杂项文件**选项现已推出应用程序，则此设置还会影响该选项的默认状态。 有关详细信息，请参阅[文档，环境中，Options Dialog Box](../ide/reference/documents-environment-options-dialog-box.md)。<br /><br /> 默认值为 False。|  

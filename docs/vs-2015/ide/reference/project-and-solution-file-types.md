@@ -1,7 +1,7 @@
 ---
 title: 项目和解决方案文件类型 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -35,18 +35,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 748590118220c47a6d217156e1130417485aa885
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ed5ce79944077c724534dc0d9fb3ea2b037fdfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472088"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283022"
 ---
 # <a name="project-and-solution-file-types"></a>项目和解决方案文件类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目和解决方案文件类型](https://docs.microsoft.com/visualstudio/ide/reference/project-and-solution-file-types)。  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持许多文件类型。 在特定安装中，已安装的组件确定哪些文件类型受支持。 本主题列出某些典型安装中支持的解决方案和项目文件类型。 关于其他文件类型的信息，请通过使用每种类型的文件扩展名进行搜索。  
   

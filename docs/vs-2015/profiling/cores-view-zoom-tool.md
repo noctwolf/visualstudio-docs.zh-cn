@@ -1,7 +1,7 @@
 ---
 title: 内核视图缩放工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 204817e24df6eadd18dcffc7829ababfa94530c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b72ad17581ec461c9b4309b4fd049ccb324542e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469121"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291286"
 ---
 # <a name="cores-view-zoom-tool"></a>内核视图缩放工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[内核视图缩放工具](https://docs.microsoft.com/visualstudio/profiling/cores-view-zoom-tool)。  
-  
 缩放控件是一个滑块，允许在时间线上进行放大和缩小操作，便于你关注特定的感兴趣的区域。 此控件以当前视图的中心为缩放点，因此放大前请先调整视图。  
   
 ## <a name="other-ways-to-zoom"></a>其他缩放方式  

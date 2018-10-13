@@ -1,7 +1,7 @@
 ---
 title: 有关已损坏引用的疑难解答 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6cee6fcd845630b7f980fab602193f845aab458c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292937"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[破坏的引用的疑难解答](https://docs.microsoft.com/visualstudio/ide/troubleshooting-broken-references)。  
-  
 如果应用程序尝试使用损坏的引用，则会生成异常错误。 无法找到引用的组件是造成此错误的主要起因，但有几种情况可以将引用视为损坏。 下表中列出了这些情况：  
   
 -   项目的引用路径不正确或不完整。  

@@ -1,7 +1,7 @@
 ---
 title: “进程”视图 - 争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411de842beb616cf4ed7c51d0458e8d7bce82690
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f03a3d5b7033ae0124368425de3d7d85f9f040a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478370"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288629"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进程视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/process-view-contention-data)。  
-  
 “进程”视图显示在分析运行期间执行的进程和线程的争用数据。  
   
  当符号可用时，进程会按名称列出。 当符号不可用时，进程会按其内存地址（十六进制格式）列出。 线程作为创建它们的进程的子级列出。  

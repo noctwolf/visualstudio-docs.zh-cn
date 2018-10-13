@@ -1,7 +1,7 @@
 ---
 title: 清单： 创建新的项目类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f73462d32e0b047e0b2427646cfc5a3709c5e78a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8047ea1aeb6a163a627f9198ca3f6731419949ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285982"
 ---
 # <a name="checklist-creating-new-project-types"></a>清单：新建项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[清单： 创建新的项目类型](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-new-project-types)。  
-  
 必须完成多个任务以创建新的项目类型。 下列清单提供了这些任务的指南。  
   
 1.  设计新的项目类型的功能。 有关详细信息，请参阅[项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)。  
@@ -58,7 +56,7 @@ ms.locfileid: "47469369"
   
     -   对象或从派生的类`IDispatch`，可用于自动化。  
   
-    -   XML 命令表格 (.vsct) 文件。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+    -   XML 命令表格 (.vsct) 文件。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
 6.  测试、 调试和启动您的项目类型。  
   

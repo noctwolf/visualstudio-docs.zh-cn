@@ -1,7 +1,7 @@
 ---
 title: 选项对话框的调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a03eb60900e0634bef6fedd1200d8633ad7b93d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea3c784aa5920935976ccbf873fd49919f9372fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483515"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293860"
 ---
 # <a name="debugging-options-dialog-box"></a>“选项”对话框 ->“调试”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试、 选项对话框](https://docs.microsoft.com/visualstudio/debugger/debugging-options-dialog-box)。  
-  
 **调试**文件夹，请在**选项**上的对话框**工具**菜单中，提供的以下页面，使您能够指定调试器工具选项。  
   
 -   [“选项”对话框 ->“调试”->“常规”](../debugger/general-debugging-options-dialog-box.md)  

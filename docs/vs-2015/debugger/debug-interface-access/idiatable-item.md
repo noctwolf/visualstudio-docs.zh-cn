@@ -1,7 +1,7 @@
 ---
 title: 'Idiatable:: Item |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ad4b51a125af1f08d8766c4c34a2bdd0c54ff64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30b2de7590a20c3d0b9e1ec911779d407a46b1f6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483524"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289115"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiatable:: Item](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiatable-item)。  
-  
 检索表中指定的项的引用。  
   
 ## <a name="syntax"></a>语法  

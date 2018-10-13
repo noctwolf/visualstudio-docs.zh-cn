@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 独立 Shell |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed81e88b12e371f74adb9d3911719112bca8b139
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483141"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286060"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 独立 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 独立 Shell](https://docs.microsoft.com/visualstudio/extensibility/visual-studio-isolated-shell)。  
-  
 Visual Studio 独立 shell，可创建独立的应用程序可以运行的同时与其他版本的 Visual Studio。 它是主要用于托管专用的工具，可以使用 Visual Studio 服务，但还具有自定义的外观和品牌。 Visual Studio 功能和菜单命令组可以轻松地打开和关闭。 完全可自定义应用程序标题、 应用程序图标和初始屏幕。 可自定义功能的列表，请参阅[自定义独立 Shell](../extensibility/customizing-the-isolated-shell.md)。  
   
  若要使用的独立的 shell 项目，必须安装 Visual Studio SDK。 从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

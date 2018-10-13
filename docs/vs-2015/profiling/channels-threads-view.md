@@ -1,7 +1,7 @@
 ---
 title: 通道（“线程”视图）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b67d4c4b2f3faf6147942b78a23999fdebb294
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16903851ce014a889d386acaadf2b8b86e82b909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482095"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286893"
 ---
 # <a name="channels-threads-view"></a>通道（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通道 （线程视图）](https://docs.microsoft.com/visualstudio/profiling/channels-threads-view)。  
-  
 并发可视化工具显示四类通道：线程通道、磁盘通道、标记通道和 GPU 通道。  
   
 ## <a name="thread-channels"></a>线程通道  

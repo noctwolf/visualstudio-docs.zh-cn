@@ -1,7 +1,7 @@
 ---
 title: 保存项目项的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 874a147883155fe59acee100e8619cc6c7e57156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f9094dfd2ffa9edab1b884f2658f74db718ab3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285098"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>保留项目项的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[持久保存项目项的属性的](https://docs.microsoft.com/visualstudio/extensibility/persisting-the-property-of-a-project-item)。  
-  
 您可能想要保留的属性添加到项目项，例如源代码文件的作者。 可以通过将属性存储在项目文件中执行此操作。  
   
  若要保存项目文件中的属性的第一步是获取作为项目的层次结构<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。 你可以通过使用自动化功能或通过使用获取此接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>。 一旦获取该接口，可用于确定当前未选择的项目项。 项目项 ID 后，可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A>添加属性。  

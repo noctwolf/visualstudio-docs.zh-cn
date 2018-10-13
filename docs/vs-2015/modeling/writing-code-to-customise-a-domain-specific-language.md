@@ -1,7 +1,7 @@
 ---
 title: 编写代码以自定义域特定于域的语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d22bc992da094ea592f508f3d9e0662977e7e534
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b9debc18c9d99c9b44b66116ff2f956296fdc19f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293340"
 ---
 # <a name="writing-code-to-customise-a-domain-specific-language"></a>编写代码以自定义域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编写代码以自定义域特定于域的语言](https://docs.microsoft.com/visualstudio/modeling/writing-code-to-customise-a-domain-specific-language)。  
-  
 本部分演示如何使用自定义代码来访问、 修改或在域特定语言中创建一个模型。  
   
  有几个可以在其中编写代码，它使用 DSL 的上下文：  
