@@ -1,7 +1,7 @@
 ---
 title: MSBuild 高级概念 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b41b1ec73c956daeed5228c01a13a603a039837
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 077cdf0fe5844b62176f40677c538e80070d575d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470647"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198453"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 高级概念](https://docs.microsoft.com/visualstudio/msbuild/msbuild-advanced-concepts)。  
-  
   
 本部分中的文档介绍如何使用高级技术来改善使用 MSBuild 运行的版本。  
   

@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中动态显示对象 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 481ba0f156f6ea6cc43d9df19eedcb84ab864cbe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0495397ccce63b93e524c2b3898b4f18ac981ff6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230071"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 设计器中动态显示对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[XAML 设计器中的对象进行动画处理](https://docs.microsoft.com/visualstudio/designers/animate-objects-in-xaml-designer)。  
-  
 可以创建移动对象或使它们淡入和淡出的简短动画。  
   
  若要开始，请创建 *情节提要*。 情节提要包含一个或多个 *时间线*。 在时间线上设置 *关键帧* 以标记属性更改。 随后在运行动画时，Blend 将在指定时间段内插入属性更改。 这样便可实现平滑过渡。 可以对属于对象的任何属性（甚至非可视属性）进行动画处理。  

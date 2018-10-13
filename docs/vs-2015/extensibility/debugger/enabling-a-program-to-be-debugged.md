@@ -1,7 +1,7 @@
 ---
 title: 启用要进行调试的程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0dcb98df8562a5f35fc0d56d5a4ef6570021664
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d3f2db58e09060871f5d70b1daf766c993807b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231707"
 ---
 # <a name="enabling-a-program-to-be-debugged"></a>启用要进行调试的程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[启用到调试程序](https://docs.microsoft.com/visualstudio/extensibility/debugger/enabling-a-program-to-be-debugged)。  
-  
 在调试引擎 (DE) 可调试的程序之前，必须先启动 DE 或将其附加到现有的程序。  
   
 ## <a name="in-this-section"></a>本节内容  

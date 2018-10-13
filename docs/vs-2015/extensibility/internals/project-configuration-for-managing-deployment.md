@@ -1,7 +1,7 @@
 ---
 title: 用于管理部署项目配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: bd5940d9-d94d-4944-beda-4ec1ab2bbde5
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 54ed242f0992e84a43315579c8af4017de21ef8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc39271d235db9351edf4307c838519ce89748be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230447"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>用于管理部署的项目配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用于管理部署的项目配置](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-managing-deployment)。  
-  
 部署是以物理方式将输出项的生成过程从移动到预期位置用于调试和安装的行为。 例如，Web 应用程序可能会在本地计算机上生成，然后放在服务器上。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持两种方法可以在部署中涉及的项目：  

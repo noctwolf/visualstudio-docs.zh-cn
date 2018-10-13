@@ -1,7 +1,7 @@
 ---
 title: 对函数行为进行批注 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c05fca9a23f213f14aaecffda87478819291e1f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1be20fed5e7fd98860a4a62c3d59fc458bed04ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234385"
 ---
 # <a name="annotating-function-behavior"></a>对函数行为进行批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[批注的函数行为](https://docs.microsoft.com/visualstudio/code-quality/annotating-function-behavior)。  
-  
 除了对进行批注[函数参数和返回值](../code-quality/annotating-function-parameters-and-return-values.md)，可以批注整个函数的属性。  
   
 ## <a name="function-annotations"></a>功能批注  

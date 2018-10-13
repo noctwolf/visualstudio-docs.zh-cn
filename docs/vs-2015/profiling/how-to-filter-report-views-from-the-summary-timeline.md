@@ -1,7 +1,7 @@
 ---
 title: 如何：从摘要时间线中筛选报告视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95e9ad24bc5ecf41274b08c83d6f1170bf225ec3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bdf402f8de9f5ce952d2abe4f4b015545a02b1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231772"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：从摘要时间线中筛选报告视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 从摘要时间线中筛选报告视图](https://docs.microsoft.com/visualstudio/profiling/how-to-filter-report-views-from-the-summary-timeline)。  
-  
 可通过在“摘要”视图的时间线图中指定时间段来筛选显示在性能报告中的数据。 筛选报告时，会对分析数据文件进行重新分析，以仅包含指定的时间段。  
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>从“摘要”时间线图筛选分析报表  

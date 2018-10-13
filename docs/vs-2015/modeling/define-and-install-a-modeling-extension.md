@@ -1,7 +1,7 @@
 ---
 title: 定义和安装建模扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3d6ea563d7b7d4e2cac0e4f69ea5fddcd192418
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234398"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定义和安装建模扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定义和安装建模扩展](https://docs.microsoft.com/visualstudio/modeling/define-and-install-a-modeling-extension)。  
-  
 在 Visual Studio 中，可以为建模图定义扩展。 以这种方式，你可以根据自己的需要调整关系图和模型。 例如，可以定义菜单命令、UML 配置文件、有效性约束和工具箱项。 可以在单个的扩展中定义多个组件。 此外，还可以以 [Visual Studio 集成扩展 (VSIX)](http://go.microsoft.com/fwlink/?LinkId=160780)的形式将这些扩展分发给其他 Visual Studio 用户。 可以使用 Visual Studio 中的 VSIX 项目创建 VSIX。  
   
 ## <a name="requirements"></a>要求  
- 请参阅[要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持此功能的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="creating-a-modeling-extension-solution"></a>创建一个建模扩展解决方案  
  若要定义建模扩展，必须创建一个包含这些项目的解决方案：  

@@ -1,7 +1,7 @@
 ---
 title: 如果使用旧版 API 更改查看设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 12c9b300-0894-4124-96a1-764326176d77
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c6ffd7796e0f90748ed46050d5d07ce2df210db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550acb027d4d9b0fdaecdcd6057610413ae0da3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234840"
 ---
 # <a name="changing-view-settings-by-using-the-legacy-api"></a>如果使用旧版 API 更改视图设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用旧版 API 更改查看设置](https://docs.microsoft.com/visualstudio/extensibility/changing-view-settings-by-using-the-legacy-api)。  
-  
 可以通过用户更改设置核心编辑器功能，如自动换行、 选定内容的边距和虚拟空间**选项**对话框。 但是，还有可能要更改这些设置以编程方式。  
   
 ## <a name="changing-settings-by-using-the-legacy-api"></a>使用旧版 API 更改设置  

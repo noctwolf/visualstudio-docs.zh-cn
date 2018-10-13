@@ -1,7 +1,7 @@
 ---
 title: “设置当前堆栈帧”命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5294e45ebb3753bc59fed16e176467132084800f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8aeb1b993d5ec2b8091dfa4c764056743920a03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479369"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182541"
 ---
 # <a name="set-current-stack-frame-command"></a>“设置当前堆栈帧”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设置当前堆栈帧命令](https://docs.microsoft.com/visualstudio/ide/reference/set-current-stack-frame-command)。  
-  
   
 允许设置特定堆栈帧。  
   
@@ -54,7 +52,7 @@ Debug.SetCurrentStackFrame index
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

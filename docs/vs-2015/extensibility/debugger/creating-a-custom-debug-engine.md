@@ -1,7 +1,7 @@
 ---
 title: 创建自定义调试引擎 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f071d15b0900fb256fba02502b2e31e72ad2222a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acacb3b990b94e7bf4ed2a3a13d3b29031102a20
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237700"
 ---
 # <a name="creating-a-custom-debug-engine"></a>创建自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建自定义调试引擎](https://docs.microsoft.com/visualstudio/extensibility/debugger/creating-a-custom-debug-engine)。  
-  
 调试引擎 (DE) 是允许调试特定运行时体系结构的组件。 通常是只有一个 DE 实现每个运行时环境。  
   
 > [!NOTE]

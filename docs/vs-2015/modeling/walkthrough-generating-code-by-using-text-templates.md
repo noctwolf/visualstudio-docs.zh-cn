@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用文本模板生成代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79454acf09a0f3b09e87af1ac91aa72c23ef86fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37fe948838a5263eca2107e2e868e2dc49cdf2a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229367"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用文本模板生成代码](https://docs.microsoft.com/visualstudio/modeling/walkthrough-generating-code-by-using-text-templates)。  
-  
 代码生成允许生成强类型化的程序代码，但可在源模型更改时轻松对其进行更改。 与之相比，另一种编写可接受配置文件的完全泛型程序的替代技术更灵活，但生成的代码既不易读取和更改，也没有这么好的性能。 本演练将演示这一优势。  
   
 ## <a name="typed-code-for-reading-xml"></a>读取 XML 的类型化代码  

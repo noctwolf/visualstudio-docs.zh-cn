@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的 XML 工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bcc9a3d40aec66eb63543e1e038027b588e61889
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56c4fe7671751b7a7cd16c7065205978728f8f99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471017"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234125"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的 XML 工具](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)。  
-  
   
 可扩展标记语言 (XML) * 是一种标记语言，用于描述数据提供一种格式。 该语言使跨越多个平台进行更准确的内容声明和获得更有意义的搜索结果变得更加容易。 此外，XML 实现了表示与数据的分离。 例如，在 HTML 中，使用标记来告诉浏览器将数据显示为粗体或斜体；而在 XML 中，标记只用于描述数据，例如城市名、温度和大气压。 在 XML 中，使用样式表（例如，可扩展样式表语言 (XSL) 和层叠样式表 (CSS)）在浏览器中显示数据。 XML 将数据与表示及处理相分离。 这一特点使你能够通过应用不同的样式表和应用程序，按照所需的方式显示和处理数据。  
   

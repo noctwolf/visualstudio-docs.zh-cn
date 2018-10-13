@@ -1,7 +1,7 @@
 ---
 title: 嵌套项目的向导支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4621627faae761bfe63b7fd056427a3771d21582
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ad12e0884818688c56643e72cb62b7dbfe6f194
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234931"
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套项目的向导支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[嵌套项目的向导支持](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-support-for-nested-projects)。  
-  
 IDE 将运行两个向导，可以实现嵌套项目的父项目：**新的项目**向导并**添加项**向导。  
   
  如果用户启动**新的项目**向导通过选择**添加项目**，然后单击**新项目**文件菜单或通过选择**添加**右键单击**新的项目**在解决方案资源管理器，IDE 将运行**AddProject**命令和父项目的实施**AddProject**命令返回模板项目文件中或具有组的上下文参数的向导 (.vsz) 文件。  

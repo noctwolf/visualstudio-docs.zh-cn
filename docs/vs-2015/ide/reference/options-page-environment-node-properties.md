@@ -1,7 +1,7 @@
 ---
 title: “选项”页 ->“环境”节点属性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: acc91b6588e7e999f0390a3bc7d7108b4e6af2b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469155"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239637"
 ---
 # <a name="options-page-environment-node-properties"></a>“选项”页 ->“环境”节点属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项页中，环境节点属性](https://docs.microsoft.com/visualstudio/ide/reference/options-page-environment-node-properties)。  
-  
   
 本文档描述了与“选项”对话框的“环境”类别 `DTE.Properties("Environment", <Property Page>)` 关联的页面（或属性集合）。 每个小节的标题都是用于访问属性集合的调用，而每个小节中的表列出了集合中的属性。  
   

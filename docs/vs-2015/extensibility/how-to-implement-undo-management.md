@@ -1,7 +1,7 @@
 ---
 title: 如何： 实现撤消管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 47b71b7e2760af18605d3ded52b68cfc38742e65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468929"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246280"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 实现撤消管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 实现撤消管理](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-undo-management)。  
-  
 用于撤消管理的主界面是<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>，这由环境实现。 若要支持撤消管理，实现单独的撤消单元 (即， <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>，其中包含多个单独的步骤。  
   
  如何实现撤消管理根据您的编辑器是否支持多个视图，或不可能有所不同。 以下各节将详细的过程的每个实现。  

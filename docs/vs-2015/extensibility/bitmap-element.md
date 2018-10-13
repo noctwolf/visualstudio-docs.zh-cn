@@ -1,7 +1,7 @@
 ---
 title: Bitmap 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: efcf92479b26e25b1eab485851a849ab083cc54c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfade1c45e7299450a47c290d3746e4e36817319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231512"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[位图元素](https://docs.microsoft.com/visualstudio/extensibility/bitmap-element)。  
-  
 定义位图。 从资源或从文件加载位图。  
   
 ## <a name="syntax"></a>语法  

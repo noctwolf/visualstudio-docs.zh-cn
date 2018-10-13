@@ -1,7 +1,7 @@
 ---
 title: MSBuild 项 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 522de2d2a10e58c1f7d6a42b2456c63648655a86
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d04bd43be2a4fa2a72dec687df2582ccf6201b94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229354"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 项](https://docs.microsoft.com/visualstudio/msbuild/msbuild-items)。  
-  
   
 MSBuild 项是生成系统的输入，通常表示文件。 根据项元素名称，将其组成不同的项类型。 项类型是项的命名列表，可用作任务参数。 任务使用项值来执行生成过程。  
   

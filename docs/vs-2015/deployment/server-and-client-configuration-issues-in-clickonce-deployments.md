@@ -1,7 +1,7 @@
 ---
 title: 服务器和 ClickOnce 部署中的客户端配置问题 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 17ab417649818e9f56dbd1065929a6240a23d417
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231516"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[服务器和 ClickOnce 部署中的客户端配置问题](https://docs.microsoft.com/visualstudio/deployment/server-and-client-configuration-issues-in-clickonce-deployments)。  
-  
 如果在 Windows Server 上使用 Internet 信息服务 (IIS) 和你的部署包含 Windows 无法识别的文件类型，如 Microsoft Word 文件，IIS 将拒绝传输该文件中，并且你的部署将不会成功。  
   
  此外，某些 Web 服务器和 Web 应用程序软件，如[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]、 包含一组文件和文件类型不能下载。 例如，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]可防止所有 Web.config 文件的下载。 这些文件可能包含敏感信息，如用户名和密码。  

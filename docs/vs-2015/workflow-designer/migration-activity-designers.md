@@ -1,7 +1,7 @@
 ---
 title: 迁移活动设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ae161fc5ff6f2b415cb477dcc3726a23802520a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8fdec5b2a32f8a25832663ede74757d0bc8285c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470042"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236699"
 ---
 # <a name="migration-activity-designers"></a>迁移活动设计器
 迁移活动设计器用于从针对 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]的工作流中调用工作流 3.0/3.5 活动。 本节中包含的主题介绍如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活动设计器。  

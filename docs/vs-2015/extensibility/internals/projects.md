@@ -1,7 +1,7 @@
 ---
 title: 项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 237742e4-a638-4d5b-a9b3-6a69d627763c
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ade0234423c907c675bc1dd53e3436dfa38ca26e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb67c01732f5347e13c09146379d2b79298d198d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469822"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236049"
 ---
 # <a name="projects"></a>项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目](https://docs.microsoft.com/visualstudio/extensibility/internals/projects)。  
-  
 在 Visual Studio 中，项目是开发人员用于组织源代码文件和显示在其他资源的容器**解决方案资源管理器**。 通常情况下，项目是存储对源代码文件和资源，如位图文件的引用的文件 （例如，对于 C# 项目的.csproj 文件）。 项目的让组织、 生成、 调试和部署的源代码，请对 Web 服务和数据库，以及其他资源的引用。 Vspackage 可以扩展 Visual Studio 项目系统在三个方面：*项目类型*，*项目子类型*，并*自定义工具*。  
   
 ## <a name="in-this-section"></a>本节内容  

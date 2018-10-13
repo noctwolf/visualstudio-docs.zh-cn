@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 ->“项目和解决方案” | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6999a8af211fec07e50eac006e7de7bb11f49418
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4230f99b78809594d65da991c65c11d7dc30efd4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246189"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目和解决方案选项对话框](https://docs.microsoft.com/visualstudio/ide/reference/projects-and-solutions-options-dialog-box)。  
-  
   
 设置 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目文件夹的默认路径，并在开发和生成项目时确定“输出”窗口、“任务列表”和“解决方案资源管理器”的默认行为。 若要访问此对话框，请单击“工具/选项”，展开“项目和解决方案”，然后单击“常规”。  
   
