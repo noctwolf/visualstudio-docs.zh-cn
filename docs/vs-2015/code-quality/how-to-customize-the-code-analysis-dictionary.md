@@ -1,7 +1,7 @@
 ---
 title: 如何： 自定义代码分析字典 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a46631e9f69c89af0e1d283c484ad71023821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f46da0c36dfdf73fc550d57e733637ec7ab1e3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227901"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 自定义代码分析字典](https://docs.microsoft.com/visualstudio/code-quality/how-to-customize-the-code-analysis-dictionary)。  
-  
 代码分析使用内置的字典来检查拼写、 语法的情况下和的其他命名约定中的错误代码中的标识符[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]指导原则。 可以创建要添加、 删除或修改条款、 缩写和首字母缩写词到内置词典的自定义词典 Xml 文件。  
   
  例如，假设您的代码包含一个名为类**DoorKnokker**。 代码分析可以确定两个单词的复合的名称：**门**并**knokker**。 然后，它将引发一个警告， **knokker**拼写不正确。 若要强制代码分析，以识别拼写是否正确，可以添加字词**knokker**到自定义字典。  

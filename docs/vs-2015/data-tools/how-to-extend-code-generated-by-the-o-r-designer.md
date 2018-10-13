@@ -1,7 +1,7 @@
 ---
 title: 如何： 扩展 O-R 设计器生成的代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fe770e52a1557d577ef2536177321deb04c0128
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14fd1f950d50f2cb71e56fc8b1e75ff60f3da0ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479318"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227902"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>如何：扩展 O/R 设计器生成的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 扩展 O-R 设计器生成代码](https://docs.microsoft.com/visualstudio/data-tools/how-to-extend-code-generated-by-the-o-r-designer)。  
-  
   
 在更改设计器图面上的实体类和其他对象时，将重新生成由 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]生成的代码。 当设计器重新生成代码时，您添加到生成的代码中的任何代码一般都会被重新声称的代码覆盖。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]提供了一种生成分部类文件的功能，您可以将代码添加到分部类文件中而不会被覆盖。 将您自己的代码添加到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]生成的代码中的一个示例是在 LINQ to SQL（实体）类中添加数据验证。 有关信息，请参阅[如何： 向实体类添加验证](../data-tools/how-to-add-validation-to-entity-classes.md)。  
   

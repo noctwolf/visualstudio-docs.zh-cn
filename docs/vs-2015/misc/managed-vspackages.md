@@ -1,7 +1,7 @@
 ---
 title: 托管 Vspackage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: douge
-ms.openlocfilehash: f221cf99234a2e3128e29636368e5fa78169425d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44507112ceb3e7bed452ef4ced7633001224ad82
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480658"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227072"
 ---
 # <a name="managed-vspackages"></a>托管的 VSPackage
-以下主题介绍如何创建 VSPackage。 VSPackage 是软件模块扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过提供用户界面 (UI) 元素、 服务、 项目、 编辑器和设计器的集成的开发环境 (IDE)。 有关详细信息，请参阅[Vspackage](../extensibility/internals/vspackages.md)。  
+以下主题介绍如何创建 VSPackage。 VSPackage 是软件模块扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过提供用户界面 (UI) 元素、 服务、 项目、 编辑器和设计器的集成的开发环境 (IDE)。 有关更多信息，请参见 [VSPackages](../extensibility/internals/vspackages.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [使用 Visual Studio 互操作程序集](../extensibility/internals/using-visual-studio-interop-assemblies.md)  

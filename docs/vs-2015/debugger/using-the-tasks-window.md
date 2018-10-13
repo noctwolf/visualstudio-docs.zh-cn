@@ -1,7 +1,7 @@
 ---
 title: 使用任务窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e7e5d4c979d8160e9b2a9cee1a937bcc8049fc5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 638c0c44be94398da8b1964a849ad99011044f78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484500"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226195"
 ---
 # <a name="using-the-tasks-window"></a>使用“任务”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用任务窗口](https://docs.microsoft.com/visualstudio/debugger/using-the-tasks-window)。  
-  
 **任务**窗口类似于**线程**窗口中，但它显示有关的信息<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)对象而不是每个线程。 与线程一样，任务表示可并行运行的异步操作；但是，多个任务可以在同一个线程上运行。 请参阅[JavaScript （Windows 应用商店应用） 中的异步编程](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)有关详细信息。  
   
  在托管代码中，可以使用**任务**窗口中使用时<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象或使用**await**并**异步**关键字 (**Await**并**异步**在 visual Basic 中)。 有关在托管代码中的任务的详细信息，请参阅[并行编程](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)。  

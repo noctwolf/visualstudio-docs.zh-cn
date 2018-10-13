@@ -1,7 +1,7 @@
 ---
 title: 在游戏或应用程序中使用三维资产 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab73f8ecdb9507459c7214de37b2349c01062f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226300"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在游戏或应用程序中使用三维资产
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用您的游戏或应用中的三维资产](https://docs.microsoft.com/visualstudio/designers/using-3-d-assets-in-your-game-or-app)。  
-  
 本文介绍了如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 处理三维资产并将其包含在你的生成中。  
   
  在使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的工具创建三维资产后，下一步是在应用中使用它们。 但是在使用它们之前，你的资产必须转换为 DirectX 可以解读的格式。 为了帮助你转换资产，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将为它可产生的每种资产提供生成自定义。 若要将资产包含在生成中，你只需将项目配置为使用生成自定义、将资产添加到你的项目，然后将资产配置为使用正确的生成自定即可。 此后，你可以将资产加载到应用中，然后通过创建并填充 DirectX 资源来使用它们，正如你在任何其他 DirectX 应用中一样。  

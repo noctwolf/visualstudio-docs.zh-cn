@@ -1,7 +1,7 @@
 ---
 title: 扩展的基础项目对象模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9a5494ad888da9707af0d8af40dc5ea3d242b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9b5c70ce13341eeb4a522c16fe336d5f644f830b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478544"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228718"
 ---
 # <a name="extending-the-object-model-of-the-base-project"></a>扩展基项目的对象模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展基项目对象模型](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-the-object-model-of-the-base-project)。  
-  
 项目子类型可能会扩展在以下位置中的基础项目的自动化对象模型：  
   
 -   Project.Extender ("\<ProjectSubtypeName >") – 这样，项目子类型与自定义方法从提供对象<xref:EnvDTE.Project>。 项目子类型可以使用自动化扩展程序来公开`Project`对象。 <xref:EnvDTE80.IInternalExtenderProvider>接口实现的主项目子类型聚合器上应提供有关其对象`VSHPROPID_ExtObjectCATID`从<xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2>(对应于`itemid`VSITEMID_ROOT，值从`VSITEMID`) CATID。  

@@ -1,7 +1,7 @@
 ---
 title: 支持的可视化效果 Visual Studio 版本&amp;建模 SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ebfedef5231234ab6c9d0e1319cd6d427a832bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ee0e8021c68e16409bb1c107920cd802e06ee165
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227046"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>支持的可视化效果 Visual Studio 版本&amp;建模 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[可视化效果的支持 Visual Studio 版本&amp;建模 SDK](https://docs.microsoft.com/visualstudio/modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk)。  
-  
 以下是支持与 Visual Studio 版本的列表[!INCLUDE[dsl](../includes/dsl-md.md)]中创作和部署环境。 这些版本的详细信息，请参阅 Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [开发人员中心](http://go.microsoft.com/fwlink/?LinkId=75628)。  
   
 ## <a name="authoring-edition"></a>创作版  
