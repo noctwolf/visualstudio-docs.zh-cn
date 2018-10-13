@@ -1,7 +1,7 @@
 ---
 title: 自定义项目模板和项模板 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 594b8a73cab470b29b2e3a81da8739ec6965f14e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c26203fe5a3cd187ef53a573d31697ef16567f59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234268"
 ---
 # <a name="customizing-project-and-item-templates"></a>自定义项目模板和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义项目和项模板](https://docs.microsoft.com/visualstudio/ide/customizing-project-and-item-templates)。  
-  
 创建项目和项模板后，仍然可以对其进行进一步自定义，使其满足要求。  
   
  例如，可以执行下列任务：  

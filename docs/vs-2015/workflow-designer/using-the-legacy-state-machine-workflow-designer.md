@@ -1,7 +1,7 @@
 ---
 title: 使用旧版状态机工作流设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: aafe537adf0a48ea38cdeb84a3461fef30cb13e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477032"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231681"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>使用旧版状态机工作流设计器
 在创建新的状态机工作流项目中[!INCLUDE[vs2010](../includes/vs2010-md.md)]面向[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]，你可以选择使用两种**状态机工作流控制台应用程序**或**状态机工作流库**旧项目模板。 如果选择其中一个状态机项目模板，则会以旧工作流设计器用户界面的形式呈现状态机设计器。 有关旧状态机项目模板的信息，请参阅[如何： 创建状态机工作流控制台应用程序 （旧版）](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)和[如何： 创建状态机工作流库 （旧版）](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  

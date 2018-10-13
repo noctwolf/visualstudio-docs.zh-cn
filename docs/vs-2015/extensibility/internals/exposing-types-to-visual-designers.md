@@ -1,7 +1,7 @@
 ---
 title: 公开到可视化设计器的类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a7a32ad4-3a0a-4eb8-a6ac-491c42885639
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e09161d7ea2e27fbc1f4c7bd68cc7da952d3f1d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 401ba1744ad03260140ca29d706f24d699863246
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242003"
 ---
 # <a name="exposing-types-to-visual-designers"></a>向可视化设计器公开类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[公开类型添加到可视化设计器](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-types-to-visual-designers)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 必须具有访问的类和类型定义在设计时才能显示一个可视化设计器。 从一组预定义的包含完整的依赖项集的当前项目 （引用以及其依赖项） 的程序集加载的类。 可能还会对访问类和自定义工具生成的文件中定义的类型所需的可视化设计器。  
   
  [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]和[!INCLUDE[csprcs](../../includes/csprcs-md.md)]项目系统提供了支持访问生成的类和类型通过临时可移植可执行文件 (临时 PEs)。 在自定义工具生成的任何文件可以编译到一个临时程序集，以便可以从这些程序集加载和设计器向公开类型。 每个自定义工具的输出编译到单独的临时 PE，并且此临时编译成功与否仅取决于可编译生成的文件。 虽然项目可能无法生成作为一个整体，各个临时 Pe 可能仍是可用于设计器。  

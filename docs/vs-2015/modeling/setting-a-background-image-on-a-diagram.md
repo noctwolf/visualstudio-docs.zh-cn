@@ -1,7 +1,7 @@
 ---
 title: 在图表上设置背景图像 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ea74561974db32a831b4123578bffb755a24cbc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240547"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图表上设置背景图像](https://docs.microsoft.com/visualstudio/modeling/setting-a-background-image-on-a-diagram)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可视化和建模 SDK 中，可以使用自定义代码为生成的设计器设置背景图像。  
   
 ## <a name="setting-the-background-image"></a>设置背景图像  
@@ -52,7 +50,7 @@ ms.locfileid: "47476813"
   
 11. 如果缺少 Resources.Designer.cs，则单击文件 Resources.resx 中**解决方案资源管理器**。  
   
-12. 在中**属性**窗口中，将`Custom Tool`属性设置为`ResXFileCodeGenerator`。  
+12. 在“属性”  窗口中，将 `Custom Tool` 属性设置为 `ResXFileCodeGenerator`。  
   
 13. 在**解决方案资源管理器**，右键单击 Dsl 项目，依次指向**添加**，然后单击**新文件夹**。  
   

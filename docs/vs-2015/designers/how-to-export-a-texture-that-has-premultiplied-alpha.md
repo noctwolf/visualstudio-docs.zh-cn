@@ -1,7 +1,7 @@
 ---
 title: 如何：导出包含预乘 Alpha 的纹理 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5089ff81121e9390968fe7e3900eb28cededc27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d15ac70fbbc9291dca32f25ed5f3c3378b6b848
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469492"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239728"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：导出包含自左乘的 Alpha 的纹理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 导出包含自左乘的 Alpha 的纹理](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-has-premultiplied-alpha)。  
-  
 图像内容管道可从源图像生成预乘 Alpha 纹理。 这些纹理比不包含预乘 alpha 的纹理更易于使用且更可靠。  
   
  本文档演示了这些活动：  

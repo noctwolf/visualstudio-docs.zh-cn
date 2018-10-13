@@ -1,7 +1,7 @@
 ---
 title: BaseClass |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c7fcff45c4d11a9ee7047222e9803ee9f1bdc58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86da35d23af05b318bcecf950064e5d8de23df0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242081"
 ---
 # <a name="baseclass"></a>BaseClass
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[BaseClass](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/baseclass)。  
-  
 每个基类的用户定义类型 (UDT) 符号由具有的子项`SymTagBaseClass`标记。 [Idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)属性为基础的 UDT，包含的符号和用户定义的基础类型的所有属性都均可作为此 BaseClass 符号的一部分。  
   
 ## <a name="properties"></a>属性  

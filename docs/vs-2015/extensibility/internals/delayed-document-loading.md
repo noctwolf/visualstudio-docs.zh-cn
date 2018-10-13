@@ -1,7 +1,7 @@
 ---
 title: 文档加载延迟 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a3469484518a4d802c8fc0de11a32533fa429d3d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67fe53cefe3d128869d53592bf3e5c42a9d27a4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471444"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240911"
 ---
 # <a name="delayed-document-loading"></a>文档加载延迟
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[延迟文档加载](https://docs.microsoft.com/visualstudio/extensibility/internals/delayed-document-loading)。  
-  
 当用户重新打开 Visual Studio 解决方案时，不会立即加载的大多数相关联的文档。 在挂起的初始化状态下，创建文档窗口框架和占位符文档 （称为存根 （stub） 帧） 被放在正在运行文档表 (RDT)。  
   
  您的扩展插件可能会导致通过查询的文档中的元素，在加载前不必要地加载项目文档。 用于 Visual Studio，这可以增加总体内存占用量。  

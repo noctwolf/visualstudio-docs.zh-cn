@@ -1,7 +1,7 @@
 ---
 title: 将菜单控制器添加到工具栏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8f6d124b1dc6bcd16b0f4d62c47df521ba25b07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a5389626f31fa45f04ec58723450baba5370b24f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231174"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>将菜单控制器添加到工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[向工具栏添加菜单控制器](https://docs.microsoft.com/visualstudio/extensibility/adding-a-menu-controller-to-a-toolbar)。  
-  
 本演练基于[添加到工具窗口工具栏](../extensibility/adding-a-toolbar-to-a-tool-window.md)演练，并演示如何将菜单控制器添加到工具窗口工具栏。 如下所示的步骤还可应用于在中创建工具栏[将工具栏添加](../extensibility/adding-a-toolbar.md)演练。  
   
  菜单控制器是拆分控件。 左侧和右侧的菜单控制器显示上次使用的命令，并通过单击它可以运行它。 右侧的菜单控制器是一个箭头，单击，将打开的其他命令的列表。 当单击上列表中，命令运行的命令，它取代了左侧和右侧的菜单控制器上的命令。 在这种方式，菜单控制器运行，类似于始终显示列表中的上次使用的命令的命令按钮。  

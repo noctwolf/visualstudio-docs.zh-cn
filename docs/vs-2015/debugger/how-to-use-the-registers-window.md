@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用寄存器窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 668ed9b48d5013a0a134911c4bed56b99ba7e3c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15d7f4fb441a62967cdbfc0ed4491b1226abbd3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477550"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238961"
 ---
 # <a name="how-to-use-the-registers-window"></a>如何：使用“寄存器”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Studio 调试器中查看注册值](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-registers-window)。  
-  
 寄存器窗口是在启用了地址级调试时才可用**选项**对话框中，**调试**节点，**常规**类别。  
   
  **注册**窗口显示寄存器内容。 如果将保留**注册**窗口打开状态，因为单步执行应用程序，可以看到寄存器值发生更改，在代码执行。 最近更改过的值显示为红色。 您可以编辑寄存器的值。 有关详细信息，请参阅[如何： 编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。  

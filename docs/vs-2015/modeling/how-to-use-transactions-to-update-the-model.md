@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用事务更新模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fe70656f5bcc9e8c132594ff6bb4fec646e5df5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482519"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236855"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用事务的事务更新模型](https://docs.microsoft.com/visualstudio/modeling/how-to-use-transactions-to-update-the-model)。  
-  
 事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。  
   
  每当你的程序代码修改、 添加，或删除中的存储区中的任何元素[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可视化和建模 SDK，它必须在事务内执行此操作。 必须有应用的活动实例<xref:Microsoft.VisualStudio.Modeling.Transaction>更改发生时与应用商店相关联。 这适用于所有模型元素、 关系、 形状、 图和它们的属性。  
