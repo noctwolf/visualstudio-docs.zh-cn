@@ -1,7 +1,7 @@
 ---
 title: 演练：创建代码片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2827b81c15a7ca9eb402c228cfa54635c9fcf2df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 038635db92d08837cc6519670053c9619ebe3c9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483286"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267732"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>演练：创建代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建代码片段](https://docs.microsoft.com/visualstudio/ide/walkthrough-creating-a-code-snippet)。  
-  
 只需几步操作即可创建代码片段。 你需要做的就是创建一个 XML 文件，填写适当的元素，并向其中添加代码。 此外还可以向代码中添加引用和替换参数。 通过使用代码片段管理器的导入按钮添加到你的 Visual Studio 安装该片段 (**工具/代码片段管理器**)。  
   
 > [!TIP]

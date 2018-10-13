@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的快速信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ba5d6d2c08d6b4d39efe9d662dda7a0e324cbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1dab76881ac7cd4fe5cba36ec79dc48f4c1ecf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468757"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250674"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>旧版语言服务中的快速信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的快速信息](https://docs.microsoft.com/visualstudio/extensibility/internals/quick-info-in-a-legacy-language-service)。  
-  
 IntelliSense 快速信息显示有关标识符的信息源中，当用户将插入符号放置在标识符中并选择**快速信息**从**IntelliSense**菜单或保存鼠标标识符上方的光标。 这会导致工具提示，显示有关标识符的信息。 此信息通常包括标识符类型。 当调试引擎处于活动状态时，此信息可能包括的当前值。 调试引擎提供表达式的值，而该语言服务处理仅标识符。  
   
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练： 显示 QuickInfo 工具提示](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md)。  

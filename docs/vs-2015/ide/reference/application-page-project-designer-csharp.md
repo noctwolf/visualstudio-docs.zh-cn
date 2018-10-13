@@ -1,7 +1,7 @@
 ---
 title: “项目设计器”->“应用程序”页 (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22970716ed5bb13c3a9539f91288e8addf469f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264067"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[应用程序页，项目设计器 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/application-page-project-designer-csharp)。  
-  
   
 使用“项目设计器”的“应用程序”页指定项目的应用程序设置和属性。  
   
@@ -109,7 +107,7 @@ ms.locfileid: "47484521"
   
 ## <a name="see-also"></a>请参阅  
 [管理应用程序属性](../../ide/application-properties.md)  
- [在 Office 解决方案中编写代码](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
+ [Writing Code in Office Solutions](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 使用纹理和图像 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b9132ec16fa42ccff33bae226c823c710f77b18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff5125ce46abe993f35551a0ce46a0d211af99bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469372"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250492"
 ---
 # <a name="working-with-textures-and-images"></a>使用纹理和图像
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用纹理和图像](https://docs.microsoft.com/visualstudio/designers/working-with-textures-and-images)。  
-  
 可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用图像编辑器来创建和修改纹理和图像。 如同用 DirectX 应用程序开发的应用程序一样，图像编辑器支持丰富的纹理和图像格式。  
   
 > [!NOTE]

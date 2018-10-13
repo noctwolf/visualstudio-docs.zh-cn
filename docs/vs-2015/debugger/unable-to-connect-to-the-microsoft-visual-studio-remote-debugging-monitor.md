@@ -1,7 +1,7 @@
 ---
 title: 无法连接到 Microsoft Visual Studio 远程调试监视器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,22 +21,20 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edc3d1384a67576bd805ef5efb60614a215a7a92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70a186ce1e75f516a08a85e3ce5ec792e6e4a788
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481356"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265897"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[无法连接到 Microsoft Visual Studio 远程调试监视器](https://docs.microsoft.com/visualstudio/debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor)。  
-  
 当你在“附加到进程”  对话框中输入无效的 Visual Studio 远程调试监视器名称时，会出现此错误消息。 远程调试监视器名称通常与尝试连接以进行远程调试的计算机的名称相同。 出现此消息的原因可能是网络上不存在该远程计算机，远程计算机上的远程调试监视器未正确设置，或者由于网络问题或存在防火墙而导致远程计算机不可访问。  
   
 > [!IMPORTANT]
->  如果你认为你因产品 bug 而收到此消息，请向 Visual Studio 报告此问题[发送微笑](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。  
+>  如果你认为你因产品 Bug 而收到此消息，请向 Visual Studio 报告此问题 [发送笑脸](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b)。 如果需要更多帮助，请参阅 [Talk to Us](../ide/talk-to-us.md) 了解与 Microsoft 联系的方法。  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>我在本地调试时收到了此消息  
  如果在本地调试时收到此消息，问题可能出在你的防病毒软件或第三方防火墙。 Visual Studio 是一个 32 位应用程序，因此它使用 64 位的远程调试器版本来调试 64 位应用程序。 两个进程使用本地计算机内的本地网络进行通信。 计算机会持续进行网络通信，但第三方安全软件可能会阻止通信。  
@@ -52,15 +50,15 @@ ms.locfileid: "47481356"
 -   验证远程计算机在网络上是可访问的。  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>远程计算机不可访问  
- 尝试[ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx)远程计算机。 如果它不响应 ping 操作，则远程工具也将无法连接。 请尝试重新启动远程计算机，或者确保它在网络上正确配置。  
+ 尝试 [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) 远程计算机。 如果它不响应 ping 操作，则远程工具也将无法连接。 请尝试重新启动远程计算机，或者确保它在网络上正确配置。  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>远程调试器的版本不匹配 Visual Studio 的版本  
- 在本地运行的 Visual Studio 的版本必须与远程计算机上运行的远程调试监视器的版本匹配。 若要解决此问题，请下载并安装匹配的远程调试监视器版本。 转到[下载中心](http://www.microsoft.com/download)以找到正确版本的远程调试器。  
+ 在本地运行的 Visual Studio 的版本必须与远程计算机上运行的远程调试监视器的版本匹配。 若要解决此问题，请下载并安装匹配的远程调试监视器版本。 转到 [下载中心](http://www.microsoft.com/download) 以查找正确版本的远程调试器。  
   
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>本地和远程计算机具有不同的身份验证模式  
  本地和远程计算机需要使用相同的身份验证模式。 若要解决此问题，请确保这两台计算机使用相同的身份验证模式。 你可在“工具”/“选项”  对话框中的远程调试器上更改身份验证模式。  
   
- 有关身份验证模式的详细信息，请参阅[Windows 身份验证概述](https://technet.microsoft.com/library/hh831472.aspx)。  
+ 有关身份验证模式的详细信息，请参阅 [Windows 身份验证概述](https://technet.microsoft.com/library/hh831472.aspx)。  
   
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>远程调试器使用不同的用户帐户运行  
  可通过下列方法之一解决此问题：  
@@ -80,7 +78,7 @@ ms.locfileid: "47481356"
  Windows 防病毒软件允许远程调试器连接，但某些第三方防病毒软件可能会阻止它们。 查看你防病毒软件的文档以了解如何允许这些连接。  
   
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>网络安全策略阻塞远程计算机和 Visual Studio 之间的通信  
- 查看网络安全以确保它没有阻止通信。 有关 Windows 网络安全策略的详细信息，请参阅[安全管理](https://msdn.microsoft.com/library/windows/desktop/ms721855\(v=vs.85\).aspx)。  
+ 查看网络安全以确保它没有阻止通信。 有关 Windows 网络安全策略的详细信息，请参阅 [安全管理](https://msdn.microsoft.com/library/windows/desktop/ms721855\(v=vs.85\).aspx)。  
   
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>网络太忙无法支持远程调试  
  你可能需要在另一个时间进行远程调试，或重新安排另一个时间进行网络上的工作。  
@@ -91,7 +89,7 @@ ms.locfileid: "47481356"
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>请参阅  
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

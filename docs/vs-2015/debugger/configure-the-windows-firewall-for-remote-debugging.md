@@ -1,7 +1,7 @@
 ---
 title: 配置 Windows 防火墙以允许远程调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9189cbc49d327a9106284dc6078eed3e21cc0f9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273879"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[配置 Windows 防火墙以进行远程调试](https://docs.microsoft.com/visualstudio/debugger/configure-the-windows-firewall-for-remote-debugging)。  
-  
 本主题介绍如何配置防火墙以在运行以下操作系统的计算机上启用远程调试：  
   
 -   Windows 7  
@@ -119,7 +117,7 @@ ms.locfileid: "47468945"
 8.  你应该会在“入站规则”  或“出站规则”  列表中看到你的新规则。  
   
 ## <a name="see-also"></a>请参阅  
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 在开发过程中验证您的系统 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b0d65d99cf99c7f1468a0bf596eb687f931b5d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 33d5de340455e5e0f6a39dd9ce470d2e96327216
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262179"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在开发过程中验证您的系统](https://docs.microsoft.com/visualstudio/modeling/validate-your-system-during-development)。  
-  
 Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。  
   
  若要查看支持各个功能的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -51,7 +49,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)|  
   
 ## <a name="see-also"></a>请参阅  
- [测试应用](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)   
  [建立用户需求模型](../modeling/model-user-requirements.md)   
  [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)

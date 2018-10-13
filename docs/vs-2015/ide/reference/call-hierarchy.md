@@ -1,7 +1,7 @@
 ---
 title: 调用层次结构 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 212109c37e1c85d5ddbc55413ab5a972edbfa337
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 07d4cdc8551f7c8a8dbbcc14f682001a4bc8d83a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260074"
 ---
 # <a name="call-hierarchy"></a>调用层次结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用层次结构](https://docs.microsoft.com/visualstudio/ide/reference/call-hierarchy)。  
-  
   
 调用层次结构通过显示选定方法、属性或构造函数的所有调用方及被调用方，使用户可以在代码间导航。 这有助于更好地理解代码的流动方式，以及评估代码更改的效果。 可以检查多个级别的代码，以查看方法调用的复杂链条以及代码的其他入口点，从而找到所有可能的执行路径。  
   

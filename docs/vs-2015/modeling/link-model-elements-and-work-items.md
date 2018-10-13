@@ -1,7 +1,7 @@
 ---
 title: 链接模型元素和工作项 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 603438fda4c2f883376292b68896309a4e669be5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3c2a7558adb9036cec474429da9778394e8c1f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481827"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263910"
 ---
 # <a name="link-model-elements-and-work-items"></a>链接模型元素和工作项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[链接模型元素和工作项](https://docs.microsoft.com/visualstudio/modeling/link-model-elements-and-work-items)。  
-  
 通过链接 Visual Studio 中的模型元素和 Team Foundation Server 或 Visual Studio Team Services 中的工作项，可以跟踪任务、测试案例、Bug、需求、问题和其他与你的模型相关的工作。 将文档附加到链接的工作项可将其与模型元素关联。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -145,7 +143,7 @@ ms.locfileid: "47481827"
 1.  在“团队资源管理器” 中，确保你已连接团队项目，该团队项目中的模型元素已链接到工作项。  
   
     > [!NOTE]
-    >  你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅[故障排除](#Troubleshooting)并[创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
+    >  你只能使用团队资源管理器（而不是 Team Web Access）查看链接的模型元素。 确保你的工作区已映射到包含建模图或元素的建模项目。 如果你没有工作区，则必须创建它。 请参阅 [疑难解答](#Troubleshooting) 和 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。  
   
 2.  打开工作项，选择 **“链接”**。 在 **“模型链接”** 下，打开链接的模型元素的快捷菜单。 选择 **“打开链接项”**。  
   
@@ -173,7 +171,7 @@ ms.locfileid: "47481827"
   
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
-|无法找到要链接的模型元素。|此元素可能位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 中某建模项目的某个关系图上。 您可能没有映射到该关系图的工作区。|将您的工作区映射到该建模项目和关系图。 如果您没有工作区，则必须创建它。<br /><br /> 针对此问题显示的错误消息包含的路径可用来映射您的工作区。<br /><br /> 请参阅[创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
+|无法找到要链接的模型元素。|此元素可能位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 中某建模项目的某个关系图上。 您可能没有映射到该关系图的工作区。|将您的工作区映射到该建模项目和关系图。 如果您没有工作区，则必须创建它。<br /><br /> 针对此问题显示的错误消息包含的路径可用来映射您的工作区。<br /><br /> 请参阅 [创建和使用工作区](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)。|  
 |无法找到链接的模型元素。|链接元素可能位于已移动、重命名或删除的关系图上。|1.在工作项中，删除指向模型元素的链接。<br />2.创建从工作项到模型元素的新链接。|  
 |工作项没有你需要的链接模型元素。|仅在链接是从工作项创建的情况下，工作项才显示链接的层元素。 如果您的团队不使用 [!INCLUDE[esprscc](../includes/esprscc-md.md)]，则使用关系图的本地路径创建链接。 如果建模项目及其关系图位于 [!INCLUDE[esprscc](../includes/esprscc-md.md)] 中，则能够访问项目的所有团队成员都可以查看工作项中链接的元素。|尝试刷新工作项。|  
 |删除从工作项到模型元素的链接并不会删除从模型元素到工作项的链接。||从模型元素开始删除与工作项的链接。|  

@@ -1,7 +1,7 @@
 ---
 title: 分析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8672dd6d05b3a111ad5a1460a57a47b58d1d426a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: feeab1d1f00a681ee3af40436b395d0149cc3334
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244031"
 ---
 # <a name="profiling-tools"></a>分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的分析](https://docs.microsoft.com/visualstudio/profiling/profiling-feature-tour)。  
-  
 分析和诊断工具有助于诊断内存和 CPU 使用率以及其他应用程序级别问题。 这些工具可用于累积一段时间内在调试器中运行应用程序的数据（例如变量值、函数调用和事件）。 可以查看代码执行期间不同点的应用程序状态。  
   
  查看底部的摘要，了解项目类型（例如，桌面、UWP、ASP.NET）可以使用的工具。  
@@ -48,7 +46,7 @@ ms.locfileid: "47476833"
 ## <a name="cpu-usage"></a>CPU 使用率  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- **CPU 使用率** 工具可为你显示 CPU 耗用时间执行 C + +、C# / VB 和 JavaScript 代码的位置。  此工具可用于桌面应用和 Windows 通用应用以及 Azure App Services 应用。 “CPU 使用率”  工具可以在调试时从“诊断工具”  窗口运行（“调试”/“Windows”/“显示诊断工具”），也可以在调试器外部运行（“调试”/“性能探查器...”）。请参阅[CPU 使用率](../profiling/cpu-usage.md)有关详细信息。  
+ **CPU 使用率** 工具可为你显示 CPU 耗用时间执行 C + +、C# / VB 和 JavaScript 代码的位置。  此工具可用于桌面应用和 Windows 通用应用以及 Azure App Services 应用。 “CPU 使用率”  工具可以在调试时从“诊断工具”  窗口运行（“调试”/“Windows”/“显示诊断工具”），也可以在调试器外部运行（“调试”/“性能探查器...”）。请参阅 [CPU 使用率](../profiling/cpu-usage.md) 。  
   
 ## <a name="performance-explorer"></a>性能资源管理器  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  

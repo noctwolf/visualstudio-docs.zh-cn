@@ -1,7 +1,7 @@
 ---
 title: C + + 断言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce168764f18d85cce1d373bf509f63bfb1e6923d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e19ffb9a63e0e2168dfb7acf9c5cf3661111a1d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267679"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[C/c + + 断言](https://docs.microsoft.com/visualstudio/debugger/c-cpp-assertions)。  
-  
 断言语句指定您希望在您的程序中的点，则返回 true 的条件。 如果该条件不为 true，则断言失败，程序的执行被中断，并[断言失败对话框](../debugger/assertion-failed-dialog-box.md)出现。  
   
  Visual c + + 支持基于以下构造的断言语句：  

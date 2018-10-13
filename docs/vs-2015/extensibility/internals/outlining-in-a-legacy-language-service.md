@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的大纲显示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e450a41db4e56067424e89acf8bb4af048acfc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ea15c814472303ffd3a0097e7e61777805d487
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263219"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的大纲显示](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-in-a-legacy-language-service)。  
-  
 大纲显示使可能复杂程序折叠为概述或大纲。 例如，在 C# 中的所有方法可以都折叠为单个行，其中显示仅方法签名。 此外，结构和类可以折叠以显示仅的结构和类的名称。 在单一方法中，可以折叠复杂逻辑以通过如显示的语句中的，仅第一行中显示的总体流程`foreach`， `if`，和`while`。  
   
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要获取详细信息，请参阅[演练： 大纲显示](../../extensibility/walkthrough-outlining.md)。  

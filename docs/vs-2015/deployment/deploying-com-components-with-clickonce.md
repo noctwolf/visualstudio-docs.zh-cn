@@ -1,7 +1,7 @@
 ---
 title: 使用 ClickOnce 部署 COM 组件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2ddf7e14d3a9e1ceb2e1432e70942dd455621058
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8a544f954ed80e9adb41e0730960c4947f6357a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246833"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 ClickOnce 部署 COM 组件](https://docs.microsoft.com/visualstudio/deployment/deploying-com-components-with-clickonce)。  
-  
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 （例如，从 Visual Basic 6.0 或 Visual c + +）。  

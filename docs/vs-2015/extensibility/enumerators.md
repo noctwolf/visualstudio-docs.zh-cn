@@ -1,7 +1,7 @@
 ---
 title: 枚举器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6dcbd3dea8ad932aec5890bc085873ce3d20a8f0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4dcc660ba5aacf1b8014e7c4ca15443f2fdf881b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482588"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258486"
 ---
 # <a name="enumerators"></a>枚举器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[枚举器](https://docs.microsoft.com/visualstudio/extensibility/enumerators)。  
-  
 本部分列出了源代码管理插件必须要知道源控制插件 API 中的枚举器的数据类型。  
   
 ## <a name="in-this-section"></a>本节内容  

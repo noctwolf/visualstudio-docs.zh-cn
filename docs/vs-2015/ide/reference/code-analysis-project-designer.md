@@ -1,7 +1,7 @@
 ---
 title: “项目设计器”->“代码分析” | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25419c9dbee9b4a41522c8314a0b4198df62c6a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468907"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245162"
 ---
 # <a name="code-analysis-project-designer"></a>“项目设计器”->“代码分析”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码分析，项目设计器](https://docs.microsoft.com/visualstudio/ide/reference/code-analysis-project-designer)。  
-  
   
 包含可供你选择用于运行代码的代码分析工具。 工具报告有关程序集的信息，例如违反了 Microsoft .NET Framework 设计准则中规定的编程和设计规则。  
   

@@ -1,7 +1,7 @@
 ---
 title: 启动程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: af5987f793e6f0164654f280f8417494066e3e5d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27b7daadd3642a4eb35d993e37b6ade3bd829972
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480011"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242538"
 ---
 # <a name="launching-a-program"></a>启动程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[启动程序](https://docs.microsoft.com/visualstudio/extensibility/debugger/launching-a-program)。  
-  
 想要调试的程序的用户可以按 f5 键以从 IDE 运行调试器。 这会开始一系列事件最终导致 IDE 的连接到调试引擎 (DE)，后者又连接，或附加，到该程序，如下所示：  
   
 1.  IDE 首先调用项目包以获取解决方案的活动项目调试设置。 设置包括的开始目录、 环境变量，该程序将在其中运行的端口和 DE 要用于创建该程序，如果指定。 这些设置将传递给调试包。  

@@ -1,7 +1,7 @@
 ---
 title: SccGetProjPath 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0809ab976712d45f1cae8ec39990438e591744f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e80cae5439ec1ec0042a1357c0675a2013ff718
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269268"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccGetProjPath 函数](https://docs.microsoft.com/visualstudio/extensibility/sccgetprojpath-function)。  
-  
 此函数会提示用户输入项目路径，这是一个字符串，它仅对源代码管理插件有意义。 当用户是，将调用：  
   
 -   创建新的项目  

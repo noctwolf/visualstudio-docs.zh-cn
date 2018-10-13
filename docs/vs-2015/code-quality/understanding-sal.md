@@ -1,7 +1,7 @@
 ---
 title: 了解 SAL |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae6b16cc7f69aaf365188c488416d35402de9ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253248"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[了解 SAL](https://docs.microsoft.com/visualstudio/code-quality/understanding-sal)。  
-  
 Microsoft 源代码注释语言 (SAL) 提供了一组可用于描述函数如何使用它的参数、 关于它们的假设和它对完成的保证的批注。 标头文件中定义批注`<sal.h>`。 C + + 的 visual Studio 代码分析使用 SAL 注释来修改其分析函数。 Windows 驱动程序开发的 SAL 2.0 的详细信息，请参阅[SAL 2.0 注释为 Windows 驱动程序](http://go.microsoft.com/fwlink/?LinkId=250979)。  
   
  本机 C 和 c + + 提供仅面向开发人员来一致地表达意图和不变性有限的方式。 通过使用 SAL 注释，可以描述中更详细地介绍函数，以便开发人员会使用这些资源可以更好地了解如何使用它们。  

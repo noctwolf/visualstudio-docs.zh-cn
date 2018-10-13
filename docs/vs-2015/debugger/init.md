@@ -1,7 +1,7 @@
 ---
 title: Init |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d394ce2f149be842b42ffe4661cfbc361858bd71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a630906fa2a23a87853e8a835f155cda3ec06ecc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252390"
 ---
 # <a name="init"></a>Init
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Init](https://docs.microsoft.com/visualstudio/debugger/graphics/init)。  
-  
 准备图形诊断的应用内组件来主动捕获图形信息并将其记录到图形日志文件。  
   
 ## <a name="syntax"></a>语法  

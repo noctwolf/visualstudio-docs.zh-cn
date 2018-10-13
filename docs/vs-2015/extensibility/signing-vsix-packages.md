@@ -1,7 +1,7 @@
 ---
 title: 对 VSIX 包进行签名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f25ce39fe1c96d0e45b89fdd6114ce6984be2d16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263870"
 ---
 # <a name="signing-vsix-packages"></a>对 VSIX 包进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[签名 VSIX 包](https://docs.microsoft.com/visualstudio/extensibility/signing-vsix-packages)。  
-  
 不需要扩展插件程序集进行签名之前它们可以运行在 Visual Studio 中，但它是执行此操作的好办法。  
   
  如果你想要保护你的扩展，并确保它尚未被篡改，您可以将数字签名添加到 VSIX 包。 当 VSIX 中进行了签名时，VSIX 安装程序将显示一条消息指出进行签名，以及有关签名本身的详细信息。 如果 VSIX 内容已被修改，并且不重新签名 VSIX，VSIX 安装程序将显示签名无效。 不停止安装，但警告用户。  

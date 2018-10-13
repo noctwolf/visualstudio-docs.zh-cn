@@ -1,7 +1,7 @@
 ---
 title: 重写和扩展生成的类 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 31db7980738c8976fdcd318e87d8350a833f6252
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268159"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>重写和扩展生成的类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[重写和扩展生成的类](https://docs.microsoft.com/visualstudio/modeling/overriding-and-extending-the-generated-classes)。  
-  
 DSL 定义是一个平台，你可以在其生成一组强大的基于域特定语言的工具。 许多扩展和适应可以通过重写和扩展从 DSL 定义生成的类。 这些类包括不只是在 DSL 定义关系图中，显式定义的域类，但还定义工具箱、 资源管理器中，序列化，等其他类。  
   
 ## <a name="extensibility-mechanisms"></a>扩展性机制  

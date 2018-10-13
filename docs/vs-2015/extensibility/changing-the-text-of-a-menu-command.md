@@ -1,7 +1,7 @@
 ---
 title: 更改菜单命令的文本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e04756fc1ba35c762112eb993085dfd15ba3340
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00437c10fa93bb72d7579328ad22c347cdf96049
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237440"
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>更改菜单命令的文本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[更改菜单命令的文本](https://docs.microsoft.com/visualstudio/extensibility/changing-the-text-of-a-menu-command)。  
-  
 以下步骤演示如何使用更改菜单命令的文本标签<xref:System.ComponentModel.Design.IMenuCommandService>服务。  
   
 ## <a name="changing-a-menu-command-label-with-the-imenucommandservice"></a>更改具有 IMenuCommandService 的菜单命令标签  

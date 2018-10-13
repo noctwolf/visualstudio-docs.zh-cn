@@ -1,7 +1,7 @@
 ---
 title: 用于创建单元测试的示例项目 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: 32
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 846783e398fc07ef4ddfff4ea1bca05f840bca81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3d364ffe23e79bb8842770bec0602d4bb7022c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480035"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248581"
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用于创建单元测试的示例项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用于创建单元测试的示例项目](https://docs.microsoft.com/visualstudio/test/sample-project-for-creating-unit-tests)。  
-  
 提供此示例代码用于下面的演练：  
   
 -   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)。 本演练将引导你完成创建和自定义单元测试、运行它们以及检查测试结果的步骤。  

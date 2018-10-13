@@ -1,7 +1,7 @@
 ---
 title: MSBuild 12.0 中的新增功能 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91ec9044461cf57bba8bb36a0d2e029635155c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f10fa5496795947c041482d5ae5dc7b6112da67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484358"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247386"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>MSBuild 12.0 中的新增功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](https://docs.microsoft.com/visualstudio/)。  
-  
 MSBuild 现已作为 Visual Studio 的一部分而不是 .NET Framework 的一部分进行安装。 当前 MSBuild 版本号为 12.0。 如果要单独安装 MSBuild，请从 [MSBuild 下载](http://go.microsoft.com/fwlink/?LinkId=309745)下载安装包。  
   
 ## <a name="changed-path"></a>更改的路径  

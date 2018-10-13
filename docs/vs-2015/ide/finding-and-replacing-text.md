@@ -1,7 +1,7 @@
 ---
 title: 查找和替换文本 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c43f98a53746e609f75118fa3a490ef99e6a4adc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273437"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[查找和替换文本](https://docs.microsoft.com/visualstudio/ide/finding-and-replacing-text)。  
-  
 在 Visual Studio 代码编辑器以及“查找结果”窗口等基于文本的输出窗口中，可以使用“查找和替换”控件或“在文件中查找/替换”查找和替换文本。 还可以在某些设计器窗口中搜索和替换，例如 XAML 设计器、Windows 窗体设计器和工具窗口  
   
  可以将搜索范围限制到当前文档、当前解决方案或一组自定义文件夹中。 还可以指定一组文件扩展名，用于多文件搜索。 可以使用 .NET 正则表达式自定义搜索语法。  

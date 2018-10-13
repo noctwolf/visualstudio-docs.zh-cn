@@ -1,7 +1,7 @@
 ---
 title: 键盘快捷键 （HTML 和 JavaScript） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b35a13c09c4d846088bb1f86bbea28193bd7e07b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57a808a8c94780f32bdb33fed948be816872150c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271624"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>键盘快捷键（HTML 和 JavaScript）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[键盘快捷方式 （HTML 和 JavaScript）](https://docs.microsoft.com/visualstudio/debugger/keyboard-shortcuts-html-and-javascript)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  Visual Studio 中使用 HTML 和 JavaScript 的用于调试应用商店应用的键盘快捷方式。  

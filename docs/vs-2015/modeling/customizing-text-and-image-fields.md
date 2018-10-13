@@ -1,7 +1,7 @@
 ---
 title: 自定义文本和图像字段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 125830eed33bd86be983fdc4b48a7c79cf84fa5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271123"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义文本和图像字段](https://docs.microsoft.com/visualstudio/modeling/customizing-text-and-image-fields)。  
-  
 形状中定义的文本修饰器时，它表示由文本字段。 有关 TextFields 和其他 ShapeFields 的初始化的示例，在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。  
   
  文本字段是管理形状，例如分配给标签的空间内的某个区域的对象。 一个文本字段的实例共享同一个类的多个形状之间。 文本字段实例不会存储每个实例单独的标签文本： 相反，`GetDisplayText(ShapeElement)`方法使用作为参数，形状，并可以查找依赖于形状与模型元素的当前状态的文本。  

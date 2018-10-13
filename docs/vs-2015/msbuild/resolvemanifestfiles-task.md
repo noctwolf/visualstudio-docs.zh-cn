@@ -1,7 +1,7 @@
 ---
 title: ResolveManifestFiles 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b459ef08b9375fc246d51a161601879a26b61afa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1cf9a786a439010d6219200098dea802e0dae0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251923"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ResolveManifestFiles 任务](https://docs.microsoft.com/visualstudio/msbuild/resolvemanifestfiles-task)。  
-  
   
 在生成过程中，将以下各项解析为文件以便生成清单：生成项、依赖项、附属项、内容、调试符号和文档。  
   

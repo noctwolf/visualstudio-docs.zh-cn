@@ -1,7 +1,7 @@
 ---
 title: 所选内容和 IDE 中的货币 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87796930b8b1f76e7601bfd2dbffdddcf8d32da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477209"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270916"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的选择和货币
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选定内容和 IDE 中的当前](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-and-currency-in-the-ide)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 维护有关用户的信息当前所选对象，通过使用所选内容*上下文*。 使用选定内容上下文的 Vspackage 可以参与货币跟踪两种方式：  
   
 -   通过将传播到 IDE Vspackage 的货币信息。  

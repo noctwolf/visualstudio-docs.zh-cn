@@ -1,7 +1,7 @@
 ---
 title: 字体和颜色概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a4321619f249a992d9cdd044f621a21d85a6c380
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9fdc81a3fddd4458a54d35c9e5a1b943726b101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245188"
 ---
 # <a name="font-and-color-overview"></a>字体和颜色概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[字体和颜色概述](https://docs.microsoft.com/visualstudio/extensibility/font-and-color-overview)。  
-  
 本主题讨论中的文本字体和颜色设置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]集成的开发环境 (IDE)。 它还引入了类别和显示项的概念并介绍 Vspackage 和核心编辑器如何使用文本特性。  
   
 ## <a name="the-fonts-and-colors-property-page"></a>字体和颜色属性页  
@@ -63,7 +61,7 @@ ms.locfileid: "47478067"
   
      只有一个**类别**即支持此机制，则**文本编辑器**。  
   
--   更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>。  
+-   更多常规的替代方法支持所有其他**类别**和显示文本时在源编辑器之外的用户界面组件。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> 。  
   
 ## <a name="core-editor-text-settings"></a>核心编辑器文本设置  
  核心编辑器的语言服务对象的字体和颜色设置受**文本 EditorCategory**中找到**显示其设置**的下拉列表框**字体和颜色**属性页。  
@@ -76,7 +74,7 @@ ms.locfileid: "47478067"
   
 -   一种明确定义和优化着色机制。  
   
-     有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>。  
+     有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 。  
   
 -   可以使用内置的显示项从**文本 EditorCategory**和对其进行扩展。  
   

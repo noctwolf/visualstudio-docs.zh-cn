@@ -1,7 +1,7 @@
 ---
 title: 工具窗口中显示配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 502a4926-bb83-473e-94e2-8e833c5f8b53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ff1e5b95b684c347ee1885d5dfddeb5eebb5a82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a76f446721ee640de306aabb36ecea71a702fb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482522"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271955"
 ---
 # <a name="tool-window-display-configuration"></a>工具窗口中显示配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[工具窗口中显示配置](https://docs.microsoft.com/visualstudio/extensibility/tool-window-display-configuration)。  
-  
 可选值中指定了当 VSPackage 注册为工具窗口中，默认位置、 大小、 停靠样式和其他可见性信息。 工具窗口注册的详细信息，请参阅[工具 Windows 注册表中](../extensibility/tool-windows-in-the-registry.md)  
   
 ## <a name="window-display-information"></a>窗口显示信息  

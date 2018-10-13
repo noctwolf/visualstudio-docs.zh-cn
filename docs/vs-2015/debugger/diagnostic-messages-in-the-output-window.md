@@ -1,7 +1,7 @@
 ---
 title: 输出窗口中的诊断消息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0a9e0bb4fa34133937e39b310cb05360e66a443
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246766"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>“输出”窗口中的诊断消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[输出窗口中的诊断消息](https://docs.microsoft.com/visualstudio/debugger/diagnostic-messages-in-the-output-window)。  
-  
 可以使用 Debug 类或 Trace 类（属于 <xref:System.Diagnostics> 类库）将运行时消息写到“输出”窗口。 如果只在程序的调试版本中输出，则使用 Debug 类。 如果要同时在调试版本和发布版本中输出，则使用 Trace 类。  
   
 ## <a name="output-methods"></a>输出方法  

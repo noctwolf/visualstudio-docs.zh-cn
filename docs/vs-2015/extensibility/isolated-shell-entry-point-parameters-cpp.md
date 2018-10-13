@@ -1,7 +1,7 @@
 ---
 title: 独立 Shell 入口点参数 （c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 174deddd0783c53aecd5e2edd361587bbb02cb34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247675"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>独立的 Shell 入口点参数 （c + +）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[独立 Shell 入口点参数 （c + +）](https://docs.microsoft.com/visualstudio/extensibility/isolated-shell-entry-point-parameters-cpp)。  
-  
 Visual Studio 基于 shell 的应用程序启动时，它调用的 Visual Studio shell 的启动入口点。 可以在外壳程序的启动入口点的调用中重写以下设置。 每个设置的说明，请参阅[。Pkgdef 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
   
 -   AddinsAllowed  

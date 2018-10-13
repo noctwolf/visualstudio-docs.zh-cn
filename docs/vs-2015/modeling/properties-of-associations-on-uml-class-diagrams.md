@@ -1,7 +1,7 @@
 ---
 title: 类图上 UML 关联的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96dc1d942a06e4030992889970fd3946d2e4d9d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8274cd45142886dd71e0c8ce8e1950c0fee9609
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252058"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>UML 类图上关联的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性关联在 UML 类图](https://docs.microsoft.com/visualstudio/modeling/properties-of-associations-on-uml-class-diagrams)。  
-  
 在 UML 类图中，可以绘制*关联*任意类型对之间。 类型是类、接口或枚举。  
   
  关联指示你正在开发的系统存储关联类型的实例之间某种类型的链接。 通常情况下，它并不表示有关链接的实现的任何内容。 例如，它们可能是指针、表中的行、XML 中交叉引用的名称等。  

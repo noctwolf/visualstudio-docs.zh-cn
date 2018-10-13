@@ -1,7 +1,7 @@
 ---
 title: 参数节点 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bed941a35af21b78ea5159a218ccd36d2ff5f1e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb15b19ebdef04facdb66d4b97042bb47e4cb5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276285"
 ---
 # <a name="parameter-nodes"></a>参数节点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[参数节点](https://docs.microsoft.com/visualstudio/designers/parameter-nodes)。  
-  
 在着色器设计器中，参数节点表示受应用控制、以每个绘图为基础的着色器输入，例如，材料属性、定向光、照相机位置和时间。 由于可以使用每个绘图调用更改这些参数，因此可使用相同的着色器为某个对象提供不同的外观。  
   
 ## <a name="parameter-node-reference"></a>参数节点参考  

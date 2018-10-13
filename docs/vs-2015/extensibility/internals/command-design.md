@@ -1,7 +1,7 @@
 ---
 title: 命令设计 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,22 +16,20 @@ ms.assetid: 097108c3-f758-4b87-89d6-b32d12d9041a
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6fe22e67d97af7dc7b8c900dd10c301d02d8c5a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d46bbe3c9898fae2974b482e1ead607ea486fef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483937"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252455"
 ---
 # <a name="command-design"></a>命令设计
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[命令设计](https://docs.microsoft.com/visualstudio/extensibility/internals/command-design)。  
-  
 当将命令添加到 VSPackage 时，必须指定它的位置显示、 时可用，和它的方式进行处理。  
   
 ## <a name="defining-commands"></a>定义命令  
- 若要定义新的命令，请在 VSPackage 项目中包含的 Visual Studio 命令表格 (.vsct) 文件。 如果你已使用 Visual Studio 包模板创建 VSPackage，该项目包括这些文件之一。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+ 若要定义新的命令，请在 VSPackage 项目中包含的 Visual Studio 命令表格 (.vsct) 文件。 如果你已使用 Visual Studio 包模板创建 VSPackage，该项目包括这些文件之一。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
  Visual Studio 将发现，以便它可以显示命令的所有.vsct 文件都合并。 因为这些文件是不同于二进制 VSPackage，则不需要为了查找的命令将包加载 Visual Studio。 有关详细信息，请参阅[如何 Vspackage 添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   

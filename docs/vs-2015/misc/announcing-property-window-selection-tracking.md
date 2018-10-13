@@ -1,7 +1,7 @@
 ---
 title: 宣布属性窗口选定内容跟踪 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: douge
-ms.openlocfilehash: bb2f2ceb7ed7faa3165f2346a0e0d14de1371166
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9639e0347689fc99e0b43c4b69394b522af984da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246735"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>宣布属性窗口选定内容跟踪
 如果你想要使用**属性**窗口或**属性**页面，例如，窗体、 文本或选择为其想要查看属性，则您必须完成深层次的了解你协调所选内容。 例如，您必须知道是否有单选或多个选择。 然后，你需要地宣布与 IDE 使用你所选内容类型 （单个或多个）<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。 此接口提供所需的信息**属性**窗口。  

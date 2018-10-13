@@ -1,7 +1,7 @@
 ---
 title: VSCT XML 架构条件属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 018c78d10af48a946ded543210404f397eee5ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1ee3d25fd7d08ea52c41ef24fdfe654bbf7a2eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246866"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>VSCT XML 架构条件属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSCT XML 架构条件属性](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-conditional-attributes)。  
-  
 条件属性可以应用于所有列表和项。 逻辑运算符和符号扩展表达式的计算结果为 true 或 false。 如果为 true，生成的输出中包含关联的列表或项。  
   
  标记扩展可以针对其他标记扩展或常量进行测试。 函数 Defined() 用于测试是否定义了特定名称，即使它没有任何价值。  

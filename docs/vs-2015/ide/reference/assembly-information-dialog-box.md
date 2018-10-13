@@ -1,7 +1,7 @@
 ---
 title: “程序集信息”对话框 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1a6af96afbba5e60d950947470f98e2c633caf24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8526dfbe970c43e1ab55534c13a1e6708b2b4693
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479260"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248022"
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[程序集信息对话框](https://docs.microsoft.com/visualstudio/ide/reference/assembly-information-dialog-box)。  
-  
   
 “程序集信息”对话框用于指定 [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 全局程序集特性的值，这些特性存储为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]，此文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）；对于 **，此文件位于“属性”**[!INCLUDE[csprcs](../../includes/csprcs-md.md)]下。 有关程序集特性的详细信息，请参阅[特性](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。  
   
@@ -70,7 +68,7 @@ ms.locfileid: "47479260"
  指定程序集中的类型是否可由 COM 使用。 对应到 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。  
   
 ## <a name="see-also"></a>请参阅  
- [应用程序页、项目设计器 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
+ [Application Page, Project Designer (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
  [特性](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
 
 

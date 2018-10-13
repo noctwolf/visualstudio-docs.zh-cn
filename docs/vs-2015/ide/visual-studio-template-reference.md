@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 模板参考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 36d475d125851455e461e4dc4aac1d84c062ae3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 825bc17d12b7a688e17a5957996b9fa9a1484e38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477073"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249933"
 ---
 # <a name="visual-studio-template-reference"></a>Visual Studio 模板参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 模板参考](https://docs.microsoft.com/visualstudio/ide/visual-studio-template-reference)。  
-  
 以下链接提供有关 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目和项模板的不同方面的参考信息。  
   
 ## <a name="in-this-section"></a>本节内容  

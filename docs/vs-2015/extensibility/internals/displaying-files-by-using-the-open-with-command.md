@@ -1,7 +1,7 @@
 ---
 title: 通过使用命令打开显示文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83160c6a55f73dc1dc81c602260ffa53830b3e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60098a53b23641152bc90125608e839e0308931d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471034"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263245"
 ---
 # <a name="displaying-files-by-using-the-open-with-command"></a>使用“通过命令打开”显示文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用打开命令显示文件](https://docs.microsoft.com/visualstudio/extensibility/internals/displaying-files-by-using-the-open-with-command)。  
-  
 一个项目可以询问要显示在 IDE**打开**对话框。 此请求会提示用户打开具有的标准编辑器选择的文件。 以下步骤介绍了此过程。  
   
 1.  项目调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>，将值指定为 OSE_UseOpenWithDialog`OSEOpenDocEditor`参数。  

@@ -1,14 +1,14 @@
 ---
 title: Visual C# 和 Visual Basic 入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
 - Visual Basic tutorial
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d526da8cb5013de7f56d5cc43b8ee2ec52014b47
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469407"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253768"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Visual C# 和 Visual Basic 入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Getting Started with Visual C# 和 Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)。  
-  
 无论你是否刚开始使用 Visual C# 或 Microsoft Visual Basic，都可以从本教程入手。 入门帮助是一系列向你介绍 Visual C# 和 Visual Basic 的连续课程。 您可以体验其中的乐趣，并编写一些很棒的软件。  
   
  若要了解 Visual C++，请参阅 [Visual C++ 资源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  

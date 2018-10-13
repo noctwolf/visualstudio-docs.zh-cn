@@ -1,7 +1,7 @@
 ---
 title: 为 RequireJS 自定义 IntelliSense |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04cffba0f7bd03cbb4fb2fe228174377871c35f8
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 7b1c32d0096742c2364e5ac3b8afe59b39152b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246709"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>为 RequireJS 自定义 IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
-  
 从 Visual Studio 2013 Update 4 开始，支持对常用 RequireJS JavaScript 文件和模块化加载程序的支持。 RequireJS 使定义代码模块之间的依赖关系和仅在需要时动态加载模块更容易了。 编写使用 RequireJS 的 JavaScript 代码时，会针对你从你的模块定义中引用的模块或通过调用 `require()` 从你的代码中引用的模块提供 IntelliSense 建议。  
   
  默认情况下，Visual Studio 支持非常基本的配置，以支持 RequireJS，但常见的做法是设置你自己的自定义配置设置（即为库定义别名）。 本主题介绍可用于自定义 Visual Studio 几种不同方法，以用于你的项目的独特设置。  

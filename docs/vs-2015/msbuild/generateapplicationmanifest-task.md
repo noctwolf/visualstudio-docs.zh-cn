@@ -1,7 +1,7 @@
 ---
 title: GenerateApplicationManifest 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b0533e5ca79bf9d2cb49149ecc80ac58c911d22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da5c9cb78ff4d3d9542c956a377f6342945d11a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245558"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[GenerateApplicationManifest 任务](https://docs.microsoft.com/visualstudio/msbuild/generateapplicationmanifest-task)。  
-  
   
 生成 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单或本机清单。 本机清单通过为组件定义唯一标识，并标识组成该组件的所有程序集和文件来描述组件。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单通过指示应用程序的入口点并指定应用程序安全级别来扩展本机清单。  
   

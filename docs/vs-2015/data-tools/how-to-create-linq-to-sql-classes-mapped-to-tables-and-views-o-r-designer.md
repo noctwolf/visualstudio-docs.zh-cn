@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建 LINQ to SQL 类映射到表和视图 （O-R 设计器） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1d9cebc980b62a5676ee4e65e5554086a273fa73
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550fc362cf1652df48e029461a4d5fbdc6f04006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471231"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269525"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何： 创建 LINQ to SQL 类映射到表和视图 （O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[如何： 创建 LINQ to SQL 类映射到表和视图 （O-R 设计器）](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer)。
-
 LINQ to SQL 类映射到数据库表和视图称为*实体类*。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 创建通过拖动表或视图从基于数据库表或视图的实体类**服务器资源管理器**/**数据库资源管理器**拖到[LINQ to SQL 中的工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)。 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]生成的类并应用特定 [！要启用 LINQ to SQL 属性 [！LINQ to SQL 功能 (数据通信和编辑功能<xref:System.Data.Linq.DataContext>)。 有关详细信息 [！LINQ to SQL 类，请参阅[LINQ to SQL 对象模型](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)。
 
 > [!NOTE]

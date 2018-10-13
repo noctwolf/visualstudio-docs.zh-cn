@@ -1,7 +1,7 @@
 ---
 title: 定义一个自定义建模工具箱项 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd2d7ff2b31e8975574cb6b2780a352faa1cd663
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252364"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定义自定义建模工具箱项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定义一个自定义建模工具箱项](https://docs.microsoft.com/visualstudio/modeling/define-a-custom-modeling-toolbox-item)。  
-  
 为了能够轻松地基于经常使用的模式创建一个元素或一组元素，你可以在 Visual Studio 中向建模图的工具箱添加新工具。 你可以将这些工具箱项分发给其他 Visual Studio 用户。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

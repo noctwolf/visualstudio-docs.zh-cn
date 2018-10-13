@@ -1,7 +1,7 @@
 ---
 title: 选择域特定语言解决方案模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cded93126f4e02aa5f0417819c7a76f17e0da6d5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 618a26740759431ffe9de2b6ed5b51ffb32ea69e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268473"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>选择域特定语言解决方案模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选择域特定语言解决方案模板](https://docs.microsoft.com/visualstudio/modeling/choosing-a-domain-specific-language-solution-template)。  
-  
 若要创建域特定语言解决方案，请选择一个特定于域的语言设计器向导中提供的解决方案模板。 通过选择最近似你想要创建的语言的模板，可以尽量减少您必须对起始解决方案进行的修改。  
   
  域特定语言设计器向导中提供了以下解决方案模板。  

@@ -1,7 +1,7 @@
 ---
 title: 'CA1415: P 调用正确声明 |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c80a68d19e03f7e4b04dae728dd2e9cc120eb370
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b1edb0d85d4f00696f03dce0d8bfb6152d6a5042
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587502"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251077"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415：正确声明 P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1415： 声明 P 调用正确](https://docs.microsoft.com/visualstudio/code-quality/ca1415-declare-p-invokes-correctly)。
-
 |||
 |-|-|
 |TypeName|DeclarePInvokesCorrectly|

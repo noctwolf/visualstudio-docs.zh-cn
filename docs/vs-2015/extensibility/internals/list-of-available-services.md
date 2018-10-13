@@ -1,7 +1,7 @@
 ---
 title: 可用服务列表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 caps.latest.revision: 50
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b09e58ee64eeb27940ea30f9a03429706b720cf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658a4406b16c3f79f3c485e62e6de8027bb35167
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248035"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[可用服务列表](https://docs.microsoft.com/visualstudio/extensibility/internals/list-of-available-services)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 和 Visual Studio SDK 支持以下服务。 某些程序包提供其自己的服务未在此处列出的 — 例如，语言服务不具有单个服务的 GUID。 必须使用的语言名称以在注册表中找到的语言服务的 GUID。  
   
  使用服务 Guid 此处列出或获取来自其他源 （例如，语言服务） 来获取的主要接口或基接口与每个服务所示。  

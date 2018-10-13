@@ -1,7 +1,7 @@
 ---
 title: 编辑器工厂 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645dd84b7a864a160e48582b92fbc44b8708309b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 97f53e944e140948b769c351fef6c9b91f4aa008
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246896"
 ---
 # <a name="editor-factories"></a>编辑器工厂
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑器工厂](https://docs.microsoft.com/visualstudio/extensibility/editor-factories)。  
-  
 编辑器工厂创建编辑器对象，并将其放在窗口框架中，称为物理视图。 它创建的文档数据和创建编辑器和设计器所需的文档视图对象。 创建 Visual Studio 核心编辑器和任何标准编辑器需要编辑器工厂。 也可以使用编辑器工厂创建的自定义编辑器。  
   
  通过实现创建编辑器工厂<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。 下面的示例演示如何实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>创建编辑器工厂：  

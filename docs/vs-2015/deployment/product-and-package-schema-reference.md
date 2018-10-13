@@ -1,7 +1,7 @@
 ---
 title: 产品和包架构引用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7812354ee1de5341838029e2198912840da6f0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6fb70a1dff0f166aabeaf0facdd4b031f3d4fb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271021"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[产品和包架构引用](https://docs.microsoft.com/visualstudio/deployment/product-and-package-schema-reference)。  
-  
 一个*产品文件*是一个描述所有所需的外部依赖关系的 XML 清单[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序。 外部依赖关系的示例包括[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]和 Microsoft 数据访问组件 (MDAC)。 包文件类似于产品文件，但用于安装依赖于区域性的组件的依赖项，如本地化程序集、 许可协议和文档。  
   
  产品和包文件包含的顶级`Product`或`Package`元素，其中每个包含下列元素。  
@@ -169,7 +167,7 @@ ms.locfileid: "47483195"
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)   
- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

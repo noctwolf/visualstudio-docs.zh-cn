@@ -1,7 +1,7 @@
 ---
 title: CreateCSharpManifestResourceName 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf5f98d4eddf7daa6099b97d805a50c59902572c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32aa7fdb5779d7ae042e8efa9652f25df70a2754
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247840"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CreateCSharpManifestResourceName 任务](https://docs.microsoft.com/visualstudio/msbuild/createcsharpmanifestresourcename-task)。  
-  
   
 从给定的 .resx 文件名或其他资源创建 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 样式的清单名称。  
   

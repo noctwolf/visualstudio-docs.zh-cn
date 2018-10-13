@@ -1,7 +1,7 @@
 ---
 title: 开发工作流应用程序面向.NET 3.0 或.NET 3.5 Framework |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 80695d4a31f80e02a52c49ec73f56351a3475947
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 658d1050cae8469d8b8b05e08f5d97815764de4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471991"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245305"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>开发面向 .NET 3.0 或 .NET 3.5 Framework 的工作流应用程序
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 提供了 [!INCLUDE[wfd1](../includes/wfd1-md.md)]，可用于创建面向 [!INCLUDE[wf](../includes/wf-md.md)] 的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] 应用程序。 该设计器使用人们熟悉的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 用户界面，用于以图形化的方式构造和调试工作流应用程序。  

@@ -1,7 +1,7 @@
 ---
 title: AsyncTaskMethodBuilder.ObjectIdForDebugger 属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,21 +15,19 @@ ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ad86204f141a8709d1500e9988f00922968a73e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba96ccc8d3da5c2c3788644db07e1eab992e03b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247529"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger 属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[AsyncTaskMethodBuilder.ObjectIdForDebugger 属性](https://docs.microsoft.com/visualstudio/extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property)。  
-  
 获取可用于唯一地标识调试器到此生成器的对象。  
   
- **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace**：<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

@@ -1,7 +1,7 @@
 ---
 title: 域特定语言入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 128c96c6bd400f74ac698df550fdba70ffec2eed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc0cf72be3fccbfdafd5ab3a7570ea6aac900f11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468566"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251974"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>域特定语言入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[域特定语言入门](https://docs.microsoft.com/visualstudio/modeling/getting-started-with-domain-specific-languages)。  
-  
 本主题说明中定义和使用用于 Visual Studio 的建模 SDK 创建的特定于域的语言 (DSL) 的基本概念。  
   
  如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  

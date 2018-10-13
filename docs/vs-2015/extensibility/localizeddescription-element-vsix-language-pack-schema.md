@@ -1,7 +1,7 @@
 ---
 title: LocalizedDescription 元素 （VSIX 语言包架构） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 766a1732-bbaf-4875-b276-feb42169633a
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e509573518ebf779cb15bc2859bacc61c336f7f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d136ed60417d51a3fd1cf536ad63e5602b44a26c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255718"
 ---
 # <a name="localizeddescription-element-vsix-language-pack-schema"></a>LocalizedDescription 元素 （VSIX 语言包架构）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[LocalizedDescription 元素 （VSIX 语言包架构）](https://docs.microsoft.com/visualstudio/extensibility/localizeddescription-element-vsix-language-pack-schema)。  
-  
 必须的。 提供的扩展插件的本地化的说明。  
   
 ## <a name="syntax"></a>语法  

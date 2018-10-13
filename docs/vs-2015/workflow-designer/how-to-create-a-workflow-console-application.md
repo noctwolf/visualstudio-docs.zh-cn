@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建工作流控制台应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8a6b38f6026e7a9bba1e668f47a37b32feaa2b7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad509e0e57f2c8996c13ffbe1d8f8890d2954dec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468932"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251662"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>如何：创建工作流控制台应用程序
 使用 [!INCLUDE[wf](../includes/wf-md.md)] 可为执行系统或人工流程创建工作流。 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 提供用于创建这些工作流的设计图面。 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 可用于在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内创建工作流，也可集成到重新承载该设计器的其他应用程序。  

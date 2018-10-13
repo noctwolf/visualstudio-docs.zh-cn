@@ -1,7 +1,7 @@
 ---
 title: 并发可视化工具标记 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e04a481a7f9465ade5d6ce48547665809a31fac7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63a4844f83961b2d060f9f9a574e0aaeb44991a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264943"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[并发可视化工具标记](https://docs.microsoft.com/visualstudio/profiling/concurrency-visualizer-markers)。  
-  
 在并发可视化工具中，标记是代表应用事件的图标。  通常，应用生成这些事件是为了指定应用程序中的阶段或匹配项。  事件可以由应用或应用所使用的库和运行时生成。  
   
 ## <a name="kinds-of-markers"></a>标记类型  

@@ -1,7 +1,7 @@
 ---
 title: 生成 ClickOnce 应用程序从命令行 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: beb799a75649b02a04dc4a0aae8672855b1094b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ab3c216cacfcaeaf73bdc4cc6bebdaf52233b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481891"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271020"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从命令行生成 ClickOnce 应用程序](https://docs.microsoft.com/visualstudio/deployment/building-clickonce-applications-from-the-command-line)。  
-  
 在[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，可以生成命令行中的项目，即使它们在集成的开发环境 (IDE) 中创建。 事实上，您可以重新生成与创建的项目[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]仅有的另一台计算机上[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]安装。 这允许你在重现生成使用自动化的过程，例如，在中心生成实验室或使用高级脚本编写技术生成项目本身的范围之外。  
   
 ## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 重新生成 ClickOnce 应用程序部署  
@@ -75,7 +73,7 @@ ms.locfileid: "47481891"
   
 2.  从 Windows**启动**菜单上，单击**所有程序**，然后**Microsoft Visual Studio**，然后**Visual Studio Tools**，则**Visual Studio 命令提示符**。 此时会在当前用户的根文件夹中打开命令提示符。  
   
-3.  在中**Visual Studio 命令提示符**，将当前目录更改为只生成上面的项目的位置。 例如，键入`chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
+3.  在中**Visual Studio 命令提示符**，将当前目录更改为只生成上面的项目的位置。 例如，键入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
   
 4.  若要删除现有文件中生成"以创建和发布[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]项目中，"类型`rmdir /s publish`。  
   
