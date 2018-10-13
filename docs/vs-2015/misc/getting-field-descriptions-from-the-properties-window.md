@@ -1,7 +1,7 @@
 ---
 title: 从属性窗口中获取字段说明 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 5c7ae9cd659fb317ff74639fa20659296e126d04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301504"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>从属性窗口中获取字段说明
 在“属性”  窗口底部，说明区域显示了与所选属性字段相关的信息。 默认情况下此功能处于开启状态。 如果你想要隐藏说明字段，右键单击“属性”  窗口并单击“说明” 。 执行此操作还会删除“菜单”窗口中“说明”  标题旁的复选标记。 你可以按照将“说明”  切换回开启状态的步骤来再次显示该字段。  
   
- 在说明字段中的信息来自<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>。 每个方法、接口、组件类等在类型库中均可拥有一个未本地化的 `helpstring` 特性。 **属性**窗口中检索该字符串从<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>。  
+ 说明字段中的信息来自 <xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>。 每个方法、接口、组件类等在类型库中均可拥有一个未本地化的 `helpstring` 特性。 **属性**窗口中检索该字符串从<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo.GetDocumentation%2A>。  
   
 ### <a name="to-specify-localized-help-strings"></a>指定本地化的帮助字符串  
   
@@ -37,7 +37,7 @@ ms.locfileid: "47476781"
   
      这些特性不同于包含在实际 .chm 文件帮助主题中的 `helpfile` 和 `helpcontext` 特性。  
   
- 若要检索为突出显示的属性名称，显示的说明信息**属性**窗口中调用<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A>处于选中状态的属性，指定所需`lcid`属性输出字符串。 在内部，<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2>查找中指定的.dll 文件`helpstringdll`属性并调用`DLLGetDocumentation`上该.dll 文件与指定的上下文和`lcid`属性。  
+ 若要检索为突出显示的属性名称，显示的说明信息**属性**窗口中调用<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A>处于选中状态的属性，指定所需`lcid`属性输出字符串。 在内部，<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> 查找 `helpstringdll` 特性中指定的 .dll 文件，并在该 .dll 文件上调用 `DLLGetDocumentation` 与指定的内容和 `lcid` 特性。  
   
  `DLLGetDocumentation` 的签名和实现为：  
   
@@ -60,9 +60,9 @@ STDAPI DLLGetDocumentation
   
  若要获取显示在“说明”  窗格中的字符串，为此你至少需要在类型库中指定 `helpstring` 特性。 如果你希望本地化这些字符串，则必须指定 `helpstringdll` （可选）特性和 `helpstringcontext` （必需）特性，并实现 `DLLGetDocumentation`。  
   
- 通过 idl 的 `helpstringcontext` 特性和 `DLLGetDocumentation`获取本地化的信息时，没有需要实现的其他接口。  
+ 通过 idl 的 `helpstringcontext` 特性和 `DLLGetDocumentation` 获取本地化的信息时，没有需要实现的其他接口。  
   
- 获取本地化的名称和属性说明的另一种方法是通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 此方法的实现的详细信息，请参阅[属性窗口字段和界面](../extensibility/internals/properties-window-fields-and-interfaces.md)。  
+ 获取某一属性的本地化名称和说明的另一方法是实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 有关此方法的实现的详细信息，请参阅 [Properties Window Fields and Interfaces](../extensibility/internals/properties-window-fields-and-interfaces.md)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>   

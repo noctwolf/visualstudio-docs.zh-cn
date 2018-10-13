@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中插入控件并修改其行为 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5807f503a76ba92383c3081bc0258da7f29d10fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca377bcb37b44e1545d0502289217d331a495fae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480164"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179369"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>在 XAML 设计器中插入控件并修改其行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[插入控件并修改其行为在 XAML 设计器中的](https://docs.microsoft.com/visualstudio/designers/insert-controls-and-modify-their-behavior-in-xaml-designer)。  
-  
 控件使用户能够与你的应用进行交互。 可以使用它们收集信息并执行操作（如对对象进行动画处理或查询数据源）。  
   
  **在本主题中：**  

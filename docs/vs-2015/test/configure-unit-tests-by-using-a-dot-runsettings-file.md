@@ -1,7 +1,7 @@
 ---
 title: 使用 .runsettings 文件配置单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e071364a6aaf7e83c554200548574c52b9b49ce5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255614"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用.runsettings 文件配置单元测试](https://docs.microsoft.com/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)。  
-  
 通过使用 *.runsettings 文件，可配置 Visual Studio 中的单元测试。 （文件名并不重要，前提是使用扩展名“.runsettings”。）例如，可以更改将运行测试的 .NET Framework、提供测试结果的目录以及在测试运行期间收集的数据。  
   
  如果你不希望执行任何特殊配置，则无需 *.runsettings 文件。 最常见的用途是自定义[代码覆盖率](../test/customizing-code-coverage-analysis.md)。  

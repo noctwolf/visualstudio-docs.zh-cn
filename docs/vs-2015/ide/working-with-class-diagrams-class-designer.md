@@ -1,7 +1,7 @@
 ---
 title: 使用类图（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cf7812d7d0047b71bac846e03ec15e7b3c92869f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8bf855566c24e91137d7aaeadeb2c65843eca9e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306704"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>使用类图（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用类图 （类设计器）](https://docs.microsoft.com/visualstudio/ide/working-with-class-diagrams-class-designer)。  
-  
 类图可帮助你理解他人编写的 （或你在很久以前编写的） 项目的类结构。 你可以使用它们来自定义、共享并向其他人展示项目信息。  
   
  展示项目信息的第一步是创建一个可显示要展示的内容的类图。 有关详细信息，请参阅[查看类型和关系（类设计器）](../ide/viewing-types-and-relationships-class-designer.md)。 你可以为项目创建多个类图，可用于显示项目的不同视图、选定的项目类型子集或选定的类型成员子集。  

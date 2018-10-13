@@ -1,7 +1,7 @@
 ---
 title: 自定义编辑器中的语法着色 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6a2165d51f77103ad7f6e69a20b5b73ef04429db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 62fd407bdb377c490d26287701cf989a64484773
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471140"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305690"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>自定义编辑器中的语法着色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[语法突出显示自定义编辑器中](https://docs.microsoft.com/visualstudio/extensibility/syntax-coloring-in-custom-editors)。  
-  
 Visual Studio 环境 SDK 编辑器，包括核心编辑器中，使用语言服务来标识特定的语法项并将其与给定的文档视图的指定颜色显示。  
   
 ## <a name="colorization-requirements"></a>着色要求  

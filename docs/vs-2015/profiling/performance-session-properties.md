@@ -1,7 +1,7 @@
 ---
 title: 性能会话属性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cc3832c0e5a1c4aed99de070b15b0b83ae1254f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306145"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能会话属性](https://docs.microsoft.com/visualstudio/profiling/performance-session-properties)。  
-  
 通过**性能会话**可以配置用于确定如何分析应用程序的设置。 它还存储为分析会话生成的报告。  
   
  **要求**  

@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令行将探查器附加到 .NET 服务以收集内存数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f380d84e5dd662008e233b7c7854d44d9b1e270
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 91f0568c2ed300a65b4506d4b9f7d62459ad7247
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306678"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 .NET 服务以收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用命令行附加到.NET 服务以收集内存数据 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-memory-data-by-using-the-command-line)。  
-  
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具将探查器附加 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务并收集内存数据。 可以收集有关内存分配数量和大小的数据，还可以收集有关内存对象生存期的数据。  
   
 > [!NOTE]

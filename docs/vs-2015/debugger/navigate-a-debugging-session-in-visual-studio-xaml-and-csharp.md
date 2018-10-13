@@ -1,7 +1,7 @@
 ---
 title: 导航调试会话中 Visual Studio （Xaml 和 C#） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c9aed98b7f2649aa5c62e930e1833b80d58b7ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306301"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[导航 （Xaml 和 C#） 的 Visual Studio 中调试会话](https://docs.microsoft.com/visualstudio/debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp)。  
-  
 本快速入门演示如何导航 Visual Studio 调试会话以及如何在会话中查看和更改程序状态。  
   
  本快速入门适用于刚开始使用 Visual Studio 进行调试的开发人员以及要详细了解 Visual Studio 调试会话中的导航的开发人员。 它并不讲解调试本身的技巧。 示例代码中的方法仅用于演示本主题中所述的调试过程。 这些方法不使用应用或函数设计的最佳做法。 事实上，你很快就会发现这些方法（以及应用本身）完全没什么太多作用。  

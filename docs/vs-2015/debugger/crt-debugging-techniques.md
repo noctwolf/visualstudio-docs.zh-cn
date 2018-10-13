@@ -1,7 +1,7 @@
 ---
 title: CRT 调试技术 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2743c7185f09f19353ca5fedab0327593dc33bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34d9f1036349798b56306c41eddbc4f71cfffac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238740"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CRT 调试技术](https://docs.microsoft.com/visualstudio/debugger/crt-debugging-techniques)。  
-  
 如果调试使用 C 运行库的程序，这些调试方法可能会有用。  
   
 ## <a name="in-this-section"></a>本节内容  

@@ -1,7 +1,7 @@
 ---
 title: 项目建模 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c8db8fdb-88c1-4b12-86fe-f3c30a18f9ee
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 58262c6d4edda1dd0be7d147ae21645b3305bfaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 324c870e42a9a9da37036979304e06637364c4d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229718"
 ---
 # <a name="project-modeling"></a>项目建模
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目建模](https://docs.microsoft.com/visualstudio/extensibility/internals/project-modeling)。  
-  
 提供的自动化，你的项目实现标准项目对象的下一步：<xref:EnvDTE.Projects>并`ProjectItems`集合;`Project`和<xref:EnvDTE.ProjectItem>对象; 以及对您的实现唯一剩余的对象。 Dteinternal.h 文件中定义这些标准的对象。 BscPrj 示例中提供了标准的对象的一个实现。 可以为模型中使用这些类来创建您自己的标准项目对象，突出显示的-同时与来自其他项目类型的项目对象。  
   
  自动化使用者能够调用将假定<xref:EnvDTE.Solution>("`<UniqueProjName>")`并<xref:EnvDTE.ProjectItems>(`n`) 其中 n 是用于获取解决方案中的特定项目的索引号。 进行此自动化调用会导致环境，以调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.GetProperty%2A>上相应的项目层次结构，将 VSITEMID_ROOT 作为 ItemID 参数和 VSHPROPID_ExtObject 作为 VSHPROPID 参数传递。 `IVsHierarchy::GetProperty` 返回`IDispatch`指针，指向提供核心的自动化对象`Project`接口，该已实现接口。  

@@ -1,7 +1,7 @@
 ---
 title: Visual C++ 代码片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f4286d7797f6c9a23d84f49a74d67113f9554da0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242757"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual c + + 代码片段](https://docs.microsoft.com/visualstudio/ide/visual-cpp-code-snippets)。  
-  
 在 Visual Studio 中，你可以使用代码片段将常用代码添加到 C++ 代码文件。 一般情况下，可用于使用代码片段的方法与 C# 中的方法大致相同，只是默认的代码片段集不同。  
   
  你可以在代码的特定位置添加代码片段（插入）或在所选的代码外侧使用代码片段。  

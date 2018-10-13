@@ -1,7 +1,7 @@
 ---
 title: 了解生成配置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d847b560b2dcedcd7b6841eccff17f40016c73fe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c7a6304683095b0a3db5c175535d7d28e38eecb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304130"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[了解生成配置](https://docs.microsoft.com/visualstudio/ide/understanding-build-configurations)。  
-  
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上依次选择“生成”和“配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。  
   
 > [!NOTE]

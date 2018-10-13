@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定 Visual Studio 复制文件的位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 52f19317bbfad963dd5bc4dc3e540640f9234c12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482043"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188651"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 复制文件的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定 Visual Studio 复制文件的位置](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-where-visual-studio-copies-the-files)。  
-  
 使用 ClickOnce 发布应用程序时，“`Publish Location`”属性指定放置应用程序文件和清单的位置。 这可以是文件路径或 FTP 服务器的路径。  
   
  您可以指定`Publish Location`上的属性**发布**页**项目设计器**，或使用发布向导。 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  

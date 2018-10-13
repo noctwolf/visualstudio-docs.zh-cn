@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用线程窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5004f437b55709bf6db0a59fc17b42894cc17e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1073383ef8964fd6c7d754918f7550179372f9f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477553"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306247"
 ---
 # <a name="how-to-use-the-threads-window"></a>如何：使用“线程”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试使用线程窗口的多线程应用](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window)。  
-  
 在中**线程**窗口中，您可以检查和使用的线程正在调试的应用程序中。  
   
  **线程**窗口包含其中每个行表示在应用程序中的线程的表。 默认情况下，该表列出应用程序中的所有线程，但您可以筛选列表以仅显示您感兴趣的线程。 每列都包含不同类型的信息。 您还可以隐藏某些列。 如果显示所有列，将从左到右显示以下信息：  

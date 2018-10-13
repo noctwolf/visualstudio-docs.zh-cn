@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令行通过探查器检测动态编译的 ASP.NET Web 应用程序并收集详细计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e815170640b57a667b71aac3e9e3526e2fe8b275
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 256324f198ce9592700c5c14367e87e240101d70
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302186"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用命令行通过探查器检测动态编译的 ASP.NET Web 应用程序并收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用命令行检测动态编译的 ASP.NET Web 应用程序和使用 Profiler 收集详细计时数据](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line)。  
-  
 本主题介绍如何使用检测分析方法，通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序收集详细计时数据。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: LC 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d151f99aec8f752a64e2dae965321e4ef54eb734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7331e5ad14c52b6056c7e636d2d48e7f86a9b5e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482203"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305794"
 ---
 # <a name="lc-task"></a>LC 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[LC 任务](https://docs.microsoft.com/visualstudio/msbuild/lc-task)。  
-  
   
 包装 LC.exe 文件，它可从 .licx 文件生成 .license 文件。 有关 LC.exe 的详细信息，请参阅 [Lc.exe (License Compiler)](http://msdn.microsoft.com/library/2de803b8-495e-4982-b209-19a72aba0460)（Lc.exe（许可证编译器））。  
   

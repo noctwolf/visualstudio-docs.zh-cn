@@ -1,7 +1,7 @@
 ---
 title: 项目配置为输出 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c2d4a8641189e7ff9d4190ee68a578f5dd51785
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5e871a2053bb14b30ad47955104edb5c3fe4658
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304117"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[输出的项目配置](https://docs.microsoft.com/visualstudio/extensibility/internals/project-configuration-for-output)。  
-  
 每一种配置可以支持一组生成输出项，如可执行文件或资源文件的生成进程。 这些输出项专用于用户，并可以放入链接的输出，例如可执行文件 （.exe、.dll、.lib） 和源文件 （.idl、.h 文件） 的相关的类型的组。  
   
  输出项便可通过提供<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2>方法和枚举与<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>方法。 当你想向输出项进行分组时，你的项目还应实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup>接口。  

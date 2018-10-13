@@ -1,7 +1,7 @@
 ---
 title: 如何：查看现有类型（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a65ef57bfe044a1856a81e054f058bb89946a84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479056"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305276"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 查看现有类型 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-view-existing-types-class-designer)。  
-  
 若要查看现有类型及其成员，请将其形状添加到类图。  
   
  你可以查看本地类型和引用类型。 本地类型存在于当前打开的项目中，是可读/写的。 被引用的类型存在于其他项目中或被引用程序集中，是只读的。  

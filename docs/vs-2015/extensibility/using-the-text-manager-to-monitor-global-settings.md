@@ -1,7 +1,7 @@
 ---
 title: 使用文本管理器监视全局设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 023e7671-cf65-419c-9bc1-3c4ee92aa436
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3d7f93d0b736548f9ee815e0870a89dbd30ea21d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc981ffd7f2e4c9ece1e559dd6b588d29edb59dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481266"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303300"
 ---
 # <a name="using-the-text-manager-to-monitor-global-settings"></a>使用文本管理器监视全局设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用文本管理器监视器全局设置](https://docs.microsoft.com/visualstudio/extensibility/using-the-text-manager-to-monitor-global-settings)。  
-  
 如果你实现核心编辑器，您必须监视到全局设置，所做的更改，因为这些更改可能会影响你的编辑器实例。 可以通过侦听由文本管理器引发的事件跟踪所做的更改。 例如，核心编辑器，如其文档数据对象中指定的外观或行为的一个组件的全局首选项时文本管理器存储此信息，并将其传递给所有受影响的客户端。  
   
 ## <a name="text-manager-functions"></a>文本管理器函数  

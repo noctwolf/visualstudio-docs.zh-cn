@@ -1,7 +1,7 @@
 ---
 title: 事件处理程序模型外部传播更改 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93b971c80cdf0c13567364d507f72027d62faae9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303194"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[事件处理程序传播更改外部模型](https://docs.microsoft.com/visualstudio/modeling/event-handlers-propagate-changes-outside-the-model)。  
-  
 在可视化和建模 SDK，你可以定义存储事件处理程序将更改传播到应用商店中，如非存储变量、 文件、 模型中其他存储，或其他外部资源[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展。 存储的事件处理程序在其中触发事件发生在事务结束后执行。 它们还可在撤消或重做操作。 因此，应用商店与规则不同，存储事件是最适用于更新商店外的值。 .NET 与事件不同，存储事件处理程序注册为侦听到类： 无需注册每个实例的单独处理程序。 有关如何选择不同的方式来处理更改之间的详细信息，请参阅[对的响应并传播更改](../modeling/responding-to-and-propagating-changes.md)。  
   
  图形表面和其他用户界面控件是可以由存储事件的外部资源的示例。  

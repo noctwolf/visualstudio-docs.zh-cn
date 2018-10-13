@@ -1,7 +1,7 @@
 ---
 title: 使用保存的 IntelliTrace 数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95672eb37c07042cafa3c57ba267f3c7f0a03580
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279092"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用保存的 IntelliTrace 数据](https://docs.microsoft.com/visualstudio/debugger/using-saved-intellitrace-data)。  
-  
 从 IntelliTrace 日志 (.iTrace) 文件开始调试时，转到应用程序执行中的特定点。 此文件可包含应用程序运行时 IntelliTrace 记录下的性能事件、异常、线程、测试步骤、模块和其他系统信息。  
   
  确保你有：  

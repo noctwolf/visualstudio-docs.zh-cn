@@ -1,7 +1,7 @@
 ---
 title: 在部署后诊断问题 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7979cdde9ec6411db83753b0006a2f55c4afb4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270590"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[部署后诊断问题](https://docs.microsoft.com/visualstudio/debugger/diagnose-problems-after-deployment)。  
-  
 要在使用 IntelliTrace 部署后诊断 ASP.NET Web 应用中的问题，请加入发行版本信息，以便 Visual Studio 自动查找调试 IntelliTrace 日志所需的正确源文件及符号文件。  
   
  如果正使用 Microsoft Monitoring Agent 控制 IntelliTrace，则你还需在 Web 服务器上设置应用程序性能监视。 这将在应用运行时记录诊断事件，并将这些事件保存到 IntelliTrace 日志文件。 然后你可以在 Visual Studio Enterprise（但不是 Professional 或 Community 版本）中查看事件，转到发生事件的代码，查看在该时间点记录的值，然后在已运行的代码中向前或向后移动。 在找到并解决问题后，重复生成、发布和监控发布这一循环，以便可以更早更快地解决将来的潜在问题。  
@@ -63,7 +61,7 @@ ms.locfileid: "47470612"
   
      ![设置符号路径中的生成定义 TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     有关符号的详细信息，请参阅[发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+     有关符号的详细信息，请参阅 [发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
 4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
   
@@ -156,7 +154,7 @@ ms.locfileid: "47470612"
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。  
   
 ## <a name="step-3-monitor-your-app"></a>步骤 3：监视你的应用  
- 在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅[监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+ 在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅 [监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
 ##  <a name="InvestigateEvents"></a> 步骤 4： 找出问题  
  你的开发计算机或另一台计算机上将需要 Visual Studio Enterprise，以查看记录的事件并使用 IntelliTrace 调试代码。 你还可以使用诸如 CodeLens、调试器映射和代码映射等工具帮助你诊断问题。  
@@ -209,7 +207,7 @@ ms.locfileid: "47470612"
   
      ![转到应用程序代码在性能事件](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     现在你可以查看其他记录的值和调用堆栈、单步执行代码，或者使用“IntelliTrace”  窗口在此性能事件期间调用的 [其他方法之间“及时”前后移动](../debugger/intellitrace.md) 。 [所有这些其他事件和 IntelliTrace 日志中的信息是什么？](../debugger/using-saved-intellitrace-data.md)[可以做些什么我在这里？](#WhatElse)[要了解有关性能事件的详细信息？](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
+     现在你可以查看其他记录的值和调用堆栈、单步执行代码，或者使用“IntelliTrace”  窗口在此性能事件期间调用的 [其他方法之间“及时”前后移动](../debugger/intellitrace.md) 。 [IntelliTrace 日志中所有这些其他事件和信息是什么？](../debugger/using-saved-intellitrace-data.md)[What else can I do from here?](#WhatElse)[想要了解有关性能事件的详细信息？](http://blogs.msdn.com/b/visualstudioalm/archive/2013/09/20/performance-details-in-intellitrace.aspx)  
   
 ### <a name="diagnose-an-exception"></a>诊断异常  
   
@@ -311,7 +309,7 @@ ms.locfileid: "47470612"
   
      有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：  
   
-    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号码的详细信息，请参阅[使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
     -   **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。  
   
@@ -371,7 +369,7 @@ ms.locfileid: "47470612"
      ![源代码管理中打开&#45;迁移](../debugger/media/ffr-openprojectfromsourcecontrol-migrated.png "FFR_OpenProjectFromSourceControl_Migrated")  
   
 ####  <a name="WhatWorkspace"></a> 问： 什么是工作区？  
- **答：** 你[工作区存储源的副本](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a)以便您可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
+ **答：** 你的 [工作区存储源的副本](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a) ，因此在签入工作之前，你可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。  
   
 ####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的此消息？  
  ![使用不受信任的符号路径进行调试？](../debugger/media/ffr-ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")  

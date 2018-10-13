@@ -1,7 +1,7 @@
 ---
 title: 常规选项卡上，线程属性对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2610e76710d2c3138d981e3a2df83345cac418bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 26eed1eb9d40fe78de34512f9e560ca59c19df12
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307698"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>“线程属性”对话框 ->“常规”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[常规选项卡上，线程属性对话框](https://docs.microsoft.com/visualstudio/debugger/general-tab-thread-properties-dialog-box)。  
-  
 使用此对话框中，若要了解有关特定线程的详细信息。 若要显示此对话框中，将焦点移至[线程视图](../debugger/threads-view.md)窗口中或打开[消息视图](../debugger/messages-view.md)展开一条消息。 在树中，选择任一线程节点，然后选择**属性**从**视图**菜单。  
   
  **Thread Properties**对话框包含一个窗格**常规**选项卡。以下设置将可用：  

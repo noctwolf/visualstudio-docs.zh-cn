@@ -1,7 +1,7 @@
 ---
 title: Visual Basic 中的 stop 语句 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fcb4e3018dad53ef869748a4394363dba78f71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45752b6b33a68e785dd9de028bd5c3de2930e964
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261906"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Visual Basic 中的 Stop 语句
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Basic 中的 Stop 语句](https://docs.microsoft.com/visualstudio/debugger/stop-statements-in-visual-basic)。  
-  
 Visual Basic Stop 语句提供了一种以编程方式设置断点的替换方法。 当调试器遇到 Stop 语句时，它将中断程序的执行（进入中断模式）。 C# 程序员可通过调用 System.Diagnostics.Debugger.Break 达到同样的效果。  
   
  通过编辑源代码来设置或移除 Stop 语句。 不能使用调试器命令设置或清除 Stop 语句，而对于断点却可以使用调试器命令。  

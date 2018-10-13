@@ -1,7 +1,7 @@
 ---
 title: 自定义参数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 21d85eb55e20eb27a67856cec1fea7f6fa539b41
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e8831517b7b679762e12356927b39e244a2a5dd1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305392"
 ---
 # <a name="custom-parameters"></a>自定义参数
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义参数](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-parameters)。  
-  
 启动向导后，自定义参数控制操作的向导。 相关的.vsz 文件提供了集成的开发环境 (IDE) 通过打包并启动该向导时作为一个字符串数组传递到向导的用户定义参数的数组。 向导然后分析的字符串数组，并使用这些信息来控制实际操作的向导。 以这种方式，具体取决于.vsz 文件的内容的功能可以自定义向导。  
   
  启动向导，上下文参数，但是，定义项目的状态。 有关详细信息，请参阅[上下文参数](../../extensibility/internals/context-parameters.md)。  

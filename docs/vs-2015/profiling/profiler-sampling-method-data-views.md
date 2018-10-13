@@ -1,7 +1,7 @@
 ---
 title: 探查器采样方法数据视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9ce2916705a50f01c781696770f78d4f5dff1e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f1ce001a1f5ee53c75001bb909d04eaa3d9222c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302128"
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Profiler 采样方法数据视图](https://docs.microsoft.com/visualstudio/profiling/profiler-sampling-method-data-views)。  
-  
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: “工具箱”->“数据”选项卡 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b844e3c9caf20cf0fff873c6485b8324a8dbe26b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4359cb1c4623442639552e71d1b1dc902e09963e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478401"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307646"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[工具箱中，数据选项卡](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-data-tab)。  
-  
   
 显示可添加到窗体和组件的数据对象。 创建具有关联设计器的项目时，将会显示“工具箱”的“数据”选项卡。 默认情况下，“工具箱”将出现在 Visual Studio 集成开发环境中；如果需要显示“工具箱”，请从“视图”菜单中选择“工具箱”。  
   

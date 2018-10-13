@@ -1,7 +1,7 @@
 ---
 title: 组件管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: be8a771c0f5de92664914f4f158db9054e321e19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45a2c4fb0f3fa54a2d2b89c8473961143ec3185c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280327"
 ---
 # <a name="component-management"></a>组件管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[组件管理](https://docs.microsoft.com/visualstudio/extensibility/internals/component-management)。  
-  
 Windows 安装程序中的任务的单位称为 （有时称为 WICs 或只是组件） 的 Windows 安装程序组件。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。  
   
  虽然可以使用多个产品创建 VSPackage 安装程序，这一讨论都假定使用 Windows Installer (.msi) 文件。 在创建您的安装程序时，必须正确地管理文件部署，以便正确引用计数在任何时候进行。 因此，您产品的不同版本将不会干扰或中断彼此中混合使用安装和卸载方案。  

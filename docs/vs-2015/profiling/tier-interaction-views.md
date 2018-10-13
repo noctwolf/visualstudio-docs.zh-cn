@@ -1,7 +1,7 @@
 ---
 title: “层交互”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b163642e27bfdc3e07c296eec72a6b61fa0bffc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9483767c3e16fb39bece2d61e8384d80de9d3026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257590"
 ---
 # <a name="tier-interaction-views"></a>层交互视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[层交互视图](https://docs.microsoft.com/visualstudio/profiling/tier-interaction-views)。  
-  
 层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 服务与数据库进行通信。 仅针对同步函数调用收集数据。 可以在所有分析方法中包含层交互数据。  
   
  **要求**  

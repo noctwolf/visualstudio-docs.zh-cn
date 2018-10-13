@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6aa3fdcbdb40dca34e17b675478b23d1fd2eef6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6f5a060776126756b104b7f24c7b216ac881d1b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302700"
 ---
 # <a name="legacy-language-service-overview"></a>旧版语言服务概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务概述](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-overview)。  
-  
 语言服务都会提供使您可以实现特定的编辑器支持[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]功能。 托管包框架 (MPF) 语言服务类提供完全支持对常用功能和对其他功能的部分支持。  
   
 ## <a name="fully-supported-features-in-the-mpf"></a>MPF 中完全支持的功能  

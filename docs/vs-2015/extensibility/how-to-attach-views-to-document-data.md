@@ -1,7 +1,7 @@
 ---
 title: 如何： 附加文档数据的视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f92c0838-45be-42b8-9c55-713e9bb8df07
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 423634a98b09af8d549442cb8f24964228496227
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cbba98f26417d7f980734fc1a948b10d54f2437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478826"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292872"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>如何： 附加文档数据的视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 将附加到文档数据的视图](https://docs.microsoft.com/visualstudio/extensibility/how-to-attach-views-to-document-data)。  
-  
 如果您有一个新的文档视图，您可能能够将其附加到现有的文档数据对象。  
   
 ### <a name="to-determine-if-you-can-attach-a-view-to-an-existing-document-data-object"></a>若要确定是否可以将视图附加到现有的文档数据对象  

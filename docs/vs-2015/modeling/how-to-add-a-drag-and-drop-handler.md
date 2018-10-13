@@ -1,7 +1,7 @@
 ---
 title: 如何： 添加拖放处理程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 503231fbae306c198e7c1e728f7c2b63794289b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280522"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 添加拖放处理程序](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-drag-and-drop-handler)。  
-  
 可以将拖放事件的处理程序添加到 DSL，以便用户可以将项从其他关系图或 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的其他部分拖动到关系图上。 还可以添加诸如双击事件的处理程序。 拖放和双击处理程序在一起，称为*笔势处理程序*。  
   
  本主题讨论了在其他关系图上发起的拖放笔势。 对于单个关系图内的移动和复制事件，请考虑另一种方法：定义 `ElementOperations` 的子类。 有关详细信息，请参阅[自定义复制行为](../modeling/customizing-copy-behavior.md)。 你可能还可以自定义 DSL 定义。  

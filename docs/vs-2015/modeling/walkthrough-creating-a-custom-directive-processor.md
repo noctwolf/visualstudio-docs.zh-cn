@@ -1,7 +1,7 @@
 ---
 title: 演练： 创建自定义指令处理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d84fd8f389db771c1cbabbc3c5b830837703808e
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 6e9a46f5f686182fe78164499a8370e96ba87a76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274685"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建自定义指令处理器](https://docs.microsoft.com/visualstudio/modeling/walkthrough-creating-a-custom-directive-processor)。  
-  
 指令处理器 * 通过将代码添加到工作*生成转换类*。 如果您调用*指令*从*文本模板*，文本模板中编写的代码的其余部分可以依赖于该指令提供的功能。  
   
  您可以编写自己的自定义指令处理器。 利用它可以自定义文本模板。 若要创建自定义指令处理器，需要创建一个从 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 继承的类。  

@@ -1,7 +1,7 @@
 ---
 title: 图形日志文档 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385744b280bbd8069acef4da0a36ae9bd9716fcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b35cd0a0063ab02af0ed0831079439926b446794
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472171"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261555"
 ---
 # <a name="graphics-log-document"></a>图形日志文档
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图形日志文档](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-log-document)。  
-  
 图形日志文档是对你的应用在图形诊断会话下运行时发生的图形事件的记录。 在记录后，你可以在 Visual Studio 图形分析器中检查日志，以诊断呈现和性能问题。  
   
  这是图形日志文档在图形分析器中的外观：  
@@ -86,7 +84,7 @@ ms.locfileid: "47472171"
   
 |属性|描述|  
 |--------------|-----------------|  
-|**Path**|.vsglog 文件的路径。 **注意：** 下旧版捕获，此属性是未使用。|  
+|**路径**|.vsglog 文件的路径。 **注意：** 下旧版捕获，此属性是未使用。|  
   
  **模块信息**  
  列出有关在捕获会话期间由应用加载的动态链接库 (DLL) 的名称和版本。  
@@ -108,7 +106,7 @@ ms.locfileid: "47472171"
 |属性|描述|  
 |--------------|-----------------|  
 |**上次修改日期/时间**|应用的生成日期和时间。|  
-|**Path**|应用的路径。|  
+|**路径**|应用的路径。|  
 |**进程 ID**|已提供给应用的进程 ID。|  
 |**Version**|应用版本。|  
   

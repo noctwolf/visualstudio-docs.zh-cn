@@ -1,7 +1,7 @@
 ---
 title: 在中断模式下的表达式计算 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a74119edfb390dab0a8ce0fddd96046ca80ad92d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03be07a19ac95eaec64fbdec73f92742c02ad191
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239508"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断模式中的表达式计算
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[中断模式中的表达式计算](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-in-break-mode)。  
-  
 以下介绍调试器处于中断模式下，必须执行表达式计算时，会发生的过程。  
   
 ## <a name="expression-evaluation-process"></a>表达式评估过程  

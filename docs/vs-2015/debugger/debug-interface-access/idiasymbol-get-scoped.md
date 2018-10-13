@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_scoped |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d40a4116eb950710be181a3b5ca4ca0f8e6c367
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05de40c2dd15a3aae23ae9a09cd63c7511ab6a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477030"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293369"
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiasymbol:: Get_scoped](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-scoped)。  
-  
 检索指定用户定义数据类型是否显示在非全局的词法范围内的标志。  
   
 ## <a name="syntax"></a>语法  

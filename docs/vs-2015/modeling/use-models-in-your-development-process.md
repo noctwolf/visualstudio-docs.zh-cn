@@ -1,14 +1,14 @@
 ---
 title: 在您的开发过程中使用模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
@@ -16,18 +16,16 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ff2526d6ff7bb19448674aed043848e760b85e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285995"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在您的开发过程中使用模型](https://docs.microsoft.com/visualstudio/modeling/use-models-in-your-development-process)。  
-  
 在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅[第 9 频道视频： 通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。  
   
  若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

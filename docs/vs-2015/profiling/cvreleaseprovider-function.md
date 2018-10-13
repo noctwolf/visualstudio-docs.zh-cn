@@ -1,7 +1,7 @@
 ---
 title: CvReleaseProvider 函数 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e62e897b56407ab985125361700da60d4e0fdcd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5b644dfdb469d84b90a1a0d7d59651fbad2460b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300776"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CvReleaseProvider 函数](https://docs.microsoft.com/visualstudio/profiling/cvreleaseprovider-function)。  
-  
 发布标记提供程序。 发布标记提供程序不会影响此提供程序以前创建的标记系列。 标记系列必须由 CvReleaseMarkerSeries 调用单独发布。 提供程序发布失败会导致内存泄漏。  
   
 ## <a name="syntax"></a>语法  

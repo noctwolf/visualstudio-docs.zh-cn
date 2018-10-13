@@ -1,7 +1,7 @@
 ---
 title: 将新记录插入数据库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,20 +23,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4413949061a4bc48990e9935fe9dd60252cdde0b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297396"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[新记录插入数据库](https://docs.microsoft.com/visualstudio/data-tools/insert-new-records-into-a-database)。  
   
-  
-若要向数据库中插入新记录，可以使用`TableAdapter.Update`方法，或 TableAdapter 的 DBDirect 方法之一 (具体而言`TableAdapter.Insert`方法)。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/tableadapter-overview.md)。  
+若要向数据库中插入新记录，可以使用`TableAdapter.Update`方法，或 TableAdapter 的 DBDirect 方法之一 (具体而言`TableAdapter.Insert`方法)。 有关详细信息，请参阅 [TableAdapter Overview](../data-tools/tableadapter-overview.md)。  
   
  如果你的应用程序不使用 Tableadapter，可以使用命令对象 (例如， <xref:System.Data.SqlClient.SqlCommand>) 若要将新记录插入数据库中。  
   

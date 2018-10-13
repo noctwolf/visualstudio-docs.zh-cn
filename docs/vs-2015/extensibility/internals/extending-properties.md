@@ -1,7 +1,7 @@
 ---
 title: 扩展属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9db64799426eea6aeaecdd0890da683a7597a129
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be53c59cc0a1baf5331502c3079ee741751c53eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303701"
 ---
 # <a name="extending-properties"></a>扩展属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展属性](https://docs.microsoft.com/visualstudio/extensibility/internals/extending-properties)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **属性**时段 COM 和 COM + 组件的通用属性浏览器，并且支持所有[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]产品。 **属性**窗口适用于`ITypeInfo`类型信息和 COM + 元数据以列出在集成的开发环境 (IDE) 中的任何其他窗口中的当前所选对象的设计时属性。  
   
  **属性**窗口中，也可以通过在键盘上按 F4 或选择打开**属性窗口**上**视图**菜单中，用于查看和编辑独立于配置的、 设计时属性和所选对象的事件。 解决方案和项目，与关联的依赖于配置的属性显示在[属性页](../../extensibility/internals/property-pages.md)。 有关详细信息，请参阅[NIB： 项目属性](http://msdn.microsoft.com/en-us/fb126574-24ad-4c96-9b2b-6e1f3879ba50)，[管理配置选项](../../extensibility/internals/managing-configuration-options.md)，并[NIB： 项目管理在项目中](http://msdn.microsoft.com/en-us/762e606b-7f44-4b66-97a1-e30a703654a0)。  
@@ -96,5 +94,5 @@ ms.locfileid: "47468755"
  介绍了如何[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有效地管理等的引用、 数据连接、 文件夹和文件所需的开发工作通过解决方案和项目项。  
   
  [扩展 Visual Studio 的其他部分](../../extensibility/extending-other-parts-of-visual-studio.md)  
- 说明如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]服务，以创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。
+ 说明如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 服务创建匹配 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]的其余部分的 UI 元素。
 

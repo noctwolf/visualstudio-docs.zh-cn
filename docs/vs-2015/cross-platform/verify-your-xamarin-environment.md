@@ -1,7 +1,7 @@
 ---
 title: 验证 Xamarin 环境 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,20 +10,18 @@ ms.assetid: fd39882e-06d1-4b39-80d2-4d07b6e4f8f5
 caps.latest.revision: 15
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6c3d629f4b5a634c1dbc2c55f44db1db144e9a81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66428a7f06aee5449191a13e2712ae119daffb0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243485"
 ---
 # <a name="verify-your-xamarin-environment"></a>验证 Xamarin 环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[验证 Xamarin 环境](https://docs.microsoft.com/visualstudio/cross-platform/verify-your-xamarin-environment)。  
   
-  
-安装程序完成安装后（请参阅） [Setup and install](../cross-platform/setup-and-install.md)，请花几分钟时间验证体验 Xamarin 开发所需的一切就绪。  
+安装程序完成安装后（详见[设置和安装](../cross-platform/setup-and-install.md)），请花几分钟时间验证 Xamarin 开发的体验准备事项是否均已就绪。  
   
  完成这些验证后，就可执行下面的一个或两个演练：  
   

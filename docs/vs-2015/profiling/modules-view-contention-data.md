@@ -1,7 +1,7 @@
 ---
 title: “模块”视图：争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccd57d1bbc81c44ce1b6130613e9752f2fc55b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4461795294df4824d2af2c8ada02e2f5929e0c47
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305990"
 ---
 # <a name="modules-view---contention-data"></a>“模块”视图：争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模块视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/modules-view-contention-data)。  
-  
 争用数据的“模块”视图显示按分析数据中采样的模块分组的并发数据。 每个模块都是一个层次结构树的根。 模块节点下列出其中发生争用事件的模块的函数。  
   
  如果函数在争用事件发生时正在执行自己的代码，即函数位于调用堆栈的顶部，则执行的源行和指令地址会在函数节点下列出。 因为在执行行或指令时会为源行或指令指针收集数据，所以非独占和独占值对于行数据和指令数据始终是相同的。  

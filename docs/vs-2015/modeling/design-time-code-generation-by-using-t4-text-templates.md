@@ -1,7 +1,7 @@
 ---
 title: 使用 T4 文本模板生成设计时代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 12551e10640b522f1405cb6a4fa0476f4f7b48c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268328"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 T4 文本模板生成设计时代码](https://docs.microsoft.com/visualstudio/modeling/design-time-code-generation-by-using-t4-text-templates)。  
-  
 使用设计时 T4 文本模板，你可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是包含有关应用程序需求的关键信息的文件或数据库。  
   
  例如，你可能具有一个将工作流定义为表或关系图的模型。 可以从该模型生成执行工作流的软件。 当用户的要求变化时，可以很容易地与用户讨论新的工作流。 从工作流重新生成代码比手动更新代码更可靠。  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio IDE 64 位支持 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3215cccf956e0d9c4bf80e70dfa377eef823283d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89ccc29b35c7495857d54c5baa4ea6b0667ae5fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480554"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259774"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio IDE 64 位支持](https://docs.microsoft.com/visualstudio/ide/visual-studio-ide-64-bit-support)。  
-  
 可使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中对 64 位平台的支持，请参阅 [64 位应用程序](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
   
 ## <a name="deploying-a-64-bit-application"></a>部署 64 位应用程序  

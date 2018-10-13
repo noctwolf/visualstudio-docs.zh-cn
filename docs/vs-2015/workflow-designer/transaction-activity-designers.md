@@ -1,7 +1,7 @@
 ---
 title: 事务活动设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 3bd211dbc2f9bf10eb00092dcd7501a20c724afc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 85afc69eae7e2478be9d98ec714048509bac3236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266144"
 ---
 # <a name="transaction-activity-designers"></a>事务活动设计器
 各事务活动设计器用于创建和配置事务性活动，如补偿和确认。 本节中所包含并在下表中列出的各主题介绍如何使用 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 活动和模板设计器。  

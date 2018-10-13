@@ -1,7 +1,7 @@
 ---
 title: 调试器可扩展性入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f8f056ed8fff53eb166b37f2adba9daa17f12916
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 321c4790decb81d91ef57afe6bedffcd89a179e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304963"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>调试器可扩展性入门
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试器可扩展性入门](https://docs.microsoft.com/visualstudio/extensibility/debugger/getting-started-with-debugger-extensibility)。  
-  
 [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]提供的信息，必须具有创建和自定义用于调试程序中的调试器组件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]环境。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 调试已添加派生自上以前执行的测试的广泛可用性改进[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器。 可以使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试单步执行的多语言应用程序，也可以实现实时上调试应用程序和多语言解决方案时编辑的变量。  

@@ -1,7 +1,7 @@
 ---
 title: 从 Visual Studio 2010 升级编码的 UI 测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a82102259212743fe11a9936f3b24dee85340ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298936"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 Visual Studio 2010 升级编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/upgrading-coded-ui-tests-from-visual-studio-2010)。  
-  
 在 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 中创建的包含编码 UI 测试的测试项目在 Visual Studio 2012 中打开时会自动修复。 如果测试项目已签入源控件中，则会签出项目文件进行此修复。 修复后，这些包含编码 UI 测试的测试项目既可用于 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1，也可用于 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]。  
   
  **要求**  

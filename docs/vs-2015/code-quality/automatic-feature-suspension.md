@@ -1,7 +1,7 @@
 ---
 title: 自动功能挂起 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,15 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 281a4cbfb7bb1564af698cf4e745d56207f3e58e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8aee8f4ef46d3621bf569b260d943180abd7ad5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471213"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178173"
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[自动功能挂起](https://docs.microsoft.com/visualstudio/code-quality/automatic-feature-suspension)。
-
 如果你可用系统内存降至 200 MB 或更少，Visual Studio 代码编辑器中显示以下消息。
 
  ![警报文本中挂起完整解决方案分析](../code-quality/media/fsa-alert.png "FSA_Alert")
@@ -49,7 +46,7 @@ ms.locfileid: "47471213"
  默认情况下，完整解决方案分析适用于 Visual Basic 启用和禁用对于 Visual C#。 但是，内存不足的情况，在完整解决方案分析会自动禁用 Visual Basic 和 Visual C#，而不考虑其设置选项对话框中。 但是，您可以重新启用完整解决方案分析通过选择**重新启用**中的信息栏出现时，通过选择按钮**启用完整解决方案分析**复选框，在选项对话框中，或通过重新启动 Visual Studio。 选项对话框始终显示当前的完整解决方案分析设置。 有关详细信息，请参阅[如何： 启用和禁用完整解决方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
 
 ## <a name="gc-low-latency-disabled"></a>禁用 GC 低延迟
- 若要重新启用 GC 低延迟模式，请重新启动 Visual Studio。  默认情况下，Visual Studio 使 GC 低延迟模式，只要键入以确保您键入的内容不会阻止任何 GC 操作。 但是，如果内存不足的情况导致 Visual Studio 显示自动暂停警告，为该会话禁用 GC 低延迟模式。 重新启动 Visual Studio 将重新启用默认 GC 行为。 有关详细信息，请参阅<xref:System.Runtime.GCLatencyMode>。
+ 若要重新启用 GC 低延迟模式，请重新启动 Visual Studio。  默认情况下，Visual Studio 使 GC 低延迟模式，只要键入以确保您键入的内容不会阻止任何 GC 操作。 但是，如果内存不足的情况导致 Visual Studio 显示自动暂停警告，为该会话禁用 GC 低延迟模式。 重新启动 Visual Studio 将重新启用默认 GC 行为。 有关详细信息，请参阅 <xref:System.Runtime.GCLatencyMode> 。
 
 ## <a name="visual-studio-caches-flushed"></a>Visual Studio 缓存刷新
 

@@ -1,7 +1,7 @@
 ---
 title: 自定义用户界面 (源代码管理 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e544408f4cea3e9ec4e388ab76f4224abd7aa69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303930"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义用户界面 (源代码管理 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-user-interface-source-control-vspackage)。  
-  
 VSPackage 通过 Visual Studio 命令表格 (.vsct) 文件中声明其菜单项，则其默认状态。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 在加载 VSPackage 之前为其默认状态显示的菜单项。 随后，<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  
   
  VSPackage 可以设置注册表项，因此可以根据命令用户界面 (UI) 上下文自动加载 VSPackage，尽管通常在进行源代码管理按需而不是只需切换到特定的 UI 上下文应该加载 VSPackage。 有关 AutoLoadPackages 注册表项的详细信息，请参阅[管理 Vspackage](../../extensibility/managing-vspackages.md)。  

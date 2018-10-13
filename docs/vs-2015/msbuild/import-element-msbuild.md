@@ -1,7 +1,7 @@
 ---
 title: Import 元素 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83c58062df96d8d5ecae1c287aa3f14658af1e89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 575fd2e83abd309b67e6e1684fd38b8d5c9953ac
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248464"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Import 元素 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/import-element-msbuild)。  
-  
   
 将一个项目文件的内容导入其他项目文件中。  
   

@@ -1,7 +1,7 @@
 ---
 title: UML 建模扩展性的 API 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,19 +16,17 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: db042d59ce5f7363d9ed45e2baebbea45d3a0de4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7109c85781c6a69e9b2db9f1f8734b9f2d1efc46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301323"
 ---
 # <a name="api-reference-for-uml-modeling-extensibility"></a>UML 建模扩展性的 API 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 建模扩展性的 API 参考](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-uml-modeling-extensibility)。  
-  
-可以编写程序代码来读取和修改你使用 Visual Studio 创建的模型。 API 参考提供了特定类的相关信息来帮助你进行工作。 有关面向任务的详细信息，请参阅下的主题[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+可以编写程序代码来读取和修改你使用 Visual Studio 创建的模型。 API 参考提供了特定类的相关信息来帮助你进行工作。 有关面向任务的详细信息，请参阅下的主题[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="assemblies"></a>程序集  
   

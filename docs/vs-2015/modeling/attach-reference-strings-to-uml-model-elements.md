@@ -1,7 +1,7 @@
 ---
 title: 将引用字符串附加到 UML 模型元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0d917bf0553fbea06c73d3f4ce57f01b3f99a36d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4f62c99f09638127f42f1f8e36594e60a58d3b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243849"
 ---
 # <a name="attach-reference-strings-to-uml-model-elements"></a>将引用字符串附加到 UML 模型元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将引用字符串附加到 UML 模型元素](https://docs.microsoft.com/visualstudio/modeling/attach-reference-strings-to-uml-model-elements)。  
-  
 你可以编写代码以将任意字符串附加到模型元素。 例如，字符串可以是 URI、计算的缓存结果或对另一个模型中的某个元素的 ModelBus 引用。 每个字符串都包含在 IReference 对象中。 可以向各个模型元素附加任意数量的 IReference 对象。  
   
  每个 IReference 对象都有一个名称。 可以使用此名称指示如何解释引用值。 例如，你可以将名称设置为“URI”，以指示应将该值解释为 URI。 有一些被建模工具所使用的预定义引用名称值。  

@@ -1,7 +1,7 @@
 ---
 title: 选项和选项页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97bf59649d0f2099261bef7a3e425f2fe7fc553e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261035"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项和选项页](https://docs.microsoft.com/visualstudio/extensibility/internals/options-and-options-pages)。  
-  
 单击**选项**上**工具**菜单打开**选项**对话框。 在此对话框中选项统称为选项页。 在导航窗格中的树控件包括选项类别和每个类别都有选项页。 当选择一个页面时，其选项将显示在右窗格中。 这些页面，您可以更改的值确定的 VSPackage 状态的选项。  
   
 ## <a name="support-for-options-pages"></a>选项页的支持  

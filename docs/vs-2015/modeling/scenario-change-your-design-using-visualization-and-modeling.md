@@ -1,14 +1,14 @@
 ---
 title: 方案： 更改设计使用可视化和建模 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - code visualization [Visual Studio ALM]
 - modeling software [Visual Studio ALM]
@@ -22,21 +22,19 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 67fd284bca4e81c36cd6e7e185b9c4712f07e6b6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 220666e6fe12e6a5ab3bbaf1238c19d761427cea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480381"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303038"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[方案： 使用可视化和建模更改设计](https://docs.microsoft.com/visualstudio/modeling/scenario-change-your-design-using-visualization-and-modeling)。  
-  
 通过使用 Visual Studio 中的可视化和建模工具，确保你的软件系统满足用户的需求。 使用统一建模语言 (UML) 关系图、代码图、层关系图和类图等工具执行以下操作：  
   
- 若要查看支持每个工具的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持每个工具的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 -   阐明用户需求和业务流程。  
   
@@ -292,7 +290,7 @@ ms.locfileid: "47480381"
   
 |**关系图**|**描述**|  
 |-----------------|-------------------|  
-|*层关系图*<br /><br /> 请参阅：<br /><br /> -   [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [层关系图： 参考](../modeling/layer-diagrams-reference.md)<br />-   [层关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />-   [使用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射中的项目到层关系图[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案抽象组调用*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|  
+|*层关系图*<br /><br /> 请参阅：<br /><br /> -   [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [层关系图： 参考](../modeling/layer-diagrams-reference.md)<br />-   [层关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />-   [使用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 层关系图会将 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项目整理并映射到名为 *“层”* 的抽象组中。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|  
   
  例如，下面的层关系图描述了各个层之间的依赖关系以及每个层关联的项目数：  
   
@@ -306,7 +304,7 @@ ms.locfileid: "47480381"
   
 -   [定义生成过程](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
--   [使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+-   [使用封闭签入生成过程以验证更改](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
 -   [自定义生成过程模板](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
@@ -347,9 +345,9 @@ ms.locfileid: "47480381"
   
 -   [链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)  
   
--   [图表、 仪表板和 Visual Studio ALM 的报表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+-   [适用于 Visual Studio ALM 的图表、仪表板和报表](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
--   [使用项目创建积压工作和任务](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+-   [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ###  <a name="TestValidateCheckInCode"></a> 测试、验证和签入代码  
  当团队完成每个任务时，他们会将其代码签入 Team Foundation 版本控制，如果他们忘记这样做，则会收到来自 Team Foundation Server 的提醒。 在 Team Foundation Server 接受团队的签入前，团队会运行单元测试和层验证以根据测试用例和设计来验证代码。 他们使用 Team Foundation Server 来定期运行生成、自动单元测试和层验证。 这有助于确保代码满足以下条件：  
@@ -650,7 +648,7 @@ ms.locfileid: "47480381"
   
      要快速了解编译的代码，请创建一个空白代码图，然后将程序集文件或二进制文件拖动到该代码图图面上。  
   
--   要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
+-   要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
   
 -   为了帮助你浏览代码图，请重新排列布局，使其适合你要执行的各类任务。  
   

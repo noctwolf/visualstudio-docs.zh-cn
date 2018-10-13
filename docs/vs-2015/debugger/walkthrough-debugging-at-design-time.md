@@ -1,7 +1,7 @@
 ---
 title: 演练： 在设计时调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd63fca37bbb55f99ecb99a18596c128451bd807
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4ff1d0e1c155784bd6116be2bc6eb63e6c53d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227223"
 ---
 # <a name="walkthrough-debugging-at-design-time"></a>演练：在设计时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 在设计时调试](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-at-design-time)。  
-  
 可以使用 Visual Studio**即时**窗口在你的应用程序未运行时执行函数或子例程。 如果函数或子例程包含断点，Visual Studio 将在相应的点中断执行。 随后即可使用调试器窗口检查程序状态。 此功能称为在设计时调试。  
   
  下面的过程演示如何使用此功能。  

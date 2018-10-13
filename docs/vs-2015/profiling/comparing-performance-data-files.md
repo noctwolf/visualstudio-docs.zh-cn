@@ -1,7 +1,7 @@
 ---
 title: 比较性能数据文件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd1c93942282c8a5cb3baf9fdf007a0ba55e3ebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65543b917a35ec50c3feadbfa4c8db917f4aeb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481897"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306158"
 ---
 # <a name="comparing-performance-data-files"></a>比较性能数据文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[比较性能数据文件](https://docs.microsoft.com/visualstudio/profiling/comparing-performance-data-files)。  
-  
 凭借分析工具数据文件比较功能，可以选择两个报表文件（.VSP 或 .VSP）文件，然后生成显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进。  
   
  来自 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具中的数据文件比较报告将一个分析数据文件中的分析结果与另一个数据文件中的基线分析的结果进行比较。 必须已使用同一分析方法生成了这两个数据文件。 将所分析的比较的报告另存为 .vsps 文件。  

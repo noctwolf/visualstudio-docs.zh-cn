@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0256ea6242a01cd8e18017889dc450bc60e6fc82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4af63679437e0b128472d084a55f1ef24a93bc4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301842"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[WriteLinesToFile 任务](https://docs.microsoft.com/visualstudio/msbuild/writelinestofile-task)。  
-  
   
 将指定项的路径写入指定的文本文件。  
   
@@ -47,7 +45,7 @@ ms.locfileid: "47482204"
 |`File`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要将项写入到的文件。|  
 |`Lines`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要写入到文件的项。|  
 |`Overwrite`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，该任务覆盖文件中的任何现有内容。|  
-|`Encoding`|可选 `String` 参数。<br /><br /> 选择字符编码，例如“Unicode”。  另请参见<xref:System.Text.Encoding>。|  
+|`Encoding`|可选 `String` 参数。<br /><br /> 选择字符编码，例如“Unicode”。  另请参阅 <xref:System.Text.Encoding>。|  
   
 ## <a name="remarks"></a>备注  
  如果 `Overwrite` 为 `true`，创建一个新文件，向其中写入内容，然后关闭文件。 如果目标文件已存在，则覆盖该文件。 如果 `Overwrite` 为 `false`会将内容追加到文件中，如果目标文件还不存在则创建该文件。  

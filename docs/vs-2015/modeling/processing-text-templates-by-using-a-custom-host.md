@@ -1,7 +1,7 @@
 ---
 title: 使用自定义宿主处理文本模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 62fd774744c9bb9184d3dcc25eb7827f93feb223
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303454"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>使用自定义宿主处理文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用自定义宿主处理文本模板](https://docs.microsoft.com/visualstudio/modeling/processing-text-templates-by-using-a-custom-host)。  
-  
 *文本模板转换*过程将*文本模板*文件作为输入并生成一个文本文件作为输出。 从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展或安装有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的计算机上运行的独立应用程序，可以调用文本转换引擎。 但是，必须提供*文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。  
   
 > [!TIP]

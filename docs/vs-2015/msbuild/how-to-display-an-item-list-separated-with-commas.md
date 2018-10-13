@@ -1,7 +1,7 @@
 ---
 title: 如何：显示用逗号分隔的项列表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62fbbfd7df89eee06f476a496b5a7c020c0ff211
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9de7655335d2937a31cc2d63f5220fbf5415745
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195866"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：显示用逗号分隔的项列表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 显示用逗号分隔项列表](https://docs.microsoft.com/visualstudio/msbuild/how-to-display-an-item-list-separated-with-commas)。  
-  
   
 在 [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) 中处理项列表时，有时以易于阅读的方式显示这些项列表的内容会很有帮助。 或者，你执行的任务可能会用到以特殊的分隔符字符串分隔的项列表。 在这两种情况中，可以为项列表指定分隔符字符串。  
   

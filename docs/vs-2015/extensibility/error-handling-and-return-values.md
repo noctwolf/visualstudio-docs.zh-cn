@@ -1,7 +1,7 @@
 ---
 title: 错误处理和返回值 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b306918843f5acb1ed70f46e104116ffb0a012d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 315315e925eecd45b1c001531f5ebb6be207b2e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471437"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306842"
 ---
 # <a name="error-handling-and-return-values"></a>错误处理和返回值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的错误处理和返回值](https://docs.microsoft.com/visualstudio/extensibility/error-handling-and-return-values)。  
-  
 Vspackage 和 COM 使用相同的体系结构的错误。 `SetErrorInfo`和`GetErrorInfo`函数是 Win32 应用程序编程接口 (API) 的一部分。 在集成的开发环境 (IDE) 中的任何 VSPackage 可以调用这些全局 Win32 Api，用于记录丰富的错误消息时接收错误通知。 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供互操作程序集来管理错误的信息。  
   
 ## <a name="interop-methods"></a>互操作方法  

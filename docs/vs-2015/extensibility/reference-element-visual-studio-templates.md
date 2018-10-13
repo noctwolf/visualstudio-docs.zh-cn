@@ -1,7 +1,7 @@
 ---
 title: 引用元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 852772ea-c324-42e9-8c8a-6d565414a109
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2fdd9b1a4b7703bbd0c4c0a5a8302e8a101b9559
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15de6b3ef890735a83c4ca5ac84a54a71f5c247a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470894"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303922"
 ---
 # <a name="reference-element-visual-studio-templates"></a>Reference 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Reference 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/reference-element-visual-studio-templates)。  
-  
 指定向项目添加项时要添加的程序集引用。  
   
  \<VSTemplate >  

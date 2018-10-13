@@ -1,7 +1,7 @@
 ---
 title: “指令指针”(IP) 视图 - 采样数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d23c04906c9f1d3cd28ded7b88ee225c13240f53
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65eae6ea7c4006356d907f1e8d45c89cde4c37e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243942"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>“指令指针”(IP) 视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[指令指针 (Ip) 视图-采样数据](https://docs.microsoft.com/visualstudio/profiling/instruction-pointers-ips-view-sampling-data)。  
-  
 采样数据的 IP 视图列出分析运行期间收集样本时直接执行的程序集指令的性能数据。  
   
 > [!NOTE]

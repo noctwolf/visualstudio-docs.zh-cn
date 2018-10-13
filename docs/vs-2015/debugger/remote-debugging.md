@@ -1,14 +1,14 @@
 ---
 title: 远程调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
 dev_langs:
@@ -24,18 +24,16 @@ caps.latest.revision: 81
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f658c14c75f3ec0e93ed05226a8b1192d73bf478
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 58df8dd3c95d5962b5966660599c65951d659ac2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306522"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[远程调试](https://docs.microsoft.com/visualstudio/debugger/remote-debugging)。  
-  
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。  要进行此操作，可使用 Visual Studio 远程调试器。  
   
  此处的信息适用于 Windows 桌面应用程序和 ASP.NET 应用程序。  有关远程调试 Windows 应用商店应用程序和 Azure 应用程序的信息，请参阅[在 Windows 应用商店和 Azure 应用上进行远程调试](#bkmk_winstoreAzure)。  

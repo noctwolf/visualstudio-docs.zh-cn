@@ -1,7 +1,7 @@
 ---
 title: 管理 Help Viewer 窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03fb068265aa168d491deb9c98fc6cfaa69e308a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37d7ccda7d04fd135968608b6272199c9949ed67
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281484"
 ---
 # <a name="manage-the-help-viewer-window"></a>管理帮助查看器窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理帮助查看器窗口](https://docs.microsoft.com/visualstudio/ide/manage-the-help-viewer-window)。  
-  
 在帮助查看器可以自定义窗口布局。  
   
 ## <a name="docking-tabs"></a>停靠选项卡  

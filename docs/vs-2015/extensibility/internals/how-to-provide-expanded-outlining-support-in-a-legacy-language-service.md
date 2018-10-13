@@ -1,7 +1,7 @@
 ---
 title: 如何： 提供旧版语言服务中的展开大纲显示支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: df759e89-8193-418c-8038-6626304d387b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ab97a9b26c1dd76949a4bae6dd9640319398bd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6371339da12d88832e84d5086ed2d8a83226a94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239518"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>如何： 提供旧版语言服务中的展开大纲显示支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[提供语言服务中的大纲显示支持](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service)。  
-  
 有两个选项用于扩展对你超出支持的语言的大纲显示支持**折叠到定义**命令。 可以添加控制编辑器的大纲区域，并添加客户端控制大纲区域。  
   
 ## <a name="adding-editor-controlled-outline-regions"></a>添加编辑器控制大纲区域  

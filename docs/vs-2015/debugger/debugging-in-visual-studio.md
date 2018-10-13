@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,15 @@ caps.latest.revision: 55
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73c87560e6ce238877088def248afe9d8ce42103
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3323c2513b21ad5432b6784ea305bf1693990d2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296438"
 ---
 # <a name="debugging-in-visual-studio"></a>在 Visual Studio 中进行调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[Visual Studio 中调试](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour)。
-
 Visual Studio 调试程序有助于你观察程序的运行时行为并发现问题。 该调试器可用于所有 Visual Studio 编程语言及其关联的库。 使用调试程序时，可以中断程序的执行以检查代码、检查和编辑变量、查看寄存器、查看从源代码创建的指令，以及查看应用程序占用的内存空间。  
   
  有关 Visual Studio 中的诊断的快速介绍，请参阅 [调试、分析和诊断](https://www.visualstudio.com/features/debugging-and-diagnostics-vs)。  

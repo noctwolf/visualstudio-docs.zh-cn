@@ -1,7 +1,7 @@
 ---
 title: GetReferenceAssemblyPaths 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 619a533e1bdbdec00e631aac64d6ddf84bf161c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b885443fba9b92e1d4004987988e4d743f3921d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244474"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[GetReferenceAssemblyPaths 任务](https://docs.microsoft.com/visualstudio/msbuild/getreferenceassemblypaths-task)。  
-  
   
 返回各种框架的引用程序集路径。  
   
