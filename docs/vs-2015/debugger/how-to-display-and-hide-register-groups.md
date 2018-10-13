@@ -1,7 +1,7 @@
 ---
 title: 如何： 显示和隐藏寄存器组 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3060a21d9ffbaf079696eef83f01b7f0787ed59a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ff44cb0977103d7169ac0b3f14a8bf0fb8f6c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206487"
 ---
 # <a name="how-to-display-and-hide-register-groups"></a>如何：显示和隐藏寄存器组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 显示和隐藏寄存器组](https://docs.microsoft.com/visualstudio/debugger/how-to-display-and-hide-register-groups)。  
-  
 **注册**窗口才中启用了地址级调试**选项**对话框中，**调试**节点，**常规**类别。  
   
  为了减少混乱，**注册**窗口将寄存器组织成组。 如果您右键单击**注册**窗口中，您将看到一个包含这些组中，您可以显示或隐藏，按照以下过程根据快捷菜单。  

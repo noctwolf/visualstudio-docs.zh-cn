@@ -1,7 +1,7 @@
 ---
 title: 调试单步执行选项 （旧版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: b87496e3aa7ea25e4b7cd8decf53cb425448dbf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f8840ba13d9b0caed2631d328593a0c23a110cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478758"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173262"
 ---
 # <a name="debug-stepping-options-legacy"></a>调试单步执行选项（旧版）
 本主题介绍如何调试具有旧 [!INCLUDE[wf](../includes/wf-md.md)] 中的并发活动的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 应用程序。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  

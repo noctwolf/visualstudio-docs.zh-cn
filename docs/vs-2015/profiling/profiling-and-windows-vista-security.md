@@ -1,7 +1,7 @@
 ---
 title: 分析和 Windows Vista 安全性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 736e7a04813a6c56d6cab6d1886171e321d583cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 141c8ee9e2a5924ce74dca119e1ba897add0c04b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483137"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185885"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分析和 Windows Vista 安全性](https://docs.microsoft.com/visualstudio/profiling/profiling-and-windows-vista-security)。  
-  
 根据计算机管理员提供的 [!INCLUDE[wiprlhext](../includes/wiprlhext-md.md)] 用户访问权限设置，单个用户可能会具有在该计算机上分析进程的安全权限。 下面的示例说明了用户之间可能存在的差异：  
   
 -   当管理员启动了驱动程序和服务时，某些用户可能会访问高级分析功能。  

@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的大纲显示和隐藏文本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 586c5d818c54894eea89149cab04b2481aaa9ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5de1a4cdf7d3b8ecd2cc1421e1647580ecb99c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232513"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示和隐藏文本
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[大纲显示和隐藏在旧版语言服务中的文本](https://docs.microsoft.com/visualstudio/extensibility/internals/outlining-and-hidden-text-in-a-legacy-language-service)。  
-  
 大纲显示使可能折叠为单个行的一系列文本行。 例如，在 c + + 中的所有方法可以都折叠为单个行，其中显示仅方法签名。 隐藏的文本是可以显示或隐藏的文本行的序列。  
   
 ## <a name="in-this-section"></a>本节内容  

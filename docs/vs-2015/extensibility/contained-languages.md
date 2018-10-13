@@ -1,7 +1,7 @@
 ---
 title: 包含语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,16 @@ ms.assetid: b75bbb51-8e42-41b1-bece-09ab0b1f03cc
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d0b455a526bf1b32de90588a103c23855e730946
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 22f297027d2196cf69c241f651fd84cbb18ecfa1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480955"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184952"
 ---
 # <a name="contained-languages"></a>包含的语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
-本主题的最新版本，请参阅[包含语言](https://docs.microsoft.com/visualstudio/extensibility/contained-languages)。  
   
 *包含语言*是所包含的其他语言的语言。 例如，在 HTML[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]可能包含页[!INCLUDE[csprcs](../includes/csprcs-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]脚本。 .Aspx 文件编辑器为 HTML 和脚本语言提供 IntelliSense、 着色、 和其他编辑功能需要双语言体系结构。  
   

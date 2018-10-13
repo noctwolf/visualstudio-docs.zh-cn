@@ -1,7 +1,7 @@
 ---
 title: SortOrder 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4619d151e66d288907dea97894a1ae133be8708b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7932edc042f4c90073cadb50fc48c0f32c394236
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479853"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224713"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SortOrder 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/sortorder-element-visual-studio-templates)。  
-  
 指定一个值，用于排列在同一类别中的其他模板之间的模板中显示该值**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  

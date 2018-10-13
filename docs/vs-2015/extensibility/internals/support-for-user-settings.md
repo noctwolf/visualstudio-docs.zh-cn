@@ -1,7 +1,7 @@
 ---
 title: 支持用户设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,23 +17,21 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12200fcee084a58520047ca4731dbcc1ed1b4ed4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 74f96a6177409057d2c24aca6103de29d97e19fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215652"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[支持用户设置](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-user-settings)。  
-  
 VSPackage 可以定义一个或多个设置类别，是一组保留在用户选择时的状态变量**导入/导出设置**命令**工具**菜单。 若要启用此持久性，您使用的设置 Api 中[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]。  
   
  自定义设置点和一个 GUID 称为一个注册表项定义的 VSPackage 的设置类别。 VSPackage 可以支持多个设置类别，每个定义的自定义设置点。  
   
--   实现基于互操作程序集的设置 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>接口) 应通过编辑注册表，或者使用注册器脚本 （.rgs 文件） 创建自定义设置点。 有关详细信息，请参阅[Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
+-   实现基于互操作程序集的设置 (使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings>接口) 应通过编辑注册表，或者使用注册器脚本 （.rgs 文件） 创建自定义设置点。 有关详细信息，请参阅 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
   
 -   使用托管包框架 (MPF) 的代码应通过将附加创建自定义设置点<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>到每个自定义设置点的 VSPackage。  
   

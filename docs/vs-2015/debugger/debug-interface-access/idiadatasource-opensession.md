@@ -1,7 +1,7 @@
 ---
 title: 'Idiadatasource:: Opensession |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e4b0e1a1b105f349daed2fea03a290522f3ccb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf4dc2e7dd7f0f8596efdd835aa1b1d9c809295c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225833"
 ---
 # <a name="idiadatasourceopensession"></a>IDiaDataSource::openSession
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiadatasource:: Opensession](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiadatasource-opensession)。  
-  
 将打开一个会话，用于查询符号。  
   
 ## <a name="syntax"></a>语法  

@@ -1,7 +1,7 @@
 ---
 title: UML 活动图： 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bfe4eaad401ce61534e5785ed82b9e33fa2f6610
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177835"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活动图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 活动图： 参考](https://docs.microsoft.com/visualstudio/modeling/uml-activity-diagrams-reference)。  
-  
 *活动图*业务流程或软件过程以通过一系列操作的工作流的形式显示。 用户、软件组件或计算机可以执行这些操作。  
   
  使用活动图可以像下面示例一样描述多种类型的进程：  

@@ -1,7 +1,7 @@
 ---
 title: 扩展和自定义工具 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46b2892e-7b2b-4b3f-83a7-b884f1e114ee
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90ba7833a48647043fcb9b6d8ca9095be7cabef0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 591351f41d0cd85de92836990e8d8523258f3d33
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199935"
 ---
 # <a name="extending-and-customizing-tool-windows"></a>扩展和自定义工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展和自定义工具 Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-and-customizing-tool-windows)。  
-  
 Visual Studio 提供多种不同类型的 windows，如工具窗口、 文档窗口和对话框窗口。 例如属性窗口、 输出窗口和任务列表窗口中，其他窗口是工具窗口的类型。  
   
 ## <a name="tool-windows"></a>工具窗口  
@@ -43,7 +41,7 @@ Visual Studio 提供多种不同类型的 windows，如工具窗口、 文档窗
   
  工具窗口可以在文档框架中停靠、浮动或呈选项卡式。 工具窗口框架由 IDE 提供，用于控制大小、位置、停靠状态和其他持久性属性。 工具窗口窗格用于显示内容。 仅当首次打开工具窗口时才应用默认大小和位置；在此之后将保留工具窗口状态。  
   
- 工具窗口窗格可以承载 WPF 用户控件，并支持工具栏。 您可以重写<xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A>属性以返回所承载控件的句柄。  
+ 工具窗口窗格可以承载 WPF 用户控件，并支持工具栏。 你可以重写 <xref:Microsoft.VisualStudio.Shell.WindowPane.Window%2A> 属性以返回所承载的控件的句柄。  
   
  可以将许多不同的功能添加到工具窗口。 例如，将工具栏添加：[添加到工具窗口工具栏](../extensibility/adding-a-toolbar-to-a-tool-window.md)或快捷菜单：[的工具窗口中添加快捷菜单](../extensibility/adding-a-shortcut-menu-in-a-tool-window.md)。 可以添加一个搜索控件，可用于搜索工具窗口中的项：[将搜索添加到工具窗口](../extensibility/adding-search-to-a-tool-window.md)。  
   

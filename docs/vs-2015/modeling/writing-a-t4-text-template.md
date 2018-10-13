@@ -1,7 +1,7 @@
 ---
 title: 编写 T4 文本模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c3cfa97bb4b46ddf84916d92ce8437eb80556b80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471732"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231629"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编写 T4 文本模板](https://docs.microsoft.com/visualstudio/modeling/writing-a-t4-text-template)。  
-  
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html >..."和所有其他标准部件的 HTML 页。 插入到模板中都*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。  
   
  使用这一结构很容易开发模板，因为可以以生成文件为原型，然后逐步插入用于改变结果的控制块。  

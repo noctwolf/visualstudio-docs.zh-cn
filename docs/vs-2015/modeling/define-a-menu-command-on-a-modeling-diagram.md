@@ -1,7 +1,7 @@
 ---
 title: 在建模图上定义菜单命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,22 +14,20 @@ caps.latest.revision: 63
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00cb466fc9859bc36734ee3c42a23190632f39a2
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c1a93ab331771db3303ffcbcb7c067c4c325e6a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588731"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193149"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>在建模图上定义菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在建模图上定义菜单命令](https://docs.microsoft.com/visualstudio/modeling/define-a-menu-command-on-a-modeling-diagram)。  
-  
 在 Visual Studio 中，你可以在 UML 关系图的快捷菜单上定义其他菜单项。 你可以控制是否在关系图上任意元素的快捷菜单上显示和启用菜单命令，并且可以编写在用户选择菜单项时运行的代码。 可以将这些扩展打包到 Visual Studio 集成扩展 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) 中，并将其分发给其他 Visual Studio 用户。  
   
 ## <a name="requirements"></a>要求  
- 请参阅[要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -72,7 +70,7 @@ ms.locfileid: "47588731"
   
     |参考|由此可执行的操作|  
     |---------------|--------------------------------|  
-    |System.ComponentModel.Composition|通过使用定义组件[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。|  
+    |System.ComponentModel.Composition|通过使用 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)定义组件。|  
     |Microsoft.VisualStudio.Uml.Interfaces|读取并更改模型元素的属性。|  
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility|在关系图上创建模型元素、修改形状。|  
     |Microsoft.VisualStudio.Modeling.Sdk.[版本号]|定义模型事件处理程序。<br /><br /> 将一系列更改封装到模型中。 有关详细信息，请参阅[通过使用事务链接 UML 模型更新](../modeling/link-uml-model-updates-by-using-transactions.md)。|  
@@ -223,15 +221,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **故障排除**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
+     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
   
     -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-    -   在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保中的字符串**启动外部程序**字段是的完整路径名[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常：  
+    -   在“解决方案资源管理器”中，在启动或唯一项目的快捷菜单上选择“属性” 。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于菜单命令类的特性中列出的某个类型的关系图。  
+2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于菜单命令类的特性中列出的某个类型的关系图。  
   
 3.  在关系图上的任意位置打开快捷菜单。 你的命令应出现在菜单中。  
   

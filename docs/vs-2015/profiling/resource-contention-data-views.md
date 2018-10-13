@@ -1,7 +1,7 @@
 ---
 title: 资源争用数据视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5434c2ba1f841c28a3aefbc8febc07c1eccd1b96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c24c74ce976dbc571dd4b5410196f2d01782eba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477055"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231817"
 ---
 # <a name="resource-contention-data-views"></a>资源争用数据视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[资源争用数据视图](https://docs.microsoft.com/visualstudio/profiling/resource-contention-data-views)。  
-  
 本节介绍有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。  
   
 ## <a name="in-this-section"></a>本节内容  

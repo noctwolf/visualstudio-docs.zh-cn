@@ -1,7 +1,7 @@
 ---
 title: 规则在模型内部传播更改 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2e0b710d96d5da7b31ac2fce7542b0c981fe1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab05923a02176f4c0d8aa30ac9d26b0e41868396
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469835"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222711"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[规则将传播的更改中的模式](https://docs.microsoft.com/visualstudio/modeling/rules-propagate-changes-within-the-model)。  
-  
 可以创建将更改传播从一个元素到另一个可视化和建模 SDK (VMSDK) 中的存储规则。 在存储区中的任何元素更改时，规则计划执行，通常在最外部事务提交时。 有不同类型的规则对于不同类型的事件，如添加一个元素，或删除它。 可以将规则附加到特定类型的元素、 形状或关系图。 许多内置功能由规则定义： 例如，规则可确保在模型更改时，更新关系图。 可以添加自己的规则来自定义您的特定于域的语言。  
   
  传播更改内部应用商店 – 也就是说，更改到模型元素、 关系、 形状或连接符和其域属性，应用商店规则是特别有用。 当用户调用撤消或重做命令不会运行规则。 相反，事务管理器可确保存储内容被还原到正确的状态。 如果你想要将更改传播到应用商店以外的资源，使用存储事件。 有关详细信息，请参阅[事件处理程序传播更改外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  

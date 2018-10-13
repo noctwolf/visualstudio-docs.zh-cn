@@ -1,7 +1,7 @@
 ---
 title: 使用 SuppressMessage 特性禁止显示警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3ea1aff6aa086c5babb3e6ecf52e7427ffa06813
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 91ae1c5d15ddbb364aeba16c2c4de49ce19d09c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205954"
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>使用 SuppressMessage 特性禁止显示警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 SuppressMessage 特性通过禁止显示警告](https://docs.microsoft.com/visualstudio/code-quality/suppress-warnings-by-using-the-suppressmessage-attribute)。  
-  
 通常它可用于指示警告不适用于团队成员知道已评审过代码，并已决定应禁止显示警告。 源代码中禁止显示 (ISS) 使开发人员可以将禁止显示警告产生该警告的位置附近的属性。 您可以直接向源文件添加 ISS 属性也可以使用中的快捷菜单[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]IDE。  
   
 ## <a name="in-this-section"></a>本节内容  

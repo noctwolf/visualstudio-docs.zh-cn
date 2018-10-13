@@ -1,7 +1,7 @@
 ---
 title: 在设计时解析程序集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b54d2c3dc69e33ba732f8b31b36d896c90e8b774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224648"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在设计时解析程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在设计时解析程序集](https://docs.microsoft.com/visualstudio/msbuild/resolving-assemblies-at-design-time)。  
-  
   
 当通过“添加引用”对话框的“.NET”选项卡添加对程序集的引用时，引用将指向一个中间引用程序集；所谓中间引用程序集，是指包含所有类型和签名信息但不一定包含任何代码的程序集。 .NET 选项卡列出 .NET Framework 中运行时程序集对应的引用程序集。 此外，它还列出第三方使用的注册 AssemblyFoldersEx 文件夹中运行时程序集所对应的的引用程序集。  
   

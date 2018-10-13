@@ -1,7 +1,7 @@
 ---
 title: 'VsgDbg:: ~ VsgDbg （析构函数） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed5e53aee9bed8ee070011de1a44001b910066a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c43fb5c46ce3c1f33cfbb79fd68f793381f84e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476685"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212051"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg（析构函数）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VsgDbg:: ~ VsgDbg （析构函数）](https://docs.microsoft.com/visualstudio/debugger/graphics/vsgdbg-tilde-vsgdbg-destructor)。  
-  
 销毁实例`VsgDbg`类。 如果主动记录图形信息时，图形日志文件被终结并被关闭，并释放主动捕获图形信息时使用的资源。  
   
 ## <a name="syntax"></a>语法  

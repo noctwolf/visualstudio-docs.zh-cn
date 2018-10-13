@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中将对象组织到布局容器中 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 329e41454431c0d19adda5175b455449d4f48e7b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c92af4e78715c608fdee860690fd58561b8bb2d5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219546"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将对象组织到布局容器中 XAML 设计器](https://docs.microsoft.com/visualstudio/designers/organize-objects-into-layout-containers-in-xaml-designer)。  
-  
 想象你希望对象出现在页面上的哪个位置；诸如图像、按钮和视频等对象。 也许你希望它们出现在行和列中、在单个行中（垂直或水平）或在固定位置中。  
   
  你已经有机会考虑页面如何显示之后，请选择布局面板。 所有页面都从一个布局面板开始，因为你需要某个容器来向其中添加对象。 默认情况下，它是**网格**但可以进行更改。  

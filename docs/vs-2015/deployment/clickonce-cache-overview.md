@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 缓存概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5fb0bcd8c589f8ade12f8da0c4151e1f2894dd1d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5e976877a045b6efc7ca3d9fb103b9d1a8e88df7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217290"
 ---
 # <a name="clickonce-cache-overview"></a>ClickOnce 缓存概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 缓存概述](https://docs.microsoft.com/visualstudio/deployment/clickonce-cache-overview)。  
-  
 所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，无论它们是安装在本地还是托管，存储在客户端计算机上[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序*缓存*。 一个[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]缓存是一系列的当前用户的 Documents and Settings 文件夹的本地设置目录下隐藏的目录。 此缓存保留在应用程序的所有文件，包括程序集、 配置文件、 应用程序和用户设置和数据目录。 缓存程序还负责将应用程序的数据目录迁移到最新版本。 有关数据迁移的详细信息，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
   
  通过提供应用程序存储的单个位置[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]接管用户管理物理安装应用程序的任务。 缓存还可帮助隔离应用程序通过保留的程序集和所有应用程序的数据文件，并从另一个单独的及其不同版本。 例如，当升级[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序中，使用自己的目录缓存中提供版本和其数据资源。  

@@ -1,7 +1,7 @@
 ---
 title: 演练：带有“使用时生成”功能的测试先行支持 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8a290eebec2c3847d41f36568196ec35935e332a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b2b45b75b689279a19dc1423a0cbf2b62d14a5c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232838"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试先行支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用生成从使用情况功能的测试先行支持](https://docs.microsoft.com/visualstudio/ide/walkthrough-test-first-support-with-the-generate-from-usage-feature)。  
-  
 本主题演示如何利用可支持测试优先开发的[使用时生成](../misc/generate-from-usage.md)功能。  
   
  *测试优先的开发* 是一种软件设计的方法，其中首先基于产品规格编写单元测试，然后编写测试成功所需的源代码。 首次在测试用例中引用新类型和成员时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 通过在对其进行定义之前在源代码中生成这些新类型和成员来支持测试优先的开发。  

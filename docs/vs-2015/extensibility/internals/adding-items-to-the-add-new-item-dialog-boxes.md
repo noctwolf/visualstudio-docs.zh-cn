@@ -1,7 +1,7 @@
 ---
 title: 将项添加到添加新项对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 641c593a0c8f957982801824bd4f81bd62b904d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483766"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223074"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到“添加新项”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将项添加到添加新项对话框](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes)。  
-  
 将项添加到的过程**添加新项**对话框的开头的注册表项。 以下注册表项中所示，AddItemTemplates 部分包含的路径和名称中提供的项中的目录**添加新项**放入对话框。  
   
 > [!NOTE]

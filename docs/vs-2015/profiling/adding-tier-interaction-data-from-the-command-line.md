@@ -1,7 +1,7 @@
 ---
 title: 从命令行添加层交互数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce7713b39acb7736e34f6ab6017b0cd32b1e1cfa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588870"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228406"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从命令行添加层交互数据](https://docs.microsoft.com/visualstudio/profiling/adding-tier-interaction-data-from-the-command-line)。  
-  
 层交互分析提供有关多层应用程序函数中同步 [!INCLUDE[vstecado](../includes/vstecado-md.md)] 调用执行时间的附加信息，这些应用程序可与一个或多个数据库进行通信。  
   
  **Windows 8 和 Windows Server 2012**  
@@ -41,7 +39,7 @@ ms.locfileid: "47588870"
   
  **在远程计算机上收集 TIP 数据**  
   
- 若要在远程计算机上收集层交互数据，必须将复制**vs\_探查器\_**_\<平台 >_ **\_**_\<语言 >_**.exe**文件 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**文件夹的 Visual Studio 在远程计算机到计算机并将其安装。 不能使用中的分析工具[Visual Studio 远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下载包。  
+ 若要在远程计算机上收集层交互数据，必须将复制**vs\_探查器\_**_\<平台 >_ **\_**_\<语言 >_**.exe**文件 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**文件夹的 Visual Studio 在远程计算机到计算机并将其安装。 不能使用 [Visual Studio 远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下载程序包中的分析工具。  
   
  **TIP 报表**  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 启用和禁用托管代码的完整解决方案分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4815963966c54d7c237737d85c2e573e886bc9ba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221866"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>如何： 启用和禁用托管代码的完整解决方案分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 启用和禁用完整解决方案的分析托管代码的](https://docs.microsoft.com/visualstudio/code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code)。  
-  
 请注意]
 >  本主题仅适用于 Visual Studio 2015 Update 3 RC 和更高版本。  
   

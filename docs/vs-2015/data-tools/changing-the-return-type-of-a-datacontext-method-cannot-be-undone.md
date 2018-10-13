@@ -1,7 +1,7 @@
 ---
 title: 更改 DataContext 方法的返回类型不能撤消 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2adc93f6426c39d26395bdeb88fb8c37112a1a98
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a53bfc66c379be0d6d90d03314f84eef89bd98a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233813"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>对 DataContext 方法的返回类型的更改操作不能撤消
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[更改 DataContext 方法的返回类型不能撤消](https://docs.microsoft.com/visualstudio/data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone)。  
-  
   
 更改 DataContext 方法的返回类型的操作无法撤消。 要恢复为自动生成的类型，您必须将该项从服务器资源管理器/数据库资源管理器中再次拖动到 O/R Designer 上。 是否确实要更改返回类型？  
   

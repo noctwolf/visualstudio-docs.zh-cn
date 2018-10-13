@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_haslongjump |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c080ea22745ad50ab8bf6f26affea4b4eed260a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 739176b12d9d0eff6c9ada41aa0d49cb851384a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484513"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209373"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiasymbol:: Get_haslongjump](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-haslongjump)。  
-  
 检索一个标志，指定该函数是否包含的一种用法[longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f)命令 (已与配对[setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2)命令时，它们构成异常处理的 C 样式方法)。  
   
 ## <a name="syntax"></a>语法  

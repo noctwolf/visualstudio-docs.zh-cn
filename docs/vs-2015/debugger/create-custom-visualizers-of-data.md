@@ -1,7 +1,7 @@
 ---
 title: 创建数据的自定义可视化工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a025068d1657d9feb569a77731aa8bab517bae2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fccaad8cb22bdd5193f2a674c5a9c6bafb49a7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480211"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217628"
 ---
 # <a name="create-custom-visualizers-of-data"></a>创建数据的自定义可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的数据创建自定义可视化工具](https://docs.microsoft.com/visualstudio/debugger/create-custom-visualizers-of-data)。  
-  
 可视化工具是组件的[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]调试器用户界面。 一个*可视化工具*创建对话框或另一个接口，以适合于其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并按照该字符串出现在浏览器窗口中时的样子显示结果；位图可视化工具解释位图结构并显示该位图结构表示的图形。 某些可视化工具允许您修改数据，还允许您查看数据。  
   
  [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 调试器包括六个标准可视化工具。 这些是文本、 HTML、 XML 和 JSON 可视化工具，所有这些处理字符串对象;WPF 树可视化工具，用于显示 WPF 对象可视化树; 的属性和数据集可视化工具，一种用于 DataSet、 DataView 和 DataTable 对象。 将来可以从 Microsoft Corporation 以及第三方和社区下载更多的可视化工具。 此外，你可以编写自己的可视化工具，并将它们安装在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 调试器中。  

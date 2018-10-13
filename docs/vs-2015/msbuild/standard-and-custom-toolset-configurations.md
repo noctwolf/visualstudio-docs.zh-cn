@@ -1,7 +1,7 @@
 ---
 title: 标准和自定义工具集配置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbba44792fe004eb06de20d86bf5607af561107e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cdc08d7bdce1f916ad7ed40002069ea7d5f6907f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483190"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236894"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[标准和自定义工具集配置](https://docs.microsoft.com/visualstudio/msbuild/standard-and-custom-toolset-configurations)。  
-  
   
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
   
