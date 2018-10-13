@@ -1,7 +1,7 @@
 ---
 title: 将数据保存回数据库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93af342cca97d1e116b122a1e5387be1c182a42a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215158"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将数据保存回数据库](https://docs.microsoft.com/visualstudio/data-tools/save-data-back-to-the-database)。  
-  
   
 数据集是数据的内存中副本。 如果您修改该数据，则最好将这些更改保存回数据库。 您实现这三种方式之一：  
   

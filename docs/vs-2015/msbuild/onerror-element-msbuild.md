@@ -1,7 +1,7 @@
 ---
 title: OnError 元素 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 323aff310061cf62af7cac10ee266c15d24e6eae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10f89d21441418ae0b5c267c0fea7e8451115afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228704"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[OnError 元素 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/onerror-element-msbuild)。  
-  
   
 对于某失败的任务，如果 `ContinueOnError` 属性为 `false`，则会出现一个或多个要执行的目标。  
   

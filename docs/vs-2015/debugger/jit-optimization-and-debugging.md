@@ -1,7 +1,7 @@
 ---
 title: JIT 优化和调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb73c434c978f7a8b1847976c73fe2bff47e3b89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e798d44371f04b955db9019c741100ce9e5e5ef6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201967"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 优化和调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[JIT 优化和调试](https://docs.microsoft.com/visualstudio/debugger/jit-optimization-and-debugging)。  
-  
 调试托管应用程序时[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]默认情况下取消优化实时 (JIT) 代码。 取消 JIT 优化意味着你调试的是非优化代码。 由于代码未优化，因此代码会运行得稍慢一些，但您的调试体验会更全面。 由于调试优化代码要更难一些，因此建议仅在遇到优化代码中发生的 bug 无法在非优化版本中重现时使用。  
   
  以控制 JIT 优化[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]由**在模块加载时取消 JIT 优化**选项。 您可以在找到此选项**常规**页**调试**中的节点**选项**对话框。  

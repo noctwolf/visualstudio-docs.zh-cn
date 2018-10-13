@@ -1,7 +1,7 @@
 ---
 title: 如何：自定义报告视图列 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14e6e751f826d0ee52db5f00712a225f2171ecc9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5bc7b18e4df3baac4f6acb65d39c9ab66bcafa5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479387"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202801"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自定义报告视图列
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 自定义报告视图列](https://docs.microsoft.com/visualstudio/profiling/how-to-customize-report-view-columns)。  
-  
 Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：  
   
 -   [“模块”视图](../profiling/modules-view.md)  

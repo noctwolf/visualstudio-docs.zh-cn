@@ -1,7 +1,7 @@
 ---
 title: 使用编码的 UI 测试日志分析编码的 UI 测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8da6f37e36dd249c6b458b31870259f30a00f883
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e492f3bfaf725c157060a23778e1f1725bb88ee3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482185"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188717"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编码的 UI 测试使用编码的 UI 测试日志分析](https://docs.microsoft.com/visualstudio/test/analyzing-coded-ui-tests-using-coded-ui-test-logs)。  
-  
 编码的 UI 测试日志筛选并录制关于编码的 UI 测试运行的重要信息。  
   
  **要求**  

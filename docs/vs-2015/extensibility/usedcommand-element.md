@@ -1,7 +1,7 @@
 ---
 title: UsedCommand 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 78ab46c4524bb25563d407514aa0590e75feffaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: abcc3117b46cca424388b849f9baf26d79ca270e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481029"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194631"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UsedCommand 元素](https://docs.microsoft.com/visualstudio/extensibility/usedcommand-element)。  
-  
 允许 VSPackage 访问在另一个.vsct 文件中定义的命令。 例如，如果你的 VSPackage 使用标准**副本**命令，通过定义[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]shell 中，您可以将命令添加到菜单或工具栏无需重新执行它。  
   
 ## <a name="syntax"></a>语法  

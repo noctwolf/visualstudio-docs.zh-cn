@@ -1,7 +1,7 @@
 ---
 title: 工具窗口中添加快捷菜单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a09e288771702ec6c5abde1838d8139e151504d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5326d604c36299d9cc1a553a61a8e4e1fabdc066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476830"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217979"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>将快捷菜单添加到工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的工具窗口中添加快捷菜单](https://docs.microsoft.com/visualstudio/extensibility/adding-a-shortcut-menu-in-a-tool-window)。  
-  
 本演练将在工具窗口的快捷菜单。 快捷菜单，在用户右键单击按钮、 文本框中或窗口背景时，将显示一个菜单。 快捷菜单上的命令的行为与其他菜单或工具栏上的命令相同。 若要支持的快捷菜单，在.vsct 文件中指定它并将其显示以响应鼠标右键单击。  
   
  工具窗口包含 WPF 用户控件继承的自定义工具窗口类中的<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>。  

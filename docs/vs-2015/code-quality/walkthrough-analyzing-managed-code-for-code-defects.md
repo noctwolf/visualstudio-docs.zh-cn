@@ -1,7 +1,7 @@
 ---
 title: 演练： 对托管的代码分析是否有代码缺陷 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9137e7319cd8cddfb54ab4b6a6929567b24bb6e5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c8bf9d1f293895c762348752b64c7be8cf6d510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217472"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>演练：对托管代码进行代码缺陷分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 分析托管代码以查找代码缺陷](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-analyzing-managed-code-for-code-defects)。  
-  
 在本演练中，通过使用代码分析工具分析托管的项目进行代码缺陷。  
   
  本演练将指导你完成使用代码分析来分析符合 Microsoft.NET Framework 设计准则的.NET 托管代码程序集的过程。  

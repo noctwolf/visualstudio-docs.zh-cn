@@ -1,7 +1,7 @@
 ---
 title: 使用探查器命令行收集独立应用程序的 .NET Framework 内存数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9fb43237b030cb5c8d4dea040b5f9fc480bc7fe9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 069d930a4670cac87e31720a38afc6c857769909
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193071"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的 .NET Framework 内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[收集使用 Profiler 命令行的独立应用程序的.NET Framework 内存数据](https://docs.microsoft.com/visualstudio/profiling/collecting-dotnet-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line)。  
-  
 本部分介绍从命令行使用采样方法收集 .NET 客户端（独立）应用程序的内存分配和对象生存期数据的步骤和选项。  
   
 ## <a name="common-tasks"></a>常规任务  

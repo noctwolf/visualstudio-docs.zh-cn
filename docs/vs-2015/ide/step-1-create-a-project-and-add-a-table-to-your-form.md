@@ -1,7 +1,7 @@
 ---
 title: 步骤 1：创建项目并向窗体添加表 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02b87c7a2f7384b69c6037eb77090ba76a2481f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dade91d67418fcaf788ffbcea0c5a7764e4840a4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204459"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步骤 1：创建项目并向窗体添加表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 1： 创建项目并向窗体添加表](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-project-and-add-a-table-to-your-form)。  
-  
 创建匹配游戏的第一步是创建项目并向窗体添加表。 该表有助于将图标对齐到有序的 4x4 网格。 你还要设置若干属性，以改善游戏板的外观。  
   
 ### <a name="to-create-a-project-and-add-a-table-to-your-form"></a>创建项目并向窗体添加表  

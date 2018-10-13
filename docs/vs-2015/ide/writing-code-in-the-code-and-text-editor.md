@@ -1,7 +1,7 @@
 ---
 title: 在代码和文本编辑器中编写代码 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -65,18 +65,15 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb879efdc3370578d57b529194a9a8790c9136dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471158"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220527"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在代码和文本编辑器中编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[代码和文本编辑器中编写代码](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)。
-
 Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和管理自己的代码。 可通过使用大纲显示来展开和折叠不同的代码块。 可通过使用 IntelliSense、“对象浏览器” 以及调用层次结构，了解有关正在使用的代码的详细信息。 可通过使用“定位到” 、“转到定义” 和“查找所有引用” 等功能在代码内部导航。 可以将插入代码块和代码片段，并且可以通过“使用时生成” 等功能生成代码。 如果之前从未使用过 Visual Studio 2015 编辑器，则请参阅 [编辑代码](https://www.visualstudio.com/features/ide-vs) 进行快速了解。  
 
  可以使用多种不同的方式查看自己的代码。 若要查看解决方案的类视图，可以打开“类视图”  窗口或展开类文件下“解决方案资源管理器”  中的节点。  

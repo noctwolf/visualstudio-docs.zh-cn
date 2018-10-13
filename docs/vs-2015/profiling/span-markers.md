@@ -1,7 +1,7 @@
 ---
 title: 范围标记 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee6943210a4a333625e524afe020e9994824daee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7abd22757b202e902cce9056df578944c58ff4b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204335"
 ---
 # <a name="span-markers"></a>范围标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[范围标记](https://docs.microsoft.com/visualstudio/profiling/span-markers)。  
-  
 范围标记表示应用程序一个有意义的阶段。 例如，可以用范围表示正在处理某特定工作项的时间间隔。 范围的长度表示相应的应用程序阶段的持续时间。 下图显示并发可视化工具中的一个范围：  
   
  ![并发可视化工具中的范围标记](../profiling/media/cvmarkerspan.png "CVMarkerSpan")  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用查找程序工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 748ca2cf70e69aa786e8ec02f0d6bee9f6d9d485
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 935aab109ef15fc1478ca92bb901cbb353b89cb5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198752"
 ---
 # <a name="how-to-use-the-finder-tool"></a>如何：使用查找程序工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用查找程序工具](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-finder-tool)。  
-  
 可以使用中查找程序工具**查找窗口**对话框以显示窗口属性或消息。 查找程序工具还可以找到已禁用的子窗口，并识别哪个窗口以突出显示如果禁用子级窗口重叠。  
   
  ![Spy&#43; &#43;窗口中查找对话框](../debugger/media/icon-spy-find.png "Icon_Spy + + （_f)")  

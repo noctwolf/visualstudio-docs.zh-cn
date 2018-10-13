@@ -1,7 +1,7 @@
 ---
 title: 如何： 在混合模式调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ce056b60a3e080490a2ad60f4aee5a7b5c8dd63
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c13babd3e54d11c7a32e83f645dc2ab9d12b4f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226132"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>How to: Debug in Mixed Mode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在混合模式下调试](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-in-mixed-mode)。  
-  
 以下过程描述如何调试托管代码和本机代码，这一过程也称作混合模式调试。 根据 DLL 或应用程序是否用本机代码编写，有两种方案可以用来进行调试：  
   
 -   调用 DLL 的调用应用程序是用本机代码编写的。 在这种情况下 DLL 是托管的，托管调试器和本机调试器都必须启用，以调试托管代码和本机代码。 您可以将此签入**\<项目 > 属性页**对话框。 具体如何检查取决于是从 DLL 项目中启动调试，还是从调用应用程序项目中启动调试。  

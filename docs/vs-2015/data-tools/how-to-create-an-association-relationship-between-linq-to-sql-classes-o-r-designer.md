@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建 LINQ to SQL 类 （O-R 设计器） 之间的关联 （关系） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,25 +12,23 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14b60094150467aeda7641d018e06db15e7bda03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209360"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>如何： 创建 LINQ to SQL 类 （O/R 设计器） 之间的关联 （关系）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建 LINQ to SQL 类 （O-R 设计器） 之间的关联 （关系）](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer)。  
-  
   
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 中实体类之间的关联类似于数据库中表之间的关系。 可以创建使用实体类之间的关联**关联编辑器**对话框。  
   
  使用时，您必须选择父类和子类**关联编辑器**对话框来创建的关联。 父类是包含主键的实体类；子类是包含外键的实体类。 例如，如果创建映射到 Northwind Customers 和 Orders 表的实体类，则 Customer 类将是父类，而 Order 类将是子类。  
   
 > [!NOTE]
->  当您将从表**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，自动创建基于现有关联在数据库中的外键关系。  
+>  当您将从表**服务器资源管理器**/**数据库资源管理器**拖动到[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)]([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)])，自动创建基于现有关联在数据库中的外键关系。  
   
  在 O/R 设计器中选择该关联时创建关联后，就会中的某些可配置属性**属性**窗口。 （关联是用相关类之间的连线表示的。）下表提供对关联的属性的说明。  
   

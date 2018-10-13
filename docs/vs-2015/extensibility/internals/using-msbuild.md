@@ -1,7 +1,7 @@
 ---
 title: 使用 MSBuild |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8b776823c78835ad687a110c1fcc0ba1382bead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d382261615624fe099694af5b067de55090ad0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470663"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229328"
 ---
 # <a name="using-msbuild"></a>使用 MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 MSBuild](https://docs.microsoft.com/visualstudio/extensibility/internals/using-msbuild)。  
-  
 MSBuild 提供了用于创建全面地描述要生成、 生成任务，并生成配置的项目项的项目文件以定义完善且可扩展 XML 格式。  
   
  基于 MSBuild 的语言项目系统的端到端示例，请参阅 IronPython 示例中的深入探讨[VSSDK 示例](../../misc/vssdk-samples.md)。  

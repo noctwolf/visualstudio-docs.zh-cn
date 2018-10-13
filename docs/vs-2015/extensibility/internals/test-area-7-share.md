@@ -1,7 +1,7 @@
 ---
 title: 测试区域 7： 共享 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 31ef127e53a43cf018da5b78ed79a6b2145815da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54bfa75703e88b08d87daff5d460b868afca3c9d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228119"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试区域 7： 共享](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-7-share)。  
-  
 此测试区域介绍共享项目，通过位置之间**共享**命令。  
   
  Hhare 操作是表面上的文件和文件夹项源控制文件层次结构中的两个或多个位置之间的重复。 重复实际上未出现在服务器上，但用户看到两个或多个指定位置中的同一个文件。 无论对任何共享项进行了更改，这些更改将显示在所有其他共享位置。  

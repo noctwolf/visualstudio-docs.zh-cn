@@ -1,7 +1,7 @@
 ---
 title: 演练： 配置和使用自定义规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b17767f6bb0f8b72b9c06e2870146f6b037a7ca7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5410127cd94bc8e43de4fec82597686d4c11805
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470107"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221632"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>演练：配置和使用自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 配置和使用自定义规则集](https://docs.microsoft.com/visualstudio/code-quality/walkthrough-configuring-and-using-a-custom-rule-set)。  
-  
 本演练演示如何使用已配置为使用自定义的代码分析工具*规则集*类库。 可以选择与您的解决方案，为指定，也可以选择的项目类型替代的规则集来满足特定需求例如扫描可以不间断的方式修复问题的旧代码的规则集。 在任一情况下，规则集还可以定制为你的项目要求微调。  
   
  在本演练中，将逐步完成以下过程：  

@@ -1,7 +1,7 @@
 ---
 title: 为 JavaScript IntelliSense 创建 XML 文档注释 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3801fb58f09ac70c26e21304957e31f7b3ec4ddc
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: d15144a2cee70e5f6bdc496bf2c09eb8fb95c85d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220553"
 ---
 # <a name="create-xml-documentation-comments-for-javascript-intellisense"></a>为 JavaScript IntelliSense 创建 XML 文档注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
-  
 *XML 文档注释*是 JavaScript 注释添加到脚本中以便提供有关代码元素，如函数、 字段和变量的信息。 在 Visual Studio 中，这些文本说明时引用的脚本函数与 IntelliSense 一起显示。  
   
  本主题提供有关使用 XML 文档注释的基本教程。 了解如何使用其他元素，如[ \<var >](../ide/var-javascript.md)并[\<值 >](../ide/value-javascript.md)，和其他代码示例，请参阅[XML 文档注释](../ide/xml-documentation-comments-javascript.md). 了解如何提供 IntelliSense 信息的异步回调，如`Promise`，请参阅[\<返回 >](../ide/returns-javascript.md)。  

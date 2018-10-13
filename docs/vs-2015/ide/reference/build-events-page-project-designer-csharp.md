@@ -1,7 +1,7 @@
 ---
 title: “项目设计器”->“生成事件”页 (C#) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86ada1d23490c4e154cbdb7ba17f81acbee1796a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223065"
 ---
 # <a name="build-events-page-project-designer-c"></a>“项目设计器”->“生成事件”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[生成事件页，项目设计器 (C#)](https://docs.microsoft.com/visualstudio/ide/reference/build-events-page-project-designer-csharp)。  
-  
   
 使用“项目设计器”的“生成事件”页指定生成配置说明。 还可以指定任何生成后事件运行的条件。 有关详细信息，请参阅[如何：指定生成事件 (C#)](../../ide/how-to-specify-build-events-csharp.md) 和[如何：指定生成事件 (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)。  
   

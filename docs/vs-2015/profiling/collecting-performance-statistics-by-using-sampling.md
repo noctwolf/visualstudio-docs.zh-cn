@@ -1,7 +1,7 @@
 ---
 title: 使用采样收集性能统计信息 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce6a9fed51e4c5dc93fca406dbb43787700d83d2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: eaa8ae8c5e073d4c83ae6489cd32953b0959072f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880404"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223688"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>使用采样收集性能统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用采样收集性能统计信息](https://docs.microsoft.com/visualstudio/profiling/collecting-performance-statistics-by-using-sampling)。  
-  
 默认情况下，[!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具采样法收集每 10,000,000 个处理器周期（近似为 1 GHz 计算机上的每百分之一秒）的分析信息。 采样方法可用于查找处理器利用率问题，也是启动最多性能调查时建议采用的方法。  
   
  **要求**  

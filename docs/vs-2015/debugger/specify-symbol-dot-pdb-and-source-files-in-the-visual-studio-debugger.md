@@ -1,7 +1,7 @@
 ---
 title: 指定符号 (.pdb) 和 Visual Studio 调试器中的源文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8674ee9c4141b9bfe8511e67c4cd6113f8f0fed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6b988a2e3defa1a434cc825ad78e7c92dd30c382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226975"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在调试器中指定符号 (.pdb) 和源文件](https://docs.microsoft.com/visualstudio/debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger)。  
-  
 程序数据库 (.pdb) 文件（也称为符号文件）将你在类、方法和其他代码的源文件中创建的标识符映射到在项目的已编译可执行文件中使用的标识符。 .pdb 文件还可以将源代码中的语句映射到可执行文件中的执行指令。 调试器使用此信息确定两个关键信息：显示在 Visual Studio IDE 中的源文件和行号，以及可执行文件中在设置断点时要停止的位置。 符号文件还包含源文件的原始位置以及（可选）源服务器的位置（可从中检索源文件）。  
   
  在 Visual Studio IDE 中调试项目时，调试器知道查找代码的 .pdb 和源文件的默认位置。 如果要在项目源代码之外调试代码（如项目调用的 Windows 或第三方代码），则你必须指定 .pdb（也可以是外部代码的源文件）的位置，这些文件需要与可执行文件完全匹配。  
@@ -101,16 +99,16 @@ ms.locfileid: "47588779"
   
  选定后，加载 DLL 导出表。 处理 Windows 消息、Windows 过程 (WindowProc)、COM 对象、封送或不具有其符号的任何 DLL 时，DLL 导出表中的符号信息将很有用。 读取 DLL 导出信息会占用一些系统开销。 因此，默认情况下此功能被禁用。  
   
- 若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅[dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
+ 若要查看 DLL 导出表中的可用符号，请使用 `dumpbin /exports`。 符号可用于任何 32 位系统 DLL。 从 `dumpbin /exports` 输出中，可以查看到精确的函数名，包括非字母数字字符。 这对于在函数上设置断点很有用。 DLL 导出表中的函数名在调试器的其他位置似乎被截断了。 调用将按调用顺序列出，当前函数（嵌套最深的函数）位于顶端。 有关详细信息，请参阅 [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf)。  
   
 ###  <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> 使用符号服务器查找不在你的本地计算机上的符号文件  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可从实现 symsrv 协议的符号服务器下载调试符号文件。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)并[的 Windows 调试工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx)可实现符号服务器的两个工具。 在 VS **“选项”** 对话框中指定要使用的符号服务器。  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可从实现 symsrv 协议的符号服务器下载调试符号文件。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) 和 [Windows 调试工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) 是可实现符号服务器的两个工具。 在 VS **“选项”** 对话框中指定要使用的符号服务器。  
   
  可供使用的符号服务器包括：  
   
  **Microsoft 公共符号服务器**  
   
- 若要调试在调用系统 DLL 或第三方库时出现的故障，通常需要使用系统 .pdb 文件，这些文件包含表示 Windows DLL、EXE 以及设备驱动程序的符号。 你可从 Microsoft 公共符号服务器获取这些符号。 除了 MDAC、IIS、ISA 和 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 之外，Microsoft 公共符号服务器为 Windows 操作系统提供符号。  
+ 若要调试在调用系统 DLL 或第三方库时出现的故障，通常需要使用系统 .pdb 文件，这些文件包含表示 Windows DLL、EXE 以及设备驱动程序的符号。 你可从 Microsoft 公共符号服务器获取这些符号。 除了 MDAC、IIS、ISA 和 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]之外，Microsoft 公共符号服务器为 Windows 操作系统提供符号。  
   
  若要使用 Microsoft 符号服务器，请选择 **“调试”** 菜单上的 **“选项和设置”** ，然后选择 **“符号”**。 选择 **“Microsoft 符号服务器”**。  
   
@@ -146,7 +144,7 @@ ms.locfileid: "47588779"
   
 -   若要更改搜索路径，请选择未选定的路径或选择 **“新建”** ，然后输入新路径。 选择 **“加载”** 以再次搜索路径，并在找到符号文件时加载符号文件。  
   
--   选择**浏览并查找**_可执行文件名称_**...** 重写任何符号选项并重试搜索路径。 如果找到符号文件，或显示了文件资源管理器供你手动选择符号文件，则加载符号文件。  
+-   选择“浏览并查找 _executable-name_**...** ”重写任何符号选项并重试搜索路径。 如果找到符号文件，或显示了文件资源管理器供你手动选择符号文件，则加载符号文件。  
   
 -   选择 **“更改符号设置...”** 可显示 VS“选项”对话框的 **“选项”** / **“符号”** 页。  
   
@@ -172,9 +170,9 @@ ms.locfileid: "47588779"
   
  **C++ 选项**  
   
- 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 当您使用生成时创建一个.pdb 文件[/ZI 或 /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) （适用于 C/c + +）。  
+ 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 使用 [/ZI 或 /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) （适用于 C/C++）生成时，将创建 .pdb 文件。  
   
- 在中[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，则[/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a)选项命名由编译器创建的.pdb 文件。 当你创建的项目中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]使用向导 **/Fd**选项设置为创建一个名为的.pdb 文件*项目*.pdb。  
+ 在 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]中， [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) 选项命名由编译器创建的 .pdb 文件。 使用向导在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建项目时， **/Fd** 选项将设置为创建一个名为 *project*.pdb 的 文件 .pdb 文件。  
   
  如果使用生成文件生成 C/C++ 应用程序，并指定 **/ZI** 或 **/Zi** 而不指定 **/Fd**，则最终将生成两个 .pdb 文件：  
   
@@ -190,7 +188,7 @@ ms.locfileid: "47588779"
   
  **.NET Framework 选项**  
   
- 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 使用 **/debug**进行生成时，将创建一个 .pdb 文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 **/debug:pdbonly** 进行生成可以生成 .pdb 文件，但是不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute` 。 如果想为不希望其成为可调试的发布版本生成 .pdb 文件，请使用 **/debug:pdbonly** 。 有关详细信息，请参阅[/debug （C# 编译器选项）](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969)或[/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)。  
+ 程序数据库 (.pdb) 文件保存调试和项目状态信息，使用这些信息可以对程序的调试配置进行增量链接。 使用 **/debug**进行生成时，将创建一个 .pdb 文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 **/debug:pdbonly** 进行生成可以生成 .pdb 文件，但是不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute` 。 如果想为不希望其成为可调试的发布版本生成 .pdb 文件，请使用 **/debug:pdbonly** 。 有关详细信息，请参阅 [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) 或 [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2)。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器使用 EXE 或 DLL 文件中的 .pdb 文件的路径查找 project.pdb 文件。 如果调试器无法在该位置找到.pdb 文件，或者该路径无效，调试器将先搜索包含 EXE 的路径，然后搜索 **“选项”** 对话框中指定的符号路径。 该路径通常是 **“符号”** 节点中的 **“调试”** 文件夹。 调试器将不会加载与所调试的可执行文件不匹配的 .pdb 文件。 如果调试器无法找到 .pdb 文件，则将显示 **“查找符号”** 对话框，这将允许你搜索符号或向搜索路径添加其他位置。  
   

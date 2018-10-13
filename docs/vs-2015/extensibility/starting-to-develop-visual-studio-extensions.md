@@ -1,7 +1,7 @@
 ---
 title: 开始开发 Visual Studio 扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8fe5e2ab-a424-4173-9d39-dd082c4d58d0
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 441abc9254fac5b70270fc622740d03ecc43d512
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f98fe27812235d742d5a116f930ab8e70b2cd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471046"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224154"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[开始开发 Visual Studio 扩展到](https://docs.microsoft.com/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)。  
-  
 如果您从未书写过 Visual Studio 扩展之前，你可能会出现一些问题。 我们列出了一些最常见的。 如果看不到所需的信息，使用反馈按钮 (**此页面是否有所帮助？** 屏幕底部) 要求所需内容。  
   
 ## <a name="what-software-do-i-need-to-develop-visual-studio-extensions"></a>开发 Visual Studio 扩展需要哪些软件？  

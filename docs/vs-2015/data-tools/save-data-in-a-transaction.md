@@ -1,7 +1,7 @@
 ---
 title: 将数据保存在事务中 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4b6d6befe4bbe29147a59b9700b8f148154e6c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 60f3014707fe9b06818bf9a47745ca8b253290d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208892"
 ---
 # <a name="save-data-in-a-transaction"></a>将数据保存在事务中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将数据保存在事务中](https://docs.microsoft.com/visualstudio/data-tools/save-data-in-a-transaction)。  
-  
   
 本演练演示如何将数据保存在事务中，通过使用<xref:System.Transactions>命名空间。 此示例使用源自 Northwind 示例数据库的 `Customers` 和 `Orders` 表。  
   

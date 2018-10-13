@@ -1,7 +1,7 @@
 ---
 title: 代码片段架构参考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9dfcb6e7bc29fe29f33b919545a6781a731b7734
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19a14972d36bcb7070e0604b47caab55f41d0126
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481623"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188097"
 ---
 # <a name="code-snippets-schema-reference"></a>代码段架构参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码片段架构参考](https://docs.microsoft.com/visualstudio/ide/code-snippets-schema-reference)。  
-  
 IntelliSense 代码段是预编写的代码段，你可以随时使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将这些代码段插入到你的应用程序中。 可以通过提供代码段来减少键入重复代码或搜索示例所用的时间，从而提高工作效率。 可以使用 IntelliSense 代码段 XML 架构创建自己的代码段，并将它们添加到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 已包含的代码段中。  
   
 ## <a name="intellisense-code-snippets-schema-elements"></a>IntelliSense 代码段架构元素  

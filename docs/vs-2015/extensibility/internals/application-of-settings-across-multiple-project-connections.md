@@ -1,7 +1,7 @@
 ---
 title: 跨多个项目连接设置的应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cc2be78900e7bef33be138dfc8ed9dc1531af7c8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81d6a1f540314863e4e24b3b91c7f4112e0af8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197608"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接应用设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[应用程序的设置跨多个项目连接](https://docs.microsoft.com/visualstudio/extensibility/internals/application-of-settings-across-multiple-project-connections)。  
-  
 源代码管理插件使用源控件的插件 API 1.2 中，生成可用于批处理操作执行相同的源代码管理操作跨多个项目或多个连接上下文。 若要消除冗余，每个项目对话框从用户体验，可以使用批处理。  
   
  如果用户选择多个项属于使用源控制插件 API 1.1 （例如，在不同的文件共享计算机上两个 Web 项目） 生成的源代码管理插件中的多个连接，并检查它们，用户将看到相同的对话框重复。 即使用户单击发生这种情况**应用到所有**中的复选框的对话框中，因为 IDE 将重置其状态，以便每个连接上下文。  

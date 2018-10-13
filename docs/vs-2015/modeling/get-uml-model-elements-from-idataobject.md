@@ -1,7 +1,7 @@
 ---
 title: 从 IDataObject 获取 UML 模型元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a69a6f20fdccdce9d8795c68bf0a70c74604428b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07dd0d092883e643e093c27349574a6509cd9dfb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481574"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199558"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>从 IDataObject 获取 UML 模型元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 IDataObject 获取 UML 模型元素](https://docs.microsoft.com/visualstudio/modeling/get-uml-model-elements-from-idataobject)。  
-  
 用户将元素从任何源拖到关系图上时，在 `System.Windows.Forms.IDataObject` 中对拖动的元素进行编码。 编码取决于源对象的类型。 以下片段演示当源为 UML 关系图时如何检索元素。  
   
 > [!NOTE]

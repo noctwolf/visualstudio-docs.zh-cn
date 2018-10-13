@@ -1,7 +1,7 @@
 ---
 title: 将数据保留在 MSBuild 项目文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 288fe5387a25ed74f0fd18d9d461328f4e922724
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fb062ab2a3f3ad692c3b8aff2d6b8d5fefef207
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480626"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187673"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>保留 MSBuild 项目文件中的数据
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 项目文件中保存数据](https://docs.microsoft.com/visualstudio/extensibility/internals/persisting-data-in-the-msbuild-project-file)。  
-  
 项目子类型可能需要将特定于子类型的数据保存到项目文件以供将来使用。 项目子类型使用项目文件持久性来满足以下要求：  
   
 1.  保存生成项目的过程中使用的数据。 (有关 Microsoft 生成引擎的详细信息，请参阅[MSBuild](http://msdn.microsoft.com/en-us/7c49aba1-ee6c-47d8-9de1-6f29a906e20b)。)可以与生成相关的信息：  

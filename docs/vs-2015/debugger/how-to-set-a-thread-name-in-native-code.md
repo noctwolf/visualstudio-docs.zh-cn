@@ -1,7 +1,7 @@
 ---
 title: 如何： 在本机代码中设置线程名称 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b369aaef3134c64ddabbc03d8f7391bcdea3647
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c040677dfe88c4fdd5db2f7077cfcea9e81099c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191680"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在本机代码中设置线程名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在本机代码中设置线程名称](https://docs.microsoft.com/visualstudio/debugger/how-to-set-a-thread-name-in-native-code)。  
-  
 若要在程序中设置线程名称，请使用 `SetThreadName` 函数，如下面的代码示例所示。 请注意，线程名称将复制到线程，从而可以释放 `threadName` 参数的内存空间。  
   
 ## <a name="example"></a>示例  

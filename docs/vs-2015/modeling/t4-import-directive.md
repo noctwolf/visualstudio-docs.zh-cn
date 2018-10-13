@@ -1,7 +1,7 @@
 ---
 title: T4 导入指令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,19 +12,17 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2b0b4332f9c156bc9690ef94f8670e963203b5a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477082"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204329"
 ---
 # <a name="t4-import-directive"></a>T4 导入指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[T4 导入指令](https://docs.microsoft.com/visualstudio/modeling/t4-import-directive)。  
-  
-在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 文本模板的代码块中，`import` 指令允许您在不提供完全限定名称的情况下引用另一个命名空间中的元素。 它等效于 C# 中的 `using` 或 `imports` 中的 [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)]。  
+在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] T4 文本模板的代码块中，`import` 指令允许你在不提供完全限定名称的情况下引用另一个命名空间中的元素。 它等效于 C# 中的 `using` 或 `imports` 中的 [!INCLUDE[vb_current_short](../includes/vb-current-short-md.md)]。  
   
  有关编写 T4 文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   

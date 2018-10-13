@@ -1,7 +1,7 @@
 ---
 title: 更新 UML 模型从后台线程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 448a24d2bfe7a466a239c025046bd0e6f13ea64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216848"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>从后台线程中更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[中更新 UML 模型从后台线程](https://docs.microsoft.com/visualstudio/modeling/update-a-uml-model-from-a-background-thread)。  
-  
 有时它在后台线程中对模型进行更改时有用。 例如，如果你正在从速度较慢的外部资源加载信息，你可以使用后台线程来监督更新。 这允许用户在更新进行时查看每个更新。  
   
  但请注意，该 UML 存储区并不是线程安全的。 以下预防措施非常重要：  

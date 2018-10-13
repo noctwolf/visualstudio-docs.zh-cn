@@ -1,7 +1,7 @@
 ---
 title: 代码生成和 T4 文本模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,19 +22,17 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e57349e8c6f969986333eb8b12a9a3cf70ba3ce6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229811"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码生成和 T4 文本模板](https://docs.microsoft.com/visualstudio/modeling/code-generation-and-t4-text-templates)。  
-  
-在中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]、 一个*T4 文本模板*是混合的文本块与可生成文本文件的控制逻辑。 控制逻辑被编写为程序中的代码片段[!INCLUDE[csprcs](../includes/csprcs-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。  
+在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中， *T4 文本模板* 是文本块与可生成文本文件的控制逻辑的混合体。 控制逻辑被编写为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]中的程序代码的片段。 使用 Visual Studio 2015 Update 2 及更高版本时，可在 T4 模板指令中使用 C# 6.0 版功能。 所生成的文件可以是任何类型的文本，例如 Web 网页、资源文件或任何语言的程序源代码。  
   
  T4 文本模板有两种类型：  
   
@@ -58,14 +56,14 @@ string webResponseText = new MyTemplate().TransformText();
   
 ```  
   
- 你的应用程序可以在不具有的计算机上运行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]安装。  
+ 你的应用程序可在未安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的计算机上运行。  
   
  若要创建运行时模板，将“预处理过的文本模板”  文件添加到你的项目中。 或者，你也可以添加一个纯文本文件，并将其“自定义工具”  属性设置为 **TextTemplatingFilePreprocessor**。  
   
  有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。 有关模板的语法的详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   
- **设计时 T4 文本模板**中执行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以定义部分源代码以及应用程序的其他资源。  
- 通常，你会使用多个模块读取单个输入文件或数据库中的数据，然后生成部分 `.cs`、 `.vb`或其他源文件。 每个模板生成一个文件。 中执行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]或[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
+ 在**中执行** 设计时 T4 文本模板 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 以定义部分源代码以及应用程序的其他资源。  
+ 通常，你会使用多个模块读取单个输入文件或数据库中的数据，然后生成部分 `.cs`、 `.vb`或其他源文件。 每个模板生成一个文件。 这些模版在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]内执行。  
   
  例如，输入数据可能是配置数据的 XML 文件。 每当在开发过程中编辑 XML 文件时，文本模板都会重新生成部分应用程序代码。 其中一个模板可能类似于以下示例：  
   
@@ -112,7 +110,7 @@ namespace Fabrikam.FirstJob
  从模型中生成代码和其他资源使你可以通过更新模型来更新应用程序。  
   
  [生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)  
- 如果已安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可视化和建模 SDK，可以确保在模型中生成的软件保持最新更改。  
+ 如果已安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可视化和建模 SDK，便可确保生成的软件与模型中的更改保持同步更新。  
   
  [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)  
  文本模板文件的语法。  

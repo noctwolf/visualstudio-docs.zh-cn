@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中编译和生成 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec3a74d911a32d7e7f869ee099c70914cafe9a08
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 65fbe40a3609b0729bdc376196940f2adb670a2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484628"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229224"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中编译和生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Studio 编译和生成](https://docs.microsoft.com/visualstudio/ide/compiling-and-building-in-visual-studio)。  
-  
 在开发周期中，您可以使用 Visual Studio 频繁生成应用程序和创建程序集和可执行程序。 通过经常生成您的代码，您可以更早地标识编译时错误，如不正确的语法、拼错的关键字和类型不匹配项。 您还可以通过频繁生成并运行调试版本的代码来检测和纠正运行时错误，如逻辑错误和语义错误。  
   
  在完全开发和充分调试项目或解决方案之后，您可以在发行版中编译其组件。 默认情况下，发行版将进行优化，并且设计为比调试版本更小且运行速度更快。 有关详细信息，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。  

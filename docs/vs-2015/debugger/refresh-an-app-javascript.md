@@ -1,7 +1,7 @@
 ---
 title: 刷新应用程序 (JavaScript) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca647572eac68dcf70d21b7ed687212a0229568f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c38083a1a8e0255891b29ae23e5cf36d066e27a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180565"
 ---
 # <a name="refresh-an-app-javascript"></a>刷新应用程序 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[刷新应用程序 (JavaScript)](https://docs.microsoft.com/visualstudio/debugger/refresh-an-app-javascript)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  你进行调试，然后刷新通过选择使用 JavaScript 的应用商店应用时，可以对代码进行更改**刷新 Windows 应用**按钮**调试**工具栏。 选择此按钮将重新加载应用程序，但不会停止并重新启动调试器。 通过“刷新”功能，可修改 HTML、CSS 和 JavaScript 代码并迅速看到结果。 Windows 应用商店和 Windows Phone 应用商店应用均支持此功能。  

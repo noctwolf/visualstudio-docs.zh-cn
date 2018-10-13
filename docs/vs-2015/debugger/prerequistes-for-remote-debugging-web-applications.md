@@ -1,7 +1,7 @@
 ---
 title: 远程调试 Web 应用程序的必备组件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,19 +23,17 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 197a6e9b433173f1de13e3506db79e7edf53bade
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 448e6e7705e4df7330abce0e919adc705721102c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227283"
 ---
 # <a name="prerequistes-for-remote-debugging-web-applications"></a>远程调试 Web 应用程序的必备组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[远程调试 Web 应用程序的必备组件](https://docs.microsoft.com/visualstudio/debugger/prerequistes-for-remote-debugging-web-applications)。  
-  
-使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器，您可以在本地计算机或远程服务器上以透明方式调试 Web 应用程序。 这意味着，调试器始终以相同的方式运行，因而允许您在任一计算机上使用相同的功能。 但若要使远程调试正常进行，有一些先决条件。  
+使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器，你可以在本地计算机或远程服务器上以透明方式调试 Web 应用程序。 这意味着，调试器始终以相同的方式运行，因而允许您在任一计算机上使用相同的功能。 但若要使远程调试正常进行，有一些先决条件。  
   
 -   必须在要调试的服务器上安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 远程调试组件。 有关详细信息，请参阅[设置远程调试](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)。  
   
