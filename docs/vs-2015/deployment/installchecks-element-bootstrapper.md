@@ -1,7 +1,7 @@
 ---
 title: '&lt;InstallChecks&gt;元素 （引导程序） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c4f5dde151993e7844cd9295d7aa16f7fd73327b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2d004d02ce886095d73004ee9b282d7d24ab9cd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217199"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt;元素 （引导程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ &lt;InstallChecks&gt;元素 （引导程序）](https://docs.microsoft.com/visualstudio/deployment/installchecks-element-bootstrapper)。  
-  
 `InstallChecks`元素支持启动各种对本地计算机以确保所有适当的应用程序的必备组件都已安装的测试。  
   
 ## <a name="syntax"></a>语法  

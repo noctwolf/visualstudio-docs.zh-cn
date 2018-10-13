@@ -1,7 +1,7 @@
 ---
 title: 如何： 在进程视图中的进程搜索 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ebb0c6a13db0fdc1a586a78038f759c59f8b110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222893"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在进程视图中的进程搜索](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-process-in-processes-view)。  
-  
 可以通过将其进程 ID 或模块字符串用作搜索条件来搜索特定的进程在进程视图中。 此外可以指定搜索的初始传递方向。 进程树中，在对话框中的字段将显示所选的进程的属性。  
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>若要在进程视图中的进程搜索  

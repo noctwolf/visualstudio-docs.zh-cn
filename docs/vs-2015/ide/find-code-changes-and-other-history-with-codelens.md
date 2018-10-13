@@ -1,7 +1,7 @@
 ---
 title: 使用 CodeLens 查找代码更改和其他历史记录 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25aa0b7f87d769d463f97f272f2a64eaa2fcfbf6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224949"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[查找代码更改和其他历史记录使用 CodeLens](https://docs.microsoft.com/visualstudio/ide/find-code-changes-and-other-history-with-codelens)。  
-  
 专注于你的工作并在同时了解你的代码所发生的情况 - 无需离开编辑器。 查找代码引用、代码更改、链接的 Bug、工作项、代码评审和单元测试。  
   
 > [!NOTE]

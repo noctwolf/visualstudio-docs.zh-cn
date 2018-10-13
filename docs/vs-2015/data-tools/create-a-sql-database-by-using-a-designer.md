@@ -1,7 +1,7 @@
 ---
 title: 使用设计器创建 SQL 数据库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 7a641edfbe1b584d324bffca3404a1f7cd3a72ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220730"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用设计器创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用设计器创建 SQL 数据库](https://docs.microsoft.com/visualstudio/data-tools/create-a-sql-database-by-using-a-designer)。  
-  
   
 您可以浏览基本任务，例如添加表和定义列，通过使用 Visual Studio 创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 在完成本演练后，以本地数据库为起点进行其他演练，你会发现更高级的功能。  
   

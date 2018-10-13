@@ -1,7 +1,7 @@
 ---
 title: WCF 调试的限制 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a74fbdae86e1603e97aedb8d293c5a78f522d027
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477756"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219149"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[WCF 调试的限制](https://docs.microsoft.com/visualstudio/debugger/limitations-on-wcf-debugging)。  
-  
 有三种开始 WCF 服务调试的方式：  
   
 -   调试调用服务的客户端进程。 调试器单步执行该服务。 该服务不必与客户端应用程序处于同一个解决方案中。  

@@ -1,7 +1,7 @@
 ---
 title: 演练： 创建旧版语言服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6097177f1287b96914ccb872afa952e5fe3f4682
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 996806b1a15d6e7b45204a954c58b153e33a4be4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220046"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建旧版语言服务](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-creating-a-legacy-language-service)。  
-  
 使用托管的包框架 (MPF) 语言类实现中的语言服务[!INCLUDE[csprcs](../../includes/csprcs-md.md)]非常简单。 所需的 VSPackage，托管语言服务、 语言服务本身和你的语言分析器。  
   
 ## <a name="prerequisites"></a>系统必备  

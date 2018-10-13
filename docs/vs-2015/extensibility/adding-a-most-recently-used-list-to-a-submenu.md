@@ -1,7 +1,7 @@
 ---
 title: 添加最近使用过的子菜单上的列表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a5f0177243c178890673986b0c04b4627505e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89526f799c0b4e260bba140c413f2c89e573a701
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223724"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>将最近使用的列表添加到子菜单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[最最近使用列表添加到子菜单](https://docs.microsoft.com/visualstudio/extensibility/adding-a-most-recently-used-list-to-a-submenu)。  
-  
 本演练基于中的演示[将子菜单添加到菜单](../extensibility/adding-a-submenu-to-a-menu.md)，并演示如何将动态列表添加到子菜单。 动态列表窗体创建最近使用过的 (MRU) 列表的基础。  
   
  动态菜单列表开始菜单上的占位符。 每次显示菜单，Visual Studio 集成的开发环境 (IDE) 要求的所有命令都应显示在占位符都提供 VSPackage。 在菜单上，动态列表可以出现任意位置。 但是，动态列表将通常存储，并显示本身，位于子菜单或菜单的底部。 通过使用这些设计模式，可以使命令进行扩展和收缩而不会影响其他命令的菜单上的位置的动态列表。 在此演练中，动态 MRU 列表显示在现有子菜单，通过行分隔子菜单的其余部分的底部。  

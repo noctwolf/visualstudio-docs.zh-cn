@@ -1,7 +1,7 @@
 ---
 title: SccAddFromScc 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1dd8ee409fd1facae82a8b8c6eeb418a68b4a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 759bc4d64419959812a07bac90bceb940dea4391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220701"
 ---
 # <a name="sccaddfromscc-function"></a>SccAddFromScc 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccAddFromScc 函数](https://docs.microsoft.com/visualstudio/extensibility/sccaddfromscc-function)。  
-  
 此函数允许用户浏览源代码管理系统中已有的文件，并随后使这些文件属于当前项目。 例如，此函数可以获取公共头文件到当前项目而不复制该文件。 返回数组的文件， `lplpFileNames`，包含的用户想要将添加到 IDE 项目的文件列表。  
   
 ## <a name="syntax"></a>语法  

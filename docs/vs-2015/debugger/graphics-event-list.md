@@ -1,7 +1,7 @@
 ---
 title: 图形事件列表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abe27b75810777bcef0fb80a35c5bb5fb44fe983
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 812f58109431bdf2e0cf623b05797009bef5a822
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210777"
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图形事件列表](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-event-list)。  
-  
 使用 Visual Studio 图形分析器中的图形事件列表来浏览在呈现游戏或应用的帧时所记录的 Direct3D 事件。  
   
  事件列表如下：  

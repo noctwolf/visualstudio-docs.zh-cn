@@ -1,7 +1,7 @@
 ---
 title: 编写调试挂钩函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5761b0a32e7739a5611f2d3d07183f0c529fc60c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4439b3c308a3c76172b0de4aa5c8a95f92092c5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218980"
 ---
 # <a name="debug-hook-function-writing"></a>编写调试挂钩函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编写调试挂钩函数](https://docs.microsoft.com/visualstudio/debugger/debug-hook-function-writing)。  
-  
 本节描述了你可以编写的自定义调试挂钩函数，它允许你在调试器的正常处理中将代码插入某些预定义的点中。  
   
 ## <a name="in-this-section"></a>本节内容  

@@ -1,7 +1,7 @@
 ---
 title: UML 用例图： 准则 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c907dc4f1fe2a9d393fb5e92ca64490f7eeb54d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4abd008584732955bdac982dbaa0a629bd9ef90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478427"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214235"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>UML 用例图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 用例图： 准则](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-guidelines)。  
-  
 在 Visual Studio 中，您可以绘制*用例图*汇总应用程序或系统，使用者和他们可以使用它做什么。 若要创建 UML 用例图，在**体系结构**菜单上，单击**新建 UML 或层关系图**。  
   
  有关视频演示，请参阅[将功能组织到用例](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)。  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的常见控件模式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9dc12c1f7f61f6a4f5d52d232d7cca71b1f16888
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224037"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的 Visual Studio 公共控件模式](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/common-control-patterns-for-visual-studio)。  
-  
 ##  <a name="BKMK_CommonControls"></a> 公共控件  
   
 ### <a name="overview"></a>概述  

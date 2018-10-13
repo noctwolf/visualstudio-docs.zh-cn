@@ -1,7 +1,7 @@
 ---
 title: 创建 WPF 工具箱控件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0785ebf5177e892bd5c450525af10dd61d381fc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a521566d25509750334e4f1202699787c3343ca6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225610"
 ---
 # <a name="creating-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 WPF 工具箱控件](https://docs.microsoft.com/visualstudio/extensibility/creating-a-wpf-toolbox-control)。  
-  
 WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自动添加到 WPF 控件**工具箱**时安装该扩展。 本主题演示如何使用模板创建**工具箱**可以分发给其他用户的控件。  
   
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -47,7 +45,7 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许你创建的自�
   
 1.  在设计器中打开 MyToolboxControl.xaml。  
   
-     此设计器显示<xref:System.Windows.Controls.Grid>控件，其中包含<xref:System.Windows.Controls.Button>控件。  
+     此设计器显示包含 <xref:System.Windows.Controls.Button> 控件的 <xref:System.Windows.Controls.Grid> 控件。  
   
 2.  排列网格布局。 当选择<xref:System.Windows.Controls.Grid>控制，蓝色的控件条显示在网格的顶部和左侧边缘上。 您可以添加到网格的行和列，方法是单击标题栏。  
   

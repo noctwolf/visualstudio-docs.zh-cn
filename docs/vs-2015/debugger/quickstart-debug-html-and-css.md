@@ -1,7 +1,7 @@
 ---
 title: 快速入门： 调试 HTML 和 CSS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 104
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b331ccf0cf180364738f5ac9084b0bd2ff6b716b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2896d88ee5730482aeca737f89e5b5340070be7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225474"
 ---
 # <a name="quickstart-debug-html-and-css"></a>快速入门：调试 HTML 和 CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[快速入门： 调试 HTML 和 CSS](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-html-and-css)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
- Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 这些功能支持[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]，Windows Phone 应用商店应用程序，并创建使用 Visual Studio Tools for Apache Cordova 的应用  
+ Visual Studio 针对 JavaScript 应用提供全面的调试体验，其中包括 Internet Explorer 和 Visual Studio 开发人员熟悉的多项功能。 这些功能支持 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]、Windows Phone 应用商店应用，以及使用用于 Apache Cordova 的 Visual Studio 工具创建的应用。  
   
  通过使用 DOM 检查工具所提供的交互式调试模型，你可以查看并修改所呈现的 HTML 和 CSS 代码。 你可以在不停止并重新启动调试器的情况下执行这一切操作。  
   
@@ -197,7 +195,7 @@ ms.locfileid: "47484081"
      ![DOM 资源管理器](../debugger/media/js-dom-explorer.png "JS_DOM_Explorer")  
   
     > [!TIP]
-    >  您还可以选择 DIV 元素在 JavaScript 控制台窗口的左下角中通过键入`select(fView)`在 >> 输入提示符，然后按 enter 键。  
+    >  也可通过在 >> 输入提示符下键入 `select(fView)`，然后按 Enter，在“JavaScript 控制台”窗口的左下角选择此 DIV 元素。  
   
      “DOM 资源管理器”窗口的右侧选项卡上显示的值将自动更新，以反映 DOM 资源管理器中的当前元素。  
   
@@ -295,13 +293,13 @@ ms.locfileid: "47484081"
 ##  <a name="BrowserSupport"></a> 浏览器和平台支持  
  JavaScript 的 Visual Studio 工具、DOM 资源管理器和 JavaScript 控制台窗口在以下平台上受支持：  
   
--   使用 JavaScript 和 HTML 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]和 Windows Phone 应用商店应用  
+-   使用 JavaScript 和 HTML 的[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 和 Windows Phone 应用商店应用  
   
 -   在 [!INCLUDE[win81](../includes/win81-md.md)] 上运行的 Internet Explorer 11  
   
--   在 [!INCLUDE[win8](../includes/win8-md.md)] 上运行的 Internet Explorer 10  
+-   在 [!INCLUDE[win8](../includes/win8-md.md)]上运行的 Internet Explorer 10  
   
- 转[这里](http://go.microsoft.com/fwlink/?LinkID=232448)若要下载[!INCLUDE[win8](../includes/win8-md.md)]和 Visual Studio。  
+ 请前往 [此处](http://go.microsoft.com/fwlink/?LinkID=232448) 下载 [!INCLUDE[win8](../includes/win8-md.md)] 和 Visual Studio。  
   
 ## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
@@ -311,7 +309,7 @@ ms.locfileid: "47484081"
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [调试 WebView 控件](../debugger/debug-a-webview-control.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
- [JavaScript 控制台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [产品支持和辅助功能](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
 

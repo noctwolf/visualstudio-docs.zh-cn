@@ -1,7 +1,7 @@
 ---
 title: 添加和删除属性页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02295041a660ff3e4e7b0565cffd260a4e64c78d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b78fd8c6d89e93e208d00cda069f93a4deb10e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221983"
 ---
 # <a name="adding-and-removing-property-pages"></a>添加和删除属性页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加和删除属性页](https://docs.microsoft.com/visualstudio/extensibility/adding-and-removing-property-pages)。  
-  
 项目设计器提供了用于管理项目属性、 设置和中的资源的集中的位置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 它显示为中的单个窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]集成开发环境 (IDE)，并包含可通过在左侧选项卡来访问在右侧窗格的数目。 在项目设计器中 （通常称为属性页） 的窗格因项目类型和语言而异。 可以通过访问项目设计器**属性**命令**项目**菜单。  
   
  项目子类型常常需要在项目设计器中显示附加属性页。 同样，某些项目子类型可能需要删除的内置属性页。 若要执行，项目子类型必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口并重写<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法。 通过重写此方法并使用`propId`参数，其中包含的值之一<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>枚举，可以筛选、 添加或删除项目属性。 例如，您可能需要将页面添加到依赖于配置的属性页。 若要执行此操作，需要筛选依赖于配置的属性页，然后将新页面添加到现有列表。  

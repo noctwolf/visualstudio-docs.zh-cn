@@ -1,7 +1,7 @@
 ---
 title: POPLISTFUNC |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b2199fd5-d707-4628-92dd-e2a01e2f507a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8b193eae0e41f48c0f947bbf8af596084a1544f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b085401b905011fcf62f5ef94cc214af1d978f3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482539"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224544"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[POPLISTFUNC](https://docs.microsoft.com/visualstudio/extensibility/poplistfunc)。  
-  
 此回调提供给[SccPopulateList](../extensibility/sccpopulatelist-function.md) ide 和源代码管理插件用于更新的文件或目录的列表 (还提供给`SccPopulateList`函数)。  
   
  当用户选择**获取**命令在 IDE 中，则 IDE 将显示一个列表框，用户可以获取的所有文件。 遗憾的是，IDE 不知道用户可能会收到; 的所有文件的确切列表仅插件都有此列表。 如果其他用户将文件添加到源代码管理项目，这些文件应出现在列表中，但 IDE 并不了解它们。 在 IDE 中生成它认为用户可以获取文件的列表。 它为用户显示此列表之前，它将调用[SccPopulateList](../extensibility/sccpopulatelist-function.md) `,`为源代码管理插件提供机会进行添加并从列表中删除文件。  

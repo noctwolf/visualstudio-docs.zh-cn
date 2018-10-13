@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定最终用户将从安装的位置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 68f50fe847d1432292491cd2970c7897eb1388da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 113356a664d94fdd2e8d3e53fae6025d8ef22e60
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213000"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>如何：指定最终用户将从中进行安装的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 从中指定位置的最终用户将安装](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-the-location-where-end-users-will-install-from)。  
-  
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序中，用户可以下载和安装应用程序的位置不一定是最初在其中发布应用程序的位置。 例如，在某些组织中开发人员可能会发布到暂存服务器，应用程序，然后管理员将移动应用程序到 Web 服务器。  
   
  在这种情况下，可以使用`Installation URL`属性来指定用户将可以下载应用程序的 Web 服务器。 这是必需的以便应用程序清单知道在何处查找更新。  

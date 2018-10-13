@@ -1,7 +1,7 @@
 ---
 title: Spy + + 工具栏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6430f8a5698c4b0d2e686370fdd4bce1e98a5827
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ffc118818bd7af3f79b9c636dc4236ac0031af3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484642"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224700"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Spy + + 工具栏](https://docs.microsoft.com/visualstudio/debugger/spy-increment-toolbar)。  
-  
 该工具栏显示在 Spy + + 中的菜单栏下。 若要显示或隐藏工具栏上**视图**菜单上，单击**工具栏**。  
   
  在工具栏上提供了以下控件。  

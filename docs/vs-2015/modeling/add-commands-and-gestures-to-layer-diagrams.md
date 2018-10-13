@@ -1,7 +1,7 @@
 ---
 title: 向层关系图添加命令和笔势 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9434c93caf9cfe614a01cf9a10912f1d0562b9bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478882"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223207"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>向层关系图添加命令和笔势
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将命令和笔势添加到依赖项关系图](https://docs.microsoft.com/visualstudio/modeling/add-commands-and-gestures-to-layer-diagrams)。  
-  
 可以在 Visual Studio 中的层关系图上定义上下文菜单命令和笔势处理程序。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。  
   
  如果你愿意，可以在同一 Visual Studio 项目中定义多个命令和笔势处理程序。 还可以将多个此类项目合并到一个 VSIX 中。 例如，你可以定义其中包含层命令、特定于域的语言和用于 UML 关系图的命令的单个 VSIX。  
@@ -60,7 +58,7 @@ ms.locfileid: "47478882"
   
      [定义笔势处理程序](#gesture)  
   
-6.  主实例中安装扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+6.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>将命令或笔势添加到单独的 VSIX  
  如果想要创建一个包含命令、层验证程序和其他扩展的 VSIX，建议创建一个项目来定义 VSIX，并分隔处理程序的项目。 有关其他类型的建模扩展的信息，请参阅[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -111,7 +109,7 @@ ms.locfileid: "47478882"
   
 2.  若要测试此功能，请按 CTRL+F5 或 F5。 将打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在此实例中创建或打开层关系图。  
   
-3.  若要安装的主实例中的 VSIX [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 双击 Windows 资源管理器（Windows 8 中的文件资源管理器）中的 VSIX 文件。  
+3.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **.vsix\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 双击 Windows 资源管理器（Windows 8 中的文件资源管理器）中的 VSIX 文件。  
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   

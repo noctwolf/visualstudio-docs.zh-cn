@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建域特定语言解决方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 305360700463f1b5379f711598e6eed31c1de36c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf28035726f20aa715bfe12a48b1378edfacb673
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223206"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建域特定语言解决方案](https://docs.microsoft.com/visualstudio/modeling/how-to-create-a-domain-specific-language-solution)。  
-  
 使用一个专用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案。  
   
 ## <a name="prerequisites"></a>系统必备  

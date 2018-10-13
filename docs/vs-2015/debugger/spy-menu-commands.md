@@ -1,7 +1,7 @@
 ---
 title: 监视菜单命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2357f28653af6d941eef1a833cd2cbcc4b287d68
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 065f000413677ae888985ffaa4dbd0b98261a7e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479996"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216276"
 ---
 # <a name="spy-menu-commands"></a>“监视”菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[监视菜单命令](https://docs.microsoft.com/visualstudio/debugger/spy-menu-commands)。  
-  
 **Spy**菜单提供命令来使用 Spy + + Windows 和视图。  
   
  **Windows**  
@@ -45,7 +43,7 @@ ms.locfileid: "47479996"
  **查找窗口**  
  显示**FindWindow**对话框可以使用鼠标选择窗口。  
   
- <bpt id="p1">**</bpt>Exit<ept id="p1">**</ept>  
+ **Exit**  
  关闭 Spy + + 实用程序。
 
 

@@ -1,7 +1,7 @@
 ---
 title: 代码分析应用程序错误 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,15 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f33e8cf139193618cfe8fe45d916ec59b38a74c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 66d611903c71cc526c01c1062c85ceef2e7975f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470279"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225012"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[代码分析应用程序错误](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-application-errors)。
-
 本部分是由托管的代码分析工具生成的错误消息的引用。 若要获取特定的错误消息的帮助，请键入中的错误号**寻找**框在索引中。
 
 ## <a name="in-this-section"></a>本节内容

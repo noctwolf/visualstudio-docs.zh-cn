@@ -1,7 +1,7 @@
 ---
 title: 调试托管的代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efa999fabc0d27900900c6d1512cca3fde76043d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ba07591cf4682ef40579f58b290f6b26bb4c111
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483724"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211583"
 ---
 # <a name="debugging-managed-code"></a>调试托管代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Debugging Managed Code](https://docs.microsoft.com/visualstudio/debugger/debugging-managed-code)。  
-  
 本节包含了托管应用程序或使用面向公共语言运行时的语言（如 Visual Basic、C# 和 C++）编写的应用程序的常见调试问题和调试技术。 此处介绍的技术都是高级技术。 有关详细信息，请参阅[使用调试器](../debugger/debugger-basics.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
@@ -45,7 +43,7 @@ ms.locfileid: "47483724"
  介绍<xref:System.Diagnostics.Debug>并<xref:System.Diagnostics.Trace>类，可以将运行时消息写入与其**输出**窗口。 这些类中包含的输出方法支持两种信息输出：不中断执行的信息输出以及在指定条件失败时也会中断执行的信息输出。  
   
  [托管代码中的断言](../debugger/assertions-in-managed-code.md)  
- 描述托管代码中的断言，该断言用于测试作为 `Assert` 方法的参数指定的条件。 此外，本主题还提供代码示例、有关使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类方法的信息、代码调试版和发布版中的注意事项、副作用、断言参数、自定义断言行为和配置文件。  
+ 描述托管代码中的断言，该断言用于测试作为 `Assert` 方法的自变量指定的条件。 此外，本主题还提供代码示例、有关使用 <xref:System.Diagnostics.Debug> 和 <xref:System.Diagnostics.Trace> 类方法的信息、代码调试版和发布版中的注意事项、副作用、断言自变量、自定义断言行为和配置文件。  
   
  [Visual Basic 中的 Stop 语句](../debugger/stop-statements-in-visual-basic.md)  
  描述 `Stop` 语句，该语句提供了一种设置断点的替代方法。 还提供了代码示例并对 `Stop` 语句和 `End` 语句以及 `Stop` 和 `Assert` 语句进行了比较。  
@@ -54,9 +52,9 @@ ms.locfileid: "47483724"
  提供创建 Windows 窗体并调试该窗体的逐步骤说明。 Windows 窗体（托管 Windows 应用程序的标准组件）是最常见的托管应用程序之一。 本演练使用 Visual C# 和 Visual Basic，不过使用 C++ 创建 Windows 窗体的方法通常与此类似。  
   
  [调试 OnStart 方法](../debugger/how-to-debug-the-onstart-method.md)  
- 提供使您能够调试托管 Windows 服务的 `OnStart` 方法的代码示例。 若要调试 Windows 服务的 `OnStart` 方法，您必须另外添加几行代码以模拟该服务。  
+ 提供使你能够调试托管 Windows 服务的 `OnStart` 方法的代码示例。 若要调试 Windows 服务的 `OnStart` 方法，你必须另外添加几行代码以模拟该服务。  
   
- [混合模式调试](../debugger/debugging-mixed-mode-applications.md)  
+ [Mixed-Mode Debugging](../debugger/debugging-mixed-mode-applications.md)  
  讨论调试混合模式的应用程序。 这表示合并本机代码和托管代码的任何应用程序。  
   
  [错误：由于系统上启用了内核调试程序，因此不可能进行调试](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)  

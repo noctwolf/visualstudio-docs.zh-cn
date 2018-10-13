@@ -1,7 +1,7 @@
 ---
 title: 调试本机代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a4c8d5c19ea397f8fc23a962a045645740a1164
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e04540f1ed9def4e1c292a165982bf53f9439096
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217649"
 ---
 # <a name="debugging-native-code"></a>调试本机代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试本机代码](https://docs.microsoft.com/visualstudio/debugger/debugging-native-code)。  
-  
 本节讲述本机应用程序的一些常见调试问题和调试技术。 本节阐述的技术属于高级别技术。 使用 Visual Studio 调试器的机制，请参阅[调试器路线图](../debugger/debugger-basics.md)。  
   
 ## <a name="in-this-section"></a>本节内容  

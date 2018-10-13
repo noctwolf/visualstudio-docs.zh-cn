@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 调试器可扩展性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4c3a9644e7150ea31cca2aba927bbdbacb8b0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca40964befc940bd0cf28457755f5f338ea36579
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481813"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212610"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 调试器可扩展性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 调试器可扩展性](https://docs.microsoft.com/visualstudio/extensibility/debugger/visual-studio-debugger-extensibility)。  
-  
 Visual Studio 提供了完全交互式源代码调试器，跟踪的错误在程序中提供一个功能强大且易于使用的工具。 调试器具有全面的支持 Visual Basic、 C#、 C/c + + 和 JavaScript。 但是，对于[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]，即从可用[Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453)、 可以使用相同的丰富功能在调试器中支持其他编程语言。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器是常见的前端 （即，用户界面），接下来，特定于正在调试的语言的调试组件。 对于新语言，所有所需的支持通过[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器将创建必要的后端组件，如调试引擎 (DE)。 这正是[!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]传入。  
@@ -51,7 +49,7 @@ Visual Studio 提供了完全交互式源代码调试器，跟踪的错误在程
  [选择调试引擎实施策略](../../extensibility/debugger/choosing-a-debug-engine-implementation-strategy.md)  
  讨论如何实现您 DE。  
   
- [参考](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
+ [引用](../../extensibility/debugger/reference/reference-visual-studio-debugging-apis.md)  
  文档[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试 API。  
   
  [示例](../../extensibility/debugger/visual-studio-debugging-samples.md)  
