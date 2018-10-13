@@ -1,7 +1,7 @@
 ---
 title: 安装第三方单元测试框架 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a0f17f4c49c88b341c6ccc7583f7069c8b5142a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301114"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安装第三方单元测试框架](https://docs.microsoft.com/visualstudio/test/install-third-party-unit-test-frameworks)。  
-  
 Visual Studio 测试资源管理器可以运行任何针对该资源管理器开发了适配器接口的单元测试框架。 框架的安装程序会安装二进制文件，并为它支持的语言添加 Visual Studio 项目模板。 使用模板创建项目时，框架会向测试资源管理器注册。 Visual Studio 解决方案可以包含使用不同框架和面向不同语言的单元测试项目。 测试资源管理器可运行所有这些解决方案。  
   
  **要求**  

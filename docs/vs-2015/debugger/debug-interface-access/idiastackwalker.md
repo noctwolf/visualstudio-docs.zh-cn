@@ -1,7 +1,7 @@
 ---
 title: IDiaStackWalker |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a86cc22a26d553c0239beedb011b3ecb9d79f2f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d888418906922e58b6d92fc3b13b8214b3d3d7c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291364"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDiaStackWalker](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiastackwalker)。  
-  
 提供方法来执行堆栈遍历的.pdb 文件中使用的信息。  
   
 ## <a name="syntax"></a>语法  

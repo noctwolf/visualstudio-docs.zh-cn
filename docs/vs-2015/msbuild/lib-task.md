@@ -1,7 +1,7 @@
 ---
 title: LIB 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdcece820af764e627aafc43ef405c627724b68
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 75e15c0230526fc7647144cbde566c693be58cbe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588855"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285501"
 ---
 # <a name="lib-task"></a>LIB 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[LIB 任务](https://docs.microsoft.com/visualstudio/msbuild/lib-task)。  
-  
   
 包装 Microsoft 32 位库管理器工具 (lib.exe)。 库管理器创建并管理通用对象文件格式 (COFF) 对象文件的库。 库管理器还可以创建导出文件和导入库，以便引用导出的定义。 有关详细信息，请参阅 [LIB 参考](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91)和[运行 LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd)。  
   

@@ -1,7 +1,7 @@
 ---
 title: 从文本模板访问 Visual Studio 或其他主机 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5bcd1811db000b39f7c9897f1329434af9fe5258
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3eb61ab5d372d02581c68391d125c7def23a402a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298475"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>从文本模板访问 Visual Studio 或其他主机
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[访问 Visual Studio 或从文本模板的其他主机](https://docs.microsoft.com/visualstudio/modeling/accessing-visual-studio-or-other-hosts-from-a-text-template)。  
-  
 在文本模板中，您可以使用方法和属性执行模板，如主机公开[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
  这适用于常规文本模板，不经过预处理的文本模板。  

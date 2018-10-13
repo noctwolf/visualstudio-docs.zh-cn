@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用导入设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f1fc68f77e714efcd1d577cce6c988ef0943d71c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 776fbd9ba58268adb16957c732b96a7c8303b213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278377"
 ---
 # <a name="how-to-use-the-imports-designer"></a>如何：使用导入设计器
 导入设计器允许您为将在表达式中使用的类型输入命名空间。 更喜欢**导入**或**使用**Visual Basic.NET 和 C# 中，导入设计器中指定命名空间中的关键字使您能够只需进入您的表达式而不是完全限定的类型名称版本类型名称。  

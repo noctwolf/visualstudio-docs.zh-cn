@@ -1,7 +1,7 @@
 ---
 title: T4 程序集指令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,19 +12,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 072f2fe9ff82a99370677c50c6c97929c8e0b330
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ede2e84ac644fc8e1438873ea561ef3010f670c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482094"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300997"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[T4 程序集指令](https://docs.microsoft.com/visualstudio/modeling/t4-assembly-directive)。  
-  
-在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 设计时文本模板中，`assembly` 指令可加载程序集，以便您的模板代码可使用其类型。 该作用类似于在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中添加程序集引用。  
+在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 设计时文本模板中，`assembly` 指令可加载程序集，以便你的模板代码可使用其类型。 该作用类似于在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中添加程序集引用。  
   
  编写文本模板的一般概述，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   
@@ -40,7 +38,7 @@ ms.locfileid: "47482094"
   
  程序集名称应为以下各项之一：  
   
--   GAC 中程序集的强名称，例如 `System.Xml.dll`。 还可以使用长形式，例如 `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`。 有关详细信息，请参阅<xref:System.Reflection.AssemblyName>。  
+-   GAC 中程序集的强名称，例如 `System.Xml.dll`。 还可以使用长形式，例如 `name="System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"`。 有关详细信息，请参阅 <xref:System.Reflection.AssemblyName> 。  
   
 -   程序集的绝对路径  
   

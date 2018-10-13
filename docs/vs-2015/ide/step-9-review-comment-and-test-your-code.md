@@ -1,7 +1,7 @@
 ---
 title: 步骤 9：评审代码、为代码添加注释和测试代码 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e520d77a09ac9a1b1f19670c6638d064430af80f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300399"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 9： 评审、 注释和测试代码](https://docs.microsoft.com/visualstudio/ide/step-9-review-comment-and-test-your-code)。  
-  
 接下来，将向代码添加注释。 注释是一个说明，它不会更改程序的行为。 它使阅读你代码的人更容易理解代码的行为。 在代码中添加注释是一个好习惯。 在 Visual C# 中，可用两个正斜杠 (//) 将一行标记为一个注释。 在 Visual Basic 中，可用一个单引号 (') 将一行标记为一个注释。 添加注释后即可测试您的程序。 当你处理你的项目时，最好经常运行和测试代码，以便你可在代码变复杂之前尽早捕获和修复任何问题。 这称为“迭代测试”。  
   
  您刚才构建了可用的程序，虽然尚未完成，但已能够下载图片。 在向代码添加注释并测试代码之前，请先花点时间了解一些代码概念，因为你将会频繁使用这些概念：  
@@ -62,7 +60,7 @@ ms.locfileid: "47472206"
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  “showButton”按钮的 Click 事件处理程序现已完成并可正常使用。 您已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。  
+    >  “showButton”按钮的 Click 事件处理程序现已完成并可正常使用。 你已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。  
   
     > [!TIP]
     >  IDE 可让你轻松地编写代码，而代码片段 是 IDE 为此采取的方式之一。 代码片段是一类快捷方式，它可扩展到一个小的代码块。  

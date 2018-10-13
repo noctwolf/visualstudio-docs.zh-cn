@@ -1,7 +1,7 @@
 ---
 title: 本机运行时检查自定义 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65aaef84c96605eb0ac5a4836c637c2990a15477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 906aca3071c9abc6bd06ac1f0dc4d75bd1920a61
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483096"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300880"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[本机运行时检查自定义](https://docs.microsoft.com/visualstudio/debugger/native-run-time-checks-customization)。  
-  
 使用编译 **/RTC** （运行时检查），或使用`runtime_checks`杂注，C 运行时库提供了本机运行时检查。 某些情况下，可能需要自定义运行时检查：  
   
 -   将运行时检查信息传送到默认以外的文件或目标。  

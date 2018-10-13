@@ -1,7 +1,7 @@
 ---
 title: 如何：从命令行用探查器检测本机独立组件并收集计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 566bd0c6455ef00a7629be34890b5613c381d4e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80a58cd6427f6f59629abf591141b2af036bb345
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278169"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：从命令行用探查器检测本机独立组件并收集计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 检测本机独立组件，并从命令行收集计时数据使用 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line)。  
-  
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件和收集详细计时数据。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 扩展层关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: af5058ba0d88c91ea89a33523002294339dd32f3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478781"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301829"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展依赖项关系图](https://docs.microsoft.com/visualstudio/modeling/extend-layer-diagrams)。  
-  
 可以编写代码以创建和更新层关系图，并针对 Visual Studio 中的层关系图验证程序代码的结构。 可以添加显示在关系图的快捷（上下文）菜单上的命令、自定义拖放笔势并从文本模板访问层模型的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 (VSIX) 中，并将其分发给其他 Visual Studio 用户。  
   
  有关层关系图的详细信息，请参阅：  
@@ -52,7 +50,7 @@ ms.locfileid: "47478781"
   
  在想要运行层扩展的计算机上必须安装合适版本的 Visual Studio。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
   
- 若要查看支持层关系图的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支持层关系图的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [向层关系图添加命令和笔势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

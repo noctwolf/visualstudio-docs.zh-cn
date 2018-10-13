@@ -1,7 +1,7 @@
 ---
 title: 使用项目工厂创建的项目实例 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ae36269de9d9911092bedb87f18f9aff3ca76a2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 28ca37af638802e3b9efd160b00d1b245d3ae4a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481250"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288335"
 ---
 # <a name="creating-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建项目实例通过使用项目工厂](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-project-instances-by-using-project-factories)。  
-  
 中的项目类型[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]使用*项目工厂*若要创建的项目对象的实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable： 只可以使用项目工厂创建它们。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 调用在你的 VSPackage 中实现，当用户加载现有项目或创建新的项目中的项目工厂[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 新的项目对象提供具有足够的信息的 IDE 来填充解决方案资源管理器。 新的项目对象还提供了所需的接口支持所有相关的 UI 操作启动的 IDE。  

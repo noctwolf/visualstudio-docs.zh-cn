@@ -1,7 +1,7 @@
 ---
 title: 创建 Windows 窗体工具箱控件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bc1deab4439133eb43348289fcfbba204a1cf9ff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b7f1c5f9f052253e2b18ac2f7c669b7442ac391
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294211"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 Windows 窗体工具箱控件](https://docs.microsoft.com/visualstudio/extensibility/creating-a-windows-forms-toolbox-control)。  
-  
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -67,7 +65,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
     |`Button1`|**文本**|重置|  
   
 ### <a name="coding-the-user-control"></a>编码用户控件  
- `Counter` 控件将公开一个用于递增计数器的方法、一个计数器每次递增时均会引发的事件、一个 `Reset` 按钮，以及 3 个存储当前计数、显示文本及是显示还是隐藏 `Reset` 按钮的属性。 `ProvideToolboxControl`属性确定在何处**工具箱**`Counter`控件将显示。  
+ `Counter` 控件将公开一个用于递增计数器的方法、一个计数器每次递增时均会引发的事件、一个 `Reset` 按钮，以及 3 个存储当前计数、显示文本及是显示还是隐藏 `Reset` 按钮的属性。 `ProvideToolboxControl` 特性确定 **控件会出现在“工具箱”**`Counter` 的什么位置。  
   
 ##### <a name="to-code-the-user-control"></a>编写用户控件的代码  
   
@@ -145,7 +143,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
     ```  
   
-8.  类定义正上方中`ProvideToolboxControl`特性声明，将从第一个参数的值更改`"MyWinFormsControl.Counter"`到`"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。  
+8.  在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。  
   
      以下示例演示了 `ProvideToolboxControl` 特性和调整后的类定义。  
   

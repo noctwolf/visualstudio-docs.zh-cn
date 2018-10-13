@@ -1,7 +1,7 @@
 ---
 title: System.Activities 选项卡上，选择工具箱项对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9c769058aaf86796780645c77b5bc2173db52048
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bed2df94edefdd074fab12244b93c032670f8cec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292040"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>“System.Activities”选项卡 ->“选择工具箱项”对话框
 此选项卡**选择工具箱项**对话框中显示的列表[!INCLUDE[wf](../includes/wf-md.md)]活动、 模板和项目可用。 若要显示此列表，请选择**选择工具箱项**从**工具**菜单或通过右击**工具箱**并选择**选择项**以显示**选择工具箱项**对话框中，并选择其**System.Activities**选项卡。默认情况下，该列表包含 System.Activities、 System.ServiceModel.Activities 和 System.Activities.Core.Presentation 程序集; 的工作流活动但是，仅系统提供所示的活动和活动通过显示在其他程序集添加**工具箱**默认情况下选中。 最近添加的活动，会自动选中，并显示在**工具箱**当你单击**确定**对话框上。 此外，这些项显示在**工具箱**对应于活动/项/模板所在的命名空间的新类别下。  

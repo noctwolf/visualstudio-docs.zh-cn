@@ -1,7 +1,7 @@
 ---
 title: 如何：取消显示编译器警告 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b8555c07dc62237ba202487340ad77b5e04a77e4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588854"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286086"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消显示编译器警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 禁止显示编译器警告](https://docs.microsoft.com/visualstudio/ide/how-to-suppress-compiler-warnings)。  
-  
 你可以清理生成日志，方法是指定一个或多个不希望包含的编译器警告类型。 例如，将生成日志的详细级别设置为一般、详细或诊断时，可以使用此方法查看自动生成的部分信息，而不是所有信息。 有关详细级别的更多信息，请参阅[如何：查看、保存和配置生成日志文件](../ide/how-to-view-save-and-configure-build-log-files.md)。  
   
 ### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>取消显示特定的 Visual C# 或 F# 警告  

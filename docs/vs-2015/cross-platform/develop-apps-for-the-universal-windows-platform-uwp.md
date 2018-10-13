@@ -1,7 +1,7 @@
 ---
 title: 开发面向通用 Windows 平台 (UWP) 的应用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1c8bfd3cc23bd8c0eef09796c37f322e9e9f319f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287087"
 ---
-# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发通用 Windows 平台 (UWP) 的应用
+# <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[开发通用 Windows 平台 (UWP) 应用](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)。  
-  
   
 使用通用 Windows 平台和我们的一项 Windows 核心，可在任何 Windows 10 设备上（从电话到桌面）运行同一应用。 使用 Visual Studio 2015 和通用 Windows 应用开发工具创建这些通用 Windows 应用。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建 ClickOnce 应用程序的文件关联 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 0cfdbb9262f9a70f3f680554f562ff6c5c2380b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6d5d7b6196b78bfaa68d944b9e652dabf54b85
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480503"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300935"
 ---
 # <a name="how-to-create-file-associations-for-a-clickonce-application"></a>如何：为 ClickOnce 应用程序创建文件关联
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建文件关联的 ClickOnce 应用程序](https://docs.microsoft.com/visualstudio/deployment/how-to-create-file-associations-for-a-clickonce-application)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 这样，当用户打开这些类型的文件将自动启动该应用程序，应用程序可以与一个或多个文件扩展名相关联。 添加到的文件名称扩展支持[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序非常简单。  
   
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>若要创建 ClickOnce 应用程序的文件关联  

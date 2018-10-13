@@ -1,7 +1,7 @@
 ---
 title: 使用自定义注册特性注册扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 98068fa7-bda1-4922-b3f6-28680de58c3d
 caps.latest.revision: 3
 manager: douge
-ms.openlocfilehash: e94d6a674590430e0635c297f21be9d356c56a71
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 251c31efcbb8a72efac51f246e644a30a79ed999
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279833"
 ---
 # <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>使用自定义注册特性注册扩展
 在某些情况下可能需要创建新的注册属性为扩展插件。 若要添加新的注册表项或将新值添加到现有的密钥，可以使用注册属性。 新的属性必须派生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，并且必须重写<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  

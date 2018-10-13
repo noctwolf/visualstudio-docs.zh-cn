@@ -1,7 +1,7 @@
 ---
 title: 适用于跨平台移动开发的 Visual C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 12
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 7890914a982ccea8754252da3e8fdbc8b3b39579
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2b4304d3ac2a00f1120d7ae631acbd656ea1b72d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484334"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295004"
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>用于跨平台移动开发的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用于跨平台移动开发的 Visual c + +](https://docs.microsoft.com/visualstudio/cross-platform/visual-cpp-for-cross-platform-mobile-development)。  
-  
   
 可通过适用于跨平台移动开发的 Visual C++，构建面向 iOS、Android 和 Windows 设备的本机 C++ 应用，并在为 iOS、Android 和 Windows 构建的库中分享通用代码。 这是安装了 SDK 以及共享库和本机应用的跨平台开发所需的工具的 Visual Studio 2015 中提供的一个选项。 安装后，你可以使用 Visual C++ 创建除了在 Windows、Windows Phone 和 Xbox，还可以在 iOS 和 Android 设备和平台上运行的代码。  
   

@@ -1,7 +1,7 @@
 ---
 title: 步骤 1：创建 Windows 窗体应用程序项目 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d494cb565e00633e36af35f230b0208ee0378a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd6c7f5398575f70da4414cfd529dbd6a67f5c6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483357"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292378"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步骤 1：创建 Windows 窗体应用程序项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 1： 创建 Windows 窗体应用程序项目](https://docs.microsoft.com/visualstudio/ide/step-1-create-a-windows-forms-application-project)。  
-  
 创建图片查看器时，第一步是创建 Windows 窗体应用程序项目。  
   
  ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 1](http://go.microsoft.com/fwlink/?LinkId=205209)（教程 1：用 Visual Basic 创建图片查看器 - 视频 1）或 [Tutorial 1: Create a Picture Viewer in C# - Video 1](http://go.microsoft.com/fwlink/?LinkId=205199)（教程 1：用 C# 创建图片查看器 - 视频 1）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  

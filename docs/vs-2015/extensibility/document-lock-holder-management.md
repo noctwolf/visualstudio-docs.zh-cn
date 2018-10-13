@@ -1,7 +1,7 @@
 ---
 title: 文档锁持有者管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0cf3e532a7a20be746405a7c5f90bb2c345a36cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba494d38384263570289b3f84b90fc8b5b5931e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296720"
 ---
 # <a name="document-lock-holder-management"></a>文档锁持有者管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[文档锁持有者管理](https://docs.microsoft.com/visualstudio/extensibility/document-lock-holder-management)。  
-  
 运行文档表 (RDT) 维护打开的文档和它们具有的任何编辑锁的计数。 以编程方式编辑在后台，而用户看到在文档窗口中打开的文档时，您可以编辑锁放置 RDT 中的文档。 通过修改通过图形用户界面的多个文件的设计人员通常使用此功能。  
   
 ## <a name="document-lock-holder-scenarios"></a>文档锁持有者方案  

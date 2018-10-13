@@ -1,7 +1,7 @@
 ---
 title: IDebugProcessQueryProperties::QueryProperty |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9a91707d-a590-44ef-b122-69d9816a7a79
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2c863c2a0d6d19fc323a6f7a77749fe5fbca5047
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61e2cb4d0237834415c9a9fc6ca86f553b6df6bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483730"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292989"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugProcessQueryProperties::QueryProperty](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugprocessqueryproperties-queryproperty)。  
-  
 此方法查询的调试过程的指定的属性值。  
   
 ## <a name="syntax"></a>语法  

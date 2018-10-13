@@ -1,7 +1,7 @@
 ---
 title: WaitStart | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1e452fb46af37778a94dee271adf47a1255e1b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9f111ae1aed079f0c0cc0d94a1d1da7c8557e76
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479316"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285904"
 ---
 # <a name="waitstart"></a>WaitStart
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[WaitStart](https://docs.microsoft.com/visualstudio/profiling/waitstart)。  
-  
 仅当探查器已初始化，或已超过指定秒数时，WaitStart 选项才使 VSPerfCmd.exe Start 子命令返回。 默认情况下，Start 命令将立即返回。 如果 Start 子命令在未初始化探查器的情况下就返回，则将返回一个错误。 如果未指定秒数，Start 命令将无限期等待。  
   
  WaitStart 选项在批处理文件中十分有用，可确保探查器已经过初始化。  

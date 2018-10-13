@@ -1,7 +1,7 @@
 ---
 title: 用于编码的 UI 测试的示例 Excel 外接程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0f0b4211b51940564041fab5777d6594168e1329
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 564669d5af3ea526ad8822d3aea7310095151c6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290675"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>用于编码的 UI 测试的示例 Excel 外接程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[示例 Excel 外接程序用于编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/sample-excel-add-in-for-coded-ui-testing)。  
-  
 此 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 示例外接程序经过特别设计，用于支持对 Visual Studio Enterprise 中记录和运行的 Excel 工作表进行编码的 UI 测试。 此外接程序是使用 Visual Studio Tools for Office 创建的。  
   
  有关如何创建 Excel 外接程序的详细信息，请参阅[演练：创建你的第一个 Excel VSTO 外接程序](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)或在 MSDN 中搜索“Excel 外接程序”。  

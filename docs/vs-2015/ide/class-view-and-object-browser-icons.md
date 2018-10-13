@@ -1,7 +1,7 @@
 ---
 title: “类视图”和“对象浏览器”图标 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 853ec238cefd5588096b5bd0318acfba30734e52
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483263"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279729"
 ---
 # <a name="class-view-and-object-browser-icons"></a>“类视图”和“对象浏览器”图标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[类视图和对象浏览器图标](https://docs.microsoft.com/visualstudio/ide/class-view-and-object-browser-icons)。  
-  
 类视图 * * 并**对象浏览器**显示表示代码实体，例如图标、 命名空间、 类、 函数和变量。 下表展示和描述了图标。  
   
 |图标|描述|图标|描述|  

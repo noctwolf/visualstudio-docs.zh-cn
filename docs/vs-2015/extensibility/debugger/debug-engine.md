@@ -1,7 +1,7 @@
 ---
 title: 调试引擎 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89f2c2fafb397246a8a2df8dab7d59a361edc11c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 781712ad9ef199073028b62a3fc5a50b4c2cad77
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282680"
 ---
 # <a name="debug-engine"></a>调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试引擎](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-engine)。  
-  
 调试引擎 (DE) 适用于解释程序或操作系统提供调试服务，如执行控制、 断点、 和表达式计算。 DE 负责监视正在调试的程序的状态。 不要为此，DE 使用任何方法可供它在支持的运行时，是否从 CPU 或 Api 提供由运行时。  
   
  例如，公共语言运行时 (CLR) 提供了机制来监视正在运行的程序通过 ICorDebugXXX 接口。 支持 CLR DE 使用适当的 ICorDebugXXX 接口来跟踪正在调试托管的代码程序。 它然后通信会话调试管理器 (SDM) 会转发到此类信息的状态的任何更改[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  

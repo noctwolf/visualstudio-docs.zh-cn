@@ -1,7 +1,7 @@
 ---
 title: 管理调试器的异常 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8837a633c12277a1caac2f88af3eb85a4db2dafc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05fda0b130d765d5028e9c257102100708908dca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478439"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285917"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>管理调试器的异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理 Visual Studio 调试器的异常](https://docs.microsoft.com/visualstudio/debugger/managing-exceptions-with-the-debugger)。  
-  
 异常是执行程序时发生的错误状态的指示。 你可以并且应该提供响应最重要异常的处理程序，但了解如何设置调试程序以为你想要查看的异常执行中断操作也很重要。  
   
  异常发生时，调试程序将一条异常消息写入到输出窗口。 它可能会在以下情况中中断执行：  
@@ -58,7 +56,7 @@ ms.locfileid: "47478439"
   
 -   调试程序设置为在引发异常时立即中断执行（在调用任何处理程序之前）时。  
   
--   如果设置了[仅我的代码](../debugger/just-my-code.md)，且调试设置为出现在用户代码中未处理任何异常中断。  
+-   如果设置了 [Just My Code](../debugger/just-my-code.md)，且调试程序设置为出现任何未在用户代码中进行处理的异常时执行中断操作。  
   
 > [!NOTE]
 >  ASP.NET 有一个顶级异常处理程序，可以在浏览器中显示错误页。 除非启用 **“仅我的代码”** ，否则它不会中断执行。 有关示例，请参阅以下 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  

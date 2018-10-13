@@ -1,7 +1,7 @@
 ---
 title: VSCT XML 架构参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 84490c5bbaba926cb76927b5e545b88c4c1d4757
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a8975e53d690f4f2e13b08ccf290492955c49b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477314"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293051"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 架构参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSCT XML Schema Reference](https://docs.microsoft.com/visualstudio/extensibility/vsct-xml-schema-reference)。  
-  
 提供一个命令表编译器架构元素，其中包含允许的子元素和属性为每个。  
   
  基于 XML 的命令表配置 (.vsct) 文件定义对集成的开发环境 (IDE) 的 VSPackage 提供的命令元素。 这些元素包括菜单项、 菜单、 工具栏和组合框。  

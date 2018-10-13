@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用反汇编窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 17747cdab2987a053ef5fff2bc7b8a11867d94fc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa414aacc8b7ffc39132157686abee860cac994c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482105"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287750"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>如何：使用“反汇编”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Studio 调试器中查看反汇编代码](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-disassembly-window)。  
-  
 此功能是启用了地址级调试后才可用**选项**对话框中，**调试**节点。 但对于脚本或 SQL 调试是不可用的。  
   
  **反汇编**窗口显示与编译器所创建的指令相对应的汇编代码。 如果正在调试托管代码，则这些汇编指令对应于由实时 (JIT) 编译器创建的本机代码，而不是由 Visual Studio 编译器生成的 Microsoft 中间语言 (MSIL)。  

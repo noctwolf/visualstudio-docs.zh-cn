@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 2015 中调试入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec46ba094ccafbb06ec64e181d4a64906feaa205
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281445"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>在 Visual Studio 2015 中调试入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Getting Started with Visual Studio 中调试](https://docs.microsoft.com/visualstudio/ide/getting-started-with-debugging-in-visual-studio)。  
-  
 Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本主题将介绍如何开始使用一组最基本的调试 UI 功能。  
   
  注意：此页底部有指向更高级功能以及特定于平台或功能的主题的链接。  

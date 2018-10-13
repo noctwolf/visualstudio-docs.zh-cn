@@ -1,7 +1,7 @@
 ---
 title: 使用旧版 API 访问的文本缓冲区 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cd6cf4ae-fff5-4e23-b293-7cbafdb8aed2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0e89b91dbacf60df034ac7ce3653c25c2cae7ab3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84843f40b6d07e937837914f07aecf10adad2bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277207"
 ---
 # <a name="accessing-the-text-buffer-by-using-the-legacy-api"></a>使用旧版 API 访问的文本缓冲区
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用旧版 API 访问文本缓冲区](https://docs.microsoft.com/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api)。  
-  
 文本是负责管理文本流和文件暂留。 尽管缓冲区可以读取或写入其他格式与缓冲区的所有普通通信执行通过使用 Unicode。 在传统的 Api 中的文本缓冲区可以使用一个-或二维坐标系统以确定在缓冲区中的字符位置。  
   
 ## <a name="one--and-two-dimension-coordinate-systems"></a>一个和两个维度协调系统  

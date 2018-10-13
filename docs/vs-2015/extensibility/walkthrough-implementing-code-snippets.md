@@ -1,7 +1,7 @@
 ---
 title: 演练： 实现代码片段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 86d0ef82422b5f9cd419bf31e8b92b789fac1226
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b11234cd9dda19d010eb8408c359067697d95d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482921"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49287152"
 ---
 # <a name="walkthrough-implementing-code-snippets"></a>演练：实现代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 实现代码片段](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-implementing-code-snippets)。  
-  
 可以创建的代码段，并将其包含在编辑器扩展，以便扩展的用户可以将它们添加到其自己的代码。  
   
  代码片段是一段代码或其他可合并的文件中的文本。 若要查看已为特定编程语言中注册的所有代码段**工具**菜单上，单击**代码片段管理器**。 若要插入代码段在文件中，右键单击要代码片段中，单击**插入代码段**或**Surround With**、 找到所需的代码段，然后双击它。 按 TAB 或 SHIFT + TAB 修改代码段的相关部分，然后按 ENTER 或 esc 键来接受它。 有关详细信息，请参阅[代码片段](../ide/code-snippets.md)。  

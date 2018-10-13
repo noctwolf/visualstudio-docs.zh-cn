@@ -1,7 +1,7 @@
 ---
 title: “线程”视图（并行性能） | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 644308065518afa9caf6fb0db088c2ffc556a8e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49b68e0ee595041ec6b14c9f105937bf723afa6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482836"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300243"
 ---
 # <a name="threads-view-parallel-performance"></a>线程视图（并行性能）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[线程视图 （并行性能）](https://docs.microsoft.com/visualstudio/profiling/threads-view-parallel-performance)。  
-  
 “线程”视图在并发可视化工具中最详细且功能最丰富的视图。 使用此视图可以确定线程是在执行还是由于同步、I/O 或某些其他原因而阻塞。  
   
  在分析过程中，并发可视化工具会对每个应用程序线程检查所有操作系统上下文切换事件。 上下文切换可能由于许多原因而发生，如以下这些：  

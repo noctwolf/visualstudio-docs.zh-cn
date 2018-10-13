@@ -1,7 +1,7 @@
 ---
 title: 用于 Visual Studio 的评估工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e5679be0c8e479136a72d3377a6e17a7c2cd6e54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c5a36822bc4e9a30de69fc67d072c8c40a5159d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482824"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292131"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>用于 Visual Studio 的评估工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[评估适用于 Visual Studio 工具](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/evaluation-tools-for-visual-studio)。  
-  
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>针对 Visual Studio 的耕耘核对清单  
  使用此清单来评估视觉和交互的详细信息的用户体验质量。  
   

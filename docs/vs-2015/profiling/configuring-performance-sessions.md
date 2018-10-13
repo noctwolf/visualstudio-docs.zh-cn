@@ -1,7 +1,7 @@
 ---
 title: 配置性能会话 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e804e1638574d6918a1db4effbfbc1c20c80f63e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b858d7a521f53876e185d8d4deb2b3467833d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477192"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285332"
 ---
 # <a name="configuring-performance-sessions"></a>配置性能会话
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[配置性能会话](https://docs.microsoft.com/visualstudio/profiling/configuring-performance-sessions)。  
-  
 通过使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具，可以收集大量各种应用程序类型的性能数据。 本节演示如何使用性能会话的“性能向导”属性和目标二进制文件配置分析工具以收集你感兴趣的数据。 分析工具配置属性还可用来控制分析运行中收集的数据量。 有关详细信息，请参阅[控制数据收集](../profiling/controlling-data-collection.md)。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建本地化的引导程序包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf92009cc7eadde4594bc8edb70f553b09b48010
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1408189539cf5d2be9cc9c0eb0f758a211efcfca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477986"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304754"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建本地化引导程序包](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-localized-bootstrapper-package)。  
-  
 在你创建引导程序包以后，你可以通过为每个区域设置再创建两个文件（软件许可条款文件（如 eula.rtf）和包清单 (package.xml)）来创建引导程序包的本地化版本。  
   
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。  

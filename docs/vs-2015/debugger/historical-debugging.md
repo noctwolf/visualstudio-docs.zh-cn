@@ -1,7 +1,7 @@
 ---
 title: 历史调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6bff8a7fa30820f7a664d48f328185fc95f4446
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38affa6611f716b6d66eebcc16d5d82c2a8ae6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293873"
 ---
 # <a name="historical-debugging"></a>历史调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[历史调试](https://docs.microsoft.com/visualstudio/debugger/historical-debugging)。  
-  
 历史调试是取决于 IntelliTrace 所收集的信息的模式模式。 它允许你向前和前后移动应用程序的执行，并检查其状态。  
   
  可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  

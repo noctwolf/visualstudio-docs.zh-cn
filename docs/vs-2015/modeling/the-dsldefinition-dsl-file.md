@@ -1,7 +1,7 @@
 ---
 title: DslDefinition.dsl 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8d6df6e4957eec471e4d0f1212493c088e19703b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bf56b06771b905ec4982f7de7f91648c2e6b3a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478869"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306112"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[DslDefinition.dsl 文件](https://docs.microsoft.com/visualstudio/modeling/the-dsldefinition-dsl-file)。  
-  
 本主题介绍的 Dsl 项目中 DslDefinition.dsl 文件的结构[!INCLUDE[dsl](../includes/dsl-md.md)]定义的解决方案*域特定语言*。 DslDefinition.dsl 文件介绍的类和关系的域特定语言，以及关系图、 形状、 连接符、 序列化格式，并**工具箱**域特定语言的并将其编辑工具。 在域特定语言解决方案中，将根据 DslDefinition.dsl 文件中的信息生成可定义这些工具的代码。  
   
  通常情况下，使用*域特定语言设计器*编辑 DslDefinition.dsl 文件。 但是，它的原始格式为 XML，你可以在 XML 编辑器中打开 DslDefinition.dsl 文件。 在了解该文件所包含的信息以及如何组织它以供调试和扩展时，你会发现该文件很有用。  

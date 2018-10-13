@@ -1,7 +1,7 @@
 ---
 title: 选择工具箱项，WPF 组件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 057f354b06002c9b1708478f3e3a9592a47a7065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c36c34f637993354b131430394e5980c9266d03
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299684"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>选择工具箱项，WPF 组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选择工具箱项，WPF 组件](https://docs.microsoft.com/visualstudio/ide/reference/choose-toolbox-items-wpf-components)。  
-  
   
 “选择工具箱项”对话框中的此选项卡显示了在本地计算机上可用的 Windows Presentation Foundation (WPF) 控件列表。 若要显示此列表，请从“工具”菜单中选择“选择工具箱项”，从而显示“选择工具箱项”对话框，然后选择其中的“WPF 组件”选项卡。若要对所列组件排序，请选择任意列标题。  
   

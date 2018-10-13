@@ -1,7 +1,7 @@
 ---
 title: 保证应用程序的安全 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57de571a778724a5bb951039c92b7d358c7824bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291273"
 ---
 # <a name="securing-applications"></a>保证应用程序的安全
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[保证应用程序的](https://docs.microsoft.com/visualstudio/ide/securing-applications)。  
-  
 虽然大部分应用程序会面临共同的安全挑战，不过每个应用程序域都具有自己的安全挑战。  
   
 ## <a name="general-security-considerations"></a>一般安全注意事项  

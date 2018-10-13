@@ -1,7 +1,7 @@
 ---
 title: T4 参数指令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 00403f562771498a86c24e8433769ab7a44ec890
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87e493667af1626cd97e575ddb614e7fd12c21d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483653"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294549"
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[T4 参数指令](https://docs.microsoft.com/visualstudio/modeling/t4-parameter-directive)。  
-  
 在中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]文本模板`parameter`指令声明在模板代码中从外部上下文从传入的值初始化的属性。 如果您编写代码来调用文本转换，可以设置这些值。  
   
 ## <a name="using-the-parameter-directive"></a>使用参数指令  

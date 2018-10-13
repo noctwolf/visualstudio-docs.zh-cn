@@ -1,7 +1,7 @@
 ---
 title: 如何：指定检测前和检测后命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20cf4545a217adf07cc753a1d2ab190a00e3d4f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b152b381aaca2b9e43729616979cd7765d3a8c53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305456"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定检测前和检测后命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定检测前和检测后命令](https://docs.microsoft.com/visualstudio/profiling/how-to-specify-pre-and-post-instrument-commands)。  
-  
 可以指定在检测性能会话中的二进制文件之前或之后运行的命令。 任何可以从命令行发出的命令都可以指定为检测前或检测后事件。 例如，可以指定一些命令，这些命令会在检测完二进制文件后，自动使用所执行的批处理文件中的强名称密钥重新签名程序集。  
   
  可以为分析运行期间的所有受检测二进制文件或单个二进制文件指定命令。 但是，可以仅指定一个检测前命令以在检测过程前运行，并仅指定一个检测后命令以在检测过程后运行。 无法同时为所有二进制文件和单个二进制文件指定命令。 为所有二进制文件指定命令时，这些命令在检测会话中的每个二进制文件之前或之后运行。  

@@ -1,7 +1,7 @@
 ---
 title: 调试包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 99947fd4-fb87-4c69-b26c-65634e17d285
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e4bc7ce9bbef75badb1003f18bf65c5248f279bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61df51b422660a5ea116f136b0d5183e59293a02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286320"
 ---
 # <a name="debug-package"></a>调试包
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试程序包](https://docs.microsoft.com/visualstudio/extensibility/debugger/debug-package)。  
-  
 调试包在 Visual Studio shell 中运行，并处理所有用户界面。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 进行通信。  
   
  中断事件通过 SDM 发送切换运行模式下从调试器中断模式，并将焦点更改为发生中断的程序。 调试包由事件发送给它的信息从跟踪堆栈帧和线程。  

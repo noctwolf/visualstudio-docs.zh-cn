@@ -1,7 +1,7 @@
 ---
 title: 图像形状的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 395d042bd5152d741d5188ed87faec801cd17cb8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483723"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304091"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性的图像形状](https://docs.microsoft.com/visualstudio/modeling/properties-of-image-shapes)。  
-  
 图像形状可用于指定域类生成的设计器中的显示方式。 通过设置来定义了图像形状`Image`类预定义的图像文件的属性。 支持以下格式：  
   
 -   .gif  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 标记线程和取消标记线程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81de0353311d11cf744487d581296500d62ecb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb6c6c3f9c333ef1613f2733a476e7843f7249b4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476924"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289128"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>如何：标记线程和取消标记线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 标志和取消标记线程](https://docs.microsoft.com/visualstudio/debugger/how-to-flag-and-unflag-threads)。  
-  
 可以标记要特别注意通过将其标记为一个图标中为提供一个线程**线程**，**并行堆栈**，**并行监视**，和**GPU线程**windows。 此图标有助于您和其他人将标记的线程与其他线程区别开来。  
   
  标记的线程还得到特殊处理中的**线程**上列出**调试位置**工具栏。 此列表可以显示所有线程或仅显示标记的线程。 标记一个线程，当**线程**列表会自动切换为仅显示已标记的线程，但可以将其切换回以显示相应的所有线程。  

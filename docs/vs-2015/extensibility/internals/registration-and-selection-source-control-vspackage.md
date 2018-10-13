@@ -1,7 +1,7 @@
 ---
 title: 注册和选择 (源代码管理 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ef8cf369d2660523bdfe4ad6eaa83be5748eedf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470453"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305781"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册和选择 (源代码管理 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/registration-and-selection-source-control-vspackage)。  
-  
 源代码管理 VSPackage 必须注册才能公开到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 如果注册了多个源代码管理 VSPackage，用户可以选择在适当的时候加载的 VSPackage。 请参阅[Vspackage](../../extensibility/internals/vspackages.md)有关 Vspackage 以及如何将它们注册的更多详细信息。  
   
 ## <a name="registering-a-source-control-package"></a>注册源代码管理包  

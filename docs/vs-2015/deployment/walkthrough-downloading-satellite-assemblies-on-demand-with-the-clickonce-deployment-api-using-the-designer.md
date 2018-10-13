@@ -1,7 +1,7 @@
 ---
 title: 演练： 下载 ClickOnce 部署 API 使用设计器中使用按需的附属程序集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,21 +26,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8ed393a17c3489e0133a4a6534deb8f2dab1e428
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca86e2ed1a05c8e325a99686281db3a7cf8f56e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306223"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 ClickOnce 部署 API 使用设计器按需下载附属程序集](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)。  
-  
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  
   
- 如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。  
+ 如中所述[本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)，可以包括适用于多个区域性相同的多个附属程序集[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。  
   
  本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。  
   

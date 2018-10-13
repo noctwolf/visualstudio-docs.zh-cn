@@ -1,7 +1,7 @@
 ---
 title: 使用多个 UI 映射测试大型应用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 40dae630f39597549f27c0aa77685d00e5ddd7ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b8b18c93e96e9b7fddeafc06df970e541f84d80
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471728"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291923"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试大型应用程序使用多个 UI 映射](https://docs.microsoft.com/visualstudio/test/testing-a-large-application-with-multiple-ui-maps)。  
-  
 本主题讨论在使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。  
   
  **要求**  

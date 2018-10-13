@@ -1,7 +1,7 @@
 ---
 title: “摘要”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b253767977a59ba782dbaae9eb3384bba5f313d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 242250476a55ce33344863003a90d9c829eaea1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478789"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301530"
 ---
 # <a name="summary-view"></a>“摘要”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[摘要视图](https://docs.microsoft.com/visualstudio/profiling/summary-view)。  
-  
 “摘要”视图显示有关分析运行期间，性能开销最大的函数或对象的信息。 此视图根据分析方法的性能指标，提供一个时间线图，以及性能开销最大的函数或对象的两个或多个列表。 此视图中的数据取决于所用的分析方法（采样、检测或并发）以及是否收集 .NET 内存分配。  
   
  对于除并发数据的“摘要”视图以外的所有“摘要”视图，“摘要”视图中的时间线图显示被分析的应用程序在进行分析的这段时间内的处理器 (CPU) 使用率。  
