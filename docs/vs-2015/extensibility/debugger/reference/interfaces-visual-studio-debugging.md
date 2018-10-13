@@ -1,7 +1,7 @@
 ---
 title: 接口 （Visual Studio 调试） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 79875cbb-f946-49d4-94eb-941d0e1a40b2
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d458a12fded45bde7ed65afd71a944dc2b4c3110
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6f75e4a81199f4cc7452392bb55ffdfe871e66d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476867"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195814"
 ---
 # <a name="interfaces-visual-studio-debugging"></a>接口（Visual Studio 调试）
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[接口 (Visual Studio Debugging)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/interfaces-visual-studio-debugging)。  
-  
 下的内容和 Vtable 顺序中的接口上的表中每个接口，方法是按字母顺序列出。  
   
 ## <a name="in-this-section"></a>本节内容  

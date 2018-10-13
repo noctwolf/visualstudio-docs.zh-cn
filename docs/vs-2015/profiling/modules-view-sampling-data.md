@@ -1,7 +1,7 @@
 ---
 title: “模块”视图 - 采样数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec3349922acb6a9fb5a08bd11675454e9f8cbad3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb282e9f764c9e0ea239f0be534b225809108d1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479310"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193110"
 ---
 # <a name="modules-view---sampling-data"></a>“模块”视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模块视图-采样数据](https://docs.microsoft.com/visualstudio/profiling/modules-view-sampling-data)。  
-  
 采样数据的“模块”视图显示按分析数据中采样的模块分组的性能数据。 每个模块都是一个层次结构树的根。 模块的采样函数在模块节点下列出。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 Visual Studio 扩展的基于规则的 UI 上下文 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -9,18 +9,16 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: dfe3e1645bd23c859a36f4de222472b8460fd305
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194696"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 扩展的基于规则的 UI 上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用规则基于 Visual Studio 扩展的 UI 上下文](https://docs.microsoft.com/visualstudio/extensibility/how-to-use-rule-based-ui-context-for-visual-studio-extensions)。  
-  
 Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio.Shell.UIContext>s 被激活。 但是，这些 UI 上下文不是非常精确地细化，离开无选择的扩展创建者选择可用的 UI 上下文的点之前激活它们真正想要加载的 VSPackage。 有关的已知用户界面上下文中的列表，请参阅<xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
   
  加载包可能会影响性能并不是在需要更快地加载它们并不是最佳做法。 Visual Studio 2015 引入了基于规则的 UI 上下文，一种机制，允许扩展创建者定义的 UI 上下文激活和相关联的 Vspackage 加载的精确条件的概念。  

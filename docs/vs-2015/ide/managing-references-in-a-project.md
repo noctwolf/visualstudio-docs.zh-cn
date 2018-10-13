@@ -1,7 +1,7 @@
 ---
 title: 管理项目中的引用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,12 +28,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa9b96370d6b0e1b39b414eeee737a32bfefcd34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10fed2fa77274469a7b82a1583e825c57ca4a581
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483391"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195593"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "47483391"
 >  Visual Studio 中的所有项目都包含对 `System.Core`的隐式引用，即使 `System.Core` 已从引用列表中删除也是如此。  
   
 ## <a name="references-to-shared-components-at-run-time"></a>在运行时对共享组件的引用  
- 在运行时，组件必须位于输出路径的项目中或在[全局程序集缓存](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202)(GAC)。 如果项目中包含对某个对象的引用，但该对象不是上述的其中一个位置，则必须在生成项目时将该引用复制到项目的输出路径。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性指示是否必须进行复制。 如果值为 **True**，则生成项目时，引用将复制到项目目录。 如果值为 **False**，则不复制引用。  
+ 在运行时，组件必须位于项目的输出路径或 [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC) 中。 如果项目中包含对某个对象的引用，但该对象不是上述的其中一个位置，则必须在生成项目时将该引用复制到项目的输出路径。 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 属性指示是否必须进行复制。 如果值为 **True**，则生成项目时，引用将复制到项目目录。 如果值为 **False**，则不复制引用。  
   
  如果你部署的应用程序中包含对 GAC 中注册的自定义组件的引用，则无论采用何种 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 设置，组件都不会随应用程序一起部署。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的早期版本中，可以在引用上设置 <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> 的属性，以确保程序集已部署。 现在，必须手动将程序集添加到 \Bin 文件夹。 这会对所有自定义代码进行详细审查，以降低你发布不熟悉的自定义代码的风险。  
   
@@ -124,5 +124,5 @@ ms.locfileid: "47483391"
 ## <a name="see-also"></a>请参阅  
  [Troubleshooting Broken References](../ide/troubleshooting-broken-references.md)   
  [使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
- [如何：使用引用管理器添加或移除引用](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
+ [How to: Add or Remove References By Using the Reference Manager](../ide/how-to-add-or-remove-references-by-using-the-reference-manager.md)
 

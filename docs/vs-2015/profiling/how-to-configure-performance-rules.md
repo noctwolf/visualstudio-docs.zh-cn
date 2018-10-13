@@ -1,7 +1,7 @@
 ---
 title: 如何：配置性能规则 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d44958cc52be8d9a16d7600d74af6f68baa2e552
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2131a2857c5611f1653d305f63c07fcca1a3953f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199610"
 ---
 # <a name="how-to-configure-performance-rules"></a>如何：配置性能规则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 配置性能规则](https://docs.microsoft.com/visualstudio/profiling/how-to-configure-performance-rules)。  
-  
 Visual Studio 分析工具的性能警告指示所分析应用程序中可能会减慢程序执行的问题。 警告还可指示可能需要更改收集方法才能收集更多有用的数据。 系统会在分析会话中自动生成性能警告，并且在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中打开分析数据文件时，警告将显示在**错误列表**窗口中。 某些警告可能不适用于你感兴趣的某些方案，而某些警告则可能属于误报。 可以配置性能警告以显示或隐藏特定的警告。  
   
 ### <a name="to-configure-profiler-performance-warnings"></a>配置事件探查器性能警告  

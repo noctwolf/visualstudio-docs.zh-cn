@@ -1,7 +1,7 @@
 ---
 title: 类图上 UML 类型的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d76d02720ba1dd5dc98dd2b260743b415d2bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4bcd2779e448c48bd8ac6e66edf25ef4edddc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478419"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193162"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>UML 类图上类型的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[uml 类型的属性的类图](https://docs.microsoft.com/visualstudio/modeling/properties-of-types-on-uml-class-diagrams)。  
-  
 在 UML 类图中，*类型*是类、 接口或枚举。  
   
 > [!NOTE]

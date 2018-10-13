@@ -1,7 +1,7 @@
 ---
 title: 示例 Excel 扩展：TechnologyManager 类 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 440591cae5251c614c13738668bbe71d43f90600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469940"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190575"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>示例 Excel 扩展：TechnologyManager 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[示例 Excel 扩展： TechnologyManager 类](https://docs.microsoft.com/visualstudio/test/sample-excel-extension-technologymanager-class)。  
-  
 此类扩展 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> 类，并负责为 [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] 扩展提供核心服务。 尽管此基类具有很多方法，但是此示例中只使用其中一些方法。  
   
  其中一些方法仅返回属性值。 许多方法旨在允许开发人员在编码的 UI 测试引擎中重写默认的算法版本。 这些方法引发 <xref:System.NotSupportedException> 或者返回 `null`，以指示框架使用默认算法。  

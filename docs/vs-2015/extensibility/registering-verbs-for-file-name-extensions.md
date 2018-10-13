@@ -1,7 +1,7 @@
 ---
 title: 注册文件扩展名的谓词 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b6c42b1682c7f599513b9894646b30dee029740e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196314"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册的文件扩展名的谓词](https://docs.microsoft.com/visualstudio/extensibility/registering-verbs-for-file-name-extensions)。  
-  
 与应用程序的文件扩展名关联通常具有首选的操作，当用户双击文件时发生。 此首选的操作链接到动词，例如打开对应于该操作。  
   
  您可以注册在 HKEY_CLASSES_ROOT 使用位于 Shell 密钥与扩展的编程标识符 (ProgID) 关联的谓词\\*progid*\shell。 有关详细信息，请参阅[文件类型](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx)。  

@@ -1,7 +1,7 @@
 ---
 title: 如何：创建基于几何图形的渐变着色器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f1e9ef91ad2d7714ca5f589aeccff61967c27e46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 480a316ea7947e71317c3d15424b521f0ac69ba8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195970"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：创建基于几何图形的渐变着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建基于几何图形的渐变着色器](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-geometry-based-gradient-shader)。  
-  
 本文档演示如何使用着色器设计器和有向图着色器语言 (DGSL) 创建基于几何图形的渐变着色器。 此着色器将常量 RGB 颜色值按照世界空间中对象的每个点的高度进行缩放。  
   
  本文档演示了这些活动：  

@@ -1,7 +1,7 @@
 ---
 title: 如何：添加或移除导入的命名空间 (Visual Basic) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70f5187300c3c7d661055f78911bdedb926fdc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 730ebcf8029abf51e6cb04c74b826593139cfdc5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196385"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：添加或移除导入的命名空间 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 添加或删除已导入命名空间 (Visual Basic)](https://docs.microsoft.com/visualstudio/ide/how-to-add-or-remove-imported-namespaces-visual-basic)。  
-  
 通过导入命名空间，可在代码中使用来自该命名空间的元素，而不必完全限定该元素。 例如，若要访问 `System.Messaging.MessageQueue` 类中的 `Create` 方法，可以导入 `System.Messaging` 命名空间，并引用代码中所需的元素作为 `MessageQueue.Create`。  
   
  导入的命名空间托管在“项目设计器”的“引用”页上。 在此对话框中指定的导入会直接传递到编译器 (`/imports`) 中，并应用到项目的所有文件中。 使用 `Imports` 语句在单个源代码文件中使用命名空间。  

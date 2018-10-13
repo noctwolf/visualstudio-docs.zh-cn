@@ -1,7 +1,7 @@
 ---
 title: Spy + + 帮助 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 383322fb5b79820cdd05208b807071e5fd125377
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a61446ef9f0cff37a2d07fc2e6111321dbef32d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196938"
 ---
 # <a name="spy-help"></a>Spy++ 帮助
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Spy + + 帮助](https://docs.microsoft.com/visualstudio/debugger/spy-increment-help)。  
-  
 Spy + + 实用程序的文档包括两个组的常规主题上使用 Spy + + 和 Spy + + 视图上。 后面的 Spy + + 引用，它在每个可用菜单命令和对话框中提供更多详细信息。  
   
 ## <a name="using-spy"></a>使用 Spy++  

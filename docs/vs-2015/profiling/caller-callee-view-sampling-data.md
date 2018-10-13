@@ -1,7 +1,7 @@
 ---
 title: “调用方 - 被调用方”视图 - 采样数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ed2f99527b8c1f5f38cbbcfd72ee32ad9912fd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9a8933eb0adc6322b2da6b1e16400769a5ea22c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477201"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192593"
 ---
 # <a name="caller--callee-view---sampling-data"></a>“调用方 - 被调用方”视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用方-被调用方视图-采样数据](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view-sampling-data)。  
-  
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。  
   
  **当前函数**在中间网格中显示，其显示所选函数的分析信息。 这些值包括对函数的所有采样调用。  

@@ -1,7 +1,7 @@
 ---
 title: 本机建议规则规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345acf57686f57c79aa0d40ed5fdbf288475b156
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bbdb356a47e398bfa7b3417c876b5a1f5027543d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484054"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200664"
 ---
 # <a name="native-recommended-rules-rule-set"></a>“本机建议规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[本机建议规则规则集](https://docs.microsoft.com/visualstudio/code-quality/native-recommended-rules-rule-set)。  
-  
 本机建议规则重点关注本机代码，包括潜在安全漏洞和应用程序崩溃中最重要、 最常见的问题。  应在你为本机项目创建的任何自定义规则集中包含此规则集。  此规则集用于处理与 Visual Studio 专业版和更高版本。  
   
 |规则|描述|  

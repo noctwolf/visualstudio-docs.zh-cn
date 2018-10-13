@@ -1,7 +1,7 @@
 ---
 title: 自定义 T4 文本转换 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e304b38979b80c1d67d3f88accdbfa584406c9cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc44c1de2e0a590b73916a8496a7fe5cae7cb07e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483368"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200234"
 ---
 # <a name="customizing-t4-text-transformation"></a>自定义 T4 文本转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义 T4 文本转换](https://docs.microsoft.com/visualstudio/modeling/customizing-t4-text-transformation)。  
-  
 文本模板是一项功能的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，可以生成程序代码或其他文本文件通过转换过程。 使用[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]，可以通过自定义文本模板指令处理器或文本模板宿主扩展默认模板转换过程。  
   
 ## <a name="in-this-section"></a>本节内容  

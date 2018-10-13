@@ -1,7 +1,7 @@
 ---
 title: 为 ClickOnce 应用程序代码访问安全性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 71b9344e552cb03d65b0093b1d5e0707689ec6af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197966"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 应用程序的代码访问安全性](https://docs.microsoft.com/visualstudio/deployment/code-access-security-for-clickonce-applications)。  
-  
 ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约束。 因此，了解代码访问安全性的含义并且相应地编写 ClickOnce 应用程序是十分重要的。  
   
  代码访问安全性是 .NET Framework 中的一种机制，它帮助限制代码对受保护的资源和操作的访问权限。 你应该为 ClickOnce 应用程序配置代码访问安全性权限，以使用适合应用程序安装程序位置的区域。 在大多数情况下，你可以选择 **“Internet”** 区域获得有限的权限集，或者选择 **“本地 Intranet”** 区域获得更大的权限集。  
@@ -105,7 +103,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
  [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)   
  [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)   
  [“项目设计器”->“安全”页](../ide/reference/security-page-project-designer.md)
 

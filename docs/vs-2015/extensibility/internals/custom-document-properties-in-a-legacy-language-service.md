@@ -1,7 +1,7 @@
 ---
 title: 在旧版语言服务中的自定义文档属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f6e29fe0831385456a36f6d3519c28f5adf1006a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 139c5b92d8dd9198e518c50b45531138e5cbc06b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471677"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194852"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>在旧版语言服务中自定义文档属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在旧版语言服务中的自定义文档属性](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-document-properties-in-a-legacy-language-service)。  
-  
 文档属性可以显示在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]**属性**窗口。 编程语言通常没有与单个源代码文件相关联的属性。 但是，XML 支持会影响编码、 架构和样式表的文档属性。  
   
 ## <a name="discussion"></a>讨论  

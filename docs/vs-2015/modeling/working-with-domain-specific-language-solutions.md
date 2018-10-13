@@ -1,7 +1,7 @@
 ---
 title: 使用域特定语言解决方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bab89088ec189e99b1856977f8ea4915cae999e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f511ee44b983c388fb3a51c01d5e9424127036b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190289"
 ---
 # <a name="working-with-domain-specific-language-solutions"></a>使用域特定语言解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用域特定语言解决方案](https://docs.microsoft.com/visualstudio/modeling/working-with-domain-specific-language-solutions)。  
-  
 使用创建域特定语言 (DSL)[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案。 本部分是有关如何设置和自定义解决方案。  
   
 ## <a name="in-this-section"></a>本节内容  

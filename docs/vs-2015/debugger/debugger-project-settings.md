@@ -1,7 +1,7 @@
 ---
 title: 调试器项目设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5530d4cbdbb4f9a28f7b6b92dd487d598349019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2336002552c2fa0772941d4812914b4756ebd40b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195554"
 ---
 # <a name="debugger-project-settings"></a>调试器项目设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试器项目设置](https://docs.microsoft.com/visualstudio/debugger/debugger-project-settings)。  
-  
 某些项目设置也对调试产生影响。 这些设置确定诸如调试器查看的目录、用于启动程序的命令和命令参数以及为程序创建的调试信息的类型等内容。 可以在 **“属性页”** 对话框中更改这些设置。  
   
  本节介绍可用选项，并介绍如何进行设置。  
@@ -58,7 +56,7 @@ ms.locfileid: "47472163"
  列出 **“属性页”** 对话框中 Web 项目可用的属性。  
   
  [Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)  
- 列出了中的可用属性**属性页**对话框中为[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]项目。  
+ 列出 **“属性页”** 对话框中 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 项目可用的属性。  
   
 ## <a name="related-sections"></a>相关章节  
  [指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  

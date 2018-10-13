@@ -1,7 +1,7 @@
 ---
 title: 'Idialoadcallback:: Notifyopenpdb |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0e0013ff74376bd9f91ada16d8205d0bb860afd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5025414362f0e64228371c03083c822d40c0e79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200819"
 ---
 # <a name="idialoadcallbacknotifyopenpdb"></a>IDiaLoadCallback::NotifyOpenPDB
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idialoadcallback:: Notifyopenpdb](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idialoadcallback-notifyopenpdb)。  
-  
 当打开候选.pdb 文件时调用。  
   
 ## <a name="syntax"></a>语法  

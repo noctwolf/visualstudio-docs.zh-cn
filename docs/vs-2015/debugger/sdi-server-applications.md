@@ -1,7 +1,7 @@
 ---
 title: SDI 服务器应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3c6ee3ee3a1273c02dd094f89c099230024eabfc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba975d21e1fbef2d32b45dd4ebdc758e8b6cf575
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483560"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199059"
 ---
 # <a name="sdi-server-applications"></a>SDI 服务器应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SDI 服务器应用程序](https://docs.microsoft.com/visualstudio/debugger/sdi-server-applications)。  
-  
 如果正在调试 SDI 服务器应用程序，则必须指定`/Embedding`或`/Automation`中**命令行参数**中的属性*项目*C/c + +，C# 中，属性页对话框或Visual Basic 项目。  
   
  使用这些命令行自变量，调试器可以像从容器中启动服务器应用程序一样启动它。 从程序管理器或文件管理器启动容器将导致容器使用在调试器中启动的服务器实例。  

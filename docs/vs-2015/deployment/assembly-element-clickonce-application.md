@@ -1,7 +1,7 @@
 ---
 title: '&lt;程序集&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: edd968ffb6f2b0422e54bc6d456c1090d189fcc0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44437c0ff78c5f957a0d774530e8911513ba0fd6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479874"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191771"
 ---
 # <a name="ltassemblygt-element-clickonce-application"></a>&lt;程序集&gt;元素 （ClickOnce 应用程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;程序集&gt;元素 （ClickOnce 应用程序）](https://docs.microsoft.com/visualstudio/deployment/assembly-element-clickonce-application)。  
-  
 应用程序清单的的顶级元素。  
   
 ## <a name="syntax"></a>语法  
@@ -56,7 +54,7 @@ ms.locfileid: "47479874"
   
  程序集的子元素也必须通过继承或使用标记，这些命名空间中。  
   
- `assembly`元素具有以下属性。  
+ `assembly` 元素具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  

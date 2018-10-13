@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定技术支持链接 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 333e9729012c24f93c6b3cefef3903e47af45ae6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2a772122851bb48e5cb5f0cf388110df8e5b371
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196139"
 ---
 # <a name="how-to-specify-a-link-for-technical-support"></a>如何：指定技术支持链接
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定技术支持链接](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-link-for-technical-support)。  
-  
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序中，**支持 URL**属性标识网页或文件共享，用户可以转到要获取有关应用程序的信息。 此属性是可选的;如果提供，该 URL 将显示在应用程序的入口**添加或删除程序**对话框。  
   
  **支持 URL**属性可以设置上**发布**页**项目设计器**。  

@@ -1,7 +1,7 @@
 ---
 title: 安装和管理本地内容 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 298448421430491cba3c367dc1976cf755f2b601
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483690"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193831"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安装和管理本地内容](https://docs.microsoft.com/visualstudio/ide/install-and-manage-local-content)。  
-  
 通过使用 Microsoft Help Viewer，可以添加、删除、更新和移动安装在计算机上的“帮助”内容，以满足你的软件开发需求。  
   
  若要管理本地计算机上的内容，必须使用具有管理权限的帐户登录。 此外，如果在企业环境中工作，则无法管理本地内容，因为系统管理员可能为你的组织执行这些操作。 有关详细信息，请参阅[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)。  

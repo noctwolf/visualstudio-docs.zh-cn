@@ -1,7 +1,7 @@
 ---
 title: 使用 c + + Core Guidelines 检查器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f7813659f63e14c22ee40dc28eaa5b2d029288e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194085"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 检查器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 c + + Core Guidelines 检查器](https://docs.microsoft.com/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers)。  
-  
 C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + + 创建的 c + + 专家和设计器中编写代码的最佳做法。  Visual Studio 现在支持外接程序的包创建其他规则的代码分析工具来检查您的代码与 c + + Core Guidelines 的符合性并提出改进建议。  
   
 ## <a name="the-c-core-guidelines-project"></a>C + + 核心准则项目  

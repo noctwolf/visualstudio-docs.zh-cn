@@ -1,7 +1,7 @@
 ---
 title: 向导 (。在 Vsz) 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24296384ec66386cdcb735547a1b6ce9c64a0618
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d8d36ba617f5d5828354e32b5b0f45ed9ec1ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480184"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197144"
 ---
 # <a name="wizard-vsz-file"></a>向导 (.Vsz) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[向导 (。在 Vsz) 文件](https://docs.microsoft.com/visualstudio/extensibility/internals/wizard-dot-vsz-file)。  
-  
 集成的开发环境 (IDE) 使用.vsz 文件来启动向导。 这些.vsz 文件包含 IDE 使用以确定要调用哪个向导的信息和要传递给该向导的信息。  
   
  .Vsz 文件是具有不包括任何部分的.ini 格式的文本文件的版本。 知道对 IDE 的信息存储在文件开头。 这提供了 IDE 调用向导.vsz 文件传递到 IDE 中的参数之间的链接。 文件的其余部分提供了的参数特定于该向导并且，是要收集的 IDE，并传递到特定的向导。  

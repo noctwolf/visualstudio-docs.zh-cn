@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 互操作程序集参数封送处理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: douge
-ms.openlocfilehash: 77b94eeb4195654edabdd566eae762593b785496
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195008"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Visual Studio 互操作程序集参数封送处理
 在托管代码中编写 Vspackage 可能需要调用或是由非托管 COM 代码进行调用。 通常情况下，转换，或自动封送，互操作封送处理程序方法自变量。 但是，有时参数无法转换直接的方式。 在这些情况下，互操作程序集方法原型参数用于尽可能接近地匹配 COM 函数参数。 有关详细信息，请参阅[互操作封送处理](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)。  

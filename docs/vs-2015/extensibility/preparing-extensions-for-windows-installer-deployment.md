@@ -1,7 +1,7 @@
 ---
 title: 为 Windows 安装程序部署准备扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b83e7d59e17b91e3a47625917de4ec7366f8389d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4483fef9c200f6814c247f14ee956bfef4582e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197920"
 ---
 # <a name="preparing-extensions-for-windows-installer-deployment"></a>准备 Windows Installer 部署的扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[准备扩展的 Windows Installer 部署](https://docs.microsoft.com/visualstudio/extensibility/preparing-extensions-for-windows-installer-deployment)。  
-  
 Windows Installer 程序包 (MSI) 不能用于部署 VSIX 包。 但是，您可以提取 MSI 部署 VSIX 包的内容。 本文档演示如何进行准备，其默认输出是包含在安装程序项目中的 VSIX 包的项目。  
   
 ## <a name="preparing-an-extension-project-for-windows-installer-deployment"></a>为 Windows Installer 部署准备扩展项目  

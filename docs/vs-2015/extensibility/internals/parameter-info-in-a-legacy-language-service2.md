@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务 2 中的参数信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bee48d3688a43a3dbfb32848818c318f1cf7b2d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483454"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200026"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务 2 中的参数信息](https://docs.microsoft.com/visualstudio/extensibility/internals/parameter-info-in-a-legacy-language-service2)。  
-  
 参数的 IntelliSense 信息是在用户键入的参数列表时显示的一种方法签名的工具提示启动的方法参数列表的字符 （通常左括号）。 在输入每个参数和类型化参数分隔符 （通常为逗号） 时，工具提示将更新以显示下一个参数以粗体显示。  
   
  托管的包框架 (MPF) 类提供用于管理参数信息工具提示支持。 分析器必须检测参数启动，则参数接下来，并且参数结束字符，并且它必须提供方法签名和及其相关的参数的列表。  

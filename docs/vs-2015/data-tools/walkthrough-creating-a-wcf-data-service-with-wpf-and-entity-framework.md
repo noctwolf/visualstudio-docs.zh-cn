@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43acbe17b826947dacd2d8c60b4cb28e5550ed40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6aeb16bb805bc6dda1328b424acbe48b6371437e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479997"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197946"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework)。  
-  
   
 本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]托管在[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 应用程序，然后从 Windows 窗体应用程序访问它。  
   

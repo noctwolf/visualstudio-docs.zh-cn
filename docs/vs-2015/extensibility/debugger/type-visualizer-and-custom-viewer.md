@@ -1,7 +1,7 @@
 ---
 title: 键入可视化工具和自定义查看器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d347e7b18722aa8f8901abac3966150b3dca97cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d71aeac0c3cde321df4f77874a2d679162cf1d54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471242"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201885"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[类型可视化工具和自定义查看器](https://docs.microsoft.com/visualstudio/extensibility/debugger/type-visualizer-and-custom-viewer)。  
-  
 类型可视化工具是非常特定的格式显示一段数据的组件。 此格式是完全取决于该可视化工具的实施者，无论是最终用户或第三方供应商的可视化工具。  
   
  自定义查看器是非常特定的格式显示一段数据自定义表达式计算器的一部分。 此格式是完全取决于自定义查看器中，这意味着格式是由表达式计算器 (EE) 实现的实施者。  
