@@ -1,7 +1,7 @@
 ---
 title: VSSDK 实用工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a469208a-cb70-4d87-a79b-d2086fc4fae4
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 27aba64a134cf47b7c292763901565e216f4088d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48825ab6fe17597c1152c53832aaace766d267af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482688"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281211"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 实用工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSSDK 实用工具](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities)。  
-  
 在本部分中的主题介绍随 VSSDK 的工具。  
   
 ## <a name="in-this-section"></a>本节内容  

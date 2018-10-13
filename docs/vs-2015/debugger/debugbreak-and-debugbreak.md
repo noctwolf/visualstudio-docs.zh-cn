@@ -1,7 +1,7 @@
 ---
 title: DebugBreak 和 __debugbreak |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 005490038b293dbb644ec99ca2fbeaa77c0eb2c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73b818269695322d06c95e5ae39f5bdfd7059dae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483274"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281107"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak 和 __debugbreak
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[DebugBreak 和 __debugbreak](https://docs.microsoft.com/visualstudio/debugger/debugbreak-and-debugbreak)。  
-  
 您可以调用 DebugBreak Win32 函数或[__debugbreak](http://msdn.microsoft.com/library/1d1e1c0c-891a-4613-ae4b-d790094ba830)内部随时在代码中。 `DebugBreak` 和 `__debugbreak` 具有与在该位置设置断点相同的效果。  
   
  由于 `DebugBreak` 是对系统函数的调用，因此必须安装系统调试符号以确保中断后显示正确的调用堆栈信息。 否则，调试器可能在显示一帧调用堆栈信息后就停止显示。 如果使用 `__debugbreak`，则不需要符号。  

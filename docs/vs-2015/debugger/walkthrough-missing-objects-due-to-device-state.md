@@ -1,7 +1,7 @@
 ---
 title: 演练： 因而缺少对象设备状态 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 665075ce6656d2cebb246b7591821491b1cf2f58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 95d962ec83b5d0c3a89d41ab8f8cc40ee76ffbb4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280834"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>演练：因设备状态而缺少对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 缺少截止到设备的状态更改的对象](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-device-state)。  
-  
-本演练演示如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]设备状态配置错误的图形诊断工具调查由于缺少的对象。  
+本演练演示了如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具调查由于设备状态配置错误而缺失的对象。  
   
  本演练演示了如何：  
   
@@ -45,14 +43,14 @@ ms.locfileid: "47481557"
   
  ![前解决该问题的应用程序](../debugger/media/vsg-walkthru1-firstview.png "vsg_walkthru1_firstview")  
   
- 有关如何捕获图形日志中的图形问题的信息，请参阅[捕获图形信息](../debugger/capturing-graphics-information.md)。  
+ 有关如何捕获图形日志中的图形问题的信息，请参阅 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)。  
   
 ## <a name="investigation"></a>调查  
  通过使用图形诊断工具，你可以加载图形日志文件以检测测试期间捕获的帧。  
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>检查图形日志中的帧  
   
-1.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，加载包含显示缺少模型的帧的图形日志。 新的图形诊断选项卡将出现在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，加载包含显示缺少模型的帧的图形日志。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中将出现新的“图形诊断”选项卡。 此选项卡的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
   
 2.  在“帧列表” 中，选择演示未显示该模型的帧。 更新呈现目标以反映所选的帧。 在此方案中，图形日志选项卡如下所示：  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47481557"
   
 1.  打开“图形对象表”  窗口。 在“图形诊断”  工具栏上，选择“对象表” 。  
   
-2.  在“图形对象表”  中找到“D3D10 设备” 对象，然后打开“D3D10 设备”  对象。 一个新**d3d10 设备**选项卡中打开[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 若要简化操作，可以按“类型”  对“图形对象表” 进行排序。  
+2.  在“图形对象表”  中找到“D3D10 设备” 对象，然后打开“D3D10 设备”  对象。 **中将打开一个新的“d3d10 设备”**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]选项卡。 若要简化操作，可以按“类型”  对“图形对象表” 进行排序。  
   
      ![图形对象表和相关的设备状态](../debugger/media/vsg-walkthru1-objtable.png "vsg_walkthru1_objtable")  
   

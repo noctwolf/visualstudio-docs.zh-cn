@@ -1,7 +1,7 @@
 ---
 title: IntelliTrace 功能 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 73
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15b58b80a3ab3c9ae1a515eda82a946d56c0554d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4443c18b6972d87d49272d33e7d2f33c25277c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478265"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278546"
 ---
 # <a name="intellitrace-features"></a>IntelliTrace 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IntelliTrace 功能](https://docs.microsoft.com/visualstudio/debugger/intellitrace-features)。  
-  
 可以使用 IntelliTrace 记录事件和调用应用程序的方法，它让你能够在执行中的不同位置检查其状态（调用堆栈和局部变量值）。 只需照常启动调试-默认情况下已启用 IntelliTrace，可以看到 IntelliTrace 正在记录在新的信息**诊断工具**下的窗口**事件**选项卡。选择一个事件，然后单击**激活历史调试**若要查看调用堆栈和局部变量为此事件记录。  
   
  有关分步说明，请参阅[演练： 使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。  

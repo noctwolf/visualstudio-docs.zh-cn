@@ -1,7 +1,7 @@
 ---
 title: 如何：手动创建性能会话 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 03a1cb812f14bb8f2c6747db1129c9e8c5195e46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b33b8379a0d0721a23a5badc80a6dee9d553f10
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477151"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280535"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 手动创建性能会话](https://docs.microsoft.com/visualstudio/profiling/how-to-manually-create-performance-sessions)。  
-  
 可以手动创建性能会话。 不需要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开项目，就可以执行该操作。 有关详细信息，请参阅[配置性能会话](../profiling/configuring-performance-sessions.md)。  
   
 ### <a name="to-manually-create-a-performance-session"></a>手动创建性能会话  

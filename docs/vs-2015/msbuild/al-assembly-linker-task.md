@@ -1,7 +1,7 @@
 ---
 title: AL（程序集链接器）任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f30928d989ebceef0c3d786396d78f0a126dc96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf0f5995b9f0e2fca0d909b9d0da0dbe6b386978
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478378"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280470"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[AL （程序集链接器） 任务](https://docs.microsoft.com/visualstudio/msbuild/al-assembly-linker-task)。  
-  
   
 AL 任务包装 AL.exe（一种随 [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] 一起分发的工具）。 此程序集链接器工具用于创建包含来自一个或多个文件（这些文件可以是模块或资源文件）的清单的程序集。 编译器和开发环境可能已提供这些功能，因此通常不需要直接使用此任务。 对于需要从多个组件文件（例如可能从混合语言开发生成的组件文件）创建单个程序集的开发人员来说，程序集链接器非常有用。 此任务不能将模块合并到单个程序集文件；单个模块必须仍为分布式且可用，以便正确加载生成程序集。 有关 AL.exe 的详细信息，请参阅 [Al.exe（程序集链接器）](http://msdn.microsoft.com/library/b5382965-0053-47cf-b92f-862860275a01)。  
   

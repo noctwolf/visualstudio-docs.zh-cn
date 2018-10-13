@@ -1,7 +1,7 @@
 ---
 title: 将 Web 服务添加到项目系统 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8efa078b-68b2-45a2-9be2-44f807bc0d7f
 caps.latest.revision: 8
 manager: douge
-ms.openlocfilehash: 80de75b1b10a761e88b86c0982c0dc925c6eeeb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88966ee17567970d0807792c57c2483cadb22f63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477026"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280314"
 ---
 # <a name="adding-web-services-to-project-systems"></a>将 Web 服务添加到项目系统
 一般情况下，XML Web services 是以编程方式的信息返回到项目系统使用 SOAP （简单对象访问协议） 协议的 URL 可寻址资源。 您可以通过使用 Web 服务集成到 VSPackage 项目系统<xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg2>接口。  

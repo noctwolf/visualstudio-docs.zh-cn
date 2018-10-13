@@ -1,7 +1,7 @@
 ---
 title: 管理解决方案中的项目加载 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dab040cc22375244d0a091eeb63d8ad011c3b12f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281380"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理解决方案中的项目加载](https://docs.microsoft.com/visualstudio/extensibility/managing-project-loading-in-a-solution)。  
-  
 Visual Studio 解决方案可以包含大量的项目。 默认 Visual Studio 行为是打开解决方案时，次加载解决方案中的所有项目并不允许用户访问任何项目，直到所有这些已完成加载为止。 当项目加载过程将持续时间超过两分钟时，被显示一个进度栏显示加载的项目数量以及项目总数。 用户可以在具有多个项目的解决方案中使用时，卸载项目，但此过程也有一些缺点： 已卸载的项目不是作为重新生成解决方案命令，并关闭 IntelliSense 类型的说明和的成员项目不会显示。  
   
  开发人员可以减少解决方案加载时间和管理项目管理器中创建解决方案加载的加载行为。 解决方案负载管理器可以设置不同的项目加载特定项目或项目类型的优先级，请确保在开始后台生成之前加载了项目、 延迟后台加载其他后台任务完成之前, 并执行其他项目负载管理任务。  

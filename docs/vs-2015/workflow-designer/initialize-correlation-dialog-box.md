@@ -1,7 +1,7 @@
 ---
 title: 初始化相关对话框的 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5dd09cea673411008a1c0d87dc26a781d212ab3a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0782053ca12efbb1c19433ab395176f2545a67c3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278559"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 **初始化相关**中使用对话框[!INCLUDE[wfd1](../includes/wfd1-md.md)]编辑<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>属性<xref:System.ServiceModel.Activities.InitializeCorrelation>活动。 [!INCLUDE[crdefault](../includes/crdefault-md.md)] [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)主题。  

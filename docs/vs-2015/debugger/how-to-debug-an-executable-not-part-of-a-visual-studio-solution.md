@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试可执行文件不属于 Visual Studio 解决方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36acf39ce892afb2a2601b3149987aa8d7e9f4ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 241a1dbf3af5db726f344ab42d53de3fdd30db3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483581"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278778"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>如何：调试不属于 Visual Studio 解决方案的可执行文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试可执行文件不属于的 Visual Studio 解决方案](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution)。  
-  
 有时可能需要调试不属于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的可执行文件。 它可能是在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 外部创建的可执行文件，也可能是从其他用户处接收到的可执行文件。  
   
  解决此问题的常见方法是在 Visual Studio 外部启动可执行文件并使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器附加到该文件。 有关详细信息，请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  

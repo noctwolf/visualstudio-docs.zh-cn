@@ -1,14 +1,14 @@
 ---
 title: 进行分析和建模您的体系结构 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-devops-techdebt
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, exploring code
 - Visual Studio Ultimate, visualizing code
@@ -37,18 +37,16 @@ caps.latest.revision: 129
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d2accb12f172cc5a6e4b69026a58a1cc04937ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 070ee6a2f948bc808961e35735fea88882d68880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278351"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分析你的体系结构和建模](https://docs.microsoft.com/visualstudio/modeling/analyze-and-model-your-architecture)。  
-  
 通过使用 Visual Studio 体系结构和建模工具对应用进行设计和建模确保应用满足用户要求。 通过使用 Visual Studio 可视化代码结构、行为和关系可使你更容易理解现有程序代码。  
   
  作为开发过程的一部分，可以跨整个应用程序生命周期创建不同详细信息级别的模型。 可通过将模型元素链接到 Team Foundation Server 工作项和开发计划来跟踪要求、任务、测试用例、Bug 和其他与模型关联的工作。 请参阅[方案： 使用可视化和建模更改设计](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)。  

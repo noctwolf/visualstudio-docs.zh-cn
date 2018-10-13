@@ -1,7 +1,7 @@
 ---
 title: 演练： 调试并行应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22a4d8ea3bfe98a034f485be8ceec1004f8fba75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279768"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>演练：调试并行应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 调试并行应用程序](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-parallel-application)。  
-  
 本演练演示如何使用**并行任务**并**并行堆栈**窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)或[并发运行时](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)。 本演练提供了具有内置断点的代码示例。 本演练演示如何使用代码中断后**并行任务**并**并行堆栈**windows 来对其进行检查。  
   
  本演练介绍了以下任务：  
@@ -84,7 +82,7 @@ ms.locfileid: "47477531"
  [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
  [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  上**文件**菜单上，单击**全部保存**。  
+1.  在“文件”  菜单上，单击“全部保存” 。  
   
 2.  上**构建**菜单上，单击**重新生成解决方案**。  
   

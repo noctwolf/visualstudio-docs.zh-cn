@@ -1,7 +1,7 @@
 ---
 title: 代码分析规则集引用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0834d9c08cd8c570ae28a1a604f65627656b7009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 928b838a4172537ec12937b02c3deab2cf666ddd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471436"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279157"
 ---
 # <a name="code-analysis-rule-set-reference"></a>代码分析规则集参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码分析规则集引用](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-rule-set-reference)。  
-  
 当配置代码分析托管代码项目中的[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]， [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]，或[!INCLUDE[vsPro](../includes/vspro-md.md)]会显示一系列内置*规则集*。 可以使用某一标准规则集，也可以自定义规则集以适合您的项目需求。  
   
 ## <a name="available-rule-sets"></a>可用的规则集  

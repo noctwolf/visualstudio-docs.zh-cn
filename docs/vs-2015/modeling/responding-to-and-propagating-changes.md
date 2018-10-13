@@ -1,7 +1,7 @@
 ---
 title: 响应并传播更改 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 157908b1d612f840f4d1c3e48c5ecd0350491b39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32deaa75ed09ad1a1320ec72d95d75adc92c12b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480632"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280379"
 ---
 # <a name="responding-to-and-propagating-changes"></a>响应并传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[对的响应并传播更改](https://docs.microsoft.com/visualstudio/modeling/responding-to-and-propagating-changes)。  
-  
 元素是创建、 删除或更新时，您可以编写将传播到模型，其他部件或外部资源，例如文件、 数据库或其他组件的更改的代码。  
   
 ## <a name="in-this-section"></a>本节内容  
