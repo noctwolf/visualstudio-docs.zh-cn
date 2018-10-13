@@ -1,7 +1,7 @@
 ---
 title: 如何：同时生成多个配置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca6142edff2eea293db50f0af9b8f86a4fc47dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e34be1203ba97c23302bd28dcf7578ba6cffd2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469692"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205577"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同时生成多个配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 同时生成多个配置](https://docs.microsoft.com/visualstudio/ide/how-to-build-multiple-configurations-simultaneously)。  
-  
 使用“批生成”对话框，可以同时使用大多数类型的项目的多个甚至所有生成配置来生成这些项目。 但是，不能同时在多个生成配置中生成以下类型的项目：  
   
 1.  使用 JavaScript 为 Windows 生成的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用。  

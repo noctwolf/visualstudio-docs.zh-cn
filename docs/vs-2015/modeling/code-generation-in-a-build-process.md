@@ -1,7 +1,7 @@
 ---
 title: 生成过程中的代码生成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,15 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ce072f85873530d419589f0d1830dc76688afa5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479340"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208645"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[生成过程中的代码生成](https://docs.microsoft.com/visualstudio/modeling/code-generation-in-a-build-process)。
-
 Visual Studio 解决方案生成过程的一部分，可以调用文本转换。 有一些专用于文本转换的生成任务。 T4 生成任务运行设计时文本模板，它们还编译运行时（已预处理的）文本模板。
 
 根据你使用的引擎，生成任务可完成的操作之间是有一些差异的。 如果文本模板生成 Visual Studio 中的解决方案时，可以访问 Visual Studio API (EnvDTE) [hostspecific ="true"](../modeling/t4-template-directive.md)属性设置。 但当你从命令行生成解决方案时，或者当你通过 Visual Studio 启动服务器生成时，此操作无效。 在这些情况下，生成由 MSBuild 执行，并且使用不同的 T4 主机。

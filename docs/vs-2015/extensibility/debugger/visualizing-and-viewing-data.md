@@ -1,7 +1,7 @@
 ---
 title: 可视化和查看数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 10d83291a8d5820241ff2837b6b4a773c7b6fdba
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a88969139c993163c88f2dc16fc8cbdb7a62feb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202769"
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[可视化和查看数据](https://docs.microsoft.com/visualstudio/extensibility/debugger/visualizing-and-viewing-data)。  
-  
 类型可视化工具和自定义查看器中快速对开发人员有意义的方式呈现数据。 表达式计算器 (EE) 可以支持第三方类型可视化工具，以及提供其自己的自定义查看器。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 确定多少类型可视化工具和自定义查看器与相关联的对象类型通过调用[GetCustomViewerCount](../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)方法。 如果没有至少一种类型的可视化工具或自定义查看器可用，则 Visual Studio 会调用[GetCustomViewerList](../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法来检索这些可视化工具和查看器的列表 (实际上，列表`CLSID`s 实现可视化工具和查看器） 并将它们提供给用户。  

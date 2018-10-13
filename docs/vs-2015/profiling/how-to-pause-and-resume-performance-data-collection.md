@@ -1,7 +1,7 @@
 ---
 title: 如何：暂停和恢复性能数据收集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c780e3bbb545ec3611b00dd56d21cb3f87c75d44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0e3c64575d7efe6ee724ee2486d7785a5f655f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484001"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205616"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 暂停和恢复性能数据收集](https://docs.microsoft.com/visualstudio/profiling/how-to-pause-and-resume-performance-data-collection)。  
-  
 在分析会话页窗口中，您可以交互控制分析数据的收集。  
   
  通过控制数据收集，可以减小分析数据文件的大小，以及仅收集感兴趣的那些操作的数据。 可以在一个性能会话中多次暂停和恢复分析。  

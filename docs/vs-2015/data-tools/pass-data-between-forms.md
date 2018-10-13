@@ -1,7 +1,7 @@
 ---
 title: 在窗体间传递数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e046bdf38af09b5f7ea0e8beb296a2b3d32cff6d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9f28902673018a4ae90fbb2ed83e741be99fbfc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204823"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[窗体间传递数据](https://docs.microsoft.com/visualstudio/data-tools/pass-data-between-forms)。  
-  
   
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用的客户和订单来自 Northwind 的表，一个窗体，用户可以选择一个客户，并第二个窗体显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建一种方法。  
   

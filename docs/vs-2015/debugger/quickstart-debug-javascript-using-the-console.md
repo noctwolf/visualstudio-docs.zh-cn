@@ -1,7 +1,7 @@
 ---
 title: 快速入门： 调试使用控制台 JavaScript |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,21 +25,19 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58aee96aead76444ea2363c79db6e4d8060b1346
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205512"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[快速入门： 使用控制台调试 JavaScript](https://docs.microsoft.com/visualstudio/debugger/quickstart-debug-javascript-using-the-console)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
- 可以使用 JavaScript 控制台窗口中与使用 JavaScrip 生成的应用商店应用进行交互并对它进行调试。 这些功能支持[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用、 Windows Phone 应用商店应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
+ 可以使用 JavaScript 控制台窗口中与使用 JavaScrip 生成的应用商店应用进行交互并对它进行调试。 这些功能支持 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用、Windows Phone 应用商店应用，以及使用用于 Apache Cordova 的 Visual Studio 工具创建的应用。 有关控制台命令参考的信息，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md)。  
   
  “JavaScript 控制台”窗口允许你执行以下操作：  
   
@@ -168,7 +166,7 @@ ms.locfileid: "47471486"
   
      应用会运行，但缺少图像。 JavaScript 控制台窗口中的 APPHOST 错误指示缺少图像。  
   
-9. 与`FlipView`模拟器或 Phone 仿真程序中，类型中运行的应用`Data.items`在控制台窗口输入提示符 (下一步">>"符号)，按 Enter。  
+9. 在 `FlipView` 应用在模拟器或 Phone 仿真程序中运行期间，在控制台窗口输入提示中（“>>”符号旁）键入 `Data.items`，并按 Enter。  
   
      `items` 对象的可视化工具会出现在控制台窗口中。 这指示 `items` 对象进行了实例化，并且在当前脚本上下文中可用。 在控制台窗口中，可以在对象的各个节点中单击以查看属性值（或使用箭头键）。 如果向下单击到 `items._data` 对象（如图所示），则会发现其图像源引用不正确（与预期一样）。 该对象中存在的仍是默认图像 (logo.png)，并且有缺少的图像与预期的图像交织在一起。  
   
@@ -280,11 +278,11 @@ ms.locfileid: "47471486"
   
 -   在 [!INCLUDE[win81](../includes/win81-md.md)] 上运行的 Internet Explorer 11  
   
--   在 [!INCLUDE[win8](../includes/win8-md.md)] 上运行的 Internet Explorer 10  
+-   在 [!INCLUDE[win8](../includes/win8-md.md)]上运行的 Internet Explorer 10  
   
 ## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript 控制台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   

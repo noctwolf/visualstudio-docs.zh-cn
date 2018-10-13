@@ -1,7 +1,7 @@
 ---
 title: 使用 ADO.NET 创建简单的数据应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e9ba21aa4cf5d2f11ba7aa24f095acaaea13924
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478871"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204303"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 ADO.NET 创建简单的数据应用](https://docs.microsoft.com/visualstudio/data-tools/create-a-simple-data-application-by-using-adonet)。  
-  
   
 当你创建操作数据库中的数据的应用程序时，就执行了定义连接字符串、插入数据以及运行存储过程等基本任务。 通过按照本主题，了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 与从简单的 Windows 窗体"forms over data"应用程序中的数据库进行交互。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。  
   
@@ -221,7 +219,7 @@ ms.locfileid: "47478871"
   
     |注释|描述|  
     |-------------|-----------------|  
-    |Util-1|添加`System.Configuration`命名空间。|  
+    |Util-1|添加 `System.Configuration` 命名空间。|  
     |Util-2|定义变量 `returnValue`，并将其初始化为 `null` (C#) 或 `Nothing` (Visual Basic)。|  
     |Util-3|即使输入`connString`中的连接字符串的名称作为**属性**窗口中，必须指定`"SimpleDataApp.Properties.Settings.connString"`(C#) 或`"SimpleDataApp.My.MySettings.connString"`(Visual Basic) 代码中。|  
   

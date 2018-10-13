@@ -1,7 +1,7 @@
 ---
 title: 对 UML 扩展运行单元测试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,23 +12,21 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ac030a4e0b93d189a8b69db5f1df52b65bdf11df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478426"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205058"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>对 UML 扩展运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[对 UML 扩展运行单元测试](https://docs.microsoft.com/visualstudio/modeling/run-unit-tests-on-uml-extensions)。  
-  
 为了使代码在连续更改中保持稳定，建议你编写单元测试并将这些测试作为常规生成过程的一部分执行。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。 若要设置用于 Visual Studio 建模扩展的测试，你需要一些关键信息。 摘要：  
   
 -   [设置用于 VSIX 扩展的单元测试](#Host)  
   
-     使用 VS IDE 主机适配器运行测试。 为每个测试方法添加 `[HostType("VS IDE")]`为前缀。 运行测试时，此主机适配器将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+     使用 VS IDE 主机适配器运行测试。 为每个测试方法添加 `[HostType("VS IDE")]`为前缀。 运行测试时，此主机适配器将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
 -   [访问 DTE 和 ModelStore](#DTE)  
   
@@ -51,7 +49,7 @@ ms.locfileid: "47478426"
  可在 [UML – 使用文本快速输入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)上的代码示例库中找到经单元测试的 UML 扩展的示例。  
   
 ## <a name="requirements"></a>要求  
- 请参阅[要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -104,7 +102,7 @@ ms.locfileid: "47478426"
      这将确保测试将在 Visual Studio 的实验实例中运行。  
   
 ##  <a name="DTE"></a> 访问 DTE 和 ModelStore  
- 编写一个方法以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开建模项目。 通常，你只需在每个测试运行中打开一次解决方案。 若要仅运行此方法一次，请将 `[AssemblyInitialize]` 特性作为此方法的前缀。 不要忘记你还需要每个测试方法的 [HostType("VS IDE")] 特性。  例如：  
+ 编写一个方法以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中打开建模项目。 通常，你只需在每个测试运行中打开一次解决方案。 若要仅运行此方法一次，请将 `[AssemblyInitialize]` 特性作为此方法的前缀。 不要忘记你还需要每个测试方法的 [HostType("VS IDE")] 特性。  例如：  
   
 ```csharp  
 using EnvDTE;  

@@ -1,7 +1,7 @@
 ---
 title: 使用 UML API 编程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,19 +15,17 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aff07c444b6dac85144b06c0430ad1d9a2a497c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7e7fe3a58b1e21b116b3afcfff022cf19ba9af1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206292"
 ---
 # <a name="programming-with-the-uml-api"></a>Programming with the UML API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 UML API 编程](https://docs.microsoft.com/visualstudio/modeling/programming-with-the-uml-api)。  
-  
-UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UML 模型和关系图。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+UML API 的 Visual Studio，您可以编写代码来创建、 读取和更新 UML 模型和关系图。 若要查看支持 UML 模式的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  下面的主题除了介绍 API 参考页，还介绍了 API。  
   

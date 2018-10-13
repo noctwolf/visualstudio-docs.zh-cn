@@ -1,7 +1,7 @@
 ---
 title: 使用 SAL 注释减少 C + + 代码缺陷 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 29
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cdeb2c4d03d172d3bd2051077b3099515faf7b67
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ca7e8a406b02aa5d3b09d9ad588546ae3d965b89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477638"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207007"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>使用 SAL 批注以减少 C/C++ 代码缺陷
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 SAL 注释减少 C/c + + 代码缺陷](https://docs.microsoft.com/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)。  
-  
 SAL 是 Microsoft 源代码注释语言。 通过使用源的代码注释，您可以使意图你的代码后面显式。 这些批注也启用自动静态分析工具来使用少得多的误报和漏报更准确地说，分析你的代码。  
   
  文档文章在本部分中讨论的 SAL 方面、 参考提供有关 SAL 语法，并为提供其用法的示例。  

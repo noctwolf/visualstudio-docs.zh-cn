@@ -1,7 +1,7 @@
 ---
 title: CA2105： 数组字段不应为只读 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 88e7c9413ce8d1cb31e9abd7c9e1d32ef11612ca
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207943"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：数组字段不应为只读
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA2105： 数组字段不应为只读](https://docs.microsoft.com/visualstudio/code-quality/ca2105-array-fields-should-not-be-read-only)。
-
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
@@ -50,7 +47,7 @@ ms.locfileid: "47587665"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决由该规则标识的安全漏洞，不要依赖于可公开访问的只读数组的内容。 强烈建议你使用以下过程之一：
 
--   将不能更改的强类型集合替换为数组。 有关详细信息，请参阅<xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>。
+-   将不能更改的强类型集合替换为数组。 有关详细信息，请参阅 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName> 。
 
 -   使用返回私有数组副本的方法替换公共字段。 你的代码不依赖于克隆，因为如果，则不存在风险修改元素。
 

@@ -1,7 +1,7 @@
 ---
 title: 即时窗口 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3bd020a66b29180bdfb3430d1710e8f3c29a9b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477727"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203666"
 ---
 # <a name="immediate-window"></a>即时窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[即时窗口](https://docs.microsoft.com/visualstudio/ide/reference/immediate-window)。  
-  
   
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。  
   

@@ -1,7 +1,7 @@
 ---
 title: 将搜索添加到工具窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8bdee40e2af2e09844314cd1727f480b3cd33462
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206916"
 ---
 # <a name="adding-search-to-a-tool-window"></a>将搜索添加到工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将搜索添加到工具窗口](https://docs.microsoft.com/visualstudio/extensibility/adding-search-to-a-tool-window)。  
-  
 当创建或更新您的扩展插件中的工具窗口时，可以在 Visual Studio 中添加相同的搜索功能的其他位置出现。 此功能包括以下功能：  
   
 -   在工具栏的自定义区域中始终位于一个搜索框。  
@@ -57,7 +55,7 @@ ms.locfileid: "47483898"
   
 ## <a name="to-create-a-vsix-project"></a>创建 VSIX 项目  
   
-1.  创建一个名为的 VSIX 项目`TestToolWindowSearch`通过名为工具窗口**TestSearch**。 如果您需要执行此操作的帮助，请参阅[与工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+1.  创建一个名为的 VSIX 项目`TestToolWindowSearch`通过名为工具窗口**TestSearch**。 如果你在执行此操作时需要帮助，请参阅 [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
 ## <a name="to-create-a-tool-window"></a>若要创建工具窗口  
   
