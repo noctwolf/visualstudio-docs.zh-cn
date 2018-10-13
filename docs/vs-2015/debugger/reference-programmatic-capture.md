@@ -1,7 +1,7 @@
 ---
 title: 引用 （编程捕获） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70581d468c32964d7e081ec0ee4af3fe411b71b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c68b196829b1ecf27732e325c6d2b402c720c94
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230342"
 ---
 # <a name="reference-programmatic-capture"></a>引用（编程捕获）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[引用 （编程捕获）](https://docs.microsoft.com/visualstudio/debugger/graphics/reference-programmatic-capture)。  
-  
 图形诊断支持通过编程捕获 API 对其捕获功能进行编程控制。 此 API 可用于切换消息和将消息添加到图形诊断 HUD（提醒显示）、初始化和创建图形日志文件以及捕获图形信息。  
   
 ## <a name="programmatic-capture-apis"></a>编程捕获 API  
@@ -48,7 +46,7 @@ ms.locfileid: "47479772"
   
 |标题|描述|  
 |-----------|-----------------|  
-|[捕获图形信息](../debugger/capturing-graphics-information.md)|演示如何从基于 DirectX 的应用捕获图形信息，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具来诊断呈现问题。|  
+|[Capturing Graphics Information](../debugger/capturing-graphics-information.md)|演示如何从基于 DirectX 的应用捕获图形信息，以便使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具来诊断呈现问题。|  
 |[概述](../debugger/overview-of-visual-studio-graphics-diagnostics.md)|演示图形诊断可如何帮助你调试 DirectX 游戏和应用中的呈现错误。|
 
 

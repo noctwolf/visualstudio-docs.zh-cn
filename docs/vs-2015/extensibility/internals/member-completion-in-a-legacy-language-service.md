@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的成员完成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c17404b115c7e8b3f8036c52e493f6932411731
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240807"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>旧版语言服务中的成员完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的成员完成](https://docs.microsoft.com/visualstudio/extensibility/internals/member-completion-in-a-legacy-language-service)。  
-  
 IntelliSense 成员完成是工具提示显示特定的作用域，如类、 结构、 枚举或命名空间的可能的成员的列表。 例如，在 C# 中，如果用户键入"this"后, 跟一个句点，类或结构在当前范围内的所有成员的列表所示，用户可以从中选择的列表。  
   
  托管的包框架 (MPF) 提供的工具提示和管理的列表中的工具提示; 支持只需是来自分析器提供显示在列表中的数据的协作正常进行。  

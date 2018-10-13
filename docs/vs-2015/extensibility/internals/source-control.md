@@ -1,7 +1,7 @@
 ---
 title: 源代码管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93b00df779d5b650de59c91196b8fc004efa6994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 875ee92c91081b2df097e96bf833ea2fcf775f6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483533"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247503"
 ---
 # <a name="source-control"></a>源代码管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control)。  
-  
 本部分讨论用于实现源控件的集成功能作为选项[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以通过源代码管理插件或源代码管理 VSPackage。  
   
 ## <a name="in-this-section"></a>本节内容  
@@ -47,5 +45,5 @@ ms.locfileid: "47483533"
  源控件插件 API 的参考。  
   
  [扩展项目](../../extensibility/extending-projects.md)  
- 介绍如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
+ 介绍如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
 

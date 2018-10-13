@@ -1,7 +1,7 @@
 ---
 title: 如何：在 Visual Studio 中自定义菜单和工具栏 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -33,18 +33,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 74908b64c6ef1f17d040e74abd4e9b1013929c9a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7301a05ff17c20532a394fd1f26ab9fd98c3b65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477994"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237882"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自定义菜单和工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 自定义菜单和工具栏在 Visual Studio 中的](https://docs.microsoft.com/visualstudio/ide/how-to-customize-menus-and-toolbars-in-visual-studio)。  
-  
 在自定义 Visual Studio 时，你不仅可以添加和移除工具栏及菜单栏上的菜单，而且还可以添加和移除与任何给定工具栏或菜单有关的命令。  
   
 > [!WARNING]

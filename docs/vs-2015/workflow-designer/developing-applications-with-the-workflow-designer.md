@@ -1,7 +1,7 @@
 ---
 title: 使用工作流设计器开发应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 6a010a0df75e683ad26ac0ca297a0ab817bd22cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71cde900802543a21a20bc02e95bcfedc50d5541
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259150"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>使用工作流设计器开发应用程序
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 是可视化设计器和调试器，用于以图形化的方式构造和调试 [!INCLUDE[wf](../includes/wf-md.md)] 开发环境中承载的 [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]中的 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 应用程序。 它可用于通过使用模板和活动设计器来撰写复合工作流应用程序、活动库或 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 服务。 [!INCLUDE[crabout](../includes/crabout-md.md)] 工作流，请参阅[Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66)。  

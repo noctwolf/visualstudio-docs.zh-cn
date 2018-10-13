@@ -1,7 +1,7 @@
 ---
 title: 0 x-2 x-4 msaa 变量 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97203b9ecc44e5aa487f7fad35b47e050ce50766
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251173"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[0 x-2 x-4 x MSAA 变体](https://docs.microsoft.com/visualstudio/debugger/graphics/0x-2x-4x-msaa-variants)。  
-  
 重写所有呈现器目标和交换链上的多重采样抗锯齿 (MSAA) 设置。  
   
 ## <a name="interpretation"></a>解释  
@@ -39,7 +37,7 @@ ms.locfileid: "47492511"
 >  你的硬件可能无法针对所有格式完全支持 MSAA。 如果任何变体遇到无法解决的硬件限制问题，则在性能摘要表中它的列将为空白，并且会产生一条错误消息。  
   
 ## <a name="remarks"></a>备注  
- 调用创建呈现器目标的 `ID3DDevice::CreateTexture2D` 时，这些变体将重写样本计数和 sample-quality 参数。 具体而言，在以下情况下将重写这些参数：  
+ 调用创建呈现器目标的 `ID3DDevice::CreateTexture2D` 时，这些变体将重写样本计数和 sample-quality 自变量。 具体而言，在以下情况下将重写这些参数：  
   
 -   在 `D3D11_TEXTURE2D_DESC` 中传入的 `pDesc` 对象描述呈现器目标；即：  
   

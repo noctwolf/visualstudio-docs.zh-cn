@@ -1,7 +1,7 @@
 ---
 title: 创建解决方案和项目 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee777b8b1d2664fbaa284033f21624238d5cf456
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470895"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248529"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建解决方案和项目](https://docs.microsoft.com/visualstudio/ide/creating-solutions-and-projects)。  
-  
 项目是生成应用程序所需的所有内容的逻辑容器。 从主菜单上选择“文件”|“新建”|“项目”创建项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将创建一个解决方案来包含它。 如有必要，可以继续向解决方案添加更多新项目或现有项目。 可以从现有代码文件创建项目，也可创建在使用完毕后删除的临时项目（仅 .NET）。  
   
 > [!NOTE]

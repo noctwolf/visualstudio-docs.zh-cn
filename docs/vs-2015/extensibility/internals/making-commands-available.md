@@ -1,7 +1,7 @@
 ---
 title: 使命令可 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e29dd8a33a562bb5e44a0afedda1f278bdf59fe1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96f689d6a0b93ef91c181e536624bb09856c2f35
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257902"
 ---
 # <a name="making-commands-available"></a>提供可用命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[发出命令可用](https://docs.microsoft.com/visualstudio/extensibility/internals/making-commands-available)。  
-  
 当多个 Vspackage 添加到 Visual Studio 中时，用户界面 (UI) 可能会变得 overcrowded 命令。 您可以编写您的程序包以帮助减少此问题，请按如下所示：  
   
 -   计划包，以便仅当用户加载需要它。  

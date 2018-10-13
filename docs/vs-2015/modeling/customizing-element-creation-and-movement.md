@@ -1,7 +1,7 @@
 ---
 title: 自定义元素创建和移动 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 589c8c9be01477a2319943b47b329d09a80dc16f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 00e2bd91acd4240685411acbb00dcd478fff9aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469681"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203523"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义元素创建和移动](https://docs.microsoft.com/visualstudio/modeling/customizing-element-creation-and-movement)。  
-  
 您可以允许元素拖动到另一种，从工具箱或中粘贴或移动操作。 您可以已移动的元素链接到目标元素中，通过使用指定的关系。  
   
  元素合并指令 (EMD) 指定一个模型元素时，会发生什么情况*合并*到另一个模型元素。 发生这种情况时：  

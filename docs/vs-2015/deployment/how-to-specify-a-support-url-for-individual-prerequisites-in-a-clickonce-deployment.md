@@ -1,7 +1,7 @@
 ---
 title: 如何： 为 ClickOnce 部署中的各个系统必备项指定一个支持 URL |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 99003812248a10ca8797a5727911caf4ba3a0a60
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6b7f9c9f718b0f76d2a2b0c313c951064c5dc6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262257"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 为 ClickOnce 部署中的各个系统必备项指定一个支持 URL](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment)。  
-  
 一个[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署可以用于多个先决条件，必须在客户端计算机上可用的测试[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]要运行应用程序。 其中包括所需的最低版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，操作系统，并且必须预先安装在全局程序集缓存 (GAC) 中的任何程序集的版本。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]但是，无法安装这些必备组件的任何重试。如果找不到一项必备条件，它只是停止安装，并显示一个对话框，说明安装失败的原因。  
   
  有两种方法来安装系统必备组件。 可以使用引导程序应用程序进行安装。 或者，可以指定各个系统必备项，如果找不到系统必备组件对话框的上向用户显示的支持 URL。 该 URL 引用的页面可以包含用于安装必备组件的说明的链接。 如果应用程序未指定一个单独的必备组件，一个支持 URL[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]显示作为一个整体应用程序的部署清单中指定的支持 URL，如果已定义。  

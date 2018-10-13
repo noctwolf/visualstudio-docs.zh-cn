@@ -1,7 +1,7 @@
 ---
 title: 定义形状和连接线 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee16ff9dcca787fdf35101aff69348ccea42cfcf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471979"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244603"
 ---
 # <a name="defining-shapes-and-connectors"></a>定义形状和连接线
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定义形状和连接线](https://docs.microsoft.com/visualstudio/modeling/defining-shapes-and-connectors)。  
-  
 在域特定语言 (DSL) 中，有多种基本类型的形状，可用于在关系图上显示信息。  
   
 ##  <a name="shapeTypes"></a> 基本类型的形状和连接线  

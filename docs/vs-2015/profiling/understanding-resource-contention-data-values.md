@@ -1,7 +1,7 @@
 ---
 title: 了解资源争用数据值 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10c06805db7ef817421f7c9f85e316af8d4b5b35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54f8c7a545e0517c9d27dc32b68428e078cdfd40
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477693"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263232"
 ---
 # <a name="understanding-resource-contention-data-values"></a>了解资源争用数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[了解资源争用数据值](https://docs.microsoft.com/visualstudio/profiling/understanding-resource-contention-data-values)。  
-  
 资源争用分析将收集每次应用程序中的争用线程访问共享资源时被强制等待的详细调用堆栈信息。  
   
  **要求**  

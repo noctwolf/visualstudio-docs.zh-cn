@@ -1,7 +1,7 @@
 ---
 title: 实现自定义代码分析签入策略的托管代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6f0fe69b8afd4a33a783126b6006cbbb5545ba3f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483868"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268959"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>对托管代码实施自定义代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为托管代码实施自定义代码分析签入策略](https://docs.microsoft.com/visualstudio/code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code)。  
-  
 代码分析签入策略可指定一组签入到版本控制之前，团队项目的成员必须在源代码运行的规则。 Microsoft 提供的一组标准*规则集*到功能区域的组代码分析规则。 *自定义签入策略规则集*指定一组特定于团队项目的代码分析规则。 规则集存储在.ruleset 文件。  
   
  签入策略是在团队项目级别设置和指定的版本控制树中的.ruleset 文件的位置。 团队策略自定义规则集的版本控制位置没有限制。  

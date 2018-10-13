@@ -1,7 +1,7 @@
 ---
 title: 在建模图上定义笔势处理程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8afc13a03fcff51eaad0507af753f3a434eac093
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588691"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248071"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在建模图上定义笔势处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[建模图上定义笔势处理程序](https://docs.microsoft.com/visualstudio/modeling/define-a-gesture-handler-on-a-modeling-diagram)。  
-  
 在 Visual Studio 中，可以定义当用户双击项或将项拖动到 UML 关系图上时将执行的命令。 可以将这些扩展打包到 Visual Studio 集成扩展 ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) 中，并将其分发给其他 Visual Studio 用户。  
   
  如果已存在针对要拖动的关系图类型和元素类型的内置行为，则可能无法添加或重写此行为。  
   
 ## <a name="requirements"></a>要求  
- 请参阅[要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
+ 请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
@@ -244,15 +242,15 @@ ms.locfileid: "47588691"
   
      此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **故障排除**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]不会启动：  
+     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
   
     -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-    -   在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保中的字符串**启动外部程序**字段是的完整路径名[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，通常：  
+    -   在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于笔势处理程序类的特性中列出的某个类型的关系图。  
+2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于笔势处理程序类的特性中列出的某个类型的关系图。  
   
 3.  在关系图上的任意位置双击。 应调用你的双击处理程序。  
   
@@ -327,7 +325,7 @@ ms.locfileid: "47588691"
      如果源对象是从 UML 模型资源管理器或另一个 UML 关系图拖动的 UML 元素，请参阅[从 IDataObject 获取 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。  
   
 ### <a name="writing-the-code-of-the-methods"></a>编写方法的代码  
- 有关编写代码以读取和更新模型的详细信息，请参阅[使用 UML API 编程](../modeling/programming-with-the-uml-api.md)。  
+ 有关编写代码以读取和更新模型的详细信息，请参阅 [Programming with the UML API](../modeling/programming-with-the-uml-api.md)。  
   
  有关访问拖动操作中的模型信息的信息，请参阅[从 IDataObject 获取 UML 模型元素](../modeling/get-uml-model-elements-from-idataobject.md)。  
   

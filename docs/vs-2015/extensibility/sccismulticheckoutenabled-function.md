@@ -1,7 +1,7 @@
 ---
 title: SccIsMultiCheckoutEnabled 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 6721639d-e475-4766-81b5-ee40a280fc70
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11bd525d90f6c593c7a78de5734fa2b2e718c9db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: adef38debbdfbed9e224a453fd80215df7cfaa2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483257"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223010"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccIsMultiCheckoutEnabled 函数](https://docs.microsoft.com/visualstudio/extensibility/sccismulticheckoutenabled-function)。  
-  
 此函数检查源代码管理插件是否允许多次签出文件。  
   
 ## <a name="syntax"></a>语法  

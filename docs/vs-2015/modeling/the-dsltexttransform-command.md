@@ -1,7 +1,7 @@
 ---
 title: DslTextTransform 命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8a565fa6226348a1fe1b6dcfcbb67f704e74abc8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479729"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269368"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[DslTextTransform 命令](https://docs.microsoft.com/visualstudio/modeling/the-dsltexttransform-command)。  
-  
 DslTextTransform.cmd 是一个脚本调用 TextTransform.exe 和运行使用常用的选项。 可以使用 DslTextTransformation.cmd 来自动执行的每夜生成您[!INCLUDE[dsl](../includes/dsl-md.md)]项目。 有关详细信息，请参阅[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)。  
   
  DslTextTransform.cmd 位于以下目录中：  

@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的解决方案和项目| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -55,18 +55,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7223acc3612d12fc5589e46b06b9fa76b5ecf002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e5996d07a3186c1881e4fc44b3b1622a9ab221f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482767"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211141"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[解决方案和项目在 Visual Studio 中的](https://docs.microsoft.com/visualstudio/ide/solutions-and-projects-in-visual-studio)。  
-  
 在 Visual Studio 中创建应用、应用程序、网站、Web 应用、脚本、插件等时，会从 *项目*开始。 在逻辑意义上，项目包含所有源代码文件、图标、图像、数据文件以及将编译到可执行程序或网站中，或是执行编译所需的任何其他内容。  项目还包含所有编译器设置以及程序将与之通信的各种服务或组件需要的其他配置文件。  
   
  在字面意义上，项目是 XML 文件（*.vbproj、\*.csproj、\*.vcxproj），它定义虚拟文件夹层次结构以及它“包含”的所有项和所有生成设置的路径。 在 Visual Studio 中，项目文件由解决方案资源管理器用于显示项目内容和设置。 编译项目时，MSBuild 引擎会使用项目文件创建可执行文件。 还可以自定义项目以生成其他类型的输出。  

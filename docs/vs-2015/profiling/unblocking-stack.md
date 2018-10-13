@@ -1,7 +1,7 @@
 ---
 title: 取消阻塞堆栈 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8fb91a9e94e3bbad9c88abe6dfe85dfda81dc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 493f95b3efdf1ee47a5f4873a95350261981b75e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232474"
 ---
 # <a name="unblocking-stack"></a>取消阻塞堆栈
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[取消阻塞堆栈](https://docs.microsoft.com/visualstudio/profiling/unblocking-stack)。  
-  
 如果当前选定的线程元素表示一个受阻片段，且该片段在被当前进程中的另一个线程取消阻塞后再开始执行，则此选项卡上将显示执行取消阻塞操作的线程的调用堆栈。  
   
 ## <a name="see-also"></a>请参阅  

@@ -1,7 +1,7 @@
 ---
 title: 快速入门： 为 C + + 代码分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97e3aa842a2ebb19492370836058ec2236a44564
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478716"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241769"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[快速入门： C/c + + 代码分析](https://docs.microsoft.com/visualstudio/code-quality/quick-start-code-analysis-for-c-cpp)。  
-  
 可以通过常规地运行C 或 C++ 代码的代码分析以提高应用程序的质量。 这可帮助你查找常见问题、良好编程习惯的违例，或者很难通过测试发现的缺陷。 代码分析警告与编译器错误和警告不同，因为代码分析查找那些有效但可能仍会给你和使用你的代码的其他人带来问题的特定代码模式。  
   
 ## <a name="in-this-topic"></a>在本主题中  

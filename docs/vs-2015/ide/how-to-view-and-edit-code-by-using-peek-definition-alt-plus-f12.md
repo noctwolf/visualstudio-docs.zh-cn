@@ -1,7 +1,7 @@
 ---
 title: 如何：使用查看定义查看和编辑代码 (Alt+F12) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e10c19480004345d4a5df1d628972a788794e13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc99602fe1ca2003995594f75736d581fa37e0d0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478429"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254470"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>如何：使用查看定义查看和编辑代码 (Alt+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 查看和编辑代码使用查看定义 (alt+f12)](https://docs.microsoft.com/visualstudio/ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12)。  
-  
 可使用“查看定义”命令来查看和编辑代码，而无需离开正在编写的代码。 “查看定义”和“转到定义”显示相同的信息，但“查看定义”在弹出窗口中显示，而“转到定义”在单独的代码窗口中显示代码。 “转到定义”将导致上下文（即活动的代码窗口、当前行和光标位置）切换到定义代码窗口。 通过使用“查看定义”，无需离开原始代码文件就能查看和编辑定义，还能在定义文件内部到处移动。  
   
  可对 C#、Visual Basic 和 C++ 代码使用“查看定义”。 在 Visual Basic 中，**速览定义**显示链接，指向**对象浏览器**没有定义元数据 （例如，在生成的.NET Framework 类型） 的符号。  

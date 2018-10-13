@@ -1,7 +1,7 @@
 ---
 title: 从 UML 模型生成文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 20d017c8db48f2afa3732fbf99a8361775c9f6d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482541"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49226494"
 ---
 # <a name="generate-files-from-a-uml-model"></a>从 UML 模型生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 UML 模型生成文件](https://docs.microsoft.com/visualstudio/modeling/generate-files-from-a-uml-model)。  
-  
 可以从 UML 模型生成程序代码、架构、文档、资源和其他任意类型的项目。 从 UML 模型生成文本文件的一种简便方法是使用[文本模板](../modeling/code-generation-and-t4-text-templates.md)。 这些让你可以将程序代码嵌入到要生成的文本内部。  
   
  有三种主要方案：  

@@ -1,7 +1,7 @@
 ---
 title: 如何：搜索主题 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c094e255a6e87c1b2d6d8036bf033874399e000
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef0cbdff47423fe1ed580f3f51ba1e6039ee3e01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471129"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248282"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 搜索主题](https://docs.microsoft.com/visualstudio/ide/how-to-search-for-topics)。  
-  
 可以使用全文搜索功能找到包含特定单词的所有主题。 还可以通过使用通配符表达式、逻辑运算符和高级搜索运算符优化与自定义搜索。  
   
 ### <a name="to-open-the-search-tab"></a>若要打开搜索选项卡  

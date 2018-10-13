@@ -1,7 +1,7 @@
 ---
 title: QUERYCHANGESFUNC |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a2f2c0016b43e0eca6de3baa1cac12cbbec6ca4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ebbd130020664d2876fd3455dea8051132379c16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478090"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229159"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[QUERYCHANGESFUNC](https://docs.microsoft.com/visualstudio/extensibility/querychangesfunc)。  
-  
 这是一个回调函数，用于通过[SccQueryChanges](../extensibility/sccquerychanges-function.md)操作枚举集合的文件的名称，并确定每个文件的状态。  
   
  `SccQueryChanges`函数提供一组文件和一个指向`QUERYCHANGESFUNC`回调。 源代码管理插件枚举给定的列表，并提供的列表中每个文件 （通过此回调） 的状态。  

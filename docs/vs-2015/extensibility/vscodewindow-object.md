@@ -1,7 +1,7 @@
 ---
 title: VSCodeWindow 对象 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: cf5fe926-e784-4098-bc01-cac49c7c55c6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 17dd907bf041f37c4273548f0793b26625a34e3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12752b015bc8e3f69002fd8732622fc11eface65
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479464"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259362"
 ---
 # <a name="vscodewindow-object"></a>VSCodeWindow 对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSCodeWindow 对象](https://docs.microsoft.com/visualstudio/extensibility/vscodewindow-object)。  
-  
 代码窗口是可以包含一个或多个文本视图，通常一个专用的文档窗口<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>对象。  
   
  体系结构方面，代码窗口是窗口框架中是一个文档窗口。 就功能而言，代码窗口是只需具有其他功能的文档窗口。 在多文档界面 (MDI) 模式下，代码窗口是 MDI 子框架。 有关详细信息，请参阅[使用旧版 API 自定义代码 Windows](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)。  

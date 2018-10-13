@@ -1,7 +1,7 @@
 ---
 title: 扩展状态栏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc9a691b3ee8955f7fad33c84d7d0d40652e6a8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8ea7854bb90564f68a7f178ceda7b561b123dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244733"
 ---
 # <a name="extending-the-status-bar"></a>扩展状态栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展状态栏](https://docs.microsoft.com/visualstudio/extensibility/extending-the-status-bar)。  
-  
 可用于 Visual Studio 状态栏在 IDE 底部显示的信息。  
   
  扩展状态栏时，您可以在四个区域中显示信息和用户界面： 反馈区域、 进度栏、 动画区域和设计器区域。 反馈区域可以显示文本并突出显示所显示的文本。 进度栏显示短时间运行操作，如保存文件的进度。 动画区域显示为长时间运行的操作或操作不确定的长度，如生成多个项目在解决方案中的一个连续循环的动画。 和设计器区域显示的光标所在的位置的行和列号。  

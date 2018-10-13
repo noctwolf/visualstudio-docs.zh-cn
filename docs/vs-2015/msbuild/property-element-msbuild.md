@@ -1,7 +1,7 @@
 ---
 title: Property 元素 (MSBuild) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9f3494cb46aa18d9b79d29aa2936d31ae55997b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8b9ebd5207b4fc4a6274090b91e8fa3ab0b20cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478397"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262987"
 ---
 # <a name="property-element-msbuild"></a>Property 元素 (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Property 元素 (MSBuild)](https://docs.microsoft.com/visualstudio/msbuild/property-element-msbuild)。  
-  
   
 包含用户定义的属性名和值。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 项目中使用的每一个属性都必须被指定为 `PropertyGroup` 元素的子元素。  
   

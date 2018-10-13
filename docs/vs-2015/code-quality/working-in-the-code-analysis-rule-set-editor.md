@@ -1,7 +1,7 @@
 ---
 title: 使用代码分析规则集编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 098cf799ad99eb61a8aa53112eb7e44ee200c6c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd107f2ac0c377765fda2f62f175d7285eb01bb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269641"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在代码分析规则集编辑器中工作](https://docs.microsoft.com/visualstudio/code-quality/working-in-the-code-analysis-rule-set-editor)。  
-  
 代码分析规则集编辑器，可以指定要包括在自定义规则集中的规则和指定的操作。 此外可以指定当遇到规则的冲突，代码分析时要执行的操作。  
   
 |操作|描述|  

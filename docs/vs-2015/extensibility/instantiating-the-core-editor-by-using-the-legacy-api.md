@@ -1,7 +1,7 @@
 ---
 title: 实例化使用旧 API 的核心编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaed9c7860153beee6d02bd02242697f10647e0a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246033"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>实例化使用旧 API 的核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实例化 Core 通过编辑器使用旧版 API](https://docs.microsoft.com/visualstudio/extensibility/instantiating-the-core-editor-by-using-the-legacy-api)。  
-  
 在编辑器负责进行文本编辑功能，如插入、 删除、 复制和粘贴。 它将与所提供的语言服务，如文本颜色设置、 缩进和 IntelliSense 语句完成功能结合这些函数。  
   
  可以实例化三种方式之一中的核心编辑器的实例：  

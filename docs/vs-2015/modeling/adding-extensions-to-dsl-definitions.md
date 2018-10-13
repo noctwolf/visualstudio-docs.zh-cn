@@ -1,7 +1,7 @@
 ---
 title: 向 DSL 定义中添加扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e3b8cb28edb6959511a0cfdf157e323d6706e5f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476828"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261074"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>向 DSL 定义中添加扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加到 DSL 定义的扩展](https://docs.microsoft.com/visualstudio/modeling/adding-extensions-to-dsl-definitions)。  
-  
 DSL 定义扩展插件，可创建的域特定语言 (DSL) 的扩展包。 DSL 的方式相同，DSL 扩展，它包含在 Visual Studio 集成扩展 (VSIX) 中，可以安装在用户的计算机上。 可以动态启用和禁用在运行时的其他功能。 Dsl 无需显式设计为扩展插件，并扩展可以被设计为更高版本或者由第三方而无需更改扩展的 DSL。  
   
  其他功能可以包括：  

@@ -1,7 +1,7 @@
 ---
 title: 为 Windows 应用商店控件设置唯一自动化属性以供测试使用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3dd593efa23d40278a314f6b1c1d90e7f7905922
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0e20186a7615f774f3cef0b57c56a61a3b076b8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238870"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>为 Windows 应用商店控件设置唯一的自动化属性以进行测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为测试设置唯一自动化属性的 Windows 应用商店控件](https://docs.microsoft.com/visualstudio/test/set-a-unique-automation-property-for-windows-store-controls-for-testing)。  
-  
 必须有可标识每个控件的唯一自动化属性，才能对基于 XAML 的 Windows 应用商店应用运行编码的 UI 测试。  
   
  可以根据应用中 XAML 控件的类型分配唯一自动化属性。 下面介绍了如何在以下情况下分配此唯一自动化属性：  

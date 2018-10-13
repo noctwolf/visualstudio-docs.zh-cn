@@ -1,7 +1,7 @@
 ---
 title: RegisterAssembly 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5bbca089b15979df11c4eda73a46c6a6436b53d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ca8def8de6a290822a6736f70a401ed7e0cf9bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230238"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[RegisterAssembly 任务](https://docs.microsoft.com/visualstudio/msbuild/registerassembly-task)。  
-  
   
 读取指定程序集中的元数据，并将所需项添加到注册表中，从而使 COM 客户端可以透明方式创建 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 类。 此任务的行为与 [Regasm.exe（程序集注册工具）](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)的行为类似，但不完全相同。  
   

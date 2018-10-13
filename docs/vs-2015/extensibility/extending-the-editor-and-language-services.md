@@ -1,7 +1,7 @@
 ---
 title: 扩展编辑器和语言服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8102b8fb4afc02ca0540d75b3c0d08ef75b964d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a7233a89dbda0ebd333979de752296df45bf712
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480808"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259189"
 ---
 # <a name="extending-the-editor-and-language-services"></a>扩展编辑器和语言服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展编辑器和语言服务](https://docs.microsoft.com/visualstudio/extensibility/extending-the-editor-and-language-services)。  
-  
 可以将语言服务功能 （如 IntelliSense) 添加到您自己的编辑器，并扩展 Visual Studio 代码编辑器中的大多数功能。  您可以扩展的完整列表，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  
   
  使用 Managed Extensibility Framework (MEF) 扩展编辑器的大多数功能。 例如，如果你想要扩展的编辑器功能是语法着色，可以编写 MEF*组成部分*，它定义要为其不同的颜色设置和其处理方式的分类。 此编辑器还支持多个扩展的相同功能。  

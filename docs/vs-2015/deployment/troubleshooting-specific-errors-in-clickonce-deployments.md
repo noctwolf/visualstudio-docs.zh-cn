@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 部署中的特定错误的疑难解答 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4ec87f12dc97ced54248c7323643b417fb14a63c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0b7e53eba21372641bad683c442e796648a4765
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468912"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213637"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>ClickOnce 部署中的特定错误的疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 部署中的故障排除特定错误](https://docs.microsoft.com/visualstudio/deployment/troubleshooting-specific-errors-in-clickonce-deployments)。  
-  
 本主题列出了在部署时可能发生的以下常见错误[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，并提供了步骤来解决每个问题。  
   
 ## <a name="general-errors"></a>常规错误  

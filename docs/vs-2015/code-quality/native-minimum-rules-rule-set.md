@@ -1,7 +1,7 @@
 ---
 title: 本机最少量规则规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b1c2f599a3f700bb9e04d3f423690b46059b385
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b8163e3f95dcf6230e2ef286950edb43cdd22cbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471689"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210153"
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[本机最少量规则规则集](https://docs.microsoft.com/visualstudio/code-quality/native-minimum-rules-rule-set)。  
-  
 Microsoft 本机最少量规则专注于在本机代码中，包括潜在安全漏洞和应用程序崩溃的最关键问题。 应在你为本机项目创建的任何自定义规则集中包含此规则集。  
   
 |规则|描述|  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 获取 DataRow 的特定版本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: ed409bdafaa15052a7190480a7cbc46ac766de84
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bd8ae12c77c671e375043a0381a4b580d1a03d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255477"
 ---
 # <a name="how-to-get-specific-versions-of-a-datarow"></a>如何：获取 DataRow 的特定版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

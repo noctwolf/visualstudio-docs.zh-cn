@@ -1,7 +1,7 @@
 ---
 title: 升级 Visual studio"15"的自定义项目和项模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 02c7b14051a41616ed1b98812d1f1b7762f7165e
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221151"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>升级 Visual studio"15"的自定义项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[升级自定义项目和项模板的 Visual Studio ](https://docs.microsoft.com/visualstudio/extensibility/upgrading-custom-project-and-item-templates-for-visual-studio-2017)。  
-  
 从 Visual Studio"15"预览版 4 中，Visual Studio 正在改变其发现由.vsix 或.msi 安装的项目和项模板的方式。 如果你拥有使用自定义项目或项模板的扩展，您需要更新你的扩展。 本主题介绍你必须执行的操作。  
   
  此更改会影响仅 Visual Studio"15"。 它不会影响 Visual Studio 的早期版本。  

@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续错误消息对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d649df9584fc06ee08b7a7d1e846597c12519019
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8b6252fbaf67a9a5b4173c0fee3f65607e9cc462
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227224"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>“编辑并继续”错误消息对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑并继续的错误消息对话框](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-error-message-dialog-box)。  
-  
 在编辑并继续，支持的语言中进行调试时，会显示此对话框，但**编辑并继续**不可用的类型的代码所做的更改。 此框中的错误消息提供了更加详细的说明。 此对话框出现的可能原因包括：  
   
 -   尝试在启用非托管调试时编辑托管代码。 “编辑并继续”不可用于混合模式调试。  

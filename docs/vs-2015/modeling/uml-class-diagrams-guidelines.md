@@ -1,7 +1,7 @@
 ---
 title: UML 类图： 准则 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 56
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 073fb32fae3d02e7edaa8adb8347901e797d047f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9c7b5f5a88e8563930615c883c6911956932d17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484008"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181774"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>UML 类图：准则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 类图： 准则](https://docs.microsoft.com/visualstudio/modeling/uml-class-diagrams-guidelines)。  
-  
 在 Visual Studio 中，你可以使用*UML 类图*来描述数据类型以及它们的关系与实现无关。 该关系图主要用来描述类的逻辑方面，而不是它们的实现。  
   
  若要创建 UML 类图中，在**体系结构**菜单中，选择**新的 UML 关系图或层关系图**。  

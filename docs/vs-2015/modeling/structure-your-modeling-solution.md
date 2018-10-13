@@ -1,7 +1,7 @@
 ---
 title: 安排建模解决方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 96f545c980cd49c6f70c45f3ee7fc80be3a25421
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4409891b7d6cbc4be5f46b598cd5910f3e0e9284
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481005"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243030"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安排建模解决方案](https://docs.microsoft.com/visualstudio/modeling/structure-your-modeling-solution)。  
-  
 若要在开发项目中有效地使用模型，团队成员必须能够同时在项目的不同部分的模型上工作。 本主题建议了一种将应用程序划分为对应整体分层关系图中层的不同部分的方案。  
   
  若要快速启动一个项目或子项目，使项目模板遵循你选择的项目结构非常有用。 本主题描述如何创建和使用此类模板。  

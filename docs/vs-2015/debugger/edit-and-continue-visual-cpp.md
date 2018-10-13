@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续 （Visual c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b95de832050cd6283b85ec4fe6bd99b67c8c1d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482050"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255070"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑并继续 （Visual c + +）](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-cpp)。  
-  
 可以使用 Visual C++ 项目中的“编辑并继续”。 请参阅[支持的代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)有关限制的编辑并继续的信息。  
   
  从 Visual Studio 2015 Update 1 开始，你现在可以使用编辑并继续在 Windows 应用商店 c + + 应用和 DirectX 应用程序，因为它现在支持 **/ZI**编译器开关与 **/bigobj**切换。 您还可以使用与使用编译的二进制文件的编辑并继续 **/FASTLINK**切换。  

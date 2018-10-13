@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的图像和图标 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c443f59cb33bd73775b85244ca6811050c47b245
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a818bf9b1975692c220b2be82b2fed7ca97fad13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470110"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255744"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 的图像和图标](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/images-and-icons-for-visual-studio)。  
-  
 ##  <a name="BKMK_ImageUseInVisualStudio"></a> 在 Visual Studio 中的映像使用  
  在之前创建图片，请考虑进行中的 1,000 多个映像的用法[Visual Studio 图像库](http://www.microsoft.com/en-my/download/details.aspx?id=35825)。  
   

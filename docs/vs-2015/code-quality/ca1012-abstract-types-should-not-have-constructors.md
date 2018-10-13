@@ -1,7 +1,7 @@
 ---
 title: CA1012： 抽象类型不应具有构造函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,15 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 692dfc0ad69cf4d71d82953e2cc9965733915dc6
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: f5091cdf1a9af38b0e0b45fcf1ba99f91de03683
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238272"
 ---
 # <a name="ca1012-abstract-types-should-not-have-constructors"></a>CA1012：抽象类型不应具有构造函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1012： 抽象类型不应具有构造函数](https://docs.microsoft.com/visualstudio/code-quality/ca1012-abstract-types-should-not-have-constructors)。
-
 |||
 |-|-|
 |TypeName|AbstractTypesShouldNotHaveConstructors|

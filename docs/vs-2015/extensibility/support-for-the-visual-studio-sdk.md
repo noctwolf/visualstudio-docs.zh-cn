@@ -1,7 +1,7 @@
 ---
 title: 针对 Visual Studio SDK 的支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05e5e4d30601c59d04a96cdca2e71609ea3e0bc5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3e33a47052a399b0edac2bb4425c27872cb6b37
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481841"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229198"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支持 Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[对 Visual Studio SDK 的支持](https://docs.microsoft.com/visualstudio/extensibility/support-for-the-visual-studio-sdk)。  
-  
 有关如何扩展 Visual Studio 集成的开发环境 (IDE) 的疑问的客户有多个支持选项。  
   
 ## <a name="free-support"></a>免费支持  

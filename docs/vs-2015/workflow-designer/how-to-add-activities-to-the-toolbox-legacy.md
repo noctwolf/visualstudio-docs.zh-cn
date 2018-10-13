@@ -1,7 +1,7 @@
 ---
 title: 如何： 将活动添加到工具箱 （旧版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 0bcd5f525dfb0794f06b5210287251feb883b340
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fafcc260f451c4ead24d7a9dbb72a4db22c0b79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478457"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249361"
 ---
 # <a name="how-to-add-activities-to-the-toolbox-legacy"></a>如何：向工具箱添加活动（旧版）
 在生成的旧工作流解决方案时[!INCLUDE[wfd1](../includes/wfd1-md.md)]面向[!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)]或[!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]，可以将自定义活动添加到工作流项目并将它们的设计器置于**工具箱**的简单访问权限。 您还可以直接添加活动**工具箱**从动态链接库 (DLL)。  

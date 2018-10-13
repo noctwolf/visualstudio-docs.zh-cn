@@ -1,7 +1,7 @@
 ---
 title: 通过使用修改独立的 Shell。Vsct 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6d147c2d-10e9-400e-b8ce-5566287b41ba
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0606d28f151f0d9c85980121e3129bd9204c61b8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67955586333cf665b7cffd5039ef2f6e051834a9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259995"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-vsct-file"></a>通过使用修改独立的 Shell。Vsct 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[修改独立 Shell 的使用。Vsct 文件](https://docs.microsoft.com/visualstudio/extensibility/modifying-the-isolated-shell-by-using-the-dot-vsct-file)。  
-  
 Visual Studio 独立的 shell 项目的 UI 项目包含可以指定应用程序中提供了哪些应用程序组和单个命令在.vsct 文件。 以下是未修改的.vsct 文件的摘录。  
   
 ```  

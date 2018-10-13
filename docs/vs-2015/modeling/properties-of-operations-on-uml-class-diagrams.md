@@ -1,7 +1,7 @@
 ---
 title: 类图的 uml 操作属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e977ede02f355724f1a93f82f1c688de27e36fa6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c2392cf951c5f25a5b287a1d56338b03bebb27e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588699"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207013"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>UML 类图中操作的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 操作的属性类图](https://docs.microsoft.com/visualstudio/modeling/properties-of-operations-on-uml-class-diagrams)。  
-  
 在 UML 类图中，您可以添加*操作*向类和接口。 操作即一种可以由类或接口的实例执行的方法或函数。  
   
  若要添加操作，请右键单击类或接口，指向**外**，然后单击**操作**。  

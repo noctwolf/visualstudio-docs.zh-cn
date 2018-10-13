@@ -1,7 +1,7 @@
 ---
 title: 开始使用源代码管理插件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 56b38a1727d0ae859d12b1547e90705cdd6716e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 725adb2325d5da10ff3ecd3c646464c5a4a6eb4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479982"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236350"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>源代码管理插件入门
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[开始使用源代码管理插件](https://docs.microsoft.com/visualstudio/extensibility/internals/getting-started-with-source-control-plug-ins)。  
-  
 若要创建源代码管理插件，必须创建实现源控件插件 API 中定义的函数的 DLL，然后注册与 DLL [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ，使其可供使用源代码版本控制中。  
   
  三个版本的源控制插件 API （版本 1.1、 1.2 和 1.3） 可为源代码管理插件。此处的文档的源控制插件 API 是 1.3 版。 它的设计目标是与源代码管理插件完全兼容支持版本 1.1 和 1.2。 [What's New in 源控制插件 API 版本 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)部分详细介绍了最新版本的源控制插件 API 中支持的新功能。  

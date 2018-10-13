@@ -1,7 +1,7 @@
 ---
 title: UML 活动图上元素的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 19
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c50a84f9e3c5425459ea458c3f6bbc282d64b0b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c9f2830f66ad7f79a49b096bb489b542124efe6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469857"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269969"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>UML 活动图上元素的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 活动图上元素的属性](https://docs.microsoft.com/visualstudio/modeling/properties-of-elements-on-uml-activity-diagrams)。  
-  
 UML 活动图上的每个元素都有属性。 若要查看某个元素的属性，请右键单击元素关系图上或在**UML 模型资源管理器**，然后单击**属性**。 属性将显示在**属性**窗口。  
   
 > [!NOTE]

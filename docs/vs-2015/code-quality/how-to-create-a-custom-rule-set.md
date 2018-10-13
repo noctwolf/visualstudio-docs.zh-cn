@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建自定义规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee21452912fa87b63b49db609828ef44cac7c4c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255497"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：创建自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建自定义规则集](https://docs.microsoft.com/visualstudio/code-quality/how-to-create-a-custom-rule-set)。  
-  
 在中[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]， [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]，并[!INCLUDE[vsPro](../includes/vspro-md.md)]，可以创建和修改自定义*规则集*以满足与代码分析相关联的特定项目需求。 若要创建自定义规则集，在打开一个或多个标准规则设置规则集编辑器中。 然后可以添加或移除特定的规则，可以更改当代码分析确定违反了一个规则时发生的操作。  
   
  若要创建新的自定义规则集，通过使用新的文件名保存。 自定义规则集自动分配给项目。  

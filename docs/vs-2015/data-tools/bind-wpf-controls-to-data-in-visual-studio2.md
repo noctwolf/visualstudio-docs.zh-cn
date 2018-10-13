@@ -1,7 +1,7 @@
 ---
 title: 将 WPF 控件绑定到数据中 Visual Studio2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99f18122dc0be7e3a68871aa58a9109502da9c0
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9cd13723e1483a33e4b98dc544c6e8448dc9a980
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880950"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208231"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>将 WPF 控件绑定到 Visual Studio 中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
-  
 您可以创建数据绑定[!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]通过使用控件**数据源**窗口。 首先，将添加到的数据源**数据源**窗口。 然后，将项从**数据源**到窗口**WPF 设计器**。  
   
 ##  <a name="adding"></a> 将数据源添加到数据源窗口  

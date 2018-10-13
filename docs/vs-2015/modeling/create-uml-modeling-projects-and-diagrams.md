@@ -1,7 +1,7 @@
 ---
 title: 创建 UML 建模项目和关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3cf34434bb600131bdd3a5aeeee9d2d3be98c96f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250479"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>创建 UML 建模项目和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 UML 建模项目和关系图](https://docs.microsoft.com/visualstudio/modeling/create-uml-modeling-projects-and-diagrams)。  
-  
 UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio 为五种最常用的 UML 关系图提供了模板：活动、类、组件、序列和用例。 此外，你可以创建层关系图，这将帮助你定义你的系统的结构。  
   
  UML 建模图和层关系图只可以存在于建模项目内。 每个建模项目包含一个共享的 UML 模型和几个 UML 关系图。 每个关系图是模型的部分视图。 UML 模型包含在 UML 关系图上的所有元素，并可以使用 UML 模型资源管理器来查看。 有关模型和及其与关系的信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。 有关版本控制下的建模项目的信息，请参阅[管理模型和版本控制下的关系图](../modeling/manage-models-and-diagrams-under-version-control.md)和[安排建模解决方案](../modeling/structure-your-modeling-solution.md)  
@@ -148,7 +146,7 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
   
 -   作为源代码的视图创建的类图。 这些与 UML 类图不相关。 有关详细信息，请参阅[设计和查看类和类型](../ide/designing-and-viewing-classes-and-types.md)。  
   
--   代码映射。 请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。  
+-   代码映射。 请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。  
   
 -   关系图不是 UML 关系图或层关系图，如域特定语言。  
   

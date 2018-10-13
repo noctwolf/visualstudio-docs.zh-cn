@@ -1,7 +1,7 @@
 ---
 title: PreviewImage 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 916b500862f614a58c4c7234a42fef299e8e206d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 802137fc1f8331157c697042392e4e6ef1622cd7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257863"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[PreviewImage 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/previewimage-element-visual-studio-templates)。  
-  
 指定的预览图像，为的文件名称，将出现在任何一个的预览图像**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  

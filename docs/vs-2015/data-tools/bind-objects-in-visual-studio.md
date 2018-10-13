@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的绑定对象 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b01d2b539de19a8b04075bb83c7ee71ca17a644d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da31c33288489c3dbaef8a51b5c3fe2fe96d818b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479713"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241496"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Visual Studio 中的绑定对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的绑定对象](https://docs.microsoft.com/visualstudio/data-tools/bind-objects-in-visual-studio)。  
-  
   
 Visual Studio 提供用于为你的应用程序中的数据源使用自定义对象的设计时工具。 当你想要将绑定到 UI 控件的对象中存储数据库中的数据时，建议的方法是使用实体框架生成的类。 DbSet 对象上调用 AcceptChanges 时，实体 Frameworkautogenerates 所有样板更改跟踪代码，这意味着对本地对象的任何更改都会自动保存到数据库。    有关详细信息，请参阅[Entity Framework 文档](https://ef.readthedocs.org/en/latest/)。  
   

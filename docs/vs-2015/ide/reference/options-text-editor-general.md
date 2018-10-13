@@ -1,7 +1,7 @@
 ---
 title: “选项”->“文本编辑器”->“常规”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -53,18 +53,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3288ead8d962499311c557adcd428b8fa18036de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47fb93aebeecf50ae20616fc47033be60724cd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257824"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项、 文本编辑器、 常规](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-general)。  
-  
   
 使用此对话框可以更改 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 代码和文本编辑器的全局设置。 若要显示此对话框，请在“工具”菜单上单击“选项”，展开“文本编辑器”文件夹，然后单击“常规”。  
   

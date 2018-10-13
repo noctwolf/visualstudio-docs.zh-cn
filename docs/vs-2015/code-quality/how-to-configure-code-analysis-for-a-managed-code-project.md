@@ -1,7 +1,7 @@
 ---
 title: 如何： 配置托管的代码项目的代码分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 34c3088aee4089c69669eaa3af5a08a657553363
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 98f3d14b73b0219d0fcec4312648bf613f37378e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239182"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：配置托管代码项目的代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 为托管代码项目配置代码分析](https://docs.microsoft.com/visualstudio/code-quality/how-to-configure-code-analysis-for-a-managed-code-project)。  
-  
 在[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]，[!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]并[!INCLUDE[vsPro](../includes/vspro-md.md)]，可以选择从一组代码分析*规则集*要应用于托管的代码项目。 默认规则集是 Microsoft 最少量建议规则。 您可以应用其他规则设置为一个项目或解决方案中的所有项目。  
   
 > [!NOTE]

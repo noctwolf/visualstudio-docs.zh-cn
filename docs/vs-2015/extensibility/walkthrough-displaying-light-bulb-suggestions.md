@@ -1,7 +1,7 @@
 ---
 title: 演练： 显示灯泡建议 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c36dad27a4d4a5bff5381b99041f7221447645e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484499"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252494"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>演练：显示灯泡建议
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 显示灯泡建议](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-light-bulb-suggestions)。  
-  
 电灯泡是 Visual Studio 编辑器中使用的图标，展开此项可显示的一组操作，例如通过内置的代码分析器或重构代码标识的问题的修补程序。  
   
  在 Visual C# 和 Visual Basic 编辑器中，您还可以使用.NET 编译器平台 ("Roslyn") 编写并打包你自己的自动显示灯泡的操作的代码分析器。 有关详细信息，请参见:  
@@ -50,7 +48,7 @@ ms.locfileid: "47484499"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`LightBulbTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `LightBulbTest`。  
   
 2.  添加**编辑器分类器**到项目项模板。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -228,14 +226,14 @@ ms.locfileid: "47484499"
   
 1.  在项目中，添加对 Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll 并集的引用**Copy Local**到`False`。  
   
-2.  创建两个类，第一个名为`UpperCaseSuggestedAction`和第二个名为`LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
+2.  创建两个类，第一个名为 `UpperCaseSuggestedAction` ，第二个名为 `LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。  
   
     ```csharp  
     internal class UpperCaseSuggestedAction : ISuggestedAction   
     internal class LowerCaseSuggestedAction : ISuggestedAction  
     ```  
   
-     这两个类是相似，只不过其中一个调用<xref:System.String.ToUpper%2A>和其他调用<xref:System.String.ToLower%2A>。 以下步骤仅说明大写操作类，但你必须实现这两个类。 将实现大写操作的步骤用作实现小写操作的模式。  
+     这两个类相似，只不过其中一个调用 <xref:System.String.ToUpper%2A>，另一个调用 <xref:System.String.ToLower%2A>。 以下步骤仅说明大写操作类，但你必须实现这两个类。 将实现大写操作的步骤用作实现小写操作的模式。  
   
 3.  添加以下 using 语句，这些类：  
   
@@ -325,7 +323,7 @@ ms.locfileid: "47484499"
     }  
     ```  
   
-9. 实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A>方法的范围中的文本替换为其大写等效项。  
+9. 通过将范围中的文本替换为其大写形式来实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.Invoke%2A> 方法。  
   
     ```csharp  
     public void Invoke(CancellationToken cancellationToken)  

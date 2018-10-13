@@ -1,7 +1,7 @@
 ---
 title: 域路径语法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6df1f73614a8df59ee0bff8fb76610382d58b4e4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4e98715bae8869619e8d9f2852c810153984777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477198"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254769"
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[域路径语法](https://docs.microsoft.com/visualstudio/modeling/domain-path-syntax)。  
-  
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。  
   
  通常，你不必直接使用此语法。 在“DSL 详细信息”或“属性”窗口中，你可以在它所显示的位置中单击向下箭头并使用路径编辑器。 但是，在使用编辑器后，该路径将以此形式显示在字段中。  

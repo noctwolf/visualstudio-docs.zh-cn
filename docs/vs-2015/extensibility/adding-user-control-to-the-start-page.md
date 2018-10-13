@@ -1,7 +1,7 @@
 ---
 title: 将用户控件添加到开始页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e3c2ccd76343cd340725751bf1ce2c332fe96c37
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259982"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>将用户控件添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将用户控件添加到起始页](https://docs.microsoft.com/visualstudio/extensibility/adding-user-control-to-the-start-page)。  
-  
 本演练演示如何添加对自定义起始页的 DLL 引用。 该示例添加到解决方案，用户控件生成用户控件，然后从起始页.xaml 文件引用生成的程序集。 一个新选项卡承载用户控件，该函数作为基本的 Web 浏览器控件。  
   
  可以使用相同的过程来添加可从.xaml 文件中调用任何程序集。  

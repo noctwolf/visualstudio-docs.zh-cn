@@ -1,7 +1,7 @@
 ---
 title: 如何：创建类型之间的继承（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cd1b47ca4be4b68c1ddf3d4b75fcdfd25407705c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5bcc052589f090eaad8aace8c491f74d3bbfefe9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257772"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>如何：创建类型之间的继承（类设计器） 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建类型之间的继承 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-create-inheritance-between-types-class-designer)。  
-  
 若要使用类设计器在类图上的两种类型之间创建继承关系，请将基类型与其派生的类型相连接。 你可以有存在于两个类之间、类和接口之间，或者是两个接口之间的继承关系。  
   
 ### <a name="to-create-an-inheritance-between-types"></a>在类型之间创建继承  

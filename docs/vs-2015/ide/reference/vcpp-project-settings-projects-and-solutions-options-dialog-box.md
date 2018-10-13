@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8b6f588a1361c9184b67e510688128f621754f82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1491d639ace0cba80530ea1613525480bad07f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469059"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238857"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”->“VC++ 项目设置”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VC + + 项目设置、 项目和解决方案选项对话框](https://docs.microsoft.com/visualstudio/ide/reference/vcpp-project-settings-projects-and-solutions-options-dialog-box)。  
-  
   
 使用此对话框，可以定义与生成日志和支持文件类型相关的 [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] 项目设置。  
   

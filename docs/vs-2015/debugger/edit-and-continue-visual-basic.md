@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续 (Visual Basic) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 825eac4ab53e95904e85a794b665ce6f6b11f873
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 61ce8f61092bdcc612ea535debfcface976ebff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471361"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265084"
 ---
 # <a name="edit-and-continue-visual-basic"></a>编辑并继续 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑并继续 (Visual Basic)](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-visual-basic)。  
-  
 “编辑并继续”是 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 调试的一项功能，当代码在中断模式下执行时，使用该功能可以更改代码。 在应用代码编辑后，可以就地继续执行新编辑过的代码并观察效果。  
   
  每次进入中断模式时都可以使用“编辑并继续”功能。 在中断模式下，指令指针（即源代码窗口中的黄色箭头）指向接下来将要执行的行，并将位于方法或属性体内的一条可执行语句上。 你可以在中断模式下对可执行语句进行几乎所有类型的更改，所做更改将被合并到基础项目中。 但是，在中断模式下一般不允许对声明语句（如公共方法、公共字段或类声明）进行更改。  

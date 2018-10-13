@@ -1,7 +1,7 @@
 ---
 title: 传送 Visual Studio 扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,19 +17,18 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c419de36379b277a661442e2d863696db02c105
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ac367f2482a6b8bc5b5b25fca72e8ca05e1f58b7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260167"
 ---
 # <a name="shipping-visual-studio-extensions"></a>传送 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **请注意**: Visual Studio 库即将被 Visual Studio Marketplace。 请参阅本主题的详细信息的最新版本。
 
-本主题的最新版本，请参阅[传送 Visual Studio 扩展](https://docs.microsoft.com/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
 完成开发您的扩展插件后，可以在其他计算机上安装、 共享与朋友和同事，或将其发布在 Visual Studio 库上。 在本部分中，我们介绍需要执行的操作将发布和维护您的扩展插件的所有操作： 使用.vsix 文件，发布、 本地化，和更新。  
   

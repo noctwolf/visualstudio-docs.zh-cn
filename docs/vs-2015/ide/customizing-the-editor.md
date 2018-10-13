@@ -1,7 +1,7 @@
 ---
 title: 自定义编辑器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a74276e0b9ae70f94d87aa258eacf6168f20653
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f0b9d01c6582d1bf67b0b33e5372d94700a62587
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259305"
 ---
 # <a name="customizing-the-editor"></a>自定义编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义编辑器](https://docs.microsoft.com/visualstudio/ide/customizing-the-editor)。  
-  
 通过更改选项，可在普通编辑器或特定语言编辑器中自定义格式、选项卡、字体和颜色、IntelliSense 及更多其他功能。 有关这些选项的详细信息，请参阅[“选项”对话框 ->“文本编辑器”](../ide/reference/text-editor-options-dialog-box.md)，或在“快速启动”中键入 `Editor`。 还可以更改编辑器窗口的显示方式。  
   
 ## <a name="in-this-section"></a>本节内容  

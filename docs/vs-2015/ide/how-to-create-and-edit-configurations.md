@@ -1,7 +1,7 @@
 ---
 title: 如何：创建和编辑配置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d6e253bebc5cd56690d8b8251ef7f4d1c4b1fcf0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55d10e779ebd949f3f229e0abc4822b7a2da64e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195672"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建和编辑配置](https://docs.microsoft.com/visualstudio/ide/how-to-create-and-edit-configurations)。  
-  
 可以为一个解决方案创建多个生成配置。 例如，可以配置调试生成供测试人员用于查找和修复问题，也可以配置不同种类的生成，供你分发给不同的客户。  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

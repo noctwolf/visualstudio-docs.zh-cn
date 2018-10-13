@@ -1,7 +1,7 @@
 ---
 title: 使用 T4 文本模板的运行时文本生成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c56b0b91301defaf08fb81c87e9eb070a9e5458
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214742"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 T4 文本模板的运行时文本生成](https://docs.microsoft.com/visualstudio/modeling/run-time-text-generation-with-t4-text-templates)。  
-  
 可以通过使用在运行时在应用程序中生成文本字符串[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]运行时文本模板。 执行应用程序的计算机无需具有[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 运行时模板有时被称为"预处理过的文本模板"，因为在编译时，该模板会生成在运行时执行的代码。  
   
  每个模板都将出现在生成的字符串和程序代码的片段的文本的混合。 程序片段的字符串的变量部分提供值，还可以控制条件和重复部分。  

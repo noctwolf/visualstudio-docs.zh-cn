@@ -1,7 +1,7 @@
 ---
 title: 创建本机对象的自定义视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab7343a13d1c5182e207728a2d4772b6704789ac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23a6b08bcc592284f8cb2381abe1967d50428873
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236530"
 ---
 # <a name="create-custom-views-of-native-objects"></a>创建本机对象的自定义视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建本机对象的自定义视图](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects)。  
-  
 Visual Studio Natvis 框架允许你在调试器变量窗口（例如 **“监视”** 窗口、 **“局部变量”** 窗口和 **“数据提示”** 窗口）中自定义 Visual Studio 显示本机类型的方式。  
   
  Natvis 代替 Visual Studio 早期版本中使用的 **autoexp.dat** 文件，并提供 XML 语法、更好的诊断、版本控制和多个文件支持。  
@@ -356,7 +354,7 @@ Visual Studio Natvis 框架允许你在调试器变量窗口（例如 **“监�
 -   如果在类型下方无子节点的情况下指定 `Expand` 节点，将不会在调试器窗口中展开该类型。  
   
 ####  <a name="BKMK_Item_expansion"></a> Item 展开  
- `Item` 元素是用于 `Expand` 节点的最基本和最常见的元素。 `Item` 定义单个子元素。 例如，假设你拥有包含 `CRect` 、 `top`、 `left`和 `right`字段的 `bottom` 类以及以下可视化条目：  
+ `Item` 元素是用于 `Expand` 节点的最基本和最常见的元素。 `Item` 定义单个子元素。 例如，假设你拥有包含 `CRect`、`top`、`left` 和 `right` 字段的 `bottom` 类以及以下可视化条目：  
   
 ```xml  
 <Type Name="CRect">  
