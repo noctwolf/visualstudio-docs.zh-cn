@@ -25,6 +25,7 @@
 #### [企业移动性和安全性](vs-ems.md)
 #### [Windows 开发人员帐户](vs-windows-dev.md)
 #### [Office 365 开发人员订阅](vs-office-dev.md)
+#### [Office 365 订阅](vs-office365.md)
 #### [Power BI Pro ](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Azure 即用即付](vs-azure-payg.md)
