@@ -1,7 +1,7 @@
 ---
 title: 注册旧版语言服务 1 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0aebd8142d5ceed2acb113dbfaec5904271d4468
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4177507e8633fa5596da07f5df349df28a66f2a0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481146"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230577"
 ---
 # <a name="registering-a-legacy-language-service"></a>注册旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册旧版语言服务 1](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-legacy-language-service1)。  
-  
 在托管的包框架 (MPF) 中，语言服务由 VSPackage 提供 (请参阅[Vspackage](../../extensibility/internals/vspackages.md)) 并使用注册[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过添加注册表项和条目。 在安装过程中部分和部分在运行时，此注册过程中完成。  
   
 ## <a name="register-the-language-service-by-using-attributes"></a>注册语言服务使用特性  
