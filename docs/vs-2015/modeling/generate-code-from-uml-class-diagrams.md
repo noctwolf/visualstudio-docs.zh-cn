@@ -1,7 +1,7 @@
 ---
 title: 从 UML 类图生成代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 53
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8874e5aa1c2dcf440c7cfed1cc2ce42c4187bdc1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e13ad8f658fafa2a20556e95123c5cd5965934e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222828"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>从 UML 类关系图生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 UML 类图生成代码](https://docs.microsoft.com/visualstudio/modeling/generate-code-from-uml-class-diagrams)。  
-  
 若要从 Visual Studio 中的 UML 类图生成 Visual C#.NET 代码，请使用**生成代码**命令。 默认情况下，此命令为你选择的每个 UML 类型生成一个 C# 类型。 可以通过修改或复制生成代码的文本模板来修改和扩展此行为。 可以为包含在模型中不同的包中的类型指定不同的行为。  
   
  **生成代码**命令是特别适合从用户的所选内容的元素，生成代码和生成每个 UML 类或其他元素的一个文件。 例如，屏幕快照显示了已从两个 UML 类生成的两个 C# 文件。  
@@ -173,9 +171,9 @@ ms.locfileid: "47468832"
     |------------------|---------------------|  
     |name|此绑定的名称。 若要替代继承自包含包或模型的某个绑定，请使用与要替代的绑定相同的名称。|  
     |Overwrite|如果为 True，则替代任何现有代码。|  
-    |Target Name|生成的文件的名称。<br /><br /> 您可以将表达式插入此字符串等`{Name}`或`{Owner.Name}`。 例如，可以编写： `{Owner.Name}_{Name}`。 在模型元素上计算表达式。 它可使用元素而非方法的属性。 若要查找可以使用哪些属性，请查看中类型的属性**Microsoft.VisualStudio.Uml。\***. **重要说明：** `{Name}`或`{Owner.Name}`可以仅在使用**目标名称**属性。   若要更改生成的类的名称，你必须修改模板。 有关详细信息，请参阅[编写文本模板](#writing)。|  
+    |Target Name|生成的文件的名称。<br /><br /> 您可以将表达式插入此字符串等`{Name}`或`{Owner.Name}`。 例如，可以编写： `{Owner.Name}_{Name}`。 在模型元素上计算表达式。 它可使用元素而非方法的属性。 若要查找可以使用哪些属性，请查看中类型的属性**Microsoft.VisualStudio.Uml。\***. **重要说明：** `{Name}`或`{Owner.Name}`可以仅在使用**目标名称**属性。 若要更改生成的类的名称，你必须修改模板。 有关详细信息，请参阅[编写文本模板](#writing)。|  
     |Project Path|指定将包含转换的输出文件的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目的路径。 使用类型值创建新项目。 选择省略号按钮 (**[...]**) 若要选择一个现有项目。<br /><br /> 如果新项目不存在，则将创建它。 它将是一个 C# 类库项目。<br /><br /> 为此，你必须直接键入该项目。 可以包含环境变量宏，例如 %ProgramFiles% 或 %LocalAppData%。|  
-    |目标目录|在其中生成目标文件的文件夹。 该路径是项目文件夹的相对路径。<br /><br /> 可以使用 `{PackageStructure}` 表达式插入与包含程序包的名称相对应的路径。 默认值为 `\GeneratedCode\{PackageStructure}`。 还可以包含环境变量，例如 %TEMP% 或 %HomePath%。 **重要说明：** `{PackageStructure}`可以仅在使用**目标目录**属性。  |  
+    |目标目录|在其中生成目标文件的文件夹。 该路径是项目文件夹的相对路径。<br /><br /> 可以使用 `{PackageStructure}` 表达式插入与包含程序包的名称相对应的路径。 默认值为 `\GeneratedCode\{PackageStructure}`。 还可以包含环境变量，例如 %TEMP% 或 %HomePath%。 **重要说明：** `{PackageStructure}`可以仅在使用**目标目录**属性。|  
     |模板文件路径|将执行转换的模板。<br /><br /> 可以使用提供的模板或创建你自己的模板。 可在以下位置找到提供的模板：<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\|  
   
 5.  可将所需数量的绑定附加到一个元素。  
