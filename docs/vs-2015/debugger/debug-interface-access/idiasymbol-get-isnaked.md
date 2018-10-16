@@ -1,7 +1,7 @@
 ---
 title: 'Idiasymbol:: Get_isnaked |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1da5488995575b76529c8273fa4c42f70675d8cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7dacf0831f286f30899d7173d712a0fd485cf31
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293808"
 ---
 # <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiasymbol:: Get_isnaked](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasymbol-get-isnaked)。  
-  
 检索一个标志，指定该函数是否具有[裸](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d)属性 （也就是说，该函数具有由编译器添加任何 prolog 或 epilog 代码）。  
   
 ## <a name="syntax"></a>语法  

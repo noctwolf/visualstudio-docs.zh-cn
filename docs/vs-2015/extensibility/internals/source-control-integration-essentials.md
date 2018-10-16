@@ -1,7 +1,7 @@
 ---
 title: 源代码管理集成基础知识 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 37508599b01f2639df416c56181f1c9b8672cd5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478412"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232346"
 ---
 # <a name="source-control-integration-essentials"></a>源代码管理集成基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Essentials 的源控件集成](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-essentials)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持两种类型的源代码管理集成： 提供基本功能，并且使用源控制插件 API （前称 MSSCCI API） 和基于 VSPackage 的源代码控制集成解决方案生成了源代码管理插件的提供了更强大的功能。  
   
 ## <a name="source-control-plug-in"></a>源代码管理插件  

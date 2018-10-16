@@ -1,7 +1,7 @@
 ---
 title: 访问 ClickOnce 应用程序中的本地和远程数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3659df70b6b253d0cf23bb8eb033709fc6916e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4fe0c0b1cd7659a5887f267181ffd6fa7bb5e8d4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483686"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218827"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[访问本地数据和 ClickOnce 应用程序中的远程数据](https://docs.microsoft.com/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications)。  
-  
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。  
   
 ## <a name="local-data"></a>本地数据  
@@ -75,7 +73,7 @@ ms.locfileid: "47483686"
 #### <a name="data-directory-and-application-versions"></a>数据目录和应用程序版本  
  应用程序的每个版本都具有其自己的数据目录，每个版本的数据目录相互独立。 无论数据文件是否包括到部署中，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 都将创建此目录，以便该应用程序在运行时有一个位置可以创建新的数据文件。 安装新的应用程序版本时，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将现有全部数据文件从以前版本的数据目录复制到新版本的数据目录，而无论这些数据文件是原始部署中包括的还是应用程序创建的数据文件。  
   
- 如果旧版应用程序中的数据文件与新版应用程序具有不同的哈希值，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将旧版文件替换为新版服务器。 此外，如果旧版应用程序创建的新文件与新版部署中包括的文件具有相同的名称，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将旧版文件覆盖为新文件。 在这两种情况下，旧文件都将包括到名为 `.pre`的数据目录内部的子目录下，以便应用程序仍然可以访问旧数据以进行迁移。  
+ 如果旧版应用程序中的数据文件与新版应用程序具有不同的哈希值，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将旧版文件替换为新版服务器。 此外，如果旧版应用程序创建的新文件与新版部署中包括的文件具有相同的名称， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会将旧版文件覆盖为新文件。 在这两种情况下，旧文件都将包括到名为 `.pre`的数据目录内部的子目录下，以便应用程序仍然可以访问旧数据以进行迁移。  
   
  如果需要更细粒度的数据迁移，则可以使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署 API 执行从旧数据目录到新数据目录的自定义迁移。 你必须使用 <xref:System.Deployment.Application.ApplicationDeployment.IsFirstRun%2A>测试是否可以下载，使用 <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> 或 <xref:System.Deployment.Application.ApplicationDeployment.UpdateAsync%2A>下载更新，以及在更新完成后用自己的方式进行任何自定义数据迁移工作。  
   
@@ -84,7 +82,7 @@ ms.locfileid: "47483686"
   
  独立存储适用于 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的所有版本。 独立存储也适用于部分信任的应用程序，而无需授予其他权限。 如果你的应用程序必须在部分信任环境中运行，但必须维护应用程序特定的数据，则应使用独立存储。  
   
- 有关详细信息，请参阅[独立存储](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
+ 有关详细信息，请参阅 [独立存储](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e)。  
   
 ### <a name="other-local-files"></a>其他本地文件  
  如果你的应用程序必须处理或保存最终用户数据（例如报表、图像、音乐等），你的应用程序将需要 <xref:System.Security.Permissions.FileIOPermission> 来读取本地文件系统中的数据以及将数据写入本地文件系统。  
@@ -93,7 +91,7 @@ ms.locfileid: "47483686"
  在某些时候，你的应用程序可能需要从远程网站检索信息（如客户数据或市场信息）。 本部分讨论用于检索远程数据的最常用技术。  
   
 ### <a name="accessing-files-by-using-http"></a>通过使用 HTTP 访问文件  
- 你可以通过使用 <xref:System.Net.WebClient> 命名空间中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 类从 Web 服务器访问数据。 数据可以是静态文件，也可以是运行原始文本或 XML 数据的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序。 如果你的数据为 XML 格式，则检索数据最快的方法是使用 <xref:System.Xml.XmlDocument> 类，该类的 <xref:System.Xml.XmlDocument.Load%2A> 方法采用 URL 作为参数。 有关示例，请参阅[XML 文档读入 DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
+ 你可以通过使用 <xref:System.Net.WebClient> 命名空间中的 <xref:System.Net.HttpWebRequest> 或 <xref:System.Net> 类从 Web 服务器访问数据。 数据可以是静态文件，也可以是运行原始文本或 XML 数据的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序。 如果你的数据为 XML 格式，则检索数据最快的方法是使用 <xref:System.Xml.XmlDocument> 类，该类的 <xref:System.Xml.XmlDocument.Load%2A> 方法采用 URL 作为参数。 有关示例，请参见 [Reading an XML Document into the DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49)。  
   
  当应用程序通过 HTTP 访问远程数据时，你需要考虑安全性。 默认情况下，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序对网络资源的访问可能受限，具体取决于应用程序的部署方式。 应用这些限制的目的是防止恶意程序获得对特权远程数据的访问或利用用户的计算机攻击网络上的其他计算机。  
   
@@ -105,7 +103,7 @@ ms.locfileid: "47483686"
 |文件共享安装|不能访问任何 Web 服务器|  
 |CD-ROM 安装|不能访问任何 Web 服务器|  
   
- 如果你的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序因安全限制而不能访问 Web 服务器，则应用程序必须为该网站断言 <xref:System.Net.WebPermission>。 有关增加的安全权限的详细信息[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
+ 如果你的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序因安全限制而不能访问 Web 服务器，则应用程序必须为该网站断言 <xref:System.Net.WebPermission> 。 有关增加的安全权限的详细信息[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  
   
 ### <a name="accessing-data-through-an-xml-web-service"></a>通过 XML Web 服务访问数据  
  如果以 XML Web 服务形式公开你的数据，则可以通过使用 XML Web 服务代理来访问数据。 代理是你使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 创建的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 类。 XML Web 服务的操作（如检索客户、下订单等）在代理中作为方法公开。 这使得 Web 服务相比原始文本和 XML 文件更易于使用。  

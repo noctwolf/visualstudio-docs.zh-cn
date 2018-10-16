@@ -1,7 +1,7 @@
 ---
 title: 自定义代码覆盖率分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ddb6c43892c3cef3f45edb9096c3fb36297c51a3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588703"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281744"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义代码覆盖率分析](https://docs.microsoft.com/visualstudio/test/customizing-code-coverage-analysis)。  
-  
 默认情况下，Visual Studio Code 覆盖率工具将分析单元测试过程中加载的所有解决方案程序集 (.exe/.dll)。 建议保留此默认设置，因此它在大多数时间很有用。 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
  在自定义代码覆盖率行为之前，请考虑某些替代项：  

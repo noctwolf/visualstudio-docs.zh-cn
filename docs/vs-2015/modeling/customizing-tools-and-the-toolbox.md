@@ -1,7 +1,7 @@
 ---
 title: 自定义工具和工具箱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 97682059e90bac38b0b8b00492ff9fd50a36ffab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470284"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290727"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义工具和工具箱](https://docs.microsoft.com/visualstudio/modeling/customizing-tools-and-the-toolbox)。  
-  
 你必须为你想要使用户添加到其模型的元素定义工具箱项。 有两种类型的工具：元素工具和连接工具。 在生成的设计器中，用户可以选择元素工具以将形状拖动到关系图中，也可以选择连接工具以在形状之间绘制链接。 通常，元素工具允许用户向其模型添加域类的实例，而连接工具允许他们添加域关系的实例。  
   
  本主题内容：  

@@ -1,7 +1,7 @@
 ---
 title: RDT_ReadLock 用法 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87f92f525d94ac81231272658c26f7484d93bef8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 09bbded597fe29f01ac83589c0dc551929380030
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481887"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297786"
 ---
 # <a name="rdtreadlock-usage"></a>RDT_ReadLock 用法
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[RDT_ReadLock 用法](https://docs.microsoft.com/visualstudio/extensibility/internals/rdt-readlock-usage)。  
-  
 <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> 是标志，它提供逻辑来锁定文档中正在运行文档表 (RDT)，这 Visual Studio IDE 中当前打开的所有文档的列表。 此标志确定当文档处于打开状态，以及文档是否是在用户界面中可见或保持在内存中不可见的方式。  
   
  通常情况下，将使用<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS>下列任一条件为 true 时：  

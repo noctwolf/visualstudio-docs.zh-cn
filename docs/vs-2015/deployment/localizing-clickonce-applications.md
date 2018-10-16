@@ -1,7 +1,7 @@
 ---
 title: 本地化 ClickOnce 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 285c1273114fe7f59b2ee0bb6bc612d18cbaf32e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d7c3b8527bf96ee783de6ac975117bd4c797d426
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261464"
 ---
 # <a name="localizing-clickonce-applications"></a>本地化 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[本地化 ClickOnce 应用程序](https://docs.microsoft.com/visualstudio/deployment/localizing-clickonce-applications)。  
-  
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。  
   
  对应用程序进行本地化将创建一个或多个附属程序集。 每个程序集均包含用户界面字符串、图像和其他特定于给定区域性的资源。 （应用程序的主可执行文件包含用于应用程序的默认区域性的字符串。）  

@@ -1,7 +1,7 @@
 ---
 title: 安装独立的 Shell 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7b1ba12f39accf863b051ec7096ee835a03ff64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478414"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257343"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安装独立 Shell 应用程序](https://docs.microsoft.com/visualstudio/extensibility/installing-an-isolated-shell-application)。  
-  
 若要安装的 Shell 应用程序必须执行以下步骤。  
   
 -   准备你的解决方案。  

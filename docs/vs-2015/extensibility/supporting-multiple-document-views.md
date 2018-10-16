@@ -1,7 +1,7 @@
 ---
 title: 支持多个文档视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c1dc6614e90b0f4830991116440e94048145bae
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c82100a544a9f59fbb64af8b78d51314b39690f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470787"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282693"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Supporting Multiple Document Views](https://docs.microsoft.com/visualstudio/extensibility/supporting-multiple-document-views)。  
-  
 通过为您的编辑器创建单独的文档数据和文档视图对象，可以提供多个文档的视图。 一些额外的文档视图会非常有用的情况是：  
   
 -   新窗口支持： 您希望您的编辑器提供的相同类型的两个或多个视图，以便已在编辑器中打开一个窗口的用户可以通过选择打开一个新的窗口**新的窗口**命令从**窗口**菜单。  

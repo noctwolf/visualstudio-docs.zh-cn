@@ -1,7 +1,7 @@
 ---
 title: 适用于 Unity 应用的应用程序生命周期管理 (ALM) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 23e501554bf5a8502cc8ac5a271c0a803ad25808
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 997533d55274ef23966a3b229886f67023d20bdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471484"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247021"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>适用于 Unity 应用的 Visual Studio 应用程序生命周期管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[适用于 Unity 应用的应用程序生命周期管理 (ALM)](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-unity-apps)。  
-  
   
 开发适用于现代平台的应用涉及许多活动，并不仅仅只是编写代码。 这些活动被称为 DevOps（开发+操作），它们跨越应用的整个生命周期，包括计划和跟踪工作、设计和实现代码、管理源代码存储库、运行生成、管理持续集成和部署、测试（包括单元测试和 UI 测试）、在开发和生产环境中运行各种形式的诊断以及通过遥测和分析实时监控应用的性能和用户行为。  
   

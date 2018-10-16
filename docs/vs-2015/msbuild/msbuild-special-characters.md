@@ -1,7 +1,7 @@
 ---
 title: MSBuild 特殊字符 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0fcbafb43a059221e5572c9c807cadfdefe68134
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c9ce1697f370ec1beec8ce12faceb15825fbe5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478398"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256440"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 特殊字符](https://docs.microsoft.com/visualstudio/msbuild/msbuild-special-characters)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 保留一些专供在特定上下文中使用的字符。 如果要在保留此类字符的上下文中按原义使用这些字符，只能对这些字符进行转义。 例如，只有在项定义的 `Include` 和 `Exclude` 特性，以及对 `CreateItem` 的调用中，星号才具有特殊含义。 如果要让星号在上述某个上下文中显示为星号，必须进行转义。 在其他所有上下文中，只需在要显示星号的位置键入星号即可。  
   

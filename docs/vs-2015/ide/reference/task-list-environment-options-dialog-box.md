@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 ->“环境”->“任务列表” | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d96543e5f8cc7d1513f335fc6a54f669dfa5f356
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17404838fc567d37f23c683f6b8f83b7529a3dc8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483272"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252533"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“任务列表”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Task List，Environment，Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/task-list-environment-options-dialog-box)。  
-  
   
 该选项页允许添加、删除和更改生成“任务列表”提醒的注释标记。 要显示这些设置，请从“工具”菜单选择“选项”，展开“环境”文件夹，然后选择“任务列表”。  
   

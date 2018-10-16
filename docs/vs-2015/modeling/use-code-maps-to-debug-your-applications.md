@@ -1,12 +1,12 @@
 ---
 title: 使用代码图调试应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Ultimate, visualizing code
 - Visual Studio Ultimate, navigating code visually
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3dd19804a8e7749a976b5334ea691918eeae906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 354c99a9e11f7dbf86f93dab48f669c206323ce5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478761"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263972"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用代码图调试应用程序](https://docs.microsoft.com/visualstudio/modeling/use-code-maps-to-debug-your-applications)。  
-  
 代码图有助于防止你在大型基本代码、不熟悉的代码或旧代码中迷失方向。 例如，在调试时，可能需要在很多不同的文件和项目之间查看代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。  
   
  ![代码图&#45;将映射代码中的关系](../modeling/media/codemapstoryboardpaint.png "CodeMapStoryboardPaint")  

@@ -1,7 +1,7 @@
 ---
 title: 如何：将检测限定为特定函数 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab089bd02fafc4dc711fa01c49a9690bbd9f6a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d0432a3e07d10db9daa03395f182836726bdf753
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480415"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249179"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 为特定函数的限制规范](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-functions)。  
-  
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数：  
   
 -   如果在性能会话的属性页上指定函数，则仅检测会话的所有受检测二进制文件中的函数。  

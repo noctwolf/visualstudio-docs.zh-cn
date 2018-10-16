@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的 visual 语言字典 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9eee2e412024cdb9eae7669d65e2283fc24488d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477252"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267619"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio 的 visual 语言字典
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用于 Visual Studio 的 Visual 语言字典](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio)。  
-  
 Visual Studio 将使用常见的 visual 语言来阐明这些概念，是其图标和其他图像的构建基块。 在设计新图标，使用此字典来标识你想要传达你自己的映像中的概念。  
   
  **一般指导原则**  
@@ -97,7 +95,7 @@ Visual Studio 将使用常见的 visual 语言来阐明这些概念，是其图�
 |概念|主图标|其他示例|  
 |-------------|---------------|--------------------|  
 |**缓存**|![缓存图标](../../extensibility/ux-guidelines/media/vld-c-cache.png "VLD_C_Cache")|![缓存确定图标](../../extensibility/ux-guidelines/media/vld-c-cache-cacheok.png "VLD_C_Cache_CacheOK")缓存确定![缓存刷新图标](../../extensibility/ux-guidelines/media/vld-c-cache-cacherefresh.png "VLD_C_Cache_CacheRefresh")缓存刷新|  
-|**日历**|![日历图标](../../extensibility/ux-guidelines/media/vld-c-calendar.png "VLD_C_Calendar")|![日期&#47;时间轴图标](../../extensibility/ux-guidelines/media/vld-c-calendar-datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")日期/时间轴![全局日历图标](../../extensibility/ux-guidelines/media/vld-c-calendar-globalcalendar.png "VLD_C_Calendar_GlobalCalendar")全局日历|  
+|**Calendar**|![日历图标](../../extensibility/ux-guidelines/media/vld-c-calendar.png "VLD_C_Calendar")|![日期&#47;时间轴图标](../../extensibility/ux-guidelines/media/vld-c-calendar-datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")日期/时间轴![全局日历图标](../../extensibility/ux-guidelines/media/vld-c-calendar-globalcalendar.png "VLD_C_Calendar_GlobalCalendar")全局日历|  
 |**Call**|![调用图标](../../extensibility/ux-guidelines/media/vld-c-call.png "VLD_C_Call")|![调用浏览器图标](../../extensibility/ux-guidelines/media/vld-c-call-callbrowser.png "VLD_C_Call_CallBrowser")调用浏览器![调用浏览器设置图标](../../extensibility/ux-guidelines/media/vld-c-call-callbrowsersettings.png "VLD_C_Call_CallBrowserSettings")调用浏览器设置![调用方或被调用方视图图标](../../extensibility/ux-guidelines/media/vld-c-call-callerorcalleeview.png "VLD_C_Call_CallerOrCalleeView")调用方或被调用方视图|  
 |**取消**"清除"和"删除"一样，|![取消图标](../../extensibility/ux-guidelines/media/vld-c-cancel.png "VLD_C_Cancel")|![取消按钮生成图标](../../extensibility/ux-guidelines/media/vld-c-cancel-cancelbuild.png "VLD_C_Cancel_CancelBuild")取消生成|  
 |**捕获**|![捕获图标](../../extensibility/ux-guidelines/media/vld-c-capture.png "VLD_C_Capture")|![捕获帧图标](../../extensibility/ux-guidelines/media/vld-c-capture-captureframe.png "VLD_C_Capture_CaptureFrame")捕获帧![完整的屏幕截图图标](../../extensibility/ux-guidelines/media/vld-c-capture-fullscreenshot.png "VLD_C_Capture_FullScreenshot")完整的屏幕截图![开始捕获图形诊断图标](../../extensibility/ux-guidelines/media/vld-c-capture-startcapturinggraphicdiagnostics.png "VLD_C_Capture_StartCapturingGraphicDiagnostics")开始捕获图形诊断|  
@@ -117,7 +115,7 @@ Visual Studio 将使用常见的 visual 语言来阐明这些概念，是其图�
 |**注释 （代码）**|![注释&#40;代码&#41;](../../extensibility/ux-guidelines/media/vld-c-comment-lines.png "VLD_C_Comment_lines")|![取消注释图标](../../extensibility/ux-guidelines/media/vld-c-comment-lines-uncomment.png "VLD_C_Comment_lines_Uncomment")取消注释|  
 |**Compare**|![比较图标](../../extensibility/ux-guidelines/media/vld-c-compare.png "VLD_C_Compare")|![比较数据图标](../../extensibility/ux-guidelines/media/vld-c-compare-comparedata.png "VLD_C_Compare_CompareData")比较数据![比较文件夹图标](../../extensibility/ux-guidelines/media/vld-c-compare-comparefolders.png "VLD_C_Compare_CompareFolders")比较文件夹![比较性能报表图标](../../extensibility/ux-guidelines/media/vld-c-compare-compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports")比较性能报告|  
 |**组件**|![组件图标](../../extensibility/ux-guidelines/media/vld-c-component.png "VLD_C_Component")|![添加组件图标](../../extensibility/ux-guidelines/media/vld-c-component-addcomponent.png "VLD_C_Component_AddComponent")添加组件![组件关系图图标](../../extensibility/ux-guidelines/media/vld-c-component-componentdiagram.png "VLD_C_Component_ComponentDiagram")组件关系图![Windows Phone RT 组件图标](../../extensibility/ux-guidelines/media/vld-c-component-phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent") Windows Phone RT 组件|  
-|**连接**|![连接图标](../../extensibility/ux-guidelines/media/vld-c-connect.png "VLD_C_Connect")|![添加连接图标](../../extensibility/ux-guidelines/media/vld-c-connect-addconnection.png "VLD_C_Connect_AddConnection")添加连接![连接测试计划图标](../../extensibility/ux-guidelines/media/vld-c-connect-connecttestplan.png "VLD_C_Connect_ConnectTestPlan")连接测试计划![连接到环境图标](../../extensibility/ux-guidelines/media/vld-c-connect-connecttoenvironment.png "VLD_C_Connect_ConnectToEnvironment")连接到环境|  
+|**“连接”**|![连接图标](../../extensibility/ux-guidelines/media/vld-c-connect.png "VLD_C_Connect")|![添加连接图标](../../extensibility/ux-guidelines/media/vld-c-connect-addconnection.png "VLD_C_Connect_AddConnection")添加连接![连接测试计划图标](../../extensibility/ux-guidelines/media/vld-c-connect-connecttestplan.png "VLD_C_Connect_ConnectTestPlan")连接测试计划![连接到环境图标](../../extensibility/ux-guidelines/media/vld-c-connect-connecttoenvironment.png "VLD_C_Connect_ConnectToEnvironment")连接到环境|  
 |**控制台**|![控制台图标](../../extensibility/ux-guidelines/media/vld-c-console.png "VLD_C_Console")|![控制台测试图标](../../extensibility/ux-guidelines/media/vld-c-console-consoletest.png "VLD_C_Console_ConsoleTest")控制台测试|  
 |**协定 （名词）**|![协定&#40;名词&#41;图标](../../extensibility/ux-guidelines/media/vld-c-contract-noun.png "VLD_C_Contract_noun")|![协定错误图标](../../extensibility/ux-guidelines/media/vld-c-contract-noun-contracterror.png "VLD_C_Contract_noun_ContractError")协定错误![协定警告图标](../../extensibility/ux-guidelines/media/vld-c-contract-noun-contractwarning.png "VLD_C_Contract_noun_ContractWarning")协定警告|  
 |**协定 （名词）** 图标用于指示应用程序和操作系统之间的协议。|||  

@@ -1,7 +1,7 @@
 ---
 title: 安装 UML 配置文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47346af32cf1b86ddf2f526e271127e4bde2da95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7b72c87f79ce5bafbc655fade59d6a8b7570f694
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275205"
 ---
 # <a name="install-a-uml-profile"></a>安装 UML 配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安装 UML 配置文件](https://docs.microsoft.com/visualstudio/modeling/install-a-uml-profile)。  
-  
 你可以使用 UML 配置文件来扩展 Visual Studio。 使用配置文件可以向在 UML 模型中创建的元素添加构造型及其他属性。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
  收到使用配置文件创建的 UML 模型时，除非你安装相同配置文件，否则将不会显示某些属性。  

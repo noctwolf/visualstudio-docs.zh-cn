@@ -1,7 +1,7 @@
 ---
 title: 实体数据模型在 Visual Studio 中的工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 487b3ecd6f9b7fbdc7065e8d69e9e64e939f565e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290467"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的实体数据模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的实体数据模型工具](https://docs.microsoft.com/visualstudio/data-tools/entity-data-model-tools-in-visual-studio)。  
-  
   
 Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架是建模技术，用于新的.NET 应用程序的建议的对象关系映射 (ORM)。  
   

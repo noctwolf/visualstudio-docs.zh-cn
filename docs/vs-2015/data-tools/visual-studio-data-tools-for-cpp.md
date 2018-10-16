@@ -1,7 +1,7 @@
 ---
 title: 适用于 c + + 的 visual Studio data tools |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,18 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: cecad69f6df283ed005afd00a6b9bedbd51c6cd5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a059cb5c0f295bc7f14ff8a0ce30ed21e4e70145
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482300"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306184"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 c + + 的 visual Studio data tools
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[c + + 的 Visual Studio 数据工具](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-cpp)。  
-  
   
 当访问数据源时，本机 c + + 通常可以提供最快的性能。 但是，不为丰富，因为它是.NET 应用程序的工具，用于在 Visual Studio 中的 c + + 应用程序的数据。 例如，不能使用数据源窗口拖放到 c + + 设计图面上的数据源。 如果您需要的对象关系层，将需要自己编写，或使用第三方产品。  同样适用于数据绑定功能，虽然使用 Microsoft 基础类库的应用程序可以使用一些数据库类中的，文档和视图，以及在内存中存储数据并将其显示给用户。 有关详细信息，请参阅[Visual c + + 中的数据访问](https://msdn.microsoft.com/library/7wtdsdkh.aspx)。  
   

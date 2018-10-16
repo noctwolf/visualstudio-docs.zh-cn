@@ -1,7 +1,7 @@
 ---
 title: 设计器的初始化和元数据配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 550f4c00d669d22b8c4a887c2917d9afdc462278
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260868"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器初始化和元数据配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设计器初始化和元数据配置](https://docs.microsoft.com/visualstudio/extensibility/designer-initialization-and-metadata-configuration)。  
-  
 与设计器或设计器组件关联的元数据和筛选器特性的操作提供了应用程序定义将哪些工具由特定的设计器，以处理不同的机制<xref:System.Type>对象 （如数据结构类或图形实体），在设计器不可用时，以及如何配置 Visual Studio IDE 以支持在设计器 (对于实例这**工具箱**类别或选项卡上的可用)。  
   
  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供多种机制来促进设计器或设计器组件的初始化的控件和操作的 vspackage 及其元数据。  

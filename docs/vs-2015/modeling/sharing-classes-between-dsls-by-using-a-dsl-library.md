@@ -1,7 +1,7 @@
 ---
 title: 使用 DSL 库在 Dsl 之间共享类 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a4ec7820be2cc4f308582e71f3ba64ded5c296e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2c0192aca40c6f58468fba35ee1fd174b0445bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241510"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 DSL 库在 Dsl 之间共享类](https://docs.microsoft.com/visualstudio/modeling/sharing-classes-between-dsls-by-using-a-dsl-library)。  
-  
 在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可视化和建模 SDK，可以创建可导入到另一个 DSL 的 DSL 定义不完整。 这允许您考虑通用部分类似的模型。  
   
 ## <a name="creating-and-using-dsl-libraries"></a>创建和使用 DSL 库  

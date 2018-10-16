@@ -1,7 +1,7 @@
 ---
 title: Microsoft Fakes 中的代码生成、编译和命名约定 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 98969c10a5a4464ea36b60aa1f4f024a6d96e1f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482521"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200013"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的代码生成、 编译和 Microsoft Fakes 中的命名约定](https://docs.microsoft.com/visualstudio/test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes)。  
-  
 本主题讨论 Fakes 代码生成和编译中的选项和问题，并介绍了 Fakes 生成的类型、成员和参数的命名约定。  
   
  **要求**  

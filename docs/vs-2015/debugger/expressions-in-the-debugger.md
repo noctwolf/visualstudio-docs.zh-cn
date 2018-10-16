@@ -1,14 +1,14 @@
 ---
 title: 调试器中的表达式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
 dev_langs:
@@ -32,18 +32,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b8350356b82b6d2cefc3fda725d90dccea75e55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469445"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289323"
 ---
 # <a name="expressions-in-the-debugger"></a>调试器中的表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试器中的表达式](https://docs.microsoft.com/visualstudio/debugger/expressions-in-the-debugger)。  
-  
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。  
   
  以下各节提供了有关不同语言的表达式的详细信息。  
@@ -138,7 +136,7 @@ int main()
 ## <a name="c---unsupported-expressions"></a>C# - 不支持的表达式  
   
 ### <a name="dynamic-objects"></a>动态对象  
- 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现<xref:System.Dynamic.IDynamicMetaObjectProvider>中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
+ 你可以使用静态类型化为动态的调试器表达式中的变量。 在“监视”窗口中计算实现 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的对象时，会添加一个“动态视图”节点。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
   
  不支持动态对象的下列功能：  
   
@@ -162,7 +160,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支持的表达式  
   
 ### <a name="dynamic-objects"></a>动态对象  
- 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现<xref:System.Dynamic.IDynamicMetaObjectProvider>中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
+ 你可以使用静态类型化为动态的调试器表达式中的变量。 在“监视”窗口中计算实现 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的对象时，会添加一个“动态视图”节点。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
   
  不支持动态对象的下列功能：  
   
@@ -223,7 +221,7 @@ int main()
   
 ## <a name="see-also"></a>请参阅  
  [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
- [上下文运算符 （c + +）](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [伪变量](../debugger/pseudovariables.md)
 

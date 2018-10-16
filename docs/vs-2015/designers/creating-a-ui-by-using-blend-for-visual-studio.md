@@ -1,7 +1,7 @@
 ---
 title: 使用 Blend for Visual Studio 创建 UI | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8609163dadcfc6425874c86c4aaf49f9452401ab
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 206664ef95d7eda5d906bf62599819a92fc6506f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289895"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>使用 Blend for Visual Studio 创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 Blend for Visual Studio 创建 UI](https://docs.microsoft.com/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio)。  
-  
 Blend for Visual Studio 可帮助设计基于 XAML 的 Windows 桌面、Web、[Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) 和 [Windows 应用商店](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx)应用。 它提供了与 Visual studio 相同的基本 XAML 设计体验，并添加了可视化设计器，以用于高级任务，例如动画和行为。  
   
  Blend for Visual Studio 随附 Visual Studio 提供，无需下载。 但需要在 Visual Studio 安装程序选中，以便在系统上安装。  

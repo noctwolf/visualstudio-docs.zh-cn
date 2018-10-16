@@ -1,7 +1,7 @@
 ---
 title: 使用多个用户帐户 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3559e6df1f675489d15b2cfd53ef80737e003cb5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93f029a067e5a45930c2ac827862c1807e32aff8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480966"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176262"
 ---
 # <a name="work-with-multiple-user-accounts"></a>使用多个用户帐户
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用多个用户帐户](https://docs.microsoft.com/visualstudio/ide/work-with-multiple-user-accounts)。  
-  
 如果有多个 Microsoft 帐户和/或单位或学校帐户，可将它们全部添加到 Visual Studio，以便可从任何帐户访问资源，而无需单独登录到这些帐户。 从 Visual Studio 2015 RTM 日期开始，Azure、Application Insights、Team Foundation Server 和 Office 365 服务支持简化的登录体验。 随着时间的推移，可能会提供其他服务。  
   
  将多个帐户添加到一台计算机上之后，如果你在另一台计算机上登录到 Visual Studio，则该组帐户将会随你一起漫游。 请务必注意，尽管帐户名可漫游，但凭据却不能。 因此，第一次尝试在新的计算机上使用其资源时，将提示你输入这些其他帐户的凭据。  

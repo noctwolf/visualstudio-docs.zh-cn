@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的导航栏支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3e62ac19a42877c1c7c995ffd3d416b5225514b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b731f10a30f20e3c5a9670a91400e86be004852e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482770"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267366"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的导航栏支持](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-the-navigation-bar-in-a-legacy-language-service)。  
-  
 在的编辑器视图顶部的导航栏显示文件中的类型和成员。 在左侧的下拉列表中显示类型和成员显示在右侧下拉列表。 当用户选择一种类型时，该类型的第一行放置插入符号。 当用户选择成员时，将插入符号放置在上成员的定义。 下拉列表框会更新以反映当前插入符号的位置。  
   
 ## <a name="displaying-and-updating-the-navigation-bar"></a>显示和更新的导航栏  

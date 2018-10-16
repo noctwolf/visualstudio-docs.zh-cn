@@ -1,7 +1,7 @@
 ---
 title: 注意事项卸载并重新加载嵌套项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d932096d209d8e39b5d218ceb868453fa9a8a6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1712c05ab1bd6dbf32537d4306517ddf189b4084
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484496"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277551"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸载和重新加载嵌套项目的注意事项
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[卸载和重新加载嵌套项目的注意事项](https://docs.microsoft.com/visualstudio/extensibility/internals/considerations-for-unloading-and-reloading-nested-projects)。  
-  
 实现嵌套的项目类型时，你必须卸载并重新加载项目时执行附加步骤。 若要正确通知解决方案的事件侦听器，必须正确引发`OnBeforeUnloadProject`和`OnAfterLoadProject`事件。  
   
  您必须引发这些事件以这种方式的一个原因是不希望源代码管理 (SCC) 以从服务器中删除项，然后将其添加为新内容，如果没有`Get`从源代码管理操作。 在这种情况下，将从源代码管理中加载的新文件，您必须卸载并重新加载所有文件，以防它们是不同的。 SCC 调用`ReloadItem`。 该调用的实现是删除项目，然后重新创建再次通过实现`IVsFireSolutionEvents`来调用`OnBeforeUnloadProject`和`OnAfterLoadProject`。 当你执行此实现时，SCC 将得到通知，已暂时删除并再次添加该项目。 因此，SCC 不会不运行该项目时项目已实际从服务器中删除，然后再次添加。  

@@ -1,7 +1,7 @@
 ---
 title: “行”视图 — 争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09149f44e80155a13986d42d2b3279e5c39c8884
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c53db386ee9eb0815ebb27f82794118035d6cba6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254730"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 — 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[行视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/lines-view-contention-data)。  
-  
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。  
   
  语句由以下数据标识：  

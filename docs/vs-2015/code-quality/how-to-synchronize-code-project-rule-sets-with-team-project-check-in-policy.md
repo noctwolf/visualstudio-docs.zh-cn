@@ -1,7 +1,7 @@
 ---
 title: 如何： 将代码项目规则集与团队项目签入策略同步 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d7d20680fdba3affa5da4ee917fb12bf1b98457b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 482f3107aeb7545951632f6841c43968067b1b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484665"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263115"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy"></a>如何：将代码项目规则集与团队项目签入策略同步
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 同步与团队项目签入策略代码项目规则集](https://docs.microsoft.com/visualstudio/code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy)。  
-  
 通过指定包含至少设置为签入策略规则中指定的规则的规则集同步到团队项目的签入策略的代码项目的代码分析设置。 你的名称和位置的规则集签入策略，可以通知你开发人员的主管。 可以使用以下选项之一以确保项目的代码分析使用正确的规则集：  
   
 -   如果签入策略使用某个 Microsoft 内置规则集，打开代码项目的属性对话框，显示代码分析页中，然后选择代码项目设置的代码分析页上设置的规则。 Microsoft 标准规则集自动随 Visual Studio 设置为只读的不应编辑。 如果不编辑规则集，保证中的规则策略和本地规则集是匹配。  

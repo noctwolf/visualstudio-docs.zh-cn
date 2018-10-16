@@ -1,7 +1,7 @@
 ---
 title: 如何：查找和组织项目模板和项模板 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08817b551d015481000d3151fb054ee5803ee6f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470913"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229393"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目模板和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 查找和组织项目和项模板](https://docs.microsoft.com/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates)。  
-  
 必须将模板文件放置在 Visual Studio 能够识别的位置，这样“新建项目”和“添加新项”对话框中才会显示这些模板。 可以为模板创建自定义子类别，以使用户界面中也显示这些子类别。  
   
 ## <a name="locating-templates"></a>查找模板  

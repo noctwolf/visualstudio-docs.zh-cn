@@ -1,7 +1,7 @@
 ---
 title: 持久性和正在运行文档表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 27117eae-6c58-4189-a61a-1397a43b5ecf
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44f8025bd20fe6522ec0f835e299a2a9efd9ca1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c85f8d579b3c2cae6ca10f217c1dabd72dfc3a53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479467"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301324"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和正在运行的文档表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[持久性和运行文档表](https://docs.microsoft.com/visualstudio/extensibility/internals/persistence-and-the-running-document-table)。  
-  
 在中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 中，项目是完全负责管理其项目项，它们为使用该服务，持久性<xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>。 文档是在 Visual Studio 环境中的暂留的基本单位。 项目协调在打开、 保存和重命名的文档运行文档表 (RDT) 跟踪所有打开的文档的状态的资源。  
   
 ## <a name="managing-persistence"></a>管理持久性  

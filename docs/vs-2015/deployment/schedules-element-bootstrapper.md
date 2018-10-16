@@ -1,7 +1,7 @@
 ---
 title: '&lt;计划&gt;元素 （引导程序） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c72ee64bcc174bcd11d800bbc8dd0e1b9848b746
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479432"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250986"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划&gt;元素 （引导程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;计划&gt;元素 （引导程序）](https://docs.microsoft.com/visualstudio/deployment/schedules-element-bootstrapper)。  
-  
 `Schedules`元素包含`Schedule`元素，用于定义在定义的命令的特定时间`Command`元素应运行。  
   
 ## <a name="syntax"></a>语法  
@@ -50,7 +48,7 @@ ms.locfileid: "47479432"
 ```  
   
 ## <a name="elements-and-attributes"></a>元素和属性  
- `Schedules`元素是子元素的`Product`元素。 每个`Product`元素可能具有最多一个`Schedules`元素。 `Schedules`元素没有任何属性。  
+ `Schedules`元素是子元素的`Product`元素。 每个`Product`元素可能具有最多一个`Schedules`元素。 `Schedules` 元素没有属性。  
   
 ## <a name="schedule"></a>计划  
  `Schedule`元素是子元素的`Schedules`元素。 一个`Schedules`元素必须至少一个`Schedule`元素。  

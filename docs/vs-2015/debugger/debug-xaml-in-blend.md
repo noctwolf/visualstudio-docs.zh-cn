@@ -1,7 +1,7 @@
 ---
 title: 调试在 Blend 中的 XAML |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1fe1c312c747e25fc1b1e93a51e26d6e67c4a9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0c2e135c788ce4fc632efa617323e7ac6fc1f3e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482827"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179876"
 ---
 # <a name="debug-xaml-in-blend"></a>在 Blend 中调试 XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Blend 中调试 XAML](https://docs.microsoft.com/visualstudio/debugger/debug-xaml-in-blend)。  
-  
 你可以使用 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中的工具在应用中调试 XAML。 当生成项目时，在显示任何错误**结果**面板。 双击一个错误可找到与该错误相关的标记。 如果需要更多的工作空间，则可以隐藏**结果**通过按 F12 的面板。  
   
 ## <a name="syntax-errors"></a>语法错误  

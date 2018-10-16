@@ -1,7 +1,7 @@
 ---
 title: 使用存根隔离应用的各个部分以供单元测试使用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b83a9e73661e6b8c525a800376453cf8cff6a53c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484514"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182170"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根针对单元测试隔离应用程序的各个部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用存根隔离每个单元测试的应用程序的部分以](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing)。  
-  
 存根类型 * 是 Microsoft Fakes 框架提供让你轻松地隔离所测试的其他组件与它调用的一个组件的两种技术之一。 存根是一小段代码，用来在测试期间替代另一个组件。 使用存根的好处在于它能返回一致的结果，使测试更易于编写。 而且，即使在其他组件无法工作的情况下，你也可以运行这些测试。  
   
  有关 Fakes 的概述和快速入门指南，请参阅[使用 Microsoft Fakes 隔离受测代码](../test/isolating-code-under-test-with-microsoft-fakes.md)。  

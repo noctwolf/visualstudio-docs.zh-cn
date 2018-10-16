@@ -1,7 +1,7 @@
 ---
 title: 编译单位 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5f4d168c1b6f8a4719a14eac26f6d88df2e2f8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 34cb6f2c8660a6344ca906f036abd3292a69dda3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217160"
 ---
 # <a name="compiland"></a>编译单位
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编译单位](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compiland)。  
-  
 还有一个`SymTagCompiland`符号将每个编译单位链接到.exe 文件。 编译单位信息用于分隔包含符号`SymTagCompiland`标记，而不加载其他编译单位符号可以检索，和与符号`SymTagCompilandDetails`标记，这可能需要加载其他符号。  
   
 ## <a name="properties"></a>属性  

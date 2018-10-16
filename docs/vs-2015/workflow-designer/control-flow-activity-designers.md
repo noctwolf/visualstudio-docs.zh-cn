@@ -1,7 +1,7 @@
 ---
 title: 控制流活动设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 58ddd15d37e36494fef9488638727c7bc2142aa3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303610"
 ---
 # <a name="control-flow-activity-designers"></a>控制流活动设计器
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包含系统提供的若干活动，构造工作流时可以使用它们。 本节包含系统提供的活动中用于控制工作流中的流的活动。 以下主题介绍这些活动以及如何使用它们。  

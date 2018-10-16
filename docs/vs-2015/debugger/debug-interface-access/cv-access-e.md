@@ -1,7 +1,7 @@
 ---
 title: CV_access_e |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5096c90727a1c8ffcf871853d1f59610a2baff37
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1afaea538e96af7997da4be68fba8bc76ac0674a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179739"
 ---
 # <a name="cvaccesse"></a>CV_access_e
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CV_access_e](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/cv-access-e)。  
-  
 指定的成员函数和变量的可见性 （访问级别） 的范围。  
   
 ## <a name="syntax"></a>语法  

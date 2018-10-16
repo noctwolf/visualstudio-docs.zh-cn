@@ -1,7 +1,7 @@
 ---
 title: 如何： 实现查找和替换机制 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bbd348db-3d19-42eb-99a2-3e808528c0ca
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eaae77979fc15954b4480a038c791a15bd95ab65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4ec48a1392efa67f17432f071c9bf4894c35e87
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304013"
 ---
 # <a name="how-to-implement-the-find-and-replace-mechanism"></a>如何： 实现查找和替换机制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 实现查找和替换机制](https://docs.microsoft.com/visualstudio/extensibility/how-to-implement-the-find-and-replace-mechanism)。  
-  
 Visual Studio 提供两种方法来实现查找/替换。 一种方法是将文本图像传递给命令行程序，使其处理，突出显示，具体方法搜索和替换文本。 这样用户就可以指定多个文本段。 或者，你的 VSPackage 可以控制此功能本身。 在这两种情况下，必须通知有关当前的目标和所有打开的文档的目标的 shell。  
   
 ### <a name="to-implement-findreplace"></a>若要实现查找/替换  

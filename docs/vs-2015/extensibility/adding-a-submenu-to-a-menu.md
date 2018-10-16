@@ -1,7 +1,7 @@
 ---
 title: 将子菜单添加到菜单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 caps.latest.revision: 44
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 93d34c0402eeb963cfb49ab3a890a97e77b625a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e822cf57b8fee46b1bfb7e9f6801c89ef66daf3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484345"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199116"
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>将子菜单添加到菜单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将子菜单添加到菜单](https://docs.microsoft.com/visualstudio/extensibility/adding-a-submenu-to-a-menu)。  
-  
 本演练基于在演示[将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md)通过演示如何添加到子菜单**TestMenu**菜单。  
   
  子菜单是另一个菜单中会显示一个辅助菜单。 可以通过遵循其名称的箭头标识子菜单。 单击名称会导致子菜单以及用来显示其命令。  

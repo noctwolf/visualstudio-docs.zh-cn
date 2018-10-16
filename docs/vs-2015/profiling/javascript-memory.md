@@ -1,7 +1,7 @@
 ---
 title: JavaScript 内存 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 54
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54a05a7a757e4dec026fe889c3ee26730482e64e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 531590495cf31f0a173b9dfc1dbc995a9fb73364
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480976"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257603"
 ---
 # <a name="javascript-memory"></a>“JavaScript 内存”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UWP 应用中分析 JavaScript 内存使用率](https://docs.microsoft.com/visualstudio/profiling/javascript-memory)。  
-  
 JavaScript 内存分析器在 Visual Studio 中提供，旨在帮助你了解内存使用情况，在使用 JavaScript 为 Windows 构建的应用商店应用中查找内存泄漏。 受支持的应用包括 Windows Phone 应用商店应用和 Windows 应用商店应用。  
   
  JavaScript 内存分析器可以为你执行以下操作：  

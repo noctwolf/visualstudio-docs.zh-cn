@@ -1,7 +1,7 @@
 ---
 title: 使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c9472346212d68b3ee682450995d55eb0a5ddd9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477611"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285930"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试 Windows UWP 和 8.1 Phone 应用程序使用编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/test-windows-phone-8-1-apps-with-coded-ui-tests)。  
-  
 此演练展示了如何为在移动设备或仿真器上运行的 UWP 应用和基于 XAML 的 Phone 8.1 应用创建 UI 测试。   
   
 ## <a name="create-a-simple-windows-phone-app"></a>创建简单的 Windows Phone 应用  

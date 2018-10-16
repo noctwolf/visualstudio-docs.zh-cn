@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用菜单项禁止显示警告 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be62471a950dc794bc3b9ff704cb187bbc943ce1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211778"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>如何：使用菜单项禁止显示警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 通过使用菜单项禁止显示警告](https://docs.microsoft.com/visualstudio/code-quality/how-to-suppress-warnings-by-using-the-menu-item)。  
-  
 请注意]
 >  在源代码中，不支持对网站项目进行禁止显示操作。  
   

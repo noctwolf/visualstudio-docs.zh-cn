@@ -1,7 +1,7 @@
 ---
 title: 托管的代码概述的代码分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f48bb0e1832ef92a4d03a775123a062090936090
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279365"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>托管代码的代码分析概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的代码分析托管代码概述](https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-overview)。  
-  
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如 Microsoft .NET Framework 设计准则中规定的编程和设计规则的冲突。  
   
  分析工具将它在分析期间执行的检查表示为警告消息。 警告消息标识任何相关的编程和设计问题，如有可能，还提供有关如何修复问题的信息。  

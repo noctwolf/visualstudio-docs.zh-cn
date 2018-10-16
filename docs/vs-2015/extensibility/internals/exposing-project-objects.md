@@ -1,7 +1,7 @@
 ---
 title: 公开项目对象 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5514589660df1850dc2f5d9fce3079f6769ec06e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a3cc9f3ffc7869506dc5ac46a715c9bd7b042a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468762"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210790"
 ---
 # <a name="exposing-project-objects"></a>公开项目对象
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[公开项目对象](https://docs.microsoft.com/visualstudio/extensibility/internals/exposing-project-objects)。  
-  
 自定义项目类型可以提供自动化对象，以允许使用自动化接口项目的访问权限。 每个项目类型需要提供标准<xref:EnvDTE.Project>自动化对象，从访问<xref:EnvDTE.Solution>，其中包含在 IDE 中打开的所有项目的集合。 应在项目中每个项由公开<xref:EnvDTE.ProjectItem>对象使用访问<xref:EnvDTE.Project.ProjectItems>。 除了这些标准自动化对象，可以选择项目以提供特定于项目的自动化对象。  
   
  可以创建自定义根级别的自动化对象可以访问从根 DTE 对象使用后期绑定`DTE.<customeObjectName>`或`DTE.GetObject(“<customObjectName>”)`。 例如，Visual c + + 创建名为"VCProjects"可使用 DTE 访问 c + + 特定于项目的项目集合。VCProjects 或 DTE。GetObject("VCProjects")。 此外可以创建 Project.Object，这是唯一的项目类型，Project.CodeModel，可查询对 ProjectItem，公开 ProjectItem.Object 和 ProjectItem.FileCodeModel 其派生程度最高的对象。  

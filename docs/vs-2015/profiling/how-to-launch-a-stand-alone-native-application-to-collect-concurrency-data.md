@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令行通过探查器启动独立本机应用程序以收集并发数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5060b22603f5cab408e6f15a9f33f104e76cd7bf
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2f9949254a86e729bd51ccb9896a74c2f83b2568
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301209"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用命令行将独立本机应用程序与探查器一起启动以收集并发数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用命令行启动独立本机应用程序使用 Profiler 以收集并发数据](https://docs.microsoft.com/visualstudio/profiling/how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line)。  
-  
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。  
   
  分析会话包括以下几部分：  

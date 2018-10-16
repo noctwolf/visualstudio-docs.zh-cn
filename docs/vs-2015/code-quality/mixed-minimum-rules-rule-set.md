@@ -1,7 +1,7 @@
 ---
 title: 混合最少量规则规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 97576ff579e1fabd5f48b4e8bf6781dc2d30acb6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3d153a99341012bd06f9f27a87bca260962c7ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482290"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249829"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[混合最少量规则规则集](https://docs.microsoft.com/visualstudio/code-quality/mixed-minimum-rules-rule-set)。  
-  
 Microsoft 混合最少量规则重点关注支持公共语言运行时，包括潜在安全漏洞和应用程序崩溃在 c + + 项目中最关键问题。 应包括任何自定义规则集中设置为支持公共语言运行时在 c + + 项目创建此规则。  
   
 |规则|描述|  

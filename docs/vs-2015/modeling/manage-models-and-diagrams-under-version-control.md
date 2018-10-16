@@ -1,7 +1,7 @@
 ---
 title: 管理模型和版本控制下的关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,24 +14,22 @@ caps.latest.revision: 32
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1c2cc85b5ae94e95ef5f1e07a6d3ca13663fbb44
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4aa1da880195e3566460d8169c6eed4e81bb0fb1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482960"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187543"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>管理版本控制下的模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理模型和版本控制下的关系图](https://docs.microsoft.com/visualstudio/modeling/manage-models-and-diagrams-under-version-control)。  
-  
-使用管理不同版本的建模项目和关系图，其中包括代码图 （.dgml 文件），[使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); 与在本地 Team Foundation Server 或云中的视觉对象Team Services。  
+管理包括代码图（.dgml 文件）在内的建模项目和关系图的不同版本，方法是 [使用 Team Foundation 版本控制或 Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)；利用本地 Team Foundation Server 或利用 Visual Studio Team Services 在云中实施。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 > [!IMPORTANT]
->  当多个用户使用同一个建模项目时，请务必小心。 了解如何才能[在中型或大型项目中组织模型](../modeling/structure-your-modeling-solution.md)。  
+>  当多个用户使用同一个建模项目时，请务必小心。 了解如何才能 [在中型或大型项目中组织模型](../modeling/structure-your-modeling-solution.md)。  
   
 ##  <a name="ModelingProjects"></a> 建模项目中的文件  
  多个用户可能会同时处理一个建模项目，假设他们处理的是不同的文件。  
@@ -66,7 +64,7 @@ ms.locfileid: "47482960"
   
 -   为了帮助跟踪包，可重命名包文件来反映实际的包名称。  
   
--   在中[!INCLUDE[esprscc](../includes/esprscc-md.md)]，始终会执行**签入**并**获取最新版本**完整的建模项目中，不要对单独文件的操作。  
+-   在 [!INCLUDE[esprscc](../includes/esprscc-md.md)]中，始终对完整的建模项目执行“签入”  和“获取最新版本”  操作，请始终不要对单独文件执行这些操作。  
   
 -   请总是在签入建模项目前及时执行“获取”  操作。  
   
@@ -82,7 +80,7 @@ ms.locfileid: "47482960"
   
 -   更改跨越包边界的关系的属性。  
   
--   若要了解有关签出锁定的信息，请参阅[签出和编辑文件](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
+-   若要了解有关签出锁定的信息，请参阅 [签出和编辑文件](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a)。  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>将关系图文件移入或移出项目文件夹  
   
@@ -102,7 +100,7 @@ ms.locfileid: "47482960"
     >  不能将该文件移到不同的项目中。  
   
 ##  <a name="Merging"></a> 合并模型文件和关系图中的更改  
- 在多个用户并发使用一个模型之后，[!INCLUDE[esprscc](../includes/esprscc-md.md)] 将提示合并模型文件中的更改。 按照前面几节中所述内容来处理单独项目将避免大部分合并。 通常，可自动安全合并剩余冲突。 以下类型的更改不会导致困难：  
+ 在多个用户并发使用一个模型之后， [!INCLUDE[esprscc](../includes/esprscc-md.md)] 将提示合并模型文件中的更改。 按照前面几节中所述内容来处理单独项目将避免大部分合并。 通常，可自动安全合并剩余冲突。 以下类型的更改不会导致困难：  
   
 -   生命线的类型。 当将生命线添加到交互（序列图）时，除非已从现有类型创建了生命线，否则其类型存储在根模型中。  
   

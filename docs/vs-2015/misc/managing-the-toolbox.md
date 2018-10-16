@@ -1,7 +1,7 @@
 ---
 title: 管理工具箱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,29 +15,29 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: fa9b30429de00f950e4d9de160fe72ece7f06760
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a42c50addeb878041087d9017321ed71daac115
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468802"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254396"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
-[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]允许 VSPackage，如编辑器或设计器中，若要管理的成员资格和外观**工具箱**。  
+[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 允许 VSPackage（如编辑器或设计器）管理“工具箱” 的成员资格和外观。  
   
- 此外，还可以使用自动化管理“工具箱”  本身。 有关通过自动化管理工具箱的详细信息，请参阅[How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
+ 此外，还可以使用自动化管理“工具箱”  本身。 有关通过自动化管理工具箱的详细信息，请参阅 [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)。  
   
 ## <a name="automatic-toolbox-tab-selection"></a>自动工具箱选项卡选择  
  可以基于当前处于活动状态的编辑器或设计器，自动激活特定的“工具箱”  选项卡或类别。 例如，如果已激活窗体设计器，那么你可能希望选中“所有 Windows 窗体”  选项卡。  
   
  此支持仅限于编辑器和设计器，并要求：  
   
-1.  实现工厂对象以提供编辑器或设计器实例。 有关实现设计器或编辑器工厂对象的详细信息，请参阅[编辑器工厂](../extensibility/editor-factories.md)。  
+1.  实现工厂对象以提供编辑器或设计器实例。 有关实现设计器或编辑器工厂对象的详细信息，请参阅 [Editor Factories](../extensibility/editor-factories.md)。  
   
 2.  如果存在编辑器或设计器，则将自动激活工具箱选项卡的注册。  
   
 ## <a name="controlling-the-toolbox"></a>控制工具箱  
- 对自动化支持进行了补充[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供了以下接口才能提供 Vspackage 更好地控制如何**工具箱**进行管理。  
+ [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 提供以下接口，使 VSPackage 能够更好地控制对“工具箱”  的管理方式，对自动支持进行了补充。  
   
 |接口|描述|  
 |---------------|-----------------|  
@@ -72,7 +72,7 @@ ms.locfileid: "47468802"
   
 -   当使用 <xref:System.Drawing.Design.IToolboxService> 时，由实现者管理本地化信息，如类别的名称。  
   
- 使用设置机制以允许用户保存“工具箱”  设置，用户可以通过 IDE 的“工具”  菜单上的“导入/导出设置”  命令访问这些设置。 有关如何使用设置的详细信息，请参阅[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)。  
+ 使用设置机制以允许用户保存“工具箱”  设置，用户可以通过 IDE 的“工具”  菜单上的“导入/导出设置”  命令访问这些设置。 有关如何使用设置的详细信息，请参阅 [Extending User Settings and Options](../extensibility/extending-user-settings-and-options.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展工具箱](../misc/extending-the-toolbox.md)

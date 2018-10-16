@@ -1,7 +1,7 @@
 ---
 title: 创建自定义项目和项模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd850cf73f9d7a9c443c374bd8a83e48c3470a31
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 3135702050caf1b1825c41eb909958a7ab5d8ffb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "47588902"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304624"
 ---
 # <a name="creating-custom-project-and-item-templates"></a>创建自定义项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建自定义项目和项模板](https://docs.microsoft.com/visualstudio/extensibility/creating-custom-project-and-item-templates)。  
-  
 Visual Studio SDK 的项目模板可创建自定义项目模板和自定义项模板。 这些模板包括一些常见的参数替换项，并以 zip 文件形式生成。 它们不会自动部署，且它们不支持的实验实例中。 必须将复制该 zip 文件的位置  
   
  模板创建模板，可以包括在更大的扩展的模板。 这样可以实现上的源文件的版本控制和生成到一个 VSIX 包的一组模板项目。  

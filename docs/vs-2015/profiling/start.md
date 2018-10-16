@@ -1,7 +1,7 @@
 ---
 title: Start | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14a68592a350c7c5604f6d7af3037eecf6c9d3e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d035a540eecd9cae5b62483a52ca75f9db9dca7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479298"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252507"
 ---
 # <a name="start"></a>Start
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[启动](https://docs.microsoft.com/visualstudio/profiling/start)。  
-  
 **Start** 选项是一个 VSPerfCmd.exe 选项卡，可将探查器初始化为指定分析方法。  
   
 ## <a name="syntax"></a>语法  

@@ -1,7 +1,7 @@
 ---
 title: 演练： 调试因着色引起的呈现错误 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bd3416e9a3902a77489b4d3a5547e3614376c59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c73553e73dc2010afb03deba9a1421e76f962308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210166"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 调试呈现错误由于明暗度](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-debugging-rendering-errors-due-to-shading)。  
-  
-本演练演示如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]图形诊断工具调查由于着色器 bug 而错误着色的对象。  
+本演练演示了如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断工具调查由于着色器 Bug 而错误着色的对象。  
   
  本演练演示了如何：  
   
@@ -48,7 +46,7 @@ ms.locfileid: "47481624"
   
 #### <a name="to-examine-a-frame-in-a-graphics-log"></a>检查图形日志中的帧  
   
-1.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，加载包含显示缺少模型的帧的图形日志。 新的图形日志文档窗口将显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。 此窗口的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，加载包含显示缺少模型的帧的图形日志。 新的图形日志文档窗口将显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中。 此窗口的顶部是所选帧的呈现目标输出。 底部是“帧列表” ，以缩略图的形式显示每个捕获的帧。  
   
 2.  在“帧列表” 中，选择其中对象外观不正确的帧。 更新呈现目标以反映所选的帧。 在此方案中，图形日志文档窗口如下所示：  
   

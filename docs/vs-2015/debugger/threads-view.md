@@ -1,7 +1,7 @@
 ---
 title: 线程视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79c0443d17ed18573cdbe990474ee328f2d3678f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12ab9170c0f071ba319c0560f55291f41174ddf9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306262"
 ---
 # <a name="threads-view"></a>线程视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[线程视图](https://docs.microsoft.com/visualstudio/debugger/threads-view)。  
-  
 线程视图是在系统上的 windows 与关联的所有线程的平面列表。 显示线程 ID 和每个线程的模块名称。 进程不包括在内，但可以轻松地找到拥有所选的线程的进程。  
   
 ## <a name="procedures"></a>过程  

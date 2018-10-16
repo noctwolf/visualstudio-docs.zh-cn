@@ -1,7 +1,7 @@
 ---
 title: 性能资源管理器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2076aaa86f51da7928b0f81213ff97553262eb56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d504c06cb038bbaa7298249384e88ad5bb2d5705
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468884"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248477"
 ---
 # <a name="performance-explorer"></a>性能资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能资源管理器](https://docs.microsoft.com/visualstudio/profiling/performance-explorer)。  
-  
 凭借 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具，开发人员可以衡量、评估并着力解决代码中与性能相关的问题。 这些工具已完全集成到 IDE 从而提供无缝且易于获取的用户体验。  
   
  分析应用程序非常简单。 首先创建一个新的性能会话。 在 Visual Studio Team System Development Edition 中，可以使用性能会话向导创建新的性能会话。 性能会话结束后，分析期间收集的数据将保存到 .vsp 文件中。 可在 IDE 内部查看 .vsp 文件。 存在几个可用的报告视图，可帮助直观显示和检测收集的数据的性能问题。  

@@ -1,7 +1,7 @@
 ---
 title: VSIX 包的剖析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 645d9bff0b1f1bd3ac3afe3f5c815d9b9cd208d3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 207abbda08134c2a1e065cf73050fc2451d4eaab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181451"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的剖析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSIX 包的剖析](https://docs.microsoft.com/visualstudio/extensibility/anatomy-of-a-vsix-package)。  
-  
 VSIX 包是一个.vsix 文件包含一个或多个 Visual Studio 扩展，以及 Visual Studio 用来进行分类和安装扩展的元数据。 该元数据包含在 VSIX 清单和 [Content_Types].xml 文件。 VSIX 包还可能包含一个或多个 Extension.vsixlangpack 文件来提供本地化安装程序文本，并可能包含其他 VSIX 包安装依赖项。  
   
  VSIX 包格式遵循开放式打包约定 (OPC) 标准。 包中包含二进制文件和支持文件，以及 [Content_Types].xml 文件和.vsix 清单文件。 一个 VSIX 包可能包含多个项目或甚至多个具有其自己的清单的包的输出。  

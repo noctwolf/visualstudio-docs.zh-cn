@@ -1,7 +1,7 @@
 ---
 title: 演练： 手动部署 ClickOnce 应用程序，不需要重新签名并且保留署名信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 85453b899501d83191016bde0edd40b4e2a96d94
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: 2d6531a94a99e2a1c24d80e9f326d23fcc6c4ec3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252988"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 手动部署 ClickOnce 应用程序不需要重新签名并且该保留品牌信息](https://docs.microsoft.com/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information)。  
-  
 当你创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序并将它提供给客户进行发布和部署信息，通常客户必须更新部署清单并对其进行重新签名。 .NET Framework 3.5 时，仍是在大多数情况下的首选的方法，使您能够创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]可以由其客户部署而无需重新生成新的部署清单的部署。 有关详细信息，请参阅[部署 ClickOnce 应用程序的测试和生产服务器，而无需 Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)。  
   
  当你创建[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，然后为其提供给客户进行发布和部署，请在应用程序可以使用客户的署名，也可以保留你的品牌。 例如，如果应用程序是一个单一的专有应用程序，你可能想要保留你的品牌。 如果应用程序高度自定义每个客户，可能想要使用客户的品牌。 .NET Framework 3.5，您可以保留你的品牌、 发布服务器信息和安全签名时，显示组织的应用程序部署。 有关详细信息，请参阅[创建 ClickOnce 供其他应用程序部署到](../deployment/creating-clickonce-applications-for-others-to-deploy.md)。  

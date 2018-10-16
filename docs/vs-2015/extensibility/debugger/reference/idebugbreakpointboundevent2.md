@@ -1,7 +1,7 @@
 ---
 title: IDebugBreakpointBoundEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 24ba362e-5be1-481a-b071-e1ebd3cae6e8
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6ed2732403210feb05d9013bef9a57e1e410234d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f997a0e209997464a42987e8f2c6dfdcf2db8286
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306476"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugBreakpointBoundEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugbreakpointboundevent2)。  
-  
 此接口通知会话调试管理器 (SDM) 已成功向加载程序绑定挂起断点。  
   
 ## <a name="syntax"></a>语法  

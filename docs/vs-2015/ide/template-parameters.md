@@ -1,7 +1,7 @@
 ---
 title: 模板参数 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8eb91c5137ff405562115cbe318d6a723d369d95
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238896"
 ---
 # <a name="template-parameters"></a>模板参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模板参数](https://docs.microsoft.com/visualstudio/ide/template-parameters)。  
-  
 在对模板进行实例化时，您可以通过在模板中使用参数来替换模板的关键部分的值，如类名和命名空间。 用户在“新建项目”或“添加新项”对话框中单击“确定”时，后台运行的模板向导会替换这些参数。  
   
 ## <a name="declaring-and-enabling-template-parameters"></a>声明和启用模板参数  

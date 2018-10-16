@@ -1,7 +1,7 @@
 ---
 title: 演练： 以编程方式捕获图形信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5807dcc1b5d4aef42d698fa051f425a17fab7f8f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470775"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298150"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 以编程方式捕获图形信息](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information-programmatically)。  
-  
 你可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断以编程方式从 Direct3D 应用中捕获图形信息。  
   
  编程捕获在以下方案中非常有用：  
@@ -113,7 +111,7 @@ ms.locfileid: "47470775"
     ```  
   
     > [!NOTE]
-    >  如果`DXGIGetDebugInterface1`将返回`E_NOINTERFACE`(`error: E_NOINTERFACE No such interface supported`)，请确保应用正在图形诊断下运行 (中的 Alt + F5 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)])。  
+    >  如果在 `DXGIGetDebugInterface1` 返回 `E_NOINTERFACE` （`error: E_NOINTERFACE No such interface supported`），请确保应用在图形诊断下运行（ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中的 Alt + F5）。  
   
 ### <a name="capturing-graphics-information"></a>捕获图形信息  
  现在你已拥有一个有效的 `IDXGraphicsAnalysis` 接口，你可以使用 `BeginCapture` 和 `EndCapture` 捕获图形信息。  
@@ -154,7 +152,7 @@ ms.locfileid: "47470775"
   
  若要在正在计算机上运行的应用中使用远程捕获 API，首先，你必须在该计算机上安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具。 不同版本的远程工具支持不同的硬件平台。 有关如何安装远程工具的信息，请参阅 Microsoft 下载网站上的 [远程工具下载页](http://go.microsoft.com/fwlink/p/?LinkId=246691) 。  
   
- 或者，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将安装必需的组件来为 32 位应用执行远程捕获。  
+ 或者， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将安装必需的组件来为 32 位应用执行远程捕获。  
   
 > [!NOTE]
 >  因为对于 ARM 设备，大多数 Windows 桌面应用（包括 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]）在 [!INCLUDE[win8](../includes/win8-md.md)] 上不受支持，因此将 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的远程工具和编程捕获 API 结合使用是在 ARM 设备上捕获图形诊断的唯一方法。  
@@ -207,7 +205,7 @@ ms.locfileid: "47470775"
   
 ## <a name="see-also"></a>请参阅  
  [演练： 捕获图形信息](../debugger/walkthrough-capturing-graphics-information.md)   
- [捕获图形信息](../debugger/capturing-graphics-information.md)   
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [命令行捕获工具](../debugger/command-line-capture-tool.md)
 
 

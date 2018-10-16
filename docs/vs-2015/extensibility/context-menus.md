@@ -1,7 +1,7 @@
 ---
 title: 上下文菜单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b95f913f5705b115473847b12b3fd1df8a5bcff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4b53174776b93d94c38982a430db3213ba184b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479428"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207722"
 ---
 # <a name="context-menus"></a>上下文菜单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[上下文菜单](https://docs.microsoft.com/visualstudio/extensibility/context-menus)。  
-  
 上下文菜单时在用户右键单击工作区的活动区域中显示，并清除并释放鼠标右键按钮时。  
   
 ## <a name="editor-context-menus"></a>编辑器上下文菜单  

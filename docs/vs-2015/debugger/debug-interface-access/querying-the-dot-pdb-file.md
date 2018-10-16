@@ -1,7 +1,7 @@
 ---
 title: 查询。Pdb 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae3034cf9f02d6d37c55bafe392610b1f1544fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7d056224d23f487abf25776a52ca80079c08a9f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479086"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236062"
 ---
 # <a name="querying-the-pdb-file"></a>查询 .Pdb 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进行查询。Pdb 文件](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/querying-the-dot-pdb-file)。  
-  
 程序数据库文件 (扩展名为.pdb) 是包含类型和符号化调试信息编译和链接项目的过程中收集的二进制文件。 编译的 C/c + + 程序时创建 PDB 文件 **/ZI**或 **/Zi**或[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]， [!INCLUDE[csprcs](../../includes/csprcs-md.md)]，或者[!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]带有程序 **/debug**选项。 对象文件包含到调试信息的.pdb 文件的引用。 Pdb 文件的详细信息，请参阅[PDB 文件](http://msdn.microsoft.com/en-us/1761c84e-8c2c-4632-9649-b5f99964ed3f)。 DIA 应用程序可以使用以下常规步骤以获取有关各种符号、 对象和对可执行映像中的数据元素的详细信息。  
   
 ### <a name="to-query-the-pdb-file"></a>查询.pdb 文件  

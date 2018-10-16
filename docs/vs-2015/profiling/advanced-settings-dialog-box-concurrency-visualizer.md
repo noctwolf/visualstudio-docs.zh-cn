@@ -1,7 +1,7 @@
 ---
 title: “高级设置”对话框（并发可视化工具）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 28098cceb3225162b283c81ee5fd42d49f09fead
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b09b5d3a6bb279291df64c0de720ba03f2eee16d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204422"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[高级设置对话框 （并发可视化工具）](https://docs.microsoft.com/visualstudio/profiling/advanced-settings-dialog-box-concurrency-visualizer)。  
-  
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。  
   
 ## <a name="symbols"></a>符号  

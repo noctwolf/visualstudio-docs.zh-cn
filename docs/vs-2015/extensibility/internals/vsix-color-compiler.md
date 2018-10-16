@@ -1,7 +1,7 @@
 ---
 title: VSIX 颜色编译器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 08358c8d4b77834bf0dfefe626891de44b2b754c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3594d587f9d4968127b6e81a5c5e3b5549a9df89
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477736"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207319"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSIX 颜色编译器](https://docs.microsoft.com/visualstudio/extensibility/internals/vsix-color-compiler)。  
-  
 Visual Studio 扩展颜色编译器工具是采用一个表示颜色的现有 Visual Studio 主题的.xml 文件的控制台应用程序并将其向.pkgdef 文件，以便可以在 Visual Studio 中使用这些颜色。 因为可以轻松比较.xml 文件之间的差异，此工具可用于管理源控件中的自定义颜色。 它还可以挂接到生成环境，以便生成的输出是一个有效的.pkgdef 文件。  
   
  **主题的 XML 架构**  

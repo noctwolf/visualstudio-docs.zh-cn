@@ -1,7 +1,7 @@
 ---
 title: 为您的应用程序创建模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -42,18 +42,16 @@ caps.latest.revision: 60
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 769542e2f2864864146cb0f94c4dbf5bf1920b5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb7c2e0095d83ecbe21e6002f86c44682745341a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478456"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301894"
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为您的应用程序创建模型](https://docs.microsoft.com/visualstudio/modeling/create-models-for-your-app)。  
-  
 建模图有助于理解、阐明和传达代码的构思和软件系统必须支持的用户需求。 例如，若要描述和传达用户需求，你可以使用统一建模语言 (UML) 用例图、活动图、类图和序列图。 若要描述和传达系统的功能，你可以使用 UML 组件图、类图、活动图和序列图。  
   
  请参阅[第 9 频道视频： 通过建模改善体系结构](http://go.microsoft.com/fwlink/?LinkID=252078)。  

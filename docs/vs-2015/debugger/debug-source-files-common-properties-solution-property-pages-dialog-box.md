@@ -1,7 +1,7 @@
 ---
 title: 调试通用属性解决方案属性页源对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94306c44b8a19d1fbf924fe361d317dd911110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 08e2dcac4c105753febc86d3bec6e5dc0035e268
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470672"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253807"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>“解决方案属性页”对话框 ->“通用属性”->“调试源文件”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试源文件，通用属性解决方案属性页对话框](https://docs.microsoft.com/visualstudio/debugger/debug-source-files-common-properties-solution-property-pages-dialog-box)。  
-  
 该属性页指定调试解决方案时调试器查找源文件的位置。  
   
  访问**调试源文件**属性页中，右键单击你的解决方案中**解决方案资源管理器**，然后选择**属性**从快捷菜单。 展开**常见属性**文件夹，然后单击**调试源文件**页。  

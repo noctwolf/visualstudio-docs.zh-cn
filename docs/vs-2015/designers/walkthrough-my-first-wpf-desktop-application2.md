@@ -1,7 +1,7 @@
 ---
 title: 演练：我的第一个 WPF 桌面应用程序2 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5994c17ff4e7e6071a22d235ab6888727b9ed026
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47588978"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289909"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 我第一个 WPF 桌面应用程序 2](https://docs.microsoft.com/visualstudio/designers/walkthrough-my-first-wpf-desktop-application2)。  
-  
 name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开发的简介。 你将创建一个包括大多数 WPF 桌面应用程序中的常见元素的基本应用程序：XAML 标记、代码隐藏、应用程序定义、控件、布局、数据绑定和样式。  
   
 ##  <a name="Create_The_Application_Code_Files"></a> 创建应用程序项目  

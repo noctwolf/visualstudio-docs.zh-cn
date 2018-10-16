@@ -1,7 +1,7 @@
 ---
 title: 解决方案配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,24 +15,22 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5f8735f841f7b26f03c30bc7f42b06b3ca5e260d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479396"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245787"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[解决方案配置](https://docs.microsoft.com/visualstudio/extensibility/internals/solution-configuration)。  
-  
 解决方案配置存储解决方案级别的属性。 它们指示的行为**启动**(f5) 和**生成**命令。 默认情况下，这些命令生成并启动调试配置。 在解决方案配置的上下文中执行这两个命令。 这意味着用户可以启动和任何活动解决方案配置通过设置生成预期 F5。 在环境旨在构建和运行时优化解决方案而不是项目。  
   
  标准 Visual Studio 工具栏中包含开始按钮和一个解决方案配置下拉列表右侧的开始按钮。 此列表，用户可以选择按下 F5 时要启动的配置、 创建其自己的解决方案配置，或编辑现有配置。  
   
 > [!NOTE]
->  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。  
+>  没有可扩展性接口来创建或编辑解决方案配置。 必须使用`DTE.SolutionBuilder`。 但是，有用于管理解决方案生成的可扩展 Api。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2> 。  
   
  下面是如何实现您的项目类型支持的解决方案配置：  
   

@@ -1,7 +1,7 @@
 ---
 title: 在模拟器中的运行 Windows 应用商店应用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3007d0e6ea7a835cd9147f5f5ff94c91f9f7bda4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479881"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190718"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在模拟器中的运行 Windows 应用商店应用](https://docs.microsoft.com/visualstudio/debugger/run-windows-store-apps-in-the-simulator)。  
-  
 Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用程序，可模拟 Windows 应用商店应用程序。 你可以在开发计算机上运行应用程序并模拟常用的触摸和旋转事件。 此外，可以选择想要仿真和模拟网络连接属性的物理屏幕大小和分辨率。  
   
  模拟器提供可以在其中设计、开发、调试和测试 Windows 应用商店应用的环境。 但是，将应用发布到 Windows 应用商店之前，应在真实设备上测试应用。  
@@ -104,7 +102,7 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
  屏幕的大小和分辨率以 *屏幕宽度（以英寸为单位）、像素宽度 X 像素高度*形式列出。 注意，同时模拟屏幕大小和分辨率。 模拟器上的位置坐标将转换为所选设备大小和分辨率的坐标。  
   
 > [!NOTE]
->  可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参阅[响应式设计 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。  
+>  可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参见 [响应式设计 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。  
   
 ##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 捕获应用程序的屏幕快照以提交到 Windows 应用商店  
  向 Windows 应用商店提交应用时，必须包含该应用的屏幕快照。  
@@ -119,9 +117,9 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
      ![屏幕快照设置上下文菜单](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模拟网络连接属性  
- 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) Api 可响应[NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx)并[TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx)签名的事件。 请参见 [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 你可以通过维护感知网络连接成本或数据计划状态更改的能力并允许你的应用程序使用此信息避免产生额外的漫游成本或超出指定的数据传输限制，来帮助你的应用程序用户管理所测量网络连接的成本。 利用 [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) API 能够对签名的 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 和 [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) 事件作出响应。 请参见 [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
- 若要调试或测试网络成本感知代码，可使用模拟器模拟通过公开的网络的属性[ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx)返回的对象[GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
+ 若要调试或测试网络成本感知代码，可使用模拟器模拟通过 [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 返回的 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)对象公开的网络的属性。  
   
  若要模拟网络属性，请执行以下操作：  
   
@@ -131,15 +129,15 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
      清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
   
-3.  输入模拟网络的 **“配置文件名”** 。 我们建议使用可用于标识中的模拟的唯一名称[ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx)的属性[ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx)对象。  
+3.  输入模拟网络的 **“配置文件名”** 。 建议使用可以用于标识 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 对象的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 属性中的模拟的唯一名称。  
   
-4.  选择[NetworkCostType](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx)值的配置文件**网络成本类型**列表。  
+4.  选择 [](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) “网络成本类型”列表中的配置文件的 **NetworkCostType** 值。  
   
-5.  从**数据限制状态标志**列表中，您可以设置[ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx)属性或[OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)属性设为 true，也可以选择**在数据限制内**将这两个值设置为 false。  
+5.  从  “数据限制状态标志”列表中，你可以将 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 属性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)属性设为 true，也可以选择  “在数据限制内”将这两个值均设为 false。  
   
-6.  从**漫游状态**列表中，设置[漫游](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx)属性。  
+6.  从  “漫游状态”列表中，设置 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 属性。  
   
-7.  选择**设置属性**若要模拟网络属性，通过触发前台[NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx)事件和背景[SystemTrigger](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx)类型的**NetworkStateChange**。  
+7.  选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 类型的后台 **SystemTrigger**来模拟网络属性。  
   
  **有关管理网络连接的详细信息**  
   

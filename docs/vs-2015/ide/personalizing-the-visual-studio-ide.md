@@ -1,7 +1,7 @@
 ---
 title: 个性化 Visual Studio IDE |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24def685632c995f173ad1c0b50910ef36d484e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8729b9d2e532909a89e6293d48aefb21922fb4d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471645"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219983"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>个性化 Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[个性化设置 Visual Studio IDE](https://docs.microsoft.com/visualstudio/ide/personalizing-the-visual-studio-ide)。  
-  
 本部分介绍如何以各种方法对 Visual Studio 进行个性化设置以为你自己的开发风格和需求提供最佳支持。 你可以定义和保存多个窗口布局并在它们之间切换。 例如，可以定义一个用于编码的布局和一个用于调试的布局。 你可以在代码编辑器中为每种语言自定义颜色、字体和格式设置。 可以在蓝色、深色或浅色环境颜色主题之间选择，也可以通过从 Visual Studio 代码库下载和安装 Visual Studio 主题编辑器来创建自定义主题。 许多其他选项也通过[“选项”对话框 ->“环境”](../ide/reference/environment-options-dialog-box.md)公开。  
   
  许多设置都会与你一起在 Visual Studio 实例之间漫游。 请参阅[已同步的设置](../ide/synchronized-settings-in-visual-studio.md)，以获取详细信息。  

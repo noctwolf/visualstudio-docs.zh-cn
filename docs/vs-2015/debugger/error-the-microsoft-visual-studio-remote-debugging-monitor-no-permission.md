@@ -1,7 +1,7 @@
 ---
 title: 错误： Microsoft Visual Studio 远程调试监视器在远程计算机上没有连接到此计算机的权限 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a62f20afc5ba57da64205491a3c5dfeabd75daf
-ms.sourcegitcommit: d705e015cb525bfa87a0b93e93376c3956ec2707
+ms.openlocfilehash: c65a5ed9cc06c8d9c4d471b878762d863802f5f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "47588594"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289028"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>错误: 远程计算机上的 Microsoft Visual Studio 远程调试监视器没有连接到此计算机的权限。
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[错误： Microsoft Visual Studio 远程调试监视器在远程计算机上没有权限来连接到此计算机](https://docs.microsoft.com/visualstudio/debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer)。  
-  
 当尝试运行 Visual Studio 远程调试监视器 (msvsmon) 的用户不具有本地计算机上的帐户时，会发生此错误。  
   
 ### <a name="to-fix-this-problem"></a>修复此问题  
@@ -58,7 +56,7 @@ ms.locfileid: "47588594"
 ## <a name="see-also"></a>请参阅  
  [跨域远程调试](http://msdn.microsoft.com/library/8e697ce1-55e8-4ab0-a05f-f87225e2f29b)   
  [远程调试错误和故障排除](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

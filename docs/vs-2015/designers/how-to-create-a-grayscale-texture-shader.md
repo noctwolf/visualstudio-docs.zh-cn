@@ -1,7 +1,7 @@
 ---
 title: 如何：创建灰度纹理着色器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a9ec147f690612b6094925ae893d42bc4dd5145a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2fd97c38dcd61bc285b6d9a82d02a17f0fc47d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304786"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：创建灰度纹理着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建灰度纹理着色器](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-grayscale-texture-shader)。  
-  
 本文档演示如何使用着色器设计器和有向图着色器语言 (DGSL) 创建灰度纹理着色器。 此着色器将修改纹理样本的 RGB 颜色值，然后将其与未修改的 Alpha 值一起用于设置最终颜色。  
   
 ## <a name="creating-a-grayscale-texture-shader"></a>创建灰度纹理着色器  

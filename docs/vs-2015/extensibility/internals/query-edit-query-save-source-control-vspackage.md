@@ -1,7 +1,7 @@
 ---
 title: 查询编辑查询保存 (源代码管理 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d1ab375ff40d141a0c40740a0052674ec13ef11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 612bd94ba360f496c08ea25fd1a45e15c88edb6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483873"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172388"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查询编辑查询保存（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[查询编辑查询保存 (源代码管理 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/query-edit-query-save-source-control-vspackage)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 编辑器可以广播保存查询编辑查询 (QEQS) 事件。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 源存根 （stub） 实现 QEQS 服务，以便它 QEQS 事件接收方。 然后，这些事件被委托给当前处于活动状态的源代码管理 VSPackage。 活动的源代码管理 VSPackage 实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>及其方法。 方法`IVsQueryEditQuerySave2`接口通常称为第一次和保存文档之前编辑文档之前。  
   
 ## <a name="queryeditquerysave-events"></a>QueryEditQuerySave 事件  

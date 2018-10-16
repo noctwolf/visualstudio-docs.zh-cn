@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试具有受限权限的 ClickOnce 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7733eeefc758f5e5cd6940108ef6ade645893407
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d01cf2be1bef794f5aeb74b86d041408fa40ce4a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477305"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209529"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>如何：使用受限权限对 ClickOnce 应用程序进行调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试 ClickOnce 应用程序使用受限权限](https://docs.microsoft.com/visualstudio/deployment/how-to-debug-a-clickonce-application-with-restricted-permissions)。  
-  
 作为开发人员，你很可能使用完全信任权限运行开发计算机，因此在调试 ClickOnce 应用程序时不会遇到最终用户在使用受限权限运行它时可能会遇到的相同安全异常。  
   
  为了捕获这些异常，你需要使用与最终用户相同的权限来调试应用程序。 可以在 **“项目设计器”** 的 **“安全”** 页上启用使用受限权限进行调试。  

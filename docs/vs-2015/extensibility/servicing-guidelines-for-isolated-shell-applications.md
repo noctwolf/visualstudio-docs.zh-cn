@@ -1,7 +1,7 @@
 ---
 title: 服务的准则独立 Shell 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dff7d9349e5081fa0e8ab64bfd32c90b83f19de3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70d59500c49c6e6939d85a35d9c1ff9393f5708e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480195"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208385"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>独立的 Shell 应用程序的服务指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[维护独立 Shell 应用程序的准则](https://docs.microsoft.com/visualstudio/extensibility/servicing-guidelines-for-isolated-shell-applications)。  
-  
 当您发布了 Visual Studio 独立 shell 应用程序时，您必须能够为应用程序提供的软件更新安装之后。 若要执行此操作，必须通过使用 Microsoft Installer (MSI) 文件安装应用程序。 此类安装允许由 Microsoft 进行重新分配通过 Web 提供的软件更新下载并使用你的客户无需自定义交互的。  
   
 ## <a name="servicing-requirements"></a>服务要求  

@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中为应用商店应用创建并运行单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 76a73232cf4c522baf261d50910d188234e8a4c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476634"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249497"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中为应用商店应用创建并运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建和运行的单元测试在 Visual Studio 中为应用商店应用](https://docs.microsoft.com/visualstudio/test/create-and-run-unit-tests-for-a-store-app-in-visual-studio)。  
-  
 Visual Studio 2012 Express for Windows 8 单元测试工具旨在为那些将单元测试集成在其软件开发实践中的开发人员和团队提供支持。 单元测试为开发人员和测试人员提供了一种有效并且可维护的方式，来查找 Visual C#、Visual Basic 和 Visual C++ 项目中类方法的逻辑错误。  
   
 > [!NOTE]

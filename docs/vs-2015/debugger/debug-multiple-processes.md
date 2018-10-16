@@ -1,7 +1,7 @@
 ---
 title: 调试多个进程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f573a677d1c74613bb66219a0ac75aa5bf267f12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c3bbd49aeab7df414d558a8841a55d982d8d2595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289869"
 ---
 # <a name="debug-multiple-processes"></a>调试多个进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试多个进程](https://docs.microsoft.com/visualstudio/debugger/debug-multiple-processes)。  
-  
 以下说明了如何启动调试进程、在进程之间切换、中断和继续执行、逐步执行源、停止调试以及终止进程或与进程分离。  
   
 ##  <a name="BKMK_Contents"></a> 内容  

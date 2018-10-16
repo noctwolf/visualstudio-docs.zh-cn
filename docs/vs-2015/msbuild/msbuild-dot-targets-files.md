@@ -1,7 +1,7 @@
 ---
 title: MSBuild .Targets 文件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93207bb46b8294fe0b4fb3d93416e2fdabe61273
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bec05a2947bad76b0be4e7cf339bbef98a27644e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484208"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274230"
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild。目标文件](https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 包括多个 .targets 文件，文件内容包含常见方案的项、属性、目标和任务。 这些文件将自动导入到大多数 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目文件中，以便简化维护，增强可读性。  
   

@@ -1,7 +1,7 @@
 ---
 title: 异常后继续执行 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a71d71622809dfaeea399355e490fe4e69b52b9f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f9e99a29c097bdf5e23bdb8f4955cd1ccc7ec19e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230121"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[继续执行后异常](https://docs.microsoft.com/visualstudio/debugger/continuing-execution-after-an-exception)。  
-  
 当调试器因出现异常而中断执行时，会显示一个对话框。 对于 Visual Basic 或 C# 中，您将看到[异常助手](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)对话框中的，默认情况下。 对于 c + +，您将看到较早**异常**对话框。 如果您使用的 Visual Basic 或 C#，但已禁用**异常助手**中**选项**对话框中，您将看到**异常**对话框。  
   
  当**异常助手**或**异常**对话框随即出现，你可以尝试修复导致异常的问题。  

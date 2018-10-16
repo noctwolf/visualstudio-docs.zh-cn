@@ -1,7 +1,7 @@
 ---
 title: 管理多个线程在托管代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7be5763081da023742f53c3b2d22e0d0f4aad167
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c1438c7425ba3d3fe1071fb2d06d7bc3345d900
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186716"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>在托管代码中管理多个线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在托管代码中管理多个线程](https://docs.microsoft.com/visualstudio/extensibility/managing-multiple-threads-in-managed-code)。  
-  
 如果你有托管的 VSPackage 扩展的调用异步方法或已在 Visual Studio UI 线程以外的线程执行的操作，应遵循下面给出的准则。 因为它不需要等待上另一个线程完成的工作，可以使 UI 线程保持响应状态。 您可以使代码更加有效，因为您不需要额外的线程占用的堆栈空间，并且您可以使其更可靠、 更易于调试，因为避免死锁和挂起。  
   
  一般情况下，可以从 UI 线程切换到不同的线程，反之亦然。 方法返回时，当前线程是从其它最初调用的线程。  

@@ -1,7 +1,7 @@
 ---
 title: 所需的代理身份验证 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 855fa85a8135ceac60f262fc5510fad4aa34b006
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2650dadddefe3be18a4406eb4fd07c5599622212
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477719"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259202"
 ---
 # <a name="proxy-authorization-required"></a>所需的代理身份验证
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[要求代理授权](https://docs.microsoft.com/visualstudio/ide/reference/proxy-authorization-required)。  
-  
   
 当用户通过代理服务器连接到 Visual Studio Online，而代理服务器对调用进行阻止时通常会发生此错误。 Visual Studio Online 用于使用户保持登录到 IDE 的状态。  
   

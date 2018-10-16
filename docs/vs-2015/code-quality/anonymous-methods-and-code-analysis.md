@@ -1,7 +1,7 @@
 ---
 title: 匿名方法和代码分析 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a65c80f3198fe4218c2f2a6c3543f2e1e299f22
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 73ff8dfca29f1ed9896462725886baa87e729100
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280158"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[匿名方法和代码分析](https://docs.microsoft.com/visualstudio/code-quality/anonymous-methods-and-code-analysis)。  
-  
 *匿名方法*是没有名称的方法。 匿名方法最常用于将代码块作为委托参数传递。  
   
  本主题说明代码分析警告和与匿名方法相关联的度量值的处理。  

@@ -1,7 +1,7 @@
 ---
 title: 将数据从对象保存到数据库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,20 +21,18 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b122285b653b75691a78367d12344c4720792f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207449"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将数据从对象保存到数据库](https://docs.microsoft.com/visualstudio/data-tools/save-data-from-an-object-to-a-database)。  
   
-  
-可以在将值从您的对象传递到 TableAdapter 的 DBDirect 方法之一将数据保存到数据库的对象中 (例如， `TableAdapter.Insert`)。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/tableadapter-overview.md)。  
+可以在将值从您的对象传递到 TableAdapter 的 DBDirect 方法之一将数据保存到数据库的对象中 (例如， `TableAdapter.Insert`)。 有关详细信息，请参阅 [TableAdapter Overview](../data-tools/tableadapter-overview.md)。  
   
  若要保存数据的对象的集合，请循环访问对象 （例如下, 一步的循环） 的集合，并使用 TableAdapter 的 DBDirect 方法之一将每个对象的值发送到数据库。  
   

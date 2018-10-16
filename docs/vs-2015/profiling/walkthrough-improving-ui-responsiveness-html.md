@@ -1,7 +1,7 @@
 ---
 title: 演练： 改进 UI 响应能力 (HTML) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9409a8af25d2283e3b808c7e779aa86361d2e454
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477169"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258305"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>演练： 改进 UI 响应能力 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 改进 UI 响应能力 (HTML)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-improving-ui-responsiveness-html)。  
-  
 本演练引导你使用 [HTML UI 响应能力探查器](../profiling/html-ui-responsiveness.md)确定并修复性能问题。 探查器可用于 Visual Studio 中的使用 JavaScript 的 Windows Universal 和 Windows 应用商店应用。 在此方案中，你将创建一个过于频繁地更新 DOM 元素的性能测试应用，并使用探查器确定并修复此问题。  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>创建并运行性能测试应用  

@@ -1,7 +1,7 @@
 ---
 title: Help Content Manager 重写 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fae83a05b3f6f8774e7ed119483274f22c4ddc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 35c3d8a13ace801a06e7d1c658c9923e1432ef59
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478145"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190250"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Help Content Manager 替代](https://docs.microsoft.com/visualstudio/ide/help-content-manager-overrides)。  
-  
 可以修改注册表以更改 Visual Studio IDE 中的帮助查看器和帮助相关功能的默认行为。  
   
 |任务|注册表项|值和定义|  

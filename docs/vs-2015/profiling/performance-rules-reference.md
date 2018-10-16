@@ -1,7 +1,7 @@
 ---
 title: 性能规则参考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a8f96819c5d6f8e2be1c7f92e53ebbb29d075886
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9276f567f0edf91111853e417f1f8dff1eb2a4df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481952"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227092"
 ---
 # <a name="performance-rules-reference"></a>性能规则参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能规则参考](https://docs.microsoft.com/visualstudio/profiling/performance-rules-reference)。  
-  
 分析工具的性能规则提供有关应用程序性能的其他警告和信息。 性能规则分析在分析运行中从源（如 Windows 和处理器性能计数器）收集的数据。 规则消息会出现在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 集成开发环境的“错误输出”窗口中。 这些消息使用以下规则级别之一列出：  
   
 |||  

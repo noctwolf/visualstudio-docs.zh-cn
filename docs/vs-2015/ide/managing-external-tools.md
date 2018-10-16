@@ -1,7 +1,7 @@
 ---
 title: 管理外部工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -62,18 +62,16 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55fdcd6da677eb34c8aee45787880781d58260a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf8e00635ff76e9e4ccfc4cbedbafabe8b0718dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481859"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244475"
 ---
 # <a name="managing-external-tools"></a>管理外部工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理外部工具](https://docs.microsoft.com/visualstudio/ide/managing-external-tools)。  
-  
 您可以从 Visual Studio 内部调用外部工具。 “工具”菜单上提供了几个默认工具，但你可以添加自己的其他可执行文件。  
   
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Visual Studio“工具”菜单中提供的工具  

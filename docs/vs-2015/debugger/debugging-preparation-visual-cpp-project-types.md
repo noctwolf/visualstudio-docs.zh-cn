@@ -1,7 +1,7 @@
 ---
 title: 调试准备： Visual c + + 项目类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 592232277dd8eda337bf90e6df114c2a03e75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477768"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304936"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试准备： Visual c + + 项目类型](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)。  
-  
 本节描述如何调试用 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目模板创建的基本项目类型。  
   
  请注意，创建 Dll 作为其输出的这些项目类型已被分组到[调试 DLL 项目](../debugger/debugging-dll-projects.md)由于它们共享的常见功能。  

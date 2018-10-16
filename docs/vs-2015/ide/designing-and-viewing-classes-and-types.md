@@ -1,7 +1,7 @@
 ---
 title: 设计和查看类与类型 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2a882f5da56884c86d042d2c562796ae6111dc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559702f41f2694a6042e26b2760251e775c9cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479509"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191608"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>设计和查看类与类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设计和查看类和类型](https://docs.microsoft.com/visualstudio/ide/designing-and-viewing-classes-and-types)。  
-  
 使用 Visual Studio 中的类设计器设计、直观显示和重构代码中的类和其他类型。 在 Visual C#.NET、Visual Basic.NET 或 C++ 项目中使用类图创建和编辑类，更好地了解项目结构或重新组织代码。  
   
  以下是有关如何使用类图的详细信息：  

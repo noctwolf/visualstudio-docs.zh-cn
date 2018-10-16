@@ -1,7 +1,7 @@
 ---
 title: 项目子设计 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b4d9f77f4ea1a302efb38bb75ebecd2ee54c1f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243811"
 ---
 # <a name="project-subtypes-design"></a>项目子类型设计
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目子类型设计](https://docs.microsoft.com/visualstudio/extensibility/internals/project-subtypes-design)。  
-  
 项目子类型允许 Vspackage 扩展基于 Microsoft Build Engine (MSBuild) 项目。 使用聚合可以重复使用托管的核心项目系统中实现的大容量[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]但仍然自定义用于特定方案的行为。  
   
  以下主题详细说明的基本设计和实现项目子类型：  

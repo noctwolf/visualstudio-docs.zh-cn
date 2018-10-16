@@ -1,7 +1,7 @@
 ---
 title: 一个解决方案中的多个 Dsl |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 341f5f40ff5c7274de9bbaf977464b15a56315a8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ee5bb3213fd7033bb5e3c12f6f9bf8b20c69410f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229464"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>一个解决方案中的多个 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[一个解决方案中的多个 Dsl](https://docs.microsoft.com/visualstudio/modeling/multiple-dsls-in-one-solution)。  
-  
 可将多个 DSL 打包为单个解决方案的一部分，以便可同时安装它们。  
   
  可使用多种技术集成多个 DSL。 有关详细信息，请参阅[通过使用 Visual Studio Modelbus 集成模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)并[如何： 添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)并[自定义复制行为](../modeling/customizing-copy-behavior.md)。  

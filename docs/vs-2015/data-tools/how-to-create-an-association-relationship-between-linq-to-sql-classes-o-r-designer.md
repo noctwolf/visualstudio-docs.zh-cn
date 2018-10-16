@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建 LINQ to SQL 类 （O-R 设计器） 之间的关联 （关系） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14b60094150467aeda7641d018e06db15e7bda03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c739fcf11cec7eb841b99e58b01ada32cfdfd49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469455"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209360"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>如何： 创建 LINQ to SQL 类 （O/R 设计器） 之间的关联 （关系）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建 LINQ to SQL 类 （O-R 设计器） 之间的关联 （关系）](https://docs.microsoft.com/visualstudio/data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer)。  
-  
   
 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 中实体类之间的关联类似于数据库中表之间的关系。 可以创建使用实体类之间的关联**关联编辑器**对话框。  
   

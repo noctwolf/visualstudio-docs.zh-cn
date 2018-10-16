@@ -1,7 +1,7 @@
 ---
 title: Blend 中的键盘快捷方式和修改键 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba02644e3be4aeb5b9d6d1dced8e990065552eee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 40970dbbffcb6f20fe605ac07a10ae359e300578
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283889"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Blend 中的键盘快捷方式和修改键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[键盘快捷方式和 Blend 中的修改键](https://docs.microsoft.com/visualstudio/designers/keyboard-shortcuts-and-modifier-keys-in-blend)。  
-  
 通过使用键盘快捷方式，你需要多次单击鼠标按钮完成的操作只需按一次键盘快捷方式即可完成，从而可加快你的工作速度。 [!INCLUDE[blend_first](../includes/blend-first-md.md)] 中的键盘快捷方式分为以下两种类别：  
   
 -   访问键 可以使用访问键，即通过按键盘上的特定键来访问菜单命令或对话框中的某个区域。 访问键由当前选定命令或对话框中显示的下划线标识。  

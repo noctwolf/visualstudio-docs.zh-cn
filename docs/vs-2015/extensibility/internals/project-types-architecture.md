@@ -1,7 +1,7 @@
 ---
 title: 项目类型体系结构 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 714212e75375409564106930e4ff89482095799a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 994ccaff3bebfddb20c7de4dba550d1154699485
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477308"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277844"
 ---
 # <a name="project-types-architecture"></a>项目类型体系结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目类型体系结构](https://docs.microsoft.com/visualstudio/extensibility/internals/project-types-architecture)。  
-  
 本部分包含有关体系结构中的项目类型的详细的信息[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  

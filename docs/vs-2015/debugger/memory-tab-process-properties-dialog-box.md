@@ -1,7 +1,7 @@
 ---
 title: 内存选项卡上，进程属性对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45d7933b70555a3c80a094ea8cd3f982e232f5de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 724e760c585f0e6423164e1a6bb28aefbf696c2f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245788"
 ---
 # <a name="memory-tab-process-properties-dialog-box"></a>“进程属性”对话框 ->“内存”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[内存选项卡上，进程属性对话框](https://docs.microsoft.com/visualstudio/debugger/memory-tab-process-properties-dialog-box)。  
-  
 使用**内存**选项卡以显示进程使用内存的方式。 若要显示[进程属性对话框](../debugger/process-properties-dialog-box.md)，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。  
   
  以下设置位于**内存**选项卡：  

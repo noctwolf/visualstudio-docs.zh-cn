@@ -1,7 +1,7 @@
 ---
 title: 使用旧版 API 访问文本层 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 2258fcdd-38d1-479d-b8f8-1d4e6525f72c
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bfc9cd494f308244791b82f3f001e2bd54f71204
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4f60a5b385ee24f2855e67e92f8a563d2603be0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183526"
 ---
 # <a name="accessing-text-layers-by-using-the-legacy-api"></a>使用旧版 API 访问文本层
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用旧版 API 访问文本层](https://docs.microsoft.com/visualstudio/extensibility/accessing-text-layers-by-using-the-legacy-api)。  
-  
 文本层通常封装文本布局的某些方面。 例如，"函数--一次"层隐藏文本之前和之后包含脱字号 （文本插入点） 的函数。  
   
  文本层驻留缓冲区和视图之间，并且它会修改该视图可以看到缓冲区的内容的方式。  

@@ -1,7 +1,7 @@
 ---
 title: IDebugEngineCreateEvent2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 37c0a841-1c8d-4802-a990-36b54bca3ef7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aa2a45b26b46f04a9412c865dde4856787f2a8e3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69b8cf3a2bdb4dbdeb964bd53bb39b386cdd1d0a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185193"
 ---
 # <a name="idebugenginecreateevent2"></a>IDebugEngineCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugEngineCreateEvent2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugenginecreateevent2)。  
-  
 创建的默认实例时，调试引擎 (DE) 会将此接口发送到会话调试管理器 (SDM)。  
   
 ## <a name="syntax"></a>语法  

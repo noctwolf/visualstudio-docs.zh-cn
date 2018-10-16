@@ -1,7 +1,7 @@
 ---
 title: 向 UML 模型元素添加构造型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b570889c117f2fac037ddf40efe32abbd0b309c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 48bc410c2f9f6a3dfb0e18b713a9b50dda499ea8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481493"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259709"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>向 UML 模型元素添加构造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加构造型添加到 UML 模型元素](https://docs.microsoft.com/visualstudio/modeling/add-stereotypes-to-uml-model-elements)。  
-  
 可以向 UML 模型元素添加构造型，以对其进行批注并为其提供专用属性。 要向模型元素添加构造型，必须在配置文件中定义构造型，并将该配置文件链接到包或包含模型元素的模型。 每个构造型只能添加到特定类型的模型元素，如 UML 类、用例或组件。  
   
  例如，如果要使用 «规范» 构造型定义 UML 类，必须在链接到标准配置文件 L2 的包或模型中创建该类。  

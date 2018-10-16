@@ -1,7 +1,7 @@
 ---
 title: 自定义模型使用配置文件和构造型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dd494b475b5d9068597857a2f4df12e5fed8e2f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7a64fa754d2693f6ea469eb2ec211935c896ebb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476804"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254938"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>使用配置文件和构造型自定义模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义模型使用配置文件和构造型](https://docs.microsoft.com/visualstudio/modeling/customize-your-model-with-profiles-and-stereotypes)。  
-  
 在 Visual Studio 中，可以改写标准 UML 模型元素（如类和组件），以便为特定目的而对它们进行自定义。 您可以将应用*构造型*到模型元素，可以更改的属性的元素的列表。 名为集合中定义构造型*配置文件*。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

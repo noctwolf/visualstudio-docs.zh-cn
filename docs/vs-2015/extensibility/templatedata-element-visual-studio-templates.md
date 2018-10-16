@@ -1,7 +1,7 @@
 ---
 title: TemplateData 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 03825105f549030c05ac202f1e3601977adec7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 52ca9ada28f40beb26ce88c6dfcd42a170ea5010
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172349"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[TemplateData 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/templatedata-element-visual-studio-templates)。  
-  
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。  
   
  \<VSTemplate >  
@@ -56,7 +54,7 @@ ms.locfileid: "47471127"
   
 |元素|描述|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定的模板的名称中出现**新的项目**或**添加新项**对话框。|  
+|[名称](../extensibility/name-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定的模板的名称中出现**新的项目**或**添加新项**对话框。|  
 |[说明](../extensibility/description-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的说明中所示**新的项目**或**添加新项**对话框。|  
 |[图标](../extensibility/icon-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定的路径和用作中显示该图标的图像文件的文件名**新的项目**或**添加新项**对话框中的，为模板。|  
 |[项目类型](../extensibility/projecttype-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将分类的项目模板，使其显示在指定的组**新的项目**对话框。|  

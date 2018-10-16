@@ -1,7 +1,7 @@
 ---
 title: Microsoft Help Viewer 安装 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb5344c5c11777d45cd9ff253682e481982026be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0a1934035c9a52e4b5f32061866da64319248806
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479373"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213533"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Microsoft Help Viewer 安装](https://docs.microsoft.com/visualstudio/ide/microsoft-help-viewer-installation)。  
-  
 有好几种产品都可以显示 Microsoft Help Viewer 中的“帮助”。 安装说明因安装 Help Viewer 的产品类型而异。  
   
 ## <a name="locating-setup-information"></a>查找安装信息  

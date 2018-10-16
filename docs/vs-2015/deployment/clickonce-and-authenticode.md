@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 和 Authenticode |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,26 +24,24 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: cf05c73ee621d9eda1619627b2d0b65611e447fd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482518"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289479"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 和 Authenticode](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-authenticode)。  
-  
-验证码 * 是发行者的使用行业标准加密应用程序代码验证应用程序的真实性的数字证书进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。  
+验证码 * 是发行者的使用行业标准加密应用程序代码验证应用程序的真实性的数字证书进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。  
   
  以下各节描述了验证码中使用的不同类型的数字证书，如何使用证书颁发机构 (CA) 验证证书，时间戳在证书中的角色，以及可用于证书的存储方法。  
   
 ## <a name="authenticode-and-code-signing"></a>验证码和代码签名  
  *数字证书* 是一个包含一个加密公钥/私钥对和元数据的文件，元数据描述了向其颁发证书的发行者以及颁发证书的机构。  
   
- 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果您尝试登录[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序与另一种类型的证书，如数字电子邮件证书，它不起作用。 有关详细信息，请参阅 [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)（代码签名简介）。  
+ 有各种类型的验证码证书。 每种验证码证书为不同类型的签名而配置。 对于 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序，必须具有对代码签名有效的验证码证书。 如果尝试使用其他类型证书（如数字电子邮件证书）对 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序进行签名，将不起作用。 有关详细信息，请参阅 [Introduction to Code Signing](http://go.microsoft.com/fwlink/?LinkId=179452)（代码签名简介）。  
   
  可以通过以下三种方法之一获取代码签名证书：  
   
@@ -76,7 +74,7 @@ ms.locfileid: "47482518"
   
 ### <a name="storing-certificates"></a>存储证书  
   
--   可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署的 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)]Mage.exe 和 MageUI.exe 允许你使用上述任一方式存储的证书。  
+-   可以在文件系统上将证书存储为.pfx 文件，或将其存储在密钥容器中。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下，MakeCert.exe 会将证书存储在个人密钥容器中，除非指定将其保存为 .pfx。 用于创建 [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] 部署的 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] Mage.exe 和 MageUI.exe 允许你使用上述任一方式存储的证书。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

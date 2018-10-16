@@ -1,7 +1,7 @@
 ---
 title: 在调试时检查 XAML 属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb10290e14290f59950e6b291d479de2099ac7f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 282b93ac9f04f5e547567e8380e65826f433ba2d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49282251"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试时检查 XAML 属性](https://docs.microsoft.com/visualstudio/debugger/inspect-xaml-properties-while-debugging)。  
-  
 可以获取与你正在运行的 XAML 代码的实时视图**实时可视化树**并**实时属性资源管理器**。 这些工具为你提供了正在运行的 XAML 应用程序的 UI 元素的树视图，并显示你选择的任何 UI 元素的运行时属性。  
   
  可以在下列配置中使用这些工具：  

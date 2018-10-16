@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定通过 ClickOnce 发布的文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c56d378c8adee1801fb82fc4a2ed84e5b05c0aef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2a8d408aa7d7ae04d5ed83c2687ca34ce79e404e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268315"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>如何：指定通过 ClickOnce 发布的文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定该文件通过 ClickOnce 发布](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-which-files-are-published-by-clickonce)。  
-  
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]随应用程序部署项目中的应用程序，所有非代码文件。 在某些情况下，可能不希望或需要发布某些文件，或者可能想要安装某些基于条件的文件。 Visual Studio 提供的功能，若要排除的文件，将文件标记为数据文件或系统必备组件，并创建用于条件性安装的文件组。  
   
  文件，以[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]在中管理应用程序**应用程序文件**对话框中，可通过访问**发布**页**项目设计器**。  

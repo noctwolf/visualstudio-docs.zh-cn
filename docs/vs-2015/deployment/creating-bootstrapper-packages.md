@@ -1,7 +1,7 @@
 ---
 title: 创建引导程序包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ee6badf48d0d196001c948495f9b658114c66ff6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478680"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208894"
 ---
 # <a name="creating-bootstrapper-packages"></a>创建引导程序包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建引导程序包](https://docs.microsoft.com/visualstudio/deployment/creating-bootstrapper-packages)。  
-  
 安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  
   
  引导程序首先检测是否已安装所有系统必备组件。 如果未安装系统必备组件，引导程序将首先显示相关许可协议。 接着，在最终用户接受许可协议后，将开始安装相应的系统必备组件。 否则，如果检测到所有的系统必备组件，引导程序将直接启动应用程序的安装程序。  
@@ -112,7 +110,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 |ApplicationName|应用程序的名称。|  
 |ProcessorArchitecture|可执行文件的目标平台的处理器和每字位数。 包括以下值：<br /><br /> -Intel<br />-IA64<br />-AMD64|  
 |[Version9x](https://msdn.microsoft.com/library/aa372490\(v=vs.140\).aspx)|Microsoft Windows 95、Windows 98 或 Windows ME 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
-|[自](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
+|[VersionNT](https://msdn.microsoft.com/library/aa372495\(v=vs.140\).xaspx)|Windows NT、Windows 2000、Windows XP、Windows Vista、Windows Server 2008 或 Windows 7 操作系统的版本号。 版本的语法是 Major.Minor.ServicePack。|  
 |[VersionMSI](https://msdn.microsoft.com/library/aa372493\(v=vs.140\).aspx)|安装期间运行的 Windows Installer 程序集 (msi.dll) 的版本。|  
 |[AdminUser](https://msdn.microsoft.com/library/aa367545\(v=vs.140\).aspx)|如果用户具有管理员特权，则设置此属性。 值为 true 或 false。|  
 |InstallMode|安装模式指示需要安装组件的位置。 包括以下值：<br /><br /> 从供应商的网站安装-HomeSite-先决条件。<br />从你选择的位置安装-SpecificSite-先决条件。<br />从与应用程序相同的位置安装-SameSite-先决条件。|  
@@ -133,7 +131,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
 ## <a name="see-also"></a>请参阅  
  [如何：与 ClickOnce 应用程序一起安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [系统必备组件对话框](../ide/reference/prerequisites-dialog-box.md)   
+ [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)   
  [产品和包架构引用](../deployment/product-and-package-schema-reference.md)   
  [使用 Visual Studio 2005 引导程序来开始安装](http://go.microsoft.com/fwlink/?LinkId=107537)
 

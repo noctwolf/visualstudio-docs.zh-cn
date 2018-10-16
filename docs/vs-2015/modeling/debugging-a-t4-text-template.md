@@ -1,7 +1,7 @@
 ---
 title: 调试 T4 文本模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d04fe451a752c5132a376fd63091aeb6b1ee1f49
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298904"
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试 T4 文本模板](https://docs.microsoft.com/visualstudio/modeling/debugging-a-t4-text-template)。  
-  
 您可以在文本模板中设置断点。 若要调试的设计时文本模板，将文本模板文件，保存，然后选择**调试 T4 模板**在解决方案资源管理器中的文件的快捷菜单上。 若要调试的运行时文本模板，只需调试它所属的应用程序。  
   
  若要调试文本模板，您应该了解模板转换过程的步骤。 不同类型的错误可以在每个步骤中出现。 步骤如下所示。  

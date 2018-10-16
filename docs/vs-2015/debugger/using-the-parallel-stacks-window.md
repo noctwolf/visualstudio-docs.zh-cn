@@ -1,7 +1,7 @@
 ---
 title: 使用并行堆栈窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01dd627143c072fea6dec99ea47ee4d6919dd62e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471157"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182164"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用“并行堆栈”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用并行堆栈窗口](https://docs.microsoft.com/visualstudio/debugger/using-the-parallel-stacks-window)。  
-  
 **并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**所示的调用堆栈[任务组](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077)，[并行算法](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473)，[异步代理](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)，和[轻量级任务](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90)。  
   
 ## <a name="threads-view"></a>线程视图  

@@ -1,7 +1,7 @@
 ---
 title: 上下文参数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c890a1ffa91d4e6017411e99b4845304a2399279
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 663583129453fc8bd9b71c2be2337a5528f9f7d9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238077"
 ---
 # <a name="context-parameters"></a>上下文参数
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[上下文参数](https://docs.microsoft.com/visualstudio/extensibility/internals/context-parameters)。  
-  
 在中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 中，您可以添加到向导**新建项目**，**添加新项**，或**添加子项目**对话框。 添加了的向导位于**文件**菜单或通过右键单击项目中的**解决方案资源管理器**。 IDE 将上下文参数传递给该向导的实现。 IDE 调用向导时，上下文参数定义项目的状态。  
   
  在 IDE 启动向导，通过设置<xref:Microsoft.VisualStudio.Shell.Interop.VSADDITEMOPERATION>对 IDE 的调用中的标志<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.AddItem%2A>项目的方法。 设置时，项目必须导致`IVsExtensibility::RunWizardFile`方法要执行的使用已注册的向导名称或 GUID 和其他 IDE 将传递给它的上下文参数。  

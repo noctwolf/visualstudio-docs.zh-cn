@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建程序包清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 6abbbb351d04251b4ef1c209f35652a91b11d8c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2941000e9fa2c6f1d9fd4835c9fd0b8fa1fd1b4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182424"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建程序包清单](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-package-manifest)。  
-  
 若要部署应用程序的先决条件，你可以使用引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 在不同的本地化版本之间共享的功能应进入产品清单。  
   
  有关包清单的详细信息，请参阅[如何： 创建产品清单](../deployment/how-to-create-a-product-manifest.md)。  

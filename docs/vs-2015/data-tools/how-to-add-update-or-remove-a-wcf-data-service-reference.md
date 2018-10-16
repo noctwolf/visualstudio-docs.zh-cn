@@ -1,7 +1,7 @@
 ---
 title: 如何： 添加、 更新或删除 WCF 数据服务引用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8af59a4a33c0ac86c6e15e43d655cbf4f79b3406
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b14a83b195809dff89fa89bb6fcf91050e2f8a0c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192252"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或移除 WCF 数据服务引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 添加、 更新或删除 WCF 数据服务引用](https://docs.microsoft.com/visualstudio/data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference)。  
-  
   
 一个*服务参考*使得访问一个或多个项目[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]。 使用**添加服务引用**对话框可以搜索[!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]在当前解决方案中，本地、 在本地网络，或在 Internet 上。  
   

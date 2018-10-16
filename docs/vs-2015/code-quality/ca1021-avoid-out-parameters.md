@@ -1,7 +1,7 @@
 ---
 title: CA1021： 避免使用 out 参数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bbcf7ceb27a802904351c7c8d0372f9d87708199
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: d29d80ea45735925a500b1c0b552697644a88d52
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258747"
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 参数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1021： 避免使用 out 参数](https://docs.microsoft.com/visualstudio/code-quality/ca1021-avoid-out-parameters)。
-
 |||
 |-|-|
 |TypeName|AvoidOutParameters|

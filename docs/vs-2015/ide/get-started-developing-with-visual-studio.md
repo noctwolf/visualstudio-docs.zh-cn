@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 开发入门 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: deeb0b377c863bdfb742e4d483e8b5e5f160dd1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2575e3e9ffa5f1b67709bc1fd342dbcf95417aad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479592"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261503"
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 Visual Studio 开发入门](https://docs.microsoft.com/visualstudio/ide/get-started-developing-with-visual-studio)。  
-  
 欢迎使用 Visual Studio！ [已下载](http://www.visualstudio.com/community) 该产品后，这些页面将有助于开始编码。  
   
 -   **[制作 Web 应用程序](https://www.visualstudio.com/features/modern-web-tooling-vs)：** 创建和部署现代 Web 应用程序的工具。  
@@ -40,7 +38,7 @@ ms.locfileid: "47479592"
   
 -   **[在 C# 或 Visual Basic (Xamarin) 中创建跨平台的移动应用程序](../cross-platform/visual-studio-and-xamarin.md)**：开始使用 Visual Studio 和适用于 Xamarin 的工具从共享代码库创建在 Android、iOS 和通用 Windows 平台上运行的移动应用程序。  
   
-     加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (本机 UI) 或[Xamarin Forms Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI） &#124;[制作教程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;[浏览docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;[观看视频                                                                  ](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
+     加载示例：[Tasky Portable](http://developer.xamarin.com/samples/mobile/TaskyPortable/) (本机 UI) 或[Xamarin Forms Todo 示例](https://github.com/xamarin/xamarin-forms-samples/tree/master/Todo)（Xamarin.Forms 共享 UI） &#124;[制作教程](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) &#124;[浏览docs](https://msdn.microsoft.com/library/mt299001.aspx) &#124;[观看视频](https://channel9.msdn.com/Series/Cross-Platform-Development-with-Xamarin--Visual-Studio/01)  
   
 -   **[在 C++ 中创建本机跨平台应用程序和库](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)** 转到此处以开始创建在 Android、iOS 和通用 Windows 平台上运行的 C++ 应用程序和库。  
   

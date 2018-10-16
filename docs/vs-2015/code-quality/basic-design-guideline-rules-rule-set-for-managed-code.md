@@ -1,7 +1,7 @@
 ---
 title: 基本设计准则规则规则设置对于托管代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aad4bb755889ca4d2aa9766836f156495d281bca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed0728eb0daa5c1ff0f322db42f66373181f3e23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184712"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[托管代码的基本设计准则规则规则集](https://docs.microsoft.com/visualstudio/code-quality/basic-design-guideline-rules-rule-set-for-managed-code)。  
-  
 可以使用 Microsoft 基本设计准则规则规则集以专注于使代码更易于理解和使用。 您应包含此规则设置，如果你的项目包括库代码，或者如果你想要强制执行的代码易于维护的最佳实践。  
   
  基本设计准则规则 Microsoft 最小值进行规则规则集中包含的所有规则。 最小的规则的列表，请参阅[托管代码的托管建议规则规则集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 几何形状的属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 70424ef2b3ce091b1c1290db2c4962481c9f68ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a531dadba426bc04a788d7c75516afd581d1722f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178888"
 ---
 # <a name="properties-of-geometry-shapes"></a>几何形状的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[几何形状属性](https://docs.microsoft.com/visualstudio/modeling/properties-of-geometry-shapes)。  
-  
 几何形状可用于指定域类的实例中的域特定语言的显示方式。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
  几何形状具有下表中列出的属性。  

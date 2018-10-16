@@ -1,7 +1,7 @@
 ---
 title: 核心编辑器内 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a2d9ec83c700f9166dc6b73860547bcacd265a15
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc91a228fd788074a543678b281288e043f9385c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476851"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227717"
 ---
 # <a name="inside-the-core-editor"></a>在核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[内核心编辑器](https://docs.microsoft.com/visualstudio/extensibility/inside-the-core-editor)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心编辑器是一组让你修改和查询文本信息的多个组件。 如果已使用传统的 API 自定义核心编辑器，可以继续使用这些自定义，这将通过编辑器适配器路由。 建议，但是，调整到新的编辑器 API 自定义设置。  
   
  以下几个方面是核心编辑器的一些重要方面：  

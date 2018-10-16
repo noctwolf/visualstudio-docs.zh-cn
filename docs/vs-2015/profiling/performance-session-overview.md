@@ -1,7 +1,7 @@
 ---
 title: 性能会话概述 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da90a5ae4e35f36306e8537ca2cd743e98ffd33f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479064"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242809"
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能会话概述](https://docs.microsoft.com/visualstudio/profiling/performance-session-overview)。  
-  
 本概述说明分析的基础知识。 刚接触性能工作的开发者会了解 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具如何帮助他们快速提高工作效率以及提高其代码的性能。 在分析方面经验丰富的开发者可以获得特定分析工具功能和过程的概述。  
   
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可帮助确定源代码中的性能问题并比较可能解决方案的性能。 分析工具向导和默认设置可使你立即深入了解许多性能问题。 分析工具的功能和选项可提供对探查过程的精确控制。 此控制包括精确确定代码段目标、收集数据块级别计时信息以及在数据中包含其他处理器和系统性能数据。  

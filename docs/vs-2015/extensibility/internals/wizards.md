@@ -1,7 +1,7 @@
 ---
 title: 向导 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1396837a0d9eee3b31a5e938a2305052d5cc2761
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2331c75b5e0d708d6a2d0fa1ab987cc869879cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482671"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224297"
 ---
 # <a name="wizards"></a>向导
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[向导](https://docs.microsoft.com/visualstudio/extensibility/internals/wizards)。  
-  
 创建向导后，你通常想要将其添加到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成开发环境 (IDE)，以便其他人可以使用它。 添加了的向导随后会出现**添加新项目**或**添加新项**对话框。 若要查看**添加新项目**或**添加新项**对话框框中，右键单击打开的解决方案中**解决方案资源管理器**，指向**添加**，和然后单击**新的项目**或**新项**。  
   
  向导可以在中实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]让用户在打开时的可用值在树视图中选择**添加新项目**对话框或**添加新项**对话框中，或当他们右键单击中的项**解决方案资源管理器**。  
@@ -61,5 +59,5 @@ ms.locfileid: "47482671"
  演示如何创建向导。  
   
  [扩展项目](../../extensibility/extending-projects.md)  
- 介绍如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
+ 介绍如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
 

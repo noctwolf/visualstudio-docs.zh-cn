@@ -1,7 +1,7 @@
 ---
 title: “模块”视图 - .NET 内存采样数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f1596d85e2668090533df9021c964d6767d36b38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3334edce4d29792e44f4cab0840a9f46763d74aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476600"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185376"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>“模块”视图 - .NET 内存采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模块视图-.NET 内存采样数据](https://docs.microsoft.com/visualstudio/profiling/modules-view-dotnet-memory-sampling-data)。  
-  
 使用采样方法收集的 .NET 内存分配数据的“模块”视图按分析运行期间执行的模块对内存数据进行分组。 每个模块都是一个层次结构树的根。 模块的各函数在模块节点下列出。  
   
  分配内存的语句的源文件行号在 函数节点下列出，执行分配的指令的地址在行节点下列出。 非独占和独占值始终对于行数据和指令数据始终是相同的。  

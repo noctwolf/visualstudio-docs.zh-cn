@@ -1,7 +1,7 @@
 ---
 title: 演练： 显示匹配的大括号 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 11021dc98acfd80f1e91443cc834eb4ae0126455
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0568060ec19fc24731850b20dc70dfa7a48231d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469217"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247827"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>演练：显示匹配括号
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 显示匹配大括号](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-matching-braces)。  
-  
 您可以实现基于语言的功能，如大括号匹配通过定义您希望匹配，大的括号和并将文本标记标记添加到匹配大括号，当脱字号上一个大括号。 可以在上下文中的一种语言，定义大括号，或者可以定义自己的文件名称扩展和内容类型并将标记应用于只是该类型，或将标记应用到现有内容类型 （例如"text")。 下面的演练演示如何将应用标记为"text"内容类型匹配的大括号。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -36,7 +34,7 @@ ms.locfileid: "47469217"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建编辑器分类器项目。 将解决方案命名`BraceMatchingTest`。  
+1.  创建编辑器分类器项目。 将解决方案命名为 `BraceMatchingTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   

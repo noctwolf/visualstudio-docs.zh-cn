@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 ->“环境”->“常规”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18ebb4744d7694480f5ff5a34d4f3812d5bb3c2d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478402"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206877"
 ---
 # <a name="general-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“常规”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[General，Environment，Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/general-environment-options-dialog-box)。  
-  
   
 使用此页更改集成开发环境 (IDE) 的颜色主题、状态栏设置和文件扩展名关联以及其他选项。 可以通过打开“工具”菜单，选择“选项”，打开“环境”文件夹然后选择“常规”页来访问“选项”对话框。 如果此页未出现在列表中，请在“选项”对话框中选中“显示所有设置”复选框。  
   

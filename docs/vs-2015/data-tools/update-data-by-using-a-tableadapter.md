@@ -1,7 +1,7 @@
 ---
 title: 使用 TableAdapter 更新数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2dfeced126cfa80d28ad1e3245486c63101e6e1f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19e694e617b15b42029ff641516c59fcecdfbd69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237271"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 TableAdapter 更新数据](https://docs.microsoft.com/visualstudio/data-tools/update-data-by-using-a-tableadapter)。  
-  
   
 在数据集中的数据已修改并验证后，可以将更新后的数据发送回 databaseby 调用`Update`方法[TableAdapter](../data-tools/tableadapter-overview.md)。 `Update`方法更新单个数据表，并运行基于的正确命令 （INSERT、 UPDATE 或 DELETE）<xref:System.Data.DataRow.RowState%2A>的表中每个数据行。 时数据集具有相关表，Visual Studio 生成一个 TableAdapterManager 类，用于执行更新操作。 TableAdapterManager 类可确保按正确的顺序基于数据库中定义的外键约束进行更新。 当您使用数据绑定控件时，数据绑定体系结构将创建调用 tableAdapterManager TableAdapterManager 类的一个成员变量。 有关详细信息，请参阅[分层更新概述](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)。  
   

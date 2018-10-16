@@ -1,7 +1,7 @@
 ---
 title: UML 组件图： 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 38
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f628ebfa84246c6d991543352f4de36a51cc7fbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b99188aa069a830d17e31733ad20b0ae727d63f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482648"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206734"
 ---
 # <a name="uml-component-diagrams-reference"></a>UML 组件图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 组件图： 参考](https://docs.microsoft.com/visualstudio/modeling/uml-component-diagrams-reference)。  
-  
 在 Visual Studio 中，*组件图*显示软件系统设计的组成部分。 组件图有助于可视化系统的高级结构以及这些结构通过接口提供和使用的服务行为。 若要创建 UML 组件图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

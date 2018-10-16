@@ -1,7 +1,7 @@
 ---
 title: 标记 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb1b5d35e11cd3317db473330d908e0f7300d576
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d1bd78f356ed8fc48db9b7712e46fe88e8d3a83
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484489"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297565"
 ---
 # <a name="mark"></a>标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Mark](https://docs.microsoft.com/visualstudio/profiling/mark)。  
-  
 VSPerfCmd.exe 的“标记”选项可以在分析数据文件中插入指定的信息。 标记可能列在单独的 VSPerfReport 报表中或探查器 UI 的“标记报表”视图中。 标记可用于指定报表和视图筛选器中的起止点。  
   
  “标记”选项是命令行上可指定的唯一选项。  

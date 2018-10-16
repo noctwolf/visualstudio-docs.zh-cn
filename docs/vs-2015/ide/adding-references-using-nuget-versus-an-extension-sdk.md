@@ -1,7 +1,7 @@
 ---
 title: 使用 NuGet 与扩展 SDK 添加引用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54197aa4f8074c206e05e41d2b70d81a76c38f1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484108"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235802"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 与扩展 SDK 添加引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加引用使用 NuGet 与扩展 SDK](https://docs.microsoft.com/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)。  
-  
 可以利用 Visual Studio 的 NuGet 扩展或软件开发工具包 (SDK) 提供 Visual Studio 项目中使用的包。 本主题通过介绍这两种机制的相似和不同之处，帮助你选择最适合你任务的机制。  
   
 -   NuGet 是开放源代码包管理系统，可以简化将库合并到项目解决方案的过程。 有关详细信息，请参阅 [NuGet 概述](http://go.microsoft.com/fwlink/?LinkId=254877)。  

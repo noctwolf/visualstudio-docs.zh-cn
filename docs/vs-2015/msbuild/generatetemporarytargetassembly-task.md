@@ -1,7 +1,7 @@
 ---
 title: GenerateTemporaryTargetAssembly 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 710a4f5305c96a447e7e9898f88570c58b7d05e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1dd1df7ce9d7672917296207e38a846ff69aba5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468933"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205154"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[GenerateTemporaryTargetAssembly 任务](https://docs.microsoft.com/visualstudio/msbuild/generatetemporarytargetassembly-task)。  
-  
   
 如果项目中至少有一个 [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] 页引用该项目中本地声明的类型，则 <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 任务会生成一个程序集。 在生成过程完成后或者在生成过程失败的情况下，生成的程序集会被删除。  
   

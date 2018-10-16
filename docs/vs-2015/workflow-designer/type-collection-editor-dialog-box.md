@@ -1,7 +1,7 @@
 ---
 title: 类型集合编辑器对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 34b8129b5a0b1fe27a7e4e6c178ddace638e5ffc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c33049c264041495041798ab98c4223ebe0ed6f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471630"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298558"
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 **类型集合编辑器**使用对话框添加到已知的类型**发送**并**接收**活动。 此对话框还用于添加到泛型类型参数**InvokeMethod**活动。 当用于**发送**并**接收**活动添加已知的类型**类型集合编辑器**对话框要求添加的类型是唯一的。 如果添加了重复的类型，并通过单击提交更改**确定**，返回一条错误消息。 当用于**InvokeMethod**活动添加泛型类型参数**类型集合编辑器**对话框允许添加重复的类型。  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] 已知类型，请参阅[Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)。  
+>  [!INCLUDE[crabout](../includes/crabout-md.md)] 已知类型的更多信息，请参见 [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337)将 CLR 类型映射到 XSD。  
   
  下表介绍的用户界面 (UI) 元素**类型的集合**对话框。  
   

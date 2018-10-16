@@ -1,7 +1,7 @@
 ---
 title: 如何： 禁止显示文件更改通知 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 312c34b143608cb6d829e2d79b6be2eae724a238
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ed4995cabc71af9c7e2227495e93a21d423d0187
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257512"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 禁止显示文件更改通知
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 禁止显示文件更改通知](https://docs.microsoft.com/visualstudio/extensibility/how-to-suppress-file-change-notifications)。  
-  
 表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。  
   
  以编程方式可以禁止显示此对话框，使用以下过程。 通过执行此操作，您可以重新加载文件立即而无需提示用户每次保存所做的更改。  

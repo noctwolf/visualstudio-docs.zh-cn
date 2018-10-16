@@ -1,7 +1,7 @@
 ---
 title: 管理项目和解决方案属性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bca50ff8128782bda1841120996f3f3dda6d4ad2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 43b46fc40da93352c4748662b66df91f0d25802b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470792"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290545"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理项目和解决方案属性](https://docs.microsoft.com/visualstudio/ide/managing-project-and-solution-properties)。  
-  
 项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击解决方案资源管理器中的项目节点并选择属性，或者将属性键入菜单栏中的“快速启动”搜索框，可访问项目属性。  
   
  ![项目上下文菜单](../ide/media/vs2015-proj-prop-menu.gif "vs2015_proj_prop_menu")  

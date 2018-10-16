@@ -1,7 +1,7 @@
 ---
 title: .NET Framework 目标错误疑难解答 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0599e6c5e117c6ba9c4f6c0de904284c487910f9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280548"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[.NET Framework 目标错误疑难解答](https://docs.microsoft.com/visualstudio/msbuild/troubleshooting-dotnet-framework-targeting-errors)。  
-  
   
 本主题介绍可能由引用问题导致的 MSBuild 错误以及解决这些错误的方法。  
   

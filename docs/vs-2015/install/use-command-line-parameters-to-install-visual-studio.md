@@ -1,7 +1,7 @@
 ---
 title: 使用命令行参数安装 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 7aa129021ef18cba3236624283872a2933c9ef80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6266626d2eb60b64f1923a0c3f54d39c9b20072a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268601"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio 2017 的最新文档，请参阅[使用命令行参数安装 Visua
 |**/qb**<br /><br /> **/passive**|显示进度，但不等待用户输入。|  
 |**/repair**|修复 Visual Studio。|  
 |**/ SuppressRefreshPrompt**|禁止在安装向导中显示更新可用对话框，因此安装向导将自动接受任意必需或推荐更新版本。|  
-|/u<br /><br /> **/ 卸载**|卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
+|**/u**<br /><br /> **/ 卸载**|卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。|  
 |**/Uninstall /Force**<br /><br /> **/u /force**|卸载 Visual Studio 以及与其他产品共享的所有功能。 **警告：** 使用此参数，如果同一台计算机安装其他产品可能会停止正常运行。|  
   
 ## <a name="see-also"></a>请参阅  

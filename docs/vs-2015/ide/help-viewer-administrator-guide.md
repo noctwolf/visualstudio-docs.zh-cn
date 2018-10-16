@@ -1,7 +1,7 @@
 ---
 title: Help Viewer 管理员指南 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97d28d0651be2fd04e283b05e5a9a0e81997c338
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468547"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256946"
 ---
 # <a name="help-viewer-administrator-guide"></a>帮助查看器管理员指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[帮助查看器管理员指南](https://docs.microsoft.com/visualstudio/ide/help-viewer-administrator-guide)。  
-  
 通过帮助查看器可以在具有或不具有 Internet 访问的情况下为网络环境管理本地帮助安装。 本地帮助内容按每台计算机进行配置。 默认情况下，用户必须具有管理员权限才能更新其本地帮助安装。  
   
  如果网络环境允许客户端访问 Internet，则帮助查看器允许使用命令行脚本从 Internet 部署本地帮助内容。  
@@ -136,7 +134,7 @@ ms.locfileid: "47468547"
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \< *foldername*> \ /y /e /k /o  
   
-     例如：`Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
+     例如： `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
 ### <a name="deploying-the-content"></a>部署内容  
   

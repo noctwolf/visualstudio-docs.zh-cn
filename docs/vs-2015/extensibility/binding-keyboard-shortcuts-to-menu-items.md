@@ -1,7 +1,7 @@
 ---
 title: 绑定到菜单项的键盘快捷方式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f661129a4706ce0ac501a5fbad9a7ce5a60e3127
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc5c937033087e3bea7b5326e90be64410fcfb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478636"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277467"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[绑定到菜单项的键盘快捷键](https://docs.microsoft.com/visualstudio/extensibility/binding-keyboard-shortcuts-to-menu-items)。  
-  
 若要绑定到自定义菜单命令的键盘快捷方式，只需向包.vsct 文件添加一个条目。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制到自定义编辑器。  
   
  若要将键盘快捷方式分配到现有的 Visual Studio 菜单项，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  

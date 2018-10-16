@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 中的跨平台移动开发 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 68ecf06ba6a2bdb40355ab645ea35774c8b73c09
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fae40230a75816653e8d06ab9ec7ed4f894d3fa0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470449"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194098"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的跨平台移动开发](https://docs.microsoft.com/visualstudio/cross-platform/cross-platform-mobile-development-in-visual-studio)。  
-  
   
 可使用 Visual Studio 生成适用于 Android、iOS 和 Windows 设备的应用。  设计应用时，可使用 Visual Studio 中的工具轻松添加连接的服务（如 Office 365、Azure App Service 和 Application Insights）。  
   

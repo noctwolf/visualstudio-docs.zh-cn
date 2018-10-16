@@ -1,7 +1,7 @@
 ---
 title: 定义用于扩展 UML 的配置文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b54babfc6bb4350ba1cc99d6ce34a05f70dab693
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588843"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221255"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定义用于扩展 UML 的配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定义用于扩展 UML 的配置文件](https://docs.microsoft.com/visualstudio/modeling/define-a-profile-to-extend-uml)。  
-  
 您可以定义*UML 配置文件*以针对特定目的自定义标准模型元素。 配置文件定义一个或多个*UML 构造型*。 构造型可用于标记类型以表示一种特定对象。 构造型还可以扩展元素的属性列表。  
   
  多个配置文件与受支持版本的 Visual Studio 一起安装。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。 有关这些配置文件以及如何应用构造型的详细信息，请参阅[自定义模型使用配置文件和构造型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 数据集中的关系 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08667684b50639c810ef8bb06832bcd609ddc15b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275699"
 ---
 # <a name="relationships-in-datasets"></a>数据集中的关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[中的数据集的关系](https://docs.microsoft.com/visualstudio/data-tools/relationships-in-datasets)。  
-  
   
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过将相关的表添加到数据集**数据源配置向导**，或**数据集设计器**下创建并配置<xref:System.Data.DataRelation>为您的对象。  
   
@@ -108,7 +106,7 @@ ms.locfileid: "47480974"
   
 8.  选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab)。  
   
-9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅<xref:System.Data.Rule>。  
+9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅 <xref:System.Data.Rule> 。  
   
 10. 单击**确定**来创建关系。 在两个表之间的设计器中显示的关系线。  
   

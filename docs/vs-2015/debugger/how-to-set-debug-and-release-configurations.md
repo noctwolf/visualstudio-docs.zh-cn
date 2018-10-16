@@ -1,7 +1,7 @@
 ---
 title: 如何： 设置调试和发布配置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -40,18 +40,16 @@ caps.latest.revision: 48
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 137c85f5433343327cf677ef76c1116bd6ef6821
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7e0dae046e02685e7ce1d6ce7f744b568e47c5eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469071"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49243121"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>如何：设置调试和发布配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 设置调试和发布配置](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations)。  
-  
 Visual Studio 项目具有针对你的程序的单独发布和调试配置。 顾名思义，生成调试版本的目的是用于调试，而生成发布版本的目的是用于最终发布分发。  
   
  程序的调试配置使用完整符号调试信息编译，且不进行优化。 优化会使调试复杂化，因为源代码和生成的指令之间的关系更加复杂。  

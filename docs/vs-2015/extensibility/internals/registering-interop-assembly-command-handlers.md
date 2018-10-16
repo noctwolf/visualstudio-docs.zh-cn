@@ -1,7 +1,7 @@
 ---
 title: 注册互操作程序集命令处理程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2288c1692f50e3937bbfa71502a0572a1747c976
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea0ea8a8374f63335e3e5b2a7c00bdb8c3084d11
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478603"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234959"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册互操作程序集命令处理程序](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-interop-assembly-command-handlers)。  
-  
 VSPackage 必须使用注册[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，以便在集成的开发环境 (IDE) 将正确路由命令。  
   
- 通过手动编辑或使用注册机构 (.rgs) 文件，可以更新注册表。 有关详细信息，请参阅[Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
+ 通过手动编辑或使用注册机构 (.rgs) 文件，可以更新注册表。 有关详细信息，请参阅 [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35)。  
   
  托管包框架 (MPF) 提供此功能通过<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>类。  
   

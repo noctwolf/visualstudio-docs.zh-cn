@@ -1,7 +1,7 @@
 ---
 title: 使用规则集对代码分析规则进行分组 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae7374ae6b713fe7fa1911cdcce3effa600482b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483473"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220579"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用规则集组合代码分析规则](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules)。  
-  
 当配置中的代码分析[!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]， [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]，或[!INCLUDE[vsPro](../includes/vspro-md.md)]，你可以从 Microsoft 内置列表中选择*规则集*。 规则集是确定目标的问题和特定条件的代码分析规则的逻辑分组。 例如，可以应用旨在扫描公开可用 Api 代码的规则集，也可以应用包含最少量建议规则的规则集。 您还可以应用一个规则集，包括所有规则。  
   
  你可以自定义规则集通过添加或删除规则，或更改规则中出现**错误列表**为警告或错误窗口。 自定义的规则集可满足特定的开发环境的需求。 自定义规则集时，规则的设置页提供了搜索和筛选工具来帮助您在过程中。  

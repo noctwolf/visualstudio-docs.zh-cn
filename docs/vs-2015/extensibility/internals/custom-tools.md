@@ -1,7 +1,7 @@
 ---
 title: 自定义工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72fb6f9f0ceb3b9f2ae04f39b2c37c416acf47b9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c0726457567221f5adb091d543cc17621179021
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278403"
 ---
 # <a name="custom-tools"></a>自定义工具
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义工具](https://docs.microsoft.com/visualstudio/extensibility/internals/custom-tools)。  
-  
 *自定义工具*可将工具与项目中的项相关联，并运行该工具，每次保存该文件。 某些自定义工具，有时称为*单个文件生成器*，通常用于实现转换器生成代码中的数据，反之亦然。 例如，单个文件生成器创建[!INCLUDE[csprcs](../../includes/csprcs-md.md)]和[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]带.settings 和.resx 文件的源代码。 生成的源代码提供强类型化访问.settings 和.resx 文件中的数据。 [!INCLUDE[csprcs](../../includes/csprcs-md.md)]和[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]项目类型支持自定义工具;[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]项目类型不这样做。 你自己的项目类型还可以支持自定义工具。  
   
  自定义工具是实现的已注册的组件`IVsSingleFileGenerator`接口。  
@@ -63,5 +61,5 @@ ms.locfileid: "47477060"
   
 ## <a name="related-sections"></a>相关章节  
  [扩展项目](../../extensibility/extending-projects.md)  
- 介绍如何使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
+ 介绍如何使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 项目和解决方案来组织代码文件和资源文件，以及如何实现源代码管理。
 

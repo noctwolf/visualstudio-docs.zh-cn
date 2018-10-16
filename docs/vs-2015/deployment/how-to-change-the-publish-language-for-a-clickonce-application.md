@@ -1,7 +1,7 @@
 ---
 title: 如何： 更改 ClickOnce 应用程序发布语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 90699b4e12c8384327a3840799506e393bed2e82
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2330f234b5b00fdde99376fbe5664bd5dbd99551
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239650"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：更改 ClickOnce 应用程序的发布语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 更改 ClickOnce 应用程序的发布语言](https://docs.microsoft.com/visualstudio/deployment/how-to-change-the-publish-language-for-a-clickonce-application)。  
-  
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序中，在安装到的语言和开发计算机的区域性的默认设置过程中显示的用户界面。 如果发布已本地化的应用程序，需要指定语言和区域性的本地化的版本匹配。 这由`Publish language`为你的项目的属性。  
   
  `Publish language`属性可以设置**发布选项**对话框中，可通过访问**发布**页**项目设计器**。  

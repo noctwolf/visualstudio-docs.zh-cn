@@ -1,7 +1,7 @@
 ---
 title: 迁移旧版语言服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5a9cd6edb18f33a87f81d36feea55a26c0ed1e78
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39f2cc0932e875a33621241d6cba0cb0b692ff6a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476790"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247295"
 ---
 # <a name="migrating-a-legacy-language-service"></a>迁移旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[迁移旧版语言服务](https://docs.microsoft.com/visualstudio/extensibility/internals/migrating-a-legacy-language-service)。  
-  
 您可以通过更新项目并将 source.extension.vsixmanifest 文件添加到项目迁移到更高版本的 Visual Studio 的旧版语言服务。 语言服务本身将继续像以前一样，因为 Visual Studio 编辑器可使其。  
   
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  

@@ -1,7 +1,7 @@
 ---
 title: “错误列表”窗口 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0f7bb3d50a68ca7e6908a89d1fd680377b77c9e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2e3e87a2786e2eb5ffafda2924920eaad7640039
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483585"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232279"
 ---
 # <a name="error-list-window"></a>“错误列表”窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[错误列表窗口](https://docs.microsoft.com/visualstudio/ide/reference/error-list-window)。  
-  
   
 请注意]
 >  错误列表中显示了特定错误消息的相关信息。 可以从“输出”窗口中复制错误号或错误字符串文本。 若要显示“输出”窗口，请按 Ctrl+Alt+O。 请参阅[输出窗口](../../ide/reference/output-window.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 定向图形标记语言 (DGML) 引用 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a8059d30a5fddf29e7e20f3cb0e87d6da35e72ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479534"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214664"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定向图形标记语言 (DGML) 引用](https://docs.microsoft.com/visualstudio/modeling/directed-graph-markup-language-dgml-reference)。  
-  
 定向图形标记语言 (DGML) 描述用于可视化和执行复杂分析的信息，并且是用于存留 Visual Studio 中的代码图的格式。 DGML 使用简单 XML 来描述循环和非循环的定向关系图。 定向关系图是一组由链接或边缘连接的节点。 可以使用节点和链接来表示网络结构，如软件项目中的元素。  
   
  请注意，某些版本的 Visual Studio 支持仅部分 DGML 功能，请参阅[体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

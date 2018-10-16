@@ -1,7 +1,7 @@
 ---
 title: 使用探查器命令行收集独立应用程序的详细计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 100c7396e5532d09a8035ca1260be26e0e2e8636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50eb6705cb1aef0bb1cca3de5716656c77191c3d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227418"
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[独立应用程序使用 Profiler 命令行收集详细计时数据](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line)。  
-  
 本部分介绍从命令行使用检测方法收集客户端（独立）组件的详细性能数据的步骤和选项。  
   
 ## <a name="common-tasks"></a>常规任务  

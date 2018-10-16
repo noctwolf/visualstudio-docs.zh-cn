@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建。从现有的 Vsct 文件。启动 Ctc 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: 0d267e6046539001cbe454ab69867c02f0a606ed
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e159fea34dc395ce2d7bded813f2d8feaa453006
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481019"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303480"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何：从现有的 .Ctc 文件创建 .Vsct 文件
-可以从现有的命令表 .ctc 源文件创建一个基于 XML 的 .vsct 文件。 通过执行此操作，您可以充分利用新的基于 XML 的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令表 (VSCT) 编译器格式。  
+可以从现有的命令表 .ctc 源文件创建一个基于 XML 的 .vsct 文件。 通过执行此操作，可以利用基于 XML 的新 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令表 (VSCT) 编译器格式。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>从 .ctc 文件创建 .vsct  文件  
   
@@ -34,7 +34,7 @@ ms.locfileid: "47481019"
   
 4.  将这些文件放在同一个目录中。  
   
-5.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]命令提示窗口中，导航到的目录。  
+5.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示窗口中，导航到该目录。  
   
 6.  类型  
   

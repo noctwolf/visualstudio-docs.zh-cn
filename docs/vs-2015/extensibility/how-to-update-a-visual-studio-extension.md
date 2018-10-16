@@ -1,7 +1,7 @@
 ---
 title: 如何： 更新 Visual Studio 扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3675b8f342601ee3b79169a6c39e849686d7c12e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1d86f723ae4c9acc64dfe7643552b9a74b78963
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480180"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254892"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何： 更新 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 更新 Visual Studio 扩展](https://docs.microsoft.com/visualstudio/extensibility/how-to-update-a-visual-studio-extension)。  
-  
 可以通过使用你的系统上更新 Visual Studio 扩展**扩展和更新**若要安装的更新的版本。 如果您创建扩展的更新的版本，您可以将其表示为更新的 VSIX 清单中的版本号递增。  
   
  安装更新时传入的扩展的 VSIX 清单具有相同`ID`已安装的证书和更高版本作为`Version`数。 如果`Version`数是相同或更低时，无法安装此包。 如果`ID`值不匹配、 尚未安装的包识别为单独的扩展。  

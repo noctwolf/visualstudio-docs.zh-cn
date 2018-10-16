@@ -1,7 +1,7 @@
 ---
 title: 从命令行使用分析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b827f7cca775e544049a23bcc8b0a431d11b332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c9f056bb95458ef8bbe9c221fdfbbfaa322e9e0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470405"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298384"
 ---
 # <a name="using-the-profiling-tools-from-the-command-line"></a>从命令行使用分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分析工具从命令行使用](https://docs.microsoft.com/visualstudio/profiling/using-the-profiling-tools-from-the-command-line)。  
-  
 可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具的命令行工具在命令提示符处分析应用程序，以及使用批处理文件和脚本自动执行分析。 还可以在命令提示符处生成报告文件。 可以使用轻量级独立探查器在未安装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的计算机上收集数据。  
   
 > [!NOTE]

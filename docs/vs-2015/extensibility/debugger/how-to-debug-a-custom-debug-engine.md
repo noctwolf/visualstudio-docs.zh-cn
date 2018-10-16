@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试自定义调试引擎 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6b7ef3385d48e07e4c5fcd9619515b650ca193d9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e1bd7e2c3f05fd54829d042ec15fd59b783d238
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482040"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247229"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：调试自定义调试引擎
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试自定义调试引擎](https://docs.microsoft.com/visualstudio/extensibility/debugger/how-to-debug-a-custom-debug-engine)。  
-  
 项目类型启动的调试引擎 (DE) 从<xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A>方法。 这意味着，受控制的实例的启动 DE[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]控制项目类型。 但是，该实例的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不能调试 DE。 接下来是使你能够调试自定义设备的步骤。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: 如何定义特定于域的语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5a6d8e38231de3877f4b9f4087b98fa6582f7c21
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 018b14a3bd52cf097e5afa81fd3703d9ba46e087
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588810"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295173"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何定义特定于域的语言](https://docs.microsoft.com/visualstudio/modeling/how-to-define-a-domain-specific-language)。  
-  
 若要定义域特定语言 (DSL)，请从模板创建 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。  
   
  如果你是 Dsl，我们建议您通过**DSL 工具实验室**，可在此站点中找到：[初学者和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)  
@@ -242,7 +240,7 @@ ms.locfileid: "47588810"
   
 #### <a name="to-define-a-class-of-elements-that-appear-as-shapes-on-a-diagram"></a>定义显示为关系图上的形状的元素的类  
   
-1.  **定义并测试域类，如中所述**[定义域类](#classes) **。**   
+1.  **定义并测试域类，如中所述**[定义域类](#classes) **。**  
   
     -   该类的父级应为根类。 即根类和新域类之间应存在嵌入关系。  
   

@@ -1,7 +1,7 @@
 ---
 title: 调试使用 System.Deployment.Application 的 ClickOnce 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b57db2c1c4c5b2bd3ca91762f28b2f3360929671
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab43a3dbe75001f8713d5fff98953f6a5ce43881
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228665"
 ---
 # <a name="debugging-clickonce-applications-that-use-systemdeploymentapplication"></a>调试使用 System.Deployment.Application 的 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试 ClickOnce 应用程序使用 System.Deployment.Application 的](https://docs.microsoft.com/visualstudio/deployment/debugging-clickonce-applications-that-use-system-deployment-application)。  
-  
 在中[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署允许您配置如何更新应用程序。 但是，如果您需要使用和自定义高级[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署功能，您将需要访问提供的部署对象模型<xref:System.Deployment.Application>。 可以使用<xref:System.Deployment.Application>Api，可用于高级任务如：  
   
 -   创建应用程序中的"立即更新"选项  

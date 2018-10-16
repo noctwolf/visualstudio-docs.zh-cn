@@ -1,7 +1,7 @@
 ---
 title: 查看调试器中的数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 048f1a531c9de81c8ba316449835b022e4393222
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d90342e97e4e331cacd87adf33d9cc7e434576
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468818"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204355"
 ---
 # <a name="viewing-data-in-the-debugger"></a>查看调试器中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在调试器中查看数据](https://docs.microsoft.com/visualstudio/debugger/viewing-data-in-the-debugger)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器提供了各种用于检查和修改程序状态的工具。 这些工具中的大多数仅在中断模式下有效。  
   
 ## <a name="datatips"></a>数据提示  

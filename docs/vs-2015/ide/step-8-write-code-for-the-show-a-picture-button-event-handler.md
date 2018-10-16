@@ -1,7 +1,7 @@
 ---
 title: 步骤 8：为“显示图片”按钮事件处理程序编写代码 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c45ee51c36b589a88be3cff187038835134d316
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470801"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203263"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 8： 为显示图片按钮事件处理程序编写代码](https://docs.microsoft.com/visualstudio/ide/step-8-write-code-for-the-show-a-picture-button-event-handler)。  
-  
 在此步骤中，将生成按如下方式工作的“显示图片”按钮：  
   
 -   用户选择此按钮时，程序将打开“打开文件”对话框。  

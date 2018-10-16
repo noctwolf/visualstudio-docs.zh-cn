@@ -1,7 +1,7 @@
 ---
 title: 如何：自定义类图（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d55744331cfa0aa78649a3654d7863ecc2287835
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478584"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296174"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>如何：自定义类图（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 自定义类图 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-customize-class-diagrams-class-designer)。  
-  
 你可以更改类图显示信息的方式。 可以在设计图面上自定义整个关系图或各个类型。  
   
  例如，你可以调整整个类图的缩放级别，更改各个类型成员的分组和排序方式，隐藏或显示关系并将单个类型或类型集移动到类图上的任意位置。  

@@ -1,7 +1,7 @@
 ---
 title: 如何：将类图导出为图像（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b16e8d580d80a6113e123a09292eafbcf32911c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd4e306f2dc8dcb31766f78c644769087eba9819
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481793"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240521"
 ---
 # <a name="how-to-export-class-diagrams-as-images-class-designer"></a>如何：将类关系图导出为图像（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 类图导出为图像 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-export-class-diagrams-as-images-class-designer)。  
-  
 要导出通过项目中的代码创建的类图，请将该类图保存为图像。 如果想要改为导出 UML 类图，请参阅[将关系图导出为图像](../modeling/export-diagrams-as-images.md)。  
   
 1.  打开你的类图 (.cd) 文件。  

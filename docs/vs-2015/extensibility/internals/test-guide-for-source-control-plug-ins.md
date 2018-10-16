@@ -1,7 +1,7 @@
 ---
 title: 测试的源代码管理插件的指南 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 350e84da54ef554e625dcf1db6df52016e38fa27
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470649"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219578"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理插件的测试指南](https://docs.microsoft.com/visualstudio/extensibility/internals/test-guide-for-source-control-plug-ins)。  
-  
 本部分提供用于测试你的源代码管理插件与指导[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 提供的最常见的测试区域，以及一些可能会出现问题的更多复杂区域的广泛概述。 本概述不应为测试用例的详尽列表。  
   
 > [!NOTE]

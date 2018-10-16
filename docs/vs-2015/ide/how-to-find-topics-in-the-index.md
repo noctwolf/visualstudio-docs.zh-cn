@@ -1,7 +1,7 @@
 ---
 title: 如何：在索引中查找主题 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46021283b922758a8b4c5eafad1adeda3d6be573
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6bdfb94a7164dc38bf636d12d8b99ea73aefad8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296798"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>如何：在索引中查找主题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在索引中查找主题](https://docs.microsoft.com/visualstudio/ide/how-to-find-topics-in-the-index)。  
-  
 索引包含与安装的内容中的主题相关联的关键字列表。 每个主题可能有多个关键字与之关联，并且每个关键字可能与多个主题相关联。 和使用书中的索引一样使用此索引。  
   
 ### <a name="to-find-a-topic-by-using-the-index"></a>要使用索引查找主题  

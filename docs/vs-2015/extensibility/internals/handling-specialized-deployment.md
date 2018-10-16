@@ -1,7 +1,7 @@
 ---
 title: 处理专用的部署 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f72b6daa075bb1b9127e357d072efb89b007373a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191567"
 ---
 # <a name="handling-specialized-deployment"></a>处理专用部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[处理专用部署](https://docs.microsoft.com/visualstudio/extensibility/internals/handling-specialized-deployment)。  
-  
 部署是项目的可选操作。 Web 项目中，例如，支持的部署，以便更新 Web 服务器的项目。 同样，**智能设备**项目支持将复制到目标设备生成的应用程序的部署。 项目子类型可以通过实现来提供专门的部署行为<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口。 此接口定义一组完整的部署操作：  
   
 -   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  

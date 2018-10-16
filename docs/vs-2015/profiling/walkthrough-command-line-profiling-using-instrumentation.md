@@ -1,7 +1,7 @@
 ---
 title: 演练：使用检测进行命令行分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38702e7f296640ff43caeb18380aad95636df30a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4362db36cb4b4695b667fc680dad58ce4092eced
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482537"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177987"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>演练：使用检测进行命令行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 命令行分析使用检测](https://docs.microsoft.com/visualstudio/profiling/walkthrough-command-line-profiling-using-instrumentation)。  
-  
 本演练将演示通过使用分析工具的检测方法分析 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 独立应用程序以收集详细的计时和调用计数数据。 在本演练中，你将完成以下任务：  
   
 -   使用 [VSInstr](../profiling/vsinstr.md) 命令行工具生成被检测的二进制文件。  

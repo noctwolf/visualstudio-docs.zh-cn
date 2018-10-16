@@ -1,7 +1,7 @@
 ---
 title: 如何：自定义搜索结果 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f25465e9977efb9d3bfa2f017a4df8ce7c848a16
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 033dc1cac295e0a4c0a42724eaf91ebdf123abb8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468911"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212597"
 ---
 # <a name="how-to-customize-search-results"></a>如何：自定义搜索结果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 自定义搜索结果](https://docs.microsoft.com/visualstudio/ide/how-to-customize-search-results)。  
-  
 可以使用多种方法自定义“搜索”选项卡中搜索结果的显示方式。  
   
 ## <a name="change-the-number-of-topics-that-appear-on-a-search-results-page"></a>更改搜索结果页上显示的主题的数量  

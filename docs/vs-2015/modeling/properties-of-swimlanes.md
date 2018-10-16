@@ -1,7 +1,7 @@
 ---
 title: 泳道属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dd274d1de99ab4a9dac6dd6c045ef6d313fe9bb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c914703d4cbe48e516d1d4e1aa48afb20c9e1cfe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472204"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189925"
 ---
 # <a name="properties-of-swimlanes"></a>泳道属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性的泳道](https://docs.microsoft.com/visualstudio/modeling/properties-of-swimlanes)。  
-  
 可以将泳道添加到关系图。 泳道将关系图划分为垂直或水平区域。 您可以定义要显示在泳道内其他形状。 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
  泳道具有下表中列出的属性。  

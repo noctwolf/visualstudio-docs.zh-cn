@@ -1,7 +1,7 @@
 ---
 title: 扩展工具箱 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: douge
-ms.openlocfilehash: 674b9d1dcebc7ec4a9019c652f0909904fe952c3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 444cf6b27179408414cc7df55d634497683004a6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470967"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230329"
 ---
 # <a name="extending-the-toolbox"></a>扩展工具箱
-[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**提供通过 IDE 的拖放机制为编辑器和设计器提供功能的对象的集合。  
+[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱** 提供了一系列对象，这些对象通过 IDE 拖放机制为编辑器和设计器提供各种功能。  
   
- 有两种基本方法 VSPackage 适用于[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**工具箱**:  
+ VSPackage 与 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **工具箱**联合使用有两种基本方式：  
   
 -   VSPackage 可以向 **工具箱**添加新数据项和控件。  
   
@@ -43,10 +43,10 @@ ms.locfileid: "47470967"
   
 ## <a name="related-sections"></a>相关章节  
  [如何：管理“工具箱”窗口](http://msdn.microsoft.com/en-us/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
- 介绍如何使用**工具箱**中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]集成的开发环境 (IDE)。  
+ 介绍如何使用 **集成开发环境 (IDE) 中的** 工具箱 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
  [如何： 控制工具箱](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  介绍如何使用自动化编程模型管理 **工具箱** 。  
   
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
- 说明如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]服务，以创建匹配的其余部分的 UI 元素[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。
+ 说明如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 服务创建匹配 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的其余部分的 UI 元素。

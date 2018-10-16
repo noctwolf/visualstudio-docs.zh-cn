@@ -1,7 +1,7 @@
 ---
 title: 实现和注册端口提供程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fe8e5cac0b1737d7c3dbd7e9301e0ca25d778db4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 86490e3d7df07008f23b9a12f1167b2004972a1a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205213"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>实现和注册端口提供程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现和注册端口提供程序](https://docs.microsoft.com/visualstudio/extensibility/debugger/implementing-and-registering-a-port-supplier)。  
-  
 端口提供程序的作用是跟踪并提供又管理流程的端口。 在需要创建一个端口，端口提供程序实例化时使用可以共同创建使用端口供应商的 GUID （端口提供程序用户所选或端口供应商指定的项目系统将使用会话调试管理器 [SDM]）。 然后将调用 SDM [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)以查看是否可以添加任何端口。 如果可以添加一个端口，通过调用请求一个新的端口[端口](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)并将其传递[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)描述该端口。 `AddPort` 将返回表示新端口[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口。  
   
 ## <a name="discussion"></a>讨论  

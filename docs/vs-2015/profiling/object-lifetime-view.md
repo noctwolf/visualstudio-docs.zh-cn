@@ -1,7 +1,7 @@
 ---
 title: “对象生存期”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3aaff07ecc6732403ef1d611cb23129207a27351
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a503a0de6a8b9935fbfb6b7e415d79cb0520f67d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470543"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202847"
 ---
 # <a name="object-lifetime-view"></a>“对象生存期”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[对象生存期视图](https://docs.microsoft.com/visualstudio/profiling/object-lifetime-view)。  
-  
 在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。  
   
  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的垃圾回收器负责管理应用程序的内存分配和释放。 为优化垃圾回收器的性能，将托管堆分为三代：第 0 代、第 1 代和第 2 代。 运行时的垃圾回收器将新对象存储在第 0 代中。 未回收的对象将会升级并存储在第 1 代和第 2 代中。  

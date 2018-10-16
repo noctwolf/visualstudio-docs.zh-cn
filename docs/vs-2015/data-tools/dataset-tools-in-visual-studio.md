@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中的数据集工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -56,18 +56,16 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d01dd2de60285d669f5a36a2f6ddf7a08449dad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b5881542c78c5c055d1cbc26d54eb5e478a13124
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468949"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254340"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>在 Visual Studio 中的数据集工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的数据集工具](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio)。  
-  
   
 请注意]
 >  数据集和相关的类是从年初，使应用程序的应用程序从数据库断开连接时，可以使用在内存中数据的旧.NET 技术。 它们是特别有用的应用程序使用户能够修改数据和持久保存回数据库的更改。 尽管数据集已证明是非常成功的技术，我们建议新的.NET 应用程序使用 Entity Framework。 实体框架提供更简单的方式来使用表格格式数据作为对象模型，它具有一个更简单的编程接口。  

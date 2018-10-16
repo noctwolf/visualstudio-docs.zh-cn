@@ -1,7 +1,7 @@
 ---
 title: 部署 Windows 应用商店应用程序从 Visual Studio |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1212665b8e7e1c28fa30f50c1cd64a0dc5c217bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 540a335365102f279f62f0707ee3cf7cc4fe1b53
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477303"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196100"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>从 Visual Studio 部署 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 Visual Studio 部署 Windows 应用商店应用](https://docs.microsoft.com/visualstudio/debugger/deploy-windows-store-apps-from-visual-studio)。  
-  
 仅适用于 Windows] (../Image/windows_only_content.png"windows_only_content")  
   
  Visual Studio 部署功能可在目标设备上生成和注册随 Visual Studio 创建的 Windows 应用商店应用。 应用的实际注册方法取决于目标设备是本地还是远程：  
@@ -112,7 +110,7 @@ ms.locfileid: "47477303"
  你可以在启动项目的“调试”属性页上设置以下部署选项。  
   
  **允许网络环回**  
- 为安全起见，不允许以标准方式安装的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用对装有它的设备进行网络调用。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 向 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)] 提交应用之前，应在没有例外的情况下测试应用。  
+ 为安全起见，不允许以标准方式安装的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用对装有它的设备进行网络调用。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 向 [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]提交应用之前，应在没有例外的情况下测试应用。  
   
  若要从应用中移除网络环回例外，请执行以下操作：  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试 Web 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,23 +24,21 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3dce1129282dc7273631e261bb32d313f65ce381
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4e185b1b35a2462547ca8689dc1a4bfe80ff036
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471374"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260803"
 ---
 # <a name="how-to-debug-web-applications"></a>如何：调试 Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试 Web 应用程序](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-web-applications)。  
-  
 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 是用于开发 Web 应用程序中的主要技术[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试器为在本地或远程服务器上调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序提供了强大的工具。 本主题介绍如何调试[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]在开发过程中的项目。 有关如何调试信息[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]Web 应用程序已部署在生产服务器上，请参阅[调试部署 Web 应用程序](../debugger/debugging-deployed-web-applications.md)。  
   
  若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序，必须满足以下条件：  
   
--   您必须拥有必需的权限。 有关详细信息，请参阅[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  
+-   您必须拥有必需的权限。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
 -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 必须在启用调试**项目属性**。  
   

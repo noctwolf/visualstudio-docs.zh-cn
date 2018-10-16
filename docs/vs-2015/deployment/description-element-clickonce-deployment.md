@@ -1,7 +1,7 @@
 ---
 title: "&lt;description&gt;要素 (ClickOnce 配置) |Microsoft Docs'"
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 473ebf814ab65c34ee99cab0cf2cc239e0d013eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ddba6356ab051dbad27e55eefd53a517b47a21a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468780"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224765"
 ---
 # <a name="ltdescriptiongt-element-clickonce-deployment"></a>&lt;说明&gt;元素 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;描述&gt;元素 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/description-element-clickonce-deployment)。  
-  
 标识用于创建 shell 表示应用程序信息和一个**添加或删除程序**控制面板中的项。  
   
 ## <a name="syntax"></a>语法  

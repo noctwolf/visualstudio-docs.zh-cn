@@ -1,7 +1,7 @@
 ---
 title: IDE 定义的命令，用于扩展项目系统 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0e33b8e9-16fa-4400-a941-e92d56120e7e
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b00a83774185b4fe65ee2b7171e25492320b5bfb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ac4cb73c5875a37d25a1eb8f4fe8600657c4b2a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479183"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270760"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统的 IDE 定义的命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展项目系统的 IDE-Defined 命令](https://docs.microsoft.com/visualstudio/extensibility/internals/ide-defined-commands-for-extending-project-systems)。  
-  
 当你想要扩展项目系统时，可以使用命令和命令组提供的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
   
  以下部分列出用于扩展项目系统特别有用的命令项。  

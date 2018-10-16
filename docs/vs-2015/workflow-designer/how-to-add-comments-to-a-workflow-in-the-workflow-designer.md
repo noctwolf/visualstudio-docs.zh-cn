@@ -1,7 +1,7 @@
 ---
 title: 如何： 将注释添加到工作流设计器中的工作流 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: f70f8ba1a30d5adcaffe7e693fcc711d08a28baf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c605ec087a4aa5bec3aecf91d9f0ac1c1a1fb42a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476697"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194605"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 为方便创建更大、更复杂的工作流，[!INCLUDE[net_v45](../includes/net-v45-md.md)] 允许开发人员在设计器中将批注添加到以下类型的项：  

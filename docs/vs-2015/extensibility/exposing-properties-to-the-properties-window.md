@@ -1,7 +1,7 @@
 ---
 title: 公开属性设置为属性窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7853b956e88ac1b239792ad96fb094c1a7c0a3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63c5b2b9cb378004e63ff5f12fd614af98cd486e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478462"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232032"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>在属性窗口中公开属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[公开属性设置为属性窗口](https://docs.microsoft.com/visualstudio/extensibility/exposing-properties-to-the-properties-window)。  
-  
 本演练中公开的对象的公共属性**属性**窗口。 对这些属性进行的更改会反映在**属性**窗口。  
   
 ## <a name="prerequisites"></a>系统必备  

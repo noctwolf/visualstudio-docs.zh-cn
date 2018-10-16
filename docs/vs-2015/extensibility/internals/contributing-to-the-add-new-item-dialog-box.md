@@ -1,7 +1,7 @@
 ---
 title: 参与到添加新建项对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b2e53175-9372-4d17-8c2b-9264c9e51e9c
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f5fcbac8b9e26bcca5a588846c14972156761d5b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7e9ce7df2adc05468a27de5f4eaac52c68a07e7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468517"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215886"
 ---
 # <a name="contributing-to-the-add-new-item-dialog-box"></a>构成“添加新项”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[到添加新项对话框中参与](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-add-new-item-dialog-box)。  
-  
 项目子类型可以提供完整的项的新目录**添加新项**对话框中的注册**添加项**下的模板`Projects`注册表子项。  
   
 ## <a name="registering-add-new-item-templates"></a>注册添加新项模板  

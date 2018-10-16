@@ -1,7 +1,7 @@
 ---
 title: 功能标志 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 638d8975bc3bd5216fe60e0444cf864d8cf896de
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 954993a5733012b4e27ebd6f012fabcf1e3eda00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479816"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241457"
 ---
 # <a name="capability-flags"></a>功能标志
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[功能标志](https://docs.microsoft.com/visualstudio/extensibility/capability-flags)。  
-  
 SCC_CAP_*xxx*标志是用来指示源代码管理插件的功能的位标志。 SCC_EXCAP_*xxx*标志是增量标志，指示扩展的功能并解析为整数值。  
   
 |功能代码|“值”|描述|  

@@ -1,7 +1,7 @@
 ---
 title: “函数”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4bc15c21400b720bd5dde9c18111d7cc68afc34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 88ae3a5053c6e1cdd5f3e8ab36c80823fdb13b41
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477307"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205603"
 ---
 # <a name="functions-view"></a>“函数”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[函数视图](https://docs.microsoft.com/visualstudio/profiling/functions-view)。  
-  
 “函数”视图列出分析过程中调用的函数。  
   
  默认情况下，按名称列出函数。 若要按模块查看函数，请在“函数”视图窗口中单击鼠标右键，然后选择“在模块视图中显示”。 随即会显示“模块”视图。  

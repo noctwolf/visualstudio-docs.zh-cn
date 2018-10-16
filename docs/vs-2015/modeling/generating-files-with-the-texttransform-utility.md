@@ -1,7 +1,7 @@
 ---
 title: 使用 TextTransform 实用工具生成文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 069f7f5ef2c579c10c1ee7c19989c79ce3ad63bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7dbe189c9b46c10dc7bac5da4b87457d7c6ecbf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484635"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227443"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>使用 TextTransform 实用工具生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 TextTransform 实用工具生成文件](https://docs.microsoft.com/visualstudio/modeling/generating-files-with-the-texttransform-utility)。  
-  
 TextTransform.exe 是一个命令行工具，可用于转换文本模板。 当调用 TextTransform.exe 时，作为自变量指定的文本模板文件的名称。 TextTransform.exe 调用文本转换引擎，并处理文本模板。 TextTransform.exe 通常通过脚本调用。 但是，它不通常必需的因为您可以在 Visual Studio 中或在生成过程中执行文本转换。  
   
 > [!NOTE]

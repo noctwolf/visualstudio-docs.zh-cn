@@ -1,7 +1,7 @@
 ---
 title: 对于托管代码扩展的设计准则规则规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb9b8544d2d4f902bf5bd64afc937f505990b736
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7b486156a2b2fb9161b20441cfb8e62c2a9b4bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471142"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207813"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的托管代码扩展的设计准则规则规则设置](https://docs.microsoft.com/visualstudio/code-quality/extended-design-guidelines-rules-rule-set-for-managed-code)。  
-  
 Microsoft 扩展的设计准则规则规则集扩展了基本设计准则规则，以最大程度地报告的可用性和可维护性问题。 额外的强调置于命名准则。 应考虑包含此规则设置，如果你的项目包括库代码，或者如果你想要强制实施用于编写易于维护的代码的最高标准。  
   
  扩展设计准则规则包括所有 Microsoft 基本设计准则规则。 基本设计准则规则包括所有 Microsoft 最少量建议规则。 有关详细信息，请参阅[托管代码的基本设计准则规则规则集](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md)和[托管建议规则规则集的托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

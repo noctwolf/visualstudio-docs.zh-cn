@@ -1,7 +1,7 @@
 ---
 title: 测试区域 8： 插件切换 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6633c2bd2f2f968f10aef215f395203f95c99da1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6be407cc89820cc466180077c90288d8b285f7e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480072"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49296707"
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试区域 8： 插件切换](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-8-plug-in-switching)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 具有用户界面 (UI) 若要更改当前源代码管理插件。 此测试区域提供用于选择其要使用的解决方案源代码管理插件的过程的测试用例。  
   
 ## <a name="command-menu-access"></a>命令菜单访问  

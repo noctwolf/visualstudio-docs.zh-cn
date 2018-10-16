@@ -1,7 +1,7 @@
 ---
 title: Spy + + 简介 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f219d2e15dfeef325ea6ec7be44878e674cf10e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276258"
 ---
 # <a name="introducing-spy"></a>Spy++ 简介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[简介 Spy + +](https://docs.microsoft.com/visualstudio/debugger/introducing-spy-increment)。  
-  
 可利用 Spy++ 执行以下任务：  
   
 -   显示系统对象之间关系的图形树。 这些对象包括 [进程](../debugger/processes-view.md)、 [线程](../debugger/threads-view.md)和 [窗口](../debugger/windows-view.md)。  
@@ -40,7 +38,7 @@ ms.locfileid: "47470908"
   
 -   使用 [查找程序工具](../debugger/how-to-use-the-finder-tool.md) ，通过鼠标指针定位选择窗口。  
   
--   设置**消息选项**使用复杂消息日志选择参数。  
+-   使用复杂消息日志选择参数设置 **消息选项** 。  
   
  Spy++ 拥有工具栏和超链接，可以帮助你更快地工作。 它还提供用于更新活动视图的“刷新”  命令、方便监视的“窗口查找程序工具”  和用于自定义视图窗口的“字体”  对话框。 此外，Spy++ 还可以保存和还原用户首选项。  
   

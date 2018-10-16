@@ -1,7 +1,7 @@
 ---
 title: UML 序列图： 准则 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 55
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 388bb32aa871b220768e856e96cced2d5bced694
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d8578d81dd955cc9e7223692be1fe9f63d2bf00
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278669"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>UML Sequence Diagrams: Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 序列图： 准则](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-guidelines)。  
-  
 在 Visual Studio 中，您可以绘制*序列图*以显示交互。 交互是类、组件、子系统或参与者的典型实例之间的消息序列。  
   
  UML 序列图是 UML 模型的一部分，并且仅存在于 UML 建模项目中。 若要创建 UML 序列图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 详细了解如何[UML 序列图元素](../modeling/uml-sequence-diagrams-reference.md)或[UML 建模图](../modeling/edit-uml-models-and-diagrams.md)一般情况下。 有关视频演示，请参阅[通过使用 (2010) 的序列图绘制交互](http://channel9.msdn.com/Blogs/clinted/UML-with-VS-2010-Part-7-Sketching-Interactions-with-Sequence-Diagrams)。  

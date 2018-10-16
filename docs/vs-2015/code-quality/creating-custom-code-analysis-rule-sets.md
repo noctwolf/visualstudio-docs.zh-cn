@@ -1,7 +1,7 @@
 ---
 title: 创建自定义代码分析规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67df017724f31a14504bbd7e2b66657b1db918b5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c0dabe89c47e42eee57803475abf5274a74ec651
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476898"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273580"
 ---
 # <a name="creating-custom-code-analysis-rule-sets"></a>创建自定义代码分析规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建自定义代码分析规则集](https://docs.microsoft.com/visualstudio/code-quality/creating-custom-code-analysis-rule-sets)。  
-  
 通过指定包含一个或多个规则的规则集可将代码分析规则应用于托管的代码项目中。 Microsoft 标准规则集提供按函数和深度的规则组。 例如，Microsoft 基本设计准则规则和 Microsoft 扩展设计准则规则包含重点放在可用性和可维护性问题，并添加了重点扩展规则集中的命名规则的规则。  
   
  此外可以创建自定义规则集结合了两个或多个标准规则集，或在一个或多个标准规则集指定规则。 保存自定义规则设置为的.ruleset 文件，并可以在多个代码项目中指定它们。  

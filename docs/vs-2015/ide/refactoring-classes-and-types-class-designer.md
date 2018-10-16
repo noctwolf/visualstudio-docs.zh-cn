@@ -1,7 +1,7 @@
 ---
 title: 重构类和类型（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8704977447a7f7aa45b7991ae4451818dc4bfb58
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 215030b511ecbddbda23073df464035887f8ef95
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478087"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207956"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>重构类和类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[重构类和类型 （类设计器）](https://docs.microsoft.com/visualstudio/ide/refactoring-classes-and-types-class-designer)。  
-  
 重构代码时，通过更改它的内部结构和它的对象的设计方式，而不是更改它的外部行为，你可以让它变得更易理解、维护以及更加高效。 在 Visual Studio 项目中重构 Visual C#.NET、Visual Basic.NET 或 C++ 代码时可以通过使用类设计器和类的详细信息窗口减少必要的工作量并降低引入 bug 的几率。  
   
 > [!NOTE]

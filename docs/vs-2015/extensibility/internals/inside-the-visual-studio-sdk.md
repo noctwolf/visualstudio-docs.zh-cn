@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bf54468618e12abdd29921677687201f9840a70c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5d22e5c1384e4b24bd3b05cb868a40cede19ba1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471118"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214703"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[内，Visual Studio SDK](https://docs.microsoft.com/visualstudio/extensibility/internals/inside-the-visual-studio-sdk)。  
-  
 本部分提供有关 Visual Studio 扩展，其中包括 Visual Studio 体系结构、 组件、 服务、 架构、 实用工具和类似的内容的详细信息。  
   
 ## <a name="extensibility-architecture"></a>可扩展性体系结构  
@@ -38,7 +36,7 @@ ms.locfileid: "47471118"
 Visual Studio 体系结构的通用的视图  
   
 ## <a name="vspackages"></a>VSPackages  
- VSPackage 是软件模块，它们通过 UI 元素、服务、项目、编辑器和设计器来组成并扩展 Visual Studio。 Vspackage 是 Visual Studio 的中央体系结构单元。 有关详细信息，请参阅[Vspackage](../../extensibility/internals/vspackages.md)。  
+ VSPackage 是软件模块，它们通过 UI 元素、服务、项目、编辑器和设计器来组成并扩展 Visual Studio。 Vspackage 是 Visual Studio 的中央体系结构单元。 有关更多信息，请参见 [VSPackages](../../extensibility/internals/vspackages.md)。  
   
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  在 Visual Studio shell 提供基本功能和支持，其组件 Vspackage 和 MEF 扩展之间的跨通信。 有关详细信息，请参阅[Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。  

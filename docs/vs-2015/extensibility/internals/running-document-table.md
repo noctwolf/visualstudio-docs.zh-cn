@@ -1,7 +1,7 @@
 ---
 title: 运行文档表 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8b7f22fed31618c3f0e8b897992da0beb1c0cc80
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 131fbf7d5587382b2e47002f52e374dad154d448
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293067"
 ---
 # <a name="running-document-table"></a>运行文档表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[运行文档表](https://docs.microsoft.com/visualstudio/extensibility/internals/running-document-table)。  
-  
 IDE 维护名为运行文档表 (RDT) 的内部结构中的所有当前打开的文档的列表。 此列表包括所有打开的文档在内存中，而不考虑是否当前正在编辑这些文档。 文档是包括一个项目或主项目文件 （例如，.vcxproj 文件） 中的文件的保存的任何项。  
   
 ## <a name="elements-of-the-running-document-table"></a>运行文档表的元素  

@@ -1,7 +1,7 @@
 ---
 title: 如何使用文本模板...|Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 04cba7688e358f3267bd4f3fb45b2ac10e83b286
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231499"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何使用文本模板...](https://docs.microsoft.com/visualstudio/modeling/how-to-dot-dot-dot-with-text-templates)。  
-  
 中的文本模板[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]有用的方式生成任何类型的文本。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。  
   
  本主题中的前面使用项目符号的多个答案是替代建议。  
@@ -42,7 +40,7 @@ ms.locfileid: "47468532"
   
 -   将运行时文本模板添加到你的项目。 此模板创建在代码中，可以实例化和用于生成文本的类。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
--   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。  
+-   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 。  
   
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。  
   

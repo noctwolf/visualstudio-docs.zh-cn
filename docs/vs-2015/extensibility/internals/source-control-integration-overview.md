@@ -1,7 +1,7 @@
 ---
 title: 源控件集成概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ca8fc2368fd2da031342cf76ab7ba9abb85e6f4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479506"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224180"
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理集成概述](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-integration-overview)。  
-  
 本部分将进行比较的两种方法来将集成到 Visual Studio 源代码管理;源代码管理插件并提供了源代码管理解决方案，并突出显示新的源代码管理功能的 VSPackage。 Visual Studio 支持源代码管理 Vspackage 和源代码控制插件之间手动切换，以及自动基于解决方案的切换。  
   
 ## <a name="source-control-integration"></a>源代码管理集成  

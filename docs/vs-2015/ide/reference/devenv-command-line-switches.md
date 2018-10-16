@@ -1,7 +1,7 @@
 ---
 title: Devenv 命令行开关 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 459ab16b30882feb3d167d7668ffd660e6490cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482941"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215029"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Devenv 命令行开关](https://docs.microsoft.com/visualstudio/ide/reference/devenv-command-line-switches)。  
-  
   
 Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令行生成、调试和部署项目。 使用这些开关从脚本或 .bat 文件（例如每夜生成的脚本）运行 IDE，或以特定配置启动 IDE。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何：创建类型之间的关联（类设计器） | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 86f380525eef965de87c2f7e40a61e033a9ea46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad870c9b470e96a120e334c79ed5b36e44cca41a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482332"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247879"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>如何：创建类型之间的关联（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建类型之间的关联 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-create-associations-between-types-class-designer)。  
-  
 类设计器中的关联连线显示了关系图中各类之间的相互关系。 关联连线表示项目中是另一个类的属性或字段类型的类。 关联连线一般用于阐释项目中各类之间最重要的关系。  
   
  尽管可以将所有字段和属性显示为关联，但根据想要在关系图中强调的内容来将若干重要成员显示为关联更有意义。 （可将不太重要的成员显示为常规成员，或将其全部隐藏起来。）  

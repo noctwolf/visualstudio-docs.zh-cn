@@ -1,7 +1,7 @@
 ---
 title: 创建基本项目系统，第 2 部分 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea16f64d07450eabebb0ff49f8c8ea26a0214ffa
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 1e5661b7bd11891f43427749a158f33f07444e43
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236634"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建基本项目系统，第 2 部分](https://docs.microsoft.com/visualstudio/extensibility/creating-a-basic-project-system-part-2)。  
-  
 在此系列中，在第一个演练[创建基本项目系统，第 1 部分](../extensibility/creating-a-basic-project-system-part-1.md)，演示如何创建基本项目系统。 本演练中的基础上基本项目系统添加 Visual Studio 模板、 属性页中和其他功能。 在开始此之前，必须完成第一个演练。  
   
  本演练介绍了如何创建具有项目文件名称扩展.myproj 的项目类型。 若要完成本演练，您无需创建您自己的语言，因为本演练中继承现有的 Visual C# 项目系统中。  

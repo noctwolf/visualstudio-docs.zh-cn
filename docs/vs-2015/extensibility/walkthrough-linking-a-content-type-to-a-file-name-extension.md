@@ -1,7 +1,7 @@
 ---
 title: 演练： 将内容类型链接到的文件扩展名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1742da19e2d99cbb22d930b7146b1f9859e19cef
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 45534f4a85cd289360c098083228ac5f28025a90
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261724"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到文件扩展名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 将内容类型链接到文件扩展名为](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension)。  
-  
 可以定义您自己的内容类型，并使用编辑器 Managed Extensibility Framework (MEF) 扩展链接到它的文件扩展名。 在某些情况下，文件扩展名已定义由语言服务;不过，若要将它与 MEF 使用您仍必须将其链接到内容类型。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -34,13 +32,13 @@ ms.locfileid: "47484526"
   
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`ContentTypeTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `ContentTypeTest`。  
   
 2.  在中**source.extension.vsixmanifest**文件中，转到**资产**选项卡，并将**类型**字段**Microsoft.VisualStudio.MefComponent**，则**源**字段**当前解决方案中的项目**，和**项目**字段的项目的名称。  
   
 ## <a name="defining-the-content-type"></a>定义的内容类型  
   
-1.  添加一个类文件并将其命名`FileAndContentTypes`。  
+1.  添加一个类文件并将其命名为 `FileAndContentTypes`。  
   
 2.  添加对下列程序集的引用：  
   

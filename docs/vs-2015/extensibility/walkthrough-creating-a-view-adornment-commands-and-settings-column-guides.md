@@ -1,7 +1,7 @@
 ---
 title: 演练： 创建视图修饰、 命令和设置 （列参考线） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94ed4de4820aca9d88b9c589e2fe5a15a51842e6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c4e0950010247387d8ddc1380589a6f684ab8ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471726"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265083"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>演练：创建视图修饰、命令和设置（列参考线）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建视图修饰、 命令和设置](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides)。  
-  
 您可以扩展 Visual Studio 文本/代码编辑器与命令和查看效果。  本主题演示如何开始使用常用扩展功能，列参考线。  列参考线是以可视方式浅色文本编辑器的视图，以帮助您管理您的代码与特定的列宽度上绘制的线条。  特别是格式化的代码非常重要的示例包括在文档中，博客文章或 bug 报告。  
   
  在本演练中，你将：  

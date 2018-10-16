@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ccea832f1979601a764c0b979b0f7d4d72bd796
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470963"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294029"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧版语言服务模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务模型](https://docs.microsoft.com/visualstudio/extensibility/internals/model-of-a-legacy-language-service)。  
-  
 语言服务定义的元素和特定语言的功能，用于在编辑器提供特定于该语言的信息。 例如，在编辑器需要知道的元素和语言的关键字，才能支持语法突出显示。  
   
  语言服务由编辑器和包含编辑器中的视图的文本缓冲区与紧密合作。 Microsoft IntelliSense**快速信息**选项是通过语言服务提供一项功能的示例。  

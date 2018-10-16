@@ -1,7 +1,7 @@
 ---
 title: 如何： 显示 Spy + + 视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fbb4043dbbed22bef38db30b52ce62a948c16ac0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a6947bf1ac93658827da61c4031fdb2376b35ac7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483709"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185884"
 ---
 # <a name="how-to-display-spy-views"></a>如何：显示 Spy++ 视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 显示 Spy + + 视图](https://docs.microsoft.com/visualstudio/debugger/how-to-display-spy-increment-views)。  
-  
 Spy + + 启动时，它将在中打开[Windows 视图](../debugger/windows-view.md)，所有 windows 和你的计算机上的可用控件的树视图。 此根窗口的标题为"Windows 1。" 也有三个其他 Spy + + 视图可用：[消息视图](../debugger/messages-view.md)，[进程视图](../debugger/processes-view.md)，并[线程视图](../debugger/threads-view.md)。 可以显示从所需的视图**Spy**菜单。 有关详细信息，请参阅[Spy + + 视图](../debugger/spy-increment-views.md)。  
   
 ## <a name="see-also"></a>请参阅  

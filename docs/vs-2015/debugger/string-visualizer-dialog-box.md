@@ -1,7 +1,7 @@
 ---
 title: 字符串可视化工具对话框的 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a225de3374865ac319c93dcebc1f0d58a7441a34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1c48e318d413e689483ada285937eae07ef37ce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275036"
 ---
 # <a name="string-visualizer-dialog-box"></a>字符串可视化工具对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[字符串可视化工具对话框](https://docs.microsoft.com/visualstudio/debugger/string-visualizer-dialog-box)。  
-  
 此对话框是 Visual Studio 调试器中包含的标准可视化工具之一。 除普通文本外，字符串可视化工具还可以计算 HTML 和 XML 字符串，这使得您能够以有意义的格式查看结果。  
   
 ## <a name="see-also"></a>请参阅  

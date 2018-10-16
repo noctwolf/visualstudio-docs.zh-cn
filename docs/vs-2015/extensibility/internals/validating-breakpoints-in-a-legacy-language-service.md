@@ -1,7 +1,7 @@
 ---
 title: 验证旧版语言服务中的断点 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3fbfd2ca8ec3377d8c7d97e38fb4669a2d2042b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2739bfd8807552653e7bb302e5e5efad2835529b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216835"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>验证旧版语言服务中的断点
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中验证断点](https://docs.microsoft.com/visualstudio/extensibility/internals/validating-breakpoints-in-a-legacy-language-service)。  
-  
 断点指示它在调试器中运行时程序执行应停止的特定点。 用户可以在源文件中的任意行上放置一个断点，因为在编辑器并不知道什么构成了断点的有效位置。 启动调试器时，所有标记断点 （称为挂起断点） 将绑定到正在运行的程序中的相应位置。 在同一时间断点进行验证，以便确保它们将标记有效的代码位置。 例如上一条注释, 的断点无效，因为在源代码中该位置没有任何代码。 调试器将禁用无效的断点。  
   
  由于语言服务知道有关所显示的源代码，它可以验证断点，之后再启动调试器。 您可以重写<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法以返回指定断点的有效位置的跨度。 启动调试器，但无需等待调试器加载的无效的断点会通知用户时，仍被验证断点位置。  

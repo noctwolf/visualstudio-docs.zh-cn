@@ -1,7 +1,7 @@
 ---
 title: 分析工具的新增功能 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ab7fe2362bbf9779854bb1c79bfb4de9ffd1600
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d5cb1d89409b38fea4e3745de7a619e913c6122f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290155"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>什么&#39;中的分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[What's New in 分析](https://docs.microsoft.com/visualstudio/profiling/what-s-new-in-profiling-tools)。  
-  
 有关 Visual Studio 2015 Update 1 调试和诊断中的所有新增功能的信息，请参阅 [Visual Studio 2015 Update 1 发行说明](https://www.visualstudio.com/news/vs2015-update1-vs#debug)。  
   
  有关 Visual Studio 2015 调试和诊断中的所有新增功能的信息，请参阅 [Visual Studio 2015 发行说明](https://www.visualstudio.com/news/vs2015-vs#Debug)。  
@@ -42,7 +40,7 @@ ms.locfileid: "47470969"
  你现在可以在使用新 **“诊断工具”** 窗口进行调试的同时运行诊断工具。 该窗口将自动显示，但你也可以使用新菜单项“显示诊断工具”  （键盘快捷方式 **Ctrl+Alt+F2**）来打开它。  
   
 ## <a name="diagnostics-without-debugging-ui-and-hotkey-changes"></a>不使用调试 UI 和热键更改进行诊断  
- 若要运行而不进行调试的诊断，请转到**调试 / 启动诊断工具但不调试**或**调试 / Profiler / 性能 Profiler...**.在 Visual Studio 2013 中，这位于**分析 / 性能和诊断**或**调试 / 性能和诊断**。  
+ 若要运行而不进行调试的诊断，请转到**调试 / 启动诊断工具但不调试**或**调试 / Profiler / 性能 Profiler...**.在 Visual Studio 2013 中，这位于 **“分析/性能和诊断”** 或 **“调试/性能和诊断”**。  
   
  **“性能资源管理器”** 现在位于 **“调试/探查器/性能资源管理器”**。 在 Visual Studio 2013 中，它位于 **“分析/探查器”**。  
   

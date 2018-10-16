@@ -1,7 +1,7 @@
 ---
 title: 创建基于 WPF 的域特定语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: eeb425747bf4c3e7a6d60a196732db207d26f309
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d8884aa3e9a3fcbffe6c2bb962f69384b00383d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482366"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281081"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>创建基于 WPF 的域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 WPF-Based 域特定语言](https://docs.microsoft.com/visualstudio/modeling/creating-a-wpf-based-domain-specific-language)。  
-  
 您可以创建具有而不是图形设计器的 WPF 设计器的特定于域的语言。  
   
  在 Visual Studio 可视化和建模工具网站上可以找到信息和有关此功能的示例 [http://go.microsoft.com/fwlink/?LinkId=186128](http://go.microsoft.com/fwlink/?LinkId=186128)  

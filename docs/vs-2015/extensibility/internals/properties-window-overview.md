@@ -1,7 +1,7 @@
 ---
 title: 属性窗口概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1bd869cd9d5fd10a31383d93671bf820887087a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de60ed84abf4d4d2e01838140301919e13468239
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188703"
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性窗口概述](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-overview)。  
-  
 **属性**窗口用于显示在 windows 中可用的两个主要类型中选择的对象的属性[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE)。 Windows 这两种类型是：  
   
 -   如解决方案资源管理器、 类视图和对象浏览器的工具窗口  

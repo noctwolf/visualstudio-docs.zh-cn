@@ -1,7 +1,7 @@
 ---
 title: 演练： 下载使用 ClickOnce 部署 API 按需程序集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 8b5779ee2c1cd57d08627038ab7b65cc760afb5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6e1f9e1a2115e61e46e0050c1e6504e73c0180fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199129"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：使用 ClickOnce 部署 API 按需下载程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 ClickOnce 部署 API 按需下载程序集](https://docs.microsoft.com/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api)。  
-  
 默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将标记为"可选"，在应用程序中的某些程序集和如何使用下载中的类<xref:System.Deployment.Application>命名空间时公共语言运行时 (CLR) 需要它们。  
   
 > [!NOTE]

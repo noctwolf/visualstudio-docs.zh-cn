@@ -1,7 +1,7 @@
 ---
 title: 实现旧版语言服务 1 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6c77e935946d06dd2448c1f9bda85fd8b6b69aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ccc8d23dfb62bcbb5575ea328f74f57f15f6d16
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291260"
 ---
 # <a name="implementing-a-legacy-language-service"></a>实现旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现旧版语言服务 1](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-a-legacy-language-service1)。  
-  
 您可以使用托管的包框架 (MPF) 中的类来实现旧版语言服务支持各种功能，如语法突出显示、 大括号匹配和 IntelliSense 完成。  
   
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  

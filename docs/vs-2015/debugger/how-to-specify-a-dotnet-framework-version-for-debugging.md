@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定用于调试的.NET Framework 版本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a07975591525f9109fecfbfb5aaa27642fc9562
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 914c4bfb58485bd1d423e58bbe8fc8ab7f1a898a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472267"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272956"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定用于调试的 .NET Framework 版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定.NET Framework 版本为调试](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-a-dotnet-framework-version-for-debugging)。  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 调试器支持调试 Microsoft [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的早期版本和当前版本。 如果从 Visual Studio 启动应用程序，调试器始终可以识别的正确版本[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]正在调试的应用程序。 如果已在运行该应用程序并使用**将附加到**，调试器可能始终无法识别较旧版本的[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 如果发生这种情况，您将收到一条错误消息，指出：  
   
  调试器对您的应用程序要使用的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本进行了错误的假设。  

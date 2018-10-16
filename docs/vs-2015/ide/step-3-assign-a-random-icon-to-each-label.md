@@ -1,7 +1,7 @@
 ---
 title: 步骤 3：向每个标签分配一个随机图标 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5b906fbae93823c106dead99534979fe78bdcd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ce8047cbdf6d487a1b4ff00ae99c617a9548fca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298774"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[第 3 步： 向每个标签分配一个随机图标](https://docs.microsoft.com/visualstudio/ide/step-3-assign-a-random-icon-to-each-label)。  
-  
 如果图标显示在每个游戏的相同单元格中，就不是很有挑战性。 为避免这种情况，请使用 `AssignIconsToSquares()` 方法将图标随机分配给标签控件。  
   
 ### <a name="to-assign-a-random-icon-to-each-label"></a>向每个标签分配一个随机图标  

@@ -1,7 +1,7 @@
 ---
 title: VSPackage 结构 (源代码管理 VSPackage) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8c27eb3c0bc977f716d3437042e1e4105eb1692d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305027"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 结构（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSPackage 结构 (源代码管理 VSPackage)](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-structure-source-control-vspackage)。  
-  
 源控件包 SDK 提供了用于创建 VSPackage 的准则允许源控件实施者，将使用其自己的源代码管理功能进行集成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]环境。 VSPackage 是 COM 组件，通常按需加载[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 基于由其注册表项中的包播发的服务。 每个 VSPackage 必须实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>。 VSPackage 通常使用所提供的服务[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 和提供某些服务。  
   
  VSPackage 声明其菜单项，并建立通过.vsct 文件的默认项状态。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 将加载 VSPackage 之前在此状态中显示的菜单项。 随后，VSPackage 的实现的<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>调用方法来启用或禁用菜单项。  

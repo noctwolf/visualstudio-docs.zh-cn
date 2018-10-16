@@ -1,7 +1,7 @@
 ---
 title: 代码段函数 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e5009a2fcdcc9c3b94417a296bae5e0f88acf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270876"
 ---
 # <a name="code-snippet-functions"></a>代码段函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[代码片段函数](https://docs.microsoft.com/visualstudio/ide/code-snippet-functions)。  
-  
 有三个函数可与 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 代码片段一起使用。 函数在代码片段的 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 元素中指定。 有关创建代码片段的详细信息，请参阅[代码片段](../ide/code-snippets.md)。  
   
 ## <a name="functions"></a>函数  

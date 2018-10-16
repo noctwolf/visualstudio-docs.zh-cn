@@ -1,7 +1,7 @@
 ---
 title: 调试错误和警告对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef599f3d786618339ac695b182a4efb5682035d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 225cd9e209d3fd513d4991e5c20bfc4a6a07e9d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469413"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216648"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>“调试错误和警告”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试错误和警告对话框](https://docs.microsoft.com/visualstudio/debugger/debugging-errors-and-warning-dialog-boxes)。  
-  
 以下是在调试应用程序时可能遇到的错误和警告对话框。  
   
 ## <a name="in-this-section"></a>本节内容  

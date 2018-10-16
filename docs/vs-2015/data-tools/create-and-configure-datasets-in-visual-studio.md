@@ -1,7 +1,7 @@
 ---
 title: 创建和配置 Visual Studio 中的数据集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eddb8ffbe483d0c2d5396530333db2f7e7827d04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bea966bfde9726047ab52d10523a54be3f15c373
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217383"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>在 Visual Studio 中创建和配置数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建和配置 Visual Studio 中的数据集](https://docs.microsoft.com/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio)。  
-  
   
 一个*数据集*是一组在内存中存储数据库中的数据和支持更改跟踪，若要启用的对象的创建、 读取、 更新和删除 (CRUD) 操作，对该数据而无需始终连接到数据库。 数据集设计用于简单*对数据的窗体*业务应用程序。 对于新应用程序，请考虑使用实体框架在内存中的数据存储和建模。 若要使用的数据集，应具有数据库概念的基础知识。  
   

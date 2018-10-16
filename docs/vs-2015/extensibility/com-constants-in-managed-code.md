@@ -1,7 +1,7 @@
 ---
 title: 在托管代码中的 COM 常量 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b2be5a360dd661438ac68c02e3294e025494af4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 403ec1a62f2d0a161ac08b78ddd4cbd4ff7da827
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484066"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206708"
 ---
 # <a name="com-constants-in-managed-code"></a>托管代码中的 COM 常量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[托管代码中的 COM 常量](https://docs.microsoft.com/visualstudio/extensibility/com-constants-in-managed-code)。  
-  
 托管包框架 (MPF) 使一些标准的 COM 常量可用于托管代码。 供你参考下面列出了这些常量。  
   
 ## <a name="boolean-hresult-values"></a>布尔 HRESULT 值  

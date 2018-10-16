@@ -1,7 +1,7 @@
 ---
 title: 演练：创建、编辑和维护编码的 UI 测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c438d507a404f75e77c7a4d9434b273a9d5c5876
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aff0363b1fe554e55cae7b58d79cd8f765e76d68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257525"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建、 编辑和维护编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test)。  
-  
 在本演练中，你将创建一个简单的 Windows Presentation Foundation (WPF) 应用程序来演示如何创建、编辑和维护编码的 UI 测试。 本演练为更正由各种计时问题和控件重构中断的测试提供了解决方案。  
   
 ## <a name="prerequisites"></a>系统必备  

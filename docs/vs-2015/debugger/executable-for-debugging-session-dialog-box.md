@@ -1,7 +1,7 @@
 ---
 title: 调试会话对话框的可执行文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31190bf669d11929aed8127d8433d86c8fc75c4b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2d1279ba5b3ed79c4115143a72e4543bbd6c123d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189821"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>“调试会话的可执行文件”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试会话对话框的可执行文件](https://docs.microsoft.com/visualstudio/debugger/executable-for-debugging-session-dialog-box)。  
-  
 当您尝试调试没有指定可执行文件的 DLL 时，将出现该对话框。 Visual Studio 不能直接启动 DLL， 而是启动指定的可执行文件。 在可执行文件调用 DLL 时，您可以调试该 DLL。  
   
  **可执行文件名称**  

@@ -1,7 +1,7 @@
 ---
 title: 在 VS 扩展中调用文本转换 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4484979739dda4838009bab312237a1860066eac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0751229e778e13375698f591d789edfd318b3ffc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476676"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298618"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VS 扩展中调用文本转换](https://docs.microsoft.com/visualstudio/modeling/invoking-text-transformation-in-a-vs-extension)。  
-  
 如果你正在编写[Visual Studio 扩展](http://msdn.microsoft.com/library/5b1b5db3-6005-44cf-83b0-e608d7764d14)如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
   
 ## <a name="getting-the-text-templating-service"></a>获取文本模板化服务  

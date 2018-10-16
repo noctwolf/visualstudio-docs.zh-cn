@@ -1,31 +1,29 @@
 ---
 title: 远程调试远程 IIS 7.5 上的 ASP.NET 计算机 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de51ed1cda2116b1f3b8b698be6e4653a1b648fa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 124a4775593a161b1de7f55465bf20739909e4f8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477633"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239845"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[远程 IIS 计算机上的远程调试 ASP.NET](https://docs.microsoft.com/visualstudio/debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer)。  
-  
 可以部署到 Windows Server 计算机有 IIS、 ASP.NET Web 应用程序并将其设置为远程调试。 本指南介绍如何设置和配置 Visual Studio 2015 MVC 4.5.2 应用程序、 将其部署到 IIS，并从 Visual Studio 附加远程调试器。
 
 这些服务器配置上进行了测试这些过程：
@@ -38,7 +36,7 @@ ms.locfileid: "47477633"
 
 有关如何下载到 Windows Server 计算机的远程调试器的说明，请参阅[远程调试](../debugger/remote-debugging.md)。
 
-若要执行远程调试 ASP.NET 应用程序，可以以管理员身份运行远程调试器应用程序或作为服务启动远程调试器。 有关如何运行远程调试器作为服务可在详细信息[远程调试](../debugger/remote-debugging.md)。
+若要执行远程调试 ASP.NET 应用程序，可以以管理员身份运行远程调试器应用程序或作为服务启动远程调试器。 有关如何运行作为一项服务的远程调试器的详细信息，请参阅 [Remote Debugging](../debugger/remote-debugging.md)。
 
 安装后，请确保在目标计算机上运行远程调试器。 (如果不是，搜索**远程调试器**中**启动**菜单。 ） 在远程调试器窗口外观如下所示。 （4020 是默认端口号）
 

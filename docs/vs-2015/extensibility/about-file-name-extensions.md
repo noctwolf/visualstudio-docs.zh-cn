@@ -1,7 +1,7 @@
 ---
 title: 有关文件扩展名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99f4f9ff-fb84-4258-9787-6890f308a57f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b8a299d7b2470b16761e4a418e0717a91c2929e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4278e27b4070ad3330b488cb8b426ffbd6484b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483667"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279807"
 ---
 # <a name="about-file-name-extensions"></a>关于文件扩展名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[文件扩展名有关](https://docs.microsoft.com/visualstudio/extensibility/about-file-name-extensions)。  
-  
 当你注册 VSPackage 的文件扩展名时，您将其与关联的版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 这是重要如果多个是的一个版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的计算机上安装。  
   
  在 HKEY_CLASSES_ROOT 项默认值指向关联的编程标识符 (ProgID) 下注册 Vspackage 的文件扩展名。  

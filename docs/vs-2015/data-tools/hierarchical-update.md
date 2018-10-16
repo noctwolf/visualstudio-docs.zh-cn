@@ -1,7 +1,7 @@
 ---
 title: 分层更新 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ddef56f8ec38d73524db661b89e83c456bc50ce0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470410"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239377"
 ---
 # <a name="hierarchical-update"></a>分层更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[分层更新](https://docs.microsoft.com/visualstudio/data-tools/hierarchical-update)。  
-  
   
 分层更新 * 是指同时保持引用完整性规则保存更新后 （从具有两个或多个相关表的数据集） 返回到数据库的数据的过程。 *引用完整性*指提供的控制行为的插入、 更新和删除相关的记录在数据库中的约束的一致性规则。 例如，它是强制执行之前允许该客户的订单来创建客户记录的创建的引用完整性。  有关数据集中的关系的详细信息，请参阅[数据集中的关系](../data-tools/relationships-in-datasets.md)  
   

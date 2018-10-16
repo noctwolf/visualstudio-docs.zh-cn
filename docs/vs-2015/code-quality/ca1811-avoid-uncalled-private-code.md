@@ -1,7 +1,7 @@
 ---
 title: CA1811： 避免使用未调用的私有代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2f08d3fe31d6a314de9bc64441add64246f8e256
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 6907ffdfc8fa7fec097ce1c1adf9eeabdd890ccc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293561"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811：避免使用未调用的私有代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1811： 避免使用未调用的私有代码](https://docs.microsoft.com/visualstudio/code-quality/ca1811-avoid-uncalled-private-code)。
-
 |||
 |-|-|
 |TypeName|AvoidUncalledPrivateCode|

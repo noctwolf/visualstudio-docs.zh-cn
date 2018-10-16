@@ -1,7 +1,7 @@
 ---
 title: 输出窗口中，调试时，选项对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 261caacef72a9cf69a006a9cf5755f995d802a6b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af695921dfe63db4997879477d7acb6b60450f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477707"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304364"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“输出”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[输出窗口中，调试，Options Dialog Box](https://docs.microsoft.com/visualstudio/debugger/output-window-debugging-options-dialog-box)。  
-  
 您可以指定哪些类型的调试信息显示在**输出**窗口。 若要显示这些选项，请打开**工具**菜单上，单击**选项**，展开**调试**节点，然后单击**输出窗口**。  
   
  **常规输出设置**  

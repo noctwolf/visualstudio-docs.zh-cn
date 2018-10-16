@@ -1,7 +1,7 @@
 ---
 title: 如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 145ff7018077fcdbff7354ddcf514688d925443d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d9ba085eaf6aa66250008c30e13442857569b6d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227275"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>如何：使用命令行将探查器附加到 ASP.NET Web 应用程序以收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用命令行附加到 ASP.NET Web 应用程序以收集内存数据 Profiler](https://docs.microsoft.com/visualstudio/profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line)。  
-  
 本主题介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具将探查器附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序，以及如何收集有关 .NET Framework 内存分配数量和大小的数据。 也可以收集有关 .NET Framework 内存对象生存期的数据。  
   
 > [!NOTE]

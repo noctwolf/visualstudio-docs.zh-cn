@@ -1,7 +1,7 @@
 ---
 title: 如何： 验证 IIS 属性设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46daaa21a75e221a3174092032c3b7b99dee7d59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38e647c25268b8d7c9e55fe1ee30f933a66f9f72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469915"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236140"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>如何：验证 IIS 属性设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 验证 IIS 属性设置](https://docs.microsoft.com/visualstudio/debugger/how-to-verify-iis-property-settings)。  
-  
 使用 IIS 管理工具，可以设置 Web 应用程序的属性。 这些属性必须正确设置，应用程序才能运行，所以，验证这些设置通常是疑难解答的必需步骤。  
   
 > [!NOTE]

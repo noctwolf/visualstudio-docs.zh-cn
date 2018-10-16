@@ -1,7 +1,7 @@
 ---
 title: 文本模板转换过程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c7b39517e5e4c88bbefe6bf378e1dffd3c233872
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481288"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203770"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[文本模板转换过程](https://docs.microsoft.com/visualstudio/modeling/the-text-template-transformation-process)。  
-  
 文本模板转换过程将文本模板文件作为输入并生成一个新的文本文件作为输出。 例如，可以使用文本模板来生成 Visual Basic 或 C# 代码，或可以生成一份 HTML 报告。  
   
  三个组件参与此过程： 引擎、 主机和指令处理器。 引擎控制该过程;它与宿主和指令处理器生成输出文件进行交互。 主机提供与环境中，如定位文件和程序集进行任何交互。 指令处理器添加功能，例如，在从 XML 文件或数据库读取数据。  

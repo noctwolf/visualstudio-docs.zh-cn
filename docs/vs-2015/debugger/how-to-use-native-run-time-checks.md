@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用本机运行时检查 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -46,19 +46,17 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e90af82b5f3d7cd88d3b8488b0ebd9a4359b566f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470880"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220215"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用本机运行时检查](https://docs.microsoft.com/visualstudio/debugger/how-to-use-native-run-time-checks)。  
-  
-在 Visual c + +，可以使用本机[runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)以捕获运行时的常见错误，例如：  
+在 Visual C++ 中，可以使用本机 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 捕获常见的运行时错误，例如：  
   
 -   堆栈指针损坏。  
   

@@ -1,7 +1,7 @@
 ---
 title: 扩展的解决方案资源管理器筛选器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: df93778a54da9c24b59228bd27e4930721273cbf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dfe0d8e8341847941880bd2b44ee29341cc07ec
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483552"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195749"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展解决方案资源管理器筛选器](https://docs.microsoft.com/visualstudio/extensibility/extending-the-solution-explorer-filter)。  
-  
 您可以扩展**解决方案资源管理器**筛选功能，以显示或隐藏不同的文件。 例如，可以创建筛选器，显示仅 C# 类工厂中的文件**解决方案资源管理器**，如本演练中所示。  
   
 ## <a name="prerequisites"></a>系统必备  

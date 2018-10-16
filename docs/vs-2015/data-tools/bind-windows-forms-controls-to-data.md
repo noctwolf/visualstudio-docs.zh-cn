@@ -1,7 +1,7 @@
 ---
 title: 将 Windows 窗体控件绑定到数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3f454e1eb6e754327a50b22a4aefdc5e4afa0eb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472255"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237466"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>将 Windows 窗体控件绑定到数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[绑定 Windows 窗体控件添加到数据](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data)。  
-  
   
 您可以将数据源绑定到控件中通过将对象从拖**数据源**窗口拖到 Windows 窗体或拖动到窗体上现有控件上。 拖动项之前，您可以设置想要将绑定到控件的类型。 具体取决于您选择表本身，或单独的列显示不同的值。  此外可以设置自定义值。 对于表中，"详细信息"意味着，每个列绑定到一个单独的控件。  
   

@@ -1,7 +1,7 @@
 ---
 title: 生成并配置将应用程序模型从 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d972e56ebd434f9e302d48ce325c66320f50be74
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c236a0b0896c135035d4d20eecfe5379b62522a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484212"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240638"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>从模型中生成并配置你的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[生成和配置将应用程序模型从](https://docs.microsoft.com/visualstudio/modeling/generate-and-configure-your-app-from-models)。  
-  
 你可从模型生成或配置你的应用程序的不同部件。 模型可以是 UML 或 DSL。  
   
  模型比代码更能直接表示要求。 与更新代码相比，通过直接从模型派生应用程序的行为，你可以更加快速可靠地对更改的需求做出响应。 尽管需要做一些初始工作来设置派生，但如果你预计要求会发生改变，或者你计划生成产品的几个变体，则这种投资是会有回报的。  

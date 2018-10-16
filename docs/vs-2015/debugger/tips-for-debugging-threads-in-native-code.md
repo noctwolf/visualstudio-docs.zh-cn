@@ -1,7 +1,7 @@
 ---
 title: 调试本机代码中的线程的提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02343da30e4f185a5b4aa236ed9b0b3ef823c4bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 06e8690583794c23ce95fb52ef6cab3ab6667afe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184920"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>调试本机代码中的线程时的提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试本机代码中的线程的提示](https://docs.microsoft.com/visualstudio/debugger/tips-for-debugging-threads-in-native-code)。  
-  
 下面是在调试本机代码中的线程时可以使用的一些提示：  
   
 -   可以通过键入查看线程信息块的内容`@TIB`中**观看**窗口或**快速监视**对话框。  

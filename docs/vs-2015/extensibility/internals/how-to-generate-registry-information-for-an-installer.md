@@ -1,7 +1,7 @@
 ---
 title: 如何： 生成安装程序的注册表信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a9d23c0c4c6dab73be10425291c9623bf8c01553
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 15e5d71786b64b9224d89ca6a84eb7186cb12437
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480687"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294783"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 生成安装程序的注册表信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 生成安装程序的注册表信息](https://docs.microsoft.com/visualstudio/extensibility/internals/how-to-generate-registry-information-for-an-installer)。  
-  
 RegPkg.exe 实用程序可用于生成托管的 VSPackage 注册清单。 清单可以合并到一个 Windows 安装程序安装程序包。 RegPkg 还可以生成可以在基于安装程序源文件中包含的文件[Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=62238)。  
   
 > [!IMPORTANT]

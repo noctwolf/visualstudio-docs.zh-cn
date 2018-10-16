@@ -1,7 +1,7 @@
 ---
 title: 如何： 将图形诊断用于 ARM 设备 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24067412f875001185a0709c41f930ce3cdc8f3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0b5b2430f0fe3ca5100fdec072fdf9e21eb221b2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479998"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255822"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>如何：使用图形诊断和 ARM 设备
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用图形诊断与 ARM 设备](https://docs.microsoft.com/visualstudio/debugger/graphics/how-to-use-graphics-diagnostics-with-an-arm-device)。  
-  
 图形诊断支持在运行 Windows RT 8.1 或 Windows Phone 8.1 的基于 ARM 的设备上远程调试 Direct3D 应用。 你可以在 Direct3D 应用在设备上运行时从该应用中捕获图形信息，或将设备用作之前捕捉到的图形信息的播放计算机。  
   
 ## <a name="using-graphics-diagnostics-with-an-arm-based-device"></a>将图形诊断用于基于 ARM 的设备  

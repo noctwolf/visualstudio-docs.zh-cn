@@ -1,7 +1,7 @@
 ---
 title: 如何： 打开项目特定的编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2a529237b8aa77fbb909278d5a7accd2e9a45265
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 255d95d92aae3f73e4c5f77a6f7a5a4219d73d19
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484033"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198141"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何： 打开项目特定的编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 打开项目特定的编辑器](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-project-specific-editors)。  
-  
 如果要打开的项目项文件本质上绑定到该项目的特定编辑器中，项目必须使用特定于项目的编辑器打开文件。 该文件不能被委派到 IDE 的机制，用于选择一个编辑器。 例如，而不是使用标准的位图编辑器，您可以使用此项目特定的编辑器选项来指定一个特定的位图编辑器，识别仅适用于你的项目文件中的信息。  
   
  IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.OpenItem%2A>方法时它会确定应由特定项目打开的文件。 有关详细信息，请参阅[通过使用打开文件命令显示文件](../extensibility/internals/displaying-files-by-using-the-open-file-command.md)。 使用以下指导原则来实现`OpenItem`方法，以使您通过使用特定于项目的编辑器打开文件的项目。  

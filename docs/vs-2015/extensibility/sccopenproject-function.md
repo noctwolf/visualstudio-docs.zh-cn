@@ -1,7 +1,7 @@
 ---
 title: SccOpenProject 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 988d869d0cca977705efa8c5363f70317c063e69
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c2118d6ed43355d6882c1c2034388f3c438a5a6f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479864"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264376"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccOpenProject 函数](https://docs.microsoft.com/visualstudio/extensibility/sccopenproject-function)。  
-  
 此函数将打开现有的源代码管理项目，或创建一个新。  
   
 ## <a name="syntax"></a>语法  

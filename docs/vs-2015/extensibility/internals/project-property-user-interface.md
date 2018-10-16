@@ -1,7 +1,7 @@
 ---
 title: 项目属性用户界面 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b9418603e13fad91aa9d40c2d05f6ebc1d83a5e9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57c9bb58ab1d930c6beb2e1cfa9cc4b9b6ec52fc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479682"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172284"
 ---
 # <a name="project-property-user-interface"></a>项目属性用户界面
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目属性用户界面](https://docs.microsoft.com/visualstudio/extensibility/internals/project-property-user-interface)。  
-  
 项目子类型可以在项目中使用的项**属性页**对话框中为它们提供的基础项目中，隐藏或使只读控件和的整个页面提供，或将项目子类型特定于页面添加到**属性页**对话框。  
   
 ## <a name="extending-the-project-property-dialog-box"></a>扩展项目属性对话框  

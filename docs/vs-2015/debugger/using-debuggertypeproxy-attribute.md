@@ -1,7 +1,7 @@
 ---
 title: 使用 DebuggerTypeProxy 特性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa4b5d363366f61b9001a3ac7f476804c0c2de19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e0014ec8677cf8b437780ab23fdd521f3ec5f938
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470447"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196308"
 ---
 # <a name="using-debuggertypeproxy-attribute"></a>使用 DebuggerTypeProxy 特性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 DebuggerTypeProxy 特性](https://docs.microsoft.com/visualstudio/debugger/using-debuggertypeproxy-attribute)。  
-  
 DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAttribute?qualifyHint=False 和自动升级 = True) 指定一个代理或替身，并更改类型的方式显示在调试器窗口。 查看具有代理的变量时，代理将代替原始类型出现在**显示**。 调试器变量窗口仅显示代理类型的公共成员。 不会显示私有成员。  
   
  此特性可应用于：  
@@ -62,7 +60,7 @@ DebuggerTypeProxyAttribute] (assetId:///T:System.Diagnostics.DebuggerTypeProxyAt
   
  `Namespace.TypeName<,>`  
   
- 如果使用泛型类型作为 `DebuggerTypeProxy` 中的目标，则必须使用该语法。 `DebuggerTypeProxy` 机制将为您推理类型参数。  
+ 如果使用泛型类型作为 `DebuggerTypeProxy` 中的目标，则必须使用该语法。 `DebuggerTypeProxy` 机制将为你推理类型参数。  
   
  C# 中的打开和关闭类型的详细信息请参阅[C# 语言规范](http://msdn.microsoft.com/library/e5d5a5cc-636b-4bff-b9c8-a8edc6207c22)，第 20.5.2 节打开和关闭类型。  
   

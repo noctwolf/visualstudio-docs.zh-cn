@@ -1,7 +1,7 @@
 ---
 title: 用于设计支持辅助功能的应用程序的资源 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4576508ba8864e6fc85d4151f3ae696e39a18c34
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ea004e0b0bf106bf4e7b795cd684357733a2589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477625"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178277"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计支持辅助功能的应用程序的资源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设计可访问应用程序的资源](https://docs.microsoft.com/visualstudio/ide/reference/resources-for-designing-accessible-applications)。  
-  
   
 使用以下链接可查找有关支持可访问设计的信息以及用于开发可访问 Windows 应用程序和网站的提示和示例。 可以在 [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/) 处联机查找有关辅助功能的常规信息。  
   

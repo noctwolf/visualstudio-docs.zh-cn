@@ -1,7 +1,7 @@
 ---
 title: 清单： 创建旧版语言服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d04e163e45c9a5932375ffec0f0e75ef8254cfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1eaf68ccc9a40e0ead91ab6d46cde0ec2cf5cbce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479995"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242783"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>清单：创建旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[清单： 创建旧版语言服务](https://docs.microsoft.com/visualstudio/extensibility/internals/checklist-creating-a-legacy-language-service)。  
-  
 以下清单汇总了要创建的语言服务，必须执行的基本步骤[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心编辑器。 若要将集成到语言服务[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，必须创建调试表达式计算器。 有关详细信息，请参阅[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)中[Visual Studio 调试器可扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)。  
   
 ## <a name="steps-for-creating-a-language-service"></a>创建语言服务的步骤  

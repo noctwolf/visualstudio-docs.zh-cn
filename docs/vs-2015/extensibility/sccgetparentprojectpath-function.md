@@ -1,7 +1,7 @@
 ---
 title: SccGetParentProjectPath 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 640b286de66a9977e90b2d095ca63877b943dba1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 163eb06fec2a66ff824447045203e707142a6969
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481558"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240781"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccGetParentProjectPath 函数](https://docs.microsoft.com/visualstudio/extensibility/sccgetparentprojectpath-function)。  
-  
 此函数将确定指定的项目的父项目路径。 用户将 Visual Studio 项目添加到源代码管理时，调用此函数。  
   
 ## <a name="syntax"></a>语法  

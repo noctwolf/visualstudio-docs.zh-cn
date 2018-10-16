@@ -1,7 +1,7 @@
 ---
 title: 如何：将项目配置为面向多个平台 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07c949e392ee2203804a8675a7659e71ced5c0fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482754"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194735"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 配置项目以面向多个平台](https://docs.microsoft.com/visualstudio/ide/how-to-configure-projects-to-target-multiple-platforms)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 提供了一种能够同时面向多个不同的 CPU 体系结构或平台的解决方案。 可通过“配置管理器”对话框访问设置这些功能的属性。  
   
 ## <a name="targeting-a-platform"></a>面向平台  

@@ -1,7 +1,7 @@
 ---
 title: UnregisterAssembly 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d363d56b6b4cfd9b8112729a3434fa517d8f519d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484354"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298605"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UnregisterAssembly 任务](https://docs.microsoft.com/visualstudio/msbuild/unregisterassembly-task)。  
-  
   
 注销用于 COM 互操作的指定程序集。 执行 [RegisterAssembly 任务](../msbuild/registerassembly-task.md)的相反任务。  
   

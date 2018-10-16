@@ -1,7 +1,7 @@
 ---
 title: 将 Visual Studio 命令添加到起始页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3625f64686265123cd0b7e6f432db47cd978ae3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8a301357765f85d80afb71985d51044227204997
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256231"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[到起始页添加 Visual Studio 命令](https://docs.microsoft.com/visualstudio/extensibility/adding-visual-studio-commands-to-a-start-page)。  
-  
 当创建自定义起始页时，可以将 Visual Studio 命令添加到它。 本文档讨论了将 Visual Studio 命令绑定到 XAML 对象起始页上的不同方式。  
   
  有关在 XAML 中的命令的详细信息，请参阅[命令概述](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  

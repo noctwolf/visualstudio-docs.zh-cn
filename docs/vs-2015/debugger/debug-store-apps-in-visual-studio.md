@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中的调试应用商店应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3afe6e31062b8f55add97455f0e1836128b7d0e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f2e9780672abbff1cec9c74298579e575e59a665
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481586"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219136"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>在 Visual Studio 中调试应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 中的调试应用商店应用](https://docs.microsoft.com/visualstudio/debugger/debug-store-apps-in-visual-studio)。  
-  
 你可以通过 Visual Studio 调试器控制程序的执行并检查其状态。 可以使用调试器查找 Windows 应用商店应用中出现缺陷的原因，还可以确切地了解应用的工作方式。 当在调试器中暂停（中断）执行时，Visual Studio 将显示源文件，该源文件包含执行代码并突出显示执行语句。 可以查看变量值、执行函数的调用堆栈以及程序状态的其他方面。 一次可使用一个语句来继续执行（分步完成）程序，以查看语句如何更改该程序的值。 在使用 JavaScript 编写的应用中，你可以检查并操作页面的 DOM。  
   
 ## <a name="in-this-section"></a>本节内容  

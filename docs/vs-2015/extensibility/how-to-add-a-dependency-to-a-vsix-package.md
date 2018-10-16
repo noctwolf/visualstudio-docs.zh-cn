@@ -1,7 +1,7 @@
 ---
 title: 如何： 将依赖项添加到 VSIX 包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ebd835fef9df8fbdeb67bdf9c7e6eff31bcf4730
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ad1c743f9fa5f0e0446eedf59dcbf4dd961be7aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481395"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219760"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何： 将依赖项添加到 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 将依赖项添加到 VSIX 包](https://docs.microsoft.com/visualstudio/extensibility/how-to-add-a-dependency-to-a-vsix-package)。  
-  
 您可以设置安装尚不存在于目标计算机上的任何依赖项的 VSIX 包部署。 若要实现此目的，包括到 source.extension.vsixmanifest 文件中的 VSIX 依赖项。  
   
 #### <a name="to-add-a-dependency"></a>若要添加的依赖项  

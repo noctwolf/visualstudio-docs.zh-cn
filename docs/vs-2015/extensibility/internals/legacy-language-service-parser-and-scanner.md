@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务分析器和扫描程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5bd5fa0fd23f2608e7cfd00896b0632cfb13fa38
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f3d704be00294f1b7b52e5a9bd4a01d0692bc5ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880228"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255278"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务分析器和扫描程序](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-parser-and-scanner)。  
-  
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要一个语言分析器，以选择要显示的代码有关的信息。 分析器将文本分隔成词法标记，然后确定这些令牌的类型和功能。  
   
 ## <a name="discussion"></a>讨论  

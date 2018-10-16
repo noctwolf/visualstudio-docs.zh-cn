@@ -1,7 +1,7 @@
 ---
 title: 添加新的连接 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13398a1b0aebc921c9600518c87888bd2b5cdea7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471451"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218499"
 ---
 # <a name="add-new-connections"></a>添加新连接
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加新连接](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)。  
-  
   
 可以测试连接到数据库或服务，并浏览数据库内容和架构，通过使用**服务器资源管理器**，**云资源管理器**，或**SQL Server 对象资源管理器**. 某种程度上重叠的这些 windows 功能。 基本区别如下：  
   

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 应用程序清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 28d96d1edaba18b6b6c171139db116ad7f8b49bc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57e48816ede7210a268cc465da1eee3b6ff43d02
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479977"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49289583"
 ---
 # <a name="clickonce-application-manifest"></a>ndptecclick
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 应用程序清单](https://docs.microsoft.com/visualstudio/deployment/clickonce-application-manifest)。  
-  
 一个[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序清单是一个 XML 文件，描述的应用程序使用部署[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序清单具有以下元素和属性。  
@@ -44,7 +42,7 @@ ms.locfileid: "47479977"
 |[\<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md)|标识应用程序安全性要求。|无|  
 |[\<入口点 > 元素](../deployment/entrypoint-element-clickonce-application.md)|必须的。 标识应用程序代码入口点。|`name`|  
 |[\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md)|必须的。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。|无|  
-|[\<文件 > 元素](../deployment/file-element-clickonce-application.md)|可选。 标识应用程序使用每个非程序集文件。 可以包括与文件关联的组件对象模型 (COM) 隔离数据。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
+|[\<file> 元素](../deployment/file-element-clickonce-application.md)|可选。 标识应用程序使用每个非程序集文件。 可以包括与文件关联的组件对象模型 (COM) 隔离数据。|`name`<br /><br /> `size`<br /><br /> `group`<br /><br /> `optional`<br /><br /> `writeableType`|  
 |[\<fileAssociation > 元素](../deployment/fileassociation-element-clickonce-application.md)|可选。 标识要与应用程序相关联的文件扩展。|`extension`<br /><br /> `description`<br /><br /> `progid`<br /><br /> `defaultIcon`|  
   
 ## <a name="remarks"></a>备注  

@@ -1,7 +1,7 @@
 ---
 title: “线程详细信息”视图 - 争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32dd4ed90a30146a75132fcf0954b7b50fba87a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 252afc79d7d6d9ecdce5cf0c8a543dffcc8ebc01
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479528"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275530"
 ---
 # <a name="thread-details-view---contention-data"></a>“线程详细信息”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[线程详细信息视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/thread-details-view-contention-data)。  
-  
 “线程详细信息”视图显示在分析运行的所选线程中，针对资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。  
   
  此视图将线程的执行时间线表示为水平条，而将阻塞事件表示为线程水平时间线上的垂直条。 如有必要，可以放大时间线的每个部分以查看单个事件。 若要查看导致事件的函数的执行路径，请单击事件条。 函数会出现在“调用堆栈”窗口中。 当函数的源代码可用时，可以单击该函数名，以便在 Visual Studio IDE 中编辑源文件。  

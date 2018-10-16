@@ -1,7 +1,7 @@
 ---
 title: 代码清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f0809d44afb6777f26ea6b863ede765d93b5d24f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c6cc419104e8fe094034b7df35cb7e731228373
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281341"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[清单复制到代码](https://docs.microsoft.com/visualstudio/extensibility/internals/manifest-to-code)。  
-  
 代码工具清单是一个控制台应用程序的 Visual Studio 映像服务获取.imagemanifest 文件，并生成包装文件或文件的引用在 c + +、 C#、 VB 或 Visual Studio 扩展的.vsct 文件中的图像清单值。 此工具生成可用于从 Visual Studio 映像服务直接请求映像或传递通过 Api 清单的值，如果代码不会处理任何其自己的 UI 和呈现的包装器文件。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用该工具  

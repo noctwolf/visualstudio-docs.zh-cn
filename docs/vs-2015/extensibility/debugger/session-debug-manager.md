@@ -1,7 +1,7 @@
 ---
 title: 会话调试管理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aaeac3a5e728d73700b5c2b12d68f5918fd6e658
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f963b67441dd9a3029c374baa190a50e67bf1285
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484501"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247594"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[会话调试管理器](https://docs.microsoft.com/visualstudio/extensibility/debugger/session-debug-manager)。  
-  
 会话调试管理器 (SDM) 管理任意数量的调试任意数量的任意数量的计算机上的多个进程中的程序的调试引擎 (DE)。 除了多路复用器的调试引擎外，SDM 提供到 IDE 的调试会话的统一的视图。  
   
 ## <a name="session-debug-manager-operation"></a>会话调试管理器操作  

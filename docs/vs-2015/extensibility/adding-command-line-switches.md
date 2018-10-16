@@ -1,7 +1,7 @@
 ---
 title: 添加命令行开关 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4a9b9041183b22612c36e98f502d01ee3b62e36
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480342"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188730"
 ---
 # <a name="adding-command-line-switches"></a>添加命令行开关
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加命令行开关](https://docs.microsoft.com/visualstudio/extensibility/adding-command-line-switches)。  
-  
 您可以添加执行 devenv.exe 时应用于你的 VSPackage 的命令行开关。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明的开关和其属性的名称。 在此示例中，MySwitch 的交换机添加为子类名为 VSPackage **AddCommandSwitchPackage**不带任何参数且会自动加载 VSPackage。  
   
 ```csharp  

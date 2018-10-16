@@ -1,7 +1,7 @@
 ---
 title: 自动化模型概述 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fdce23e892fe2fa14dc7f24f95d5744be2c67c39
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477557"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235685"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自动化模型概述](https://docs.microsoft.com/visualstudio/extensibility/internals/automation-model-overview)。  
-  
 自动化模型包含一组可以对其编写的 Visual Studio 外接程序或扩展的对象。 外接程序是可以操作在 Visual Studio 环境，并自动执行常见任务的应用程序。 Visual Studio 扩展可以创建自定义 Visual Studio 组件或添加到标准组件，如文本编辑器功能。  
   
 ## <a name="objects-in-the-automation-model"></a>自动化模型中的对象  

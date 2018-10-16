@@ -1,7 +1,7 @@
 ---
 title: 如何： 访问和约束当前所选内容 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 308187842eeaed8e216336ab84c6e9036c1ced70
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8ff7ae0b0e006528b11604f54dc74170857cf7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482589"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187557"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 访问和约束当前所选内容](https://docs.microsoft.com/visualstudio/modeling/how-to-access-and-constrain-the-current-selection)。  
-  
 当为特定于域的语言编写命令或笔势处理程序时，可以确定用户右键单击哪些元素。 您也可以选择阻止某些形状或字段。 例如，您可以排列当用户单击图标修饰器，而是选择包含该形状。 约束中这种方式的选择可减少必须编写的处理程序的数量。 它还更加简单的用户，可以单击任意位置在形状中而无需避免修饰器。  
   
 ## <a name="accessing-the-current-selection-from-a-command-handler"></a>从命令处理程序访问当前所选内容  

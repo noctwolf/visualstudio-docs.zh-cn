@@ -1,7 +1,7 @@
 ---
 title: 图像库查看器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1af471eeada5f6da04f4fdf6b4ee69cc0741110b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484511"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49184101"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图像库查看器](https://docs.microsoft.com/visualstudio/extensibility/internals/image-library-viewer)。  
-  
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：  
   
 1.  诊断错误  

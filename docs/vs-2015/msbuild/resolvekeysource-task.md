@@ -1,7 +1,7 @@
 ---
 title: ResolveKeySource 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a51b9b07be214a6713da4d9d6f9ccf99814b270f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1297b50390d98239fae491e0567abc7485202cff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482214"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219825"
 ---
 # <a name="resolvekeysource-task"></a>ResolveKeySource 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ResolveKeySource 任务](https://docs.microsoft.com/visualstudio/msbuild/resolvekeysource-task)。  
-  
   
 确定强名称密钥源。  
   

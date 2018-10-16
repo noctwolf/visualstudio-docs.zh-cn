@@ -1,7 +1,7 @@
 ---
 title: 服务 Essentials |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 497f894f1ae8eef6c58ffeea542128105a51336b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec9ccc92a8650c71336fc4a6916b797bd449dc7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178122"
 ---
 # <a name="service-essentials"></a>服务基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[服务基础知识](https://docs.microsoft.com/visualstudio/extensibility/internals/service-essentials)。  
-  
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 提供一组特定的另一个 VSPackage 来使用的接口。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 本身就是向其他 Vspackage 提供服务的 Vspackage 的集合。  
   
  例如，SVsActivityLog 服务可用于获取 IVsActivityLog 接口，它可用于写入活动日志。 有关详细信息，请参阅[如何： 使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。  

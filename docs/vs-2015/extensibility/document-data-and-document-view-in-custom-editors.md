@@ -1,7 +1,7 @@
 ---
 title: 文档数据和文档视图中自定义编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6df543f832fa85ea6d74fc2846355fbf9deab912
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 258718a99e774b7098ff29dd66efc51a57062475
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470568"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206903"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自定义编辑器中的文档数据和文档视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[文档数据和自定义编辑器中的文档视图](https://docs.microsoft.com/visualstudio/extensibility/document-data-and-document-view-in-custom-editors)。  
-  
 自定义编辑器由两部分组成： 文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据和文档视图对象 （或"视图"） 表示要在其中显示文档数据对象的一个或多个窗口。  
   
 ## <a name="document-data-object"></a>文档数据对象  

@@ -1,7 +1,7 @@
 ---
 title: 从文本模板访问模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5f23a080f33b668d185f4e7b1409da5b4ac97deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479468"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257187"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从文本模板访问模型](https://docs.microsoft.com/visualstudio/modeling/accessing-models-from-text-templates)。  
-  
 通过使用文本模板，可以创建报表文件、 源代码文件和其他基于特定于域的语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时你正在调试你的 DSL 中，将在实验模式下工作，还将具有在其部署 DSL 的计算机上工作。  
   
 > [!NOTE]

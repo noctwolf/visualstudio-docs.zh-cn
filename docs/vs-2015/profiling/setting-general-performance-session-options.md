@@ -1,7 +1,7 @@
 ---
 title: 设置性能会话的常规选项 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: abf40be314191096447e389ef145385d2e0f616b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33848b2985cdc4303b75bdc493bfaf33af36b1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477302"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256771"
 ---
 # <a name="setting-general-performance-session-options"></a>设置性能会话的常规选项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设置的常规性能会话选项](https://docs.microsoft.com/visualstudio/profiling/setting-general-performance-session-options)。  
-  
 可以在性能会话的属性对话框的“常规”页上设置 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具性能会话的收集方法和分析数据命名约定。 若要从“性能资源管理器”中打开此对话框，请右键单击性能会话，然后单击“属性”。  
   
  **要求**  

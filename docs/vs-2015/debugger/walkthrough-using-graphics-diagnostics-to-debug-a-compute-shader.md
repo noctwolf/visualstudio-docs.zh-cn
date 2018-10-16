@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用图形诊断来调试计算着色器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c46db6517571e1d5df592ce322c89c1b18c75926
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9742fa2c17bf982cde7c919648d76c63ff761ac4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483181"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250141"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>演练：使用图形诊断来调试计算着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用图形诊断来调试计算着色器](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader)。  
-  
 本演练演示如何使用 Visual Studio 图形诊断工具来调查生成错误结果的计算着色器。  
   
  此演练阐释了以下任务：  
@@ -41,7 +39,7 @@ ms.locfileid: "47483181"
   
  ![模拟的流体的行为不正确。](../debugger/media/gfx-diag-demo-compute-shader-fluid-problem.png "gfx_diag_demo_compute_shader_fluid_problem")  
   
- 有关如何捕获图形日志中的图形问题的信息，请参阅[捕获图形信息](../debugger/capturing-graphics-information.md)。  
+ 有关如何捕获图形日志中的图形问题的信息，请参阅 [Capturing Graphics Information](../debugger/capturing-graphics-information.md)。  
   
 ## <a name="investigation"></a>调查  
  可以使用“图形诊断”工具加载图形日志文件，以便检查捕获的帧。  

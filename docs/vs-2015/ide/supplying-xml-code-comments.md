@@ -1,7 +1,7 @@
 ---
 title: 提供 XML 代码注释 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 82a76cdc9da6a9d289ca325caf36f6ff2c159770
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 77c0eab37d23a9324d10c89b435f771dba28e634
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880430"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185453"
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 代码注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[提供 XML 代码注释](https://docs.microsoft.com/visualstudio/ide/supplying-xml-code-comments)。  
-  
 你可以将源代码文件中的注释作为 IntelliSense 提供。 将 /doc 开关添加到 Visual Basic、C# 或 C++ 编译器命令行时，会生成一个 .xml 文件，作为 IntelliSense 文档的基础。  
   
  有关在 Visual Basic 中的代码文档化的详细信息，请参阅[如何： 创建 XML 文档](http://msdn.microsoft.com/library/27b5b06c-09b9-496a-8245-f9542d846230)。  

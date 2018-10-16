@@ -1,14 +1,14 @@
 ---
 title: 使用调试器浏览代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.execution
 dev_langs:
@@ -26,18 +26,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81b5bbca0b547510056b1aecfa0e7237e40a9814
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186148"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用调试器浏览代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[与 Visual Studio 中调试器导航代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)。  
-  
 帮助熟悉命令和快捷方式在调试器中的代码中导航，这样做更快、 更轻松地查找和解决您的应用程序中的问题。 导航代码在调试器中的，您可以[检查您的应用程序的状态](https://msdn.microsoft.com/library/mt243867.aspx#BKMK_Inspect_Variables)或了解有关其执行流的详细信息。  
   
 ## <a name="start-debugging"></a>“启动调试”  

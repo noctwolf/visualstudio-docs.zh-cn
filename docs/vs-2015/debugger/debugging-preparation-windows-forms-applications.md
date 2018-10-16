@@ -1,7 +1,7 @@
 ---
 title: 调试准备： Windows 窗体应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7f362db7c0ba56db2b5b5f2362ea7755e3076a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9448b6116f59f22aed6dd0796a3409806021ba0e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480237"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262153"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试准备： Windows 窗体应用程序](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-windows-forms-applications)。  
-  
 Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建一个 Windows 应用程序项目](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
   
  用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以更改这些设置在**\<项目名称 > 属性页**对话框的 (**我的项目**在 Visual Basic 中)。  

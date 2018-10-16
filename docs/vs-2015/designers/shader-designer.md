@@ -1,7 +1,7 @@
 ---
 title: 着色器设计器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a8a6e0bb39ee501f72c96b55575859af0ce1e26
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483936"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182788"
 ---
 # <a name="shader-designer"></a>着色器设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[着色器设计器](https://docs.microsoft.com/visualstudio/designers/shader-designer)。  
-  
 本文档介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 着色器设计器来创建、修改和导出名为“着色器”的自定义视觉效果。  
   
  即使不了解 HLSL 编程，也可以使用着色器设计器来创建游戏或应用的自定义视觉效果。 若要在着色器设计器中创建着色器，只需将其作为图形进行布局；即添加到表示数据和操作的设计图面节点，然后在二者之间建立连接来定义操作处理数据的方式。 在每个操作节点处，提供了到该点的效果预览，使你能够对其结果进行可视化。 数据通过节点流向表示着色器输出的最后一个节点。  

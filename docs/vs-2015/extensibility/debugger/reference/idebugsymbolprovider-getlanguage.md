@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetLanguage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 860e069b35edd122028766c4d060593bb66bbcda
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 130cfc1a0b1e594deb460839162dd3d68cb5f525
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280236"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugSymbolProvider::GetLanguage](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugsymbolprovider-getlanguage)。  
-  
 此方法获取用于编译调试地址处的代码的语言。  
   
 ## <a name="syntax"></a>语法  

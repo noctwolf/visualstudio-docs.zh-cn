@@ -1,7 +1,7 @@
 ---
 title: IDiaSession::findInlineeLinesByRVA |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f4a2b7acd6cbae11a06d1e6c047426081798096
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb82755ccdcddebc923524373204ee213ce87310
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239352"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDiaSession::findInlineeLinesByRVA](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasession-findinlineelinesbyrva)。  
-  
 检索一个枚举，它允许客户端可以循环访问的所有函数的内联，直接或间接地，由指定的父符号的行号信息且包含在指定的相对虚拟地址 (RVA)。  
   
 ## <a name="syntax"></a>语法  

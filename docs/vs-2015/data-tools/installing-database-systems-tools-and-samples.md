@@ -1,7 +1,7 @@
 ---
 title: 安装数据库系统、 工具和示例 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1dea5adb6903c7beaf39c65909296224afa2a44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f18ace9a18eefd0758e581b83001b85c3f48a3da
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470150"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244278"
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>安装数据库系统、 工具和示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[安装数据库系统、 工具和示例](https://docs.microsoft.com/visualstudio/data-tools/installing-database-systems-tools-and-samples)。  
-  
   
 Visual Studio 本身不包括任何数据库系统之外，它在内部使用。 若要开发 Visual Studio 中的数据连接应用程序，您通常在本地开发计算机上安装数据库系统，然后部署应用程序和数据库到生产环境时，他们就可以。 对于数据库系统可从.NET 应用程序，可以在 Visual Studio 数据工具窗口中可见，它必须具有 ADO.NET 数据提供程序。 如果你打算在.NET 应用程序中使用实体数据模型提供程序必须支持实体框架。     通过 NuGet 包管理器或通过 Visual Studio 库提供多个提供程序。  
   

@@ -1,7 +1,7 @@
 ---
 title: 保护 ClickOnce 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 247ebd5a68f4bb3936d9b67779f7d67d0a1ccf85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae5bd70a675798d971cb184038a7e036d04fc95a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247216"
 ---
 # <a name="securing-clickonce-applications"></a>保护 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[保护 ClickOnce 应用程序](https://docs.microsoft.com/visualstudio/deployment/securing-clickonce-applications)。  
-  
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序受 .NET Framework 中代码访问安全性约束的限制，以帮助限制代码访问受保护的资源和操作的权限。 因此，了解代码访问安全性的含义以相应地编写 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序是十分重要的。 您的应用程序可以使用完全信任或使用部分区域（如 Internet 区域和 Intranet 区域）来限制访问权限。  
   
  此外，ClickOnce 使用证书验证应用程序发行者的真实性，并使用证书为应用程序和部署清单签名，以证明文件未被篡改。 签名是一个可选的步骤，它会使在生成清单以后更改应用程序文件更容易。 然而，在没有签名清单的情况下，很难确保应用程序安装程序在受到中间人安全攻击时不被篡改。 出于这个原因，我们建议您对应用程序清单和部署清单进行签名，以帮助保护您的应用程序。  
@@ -51,11 +49,11 @@ ms.locfileid: "47484167"
  默认权限取决于部署初始应用程序版本的位置；应用程序的更新将继承这些权限。 如果将应用程序配置为从 Web 或网络位置检查是否有更新且存在较新的版本，则初始安装可以获得 Internet 或 Intranet 区域的权限，而不是完全信任权限。 如果不想让系统提示用户，系统管理员可以指定一个 ClickOnce 部署策略，将某个特定的应用程序发行者定义为受信任的来源。 对于部署此策略的计算机，系统会自动授予权限而不会提示用户授予权限。 有关详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。 若要配置受信任的应用程序部署，可以将证书安装到计算机或企业级别。 有关详细信息，请参阅 [如何：为 ClickOnce 应用程序向客户端计算机添加一个受信任的发行者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)。  
   
 ## <a name="code-access-security-policies"></a>代码访问安全性策略  
- 应用程序的权限由中设置[ \<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md)应用程序清单中的元素。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 自动生成此信息基于项目的设置**安全**属性页。 一个[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序被授予仅其请求的特定权限。 例如，文件访问需要完全信任权限时，如果应用程序请求文件访问权限，则它仅被授予文件访问权限，而不会被授予完全信任权限。 在开发 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，你应确保仅请求应用程序需要的特定权限。 在大多数情况下，你可以使用 Internet 区域和本地 Intranet 区域来将你的应用程序限制为部分信任。 有关更多信息，请参见 [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果应用程序需要自定义权限，则您可以创建一个自定义区域。 有关详细信息，请参阅 [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
+ 应用程序的权限由中设置[ \<trustInfo > 元素](../deployment/trustinfo-element-clickonce-application.md)应用程序清单中的元素。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会根据项目的 **“安全性”** 属性页上的设置自动生成此信息。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序仅被授予它所请求的特定权限。 例如，文件访问需要完全信任权限时，如果应用程序请求文件访问权限，则它仅被授予文件访问权限，而不会被授予完全信任权限。 在开发 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，你应确保仅请求应用程序需要的特定权限。 在大多数情况下，你可以使用 Internet 区域和本地 Intranet 区域来将你的应用程序限制为部分信任。 有关更多信息，请参见 [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)。 如果应用程序需要自定义权限，则您可以创建一个自定义区域。 有关详细信息，请参阅 [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)。  
   
  如果包括应用程序部署区域的默认权限集以外的权限，则会导致在安装或更新时提示最终用户授予权限。 如果不想让系统提示用户，系统管理员可以指定一个 ClickOnce 部署策略，将某个特定的应用程序发行者定义为受信任的来源。 在部署此策略的计算机上，系统会自动授予权限而不会提示用户授予权限。  
   
- 作为开发人员，您有责任确保您的应用程序将以适当的权限运行。 如果应用程序在运行时请求区域之外的权限，则可能会出现安全性异常。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 可以在目标安全区域中调试应用程序。 并帮助你开发安全应用程序。 有关更多信息，请参见 [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
+ 作为开发人员，您有责任确保您的应用程序将以适当的权限运行。 如果应用程序在运行时请求区域之外的权限，则可能会出现安全性异常。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 使你能够在目标安全区域中调试应用程序。 并帮助你开发安全应用程序。 有关更多信息，请参见 [如何：使用受限权限对 ClickOnce 应用程序进行调试](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)。  
   
  有关代码访问安全性和 ClickOnce 的更多信息，请参见 [Code Access Security for ClickOnce Applications](../deployment/code-access-security-for-clickonce-applications.md)。  
   
@@ -72,7 +70,7 @@ ms.locfileid: "47484167"
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使用持久性 Cookie，所以它不支持基于 ASP.NET 窗体的身份验证；这些 Cookie 会带来安全风险，因为它们驻留在 Internet Explorer 缓存中，可能受到攻击。 因此，如果部署 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序，将不支持除 Windows 身份验证以外的任何身份验证方案。  
   
 ## <a name="passing-arguments"></a>传递参数  
- 如果必须将参数传递到 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序中，则将出现一项额外的安全性注意事项。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 开发人员可以将查询字符串提供给在 Web 上的部署的应用程序。 该查询字符串采用了在用于启动应用程序的 URL 末尾跟随一系列名称/值对的形式：  
+ 如果必须将参数传递到 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序中，则将出现一项额外的安全性注意事项。 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使开发人员可以向部署在 Web 上的应用程序提供查询字符串。 该查询字符串采用了在用于启动应用程序的 URL 末尾跟随一系列名称/值对的形式：  
   
  `http://servername.adatum.com/WindowsApp1.application?username=joeuser`  
   
@@ -81,7 +79,7 @@ ms.locfileid: "47484167"
  在未检查参数以确保参数安全的情况下，决不要将通过查询字符串检索的参数传递给数据库或命令行。 不安全参数是包含数据库或命令行转义符的参数，这些转义符可以让恶意用户操纵应用程序执行任意命令。  
   
 > [!NOTE]
->  查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数的唯一途径。 不能传递到参数[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]从命令行应用程序。  
+>  查询字符串参数是在启动时向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数的唯一途径。 不能从命令行向 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序传递参数。  
   
 ## <a name="deploying-obfuscated-assemblies"></a>部署经过模糊处理的程序集  
  您可能想要使用 Dotfuscator 对应用程序进行模糊处理，以防止他人对代码进行反向工程处理。 但是，程序集模糊处理并未集成到 Visual Studio IDE 或 ClickOnce 部署过程中。 因此，您将需要使用生成后步骤在部署过程以外执行模糊处理。 生成项目之后，您会在 Visual Studio 之外手动执行下列步骤：  

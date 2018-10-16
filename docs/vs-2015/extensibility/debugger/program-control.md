@@ -1,7 +1,7 @@
 ---
 title: 程序控制 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b213ee6eca5d132c663e86d6829b688952d150d4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef80fcda875b20f7da99d21f57fef740da4c2836
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476783"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175612"
 ---
 # <a name="program-control"></a>程序控制
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[程序控制](https://docs.microsoft.com/visualstudio/extensibility/debugger/program-control)。  
-  
 在 Visual Studio 中调试时，所有以下单步执行和继续例程出现在程序级别上：  
   
 -   设置下一条语句，即，将您的计算机设置为在特定帧的环境中执行的下一个指令  

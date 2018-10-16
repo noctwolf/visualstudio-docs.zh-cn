@@ -1,7 +1,7 @@
 ---
 title: 调试任务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 64a9a55a659b4aaa81a1e491445400d18de30a40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab02c40911f4dbeb2d4452bebfd42c13ec232fc4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482527"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254054"
 ---
 # <a name="debugging-tasks"></a>调试任务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试任务](https://docs.microsoft.com/visualstudio/extensibility/debugger/debugging-tasks)。  
-  
 若要调试程序，它必须启动，调试引擎 (DE) 必须附加到它，或者 DE 必须附加到先前启动的程序。 附加完以后，DE 必须生成某些启动事件。 在响应中，尝试绑定在 IDE 中设置断点调试包。 当程序达到绑定的断点时，它会中止并等待用户输入。  
   
 ## <a name="in-this-section"></a>本节内容  

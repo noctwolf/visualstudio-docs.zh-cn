@@ -1,7 +1,7 @@
 ---
 title: 查看 DOM 事件侦听器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7eeca4964df8e89511b1a077cace83484c35f44d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d9d6f5c913cb2868df1af25470eb69f84575ffab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469959"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223296"
 ---
 # <a name="view-dom-event-listeners"></a>查看 DOM 事件侦听器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[查看 DOM 事件侦听器](https://docs.microsoft.com/visualstudio/debugger/view-dom-event-listeners)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  **事件**DOM 资源管理器的选项卡显示与 DOM 元素关联的事件。 在每个顶部节点**事件**选项卡表示一个具有活动订户的事件。 顶部节点包含若干子节点，表示为特定事件注册的事件侦听器。 使用此选项卡除了可查看事件侦听器之外，还可导航至事件侦听器在 JavaScript 代码中的位置。 本主题中的信息适用于使用 HTML 和 JavaScript 的应用商店应用。  
@@ -62,7 +60,7 @@ ms.locfileid: "47469959"
   
 6.  在 DOM 资源管理器中，选择右上角的 `Find`。  
   
-7.  类型`ListView`，然后按 Enter。  
+7.  键入 `ListView`，然后按 Enter。  
   
 8.  如有必要，选择**下一步**按钮以查找`DIV`元素，它表示`ListView`控件 (此元素具有`data-win-control`的值`WinJS.UI.ListView`)。  
   

@@ -1,7 +1,7 @@
 ---
 title: 演练： 显示语句完成 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9d7cd7a1ea3ffa3fd85cbe8ed7088347298f849c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ceb59310597cd0481007ec9c08f5312a8d75090
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484188"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280575"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>演练：显示语句完成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 显示语句完成](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-statement-completion)。  
-  
 可以通过定义您想要提供完成的标识符，然后触发完成会话实现的基于语言的语句结束。 可以定义的语言服务上下文中的语句完成、 定义您自己的文件扩展名和内容类型，然后显示完成只是该类型，或者可以触发的现有内容类型完成 — 例如，"纯文本"。 本演练演示如何触发"纯文本"内容类型，这是文本文件的内容类型的语句完成。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
   
  通过键入某些字符通常触发语句完成 — 例如，通过键入如"使用"标识符的开头。 它通常被按下空格键、 Tab 或 Enter 键以提交所选内容。 您可以实现由键入字符的击键使用命令处理程序触发的 IntelliSense 功能 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口) 和实现的处理程序提供程序<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>接口。 若要创建完成源时，这是参与完成的标识符的列表，实现<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>接口和完成源提供程序 (<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>接口)。 提供商将 Managed Extensibility Framework (MEF) 组件部分。 他们负责导出的源和控制器类和导入服务和代理 — 例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，这样文本缓冲区中的导航和<xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>，随即将会触发完成会话。  
@@ -40,7 +38,7 @@ ms.locfileid: "47484188"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`CompletionTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `CompletionTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -65,7 +63,7 @@ ms.locfileid: "47484188"
   
 #### <a name="to-implement-the-completion-source"></a>若要实现完成源  
   
-1.  添加一个类文件并将其命名`TestCompletionSource`。  
+1.  添加一个类文件并将其命名为 `TestCompletionSource`。  
   
 2.  添加这些导入：  
   

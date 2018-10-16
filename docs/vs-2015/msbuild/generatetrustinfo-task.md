@@ -1,7 +1,7 @@
 ---
 title: GenerateTrustInfo 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f755994c09e0634df814683b77d925f2293b6cf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a20a50e74f702c1c015f29abde81b2e24a5551b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469866"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208686"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[GenerateTrustInfo 任务](https://docs.microsoft.com/visualstudio/msbuild/generatetrustinfo-task)。  
-  
   
 从基本清单以及从 `TargetZone` 和 `ExcludedPermissions` 属性生成应用程序信任。  
   

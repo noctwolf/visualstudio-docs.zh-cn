@@ -1,7 +1,7 @@
 ---
 title: 发布 ClickOnce 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: f1e15ed2a1b2c2224a5e51cd02cf7609e40d5d29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471476"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265637"
 ---
 # <a name="publishing-clickonce-applications"></a>发布 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[发布 ClickOnce 应用程序](https://docs.microsoft.com/visualstudio/deployment/publishing-clickonce-applications)。  
-  
 首次发布 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序时，可以使用“发布向导”设置发布属性。 只有几个属性在向导中可用，所有其他属性均设置为其默认值。  
   
  在进行后续更改发布属性**发布**页面**项目设计器**。  

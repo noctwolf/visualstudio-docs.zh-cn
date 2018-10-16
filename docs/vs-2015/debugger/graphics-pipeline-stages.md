@@ -1,7 +1,7 @@
 ---
 title: 图形管道阶段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eda25bb46a9920b8662e8af8b2e4c08da04c3781
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469652"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267457"
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图形管道阶段](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pipeline-stages)。  
-  
 “图形管道阶段”窗口可帮助了解 Direct3D 图形管道的每个阶段如何转换各个绘图调用。  
   
  这是“管道阶段”窗口：  

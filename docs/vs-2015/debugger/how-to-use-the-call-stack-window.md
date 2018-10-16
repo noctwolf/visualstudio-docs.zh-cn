@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用调用堆栈窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -34,18 +34,16 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75b617e9de62c20cc1e8a32cf993f5f03201f4fc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0e79c491eeec373bd3753a5ea55777a079cc51ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588706"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271656"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>如何：使用“调用堆栈”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Studio 调试器中查看调用堆栈](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-call-stack-window)。  
-  
 通过使用**调用堆栈**窗口中，可以查看当前是在堆栈的函数或过程调用。  
   
  **调用堆栈**窗口中显示的每个函数和编程语言中编写的名称。 函数或过程名称可能包含可选信息，如模块名称、行号、参数名称、类型和值。 可以打开或关闭这些可选信息的显示。  

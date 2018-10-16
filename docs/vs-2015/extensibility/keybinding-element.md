@@ -1,7 +1,7 @@
 ---
 title: KeyBinding 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dd7f56a91661850a3154ad09376340696513646
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 808897b632353e47185cdbd5606d6f2eed1361b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484627"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231811"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[KeyBinding 元素](https://docs.microsoft.com/visualstudio/extensibility/keybinding-element)。  
-  
 键绑定元素指定的命令的键盘快捷方式。  
   
  命令可以具有与之关联的单个和双键绑定。 单个键绑定的一个示例是为 CTRL + S**保存**命令。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是 CTRL + K、 CTRL + K 设置书签。  

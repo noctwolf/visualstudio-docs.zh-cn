@@ -1,7 +1,7 @@
 ---
 title: 'Idiaframedata:: Get_maxstack |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 45ef977d6b602fdd37d5c54578dc01bea2a41648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d841fccebe5cc8e47c3996a995d79a5457e993ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479532"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278741"
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiaframedata:: Get_maxstack](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiaframedata-get-maxstack)。  
-  
 检索的最大推入堆栈帧中的字节数。  
   
 ## <a name="syntax"></a>语法  

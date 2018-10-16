@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 多目标概述 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6fcc7f1a1fb7b9f348ace817c800a5e353694e96
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481888"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277064"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 多目标概述](https://docs.microsoft.com/visualstudio/ide/visual-studio-multi-targeting-overview)。  
-  
 在此版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，你可以指定应用程序所需的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 因此，如果要使用此版本 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 继续开发早期版本中开始的项目，则无需更改框架目标。 你还可以创建包含面向不同版本框架的项目的解决方案。 框架目标还有助于确保应用程序仅使用指定的框架版本中可用的功能。  
   
 > [!TIP]

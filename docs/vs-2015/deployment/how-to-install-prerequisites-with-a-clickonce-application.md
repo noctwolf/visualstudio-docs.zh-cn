@@ -1,7 +1,7 @@
 ---
 title: 如何： 与 ClickOnce 应用程序一起安装的必备组件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 31319b0d04ff68649996ca374e3961d8fa67c833
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47d4355fc1b5690d6c9c76fd354a5f5bd4830d8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480597"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196282"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>如何：与 ClickOnce 应用程序一起安装系统必备组件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](https://docs.microsoft.com/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application)。  
-  
 所有[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序要求的计算机上安装.NET Framework 的正确版本之前可运行; 许多应用程序具有其他系统必备组件。 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序中，可以选择一组的系统必备组件以与你的应用程序一起打包。 在安装时，检查会执行针对每个必备项，以确定它是否已存在;如果在安装之前将不安装[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序。  
   
  而不是打包和发布系统必备组件，还可以指定组件的下载位置。 例如，而不是将与每个发布的应用程序的必备组件，您可以使用集中式的文件共享或包含的所有系统必备组件的安装程序的 Web 位置，在安装时，将下载的组件和从该位置安装。  

@@ -1,7 +1,7 @@
 ---
 title: 管理程序集签名和清单签名 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76ab4cc115f8c9f052f48c6e0dccd06693ddb970
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479312"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172739"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理程序集和清单签名](https://docs.microsoft.com/visualstudio/ide/managing-assembly-and-manifest-signing)。  
-  
 强名称签名可为软件组件提供全局唯一标识。 使用强名称可保证程序集不被其他用户伪造，还可确保组件依赖关系和配置语句映射到正确的组件和组件版本。  
   
  强名称是由程序集的标识加上公钥令牌和数字签名组成的。其中，程序集的标识包括简单文本名称、版本号和区域性信息。  

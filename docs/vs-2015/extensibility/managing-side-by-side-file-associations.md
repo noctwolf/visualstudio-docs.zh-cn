@@ -1,7 +1,7 @@
 ---
 title: 管理通过并行文件关联 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 79bd0fe8d298aaa6635cb30efaf7f4d0d0be8c28
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55a3649385ca8fc840bed8bd28555bcb17f6ac91
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253976"
 ---
 # <a name="managing-side-by-side-file-associations"></a>管理并行文件关联
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[管理通过并行文件关联](https://docs.microsoft.com/visualstudio/extensibility/managing-side-by-side-file-associations)。  
-  
 如果你的 VSPackage 提供文件关联，则必须确定如何处理通过并行安装在其中的某个特定版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应被调用来打开文件。 文件格式不兼容复合问题。  
   
  用户期望的产品可与早期版本兼容，以便可以不会丢失数据的新版本中加载现有文件的新版本。 理想情况下，你的 VSPackage 可以同时加载和保存的早期版本的文件格式。 如果不为 true，你应提供要升级到你的 VSPackage 的新版本的文件格式。 这种方法的缺点是不能在早期版本中打开该升级后的文件。  

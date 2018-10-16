@@ -1,7 +1,7 @@
 ---
 title: 对应用商店应用中的 Visual C# 代码进行单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: e85326210049b96b37868f2e0cc78b6c71e91cc2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482914"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245435"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[单元测试中的应用商店应用的 Visual C# 代码](https://docs.microsoft.com/visualstudio/test/unit-testing-visual-csharp-code-in-a-store-app)。  
-  
 本主题介绍了一种在 Windows 应用商店应用中对 Visual C# 类创建单元测试的方法。 Rooter 类通过实现计算给定数的平方根的估计的函数来演示限制计算理论的模糊内存。 Maths 应用程序之后可使用此函数为用户演示可通过 math 完成的有趣操作。  
   
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。  

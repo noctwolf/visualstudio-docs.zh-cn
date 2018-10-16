@@ -1,7 +1,7 @@
 ---
 title: 命令可用性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9933975b005241e89444c47a96b80bf0e43bfbcb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bfaff5de68bd9d81b6cba6a03a4acec4ad1f0959
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182645"
 ---
 # <a name="command-availability"></a>命令可用性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[命令可用性](https://docs.microsoft.com/visualstudio/extensibility/internals/command-availability)。  
-  
 Visual Studio 上下文确定有哪些命令。 根据当前的项目、 当前编辑器、 已加载，Vspackage 和集成的开发环境 (IDE) 的其他方面，上下文可以更改。  
   
 ## <a name="command-contexts"></a>命令上下文  

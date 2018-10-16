@@ -1,7 +1,7 @@
 ---
 title: 演练： 创建核心编辑器和注册编辑器文件类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8a3b85af8e3852985125e41e3ef3727e59e3269
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a79bbcbba412c008d4f4641f01ff23c9c4f9952f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482953"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187299"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>演练： 创建核心编辑器和注册编辑器文件类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[核心编辑器创建和注册编辑器文件类型](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type)。  
-  
 本演练演示如何创建启动 VSPackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心编辑器具有.myext 文件扩展名的文件时已加载。  
   
 ## <a name="prerequisites"></a>系统必备  

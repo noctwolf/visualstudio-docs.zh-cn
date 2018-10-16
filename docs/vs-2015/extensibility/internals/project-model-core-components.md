@@ -1,7 +1,7 @@
 ---
 title: 项目模型核心组件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2e0fd5b5963686ac38975c62bab1d8ee93224cf5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2819f32993df6215e506ae6612d2716f95780bf8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470167"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283330"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目模型核心组件](https://docs.microsoft.com/visualstudio/extensibility/internals/project-model-core-components)。  
-  
 下表展开项目模型。 这些表格显示接口和服务模型的接口和与特定对象关联的服务中标识的简短说明。 此外，在表详细介绍在项目的创建和维护，具体取决于特定项目类型的要求中是可选的其他接口。  
   
  有关详细信息，请参阅[支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。  

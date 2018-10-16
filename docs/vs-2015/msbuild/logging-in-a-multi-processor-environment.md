@@ -1,7 +1,7 @@
 ---
 title: 多处理器环境下的日志记录 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fcfd50259b349b16dee7bbd1ba2a4992d0b7382
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc2a75c5aab920d6b2ab93ce53bc7f65263e8657
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484329"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249660"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>多处理器环境下的日志记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[多处理器环境中的日志记录](https://docs.microsoft.com/visualstudio/msbuild/logging-in-a-multi-processor-environment)。  
-  
   
 MSBuild 使用多个处理器的能力可以显著缩短项目生成时间，但同时会增加日志记录的复杂性。 在单处理器环境下，记录器可以用可预测的顺序方式处理传入的事件、消息、警告和错误。 但在多处理器环境下，来自多个源的事件可能同时到达或以无序方式到达。 MSBuild 提供了可以识别多处理器的新记录器，并允许创建自定义“转发记录器”。  
   

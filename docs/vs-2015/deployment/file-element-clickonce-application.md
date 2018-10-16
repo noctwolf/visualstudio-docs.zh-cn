@@ -1,7 +1,7 @@
 ---
 title: '&lt;文件&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bf5f0c803c9c60c9a4846aeba960cbdbf4c8129b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 16c301d55738519f3e097138f08b6b2c2fe2b4c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482799"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270726"
 ---
 # <a name="ltfilegt-element-clickonce-application"></a>&lt;文件&gt;元素 （ClickOnce 应用程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;文件&gt;元素 （ClickOnce 应用程序）](https://docs.microsoft.com/visualstudio/deployment/file-element-clickonce-application)。  
-  
 标识下载和应用程序使用的所有非程序集文件。  
   
 ## <a name="syntax"></a>语法  
@@ -122,7 +120,7 @@ ms.locfileid: "47482799"
 |---------------|-----------------|  
 |`clsid`|必须的。 以 GUID 形式表示的 COM 组件的类 ID。|  
 |`description`|可选。 类名。|  
-|`threadingModel`|可选。 使用进程内 COM 类的线程处理模型。 如果此属性为 null，则使用没有线程模型。 客户端的主线程上创建组件和来自其他线程的调用封送到此线程。 以下列表显示了有效的值：<br /><br /> `Apartment`、`Free`、`Both` 和 `Neutral`。|  
+|`threadingModel`|可选。 使用进程内 COM 类的线程处理模型。 如果此属性为 null，则使用没有线程模型。 客户端的主线程上创建组件和来自其他线程的调用封送到此线程。 以下列表显示了有效的值：<br /><br /> `Apartment`、 `Free`、 `Both`和 `Neutral`。|  
 |`tlbid`|可选。 此 COM 组件的类型库的的 GUID。|  
 |`progid`|可选。 依赖于版本的编程标识符与 COM 组件关联。 格式`ProgID`是`<vendor>.<component>.<version>`。|  
 |`miscStatus`|可选。 在程序集中的重复项清单所提供的信息`MiscStatus`注册表项。 如果值为`miscStatusIcon`， `miscStatusContent`， `miscStatusDocprint`，或`miscStatusThumbnail`找不到属性、 中列出的相应默认值`miscStatus`用于缺少的属性。 值可以是下表中的属性值的以逗号分隔列表。 可以使用此属性，如果 COM 类是需要一个 OCX 类`MiscStatus`注册表项值。|  
@@ -154,7 +152,7 @@ ms.locfileid: "47482799"
 |`Name`|可选。 该接口作为它的名称将显示在代码中。|  
 |`Tlbid`|可选。 包含由指定的接口的说明的类型库`iid`属性。|  
 |`proxyStubClass32`|可选。 将 IID 映射到在 32 位代理 Dll 的 CLSID。|  
-|`threadingModel`|可选。 可选。 使用进程内 COM 类的线程处理模型。 如果此属性为 null，则使用没有线程模型。 客户端的主线程上创建组件和来自其他线程的调用封送到此线程。 以下列表显示了有效的值：<br /><br /> `Apartment`、`Free`、`Both` 和 `Neutral`。|  
+|`threadingModel`|可选。 可选。 使用进程内 COM 类的线程处理模型。 如果此属性为 null，则使用没有线程模型。 客户端的主线程上创建组件和来自其他线程的调用封送到此线程。 以下列表显示了有效的值：<br /><br /> `Apartment`、 `Free`、 `Both`和 `Neutral`。|  
   
 ## <a name="windowclass"></a>windowClass  
  `windowClass`元素是可选的子`file`元素，但可能是必需的如果[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序包含 COM 组件，它想要部署使用免注册 com。 元素是指由 COM 组件，必须具有应用于它的版本定义的窗口类。 该元素包含以下属性。  
@@ -164,31 +162,31 @@ ms.locfileid: "47482799"
 |`versioned`|可选。 控件的内部窗口类注册中使用的名称是否包含含有窗口类的程序集的版本。 此属性的值可以是`yes`或`no`。 默认值为 `yes`。 值`no`仅应在同一个窗口类由某个端组件和等效的非并行组件定义，并且你想要将它们视为相同的窗口类。 请注意，窗口类注册的常用规则用于 — 仅注册窗口类的第一个组件将能够注册它，因为它不具有应用于它的版本。|  
   
 ## <a name="hash"></a>hash  
- `hash`元素是可选的子`file`元素。 `hash`元素没有任何属性。  
+ `hash`元素是可选的子`file`元素。 `hash` 元素没有属性。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使用应用程序中的所有文件的哈希算法作为安全检查，以确保部署之后没有任何文件发生更改。 如果`hash`元素不包含，不会执行此检查。 因此，省略`hash`不建议元素。  
   
  如果清单中包含不进行哈希处理的文件，该清单不能进行数字签名，因为用户不能验证未经哈希的文件的内容。  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms`元素没有任何属性。  
+ `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms` 元素没有属性。  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
- `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform`元素具有以下属性。  
+ `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 `dsig:Transform` 元素具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`urn:schemas-microsoft-com:HashTransforms.Identity`。|  
   
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod  
- `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod`元素具有以下属性。  
+ `dsig:DigestMethod`元素是必需的子`hash`元素。 `dsig:DigestMethod` 元素具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
 |`Algorithm`|用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
- `dsig:DigestValue`元素是必需的子`hash`元素。 `dsig:DigestValue`元素没有任何属性。 其文本值为指定的文件的计算哈希值。  
+ `dsig:DigestValue`元素是必需的子`hash`元素。 `dsig:DigestValue` 元素没有属性。 其文本值为指定的文件的计算哈希值。  
   
 ## <a name="remarks"></a>备注  
  此元素标识组成应用程序的所有非程序集文件，并特别是，文件验证有关的哈希值。 此元素还可以包括与文件关联的组件对象模型 (COM) 隔离数据。 如果一个文件发生更改，应用程序清单文件还必须更新以反映更改。  
@@ -209,7 +207,7 @@ ms.locfileid: "47482799"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

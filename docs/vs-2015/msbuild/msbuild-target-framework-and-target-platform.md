@@ -1,7 +1,7 @@
 ---
 title: MSBuild 目标 Framework 和目标平台 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e699096af425897e3bd3c724b483cc3fea2ffb29
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bd227c94b81babab262a6a7210aabd68ca1e143e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49239130"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标 Framework 和目标平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 目标 Framework 和目标平台](https://docs.microsoft.com/visualstudio/msbuild/msbuild-target-framework-and-target-platform)。  
-  
   
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可以将一个应用程序的目标设定为在与 802 x86 处理器系列 ("x86") 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。  
   

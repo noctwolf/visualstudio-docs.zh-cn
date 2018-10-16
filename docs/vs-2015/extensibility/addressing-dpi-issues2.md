@@ -1,7 +1,7 @@
 ---
 title: 解决 DPI 问题 2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3cb14cf601633efa6bbb022d8d1a56e62cc0f9b0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e9d86204eb79eb0dd20db45d4ffe5c1f80c2e9dc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476814"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194050"
 ---
 # <a name="addressing-dpi-issues"></a>解决 DPI 问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[解决 DPI 问题 2](https://docs.microsoft.com/visualstudio/extensibility/addressing-dpi-issues2)。  
-  
 越来越多的设备随"高分辨率"屏幕。 这些屏幕通常有超过 200 个像素 / 英寸 (ppi)。 使用这些计算机上的应用程序将需要纵向扩展以满足需要查看设备的正常查看距离处的内容的内容。 截至 2014 年的高密度显示的主要目标是移动计算设备 （平板电脑、 蛤便携式计算机和手机）。  
   
  Windows 8.1 和更高版本包含多种功能，以使这些计算机能够使用显示和的环境中计算机附加到同时高密度标准密度显示在同一时间。  

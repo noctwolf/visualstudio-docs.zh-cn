@@ -1,7 +1,7 @@
 ---
 title: “调用关系树”视图 - 检测数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54360ded2c3e758658969484515e06e50b86b45e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0fde596d095a07ce609b0a357f16f17fabfa4258
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297266"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>“调用关系树”视图 - 检测数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用树视图-检测数据](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-instrumentation-data)。  
-  
 “调用树”视图中的函数值表示调用树中父函数所调用的函数实例的时间。 通过将函数实例值与分析运行期间所有函数的总已用非独占时间进行对比来得出百分比值。  
   
 ## <a name="general"></a>常规  

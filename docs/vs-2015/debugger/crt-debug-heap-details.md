@@ -1,7 +1,7 @@
 ---
 title: CRT 调试堆详细信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -80,18 +80,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bffaf070bfd92be0611156df65f008bd06c1ec32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a97054db575d1d92f2077efe46d89573fba02dfd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469440"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297722"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CRT Debug Heap Details](https://docs.microsoft.com/visualstudio/debugger/crt-debug-heap-details)。  
-  
 本主题详细描述了 CRT 调试堆。  
   
 ##  <a name="BKMK_Contents"></a> 内容  

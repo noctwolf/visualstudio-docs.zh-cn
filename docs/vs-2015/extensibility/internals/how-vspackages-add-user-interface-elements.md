@@ -1,7 +1,7 @@
 ---
 title: Vspackage 如何添加用户界面元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a6265edea1044c1ee7be25725268a792d78a79cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478002"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283265"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何添加用户界面元素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何 Vspackage 添加用户界面元素](https://docs.microsoft.com/visualstudio/extensibility/internals/how-vspackages-add-user-interface-elements)。  
-  
 VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和工具窗口，Visual studio 通过.vsct 文件。  
   
  您可以找到在 UI 元素设计准则[Visual Studio 用户体验指南](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  

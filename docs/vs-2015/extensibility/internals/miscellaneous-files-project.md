@@ -1,7 +1,7 @@
 ---
 title: 杂项文件项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdcbe1901deb472969c993b826660d03d12b2cf3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dd7ce7dacfaa581d3b3757b33ad0d7af51d264
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476696"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258396"
 ---
 # <a name="miscellaneous-files-project"></a>杂项文件项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[杂项文件项目](https://docs.microsoft.com/visualstudio/extensibility/internals/miscellaneous-files-project)。  
-  
 当用户打开项目项时，IDE 将分配给杂项文件项目不是解决方案中的任何项目的成员的任何项目。  
   
  项目扮演重要角色确定当用户打开项目项时，将使用的编辑器。 可以设计一个项目以使用特定于项目的编辑器或标准编辑器打开某些文件。  

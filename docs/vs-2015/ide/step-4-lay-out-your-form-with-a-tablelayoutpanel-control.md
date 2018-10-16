@@ -1,7 +1,7 @@
 ---
 title: 步骤 4：使用 TableLayoutPanel 控件设置窗体布局 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 770d66d0cc3a765e505e4ce48be6f62307c7e178
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4a08359c11fa45c87c787a5a3a414eb8515e7473
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471133"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210089"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 4： 设置窗体的布局使用 TableLayoutPanel 控件](https://docs.microsoft.com/visualstudio/ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control)。  
-  
 在此步骤中，向窗体添加一个 `TableLayoutPanel` 控件。 TableLayoutPanel 可帮助在窗体中正确地对齐您稍后将添加的控件。  
   
  ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 2](http://go.microsoft.com/fwlink/?LinkId=205211)（教程 1：用 Visual Basic 创建图片查看器 - 视频 2）或 [Tutorial 1: Create a Picture Viewer in C# - Video 2](http://go.microsoft.com/fwlink/?LinkId=205200)（教程 1：用 C# 创建图片查看器 - 视频 2）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  

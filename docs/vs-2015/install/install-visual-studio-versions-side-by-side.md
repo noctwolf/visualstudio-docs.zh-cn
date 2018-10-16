@@ -1,7 +1,7 @@
 ---
 title: 安装 Visual Studio 版本的并排方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,12 +18,12 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ae67e83b2f1444c09129ed5242afac2c3939c954
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6cc66b828b07c0facb8fae19b562dc6566df420
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199896"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>安装 Visual Studio 版本的并排方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "47482992"
 您可以在已安装早期版本的计算机上安装此版本的 Visual Studio。 如果遇到安装故障，则可以使用 [日志收集工具](http://go.microsoft.com/fwlink/?LinkId=262077) 收集有关故障的信息，以便可以自行调试问题。  
   
 > [!NOTE]
->  我们建议你安装[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]按照发布的顺序中的版本。 例如，在安装 Visual Studio 2015 之前安装 Visual Studio 2013。  
+>  建议您按照发布顺序来安装不同版本的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。 例如，在安装 Visual Studio 2015 之前安装 Visual Studio 2013。  
   
  在并行安装各版本之前，您应该了解以下情况：  
   
--   如果使用 Visual Studio 2015 打开在中创建的解决方案[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]，可以更高版本打开和修改在较旧版本中再次解决方案，只要你没有执行任何特定于 Visual Studio 2015 的功能。  
+-   如果使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]中创建的解决方案，则稍后可以在旧版本中再次打开和修改该解决方案，前提是你没有执行任何 Visual Studio 2015 特有的功能。  
   
--   如果尝试使用 Visual Studio 2015 打开在中创建的解决方案[!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]或早期版本，您可能需要修改项目和文件才能与 Visual Studio 2015 兼容。 有关详细信息，请参阅[端口、 迁移和升级 Visual Studio 项目](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md)页。  
+-   如果你尝试使用 Visual Studio 2015 打开在 [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] 或更早的版本中创建的解决方案，则可能需要修改你的项目和文件才能与 Visual Studio 2015 兼容。 有关详细信息，请参阅[端口、 迁移和升级 Visual Studio 项目](../misc/port-migrate-and-upgrade-visual-studio-projects-in-visual-studio-15-rc.md)页。  
   
--   如果在已安装多个版本的计算机上卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一个版本，则将为所有版本移除 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文件关联。 您可以通过重新映射这些文件关联**还原文件关联**按钮**环境**，**常规**页[选项](../ide/reference/general-environment-options-dialog-box.md)对话框。  
+-   如果在已安装多个版本的计算机上卸载 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的一个版本，则将为所有版本移除 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的文件关联。 通过使用 **“选项”** 对话框的 **“常规”** 页上的 **“环境”** 中的 [“还原文件关联”](../ide/reference/general-environment-options-dialog-box.md) 按钮，可以重新映射这些文件关联。  
   
 -   因为并非所有扩展都兼容，所以 Visual Studio 不会自动升级扩展。 必须从 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=178891) 或软件发行者处重新安装扩展。  
   

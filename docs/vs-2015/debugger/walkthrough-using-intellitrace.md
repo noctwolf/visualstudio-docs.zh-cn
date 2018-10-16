@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用 IntelliTrace |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cac83c1e036bb16eef60e9a93416d7096d3135b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1903a2b6263a663586499672c9121e33900a8e30
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471465"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190640"
 ---
 # <a name="walkthrough-using-intellitrace"></a>演练：使用 IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 IntelliTrace](https://docs.microsoft.com/visualstudio/debugger/walkthrough-using-intellitrace)。  
-  
 你可以使用 IntelliTrace 来收集关于特定事件或事件类别的信息，或收集关于除了事件外的单个函数调用的信息。 下列过程演示如何执行此操作。  
   
  可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  

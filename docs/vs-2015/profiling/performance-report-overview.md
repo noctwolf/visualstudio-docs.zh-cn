@@ -1,7 +1,7 @@
 ---
 title: 性能报告概述 | Microsoft 文档
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80fa4902ac598440f03630cb8b0906bc13808ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477753"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290428"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能报告概述](https://docs.microsoft.com/visualstudio/profiling/performance-report-overview)。  
-  
 在 Visual Studio Team System Development Edition 集成开发环境 (IDE) 的“性能报告”窗口中，可以查看性能会话的分析数据。 分析数据保存在 .vsp 和 .vsps 文件中。 报告视图窗口可用于查看和分析应用程序性能问题。  
   
 > [!CAUTION]

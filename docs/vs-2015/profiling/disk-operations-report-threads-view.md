@@ -1,7 +1,7 @@
 ---
 title: 磁盘操作报告（“线程”视图）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe16116131c1ed6d0233abbd2e0480946b5a5423
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f121b8939ff55c9274cd04560ae7d507e22fde5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245149"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁盘操作报告（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[磁盘操作报告 （线程视图）](https://docs.microsoft.com/visualstudio/profiling/disk-operations-report-threads-view)。  
-  
 磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。  
   
  对于代表正在当前可见时间窗口中进行分析的进程而发生的每次磁盘访问，将报告以下信息：  

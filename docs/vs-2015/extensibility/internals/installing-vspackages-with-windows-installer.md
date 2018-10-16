@@ -1,7 +1,7 @@
 ---
 title: 使用 Windows Installer 安装 Vspackage |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9776c4c9ec58bc84bd1e60bc5eb98d7bda1c0130
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae0e99b278924a123410f5590cea9f8239acd9ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481023"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227963"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安装 VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 Windows Installer 安装 Vspackage](https://docs.microsoft.com/visualstudio/extensibility/internals/installing-vspackages-with-windows-installer)。  
-  
 将集成到你的 VSPackage[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]需要不止将文件复制到用户的计算机。 你的 VSPackage 的安装程序必须安装 VSPackage 和其依赖的文件，并注册并将它们到集成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 你的 VSPackage 可以利用集成功能，例如上显示一个图标[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]初始屏幕和关于对话框。  
   
  Microsoft Windows Installer 文件是将你的 Vspackage 的推荐的方法。 易于使用 Windows Installer 程序包可以在支持的任何 Windows 操作系统上运行[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 有关详细信息，请参阅[Windows 安装程序](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)。  

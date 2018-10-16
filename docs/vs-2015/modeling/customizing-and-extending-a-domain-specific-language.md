@@ -1,7 +1,7 @@
 ---
 title: 自定义和扩展域特定语言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 158bebd18e62ac23560a09fcfacb2125e1988477
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483920"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180682"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义和扩展域特定语言](https://docs.microsoft.com/visualstudio/modeling/customizing-and-extending-a-domain-specific-language)。  
-  
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：  
   
 1.  定义使用 DSL 定义关系图的特定于域的语言 (DSL)。 关系图表示法、 可读的 XML 格式，与生成代码和其他项目所需的基本工具，可以快速创建 DSL。  

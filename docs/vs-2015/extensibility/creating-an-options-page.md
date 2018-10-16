@@ -1,7 +1,7 @@
 ---
 title: 创建选项页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6e26a534f7bb02d0a309d436d9b62927639a6
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: bd04ea51fb73f6f095c9f5bcddce735deb06066e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219695"
 ---
 # <a name="creating-an-options-page"></a>创建选项页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建选项页](https://docs.microsoft.com/visualstudio/extensibility/creating-an-options-page)。  
-  
 本演练创建一个简单的工具/选项页面使用属性网格可以查看和设置属性。  
   
  若要保存到这些属性，并将其还原从设置文件，请执行以下步骤，然后查看[Creating a Settings Category](../extensibility/creating-a-settings-category.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 支持源代码管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 01941fdd4899142ae8abb96f57f93e3ebd0b6256
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 12a7cb2de6f3710f7b9e608f008d72d3b0b0e777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484178"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279573"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[支持源代码管理](https://docs.microsoft.com/visualstudio/extensibility/internals/supporting-source-control)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 支持文件签出、 签入和你的项目或编辑器的其他源代码管理操作。 作为源控制客户端[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]旨在与源代码管理包，如交互[!INCLUDE[vsvss](../../includes/vsvss-md.md)]，后者提供存档、 版本控制和一组动态定义的文件的控件功能。  
   
 ## <a name="in-this-section"></a>本节内容  

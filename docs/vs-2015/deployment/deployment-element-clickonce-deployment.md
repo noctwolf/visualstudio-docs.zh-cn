@@ -1,7 +1,7 @@
 ---
 title: '&lt;部署&gt;元素 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 65ca88f335dfbbe270eedf25464a05194740fbd7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d6d4472502315a12529c6c7ea59007c5502cfd5d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231538"
 ---
 # <a name="ltdeploymentgt-element-clickonce-deployment"></a>&lt;部署&gt;元素 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;部署&gt;元素 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/deployment-element-clickonce-deployment)。  
-  
 标识用于部署更新并向系统公开的特性。  
   
 ## <a name="syntax"></a>语法  
@@ -81,12 +79,12 @@ ms.locfileid: "47479683"
  `deployment`元素还包含以下子元素。  
   
 ## <a name="subscription"></a>订阅  
- 可选。 包含`update`元素。 `subscription`元素没有任何属性。 如果`subscription`元素不存在，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序将永远不会扫描更新。 如果`install`的属性`deployment`元素是`false`，则`subscription`忽略元素，因为[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]启动应用程序是从网络始终使用最新版本。  
+ 可选。 包含`update`元素。 `subscription` 元素没有属性。 如果`subscription`元素不存在，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序将永远不会扫描更新。 如果`install`的属性`deployment`元素是`false`，则`subscription`忽略元素，因为[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]启动应用程序是从网络始终使用最新版本。  
   
 ## <a name="update"></a>更新  
  必须的。 此元素是子元素的`subscription`元素，它包含`beforeApplicationStartup`或`expiration`元素。 `beforeApplicationStartup` 和`expiration`无法同时指定相同的部署清单中。  
   
- `update`元素没有任何属性。  
+ `update` 元素没有属性。  
   
 ## <a name="beforeapplicationstartup"></a>beforeApplicationStartup  
  可选。 此元素是子元素的`update`元素并且没有任何特性。 当`beforeApplicationStartup`元素存在，该应用程序将被阻止时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]检查更新，如果客户端处于联机状态。 此元素不存在，如果[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]基于指定的值的更新将首先扫描`expiration`元素。 `beforeApplicationStartup` 和`expiration`无法同时指定相同的部署清单中。  

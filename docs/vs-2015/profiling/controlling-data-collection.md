@@ -1,7 +1,7 @@
 ---
 title: 控制数据收集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6170ee5e93bcb8faeadd1d918468a44c4badb99
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7735d8b7276c62953c063d2cbda18d0dc59cc5a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306587"
 ---
 # <a name="controlling-data-collection"></a>控制数据收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[控制数据收集](https://docs.microsoft.com/visualstudio/profiling/controlling-data-collection)。  
-  
 通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具可控制性能会话期间收集分析数据的时间，并指定分析的函数。 本节介绍如何从“性能资源管理器”和“数据收集控制”窗口启动和停止数据收集，以及如何限制要收集其分析数据的对象。  
   
 ## <a name="common-tasks"></a>常规任务  

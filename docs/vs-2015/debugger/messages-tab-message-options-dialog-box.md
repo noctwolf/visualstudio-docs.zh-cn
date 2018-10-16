@@ -1,7 +1,7 @@
 ---
 title: 消息选项卡上，消息选项对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8048c63ed9b9f049ed171002dfcc612fc9361569
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49298540"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“消息”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[消息选项卡上，消息选项对话框](https://docs.microsoft.com/visualstudio/debugger/messages-tab-message-options-dialog-box)。  
-  
 使用**消息**选项卡以选择列表中的消息类型[消息视图](../debugger/messages-view.md)，并指定消息搜索条件。 若要显示[消息选项对话框](../debugger/message-options-dialog-box.md)，选择**日志消息**从**Spy**菜单。  
   
  通常情况下，首先选择**消息组**，然后通过选择单个微调所选内容**查看的消息**。 **所有**按钮选择所有消息类型，并**None**按钮将清除所有类型。  

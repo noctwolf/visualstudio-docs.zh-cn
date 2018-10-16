@@ -1,7 +1,7 @@
 ---
 title: 抢占时间 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 614b049bf7aa881ce4454d8f832190b0391ff342
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 943111386539ddb9ac686b0551dfe176f9e2d320
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482954"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194065"
 ---
 # <a name="preemption-time"></a>抢占时间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[抢占时间](https://docs.microsoft.com/visualstudio/profiling/preemption-time)。  
-  
 时间线中的这些段与归类为“抢占”的阻塞时间关联。 此类别表示由于以下原因之一断开线程：  
   
 -   计划程序使用更高优先级的线程将其替换。  

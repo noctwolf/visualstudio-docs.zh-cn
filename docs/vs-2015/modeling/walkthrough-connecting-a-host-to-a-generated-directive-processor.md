@@ -1,7 +1,7 @@
 ---
 title: 演练： 将主机连接到生成的指令处理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 451dcf21e8965de9ea350577c819daefb150a5d1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470450"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251924"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接至生成的指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 连接到生成的指令处理器的主机](https://docs.microsoft.com/visualstudio/modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor)。  
-  
 您可以编写您自己的主机，用于处理文本模板。 中演示了基本的自定义宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以扩展此主机不能添加功能，如生成多个输出文件。  
   
  在本演练中，将扩展你的自定义主机，以便它支持调用指令处理器的文本模板。 当您定义特定于域的语言时，它将生成*指令处理器*域模型。 指令处理器，使用户更轻松地编写模板访问模型，从而减少了需要编写程序集并导入的模板中的指令。  
@@ -232,7 +230,7 @@ ms.locfileid: "47470450"
             }  
     ```  
   
-7.  上**文件**菜单上，单击**全部保存**。  
+7.  在“文件”  菜单上，单击“全部保存” 。  
   
 8.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   

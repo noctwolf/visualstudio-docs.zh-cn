@@ -1,7 +1,7 @@
 ---
 title: 步骤 4：向每个标签添加一个 Click 事件处理程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92b6e04ef903c1fa6cf7e94b04874e2d6048acd1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484156"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252026"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 Click 事件处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 4： 向每个标签添加一个 Click 事件处理程序](https://docs.microsoft.com/visualstudio/ide/step-4-add-a-click-event-handler-to-each-label)。  
-  
 匹配游戏的运行原理如下所示：  
   
 1.  当玩家选择一个带有隐藏图标的方块时，程序会通过将图标颜色更改为黑色来向玩家显示该图标。  

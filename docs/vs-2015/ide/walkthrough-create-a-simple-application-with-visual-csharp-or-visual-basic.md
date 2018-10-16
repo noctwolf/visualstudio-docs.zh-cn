@@ -1,31 +1,29 @@
 ---
 title: 演练：使用 Visual C# 或 Visual Basic 创建简单应用程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-general
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 269616a5d8725399ecc5f577bc400b75de596332
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477759"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305547"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 Visual C# 或 Visual Basic 创建简单的应用程序](https://docs.microsoft.com/visualstudio/ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic)。  
-  
 通过完成本演练，你将熟悉在使用 Visual Studio 开发应用程序时可使用的许多工具、对话框和设计器。 你将创建一个简单的“Hello, World”样式的应用程序、设计 UI、添加代码并调试错误，同时会更多地了解如何在集成开发环境 (IDE) 中工作。  
   
  本主题包含以下各节：  

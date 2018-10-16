@@ -1,7 +1,7 @@
 ---
 title: 如何：将检测限定为特定 DLL | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99a67921739f620c908f1551f0f8a29a5aac73a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8d61879e967e2e75f0edcd2d91bd7e31fd4d9382
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234515"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>如何：将检测限定为特定 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 为特定 Dll 的限制规范](https://docs.microsoft.com/visualstudio/profiling/how-to-limit-instrumentation-to-specific-dlls)。  
-  
 通过使用检测分析方法，可以将分析数据的收集限定为应用程序中的一个或多个 DLL。 若要分析应用程序中的一个或多个 DLL，请创建一个将 .dll 文件作为目标包含在内的性能会话。 可以将要分析的 DLL 指定为 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的项目或独立的二进制文件。  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>将检测限定为 Visual Studio 解决方案中的特定 DLL  

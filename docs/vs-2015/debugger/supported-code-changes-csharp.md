@@ -1,7 +1,7 @@
 ---
 title: 支持的代码更改 (C#) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 655d80792bf1a2ab6c1af658bcfb6fb3648f5d10
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 02777efc206fed14c32a2cc73d31e475fd9e2064
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476939"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49262549"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[支持的代码更改 (C#)](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-csharp)。  
-  
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。  
   
  在调试会话期间，不能对 C# 代码应用下列更改：  

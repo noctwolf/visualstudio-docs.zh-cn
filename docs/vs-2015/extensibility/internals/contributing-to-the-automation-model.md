@@ -1,7 +1,7 @@
 ---
 title: 自动化模型的 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 510faa67dc9b967e488931b149e2497bdf853d79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 102a84781d033948490fb87e8b775f3b85ab61ba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476838"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268419"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contributing to the Automation Model
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[参与自动化模型](https://docs.microsoft.com/visualstudio/extensibility/internals/contributing-to-the-automation-model)。  
-  
 Visual Studio 提供一组自动化接口的自定义环境。 自动化模型是使最终用户能够创建 Visual Studio 加载项和扩展的对象模型。  
   
  此外，它是适用于你，作为 VSPackage 开发人员，以参与自动化模型中;通过执行此操作，启用你的 VSPackage 创建外接程序，并通常提供一致的用户模型体验，在使用你的 VSPackage 中时的最终用户[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  

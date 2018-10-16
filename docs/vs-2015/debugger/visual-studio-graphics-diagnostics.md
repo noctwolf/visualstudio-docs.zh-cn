@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 图形诊断 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c708900a0eebb2f4de1515eeab2f788eb5345a03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a1ada0fb0379846d7c0a0af5a6ab28906b29f619
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471296"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294198"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 图形诊断](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)。  
-  
 Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用中的呈现和性能问题的工具。 可对在 Windows PC 上、在 Windows 设备模拟器中或在远程 PC 或设备上本地运行的应用使用图形诊断。  
   
  图形诊断工作流一开始会捕获你的应用如何使用 Direct3D 的记录（在其运行时实时捕获），因此，可以立即对其行为进行分析、共享或保存以供稍候使用。 可以启动捕获会话和进行手动从 Visual Studio 或使用命令行捕获工具控制**dxcap.exe**。 也可以通过使用图形诊断捕获 API 以编程方式启动和控制捕获会话。  
@@ -47,7 +45,7 @@ Visual Studio*图形诊断*是一套用于记录、 然后分析 Direct3D 应用
  [入门](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  在该部分中，你会了解到如何安装 Visual Studio 图形诊断以及如何在你的 Direct3D 应用上使用图形诊断。  
   
- [捕获图形信息](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  若要使用图形诊断检查应用中的呈现问题，请先记录有关应用如何使用 DirectX 的信息。 录制会话期间，为您的应用程序正常运行，你*捕获*（即选择） 感兴趣的帧。 包含有关如何呈现帧的详细信息的捕获。 你可以将捕获的信息另存为图形日志文档，以在稍后进行检查或与团队中的其他成员进行共享。  
   
  [GPU 使用情况](../debugger/gpu-usage.md)  

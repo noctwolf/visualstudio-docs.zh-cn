@@ -1,7 +1,7 @@
 ---
 title: 指定何时以及在何处应用批注 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca11e9339534c1053a62442f4eb2e4a65ca2a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c4772dc980743db131002dbde80346836e9dc4c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482778"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303350"
 ---
 # <a name="specifying-when-and-where-an-annotation-applies"></a>指定何时以及在何处应用批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[指定时，并在其中批注应用](https://docs.microsoft.com/visualstudio/code-quality/specifying-when-and-where-an-annotation-applies)。  
-  
 条件批注时，可能需要指定到分析器的其他批注。  例如，如果函数具有可以是同步还是异步的变量，则函数的行为，如下所示： 在同步的情况下它始终会最终成功，但在异步情况下它报告错误如果它不能立即成功。 以同步方式调用该函数时，检查结果值提供到代码分析器的任何值，因为它将不返回。  但是，当以异步方式调用该函数并不检查函数结果，可能发生严重错误。 此示例说明了你可以在其中使用情况`_When_`批注 — 本文稍后所述，若要启用检查。  
   
 ## <a name="structural-annotations"></a>结构化批注  

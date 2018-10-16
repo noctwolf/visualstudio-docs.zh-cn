@@ -1,7 +1,7 @@
 ---
 title: 源服务器安全警报 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b971a05f9cd8873a1dbac3cafe6865ffce238868
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8f75ae71cb03e4811e5fa0599bd1ee51371c7891
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472235"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230095"
 ---
 # <a name="source-server-security-alert"></a>源服务器安全警报
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源服务器安全警报](https://docs.microsoft.com/visualstudio/debugger/source-server-security-alert)。  
-  
 使用源服务器时，只能使用来自已知和受信任位置的符号文件。  
   
  此警告会在你启用源服务器支持时出现。 源服务器命令嵌套在调试符号文件（PDB 文件）中。 请确保你知道自己的 PDB 文件来自何处。  

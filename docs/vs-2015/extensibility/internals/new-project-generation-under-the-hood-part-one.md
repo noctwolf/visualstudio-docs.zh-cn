@@ -1,7 +1,7 @@
 ---
 title: 生成新项目： 揭秘，第 1 部分 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07532630263c4f7ff8fe0d9281abbbbd47772b3c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468893"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302609"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[生成新项目： 揭秘，第一部分](https://docs.microsoft.com/visualstudio/extensibility/internals/new-project-generation-under-the-hood-part-one)。  
-  
 有关如何创建您自己的项目类型有没有想过吗？ 想知道实际情况时创建新的项目？ 让我们了解一下实质上，了解实际情况。  
   
  有几个 Visual Studio 协调为你的任务：  

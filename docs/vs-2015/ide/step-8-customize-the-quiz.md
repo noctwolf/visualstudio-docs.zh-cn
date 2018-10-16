@@ -1,7 +1,7 @@
 ---
 title: 步骤 8：自定义测验 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72e630a3d065e196d33919045316fad27c912750
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 559bd2a1b908ab5b1590a2ec2dd71225020db79a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483172"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260138"
 ---
-# <a name="step-8-customize-the-quiz"></a>第 8 步：自定义测验
+# <a name="step-8-customize-the-quiz"></a>步骤 8：自定义测验
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 8： 自定义测验](https://docs.microsoft.com/visualstudio/ide/step-8-customize-the-quiz)。  
-  
 在本教程的最后一部分中，您将了解一些自定义测验和扩展所学内容的方式。 例如，可考虑程序如何创建一个答案永不为分数的随机除法问题。 若要了解详细信息，请将 `timeLabel` 控件更改为其他颜色，并为测验者提供提示。  
   
 ### <a name="to-customize-the-quiz"></a>自定义测验  

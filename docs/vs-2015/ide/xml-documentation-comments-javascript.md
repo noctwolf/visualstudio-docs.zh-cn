@@ -1,7 +1,7 @@
 ---
 title: XML 文档注释 (JavaScript) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a5accfb63d33a028048c9715cfe9cdf728a5db2d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 26d690948378998f83d4fe6c8f909ffca1d3df8d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225623"
 ---
 # <a name="xml-documentation-comments-javascript"></a>XML 文档注释 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
-  
 在 JavaScript 中，可以通过在源代码内的特殊注释字段中添加 XML 标记来为代码创建文档。 IntelliSense 使用这些 XML 标记提供有关 JavaScript 对象的信息。  
   
  代码注释的位置因具体标记而异。  

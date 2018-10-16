@@ -1,7 +1,7 @@
 ---
 title: ASP.NET 调试： 系统要求 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,21 +22,19 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5386390261028fd635f93bc06d3a3fc8805ebdd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f57cdfc52079a11bfb3bd83baa2e3ff2484d368f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286476"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>ASP.NET 调试：系统要求
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ASP.NET 调试： 系统要求](https://docs.microsoft.com/visualstudio/debugger/aspnet-debugging-system-requirements)。  
+本主题描述了 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 调试方案的软件和安全性要求：  
   
-本主题介绍的软件和安全要求[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]调试方案：  
-  
--   本地调试：其中，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 应用程序在同一台计算机上运行。 此方案有两种版本：  
+-   本地调试：其中， [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 Web 应用程序在同一台计算机上运行。 此方案有两种版本：  
   
     -   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 代码驻留在文件系统中。  
   
@@ -47,7 +45,7 @@ ms.locfileid: "47469161"
 ## <a name="security-requirements"></a>安全性要求  
  对于远程调试，本地和远程计算机必须位于域设置或工作组设置上。  
   
- 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程，您必须具有调试该进程的权限。 默认情况下[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]应用程序以运行**ASPNET**用户。 如果辅助进程作为 **“ASPNET”** 或 **“NETWORK SERVICE”** 运行，则您必须具有管理员特权才能对它进行调试。  
+ 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程，您必须具有调试该进程的权限。 默认情况下， [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序以 **“ASPNET”** 用户身份运行。 如果辅助进程作为 **“ASPNET”** 或 **“NETWORK SERVICE”** 运行，则您必须具有管理员特权才能对它进行调试。  
   
  [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   

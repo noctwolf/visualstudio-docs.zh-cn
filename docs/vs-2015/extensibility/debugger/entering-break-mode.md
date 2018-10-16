@@ -1,7 +1,7 @@
 ---
 title: 进入中断模式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 25adcc12e6d474899165c1a486fd550f34dd99a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc4fe6dc7e2739e9f41e43e0f90ec9257c18b9fe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472245"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233657"
 ---
 # <a name="entering-break-mode"></a>进入中断模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进入中断模式](https://docs.microsoft.com/visualstudio/extensibility/debugger/entering-break-mode)。  
-  
 以下介绍单步执行函数，运行到源代码中，包含光标的行或运行到断点后遇到断点时，会发生的过程。  
   
 ## <a name="break-mode-process"></a>中断模式进程  

@@ -1,7 +1,7 @@
 ---
 title: 使用 DOM 资源管理器调试 CSS 样式 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 889626b5d80afebfd701a7bc347466da97ba707b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9a30ac9669c7093c7eb3b656076c606cbf5a9fdc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482215"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220705"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>使用 DOM 资源管理器调试 CSS 样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 DOM 资源管理器调试 CSS 样式](https://docs.microsoft.com/visualstudio/debugger/debug-css-styles-using-dom-explorer)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  调试 Windows 应用商店应用、Windows Phone 应用商店应用以及使用 Visual Studio Tools for Apache Cordova 创建的应用程序时，可查看和更改选定 DOM 元素及其子元素的 CSS 规则。  
@@ -58,14 +56,14 @@ ms.locfileid: "47482215"
 >  在 **“样式”** 和 **“已计算”** 选项卡中作出的更改并不是永久性的。 停止调试后，这些更改将丢失。 若要更改源代码并重新加载页面，期间不必停止再重新启动调试器，请刷新您的应用程序通过使用![刷新 Windows 应用程序按钮](../debugger/media/js-refresh.png "JS_Refresh")按钮 (**刷新 Windows 应用**) 上**调试**工具栏 （仅限 Windows 应用商店和 Windows Phone 应用商店应用）。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。  
   
 ## <a name="example-of-fixing-a-css-rule"></a>修复 CSS 规则的示例  
- 此示例演示如何检查 CSS 规则和调试样式问题。 在此示例中，假设你要更改用于显示 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]“拆分应用”模板中的组标题的字体颜色。  
+ 此示例演示如何检查 CSS 规则和调试样式问题。 在此示例中，假设你要更改用于显示 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] “拆分应用”模板中的组标题的字体颜色。  
   
 > [!NOTE]
 >  此示例显示了 Windows 应用商店应用，但显示的所有 DOM 资源管理器功能同样适用于 Windows Phone 应用商店应用，除“更改”选项卡外，也适用于使用 Visual Studio Tools for Apache Cordova 创建的应用。  
   
 #### <a name="to-view-and-change-css-rules"></a>查看和更改 CSS 规则  
   
-1.  在 Visual Studio 的“拆分应用”项目模板中，创建一个使用 JavaScript 和 HTML 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。  
+1.  在 Visual Studio 的“拆分应用”项目模板中，创建一个使用 JavaScript 和 HTML 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用。  
   
 2.  在 **“解决方案资源管理器”** 中，打开 items.css。 （你可在 pages 文件夹中找到 items.css。）  
   

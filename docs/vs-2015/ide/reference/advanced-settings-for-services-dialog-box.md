@@ -1,7 +1,7 @@
 ---
 title: “服务的高级设置”对话框 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea79a5539ad41a4f6e56a6069889e06bc45dde65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 217d1f6f546df94a66c5b7554a7a1710747cf83c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471153"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291871"
 ---
 # <a name="advanced-settings-for-services-dialog-box"></a>“高级服务设置”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[服务对话框的高级设置](https://docs.microsoft.com/visualstudio/ide/reference/advanced-settings-for-services-dialog-box)。  
-  
   
 使用客户端应用程序服务，可简便地从 Windows 窗体和 Windows Presentation Foundation (WPF) 应用程序访问 [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] 登录、角色和配置文件服务。 可以使用“项目设计器”的“服务”页，配置客户端应用程序服务。 有关“服务”页的详细信息，请参阅[“项目设计器”->“服务”页](../../ide/reference/services-page-project-designer.md)。  
   

@@ -1,7 +1,7 @@
 ---
 title: 源代码管理包模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 220d8596827c637b578e4ccb52796607b9bfd413
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b67274702906b4e1c778dd66e2cac2b96a84b6e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237154"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理包的模型](https://docs.microsoft.com/visualstudio/extensibility/internals/model-for-source-control-packages)。  
-  
 以下模型表示源控件实现的示例。 在模型中，您可以看到必须实现的接口和必须调用环境服务。 类似于所有服务，实际调用通过该服务获取特定接口的方法。 类的名称进行标识，以便更轻松地查看如何执行源代码管理。  
   
  ![SCC&#95;/{TUP 示例](../../extensibility/internals/media/scc-tup.gif "SCC_TUP")  

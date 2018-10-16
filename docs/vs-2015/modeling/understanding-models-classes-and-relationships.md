@@ -1,7 +1,7 @@
 ---
 title: 了解模型、 类和关系 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8b954177573c70ccd30da422f2155d675a430e1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471516"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271786"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[了解模型、 类和关系](https://docs.microsoft.com/visualstudio/modeling/understanding-models-classes-and-relationships)。  
-  
 域特定语言 (DSL) 是由其 DSL 定义文件定义，以及你可以编写任何自定义程序代码。 DSL 解决方案中的程序代码的大多数生成的此文件。  
   
  本主题介绍 DSL 定义的主要功能。  

@@ -1,7 +1,7 @@
 ---
 title: IDebugErrorBreakpoint2 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 50ee6452703ffae3af066985e91975394d4ed4fb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 72c73296c7160a69af1ab688840393e2dc03ece8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478571"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300925"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugErrorBreakpoint2](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugerrorbreakpoint2)。  
-  
 此接口表示一个错误或警告断点，如无效的位置、 无效的表达式或为何挂起断点具有未绑定 （代码不会加载尚未，依此类推） 的原因。  
   
 ## <a name="syntax"></a>语法  

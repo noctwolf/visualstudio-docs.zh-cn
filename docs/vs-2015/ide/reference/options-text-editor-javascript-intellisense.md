@@ -1,7 +1,7 @@
 ---
 title: “选项”->“文本编辑器”->“JavaScript”->“IntelliSense”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b3b17416902bac2bcc7ff03adc39e548e63fb229
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 8f04ea48505bee0f27fdeaa62458aa7ef8df915e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279625"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项，文本编辑器、 JavaScript、 IntelliSense](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-javascript-intellisense)。  
-  
   
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的 **“工具”** 、 **“选项”**, **“文本编辑器”** 、 **““IntelliSense””**, **“IntelliSense”**, **“工具”.** 页。  
   

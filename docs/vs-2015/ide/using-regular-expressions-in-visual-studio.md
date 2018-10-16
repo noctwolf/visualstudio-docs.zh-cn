@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中使用正则表达式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,15 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c74ed503b13e9f5efab3e6bf0df2fab75d34e7cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4edf0add3e29dd7fe4156a220fe0edc60e47f117
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285462"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[在 Visual Studio 中使用正则表达式](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio)。
-
 Visual Studio 使用.NET Framework 正则表达式来查找和替换文本。 有关 .NET 正则表达式的详细信息，请参阅 [.NET Framework 正则表达式](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d)。
 
 在 Visual Studio 2012 之前，Visual Studio 在查找和替换窗口中使用自定义的正则表达式语法。 请参阅 [Visual Studio 正则表达式转换](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx)，了解如何将一些比较常用的自定义正则表达式符号转换为 .NET 版本。

@@ -1,7 +1,7 @@
 ---
 title: 使用检测收集详细计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3d2335c73f68f790e9b3def8f2a1d4ced7c969
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588702"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186259"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用检测收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用检测收集详细计时数据](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-by-using-instrumentation)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具检测方法将分析代码注入到模块的副本中。 该代码记录分析运行期间模块中函数的每次进入、退出和函数调用。 在收集有关你的代码的某一部分的详细计时信息，以及了解输入和输出操作对应用程序性能的影响时，该检测方法会十分有用。  
   
  你可以使用以下步骤之一来指定检测方法：  

@@ -1,7 +1,7 @@
 ---
 title: 自定义文件存储和 XML 序列化 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ee8a3b5a5510ef5b8a104e3a55ace3af9ce7d318
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183010"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义文件存储和 XML 序列化](https://docs.microsoft.com/visualstudio/modeling/customizing-file-storage-and-xml-serialization)。  
-  
 当用户保存实例，或*模型*，域特定语言 (DSL) 中的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，创建或更新的 XML 文件。 可以重新加载该文件以重新创建该模型存储区中。  
   
  可以通过调整下的设置自定义序列化方案**Xml 序列化行为**在 DSL 资源管理器。 在某个节点**Xml 序列化行为**为每个域类、 属性和关系。 关系都位于其源类下。 另外还有对应形状、 连接器和关系图类的节点。  

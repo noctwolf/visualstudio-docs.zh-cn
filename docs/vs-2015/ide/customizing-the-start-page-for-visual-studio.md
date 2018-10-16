@@ -1,7 +1,7 @@
 ---
 title: 自定义 Visual Studio 起始页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bc8c27c98127bbbdfd7a1dddbab7124b8dc1d32
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ece49968c4a887e89f91feb83fae3de23aa2c282
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469656"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211467"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>自定义 Visual Studio 的起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[来自定义 Visual Studio 起始页](https://docs.microsoft.com/visualstudio/ide/customizing-the-start-page-for-visual-studio)。  
-  
 可以通过多种默认方式来自定义 Visual Studio 的起始页，例如，显示“打开项目”对话框或打开最近加载的解决方案。 你也可以显示自定义起始页，此起始页是在工具窗口中运行的 Windows Presentation Foundation (WPF) XAML 页，并且可以运行 Visual Studio 的内部命令。  
   
 ## <a name="customizing-the-default-start-page"></a>自定义默认起始页  

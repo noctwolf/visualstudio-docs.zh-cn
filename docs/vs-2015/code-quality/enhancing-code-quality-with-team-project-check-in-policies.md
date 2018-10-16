@@ -1,7 +1,7 @@
 ---
 title: 利用团队项目签入策略提高代码质量 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b76793a2be80e194f9056280614a9e9646c462d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c48a4e9cb68997903eed017637c9f00db88261a5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469247"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299021"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>利用团队项目签入策略提高代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[利用团队项目签入策略提高代码质量](https://docs.microsoft.com/visualstudio/code-quality/enhancing-code-quality-with-team-project-check-in-policies)。  
-  
 使用 Team Foundation 版本控制 (TFVC) 时，可以为团队项目创建签入策略。 若要强制实施可获得更好代码和提升组开发效率的实践。 签入策略是在团队项目级别设置的，并在允许代码签入之前在开发人员计算机上强制实施的规则。  
   
  你可以指定这些团队项目签入策略：  
@@ -42,13 +40,13 @@ ms.locfileid: "47469247"
 -   **工作项**：需要将一个或多个工作项与签入关联。  
   
 > [!IMPORTANT]
->  若要使用签入策略，您必须连接到[!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]。  
+>  若要使用签入策略，你必须连接到 [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)]。  
   
 ## <a name="common-tasks"></a>常规任务  
   
 |任务|支持内容|  
 |----------|------------------------|  
-|**创建和使用签入策略：** 使用的团队项目设置创建签入策略[!INCLUDE[esprscc](../includes/esprscc-md.md)]。|[设置和强制实施质量要求](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**创建和使用签入策略：** 通过使用 [!INCLUDE[esprscc](../includes/esprscc-md.md)]的团队项目设置来创建签入策略。|[设置并强制实施质量要求](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**创建和使用代码分析签入策略：** 可以从一组标准的代码分析规则中选择，或者也可以创建一组自定义规则。|[创建和使用代码分析签入策略](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>相关任务  
@@ -58,7 +56,7 @@ ms.locfileid: "47469247"
 |**设置开发环境：** 创建或修改代码之前，必须通过使用相应的源代码设置开发和测试环境。 如果你正在使用数据库，你还必须拥有对其脱机表示形式的访问权限。|[设置开发环境](http://msdn.microsoft.com/en-us/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**在开发过程中使用代码分析：** 团队成员在其开发计算机上运行代码分析。 在 Visual Studio 中，开发人员配置并运行各个代码项目的代码分析运行，查看和分析各个运行所发现的问题，并创建警告工作项。|[分析应用程序质量](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
 |**创建和运行单元测试：** 单元测试为开发人员和测试人员提供了一种快捷的方式来查找 C#、Visual Basic .NET 和 C++ 项目中类的方法的逻辑错误。 可以创建一次单元测试，并在每次源代码更改时运行单元测试以确保没有引入任何 bug。|[单元测试代码](../test/unit-test-your-code.md)|  
-|**跟踪工作项和缺陷：** 可以使用工作项来跟踪和管理有关你的团队项目的工作和信息。 工作项是一个数据库记录[!INCLUDE[esprfound](../includes/esprfound-md.md)]用于跟踪工作分配和工作的进度。 你可以使用不同类型的工作项来跟踪不同类型的工作，例如，客户要求、产品 Bug 和开发任务。|[跟踪工作和管理工作流&#91;重定向&#93;](http://msdn.microsoft.com/en-us/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**跟踪工作项和缺陷：** 可以使用工作项来跟踪和管理有关你的团队项目的工作和信息。 工作项是一个 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 用于跟踪工作分配和进度的数据库记录。 你可以使用不同类型的工作项来跟踪不同类型的工作，例如，客户要求、产品 Bug 和开发任务。|[跟踪工作和管理工作流&#91;重定向&#93;](http://msdn.microsoft.com/en-us/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>外部资源  
   

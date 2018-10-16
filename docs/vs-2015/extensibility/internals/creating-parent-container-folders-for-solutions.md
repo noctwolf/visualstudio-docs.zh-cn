@@ -1,7 +1,7 @@
 ---
 title: 为解决方案创建父级容器文件夹 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a172598ebe54007c6b0a7b2c6843d04b49a2b72a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481384"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307711"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>为解决方案创建父级容器文件夹
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为解决方案创建父级容器文件夹](https://docs.microsoft.com/visualstudio/extensibility/internals/creating-parent-container-folders-for-solutions)。  
-  
 在源控件插件 API 版本 1.2，用户可以指定单个根源控制目标的解决方案中的所有 Web 项目。 此单个根称为超级统一根 (SUR)。  
   
  在源控制插件 API 版本 1.1 中，如果将用户添加到源代码管理的多项目解决方案已提示用户指定的每个 Web 项目的一个源控制目标。  

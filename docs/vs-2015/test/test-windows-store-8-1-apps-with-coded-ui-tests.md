@@ -1,7 +1,7 @@
 ---
 title: 使用编码的 UI 测试来测试 Windows UWP 和应用商店 8.1 应用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e61c03b8f991fe462c0170db8a72d52056ea2906
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d177fc191eab84d864ad57bf5ad301dcb0b310e3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484529"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175781"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和应用商店 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试 Windows UWP 和 8.1 应用商店应用程序使用编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/test-windows-store-8-1-apps-with-coded-ui-tests)。  
-  
 本演练展示了如何为 UWP 应用和基于 XAML 的应用商店 8.1 应用创建 UI 测试。
   
 ## <a name="create-a-simple-windows-store-app"></a>创建简单的 Windows 应用商店应用  

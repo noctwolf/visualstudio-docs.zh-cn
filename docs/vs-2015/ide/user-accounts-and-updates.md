@@ -1,7 +1,7 @@
 ---
 title: 用户帐户和更新 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e3547d2084fe8644b099bac96c8b6b772e16e1e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 76f1e52ed548cdca5bd2e910023e4371fdc87e1f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483177"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222413"
 ---
 # <a name="user-accounts-and-updates"></a>用户帐户和更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用户帐户和更新](https://docs.microsoft.com/visualstudio/ide/user-accounts-and-updates)。  
-  
 Visual Studio 自身就是一个连接的环境。 登录后，你可以访问与你用户帐户以及链接到该帐户的所有帐户关联的所有服务。 无论你在何处使用 Visual Studio，你的帐户设置都随你一起漫游。 你可以为单个用户配置对特定 Visual Studio 实例的权限级别。 此外，当安装的任何组件（例如 SDK）有可用更新时，Visual Studio 都会通知你。  
   
 ## <a name="in-this-section"></a>本节内容  

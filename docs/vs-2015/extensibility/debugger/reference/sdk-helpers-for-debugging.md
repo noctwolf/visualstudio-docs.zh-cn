@@ -1,7 +1,7 @@
 ---
 title: 用于调试的 SDK 帮助程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 010827bc484ceed7c24c12759a2d6e610abad95e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4b058b4e3f831f4d8eddcbd816e4e35dbd83803
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483015"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232851"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[以便进行调试的 SDK 帮助程序](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/sdk-helpers-for-debugging)。  
-  
 这些函数和声明是用于在 c + + 中实现的调试引擎中，表达式计算器和符号提供程序的全局帮助器函数。  
   
 > [!NOTE]

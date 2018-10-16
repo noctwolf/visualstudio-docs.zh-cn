@@ -1,7 +1,7 @@
 ---
 title: CreateItem 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dae25b1a187c446e1076d709e3dc8f7a7d6a82a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7db76f3ec603c493cef38536b6fb54b74ac6c43b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180900"
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CreateItem 任务](https://docs.microsoft.com/visualstudio/msbuild/createitem-task)。  
-  
   
 使用输入项填充项集合。 这会使项从一个列表复制到另一个列表。  
   

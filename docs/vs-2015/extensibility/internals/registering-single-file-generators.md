@@ -1,7 +1,7 @@
 ---
 title: 注册单个文件生成器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d500227f60552fea171b038523808e4409cf9c33
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eb21fe95b2e351ca64a4f9434354abb0bfc42b1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303558"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册单个文件生成器](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-single-file-generators)。  
-  
 若要使自定义工具中可用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，因此必须注册该[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]可以实例化并将其关联与特定项目类型。  
   
 ### <a name="to-register-a-custom-tool"></a>若要注册的自定义工具  

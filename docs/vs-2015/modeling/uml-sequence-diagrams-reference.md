@@ -1,7 +1,7 @@
 ---
 title: UML 序列图： 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 43
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94ae423e74e0d78389a196adf1185ebdfa062069
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ebadcc72e346aac26b227ff069e20ffd81a601e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483928"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195125"
 ---
 # <a name="uml-sequence-diagrams-reference"></a>UML 序列图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 序列图： 参考](https://docs.microsoft.com/visualstudio/modeling/uml-sequence-diagrams-reference)。  
-  
 在 Visual Studio 中，*序列图*显示了一个交互，它表示类、 组件、 子系统或参与者的实例之间的消息序列。 时间流向图表下方，它显示从一个参与者到另一个参与者的控制流。 使用序列图来可视化实例和事件，而不是类和方法。 同一类型的多个实例可以出现在该关系图上。 同一条消息也会多次出现。  
   
  UML 序列图是 UML 模型的一部分，并且仅存在于 UML 建模项目中。 若要创建 UML 序列图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 详细了解如何创建和绘制[UML 序列图](../modeling/uml-sequence-diagrams-guidelines.md)或[UML 建模图](../modeling/edit-uml-models-and-diagrams.md)一般情况下。  

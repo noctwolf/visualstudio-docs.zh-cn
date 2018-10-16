@@ -1,7 +1,7 @@
 ---
 title: 自定义元素工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 91866f93f5a5a10f3a4295c21ee5e2046853ff4c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cf2d48ee0ec4c8f2f9986f4655eb98b44583beef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483470"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220501"
 ---
 # <a name="customizing-element-tools"></a>自定义元素工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[自定义元素工具](https://docs.microsoft.com/visualstudio/modeling/customizing-element-tools)。  
-  
 在一些 DSL 定义中，在一个概念表示为一组元素。 例如，如果您创建模型，在其中一个组件具有一组固定的端口，您始终想要在其父组件在同一时间创建的端口。 因此，您必须自定义元素创建工具，使其创建的一组而不是只是一个元素。 若要实现此目的，你可以自定义如何初始化的元素创建工具。  
   
  您还可以重写该工具拖动到关系图或元素上时，会发生什么情况。  

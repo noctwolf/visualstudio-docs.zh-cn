@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Shell |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2d96d4204e105324a9c209f74f9aee160c3eddde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5f0ef1e207fffc4d44963b968caad392b9d976c6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222399"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio Shell](https://docs.microsoft.com/visualstudio/extensibility/internals/visual-studio-shell)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Shell 是中的集成主代理[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 在 shell 提供了必要的功能，以允许 Vspackage 共享通用的服务。 由于体系结构的目标[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]背心在 Vspackage 中的主要功能是 shell 是一个框架，可提供基本功能并支持跨-在 Vspackage 及其组件之间进行通信。  
   
 ## <a name="shell-responsibilities"></a>Shell 职责  

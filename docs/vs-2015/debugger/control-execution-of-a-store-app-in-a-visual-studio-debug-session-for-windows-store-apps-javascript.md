@@ -1,7 +1,7 @@
 ---
 title: 控制 Windows 应用商店应用程序 (JavaScript) 的 Visual Studio 调试会话中执行的应用商店应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 583754b01f25509146bc3e3924e5132288a05285
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881132"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275517"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>在 Windows 应用商店应用的 Visual Studio 调试会话中控制应用商店应用的执行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[控制 Windows 应用商店应用程序 (JavaScript) 的 Visual Studio 调试会话中的应用商店应用程序执行](https://docs.microsoft.com/visualstudio/debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript)。  
-  
 本快速入门介绍了如何在 Visual Studio 调试器中进行导航以及如何在会话中查看程序状态。  
   
  本快速入门适用于刚开始使用 Visual Studio 进行调试的开发人员以及要详细了解 Visual Studio 调试会话中的导航的开发人员。 它并不讲解调试本身的技巧。 示例代码中的函数仅用于演示本主题中所述的调试过程。 这些函数并未采用应用或函数设计的最佳实践。 事实上，你很快就会发现这些函数（以及应用本身）完全没什么太多作用。  

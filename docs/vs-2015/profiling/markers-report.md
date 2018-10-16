@@ -1,7 +1,7 @@
 ---
 title: 标记报告 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c8a495135a0a7cf493dfc8a8c407409c37e273e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a0bfd7b6ef909415814bb8eff6da24ec8fef33ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471735"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242302"
 ---
 # <a name="markers-report"></a>标记报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[标记报告](https://docs.microsoft.com/visualstudio/profiling/markers-report)。  
-  
 标记报告列出所显示时间范围内的标记。  平移、缩放或隐藏通道，可能会导致标记显示或消失。 报告中包含有关各个标记的以下信息：  
   
 -   开始时间，相对于跟踪的开始时间。  

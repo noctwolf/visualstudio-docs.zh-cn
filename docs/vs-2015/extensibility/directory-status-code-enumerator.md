@@ -1,7 +1,7 @@
 ---
 title: 目录状态代码枚举器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 616026b5-f529-40ef-90c1-1836e116d797
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24f6dde65def4569eb8163d281f872011be0275c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 178d208b944cd52c641d60be7e0004c359896680
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482708"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49264057"
 ---
 # <a name="directory-status-code-enumerator"></a>目录状态代码枚举器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[目录状态代码枚举器](https://docs.microsoft.com/visualstudio/extensibility/directory-status-code-enumerator)。  
-  
 `SccDirStatus`枚举数包含命名的常量值用于指定源代码管理系统中的目录的状态。 此枚举由[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。 这是在源控件插件 API 版本 1.2 中引入的。  
   
 ## <a name="syntax"></a>语法  

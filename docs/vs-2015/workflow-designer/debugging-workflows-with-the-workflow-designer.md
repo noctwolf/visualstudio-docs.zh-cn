@@ -1,7 +1,7 @@
 ---
 title: 使用工作流设计器调试工作流 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4c7c57243bb0bab73c1007287c7d274f8bb57c13
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f60eb95d9aa29b01ae20b8c0edb73e7c205a4f8c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478968"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300568"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>使用工作流设计器调试工作流
 通过 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 可以调试工作流和自定义活动。 其过程和行为与默认 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 调试器的过程和行为类似。 本节中的各主题介绍如何执行传统调试过程以及如何调试 XAML 和表达式。  

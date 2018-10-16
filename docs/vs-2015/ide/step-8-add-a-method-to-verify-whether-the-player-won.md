@@ -1,7 +1,7 @@
 ---
 title: 步骤 8：添加方法以验证玩家是否获胜 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5484d98801eacfbf56984d923594d29ad7196fad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 278d8d71378c0d14047fe8e012fed21951101548
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476819"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306626"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步骤 8：添加方法以验证玩家是否获胜
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 8： 添加方法以验证玩家是否获胜](https://docs.microsoft.com/visualstudio/ide/step-8-add-a-method-to-verify-whether-the-player-won)。  
-  
 你已创建了一个有趣的游戏，但需要添加其他项来完成制作。 该游戏应当在玩家获胜时结束，因此您需要添加 `CheckForWinner()` 方法以验证玩家是否获胜。  
   
 ### <a name="to-add-a-method-to-verify-whether-the-player-won"></a>添加方法以验证玩家是否获胜  

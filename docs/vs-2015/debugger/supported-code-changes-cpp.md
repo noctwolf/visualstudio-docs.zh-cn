@@ -1,7 +1,7 @@
 ---
 title: 支持代码更改 （c + +） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49e56918753d93cfd70a3d9a7458f36a72bbabaa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dd4e1af62032920196dbd8171769f1dc079324e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483926"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225350"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[支持的代码更改 （c + +）](https://docs.microsoft.com/visualstudio/debugger/supported-code-changes-cpp)。  
-  
 Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。  
   
  有关在 Visual Studio 中使用 C++ 编辑并继续的信息，请参阅 [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) 。  
@@ -77,7 +75,7 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 ##  <a name="BKMK_Unsupported_scenarios"></a> 不支持的方案  
  在以下调试方案中，C/C++ 的“编辑并继续”不可用：  
   
--   调试与编译的本机应用[/Zo （增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+-   调试使用 [/Zo（增强优化调试）](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)编译的本机应用  
   
 -   在 Visual Studio 2015 Update 1 之前的 Visual Studio 版本中，调试 Windows 应用商店应用或组件。 从 Visual Studio 2015 Update 1 开始，便可在 Windows 应用商店 C++ 应用和 DirectX 应用中使用“编辑并继续”，因为它现在支持 `/ZI` 编译器开关与  `/bigobj` 开关。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。  
   
@@ -147,7 +145,7 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 3.  清除 **“允许预编译”** 复选框。  
   
 ##  <a name="BKMK_IDL_Attribute_Limitations"></a> IDL 特性限制  
- “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关详细信息，请参阅[IDL 特性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
+ “编辑并继续”不重新生成接口定义 (IDL) 文件。 因此，调试时不反映对 IDL 特性的更改。 若要查看对 IDL 特性更改的结果，必须停止调试并重新生成应用程序。 如果 IDL 特性已更改，“编辑并继续”不生成错误或警告。 有关更多信息，请参见 [IDL 特性](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6)。  
   
 ## <a name="see-also"></a>请参阅  
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

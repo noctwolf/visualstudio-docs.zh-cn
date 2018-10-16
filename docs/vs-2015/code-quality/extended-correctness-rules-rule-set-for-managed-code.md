@@ -1,7 +1,7 @@
 ---
 title: 对于托管代码扩展的更正规则规则集 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: aa22234c797a47fba945ba65343532df3565aefc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cebb3f492bb3aec873f503c2efcacb7220ec9739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481815"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187410"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>托管代码的“扩展的更正规则”规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[托管代码扩展的更正规则规则集](https://docs.microsoft.com/visualstudio/code-quality/extended-correctness-rules-rule-set-for-managed-code)。  
-  
 Microsoft 扩展的正确性规则规则集可最大化代码分析来报告逻辑和框架使用错误。 着重强调了在特定方案，例如 COM 互操作性和移动应用程序上。 应考虑包含此规则集如果其中一种情形适用于你的项目，或在项目中找到其他问题。  
   
  Microsoft 扩展的正确性规则规则集包含在 Microsoft 基本正确性规则规则中设置的规则。 基本正确性规则包括 Microsoft 最少量建议规则规则中设置的规则。 有关详细信息请参阅[托管代码的基本正确性规则规则集](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md)和[托管建议规则规则集的托管代码](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)  

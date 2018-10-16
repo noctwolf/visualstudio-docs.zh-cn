@@ -1,7 +1,7 @@
 ---
 title: 使用活动设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: c370b48d0534303947ca2e940adf95e178422c56
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b7601f4e42c7dbc2bee63719986760bedd1c8589
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477973"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224232"
 ---
 # <a name="using-the-activity-designers"></a>使用活动设计器
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 包含系统提供的若干活动，构造活动和工作流时可以使用它们。 本节介绍系统提供的可用活动及其设计器的类别。 有关每个类别内各活动及其相应设计器的主题将介绍这些活动的用途并提供使用指南。  

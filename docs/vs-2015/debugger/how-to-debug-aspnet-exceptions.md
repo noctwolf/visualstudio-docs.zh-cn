@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试 ASP.NET 异常 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d37a67fd0b25de79ceb764e9e80884b97310a307
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a08e382ed9d97aa659012934d3edef45151e10ad
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178524"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>如何：调试 ASP.NET 异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试 ASP.NET 异常](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-aspnet-exceptions)。  
-  
 调试异常是开发可靠的一个重要部分[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]应用程序。 有关如何调试异常的常规信息位于[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。  
   
  若要调试未处理的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]异常，您必须确保调试器停止为它们。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 运行时有一个顶级异常处理程序。 因此，默认情况下，调试器绝不会在未经处理的异常中中断。 若要引发异常时中断调试器，必须选择**发生异常时中断： 引发**设置为在该特定异常**异常**对话框。  
@@ -55,7 +53,7 @@ ms.locfileid: "47471774"
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>采用 ASP.NET 异常处理的最佳做法  
   
--   在可能引发您知道如何处理的可预见异常的代码周围放置 `try … catch` 块。 例如，如果应用程序正在调用到 XML Web 服务或直接向 SQL Server，该代码应为在**try...catch**块中，因为可能出现的大量异常。
+-   在可能引发你知道如何处理的可预见异常的代码周围放置 `try … catch` 块。 例如，如果应用程序正在调用到 XML Web 服务或直接向 SQL Server，该代码应为在**try...catch**块中，因为可能出现的大量异常。
 
 
 

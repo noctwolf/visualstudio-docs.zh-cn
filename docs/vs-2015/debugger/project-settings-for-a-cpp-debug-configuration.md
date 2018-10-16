@@ -1,7 +1,7 @@
 ---
 title: 项目的 c + + 调试配置的设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -117,18 +117,16 @@ caps.latest.revision: 52
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9f92b7e61de269ab12794055870d51f99f3c7995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05667c982daa35910bb1d4e1d895fb2bef50fb78
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193461"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[c + + 调试配置的项目设置](https://docs.microsoft.com/visualstudio/debugger/project-settings-for-a-cpp-debug-configuration)。  
-  
 可以更改 C 或 Visual c + + 调试配置中的项目设置**属性页**对话框中，如中所述[如何： 设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示了在何处可以找到中与调试器相关的设置**属性页**对话框。  
   
 > [!WARNING]
@@ -186,7 +184,7 @@ ms.locfileid: "47479545"
 |**映射导出**([/MAPINFO:EXPORTS](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|在映射文件中包含导出函数。 默认设置为“否”。 有关详细信息，请参阅[/MAPINFO （包含映射文件中信息）](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b)。|  
 |**可调试的程序集**([/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/533d2bce-f9b7-4fea-ae1c-0b4864c9d10b))|为链接器 /ASSEMBLYDEBUG 选项指定设置。 可能的值如下：<br /><br /> -   **未产生 debuggable 特性**。<br />-   **运行时跟踪和禁用优化 (/ ASSEMBLYDEBUG)**。 此设置为默认设置。<br />-   **没有运行时跟踪和启用 optimizations(/ASSEMBLYDEBUG:DISABLE)**。<br />-   **\<从父级或项目默认设置继承 >**。<br />-有关详细信息，请参阅[/ASSEMBLYDEBUG (添加 DebuggableAttribute)](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)。|  
   
- 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings>。  
+ 通过使用 Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings 接口，可以在“配置属性”文件夹（“调试”类别）中以编程方式更改这些设置。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.VCProjectEngine.VCDebugSettings> 。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)   

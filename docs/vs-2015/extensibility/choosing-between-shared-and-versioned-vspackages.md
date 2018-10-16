@@ -1,7 +1,7 @@
 ---
 title: 共享和版本控制的 Vspackage 之间进行选择 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 14b2ec1884fcbbebb28667e04d03e2c1424175dd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492538"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263687"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>选择共享的 VSPackage 和带有版本的 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[之间共享选择和版本控制的 Vspackage](https://docs.microsoft.com/visualstudio/extensibility/choosing-between-shared-and-versioned-vspackages)。  
-  
 不同版本的 Visual Studio 可以在同一台计算机上共存。 Vspackage 可以支持的任意组合[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]版本。  
   
  您可以通过两种策略、 共享的策略或版本控制策略的 Vspackage 的并行安装。 同时容纳的多个版本存在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]相关联的版本和[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。  

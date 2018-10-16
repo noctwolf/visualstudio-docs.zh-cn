@@ -1,7 +1,7 @@
 ---
 title: 内部函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 9
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a391bc1f5208b47ffb1aca51dbbd40b5b15fb04d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b50742c0176b8c880d3ed0b58b7b8ef76355777
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482605"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174481"
 ---
 # <a name="intrinsic-functions"></a>内部函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[内部函数](https://docs.microsoft.com/visualstudio/code-quality/intrinsic-functions)。  
-  
 在 SAL 表达式可以是 C/c + + 表达式，前提是不具有副作用的表达式，例如，+ +、--，和所有在此上下文中具有副作用的函数调用。  但是，SAL 提供一些类似函数的对象以及可以在 SAL 表达式中使用一些保留的符号。 这些称为*内部函数*。  
   
 ## <a name="general-purpose"></a>通用  
@@ -44,7 +42,7 @@ ms.locfileid: "47482605"
 |`_Inexpressible_(expr)`|表示一个缓冲区的大小是太复杂，无法通过使用批注表达式表示的情况 — 例如，通过扫描输入的数据集，然后再计算的计算时所选成员。|  
 |`_Nullterm_length_(param)`|`param` 是最多缓冲区，但不是包括 null 终止符中的元素数。 它可应用于非聚合，非 void 类型的任何缓冲。|  
 |`_Old_(expr)`|在不满足前提条件，计算时`_Old_`将返回输入的值`expr`。  当它计算后置条件中时，它将返回值`expr`根据它进行计算中不满足前提条件。|  
-|`_Param_(n)`|`n`个参数的函数，从 1 到计数`n`，和`n`是文本的整数常量。 如果名为的参数，此批注等同于按名称访问该参数。 **注意：** `n`可能指由省略号，或者可能在不使用名称函数原型中使用的位置参数。  |  
+|`_Param_(n)`|`n`个参数的函数，从 1 到计数`n`，和`n`是文本的整数常量。 如果名为的参数，此批注等同于按名称访问该参数。 **注意：** `n`可能指由省略号，或者可能在不使用名称函数原型中使用的位置参数。|  
 |`return`|C/c + + 保留关键字`return`可以 SAL 表达式中使用以指示函数的返回值。  在 post 状态; 值才可用它会导致语法错误之前状态使用它。|  
   
 ## <a name="string-specific"></a>特定于字符串  

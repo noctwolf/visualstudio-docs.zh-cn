@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 部署清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 458b7f6dac29dba16a121ed6dead9d6b62fdc1cd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 96ce7d873c20b8c29e5586a54c577a5d744b0caa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470673"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306782"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 部署清单](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-manifest)。  
-  
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序版本的标识。  
   
  部署清单具有下列元素和特性。  

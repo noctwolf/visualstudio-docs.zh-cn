@@ -1,7 +1,7 @@
 ---
 title: 活动视图 （旧版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: ef7aaa042ea358ecdf3d45b6ee75dd14cf117a01
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5fb8368228118b210865b1a351d12b1b5da4b27
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478774"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229303"
 ---
 # <a name="activity-views-legacy"></a>活动视图（旧版）
 [!INCLUDE[wf](../includes/wf-md.md)] 提供的许多活动（可通过这些活动构成工作流）都具有旧 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 中可用的多个设计视图。 从活动设计器中拖动时**工具箱**拖到设计图面，并且之后每当选择该活动时，您可以通过使用不同的设计视图之间进行切换**工作流**菜单或通过右键单击选定的活动。 同时，当您将指针移到选定活动的名称上时，将出现一组以下拉方式显示的选项卡，可以用来在不同的视图之间切换。  

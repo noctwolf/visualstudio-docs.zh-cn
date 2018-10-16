@@ -1,7 +1,7 @@
 ---
 title: 发送事件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 65c86cb8028d5c310de6f48c753d862865ea7a46
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482051"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270746"
 ---
 # <a name="sending-events"></a>发送事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[发送事件](https://docs.microsoft.com/visualstudio/extensibility/debugger/sending-events)。  
-  
 调试器与调试引擎 (DE) 之间的通信的机制是基于 DCOM 的事件模型。 为 COM 对象，发送事件和每个事件具有参数，指定下列各项：  
   
 -   DE 调用该事件。  

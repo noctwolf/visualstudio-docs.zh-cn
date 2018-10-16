@@ -1,7 +1,7 @@
 ---
 title: 与 VSTU 共享 Unity 日志回叫 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 5
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 8e1e0f2062195830443a169c67d9b75d2b1915ec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9e309f7d7340eb73de587c7a5f569377354dbab9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481845"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186857"
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>与 VSTU 共享 Unity 日志回调
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[与 VSTU 共享 Unity 日志回调](https://docs.microsoft.com/visualstudio/cross-platform/share-the-unity-log-callback-with-vstu)。  
-  
   
 Visual Studio Tools for Unity 对 Unity 注册了一个日志回调，能够将其控制台流式传输到 Visual Studio。 如果编辑器脚本也对 Unity 注册了一个日志回调，则 VSTU 回调可能会妨碍你的回调。 若要防止这种可能性，则使用 `VisualStudioIntegration.LogCallback` 事件与 VSTU 协作。  
   

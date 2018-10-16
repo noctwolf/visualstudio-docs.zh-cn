@@ -1,7 +1,7 @@
 ---
 title: 如何：生成到公共输出目录 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a132f604e1890c0d7144ca0b280fc46d7cd7fea3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e53b6e110040763c93c2786e81d82f105fa5eb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478599"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292053"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 生成到公共输出目录](https://docs.microsoft.com/visualstudio/ide/how-to-build-to-a-common-output-directory)。  
-  
 默认情况下，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将解决方案中的每个项目生成到其在解决方案中自己的文件夹中。 可以通过更改项目的生成输出路径来强制将所有输出都放到相同的文件夹中。  
   
 ### <a name="to-place-all-solution-outputs-in-a-common-directory"></a>将所有解决方案输出都放到一个共同目录中  

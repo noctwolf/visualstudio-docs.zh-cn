@@ -1,7 +1,7 @@
 ---
 title: 创建 ClickOnce 供其他应用程序部署 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b8f4736066501324d5428fd2634dfacd8c6537a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481163"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181514"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 ClickOnce 供其他应用程序部署到](https://docs.microsoft.com/visualstudio/deployment/creating-clickonce-applications-for-others-to-deploy)。  
-  
 并非所有开发人员正在创建 ClickOnce 部署都计划来部署应用程序本身。 其中许多只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，如大公司。 客户将成为一个负责承载其网络上的应用程序。 本主题讨论了一些在 3.5 版之前的.NET Framework 的版本中的此类部署中固有的问题。 然后，它介绍通过使用新的"使用信任的清单"功能在.NET Framework 3.5 中提供的一个新的解决方案。 最后，则可以确定创建的客户仍在使用较旧版本的.NET Framework 的 ClickOnce 部署的建议策略。  
   
 ## <a name="issues-involved-in-creating-deployments-for-customers"></a>在为客户创建部署时所涉及的问题  

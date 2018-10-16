@@ -1,7 +1,7 @@
 ---
 title: 演练： 在编辑器扩展中使用 Shell 命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0965a44350d431dcc60058956f0b42f5393025e0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ea320b18dc9164c0cbf87cbccf1c33ea7fab2230
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468670"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185583"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>演练：在编辑器扩展中使用 Shell 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 编辑器扩展中使用 Shell 命令](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shell-command-with-an-editor-extension)。  
-  
 从 VSPackage，你可以向编辑器中添加功能，如菜单命令。 本演练演示如何将修饰添加到在编辑器中的文本视图中，通过调用菜单命令。  
   
  本演练演示如何使用 VSPackage 和 Managed Extensibility Framework (MEF) 组件部分。 您必须使用 VSPackage，将菜单命令注册 Visual Studio shell 中，并且可以使用命令访问 MEF 组件部分。  

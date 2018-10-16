@@ -1,7 +1,7 @@
 ---
 title: 创建 Windows 窗体以搜索数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a64377e2689ca4e5111f316c13808aee6cfb59be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c610ebecf48d8a21e8962a549d7114b8d13e3ad6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480971"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270609"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建 Windows 窗体以搜索数据](https://docs.microsoft.com/visualstudio/data-tools/create-a-windows-form-to-search-data)。  
-  
   
 一个常见的应用程序方案是显示窗体上选择的数据。 例如，你可能希望显示特定客户的订单或特定订单的详细信息。 在本方案中，用户向窗体输入信息，然后以用户的输入作为参数执行查询，即基于参数化查询来选择数据。 查询只返回符合用户输入的条件的数据。 本演练显示了如何创建返回特定城市中客户的查询，并修改用户界面，以便用户可以输入城市名称并按按钮以执行该查询。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 向快捷菜单添加命令 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ae32e59dafa12e0c9f8695c0010012918f0b89d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c8230b8d37e0a853b22ac58fe1701a98728e41d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471336"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49246891"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 向快捷菜单添加命令](https://docs.microsoft.com/visualstudio/modeling/how-to-add-a-command-to-the-shortcut-menu)。  
-  
 可以将菜单命令添加到域特定语言 (DSL)，以便用户可以执行特定于 DSL 的任务。 当用户右键单击关系图时，这些命令将显示在上下文（快捷）菜单上。 你可以定义某个命令，以使它仅在特定情况下才显示在菜单中。 例如，可以使该命令仅在用户单击特定类型的元素或处于特定状态下的元素时才可见。  
   
  总之，请在 DslPackage 项目中执行如下步骤：  
@@ -201,7 +199,7 @@ namespace Company.Language1 /* Make sure this is correct */
  必须定义两个方法：一个用于确定命令何时在上下文菜单上可见，另一个用于执行该命令。 这些方法不是重写方法；相反，在命令的列表中注册这些方法。  
   
 ### <a name="define-when-the-command-will-be-visible"></a>定义命令将何时可见  
- 对于每个命令，定义 `OnStatus...` 方法，以确定该命令是否将显示在菜单上，以及它将处于启用状态还是灰显状态。设置 `Visible` 的 `Enabled` 和 `MenuCommand` 属性，如以下示例所示。 每次用户右键单击关系图时，都将调用此方法以构造快捷菜单，因此它必须尽快工作。  
+ 对于每个命令，定义 `OnStatus...` 方法，以确定该命令是否将显示在菜单上，以及它将处于启用状态还是灰显状态。设置 `MenuCommand` 的 `Visible` 和 `Enabled` 属性，如以下示例所示。 每次用户右键单击关系图时，都将调用此方法以构造快捷菜单，因此它必须尽快工作。  
   
  在此示例中，该命令仅在用户已选择特定类型的形状时才可见，并且仅在至少一个选定元素处于特定状态时才启用该命令。 该示例基于类关系图 DSL 模板，并且 ClassShape 和 ModelClass 是在 DSL 中定义的类型：  
   

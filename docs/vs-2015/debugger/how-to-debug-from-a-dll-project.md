@@ -1,7 +1,7 @@
 ---
 title: 如何： 从 DLL 项目进行调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a3ab401c4631da22f2afc84d2e1ec763258fc42
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 965a68194241c5e93e1da5bc6a9ba3f46db17213
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479478"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254782"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>How to: Debug from a DLL Project
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 从 DLL 项目调试](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-from-a-dll-project)。  
-  
 要开始调试 DLL 项目，必须在项目属性中指定调用应用程序。 C++ 属性页的布局和内容与 C# 和 Visual Basic 属性页的不同。  
   
  如果本机代码调用了托管 DLL，而你想对这两者进行调试，则可以在项目属性中指定此项。 有关更多信息，请参见 [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)。  

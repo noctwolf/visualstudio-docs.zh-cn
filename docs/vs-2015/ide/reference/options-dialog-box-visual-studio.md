@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 (Visual Studio) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa6d78348eab0ddb0e304910d658932e4fa89aee
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801f6175b30c521552eb22163abbe451e8aa124c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174656"
 ---
 # <a name="options-dialog-box-visual-studio"></a>“选项”对话框 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项对话框 (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/options-dialog-box-visual-studio)。  
-  
   
 使用“选项”对话框，可根据需要配置集成开发环境 (IDE)。 例如，可以为项目建立默认保存位置、更改 Windows 的默认外观和行为以及为常用命令创建快捷方式。 还有特定于开发语言和平台的选项。 可从“工具”菜单中访问“选项”。  
   

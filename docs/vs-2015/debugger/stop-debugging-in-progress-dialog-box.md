@@ -1,7 +1,7 @@
 ---
 title: 停止在进度对话框中进行调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e96e76f809f6c2f8f02267fe080e9e6742af4587
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 440d71a5a84ba5cd9390cc0ba9dfb6319be61cd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471925"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190471"
 ---
 # <a name="stop-debugging-in-progress-dialog-box"></a>“停止正在进行的调试”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[停止调试在进度对话框](https://docs.microsoft.com/visualstudio/debugger/stop-debugging-in-progress-dialog-box)。  
-  
 当调试器尝试停止调试会话，但停止会话需要一段时间时，会出现此对话框。 停止调试会话通常很快，而此对话框并不出现。 但是，有时从正在调试的所有进程中分离需要额外的时间。 如果停止会话需要的时间超过几秒钟（或者发生分离错误），则会出现此对话框。 如果此对话框经常出现，则可能是由于内部问题，您可能需要与产品支持服务联系。  
   
  可以等待进程分离，此对话框消失，或使用**立即停止**按钮强制立即终止。  

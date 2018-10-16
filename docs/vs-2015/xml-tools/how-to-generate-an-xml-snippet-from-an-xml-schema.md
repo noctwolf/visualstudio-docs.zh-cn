@@ -1,7 +1,7 @@
 ---
 title: 如何： 从 XML 架构生成 XML 代码段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b2583513acde49736358c9a1df97af74c950ad51
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483805"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210727"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 生成的 XML 代码段从 XML 架构](https://docs.microsoft.com/visualstudio/xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema)。  
-  
   
 “XML 编辑器”可以从 XML 架构定义语言 (XSD) 架构生成 XML 代码段。 例如，在编写 XML 文件时，如果位置在元素名的旁边，可以通过按 TAB 键，使用从该元素的架构信息生成的 XML 数据来填充该元素。  
   

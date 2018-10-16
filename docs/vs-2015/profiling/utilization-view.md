@@ -1,7 +1,7 @@
 ---
 title: 使用率视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22aa839347a6f9ba99926ad90939f3b93d5c40be
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d97037974c4a416a7d558f7eee85c3b835db8698
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479306"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198726"
 ---
 # <a name="utilization-view"></a>使用率视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用率视图](https://docs.microsoft.com/visualstudio/profiling/utilization-view)。  
-  
 **使用率视图**显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。  
   
  ![CPU 使用率视图](../profiling/media/vsts-ppacpuutil.png "VSTS_PPAcpuUtil")  

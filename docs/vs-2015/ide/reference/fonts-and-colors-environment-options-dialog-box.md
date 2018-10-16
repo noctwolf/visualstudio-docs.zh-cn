@@ -1,7 +1,7 @@
 ---
 title: “选项”对话框 ->“环境”->“字体和颜色”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8831cfdbf22d80cce39fbae81fffa46b8944e92
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3d080945edc13d0f4542fdd9c981037af108325c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220697"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“字体和颜色”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[字体和 Colors，Environment，Options Dialog Box](https://docs.microsoft.com/visualstudio/ide/reference/fonts-and-colors-environment-options-dialog-box)。  
-  
   
 通过“选项”对话框的“字体和颜色”页，可以为集成开发环境 (IDE) 中的各种用户界面元素建立自定义字体和配色方案。 单击“工具”/“选项”，然后选择“环境”/“字体和颜色”即可访问此对话框。 如果此页未出现在列表中，请在“选项”对话框中选择“显示所有设置”。  
   

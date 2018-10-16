@@ -1,7 +1,7 @@
 ---
 title: Blend 中的“路径选择”工具修改键 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 244a1238884dab0778ff373701a202c2c67e8ac5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfe69bcc678cbd6f06f8afc8d7e175b124f423ab
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471219"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191069"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的“路径选择”工具修改键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Blend 中的直接选择工具修改键](https://docs.microsoft.com/visualstudio/designers/direct-selection-tool-modifier-keys-in-blend)。  
-  
 下表列出了在使用“路径选择”工具 ![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-c116-451d-8dd2-1f88b8406362") 修改现有路径形状时可使用的快捷方式。 要在现有路径上添加或删除点，或联接两个现有路径，请使用“钢笔”工具。  
   
 |任务|操作步骤|指针|  

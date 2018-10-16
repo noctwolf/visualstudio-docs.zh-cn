@@ -1,7 +1,7 @@
 ---
 title: 演练： 将功能添加到自定义编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ee6ca09f1bef7057e64287afb4ff8522fffb3f06
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f7f0d7c79590c197b7c226fb2cb2841235049bb3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283057"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>演练：在自定义编辑器中添加功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 添加功能到自定义编辑器](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-features-to-a-custom-editor)。  
-  
 创建自定义编辑器后，您可以向其添加更多的功能。  
   
 ### <a name="to-create-an-editor-for-a-vspackage"></a>若要创建 VSPackage 的编辑器  
@@ -128,7 +126,7 @@ ms.locfileid: "47480174"
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   
-     有关详细信息，请参阅[参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)。  
+     有关详细信息，请参阅 [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md)。  
   
 ## <a name="robust-programming"></a>可靠编程  
   

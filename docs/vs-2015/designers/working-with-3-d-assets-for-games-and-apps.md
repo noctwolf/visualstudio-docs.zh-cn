@@ -1,7 +1,7 @@
 ---
 title: 为游戏和应用程序使用三维资产 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 48082153e92a280745d649a23454f6c3870302dc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bdf19958ec7b3cfe72ee00ea84e0e23724a51458
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483583"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265223"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>为游戏和应用程序使用三维资产
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[为游戏和应用程序使用三维资产](https://docs.microsoft.com/visualstudio/designers/working-with-3-d-assets-for-games-and-apps)。  
-  
 本文档介绍了 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具，这些工具可用来创建或修改基于 DirectX 的游戏和应用的三维模型、纹理和着色器。  
   
 ## <a name="directx-app-development-in-visual-studio"></a>Visual Studio 中的 DirectX 应用开发  

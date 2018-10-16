@@ -1,7 +1,7 @@
 ---
 title: 字符串元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 12e6b1cbc12e7b0deff97a239db08977ac38144c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 788dd763906ca2d1410b6ec5d9efb4b7e6e1807d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280938"
 ---
 # <a name="strings-element"></a>Strings 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[字符串元素](https://docs.microsoft.com/visualstudio/extensibility/strings-element)。  
-  
 字符串元素必须包含至少一个**ButtonText**子元素。 所有其他子元素是可选的。 无效的 XML 字符如 & 和 < 必须编码为实体 ('&amp;和&lt;，等等)。  
   
  And 符的文本字符串中指定该命令的键盘快捷方式。  

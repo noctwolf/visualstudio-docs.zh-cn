@@ -1,7 +1,7 @@
 ---
 title: 项目持久性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 42907bcf-4e27-46bd-a8cb-01c2ccd2bde5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5c44fde30720fe17f4b9f3a5d679750ccb78ee6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 068f919ae0717158220712bfe010c58cd401d5d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483343"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177094"
 ---
 # <a name="project-persistence"></a>项目持久性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目持久性](https://docs.microsoft.com/visualstudio/extensibility/internals/project-persistence)。  
-  
 持久性是你的项目的关键设计注意事项。 大多数项目使用项目项代表文件;[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]还支持其数据是不基于文件的项目。 必须保留这两个拥有的项目和项目文件的文件。 IDE 指示要保存本身或项目项的项目。  
   
  项目的模板将传递给项目工厂。 模板应支持根据特定项目类型的要求的所有项目项的初始化。 这些模板稍后可以另存为项目文件，由该解决方案通过 IDE 管理。 有关详细信息，请参阅[创建项目实例通过使用项目工厂](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)并[解决方案](../../extensibility/internals/solutions.md)。  

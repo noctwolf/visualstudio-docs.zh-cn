@@ -1,7 +1,7 @@
 ---
 title: 如何：创建基本冯氏色器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 652d146cbf58dd6f248a8f36e98ea37d23e7c1a3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479024"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286489"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本 Phong 着色器
+# <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本冯氏着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建基本 Phong 着色器](https://docs.microsoft.com/visualstudio/designers/how-to-create-a-basic-phong-shader)。  
-  
 本文档演示如何使用着色器设计器和定向关系图着色器语言 (DGSL) 创建实现经典冯氏照明模型的照明着色器。  
   
  本文档演示了这些活动：  

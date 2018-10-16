@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用快捷键与编辑器扩展 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e8497b4b8192c4ad888c850b9ec2ab37c89f334
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469061"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232409"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：在编辑器扩展中使用快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用快捷键与编辑器扩展](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension)。  
-  
 您可以在编辑器扩展中响应键盘快捷方式。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视区修饰编辑器模板，并且可以使用添加修饰 + 字符。  
   
 ## <a name="prerequisites"></a>系统必备  
@@ -34,7 +32,7 @@ ms.locfileid: "47469061"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`KeyBindingTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `KeyBindingTest`。  
   
 2.  编辑器文本修饰项模板添加到项目并将其命名`KeyBindingTest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -57,7 +55,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>定义命令的筛选器  
  命令筛选器是实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>，用于处理该命令通过实例化修饰。  
   
-1.  添加一个类文件并将其命名`KeyBindingCommandFilter`。  
+1.  添加一个类文件并将其命名为 `KeyBindingCommandFilter`。  
   
 2.  添加下面的 using 语句。  
   

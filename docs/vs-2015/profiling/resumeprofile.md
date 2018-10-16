@@ -1,7 +1,7 @@
 ---
 title: ResumeProfile | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95601212507f00904198750fe2d3547e481e5178
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c95b516631844e5c15fdeccfbe66eda3917422c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469117"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206279"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ResumeProfile](https://docs.microsoft.com/visualstudio/profiling/resumeprofile)。  
-  
 `ResumeProfile` 方法递减指定分析级别的挂起/继续计数器的值。  
   
 ## <a name="syntax"></a>语法  

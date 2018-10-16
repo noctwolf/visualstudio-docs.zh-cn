@@ -1,7 +1,7 @@
 ---
 title: Windows 安装程序基础知识 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a15d47971a7f500d1f709dfb248838f84065f21
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 281dfa7a8c671923dd64eb8ecaee0629d4b8e224
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49223049"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Windows Installer 基本知识](https://docs.microsoft.com/visualstudio/extensibility/internals/windows-installer-basics)。  
-  
 Windows 安装程序安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。  
   
  Windows 安装程序的综合文档，请参阅平台 SDK 主题[Windows 安装程序](http://msdn.microsoft.com/library/aa372866.aspx)。  

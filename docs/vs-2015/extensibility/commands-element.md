@@ -1,7 +1,7 @@
 ---
 title: 命令元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ed21cfb92cbf39b384be512aca640555bb4884f7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a2383bb24ecd54bdbc7a30c98cd1fff555b4aeb9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182932"
 ---
 # <a name="commands-element"></a>Commands 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Commands 元素](https://docs.microsoft.com/visualstudio/extensibility/commands-element)。  
-  
 表示 VSPackage 工具栏上的命令的集合。 该集合中可以具有最多五个小节中，如下所示： 菜单、 组、 按钮、 combos 和位图。  
   
  每个小节子元素，例如，\<菜单 >，唯一的命令 ID 的 GUID 和数值标识符对标识。 GUID 标识的"命令集"，用于从逻辑上相关的命令进行分组。 VSPackage 应定义其自己的命令集以避免与由其他 Vspackage 定义的命令 Id 冲突。  

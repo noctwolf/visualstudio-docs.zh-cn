@@ -1,7 +1,7 @@
 ---
 title: 注册 .NET Framework 的扩展 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a2d3e281562be5234e0a70a877a6c169c346995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a1a1966bbe68bccd12261ca6a05002485cefe1d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471341"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196919"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>注册 .NET Framework 的扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册的.NET Framework 的扩展](https://docs.microsoft.com/visualstudio/msbuild/registering-extensions-of-the-dotnet-framework)。  
-  
   
 可开发一个扩展特定版本的 .NET Framework 的程序集。 为确保该程序集出现在 Visual Studio“添加引用”对话框中，必须将包含程序集的文件夹添加到系统注册表。  
   

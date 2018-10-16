@@ -1,7 +1,7 @@
 ---
 title: 使用探查器采样法收集服务的应用程序统计信息 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02936803b969c3e73410608ed0c5bf35c44db91b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3a847777ad3d5b12162eedc8e998098ad20926a1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295550"
 ---
 # <a name="collecting-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>使用探查器采样方法收集服务的应用程序统计信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[服务通过使用 Profiler 采样方法收集应用程序统计信息](https://docs.microsoft.com/visualstudio/profiling/collecting-application-statistics-for-services-by-using-the-profiler-sampling-method)。  
-  
 本部分介绍从命令行使用采样方法收集 Windows 服务的性能统计信息的步骤和选项。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: MSBuild 项目文件架构引用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 134a66a38886201a9f53ed5d15dda009b095d72f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cd1add4f68bb2e0648cf3cf08b72b1bc6f592595
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470043"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305976"
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 项目文件架构引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 项目文件架构参考](https://docs.microsoft.com/visualstudio/msbuild/msbuild-project-file-schema-reference)。  
-  
   
 提供列有所有 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] XML 架构元素及其可用属性和子元素的表。  
   

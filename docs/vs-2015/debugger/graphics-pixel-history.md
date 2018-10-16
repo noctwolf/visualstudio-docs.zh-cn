@@ -1,7 +1,7 @@
 ---
 title: 图形像素历史记录 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4b37dab129c5eb19825746177cb30a5e20493399
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9ac64d352bfb6d6a35ea1bd9027d30f527aab116
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478644"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208359"
 ---
 # <a name="graphics-pixel-history"></a>图形像素历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[图形像素历史记录](https://docs.microsoft.com/visualstudio/debugger/graphics/graphics-pixel-history)。  
-  
 Visual Studio 中的“图形像素历史记录”窗口可以帮助你了解，在游戏或应用的某个帧期间，Direct3D 事件如何对某一特定像素产生影响。  
   
  下面是“像素历史记录”窗口：  

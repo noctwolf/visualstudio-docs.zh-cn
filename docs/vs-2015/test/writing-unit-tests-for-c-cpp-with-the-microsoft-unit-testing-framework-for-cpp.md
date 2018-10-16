@@ -1,7 +1,7 @@
 ---
 title: 使用适用于 C++ 的 Microsoft 单元测试框架编写 C-C++ 单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e5da38500e5fd35fb14e1854fe1fa378a8553c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481025"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250531"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>用 Microsoft 适用于 C++ 的单元测试框架编写 C/C++ 单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编写单元测试 C/c + + 的 Microsoft 单元测试框架的 c + +](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)。  
-  
 在 Visual Studio 中，你可以为用 C++ 编写的托管代码创建单元测试。 非托管代码有时称为本机代码。  
   
  下面的过程包含基本的入门信息。 后面的部分提供一个更详细地描述各步骤的演练。  

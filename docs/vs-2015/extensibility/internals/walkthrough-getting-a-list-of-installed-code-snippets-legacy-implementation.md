@@ -1,7 +1,7 @@
 ---
 title: 演练： 获取一系列安装代码片段 （旧版实现） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb5aea9af28ec455688176fa1d0f3a4e45acc038
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2074000e2e77f842f63e1cb00e2fa7c25f42836b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469232"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49248128"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取已安装代码片段（旧版实现）的列表
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[获取的安装代码片段 （旧版）](https://docs.microsoft.com/visualstudio/extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation)。  
-  
 代码段是一段代码可以插入到源缓冲区 （它允许选择安装的代码片段的列表） 的菜单命令或通过从 IntelliSense 完成列表中选择代码片段快捷方式。  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法可获取特定语言 GUID 的所有代码片段。 这些代码段的快捷方式可以插入到 IntelliSense 完成列表。  

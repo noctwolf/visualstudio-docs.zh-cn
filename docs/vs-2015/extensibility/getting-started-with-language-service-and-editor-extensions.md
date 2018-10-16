@@ -1,7 +1,7 @@
 ---
 title: 语言服务和编辑器扩展入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d2ca0b3a4c1128c316ca2967033752ab45799648
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477746"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49227001"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[语言服务和编辑器扩展入门](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-language-service-and-editor-extensions)。  
-  
 编辑器扩展可用于将语言服务功能，例如大纲显示、 大括号匹配、 IntelliSense 和灯泡添加到您自己的编程语言或任何内容类型。 此外可以自定义外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 您还可以定义自己的类型的内容，并指定的外观和行为的内容将显示的文本视图。  
   
  若要开始编写编辑器扩展，使用 Visual Studio SDK 的一部分安装的编辑器项目模板。 Visual Studio SDK 是一可下载的工具，有助于轻松地开发 Visual Studio 扩展，通过使用 Vspackage 或通过使用 Managed Extensibility Framework (MEF)。  

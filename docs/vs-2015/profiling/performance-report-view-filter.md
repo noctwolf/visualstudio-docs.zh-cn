@@ -1,7 +1,7 @@
 ---
 title: 性能报告视图筛选器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1568ec12a635014239a1533bf00df09a1e63ac14
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f63855aeb4b4e2d48db045354b0134056684dedf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477083"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228160"
 ---
 # <a name="performance-report-view-filter"></a>性能报告视图筛选器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[性能报告视图筛选器](https://docs.microsoft.com/visualstudio/profiling/performance-report-view-filter)。  
-  
 “探查器报告视图筛选器”窗口位于“性能报告”窗口顶部。 如果看不到它，请单击“显示筛选器”按钮。  
   
  可以修改每个筛选器子句以优化结果。 筛选生成器中提供了以下各列。  

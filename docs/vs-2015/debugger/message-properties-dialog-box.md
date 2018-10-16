@@ -1,7 +1,7 @@
 ---
 title: 消息属性对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be3975be4a50fd51e7004d4a587c28a2001d932c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c5fa9f785b3b374e917c62f66c1d49dc6f8232a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49278899"
 ---
 # <a name="message-properties-dialog-box"></a>“消息属性”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[消息属性对话框](https://docs.microsoft.com/visualstudio/debugger/message-properties-dialog-box)。  
-  
 使用此对话框中，若要了解有关特定的消息的详细信息。 若要显示此对话框中，将焦点移至[消息视图](../debugger/messages-view.md)窗口。 在树中，选择消息的任何节点，然后选择**属性**从**视图**菜单。  
   
  **常规**选项卡是显示唯一选项卡。 以下设置将可用：  

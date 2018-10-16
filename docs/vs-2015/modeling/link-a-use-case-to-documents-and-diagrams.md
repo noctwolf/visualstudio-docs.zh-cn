@@ -1,7 +1,7 @@
 ---
 title: 用例链接到文档和关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d0fd5bfedc803ff928a87f34abece9b2449a5033
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49232526"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>将用例链接到文档和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用例链接到文档和关系图](https://docs.microsoft.com/visualstudio/modeling/link-a-use-case-to-documents-and-diagrams)。  
-  
 你可以将用例图中的用例链接到另一个关系图或文档。 例如，可以将用例链接到以下关系图和文档：  
   
 -   序列图，显示如何通过用户和系统设置或其中主要组件之间的交互实现用例的目标。  

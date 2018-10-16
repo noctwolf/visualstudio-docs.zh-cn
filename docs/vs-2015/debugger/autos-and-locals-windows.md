@@ -1,14 +1,14 @@
 ---
 title: 自动和局部变量 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
 - vs.debug.locals
@@ -26,18 +26,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 877d145f83ce15cd5c1bb49b607519888ad0e96b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94b583fee7f0e03fae3f194f1614d82016136e13
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470695"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191316"
 ---
 # <a name="autos-and-locals-windows"></a>“自动”和“局部变量”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[在 Visual Studio 调试器中检查变量](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)。  
-  
 当你希望在进行调试的过程中查看变量的值时， **“自动”** 窗口（在调试过程中，按 **Ctrl+Alt+V, A**，或者通过“调试/窗口/自动” ）和 **“局部变量”** 窗口（在调试过程中，按 **Ctrl+Alt+V, L**，或者通过“调试/窗口/局部变量” ）是非常有用的。 “局部变量”  窗口显示在本地范围内定义的变量，它们通常为当前正在执行的函数或方法。 **“自动”** 窗口显示在当前行（调试器停止的位置）周围使用的变量。 具体显示哪些变量因不同的语言而异。 请参阅自动窗口中显示的变量？下面。  
   
  若需了解基本调试的详细信息，请参阅 [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md)。  

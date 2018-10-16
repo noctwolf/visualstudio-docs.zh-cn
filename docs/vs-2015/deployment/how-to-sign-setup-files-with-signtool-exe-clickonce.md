@@ -1,7 +1,7 @@
 ---
 title: 如何： 安装与 SignTool.exe (ClickOnce) 文件进行签名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: ad234b1c21030032428265e9c03528a165cba8c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482705"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179304"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：用 SignTool.exe (ClickOnce) 对安装文件进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 用 SignTool.exe (ClickOnce) 登录安装程序文件](https://docs.microsoft.com/visualstudio/deployment/how-to-sign-setup-files-with-signtool-exe-clickonce)。  
-  
 你可以使用 SignTool.exe 为安装程序 (setup.exe) 签名。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。  
   
  默认情况下，ClickOnce 具有签名的清单和一个签名的安装程序。 但是，如果想在以后更改安装程序的参数，则以后必须对该安装程序进行签名。 如果对安装程序签名后更改参数，则签名将会损坏。  

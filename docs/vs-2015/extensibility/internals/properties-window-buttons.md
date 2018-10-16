@@ -1,7 +1,7 @@
 ---
 title: 属性窗口按钮 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 579f0a287e171872fccebbd251fae618ba615692
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 05b23a5dff0c668487f569ceb4fcd5efb6a582aa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176795"
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[属性窗口按钮](https://docs.microsoft.com/visualstudio/extensibility/internals/properties-window-buttons)。  
-  
 具体取决于开发语言和产品类型，某些按钮显示的工具栏上的默认情况下**属性**窗口。 在所有情况下，**按分类顺序**， **Alphabetized**，**属性**，以及**属性页**按钮的显示。 在 Visual C# 和 Visual Basic**事件**按钮还会显示。 在某些 Visual c + + 项目中， **VC + + 消息**并**VC 重写**按钮的显示。 对于其他项目类型可能会显示其他按钮。 有关中的按钮的详细信息**属性**窗口中，请参阅[属性窗口](../../ide/reference/properties-window.md)。  
   
 ## <a name="implementation-of-properties-window-buttons"></a>属性窗口按钮的实现  

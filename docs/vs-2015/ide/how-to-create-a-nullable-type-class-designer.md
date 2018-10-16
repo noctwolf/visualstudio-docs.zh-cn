@@ -1,7 +1,7 @@
 ---
 title: 如何：创建可以为 null 的类型（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f93d5a18b71a054a147b396afd293c6bdce36c64
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484037"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179421"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：创建可以为 null 的类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建可以为 Null 的类型 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-create-a-nullable-type-class-designer)。  
-  
 某些值类型并不是始终具有（或需要）定义的值。 这是数据库中的常见做法，数据库中某些字段可能没有分配任何值。 例如，可以向某个数据库字段分配 null 值，表示尚未向其分配值。  
   
  可以为 null 的类型是一种扩展的值类型，以便其可为该类型采用典型范围内的值，也可以采用 null 值。 例如，对于一个可以为 null 的 `Int32`（也以 Null\<Int32> 表示），可以为其分配从 -2147483648 到 2147483647 之间的任何值，或可为其分配 null 值。 可以为 Nullable\<bool> 分配的值包括 `True`、`False` 或 null（不分配任何值）。  

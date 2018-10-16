@@ -1,7 +1,7 @@
 ---
 title: 如何： 将必备组件与 ClickOnce 应用程序包括 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: bd50b69bc46b1f00f797fd120351dd47f3bb8b03
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1a58e305b1214a6b8d710ef08126d241f381a051
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469060"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212194"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 与 ClickOnce 应用程序包括先决条件](https://docs.microsoft.com/visualstudio/deployment/how-to-include-prerequisites-with-a-clickonce-application)。  
-  
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序分发这些软件。 当你发布的应用程序并选择**从与我的应用程序相同的位置下载系统必备组件**，如果安装程序包不在将会出错**包**文件夹。  
   
 > [!NOTE]

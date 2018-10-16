@@ -1,7 +1,7 @@
 ---
 title: CA2153： 避免处理损坏状态异常 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -13,18 +13,15 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ff16046a115a7a21939ef33fa06f6a81ec56921c
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 3f6ac08b9e71dcd9d1a84cb770e4774a7b914132
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587749"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297981"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153：避免处理损坏状态异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA2153： 避免处理损坏状态异常](https://docs.microsoft.com/visualstudio/code-quality/ca2153-avoid-handling-corrupted-state-exceptions)。
-
 |||
 |-|-|
 |TypeName|AvoidHandlingCorruptedStateExceptions|
@@ -33,10 +30,10 @@ ms.locfileid: "47587749"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- [损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx)指示该内存损坏进程中存在。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。
+ [损坏状态异常 (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) 指示进程中存在内存损坏。 如果攻击者可以将攻击放置到损坏的内存区域，则捕获它们（而非允许进程崩溃）可能导致安全漏洞。
 
 ## <a name="rule-description"></a>规则说明
- CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下[公共语言运行时 (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx)将不会为 Cse 调用 catch 处理程序。
+ CSE 指示进程状态已损坏且未被系统捕获。 在损坏状态的情况中，如果你将方法标记有适当的 `HandleProcessCorruptedStateExceptions` 特性，则常规的处理程序仅捕获异常。 默认情况下， [公共语言运行时 (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) 将不会为 CSE 调用 catch 处理程序。
 
  允许进程崩溃而不捕获这些类型的异常是最安全的选择，因为甚至日志记录代码都可允许攻击者利用内存损坏错误。
 
@@ -45,7 +42,7 @@ ms.locfileid: "47587749"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此警告，应执行以下任一操作：
 
- 1. 删除`HandleProcessCorruptedStateExceptions`属性。 这将恢复为默认运行时行为，其中 CSE 不会传递到 catch 处理程序。
+ 1. 删除 `HandleProcessCorruptedStateExceptions` 特性。 这将恢复为默认运行时行为，其中 CSE 不会传递到 catch 处理程序。
 
  2. 删除常规 catch 处理程序，而不是捕获特定异常类型的处理程序。  这可能包括假定处理程序代码可以安全处理这些内容的 CSE（非常罕见）。
 

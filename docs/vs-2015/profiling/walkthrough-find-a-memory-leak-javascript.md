@@ -1,7 +1,7 @@
 ---
 title: 演练：查找内存泄漏 (JavaScript) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 242dd78d7110a36e0c8baf4d1ea1e1a7f323a1c5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477031"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234190"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>演练：查找内存泄漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 查找内存泄漏 (JavaScript)](https://docs.microsoft.com/visualstudio/profiling/walkthrough-find-a-memory-leak-javascript)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  本演练带领你完成使用 JavaScript 内存分析器确定并修复简单内存问题的过程。 JavaScript 内存分析器在 Visual Studio 中提供，适用于使用 JavaScript 为 Windows 生成的 Windows 应用商店应用。 在此方案中，你将创建一个在内存中错误保留 DOM 元素，而非以创建这些元素时的相同速率将其释放的应用。  

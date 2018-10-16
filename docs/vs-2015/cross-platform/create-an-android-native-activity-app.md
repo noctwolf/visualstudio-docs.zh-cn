@@ -1,7 +1,7 @@
 ---
 title: 创建 Android 本机活动应用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d3317251b124c42f67edfcfae922bd2744dbe375
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470076"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49174000"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[中创建 Android 本机活动应用](https://docs.microsoft.com/visualstudio/cross-platform/create-an-android-native-activity-app)。  
-  
   
 当为跨平台移动开发选项安装 Visual C++ 时，Visual Studio 2015 可用于创建完全正常运行的 Android 本机活动应用。 Android 本机开发工具包 (NDK) 是一个工具集，让你能够使用纯 C/C++ 代码实现大部分的 Android 应用。 一些 Java JNI 代码充当粘附，使 C/C++ 代码可以与 Android 进行交互。 Android NDK 引入了使用 Android API 级别 9 创建本机活动应用的功能。 本机活动代码很受欢迎，可创建使用 Unreal 引擎或 OpenGL 的游戏和图形密集型应用。 本主题将指导你创建使用 OpenGL 的简单本机活动应用。 其他主题向开发人员演示有关编辑、生成、调试和部署本机活动代码的生命周期。  
   

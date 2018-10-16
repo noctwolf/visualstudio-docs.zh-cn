@@ -1,7 +1,7 @@
 ---
 title: 演练： 显示签名帮助 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 24c3eea821209485b5d57335c0c948cae92b4a20
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0642b798668e24e7ba1e6595ab3c8ea6dba6885e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472360"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247918"
 ---
 # <a name="walkthrough-displaying-signature-help"></a>演练：显示签名帮助
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 显示签名帮助](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-signature-help)。  
-  
 签名帮助 (也称为*的参数信息*) 工具提示中显示的一种方法的签名，当用户键入的参数列表开始字符 （通常是一个左括号）。 参数和参数分隔符 （通常为逗号） 类型化，工具提示会更新以显示下一个参数以粗体显示。 可以在语言服务的上下文中定义签名帮助或可以定义自己的文件名称扩展和内容类型并显示签名帮助只是该类型或可以为现有的内容类型 (例如，"text") 显示签名帮助。 本演练演示如何显示为"text"内容类型的签名帮助。  
   
  签名帮助通常会触发通过键入特定字符，例如，"("（左括号），并通过键入另一个字符，例如，已解除")"（右括号）。 可以通过击键命令处理程序实现触发键入字符的 IntelliSense 功能 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口) 和实现的处理程序提供程序<xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>接口。 若要创建的签名帮助源，这是参与签名帮助中的签名的列表，实现<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>接口和实现的源提供程序<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>接口。 提供程序是 Managed Extensibility Framework (MEF) 组件部分，并负责导出的源和控制器类和导入服务和代理，例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>，这样，在文本缓冲区中导航和<xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpBroker>，随即将会触发签名帮助会话。  
@@ -40,7 +38,7 @@ ms.locfileid: "47472360"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`SignatureHelpTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `SignatureHelpTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -63,7 +61,7 @@ ms.locfileid: "47472360"
   
 #### <a name="to-implement-the-signature-help-signatures-and-parameters"></a>若要实现的签名帮助签名和参数  
   
-1.  添加一个类文件并将其命名`SignatureHelpSource`。  
+1.  添加一个类文件并将其命名为 `SignatureHelpSource`。  
   
 2.  添加以下导入。  
   

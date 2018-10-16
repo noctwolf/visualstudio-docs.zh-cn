@@ -1,7 +1,7 @@
 ---
 title: 本地化 VSIX 包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bad0b3307e4b0e5358bd04d4990d0012685300d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 49ec131e4fa5ec635fa63763ccac9493134e2f2c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483256"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292898"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[本地化 VSIX 包](https://docs.microsoft.com/visualstudio/extensibility/localizing-vsix-packages)。  
-  
 通过创建的每种目标语言 Extension.vsixlangpack 文件，然后将它们放在正确的文件夹，可以将本地化 VSIX 包。 安装本地化的包时，扩展插件的本地化的名称显示以及的本地化说明。 如果你提供本地化的许可证文件或指向的本地化信息的 URL，则它们也会显示。  
   
  如果内容 VSIX 包中包含 VSPackage 添加的菜单命令或其他 UI，请参阅[本地化菜单命令](../extensibility/localizing-menu-commands.md)有关本地化的新 UI 元素的信息。  

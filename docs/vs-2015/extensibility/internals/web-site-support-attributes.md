@@ -1,7 +1,7 @@
 ---
 title: 网站支持属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3fd60c1ffcb6bb4d3c386cf55fb1f33540bb3dd2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 39ee9ee4e842dc49484170845cd451366aeb3a3c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172843"
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[网站支持属性](https://docs.microsoft.com/visualstudio/extensibility/internals/web-site-support-attributes)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 网站项目可以进行扩展以提供对 Web 的支持编程语言。 语言必须注册自行向[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，以便项目模板可以出现在**新的 Web 站点**对话框时选择的语言。  
   
  IronPython Studio 示例包括 web 站点的支持。 你可以找到它与[VSSDK 示例](../../misc/vssdk-samples.md)。 它包括以下的特性类，以将 IronPython 注册为新的 Web 项目的代码隐藏文件语言。  

@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 和应用程序设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 2aa565721bc934fb78a7b183b0e4b4b637bafaf8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f51960ad953318c8d9de749f28f684128e52ef
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478545"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176967"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce 和应用程序设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 和应用程序设置](https://docs.microsoft.com/visualstudio/deployment/clickonce-and-application-settings)。  
-  
 Windows 窗体的应用程序设置，可以轻松地创建、 存储和维护自定义应用程序和客户端上的用户首选项。 以下文档介绍了在 ClickOnce 应用程序中，应用程序设置文件的工作方式和用户升级到下一版本时，ClickOnce 如何迁移设置。  
   
  下面的信息仅适用于默认应用程序设置提供程序，<xref:System.Configuration.LocalFileSettingsProvider>类。 如果提供自定义提供程序，它将其数据的存储和如何升级其版本之间的设置将确定该提供程序。 应用程序设置提供程序的详细信息，请参阅[应用程序设置体系结构](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562)。  

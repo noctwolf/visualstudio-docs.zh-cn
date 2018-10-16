@@ -1,7 +1,7 @@
 ---
 title: 添加新数据源 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cb629119655327c7608025d66bb5e42d857d039d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476820"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279142"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加新数据源](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources)。  
-  
   
 在上下文中的.NET data tools 在 Visual Studio 中，术语*数据源*指连接到数据存储和公开到.NET 应用程序数据的.NET 对象。 Visual Studio 设计器可以使用数据源以生成将数据绑定到窗体上，拖动并放置中的数据库对象时的样板代码的输出**数据源**窗口。 此类数据源可以是：  
   

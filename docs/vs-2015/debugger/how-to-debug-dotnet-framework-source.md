@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试.NET Framework 源代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 250c2bd633a4f6c6b0580b23d0fbf1bb25094247
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c717e1d9eccce48319d8a73dd52d7f13ce36296e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469047"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240612"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试.NET Framework 源](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-dotnet-framework-source)。  
-  
 最新版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]提供的新功能[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]调试。 若要调试[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源，您必须有权调试符号的代码。 此外需要启用单步执行[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]源。  
   
  可以让[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]单步执行和符号中下载**选项**对话框。 启用符号下载功能时，可以选择立即下载符号，也可以仅启用该选项，以后再下载。 如果不立即下载符号，这些符号将在下次您开始调试应用程序时下载。 您还可以执行从手动下载**模块**窗口或**调用堆栈**窗口。  

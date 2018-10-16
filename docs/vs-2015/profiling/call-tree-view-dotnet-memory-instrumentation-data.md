@@ -1,7 +1,7 @@
 ---
 title: “调用树”视图 - .NET 内存检测数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7192ebc341c471cf164ca3f54bcbbd15c9224d11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af70592ef3d0c9365732c9964872b03fa4328a81
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205148"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>“调用树”视图 - .NET 内存检测数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用树视图-.NET 内存检测数据](https://docs.microsoft.com/visualstudio/profiling/call-tree-view-dotnet-memory-instrumentation-data)。  
-  
 使用检测方法收集的 .NET 内存分配分析数据的“调用树”视图显示在所分析的应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点列出它调用的所有函数以及该函数的 .NET 内存和计时数据。  
   
  “调用关系树”视图中的值对应于调用树中父函数所调用的函数实例。 通过将函数实例值与分析运行中的分配总数或大小进行对比计算出百分比值。  

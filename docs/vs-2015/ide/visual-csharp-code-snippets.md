@@ -1,7 +1,7 @@
 ---
 title: Visual C# 代码片段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2afbadccfc894dd5ba5baba9c58ab43417f44ed5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9c06243b4f41919c1c51002f0ed805a3fbd67112
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588782"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49297409"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C# 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual C# 代码片段](https://docs.microsoft.com/visualstudio/ide/visual-csharp-code-snippets)。  
-  
 代码片段是现成的代码段，可快速插入到代码中。 例如，`for` 代码片段刻创建一个空 `for` 循环。 有些代码片段为外侧代码片段，让你可以选择代码行，然后选择包含所选代码行的代码片段。 例如，选择代码行并激活 `for` 代码片段时，会通过循环块内的代码行创建 `for` 循环。 使用代码片段可以更快、更容易且更可靠地编写程序代码。  
   
  可以在光标位置插入代码片段，或者在当前所选代码旁插入外侧代码片段。 可以通过 **IntelliSense** 菜单上的 **Insert Code Snippet** 或 **Surround With** 命令调用代码片段插入器，也可分别使用 CTRL+K 再加 X 或 CTRL+K 再加 S 键盘快捷键调用。  

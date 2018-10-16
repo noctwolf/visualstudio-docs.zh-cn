@@ -1,7 +1,7 @@
 ---
 title: “摘要”视图 - .NET 内存数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2fec21552486290dbea05c07490fabbcf38feb02
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f114deff56e39aa10f96ae741dc33eb3fc955a1b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480486"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251851"
 ---
 # <a name="summary-view---net-memory-data"></a>“摘要”视图 - .NET 内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[摘要视图-.NET 内存数据](https://docs.microsoft.com/visualstudio/profiling/summary-view-dotnet-memory-data)。  
-  
 “摘要”视图显示有关分配最多内存的 .NET 函数和类型以及在分析运行中创建次数最多的类型的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。  
   
 ## <a name="timeline-graph"></a>时间线关系图  

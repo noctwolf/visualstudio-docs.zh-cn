@@ -1,7 +1,7 @@
 ---
 title: 为 JavaScript IntelliSense 创建 JSDoc 注释 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e24338a75dd631cee86ea8ac81e774e81732bba5
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: f5d21405b64901e20ffd82594672319ecbf0d223
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48878987"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49189223"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>为 JavaScript IntelliSense 创建 JSDoc 注释
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 2017 文档](/visualstudio/)。  
-  
 Visual Studio 中的 IntelliSense 显示你使用标准 JSDoc 注释添加到脚本中的信息。 你可以使用 JSDoc 注释来提供有关代码元素（如函数、字段和变量）的信息。  
   
 ## <a name="jsdoc-comment-tags"></a>JSDoc 注释标记  

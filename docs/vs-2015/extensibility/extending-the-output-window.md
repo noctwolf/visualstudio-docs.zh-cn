@@ -1,7 +1,7 @@
 ---
 title: 扩展输出窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 127ea733594f9ed4b7da38719f517f9edc1fcef7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0608d8f6c4c9d9c0ae1454110e6db212f16bfe9b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300542"
 ---
 # <a name="extending-the-output-window"></a>扩展输出窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展输出窗口](https://docs.microsoft.com/visualstudio/extensibility/extending-the-output-window)。  
-  
 **输出**窗口是一组的读/写文本窗格。 Visual Studio 提供了这些内置窗格：**构建**，有关生成，消息通信的项目中并**常规**，在其中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]将有关 IDE 的消息传递。 项目将获得对的引用**构建**窗格中会自动通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>接口方法和 Visual Studio 提供了直接访问权限**常规**窗格通过<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服务。 除了内置的窗格中，可以创建和管理自己的自定义窗格。  
   
  您可以控制**输出**窗口直接通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>接口，由提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服务，请定义用于创建、 检索和销毁方法**输出**窗口窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>接口定义用于显示窗格中，隐藏窗格，和操作其文本的方法。 控制的替代方法**输出**窗口是通过<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio 自动化对象模型中的对象。 几乎所有的功能，这些对象将封装<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 此外，<xref:EnvDTE.OutputWindow>并<xref:EnvDTE.OutputWindowPane>对象添加一些更高级别的功能，以使其更轻松地枚举**输出**窗口窗格并从窗格中检索文本。  

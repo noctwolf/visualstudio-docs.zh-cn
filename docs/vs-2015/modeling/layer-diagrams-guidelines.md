@@ -1,7 +1,7 @@
 ---
 title: 层关系图： 准则 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: bd0115021ba00d8e727f67260f5bcdb00464dd2b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469666"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202574"
 ---
 # <a name="layer-diagrams-guidelines"></a>层关系图：指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[依赖项关系图： 准则](https://docs.microsoft.com/visualstudio/modeling/layer-diagrams-guidelines)。  
-  
 通过创建描述在高级别的应用程序的体系结构*层关系图*Visual Studio 中。 若要确保你的代码与此设计保持一致，请使用层关系图验证代码。 还可以在生成过程中包括层验证。 请参阅[第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -142,7 +140,7 @@ ms.locfileid: "47469666"
     -   选择一个或多个层或依赖项，右键单击，然后单击**属性**。 在中**属性**窗口中，编辑**颜色**属性。  
   
 ##  <a name="Validate"></a> 对照关系图验证代码  
- 编辑关系图之后，您可以对照代码随时手动验证关系图，也可以在每次运行本地生成或[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]时进行自动验证。  
+ 编辑关系图之后，你可以对照代码随时手动验证关系图，也可以在每次运行本地生成或[!INCLUDE[esprbuild](../includes/esprbuild-md.md)]时进行自动验证。  
   
  请参阅：  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定调试器设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1cbfe565c66650b310c674ef22ecee74ea31a498
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7251c2cf2c2b8d6879a85dfdc4427dc456fbf8f0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483669"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215548"
 ---
 # <a name="how-to-specify-debugger-settings"></a>如何：指定调试器设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定调试器设置](https://docs.microsoft.com/visualstudio/debugger/how-to-specify-debugger-settings)。  
-  
 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中可为调试器行为指定各种设置，包括如何显示变量，是否显示某些警告，如何设置断点以及中断如何影响正在运行的程序。 在调试器中指定设置**选项**对话框。  
   
 ### <a name="to-set-debugger-options"></a>设置调试器选项  
@@ -50,7 +48,7 @@ ms.locfileid: "47483669"
   
 3.  在中**调试**文件夹中，选择所需的选项的类别。  
   
-     最常用的选项位于**常规**类别。 有关详细信息，请参阅[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+     最常用的选项位于**常规**类别。 有关更多信息，请参见 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 4.  选择或清除所需选项。 按 F1 可获得有关选项的帮助。  
   

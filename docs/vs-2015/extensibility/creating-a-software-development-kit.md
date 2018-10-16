@@ -1,7 +1,7 @@
 ---
 title: 创建软件开发工具包 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a1fb90707a14ff010c74cfee1f7e0dde854aa6f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481375"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268342"
 ---
 # <a name="creating-a-software-development-kit"></a>创建软件开发工具包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建软件开发工具包](https://docs.microsoft.com/visualstudio/extensibility/creating-a-software-development-kit)。  
-  
 软件开发工具包 (SDK) 是一系列 Api，您可以参考作为 Visual Studio 中的单个项。 **引用管理器**对话框会列出与项目相关的所有 Sdk。 向项目添加 SDK，Api 时，Visual Studio 中提供。  
   
  有两种类型的 Sdk:  

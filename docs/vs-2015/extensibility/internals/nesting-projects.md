@@ -1,7 +1,7 @@
 ---
 title: 嵌套项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 70a454877a5cb7638edaff8263b6505de16ee9c9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3ec874d68b7a94811f0733f7045414cb48ddc880
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294250"
 ---
 # <a name="nesting-projects"></a>嵌套项目
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[嵌套项目](https://docs.microsoft.com/visualstudio/extensibility/internals/nesting-projects)。  
-  
 企业应用程序开发人员使用 VS 包可以方便地分组相似类型的项目中合并在一起[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过使用*项目嵌套*。 例如，企业级模板项目为类别使用嵌套的组项目到项目。 商业外观项目、 Web UI 项目等组合在一起在一个类别中。  
   
  在此方案中，是开发人员可以嵌套在每个父项目，下面的项目数没有限制过程，尽管开发人员可以以编程方式提供限制。 这种类型的分组还可以使可递归的在这种情况下为子项目的相同类型的项目可以嵌套在要成为子项目的子级的父级的子项目的子级。  

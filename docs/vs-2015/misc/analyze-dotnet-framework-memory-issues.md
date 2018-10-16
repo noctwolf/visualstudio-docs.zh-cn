@@ -1,7 +1,7 @@
 ---
 title: 分析.NET Framework 内存问题 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: e6c944e9e0ce26c1a9b5b8acd57efa340d00e86e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482367"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288387"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 内存问题
 通过使用 Visual Studio 托管内存分析程序，在 .NET Framework 代码中查找内存泄漏和低效内存使用。 目标代码的最低 .NET Framework 版本为 .NET Framework 4.5。  

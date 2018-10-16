@@ -1,7 +1,7 @@
 ---
 title: XML 代码段 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae360d1aea43006138397b3bed2857a2b1dad59
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf1ebeb70931e2e12f056ecfbaa45a6833e031df
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483938"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183958"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[XML 代码段](https://docs.microsoft.com/visualstudio/xml-tools/xml-snippets)。  
-  
   
 XML 编辑器提供一种功能，称为*XML 代码段*，这样可以更快地生成 XML 文件。 XML 代码段可以通过插入文件反复使用。 您还可以根据 XML 架构定义语言 (XSD) 架构生成 XML 数据。  
   

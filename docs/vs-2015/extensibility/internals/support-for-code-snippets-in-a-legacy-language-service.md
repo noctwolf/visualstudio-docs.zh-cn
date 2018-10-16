@@ -1,7 +1,7 @@
 ---
 title: 对旧版语言服务中的代码片段的支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 83fcde82b2b4b509745c8a81045f01b822620fce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470149"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198505"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的代码片段支持](https://docs.microsoft.com/visualstudio/extensibility/internals/support-for-code-snippets-in-a-legacy-language-service)。  
-  
 代码片段是一段代码将插入到源文件。 在代码段是使用一组字段的基于 XML 的模板。 插入代码段，并可以具有不同的值，具体取决于在其中插入片段的上下文后，将突出显示这些字段。 立即插入代码段后，可以设置的语言服务的格式代码段。  
   
  允许的代码段以通过使用 TAB 键导航字段的特殊的编辑模式中插入代码段。 字段可以支持 IntelliSense 样式下拉列表菜单。 用户通过键入 ENTER 或 ESC 键提交到源代码文件的代码段。 若要了解有关代码段的详细信息，请参阅[代码片段](../../ide/code-snippets.md)。  

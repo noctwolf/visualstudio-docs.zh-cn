@@ -1,7 +1,7 @@
 ---
 title: 如何： 打开开放文档的编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 44d3ae5a20269e63e074ec32fd0631312c8d695f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482945"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215990"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 打开开放文档编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 打开编辑器中打开的文档提供](https://docs.microsoft.com/visualstudio/extensibility/how-to-open-editors-for-open-documents)。  
-  
 项目将打开一个文档窗口之前，项目首先必须确定文件是否已打开在另一个编辑器的文档窗口中。 该文件可以为在特定于项目的编辑器中，或者打开或其中一个标准编辑器注册[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="opening-a-project-specific-editor"></a>打开特定于项目的编辑器  

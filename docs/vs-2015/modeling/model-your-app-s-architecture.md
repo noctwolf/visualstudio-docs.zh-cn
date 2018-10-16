@@ -1,7 +1,7 @@
 ---
 title: 建模应用程序&#39;s 体系结构 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f07ac7b18564a14c3c71e6647f519ee47d40c9a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8ca228edf7e05e48a733ba4f38bdc43560ef1552
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480176"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263700"
 ---
 # <a name="model-your-app39s-architecture"></a>建模应用程序&#39;s 体系结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[建模应用程序&#39;s 体系结构](https://docs.microsoft.com/visualstudio/modeling/model-your-app-s-architecture)。  
-  
 为了帮助确保软件系统或应用程序满足用户的需求，作为您的整体结构的说明和软件系统或应用程序的行为的一部分，可以在 Visual Studio 中创建模型。 使用模型，也可以描述在整个设计中使用的模式。 这些模型可你帮助了解现有的体系结构、讨论更改和清楚地传达你的意图。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

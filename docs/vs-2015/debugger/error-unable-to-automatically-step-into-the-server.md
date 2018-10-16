@@ -1,7 +1,7 @@
 ---
 title: 错误： 无法自动单步执行服务器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d75ed4ddb42705b95a5ddd834596bc828e0f3ec2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 42f97ac229eedacf0bb26730127ae0f35dfd1346
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469262"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288068"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>错误：无法自动单步执行服务器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[错误： 无法自动步骤到服务器](https://docs.microsoft.com/visualstudio/debugger/error-unable-to-automatically-step-into-the-server)。  
-  
 此错误显示如下：  
   
  无法自动单步执行服务器。 在远程过程执行前调试器未得到通知  
@@ -47,13 +45,13 @@ ms.locfileid: "47469262"
   
  可能的原因有：  
   
--   Web.config 文件中的为你[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]应用程序中未设置为"true"的调试 (请参阅[中的 ASP.NET 应用程序的调试模式](../debugger/how-to-enable-debugging-for-aspnet-applications.md))。  
+-   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序的 web.config 文件未将调试设置为“true”（请参见 [ASP.NET 应用程序中的调试模式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)）。  
   
--   版本的[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]后安装 Visual Studio 安装了。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应在 Visual Studio 之前安装。 若要修复此问题，请使用 Window“控制面板” 和  “程序和功能”来修复 Visual Studio 安装。  
+-   在安装 Visual Studio 后安装了某个版本的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 。 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应在安装 Visual Studio 之前安装。 若要修复此问题，请使用 Window“控制面板” 和  “程序和功能”来修复 Visual Studio 安装。  
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和故障排除](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: 实现命令的处理嵌套项目 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea27ea6f1b1ef49174b555fb9b1aae0d4c54dd23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484309"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213767"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现嵌套项目的命令处理](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-command-handling-for-nested-projects)。  
-  
 IDE 可将通过传递的命令传递<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口连接到嵌套的项目或父项目可以筛选或重写命令。  
   
 > [!NOTE]

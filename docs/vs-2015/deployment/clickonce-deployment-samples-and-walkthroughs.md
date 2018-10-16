@@ -1,7 +1,7 @@
 ---
 title: ClickOnce 部署示例和演练 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 7d83d296ff0d5a8578f75487e6bb1863eb33e993
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cc16747838347810e12e293d718b355f492a158e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480189"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207215"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ClickOnce 部署示例和演练](https://docs.microsoft.com/visualstudio/deployment/clickonce-deployment-samples-and-walkthroughs)。  
-  
 本部分包含示例应用程序、 示例代码和分步演练介绍了语法、 结构和技术用于部署 Windows 窗体、 WPF 和控制台应用程序。  
   
  示例代码用于教学目的，并且不应在已部署的解决方案，无需修改即可使用。 具体而言，必须将安全性考虑更高版本中不考虑。  

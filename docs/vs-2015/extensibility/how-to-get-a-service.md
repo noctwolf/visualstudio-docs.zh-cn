@@ -1,7 +1,7 @@
 ---
 title: 如何： 获取服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc21d53df18fe855d0f745fcb4d11708e4ac07b7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 426d0b71a23ea53a21b382ec02b8853f9ff2deb2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468646"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229679"
 ---
 # <a name="how-to-get-a-service"></a>如何： 获取服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 获取服务](https://docs.microsoft.com/visualstudio/extensibility/how-to-get-a-service)。  
-  
 通常需要获取 Visual Studio 服务访问不同的功能。 一般情况下，Visual Studio 服务提供了一个或多个接口，可以使用。 你可以从 VSPackage 获取大多数服务。  
   
  派生自任何 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>并已正确放置的任何全局服务可以要求。 因为程序包类实现<xref:System.IServiceProvider>，从包派生而来的任何 VSPackage 也是服务提供程序。  

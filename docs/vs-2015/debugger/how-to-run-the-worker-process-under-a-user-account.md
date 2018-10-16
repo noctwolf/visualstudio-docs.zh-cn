@@ -1,7 +1,7 @@
 ---
 title: 如何： 运行辅助进程的用户帐户下 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08ac00384110cc73175286365fef6ee4b67a0170
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a07e492bf8c3ae71b430acd5bde69a852b96baee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471210"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280177"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 运行辅助进程以用户帐户](https://docs.microsoft.com/visualstudio/debugger/how-to-run-the-worker-process-under-a-user-account)。  
-  
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。  
   
 ## <a name="procedure"></a>过程  
@@ -49,7 +47,7 @@ ms.locfileid: "47471210"
   
 3.  保存 machine.config 文件。  
   
-4.  在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)] 上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
+4.  在 [!INCLUDE[winxpsvr](../includes/winxpsvr-md.md)]上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
   
     1.  单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。  
   
@@ -73,7 +71,7 @@ ms.locfileid: "47471210"
     net start w3svc  
     ```  
   
-6.  找到 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，然后选择**属性**快捷菜单上。  
+6.  找到 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Files 文件夹，然后选择快捷菜单上的“属性”  。  
   
 7.  在 **“临时 ASP.NET 文件属性”** 对话框中单击 **“安全性”** 选项卡。  
   

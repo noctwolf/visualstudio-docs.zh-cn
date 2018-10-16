@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的注释代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3314d27ce81e48237fa69b332b203d557d0a11d0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469320"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49291897"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在旧版语言服务中注释代码
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的注释代码](https://docs.microsoft.com/visualstudio/extensibility/internals/commenting-code-in-a-legacy-language-service)。  
-  
 编程语言通常提供一种方法来添加批注或注释的代码。 注释是文本来提供有关代码的其他信息，但在编译或解释过程中忽略的一部分。  
   
  托管的包框架 (MPF) 类的注释和取消注释所选文本提供支持。  

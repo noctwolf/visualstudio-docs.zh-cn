@@ -1,7 +1,7 @@
 ---
 title: 使用性能数据文件保存符号信息 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98d8a981a1f186c87940cf0a63f5c72d91d56b1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6a41cbbed95461245b701ead1e9c11e662bd02f7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199766"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用性能数据文件保存符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用性能数据文件保存符号信息](https://docs.microsoft.com/visualstudio/profiling/saving-symbol-information-with-performance-data-files)。  
-  
 如果使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 分析文件并且计划将 VSP 文件移动到其他计算机，则必须设置性能项目设置以在报告文件中保存或序列化符号。 这会增加报告文件的大小。 出于以下两个原因，需要序列化符号：  
   
 -   在目标程序集从它们在临时存储中的位置丢失之前，将代码符号嵌入到性能报告中。  

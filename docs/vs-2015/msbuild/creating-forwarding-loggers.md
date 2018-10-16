@@ -1,7 +1,7 @@
 ---
 title: 创建转发记录器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 411c05a3a9d9f115120b09d231ce747990806bc4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476779"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281237"
 ---
 # <a name="creating-forwarding-loggers"></a>创建转发记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建转发记录器](https://docs.microsoft.com/visualstudio/msbuild/creating-forwarding-loggers)。  
-  
   
 在多处理器系统上生成项目时，转发记录器允许选择要监视的事件，提高了日志记录效率。 启用转发记录器后，可防止不必要的事件影响中心记录器、降低生成速度以及造成日志混乱。  
   

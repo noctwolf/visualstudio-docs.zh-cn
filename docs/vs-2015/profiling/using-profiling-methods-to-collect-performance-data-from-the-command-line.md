@@ -1,7 +1,7 @@
 ---
 title: 从命令行使用分析方法收集性能数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cfb82c00c0a20c490aa3b5e5a9f78bf2384a40c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c86132b2ad4677733eebbb50c78f185ff0c9871
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49175354"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>从命令行使用分析方法收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用分析方法收集性能数据从命令行](https://docs.microsoft.com/visualstudio/profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line)。  
-  
 选择的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具和选项取决于各种因素，如进行分析的应用程序的类型、要使用的分析方法以及是以本机还是 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 代码编码目标应用程序。  
   
  本主题根据选择的分析方法组织命令行过程主题。  

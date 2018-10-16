@@ -1,7 +1,7 @@
 ---
 title: 用于报告的宏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22f3637aeee41f764825a0d8f8cd4fdca2cb3e94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 84b5e72b15d085e29823fb8c8e116a153ff550e8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482084"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224375"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[用于报告的宏](https://docs.microsoft.com/visualstudio/debugger/macros-for-reporting)。  
-  
 可以使用 **_RPTn**，并 **_RPTFn**在 CRTDBG 中定义的宏。H、 要替换的使用`printf`语句进行调试。 这些宏自动不会显示在你的发布生成何时 **_DEBUG**未定义，因此无需将它们括在 **#ifdef**s。  
   
 |宏|描述|  

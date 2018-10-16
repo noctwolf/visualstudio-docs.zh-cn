@@ -1,7 +1,7 @@
 ---
 title: 专用库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0875ffc87e7b1161f08a0fdec77de52250f209a6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 820b0e992b79af28ca1b7f65f6a2f6221396da9e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49192592"
 ---
 # <a name="private-galleries"></a>Private Galleries
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[专用库](https://docs.microsoft.com/visualstudio/extensibility/private-galleries)。  
-  
 你可以共享控件、 模板和发布到开发的工具*专用库*为你的组织，按如下所示在 intranet 上：  
   
 -   创建 Atom (RSS) 源到您的 intranet 上的适当配置中央位置 （存储库）。 有关详细信息，请参阅[如何： 创建专用库的 Atom 源](../extensibility/how-to-create-an-atom-feed-for-a-private-gallery.md)。  

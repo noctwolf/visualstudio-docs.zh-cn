@@ -1,7 +1,7 @@
 ---
 title: 类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 144c2d70cf734f8d1c9602fad96bf4e1c6d8a0c4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f607046609208804f349eb06e927ab8e72e28992
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247905"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>类图和“类详细信息”窗口中的键盘快捷键和鼠标快捷方式（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[键盘和鼠标快捷方式中的类图和类详细信息窗口 （类设计器）](https://docs.microsoft.com/visualstudio/ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer)。  
-  
 除鼠标外，还可使用键盘在类设计器和“类详细信息”窗口中执行导航操作。  
   
  **在本主题中**  

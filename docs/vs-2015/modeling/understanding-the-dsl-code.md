@@ -1,7 +1,7 @@
 ---
 title: 了解 DSL 代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7d92a14466b7ca915b70bd0cad096266160e5994
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 78ef4b1a0e6622b077039797df2adcb02a355df0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476712"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251155"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[了解 DSL 代码](https://docs.microsoft.com/visualstudio/modeling/understanding-the-dsl-code)。  
-  
 域特定语言 (DSL) 解决方案将生成可用于在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中读取和更新 DSL 实例的 API。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。  
   
 ## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图  

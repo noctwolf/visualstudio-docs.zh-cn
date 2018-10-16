@@ -1,7 +1,7 @@
 ---
 title: 如何： 注册编辑器文件类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ab70770bfc764bba01aba3a40918fdf77ae490d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eadb14a7de675e6a1b7839b4101b8d0d6756a11f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480629"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198303"
 ---
 # <a name="how-to-register-editor-file-types"></a>如何： 注册编辑器文件类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 注册编辑器文件类型](https://docs.microsoft.com/visualstudio/extensibility/how-to-register-editor-file-types)。  
-  
 若要注册编辑器文件类型的最简单方法是使用作为的一部分提供的注册属性[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]托管包框架 (MPF) 类。 如果要在本机实现您的软件包[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，还可以编写注册表脚本注册你的编辑器和关联的扩展。  
   
 ## <a name="registration-using-mpf-classes"></a>注册使用 MPF 类  

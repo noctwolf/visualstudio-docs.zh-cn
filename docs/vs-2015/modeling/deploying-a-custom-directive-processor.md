@@ -1,7 +1,7 @@
 ---
 title: 部署自定义指令处理器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b46d95aae0908a4e1e2ba72e860d56ec975b051f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470643"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251948"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[部署自定义指令处理器](https://docs.microsoft.com/visualstudio/modeling/deploying-a-custom-directive-processor)。  
-  
 若要在任何计算机上的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用自定义指令处理器，必须使用本主题中介绍的方法之一注册该处理器。  
   
  可用的方法包括：  
@@ -159,7 +157,7 @@ ms.locfileid: "47470643"
   
  确认 .pkgdef 文件显示在生成文件夹中，该文件夹通常是 bin\Debug 或 bin\Release。 如果未显示该文件，请在文本编辑器中打开 .csproj 文件，删除以下节点：`<GeneratePkgDefFile>false</GeneratePkgDefFile>`。  
   
- 有关详细信息，请参阅[Vspackage](../extensibility/internals/vspackages.md)。  
+ 有关更多信息，请参见 [VSPackages](../extensibility/internals/vspackages.md)。  
   
 ## <a name="setting-a-registry-key"></a>设置注册表项  
  这种自定义指令处理器的安装方法是最不方便的一种方法。 这种方法不能方便地启用和禁用指令处理器，也不能方便地向其他用户分发指令处理器。  

@@ -1,7 +1,7 @@
 ---
 title: 欢迎使用 Visual Studio 2015 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,12 +16,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: crdun
-ms.openlocfilehash: 71ef72b3374967cb977ad8891b66fd0b91732707
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f950ffa99fa6c68d51349e2b059b3e621ed069d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231227"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>欢迎使用 Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "47480170"
   
  免费下载 [Visual Studio 社区](http://go.microsoft.com/fwlink/?LinkId=517106) 以立即开始编码。 如果要进行跨平台开发，请确保安装可选包。 （可以通过 [其他 Visual Studio 版本](http://www.visualstudio.com/products/compare-visual-studio-products-vs)获得更多功能。）  
   
- 立即投入，创建新项目，然后开始编写代码。 选择要创建的应用类型。 也可以[浏览](./ide/visual-studio-ide.md)的 Visual Studio IDE 以熟悉工具。  
+ 立即投入，创建新项目，然后开始编写代码。 选择要创建的应用类型。 或者，可以 [浏览](./ide/visual-studio-ide.md) Visual Studio IDE 以熟悉工具。  
   
  同时，别忘了浏览我们的 [代码库](https://code.msdn.microsoft.com/) ，以找到可帮助你更快编写应用的示例！  
   
@@ -57,15 +57,15 @@ ms.locfileid: "47480170"
   
  基于应用要求和要使用的语言选择所需工具。  
   
-1.  [适用于 Visual Studio 的 Xamarin](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)： 基本 C# 中的所有设备的常用代码  
+1.  [Xamarin for Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)：针对所有设备的 C# 中的常用基本代码  
   
-2.  [使用 Visual Studio 的 Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)： 基本的 HTML、 CSS 和 JavaScript 或 Typescript 的常用代码  
+2.  [Apache Cordova with Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42)：用于 HTML、CSS 和 JavaScript 或 Typescript 的常用基本代码  
   
 3.  [Visual Studio Tools for Unity](./cross-platform/visual-studio-tools-for-unity.md): C# 中的二维/三维游戏开发  
   
-4.  [适用于跨平台开发的 c + +](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)： 共享代码库和 c + + 中的应用  
+4.  [适用于跨平台开发的 C++](./cross-platform/visual-cpp-for-cross-platform-mobile-development.md)：C++ 中的共享代码库和应用  
   
-5.  [适用于 Android 的 visual Studio 仿真程序](./cross-platform/visual-studio-emulator-for-android.md)： 适用于 Android 的 Visual Studio 仿真程序： 调试和测试你的 Android 应用而无论 IDE  
+5.  [Visual Studio Emulator for Android](./cross-platform/visual-studio-emulator-for-android.md)：适用于 Android 的 Visual Studio 仿真程序：调试和测试你的 Android 应用而无需考虑 IDE  
   
 ## <a name="connect-your-apps-to-services"></a>将应用连接到服务  
  你可以连接到以下这些现成服务（假设你具有用于每个服务的帐户）：  
@@ -82,15 +82,15 @@ ms.locfileid: "47480170"
 ## <a name="build-test-and-manage-your-code"></a>生成、测试和管理你的代码  
   
 ### <a name="check-in-your-code"></a>签入你的代码  
- 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 要了解的版本控制系统，最适合你的需求：[使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
+ 如果你在团队中工作，则还需要共享代码的最新版本，以便团队中的每个人都使用相同的基本代码。 Visual Studio 与 Visual Studio Team Services 或 Team Foundation Server 无缝集成，以使用 Git 或 TFVC（Team Foundation 版本控制）提供版本控制。 使用 Visual Studio Team Services 可将代码存储在云中，而无需维护本地服务器。 如果需要具有本地服务器，请使用 Team Foundation Server。 每次创建代码项目时，你都可以选择将其添加到版本控制。 了解最适合于需求的版本控制系统： [使用版本控制](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
   
 ### <a name="build-your-app"></a>生成应用程序  
  你可以 [在本地生成应用](./ide/compiling-and-building-in-visual-studio.md) 并确保它正常运行。 然后使用 [调试工具](./debugger/debugging-in-visual-studio.md) 修复与应用有关的任何问题。 或者，可以在共享生成服务器上或在云中生成项目。 自动执行生成过程以生成团队中的开发人员签入到版本控制的代码。 例如，您可以在夜间或每次签入此代码时生成一个或多个项目。  
   
 ### <a name="test-your-app"></a>测试应用程序  
- [创建单元测试](./test/unit-test-your-code.md)以提高应用的质量。 这些测试可以在每次进行签入时以及作为生成的一部分运行。  
+ [创建单元测试](./test/unit-test-your-code.md) 以提高应用的质量。 这些测试可以在每次进行签入时以及作为生成的一部分运行。  
   
- 为应用计划、创建和运行手动和自动测试。 测试计划、套件、测试用例和测试结果存储在云中（使用 Visual Studio Team Services）或本地（使用 Team Foundation Server）。 了解有关[测试应用程序](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)的详细信息。  
+ 为应用计划、创建和运行手动和自动测试。 测试计划、套件、测试用例和测试结果存储在云中（使用 Visual Studio Team Services）或本地（使用 Team Foundation Server）。 了解有关 [测试应用程序](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)的详细信息。  
   
 ### <a name="deliver-your-teams-code-faster"></a>更快地交付团队代码  
  消除团队成员之间的障碍并改进协作。 更进一步，自动向开发到生产中的每个阶段发布应用。 实时监视应用性能和可用性。 收集有关客户实际上如何使用应用的实时使用情况数据。 有关详细信息，请参阅 [DevOps 和应用程序生命周期管理](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)。  

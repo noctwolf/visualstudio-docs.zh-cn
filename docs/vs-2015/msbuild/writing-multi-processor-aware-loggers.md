@@ -1,7 +1,7 @@
 ---
 title: 编写多处理器可识别的记录器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 628b1ef037e472f4295f2b82684a46a0bc5ba402
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477755"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219955"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>编写多处理器可识别的记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编写可识别多处理器的记录器](https://docs.microsoft.com/visualstudio/msbuild/writing-multi-processor-aware-loggers)。  
-  
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 利用多个处理器的能力可以缩短项目生成时间，但同时会增加生成事件日志记录的复杂性。 在单处理器环境下，事件、消息、警告和错误以可预测的顺序方式到达记录器。 但在多处理器环境下，来自不同源的事件可能同时或不按顺序到达。 为了应对此情况，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供了可以识别多处理器的记录器以及新的日志记录模型，并允许创建自定义“转发记录器”。  
   

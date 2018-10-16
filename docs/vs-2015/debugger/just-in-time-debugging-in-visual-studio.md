@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中实时调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1256584c2d4517b566095b3b71c6d080c6327df
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468927"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294042"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>在 Visual Studio 进行实时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实时调试在 Visual Studio 中](https://docs.microsoft.com/visualstudio/debugger/just-in-time-debugging-in-visual-studio)。  
-  
 在实时调试 Visual Studio 会自动启动 Visual Studio 之外运行的应用程序中发生异常或崩溃时。 这使您测试应用程序，如果未运行 Visual Studio，并开始使用 Visual Studio 进行调试时出现问题。
 
 在实时调试适用于 Windows 桌面应用。 它并不适用于 Windows 通用应用，并不适用于本机应用程序，例如可视化工具中托管的托管代码。
@@ -123,7 +121,7 @@ ms.locfileid: "47468927"
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
     ```  
   
-     有关详细信息，请参阅<xref:System.Diagnostics.DebuggableAttribute>。  
+     有关详细信息，请参阅 <xref:System.Diagnostics.DebuggableAttribute> 。  
   
 ## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">使用在实时调试  
  本部分介绍可执行文件引发异常时，会发生什么情况。  

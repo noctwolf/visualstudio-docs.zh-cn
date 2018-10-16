@@ -1,7 +1,7 @@
 ---
 title: Roslyn 分析器和 immutablearrays 的代码识别库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3353596474525a381a495288f5f5b951b7e5efac
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 94dbfbc39260e0cfcab374c2db12ab103f310b28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478614"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173350"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 ImmutableArrays 的代码识别库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Roslyn 分析器和 immutablearrays 的代码识别库](https://docs.microsoft.com/visualstudio/extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays)。  
-  
 [.NET 编译器平台](https://github.com/dotnet/roslyn)("Roslyn") 可帮助您生成可识别代码的库。  代码识别库提供了可以使用的功能和工具 （Roslyn 分析器），以帮助你使用库以最佳方式，或若要避免错误。  本主题说明如何构建真实世界 Roslyn 分析器使用时捕获常见错误[NIB： 不可变集合](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca)NuGet 包。  该示例还演示如何为分析器发现的代码问题提供代码修补程序。  用户看到在 Visual Studio 灯泡 UI 中的代码修补程序，并可以自动应用代码修复。  
   
 ## <a name="getting-started"></a>入门  

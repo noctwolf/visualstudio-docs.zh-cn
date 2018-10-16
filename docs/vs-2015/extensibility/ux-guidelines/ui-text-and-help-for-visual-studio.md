@@ -1,7 +1,7 @@
 ---
 title: UI 文本和 Visual Studio 的帮助 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4f3e8f7541c83372c0d822c3db4bc0e20b3af1a9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 350a379e14e526385776b815ce7e356a437d12af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468490"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49303807"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UI 文本和针对 Visual Studio 帮助](https://docs.microsoft.com/visualstudio/extensibility/ux-guidelines/ui-text-and-help-for-visual-studio)。  
-  
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
  易于理解的文本对有效 UI 至关重要。 软件用户倾向于读取标签第一次，即那些最相关的完成手头的任务。 静态文本时读取更少的频率。 为用户启动他们的工作会话一次快速扫描的整个窗口中后, 跟此大致顺序 UI 的读取与制定计划：  
   

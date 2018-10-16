@@ -1,7 +1,7 @@
 ---
 title: 将数据保存到数据库 （多个表） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 944a38db4c3c92443adf8b0de1f8bc2fa494298b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0580cebe97d4646074c678296c18b4caa20ce44b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471718"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49234471"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将数据保存到数据库 （多个表）](https://docs.microsoft.com/visualstudio/data-tools/save-data-to-a-database-multiple-tables)。  
-  
   
 应用程序开发中最常用方案之一是在 Windows 应用程序窗体上显示数据、编辑数据并将更新后的数据发回数据库。 本演练创建可显示两个相关表的数据的窗体，并显示如何编辑记录和将更改保存回数据库。 此示例使用源自 Northwind 示例数据库的 `Customers` 和 `Orders` 表。  
   

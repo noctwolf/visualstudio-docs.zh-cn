@@ -1,7 +1,7 @@
 ---
 title: 正在注册程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d522a4c422994d174d358450f9eb210762d262a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29cc63b2cdc9e965ad52276390d203f41eec4553
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478045"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306457"
 ---
 # <a name="registering-the-program"></a>注册程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册该程序](https://docs.microsoft.com/visualstudio/extensibility/debugger/registering-the-program)。  
-  
 调试引擎已获取某个端口后，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)接口，启用要进行调试的程序的下一步是将其注册到该端口。 注册后，该程序是可用于调试通过以下方法之一：  
   
 -   连接的过程，这使调试器能够获取正在运行的应用程序的完整调试控件。  

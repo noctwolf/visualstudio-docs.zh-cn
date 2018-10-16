@@ -1,7 +1,7 @@
 ---
 title: 快速入门：通过测试资源管理器进行测试驱动开发 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c2d55dde85bd5a1b18d4424515ef58e7c4c3273f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477292"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212337"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[快速入门： 通过测试资源管理器进行测试驱动开发](https://docs.microsoft.com/visualstudio/test/quick-start-test-driven-development-with-test-explorer)。  
-  
 我们建议你创建单元测试来帮助保持你的代码在众多递进式开发步骤中正确运行。 你可以使用几个框架来编写单元测试，包括第三方开发的一些框架。 某些测试框架专用于不同语言或平台中的测试。 “测试资源管理器”为其中任意框架中的单元测试提供了一个接口。 大多数常用框架都有适配器，你可以为其他框架编写自己的适配器。  
   
  “测试资源管理器”将取代 Visual Studio 早期版本中的单元测试窗口。 其优点包括：  

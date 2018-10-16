@@ -1,7 +1,7 @@
 ---
 title: Windows 8 和 Windows Server 2012 应用程序上的性能工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8138129c928a02ed5fb6684bc6ee06282435860e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1e495f5f07e5db2214c7eca8bc2c21df253fa49e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588886"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49195515"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 应用程序上的性能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[上 Windows 8 和 Windows Server 2012 应用程序的性能工具](https://docs.microsoft.com/visualstudio/profiling/performance-tools-on-windows-8-and-windows-server-2012-applications)。  
-  
 Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studio 性能工具在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 本主题介绍针对 Windows 8 和 Windows Server 2012 平台上的性能工具的更改。  
   
 > [!NOTE]
@@ -143,7 +141,7 @@ Windows 8 和 Windows Server 2012 中增强的安全功能需要对 Visual Studi
   
  **在远程计算机上收集 TIP 数据**  
   
- 若要在远程计算机上收集层交互数据，必须将复制**vs\_探查器\_**_\<平台 >_ **\_**_\<语言 >_**.exe**文件 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**文件夹的 Visual Studio 在远程计算机到计算机并将其安装。 不能使用中的分析工具[Visual Studio 远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)下载包。  
+ 若要在远程计算机上收集层交互数据，必须将复制**vs\_探查器\_**_\<平台 >_ **\_**_\<语言 >_**.exe**文件 _%vsinstalldir%_**\Team Tools\Performance Tools\Setups**文件夹的 Visual Studio 在远程计算机到计算机并将其安装。 不能使用 [Visual Studio 远程工具](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) 下载程序包中的分析工具。  
   
  可以使用 [VSPerfCmd](../profiling/vsperfcmd.md) 或 [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) 收集分析数据。  
   

@@ -1,7 +1,7 @@
 ---
 title: VSPackage 安装方案 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b88dcef6eebe552c23268cb307248956db5486b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 819f6b9a1da5979e3e9647d6a0773d741f13e945
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470664"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253053"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSPackage 安装方案](https://docs.microsoft.com/visualstudio/extensibility/internals/vspackage-setup-scenarios)。  
-  
 若要设计 VSPackage 安装程序的灵活性至关重要。 例如，可能需要在将来发布的安全修补程序或可能更改业务策略需要全面的并行版本控制支持。  
   
  在中[支持多个版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)，你可以阅读的优点和问题的支持由并行安装的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]与你的 VSPackage 的共享或通过并行安装。 简单地说，通过并行 Vspackage 提供最大的灵活性以支持新功能的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  

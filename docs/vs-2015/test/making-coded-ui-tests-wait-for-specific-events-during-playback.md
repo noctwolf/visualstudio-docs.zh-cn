@@ -1,7 +1,7 @@
 ---
 title: 播放期间让编码的 UI 测试等待特定事件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 49dbf5abbf3908f1b4dda5131f3f8dcdf4426243
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4d6933a484344a5064d39e3897ea503d0f484af
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290402"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>播放期间让编码的 UI 测试等待特定事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进行编码的 UI 测试播放等待特定事件期间](https://docs.microsoft.com/visualstudio/test/making-coded-ui-tests-wait-for-specific-events-during-playback)。  
-  
 在编码的 UI 测试播放中，你可以指示测试等待某些事件发生，如某个窗口出现、进度栏消失等。 为此，请使用合适的 UITestControl.WaitForControlXXX() 方法，如下表中所述。 有关使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A> 方法等待启用某个控件的编码的 UI 测试示例，请参阅[演练：创建、编辑和维护编码的 UI 测试](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)。  
   
  **要求**  

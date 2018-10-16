@@ -1,7 +1,7 @@
 ---
 title: AssignCulture 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8ee44937f48101454a00128405fb03ce4260de4a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c35d949f2d3cf3924a63ce6db0e596af1fccddbd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470443"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235646"
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[AssignCulture 任务](https://docs.microsoft.com/visualstudio/msbuild/assignculture-task)。  
-  
   
 此任务接受文件名中可能包含有效 .NET 区域性标识符字符串的项的列表，并且生成包含相应的区域性标识符且名为 `Culture` 的元数据的项。 例如，文件名 Form1.fr-fr.resx 具有嵌入的区域性标识符“fr-fr”，因此该任务会生成具有相同文件名的项，其中元数据 `Culture` 为 `fr-fr`。 该任务还会生成文件名中删除了区域性的文件名列表。  
   

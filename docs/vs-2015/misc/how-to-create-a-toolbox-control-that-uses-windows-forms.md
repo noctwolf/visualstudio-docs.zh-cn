@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建使用 Windows 窗体的工具箱控件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: douge
-ms.openlocfilehash: f052c881bc9ca7180d5d9132b1acd4377bf5f6da
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2860f3fca32b3a87967a404fb47626416d9f5dce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476791"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263713"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>如何：创建使用 Windows 窗体的工具箱控件
-中包含的 Windows 窗体工具箱控件模板[!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)]允许你创建的自动添加到 Windows 窗体控件**工具箱**时安装该扩展。 本主题演示如何使用模板来创建可分配给其他用户的“工具箱”  控件。  
+借助 [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] 中内附的 Windows 窗体工具箱控件模板，你可以创建在安装扩展后自动添加到“工具箱”  的 Windows 窗体控件。 本主题演示如何使用模板来创建可分配给其他用户的“工具箱”  控件。  
   
 > [!NOTE]
 >  若要了解如何下载 Visual Studio SDK，请参阅 MSDN 网站上的 [Visual Studio 扩展性开发人员中心](http://go.microsoft.com/fwlink/?linkid=121964) 。  

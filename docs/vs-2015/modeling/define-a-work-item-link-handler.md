@@ -1,7 +1,7 @@
 ---
 title: 定义工作项链接处理程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73a0a71e50360f7c70b7f4e466d6000333c3b89e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: eae89672a6fcbf56dcd2426547e1fb528c270db2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483327"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49290415"
 ---
 # <a name="define-a-work-item-link-handler"></a>定义工作项链接处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[定义工作项链接处理程序](https://docs.microsoft.com/visualstudio/modeling/define-a-work-item-link-handler)。  
-  
 可以创建一个在用户创建或删除 UML 模型元素和工作项之间的链接时作出响应的 Visual Studio 集成扩展。 例如，当用户选择将新的工作项链接到模型元素时，你的代码可以从模型中的值初始化工作项的字段。  
   
 ## <a name="set-up-a-uml-extension-solution"></a>设置 UML 扩展解决方案  
@@ -167,7 +165,7 @@ namespace WorkItems
   
      **故障排除**： 如果新[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]未启动，请确保将 VSIX 项目设置为启动项目的解决方案。  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中，打开或创建一个建模项目，然后打开或创建一个建模图。  
+2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。  
   
 3.  创建模型元素（如 UML 类）并设置其名称。  
   

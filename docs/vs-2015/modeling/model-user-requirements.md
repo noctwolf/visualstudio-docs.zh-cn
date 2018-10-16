@@ -1,7 +1,7 @@
 ---
 title: 建立用户需求模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 30
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e7628db84a8f7515dfdf3ba9110ce1183751d8d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7ac55e2ec1d07c32c154b69cd467dfc534da6ae3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480480"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215821"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[建立用户需求模型](https://docs.microsoft.com/visualstudio/modeling/model-user-requirements)。  
-  
 通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)。  
   
  若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
@@ -143,7 +141,7 @@ ms.locfileid: "47480480"
 |概念类图上的元素|[UML 类图：参考](../modeling/uml-class-diagrams-reference.md)|  
 |如何从概念类开发代码|[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|  
   
- 在概念类图中，通常在关联上放置箭头来表示可导航性没什么用处。 这是因为此关系图并不表示实现。 关联表示现实世界对象间的关系。 以下[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展将无方向箭头当成默认值：[示例： UML 域建模功能](http://go.microsoft.com/fwlink/?LinkId=213849)。  
+ 在概念类图中，通常在关联上放置箭头来表示可导航性没什么用处。 这是因为此关系图并不表示实现。 关联表示现实世界对象间的关系。 下面的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展将无方向箭头当成默认选择： [示例：UML 域建模功能](http://go.microsoft.com/fwlink/?LinkId=213849)。  
   
 ##  <a name="BusinessRules"></a> Showing Business Rules  
  业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。  

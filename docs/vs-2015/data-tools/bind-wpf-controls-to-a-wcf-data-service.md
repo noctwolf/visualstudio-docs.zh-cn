@@ -1,7 +1,7 @@
 ---
 title: 将 WPF 控件绑定到 WCF 数据服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a32ed0567c6bf352502cd4d375a0c2bdafbb5a65
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471923"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251831"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[绑定 WPF 控件添加到 WCF 数据服务](https://docs.microsoft.com/visualstudio/data-tools/bind-wpf-controls-to-a-wcf-data-service)。  
-  
   
 在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到在 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 中封装的客户记录。 你还将添加客户可用于查看和更新记录的按钮。  
   

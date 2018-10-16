@@ -1,7 +1,7 @@
 ---
 title: 扩展属性、 任务列表、 输出和选项 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: 06990510-5424-44b8-9fd9-6481acec5c76
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: aff8da28ecdf91ffa2b21ddb03a62315e2943d6e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89c744db125b45c51d2459d8a830b23e855fd2c7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483139"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49302648"
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>扩展属性、任务列表、输出和选项窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展属性、 任务列表、 输出和选项 Windows](https://docs.microsoft.com/visualstudio/extensibility/extending-the-properties-task-list-output-and-options-windows)。  
-  
 您可以访问 Visual Studio 中的任何工具窗口。 本演练演示如何将工具窗口有关的信息集成到一个新**选项**页和上的新设置**属性**页上，以及如何将写入到**任务列表**并**输出**windows。  
   
 ## <a name="prerequisites"></a>系统必备  

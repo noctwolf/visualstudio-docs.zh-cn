@@ -1,7 +1,7 @@
 ---
 title: 演练： 调试多线程应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13fa717cc7f3952e44fe0dffecf735e7b53345a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480637"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49186194"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>演练：调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试使用线程窗口的多线程应用](https://docs.microsoft.com/visualstudio/debugger/how-to-use-the-threads-window)。  
-  
 [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] 提供了改进**线程**窗口和其他用户界面改进，从而使其更易于调试多线程应用程序。 本演练只需几分钟即可完成，但完成后您将熟悉用于调试多线程应用程序的一些新增界面功能。  
   
  若要开始本演练，您需要创建一个多线程应用程序项目。 请按照下面列出的步骤创建该项目。  
@@ -56,7 +54,7 @@ ms.locfileid: "47480637"
   
 6.  删除出现在源代码文件中的代码并替换该主题的"创建线程"的部分中显示的示例代码[创建线程并传递数据的开始时间](http://msdn.microsoft.com/library/52b32222-e185-4f42-91a7-eaca65c0ab6d)。  
   
-7.  上**文件**菜单上，单击**全部保存**。  
+7.  在“文件”  菜单上，单击“全部保存” 。  
   
 #### <a name="to-begin-the-walkthrough"></a>开始演练  
   
@@ -215,7 +213,7 @@ Thread::Sleep(3000);
   
 6.  右击主线程，然后单击**切换到线程**。  
   
-     一个警告对话框随即显示。 它通知您 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 无法显示主线程的源代码。  
+     一个警告对话框随即显示。 它通知你 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 无法显示主线程的源代码。  
   
      单击 **“确定”**。  
   

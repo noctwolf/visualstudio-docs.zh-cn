@@ -1,7 +1,7 @@
 ---
 title: 保存自定义文档 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d5a25cc7f64c50ca088e11cc69a122f97333dfc3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1402dd3ed2acf6c4801953c59f14d2454b95c01d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479908"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235724"
 ---
 # <a name="saving-a-custom-document"></a>保存自定义文档
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[保存自定义文档](https://docs.microsoft.com/visualstudio/extensibility/internals/saving-a-custom-document)。  
-  
 环境句柄**保存**，**另存为**，并**全部保存**命令。 当用户单击**保存**，**另存为**，**或全部保存**上**文件**菜单或关闭解决方案，从而导致全部保存，以下执行过程。  
   
  ![客户编辑器保存](../../extensibility/internals/media/private.gif "专用")  

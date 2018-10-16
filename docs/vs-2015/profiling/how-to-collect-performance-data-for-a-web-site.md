@@ -1,7 +1,7 @@
 ---
 title: 如何：为 Web 站点收集性能数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ca6d854345ca32500b379e68249e516f9e1efcd3
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185886"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 为 Web 站点收集性能数据](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-performance-data-for-a-web-site)。  
-  
 可以使用“性能向导”为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集性能数据。 可以分析在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开的 Web 应用程序，也可以分析位于本地计算机且未在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 中打开的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 站点。  
   
 > [!NOTE]
@@ -53,7 +51,7 @@ ms.locfileid: "47483494"
   
 ### <a name="to-profile-a-web-site-project"></a>若要分析网站项目  
   
-1.  在 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 中打开 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 项目。  
+1.  在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 或 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 中打开 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]Web 项目。  
   
 2.  在“分析”  菜单上，单击“启动性能向导” 。  
   

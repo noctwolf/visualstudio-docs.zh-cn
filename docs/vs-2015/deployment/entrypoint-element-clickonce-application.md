@@ -1,7 +1,7 @@
 ---
 title: '&lt;入口点&gt;元素 （ClickOnce 应用程序） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 05e8e08718d9a0a87a1a3903e512c690ab0ebff8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: da308de644dfc73d9364b65e21e820d6fc6c2a8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483471"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49255304"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;入口点&gt;元素 （ClickOnce 应用程序）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[ &lt;entryPoint&gt;元素 （ClickOnce 应用程序）](https://docs.microsoft.com/visualstudio/deployment/entrypoint-element-clickonce-application)。  
-  
 标识应为程序集时执行此[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]客户端计算机上运行应用程序。  
   
 ## <a name="syntax"></a>语法  
@@ -63,13 +61,13 @@ ms.locfileid: "47483471"
 ## <a name="elements-and-attributes"></a>元素和属性  
  `entryPoint` 元素是必需的，它位于 `urn:schemas-microsoft-com:asm.v2` 命名空间中。 只能有一个`entryPoint`应用程序清单中定义的元素。  
   
- `entryPoint`元素具有以下属性。  
+ `entryPoint` 元素具有以下属性。  
   
 |特性|描述|  
 |---------------|-----------------|  
 |`name`|可选。 .NET Framework 不使用此值。|  
   
- `entryPoint` 具有以下元素。  
+ `entryPoint` 具有下列元素。  
   
 ## <a name="assemblyidentity"></a>assemblyIdentity  
  必须的。 角色`assemblyIdentity`，其属性的定义[ \<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-application.md)。  
@@ -122,7 +120,7 @@ ms.locfileid: "47483471"
 ```  
   
 ## <a name="see-also"></a>请参阅  
- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+ [ndptecclick](../deployment/clickonce-application-manifest.md)
 
 
 

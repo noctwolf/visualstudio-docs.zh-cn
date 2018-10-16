@@ -1,7 +1,7 @@
 ---
 title: BoundsRules 约束形状位置和大小 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: cafcf44bc1365b74474b201a01d0089465cc7430
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479494"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253716"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>BoundsRules 约束形状位置和大小
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[BoundsRules 约束形状位置和大小](https://docs.microsoft.com/visualstudio/modeling/boundsrules-constrain-shape-location-and-size)。  
-  
 一个*边界规则*是一个类，用于定义限制的大小和形状的位置。 它提供时用户正在拖动形状或角部或两侧形状会反复调用的方法。  
   
  下面的示例将限制为固定大小，水平或垂直的栏的矩形形状。 当用户拖动角部或两侧时，大纲翻转之间的两个允许的配置的高度和宽度。  

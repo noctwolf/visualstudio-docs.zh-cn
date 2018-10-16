@@ -1,7 +1,7 @@
 ---
 title: '&lt;依赖项&gt;元素 （ClickOnce 部署） |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 735b37196586f540186a3ca43c9c315ede51d084
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af4b3fc79118e25fb5631de1a4ea4d5897355bf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478812"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214912"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;依赖项&gt;元素 （ClickOnce 部署）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[&lt;依赖项&gt;元素 （ClickOnce 部署）](https://docs.microsoft.com/visualstudio/deployment/dependency-element-clickonce-deployment)。  
-  
 标识要安装，应用程序的版本和应用程序清单的位置。  
   
 ## <a name="syntax"></a>语法  
@@ -109,12 +107,12 @@ ms.locfileid: "47478812"
 |`type`|可选。 有关向后兼容性 Windows 并行安装技术。 唯一允许的值是`win32`。|  
   
 ## <a name="hash"></a>hash  
- `hash`元素是可选的子`file`元素。 `hash`元素没有任何属性。  
+ `hash`元素是可选的子`file`元素。 `hash` 元素没有属性。  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 使用应用程序中的所有文件的哈希算法作为安全检查以确保部署之后没有任何文件发生更改。 如果`hash`元素不包含，不会执行此检查。 因此，省略`hash`不建议元素。  
   
 ## <a name="dsigtransforms"></a>dsig:Transforms  
- `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms`元素没有任何属性。  
+ `dsig:Transforms`元素是必需的子`hash`元素。 `dsig:Transforms` 元素没有属性。  
   
 ## <a name="dsigtransform"></a>dsig:Transform  
  `dsig:Transform`元素是必需的子`dsig:Transforms`元素。 下表显示的属性`dsig:Transform`元素。  
@@ -131,7 +129,7 @@ ms.locfileid: "47478812"
 |`Algorithm`|用于计算此文件的摘要算法。 当前使用的唯一值[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]是`http://www.w3.org/2000/09/xmldsig#sha1`。|  
   
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue  
- `dsig:DigestValue`元素是必需的子`hash`元素。 `dsig:DigestValue`元素没有任何属性。 其文本值为指定的文件的计算哈希值。  
+ `dsig:DigestValue`元素是必需的子`hash`元素。 `dsig:DigestValue` 元素没有属性。 其文本值为指定的文件的计算哈希值。  
   
 ## <a name="remarks"></a>备注  
  部署清单进行签名通常具有单个`assemblyIdentity`元素，它标识的名称和版本的应用程序清单。  

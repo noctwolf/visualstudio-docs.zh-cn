@@ -1,7 +1,7 @@
 ---
 title: 从探查器命令行使用检测方法收集服务的详细计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a522872e5f422638635550b816ef20050e800ef9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 27856554630bcdedc162023a9a1fa3e80a5f1e8a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180448"
 ---
 # <a name="collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>从探查器命令行使用检测方法收集服务的详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用检测方法从 Profiler 命令行中的服务收集详细计时数据](https://docs.microsoft.com/visualstudio/profiling/collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line)。  
-  
 本部分介绍从命令行使用检测方法收集 Windows 服务的详细性能数据的步骤和选项。  
   
 ## <a name="common-tasks"></a>常规任务  

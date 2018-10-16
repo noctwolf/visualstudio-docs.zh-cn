@@ -1,7 +1,7 @@
 ---
 title: 提供撤消向设计器支持 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dbd83149ad638eed7a1dc714c782f3958d3ea448
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476811"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49267353"
 ---
 # <a name="supplying-undo-support-to-designers"></a>向设计器提供撤消支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设计器提供撤消支持](https://docs.microsoft.com/visualstudio/extensibility/supplying-undo-support-to-designers)。  
-  
 设计器中的，等编辑器，通常需要支持撤消操作，以便修改代码元素时，用户可以撤消他们最近的更改。  
   
  在 Visual Studio 中实现的大多数设计器都有撤消支持自动提供的环境。  

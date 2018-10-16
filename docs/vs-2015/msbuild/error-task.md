@@ -1,7 +1,7 @@
 ---
 title: Error 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a7579a448a113c51a58e492da6ea9e7e4ca9ede
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ff957a54c27c4ae4860e31e4fb7001b7f831ab3a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472424"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212714"
 ---
 # <a name="error-task"></a>Error 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[错误任务](https://docs.microsoft.com/visualstudio/msbuild/error-task)。  
-  
   
 基于评估的条件语句，停止生成操作并记录错误。  
   

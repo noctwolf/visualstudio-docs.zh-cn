@@ -1,7 +1,7 @@
 ---
 title: 如何： 发布 ClickOnce 应用程序使用发布向导 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 46b969a20859ed537549aaede8818e10c0d13fde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 82600212626ea5c5f0543579b82d95903f1fcc8e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478221"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293899"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](https://docs.microsoft.com/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)。  
-  
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 可以使用发布向导; 来发布应用程序与发布相关的其他属性位于**发布**页**项目设计器**。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。  
   
  在运行发布向导前，应适当地设置发布属性。 例如，如果你想要指定密钥为 ClickOnce 应用程序进行签名，你可以执行其他操作**签名**页**项目设计器**。 有关详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。  

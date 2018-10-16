@@ -1,7 +1,7 @@
 ---
 title: 使用垫片将应用与其他程序集相隔离以供单元测试使用 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9a1047f9399efd86b004eb22ce7064f2c7081910
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 54702db4a89bdabb58805560ed8b9909652c649e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480948"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173688"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充码针对单元测试将应用程序与程序集隔离
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用填充码隔离应用程序进行单元测试的其他程序集从](https://docs.microsoft.com/visualstudio/test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing)。  
-  
 填充码类型 * * 是 Microsoft Fakes 框架使用让你轻松地隔离环境中测试组件的两种技术之一。 填充码会将对特定方法的调用转换为在测试中编写的部分代码。 很多方法会依赖于外部条件而返回不同的结果，但填充码处于测试的控制之下，并且可以在每次调用时返回一致的结果。 这会使您的测试更易于编写。  
   
  使用填充码，可以将代码与不属于解决方案的程序集隔离。 为了相互隔离解决方案的组件，我们建议使用存根。  

@@ -1,7 +1,7 @@
 ---
 title: 注册项目和项模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c43c2fb57cecc19002c1275e3281a841244c2b60
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 42d1bbb5ab83970ff4a251f65f17f782a646e2e4
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880065"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49306808"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册项目和项模板](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-project-and-item-templates)。  
-  
 项目类型必须注册其项目和项目项模板的位置的目录。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 使用与您的项目类型关联的注册信息以确定要在中显示**添加新项目**并**添加新项**对话框。  
   
  有关模板的详细信息，请参阅[添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)。  

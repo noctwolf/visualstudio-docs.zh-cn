@@ -1,7 +1,7 @@
 ---
 title: 向层关系图添加自定义属性 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1fc9c3e67cbb10484c814acb0eedbfbae2729eb4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471134"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49235152"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>向层关系图添加自定义属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将自定义属性添加到依赖项关系图](https://docs.microsoft.com/visualstudio/modeling/add-custom-properties-to-layer-diagrams)。  
-  
 为层关系图编写扩展代码时，可以存储具有层关系图上任何元素的值。 保存并重新打开关系图时，值将保留。 此外可以让这些属性显示在**属性**窗口，以便用户可以查看和编辑它们。 例如，你可以让用户为每一层指定正则表达式，并编写验证代码来确认每层中的类名称符合用户指定的模式。  
   
 ## <a name="properties-not-visible-to-the-user"></a>不向用户显示的属性  

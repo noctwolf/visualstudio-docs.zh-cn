@@ -1,7 +1,7 @@
 ---
 title: VSIX 扩展架构 2.0 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 420f2bfff3a379eab818e2313953769b4c26f009
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481170"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181202"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VSIX 扩展架构 2.0 参考](https://docs.microsoft.com/visualstudio/extensibility/vsix-extension-schema-2-0-reference)。  
-  
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。  
   
 > [!IMPORTANT]
@@ -47,7 +45,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<Assets>` -此部分包含的所有资产包含在此包。 本部分中，没有此包不会呈现任何内容。  
   
--   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A>和<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
+-   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
   
 ### <a name="metadata-element"></a>元数据元素  
  本部分是有关包、 其标识和公布信息的元数据。 `<Metadata>` 包含下列元素：  

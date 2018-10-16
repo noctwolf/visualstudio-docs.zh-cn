@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用表达式编辑器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,17 +14,17 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 892e65265938c94767bd63b528040ce4a81fba72
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0c41de63b4163f1fd259ffa4adcef63cad92e351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477014"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181709"
 ---
 # <a name="how-to-use-the-expression-editor"></a>如何：使用表达式编辑器
 表达式编辑器是许多工作流活动中使用的 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 控件，用于输入和计算这些表达式。 表达式编辑器提供全面的 IDE 编辑体验，包括 IntelliSense、着色、ParamInfo、错误波形曲线和其他功能。 编译器在表达式输入后对它进行验证。 如果表达式无效，则显示一个错误图标。 此外可以为打开编辑器**表达式编辑器**对话框。  
   
- 表达式是绑定到参数或属性的文本值或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 代码。 表达式包含与操作进行组合以生成新值的值元素（如变量、常量、文本、属性）。 表达式使用 VB.NET 语法编写，即使应用程序使用 C# 编程也如此。 这意味着，大小写并不重要，则执行比较，使用单等号 （=） 符号而非 （"= ="）、 布尔运算符是单词"和"和"而不是符号"& &"和"&#124;&#124;"，并**执行任何操作**而不是使用**null**。 有关详细信息表达式和运算符中的[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和一些示例，请参阅[运算符和表达式在 Visual Basic 中的](http://go.microsoft.com/fwlink/?LinkId=186818)。  
+ 表达式是绑定到自变量或属性的文本值或 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 代码。 表达式包含与操作进行组合以生成新值的值元素（如变量、常量、文本、属性）。 表达式使用 VB.NET 语法编写，即使应用程序使用 C# 编程也如此。 这意味着，大小写并不重要，则执行比较，使用单等号 （=） 符号而非 （"= ="）、 布尔运算符是单词"和"和"而不是符号"& &"和"&#124;&#124;"，并**执行任何操作**而不是使用**null**。 有关详细信息表达式和运算符中的[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]和一些示例，请参阅[运算符和表达式在 Visual Basic 中的](http://go.microsoft.com/fwlink/?LinkId=186818)。  
   
  **表达式编辑器**行为，如下所示：  
   

@@ -1,7 +1,7 @@
 ---
 title: “快速监视”命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d340f88b83e5dce3054a264a2815fa96707a19f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: afe27d567601e43b10323f9dcc3417bcf15e9298
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480013"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269407"
 ---
 # <a name="quick-watch-command"></a>“快速监视”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[快速监视命令](https://docs.microsoft.com/visualstudio/ide/reference/quick-watch-command)。  
-  
   
 在表达式字段中显示选定或指定的文本[快速监视对话框中](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)。 可使用此对话框计算调试器所识别的变量或表达式的当前值或计算寄存器的内容。 此外，可更改任何非常量变量的值或任何寄存器的内容。  
   
@@ -58,7 +56,7 @@ Debug.QuickWatchq [text]
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [“命令”窗口](../../ide/reference/command-window.md)   
  [“查找/命令”框](../../ide/find-command-box.md)   
- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+ [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 
 
 

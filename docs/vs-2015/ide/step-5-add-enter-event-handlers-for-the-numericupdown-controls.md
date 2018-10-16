@@ -1,7 +1,7 @@
 ---
 title: 步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 879ae4e11fb51b63ed1a154eadcdb67ce87b2435
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a87704f7d836da2309e711f3379df01b01c807c2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471244"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49294484"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[步骤 5： 添加 Enter 事件处理程序为 NumericUpDown 控件](https://docs.microsoft.com/visualstudio/ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls)。  
-  
 在本教程的第 5 部分中，您将添加 Enter 事件处理程序，以便在输入测验问题的答案时变得轻松一些。 当测验对象选择每个 NumericUpDown 控件中的当前值并开始输入其他值时，此代码将立即选中并清除该当前值。  
   
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Web 项目的属性页设置 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 579872bab86e0cd8f127a7222c7fbc9b823e1a5a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a472e134869ff48a21480ede42f330d968262d38
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179980"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Web 项目的属性页设置](https://docs.microsoft.com/visualstudio/debugger/property-pages-settings-for-web-projects)。  
-  
 可以更改网站调试配置中的属性设置**属性页**对话框中，如中所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示了在何处可以找到中与调试器相关的设置**属性页**对话框。  
   
 ### <a name="configuration-properties-folder-start-options-category"></a>“配置属性”文件夹（“启动选项”类别）  

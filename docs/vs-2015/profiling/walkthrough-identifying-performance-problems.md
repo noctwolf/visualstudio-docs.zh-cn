@@ -1,7 +1,7 @@
 ---
 title: 演练：确定性能问题 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3227329f972dcb8d3aba4380ca816f137ef06f6c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477191"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274477"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>演练：确定性能问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 确定性能问题](https://docs.microsoft.com/visualstudio/profiling/walkthrough-identifying-performance-problems)。  
-  
 本演练演示如何分析应用程序以确定性能问题。  
   
  在本演练中，你将逐步完成分析托管应用程序并使用采样和检测来隔离并确定应用程序中的性能问题的过程。  

@@ -1,7 +1,7 @@
 ---
 title: 不显示线程活动（线程视图）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7cd51543c27e2700257036080ccc98bf73c7e7d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 89945746195a7176524611b9d3ef666d86362ad3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178407"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>不显示线程活动（线程视图）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[不显示 （线程视图） 线程活动](https://docs.microsoft.com/visualstudio/profiling/no-thread-activity-to-show-threads-view)。  
-  
 此区域显示有关当前可见时间范围内的非隐藏线程的数据。  
   
  如果信息不可见，请检查以下设置：  

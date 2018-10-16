@@ -1,7 +1,7 @@
 ---
 title: 源代码管理 Vspackage 入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6336c5f683d503923f14fa45a75004301393297d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1b28b659d6f0af9164033e681a15d2fa2b4d1bd2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484433"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49272215"
 ---
 # <a name="getting-started-with-source-control-vspackages"></a>源代码管理 VSPackage 入门
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理 Vspackage 入门](https://docs.microsoft.com/visualstudio/extensibility/internals/getting-started-with-source-control-vspackages)。  
-  
 源代码管理 VSPackage 是源代码管理插件的更高级替代方法。 (请参阅[创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)对于源的详细信息来控制插件。)源代码管理 VSPackage 启用对源控件模型、 功能和用户界面 (UI) 的完全控制和集成到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]作为 VSPackage 的环境。  
   
 ## <a name="in-this-section"></a>本节内容  

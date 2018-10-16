@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 __analysis_assume 指定其他代码信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08ca5a35d08f284062323f2e75648852debb7bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 608ae6383f95122d5e4b85658b12d454dec24d4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478081"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49202535"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>如何：使用 __analysis_assume 指定其他代码信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用 __analysis_assume 指定其他代码信息](https://docs.microsoft.com/visualstudio/code-quality/how-to-specify-additional-code-information-by-using-analysis-assume)。  
-  
 您可以对代码分析工具的提示，它们将帮助分析过程并降低警告 C/c + + 代码。 若要提供的其他信息，请使用以下函数：  
   
  `__analysis_assume(`  `expr`  `)`  

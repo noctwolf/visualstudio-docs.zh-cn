@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 的工作效率提示 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 05bac3fe7d5272674b141b15459d2d21c521cc0f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5ced1b47c0e5b9d50fb8752dc79ab516ca682bd0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173324"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Visual Studio 的工作效率提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio 的工作效率提示](https://docs.microsoft.com/visualstudio/ide/productivity-tips-for-visual-studio)。  
-  
 通过按照这些提示操作，可以更快速且高效地在 Visual Studio 中编写、导航和调试代码。 有关常见键盘快捷键的详细信息，请参阅[提示和技巧](../ide/tips-and-tricks-for-visual-studio.md)。 有关更完整的列表，请参阅[标识并自定义键盘快捷键](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[默认的键盘快捷键](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
   
  本主题包括以下部分：  

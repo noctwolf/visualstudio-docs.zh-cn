@@ -1,7 +1,7 @@
 ---
 title: 演练： 使用 XSLT 层次结构 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ecbefef6cb179807e4b1546794a1fe1bcf418823
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b94a958a915ad7858575e093cae525df17cc23e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469411"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49280952"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>演练：使用 XSLT 层次结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 使用 XSLT 层次结构](https://docs.microsoft.com/visualstudio/xml-tools/walkthrough-using-xslt-hierarchy)。  
-  
   
 XSLT 层次结构工具简化了诸多 XML 开发任务。 XSLT 样式表通常使用 `includes` 和 `imports` 指令。 编译从主体样式表开始，但看到因编译 XSLT 样式表而发生的错误时，该错误可能来自其他源而不是来自主体样式表。 修复该错误或编辑样式表可能需要访问包含的或已导入的样式表。 在调试器中逐项通过样式表，可能会打开已包含和已导入的样式表，并且可能需要在一个或多个已包含样式表中的某个位置添加断点。  
   

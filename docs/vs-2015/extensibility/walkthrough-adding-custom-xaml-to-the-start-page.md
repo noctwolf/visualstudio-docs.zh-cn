@@ -1,7 +1,7 @@
 ---
 title: 演练： 将自定义 XAML 添加到开始页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 796beda7675d45698dd361e09f5b27e54d8b5da6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6c35c9ff8826000e3b7d73754476d2f7c5007fd3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483287"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230784"
 ---
 # <a name="walkthrough-adding-custom-xaml-to-the-start-page"></a>演练：将自定义 XAML 添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 将自定义 XAML 添加到起始页](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-adding-custom-xaml-to-the-start-page)。  
-  
 本演练演示如何创建自定义 Visual Studio 起始页，其中包含 Web 浏览器。  
   
 ## <a name="adding-custom-xaml"></a>添加自定义 XAML  
@@ -95,7 +93,7 @@ ms.locfileid: "47483287"
 1.  在中**工具 / 选项 / 环境**，选择**启动**。 上**自定义起始页**列表中，选择.xaml 文件，然后单击**确定**。  
   
 ## <a name="next-steps"></a>后续步骤  
- Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关详细信息，请参阅[Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+ Visual Studio 起始页现在包含一个 Web 浏览器选项卡和 MyButton 选项卡将显示一个选项卡。可以创建使用具有其他功能的自定义起始页*代码隐藏*模型中添加自定义.dll，如中所示[添加到启动页的用户控件](../extensibility/adding-user-control-to-the-start-page.md)。 通过发布到生成的.vsix 文件，可以与其他用户共享自定义起始页[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)网站，或到另一个网站或网络共享。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   

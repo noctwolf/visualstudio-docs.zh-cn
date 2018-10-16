@@ -1,7 +1,7 @@
 ---
 title: 查看类型和关系（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dc7bf4d9f005b5514be5ec6765744b8d043a3979
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 801481c6fed2dab33774cd9895685e91e49ab361
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480992"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240755"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>查看类型和关系（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[查看类型和关系 （类设计器）](https://docs.microsoft.com/visualstudio/ide/viewing-types-and-relationships-class-designer)。  
-  
 类设计器使用类图显示类型详细信息，例如，它们的构成成员和共享的关系。 这些实体的可视化实际上是代码中的动态视图。 这意味着可以在设计器上编辑类型，然后查看反射在实体源代码中的编辑内容。 同样，类图将与对代码中的实体所做的更改保持同步。  
   
 > [!NOTE]

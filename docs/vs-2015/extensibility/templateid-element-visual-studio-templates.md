@@ -1,7 +1,7 @@
 ---
 title: TemplateID 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 688ec8e4db64ad36a189e0340c46f5b1a016f0d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2f287c7f1a7c8e9d134c99926f28d82399b837c0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477562"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49188066"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[TemplateID 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/templateid-element-visual-studio-templates)。  
-  
 指定到项模板由一组分类的项模板的标识符[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)元素。  
   
  \<VSTemplate >  

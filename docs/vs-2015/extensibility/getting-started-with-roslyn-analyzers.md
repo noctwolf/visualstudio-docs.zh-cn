@@ -1,7 +1,7 @@
 ---
 title: 开始使用 Roslyn 分析器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 178826bbb1a5f920af0c6d20527e4e004b1918cc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 337aec1b68759102d9e2a50bd4a23c13ddde7739
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477068"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284734"
 ---
 # <a name="getting-started-with-roslyn-analyzers"></a>Roslyn 分析器入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Roslyn 分析器入门](https://docs.microsoft.com/visualstudio/extensibility/getting-started-with-roslyn-analyzers)。  
-  
 通过在 Visual Studio 中的实时、 基于项目的代码分析器，API 作者可以提供特定于域的代码分析作为其 NuGet 包的一部分。  这些分析器由.NET 编译器平台 (代号为"Roslyn") 提供支持，因为它们可能会产生警告在代码中的，键入即使之前已完成 （不再等到生成代码以便发现问题） 的行。  分析器，还可能会出现通过 Visual Studio 灯泡图标提示来让您立即清理代码的自动代码修补程序  
   
 ## <a name="getting-started"></a>入门  

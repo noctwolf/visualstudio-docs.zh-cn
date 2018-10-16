@@ -1,7 +1,7 @@
 ---
 title: “选项”->“文本编辑器”->“C#”->“格式设置”| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,18 +31,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 97699f8b4e9eaf0082cadecb584f9a8133a76424
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9acd9d882fb2cf0decff4c9f4ab657cf831e74ee
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484349"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281250"
 ---
 # <a name="options-text-editor-c-formatting"></a>选项、文本编辑器、C#、格式设置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选项，文本编辑器，C#、 格式设置](https://docs.microsoft.com/visualstudio/ide/reference/options-text-editor-csharp-formatting)。  
-  
   
 使用“格式设置”属性页对话框可以在代码编辑器中设置格式设置代码的选项。 若要访问此对话框，请单击“工具”菜单上的“选项”，展开“文本编辑器”，再展开“C#”，然后单击“格式设置”。  
   

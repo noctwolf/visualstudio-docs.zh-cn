@@ -1,7 +1,7 @@
 ---
 title: 对应用商店应用的 Visual C++ DLL 进行单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 6396fccd3e0203e90c38936c53016810803a1975
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470098"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49244356"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>对应用商店应用的 Visual C++ DLL 进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[应用商店应用程序的 Visual c + + DLL 单元测试](https://docs.microsoft.com/visualstudio/test/unit-testing-a-visual-cpp-dll-for-store-apps)。  
-  
 本主题介绍一种为 Windows 应用商店应用创建针对 C++ DLL 的单元测试的方法。RooterLib DLL 可通过实现计算给定数平方根的估计值的函数，演示微积分极限理论的模糊内存。 然后，可能会将 DLL 包括在一个 Windows 应用商店应用中，向用户展示可通过数学完成的有趣操作。  
   
  本主题演示如何使用单元测试作为开发的第一步。 在此方法中，首先编写验证要测试的系统的特定行为的测试方法，然后编写通过测试的代码。 通过按照以下过程的顺序进行更改，您可调转此策略的顺序，即先编写要测试的代码，然后编写单元测试。  

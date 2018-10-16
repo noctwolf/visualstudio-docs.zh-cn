@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 域特定语言的建模 SDK |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4f41594e1a39046e82cd7280c5569edbbeb65eb7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469166"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224726"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Visual Studio-域特定语言的建模 SDK](https://docs.microsoft.com/visualstudio/modeling/modeling-sdk-for-visual-studio-domain-specific-languages)。  
-  
 通过使用建模 SDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK)，可以创建功能强大的基于模型的开发工具，可以将集成到[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 例如，使用 MSDK 创建 UML 工具。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。  
   
  MSDK 的核心是你创建的用于表示业务领域内概念的模型的定义。 你可以使用各种工具环绕模型，例如关系图视图、生成代码和其他项目的功能、用于转换模型的命令和在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中与代码和其他对象进行交互的能力。 在开发模型时，你可以将其与其他模型和工具结合以形成一个以开发为中心的功能强大的工具集。  

@@ -1,7 +1,7 @@
 ---
 title: 学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 56e76bc74470ccc5efda4482435f73344f85224a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03b8892eb78184aab237f926e20bfef59418e532
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49213611"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识](https://docs.microsoft.com/visualstudio/cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio)。  
-  
   
 完成 [Setup and install](../cross-platform/setup-and-install.md) 和 [Verify your Xamarin environment](../cross-platform/verify-your-xamarin-environment.md)中的步骤后，此演练会立即演示如何借助 Xamarin.Forms 生成基本应用（如下所示）。 借助 Xamarin.Forms，将在可移植类库 (PCL) 中将全部 UI 代码编写一次。 Xamarin 随后会自动呈现 iOS、Android 和 Windows 平台的本机 UI 控件。 我们建议使用这一方法，因为 PCL 选项可以最好地支持仅使用受所有目标平台支持的 .NET API，并且因为 Xamarin.Forms 能够让你跨平台共享 UI 代码。  
   

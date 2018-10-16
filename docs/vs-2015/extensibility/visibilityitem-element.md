@@ -1,7 +1,7 @@
 ---
 title: VisibilityItem 元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f7ceeecbd8d68053d4759a3da3cd552545a4285
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 46f8d4557c5abcc14963a87cd8c90217abd3ab1e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209447"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[VisibilityItem 元素](https://docs.microsoft.com/visualstudio/extensibility/visibilityitem-element)。  
-  
 `VisibilityItem`元素可确定命令和工具栏的静态可见性。 每个条目标识命令或菜单中，以及关联的命令 UI 上下文。 Visual Studio 检测命令、 菜单和工具栏和其可见性，而不加载 Vspackage 的定义它们。 IDE 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>方法来确定命令 UI 上下文是否处于活动状态。  
   
  VSPackage 加载后，Visual Studio 期望命令可见性由 VSPackage 而不是`VisibilityItem`。 若要确定命令的可见性，您可以实现<xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>事件处理程序或<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法，具体取决于您的命令的实现方式。  

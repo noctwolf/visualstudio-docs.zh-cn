@@ -1,7 +1,7 @@
 ---
 title: 如何：导出包含 Mipmap 的纹理 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a876676eed593bfa06c3e89521522d9901c58ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 10a8a918de6f4228e34660b1699b3b9204e5218d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480590"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299658"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：导出包含 Mipmap 的纹理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 导出包含 Mipmap 的纹理](https://docs.microsoft.com/visualstudio/designers/how-to-export-a-texture-that-contains-mipmaps)。  
-  
 在项目生成阶段，图像内容管道可从源图像生成 mipmap。 当不需要手动指定每个 MIP 级别的图像内容时（可通过这样做来实现特定的效果），在生成时间生成 mipmap 可确保 mipmap 内容始终保持同步，并在运行时消除生成 mipmap 的性能成本。  
   
  本文档演示了这些活动：  

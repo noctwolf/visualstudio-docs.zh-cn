@@ -1,14 +1,14 @@
 ---
 title: 使用断点 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: hero-article
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
 - vs.debug.disassembly.insert
@@ -46,18 +46,15 @@ caps.latest.revision: 63
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c111b2704401ff6f98025026fc51d19b434503f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5fcc6803144359af25d70e68a25ffe90cf7bcca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49304884"
 ---
 # <a name="using-breakpoints"></a>使用断点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[使用断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)。 
-
 也许你会为了查看代码变量的状态或查看调用堆栈而想要停止调试程序执行，此时，你可以设置断点。 在开发人员的工具箱中，它们是最重要的调试技术之一。
   
 ##  <a name="BKMK_Overview"></a> 在源代码中设置函数断点  
@@ -174,8 +171,8 @@ ms.locfileid: "47479678"
   
  条件可以是调试器能够识别的任何有效表达式。 有关有效表达式的详细信息，请参见 [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md)。  
   
-## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在断点条件（C# 和 F #）中使用对象 ID  
- 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次插入到一个集合中。 在 C# 和 F #，您可以创建的特定实例的对象 Id[引用类型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47)和断点条件中使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>在断点条件（C# 和 F#）中使用对象 ID  
+ 有时，你想要观察特定对象的行为；例如，你可能想要知道一个对象为何多次插入到一个集合中。 在 C# 和 F# 中，你可以创建 [引用类型](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) 的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  若要创建对象 ID，请执行以下操作：  
   
 1.  在对象已被创建后的某个时间在代码中设置断点。  
   

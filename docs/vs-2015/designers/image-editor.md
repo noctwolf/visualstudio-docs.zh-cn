@@ -1,7 +1,7 @@
 ---
 title: 图像编辑器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49149fcae2afa25c22132f23298d3dea6bccf60f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 748d58ec8446841242fdf7b5b990eebe90df5ba1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482187"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185765"
 ---
 # <a name="image-editor"></a>图像编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[的图像编辑器](https://docs.microsoft.com/visualstudio/designers/image-editor)。  
-  
 本文档介绍如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图像编辑器查看和修改纹理和图像资源。  
   
  可使用图像编辑器处理 DirectX 应用开发中使用的多种纹理和图像格式，这包括对常用图像文件格式和颜色编码的支持、对 alpha 通道和 MIP 映射等功能的支持以及对 DirectX 支持的许多高度压缩的硬件加速纹理格式的支持。  

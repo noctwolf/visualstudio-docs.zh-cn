@@ -1,7 +1,7 @@
 ---
 title: 演练： 自定义插入、 更新和删除实体类的行为 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4bc04af81d3617646f5c7311919ad9ef36a28d7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4d8ef69258d9c672bb5deb01b9c2e0972d4e8303
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471253"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193539"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练： 自定义插入、 更新和删除实体类的行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 自定义插入、 更新和删除实体类的行为](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)。  
-  
   
 [LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供一个可视化设计图面，用于创建和编辑[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]基于数据库中的对象的类 （实体类）。 通过使用[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)，可以使用 LINQ 技术访问 SQL 数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d)。  
   
@@ -257,7 +255,7 @@ ms.locfileid: "47471253"
     >  如果你的应用程序将使用 SQL Server Express Edition，具体取决于值**复制到输出目录**数据库文件的属性，所做的更改可能不会显示在步骤 10 中按 F5 时。 有关详细信息，请参阅[如何： 在您的项目中管理本地数据文件](../data-tools/how-to-manage-local-data-files-in-your-project.md)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 根据应用程序要求的不同，您可能需要在创建 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类后执行几个步骤。 你可以对此应用程序进行的一些增强包括：  
+ 根据应用程序需求的不同，您可能需要在创建 [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 实体类后执行几个步骤。 你可以对此应用程序进行的一些增强包括：  
   
 -   在更新过程中实现并发检查。 有关信息，请参阅[开放式并发： 概述](http://msdn.microsoft.com/library/c2e38512-d0c8-4807-b30a-cb7e30338694)。  
   

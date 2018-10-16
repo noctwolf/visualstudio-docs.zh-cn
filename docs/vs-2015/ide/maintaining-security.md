@@ -1,7 +1,7 @@
 ---
 title: 维护安全性 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c2093e33b2a6b3424b39c8377f8168afd1e90939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484485"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49230790"
 ---
 # <a name="maintaining-security"></a>维护安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[维护安全](https://docs.microsoft.com/visualstudio/ide/maintaining-security)。  
-  
 常言道安全靠常抓不懈。 尽管你在应用程序的设计和开发过程中非常专注于安全性，还是应当假设在部署之后会出现安全漏洞。 通过严格检查应用程序和分析事件日志，你可能会发现一些以前隐蔽起来的漏洞。  
   
  此外，你不仅必须对自己的应用程序保持警惕，还必须随时了解运行应用程序的平台以及应用程序所依赖的其他产品的安全威胁和漏洞。  

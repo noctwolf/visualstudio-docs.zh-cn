@@ -1,7 +1,7 @@
 ---
 title: Format Specifiers in C# |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -32,18 +32,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 27c3dcf59068ca511f52850e328ef186c22b3dfa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f6abc97117af62732f659ca469ab757d1ff1cdcd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49281185"
 ---
 # <a name="format-specifiers-in-c"></a>C# 中的格式说明符 #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[C# 中的格式说明符](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-csharp)。  
-  
 你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。 还可在“即时”  窗口、“命令”  窗口甚至是源窗口中使用格式说明符。 如果将鼠标悬停在这些窗口中的表达式上，结果将在数据提示中显示。 数据提示将在数据提示的显示内容中反映格式说明符。  
   
  若要使用格式说明符，请键入后跟逗号的表达式。 在逗号后面，添加适当的说明符。  
@@ -68,7 +66,7 @@ ms.locfileid: "47481641"
   
 |说明符|格式|原始监视值|显示|  
 |---------------|------------|--------------------------|--------------|  
-|ac|表达式的强制计算。 当关闭属性的隐式计算和隐式函数调用时，这是很有用的。 请参阅[Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|消息“用户已关闭隐式函数计算”|\<value>|  
+|ac|表达式的强制计算。 当关闭属性的隐式计算和隐式函数调用时，这是很有用的。 请参阅 [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)。|消息“用户已关闭隐式函数计算”|\<value>|  
 |d|十进制整数|0x0065|101|  
 |dynamic|使用“动态”视图显示指定对象|显示对象的所有成员，包括动态视图|仅显示动态视图|  
 |h|十六进制整数|61541|0x0000F065|  

@@ -1,7 +1,7 @@
 ---
 title: 类设计器中的 Visual C++ 类 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 884d8cc74ea550c804aa6dd6ac735eb6f70be789
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4193dda70aeda8534b9dc2fa3428ca08a9d89fa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49285683"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[类设计器中的 Visual c + + 类](https://docs.microsoft.com/visualstudio/ide/visual-cpp-classes-in-class-designer)。  
-  
 类设计器支持 C++ 类，直观呈现本机 C++ 类的方式与直观呈现 Visual Basic 和 Visual C# 类形状时大致相同，不同之处在于 C++ 类可以有多个继承关系。 可以展开类形状来显示类中的更多字段和方法，也可以折叠类形状来节省空间。  
   
 > [!NOTE]

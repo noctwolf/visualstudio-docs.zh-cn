@@ -1,7 +1,7 @@
 ---
 title: 发布 Visual Studio 集成产品 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: douge
-ms.openlocfilehash: 24f4b4c01dcd00de8a258e90e310dc7e4b98bf11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3c571a01aab27e56375d92f9abbced386a12bce7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197491"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>发布 Visual Studio 集成产品
 本部分中的主题演示如何通过生成和安装 VSPackage 以及使用 Visual Studio 集成测试 (VSIT) 来发布 Visual Studio 集成产品。  
@@ -37,4 +37,4 @@ ms.locfileid: "47470070"
   
 ## <a name="related-sections"></a>相关章节  
  [使用 Visual Studio SDK 针对测试进行自定义](http://msdn.microsoft.com/en-us/9cf7a840-dd66-4b00-90f7-e00e40370a69)  
- 介绍如何使用[!INCLUDE[esprtest](../includes/esprtest-md.md)]套件，以创建、 管理、 编辑和运行测试，并还获取和测试结果存储区。
+ 介绍如何使用 [!INCLUDE[esprtest](../includes/esprtest-md.md)] 套件创建、管理、编辑和运行测试，以及获取和存储测试结果。

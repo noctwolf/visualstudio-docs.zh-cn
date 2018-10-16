@@ -1,7 +1,7 @@
 ---
 title: CA1708： 标识符应差别不仅仅在于大小写 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d60c29b7e6a5cec32b8a694bb0b21d7f85538e01
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: 07f4b9f9a69de3458bf0f7ea7dcb316e2e9a086a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587823"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187637"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708：标识符不应仅以大小写进行区分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1708： 标识符不应不同大小写进行区分](https://docs.microsoft.com/visualstudio/code-quality/ca1708-identifiers-should-differ-by-more-than-case)。
-
 |||
 |-|-|
 |TypeName|IdentifiersShouldDifferByMoreThanCase|

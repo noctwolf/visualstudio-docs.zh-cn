@@ -1,7 +1,7 @@
 ---
 title: 枚举 （Visual Studio 调试） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 557065bf-081f-4d57-8744-bae02b8a5a6e
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9e6c431624c176142007b383470d67dc4f73e50f
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 9340030c9dd2a1a69b50162dd4c5b29f9eb6a50d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881041"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247248"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>枚举 (Visual Studio Debugging)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[枚举 (Visual Studio Debugging)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/enumerations-visual-studio-debugging)。  
-  
 以下是枚举[!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)]调试 SDK。  
   
  [AD_PROCESS_ID_TYPE](../../../extensibility/debugger/reference/ad-process-id-type.md)  

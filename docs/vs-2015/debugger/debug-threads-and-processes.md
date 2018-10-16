@@ -1,7 +1,7 @@
 ---
 title: 调试线程和进程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bda70d9f99b4b97623d5d9f03ca440721f9a728
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 711aaeaa76edbb4ea9d070254213f9a7207e12f9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468785"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191485"
 ---
 # <a name="debug-threads-and-processes"></a>调试线程和进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试线程和进程](https://docs.microsoft.com/visualstudio/debugger/debug-threads-and-processes)。  
-  
 线程 * 并*进程*是计算机科学中相关的概念。 二者都表示必须按特定顺序执行的指令序列。 但是不同线程或进程中的指令可以并行执行。  
   
  进程存在于操作系统内，并对应于用户可看作为程序或应用程序的事物。 另一方面，线程存在于进程内。 出于此原因，线程有时称为*轻量进程*。 每个进程都由一个或多个线程组成。  

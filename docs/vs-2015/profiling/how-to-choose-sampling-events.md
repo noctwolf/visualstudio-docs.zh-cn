@@ -1,7 +1,7 @@
 ---
 title: 如何：选择采样事件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2e00dcc15633e9b62f5db02e321950e4f91814f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0be5c96b1ca131bee9062d4049fbea49a9aec182
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480356"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228407"
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：选择采样事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 选择采样事件](https://docs.microsoft.com/visualstudio/profiling/how-to-choose-sampling-events)。  
-  
 默认情况下，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具按指定为由所分析的进程使用的处理器周期数的间隔收集性能数据。 间隔中的默认周期数为 10,000,000，这在 1 GH 计算机上大约 0.01 秒。 可以更改间隔中的周期数，也可以更改采样事件。 以下示例事件可用：  
   
 -   时钟周期数 - 用于占用大量 CUP 的问题。  

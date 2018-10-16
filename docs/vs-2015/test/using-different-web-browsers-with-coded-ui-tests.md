@@ -1,7 +1,7 @@
 ---
 title: 在不同的 Web 浏览器中运行编码的 UI 测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 73fea4d5d3cccf90070e2e2a013684e2344205f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 38bb2e9db99d35773d2e625783a613db5c051b5b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210374"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>对编码的 UI 测试使用不同的 Web 浏览器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用不同 Web 浏览器使用编码的 UI 测试](https://docs.microsoft.com/visualstudio/test/using-different-web-browsers-with-coded-ui-tests)。  
-  
 编码的 UI 测试可通过使用 Internet Explorer 记录你的测试来自动化 Web 应用程序的测试。 然后，你可以自定义你的测试并使用 Internet Explorer 或其他适用于这些 Web 应用程序的浏览器类型来播放测试。  
   
  **要求**  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild 任务参考 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 43b7b413d403f2b85cc5c8e792cbee19488f8f11
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6f1767ce1c572e1e3d8eacae8ba3a60f3593476
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468565"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49193982"
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 任务参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 任务参考](https://docs.microsoft.com/visualstudio/msbuild/msbuild-task-reference)。  
-  
   
 任务提供在生成过程中运行的代码。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 提供以下列表中的任务。 安装 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 时，可使用其他任务来生成 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目。 有关详细信息，请参阅 [Visual C++ 任务](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
   

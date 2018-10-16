@@ -1,7 +1,7 @@
 ---
 title: FuncDebugEnd |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1033d79bc0639afe95bd72ccd9d679885fced169
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b3b67a394889f7366a577f635308c92844071313
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479458"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200340"
 ---
 # <a name="funcdebugend"></a>FuncDebugEnd
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[FuncDebugEnd](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/funcdebugend)。  
-  
 如果函数具有一个定义的点处的调试是，最终，由具有的符号标识起始点的调试`SymTagFuncDebugEnd`标记。  
   
 ## <a name="properties"></a>属性  

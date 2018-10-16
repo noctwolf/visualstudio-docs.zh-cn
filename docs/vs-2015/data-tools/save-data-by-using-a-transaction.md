@@ -1,7 +1,7 @@
 ---
 title: 使用事务保存数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c88bd18e8b02c62a31743427bf70cc7eac68ed79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476678"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49233775"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用事务保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用事务保存数据](https://docs.microsoft.com/visualstudio/data-tools/save-data-by-using-a-transaction)。  
-  
   
 您将数据保存在事务中的使用<xref:System.Transactions>命名空间。 使用<xref:System.Transactions.TransactionScope>对象能够参与为您自动管理的事务。  
   

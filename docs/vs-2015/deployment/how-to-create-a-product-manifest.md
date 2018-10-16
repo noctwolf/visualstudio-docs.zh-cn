@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建产品清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b9eda8832f2cff1e6b05fa050bf4bf1e42f26a38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270083"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建产品清单](https://docs.microsoft.com/visualstudio/deployment/how-to-create-a-product-manifest)。  
-  
 若要部署应用程序的先决条件，你可以创建引导程序包。 引导程序包包含一个单一产品清单文件，但是包清单的每个区域设置。 包清单包含包的特定于本地化的方面。 这包括字符串、 最终用户许可协议和语言包。  
   
  有关产品清单的详细信息，请参阅[如何： 创建程序包清单](../deployment/how-to-create-a-package-manifest.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 更改域特定语言的 Namespace |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1407b0ca77ea6f19bc6f6f165d5524c305b69d0f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 19b756fb6957a22959614f63b93123f5cde817b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588694"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49209022"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 更改域特定语言的 Namespace](https://docs.microsoft.com/visualstudio/modeling/how-to-change-the-namespace-of-a-domain-specific-language)。  
-  
 您可以更改域特定语言的命名空间。 你必须在更改**DSL 资源管理器**、 Dsl 包项目的属性和程序集信息。  
   
 ### <a name="to-change-the-namespace-of-a-domain-specific-language"></a>若要更改域特定语言的命名空间  

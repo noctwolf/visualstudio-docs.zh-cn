@@ -1,7 +1,7 @@
 ---
 title: 在 XCode 和 Visual Studio 之间同步更改 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -11,18 +11,16 @@ caps.latest.revision: 10
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: a18d21dc20d6bb8a8346013130bea15f094b5fff
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0135aa1b2a23beb0ce9781fe07403a7ddc43acb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482530"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49268224"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>在 XCode 和 Visual Studio 之间同步更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[同步的更改之间 XCode 和 Visual Studio](https://docs.microsoft.com/visualstudio/cross-platform/sync-changes-between-xcode-and-visual-studio)。  
-  
   
 适用于移动开发的 Microsoft Visual C++ 组件包括在电脑和 Mac 间同步工作的远程功能。 Visual Studio 和 Mac 计算机配对后，向 Visual Studio 中的 iOS 应用程序项目提供新选项，可用于在 XCode 中打开项目、在 XCode 和 Visual Studio 间移动代码，并可清理临时 XCode 项目目录。  
   

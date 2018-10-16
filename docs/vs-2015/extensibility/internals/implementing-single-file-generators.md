@@ -1,7 +1,7 @@
 ---
 title: 实现单个文件生成器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: fe9ef6b6-4690-4c2c-872c-301c980d17fe
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30294f901f3e0536caeb84dc55af5630db24956a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f77b8dd1f28431665aae5d6c64da58d038a156b3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468659"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300940"
 ---
 # <a name="implementing-single-file-generators"></a>实现单个文件生成器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现单个文件生成器](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-single-file-generators)。  
-  
 自定义工具，有时称为单文件生成器 — 可用于扩展[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]和[!INCLUDE[csprcs](../../includes/csprcs-md.md)]项目中的系统[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 自定义工具是实现的 COM 组件<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>接口。 使用此接口，自定义工具将单个输入的文件转换为单个输出文件。 转换的结果可能是源代码中，或任何其他输出这一点非常有用。 自定义工具生成的代码文件的两个示例是在响应中的可视化设计器和使用 Web 服务描述语言 (WSDL) 生成的文件的更改生成代码。  
   
  当加载自定义工具，或保存该输入的文件时，项目系统会调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A>方法，并将传递到引用<xref:Microsoft.VisualStudio.Shell.Interop.IVsGeneratorProgress>回调接口，凭此工具可以向用户报告其进度。  

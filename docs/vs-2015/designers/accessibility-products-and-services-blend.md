@@ -1,7 +1,7 @@
 ---
 title: 辅助功能产品和服务 (Blend) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0eb5e91d22549cf99b10f7575a8669d908e4832b
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880760"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197816"
 ---
 # <a name="accessibility-products-and-services-blend"></a>辅助功能产品和服务 (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[辅助功能产品和服务 (Blend)](https://docs.microsoft.com/visualstudio/designers/accessibility-products-and-services-blend)。  
-  
 Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 以下各节提供有关使得残障人士更易访问 Microsoft Windows 的功能、产品和服务的信息：  
   
 -   “Windows 辅助功能”  

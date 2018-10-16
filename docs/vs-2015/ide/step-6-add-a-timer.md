@@ -1,7 +1,7 @@
 ---
 title: 步骤 6：添加计时器 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02ec36c9dbb6f659e3cc5c59d7ee82abffcac34d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 577ef28c49d769bac8d979330f181c67b8d35687
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471651"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293368"
 ---
 # <a name="step-6-add-a-timer"></a>步骤 6：添加计时器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[第 6 步： 添加计时器](https://docs.microsoft.com/visualstudio/ide/step-6-add-a-timer)。  
-  
 接下来，你要向匹配游戏中添加“Timer”控件。 计时器等待指定的毫秒数后，触发一个称为“Tick”的事件。 这对于启动操作或定时重复操作很有用。 在本例中，你将使用一个计时器，让玩家开始选择两个图标，而如果图标不匹配，则在短暂时间后再次隐藏这两个图标。  
   
 ### <a name="to-add-a-timer"></a>添加计时器  

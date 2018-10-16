@@ -1,7 +1,7 @@
 ---
 title: 向层关系图添加自定义体系结构验证 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3ef9831dd5268c545373433d728df7e36d31cf83
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469186"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231085"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>向层关系图添加自定义体系结构验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[向依赖项关系图添加自定义体系结构验证](https://docs.microsoft.com/visualstudio/modeling/add-custom-architecture-validation-to-layer-diagrams)。  
-  
 在 Visual Studio 中，用户可以对照层模型验证项目中的源代码，以便他们可以验证源代码是否符合层关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。  
   
  当用户在层关系图上选择“验证体系结构”  命令时，会调用标准验证方法，接着会调用已安装的任意验证扩展。  
@@ -65,7 +63,7 @@ ms.locfileid: "47469186"
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-5.  主实例中安装扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+5.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证程序  
  如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。 有关其他类型的建模扩展的信息，请参阅[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -122,7 +120,7 @@ ms.locfileid: "47469186"
     > [!NOTE]
     >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-8.  若要安装的主实例中的 VSIX [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
+8.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。 （Windows 8 中为文件资源管理器。）  
   
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
@@ -215,12 +213,12 @@ ms.locfileid: "47469186"
   
  若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 出现调试对话框时，选择 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主实例。  
   
- 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到的主实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]然后在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。  
+ 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 出现消息框时，转到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的主实例，并在“调试”  菜单上单击“附加到进程” 。 选择名为 **Graphcmd.exe**的进程。  
   
  始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。  
   
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展  
- 若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。 若要在安装了 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的计算机上进行安装，则必须将 VSIX 内容手动提取到一个扩展文件夹中。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
+ 若要在安装了适当版本的 Visual Studio 的计算机上安装验证扩展，请打开目标计算机上的 VSIX 文件。 若要在安装了 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的计算机上进行安装，则必须将 VSIX 内容手动解压到 Extensions 文件夹中。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
   
 ##  <a name="example"></a> Example code  
   

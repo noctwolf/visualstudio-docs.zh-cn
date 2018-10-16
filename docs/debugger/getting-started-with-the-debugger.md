@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f12e1e95daed3a4e9c6228808123f87174f2202a
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612683"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101038"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程： 了解如何使用 Visual Studio 进行调试
 
@@ -31,7 +31,7 @@ ms.locfileid: "45612683"
 |---------|---------|
 |  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)上调试，显示了类似的步骤。 |
 
-尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。 若要切换 C# 和 c + + 这篇文章中的代码示例，请使用此页的右上角的语言筛选器。
+尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。
 
 在本教程中，你将：
 
@@ -60,6 +60,9 @@ ms.locfileid: "45612683"
 3. 键入一个名称，如**获取启动调试**然后单击**确定**。
 
     Visual Studio 随即创建项目。
+
+    > [!NOTE]
+    > 若要切换 C# 和 c + + 这篇文章中的代码示例，请使用此页的右上角的语言筛选器。
 
 4. 在中*Program.cs* (C#) 或*get 启动 debugging.cpp* （c + +），将以下代码
 

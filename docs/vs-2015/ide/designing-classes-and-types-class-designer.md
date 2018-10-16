@@ -1,7 +1,7 @@
 ---
 title: 设计类和类型（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9225a20e8e7834832a7b152c7770cf58eb94b64f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e7fbefeef4a5993daeaf79088da7bd861505421c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482951"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265741"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>设计类和类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设计类和类型 （类设计器）](https://docs.microsoft.com/visualstudio/ide/designing-classes-and-types-class-designer)。  
-  
 使用类设计器不仅可以对类和类型进行可视化处理，而且还能对其进行设计。 以下主题介绍了如何执行此操作。  
   
 > [!NOTE]

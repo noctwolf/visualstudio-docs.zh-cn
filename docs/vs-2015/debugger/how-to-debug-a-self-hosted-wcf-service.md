@@ -1,7 +1,7 @@
 ---
 title: 如何： 调试自我托管的 WCF 服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1e87af205a88e84942eb4958876c2030a175065
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ec8f1fee46a1df931842992df1daa38942ca07bc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484160"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182242"
 ---
 # <a name="how-to-debug-a-self-hosted-wcf-service"></a>如何：调试自我托管的 WCF 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 调试自承载的 WCF 服务](https://docs.microsoft.com/visualstudio/debugger/how-to-debug-a-self-hosted-wcf-service)。  
-  
 一个*自我托管服务*是不会在 IIS 中，WCF 服务主机内运行的 WCF 服务或[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]开发服务器。 若要调试自托管的 WCF 的最简单方法是配置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]以启动客户端和服务器选择时**启动调试**上**调试**菜单。  
   
  如果内部，或者不能以这种方式，如 NT 服务启动进程自承载 WCF 服务不能使用此方法。 相反，可以执行以下操作：  

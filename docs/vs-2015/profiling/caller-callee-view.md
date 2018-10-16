@@ -1,7 +1,7 @@
 ---
 title: “调用方-被调用方”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a28f0184d126781c43540d447cd75cd905e15d40
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8e2eaae167f1d11097db8a27c355ea190ac5564a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471148"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49200273"
 ---
 # <a name="callercallee-view"></a>“调用方/被调用方”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调用方-被调用方视图](https://docs.microsoft.com/visualstudio/profiling/caller-callee-view)。  
-  
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格：  
   
  **当前函数**在中间网格中显示，其显示所选函数的分析信息。 值包括对分析运行期间收集的函数的所有调用。  

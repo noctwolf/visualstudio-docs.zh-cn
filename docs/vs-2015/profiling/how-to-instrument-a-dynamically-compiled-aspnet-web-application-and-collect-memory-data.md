@@ -1,7 +1,7 @@
 ---
 title: 如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序并收集内存数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4693b7e1b0b274c9166bfa4f8d25531433a566bb
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: b8bd0d26f8feff5c1db7bea5fd6c4f05d4f3e90e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879289"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228470"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET Web 应用程序并收集内存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用 Profiler 命令行检测动态编译的 ASP.NET Web 应用程序并收集内存数据](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line)。  
-  
 本主题介绍如何使用检测分析方法，通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集详细 .NET 内存分配和对象生存期数据。  
   
 > [!NOTE]

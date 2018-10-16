@@ -1,7 +1,7 @@
 ---
 title: 部署 ClickOnce 应用程序进行测试和生产服务器无需重新签名 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 384292be2f08eef453dba5623783ef8865107d54
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482962"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180214"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[部署 ClickOnce 应用程序的测试和生产服务器，而无需 Resigning](https://docs.microsoft.com/visualstudio/deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning)。  
-  
 本主题讨论 ClickOnce 在.NET Framework 版本 3.5，而无需重新签名或更改 ClickOnce 使从多个网络位置的 ClickOnce 应用程序的部署清单中引入的新功能。  
   
 > [!NOTE]

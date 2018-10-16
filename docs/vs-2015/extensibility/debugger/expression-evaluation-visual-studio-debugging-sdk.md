@@ -1,7 +1,7 @@
 ---
 title: 表达式计算 (Visual Studio 调试 SDK) |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 5044ced5-c18c-4534-b0bf-cc3e50cd57ac
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd5fb9ac88b2535c897978cdd63f9cf0716d53a1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 80e30f9a7579d511a6d2c1678d0980efdb7b8d2e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477983"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238038"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>表达式计算 (Visual Studio Debugging SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[表达式计算 (Visual Studio Debugging SDK)](https://docs.microsoft.com/visualstudio/extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk)。  
-  
 在中断模式下，IDE 必须能够对涉及的应用程序的多个变量的简单表达式求值。 若要完成此操作，调试引擎 (DE) 必须能够分析和计算表达式，用于输入到其中一个 IDE 的窗口。  
   
  使用创建表达式[IDebugExpressionContext2::ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法并被生成由[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)接口。  

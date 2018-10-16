@@ -1,14 +1,14 @@
 ---
 title: 调试器入门 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
 - vs-ide-debug
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -19,18 +19,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2269ceae72f620677f51af960f7fe164f7982412
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4642fa76a9891d07e927fa37650976180568f7a8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249946"
 ---
 # <a name="getting-started-with-the-debugger"></a>调试程序入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试器功能简介](https://docs.microsoft.com/visualstudio/debugger/debugger-feature-tour)。  
-  
 Visual Studio 调试器在任何语言环境下都易于使用。 下面我们将介绍如何调试一个简单的 C# 程序，但你也可以对使用 C++ 和 JavaScript 等其他语言的代码应用相同的步骤。  
   
 ##  <a name="BKMK_Start_debugging_a_VS_project"></a> 调试一个基本 C# 项目  

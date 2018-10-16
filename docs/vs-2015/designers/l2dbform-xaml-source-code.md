@@ -1,7 +1,7 @@
 ---
 title: L2DBForm.xaml 源代码 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e845250839ef2bdd23585cadd64588afd77eed43
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49207683"
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 源代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[L2DBForm.xaml 源代码](https://docs.microsoft.com/visualstudio/designers/l2dbform-xaml-source-code)。  
-  
-本主题包含并说明 [使用 LINQ to XML 的 WPF 数据绑定示例](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。  
+本主题包含并说明 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 源文件 L2DBForm.xaml。  
   
 ## <a name="overall-ui-structure"></a>总体 UI 结构  
  和典型的 WPF 项目一样，此文件包含一个父元素，该元素是一个与 <xref:System.Windows.Window> 命名空间中的派生类 `L2XDBFrom` 相关联的 `LinqToXmlDataBinding` XML 元素。  
@@ -250,7 +248,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
   
 ## <a name="see-also"></a>请参阅  
  [演练：LinqToXmlDataBinding 示例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
- [L2DBForm.xaml.cs 源代码](../designers/l2dbform-xaml-cs-source-code.md)
+ [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
 
 
 

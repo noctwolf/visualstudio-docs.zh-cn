@@ -1,7 +1,7 @@
 ---
 title: 旧版 API 中的文本缓冲区事件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 9be49e9f-1864-41c2-8a3c-f66895881341
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 799443f4674c48201a161dbbd02d525afdb3218c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c3db7d7a4b2c52e4b831078f789dea75c73b337
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481616"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218720"
 ---
 # <a name="text-buffer-events-in-the-legacy-api"></a>旧版 API 中的文本缓冲区事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版 API 中的文本缓冲区事件](https://docs.microsoft.com/visualstudio/extensibility/text-buffer-events-in-the-legacy-api)。  
-  
 文本缓冲区对象会发出多个不同的事件，您可以对不同的情况下作出响应。  
   
  当使用传统的 API 时，应以接收通知的文本缓冲区更改来实现以下接口。 显示文本缓冲区使用的接口`IConnectionPointContainer`接口上要接收通知的行的文本缓冲区更改从缓冲区。 有关详细信息，请参阅[如何： 使用旧 API 的文本缓冲区事件注册](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)。 情况下`IVsTextStreamEvents`或`IVsTextLinesEvents`接口，则返回的更改以任一一或或双三维坐标，分别。  

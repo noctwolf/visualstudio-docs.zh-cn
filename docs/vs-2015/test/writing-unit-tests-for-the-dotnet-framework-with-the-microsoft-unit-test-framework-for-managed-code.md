@@ -1,7 +1,7 @@
 ---
 title: 使用适用于托管代码的 Microsoft 单元测试框架编写 .NET Framework 的单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
 caps.latest.revision: 7
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ff3534a90e7d5924c2b11b6c9194b56ca76d451e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90fc60e0eb040572d84bfe86bd46f56e7f3491f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479299"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49247892"
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>用 Microsoft 适用于托管代码的单元测试框架编写 .NET Framework 的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[.NET Framework 的托管代码的 Microsoft 单元测试框架编写单元测试](https://docs.microsoft.com/visualstudio/test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code)。  
-  
 本节内容  
  [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: 验证数据集中 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 728c496548a195acb98e0b5082d862d6dc8db241
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482831"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279014"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[验证数据集中](https://docs.microsoft.com/visualstudio/data-tools/validate-data-in-datasets)。  
-  
   
 验证数据是输入到数据对象的值符合数据集的架构内的约束的确认过程。 验证过程还确认这些值都遵循已为你的应用程序建立的规则。 最好验证之前将更新发送到基础数据库的数据。 这将减少错误，以及潜在的应用程序和数据库之间的往返行程量。  
   

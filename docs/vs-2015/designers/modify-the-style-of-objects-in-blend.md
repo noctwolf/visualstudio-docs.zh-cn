@@ -1,7 +1,7 @@
 ---
 title: 修改 Blend 中对象的样式 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e6205eea283bec68a3fbbf5c95a5bac36fdbaee9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477872"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240144"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[修改在 Blend 中对象的样式](https://docs.microsoft.com/visualstudio/designers/modify-the-style-of-objects-in-blend)。  
-  
 自定义对象的最简单方法是在“属性”窗格中设置属性。  
   
  如果你希望重复使用设置或设置组，请创建可重复使用的资源。 这可以是样式、模板或如自定义颜色一样简单的对象。 还可以使控件基于其状态以不同方式出现。 例如，按钮在用户单击它时变为绿色。  

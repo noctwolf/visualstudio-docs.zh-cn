@@ -1,7 +1,7 @@
 ---
 title: 如何：将类拆分为分部类（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bbf355caf4a67e54a53f7447f813bf5870b9086
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6ae389e3bfe32e2e040da5bef3f41a51ff69555d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469832"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49245474"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>如何：将类拆分为分部类（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 将类拆分为分部类 （类设计器）](https://docs.microsoft.com/visualstudio/ide/how-to-split-a-class-into-partial-classes-class-designer)。  
-  
 可以通过使用 Visual Basic 中的 `Partial` 关键字或 Visual C# 中的 `partial` 关键字来划分类声明或多个声明中的结构。 可以根据需要在任意数量的不同源文件中或一个源文件中使用任意数量的分部声明。 但是，所有声明都必须在相同的程序集和相同的命名空间中。  
   
  分部类在以下几种情况下有用。 例如，在使用大型项目时，将类分隔到多个文件可以使多个程序员同时对其进行处理。 在使用 Visual Studio 生成的代码时，可以更改类，而无需重新创建源文件。 （Visual Studio 生成的代码的示例包括 Windows 窗体和 Web 服务包装器代码。）因此，无需修改 Visual Studio 创建的文件，就可以创建使用自动生成的类的代码。  

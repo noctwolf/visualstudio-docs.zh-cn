@@ -1,7 +1,7 @@
 ---
 title: 对锁定行为进行批注 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -38,18 +38,16 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f34eb22d56cc6a1e47e07229a5b3e922aee5c386
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 881fa2a0355c1524855008d508163a3012f95dff
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49187491"
 ---
 # <a name="annotating-locking-behavior"></a>对锁定行为进行批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[批注锁定行为](https://docs.microsoft.com/visualstudio/code-quality/annotating-locking-behavior)。  
-  
 若要避免多线程程序中的并发 Bug，请遵循适当的锁定规则并使用 SAL 批注。  
   
  并发 Bug 很难重现、诊断和调试，因为它们是非确定性的。 有关线程交错的推理是最困难的，如果设计包含多个线程的代码体，这会变得不切实际。 因此，最好在多线程程序中遵循锁定规则。 例如，在获取多个锁时遵守锁定顺序可以帮助避免死锁，在访问共享资源之前获取适当的保护锁有助于避免争用条件。  

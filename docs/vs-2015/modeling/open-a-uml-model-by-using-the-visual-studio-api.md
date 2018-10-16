@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio API 打开 UML 模型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b492f7c7bcb1c6b33ee7f07b1f054027057835aa
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478833"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292703"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 打开 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 Visual Studio API 打开 UML 模型](https://docs.microsoft.com/visualstudio/modeling/open-a-uml-model-by-using-the-visual-studio-api)。  
-  
 你还可以通过使用 API，在 Visual Studio 用户界面打开模型和关系图。  
   
  如果你只想读取程序代码中的模型而不使其对用户可见，你可以使用以下方法：  

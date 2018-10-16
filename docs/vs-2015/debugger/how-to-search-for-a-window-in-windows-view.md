@@ -1,7 +1,7 @@
 ---
 title: 如何： 搜索在 Windows 视图窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 043e3e92004eb5b0995bc285e90a138f4dc902f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9cd33d8c7414d4db989533475a328ca8abf2ffdb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49295056"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 搜索在 Windows 视图窗口](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-window-in-windows-view)。  
-  
 您可以使用其句柄、 标题、 类或其标题和类的组合作为搜索条件搜索 Windows 视图中的特定窗口。 此外可以指定搜索的初始传递方向。 在对话框中的字段将窗口树中显示所选的窗口的属性。  
   
  开头到第二个级别 (所有 windows 桌面的子级)，展开树，以便可以确定由其类名称和标题的桌面级别 windows。 一旦您选择了一个桌面级别窗口，您可以展开该级别以查找特定子窗口。  

@@ -1,7 +1,7 @@
 ---
 title: MSBuild 目标 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 68a596eaf744649047ae912e4b9aac00922e2360
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2eab4a6085ce6756d1b55b0669008cb745b82e28
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469840"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288673"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[MSBuild 目标](https://docs.microsoft.com/visualstudio/msbuild/msbuild-targets)。  
-  
   
 目标以特定的顺序将任务组合到一起，并允许生成过程分解为较小的单位。 例如，一个目标可能会删除输出目录中的所有文件以准备进行生成，而另一个目标可能会编译项目的输入并将它们置于该空目录中。 有关任务的详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)。  
   

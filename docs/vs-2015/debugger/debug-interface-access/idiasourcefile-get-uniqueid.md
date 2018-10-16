@@ -1,7 +1,7 @@
 ---
 title: 'Idiasourcefile:: Get_uniqueid |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 078fa2e6b44e0a48b5e828631ad59abdeb446856
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c99f2273b340fff5e4355d1aa3cb33359bbaf535
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471230"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49179915"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[idiasourcefile:: Get_uniqueid](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/idiasourcefile-get-uniqueid)。  
-  
 检索一个简单的整数密钥值，该值是唯一的此映像。  
   
 ## <a name="syntax"></a>语法  

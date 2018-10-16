@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建 WCF 工作流服务应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 22531f171b07493f69bcf017634d9c6d299de844
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8632d8cf942fe4a06f12d324fea1f6f567080981
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477174"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228431"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>如何：创建 WCF 工作流服务应用程序
 [!INCLUDE[indigo1](../includes/indigo1-md.md)] 工作流服务应用程序是在它们自身与客户端之间跨进程边界传递消息的分布式通信服务。 服务端服务协定的实现是通过 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 中的工作流活动，以类似于 .NET Framework 3.5 中的旧工作流服务的方式基于声明完成的。  

@@ -1,7 +1,7 @@
 ---
 title: 如何：重定位被检测二进制文件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3114ee88feefdbb409ed1a1e1ad025a18123c002
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6d0ddfb3cd52e212965ebf928bf087519f38b0bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482039"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49240976"
 ---
 # <a name="how-to-relocate-instrumented-binaries"></a>如何：重新指定检测后的二进制文件的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 重新定位检测的二进制文件](https://docs.microsoft.com/visualstudio/profiling/how-to-relocate-instrumented-binaries)。  
-  
 在检测期间，探测器将插入二进制文件来评估应用程序性能。 通过选择重定位已检测的二进制文件，将检测原始二进制文件的副本，并将其放在指定位置。 如果不想要探查器重命名原始的二进制文件，可以选择此选项。 如果没有重定位该二进制文件，则将覆盖该二进制文件的原始版本。  
   
  **要求**  

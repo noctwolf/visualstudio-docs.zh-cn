@@ -1,7 +1,7 @@
 ---
 title: 符号元素 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 1cda43d8-42a5-4b1b-a3c8-cf0401c3202f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d36bcf22d012d4543267d1b57d41567baf3e85b1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b436f200d6d3a1ef668967cf5dbb9cd934699976
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478591"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49283629"
 ---
 # <a name="symbols-element"></a>Symbols 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Symbols 元素](https://docs.microsoft.com/visualstudio/extensibility/symbols-element)。  
-  
 定义 Guid 并由其他 VSCT 元素的 Id。 对于非托管代码中，此信息通常来自所指定的标头文件[Extern 元素](../extensibility/extern-element.md)。 托管代码使用符号元素定义此信息的子元素。  
   
  如果从现有.cto 文件创建.vsct 文件，将作为符号元素的子级生成符号。 有关详细信息，请参阅[如何： 创建。从现有的 Vsct 文件。首席技术官文件](../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md)。  

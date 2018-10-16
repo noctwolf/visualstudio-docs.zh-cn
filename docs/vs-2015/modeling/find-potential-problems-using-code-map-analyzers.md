@@ -1,12 +1,12 @@
 ---
 title: 使用代码图分析器发现潜在问题 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemapanalyzers
 helpviewer_keywords:
@@ -18,18 +18,16 @@ caps.latest.revision: 13
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b15a6d95e2a64aa09d57cb4fba02ab0369be5799
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ccac7f869c0395839e2c63354558df0389ced36b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470100"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49204797"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用代码图分析器查找潜在问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[发现潜在的问题，使用代码映射分析器](https://docs.microsoft.com/visualstudio/modeling/find-potential-problems-using-code-map-analyzers)。  
-  
 在代码图上运行分析器以帮助识别可能过于复杂或者可能需要改进的代码。 例如，可以使用以下分析器：  
   
 |**查找所需代码**|**检查这些区域，以确定是否**|  

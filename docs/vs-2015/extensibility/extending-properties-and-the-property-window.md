@@ -1,7 +1,7 @@
 ---
 title: 扩展属性和属性窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ ms.assetid: 1e925025-3d21-4cdb-a917-78db7bb78fe9
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89643c136570434ac71a75bb7b69d21ce5ba1a4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 17967d1d124fa1607aa5415208cf589486f4d7eb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478194"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183841"
 ---
 # <a name="extending-properties-and-the-property-window"></a>扩展属性和属性窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[扩展属性和属性窗口](https://docs.microsoft.com/visualstudio/extensibility/extending-properties-and-the-property-window)。  
-  
 **属性**窗口用于查看和编辑的设计时属性和所选对象的事件。  
   
  当选择中的对象[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，该对象的公共属性显示在**属性**窗口。 有关详细信息，请参阅[属性窗口概述](../extensibility/internals/properties-window-overview.md)。  

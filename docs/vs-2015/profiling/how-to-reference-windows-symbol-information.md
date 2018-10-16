@@ -1,7 +1,7 @@
 ---
 title: 如何：引用 Windows 符号信息 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 385b9e4511c44c02a358eb88471cd8369971ed1c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d327847d20574f6b52886fe8895037d28fd209ca
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483918"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225415"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：引用 Windows 符号信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 引用 Windows 符号信息](https://docs.microsoft.com/visualstudio/profiling/how-to-reference-windows-symbol-information)。  
-  
 Visual Studio 分析工具使用符号 (.pdb) 文件来解析符号名称，例如，程序二进制文件中的函数名称。 可以按照以下步骤为本地计算机上的 Windows 版本自动下载和更新正确的 .pdb 文件。  
   
 > [!NOTE]

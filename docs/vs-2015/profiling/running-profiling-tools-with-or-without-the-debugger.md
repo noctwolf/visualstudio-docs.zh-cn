@@ -1,7 +1,7 @@
 ---
 title: 运行带或不带调试器的分析工具 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938d1dc3e257ad4737e5fd33d831feb0c16a81d6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dfc32400f926bd62c77431bcc448e4b78dedd026
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477295"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49301478"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>运行带或不带调试器的分析工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Running Profiling Tools With 或不带调试器](https://docs.microsoft.com/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger)。  
-  
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
   
 ## <a name="should-i-run-the-tool-with-or-without-the-debugger"></a>应在带还是不带调试器的情况下运行该工具？  

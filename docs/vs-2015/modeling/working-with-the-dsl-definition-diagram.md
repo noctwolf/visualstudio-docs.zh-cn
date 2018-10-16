@@ -1,7 +1,7 @@
 ---
 title: 使用 DSL 定义关系图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0874d5eff99b7e37807daee7115e66740d2661d8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1fc0dbc007dcb3e15891a4176fc5bdb96babbfa8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472363"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49208580"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定义图表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 DSL 定义关系图](https://docs.microsoft.com/visualstudio/modeling/working-with-the-dsl-definition-diagram)。  
-  
 关系图的[!INCLUDE[dsl](../includes/dsl-md.md)]定义是用于定义特定于域的语言的重要工具。 你可以将元素添加到域模型并定义关系图上的关系，也可以修改关系图的布局以使其更具可读性。  
   
 ## <a name="the-layout-of-the-diagram"></a>关系图的布局  

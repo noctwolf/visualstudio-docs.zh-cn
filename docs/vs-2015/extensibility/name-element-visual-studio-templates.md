@@ -1,7 +1,7 @@
 ---
 title: 命名元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8d7df6d5e3394cee3b105cdc7ddf1d691a5ecb9b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a099b222b3dd55a8629bf9eca45e9685ad465c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482477"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49270824"
 ---
 # <a name="name-element-visual-studio-templates"></a>Name 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Name 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/name-element-visual-studio-templates)。  
-  
 指定的模板的名称，如所示**新的项目**或**添加新项**对话框。  
   
  \<VSTemplate >  

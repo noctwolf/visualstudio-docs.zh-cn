@@ -1,7 +1,7 @@
 ---
 title: 如何： 启用复数化打开和关闭 （O-R 设计器） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 02fa8b50b28f967a0835f68e85d146ca1eea514b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1f4491f25a861b8556ae5018e526349d6a17187a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47492526"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279105"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 启用复数化打开和关闭 （O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 打开和关闭 （O-R 设计器） 启用复数化](https://docs.microsoft.com/visualstudio/data-tools/how-to-turn-pluralization-on-and-off-o-r-designer)。  
-  
   
 默认情况下，当您拖放以 s 或 ies 从结尾的数据库对象**服务器资源管理器**/**数据库资源管理器**拖到[LINQ to SQL 工具在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，生成的实体类的名称从复数形式更改为单数形式。 这样可以更准确地表示实例化的实体类映射到单个数据记录的事实。 例如，将 Customers 表添加到 [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]将声称名为 Customer 的实体类，因为该类将仅为一个客户保存数据。  
   

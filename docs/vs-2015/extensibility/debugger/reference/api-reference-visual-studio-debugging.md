@@ -1,7 +1,7 @@
 ---
 title: API 参考 （Visual Studio 调试） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7a4348e6e60c722d8116b682386785a8cfba6cde
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 979a6b999e34b5cec57e4a0d324f8c273fbe5dc2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478999"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49222077"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[API 参考 (Visual Studio Debugging)](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/api-reference-visual-studio-debugging)。  
-  
 参考部分包含的 API，一个指南，其中显示了语法和用法的所有 API 元素，概念性概述和具有多种类型的代码示例。 按以下类别按字母顺序排列的所有引用。  
   
  下表显示了常见`HRESULT`方法返回的值。  

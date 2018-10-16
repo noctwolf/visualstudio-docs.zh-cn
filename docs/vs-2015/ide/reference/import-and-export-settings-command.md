@@ -1,7 +1,7 @@
 ---
 title: “导入和导出设置”命令 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4a638686bb0ec111bf551cac0b38bb5d50b1774
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2556b814059a80f2b93d0220de27cdbd8c051ea9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471352"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49305560"
 ---
 # <a name="import-and-export-settings-command"></a>“导入和导出设置”命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[导入和导出设置命令](https://docs.microsoft.com/visualstudio/ide/reference/import-and-export-settings-command)。  
-  
   
 导入、导出或重置 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 设置。  
   

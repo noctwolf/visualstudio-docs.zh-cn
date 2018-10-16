@@ -1,7 +1,7 @@
 ---
 title: 将 Windows 窗体控件绑定到 Visual Studio 中的数据 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce8945fd535f92a15d510a56e9bc39fd178317f4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e63d20bc226abe0c0bdf4c77179a94b0d0e6212c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293665"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>将 Windows 窗体控件绑定到 Visual Studio 中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[绑定 Windows 窗体控件添加到 Visual Studio 中的数据](https://docs.microsoft.com/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)。  
-  
   
 通过将数据绑定到 Windows 窗体，可以向应用程序的用户显示数据。 若要创建这些数据绑定控件，可以将项从**数据源**窗口拖到 Visual Studio 中的 Windows 窗体设计器。 本主题介绍一些最常见的任务、 工具和创建数据绑定 Windows 窗体应用程序时涉及的类。  
   

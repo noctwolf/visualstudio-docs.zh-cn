@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务中的括号匹配 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3a2267805681b092c7a48537e72e5f0ca0b3ecb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7742b54b69cea8d1f814a4ac4fd8cc190dfe2b99
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265052"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧版语言服务中的大括号匹配
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务中的大括号匹配](https://docs.microsoft.com/visualstudio/extensibility/internals/brace-matching-in-a-legacy-language-service)。  
-  
 大括号匹配可帮助开发人员跟踪需要发生在一起，例如成对的圆括号和大括号的语言元素。 当开发人员输入一个右大括号时，左大括号突出显示。  
   
  你可以匹配两个或三个一起出现的元素，调用对和三元组。 三元组是三个一起出现的元素的集合。 例如，在 C#`foreach`语句构成三元组:"`foreach()`"，"`{`"，并"`}`"。 键入右大括号时，将突出显示所有三个元素。  

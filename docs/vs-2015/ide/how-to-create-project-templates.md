@@ -1,7 +1,7 @@
 ---
 title: 如何：创建项目模板 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e7e8efd905667c235d80d64e1c7ca7660281a9ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fb68a9902fc3adf9f2643b52e069cf182d9ca75a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477901"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49225499"
 ---
 # <a name="how-to-create-project-templates"></a>如何：创建项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建项目模板](https://docs.microsoft.com/visualstudio/ide/how-to-create-project-templates)。  
-  
 在此过程中，可以使用“导出模板”向导创建模板，将模板打包为 .zip 文件。 还可以使用导出模板向导扩展，或使用 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 中包含的模板创建 VSIX 文件格式的模板，改进部署，也可以手动创建模板。  
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>使用标准的导出模板向导创建自定义项目模板  

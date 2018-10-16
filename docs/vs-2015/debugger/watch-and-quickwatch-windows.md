@@ -1,7 +1,7 @@
 ---
 title: 监视窗口和快速监视 Windows |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -29,18 +29,16 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e15167169b8940d65eeca66aaf3871997300cd04
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e2a136647fc3ce8114b492e8f055efe0eb1a3889
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49173623"
 ---
 # <a name="watch-and-quickwatch-windows"></a>监视和快速监视窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[对 Visual Studio 中的变量设置监视](https://docs.microsoft.com/visualstudio/debugger/watch-and-quickwatch-windows)。  
-  
 可以使用**Watch** (**调试 / Windows / 监视 / 监视 （1、 2、 3、 4）**) 和**快速监视**(右键单击变量 /**调试 / 快速监视**) 在调试会话期间监视变量和表达式。  区别是“监视”  窗口可以显示多个变量，而“快速监视”  窗口一次仅显示单个变量。  
   
 ## <a name="observing-a-single-variable-with-quickwatch"></a>使用“快速监视”观察单个变量  

@@ -1,7 +1,7 @@
 ---
 title: DA0018：运行的 32 位应用程序达到了进程托管内存的限制 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe023f54e32932dc53f65acd702d928d65e8aa9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483259"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269576"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：运行的 32 位应用程序达到了进程托管内存的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[DA0018： 运行进程的 32 位应用程序托管内存的限制](https://docs.microsoft.com/visualstudio/profiling/da0018-32-bit-application-running-at-process-managed-memory-limits)。  
-  
 规则 Id |DA0018 |  
 |类别 |分析工具使用情况 |  
 |分析方法 |采样 |  

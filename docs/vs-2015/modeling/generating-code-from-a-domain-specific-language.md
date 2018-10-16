@@ -1,7 +1,7 @@
 ---
 title: 从域特定语言生成代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fbe7e40a277174eb556a61b50eb88279adebfb2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482093"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49231993"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从域特定语言生成代码](https://docs.microsoft.com/visualstudio/modeling/generating-code-from-a-domain-specific-language)。  
-  
 Microsoft[!INCLUDE[dsl](../includes/dsl-md.md)]提供了一种强大方法从模型中表示的数据生成代码、 文档、 配置文件和其他项目。 使用[!INCLUDE[dsl](../includes/dsl-md.md)]，可以创建一组类，表示数据，可以编写文本模板中的类名称和属性反映了该数据。  
   
  例如，Fabrikam 有客户名称和电子邮件地址的一个 XML 文件。 其开发人员创建一个模型中的客户是一个类，使用属性名称和电子邮件。 他们编写多个文本模板来处理数据，包括此代码段的 HTML 页的一部分生成的所有客户表：  

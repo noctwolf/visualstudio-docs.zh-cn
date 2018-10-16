@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用 ClickOnce 部署可在多个版本的.NET Framework 运行的应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c9ee766472adf215a29852f776b566997df2e28b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7731526b09ab3014b9f3256ee1f4e4d0dd653a34
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478570"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259048"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>如何：使用 ClickOnce 部署可在多个版本的 .NET Framework 上运行的应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用 ClickOnce 部署应用程序，可以运行在多个版本的.NET Framework 上](https://docs.microsoft.com/visualstudio/deployment/how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-dotnet-framework)。  
-  
 可以部署应用程序面向.NET Framework 的多个版本的使用 ClickOnce 部署技术。 这将要求您生成并更新应用程序和部署清单。  
   
 > [!NOTE]

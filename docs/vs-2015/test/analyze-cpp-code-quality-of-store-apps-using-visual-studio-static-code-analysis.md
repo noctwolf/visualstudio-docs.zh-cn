@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d7f85b85ed82478b99d80d6d82c169069a9ec72d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e3b077165cde14f02563d406c0461ef2fc0ab5f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49215093"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用的 C++ 代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 Visual Studio 静态代码分析应用商店应用程序分析 c + + 代码质量](https://docs.microsoft.com/visualstudio/test/analyze-cpp-code-quality-of-store-apps-using-visual-studio-static-code-analysis)。  
-  
 适用于 Windows 和 Windows Phone] (../Image/windows_and_phone_content.png"windows_and_phone_content")  
   
  Visual Studio Express 版本中的代码分析工具可检查代码中是否存在一组常见问题以及违反良好编程习惯的情况。 代码分析警告与编译器错误和警告不同，因为代码分析工具搜索的是虽然有效但仍会为你或使用你代码的其他人员带来问题的特定代码模式。 代码分析还可在代码中找到通过测试难以发现的缺陷。 在开发过程中定期运行代码分析工具可提高所编写的应用程序的质量。  

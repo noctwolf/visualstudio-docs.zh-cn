@@ -1,7 +1,7 @@
 ---
 title: 如何： 更新现有模板 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c5d091e58904cae058c5a2a5ade1b8ceec4c738
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa7c6f534756298006e07d287b118edfd4944717
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472063"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242269"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 更新现有模板](https://docs.microsoft.com/visualstudio/ide/how-to-update-existing-templates)。  
-  
 创建模板并将文件压缩为一个 .zip 文件后，你可能想要修改该模板。 可以通过以下两种方式完成此操作，即手动更改模板中的文件，或者从基于该模板的项目中导出新模板。  
   
 ## <a name="using-the-export-template-wizard-to-update-an-existing-template"></a>使用“导出模板”向导更新现有模板  

@@ -1,7 +1,7 @@
 ---
 title: 演练：创建内联任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 727c8cec7309952189558d2f4b7aebc8ec99738d
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 265a83444ce495452767b217a84072bfc17377d8
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880989"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250193"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>演练：创建内联任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 创建内联任务](https://docs.microsoft.com/visualstudio/msbuild/walkthrough-creating-an-inline-task)。  
-  
   
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 从 .NET Framework 版本 4 开始，可以在项目文件中创建内联任务。 无需创建单独的程序集来承载该任务。 有关详细信息，请参阅[内联任务](../msbuild/msbuild-inline-tasks.md)。  
   

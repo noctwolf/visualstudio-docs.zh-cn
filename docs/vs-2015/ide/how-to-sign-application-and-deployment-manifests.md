@@ -1,7 +1,7 @@
 ---
 title: 如何：对应用程序和部署清单进行签名 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ed26d1dec6251ef856ab9cad6b74bba2a4190b81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3162d65f8712c7db55be1bced9f815ecfaa866f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472021"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49299713"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：对应用程序和部署清单进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 对应用程序和部署清单](https://docs.microsoft.com/visualstudio/ide/how-to-sign-application-and-deployment-manifests)。  
-  
 如果想要通过使用 ClickOnce 部署发布应用程序，则必须通过验证码技术使用公钥/私钥对应用程序和部署清单进行签名。 可以使用 Windows 证书存储或密钥文件中的证书对清单进行签名。  
   
  有关 ClickOnce 部署的详细信息，请参阅 [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)。  

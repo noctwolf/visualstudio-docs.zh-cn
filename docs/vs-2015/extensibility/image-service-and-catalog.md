@@ -1,7 +1,7 @@
 ---
 title: 图像服务和目录 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b3079bada9b8d3e9a0b2644e4aaa3d9e3ee3bebe
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 847ac3b7ed956daf61a04c5891871c9182594877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477099"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49265208"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[映像服务和目录](https://docs.microsoft.com/visualstudio/extensibility/image-service-and-catalog)。  
-  
 此指南包含指导和采用 Visual Studio 映像服务和 Visual Studio 2015 中引入的映像目录的最佳实践。  
   
  获取为设备和用户的所选的主题显示图像，其中包括有关所显示的上下文的正确主题的最佳映像的开发人员可以在 Visual Studio 2015 中引入的映像服务。 采用图像服务有助于消除与资产维护、 HDPI 扩展和主题相关的主要难题。  

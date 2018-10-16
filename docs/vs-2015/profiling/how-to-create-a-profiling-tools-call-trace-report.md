@@ -1,7 +1,7 @@
 ---
 title: 如何：创建分析工具调用跟踪报告 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b643e0bf356e7ffb3bf6030ff46cf38ad4a1d98a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b3d54c0d9c053b8ea35b6f8000135b259f8323a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483934"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251896"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>如何：创建分析工具调用跟踪报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建分析工具调用跟踪报告](https://docs.microsoft.com/visualstudio/profiling/how-to-create-a-profiling-tools-call-trace-report)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具的调用跟踪报告将列出应用程序函数每个入口点和出口点的计时信息，以及该函数对其他函数的每次调用的计时信息。 仅当使用检测方法收集时，调用跟踪报告才可用于分析数据。  
   
 > [!NOTE]

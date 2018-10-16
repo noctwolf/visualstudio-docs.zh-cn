@@ -1,7 +1,7 @@
 ---
 title: TargetPlatformName 元素 （Visual Studio 模板） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,19 +13,17 @@ ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4a82a30c8df696e5666d81b18a8f60641debf828
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dea9ff1c1c27c88592a4a13c55ae06b07328d811
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479385"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49211713"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 元素（Visual Studio 模板）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[TargetPlatformName 元素 （Visual Studio 模板）](https://docs.microsoft.com/visualstudio/extensibility/targetplatformname-element-visual-studio-templates)。  
-  
-指定项目模板面向的平台。 此元素用于指定项目模板用于创建[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。  
+指定项目模板面向的平台。 此元素用于指定项目模板用于创建 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -60,7 +58,7 @@ ms.locfileid: "47479385"
  文本必须为 **Windows**。  
   
 ## <a name="example"></a>示例  
- 此示例指定项目模板面向[!INCLUDE[win8](../includes/win8-md.md)]或更高版本。  
+ 此示例指定项目模板面向 [!INCLUDE[win8](../includes/win8-md.md)] 或更高版本。  
   
 ```xml  
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">   

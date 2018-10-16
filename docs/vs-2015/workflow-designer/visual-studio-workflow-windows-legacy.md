@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 工作流 Windows （旧版） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: bd54e54965a6a6b936b24e1ca13151e3754d9390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 32e8b4cf8fcfbaddfa891ab881f25f89ca0285d7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470461"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273164"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio 工作流窗口（旧版）
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 提供的旧 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 可用于面向 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 或 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。 这一旧设计器是可用于创建工作流的可视化设计器。 您可以将活动从**工具箱**到设计图面上，并对其进行配置存在。 作为一个 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 编辑器窗口，它占用了由其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 编辑器窗口使用的主窗口区域。 工作流的名称显示在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口标题栏中。  

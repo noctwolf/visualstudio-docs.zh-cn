@@ -1,7 +1,7 @@
 ---
 title: CA1064： 异常应该是公共 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c35906c41a4c39557b2f72c83308b25cf650f676
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: b253b32f4cea3d6e578001424881cf6a4dcdea64
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47587725"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216263"
 ---
 # <a name="ca1064-exceptions-should-be-public"></a>CA1064：异常应该是公共的
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1064： 异常应该是公共](https://docs.microsoft.com/visualstudio/code-quality/ca1064-exceptions-should-be-public)。
-
 |||
 |-|-|
 |TypeName|ExceptionsShouldBePublic|

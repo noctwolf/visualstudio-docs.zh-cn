@@ -1,7 +1,7 @@
 ---
 title: 选择上下文对象 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3a74e86cb050dcbc1262bd3bf060f76b8bbc38f6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480441"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228652"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[选择上下文对象](https://docs.microsoft.com/visualstudio/extensibility/internals/selection-context-objects)。  
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]集成的开发环境 (IDE) 使用的全局选择上下文对象来确定在 IDE 中应显示的内容。 在 IDE 中的每个窗口可以有其自己选择上下文对象推送到全局选定内容上下文。 当该窗口具有焦点时，IDE 使用一个窗口中的值更新全局选定内容上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
   
  每个窗口框架或 IDE 中的站点有一个名为服务<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 由你放置在窗口框架的 VSPackage 创建的对象必须调用`QueryService`方法以获取一个指向<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>接口。  

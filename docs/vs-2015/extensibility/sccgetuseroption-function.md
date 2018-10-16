@@ -1,7 +1,7 @@
 ---
 title: SccGetUserOption 函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 567dbf987887d203a811a1dc965ecd4a472d5641
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4739b15925512bda60748f1aa644d169b770d8f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481239"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49182463"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[SccGetUserOption 函数](https://docs.microsoft.com/visualstudio/extensibility/sccgetuseroption-function)。  
-  
 此函数检索各种特定于用户的选项。  
   
 ## <a name="syntax"></a>语法  

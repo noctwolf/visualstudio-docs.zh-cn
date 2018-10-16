@@ -1,7 +1,7 @@
 ---
 title: 实现自定义类别和显示项 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c47bc8bc4cae609ad378dabaf64f239b7aa47c6
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4a9f18330060888527466c29f911a37ce29ce46
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470567"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218668"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>实现自定义类别和显示项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现自定义类别和显示项](https://docs.microsoft.com/visualstudio/extensibility/implementing-custom-categories-and-display-items)。  
-  
 VSPackage 可以提供控件的字体和颜色对其文本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]通过自定义类别和显示项的集成的开发环境 (IDE)。  
   
  自定义类别和显示项位于**字体和颜色**属性页。 若要打开**字体和颜色**属性页上，在**工具**菜单中，单击**选项**。 展开**环境**，然后单击**字体和颜色**。  

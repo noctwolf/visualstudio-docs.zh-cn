@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续对话框的 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f3e2dc09bdd40902f934e6f29067f4cb88cbbe48
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5dcb10d5703926fd862060b716e9f2203bfadd45
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250466"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[编辑并继续对话框的](https://docs.microsoft.com/visualstudio/debugger/edit-and-continue-dialog-box)。  
-  
 仅限本机） 具有进行调试时编辑代码时，会显示此对话框并**编辑并继续**识别它可以应用代码更改。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。  
   
  **永远不会显示此对话框**  

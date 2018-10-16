@@ -1,7 +1,7 @@
 ---
 title: 测量复杂性和可维护性的托管代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 062ac6f8c9610c8b8e877c3d975fb1f4b6eef4e1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5b83ab0627685d599d0866d789c18bee8d08659a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471016"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49214211"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>测量托管代码的复杂性和可维护性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测量复杂性和托管代码可维护性](https://docs.microsoft.com/visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code)。  
-  
 现代软件应用程序的复杂性增加了使代码保持可靠、 可维护的难度也增加。 近年来，许多软件度量值，称为代码度量值在制定时，可帮助开发人员了解其代码需要返工或进一步测试。  
   
  开发人员可以使用[!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]生成度量值的复杂性和可维护性的托管代码的代码度量数据。 可以为整个解决方案或单个项目生成代码度量数据。  

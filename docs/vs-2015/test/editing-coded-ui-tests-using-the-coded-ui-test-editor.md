@@ -1,7 +1,7 @@
 ---
 title: 使用编码的 UI 测试编辑器编辑编码的 UI 测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2d43cef0a6603b1085306a64bb385a520f2b5637
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477200"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49242718"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用编码的 UI 测试编辑器编辑编码 UI 测试](https://docs.microsoft.com/visualstudio/test/editing-coded-ui-tests-using-the-coded-ui-test-editor)。  
-  
 通过编码的 UI 测试编辑器，可轻松修改编码的 UI 测试。 使用编码的 UI 测试编辑器，可以查找、查看和编辑测试方法和 UI 操作的属性。 此外，你还可以使用 UI 控件图查看和编辑其对应的控件。  
   
  **要求**  
@@ -82,7 +80,7 @@ ms.locfileid: "47477200"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，是否服务器不可用，并且必须与在 Web 浏览器相关联的 UI 操作，它指示**转到 Web 页 'http://Contoso1/default.aspx'**，你可以将 URL 更改为`‘ http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 'http://Contoso1/default.aspx'”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  
@@ -125,7 +123,7 @@ ms.locfileid: "47477200"
  拆分方法完成后，通过选择 **工具栏上的“保存”**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，可将所做更改保存到 UIMap.Designer 文件。  
   
  *我应该知道哪些其他内容？*  
- **重大问题**  
+ **重要事项**  
   
 -   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 拆分方法时，如果仍希望包括这些 UI 操作，必须将调用现有方法的任意代码修改为还可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。  
   
@@ -149,7 +147,7 @@ ms.locfileid: "47477200"
  移动方法后，通过选择 **工具栏上的“保存”**[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ，可将所做更改保存到 UIMap.Designer 文件。  
   
  *我应该知道哪些其他内容？*  
- **重大问题**  
+ **重要事项**  
   
 -   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 一旦移动了方法，便无法再使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
   
@@ -167,7 +165,7 @@ ms.locfileid: "47477200"
  在“UI 控件图”  窗格中，选择你想要在与测试关联的应用程序中查找的控件。 接下来，打开该控件的快捷菜单，然后选择“查找 UI 控件” 。 在受测应用程序中，为该控件指定了一个蓝色边框。  
   
  *我应该知道哪些其他内容？*  
- **重大问题**  
+ **重要事项**  
   
 -   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 查找 UI 控件之前，请务必确认与测试相关联的应用是否正在运行。  
   

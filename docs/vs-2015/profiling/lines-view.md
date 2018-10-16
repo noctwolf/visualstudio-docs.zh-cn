@@ -1,7 +1,7 @@
 ---
 title: “行”视图 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 975b5e7386b69e17366c48e2c7dab7c974c49689
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fdf3249974f2e04cc3794c3437b0d31cef7b9ef9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483311"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205124"
 ---
 # <a name="lines-view"></a>“行”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[行视图](https://docs.microsoft.com/visualstudio/profiling/lines-view)。  
-  
 “行”视图仅适用于使用采样方法收集的探查器数据， 不适用于使用检测方法收集的数据。  
   
  对于采样分析数据，“行”视图标识在收集样本时直接执行的函数中的语句。 对于 .NET 内存数据，“行”视图标识分配内存的语句。  

@@ -1,7 +1,7 @@
 ---
 title: 来自资源的清单 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -10,18 +10,16 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fba4d5ca7611bab24488ed5c48247241a2b74bf1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b18e81cfa265f79e05f1cfb1dcfbca1f348b341d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477904"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252429"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[清单资源的](https://docs.microsoft.com/visualstudio/extensibility/internals/manifest-from-resources)。  
-  
 从资源工具清单是采用一系列图像资源 （.png 或.xaml 文件），并生成.imagemanifest 文件，以允许与 Visual Studio 映像服务一起使用这些映像的控制台应用程序。 此外，此工具可用于将图像添加到现有.imagemanifest。 此工具可用于添加到 Visual Studio 扩展的映像支持高 DPI 和主题。 生成的.imagemanifest 文件应包含在和部署 Visual Studio 扩展 (.vsix) 的一部分。  
   
 ## <a name="how-to-use-the-tool"></a>如何使用该工具  

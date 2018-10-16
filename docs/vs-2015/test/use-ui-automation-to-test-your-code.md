@@ -1,7 +1,7 @@
 ---
 title: 使用 UI 自动化来测试代码 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 92668aad54a032ccdbda2242ffcd132b356ea331
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3f98a3b2883f4b0e6e3ade0c0ca8f39f4d7efdf1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478772"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49221723"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 UI 自动化来测试代码](https://docs.microsoft.com/visualstudio/test/use-ui-automation-to-test-your-code)。  
-  
 通过应用程序的用户界面 (UI) 来操作该应用程序的自动测试称为编码的 UI 测试 (CUIT)。 这些测试包括对 UI 控件的功能测试。 它们使你可以验证整个应用程序（包括其用户界面）是否正常运行。 编码的 UI 测试对于在用户界面中存在验证或其他逻辑（例如在网页中）的情况特别有用。 它们也经常用于自动化现有的手动测试。  
   
  如下图所示，一种典型的开发体验可能是这样一种情况：最初，你只需建立自己的应用程序（F5），并通过单击 UI 控件来验证一切是否运行正常。 你可能会决定创建一个编码的测试，这样就不需要继续手动测试应用程序。 根据在应用程序中进行测试的特定功能，你可以针对任何一个功能测试或者针对可能会或可能不会包括 UI 级别测试的集成测试编写代码。 如果你只想直接访问某些业务逻辑，则可以编写单元测试代码。 然而，在特定情况下，在应用程序中包括各种 UI 控件的测试将是有益的。 编码的 UI 测试可以自动化初始 (F5) 方案，以便验证代码改动不会影响你的应用程序的功能。  

@@ -1,7 +1,7 @@
 ---
 title: 注册项目类型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 336658e0a216f7fc24435715bf978ce5badefe5c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483660"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271773"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[注册项目类型](https://docs.microsoft.com/visualstudio/extensibility/internals/registering-a-project-type)。  
-  
 在创建新项目类型时，必须创建注册表项，使[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]来识别和处理您的项目类型。 您通常使用注册表脚本 (.rgs) 文件创建这些注册表项。  
   
  在下面的示例中，从注册表语句提供默认路径和数据 （如果适用） 后, 跟的表包含每个语句的注册表脚本中的条目。 表提供了脚本条目和语句的附加信息。  

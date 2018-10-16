@@ -1,7 +1,7 @@
 ---
 title: 测试区域 2： 获取从源代码管理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d30b4a246085fe3a1339e057e516a9a727af1cb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 3bb489c33a39e41ec286678f4670cfba2776ef97
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480615"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284175"
 ---
 # <a name="test-area-2-get-from-source-control"></a>测试区域 2：从源代码管理获取
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试区域 2： 获取从源代码管理](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-2-get-from-source-control)。  
-  
 此测试部分覆盖了用于从通过 Get 命令的版本存储区中检索项的测试用例。 可以应用这些测试用例，对本地和 Web 项目。  
   
 ## <a name="command-menu-access"></a>命令菜单访问  

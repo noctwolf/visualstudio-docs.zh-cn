@@ -1,7 +1,7 @@
 ---
 title: Windows 视图 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd40259af773e268a8786f370591d5d0a474b05e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4622e268aaaf76a2968a2bc6ef67ead7b0c45b5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484463"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49261685"
 ---
 # <a name="windows-view"></a>窗口视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[Windows 视图](https://docs.microsoft.com/visualstudio/debugger/windows-view)。  
-  
 当你首次打开 Spy + + 时，Windows 视图将显示在系统中的所有窗口和控件树。 显示的窗口句柄和类名。 当前桌面窗口是树的顶部。 所有其他窗口是在桌面的子级，并列出根据标准的窗口层次结构。 在下方其父项缩进的可扩展列表中显示同级窗口。  
   
  下图显示了典型的 Spy + + Windows 视图，以及扩展的顶级节点。  

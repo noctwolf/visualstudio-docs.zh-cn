@@ -1,7 +1,7 @@
 ---
 title: 如何：创建多文件项模板 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: de6d2fd4decc4d71fce1fe4f417f429c837deb7f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477161"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49286788"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建多文件项模板](https://docs.microsoft.com/visualstudio/ide/how-to-create-multi-file-item-templates)。  
-  
 项模板仅能指定一个项，但有时该项由多个文件组成。 例如，适用于 Visual Basic 的 Windows 窗体项模板需要下列三个文件：  
   
 -   包含用于窗体的代码的 .vb 文件。  

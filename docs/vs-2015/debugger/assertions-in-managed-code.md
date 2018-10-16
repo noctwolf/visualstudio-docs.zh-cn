@@ -1,7 +1,7 @@
 ---
 title: 托管代码中的断言 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -31,19 +31,17 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 08cdbcde693655997fd980c018935a2b1c6df768
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477612"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49219110"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[托管代码中的断言](https://docs.microsoft.com/visualstudio/debugger/assertions-in-managed-code)。  
-  
-断言（或 `Assert` 语句）测试您指定为 `Assert` 语句的参数的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
+断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [在 System.Diagnostics Namespace 中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
@@ -182,7 +180,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );   
 ```  
   
- 第二个和第三个自变量（如果有）必须是字符串。 如果调用带有两个或三个参数的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个参数为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29?displayProperty=fullName>：  
+ 第二个和第三个自变量（如果有）必须是字符串。 如果调用带有两个或三个自变量的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个自变量为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%2CSystem.String%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%2CSystem.String%29?displayProperty=fullName>：  
   
 ```vb  
 Debug.Assert(stacksize > 0, "Out of stack space")  

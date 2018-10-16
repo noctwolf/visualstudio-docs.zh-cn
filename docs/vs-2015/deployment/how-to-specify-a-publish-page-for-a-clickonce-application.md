@@ -1,7 +1,7 @@
 ---
 title: 如何： 指定 ClickOnce 应用程序的发布页 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -23,18 +23,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: c1aeb81c6430e8ee4719565dd52c7e404c860939
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c10033f7e3f3a4336177c8c66721bd6b79ba4c71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479654"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49196685"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>如何：指定 ClickOnce 应用程序的发布页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 指定 ClickOnce 应用程序的发布页](https://docs.microsoft.com/visualstudio/deployment/how-to-specify-a-publish-page-for-a-clickonce-application)。  
-  
 发布时[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序，生成默认网页 (publish.htm) 并将其随应用程序一起发布。 此页包含的应用程序、 安装应用程序和/或任何系统必备组件的链接和帮助主题描述的链接名称[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]。 **发布页面**为你的项目的属性，可指定的 Web 页面的名称在[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序。  
   
  后指定发布页下, 一次发布时，它会复制到发布位置;它不会再次发布如果被覆盖。 如果你想要自定义页面的外观，就可以做到而无需担心丢失所做的更改。 有关详细信息，请参阅[如何： 自定义 ClickOnce 默认网页](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)。  

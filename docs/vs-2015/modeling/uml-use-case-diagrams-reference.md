@@ -1,7 +1,7 @@
 ---
 title: UML 用例图： 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2bc0d23a1404925183af00ab710a422639e51654
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9fbdf85b3177b88e1a7e97f3cbcd4f901961958d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480018"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49256303"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>UML 用例图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 用例图： 参考](https://docs.microsoft.com/visualstudio/modeling/uml-use-case-diagrams-reference)。  
-  
 在 Visual Studio 中，*用例图*总结了你的应用程序或系统中，使用者和他们可以使用它做什么。 若要创建 UML 用例图，在**体系结构**菜单上，单击**新建 UML 或层关系图**。  
   
  用例图充当用户要求说明的焦点。 它描述要求、用户和主要组件之间的关系。 它不详细描述要求；这些要求可以在单独的关系图或可链接到每个用例的文档中进行描述。 用例图可以如何帮助你了解、 讨论和传达用户的需求的信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  

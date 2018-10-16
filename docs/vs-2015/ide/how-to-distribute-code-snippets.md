@@ -1,7 +1,7 @@
 ---
 title: 如何：分发代码片段 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bda2aa5e7639b951b0df6bb83ff2d50fd4331e7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 14dea3842289b626b79d8dc7e294ba5f335d0351
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471119"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49185700"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 分发代码片段](https://docs.microsoft.com/visualstudio/ide/how-to-distribute-code-snippets)。  
-  
 你可以只向朋友提供代码片段，然后让他们使用代码片段管理器在自己的计算机上安装代码片段。 但是，如果你有若干代码片段要分发或者希望进行范围更广泛的分发，则可以将代码片段文件包含到 Visual Studio 扩展中，用户可以安装该扩展。  
   
  要创建 Visual Studio 扩展，你必须安装 Visual Studio SDK。 查找与在 Visual Studio 安装匹配的 vssdk 版本[Visual Studio 2015 下载](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx)。  

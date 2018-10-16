@@ -1,7 +1,7 @@
 ---
 title: 旧版语言服务接口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e68b9b5273d78d35086369f00106b1ebbde4a8ea
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469817"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249205"
 ---
 # <a name="legacy-language-service-interfaces"></a>旧版语言服务接口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[旧版语言服务接口](https://docs.microsoft.com/visualstudio/extensibility/internals/legacy-language-service-interfaces)。  
-  
 对于任何特定的编程语言，可以有语言服务的一个实例一次。 但是，单一语言服务可以提供多个编辑器。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 不会将语言服务关联的任何特定的编辑器。 因此，当请求的语言服务操作时，必须作为参数确定适当的编辑器。  
@@ -43,7 +41,7 @@ ms.locfileid: "47469817"
   
 -   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock>（可选）  
+-   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> （可选）  
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口必须实现所有的语言服务。 它提供有关你的语言服务，如语言，与语言服务，以及如何检索着色器关联的文件扩展名的本地化名称的信息。  
   

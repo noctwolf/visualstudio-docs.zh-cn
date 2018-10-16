@@ -1,7 +1,7 @@
 ---
 title: “工具箱”->“HTML”选项卡 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52180c730e6d7a03da549595ab658339f1a2d44c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 31ee75c419870d9047b3892c668c5e4665850654
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483930"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292066"
 ---
 # <a name="toolbox-html-tab"></a>工具箱，“HTML”选项卡
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[工具箱中，HTML 选项卡](https://docs.microsoft.com/visualstudio/ide/reference/toolbox-html-tab)。  
-  
   
 “工具箱”的“HTML”选项卡提供可用于网页和 Web 窗体的组件。 若要查看此选项卡，首先在 HTML 设计器中打开要编辑的文档。 在“视图”菜单上，单击“工具箱”，然后单击“工具箱”的“HTML”选项卡。  
   

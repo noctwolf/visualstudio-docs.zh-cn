@@ -1,7 +1,7 @@
 ---
 title: 模板策略和属性窗口 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 1d8019d3-5e57-47ba-b358-526b0796a63b
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9f8b2085818c539fe0e751a63562496363b43555
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 56ba04319023c60edca1e295d07d864e959f5f7f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483324"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49236920"
 ---
 # <a name="template-policy-and-the-properties-window"></a>模板策略和属性窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模板策略和属性窗口](https://docs.microsoft.com/visualstudio/extensibility/internals/template-policy-and-the-properties-window)。  
-  
 当一个项目，包含在企业级模板项目时，该企业级模板项目可以强制执行策略。 模板策略将成为一个约束系统，可用于设置属性的默认值、 隐藏属性、 添加属性，依次类推。  
   
  使用模板策略来控制显示的信息中**属性**窗口中是不同于实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing> 处理在组件级别的对象属性，而模板策略可用于限制在解决方案或项目级别的对象属性。 换而言之  

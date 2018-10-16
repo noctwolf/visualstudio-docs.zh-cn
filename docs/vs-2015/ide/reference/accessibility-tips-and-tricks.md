@@ -1,7 +1,7 @@
 ---
 title: 辅助功能提示和技巧 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39f12a7f895d4bd1a625b22dee1fa3465a625bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f4fe4f45f6c858ede7bebc7cbbf3a5e734130000
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482956"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49241015"
 ---
 # <a name="accessibility-tips-and-tricks"></a>辅助功能提示和技巧
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[辅助功能提示和技巧](https://docs.microsoft.com/visualstudio/ide/reference/accessibility-tips-and-tricks)。  
-  
   
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 包含一些内置的辅助功能，可帮助用户轻松地操作键盘和使用屏幕阅读器或其他辅助技术设备。 本主题包括关于优化 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 辅助功能的一些建议，以及一些有用的快捷组合键。  
   

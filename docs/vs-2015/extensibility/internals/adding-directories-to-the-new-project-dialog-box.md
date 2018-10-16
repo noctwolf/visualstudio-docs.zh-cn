@@ -1,7 +1,7 @@
 ---
 title: 将目录添加到新建项目对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 53b328f5-20bb-49a3-bf9e-1818f4fbdf50
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e22f0566ddde7bfd795bb01141deabbecd532a19
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fd99b6a58bb5203e7e0dfd7df95494cb258c9228
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482806"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190484"
 ---
 # <a name="adding-directories-to-the-new-project-dialog-box"></a>将目录添加到“新建项目”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[添加到新建项目对话框的目录](https://docs.microsoft.com/visualstudio/extensibility/internals/adding-directories-to-the-new-project-dialog-box)。  
-  
 在创建新的项目类型时，你还可以注册中的新目录**新的项目**对话框来显示它们用于作为模板。 下面的代码示例说明如何注册一个新目录，也称为节点。 在示例中，会注册 VSPackage CLSID_Package 公开的模板。 因此，左侧和右侧的**新的项目**对话框提供了添加的节点，由 Folder_Label_ResID 资源的名称。 从 VSPackage 附属 DLL 中加载此资源。  
   
  **文件夹**值表示 Folder_Label_ResID 节点显示在其下的文件夹的 GUID。 在示例中，GUID 表示**其他项目**中的文件夹**项目类型**窗格**新项目**对话框。 如果**其他项目**值不存在，标签将置于最高级别。  

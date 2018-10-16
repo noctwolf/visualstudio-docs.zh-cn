@@ -1,7 +1,7 @@
 ---
 title: 如何： 搜索线程视图中的线程 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 071b32a6f8947289d12ad8a402a316b1d174f65f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483127"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49277441"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 搜索线程视图中的线程](https://docs.microsoft.com/visualstudio/debugger/how-to-search-for-a-thread-in-threads-view)。  
-  
 可以通过将其线程 ID 或模块字符串用作搜索条件来搜索特定线程在线程视图中。 此外可以指定搜索的初始传递方向。 在对话框中的字段将线程树中显示所选线程的属性。  
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>若要搜索的线程视图中的线程  

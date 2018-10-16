@@ -1,7 +1,7 @@
 ---
 title: 开发旧版语言服务 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c77ec89cb7c9e2b62bc31dce0763ea5fac419e23
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 253bd334abd15fc19b1937c7c2c096ba026ad882
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476661"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49172141"
 ---
 # <a name="developing-a-legacy-language-service"></a>开发旧版语言服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[开发旧版语言服务](https://docs.microsoft.com/visualstudio/extensibility/internals/developing-a-legacy-language-service)。  
-  
 此部分链接到主题可帮助您创建旧版语言服务。  
   
  旧版语言服务实现 VSPackage 的一部分，但实现语言服务功能的较新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅[编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。  

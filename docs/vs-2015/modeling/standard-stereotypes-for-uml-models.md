@@ -1,7 +1,7 @@
 ---
 title: UML 模型的标准构造型 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3e5cabed5b2b75d9a97c74dd58d87ea387df8f8e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c38ad14fa44d2f537f9622d7746e534f8dd41ea0
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478377"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49212155"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>UML 模型的标准构造型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[UML 模型的标准构造型](https://docs.microsoft.com/visualstudio/modeling/standard-stereotypes-for-uml-models)。  
-  
 你可以向 UML 模型元素添加构造型，为读取器或计算机处理提供附加信息。 构造型在配置文件中定义，每个配置文件提供一组构造型。 Visual Studio 随附若干配置文件。 你还可以定义自己的配置文件，以包含自己的构造型。 有关详细信息，请参阅[定义用于扩展 UML 的配置文件](../modeling/define-a-profile-to-extend-uml.md)。  
   
  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  

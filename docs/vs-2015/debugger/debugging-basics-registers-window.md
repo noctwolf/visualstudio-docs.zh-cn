@@ -1,7 +1,7 @@
 ---
 title: '调试基础知识: 寄存器窗口 |Microsoft Docs'
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 201f9b1401889aacfbf748962d472cb4323ec0bb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: fa204726632f55ad6aa1b79e0b9d071864a5dcaa
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472067"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210296"
 ---
 # <a name="debugging-basics-registers-window"></a>调试基础知识：“寄存器”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试基础知识： 寄存器窗口](https://docs.microsoft.com/visualstudio/debugger/debugging-basics-registers-window)。  
-  
 **注册**窗口才中启用了地址级调试**选项**对话框中，**调试**节点。  
   
  寄存器是处理器（CPU）中的特殊区域，用于存储处理器需要当前处理的少量数据。 编译或解释源代码时会生成一些指令，这些指令根据需要将数据从内存移动到寄存器或反之。 相对于访问内存数据，访问寄存器数据非常快。那些允许处理器将数据保留在寄存器并多次访问的代码，比起那些需要处理器不断加载和卸载寄存器的代码执行速度快得多。 为了方便编译器将数据保存在寄存器中并实现其他优化，应避免使用全局变量而尽可能地依靠局部变量。 称以此方式编写的代码具有良好的引用局部性。 在某些语言中，如 C/C++ 中，程序员可以声明寄存器变量，它告诉编译器在所有时间尽可能地将该变量保留在寄存器中。 有关详细信息，请参阅[Register 关键字](http://msdn.microsoft.com/en-us/5b66905a-2f7f-4918-bb55-5e66d4bc50f9)。  

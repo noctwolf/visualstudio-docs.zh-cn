@@ -1,7 +1,7 @@
 ---
 title: 将 UML 关系图导出至图像文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 72df20d9d696d6a7febc7931e7a1e342a07632a7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 93972dfda37b47c3d8b7ae25cfdf8e69578af1ed
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49228353"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>将 UML 关系图导出至图像文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[导出 UML 图添加到图像文件](https://docs.microsoft.com/visualstudio/modeling/export-uml-diagrams-to-image-files)。  
-  
 您可以导出 UML 文档从[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]为程序控制下的图像。 例如，你可能希望将此操作作为自动文档生成的一部分加以执行。  
   
  如果想要手动将文档导出为图像，则可以将一个关系图中的形状复制并粘贴到诸如 Word 这样的其他程序中。 还可以将文档打印为 XPS 格式。 有关详细信息，请参阅[将关系图导出为图像](../modeling/export-diagrams-as-images.md)。  

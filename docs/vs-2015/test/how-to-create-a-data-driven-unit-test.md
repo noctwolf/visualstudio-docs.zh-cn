@@ -1,7 +1,7 @@
 ---
 title: 如何：创建数据驱动的单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1b5f0fea9712d1ba62aa8965b4d4a2e7d7d0e230
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477077"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177666"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 创建数据驱动的单元测试](https://docs.microsoft.com/visualstudio/test/how-to-create-a-data-driven-unit-test)。  
-  
 将 Microsoft 单元测试框架用于托管代码，可以设置单元测试方法从数据源中检索测试方法中使用的值。 针对数据源中的每一行连续运行此方法，这样就可以使用一种方法轻松地测试各种输入。  
   
  本主题包含以下各节：  

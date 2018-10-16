@@ -1,7 +1,7 @@
 ---
 title: 从命令行分析独立应用程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3b261ab2da3ee405db46d8c18e3d41771f1ae5e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0eb4f54c562ea9812c2196c53775b0acd872f877
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472179"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49252206"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>从命令行分析独立应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[独立应用程序的命令行分析](https://docs.microsoft.com/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)。  
-  
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具收集独立（客户端）应用程序的性能数据的步骤和选项。  
   
 ## <a name="common-tasks"></a>常规任务  

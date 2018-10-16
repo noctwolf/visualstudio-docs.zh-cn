@@ -1,7 +1,7 @@
 ---
 title: 调试 ASP.NET 和 AJAX 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,18 +24,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f81ca66b7f7d4dde596b465211cb92cec5e695ca
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f5943b75513394b44d88dfcfa496e56dad267171
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482531"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49205200"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>调试 ASP.NET 和 AJAX 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试 ASP.NET 和 AJAX 应用程序](https://docs.microsoft.com/visualstudio/debugger/debugging-aspnet-and-ajax-applications)。  
-  
 调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序类似于调试 Windows 窗体或任何其他 Windows 应用程序，因为这两种应用程序都涉及到控件和事件。 但是，Web 应用程序与 Windows 应用程序之间还有一些基本差异：  
   
 -   在 Web 应用程序中跟踪状态更为复杂。  
@@ -53,7 +51,7 @@ ms.locfileid: "47482531"
  [管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)  
  说明调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 异常时必须启用“仅我的代码”的原因。  
   
- [调试和跟踪 Ajax 应用程序概述](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  讨论可帮助你调试 AJAX 代码的一些方法和工具。  
   
  [IntelliTrace](../debugger/intellitrace.md)  

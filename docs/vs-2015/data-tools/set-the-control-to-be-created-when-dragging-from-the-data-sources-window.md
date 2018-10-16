@@ -1,7 +1,7 @@
 ---
 title: 设置从数据源窗口中拖动时创建的控件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d869f226206923a6e45646611b715786bfc5995
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477542"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49293678"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[设置从数据源窗口中拖动时创建的控件](https://docs.microsoft.com/visualstudio/data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window)。  
-  
   
 您可以通过将项从创建数据绑定控件**数据源**窗口拖到 WPF 设计器或 Windows 窗体设计器。 中的每项**数据源**窗口具有时将其拖到设计器中创建一个默认控件。 但是，您可以选择创建一个不同的控件。  
   

@@ -1,7 +1,7 @@
 ---
 title: “资源争用”视图 - 争用数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b3f18cf1131e61ba88832d59e0e77f462c088bec
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c6db867b582c4d1f5b0722d085e8a2eac48d182f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482990"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49253014"
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[资源争用视图-争用数据](https://docs.microsoft.com/visualstudio/profiling/resource-contentions-view-contention-data)。  
-  
 “资源争用”视图列出作为争用事件源的资源的争用数据。 如果由于另一个线程中的函数已获取对资源的独占访问权限，因此线程中的函数被迫等待获取对资源的访问权限，则会发生争用事件。 每个资源都是显示争用事件中产生的函数执行路径的调用树的根节点。  
   
 ## <a name="data-values"></a>数据值  

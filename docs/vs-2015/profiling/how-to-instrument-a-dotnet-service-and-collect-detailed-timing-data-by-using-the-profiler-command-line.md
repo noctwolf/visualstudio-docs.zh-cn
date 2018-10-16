@@ -1,7 +1,7 @@
 ---
 title: 如何：使用探查器命令行检测 .NET 服务和收集详细计时数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 22c0a9944c61ea03b699539b50116bd48e804bd2
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 2593dd83763d1ebc373052b0fb05649af75655dd
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48879403"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49191381"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET 服务和收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 使用 Profiler 命令行检测.NET 服务和收集详细计时数据](https://docs.microsoft.com/visualstudio/profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line)。  
-  
 本主题介绍如何使用 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 分析工具命令行工具检测 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 服务和收集详细计时数据。  
   
 > [!NOTE]

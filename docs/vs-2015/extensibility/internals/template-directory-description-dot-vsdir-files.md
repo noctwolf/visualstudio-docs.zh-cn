@@ -1,7 +1,7 @@
 ---
 title: 模板目录说明 (。Vsdir) 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b0d4281201c0aa7d699deb5c1d2d9ae1b183fd76
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 733f59b4498ccec80b1223c87e32de0fab2ded69
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483764"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201965"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[模板目录说明 (。Vsdir) 文件](https://docs.microsoft.com/visualstudio/extensibility/internals/template-directory-description-dot-vsdir-files)。  
-  
 模板目录说明文件 (.vsdir) 是使集成的开发环境 (IDE) 以显示文件夹、 向导.vsz 文件和都与你的项目对话框中的模板文件的文本文件。 内容包括每个文件或文件夹的一条记录。 引用位置中的所有.vsdir 文件进行都合并，尽管只有一个.vsdir 文件通常用于描述多个文件夹、 向导、 或模板文件。  
   
  文件夹 （子目录），用于在.vsdir 文件，而是.vsdir 文件本身中引用的文件位于同一目录中上。 IDE 运行向导或显示文件夹或文件中的时**新的项目**或**添加新项**对话框框中，IDE 会检查包含执行的文件，以确定是否.vsdir 文件的目录存在。 如果找到.vsdir 文件，IDE 将读取它以确定它是否包含执行或显示文件夹或文件的条目。 如果找到的项，IDE 在向导的执行或内容的显示中使用的信息。  

@@ -1,7 +1,7 @@
 ---
 title: 项目子类型的初始化序列 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b69dc5bea8ffc6e8248e777990653ed24097a30
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8352e97659ad3daeac5f5e36987bfef3565e42bf
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47476809"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49224076"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>项目子类型的初始化序列
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[初始化序列的项目子类型](https://docs.microsoft.com/visualstudio/extensibility/internals/initialization-sequence-of-project-subtypes)。  
-  
 在环境构造一个项目，通过调用基础项目工厂实现的<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>。 项目子类型的构造启动时环境确定项目文件的扩展名的项目类型 GUID 列表不为空。 项目文件扩展名和项目 GUID 指定项目是否是[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]或[!INCLUDE[csprcs](../../includes/csprcs-md.md)]项目类型。 例如，.vbproj 扩展名和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 识别[!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]项目。  
   
 ## <a name="environments-initialization-of-project-subtypes"></a>项目子类型的环境的初始化  

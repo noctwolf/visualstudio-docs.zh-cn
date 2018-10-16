@@ -1,7 +1,7 @@
 ---
 title: 消除了 ~ SAK 文件 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a11ed0972c403c4c3ea2a8b3f607135f12e9e315
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478579"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49216094"
 ---
 # <a name="elimination-of-sak-files"></a>清除 ~SAK 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[消除了 ~ SAK 文件](https://docs.microsoft.com/visualstudio/extensibility/internals/elimination-of-tilde-sak-files)。  
-  
 在源控件插件 API 1.2，~ SAK 文件已由功能标志和检测源代码管理插件是否支持 MSSCCPRJ 文件和共享方式签出的新功能。  
   
 ## <a name="sak-files"></a>~ SAK 文件  

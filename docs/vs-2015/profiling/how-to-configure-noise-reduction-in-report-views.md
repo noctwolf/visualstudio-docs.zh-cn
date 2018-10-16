@@ -1,7 +1,7 @@
 ---
 title: 如何：在报告视图中配置降噪 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee848f506a81b156309fa7e0d86891418251d0e8
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: af3a994dbad1ce15830145dc01acd0f47003681d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484657"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176015"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报告视图中配置降噪
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 在报告视图中配置降噪](https://docs.microsoft.com/visualstudio/profiling/how-to-configure-noise-reduction-in-report-views)。  
-  
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。  
   
  降噪配置选项包括以下设置：  

@@ -1,7 +1,7 @@
 ---
 title: 调试 COM 服务器和容器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -27,18 +27,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 531c485f50a4a775ca2933c40f5ff74ca9c43717
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1df02319e081abe882cef7031eba144ef22d7c4b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479070"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49263042"
 ---
 # <a name="com-server-and-container-debugging"></a>调试 COM 服务器和容器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试 COM 服务器和容器](https://docs.microsoft.com/visualstudio/debugger/com-server-and-container-debugging)。  
-  
 COM 应用程序执行若干不直接受程序员控制的任务。 DLL 间的通信、对象的使用计数和剪贴板操作只是可能遇到意外行为的少数几个情况。 发生这种情况时，第一步是抓住问题的根源。  
   
  Visual Studio 调试器支持单步通过和单步执行容器和服务器。 这包括单步执行远程过程调用 (RPC) 的能力。  

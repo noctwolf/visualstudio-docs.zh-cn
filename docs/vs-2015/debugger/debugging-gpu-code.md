@@ -1,7 +1,7 @@
 ---
 title: 调试 GPU 代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1eead3a8f706564f9f91a385086f39ca31dc706e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9f0bc862e114319642ee54f8ef16824fa24065e6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480520"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49279261"
 ---
 # <a name="debugging-gpu-code"></a>调试 GPU 代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试 GPU 代码](https://docs.microsoft.com/visualstudio/debugger/debugging-gpu-code)。  
-  
 你可以调试在图形处理单元 (GPU) 上运行的 C++ 代码。 Visual Studio 中的 GPU 调试支持包括争用检测、启动进程并附加到进程以及集成到调试窗口中。  
   
 ## <a name="supported-platforms"></a>受支持的平台  
@@ -70,7 +68,7 @@ ms.locfileid: "47480520"
 -   [如何：使用“GPU 线程”窗口](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>数据同步异常  
- 调试器可以在执行期间标识多个数据同步条件。 在检测条件时，调试器会进入中断状态。 有两种选择 —**中断**或**继续**。 通过使用**异常**对话框中，您可以配置是否调试器检测这些条件，并还何种条件则会中断的。 有关详细信息，请参阅[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。 此外可以使用**选项**对话框来指定调试器应忽略异常，是否写入的数据不会更改数据的值。 有关详细信息，请参阅[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+ 调试器可以在执行期间标识多个数据同步条件。 在检测条件时，调试器会进入中断状态。 有两种选择 —**中断**或**继续**。 通过使用**异常**对话框中，您可以配置是否调试器检测这些条件，并还何种条件则会中断的。 有关详细信息，请参阅[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。 此外可以使用**选项**对话框来指定调试器应忽略异常，是否写入的数据不会更改数据的值。 有关更多信息，请参见 [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 ## <a name="troubleshooting"></a>疑难解答  
   

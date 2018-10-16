@@ -1,7 +1,7 @@
 ---
 title: 复制选择 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c44cf7574444d412483d49f2a25b5633fea95d89
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 29f08162d395412d11b829c9d0db34f95404c843
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484053"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49183893"
 ---
 # <a name="copy-selection"></a>复制选择
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[复制选择](https://docs.microsoft.com/visualstudio/profiling/copy-selection)。  
-  
 若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。  
   
 ## <a name="see-also"></a>请参阅  

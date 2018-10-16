@@ -1,7 +1,7 @@
 ---
 title: 创建和管理模式对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b79ec93ae3783355d41d78a25dd5083dd5cd6361
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c49db22686481abd824b94178c854d681a1373db
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482206"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49177250"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>创建和管理模式对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[创建和管理模式对话框](https://docs.microsoft.com/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。  
-  
 在创建模式对话框在 Visual Studio 中的，必须确保父窗口的对话框的已禁用时显示的对话框，然后在对话框关闭后重新启用父窗口。 如果不这样做，可能会收到错误:"Microsoft Visual Studio 不能关闭，因为模式对话框处于活动状态。 关闭活动对话框，然后重试。"  
   
  有两种方法执行此操作。 建议的方法，WPF 对话框中，如果是从它派生<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>，然后调用<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow.ShowModal%2A>以显示对话框。 如果这样做，您不需要管理模式的父窗口的状态。  

@@ -1,7 +1,7 @@
 ---
 title: 适用于 Xamarin 应用的应用程序生命周期管理 (ALM) | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -13,18 +13,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: b9433539d89f7b47c79461dbf0d488791ff348db
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a9361c60413192aa91a618ad0c6acc074f23264a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482903"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49274633"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>适用于 Xamarin 应用的应用程序生命周期管理 (ALM)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[适用于 Xamarin 应用的应用程序生命周期管理 (ALM)](https://docs.microsoft.com/visualstudio/cross-platform/application-lifecycle-management-alm-with-xamarin-apps)。  
-  
   
 借助 Xamarin，你可以使用 C#、.NET 和 Visual Studio 生成面向 Android、iOS 和 Windows 的跨平台移动应用。 Xamarin 允许在平台间共享大部分代码，只有一小部分需要特定于平台。 有关 Xamarin 的详细信息，请参阅 [Visual Studio 和 Xamarin](../cross-platform/visual-studio-and-xamarin.md)。  
   

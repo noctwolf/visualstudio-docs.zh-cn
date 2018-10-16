@@ -1,7 +1,7 @@
 ---
 title: CompilandDetails |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c385d82dfc9a4223610000642b82b8cffe4a7109
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 37468ba708ded9d1fd0b976fd3771d1a18291d71
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472236"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49266625"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[CompilandDetails](https://docs.microsoft.com/visualstudio/debugger/debug-interface-access/compilanddetails)。  
-  
 编译单位信息用于分隔包含符号`SymTagCompiland`标记 （低详细信息） 和一个`SymTagCompilandDetails`标记 （高详细信息）。 `SymTagCompilandDetails` 需要加载其他符号。 但是，它提供了丰富的信息不适用于编译单位`SymTagCompiland`符号。  
   
 ## <a name="properties"></a>属性  

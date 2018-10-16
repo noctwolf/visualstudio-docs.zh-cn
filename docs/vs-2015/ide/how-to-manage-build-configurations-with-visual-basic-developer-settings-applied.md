@@ -1,7 +1,7 @@
 ---
 title: 如何：在应用 Visual Basic 开发人员设置后管理生成配置 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -22,18 +22,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f96242e638e10ac494b0d56e0fb1b89601a35e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b191b5d4223d32e4d620c779f5813c0db651a6cc
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470618"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49300555"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在应用 Visual Basic 开发人员设置后管理生成配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 应用的 Visual Basic 开发人员设置后管理生成配置](https://docs.microsoft.com/visualstudio/ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied)。  
-  
 默认情况下，应用 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 开发人员设置后，所有高级生成配置选项都将隐藏。 本主题说明如何手动启用这些设置。  
   
 ## <a name="enabling-advanced-build-configurations"></a>启用高级生成配置  

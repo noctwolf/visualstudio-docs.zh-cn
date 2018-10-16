@@ -1,7 +1,7 @@
 ---
 title: CA1020： 避免使用类型极少的命名空间 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,18 +20,15 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b3a7f1c0b6cdfbf96542d9edc76596295f2d695a
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: dbcdb3bb6e5b8f530c5ca25e4614f04b0b11da23
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "47492624"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49181501"
 ---
 # <a name="ca1020-avoid-namespaces-with-few-types"></a>CA1020：避免使用类型极少的命名空间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
-本主题的最新版本，请参阅[CA1020： 避免使用类型极少的命名空间](https://docs.microsoft.com/visualstudio/code-quality/ca1020-avoid-namespaces-with-few-types)。
-
 |||
 |-|-|
 |TypeName|AvoidNamespacesWithFewTypes|

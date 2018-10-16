@@ -1,7 +1,7 @@
 ---
 title: 将命令添加到解决方案资源管理器中工具栏 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0dfc2aeb0b0e73e48fd0dcf64b5b7c09fcbea9f1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482821"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49254363"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[将命令添加到解决方案资源管理器工具栏](https://docs.microsoft.com/visualstudio/extensibility/adding-a-command-to-the-solution-explorer-toolbar)。  
-  
 本演练演示如何将添加到按钮**解决方案资源管理器**工具栏。  
   
  在 Visual Studio 中，工具栏或菜单上的任何命令称为一个按钮。 当单击按钮时，将执行命令处理程序中的代码。 通常情况下，相关的命令组合在一起以形成一个组。 菜单或工具栏作为容器的组。 优先级确定菜单中或在工具栏上的组中的单个命令的显示的顺序。 您可以防止一个按钮工具栏或菜单上显示通过控制其可见性。 中列出的命令`<VisibilityConstraints>`.vsct 文件的部分仅在关联的上下文中出现。 可见性不能应用于组。  

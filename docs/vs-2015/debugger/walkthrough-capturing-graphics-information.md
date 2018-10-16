@@ -1,7 +1,7 @@
 ---
 title: 演练： 捕获图形信息 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,19 +14,17 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de553729d37bb82d1b30c6a142f7e65c983bb1c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f81009d942a7d77bfe34d3bcc3ae16b1c824b75b
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470512"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49273008"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 捕获图形信息](https://docs.microsoft.com/visualstudio/debugger/graphics/walkthrough-capturing-graphics-information)。  
-  
-本演练演示如何使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]图形诊断工具手动捕获图形信息从 Direct3D 应用。  
+本演练演示了如何使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 图形诊断从 Direct3D 应用手动捕获图形信息。  
   
  此演练阐释了以下任务：  
   
@@ -39,7 +37,7 @@ ms.locfileid: "47470512"
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>在加载项目或解决方案后启用图形信息捕获  
   
-1.  在[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，加载你想要从中捕获图形信息的应用的项目或解决方案文件。  
+1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
   
 2.  在“图形诊断”工具栏上，选择“启动诊断” 。  
   
@@ -69,7 +67,7 @@ ms.locfileid: "47470512"
 -   了解如何使用图形诊断工具分析捕获的图形信息。 请参阅[概述](../debugger/overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [捕获图形信息](../debugger/capturing-graphics-information.md)
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: FRAMEINFO_FLAGS |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 41578062-8455-412a-9d8b-1e1e9dc8d52e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d1ec38f973b51124062fe77c6fab00e9d964cedc
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 412db699c4aab4c90537ea03ad081f509aa5d452
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49201121"
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[FRAMEINFO_FLAGS](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/frameinfo-flags)。  
-  
 指定要检索的堆栈帧对象有关的信息。  
   
 ## <a name="syntax"></a>语法  

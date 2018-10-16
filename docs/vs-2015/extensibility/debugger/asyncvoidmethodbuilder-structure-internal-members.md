@@ -1,7 +1,7 @@
 ---
 title: AsyncVoidMethodBuilder 结构-内部成员 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,21 +16,19 @@ ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 408e3028c09c6c96af2a43977dc0c8cd720b70c1
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2ab6547f0b6f2c186b39587dc04c9c3088a252de
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479969"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288074"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 结构 - 内部成员
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[AsyncVoidMethodBuilder 结构-内部成员](https://docs.microsoft.com/visualstudio/extensibility/debugger/asyncvoidmethodbuilder-structure-internal-members)。  
-  
 本主题介绍的内部成员的<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>类。 有关此类的常规信息，请参阅<xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>参考主题。  
   
- **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace**：<xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
  **程序集：** mscorlib （在 mscorlib.dll 中)  
   

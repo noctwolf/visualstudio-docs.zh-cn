@@ -1,7 +1,7 @@
 ---
 title: 如何： 将域特定语言迁移至新版本 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d97e0204122e6dfcae89da7b04a0a303a0bd9a4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad5204b4a90018d935028dc517c09ac608043c9a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "47588698"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49269420"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 将域特定语言迁移至新版本](https://docs.microsoft.com/visualstudio/modeling/how-to-migrate-a-domain-specific-language-to-a-new-version)。  
-  
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../includes/vs2010-md.md)]的版本从[!INCLUDE[dsl](../includes/dsl-md.md)]一起分发[!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)]。  
   
  作为的一部分提供迁移工具[!INCLUDE[vssdk_current_long](../includes/vssdk-current-long-md.md)]。 该工具将为[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]项目和解决方案的使用或定义 DSL 工具。  

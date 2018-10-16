@@ -1,7 +1,7 @@
 ---
 title: 实现语法着色 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c86a782b3b100811d29b1f81bf2beb6c8cfae1a0
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a4315b9e6b6fdb12a0fcb3e97f6b208d6b84acd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481794"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259242"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[实现语法着色](https://docs.microsoft.com/visualstudio/extensibility/internals/implementing-syntax-coloring)。  
-  
 时语言服务都会提供语法着色，分析器将一行文本转换为可着色项的数组，并返回与这些可着色项相对应的令牌类型。 分析器应返回属于可着色项列表的令牌类型。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 根据分配给相应的标记类型的着色器对象的属性在代码窗口中显示每个可着色项。  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 不指定分析器接口，并且分析器实现完全取决于您。 但是，Visual Studio 语言包项目提供默认分析器实现。 对于托管代码，托管的包框架 (MPF) 提供用于对文本着色的完整支持。  

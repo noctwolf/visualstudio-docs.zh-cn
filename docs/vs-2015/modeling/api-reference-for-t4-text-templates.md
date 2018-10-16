@@ -1,7 +1,7 @@
 ---
 title: T4 文本模板的 API 参考 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34e1c49b534257697c97a9eebec0836e11fbd4b4
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 762e1ceb0cd91f6946a3b06b28d897f2ef040a7d
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481264"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49220006"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>T4 文本模板的 API 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[T4 文本模板的 API 参考](https://docs.microsoft.com/visualstudio/modeling/api-reference-for-t4-text-templates)。  
-  
 文本模板化 API 可以调用和自定义的转换[文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
   
 ## <a name="namespaces"></a>命名空间  

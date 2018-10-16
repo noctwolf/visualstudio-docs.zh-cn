@@ -1,7 +1,7 @@
 ---
 title: 演练： 调试 Web 窗体 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,22 +28,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aff54238649947f578535dee2b813aa4daa90681
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f8cbda461c4472ed020087e7e606b1ab86ddb6b9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470275"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49275127"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 调试 Web 窗体](https://docs.microsoft.com/visualstudio/debugger/walkthrough-debugging-a-web-form)。  
-  
-本演练中的步骤向您演示如何调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，并在中检查变量**监视**窗口。  
+本演练中的步骤向你演示如何调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序（也称为 Web 窗体）。 它演示如何启动和停止执行、 设置断点，并在中检查变量**监视**窗口。  
   
 > [!NOTE]
->  若要完成本演练，您必须在服务器计算机上具有管理员特权。 默认情况下，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程（aspnet_wp.exe 或 w3wp.exe）作为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程运行。 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]，您必须在运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 的计算机上拥有管理员特权。 有关详细信息，请参阅[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  
+>  若要完成本演练，您必须在服务器计算机上具有管理员特权。 默认情况下，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程（aspnet_wp.exe 或 w3wp.exe）作为 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程运行。 若要调试 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]，您必须在运行 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 的计算机上拥有管理员特权。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   

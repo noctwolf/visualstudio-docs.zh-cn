@@ -1,7 +1,7 @@
 ---
 title: 通过使用 MEF 扩展 DSL |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 378aab6aaac3c45dc0a912dc62f5ebf55fffd46c
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471380"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49194115"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[通过使用 MEF 扩展 DSL](https://docs.microsoft.com/visualstudio/modeling/extend-your-dsl-by-using-mef)。  
-  
 可以通过使用 Managed Extensibility Framework (MEF) 扩展你的域特定语言 (DSL)。 您或其他开发人员将能够编写的 DSL 的扩展，而无需更改 DSL 定义和程序代码。 此类扩展包括菜单命令、 拖放处理程序和验证。 用户将能够安装 DSL，，然后根据需要为其安装扩展。  
   
  此外，启用时 MEF 在 DSL 中，可能会更轻松地编写的一些功能 DSL，即使它们是与 DSL。  

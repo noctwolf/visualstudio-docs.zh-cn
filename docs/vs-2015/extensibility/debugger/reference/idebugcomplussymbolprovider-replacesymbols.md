@@ -1,7 +1,7 @@
 ---
 title: IDebugComPlusSymbolProvider::ReplaceSymbols |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: eb222f58f6434a408d723a248bccf7d55fc70ae2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e359d78d67ecb99644713b33b28b72b820db810e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483737"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49210569"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[IDebugComPlusSymbolProvider::ReplaceSymbols](https://docs.microsoft.com/visualstudio/extensibility/debugger/reference/idebugcomplussymbolprovider-replacesymbols)。  
-  
 与指定的数据流中的替换当前的调试符号。  
   
 ## <a name="syntax"></a>语法  

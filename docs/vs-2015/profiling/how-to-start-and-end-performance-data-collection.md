@@ -1,7 +1,7 @@
 ---
 title: 如何：开始和结束性能数据收集 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7c7848f8bb45ae9c97dacdd75c42e8345646e5f
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e6d98a8a72c28bc3e70a3b6b0f0d55ce74522cb7
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482261"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49229692"
 ---
 # <a name="how-to-start-and-end-performance-data-collection"></a>如何：开始和结束性能数据收集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 开始和结束性能数据收集](https://docs.microsoft.com/visualstudio/profiling/how-to-start-and-end-performance-data-collection)。  
-  
 启动分析之前，必须将要分析的目标二进制文件添加到性能会话中。 若要添加目标，请在“性能资源管理器”中右键单击“目标”，然后单击“添加目标二进制文件”。 在“添加目标二进制文件”对话框中，选择文件名，然后单击“打开”。 将添加一个新的二进制文件。  
   
 ### <a name="to-start-profiling"></a>启动分析  

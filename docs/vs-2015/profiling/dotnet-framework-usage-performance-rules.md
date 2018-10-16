@@ -1,7 +1,7 @@
 ---
 title: .NET Framework 使用性能规则 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7ddb790042e263b3d2eb8a9d7db3f73cd023db79
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0f1fee0c059189c2a120dfb83556ec94f119a2f5
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472382"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49197621"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用性能规则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[.NET Framework 使用性能规则](https://docs.microsoft.com/visualstudio/profiling/dotnet-framework-usage-performance-rules)。  
-  
 .Net Framework 使用类别中的性能规则标识可以优化的特定方法，并且还标识可调查性能问题的更为通用的使用模式，例如垃圾回收和锁争用。  
   
 |||  

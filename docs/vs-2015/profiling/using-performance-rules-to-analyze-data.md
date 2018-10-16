@@ -1,7 +1,7 @@
 ---
 title: 使用性能规则对数据进行分析 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22ca90e115d72db00998b26f2501b24adc60652
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 175f7a9bf34228b516fbec3d8b9044e58ad47a54
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470900"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49288608"
 ---
 # <a name="using-performance-rules-to-analyze-data"></a>使用性能规则对数据进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用性能规则对分析数据](https://docs.microsoft.com/visualstudio/profiling/using-performance-rules-to-analyze-data)。  
-  
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具的性能警告指示所分析应用程序中可能会减慢程序执行的问题。 警告还可指示可能需要更改收集方法才能收集更多有用的数据。 性能警告在分析会话中会自动生成。 在 Visual Studio 中打开分析数据文件时，这些警告将显示在“错误列表”窗口中。 从“错误列表”窗口中，可以找到问题的源代码，并且可以显示有关错误的详细信息（如有关如何解决问题的信息）。 还可以禁用不感兴趣的警告。  
   
 > [!NOTE]

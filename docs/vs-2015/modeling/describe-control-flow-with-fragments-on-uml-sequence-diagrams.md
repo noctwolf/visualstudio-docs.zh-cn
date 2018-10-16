@@ -1,7 +1,7 @@
 ---
 title: UML 序列图描述控制流片段与 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-tfs-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -20,24 +20,22 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 05cb3be018db16a2377132896a98f0d2b13bfa07
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: c90270876721f2a43c78375108608064d325b39a
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480350"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49260210"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>使用 UML 序列图中的片段描述控制流
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用 UML 序列图上的片段描述控制流](https://docs.microsoft.com/visualstudio/modeling/describe-control-flow-with-fragments-on-uml-sequence-diagrams)。  
-  
 在 UML 序列图中，可以通过 *组合片段* 显示循环、分支和其他备选项。  
   
  组合片段包括一个或多个 *交互操作数*，并且其中每个都包含了一个或多个消息、交互使用或组合片段。  
   
 > [!NOTE]
->  本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅[UML 序列图： 准则](../modeling/uml-sequence-diagrams-guidelines.md)。  
+>  本主题介绍序列图中的片段。 有关如何读取 UML 序列图的详细信息，请参阅[UML 序列图： 参考](../modeling/uml-sequence-diagrams-reference.md)。 有关如何绘制 UML 序列图的详细信息，请参阅 [UML Sequence Diagrams: Guidelines](../modeling/uml-sequence-diagrams-guidelines.md)。  
   
  ![组合片段中的使用两个交互操作数](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   

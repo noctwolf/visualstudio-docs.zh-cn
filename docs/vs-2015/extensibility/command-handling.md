@@ -1,7 +1,7 @@
 ---
 title: 命令处理 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 78f67d92-77f7-45cb-ad75-6e3346379cc3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 32bfe8ec88d0e2ad5a2b765dcff01f543fe59c18
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: de4bf6ace6860cbd6155fe67a0de824e5626cfe3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477974"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49257213"
 ---
 # <a name="command-handling"></a>命令处理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[命令处理](https://docs.microsoft.com/visualstudio/extensibility/command-handling)。  
-  
 你的编辑器可以定义新的命令。 在菜单中，在工具栏上，或在上下文菜单中，通常显示命令。  
   
  有关定义命令和菜单的详细信息，请参阅[命令、 菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。  

@@ -1,7 +1,7 @@
 ---
 title: 如何： 创建活动库 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 8e3579061b65d142fdfb0cc992813ffc45663464
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 341e87459cbaae204baba66108a5944eb1f7f97f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47484196"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49271814"
 ---
 # <a name="how-to-create-an-activity-library"></a>如何：创建活动库
 自定义活动用于在工作流中对特定业务流程进行建模。 通过 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 中的活动库模板，可使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 直观地创建这种自定义活动。  

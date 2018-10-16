@@ -1,7 +1,7 @@
 ---
 title: 项目上下文 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: d1803f4a-24eb-44b0-b5d2-cb40c15534be
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 280864c69e75d37c73095320787d74e61a93ab38
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 24db09c97b499ee10aaf5d84fa1d8eb328042a3f
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477182"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49203315"
 ---
 # <a name="project-context"></a>项目上下文
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[项目上下文](https://docs.microsoft.com/visualstudio/extensibility/internals/project-context)。  
-  
 当用户添加或适用于项目和项目项时，IDE 将使用项目上下文的概念来确定应执行了各种操作。  
   
  通常情况下，文件是通过选择来显式创建用户的标准项目对象**新的项目**命令或通过选择，能够**打开项目**命令**文件**菜单。 在这些情况下，创建和打开项目的上下文中的文件和项目类型定义编辑文档的上下文。  

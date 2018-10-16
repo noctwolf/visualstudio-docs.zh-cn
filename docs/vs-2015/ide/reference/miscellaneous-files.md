@@ -1,7 +1,7 @@
 ---
 title: 杂项文件 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae827a5dfcc017370061e40aca4e7a03be798f97
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: cb9c7fb46517ff2d6dffdeb0cedfc4982c1f3366
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477972"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49258461"
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[杂项文件](https://docs.microsoft.com/visualstudio/ide/reference/miscellaneous-files)。  
-  
   
 你可能需要使用 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 编辑器独立于项目或解决方案来处理文件。 打开某个解决方案后，可以打开和修改文件，而不必将其添加到解决方案或项目中。 要独立于容器来处理的文件称为杂项文件。 杂项文件位于解决方案和项目的外部，不包括在生成中，而且无法包括在受源代码管理的解决方案中。  
   

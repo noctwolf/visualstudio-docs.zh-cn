@@ -1,7 +1,7 @@
 ---
 title: 演练： 显示 QuickInfo 工具提示 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b13dce0ea4f2bb54c802b63fd19f74b8173e94d
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479980"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49237648"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>演练：显示 QuickInfo 工具提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： 显示 QuickInfo 工具提示](https://docs.microsoft.com/visualstudio/extensibility/walkthrough-displaying-quickinfo-tooltips)。  
-  
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 您可以通过定义的标识符来提供快速信息的说明，并创建要在其中显示内容的工具提示实现基于语言的功能，例如快速信息。 可以在语言服务的上下文中定义 QuickInfo 或可以定义自己的文件名称扩展和内容类型并显示快速信息只是该类型或可以为现有内容类型 （例如"text") 显示快速信息。 本演练演示如何显示快速信息的"text"内容类型。  
   
  当用户将指针移到方法名称，在本演练中的快速信息示例将显示工具提示。 此设计要求您实现这些四个接口：  
@@ -50,7 +48,7 @@ ms.locfileid: "47479980"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`QuickInfoTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `QuickInfoTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -61,7 +59,7 @@ ms.locfileid: "47479980"
   
 #### <a name="to-implement-the-quickinfo-source"></a>若要实现的快速信息源  
   
-1.  添加一个类文件并将其命名`TestQuickInfoSource`。  
+1.  添加一个类文件并将其命名为 `TestQuickInfoSource`。  
   
 2.  添加对 Microsoft.VisualStudio.Language.IntelliSense 的引用。  
   
@@ -160,7 +158,7 @@ ms.locfileid: "47479980"
      [!code-csharp[VSSDKQuickInfoTest#16](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#16)]
      [!code-vb[VSSDKQuickInfoTest#16](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#16)]  
   
-2.  导入<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>作为属性。  
+2.  将 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 作为属性导入。  
   
      [!code-csharp[VSSDKQuickInfoTest#17](../snippets/csharp/VS_Snippets_VSSDK/vssdkquickinfotest/cs/testquickinfosource.cs#17)]
      [!code-vb[VSSDKQuickInfoTest#17](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkquickinfotest/vb/testquickinfosource.vb#17)]  

@@ -1,7 +1,7 @@
 ---
 title: 调试已部署的 Web 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 896cec857b38dd5fb0d7119aed06ca08d2df1e35
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bc9aefdb6fca70eae0343a5f7fffde661b5a7be1
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47483675"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49276310"
 ---
 # <a name="debugging-deployed-web-applications"></a>调试已部署的 Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试部署 Web 应用程序](https://docs.microsoft.com/visualstudio/debugger/debugging-deployed-web-applications)。  
-  
 如果需要调试正在成品服务器上运行的 Web 应用程序，则应谨慎执行此操作。 例如，如果附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程进行调试并命中了断点，辅助进程中的所有托管代码都将暂停。 暂停辅助进程中的所有托管代码会导致服务器上的所有用户的工作中断。 在成品服务器上进行调试之前，请考虑对生产工作的潜在影响。  
   
  若要使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 调试已部署的应用程序，必须附加到 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 辅助进程，并确保调试器能够访问该应用程序的符号。 此外，还必须找到并打开该应用程序的源文件。 有关详细信息，请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，[如何： 查找 ASP.NET 进程的名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)，并[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  

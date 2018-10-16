@@ -1,7 +1,7 @@
 ---
 title: 从 Visual Studio 运行应用商店应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -19,18 +19,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 697ee8f4a3c9b796e5270e2a48a9786b657b3636
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f16b0d6dc3d1f4f37119826d841aaef1cd8871b6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47471128"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49249517"
 ---
 # <a name="run-store-apps-from-visual-studio"></a>从 Visual Studio 运行应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[从 Visual Studio 运行应用商店应用](https://docs.microsoft.com/visualstudio/debugger/run-store-apps-from-visual-studio)。  
-  
 在大范围的设备上运行的应用商店应用和 Visual Studio 提供了多种方法，用来运行这些应用并与其进行交互。 通过增强“F5”体验，可在开发期间轻松调试、分析和测试应用。  
   
  ![启动调试并选择目标](../debugger/media/vsrun-dropdownlist.png "VSRUN_DropDownList")  

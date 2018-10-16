@@ -1,7 +1,7 @@
 ---
 title: 使用类和其他类型（类设计器）| Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -30,18 +30,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7690c24e8691858dbc0c027ea765b92f54144b85
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5282b37fca3e35e23e6ca343538aad12854b7bba
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47482339"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198297"
 ---
 # <a name="working-with-classes-and-other-types-class-designer"></a>使用类和其他类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[使用类和其他类型 （类设计器）](https://docs.microsoft.com/visualstudio/ide/working-with-classes-and-other-types-class-designer)。  
-  
 使用 Visual Studio 中的类设计器创建和编辑类和类型时，更轻松地将焦点集中在最关注的项目上。 通过类图让 Visual C#.NET、Visual Basic.NET 或 C++ 代码的使用更为直观。  
   
 ## <a name="in-this-section"></a>本节内容  

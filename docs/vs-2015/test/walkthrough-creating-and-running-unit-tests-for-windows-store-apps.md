@@ -1,7 +1,7 @@
 ---
 title: 演练：为 Windows 应用商店应用创建和运行单元测试 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9b84c53f3c1f2c48948b456d3a85460bfb70a9ce
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8eadbd73c82bc40d6b3b669968cb8808ab2991d3
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47472319"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49251909"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>演练：为 Windows 应用商店应用程序创建和运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[演练： Windows 应用商店应用程序的创建和运行单元测试](https://docs.microsoft.com/visualstudio/test/walkthrough-creating-and-running-unit-tests-for-windows-store-apps)。  
-  
 Visual Studio 支持对托管的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用进行单元测试，并包括 Visual C#、Visual Basic 和 Visual C++ 的单元测试库模板。  
   
 > [!TIP]

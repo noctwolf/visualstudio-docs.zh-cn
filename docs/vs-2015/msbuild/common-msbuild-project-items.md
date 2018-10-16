@@ -1,7 +1,7 @@
 ---
 title: 常用的 MSBuild 项目项 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b119cae4013bd1be5657224ad54de54c10321848
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 0d4975390802c8a04459750be5e5405bd17c3a68
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477622"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49238402"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[常用的 MSBuild 项目项](https://docs.microsoft.com/visualstudio/msbuild/common-msbuild-project-items)。  
-  
   
 在 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中的所有项目类型具有几个通用项。 在文件 microsoft.build.commontypes.xsd 中定义了这些项。  
   

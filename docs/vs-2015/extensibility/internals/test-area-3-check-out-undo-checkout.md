@@ -1,7 +1,7 @@
 ---
 title: 测试区域 3： 签出 / 撤销签出 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -18,18 +18,16 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ea99ec9b182f63beced94885533c650e7a79671a
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fd293abc674059f7c0046e076e4166b7dffa631
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47480610"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49178589"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>测试区域 3： 签出/撤销签出
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[测试区域 3： 检查 Out-Undo 签出](https://docs.microsoft.com/visualstudio/extensibility/internals/test-area-3-check-out-undo-checkout)。  
-  
 此源代码管理插件的测试区域介绍编辑和正在还原项目，从版本存储区通过**签出**并**撤消签出**命令。  
   
  **签出**： 标记版本存储区中的项为已签出，修改本地副本以读/写。  

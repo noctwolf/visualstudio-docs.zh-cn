@@ -1,7 +1,7 @@
 ---
 title: 调试准备： ASP.NET Web 应用程序 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -24,19 +24,17 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20731f5036a89c3c19fbea0d825d67fc02c13cf9
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9268cca555486e0c432e60947350bd69202c4fb6
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47479474"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49292885"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>调试准备：ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[调试准备： ASP.NET Web 应用程序](https://docs.microsoft.com/visualstudio/debugger/debugging-preparation-aspnet-web-applications)。  
-  
-[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]网站模板创建 Web 窗体应用程序。 当您使用此模板创建网站时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会创建用于调试的默认设置。 在中**项目属性**对话框中，您可以指定是否想要成为起始页的网页。 在开始调试时[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]使用这些默认设置，网站[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]启动 Internet Explorer 并将附加到调试器[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]辅助进程 （aspnet_wp.exe 或 w3wp.exe）。 有关详细信息，请参阅[系统要求](../debugger/aspnet-debugging-system-requirements.md)。  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]网站模板创建 Web 窗体应用程序。 当你使用此模板创建网站时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会创建用于调试的默认设置。 在中**项目属性**对话框中，您可以指定是否想要成为起始页的网页。 在开始调试时[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]使用这些默认设置，网站[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]启动 Internet Explorer 并将附加到调试器[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]辅助进程 （aspnet_wp.exe 或 w3wp.exe）。 有关详细信息，请参阅 [System Requirements](../debugger/aspnet-debugging-system-requirements.md)。  
   
 ### <a name="to-create-a-web-forms-application"></a>创建 Web 窗体应用程序  
   

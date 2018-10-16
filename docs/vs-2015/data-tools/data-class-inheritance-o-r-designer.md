@@ -1,7 +1,7 @@
 ---
 title: 数据类继承 （O-R 设计器） |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -12,18 +12,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c361d35a4c5d6c4418a803b6bbba403e5571e1e2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ae36d6aac3ea9a4ff4de73dea57207b6f03abc72
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47468946"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180513"
 ---
 # <a name="data-class-inheritance-or-designer"></a>数据类继承 （O/R 设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[数据类继承 （O-R 设计器）](https://docs.microsoft.com/visualstudio/data-tools/data-class-inheritance-o-r-designer)。  
-  
   
 像其他对象一样，[!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] 类可以使用继承，并可从其他类派生。 在代码中，可以通过声明一个类继承自另一个类来指定对象间的继承关系。 在数据库中，可通过多种方式创建继承关系。 [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)]（[!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]）支持通常在关系系统中实现的单表继承概念。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 视图和 XML 编辑器之间切换 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d739f9923c3686995508d56391513cdd503f5c94
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 03edf2ba9d2e9c5042328a62606d9bbae47bb0f2
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47469112"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49218447"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>如何：在视图和 XML 编辑器之间切换
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 交换机之间视图和 XML 编辑器](https://docs.microsoft.com/visualstudio/xml-tools/how-to-switch-between-views-and-the-xml-editor)。  
-  
   
 本主题演示如何在 XML 架构设计器（XSD 设计器）视图和 XML 编辑器之间进行切换。 此示例使用[采购订单架构](../xml-tools/sample-xsd-file-simple-schema.md)。  
   

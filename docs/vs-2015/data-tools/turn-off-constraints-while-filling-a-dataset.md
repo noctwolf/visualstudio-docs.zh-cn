@@ -1,7 +1,7 @@
 ---
 title: 填充数据集时关闭约束 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -26,18 +26,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4b14830b7ed4922b4e383ef245c0366c184b606e
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 9c47d3cb5e02117cb75ab86579b0cb3b166bd510
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49259904"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[填充数据集时关闭约束](https://docs.microsoft.com/visualstudio/data-tools/turn-off-constraints-while-filling-a-dataset)。  
-  
   
 如果数据集包含约束 （如外键约束），通过引发顺序对数据集执行的操作相关的错误。 例如，加载子记录之前 loadingrelated 父记录可以违反了约束，将产生错误。 立即加载子记录，该约束检查相关的父记录并引发错误。  
   
@@ -57,7 +55,7 @@ ms.locfileid: "47477036"
   
 1.  打开中的数据集[创建和编辑类型化数据集](../data-tools/creating-and-editing-typed-datasets.md)。 有关详细信息，请参阅[如何： 在数据集设计器中打开数据集](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3)。  
   
-2.  在中**属性**窗口中，将<xref:System.Data.DataSet.EnforceConstraints%2A>属性设置为`false`。  
+2.  在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)   

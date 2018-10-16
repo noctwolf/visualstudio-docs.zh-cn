@@ -1,7 +1,7 @@
 ---
 title: 如何：收集行级采样数据 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -16,18 +16,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5bd57893476ba7654a37fc44d1681adc3264f92b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478741"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49198583"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 收集行级采样数据](https://docs.microsoft.com/visualstudio/profiling/how-to-collect-line-level-sampling-data)。  
-  
 行级采样是探查器确定占用大量处理器时间的函数在代码中的位置，如具有高独占样本的函数，处理器需要耗费大量时间。  
   
 ## <a name="overview"></a>概述  

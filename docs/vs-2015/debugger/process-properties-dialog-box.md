@@ -1,7 +1,7 @@
 ---
 title: 处理属性对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23df984e13f2f8d022a4731926d0747450c7faaf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 1e0c58dfd492886a5e4a222ba758c0652f73c014
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478452"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49180935"
 ---
 # <a name="process-properties-dialog-box"></a>“进程属性”对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[进程属性对话框](https://docs.microsoft.com/visualstudio/debugger/process-properties-dialog-box)。  
-  
 使用此对话框中，若要了解有关特定的进程的详细信息。 若要显示此对话框中，将焦点移至[进程视图](../debugger/processes-view.md)窗口。 在树中，选择任何进程节点，然后选择**属性**从**视图**菜单。  
   
  Windows 98 和 Windows 95 在操作系统上，修改版本的**常规**显示选项卡。  

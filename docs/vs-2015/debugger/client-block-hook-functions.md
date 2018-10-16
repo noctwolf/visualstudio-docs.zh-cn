@@ -1,7 +1,7 @@
 ---
 title: 客户端块挂钩函数 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -28,18 +28,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bbfb24566a59047e47090f92a040c3c2fe8a12
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 55b3200f93d5dd969687411f04ddca481ca099e9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477052"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49250676"
 ---
 # <a name="client-block-hook-functions"></a>客户端块挂钩函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[客户端块挂钩函数](https://docs.microsoft.com/visualstudio/debugger/client-block-hook-functions)。  
-  
 如果想要验证或报告存储在 `_CLIENT_BLOCK` 块中的数据的内容，可以专为此目的编写函数。 如同 CRTDBG.H 中所定义的，所编写的函数必须有与下面类似的原型：  
   
 ```  

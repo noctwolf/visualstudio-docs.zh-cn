@@ -1,7 +1,7 @@
 ---
 title: 如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -14,18 +14,16 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2b9f0220d2b25b9bf7f3e319ef8a63ae5ea3a62
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47481498"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49176301"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[如何： 修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序](https://docs.microsoft.com/visualstudio/profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications)。  
-  
 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具检测方法，可以从动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序收集详细计时数据、.NET 内存分配数据和 .NET 对象生存期数据。  
   
  本主题介绍如何修改 web.config 配置文件才能检测和分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。  

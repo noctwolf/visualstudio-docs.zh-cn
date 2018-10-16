@@ -1,7 +1,7 @@
 ---
 title: 源代码管理 VSPackage 体系结构 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -15,18 +15,16 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4d2a76a877581085b6bdffd8522bfcea24ea9e24
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 69cbcd1f8ab1f04f02d89839eed1e0cd67aa2fd9
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470575"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49190458"
 ---
 # <a name="source-control-vspackage-architecture"></a>源代码管理 VSPackage 体系结构
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[源代码管理 VSPackage 体系结构](https://docs.microsoft.com/visualstudio/extensibility/internals/source-control-vspackage-architecture)。  
-  
 源代码管理包是使用 VSPackage 服务[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 提供了。 反过来，源代码管理包提供了其功能与源代码管理服务。 此外，源代码管理包是一个更灵活的替代方法比源控件集成到源代码管理插件[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
  源代码管理插件，它实现源控件插件 API 遵守严格的约定。 例如，插件不能替换默认[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]用户界面 (UI)。 此外，源控制插件 API 不会启用插件来实现其自己的源控件模型。 源代码管理包，但是，克服了这两个这些限制。 源代码管理包具有完全控制的源控制体验[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]用户。 此外，源代码管理包可以使用其自己的源控件模型和逻辑，并且它可以定义所有源控件相关的用户接口。  

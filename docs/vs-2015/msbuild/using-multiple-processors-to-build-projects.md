@@ -1,7 +1,7 @@
 ---
 title: 使用多个处理器生成项目 | Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -17,18 +17,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67ba27b59fe134e226d5cc2b752d8d0ae26f7aa2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 67b873b8ab1668ea2fea3b3bf0487339a86c9ffe
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47478036"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49199909"
 ---
 # <a name="using-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[生成项目时使用多个处理器](https://docs.microsoft.com/visualstudio/msbuild/using-multiple-processors-to-build-projects)。  
-  
   
 MSBuild 可以利用具有多个处理器或多核处理器的系统。 为每个可用处理器创建单独的生成进程。 例如，如果系统具有四个处理器，则创建四个生成进程。 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以同时处理这些生成，从而缩短总体生产时间。 但是，并行生成会在生成方式上引入了一些更改。 本主题将讨论这些更改。  
   

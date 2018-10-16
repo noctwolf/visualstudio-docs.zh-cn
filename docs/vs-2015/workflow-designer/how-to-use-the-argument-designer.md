@@ -1,7 +1,7 @@
 ---
 title: 如何： 使用自变量设计器 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: .net-framework-4.6
 ms.reviewer: ''
 ms.suite: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: eaff53dc04c0ad2367147ae91c7de756e5ca4366
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 81b24b8c0344cc6a8cf1559126a4faf0bc2b6f4e
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47477027"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49206617"
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
-与以前版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相比，该参数设计器使数据流入和流出某个活动更容易。 通过单击来访问在设计器**自变量**设计画布左下角的按钮。 在设计器包含一系列参数显示在表格窗体，可以按每一列标题排序除外**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 [!INCLUDE[crabout](../includes/crabout-md.md)] 自变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
+与以前版本的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 相比，该自变量设计器使数据流入和流出某个活动更容易。 通过单击来访问在设计器**自变量**设计画布左下角的按钮。 在设计器包含一系列参数显示在表格窗体，可以按每一列标题排序除外**默认值**列。 每个自变量都包含名称、输入/输出/输入-输出/属性方向、类型和默认表达式值（如果有）。 名称和默认的表达式值都是可编辑的文本字段，类型和方向是下拉项。 [!INCLUDE[crabout](../includes/crabout-md.md)] 自变量，请参阅[变量和自变量](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8)。  
   
 ### <a name="to-create-a-new-argument"></a>创建新自变量  
   

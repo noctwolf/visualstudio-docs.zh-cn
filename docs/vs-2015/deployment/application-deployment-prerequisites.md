@@ -1,7 +1,7 @@
 ---
 title: 应用程序部署必备 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -25,18 +25,16 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 3a866105a2b9d4549fd3684dc4726f165d43a7af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470207"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49217927"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[应用程序部署必备](https://docs.microsoft.com/visualstudio/deployment/application-deployment-prerequisites)。  
-  
 为确保应用程序成功安装和运行，必须先确保应用程序依赖的所有组件都已安装在目标计算机上。 例如，用 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)][!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 创建的大多数应用程序都会依赖 ；在安装应用程序前，目标计算机上必须存在正确版本的公共语言运行时。  
   
  可以选择在这些系统必备组件**Prerequisites Dialog Box**和您的安装过程中安装.NET Framework 和其他可再发行组件。 这种做法被称为*引导*。 下一步，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成 Windows 可执行程序名为 Setup.exe，也称为*引导程序*。 引导程序负责在运行应用程序之前，安装这些系统必备组件。 有关选择这些系统必备组件的详细信息，请参阅[Prerequisites Dialog Box](../ide/reference/prerequisites-dialog-box.md)。  

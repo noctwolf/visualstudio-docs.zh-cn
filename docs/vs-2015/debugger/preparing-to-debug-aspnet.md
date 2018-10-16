@@ -1,7 +1,7 @@
 ---
 title: 调试 ASP.NET 的准备工作 |Microsoft Docs
 ms.custom: ''
-ms.date: 2018-06-30
+ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.reviewer: ''
 ms.suite: ''
@@ -21,18 +21,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d9f19e062f60f1f72ca1f7e3ee54aeb211e4b75
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 57031fa7529a7ef12c7ad8c2c61b41194bd18f74
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "47470389"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49171492"
 ---
 # <a name="preparing-to-debug-aspnet"></a>调试 ASP.NET 的准备工作
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-本主题的最新版本，请参阅[准备调试 ASP.NET](https://docs.microsoft.com/visualstudio/debugger/preparing-to-debug-aspnet)。  
-  
 本部分介绍如何设置[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]调试[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]或 WCF 应用程序。  
   
 ## <a name="in-this-section"></a>本节内容  
@@ -49,7 +47,7 @@ ms.locfileid: "47470389"
  列出在远程服务器上调试 Web 应用程序的系统必备。  
   
  [如何： 在 Windows Server 2003 上配置 IIS](http://msdn.microsoft.com/en-us/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
- 讨论为满足在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 上调试 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 的系统要求而需要执行的特殊配置步骤。  
+ 讨论为满足在 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 上调试 [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)] 的系统需求而需要执行的特殊配置步骤。  
   
  [如何：调试自托管的 WCF 服务](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
  描述针对未承载于 IIS 或 ASP.NET Development Server 上的 WCF 服务的调试步骤。  
