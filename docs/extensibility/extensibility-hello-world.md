@@ -9,16 +9,16 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0d5ab3c86c454a547ea80307c5440441424b1c
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499560"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356751"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展： Hello World
 
-此 Hello World 示例指导创建适用于 Visual Studio 在第一个扩展。 本教程将演示如何将新的命令添加到 Visual Studio。
+此 Hello World 示例指导创建适用于 Visual Studio 在第一个扩展。 本教程演示如何将新的命令添加到 Visual Studio。
 
 在此过程中，你将了解如何：
 
@@ -35,11 +35,12 @@ ms.locfileid: "39499560"
 
 在开始之前，请确保已安装**Visual Studio 扩展开发**工作负荷包括 VSIX 模板将需要和示例代码。
 
-注意： 可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 若要创建 Visual Studio 扩展性项目。
+> [!NOTE]
+> 可以使用任何版本的 Visual Studio （Community、 Professional 或 Enterprise） 若要创建 Visual Studio 扩展性项目。
 
 ## <a name="create-an-extensibility-project"></a>创建可扩展性项目
 
-步骤 1。 从**文件**菜单上，单击**新项目**。 在屏幕的底部，可以输入你的项目的名称。
+步骤 1。 从**文件**菜单上，单击**新项目**。 在屏幕的底部，输入你的项目的名称。
 
 步骤 2。 从**模板**菜单上，单击**Visual C#**，单击**扩展性**，然后单击**VSIX 项目**。
 
@@ -53,15 +54,15 @@ ms.locfileid: "39499560"
 
 步骤 1。 如果您选择的清单，可以看到哪些选项是可更改，为实例、 元数据、 说明和版本。
 
-步骤 2。 右键单击项目 （而不是解决方案）。 在上下文菜单上，单击**外**，然后单击**用户控件**。
+步骤 2。 右键单击项目 （而不是解决方案）。 在上下文菜单上，单击**外**，然后单击**新项**。
 
-步骤 3。 返回到**扩展性**部分，并单击**自定义命令**。
+步骤 3。 选择**扩展性**部分，并单击**自定义命令**。
 
 步骤 4。 在中**名称**底部字段中，为其提供一个名称，例如*Command.cs*。
 
 ![自定义命令](media/hello-world-custom-command.png)
 
-您的新命令将被列入**解决方案资源管理器**下**资源**分支。 这是在这里可找到与您的命令，例如，如果你想要修改图像的 PNG 和 ICO 文件相关的其他文件。
+您的新命令所示**解决方案资源管理器**下**资源**分支。 这是在这里可找到与您的命令，例如，如果你想要修改图像的 PNG 和 ICO 文件相关的其他文件。
 
 ## <a name="modify-the-source-code"></a>修改源代码
 
