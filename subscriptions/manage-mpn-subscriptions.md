@@ -9,12 +9,12 @@ description: 对于 MPN 合作伙伴而言，如何将 Visual Studio 订阅分�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a81cf891a58a8c6bf206b057b883d133d92b0a85
-ms.sourcegitcommit: 3724338a5da5a6d75ba00452b0a607388b93ed0c
+ms.openlocfilehash: 4a113d88b93b5fe7532a72956ca6129be1773ebe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2018
-ms.locfileid: "30862765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949105"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>管理通过 Microsoft 合作伙伴网络 (MPN) 提供的 Visual Studio 订阅
 
@@ -68,7 +68,7 @@ Microsoft Action Pack 订阅者和 Visual Studio 订阅
 
 > [!NOTE]
 > Visual Studio 订阅需要技术联系人角色
-    - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
+>     - 第 8 页 - 为能力合作伙伴分配 Visual Studio 订阅
 
 ## <a name="need-help"></a>需要帮助？
 订阅者和计划管理器应直接与 Microsoft 合作伙伴网络支持团队协作，以解决订阅者访问订阅时出现的任何问题。 请访问[“支持合作伙伴”](https://partner.microsoft.com/support)页寻求帮助。 （需要提供 MPN 登录凭据。）

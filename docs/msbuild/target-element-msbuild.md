@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b1b886346a43e75d38a8ea8b6ed7a8b8d7391293
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9085861418f11ed63f76a6493a6927c63530759b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152456"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918787"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 包含一组要连续执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务。  
@@ -73,18 +73,18 @@ ms.locfileid: "39152456"
 
 ### <a name="child-elements"></a>子元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Task](../msbuild/task-element-msbuild.md)|创建并执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务的实例。 目标中可能有零个或零个以上的任务。|  
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|包含一组用户定义的 `Property` 元素。 自 .NET Framework 3.5 起，`Target` 元素可能包含 `PropertyGroup` 元素。|  
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|包含一组用户定义的 `Item` 元素。 自 .NET Framework 3.5 起，`Target` 元素可能包含 `ItemGroup` 元素。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。|  
-|[OnError](../msbuild/onerror-element-msbuild.md)|对于失败的任务，如果 `ContinueOnError` 属性为 ErrorAndStop（或 `false`），则会出现一个或多个要执行的任务。 目标中可能有零个或零个以上的 `OnError` 元素。 如果存在 `OnError` 元素，则其必须为 `Target` 元素中最后的元素。<br /><br /> 有关 `ContinueOnError` 属性的详细信息，请参阅 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。|  
+| 元素 | 描述 |
+| - | - |
+| [Task](../msbuild/task-element-msbuild.md) | 创建并执行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 任务的实例。 目标中可能有零个或零个以上的任务。 |
+| [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | 包含一组用户定义的 `Property` 元素。 自 .NET Framework 3.5 起，`Target` 元素可能包含 `PropertyGroup` 元素。 |
+| [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | 包含一组用户定义的 `Item` 元素。 自 .NET Framework 3.5 起，`Target` 元素可能包含 `ItemGroup` 元素。 有关详细信息，请参阅[项](../msbuild/msbuild-items.md)。 |
+| [OnError](../msbuild/onerror-element-msbuild.md) | 对于失败的任务，如果 `ContinueOnError` 属性为 ErrorAndStop（或 `false`），则会出现一个或多个要执行的任务。 目标中可能有零个或零个以上的 `OnError` 元素。 如果存在 `OnError` 元素，则其必须为 `Target` 元素中最后的元素。<br /><br /> 有关 `ContinueOnError` 属性的详细信息，请参阅 [Task 元素 (MSBuild)](../msbuild/task-element-msbuild.md)。 |
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
+| 元素 | 描述 |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 
 ## <a name="remarks"></a>备注  
  在运行时指定第一个要执行的目标。 目标可依赖于其他目标。 例如，部署的目标依赖于编译的目标。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 引擎按依赖关系在 `DependsOnTargets` 属性中出现的顺序从左到右依次执行依赖关系。 有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)。  

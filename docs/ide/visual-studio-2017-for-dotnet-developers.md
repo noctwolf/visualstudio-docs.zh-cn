@@ -12,12 +12,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545bcaa46226b315fb338e352968c5b74dd0232f
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 31800a7ec4e5a008234f7ee72b6c43bba559fbf9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495786"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928342"
 ---
 # <a name="visual-studio-2017-c-productivity-guide"></a>Visual Studio 2017 C# 工作效率指南
 
@@ -57,7 +57,7 @@ Visual Studio 常用快捷方式如下：
 > [!NOTE]
 > 一些扩展取消绑定默认的 Visual Studio 键绑定。 若要使用以上命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具” > “导入和导出设置” > “重置所有设置”，或转到“工具” > “选项” > “键盘” > “重置”。
 
-参阅[我们的文档](..\ide\tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
+参阅[我们的文档](../ide/tips-and-tricks-for-visual-studio.md)了解 Visual Studio 中的更多键盘快捷键和命令。
 
 ## <a name="i-need-a-way-to-quickly-navigate-to-files-or-types"></a>我需要一种快速导航到文件或类型的方法
 
@@ -161,7 +161,7 @@ Visual Studio 2017 具有许多功能可帮助你搜索和导航基本代码。 
 | 启用导航到反编译源 | 对外部源的类型/成员启用“转到定义”并使用 ILSpy 反编译程序显示方法体 | “工具” > “选项” > “文本编辑器” > “C#” > “高级” > “启用导航到反编译源” |
 | 完成/建议模式 | 更改 IntelliSense 中的完成行为 - 有 IntelliJ 背景的开发人员往往会更改此处的默认设置 | “菜单” > “编辑” > “IntelliSense” > “切换完成模式” |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | 显示编辑器中的代码引用信息和更改历史记录 | “工具” > “选项” > “文本编辑器” > “所有语言” > “CodeLens” |
-| [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 |  键入代码片段名称，然后按两次 Tab。 |
+| [代码片段](../ide/visual-csharp-code-snippets.md) | 帮助去掉常见样本 | 键入代码片段名称，然后按两次 Tab。 |
 
 ## <a name="missing-a-feature-that-makes-you-productive-or-experiencing-poor-performance"></a>缺少提供工作效率的功能或性能体验较差？
 

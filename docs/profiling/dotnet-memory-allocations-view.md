@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bda60d1e18f18d602f95d1eafb5843811cdc5f24
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b7a473a7c6758fe58c82f8894822d3a250165a43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933672"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。  
   
  类型行中的数据显示在分析运行期间创建的该类型对象的总数，以及为该类型对象分配的总字节数。 类型的非独占值和独占值始终相同。  
   
--   非独占值用于在函数及其子函数（由调用树中的父函数调用）的实例中创建的对象。  
+- 非独占值用于在函数及其子函数（由调用树中的父函数调用）的实例中创建的对象。  
   
--   独占值用于父函数调用函数时，函数直接创建的对象。 不包括在子函数中创建的对象。  
+- 独占值用于父函数调用函数时，函数直接创建的对象。 不包括在子函数中创建的对象。  
   
- 函数的数据显示创建的对象数，以及为父类型对象分配的字节数。  
+  函数的数据显示创建的对象数，以及为父类型对象分配的字节数。  
   
 ## <a name="highlight-the-execution-hot-path"></a>突出显示执行热路径  
  可以找到调用树中创建了最多父类型对象的执行路径。  

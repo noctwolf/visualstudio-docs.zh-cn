@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37dfbb9fda19363aefa1600fe9b0186862963cc1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 27a9da182a2e4db76db0b5221178dfa6dc371723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942993"
 ---
 # <a name="immediate-window"></a>即时窗口
 **即时**窗口用于调试和计算表达式、执行语句、输出变量值等。 借助即时窗口，用户可输入要在调试期间使用开发语言计算或执行的表达式。 若要显示**即时**窗口，请打开要编辑的项目，然后从“调试”菜单中选择“窗口”，再选择“即时”，或按 CTRL+ALT+I。
@@ -54,27 +54,27 @@ ms.locfileid: "39177693"
 
 #### <a name="to-execute-a-function-at-design-time"></a>在设计时执行函数
 
-1.  将下面的代码复制到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 控制台应用程序中：
+1. 将下面的代码复制到 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 控制台应用程序中：
 
-    ```vb
-    Module Module1
+   ```vb
+   Module Module1
 
-        Sub Main()
-            MyFunction(5)
-        End Sub
+       Sub Main()
+           MyFunction(5)
+       End Sub
 
-        Function MyFunction(ByVal input as Integer) As Integer
-            Return input * 2
-        End Function
+       Function MyFunction(ByVal input as Integer) As Integer
+           Return input * 2
+       End Function
 
-    End Module
-    ```
+   End Module
+   ```
 
-2.  在“调试”菜单中单击“窗口”，然后单击“即时”。
+2. 在“调试”菜单中单击“窗口”，然后单击“即时”。
 
-3.  在**即时**窗口中键入 `?MyFunction(2)`，然后按 Enter。
+3. 在**即时**窗口中键入 `?MyFunction(2)`，然后按 Enter。
 
-     **即时**窗口将运行 `MyFunction` 并显示 `4`。
+    **即时**窗口将运行 `MyFunction` 并显示 `4`。
 
 如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参阅[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。
 
@@ -131,5 +131,5 @@ ms.locfileid: "39177693"
 - [在 Visual Studio 中进行调试](../../debugger/debugging-in-visual-studio.md)
 - [调试器基础知识](../../debugger/getting-started-with-the-debugger.md)
 - [演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [在 Visual Studio 中使用正则表达式](../../ide/using-regular-expressions-in-visual-studio.md)
