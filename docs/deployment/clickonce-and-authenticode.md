@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2943766bb7b0df6d2e0974f8a8c1b52747f31526
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: bc0018533f089c2be3d0a94093bf41deadd9a74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907438"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce 和 Authenticode
 *验证码* 是使用行业标准加密，通过验证应用程序发行者真实性的数字证书对应用程序代码进行签名的 Microsoft 技术。 通过对应用程序部署使用验证码， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以降低遭受特洛伊木马程序攻击的风险。 特洛伊木马程序是一种病毒或其他有害的程序，恶意的第三方将其伪装成来自已确认且可信任的源的合法程序。 用数字证书为 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署签名是用于验证程序集和文件是否经过篡改的可选步骤。  
@@ -39,11 +39,11 @@ ms.locfileid: "39512205"
   
  可以通过以下三种方法之一获取代码签名证书：  
   
--   从证书供应商处购买证书。  
+- 从证书供应商处购买证书。  
   
--   从组织中负责创建数字证书的组中接收证书。  
+- 从组织中负责创建数字证书的组中接收证书。  
   
--   通过使用 New-selfsignedcertificate PowerShell cmdlet，或生成你自己的证书*MakeCert.exe*，包含在[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。  
+- 通过使用 New-selfsignedcertificate PowerShell cmdlet，或生成你自己的证书*MakeCert.exe*，包含在[!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]。  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>如何使用证书颁发机构可帮助用户  
  使用 New-selfsignedcertificate 生成的证书或*MakeCert.exe*通常称为实用工具*自发证书*或*测试证书*。这种证书的工作原理非常相同的方式 *.snk*文件可在.NET Framework 中工作。 它只包含公钥/私钥加密密钥对，不包含有关发行者的可验证信息。 可以使用自发证书在 Intranet 上部署具有高信任级别的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 但是，当这些应用程序在客户端计算机上运行时， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 会将它们标识为来自未知发行者。 默认情况下，使用自发证书签名并在 Internet 上部署的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序不能使用受信任的应用程序部署。  
@@ -68,7 +68,7 @@ ms.locfileid: "39512205"
   
 ### <a name="store-certificates"></a>将证书存储  
   
--   您可以将存储证书作为 *.pfx*文件放到文件系统，或您可以将其存储在密钥容器。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下*MakeCert.exe*会将证书存储在个人密钥容器中，除非另行指定，它应将其保存到 *.pfx*相反。 *Mage.exe*并*MageUI.exe*，则[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]的工具来创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，使你能够使用上述任一方式中存储的证书。  
+- 您可以将存储证书作为 *.pfx*文件放到文件系统，或您可以将其存储在密钥容器。 Windows 域上的用户可拥有若干数目的密钥容器。 默认情况下*MakeCert.exe*会将证书存储在个人密钥容器中，除非另行指定，它应将其保存到 *.pfx*相反。 *Mage.exe*并*MageUI.exe*，则[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]的工具来创建[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署，使你能够使用上述任一方式中存储的证书。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

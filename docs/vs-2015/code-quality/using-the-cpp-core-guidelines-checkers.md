@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fc975ab5c9c1e43b79ddd861bca3a61e9005f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63cd97a23f26d23b99aa7c93be90cef91a630856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906157"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + Core Guidelines 检查器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,25 +35,25 @@ C + + Core Guidelines 了一可移植的指导原则、 规则和有关在 c + +
   
 #### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project"></a>若要将 Microsoft.CppCoreCheck 包添加到你的项目  
   
-1.  在中**解决方案资源管理器**，右键单击以在你想要添加到包的解决方案中打开你的项目的上下文菜单。 选择**管理 NuGet 包**以打开**NuGet 包管理器**。  
+1. 在中**解决方案资源管理器**，右键单击以在你想要添加到包的解决方案中打开你的项目的上下文菜单。 选择**管理 NuGet 包**以打开**NuGet 包管理器**。  
   
-2.  在中**NuGet 包管理器**窗口中，搜索 Microsoft.CppCoreCheck。  
+2. 在中**NuGet 包管理器**窗口中，搜索 Microsoft.CppCoreCheck。  
   
-     ![Nuget 包管理器窗口中显示了 CppCoreCheck 包](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
+    ![Nuget 包管理器窗口中显示了 CppCoreCheck 包](../code-quality/media/cppcorecheck-nuget-window.PNG "CPPCoreCheck_Nuget_Window")  
   
-3.  选择 Microsoft.CppCoreCheck 包，然后选择**安装**按钮将规则添加到你的项目。  
+3. 选择 Microsoft.CppCoreCheck 包，然后选择**安装**按钮将规则添加到你的项目。  
   
- NuGet 包将其他 MSBuild.targets 文件添加到项目中，这些项目上启用代码分析时调用。 此.targets 文件将作为其他扩展的 c + + Core Check 规则添加到 Visual Studio 代码分析工具。  
+   NuGet 包将其他 MSBuild.targets 文件添加到项目中，这些项目上启用代码分析时调用。 此.targets 文件将作为其他扩展的 c + + Core Check 规则添加到 Visual Studio 代码分析工具。  
   
- 可以通过选择您的项目中启用代码分析**生成时启用代码分析**中的复选框**代码分析**一部分**属性页**对话框你的项目。  
+   可以通过选择您的项目中启用代码分析**生成时启用代码分析**中的复选框**代码分析**一部分**属性页**对话框你的项目。  
   
- ![代码分析常规设置的属性页](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
+   ![代码分析常规设置的属性页](../code-quality/media/cppcorecheck-codeanalysis-general.png "CPPCoreCheck_CodeAnalysis_General")  
   
- C + + Core Check 规则成为运行时启用代码分析的默认规则集的一部分。 由于 c + + Core Check 规则是在开发下，某些规则可能不是可用于所有代码，但在开发过程中可能是信息性。 这些规则会释放为实验性。 您可以选择是否要为你的项目属性中运行的已发布或实验性的规则。  
+   C + + Core Check 规则成为运行时启用代码分析的默认规则集的一部分。 由于 c + + Core Check 规则是在开发下，某些规则可能不是可用于所有代码，但在开发过程中可能是信息性。 这些规则会释放为实验性。 您可以选择是否要为你的项目属性中运行的已发布或实验性的规则。  
   
- ![代码分析扩展设置的属性页](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
+   ![代码分析扩展设置的属性页](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
- 若要启用或禁用 c + + Core Check 规则集，请打开**属性页**对话框为您的项目。 下**配置属性**，展开**代码分析**，**扩展**。 在下拉列表中来控制旁边**启用 c + + Core Check （已发布）** 或**启用 c + + Core Check （实验性）**，选择**是**或者**否**。 选择**确定**或**应用**以保存所做的更改。  
+   若要启用或禁用 c + + Core Check 规则集，请打开**属性页**对话框为您的项目。 下**配置属性**，展开**代码分析**，**扩展**。 在下拉列表中来控制旁边**启用 c + + Core Check （已发布）** 或**启用 c + + Core Check （实验性）**，选择**是**或者**否**。 选择**确定**或**应用**以保存所做的更改。  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>检查类型、 边界和生存期  
  C + + Core Check 包当前包含的检查器，即[类型安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type)，[界限安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds)，并[生存期安全](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime)配置文件。  
@@ -81,15 +81,15 @@ int main()
   
  此示例演示了几个 c + + Core Check 规则可以找到的警告：  
   
--   C26494 是规则 Type.5： 始终初始化对象。  
+- C26494 是规则 Type.5： 始终初始化对象。  
   
--   C26485 是规则 Bounds.3： 没有数组指针的衰减。  
+- C26485 是规则 Bounds.3： 没有数组指针的衰减。  
   
--   C26481 是规则 Bounds.1： 请勿使用指针算法。 请改用 `span`。  
+- C26481 是规则 Bounds.1： 请勿使用指针算法。 请改用 `span`。  
   
- 如果安装并启用时编译此代码前, 两个警告是输出，但禁止第三个 c + + Core Check 代码分析规则集。 下面是示例代码的生成输出：  
+  如果安装并启用时编译此代码前, 两个警告是输出，但禁止第三个 c + + Core Check 代码分析规则集。 下面是示例代码的生成输出：  
   
- **1 >---启动生成： 项目： CoreCheckExample、 配置： Debug Win32-**  
+  **1 >---启动生成： 项目： CoreCheckExample、 配置： Debug Win32-**  
 **----**  
 **1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj-> C:\Users\username\documents\visual studio 2015\P**  

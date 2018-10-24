@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab8ab81c83f98a7a35620db7cbb10a0f700d78e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 831fb08941e16abdb197d3a25e71f2a20fcb14cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909674"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理程序集签名和清单签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,23 +40,23 @@ ms.locfileid: "49172739"
 ## <a name="asset-types-and-signing"></a>资产类型和签名  
  可对 .NET 程序集和应用程序清单进行签名。 其中包括：  
   
--   可执行文件 (.exe)  
+- 可执行文件 (.exe)  
   
--   应用程序清单 (.exe.manifest)  
+- 应用程序清单 (.exe.manifest)  
   
--   部署清单 (.application)  
+- 部署清单 (.application)  
   
--   共享组件程序集 (.dll)  
+- 共享组件程序集 (.dll)  
   
- 必须对以下类型的资产进行签名：  
+  必须对以下类型的资产进行签名：  
   
-1.  程序集，如果希望将它们部署到全局程序集缓存 (GAC)。  
+1. 程序集，如果希望将它们部署到全局程序集缓存 (GAC)。  
   
-2.  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序和部署清单。 Visual Studio 默认情况下将启动对这些应用程序的签名。  
+2. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序和部署清单。 Visual Studio 默认情况下将启动对这些应用程序的签名。  
   
-3.  主互操作程序集，适用于 COM 互操作性。 从 COM 类型库中创建主互操作程序集时，TLBIMP 实用程序将强制实施强命名。  
+3. 主互操作程序集，适用于 COM 互操作性。 从 COM 类型库中创建主互操作程序集时，TLBIMP 实用程序将强制实施强命名。  
   
- 通常不应该对可执行文件进行签名。 强命名组件无法引用与应用程序一同部署的非强命名组件。 Visual Studio 不会对应用程序可执行文件进行签名，但会对指向弱命名可执行文件的应用程序清单进行签名。 通常应避免对应用程序专用的组件进行签名，因为签名可能增加管理依赖项的难度。  
+   通常不应该对可执行文件进行签名。 强命名组件无法引用与应用程序一同部署的非强命名组件。 Visual Studio 不会对应用程序可执行文件进行签名，但会对指向弱命名可执行文件的应用程序清单进行签名。 通常应避免对应用程序专用的组件进行签名，因为签名可能增加管理依赖项的难度。  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何对 Visual Studio 中的程序集进行签名  
  若要对应用程序或组件进行签名，可使用项目属性窗口中的“签名”选项卡（在“解决方案资源管理器”中，右键单击项目节点并选择“属性”，或在“快速启动”窗口中键入 **project properties**，或在“解决方案资源管理器”窗口中按 ALT + ENTER）。 选择“签名”选项卡，然后选中“为程序集签名”复选框。  

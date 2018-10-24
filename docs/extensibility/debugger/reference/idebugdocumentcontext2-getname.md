@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetName |Microsoft 文档
+title: IDebugDocumentContext2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ded573db818b2343c13a8618f5b76323b8543a96
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83fb1927f6772c9ded79405d13f1d9958f92cc8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903603"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 获取包含此文档上下文中的文档的可显示名称。  
@@ -43,16 +43,16 @@ int GetName(
   
 #### <a name="parameters"></a>参数  
  `gnType`  
- [in]取值范围为[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，指定要返回名称的类型。  
+ [in]中的值[GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)枚举，用于指定要返回名称的类型。  
   
  `pbstrFileName`  
- [out]返回文件的名称。  
+ [out]返回的文件的名称。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法通常将转发到调用[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)方法，除非文档上下文写入存储 （如示例所示） 的文档名称本身。  
+ 此方法通常将转发到调用[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)方法，除非文档上下文写入存储文档名称本身 （如示例所示）。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何实现此方法对于简单`CDebugContext`公开的对象[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。  
@@ -94,6 +94,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

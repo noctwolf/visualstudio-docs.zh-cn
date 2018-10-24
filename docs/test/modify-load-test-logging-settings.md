@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 61b67cb950ee1d429f5f65ef745ff5ac75ca69d8
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2adef763b46a00f380ef7fb0f9f2d0a3ecdcfb8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909687"
 ---
 # <a name="modify-load-test-logging-settings"></a>修改负载测试日志记录设置
 
@@ -24,7 +24,7 @@ ms.locfileid: "39379652"
 测试控制器会在测试运行期间将收集的所有负载测试样本数据后台处理到一个数据库日志中。 其他数据（如计时详细信息和错误详细信息）会在测试完成时加载到该数据库中。
 
 |任务|关联主题|
-|----------|-----------------------|
+|-|-----------------------|
 |**指定负载测试运行期间保存日志的频率：** 可以指定在负载测试运行时希望保存测试日志的频率。|-   [如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
 |**在负载测试未通过时保存日志：** 可以指定是否每当负载测试未通过就保存测试日志。|-   [如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 |**为日志文件设置最大文件大小：** 可以编辑与测试控制器服务关联的 XML 配置文件，以指定要用于日志文件的最大文件大小。|[如何：为日志文件指定最大大小](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 5403b1945739c39392ba31006ad932a7eccda4ff
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904643"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有执行从 Web 服务的财务数据计算的 Microsoft Office Excel 的 VSTO 外接程序中，其他解决方案可以通过调用 Excel VSTO 外接程序在运行时执行这些计算。  
@@ -59,28 +59,28 @@ ms.locfileid: "39511520"
 2.  重写 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 方法。 返回要向其他解决方案公开的类的实例。  
   
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>定义你想要向其他解决方案公开的类  
- 至少，你想要公开的类必须是公共，它必须具有<xref:System.Runtime.InteropServices.ComVisibleAttribute>属性设置为**true**，并且必须公开[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)接口。  
+ 要公开的类必须至少是公共类，必须将 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性设置为 **true**，并且必须公开 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 接口。  
   
- 建议的方法来公开[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)接口是执行以下步骤：  
+ 建议通过执行以下步骤公开 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 接口：  
   
-1.  定义一个接口，该接口声明要向其他解决方案公开的成员。 可以在 VSTO 外接程序项目中定义此接口。 但是，如果要向非 VBA 解决方案公开类，以便调用 VSTO 外接程序的解决方案无需引用 VSTO 外接程序项目即可引用此接口，则可能需要在单独的类库项目中定义此接口。  
+1. 定义一个接口，该接口声明要向其他解决方案公开的成员。 可以在 VSTO 外接程序项目中定义此接口。 但是，如果要向非 VBA 解决方案公开类，以便调用 VSTO 外接程序的解决方案无需引用 VSTO 外接程序项目即可引用此接口，则可能需要在单独的类库项目中定义此接口。  
   
-2.  将 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性应用到此接口，并将此属性设置为 **true**。  
+2. 将 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 属性应用到此接口，并将此属性设置为 **true**。  
   
-3.  修改你的类以实现此接口。  
+3. 修改你的类以实现此接口。  
   
-4.  将应用<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性为您的类，并将此属性设置为**无**的值<xref:System.Runtime.InteropServices.ClassInterfaceType>枚举。  
+4. 将应用<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性为您的类，并将此属性设置为**无**的值<xref:System.Runtime.InteropServices.ClassInterfaceType>枚举。  
   
-5.  如果你想要公开此类向进程外客户端，可能还需要执行以下操作：  
+5. 如果你想要公开此类向进程外客户端，可能还需要执行以下操作：  
   
-    -   从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>派生类。 有关详细信息，请参阅[公开向进程外客户端类](#outofproc)。  
+   -   从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject>派生类。 有关详细信息，请参阅[公开向进程外客户端类](#outofproc)。  
   
-    -   在定义此接口的项目中设置“为 COM 互操作注册”  属性。 此属性是必需的仅当你想要启用客户端使用早期绑定来调入 VSTO 外接程序。  
+   -   在定义此接口的项目中设置“为 COM 互操作注册”  属性。 此属性是必需的仅当你想要启用客户端使用早期绑定来调入 VSTO 外接程序。  
   
- 下面的代码示例演示一个 `AddInUtilities` 类，该类具有可由其他解决方案调用的 `ImportData` 方法。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+   下面的代码示例演示一个 `AddInUtilities` 类，该类具有可由其他解决方案调用的 `ImportData` 方法。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
- [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
+   [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
+   [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
 ### <a name="expose-classes-to-vba"></a>公开到 VBA 类  
  执行上述步骤时，VBA 代码只能调用在接口中声明的方法。 VBA 代码无法调用类中的任何其他方法，包括类从基类（如 <xref:System.Object>）中获取的方法。  
@@ -105,13 +105,13 @@ ms.locfileid: "39511520"
 ## <a name="access-objects-from-other-solutions"></a>从其他解决方案访问对象  
  若要调用 VSTO 外接程序中公开的对象，请在客户端解决方案中执行下列步骤：  
   
-1.  获取表示公开的 VSTO 外接程序的 <xref:Microsoft.Office.Core.COMAddIn> 对象。 通过在主机 Office 应用程序的对象模型中使用 `Application.COMAddIns` 属性，客户端可以访问所有可用的 VSTO 外接程序。  
+1. 获取表示公开的 VSTO 外接程序的 <xref:Microsoft.Office.Core.COMAddIn> 对象。 通过在主机 Office 应用程序的对象模型中使用 `Application.COMAddIns` 属性，客户端可以访问所有可用的 VSTO 外接程序。  
   
-2.  访问的 COMAddIn.Object 属性<xref:Microsoft.Office.Core.COMAddIn>对象。 此属性从 VSTO 外接程序返回公开的对象。  
+2. 访问的 COMAddIn.Object 属性<xref:Microsoft.Office.Core.COMAddIn>对象。 此属性从 VSTO 外接程序返回公开的对象。  
   
-3.  调用已公开对象的成员。  
+3. 调用已公开对象的成员。  
   
- 使用 COMAddIn.Object 属性的返回值的方式是不同的 VBA 客户端和非 VBA 客户端。 对于进程外客户端，需要其他代码以避免可能的争用情况。  
+   使用 COMAddIn.Object 属性的返回值的方式是不同的 VBA 客户端和非 VBA 客户端。 对于进程外客户端，需要其他代码以避免可能的争用情况。  
   
 ### <a name="access-objects-from-vba-solutions"></a>从 VBA 解决方案访问对象  
  下面的代码示例演示如何使用 VBA 调用 VSTO 外接程序公开的方法。 此 VBA 宏将调用一个名为方法`ImportData`VSTO 外接程序中名为定义**ExcelImportData**。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
@@ -150,7 +150,7 @@ utilities.ImportData();
  [演练： VSTO 外接程序中从 VBA 调用代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [通过使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

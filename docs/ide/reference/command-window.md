@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a6dee20c35b290b50306d5484dc139e8a7600a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 447a01f96c9f642bca743247551bc2b3d38e4d23
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905944"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。
@@ -55,7 +55,7 @@ ms.locfileid: "36235097"
  以下快捷键有助于在命令模式中进行导航。
 
 |操作|光标位置|键绑定|
-|------------|---------------------|----------------|
+|------------| - |----------------|
 |循环通过以前输入的命令的列表。|输入行|向上键 & 向下键|
 |向上滚动窗口。|“命令”窗口内容|Ctrl+向上键|
 |向下滚动窗口。|“命令”窗口内容|向下键或 Ctrl+向下键|
@@ -114,5 +114,5 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)
