@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::CanDetach |Microsoft 文档
+title: IDebugProcess2::CanDetach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49cc87352c3869fd8a954457ad14ec1486b4198
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 23a4ec112c33100a2eed8e4853f5a6280a741e12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942135"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 确定会话调试管理器 (SDM) 可以与进程分离。  
@@ -40,6 +40,6 @@ int CanDetach();
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK.`返回`S_FALSE`如果调试器无法从进程中分离。 否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

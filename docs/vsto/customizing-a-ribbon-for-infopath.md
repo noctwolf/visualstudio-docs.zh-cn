@@ -16,27 +16,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 250e3ed3fb548dad26bc29f83fae35b8e6727c9f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f0a6a50ca1e84d9b1f5508cccbad24607f36b3f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670422"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942057"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：  
   
--   显示在设计模式下打开的窗体模板的窗口。  
+- 显示在设计模式下打开的窗体模板的窗口。  
   
--   显示基于窗体模板的窗体的窗口。  
+- 显示基于窗体模板的窗体的窗口。  
   
--   “打印预览”窗口。  
+- “打印预览”窗口。  
   
- **适用于：** 本主题中的信息适用于 InfoPath 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  **适用于：** 本主题中的信息适用于 InfoPath 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
- 用户和设计人员在设计模式下打开一个窗体模板，以修改该模板的外观和布局。 用户打开基于窗体模板的窗体，以添加内容。  
+  用户和设计人员在设计模式下打开一个窗体模板，以修改该模板的外观和布局。 用户打开基于窗体模板的窗体，以添加内容。  
   
- 通过“打印预览”窗口，设计人员和用户可以在打印窗体或窗体模板页面之前进行预览。  
+  通过“打印预览”窗口，设计人员和用户可以在打印窗体或窗体模板页面之前进行预览。  
   
 > [!NOTE]  
 >  “打印预览”窗口中不显示  “外接程序”选项卡。 如果希望“打印预览”窗口中显示一个自定义选项卡，请确保该选项卡的“OfficeId”  属性未设置成“TabAddIns” 。  

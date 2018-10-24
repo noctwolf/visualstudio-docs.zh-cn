@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft 文档
+title: IDebugPendingBreakpoint2::EnumErrorBreakpoints |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bf419ccf3b0935dccf1fa4e56ec156bc4338da6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4c43c3bd314ae9db7025448b2632562e9ae947c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942265"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
-获取源于此挂起断点的所有错误断点的列表。  
+获取来自此挂起断点的所有错误断点的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,10 +44,10 @@ int EnumErrorBreakpoints(
   
 #### <a name="parameters"></a>参数  
  `bpErrorType`  
- [in]从值的组合[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)选择要枚举的错误类型的枚举。  
+ [in]中值的组合[BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)选择要枚举的错误的类型的枚举。  
   
  `ppEnum`  
- [out]返回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)对象，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)对象。  
+ [out]返回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)对象，其中包含一系列[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。  
@@ -127,7 +127,7 @@ HRESULT CPendingBreakpoint::EnumErrorBreakpoints(
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
