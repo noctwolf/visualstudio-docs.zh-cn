@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22e44ace13e0f70bf74b71f17975b3a45cb76471
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: cf20b3f742bfc5ff6de6af080f3651f9d9027234
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940965"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练： 为 Word 创建第一个 VSTO 外接程序
   本介绍性演练说明如何创建 Microsoft Office Word 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的文档无关。  
@@ -32,15 +32,15 @@ ms.locfileid: "38808893"
   
  本演练阐释了以下任务：  
   
--   创建 Word VSTO 外接程序项目。  
+- 创建 Word VSTO 外接程序项目。  
   
--   编写代码，使用 Word 的对象模型在保存文档时向文档中添加文本。  
+- 编写代码，使用 Word 的对象模型在保存文档时向文档中添加文本。  
   
--   生成并运行项目，以对其进行测试。  
+- 生成并运行项目，以对其进行测试。  
   
--   清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
+- 清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -78,25 +78,25 @@ ms.locfileid: "38808893"
   
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>向已保存的文档添加文本段落  
   
-1.  在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 新的代码定义 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件处理程序，该事件在保存文档时引发。  
+1. 在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 新的代码定义 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件处理程序，该事件在保存文档时引发。  
   
-     用户保存文档时，该事件处理程序会将新文本添加到文档的开头。  
+    用户保存文档时，该事件处理程序会将新文本添加到文档的开头。  
   
-     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
-    > [!NOTE]  
-    >  此代码使用索引值为 1 来访问 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
+   > [!NOTE]  
+   >  此代码使用索引值为 1 来访问 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
   
-2.  如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_DocumentBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件连接在一起。  
+2. 如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_DocumentBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件连接在一起。  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- 为了在保存文档后对其进行修改，前面的代码示例使用以下对象：  
+   为了在保存文档后对其进行修改，前面的代码示例使用以下对象：  
   
 -   `ThisAddIn` 类的 `Application` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Word.Application> 对象，该对象表示 Word 的当前实例。  
   
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件处理程序的 `Doc` 参数。 `Doc` 参数是一个 <xref:Microsoft.Office.Interop.Word.Document> 对象，用于表示已保存的文档。 有关详细信息，请参阅[Word 对象模型概述](../vsto/word-object-model-overview.md)。  
+-   `Doc` 事件的事件处理程序的 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 参数。 `Doc` 参数是一个 <xref:Microsoft.Office.Interop.Word.Document> 对象，用于表示已保存的文档。 有关详细信息，请参阅[Word 对象模型概述](../vsto/word-object-model-overview.md)。  
   
 ## <a name="test-the-project"></a>测试项目  
   

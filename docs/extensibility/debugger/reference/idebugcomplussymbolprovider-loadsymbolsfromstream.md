@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream |Microsoft 文档
+title: IDebugComPlusSymbolProvider::LoadSymbolsFromStream |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a01c5c14262beb36aed5d093b2bb34d4c14ef4ca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 264112b3de5d8bcaabe555602bbc93f96c98fe9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101167"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937910"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbolsfromstream"></a>IDebugComPlusSymbolProvider::LoadSymbolsFromStream
-加载调试符号给定数据流。  
+加载调试符号提供数据流。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,10 +51,10 @@ int LoadSymbolsFromStream(
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `baseAddress`  
- [in]基本内存地址。  
+ [in]基本的内存地址。  
   
  `pUnkMetadataImport`  
  [in]包含符号元数据的对象。  
@@ -66,7 +66,7 @@ int LoadSymbolsFromStream(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。 方法调用[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)方法。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。 方法调用[LoadSymbolsFromStreamWithCorModule](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2-loadsymbolsfromstreamwithcormodule.md)方法。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(  
@@ -81,5 +81,5 @@ HRESULT CDebugSymbolProvider::LoadSymbolsFromStream(
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

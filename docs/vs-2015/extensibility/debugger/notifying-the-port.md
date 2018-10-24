@@ -15,27 +15,27 @@ ms.assetid: f9fce48e-7d4e-4627-a0fb-77b75428146a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0ce692e30951c6a74203b71690a26001ccc0b48f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4faaea47196e6d247aa62c5a9d067970ddeaaec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263544"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937024"
 ---
 # <a name="notifying-the-port"></a>通知端口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 启动后一个程序，该端口必须得到通知，请按如下所示：  
   
-1.  当一个端口收到新的程序节点时，将回复到调试会话发送程序创建事件。 事件将携带的表示该程序的接口。  
+1. 当一个端口收到新的程序节点时，将回复到调试会话发送程序创建事件。 事件将携带的表示该程序的接口。  
   
-2.  调试会话查询可以将附加到调试引擎 (DE) 的标识符的程序。  
+2. 调试会话查询可以将附加到调试引擎 (DE) 的标识符的程序。  
   
-3.  调试会话进行检查以查看 DE 是否为该程序允许 DEs 列表上。 调试会话获取此列表从解决方案的活动程序设置，最初传递给它的调试包。  
+3. 调试会话进行检查以查看 DE 是否为该程序允许 DEs 列表上。 调试会话获取此列表从解决方案的活动程序设置，最初传递给它的调试包。  
   
-     DE 必须位于允许列表中，否则设备将不会附加到程序。  
+    DE 必须位于允许列表中，否则设备将不会附加到程序。  
   
- 以编程方式，当一个端口先接收新的程序节点，它会创建[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口来表示该程序。  
+   以编程方式，当一个端口先接收新的程序节点，它会创建[IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)接口来表示该程序。  
   
 > [!NOTE]
 >  不应与混淆这`IDebugProgram2`接口更高版本创建的调试引擎 (DE)。  

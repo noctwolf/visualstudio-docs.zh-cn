@@ -1,5 +1,5 @@
 ---
-title: UdtKind |Microsoft 文档
+title: UdtKind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b95d8bfeda0cd8d5efdaab6d0c2fd13a34c8407c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 49ea6a46825bbb94d55b0e9f9a4c052a1c12ae5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470626"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936558"
 ---
 # <a name="udtkind"></a>UdtKind
-描述的各种用户定义类型 (UDT)。  
+介绍不同的用户定义类型 (UDT)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,13 +43,13 @@ enum UdtKind {
  UDT 是一个类。  
   
  UdtUnion  
- UDT 为联合。  
+ UDT 是一个联合。  
   
  UdtInterface  
  UDT 是一个接口。  
   
 ## <a name="remarks"></a>备注  
- 此枚举中的值由[idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)方法。  
+ 返回此枚举中的值[idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： cvconst.h  

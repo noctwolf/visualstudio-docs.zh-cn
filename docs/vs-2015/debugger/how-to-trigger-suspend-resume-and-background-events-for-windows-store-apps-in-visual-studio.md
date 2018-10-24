@@ -21,12 +21,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5496e9b5122d2f2206118445a4e7316c2717bc37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 12c22b8ef7aa545e4256c8b122395a72508b94ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214755"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938378"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>如何在 Visual Studio 中触发 Windows 应用商店应用的挂起、继续和后台事件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49214755"
   
  [触发后台任务](#BKMK_Trigger_background_tasks)  
   
--   [从标准调试会话中触发后台任务事件](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+- [从标准调试会话中触发后台任务事件](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [在应用程序未运行时触发后台任务](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+- [在应用程序未运行时触发后台任务](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [从安装的应用程序中触发进程生命期管理事件和后台任务](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+  [从安装的应用程序中触发进程生命期管理事件和后台任务](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [诊断后台任务激活错误](#BKMK_Diagnosing_background_task_activation_errors)  
+  [诊断后台任务激活错误](#BKMK_Diagnosing_background_task_activation_errors)  
   
 ##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 触发进程生命期管理事件  
  在当用户从应用程序切换至别处时或在 Windows 进入电量不足状态时，Windows 可挂起应用程序。 可响应 `Suspending` 事件，将相关的应用程序和用户数据保存到永久存储并释放资源。 从 **“已挂起”** 状态继续应用程序时，该应用程序将进入 **“正在运行”** 状态，并从其挂起之处继续。 可响应 `Resuming` 事件，还原或刷新应用程序状态并回收资源。  

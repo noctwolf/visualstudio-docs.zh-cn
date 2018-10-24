@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a30ac892489d832f4b6dc2d0c51efb6192e77419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941940"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>如何：创建可以为 null 的类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49179421"
   
  可以为 null 的类型是 <xref:System.Nullable%601> 结构的实例。 可以为 null 的类型的每个实例都有两个公共只读属性，`HasValue` 和 `Value`：  
   
--   `HasValue` 是一种 `bool` 类型，指示变量是否包含定义的值。 `True` 表示该变量包含非 null 值。 可以通过使用语句（如 `if (x.HasValue)` 或 `if (y != null)`）来测试定义的值。  
+- `HasValue` 是一种 `bool` 类型，指示变量是否包含定义的值。 `True` 表示该变量包含非 null 值。 可以通过使用语句（如 `if (x.HasValue)` 或 `if (y != null)`）来测试定义的值。  
   
--   `Value` 的类型与基础类型相同。 如果 `HasValue` 为 `True`，则 `Value` 包含有意义的值。 如果 `HasValue` 为 `False`，则访问 `Value` 将引发无效的操作异常。  
+- `Value` 的类型与基础类型相同。 如果 `HasValue` 为 `True`，则 `Value` 包含有意义的值。 如果 `HasValue` 为 `False`，则访问 `Value` 将引发无效的操作异常。  
   
- 默认情况下，声明某个变量是可以为 null 的类型后，它将不具备定义的值（即 `HasValue` 为 `False`），而非其基础值类型的默认值。  
+  默认情况下，声明某个变量是可以为 null 的类型后，它将不具备定义的值（即 `HasValue` 为 `False`），而非其基础值类型的默认值。  
   
- 类设计器显示可以为 null 的类型，就像显示其基础类型一样。  
+  类设计器显示可以为 null 的类型，就像显示其基础类型一样。  
   
- 若要深入了解 Visual C# 中可以为 null 的类型，请参阅[可以为 null 的类型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
+  若要深入了解 Visual C# 中可以为 null 的类型，请参阅[可以为 null 的类型](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>使用类设计器添加可以为 null 的类型  
   

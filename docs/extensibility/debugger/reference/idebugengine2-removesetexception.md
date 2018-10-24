@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::RemoveSetException |Microsoft 文档
+title: IDebugEngine2::RemoveSetException |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 664111f28ef23e6bf78fc96f26808d1b7ccb7a85
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4880bfc80f27c362deb056b176492eb62ec6f975
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941538"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
-删除指定的异常，以便不再由的调试引擎。  
+以便不再由调试引擎中移除指定的异常。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,10 +47,10 @@ int RemoveSetException(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 正在删除的异常必须已在以前设置的以前调用[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)方法。  
+ 要删除的异常必须之前已设置到的早期调用[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)方法。  
   
- 若要在一次删除所有组异常，请调用[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)方法。  
+ 若要立即删除组的所有异常，请调用[RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

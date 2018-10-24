@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_COMPARE |Microsoft 文档
+title: CONTEXT_COMPARE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0563f037f77c18cc5e686c1ea6acf429c91ad06d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9a17d0b422b65093721a55d4bf8d632aba271a55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950783"
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
 指定用于比较两个内存上下文的条件。  
@@ -58,36 +58,36 @@ public enum enum_CONTEXT_COMPARE {
   
 ## <a name="members"></a>成员  
  CONTEXT_EQUAL  
- 查找列表，它等于目标内存上下文中的第一个内存上下文。  
+ 在列表中，它等于目标内存上下文中找到的第一个内存上下文。  
   
  CONTEXT_LESS_THAN  
- 在小于目标内存上下文的列表中找到的第一个内存上下文。  
+ 小于目标内存上下文在列表中找到的第一个内存上下文。  
   
  CONTEXT_GREATER_THAN  
- 在大于目标内存上下文的列表中找到的第一个内存上下文。  
+ 在列表的最大目标内存上下文中找到的第一个内存上下文。  
   
  CONTEXT_LESS_THAN_OR_EQUAL  
- 小于或等于目标内存上下文的列表中找到的第一个内存上下文。  
+ 小于或等于目标内存上下文在列表中找到的第一个内存上下文。  
   
  CONTEXT_GREATER_THAN_OR_EQUAL  
- 在大于或等于目标内存上下文的列表中找到的第一个内存上下文。  
+ 大于或等于目标内存上下文在列表中找到的第一个内存上下文。  
   
  CONTEXT_SAME_SCOPE  
- 在与目标内存上下文相同作用域中的列表中找到的第一个内存上下文。  
+ 目标内存上下文与同一作用域中在列表中找到的第一个内存上下文。  
   
  CONTEXT_SAME_FUNCTION  
- 在与目标内存作用域相同的功能的列表中找到的第一个内存上下文。  
+ 在与目标内存范围内相同的功能是在列表中找到的第一个内存上下文。  
   
  CONTEXT_SAME_MODULE  
- 在中的目标内存上下文相同的模块的列表中找到的第一个内存上下文。  
+ 中的目标内存上下文是相同的模块列表中找到的第一个内存上下文。  
   
  CONTEXT_SAME_PROCESS  
- 在与目标内存上下文相同的进程的列表中找到的第一个内存上下文。  
+ 在与目标内存上下文相同的进程列表中找到的第一个内存上下文。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
+ 作为参数传递[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
   
- 这些值用于在满足指定的比较条件列表中找到的第一个内存上下文。 内存上下文提供一组内存上下文将自身针对通过进行比较`IDebugMemoryContext2::Compare`方法。 为其比较运算符的列表中的第一个内存上下文`true`随后会返回。  
+ 这些值用于满足指定的比较条件列表中找到的第一个内存上下文。 内存上下文提供一系列内存上下文来比较本身对通过`IDebugMemoryContext2::Compare`方法。 为其所比较运算符列表中的第一个内存上下文`true`然后返回。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -96,6 +96,6 @@ public enum enum_CONTEXT_COMPARE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
