@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 202ba0f384fb658efd45ec446b27a385c98c37d4
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 52260b2cd401f8cdbd3a94704ab29db2f64fdc6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39511778"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842230"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>UI 文本和 Visual Studio 的帮助
 ##  <a name="BKMK_UITextAndTerminology"></a> UI 文本和术语  
@@ -315,15 +315,15 @@ ms.locfileid: "39511778"
   
  此解决方案进行可能会导致 bug 的四个假设：  
   
--   在对话框的帮助按钮是**IDHELP** (9)。  
+- 在对话框的帮助按钮是**IDHELP** (9)。  
   
--   隐藏帮助按钮时，对话框看起来正确。  
+- 隐藏帮助按钮时，对话框看起来正确。  
   
--   该对话框不能将替换其 winproc。  
+- 该对话框不能将替换其 winproc。  
   
--   对话框中未嵌入在另一个对话框。  
+- 对话框中未嵌入在另一个对话框。  
   
- 如果您的对话框位于 msenv 内，但不使用**VBDialogBoxParam**，调查利用**VBDialogBoxParam**实现自己的处理程序之前。  
+  如果您的对话框位于 msenv 内，但不使用**VBDialogBoxParam**，调查利用**VBDialogBoxParam**实现自己的处理程序之前。  
   
 ##### <a name="dialogs-created-through-other-packages"></a>通过其他包创建的对话框  
  您可以实现你自己的解决方案位于外部 msenv 的对话框。 你的 VSPackage 中的共享的对话框类，请考虑移到标题栏按钮或在每个对话框实现一个处理程序。 下面的代码是实现以帮助您入门的骨架：  

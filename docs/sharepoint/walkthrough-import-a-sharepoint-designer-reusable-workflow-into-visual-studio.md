@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19c2ab969de8f3e1e24cf789ae3979d2c15809b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 249799bc9daf13992bd9fe03dff8c86263f91263
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851473"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>演练： 导入 Visual Studio SharePoint Designer 可重用工作流
   本演练演示如何导入到的 SharePoint Designer 2010 中创建的可重用工作流[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工作流项目。  
@@ -38,17 +38,17 @@ ms.locfileid: "42626497"
   
  本演练演示了下列任务：  
   
--   在 SharePoint Designer 中创建简单的可重用工作流。  
+- 在 SharePoint Designer 中创建简单的可重用工作流。  
   
--   导出到 SharePoint Designer 可重用工作流 *.wsp*文件并在 SharePoint 中。  
+- 导出到 SharePoint Designer 可重用工作流 *.wsp*文件并在 SharePoint 中。  
   
--   导入 *.wsp*文件到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用导入可重用工作流项目。  
+- 导入 *.wsp*文件到[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用导入可重用工作流项目。  
   
--   通过添加代码来更改工作流。  
+- 通过添加代码来更改工作流。  
   
--   在 SharePoint 站点中使用导入工作流。  
+- 在 SharePoint 站点中使用导入工作流。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -64,21 +64,21 @@ ms.locfileid: "42626497"
   
 #### <a name="to-create-sharepoint-subsites"></a>若要创建 SharePoint 子站点  
   
-1.  在 SharePoint Designer 2010，在菜单栏上，选择**文件** > **新建空白网站**。  
+1. 在 SharePoint Designer 2010，在菜单栏上，选择**文件** > **新建空白网站**。  
   
-2.  在中**新建空白网站**对话框中，浏览到 SharePoint 站点，你想要创建工作流，或使用值 http://*SystemName*/，然后选择**确定**按钮。  
+2. 在中**新建空白网站**对话框中，浏览到 SharePoint 站点，你想要创建工作流，或使用值 http://<em>SystemName</em>/，然后选择**确定**按钮。  
   
-     将显示该主页。  
+    将显示该主页。  
   
-3.  在中**子站点**部分中，选择**新建**按钮。  
+3. 在中**子站点**部分中，选择**新建**按钮。  
   
-4.  在中**新建**对话框框中，选择**SharePoint 模板**从列表中的左窗格中，然后选择**团队网站**从右窗格中列表。  
+4. 在中**新建**对话框框中，选择**SharePoint 模板**从列表中的左窗格中，然后选择**团队网站**从右窗格中列表。  
   
-5.  中**指定的 Web 站点位置**框中，替换的单词**子站点**在 URL 中以**SPD1**，然后选择**确定**按钮。  
+5. 中**指定的 Web 站点位置**框中，替换的单词**子站点**在 URL 中以**SPD1**，然后选择**确定**按钮。  
   
-     这将打开 SharePoint Designer 到新的子网站。 关闭 SharePoint Designer 的此实例，并返回到第一个实例 （顶层站点）。  
+    这将打开 SharePoint Designer 到新的子网站。 关闭 SharePoint Designer 的此实例，并返回到第一个实例 （顶层站点）。  
   
-6.  重复步骤 3-5，创建第二个子站点，这一次替换为单词**subsite**中[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]与**SPD2**。  
+6. 重复步骤 3-5，创建第二个子站点，这一次替换为单词**subsite**中[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]与**SPD2**。  
   
 ## <a name="create-a-sharepoint-designer-reusable-workflow"></a>创建 SharePoint Designer 可重用工作流
  因为 SharePoint 中不包含任何可用于此示例中的可重用工作流，则将创建一个。 此简单的工作流用户具有特定标题的任务列表中输入新任务的任务分配给该用户。  
@@ -158,32 +158,32 @@ ms.locfileid: "42626497"
   
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>若要从.wsp 文件导入工作流并对其进行修改  
   
-1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在菜单栏上依次选择**文件** > **新建** > **项目**。  
+1. 在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在菜单栏上依次选择**文件** > **新建** > **项目**。  
   
-2.  在中**新的项目**对话框框中，展开**SharePoint**下**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
+2. 在中**新的项目**对话框框中，展开**SharePoint**下**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
   
-3.  在**模板**窗格中，选择**导入可重用 SharePoint 2010 工作流**模板中，将作为项目的名称**WorkflowImportProject1**，然后选择**确定**按钮。  
+3. 在**模板**窗格中，选择**导入可重用 SharePoint 2010 工作流**模板中，将作为项目的名称**WorkflowImportProject1**，然后选择**确定**按钮。  
   
-     SharePoint 自定义向导将显示。  
+    SharePoint 自定义向导将显示。  
   
-4.  上**指定用于调试的网站和安全级别**页上，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]第二个 SharePoint 子站点之前创建的： http://*系统名称*/SPD2。  
+4. 上**指定用于调试的网站和安全级别**页上，输入[!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)]第二个 SharePoint 子站点之前创建的： http://<em>系统名称</em>/SPD2。  
   
-5.  在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮，然后选择**下一步**按钮。  
+5. 在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮，然后选择**下一步**按钮。  
   
-     有关沙盒的详细信息与场解决方案，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
+    有关沙盒的详细信息与场解决方案，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
-6.  在中**指定新项目源**页上，浏览到以前保存的位置在系统上 *.wsp*文件，打开该文件，然后选择**下一步**按钮。  
+6. 在中**指定新项目源**页上，浏览到以前保存的位置在系统上 *.wsp*文件，打开该文件，然后选择**下一步**按钮。  
   
-    > [!NOTE]  
-    >  选择**完成**按钮以导入中的所有可用项 *.wsp*文件。  
+   > [!NOTE]  
+   >  选择**完成**按钮以导入中的所有可用项 *.wsp*文件。  
   
-     这将显示可用于导入可重用工作流的列表。  
+    这将显示可用于导入可重用工作流的列表。  
   
-7.  在中**选择要导入的项**框中，选择**SPD 任务工作流**工作流，然后选择**完成**按钮。  
+7. 在中**选择要导入的项**框中，选择**SPD 任务工作流**工作流，然后选择**完成**按钮。  
   
-     导入操作完成后，一个名为项目**WorkflowImportProject1**将创建包含名为工作流**SPD_Workflow_TestFT**。 在此文件夹是工作流的定义文件*Elements.xml*和工作流设计器文件 (*.xoml*)。 该设计器包含两个文件： 规则文件 (.rules) 和代码隐藏文件 (任一 *.cs*或 *.vb*，取决于你的项目的编程语言)。  
+    导入操作完成后，一个名为项目**WorkflowImportProject1**将创建包含名为工作流**SPD_Workflow_TestFT**。 在此文件夹是工作流的定义文件*Elements.xml*和工作流设计器文件 (*.xoml*)。 该设计器包含两个文件： 规则文件 (.rules) 和代码隐藏文件 (任一 *.cs*或 *.vb*，取决于你的项目的编程语言)。  
   
-8.  在中**解决方案资源管理器**，删除**其他已导入文件**文件夹。  
+8. 在中**解决方案资源管理器**，删除**其他已导入文件**文件夹。  
   
 9. 在中*Elements.xml*文件，请删除`InstantiationURL="_layouts/IniErkflIP.sspx"`。  
   
@@ -203,11 +203,11 @@ ms.locfileid: "42626497"
   
 13. 在中**Windows 工作流 v3.0**的节点**工具箱**，执行以下步骤之一：  
   
-    -   打开快捷菜单**代码**活动，然后选择**副本**。 在工作流设计器中，打开下方的行的快捷菜单**SequenceActivity1**活动，然后选择**粘贴**。  
+    - 打开快捷菜单**代码**活动，然后选择**副本**。 在工作流设计器中，打开下方的行的快捷菜单**SequenceActivity1**活动，然后选择**粘贴**。  
   
-    -   拖动**代码**活动从**工具箱**到工作流设计器，并将其连接到下一行**SequenceActivity1**活动。  
+    - 拖动**代码**活动从**工具箱**到工作流设计器，并将其连接到下一行**SequenceActivity1**活动。  
   
-     这将活动添加到名为工作流设计器**CodeActivity1**。 在此活动中，您将添加在通知列表中创建一个公告，当用户开始工作流的代码操作。  
+      这将活动添加到名为工作流设计器**CodeActivity1**。 在此活动中，您将添加在通知列表中创建一个公告，当用户开始工作流的代码操作。  
   
 14. 执行下面的某一组步骤：  
   

@@ -28,12 +28,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1691c8cd10e74f5d139fefa5b57471c86f9e6e6c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bda1af9a47d512d2d35f509aee96cc71964a47ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912027"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,33 +70,33 @@ ms.locfileid: "49193552"
   
 ### <a name="to-build-only-the-startup-project-and-its-dependencies"></a>仅生成启动项目及其依赖项  
   
-1.  在菜单栏上，依次选择“工具” 、“选项” 。  
+1. 在菜单栏上，依次选择“工具” 、“选项” 。  
   
-2.  在“选项”对话框框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。  
+2. 在“选项”对话框框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。  
   
-     将打开“选项”对话框 ->“项目和解决方案”->“生成和运行”。  
+    将打开“选项”对话框 ->“项目和解决方案”->“生成和运行”。  
   
-3.  选择“在运行时仅生成启动项目和依赖项”复选框。  
+3. 选择“在运行时仅生成启动项目和依赖项”复选框。  
   
-     选中此复选框后，执行以下步骤之一时，将仅生成当前启动项目及其依赖项：  
+    选中此复选框后，执行以下步骤之一时，将仅生成当前启动项目及其依赖项：  
   
-    -   在菜单栏上，依次选择“调试”“启动”(F5)。  
+   - 在菜单栏上，依次选择“调试”“启动”(F5)。  
   
-    -   在菜单栏上，依次选择“生成”和“生成解决方案”(CTRL+SHIFT+B)。  
+   - 在菜单栏上，依次选择“生成”和“生成解决方案”(CTRL+SHIFT+B)。  
   
      清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。 默认情况下清除此复选框。  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>仅生成选定的 Visual C++ 项目  
   
-1.  选择 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目，然后在菜单栏上选择“生成”、“仅项目”以及下列命令之一：  
+1. 选择 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目，然后在菜单栏上选择“生成”、“仅项目”以及下列命令之一：  
   
-    -   **仅生成** *ProjectName*  
+   - **仅生成** *ProjectName*  
   
-    -   **仅重新生成** *ProjectName*  
+   - **仅重新生成** *ProjectName*  
   
-    -   **仅清理** *ProjectName*  
+   - **仅清理** *ProjectName*  
   
-    -   **仅链接** *ProjectName*  
+   - **仅链接** *ProjectName*  
   
      这些命令仅适用于所选的 [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] 项目，而不会生成、重新生成、清理或链接任何项目依赖项或解决方案文件。 根据 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的版本，“仅项目”子菜单可能包含更多命令。  
   

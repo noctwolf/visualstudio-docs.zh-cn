@@ -10,12 +10,12 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7bd65f109b15ce955da4b71139882358a7e1d1b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58596bc4ab8286641ddeda8bec7f9200da5ccd25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289193"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874106"
 ---
 # <a name="setup-and-install"></a>设置和安装
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ ms.locfileid: "49289193"
   
 要使用 Xamarin 从常见的 C#/.NET 代码基础生成本机 iOS、Android 和 Windows 应用，你需要具备以下项目：  
   
--   若要使用 Windows 和 Android 应用：需具备安装了 Visual Studio 2015 和 Xamarin 4 的 Windows 开发计算机（详见下方注释）。 （还可按照 [Xamarin 直接安装](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 中的说明使用 Visual Studio 2013。）   
+- 若要使用 Windows 和 Android 应用：需具备安装了 Visual Studio 2015 和 Xamarin 4 的 Windows 开发计算机（详见下方注释）。 （还可按照 [Xamarin 直接安装](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 中的说明使用 Visual Studio 2013。）   
   
--   若要使用 iOS 应用：需具备安装了 XCode 和 Xamarin 且采用 OS X Yosemite (10.10.5) 或更高版本的 Mac。  
+- 若要使用 iOS 应用：需具备安装了 XCode 和 Xamarin 且采用 OS X Yosemite (10.10.5) 或更高版本的 Mac。  
   
- 可同时设置 Windows 和 Mac 计算机，在这些安装程序运行期间，可通过[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)阅读和观看必要的背景材料。  
+  可同时设置 Windows 和 Mac 计算机，在这些安装程序运行期间，可通过[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)阅读和观看必要的背景材料。  
  
 如果在执行此设置和安装后使用 Xamarin 时遇到问题，请在 [ forums.xamarin.com](http://forums.xamarin.com/) 上发布你的问题。
   
@@ -63,38 +63,38 @@ ms.locfileid: "49289193"
 > [!TIP]
 >  这些说明适用于 Visual Studio 2015。 若要在 Visual Studio 2013 中使用 Xamarin（需要 Update 2），请按照 [ Xamarin 直接安装](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的说明操作。  
   
-1.  [下载并启动Visual Studio 2015 任何版本（Community、Professional 或 Enterprise）的安装程序](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) 。 Visual Studio 2015 Community 是免费版本；Professional 和Enterprise 版本可免费试用 30 天，30 天后需购买许可证。  
+1. [下载并启动Visual Studio 2015 任何版本（Community、Professional 或 Enterprise）的安装程序](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx) 。 Visual Studio 2015 Community 是免费版本；Professional 和Enterprise 版本可免费试用 30 天，30 天后需购买许可证。  
   
-    1.  如果已安装 Visual Studio，请打开“控制面板”>“程序和功能”，选择“Visual Studio 2015”项，然后单击“更改”。 安装程序打开时，单击“修改”并跳到下面的步骤 3。  
+   1.  如果已安装 Visual Studio，请打开“控制面板”>“程序和功能”，选择“Visual Studio 2015”项，然后单击“更改”。 安装程序打开时，单击“修改”并跳到下面的步骤 3。  
   
-2.  （仅限新安装）在安装程序中，选择“自定义”安装：  
+2. （仅限新安装）在安装程序中，选择“自定义”安装：  
   
-     ![选择 Visual Studio 安装中的“自定义”选项](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
+    ![选择 Visual Studio 安装中的“自定义”选项](../cross-platform/media/cross-plat-xamarin-setup-1.png "Cross-Plat Xamarin Setup 1")  
   
-3.  选中以下选框：  
+3. 选中以下选框：  
   
-    1.  “跨平台移动开发”>“C#/.NET (Xamarin)”。 这也将自动选择“常用工具和软件开发工具包”下的各种 Android 工具。 此选项还应更新现有的所有 Xamarin 安装。  
+   1.  “跨平台移动开发”>“C#/.NET (Xamarin)”。 这也将自动选择“常用工具和软件开发工具包”下的各种 Android 工具。 此选项还应更新现有的所有 Xamarin 安装。  
   
-         ![选择“跨平台移动开发”下的 Xamarin 选项](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
+        ![选择“跨平台移动开发”下的 Xamarin 选项](../cross-platform/media/cross-plat-xamarin-setup-2.png "Cross-Plat Xamarin Setup 2")  
   
-    2.  对于 Windows 8 及更高版本：“跨平台移动开发”>“适用于 Android 的 Microsoft Visual Studio 模拟器”。 注意：如果使用 Windows 7 或更早版本的计算机，或在 Mac 上运行 Windows，请确保*取消勾选*此项。 请参阅步骤 5 后的“Windows 计算机上模拟器的相关备注”。 如果只打算在物理 Android 设备上调试，也可不勾选此项。  
+   2.  对于 Windows 8 及更高版本：“跨平台移动开发”>“适用于 Android 的 Microsoft Visual Studio 模拟器”。 注意：如果使用 Windows 7 或更早版本的计算机，或在 Mac 上运行 Windows，请确保*取消勾选*此项。 请参阅步骤 5 后的“Windows 计算机上模拟器的相关备注”。 如果只打算在物理 Android 设备上调试，也可不勾选此项。  
   
-    3.  （可选）如果计划面向 Windows 设备，还请勾选“Windows 和 Web 开发”>“通用 Windows 应用开发工具”和/或“Windows 8.1 和 Windows Phone 8.0/8.1 工具”。 其中包括安装需要较长下载时间的仿真程序映像的选项；你稍后可以随时返回 Visual Studio 安装程序添加它们。  
+   3.  （可选）如果计划面向 Windows 设备，还请勾选“Windows 和 Web 开发”>“通用 Windows 应用开发工具”和/或“Windows 8.1 和 Windows Phone 8.0/8.1 工具”。 其中包括安装需要较长下载时间的仿真程序映像的选项；你稍后可以随时返回 Visual Studio 安装程序添加它们。  
   
-4.  单击“安装”按钮，让程序运行。 同样，这将需要一些时间才能完成，在此期间可继续查看 Mac 安装说明并浏览[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)。  
+4. 单击“安装”按钮，让程序运行。 同样，这将需要一些时间才能完成，在此期间可继续查看 Mac 安装说明并浏览[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)。  
   
-5.  安装完成后，请启动 Visual Studio 并在系统提示时使用你的 Microsoft 帐户进行登录（此帐户即用于 Windows 的帐户）。 然后通过“工具”>“选项”>“Xamarin”或者“工具”>“选项”>“Xamarin”>“其他”中的“立即检查”链接检查 Xamarin 更新：  
+5. 安装完成后，请启动 Visual Studio 并在系统提示时使用你的 Microsoft 帐户进行登录（此帐户即用于 Windows 的帐户）。 然后通过“工具”>“选项”>“Xamarin”或者“工具”>“选项”>“Xamarin”>“其他”中的“立即检查”链接检查 Xamarin 更新：  
   
-     ![在 Visual Studio 选项中检查 Xamarin 更新](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
+    ![在 Visual Studio 选项中检查 Xamarin 更新](../cross-platform/media/cross-plat-xamarin-setup-3.png "Cross-Plat Xamarin Setup 3")  
   
-    > [!NOTE]
-    >  如前所述，请确保将 Xamarin 更新到版本 4.0.3.214 或更高版本，避免早期 Xamarin 许可证的问题。  
+   > [!NOTE]
+   >  如前所述，请确保将 Xamarin 更新到版本 4.0.3.214 或更高版本，避免早期 Xamarin 许可证的问题。  
 
-    如果在“工具”>“选项”中没有看到 Xamarin 的选项，请仔细检查安装或尝试重启 Visual Studio。 还可在“选项”对话框中搜索 Xamarin。
+   如果在“工具”>“选项”中没有看到 Xamarin 的选项，请仔细检查安装或尝试重启 Visual Studio。 还可在“选项”对话框中搜索 Xamarin。
       
-6.  对于 Windows 7 及更早版本或者在 Mac 上运行 Windows，请使用 [Android SDK 模拟器](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)（若没有物理设备）。 请参见下面的注释。  
+6. 对于 Windows 7 及更早版本或者在 Mac 上运行 Windows，请使用 [Android SDK 模拟器](https://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debug-on-emulator/android-sdk-emulator/)（若没有物理设备）。 请参见下面的注释。  
   
- **Windows 计算机上模拟器的相关备注：** CPU 一次仅支持一种虚拟化技术，因此最好只在开发计算机上采用一种技术。 有 3 种主要的虚拟化技术，分别是：Hyper-V（由适用于 Android 的 Visual Studio 模拟器和 Windows Phone 模拟器使用）、Virtual Box（由 Genymotion 使用）和 Intel HAXM（由 Android SDK 模拟器使用）。 由于 Hyper-V 和 Virtual Box 之间的各种问题，最好在任意给定计算机上仅使用一种模拟器，因此建议在 Windows 8 和更高版本的计算机上使用 Hyper-V，在 Windows 7 和更早版本上以及在 Mac 上运行 Windows 时使用 Intel HAXM 模拟器。  
+   **Windows 计算机上模拟器的相关备注：** CPU 一次仅支持一种虚拟化技术，因此最好只在开发计算机上采用一种技术。 有 3 种主要的虚拟化技术，分别是：Hyper-V（由适用于 Android 的 Visual Studio 模拟器和 Windows Phone 模拟器使用）、Virtual Box（由 Genymotion 使用）和 Intel HAXM（由 Android SDK 模拟器使用）。 由于 Hyper-V 和 Virtual Box 之间的各种问题，最好在任意给定计算机上仅使用一种模拟器，因此建议在 Windows 8 和更高版本的计算机上使用 Hyper-V，在 Windows 7 和更早版本上以及在 Mac 上运行 Windows 时使用 Intel HAXM 模拟器。  
   
 ##  <a name="mac"></a>Mac 设置（Apple ID、Xcode 和 Xamarin）  
   

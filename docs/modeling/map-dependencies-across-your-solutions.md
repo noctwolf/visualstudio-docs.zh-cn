@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5625d79221416a8799d120530d3c463041412417
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 51b03ce504b2fe8f588cf3e360882f97d61664f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896934"
 ---
 # <a name="map-dependencies-with-code-maps"></a>使用代码映射来映射依赖项
 
@@ -138,15 +138,15 @@ ms.locfileid: "39341220"
 
 10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 保存**Ctrl**同时选择你想要关注的项，打开快捷菜单，然后选择**从选定内容新建图**。
 
-   ![显示新代码图上的选定项](../modeling/media/codemapsshowonnewmap.png)
+    ![显示新代码图上的选定项](../modeling/media/codemapsshowonnewmap.png)
 
 11. 将包含上下文转入新代码图。 隐藏解决方案文件夹以及不想要查看使用的任何其他容器**筛选器**窗格。
 
-   ![筛选容器以简化视图](../modeling/media/codemapsexpandnewgroups.png)
+    ![筛选容器以简化视图](../modeling/media/codemapsexpandnewgroups.png)
 
 12. 展开组，选择代码图中的项，以便查看关系。
 
-   ![选择项以查看关系](../modeling/media/codemapsviewnewrelationships.png)
+    ![选择项以查看关系](../modeling/media/codemapsviewnewrelationships.png)
 
 另请参见：
 
