@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 76f7e2f94f358fda50ca1fbb377ce9694b98b487
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e4040a5b370674e7794b09e4d1cae68f424c7792
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756589"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887366"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 
@@ -32,7 +32,7 @@ ms.locfileid: "36756589"
 下表总结了分配给工作流设计器命令的默认键盘快捷键。
 
 |快捷键|用途|
-|--------------|-------------|
+|-|-------------|
 |Ctrl+E，A|显示或隐藏参数设计器。|
 |Ctrl+E，C|就地折叠所选择的活动。|
 |Ctrl+E，E|就地展开所选择的活动。|

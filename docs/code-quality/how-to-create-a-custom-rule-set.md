@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 727c11e24eb3409de89fe211c6a37691dfec298c
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: dce43c02f4976b51bab61a48f615fb0307102fc7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884181"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -34,11 +34,11 @@ ms.locfileid: "39204110"
 
 3. 在中**运行此规则集**下拉列表中，执行下列任一操作：
 
-    - 选择想要自定义的规则集。
+   - 选择想要自定义的规则集。
 
      \- 或 -
 
-    - 选择**\<浏览...>** 指定的现有规则集不在列表中。
+   - 选择**\<浏览...>** 指定的现有规则集不在列表中。
 
 4. 选择**打开**若要在规则集编辑器中显示的规则。
 

@@ -22,12 +22,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5e954550b8d59f1d1672e1229387714ad251a38c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6e4d5be3628cd9653bfc713caea426c91a205419
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204693"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884909"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>How to: Include a Data File in a ClickOnce Application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,37 +36,37 @@ ms.locfileid: "49204693"
   
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>若要将数据文件包括通过使用 Mage.exe  
   
-1.  将数据文件添加到你的应用程序目录与应用程序的文件的其余部分。  
+1. 将数据文件添加到你的应用程序目录与应用程序的文件的其余部分。  
   
-     通常情况下，在应用程序目录将标记为部署的当前版本的目录 — 例如，v1.0.0.0。  
+    通常情况下，在应用程序目录将标记为部署的当前版本的目录 — 例如，v1.0.0.0。  
   
-2.  到列表数据文件中更新应用程序清单。  
+2. 到列表数据文件中更新应用程序清单。  
   
-     **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
+    **mage-u v1.0.0.0\Application.manifest-FromDirectory v1.0.0.0**  
   
-     执行此任务将重新创建应用程序清单中的文件列表，并且还会自动生成的哈希签名。  
+    执行此任务将重新创建应用程序清单中的文件列表，并且还会自动生成的哈希签名。  
   
-3.  在您首选的文本或 XML 编辑器中打开应用程序清单，并找到`file`最近添加的文件的元素。  
+3. 在您首选的文本或 XML 编辑器中打开应用程序清单，并找到`file`最近添加的文件的元素。  
   
-     如果添加一个名为 XML 文件`Data.xml`，该文件将类似于下面的代码示例。  
+    如果添加一个名为 XML 文件`Data.xml`，该文件将类似于下面的代码示例。  
   
- `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  将属性添加`type`到此元素，并将其提供的值为`data`。  
+4. 将属性添加`type`到此元素，并将其提供的值为`data`。  
   
- `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
+   `<file name="Data.xml" writeableType="applicationData" hash="23454C18A2DC1D23E5B391FEE299B1F235067C59" hashalg="SHA1" asmv2:size="39500" />`  
   
-1.  使用密钥对或证书，请重新签名应用程序清单，然后重新签名部署清单。  
+5. 使用密钥对或证书，请重新签名应用程序清单，然后重新签名部署清单。  
   
-     因为它的应用程序清单的哈希已更改，必须重新签名部署清单。  
+    因为它的应用程序清单的哈希已更改，必须重新签名部署清单。  
   
-     **mage-s 应用程序清单-cf cert_file-pwd 密码**  
+    **mage-s 应用程序清单-cf cert_file-pwd 密码**  
   
-     **mage-u 部署清单 appm 应用程序清单**  
+    **mage-u 部署清单 appm 应用程序清单**  
   
-     **mage-s 部署清单-cf certfile-pwd 密码**  
+    **mage-s 部署清单-cf certfile-pwd 密码**  
   
-2.  
+6. 
   
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>若要通过使用 MageUI.exe 中包含的数据文件  
   
