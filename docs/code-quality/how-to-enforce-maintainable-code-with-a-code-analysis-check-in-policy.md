@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8e24b68f39524a9095a6ad5b177ab963f05a
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f0121efb2e226b2407eee7eea50354a80482b1cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281034"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892085"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何： 强制实现代码使用代码分析签入策略
 
@@ -47,15 +47,15 @@ Team foundation 版本控制的管理员可以将代码分析可维护性规则�
 
 2. 选择以下规则对应的复选框：
 
-    -   继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 警告在 5 个以上级别的深度
+   - 继承深度： **CA1501 AvoidExcessiveInheritance** -阈值： 警告在 5 个以上级别的深度
 
-    -   复杂性： **CA1502 AvoidExcessiveComplexity** -阈值： 在超过 25 种的警告
+   - 复杂性： **CA1502 AvoidExcessiveComplexity** -阈值： 在超过 25 种的警告
 
-    -   可维护性索引： **CA1505 AvoidUnmaintainableCode** -阈值： 少于 20 发出警告
+   - 可维护性索引： **CA1505 AvoidUnmaintainableCode** -阈值： 少于 20 发出警告
 
-    -   类耦合度： **CA1506 AvoidExcessiveClassCoupling** -阈值： 多个方法，为 30 个禬筁 80 类发出警告
+   - 类耦合度： **CA1506 AvoidExcessiveClassCoupling** -阈值： 多个方法，为 30 个禬筁 80 类发出警告
 
-    此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
+     此外，如果你想违反规则时阻止成功生成，则选择**将警告视为错误**规则说明旁边的复选框。
 
 3. 单击 **“确定”**。 新签入策略现在适用于未来的签入。
 

@@ -46,39 +46,39 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e1efa6852a9bb1c2ec6cd4cabf63ca761506cad3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca6d6d1e4a3ad6705890efdc40171857781e6d12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220215"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892930"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在 Visual C++ 中，可以使用本机 [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) 捕获常见的运行时错误，例如：  
   
--   堆栈指针损坏。  
+- 堆栈指针损坏。  
   
--   本地数组溢出。  
+- 本地数组溢出。  
   
--   堆栈损坏。  
+- 堆栈损坏。  
   
--   未初始化的局部变量上的依赖项。  
+- 未初始化的局部变量上的依赖项。  
   
--   较短变量赋值的数据丢失。  
+- 较短变量赋值的数据丢失。  
   
- 如果使用带有优化 ( **/RTC** ) 版本的 **/O**，将导致编译器错误。 如果在优化版本中使用 `runtime_checks` 杂注，则该杂注无效。  
+  如果使用带有优化 ( **/RTC** ) 版本的 **/O**，将导致编译器错误。 如果在优化版本中使用 `runtime_checks` 杂注，则该杂注无效。  
   
- 调试启用了运行时检查的程序时，如果出现运行时错误，该程序的默认操作是停止并切换到调试器。 可以更改任何运行时检查的此默认行为。 有关详细信息，请参阅[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。  
+  调试启用了运行时检查的程序时，如果出现运行时错误，该程序的默认操作是停止并切换到调试器。 可以更改任何运行时检查的此默认行为。 有关详细信息，请参阅[管理调试器的异常](../debugger/managing-exceptions-with-the-debugger.md)。  
   
- 下面的过程介绍了如何在调试版本中启用本机运行时检查，以及如何修改本机运行时检查的行为。  
+  下面的过程介绍了如何在调试版本中启用本机运行时检查，以及如何修改本机运行时检查的行为。  
   
- 本节的其他主题提供了有关以下方面的信息：  
+  本节的其他主题提供了有关以下方面的信息：  
   
--   [用 C 运行库自定义运行时检查](../debugger/native-run-time-checks-customization.md)  
+- [用 C 运行库自定义运行时检查](../debugger/native-run-time-checks-customization.md)  
   
--   [使用无 C 运行库的运行时检查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
+- [使用无 C 运行库的运行时检查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)  
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在调试版本中启用本机运行时检查  
   

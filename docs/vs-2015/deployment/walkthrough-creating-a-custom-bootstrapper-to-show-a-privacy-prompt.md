@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 4184e8400c50c518b461a0877f06c54db5f84927
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8bd1101647973a7a8f206159f8910a4e633e5da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893385"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>演练：创建自定义引导程序以显示隐私提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49217953"
   
 #### <a name="to-create-a-consent-dialog-box"></a>若要创建同意对话框  
   
-1.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
+1. 在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-2.  在中**新的项目**对话框中，单击**Windows**，然后单击**WindowsFormsApplication**。  
+2. 在中**新的项目**对话框中，单击**Windows**，然后单击**WindowsFormsApplication**。  
   
-3.  有关**名称**，类型**ConsentDialog**，然后单击**确定**。  
+3. 有关**名称**，类型**ConsentDialog**，然后单击**确定**。  
   
-4.  在设计器中，单击窗体。  
+4. 在设计器中，单击窗体。  
   
-5.  在中**属性**窗口中，更改**文本**属性设置为**更新同意对话框**。  
+5. 在中**属性**窗口中，更改**文本**属性设置为**更新同意对话框**。  
   
-6.  在中**工具箱**，展开**所有 Windows 窗体**，并将其拖**标签**到窗体控件。  
+6. 在中**工具箱**，展开**所有 Windows 窗体**，并将其拖**标签**到窗体控件。  
   
-7.  在设计器中，单击标签控件。  
+7. 在设计器中，单击标签控件。  
   
-8.  在中**属性**窗口中，更改**文本**下的属性**外观**所示：  
+8. 在中**属性**窗口中，更改**文本**下的属性**外观**所示：  
   
-     在 Web 上找到最新的更新检查要安装的应用程序。 单击"我同意"，则表示您授权应用程序检查并自动从 Internet 安装更新。  
+    在 Web 上找到最新的更新检查要安装的应用程序。 单击"我同意"，则表示您授权应用程序检查并自动从 Internet 安装更新。  
   
 9. 在中**工具箱**，拖动**复选框**中间部分的窗体控件。  
   
@@ -118,28 +118,28 @@ ms.locfileid: "49217953"
   
      对于 Visual Basic 开发：  
   
-    1.  在中**解决方案资源管理器**，单击**ConsentDialog**。  
+    1. 在中**解决方案资源管理器**，单击**ConsentDialog**。  
   
-    2.  上**项目**菜单上，单击**添加模块**，然后单击**添加**。  
+    2. 上**项目**菜单上，单击**添加模块**，然后单击**添加**。  
   
-    3.  在 Module1.vb 代码文件中，添加以下代码。  
+    3. 在 Module1.vb 代码文件中，添加以下代码。  
   
-         [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
+        [!code-vb[ConsentDialog#7](../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb#7)]  
   
-    4.  上**项目**菜单上，单击**ConsentDialog 属性**，然后单击**应用程序**选项卡。  
+    4. 上**项目**菜单上，单击**ConsentDialog 属性**，然后单击**应用程序**选项卡。  
   
-    5.  取消选中**启用应用程序框架**。  
+    5. 取消选中**启用应用程序框架**。  
   
-    6.  在中**启动对象**下拉列表菜单中，选择**Module1**。  
+    6. 在中**启动对象**下拉列表菜单中，选择**Module1**。  
   
-        > [!NOTE]
-        >  禁用应用程序框架将禁用功能，例如 Windows XP 视觉样式、 应用程序事件、 初始屏幕、 单实例应用程序和的详细信息。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)（应用程序页、项目设计器 (Visual Basic)。  
+       > [!NOTE]
+       >  禁用应用程序框架将禁用功能，例如 Windows XP 视觉样式、 应用程序事件、 初始屏幕、 单实例应用程序和的详细信息。 有关详细信息，请参阅 [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)（应用程序页、项目设计器 (Visual Basic)。  
   
-     Visual C# 仅适用于开发人员：  
+       Visual C# 仅适用于开发人员：  
   
-     打开 Program.cs 代码文件，并添加以下代码。  
+       打开 Program.cs 代码文件，并添加以下代码。  
   
-     [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
+       [!code-csharp[ConsentDialog#5](../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs#5)]  
   
 26. 上**构建**菜单上，单击**生成解决方案**。  
   

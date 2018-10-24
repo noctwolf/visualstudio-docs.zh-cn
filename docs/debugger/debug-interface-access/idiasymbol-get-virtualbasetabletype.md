@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualbasetabletype |Microsoft 文档'
+title: 'Idiasymbol:: Get_virtualbasetabletype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a299b589a1104dc18559278c777e47500169a57
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 864748c478b03a26affaa622e3b25cb8c7dfd78e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895071"
 ---
 # <a name="idiasymbolgetvirtualbasetabletype"></a>IDiaSymbol::get_virtualBaseTableType
-检索虚拟基表指针的类型。  
+检索的虚拟表，基指针的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,12 +42,12 @@ HRESULT get_virtualBaseTableType(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 虚拟基表指针 (`vbtptr`) 是中的隐藏的指针[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]处理从虚拟基类的继承的 vtable。 A`vbtptr`可以具有不同的大小，具体取决于继承的类。  
+ 虚拟表，基指针 (`vbtptr`) 是中的隐藏的指针[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]vtable 处理从虚拟基类继承。 一个`vbtptr`可以具有不同的大小，具体取决于继承的类。  
   
- 此方法返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)可以用于确定 vbtptr 的大小的对象。  
+ 此方法返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)可用于确定 vbtptr 大小的对象。  
   
 ## <a name="requirements"></a>要求  
   
