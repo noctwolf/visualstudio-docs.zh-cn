@@ -27,16 +27,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ddb993e83cee79afca89d3cd06d55ca9e6fbc19
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cd2a749bc96271e4ed16872f1d5c4a485c55900e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179913"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863943"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>介绍基于 .NET Framework 的国际应用程序
 
-在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，世界通用的应用程序的创建包括两个部分：全球化（设计可以适应不同区域性的应用程序的过程）和本地化（为特定区域性转换资源的过程）。 有关为国际受众设计应用程序的常规信息，请参阅[开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)。
+在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，世界通用的应用程序的创建包括两个部分：全球化（设计可以适应不同区域性的应用程序的过程）和本地化（为特定区域性转换资源的过程）。 有关为国际受众设计应用程序的常规信息，请参阅[开发全球通用应用程序的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)。
 
  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 本地化模型由同时包含应用程序代码和回退资源的主要程序集组成 - 字符串、图像和用于最初开发应用程序时所使用的语言的其他对象。 每个本地化应用程序都会有附属程序集或仅包含经本地化的资源的程序集。 因为主程序集始终包含回退资源，如果在本地化附属程序集中找不到资源，<xref:System.Resources.ResourceManager> 将尝试以层级方式加载它，最终回退到主程序集的资源中。 [用于本地化的资源的分层组织](../ide/hierarchical-organization-of-resources-for-localization.md)中对资源回退系统有更详细的解释。
 

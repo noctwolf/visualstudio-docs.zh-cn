@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 84cf5649eac1d3183eb0c50f4a7010f202363a78
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380800"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813981"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 
@@ -31,7 +31,7 @@ ms.locfileid: "39380800"
 下表演示对部署测试控制器和测试代理建议的硬件需求。
 
 |**配置**|**组件**|**CPU**|**HD**|**内存**|
-|-----------------------|-------------------|-------------|------------|----------------|
+|-|-------------------|-|------------|-|
 |少于 500 个虚拟用户|测试代理|2.6 GHz|10 GB|2 GB|
 |少于 1000 个虚拟用户|测试代理|双处理器，2.6 GHz|10 GB|2 GB|
 |N x 1000 个虚拟用户|测试代理|扩展到 N 个代理，每个代理都具有双处理器 2.6 Ghz|10GB|2GB|

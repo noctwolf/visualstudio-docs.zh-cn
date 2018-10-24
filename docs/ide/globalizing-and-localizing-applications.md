@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abcb55d49b84a97ad7eae241547317d74cc6f71
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 73e638b2474342987963c02f442f5d7a98a6e44e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942463"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863591"
 ---
 # <a name="globalizing-and-localizing-applications"></a>对应用程序进行全球化和本地化
 
@@ -40,7 +40,7 @@ ms.locfileid: "31942463"
 
 ## <a name="see-also"></a>请参阅
 
-- [开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)为国际受众提供关于编程的背景信息。
+- [开发全球通用应用程序的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)为国际受众提供关于编程的背景信息。
 - [类库概述](/dotnet/standard/class-library-overview)介绍可加快和优化开发过程并提供对系统功能的访问的类、接口和值类型。
 - <xref:System.Globalization> 指出该命名空间中的类，这些类定义区域性相关信息，包括语言、国家/地区、使用的日历、日期格式形式、货币、数字以及字符串排序顺序。
 - <xref:System.Resources> 指出该命名空间中的类和接口，这些类和接口使开发人员能够创建、存储和管理应用程序中所使用的、各种区域性特定的各种资源。

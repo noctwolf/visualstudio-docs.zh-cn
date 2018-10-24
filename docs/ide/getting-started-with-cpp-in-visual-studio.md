@@ -13,12 +13,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b49f83813bc5acd64de74a27a025bc78503902c5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: cec2164cf248f9301a2e75f0babe4d6f71726ff2
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747347"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459668"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 入门
 
@@ -151,7 +151,7 @@ Visual Studio 使用项目来组织应用的代码，使用解决方案来组织
 
 此生成完成后，应用创建完成，可在任何命令提示符窗口中复制和运行该应用。 这个应用的作用可能不大，但这是一个好的开始。
 
-祝贺你完成此快速入门！ 如要了解更多示例，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。
+祝贺你完成此快速入门！
 
 ## <a name="see-also"></a>请参阅
 
