@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 971cbe690cc53b0e4035b951570ba8c7aba19313
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 47dc7d38a2ae9b842891d2e36aebd9b009297cbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817036"
 ---
 # <a name="configure-and-use-roslyn-analyzer-rules"></a>配置和使用 Roslyn 分析程序规则
 
@@ -121,15 +121,15 @@ ms.locfileid: "39512166"
 
 您可以禁止显示来自一个或多个诊断**错误列表**的选择的想要禁止显示，并单击右键并选择**禁止** > **在源**或**取消** > **在禁止显示文件**。
 
-   - 如果选择**在源**，则**预览更改**对话框将打开并显示的 C# 预览[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
+- 如果选择**在源**，则**预览更改**对话框将打开并显示的 C# 预览[#pragma 警告](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning)或 Visual Basic [#Disable 警告](/dotnet/visual-basic/language-reference/directives/directives)指令添加到源代码。
 
-      ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
+   ![在代码文件中添加 #pragma 警告的预览](media/pragma-warning-preview.png)
 
-   - 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
+- 如果选择**在禁止显示文件**，则**预览更改**对话框将打开并显示的预览<xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>添加到全局禁止显示文件的属性。
 
-      ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
+   ![SuppressMessage 特性添加到禁止显示文件的预览](media/preview-changes-in-suppression-file.png)
 
-   在中**预览更改**对话框中，选择**应用**。
+在中**预览更改**对话框中，选择**应用**。
 
 **错误列表**显示诊断或从这两个冲突实时代码分析和生成的规则。 由于生成诊断可能是陈旧，例如，如果你已编辑代码来解决冲突，但尚未重新生成，无法禁止显示来自这些诊断**错误列表**。 但是，来自实时分析或智能感知，诊断始终是当前源代码的最新并可从抑制**错误列表**。 如果右键单击或从上下文菜单中禁用禁止显示选项，则它可能是因为有一个或多个生成所选内容中的诊断。 若要从所选内容中排除生成诊断，请切换**错误列表**源筛选器从**生成 + IntelliSense**到**Intellisense 仅**。 然后，选择你想要取消，并在继续操作，因为前面所述的诊断。
 

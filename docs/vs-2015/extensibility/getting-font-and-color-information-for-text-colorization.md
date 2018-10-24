@@ -16,12 +16,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7916e954079d627340a1ca41faeeadf7555acfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 49a787dd67691c581383713a7c98a80816762599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274243"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832714"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>获取字体和颜色信息对文本着色
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ ms.locfileid: "49274243"
   
  若要为着色，VSPackage 必须获取当前**字体和颜色**设置。 VSPackage 可以按以下方式，具体取决于其需要完成此操作：  
   
--   使用的字体和颜色的永久保存机制来检索存储或当前状态。 有关详细信息，请参阅[访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)。  
+- 使用的字体和颜色的永久保存机制来检索存储或当前状态。 有关详细信息，请参阅[访问存储的字体和颜色设置](../extensibility/accessing-stored-font-and-color-settings.md)。  
   
--   使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>接口的一种服务进行要获取的实例的字体和颜色数据<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 还不是字体和颜色提供程序。  
+- 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>接口的一种服务进行要获取的实例的字体和颜色数据<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>，如果 VSPackage 还不是字体和颜色提供程序。  
   
--   实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 接口。  
+- 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> 接口。  
   
- 若要确保通过轮询获得的结果是最新的它可能需要使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口以确定更新是否需要在调用的检索方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。  
+  若要确保通过轮询获得的结果是最新的它可能需要使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口以确定更新是否需要在调用的检索方法之前<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口。  
   
- 后获取字体和颜色信息分析文本要显示来标识需要着色的元素，然后使用相应的字体和颜色在窗口中显示文本。  
+  后获取字体和颜色信息分析文本要显示来标识需要着色的元素，然后使用相应的字体和颜色在窗口中显示文本。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   

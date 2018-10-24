@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f8f16fdd837b266bfcc04f7e35cfbadd12a14fa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96ad41ff6cec9a03c8d57905427dbdf45b5b4ed9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826981"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的辅助功能产品和服务
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ Microsoft 致力于让每位用户可以更便捷地使用其产品和服务。 
 ##  <a name="hearing"></a> 针对有听力障碍人士的客户服务  
  如果你有听力障碍，可以通过文本电话 (TTY/TDD) 服务来了解 Microsoft 产品和客户服务：  
   
--   有关客户服务，请拨打 (800) 892-5234 与 Microsoft Sales Information Center 联系，服务时间为星期一到星期五太平洋时间上午 6:30 至下午 5:30（节假日除外）。  
+- 有关客户服务，请拨打 (800) 892-5234 与 Microsoft Sales Information Center 联系，服务时间为星期一到星期五太平洋时间上午 6:30 至下午 5:30（节假日除外）。  
   
--   有关美国国内技术协助，请拨打 (800) 892-5234 与 Microsoft 产品支持服务联系，服务时间为星期一到星期五太平洋时间上午 6:00 至下午 6:00（节假日除外）。 在加拿大，请拨打 (905) 568-9641，服务时间为星期一到星期五东部时间上午 8:00 至下午 8:00（节假日除外）。  
+- 有关美国国内技术协助，请拨打 (800) 892-5234 与 Microsoft 产品支持服务联系，服务时间为星期一到星期五太平洋时间上午 6:00 至下午 6:00（节假日除外）。 在加拿大，请拨打 (905) 568-9641，服务时间为星期一到星期五东部时间上午 8:00 至下午 8:00（节假日除外）。  
   
- Microsoft 支持服务受使用服务时实施的价格、条款和条件约束。  
+  Microsoft 支持服务受使用服务时实施的价格、条款和条件约束。  
   
 ##  <a name="moreinfo"></a> 更多信息  
  有关计算机辅助技术如何帮助残障人士改善生活的详细信息，请参阅 [Microsoft 辅助功能网站](http://go.microsoft.com/fwlink/?LinkId=8431)。  

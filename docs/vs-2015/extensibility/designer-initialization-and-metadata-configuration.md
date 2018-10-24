@@ -16,12 +16,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96124b0b1dcad9be58759624e30180414eff1439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ea3342f19639a7051e5c9dfb641620b1b6688b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821989"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>设计器初始化和元数据配置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ ms.locfileid: "49260868"
 ### <a name="designer-initialization-by-a-vspackage"></a>设计器初始化的 vspackage  
  VSPackage 应处理由设计器初始化：  
   
-1.  创建一个对象，实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类。  
+1. 创建一个对象，实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类。  
   
-    > [!NOTE]
-    >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类应永远不会在与相同的对象上实现<xref:Microsoft.VisualStudio.Shell.Package>类。  
+   > [!NOTE]
+   >  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>类应永远不会在与相同的对象上实现<xref:Microsoft.VisualStudio.Shell.Package>类。  
   
-2.  注册类实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>作为 VSPackage 的设计器扩展提供支持，通过应用的实例<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>，<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>并<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到提供的 VSPackage 的实现类<xref:Microsoft.VisualStudio.Shell.Package>.  
+2. 注册类实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>作为 VSPackage 的设计器扩展提供支持，通过应用的实例<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>，<xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute>并<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到提供的 VSPackage 的实现类<xref:Microsoft.VisualStudio.Shell.Package>.  
   
- 每当创建任何设计器或设计器组件时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境：  
+   每当创建任何设计器或设计器组件时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境：  
   
-1.  访问每个已注册的设计图面上的扩展提供程序。  
+3. 访问每个已注册的设计图面上的扩展提供程序。  
   
-2.  实例化并初始化每个设计面扩展提供程序实例的<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>对象  
+4. 实例化并初始化每个设计面扩展提供程序实例的<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>对象  
   
-3.  调用每个设计面扩展提供商<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A>方法或<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A>（根据需要） 的方法。  
+5. 调用每个设计面扩展提供商<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnDesignerCreated%2A>方法或<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension.OnComponentCreated%2A>（根据需要） 的方法。  
   
- 在实现时<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>对象作为自己的 VSPackage，成员是重要的：  
+   在实现时<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>对象作为自己的 VSPackage，成员是重要的：  
   
-1.  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境不提供任何控制哪些元数据或其他配置设置的特定`DesignSurfaceExtension`提供程序的修改。 可以为两个或多个`DesignSurfaceExtension`进行最终修改要明确冲突的方式修改相同的设计器功能的提供程序。 它是不确定上次应用的修改。  
+6. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境不提供任何控制哪些元数据或其他配置设置的特定`DesignSurfaceExtension`提供程序的修改。 可以为两个或多个`DesignSurfaceExtension`进行最终修改要明确冲突的方式修改相同的设计器功能的提供程序。 它是不确定上次应用的修改。  
   
-2.  可以显式限制的实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>到特定设计器中，通过应用的实例对象<xref:System.ComponentModel.ToolboxItemFilterAttribute>到该实现。 有关详细信息**工具箱**项筛选，请参阅<xref:System.ComponentModel.ToolboxItemFilterAttribute>和<xref:System.ComponentModel.ToolboxItemFilterType>。  
+7. 可以显式限制的实现<xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>到特定设计器中，通过应用的实例对象<xref:System.ComponentModel.ToolboxItemFilterAttribute>到该实现。 有关详细信息**工具箱**项筛选，请参阅<xref:System.ComponentModel.ToolboxItemFilterAttribute>和<xref:System.ComponentModel.ToolboxItemFilterType>。  
   
 ## <a name="additional-metadata-provisioning"></a>预配其他元数据  
  VSPackage 可以更改在设计时设计器或设计器以外的其他组件的配置。  
@@ -79,23 +79,23 @@ ms.locfileid: "49260868"
   
  修改提供的实例<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>应用于的 VSPackage 的实现<xref:Microsoft.VisualStudio.Shell.Package>可以具有两个作用域之一：  
   
--   全局-的所有新实例的给定组件  
+- 全局-的所有新实例的给定组件  
   
--   本地-与有关仅对当前的 VSPackage 提供的设计图面上创建的组件的实例。  
+- 本地-与有关仅对当前的 VSPackage 提供的设计图面上创建的组件的实例。  
   
- `IsGlobal`的属性<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>应用到 VSPackage 的实现的实例<xref:Microsoft.VisualStudio.Shell.Package>确定此作用域。  
+  `IsGlobal`的属性<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>应用到 VSPackage 的实现的实例<xref:Microsoft.VisualStudio.Shell.Package>确定此作用域。  
   
- 将特性应用到的实现<xref:Microsoft.VisualStudio.Shell.Package>与<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A>的属性<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>对象设置为`true`，如下所示，更改浏览器，以便整个[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境：  
+  将特性应用到的实现<xref:Microsoft.VisualStudio.Shell.Package>与<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute.IsGlobal%2A>的属性<xref:Microsoft.VisualStudio.Shell.Design.ProvideDesignerMetadataAttribute>对象设置为`true`，如下所示，更改浏览器，以便整个[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]环境：  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=true`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
- 如果全局标志已设置为`false`，则此元数据更改当前设计器支持的当前 VSPackage 的本地：  
+  如果全局标志已设置为`false`，则此元数据更改当前设计器支持的当前 VSPackage 的本地：  
   
- `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
+  `[ProvideDesignerMetadata(typeof(Color), typeof(CustomBrowser),`   `IsGlobal=false`  `)]`  
   
- `internal class MyPackage : Package {}`  
+  `internal class MyPackage : Package {}`  
   
 > [!NOTE]
 >  在存在时，设计图面上仅支持创建组件，因此只有组件可以使本地元数据。 在上面的示例中，我们已尝试修改一个属性，如`Color`对象的属性。 如果`false`传入的全局标志`CustomBrowser`将永远不会显示，因为在设计器永远不会实际创建的实例`Color`。 全局标志设置为`false`对于组件，如控件、 计时器和对话框很有用。  

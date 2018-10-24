@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21ca61f29138aee5a4c22cbf872d6698d4180d50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7435d6c7ad210554031994f4a366812f9799ffb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118495"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832096"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项目
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。  
@@ -41,40 +41,40 @@ ms.locfileid: "37118495"
   
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 不支持导入在以下应用程序中创建的解决方案：  
   
--   [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
+- [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)]  
   
--   [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
+- [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)]  
   
--   [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
+- [!INCLUDE[vs_orcas_long](../sharepoint/includes/vs-orcas-long-md.md)]  
   
--   Microsoft SharePoint Designer 2007  
+- Microsoft SharePoint Designer 2007  
   
--   [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
+- [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]  
   
- 虽然通常可以成功导入由这些应用程序创建的解决方案，但该功能未经测试且不受支持。  
+  虽然通常可以成功导入由这些应用程序创建的解决方案，但该功能未经测试且不受支持。  
   
 ## <a name="item-import-restrictions"></a>项导入限制
  尽管可以从现有导入大多数 SharePoint 项 *.wsp*文件中，以下各项不受支持，可能需要进行修改才能正常工作：  
   
--   BDC 实体  
+- BDC 实体  
   
--   代码工作流关联元素  
+- 代码工作流关联元素  
   
--   代码工作流  
+- 代码工作流  
   
--   可视 Web 部件 (.ascx)  
+- 可视 Web 部件 (.ascx)  
   
--   Web 服务 (*.asmx*)  
+- Web 服务 (*.asmx*)  
   
--   内容类型绑定  
+- 内容类型绑定  
   
--   事件接收器  
+- 事件接收器  
   
--   列表定义（模板）  
+- 列表定义（模板）  
   
--   网站定义  
+- 网站定义  
   
- 从解决方案的导出时[!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)]或[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]，这些项将自动从排除 *.wsp*文件。 但是，其他 *.wsp*从不受支持的工具生成的文件可能包含这些项。 （请参阅本主题前面的“支持的 SharePoint 解决方案”。）  
+  从解决方案的导出时[!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)]或[!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]，这些项将自动从排除 *.wsp*文件。 但是，其他 *.wsp*从不受支持的工具生成的文件可能包含这些项。 （请参阅本主题前面的“支持的 SharePoint 解决方案”。）  
   
 ## <a name="what-happens-when-you-import-a-solution"></a>导入解决方案时，会发生什么情况
  当导入使用导入 SharePoint 解决方案包模板时，解决方案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将所有的内容复制 *.wsp*导入文件和尝试协调和保留尽可能多的关联和之间的引用元素和尽可能及其文件。  
@@ -112,7 +112,7 @@ ms.locfileid: "37118495"
  在导入解决方案时，将从导入的功能清单中略去一些可选的功能属性。 如果你想要还原这些属性在新的功能文件中，标识缺少属性： 将原始功能文件与新的功能清单进行比较，并按照本主题中的说明[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md).  
   
 ## <a name="deployment-conflict-detection-is-not-performed-on-built-in-list-instances"></a>不对内置列表实例执行部署冲突检测
- [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不对内置列表实例 （即的默认列表实例 SharePoint 附带） 执行部署冲突检测。 不执行冲突检测是为了避免覆盖 SharePoint 上的内置列表实例。 仍将部署或更新内置列表实例，但不会对其进行删除或覆盖。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 打包和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。  
+ [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不对内置列表实例（即，SharePoint 附带的默认列表实例）执行部署冲突检测。 不执行冲突检测是为了避免覆盖 SharePoint 上的内置列表实例。 仍将部署或更新内置列表实例，但不会对其进行删除或覆盖。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [SharePoint 打包和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。  
   
 ## <a name="import-sharepoint-server-2010-workflows"></a>导入 SharePoint Server 2010 工作流
  如果导入在 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]中创建的工作流，则此工作流在部署后将不会正确运行。 此工作流无法正确运行的原因是，缺少某些程序集且  [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 工作流包含 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 工作流解决方案目前不支持的 InfoPath 窗体。 不过，在修复一些项后（如添加对 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 程序集的引用并重新连接 InfoPath 窗体），可以使已导入的 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)] 工作流正确工作。 [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [导入 SharePoint Server 2010 工作流](http://go.microsoft.com/fwlink/?LinkId=182226).  

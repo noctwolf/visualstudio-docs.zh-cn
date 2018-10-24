@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bd572cfff52537eab58e06ddf8f7a34bb087513c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb3cb13484d427bb5389a0ec89573231376efdf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305371"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811136"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016：用 AssemblyVersionAttribute 标记程序集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
@@ -42,15 +43,15 @@ ms.locfileid: "49305371"
 ## <a name="rule-description"></a>规则说明
  程序集标识包含以下信息：
 
--   程序集名称
+- 程序集名称
 
--   版本号
+- 版本号
 
--   culture
+- culture
 
--   （对于强名称程序集） 的公钥。
+- （对于强名称程序集） 的公钥。
 
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 使用版本号唯一地标识程序集，并绑定到具有强名称的程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 使用版本号唯一地标识程序集，并绑定到具有强名称的程序集中的类型。 版本号与版本和发行者策略一起使用。 默认情况下，仅使用用于生成应用程序的程序集版本运行应用程序。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此规则的冲突，将版本号添加对程序集使用<xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>属性。 请参见以下示例。

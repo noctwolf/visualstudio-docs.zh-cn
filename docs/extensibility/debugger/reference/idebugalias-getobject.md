@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias::GetObject |Microsoft 文档
+title: IDebugAlias::GetObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbcd41c44392ee342bfa26def5fbb60cd030d48b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3210d152001b7c2bf65103d3f846749676786f3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109593"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814826"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
-获取此别名的对象。  
+获取此别名所针对的对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,8 +44,8 @@ int GetObject(
  [out][IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)此别名表示。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)   
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

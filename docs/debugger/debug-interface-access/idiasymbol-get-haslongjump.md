@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_haslongjump |Microsoft 文档'
+title: 'Idiasymbol:: Get_haslongjump |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 79e98b5178c08f95e1da4d2bee1affc0c200d2ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7edf8e42e8c40ab9bbe5d032f026c23f8b7ff147
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463902"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835804"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
-检索一个标志，用于指定函数是否包含的一种用法[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (使用成对[setjmp](/cpp/c-runtime-library/reference/setjmp)命令时，这些对象会形成异常处理的 C 样式方法)。  
+检索一个标志，指定该函数是否包含的一种用法[longjmp](/cpp/c-runtime-library/reference/longjmp)命令 (已与配对[setjmp](/cpp/c-runtime-library/reference/setjmp)命令时，它们构成异常处理的 C 样式方法)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,7 +40,7 @@ HRESULT get_hasLongJump
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

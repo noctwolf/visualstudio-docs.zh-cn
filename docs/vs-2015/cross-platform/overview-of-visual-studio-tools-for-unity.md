@@ -13,12 +13,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9e92050eab33b542cc5b8165aed63fde1e5fc7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 657f54b258d759d0d966f65ff40649e0fb2a0669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823523"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 的概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49287685"
 ## <a name="superior-debugging"></a>出色的调试  
  将 Visual Studio 功能强大的调试器连接到你的 Unity 游戏以调试 C# 脚本和 Dll，无论它是在独立运行还是在 Unity 编辑器中运行。 可以使用你期望从 Visual Studio 获得的所有调试功能。  
   
--   断点，包括条件断点。  
+- 断点，包括条件断点。  
   
--   计算“监视”窗口中的复杂表达式。  
+- 计算“监视”窗口中的复杂表达式。  
   
--   检查和修改变量和参数的值。  
+- 检查和修改变量和参数的值。  
   
--   深化到复杂的对象和数据结构。  
+- 深化到复杂的对象和数据结构。  
   
- 你甚至可以当 Unity 游戏在网络上的另一台计算机上运行时对其进行调试。  
+  你甚至可以当 Unity 游戏在网络上的另一台计算机上运行时对其进行调试。  
   
 ## <a name="productivity"></a>工作效率  
  除了 Visual Studio 用于在 C# 中编写和重构代码的已有工作效率以外，Visual Studio Tools for Unity 为 Unity 开发人员提供了额外的工作效率功能。  

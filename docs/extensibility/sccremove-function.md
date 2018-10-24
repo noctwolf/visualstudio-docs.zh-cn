@@ -1,5 +1,5 @@
 ---
-title: SccRemove 函数 |Microsoft 文档
+title: SccRemove 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71a79ac1b61b3f8f69d0698ead6fa3284fe37ce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 28aa5c5aa887b08992b15adeb48128168b8cfa29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31140025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835054"
 ---
 # <a name="sccremove-function"></a>SccRemove 函数
 此函数从源代码管理系统中删除文件。  
@@ -41,7 +41,7 @@ SCCRTN SccRemove(
   
 #### <a name="parameters"></a>参数  
  pvContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  hWnd  
  [in]它提供了任何对话框，父级可以使用源代码管理插件，则 IDE 窗口的句柄。  
@@ -53,7 +53,7 @@ SCCRTN SccRemove(
  [in]要删除的文件的完全限定的本地路径名称的数组。  
   
  lpComment  
- [in]要应用于每个文件被删除注释。  
+ [in]要应用于每个文件被删除的注释。  
   
  fOptions  
  [in]命令标志 （未使用）。  
@@ -62,15 +62,15 @@ SCCRTN SccRemove(
  [in]源代码管理插件特定选项。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|删除成功。|  
-|SCC_E_FILENOTCONTROLLED|所选的文件不在源控件下。|  
+|SCC_E_FILENOTCONTROLLED|所选的文件不受源代码管理中。|  
 |SCC_E_OPNOTSUPPORTED|源代码管理系统不支持此操作。|  
 |SCC_E_ISCHECKEDOUT|无法删除文件，因为用户当前已将其签。|  
-|SCC_E_ACCESSFAILURE|没有访问源代码管理系统，可能由于网络或争用问题发生时出现问题。|  
+|SCC_E_ACCESSFAILURE|访问源代码管理系统，很可能是由于网络或争用问题时出现问题时。|  
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|  
 |SCC_E_NONSPECIFICERROR|非特定故障;不删除文件。|  
 |SCC_I_OPERATIONCANCELED|在完成之前已取消操作。|  
@@ -78,5 +78,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>备注  
  此函数从源代码管理系统中删除文件，但不会从用户的本地硬盘删除它们。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

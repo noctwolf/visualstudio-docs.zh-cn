@@ -16,55 +16,55 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f19165a5941f62fd5594a715c8812c065b371608
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 879d9e2cc40ebce42565d5eb8c607502ae17c2df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830744"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>独立的 Shell 入口点参数 （c + +）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 基于 shell 的应用程序启动时，它调用的 Visual Studio shell 的启动入口点。 可以在外壳程序的启动入口点的调用中重写以下设置。 每个设置的说明，请参阅[。Pkgdef 文件](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)。  
   
--   AddinsAllowed  
+- AddinsAllowed  
   
--   AllowsDroppedFilesOnMainWindow  
+- AllowsDroppedFilesOnMainWindow  
   
--   应用程序名  
+- 应用程序名  
   
--   CommandLineLogo  
+- CommandLineLogo  
   
--   DefaultHomePage  
+- DefaultHomePage  
   
--   DefaultProjectsLocation  
+- DefaultProjectsLocation  
   
--   DefaultSearchPage  
+- DefaultSearchPage  
   
--   DefaultUserFilesFolderRoot  
+- DefaultUserFilesFolderRoot  
   
--   DisableOutputWindow  
+- DisableOutputWindow  
   
--   HideMiscellaneousFilesByDefault  
+- HideMiscellaneousFilesByDefault  
   
--   HideSolutionConcept  
+- HideSolutionConcept  
   
--   NewProjDlgInstalledTemplatesHdr  
+- NewProjDlgInstalledTemplatesHdr  
   
--   NewProjDlgSlnTreeNodeTitle  
+- NewProjDlgSlnTreeNodeTitle  
   
--   SolutionFileCreatorIdentifier  
+- SolutionFileCreatorIdentifier  
   
--   SolutionFileExt  
+- SolutionFileExt  
   
--   UserFilesSubFolderName  
+- UserFilesSubFolderName  
   
--   UserOptsFileExt  
+- UserOptsFileExt  
   
- Visual Studio Shell 独立模板创建一个源文件， *solutionName*.cpp，其中*solutionName*是应用程序的解决方案名称。 此文件定义应用程序，_tWinMain 函数的主入口点。 此函数调用的命令行程序的启动入口点。  
+  Visual Studio Shell 独立模板创建一个源文件， *solutionName*.cpp，其中*solutionName*是应用程序的解决方案名称。 此文件定义应用程序，_tWinMain 函数的主入口点。 此函数调用的命令行程序的启动入口点。  
   
- 可以通过应用程序启动时更改这些设置来更改应用程序的行为。  
+  可以通过应用程序启动时更改这些设置来更改应用程序的行为。  
   
 ## <a name="parameters"></a>参数  
  在 Visual Studio shell 的启动入口点定义五个参数。 不要更改前四个参数。 第五个参数将设置重写列表。 从应用程序的主入口点调用 shell 的启动入口点。  

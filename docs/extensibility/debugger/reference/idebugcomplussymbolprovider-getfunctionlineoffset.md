@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft 文档
+title: IDebugComPlusSymbolProvider::GetFunctionLineOffset |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc5fa77a227e8324956a62380e6a42c76e5a47b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8923550b0aa7947a32296d60eb1badace36c30fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825889"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-检索表示给定的行偏移量的函数中的地址。  
+检索表示给定的行偏移量的函数内的地址。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,16 +47,16 @@ int GetFunctionLineOffset(
  [in]表示函数的地址。  
   
  `dwLine`  
- [in]偏离函数开头的行。  
+ [in]从函数的开头的偏移量的行。  
   
  `ppNewAddress`  
- [out]表示偏移量从函数开头的行的新地址。  
+ [out]表示从函数的开头的偏移量的行的新地址。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
@@ -103,5 +103,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

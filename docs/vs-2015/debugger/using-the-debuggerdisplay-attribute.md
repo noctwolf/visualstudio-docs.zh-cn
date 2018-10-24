@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e2dd3a45092c4a1a638fe6316df0dde36eb0ceb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82f72dba6b40f5b09ccc71007eb577c19cf7358e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827723"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,13 +76,13 @@ csc /t:library autoexp.cs
   
  在 DebuggerDisplay 中使用表达式可能导致以下问题：  
   
--   计算表达式是调试器中最消耗资源的操作，并且表达式在每次显示时都会被计算。 在单步执行代码时，这可能会导致性能问题。 例如，当元素的数量很大时，一个用来在集合或列表中显示值的复杂表达式可能会很慢。  
+- 计算表达式是调试器中最消耗资源的操作，并且表达式在每次显示时都会被计算。 在单步执行代码时，这可能会导致性能问题。 例如，当元素的数量很大时，一个用来在集合或列表中显示值的复杂表达式可能会很慢。  
   
--   表达式是通过当前堆栈帧的语言表达式计算器计算的，而不是通过表达式记录语言的计算器计算的。 当语言不同时，这可能导致不可预知的结果。  
+- 表达式是通过当前堆栈帧的语言表达式计算器计算的，而不是通过表达式记录语言的计算器计算的。 当语言不同时，这可能导致不可预知的结果。  
   
--   计算表达式可更改应用程序的状态。 例如，设置属性值的表达式在执行代码时会改变属性值。  
+- 计算表达式可更改应用程序的状态。 例如，设置属性值的表达式在执行代码时会改变属性值。  
   
- 减少表达式计算可能出现的问题的一种方法是创建执行操作并返回字符串的私有属性。 然后，DebuggerDisplay 特性可以显示该私有属性的值。 以下示例实现了这种模式：  
+  减少表达式计算可能出现的问题的一种方法是创建执行操作并返回字符串的私有属性。 然后，DebuggerDisplay 特性可以显示该私有属性的值。 以下示例实现了这种模式：  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

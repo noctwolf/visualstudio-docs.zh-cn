@@ -31,12 +31,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48091178f9f606adecaa9d0047ea35ef25e2b4a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 04c0430140d848c3c0b2386cc4156be1dbdd47c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270022"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819779"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "49270022"
   
  使用特性可大大简化 C++ 编程。 有关详细信息，请参阅[概念](http://msdn.microsoft.com/library/563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e)。 某些特性由编译器直接解释。 其他特性则向程序源中插入代码，然后由编译器进行编译。 此类插入的代码通过减少你必须编写的代码量使编程变得更容易。 但有时 bug 可能导致应用程序在执行插入的代码时失败。 发生这种情况时，你可能希望查看插入的代码。 Visual Studio 提供两种查看插入的代码的方法：  
   
--   您可以查看中插入的代码**反汇编**窗口。  
+- 您可以查看中插入的代码**反汇编**窗口。  
   
--   使用[/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560)，可以创建合并的源文件，其中包含原始和注入的代码。  
+- 使用[/Fx](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560)，可以创建合并的源文件，其中包含原始和注入的代码。  
   
- **反汇编**窗口会显示对应的源代码和特性所插入的代码的程序集语言说明。 此外，**反汇编**窗口可以显示源代码批注。  
+  **反汇编**窗口会显示对应的源代码和特性所插入的代码的程序集语言说明。 此外，**反汇编**窗口可以显示源代码批注。  
   
 ### <a name="to-turn-on-source-annotation"></a>打开源批注  
   

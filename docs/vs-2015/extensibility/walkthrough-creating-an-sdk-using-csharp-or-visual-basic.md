@@ -13,12 +13,12 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96b4ded80d3c00c0f2c7a5c9037758f72907ea28
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8f792553e29a4b24d30a25dd835db0b96befcbd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824258"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>演练：使用 C# 或 Visual Basic 创建 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,23 +138,23 @@ ms.locfileid: "49215600"
   
 ##  <a name="createSample"></a> 创建示例应用程序使用类库  
   
-1.  在菜单栏上依次选择**文件**，**新建**，**新项目**。  
+1. 在菜单栏上依次选择**文件**，**新建**，**新项目**。  
   
-2.  在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。  
+2. 在模板列表中，展开**Visual C#** 或**Visual Basic**，然后选择**Windows 应用商店**节点。  
   
-3.  选择**空白应用**模板，将项目命名**ArithmeticUI**，然后选择**确定**按钮。  
+3. 选择**空白应用**模板，将项目命名**ArithmeticUI**，然后选择**确定**按钮。  
   
-4.  在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加**，**引用**。  
+4. 在中**解决方案资源管理器**，打开快捷菜单**ArithmeticUI**项目，，然后选择**添加**，**引用**。  
   
-5.  在引用类型的列表中，展开**Windows**，然后选择**扩展**。  
+5. 在引用类型的列表中，展开**Windows**，然后选择**扩展**。  
   
-6.  在细节窗格中，选择**简单数学 SDK**扩展。  
+6. 在细节窗格中，选择**简单数学 SDK**扩展。  
   
-     有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开 http://www.msdn.microsoft.com，如在本演练前面在 SDKManifest.xml 文件中指定。  
+    有关 SDK 的其他信息将出现。 你可以选择**详细信息**链接以打开 http://www.msdn.microsoft.com，如在本演练前面在 SDKManifest.xml 文件中指定。  
   
-7.  在中**引用管理器**对话框中，选择**简单数学 SDK**复选框，，然后选择**确定**按钮。  
+7. 在中**引用管理器**对话框中，选择**简单数学 SDK**复选框，，然后选择**确定**按钮。  
   
-8.  在菜单栏上依次选择**视图**，**对象浏览器**。  
+8. 在菜单栏上依次选择**视图**，**对象浏览器**。  
   
 9. 在中**浏览**列表中，选择**简单的数学运算**。  
   
@@ -176,7 +176,7 @@ ms.locfileid: "49215600"
   
      将显示正确的结果。  
   
- 已成功创建并使用扩展 SDK。  
+    已成功创建并使用扩展 SDK。  
   
 ## <a name="see-also"></a>请参阅  
  [演练： 创建使用 c + + SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)   
