@@ -15,25 +15,25 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 46c2a944227218db2294258081fbd1af2d5f084b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ee10719fa8f0c5c45d9b45f3b1d686f454d808a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925899"
 ---
 # <a name="command-implementation"></a>命令实现
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 若要在 VSPackage 中实现命令，必须执行以下任务：  
   
-1.  .Vsct 文件中设置了一个命令组，然后向其中添加该命令。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+1. .Vsct 文件中设置了一个命令组，然后向其中添加该命令。 有关详细信息，请参阅[Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
   
-2.  通过 Visual Studio 注册该命令。  
+2. 通过 Visual Studio 注册该命令。  
   
-3.  实现命令。  
+3. 实现命令。  
   
- 以下部分介绍如何注册和实现命令。  
+   以下部分介绍如何注册和实现命令。  
   
 ## <a name="registering-commands-with-visual-studio"></a>使用 Visual Studio 注册命令  
  如果您的命令是显示在菜单上，您必须添加<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>到你的 VSPackage，以及如何使用作为菜单的名称或其资源 ID 的值  
@@ -68,35 +68,35 @@ if ( null != mcs )
 ## <a name="query-status-methods"></a>查询状态方法  
  如果要实现任一<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>方法中检查的命令所属命令集的 GUID 和命令的 ID。 请遵循这些指导：  
   
--   如果无法识别的 GUID，这两种方法的实现必须返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+- 如果无法识别的 GUID，这两种方法的实现必须返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
--   如果这两种方法的实现能够识别 GUID，但是不实际实现了该命令，则该方法应返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+- 如果这两种方法的实现能够识别 GUID，但是不实际实现了该命令，则该方法应返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
--   如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 使用以下标志：  
+- 如果这两种方法的实现可以识别的 GUID 和命令，则该方法的每个命令的命令标志字段应设置 (在`prgCmds`参数) 使用以下标志：  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支持该命令。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果支持该命令。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令不应是可见的。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令不应是可见的。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令打开并显示为具有已选中。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令打开并显示为具有已选中。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果启用了该命令。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果启用了该命令。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果应隐藏该命令，如果它显示在快捷菜单。  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果应隐藏该命令，如果它显示在快捷菜单。  
   
-    -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
+  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> 如果该命令是菜单控制器且未启用，但其下拉列表菜单列表不为空，并且仍然可用。 （很少使用此标志。）  
   
--   如果在.vsct 文件中定义该命令`TextChanges`标志，请将以下参数：  
+- 如果在.vsct 文件中定义该命令`TextChanges`标志，请将以下参数：  
   
-    -   设置`rgwz`元素的`pCmdText`的新文本的命令的参数。  
+  -   设置`rgwz`元素的`pCmdText`的新文本的命令的参数。  
   
-    -   设置`cwActual`元素的`pCmdText`命令字符串的大小参数。  
+  -   设置`cwActual`元素的`pCmdText`命令字符串的大小参数。  
   
- 此外请确保当前上下文不是自动化函数，除非您的命令专门用于处理自动化功能。  
+  此外请确保当前上下文不是自动化函数，除非您的命令专门用于处理自动化功能。  
   
- 若要指示支持特定的命令，返回<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 对于所有其他命令，返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
+  若要指示支持特定的命令，返回<xref:Microsoft.VisualStudio.VSConstants.S_OK>。 对于所有其他命令，返回<xref:Microsoft.VisualStudio.OLE.Interop.Constants>。  
   
- 在以下示例中，查询状态方法首先可确保上下文不是自动化函数，然后查找正确的命令集 GUID 和命令 id。 命令本身设置为启用和支持。 不支持任何其他命令。  
+  在以下示例中，查询状态方法首先可确保上下文不是自动化函数，然后查找正确的命令集 GUID 和命令 id。 命令本身设置为启用和支持。 不支持任何其他命令。  
   
 ```  
 public int QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  

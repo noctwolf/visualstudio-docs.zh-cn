@@ -13,23 +13,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3953d889b6cd5c6c9b5abbfdb4aea9acbd940e27
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: ac83bc523b830c3e3adff258511d2785db0ddb62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924793"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 根据计算机管理员提供的 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 用户访问权限设置，单个用户可能会具有在该计算机上分析进程的安全权限。 下面的示例说明了用户之间可能存在的差异：  
   
--   当管理员启动了驱动程序和服务时，某些用户可能会访问高级分析功能。  
+- 当管理员启动了驱动程序和服务时，某些用户可能会访问高级分析功能。  
   
--   域用户仅可访问样本分析。  
+- 域用户仅可访问样本分析。  
   
--   某些用户可能拒绝分析其他所有用户的访问权限。  
+- 某些用户可能拒绝分析其他所有用户的访问权限。  
   
- 有关详细信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 中的“管理员”选项。  
+  有关详细信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 中的“管理员”选项。  
   
 ## <a name="cross-session-profiling"></a>跨会话分析  
  *跨会话分析*是分析在不同登录会话中运行的进程的能力。 例如，大多数服务在会话 0 中运行，而用户无法直接在会话 0 中运行。 使用性能资源管理器工具栏上的“附加到进程”按钮或 VSPerfCmd 命令行工具的 /attach 选项可以分析不同登录会话中的大多数进程。  

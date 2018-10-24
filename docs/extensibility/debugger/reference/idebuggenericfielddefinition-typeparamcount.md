@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft 文档
+title: IDebugGenericFieldDefinition::TypeParamCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11e8dcebf06c5779ee51b11e315c5277d99b4971
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: baf6f6b7643c3d24a0f691a95477ad805823e541
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922375"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
-检索与泛型字段关联的类型参数的数目。  
+检索与泛型字段相关联的类型参数的数目。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,13 +40,13 @@ int TypeParamCount(
   
 #### <a name="parameters"></a>参数  
  `pcParams`  
- [在中，out]类型参数的数目。  
+ [in、 out]类型参数的数目。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 如果列表\<T >，此方法返回 1，并且，如果列表\<T1、 T2 >，此方法返回 2。 如果没有类型参数，此方法将返回 0。  
+ 如果列表\<T >，此方法返回 1，并且，如果列表\<T1，T2 >，此方法返回 2。 如果没有类型参数，此方法将返回 0。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

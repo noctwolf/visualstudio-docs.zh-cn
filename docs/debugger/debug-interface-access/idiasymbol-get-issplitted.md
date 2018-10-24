@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issplitted |Microsoft 文档'
+title: 'Idiasymbol:: Get_issplitted |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15420c56dfa16f1bbb4566b1afe3fc7ac958fc07
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 15c30577900a2d2e192bdc2dea45fc89846b102b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464792"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919321"
 ---
 # <a name="idiasymbolgetissplitted"></a>IDiaSymbol::get_isSplitted
-检索用于指定是否已将数据符号拆分为聚合或集合的其他符号; 的标志编译器将符号视为单独的实体，即使它们实际上是更大的符号的一部分。  
+检索一个标志，指定是否已被数据符号拆分为聚合或其他符号; 集合编译器将符号视为单独的实体，即使它们实际上是更大的符号的一部分。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_isSplitted(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果符号拆分聚合的符号; 否则，返回`FALSE`。  
+ [out]返回`TRUE`如果该符号已被拆分为聚合的符号; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- [Idiasymbol:: Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法返回`TRUE`属于拆分符号的所有符号。  
+ [Idiasymbol:: Get_isaggregated](../../debugger/debug-interface-access/idiasymbol-get-isaggregated.md)方法将返回`TRUE`属于拆分符号的所有符号。  
   
 ## <a name="requirements"></a>要求  
   

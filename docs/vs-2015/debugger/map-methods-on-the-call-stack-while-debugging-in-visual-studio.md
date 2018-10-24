@@ -35,12 +35,12 @@ caps.latest.revision: 43
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 0841670c1dfe65f1ad542f931267c310d0ef711a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6995255125de6bf78fbdd8718ffb836b9ed42dde
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922128"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ ms.locfileid: "49194863"
   
  你将需要：  
   
--   [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
+- [Visual Studio Enterprise](https://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   可调试的代码，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++  
+- 可调试的代码，例如 Visual C# .NET、Visual Basic .NET、C++、JavaScript 或 X++  
   
- 请参阅：[视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)•[映射调用堆栈](#MapStack)•[记下的有关代码说明](#MakeNotes)•[更新与映射下一个调用堆栈](#UpdateMap)•[将相关的代码添加到映射](#AddRelatedCode)•[使用图查找 bug](#FindBugs) •[问题与解答](#QA)  
+  请参阅：[视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)•[映射调用堆栈](#MapStack)•[记下的有关代码说明](#MakeNotes)•[更新与映射下一个调用堆栈](#UpdateMap)•[将相关的代码添加到映射](#AddRelatedCode)•[使用图查找 bug](#FindBugs) •[问题与解答](#QA)  
   
- 有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
+  有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
   
 ##  <a name="MapStack"></a> 映射调用堆栈  
   
@@ -122,53 +122,53 @@ ms.locfileid: "49194863"
   
 ##  <a name="QA"></a> 问题解答  
   
--   **并非所有调用将都显示在映射上。为什么?**  
+- **并非所有调用将都显示在映射上。为什么?**  
   
-     默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，将其打开**调用堆栈**窗口：  
+   默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，将其打开**调用堆栈**窗口：  
   
-     ![显示外部代码中使用调用堆栈窗口](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
+   ![显示外部代码中使用调用堆栈窗口](../debugger/media/debuggermap-callstackmenu.png "DebuggerMap_CallStackMenu")  
   
-     或将其关闭**启用 ' 仅我的代码**在 Visual Studio 调试选项：  
+   或将其关闭**启用 ' 仅我的代码**在 Visual Studio 调试选项：  
   
-     ![显示外部代码使用选项对话框](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
+   ![显示外部代码使用选项对话框](../debugger/media/debuggermap-debugoptions.png "DebuggerMap_DebugOptions")  
   
--   **更改图是否会影响代码？**  
+- **更改图是否会影响代码？**  
   
-     更改图不会对代码造成任何影响。 你可随意在图上重命名、移动或移除任何内容。  
+   更改图不会对代码造成任何影响。 你可随意在图上重命名、移动或移除任何内容。  
   
--   **此消息意味着什么:"关系图可能基于代码的较旧版本"？**  
+- **此消息意味着什么:"关系图可能基于代码的较旧版本"？**  
   
-     在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。  
+   在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。  
   
--   **如何控制图的布局？**  
+- **如何控制图的布局？**  
   
-     打开**布局**图工具栏上的菜单：  
+   打开**布局**图工具栏上的菜单：  
   
-    -   更改默认布局。  
+  -   更改默认布局。  
   
-    -   若要停止自动重新排列图，关闭**调试时自动布局**。  
+  -   若要停止自动重新排列图，关闭**调试时自动布局**。  
   
-    -   若要添加项时，重新排列图降至最低，请关闭**增量布局**。  
+  -   若要添加项时，重新排列图降至最低，请关闭**增量布局**。  
   
--   **可以与他人共享代码图？**  
+- **可以与他人共享代码图？**  
   
-     你可以导出映射，将其发送给他人（如果你有 Microsoft Outlook）或保存到你的解决方案中，以便你将其签入 Team Foundation 版本控制。  
+   你可以导出映射，将其发送给他人（如果你有 Microsoft Outlook）或保存到你的解决方案中，以便你将其签入 Team Foundation 版本控制。  
   
-     ![与他人共享调用堆栈代码图](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
+   ![与他人共享调用堆栈代码图](../debugger/media/debuggermap-sharewithothers.png "DebuggerMap_ShareWithOthers")  
   
--   **如何停止自动添加新的调用堆栈中的映射？**  
+- **如何停止自动添加新的调用堆栈中的映射？**  
   
-     选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。  
+   选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap-automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。  
   
-     在你进行调试时，图中将继续突出显示现有调用堆栈。  
+   在你进行调试时，图中将继续突出显示现有调用堆栈。  
   
--   **项图标和箭头代表什么？**  
+- **项图标和箭头代表什么？**  
   
-     若要获取有关某个项的详细信息，请将鼠标指针移动到它上方，然后查看该项的工具提示。 此外可以查看**图例**若要了解每个图标的含义。  
+   若要获取有关某个项的详细信息，请将鼠标指针移动到它上方，然后查看该项的工具提示。 此外可以查看**图例**若要了解每个图标的含义。  
   
-     ![调用堆栈代码图上的图标是什么意思？](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
+   ![调用堆栈代码图上的图标是什么意思？](../debugger/media/debuggermap-showlegend.png "DebuggerMap_ShowLegend")  
   
- 请参阅：[映射调用堆栈](#MapStack)•[记下的有关代码说明](#MakeNotes)•[使用下一步的调用堆栈更新图](#UpdateMap)•[向地图添加相关的代码](#AddRelatedCode)• [查找使用映射的 bug](#FindBugs)  
+  请参阅：[映射调用堆栈](#MapStack)•[记下的有关代码说明](#MakeNotes)•[使用下一步的调用堆栈更新图](#UpdateMap)•[向地图添加相关的代码](#AddRelatedCode)• [查找使用映射的 bug](#FindBugs)  
   
 ## <a name="see-also"></a>请参阅  
  [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)   

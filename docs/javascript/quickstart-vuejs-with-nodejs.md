@@ -14,12 +14,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b4e08b0ad058566bdd74522b94e0010d5cdc2f91
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: 3862f62439bd9b919d3c0534a8c2fe2d3c16fea9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926613"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 
@@ -64,13 +64,13 @@ ms.locfileid: "47168352"
 
      ![Vue.js 解决方案](../javascript/media/vuejs-solution.png)
 
-  - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .njsproj 文件表示。
+   - 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .njsproj 文件表示。
 
-  - 顶层是一个解决方案，它与项目默认同名。 解决方案（在磁盘上由 .sln 文件表示）是一个或多个相关项目的容器。
+   - 顶层是一个解决方案，它与项目默认同名。 解决方案（在磁盘上由 .sln 文件表示）是一个或多个相关项目的容器。
 
-  - npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
+   - npm 节点显示任何已安装的 npm 包。 可以右键单击 npm 节点搜索 npm 包，并使用对话框安装 npm 包。
 
-1. 如果想要从命令提示符安装 npm 包或运行 Node.js 命令，请右键单击项目节点，然后选择“在此处打开命令提示符”。
+2. 如果想要从命令提示符安装 npm 包或运行 Node.js 命令，请右键单击项目节点，然后选择“在此处打开命令提示符”。
 
 ## <a name="add-a-vue-file-to-the-project"></a>向项目添加一个 .vue 文件
 

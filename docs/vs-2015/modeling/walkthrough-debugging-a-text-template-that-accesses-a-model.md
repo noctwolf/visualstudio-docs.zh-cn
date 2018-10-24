@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b8fd24f6c1e9b0427746296efa9a839bf46ed7ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca80111415c869543297ed24707ae27f0490f07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924884"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ ms.locfileid: "49220085"
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案  
  在此过程中，你创建域特定语言解决方案具有以下特征：  
   
--   名称： DebuggingTestLanguage  
+- 名称： DebuggingTestLanguage  
   
--   解决方案模板： 最小语言  
+- 解决方案模板： 最小语言  
   
--   文件扩展名：.ddd  
+- 文件扩展名：.ddd  
   
--   公司名称： Fabrikam  
+- 公司名称： Fabrikam  
   
- 有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+  有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
 ## <a name="creating-a-text-template"></a>创建文本模板  
  将文本模板添加到你的解决方案。  

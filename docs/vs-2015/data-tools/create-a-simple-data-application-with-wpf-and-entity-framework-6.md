@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 716e58acaddd1891f2e0d605265cb53bae4ad8d7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac3db033b9e8055c28f29d54027df5fadf156742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922193"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>通过 WPF 和 Entity Framework 6 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,37 +52,37 @@ ms.locfileid: "49299177"
   
 ## <a name="create-the-model"></a>创建模型  
   
-1.  右键单击解决方案资源管理器中的项目节点并选择**添加&#124;新建项**。 在左窗格中，在 C# 节点下，选择**数据**，然后在中间窗格中选择**ADO.NET 实体数据模型**。  
+1. 右键单击解决方案资源管理器中的项目节点并选择**添加&#124;新建项**。 在左窗格中，在 C# 节点下，选择**数据**，然后在中间窗格中选择**ADO.NET 实体数据模型**。  
   
-     ![实体框架模型新项目项](../data-tools/media/raddata-ef-new-project-item.png "raddata EF 新项目项")  
+    ![实体框架模型新项目项](../data-tools/media/raddata-ef-new-project-item.png "raddata EF 新项目项")  
   
-2.  调用该模型`Northwind_model`，然后选择确定。 这将显示**实体数据模型向导**。 选择**EF 设计器从数据库**，然后单击**下一步**。  
+2. 调用该模型`Northwind_model`，然后选择确定。 这将显示**实体数据模型向导**。 选择**EF 设计器从数据库**，然后单击**下一步**。  
   
-     ![从数据库的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png "raddata 从数据库的 EF 模型")  
+    ![从数据库的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png "raddata 从数据库的 EF 模型")  
   
-3.  在下一个屏幕，然后单击选择 LocalDB Northwind**下一步**。  
+3. 在下一个屏幕，然后单击选择 LocalDB Northwind**下一步**。  
   
-4.  在向导的下一步页中，我们选择的表、 存储的过程和要包含在实体框架模型中其他数据库对象。 展开树视图中的 dbo 节点并选择客户、 订单和订单详细信息。 保留选中的默认值，然后单击**完成**。  
+4. 在向导的下一步页中，我们选择的表、 存储的过程和要包含在实体框架模型中其他数据库对象。 展开树视图中的 dbo 节点并选择客户、 订单和订单详细信息。 保留选中的默认值，然后单击**完成**。  
   
-     ![选择模型的数据库对象](../data-tools/media/raddata-choose-ef-objects.png "raddata 选择 EF 对象")  
+    ![选择模型的数据库对象](../data-tools/media/raddata-choose-ef-objects.png "raddata 选择 EF 对象")  
   
-5.  向导将生成表示实体框架模型的 C# 类。 这些是纯旧 C# 类，并且我们将数据绑定到 WPF 用户界面。 .Edmx 文件介绍了关系和其他将类与数据库中的对象相关联的元数据。  .Tt 文件是生成的代码，将操作模型并将更改保存到数据库的 T4 模板。 您可以看到所有这些文件在解决方案资源管理器 Northwind_model 节点下：  
+5. 向导将生成表示实体框架模型的 C# 类。 这些是纯旧 C# 类，并且我们将数据绑定到 WPF 用户界面。 .Edmx 文件介绍了关系和其他将类与数据库中的对象相关联的元数据。  .Tt 文件是生成的代码，将操作模型并将更改保存到数据库的 T4 模板。 您可以看到所有这些文件在解决方案资源管理器 Northwind_model 节点下：  
   
-     ![解决方案资源管理器 EF 模型文件](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata 解决方案资源管理器 EF 模型文件")  
+    ![解决方案资源管理器 EF 模型文件](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata 解决方案资源管理器 EF 模型文件")  
   
-     .Edmx 文件的设计器图面，可修改一些属性和关系在模型中。 我们不打算在本演练中使用设计器。  
+    .Edmx 文件的设计器图面，可修改一些属性和关系在模型中。 我们不打算在本演练中使用设计器。  
   
-6.  常规用途.tt 文件，并且我们需要调整它们以使用 WPF 数据绑定，这要求 ObservableCollections 之一。  在解决方案资源管理器，展开 Northwind_model 节点，直到找到 Northwind_model.tt。 (请确保**不**中 *。上下文.tt 文件即.edmx 文件的正下方）。  
+6. 常规用途.tt 文件，并且我们需要调整它们以使用 WPF 数据绑定，这要求 ObservableCollections 之一。  在解决方案资源管理器，展开 Northwind_model 节点，直到找到 Northwind_model.tt。 (请确保**不**中 *。上下文.tt 文件即.edmx 文件的正下方）。  
   
-    -   替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。  
+   -   替换的两个匹配项<xref:System.Collections.ICollection>与<xref:System.Collections.ObjectModel.ObservableCollection%601>。  
   
-    -   替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不替换 HashSet 的第二个匹配项  
+   -   替换为第一个匹配项<xref:System.Collections.Generic.HashSet%601>与<xref:System.Collections.ObjectModel.ObservableCollection%601>在第 51 行。 不替换 HashSet 的第二个匹配项  
   
-    -   替换的唯一匹配项<xref:System.Collections.Generic>（在第 334 行） 与<xref:System.Collections.ObjectModel>。  
+   -   替换的唯一匹配项<xref:System.Collections.Generic>（在第 334 行） 与<xref:System.Collections.ObjectModel>。  
   
-7.  按**Ctrl + Shift + B**以生成项目。 如果生成完成后，在 model 类将显示到数据源向导。  
+7. 按**Ctrl + Shift + B**以生成项目。 如果生成完成后，在 model 类将显示到数据源向导。  
   
- 现在我们已准备好将挂接到此模型添加到 XAML 页，以便我们可以查看、 导航和修改数据。  
+   现在我们已准备好将挂接到此模型添加到 XAML 页，以便我们可以查看、 导航和修改数据。  
   
 ## <a name="databind-the-model-to-the-xaml-page"></a>数据绑定到 XAML 页面模型  
  可以编写自己的数据绑定代码，但可让 Visual Studio 为您做容易得多。  
