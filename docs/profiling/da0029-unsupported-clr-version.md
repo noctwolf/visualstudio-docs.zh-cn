@@ -17,14 +17,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ab40efbba692cfa85f14b750d3c853d1112704
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 5067c9f93a489c09962a9402f4fe7672cbd61108
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765734"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818440"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支持的 CLR 版本
+
 |||  
 |-|-|  
 |规则 ID|DA0029|  
@@ -32,12 +33,12 @@ ms.locfileid: "34765734"
 |分析方法|从命令行分析|  
 |消息|在收集期间检测到不受支持的 CLR 版本。 托管符号可能无法正确解析。|  
 |规则类型|信息。|  
-  
+
 ## <a name="cause"></a>原因  
  尝试分析的应用程序使用的 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 不受分析工具支持。  
-  
+
 ## <a name="rule-description"></a>规则说明  
  出现此警告是因为，分析工具不能解析在应用程序中运行的托管代码符号。 分析工具无法解析运行 [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)] 的应用程序的托管代码符号。  
-  
+
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  无。

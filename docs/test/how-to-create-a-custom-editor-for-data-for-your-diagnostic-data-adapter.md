@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 372cc01f1d7a0a21832ff099472e444d43d7a699
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 41008d1c2808a5a6e6428670a3e7dbbf1041caee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819334"
 ---
 # <a name="how-to-create-a-custom-editor-for-data-for-your-diagnostic-data-adapter"></a>如何：为诊断数据适配器创建自定义数据编辑器
 
@@ -38,128 +38,128 @@ ms.locfileid: "44320535"
 
 ## <a name="to-create-a-custom-editor-for-your-diagnostic-data-adapter"></a>为诊断数据适配器创建自定义编辑器
 
-1.  在诊断数据适配器的项目中创建用户控件：
+1. 在诊断数据适配器的项目中创建用户控件：
 
-    1.  右键单击包含诊断数据适配器类的代码项目，指向“添加”，再指向“用户控件”。
+   1.  右键单击包含诊断数据适配器类的代码项目，指向“添加”，再指向“用户控件”。
 
-    2.  在此示例中，向窗体中添加具有文本：“Data File Name:”的标签和名为“FileTextBox”的文本框，以使用户能输入必要的数据。
+   2.  在此示例中，向窗体中添加具有文本：“Data File Name:”的标签和名为“FileTextBox”的文本框，以使用户能输入必要的数据。
 
-    > [!NOTE]
-    > 目前仅支持 Windows 窗体用户控件。
+   > [!NOTE]
+   > 目前仅支持 Windows 窗体用户控件。
 
-2.  将这些行添加到声明部分：
+2. 将这些行添加到声明部分：
 
-    ```csharp
-    using System.Xml;
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    ```
+   ```csharp
+   using System.Xml;
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   ```
 
-3.  使此用户控件成为自定义编辑器。
+3. 使此用户控件成为自定义编辑器。
 
-    1.  在代码项目中右键单击该用户控件，然后指向“查看代码”。
+   1.  在代码项目中右键单击该用户控件，然后指向“查看代码”。
 
-    2.  如下所示设置该类，以实现编辑器接口 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>：
+   2.  如下所示设置该类，以实现编辑器接口 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>：
 
-    ```csharp
-    public partial class MyDataConfigEditor :
-         UserControl, IDataCollectorConfigurationEditor
-    ```
+   ```csharp
+   public partial class MyDataConfigEditor :
+        UserControl, IDataCollectorConfigurationEditor
+   ```
 
-    1.  右键单击代码中的 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>，再选择“实现接口”命令。 您必须为此接口实现的方法将添加到该类中。
+   1.  右键单击代码中的 <xref:Microsoft.VisualStudio.TestTools.Execution.IDataCollectorConfigurationEditor>，再选择“实现接口”命令。 您必须为此接口实现的方法将添加到该类中。
 
-    2.  将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> 添加到编辑器用户控件中以将它标识为诊断数据适配器编辑器，用诊断数据适配器的相应信息来替换“公司”、“产品”和“版本”：
+   2.  将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> 添加到编辑器用户控件中以将它标识为诊断数据适配器编辑器，用诊断数据适配器的相应信息来替换“公司”、“产品”和“版本”：
 
-        ```csharp
-        [DataCollectorConfigurationEditorTypeUri(
-            "configurationeditor://MyCompany/MyConfigEditor/1.0")]
-        ```
+       ```csharp
+       [DataCollectorConfigurationEditorTypeUri(
+           "configurationeditor://MyCompany/MyConfigEditor/1.0")]
+       ```
 
-4.  添加两个私有变量，如下所示：
+4. 添加两个私有变量，如下所示：
 
-    ```csharp
-    private DataCollectorSettings collectorSettings;
-    private IServiceProvider ServiceProvider { get; set; }
-    ```
+   ```csharp
+   private DataCollectorSettings collectorSettings;
+   private IServiceProvider ServiceProvider { get; set; }
+   ```
 
-5.  添加代码以初始化诊断数据适配器的编辑器。 可使用设置变量中的数据向用户控件中的字段添加默认值。 此数据位于适配器的 XML 配置文件的 `<DefaultConfiguration>` 元素中。
+5. 添加代码以初始化诊断数据适配器的编辑器。 可使用设置变量中的数据向用户控件中的字段添加默认值。 此数据位于适配器的 XML 配置文件的 `<DefaultConfiguration>` 元素中。
 
-    ```csharp
-    public void Initialize(
-        IServiceProvider svcProvider,
-        DataCollectorSettings settings)
-    {
-        ServiceProvider = svcProvider;
-        collectorSettings = settings;
+   ```csharp
+   public void Initialize(
+       IServiceProvider svcProvider,
+       DataCollectorSettings settings)
+   {
+       ServiceProvider = svcProvider;
+       collectorSettings = settings;
 
-        // Display the default file name as listed in the settings file.
-        this.SuspendLayout();
-        this.FileTextBox.Text = getText(collectorSettings.Configuration);
-        this.ResumeLayout();
-    }
-    ```
+       // Display the default file name as listed in the settings file.
+       this.SuspendLayout();
+       this.FileTextBox.Text = getText(collectorSettings.Configuration);
+       this.ResumeLayout();
+   }
+   ```
 
-6.  添加代码以将来自编辑器中控件的数据存回诊断数据适配器 API 所需的 XML 格式，如下所示：
+6. 添加代码以将来自编辑器中控件的数据存回诊断数据适配器 API 所需的 XML 格式，如下所示：
 
-    ```csharp
-    public DataCollectorSettings SaveData()
-    {
-        collectorSettings.Configuration.InnerXml =
-            String.Format(
-    @"<MyCollectorName
-        xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
-      <File FullPath=""{0}"" />
-    </MyCollectorName>",
-        FileTextBox.Text);
-        return collectorSettings;
-    }
-    ```
+   ```csharp
+   public DataCollectorSettings SaveData()
+   {
+       collectorSettings.Configuration.InnerXml =
+           String.Format(
+   @"<MyCollectorName
+       xmlns=""http://MyCompany/schemas/MyDiagnosticDataCollector/1.0"">
+     <File FullPath=""{0}"" />
+   </MyCollectorName>",
+       FileTextBox.Text);
+       return collectorSettings;
+   }
+   ```
 
-7.  如果这对您很重要，请在 `VerifyData` 方法中添加代码以验证数据是否正确，也可以直接使该方法返回 `true`。
+7. 如果这对您很重要，请在 `VerifyData` 方法中添加代码以验证数据是否正确，也可以直接使该方法返回 `true`。
 
-    ```csharp
-    public bool VerifyData()
-    {
-        // Not currently verifying data
-        return true;
-    }
-    ```
+   ```csharp
+   public bool VerifyData()
+   {
+       // Not currently verifying data
+       return true;
+   }
+   ```
 
-8.  （可选）可以在 `ResetToAgentDefaults()` 方法（该方法使用专用 `getText()` 方法）中添加代码，以将数据重置为 XML 配置文件中提供的初始设置。
+8. （可选）可以在 `ResetToAgentDefaults()` 方法（该方法使用专用 `getText()` 方法）中添加代码，以将数据重置为 XML 配置文件中提供的初始设置。
 
-    ```csharp
-    // Reset to default value from XML configuration
-    // using a custom getText() method
-    public void ResetToAgentDefaults()
-    {
-        this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
-    }
+   ```csharp
+   // Reset to default value from XML configuration
+   // using a custom getText() method
+   public void ResetToAgentDefaults()
+   {
+       this.FileTextBox.Text = getText(collectorSettings.DefaultConfiguration);
+   }
 
-    // Local method to read the configuration settings
-    private string getText(XmlElement element)
-    {
-        // Setup namespace manager with our namespace
-        XmlNamespaceManager nsmgr =
-            new XmlNamespaceManager(
-                element.OwnerDocument.NameTable);
+   // Local method to read the configuration settings
+   private string getText(XmlElement element)
+   {
+       // Setup namespace manager with our namespace
+       XmlNamespaceManager nsmgr =
+           new XmlNamespaceManager(
+               element.OwnerDocument.NameTable);
 
-        // Find all the "File" elements under our configuration
-        XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
+       // Find all the "File" elements under our configuration
+       XmlNodeList files = element.SelectNodes("//ns:MyCollectorName/ns:File", nsmgr);
 
-        string result = String.Empty;
-        if (files.Count > 0)
-        {
-            XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
-            if (pathAttribute != null &&
-                !String.IsNullOrEmpty(pathAttribute.Value))
-            {
-                result = pathAttribute.Value;
-            }
-        }
+       string result = String.Empty;
+       if (files.Count > 0)
+       {
+           XmlAttribute pathAttribute = files[0].Attributes["FullPath"];
+           if (pathAttribute != null &&
+               !String.IsNullOrEmpty(pathAttribute.Value))
+           {
+               result = pathAttribute.Value;
+           }
+       }
 
-        return result;
-    }
-    ```
+       return result;
+   }
+   ```
 
 9. 生成解决方案。 将数据诊断适配器程序集和 XML 配置文件 (`<diagnostic data adapter name>.dll.config`) 复制到基于安装目录的以下位置：%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies\DataCollectors。
 
@@ -184,7 +184,7 @@ ms.locfileid: "44320535"
 
      你在编辑器中指定的数据文件将被附加到测试结果中。
 
- 有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[测试时收集诊断数据 (Azure Test Plans) ](/azure/devops/test/collect-diagnostic-data?view=vsts)或[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
+    有关如何在运行测试时配置测试设置以使用环境的详细信息，请参阅[测试时收集诊断数据 (Azure Test Plans) ](/azure/devops/test/collect-diagnostic-data?view=vsts)或[在手动测试中收集诊断数据 (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)。
 
 ## <a name="see-also"></a>请参阅
 

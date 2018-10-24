@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4cff83eb490f8012e8679dbd0b2c6a65d27f8e14
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822782"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Basic 中生成字段、属性或局部变量
 
@@ -36,24 +36,24 @@ ms.locfileid: "31945085"
 
    - C#：
 
-    ![突出显示的代码 C#](media/field-highlight-cs.png)
+       ![突出显示的代码 C#](media/field-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/field-highlight-vb.png)
+       ![突出显示的代码 VB](media/field-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
-    ![生成字段/属性/本地内容预览](media/field-preview-cs.png)
+      ![生成字段/属性/本地内容预览](media/field-preview-cs.png)
 
-1. 可从下拉菜单中选择一种生成选项。
+3. 可从下拉菜单中选择一种生成选项。
 
    > [!TIP]
    > 进行选择前，使用预览窗口底部的“预览更改”链接[查看将发生的所有更改](../../ide/preview-changes.md)。
@@ -62,11 +62,11 @@ ms.locfileid: "31945085"
 
    - C#：
 
-      ![“生成方法”的结果 C#](media/field-result-cs.png)
+       ![“生成方法”的结果 C#](media/field-result-cs.png)
 
    - Visual Basic：
 
-      ![“生成方法”的结果 VB](media/field-result-vb.png)
+       ![“生成方法”的结果 VB](media/field-result-vb.png)
 
 ## <a name="see-also"></a>请参阅
 

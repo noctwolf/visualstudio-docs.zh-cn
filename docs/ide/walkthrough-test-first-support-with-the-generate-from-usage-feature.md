@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ad898b353914949c74eae65c6e545b1c167ec9
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: c500f7a245ffd3a0dec175dd5f016cf1b2596fa4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821482"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试优先开发
 
@@ -36,15 +36,15 @@ ms.locfileid: "34748187"
 
 ### <a name="create-a-windows-class-library-project-and-a-test-project"></a>创建 Windows 类库项目和测试项目
 
-1.  在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中新建一个“Windows 类库”项目。 将其命名为 `GFUDemo_VB` 或 `GFUDemo_CS`，具体取决于所使用的语言。
+1. 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中新建一个“Windows 类库”项目。 将其命名为 `GFUDemo_VB` 或 `GFUDemo_CS`，具体取决于所使用的语言。
 
-2.  在“解决方案资源管理器”中，右键单击顶部的解决方案图标，选择“添加”，然后选择“新建项目”。 在“新建项目”对话框的左窗格中，选择“测试”。
+2. 在“解决方案资源管理器”中，右键单击顶部的解决方案图标，选择“添加”，然后选择“新建项目”。 在“新建项目”对话框的左窗格中，选择“测试”。
 
-3.  在中间窗格中，选择“单元测试项目”并接受 `UnitTestProject1` 的默认名称。 下图显示了出现在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]中的对话框。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，对话框看起来与此类似。
+3. 在中间窗格中，选择“单元测试项目”并接受 `UnitTestProject1` 的默认名称。 下图显示了出现在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]中的对话框。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，对话框看起来与此类似。
 
-     ![“新建测试项目”对话框](../ide/media/newproject_test.png)
+    ![“新建测试项目”对话框](../ide/media/newproject_test.png)
 
-4.  选择“确定”，关闭“新建项目”对话框。
+4. 选择“确定”，关闭“新建项目”对话框。
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>向类库项目添加引用
 
@@ -58,20 +58,20 @@ ms.locfileid: "34748187"
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>从单元测试生成一个新类
 
-1.  测试项目包含名为 UnitTest1 的文件。 在“解决方案资源管理器”  中双击此文件以在代码编辑器中打开。 已生成测试类和测试方法。
+1. 测试项目包含名为 UnitTest1 的文件。 在“解决方案资源管理器”  中双击此文件以在代码编辑器中打开。 已生成测试类和测试方法。
 
-2.  找到类 `UnitTest1` 的声明并将其重命名为 `AutomobileTest`。
+2. 找到类 `UnitTest1` 的声明并将其重命名为 `AutomobileTest`。
 
- > [!NOTE]
- >  IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按 Ctrl+Alt+空格键 以实现完成模式与建议模式之间的切换。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。
+   > [!NOTE]
+   >  IntelliSense 现在提供完成 IntelliSense 语句的两种模式： *完成模式* 和 *建议模式*。 对于先使用类和成员然后再对其进行定义的情况，采用建议模式。 当 IntelliSense 窗口打开时，可以按 Ctrl+Alt+空格键 以实现完成模式与建议模式之间的切换。 有关详细信息，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。 当你在下一步键入 `Automobile` 时，建议模式将有助于完成此操作。
 
-3.  找到 `TestMethod1()` 方法并将其重命名为 `DefaultAutomobileIsInitializedCorrectly()`。 在此方法中，创建名为 `Automobile` 的类的新实例，如以下屏幕截图所示。 将出现一条波浪形下划线，指示编译时错误，且[快速操作](../ide/quick-actions.md)灯泡会出现在左边距（仅 C#）中，或直接出现在波浪线下（如果将鼠标悬停在波浪线上）。
+3. 找到 `TestMethod1()` 方法并将其重命名为 `DefaultAutomobileIsInitializedCorrectly()`。 在此方法中，创建名为 `Automobile` 的类的新实例，如以下屏幕截图所示。 将出现一条波浪形下划线，指示编译时错误，且[快速操作](../ide/quick-actions.md)灯泡会出现在左边距（仅 C#）中，或直接出现在波浪线下（如果将鼠标悬停在波浪线上）。
 
-     ![Visual Basic 中的快速操作](../ide/media/genclass_underlinevb.png)
+    ![Visual Basic 中的快速操作](../ide/media/genclass_underlinevb.png)
 
-     ![C&#35; 中的快速操作](../ide/media/genclass_underline.png)
+    ![C&#35; 中的快速操作](../ide/media/genclass_underline.png)
 
-4.  选择或单击“快速操作”灯泡。 将会看到一条错误消息，表明未定义类型 `Automobile`。 也会显示一些解决方案。
+4. 选择或单击“快速操作”灯泡。 将会看到一条错误消息，表明未定义类型 `Automobile`。 也会显示一些解决方案。
 
 5. 单击“生成新类型”，打开“生成类型”对话框。 此对话框中提供了许多选项，包含在其他项目中生成类型。
 
@@ -79,9 +79,9 @@ ms.locfileid: "34748187"
 
      ![“生成新类型”对话框](../ide/media/genotherdialog.png)
 
-6.  单击“确定”  以关闭对话框并创建新文件。
+7. 单击“确定”  以关闭对话框并创建新文件。
 
-7.  在“解决方案资源管理器” 中，在 GFUDemo_VB 或 GFUDemo_CS 项目节点下查看，验证是否存在新的 Automobile.vb 或 Automobile.cs 文件。 在代码编辑器中，焦点仍处于 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` 中，这可尽可能减少继续编写测试的过程中的中断。
+8. 在“解决方案资源管理器” 中，在 GFUDemo_VB 或 GFUDemo_CS 项目节点下查看，验证是否存在新的 Automobile.vb 或 Automobile.cs 文件。 在代码编辑器中，焦点仍处于 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly` 中，这可尽可能减少继续编写测试的过程中的中断。
 
 ### <a name="generate-a-property-stub"></a>生成属性存根
 假定产品规范规定 `Automobile` 类具有两个公共属性，分别名为 `Model` 和 `TopSpeed`。 这些属性必须由默认的构造函数使用默认值 `"Not specified"` 和 `-1` 进行初始化。 下面的单元测试将验证默认构造函数将属性设置为正确的默认值。
