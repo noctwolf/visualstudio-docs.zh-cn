@@ -1,5 +1,5 @@
 ---
-title: NATIVE_ADDRESS |Microsoft 文档
+title: NATIVE_ADDRESS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb443816db82d6003536b36783fd6555ef45db24
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 751b4dfc641b017a4dc3f47f90b95e8447a2b1c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840423"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 此结构表示本机地址。  
@@ -41,7 +41,7 @@ public struct NATIVE_ADDRESS {
   
 ## <a name="terms"></a>术语  
  未知  
- 本地地址 （此意义取决于运行时和操作系统）。  
+ （这其中的含义取决于运行时和操作系统） 本机地址。  
   
 ## <a name="remarks"></a>备注  
  此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_NATIVE`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。  
@@ -53,6 +53,6 @@ public struct NATIVE_ADDRESS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

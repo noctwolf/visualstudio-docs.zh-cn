@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af8904db6d1c07f9c805a21975101d7728456eec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f42416a6d88edc417c0150685ab4c7e198aa808
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837095"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：标识符应采用正确的后缀
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotHaveIncorrectSuffix|
@@ -59,15 +60,15 @@ ms.locfileid: "49218304"
 
  此外，以下后缀应**不**使用：
 
--   委托
+- 委托
 
--   Enum
+- Enum
 
--   此实现-请改用 Core
+- 此实现-请改用 Core
 
--   Ex 或类似的后缀，以使其不同于早期版本的相同的类型
+- Ex 或类似的后缀，以使其不同于早期版本的相同的类型
 
- 命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
+  命名约定提供了通用的外观对于库面向公共语言运行时。 这会减少所需的新软件库，并会增加客户信心库由必须在托管代码中开发的专业知识的人学习曲线。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  删除类型名称的后缀。

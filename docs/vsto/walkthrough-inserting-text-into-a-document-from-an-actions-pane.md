@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 575f847758bd18c5e13298b1fddd3e34ddb98545
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862185"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练： 向操作窗格中的文档中插入文本
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件收集输入，然后将文本发送到该文档。  
@@ -60,17 +60,17 @@ ms.locfileid: "35670329"
   
 ### <a name="to-add-text-to-your-document"></a>若要将文本添加到你的文档  
   
-1.  插入到 Word 文档中键入以下文本：  
+1. 插入到 Word 文档中键入以下文本：  
   
-     **2008 年 3 月 21日日**  
+    **2008 年 3 月 21日日**  
   
-     **名称**  
+    **名称**  
   
-     **地址**  
+    **地址**  
   
-     **这是一个基本的操作窗格在 Word 中的示例。**  
+    **这是一个基本的操作窗格在 Word 中的示例。**  
   
- 可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>到你的文档通过将其从控件**工具箱**在 Visual Studio 中或通过使用**书签**在 Word 中的对话框。  
+   可以添加<xref:Microsoft.Office.Tools.Word.Bookmark>到你的文档通过将其从控件**工具箱**在 Visual Studio 中或通过使用**书签**在 Word 中的对话框。  
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>若要向文档添加书签控件  
   
@@ -133,7 +133,7 @@ ms.locfileid: "35670329"
     |属性|“值”|  
     |--------------|-----------|  
     |**名称**|**addText**|  
-    |**文本**|插入|  
+    |**文本**|**插入**|  
   
 ## <a name="add-code-to-insert-text-into-the-document"></a>添加代码以将文本插入到文档  
  在操作窗格中，编写将文本从文本框插入到相应的代码<xref:Microsoft.Office.Tools.Word.Bookmark>文档中的控件。 可以使用`Globals`类来访问文档上的控件从操作窗格上的控件。 有关详细信息，请参阅[对 Office 项目中的对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。  

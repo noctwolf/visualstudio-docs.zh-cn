@@ -14,12 +14,12 @@ caps.latest.revision: 66
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 26a852bdf955a17dd59ffe79d29e2601362e47d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852357"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,97 +47,97 @@ ms.locfileid: "49270590"
 ####  <a name="TFS2013"></a> Team Foundation Server 2013  
  设置生成定义以将源、生成和符号的位置添加到生成清单（BuildInfo.config 文件）。 Team Foundation Build 自动创建此文件并将其放置在项目的输出文件夹中。  
   
-1.  [编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
+1. [编辑生成定义或创建新的生成定义。](http://msdn.microsoft.com/library/1c2eca2d-9a65-477e-9b23-0678ff7882ee)  
   
-     ![查看生成定义 TFS 2013 中的](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
+    ![查看生成定义 TFS 2013 中的](../debugger/media/ffr-tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")  
   
-2.  选择默认模板 (TfvcTemplate.12.xaml) 或自己的自定义模板。  
+2. 选择默认模板 (TfvcTemplate.12.xaml) 或自己的自定义模板。  
   
-     ![选择生成过程模板&#45;TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
+    ![选择生成过程模板&#45;TFS 2013](../debugger/media/ffr-tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")  
   
-3.  指定保存符号 (PDB) 文件的位置，以便自动为你的源编制索引。  
+3. 指定保存符号 (PDB) 文件的位置，以便自动为你的源编制索引。  
   
-     如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。  
+    如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。  
   
-     ![设置符号路径中的生成定义 TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![设置符号路径中的生成定义 TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
-     有关符号的详细信息，请参阅 [发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
+    有关符号的详细信息，请参阅 [发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   
-4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
+4. 添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：  
   
-     **/p:IncludeServerNameInBuildInfo = true**  
+    **/p:IncludeServerNameInBuildInfo = true**  
   
-     任何可访问你的 Web 服务器的人都可以在生成清单中看见这些位置。 请确保你的源服务器是安全的。  
+    任何可访问你的 Web 服务器的人都可以在生成清单中看见这些位置。 请确保你的源服务器是安全的。  
   
-5.  如果使用自定义模板，请添加此 MSBuild 参数，以指定保存符号文件的位置：  
+5. 如果使用自定义模板，请添加此 MSBuild 参数，以指定保存符号文件的位置：  
   
-     **/p: buildsymbolstorepath =**\<*符号的路径*>  
+    **/p: buildsymbolstorepath =**\<*符号的路径*>  
   
-     ![在生成定义 TFS 2013 中包括生成服务器信息](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
+    ![在生成定义 TFS 2013 中包括生成服务器信息](../debugger/media/ffr-tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")  
   
-     将这些行添加到你的 Web 项目文件（.csproj、.vbproj）中：  
+    将这些行添加到你的 Web 项目文件（.csproj、.vbproj）中：  
   
-    ```  
-    <!-- Import the targets file. Change the folder location as necessary. -->  
-       <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
+   ```  
+   <!-- Import the targets file. Change the folder location as necessary. -->  
+      <Import Project=""$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\BuildInfo\Microsoft.VisualStudio.ReleaseManagement.BuildInfo.targets" />  
   
-    ```  
+   ```  
   
-6.  运行新的生成。  
+6. 运行新的生成。  
   
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+   **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
   
 ####  <a name="TFS2012_2010"></a> Team Foundation Server 2012 或 2010  
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。  
   
-1.  在你的 Team Foundation Build 服务器上安装 Visual Studio 2013（任意版本）。  
+1. 在你的 Team Foundation Build 服务器上安装 Visual Studio 2013（任意版本）。  
   
-2.  在你的生成定义中，指定保存符号的位置，以便自动为你的源编制索引。  
+2. 在你的生成定义中，指定保存符号的位置，以便自动为你的源编制索引。  
   
-     如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。  
+    如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。  
   
-3.  将这些 MSBuild 参数添加到你的生成定义：  
+3. 将这些 MSBuild 参数添加到你的生成定义：  
   
-    -   **/p:VisualStudioVersion = 12.0**  
+   -   **/p:VisualStudioVersion = 12.0**  
   
-    -   **/p:MSBuildAssemblyVersion = 12.0**  
+   -   **/p:MSBuildAssemblyVersion = 12.0**  
   
-    -   **/tv:12.0**  
+   -   **/tv:12.0**  
   
-    -   **/p:IncludeServerNameInBuildInfo = true**  
+   -   **/p:IncludeServerNameInBuildInfo = true**  
   
-    -   **/p: buildsymbolstorepath =**\<*符号的路径*>  
+   -   **/p: buildsymbolstorepath =**\<*符号的路径*>  
   
-4.  运行新的生成。  
+4. 运行新的生成。  
   
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+   **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
   
 ###  <a name="ManualBuild"></a> 创建手动生成使用 Visual Studio 的生成清单  
  若要为项目自动创建生成清单（BuildInfo.config 文件）并将其置于你的项目的输出文件夹中，请执行以下步骤。 此文件在输出文件夹中显示为“*ProjectName*.BuildInfo.config”，但是在你发布应用后将在部署文件夹中重命名为“BuildInfo.config”。  
   
-1.  在“解决方案资源管理器” 中，卸载 Web 项目。  
+1. 在“解决方案资源管理器” 中，卸载 Web 项目。  
   
-2.  打开项目文件（.csproj、.vbproj）。 添加这些行：  
+2. 打开项目文件（.csproj、.vbproj）。 添加这些行：  
   
-    ```xml  
-    <!-- **************************************************** -->  
-    <!-- Build info -->  
-    <PropertyGroup>  
-       <!-- Generate the BuildInfo.config file -->  
-       <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
-       <!-- Include server name in build info -->   
-       <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
-       <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
-       <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
-    </PropertyGroup>  
-    <!-- **************************************************** -->  
-    ```  
+   ```xml  
+   <!-- **************************************************** -->  
+   <!-- Build info -->  
+   <PropertyGroup>  
+      <!-- Generate the BuildInfo.config file -->  
+      <GenerateBuildInfoConfigFile>True</GenerateBuildInfoConfigFile>  
+      <!-- Include server name in build info -->   
+      <IncludeServerNameInBuildInfo>True</IncludeServerNameInBuildInfo>   
+      <!-- Include the symbols path so Visual Studio can find the matching deployed code when you start debugging. -->  
+      <BuildSymbolStorePath><path to symbols></BuildSymbolStorePath>  
+   </PropertyGroup>  
+   <!-- **************************************************** -->  
+   ```  
   
-3.  签入更新的项目文件。  
+3. 签入更新的项目文件。  
   
-4.  运行新的生成。  
+4. 运行新的生成。  
   
- **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
+   **步骤 2：** [步骤 2： Release your app](#DeployRelease)  
   
 ###  <a name="MSBuild"></a> 创建手动生成使用 MSBuild.exe 的生成清单  
  运行生成时添加这些生成参数：  
@@ -251,100 +251,100 @@ ms.locfileid: "49270590"
   
 3.  确保此文件包含必需的信息：  
   
--   **ProjectName**  
+- **ProjectName**  
   
-     Visual Studio 中你的项目的名称。 例如：  
+   Visual Studio 中你的项目的名称。 例如：  
+  
+  ```  
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+  ```  
+  
+- **SourceControl**  
+  
+- 有关你的源代码管理系统以及以下必需属性的信息：  
+  
+  - **TFS**  
+  
+    - **ProjectCollectionUri**：用于 Team Foundation Server 和项目集合的 URI  
+  
+    - **ProjectItemSpec**：应用的项目文件（.csproj 或 .vbproj）的路径  
+  
+    - **ProjectVersionSpec**：项目的版本  
+  
+      例如：  
   
     ```  
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>  
+    <SourceControl type="TFS">  
+       <TfsSourceControl>  
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
+       </TfsSourceControl>  
+    </SourceControl>  
     ```  
   
--   **SourceControl**  
+  - **Git**  
   
--   有关你的源代码管理系统以及以下必需属性的信息：  
+    - **GitSourceControl**： **GitSourceControl** 架构的位置  
   
-    -   **TFS**  
+    - **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI  
   
-        -   **ProjectCollectionUri**：用于 Team Foundation Server 和项目集合的 URI  
+    - **ProjectPath**：应用的项目文件（.csproj 或 .vbproj）的路径  
   
-        -   **ProjectItemSpec**：应用的项目文件（.csproj 或 .vbproj）的路径  
+    - **CommitId**：你的提交的 ID  
   
-        -   **ProjectVersionSpec**：项目的版本  
+      例如：  
   
-         例如：  
+    ```  
+    <SourceControl type="Git">   
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
+       </GitSourceControl>  
+    </SourceControl>  
+    ```  
   
-        ```  
-        <SourceControl type="TFS">  
-           <TfsSourceControl>  
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>  
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>  
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>  
-           </TfsSourceControl>  
-        </SourceControl>  
-        ```  
+- **生成**  
   
-    -   **Git**  
+   有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：  
   
-        -   **GitSourceControl**： **GitSourceControl** 架构的位置  
+  - **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
   
-        -   **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI  
+  - **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。  
   
-        -   **ProjectPath**：应用的项目文件（.csproj 或 .vbproj）的路径  
+  - **BuildReportUrl** （对于 TeamBuild）：TFS 中的生成报告的位置  
   
-        -   **CommitId**：你的提交的 ID  
+  - **BuildId** （对于 TeamBuild）：TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。  
   
-         例如：  
+  - **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。  
   
-        ```  
-        <SourceControl type="Git">   
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">  
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>  
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>  
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>  
-           </GitSourceControl>  
-        </SourceControl>  
-        ```  
+    例如：  
   
--   **生成**  
+  - **TFS**  
   
-     有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：  
+    ```  
+    <Build type="TeamBuild">  
+       <MsBuild>  
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MsBuild>  
+    </Build>  
+    ```  
   
-    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](http://msdn.microsoft.com/library/1f302e9d-4b0a-40b5-8009-b69ca6f988c3)。  
+  - **Git**  
   
-    -   **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。  
-  
-    -   **BuildReportUrl** （对于 TeamBuild）：TFS 中的生成报告的位置  
-  
-    -   **BuildId** （对于 TeamBuild）：TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。  
-  
-    -   **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。  
-  
-     例如：  
-  
-    -   **TFS**  
-  
-        ```  
-        <Build type="TeamBuild">  
-           <MsBuild>  
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>  
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>  
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>  
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MsBuild>  
-        </Build>  
-        ```  
-  
-    -   **Git**  
-  
-        ```  
-        <Build type="MSBuild">   
-           <MSBuild>  
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
-           </MSBuild>  
-        </Build>  
-        ```  
+    ```  
+    <Build type="MSBuild">   
+       <MSBuild>  
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>  
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>  
+       </MSBuild>  
+    </Build>  
+    ```  
   
 ####  <a name="IneligibleWorkspace"></a> 问： Visual Studio 为何提示我所选的工作区是不合格？  
  **答：** 选中的工作区域没有源代码管理文件夹和本地文件夹之间的任何映射。 若要为此工作区创建映射，请选择“管理” 。 否则，请选择已映射的工作区或创建新的工作区。  

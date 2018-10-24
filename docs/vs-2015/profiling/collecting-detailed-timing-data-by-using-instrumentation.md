@@ -17,12 +17,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8355911a54e6682b763d7f3aecbf29812fa4a1e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 95bd21e908b24e00619a659445b3cd30d4e915a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870102"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>使用检测收集详细计时数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ ms.locfileid: "49186259"
 ## <a name="common-tasks"></a>常规任务  
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  
   
--   在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
+- 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
   
- 下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_ 对话框中指定的选项。  
+  下表中的任务描述了在使用检测方法进行分析时，你可以在 _性能会话_ 对话框中指定的选项。  
   
 |任务|相关内容|  
 |----------|---------------------|  

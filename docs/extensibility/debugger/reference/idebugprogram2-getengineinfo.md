@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetEngineInfo |Microsoft 文档
+title: IDebugProgram2::GetEngineInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7347ad8bb8bbe39208d8d4d562ac580d520cc5d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a560b9c1f576ee35acec4a95ef1c0a3870423680
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114743"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860573"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
-获取的名称和 GUID 运行此程序的调试引擎 (DE)。  
+获取名称和运行此程序的调试引擎 (DE) 的 GUID。  
   
 ## <a name="syntax"></a>语法  
   
@@ -52,7 +52,7 @@ int GetEngineInfo(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 每个 DE 定义其自己的 GUID 进行标识。  
+ 每个 DE 定义其自己的标识的 GUID。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 40322ffaed98e2254fa09592be3c3eda52acc999
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845779"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>PTVS 入门：开始编码（项目）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Python Tools for Visual Studio (PTVS) 可帮助你管理代码。
  
 - 定义组件的边界。 如果应用中有多个组件，可将每个组件放在一个单独的项目中。 这些组件可能最终会被部署到不同的服务器，以不同的版本或调试设置生成，或甚至可以通过使用另一种 Visual Studio 支持的语言（如 C++ 或 Node.js）进行编写 
  
- 有几个项目模板，可以帮助你入门。 如果已有需处理的 Python 代码，“从现有代码”向导将帮助你创建包含你所有文件的项目。 对于一些常用框架存在多个 Web 项目。 PTVS 示例包中提供了更多模板。 存在可使提供的 Web 模板用于其他框架的选项。 Python 应用程序模板是一个干净的空项目。 有一个模块，可以帮助你入门。 
+  有几个项目模板，可以帮助你入门。 如果已有需处理的 Python 代码，“从现有代码”向导将帮助你创建包含你所有文件的项目。 对于一些常用框架存在多个 Web 项目。 PTVS 示例包中提供了更多模板。 存在可使提供的 Web 模板用于其他框架的选项。 Python 应用程序模板是一个干净的空项目。 有一个模块，可以帮助你入门。 
  
- Visual Studio 在“解决方案资源管理器”窗口中显示打开的项目，包括所有文件、搜索路径和 Python 环境。 若要添加新项，请选择你的项目文件夹，并从上下文菜单（按右指针按钮）中依次选择“添加”和“新项”。 可在对话框中选择任何项、自定义项的名称以及将项添加到项目中。 
+  Visual Studio 在“解决方案资源管理器”窗口中显示打开的项目，包括所有文件、搜索路径和 Python 环境。 若要添加新项，请选择你的项目文件夹，并从上下文菜单（按右指针按钮）中依次选择“添加”和“新项”。 可在对话框中选择任何项、自定义项的名称以及将项添加到项目中。 
  
- 可以拖放到“解决方案资源管理器”中。 如果已经将文件复制到项目的目录结构中，则可以选择“解决方案资源管理器”顶部的“显示所有文件”。 然后可以选择要添加的项，并从上下文菜单中选择“包括在项目中”。 
+  可以拖放到“解决方案资源管理器”中。 如果已经将文件复制到项目的目录结构中，则可以选择“解决方案资源管理器”顶部的“显示所有文件”。 然后可以选择要添加的项，并从上下文菜单中选择“包括在项目中”。 
  
- 你可以在很短的 [youtube 视频](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)中观看这些说明。 
+  你可以在很短的 [youtube 视频](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2)中观看这些说明。 
  
 ## <a name="see-also"></a>请参阅 
  [Wiki 文档](https://github.com/Microsoft/PTVS/wiki/Projects) [PTVS 入门和深入了解视频](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

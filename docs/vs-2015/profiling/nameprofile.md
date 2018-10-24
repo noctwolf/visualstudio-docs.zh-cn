@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47db8dc67108e8d443e5f485babb906bd7b040f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfe1b5fb517ed7b886e681081ac7910cfe717cc6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867164"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +45,17 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
  分析元素的名称。 以下情况下，名称无效（导致 NameProfileA 返回 NAME_ERROR_INVALID_NAME）：  
   
--   传递到 NameProfileA 的指针为 NULL 值  
+- 传递到 NameProfileA 的指针为 NULL 值  
   
--   pszName 的字符串数据以数字开头  
+- pszName 的字符串数据以数字开头  
   
--   pszName 的字符串数据包含空格  
+- pszName 的字符串数据包含空格  
   
--   pszName 的字符串数据包含以下任意字符：,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
+- pszName 的字符串数据包含以下任意字符：,;.`~!@#$%^&*()=[]{}&#124;\\?/<>  
   
- `Level`  
+  `Level`  
   
- 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 值可用于指示性能数据集合可应用到的三个级别之一：  
+  指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 值可用于指示性能数据集合可应用到的三个级别之一：  
   
 |枚举器|描述|  
 |----------------|-----------------|  

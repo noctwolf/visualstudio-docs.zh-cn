@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_packed |Microsoft 文档'
+title: 'Idiasymbol:: Get_packed |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f124a27bb05e77d52bebde9f97dc81ea1fc971bc
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c17d60509345e1a51df615c0d2aca90e32d055f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31479508"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835847"
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-检索用于指定是否已打包的用户定义数据类型 (UDT) 的标志。  
+检索指定用户定义数据类型 (UDT) 是否打包的标志。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_packed (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`TRUE`如果打包用户定义的类型; 否则，返回`FALSE`。  
+ [out]返回`TRUE`打包用户定义的类型; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 打包的用户定义的类型的所有成员都位于尽可能靠近与不干扰填充到内存边界对齐的方式。  
+ 打包的 UDT 的所有成员都位于尽可能靠近且没有干扰填充到内存边界对齐方式。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

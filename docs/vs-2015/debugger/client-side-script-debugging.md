@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf99cad098cc9e127e5ee2c746c046f08754f00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1abbf86799b290bd8afd9ed76fdb7f94b390c1b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865851"
 ---
 # <a name="client-side-script-debugging"></a>客户端脚本调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,17 +47,17 @@ Visual Studio 调试器提供了一个全面的调试环境，以便查找和更
   
  当出现下列情况之一时，调试器会自动附加到脚本中：  
   
--   您命中了脚本中设置的断点。  
+- 您命中了脚本中设置的断点。  
   
--   您命中了脚本代码中的 VBScript `Stop` 语句或 JScript `debugger` 语句。  
+- 您命中了脚本代码中的 VBScript `Stop` 语句或 JScript `debugger` 语句。  
   
--   浏览器或服务器在脚本中遇到语法或运行时错误。 出现此情况时，将显示一个对话框，其中将提供开始调试的选项。  
+- 浏览器或服务器在脚本中遇到语法或运行时错误。 出现此情况时，将显示一个对话框，其中将提供开始调试的选项。  
   
- 手动附加到脚本时，脚本进程将继续运行，直至用某种方式将其暂停。 可以通过选择 **“调试”** 菜单上的 **“中断”** 来暂停脚本进程。  
+  手动附加到脚本时，脚本进程将继续运行，直至用某种方式将其暂停。 可以通过选择 **“调试”** 菜单上的 **“中断”** 来暂停脚本进程。  
   
- 自动附加调试器时，脚本将在出现断点、 `Stop` 语句或 `debugger` 语句或错误的行上或是您在 Internet Explorer 中选择开始调试的位置暂停执行。  
+  自动附加调试器时，脚本将在出现断点、 `Stop` 语句或 `debugger` 语句或错误的行上或是您在 Internet Explorer 中选择开始调试的位置暂停执行。  
   
- 在该位置，可以使用常规调试器功能开始调试。 例如，可以使用 **“单步执行”** 命令继续逐行执行代码。 可以使用 **“调用堆栈”** 窗口查看并控制脚本流。 可以使用变量窗口或 **“即时”** 窗口查看或更改变量和属性。  
+  在该位置，可以使用常规调试器功能开始调试。 例如，可以使用 **“单步执行”** 命令继续逐行执行代码。 可以使用 **“调用堆栈”** 窗口查看并控制脚本流。 可以使用变量窗口或 **“即时”** 窗口查看或更改变量和属性。  
   
 ## <a name="enhanced-error-messages-for-script-debugging"></a>增强的脚本调试错误消息  
  Visual Studio 为常见脚本调试问题提供了增强的错误消息。 只有将这些消息手动附加到 Internet Explorer，才会显示它们。 如果您在 Internet Explorer 自动打开时遇到错误情况，请尝试通过手动附加来查看错误消息。  

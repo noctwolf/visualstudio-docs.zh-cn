@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5d28ca688bbad0054f7522034bfe309dcb1fe698
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830582"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806：不要忽略方法结果
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ ms.locfileid: "49250102"
 ## <a name="cause"></a>原因  
  有多种原因引起此警告：  
   
--   一个新的对象将创建但从未使用过。  
+- 一个新的对象将创建但从未使用过。  
   
--   创建并返回新字符串的方法称为，从未使用过的新字符串。  
+- 创建并返回新字符串的方法称为，从未使用过的新字符串。  
   
--   永远不会使用返回的 HRESULT 或错误代码的 COM 或 P/Invoke 方法。 规则说明  
+- 永远不会使用返回的 HRESULT 或错误代码的 COM 或 P/Invoke 方法。 规则说明  
   
- 不必要的对象的创建和未使用的对象的关联的垃圾回收会降低性能。  
+  不必要的对象的创建和未使用的对象的关联的垃圾回收会降低性能。  
   
- 字符串是固定不变，并等 String.ToUpper 方法返回的字符串，而非修改实例时调用的方法中字符串的新实例。  
+  字符串是固定不变，并等 String.ToUpper 方法返回的字符串，而非修改实例时调用的方法中字符串的新实例。  
   
- 忽略 HRESULT 或错误代码可能会导致错误条件中出现意外行为或资源不足的情况。  
+  忽略 HRESULT 或错误代码可能会导致错误条件中出现意外行为或资源不足的情况。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  如果一个方法创建从未使用过的 B 对象的新实例，将实例作为参数传递给另一种方法，或将此实例赋给变量。 如果对象创建不必要，请删除它。-或-  

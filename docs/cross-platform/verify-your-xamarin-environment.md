@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: e46da7cf39ad816f70454983c56dd5751981f741
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 303b8677781d7fde893cc74e4fbcdbd5772966c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863017"
 ---
 # <a name="verify-your-xamarin-environment"></a>验证 Xamarin 环境
 
@@ -42,19 +42,19 @@ ms.locfileid: "46495749"
 
 1. 转到“工具”>“Android”>“Android SDK 管理器”，检查是否已安装最新的 Android SDK 工具。 安装最新版本的 Android SDK 工具、Android SDK 平台工具和 Android SDK 生成工具。 无需始终安装最新的 Android API 级别。 所需的 API 级别取决于要面向的平台级别。 通常，安装 Xamarin 平台时会随附安装其所需的 Android 平台级别。
 
-2.  在设备或模拟器上验证生成和调试：
+2. 在设备或模拟器上验证生成和调试：
 
-    -   右击“解决方案资源管理器”中的 Android 项目，并选择“设为启动项目” 。
+   -   右击“解决方案资源管理器”中的 Android 项目，并选择“设为启动项目” 。
 
-    -   工具栏中应显示一个下拉列表，其中包含一系列可用的 Android 设备和模拟器。
+   -   工具栏中应显示一个下拉列表，其中包含一系列可用的 Android 设备和模拟器。
 
-    必须在 Android 设备的“设置”页的“开发人员”选项中启用设备的 USB 调试。 然后使用 USB 线将该设备连接到计算机。
+   必须在 Android 设备的“设置”页的“开发人员”选项中启用设备的 USB 调试。 然后使用 USB 线将该设备连接到计算机。
 
-    此处还会列出模拟器。 从中选择一个设备或 Visual Studio 模拟器：
+   此处还会列出模拟器。 从中选择一个设备或 Visual Studio 模拟器：
 
-  ![选择适用于 Android 的 Visual Studio 模拟器作为调试目标](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
+   ![选择适用于 Android 的 Visual Studio 模拟器作为调试目标](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")
 
-  有关详细信息，请参阅 Microsoft DevOps 博客 [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/)（适用于 Android 的 Visual Studio 模拟器简介）。 如果使用模拟器时遇到问题，请参阅[适用于 Android 的 Visual Studio 模拟器疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 还可选择“工具”>“Android”>“Android Emulator 管理器 ”，为模拟器创建新的设备配置文件。
+   有关详细信息，请参阅 Microsoft DevOps 博客 [Introducing Visual Studio's Emulator for Android](https://blogs.msdn.microsoft.com/devops/2014/11/12/introducing-visual-studios-emulator-for-android/)（适用于 Android 的 Visual Studio 模拟器简介）。 如果使用模拟器时遇到问题，请参阅[适用于 Android 的 Visual Studio 模拟器疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。 还可选择“工具”>“Android”>“Android Emulator 管理器 ”，为模拟器创建新的设备配置文件。
 
 3. 按 F5 编译程序并将其部署到 Android 设备或模拟器。
 
@@ -68,28 +68,28 @@ ms.locfileid: "46495749"
 
 ## <a name="ios"></a>iOS
 
-1.  确保 Mac 已联网且已与 Visual Studio 配对，如 [连接到 Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) 中所述。
+1. 确保 Mac 已联网且已与 Visual Studio 配对，如 [连接到 Mac](/xamarin/ios/get-started/installation/windows/connecting-to-mac/) 中所述。
 
-2.  右击“解决方案资源管理器”中的 iOS 项目，并选择“设为启动项目” 。
+2. 右击“解决方案资源管理器”中的 iOS 项目，并选择“设为启动项目” 。
 
-3.  如下所示，从 Visual Studio 的生成下拉菜单中选择“iPhoneSimulator”目标；或者，如果设备限于 Mac，请选择“iPhone”目标。
+3. 如下所示，从 Visual Studio 的生成下拉菜单中选择“iPhoneSimulator”目标；或者，如果设备限于 Mac，请选择“iPhone”目标。
 
- ![选择 iPhoneSimulator 生成目标](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
+   ![选择 iPhoneSimulator 生成目标](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")
 
- 如果未列出任何模拟器，请在 Mac 上启动 Xcode，选择“Xcode” > “首选项”，然后单击“下载”。 在“组件”标题下，应显示可供下载的模拟器版本。 在 [iOS 调试](/xamarin/ios/deploy-test/debugging-in-xamarin-ios)页上可以找到关于调试的其他说明。
+   如果未列出任何模拟器，请在 Mac 上启动 Xcode，选择“Xcode” > “首选项”，然后单击“下载”。 在“组件”标题下，应显示可供下载的模拟器版本。 在 [iOS 调试](/xamarin/ios/deploy-test/debugging-in-xamarin-ios)页上可以找到关于调试的其他说明。
 
-4.  从 Visual Studio 下拉列表中选择模拟器设备目标：
+4. 从 Visual Studio 下拉列表中选择模拟器设备目标：
 
- ![选择 iPhone 调试目标](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
+   ![选择 iPhone 调试目标](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin Verify 6")
 
 5. 按 F5 启动调试器。 模拟器在 Mac 上启动，此时你可以与应用进行交互，同时在 Visual Studio 中进行调试。 如果 iPhone 或 iPad 实物已连接到 Mac，列表中将出现该设备，你可以选择该设备。 如果未列出任何设备或模拟器，请检查与 Mac 的连接情况。 请参阅上文步骤 1 中链接指向的文章，或转到“工具” > “iOS” > “与 Mac 配对”
 
-6.  如果在连接到 Mac 时遇到问题，请参阅[连接疑难解答](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/)。
+6. 如果在连接到 Mac 时遇到问题，请参阅[连接疑难解答](/xamarin/ios/get-started/installation/windows/connecting-to-mac/troubleshooting/)。
 
-7.  如果看到错误显示“安装的配置文件与安装的 iOS 签名密钥不匹配”，请尝试以下建议：
+7. 如果看到错误显示“安装的配置文件与安装的 iOS 签名密钥不匹配”，请尝试以下建议：
 
-  - 检查是否按[将帐户添加到 Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述在 Mac 上的 Xcode 中添加了 Apple ID 帐户。  添加帐户后，请重启 Visual Studio 和 Xcode。
+   - 检查是否按[将帐户添加到 Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com) 中所述在 Mac 上的 Xcode 中添加了 Apple ID 帐户。  添加帐户后，请重启 Visual Studio 和 Xcode。
 
-  - 在 iOS 捆绑签名选项卡的 iOS 项目属性中，验证活动调试配置的“自定义”授权字段是否为空。  注意：如果遇到以上错误消息，则应仅尝试删除此设置。
+   - 在 iOS 捆绑签名选项卡的 iOS 项目属性中，验证活动调试配置的“自定义”授权字段是否为空。  注意：如果遇到以上错误消息，则应仅尝试删除此设置。
 
-  ![CrossPlat Xamarin 验证 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin 验证 8")
+   ![CrossPlat Xamarin 验证 8](../cross-platform/media/crossplat-xamarin-verify-8.png "CrossPlat Xamarin 验证 8")

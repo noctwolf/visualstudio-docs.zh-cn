@@ -30,12 +30,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2700076fa0cc08aa137377b9a99c1179d9b8fc12
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9540e40325293795c44e0d9c2283a27f1d9ea0c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856699"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>如何：启用和禁用“编辑并继续”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +48,18 @@ ms.locfileid: "49212813"
   
 #### <a name="to-enabledisable-edit-and-continue"></a>启用/禁用“编辑并继续”  
   
-1.  打开调试选项页 (**工具 / 选项 / 调试**)。  
+1. 打开调试选项页 (**工具 / 选项 / 调试**)。  
   
-2.  向下滚动到**编辑并继续**类别。  
+2. 向下滚动到**编辑并继续**类别。  
   
-3.  若要启用，请选择**启用编辑并继续**复选框。 若要禁用它，请清除该复选框。  
+3. 若要启用，请选择**启用编辑并继续**复选框。 若要禁用它，请清除该复选框。  
   
-    > [!NOTE]
-    >  如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[配置 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+   > [!NOTE]
+   >  如果启用了 IntelliTrace 并且收集 IntelliTrace 事件和调用信息，则会禁用“编辑并继续”。 有关详细信息，请参阅[配置 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
- 有关这些选项的详细信息，请参阅[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
+   有关这些选项的详细信息，请参阅[General，Debugging，Options Dialog Box](../debugger/general-debugging-options-dialog-box.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [编辑并继续](../debugger/edit-and-continue.md)

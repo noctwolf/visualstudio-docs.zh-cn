@@ -15,25 +15,25 @@ ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0da7344c474fa653a63d0b134511a9b9d280492f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 21140a070c59eead834dbb4c03443dd5157d2018
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214600"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845325"
 ---
 # <a name="how-to-provide-context-for-editors"></a>如何： 为编辑器提供的上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 编辑器上下文处于活动状态，仅当编辑器具有焦点或立即之前焦点已移动到工具窗口具有焦点时。 可为编辑器提供上下文，通过执行以下操作：  
   
-1.  创建上下文包。  
+1. 创建上下文包。  
   
-2.  将上下文包发布到所选内容元素标识符 (SEID)。  
+2. 将上下文包发布到所选内容元素标识符 (SEID)。  
   
-3.  维护包中的上下文。  
+3. 维护包中的上下文。  
   
- 以下过程包含在这些任务。 提供上下文的详细信息，请参阅**可靠编程**本主题中更高版本。  
+   以下过程包含在这些任务。 提供上下文的详细信息，请参阅**可靠编程**本主题中更高版本。  
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>为编辑器或设计器创建上下文包  
   

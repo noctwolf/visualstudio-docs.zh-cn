@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_age |Microsoft 文档'
+title: 'Idiasymbol:: Get_age |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81c41902b5e6a8421f15b69ebc77fe5ae6eebf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ba915762a5eacffc32122a1dac4b7b046691e63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868464"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
-检索的.pdb 文件的保留时间值。  
+检索一个.pdb 文件的年龄值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_age (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个.pdb 文件的保留时间值。  
+ [out]返回一个.pdb 文件的年龄值。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 保留时间不一定对应于任何已知的时间值，则为它通常用于确定是否有与相应的.exe 文件不同步的.pdb 文件。  
+ 为任何已知的时间值; 不一定对应年龄它通常用于确定是否与相应的.exe 文件不同步的.pdb 文件。  
   
 ## <a name="requirements"></a>要求  
   

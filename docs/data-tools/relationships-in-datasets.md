@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 78d190e843aa51c794fc41c803cef3fce21005f9
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 812b464fe3e9742309a1ce6918d8d6b383101bf8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864115"
 ---
 # <a name="create-relationships-between-datasets"></a>创建数据集之间的关系
 包含相关的数据的数据集表，表使用<xref:System.Data.DataRelation>对象来表示表之间的父/子关系，并从另一个返回相关的记录。 通过将相关的表添加到数据集**数据源配置向导**，或**数据集设计器**下创建并配置<xref:System.Data.DataRelation>为您的对象。
@@ -58,7 +58,7 @@ ms.locfileid: "37174379"
 可在规则中指定<xref:System.Data.Rule>枚举并列出在下表中。
 
 |外键约束规则|操作|
-|----------------------------------|------------|
+| - |------------|
 |<xref:System.Data.Rule.Cascade>|对父记录所做的更改 （更新或删除） 也由子表中的相关记录中。|
 |<xref:System.Data.Rule.SetNull>|不删除子记录，但子记录中的外键设置为<xref:System.DBNull>。 可以使用此设置，保留子记录作为"孤立"— 即，它们具有与父记录没有关系。 **注意：** 使用此规则可能会导致在子表中的无效数据。|
 |<xref:System.Data.Rule.SetDefault>|相关的子记录中的外键设置为其默认值 (由列的建立<xref:System.Data.DataColumn.DefaultValue%2A>属性)。|
@@ -96,7 +96,7 @@ ms.locfileid: "37174379"
 
 8.  选中或清除**嵌套关系**框。 选择此选项设置<xref:System.Data.DataRelation.Nested%2A>属性设置为`true`，这将导致子行要以 XML 数据形式编写或与同步这些行时嵌套在父列的关系的<xref:System.Xml.XmlDataDocument>。 有关详细信息，请参阅[嵌套 Datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations)。
 
-9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅<xref:System.Data.Rule>。
+9. 设置对这些表中的记录进行更改时要强制实施的规则。 有关详细信息，请参阅 <xref:System.Data.Rule> 。
 
 10. 单击**确定**来创建关系。 在两个表之间的设计器中显示的关系线。
 

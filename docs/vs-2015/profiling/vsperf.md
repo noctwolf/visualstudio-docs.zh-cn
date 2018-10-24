@@ -14,23 +14,23 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b36e33bb589e2866a14acd9dc253af78d7d9c7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 094c59f1ef7acd1105cdefc4f556a50fb7e8a161
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851020"
 ---
 # <a name="vsperf"></a>VSPerf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用 **VsPerf** 命令行工具可以：  
   
-1.  在设备上未安装 Visual Studio 时，从命令行分析 Windows 应用商店应用。  
+1. 在设备上未安装 Visual Studio 时，从命令行分析 Windows 应用商店应用。  
   
-2.  使用采样分析方法分析 Windows 8 桌面应用程序和 Windows Server 2012 应用程序。  
+2. 使用采样分析方法分析 Windows 8 桌面应用程序和 Windows Server 2012 应用程序。  
   
- 有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+   有关分析选项的详细信息，请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  本主题描述了可与 `vsperf.exe` 命令行工具一起使用的选项。 本主题包含以下各节：  

@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetElement |Microsoft 文档
+title: IDebugArrayObject::GetElement |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2e10eced58835044220da0650712dacb131ada3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cff3d3894ae23e7751ac7e7ccd7e62a7cb4d5374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866098"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 获取数组的元素。  
@@ -43,16 +43,16 @@ int GetElement(
   
 #### <a name="parameters"></a>参数  
  `dwIndex`  
- [in]元素索引中。  
+ [in]元素的索引。  
   
  `ppElement`  
- [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示的元素的接口。  
+ [out]返回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)接口表示的元素。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法将数组对象的元素的所有视作一维数组，即使数组对象是多维的。 例如，给定数组`myarray[3][2][6]`和`dwIndex`20 的参数，此方法将返回中的元素`myarray[1][1][2]`，和一个`dwIndex`21 参数将返回中的元素`myarray[1][1][3]`。 使用[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)方法来确定数组中的元素总数。  
+ 此方法将所有数组对象的元素视为一维数组，即使是多维的数组对象。 例如，给定数组`myarray[3][2][6]`和一个`dwIndex`20 的参数，此方法将返回从元素`myarray[1][1][2]`，和一个`dwIndex`21 参数将返回从元素`myarray[1][1][3]`。 使用[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)方法来确定数组中元素的总数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

@@ -1,5 +1,5 @@
 ---
-title: 新的项目生成： 实质上，第二部分 |Microsoft 文档
+title: 生成新项目： 揭秘，第二部分 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69174be20a0961a6074650471bcb4b9d1df9fa98
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 38f2a4a84c6223c2e195c3d703f52d7fd5b18c86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31133178"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837524"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新的项目生成： 实质上，第二部分
-在[新项目生成： 高级选项、 第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新项目**对话框框中填充。 假设你已选择**Visual C# Windows 应用程序**、 已填写**名称**和**位置**文本框中，并单击确定。  
+# <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
+在中[生成新项目： 揭秘，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我们已了解如何**新项目**填充框的对话框。 让我们假定你已选择了**Visual C# Windows 应用程序**中，已填写**名称**并**位置**文本框中，然后单击确定。  
   
 ## <a name="generating-the-solution-files"></a>生成解决方案文件  
- 选择应用程序模板将定向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]来解压缩和打开相应的.vstemplate 文件中，并启动一个模板来解释此文件中的 XML 命令。 这些命令创建新的或现有解决方案中的项目和项目项。  
+ 选择应用程序模板会将定向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]解压缩，然后打开相应的.vstemplate 文件，并启动一个模板来解释此文件中的 XML 命令。 这些命令创建新的或现有解决方案中项目和项目项。  
   
- 模板解包源文件，请调用同一保存.vstemplate 文件的.zip 文件夹中的项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。  
+ 该模板解压缩源文件，保存.vstemplate 文件的同一个.zip 文件夹从调用项模板。 该模板将这些文件复制到新项目中，相应地自定义它们。  
   
 ### <a name="template-parameter-replacement"></a>模板参数替换  
- 当模板复制到新项目项模板时，它用字符串以自定义文件中替换任何模板参数。 一个模板参数是一个特殊的令牌，例如跟美元符号，所以前面、 $date$。  
+ 模板复制到新的项目项模板，它也将与字符串以自定义文件中替换任何模板参数。 模板参数是一个特殊的标记，是前面和后面一个美元符号，例如、 $date$。  
   
- 让我们看一下典型的项目项模板。 提取并检查 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中的 Program.cs 中。  
+ 让我们看一下典型的项目项模板。 提取并检查 Program.cs Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中。  
   
 ```  
 using System;  
@@ -48,7 +48,7 @@ namespace $safeprojectname$
 }  
 ```  
   
- 如果创建名为简单的新 Windows 应用程序项目，将替换模板`$safeprojectname$`项目同名的参数。  
+ 如果您创建一个新的名为简单的 Windows 应用程序项目，该模板将替换`$safeprojectname$`参数与项目的名称。  
   
 ```  
 using System;  
@@ -66,8 +66,8 @@ namespace Simple
   
  有关模板参数的完整列表，请参阅[模板参数](../../ide/template-parameters.md)。  
   
-## <a name="a-look-inside-a-vstemplate-file"></a>详细介绍。VSTemplate 文件  
- 基本.vstemplate 文件的此格式  
+## <a name="a-look-inside-a-vstemplate-file"></a>深入介绍。VSTemplate 文件  
+ 基本.vstemplate 文件的格式  
   
 ```  
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">  
@@ -78,9 +78,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 我们讨论过\<TemplateData > 部分中[新项目生成： 高级选项、 第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 本部分中的标记用于控制的外观**新项目**对话框。  
+ 我们会学会\<TemplateData > 部分中[生成新项目： 揭秘，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 在本部分中的标记用于控制的外观**新的项目**对话框。  
   
- 中的标记\<TemplateContent > 部分中的新项目和项目项的生成的控件。 下面是\<TemplateContent > 从 files\microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中的 cswindowsapplication.vstemplate 文件的部分。  
+ 中的标记\<TemplateContent > 部分的新项目和项目项生成的控件。 下面是\<TemplateContent > \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中的 cswindowsapplication.vstemplate 文件中的部分。  
   
 ```  
 <TemplateContent>  
@@ -114,15 +114,15 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- \<项目 > 标记控制项目的生成和\<ProjectItem > 标记控制项目项的生成。 如果参数 ReplaceParameters 为 true，该模板将自定义项的项目文件中的所有模板参数。 在这种情况下，所有项目项是自都定义，但 Settings.settings 除外。  
+ \<项目 > 标记，控制项目的生成和\<ProjectItem > 标记，控制项目项的生成。 如果参数 ReplaceParameters 为 true，该模板将自定义项的项目文件中的所有模板参数。 在这种情况下，所有项目项是自都定义，但 Settings.settings 除外。  
   
- TargetFileName 参数指定的名称和所生成的项目文件或项目的相对路径。 这允许您创建你的项目的文件夹结构。 如果未指定此参数，项目项将具有与项目项模板相同的名称。  
+ TargetFileName 参数指定的名称和生成的项目文件或项的相对路径。 这允许您创建您的项目的文件夹结构。 如果未指定此参数，项目项将具有与项目项模板相同的名称。  
   
- 生成的 Windows 应用程序文件夹结构如下所示：  
+ 生成 Windows 应用程序文件夹结构如下所示：  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- 第一个和唯一\<项目 > 标记中的模板读取：  
+ 第一个且仅\<项目 > 模板读取的标记：  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
@@ -131,9 +131,9 @@ namespace Simple
  这会指示要通过复制和自定义模板项 windowsapplication.csproj 创建 Simple.csproj 项目文件的新项目模板。  
   
 ### <a name="designers-and-references"></a>设计器和引用  
- 在解决方案资源管理器中，你可以看到属性文件夹存在并且包含预期的文件。 但什么有关项目引用，并且设计器文件依赖项，如到 Resources.resx，Resources.Designer.cs 和属于 Form1.cs Form1.Designer.cs？  这些设置在 Simple.csproj 文件时生成。  
+ 在解决方案资源管理器中，您可以看到属性文件夹存在且包含预期的文件。 但什么有关项目引用，并且设计器文件依赖项，如 Resources.resx，到 Resources.Designer.cs 和到 Form1.cs Form1.Designer.cs？  这些设置在 Simple.csproj 文件在生成时。  
   
- 下面是\<o u p > 从 Simple.csproj 创建的项目引用：  
+ 下面是\<ItemGroup > 从 Simple.csproj 创建的项目引用：  
   
 ```  
 <ItemGroup>  
@@ -146,7 +146,7 @@ namespace Simple
 </ItemGroup>  
 ```  
   
- 你可以看到，这些是在解决方案资源管理器中显示的六个项目引用。 下面是从另一个节\<o u p >。 为清楚起见，多行代码已被删除。 本部分使 Settings.Designer.cs 依赖于 Settings.settings:  
+ 您可以看到，这些是在解决方案资源管理器中显示的六个项目引用。 以下是从另一个部分\<ItemGroup >。 为清楚起见，多行代码已被删除。 本部分使 Settings.Designer.cs Settings.settings 依赖于：  
   
 ```  
 <ItemGroup>  
@@ -156,6 +156,6 @@ namespace Simple
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

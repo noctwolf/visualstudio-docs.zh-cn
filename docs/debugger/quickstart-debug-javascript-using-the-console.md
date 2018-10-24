@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 06d1c518b55c6f6df6a579fe1603c556201e7a18
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c76f9c533fd83584c12f03b4e0c0f1d44e281c8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280826"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861821"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>在 Visual Studio 中使用控制台调试 JavaScript
   
@@ -43,7 +43,7 @@ ms.locfileid: "44280826"
 -   执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
 > [!TIP]
->  如果 JavaScript 控制台窗口已关闭，请选择**调试**> **Windows** > **JavaScript 控制台**以重新打开它。 该窗口仅在脚本调试会话期间出现。  
+>  如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” >  >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  
   
  使用“JavaScript 控制台”窗口，你可以在无需停止和重新启动调试器的情况下与应用交互。 有关详细信息，请参阅[刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)。 有关其他 JavaScript 调试功能，如使用 DOM 资源管理器和设置断点，请参阅[快速入门： 调试 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)并[在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)。  
   
@@ -55,95 +55,95 @@ ms.locfileid: "44280826"
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>调试 FlipView 应用中的 JavaScript 代码  
   
-1.  通过选择 **“文件”** > **“新建项目”**。  
+1. 通过选择 **“文件”** > **“新建项目”**。  
   
-2.  选择**JavaScript** > **Windows Universal**，然后选择**WinJS 应用**。  
+2. 选择**JavaScript** > **Windows Universal**，然后选择**WinJS 应用**。  
   
-3.  为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
+3. 为项目输入名称（如 `FlipViewApp`），然后选择“确定”  以创建应用。  
   
-4.  在正文元素的 index.html 中，将现有的 HTML 代码替换此代码：  
+4. 在正文元素的 index.html 中，将现有的 HTML 代码替换此代码：  
   
-    ```html  
-    <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
-             style="display:none">  
-        <div class="fixedItem" >  
-            <img src="#" data-win-bind="src: flipImg" />  
-        </div>  
-    </div>  
-    <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
-        itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
-    </div>  
-    ```  
+   ```html  
+   <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
+            style="display:none">  
+       <div class="fixedItem" >  
+           <img src="#" data-win-bind="src: flipImg" />  
+       </div>  
+   </div>  
+   <div id="fView" data-win-control="WinJS.UI.FlipView" data-win-options="{  
+       itemDataSource: Data.items.dataSource, itemTemplate: flipTemplate }">  
+   </div>  
+   ```  
   
-5.  打开 default.css，然后为 `#fView` 选择器添加 CSS：  
+5. 打开 default.css，然后为 `#fView` 选择器添加 CSS：  
   
-    ```css  
-    #fView {  
-        background-color:#0094ff;  
-        height: 500px;  
-        margin: 25px;  
-    }  
-    ```  
+   ```css  
+   #fView {  
+       background-color:#0094ff;  
+       height: 500px;  
+       margin: 25px;  
+   }  
+   ```  
   
-6.  打开 default.js，将代码替换为以下 JavaScript 代码：  
+6. 打开 default.js，将代码替换为以下 JavaScript 代码：  
   
-    ```javascript  
-    (function () {  
-        "use strict";  
+   ```javascript  
+   (function () {  
+       "use strict";  
   
-        var app = WinJS.Application;  
-        var activation = Windows.ApplicationModel.Activation;  
+       var app = WinJS.Application;  
+       var activation = Windows.ApplicationModel.Activation;  
   
-        var myData = [];  
-        for (var x = 0; x < 4; x++) {  
-            myData[x] = { flipImg: "/images/logo.png" }  
-        };  
+       var myData = [];  
+       for (var x = 0; x < 4; x++) {  
+           myData[x] = { flipImg: "/images/logo.png" }  
+       };  
   
-        var pages = new WinJS.Binding.List(myData, { proxy: true });  
+       var pages = new WinJS.Binding.List(myData, { proxy: true });  
   
-        app.onactivated = function (args) {  
-            if (args.detail.kind === activation.ActivationKind.launch) {  
-                if (args.detail.previousExecutionState !==  
-                activation.ApplicationExecutionState.terminated) {  
-                    // TODO: . . .  
-                } else {  
-                    // TODO: . . .  
-                }  
-                args.setPromise(WinJS.UI.processAll());  
+       app.onactivated = function (args) {  
+           if (args.detail.kind === activation.ActivationKind.launch) {  
+               if (args.detail.previousExecutionState !==  
+               activation.ApplicationExecutionState.terminated) {  
+                   // TODO: . . .  
+               } else {  
+                   // TODO: . . .  
+               }  
+               args.setPromise(WinJS.UI.processAll());  
   
-                updateImages();  
-            }  
-        };  
+               updateImages();  
+           }  
+       };  
   
-        function updateImages() {  
+       function updateImages() {  
   
-            pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
-            pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
-            pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
+           pages.push(0, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-76.jpg" });  
+           pages.push(1, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-77.jpg" });  
+           pages.push(2, { flipImg: "http://public-domain-photos.com/free-stock-photos-1/flowers/cactus-78.jpg" });  
   
-        };  
+       };  
   
-        app.oncheckpoint = function (args) {  
-        };  
+       app.oncheckpoint = function (args) {  
+       };  
   
-        app.start();  
+       app.start();  
   
-        var publicMembers = {  
-            items: pages  
-        };  
+       var publicMembers = {  
+           items: pages  
+       };  
   
-        WinJS.Namespace.define("Data", publicMembers);  
+       WinJS.Namespace.define("Data", publicMembers);  
   
-    })();  
-    ```  
+   })();  
+   ```  
   
-7.  如果尚未选择调试目标，选择**本地计算机**下拉列表中下一步**设备**按钮**调试**工具栏：  
+7. 如果尚未选择调试目标，选择**本地计算机**下拉列表中下一步**设备**按钮**调试**工具栏：  
   
-     ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
+    ![选择调试目标列表](../debugger/media/js_select_target.png "JS_Select_Target")  
   
-8.  按 F5 启动调试器。  
+8. 按 F5 启动调试器。  
   
-     应用会运行，但缺少图像。 JavaScript 控制台窗口中的 APPHOST 错误指示缺少图像。  
+    应用会运行，但缺少图像。 JavaScript 控制台窗口中的 APPHOST 错误指示缺少图像。  
   
 9. 与`FlipView`应用程序运行，类型`Data.items`在控制台窗口输入提示符 (下一步">>"符号)，按 Enter。  
   
@@ -252,7 +252,7 @@ ms.locfileid: "44280826"
   
 ## <a name="see-also"></a>请参阅  
  [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
- [JavaScript 控制台命令](../debugger/javascript-console-commands.md)   
+ [JavaScript Console commands](../debugger/javascript-console-commands.md)   
  [刷新应用程序 (JavaScript)](../debugger/refresh-an-app-javascript.md)   
  [键盘快捷键](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [调试 HTML、 CSS 和 JavaScript 示例代码](../debugger/debug-html-css-and-javascript-sample-code.md)   

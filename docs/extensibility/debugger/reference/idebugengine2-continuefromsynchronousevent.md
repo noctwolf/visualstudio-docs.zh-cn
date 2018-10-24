@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::ContinueFromSynchronousEvent |Microsoft 文档
+title: IDebugEngine2::ContinueFromSynchronousEvent |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305179184df1241b6d944ea78e164c09af37923f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 43589e4fd5a75c5c1cd7681dde4a3957f3fe4243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837511"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
-由会话调试管理器 (SDM) 以指示同步调试事件，以前由的调试引擎 (DE) 发送到 SDM，已接收和处理调用。  
+由会话调试管理器 (SDM) 以指示同步调试事件，以前由调试引擎 (DE) 发送到 SDM，已接收并处理调用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,7 +41,7 @@ HRESULT ContinueFromSynchronousEvent(
   
 #### <a name="parameters"></a>参数  
  `pEvent`  
- [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)表示从中调试器现在应继续之前发送同步事件的对象。  
+ [in][IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)对象，表示从其调试器现在应继续先前发送的同步事件。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
@@ -50,7 +50,7 @@ HRESULT ContinueFromSynchronousEvent(
  DE 必须验证它是否表示的事件的源`pEvent`参数。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CEngine`实现对象[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)接口。  
+ 下面的示例演示如何实现此方法对于简单`CEngine`对象，它实现[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)接口。  
   
 ```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
@@ -88,6 +88,6 @@ HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

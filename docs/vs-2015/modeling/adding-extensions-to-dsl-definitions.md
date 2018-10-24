@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: beeee40e7318102786a1e06b36a0eba3028eb7b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c3e74f66edc0a8b33ad1fe8205cc02cd0e80054
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866150"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>向 DSL 定义中添加扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ DSL 定义扩展插件，可创建的域特定语言 (DSL) 的扩展包。 DSL �
   
  其他功能可以包括：  
   
--   模型和表示元素的属性  
+- 模型和表示元素的属性  
   
--   形状和连接符的修饰器  
+- 形状和连接符的修饰器  
   
--   类、 关系、 形状和连接线  
+- 类、 关系、 形状和连接线  
   
--   验证约束  
+- 验证约束  
   
--   工具箱项和选项卡  
+- 工具箱项和选项卡  
   
- 扩展 DSL 的用户可以创建和保存模型包含的其他功能的实例和已安装相应的扩展的其他用户可以读取这些。 未安装该扩展的用户不能使用其他功能，但它们可以更新和保存模型而不会丢失的其他功能。  
+  扩展 DSL 的用户可以创建和保存模型包含的其他功能的实例和已安装相应的扩展的其他用户可以读取这些。 未安装该扩展的用户不能使用其他功能，但它们可以更新和保存模型而不会丢失的其他功能。  
   
- 有关示例代码和有关此功能的详细信息，请参阅[Visual Studio 可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128) Web 站点。  
+  有关示例代码和有关此功能的详细信息，请参阅[Visual Studio 可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128) Web 站点。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 可视化和建模 SDK](http://go.microsoft.com/fwlink/?LinkID=186128)

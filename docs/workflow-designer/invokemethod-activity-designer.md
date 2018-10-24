@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c62abe30fe2ba3896885d1969a3ec2bc45cc86
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 7ac82e36d3abc942e0c5492cc4d7acf347eba36c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839565"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活动设计器
 
@@ -36,7 +36,7 @@ ms.locfileid: "36757761"
 下表显示<xref:System.Activities.Statements.InvokeMethod>属性并说明它们如何使用在设计器中。 可以在属性网格中编辑这些属性，一些可以在工作流设计器图面上进行编辑。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeMethod> 活动的友好名称。 默认值为 InvokeMethod。<br /><br /> 尽管<xref:System.Activities.Activity.DisplayName%2A>并不严格要求，最好是使用其中一个。|
 |<xref:System.Activities.Statements.InvokeMethod.MethodName%2A>|True|要在执行活动时调用的方法的名称。 所调用的方法必须声明为**公共**。 此属性可编辑设计器图面，并且是必需的。|
 |<xref:System.Activities.Statements.InvokeMethod.Parameters%2A>|False|所调用方法的参数集合。 将参数添加到集合中的顺序必须与这些参数在方法签名中出现的顺序相同。 若要显示**参数**对话框中，你可以设置此属性，请单击中的省略号按钮**参数**属性网格的字段。 单击**创建自变量**按钮以添加参数。|
@@ -65,5 +65,5 @@ ms.locfileid: "36757761"
 
 - [基元](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
-- [延迟](../workflow-designer/delay-activity-designer.md)
+- [Delay](../workflow-designer/delay-activity-designer.md)
 - [WriteLine](../workflow-designer/writeline-activity-designer.md)

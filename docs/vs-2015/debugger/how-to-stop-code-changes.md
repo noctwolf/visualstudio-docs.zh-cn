@@ -25,12 +25,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ebe9a7d566c1e5b7748f02817564a58fa7eae934
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6d869e3e6be26db871deb3afc7bc398025cc15d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862354"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49306340"
   
 ### <a name="to-stop-applying-code-changes"></a>停止应用代码更改  
   
--   选择**停止应用代码更改**从**调试**菜单。  
+- 选择**停止应用代码更改**从**调试**菜单。  
   
- 该菜单项仅在应用代码更改时才可见。  
+  该菜单项仅在应用代码更改时才可见。  
   
- 如果选择了改选项，就不会进行任何代码更改。  
+  如果选择了改选项，就不会进行任何代码更改。  
   
 ## <a name="see-also"></a>请参阅  
  [编辑并继续](../debugger/edit-and-continue.md)   

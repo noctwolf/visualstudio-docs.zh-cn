@@ -14,14 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e187d0e0cc1e4c41f96af8f4e76619ff122ac83c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 47b0c4494a4689983ed4fee62312d5085a31aa97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766225"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864694"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析的进程的最大工作集(以字节为单位)
+
 |||  
 |-|-|  
 |规则 ID|DA0504|  
@@ -29,17 +30,17 @@ ms.locfileid: "34766225"
 |分析方法|全部|  
 |消息|收集此信息仅用于参考。 进程工作集计数器测量由正在分析的进程使用的物理内存的使用情况。 报告的值是在所有测量时间间隔内观察到的最大值。|  
 |规则类型|信息|  
-  
+
  使用采样法、.NET 内存或资源争用方法进行分析时，必须收集至少 10 个样本才能触发此规则。  
-  
+
 ## <a name="rule-description"></a>规则说明  
  此消息用于报告此进程当前使用的最大物理内存量（以字节为单位）。 进程工作集表示当前位于物理内存中的进程地址空间中的页面。 此规则报告分析处于活动状态时进程工作集的最大值。  
-  
+
  报告的值包括进程已引用的共享内存段中的驻留页面。 进程引用的共享 DLL 包含在计算的共享内存段中。 受共享内存段的影响，进程工作集的值可能高于进程已经分配的虚拟内存量。  
-  
+
  进程工作集的大小反映进程当前使用的虚拟内存量。 它还受可用于运行应用程序的物理内存量（或 RAM）和其他运行的进程对该物理内存的争用量的影响。 有关进程工作集的详细信息，请参阅 MSDN 上 Windows 内存管理文档中的 [Working Set](http://go.microsoft.com/fwlink/?LinkId=177830)（工作集）。  
-  
+
 ## <a name="how-to-use-rule-data"></a>如何使用规则数据  
  该规则从 Windows 性能监视设备收集此测量数据，并进行报告用于信息用途。 若要了解不同测试方案中应用程序的性能，可使用此规则比较不同版本程序的性能。  
-  
+
  双击“错误列表”窗口中的消息，导航到分析数据的[标记视图](../profiling/marks-view.md)。 查找 **Process\Working Set** 和 **Memory\Pages/sec** 计数器列。 然后，查找 **Process\Working Set** 的最大值，并将其与 **Memory\Pages/sec** 值比较。 通常情况下，工作集与时间间隔相关联，此时分页 IO 活动会减少（尤其当计算机是内存约束的时候）。

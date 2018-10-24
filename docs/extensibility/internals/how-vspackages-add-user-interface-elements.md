@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c595018dc588b6b6fbb014e074c737a53ea2013
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 8b498f9df752fd5ac1f1212649aa5b8bb62d27fb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839110"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和工具窗口，通过 Visual studio *.vsct*文件。  
@@ -90,15 +90,15 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
 #### <a name="menus"></a>菜单  
  每个菜单指[Menu element](../../extensibility/menu-element.md)中`Menus`部分。 菜单必须具有`guid`， `id`，并`priority`属性，和一个`Parent`元素，还以下附加特性和子级：  
   
--   一个`type`的特性，指定是否应作为一种类型的菜单或工具栏在 IDE 中显示菜单。  
+- 一个`type`的特性，指定是否应作为一种类型的菜单或工具栏在 IDE 中显示菜单。  
   
--   一个[字符串元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，它在 IDE 中，指定的菜单标题和一个[CommandName 元素](../../extensibility/commandname-element.md)，它指定的名称在中使用**命令**窗口来访问菜单。  
+- 一个[字符串元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，它在 IDE 中，指定的菜单标题和一个[CommandName 元素](../../extensibility/commandname-element.md)，它指定的名称在中使用**命令**窗口来访问菜单。  
   
--   可选标志。 一个[CommandFlag 元素](../../extensibility/command-flag-element.md)可能会出现在菜单定义中，若要更改其外观或行为在 IDE 中的。  
+- 可选标志。 一个[CommandFlag 元素](../../extensibility/command-flag-element.md)可能会出现在菜单定义中，若要更改其外观或行为在 IDE 中的。  
   
- 每个`Menu`元素必须有一组作为其父级，除非它是在可停靠的元素，如工具栏。 可停靠菜单是其自身的上级。 有关菜单和值的详细信息`type`属性，请参阅[Menu 元素](../../extensibility/menu-element.md)文档。  
+  每个`Menu`元素必须有一组作为其父级，除非它是在可停靠的元素，如工具栏。 可停靠菜单是其自身的上级。 有关菜单和值的详细信息`type`属性，请参阅[Menu 元素](../../extensibility/menu-element.md)文档。  
   
- 下面的示例演示旁边显示 Visual Studio 菜单栏的菜单**工具**菜单。  
+  下面的示例演示旁边显示 Visual Studio 菜单栏的菜单**工具**菜单。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -159,11 +159,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  在中定义 combos`Combos`部分。 每个`Combo`元素表示在 IDE 中的下拉列表框。 列表框可能也可能不是可写的用户，具体取决于值`type`在组合框的属性。 Combos 具有相同的元素和按钮的行为，因此还具有以下附加特性：  
   
--   一个`defaultWidth`指定像素宽度的属性。  
+- 一个`defaultWidth`指定像素宽度的属性。  
   
--   `idCommandList`的特性，指定包含在列表框中显示的项的列表。 必须在同一个声明命令列表`GuidSymbol`包含在组合框的节点。  
+- `idCommandList`的特性，指定包含在列表框中显示的项的列表。 必须在同一个声明命令列表`GuidSymbol`包含在组合框的节点。  
   
- 下面的示例定义一个组合元素。  
+  下面的示例定义一个组合元素。  
   
 ```xml  
 <Combos>  
@@ -192,7 +192,7 @@ priority="0x0100" type="Menu">
  以下规则控制项如何调用另一个作为其父项。  
   
 |元素|在此部分中的命令表定义|可能包含 (作为父母，或通过中的放置位置来`CommandPlacements`部分中，或两者)|可能包含 （也称为父）|  
-|-------------|--------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------|  
+|-------------| - | - | - |  
 |Group|[Groups 元素](../../extensibility/groups-element.md)，IDE、 其他 Vspackage|菜单上，一组项本身|菜单、 组和命令|  
 |菜单|[Menus 元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|1 到*n*组|0 到*n*组|  
 |Toolbar|[Menus 元素](../../extensibility/menus-element.md)，IDE、 其他 Vspackage|项目本身|0 到*n*组|  
@@ -290,17 +290,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>界面元素外观  
  选择和定位命令元素的注意事项如下所示：  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了很多 UI 元素，具体取决于放置以不同方式显示。  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了很多 UI 元素，具体取决于放置以不同方式显示。  
   
--   使用定义的用户界面元素`DefaultInvisible`标志将不会显示在 IDE 除非它是可以显示其 VSPackage 实现<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或与中的特定 UI 上下文关联`VisibilityConstraints`部分。  
+- 使用定义的用户界面元素`DefaultInvisible`标志将不会显示在 IDE 除非它是可以显示其 VSPackage 实现<xref:EnvDTE.IDTCommandTarget.QueryStatus%2A>方法，或与中的特定 UI 上下文关联`VisibilityConstraints`部分。  
   
--   即使成功定位的命令不会显示。 这是因为 IDE 自动隐藏或显示某些命令，具体取决于 VSPackage 具有 （或不具有） 的接口实现的。 例如，一些的 VSPackage 的实现生成接口的原因与生成相关菜单项会自动显示。  
+- 即使成功定位的命令不会显示。 这是因为 IDE 自动隐藏或显示某些命令，具体取决于 VSPackage 具有 （或不具有） 的接口实现的。 例如，一些的 VSPackage 的实现生成接口的原因与生成相关菜单项会自动显示。  
   
--   将应用`CommandWellOnly`UI 元素的定义中的标记表示的命令，可以添加只能由自定义项。  
+- 将应用`CommandWellOnly`UI 元素的定义中的标记表示的命令，可以添加只能由自定义项。  
   
--   仅当时 IDE 位于设计视图中显示一个对话框时，可能仅适用于某些 UI 上下文中，例如，命令。  
+- 仅当时 IDE 位于设计视图中显示一个对话框时，可能仅适用于某些 UI 上下文中，例如，命令。  
   
--   若要使某些用户界面元素在 IDE 中显示，必须实现一个或多个接口，或编写一些代码。  
+- 若要使某些用户界面元素在 IDE 中显示，必须实现一个或多个接口，或编写一些代码。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

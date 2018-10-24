@@ -1,5 +1,5 @@
 ---
-title: FIELD_KIND |Microsoft 文档
+title: FIELD_KIND |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a603310986f42141a04f38c7ce26db0d7326fe
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: df29c9bd876a437dbcf8d797f1dcc51fb05a296f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868191"
 ---
 # <a name="fieldkind"></a>FIELD_KIND
-指定字段中包含的类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。  
+指定字段中包含的种类[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -126,13 +126,13 @@ public enum enum_FIELD_KIND {
   
 ## <a name="members"></a>成员  
  FIELD_KIND_TYPE  
- 指示字段只是类型。  
+ 指示该字段是仅的类型。  
   
  FIELD_KIND_SYMBOL  
- 指示字段具有类型、 名称和其他信息的符号。  
+ 指示该字段是一个符号，与类型、 名称和其他信息。  
   
  FIELD_TYPE_PRIMITIVE  
- 指示该字段是基元数据类型。  
+ 指示该字段为基元数据类型。  
   
  FIELD_TYPE_STRUCT  
  指示该字段是一种结构。  
@@ -144,7 +144,7 @@ public enum enum_FIELD_KIND {
  指示该字段是一个接口。  
   
  FIELD_TYPE_UNION  
- 指示该字段是联合。  
+ 指示该字段是一个联合。  
   
  FIELD_TYPE_ARRAY  
  指示该字段是一个数组。  
@@ -162,10 +162,10 @@ public enum enum_FIELD_KIND {
  指示该字段是枚举的数据类型。  
   
  FIELD_TYPE_LABEL  
- 指示该字段是标签。  
+ 指示该字段是一个标签。  
   
  FIELD_TYPE_TYPEDEF  
- 指示该字段是的 typedef。  
+ 指示该字段是其 typedef。  
   
  FIELD_TYPE_BITFIELD  
  指示该字段是一组标志。  
@@ -177,16 +177,16 @@ public enum enum_FIELD_KIND {
  指示该字段是一个模块。  
   
  FIELD_TYPE_DYNAMIC  
- 指示该字段是动态的。  
+ 指示该字段是动态。  
   
  FIELD_TYPE_PROP  
  指示该字段是一个属性。  
   
  FIELD_TYPE_INNERCLASS  
- 指示该字段是一个内部的类。  
+ 指示该字段是一个内部类。  
   
  FIELD_TYPE_REFERENCE  
- 指示该字段是的引用。  
+ 指示该字段是一个引用。  
   
  FIELD_TYPE_EXTENDED  
  留待将来使用。  
@@ -207,10 +207,10 @@ public enum enum_FIELD_KIND {
  指示该字段是全局。  
   
  FIELD_SYM_PROP_GETTER  
- 指示字段检索属性。  
+ 指示该字段检索属性。  
   
  FIELD_SYM_PROP_SETTER  
- 指示该字段设置属性。  
+ 指示该字段将设置属性。  
   
  FIELD_SYM_EXTENDED  
  留待将来使用。  
@@ -227,7 +227,7 @@ public enum enum_FIELD_KIND {
 ## <a name="remarks"></a>备注  
  从调用返回[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法。  
   
- 具体取决于类型的字段， [QueryInterface](/cpp/atl/queryinterface)可以上调用[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的接口的接口。 例如，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)返回`FIELD_TYPE_METHOD`，然后，你可以调用`QueryInterface`上我`DebugField`获取[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)接口。  
+ 具体取决于类型的字段中， [QueryInterface](/cpp/atl/queryinterface)可以在调用[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)更特定形式的接口的接口。 例如，如果[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)返回`FIELD_TYPE_METHOD`，然后，可以调用`QueryInterface`上我`DebugField`若要获取[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)接口。  
   
 ## <a name="requirements"></a>要求  
  标头： sh.h  
@@ -236,7 +236,7 @@ public enum enum_FIELD_KIND {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md)   
  [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)   

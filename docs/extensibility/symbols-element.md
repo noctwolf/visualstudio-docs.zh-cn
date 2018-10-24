@@ -1,5 +1,5 @@
 ---
-title: 符号元素 |Microsoft 文档
+title: 符号元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 87e9159e1e392ff242407b105589f4f33341b45b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4186f53ec84c44b97acbc3a59d663404a52dd255
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31142771"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856722"
 ---
-# <a name="symbols-element"></a>符号元素
-定义 Guid 和其他 VSCT 元素使用的 Id。 对于非托管代码，此信息通常来自由指定的标头文件[Extern 元素](../extensibility/extern-element.md)。 托管代码使用的符号元素定义此信息的子元素。  
+# <a name="symbols-element"></a>Symbols 元素
+定义 Guid 并由其他 VSCT 元素的 Id。 对于非托管代码中，此信息通常来自所指定的标头文件[Extern 元素](../extensibility/extern-element.md)。 托管代码使用符号元素定义此信息的子元素。  
   
  如果从现有.cto 文件创建.vsct 文件，将作为符号元素的子级生成符号。 有关详细信息，请参阅[如何： 创建。从现有的 Vsct 文件。首席技术官文件](../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file)。  
   
- 不应与混淆符号元素[定义元素](../extensibility/define-element.md)，后者定义预处理器使用的名称-值对。  
+ 不要将符号元素与相混淆[定义元素](../extensibility/define-element.md)，用于定义由预处理器使用的名称 / 值对。  
   
 ## <a name="syntax"></a>语法  
   
@@ -50,8 +50,8 @@ ms.locfileid: "31142771"
   
 |元素|描述|  
 |-------------|-----------------|  
-|GuidSymbol|定义 GUID 符号。 GuidSymbol 具有两个必需的属性： 名称和值。 名称为的符号名称，值为字符串形式的 GUID 的值。<br /><br /> 例如：\<GuidSymbol 名称 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
-|IDSymbol|定义的符号。 IDSymbol 具有两个必需的属性： 名称和值。 名称为的符号名称，值为字符串形式的符号的值。<br /><br /> 例如：\<IDSymbol 名称 ="MyMenuGroup"value ="0x1020"/ >|  
+|GuidSymbol|定义在 GUID 符号。 GuidSymbol 有两个必需的属性： 名称和值。 名称为符号的名称，值为 GUID 字符串形式的值。<br /><br /> 例如：\<GuidSymbol 名称 ="guidVsPackage1Pkg"value ="{c5f54698-101a-4846-84d3-dc748f9cd848}"/ >|  
+|IDSymbol|定义的符号。 IDSymbol 有两个必需的属性： 名称和值。 名称为符号的名称，值为字符串形式的符号的值。<br /><br /> 例如：\<IDSymbol 名称 ="MyMenuGroup"value ="0x1020"/ >|  
   
 ### <a name="parent-elements"></a>父元素  
   
@@ -72,5 +72,5 @@ ms.locfileid: "31142771"
 </Symbols>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

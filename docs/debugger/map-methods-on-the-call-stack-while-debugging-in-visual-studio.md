@@ -31,12 +31,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6156be294c9b64c26a7488aef3f0c92d1f4ccffd
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 9fe3471f7165cf48f62dee3ca657e78fbfafd273
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36296057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837394"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-in-visual-studio-enterprise"></a>Visual Studio Enterprise 中进行调试时创建的可调用堆栈
 创建代码映射来直观地跟踪调用堆栈进行调试时。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
@@ -53,21 +53,21 @@ ms.locfileid: "36296057"
 
  请参阅：
 
--   [视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [视频： 使用代码图调试器集成 (通道 9) 直观地调试](http://go.microsoft.com/fwlink/?LinkId=293418)
 
--   [映射调用堆栈](#MapStack)
+- [映射调用堆栈](#MapStack)
 
--   [记下的有关代码说明](#MakeNotes)
+- [记下的有关代码说明](#MakeNotes)
 
--   [使用下一个调用堆栈更新图](#UpdateMap)
+- [使用下一个调用堆栈更新图](#UpdateMap)
 
--   [向映射添加相关的代码](#AddRelatedCode)
+- [向映射添加相关的代码](#AddRelatedCode)
 
--   [查找使用映射的 bug](#FindBugs)
+- [查找使用映射的 bug](#FindBugs)
 
--   [问题与解答](#QA)
+- [问题与解答](#QA)
 
- 有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
+  有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 ##  <a name="MapStack"></a> 映射调用堆栈
 
@@ -132,63 +132,63 @@ ms.locfileid: "36296057"
 
 ##  <a name="QA"></a> 问题解答
 
--   **并非所有调用将都显示在映射上。为什么?**
+- **并非所有调用将都显示在映射上。为什么?**
 
-     默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，将其打开**调用堆栈**窗口：
+   默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，将其打开**调用堆栈**窗口：
 
-     ![显示外部代码中使用调用堆栈窗口](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
+   ![显示外部代码中使用调用堆栈窗口](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
 
-     或将其关闭**启用 ' 仅我的代码**在 Visual Studio 调试选项：
+   或将其关闭**启用 ' 仅我的代码**在 Visual Studio 调试选项：
 
-     ![显示外部代码使用选项对话框](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
+   ![显示外部代码使用选项对话框](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
--   **更改图是否会影响代码？**
+- **更改图是否会影响代码？**
 
-     更改图不会影响任何方式中的代码。 你可随意在图上重命名、移动或移除任何内容。
+   更改图不会影响任何方式中的代码。 你可随意在图上重命名、移动或移除任何内容。
 
--   **此消息意味着什么:"关系图可能基于代码的较旧版本"？**
+- **此消息意味着什么:"关系图可能基于代码的较旧版本"？**
 
-     在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。
+   在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。
 
--   **如何控制图的布局？**
+- **如何控制图的布局？**
 
-     打开**布局**图工具栏上的菜单：
+   打开**布局**图工具栏上的菜单：
 
-    -   更改默认布局。
+  -   更改默认布局。
 
-    -   若要停止自动重新排列图，关闭**调试时自动布局**。
+  -   若要停止自动重新排列图，关闭**调试时自动布局**。
 
-    -   若要添加项时，重新排列图降至最低，请关闭**增量布局**。
+  -   若要添加项时，重新排列图降至最低，请关闭**增量布局**。
 
--   **可以与他人共享代码图？**
+- **可以与他人共享代码图？**
 
-     你可以导出映射，将其发送给他人（如果你有 Microsoft Outlook）或保存到你的解决方案中，以便你将其签入 Team Foundation 版本控制。
+   你可以导出映射，将其发送给他人（如果你有 Microsoft Outlook）或保存到你的解决方案中，以便你将其签入 Team Foundation 版本控制。
 
-     ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
+   ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png "DebuggerMap_ShareWithOthers")
 
--   **如何停止自动添加新的调用堆栈中的映射？**
+- **如何停止自动添加新的调用堆栈中的映射？**
 
-     选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。
+   选择![按钮&#45;显示调用自动堆栈代码图上](../debugger/media/debuggermap_automaticupdateicon.gif "DebuggerMap_AutomaticUpdateIcon")图工具栏上。 若要手动添加到映射的当前调用堆栈，请按**Ctrl** + **Shift** + **`**。
 
-     图中将继续进行调试时突出显示地图上的现有调用堆栈。
+   图中将继续进行调试时突出显示地图上的现有调用堆栈。
 
--   **项图标和箭头代表什么？**
+- **项图标和箭头代表什么？**
 
-     若要获取有关某个项的详细信息，请将鼠标指针移动它并查看项的工具提示。 此外可以查看**图例**若要了解每个图标的含义。
+   若要获取有关某个项的详细信息，请将鼠标指针移动它并查看项的工具提示。 此外可以查看**图例**若要了解每个图标的含义。
 
-     ![调用堆栈代码图上的图标是什么意思？] (../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
+   ![调用堆栈代码图上的图标是什么意思？](../debugger/media/debuggermap_showlegend.png "DebuggerMap_ShowLegend")
 
- 请参阅：
+  请参阅：
 
--   [映射调用堆栈](#MapStack)
+- [映射调用堆栈](#MapStack)
 
--   [记下的有关代码说明](#MakeNotes)
+- [记下的有关代码说明](#MakeNotes)
 
--   [使用下一个调用堆栈更新图](#UpdateMap)
+- [使用下一个调用堆栈更新图](#UpdateMap)
 
--   [向映射添加相关的代码](#AddRelatedCode)
+- [向映射添加相关的代码](#AddRelatedCode)
 
--   [查找使用映射的 bug](#FindBugs)
+- [查找使用映射的 bug](#FindBugs)
 
 ## <a name="see-also"></a>请参阅
  [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)[发现潜在的问题，使用代码映射分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)

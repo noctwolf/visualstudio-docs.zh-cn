@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbols:: Next |Microsoft 文档'
+title: 'Idiaenumsymbols:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f419716901d35ea667f5e99a0c452d6e1b4d186c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: eaa9f5f1a822660d38f954f4f6bd2ee383cd9a2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867476"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 检索指定的数目的枚举序列中的符号。  
@@ -39,10 +39,10 @@ HRESULT Next (
  [in]要检索的枚举器中的符号数。  
   
  rgelt  
- [out]数组，它是在用来填充[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示所需的符号的对象。  
+ [out]数组，它是在用来填充[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象表示所需的符号。  
   
  pceltFetched  
- [out]在提取枚举器返回符号的数。  
+ [out]在提取枚举器返回的符号的数量。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的符号。 否则，返回错误代码。  

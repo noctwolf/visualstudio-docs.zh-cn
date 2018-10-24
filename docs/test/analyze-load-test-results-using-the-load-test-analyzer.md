@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7890f5c1db26616ec1041b202a3863d1fbfae20e
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 72b5472b6a23729026d9e044b7190f031eaaf4bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845410"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试结果
 
@@ -44,7 +44,7 @@ ms.locfileid: "36234158"
 ## <a name="tasks"></a>任务
 
 |任务|关联主题|
-|-----------|-----------------------|
+|-|-|
 |访问负载测试的结果：通过负载测试编辑器运行负载测试时，负载测试结果自动打开，负载测试分析器中显示正在运行的负载测试。|-   [如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)|
 |**向负载测试添加分析注释：** 执行分析时，可以向负载测试添加注释。 这些注释将随负载测试结果一起永久保存。 输入的说明也显示在与负载测试编辑器中“打开和管理测试结果”对话框中的负载测试关联的“说明”列中。<br /><br /> 有关详细信息，请参阅[如何：访问负载测试结果进行分析](../test/how-to-access-load-test-results-for-analysis.md)。<br /><br /> 此外，在为负载测试结果创建 Excel 报表时也会显示注释。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。|-   [如何：在分析完成的负载测试时添加注释](../test/how-to-add-comments-on-a-completed-load-test.md)|
 |**分析负载测试的结果：** 访问负载测试运行数据之后，才能分析结果数据。 可以通过查看“负载测试摘要”来快速了解结果。 负载测试摘要以简洁、易读的格式显示关键结果。<br /><br /> 可以打印负载测试摘要， 以便于在向利益干系人传达结果时使用。<br /><br /> 你可以使用结果中的关系图和表来分析负载测试结果的详细信息。 其中包括“错误”、“页面”、“请求”、“SQL 跟踪”、“测试”、“阈值”和“事务”。|-   [负载测试结果摘要概述](../test/load-test-results-summary-overview.md)<br />-   [如何：查看网页响应](../test/how-to-view-web-page-response-time-in-a-load-test.md)<br />-   [分析阈值规则冲突](../test/analyze-threshold-rule-violations-in-load-tests.md)<br />-   [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)<br />-   [在表视图中分析负载测试结果和错误](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)|

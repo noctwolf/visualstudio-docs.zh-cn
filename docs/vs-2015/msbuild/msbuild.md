@@ -17,12 +17,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: afa446afdf8cb9b3c17028927d9325ffd6e18323
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a2ca3a14c1e4e35da4e8cddfdecb0346740286a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253521"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837758"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49253521"
   
  下面的示例介绍了什么情况下可使用 MSBuild 命令行而不是 Visual Studio IDE 来运行生成。  
   
--   未安装 Visual Studio。  
+- 未安装 Visual Studio。  
   
--   你想要使用 64 位版本的 MSBuild。 通常情况下不必使用此版本的 MSBuild，但它可以让 MSBuild 访问更多内存。  
+- 你想要使用 64 位版本的 MSBuild。 通常情况下不必使用此版本的 MSBuild，但它可以让 MSBuild 访问更多内存。  
   
--   你想要在多个进程中运行同一生成。 不过，对于 C++ 和 C# 中的项目，你可以使用 IDE 实现相同的结果。  
+- 你想要在多个进程中运行同一生成。 不过，对于 C++ 和 C# 中的项目，你可以使用 IDE 实现相同的结果。  
   
--   你想要修改生成系统。 例如，你可能想要实现以下操作：  
+- 你想要修改生成系统。 例如，你可能想要实现以下操作：  
   
-    -   在文件到达编译器之前先进行预处理。  
+  -   在文件到达编译器之前先进行预处理。  
   
-    -   将生成输出复制到其他位置。  
+  -   将生成输出复制到其他位置。  
   
-    -   从生成输出创建压缩文件。  
+  -   从生成输出创建压缩文件。  
   
-    -   执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。  
+  -   执行后处理步骤。 例如，你可能希望使用其他版本来标记程序集。  
   
- 你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
+  你可以在 Visual Studio IDE 中编写代码，但使用 MSBuild 来运行生成。 或者，你也可以在开发计算机的 IDE 中生成代码，但使用 MSBuild 命令行生成从多个开发人员集成的代码。  
   
 > [!NOTE]
 >  你可以使用 Team Foundation Build 自动编译、测试和部署你的应用程序。 你的生成系统会在开发人员签入代码（例如，作为持续集成策略的一部分）时或按照计划（例如，夜间版本验证测试生成）自动运行生成。 Team Foundation Build 使用 MSBuild 来编译你的代码。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
@@ -182,17 +182,17 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
  以下是多目标功能的一些优点：  
   
--   可以开发以多个 .NET Framework 早期版本（例如，版本 2.0、3.0 和 3.5）为目标的应用程序。  
+- 可以开发以多个 .NET Framework 早期版本（例如，版本 2.0、3.0 和 3.5）为目标的应用程序。  
   
--   你可以将 .NET Framework 之外的框架作为目标，例如 Silverlight。  
+- 你可以将 .NET Framework 之外的框架作为目标，例如 Silverlight。  
   
--   可以一个*框架配置文件*为目标，该文件是目标框架的预定义子集。  
+- 可以一个*框架配置文件*为目标，该文件是目标框架的预定义子集。  
   
--   如果已发布 .NET Framework 当前版本的 Service Pack，则可以将其作为目标。  
+- 如果已发布 .NET Framework 当前版本的 Service Pack，则可以将其作为目标。  
   
--   多目标功能可以保证应用程序仅使用目标框架和平台中的可用功能。  
+- 多目标功能可以保证应用程序仅使用目标框架和平台中的可用功能。  
   
- 有关详细信息，请参阅[多定向](../msbuild/msbuild-multitargeting-overview.md)。  
+  有关详细信息，请参阅[多定向](../msbuild/msbuild-multitargeting-overview.md)。  
   
 ## <a name="related-topics"></a>相关主题  
   

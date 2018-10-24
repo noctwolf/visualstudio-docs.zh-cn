@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da5df0faa57a63f44892fa86785bccf4716f38f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67876c6b9191c8b551eb70906272751bc55ef481
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203302"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837966"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "49203302"
 ## <a name="remarks"></a>备注  
  每次调用创建源纹理的 `ID3DDevice::CreateTexture2D` 时，你都可以通过使用基于块的压缩格式来压缩纹理。 具体而言，在以下情况下会压缩纹理：  
   
--   在 `D3D11_TEXTURE2D_DESC` 中传递的 `pDesc` 对象描述了不变的着色器资源；即：  
+- 在 `D3D11_TEXTURE2D_DESC` 中传递的 `pDesc` 对象描述了不变的着色器资源；即：  
   
-    -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
+  -   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
   
-    -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+  -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
-    -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
+  -   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
   
-    -   SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
+  -   SamplerDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
   
--   为对 `CreateTexture2D` 的调用提供了初始数据。  
+- 为对 `CreateTexture2D` 的调用提供了初始数据。  
   
- 以下是支持的源格式及其块压缩的格式。  
+  以下是支持的源格式及其块压缩的格式。  
   
 |原始格式（源格式）|压缩格式（目标格式）|  
 |------------------------------|------------------------------|  

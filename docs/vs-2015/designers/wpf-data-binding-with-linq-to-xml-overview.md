@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 985dfb5193082f22431db3384cc6a652f36cfb2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 457a097d46f9af409580d3784bb577090db0c535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852409"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>使用 LINQ to XML 进行 WPF 数据绑定概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49247268"
   
  XAML 和 LINQ to XML 的交互有两种主要方式：  
   
--   由于 XAML 文件是格式良好的 XML，因此可以通过 XML 技术（如 LINQ to XML）查询和操作。  
+- 由于 XAML 文件是格式良好的 XML，因此可以通过 XML 技术（如 LINQ to XML）查询和操作。  
   
--   由于 LINQ to XML 查询表示数据的源，因此这些查询可用作 WPF UI 元素数据绑定的数据源。  
+- 由于 LINQ to XML 查询表示数据的源，因此这些查询可用作 WPF UI 元素数据绑定的数据源。  
   
- 本文档说明第二种情况。  
+  本文档说明第二种情况。  
   
 ## <a name="data-binding-in-the-windows-presentation-foundation"></a>Windows Presentation Foundation 中的数据绑定  
  WPF 数据绑定可使 UI 元素将其一个属性与一个数据源相关联。 这种情况的一个简单示例是 <xref:System.Windows.Controls.Label>，其文本表示用户定义对象中一个公共属性的值。 WPF 数据绑定依赖于下列组件：  
@@ -52,13 +52,13 @@ ms.locfileid: "49247268"
 ### <a name="dynamic-data-binding-in-wpf"></a>WPF 中的动态数据绑定  
  默认情况下，仅在初始化目标 UI 元素时，才会发生数据绑定。 这称为“一次性”绑定。 这不能满足多数用途的需要；通常，数据绑定解决方案要求使用以下方式之一在运行时动态传播更改：  
   
--   单向绑定，这种方式会自动传播对一侧所做的更改。 最常见的情况是对源所做的更改会反映在目标中，但有时需要相反的情况。  
+- 单向绑定，这种方式会自动传播对一侧所做的更改。 最常见的情况是对源所做的更改会反映在目标中，但有时需要相反的情况。  
   
--   双向绑定，在这种方式中，对源所做的更改会自动传播到目标，而且对目标的更改也会自动传播到源。  
+- 双向绑定，在这种方式中，对源所做的更改会自动传播到目标，而且对目标的更改也会自动传播到源。  
   
- 为了进行单向或双向绑定，源必须实现一种更改通知机制，例如通过实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口或通过对支持的每个属性使用 PropertyNameChanged 模式。  
+  为了进行单向或双向绑定，源必须实现一种更改通知机制，例如通过实现 <xref:System.ComponentModel.INotifyPropertyChanged> 接口或通过对支持的每个属性使用 PropertyNameChanged 模式。  
   
- 有关 WPF 中数据绑定的详细信息，请参阅[数据绑定 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
+  有关 WPF 中数据绑定的详细信息，请参阅[数据绑定 (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e)。  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>LINQ to XML 类中的动态属性  
  大多数 LINQ to XML 类都不适合作为适当的 WPF 动态数据源：一些最有用的信息只能通过方法（而不是属性）提供，并且这些类中的属性不实现更改通知。 为了支持 WPF 数据绑定，LINQ to XML 公开了一组动态属性。  
@@ -71,13 +71,13 @@ ms.locfileid: "49247268"
 ### <a name="accessing-dynamic-properties"></a>访问动态属性  
  不能像访问标准属性那样访问 <xref:System.Xml.Linq.XAttribute> 和 <xref:System.Xml.Linq.XElement> 类中的动态属性。 例如，在符合 CLR 的语言（如 C#）中，动态属性不能：  
   
--   在编译时直接访问。 动态属性对于编译器和 Visual Studio IntelliSense 是不可见的。  
+- 在编译时直接访问。 动态属性对于编译器和 Visual Studio IntelliSense 是不可见的。  
   
--   在运行时使用 .NET 反射来发现或访问。 即使在运行时，它们也不是基本 CLR 意义上的属性。  
+- 在运行时使用 .NET 反射来发现或访问。 即使在运行时，它们也不是基本 CLR 意义上的属性。  
   
- 在 C# 中，动态属性只能在运行时通过 <xref:System.ComponentModel> 命名空间提供的功能进行访问。  
+  在 C# 中，动态属性只能在运行时通过 <xref:System.ComponentModel> 命名空间提供的功能进行访问。  
   
- 但相比之下，在 XML 源中，可以通过下面形式的简洁表示法访问动态属性：  
+  但相比之下，在 XML 源中，可以通过下面形式的简洁表示法访问动态属性：  
   
 ```  
 <object>.<dynamic-property>  

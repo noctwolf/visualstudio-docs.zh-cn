@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50d5876f38b7c539beb33d5918387a06f45b193b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: a04993581be6edae89633bcda901a8d85ff6c765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849536"
 ---
 # <a name="starting-to-develop-visual-studio-extensions"></a>开始开发 Visual Studio 扩展
 如果您从未书写过 Visual Studio 扩展之前，你可能会出现一些问题。 我们列出了一些最常见的。 如果看不到所需的信息，使用反馈按钮 (**此页面是否有所帮助？** 屏幕底部) 要求所需内容。
@@ -30,13 +30,13 @@ ms.locfileid: "44321263"
 ## <a name="what-kinds-of-things-can-i-do-with-visual-studio-extensions"></a>我可以使用 Visual Studio 扩展做何种操作？
  天空是界限谈到设想不同 Visual Studio 扩展。 当然，大多数扩展与编写代码，但它不一定是这种情况。 下面是可以生成的扩展的类型的一些示例：
 
--   对不包括在 Visual Studio 中，但具有语法着色、 IntelliSense 和编译器和调试支持的语言的支持
+- 对不包括在 Visual Studio 中，但具有语法着色、 IntelliSense 和编译器和调试支持的语言的支持
 
--   扩展核心的工作效率工具 IDE 体验的其他模板、 代码重构，则新对话或工具窗口
+- 扩展核心的工作效率工具 IDE 体验的其他模板、 代码重构，则新对话或工具窗口
 
--   于以下情形： 数据设计或云支持的特定于域的设计器
+- 于以下情形： 数据设计或云支持的特定于域的设计器
 
- 有关扩展的示例，请参阅[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 许多扩展开放源代码，，在 Marketplace 包括到其 GitHub 存储库的链接。
+  有关扩展的示例，请参阅[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)。 许多扩展开放源代码，，在 Marketplace 包括到其 GitHub 存储库的链接。
 
 ## <a name="which-visual-studio-features-can-i-extend"></a>可以扩展的 Visual Studio 功能？
  从理论上讲，您可以扩展 Visual Studio 的任何一部分： 菜单、 工具栏、 命令、 windows、 解决方案、 项目、 编辑器和等等。
