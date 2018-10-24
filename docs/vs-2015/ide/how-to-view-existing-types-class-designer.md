@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9759425659d4a7e77672442ee37fd7649e7a6751
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 630902cd789fb3eec0f51ed1cfede3ae54e1ac83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846975"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>如何：查看现有类型（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49305276"
   
 ### <a name="to-see-types-in-a-project-on-a-class-diagram"></a>在类图上查看项目中的类型  
   
-1.  从解决方案资源管理器中的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[如何：向项目中添加类图（类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
+1. 从解决方案资源管理器中的项目中，打开现有类图 (.cd) 文件。 如果不存在任何类图，请向项目中添加新类图。 请参阅[如何：向项目中添加类图（类设计器）](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。  
   
-2.  从解决方案资源管理器中的项目中，将源代码文件拖动到类图中。  
+2. 从解决方案资源管理器中的项目中，将源代码文件拖动到类图中。  
   
-    > [!WARNING]
-    >  如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：  
-    >   
-    >  -   包含图的应用项目  
-    > -   应用项目导入的共享项目  
-    > -   引用的项目  
-    > -   程序集  
+   > [!WARNING]
+   >  如果你的解决方案有共享跨多个应用的代码的项目，则可以仅从以下源将文件或代码拖动到类图：  
+   > 
+   > - 包含图的应用项目  
+   >   -   应用项目导入的共享项目  
+   >   -   引用的项目  
+   >   -   程序集  
   
-     表示在源代码文件中定义的类型的形状即会显示在关系图上你将源代码文件拖动到的位置。  
+    表示在源代码文件中定义的类型的形状即会显示在关系图上你将源代码文件拖动到的位置。  
   
- 你还可以将一个或多个类型从类视图中的项目节点拖动到类图中，来查看项目中的类型。  
+   你还可以将一个或多个类型从类视图中的项目节点拖动到类图中，来查看项目中的类型。  
   
 > [!TIP]
 >  如果类视图尚未打开，则从“视图”菜单打开类视图。 有关类视图的详细信息，请参阅[查看类及其成员](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333)。  

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 680346b640c5c6a8ad66129e30a1034b360bc084
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a83374015fcdada482099982f0294660412a0cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231135"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823705"
 ---
 # <a name="how-to-display-window-properties"></a>如何：显示窗口属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "49231135"
   
 ### <a name="to-open-the-window-properties-dialog-box"></a>若要打开窗口属性对话框  
   
-1.  选择该项，然后选择**属性**从**视图**菜单。  
+1. 选择该项，然后选择**属性**从**视图**菜单。  
   
- 属性对话框都不是模式。 视图窗口中单击的项之间时，对话框的自动刷新，每个选择的项信息。
+   属性对话框都不是模式。 视图窗口中单击的项之间时，对话框的自动刷新，每个选择的项信息。
 
 
 

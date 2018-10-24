@@ -25,12 +25,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96235df516a7d02f63c79f897ec053c787b0cf45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8ece4edf9ee91446565f2790392bd6d478fd3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818323"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>快速入门：使用控制台调试 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,27 +41,27 @@ ms.locfileid: "49205512"
   
  “JavaScript 控制台”窗口允许你执行以下操作：  
   
--   将对象、值和消息从应用发送到控制台窗口。  
+- 将对象、值和消息从应用发送到控制台窗口。  
   
--   查看和修改正在运行的应用中局部和全局变量的值。  
+- 查看和修改正在运行的应用中局部和全局变量的值。  
   
--   查看对象可视化工具。  
+- 查看对象可视化工具。  
   
--   运行在当前脚本上下文中执行的 JavaScript 代码。  
+- 运行在当前脚本上下文中执行的 JavaScript 代码。  
   
--   查看 JavaScript 错误和异常，以及文档对象模型 (DOM) 和 Windows 运行时异常。  
+- 查看 JavaScript 错误和异常，以及文档对象模型 (DOM) 和 Windows 运行时异常。  
   
--   执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
+- 执行其他任务，如清除屏幕。 有关完整的命令列表，请参见 [JavaScript Console commands](../debugger/javascript-console-commands.md) 。  
   
- 本主题内容：  
+  本主题内容：  
   
--   [使用“JavaScript 控制台”窗口进行调试](#InteractiveConsole)  
+- [使用“JavaScript 控制台”窗口进行调试](#InteractiveConsole)  
   
--   [交互式调试和中断模式](#InteractiveDebuggingBreakMode)  
+- [交互式调试和中断模式](#InteractiveDebuggingBreakMode)  
   
--   [JavaScript 控制台窗口中的单行模式和多行模式](#SinglelineMultilineMode)  
+- [JavaScript 控制台窗口中的单行模式和多行模式](#SinglelineMultilineMode)  
   
--   [切换脚本执行上下文](#Switching)  
+- [切换脚本执行上下文](#Switching)  
   
 > [!TIP]
 >  如果 JavaScript 控制台窗口处于关闭状态，请依次选择“调试” > >  以重新打开它。 该窗口仅在脚本调试会话期间出现。  

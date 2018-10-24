@@ -17,12 +17,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8179262ceabe1765ee6c9eab96553bcbcbbee419
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bab850a6943268581035336a923232377e6489f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843673"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>访问存储的字体和颜色设置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,17 +53,17 @@ ms.locfileid: "49191394"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字体和颜色的状态持久性  
  保留的字体和颜色涉及：  
   
--   与存储在注册表中设置同步的 IDE 设置。  
+- 与存储在注册表中设置同步的 IDE 设置。  
   
--   传播注册表修改信息。  
+- 传播注册表修改信息。  
   
--   设置和检索存储在注册表中的设置。  
+- 设置和检索存储在注册表中的设置。  
   
- 与 IDE 设置同步的存储设置是很大程度上透明的。 基础 IDE 自动将写入的更新的设置**显示项**到类别的注册表项。  
+  与 IDE 设置同步的存储设置是很大程度上透明的。 基础 IDE 自动将写入的更新的设置**显示项**到类别的注册表项。  
   
- 如果多个 Vspackage 共享特定类别，VSPackage 应要求将生成事件时的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口用于修改存储的注册表设置。  
+  如果多个 Vspackage 共享特定类别，VSPackage 应要求将生成事件时的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口用于修改存储的注册表设置。  
   
- 默认情况下未启用事件生成。 若要启用事件生成，类别必须打开使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 这会导致 IDE 以调用适当<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 实现的方法。  
+  默认情况下未启用事件生成。 若要启用事件生成，类别必须打开使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 这会导致 IDE 以调用适当<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 实现的方法。  
   
 > [!NOTE]
 >  通过修改**字体和颜色**属性页生成事件的独立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口，以确定是否在调用的方法需要更新的缓存的字体和颜色设置<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>类。  

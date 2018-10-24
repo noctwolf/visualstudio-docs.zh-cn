@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2d973d1ec992002b2239383f9dbed228a0d59b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859388"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824290"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -123,7 +123,7 @@ ms.locfileid: "47859388"
 不同类型的关系图可用于描述不同抽象级别的设计。 许多关系图类型可用于多个级别。 此表显示可以如何使用每种类型的关系图。
 
 |设计级别|关系图类型|
-|------------------|-------------------|
+|-|-|
 |业务流程<br /><br /> 了解将在其中使用你的系统的上下文有助于你了解用户对系统的需求。|-概念类图描述了业务流程中使用的业务概念。|
 |用户需求<br /><br /> 用户对系统的需求的定义。|的可以在单独的文档中描述业务规则和服务质量要求。|
 |高级设计<br /><br /> 系统的整体结构：主要组件以及它们如何结合在一起。|-依赖项关系图介绍了如何将系统组织成相互依赖的部件。 您可以验证程序代码对依赖项关系图，以确保它符合体系结构。|
@@ -132,9 +132,9 @@ ms.locfileid: "47859388"
 ## <a name="external-resources"></a>外部资源
 
 |**类别**|**链接**|
-|------------------|---------------|
+|-|-|
 |**视频**|![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现视频： 如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif)[第 9 频道： Visual Studio 2010 中的 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![视频链接](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 |**博客**|[Microsoft DevOps](https://blogs.msdn.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 

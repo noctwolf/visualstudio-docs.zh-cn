@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4a52b63dc5605dfae533a4108e11a43ed0c62ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2507b509ee33957845f010f7c18404d257ad4a38
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306366"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837575"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,17 +25,17 @@ ms.locfileid: "49306366"
   
  项目代码包括：  
   
--   自定义控件和用户控件  
+- 自定义控件和用户控件  
   
--   类库  
+- 类库  
   
--   值转换器  
+- 值转换器  
   
--   针对从项目代码生成的设计时数据绑定  
+- 针对从项目代码生成的设计时数据绑定  
   
- 当禁用项目代码时，Visual Studio 将显示占位符，如绑定中数据不再可用的属性的名称；或显示不再运行的控件的占位符。  
+  当禁用项目代码时，Visual Studio 将显示占位符，如绑定中数据不再可用的属性的名称；或显示不再运行的控件的占位符。  
   
- ![“未经处理的异常”对话框](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
+  ![“未经处理的异常”对话框](../designers/media/xaml-unhandledexception.png "XAML_UnhandledException")  
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>确定项目代码是否会导致异常  
   
