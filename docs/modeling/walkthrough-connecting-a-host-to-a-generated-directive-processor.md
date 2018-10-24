@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: b6a89c76cf1f292ca99664e0e75c4070bdddaa54
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 5b5346f47d3dcb836a0e8eeef7d9b21bd55ccd07
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896232"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到生成的指令处理器
 
@@ -33,21 +33,22 @@ ms.locfileid: "47859934"
 
 本演练包含以下任务：
 
--   使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]生成基于域模型的指令处理器。
+- 使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]生成基于域模型的指令处理器。
 
--   将自定义文本模板主机连接到生成的指令处理器。
+- 将自定义文本模板主机连接到生成的指令处理器。
 
--   测试生成的指令处理器的自定义主机。
+- 测试生成的指令处理器的自定义主机。
 
 ## <a name="prerequisites"></a>系统必备
 
 若要定义 DSL，必须安装以下组件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio 可视化和建模 SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio 可视化和建模 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -57,34 +58,34 @@ ms.locfileid: "47859934"
 
 在本演练中，使用域特定语言设计器向导来创建域特定语言解决方案 DSLMinimalTest。
 
-1.  创建域特定语言解决方案具有以下特征：
+1. 创建域特定语言解决方案具有以下特征：
 
-    -   名称： DSLMinimalTest
+   -   名称： DSLMinimalTest
 
-    -   解决方案模板： 最小语言
+   -   解决方案模板： 最小语言
 
-    -   文件扩展名： 最小值
+   -   文件扩展名： 最小值
 
-    -   公司名称： Fabrikam
+   -   公司名称： Fabrikam
 
    有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
-2.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
+2. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
-    > [!IMPORTANT]
-    > 此步骤中生成指令处理器，并将该密钥为其添加在注册表中。
+   > [!IMPORTANT]
+   > 此步骤中生成指令处理器，并将该密钥为其添加在注册表中。
 
-3.  在“调试”菜单上，单击“启动调试”。
+3. 在“调试”菜单上，单击“启动调试”。
 
-     此时将打开 Visual Studio 的第二个实例。
+    此时将打开 Visual Studio 的第二个实例。
 
-4.  在实验性生成中**解决方案资源管理器**，双击该文件**sample.min**。
+4. 在实验性生成中**解决方案资源管理器**，双击该文件**sample.min**。
 
-     在设计器中打开该文件。 请注意，该模型包含两个元素、 ExampleElement1 和 ExampleElement2 和它们之间的链接。
+    在设计器中打开该文件。 请注意，该模型包含两个元素、 ExampleElement1 和 ExampleElement2 和它们之间的链接。
 
-5.  关闭 Visual Studio 的第二个实例。
+5. 关闭 Visual Studio 的第二个实例。
 
-6.  保存的解决方案，然后关闭域特定语言设计器。
+6. 保存的解决方案，然后关闭域特定语言设计器。
 
 ## <a name="connect-a-custom-text-template-host-to-a-directive-processor"></a>连接到的指令处理器自定义文本模板宿主
 
@@ -230,7 +231,7 @@ ms.locfileid: "47859934"
             }
     ```
 
-7.  上**文件**菜单上，单击**全部保存**。
+7.  在“文件”  菜单上，单击“全部保存” 。
 
 8.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 

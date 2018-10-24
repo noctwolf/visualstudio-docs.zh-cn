@@ -25,12 +25,12 @@ caps.latest.revision: 35
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c44ad4b225b3fd52f0e25369777b1a4f6df8c95e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1136cc4e55ebbdf3a5ff1b38b5802b058e9c69c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895738"
 ---
 # <a name="layer-diagrams-reference"></a>层关系图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ ms.locfileid: "49248308"
   
  使用层关系图帮助你执行以下任务：  
   
--   传达系统的现有或预期逻辑体系结构。  
+- 传达系统的现有或预期逻辑体系结构。  
   
--   发现现有代码和预期体系结构之间的冲突。  
+- 发现现有代码和预期体系结构之间的冲突。  
   
--   在重构、更新或改进你的系统时，可视化更改对预期体系结构的影响。  
+- 在重构、更新或改进你的系统时，可视化更改对预期体系结构的影响。  
   
--   在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。  
+- 在开发和维护你的代码过程中，通过包括对签入的验证来强化预期体系结构并生成操作。  
   
- 本主题介绍了可以在层关系图中使用的元素。 有关更多详细信息，有关如何创建和绘制层关系图，请参阅[层关系图： 准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+  本主题介绍了可以在层关系图中使用的元素。 有关更多详细信息，有关如何创建和绘制层关系图，请参阅[层关系图： 准则](../modeling/layer-diagrams-guidelines.md)。 有关分层模式的详细信息，请访问[模式和实践站点](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
 ## <a name="reading-layer-diagrams"></a>读取层关系图  
  ![层关系图上的元素](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")  
@@ -69,17 +69,17 @@ ms.locfileid: "49248308"
 ##  <a name="Explorer"></a> 层资源管理器  
  在解决方案中，如项目、类、命名空间、项目文件和软件的其他部件，你可以将每个层链接到项目。 层上的数字显示链接到该层的项目数。 但是，在读取层上的项目数时，请记住：  
   
--   如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。  
+- 如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。  
   
-     例如，如果一个层链接到单个命名空间，则链接的项目数是 1，即使该命名空间包含类也是如此。 如果该层还链接到命名空间中的每个类，则该数字将包括链接的类。  
+   例如，如果一个层链接到单个命名空间，则链接的项目数是 1，即使该命名空间包含类也是如此。 如果该层还链接到命名空间中的每个类，则该数字将包括链接的类。  
   
--   如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。  
+- 如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。  
   
- 有关链接层和项目的详细信息，请参阅：  
+  有关链接层和项目的详细信息，请参阅：  
   
--   [层关系图：指南](../modeling/layer-diagrams-guidelines.md)  
+- [层关系图：指南](../modeling/layer-diagrams-guidelines.md)  
   
--   [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)  
+- [从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>若要检查链接的项目  
   

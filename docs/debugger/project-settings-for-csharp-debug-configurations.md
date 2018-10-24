@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5bd49d550cb03e8234c8740ea8c0f605ed721c2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: a65928e8a5a734e84d51cbb4368c7346ba8c2edb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896336"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 可以更改 C# 调试配置中的项目设置**属性页**窗口中，如中所述[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示了在何处可以找到中与调试器相关的设置**属性页**窗口。  
@@ -37,15 +37,15 @@ ms.locfileid: "44283257"
   
 ##  <a name="BKMK_Debug_tab"></a> 调试选项卡  
   
-|**设置**|**说明**|  
-|-----------------|---------------------|  
-|**配置**|设置编译应用程序的模式。 在其中进行选择**活动 （调试）**，**调试**，**版本**，**所有配置**。|  
-|**启动操作**|这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   **启动项目**是默认值，用于启动启动项目以便进行调试。 有关详细信息，请参阅[选择启动项目](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />-   **启动外部程序**使您能够启动并附加到不是程序的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[附加到正在运行的程序](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100))。<br />-   **启动浏览器于 URL**使你能够调试 Web 应用程序。|  
-|**命令行参数**|指定要调试的程序的命令行自变量。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则不能指定命令行自变量。|  
-|**工作目录**|指定被调试的程序的工作目录。 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中，工作目录是启动应用程序的目录，默认情况下为 \bin\debug。|  
-|**使用远程计算机**|出于调试目的的远程计算机运行该应用程序的名称或[Msvsmon 服务器名称](../debugger/remote-debugging.md)。 该 EXE 文件在远程计算机上的位置是由“配置属性”文件夹“生成”类别中的“输出路径”属性指定的。 此位置必须是远程计算机上的共享目录。|
-|**启用非托管代码调试**|使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。|  
-|**启用 SQL Server 调试**|允许对 SQL Server 数据库对象进行调试。|  
+| **设置** | **说明** |
+|-------------------------------------| - |
+| **配置** | 设置编译应用程序的模式。 在其中进行选择**活动 （调试）**，**调试**，**版本**，**所有配置**。 |
+| **启动操作** | 这组控件指定在从“调试”菜单中选择“启动”时将发生的操作。<br /><br /> -   **启动项目**是默认值，用于启动启动项目以便进行调试。 有关详细信息，请参阅[选择启动项目](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />-   **启动外部程序**使您能够启动并附加到不是程序的一部分[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[附加到正在运行的程序](/previous-versions/visualstudio/visual-studio-2010/c6wf8e4z(v=vs.100))。<br />-   **启动浏览器于 URL**使你能够调试 Web 应用程序。 |
+| **命令行参数** | 指定要调试的程序的命令行自变量。 该命令名是在“启动外部程序”中指定的程序名。 如果“启动操作”设置为“启动 URL”，则不能指定命令行自变量。 |
+| **工作目录** | 指定被调试的程序的工作目录。 在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 中，工作目录是启动应用程序的目录，默认情况下为 \bin\debug。 |
+| **使用远程计算机** | 出于调试目的的远程计算机运行该应用程序的名称或[Msvsmon 服务器名称](../debugger/remote-debugging.md)。 该 EXE 文件在远程计算机上的位置是由“配置属性”文件夹“生成”类别中的“输出路径”属性指定的。 此位置必须是远程计算机上的共享目录。 |
+| **启用非托管代码调试** | 使你能够从托管应用程序中调试对本机（非托管）Win32 代码的调用。 |
+| **启用 SQL Server 调试** | 允许对 SQL Server 数据库对象进行调试。 |
   
 ##  <a name="BKMK_Build_tab"></a> 生成选项卡  
   

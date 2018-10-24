@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7c9c6c937d0426170854ef3a9de04348005fc0cd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f80067224be1cc5dfa72b23dbfb7414b023f793a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298891"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897625"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,66 +68,66 @@ Visual Basic 中的生成事件可用于运行脚本、宏或用作作为编译�
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>创建 .exe 命令以更改应用程序清单  
   
-1.  为命令创建控制台应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。  
+1. 为命令创建控制台应用程序。 在“文件”菜单上，单击“新建”，然后单击“项目”。  
   
-2.  在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows”、“控制台应用程序”模板。 将项目命名为 `ChangeOSVersionVB`。  
+2. 在“新建项目”对话框的“Visual Basic”节点中，依次选择“Windows”、“控制台应用程序”模板。 将项目命名为 `ChangeOSVersionVB`。  
   
-3.  在 Module1.vb 中，将以下行添加到文件顶部的其他 `Imports` 语句中：  
+3. 在 Module1.vb 中，将以下行添加到文件顶部的其他 `Imports` 语句中：  
   
-    ```  
-    Imports System.Xml  
-    ```  
+   ```  
+   Imports System.Xml  
+   ```  
   
-4.  在 `Sub Main` 中添加下列代码：  
+4. 在 `Sub Main` 中添加下列代码：  
   
-    ```  
-    Sub Main()  
-       Dim applicationManifestPath As String  
-       applicationManifestPath = My.Application.CommandLineArgs(0)  
-       Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)  
+   ```  
+   Sub Main()  
+      Dim applicationManifestPath As String  
+      applicationManifestPath = My.Application.CommandLineArgs(0)  
+      Console.WriteLine("Application Manifest Path: " & applicationManifestPath.ToString)  
   
-       'Get version name  
-       Dim osVersion As Version  
-       If My.Application.CommandLineArgs.Count >= 2 Then  
-          osVersion = New Version(My.Application.CommandLineArgs(1).ToString)  
-       Else  
-          Throw New ArgumentException("OS Version not specified.")  
-       End If  
-       Console.WriteLine("Desired OS Version: " & osVersion.ToString())  
+      'Get version name  
+      Dim osVersion As Version  
+      If My.Application.CommandLineArgs.Count >= 2 Then  
+         osVersion = New Version(My.Application.CommandLineArgs(1).ToString)  
+      Else  
+         Throw New ArgumentException("OS Version not specified.")  
+      End If  
+      Console.WriteLine("Desired OS Version: " & osVersion.ToString())  
   
-       Dim document As XmlDocument  
-       Dim namespaceManager As XmlNamespaceManager  
-       namespaceManager = New XmlNamespaceManager(New NameTable())  
-       With namespaceManager  
-          .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")  
-          .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")  
-       End With  
+      Dim document As XmlDocument  
+      Dim namespaceManager As XmlNamespaceManager  
+      namespaceManager = New XmlNamespaceManager(New NameTable())  
+      With namespaceManager  
+         .AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1")  
+         .AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2")  
+      End With  
   
-       document = New XmlDocument()  
-       document.Load(applicationManifestPath)  
+      document = New XmlDocument()  
+      document.Load(applicationManifestPath)  
   
-       Dim baseXPath As String  
-       baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"  
+      Dim baseXPath As String  
+      baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os"  
   
-       'Change minimum required OS Version.  
-       Dim node As XmlNode  
-       node = document.SelectSingleNode(baseXPath, namespaceManager)  
-       node.Attributes("majorVersion").Value = osVersion.Major.ToString()  
-       node.Attributes("minorVersion").Value = osVersion.Minor.ToString()  
-       node.Attributes("buildNumber").Value = osVersion.Build.ToString()  
-       node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()  
+      'Change minimum required OS Version.  
+      Dim node As XmlNode  
+      node = document.SelectSingleNode(baseXPath, namespaceManager)  
+      node.Attributes("majorVersion").Value = osVersion.Major.ToString()  
+      node.Attributes("minorVersion").Value = osVersion.Minor.ToString()  
+      node.Attributes("buildNumber").Value = osVersion.Build.ToString()  
+      node.Attributes("servicePackMajor").Value = osVersion.Revision.ToString()  
   
-       document.Save(applicationManifestPath)  
-    End Sub  
-    ```  
+      document.Save(applicationManifestPath)  
+   End Sub  
+   ```  
   
-     此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 Projectname.publish）。 第二个参数是新的操作系统版本。  
+    此命令采用两个参数。 第一个参数是应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 Projectname.publish）。 第二个参数是新的操作系统版本。  
   
-5.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+5. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-6.  将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
+6. 将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
   
- 接下来，在生成后事件中调用此命令以更改应用程序清单。  
+   接下来，在生成后事件中调用此命令以更改应用程序清单。  
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>调用生成后事件以更改应用程序清单  
   

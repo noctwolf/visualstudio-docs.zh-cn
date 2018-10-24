@@ -26,12 +26,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ea1c04066099b385b03c1b81bc4d85c7fb13e329
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: ba6f0a1aff0c263534c17256b7f5cf49ff9c9533
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898052"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署进行故障排除
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。
@@ -57,15 +57,15 @@ ms.locfileid: "37118498"
 |无|不检测冲突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之间的差异
- 当您使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 SharePoint 项目部署到本地 SharePoint 服务器进行测试和调试时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将执行一些其他步骤。
+ 当你使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 SharePoint 项目部署到本地 SharePoint 服务器进行测试和调试时，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将执行一些其他步骤。
 
-1.  在部署步骤过程中重置 Internet Information Services (IIS)。
+1. 在部署步骤过程中重置 Internet Information Services (IIS)。
 
-2.  自动关联工作流。
+2. 自动关联工作流。
 
-3.  根据包设计器中的层次结构设置功能激活顺序。
+3. 根据包设计器中的层次结构设置功能激活顺序。
 
- 可以将自定义部署步骤添加到进一步更改**F5**行为。 有关详细信息，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
+   可以将自定义部署步骤添加到进一步更改**F5**行为。 有关详细信息，请参阅[演练： 创建 SharePoint 项目的自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>延迟显示 SharePoint 页时部署可视 web 部件
  在 [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)]、[!INCLUDE[win7](../sharepoint/includes/win7-md.md)] 或 [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)] 上将可视 Web 部件部署到 Bin 文件夹时，SharePoint 页需要很长时间才会显示。 如果更改顶级 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 目录（例如 Bin 目录）中的任何文件，则整个 Web 应用程序将重新编译。 这可能会导致 SharePoint 页延迟长达 25 秒才会呈现。

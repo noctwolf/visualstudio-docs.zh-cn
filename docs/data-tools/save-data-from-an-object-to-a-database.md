@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2d5e118e4d998a5abf87920ee54401bf53d4adfa
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 210d7ade5e54f9f76e40eaf577e7818db85176e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897883"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>将数据从对象保存到数据库
 可以在将值从您的对象传递到 TableAdapter 的 DBDirect 方法之一将数据保存到数据库的对象中 (例如， `TableAdapter.Insert`)。 有关详细信息，请参阅[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "37174478"
 >  在配置 TableAdapter 时，主查询必须提供足够的信息供`DBDirect`方法来创建。 例如，如果 TableAdapter 查询的数据配置不具有定义的主键列的表中，它不会生成`DBDirect`方法。
 
 |TableAdapter DBDirect 方法|描述|
-|----------------------------------|-----------------|
+| - |-----------------|
 |`TableAdapter.Insert`|将新记录添加到数据库并使您能够在各列的值作为方法参数中传递。|
 |`TableAdapter.Update`|更新现有数据库中的记录。 `Update`方法采用原始的和新列作为方法参数的值。 用于查找的原始记录的原始值和新值用于更新该记录。<br /><br /> `TableAdapter.Update`方法还用于协调回数据库的数据集的更改，通过采用<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或数组<xref:System.Data.DataRow>的方法参数。|
 |`TableAdapter.Delete`|删除现有的基于原始列值作为方法参数传入数据库中的记录。|

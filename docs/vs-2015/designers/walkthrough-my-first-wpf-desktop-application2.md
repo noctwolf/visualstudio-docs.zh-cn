@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1b1ec46cf032928a090991577b83782e1fcfb513
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d8af02051774b744f9229e15a6184603c4d9f6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899274"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>演练：我的第一个 WPF 桌面应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -958,27 +958,27 @@ name ="简介"></a>本演练提供了 Windows Presentation Foundation (WPF) 开�
   
  有关 WPF 体系结构和编程模型的详细信息，请参阅以下主题：  
   
--   [WPF 体系结构](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
+- [WPF 体系结构](https://msdn.microsoft.com/library/ms750441\(v=vs.100\).aspx)  
   
--   [XAML 概述](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
+- [XAML 概述](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)  
   
--   [依赖项属性概述](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
+- [依赖项属性概述](https://msdn.microsoft.com/library/ms752914\(v=vs.100\).aspx)  
   
--   [布局系统](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
+- [布局系统](https://msdn.microsoft.com/library/ms745058\(v=vs.100\).aspx)  
   
--   [样式和模板](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
+- [样式和模板](https://msdn.microsoft.com/library/bb613570\(v=vs.100\).aspx)  
   
- 有关创建应用程序的详细信息，请参阅以下主题：  
+  有关创建应用程序的详细信息，请参阅以下主题：  
   
--   [应用程序开发概述](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
+- [应用程序开发概述](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)  
   
--   [控件概述](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
+- [控件概述](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)  
   
--   [数据绑定概述](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
+- [数据绑定概述](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)  
   
--   [WPF 图形、动画和媒体概述](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
+- [WPF 图形、动画和媒体概述](https://msdn.microsoft.com/library/ms742562\(v=vs.100\).aspx)  
   
--   [WPF 中的文档](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
+- [WPF 中的文档](https://msdn.microsoft.com/library/ms748388\(v=vs.100\).aspx)  
   
 ## <a name="see-also"></a>请参阅  
  [演练：创建连接到 Azure 移动服务的 WPF 桌面应用程序](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)   

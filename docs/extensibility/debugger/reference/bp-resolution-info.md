@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO |Microsoft 文档
+title: BP_RESOLUTION_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e163daff6466f9cc6e0f83fff20b89006a73dcc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fafba8e09ad4f0dccb40ebd6fb88b75eef70964d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099559"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896791"
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-描述一个代码断点或数据断点的断点绑定的信息。  
+介绍代码断点或数据断点的绑定的断点信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,16 +47,16 @@ public struct BP_RESOLUTION_INFO {
   
 ## <a name="members"></a>成员  
  `dwFields`  
- 集合中的标志[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)填写指定的字段的枚举。  
+ 中的标志的集合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)填充指定的字段的枚举。  
   
  `bpResLocation`  
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构，它在代码或数据中指定的断点的位置。  
   
  `pProgram`  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表断点错误发生的应用程序的对象。  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)表示应用程序发生断点错误的对象。  
   
  `pThread`  
- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示在其中运行的应用程序包含断点错误的线程。  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)对象，表示包含断点错误的应用程序正在其中运行的线程。  
   
 ## <a name="remarks"></a>备注  
  返回此结构[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)。  
@@ -68,7 +68,7 @@ public struct BP_RESOLUTION_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
