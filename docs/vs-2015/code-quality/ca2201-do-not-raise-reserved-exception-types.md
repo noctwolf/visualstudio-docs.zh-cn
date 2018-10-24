@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: be0fc7df23e7164371e95e92fbad1a32026284df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9cc22f6bc8f7e863f0808c05b0b5cba37ba79fbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49810588"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引发保留的异常类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseReservedExceptionTypes|
@@ -42,31 +43,31 @@ ms.locfileid: "49227055"
 ## <a name="rule-description"></a>规则说明
  下面的异常类型是太通用，向用户提供足够的信息：
 
--   <xref:System.Exception?displayProperty=fullName>
+- <xref:System.Exception?displayProperty=fullName>
 
--   <xref:System.ApplicationException?displayProperty=fullName>
+- <xref:System.ApplicationException?displayProperty=fullName>
 
--   <xref:System.SystemException?displayProperty=fullName>
+- <xref:System.SystemException?displayProperty=fullName>
 
- 下面的异常类型被保留，应仅由公共语言运行时引发：
+  下面的异常类型被保留，应仅由公共语言运行时引发：
 
--   <xref:System.ExecutionEngineException?displayProperty=fullName>
+- <xref:System.ExecutionEngineException?displayProperty=fullName>
 
--   <xref:System.IndexOutOfRangeException?displayProperty=fullName>
+- <xref:System.IndexOutOfRangeException?displayProperty=fullName>
 
--   <xref:System.NullReferenceException?displayProperty=fullName>
+- <xref:System.NullReferenceException?displayProperty=fullName>
 
--   <xref:System.OutOfMemoryException?displayProperty=fullName>
+- <xref:System.OutOfMemoryException?displayProperty=fullName>
 
- **不会引发一般异常**
+  **不会引发一般异常**
 
- 如果您引发一般异常类型，如<xref:System.Exception>或<xref:System.SystemException>中的库或框架，它会强制使用者能够捕捉所有异常，包括未知他们不知道如何处理的异常。
+  如果您引发一般异常类型，如<xref:System.Exception>或<xref:System.SystemException>中的库或框架，它会强制使用者能够捕捉所有异常，包括未知他们不知道如何处理的异常。
 
- 相反，引发在 framework 中，已存在的派生程度更大的类型，或创建您自己的派生类型<xref:System.Exception>。
+  相反，引发在 framework 中，已存在的派生程度更大的类型，或创建您自己的派生类型<xref:System.Exception>。
 
- **引发特定异常**
+  **引发特定异常**
 
- 下表显示了参数和验证属性的 set 访问器中包含值参数的参数时引发的异常：
+  下表显示了参数和验证属性的 set 访问器中包含值参数的参数时引发的异常：
 
 |参数说明|例外|
 |---------------------------|---------------|

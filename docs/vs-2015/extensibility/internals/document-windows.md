@@ -15,29 +15,29 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d4e4a2a5c502058835d59793d2e22107ff3c07d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b34db3de6d99754f0ea6598a39777622554988e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828073"
 ---
 # <a name="document-windows"></a>文档窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在 Visual Studio 中，*文档窗口*是带边框的子窗口的多文档界面 (MDI) 窗口与相关联。 文档窗口通常用于显示和修改源代码或文本，但它们还可以托管其他功能的类型。 文档窗口：  
   
--   可以将组织中的父代 MDI 中单独的水平或垂直选项卡组中，以便可以同时查看多个文件。  
+- 可以将组织中的父代 MDI 中单独的水平或垂直选项卡组中，以便可以同时查看多个文件。  
   
--   可以按任意顺序在 MDI 父停靠。  
+- 可以按任意顺序在 MDI 父停靠。  
   
--   可以自由浮动。  
+- 可以自由浮动。  
   
--   链接到其他 MDI 窗口的选项卡顺序。  
+- 链接到其他 MDI 窗口的选项卡顺序。  
   
- 用于分组的命令，在文档窗口选项卡的快捷菜单上可以找到停靠和浮动。  
+  用于分组的命令，在文档窗口选项卡的快捷菜单上可以找到停靠和浮动。  
   
- 有关在 Visual Studio 中的窗口行为的详细信息，请参阅[自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)。  
+  有关在 Visual Studio 中的窗口行为的详细信息，请参阅[自定义窗口布局](../../ide/customizing-window-layouts-in-visual-studio.md)。  
   
 ## <a name="document-window-implementation"></a>文档窗口实现  
  通过实现编辑器创建文档窗口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口用于创建实例化一个编辑器的一部分的文档窗口。 有关详细信息，请参阅[在编辑器中的旧接口](../../extensibility/legacy-interfaces-in-the-editor.md)。  

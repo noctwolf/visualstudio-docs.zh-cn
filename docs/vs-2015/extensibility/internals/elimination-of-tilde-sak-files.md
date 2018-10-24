@@ -17,12 +17,12 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7dda375cb4657bc6fcc2089341600611b370e52b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c7422b0dae02b12d731713f6da416361798d3276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824303"
 ---
 # <a name="elimination-of-sak-files"></a>清除 ~SAK 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ ms.locfileid: "49216094"
 ## <a name="sak-files"></a>~ SAK 文件  
  Visual Studio.NET 2003 中创建临时文件前缀为 ~ SAK。 这些文件用于确定是否支持源代码管理插件：  
   
--   MSSCCPRJ。SCC 文件。  
+- MSSCCPRJ。SCC 文件。  
   
--   （共享） 的多个签出。  
+- （共享） 的多个签出。  
   
- 插件的支持在源控件插件 API 1.2 中提供的高级的函数，IDE 可以检测这些功能，而无需创建临时文件通过使用新功能、 标志和函数，以下部分详细介绍。  
+  插件的支持在源控件插件 API 1.2 中提供的高级的函数，IDE 可以检测这些功能，而无需创建临时文件通过使用新功能、 标志和函数，以下部分详细介绍。  
   
 ## <a name="new-capability-flags"></a>新的功能标志  
  `SCC_CAP_SCCFILE`  

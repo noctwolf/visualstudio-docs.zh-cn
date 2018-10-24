@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a3296ec07194f1815b819f69cf97224be50368f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830660"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
@@ -88,7 +88,7 @@ ms.locfileid: "34747810"
 勾选此项后，将显示编辑器文本区域的左侧边缘的垂直边距。 可以通过单击此边距选择一整行文本，或者通过单击并拖动，选择连续多行文本。
 
 |打开选定内容的边距|关闭选定内容的边距|
-|-------------------------|--------------------------|
+| - | - |
 |![HTMLpageSelectionMarginOn 屏幕快照](../../ide/reference/media/vxselmaron.gif)|![HTMLpageSelectionMarginOff 屏幕快照](../../ide/reference/media/vxselmaroff.gif)|
 
 ### <a name="indicator-margin"></a>指示器边距
