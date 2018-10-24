@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsymbolsbyaddr:: Symbolbyaddr |Microsoft 文档'
+title: 'Idiaenumsymbolsbyaddr:: Symbolbyaddr |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 159c6fcc65734255f5303ee267a1368078f7af10
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d15901ac321a1a5d60db6e989b24c314bcd211b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844817"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-通过按映像部分编号和偏移量查找将枚举数。  
+枚举数定位通过查找按映像部分数量和偏移量。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,13 +36,13 @@ HRESULT symbolByAddr (
   
 #### <a name="parameters"></a>参数  
  isect  
- [in]映像部分数。  
+ [in]图像部分数。  
   
  offsect  
- [in]部分中的偏移量。  
+ [in]在部分中的偏移量。  
   
  ppsymbol  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，它表示找到的符号。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示找到的符号。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果找不到符号。 否则，返回错误代码。  

@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fba24434b10a9606c800c1453d31d7d3b52b234
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844598"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49275049"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目标的输入和输出  
   
--   使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如：  
+- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如：  
   
-    ```  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 在下面的示例中，如果 `@(CSFile)` 项列表中有任何文件比 hello.exe 文件新，则 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 将运行该目标；否则将跳过它：  
+  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 在下面的示例中，如果 `@(CSFile)` 项列表中有任何文件比 hello.exe 文件新，则 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 将运行该目标；否则将跳过它：  
   
 ```  
 <Target Name="Build"   
@@ -67,13 +67,13 @@ ms.locfileid: "49275049"
 ## <a name="example"></a>示例  
  以下示例使用的项目为假设的帮助系统生成帮助文件。 执行该项目时，会将 .txt 源文件转换为 .content 中间文件，随后，.content 中间文件与 XML 元数据文件合并，生成帮助系统使用的 .help 最终文件。 该项目使用以下假设任务：  
   
--   `GenerateContentFiles`：将 .txt 文件转换成 .content 文件。  
+- `GenerateContentFiles`：将 .txt 文件转换成 .content 文件。  
   
--   `BuildHelp`：将 .content 文件与 XML 元数据文件合并，生成 .help 最终文件。  
+- `BuildHelp`：将 .content 文件与 XML 元数据文件合并，生成 .help 最终文件。  
   
- 该项目通过转换过程来建立 `GenerateContentFiles` 任务中输入和输出之间的一一映射。 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。 此外，设置了 `Output` 元素，以便自动将 `GenerateContentFiles` 任务的输出用作 `BuildHelp` 任务的输入。  
+  该项目通过转换过程来建立 `GenerateContentFiles` 任务中输入和输出之间的一一映射。 有关详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。 此外，设置了 `Output` 元素，以便自动将 `GenerateContentFiles` 任务的输出用作 `BuildHelp` 任务的输入。  
   
- 此项目文件包含 `Convert` 和 `Build` 目标。 `GenerateContentFiles` 和 `BuildHelp` 任务分别位于 `Convert` 和 `Build` 目标中，以便可以增量生成每个目标。 通过使用 `Output` 元素，将 `GenerateContentFiles` 任务的输出放入 `ContentFile` 项列表中，这样，就可以将这些输出用作 `BuildHelp` 任务的输入。 通过按此方法使用 `Output` 元素，可自动将一个任务的输出作为另一个任务的输入，这样就不必在每个任务中手动列出各个项或项列表。  
+  此项目文件包含 `Convert` 和 `Build` 目标。 `GenerateContentFiles` 和 `BuildHelp` 任务分别位于 `Convert` 和 `Build` 目标中，以便可以增量生成每个目标。 通过使用 `Output` 元素，将 `GenerateContentFiles` 任务的输出放入 `ContentFile` 项列表中，这样，就可以将这些输出用作 `BuildHelp` 任务的输入。 通过按此方法使用 `Output` 元素，可自动将一个任务的输出作为另一个任务的输入，这样就不必在每个任务中手动列出各个项或项列表。  
   
 > [!NOTE]
 >  尽管可增量生成 `GenerateContentFiles` 目标，但该目标的所有输出始终都需要作为 `BuildHelp` 目标的输入。 使用 `Output` 元素时，[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 会自动将一个目标中的所有输出作为另一个目标的输入提供。  

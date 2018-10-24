@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b490eb1afbe8136932cfbe4caf0b1df33fbd3e4b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6886908f01ceaeb36ed83ba0970ef250873d69c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38781665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841879"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练： 文档级项目中的复杂数据绑定
   本演练演示在文档级项目中的复杂数据绑定的基础知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。  
@@ -32,13 +32,13 @@ ms.locfileid: "38781665"
   
  本演练阐释了以下任务：  
   
--   将数据源添加到工作簿项目。  
+- 将数据源添加到工作簿项目。  
   
--   将数据绑定控件添加到工作表。  
+- 将数据绑定控件添加到工作表。  
   
--   将数据更改保存回数据库。  
+- 将数据更改保存回数据库。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -67,25 +67,25 @@ ms.locfileid: "38781665"
   
 ### <a name="to-create-the-data-source"></a>创建数据源  
   
-1.  如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。  
+1. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。  
   
-2.  选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。  
+2. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。  
   
-3.  选择**数据库**，然后单击**下一步**。  
+3. 选择**数据库**，然后单击**下一步**。  
   
-4.  选择与 Northwind 示例 SQL Server 数据库的数据连接或通过添加新的连接**新的连接**按钮。  
+4. 选择与 Northwind 示例 SQL Server 数据库的数据连接或通过添加新的连接**新的连接**按钮。  
   
-5.  选择或创建连接后，单击**下一步**。  
+5. 选择或创建连接后，单击**下一步**。  
   
-6.  如果选中，保存连接的选项，然后单击清除**下一步**。  
+6. 如果选中，保存连接的选项，然后单击清除**下一步**。  
   
-7.  展开**表**中的节点**数据库对象**窗口。  
+7. 展开**表**中的节点**数据库对象**窗口。  
   
-8.  选中复选框旁边**员工**表。  
+8. 选中复选框旁边**员工**表。  
   
 9. 单击 **“完成”**。  
   
- 该向导将添加**员工**表向**数据源**窗口。 它还将类型化数据集添加到项目中的可见**解决方案资源管理器**。  
+   该向导将添加**员工**表向**数据源**窗口。 它还将类型化数据集添加到项目中的可见**解决方案资源管理器**。  
   
 ## <a name="add-controls-to-the-worksheet"></a>将控件添加到工作表  
  工作表将显示**员工**表时打开工作簿。 用户将能够对数据进行更改，然后通过单击一个按钮将这些更改保存回数据库。  
@@ -108,27 +108,27 @@ ms.locfileid: "38781665"
   
 ### <a name="to-add-a-button"></a>若要添加一个按钮  
   
-1.  从**公共控件**选项卡**工具箱**，添加<xref:System.Windows.Forms.Button>单元格的控件**A4**的工作表。  
+1. 从**公共控件**选项卡**工具箱**，添加<xref:System.Windows.Forms.Button>单元格的控件**A4**的工作表。  
   
- 下一步是将文本添加到按钮时打开工作表。  
+   下一步是将文本添加到按钮时打开工作表。  
   
 ## <a name="initialize-the-control"></a>初始化控件  
  将文本添加到中的按钮<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件处理程序。  
   
 ### <a name="to-initialize-the-control"></a>若要初始化控件  
   
-1.  在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**查看代码**快捷菜单上。  
+1. 在中**解决方案资源管理器**，右键单击**Sheet1.vb**或**Sheet1.cs**，然后单击**查看代码**快捷菜单上。  
   
-2.  将以下代码添加到`Sheet1_Startup`方法以设置在 b 的文本`utton`。  
+2. 将以下代码添加到`Sheet1_Startup`方法以设置在 b 的文本`utton`。  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
+    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
+    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  仅适用于 C#，添加的事件处理程序<xref:System.Windows.Forms.Control.Click>事件`Sheet1_Startup`方法。  
+3. 仅适用于 C#，添加的事件处理程序<xref:System.Windows.Forms.Control.Click>事件`Sheet1_Startup`方法。  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
+    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- 现在，添加代码来处理<xref:System.Windows.Forms.Control.Click>按钮的事件。  
+   现在，添加代码来处理<xref:System.Windows.Forms.Control.Click>按钮的事件。  
   
 ## <a name="save-changes-to-the-database"></a>将更改保存到数据库  
  对已进行了任何更改数据只存在于本地数据集直到它们显式保存回数据库。  
@@ -175,15 +175,15 @@ ms.locfileid: "38781665"
   
 ### <a name="to-add-new-rows"></a>若要添加新行  
   
-1.  选择列表对象中的单元格。  
+1. 选择列表对象中的单元格。  
   
-     新行显示在底部的列表中，有一个星号 (**\***) 的新行的第一个单元格中。  
+    新行显示在底部的列表中，有一个星号 (* *\\* * *) 的新行的第一个单元格中。  
   
-2.  在空的行中添加以下信息。  
+2. 在空的行中添加以下信息。  
   
-    |EmployeeID|LastName|FirstName|标题|  
-    |----------------|--------------|---------------|-----------|  
-    |10|Ito|Shu|销售经理|  
+   |EmployeeID|LastName|FirstName|标题|  
+   |----------------|--------------|---------------|-----------|  
+   |10|Ito|Shu|销售经理|  
   
 ### <a name="to-delete-rows"></a>若要删除的行  
   

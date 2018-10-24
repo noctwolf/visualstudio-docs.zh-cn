@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 730064f3557f6ef98579d4cbd79adb451c7c9bdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32116de7bb88fe937980b02e1789830a27ca36b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845870"
 ---
 # <a name="xml-schema-explorer"></a>XML 架构资源管理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,44 +29,44 @@ XML 架构资源管理器与 Microsoft Visual Studio 和 XML 编辑器相集成�
   
  使用 XML 架构资源管理器，您可以执行下列操作：  
   
--   快速了解架构集。  
+- 快速了解架构集。  
   
--   浏览和导航树。  
+- 浏览和导航树。  
   
--   执行关键字搜索和架构特定的搜索。 有关详细信息，请参阅[搜索架构集](../xml-tools/searching-the-schema-set.md)。  
+- 执行关键字搜索和架构特定的搜索。 有关详细信息，请参阅[搜索架构集](../xml-tools/searching-the-schema-set.md)。  
   
--   向图形视图或内容模型视图添加搜索结果  
+- 向图形视图或内容模型视图添加搜索结果  
   
--   按文档顺序、类型或名称对树进行排序。 有关详细信息，请参阅[排序、 筛选和分组](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。  
+- 按文档顺序、类型或名称对树进行排序。 有关详细信息，请参阅[排序、 筛选和分组](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)。  
   
--   打开 XML 编辑器，然后跳到 XSD 文件中的代码位置。 有关详细信息，请参阅[使用 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。  
+- 打开 XML 编辑器，然后跳到 XSD 文件中的代码位置。 有关详细信息，请参阅[使用 XML 编辑器集成](../xml-tools/integration-with-xml-editor.md)。  
   
--   为全局元素生成示例 XML。  
+- 为全局元素生成示例 XML。  
   
- XML 架构资源管理器通过树视图提供架构集的分层视图。 XML 架构资源管理器还提供搜索、筛选、导航和排序功能。 若要访问 XML 架构资源管理器，请执行下列操作之一：  
+  XML 架构资源管理器通过树视图提供架构集的分层视图。 XML 架构资源管理器还提供搜索、筛选、导航和排序功能。 若要访问 XML 架构资源管理器，请执行下列操作之一：  
   
--   如果你位于[起始视图](../xml-tools/start-view.md)，单击**XML 架构资源管理器**链接。  
+- 如果你位于[起始视图](../xml-tools/start-view.md)，单击**XML 架构资源管理器**链接。  
   
--   如果你位于[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)和工作区中有节点，请使用上下文菜单选择 XML 架构资源管理器。  
+- 如果你位于[关系图视图](../xml-tools/graph-view.md)或[内容模型视图](../xml-tools/content-model-view.md)和工作区中有节点，请使用上下文菜单选择 XML 架构资源管理器。  
   
--   您还可以选择 XML 架构 Explorerfrom**视图**菜单。  
+- 您还可以选择 XML 架构 Explorerfrom**视图**菜单。  
   
--   您可以访问 XML 架构 Explorerfrom 具有 Visual Basic XML 文本与.xsd 文件相关联的.vb 文件。 若要查看架构设置在 XML 架构资源管理器中，右键单击 XML 文本中的 XML 节点或导入的 XML 命名空间并选择**在架构资源管理器中显示**命令。 有关详细信息，请参阅[集成的 XML 文本与 XML 架构资源管理器](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。  
+- 您可以访问 XML 架构 Explorerfrom 具有 Visual Basic XML 文本与.xsd 文件相关联的.vb 文件。 若要查看架构设置在 XML 架构资源管理器中，右键单击 XML 文本中的 XML 节点或导入的 XML 命名空间并选择**在架构资源管理器中显示**命令。 有关详细信息，请参阅[集成的 XML 文本与 XML 架构资源管理器](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)。  
   
 ## <a name="tree-view"></a>树视图  
  XML 架构资源管理器以树结构显示预编译的架构集信息。 树结构的组织方式如下：  
   
--   位于顶级的是架构集节点。  
+- 位于顶级的是架构集节点。  
   
--   第二级中包含命名空间。  
+- 第二级中包含命名空间。  
   
--   第三级中包含文件。  
+- 第三级中包含文件。  
   
--   第四级中包含全局节点， 其中可包括元素、组、复杂类型、简单类型、特性、特性组以及 `include`、`import` 和 `redefine` 语句。  
+- 第四级中包含全局节点， 其中可包括元素、组、复杂类型、简单类型、特性、特性组以及 `include`、`import` 和 `redefine` 语句。  
   
- 下面是树结构的示例：  
+  下面是树结构的示例：  
   
- ![XML 架构资源管理器](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
+  ![XML 架构资源管理器](../xml-tools/media/xmlschemaexplorer.gif "XMLSchemaExplorer")  
   
 ## <a name="selection-and-activation"></a>选择和激活  
  若要突出显示并选择节点，请在架构资源管理器中单击一次。  
