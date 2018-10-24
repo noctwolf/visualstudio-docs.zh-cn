@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77bf4e0892b81d276836f7bad45272adf338b48
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c9ee879bec628628a19914a6fbc6236cad3fb5c9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306145"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879111"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49306145"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 可通过运行**性能向导**或通过手动创建会话来创建**性能会话**。 **性能会话**创建之后，**性能会话**会显示在“性能资源管理器”中。  
+  可通过运行**性能向导**或通过手动创建会话来创建**性能会话**。 **性能会话**创建之后，**性能会话**会显示在“性能资源管理器”中。  
   
- 若要查看**性能会话**属性，请在“性能资源管理器”中选择会话名，右键单击它，然后选择“属性”。  
+  若要查看**性能会话**属性，请在“性能资源管理器”中选择会话名，右键单击它，然后选择“属性”。  
   
- 性能会话具有以下属性页：  
+  性能会话具有以下属性页：  
   
 ## <a name="general"></a>常规  
  这些设置使您能够选择分析方法、添加 .NET 对象集合和生存期数据，以及指定默认报告位置和命名约定。  
@@ -59,17 +59,17 @@ ms.locfileid: "49306145"
 ## <a name="sampling"></a>采样  
  通过这些设置可以选择在将采样用作分析方法时的样本事件和采样间隔。 样本事件用于按指定间隔收集分析数据。 例如，如果样本事件是时钟周期数并且采样间隔设置为 10,000,000，则会在每 1 千万个时钟周期之后收集采样数据。 提供了以下四种类型的样本事件：  
   
--   时钟周期数 - 用于占用大量 CPU 的问题  
+- 时钟周期数 - 用于占用大量 CPU 的问题  
   
--   页面错误 - 用于内存相关问题  
+- 页面错误 - 用于内存相关问题  
   
--   系统调用数 - 用于 I/O 相关问题  
+- 系统调用数 - 用于 I/O 相关问题  
   
--   性能计数器 - 用于低级别性能问题  
+- 性能计数器 - 用于低级别性能问题  
   
--   可以基于可用性能计数器指定其他样本事件  
+- 可以基于可用性能计数器指定其他样本事件  
   
- 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)  
+  有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>二进制  
  通过这些设置可以指定是否要将检测的二进制文件重新定位到另一个位置。 例如，如果在分析 My.DLL 并且未选择重新定位检测的二进制文件，则会创建名为 My.Orig.DLL 的 My.DLL 备份副本。 随后，会通过插入探测以收集数据来修改 My.DLL。 如果决定重新定位检测的二进制文件，则原始二进制文件不会重命名，并且检测的二进制文件会复制到指定位置以供在检测过程中使用。  

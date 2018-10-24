@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::GetFunctionObject |Microsoft 文档
+title: IDebugBinder::GetFunctionObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c6c983b07e2e2a7a393fac86999df4cb2b492
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32529033107d01bb8715dad80c3202d7307c931a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099254"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880060"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
-此方法获取[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)用于创建函数参数的对象。  
+此方法获取[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象，用于创建函数的参数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,8 +44,8 @@ int GetFunctionObject(
  [out]返回[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)用于创建函数参数的接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

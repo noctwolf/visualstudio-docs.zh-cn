@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 994bb8dfd047320ac0ea4a0d63260f19a2c3d45c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dfdf517dc1871884d4a3893a976cfcd01b3e6333
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252364"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879524"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>定义自定义建模工具箱项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,25 +66,25 @@ ms.locfileid: "49252364"
 ### <a name="what-the-custom-tool-will-replicate"></a>自定义工具将复制的内容  
  自定义工具会复制源关系图的大部分功能：  
   
--   名称。 当从工具箱中创建项时，必要时会在名称末尾添加数字以避免在同一命名空间出现重复名称。  
+- 名称。 当从工具箱中创建项时，必要时会在名称末尾添加数字以避免在同一命名空间出现重复名称。  
   
--   颜色、大小和形状  
+- 颜色、大小和形状  
   
--   构造型和包配置文件  
+- 构造型和包配置文件  
   
--   属性值，如 Is Abstract  
+- 属性值，如 Is Abstract  
   
--   链接的工作项  
+- 链接的工作项  
   
--   关系的重数和其他属性  
+- 关系的重数和其他属性  
   
--   形状的相对位置。  
+- 形状的相对位置。  
   
- 将不会在自定义工具中保留以下功能：  
+  将不会在自定义工具中保留以下功能：  
   
--   简单形状。 这些形状与模型元素无关，并可以在某些类型的关系图中绘制。  
+- 简单形状。 这些形状与模型元素无关，并可以在某些类型的关系图中绘制。  
   
--   连接器路由。 如果手动传送连接器，则在使用你的工具时不会保留该路由。 一些嵌套形状（如端口）的位置不会相对于其所有者而保留。  
+- 连接器路由。 如果手动传送连接器，则在使用你的工具时不会保留该路由。 一些嵌套形状（如端口）的位置不会相对于其所有者而保留。  
   
 ##  <a name="tbxinfo"></a> 如何定义的自定义工具属性  
  工具箱信息 (**.tbxinfo**) 文件，可以指定工具箱名称、 图标、 工具提示、 选项卡上，并帮助对一个或多个自定义工具的关键字。 为其指定任何名称，例如**MyTools.tbxinfo**。  
@@ -114,19 +114,19 @@ ms.locfileid: "49252364"
   
  每项的值可为：  
   
--   如示例中所示，工具箱图标的值为 `<bmp fileName="…"/>`，而其他项的值为 `<value>string</value>`。  
+- 如示例中所示，工具箱图标的值为 `<bmp fileName="…"/>`，而其他项的值为 `<value>string</value>`。  
   
- \- 或 -  
+  \- 或 -  
   
--   `<resource fileName="Resources.dll"`  
+- `<resource fileName="Resources.dll"`  
   
-     `baseName="Observer.resources" id="Observer.tabname" />`  
+   `baseName="Observer.resources" id="Observer.tabname" />`  
   
-     在这种情况下，你提供一个已编译程序集，其中字符串值已编译为资源。  
+   在这种情况下，你提供一个已编译程序集，其中字符串值已编译为资源。  
   
- 为想要定义的每个工具箱添加一个 `<customToolboxItem>` 节点。  
+  为想要定义的每个工具箱添加一个 `<customToolboxItem>` 节点。  
   
- 中的节点 **.tbxinfo**文件如下所示。 每个节点都有一个默认值。  
+  中的节点 **.tbxinfo**文件如下所示。 每个节点都有一个默认值。  
   
 |节点名称|定义|  
 |---------------|-------------|  
@@ -215,21 +215,21 @@ ms.locfileid: "49252364"
   
 #### <a name="to-provide-versions-of-the-tool-in-more-than-one-language"></a>提供多种语言的工具版本  
   
-1.  创建包含一个或多个自定义工具的 Visual Studio 扩展项目。  
+1. 创建包含一个或多个自定义工具的 Visual Studio 扩展项目。  
   
-     在中 **.tbxinfo**文件，请使用资源文件方法来定义该工具`displayName`，工具箱`tabName`，和工具提示。 创建在其中定义了这些字符串的资源文件，将该文件编译到一个程序集中，并从 tbxinfo 文件中对其进行引用。  
+    在中 **.tbxinfo**文件，请使用资源文件方法来定义该工具`displayName`，工具箱`tabName`，和工具提示。 创建在其中定义了这些字符串的资源文件，将该文件编译到一个程序集中，并从 tbxinfo 文件中对其进行引用。  
   
-2.  创建包含具有其他语言字符串的资源文件的附加程序集。  
+2. 创建包含具有其他语言字符串的资源文件的附加程序集。  
   
-3.  将每个附加程序集放在名称为对应语言区域性代码的文件夹中。 例如，名为的文件夹中将法语版本的程序集**fr**。  
+3. 将每个附加程序集放在名称为对应语言区域性代码的文件夹中。 例如，名为的文件夹中将法语版本的程序集**fr**。  
   
-4.  应使用非特定区域性代码（通常为两个字母），而不应使用特定区域性代码（例如 `fr-CA`）。 有关区域性代码的详细信息，请参阅[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，提供区域性代码的完整列表。  
+4. 应使用非特定区域性代码（通常为两个字母），而不应使用特定区域性代码（例如 `fr-CA`）。 有关区域性代码的详细信息，请参阅[CultureInfo.GetCultures 方法](http://go.microsoft.com/fwlink/?LinkId=160782)，提供区域性代码的完整列表。  
   
-5.  生成 Visual Studio 扩展并发布。  
+5. 生成 Visual Studio 扩展并发布。  
   
-6.  在另一台计算机上安装该扩展后，将自动加载用户本地区域性的资源文件的版本。 如果尚未提供用户区域性的版本，则将使用默认资源。  
+6. 在另一台计算机上安装该扩展后，将自动加载用户本地区域性的资源文件的版本。 如果尚未提供用户区域性的版本，则将使用默认资源。  
   
- 不能使用此方法来安装不同版本的原型关系图。 在每次安装中，元素和连接器的名称都是相同的。  
+   不能使用此方法来安装不同版本的原型关系图。 在每次安装中，元素和连接器的名称都是相同的。  
   
 ## <a name="other-toolbox-operations"></a>其他工具箱操作  
  通常，在 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 中，可以通过重命名工具、将工具移到不同的工具箱选项卡以及删除工具来个性化工具箱。 但这些更改不会如本主题中描述的创建步骤一样可以保存自定义建模工具。 重新启动 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 时，会重新显示自定义工具及其定义的名称和工具箱位置。  

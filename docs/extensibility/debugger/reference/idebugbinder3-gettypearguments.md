@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArguments |Microsoft 文档
+title: IDebugBinder3::GetTypeArguments |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f5e06b51cfea731d94cd0eb53d91b4dbdf6b471
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6ed4e1863313dae173d6737970765ca3d5f0b0b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879442"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-此方法检索的与此对象关联的自变量类型的列表。  
+此方法检索与此对象关联的参数类型的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,23 +47,23 @@ int GetTypeArguments(
   
 #### <a name="parameters"></a>参数  
  `skip`  
- [in]获取自变量类型前要跳过的字段的数目。  
+ [in]若要获取参数类型之前跳过的字段数。  
   
  `count`  
- [in]要返回的自变量字段数 (还指定的大小`ppFields`数组)。  
+ [in]要返回的参数字段数 (还指定的大小`ppFields`数组)。  
   
  `ppFields`  
- [在中，out]将此方法返回时填写的字段的数组。  
+ [in、 out]会在此方法返回填充的字段的数组。  
   
  `pFetched`  
- [out]\(可选)实际返回的字段类型的自变量的数量。  
+ [out]\(可选)实际返回的字段类型的参数的数量。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 可以通过事先获取自变量类型的数目[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。  
+ 自变量类型的数即可获得事先[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)
