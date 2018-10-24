@@ -20,12 +20,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1edc6e7d66e8b371f38e16052ba26fa61287e398
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859273"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,66 +82,66 @@ ms.locfileid: "49268328"
 ### <a name="regenerating-the-code"></a>重新生成代码  
  在下列任何一种情况下，将执行模板，同时生成附属文件：  
   
--   编辑该模板，然后将焦点更改到其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口。  
+- 编辑该模板，然后将焦点更改到其他 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 窗口。  
   
--   保存模板。  
+- 保存模板。  
   
--   单击**转换所有模板**中**生成**菜单。 这将转换 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的所有模板。  
+- 单击**转换所有模板**中**生成**菜单。 这将转换 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中的所有模板。  
   
--   在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。  
+- 在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。  
   
- 还可以设置 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目，以便在模板读取的数据文件更改时执行这些模板。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。  
+  还可以设置 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目，以便在模板读取的数据文件更改时执行这些模板。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。  
   
 ## <a name="generating-variable-text"></a>生成可变文本  
  通过文本模板，可以使用程序代码更改已生成文件的内容。  
   
 #### <a name="to-generate-text-by-using-program-code"></a>使用程序代码生成文本  
   
-1.  更改 `.tt` 文件的内容：  
+1. 更改 `.tt` 文件的内容：  
   
-    ```csharp  
-    <#@ template hostspecific="false" language="C#" #>  
-    <#@ output extension=".txt" #>  
-    <#int top = 10;  
+   ```csharp  
+   <#@ template hostspecific="false" language="C#" #>  
+   <#@ output extension=".txt" #>  
+   <#int top = 10;  
   
-    for (int i = 0; i<=top; i++)   
-    { #>  
+   for (int i = 0; i<=top; i++)   
+   { #>  
+      The square of <#= i #> is <#= i*i #>  
+   <# } #>  
+   ```  
+  
+   ```vb  
+   <#@ template hostspecific="false" language="VB" #>  
+   <#@ output extension=".txt" #>  
+   <#Dim top As Integer = 10  
+  
+   For i As Integer = 0 To top  
+   #>  
        The square of <#= i #> is <#= i*i #>  
-    <# } #>  
-    ```  
+   <#  
+   Next  
+   #>  
   
-    ```vb  
-    <#@ template hostspecific="false" language="VB" #>  
-    <#@ output extension=".txt" #>  
-    <#Dim top As Integer = 10  
+   ```  
   
-    For i As Integer = 0 To top  
-    #>  
-        The square of <#= i #> is <#= i*i #>  
-    <#  
-    Next  
-    #>  
+2. 保存 .tt 文件，然后重新检查已生成的 .txt 文件。 该文件列出数字 0 到 10 的平方。  
   
-    ```  
+   请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
   
-2.  保存 .tt 文件，然后重新检查已生成的 .txt 文件。 该文件列出数字 0 到 10 的平方。  
-  
- 请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。  
-  
- 如果在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。  
+   如果在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。  
   
 ## <a name="debugging-a-design-time-t4-text-template"></a>调试设计时 T4 文本模板  
  创建文本模板：  
   
--   将 `debug="true"` 插入 `template` 指令。 例如：  
+- 将 `debug="true"` 插入 `template` 指令。 例如：  
   
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`  
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`  
   
--   在模板中使用为普通代码设置断点的相同方式设置断点。  
+- 在模板中使用为普通代码设置断点的相同方式设置断点。  
   
--   选择**调试 T4 模板**从解决方案资源管理器中的文本模板文件的快捷菜单。  
+- 选择**调试 T4 模板**从解决方案资源管理器中的文本模板文件的快捷菜单。  
   
- 该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。  
+  该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。  
   
 > [!TIP]
 >  `debug="true"` 使生成的代码更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。  
@@ -208,13 +208,13 @@ ms.locfileid: "49268328"
 ### <a name="structuring-text-templates"></a>结构化文本模板  
  作为一种良好做法，我们往往将模板代码分成两部分：  
   
--   配置或数据收集部分，它在变量中设置值，但不包含文本块。 在上一个示例中，此部分是 `properties` 的初始化。  
+- 配置或数据收集部分，它在变量中设置值，但不包含文本块。 在上一个示例中，此部分是 `properties` 的初始化。  
   
-     此部分有时称为“模型”部分，因为它会构造一个存储内模型，并且通常读取模型文件。  
+   此部分有时称为“模型”部分，因为它会构造一个存储内模型，并且通常读取模型文件。  
   
--   文本生成部分（示例中的 `foreach(...){...}`），它使用变量的值。  
+- 文本生成部分（示例中的 `foreach(...){...}`），它使用变量的值。  
   
- 虽然这不是必要的分离，但是通过这种方式可以降低包括文本的部分的复杂性，从而更便于读取模板。  
+  虽然这不是必要的分离，但是通过这种方式可以降低包括文本的部分的复杂性，从而更便于读取模板。  
   
 ## <a name="reading-files-or-other-sources"></a>读取文件或其他源  
  若要访问模型文件或数据库，模板代码可以使用诸如 System.XML 之类的程序集。 若要获取对这些程序集的访问权限，必须插入如下指令：  

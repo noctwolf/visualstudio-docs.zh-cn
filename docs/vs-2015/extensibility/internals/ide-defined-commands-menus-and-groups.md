@@ -17,12 +17,12 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0707544f739f934b49c6092bcb4c1c61975028ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cebe468e6325c73802ec073fc250a598f897c2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848509"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义的命令、菜单和组
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49246670"
 ## <a name="finding-environment-defined-commands"></a>查找环境定义的命令  
  一组四个.vsct 文件中定义的环境命令：  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- 这些文件位于 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和组可用于你的 VSPackage 的命令表配置 (.vsct) 文件中作为容器菜单、 组和命令的 Guid。  
+  这些文件位于 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和组可用于你的 VSPackage 的命令表配置 (.vsct) 文件中作为容器菜单、 组和命令的 Guid。  
   
 ## <a name="in-this-section"></a>本节内容  
  [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  

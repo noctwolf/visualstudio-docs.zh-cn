@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 085b120974ee23d0d7e3712cdbb0a8f7f7021e83
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 0cf34885ee715a5685e4c2ced8b5a116e5c33e8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37056852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857642"
 ---
 # <a name="error-kerberos-authentication-failed"></a>错误：Kerberos 身份验证失败
 当尝试进行远程调试时，可能会收到以下错误消息：  
@@ -34,15 +34,15 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
  Kerberos 身份验证在下列条件下不可用：  
   
--   目标计算机或调试器主机位于工作组中，而不是位于域中  
+- 目标计算机或调试器主机位于工作组中，而不是位于域中  
   
-     \- 或 -  
+   \- 或 -  
   
--   域控制器上已禁用 Kerberos。  
+- 域控制器上已禁用 Kerberos。  
   
- 如果 Kerberos 身份验证不可用，请更改用于运行 Visual Studio 远程调试监视器的帐户。 有关过程，请参阅[错误： 目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。  
+  如果 Kerberos 身份验证不可用，请更改用于运行 Visual Studio 远程调试监视器的帐户。 有关过程，请参阅[错误： 目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md)。  
   
- 如果这两台计算机都连接到同一域，而您仍然收到此消息，请验证目标计算机上的 DNS 是否正确解析了调试器主机的名称。 请参见下面的步骤。  
+  如果这两台计算机都连接到同一域，而您仍然收到此消息，请验证目标计算机上的 DNS 是否正确解析了调试器主机的名称。 请参见下面的步骤。  
   
 ### <a name="to-verify-that-dns-on-the-target-computer-is-correctly-resolving-the-debugger-host-computer-name"></a>验证目标计算机上的 DNS 是否正确解析了调试器主机名称  
   
@@ -62,4 +62,4 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
   
 ## <a name="see-also"></a>请参阅  
  [远程调试错误和故障排除](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

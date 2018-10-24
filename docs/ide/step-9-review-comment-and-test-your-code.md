@@ -11,41 +11,41 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e6043142fa58cd5991815ebc107d425cc36950
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: de7ca2509c8489c7a9d541135401949ef3e4b20e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747989"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856023"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：评审代码、为代码添加注释和测试代码
 接下来，将向代码添加注释。 注释是一个说明，它不会更改程序的行为。 它使阅读你代码的人更容易理解代码的行为。 在代码中添加注释是一个好习惯。 在 Visual C# 中，可用两个正斜杠 (//) 将一行标记为一个注释。 在 Visual Basic 中，可用一个单引号 (') 将一行标记为一个注释。 添加注释后即可测试您的程序。 当你处理你的项目时，最好经常运行和测试代码，以便你可在代码变复杂之前尽早捕获和修复任何问题。 这称为“迭代测试”。
 
  您刚才构建了可用的程序，虽然尚未完成，但已能够下载图片。 在向代码添加注释并测试代码之前，请先花点时间了解一些代码概念，因为你将会频繁使用这些概念：
 
--   双击“Windows 窗体设计器”中的“显示图片”按钮后，IDE 会自动将一个方法添加到程序的代码中。
+- 双击“Windows 窗体设计器”中的“显示图片”按钮后，IDE 会自动将一个方法添加到程序的代码中。
 
--   方法是指组织代码的方式：它指明如何将代码组合在一起。
+- 方法是指组织代码的方式：它指明如何将代码组合在一起。
 
--   大多数情况下，一个方法会按特定顺序执行少量操作，如 `showButton_Click()` 方法会显示对话框，然后加载图片。
+- 大多数情况下，一个方法会按特定顺序执行少量操作，如 `showButton_Click()` 方法会显示对话框，然后加载图片。
 
--   方法由代码语句或代码行组成。 将方法视为一种将代码语句捆绑在一起的方式。
+- 方法由代码语句或代码行组成。 将方法视为一种将代码语句捆绑在一起的方式。
 
--   在执行或调用某个方法时，会按顺序依次执行该方法中的各个语句（从第一个语句开始）。
+- 在执行或调用某个方法时，会按顺序依次执行该方法中的各个语句（从第一个语句开始）。
 
-     下面是一个语句示例。
+   下面是一个语句示例。
 
-    ```csharp
-    pictureBox1.Load(openFileDialog1.FileName);
-    ```
+  ```csharp
+  pictureBox1.Load(openFileDialog1.FileName);
+  ```
 
-    ```vb
-    pictureBox1.Load(openFileDialog1.FileName)
-    ```
+  ```vb
+  pictureBox1.Load(openFileDialog1.FileName)
+  ```
 
-     语句用于指示程序执行操作。 在 Visual C# 中，语句始终以分号结束。 在 Visual Basic 中，行的结尾即为语句的结尾。 （Visual Basic 中不需要使用分号。）前面的语句会告知 <xref:System.Windows.Forms.PictureBox> 控件加载用户使用“OpenFileDialog”组件选择的文件。
+   语句用于指示程序执行操作。 在 Visual C# 中，语句始终以分号结束。 在 Visual Basic 中，行的结尾即为语句的结尾。 （Visual Basic 中不需要使用分号。）前面的语句会告知 <xref:System.Windows.Forms.PictureBox> 控件加载用户使用“OpenFileDialog”组件选择的文件。
 
- ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教程 1：在 C# 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+  ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教程 1：在 C# 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-add-comments"></a>添加注释
 
@@ -55,7 +55,7 @@ ms.locfileid: "34747989"
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
     > [!NOTE]
-    >  “showButton”按钮的 <xref:System.Windows.Forms.Control.Click> 事件处理程序现已完成并可正常使用。 您已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。
+    >  “showButton”按钮的 <xref:System.Windows.Forms.Control.Click> 事件处理程序现已完成并可正常使用。 你已开始编写代码（从 `if` 语句开始）。 `if` 语句用于告知程序“检查此项，如果为 true，请执行这些操作。” 在此示例中，告知程序打开“打开文件”对话框，如果用户选择一个文件并选择“确定”按钮，则会在 PictureBox 中加载此文件。
 
     > [!TIP]
     >  IDE 可让你轻松地编写代码，而代码片段 是 IDE 为此采取的方式之一。 代码片段是一类快捷方式，它可扩展到一个小的代码块。

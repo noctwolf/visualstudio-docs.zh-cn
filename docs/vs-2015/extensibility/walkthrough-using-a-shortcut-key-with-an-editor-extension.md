@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c239206f78c84eafcf96ed936231731f7f2d4aaa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848678"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：在编辑器扩展中使用快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49232409"
   
 ## <a name="creating-a-managed-extensibility-framework-mef-project"></a>创建 Managed Extensibility Framework (MEF) 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `KeyBindingTest`。  
+1. 创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `KeyBindingTest`。  
   
-2.  编辑器文本修饰项模板添加到项目并将其命名`KeyBindingTest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+2. 编辑器文本修饰项模板添加到项目并将其命名`KeyBindingTest`。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  添加以下引用，并设置**CopyLocal**到`false`:  
+3. 添加以下引用，并设置**CopyLocal**到`false`:  
   
-     Microsoft.VisualStudio.Editor  
+    Microsoft.VisualStudio.Editor  
   
-     Microsoft.VisualStudio.OLE.Interop  
+    Microsoft.VisualStudio.OLE.Interop  
   
-     Microsoft.visualstudio.shell.14.0 的引用  
+    Microsoft.visualstudio.shell.14.0 的引用  
   
-     Microsoft.VisualStudio.TextManager.Interop  
+    Microsoft.VisualStudio.TextManager.Interop  
   
- 在 KeyBindingTest 类文件中，更改到 PurpleCornerBox 的类名。 使用左边距中显示灯泡进行其他相应的更改。 在构造函数，从修饰层的名称更改**KeyBindingTest**到**PurpleCornerBox**:  
+   在 KeyBindingTest 类文件中，更改到 PurpleCornerBox 的类名。 使用左边距中显示灯泡进行其他相应的更改。 在构造函数，从修饰层的名称更改**KeyBindingTest**到**PurpleCornerBox**:  
   
 ```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  

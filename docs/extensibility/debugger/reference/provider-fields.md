@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FIELDS |Microsoft 文档
+title: PROVIDER_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: deda42120dc98e0222910c48b0faf574a57f03dd
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3d71ab824017d054b8543770b7eaf1efe2856867
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860339"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 指定与程序提供程序关联的属性。  
@@ -50,9 +50,9 @@ public enum enum_PROVIDER_FIELDS {
  `fIsDebuggerPresent`字段才有效。  
   
 ## <a name="remarks"></a>备注  
- 中返回这些值`Fields`的成员[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)结构以指示已显式填充的结构的字段。  
+ 这些值中返回`Fields`的成员[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)结构，以指示已显式填充结构的哪些字段。  
   
- 这些值可以与按位组合`OR`。  
+ 可以组合这些值的按位`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -61,6 +61,6 @@ public enum enum_PROVIDER_FIELDS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)

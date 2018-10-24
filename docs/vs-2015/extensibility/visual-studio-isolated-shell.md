@@ -19,12 +19,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e28a411ff5ef70cfd32e846edb0b70caa82c4764
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 15d8d4cfb1f3a9067d3fc18933a508ecf60794e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849042"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio 独立 Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,17 +44,17 @@ Visual Studio 独立 shell，可创建独立的应用程序可以运行的同时
 ## <a name="working-with-the-isolated-shell"></a>使用独立 shell  
  Visual Studio 独立 shell 应用程序具有对 Visual Studio 服务的完全访问权限，并支持特殊的自定义和品牌。 有几种方法可以自定义独立的 shell 应用程序：  
   
--   Vspackage 和 Managed Extensibility Framework (MEF) 组件部分可用于扩展独立的 shell 的应用程序，就像任何其他 Visual Studio 扩展中使用它们。 有关详细信息，请参阅[扩展独立 Shell](../extensibility/extending-the-isolated-shell.md)。  
+- Vspackage 和 Managed Extensibility Framework (MEF) 组件部分可用于扩展独立的 shell 的应用程序，就像任何其他 Visual Studio 扩展中使用它们。 有关详细信息，请参阅[扩展独立 Shell](../extensibility/extending-the-isolated-shell.md)。  
   
--   若要使 Visual Studio 功能和菜单命令组可用或不可用，请更新应用程序的用户界面 (UI) 项目中的.vsct 文件。  
+- 若要使 Visual Studio 功能和菜单命令组可用或不可用，请更新应用程序的用户界面 (UI) 项目中的.vsct 文件。  
   
--   若要删除**选项**页面或应用程序，其他 Visual Studio shell 组件更新.pkgundef 文件的应用程序。  
+- 若要删除**选项**页面或应用程序，其他 Visual Studio shell 组件更新.pkgundef 文件的应用程序。  
   
--   若要修改其他方面的外观或行为的 shell，请更新应用程序的.pkgdef 文件。  
+- 若要修改其他方面的外观或行为的 shell，请更新应用程序的.pkgdef 文件。  
   
--   启动应用程序时，还可以指定外壳程序的某些方面。 若要执行此操作，更新到 appenvstub.dll 的启动入口点调用中的参数。  
+- 启动应用程序时，还可以指定外壳程序的某些方面。 若要执行此操作，更新到 appenvstub.dll 的启动入口点调用中的参数。  
   
- 有关可以自定义的不同元素的详细信息，请参阅[独立 Shell 的元素](../extensibility/elements-of-the-isolated-shell.md)。  
+  有关可以自定义的不同元素的详细信息，请参阅[独立 Shell 的元素](../extensibility/elements-of-the-isolated-shell.md)。  
   
 ## <a name="standard-features-of-the-isolated-shell"></a>标准功能的独立 Shell  
  以下功能是对所有版本的 Visual Studio 标准。  

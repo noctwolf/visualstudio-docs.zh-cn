@@ -12,26 +12,26 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8850671c3c6e7fa93d4734c47c8052451ad74b4f
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 32a2923342fd62428095babdaecc5bd9c5cac06e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850056"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>在 IDE 中启动生成
 自定义项目系统必须使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 启动生成。 本文介绍这一要求的原因并概述具体过程。  
-  
+
 ## <a name="parallel-builds-and-threads"></a>并行生成和线程  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允许需要中介的并行生成访问常见资源。 项目系统可异步地运行生成，但该系统不得从提供给生成管理器的回调中调用生成函数。  
-  
+
  如果项目系统修改环境变量，它必须将生成的 NodeAffinity 设置为 OutOfProc。 此要求意味着无法使用主机对象，因为主机对象需要进程内节点。  
-  
+
 ## <a name="use-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor  
  下面的代码概述了项目系统可用于启动生成的方法：  
-  
+
 ```csharp
-  
+
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  
     // Get the accessor from the IServiceProvider interface for the   
@@ -118,5 +118,4 @@ public bool Build(Project project, bool isDesignTimeBuild)
          }  
      }  
 }  
-  
 ```

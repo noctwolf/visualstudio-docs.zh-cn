@@ -13,12 +13,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bda4e23fc98210ddf35bd81efee6ca41c2d945b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70950e616a4ce0cc2e355205b65b5da7ec7ce88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848652"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 的用户体验基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -168,15 +168,15 @@ ms.locfileid: "49303301"
 ### <a name="hyperlink-anti-patterns"></a>超链接反模式  
  下面的示例包含两个反模式。  
   
-1.  打开红色悬停时的前景色意味着未使用正确的共享的颜色从字体服务。  
+1. 打开红色悬停时的前景色意味着未使用正确的共享的颜色从字体服务。  
   
-2.  "了解详情"不是到概念主题的链接的相应文本。 用户的目标是不了解它是了解他们选择的后果。  
+2. "了解详情"不是到概念主题的链接的相应文本。 用户的目标是不了解它是了解他们选择的后果。  
   
- ![超链接反&#45;模式](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
+   ![超链接反&#45;模式](../../extensibility/ux-guidelines/media/0102-j-hyperlinkincorrect.png "0102 j_HyperlinkIncorrect")  
   
- **忽略颜色服务，并使用"了解更多"的超链接是 Visual Studio 反模式。**  
+   **忽略颜色服务，并使用"了解更多"的超链接是 Visual Studio 反模式。**  
   
- **更好的解决方案：** 会带来的问题，用户会询问单击的链接。  
+   **更好的解决方案：** 会带来的问题，用户会询问单击的链接。  
   
 -   Windows Azure 服务如何工作？  
   

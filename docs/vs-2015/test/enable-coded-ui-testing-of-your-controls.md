@@ -13,12 +13,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9883b266e74db115c57f0a7cc245889ed59a599d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5ab2ca3e0f7d8f7006177f89c6850ce9882681a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848535"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>启用控件的编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49247866"
   
  **在本主题中：**  
   
-1.  [通过实现可访问性来支持录制和播放以及属性验证](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
+1. [通过实现可访问性来支持录制和播放以及属性验证](../test/enable-coded-ui-testing-of-your-controls.md#recordandplayback)  
   
-2.  [通过实现属性提供程序来支持自定义属性验证](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
+2. [通过实现属性提供程序来支持自定义属性验证](../test/enable-coded-ui-testing-of-your-controls.md#customproprties)  
   
-3.  [通过实现用于访问自定义属性的类来支持代码生成](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
+3. [通过实现用于访问自定义属性的类来支持代码生成](../test/enable-coded-ui-testing-of-your-controls.md#codegeneration)  
   
-4.  [通过实现操作筛选器来支持意向感知操作](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
+4. [通过实现操作筛选器来支持意向感知操作](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)  
   
- ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
+   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
 ##  <a name="recordandplayback"></a>通过实现可访问性来支持录制和播放以及属性验证  
  编码的 UI 测试生成器可捕获与它在录制期间所遇到的控件有关的信息，然后生成代码以重播该会话。 如果控件不支持辅助功能，则编码的 UI 测试生成器将使用屏幕坐标来捕获操作（例如，鼠标单击）。 播放测试时，生成的代码将在同一屏幕坐标释放这些鼠标单击操作。 在播放测试时，如果控件出现在屏幕上的其他位置，则生成的代码将无法对控件执行该操作。 如果在不同的屏幕配置下、在不同的环境中，或者在 UI 布局发生更改之后播放测试，则这可能会导致失败。  

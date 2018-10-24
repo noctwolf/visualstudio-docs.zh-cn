@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d343139a23453af12555b4ffbec8e3de7e2a827
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d2b3aed9e2504011a61fe13acdf4a836cb41f8df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859663"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>使用规则集指定要运行的 C++ 规则
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "49230865"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>若要从单个的现有规则集创建自定义规则  
   
-1.  在解决方案资源管理器，打开项目的快捷菜单，然后选择**属性**。  
+1. 在解决方案资源管理器，打开项目的快捷菜单，然后选择**属性**。  
   
-2.  上**属性**选项卡上，选择**代码分析**。  
+2. 上**属性**选项卡上，选择**代码分析**。  
   
-3.  在中**规则集**下拉列表中，执行下列任一操作：  
+3. 在中**规则集**下拉列表中，执行下列任一操作：  
   
-    -   选择要自定义的规则集。  
+   - 选择要自定义的规则集。  
   
      \- 或 -  
   
-    -   选择**\<浏览...>** 指定的现有规则集不在列表中。  
+   - 选择**\<浏览...>** 指定的现有规则集不在列表中。  
   
-4.  选择**打开**若要在规则集编辑器中显示的规则。  
+4. 选择**打开**若要在规则集编辑器中显示的规则。  
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>若要修改的规则将设置规则集编辑器  
   

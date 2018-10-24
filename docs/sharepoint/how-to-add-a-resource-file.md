@@ -18,32 +18,32 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a2a89a0c838a91559c6066bea341924e5ca627e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 0091054c0c0d2cfb7f19f2ca46839cfdcf47832b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861184"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何： 添加资源文件
   解决方案节点并在解决方案资源管理器功能节点的快捷菜单上是用于将资源文件添加的命令。 有关详细信息，请参阅[本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)。  
   
 ### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>若要将全局资源文件添加到 SharePoint 解决方案  
   
-1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，打开 SharePoint 解决方案。  
+1. 在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，打开 SharePoint 解决方案。  
   
-2.  在中**解决方案资源管理器**，选择 SharePoint 项目节点，，然后，在菜单栏上选择**项目** > **添加新项**。  
+2. 在中**解决方案资源管理器**，选择 SharePoint 项目节点，，然后，在菜单栏上选择**项目** > **添加新项**。  
   
-3.  在中**添加新项**对话框框中，选择**全局资源文件**模板，然后选择**添加**按钮。  
+3. 在中**添加新项**对话框框中，选择**全局资源文件**模板，然后选择**添加**按钮。  
   
-    > [!NOTE]  
-    >  仅当选择 SharePoint 项目项时，将出现全局资源文件项目项模板。  
+   > [!NOTE]  
+   >  仅当选择 SharePoint 项目项时，将出现全局资源文件项目项模板。  
   
-4.  在中**添加资源**对话框框中，选择资源文件，例如英语 （美国） 区域性。  
+4. 在中**添加资源**对话框框中，选择资源文件，例如英语 （美国） 区域性。  
   
-     此步骤将全局资源文件添加到你的解决方案中的格式，Resource_x_**。**_区域性_**。** resx，如*Resource1.en US.resx*。  
+    此步骤将全局资源文件添加到你的解决方案中的格式，Resource_x_**。**<em>区域性</em><strong>。</strong>resx，如*Resource1.en US.resx*。  
   
-5.  当**资源编辑器**中打开[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，将资源添加到资源文件。  
+5. 当**资源编辑器**中打开[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，将资源添加到资源文件。  
   
 ### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>若要将功能资源文件添加到 SharePoint 功能  
   

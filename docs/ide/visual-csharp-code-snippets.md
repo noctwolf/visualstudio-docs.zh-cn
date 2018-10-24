@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9d494b1fb6465c1cf246f6becb9b812115e6076
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: feec485f752ac13b43310e4afd97bdfaac93ee51
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849159"
 ---
 # <a name="c-code-snippets"></a>C# 代码片段
 
@@ -34,7 +34,7 @@ ms.locfileid: "32425509"
 Visual Studio for C# 默认包含以下代码片段。
 
 |名称（或快捷方式）|描述|要插入代码片段的有效位置|
-|--------------------------|-----------------|---------------------------------------|
+| - |-----------------| - |
 |#if|创建 [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) 指令和 [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif) 指令。|任何位置。|
 |#region|创建 [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) 指令和 [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion) 指令。|任何位置。|
 |~|创建包含类的[终结期](/dotnet/csharp/programming-guide/classes-and-structs/destructors)（析构函数）。|在类中。|
@@ -52,7 +52,7 @@ Visual Studio for C# 默认包含以下代码片段。
 |foreach|创建 [foreach](/dotnet/csharp/language-reference/keywords/foreach-in) 循环。|在方法、索引器、属性访问器或事件访问器内。|
 |forr|创建 [for](/dotnet/csharp/language-reference/keywords/for) 循环，每次迭代后会减少循环变量。|在方法、索引器、属性访问器或事件访问器内。|
 |if|创建 [if](/dotnet/csharp/language-reference/keywords/if-else) 块。|在方法、索引器、属性访问器或事件访问器内。|
-|indexer|创建索引器声明。|在类或结构中。|
+|Indexer — 索引器|创建索引器声明。|在类或结构中。|
 |interface|创建[接口](/dotnet/csharp/language-reference/keywords/interface)声明。|在命名空间（包括全局命名空间）、类或结构中。|
 |invoke|创建安全调用事件的块。|在方法、索引器、属性访问器或事件访问器内。|
 |iterator|创建迭代器。|在类或结构中。|

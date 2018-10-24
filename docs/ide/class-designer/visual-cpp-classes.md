@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af890c62cc830693cec16494eac71176743cadd
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 6d2ff2b6660b7ef7530d3a37d251904fa54b5ce0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31927002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856192"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>类设计器中的 Visual C++ 类
 
@@ -131,16 +131,18 @@ typedef struct
 
 类设计器支持直观显示模板类。 支持嵌套声明。 下表列出了一些典型声明。
 
-|Code 元素|类设计器视图|
-|------------------|-------------------------|
-|`template <class T>`<br /><br /> `class A {};`|`A<T>`<br /><br /> 模板类|
-|`template <class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|
-|`template <class T, int i>`<br /><br /> `class A {};`|`A<T, i>`<br /><br /> 模板类|
-|`template <class T, template <class K> class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|
+
+| Code 元素 | 类设计器视图 |
+| - | - |
+| `template <class T>`<br /><br /> `class A {};` | `A<T>`<br /><br /> 模板类 |
+| `template <class T, class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 模板类 |
+| `template <class T, int i>`<br /><br /> `class A {};` | `A<T, i>`<br /><br /> 模板类 |
+| `template <class T, template <class K> class U>`<br /><br /> `class A {};` | `A<T, U>`<br /><br /> 模板类 |
+
 下表列出了一些分部专用化示例。
 
 |代码元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`template<class T, class U>`<br /><br /> `class A {};`|`A<T, U>`<br /><br /> 模板类|
 |`template<class T>`<br /><br /> `class A<T, T> {};`|`A<T, T>`<br /><br /> 模板类|
 |`template <class T>`<br /><br /> `class A<T, int> {};`|`A<T, int>`<br /><br /> 模板类|
@@ -149,13 +151,13 @@ typedef struct
 下表列出了一些分部专用化继承示例。
 
 |代码元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> 模板类<br /><br /> `B`<br /><br /> 类<br /><br /> （指向类 A）<br /><br /> `C`<br /><br /> 类<br /><br /> （指向类 A）|
 
 下表列出了一些分部专用化模板函数示例。
 
 |代码元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U>（+ 1 重载）|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> 模板类<br /><br /> `B<T2>`<br /><br /> 模板类<br /><br /> （B 包含在类 A 中的“嵌套类型”下）|
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> 类<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> 模板类|
@@ -163,13 +165,13 @@ typedef struct
 下表列出了一些模板继承示例。
 
 |Code 元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> 类<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> 类<br /><br /> （B 包含在类 C 中的“嵌套类型”下）<br /><br /> `C<T>`<br /><br /> 模板类|
 
 下表列出了一些规范专用化类连接示例。
 
 |代码元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> 类<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> 类<br /><br /> `C<T>`<br /><br /> 模板类<br /><br /> `D`<br /><br /> 类<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
