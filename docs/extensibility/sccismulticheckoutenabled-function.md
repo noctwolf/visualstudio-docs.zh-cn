@@ -1,5 +1,5 @@
 ---
-title: SccIsMultiCheckoutEnabled 函数 |Microsoft 文档
+title: SccIsMultiCheckoutEnabled 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af7102a049cd3db072506cbf492799908196df32
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e4a71f839c2129bcfb699188dec09b02b18d4cd1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920113"
 ---
 # <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函数
 此函数检查源代码管理插件是否允许多次签出文件。  
@@ -36,21 +36,21 @@ SCCRTN SccIsMultiCheckoutEnabled(
   
 #### <a name="parameters"></a>参数  
  pContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  pbMultiCheckout  
- [out]指定是否为此项目 （非零方法，支持多个签出） 启用多重签出。  
+ [out]指定是否为此项目 （非零值表示，支持多个签出） 启用多个签出。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|检查成功。|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特定的失败。|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特定故障。|  
   
 ## <a name="remarks"></a>备注  
- IDE 将使两个检查以确定是否文件可以签同时由多个用户。 首先，源控制系统必须支持多重签出。 源代码管理插件可以指定此功能在初始化期间通过指定`SCC_CAP_MULTICHECKOUT`。 此后，作为第二个检查，IDE 调用此函数可确定当前的项目支持多重签出。 如果所选项目支持多重签出，则插件将返回成功代码，并将设置`pbMultiCheckout`不为零 (`TRUE`) 或`FALSE`。  
+ IDE 将使两个检查，以确定是否文件可以签出同时由多个用户。 首先，源代码管理系统必须支持多个签出。 源代码管理插件可以指定此功能在初始化期间通过指定`SCC_CAP_MULTICHECKOUT`。 此后，作为第二个检查中，IDE 会调用此函数可确定当前的项目支持多个签出。 如果所选项目支持多个签出，该插件返回一个成功的代码，并设置`pbMultiCheckout`不为零 (`TRUE`) 或`FALSE`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

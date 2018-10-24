@@ -29,12 +29,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d1fb044d2529e2349e7c98e810adbfe62c7c654
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1702a2b25bd0489814473f3ae2fc0073dab8497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911627"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,21 +65,21 @@ ms.locfileid: "49218811"
   
  可以通过以下方式排列窗口：  
   
--   将文档窗口固定到选项卡井左侧。  
+- 将文档窗口固定到选项卡井左侧。  
   
--   将窗口以选项卡形式停靠到编辑框。  
+- 将窗口以选项卡形式停靠到编辑框。  
   
--   将工具窗口停靠到 IDE 中的框架边缘。  
+- 将工具窗口停靠到 IDE 中的框架边缘。  
   
--   在 IDE 的上方或外部浮动文档窗口或工具窗口。  
+- 在 IDE 的上方或外部浮动文档窗口或工具窗口。  
   
--   沿 IDE 的边缘隐藏工具窗口。  
+- 沿 IDE 的边缘隐藏工具窗口。  
   
--   在不同监视器上显示窗口。  
+- 在不同监视器上显示窗口。  
   
--   窗口位置重置为默认布局或已保存的自定义布局。  
+- 窗口位置重置为默认布局或已保存的自定义布局。  
   
- 可以通过拖动、使用 **“窗口”** 菜单上的命令或右键单击待排列窗口的标题栏，来排列工具窗口和文档窗口。  
+  可以通过拖动、使用 **“窗口”** 菜单上的命令或右键单击待排列窗口的标题栏，来排列工具窗口和文档窗口。  
   
 > [!NOTE]
 >  以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  

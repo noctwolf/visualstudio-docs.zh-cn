@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d169e4b53850fc4c63a838fdd8936c2f3d4820be
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 533cbf2e6c971da709818343089d13a78d99a997
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298540"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912261"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“消息”选项卡
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,18 +38,18 @@ ms.locfileid: "49298540"
  **消息组**  
  选择消息组进行查看。 可用组包括：  
   
--   使用代码大于或等于 WM_USER WM_USER:  
+- 使用代码大于或等于 WM_USER WM_USER:  
   
--   注册： 注册**RegisterWindowMessage**调用  
+- 注册： 注册**RegisterWindowMessage**调用  
   
--   未知： 范围 0 到 (WM_USER – 1) 中的未知的消息  
+- 未知： 范围 0 到 (WM_USER – 1) 中的未知的消息  
   
- 请注意，这些**消息组**不会映射到下的特定项**查看的消息**。 当选择一个组时，所选内容将直接应用到消息流。  
+  请注意，这些**消息组**不会映射到下的特定项**查看的消息**。 当选择一个组时，所选内容将直接应用到消息流。  
   
- 中的灰色的复选框**消息组**指示**查看的消息**为该组中的消息，已修改列表框中; 不是所有在该组中的消息类型选择。  
+  中的灰色的复选框**消息组**指示**查看的消息**为该组中的消息，已修改列表框中; 不是所有在该组中的消息类型选择。  
   
- **将设置保存为默认值**  
- 将以供将来使用的当前设置保存为消息搜索选项。 退出 Spy + + 时，还会保存这些设置。
+  **将设置保存为默认值**  
+  将以供将来使用的当前设置保存为消息搜索选项。 退出 Spy + + 时，还会保存这些设置。
 
 
 

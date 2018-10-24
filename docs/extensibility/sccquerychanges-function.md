@@ -1,5 +1,5 @@
 ---
-title: SccQueryChanges 函数 |Microsoft 文档
+title: SccQueryChanges 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d887c0cea989fa6a955edc2f39b9667e7421093d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f7b3a9454daa0f2e3c5cf91a9dc483afe1f635a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139817"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915706"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
-此函数枚举给定的文件，对于通过回调函数的每个文件提供名称更改的信息的列表。  
+此函数枚举给定的列表的文件，对于每个文件通过回调函数提供有关名称更改的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -39,34 +39,34 @@ SCCRTN SccQueryChanges(
   
 #### <a name="parameters"></a>参数  
  pContext  
- [in]源控件插件的上下文指针。  
+ [in]源控件插件上下文指针。  
   
  nFiles  
  [in]中的文件数`lpFileNames`数组。  
   
  lpFileNames  
- [in]要获取其相关信息的文件名的数组。  
+ [in]若要获取其相关信息的文件名称的数组。  
   
  pfnCallback  
- [in]要输入列表中每个文件的名称调用的回调函数 (请参阅[QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)有关详细信息)。  
+ [in]要在列表中每个文件名称调用的回调函数 (请参阅[QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)有关详细信息)。  
   
  pvCallerData  
- [in]对回调函数，将传递的值保持不变。  
+ [in]值将传递给回调函数保持不变。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|SCC_OK|查询过程成功完成。|  
-|SCC_E_PROJNOTOPEN|尚未在源代码管理中打开项目。|  
-|SCC_E_ACCESSFAILURE|没有访问源代码管理系统，可能由于网络或争用问题发生时出现问题。|  
+|SCC_OK|查询过程已成功完成。|  
+|SCC_E_PROJNOTOPEN|尚未在源代码管理中打开该项目。|  
+|SCC_E_ACCESSFAILURE|访问源代码管理系统，很可能是由于网络或争用问题时出现问题时。|  
 |SCC_E_NONSPECIFICERROR|未指定或常规时出错。|  
   
 ## <a name="remarks"></a>备注  
- 要查询的更改是对命名空间： 具体而言，重命名、 添加和删除文件。  
+ 对其进行查询的更改是对命名空间： 具体而言，重命名、 添加和删除文件。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
  [错误代码](../extensibility/error-codes.md)

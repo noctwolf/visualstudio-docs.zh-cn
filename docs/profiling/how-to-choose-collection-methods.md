@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f15a8d5b00d947dc3d77dca58ce6ff5fa2cf58e0
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 54efd3d68e81908d3843525b588d9c28cc1be3ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34765383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921283"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 
@@ -32,12 +32,12 @@ Visual Studio 分析工具支持三种收集性能数据的方法：采样、检
 
 - 在向导的第一页上，选择下列选项之一：
 
-|选项|描述|
-|------------|-----------------|
-|**CPU 采样**|收集对初始分析和分析 CPU 使用率问题非常有用的应用程序统计信息。|
-|**检测**|收集对重点分析和分析输入/输出性能问题非常有用的详细的计时数据。|
-|**.NET 内存分配**|使用采样分析方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内存分配数据。|
-|**并发**|收集数字资源争用数据。|
+| 选项 | 描述 |
+|----------------------------| - |
+| **CPU 采样** | 收集对初始分析和分析 CPU 使用率问题非常有用的应用程序统计信息。 |
+| **检测** | 收集对重点分析和分析输入/输出性能问题非常有用的详细的计时数据。 |
+| **.NET 内存分配** | 使用采样分析方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 内存分配数据。 |
+| **并发** | 收集数字资源争用数据。 |
 
 ## <a name="performance-explorer"></a>性能资源管理器
 

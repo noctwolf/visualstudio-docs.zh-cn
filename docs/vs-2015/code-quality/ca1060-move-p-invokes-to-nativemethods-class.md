@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ac0e1d9ca251e4d12dbdfb59fbfaf115cbdd348d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 026f568d71c80af95d2d4bee640dc11d1042713f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228862"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913860"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：将 P/Invoke 移动到 NativeMethods 类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|MovePInvokesToNativeMethodsClass|
@@ -42,13 +43,13 @@ ms.locfileid: "49228862"
 ## <a name="rule-description"></a>规则说明
  平台调用方法，如那些使用标记<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>属性或通过使用定义的方法`Declare`中的关键字[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]，访问非托管的代码。 这些方法应采用以下类之一：
 
--   **NativeMethods** -此类不会取消对非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>必须不应用于此类。)此类是可以任意位置使用，因为不会执行堆栈审核的方法。
+- **NativeMethods** -此类不会取消对非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>必须不应用于此类。)此类是可以任意位置使用，因为不会执行堆栈审核的方法。
 
--   **SafeNativeMethods** -此类取消显示非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>应用于此类。)此类是安全的任何人都可以调用的方法。 这些方法的调用方不需要执行全面的安全检查，以确保使用的安全性，因为方法都是无害的任何调用方。
+- **SafeNativeMethods** -此类取消显示非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>应用于此类。)此类是安全的任何人都可以调用的方法。 这些方法的调用方不需要执行全面的安全检查，以确保使用的安全性，因为方法都是无害的任何调用方。
 
--   **UnsafeNativeMethods** -此类取消显示非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>应用于此类。)此类适用于的方法具有潜在危险的。 这些方法中的任何调用方必须执行全面的安全检查，以确保使用的安全性，因为将执行没有堆栈遍历。
+- **UnsafeNativeMethods** -此类取消显示非托管的代码权限的堆栈审核。 (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>应用于此类。)此类适用于的方法具有潜在危险的。 这些方法中的任何调用方必须执行全面的安全检查，以确保使用的安全性，因为将执行没有堆栈遍历。
 
- 这些类声明为`internal`(`Friend`，在 Visual Basic 中)，并声明私有构造函数，以防止从正在创建的新实例。 这些类中的方法应`static`并`internal`(`Shared`和`Friend`在 Visual Basic 中)。
+  这些类声明为`internal`(`Friend`，在 Visual Basic 中)，并声明私有构造函数，以防止从正在创建的新实例。 这些类中的方法应`static`并`internal`(`Shared`和`Friend`在 Visual Basic 中)。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此规则的冲突，请将方法移动到相应**NativeMethods**类。 对于大多数应用程序，将 P/Invoke 移动到名为的新类**NativeMethods**就足够了。

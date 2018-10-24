@@ -19,12 +19,12 @@ ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 091edab3b3fad6707058ff7d35918176854c02f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ab10152afbefbdc49f0934f3fd062a74a2a1f30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915589"
 ---
 # <a name="signing-vsix-packages"></a>对 VSIX 包进行签名
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "49263870"
   
 #### <a name="to-use-the-vsixsigntool"></a>若要使用 VSIXSignTool  
   
-1.  将在 VSIX 添加到项目。  
+1. 将在 VSIX 添加到项目。  
   
-2.  右键单击解决方案资源管理器中的项目节点上选择**添加&#124;管理 NuGet 包**。  有关详细信息，NuGet 和添加 NuGet 包请参阅[NuGet 概述](http://docs.nuget.org/)并[使用对话框管理 NuGet 程序包](http://docs.nuget.org/Consume/Package-Manager-Dialog)。  
+2. 右键单击解决方案资源管理器中的项目节点上选择**添加&#124;管理 NuGet 包**。  有关详细信息，NuGet 和添加 NuGet 包请参阅[NuGet 概述](http://docs.nuget.org/)并[使用对话框管理 NuGet 程序包](http://docs.nuget.org/Consume/Package-Manager-Dialog)。  
   
-3.  从 VisualStudioExtensibility VSIXSignTool 搜索并安装 NuGet 包。  
+3. 从 VisualStudioExtensibility VSIXSignTool 搜索并安装 NuGet 包。  
   
-4.  现在可以从项目的本地包位置运行 VSIXSignTool。 签名方案，请查阅该工具的命令行帮助 (VSIXSignTool.exe /？)。  
+4. 现在可以从项目的本地包位置运行 VSIXSignTool。 签名方案，请查阅该工具的命令行帮助 (VSIXSignTool.exe /？)。  
   
- 对于要用密码保护的证书文件进行签名的示例：  
+   对于要用密码保护的证书文件进行签名的示例：  
   
- VSIXSignTool.exe 登录 /f \<certfile >/p\<密码 > \<VSIXfile >  
+   VSIXSignTool.exe 登录 /f \<certfile >/p\<密码 > \<VSIXfile >  
   
 ## <a name="see-also"></a>请参阅  
  [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
