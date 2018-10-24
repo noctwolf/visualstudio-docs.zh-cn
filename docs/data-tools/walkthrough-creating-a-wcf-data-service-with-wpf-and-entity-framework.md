@@ -18,29 +18,29 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e90e8080f8f5afb7bd670d04e0f004f433420d68
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 082fe68979ea7ae6a0c0655b7731aa8c7c9f3ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838759"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务
 本演练演示如何创建一个简单[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]托管在[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]web 应用程序，然后从 Windows 窗体应用程序访问它。
 
 在本演练中你：
 
--   创建 web 应用程序以承载[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+- 创建 web 应用程序以承载[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
--   创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
+- 创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
--   创建 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
+- 创建 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]。
 
--   创建一个客户端应用程序，并添加对 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的引用。
+- 创建一个客户端应用程序，并添加对 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]的引用。
 
--   启用对该服务的数据绑定并生成用户界面。
+- 启用对该服务的数据绑定并生成用户界面。
 
--   可以选择向应用程序添加筛选功能。
+- 可以选择向应用程序添加筛选功能。
 
 ## <a name="prerequisites"></a>系统必备
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
@@ -66,7 +66,7 @@ ms.locfileid: "44281528"
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-#### <a name="to-create-the-web-project"></a>若要创建 web 项目
+### <a name="to-create-the-web-project"></a>若要创建 web 项目
 
 1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
@@ -78,7 +78,7 @@ ms.locfileid: "44281528"
 
 在下一步，您将创建[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]，它表示`Customers`Northwind 数据库中的表。
 
-#### <a name="to-create-the-entity-data-model"></a>创建实体数据模型
+### <a name="to-create-the-entity-data-model"></a>创建实体数据模型
 
 1.  在菜单栏上，依次选择“项目” > “添加新项”。
 
@@ -101,12 +101,12 @@ ms.locfileid: "44281528"
 6.  如果数据库需要密码，请选择**可以，请在连接字符串中包含敏感数据**选项按钮，然后选择**下一步**按钮。
 
     > [!NOTE]
-    >  如果出现一个对话框，选择**是**将文件保存到你的项目。
+    > 如果出现一个对话框，选择**是**将文件保存到你的项目。
 
 7.  上**选择你的版本**页上，选择**Entity Framework 5.0**选项按钮，然后选择**下一步**按钮。
 
     > [!NOTE]
-    >  若要对 WCF 服务使用 Entity Framework 6 的最新版本，你将需要安装 WCF Data Services 实体框架提供程序 NuGet 包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
+    > 若要对 WCF 服务使用 Entity Framework 6 的最新版本，你将需要安装 WCF Data Services 实体框架提供程序 NuGet 包。 请参阅[使用 WCF Data Services 5.6.0 与 Entity Framework 6 +](https://blogs.msdn.microsoft.com/odatateam/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
 8.  上**选择数据库对象**页上，展开**表**节点中，选择**客户**复选框，，然后选择**完成**按钮。
 
@@ -114,7 +114,7 @@ ms.locfileid: "44281528"
 
 在下一步中创建和测试数据服务。
 
-#### <a name="to-create-the-data-service"></a>创建数据服务
+### <a name="to-create-the-data-service"></a>创建数据服务
 
 1.  在菜单栏上，依次选择“项目” > “添加新项”。
 
@@ -141,7 +141,7 @@ ms.locfileid: "44281528"
      XML 表示形式中的数据`Customers`表将出现。
 
     > [!NOTE]
-    >  某些情况下，Internet Explorer 会将数据错误解释为 RSS 源。 必须确保禁用显示 RSS 源的选项。 有关详细信息，请参阅[服务引用疑难解答](../data-tools/troubleshooting-service-references.md)。
+    > 某些情况下，Internet Explorer 会将数据错误解释为 RSS 源。 必须确保禁用显示 RSS 源的选项。 有关详细信息，请参阅[服务引用疑难解答](../data-tools/troubleshooting-service-references.md)。
 
 8.  关闭浏览器窗口。
 
@@ -152,7 +152,7 @@ ms.locfileid: "44281528"
 
  在第一个步骤中，你将 Windows 窗体项目添加到解决方案，并将其设置为启动项目。
 
-#### <a name="to-create-the-client-application"></a>创建客户端应用程序
+### <a name="to-create-the-client-application"></a>创建客户端应用程序
 
 1.  在菜单栏上依次选择文件，**外** > **新项目**。
 
@@ -166,7 +166,7 @@ ms.locfileid: "44281528"
 
 在下一步，添加服务引用到[!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]web 项目中。
 
-#### <a name="to-add-a-service-reference"></a>添加服务引用
+### <a name="to-add-a-service-reference"></a>添加服务引用
 
 1.  在菜单栏上依次选择**项目** > **添加服务引用**。
 
@@ -178,7 +178,7 @@ ms.locfileid: "44281528"
 
 在下一步，配置要启用数据绑定到的服务的数据源。
 
-#### <a name="to-enable-data-binding-to-the-service"></a>启用对服务的数据绑定
+### <a name="to-enable-data-binding-to-the-service"></a>启用对服务的数据绑定
 
 1.  在菜单栏上依次选择**视图** > **其他 Windows** > **数据源**。
 
@@ -192,61 +192,60 @@ ms.locfileid: "44281528"
 
 在下一步中，您创建在用户界面中显示来自服务的数据。
 
-#### <a name="to-create-the-user-interface"></a>创建用户界面
+### <a name="to-create-the-user-interface"></a>创建用户界面
 
-1.  在中**数据源**窗口中，打开快捷菜单**客户**节点，然后选择**复制**。
+1. 在中**数据源**窗口中，打开快捷菜单**客户**节点，然后选择**复制**。
 
-2.  在中**Form1.vb**或**Form1.cs**窗体设计器中，打开快捷菜单，然后选择**粘贴**。
+2. 在中**Form1.vb**或**Form1.cs**窗体设计器中，打开快捷菜单，然后选择**粘贴**。
 
-     一个 <xref:System.Windows.Forms.DataGridView> 控件、一个 <xref:System.Windows.Forms.BindingSource> 组件以及一个 <xref:System.Windows.Forms.BindingNavigator> 组件将添加到窗体中。
+    一个 <xref:System.Windows.Forms.DataGridView> 控件、一个 <xref:System.Windows.Forms.BindingSource> 组件以及一个 <xref:System.Windows.Forms.BindingNavigator> 组件将添加到窗体中。
 
-3.  选择**CustomersDataGridView**控件，然后在**属性**窗口中设置**停靠**属性设置为**填充**。
+3. 选择**CustomersDataGridView**控件，然后在**属性**窗口中设置**停靠**属性设置为**填充**。
 
-4.  在中**解决方案资源管理器**，打开快捷菜单**Form1**节点，然后选择**查看代码**以打开代码编辑器中，并添加以下`Imports`或`Using`文件顶部的语句：
+4. 在中**解决方案资源管理器**，打开快捷菜单**Form1**节点，然后选择**查看代码**以打开代码编辑器中，并添加以下`Imports`或`Using`文件顶部的语句：
 
-    ```vb
-    Imports NorthwindClient.ServiceReference1
-    ```
+   ```vb
+   Imports NorthwindClient.ServiceReference1
+   ```
 
-    ```csharp
-    using NorthwindClient.ServiceReference1;
-    ```
+   ```csharp
+   using NorthwindClient.ServiceReference1;
+   ```
 
-5.  将以下代码添加到 `Form1_Load` 事件处理程序中：
+5. 将以下代码添加到 `Form1_Load` 事件处理程序中：
 
-    ```vb
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-            Dim proxy As New NorthwindEntities _
-    (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
-            Me.CustomersBindingSource.DataSource = proxy.Customers
-        End Sub
-    ```
+   ```vb
+   Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+           Dim proxy As New NorthwindEntities _
+   (New Uri("http://localhost:53161/NorthwindCustomers.svc/"))
+           Me.CustomersBindingSource.DataSource = proxy.Customers
+       End Sub
+   ```
 
-    ```csharp
-    private void Form1_Load(object sender, EventArgs e)
-    {
-    NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
-    this.CustomersBindingSource.DataSource = proxy.Customers;
-    }
+   ```csharp
+   private void Form1_Load(object sender, EventArgs e)
+   {
+   NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));
+   this.CustomersBindingSource.DataSource = proxy.Customers;
+   }
+   ```
 
-    ```
+6. 在中**解决方案资源管理器**，打开快捷菜单**NorthwindCustomers.svc**文件，然后选择**用浏览器查看**。 此时将打开 Internet Explorer 并显示服务的 XML 架构。
 
-6.  在中**解决方案资源管理器**，打开快捷菜单**NorthwindCustomers.svc**文件，然后选择**用浏览器查看**。 此时将打开 Internet Explorer 并显示服务的 XML 架构。
+7. 从 Internet Explorer 地址栏中复制 URL。
 
-7.  从 Internet Explorer 地址栏中复制 URL。
-
-8.  在步骤 4 中添加的代码中，选择 `http://localhost:53161/NorthwindCustomers.svc/` 并使用刚刚复制的 URL 替换它。
+8. 在步骤 4 中添加的代码中，选择 `http://localhost:53161/NorthwindCustomers.svc/` 并使用刚刚复制的 URL 替换它。
 
 9. 在菜单栏上依次选择**调试** > **开始调试**运行该应用程序。 显示客户信息。
 
- 现在，你有了一个可以使用的应用程序，该应用程序将显示 NorthwindCustomers 服务中的客户的列表。 如果希望通过该服务公开其他数据，则可以修改[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]以包括 Northwind 数据库中的其他表。
+   现在，你有了一个可以使用的应用程序，该应用程序将显示 NorthwindCustomers 服务中的客户的列表。 如果希望通过该服务公开其他数据，则可以修改[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]以包括 Northwind 数据库中的其他表。
 
 在下一步的可选步骤中，您将了解如何筛选服务返回的数据。
 
 ## <a name="adding-filtering-capabilities"></a>添加筛选功能
  在此步骤中，您自定义要按客户所在的城市筛选数据的应用程序。
 
-#### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能
+### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能
 
 1.  在中**解决方案资源管理器**，打开快捷菜单**Form1.vb**或**Form1.cs**节点，然后选择**打开**。
 
