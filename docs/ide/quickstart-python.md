@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d75ce507b34337c6311fe66c95732c6f6cd044ba
-ms.sourcegitcommit: 7a11a094a353f2e2a2077ad863ca4c0fb97f7ec5
+ms.openlocfilehash: 0a7da7d09bf9bcb419ba174a4eb60fe370e83cda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39131981"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877109"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 
@@ -124,19 +124,19 @@ Python 中的 Web 应用几乎总是使用众多可用 Python 库中的一个来
 
     ![在解决方案资源管理器中设置项目的启动文件](media/quickstart-python-05-set-as-startup-file.png)
 
-1. 右键单击“解决方案资源管理器”中的项目，再选择“属性”。 然后选择“调试”选项卡并将“端口号”属性设置为 `4449`。 此步骤可保证 Visual Studio 启动带 `localhost:4449` 的浏览器与代码中的 `app.run` 参数进行匹配。
+2. 右键单击“解决方案资源管理器”中的项目，再选择“属性”。 然后选择“调试”选项卡并将“端口号”属性设置为 `4449`。 此步骤可保证 Visual Studio 启动带 `localhost:4449` 的浏览器与代码中的 `app.run` 参数进行匹配。
 
-1. 依次选择“调试”和“开始执行(不调试)”(Ctrl+F5)，这会将更改保存至文件并运行应用。
+3. 依次选择“调试”和“开始执行(不调试)”(Ctrl+F5)，这会将更改保存至文件并运行应用。
 
-1. 命令窗口中会显示消息“* 在 https://localhost:4449/ 中运行”，随即打开指向 `localhost:4449` 的浏览器窗口应，显示“Hello, Python!”消息 状态为 200 的命令窗口中还显示 GET 请求。
+4. 命令窗口中会显示消息“* 在 <https://localhost:4449/> 中运行”，随即打开指向 `localhost:4449` 的浏览器窗口应，显示“Hello, Python!”消息 状态为 200 的命令窗口中还显示 GET 请求。
 
     如果浏览器未自动打开，请启动所选的浏览器并导航到 `localhost:4449`。
 
     如果只在命令窗口中看到 Python 交互式 shell，或者如果该窗口在屏幕上短暂地闪烁，请确保在上述第 1 步中将 app.py 设为启动文件。
 
-1. 导航到 `localhost:4449/hello`，测试确保 `/hello` 资源的修饰器也正常运行。 同样的，状态为 200 的命令窗口会显示 GET 请求。 随时可尝试其他 URL，查看它们是否在命令窗口中显示 404 状态代码。
+5. 导航到 `localhost:4449/hello`，测试确保 `/hello` 资源的修饰器也正常运行。 同样的，状态为 200 的命令窗口会显示 GET 请求。 随时可尝试其他 URL，查看它们是否在命令窗口中显示 404 状态代码。
 
-1. 关闭命令窗口以停止应用，然后关闭浏览器窗口。
+6. 关闭命令窗口以停止应用，然后关闭浏览器窗口。
 
 **问：“开始执行(不调试)”命令和“启动调试”有何区别？**
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 055e1da96ae3078c0b77597816868be5994d1223
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 09b9299c6428ef63ccf71220fc3cb599e9e3b5a9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281268"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872403"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>演练： 创建 SharePoint web 部件
 
@@ -96,13 +96,13 @@ Web 部件显示数据网格中的员工。 用户指定包含员工数据的文
 
 3. 向 `WebPart1` 类添加下面的代码。 此代码声明了以下字段：
 
-    - 若要在 Web 部件中显示员工数据网格。
+   - 若要在 Web 部件中显示员工数据网格。
 
-    - 用于筛选数据网格控件显示的文本。
+   - 用于筛选数据网格控件显示的文本。
 
-    - 显示错误，如果数据网格是无法显示数据标签。
+   - 显示错误，如果数据网格是无法显示数据标签。
 
-    - 一个字符串，包含员工数据文件的路径。
+   - 一个字符串，包含员工数据文件的路径。
 
      [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
      [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
@@ -114,18 +114,18 @@ Web 部件显示数据网格中的员工。 用户指定包含员工数据的文
 
 5. 将 `CreateChildControls` 方法替换为以下代码。 这段代码执行下列任务：
 
-    - 上一步中添加数据网格和声明的标签。
+   - 上一步中添加数据网格和声明的标签。
 
-    - 将数据网格绑定到 XML 文件，其中包含员工数据。
+   - 将数据网格绑定到 XML 文件，其中包含员工数据。
 
      [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
      [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
 
 6. 将以下方法添加到 `WebPart1` 类。 这段代码执行下列任务：
 
-    - 创建呈现的 Web 部件的 Web 部件谓词菜单中显示的谓词。
+   - 创建呈现的 Web 部件的 Web 部件谓词菜单中显示的谓词。
 
-    - 处理在用户选择谓词菜单中的谓词时所引发的事件。 此代码筛选数据网格中显示的员工的列表。
+   - 处理在用户选择谓词菜单中的谓词时所引发的事件。 此代码筛选数据网格中显示的员工的列表。
 
      [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
      [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e6a7bf23ab8b64516f474c6741cef48d7a0d4b43
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878552"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：扩展域特定语言设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,17 +74,17 @@ ms.locfileid: "49294263"
   
  若要将扩展部署到主[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，和其他计算机，请执行以下步骤：  
   
-1.  查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix  
+1. 查找 VSIX 安装文件，在 VSIX 项目中 bin\\*\*\\\*.vsix  
   
-2.  将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。  
+2. 将此文件复制到目标计算机，然后在 Windows 资源管理器 （或文件资源管理器） 中，双击它。  
   
-     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展管理器将打开，以确认是否已安装扩展。  
+    [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展管理器将打开，以确认是否已安装扩展。  
   
- 若要卸载该扩展，请按照下列步骤：  
+   若要卸载该扩展，请按照下列步骤：  
   
-1.  在中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**工具**菜单中，单击**扩展管理器**。  
+3. 在中[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**工具**菜单中，单击**扩展管理器**。  
   
-2.  选择扩展，并将其删除。  
+4. 选择扩展，并将其删除。  
   
 ## <a name="adding-a-shortcut-menu-command"></a>添加的快捷方式菜单命令  
  若要使 DSL 设计器图面上或在 DSL 资源管理器窗口中显示的快捷方式菜单命令，请编写一个类似于以下的类。  

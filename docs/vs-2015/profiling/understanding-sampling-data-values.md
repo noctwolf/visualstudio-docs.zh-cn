@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5834768784465b02b896b21339dc240a90781353
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86458fcc630b023cd1495b91a388fe245b71d772
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221385"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877629"
 ---
 # <a name="understanding-sampling-data-values"></a>了解采样数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ ms.locfileid: "49221385"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 探查器分析确定处理器是否在执行目标进程中的代码。 如果处理器未执行目标进程中的代码，则丢弃样本。  
+  探查器分析确定处理器是否在执行目标进程中的代码。 如果处理器未执行目标进程中的代码，则丢弃样本。  
   
- 如果处理器在执行目标代码，探查器会递增调用堆栈中每个函数的样本计数。 获取样本时，调用堆栈上只有一个函数当前在执行代码。 堆栈上的其他函数是函数调用层次结构中的父级，在等待其子级返回。  
+  如果处理器在执行目标代码，探查器会递增调用堆栈中每个函数的样本计数。 获取样本时，调用堆栈上只有一个函数当前在执行代码。 堆栈上的其他函数是函数调用层次结构中的父级，在等待其子级返回。  
   
- 对于样本事件，探查器会递增当前在执行其指令的函数的独占样本计数。 因为独占样本也是函数的总计（非独占）样本的一部分，所以前处于活动状态的函数的非独占样本计数也会递增。  
+  对于样本事件，探查器会递增当前在执行其指令的函数的独占样本计数。 因为独占样本也是函数的总计（非独占）样本的一部分，所以前处于活动状态的函数的非独占样本计数也会递增。  
   
- 探查器会递增调用堆栈上所有其他函数的非独占样本计数。  
+  探查器会递增调用堆栈上所有其他函数的非独占样本计数。  
   
 ## <a name="inclusive-samples"></a>非独占样本数  
  在目标函数执行过程中收集的样本总数。  

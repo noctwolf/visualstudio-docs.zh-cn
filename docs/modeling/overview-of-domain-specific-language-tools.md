@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 873c377b4b2262df6b12f581f1cdac901d27ffce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6942511e325b77aaa3d646b6e84cd833b8b55ab2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859427"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871740"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 域特定语言工具 （DSL 工具），承载于 Visual Studio 中，可以设计一种域特定语言，然后生成用户必须具有创建基于语言的模型的所有内容。
@@ -34,31 +34,31 @@ ms.locfileid: "47859427"
 ## <a name="the-dsl-tools-solution"></a>DSL 工具解决方案
  特定于域的设计器向导提供了以下解决方案模板：
 
--   任务流
+- 任务流
 
--   类图
+- 类图
 
--   最小语言
+- 最小语言
 
--   组件模型
+- 组件模型
 
--   最小 WPF
+- 最小 WPF
 
--   最小 Windows.Forms
+- 最小 Windows.Forms
 
--   DSL 库
+- DSL 库
 
- 有关详细信息，请参阅[选择域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+  有关详细信息，请参阅[选择域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
- 向导将创建具有以下项目的 Visual Studio 解决方案：
+  向导将创建具有以下项目的 Visual Studio 解决方案：
 
--   Dsl
+- Dsl
 
-     在 Dsl 项目定义的特定于域的语言和其编辑功能和正在处理的工具。
+   在 Dsl 项目定义的特定于域的语言和其编辑功能和正在处理的工具。
 
--   **DslPackage**
+- **DslPackage**
 
-     在 DslPackage 项目确定的语言工具与 Visual Studio 的集成。
+   在 DslPackage 项目确定的语言工具与 Visual Studio 的集成。
 
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具的图形界面
  DSL 工具的图形界面可用于将元素和关系添加到你的特定于域的语言。 添加元素后，可以通过将其映射到形状、 自定义颜色，并添加修饰器来定义其外观。 此外可以向工具箱添加元素。

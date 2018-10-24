@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 98aece47b3936108b171ad7e2e1100e98d601312
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 405b208df0aedffe69c9e476a5a31745faeb84f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872559"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅[快速入门：设置控件的样式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入门：控件模板](http://go.microsoft.com/fwlink/?LinkID=247982)。
@@ -51,18 +51,18 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
 ### <a name="to-apply-a-resource-to-an-element-or-property"></a>将资源应用于某个元素或属性的步骤
 
-1.  在“文档大纲”窗口中，选择想要向其应用资源的元素。
+1. 在“文档大纲”窗口中，选择想要向其应用资源的元素。
 
-2.  执行下列操作之一：
+2. 执行下列操作之一：
 
-    -   将资源应用于属性。 在“属性”窗口中，选择属性值旁边的属性标记，再选择“本地资源”或“系统资源”，然后从显示的列表中选择可用的资源。
+   - 将资源应用于属性。 在“属性”窗口中，选择属性值旁边的属性标记，再选择“本地资源”或“系统资源”，然后从显示的列表中选择可用的资源。
 
-         如果看不到希望看到的资源，可能是因为该资源的类型与属性的类型不匹配。
+      如果看不到希望看到的资源，可能是因为该资源的类型与属性的类型不匹配。
 
-    -   将样式或控件模板资源应用于控件。 在“文档大纲”窗口中打开某个控件的上下文菜单，选择“编辑模板”或“编辑其他模板”，选择“应用资源”，然后从显示的列表中选择控件模板的名称。
+   - 将样式或控件模板资源应用于控件。 在“文档大纲”窗口中打开某个控件的上下文菜单，选择“编辑模板”或“编辑其他模板”，选择“应用资源”，然后从显示的列表中选择控件模板的名称。
 
-        > [!NOTE]
-        >  “编辑模板”应用控件模板。 “编辑其他模板”应用其他模板类型。
+     > [!NOTE]
+     >  “编辑模板”应用控件模板。 “编辑其他模板”应用其他模板类型。
 
      可在任何兼容的位置应用资源。 例如，画笔资源可应用于 <xref:Windows.UI.Xaml.Controls.TextBox> 控件的“前景色”属性。
 

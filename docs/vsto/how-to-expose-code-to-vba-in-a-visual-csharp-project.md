@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36bdcd7360099818ac8510d9eab87d6d3dc0f0fc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: f00f668c3eac9a39251d0a4e19f98ed597c373db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873482"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何： 向 VBA 公开代码在 Visual C# 项目中
   如果您希望两种类型的代码与彼此进行交互，您可以公开 Visual C# 项目中为 Visual Basic for Applications (VBA) 代码的代码。  
@@ -39,56 +39,56 @@ ms.locfileid: "35257246"
   
 ### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>若要公开到 VBA Visual C# 项目中的代码  
   
-1.  打开或创建基于 Word 文档、 Excel 工作簿或 Excel 模板支持的宏，并且已经包含 VBA 代码的文档级项目。  
+1. 打开或创建基于 Word 文档、 Excel 工作簿或 Excel 模板支持的宏，并且已经包含 VBA 代码的文档级项目。  
   
-     有关支持的宏的文档文件格式的详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。  
+    有关支持的宏的文档文件格式的详细信息，请参阅[结合 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。  
   
-    > [!NOTE]  
-    >  此功能无法在 Word 模板项目中使用。  
+   > [!NOTE]  
+   >  此功能无法在 Word 模板项目中使用。  
   
-2.  请确保允许文档中的 VBA 代码不提示用户启用宏的情况下运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。  
+2. 请确保允许文档中的 VBA 代码不提示用户启用宏的情况下运行。 通过在 Word 或 Excel 的“信任中心”设置中将 Office 项目的位置添加到受信任位置列表中，可以信任要运行的 VBA 代码。  
   
-3.  添加你想要向 VBA 公开到你的项目中的公共类的成员，并声明将新成员**公共**。  
+3. 添加你想要向 VBA 公开到你的项目中的公共类的成员，并声明将新成员**公共**。  
   
-4.  将以下内容应用<xref:System.Runtime.InteropServices.ComVisibleAttribute>和<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性到要向 VBA 公开的类。 这些特性使类对于 COM 可见，但不生成类接口。  
+4. 将以下内容应用<xref:System.Runtime.InteropServices.ComVisibleAttribute>和<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>属性到要向 VBA 公开的类。 这些特性使类对于 COM 可见，但不生成类接口。  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    [System.Runtime.InteropServices.ClassInterface(  
-        System.Runtime.InteropServices.ClassInterfaceType.None)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   [System.Runtime.InteropServices.ClassInterface(  
+       System.Runtime.InteropServices.ClassInterfaceType.None)]  
+   ```  
   
-5.  重写**GetAutomationObject**以返回向 VBA 公开类的实例在项目中主机项类的方法：  
+5. 重写**GetAutomationObject**以返回向 VBA 公开类的实例在项目中主机项类的方法：  
   
-    -   如果您正在公开到 VBA 是主机项类，重写**GetAutomationObject**属于此类，并返回类的当前实例的方法。  
+   - 如果您正在公开到 VBA 是主机项类，重写**GetAutomationObject**属于此类，并返回类的当前实例的方法。  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return this;  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return this;  
+     }  
+     ```  
   
-    -   如果您正在公开不向 VBA 是主机项类，重写**GetAutomationObject**方法的任何主机项在项目中，并返回非主机项类的实例。 例如，以下代码假定你将公开一个名为类`DocumentUtilities`向 VBA。  
+   - 如果您正在公开不向 VBA 是主机项类，重写**GetAutomationObject**方法的任何主机项在项目中，并返回非主机项类的实例。 例如，以下代码假定你将公开一个名为类`DocumentUtilities`向 VBA。  
   
-        ```csharp  
-        protected override object GetAutomationObject()  
-        {  
-            return new DocumentUtilities();  
-        }  
-        ```  
+     ```csharp  
+     protected override object GetAutomationObject()  
+     {  
+         return new DocumentUtilities();  
+     }  
+     ```  
   
      有关主机项的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
-6.  从要向 VBA 公开的类中提取一个接口。 在中**提取接口**对话框框中，选择想要包括接口声明中的公共成员。 有关详细信息，请参阅[提取接口重构](../ide/reference/extract-interface.md)。
+6. 从要向 VBA 公开的类中提取一个接口。 在中**提取接口**对话框框中，选择想要包括接口声明中的公共成员。 有关详细信息，请参阅[提取接口重构](../ide/reference/extract-interface.md)。
   
-7.  添加**公共**到接口声明关键字。  
+7. 添加**公共**到接口声明关键字。  
   
-8.  通过添加以下来使该接口对 COM 可见<xref:System.Runtime.InteropServices.ComVisibleAttribute>到接口属性。  
+8. 通过添加以下来使该接口对 COM 可见<xref:System.Runtime.InteropServices.ComVisibleAttribute>到接口属性。  
   
-    ```csharp  
-    [System.Runtime.InteropServices.ComVisible(true)]  
-    ```  
+   ```csharp  
+   [System.Runtime.InteropServices.ComVisible(true)]  
+   ```  
   
 9. 设计器中打开 （针对 Word) 的文档或工作表 （针对 Excel) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
