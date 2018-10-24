@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d787a18e506baa3fd131c50332afa7fe51b7ca05
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850524"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>如何：修改三维模型的透视点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,22 +37,22 @@ ms.locfileid: "49300386"
   
 #### <a name="to-modify-the-pivot-point-of-a-3-d-model"></a>修改三维模型的中心点  
   
-1.  从现有的三维模型开始，例如[如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)中所述的模型。  
+1. 从现有的三维模型开始，例如[如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)中所述的模型。  
   
-2.  进入透视模式。 在“模型编辑器模式”工具栏上，选择“透视模式”按钮以激活透视模式。 “透视模式”按钮周围将显示一个框，用于指示模型编辑器现在处于透视模式中。 在透视模式中，转换等操作会影响对象的透视点，而不影响世界空间中对象的结构。  
+2. 进入透视模式。 在“模型编辑器模式”工具栏上，选择“透视模式”按钮以激活透视模式。 “透视模式”按钮周围将显示一个框，用于指示模型编辑器现在处于透视模式中。 在透视模式中，转换等操作会影响对象的透视点，而不影响世界空间中对象的结构。  
   
-3.  修改对象的透视点。 在“选择”模式中，选择对象，然后在“模型查看器”工具栏上选择“转换”工具。 一个表示透视点的框显示在设计图面上。 移动框以修改对象的透视点。  
+3. 修改对象的透视点。 在“选择”模式中，选择对象，然后在“模型查看器”工具栏上选择“转换”工具。 一个表示透视点的框显示在设计图面上。 移动框以修改对象的透视点。  
   
-     通过移动框，可以在所有三个维度中移动透视点。 若要沿一个轴转换透视点，请移动与该轴相对应的箭头。 框和箭头将更改为黄色以指示受转换影响的轴。  
+    通过移动框，可以在所有三个维度中移动透视点。 若要沿一个轴转换透视点，请移动与该轴相对应的箭头。 框和箭头将更改为黄色以指示受转换影响的轴。  
   
-     还可以使用“属性”窗口中的“透视转换”属性以指定透视点。  
+    还可以使用“属性”窗口中的“透视转换”属性以指定透视点。  
   
-    > [!TIP]
-    >  可以通过旋转对象来查看新透视点的效果。 若要旋转它，请使用“旋转”工具或修改“旋转”属性。  
+   > [!TIP]
+   >  可以通过旋转对象来查看新透视点的效果。 若要旋转它，请使用“旋转”工具或修改“旋转”属性。  
   
- 下面是具有修改后的中心点的模型：  
+   下面是具有修改后的中心点的模型：  
   
- ![具有已修改透视点的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
+   ![具有已修改透视点的房屋模型](../designers/media/digit-modified-model.png "Digit-Modified-Model")  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建基本三维模型](../designers/how-to-create-a-basic-3-d-model.md)   

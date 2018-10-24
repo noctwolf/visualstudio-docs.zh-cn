@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3978d72372f2aa9a0c57184083c67476886016aa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4ea97ed3650e74a10bfc5e49657f0ed3dce60ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840687"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49232110"
   
 #### <a name="to-specify-one-initial-target"></a>指定一个初始目标  
   
--   在 `Project` 元素的 `InitialTargets` 属性中指定默认目标。 例如：  
+- 在 `Project` 元素的 `InitialTargets` 属性中指定默认目标。 例如：  
   
-     `<Project InitialTargets="Clean">`  
+   `<Project InitialTargets="Clean">`  
   
- 可以通过按顺序列出目标并使用分号来分隔每个目标，在 `InitialTargets` 属性中指定多个初始目标。 列表中的目标将按顺序运行。  
+  可以通过按顺序列出目标并使用分号来分隔每个目标，在 `InitialTargets` 属性中指定多个初始目标。 列表中的目标将按顺序运行。  
   
 #### <a name="to-specify-more-than-one-initial-target"></a>指定多个初始目标  
   
@@ -53,11 +53,11 @@ ms.locfileid: "49232110"
   
 #### <a name="to-specify-one-default-target"></a>指定一个默认目标  
   
--   在 `Project` 元素的 `DefaultTargets` 属性中指定默认目标。 例如：  
+- 在 `Project` 元素的 `DefaultTargets` 属性中指定默认目标。 例如：  
   
-     `<Project DefaultTargets="Compile">`  
+   `<Project DefaultTargets="Compile">`  
   
- 可以通过按顺序列出目标并使用分号来分隔每个目标，在 `DefaultTargets` 属性中指定多个默认目标。 列表中的目标将按顺序运行。  
+  可以通过按顺序列出目标并使用分号来分隔每个目标，在 `DefaultTargets` 属性中指定多个默认目标。 列表中的目标将按顺序运行。  
   
 #### <a name="to-specify-more-than-one-default-target"></a>指定多个默认目标  
   

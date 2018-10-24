@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::FindAlias |Microsoft 文档
+title: IDebugBinder3::FindAlias |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e68038f6e00c2a04f4c96f5f9d93fc4919d2fd09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 128629f5cd359539406f438aec41909672e1ed83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102117"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837719"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-此方法查找别名，指定一个名称。 这将在程序中搜索所有别名。  
+此方法可查找给定名称的别名。 这将在程序中搜索所有别名。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,14 +46,14 @@ int FindAlias(
  [in]若要查找的别名的名称。  
   
  `ppAlias`  
- [out]找到 （如果有） 的别名由[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)接口。  
+ [out]别名找到 （如果有） 由[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)接口。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`（如果找不到别名） 或错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法将目标对象初始化为 null 之前调用;然后，它测试有空值以确定已找到别名。  
+ 此方法将目标对象初始化为 null 之前，调用;然后它测试 null 值之后，若要确定找到该别名。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -24,39 +24,39 @@ caps.latest.revision: 84
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4aea0373c57f046b257ad51b102e5b2f1190bfbf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 724ddcc00b1f49eb1f96e67d6b6e269933cb9d66
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173714"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950480"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>用层关系图验证代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 要确保代码不与其设计冲突，可以在 Visual Studio 中使用层关系图验证代码。 这可帮助你：  
   
--   查找代码中的依赖项和层关系图上的依赖项之间的冲突。  
+- 查找代码中的依赖项和层关系图上的依赖项之间的冲突。  
   
--   查找建议的更改可能会影响的依赖项。  
+- 查找建议的更改可能会影响的依赖项。  
   
-     例如，可以编辑层关系图来显示潜在的体系结构更改，然后对代码进行验证以查看受影响的依赖项。  
+   例如，可以编辑层关系图来显示潜在的体系结构更改，然后对代码进行验证以查看受影响的依赖项。  
   
--   将代码重构或迁移到其他设计。  
+- 将代码重构或迁移到其他设计。  
   
-     查找在将代码移动到其他体系结构时需要工作的代码或依赖项。  
+   查找在将代码移动到其他体系结构时需要工作的代码或依赖项。  
   
- **要求**  
+  **要求**  
   
--   Visual Studio  
+- Visual Studio  
   
--   Team Foundation Build 服务器上的 Visual Studio，用于使用 Team Foundation Build 自动验证代码  
+- Team Foundation Build 服务器上的 Visual Studio，用于使用 Team Foundation Build 自动验证代码  
   
--   一个具有建模项目和层关系图的解决方案。 该层关系图必须链接到要验证的 Visual C# .NET 或 Visual Basic .NET 项目中的项。 请参阅[从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)。  
+- 一个具有建模项目和层关系图的解决方案。 该层关系图必须链接到要验证的 Visual C# .NET 或 Visual Basic .NET 项目中的项。 请参阅[从代码创建层关系图](../modeling/create-layer-diagrams-from-your-code.md)。  
   
- 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+  若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 你可以从 Visual Studio 中打开的层关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Team Foundation Build 时自动验证代码。 请参阅[第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+  你可以从 Visual Studio 中打开的层关系图或从命令提示符手动验证代码。 你还可以在运行本地生成或 Team Foundation Build 时自动验证代码。 请参阅[第 9 频道视频： 设计和验证体系结构使用层关系图](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
 >  如果想要使用 Team Foundation Build 运行层验证，则还必须在生成服务器上安装相同版本的 Visual Studio。  
@@ -108,41 +108,41 @@ ms.locfileid: "49173714"
   
 #### <a name="to-validate-code-at-the-command-prompt"></a>在命令提示符处验证代码  
   
-1.  打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示。  
+1. 打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令提示。  
   
-2.  选择以下选项之一：  
+2. 选择以下选项之一：  
   
-    -   若要对照解决方案中的特定建模项目验证代码，请使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
+   - 若要对照解决方案中的特定建模项目验证代码，请使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]。  
   
-        ```  
-        msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild <FilePath+ModelProjectFileName>.modelproj /p:ValidateArchitecture=true  
+     ```  
   
-         - 或 -  
+     - 或 -  
   
-         浏览到包含建模项目文件 (.modelproj) 和层关系图的文件夹，然后使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+       浏览到包含建模项目文件 (.modelproj) 和层关系图的文件夹，然后使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true   
+     ```  
   
-    -   若要对照解决方案中的所有建模项目验证代码，请使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+   - 若要对照解决方案中的所有建模项目验证代码，请使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
-        ```  
+     ```  
+     msbuild <FilePath+SolutionName>.sln /p:ValidateArchitecture=true   
+     ```  
   
-         - 或 -  
+     - 或 -  
   
-         浏览到必须包含建模项目（包含层关系图）的解决方案文件夹，然后使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
+       浏览到必须包含建模项目（包含层关系图）的解决方案文件夹，然后使用下面的自定义属性运行 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]：  
   
-        ```  
-        msbuild /p:ValidateArchitecture=true  
-        ```  
+     ```  
+     msbuild /p:ValidateArchitecture=true  
+     ```  
   
      将列出发生的任何错误。 有关详细信息[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]，请参阅[MSBuild](../msbuild/msbuild.md)并[MSBuild 任务](../msbuild/msbuild-task.md)。  
   
- 有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  
+   有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。  
   
 ###  <a name="ManageErrors"></a> 管理验证错误  
  在开发过程中，你可能需要在验证期间禁止显示报告的某些冲突。 例如，你可能希望禁止显示你已解决或与特定情形不相关的错误。 禁止显示错误时，最好在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中记录工作项。  
@@ -152,9 +152,9 @@ ms.locfileid: "49173714"
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>为验证错误创建工作项  
   
--   在中**错误列表**窗口中，右键单击错误，指向**创建工作项**，然后单击你想要创建的工作项的类型。  
+- 在中**错误列表**窗口中，右键单击错误，指向**创建工作项**，然后单击你想要创建的工作项的类型。  
   
- 使用这些任务来管理中的验证错误**错误列表**窗口：  
+  使用这些任务来管理中的验证错误**错误列表**窗口：  
   
 |**若要**|**请执行以下步骤**|  
 |------------|----------------------------|  
@@ -176,29 +176,29 @@ ms.locfileid: "49173714"
   
  \- 或 -  
   
-1.  在中**解决方案资源管理器**，右键单击包含层关系图或关系图的建模项目，然后单击**属性**。  
+1. 在中**解决方案资源管理器**，右键单击包含层关系图或关系图的建模项目，然后单击**属性**。  
   
-2.  在中**属性**窗口中，将建模项目**验证体系结构**属性设置为**True**。  
+2. 在中**属性**窗口中，将建模项目**验证体系结构**属性设置为**True**。  
   
-     这将在验证过程中包括建模项目。  
+    这将在验证过程中包括建模项目。  
   
-3.  在中**解决方案资源管理器**，单击你想要用于验证的层关系图 (.layerdiagram) 文件。  
+3. 在中**解决方案资源管理器**，单击你想要用于验证的层关系图 (.layerdiagram) 文件。  
   
-4.  在中**属性**窗口中，请确保关系图的**生成操作**属性设置为**Validate**。  
+4. 在中**属性**窗口中，请确保关系图的**生成操作**属性设置为**Validate**。  
   
-     这将在验证过程中包括层关系图。  
+    这将在验证过程中包括层关系图。  
   
- 若要管理错误列表窗口中的错误，请参阅[管理验证错误](#ManageErrors)。  
+   若要管理错误列表窗口中的错误，请参阅[管理验证错误](#ManageErrors)。  
   
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>在 Team Foundation Build 期间自动验证代码  
   
-1.  在中**团队资源管理器**，双击生成定义，然后单击**进程**。  
+1. 在中**团队资源管理器**，双击生成定义，然后单击**进程**。  
   
-2.  下**生成过程参数**，展开**编译**，并键入以下内容中的**MSBuild 参数**参数：  
+2. 下**生成过程参数**，展开**编译**，并键入以下内容中的**MSBuild 参数**参数：  
   
-     `/p:ValidateArchitecture=true`  
+    `/p:ValidateArchitecture=true`  
   
- 有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。 有关 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的详细信息，请参阅：  
+   有关验证错误的详细信息，请参阅[了解和纠正层验证错误](#UnderstandingValidationErrors)。 有关 [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] 的详细信息，请参阅：  
   
 -   [生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
@@ -220,13 +220,13 @@ ms.locfileid: "49173714"
 ##  <a name="UnderstandingValidationErrors"></a> 了解和解决层验证错误  
  在对照层关系图验证代码时，如果代码与设计发生冲突，则会出现验证错误。 例如，以下情况可能导致发生验证错误：  
   
--   将项目指派给了错误的层。 在这种情况下，请移动项目。  
+- 将项目指派给了错误的层。 在这种情况下，请移动项目。  
   
--   项目（例如类）以与你的体系结构相冲突的方式使用了其他类。 在这种情况下，请重构代码以移除依赖关系。  
+- 项目（例如类）以与你的体系结构相冲突的方式使用了其他类。 在这种情况下，请重构代码以移除依赖关系。  
   
- 若要解决这些错误，请更新代码，直至验证过程中不出现其他错误为止。 可以反复执行此任务。  
+  若要解决这些错误，请更新代码，直至验证过程中不出现其他错误为止。 可以反复执行此任务。  
   
- 以下各节描述这些错误中使用的语法，解释了这些错误的含义，并提供了纠正或管理这些错误的方法。  
+  以下各节描述这些错误中使用的语法，解释了这些错误的含义，并提供了纠正或管理这些错误的方法。  
   
 |**语法**|**说明**|  
 |----------------|---------------------|  

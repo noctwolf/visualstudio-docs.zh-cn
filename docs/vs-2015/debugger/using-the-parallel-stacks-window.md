@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 353d9a39a299c0803bb4f27843fcae43375105cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3be45a598535d81e23cd32ff4d30045ae2ac8dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182164"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891721"
 ---
 # <a name="using-the-parallel-stacks-window"></a>使用“并行堆栈”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,21 +99,21 @@ ms.locfileid: "49182164"
 ## <a name="tasks-view"></a>任务视图  
  如果使用你的应用程序<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象 （托管代码） 或`task_handle`表达并行性的对象 （本机代码），您可以使用并行堆栈窗口工具栏中的组合框切换到*任务视图*。 任务视图显示任务（而不是线程）的调用堆栈。 任务视图与线程视图不同，如下所示：  
   
--   不显示未运行任务的线程的调用堆栈。  
+- 不显示未运行任务的线程的调用堆栈。  
   
--   在顶部和底部对运行任务的线程的调用堆栈进行直观的修剪，以便显示与任务关系最密切的帧。  
+- 在顶部和底部对运行任务的线程的调用堆栈进行直观的修剪，以便显示与任务关系最密切的帧。  
   
--   当一个线程上有多个任务时，会将这些任务的调用堆栈拆分为单独的节点。  
+- 当一个线程上有多个任务时，会将这些任务的调用堆栈拆分为单独的节点。  
   
- 下图右侧显示的是并行堆栈任务视图，左侧显示的是对应的线程视图。  
+  下图右侧显示的是并行堆栈任务视图，左侧显示的是对应的线程视图。  
   
- ![任务并行堆栈窗口中的视图](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
+  ![任务并行堆栈窗口中的视图](../debugger/media/parallel-tasksview.png "Parallel_TasksView")  
   
- 若要查看整个调用堆栈，只需切换回线程视图通过右击堆栈帧，然后单击**转到线程**。  
+  若要查看整个调用堆栈，只需切换回线程视图通过右击堆栈帧，然后单击**转到线程**。  
   
- 如上表所述，将鼠标指针悬停在方法上下文的上方，即可看到附加信息。 下图显示了线程视图和任务视图的工具提示中的信息。  
+  如上表所述，将鼠标指针悬停在方法上下文的上方，即可看到附加信息。 下图显示了线程视图和任务视图的工具提示中的信息。  
   
- ![并行堆栈窗口中的工具提示](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
+  ![并行堆栈窗口中的工具提示](../debugger/media/parallel-stack-tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>方法视图  
  在线程视图或任务视图中，可以通过单击工具栏上的“方法视图”图标，以当前方法为中心显示图形。 方法视图非常清晰地显示了调用当前方法或被当前方法调用的所有线程上的所有方法。 下图显示了一个线程视图，以及同样的信息在方法视图中的显示情况。  
