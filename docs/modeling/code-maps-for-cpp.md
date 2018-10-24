@@ -9,20 +9,20 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d274241700dfdac393544f554f7025ea4d0bcb46
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 6e2925eb3bfaf64a48b36c3c7205dce36538123c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34263055"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823567"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 项目的代码图
 
 如果要创建更多 C++ 项目的完整代码图，请在这些项目上设置浏览信息编译器选项 (**/FR**)。 否则，将出现一条消息并提示你设置此选项。 如果选择“确定” ，就只会为当前代码图设置选项。 可以选择隐藏所有之后的代码图的信息。
 
-打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，你可能不能为标头创建代码图 (*.h*或`#include`) 文件，直到 IntelliSense 数据库完成更新。 你可在 Visual Studio 状态栏中监视更新进度。
+打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，您可能不能创建标头的代码图 (*.h*或`#include`) 文件，直到 IntelliSense 数据库完成更新。 你可在 Visual Studio 状态栏中监视更新进度。
 
-- 若要查看所有源代码文件和你的解决方案中的标头文件之间的依赖关系，选择**体系结构** > **生成包含文件的关系图**。
+- 若要查看所有源代码文件和你的解决方案中的标头文件之间的依赖关系，请选择**体系结构** > **生成包含文件的关系图**。
 
    ![本机代码的依赖项关系图](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -30,7 +30,7 @@ ms.locfileid: "34263055"
 
    ![.h 文件的第一级依赖项关系图](../modeling/media/dependencygraph_native_firstlevel.png)
 
-## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>故障排除 C 和 c + + 代码的代码图
+## <a name="troubleshoot-code-maps-for-c-and-c-code"></a>故障排除 C 和 c + + 代码的代码的图
 
 C 和 C++ 代码不支持这些项：
 
@@ -38,13 +38,13 @@ C 和 C++ 代码不支持这些项：
 
 - 大多数“显示”  菜单项不适用于 C 和 C++ 代码。
 
-创建用于 C 和 c + + 代码的代码图时，可能会发生这些问题：
+创建针对 C 和 c + + 代码的代码图时，可能会出现这些问题：
 
 |**问题**|**可能的原因**|**解决方法**|
-|---------------|------------------------|--------------------|
+|-|-|-|
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|
-|当你尝试生成从一个代码图时，visual Studio 变得无响应**体系结构**菜单。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> .pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|
-|禁用 IntelliSense 浏览器数据库的某些设置。|在 Visual Studio 可能已禁用某些 IntelliSense 设置**选项**对话框。|打开设置以启用它们。<br /><br /> 请参阅[选项、 文本编辑器、 C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
+|当你尝试生成从代码图时，visual Studio 停止响应**体系结构**菜单。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> .pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|
+|禁用 IntelliSense 浏览器数据库的某些设置。|可能会在 Visual Studio 中禁用某些 IntelliSense 设置**选项**对话框。|打开设置以启用它们。<br /><br /> 请参阅[选项，文本编辑器，C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
 |消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。|
 ||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。|
 ||无法在预期位置打开或找到 .pdb 文件。|确保 .pdb 文件位于预期位置。|
@@ -53,4 +53,4 @@ C 和 C++ 代码不支持这些项：
 
 ## <a name="see-also"></a>请参阅
 
-- [使用代码图中的映射相关性](../modeling/map-dependencies-across-your-solutions.md)
+- [使用代码映射来映射依赖项](../modeling/map-dependencies-across-your-solutions.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: db34be21836e4c317c5ad70c6874b21081da931d
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 56088e45af5ed45b3a303ffc99679e77b51f56ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498975"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826506"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常见问题： 将外接程序转换为 VSPackage 扩展
 外接程序现在已弃用。 若要使新的 Visual Studio 扩展，您需要创建 VSIX 扩展。 以下是一些有关如何将 Visual Studio 外接程序转换为 VSIX 扩展的常见问题的答案。  
@@ -58,94 +58,94 @@ ms.locfileid: "39498975"
 ##  <a name="BKMK_RunAddin"></a> 如何在 VSPackage 中运行我的外接程序代码？  
  通常采用以下两种方式之一来运行外接程序代码：  
   
--   由菜单命令触发 (代码位于`IDTCommandTarget.Exec`方法。)  
+- 由菜单命令触发 (代码位于`IDTCommandTarget.Exec`方法。)  
   
--   启动时自动运行（代码位于 `OnConnection` 事件处理程序中。）  
+- 启动时自动运行（代码位于 `OnConnection` 事件处理程序中。）  
   
- 你可以在 VSPackage 中执行相同的操作。 以下显示了如何将一些外接程序代码添加到回调方法中：  
+  你可以在 VSPackage 中执行相同的操作。 以下显示了如何将一些外接程序代码添加到回调方法中：  
   
 ### <a name="to-implement-a-menu-command-in-a-vspackage"></a>在 VSPackage 中实现菜单命令  
   
-1.  创建具有菜单命令的 VSPackage。 (有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
+1. 创建具有菜单命令的 VSPackage。 (有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
   
-2.  打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)  
+2. 打开包含 VSPackage 定义的文件。 (在 C# 项目中，它具有*\<你的项目名称 > Package.cs*。)  
   
-3.  将以下 `using` 语句添加到文件中：  
+3. 将以下 `using` 语句添加到文件中：  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-4.  查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：  
+4. 查找 `MenuItemCallback` 方法。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 <xref:EnvDTE80.DTE2> 对象：  
   
-    ```csharp  
-    DTE2 dte = (DTE2)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE2 dte = (DTE2)GetService(typeof(DTE));  
+   ```  
   
-5.  添加外接程序在其 `IDTCommandTarget.Exec` 方法中所具有的代码。 例如，下面是一些代码添加到一个新窗格**输出**窗口和打印"一些文本"在新窗格中的。  
+5. 添加外接程序在其 `IDTCommandTarget.Exec` 方法中所具有的代码。 例如，下面是一些代码添加到一个新窗格**输出**窗口和打印"一些文本"在新窗格中的。  
   
-    ```csharp  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        DTE2 dte = (DTE2) GetService(typeof(DTE));  
-        OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
+   ```csharp  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       DTE2 dte = (DTE2) GetService(typeof(DTE));  
+       OutputWindow outputWindow = dte.ToolWindows.OutputWindow;  
   
-        OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
-        outputWindowPane.OutputString("Some Text");  
-    }  
+       OutputWindowPane outputWindowPane = outputWindow.OutputWindowPanes.Add("A New Pane");  
+       outputWindowPane.OutputString("Some Text");  
+   }  
   
-    ```  
+   ```  
   
-6.  生成并运行此项目。 按**F5**或选择**启动**上**调试**工具栏。 Visual Studio 的实验实例中**工具**菜单上应具有名为的按钮**我的命令名**。 当选择此按钮时，单词**一些文本**应出现在**输出**窗口窗格。 (您可能需要打开**输出**窗口。)  
+6. 生成并运行此项目。 按**F5**或选择**启动**上**调试**工具栏。 Visual Studio 的实验实例中**工具**菜单上应具有名为的按钮**我的命令名**。 当选择此按钮时，单词**一些文本**应出现在**输出**窗口窗格。 (您可能需要打开**输出**窗口。)  
   
- 你还可以使代码在启动时运行。 但是，通常反对将此方法用于 VSPackage 扩展。 如果在 Visual Studio 启动时尝试加载太多扩展，则启动时间可能会明显加长。 更好的方法是，仅在满足一些条件（例如打开解决方案）时才自动加载 VSPackage。  
+   你还可以使代码在启动时运行。 但是，通常反对将此方法用于 VSPackage 扩展。 如果在 Visual Studio 启动时尝试加载太多扩展，则启动时间可能会明显加长。 更好的方法是，仅在满足一些条件（例如打开解决方案）时才自动加载 VSPackage。  
   
- 此过程显示了如何在打开解决方案时自动加载的 VSPackage 中运行外接程序代码：  
+   此过程显示了如何在打开解决方案时自动加载的 VSPackage 中运行外接程序代码：  
   
 ### <a name="to-autoload-a-vspackage"></a>自动加载 VSPackage  
   
-1.  使用 Visual Studio 包项目项创建一个 VSIX 项目。 (若要执行此操作的步骤，请参阅[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)。 只需添加**Visual Studio 包**改为项目项。)VSIX 项目命名为**命名为 TestAutoload**。  
+1. 使用 Visual Studio 包项目项创建一个 VSIX 项目。 (若要执行此操作的步骤，请参阅[如何开始开发的 VSIX 扩展？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)。 只需添加**Visual Studio 包**改为项目项。)VSIX 项目命名为**命名为 TestAutoload**。  
   
-2.  打开*TestAutoloadPackage.cs*。 查找声明程序包类所在的行：  
+2. 打开*TestAutoloadPackage.cs*。 查找声明程序包类所在的行：  
   
-    ```csharp  
-    public sealed class <name of your package>Package : Package  
-    ```  
+   ```csharp  
+   public sealed class <name of your package>Package : Package  
+   ```  
   
-3.  此行上方是一组特性。 添加此特性：  
+3. 此行上方是一组特性。 添加此特性：  
   
-    ```csharp  
-    [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
+   ```  
   
-4.  中设置断点`Initialize()`方法，并开始调试 (**F5**)。  
+4. 中设置断点`Initialize()`方法，并开始调试 (**F5**)。  
   
-5.  在实验实例中，打开一个项目。 应该加载 VSPackage，并且应该命中断点。  
+5. 在实验实例中，打开一个项目。 应该加载 VSPackage，并且应该命中断点。  
   
- 通过使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 的字段，可指定要在其中加载你的 VSPackage 的其他上下文。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
+   通过使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 的字段，可指定要在其中加载你的 VSPackage 的其他上下文。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
   
 ## <a name="how-can-i-get-the-dte-object"></a>如何获取 DTE 对象？  
  如果你的外接程序无法显示 UI（例如，菜单命令、工具栏按钮或工具窗口），则只要你从 VSPackage 中获取 DTE 自动化对象，你可能就能够按原样使用代码。 操作方法如下：  
   
 ### <a name="to-get-the-dte-object-from-a-vspackage"></a>从 VSPackage 中获取 DTE 对象  
   
-1.  在 VSIX 项目与 Visual Studio 包项目模板中，寻找*\<项目名称 > Package.cs*文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。  
+1. 在 VSIX 项目与 Visual Studio 包项目模板中，寻找*\<项目名称 > Package.cs*文件。 这是派生自 <xref:Microsoft.VisualStudio.Shell.Package> 的类；它可以帮助你与 Visual Studio 进行交互。 在这种情况下，请使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 来获取 <xref:EnvDTE80.DTE2> 对象。  
   
-2.  添加以下 `using` 语句：  
+2. 添加以下 `using` 语句：  
   
-    ```csharp  
-    using EnvDTE;  
-    using EnvDTE80;  
-    ```  
+   ```csharp  
+   using EnvDTE;  
+   using EnvDTE80;  
+   ```  
   
-3.  查找 `Initialize` 方法。 此方法将处理你在程序包向导中指定的命令。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 DTE 对象：  
+3. 查找 `Initialize` 方法。 此方法将处理你在程序包向导中指定的命令。 添加对 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的调用以获取 DTE 对象：  
   
-    ```csharp  
-    DTE dte = (DTE)GetService(typeof(DTE));  
-    ```  
+   ```csharp  
+   DTE dte = (DTE)GetService(typeof(DTE));  
+   ```  
   
- 拥有 <xref:EnvDTE.DTE> 自动化对象之后，你可以将其余的外接程序代码添加到项目中。 如果你需要 <xref:EnvDTE80.DTE2> 对象，你可以执行相同的操作。  
+   拥有 <xref:EnvDTE.DTE> 自动化对象之后，你可以将其余的外接程序代码添加到项目中。 如果你需要 <xref:EnvDTE80.DTE2> 对象，你可以执行相同的操作。  
   
 ## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>如何将我的外接程序中的菜单命令和工具栏按钮更改为 VSPackage 样式？  
  VSPackage 扩展使用 *.vsct*文件创建大多数菜单命令、 工具栏、 工具栏按钮和其他 UI。 **自定义命令**项目项模板提供的选项以在创建命令**工具**菜单。 有关详细信息，请参阅[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  

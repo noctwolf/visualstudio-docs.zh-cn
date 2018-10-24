@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: douge
-ms.openlocfilehash: dc3c19d7a2756e3716e76846ac468433d00cc1d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 005f9597abd1ce688724af9fcb167a626e4cd885
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815034"
 ---
 # <a name="creating-your-own-start-page"></a>创建你自己的起始页
 你可以通过使用“起始页”项目模板或通过创建一个空白“起始页”来创建自定义“起始页”。  
@@ -57,52 +57,52 @@ ms.locfileid: "49232071"
   
 #### <a name="to-create-a-blank-start-page-by-using-the-start-page-project-template"></a>若要通过使用“起始页”项目模板来创建空白“起始页”  
   
-1.  如前面过程中所述，通过使用“起始页”项目模板创建“起始页”项目。  
+1. 如前面过程中所述，通过使用“起始页”项目模板创建“起始页”项目。  
   
-2.  打开 StartPage.xaml。  
+2. 打开 StartPage.xaml。  
   
-3.  删除所有的页面内容，仅留下外部 xml 元素和所包含的网格 <xref:System.Windows.Controls.Grid> 元素，以使.xaml 文件类似于以下示例。  
+3. 删除所有的页面内容，仅留下外部 xml 元素和所包含的网格 <xref:System.Windows.Controls.Grid> 元素，以使.xaml 文件类似于以下示例。  
   
-    ```xaml
-       <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-                 xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
-                 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
-                 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
-             mc:Ignorable="d" 
-                 d:DesignHeight="600" d:DesignWidth="800">
-        <Grid>
-            <!--Add content here.-->
-        </Grid>
-    </Grid>
-    ```
+   ```xaml
+      <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:sp="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.StartPage"
+                xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.10.0"
+                xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.10.0"
+            mc:Ignorable="d" 
+                d:DesignHeight="600" d:DesignWidth="800">
+       <Grid>
+           <!--Add content here.-->
+       </Grid>
+   </Grid>
+   ```
       
-4.  删除任何不想使用的支持文件。  
+4. 删除任何不想使用的支持文件。  
   
-     你应该保留 .vsix 和 .pkgdef 文件以进行部署。  
+    你应该保留 .vsix 和 .pkgdef 文件以进行部署。  
   
- 或者，你可以通过创建具有正确标记结构，Visual Studio 可以识别的 XAML 文件来创建一个空白“起始页”。 然后，你可以添加标记和代码隐藏以获得所需的外观和功能。 有关详细信息，请参阅[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)。  
+   或者，你可以通过创建具有正确标记结构，Visual Studio 可以识别的 XAML 文件来创建一个空白“起始页”。 然后，你可以添加标记和代码隐藏以获得所需的外观和功能。 有关详细信息，请参阅[创建自定义起始页](../extensibility/creating-a-custom-start-page.md)。  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>测试并应用自定义起始页  
  在主实例经验证不会崩溃之前，请勿将其设置为运行自定义“起始页”。 测试自定义“起始页”后，你可以通过在 Visual Studio 的主实例中重复该过程的最后三个步骤以将其应用到你的系统。  
   
 #### <a name="to-test-a-custom-start-page"></a>若要测试自定义“起始页”  
   
-1.  按 F5。  
+1. 按 F5。  
   
-     新“起始页”已安装但未选中的情况下，会打开 Visual Studio 实验实例。  
+    新“起始页”已安装但未选中的情况下，会打开 Visual Studio 实验实例。  
   
-2.  在 Visual Studio 的实验实例中，在“工具”  菜单上，单击“选项” 。  
+2. 在 Visual Studio 的实验实例中，在“工具”  菜单上，单击“选项” 。  
   
-3.  在“选项”  对话框中，在“环境” 下，选择“启动” 。 然后，在“自定义起始页”  列表中，选择 .xaml 文件，然后单击“确定” 。  
+3. 在“选项”  对话框中，在“环境” 下，选择“启动” 。 然后，在“自定义起始页”  列表中，选择 .xaml 文件，然后单击“确定” 。  
   
-4.  在“视图”  菜单上，单击“起始页” 。  
+4. 在“视图”  菜单上，单击“起始页” 。  
   
-     将显示正在工作的“起始页”。 必须关闭实验实例，重新复制任何已更改的文件，然后再重新打开实验实例，以查看新的更改。  
+    将显示正在工作的“起始页”。 必须关闭实验实例，重新复制任何已更改的文件，然后再重新打开实验实例，以查看新的更改。  
   
- 你可以通过将 .vsix 文件从 bin\debug 目录上载到 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847) 网站，或上载到另一个网站或 Intranet 共享，来共享你的自定义“起始页”。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
+   你可以通过将 .vsix 文件从 bin\debug 目录上载到 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847) 网站，或上载到另一个网站或 Intranet 共享，来共享你的自定义“起始页”。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)   

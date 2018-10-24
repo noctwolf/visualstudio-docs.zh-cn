@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 598785a54980c73928a8d38b73fb105bc8bbe775
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ce3ef7b1d5fe975fdc2edc21a3dbe94fa873e96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813283"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>在 Windows 应用商店应用的 Visual Studio 调试会话中控制应用商店应用的执行 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,28 +55,28 @@ ms.locfileid: "49275517"
   
  [在“局部变量”窗口中查看变量数据](#BKMK_View_variable_data_in_the_Locals_window)  
   
--   [查看对象的变量的数据和原型链](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
+- [查看对象的变量的数据和原型链](#BKMK_View_variable_data_and_the_prototype_chain_of_an_object)  
   
--   [检查作用域链数据](#BKMK_Examine_scope_chain_data)  
+- [检查作用域链数据](#BKMK_Examine_scope_chain_data)  
   
- [使用“调用堆栈”窗口导航到代码](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
+  [使用“调用堆栈”窗口导航到代码](#BKMK_Navigate_to_code_by_using_the_Call_Stack_window)  
   
 ##  <a name="BKMK_Create_the_sample_app"></a> 创建示例应用  
  调试与代码有关，因此示例应用使用 Windows 应用商店应用的框架只是为了创建一个源文件，在该文件中可以查看调试会话导航的工作方式以及如何检查程序状态。 将调用的所有代码均从 default.js 文件的 `module` 函数进行调用。 不添加任何控件，并且不处理任何事件。  
   
-1.  **创建空白 JavaScript Windows 应用商店应用。** 打开 Visual Studio。 在主页上，选择 **“新建项目”** 链接。 在“新建项目”  对话框中，在“已安装”  列表中选择“JavaScript”  ，然后选择“Windows 应用商店” 。 在项目模板列表中，选择“空白应用程序” 。 Visual Studio 随即创建一个新解决方案和项目，并在代码编辑器中显示 default.htm 文件。  
+1. **创建空白 JavaScript Windows 应用商店应用。** 打开 Visual Studio。 在主页上，选择 **“新建项目”** 链接。 在“新建项目”  对话框中，在“已安装”  列表中选择“JavaScript”  ，然后选择“Windows 应用商店” 。 在项目模板列表中，选择“空白应用程序” 。 Visual Studio 随即创建一个新解决方案和项目，并在代码编辑器中显示 default.htm 文件。  
   
-     请注意加载到页面中的脚本文件。  
+    请注意加载到页面中的脚本文件。  
   
-    -   `base.js` 和 `ui.js` 文件用于创建 **Windows JavaScript 库**。 Windows JavaScript 库是一组 JavaScript 和 CSS 文件，通过这组文件，可更简便地创建使用 JavaScript 的 Windows 应用商店应用。 请将它与 HTML、CSS 和 Windows 运行时配合使用以创建应用。  
+   -   `base.js` 和 `ui.js` 文件用于创建 **Windows JavaScript 库**。 Windows JavaScript 库是一组 JavaScript 和 CSS 文件，通过这组文件，可更简便地创建使用 JavaScript 的 Windows 应用商店应用。 请将它与 HTML、CSS 和 Windows 运行时配合使用以创建应用。  
   
-    -   代码在 `default.js`  文件中启动。  
+   -   代码在 `default.js`  文件中启动。  
   
-2.  **打开 default.js 源文件。** 在解决方案资源管理器中打开**js**节点，然后选择`default.js`。  
+2. **打开 default.js 源文件。** 在解决方案资源管理器中打开**js**节点，然后选择`default.js`。  
   
-3.  **将页面内容替换为示例代码。** 从 `default.js` 文件中启动。 访问以下链接： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然后将 JavaScript 分中列出的代码复制到剪贴板上。 (选择**回**在浏览器或帮助查看器以返回到本快速入门页。)在 Visual Studio 编辑器中，将代码粘贴到当前为空的 `default.js` 中。 选择“Ctrl+ S”  以保存文件。  
+3. **将页面内容替换为示例代码。** 从 `default.js` 文件中启动。 访问以下链接： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然后将 JavaScript 分中列出的代码复制到剪贴板上。 (选择**回**在浏览器或帮助查看器以返回到本快速入门页。)在 Visual Studio 编辑器中，将代码粘贴到当前为空的 `default.js` 中。 选择“Ctrl+ S”  以保存文件。  
   
- 现在可以遵循本主题中的示例进行操作。  
+   现在可以遵循本主题中的示例进行操作。  
   
 ##  <a name="BKMK_Set_and_run_to_a_breakpoint__step_into_a_function__and_examine_program_data"></a> 设置和运行到断点、单步执行函数以及检查程序数据  
  用于启动调试会话的最常见方法是从“调试”  菜单中选择“启动调试”  （键盘：F5） 应用随即启动并一直继续执行到达到断点、手动挂起执行、发生异常或应用结束。  
@@ -88,45 +88,45 @@ ms.locfileid: "49275517"
 ###  <a name="BKMK_Example_1"></a> 示例 1  
  在此示例中，在 `module` 的 `default.js` 函数体中设置断点，因为它调用我们第一个用户语句。 随后单步执行函数，在调试器数据提示中查看变量值，然后停止调试。  
   
-1.  **设置断点。** 在调用 `callTrack = "module function";` 后紧接执行的语句 `app.start()`。 选择源代码编辑器的阴影滚动条槽中的行（键盘：将光标置于该行上并按 **F9** 键）。  
+1. **设置断点。** 在调用 `callTrack = "module function";` 后紧接执行的语句 `app.start()`。 选择源代码编辑器的阴影滚动条槽中的行（键盘：将光标置于该行上并按 **F9** 键）。  
   
-     ![在 example1 处设置断点](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
+    ![在 example1 处设置断点](../debugger/media/dbg-jsnav-example1-breakpoint.png "DBG_JSNAV_example1_breakpoint")  
   
-     该断点图标将显示在滚动条槽中。  
+    该断点图标将显示在滚动条槽中。  
   
-2.  **运行到断点处。** 通过在 **“调试”** on the **“启动调试”** （键盘：F5）  
+2. **运行到断点处。** 通过在 **“调试”** on the **“启动调试”** （键盘：F5）  
   
-     应用随即开始执行，并恰好在设置了断点的语句前挂起执行。 滚动条槽中的当前行图标标识你的位置，当前语句会突出显示。  
+    应用随即开始执行，并恰好在设置了断点的语句前挂起执行。 滚动条槽中的当前行图标标识你的位置，当前语句会突出显示。  
   
-     ![运行到断点](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
+    ![运行到断点](../debugger/media/dbg-jsnav-example1-run-to-breakpoint.png "DBG_JSNAV_example1_run_to_breakpoint")  
   
-     你现在可控制应用的执行，并且可以在逐步执行程序语句时检查程序状态。  
+    你现在可控制应用的执行，并且可以在逐步执行程序语句时检查程序状态。  
   
-3.  **单步执行函数。** 在“新建项目”  “调试”菜单上，选择“单步执行”  （键盘： **F11**）。  
+3. **单步执行函数。** 在“新建项目”  “调试”菜单上，选择“单步执行”  （键盘： **F11**）。  
   
-     ![单步执行代码行](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
+    ![单步执行代码行](../debugger/media/dbg-jsnav-example1-step-into.png "DBG_JSNAV_example1_step_into")  
   
-     请注意，调试器会移动到下一行，这是对 `example1` 函数的调用。 再次选择“单步执行”  。 调试器会移动到 `example1` 函数的第一个代码行。 尚未执行突出显示的行，但已在调用堆栈上加载了该函数，并分配了局部变量的内存。  
+    请注意，调试器会移动到下一行，这是对 `example1` 函数的调用。 再次选择“单步执行”  。 调试器会移动到 `example1` 函数的第一个代码行。 尚未执行突出显示的行，但已在调用堆栈上加载了该函数，并分配了局部变量的内存。  
   
-4.  单步执行某个代码行时，调试器会执行以下操作之一：  
+4. 单步执行某个代码行时，调试器会执行以下操作之一：  
   
-    -   如果下一个语句不是对解决方案中的函数的调用，则调试器会执行该语句，移动到下一个语句中，然后挂起执行。  
+   - 如果下一个语句不是对解决方案中的函数的调用，则调试器会执行该语句，移动到下一个语句中，然后挂起执行。  
   
-    -   如果语句是对解决方案中的函数的调用，则调试器会移动到调用的函数的入口点，然后挂起执行。  
+   - 如果语句是对解决方案中的函数的调用，则调试器会移动到调用的函数的入口点，然后挂起执行。  
   
      继续单步执行 `example1` 的语句，直到达到退出点。 调试器会突出显示函数的右大括号。  
   
-5.  **在数据提示中查看变量值。** 继续单步执行 `example1` 的语句，直到达到退出点。 调试器会突出显示函数的右大括号。 鼠标悬停在变量名上方时，变量的名称和值会显示在数据提示中。  
+5. **在数据提示中查看变量值。** 继续单步执行 `example1` 的语句，直到达到退出点。 调试器会突出显示函数的右大括号。 鼠标悬停在变量名上方时，变量的名称和值会显示在数据提示中。  
   
-     ![在数据提示中查看变量值](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
+    ![在数据提示中查看变量值](../debugger/media/dbg-jsnav-data-tip.png "DBG_JSNAV_data_tip")  
   
-6.  **添加为 callTrack 变量监视。** `callTrack` 变量在本快速入门全篇中用于显示示例中调用的函数。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在编辑器中选择变量名，然后从快捷菜单中选择“添加监视”  。  
+6. **添加为 callTrack 变量监视。** `callTrack` 变量在本快速入门全篇中用于显示示例中调用的函数。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在编辑器中选择变量名，然后从快捷菜单中选择“添加监视”  。  
   
-     ![监视变量](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
+    ![监视变量](../debugger/media/dbg-jsnav-watch-window.png "DBG_JSNAV_watch_window")  
   
-     可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如数据提示窗口中的值）。 各个调试会话中均会保存受监视的变量。  
+    可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如数据提示窗口中的值）。 各个调试会话中均会保存受监视的变量。  
   
-7.  **停止调试。** 在“新建项目”  “调试”菜单上，选择“单步执行” **Stop ging** （键盘： **Shift+F5**）。 这会结束调试会话。  
+7. **停止调试。** 在“新建项目”  “调试”菜单上，选择“单步执行” **Stop ging** （键盘： **Shift+F5**）。 这会结束调试会话。  
   
 ##  <a name="BKMK_Step_into__over__and_out_of_functions"></a> 单步执行、逐过程执行和跳出执行函数  
  与单步执行由父函数调用的函数相反，逐过程执行函数会执行子函数，然后在父函数继续时在调用函数中挂起执行。 当你熟悉函数的工作方式，并且确定其执行不会影响正在调查的问题时，可以逐过程执行函数。  
@@ -241,13 +241,13 @@ ms.locfileid: "49275517"
 ##  <a name="BKMK_Examine_scope_chain_data"></a> 检查作用域链数据  
  函数的  作用域链包含所有处于活动状态且该函数可访问的变量。 全局变量是作用域链的一部分，如同定义当前正在执行的函数的函数中定义的任何对象（包括函数）也是作用域链的一部分一样。 例如，在 `callTrack` 函数中定义的任何函数均可访问在 `module` 的 `default.js` 函数中定义的 `module` 变量。 每个作用域在“局部变量”窗口中单独列出。  
   
--   当前正在执行的函数的变量在该窗口的顶部列出。  
+- 当前正在执行的函数的变量在该窗口的顶部列出。  
   
--   作用域链中每个函数作用域的变量在该函数的“[作用域]”  节点下列出。 作用域函数按其顺序（从定义当前函数的函数到链中的最外侧函数）在链中列出。  
+- 作用域链中每个函数作用域的变量在该函数的“[作用域]”  节点下列出。 作用域函数按其顺序（从定义当前函数的函数到链中的最外侧函数）在链中列出。  
   
--    “[全局]”节点列出在任何函数之外定义的全局对象。  
+-  “[全局]”节点列出在任何函数之外定义的全局对象。  
   
- 作用域链可能会让人感到困惑，因此最好通过示例进行说明。 在下面的示例中，你可以看到 `module` 函数如何创建自己的作用域，以及如何通过创建闭包创建另一个作用域级别。  
+  作用域链可能会让人感到困惑，因此最好通过示例进行说明。 在下面的示例中，你可以看到 `module` 函数如何创建自己的作用域，以及如何通过创建闭包创建另一个作用域级别。  
   
 ###  <a name="BKMK_Example_4"></a> 示例 4  
   

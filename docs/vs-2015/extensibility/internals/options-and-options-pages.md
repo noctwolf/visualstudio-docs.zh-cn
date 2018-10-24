@@ -19,12 +19,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d61d2c89a163cf111a2d33701a463e018f8f1488
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9cd4ea3b1465686ee2c0a0ebcfdc4e3aa2e9e56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816347"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ ms.locfileid: "49261035"
 ## <a name="option-attributes-and-layout"></a>属性选项和布局  
  此页提供了用户界面 (UI) 确定自定义选项页中的选项的外观。 布局、 设置标签和通用选项页中的选项的说明确定由以下属性：  
   
--   <xref:System.ComponentModel.CategoryAttribute> 确定选项的类别。  
+- <xref:System.ComponentModel.CategoryAttribute> 确定选项的类别。  
   
--   <xref:System.ComponentModel.DisplayNameAttribute> 确定选项的显示名称。  
+- <xref:System.ComponentModel.DisplayNameAttribute> 确定选项的显示名称。  
   
--   <xref:System.ComponentModel.DescriptionAttribute> 确定选项的说明。  
+- <xref:System.ComponentModel.DescriptionAttribute> 确定选项的说明。  
   
-    > [!NOTE]
-    >  等效的属性、 SRCategory、 LocDisplayName 和 SRDescription，使用字符串资源本地化和中定义[托管的项目示例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
+  > [!NOTE]
+  >  等效的属性、 SRCategory、 LocDisplayName 和 SRDescription，使用字符串资源本地化和中定义[托管的项目示例](http://go.microsoft.com/fwlink/?LinkId=122774)。  
   
- 考虑以下代码片断：  
+  考虑以下代码片断：  
   
- [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
- [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
+  [!code-csharp[VSSDKSupportForOptionsPages#3](../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs#3)]
+  [!code-vb[VSSDKSupportForOptionsPages#3](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb#3)]  
   
- 在作为选项页上会显示 OptionInteger 选项**整数选项**中**我的选项**类别。 如果选择了说明，**我整数选项**，将显示在描述框中。  
+  在作为选项页上会显示 OptionInteger 选项**整数选项**中**我的选项**类别。 如果选择了说明，**我整数选项**，将显示在描述框中。  
   
 ## <a name="accessing-options-pages-from-another-vspackage"></a>从另一个 VSPackage 访问选项页  
  托管和管理选项页的 VSPackage 可以以编程方式访问从另一个 VSPackage 使用自动化模型。 例如，下面的代码中的 VSPackage 注册为托管选项页。  

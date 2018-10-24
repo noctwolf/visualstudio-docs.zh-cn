@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f58737a75564bc31ee3916c3a6876a03e25000cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86d1959d6850ae73d38970a197f8b369310fac3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189249"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824420"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>分析应用商店应用中的能量使用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Visual Studio 的 **“能耗”** 探查器可以帮助你分析低功率平板
   
  “能量消耗”探查器使用下面 *功率* 和 *能量*的定义：  
   
--   功率 用于衡量一段时间内做功而用力的速率。 在电力学中，功率的标准单位是瓦特 ，其定义为一安培电流流经一伏特的电位差时做功的速率。 在“电源使用”  关系图中，单位显示为毫瓦“mW”  ，这是一瓦的千分之一。  
+- 功率 用于衡量一段时间内做功而用力的速率。 在电力学中，功率的标准单位是瓦特 ，其定义为一安培电流流经一伏特的电位差时做功的速率。 在“电源使用”  关系图中，单位显示为毫瓦“mW”  ，这是一瓦的千分之一。  
   
-     请注意，由于功率是一种速率，它有方向（功可以在一段时间内增加或减少）和速度（功的增加量或减少量）。  
+   请注意，由于功率是一种速率，它有方向（功可以在一段时间内增加或减少）和速度（功的增加量或减少量）。  
   
--   能量 以电容或电势的形式衡量总功率数，如电池的功率容量或在一段时间内消耗的总功率。 能量单位为瓦时，即一瓦持续作用一小时所产生的功率数量。 在 **“能量摘要”** 中，单位显示为毫瓦时 **“mW-h”**。  
+- 能量 以电容或电势的形式衡量总功率数，如电池的功率容量或在一段时间内消耗的总功率。 能量单位为瓦时，即一瓦持续作用一小时所产生的功率数量。 在 **“能量摘要”** 中，单位显示为毫瓦时 **“mW-h”**。  
   
- ![能量容量、已用电量和已用总能量](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
+  ![能量容量、已用电量和已用总能量](../profiling/media/energyprof-capcitypowerused.png "ENERGYPROF_CapcityPowerUsed")  
   
- 例如，平板电脑中充满电的电池存储了一定数量的能量。 当能量用于执行网络通信、计算值或显示图像等任务时，电池的功率以不同的速率消耗。 对于任意一段时间，消耗的功率的总和还可按能量进行衡量。  
+  例如，平板电脑中充满电的电池存储了一定数量的能量。 当能量用于执行网络通信、计算值或显示图像等任务时，电池的功率以不同的速率消耗。 对于任意一段时间，消耗的功率的总和还可按能量进行衡量。  
   
 ##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> 用用户标记标识方案  
  可以向分析数据添加“用户标记”  以帮助标识时间线标尺中的区域。  
@@ -65,8 +65,8 @@ Visual Studio 的 **“能耗”** 探查器可以帮助你分析低功率平板
  执行此方法时，用户标记将与消息一起添加到分析数据中。  
   
 > [!NOTE]
->  -   Windows.Foundation.Diagnostics LoggingChannel 实现[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)接口 (计划为[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx)在 C# 和 VB 中)。若要避免操作系统资源泄露，请调用[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 日志记录通道完成之后。  
-> -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
+> - Windows.Foundation.Diagnostics LoggingChannel 实现[Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx)接口 (计划为[System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx)在 C# 和 VB 中)。若要避免操作系统资源泄露，请调用[LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)（) (C# 和 VB 中 Windows.Foundation.Diagnostics.LoggingChannel.Dispose()) 日志记录通道完成之后。  
+>   -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
   
  有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) 。  
   
@@ -86,9 +86,9 @@ if (performance && performance.mark) {
  若要获取合理估计值，你需要分析由电池供电的低功率设备上的应用程序的能量使用情况。 由于 Visual Studio 不能在大多数的此类设备上运行，因此你需要使用 Visual Studio 远程工具将 Visual Studio 计算机连接到此类设备。 若要连接到远程设备，需要配置 Visual Studio 项目和此远程设备。 有关详细信息，请参阅[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
 > [!TIP]
->  -   我们建议不要在 Windows 应用商店模拟器或 Visual Studio 计算机上进行能量分析。 在实际的设备上进行分析可获得更加真实的数据。  
-> -   在由电池供电的目标设备上进行分析。  
-> -   关闭可能使用相同资源（网络、CPU 或显示屏）的其他应用程序。  
+> - 我们建议不要在 Windows 应用商店模拟器或 Visual Studio 计算机上进行能量分析。 在实际的设备上进行分析可获得更加真实的数据。  
+>   -   在由电池供电的目标设备上进行分析。  
+>   -   关闭可能使用相同资源（网络、CPU 或显示屏）的其他应用程序。  
   
 ##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> 收集应用的能量分布曲线数据  
   
@@ -112,15 +112,15 @@ if (performance && performance.mark) {
 ##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> 收集已安装应用的能量分布曲线数据  
  能耗工具只能在从 Visual Studio 解决方案启动或从 Windows 应用商店中安装的 Window Store 8.1 应用程序上运行。 在 Visual Studio 中打开解决方案时，默认目标为 **“启动项目”**。 面向已安装的应用程序：  
   
-1.  选择 **“更改目标”** ，然后选择 **“已安装的应用程序”**。  
+1. 选择 **“更改目标”** ，然后选择 **“已安装的应用程序”**。  
   
-2.  从 **“选择已安装的应用程序包”** 列表中选择目标。  
+2. 从 **“选择已安装的应用程序包”** 列表中选择目标。  
   
-3.  选择诊断中心页面上的 **“能耗”** 。  
+3. 选择诊断中心页面上的 **“能耗”** 。  
   
-4.  选择 **“启动”** 开始分析。  
+4. 选择 **“启动”** 开始分析。  
   
- 若要停止分析，请切回到 Visual Studio (Alt + Tab) 并在“诊断中心”页面上选择 **“停止收集”** 。  
+   若要停止分析，请切回到 Visual Studio (Alt + Tab) 并在“诊断中心”页面上选择 **“停止收集”** 。  
   
 ##  <a name="BKMK_Analyze_energy_profile_data"></a> 分析能量分布曲线数据  
  能量分布曲线数据显示在 Visual Studio 文档窗口中：  

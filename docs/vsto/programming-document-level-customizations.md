@@ -30,61 +30,61 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ee297628e64d61e108483565613951d0b490a8b0
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d9c7fa658c24caa65b3c955002ffeeaff6573c55
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812226"
 ---
 # <a name="program-document-level-customizations"></a>文档级自定义项进行编程
   在使用文档级自定义项扩展 Microsoft Office Word 或 Microsoft Office Excel 时，可以执行以下任务：  
   
--   通过使用应用程序的对象模型对其进行自动化。  
+- 通过使用应用程序的对象模型对其进行自动化。  
   
--   向文档图面添加控件。  
+- 向文档图面添加控件。  
   
--   从自定义程序集调用文档中的 Visual Basic for Applications (VBA) 代码。  
+- 从自定义程序集调用文档中的 Visual Basic for Applications (VBA) 代码。  
   
--   从 VBA 调用自定义程序集中的代码。  
+- 从 VBA 调用自定义程序集中的代码。  
   
--   在文档位于未安装 Microsoft Office 的服务器上时管理其特定方面。  
+- 在文档位于未安装 Microsoft Office 的服务器上时管理其特定方面。  
   
--   自定义应用程序的用户界面 (UI)。  
+- 自定义应用程序的用户界面 (UI)。  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 在文档级项目中编写代码与在 Visual Studio 中编写其他类型项目的代码在某些方面存在不同。 其中许多差异是由 Office 对象模型公开给托管代码的方式引起的。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
+  在文档级项目中编写代码与在 Visual Studio 中编写其他类型项目的代码在某些方面存在不同。 其中许多差异是由 Office 对象模型公开给托管代码的方式引起的。 有关详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
   
- 有关文档级自定义项和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+  有关文档级自定义项和其他类型的解决方案可以通过使用 Visual Studio 中的 Office 开发工具创建的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
 ## <a name="use-the-generated-classes-in-document-level-projects"></a>在文档级项目中使用生成的类  
  创建文档级项目时，Visual Studio 将在项目中自动生成一个可用开始编写代码的类。 Visual Studio 针对 Word 和 Excel 生成不同的类：  
   
--   在 Word 文档级项目中，默认情况下此类称为 `ThisDocument` 。  
+- 在 Word 文档级项目中，默认情况下此类称为 `ThisDocument` 。  
   
--   Excel 文档级项目具有多个生成的类：一个用于工作簿本身，一个用于每一工作表。 默认情况下，这些类具有以下名称：  
+- Excel 文档级项目具有多个生成的类：一个用于工作簿本身，一个用于每一工作表。 默认情况下，这些类具有以下名称：  
   
-    -   `ThisWorkbook`  
+  -   `ThisWorkbook`  
   
-    -   `Sheet1`  
+  -   `Sheet1`  
   
-    -   `Sheet2`  
+  -   `Sheet2`  
   
-    -   `Sheet3`  
+  -   `Sheet3`  
   
- 生成的类包含在打开或关闭文档时调用的事件处理程序。 若要在打开文档时运行代码，请将代码添加到 `Startup` 事件处理程序。 若要在关闭文档后立即运行代码，请将代码添加到 `Shutdown` 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
+  生成的类包含在打开或关闭文档时调用的事件处理程序。 若要在打开文档时运行代码，请将代码添加到 `Startup` 事件处理程序。 若要在关闭文档后立即运行代码，请将代码添加到 `Shutdown` 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
   
 ### <a name="understand-the-design-of-the-generated-classes"></a>了解生成的类的设计  
  在目标为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的项目中， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 中的宿主项类型为接口，因此生成的类不能从中派生其实现。 相反，生成的类从以下基类中派生其大多数成员：  
   
--   `ThisDocument`：派生自 <xref:Microsoft.Office.Tools.Word.DocumentBase>。  
+- `ThisDocument`：派生自 <xref:Microsoft.Office.Tools.Word.DocumentBase>。  
   
--   `ThisWorkbook`：派生自 <xref:Microsoft.Office.Tools.Excel.WorkbookBase>。  
+- `ThisWorkbook`：派生自 <xref:Microsoft.Office.Tools.Excel.WorkbookBase>。  
   
--   `Sheet` *n*： 派生自<xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
+- `Sheet` *n*： 派生自<xref:Microsoft.Office.Tools.Excel.WorksheetBase>。  
   
- 这些基类将对其成员的所有调用重定向到 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中相应宿主项接口的内部实现。 例如，如果你调用 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 类的 `ThisDocument` 方法，则 <xref:Microsoft.Office.Tools.Word.DocumentBase> 类将此调用重定向搭配 <xref:Microsoft.Office.Tools.Word.Document> 中的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]接口的内部实现。  
+  这些基类将对其成员的所有调用重定向到 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中相应宿主项接口的内部实现。 例如，如果你调用 <xref:Microsoft.Office.Tools.Word.DocumentBase.Protect%2A> 类的 `ThisDocument` 方法，则 <xref:Microsoft.Office.Tools.Word.DocumentBase> 类将此调用重定向搭配 <xref:Microsoft.Office.Tools.Word.Document> 中的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]接口的内部实现。  
   
 ## <a name="access-the-object-model-of-the-host-application"></a>访问主机应用程序的对象模型  
  若要访问主机应用程序的对象模型，请在项目中使用生成的类的成员。 每个类均对应于 Excel 或 Word 对象模型中一个对象，并包含大多数相同的属性、方法和事件。 例如，Word 文档级别项目中的 `ThisDocument` 类提供与 Word 对象模型中的 <xref:Microsoft.Office.Interop.Word.Document> 对象所提供的大多数相同的成员。  
@@ -135,23 +135,23 @@ Globals.ThisDocument.Save();
 ## <a name="customize-the-user-interface-of-microsoft-office-applications"></a>自定义 Microsoft Office 应用程序的用户界面  
  使用文档级自定义项，你可以通过下列方式自定义 Word 和 Excel 的 UI：  
   
--   向文档图面添加宿主控件或 Windows 窗体控件。  
+- 向文档图面添加宿主控件或 Windows 窗体控件。  
   
-     有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)，[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+   有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)，[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)，和[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md).  
   
--   将操作窗格添加到文档。  
+- 将操作窗格添加到文档。  
   
-     有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
+   有关详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。  
   
--   向功能区添加自定义选项卡。  
+- 向功能区添加自定义选项卡。  
   
-     有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
+   有关详细信息，请参阅[功能区概述](../vsto/ribbon-overview.md)。  
   
--   向功能区上的内置选项卡添加自定义组。  
+- 向功能区上的内置选项卡添加自定义组。  
   
-     有关详细信息，请参阅[如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
+   有关详细信息，请参阅[如何： 自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)。  
   
- 有关自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
+  有关自定义 UI 的 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 ## <a name="get-extended-objects-from-native-office-objects-in-document-level-customizations"></a>从文档级自定义项中的本机 Office 对象获取扩展的对象  
  许多 Office 事件的事件处理程序可接受本机 Office 对象，这些对象表示工作簿、工作表或引发事件的文档。 在某些情况下，可能仅当工作簿或文档级自定义项中的文档引发事件时，才需要运行某些代码。 例如，在 Excel 文档级自定义项中，当用户激活自定义工作簿中的一个工作表时可能需要运行某些代码，而当用户激活当时恰好处于打开状态的其他工作簿中的工作表时则不运行。  
@@ -159,13 +159,13 @@ Globals.ThisDocument.Save();
  具有本机 Office 对象时，你可以测试该对象是否已扩展为文档级自定义项中的 *宿主项* 或 *宿主控件* 。 宿主项和宿主控件是由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供的类型，可向以本机方式存在于 Word 或 Excel 对象模型中的对象（称为 *本机 Office 对象*）添加功能。 宿主项和宿主控件又统称 *扩展的对象*。 有关主机项和主机控件的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
 ## <a name="understand-the-getvstoobject-and-hasvstoobject-methods"></a>了解 GetVstoObject 和 HasVstoObject 方法  
- 若要测试本机 Office 对象，请使用`HasVstoObject`和`GetVstoObject`你的项目中的方法：  
+ 若要测试本机 Office 对象，请在项目中使用 `HasVstoObject` 和 `GetVstoObject` 方法：  
   
--   使用`HasVstoObject`方法如果你想要确定是否本机 Office 对象具有扩展的对象在自定义项中。 如果本机 Office 对象具有扩展的对象，则此方法返回 **true** ，否则返回 **false** 。  
+- 如果你希望确定本机 Office 对象在自定义项中是否具有扩展的对象，请使用 `HasVstoObject` 方法。 如果本机 Office 对象具有扩展的对象，则此方法返回 **true** ，否则返回 **false** 。  
   
--   使用`GetVstoObject`方法如果你想要获取本机 Office 对象的扩展的对象。 如果指定的本机 Office 对象具有扩展的对象，则此方法返回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 对象。 否则为`GetVstoObject`将返回**null**。 例如，`GetVstoObject`方法将返回<xref:Microsoft.Office.Tools.Word.Document>如果指定<xref:Microsoft.Office.Interop.Word.Document>是 Word 文档项目中的文档的基础对象。  
+- 如果你希望获取本机 Office 对象的扩展对象，请使用 `GetVstoObject` 方法。 如果指定的本机 Office 对象具有扩展的对象，则此方法返回 <xref:Microsoft.Office.Tools.Excel.ListObject>、 <xref:Microsoft.Office.Tools.Excel.Workbook>、 <xref:Microsoft.Office.Tools.Excel.Worksheet>或 <xref:Microsoft.Office.Tools.Word.Document> 对象。 否则为`GetVstoObject`将返回**null**。 例如，如果指定的 <xref:Microsoft.Office.Interop.Word.Document> 是 Word 文档项目中文档的基础对象，则 `GetVstoObject` 方法将返回 <xref:Microsoft.Office.Tools.Word.Document>。  
   
- 在文档级项目中，不能使用`GetVstoObject`方法来创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时宿主项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果你想要在运行时创建新的宿主项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)并[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
+  在文档级项目中，不能使用`GetVstoObject`方法来创建一个新<xref:Microsoft.Office.Tools.Excel.Workbook>， <xref:Microsoft.Office.Tools.Excel.Worksheet>，或<xref:Microsoft.Office.Tools.Word.Document>在运行时宿主项。 此方法仅用于在设计时访问项目中现有的已生成宿主项。 如果你想要在运行时创建新的宿主项，则必须开发 VSTO 外接程序项目。 有关详细信息，请参阅[主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)并[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="use-the-getvstoobject-and-hasvstoobject-methods"></a>使用 GetVstoObject 和 HasVstoObject 方法  
  若要调用`HasVstoObject`并`GetVstoObject`方法，请使用`Globals.Factory.GetVstoObject`或`Globals.Factory.HasVstoObject`方法，并传入本机 Word 或 Excel 对象 (如<xref:Microsoft.Office.Interop.Word.Document>或<xref:Microsoft.Office.Interop.Excel.Worksheet>) 想要测试。  

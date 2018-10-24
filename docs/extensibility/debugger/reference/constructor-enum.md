@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM |Microsoft 文档
+title: CONSTRUCTOR_ENUM |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4abc7e2eb8b29a0a7486264732778502c032f42
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5a8302d89bb90902f2a31a81545f14dd233bbe1f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820533"
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 选择不同类型的构造函数。  
@@ -54,7 +54,7 @@ public enum ConstructorMatchOptions {
  选择静态构造函数。  
   
 ## <a name="remarks"></a>备注  
- 作为自变量传递[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
+ 作为参数传递[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： sh.h  
@@ -63,6 +63,6 @@ public enum ConstructorMatchOptions {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

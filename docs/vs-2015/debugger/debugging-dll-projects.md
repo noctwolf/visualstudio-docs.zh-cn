@@ -24,59 +24,59 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb1d8cf355aee56797b5c814341255cb47cf4f9b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fff87db239d023dbb5aa8f13757f7af42a969dd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267379"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814554"
 ---
 # <a name="debugging-dll-projects"></a>调试 DLL 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 以下模板可创建 DLL：  
   
--   （C++、C# 和 Visual Basic）：类库  
+- （C++、C# 和 Visual Basic）：类库  
   
--   （C++、C# 和 Visual Basic）：Windows 窗体控件库  
+- （C++、C# 和 Visual Basic）：Windows 窗体控件库  
   
-     调试 Windows 控件库类似于调试类库项目。 大多数情况下将从另一个项目中调用 Windows 控件。 调试调用项目时，可单步执行 Windows 控件的代码，并设置断点，然后执行其他调试操作。 有关详细信息，请参阅 [Windows 窗体控件](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
+   调试 Windows 控件库类似于调试类库项目。 大多数情况下将从另一个项目中调用 Windows 控件。 调试调用项目时，可单步执行 Windows 控件的代码，并设置断点，然后执行其他调试操作。 有关详细信息，请参阅 [Windows 窗体控件](http://msdn.microsoft.com/library/f050de8f-4ebd-4042-94b8-edf9a1dbd52a)。  
   
--   （C# 和 Visual Basic）：Web 控件库  
+- （C# 和 Visual Basic）：Web 控件库  
   
-     有关更多信息，请参见 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)。  
+   有关更多信息，请参见 [Web Control Library (Managed Code)](../debugger/web-control-library-managed-code.md)。  
   
--   (C++)：MFC ActiveX 控件和 MFC 智能设备 ActiveX 控件  
+- (C++)：MFC ActiveX 控件和 MFC 智能设备 ActiveX 控件  
   
-     ActiveX 控件是可以通过 Internet 下载到客户端计算机，并在网页上显示和激活的控件。  
+   ActiveX 控件是可以通过 Internet 下载到客户端计算机，并在网页上显示和激活的控件。  
   
-     ActiveX 控件的调试与其他类型的控件的调试类似，因为这些控件都无法独立运行，而且必须嵌入 HTML 网页中。 有关更多信息，请参见 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)。  
+   ActiveX 控件的调试与其他类型的控件的调试类似，因为这些控件都无法独立运行，而且必须嵌入 HTML 网页中。 有关更多信息，请参见 [How to: Debug an ActiveX Control](../debugger/how-to-debug-an-activex-control.md)。  
   
--   (C++)：MFC 智能设备 DLL  
+- (C++)：MFC 智能设备 DLL  
   
-     有关更多信息，请参见 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)。  
+   有关更多信息，请参见 [MFC Debugging Techniques](../debugger/mfc-debugging-techniques.md)。  
   
- 本节还包含有关以下主题的信息：  
+  本节还包含有关以下主题的信息：  
   
--   [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
+- [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)  
   
--   [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
+- [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md)  
   
- 此主题包含以下几节，这几节提供了有关如何准备调试类库的注意事项：  
+  此主题包含以下几节，这几节提供了有关如何准备调试类库的注意事项：  
   
--   [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
+- [Building a Debug Version](#vxtskdebuggingdllprojectsbuildingadebugversion)  
   
--   [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
+- [Mixed-Mode Debugging](#vxtskdebuggingdllprojectsmixedmodedebugging)  
   
--   [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
+- [Changing Default Configurations](#vxtskdebuggingdllprojectschangingdefaultconfigurations)  
   
--   [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
+- [Ways to Debug the DLL](#vxtskdebuggingdllprojectswaystodebugthedll)  
   
--   [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
+- [The Calling Application](#vxtskdebuggingdllprojectsthecallingapplication)  
   
--   [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
+- [Controls on a Web Page](#vxtskdebuggingdllprojectscontrolsonawebpage)  
   
--   [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
+- [The Immediate Window](#vxtskdebuggingdllprojectstheimmediatewindow)  
   
 ##  <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Building a Debug Version  
  无论如何启动调试，都请首先确保生成 DLL 的调试版本，并确保该调试版本位于应用程序应该能够找到它的位置。 这似乎很明显，但如果忘记这一步骤，应用程序可能会找到并加载 DLL 的其他版本。 然后程序将继续运行，尽管您会奇怪为什么断点从未被命中。 调试时，可以通过打开调试器的 **“模块”** 窗口来检查程序已加载的 DLL。 **“模块”** 窗口列出了所调试进程中加载的每个 DLL 或 EXE。 有关详细信息，请参阅 [How to: Use the Modules Window](../debugger/how-to-use-the-modules-window.md)。  
@@ -103,15 +103,15 @@ ms.locfileid: "49267379"
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> 调试调用应用程序  
  若要调试 DLL，请从调试调用应用程序开始，通常是 EXE 或者 Web 应用程序。 调试方式有许多种。  
   
--   如果有调用应用程序的项目，则可以打开该项目并从 **“调试”** 菜单开始执行。 有关详细信息，请参阅 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)。  
+- 如果有调用应用程序的项目，则可以打开该项目并从 **“调试”** 菜单开始执行。 有关详细信息，请参阅 [How to: Start Execution](http://msdn.microsoft.com/en-us/b0fe0ce5-900e-421f-a4c6-aa44ddae453c)。  
   
--   如果调用应用程序是已经部署到测试或生产计算机上并已经运行的现有程序，则可以附加到该应用程序上。 如果 DLL 是由 Internet Explorer 承载的控件或网页上的控件，请使用此方法。 有关详细信息，请参阅 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。  
+- 如果调用应用程序是已经部署到测试或生产计算机上并已经运行的现有程序，则可以附加到该应用程序上。 如果 DLL 是由 Internet Explorer 承载的控件或网页上的控件，请使用此方法。 有关详细信息，请参阅 [How to: Attach to a Running Process](http://msdn.microsoft.com/en-us/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)。  
   
--   您可以从 DLL 项目中调试。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
+- 您可以从 DLL 项目中调试。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
   
--   可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **“即时”** 窗口中进行调试。 在这种情况下， **“即时”** 窗口充当应用程序的角色。  
+- 可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **“即时”** 窗口中进行调试。 在这种情况下， **“即时”** 窗口充当应用程序的角色。  
   
- 在开始调试调用应用程序之前，通常希望在类库中设置一个断点。 有关详细信息，请参阅 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 命中断点时，可以逐句通过代码，同时观察每行的操作，直到将问题隔离出来。 有关详细信息，请参阅 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。  
+  在开始调试调用应用程序之前，通常希望在类库中设置一个断点。 有关详细信息，请参阅 [Breakpoints and Tracepoints](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。 命中断点时，可以逐句通过代码，同时观察每行的操作，直到将问题隔离出来。 有关详细信息，请参阅 [Code Stepping Overview](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)。  
   
 ###  <a name="vxtskdebuggingdllprojectscontrolsonawebpage"></a> Controls on a Web Page  
  若要调试网页控件，请创建嵌入此控件的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 页（如果尚不存在这样的页）。 然后在网页代码和控件代码中设置断点。 然后从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中调用网页。  

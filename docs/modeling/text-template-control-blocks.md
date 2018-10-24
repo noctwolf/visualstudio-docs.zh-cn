@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f0fa4a3848fedae642c6471dd001933ca1b7d011
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 90668c751005e697c4b78d0f3caf58f8a85db925
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951266"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812019"
 ---
 # <a name="text-template-control-blocks"></a>文本模板控制块
 控制块可使你在文本模板中编写代码以便改变输出。 有三种类型的控制块，通过其左大括号来区分：
@@ -64,7 +64,7 @@ Found another one!
 ```
 
 > [!WARNING]
->  始终使用 {...} 来分隔包含嵌入的纯文本的嵌套的语句。 以下示例可能无法正常工作：
+>  始终使用 {...} 若要分隔包含嵌入的纯文本的嵌套的语句。 以下示例可能无法正常工作：
 >
 >  `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -80,7 +80,6 @@ Some text.
 <#
  }
 #>
-
 ```
 
 ## <a name="expression-control-block"></a>表达式控制块
@@ -144,7 +143,7 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>如何使用控制块
- 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。 (有关详细信息，包括与其他文本模板`include`指令，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。)
+ 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。 (有关包括与其他文本模板的详细信息`include`指令，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。)
 
  在使用控制块时，请记住考虑以下事项：
 

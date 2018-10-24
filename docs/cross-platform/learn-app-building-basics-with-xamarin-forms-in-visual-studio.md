@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - xamarin
-ms.openlocfilehash: 6cc569c2e58ef29f9e9372acad30c0c2df96466c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 20871a3dc9497bb409552337b3c9720dce373b63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828242"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识
 
@@ -116,110 +116,110 @@ ms.locfileid: "46495955"
 
 然后，执行以下步骤，将代码添加到 .NET Standard 库，以访问和存储天气服务中的数据：
 
-1.  右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。
+1. 右键单击“WeatherApp”项目，然后选择“添加”>“类…”。在“添加新项”  对话框中，将文件命名为 **Weather.cs**。 将使用此类来存储天气数据服务的数据。
 
-2.  将 Weather.cs 的全部内容替换为以下代码：
+2. 将 Weather.cs 的全部内容替换为以下代码：
 
-    ```csharp
-    namespace WeatherApp
-    {
-        public class Weather
-        {
-            // Because labels bind to these values, set them to an empty string to
-            // ensure that the label appears on all platforms by default.
-            public string Title { get; set; } = " ";
-            public string Temperature { get; set; } = " ";
-            public string Wind { get; set; } = " ";
-            public string Humidity { get; set; } = " ";
-            public string Visibility { get; set; } = " ";
-            public string Sunrise { get; set; } = " ";
-            public string Sunset { get; set; } = " ";
-        }
-    }
-    ```
+   ```csharp
+   namespace WeatherApp
+   {
+       public class Weather
+       {
+           // Because labels bind to these values, set them to an empty string to
+           // ensure that the label appears on all platforms by default.
+           public string Title { get; set; } = " ";
+           public string Temperature { get; set; } = " ";
+           public string Wind { get; set; } = " ";
+           public string Humidity { get; set; } = " ";
+           public string Visibility { get; set; } = " ";
+           public string Sunrise { get; set; } = " ";
+           public string Sunset { get; set; } = " ";
+       }
+   }
+   ```
 
-3.  将另一个类“DataService.cs”添加到 WeatherApp 项目中，用于处理天气数据服务中的 JSON 数据。
+3. 将另一个类“DataService.cs”添加到 WeatherApp 项目中，用于处理天气数据服务中的 JSON 数据。
 
-4.  将 **DataService.cs** 的全部内容替换为以下代码：
+4. 将 **DataService.cs** 的全部内容替换为以下代码：
 
-    ```csharp
-    using System.Net.Http;
-    using System.Threading.Tasks;
-    using Newtonsoft.Json;
+   ```csharp
+   using System.Net.Http;
+   using System.Threading.Tasks;
+   using Newtonsoft.Json;
 
-    namespace WeatherApp
-    {
-        public class DataService
-        {
-            public static async Task<dynamic> getDataFromService(string queryString)
-            {
-                HttpClient client = new HttpClient();
-                var response = await client.GetAsync(queryString);
+   namespace WeatherApp
+   {
+       public class DataService
+       {
+           public static async Task<dynamic> getDataFromService(string queryString)
+           {
+               HttpClient client = new HttpClient();
+               var response = await client.GetAsync(queryString);
 
-                dynamic data = null;
-                if (response != null)
-                {
-                    string json = response.Content.ReadAsStringAsync().Result;
-                    data = JsonConvert.DeserializeObject(json);
-                }
+               dynamic data = null;
+               if (response != null)
+               {
+                   string json = response.Content.ReadAsStringAsync().Result;
+                   data = JsonConvert.DeserializeObject(json);
+               }
 
-                return data;
-            }
-        }
-    }
-    ```
+               return data;
+           }
+       }
+   }
+   ```
 
-5.  将第三个类“Core.cs”添加到 WeatherApp 项目中，用于放置共享业务逻辑。 此代码形成包含邮政编码的查询字符串，调用天气数据服务，并填充 `Weather` 类实例。
+5. 将第三个类“Core.cs”添加到 WeatherApp 项目中，用于放置共享业务逻辑。 此代码形成包含邮政编码的查询字符串，调用天气数据服务，并填充 `Weather` 类实例。
 
-6.  将 Core.cs 的内容替换为以下代码：
+6. 将 Core.cs 的内容替换为以下代码：
 
-    ```csharp
-    using System;
-    using System.Threading.Tasks;
+   ```csharp
+   using System;
+   using System.Threading.Tasks;
 
-    namespace WeatherApp
-    {
-        public class Core
-        {
-            public static async Task<Weather> GetWeather(string zipCode)
-            {
-                //Sign up for a free API key at http://openweathermap.org/appid
-                string key = "YOUR API KEY HERE";
-                string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="
-                    + zipCode + ",us&appid=" + key + "&units=imperial";
+   namespace WeatherApp
+   {
+       public class Core
+       {
+           public static async Task<Weather> GetWeather(string zipCode)
+           {
+               //Sign up for a free API key at http://openweathermap.org/appid
+               string key = "YOUR API KEY HERE";
+               string queryString = "http://api.openweathermap.org/data/2.5/weather?zip="
+                   + zipCode + ",us&appid=" + key + "&units=imperial";
 
-                dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
+               dynamic results = await DataService.getDataFromService(queryString).ConfigureAwait(false);
 
-                if (results["weather"] != null)
-                {
-                    Weather weather = new Weather();
-                    weather.Title = (string)results["name"];
-                    weather.Temperature = (string)results["main"]["temp"] + " F";
-                    weather.Wind = (string)results["wind"]["speed"] + " mph";
-                    weather.Humidity = (string)results["main"]["humidity"] + " %";
-                    weather.Visibility = (string)results["weather"][0]["main"];
+               if (results["weather"] != null)
+               {
+                   Weather weather = new Weather();
+                   weather.Title = (string)results["name"];
+                   weather.Temperature = (string)results["main"]["temp"] + " F";
+                   weather.Wind = (string)results["wind"]["speed"] + " mph";
+                   weather.Humidity = (string)results["main"]["humidity"] + " %";
+                   weather.Visibility = (string)results["weather"][0]["main"];
 
-                    DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
-                    DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
-                    DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
-                    weather.Sunrise = sunrise.ToString() + " UTC";
-                    weather.Sunset = sunset.ToString() + " UTC";
-                    return weather;
-                }
-                else
-                {
-                    return null;
-                }
-            }
-        }
-    }
-    ```
+                   DateTime time = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+                   DateTime sunrise = time.AddSeconds((double)results["sys"]["sunrise"]);
+                   DateTime sunset = time.AddSeconds((double)results["sys"]["sunset"]);
+                   weather.Sunrise = sunrise.ToString() + " UTC";
+                   weather.Sunset = sunset.ToString() + " UTC";
+                   return weather;
+               }
+               else
+               {
+                   return null;
+               }
+           }
+       }
+   }
+   ```
 
 7. 将“在此处输入你的 API 密钥”替换为你获得的 API 密钥。 仍需使用引号将其引起来！
 
-8.  生成 WeatherApp 库项目，以确保代码正确无误。
+8. 生成 WeatherApp 库项目，以确保代码正确无误。
 
- <a name="uicode" />
+   <a name="uicode" />
 
 ## <a name="begin-writing-shared-ui-code"></a>开始编写共享的 UI 代码
 
