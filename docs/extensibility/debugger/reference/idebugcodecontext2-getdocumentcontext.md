@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext2::GetDocumentContext |Microsoft 文档
+title: IDebugCodeContext2::GetDocumentContext |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 833ba9131a8c6b1449833bbeca52d0f1d7b53649
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dd0fa6dd8d587ade2ca06c3f39f65fb3a5fd295d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822184"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-获取对应于此代码上下文文档上下文。 文档上下文表示对应于源生成的代码，此指令的源文件中的位置。  
+获取与此代码的上下文相对应的文档上下文。 文档上下文表示对应于源生成的代码，此指令的源文件中的位置。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,8 +47,8 @@ int GetDocumentContext(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 通常情况下，文档上下文可以看作的源文件中的位置的代码上下文时的代码指令中的执行流的位置。  
+ 通常情况下，文档上下文可以认为的源文件中的位置的代码上下文时的代码指令中的执行流的位置。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

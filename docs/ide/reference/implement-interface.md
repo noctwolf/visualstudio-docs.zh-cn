@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4b17e924a6736d37b78709a516f6ca9068d4711c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d34c3978b119b978e83204967e4d5f6af5946314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811537"
 ---
 # <a name="implement-an-interface-in-visual-studio"></a>在 Visual Studio 中实现接口
 
@@ -36,22 +36,22 @@ ms.locfileid: "31946437"
 
    - C#：
 
-    ![突出显示的代码 C#](media/interface-highlight-cs.png)
+       ![突出显示的代码 C#](media/interface-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/interface-highlight-vb.png)
+       ![突出显示的代码 VB](media/interface-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
-1. 从下拉菜单中选择“实现接口”。
+3. 从下拉菜单中选择“实现接口”。
 
    ![“实现接口”预览](media/interface-preview-cs.png)
 
@@ -63,11 +63,11 @@ ms.locfileid: "31946437"
 
    - C#：
 
-      ![“实现接口”的结果 C#](media/interface-result-cs.png)
+       ![“实现接口”的结果 C#](media/interface-result-cs.png)
 
    - Visual Basic：
 
-      ![“实现接口”的结果 VB](media/interface-result-vb.png)
+       ![“实现接口”的结果 VB](media/interface-result-vb.png)
 
    > [!TIP]
    > （仅限 C#）使用“显式实现接口”选项，以接口名称作为各个生成方法的开头，避免名称冲突。

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f2faf1be7f2e8ff5c96eca16ef2de9be2514db
-ms.sourcegitcommit: 1b9c1e333c2f096d35cfc77e846116f8e5054557
+ms.openlocfilehash: be919183f18efc29ea562b0e4cc60c84febe60c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34815831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841931"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>从命令行创建可移植的分析数据文件
 若要更轻松地共享分析数据，可以使用 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具将用于分析运行的符号嵌入到 .vsp 文件中。  
@@ -31,16 +31,16 @@ ms.locfileid: "34815831"
   
 ### <a name="to-embed-the-symbols-for-a-profiling-run-into-a-profiling-data-vsp-file"></a>将用于分析运行的符号嵌入到分析数据 (.vsp) 文件  
   
--   在命令提示符窗口中，键入以下命令：  
+- 在命令提示符窗口中，键入以下命令：  
   
-     \<Path>VSPerfReport \<VSP File> /PackSymbols  
+   \<Path>VSPerfReport \<VSP File> /PackSymbols  
   
-     默认采用 .vsp 文件的基名称对 .vsps 文件进行命名。 可以通过使用“输出”选项指定替代名称。  
+   默认采用 .vsp 文件的基名称对 .vsps 文件进行命名。 可以通过使用“输出”选项指定替代名称。  
   
 ### <a name="to-create-a-summary-profiling-data-file"></a>创建摘要分析数据文件  
   
--   在命令提示符窗口中，键入以下命令：  
+- 在命令提示符窗口中，键入以下命令：  
   
-     \<Path>**VSPerfReport \<** VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
+   \<Path><strong>VSPerfReport \<</strong>VSP File> **/SummaryFile** [**/Output:**\<File Name>]  
   
-     默认采用 .vsp 文件的基名称对 .vsps 文件进行命名。 可以通过使用“输出”选项指定替代名称。
+   默认采用 .vsp 文件的基名称对 .vsps 文件进行命名。 可以通过使用“输出”选项指定替代名称。

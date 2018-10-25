@@ -1,5 +1,5 @@
 ---
-title: SccRename 函数 |Microsoft 文档
+title: SccRename 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24d84ff659d287f3b32be2b5585ded16b148395
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 92c19e47f680d4feb6c4a4acd6de358c1a6191ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841222"
 ---
 # <a name="sccrename-function"></a>SccRename 函数
-此函数中的源控制系统重命名文件。  
+此函数重命名源代码管理系统中的文件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,33 +38,33 @@ SCCRTN SccRename(
   
 #### <a name="parameters"></a>参数  
  pvContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  hWnd  
  [in]它提供了任何对话框，父级可以使用源代码管理插件，则 IDE 窗口的句柄。  
   
  lpFileName  
- [in]重命名文件的完全限定的文件名。  
+ [in]要重命名该文件的完全限定的文件名。  
   
  lpNewName  
- [in]完全限定的新名称。 如果不同的目录路径，然后该文件已移动从一个子目录到另一个。  
+ [in]完全限定的新名称。 如果不同的目录路径，然后在文件已从一个子目录到另一个。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|SCC_OK|已成功完成重命名操作。|  
-|SCC_E_PROJNOTOPEN|项目不是受源代码管理打开的。|  
-|SCC_E_FILENOTCONTROLLED|文件不是在源代码管理下。|  
-|SCC_E_ACCESSFAILURE|没有访问源代码管理系统，可能由于网络或争用问题发生时出现问题。|  
-|SCC_E_NOTAUTHORIZED|用户无权完成此操作。|  
+|SCC_OK|重命名操作已成功完成。|  
+|SCC_E_PROJNOTOPEN|不受源代码管理打开项目时。|  
+|SCC_E_FILENOTCONTROLLED|文件不是源代码管理下。|  
+|SCC_E_ACCESSFAILURE|访问源代码管理系统，很可能是由于网络或争用问题时出现问题时。|  
+|SCC_E_NOTAUTHORIZED|未授权用户来完成此操作。|  
 |SCC_E_COULDNOTCREATEPROJECT|重命名过程的一部分，无法创建项目。|  
-|SCC_E_OPNOTPERFORMED|未执行操作。|  
+|SCC_E_OPNOTPERFORMED|不执行此操作。|  
 |SCC_E_NONSPECIFICERROR|未指定或常规时出错。|  
   
 ## <a name="remarks"></a>备注  
- 此函数可用于重命名文件或它从一个位置移动到另一个的源控制系统中。 源代码管理插件不应尝试访问磁盘上的文件。 它是 IDE 的责任，若要重命名本地文件。  
+ 此函数可用于重命名文件或它从一个位置移动到另一个源代码管理系统中。 源代码管理插件不应尝试访问磁盘上的文件。 它负责 IDE 的本地文件重命名。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

@@ -30,12 +30,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 00b448f84e0103d5cf98ae27c519e247ad3d0c25
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bd033a9341975b6b785076188a53daf3e91a5a8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817334"
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,13 +54,13 @@ ms.locfileid: "49202171"
   
 #### <a name="to-turn-off-property-evaluation"></a>关闭属性求值  
   
-1.  在 **“工具”** 菜单上，选择 **“选项”**。  
+1. 在 **“工具”** 菜单上，选择 **“选项”**。  
   
-2.  在中**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
+2. 在中**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
   
-3.  清除**启用属性求值和其他隐式函数调用**复选框。  
+3. 清除**启用属性求值和其他隐式函数调用**复选框。  
   
- 由于本机调用堆栈和托管调用堆栈不同，因此调试器不能总是为混合代码提供完整的调用堆栈。 当本机代码调用托管代码时，你可能会注意到某些差异。 有关详细信息，请参阅[混合代码与在调用堆栈窗口中缺少信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
+   由于本机调用堆栈和托管调用堆栈不同，因此调试器不能总是为混合代码提供完整的调用堆栈。 当本机代码调用托管代码时，你可能会注意到某些差异。 有关详细信息，请参阅[混合代码与在调用堆栈窗口中缺少信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试托管代码](../debugger/debugging-managed-code.md)

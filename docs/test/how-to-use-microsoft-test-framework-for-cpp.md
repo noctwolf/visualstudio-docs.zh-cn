@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6087b864ba497d3754adfa01dc0168da5317aa5e
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 53243502e0368d3cb988950edf266cc56adbaa22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379548"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812447"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -28,20 +28,22 @@ ms.locfileid: "39379548"
 
 在某些情况下，例如测试 DLL 中的非导出函数时，可能需要在所测试程序所处的同一项目中创建测试。 在同一项目中编写单元测试：
 
-1.  修改项目属性，以包含单元测试所需的标头和库文件。
+1. 修改项目属性，以包含单元测试所需的标头和库文件。
 
-    1.  在解决方案资源管理器中，右键单击所测试的计划的项目节点，然后选择“属性” > “配置属性” > “VC++ 目录”。
+   1. 在解决方案资源管理器中，右键单击所测试的计划的项目节点，然后选择“属性” > “配置属性” > “VC++ 目录”。
 
-    3.  单击以下行中的向下箭头，然后选择 **<Edit>**：
+   2. 单击以下行中的向下箭头，然后选择 **<Edit>**：
 
-        |目录|属性|
-        |-|-|
-        |**包含目录**|**$(VCInstallDir)UnitTest\include;$(IncludePath)**|
-        |**库目录**|**$(VCInstallDir)UnitTest\lib;$(LibraryPath)**|
 
-2.  添加 C++ 单元测试文件：
+      | 目录 | 属性 |
+      |-| - |
+      | **包含目录** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
+      | **库目录** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-    -   右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
+
+2. 添加 C++ 单元测试文件：
+
+   -   右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 单元测试”。
 
 ## <a name="write-the-tests"></a>编写测试
 
@@ -53,13 +55,13 @@ ms.locfileid: "39379548"
 
 ## <a name="run-the-tests"></a>运行测试
 
-1.  在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。
+1. 在“测试”菜单中，依次选择“窗口” > “测试资源管理器”。
 2. 如果窗口中看不见任何测试，则在“解决方案资源管理器”中右键单击其节点并选择“生成”或“重新生成”，来生成测试项目。
 
-2.  在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
-3. 在输出窗口中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
+3. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
+4. 在输出窗口中，在下拉菜单中选择“测试”以查看 `Logger` 类写出的消息：
 
-  ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png)
+   ![显示测试消息的 C++ 输出窗口](media/cpp-test-output-window.png)
 
 ## <a name="define-traits-to-enable-grouping"></a>定义特征以实现分组
 
@@ -90,7 +92,7 @@ TEST_METHOD(Method1)
 以下预定义特征位于 `CppUnitTest.h` 中。 有关详细信息，请参阅[适用于 C++ API 参考的 Microsoft 单元测试框架](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。
 
 |宏|描述|
-|-----------|-----------------|
+|-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|使用 TEST_METHOD_ATTRIBUTE 宏定义特性。|
 |`TEST_OWNER(ownerAlias)`|使用预定义的“所有者”特征来指定测试方法的所有者。|
 |`TEST_PRIORITY(priority)`|使用预定义的“优先级”特征向测试方法分配相对优先级。|

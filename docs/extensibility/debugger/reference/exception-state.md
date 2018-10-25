@@ -1,5 +1,5 @@
 ---
-title: EXCEPTION_STATE |Microsoft 文档
+title: EXCEPTION_STATE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1faa847d907af938bb5f91206a5f438bcba886a3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1032be313c6be8c71799ea493e82c03fd9e96ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818245"
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
 指定的异常状态。  
@@ -78,56 +78,56 @@ public enum enum_EXCEPTION_STATE {
   
 ## <a name="members"></a>成员  
  EXCEPTION_NONE  
- 不在的异常处停止。  
+ 执行操作的异常处停止。  
   
  EXCEPTION_STOP_FIRST_CHANCE  
- 在第一个激发的异常处停止。 描述异常事件时, 此标志指示的异常事件是首次异常事件。  
+ 在第一个触发异常处停止。 描述时的异常事件，此标志指示异常事件是最可能的异常事件。  
   
  EXCEPTION_STOP_SECOND_CHANCE  
- 在第二个触发异常处停止。 描述异常事件，指示异常事件是第二次异常事件。  
+ 在第二个触发异常处停止。 描述异常事件时, 指示异常事件是第二个可能发生的异常事件。  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE  
- 在第一个激发的用户模式异常处停止。 描述异常事件，指示异常事件是第一个可能的用户异常事件。  
+ 在第一个激发用户模式异常处停止。 描述异常事件时, 指示异常事件是最可能的用户异常事件。  
   
  EXCEPTION_STOP_USER_UNCAUGHT  
- 在用户模式异常未被捕获时停止。 描述异常事件，指示异常事件是未捕获的用户模式异常事件。  
+ 当用户模式异常未被捕获时停止。 描述异常事件时, 指示异常事件是未捕获的用户模式异常事件。  
   
  EXCEPTION_STOP_ALL  
  停止任何异常。 描述异常事件时，不使用。  
   
  EXCEPTION_CANNOT_BE_CONTINUED  
- 描述异常事件，指示异常不能继续从。  
+ 描述异常事件，指示不能从继续执行异常。  
   
  EXCEPTION_CODE_SUPPORTED  
- 指示异常具有支持它的代码。 用于显示异常  
+ 指示此异常包含支持它的代码。 用于显示异常  
   
  EXCEPTION_CODE_DISPLAY_IN_HEX  
- 指示应以十六进制格式显示该异常代码。 在显示异常中使用。  
+ 指示应以十六进制格式显示异常代码。 用于显示异常。  
   
  EXCEPTION_JUST_MY_CODE_SUPPORTED  
- 指示的异常代码支持 JustMyCode。 在显示异常中使用。  
+ 指示异常代码支持 JustMyCode。 用于显示异常。  
   
  EXCEPTION_MANAGED_DEBUG_ASSISTANT  
- 指示托管的代码调试程序应处理异常。 如果未设置，默认调试器将处理异常。 这将传递到[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法而不用于[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构。  
+ 指示托管的代码调试程序应处理异常。 如果未设置，默认调试器处理的异常。 这将传递到[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法而不用于[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构。  
   
  EXCEPTION_STOP_FIRST_CHANCE_USE_PARENT  
- 过时，则不要使用。  
+ 已过时，则不要使用。  
   
  EXCEPTION_STOP_SECOND_CHANCE_USE_PARENT  
- 过时，则不要使用。  
+ 已过时，则不要使用。  
   
  EXCEPTION_STOP_USER_FIRST_CHANCE_USE_PARENT  
- 过时，则不要使用。  
+ 已过时，则不要使用。  
   
  EXCEPTION_STOP_USER_SECOND_CHANCE_USE_PARENT  
- 过时，则不要使用。  
+ 已过时，则不要使用。  
   
 ## <a name="remarks"></a>备注  
- 用作`dwState`的成员[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构来指示的异常，无法完成有关它的状态。  
+ 用作`dwState`的成员[EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)结构来指示的异常和有关它可以做什么的状态。  
   
- 这些值也将传递给[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法用于设置状态的所有异常。  
+ 这些值也将传递给[SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)方法以设置所有异常的状态。  
   
- 可能与按位 OR 组合这些标志。  
+ 可能会使用按位 OR 组合这些标志。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -136,7 +136,7 @@ public enum enum_EXCEPTION_STATE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)   
  [SetAllExceptions](../../../extensibility/debugger/reference/idebugengine3-setallexceptions.md)

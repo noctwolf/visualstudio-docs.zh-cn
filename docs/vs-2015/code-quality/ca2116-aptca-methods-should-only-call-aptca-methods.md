@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50e75f4855079666130e063d3c2b516f317e90f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 766de62f4781dc7ce164155a2090ffabac913a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217888"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819545"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法应只调用 APTCA 方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
@@ -44,13 +45,13 @@ ms.locfileid: "49217888"
 
  APTCA 属性为完全受信任的程序集，并且该程序集执行代码中不允许部分受信任调用方的另一个程序集，则可能会产生安全问题。 如果两个方法`M1`并`M2`满足以下条件，则恶意调用方可以使用该方法`M1`绕过的完全信任隐式链接要求保护`M2`:
 
--   `M1` 在完全受信任的程序集具有 APTCA 特性中声明的公共方法。
+- `M1` 在完全受信任的程序集具有 APTCA 特性中声明的公共方法。
 
--   `M1` 调用的方法`M2`外部`M1`的程序集。
+- `M1` 调用的方法`M2`外部`M1`的程序集。
 
--   `M2`程序集不具有 APTCA 特性，并且，因此，不应执行或代表部分受信任的调用方。
+- `M2`程序集不具有 APTCA 特性，并且，因此，不应执行或代表部分受信任的调用方。
 
- 部分受信任调用方`X`可以调用方法`M1`，从而导致`M1`调用`M2`。 因为`M2`不具有 APTCA 属性，其直接调用方 (`M1`) 必须满足链接请求完全信任;`M1`具有完全信任权限，因此满足此检查。 安全风险是因为`X`不参与满足保护的链接要求`M2`通过不受信任的调用方。 因此，具有 APTCA 特性的方法必须调用没有该属性的方法。
+  部分受信任调用方`X`可以调用方法`M1`，从而导致`M1`调用`M2`。 因为`M2`不具有 APTCA 属性，其直接调用方 (`M1`) 必须满足链接请求完全信任;`M1`具有完全信任权限，因此满足此检查。 安全风险是因为`X`不参与满足保护的链接要求`M2`通过不受信任的调用方。 因此，具有 APTCA 特性的方法必须调用没有该属性的方法。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  APCTA 特性是必需的如果使用要求来保护到完全信任程序集调用的方法。 将取决于您需求的确切权限方法公开的功能。 如果可能，保护要求完全信任，以确保不向部分受信任调用方公开的基本功能的方法。 如果这不可能，请选择有效地保护提供的功能的一组权限。 有关要求的详细信息，请参阅[需求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)。

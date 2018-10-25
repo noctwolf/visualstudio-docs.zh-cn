@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3b7e95e2d162df5a9a84fbc8777907253149e5
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118097"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813812"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
@@ -45,28 +45,28 @@ ms.locfileid: "37118097"
 
 1. 可通过多种方式在 Visual Studio 中创建新项目。 在起始页上，在“搜索项目模板”框中输入项目模板的名称，或选择“创建新项目”链接打开“新建项目”对话框。 也可以选择菜单栏上的“文件” > “新建” > “项目”，或选择工具栏上的“新建项目”按钮。
 
-  ![起始页](./media/vside-newproject1.png)
+   ![起始页](./media/vside-newproject1.png)
 
-  在“新建项目”对话框中的“模板”类别下，可用项目模板以列表形式列出。 模板按编程语言和项目类型（如 Visual C#、JavaScript 和 Azure Data Lake）归类。
+   在“新建项目”对话框中的“模板”类别下，可用项目模板以列表形式列出。 模板按编程语言和项目类型（如 Visual C#、JavaScript 和 Azure Data Lake）归类。
 
-  ![“新建项目”对话框](./media/vside-newproject-templates-list.png)
+   ![“新建项目”对话框](./media/vside-newproject-templates-list.png)
 
-  > [!NOTE]
-  > 显示的可用语言和项目模板列表取决于正在运行的 Visual Studio 版本和安装的工作负载。 若要了解如何安装附加工作负载，请参阅[通过添加或删除工作负载和组件修改 Visual Studio 2017](../install/modify-visual-studio.md)。
+   > [!NOTE]
+   > 显示的可用语言和项目模板列表取决于正在运行的 Visual Studio 版本和安装的工作负载。 若要了解如何安装附加工作负载，请参阅[通过添加或删除工作负载和组件修改 Visual Studio 2017](../install/modify-visual-studio.md)。
 
-1. 通过选择语言名称旁边的三角形，然后选择项目类型，可显示要使用的编程语言的模板列表。
+2. 通过选择语言名称旁边的三角形，然后选择项目类型，可显示要使用的编程语言的模板列表。
 
-  以下示例演示可用于 Visual C# .NET Core 项目的项目模板。
+   以下示例演示可用于 Visual C# .NET Core 项目的项目模板。
 
-  ![项目模板](./media/new-project-dialog-net-core.png)
+   ![项目模板](./media/new-project-dialog-net-core.png)
 
-1. 在“名称”框中输入新项目的名称。 可选择将项目保存在系统上的默认位置，或选择“浏览”按钮查找其他位置。
+3. 在“名称”框中输入新项目的名称。 可选择将项目保存在系统上的默认位置，或选择“浏览”按钮查找其他位置。
 
-  还可以选择更改解决方案名称，或选择“添加到源代码管理”以将新项目添加到 Git 存储库。
+   还可以选择更改解决方案名称，或选择“添加到源代码管理”以将新项目添加到 Git 存储库。
 
-1. 选择“确定”按钮，创建解决方案和项目。
+4. 选择“确定”按钮，创建解决方案和项目。
 
-1. 如果要向解决方案添加附加项目，请在“解决方案资源管理器”中选择解决方案节点，然后在菜单栏上选择“项目” > “添加新项”。
+5. 如果要向解决方案添加附加项目，请在“解决方案资源管理器”中选择解决方案节点，然后在菜单栏上选择“项目” > “添加新项”。
 
 ## <a name="create-a-project-from-existing-code-files"></a>从现有代码文件创建项目
 

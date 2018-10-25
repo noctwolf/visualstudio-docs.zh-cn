@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 66ed9323b9298f588ad1f29267d88630fae0f39b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: dc7351c9449993b624569cc13ac5ced7d169b129
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321172"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837108"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用实验室环境进行开发
 
@@ -36,9 +36,9 @@ ms.locfileid: "44321172"
 |![云实验室环境](../media/topology_cloud.png)| 此实验室环境提供的功能与服务器拓扑类似，但无需在本地环境运行物理计算机或虚拟机，这样可以缩短安装时间、简化维护过程并降低成本。 在 Microsoft Azure 等云环境中可以快速方便地设置多个网站、虚拟机和自定义网络。|
 |![客户端服务器实验室环境](../media/topology_clientserver.png)| 此实验室环境具有客户端-服务器拓扑，此拓扑常用于测试具有服务器和客户端组件的应用程序。 在客户端/服务器拓扑中，所有用于测试应用程序的所有客户端和服务器计算机都在你的实验室环境中。 当你使用此拓扑时，你可以从影响测试的每台计算机收集测试数据。|
 
-|   |   |
+| | |
 |---|---|
-|  ![视频的摄像机图标](../../install/media/video-icon.png)  |    [观看视频](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)了解管理用于测试的实验室环境。 |
+| ![视频的摄像机图标](../../install/media/video-icon.png) | [观看视频](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Managing-lab-environments-for-testing)了解管理用于测试的实验室环境。 |
 
 ## <a name="use-the-cloud-with-azure-pipelines-or-team-foundation-server-build-and-release"></a>通过 Azure Pipelines 或 Team Foundation Server 生成和发布使用云
 
@@ -95,7 +95,7 @@ ms.locfileid: "44321172"
 标准环境和 SCVMM 环境支持许多相同功能。 但是，有一些重要的区别需要注意。 下表比较了可用于标准环境和 SCVMM 环境的功能。
 
 |功能|SCVMM 环境|标准环境|
-|----------------|------------------------|---------------------------|
+|-|------------------------|-|
 |**测试**|||
 |运行手动测试|支持|支持|
 |运行代码 UI 和其他自动化测试|支持|支持|
@@ -117,7 +117,7 @@ ms.locfileid: "44321172"
 以下是一些你在继续之前应该熟悉的其他概念：
 
 |术语|描述|
-|----------|-----------------|
+|-|-----------------|
 |实验室中心|可在其中创建和管理实验室环境的 Microsoft 测试管理器区域。|
 |Azure DevOps 项目实验室|已设置的实验室环境的集合，以便你连接到它们并运行其虚拟机。|
 |Azure DevOps 项目库|已存储虚拟机、模板和已存储实验室环境的存档，它已导入项目的主机组。 你可以借助 SCVMM 环境使用你的库中的项；但是，你无法将它们直接添加到标准环境。 你无法运行库中的项；但你可以使用它们部署新环境。|

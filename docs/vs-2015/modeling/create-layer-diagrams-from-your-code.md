@@ -17,12 +17,12 @@ caps.latest.revision: 64
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 21b014e4b13544a7fe2a672674bccc34320d0083
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 27fb58e0219dd05c623a553c65e577834ee4a05f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196126"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833481"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>从你的代码创建层关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ ms.locfileid: "49196126"
 > [!NOTE]
 >  无法为某些种类的项目对依赖关系进行反向工程处理。 例如，对于链接到文本文件的层，将不会对源自或指向该层的依赖关系进行反向工程处理。 若要查看哪些项目具有可进行反向工程处理的依赖项，打开一个或多个层的快捷菜单，然后选择**查看链接**。 在中**层资源管理器**，检查**支持验证**列。 依赖项不会为其此列显示的项目实施反向工程**False**。  
   
--   选择一个或多个层，打开所选的层的快捷菜单，然后选择**生成依赖项**。  
+- 选择一个或多个层，打开所选的层的快捷菜单，然后选择**生成依赖项**。  
   
- 通常，您会看到一些不应存在的依赖关系。 可以编辑这些依赖关系，使它们与预期的设计对齐。  
+  通常，您会看到一些不应存在的依赖关系。 可以编辑这些依赖关系，使它们与预期的设计对齐。  
   
 ##  <a name="EditDependencies"></a> 编辑层和依赖关系，以显示预期的设计  
  若要描述你计划对系统或计划的体系结构进行的更改，请编辑关系图：  

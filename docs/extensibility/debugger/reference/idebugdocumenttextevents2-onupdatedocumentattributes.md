@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes |Microsoft 文档
+title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 098698041ab90611e29132a9f9205b7b78238062
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3bda3f7869715b3c0ab08d64cdb7ef1f13ca4898
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109722"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816724"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
-通知的事件的接收方已更新的文档属性。  
+通知事件的接收方已更新的文档属性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,11 +41,11 @@ int onUpdateDocumentAttributes(
   
 #### <a name="parameters"></a>参数  
  `textdocattr`  
- [in]中的标志的组合[TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)指定文档的更新的特性的枚举。  
+ [in]中的标志的组合[TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)枚举，用于指定文档的已更新的属性。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
  [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

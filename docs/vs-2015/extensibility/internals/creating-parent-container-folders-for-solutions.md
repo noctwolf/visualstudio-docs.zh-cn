@@ -16,12 +16,12 @@ ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f731c9f441aecf5277dafffc5cc8b10d1a703a4b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8bf3de0c558dbda1d1b43e7b5887780f1a1e2b90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832053"
 ---
 # <a name="creating-parent-container-folders-for-solutions"></a>为解决方案创建父级容器文件夹
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49307711"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]时将解决方案添加到源代码管理后，IDE 将几乎总是创建 SUR 文件夹。 具体而言，它是在以下情况下：  
   
--   该项目是 Web 项目的文件共享。  
+- 该项目是 Web 项目的文件共享。  
   
--   有不同的项目和解决方案文件的驱动器。  
+- 有不同的项目和解决方案文件的驱动器。  
   
--   没有为项目和解决方案文件的不同共享。  
+- 没有为项目和解决方案文件的不同共享。  
   
--   将项目添加单独 （在受源代码管理解决方案）。  
+- 将项目添加单独 （在受源代码管理解决方案）。  
   
- 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]建议 SUR 文件夹的名称是不带扩展名的解决方案名称相同。 下表总结了两个版本中的行为。  
+  在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]建议 SUR 文件夹的名称是不带扩展名的解决方案名称相同。 下表总结了两个版本中的行为。  
   
 |功能|tSource 控制插件 API 版本 1.1|源代码管理插件 API 版本 1.2|  
 |-------------|----------------------------------------------|---------------------------------------------|  

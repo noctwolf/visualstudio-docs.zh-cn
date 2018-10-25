@@ -1,5 +1,5 @@
 ---
-title: 如何：仅使用键盘进行操作
+title: 如何：以独占方式使用键盘
 description: 了解如何使用默认快捷键组合在 Visual Studio 集成开发环境 (IDE) 中轻松导航和编码。
 ms.date: 08/22/2016
 ms.prod: visual-studio-dev15
@@ -18,14 +18,14 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e849e851bdb2cfed27ff58e90c4e7248b83ed09
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818258"
 ---
-# <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
+# <a name="how-to-use-the-keyboard-exclusively"></a>如何：以独占方式使用键盘
 
 > [!TIP]
 > 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
@@ -42,15 +42,15 @@ ms.locfileid: "31949914"
 
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用键盘将工具箱中的控件添加到设计器中
 
-1.  在菜单栏上，依次选择“视图”、“工具箱”。
+1. 在菜单栏上，依次选择“视图”、“工具箱”。
 
-2.  使用 Ctrl+向上键或 Ctrl+向下键，在当前“工具箱”选项卡的各部分间移动。
+2. 使用 Ctrl+向上键或 Ctrl+向下键，在当前“工具箱”选项卡的各部分间移动。
 
-3.  使用向上键或向下键，在控件之间移动。
+3. 使用向上键或向下键，在控件之间移动。
 
-4.  选中控件后，使用 Enter 键。
+4. 选中控件后，使用 Enter 键。
 
- 该控件会添加到表单或设计器中。
+   该控件会添加到表单或设计器中。
 
 ## <a name="dialog-box-options"></a>对话框选项
 

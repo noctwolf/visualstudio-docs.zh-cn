@@ -17,12 +17,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f32cc47b796ea7d32207448e7888c17a1d40a73a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8ad3c479349b698283fcb3a7145dcfc3948254b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254363"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836731"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,41 +87,41 @@ ms.locfileid: "49254363"
   
 #### <a name="to-display-a-button-when-one-or-more-projects-are-open"></a>当一个或多个项目打开时显示的按钮  
   
-1.  在中`<Buttons>`部分的 ToolbarButtonPackage.vsct，将两个命令标志添加到现有`<Button>`元素之间`<Strings>`和`<Icons>`标记。  
+1. 在中`<Buttons>`部分的 ToolbarButtonPackage.vsct，将两个命令标志添加到现有`<Button>`元素之间`<Strings>`和`<Icons>`标记。  
   
-    ```xml  
-    <CommandFlag>DefaultInvisible</CommandFlag>  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DefaultInvisible</CommandFlag>  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-     `DefaultInvisible`并`DynamicVisibility`标志必须设置操作中的该条目`<VisibilityConstraints>`部分才会生效。  
+    `DefaultInvisible`并`DynamicVisibility`标志必须设置操作中的该条目`<VisibilityConstraints>`部分才会生效。  
   
-2.  创建`<VisibilityConstraints>`节，其中包含两个`<VisibilityItem>`条目。 恰好在关闭后将新的部分`</Commands>`标记。  
+2. 创建`<VisibilityConstraints>`节，其中包含两个`<VisibilityItem>`条目。 恰好在关闭后将新的部分`</Commands>`标记。  
   
-    ```xml  
-    <VisibilityConstraints>  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasSingleProject" />  
-        <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
-              id="ToolbarButtonId"  
-              context="UICONTEXT_SolutionHasMultipleProjects" />  
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasSingleProject" />  
+       <VisibilityItem guid="guidToolbarButtonPackageCmdSet"  
+             id="ToolbarButtonId"  
+             context="UICONTEXT_SolutionHasMultipleProjects" />  
+   </VisibilityConstraints>  
+   ```  
   
-     可见性的每个项表示指定的按钮显示在其下的条件。 若要应用多个条件，必须创建多个条目为相同的按钮。  
+    可见性的每个项表示指定的按钮显示在其下的条件。 若要应用多个条件，必须创建多个条目为相同的按钮。  
   
-3.  生成项目并启动调试。 将显示在实验实例。  
+3. 生成项目并启动调试。 将显示在实验实例。  
   
-     **解决方案资源管理器**工具栏不包含删除线按钮。  
+    **解决方案资源管理器**工具栏不包含删除线按钮。  
   
-4.  打开包含项目的任何解决方案。  
+4. 打开包含项目的任何解决方案。  
   
-     删除线按钮在现有按钮右侧的工具栏上显示。  
+    删除线按钮在现有按钮右侧的工具栏上显示。  
   
-5.  上**文件**菜单上，单击**关闭解决方案**。 从工具栏中，按钮就会消失。  
+5. 上**文件**菜单上，单击**关闭解决方案**。 从工具栏中，按钮就会消失。  
   
- 由控制按钮的可见性[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]直到加载 VSPackage。 VSPackage 加载后，由 VSPackage 控制按钮的可见性。  有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)。  
+   由控制按钮的可见性[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]直到加载 VSPackage。 VSPackage 加载后，由 VSPackage 控制按钮的可见性。  有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ea4b3a0ed5f041b2f09c3f3e57f334bf11777f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a758c1e44f9f78f7dc2a225e641d91f97db72cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942824"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ##  <a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -325,13 +325,13 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="title-case"></a>词首字母大写  
  词首字母大写是大多数或所有词在短语内的第一个字母首字母大写的样式。 在 Visual Studio 中，词首字母大写用于多个项，包括：  
   
--   **工具提示。** 示例:"预览所选项目"  
+- **工具提示。** 示例:"预览所选项目"  
   
--   **列标题。** 示例:"系统响应"  
+- **列标题。** 示例:"系统响应"  
   
--   **菜单项。** 示例:"全部保存"  
+- **菜单项。** 示例:"全部保存"  
   
- 在使用词首字母大写，这些是何时首字母大写的单词以及何时将小写的准则：  
+  在使用词首字母大写，这些是何时首字母大写的单词以及何时将小写的准则：  
   
 |大写|注释和示例|  
 |---------------|---------------------------|  

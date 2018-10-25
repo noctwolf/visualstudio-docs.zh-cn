@@ -1,5 +1,5 @@
 ---
-title: IDebugManagedObject::SetFromManagedObject |Microsoft 文档
+title: IDebugManagedObject::SetFromManagedObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d240c931db24cc353d7bb461645771eb4520921
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afe3431e282a8cd48ea33851cef00fba116e389a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833936"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-从作为参数提供值类的实例设置的值类对象的实例的值。  
+从作为参数提供的值类的实例设置的值类对象的实例的值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int SetFromManagedObject(
   
 #### <a name="parameters"></a>参数  
  `pManagedObject`  
- [in]一个接口，表示包含新值的托管的对象。  
+ [in]一个表示包含新值的托管的对象的接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法用于更改托管的对象所表示的[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)对象。  
+ 使用此方法可以更改托管的对象，由表示[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

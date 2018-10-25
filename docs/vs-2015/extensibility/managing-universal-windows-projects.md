@@ -13,12 +13,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 40d9a160d839b965c4b5f6db2413237af0af30ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e32c55e0e159ebaa59e0a70e41a05249bb46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252806"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837940"
 ---
 # <a name="managing-universal-windows-projects"></a>管理通用 Windows 项目
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -416,116 +416,116 @@ ms.locfileid: "49252806"
   
 ### <a name="detecting-changes-in-platform-projects-and-shared-projects"></a>检测平台项目和共享的项目中的更改  
   
-1.  正如平台项目，您可以使用层次结构和项目事件在共享项目中，检测更改。 但是，共享项目中的项目项不可见，这意味着更改共享的项目项时，某些事件不会发生激发。  
+1. 正如平台项目，您可以使用层次结构和项目事件在共享项目中，检测更改。 但是，共享项目中的项目项不可见，这意味着更改共享的项目项时，某些事件不会发生激发。  
   
-     请考虑重命名项目中的文件时的事件序列：  
+    请考虑重命名项目中的文件时的事件序列：  
   
-    1.  在磁盘上更改的文件的名称。  
+   1. 在磁盘上更改的文件的名称。  
   
-    2.  更新项目文件以包括新的文件的名称。  
+   2. 更新项目文件以包括新的文件的名称。  
   
-     层次结构事件 (例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常可跟踪所做的更改显示在 UI 中，如**解决方案资源管理器**。 层次结构事件，请考虑删除文件和文件添加然后组成的文件重命名操作。 但是，不可见的项更改时，层次结构事件系统会触发<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件，但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。 因此，如果您重命名的平台项目中的文件，则获取这两项<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>并<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>，但如果您重命名共享项目中的文件，则仅获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>。  
+      层次结构事件 (例如， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>) 通常可跟踪所做的更改显示在 UI 中，如**解决方案资源管理器**。 层次结构事件，请考虑删除文件和文件添加然后组成的文件重命名操作。 但是，不可见的项更改时，层次结构事件系统会触发<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>事件，但不是<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>事件。 因此，如果您重命名的平台项目中的文件，则获取这两项<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>并<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A>，但如果您重命名共享项目中的文件，则仅获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A>。  
   
-     若要跟踪项目项中的更改，你可以处理 DTE 项目项事件 (在中找到的<xref:EnvDTE.ProjectItemsEventsClass>)。 但是，如果要处理大量的事件，你可以获得更好的性能处理中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>。 在本演练中介绍的层次结构事件以及 DTE 事件。 在此过程中对共享的项目和平台项目添加事件侦听器。 然后，当您重命名共享项目中的一个文件，并在平台项目中的另一个文件，可以看到为每个重命名操作激发的事件。  
+      若要跟踪项目项中的更改，你可以处理 DTE 项目项事件 (在中找到的<xref:EnvDTE.ProjectItemsEventsClass>)。 但是，如果要处理大量的事件，你可以获得更好的性能处理中的事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>。 在本演练中介绍的层次结构事件以及 DTE 事件。 在此过程中对共享的项目和平台项目添加事件侦听器。 然后，当您重命名共享项目中的一个文件，并在平台项目中的另一个文件，可以看到为每个重命名操作激发的事件。  
   
-     在此过程中对共享的项目和平台项目添加事件侦听器。 然后，当您重命名共享项目中的一个文件，并在平台项目中的另一个文件，可以看到为每个重命名操作激发的事件。  
+      在此过程中对共享的项目和平台项目添加事件侦听器。 然后，当您重命名共享项目中的一个文件，并在平台项目中的另一个文件，可以看到为每个重命名操作激发的事件。  
   
-2.  添加事件侦听器。 向项目添加一个新类文件，并调用它 HierarchyEventListener.cs。  
+2. 添加事件侦听器。 向项目添加一个新类文件，并调用它 HierarchyEventListener.cs。  
   
-3.  打开 HierarchyEventListener.cs 文件并添加以下 using 语句：  
+3. 打开 HierarchyEventListener.cs 文件并添加以下 using 语句：  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio;  
-    using System.IO;  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio;  
+   using System.IO;  
   
-    ```  
+   ```  
   
-4.  具有`HierarchyEventListener`类实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
+4. 具有`HierarchyEventListener`类实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    { }  
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   { }  
   
-    ```  
+   ```  
   
-5.  实现的成员<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>，如下面的代码。  
+5. 实现的成员<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>，如下面的代码。  
   
-    ```csharp  
-    class HierarchyEventListener : IVsHierarchyEvents  
-    {  
-        private IVsHierarchy hierarchy;  
-        IVsOutputWindowPane output;   
+   ```csharp  
+   class HierarchyEventListener : IVsHierarchyEvents  
+   {  
+       private IVsHierarchy hierarchy;  
+       IVsOutputWindowPane output;   
   
-        internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
-             this.hierarchy = hierarchy;  
-             this.output = outputWindow;  
-        }  
+       internal HierarchyEventListener(IVsHierarchy hierarchy, IVsOutputWindowPane outputWindow) {  
+            this.hierarchy = hierarchy;  
+            this.output = outputWindow;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateIcon(IntPtr hIcon) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnInvalidateItems(uint itemIDParent) {  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemAdded(uint itemIDParent, uint itemIDSiblingPrev, uint itemIDAdded) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemAdded: " + itemIDAdded + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemDeleted(uint itemID) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemDeleted: " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
-            return VSConstants.S_OK;  
-        }  
+       int IVsHierarchyEvents.OnItemsAppended(uint itemIDParent) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnItemsAppended\n");  
+           return VSConstants.S_OK;  
+       }  
   
-        int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
-            output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
-            return VSConstants.S_OK;  
-        }  
-    }  
+       int IVsHierarchyEvents.OnPropertyChanged(uint itemID, int propID, uint flags) {  
+           output.OutputStringThreadSafe("IVsHierarchyEvents.OnPropertyChanged: item ID " + itemID + "\n");  
+           return VSConstants.S_OK;  
+       }  
+   }  
   
-    ```  
+   ```  
   
-6.  在同一类中添加另一个事件处理程序 DTE 事件<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>，就会出现此每当重命名项目项。  
+6. 在同一类中添加另一个事件处理程序 DTE 事件<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>，就会出现此每当重命名项目项。  
   
-    ```csharp  
-    public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
-    {  
-        output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
-             oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
-    }  
-    ```  
+   ```csharp  
+   public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
+   {  
+       output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
+            oldName, Path.GetFileName(projItem.get_FileNames(1)), projItem.ContainingProject.Name));  
+   }  
+   ```  
   
-7.  注册层次结构事件。 您需要单独登录正在跟踪每个项目。 中的以下代码添加`ShowMessageBox`，一个用于共享的项目，另一个用于平台项目之一。  
+7. 注册层次结构事件。 您需要单独登录正在跟踪每个项目。 中的以下代码添加`ShowMessageBox`，一个用于共享的项目，另一个用于平台项目之一。  
   
-    ```csharp  
-    // hook up the event listener for hierarchy events on the shared project  
-    HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
-    uint cookie1;  
-    sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
+   ```csharp  
+   // hook up the event listener for hierarchy events on the shared project  
+   HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
+   uint cookie1;  
+   sharedHier.AdviseHierarchyEvents(listener1, out cookie1);  
   
-    // hook up the event listener for hierarchy events on the   
-    active project  
-    HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
-    uint cookie2;  
-    activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
-    ```  
+   // hook up the event listener for hierarchy events on the   
+   active project  
+   HierarchyEventListener listener2 = new HierarchyEventListener(activePlatformHier, output);  
+   uint cookie2;  
+   activePlatformHier.AdviseHierarchyEvents(listener2, out cookie2);  
+   ```  
   
-8.  DTE 项目项事件注册<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>。 可以将挂接到第二个侦听器后，请添加以下代码。  
+8. DTE 项目项事件注册<xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>。 可以将挂接到第二个侦听器后，请添加以下代码。  
   
-    ```csharp  
-    // hook up DTE events for project items  
-    Events2 dteEvents = (Events2)dte.Events;  
-    dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
+   ```csharp  
+   // hook up DTE events for project items  
+   Events2 dteEvents = (Events2)dte.Events;  
+   dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
   
-    ```  
+   ```  
   
 9. 修改共享的项。 不能修改平台项目; 中的共享的项相反，必须在这些项的实际所有者共享项目中修改它们。 可以使用共享项目中获取相应的项 ID <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>，向其提供共享的项的完整路径。 然后，可以修改共享的项。 更改传播到平台项目。  
   

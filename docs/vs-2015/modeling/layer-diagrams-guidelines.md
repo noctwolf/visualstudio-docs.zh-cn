@@ -17,12 +17,12 @@ caps.latest.revision: 57
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2307bb0bfbc366ab1d2d1636f5e289ac0f4b4bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: faa6c3a39b7aa8a0ca7b2788cd9946421cfe6b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844154"
 ---
 # <a name="layer-diagrams-guidelines"></a>层关系图：指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,9 +92,9 @@ ms.locfileid: "49202574"
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>为对层之间的现有依赖关系进行反向工程  
   
--   选择一个或多个层中，右键单击所选的层，然后单击**生成依赖项**。  
+- 选择一个或多个层中，右键单击所选的层，然后单击**生成依赖项**。  
   
- 通常，您会看到一些不应存在的依赖关系。 可以编辑这些依赖关系，使它们与预期的设计对齐。  
+  通常，您会看到一些不应存在的依赖关系。 可以编辑这些依赖关系，使它们与预期的设计对齐。  
   
 ##  <a name="EditArchitecture"></a> 编辑层和依赖关系，以显示预期的设计  
  若要说明您准备对系统或计划的体系结构进行的更改，请使用以下步骤来编辑层关系图。 你还可以考虑进行一些重构的更改，以提高代码的结构，然后再扩展。 请参阅[提高代码的结构](#Improving)。  
@@ -151,11 +151,11 @@ ms.locfileid: "49202574"
 ##  <a name="UpdateCode"></a> 更新代码以符合新体系结构  
  通常情况下，当你将验证更新后的层关系图的代码时，将出现第一次错误。 这些错误可能有几个原因：  
   
--   将项目指派给了错误的层。 在这种情况下，请移动项目。  
+- 将项目指派给了错误的层。 在这种情况下，请移动项目。  
   
--   项目（例如类）以与你的体系结构相冲突的方式使用了其他类。 在这种情况下，请重构代码以移除依赖关系。  
+- 项目（例如类）以与你的体系结构相冲突的方式使用了其他类。 在这种情况下，请重构代码以移除依赖关系。  
   
- 若要解决这些错误，请更新代码，直至验证过程中不出现其他错误为止。 这通常是一个迭代过程。 有关这些错误的详细信息，请参阅[用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
+  若要解决这些错误，请更新代码，直至验证过程中不出现其他错误为止。 这通常是一个迭代过程。 有关这些错误的详细信息，请参阅[用层关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。  
   
 > [!NOTE]
 >  在你开发或重构代码时，你可能有新项目要链接到层关系图。 但是，这可能不是必要的，例如，当您的层表示现有命名空间时，而且新代码只是向这些命名空间中添加更多的材料。  

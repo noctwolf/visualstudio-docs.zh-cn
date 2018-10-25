@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_arrayindextypeid |Microsoft 文档'
+title: 'Idiasymbol:: Get_arrayindextypeid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 793e4479a848978a41991c217fcbca578b033495
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: bc761032c3a64200057f5e793aca80b1684c0d20
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462881"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818648"
 ---
 # <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
 检索的符号的数组索引类型标识符。  
@@ -40,10 +40,10 @@ HRESULT get_arrayIndexTypeId (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 标识符是由 DIA SDK，可将标记为唯一的所有符号的唯一值。  
+ 标识符是唯一的值创建的 DIA SDK，可将标记为唯一的所有符号。  
   
 ## <a name="requirements"></a>要求  
   
