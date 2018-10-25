@@ -44,12 +44,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b85bbf5ac3507d9a65c8c2b3f0b71dbe61c1752
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 8149e8029dbe39d37ab3979df9af38386af84d6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34693281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867411"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>在 Visual Studio 环境中的 office 项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”** 中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。  
@@ -59,22 +59,22 @@ ms.locfileid: "34693281"
 ## <a name="project-items-in-solution-explorer"></a>在解决方案资源管理器中的项目项  
  在文档级项目中， **“解决方案资源管理器”** 显示下列默认项：  
   
--   由项目自定义的文档、工作簿和表的节点。 这些节点用作与文档、工作簿和表相关联的代码文件的容器。  
+- 由项目自定义的文档、工作簿和表的节点。 这些节点用作与文档、工作簿和表相关联的代码文件的容器。  
   
--   与由项目自定义的文档、工作簿和表相关联的代码文件。 在 Word 项目中，代码文件与 Word 文档或模板相关联。 在 Excel 项目中，代码文件与 Excel 工作簿或模板相关联，并与工作簿或模板中的每个工作表和图表工作表相关联。  
+- 与由项目自定义的文档、工作簿和表相关联的代码文件。 在 Word 项目中，代码文件与 Word 文档或模板相关联。 在 Excel 项目中，代码文件与 Excel 工作簿或模板相关联，并与工作簿或模板中的每个工作表和图表工作表相关联。  
   
--   你不打算直接编辑的隐藏项目文件。 有关详细信息，请参阅[隐藏项目文件](#hiddenfiles)。  
+- 你不打算直接编辑的隐藏项目文件。 有关详细信息，请参阅[隐藏项目文件](#hiddenfiles)。  
   
- 在 VSTO 外接程序项目中，“解决方案资源管理器”  显示下列默认项：  
+  在 VSTO 外接程序项目中，“解决方案资源管理器”  显示下列默认项：  
   
--   应用程序节点。 此节点的名称与宿主应用程序相同，例如 **“Word”**、 **“Excel”** 或 **“Outlook”**。 应用程序节点包含 ThisAddIn 代码文件。 它还提供 **“宿主项的命名空间”** 属性。 有关此属性的详细信息，请参阅[Office 项目中的属性](../vsto/properties-in-office-projects.md)。  
+- 应用程序节点。 此节点的名称与宿主应用程序相同，例如 **“Word”**、 **“Excel”** 或 **“Outlook”**。 应用程序节点包含 ThisAddIn 代码文件。 它还提供 **“宿主项的命名空间”** 属性。 有关此属性的详细信息，请参阅[Office 项目中的属性](../vsto/properties-in-office-projects.md)。  
   
--   ThisAddIn 代码文件。 此文件包含 VSTO 外接程序的 `ThisAddIn` 生成类。 有关此类的详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+- ThisAddIn 代码文件。 此文件包含 VSTO 外接程序的 `ThisAddIn` 生成类。 有关此类的详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
--   你不打算直接编辑的隐藏项目文件。 有关详细信息，请参阅[隐藏项目文件](#hiddenfiles)。  
+- 你不打算直接编辑的隐藏项目文件。 有关详细信息，请参阅[隐藏项目文件](#hiddenfiles)。  
   
 ### <a name="temporary-certificates"></a>临时证书  
- Office 项目还包括名为 *Project Name*_TemporaryKey.pfx 的临时证书。 此证书用于在开发期间对项目的应用程序和部署清单进行签名。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)和[保护 Office 解决方案](../vsto/securing-office-solutions.md)。  
+ Office 项目还包括名为 *Project Name*_TemporaryKey.pfx 的临时证书。 此证书用于在开发期间对项目的应用程序和部署清单进行签名。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)并[保护 Office 解决方案](../vsto/securing-office-solutions.md)。  
   
 ###  <a name="hiddenfiles"></a> 隐藏的项目文件  
  默认情况下，某些项目文件是隐藏的。 这些文件由 Visual Studio 生成，它们因项目类型而异。 若要显示隐藏文件，请在 **“解决方案资源管理器”** 中，单击 **“显示所有文件”**。  
@@ -91,10 +91,10 @@ ms.locfileid: "34693281"
 ### <a name="controls-on-documents"></a>文档中的控件  
  可以将宿主控件  和 Windows 窗体控件从 Visual Studio **“工具箱”** 拖到文档设计图面上。 宿主控件是可用于通过 Visual Studio 创建的 Office 项目的特殊版本的 Office 对象，例如 Word 内容控件和 Excel 范围。 宿主控件具有在对应 Office 对象中不可用的附加功能，例如数据绑定和附加事件。  
   
- 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+ 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)并[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 ### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Excel 工作表和设计器中的工作簿  
- 当在设计器中打开工作表时，可以采用与在 Excel 中直接打开进行修改的相同方式来修改工作表。 当双击工作表单元格时，该单元格将切换到编辑模式。 如果双击包含主机控件的单元格时，代码编辑器随即打开，Visual Studio 生成控件的默认事件处理。 若要导航到其他工作表，可以在设计器底部单击工作表选项卡。  
+ 当在设计器中打开工作表时，可以采用与在 Excel 中直接打开进行修改的相同方式来修改工作表。 当双击工作表单元格时，该单元格将切换到编辑模式。 如果您双击包含宿主控件的单元格，此时会打开代码编辑器和 Visual Studio 生成控件的默认事件处理程序。 若要导航到其他工作表，可以在设计器底部单击工作表选项卡。  
   
  当在设计器中打开工作簿时，并没有设计图面。 工作簿的设计视图是填充设计器的大型组件栏。  
   
@@ -103,17 +103,17 @@ ms.locfileid: "34693281"
 ### <a name="word-documents-in-the-designer"></a>在设计器中的 Word 文档  
  当在设计器中打开文档时，可以采用与在 Word 中直接打开进行修改的相同方式来修改文档。 如果双击文档中的一个单词时，将选中该单词。 但是，如果该单词位于宿主控件内部，便会打开代码编辑器，Visual Studio 生成控件的默认事件处理程序。  
   
- 文档具有关联的代码文件。 代码文件包含一个已生成的代表文档的宿主项  类。 有关详细信息，请参阅[文档主机项](../vsto/document-host-item.md)。  
+ 文档具有关联的代码文件。 代码文件包含一个已生成的代表文档的宿主项  类。 有关详细信息，请参阅[文档宿主项](../vsto/document-host-item.md)。  
   
 ### <a name="design-mode-vs-runtime-mode"></a>与运行时模式下的设计模式  
  当文档在 Visual Studio 环境中打开时，它始终处于设计模式 。 某些任务（例如将宿主控件拖动到文档图面）只能在设计模式下执行。  
   
- 若要查看中的文档*运行时模式下*，则必须打开应用程序和 Visual Studio 外部文档。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。  
+ 若要查看的文档中*运行时模式*，则必须打开该应用程序和 Visual Studio 外部文档。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。  
   
 ## <a name="code-editor"></a>代码编辑器  
  通过代码编辑器，可以查看和修改解决方案中的可见代码文件。 这些文件包含定义解决方案行为的代码。  
   
- 有关代码编辑器中的详细信息，请参阅[在代码和文本编辑器中编写代码](/visualstudio/ide/writing-code-in-the-code-and-text-editor)。 有关如何在 Office 项目中编写代码的详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
+ 有关代码编辑器中的详细信息，请参阅[代码和文本编辑器中编写代码](/visualstudio/ide/writing-code-in-the-code-and-text-editor)。 有关如何在 Office 项目中编写代码的详细信息，请参阅[在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。  
   
 ## <a name="properties-window"></a>“属性”窗口  
  **“属性”** 窗口显示 **“解决方案资源管理器”** 中选择的项目项的属性，以及设计器中选择的 UI 元素的属性，具体如文档级项目中的控件或文档的属性。 有些属性是特定于应用程序和文档的，而有些属性则是所有项目共有的。  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 306f8c0497228ff67adab1b472ea74e2ba9e5d90
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 585615c07d9f11f75468bccde1bae05a355bf98f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899950"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem 元素 （Visual Studio 项目模板）
 指定项目模板中包含的文件。  
@@ -53,14 +53,14 @@ ms.locfileid: "39637177"
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
-|---------------|-----------------|  
-|`TargetFileName`|可选特性。<br /><br /> 从模板创建项目时指定的名称和项目项的路径。 此属性可用于在模板中创建的目录结构的目录结构不同 *.zip*文件，或使用参数替换创建的项名称。|  
-|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，该值指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。|  
-|`OpenInEditor`|可选特性。<br /><br /> 一个布尔值，指定此项是否应在其各自编辑器中打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从模板创建项目时。<br /><br /> `OpenInWebBrowser`并`OpenInHelpBrowser`将忽略具有的项上的属性`OpenInEditor`的值`true`。<br /><br /> 默认值为 `false`。|  
-|`OpenInWebBrowser`|可选特性。<br /><br /> 一个布尔值，该值指定项是否应该打开 Web 浏览器从模板创建项目。<br /><br /> 只有 HTML 文件和文本文件是本地的项目可以在 Web 浏览器中打开。 外部 Url 不能打开与此特性。<br /><br /> 默认值为 `false`。|  
-|`OpenInHelpBrowser`|可选特性。<br /><br /> 一个布尔值，该值指定从模板创建项目项是否应在帮助查看器中打开。<br /><br /> 只有 HTML 文件和文本文件是本地的项目可以帮助浏览器中打开。 外部 Url 不能打开与此特性。<br /><br /> 默认值为 `false`。|  
-|`OpenOrder`|可选特性。<br /><br /> 指定数字值，该值表示项将在其各自的编辑器中打开的顺序。 所有值都必须为 10 的倍数。 更高版本的项与`OpenOrder`值首先打开。|  
+| 特性 | 描述 |
+|---------------------| - |
+| `TargetFileName` | 可选特性。<br /><br /> 从模板创建项目时指定的名称和项目项的路径。 此属性可用于在模板中创建的目录结构的目录结构不同 *.zip*文件，或使用参数替换创建的项名称。 |
+| `ReplaceParameters` | 可选特性。<br /><br /> 一个布尔值，该值指定项是否可以从模板创建项目时，必须将其替换的参数值。 默认值是 `false`。 |
+| `OpenInEditor` | 可选特性。<br /><br /> 一个布尔值，指定此项是否应在其各自编辑器中打开[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]从模板创建项目时。<br /><br /> `OpenInWebBrowser`并`OpenInHelpBrowser`将忽略具有的项上的属性`OpenInEditor`的值`true`。<br /><br /> 默认值为 `false`。 |
+| `OpenInWebBrowser` | 可选特性。<br /><br /> 一个布尔值，该值指定项是否应该打开 Web 浏览器从模板创建项目。<br /><br /> 只有 HTML 文件和文本文件是本地的项目可以在 Web 浏览器中打开。 外部 Url 不能打开与此特性。<br /><br /> 默认值为 `false`。 |
+| `OpenInHelpBrowser` | 可选特性。<br /><br /> 一个布尔值，该值指定从模板创建项目项是否应在帮助查看器中打开。<br /><br /> 只有 HTML 文件和文本文件是本地的项目可以帮助浏览器中打开。 外部 Url 不能打开与此特性。<br /><br /> 默认值为 `false`。 |
+| `OpenOrder` | 可选特性。<br /><br /> 指定数字值，该值表示项将在其各自的编辑器中打开的顺序。 所有值都必须为 10 的倍数。 更高版本的项与`OpenOrder`值首先打开。 |
   
 ### <a name="child-elements"></a>子元素  
  无。  
@@ -91,27 +91,27 @@ ms.locfileid: "39637177"
   
 ### <a name="to-rename-files-with-parameters"></a>若要使用的参数重命名文件  
   
-1.  使用在下面的 XML *.vstemplate*文件：  
+1. 使用在下面的 XML *.vstemplate*文件：  
   
-    ```xml  
-    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
-    ```  
+   ```xml  
+   <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
+   ```  
   
-2.  打开项目文件 (*.vbproj*有关[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]项目) 中的文本编辑器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+2. 打开项目文件 (*.vbproj*有关[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]项目) 中的文本编辑器或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-3.  看起来类似于下面的 XML 项目文件中找到的行：  
+3. 看起来类似于下面的 XML 项目文件中找到的行：  
   
-    ```xml  
-    <Compile Include="MyFile.vb">  
-    ```  
+   ```xml  
+   <Compile Include="MyFile.vb">  
+   ```  
   
-4.  代码行替换为以下 XML:  
+4. 代码行替换为以下 XML:  
   
-    ```xml  
-    <Compile Include="$safeprojectname$.vb">  
-    ```  
+   ```xml  
+   <Compile Include="$safeprojectname$.vb">  
+   ```  
   
-     通过此模板创建项目，文件名称基于用户输入中的名称**新的项目**对话框中的，所有不安全字符和删除空格。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
+    通过此模板创建项目，文件名称基于用户输入中的名称**新的项目**对话框中的，所有不安全字符和删除空格。 有关详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
   
 ## <a name="example"></a>示例  
  下面的示例演示用于的项目模板的元数据[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]应用程序。  

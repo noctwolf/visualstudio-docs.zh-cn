@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumsourcefiles:: Next |Microsoft 文档'
+title: 'Idiaenumsourcefiles:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ca815309009ee8e43c17fb8a579c055e75c684e0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fef2d096ca522a6f6f2a05a081fb5a5a494e168c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819923"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 检索指定的数目的枚举序列中的源文件。  
@@ -36,13 +36,13 @@ HRESULT Next (
   
 #### <a name="parameters"></a>参数  
  celt  
- [in]要检索的枚举器中的源代码文件的数量。  
+ [in]要检索的枚举器中的源文件数。  
   
  rgelt  
- [out]数组，它是在用来填充[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)代表所需的源文件的对象。  
+ [out]数组，它是在用来填充[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象表示所需的源文件。  
   
  pceltFetched  
- [out]在提取枚举器返回源文件数。  
+ [out]返回在提取枚举器中的源文件数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多的源文件。 否则，返回错误代码。  

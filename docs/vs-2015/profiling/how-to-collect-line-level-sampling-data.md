@@ -16,12 +16,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b33679efb9fc3523d0ee10dc6bded0c1932a2175
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cca327ffe8dbf260915b5eaa143bef6bb631e690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893411"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>如何：收集行级采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49198583"
 ### <a name="available-data"></a>可用数据  
  可用的行级采样数据包括以下信息：  
   
--   函数名称。  
+- 函数名称。  
   
--   函数地址。  
+- 函数地址。  
   
--   行开始 – 被采样代码的行号。  
+- 行开始 – 被采样代码的行号。  
   
--   行结束 – 结束源行号。 除单个程序语句跨多个源代码行的情况外，这通常与“行开始”数据相同。  
+- 行结束 – 结束源行号。 除单个程序语句跨多个源代码行的情况外，这通常与“行开始”数据相同。  
   
--   字符开始 – 聚合样本的开始列。 除单个程序语句跨多个源代码行的情况外，这通常为 0。  
+- 字符开始 – 聚合样本的开始列。 除单个程序语句跨多个源代码行的情况外，这通常为 0。  
   
--   字符结尾 – 聚合样本的结束列。  
+- 字符结尾 – 聚合样本的结束列。  
   
--   IP - 获取聚合样本的地址（仅限 IP 视图）。  
+- IP - 获取聚合样本的地址（仅限 IP 视图）。  
   
- 在“模块”视图中，如果函数具有行级统计信息，这些统计信息将嵌套在每个函数下。 此外，还将显示嵌套在每行下的 IP 级统计信息。  
+  在“模块”视图中，如果函数具有行级统计信息，这些统计信息将嵌套在每个函数下。 此外，还将显示嵌套在每行下的 IP 级统计信息。  
   
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>关闭托管代码的行级采样  
  默认情况下，行级采样处于开启状态。 可以通过执行以下任一操作来关闭托管代码的行级数据收集：  

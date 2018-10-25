@@ -20,12 +20,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87cd108d3225b87b39121684217c93510f95f140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4a130a04be7a0645fef44ff6c8ae9dcc31b55dcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264067"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867229"
 ---
 # <a name="application-page-project-designer-c"></a>“项目设计器”->“应用程序”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,16 +94,16 @@ ms.locfileid: "49264067"
  **Manifest**  
  当应用程序在 Windows Vista 上以用户帐户控制 (UAC) 模式运行时，选择一个清单生成选项。 此选项可以有下列值：  
   
--   **嵌入带默认设置的清单**。 支持 Visual Studio 在 Windows Vista 上的典型操作方式，即，将安全信息嵌入应用程序的可执行文件中，并指定 `requestedExecutionLevel` 为 `AsInvoker`。 这是默认选项。  
+- **嵌入带默认设置的清单**。 支持 Visual Studio 在 Windows Vista 上的典型操作方式，即，将安全信息嵌入应用程序的可执行文件中，并指定 `requestedExecutionLevel` 为 `AsInvoker`。 这是默认选项。  
   
--   **创建不带清单的应用程序**。 此方法称为*虚拟化*。 若要与早期的应用程序兼容，则使用此选项。  
+- **创建不带清单的应用程序**。 此方法称为*虚拟化*。 若要与早期的应用程序兼容，则使用此选项。  
   
--   **Properties\app.manifest**。 此选项对通过 ClickOnce 或 Registration-Free COM 部署的应用程序而言是必需的。 如果通过使用 ClickOnce 部署发布应用程序，“清单”会自动设置为此选项。  
+- **Properties\app.manifest**。 此选项对通过 ClickOnce 或 Registration-Free COM 部署的应用程序而言是必需的。 如果通过使用 ClickOnce 部署发布应用程序，“清单”会自动设置为此选项。  
   
- **资源文件**  
- 若要为项目提供资源文件，则选中此单选按钮。 选择此选项会禁用“图标”和“清单”选项。  
+  **资源文件**  
+  若要为项目提供资源文件，则选中此单选按钮。 选择此选项会禁用“图标”和“清单”选项。  
   
- 输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
+  输入路径名或使用“浏览”按钮 (**...**)，以向项目添加 Win32 资源文件。  
   
 ## <a name="see-also"></a>请参阅  
 [管理应用程序属性](../../ide/application-properties.md)  

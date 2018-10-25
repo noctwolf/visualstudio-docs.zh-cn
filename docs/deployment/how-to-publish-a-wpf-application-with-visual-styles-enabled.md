@@ -10,27 +10,27 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c97725f4d78923384d7a3ec9f327a7dd2aca7b
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512953"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830049"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何： 发布启用了视觉样式的 WPF 应用程序
 视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概述](/windows/desktop/Controls/visual-styles-overview)。 有关错误消息的详细信息，请参阅[排查 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
   
  若要解决此错误并发布解决方案，必须执行以下任务：  
   
--   [将解决方案发布不使用视觉样式已启用](#publish-the-solution-without-visual-styles-enabled)。  
+- [将解决方案发布不使用视觉样式已启用](#publish-the-solution-without-visual-styles-enabled)。  
   
--   [创建清单文件](#create-a-manifest-file)。  
+- [创建清单文件](#create-a-manifest-file)。  
   
--   [将清单文件嵌入到已发布解决方案的可执行文件](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution)。  
+- [将清单文件嵌入到已发布解决方案的可执行文件](#embed-the-manifest-file-into-the-executable-file-of-the-published-solution)。  
   
--   [应用程序和部署清单签名](#sign-the-application-and-deployment-manifests)。  
+- [应用程序和部署清单签名](#sign-the-application-and-deployment-manifests)。  
   
- 然后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。  
+  然后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。  
   
 ##  <a name="publish-the-solution-without-visual-styles-enabled"></a>将解决方案发布不使用视觉样式已启用  
   
@@ -94,72 +94,72 @@ ms.locfileid: "39512953"
   
 ## <a name="embed-the-manifest-file-into-the-executable-file-of-the-published-solution"></a>将清单文件嵌入到已发布解决方案的可执行文件  
   
-1.  打开**Visual Studio 命令提示符**。  
+1. 打开**Visual Studio 命令提示符**。  
   
-     有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)。  
+    有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)。  
   
-    > [!NOTE]
-    >  剩余的步骤使你的解决方案有关的以下假设：  
-    >   
-    >  -   解决方案的名称是**MyWPFProject**。  
-    > -   该解决方案位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
-    >   
-    >      该解决方案发布到以下目录： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
-    > -   最新版本的发布的应用程序文件位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  无需使用的名称或上面所述的目录位置。 名称和位置上面所述仅用于说明发布你的解决方案所需的步骤。  
+   > [!NOTE]
+   >  剩余的步骤使你的解决方案有关的以下假设：  
+   > 
+   > - 解决方案的名称是**MyWPFProject**。  
+   >   -   该解决方案位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
+   > 
+   >   该解决方案发布到以下目录： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
+   >   -   最新版本的发布的应用程序文件位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   无需使用的名称或上面所述的目录位置。 名称和位置上面所述仅用于说明发布你的解决方案所需的步骤。  
   
-2.  在命令提示符下，将更改为包含已发布的应用程序文件的最新版本的目录的路径。 下面的示例演示了此步骤。  
+2. 在命令提示符下，将更改为包含已发布的应用程序文件的最新版本的目录的路径。 下面的示例演示了此步骤。  
   
-    ```cmd  
-cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```cmd  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  在命令提示符下运行以下命令以将清单文件嵌入到应用程序的可执行文件。  
+3. 在命令提示符下运行以下命令以将清单文件嵌入到应用程序的可执行文件。  
   
-    ```cmd
-    mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```cmd
+   mt -manifest c:\temp\themes.manifest -outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ## <a name="sign-the-application-and-deployment-manifests"></a>对应用程序和部署清单进行签名  
   
-1.  在命令提示符处，运行以下命令以删除 *.deploy*从当前目录中的可执行文件的扩展。  
+1. 在命令提示符处，运行以下命令以删除 *.deploy*从当前目录中的可执行文件的扩展。  
   
-    ```cmd  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```cmd  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定只有一个文件具有 *.deploy*文件扩展名。 请确保重命名此目录中的所有文件具有 *.deploy*文件扩展名。  
+   > [!NOTE]
+   >  此示例假定只有一个文件具有 *.deploy*文件扩展名。 请确保重命名此目录中的所有文件具有 *.deploy*文件扩展名。  
   
-2.  在命令提示符下运行以下命令，应用程序清单进行签名。  
+2. 在命令提示符下运行以下命令，应用程序清单进行签名。  
   
-    ```cmd  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```cmd  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定使用签名清单 *.pfx*项目文件。 如果不签名的清单，则可以省略`-cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`-password`选项 (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`)。  
+   > [!NOTE]
+   >  此示例假定使用签名清单 *.pfx*项目文件。 如果不签名的清单，则可以省略`-cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`-password`选项 (`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`)。  
   
-3.  在命令提示符处，运行以下命令来添加 *.deploy*扩展到您在此过程的上一步骤中重命名文件的名称。  
+3. 在命令提示符处，运行以下命令来添加 *.deploy*扩展到您在此过程的上一步骤中重命名文件的名称。  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定只有一个文件具有 *.deploy*文件扩展名。 请确保以前此目录中的所有文件重都命名 *.deploy*文件扩展名。  
+   > [!NOTE]
+   >  此示例假定只有一个文件具有 *.deploy*文件扩展名。 请确保以前此目录中的所有文件重都命名 *.deploy*文件扩展名。  
   
-4.  在命令提示符下运行以下命令部署清单进行签名。  
+4. 在命令提示符下运行以下命令部署清单进行签名。  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定使用签名清单 *.pfx*项目文件。 如果不签名的清单，则可以省略`-cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`-password`选项，如本例所示：`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`。  
+   > [!NOTE]
+   >  此示例假定使用签名清单 *.pfx*项目文件。 如果不签名的清单，则可以省略`-cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`-password`选项，如本例所示：`For example: mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx - password Password`。  
   
- 执行这些步骤后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。 如果你想要经常更新解决方案，可以将这些命令移到一个脚本，并运行该脚本每次发布新版本。  
+   执行这些步骤后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。 如果你想要经常更新解决方案，可以将这些命令移到一个脚本，并运行该脚本每次发布新版本。  
   
 ## <a name="see-also"></a>请参阅
 

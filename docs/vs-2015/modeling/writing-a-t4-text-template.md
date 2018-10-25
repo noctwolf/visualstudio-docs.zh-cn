@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0f7a3da89f98d469dde60b98ad68de0574d10db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231629"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897792"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49231629"
   
  文本模板由以下部件组成：  
   
--   **指令**-控制模板的处理方式的元素。  
+- **指令**-控制模板的处理方式的元素。  
   
--   **文本块**-内容的直接复制到输出。  
+- **文本块**-内容的直接复制到输出。  
   
--   **控制块**-程序代码，用于将变量值插入到文本，以及控制条件或重复的文本部分。  
+- **控制块**-程序代码，用于将变量值插入到文本，以及控制条件或重复的文本部分。  
   
- 若要试用此主题中的示例，将它们复制到模板文件中所述[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 编辑模板文件后, 保存该文件，，然后检查输出 **.txt**文件。  
+  若要试用此主题中的示例，将它们复制到模板文件中所述[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 编辑模板文件后, 保存该文件，，然后检查输出 **.txt**文件。  
   
 ## <a name="directives"></a>指令  
  文本模板指令向文本模板化引擎提供关于如何生成转换代码和输出文件的一般指令。  

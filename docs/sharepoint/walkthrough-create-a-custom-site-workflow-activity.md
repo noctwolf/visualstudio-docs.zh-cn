@@ -21,29 +21,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b366db32a4caadf0f454f893d8f98e2d288f2390
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2adb6dd8788027d89a743518adee4425e424ce60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894165"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练： 创建自定义站点工作流活动
   本演练演示如何创建自定义活动的站点级工作流使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （站点级工作流应用于整个站点，而不仅仅是在站点上的列表。）自定义活动创建的备份通知列表，然后将公告列表的内容复制到其中。  
   
  本演练演示了下列任务：  
   
--   创建站点级工作流。  
+- 创建站点级工作流。  
   
--   创建自定义工作流活动。  
+- 创建自定义工作流活动。  
   
--   创建和删除 SharePoint 列表。  
+- 创建和删除 SharePoint 列表。  
   
--   将项从一个列表复制到另一个。  
+- 将项从一个列表复制到另一个。  
   
--   在快速启动栏上显示列表。  
+- 在快速启动栏上显示列表。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  

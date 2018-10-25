@@ -15,12 +15,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 486d41927e45dc8c99fda06c29d14871008d7066
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 329cb0a6008824b23d7188c0ea6c4cf5e524476d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817868"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>演练：将主机连接至生成的指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,34 +56,34 @@ ms.locfileid: "49251924"
   
 #### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>若要使用域特定语言工具生成基于域模型的指令处理器  
   
-1.  创建域特定语言解决方案具有以下特征：  
+1. 创建域特定语言解决方案具有以下特征：  
   
-    -   名称： DSLMinimalTest  
+   - 名称： DSLMinimalTest  
   
-    -   解决方案模板： 最小语言  
+   - 解决方案模板： 最小语言  
   
-    -   文件扩展名： 最小值  
+   - 文件扩展名： 最小值  
   
-    -   公司名称： Fabrikam  
+   - 公司名称： Fabrikam  
   
      有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
-2.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+2. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-    > [!IMPORTANT]
-    >  此步骤中生成指令处理器，并将该密钥为其添加在注册表中。  
+   > [!IMPORTANT]
+   >  此步骤中生成指令处理器，并将该密钥为其添加在注册表中。  
   
-3.  在“调试”菜单上，单击“启动调试”。  
+3. 在“调试”菜单上，单击“启动调试”。  
   
-     第二个实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]随即打开。  
+    第二个实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]随即打开。  
   
-4.  在实验性生成中**解决方案资源管理器**，双击该文件**sample.min**。  
+4. 在实验性生成中**解决方案资源管理器**，双击该文件**sample.min**。  
   
-     在设计器中打开该文件。 请注意，该模型包含两个元素、 ExampleElement1 和 ExampleElement2 和它们之间的链接。  
+    在设计器中打开该文件。 请注意，该模型包含两个元素、 ExampleElement1 和 ExampleElement2 和它们之间的链接。  
   
-5.  关闭第二个实例的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+5. 关闭第二个实例的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-6.  保存的解决方案，然后关闭域特定语言设计器。  
+6. 保存的解决方案，然后关闭域特定语言设计器。  
   
 ## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>连接到的指令处理器自定义文本模板宿主  
  生成指令处理器后，连接指令处理器和你在中创建自定义文本模板宿主[演练： 创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  

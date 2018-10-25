@@ -22,12 +22,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db777a7b35ce6576640b6ac688ae716c0e41f676
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbcd6fb78ef87992571347f6a32f18e939a00586
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892176"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,21 +38,21 @@ ms.locfileid: "49241665"
   
  这涉及到两种帐户：  
   
--   应用程序帐户是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 运行时所用的用户帐户。  
+- 应用程序帐户是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 运行时所用的用户帐户。  
   
--   连接帐户是用于建立到 SQL Server 的连接的标识。 这不一定是该连接使用 SQL 身份验证时 Visual Studio 运行所使用的标识。  
+- 连接帐户是用于建立到 SQL Server 的连接的标识。 这不一定是该连接使用 SQL 身份验证时 Visual Studio 运行所使用的标识。  
   
- SQL 调试要求应用程序帐户必须与连接帐户匹配或者是系统管理员。  
+  SQL 调试要求应用程序帐户必须与连接帐户匹配或者是系统管理员。  
   
- 如果正使用某个类似于 sa 的 SQL 登录，则该应用程序帐户在 SQL Server 上必须设置为系统管理员。 默认情况下，运行 SQL server 的计算机上的管理员是 SQL Server 系统管理员。  
+  如果正使用某个类似于 sa 的 SQL 登录，则该应用程序帐户在 SQL Server 上必须设置为系统管理员。 默认情况下，运行 SQL server 的计算机上的管理员是 SQL Server 系统管理员。  
   
- 若要纠正此错误，可能需要：  
+  若要纠正此错误，可能需要：  
   
--   验证权限设置。 有关详细信息，请参阅[如何： 设置 SQL Server 调试权限](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+- 验证权限设置。 有关详细信息，请参阅[如何： 设置 SQL Server 调试权限](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
--   如果设置正确，请确保 SQL 调试也正确。  
+- 如果设置正确，请确保 SQL 调试也正确。  
   
--   请咨询网络或数据库管理员。  
+- 请咨询网络或数据库管理员。  
   
 ## <a name="see-also"></a>请参阅  
  [设置 SQL 调试](http://msdn.microsoft.com/en-us/3db09e68-edcc-42de-9c22-4e97cfd55ab3)   

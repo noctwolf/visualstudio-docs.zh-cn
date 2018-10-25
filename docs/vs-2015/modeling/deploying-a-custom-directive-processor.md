@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: dc49795a2d19ab28eb4462efc9d6361e1ac18ab6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251948"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836393"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49251948"
   
  可用的方法包括：  
   
--   [Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
+- [Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。  
   
--   [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。  
+- [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。  
   
--   设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。  
+- 设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。  
   
- 仅当要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中转换文本模板时，才需要从上述方法中选用一种。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
+  仅当要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 或 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 中转换文本模板时，才需要从上述方法中选用一种。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器  
  您可以添加到自定义指令处理器[Visual Studio 扩展 (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832)。  
   
  需要确保 .vsix 文件包含以下两项：  
   
--   包含自定义指令处理器类的程序集 (.dll)。  
+- 包含自定义指令处理器类的程序集 (.dll)。  
   
--   注册指令处理器的 .pkgdef 文件。 文件的根名称必须与程序集相同。 例如，文件可以命名为 CDP.dll 和 CDP.pkgdef。  
+- 注册指令处理器的 .pkgdef 文件。 文件的根名称必须与程序集相同。 例如，文件可以命名为 CDP.dll 和 CDP.pkgdef。  
   
- 若要检查或更改 .vsix 文件的内容，请将其文件扩展名更改为 .zip，然后将其打开。 编辑内容之后，将文件扩展名改回为 .vsix。  
+  若要检查或更改 .vsix 文件的内容，请将其文件扩展名更改为 .zip，然后将其打开。 编辑内容之后，将文件扩展名改回为 .vsix。  
   
- 有几种方法可以创建 .vsix 文件。 以下过程将介绍其中一种方法。  
+  有几种方法可以创建 .vsix 文件。 以下过程将介绍其中一种方法。  
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>在 VSIX 项目中开发自定义指令处理器  
   
@@ -167,27 +167,27 @@ ms.locfileid: "49251948"
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>通过设置注册表项注册指令处理器  
   
-1.  运行 `regedit`。  
+1. 运行 `regedit`。  
   
-2.  在 regedit 中，定位到  
+2. 在 regedit 中，定位到  
   
-     **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
+    **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\*.0\TextTemplating\DirectiveProcessors**  
   
-     如果要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验版本中安装指令处理器，请在“11.0”之后插入“Exp”。  
+    如果要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验版本中安装指令处理器，请在“11.0”之后插入“Exp”。  
   
-3.  添加与指令处理器类同名的注册表项。  
+3. 添加与指令处理器类同名的注册表项。  
   
-    -   在注册表树中，右键单击**DirectiveProcessors**节点，指向**新建**，然后单击**密钥**。  
+   -   在注册表树中，右键单击**DirectiveProcessors**节点，指向**新建**，然后单击**密钥**。  
   
-4.  在新建节点中，根据下表为 Class 和 CodeBase 或 Assembly 添加字符串值。  
+4. 在新建节点中，根据下表为 Class 和 CodeBase 或 Assembly 添加字符串值。  
   
-    1.  右键单击你创建的节点，指向**新建**，然后单击**字符串值**。  
+   1.  右键单击你创建的节点，指向**新建**，然后单击**字符串值**。  
   
-    2.  编辑值的名称。  
+   2.  编辑值的名称。  
   
-    3.  双击该名称，然后编辑数据。  
+   3.  双击该名称，然后编辑数据。  
   
- 如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：  
+   如果自定义指令处理器不在 GAC 中，则注册表子项应如下表所示：  
   
 |name|类型|数据|  
 |----------|----------|----------|  

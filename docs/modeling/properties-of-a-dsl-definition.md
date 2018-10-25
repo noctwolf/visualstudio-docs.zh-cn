@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: a2f919e1dce6864fa25348acd9c9858f9e4022f8
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 990b55f4ba78f32acba40c325ade596f5628c54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857698"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893931"
 ---
 # <a name="properties-of-a-dsl-definition"></a>DSL 定义的属性
 DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 DslDefinition 属性将显示在**属性**窗口时单击关系图中的空白区域*域特定语言设计器*。
@@ -26,7 +26,7 @@ DslDefinition 属性定义*域特定语言*定义属性，如版本编号。 Dsl
  DslDefinition 具有下表中的属性：
 
 |属性|描述|默认|
-|--------------|-----------------|-------------|
+|-|-|-|
 |访问修饰符|确定域类的访问修饰符是否为公用或内部。|public|
 |自定义特性|自定义的域类的属性。<br /><br /> **请注意**使用浏览按钮将属性添加。|\<无 >|
 |公司名称|在系统注册表中的当前公司名称的名称。|当前的公司名称|

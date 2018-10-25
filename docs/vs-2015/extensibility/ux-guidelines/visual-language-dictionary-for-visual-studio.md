@@ -13,12 +13,12 @@ ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 250e7c80e47b9ea53306697d57b305fdcc9c645c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f5a8ec02368c5a05587665f1e41b55b2daba409
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886391"
 ---
 # <a name="visual-language-dictionary-for-visual-studio"></a>Visual Studio 的 visual 语言字典
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Visual Studio 将使用常见的 visual 语言来阐明这些概念，是其图�
   
  **一般指导原则**  
   
--   必须使用其字典定义一致地使用这些可视化的概念。 否则，您的风险会混淆您预期要具有一致的含义的常见元素的用户。  
+- 必须使用其字典定义一致地使用这些可视化的概念。 否则，您的风险会混淆您预期要具有一致的含义的常见元素的用户。  
   
--   在您的图标，选择仅使用的最相关或最重要概念，以便图像是清晰和易于区分。  
+- 在您的图标，选择仅使用的最相关或最重要概念，以便图像是清晰和易于区分。  
   
--   每个映像中使用只能将一个或两个概念。  
+- 每个映像中使用只能将一个或两个概念。  
   
--   设计图标的多个策略，请参阅[图标设计](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。  
+- 设计图标的多个策略，请参阅[图标设计](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_IconDesign)。  
   
- **跳转到部分：**  
+  **跳转到部分：**  
   
 1.  [概念 A 到 Z](../../extensibility/ux-guidelines/visual-language-dictionary-for-visual-studio.md#BKMK_VLDConcepts)  
   

@@ -1,5 +1,5 @@
 ---
-title: GETNAME_TYPE |Microsoft 文档
+title: GETNAME_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17cd40938d177f3ea74af13bd84fcf1b873dd650
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 40ee5cb4bf552b04683c4c2119a8c43a595b2105
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900301"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 指定要从中检索文件的名称类型。  
@@ -54,28 +54,28 @@ public enum enum_GETNAME_TYPE {
   
 ## <a name="members"></a>成员  
  GN_NAME  
- 指定的友好名称的文档或上下文。  
+ 指定文档或上下文的友好的名称。  
   
  GN_FILENAME  
- 指定的文档或上下文的完整路径。  
+ 指定文档或上下文的完整的路径。  
   
  GN_BASENAME  
- 指定的基文件名称，而不是文档或上下文的完整路径。  
+ 指定的基文件名而不是文档或上下文的完整路径。  
   
  GN_MONIKERNAME  
- 在标记的窗体中指定的文档或上下文的唯一名称。  
+ 名字对象的形式指定文档或上下文的唯一的名称。  
   
  GN_URL  
- 指定的文档或上下文的 URL 名称。  
+ 指定文档或上下文 URL 的名称。  
   
  GN_TITLE  
- 如果存在，请指定该文档的标题。  
+ 如果存在，请指定文档的标题。  
   
  GN_STARTPAGEURL  
- 获取进程起始页的 URL。  
+ 获取进程的起始页 URL。  
   
 ## <a name="remarks"></a>备注  
- 这些值作为参数传递[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，和[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法以指定哪种类型的名称返回。  
+ 这些值作为参数传递[GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)， [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)，并[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，以指定名称返回的类型。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -84,7 +84,7 @@ public enum enum_GETNAME_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)   
  [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)   

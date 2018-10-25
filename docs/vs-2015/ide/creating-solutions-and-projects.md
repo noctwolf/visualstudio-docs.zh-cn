@@ -23,12 +23,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3ffd5a4d341b8a194dee9f6d8600a75999df38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248529"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893690"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,15 +74,15 @@ ms.locfileid: "49248529"
   
 #### <a name="to-create-an-empty-solution"></a>创建空解决方案  
   
-1.  在 **文件** 菜单上，单击 **新建** ，然后单击 **新建项目**。  
+1. 在 **文件** 菜单上，单击 **新建** ，然后单击 **新建项目**。  
   
-2.  在左窗格中，选择 **“已安装”**，再选择 **“其他项目类型”**，然后从展开的列表中选择 **“Visual Studio 解决方案”** 。  
+2. 在左窗格中，选择 **“已安装”**，再选择 **“其他项目类型”**，然后从展开的列表中选择 **“Visual Studio 解决方案”** 。  
   
-3.  在中间窗格中，选择 **空白解决方案**。  
+3. 在中间窗格中，选择 **空白解决方案**。  
   
-4.  为您的解决方案设置 **名称** 和 **位置** 值，然后单击 **确定**。  
+4. 为您的解决方案设置 **名称** 和 **位置** 值，然后单击 **确定**。  
   
- 在创建一个空白解决方案后，您可以通过在 **项目** 菜单上单击 **添加新项** 或 **添加现有项** ，把新的或现有的项目或项添加到解决方案中。  
+   在创建一个空白解决方案后，您可以通过在 **项目** 菜单上单击 **添加新项** 或 **添加现有项** ，把新的或现有的项目或项添加到解决方案中。  
   
 ### <a name="deleting-solutions"></a>删除解决方案  
  您可以永久性删除解决方案，但不能使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]来删除解决方案。 在删除解决方案前，把您要再次使用的任何项目移动到其他解决方案中。 然后，使用文件资源管理器删除包含 .sln 和 .suo 解决方案文件的目录。  

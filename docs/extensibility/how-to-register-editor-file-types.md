@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b0e9bf702515a4c36d58eeb18eb869b96646f1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 326b29574d8ff2562196652cdcde9865aee24c0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896921"
 ---
 # <a name="how-to-register-editor-file-types"></a>如何： 注册编辑器文件类型
 若要注册编辑器文件类型的最简单方法是使用作为的一部分提供的注册属性[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]托管包框架 (MPF) 类。 如果要在本机实现您的软件包[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，还可以编写注册表脚本注册你的编辑器和关联的扩展。
@@ -26,44 +26,44 @@ ms.locfileid: "39638425"
 
 ### <a name="to-register-editor-file-types-using-mpf-classes"></a>若要注册使用 MPF 类编辑器文件类型
 
-1.  提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>类编辑器在你的 VSPackage 的类中的相应参数。
+1. 提供<xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>类编辑器在你的 VSPackage 的类中的相应参数。
 
-    ```
-    [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
-         ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
-         TemplateDir = "..\\..\\Templates",
-         NameResourceID = 106)]
-    ```
+   ```
+   [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,
+        ProjectGuid = "{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}",
+        TemplateDir = "..\\..\\Templates",
+        NameResourceID = 106)]
+   ```
 
-     其中 *。示例*是为此编辑器中，注册的扩展和"32"是其优先级别。
+    其中 *。示例*是为此编辑器中，注册的扩展和"32"是其优先级别。
 
-     `projectGuid`中定义的其他文件类型的 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>。 杂项文件类型，以便生成的文件不会为生成过程的一部分提供。
+    `projectGuid`中定义的其他文件类型的 guid <xref:Microsoft.VisualStudio.VSConstants.CLSID.MiscellaneousFilesProject_guid>。 杂项文件类型，以便生成的文件不会为生成过程的一部分提供。
 
-     *TemplateDir*表示包含所托管的基本编辑器示例附带的模板文件的文件夹。
+    *TemplateDir*表示包含所托管的基本编辑器示例附带的模板文件的文件夹。
 
-     `NameResourceID` 在中定义*Resources.h* BasicEditorUI 项目文件，并标识为"My 编辑器"编辑器。
+    `NameResourceID` 在中定义*Resources.h* BasicEditorUI 项目文件，并标识为"My 编辑器"编辑器。
 
-2.  重写 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。
+2. 重写 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。
 
-     中的实现<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，调用<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法并传递下面所示为编辑器工厂的实例。
+    中的实现<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法中，调用<xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A>方法并传递下面所示为编辑器工厂的实例。
 
-    ```csharp
-    protected override void Initialize()
-    {
-        Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
-        "Entering Initialize() of: {0}", this.ToString()));
-        base.Initialize();
-           //Create Editor Factory
-        editorFactory = new EditorFactory(this);
-        base.RegisterEditorFactory(editorFactory);
-    }
-    ```
+   ```csharp
+   protected override void Initialize()
+   {
+       Trace.WriteLine (string.Format(CultureInfo.CurrentCulture,
+       "Entering Initialize() of: {0}", this.ToString()));
+       base.Initialize();
+          //Create Editor Factory
+       editorFactory = new EditorFactory(this);
+       base.RegisterEditorFactory(editorFactory);
+   }
+   ```
 
-     此步骤中注册编辑器工厂和编辑器文件扩展名。
+    此步骤中注册编辑器工厂和编辑器文件扩展名。
 
-3.  取消注册编辑器工厂。
+3. 取消注册编辑器工厂。
 
-     当释放 VSPackage 时，编辑器工厂会自动注销。 如果编辑器工厂对象实现<xref:System.IDisposable>接口，其`Dispose`后工厂已被注销与调用方法[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+    当释放 VSPackage 时，编辑器工厂会自动注销。 如果编辑器工厂对象实现<xref:System.IDisposable>接口，其`Dispose`后工厂已被注销与调用方法[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 ## <a name="registration-using-a-registry-script"></a>注册使用注册表脚本
  在本机注册编辑器工厂和文件类型[!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]完成使用注册表脚本将写入 windows 注册表中，如以下所示。

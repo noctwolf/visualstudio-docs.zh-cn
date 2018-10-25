@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c07d2f374890d6a87b5fe45304d098acfb05065b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 8b5fa8d0dbe011ef6b960c03d7d95aa776de6933
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901315"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 编辑器扩展可用于将语言服务功能，例如大纲显示、 大括号匹配、 IntelliSense 和灯泡添加到您自己的编程语言或任何内容类型。 此外可以自定义外观和行为的 Visual Studio 编辑器中，例如着色、 边距、 修饰和其他可视元素的文本。 您还可以定义自己的类型的内容，并指定的外观和行为的内容将显示的文本视图。  
@@ -44,17 +44,17 @@ ms.locfileid: "39498375"
   
  以下是一些基本类型的编辑器扩展：  
   
--   边距和滚动条  
+- 边距和滚动条  
   
--   Tags  
+- Tags  
   
--   修饰  
+- 修饰  
   
--   选项  
+- 选项  
   
--   IntelliSense  
+- IntelliSense  
   
- 有关编辑器扩展点的详细信息，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  
+  有关编辑器扩展点的详细信息，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  
   
 ## <a name="deploying-editor-extensions"></a>部署编辑器扩展  
  在 Visual Studio 中，部署编辑器扩展通过添加一个名为的元数据文件*source.extension.vsixmanifest*到解决方案，生成解决方案时，并在已知的文件夹中添加的二进制文件和清单的副本Visual studio。 清单文件用于定义扩展插件 （例如，名称、 作者、 版本和内容类型） 有关的基本情况。 有关 VSIX 清单文件以及如何将扩展部署的详细信息，请参阅[发货 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。  

@@ -15,12 +15,12 @@ ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 2ae3c50d33cefe6074f42e5923b5a0bf49cc2f22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b707e92c3d7b576368b5d00459c2b329928a242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843166"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,27 +36,27 @@ IDE 可将通过传递的命令传递<xref:Microsoft.VisualStudio.Shell.Interop.
   
 #### <a name="to-implement-command-handling"></a>若要实现命令处理  
   
-1.  当用户选择嵌套的项目或节点中嵌套项目：  
+1. 当用户选择嵌套的项目或节点中嵌套项目：  
   
-    1.  IDE 调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。  
+   1. IDE 调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法。  
   
-     — 或 —  
+      — 或 —  
   
-    1.  如果该命令在层次结构窗口中，如在解决方案资源管理器中的快捷方式菜单命令源自 IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>上项目的父方法。  
+   2. 如果该命令在层次结构窗口中，如在解决方案资源管理器中的快捷方式菜单命令源自 IDE 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A>上项目的父方法。  
   
-2.  父项目可以检查参数传递给`QueryStatus`，如`pguidCmdGroup`和`prgCmds`，以确定父项目是否应筛选命令。 如果父项目实现来筛选命令，它应设置：  
+2. 父项目可以检查参数传递给`QueryStatus`，如`pguidCmdGroup`和`prgCmds`，以确定父项目是否应筛选命令。 如果父项目实现来筛选命令，它应设置：  
   
-    ```  
-    prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
-    // make sure it is disabled  
-    prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
-    ```  
+   ```  
+   prgCmds[0].cmdf = OLECMDF_SUPPORTED;  
+   // make sure it is disabled  
+   prgCmds[0].cmdf &= ~MSOCMDF_ENABLED;  
+   ```  
   
-     然后父项目应返回`S_OK`。  
+    然后父项目应返回`S_OK`。  
   
-     如果父项目不会筛选该命令，它应只返回`S_OK`。 在这种情况下，IDE 会自动将命令路由到子项目。  
+    如果父项目不会筛选该命令，它应只返回`S_OK`。 在这种情况下，IDE 会自动将命令路由到子项目。  
   
-     父项目不需要将命令传送到子项目。 IDE 执行此任务...  
+    父项目不需要将命令传送到子项目。 IDE 执行此任务...  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   

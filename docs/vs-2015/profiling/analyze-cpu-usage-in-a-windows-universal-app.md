@@ -20,12 +20,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: f91fa126c066d3c028cb7e634468ab8b455c8e30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a7f39e3210d898e07f96f3ff787915953148e008
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833598"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>分析 Windows 通用应用中的 CPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,27 +55,27 @@ ms.locfileid: "49250713"
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量数据  
  ![在模拟器中运行应用的发布版本](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
-1.  在 Visual Studio 中，将部署目标设置为“模拟器”并将解决方案配置设置为“发布”。  
+1. 在 Visual Studio 中，将部署目标设置为“模拟器”并将解决方案配置设置为“发布”。  
   
-    -   通过在模拟器中运行该应用，你可以在该应用和 Visual Studio IDE 之间轻松切换。  
+   -   通过在模拟器中运行该应用，你可以在该应用和 Visual Studio IDE 之间轻松切换。  
   
-    -   在“发布”模式下运行此应用能更清晰地看到应用的实际性能。  
+   -   在“发布”模式下运行此应用能更清晰地看到应用的实际性能。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2. 在“调试”  菜单上，选择“性能探查器...” 。  
   
-3.  在“性能和诊断”中心中，选择“CPU 使用率”，然后选择“启动”。  
+3. 在“性能和诊断”中心中，选择“CPU 使用率”，然后选择“启动”。  
   
-     ![启动 CpuUsage 诊断会话](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
+    ![启动 CpuUsage 诊断会话](../profiling/media/cpu-use-wt-perfdiaghub.png "CPU_USE_WT_PerfDiagHub")  
   
-4.  启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
+4. 启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
   
-5.  在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
+5. 在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
   
- ![停止 CpuUsage 数据收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 数据收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具可分析数据并显示报告。  
+   CPU 使用量工具可分析数据并显示报告。  
   
- ![CpuUsage 报告](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 报告](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a>分析 CPU 使用率报告  
   

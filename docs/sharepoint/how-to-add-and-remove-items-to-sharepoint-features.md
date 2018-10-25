@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ffc5d7e9c2ed492357dea01151e32b301b4d177e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 2ead6b7ba57afa2adeabbbe04bc27583b2ad1593
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756241"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854827"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何： 添加和删除项 SharePoint 功能
   创建 SharePoint 解决方案时，Visual Studio 会将默认 SharePoint 项目项添加到你的功能。 在部署之前，可以添加和删除要修改 SharePoint 功能的 SharePoint 项目项。  
@@ -33,17 +33,17 @@ ms.locfileid: "36756241"
   
 #### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>若要添加的功能设计器的 SharePoint 项目项  
   
-1.  打开功能设计器。  
+1. 打开功能设计器。  
   
-     有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
+    有关详细信息，请参阅[如何： 自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)。  
   
-2.  中的一个或多个项添加**解决方案中的项**到列出**功能中的项**列表通过执行一个或多个以下步骤：  
+2. 中的一个或多个项添加**解决方案中的项**到列出**功能中的项**列表通过执行一个或多个以下步骤：  
   
-    -   双击要添加的每一项。  
+   - 双击要添加的每一项。  
   
-    -   选择你想要添加，，然后选择的项**添加**按钮 (>)。  
+   - 选择你想要添加，，然后选择的项**添加**按钮 (>)。  
   
-    -   选择**全部添加**按钮 (>>)。  
+   - 选择**全部添加**按钮 (>>)。  
   
      SharePoint 项目项会出现在**功能中的项**列表。  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 486c8e32b577b6c794a03c080a909023b40eafde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b05c0f1782382f437a5e1d90bf19c724a05ca6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219955"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826359"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>编写多处理器可识别的记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,13 +71,13 @@ public interface INodeLogger: ILogger
   
  可通过以下两种方法来使用分布式日志记录：  
   
--   自定义名为 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 的预制转发记录器。  
+- 自定义名为 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 的预制转发记录器。  
   
--   编写自己的自定义转发记录器。  
+- 编写自己的自定义转发记录器。  
   
- 可根据你的需要，对 ConfigurableForwardingLogger 进行修改。 为此，请使用 MSBuild.exe 在命令行中调用记录器，并列出希望记录器转发至中心节点的生成事件。  
+  可根据你的需要，对 ConfigurableForwardingLogger 进行修改。 为此，请使用 MSBuild.exe 在命令行中调用记录器，并列出希望记录器转发至中心节点的生成事件。  
   
- 或者，也可以创建自定义转发记录器。 通过创建自定义转发记录器，可以微调记录器的行为。 但是，创建自定义转发记录器比仅自定义 ConfigurableForwardingLogger 更复杂。 有关详细信息，请参阅[创建转发记录器](../msbuild/creating-forwarding-loggers.md)。  
+  或者，也可以创建自定义转发记录器。 通过创建自定义转发记录器，可以微调记录器的行为。 但是，创建自定义转发记录器比仅自定义 ConfigurableForwardingLogger 更复杂。 有关详细信息，请参阅[创建转发记录器](../msbuild/creating-forwarding-loggers.md)。  
   
 ## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>将 ConfigurableForwardingLogger 用于简单分布式日志记录  
  若要附加 ConfigurableForwardingLogger 或自定义转发记录器，请在 MSBuild.exe 命令行生成中使用 `/distributedlogger` 开关（缩写形式为 `/dl`）。 用于指定记录器类型名称和类的格式与 `/logger` 开关对应的格式相同，只是分布式记录器始终有以下两个（而不是一个）日志记录类：转发记录器和中心记录器。 下面是有关如何附加名为 XMLForwardingLogger 的自定义转发记录器的示例。  

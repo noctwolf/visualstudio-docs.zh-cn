@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0445ad1cb92e2206a3e37e76a6f55c9a42ca1558
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f3694c23f52a1c34cd99d8391b14cc92ac939813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282362"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903668"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。  
@@ -34,11 +34,11 @@ ms.locfileid: "44282362"
   
 ### <a name="to-stop-applying-code-changes"></a>停止应用代码更改  
   
--   选择**停止应用代码更改**从**调试**菜单。  
+- 选择**停止应用代码更改**从**调试**菜单。  
   
- 该菜单项仅在应用代码更改时才可见。  
+  该菜单项仅在应用代码更改时才可见。  
   
- 如果选择了改选项，就不会进行任何代码更改。  
+  如果选择了改选项，就不会进行任何代码更改。  
   
 ## <a name="see-also"></a>请参阅  
  [编辑并继续](../debugger/edit-and-continue.md)   

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b737fc8b589d746a5fa733c835d64c4af30a221b
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 819a1f4e07397720d806d887408b9e45aeda9ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671713"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867177"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何： 以编程方式保护工作表
   Microsoft Office Excel 中的保护功能可帮助防止用户和代码修改工作表中的对象。 默认情况下，开启保护之后，将锁定所有单元格。  
@@ -39,11 +39,11 @@ ms.locfileid: "35671713"
   
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>若要在设计器中保护工作表  
   
-1.  在中**更改**的组**评审**选项卡上，单击**保护工作表**。  
+1. 在中**更改**的组**评审**选项卡上，单击**保护工作表**。  
   
-     **保护工作表**对话框随即出现。 可以设置密码，并根据需要指定用户可利用工作表执行的特定操作，例如设置单元格格式或插入行。  
+    **保护工作表**对话框随即出现。 可以设置密码，并根据需要指定用户可利用工作表执行的特定操作，例如设置单元格格式或插入行。  
   
- 还可以允许用户编辑受保护工作表中的特定范围。  
+   还可以允许用户编辑受保护工作表中的特定范围。  
   
 ### <a name="to-allow-editing-in-specific-ranges"></a>若要允许在特定范围内编辑  
   

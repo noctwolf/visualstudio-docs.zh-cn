@@ -28,12 +28,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2958001bfd2f9c00689e1c44bd64a5fa3c5b4d00
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e4e8384bc86bf59216c353b0f4610d3863445781
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889758"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一种用户界面面板，通常停靠在 Microsoft Office 应用程序中窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。  
@@ -55,11 +55,11 @@ ms.locfileid: "42635552"
 ## <a name="create-a-custom-task-pane"></a>创建自定义任务窗格  
  可以利用下面两个步骤创建基本的自定义任务窗格：  
   
-1.  通过将 Windows 窗体控件添加到 <xref:System.Windows.Forms.UserControl> 对象来创建自定义任务窗格的用户界面。  
+1. 通过将 Windows 窗体控件添加到 <xref:System.Windows.Forms.UserControl> 对象来创建自定义任务窗格的用户界面。  
   
-2.  通过将用户控件传递到 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 对象来实例化自定义任务窗格。 此集合返回一个新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，可用于修改任务窗格的外观并响应用户事件。  
+2. 通过将用户控件传递到 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 对象来实例化自定义任务窗格。 此集合返回一个新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，可用于修改任务窗格的外观并响应用户事件。  
   
- 有关详细信息，请参阅[如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+   有关详细信息，请参阅[如何： 向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
   
 ### <a name="create-the-user-interface"></a>创建用户界面  
  使用 Visual Studio 中的 Office 开发工具创建的所有自定义任务窗格均包含一个 <xref:System.Windows.Forms.UserControl> 对象。 此用户控件提供自定义任务窗格的用户界面。 在设计时或在运行时，您可以创建用户控件。 如果在设计时创建用户控件，则可使用 Windows 窗体设计器来构造任务窗格的用户界面。  
@@ -77,11 +77,11 @@ ms.locfileid: "42635552"
   
  若要确定显示自定义任务窗格的窗口，请在创建任务窗格时使用相应的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法重载：  
   
--   若要将任务窗格与活动窗口关联，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+- 若要将任务窗格与活动窗口关联，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
   
--   若要将任务窗格与指定窗口托管的文档关联，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+- 若要将任务窗格与指定窗口托管的文档关联，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
   
- 在多个窗口处于打开状态的情况下，某些 Office 应用程序需要显式指令来确定何时创建或显示任务窗格。 因此，务必要考虑在代码中的何处实例化自定义任务窗格，以确保任务窗格与应用程序中的相应文档或项一起出现。 有关详细信息，请参阅[管理应用程序窗口中的自定义任务窗格](#Managing)。  
+  在多个窗口处于打开状态的情况下，某些 Office 应用程序需要显式指令来确定何时创建或显示任务窗格。 因此，务必要考虑在代码中的何处实例化自定义任务窗格，以确保任务窗格与应用程序中的相应文档或项一起出现。 有关详细信息，请参阅[管理应用程序窗口中的自定义任务窗格](#Managing)。  
   
 ## <a name="access-the-application-from-the-task-pane"></a>从任务窗格应用程序的访问  
  如果想要通过用户控件实现应用程序的自动化，则可以通过在代码中使用 `Globals.ThisAddIn.Application` 来直接访问对象模型。 静态 `Globals` 类提供对 `ThisAddIn` 对象的访问权限。 此对象的 `Application` 字段是进入应用程序对象模型的入口点。  
@@ -136,11 +136,11 @@ ms.locfileid: "42635552"
   
  下列应用程序组具有不同的开发需求：  
   
--   [Outlook](#Outlook)  
+- [Outlook](#Outlook)  
   
--   [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)  
+- [Word、 InfoPath 和 PowerPoint](#WordAndInfoPath)  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何在 Word VSTO 外接程序中的实现： 管理任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何在 Word VSTO 外接程序中的实现： 管理任务窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
   
 ##  <a name="Outlook"></a> Outlook  
  为 Outlook 创建自定义任务窗格时，自定义任务窗格与特定资源管理器或检查器窗口关联。 资源管理器是用于显示文件夹的内容和检查器是用于显示项，如电子邮件或任务。  
@@ -149,23 +149,23 @@ ms.locfileid: "42635552"
   
  若要将任务窗格与特定的资源管理器或检查器相关联，请使用<xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A>方法创建任务窗格中，并将传递<xref:Microsoft.Office.Interop.Outlook.Explorer>或<xref:Microsoft.Office.Interop.Outlook.Inspector>对象传递给*窗口*参数。 有关创建自定义任务窗格的详细信息，请参阅[自定义任务窗格概述](../vsto/custom-task-panes.md)。  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- 若要监视检查器窗口的状态，你可以处理以下与检查器相关的事件：  
+  若要监视检查器窗口的状态，你可以处理以下与检查器相关的事件：  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Activate>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>  
   
--   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
+- <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
 ### <a name="prevent-multiple-instances-of-a-custom-task-pane-in-outlook"></a>防止在 Outlook 中的自定义任务窗格的多个实例  
  若要禁止 Outlook 窗口显示自定义任务窗格的多个实例，应在关闭每个窗口时从 `ThisAddIn` 类的 `CustomTaskPanes` 集合中显示删除自定义任务窗格。 调用关闭窗口时引发的事件中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 方法，例如 <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 或 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>。  

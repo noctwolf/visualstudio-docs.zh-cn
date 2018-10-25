@@ -1,5 +1,5 @@
 ---
-title: IDebugMemoryContext2::Subtract |Microsoft 文档
+title: IDebugMemoryContext2::Subtract |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6cc7265def2d1a4b184f27865461706e62b98f3
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3303d86abed596f35f714c4389770c613fa09b6b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113632"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896648"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-从当前上下文的指定的值中减去，并返回新的上下文。  
+从当前上下文中的指定的值减去，并返回新的上下文。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,9 +53,9 @@ int Subtract(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 内存上下文是一个地址，因此从发件人地址值中减去生成需要新的上下文界面的新地址。  
+ 内存上下文是一个地址，因此从发件人地址值中减去生成需要新的上下文接口的新地址。  
   
- 即使生成的地址是与此上下文关联的内存空间外，此方法必须始终会生成一个新的上下文。 唯一的例外是如果没有内存可分配的新的上下文或如果`ppMemCxt`为 null 值 （这是错误）。  
+ 即使生成的地址是与此上下文关联的内存空间外，此方法必须始终会生成一个新的上下文。 唯一的例外是，如果可以为新的上下文不分配任何内存或`ppMemCxt`为空值 （这是错误）。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

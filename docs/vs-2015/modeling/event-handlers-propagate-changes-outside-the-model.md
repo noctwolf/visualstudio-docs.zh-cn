@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 38958aae1c2449145107faa7abe00a2d86baaa9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823692"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>事件处理程序在模型外部传播更改
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ ms.locfileid: "49303194"
   
 ### <a name="to-define-a-store-event"></a>若要定义的存储事件  
   
-1.  选择你想要监视的事件的类型。 有关完整列表，请查看的属性<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>。 每个属性对应于事件的类型。 最常用的事件类型包括：  
+1. 选择你想要监视的事件的类型。 有关完整列表，请查看的属性<xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>。 每个属性对应于事件的类型。 最常用的事件类型包括：  
   
-    -   `ElementAdded` – 当模型元素时，触发，关系链接、 形状或连接线创建。  
+   -   `ElementAdded` – 当模型元素时，触发，关系链接、 形状或连接线创建。  
   
-    -   ElementPropertyChanged – 触发时的值`Normal`更改域属性。 仅当新的和旧值不相等，则触发事件。 该事件不能应用于计算的和自定义存储属性。  
+   -   ElementPropertyChanged – 触发时的值`Normal`更改域属性。 仅当新的和旧值不相等，则触发事件。 该事件不能应用于计算的和自定义存储属性。  
   
-         它不能应用于对应于关系链接在角色属性。 请改用`ElementAdded`要监视的域关系。  
+        它不能应用于对应于关系链接在角色属性。 请改用`ElementAdded`要监视的域关系。  
   
-    -   `ElementDeleted` – 模型元素后触发，关系、 形状或连接线已被删除。 您仍然可以访问的属性值的元素，但它将具有与其他元素的任何关系。  
+   -   `ElementDeleted` – 模型元素后触发，关系、 形状或连接线已被删除。 您仍然可以访问的属性值的元素，但它将具有与其他元素的任何关系。  
   
-2.  添加的分部类定义_YourDsl_**DocData**单独的代码文件中**DslPackage**项目。  
+2. 添加的分部类定义_YourDsl_**DocData**单独的代码文件中**DslPackage**项目。  
   
-3.  作为方法，如以下示例所示编写事件代码。 它可以是`static`，除非你想要访问`DocData`。  
+3. 作为方法，如以下示例所示编写事件代码。 它可以是`static`，除非你想要访问`DocData`。  
   
-4.  重写`OnDocumentLoaded()`注册处理程序。 如果你有多个处理程序，可以在同一位置进行注册。  
+4. 重写`OnDocumentLoaded()`注册处理程序。 如果你有多个处理程序，可以在同一位置进行注册。  
   
- 注册代码的位置并不重要。 `DocView.LoadView()` 是另一个位置。  
+   注册代码的位置并不重要。 `DocView.LoadView()` 是另一个位置。  
   
 ```  
 using System;  

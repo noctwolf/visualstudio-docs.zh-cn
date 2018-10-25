@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3a3d64aed3834d517cb916bfbbed47a263eb8619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a3fffb36d7070701b99382c320e3a2d23b9a2b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290467"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893391"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>在 Visual Studio 中的实体数据模型工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,20 +38,20 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
   
  这些是组成 Visual Studio 2015 中的实体数据模型工具的特定工具：  
   
--   可以使用[!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]设计器**(**实体设计器**) 直观地创建和修改实体、 关联、 映射和继承关系。 **实体设计器**还会生成[!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]对象层代码。  
+- 可以使用[!INCLUDE[vstecado](../includes/vstecado-md.md)]  **[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]设计器**(**实体设计器**) 直观地创建和修改实体、 关联、 映射和继承关系。 **实体设计器**还会生成[!INCLUDE[TLA#tla_cshrp](../includes/tlasharptla-cshrp-md.md)]或[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]对象层代码。  
   
--   可以使用**[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。  
+- 可以使用**[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。  
   
--   可以使用**创建数据库向导**首先创建概念模型，然后创建支持该模型的数据库。  
+- 可以使用**创建数据库向导**首先创建概念模型，然后创建支持该模型的数据库。  
   
--   可以使用**模型更新向导**基础数据库发生更改时，更新概念模型、 存储模型和映射。  
+- 可以使用**模型更新向导**基础数据库发生更改时，更新概念模型、 存储模型和映射。  
   
-    > [!NOTE]
-    >  从 Visual Studio 2010，开始[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支持[!INCLUDE[ss2k](../includes/ss2k-md.md)]。  
+  > [!NOTE]
+  >  从 Visual Studio 2010，开始[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)]工具不支持[!INCLUDE[ss2k](../includes/ss2k-md.md)]。  
   
- 这些工具生成或修改.edmx 文件。 此文件包含描述概念模型、 存储模型中，以及它们之间的映射的信息。 有关详细信息，请参阅[EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。  
+  这些工具生成或修改.edmx 文件。 此文件包含描述概念模型、 存储模型中，以及它们之间的映射的信息。 有关详细信息，请参阅[EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。  
   
- Entity Framework Power Tools 帮助您生成使用实体数据模型的应用程序。 这些工具可以生成概念模型、 验证现有模型、 生成包含基于概念模型中，对象类的源代码文件并生成包含模型生成的视图的源代码文件。 有关详细信息，请参阅[Pre-Generated 映射视图](https://msdn.microsoft.com/data/dn469601.aspx)。  
+  Entity Framework Power Tools 帮助您生成使用实体数据模型的应用程序。 这些工具可以生成概念模型、 验证现有模型、 生成包含基于概念模型中，对象类的源代码文件并生成包含模型生成的视图的源代码文件。 有关详细信息，请参阅[Pre-Generated 映射视图](https://msdn.microsoft.com/data/dn469601.aspx)。  
   
 ## <a name="related-topics"></a>相关主题  
   

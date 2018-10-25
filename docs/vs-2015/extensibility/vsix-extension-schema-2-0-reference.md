@@ -16,12 +16,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cacd0c1cd2a1e36e7c160902c93c6bcc6bfc0cdd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c12ee9593bb7baadfbaf29ebade142f142e8f40a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893868"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,31 +166,31 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 ### <a name="assets-element"></a>资产元素  
  此元素包含一系列`<Asset>`扩展或内容的每个元素的标记显示此包。  
   
--   `<Asset>` -此元素包含以下属性和元素：  
+- `<Asset>` -此元素包含以下属性和元素：  
   
-    -   `Type` – 这是扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
+  - `Type` – 这是扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         可以创建自己的类型，并为其提供唯一名称。 在 Visual Studio 内部的运行时，你的代码可枚举并通过扩展管理器 API 访问这些自定义的类型。  
+       可以创建自己的类型，并为其提供唯一名称。 在 Visual Studio 内部的运行时，你的代码可枚举并通过扩展管理器 API 访问这些自定义的类型。  
   
-    -   路径 – 包含资产的包中文件夹的文件的相对路径。  
+  - 路径 – 包含资产的包中文件夹的文件的相对路径。  
   
-    -   `AnyAttribute*` – 将在与名称 / 值对字典的运行时公开的属性开放式集。  
+  - `AnyAttribute*` – 将在与名称 / 值对字典的运行时公开的属性开放式集。  
   
-         `<AnyElement>*` – 任何结构化的内容允许之间`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。  
+     `<AnyElement>*` – 任何结构化的内容允许之间`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。  
   
 ### <a name="sample-manifest"></a>示例清单  
   
