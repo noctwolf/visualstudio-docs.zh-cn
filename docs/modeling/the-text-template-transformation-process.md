@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c8dad80e4f9bc9d051663c2c224d7058028b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ace7528eb1685765fe5c7ff11ce9b3c3234a941
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919151"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程将文本模板文件作为输入并生成一个新的文本文件作为输出。 例如，可以使用文本模板来生成 Visual Basic 或 C# 代码，或可以生成一份 HTML 报告。
@@ -28,7 +28,7 @@ ms.locfileid: "47860220"
 ## <a name="components"></a>组件数
 
 |组件|描述|可自定义 （是/否）|
-|---------------|-----------------|------------------------------|
+|-|-|-|
 |引擎|引擎组件控制文本模板转换过程|不是。|
 |Host|该主机是引擎和用户环境之间的接口。 Visual Studio 是一系列文本转换过程。|可以。 您可以编写自定义主机。|
 |指令处理器|指令处理器是处理指令文本模板中的类。 指令可用于从输入源向文本模板提供的数据。|可以。 您可以编写自定义指令处理器|

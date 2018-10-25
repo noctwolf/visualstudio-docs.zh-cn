@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e19494af4d0c774e7cb70613151376be733f0a63
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e62f13d0c947ef8f1a9cfdd014f5c03b194ea71d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671573"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908337"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是可自定义**文档操作**附加到特定的 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的任务窗格。 操作窗格中进行托管 Office 任务窗格，以及其他内置任务窗格，如**XML 源**在 Excel 中的任务窗格或**样式和格式**Word 中的任务窗格。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -48,16 +48,16 @@ ms.locfileid: "35671573"
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>将多个控件添加到操作窗格  
  时将多个控件添加到操作窗格中时，应组中的用户控件的控件，然后将用户控件添加到<xref:Microsoft.Office.Tools.ActionsPane.Controls%2A>属性。 此过程包括下列步骤：  
 
-1.  通过添加创建用户界面 (UI) 的操作窗格**操作窗格控件**或**用户控件**到你的项目项。 这两项均包含自定义 Windows 窗体 <xref:System.Windows.Forms.UserControl> 类。 **操作窗格控件**并**用户控件**项是等效项; 唯一的区别是它们的名称。  
+1. 通过添加创建用户界面 (UI) 的操作窗格**操作窗格控件**或**用户控件**到你的项目项。 这两项均包含自定义 Windows 窗体 <xref:System.Windows.Forms.UserControl> 类。 **操作窗格控件**并**用户控件**项是等效项; 唯一的区别是它们的名称。  
 
-2.  通过使用设计器或编写代码，将 Windows 窗体控件添加到 <xref:System.Windows.Forms.UserControl>。  
+2. 通过使用设计器或编写代码，将 Windows 窗体控件添加到 <xref:System.Windows.Forms.UserControl>。  
 
-    > [!NOTE]  
-    >  还可以通过将 WPF <xref:System.Windows.Controls.UserControl> 添加到 Windows 窗体 <xref:System.Windows.Forms.UserControl>来将 WPF 控件添加到操作窗格。 有关详细信息，请参阅[使用 WPF 控件在 Office 解决方案中](../vsto/using-wpf-controls-in-office-solutions.md)。  
+   > [!NOTE]  
+   >  还可以通过将 WPF <xref:System.Windows.Controls.UserControl> 添加到 Windows 窗体 <xref:System.Windows.Forms.UserControl>来将 WPF 控件添加到操作窗格。 有关详细信息，请参阅[使用 WPF 控件在 Office 解决方案中](../vsto/using-wpf-controls-in-office-solutions.md)。  
 
-3.  将自定义用户控件的实例添加到项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段中所内含的控件。  
+3. 将自定义用户控件的实例添加到项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段中所内含的控件。  
 
- 有关演示此过程的更多详细信息的示例，请参阅[如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
+   有关演示此过程的更多详细信息的示例，请参阅[如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
 
 ## <a name="hide-the-actions-pane"></a>隐藏操作窗格  
  虽然 <xref:Microsoft.Office.Tools.ActionsPane> 类具有 <xref:Microsoft.Office.Tools.ActionsPane.Hide%2A> 方法和 <xref:Microsoft.Office.Tools.ActionsPane.Visible%2A> 属性，但不可通过使用 <xref:Microsoft.Office.Tools.ActionsPane> 类本身的任意成员从用户界面删除操作窗格。 调用<xref:Microsoft.Office.Tools.ActionsPane.Hide%2A>方法或设置<xref:Microsoft.Office.Tools.ActionsPane.Visible%2A>属性设置为**false**隐藏仅在操作窗格中; 上的控件不会隐藏任务窗格。  

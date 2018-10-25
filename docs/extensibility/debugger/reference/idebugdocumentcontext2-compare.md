@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::Compare |Microsoft 文档
+title: IDebugDocumentContext2::Compare |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f41b0e5973af8e0cb65f093f51137059084c9792
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: af349d8568d50e2059ab33ad54b14f499c7b6afd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913457"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
-比较到给定数组文档上下文中的此文档上下文。  
+比较此文档上下文到给定数组的文档上下文。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,13 +47,13 @@ int Compare(
   
 #### <a name="parameters"></a>参数  
  `compare`  
- [in]取值范围为[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)指定的比较类型的枚举。  
+ [in]中的值[DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)枚举，用于指定的比较类型。  
   
  `rgpDocContextSet`  
- [in]数组[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)表示正在相比文档上下文的对象。  
+ [in]一个数组[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)对象表示要进行比较的文档上下文。  
   
  `dwDocContextSetLen`  
- [in]文档上下文之间进行比较的数组的长度。  
+ [in]文档上下文进行比较的数组的长度。  
   
  `pdwDocContext`  
  [out]返回到索引`rgpDocContextSet`满足的比较的第一个文档上下文的数组。  
@@ -62,8 +62,8 @@ int Compare(
  返回`S_OK`如果找到匹配项。 返回`S_FALSE`如果没有找到匹配。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)数组中传递的对象必须实现相同的调试引擎实现`IDebugDocumentContext2`对象; 否则为调用比较不是有效。  
+ [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)数组中传递的对象必须由相同的调试引擎实现`IDebugDocumentContext2`对象; 否则为调用该比较不有效。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)

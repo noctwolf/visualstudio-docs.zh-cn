@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23de3ebb79acb342f711593200795246ded97c49
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5f82437fc2a04b1df04624b33e3069a1191e811
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910688"
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,28 +33,28 @@ ms.locfileid: "49242809"
   
  以下步骤组成了使用分析工具的基本过程：  
   
-1.  通过指定收集方法和要收集的数据来配置性能会话。  
+1. 通过指定收集方法和要收集的数据来配置性能会话。  
   
-2.  通过在性能会话中运行应用程序来收集分析数据。  
+2. 通过在性能会话中运行应用程序来收集分析数据。  
   
-3.  分析数据以确定性能问题。  
+3. 分析数据以确定性能问题。  
   
-4.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 中修改代码以提高代码的应用程序性能  
+4. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成开发环境 (IDE) 中修改代码以提高代码的应用程序性能  
   
-5.  对已更改代码收集分析数据，并比较原始数据和已更改数据的分析数据。  
+5. 对已更改代码收集分析数据，并比较原始数据和已更改数据的分析数据。  
   
-6.  生成记录性能提高的报告。  
+6. 生成记录性能提高的报告。  
   
- 若要使用分析提供的信息，应具有可用于要分析的二进制文件和 Windows 操作系统的二进制文件的符号信息。  
+   若要使用分析提供的信息，应具有可用于要分析的二进制文件和 Windows 操作系统的二进制文件的符号信息。  
   
 ## <a name="configure-the-performance-session"></a>配置性能会话  
  若要配置分析会话，请选择要使用的分析方法和要收集的数据。 分析工具**性能向导**可以引导你完成基本配置，你可以使用性能会话属性页添加更多选项：  
   
--   分析方法包括采样、跟踪和内存分配。  
+- 分析方法包括采样、跟踪和内存分配。  
   
--   数据值包括时间、处理器和操作系统性能计数器以及应用程序事件（如页面错误和内核转换）。  
+- 数据值包括时间、处理器和操作系统性能计数器以及应用程序事件（如页面错误和内核转换）。  
   
- 可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中配置性能会话作为项目解决方案的一部分，也可以通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 分析任意二进制文件。 可以在性能会话属性页中指定会话属性，也可以使用分析向导。  
+  可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目中配置性能会话作为项目解决方案的一部分，也可以通过 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 分析任意二进制文件。 可以在性能会话属性页中指定会话属性，也可以使用分析向导。  
   
 ## <a name="collect-profiling-data"></a>收集分析数据  
  从“性能资源管理器”开始收集分析数据。 可以暂停和恢复分析以限制收集的数据量。 还可以附加到已在运行的进程。  
@@ -66,11 +66,11 @@ ms.locfileid: "49242809"
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>分析数据并确定性能问题  
  结束分析运行时，数据会进行分析，摘要会显示在分析工具“性能报告”视图窗口中。 会为目标应用程序的调用堆栈和各个函数收集分析数据。 报告视图显示应用程序的进程、线程、模块、函数和源代码行的数据范围的性能分析。 函数的分析数据值包括以下这些：  
   
--   在函数以及函数调用的子函数中所用的总时间（非独占值）。  
+- 在函数以及函数调用的子函数中所用的总时间（非独占值）。  
   
--   仅执行函数中的代码所用的时间（独占值）。  
+- 仅执行函数中的代码所用的时间（独占值）。  
   
- 通过十二个以上的不同视图可以采用最高效的方式对分析数据进行分析。 通过视图自定义可以对数据进行筛选和排序以查找可能会导致性能问题的函数。 热路径筛选可在调用树和模块视图中立即突出显示最活跃的路径。  
+  通过十二个以上的不同视图可以采用最高效的方式对分析数据进行分析。 通过视图自定义可以对数据进行筛选和排序以查找可能会导致性能问题的函数。 热路径筛选可在调用树和模块视图中立即突出显示最活跃的路径。  
   
 ## <a name="modify-the-application-code"></a>修改应用程序代码  
  将一个或多个相关性能问题隔离出来之后，可以使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE 修改代码，然后对更改收集分析数据。  

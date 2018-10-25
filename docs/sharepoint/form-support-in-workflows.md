@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b3a07f56819818e55548292f3dbcdc1095d9f00
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326075"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908777"
 ---
 # <a name="form-support-in-workflows"></a>在工作流中的窗体支持
   可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 网站上。  
@@ -43,7 +43,7 @@ ms.locfileid: "36326075"
  下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]支持将导入到的 SharePoint 可重用工作流中的 ASPX 或 InfoPath 窗体上的不同的窗体类型[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
 |窗体类型|已从 SharePoint Designer 中导入的 ASPX 窗体的可重用工作流|已从 SharePoint Designer 中导入的 InfoPath 窗体的可重用工作流|  
-|---------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|  
+|---------------|-------------------------------------------------------------------------------| - |  
 |关联|的在中引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。|  
 |启动|的中的工作流引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*重命名或删除在窗体时，或其部署路径更改时的要求进行重构的工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改为此方案能够工作。|  
 |任务|的在中引用窗体*Elements.xml*工作流的文件。<br />- *Elements.xml*不重构工作流的文件。|的导入，但未在中引用窗体*Elements.xml*的工作流。<br />- *Elements.xml*不重构工作流的文件。 **注意：** 规则和属性必须添加和更改为此方案能够工作。|  

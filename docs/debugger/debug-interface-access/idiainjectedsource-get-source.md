@@ -1,5 +1,5 @@
 ---
-title: 'Idiainjectedsource:: Get_source |Microsoft 文档'
+title: 'Idiainjectedsource:: Get_source |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331086fff33f247ab030e3736e1e598c3af477d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2966405dfe3bb7e6134f5ef35e55b30ef6c66c6e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909898"
 ---
 # <a name="idiainjectedsourcegetsource"></a>IDiaInjectedSource::get_source
 检索源代码字节。  
@@ -36,7 +36,7 @@ HRESULT get_source (
   
 #### <a name="parameters"></a>参数  
  `cbData`  
- [in]表示数据缓冲区的大小的字节数。  
+ [in]表示大小的数据缓冲区的字节数。  
   
  `pcbData`  
  [out]返回表示字节的字节数返回。 如果`data`是`NULL`，然后`pcbData`是可用的数据的字节总数。  
@@ -45,7 +45,7 @@ HRESULT get_source (
  [out]若要使用的源字节填充缓冲区。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

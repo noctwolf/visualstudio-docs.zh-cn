@@ -37,12 +37,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: e83a541c9cff15375f8dc0fcdde74119a40713e4
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 197418bc1a4f8049c0388af005ef36eff287a856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178873"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915927"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的工具和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技术，用于创建分布式应用程序。 本主题提供了从 Visual Studio 的角度介绍了服务。 有关完整文档，请参阅[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index)。
@@ -234,16 +234,16 @@ Visual Studio 提供用于处理与 Windows Communication Foundation (WCF) 的�
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
-|-----------|-----------------|
-|[演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|提供创建和使用 Visual Studio 中的 WCF 服务的分步演示。|
-|[演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供了分步演示如何创建和使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。|
-|[使用 WCF 开发工具](/dotnet/framework/wcf/using-the-wcf-development-tools)|讨论如何创建和测试 Visual Studio 中的 WCF 服务。|
-||[如何： 添加、 更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|讨论如何引用和使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。|
-|[服务引用疑难解答](../data-tools/troubleshooting-service-references.md)|提供服务的引用以及如何阻止它们可以发生的一些常见错误。|
-|[调试 WCF 服务](../debugger/debugging-wcf-services.md)|描述常见调试问题和调试 WCF 服务时可能会遇到的技术。|
-|[演练： 创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。|
-|[配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md)|描述用户界面元素的**配置服务引用**对话框。|
+| 标题 | 描述 |
+| - | - |
+| [演练：在 Windows 窗体中创建简单的 WCF 服务](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | 提供创建和使用 Visual Studio 中的 WCF 服务的分步演示。 |
+| [演练： 使用 WPF 和 Entity Framework 创建 WCF 数据服务](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | 提供了分步演示如何创建和使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]Visual Studio 中。 |
+| [使用 WCF 开发工具](/dotnet/framework/wcf/using-the-wcf-development-tools) | 讨论如何创建和测试 Visual Studio 中的 WCF 服务。 |
+| | [如何： 添加、 更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
+| [服务引用疑难解答](../data-tools/troubleshooting-service-references.md) | 提供服务的引用以及如何阻止它们可以发生的一些常见错误。 |
+| [调试 WCF 服务](../debugger/debugging-wcf-services.md) | 描述常见调试问题和调试 WCF 服务时可能会遇到的技术。 |
+| [演练： 创建 n 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | 提供有关创建类型化数据集并将 TableAdapter 和数据集代码分离到多个项目中的分步说明。 |
+| [配置服务引用对话框](../data-tools/configure-service-reference-dialog-box.md) | 描述用户界面元素的**配置服务引用**对话框。 |
 
 ## <a name="reference"></a>参考
 
