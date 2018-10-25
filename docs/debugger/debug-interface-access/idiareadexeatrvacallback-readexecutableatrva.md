@@ -1,5 +1,5 @@
 ---
-title: 'Idiareadexeatrvacallback:: Readexecutableatrva |Microsoft 文档'
+title: 'Idiareadexeatrvacallback:: Readexecutableatrva |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f71db30a3e4cba957e6aba0981587276af714e3e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 69afacf68c77dcb2bca7c951dbd2a1ee9a344cfb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917270"
 ---
 # <a name="idiareadexeatrvacallbackreadexecutableatrva"></a>IDiaReadExeAtRVACallback::ReadExecutableAtRVA
 读取指定的开始的指定相对虚拟地址 (RVA) 从可执行文件的字节数。  
@@ -37,7 +37,7 @@ HRESULT ReadExecutableAtRVA (
   
 #### <a name="parameters"></a>参数  
  `relativeVirtualAddress`  
- [in]可执行文件中开始读取 RVA。  
+ [in]若要开始读取的可执行文件中的 RVA。  
   
  `cbData`  
  [in]要读取的字节数。  
@@ -46,10 +46,10 @@ HRESULT ReadExecutableAtRVA (
  [out]返回读取的字节数。  
   
  `data[]`  
- [在中，out]使用从文件中读取的字节填充数组。  
+ [in、 out]填充从文件中读取的字节数组。  
   
 ## <a name="remarks"></a>备注  
- 若要从使用的相对虚拟地址的可执行文件加载数据字节的 DIA 支持代码通过调用此方法。 此方法称为 support 的[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
+ 若要从使用的相对虚拟地址的可执行文件加载数据字节的 DIA 支持代码调用此方法。 调用此方法支持[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md)   

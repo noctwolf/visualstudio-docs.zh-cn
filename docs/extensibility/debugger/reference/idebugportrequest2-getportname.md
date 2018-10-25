@@ -1,5 +1,5 @@
 ---
-title: IDebugPortRequest2::GetPortName |Microsoft 文档
+title: IDebugPortRequest2::GetPortName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c81bdc6586766cb4a241bf29e653cb1b10f66f2f
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 490381f183a19e33fd391b133562fc2a463c6ee9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114328"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920841"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
-获取端口的名称。  
+获取该端口的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,7 +47,7 @@ int GetPortName(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从传递调试包 （客户端） 到端口供应商 （服务器） 以获取连接到的端口。 调试包和端口提供程序均为感知的端口可能的选择。 如果一个简单的字符串可以描述端口，则`IDebugPortRequest2::GetPortName`方法有足够的信息来建立连接。 否则，其他接口可以由客户端，可以通过使用 server 获取`IDebugPortRequest2::QueryInterface`。  
+ [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从传递调试程序包 （客户端） 到端口提供程序 （服务器） 以获取连接到端口。 调试包和端口提供程序已经注意到该端口的可能选项。 如果一个简单的字符串可以描述该端口，则`IDebugPortRequest2::GetPortName`方法具有足够的信息来建立连接。 否则，可以由客户端可以获取服务器使用提供的其他接口`IDebugPortRequest2::QueryInterface`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

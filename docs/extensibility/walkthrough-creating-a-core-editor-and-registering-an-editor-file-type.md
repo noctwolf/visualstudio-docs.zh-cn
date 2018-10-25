@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ee391ce1200cce03e83f80b6f345ead4cd03199
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 3e00b96d1f5361d3d5260296532be47636f430d6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921452"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>演练： 创建核心编辑器和注册编辑器文件类型
 本演练演示如何创建启动 VSPackage[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器使用的文件时 *.myext*加载文件扩展名。  
@@ -37,97 +37,97 @@ ms.locfileid: "46495240"
   
 ### <a name="to-create-the-vspackage"></a>若要创建 VSPackage  
   
--   启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]并创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]名为 VSPackage `MyPackage`，如中所述[演练： 创建菜单命令的 VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
+- 启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]并创建[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]名为 VSPackage `MyPackage`，如中所述[演练： 创建菜单命令的 VSPackage](https://msdn.microsoft.com/library/d699c149-5d1e-47ff-94c7-e1222af02c32)。  
   
 ### <a name="to-add-the-editor-factory"></a>若要添加编辑器工厂  
   
-1.  右键单击**MyPackage**项目，指向**添加**，然后单击**类**。  
+1. 右键单击**MyPackage**项目，指向**添加**，然后单击**类**。  
   
-2.  在中**添加新项**对话框框中，请确保**类**选择模板，则类型`EditorFactory.cs`作为名称，然后单击**添加**将类添加到你的项目。  
+2. 在中**添加新项**对话框框中，请确保**类**选择模板，则类型`EditorFactory.cs`作为名称，然后单击**添加**将类添加到你的项目。  
   
-     *EditorFactory.cs*文件应自动打开。  
+    *EditorFactory.cs*文件应自动打开。  
   
-3.  在代码中引用以下程序集。  
+3. 在代码中引用以下程序集。  
   
-    ```vb  
-    Imports System.Runtime.InteropServices  
-    Imports Microsoft.VisualStudio  
-    Imports Microsoft.VisualStudio.Shell  
-    Imports Microsoft.VisualStudio.Shell.Interop  
-    Imports Microsoft.VisualStudio.OLE.Interop  
-    Imports Microsoft.VisualStudio.TextManager.Interop  
-    Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
-    ```  
+   ```vb  
+   Imports System.Runtime.InteropServices  
+   Imports Microsoft.VisualStudio  
+   Imports Microsoft.VisualStudio.Shell  
+   Imports Microsoft.VisualStudio.Shell.Interop  
+   Imports Microsoft.VisualStudio.OLE.Interop  
+   Imports Microsoft.VisualStudio.TextManager.Interop  
+   Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
+   ```  
   
-    ```csharp  
-    using System.Runtime.InteropServices;  
-    using Microsoft.VisualStudio;  
-    using Microsoft.VisualStudio.Shell;  
-    using Microsoft.VisualStudio.Shell.Interop;  
-    using Microsoft.VisualStudio.OLE.Interop;  
-    using Microsoft.VisualStudio.TextManager.Interop;  
-    using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
+   ```csharp  
+   using System.Runtime.InteropServices;  
+   using Microsoft.VisualStudio;  
+   using Microsoft.VisualStudio.Shell;  
+   using Microsoft.VisualStudio.Shell.Interop;  
+   using Microsoft.VisualStudio.OLE.Interop;  
+   using Microsoft.VisualStudio.TextManager.Interop;  
+   using IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
   
-    ```  
+   ```  
   
-4.  添加将 GUID 传递给`EditorFactory`类添加`Guid`立即在类声明的属性。  
+4. 添加将 GUID 传递给`EditorFactory`类添加`Guid`立即在类声明的属性。  
   
-     可以使用生成新的 GUID *guidgen.exe*在编程[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的命令提示符，或通过单击**创建 GUID**上**工具**菜单。 此处使用的 GUID 是仅为示例;不要在项目中使用它。  
+    可以使用生成新的 GUID *guidgen.exe*在编程[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的命令提示符，或通过单击**创建 GUID**上**工具**菜单。 此处使用的 GUID 是仅为示例;不要在项目中使用它。  
   
-    ```vb  
-    <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
-    ```  
+   ```vb  
+   <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
+   ```  
   
-    ```csharp  
-    [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
-    ```  
+   ```csharp  
+   [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
+   ```  
   
-5.  在类定义中，添加两个私有变量来包含父包和服务提供程序。  
+5. 在类定义中，添加两个私有变量来包含父包和服务提供程序。  
   
-    ```vb  
-    Class EditorFactory  
-        Private parentPackage As Package  
-        Private serviceProvider As IOleServiceProvider  
-    ```  
+   ```vb  
+   Class EditorFactory  
+       Private parentPackage As Package  
+       Private serviceProvider As IOleServiceProvider  
+   ```  
   
-    ```csharp  
-    class EditorFactory  
-    {  
-        private Package parentPackage;  
-        private IOleServiceProvider serviceProvider;  
-    }  
+   ```csharp  
+   class EditorFactory  
+   {  
+       private Package parentPackage;  
+       private IOleServiceProvider serviceProvider;  
+   }  
   
-    ```  
+   ```  
   
-6.  添加接受一个参数的类型的公共类构造函数<xref:Microsoft.VisualStudio.Shell.Package>:  
+6. 添加接受一个参数的类型的公共类构造函数<xref:Microsoft.VisualStudio.Shell.Package>:  
   
-    ```vb  
-    Public Sub New(ByVal parentPackage As Package)  
-        Me.parentPackage = parentPackage  
-    End Sub  
-    ```  
+   ```vb  
+   Public Sub New(ByVal parentPackage As Package)  
+       Me.parentPackage = parentPackage  
+   End Sub  
+   ```  
   
-    ```csharp  
-    public EditorFactory(Package parentPackage)  
-    {  
-        this.parentPackage = parentPackage;  
-    }  
-    ```  
+   ```csharp  
+   public EditorFactory(Package parentPackage)  
+   {  
+       this.parentPackage = parentPackage;  
+   }  
+   ```  
   
-7.  修改`EditorFactory`类声明为派生<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
+7. 修改`EditorFactory`类声明为派生<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
   
-    ```vb  
-    Class EditorFactory Implements IVsEditorFacto  
-    ```  
+   ```vb  
+   Class EditorFactory Implements IVsEditorFacto  
+   ```  
   
-    ```csharp  
-    class EditorFactory : IVsEditorFactory  
+   ```csharp  
+   class EditorFactory : IVsEditorFactory  
   
-    ```  
+   ```  
   
-8.  右键单击<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，单击**实现接口**，然后单击**显式实现接口**。  
+8. 右键单击<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>，单击**实现接口**，然后单击**显式实现接口**。  
   
-     此步骤将添加必须实现中的四种方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
+    此步骤将添加必须实现中的四种方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>接口。  
   
 9. 将 `IVsEditorFactory.Close` 方法的内容替换为以下代码。  
   
@@ -321,63 +321,63 @@ ms.locfileid: "46495240"
   
 ### <a name="to-register-the-editor-factory"></a>若要注册编辑器工厂  
   
-1.  在**解决方案资源管理器**，双击**Resources.resx**以打开到字符串表，该表中的文件条目**String1 为**选定。  
+1. 在**解决方案资源管理器**，双击**Resources.resx**以打开到字符串表，该表中的文件条目**String1 为**选定。  
   
-2.  更改名称的标识符`IDS_EDITORNAME`和文本到**MyPackage 编辑器。** 此字符串显示为您的编辑器的名称。  
+2. 更改名称的标识符`IDS_EDITORNAME`和文本到**MyPackage 编辑器。** 此字符串显示为您的编辑器的名称。  
   
-3.  打开**VSPackage.resx**文件中，添加一个新字符串，将名称设置为**101**，并将值设置为`IDS_EDITORNAME`。 此步骤提供访问你创建的字符串资源 ID 的包。  
+3. 打开**VSPackage.resx**文件中，添加一个新字符串，将名称设置为**101**，并将值设置为`IDS_EDITORNAME`。 此步骤提供访问你创建的字符串资源 ID 的包。  
   
-    > [!NOTE]
-    >  如果**VSPackage.resx**文件包含另一个字符串`name`属性设置为**101**，替换另一个唯一的数字值，在此处以及以下步骤中。  
+   > [!NOTE]
+   >  如果**VSPackage.resx**文件包含另一个字符串`name`属性设置为**101**，替换另一个唯一的数字值，在此处以及以下步骤中。  
   
-4.  在中**解决方案资源管理器**，打开**MyPackagePackage.cs**文件。  
+4. 在中**解决方案资源管理器**，打开**MyPackagePackage.cs**文件。  
   
-     此文件是主要包文件。  
+    此文件是主要包文件。  
   
-5.  之前添加以下用户属性`Guid`属性。  
+5. 之前添加以下用户属性`Guid`属性。  
   
-    ```vb  
-    <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
-    <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
-          ".myext", 32, NameResourceID:=101 )> _  
-    ```  
+   ```vb  
+   <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
+   <ProvideEditorExtensionAttribute(GetType(EditorFactory), _  
+         ".myext", 32, NameResourceID:=101 )> _  
+   ```  
   
-    ```csharp  
-    [ProvideEditorFactory(typeof(EditorFactory), 101)]  
-    [ProvideEditorExtension(typeof(EditorFactory),   
-          ".myext", 32, NameResourceID = 101)]   
-    ```  
+   ```csharp  
+   [ProvideEditorFactory(typeof(EditorFactory), 101)]  
+   [ProvideEditorExtension(typeof(EditorFactory),   
+         ".myext", 32, NameResourceID = 101)]   
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>属性相关联 *.myext*文件与编辑器工厂的扩展，这样，任何时候，只要具有加载扩展插件、 调用编辑器工厂的文件。  
+    <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute>属性相关联 *.myext*文件与编辑器工厂的扩展，这样，任何时候，只要具有加载扩展插件、 调用编辑器工厂的文件。  
   
-6.  添加到一个私有变量`MyPackage`类，构造函数中之前，并为其提供类型`EditorFactory`。  
+6. 添加到一个私有变量`MyPackage`类，构造函数中之前，并为其提供类型`EditorFactory`。  
   
-    ```vb  
-    Private editorFactory As EditorFactory  
-    ```  
+   ```vb  
+   Private editorFactory As EditorFactory  
+   ```  
   
-    ```csharp  
-    private EditorFactory editorFactory;  
-    ```  
+   ```csharp  
+   private EditorFactory editorFactory;  
+   ```  
   
-7.  查找`Initialize`方法 (可能需要打开`Package Members`隐藏的区域)，并在调用后添加以下代码`base.Initialize()`。  
+7. 查找`Initialize`方法 (可能需要打开`Package Members`隐藏的区域)，并在调用后添加以下代码`base.Initialize()`。  
   
-    ```vb  
-    'Create our editor factory and register it.   
-    Me.editorFactory = New EditorFactory(Me)  
-    MyBase.RegisterEditorFactory(Me.editorFactory)  
-    ```  
+   ```vb  
+   'Create our editor factory and register it.   
+   Me.editorFactory = New EditorFactory(Me)  
+   MyBase.RegisterEditorFactory(Me.editorFactory)  
+   ```  
   
-    ```csharp  
-    // Create our editor factory and register it.  
-    this.editorFactory = new EditorFactory(this);  
-    base.RegisterEditorFactory(this.editorFactory);  
+   ```csharp  
+   // Create our editor factory and register it.  
+   this.editorFactory = new EditorFactory(this);  
+   base.RegisterEditorFactory(this.editorFactory);  
   
-    ```  
+   ```  
   
-8.  编译此程序，并确保没有任何错误。  
+8. 编译此程序，并确保没有任何错误。  
   
-     此步骤在实验注册表配置单元注册编辑器工厂[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 如果系统提示重写*resource.h*文件中，单击**确定**。  
+    此步骤在实验注册表配置单元注册编辑器工厂[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 如果系统提示重写*resource.h*文件中，单击**确定**。  
   
 9. 创建一个名为的示例文件*TextFile1.myext*。  
   

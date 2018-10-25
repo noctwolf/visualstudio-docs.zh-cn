@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c248c62ad35fbe36fab3e7a7d01209832b9996eb
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: fab6cba691a835c2213e5303c1be2419a79c18e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927237"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>实现类型可视化工具和自定义查看器
 > [!IMPORTANT]
@@ -38,25 +38,25 @@ ms.locfileid: "39232991"
 ## <a name="interfaces"></a>接口  
  EE 实现以下接口才能支持类型可视化工具，可供 Visual Studio:  
   
--   [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
+- [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)  
   
--   [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
+- [IPropertyProxyEESide](../../extensibility/debugger/reference/ipropertyproxyeeside.md)  
   
--   [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
+- [IPropertyProxyProvider](../../extensibility/debugger/reference/ipropertyproxyprovider.md)  
   
--   [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
+- [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md)  
   
--   [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
+- [IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
- EE 使用了以下接口来支持类型可视化工具：  
+  EE 使用了以下接口来支持类型可视化工具：  
   
--   [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
+- [IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)  
   
--   [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
+- [IEEVisualizerServiceProvider](../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)  
   
--   [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
+- [IDebugBinder3](../../extensibility/debugger/reference/idebugbinder3.md)  
   
 ## <a name="see-also"></a>请参阅  
  [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 180d7e4878ca0c9493c949eac055713212c964de
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: f32f429186aa0c4a657503ca9744bf570d624f25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869504"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定义自定义 SharePoint 项目项类型
   当你想要创建一种新的 SharePoint 项目项时，请定义新的 SharePoint 项目项类型。 例如，Visual Studio 不包括添加字段或自定义操作向 SharePoint 站点的 SharePoint 项目项。 可以定义自己的用于创建字段、 自定义操作或其他类型的 SharePoint 组件的 SharePoint 项目项的类型。  
@@ -32,11 +32,11 @@ ms.locfileid: "36326161"
   
  在定义的自定义项目项类型时，还可以对项目项添加了以下功能：  
   
--   将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**右键单击项目项，或选择它，然后选择**Shift** + **F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。  
+- 将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**右键单击项目项，或选择它，然后选择**Shift** + **F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)。  
   
--   将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
+- 将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到自定义的 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
- 若要启用其他开发人员在 Visual Studio 中使用您的项目项，请创建.spdata 文件并创建项模板或与项目项关联的项目模板。 有关详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
+  若要启用其他开发人员在 Visual Studio 中使用您的项目项，请创建.spdata 文件并创建项模板或与项目项关联的项目模板。 有关详细信息，请参阅[创建项模板和项目模板的 SharePoint 项目项](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
 ## <a name="understand-the-relationship-between-project-item-types-and-project-item-instances"></a>了解项目项类型和项目项实例之间的关系
  在定义 SharePoint 项目项类型时，Visual Studio 将加载您的扩展插件关联的类型的项目项添加到 SharePoint 项目时。 例如，如果你定义一个新**自定义操作**项目项类型、 用户添加时，Visual Studio 将加载你的扩展**自定义操作**项目项的项目。 Visual Studio 使用您的扩展插件的同一个实例关联的项目项类型的所有实例。 在上一示例中，如果用户将添加第二个**自定义操作**项目到项目的项，您的扩展插件的同一个实例使用自定义第二个项目项。  

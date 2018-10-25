@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_reference |Microsoft 文档'
+title: 'Idiasymbol:: Get_reference |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ceef47db6474df6b7d4544cb151b0e82c40cb68
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: de32c77f34478389fcac5d121a20fa2de897d1a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923766"
 ---
 # <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
-检索用于指定指针类型是否为引用的标志。  
+检索指定类型的指针是否为引用的标志。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,7 +40,7 @@ HRESULT get_reference (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

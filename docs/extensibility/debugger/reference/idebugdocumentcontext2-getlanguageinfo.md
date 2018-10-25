@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo |Microsoft 文档
+title: IDebugDocumentContext2::GetLanguageInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86a31893a62391c0da1041402e3806c7a1e997e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8d8b9c31f5d681c80c1fe961fac039f8f9a6b5b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920633"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 获取与此文档上下文关联的语言。  
@@ -43,10 +43,10 @@ int GetLanguageInfo(
   
 #### <a name="parameters"></a>参数  
  `pbstrLanguage`  
- [out]返回实现此文档上下文的代码的语言的名称。  
+ [out]返回实现在此文档上下文的代码的语言的名称。  
   
  `pguidLanguage`  
- [out]返回实现此文档上下文的代码的语言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 并不局限于由提供的语言[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
+ [out]返回实现在此文档上下文的代码的语言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 并不局限于由提供的语言[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
@@ -83,5 +83,5 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

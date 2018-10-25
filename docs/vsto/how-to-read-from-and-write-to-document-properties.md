@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 14cecb63e7f96e58b17672bbb5cb67a345b9ece8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: de9ae85156f9d272901893c74c5d2c9729a0a3dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924221"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何： 读取和写入文档属性
   可以存储文档以及文档属性。 Office 应用程序提供了许多内置的属性，例如作者、标题和主题。 本主题演示如何在 Microsoft Office Excel 和 Microsoft Office Word 中设置文档属性。  
@@ -35,13 +35,13 @@ ms.locfileid: "35671676"
 ## <a name="set-document-properties-in-excel"></a>在 Excel 中设置文档属性  
  要使用 Excel 中的内置属性，请使用以下属性：  
   
--   在文档级项目中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 类的 `ThisWorkbook` 属性。  
+- 在文档级项目中，使用 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 类的 `ThisWorkbook` 属性。  
   
--   在 VSTO 外接程序项目中，使用 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Workbook> 属性。  
+- 在 VSTO 外接程序项目中，使用 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 对象的 <xref:Microsoft.Office.Interop.Excel.Workbook> 属性。  
   
- 这些属性将返回 <xref:Microsoft.Office.Core.DocumentProperties> 对象，该对象为 <xref:Microsoft.Office.Core.DocumentProperty> 对象的集合。 可以使用集合的 `Item` 属性，按名称或索引检索该集合中的特定属性。  
+  这些属性将返回 <xref:Microsoft.Office.Core.DocumentProperties> 对象，该对象为 <xref:Microsoft.Office.Core.DocumentProperty> 对象的集合。 可以使用集合的 `Item` 属性，按名称或索引检索该集合中的特定属性。  
   
- 下面的代码示例演示了如何更改文档级项目中的内置 **Revision Number** 属性。  
+  下面的代码示例演示了如何更改文档级项目中的内置 **Revision Number** 属性。  
   
 ### <a name="to-change-the-revision-number-property-in-excel"></a>若要更改在 Excel 中的修订号属性  
   
@@ -58,13 +58,13 @@ ms.locfileid: "35671676"
 ## <a name="set-document-properties-in-word"></a>在 Word 中设置文档属性  
  若要使用 Word 中的内置属性，请使用以下属性：  
   
--   在文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 类的 `ThisDocument` 属性。  
+- 在文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 类的 `ThisDocument` 属性。  
   
--   在 VSTO 外接程序项目中，使用 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Document> 属性。  
+- 在 VSTO 外接程序项目中，使用 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Document> 属性。  
   
- 这些属性将返回 <xref:Microsoft.Office.Core.DocumentProperties> 对象，该对象为 <xref:Microsoft.Office.Core.DocumentProperty> 对象的集合。 可以使用集合的 `Item` 属性，按名称或索引检索该集合中的特定属性。  
+  这些属性将返回 <xref:Microsoft.Office.Core.DocumentProperties> 对象，该对象为 <xref:Microsoft.Office.Core.DocumentProperty> 对象的集合。 可以使用集合的 `Item` 属性，按名称或索引检索该集合中的特定属性。  
   
- 下面的代码示例演示了如何更改文档级项目中的内置 **Subject** 属性。  
+  下面的代码示例演示了如何更改文档级项目中的内置 **Subject** 属性。  
   
 ### <a name="to-change-the-subject-property"></a>若要更改主题属性  
   

@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f836662b9dfe4df8e45e24a7210664b8cecd49e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d7a2775526a088129060fc6375958b08cf6b19eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670320"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906554"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 解决方案
   Visual Studio 提供可用于创建 Microsoft Office PowerPoint 的 VSTO 外接程序的项目模板。 可使用 VSTO 外接程序自动化 PowerPoint、扩展 PowerPoint 功能或自定义 PowerPoint 用户界面 (UI)。  
@@ -42,15 +42,15 @@ ms.locfileid: "35670320"
 ## <a name="automate-powerpoint-by-using-the-powerpoint-object-model"></a>使用 PowerPoint 对象模型自动化 PowerPoint  
  PowerPoint 对象模型公开了许多你能用于自动化 PowerPoint 的模型。 这些类型使你能够编写代码来完成常规任务：  
   
--   以编程方式创建演示文稿并设置其格式。  
+- 以编程方式创建演示文稿并设置其格式。  
   
--   从演示文稿添加或删除幻灯片。  
+- 从演示文稿添加或删除幻灯片。  
   
--   添加或更改幻灯片上的形状。  
+- 添加或更改幻灯片上的形状。  
   
- 若要从 VSTO 外接程序访问 PowerPoint 对象模型，请使用`Application`字段的`ThisAddIn`在项目中的类。 `Application` 字段返回 <xref:Microsoft.Office.Interop.PowerPoint.Application> 对象，该对象表示 PowerPoint 的当前实例。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+  若要从 VSTO 外接程序访问 PowerPoint 对象模型，请使用`Application`字段的`ThisAddIn`在项目中的类。 `Application` 字段返回 <xref:Microsoft.Office.Interop.PowerPoint.Application> 对象，该对象表示 PowerPoint 的当前实例。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
- 调入 PowerPoint 对象模型时，将使用 PowerPoint 的主互操作程序集中提供的类型。 该主互操作程序集充当 VSTO 外接程序中的托管代码与 PowerPoint 中的 COM 对象模型之间的桥梁。 PowerPoint 主互操作程序集中的所有类型都在 <xref:Microsoft.Office.Interop.PowerPoint> 命名空间中定义。 有关主互操作程序集的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
+  调入 PowerPoint 对象模型时，将使用 PowerPoint 的主互操作程序集中提供的类型。 该主互操作程序集充当 VSTO 外接程序中的托管代码与 PowerPoint 中的 COM 对象模型之间的桥梁。 PowerPoint 主互操作程序集中的所有类型都在 <xref:Microsoft.Office.Interop.PowerPoint> 命名空间中定义。 有关主互操作程序集的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
 ##  <a name="WordOMDocumentation"></a> 使用 PowerPoint 对象模型文档  
  有关 PowerPoint 对象模型的完整信息，可以参考 PowerPoint 主互操作程序集 (PIA) 引用和 VBA 对象模型引用。  
@@ -80,7 +80,7 @@ ms.locfileid: "35670320"
  [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   

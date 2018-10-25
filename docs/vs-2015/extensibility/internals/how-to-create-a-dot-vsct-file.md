@@ -15,27 +15,27 @@ ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1b28fe38a9d45816481233c3ae267b3c764ee264
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89ac7468b04f9493aca0b57dca832e01d9298f83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847836"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何： 创建。Vsct 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有几种方法来创建一个基于 XML 的 Visual Studio 命令表配置 (.vsct) 文件。  
   
--   您可以创建新的 VSPackage 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]包模板。  
+- 您可以创建新的 VSPackage 中[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]包模板。  
   
--   可以使用基于 XML 的命令表配置编译器 Vsct.exe，若要从现有的.ctc 文件生成的文件。  
+- 可以使用基于 XML 的命令表配置编译器 Vsct.exe，若要从现有的.ctc 文件生成的文件。  
   
--   Vsct.exe 可用于从现有.cto 文件生成一个.vsct 文件。  
+- Vsct.exe 可用于从现有.cto 文件生成一个.vsct 文件。  
   
--   您可以手动创建新的.vsct 文件。  
+- 您可以手动创建新的.vsct 文件。  
   
- 本主题说明如何手动创建新的.vsct 文件。  
+  本主题说明如何手动创建新的.vsct 文件。  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>若要手动创建新的.vsct 文件  
   

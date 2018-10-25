@@ -13,12 +13,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2b9682f17716946c642186ee91c84b8060879b0d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 704eaae88850463ba7ff251fee13500759de3286
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850654"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio 和 Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Xamarin 是一个移动应用开发平台，用于从常见的 C#/.NET 基本代
   
  本文档将帮助评估利用 Xamarin 构建这些体验的 **Visual Studio** 完整功能。  
   
--   首先进行[设置和安装](../cross-platform/setup-and-install.md)，该过程将花费一些时间（通常是 2-4 小时，具体取决于 Internet 连接速度、已安装内容和所选选项）。  
+- 首先进行[设置和安装](../cross-platform/setup-and-install.md)，该过程将花费一些时间（通常是 2-4 小时，具体取决于 Internet 连接速度、已安装内容和所选选项）。  
   
--   在安装程序运行期间，可参阅[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)，该文章将介绍什么是 Xamarin 的本质并对 Xamarin.Forms 和本机 UI 进行比较等。  
+- 在安装程序运行期间，可参阅[了解如何使用 Xamarin 进行移动开发](../cross-platform/learn-about-mobile-development-with-xamarin.md)，该文章将介绍什么是 Xamarin 的本质并对 Xamarin.Forms 和本机 UI 进行比较等。  
   
--   安装完成后，请[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)。  
+- 安装完成后，请[验证 Xamarin 环境](../cross-platform/verify-your-xamarin-environment.md)。  
   
--   通过完成教程[学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)完成操作。  
+- 通过完成教程[学习在 Visual Studio 中使用 Xamarin.Forms 生成应用的基础知识](../cross-platform/learn-app-building-basics-with-xamarin-forms-in-visual-studio.md)完成操作。  
   
- 可通过[任意版本的 Visual Studio 2015 ](https://www.visualstudio.com/vs-2015-product-editions)（Community、Professional 和 Enterprise）使用所有Xamarin功能。 另请注意，自 2016 年 3 月 31 日起， Visual Studio 2015 的所有版本都将提供 Xamarin，不再需要单独的许可证。 对于 Visual Studio 2013，可按照[设置和安装](../cross-platform/setup-and-install.md)主题中所述单独安装 Xamarin。  
+  可通过[任意版本的 Visual Studio 2015 ](https://www.visualstudio.com/vs-2015-product-editions)（Community、Professional 和 Enterprise）使用所有Xamarin功能。 另请注意，自 2016 年 3 月 31 日起， Visual Studio 2015 的所有版本都将提供 Xamarin，不再需要单独的许可证。 对于 Visual Studio 2013，可按照[设置和安装](../cross-platform/setup-and-install.md)主题中所述单独安装 Xamarin。  
   
 > [!NOTE]
 >  对具有 Windows 和 Visual Studio 知识的人员而言，这些说明描述了最简单易行的计算机配置。 使用此配置，简化了整体开发体验，因为只需与 Mac 交互即可使用 iOS 模拟器和受限设备。 如果你熟知 Mac，建议在 Parallels/VMWare 中运行 Visual Studio 或使用 Xamarin Studio Community。 相关说明，请参阅 [Mac 用户的设置、安装和验证](../cross-platform/setup-install-and-verifications-for-mac-users.md)。  

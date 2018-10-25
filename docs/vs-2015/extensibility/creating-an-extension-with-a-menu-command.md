@@ -18,12 +18,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 111b20eb427f1e1e2b4d00d1d2ced33c4bd677f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc470e08511c7bda44bfda2012636b626ba41e83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174624"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925924"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,21 +122,21 @@ ms.locfileid: "49174624"
 ## <a name="next-steps"></a>后续步骤  
  本演练说明了仅执行与 Visual Studio 扩展的一小部分。 下面是一个可以在 Visual Studio 扩展中执行哪些 （合理方便地） 操作的简短列表：  
   
-1.  您可以执行许多其他操作使用简单的菜单命令：  
+1. 您可以执行许多其他操作使用简单的菜单命令：  
   
-    1.  添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
+   1.  添加自己的图标：[将图标添加到菜单命令](../extensibility/adding-icons-to-menu-commands.md)  
   
-    2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2.  更改菜单命令的文本：[更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-    3.  将菜单快捷方式添加到命令：[绑定键盘快捷方式菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3.  将菜单快捷方式添加到命令：[绑定键盘快捷方式菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
-2.  添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
+2. 添加不同类型的命令、 菜单和工具栏：[扩展菜单和命令](../extensibility/extending-menus-and-commands.md)  
   
-3.  添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)  
+3. 添加工具窗口和扩展内置的 Visual Studio 工具窗口：[扩展和自定义工具 Windows](../extensibility/extending-and-customizing-tool-windows.md)  
   
-4.  添加 IntelliSense、 代码建议和其他功能到现有代码编辑器：[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)  
+4. 添加 IntelliSense、 代码建议和其他功能到现有代码编辑器：[扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)  
   
-5.  将选项和属性页和用户设置添加到你的扩展：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)  
+5. 将选项和属性页和用户设置添加到你的扩展：[扩展属性和属性窗口](../extensibility/extending-properties-and-the-property-window.md)和[扩展用户设置和选项](../extensibility/extending-user-settings-and-options.md)  
   
- 其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或在独立 shell 中实现您的扩展插件： [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
+   其他类型的扩展需要更多工作，如创建新的项目类型 ([扩展项目](../extensibility/extending-projects.md))，创建新的编辑器类型 ([创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md))，或在独立 shell 中实现您的扩展插件： [Visual Studio 独立 Shell](../extensibility/visual-studio-isolated-shell.md)
 
