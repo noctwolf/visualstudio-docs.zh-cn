@@ -17,12 +17,12 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4e375cc8d314163b277cc20685ae19f134236b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 321cbd6482be088bd57c94224c41d4626a86a0f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240807"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892683"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>旧版语言服务中的成员完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ IntelliSense 成员完成是工具提示显示特定的作用域，如类、 结
 ## <a name="how-it-works"></a>其工作原理  
  以下是中的成员列表中均显示使用 MPF 类的两种方法：  
   
--   定位的标识符上或成员完成字符后面插入符号并选择**成员列表**从**IntelliSense**菜单。  
+- 定位的标识符上或成员完成字符后面插入符号并选择**成员列表**从**IntelliSense**菜单。  
   
--   <xref:Microsoft.VisualStudio.Package.IScanner>扫描程序检测到的成员完成字符和设置的令牌触发器<xref:Microsoft.VisualStudio.Package.TokenTriggers>，该字符。  
+- <xref:Microsoft.VisualStudio.Package.IScanner>扫描程序检测到的成员完成字符和设置的令牌触发器<xref:Microsoft.VisualStudio.Package.TokenTriggers>，该字符。  
   
- 成员完成字符表示的类、 结构或枚举成员遵循。 例如，在 C# 或 Visual Basic 中的成员完成字符是`.`，而 c + + 中的字符是任一`.`或`->`。 触发器值的成员选择字符扫描时设置。  
+  成员完成字符表示的类、 结构或枚举成员遵循。 例如，在 C# 或 Visual Basic 中的成员完成字符是`.`，而 c + + 中的字符是任一`.`或`->`。 触发器值的成员选择字符扫描时设置。  
   
 ### <a name="the-intellisense-member-list-command"></a>IntelliSense 成员 List 命令  
  <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令启动对的调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法<xref:Microsoft.VisualStudio.Package.Source>类和<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，都依次调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法分析器分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。  

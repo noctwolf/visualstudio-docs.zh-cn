@@ -1,5 +1,5 @@
 ---
-title: 'Idialinenumber:: Get_addressoffset |Microsoft 文档'
+title: 'Idialinenumber:: Get_addressoffset |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e8911e1c1a1cce764775850520593efe4be9f3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 96accb2f62c2a92b6e48eb9d8a70434381ad9cfe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828060"
 ---
 # <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
 检索一个块的开始处的内存地址的偏移量的部分。  
@@ -34,10 +34,10 @@ HRESULT get_addressOffset (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回的内存地址的偏移量的部分块的起始位置。  
+ [out]返回一个块的开始处的内存地址的偏移量的部分。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="example"></a>示例  
   

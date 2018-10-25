@@ -13,12 +13,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 403f27609b5af0556412ccac3f13009aab4638c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5d8acf315322a7dfdac70a158bd78f69aebbde15
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867866"
 ---
 # <a name="visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 仿真程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,26 +63,26 @@ ms.locfileid: "49196375"
 ##  <a name="Requirements"></a> 系统需求和向后兼容性  
  有关硬件、软件和适用于 Android Visual Studio 仿真程序的配置需求的重要信息，请参阅以下主题。  
   
--   [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+- [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- 适用于 Android 的 Visual Studio 仿真程序需要 Visual Studio 2015；它不与 Visual Studio 的早期版本向后兼容。  
+  适用于 Android 的 Visual Studio 仿真程序需要 Visual Studio 2015；它不与 Visual Studio 的早期版本向后兼容。  
   
- 新版本的仿真程序在旧版本的基础上安装（可能在某些情况下，替换旧的映像，放弃设置、应用和这些映像上安装的文件）。  
+  新版本的仿真程序在旧版本的基础上安装（可能在某些情况下，替换旧的映像，放弃设置、应用和这些映像上安装的文件）。  
   
 ##  <a name="Networking"></a> 适用于 Android 的 Visual Studio 仿真程序中的网络  
  适用于 Android 的 Visual Studio 仿真程序的网络连接类似于具有以下特征的台式计算机的连接：  
   
--   该仿真程序可作为具有自己 IP 地址的单独设备出现在网络上。  
+- 该仿真程序可作为具有自己 IP 地址的单独设备出现在网络上。  
   
--   它不需要任何其他尚未使用仿真程序安装的网络软件。  
+- 它不需要任何其他尚未使用仿真程序安装的网络软件。  
   
--   不可以加入 Windows 域。  
+- 不可以加入 Windows 域。  
   
- 若要了解仿真程序的网络连接的功能，将其视为类似于从 Android 手机到同一个网络的 Wi-Fi 连接。 如果手机上运行的应用可以通过其 Wi-Fi 连接访问网络资源，那么仿真程序上运行的应用程序还可以访问同一网络资源。  
+  若要了解仿真程序的网络连接的功能，将其视为类似于从 Android 手机到同一个网络的 Wi-Fi 连接。 如果手机上运行的应用可以通过其 Wi-Fi 连接访问网络资源，那么仿真程序上运行的应用程序还可以访问同一网络资源。  
   
- 有关网络要求的详细信息，请参阅[适用于 Android 的 Visual Studio 仿真程序的系统需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
+  有关网络要求的详细信息，请参阅[适用于 Android 的 Visual Studio 仿真程序的系统需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)  
   
- 有关对网络问题进行疑难解答的信息，请参阅[适用于 Android 的 Visual Studio 仿真程序的疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
+  有关对网络问题进行疑难解答的信息，请参阅[适用于 Android 的 Visual Studio 仿真程序的疑难解答](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)。  
   
 ##  <a name="Configuring"></a> 配置适用于 Android 的 Visual Studio 仿真程序  
  测试 Android 应用在多种 Android 硬件间的兼容性可能是一个挑战。 市场中的 Android 手机和平板电脑的版本和屏幕大小种类繁多，都具有许多不同的硬件配置（RAM、CPU、体系结构等）。 适用于 Android 的 Visual Studio 仿真程序通过使用设备配置文件对其进行了简化。 我们的设备配置文件集代表市场内最流行的硬件，包括Samsung、Motorola、Sony、LG 等的设备。  

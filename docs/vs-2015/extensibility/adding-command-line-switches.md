@@ -18,12 +18,12 @@ ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a67e25b06f9b33f184280d0182cf96bfcda154db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 278d7b723bde187fc765c610bd8bc470bb2b2059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823562"
 ---
 # <a name="adding-command-line-switches"></a>添加命令行开关
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,11 +64,11 @@ ms.locfileid: "49188730"
 ## <a name="retrieving-command-line-switches"></a>检索命令行开关  
  加载包时，可以通过完成以下步骤检索的命令行开关。  
   
-1.  在你的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>实现中，调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>若要获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>接口。  
+1. 在你的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>实现中，调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>若要获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>接口。  
   
-2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>来检索用户输入的命令行开关。  
+2. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>来检索用户输入的命令行开关。  
   
- 下面的代码演示如何找出是否由用户输入 MySwitch 命令行开关：  
+   下面的代码演示如何找出是否由用户输入 MySwitch 命令行开关：  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69774b098e76bb14ed11be092ae7ebedb71c218a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 401458a33c67d0c8d0302fddcdfd988113101e28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837551"
 ---
 # <a name="customizing-deletion-behavior"></a>自定义删除行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ ms.locfileid: "49202756"
   
 #### <a name="to-set-delete-propagation"></a>设置删除传播  
   
-1.  在 DSL 定义关系图中，选择*角色*要传播删除。 该角色由域关系框的左侧或右侧的线表示。  
+1. 在 DSL 定义关系图中，选择*角色*要传播删除。 该角色由域关系框的左侧或右侧的线表示。  
   
-     例如，如果想要指定在删除 Album 时，也将删除相关的 Artist，则选择已连接到域类 Artist 的角色。  
+    例如，如果想要指定在删除 Album 时，也将删除相关的 Artist，则选择已连接到域类 Artist 的角色。  
   
-2.  在属性窗口中设置**传播删除**属性。  
+2. 在属性窗口中设置**传播删除**属性。  
   
-3.  按 F5 并验证：  
+3. 按 F5 并验证：  
   
-    -   当删除此关系的实例时，也将删除选定角色的元素。  
+   -   当删除此关系的实例时，也将删除选定角色的元素。  
   
-    -   当删除对方角色的元素时，将删除此关系的实例，也将删除此角色的相关元素。  
+   -   当删除对方角色的元素时，将删除此关系的实例，也将删除此角色的相关元素。  
   
- 你还可以看到**传播删除**选项**DSL 详细信息**窗口。 选择一个域类，并在 DSL 详细信息窗口中，打开**删除行为**通过单击窗口一侧的按钮的页。 **传播**每个关系的对方角色显示选项。 **删除 Style**列指示是否**传播**选项是在其默认设置，但它不具有任何单独作用。  
+   你还可以看到**传播删除**选项**DSL 详细信息**窗口。 选择一个域类，并在 DSL 详细信息窗口中，打开**删除行为**通过单击窗口一侧的按钮的页。 **传播**每个关系的对方角色显示选项。 **删除 Style**列指示是否**传播**选项是在其默认设置，但它不具有任何单独作用。  
   
 ## <a name="delete-propagation-by-using-program-code"></a>通过使用程序代码删除传播  
  DSL 定义文件中的选项仅允许你选择是否将删除传播到邻近内容。 若要实现删除传播的更复杂方案，你可以编写程序代码。  
@@ -138,17 +138,17 @@ partial class MusicLibDeleteClosure
 ##  <a name="ondeleting"></a> 使用 OnDeleting 和 OnDeleted  
  可以在域类或域关系中重写 `OnDeleting()` 或 `OnDeleted()`。  
   
-1.  在将要删除元素时，但在该元素的关系已断开连接前，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>。 该元素仍可在其他元素中来回导航，并且仍位于 `store.ElementDirectory` 中。  
+1. 在将要删除元素时，但在该元素的关系已断开连接前，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleting%2A>。 该元素仍可在其他元素中来回导航，并且仍位于 `store.ElementDirectory` 中。  
   
-     如果同时删除多个元素，则在执行删除操作前为所有元素调用 OnDeleting。  
+    如果同时删除多个元素，则在执行删除操作前为所有元素调用 OnDeleting。  
   
-     `IsDeleting` 为 true。  
+    `IsDeleting` 为 true。  
   
-2.  已删除该元素后，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它将保留在 CLR 堆中，以便在需要时可执行“撤消”，但它已与其他元素取消链接并已从 `store.ElementDirectory` 中删除。 对于关系，角色仍将引用旧角色扮演者。`IsDeleted` 为 true。  
+2. 已删除该元素后，调用 <xref:Microsoft.VisualStudio.Modeling.ModelElement.OnDeleted%2A>。 它将保留在 CLR 堆中，以便在需要时可执行“撤消”，但它已与其他元素取消链接并已从 `store.ElementDirectory` 中删除。 对于关系，角色仍将引用旧角色扮演者。`IsDeleted` 为 true。  
   
-3.  当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+3. 当用户在创建元素后调用“撤消”时，以及在“重做”中重复以前的删除时，将调用 OnDeleting 和 OnDeleted。 使用 `this.Store.InUndoRedoOrRollback` 来避免在这些情况下更新存储元素。 有关详细信息，请参阅[如何： 使用事务的事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
- 例如，以下代码将在删除 Album 的最后一个子级 Song 时删除该 Album：  
+   例如，以下代码将在删除 Album 的最后一个子级 Song 时删除该 Album：  
   
 ```  
   

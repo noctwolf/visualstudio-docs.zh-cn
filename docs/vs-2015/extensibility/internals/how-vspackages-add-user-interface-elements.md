@@ -17,12 +17,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0f97202daa4626f0060a53781f609382bf082c17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aa1ffdc982fa3f9773770957a0dbb177ad3d4156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283265"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872442"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>VSPackage 如何添加用户界面元素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -94,15 +94,15 @@ VSPackage 可以添加用户界面 (UI) 元素，例如，菜单、 工具栏和
 #### <a name="menus"></a>菜单  
  每个菜单指[Menu Element](../../extensibility/menu-element.md)中`Menus`部分。 菜单必须具有`guid`， `id`，并`priority`属性，和一个`Parent`元素，还以下附加特性和子级：  
   
--   一个`type`的特性，指定是否应作为一种类型的菜单或工具栏在 IDE 中显示菜单。  
+- 一个`type`的特性，指定是否应作为一种类型的菜单或工具栏在 IDE 中显示菜单。  
   
--   一个[字符串元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，它在 IDE 中，指定的菜单标题和一个[CommandName 元素](../../extensibility/commandname-element.md)，它指定的名称在中使用**命令**窗口来访问菜单。  
+- 一个[字符串元素](../../extensibility/strings-element.md)，其中包含[ButtonText 元素](../../extensibility/buttontext-element.md)，它在 IDE 中，指定的菜单标题和一个[CommandName 元素](../../extensibility/commandname-element.md)，它指定的名称在中使用**命令**窗口来访问菜单。  
   
--   可选标志。 一个[Command Flag 元素](../../extensibility/command-flag-element.md)可能会出现在菜单定义中，若要更改其外观或行为在 IDE 中的。  
+- 可选标志。 一个[Command Flag 元素](../../extensibility/command-flag-element.md)可能会出现在菜单定义中，若要更改其外观或行为在 IDE 中的。  
   
- 每个`Menu`元素必须有一组作为其父级，除非它是在可停靠的元素，如工具栏。 可停靠菜单是其自身的上级。 有关菜单和值的详细信息`type`属性，请参阅[Menu Element](../../extensibility/menu-element.md)文档。  
+  每个`Menu`元素必须有一组作为其父级，除非它是在可停靠的元素，如工具栏。 可停靠菜单是其自身的上级。 有关菜单和值的详细信息`type`属性，请参阅[Menu Element](../../extensibility/menu-element.md)文档。  
   
- 下面的示例演示旁边显示 Visual Studio 菜单栏的菜单**工具**菜单。  
+  下面的示例演示旁边显示 Visual Studio 菜单栏的菜单**工具**菜单。  
   
 ```xml  
 <Menu guid="guidTopLevelMenuCmdSet"  
@@ -163,11 +163,11 @@ priority="0x0100" type="Menu">
 ##### <a name="combos"></a>Combos  
  在中定义 combos`Combos`部分。 每个`Combo`元素表示在 IDE 中的下拉列表框。 列表框可能也可能不是可写的用户，具体取决于值`type`在组合框的属性。 Combos 具有相同的元素和按钮的行为，因此还具有以下附加特性：  
   
--   一个`defaultWidth`指定像素宽度的属性。  
+- 一个`defaultWidth`指定像素宽度的属性。  
   
--   `idCommandList`的特性，指定包含在列表框中显示的项的列表。 必须在同一个声明命令列表`GuidSymbol`包含在组合框的节点。  
+- `idCommandList`的特性，指定包含在列表框中显示的项的列表。 必须在同一个声明命令列表`GuidSymbol`包含在组合框的节点。  
   
- 下面的示例定义一个组合元素。  
+  下面的示例定义一个组合元素。  
   
 ```xml  
 <Combos>  

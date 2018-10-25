@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bc935c50a00efea7d3124eb7d1fb3246248f0b91
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884857"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>演练： 创建在第一个 VSTO 外接程序项目
   本演练演示如何为 Microsoft Office Project 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的项目无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -32,15 +32,15 @@ ms.locfileid: "35670447"
   
  本演练阐释了以下任务：  
   
--   创建 Project VSTO 外接程序项目。  
+- 创建 Project VSTO 外接程序项目。  
   
--   编写使用 Project 的对象模型以向新项目添加任务的代码。  
+- 编写使用 Project 的对象模型以向新项目添加任务的代码。  
   
--   生成并运行项目，以对其进行测试。  
+- 生成并运行项目，以对其进行测试。  
   
--   清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
+- 清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -78,18 +78,18 @@ ms.locfileid: "35670447"
   
 ### <a name="to-add-a-task-to-a-new-project"></a>若要向新的项目中添加任务  
   
-1.  在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 此代码定义的事件处理程序`NewProject`事件的`Microsoft.Office.Interop.MSProject.Application`类。  
+1. 在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 此代码定义了 `Microsoft.Office.Interop.MSProject.Application` 类的 `NewProject` 事件的一个事件处理程序。  
   
-     当用户创建一个新项目时，此事件处理程序会向项目添加任务。  
+    当用户创建一个新项目时，此事件处理程序会向项目添加任务。  
   
-     [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ProjectAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ProjectAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#1)]  
   
- 若要修改该项目，此代码示例，请使用以下对象：  
+   若要修改该项目，此代码示例，请使用以下对象：  
   
--   `Application` 类的 `ThisAddIn` 字段。 `Application`字段返回`Microsoft.Office.Interop.MSProject.Application`对象，表示项目的当前实例。  
+-   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 `Microsoft.Office.Interop.MSProject.Application` 对象，该对象表示 Project 的当前实例。  
   
--   `pj` NewProject 事件的事件处理程序的参数。 `pj`参数是`Microsoft.Office.Interop.MSProject.Project`对象，用于表示该项目。 有关详细信息，请参阅[项目的解决方案](../vsto/project-solutions.md)。  
+-   `pj` NewProject 事件的事件处理程序的参数。 `pj` 参数是一个 `Microsoft.Office.Interop.MSProject.Project` 对象，用于表示该项目。 有关详细信息，请参阅[项目的解决方案](../vsto/project-solutions.md)。  
   
 1.  如果你使用的是 C#，请将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码连接`Application_Newproject`与 NewProject 事件的事件处理程序。  
   

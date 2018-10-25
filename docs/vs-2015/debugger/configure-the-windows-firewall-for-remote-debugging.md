@@ -14,37 +14,37 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb3473e8c34f36e1cde0450563711824ce22a37d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96b4e4cc929dc7941fac5e8a7f090e701fe2810f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273879"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935388"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 本主题介绍如何配置防火墙以在运行以下操作系统的计算机上启用远程调试：  
   
--   Windows 7  
+- Windows 7  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 10  
+- Windows 10  
   
--   Windows Server 2008 (R2)  
+- Windows Server 2008 (R2)  
   
--   Windows Server 2012  
+- Windows Server 2012  
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
   
- 如果正在调试的网络不受防火墙保护，则此配置是不必要的。 否则，承载 Visual Studio 的计算机和要调试的远程计算机均需要对防火墙配置的更改。  
+  如果正在调试的网络不受防火墙保护，则此配置是不必要的。 否则，承载 Visual Studio 的计算机和要调试的远程计算机均需要对防火墙配置的更改。  
   
- “” If your network requires that communication be performed using , you must open additional ports on both the Visual Studio host computer and the remote computer.  
+  “” If your network requires that communication be performed using , you must open additional ports on both the Visual Studio host computer and the remote computer.  
   
- “Web 服务器” 如果你正在调试远程 Web 服务器，则必须打开远程计算机上的其他端口。  
+  “Web 服务器” 如果你正在调试远程 Web 服务器，则必须打开远程计算机上的其他端口。  
   
- 请注意，这两台计算机不需要运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。  
+  请注意，这两台计算机不需要运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。  
   
 ## <a name="to-configure-windows-firewall-on-the-visual-studio-computer"></a>若要在 Visual Studio 计算机上配置 Windows 防火墙  
  有关配置 Windows 防火墙的说明在不同操作系统上略有不同。 在 Windows 7 或 Windows Server 2008 中，使用 **程序** 一词；而在 Windows 8/8.1、Windows 10 和 Windows Server 2012 中，使用 **应用** 一词。  在以下步骤中，我们将使用 **应用**一词。  

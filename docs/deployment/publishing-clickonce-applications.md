@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a8ef8f2ae6ed1f198fc5f7661b79764d0a790bd
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: da23fa30b3266d9ce8eaae1356a92a583d7b940f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279808"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876914"
 ---
 # <a name="publish-clickonce-applications"></a>发布 ClickOnce 应用程序
 首次发布 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，可以使用“发布向导”设置发布属性。 只有几个属性在向导中可用，所有其他属性均设置为其默认值。  
@@ -37,15 +37,15 @@ ms.locfileid: "44279808"
 ## <a name="publish-wizard"></a>发布向导  
  你可以使用“发布向导”进行基本设置以发布应用程序。 这包括以下发布属性：  
   
--   发布文件夹所在的位置 - Visual Studio 将从其复制文件的位置（本地计算机、网络文件共享、FTP 服务器或网站）  
+- 发布文件夹所在的位置 - Visual Studio 将从其复制文件的位置（本地计算机、网络文件共享、FTP 服务器或网站）  
   
--   安装文件夹所在的位置 - 最终用户将从其进行安装的位置（网络文件共享、FTP 服务器、网站、CD/DVD）  
+- 安装文件夹所在的位置 - 最终用户将从其进行安装的位置（网络文件共享、FTP 服务器、网站、CD/DVD）  
   
--   联机或脱机可用性 - 最终用户在有或没有网络连接的情况下访问应用程序  
+- 联机或脱机可用性 - 最终用户在有或没有网络连接的情况下访问应用程序  
   
--   更新频率 - 应用程序检查新更新的频率。  
+- 更新频率 - 应用程序检查新更新的频率。  
   
- 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+  有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="publish-page"></a>“发布”页面  
  “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。 下表列出了主题。  

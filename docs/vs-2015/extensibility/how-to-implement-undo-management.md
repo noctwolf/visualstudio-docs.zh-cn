@@ -15,12 +15,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 72355b396dc88fc02c1ccdfb4f3a2ed4afe66467
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 50af6d65ad98c15506c4f7b015634a44455cd0aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246280"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815203"
 ---
 # <a name="how-to-implement-undo-management"></a>如何： 实现撤消管理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,39 +47,39 @@ ms.locfileid: "49246280"
   
 #### <a name="to-hook-your-undo-manager-into-the-environment"></a>若要将撤消管理器挂钩到环境  
   
-1.  调用`QueryInterface`从返回的对象上<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>为`IID_IOleUndoManager`。 存储指向<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>。  
+1. 调用`QueryInterface`从返回的对象上<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2>为`IID_IOleUndoManager`。 存储指向<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>。  
   
-2.  调用`QueryInterface`上`IOleUndoManager`为`IID_IOleCommandTarget`。 存储指向<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
+2. 调用`QueryInterface`上`IOleUndoManager`为`IID_IOleCommandTarget`。 存储指向<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
-3.  中继你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>并<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>调入存储`IOleCommandTarget`以下 StandardCommandSet97 命令的接口：  
+3. 中继你<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>并<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>调入存储`IOleCommandTarget`以下 StandardCommandSet97 命令的接口：  
   
-    -   cmdidUndo  
+   -   cmdidUndo  
   
-    -   cmdidMultiLevelUndo  
+   -   cmdidMultiLevelUndo  
   
-    -   cmdidRedo  
+   -   cmdidRedo  
   
-    -   cmdidMultiLevelRedo  
+   -   cmdidMultiLevelRedo  
   
-    -   cmdidMultiLevelUndoList  
+   -   cmdidMultiLevelUndoList  
   
-    -   cmdidMultiLevelRedoList  
+   -   cmdidMultiLevelRedoList  
   
-4.  调用`QueryInterface`上`IOleUndoManager`为`IID_IVsChangeTrackingUndoManager`。 存储指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
+4. 调用`QueryInterface`上`IOleUndoManager`为`IID_IVsChangeTrackingUndoManager`。 存储指向<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>。  
   
-     使用指向指针<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>来调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>，则<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A>方法。  
+    使用指向指针<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>来调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.MarkCleanState%2A>，则<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.AdviseTrackingClient%2A>，和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager.UnadviseTrackingClient%2A>方法。  
   
-5.  调用`QueryInterface`上`IOleUndoManager`为`IID_IVsLinkCapableUndoManager`。  
+5. 调用`QueryInterface`上`IOleUndoManager`为`IID_IVsLinkCapableUndoManager`。  
   
-6.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A>您的文档，其中应实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient>接口。 关闭文档后，调用`IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`。  
+6. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkCapableUndoManager.AdviseLinkedUndoClient%2A>您的文档，其中应实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoClient>接口。 关闭文档后，调用`IVsLinkCapableUndoManager::UnadviseLinkedUndoClient`。  
   
-7.  关闭文档后，调用`QueryInterface`上为你撤消管理器`IID_IVsLifetimeControlledObject`。  
+7. 关闭文档后，调用`QueryInterface`上为你撤消管理器`IID_IVsLifetimeControlledObject`。  
   
-8.  调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>。  
+8. 调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject.SeverReferencesToOwner%2A>。  
   
 9. 当对文档进行更改时，调用<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>上的管理器`OleUndoUnit`类。 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>方法中保留引用对象，因此通常在发布紧靠其后<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager.Add%2A>。  
   
- `OleUndoManager`类表示单个撤消堆栈实例。 因此，是每个被跟踪的撤消或重复的数据实体的一个撤消管理器对象。  
+   `OleUndoManager`类表示单个撤消堆栈实例。 因此，是每个被跟踪的撤消或重复的数据实体的一个撤消管理器对象。  
   
 > [!NOTE]
 >  文本编辑器中广泛使用的撤消管理器对象，它是文本编辑器中没有特定支持的通用组件。 如果你想要支持多级撤消或重做，可以使用此对象来执行此操作。  

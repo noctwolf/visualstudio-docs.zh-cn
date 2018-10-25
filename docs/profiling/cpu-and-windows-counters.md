@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8166645f9e767b63d22ebf36bb056c16d339131f
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 585fb2fa8d2662d1a2bec7915bf1f08a4dc771e4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865916"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -93,15 +93,15 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
 2. 执行下列操作之一：
 
-    -   单击“采样”，然后从“采样”事件列表中选择“性能计数器”。 CPU 计数器列在“可用的性能计数器”中。
+   - 单击“采样”，然后从“采样”事件列表中选择“性能计数器”。 CPU 计数器列在“可用的性能计数器”中。
 
-         **请注意**：单击“取消”可返回到上一个采样配置。
+      **请注意**：单击“取消”可返回到上一个采样配置。
 
      或
 
-    -   选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。
+   - 选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。
 
-         **请注意**：单击“取消”可返回到上一个计数器收集配置。
+      **请注意**：单击“取消”可返回到上一个计数器收集配置。
 
 #### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>查看当前平台上支持的 Windows 计数器列表的列表
 

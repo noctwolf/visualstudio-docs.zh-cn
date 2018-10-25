@@ -21,12 +21,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 76967e02d730b06438136bb0354ce5a67a648ea4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6661eeeeaa802e482dd540f7a7793186f917edf3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188651"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853800"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 复制文件的位置
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ ms.locfileid: "49188651"
   
 ### <a name="to-specify-a-publishing-location"></a>指定发布位置  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2. 单击**发布**选项卡。  
   
-3.  在中**发布位置**字段中，使用以下格式之一输入发布位置：  
+3. 在中**发布位置**字段中，使用以下格式之一输入发布位置：  
   
-    -   若要发布到文件共享或磁盘路径，通过使用 UNC 路径，或者输入的路径 (\\\Server\ApplicationName) 或文件路径 (C:\Deploy\ApplicationName)。  
+   - 若要发布到文件共享或磁盘路径，通过使用 UNC 路径，或者输入的路径 (\\\Server\ApplicationName) 或文件路径 (C:\Deploy\ApplicationName)。  
   
-    -   若要发布到 FTP 服务器，请使用格式 ftp://ftp.microsoft.com/ApplicationName 输入路径。  
+   - 若要发布到 FTP 服务器，请使用格式 ftp://ftp.microsoft.com/ApplicationName 输入路径。  
   
      请注意，文本必须位于**发布位置**框中使浏览 (**...**) 按钮正常工作。  
   

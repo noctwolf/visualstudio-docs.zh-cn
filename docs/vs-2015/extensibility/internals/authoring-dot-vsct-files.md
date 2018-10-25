@@ -15,12 +15,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 85a30c8987311ea8d6216312533dc70072c96f2c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b860e279696b4f8c325995ecd09fe257621adab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941329"
 ---
 # <a name="authoring-vsct-files"></a>创作。Vsct 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,159 +86,159 @@ ms.locfileid: "49283660"
   
 ##### <a name="to-define-ui-elements"></a>若要定义用户界面元素  
   
-1.  如果您要定义任何新的菜单、 子菜单、 快捷菜单或工具栏，添加`Menus`元素`Commands`元素。 然后，对于要创建每个菜单上，添加[菜单](../../extensibility/menu-element.md)元素`Menus`元素。  
+1. 如果您要定义任何新的菜单、 子菜单、 快捷菜单或工具栏，添加`Menus`元素`Commands`元素。 然后，对于要创建每个菜单上，添加[菜单](../../extensibility/menu-element.md)元素`Menus`元素。  
   
-     设置`guid`并`id`的属性`Menu`元素，并设置`type`的所需的菜单类型的属性。 此外可以设置`priority`特性来确定父组中的菜单的相对位置。  
+    设置`guid`并`id`的属性`Menu`元素，并设置`type`的所需的菜单类型的属性。 此外可以设置`priority`特性来确定父组中的菜单的相对位置。  
   
-    > [!NOTE]
-    >  `priority`属性不适用于工具栏和上下文菜单。  
+   > [!NOTE]
+   >  `priority`属性不适用于工具栏和上下文菜单。  
   
-2.  Visual Studio IDE 中的所有命令都必须直接子项的菜单和工具栏的命令组由都承载。 如果要向 IDE 添加新菜单或工具栏，它们必须包含新的命令组。 可能还向现有菜单和工具栏添加命令组，以便你命令可以直观地进行分组。  
+2. Visual Studio IDE 中的所有命令都必须直接子项的菜单和工具栏的命令组由都承载。 如果要向 IDE 添加新菜单或工具栏，它们必须包含新的命令组。 可能还向现有菜单和工具栏添加命令组，以便你命令可以直观地进行分组。  
   
-     当添加新的命令组时，必须首先创建`Groups`元素，然后将添加到它[组](../../extensibility/group-element.md)为每个命令组的元素。  
+    当添加新的命令组时，必须首先创建`Groups`元素，然后将添加到它[组](../../extensibility/group-element.md)为每个命令组的元素。  
   
-     设置`guid`并`id`每个属性`Group`元素，并设置`priority`特性来确定父菜单上的组的相对位置。 有关详细信息，请参阅[按钮创建可重用组](../../extensibility/creating-reusable-groups-of-buttons.md)。  
+    设置`guid`并`id`每个属性`Group`元素，并设置`priority`特性来确定父菜单上的组的相对位置。 有关详细信息，请参阅[按钮创建可重用组](../../extensibility/creating-reusable-groups-of-buttons.md)。  
   
-3.  如果您要向 IDE 添加新的命令，将添加`Buttons`元素`Commands`元素。 然后，对于每个命令，添加[按钮](../../extensibility/button-element.md)元素`Buttons`元素。  
+3. 如果您要向 IDE 添加新的命令，将添加`Buttons`元素`Commands`元素。 然后，对于每个命令，添加[按钮](../../extensibility/button-element.md)元素`Buttons`元素。  
   
-    1.  设置`guid`并`id`每个属性`Button`元素，并设置`type`的所需的按钮类型的属性。 此外可以设置`priority`特性来确定父组中的命令的相对位置。  
+   1. 设置`guid`并`id`每个属性`Button`元素，并设置`type`的所需的按钮类型的属性。 此外可以设置`priority`特性来确定父组中的命令的相对位置。  
   
-        > [!NOTE]
-        >  使用`type="button"`标准菜单命令和工具栏上的按钮。  
+      > [!NOTE]
+      >  使用`type="button"`标准菜单命令和工具栏上的按钮。  
   
-    2.  在中`Button`元素中，添加[字符串](../../extensibility/strings-element.md)元素，其中包含[ButtonText](../../extensibility/buttontext-element.md)元素和一个[CommandName](../../extensibility/commandname-element.md)元素。 `ButtonText`元素提供为菜单项或工具栏按钮的工具提示的文本标签。 `CommandName`元素提供要在命令中也使用的命令的名称。  
+   2. 在中`Button`元素中，添加[字符串](../../extensibility/strings-element.md)元素，其中包含[ButtonText](../../extensibility/buttontext-element.md)元素和一个[CommandName](../../extensibility/commandname-element.md)元素。 `ButtonText`元素提供为菜单项或工具栏按钮的工具提示的文本标签。 `CommandName`元素提供要在命令中也使用的命令的名称。  
   
-    3.  如果您的命令将具有一个图标，创建[图标](../../extensibility/icon-element.md)中的元素`Button`元素，并将设置其`guid`并`id`属性到`Bitmap`图标的元素。  
+   3. 如果您的命令将具有一个图标，创建[图标](../../extensibility/icon-element.md)中的元素`Button`元素，并将设置其`guid`并`id`属性到`Bitmap`图标的元素。  
   
-        > [!NOTE]
-        >  工具栏按钮必须具有图标。  
+      > [!NOTE]
+      >  工具栏按钮必须具有图标。  
   
-     有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)。  
+      有关详细信息，请参阅[MenuCommands 与。OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md)。  
   
-4.  如果你的命令的任何需要的图标，添加[位图](../../extensibility/bitmaps-element.md)元素`Commands`元素。 然后，对于每个图标，添加[位图](../../extensibility/bitmap-element.md)元素`Bitmaps`元素。 这是你在其中指定位图资源的位置。 有关详细信息，请参阅[添加到菜单命令的图标](../../extensibility/adding-icons-to-menu-commands.md)。  
+4. 如果你的命令的任何需要的图标，添加[位图](../../extensibility/bitmaps-element.md)元素`Commands`元素。 然后，对于每个图标，添加[位图](../../extensibility/bitmap-element.md)元素`Bitmaps`元素。 这是你在其中指定位图资源的位置。 有关详细信息，请参阅[添加到菜单命令的图标](../../extensibility/adding-icons-to-menu-commands.md)。  
   
- 您可以依赖子女教养结构正确放置大多数菜单、 组和命令。 对于非常大的命令集，或当菜单、 组或命令必须出现在多个位置中，我们建议您指定命令放置。  
+   您可以依赖子女教养结构正确放置大多数菜单、 组和命令。 对于非常大的命令集，或当菜单、 组或命令必须出现在多个位置中，我们建议您指定命令放置。  
   
 ##### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>若要依赖于在 IDE 中将 UI 元素的子级  
   
-1.  有关典型设置父级，创建`Parent`中每个元素`Menu`， `Group`，和`Command`在包中定义的元素。  
+1. 有关典型设置父级，创建`Parent`中每个元素`Menu`， `Group`，和`Command`在包中定义的元素。  
   
-     目标的`Parent`元素是菜单或将包含菜单上的组、 组或命令。  
+    目标的`Parent`元素是菜单或将包含菜单上的组、 组或命令。  
   
-    1.  设置`guid`属性的名称为`GuidSymbol`元素，用于定义设置的命令。 如果目标元素不是包的一部分，该命令集，使用的 guid 对应的.vsct 文件中定义。  
+   1.  设置`guid`属性的名称为`GuidSymbol`元素，用于定义设置的命令。 如果目标元素不是包的一部分，该命令集，使用的 guid 对应的.vsct 文件中定义。  
   
-    2.  设置`id`属性以匹配`id`目标菜单或组的属性。 有关菜单和由 Visual Studio 公开的组的列表，请参阅[Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。  
+   2.  设置`id`属性以匹配`id`目标菜单或组的属性。 有关菜单和由 Visual Studio 公开的组的列表，请参阅[Guid 和 Id 的 Visual Studio 菜单](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)或[Guid 和 Id 的 Visual Studio 工具栏](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)。  
   
- 如果有大量的 UI 元素将在 IDE 中，或者您有应出现在多个位置的元素，定义在其位置[CommandPlacements](../../extensibility/commandplacements-element.md)元素，如以下步骤中所示。  
+   如果有大量的 UI 元素将在 IDE 中，或者您有应出现在多个位置的元素，定义在其位置[CommandPlacements](../../extensibility/commandplacements-element.md)元素，如以下步骤中所示。  
   
 ##### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>若要使用命令放置在 IDE 中将 UI 元素  
   
-1.  之后`Commands`元素中，添加`CommandPlacements`元素。  
+1. 之后`Commands`元素中，添加`CommandPlacements`元素。  
   
-2.  在中`CommandPlacements`元素中，添加`CommandPlacement`为每个菜单、 组或命令放置的元素。  
+2. 在中`CommandPlacements`元素中，添加`CommandPlacement`为每个菜单、 组或命令放置的元素。  
   
-     每个`CommandPlacement`元素或`Parent`元素放在一个 IDE 位置放置一个菜单、 组或命令。 UI 元素只能有一个父级，但它可以具有多个命令放置。 若要将 UI 元素放在多个位置，将添加`CommandPlacement`为每个位置的元素。  
+    每个`CommandPlacement`元素或`Parent`元素放在一个 IDE 位置放置一个菜单、 组或命令。 UI 元素只能有一个父级，但它可以具有多个命令放置。 若要将 UI 元素放在多个位置，将添加`CommandPlacement`为每个位置的元素。  
   
-3.  设置`guid`并`id`每个属性`CommandPlacement`元素到托管的菜单或组，就像您一样`Parent`元素。 您还可以设置`priority`特性来确定的 UI 元素的相对位置。  
+3. 设置`guid`并`id`每个属性`CommandPlacement`元素到托管的菜单或组，就像您一样`Parent`元素。 您还可以设置`priority`特性来确定的 UI 元素的相对位置。  
   
- 可以混合使用通过设置父级的位置和命令位置。 但是，对于非常大的命令集，我们建议使用仅命令放置。  
+   可以混合使用通过设置父级的位置和命令位置。 但是，对于非常大的命令集，我们建议使用仅命令放置。  
   
 ### <a name="adding-specialized-behaviors"></a>添加专用的行为  
  可以使用[CommandFlag](../../extensibility/command-flag-element.md)元素若要修改的行为的菜单和命令，例如，若要更改其外观和可见性。 可能还会影响当命令是可见的通过使用[VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)，或通过使用添加键盘快捷方式[键绑定](../../extensibility/keybindings-element.md)。 某些类型的菜单和命令已拥有的专用内置的行为。  
   
 ##### <a name="to-add-specialized-behaviors"></a>若要添加专用的行为  
   
-1.  若要在加载解决方案时显示仅在某些 UI 上下文中，例如，UI 元素，使用可见性限制。  
+1. 若要在加载解决方案时显示仅在某些 UI 上下文中，例如，UI 元素，使用可见性限制。  
   
-    1.  之后`Commands`元素中，添加`VisibilityConstraints`元素。  
+   1.  之后`Commands`元素中，添加`VisibilityConstraints`元素。  
   
-    2.  若要将限制每个 UI 项，将添加[VisibilityItem](../../extensibility/visibilityitem-element.md)元素。  
+   2.  若要将限制每个 UI 项，将添加[VisibilityItem](../../extensibility/visibilityitem-element.md)元素。  
   
-    3.  每个`VisibilityItem`元素中，设置`guid`并`id`与菜单、 组或命令和设置的属性`context`属性为所需的 UI 上下文中定义<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>类。 有关详细信息，请参阅[VisibilityItem 元素](../../extensibility/visibilityitem-element.md)。  
+   3.  每个`VisibilityItem`元素中，设置`guid`并`id`与菜单、 组或命令和设置的属性`context`属性为所需的 UI 上下文中定义<xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>类。 有关详细信息，请参阅[VisibilityItem 元素](../../extensibility/visibilityitem-element.md)。  
   
-2.  若要在代码中设置的可见性或可用性 UI 项，使用一个或多个以下的命令标志：  
+2. 若要在代码中设置的可见性或可用性 UI 项，使用一个或多个以下的命令标志：  
   
-    -   DefaultDisabled  
+   - DefaultDisabled  
   
-    -   DefaultInvisible  
+   - DefaultInvisible  
   
-    -   DynamicItemStart  
+   - DynamicItemStart  
   
-    -   DynamicVisibility  
+   - DynamicVisibility  
   
-    -   NoShowOnMenuController  
+   - NoShowOnMenuController  
   
-    -   NotInTBList  
-  
-     有关详细信息，请参阅[Command Flag 元素](../../extensibility/command-flag-element.md)。  
-  
-3.  若要更改元素出现，或动态更改其外观的方式，使用一个或多个以下的命令标志：  
-  
-    -   AlwaysCreate  
-  
-    -   CommandWellOnly  
-  
-    -   DefaultDocked  
-  
-    -   DontCache  
-  
-    -   DynamicItemStart  
-  
-    -   FixMenuController  
-  
-    -   IconAndText  
-  
-    -   pict  
-  
-    -   StretchHorizontally  
-  
-    -   TextMenuUseButton  
-  
-    -   TextChanges  
-  
-    -   TextOnly  
+   - NotInTBList  
   
      有关详细信息，请参阅[Command Flag 元素](../../extensibility/command-flag-element.md)。  
   
-4.  若要更改元素如何接收命令时做出响应，请使用一个或多个以下的命令标志：  
+3. 若要更改元素出现，或动态更改其外观的方式，使用一个或多个以下的命令标志：  
   
-    -   AllowParams  
+   - AlwaysCreate  
   
-    -   CaseSensitive  
+   - CommandWellOnly  
   
-    -   CommandWellOnly  
+   - DefaultDocked  
   
-    -   筛选键  
+   - DontCache  
   
-    -   NoAutoComplete  
+   - DynamicItemStart  
   
-    -   NoButtonCustomize  
+   - FixMenuController  
   
-    -   NoKeyCustomize  
+   - IconAndText  
   
-    -   NoToolbarClose  
+   - pict  
   
-    -   PostExec  
+   - StretchHorizontally  
   
-    -   RouteToDocs  
+   - TextMenuUseButton  
   
-    -   TextIsAnchorCommand  
+   - TextChanges  
+  
+   - TextOnly  
   
      有关详细信息，请参阅[Command Flag 元素](../../extensibility/command-flag-element.md)。  
   
-5.  若要将依赖于菜单的键盘快捷方式附加到菜单或菜单上的项，添加一个 & 号字符 (&) 在`ButtonText`菜单或菜单项的元素。 打开父菜单时，遵循 & 符的字符是活动的键盘快捷方式。  
+4. 若要更改元素如何接收命令时做出响应，请使用一个或多个以下的命令标志：  
   
-6.  若要将独立于菜单的键盘快捷方式附加到命令，使用[键绑定](../../extensibility/keybindings-element.md)。 有关详细信息，请参阅[KeyBinding 元素](../../extensibility/keybinding-element.md)。  
+   - AllowParams  
   
-7.  若要将本地化的菜单文本，请使用`LocCanonicalName`元素。 有关详细信息，请参阅[字符串元素](../../extensibility/strings-element.md)。  
+   - CaseSensitive  
   
- 一些菜单和按钮的类型包括专用的行为。 下表介绍一些专用的菜单和按钮类型。 对于其他类型，请参阅`types`属性中的说明[Menu Element](../../extensibility/menu-element.md)， [Button 元素](../../extensibility/button-element.md)，和[组合元素](../../extensibility/combo-element.md)。  
+   - CommandWellOnly  
   
- 组合框  
- 组合框进行了可以使用工具栏的下拉列表。 若要将组合框添加到 UI 中，创建[Combos](../../extensibility/combos-element.md)中的元素`Commands`元素。 然后将添加到`Combos`元素`Combo`添加每个组合框的元素。 `Combo` 元素具有相同的属性和子级用作`Button`元素并且还要`DefaultWidth`和`idCommandList`属性。 `DefaultWidth`属性以像素为单位设置宽度和`idCommandList`属性指向用于填充组合框的命令 ID。 有关详细信息，请参阅`Combo`元素文档。  
+   - 筛选键  
   
- MenuController  
- 菜单控制器是包含它旁边的箭头的按钮。 单击箭头将打开一个列表。 若要将菜单控制器添加到 UI 中，创建`Menu`元素，并设置其`type`归于**MenuController**或**MenuControllerLatched**，取决于所需的行为。 若要填充菜单控制器，请将其设置为父级的`Group`元素。 菜单控制器将在其下拉列表显示该组的所有子级。  
+   - NoAutoComplete  
+  
+   - NoButtonCustomize  
+  
+   - NoKeyCustomize  
+  
+   - NoToolbarClose  
+  
+   - PostExec  
+  
+   - RouteToDocs  
+  
+   - TextIsAnchorCommand  
+  
+     有关详细信息，请参阅[Command Flag 元素](../../extensibility/command-flag-element.md)。  
+  
+5. 若要将依赖于菜单的键盘快捷方式附加到菜单或菜单上的项，添加一个 & 号字符 (&) 在`ButtonText`菜单或菜单项的元素。 打开父菜单时，遵循 & 符的字符是活动的键盘快捷方式。  
+  
+6. 若要将独立于菜单的键盘快捷方式附加到命令，使用[键绑定](../../extensibility/keybindings-element.md)。 有关详细信息，请参阅[KeyBinding 元素](../../extensibility/keybinding-element.md)。  
+  
+7. 若要将本地化的菜单文本，请使用`LocCanonicalName`元素。 有关详细信息，请参阅[字符串元素](../../extensibility/strings-element.md)。  
+  
+   一些菜单和按钮的类型包括专用的行为。 下表介绍一些专用的菜单和按钮类型。 对于其他类型，请参阅`types`属性中的说明[Menu Element](../../extensibility/menu-element.md)， [Button 元素](../../extensibility/button-element.md)，和[组合元素](../../extensibility/combo-element.md)。  
+  
+   组合框  
+   组合框进行了可以使用工具栏的下拉列表。 若要将组合框添加到 UI 中，创建[Combos](../../extensibility/combos-element.md)中的元素`Commands`元素。 然后将添加到`Combos`元素`Combo`添加每个组合框的元素。 `Combo` 元素具有相同的属性和子级用作`Button`元素并且还要`DefaultWidth`和`idCommandList`属性。 `DefaultWidth`属性以像素为单位设置宽度和`idCommandList`属性指向用于填充组合框的命令 ID。 有关详细信息，请参阅`Combo`元素文档。  
+  
+   MenuController  
+   菜单控制器是包含它旁边的箭头的按钮。 单击箭头将打开一个列表。 若要将菜单控制器添加到 UI 中，创建`Menu`元素，并设置其`type`归于**MenuController**或**MenuControllerLatched**，取决于所需的行为。 若要填充菜单控制器，请将其设置为父级的`Group`元素。 菜单控制器将在其下拉列表显示该组的所有子级。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)   

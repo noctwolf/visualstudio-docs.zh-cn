@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0d2d7d14b1e87a584da9f789c5092373db5519d5
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b5e66be099734008e09456cbd1e0f4fb4b0d5c9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327136"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854281"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>创建项模板和用于 SharePoint 项目项的项目模板
   在定义的自定义 SharePoint 项目项类型时，可以将其与项模板或项目模板。 这种关联允许其他开发人员使用 Visual Studio 中的项目项。 此外可以创建模板向导。
@@ -47,14 +47,16 @@ ms.locfileid: "36327136"
 
  下表列出了一些最常见的可选文件可以包括在项模板。 某些类型的项目项可能需要此处未列出的其他文件。
 
-|可选文件|描述|
-|-------------------|-----------------|
-|*Elements.xml*|一个*Feature 元素*文件。 此文件定义的 UI 和行为的自定义项创建的项目项。 每种类型的自定义项，如列表实例、 内容类型或自定义操作，有不同的架构，用于定义此文件的内容。 有关详细信息，请参阅[构建基块： 功能](http://go.microsoft.com/fwlink/?LinkId=169183)并[功能架构](http://go.microsoft.com/fwlink/?LinkId=169192)。|
-|*Schema.xml*|列表定义架构文件。 有关详细信息，请参阅[构建基块： 列表和文档库](http://go.microsoft.com/fwlink/?LinkId=177792)并[Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793)。|
-|*.webpart*|一个*Web 部件定义*文件。 此文件包含 Web 部件的属性设置。 有关详细信息，请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkId=177791)。|
-|*.ascx*|ASP.NET 用户控件文件。 此文件定义可视 Web 部件的 UI。|
-|*.aspx*|ASP.NET 页文件。 此文件包含定义应用程序页上的 XML 标记。|
-|*.cs*或 *.vb*文件|这些代码文件定义有一个编程模型，可以从 Visual C# 或 Visual Basic 代码，如应用程序页、 Web 部件和工作流访问的 SharePoint 自定义的行为。|
+
+| 可选文件 | 描述 |
+|----------------------| - |
+| *Elements.xml* | 一个*Feature 元素*文件。 此文件定义的 UI 和行为的自定义项创建的项目项。 每种类型的自定义项，如列表实例、 内容类型或自定义操作，有不同的架构，用于定义此文件的内容。 有关详细信息，请参阅[构建基块： 功能](http://go.microsoft.com/fwlink/?LinkId=169183)并[功能架构](http://go.microsoft.com/fwlink/?LinkId=169192)。 |
+| *Schema.xml* | 列表定义架构文件。 有关详细信息，请参阅[构建基块： 列表和文档库](http://go.microsoft.com/fwlink/?LinkId=177792)并[Schema.xml](http://go.microsoft.com/fwlink/?LinkId=177793)。 |
+| *.webpart* | 一个*Web 部件定义*文件。 此文件包含 Web 部件的属性设置。 有关详细信息，请参阅[构建基块： Web 部件](http://go.microsoft.com/fwlink/?LinkId=177791)。 |
+| *.ascx* | ASP.NET 用户控件文件。 此文件定义可视 Web 部件的 UI。 |
+| *.aspx* | ASP.NET 页文件。 此文件包含定义应用程序页上的 XML 标记。 |
+| *.cs*或 *.vb*文件 | 这些代码文件定义有一个编程模型，可以从 Visual C# 或 Visual Basic 代码，如应用程序页、 Web 部件和工作流访问的 SharePoint 自定义的行为。 |
+
 ## <a name="create-project-templates"></a>创建项目模板
  创建 SharePoint 项目模板，请时始终是必需的并可选文件，某些类型的项目可能会使用一些文件。 通常情况下，SharePoint 项目包含至少一个 SharePoint 项目项。 但是，这不是必需的。 例如，可以定义旨在仅用于部署在其他项目中创建 SharePoint 解决方案的 SharePoint 项目模板。
 

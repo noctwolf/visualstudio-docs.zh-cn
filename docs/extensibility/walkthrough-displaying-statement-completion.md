@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fa6a1547a604e5d073c4e45c7769c68e0674d74
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: bdd96c124dafabf5584dfa13547cdea1e2b843b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497737"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879319"
 ---
 # <a name="walkthrough-display-statement-completion"></a>演练： 显示语句完成
 可以通过定义您想要提供完成的标识符，然后触发完成会话实现的基于语言的语句结束。 可以在语言服务的上下文中定义的语句结束、 定义您自己的文件扩展名和内容类型，然后显示完成只是该类型。 或者，可以触发的现有内容类型完成 — 例如，"纯文本"。 本演练演示如何触发"纯文本"内容类型，这是文本文件的内容类型的语句完成。 "Text"内容类型是所有其他内容类型，包括代码和 XML 文件的上级。  
@@ -34,7 +34,7 @@ ms.locfileid: "39497737"
   
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`CompletionTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `CompletionTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "39497737"
   
 ### <a name="to-implement-the-completion-source"></a>若要实现完成源  
   
-1.  添加一个类文件并将其命名`TestCompletionSource`。  
+1.  添加一个类文件并将其命名为 `TestCompletionSource`。  
   
 2.  添加这些导入：  
   
@@ -148,48 +148,48 @@ ms.locfileid: "39497737"
   
 #### <a name="to-implement-the-completion-command-handler"></a>若要实现完成命令处理程序  
   
-1.  添加名为的类`TestCompletionCommandHandler`实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1. 添加名为的类`TestCompletionCommandHandler`实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
-     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+    [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+    [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  添加私有字段 （向其传递该命令） 的下一个命令处理程序、 文本视图、 命令处理程序提供程序，（这样就能够对各种服务的访问），并完成会话：  
+2. 添加私有字段 （向其传递该命令） 的下一个命令处理程序、 文本视图、 命令处理程序提供程序，（这样就能够对各种服务的访问），并完成会话：  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
-     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+    [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+    [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  添加设置文本视图和提供程序字段中，并将命令添加到命令链的构造函数：  
+3. 添加设置文本视图和提供程序字段中，并将命令添加到命令链的构造函数：  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
-     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+    [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+    [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法并传递该命令传递给：  
+4. 实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>方法并传递该命令传递给：  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
-     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+    [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+    [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 当此方法将接收击键时，它必须执行这些操作之一：  
+5. 实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 当此方法将接收击键时，它必须执行这些操作之一：  
   
-    -   允许的字符写入到缓冲区，并触发或筛选完成。 （打印字符执行此操作。）  
+   - 允许的字符写入到缓冲区，并触发或筛选完成。 （打印字符执行此操作。）  
   
-    -   提交完成，但不是允许写入到缓冲区的字符。 (空格、**选项卡**，并**Enter**显示完成会话时执行此操作。)  
+   - 提交完成，但不是允许写入到缓冲区的字符。 (空格、**选项卡**，并**Enter**显示完成会话时执行此操作。)  
   
-    -   允许要传递到下一个处理程序的命令。 （所有其他命令。）  
+   - 允许要传递到下一个处理程序的命令。 （所有其他命令。）  
   
      由于此方法可能会显示 UI，请调用<xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A>以确保它不调用自动化上下文中：  
   
      [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
      [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  此代码是触发完成会话的私有方法：  
+6. 此代码是触发完成会话的私有方法：  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
-     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+    [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+    [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  下一个示例是一个专用方法，从取消订阅<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed>事件：  
+7. 下一个示例是一个专用方法，从取消订阅<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed>事件：  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
-     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+    [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+    [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
 ## <a name="build-and-test-the-code"></a>生成和测试代码  
  若要测试此代码，生成 CompletionTest 解决方案并在实验实例中运行它。  

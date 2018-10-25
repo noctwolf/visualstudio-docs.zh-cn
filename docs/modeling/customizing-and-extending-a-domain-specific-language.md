@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ba8c37e4fd5e62a0f8d05d735fb991c86937698d
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: a49d9998aa319e66c22baa345864bc473f733c87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816690"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>自定义和扩展域特定语言
 Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定义建模工具的多个级别：
@@ -35,7 +35,7 @@ Visual Studio 建模和可视化效果 SDK (VMSDK) 提供了可以在其中定�
 ## <a name="customShapes"></a> 在本部分中
 
 |若要实现此效果|请参阅本主题|
-|----------------------------|-------------------------|
+|-|-|
 |允许用户设置形状的颜色和样式属性。|右键单击形状或连接符类、 指向**公开添加**，单击的项目。<br /><br /> 请参阅[自定义图表的演示](../modeling/customizing-presentation-on-the-diagram.md)。|
 |不同的模型元素的类在关系图中，共享属性，如初始高度和宽度、 颜色、 工具提示类似。|使用形状或连接符类之间的继承。 派生的形状和派生的域类之间的映射继承父项的映射详细的信息。<br /><br /> 或者，将不同的域类映射到相同的形状类。|
 |通过不同的形状上下文可显示的模型元素的类。|将多个形状类映射到同一个域类。 生成解决方案时，遵循错误报告，并提供请求的代码来决定要使用哪些形状。|

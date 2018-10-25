@@ -16,12 +16,12 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 90a99ca6f577ed7a04c9b1623c767484e592b4eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 555234ae1c35c496b1fb5b1361efec0100479a35
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893684"
 ---
 # <a name="creating-options-pages"></a>创建选项页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,17 +51,17 @@ ms.locfileid: "49243082"
 ## <a name="implementing-dialogpage-class"></a>实现 dialogpage 派生类  
  对象提供的 VSPackage 的实现<xref:Microsoft.VisualStudio.Shell.DialogPage>的派生的类型可以利用以下继承的功能：  
   
--   默认用户界面窗口。  
+- 默认用户界面窗口。  
   
--   一个默认持久性机制可用，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>应用于类，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>属性设置为`true`为<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于类。  
+- 一个默认持久性机制可用，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>应用于类，或者如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>属性设置为`true`为<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>应用于类。  
   
--   自动化的支持。  
+- 自动化的支持。  
   
- 一个对象，实现的最低要求**工具选项**页上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是添加了公共属性。  
+  一个对象，实现的最低要求**工具选项**页上使用<xref:Microsoft.VisualStudio.Shell.DialogPage>是添加了公共属性。  
   
- 如果作为正确注册的类**工具选项**页上提供程序，则其公共属性是可在上找到**选项**部分**工具**菜单中的窗体属性网格。  
+  如果作为正确注册的类**工具选项**页上提供程序，则其公共属性是可在上找到**选项**部分**工具**菜单中的窗体属性网格。  
   
- 可以重写所有这些默认的功能。 例如，若要创建更复杂的用户界面需要仅重写的默认实现<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
+  可以重写所有这些默认的功能。 例如，若要创建更复杂的用户界面需要仅重写的默认实现<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
   
 ## <a name="example"></a>示例  
  以下内容是简单的"你好 world"实现的选项页。 将以下代码添加到默认项目创建的 Visual Studio 包模板与**菜单命令**选项处于选中状态充分地演示选项页的功能。  

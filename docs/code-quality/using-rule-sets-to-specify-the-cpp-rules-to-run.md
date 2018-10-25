@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 432246ed1cbb11589e9a42a5fce90cd2e7239223
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a2bd14e4d052179df8a61dfa4b418f07b0f31e3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670416"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893593"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>使用规则集指定运行的 c + + 规则
 
@@ -34,11 +34,11 @@ ms.locfileid: "35670416"
 
 3. 在中**规则集**下拉列表中，执行下列任一操作：
 
-    - 选择要自定义的规则集。
+   - 选择要自定义的规则集。
 
      \- 或 -
 
-    - 选择**\<浏览...>** 指定的现有规则集不在列表中。
+   - 选择**\<浏览...>** 指定的现有规则集不在列表中。
 
 4. 选择**打开**若要在规则集编辑器中显示的规则。
 

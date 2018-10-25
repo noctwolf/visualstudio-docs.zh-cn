@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ba201b4518b350a96c4c4057f6945d24ea603f0
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 07031432218f2d4e0eb037582f2b1f5a76193cdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31953918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879749"
 ---
 # <a name="options-page-environment-node-properties"></a>“选项”页 ->“环境”节点属性
 本文档描述了与“选项”对话框的“环境”类别 `DTE.Properties("Environment", <Property Page>)` 关联的页面（或属性集合）。 每个小节的标题都是用于访问属性集合的调用，而每个小节中的表列出了集合中的属性。
@@ -27,7 +27,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "General")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ShowStatusBar|Get/Set (Boolean)|确定状态栏是否可见。|
 |WindowMenuContainsNItems|Get/Set (Short)|确定如何将文档窗口包含在窗口菜单的底部。|
 |MRUListContainsNItems|Get/Set (Short)|确定“最近使用的”子菜单中显示的文件数量。|
@@ -42,7 +42,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |MacrosEnabled|Get/Set (Boolean)|允许宏运行。|
 |AddinsEnabled|Get/Set (Boolean)|允许外接程序加载。|
 |LoadAddinsFromTheWeb|Get/Set (Boolean)|允许外接程序从 Web 上的 URL 进行加载。|
@@ -51,7 +51,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "Documents")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Boolean)|确定打开一个新的文件是否会重新使用当前文档窗口（如果已保存当前的文档）。 `false` 意味着始终为每个打开的文档打开新的文档窗口。|
 |DetectFileChangesOutsideIDE|Get/Set (Boolean)|确定当操作系统通知 IDE 文件已在磁盘上修改了时，环境是否会自动重新加载在 IDE 中打开的文件。|
 |AutoloadExternalChanges|Get/Set (Boolean)|确定检测到的对打开的文档的外部修改是否会自动重新加载修改的文件（如果未修改打开的文档）。 如果打开的文档已修改并且此属性是 `true`，则 IDE 会将此属性作为 `false` 属性进行提示。|
@@ -68,7 +68,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "ExtensionManager")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Boolean)|在管理员凭据下运行 Visual Studio 时加载每用户扩展。 更改此值后必须重新启动 visual Studio。|
 |EnableOnline|Get/Set (Boolean)|允许访问 Visual Studio Marketplace 上的扩展。|
 |AutomaticallyCheckForUpdates|Get/Set (Boolean)|自动检查已安装扩展的更新。|
@@ -77,7 +77,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "FindAndReplace")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ShowWarningMessages|Get/Set (Boolean)|显示警告消息。|
 |InitializeFromEditor|Get/Set (Boolean)|使用编辑器中的文本自动填充“查找内容”框。|
 |ShowMessageBoxes|Get/Set (Boolean)|显示信息性消息。|
@@ -87,7 +87,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "Import and Export Settings")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |TrackTeamSettings|Get/Set (Boolean)|使用通过 TeamSettingsFile 指定的文件中的设置。|
 |TeamSettingsFile|Get/Set (String)|具有团队设置的文件的名称。|
 |AutoSaveFile|Get/Set (String)|用户设置自动保存在其中的文件的名称。|
@@ -96,21 +96,21 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "International")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |语言|Get/Set (String)|Visual Studio 的当前语言的 LCID 值。|
 
 ## <a name="keyboard"></a>键盘
  `DTE.Properties("Environment", "Keyboard")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |方案|Get/Set (String)|返回一个字符串，它包含一个内置的方案、一个包含加载的或“（默认的）”（如果没有加载 .vsk 文件） .vsk 文件的完整路径的字符串。|
 
 ## <a name="projects-and-solution"></a>项目和解决方案
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |OnRunOrPreview|Get/Set (String)|确定在预览或运行生成的项目之前 IDE 是否保存所有内容。|
 |ProjectsLocation|Get/Set (String)|确定默认目录，其中“添加项目”对话框将保存新的项目。|
 |ShowOutputWindowBeforeBuild|Get/Set (Boolean)|决定开始生成是否显示“输出”窗口。|
@@ -133,7 +133,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "Startup")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |OnStartUp|Get/Set (Enum)|从 <xref:EnvDTE.vsStartUp> 启动时要进行的操作，值为 0 到 5：<br /><br /> -   0：打开主页<br />-   1：加载上次加载的解决方案<br />-   2：显示“打开项目”对话框<br />-   3：显示“新建项目”对话框<br />-   4：显示空环境<br />-   5：显示起始页|
 |StartPageRSSUrl|Get/Set (String)|启动时使用的 RSS 源的 URL。|
 |StartPageRefreshDownloadedContent|Get/Set (Boolean)|在每次经过 StartPageRefreshInterval 中指定的间隔后刷新起始页。|
@@ -143,7 +143,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "TaskList")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Boolean)|指定从“任务列表”删除任务时是否显示确认框。|
 |WarnOnAddingHiddenItem|Get/Set (Boolean)|指定在添加不会显示的用户任务时是否收到警告。|
 |DontShowFilePaths|Get/Set (Boolean)|指定是否在任务列表中显示完整文件路径。|
@@ -153,7 +153,7 @@ ms.locfileid: "31953918"
  `DTE.Properties("Environment", "WebBrowser")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |HomePage|Get/Set (String)|表示主页 URL。|
 |SearchPage|Get/Set (String)|表示搜索页 URL。|
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource>（源、设计、外部）。|

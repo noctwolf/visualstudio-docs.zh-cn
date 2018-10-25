@@ -1,5 +1,5 @@
 ---
-title: DataKind |Microsoft 文档
+title: DataKind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3de9ef6128c3cd5ca6eae80a257b3dc2982cd0f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8f2b46e420db8addf19ef8694112058bdb8b2f91
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867619"
 ---
 # <a name="datakind"></a>DataKind
-指示数据值的特定范围。  
+指示特定的数据值范围。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,37 +43,37 @@ enum DataKind {
   
 ## <a name="elements"></a>元素  
  DataIsUnknown  
- 无法确定 data 符号。  
+ 不能确定数据符号。  
   
  DataIsLocal  
  数据项是一个本地变量。  
   
  DataIsStaticLocal  
- 数据项是静态局部变量。  
+ 数据项是一个静态本地变量。  
   
  DataIsParam  
- 数据项是正式参数。  
+ 数据项是正式的参数。  
   
  DataIsObjectPtr  
  数据项是一个对象指针 (`this`)。  
   
  DataIsFileStatic  
- 数据项是文件范围内的变量。  
+ 数据项是一个文件范围内的变量。  
   
  DataIsGlobal  
- 数据项是全局变量。  
+ 数据项是一个全局变量。  
   
  DataIsMember  
  数据项是一个对象成员变量。  
   
  DataIsStaticMember  
- 数据项是类的静态变量。  
+ 数据项是一个类静态变量。  
   
  DataIsConstant  
- 数据项是一个常量值。  
+ 数据项是常量值。  
   
 ## <a name="remarks"></a>备注  
- 此枚举中的值由[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。  
+ 返回此枚举中的值[idiasymbol:: Get_datakind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： cvconst.h  

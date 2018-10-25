@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a25c50eaf3f0f5e31e6a3085967f0b6bd5f1055c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f49ab702a411c1d5205be8c626ce1032e57ab4ce
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876511"
 ---
 # <a name="cpu-usage"></a>CPU 使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ ms.locfileid: "49208685"
   
 ##  <a name="BKMK_Collect_CPU_usage_data"></a> 收集 CPU 使用量数据  
   
-1.  在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
+1. 在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
   
-     ![选择发布和本地计算机](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![选择发布和本地计算机](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   在“发布”  模式下运行应用能更清晰地看到实际的应用性能。  
+   -   在“发布”  模式下运行应用能更清晰地看到实际的应用性能。  
   
-    -   在本地计算机上运行应用可最佳复制安装的应用的执行过程。  
+   -   在本地计算机上运行应用可最佳复制安装的应用的执行过程。  
   
-    -   如果从远程设备收集数据，则可直接在该设备上运行应用，而不通过使用远程桌面连接运行。  
+   -   如果从远程设备收集数据，则可直接在该设备上运行应用，而不通过使用远程桌面连接运行。  
   
-    -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
+   -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2. 在“调试”  菜单上，选择“性能探查器...” 。  
   
-3.  选择“CPU 使用率”  ，然后选择“启动” 。  
+3. 选择“CPU 使用率”  ，然后选择“启动” 。  
   
-     ![选择 CPU 使用率](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![选择 CPU 使用率](../profiling/media/cpuuse-lib-choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
+4. 启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
   
-5.  在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
+5. 在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
   
- ![停止 CpuUsage 数据收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 数据收集](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具可分析数据并显示报告。  
+   CPU 使用量工具可分析数据并显示报告。  
   
- ![CpuUsage 报告](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 报告](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量报告  
   

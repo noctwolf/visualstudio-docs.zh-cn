@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c589e58fb1e5b6a63706889de666d4e622f0ceb5
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180238"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837134"
 ---
 # <a name="edit-load-test-scenarios"></a>编辑负载测试方案
 
@@ -46,7 +46,7 @@ ms.locfileid: "39180238"
 ## <a name="tasks"></a>任务
 
 |任务|相关主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |在方案中添加人为交互暂停：思考时间用于模拟导致人们在与网站执行各种交互之间会进行等待的人类行为。 Web 性能测试中的各个请求之间以及负载测试方案的各个测试迭代之间均会产生思考时间。 在负载测试中使用思考时间对于创建更为精确的负载模拟很有用。|-   [编辑思考时间以模拟网站人工交互延迟](../test/edit-think-times-in-load-test-scenarios.md)|
 |**为方案指定虚拟用户数：** 可以配置负载模式属性以指定在负载测试期间如何调整模拟的用户负载。 可获取三个内置负载模式：常量负载模式、分级负载模式和基于目标的负载模式。 根据负载测试目标，选择负载模式并将属性调整为适当的级别。|-   [编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**配置在方案中的一位虚拟用户运行某一测试的概率：** 使用测试组合可以指定在负载测试方案中，一位虚拟用户运行一个给定测试的概率。 这样可以更逼真地模拟负载。 应用程序可以有多个工作流而不是只得有一个，这样可以更逼真地模拟最终用户与应用程序的交互方式。|-   [编辑文本组合模型](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|

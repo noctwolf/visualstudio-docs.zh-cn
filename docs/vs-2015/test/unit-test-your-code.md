@@ -17,12 +17,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 59d0de3dd53d7d9ab3a54fc11eb50666d39dfdc7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f79fb0ac4945253f1a10ce98a7e1ed17eaa6de63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950415"
 ---
 # <a name="unit-test-your-code"></a>单元测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49231213"
   
  单元测试工具包括：  
   
-1.  **测试资源管理器。** 使用“测试资源管理器”可运行单元测试并查看结果。 “测试资源管理器”可以使用任何单元测试框架，包括具有该资源管理器的适配器的第三方框架。  
+1. **测试资源管理器。** 使用“测试资源管理器”可运行单元测试并查看结果。 “测试资源管理器”可以使用任何单元测试框架，包括具有该资源管理器的适配器的第三方框架。  
   
-2.  **托管代码的 Microsoft 单元测试框架。** 托管代码的 Microsoft 单元测试框架随 Visual Studio 安装并提供测试 .NET 代码的框架。  
+2. **托管代码的 Microsoft 单元测试框架。** 托管代码的 Microsoft 单元测试框架随 Visual Studio 安装并提供测试 .NET 代码的框架。  
   
-3.  **C++ 的 Microsoft 单元测试框架。** C++ 的 Microsoft 单元测试框架随 Visual Studio 安装并提供测试本机代码的框架。  
+3. **C++ 的 Microsoft 单元测试框架。** C++ 的 Microsoft 单元测试框架随 Visual Studio 安装并提供测试本机代码的框架。  
   
-4.  **代码覆盖率工具。** 你可以确定单元测试从“测试资源管理器”中的一个命令执行的产品代码数量。  
+4. **代码覆盖率工具。** 你可以确定单元测试从“测试资源管理器”中的一个命令执行的产品代码数量。  
   
-5.  **Microsoft Fakes 隔离框架。** Microsoft Fakes 隔离框架可以为创建所测试代码中的依赖关系的产品和系统代码创建替代类和方法。 通过实施函数的假委托，可以控制依赖对象的行为和输出。  
+5. **Microsoft Fakes 隔离框架。** Microsoft Fakes 隔离框架可以为创建所测试代码中的依赖关系的产品和系统代码创建替代类和方法。 通过实施函数的假委托，可以控制依赖对象的行为和输出。  
   
- 还可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 浏览 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。  
+   还可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 浏览 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。  
   
 ## <a name="key-tasks"></a>关键任务  
  下面的主题可帮助你了解和创建单元测试：  

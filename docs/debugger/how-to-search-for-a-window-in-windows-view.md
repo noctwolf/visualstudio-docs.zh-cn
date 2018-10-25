@@ -1,5 +1,5 @@
 ---
-title: 如何： 在窗口视图中的窗口搜索 |Microsoft 文档
+title: 如何： 搜索在 Windows 视图窗口 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,41 +12,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4333a79e76358216ce87697975dcb54173570534
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c187c3a4b8086b5b991f7288f2686d6010e79262
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473431"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927393"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
-你可以通过将其句柄、 标题、 类或其标题和类的组合用作搜索条件来搜索特定窗口在窗口视图中。 你还可以指定搜索的初始方向。 在对话框中的字段将显示所选的窗口的属性的窗口树中。  
+您可以使用其句柄、 标题、 类或其标题和类的组合作为搜索条件搜索 Windows 视图中的特定窗口。 此外可以指定搜索的初始传递方向。 在对话框中的字段将窗口树中显示所选的窗口的属性。  
   
- 使用已扩展到第二个级别 (所有 windows 桌面的子级)、 树启动，以便可以确定按类名和标题的桌面级窗口。 一旦你已选择桌面级窗口，你可以展开该级别以查找特定子窗口。  
+ 开头到第二个级别 (所有 windows 桌面的子级)，展开树，以便可以确定由其类名称和标题的桌面级别 windows。 一旦您选择了一个桌面级别窗口，您可以展开该级别以查找特定子窗口。  
   
-### <a name="to-search-for-a-window-in-windows-view"></a>若要在窗口视图中窗口搜索  
+### <a name="to-search-for-a-window-in-windows-view"></a>若要搜索在 Windows 视图窗口  
   
-1.  排列窗口，因此该 Spy + +， [Windows 视图](../debugger/windows-view.md)窗口中和目标窗口都可见。  
+1. 排列窗口，因此该 Spy + + 中， [Windows 视图](../debugger/windows-view.md)窗口和目标窗口中都可见。  
   
-2.  从**搜索**菜单上，选择**查找窗口**。  
+2. 从**搜索**菜单中，选择**查找窗口**。  
   
-     [窗口搜索对话框](../debugger/window-search-dialog-box.md)打开。  
+    [窗口搜索对话框](../debugger/window-search-dialog-box.md)随即打开。  
   
-    > [!TIP]
-    >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏主要的 Spy + + 窗口，并且仅留下**窗口搜索**对话框中显示在其他应用程序的前面。 Spy + + 主窗口将还原单击时**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
+   > [!TIP]
+   >  若要减少屏幕混乱，请选择**隐藏 Spy**选项。 此选项将隐藏 Spy + + 主窗口，仅留下**窗口搜索**对话框显示在其他应用程序的前面。 Spy + + 主窗口将还原时，单击**确定**或**取消**，或如果清除**隐藏 Spy + +** 选项。  
   
-3.  拖动**查找程序工具**目标范围内。 拖动该工具中，**窗口搜索**对话框显示有关所选的窗口的详细信息。  
+3. 拖动**查找程序工具**通过目标窗口。 拖动该工具中，**窗口搜索**对话框显示有关所选的窗口的详细信息。  
   
-     - 或 -  
+   - 或 -  
   
-     如果您知道所需的窗口的句柄 （例如，从调试器） 时，你可以键入在**处理**框。  
+     如果您知道所需的窗口的句柄 （例如，从调试器中） 时，您可以键入**处理**框。  
   
-     - 或 -  
+   - 或 -  
   
-     如果你知道的标题和/或所需的窗口类，则可以键入在**标题**和**类**文本框中，然后清除**处理**文本框。  
+     如果您知道的标题和/或所需的窗口类，您可以键入它们**标题**并**类**文本框中，然后清除**处理**文本框。  
   
-4.  选择**向上**或**下**搜索的初始方向。  
+4. 选择**向上**或**向下**搜索的初始方向。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
-     如果找到匹配的窗口，它以突出显示[Windows 视图](../debugger/windows-view.md)窗口。
+    如果找到匹配的窗口，它以突出显示[Windows 视图](../debugger/windows-view.md)窗口。

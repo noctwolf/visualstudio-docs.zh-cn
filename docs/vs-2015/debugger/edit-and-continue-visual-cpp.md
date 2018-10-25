@@ -23,12 +23,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c82835c669eb1afd7f2fc558f89c3c30382a9b0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10bf586f24479bd1f531c5a55ab89f644bbcadee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255070"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872871"
 ---
 # <a name="edit-and-continue-visual-c"></a>Edit and Continue (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "49255070"
 ##  <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> 启用或禁用“编辑并继续”  
  如果要对代码进行编辑而又不希望在当前调试会话过程中应用这些编辑，则可以禁用自动调用“编辑并继续”。 也可以重新启用“编辑并继续”的自动操作。  
   
-1.  在 **“工具”** 菜单上，选择 **“选项”**。  
+1. 在 **“工具”** 菜单上，选择 **“选项”**。  
   
-2.  在“选项”  对话框中，选择“调试”/“常规” 文件夹。  
+2. 在“选项”  对话框中，选择“调试”/“常规” 文件夹。  
   
-3.  在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
+3. 在“编辑并继续”  组中，选中或取消选中“启用本机编辑并继续”  复选框。  
   
- 更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 你甚至可以在调试时更改此设置。 如果从命令行或从生成文件生成应用程序但在 Visual Studio 环境中调试，则在设置了 **/ZI** 选项的情况下，仍可以使用“编辑并继续”。  
+   更改此设置将影响进行的所有项目。 更改此设置后，不必重新生成应用程序。 你甚至可以在调试时更改此设置。 如果从命令行或从生成文件生成应用程序但在 Visual Studio 环境中调试，则在设置了 **/ZI** 选项的情况下，仍可以使用“编辑并继续”。  
   
 ##  <a name="BKMK_How_to_apply_code_changes_explicitly"></a> 如何显式应用代码更改  
  在 Visual C++ 中，“编辑并继续”可以以两种方法应用代码更改。 代码更改可在选择执行命令时隐式应用，也可使用 **“应用代码更改”** 命令显式应用。  
@@ -66,11 +66,11 @@ ms.locfileid: "49255070"
   
  要停止应用代码更改：  
   
--   在 **调试** 菜单中选择 **停止应用代码更改**。  
+- 在 **调试** 菜单中选择 **停止应用代码更改**。  
   
- 该菜单项仅在应用代码更改时才可见。  
+  该菜单项仅在应用代码更改时才可见。  
   
- 如果选择了改选项，就不会进行任何代码更改。  
+  如果选择了改选项，就不会进行任何代码更改。  
   
 ##  <a name="BKMK_How_to_reset_the_point_of_execution"></a> 如何重置执行点  
  在“编辑并继续”应用更改时，一些代码更改会使执行点移动到新的位置。 “编辑并继续”尽可能正确地放置执行点，但是并非所有情况下的结果都正确。  

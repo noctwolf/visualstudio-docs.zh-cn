@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get__newenum |Microsoft 文档'
+title: 'Idiatable:: Get__newenum |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b6123ab1056da3d5ffcc1f83b8e79a1a980533
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5576d2c86ae648653da64e8990edd3e909192423
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844830"
 ---
 # <a name="idiatablegetnewenum"></a>IDiaTable::get__NewEnum
-检索<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>的此枚举器的版本。  
+检索<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>此枚举器的版本。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,7 +34,7 @@ HRESULT get__NewEnum (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`IUnknown`表示接口<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>的此枚举器的版本。  
+ [out]返回`IUnknown`接口，表示<xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT>此枚举器的版本。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

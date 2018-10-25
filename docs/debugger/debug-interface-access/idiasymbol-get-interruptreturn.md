@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_interruptreturn |Microsoft 文档'
+title: 'Idiasymbol:: Get_interruptreturn |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e62fd85e8c60910be0b88c3eb27532edd874563a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 49455347d6e45e51cdc639ef0eabdabbbebcfbd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888042"
 ---
 # <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
-检索用于指定该函数是否包含从中断指令返回的标志 (例如，X86 程序集代码`iret`)。  
+检索一个标志，指定该函数是否包含从中断指令返回 (例如，X86 程序集代码`iret`)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,7 +40,7 @@ HRESULT get_interruptReturn(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

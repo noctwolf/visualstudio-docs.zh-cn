@@ -34,12 +34,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72d9da2ea3ab6cb9807fc7e0a668155d37110c3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa2e01859190b4e22f076892b23595c4617a29f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246766"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951296"
 ---
 # <a name="diagnostic-messages-in-the-output-window"></a>“输出”窗口中的诊断消息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49246766"
 ## <a name="output-methods"></a>输出方法  
  <xref:System.Diagnostics.Trace> 和 <xref:System.Diagnostics.Debug> 类提供下列输出方法：  
   
--   在不中断执行情况下输出信息的各种 `Write` 方法。 这些方法取代了在 Visual Basic 早期版本中使用的 `Debug.Print` 方法。  
+- 在不中断执行情况下输出信息的各种 `Write` 方法。 这些方法取代了在 Visual Basic 早期版本中使用的 `Debug.Print` 方法。  
   
--   <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法，如果指定的条件失败，这些方法将中断执行并输出信息。 默认情况下，`Assert` 方法显示对话框中的信息。 有关详细信息，请参阅[托管代码中的断言](../debugger/assertions-in-managed-code.md)。  
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 方法，如果指定的条件失败，这些方法将中断执行并输出信息。 默认情况下，`Assert` 方法显示对话框中的信息。 有关详细信息，请参阅[托管代码中的断言](../debugger/assertions-in-managed-code.md)。  
   
--   <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法，它们总是中断执行并输出信息。 默认情况下，`Fail` 方法在对话框中显示信息。  
+- <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> 方法，它们总是中断执行并输出信息。 默认情况下，`Fail` 方法在对话框中显示信息。  
   
- 扩展程序从应用程序中，除了**输出**窗口可以显示下列信息：  
+  扩展程序从应用程序中，除了**输出**窗口可以显示下列信息：  
   
--   调试器已经加载或卸载的模块。  
+- 调试器已经加载或卸载的模块。  
   
--   引发的异常。  
+- 引发的异常。  
   
--   退出的进程。  
+- 退出的进程。  
   
--   退出的线程。  
+- 退出的线程。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

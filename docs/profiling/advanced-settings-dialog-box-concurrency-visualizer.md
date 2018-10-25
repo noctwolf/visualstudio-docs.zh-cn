@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d697ee37cb8412e4fa0a51096858d9fa4b17877
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 60f4a038056d326cfb184cc3bb6876c411263ca1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34690788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883999"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>“高级设置”对话框（并发可视化工具）
 通过使用并发可视化工具中的“高级设置”对话框，可以控制如何收集跟踪。  对话框中有符号、仅我的代码、缓冲、筛选、CLR 事件、标记、提供程序和文件的选项卡。  
@@ -75,15 +75,15 @@ ms.locfileid: "34690788"
 ## <a name="files"></a>文件  
  在“文件”选项卡上，可以指定每次收集跟踪时用来存储跟踪文件的目录。  并发可视化工具会为每个所收集的跟踪生成四个文件：  
   
--   内核模式事件跟踪日志 (ETL) 文件 (.kernel.etl*)  
+- 内核模式事件跟踪日志 (ETL) 文件 (.kernel.etl*)  
   
--   用户模式事件跟踪日志文件 (.user.etl*)  
+- 用户模式事件跟踪日志文件 (.user.etl*)  
   
--   并发可视化工具数据文件 (.CVData*)  
+- 并发可视化工具数据文件 (.CVData*)  
   
--   并发可视化工具跟踪文件 (.CVTrace*)  
+- 并发可视化工具跟踪文件 (.CVTrace*)  
   
- 两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志(ETL)文件”复选框后，将减少磁盘上存储的跟踪数据量。  
+  两个 ETL 文件用于存储原始跟踪数据，而两个并发可视化工具文件用于存储处理后的数据。  处理跟踪后，通常不使用原始 ETL 文件。  选择“在分析后删除事件跟踪日志(ETL)文件”复选框后，将减少磁盘上存储的跟踪数据量。  
   
 ## <a name="see-also"></a>请参阅  
  [仅我的代码](../profiling/just-my-code-threads-view.md)   

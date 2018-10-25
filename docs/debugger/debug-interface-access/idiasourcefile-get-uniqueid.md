@@ -1,5 +1,5 @@
 ---
-title: 'Idiasourcefile:: Get_uniqueid |Microsoft 文档'
+title: 'Idiasourcefile:: Get_uniqueid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3714ce733b0388e3ac462a9495360171971a6750
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2c2996513f3e6464d8f94522c2b427213882f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860781"
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-检索一个简单的整数密钥值，对于此映像是唯一的。  
+检索一个简单的整数密钥值，该值是唯一的此映像。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_uniqueId (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个简单的整数密钥值，对于此映像是唯一的。  
+ [out]返回一个简单的整数密钥值，该值是唯一的此映像。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 而不是字符串可以加快行编号处理对键进行比较。  
+ 而不是字符串可加快行编号处理键进行比较。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

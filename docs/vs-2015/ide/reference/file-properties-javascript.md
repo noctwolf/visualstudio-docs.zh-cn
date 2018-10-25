@@ -31,12 +31,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 31e05d98af75758dfcd05ba70c6340c5b7f4be4a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8db05d62bd1a8b1e1bf5fee6642810c654265c97
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909726"
 ---
 # <a name="file-properties-javascript"></a>文件属性，JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ ms.locfileid: "49286281"
 ### <a name="package-action"></a>包操作  
  “包操作”属性指示执行生成时，Visual Studio 对文件执行的操作。 “包操作”可以具有任一以下值：  
   
--   无 - 文件未包含在程序包清单中。 其中一个示例是包含自述文件等文档的文本文件。  
+- 无 - 文件未包含在程序包清单中。 其中一个示例是包含自述文件等文档的文本文件。  
   
--   内容 - 文件包含在程序包清单中。 例如，此设置为 .htm、.js、.css、图像、音频或视频文件的默认值。  
+- 内容 - 文件包含在程序包清单中。 例如，此设置为 .htm、.js、.css、图像、音频或视频文件的默认值。  
   
--   **清单**-文件未包含在包清单中。 相反，文件用于生成程序包清单时的输入。 这是 package.appxmanifest 文件的默认值。  
+- **清单**-文件未包含在包清单中。 相反，文件用于生成程序包清单时的输入。 这是 package.appxmanifest 文件的默认值。  
   
--   资源 - 文件未包含在程序包清单中。 但是，文件的内容在程序包清单的包资源索引 (PRI) 中建立了索引。 通常用于资源文件。  
+- 资源 - 文件未包含在程序包清单中。 但是，文件的内容在程序包清单的包资源索引 (PRI) 中建立了索引。 通常用于资源文件。  
   
- “包操作”的默认值取决于添加到解决方案的文件的扩展名。  
+  “包操作”的默认值取决于添加到解决方案的文件的扩展名。  
   
 ### <a name="file-name-property"></a>“文件名”属性  
  以只读值的方式显示文件名。 若要重命名文件，必须在解决方案资源管理器中右键单击该文件，选择“重命名”。  

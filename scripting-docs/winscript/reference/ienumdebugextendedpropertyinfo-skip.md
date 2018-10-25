@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip |Microsoft 文档
+title: IEnumDebugExtendedPropertyInfo::Skip |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd7f686ccaa5a3195b82458cf3ee11f02be104f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 08abf4443932b81fd13601dd43a2111626b09382
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24727847"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923506"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
 跳过指定的数目的`ExtendedDebugPropertyInfo`枚举序列中的结构。  
@@ -38,11 +38,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>参数  
  `celt`  
- [in]数`ExtendedDebugPropertyInfo`中枚举序列，以跳过的结构。  
+ [in]数`ExtendedDebugPropertyInfo`要跳过枚举序列中的结构。  
   
 ## <a name="return-value"></a>返回值  
- 返回一个有效`HRESULT`，通常`S_OK`。 返回`S_FALSE`并将当前元素指针设置为枚举的结束，如果`celt`大于的枚举器中的剩余的元素数。  
+ 返回一个有效`HRESULT`，通常`S_OK`。 返回`S_FALSE`，并将当前元素指针设置到枚举末尾，如果`celt`大于枚举器中剩余的元素数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEnumDebugExtendedPropertyInfo 接口](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 结构](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

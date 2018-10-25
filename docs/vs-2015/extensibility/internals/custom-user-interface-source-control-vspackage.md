@@ -16,12 +16,12 @@ ms.assetid: f35ddb24-53bf-461e-b34f-7414f657c082
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 551154d1990eee1d7164f3dcbf5ba9cbf4984c11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 06d23b6d936b981cf44dbff74c3a39cdf74e53ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852253"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ VSPackage 通过 Visual Studio 命令表格 (.vsct) 文件中声明其菜单项�
   
  以下列表显示受源代码管理 VSPackage 的活动状态的接口：  
   
--   跟踪项目文档的事件。  
+- 跟踪项目文档的事件。  
   
--   解决方案的事件。  
+- 解决方案的事件。  
   
--   解决方案持久性接口。 当非活动状态时，包应写入.sln 和.suo 文件。  
+- 解决方案持久性接口。 当非活动状态时，包应写入.sln 和.suo 文件。  
   
--   属性扩展程序。  
+- 属性扩展程序。  
   
- 所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，并且还与源控件关联的任何可选接口时，不调用源代码管理 VSPackage 处于非活动状态。  
+  所需<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>，并且还与源控件关联的任何可选接口时，不调用源代码管理 VSPackage 处于非活动状态。  
   
- 当[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 启动[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]命令 UI 上下文设置为当前默认的源代码管理 VSPackage id。 ID 这会导致活动的源控件要显示在 IDE 中，而不实际加载 VSPackage 的 VSPackage 的静态 UI。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 注册为暂停[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>使得对 VSPackage 的任何调用之前。  
+  当[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE 启动[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]命令 UI 上下文设置为当前默认的源代码管理 VSPackage id。 ID 这会导致活动的源控件要显示在 IDE 中，而不实际加载 VSPackage 的 VSPackage 的静态 UI。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] VSPackage 注册为暂停[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterScciProvider>使得对 VSPackage 的任何调用之前。  
   
- 下表介绍了有关的特定详细信息[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不同 UI 项，IDE 将隐藏。  
+  下表介绍了有关的特定详细信息[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]不同 UI 项，IDE 将隐藏。  
   
 |UI 项|描述|  
 |-------------|-----------------|  

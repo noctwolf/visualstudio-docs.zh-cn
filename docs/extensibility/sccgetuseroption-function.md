@@ -1,5 +1,5 @@
 ---
-title: SccGetUserOption 函数 |Microsoft 文档
+title: SccGetUserOption 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b735b8ae53ef484417ae007c6ec74ec03fe4b849
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b906dc9585ed51640ca36f366fe6a1b0d3a03aa2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928199"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
-此函数可检索各种特定于用户的选项。  
+此函数检索各种特定于用户的选项。  
   
 ## <a name="syntax"></a>语法  
   
@@ -37,7 +37,7 @@ SCCRTN SccGetUserOption(
   
 #### <a name="parameters"></a>参数  
  pContext  
- [in]源控件插件的上下文指针。  
+ [in]源控件插件上下文指针。  
   
  nOption  
  [in]若要检索 （有关可能的选项，请参阅备注） 的选项。  
@@ -46,9 +46,9 @@ SCCRTN SccGetUserOption(
  [out]与选项相关联的值。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|已成功检索选项。|  
 |SCC_E_OPNOTSUPPORTED|不支持选项。|  
@@ -59,8 +59,8 @@ SCCRTN SccGetUserOption(
   
 |用户选项|描述|  
 |-----------------|-----------------|  
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否要签出的文件的本地版本。 `lpVal` 分配`SCC_USEROPT_COLV_YES`（用户想要签出本地文件） 或`SCC_USEROPT_COLV_NO`。|  
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否想要签出本地版本的文件。 `lpVal` 分配`SCC_USEROPT_COLV_YES`（用户想要签出本地文件） 或`SCC_USEROPT_COLV_NO`。|  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [错误代码](../extensibility/error-codes.md)

@@ -13,12 +13,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f1769f4d94df0621e06eb01d3dad55598cc810c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3ba2f13ff484f73a7455089ccf2689037eabebdc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178420"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824387"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的动画
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -64,15 +64,15 @@ ms.locfileid: "49178420"
   
 #### <a name="do-not"></a>不要：  
   
--   使用小移动 （在内存占用较小的运动），首选淡并更改通过移动对象。  
+- 使用小移动 （在内存占用较小的运动），首选淡并更改通过移动对象。  
   
--   使用屏幕空间在较大区域上发生的动画。 而不考虑大小，这种样式是动画的让人分散注意力到该用户。  
+- 使用屏幕空间在较大区域上发生的动画。 而不考虑大小，这种样式是动画的让人分散注意力到该用户。  
   
--   使用不与用户正在致力于提供的对象或与之交互的动画。  
+- 使用不与用户正在致力于提供的对象或与之交互的动画。  
   
--   使用需要用户交互才能重置状态，例如，强制用户响应以使其停止闪烁闪烁通知的动画。 以任何方式与它们交互应足以消除它们。  
+- 使用需要用户交互才能重置状态，例如，强制用户响应以使其停止闪烁闪烁通知的动画。 以任何方式与它们交互应足以消除它们。  
   
- 这些最佳实践的应用程序的详细信息，请参阅[动画模式](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)。  
+  这些最佳实践的应用程序的详细信息，请参阅[动画模式](../../extensibility/ux-guidelines/animations-for-visual-studio.md#BKMK_AnimationPatterns)。  
   
 ### <a name="animation-metrics"></a>动画指标  
   
@@ -205,21 +205,21 @@ ms.locfileid: "49178420"
 ### <a name="overview"></a>概述  
  在 Visual Studio 中的动画用于充当特定的功能并不会影响用户工作效率。 若要符合以包括常规动画特征：  
   
--   小型和非介入式  
+- 小型和非介入式  
   
--   自然而真实  
+- 自然而真实  
   
--   微妙、 subdued  
+- 微妙、 subdued  
   
--   快速且高效  
+- 快速且高效  
   
--   放松、 不名匆忙之中  
+- 放松、 不名匆忙之中  
   
- 下图显示了建议在 Visual Studio 中使用的动画样式。 没有动画和精致的动画效果如淡入/淡出最常使用。 有限的应用程序的移动动画如扩展和收缩，X 和 Y 位置更改和旋转。  
+  下图显示了建议在 Visual Studio 中使用的动画样式。 没有动画和精致的动画效果如淡入/淡出最常使用。 有限的应用程序的移动动画如扩展和收缩，X 和 Y 位置更改和旋转。  
   
- ![Visual Studio 的建议动画样式](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
+  ![Visual Studio 的建议动画样式](../../extensibility/ux-guidelines/media/1202-a-vsanimstyles.png "1202 a_VSAnimStyles")  
   
- **Visual Studio 的建议的动画样式**  
+  **Visual Studio 的建议的动画样式**  
   
 #### <a name="appear-and-disappear"></a>显示和隐藏  
  使用此模式时，元素的切换可见从返回，而不转换动画和扩展视图：  
@@ -363,65 +363,65 @@ ms.locfileid: "49178420"
   
 #### <a name="tab-open"></a>选项卡上打开  
   
--   样式： 显示  
+- 样式： 显示  
   
--   零秒持续时间：  
+- 零秒持续时间：  
   
- ![选项卡上的 Visual Studio 中的打开动画](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
+  ![选项卡上的 Visual Studio 中的打开动画](../../extensibility/ux-guidelines/media/1202-h-tabopen.png "1202 h_TabOpen")  
   
 #### <a name="tab-close"></a>关闭选项卡  
   
--   Style: X 位置更改  
+- Style: X 位置更改  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![选项卡上的 Visual Studio 中的关闭动画](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
+  ![选项卡上的 Visual Studio 中的关闭动画](../../extensibility/ux-guidelines/media/1202-i-tabclose.png "1202 i_TabClose")  
   
 #### <a name="tab-reorder"></a>选项卡重新排序  
   
--   Style: X 位置更改  
+- Style: X 位置更改  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![选项卡上的 Visual Studio 中的重新排序动画](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
+  ![选项卡上的 Visual Studio 中的重新排序动画](../../extensibility/ux-guidelines/media/1202-j-tabreorder.png "1202 j_TabReorder")  
   
 #### <a name="close-floating-document"></a>关闭浮动文档  
   
--   样式： 显示  
+- 样式： 显示  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![关闭 Visual Studio 中浮动文档动画](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
+  ![关闭 Visual Studio 中浮动文档动画](../../extensibility/ux-guidelines/media/1202-k-closefloatingdocument.png "1202 k_CloseFloatingDocument")  
   
 #### <a name="window-state-transition"></a>窗口的状态转换  
   
--   Style： 若要与其他 windows 保持一致，让当前操作系统定义文档关闭动画。  
+- Style： 若要与其他 windows 保持一致，让当前操作系统定义文档关闭动画。  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![在 Visual Studio 中的窗口状态过渡动画](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
+  ![在 Visual Studio 中的窗口状态过渡动画](../../extensibility/ux-guidelines/media/1202-l-windowstatetransition.png "1202 l_WindowStateTransition")  
   
 #### <a name="menu-open"></a>打开菜单  
   
--   样式： 淡入  
+- 样式： 淡入  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![在 Visual Studio 中的菜单打开动画](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
+  ![在 Visual Studio 中的菜单打开动画](../../extensibility/ux-guidelines/media/1202-m-menuopen.png "1202 m_MenuOpen")  
   
 #### <a name="menu-close"></a>关闭菜单  
   
--   样式： 淡出  
+- 样式： 淡出  
   
--   持续时间： 200 毫秒  
+- 持续时间： 200 毫秒  
   
- ![在 Visual Studio 中的菜单关闭动画](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
+  ![在 Visual Studio 中的菜单关闭动画](../../extensibility/ux-guidelines/media/1202-n-menuclose.png "1202 n_MenuClose")  
   
 #### <a name="auto-hide-tool-window-reveal"></a>自动隐藏工具窗口显示  
   
--   样式： 显示  
+- 样式： 显示  
   
--   零秒持续时间：  
+- 零秒持续时间：  
   
- ![自动&#45;隐藏在 Visual Studio 中的工具窗口动画](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
+  ![自动&#45;隐藏在 Visual Studio 中的工具窗口动画](../../extensibility/ux-guidelines/media/1202-o-autohidetoolwindowreveal.png "1202 o_AutoHideToolWindowReveal")
 

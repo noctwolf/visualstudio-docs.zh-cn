@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 9224314dbcb5fcb424708c7dad4ca674af661604
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dcc331defab98303a805f75f75afb3e309c7d2dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910922"
 ---
 # <a name="creating-bootstrapper-packages"></a>创建引导程序包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,37 +45,37 @@ ms.locfileid: "49208894"
   
  若要创建引导程序包，必须向引导程序清单生成器提供 EXE 或 MSI 文件形式的可再发行组件。 然后，引导程序清单生成器将会创建以下文件：  
   
--   产品清单 product.xml，包含程序包的所有非特定语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  
+- 产品清单 product.xml，包含程序包的所有非特定语言的元数据。 它包含可再发行组件的所有本地化版本通用的元数据。  
   
--   程序包清单 package.xml，包含特定语言的元数据；它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。  
+- 程序包清单 package.xml，包含特定语言的元数据；它通常包含本地化的错误消息。 必须至少为组件的每个本地化版本提供一个程序包清单。  
   
- 在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。  
+  在创建这两个文件之后，请将产品清单文件放置在一个依据自定义引导程序命名的文件夹中。 程序包清单文件将放置到一个依据区域设置命名的文件夹中。 例如，如果程序包清单文件针对的是英语版的再发行程序，请将该文件放置在一个名为 en 的文件夹中。 对于每个区域设置（如 ja 代表日语，de 代表德语）重复此过程。 最终的自定义引导程序包的文件夹结构将如下所示。  
   
- `CustomBootstrapperPackage`  
+  `CustomBootstrapperPackage`  
   
- `product.xml`  
+  `product.xml`  
   
- `CustomBootstrapper.msi`  
+  `CustomBootstrapper.msi`  
   
- `de`  
+  `de`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `en`  
+  `en`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- `ja`  
+  `ja`  
   
- `eula.rtf`  
+  `eula.rtf`  
   
- `package.xml`  
+  `package.xml`  
   
- 最后，将可再发行的文件复制到引导程序文件夹位置。 有关详细信息，请参阅 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
+  最后，将可再发行的文件复制到引导程序文件夹位置。 有关详细信息，请参阅 [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md)。  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  

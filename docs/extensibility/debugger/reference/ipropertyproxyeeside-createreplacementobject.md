@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::CreateReplacementObject |Microsoft 文档
+title: IPropertyProxyEESide::CreateReplacementObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56e5001d7abd498982361a51d0386db4b2624cf7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9aab08d85f91cb56677ddaf354d8f7c316e4b4a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31135584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870427"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 创建数据对象的副本特定于表达式计算器 (EE)。  
@@ -43,7 +43,7 @@ int CreateReplacementObject(
   
 #### <a name="parameters"></a>参数  
  `dataIn`  
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)存放要复制的数据对象。  
+ [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)包含要复制的数据对象。  
   
  `dataOut`  
  [out]返回一个新`IEEDataStorage`对象。  
@@ -52,10 +52,10 @@ int CreateReplacementObject(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法有[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)表示的字节数组对象。 通常是由 EE 不实现此传入的数据对象。 但是，此方法返回的对象始终由 EE，这样就 EE 实现`IEEDataStorage`上任何类所需的接口。  
+ 此方法提供[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)对象，表示一个字节数组。 EE 通常没有实现此传入数据对象。 但是，此方法返回的对象始终通过 EE，它允许 EE 实现实现`IEEDataStorage`上任何类所需的接口。  
   
- 请注意，数据提供通过传入`IEEDataStorage`对象必须是相同的数据中的传出`IEEDataStorage`对象。  
+ 请注意，数据提供传入的`IEEDataStorage`对象必须是相同的数据中的传出`IEEDataStorage`对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortEx2::GetProgram |Microsoft 文档
+title: IDebugPortEx2::GetProgram |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 750c0923db67a2e8c67dc2dc9e8793606653d691
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9b20caf57b5b669126323fff63fb401627ffbb62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842344"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 获取与程序节点相关联的程序。  
@@ -43,7 +43,7 @@ int GetProgram(
   
 #### <a name="parameters"></a>参数  
  `pProgramNode`  
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)表示程序节点的对象。  
+ [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示程序节点。  
   
  `ppProgram`  
  [out]返回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)对象，表示与程序节点相关联的程序。  
@@ -51,7 +51,7 @@ int GetProgram(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

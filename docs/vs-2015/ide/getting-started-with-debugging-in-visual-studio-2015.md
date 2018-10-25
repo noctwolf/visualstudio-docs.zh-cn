@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 293df108dd0fc8671c1d11a2b336af32369aa9f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fe051a37c610fcfd3c99f2ab762982065c5caf56
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281445"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824433"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>在 Visual Studio 2015 中调试入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,15 +153,15 @@ Visual Studio 2015 提供一组强大的集成项目生成和调试工具。 本
   
  断点的常见用途包括：  
   
-1.  缩小崩溃或挂起的根源，将它们分散在你认为引起失败的方法调用的代码中。 单步执行代码时，请移除断点，然后重设断点使其更紧密，直到找到有问题的代码行。  
+1. 缩小崩溃或挂起的根源，将它们分散在你认为引起失败的方法调用的代码中。 单步执行代码时，请移除断点，然后重设断点使其更紧密，直到找到有问题的代码行。  
   
-2.  引入新代码时，请在代码的开头设置断点并单步执行代码，以确保它按预期方式运行。  
+2. 引入新代码时，请在代码的开头设置断点并单步执行代码，以确保它按预期方式运行。  
   
-3.  如果已实现复杂的行为，请为算法代码设置断点，以便在程序中断时检查变量和数据的值。  
+3. 如果已实现复杂的行为，请为算法代码设置断点，以便在程序中断时检查变量和数据的值。  
   
-4.  如果正在编写 C 或 C++ 代码，请使用断点停止该代码，以便在调试内存相关故障时检查地址值（查找 NULL）和引用计数。  
+4. 如果正在编写 C 或 C++ 代码，请使用断点停止该代码，以便在调试内存相关故障时检查地址值（查找 NULL）和引用计数。  
   
- 有关使用断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
+   有关使用断点的详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
   
 ### <a name="setting-conditional-breakpoints"></a>设置条件断点  
  如果循环或递归中存在断点，或者有许多频繁单步执行的断点，请使用条件断点以确保你的代码仅在满足特定条件时挂起。 否则，你将会按很多次 F11。  

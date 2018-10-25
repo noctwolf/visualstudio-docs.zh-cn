@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0b65e204f9af28eea59d45cdf8fd591bf7e2dabd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c8bca7452b94aa8e65386c3d5ef77e9f36ab98df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828697"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>使用 Visual Studio 静态代码分析来分析应用商店应用中的 Visual Basic 和 C# 代码质量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,17 +49,17 @@ ms.locfileid: "49306106"
 ##  <a name="BKMK_Run"></a>运行代码分析  
  若要对 Visual Studio 解决方案运行代码分析，请执行以下操作：  
   
--   在“生成”菜单上，选择“对解决方案运行代码分析”。  
+- 在“生成”菜单上，选择“对解决方案运行代码分析”。  
   
- 若要在每次生成项目时自动运行代码分析，请执行以下操作：  
+  若要在每次生成项目时自动运行代码分析，请执行以下操作：  
   
-1.  在解决方案资源管理器中右键单击项目名称，然后选择“属性”。  
+1. 在解决方案资源管理器中右键单击项目名称，然后选择“属性”。  
   
-2.  在项目属性页中，选择“代码分析”，然后选中“生成时启用代码分析(定义 CODEANALYSIS 常量)”。  
+2. 在项目属性页中，选择“代码分析”，然后选中“生成时启用代码分析(定义 CODEANALYSIS 常量)”。  
   
- 这样，解决方案编译后将运行代码分析。 结果将显示在“代码分析”窗口中。  
+   这样，解决方案编译后将运行代码分析。 结果将显示在“代码分析”窗口中。  
   
- ![代码分析窗口](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
+   ![代码分析窗口](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")  
   
 ##  <a name="BKMK_Analyze"></a>分析和解决代码分析警告  
  若要分析某个具体的警告，请在“代码分析”窗口中单击该警告的标题。 随后该警告将展开，显示有关问题的详细信息。  
@@ -80,15 +80,15 @@ ms.locfileid: "49306106"
   
  若要禁止显示警告，请执行以下操作：  
   
-1.  如果未显示详细信息，则单击警告的标题以将其展开。  
+1. 如果未显示详细信息，则单击警告的标题以将其展开。  
   
-2.  选择警告底部的“操作”链接。  
+2. 选择警告底部的“操作”链接。  
   
-3.  指向“禁止显示消息”，然后选择“在源中”或“在禁止显示文件中”。  
+3. 指向“禁止显示消息”，然后选择“在源中”或“在禁止显示文件中”。  
   
-    -   “在源中”在源文件中产生该警告的方法上方插入 `SuppressMessage` 属性。 这样可更容易地发现禁止显示。  
+   - “在源中”在源文件中产生该警告的方法上方插入 `SuppressMessage` 属性。 这样可更容易地发现禁止显示。  
   
-    -   “在禁止显示文件中”将 `SuppressMessage` 属性添加到项目的 **GlobalSuppressions.cs** 文件。 这样可更容易地管理禁止显示。 注意，添加到 **GlobalSuppression.cs** 的 `SuppressMessage` 属性还针对产生该警告的方法。 该特性并不在全局禁止显示该警告。  
+   - “在禁止显示文件中”将 `SuppressMessage` 属性添加到项目的 **GlobalSuppressions.cs** 文件。 这样可更容易地管理禁止显示。 注意，添加到 **GlobalSuppression.cs** 的 `SuppressMessage` 属性还针对产生该警告的方法。 该特性并不在全局禁止显示该警告。  
   
      决定在源文件中还是在禁止显示文件中禁止显示警告取决于编码风格和需要。  
   

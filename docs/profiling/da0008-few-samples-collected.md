@@ -15,14 +15,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 13065ac4b55b8ae84d299aa15eeb184e7d864d2e
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 4f80f4f08be3c2af8444a41209a8d19909c94a8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34749809"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897896"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的样本过少
+
 |||  
 |-|-|  
 |规则 ID|DA0008|  
@@ -30,12 +31,12 @@ ms.locfileid: "34749809"
 |分析方法|采样|  
 |消息|仅收集了少量样本。 请考虑运行更长的时间或使用更快的采样率，以获取更有意义的结果。|  
 |规则类型|信息|  
-  
+
 ## <a name="cause"></a>原因  
  分析运行期间仅收集了少量样本。  
-  
+
 ## <a name="rule-description"></a>规则说明  
  使用采样方法时，应该收集大量具有统计学意义的样本，以确保数据反映实际的程序行为。 为了尽量减少采样错误，应尝试至少收集 1000 个程序指令执行行为的样本。 如果不收集足够的样本，则分析分析数据时可能产生误导。  
-  
+
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  请考虑分析运行时间较长的应用程序或使用较快的采样速率，以获得具有统计学意义的结果。 有关如何更改 Visual Studio IDE 中的采样速率的信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。 有关使用分析工具命令行时如何更改采样速率的详细信息，请参阅 [VSPerfCmd](../profiling/vsperfcmd.md) 引用中的[计时器](../profiling/timer.md)。

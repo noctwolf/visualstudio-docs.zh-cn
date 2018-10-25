@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcc49f96faf043101ffb2462d544e41394b38e7b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9e0f2e81d82db81859ff5833903d00b8bf149436
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941224"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>如何报告 Visual Studio 2015 的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Visual Studio 2017 的最新文档，请参阅[如何报告 Visual Studio 2017 �
   
 ###  <a name="describe_the_problem"></a>  
   
-1.  为此问题提供一个描述性标题，帮助我们将它发送到 Visual Studio 中的正确团队。  
+1. 为此问题提供一个描述性标题，帮助我们将它发送到 Visual Studio 中的正确团队。  
   
-2.  提供任何其他详细信息以及再现该问题的步骤（如有可能）。  
+2. 提供任何其他详细信息以及再现该问题的步骤（如有可能）。  
   
-3.  从下拉列表中选择问题领域。 如果你不确定，进行最佳猜测。  
+3. 从下拉列表中选择问题领域。 如果你不确定，进行最佳猜测。  
   
- ![报告问题对话框](../ide/media/report-a-problem-dialog.png "报告问题对话框")  
+   ![报告问题对话框](../ide/media/report-a-problem-dialog.png "报告问题对话框")  
   
 ## <a name="provide-a-screenshot-optional"></a>提供屏幕快照（可选）  
  选择“包括屏幕截图”，将当前屏幕发送给 Microsoft。 使用此工具可裁剪图像，以便只显示有问题的屏幕部分。 通过单击“附加其他文件”按钮，可以附加其他屏幕截图或其他文件。  

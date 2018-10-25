@@ -11,12 +11,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: douge
-ms.openlocfilehash: 619f2c17d3653895c8c969e89d7a342e73f8c8d9
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3df3a3b40dd67f12bac19f4e69f5293c85bb85f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081470"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940029"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
 有时你希望生成能够容忍某些任务中的错误。 如果这些非关键任务失败，你希望生成能够继续进行，因为它仍然可以产生所需的输出。 例如，如果一个项目在每个组件生成之后都使用 `SendMail` 任务发送电子邮件消息，那么即使邮件服务器变得不可用而导致状态邮件无法发送，但依然让生成继续完成，这一情况或许便是可以接受的。 或者，如果在生成过程中，中间文件通常会被删除，但即使无法删除这些文件，那么让生成继续完成也是可以接受的。  
@@ -26,15 +26,15 @@ ms.locfileid: "39081470"
   
  `ContinueOnError` 属性可以包含下列值之一：  
   
--   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。  
+- **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。  
   
--   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。  
+- **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。  
   
--   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。  
+- **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。  
   
- 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。  
+  4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。  
   
- `ContinueOnError` 的默认值为 `ErrorAndStop`。 如果你将属性设置为 `ErrorAndStop`，则会使此行为对读取项目文件的任何人都显式可见。  
+  `ContinueOnError` 的默认值为 `ErrorAndStop`。 如果你将属性设置为 `ErrorAndStop`，则会使此行为对读取项目文件的任何人都显式可见。  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略任务中的错误  
   

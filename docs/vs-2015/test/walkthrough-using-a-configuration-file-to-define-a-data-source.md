@@ -17,12 +17,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5ea3d2f52df217b8df6d3d12909671f4e493ae18
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f3dca876e777e8f40773ca42b05fece1c22fe33e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843036"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>演练：使用配置文件定义数据源
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ ms.locfileid: "49253001"
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>若要将自定义配置节添加到 app.config 文件  
   
-1.  App.config 的根元素应为 `configuration` 元素。 在 `configuration` 元素内创建一个 `configSections` 元素。 `configSections` 应为 app.config 文件中的第一个元素。  
+1. App.config 的根元素应为 `configuration` 元素。 在 `configuration` 元素内创建一个 `configSections` 元素。 `configSections` 应为 app.config 文件中的第一个元素。  
   
-2.  在 `configSections` 元素内，创建一个 `section` 元素。  
+2. 在 `configSections` 元素内，创建一个 `section` 元素。  
   
-3.  在 `section` 元素中，添加一个名为 `name` 的特性，并为其分配一个等于 `microsoft.visualstudio.testtools` 的值。 再添加一个名为 `type` 的特性，并为其分配一个等于 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 的值  
+3. 在 `section` 元素中，添加一个名为 `name` 的特性，并为其分配一个等于 `microsoft.visualstudio.testtools` 的值。 再添加一个名为 `type` 的特性，并为其分配一个等于 `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a` 的值  
   
- `section` 元素应类似于此：  
+   `section` 元素应类似于此：  
   
 ```  
 <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>  
@@ -117,15 +117,15 @@ ms.locfileid: "49253001"
 ## <a name="define-data-sources"></a>定义数据源  
  数据源节包含测试引擎用于从数据源检索数据的四个特性。  
   
--   `name` 定义了 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 用于指定要使用哪个数据源的标识。  
+- `name` 定义了 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 用于指定要使用哪个数据源的标识。  
   
--   `connectionString` 标识了在之前的“定义连接字符串”部分中创建的连接字符串。  
+- `connectionString` 标识了在之前的“定义连接字符串”部分中创建的连接字符串。  
   
--   `dataTableName` 定义了保留要在测试中使用的数据的表格或工作表。  
+- `dataTableName` 定义了保留要在测试中使用的数据的表格或工作表。  
   
--   `dataAccessMethod` 定义了访问数据源中的数据值的方法。  
+- `dataAccessMethod` 定义了访问数据源中的数据值的方法。  
   
- 在本节中，你将定义两个数据源以在单元测试中使用。  
+  在本节中，你将定义两个数据源以在单元测试中使用。  
   
 #### <a name="to-define-data-sources"></a>若要定义数据源  
   

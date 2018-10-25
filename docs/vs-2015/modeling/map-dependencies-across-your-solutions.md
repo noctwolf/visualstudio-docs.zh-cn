@@ -32,12 +32,12 @@ caps.latest.revision: 245
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ae5e9491b8a02293a48a3ccc3e5e21a87fa5e878
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f160ff1b8ea66eecaacd4aa7ccccdf1f52bb6134
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894022"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>映射解决方案中的依赖项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,13 +66,13 @@ ms.locfileid: "49200767"
   
  **可以映射以下语言中的代码的依赖关系**：  
   
--   解决方案或程序集（.dll 或 .exe）中的 Visual C# .NET 或 Visual Basic .NET  
+- 解决方案或程序集（.dll 或 .exe）中的 Visual C# .NET 或 Visual Basic .NET  
   
--   Visual C++ 项目、头文件（.h 或 `#include`）或二进制文件中的本机或托管的 C 或 C++ 代码  
+- Visual C++ 项目、头文件（.h 或 `#include`）或二进制文件中的本机或托管的 C 或 C++ 代码  
   
--   通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集  
+- 通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集  
   
- **注意：** 除 C# 或 Visual Basic .NET 之外的项目，启动代码图或将项目添加到现有代码图的选项变得非常有限。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，你可以从解决方案资源管理器、类视图和对象浏览器拖放各个代码元素或文件。  
+  **注意：** 除 C# 或 Visual Basic .NET 之外的项目，启动代码图或将项目添加到现有代码图的选项变得非常有限。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，你可以从解决方案资源管理器、类视图和对象浏览器拖放各个代码元素或文件。  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>若要查看解决方案中的整体依赖关系  
   
@@ -122,51 +122,51 @@ ms.locfileid: "49200767"
   
 ###  <a name="OverviewSource"></a> 查看解决方案中的依赖关系  
   
-1.  在“体系结构”  菜单上，选择“生成解决方案的代码图” 。  
+1. 在“体系结构”  菜单上，选择“生成解决方案的代码图” 。  
   
-     ![生成代码映射命令](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
+    ![生成代码映射命令](../modeling/media/codemapsarchitecturemenu.png "CodeMapsArchitectureMenu")  
   
-     你将获得显示顶级程序集和这些程序集之间的聚合链接的代码图。 聚合链路越广，它所代表的依赖关系就越多。  
+    你将获得显示顶级程序集和这些程序集之间的聚合链接的代码图。 聚合链路越广，它所代表的依赖关系就越多。  
   
-2.  使用代码图工具栏上的“图例”  按钮以显示或隐藏项目类型图标（如测试项目、Web 项目和 Phone 项目）、代码项（如类、方法和属性）以及关系类型（如继承自、实现和调用）的列表。  
+2. 使用代码图工具栏上的“图例”  按钮以显示或隐藏项目类型图标（如测试项目、Web 项目和 Phone 项目）、代码项（如类、方法和属性）以及关系类型（如继承自、实现和调用）的列表。  
   
-     ![顶部&#45;的程序集级别的依赖项关系图](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
+    ![顶部&#45;的程序集级别的依赖项关系图](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")  
   
-     此示例解决方案包含解决方案文件夹（“测试” 和“组件” ），测试项目、Web 项目和程序集。 默认情况下，所有包含关系均以 *“组”* 的形式显示，你可以对其进行展开和折叠。  “外部”组包含你的解决方案之外的任何内容，包括平台依赖项。 外部程序集仅显示已使用的项。 默认情况下，系统基类型隐藏在代码图中以减少混乱。  
+    此示例解决方案包含解决方案文件夹（“测试” 和“组件” ），测试项目、Web 项目和程序集。 默认情况下，所有包含关系均以 *“组”* 的形式显示，你可以对其进行展开和折叠。  “外部”组包含你的解决方案之外的任何内容，包括平台依赖项。 外部程序集仅显示已使用的项。 默认情况下，系统基类型隐藏在代码图中以减少混乱。  
   
-3.  若要深入了解代码图中，请展开表示项目和程序集的组。 可以通过按“CTRL+A”  展开全部内容以选择所有节点，然后选择“组” ，再选择快捷菜单中的“展开”  。  
+3. 若要深入了解代码图中，请展开表示项目和程序集的组。 可以通过按“CTRL+A”  展开全部内容以选择所有节点，然后选择“组” ，再选择快捷菜单中的“展开”  。  
   
-     ![展开代码图中的所有组](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
+    ![展开代码图中的所有组](../modeling/media/codemapsexpandallgroups.png "CodeMapsExpandAllGroups")  
   
-4.  但是，这对大型解决方案可能并无作用。 事实上，对于复杂的解决方案，内存限制可能会阻止你展开所有组。 相反，若要在单个节点内进行查看，则将其展开。 将鼠标指针移动到节点的顶部，然后单击出现的 V 形。  
+4. 但是，这对大型解决方案可能并无作用。 事实上，对于复杂的解决方案，内存限制可能会阻止你展开所有组。 相反，若要在单个节点内进行查看，则将其展开。 将鼠标指针移动到节点的顶部，然后单击出现的 V 形。  
   
-     ![展开代码图中的节点](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
+    ![展开代码图中的节点](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
-     或使用键盘选择项，然后按加号键（“+”**+**）。 若要查看更深层次的代码，请对命名空间、类型和成员执行相同操作。  
+    或使用键盘选择项，然后按加号键（“+”**+**）。 若要查看更深层次的代码，请对命名空间、类型和成员执行相同操作。  
   
-    > [!TIP]
-    >  有关使用代码的更多详细信息使用鼠标、 键盘和触摸屏输入，请参阅图[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
+   > [!TIP]
+   >  有关使用代码的更多详细信息使用鼠标、 键盘和触摸屏输入，请参阅图[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。  
   
-5.  若要简化代码图并将重点关注各个部分，选择代码图工具栏上的“筛选器”  ，然后仅选择你感兴趣的节点和链接类型。 例如，可以隐藏所有的解决方案文件夹和程序集容器。  
+5. 若要简化代码图并将重点关注各个部分，选择代码图工具栏上的“筛选器”  ，然后仅选择你感兴趣的节点和链接类型。 例如，可以隐藏所有的解决方案文件夹和程序集容器。  
   
-     ![通过筛选容器来简化地图](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
+    ![通过筛选容器来简化地图](../modeling/media/codemapsfilterfoldersassemblies.png "CodeMapsFilterFoldersAssemblies")  
   
-     还可以通过从代码图中隐藏或删除单个组和项来简化代码图，而不影响基础解决方案代码。  
+    还可以通过从代码图中隐藏或删除单个组和项来简化代码图，而不影响基础解决方案代码。  
   
-6.  若要查看各项间的关系，请在代码图中选择各项。 链接的颜色指示关系的类型，如“图例”  窗格中所示。  
+6. 若要查看各项间的关系，请在代码图中选择各项。 链接的颜色指示关系的类型，如“图例”  窗格中所示。  
   
-     ![查看你的解决方案中依赖关系](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
+    ![查看你的解决方案中依赖关系](../modeling/media/codemapsmainintro.png "CodeMapsMainIntro")  
   
-     在此示例中，紫色链接为调用，点式链接为引用，浅蓝色链接为字段访问。 绿色链接可以是继承，也可能是指示一个以上关系（或 *“类别”* ）类型的 *“聚合链接”*。  
+    在此示例中，紫色链接为调用，点式链接为引用，浅蓝色链接为字段访问。 绿色链接可以是继承，也可能是指示一个以上关系（或 *“类别”* ）类型的 *“聚合链接”*。  
   
-    > [!TIP]
-    >  如果你看到的是绿色链接，它是指可能不仅仅存在继承关系。 可能也存在方法调用，但是这些都被继承关系所隐藏。 若要查看特定类型的链接，请使用“筛选器”  窗格中的复选框，以便隐藏不感兴趣的类型。  
+   > [!TIP]
+   >  如果你看到的是绿色链接，它是指可能不仅仅存在继承关系。 可能也存在方法调用，但是这些都被继承关系所隐藏。 若要查看特定类型的链接，请使用“筛选器”  窗格中的复选框，以便隐藏不感兴趣的类型。  
   
-7.  若要获取有关项或链接的详细信息，请将指针移至其顶部，直至出现工具提示。 这将显示代码元素或链接所表示的类别的详细信息。  
+7. 若要获取有关项或链接的详细信息，请将指针移至其顶部，直至出现工具提示。 这将显示代码元素或链接所表示的类别的详细信息。  
   
-     ![显示关系的类别](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
+    ![显示关系的类别](../modeling/media/codemapsshowlinkcatgories.png "CodeMapsShowLinkCatgories")  
   
-8.  若要检查聚合链接表示的项和依赖项，请首先选择该链接，然后打开它的快捷菜单。 选择“显示参与链接”  （或“在新代码图上显示参与链接” ）。 这将展开位于链接两端的组，且仅显示参与链接的项和依赖项。  
+8. 若要检查聚合链接表示的项和依赖项，请首先选择该链接，然后打开它的快捷菜单。 选择“显示参与链接”  （或“在新代码图上显示参与链接” ）。 这将展开位于链接两端的组，且仅显示参与链接的项和依赖项。  
   
 9. 若要关注代码图的特定部分，可继续删除不感兴趣的项。 例如，若要深入了解类和成员视图，只需筛选“筛选器”  窗格中的所有命名空间节点。  
   
@@ -184,7 +184,7 @@ ms.locfileid: "49200767"
   
      ![选择要查看的关系的项](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")  
   
- 另请参阅：  
+    另请参阅：  
   
 -   [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)  
   
@@ -304,11 +304,11 @@ ms.locfileid: "49200767"
 ###  <a name="Troubleshooting"></a> 针对 C 和 C++ 代码的故障排除图  
  C 和 C++ 代码不支持这些项：  
   
--   基类型不会显示在包含父层次结构的图中。  
+- 基类型不会显示在包含父层次结构的图中。  
   
--   大多数“显示”  菜单项不适用于 C 和 C++ 代码。  
+- 大多数“显示”  菜单项不适用于 C 和 C++ 代码。  
   
- 在为 C 和 C++ 代码创建代码图时可能会出现这些问题：  
+  在为 C 和 C++ 代码创建代码图时可能会出现这些问题：  
   
 |**问题**|**可能的原因**|**解决方法**|  
 |---------------|------------------------|--------------------|  
@@ -324,23 +324,23 @@ ms.locfileid: "49200767"
 ##  <a name="RenderMoreQuickly"></a> 使代码图更快呈现  
  在首次生成代码图时，Visual Studio 会将其找到的所有依赖关系都编入索引中。 这个过程可能需要一些时间，尤其是针对大型解决方案，但会提高之后的性能。 如果更改了代码，Visual Studio 只会将已更新的代码重新编入索引。 为了尽量减少代码图完成呈现所需的时间，请考虑以下内容：  
   
--   [仅映射你感兴趣的依赖关系。](#SeeSpecificSource)  
+- [仅映射你感兴趣的依赖关系。](#SeeSpecificSource)  
   
--   在生成整个解决方案的代码图之前，缩小解决方案范围。  
+- 在生成整个解决方案的代码图之前，缩小解决方案范围。  
   
--   使用代码图工具栏上的“跳过生成”  按钮关闭自动生成解决方案。  
+- 使用代码图工具栏上的“跳过生成”  按钮关闭自动生成解决方案。  
   
--   使用代码图工具栏上的“包括父级”  按钮关闭自动添加父项。  
+- 使用代码图工具栏上的“包括父级”  按钮关闭自动添加父项。  
   
--   直接编辑代码图文件，以删除不需要的节点和链接。 更改代码图不会影响基础代码。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+- 直接编辑代码图文件，以删除不需要的节点和链接。 更改代码图不会影响基础代码。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
- ![跳过生成和包括父级按钮](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
+  ![跳过生成和包括父级按钮](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")  
   
- 尽管 Visual Studio 可在 1 GB 内存下运行，但我们建议你的计算机至少具有 2 GB 内存，以避免在 Visual Studio 创建代码索引并生成代码图时产生长时间的延迟。  
+  尽管 Visual Studio 可在 1 GB 内存下运行，但我们建议你的计算机至少具有 2 GB 内存，以避免在 Visual Studio 创建代码索引并生成代码图时产生长时间的延迟。  
   
- 当项目项的“复制到输出目录”  属性设置为“始终复制” 时，通过解决方案资源管理器创建代码图或将项添加到代码图可能需要更多时间。 这可能导致增量生成问题，并且 Visual Studio 每次都重新生成项目。 若要提高性能，请将此属性更改为“如果较新则复制”  或 `PreserveNewest`。 请参阅 [Incremental Builds](../msbuild/incremental-builds.md)。  
+  当项目项的“复制到输出目录”  属性设置为“始终复制” 时，通过解决方案资源管理器创建代码图或将项添加到代码图可能需要更多时间。 这可能导致增量生成问题，并且 Visual Studio 每次都重新生成项目。 若要提高性能，请将此属性更改为“如果较新则复制”  或 `PreserveNewest`。 请参阅 [Incremental Builds](../msbuild/incremental-builds.md)。  
   
- 完成的图只会为成功创建的代码显示依赖关系。 如果某些组件出现生成错误，这些错误会出现在代码图上。 在基于代码图做出体系结构决策时，请确保组件实际生成并且具有依赖项。  
+  完成的图只会为成功创建的代码显示依赖关系。 如果某些组件出现生成错误，这些错误会出现在代码图上。 在基于代码图做出体系结构决策时，请确保组件实际生成并且具有依赖项。  
   
 ##  <a name="SavingExporting"></a> 共享代码图  
   

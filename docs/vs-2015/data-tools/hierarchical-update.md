@@ -27,12 +27,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 550eedd1157d05f180e2229cec7594ae48c2fe45
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 342d51b5057ac0c17e92db1d4c454962b50df19a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239377"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843387"
 ---
 # <a name="hierarchical-update"></a>分层更新
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,14 +89,14 @@ ms.locfileid: "49239377"
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新代码以在保存前提交对相关表的更改  
   
-1.  双击**保存**按钮<xref:System.Windows.Forms.BindingNavigator>以打开**Form1**代码编辑器中。  
+1. 双击**保存**按钮<xref:System.Windows.Forms.BindingNavigator>以打开**Form1**代码编辑器中。  
   
-2.  在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 中的代码**保存**按钮单击事件应如下所示：  
+2. 在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 中的代码**保存**按钮单击事件应如下所示：  
   
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
+    [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#1)]
+    [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#1)]  
   
- 除了在将数据保存到数据库之前提交对相关子表的更改外，你可能还需要在向数据集添加新子记录之前先提交新创建的父记录。 也就是说，你可能需要先向数据集添加新父记录 (Customer)，然后外键约束才允许将新子记录 (Orders) 添加到数据集中。 为实现这一点，可以使用子 `BindingSource.AddingNew` 事件。  
+   除了在将数据保存到数据库之前提交对相关子表的更改外，你可能还需要在向数据集添加新子记录之前先提交新创建的父记录。 也就是说，你可能需要先向数据集添加新父记录 (Customer)，然后外键约束才允许将新子记录 (Orders) 添加到数据集中。 为实现这一点，可以使用子 `BindingSource.AddingNew` 事件。  
   
 > [!NOTE]
 >  是否必须提交新的父记录取决于用于绑定到数据源的控件的类型。 在本演练中，使用单独的控件绑定到父表。 这需要额外的代码来提交新的父记录。 如果父记录中的复杂绑定控件改为显示类似于<xref:System.Windows.Forms.DataGridView>、 额外<xref:System.Windows.Forms.BindingSource.EndEdit%2A>调用父记录不是必需的。 这是因为这类控件的基础数据绑定功能可以提交新记录。  

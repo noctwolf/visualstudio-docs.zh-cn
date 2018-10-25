@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a30659fcfd1b373360dc7bf9e9e53ae442ac4992
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 06b2d1e537152020b42fdff38fab1200b9cf7668
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908530"
 ---
 # <a name="mip-map-generation-variant"></a>Mip-map 生成变量
 对非呈现器目标的纹理启用 mip 贴图。  
@@ -30,19 +30,19 @@ ms.locfileid: "39510144"
 ## <a name="remarks"></a>备注  
  每次调用创建源纹理的 `ID3D11Device::CreateTexture2D` 时，都强制执行 mip 贴图生成。 Mip 贴图生成时在传递的 D3D11_TEXTURE2D_DESC 对象，具体而言，将强制`pDesc`描述不变的着色器资源; 即：  
   
--   BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
+- BindFlags 成员仅设置 D3D11_BIND_SHADER_RESOURCE 标志。  
   
--   将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
+- 将 Usage 成员设置为 D3D11_USAGE_DEFAULT 或 D3D11_USAGE_IMMUTABLE。  
   
--   将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
+- 将 CPUAccessFlags 成员设置为 0（无 CPU 访问）。  
   
--   SampleDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
+- SampleDesc 成员将其 Count 成员设置为 1（不支持多重采样抗锯齿 (MSAA)）。  
   
--   将 MipLevels 成员设置为 1（无现有 mip 贴图）。  
+- 将 MipLevels 成员设置为 1（无现有 mip 贴图）。  
   
- 当应用程序提供初始数据时，纹理格式必须支持自动 mip 贴图生成（由 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN 确定），除非该格式为 BC1、BC2 或 BC3；否则，纹理不会发生修改，并且提供初始数据时也不会生成任何 mip 贴图。  
+  当应用程序提供初始数据时，纹理格式必须支持自动 mip 贴图生成（由 D3D11_FORMAT_SUPPORT_MIP_AUTOGEN 确定），除非该格式为 BC1、BC2 或 BC3；否则，纹理不会发生修改，并且提供初始数据时也不会生成任何 mip 贴图。  
   
- 如果已为纹理自动生成 mip 贴图，则会在播放期间修改对 `ID3D11Device::CreateShaderResourceView` 的调用，以在纹理采样期间使用 mip 链。  
+  如果已为纹理自动生成 mip 贴图，则会在播放期间修改对 `ID3D11Device::CreateShaderResourceView` 的调用，以在纹理采样期间使用 mip 链。  
   
 ## <a name="example"></a>示例  
  **Mip 贴图生成**可以通过使用如下代码重现变体：  

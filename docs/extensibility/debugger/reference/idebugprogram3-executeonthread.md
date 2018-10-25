@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram3::ExecuteOnThread |Microsoft 文档
+title: IDebugProgram3::ExecuteOnThread |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aff643014da16ed9644573a77cb8444836d713d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: afca4a97380d010897ca1dfb7c6229f3f1897ef9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117057"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865935"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
-执行调试程序。 线程返回以便在哪个线程执行程序时用户正在查看调试器信息。  
+执行调试程序。 线程将返回以授予用户查看哪个线程执行程序时的调试程序信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,16 +44,16 @@ int ExecuteOnThread(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 有三种不同方法，调试器可以恢复之后停止执行：  
+ 有三种不同方法，调试器可以恢复后停止执行：  
   
--   执行： 取消任何以前的步骤，并运行直到下一个断点，依此类推。  
+- 执行： 取消任何上一步骤中，并运行到下一个断点，依此类推。  
   
--   步骤： 取消任何旧的步骤，并运行新的步骤完成之前。  
+- 步骤： 取消任何旧的步骤，并运行，直到新的步骤完成。  
   
--   继续： 再次运行，并保留任何旧的步骤活动。  
+- 继续： 再次运行，并保留任何旧步骤活动。  
   
- 线程传递给`ExecuteOnThread`确定哪个步骤取消时很有用。 如果你不知道运行的线程，执行将取消所有步骤。 知识的线程，只需取消活动线程的步骤。  
+  在线程传递给`ExecuteOnThread`决定哪个步骤取消时很有用。 如果不知道运行的线程，执行将取消所有步骤。 线程的信息后，只需取消对活动线程的步骤。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md)   
  [IDebugProgram3](../../../extensibility/debugger/reference/idebugprogram3.md)

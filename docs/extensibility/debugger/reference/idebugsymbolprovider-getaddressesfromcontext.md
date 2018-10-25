@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetAddressesFromContext |Microsoft 文档
+title: IDebugSymbolProvider::GetAddressesFromContext |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09bc0d4fc0a723c259e2897b95abbd8611b10c7d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 94920e72b7d83e45fc7d7e49849f3c1983b180ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931514"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 此方法将文档上下文映射到调试地址的数组。  
@@ -50,23 +50,23 @@ int GetAddressesFromContext(
  [in]文档上下文中。  
   
  `fStatmentOnly`  
- [in]如果为 TRUE，限制到单个语句的调试地址。  
+ [in]如果为 TRUE，则限制为单个语句的调试地址。  
   
  `ppEnumBegAddresses`  
- [out]返回与此语句或行关联的起始调试地址的枚举数。  
+ [out]返回与此语句或行关联的起始调试地址的枚举器。  
   
  `ppEnumEndAddresses`  
- [out]返回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)关联与此语句或行的结束调试地址的枚举数。  
+ [out]返回[IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)结束的调试地址与此语句或行关联的枚举器。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 文档上下文通常指示源行组成的范围。 此方法提供的起始和结束调试地址相关的替换为以下行。 某些语言允许跨多个行或包含多个语句的行的语句。 此方法提供一个标志，用于限制到单个语句的调试地址。  
+ 文档上下文通常指示源行组成的范围。 此方法提供的起始和结束调试地址关联使用以下代码行。 某些语言允许跨多个行或包含多个语句的行的语句。 此方法提供了一个标志，用于限制到单个语句的调试地址。  
   
- 它有可能有多个调试地址，如下所示模板的大小写的单个语句。  
+ 很可能具有多个调试地址，如下所示的模板大小写的单个语句。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)   
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -131,12 +131,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8e3a49283763a8de2bec7cee003610b75cc62ce2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbd84b13757e4d742896c0450bd4661b5c4d06cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297162"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900158"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>对函数参数和返回值进行批注
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -304,92 +304,92 @@ ms.locfileid: "49297162"
   
  **批注和说明**  
   
--   `_Outptr_`  
+- `_Outptr_`  
   
-     参数不能为 null，并后状态中指向的位置不能为 null，并且必须是有效的。  
+   参数不能为 null，并后状态中指向的位置不能为 null，并且必须是有效的。  
   
--   `_Outptr_opt_`  
+- `_Outptr_opt_`  
   
-     参数可以为 null，但后状态中指向的位置不能为 null，并且必须是有效的。  
+   参数可以为 null，但后状态中指向的位置不能为 null，并且必须是有效的。  
   
--   `_Outptr_result_maybenull_`  
+- `_Outptr_result_maybenull_`  
   
-     参数不能为 null，而在后状态中指向的位置可以为空。  
+   参数不能为 null，而在后状态中指向的位置可以为空。  
   
--   `_Outptr_opt_result_maybenull_`  
+- `_Outptr_opt_result_maybenull_`  
   
-     参数可以为 null，而在后状态中指向的位置可以为空。  
+   参数可以为 null，而在后状态中指向的位置可以为空。  
   
- 下表中其他的子字符串插入批注名称，以进一步限定批注的含义。  各种子字符串`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。  
+  下表中其他的子字符串插入批注名称，以进一步限定批注的含义。  各种子字符串`_z`， `_COM_`， `_buffer_`， `_bytebuffer_`，和`_to_`。  
   
 > [!IMPORTANT]
 >  如果批注的接口，COM 使用这些批注 COM 窗体。 不要与任何其他类型接口使用 COM 批注。  
   
  **批注和说明**  
   
--   `_Outptr_result_z_`  
+- `_Outptr_result_z_`  
   
-     `_Outptr_opt_result_z_`  
+   `_Outptr_opt_result_z_`  
   
-     `_Outptr_result_maybenull_z_`  
+   `_Outptr_result_maybenull_z_`  
   
-     `_Ouptr_opt_result_maybenull_z_`  
+   `_Ouptr_opt_result_maybenull_z_`  
   
-     返回的指针具有`_Null_terminated_`批注。  
+   返回的指针具有`_Null_terminated_`批注。  
   
--   `_COM_Outptr_`  
+- `_COM_Outptr_`  
   
-     `_COM_Outptr_opt_`  
+   `_COM_Outptr_opt_`  
   
-     `_COM_Outptr_result_maybenull_`  
+   `_COM_Outptr_result_maybenull_`  
   
-     `_COM_Outptr_opt_result_maybenull_`  
+   `_COM_Outptr_opt_result_maybenull_`  
   
-     返回的指针具有 COM 语义，并因此执行`_On_failure_`后置条件返回的指针为 null。  
+   返回的指针具有 COM 语义，并因此执行`_On_failure_`后置条件返回的指针为 null。  
   
--   `_Outptr_result_buffer_(s)`  
+- `_Outptr_result_buffer_(s)`  
   
-     `_Outptr_result_bytebuffer_(s)`  
+   `_Outptr_result_bytebuffer_(s)`  
   
-     `_Outptr_opt_result_buffer_(s)`  
+   `_Outptr_opt_result_buffer_(s)`  
   
-     `_Outptr_opt_result_bytebuffer_(s)`  
+   `_Outptr_opt_result_bytebuffer_(s)`  
   
-     返回的指针指向有效的缓冲区大小的`s`元素或字节数。  
+   返回的指针指向有效的缓冲区大小的`s`元素或字节数。  
   
--   `_Outptr_result_buffer_to_(s, c)`  
+- `_Outptr_result_buffer_to_(s, c)`  
   
-     `_Outptr_result_bytebuffer_to_(s, c)`  
+   `_Outptr_result_bytebuffer_to_(s, c)`  
   
-     `_Outptr_opt_result_buffer_to_(s,c)`  
+   `_Outptr_opt_result_buffer_to_(s,c)`  
   
-     `_Outptr_opt_result_bytebuffer_to_(s,c)`  
+   `_Outptr_opt_result_bytebuffer_to_(s,c)`  
   
-     返回的指针指向大小的缓冲区`s`元素或字节数，其中第一个`c`有效。  
+   返回的指针指向大小的缓冲区`s`元素或字节数，其中第一个`c`有效。  
   
- 某些接口约定假设输出参数付之东流失败。  除了显式 COM 代码下, 表中的窗体是首选。  对于 COM 代码，使用上一节中列出的相应 COM 窗体。  
+  某些接口约定假设输出参数付之东流失败。  除了显式 COM 代码下, 表中的窗体是首选。  对于 COM 代码，使用上一节中列出的相应 COM 窗体。  
   
- **批注和说明**  
+  **批注和说明**  
   
--   `_Result_nullonfailure_`  
+- `_Result_nullonfailure_`  
   
-     修改其他批注。 将结果设置为 null，如果函数失败。  
+   修改其他批注。 将结果设置为 null，如果函数失败。  
   
--   `_Result_zeroonfailure_`  
+- `_Result_zeroonfailure_`  
   
-     修改其他批注。 如果函数失败，将结果设置为零。  
+   修改其他批注。 如果函数失败，将结果设置为零。  
   
--   `_Outptr_result_nullonfailure_`  
+- `_Outptr_result_nullonfailure_`  
   
-     如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注适用于非可选参数。  
+   如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注适用于非可选参数。  
   
--   `_Outptr_opt_result_nullonfailure_`  
+- `_Outptr_opt_result_nullonfailure_`  
   
-     如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注是可选参数。  
+   如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注是可选参数。  
   
--   `_Outref_result_nullonfailure_`  
+- `_Outref_result_nullonfailure_`  
   
-     如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注是为引用参数。  
+   如果函数失败，返回的指针将点到有效的缓冲区，如果函数成功，则为 null。 此批注是为引用参数。  
   
 ## <a name="output-reference-parameters"></a>输出引用参数  
  引用参数的一个常见用途是用于输出参数。  对于简单的输出引用参数 — 例如， `int&`—`_Out_`提供正确的语义。  但是，当输出值为指针 — 例如`int *&`— 等效指针批注等`_Outptr_ int **`不提供正确的语义。  若要简洁地表示为指针类型的输出引用参数的语义，使用这些复合批注：  

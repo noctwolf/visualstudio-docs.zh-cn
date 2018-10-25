@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::GetICorDebugValue |Microsoft 文档
+title: IDebugObject2::GetICorDebugValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82315e1b2170f38cae296e2a9131f4b235add26b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 80a70454bd28c3b59e53ee9bc1222361291e2399
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114490"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861093"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
-获取一个表示与此对象关联的值的托管的代码对象。  
+获取表示与此对象关联的值的托管的代码对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int GetICorDebugValue(
   
 #### <a name="parameters"></a>参数  
  `ppUnk`  
- [out]`IUnknown`表示此别名的接口。 此接口可以查询有关`ICorDebugValue`接口。  
+ [out]`IUnknown`接口，表示此别名。 此接口可以查询有关`ICorDebugValue`接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
  `ICorDebugValue`对象是一个公共语言运行时接口，表示的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

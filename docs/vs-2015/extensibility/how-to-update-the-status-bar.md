@@ -15,12 +15,12 @@ ms.assetid: 7500c8a7-4913-4818-a88b-bfd1b9887cb6
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: cd784b718fb370ec8ce04937119a9d64995cdd8d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19b6c46615a41f25c5a9f3b979f1a1eed36b25f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948482"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何： 更新状态栏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ ms.locfileid: "49301088"
 ## <a name="robust-programming"></a>可靠编程  
  一个**状态栏**包含四个单独的字段：  
   
--   状态文本  
+- 状态文本  
   
--   进度栏  
+- 进度栏  
   
--   动画的图标  
+- 动画的图标  
   
--   编辑器的信息  
+- 编辑器的信息  
   
- 有关详细信息，请参阅[状态栏](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)。  
+  有关详细信息，请参阅[状态栏](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)。  
   
- IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。  
+  IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。  
   
- VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。  
+  VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。  
   
 ## <a name="see-also"></a>请参阅  
  [状态栏](http://msdn.microsoft.com/library/fcbc5029-1aab-4e14-adf7-419038a4935e)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiadatasource:: Loadandvalidatedatafrompdb |Microsoft 文档'
+title: 'Idiadatasource:: Loadandvalidatedatafrompdb |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e298edac96b311e8e25e41698aaa3db539ec154
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 272b43f7e33ce495aabd53f33022bdeaf4b951fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948897"
 ---
 # <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
-打开和验证程序数据库 (.pdb) 文件匹配的签名信息提供，并准备作为调试数据源的.pdb 文件。  
+打开和验证程序数据库 (.pdb) 文件匹配，所提供的签名信息并准备将.pdb 文件作为调试数据源。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,34 +40,34 @@ HRESULT loadAndValidateDataFromPdb (
  [in].Pdb 文件的路径。  
   
  `pcsig70`  
- [in]要对照的.pdb 文件签名验证的 GUID 签名。 仅.pdb 文件中[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和更高版本具有 GUID 签名。  
+ [in]要针对.pdb 文件签名验证的 GUID 签名。 仅.pdb 文件在[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和更高版本具有 GUID 签名。  
   
  `sig`  
- [in]要对照的.pdb 文件签名验证的 32 位签名。  
+ [in]要针对.pdb 文件签名验证的 32 位签名。  
   
  `age`  
- [in]若要验证的期限值。 保留时间不一定对应于任何已知的时间值，它用于确定.pdb 文件是否与相应的.exe 文件不同步。  
+ [in]若要验证的生存期值。 为任何已知的时间值不一定对应保留时间，使用它来确定.pdb 文件是否与相应的.exe 文件不同步。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示可能的此方法的返回值。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了可能的此方法的返回值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |E_PDB_NOT_FOUND|无法打开该文件，或该文件具有无效的格式。|  
 |E_PDB_FORMAT|尝试访问具有过时的格式的文件。|  
 |E_PDB_INVALID_SIG|签名不匹配。|  
-|E_PDB_INVALID_AGE|保留时间不匹配。|  
+|E_PDB_INVALID_AGE|年龄不匹配。|  
 |E_INVALIDARG|参数无效。|  
-|E_UNEXPECTED|已准备好的数据源。|  
+|E_UNEXPECTED|已准备好数据源。|  
   
 ## <a name="remarks"></a>备注  
- .Pdb 文件包含签名和保留时间值。 在.exe 或.dll 文件相匹配的.pdb 文件中复制这些值。 准备之前数据源，此方法验证该命名的.pdb 文件的签名和年龄匹配提供的值。  
+ .Pdb 文件包含签名和年龄值。 .Exe 或.dll 文件相匹配的.pdb 文件中复制这些值。 在准备数据源之前, 此方法验证命名的.pdb 文件的签名和年龄匹配提供的值。  
   
- 若要加载的.pdb 文件而不进行验证，使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
+ 若要加载的.pdb 文件而不进行验证，请使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
   
- 若要访问数据加载过程 （通过回调机制），使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
+ 若要访问的数据加载过程 （通过一种回调机制），请使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
- 若要直接从内存中加载的.pdb 文件，使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
+ 若要直接从内存加载的.pdb 文件，请使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
   
 ## <a name="example"></a>示例  
   

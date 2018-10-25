@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6421df0109d68d2647cafff5713aecb297c3536d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 6a9b7540a42dbaf7b7079793158d33d761199720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38797794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949898"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练： 创建第一个 VSTO 外接程序 Excel
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。  
@@ -32,15 +32,15 @@ ms.locfileid: "38797794"
   
  本演练阐释了以下任务：  
   
--   为 Excel 创建 Excel VSTO 外接程序项目。  
+- 为 Excel 创建 Excel VSTO 外接程序项目。  
   
--   编写代码，使用 Excel 对象模型在保存工作簿时向工作簿中添加文本。  
+- 编写代码，使用 Excel 对象模型在保存工作簿时向工作簿中添加文本。  
   
--   生成并运行项目，以对其进行测试。  
+- 生成并运行项目，以对其进行测试。  
   
--   清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
+- 清理已完成的项目，使 VSTO 外接程序在开发计算机上不再自动运行。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -78,20 +78,20 @@ ms.locfileid: "38797794"
   
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>向保存的工作簿中添加一行文本  
   
-1.  在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 新的代码定义 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件处理程序，该事件在保存工作簿时引发。  
+1. 在 ThisAddIn 代码文件中，将下面的代码添加到 `ThisAddIn` 类中。 新的代码定义 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件的事件处理程序，该事件在保存工作簿时引发。  
   
-     用户保存工作簿时，该事件处理程序会将新文本添加到活动工作簿的开头。  
+    用户保存工作簿时，该事件处理程序会将新文本添加到活动工作簿的开头。  
   
-     [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
+    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
+    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]  
   
-2.  如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_WorkbookBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件连接在一起。  
+2. 如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_WorkbookBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件连接在一起。  
   
-     [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
+    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]  
   
- 为了在保存工作簿后对其进行修改，前面的代码示例使用了以下对象：  
+   为了在保存工作簿后对其进行修改，前面的代码示例使用了以下对象：  
   
--   `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Excel.Application> 对象，该对象表示 Excel 的当前实例。  
+-   `ThisAddIn` 类的 `Application` 字段。 `Application` 字段返回一个 <xref:Microsoft.Office.Interop.Excel.Application> 对象，该对象表示 Excel 的当前实例。  
   
 -   `Wb` 事件的事件处理程序的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 参数。 `Wb` 参数是一个 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象，用于表示已保存的工作簿。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 911a984b5d31e5eebe74ab636b44f6d6e2aa9bb8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cdd1e740861765958c9115b8112dacd4b338b2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812902"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>演练：以编程方式捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,18 +73,18 @@ ms.locfileid: "49298150"
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>定义 IDXGraphicsAnalysis 接口  
   
--   在与你包括头文件的相同文件中定义 IDXGraphicsAnalysis 接口。  
+- 在与你包括头文件的相同文件中定义 IDXGraphicsAnalysis 接口。  
   
-    ```  
-    interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
-    IDXGraphicsAnalysis : public IUnknown  
-    {  
-        STDMETHOD_(void, BeginCapture)() PURE;  
-        STDMETHOD_(void, EndCapture)() PURE;  
-    };  
-    ```  
+  ```  
+  interface DECLSPEC_UUID("9f251514-9d4d-4902-9d60-18988ab7d4b5") DECLSPEC_NOVTABLE  
+  IDXGraphicsAnalysis : public IUnknown  
+  {  
+      STDMETHOD_(void, BeginCapture)() PURE;  
+      STDMETHOD_(void, EndCapture)() PURE;  
+  };  
+  ```  
   
- 为了方便起见，你可以在一个新的头文件中执行这些步骤，然后将其包括到应用中需要它的位置上。  
+  为了方便起见，你可以在一个新的头文件中执行这些步骤，然后将其包括到应用中需要它的位置上。  
   
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>获取 IDXGraphicsAnalysis 接口  
  在可以从 DirectX 11.2 中捕获图形信息之前，你必须获取 DXGI 调试接口。  
@@ -171,23 +171,23 @@ ms.locfileid: "49298150"
   
 ##### <a name="to-configure-the-name-and-location-of-the-graphics-log-file"></a>配置图形日志文件的名称和位置  
   
--   若要阻止将图形日志写入临时目录，请在 `#include <vsgcapture.h>` 行之前添加以下内容：  
+- 若要阻止将图形日志写入临时目录，请在 `#include <vsgcapture.h>` 行之前添加以下内容：  
   
-    ```  
-    #define DONT_SAVE_VSGLOG_TO_TEMP  
-    ```  
+  ```  
+  #define DONT_SAVE_VSGLOG_TO_TEMP  
+  ```  
   
-     你可以定义此值，以将图形日志写入与工作目录相关的位置，或者如果 `VSG_DEFAULT_RUN_FILENAME` 的定义是绝对路径，则写入绝对路径。  
+   你可以定义此值，以将图形日志写入与工作目录相关的位置，或者如果 `VSG_DEFAULT_RUN_FILENAME` 的定义是绝对路径，则写入绝对路径。  
   
--   若要将图形日志保存到不同位置，或向其提供不同的文件名，请在 `#include <vsgcapture.h>` 行之前添加以下内容：  
+- 若要将图形日志保存到不同位置，或向其提供不同的文件名，请在 `#include <vsgcapture.h>` 行之前添加以下内容：  
   
-    ```  
-    #define VSG_DEFAULT_RUN_FILENAME <filename>  
-    ```  
+  ```  
+  #define VSG_DEFAULT_RUN_FILENAME <filename>  
+  ```  
   
-     如果你不执行此步骤，则文件名为 default.vsglog。 如果你未定义 `DONT_SAVE_VSGLOG_TO_TEMP`，则该文件的位置相对于临时目录；否则，将相对于工作目录或位于其他位置（如果你指定了绝对文件名）。  
+   如果你不执行此步骤，则文件名为 default.vsglog。 如果你未定义 `DONT_SAVE_VSGLOG_TO_TEMP`，则该文件的位置相对于临时目录；否则，将相对于工作目录或位于其他位置（如果你指定了绝对文件名）。  
   
- 有关[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，临时目录的位置是特定于每个用户和应用程序，并通常位于某个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，通常位于某个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
+  有关[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，临时目录的位置是特定于每个用户和应用程序，并通常位于某个位置，例如 C:\users\\*用户名*\AppData\Local\Packages\\ *包系列名称*\TempState\\。 对于桌面应用，临时目录的位置特定于每个用户，通常位于某个位置，例如 C:\Users\\*用户名*\AppData\Local\Temp\\。  
   
 > [!NOTE]
 >  若要写入特定位置，你必须拥有写入到该位置的权限；否则，将发生错误。 请牢记，就可以写入数据的位置而言，[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用比桌面应用更受限制，而且可能需要进行额外配置才能写入某些位置。  

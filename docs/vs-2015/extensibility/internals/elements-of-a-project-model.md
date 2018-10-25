@@ -17,12 +17,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c8beb028ddf2d7a7921c753b39601ee297a75746
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c062ce943e2ee42cd90877827ab7b92ee33c871b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883648"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,20 +33,20 @@ ms.locfileid: "49248555"
   
  其他实现注意事项：  
   
--   单个项目模型可以包含多个项目类型。  
+- 单个项目模型可以包含多个项目类型。  
   
--   与 Guid 单独注册项目类型和附随项目工厂。  
+- 与 Guid 单独注册项目类型和附随项目工厂。  
   
--   每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]UI。 例如，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]模板初始化什么最终成为.vcproj 文件。  
+- 每个项目必须有一个模板文件或向导来初始化新的项目文件，当用户创建新的项目通过[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]UI。 例如，[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]模板初始化什么最终成为.vcproj 文件。  
   
- 下图显示了主要接口、 服务和对象组成的典型项目中实现。 应用程序帮助器，HierUtil7，可用于创建基础对象和其他编程的样本。 HierUtil7 应用程序帮助程序的详细信息，请参阅[不在生成： 使用 HierUtil7 项目类以实现项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
+  下图显示了主要接口、 服务和对象组成的典型项目中实现。 应用程序帮助器，HierUtil7，可用于创建基础对象和其他编程的样本。 HierUtil7 应用程序帮助程序的详细信息，请参阅[不在生成： 使用 HierUtil7 项目类以实现项目类型 （c + +）](http://msdn.microsoft.com/en-us/a5c16a09-94a2-46ef-87b5-35b815e2f346)。  
   
- ![Visual Studio 项目模型图](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
-项目模型  
+  ![Visual Studio 项目模型图](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
+  项目模型  
   
- 有关接口和上图中列出的服务以及其他未包含在关系图中的可选接口的详细信息，请参阅[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)。  
+  有关接口和上图中列出的服务以及其他未包含在关系图中的可选接口的详细信息，请参阅[项目模型核心组件](../../extensibility/internals/project-model-core-components.md)。  
   
- 项目可以支持命令，因此必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口来参与命令路由通过命令上下文的 Guid。  
+  项目可以支持命令，因此必须实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口来参与命令路由通过命令上下文的 Guid。  
   
 ## <a name="see-also"></a>请参阅  
  [清单： 创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)   

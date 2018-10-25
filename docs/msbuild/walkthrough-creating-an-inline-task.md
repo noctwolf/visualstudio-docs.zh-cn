@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a69fcd70350a000561464713ac18551daf38059a
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2091bfa5408c85e4fb4dd4b8973a74d1da8b7132
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828658"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>演练：创建内联任务
 通常，MSBuild 任务通过编译实现 <xref:Microsoft.Build.Framework.ITask> 接口的类进行创建。 从 .NET Framework 版本 4 开始，可以在项目文件中创建内联任务。 无需创建单独的程序集来承载该任务。 有关详细信息，请参阅[内联任务](../msbuild/msbuild-inline-tasks.md)。  
@@ -63,187 +63,187 @@ ms.locfileid: "39152058"
   
 #### <a name="to-add-a-basic-hello-task"></a>添加基本 Hello 任务  
   
-1.  在根 `Project` 节点中，将 `DefaultTargets` 属性更改为 `TestBuild`。生成的 `Project` 节点应类似于本示例：  
+1. 在根 `Project` 节点中，将 `DefaultTargets` 属性更改为 `TestBuild`。生成的 `Project` 节点应类似于本示例：  
   
-    ```xml
-    <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    ```
+   ```xml
+   <Project ToolsVersion="4.0" DefaultTargets="TestBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+   ```
   
-2.  在 `</Project>` 标记之前将如下内联任务和目标添加到项目文件。  
+2. 在 `</Project>` 标记之前将如下内联任务和目标添加到项目文件。  
   
-    ```xml  
-    <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup />  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage("Hello, world!", MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Hello />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Hello" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup />  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage("Hello, world!", MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Hello />  
+   </Target>  
+   ```  
   
-3.  保存项目文件。  
+3. 保存项目文件。  
   
- 此代码会创建一个名为 Hello 的内联任务，且不具有任何参数、引用或 `Using` 语句。 此 Hello 任务仅包含一行代码，这行代码会在默认日志记录设备上（通常在控制台窗口）显示一则问候消息。  
+   此代码会创建一个名为 Hello 的内联任务，且不具有任何参数、引用或 `Using` 语句。 此 Hello 任务仅包含一行代码，这行代码会在默认日志记录设备上（通常在控制台窗口）显示一则问候消息。  
   
 ### <a name="run-the-hello-task"></a>运行 Hello 任务  
  使用“命令提示符窗口”运行 MSBuild，以构造 Hello 任务并处理调用该任务的 TestBuild 目标。  
   
 ##### <a name="to-run-the-hello-task"></a>运行 Hello 任务  
   
-1.  单击“开始”，然后单击“所有程序”，找到“Visual Studio Tools”文件夹并单击“Visual Studio 命令提示符”。  
+1. 单击“开始”，然后单击“所有程序”，找到“Visual Studio Tools”文件夹并单击“Visual Studio 命令提示符”。  
   
-2.  在“命令提示符窗口”中找到包含项目文件的文件夹（本例中为 D:\InlineTasks\InlineTasks\\）。  
+2. 在“命令提示符窗口”中找到包含项目文件的文件夹（本例中为 D:\InlineTasks\InlineTasks\\）。  
   
-3.  无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会生成 InlineTasks.csproj 文件并处理将调用 Hello 任务的默认目标 TestBuild。  
+3. 无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会生成 InlineTasks.csproj 文件并处理将调用 Hello 任务的默认目标 TestBuild。  
   
-4.  在“命令提示符窗口”中检查输出。 应看到此行：  
+4. 在“命令提示符窗口”中检查输出。 应看到此行：  
   
-     `Hello, world!`  
+    `Hello, world!`  
   
-    > [!NOTE]
-    >  如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。  
+   > [!NOTE]
+   >  如果未显示问候消息，请尝试再次保存项目文件，然后运行 Hello 任务。  
   
- 通过在代码编辑器和“命令提示符窗口”之间进行交替，可更改项目文件并快速查看结果。  
+   通过在代码编辑器和“命令提示符窗口”之间进行交替，可更改项目文件并快速查看结果。  
   
 ## <a name="define-the-echo-task"></a>定义 Echo 任务  
  创建一个会接受字符串参数并在默认日志记录设备上显示字符串的内联任务。  
   
 #### <a name="to-define-the-echo-task"></a>定义 Echo 任务  
   
-1.  在代码编辑器中，使用以下代码替换 Hello 任务和 TestBuild 目标。  
+1. 在代码编辑器中，使用以下代码替换 Hello 任务和 TestBuild 目标。  
   
-    ```xml  
-    <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Text Required="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          Log.LogMessage(Text, MessageImportance.High);  
-        </Code>  
-      </Task>  
-    </UsingTask>  
-    <Target Name="TestBuild">  
-      <Echo Text="Greetings!" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Echo" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Text Required="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         Log.LogMessage(Text, MessageImportance.High);  
+       </Code>  
+     </Task>  
+   </UsingTask>  
+   <Target Name="TestBuild">  
+     <Echo Text="Greetings!" />  
+   </Target>  
+   ```  
   
-2.  在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 Echo 任务的默认目标 TestBuild。  
+2. 在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 Echo 任务的默认目标 TestBuild。  
   
-3.  在“命令提示符窗口”中检查输出。 应看到此行：  
+3. 在“命令提示符窗口”中检查输出。 应看到此行：  
   
-     `Greetings!`  
+    `Greetings!`  
   
- 此代码定义名为 Echo 的内联任务，且仅具有一个所需的输入参数 Text。 默认情况下，参数为 System.String 类型。 TestBuild 目标调用 Echo 任务时会设置 Text 参数的值。  
+   此代码定义名为 Echo 的内联任务，且仅具有一个所需的输入参数 Text。 默认情况下，参数为 System.String 类型。 TestBuild 目标调用 Echo 任务时会设置 Text 参数的值。  
   
 ## <a name="define-the-adder-task"></a>定义 Adder 任务  
  创建一个会添加两个整数参数并将其总和作为 MSBuild 属性发出的内联任务。  
   
 #### <a name="to-define-the-adder-task"></a>定义 Adder 任务  
   
-1.  在代码编辑器中，使用以下代码替换 Echo 任务和 TestBuild 目标。  
+1. 在代码编辑器中，使用以下代码替换 Echo 任务和 TestBuild 目标。  
   
-    ```xml  
-    <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <A ParameterType="System.Int32" Required="true" />  
-        <B ParameterType="System.Int32" Required="true" />  
-        <C ParameterType="System.Int32" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Code Type="Fragment" Language="cs">  
-          C = A + B;  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <Adder A="4" B="5">  
-        <Output PropertyName="Sum" TaskParameter="C" />  
-      </Adder>  
-      <Message Text="The sum is $(Sum)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="Adder" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <A ParameterType="System.Int32" Required="true" />  
+       <B ParameterType="System.Int32" Required="true" />  
+       <C ParameterType="System.Int32" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Code Type="Fragment" Language="cs">  
+         C = A + B;  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <Adder A="4" B="5">  
+       <Output PropertyName="Sum" TaskParameter="C" />  
+     </Adder>  
+     <Message Text="The sum is $(Sum)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 Echo 任务的默认目标 TestBuild。  
+2. 在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 Echo 任务的默认目标 TestBuild。  
   
-3.  在“命令提示符窗口”中检查输出。 应看到此行：  
+3. 在“命令提示符窗口”中检查输出。 应看到此行：  
   
-     `The sum is 9`  
+    `The sum is 9`  
   
- 此代码定义的内联任务名为 Adder，具有两个所需的整数输入参数（A 和 B）和一个整数输出参数 (C)。Adder 任务会添加这两个输入参数，并在输出参数中返回总和。 总和作为 MSBuild 属性 `Sum` 发出。 TestBuild 目标调用 Adder 任务时会设置输入参数的值。  
+   此代码定义的内联任务名为 Adder，具有两个所需的整数输入参数（A 和 B）和一个整数输出参数 (C)。Adder 任务会添加这两个输入参数，并在输出参数中返回总和。 总和作为 MSBuild 属性 `Sum` 发出。 TestBuild 目标调用 Adder 任务时会设置输入参数的值。  
   
 ## <a name="define-the-regx-task"></a>定义 RegX 任务  
  创建一个内联任务，该内联任务接受项组和正则表达式，并返回其中包含与此表达式相匹配的文件内容的所有项列表。  
   
 #### <a name="to-define-the-regx-task"></a>定义 RegX 任务  
   
-1.  在代码编辑器中，使用以下代码替换 Adder 任务和 TestBuild 目标。  
+1. 在代码编辑器中，使用以下代码替换 Adder 任务和 TestBuild 目标。  
   
-    ```xml  
-    <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
-      <ParameterGroup>  
-        <Expression Required="true" />  
-        <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
-        <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
-      </ParameterGroup>  
-      <Task>  
-        <Using Namespace="System.Text.RegularExpressions"/>  
-        <Code Type="Fragment" Language="cs">  
-    <![CDATA[  
-          if (Files.Length > 0)  
-          {  
-            Result = new TaskItem[Files.Length];  
-            for (int i = 0; i < Files.Length; i++)  
-            {  
-              ITaskItem item = Files[i];  
-              string path = item.GetMetadata("FullPath");  
-              using(StreamReader rdr = File.OpenText(path))  
-              {  
-                if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
-                {  
-                  Result[i] = new TaskItem(item.ItemSpec);  
-                }  
-              }  
-            }  
-          }  
-    ]]>  
-        </Code>  
-      </Task>  
-    </UsingTask>    
-    <Target Name="TestBuild">  
-      <RegX Expression="public|protected" Files="@(Compile)">  
-        <Output ItemName="MatchedFiles" TaskParameter="Result" />  
-      </RegX>  
-      <Message Text="Input files: @(Compile)" Importance="High" />  
-      <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
-    </Target>  
-    ```  
+   ```xml  
+   <UsingTask TaskName="RegX" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >  
+     <ParameterGroup>  
+       <Expression Required="true" />  
+       <Files ParameterType="Microsoft.Build.Framework.ITaskItem[]" Required="true" />  
+       <Result ParameterType="Microsoft.Build.Framework.ITaskItem[]" Output="true" />  
+     </ParameterGroup>  
+     <Task>  
+       <Using Namespace="System.Text.RegularExpressions"/>  
+       <Code Type="Fragment" Language="cs">  
+   <![CDATA[  
+         if (Files.Length > 0)  
+         {  
+           Result = new TaskItem[Files.Length];  
+           for (int i = 0; i < Files.Length; i++)  
+           {  
+             ITaskItem item = Files[i];  
+             string path = item.GetMetadata("FullPath");  
+             using(StreamReader rdr = File.OpenText(path))  
+             {  
+               if (Regex.Match(rdr.ReadToEnd(), Expression).Success)  
+               {  
+                 Result[i] = new TaskItem(item.ItemSpec);  
+               }  
+             }  
+           }  
+         }  
+   ]]>  
+       </Code>  
+     </Task>  
+   </UsingTask>    
+   <Target Name="TestBuild">  
+     <RegX Expression="public|protected" Files="@(Compile)">  
+       <Output ItemName="MatchedFiles" TaskParameter="Result" />  
+     </RegX>  
+     <Message Text="Input files: @(Compile)" Importance="High" />  
+     <Message Text="Matched files: @(MatchedFiles)" Importance="High" />  
+   </Target>  
+   ```  
   
-2.  在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 RegX 任务的默认目标 TestBuild。  
+2. 在“命令提示符窗口”中，无需命令开关，键入“msbuild”，然后按 Enter。 默认情况下，这会处理调用 RegX 任务的默认目标 TestBuild。  
   
-3.  在“命令提示符窗口”中检查输出。 应看到这些行：  
+3. 在“命令提示符窗口”中检查输出。 应看到这些行：  
   
-    ```
-    Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Input files: Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
-    ```
-    Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
-    ```  
+   ```
+   Matched files: Form1.cs;Form1.Designer.cs;Properties\Settings.Designer.cs
+   ```  
   
- 此代码定义的内联任务名为 RegX 且具有以下三个参数：  
+   此代码定义的内联任务名为 RegX 且具有以下三个参数：  
   
--   `Expression` 是所需的字符串输入参数，其值为要匹配的正则表达式。 本示例中，表达式匹配单词“public”或“protected”。  
+- `Expression` 是所需的字符串输入参数，其值为要匹配的正则表达式。 本示例中，表达式匹配单词“public”或“protected”。  
   
--   `Files` 是所需的项列表输入参数，其值为要在其中搜索匹配项的文件列表。 本示例中，`Files` 设置为 `Compile` 项，会列出项目源文件。  
+- `Files` 是所需的项列表输入参数，其值为要在其中搜索匹配项的文件列表。 本示例中，`Files` 设置为 `Compile` 项，会列出项目源文件。  
   
--   `Result` 是一个输出参数，其值为所含内容与正则表达式匹配的文件列表。  
+- `Result` 是一个输出参数，其值为所含内容与正则表达式匹配的文件列表。  
   
- TestBuild 目标调用 RegX 任务时会设置输入参数的值。 RegX 任务会读取每个文件并返回与正则表达式匹配的文件列表。 此列表作为 `Result` 输出参数返回，而该输出参数作为 MSBuild 项 `MatchedFiles` 发出。  
+  TestBuild 目标调用 RegX 任务时会设置输入参数的值。 RegX 任务会读取每个文件并返回与正则表达式匹配的文件列表。 此列表作为 `Result` 输出参数返回，而该输出参数作为 MSBuild 项 `MatchedFiles` 发出。  
   
 ### <a name="handle-reserved-characters"></a>处理保留字符  
  MSBuild 分析器将内联任务当做 XML 处理。 XML 中具有保留意义的字符（例如“\<” 和“>”）会被检测到并当作 XML 而不是 .NET 源代码进行处理。 若要在代码表达式中包含保留字符（例如 `Files.Length > 0`），请写入 `Code` 元素，其内容就可以包含在 CDATA 表达式中，如下所示：  

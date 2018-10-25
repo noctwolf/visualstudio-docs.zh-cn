@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5300623e3bbd1eeec584b30015e122539a6c7203
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863719"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何：选择要使用的 XML 架构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,23 +36,23 @@ ms.locfileid: "49210452"
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>从架构缓存中选择 XML 架构  
   
-1.  在“XML 编辑器”中打开文件。  
+1. 在“XML 编辑器”中打开文件。  
   
-2.  在文档属性窗口中，单击上按钮**架构**字段。  
+2. 在文档属性窗口中，单击上按钮**架构**字段。  
   
-     **XML 架构**显示对话框。 对话框会列出具有.xsd 扩展名 （包括在 catalog.xml 文件中引用的架构），在架构缓存中的所有架构，还将在当前解决方案中，任何架构打开在 Visual Studio 中，在中引用`xsd:schemaLocation`属性，或在引用**架构**属性。  
+    **XML 架构**显示对话框。 对话框会列出具有.xsd 扩展名 （包括在 catalog.xml 文件中引用的架构），在架构缓存中的所有架构，还将在当前解决方案中，任何架构打开在 Visual Studio 中，在中引用`xsd:schemaLocation`属性，或在引用**架构**属性。  
   
-3.  通过执行下列操作之一选择用于验证的架构：  
+3. 通过执行下列操作之一选择用于验证的架构：  
   
-    -   选择架构中列出**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。  
+   - 选择架构中列出**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。  
   
      或  
   
-    -   选择多个架构中列出**XML 架构**对话框中，右键单击并选择**使用此架构**。  
+   - 选择多个架构中列出**XML 架构**对话框中，右键单击并选择**使用此架构**。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
-     所选架构的列表复制回**架构**文档属性。  
+    所选架构的列表复制回**架构**文档属性。  
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>将 XML 架构添加到架构缓存中  
   

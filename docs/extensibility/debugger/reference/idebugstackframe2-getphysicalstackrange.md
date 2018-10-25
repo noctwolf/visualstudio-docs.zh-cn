@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetPhysicalStackRange |Microsoft 文档
+title: IDebugStackFrame2::GetPhysicalStackRange |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be53b50bc21d81c60f7131e8ed437ecb2ac2f16c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1b46dd9993eb8a7611b4d84211016168d609101
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950376"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-获取依赖于计算机的表示形式与堆栈帧关联的物理地址的范围。  
+获取依赖于计算机的形式，与堆栈帧关联的物理地址的范围。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,7 +43,7 @@ int GetPhysicalStackRange (
   
 #### <a name="parameters"></a>参数  
  `paddrMin`  
- [out]返回与此堆栈帧关联的最低物理地址。  
+ [out]返回与此堆栈帧关联的最小物理地址。  
   
  `paddrMax`  
  [out]返回与此堆栈帧关联的最高的物理地址。  
@@ -54,7 +54,7 @@ int GetPhysicalStackRange (
 ## <a name="remarks"></a>备注  
  会话调试管理器 (SDM) 使用此方法返回的信息进行排序堆栈帧。  
   
- 假定，调用堆栈向下增长，也就是说，新堆栈帧将添加到越来越低内存地址。 运行时体系结构必须提供匹配此假设的物理堆栈范围。  
+ 假定，调用堆栈向下增长，也就是说，新堆栈帧添加越来越多地较低的内存地址。 运行时体系结构必须提供匹配这一假设的物理堆栈范围。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

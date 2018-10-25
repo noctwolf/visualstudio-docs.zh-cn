@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetCustomViewerList |Microsoft 文档
+title: IDebugProperty3::GetCustomViewerList |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a98a7ca4b2f1dcf25728bd0d2e3778be2d70ada
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d595666fc6099c8769c80f87d9089689c9075962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843933"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 获取与此属性关联的自定义查看器的列表。  
@@ -47,27 +47,27 @@ int GetCustomViewerList(
   
 #### <a name="parameters"></a>参数  
  `celtSkip`  
- [in]若要跳过的查看者的数。  
+ [in]若要跳过的查看者数。  
   
  `celtRequested`  
  [in]若要检索的查看者数 (还指定的大小`rgViewers`数组)。  
   
  `rgViewers`  
- [在中，out]数组[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)结构填充的。  
+ [in、 out]数组[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)要填充的结构。  
   
  `pceltFetched`  
- [out]返回的查看者的实际数目。  
+ [out]返回的查看器的实际数目。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 若要支持类型可视化工具，此方法将调用转发到[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。 如果表达式计算器还支持用于此属性的类型的自定义查看器，此方法可以将相应的自定义查看器附加到列表。  
+ 若要支持类型可视化工具，此方法将调用转发到[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。 如果表达式计算器还支持用于此属性的类型的自定义查看器，此方法可以将相应自定义查看器附加到列表。  
   
  请参阅[类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)有关类型可视化工具和自定义查看器之间的差异的详细信息。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CProperty**公开的对象[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口。  
+ 下面的示例演示如何实现此方法对于**CProperty**对象，它公开[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口。  
   
 ```cpp  
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  
@@ -88,7 +88,7 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)   

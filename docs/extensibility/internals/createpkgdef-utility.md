@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0809c7acde2959fb91aa964fec137f63a7a995dc
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 47fee24292ee92b34cea6add21bc220a1a17f135
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500691"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867658"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用工具
 采用 Visual Studio 扩展中作为参数的.dll 文件，并创建 *.pkgdef*随附的文件 *.dll*文件。 *.Pkgdef*文件包含否则会在安装该扩展时写入到系统注册表的所有信息。  
@@ -53,13 +53,13 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   
  *.Pkgdef*文件必须安装在以下位置之一： 
 
- - *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
+- *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\* 
  
- - *%vsinstalldir%\Common7\IDE\Extensions\\*
+- *%vsinstalldir%\Common7\IDE\Extensions\\*
     
- 如果安装文件夹是 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*，扩展将识别的 Visual Studio 中，但默认情况下将禁用。 用户可以启用扩展，通过使用**扩展和更新**。 
+  如果安装文件夹是 *%localappdata%\Microsoft\Visual Studio\14.0\Extensions\\*，扩展将识别的 Visual Studio 中，但默认情况下将禁用。 用户可以启用扩展，通过使用**扩展和更新**。 
    
- 如果安装文件夹是 *%vsinstalldir%\Common7\IDE\Extensions\\*，默认情况下启用扩展。  
+  如果安装文件夹是 *%vsinstalldir%\Common7\IDE\Extensions\\*，默认情况下启用扩展。  
   
 > [!NOTE]
 >  **扩展和更新**工具不能用于访问扩展，除非它作为 VSIX 包的一部分安装。  

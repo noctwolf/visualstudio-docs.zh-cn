@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e163386c7f00f0646bb711617e402a1873e544e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f89ea35c9113ddff67a9d1322b1c83c41e05709a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848970"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,45 +51,45 @@ using System.Linq;
   
  在新文件中，为应响应拖动操作的形状或关系图类定义分部类。 重写以下方法：  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> - 当鼠标指针在拖动操作期间进入该形状时调用此方法。 你的方法应检查用户正在拖动的项，并设置“效果”属性以指示用户是否可以将项放置在此形状上。 “效果”属性确定当指针悬停在此形状上时指针的外观，还确定当用户释放鼠标按钮时是否将调用 `OnDragDrop()`。  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> - 当鼠标指针在拖动操作期间进入该形状时调用此方法。 你的方法应检查用户正在拖动的项，并设置“效果”属性以指示用户是否可以将项放置在此形状上。 “效果”属性确定当指针悬停在此形状上时指针的外观，还确定当用户释放鼠标按钮时是否将调用 `OnDragDrop()`。  
   
-    ```csharp  
-    partial class MyShape // MyShape generated from DSL Definition.  
-    {  
-        public override void OnDragOver(DiagramDragEventArgs e)  
+  ```csharp  
+  partial class MyShape // MyShape generated from DSL Definition.  
+  {  
+      public override void OnDragOver(DiagramDragEventArgs e)  
+      {  
+        base.OnDragOver(e);  
+        if (e.Effect == System.Windows.Forms.DragDropEffects.None   
+             && IsAcceptableDropItem(e)) // To be defined  
         {  
-          base.OnDragOver(e);  
-          if (e.Effect == System.Windows.Forms.DragDropEffects.None   
-               && IsAcceptableDropItem(e)) // To be defined  
-          {  
-            e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
-          }  
+          e.Effect = System.Windows.Forms.DragDropEffects.Copy;  
         }  
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – 如果用户在鼠标指针停留在此形状或关系图上时释放鼠标按钮，则调用此方法，前提是 `OnDragOver(DiagramDragEventArgs e)` 已提前将 `e.Effect` 设置为 `None` 以外的值。  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> – 如果用户在鼠标指针停留在此形状或关系图上时释放鼠标按钮，则调用此方法，前提是 `OnDragOver(DiagramDragEventArgs e)` 已提前将 `e.Effect` 设置为 `None` 以外的值。  
   
-    ```csharp  
-    public override void OnDragDrop(DiagramDragEventArgs e)  
+  ```csharp  
+  public override void OnDragDrop(DiagramDragEventArgs e)  
+      {  
+        if (!IsAcceptableDropItem(e))  
         {  
-          if (!IsAcceptableDropItem(e))  
-          {  
-            base.OnDragDrop(e);  
-          }  
-          else   
-          { // Process the dragged item, for example merging a copy into the diagram  
-            ProcessDragDropItem(e); // To be defined  
-          }    
+          base.OnDragDrop(e);  
         }  
+        else   
+        { // Process the dragged item, for example merging a copy into the diagram  
+          ProcessDragDropItem(e); // To be defined  
+        }    
+      }  
   
-    ```  
+  ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – 当用户双击该形状或关系图时，将调用此方法。  
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> – 当用户双击该形状或关系图时，将调用此方法。  
   
-     有关详细信息，请参阅[如何： 截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+   有关详细信息，请参阅[如何： 截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
   
- 定义 `IsAcceptableDropItem(e)` 以确定拖动项是否是可接受的，并定义 ProcessDragDropItem(e) 以在放置该项后更新模型。 这些方法必须先从事件参数中提取项。 有关如何执行该操作的信息，请参阅[如何获取对拖动项的引用](#extracting)。  
+  定义 `IsAcceptableDropItem(e)` 以确定拖动项是否是可接受的，并定义 ProcessDragDropItem(e) 以在放置该项后更新模型。 这些方法必须先从事件参数中提取项。 有关如何执行该操作的信息，请参阅[如何获取对拖动项的引用](#extracting)。  
   
 ##  <a name="MEF"></a> 通过使用 MEF 定义笔势处理程序  
  MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的组件。 有关详细信息，请参阅 [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
@@ -139,32 +139,32 @@ using System.Linq;
   
  若要发现拖动源信息可采用的格式，请在调试模式下运行代码，从而在 `OnDragOver()` 或 `CanDragDrop()` 入口设置断点。 检查 `DiagramDragEventArgs` 参数的值。 信息将采用以下两种方式提供：  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data` – 此属性包含序列化的版本的源对象，通常在多个格式。 其最有用的函数是：  
+- <xref:System.Windows.Forms.IDataObject>  `Data` – 此属性包含序列化的版本的源对象，通常在多个格式。 其最有用的函数是：  
   
-    -   diagramEventArgs.Data.GetDataFormats() – 列出解码拖动对象时可采用的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。  
+  -   diagramEventArgs.Data.GetDataFormats() – 列出解码拖动对象时可采用的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。  
   
-    -   `diagramEventArgs.Data.GetData(format)` – 采用指定格式解码拖动对象。 将该对象转换为相应的类型。 例如：  
+  -   `diagramEventArgs.Data.GetData(format)` – 采用指定格式解码拖动对象。 将该对象转换为相应的类型。 例如：  
   
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
+       `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         还可以采用自己的自定义格式从源中传输对象（例如模型总线引用）。 有关详细信息，请参阅[如何在拖放发送模型总线引用](#mbr)。  
+       还可以采用自己的自定义格式从源中传输对象（例如模型总线引用）。 有关详细信息，请参阅[如何在拖放发送模型总线引用](#mbr)。  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – 如果你希望用户从 DSL 或 UML 模型拖动项，则使用此属性。 元素组原型包含一个或多个对象、链接及其属性值。 在粘贴操作中以及要从工具箱添加元素时，也会使用它。 在原型中，对象及其类型由 Guid 标识。 例如，此代码允许用户从 UML 关系图或 UML 模型资源管理器拖动类元素：  
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` – 如果你希望用户从 DSL 或 UML 模型拖动项，则使用此属性。 元素组原型包含一个或多个对象、链接及其属性值。 在粘贴操作中以及要从工具箱添加元素时，也会使用它。 在原型中，对象及其类型由 Guid 标识。 例如，此代码允许用户从 UML 关系图或 UML 模型资源管理器拖动类元素：  
   
-    ```csharp  
-    private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
-    {  
-      return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
-            element.DomainClassId.ToString()   
-            == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
-     // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
-    }  
+  ```csharp  
+  private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
+  {  
+    return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
+          element.DomainClassId.ToString()   
+          == "3866d10c-cc4e-438b-b46f-bb24380e1678"); // Accept UML class shapes.  
+   // Or, from another DSL: SourceNamespace.SourceShapeClass.DomainClassId  
+  }  
   
-    ```  
+  ```  
   
-     若要接受 UML 形状，请通过试验确定 UML 形状类的 Guid。 请记住，在任何关系图上通常都有多种类型的元素。 还请记住，从 DSL 或 UML 关系图拖动的对象是形状，而不是模型元素。  
+   若要接受 UML 形状，请通过试验确定 UML 形状类的 Guid。 请记住，在任何关系图上通常都有多种类型的元素。 还请记住，从 DSL 或 UML 关系图拖动的对象是形状，而不是模型元素。  
   
- `DiagramDragEventArgs` 还具有指示当前鼠标指针位置以及用户是否按下 CTRL、ALT 或 SHIFT 键的属性。  
+  `DiagramDragEventArgs` 还具有指示当前鼠标指针位置以及用户是否按下 CTRL、ALT 或 SHIFT 键的属性。  
   
 ##  <a name="getOriginal"></a> 如何获取拖动元素的原始  
  事件参数的 `Data` 和 `Prototype` 属性只包含对拖动形状的引用。 通常，如果希望以某种方式在派生自原型的目标 DSL 中创建对象，则需要获取对原始状态的访问权限，例如，读取文件内容或导航到由形状表示的模型元素。  可使用 Visual Studio 模型总线帮助实现此目的。  

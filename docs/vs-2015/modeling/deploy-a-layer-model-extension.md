@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5b19e8ef9ee23f11291c0f560c1932ba53234ddd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb6644b45e2256aa3fdc24ccd8e6d14095f72e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907243"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49291848"
   
 #### <a name="to-install-the-extension"></a>安装扩展  
   
-1.  中包含的项目**source.vsix.manifest**，打开**bin\\ \*** 在文件资源管理器。  
+1. 中包含的项目**source.vsix.manifest**，打开**bin\\\\*** 在文件资源管理器。  
   
-2.  复制 **\*.vsix**到要安装扩展的计算机的文件。  
+2. 复制 **\*.vsix**到要安装扩展的计算机的文件。  
   
-3.  在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。  
+3. 在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。  
   
-     VSIX 安装程序将打开。  
+    VSIX 安装程序将打开。  
   
 #### <a name="to-uninstall-the-extension"></a>卸载扩展  
   

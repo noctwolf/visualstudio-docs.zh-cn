@@ -21,12 +21,12 @@ caps.latest.revision: 112
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c241a4ac216fa42d6a67e7e2165e2ceac195e96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7ab3e165a00fa55c8e08f4b538d749d53471e0eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929486"
 ---
 # <a name="using-saved-intellitrace-data"></a>使用保存的 IntelliTrace 数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,25 +164,25 @@ ms.locfileid: "49279092"
   
 ##### <a name="start-debugging-with-a-sharepoint-correlation-id"></a>使用 SharePoint 相关 ID 开始调试  
   
-1.  从源复制 SharePoint 相关 ID。  
+1. 从源复制 SharePoint 相关 ID。  
   
-     例如：  
+    例如：  
   
-     ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![IntelliTrace &#45; SharePoint 错误&#45;相关 ID](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
-2.  打开 .iTrace 文件，然后转到“分析”  并输入 SharePoint 相关 ID，以查看匹配的 Web 请求和记录的事件。  
+2. 打开 .iTrace 文件，然后转到“分析”  并输入 SharePoint 相关 ID，以查看匹配的 Web 请求和记录的事件。  
   
-     ![IntelliTrace 日志&#45;输入 SharePoint 相关 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![IntelliTrace 日志&#45;输入 SharePoint 相关 ID](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
-3.  在“请求事件” 下，检查事件。 从顶部开始，事件按发生顺序显示。  
+3. 在“请求事件” 下，检查事件。 从顶部开始，事件按发生顺序显示。  
   
-    1.  选择事件，查看其详细信息。  
+   1. 选择事件，查看其详细信息。  
   
-    2.  选择“启动调试”  ，在事件发生点开始调试。  
+   2. 选择“启动调试”  ，在事件发生点开始调试。  
   
-     ![IntelliTrace 日志文件&#45;查看 web 请求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![IntelliTrace 日志文件&#45;查看 web 请求&#43;事件](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
- 你可以同时查看以下类型的 SharePoint 事件和 IntelliTrace 事件：  
+   你可以同时查看以下类型的 SharePoint 事件和 IntelliTrace 事件：  
   
 -   **用户配置文件事件**  
   
@@ -204,28 +204,28 @@ ms.locfileid: "49279092"
   
 ##### <a name="start-debugging-from-an-unhandled-exception"></a>从未经处理的异常开始调试  
   
-1.  选择异常的 SharePoint 相关 ID。 异常按类型和调用堆栈分组。  
+1. 选择异常的 SharePoint 相关 ID。 异常按类型和调用堆栈分组。  
   
-2.  （可选）展开“调用堆栈”  以查看调用堆栈是否存在异常组。  
+2. （可选）展开“调用堆栈”  以查看调用堆栈是否存在异常组。  
   
-3.  选择“调试异常”  以在异常发生的位置和时间点开始调试。  
+3. 选择“调试异常”  以在异常发生的位置和时间点开始调试。  
   
-     ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![IntelliTrace 日志&#45;SharePoint 未经处理的异常](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
- 有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+   有关演练，请参阅[演练： 调试 SharePoint 应用程序通过使用 IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)。 有关代理记录，请参阅的数据的种类[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
 ###  <a name="ThreadsList"></a> 线程列表  
  检查目标进程中运行的记录线程。 你可以从选定线程的第一个有效 IntelliTrace 事件开始调试。  
   
 ##### <a name="to-start-debugging-from-a-specific-thread"></a>从特定线程开始调试  
   
-1.  在“线程列表” 下选择线程。  
+1. 在“线程列表” 下选择线程。  
   
-2.  在“线程列表” 的底部，选择“启动调试” 。 也可以双击线程。  
+2. 在“线程列表” 的底部，选择“启动调试” 。 也可以双击线程。  
   
-     从应用开始处开始调试，双击“主线程” 。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
+    从应用开始处开始调试，双击“主线程” 。 请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。  
   
- 用户创建的线程数据可能比服务器创建的线程更加有用，并且能管理 IIS 托管的 Web 应用。  
+   用户创建的线程数据可能比服务器创建的线程更加有用，并且能管理 IIS 托管的 Web 应用。  
   
 |**列**|**显示**|  
 |----------------|-------------------|  

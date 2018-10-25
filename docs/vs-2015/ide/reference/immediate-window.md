@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87f8cd822dcd67ff7837dcaa31e47c23e0a0550b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850420"
 ---
 # <a name="immediate-window"></a>即时窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,31 +58,31 @@ ms.locfileid: "49203666"
   
 #### <a name="to-execute-a-function-at-design-time"></a>在设计时执行函数  
   
-1.  将下面的代码复制到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 控制台应用程序中：  
+1. 将下面的代码复制到 [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] 控制台应用程序中：  
   
-    ```  
-    Module Module1  
+   ```  
+   Module Module1  
   
-        Sub Main()  
-            MyFunction(5)  
-        End Sub  
+       Sub Main()  
+           MyFunction(5)  
+       End Sub  
   
-        Function MyFunction(ByVal input as Integer) As Integer  
-            Return input * 2  
-        End Function  
+       Function MyFunction(ByVal input as Integer) As Integer  
+           Return input * 2  
+       End Function  
   
-    End Module  
-    ```  
+   End Module  
+   ```  
   
-2.  在“调试”菜单中单击“窗口”，然后单击“即时”。  
+2. 在“调试”菜单中单击“窗口”，然后单击“即时”。  
   
-3.  在**即时**窗口中键入 `?MyFunction(2)`，然后按 Enter。  
+3. 在**即时**窗口中键入 `?MyFunction(2)`，然后按 Enter。  
   
-     **即时**窗口将运行 `MyFunction` 并显示 `4`。  
+    **即时**窗口将运行 `MyFunction` 并显示 `4`。  
   
- 如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参阅[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。  
+   如果函数或子例程包含断点，则 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 会在适当断点处中断执行。 随后即可使用调试器窗口检查程序状态。 有关详细信息，请参阅[演练：在设计时调试](../../debugger/walkthrough-debugging-at-design-time.md)。  
   
- 不能在需要启动执行环境的项目类型（包括 [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 项目、Web 项目、智能设备项目和 SQL 项目）中使用设计时表达式计算。  
+   不能在需要启动执行环境的项目类型（包括 [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)] 项目、Web 项目、智能设备项目和 SQL 项目）中使用设计时表达式计算。  
   
 ### <a name="design-time-expression-evaluation-in-multi-project-solutions"></a>多项目解决方案中的设计时表达式计算  
  建立设计时表达式计算的上下文时，[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 引用解决方案资源管理器中当前选择的项目。 如果没有在解决方案资源管理器中选择项目，则 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 会尝试针对启动项目计算函数。 如果不能在当前上下文中计算函数，用户会收到错误消息。 如果尝试在不是解决方案的启动项目的项目中计算函数并收到错误，请在解决方案资源管理器中选择该项目，然后重新尝试计算。  

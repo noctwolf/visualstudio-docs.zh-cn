@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a310957f1552e289993643d39965d8a6a8693fe2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51878d18deb56c77ebbef0d0aa84b399ef2fa722
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894971"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：数组字段不应为只读
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
@@ -47,11 +48,11 @@ ms.locfileid: "49207943"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决由该规则标识的安全漏洞，不要依赖于可公开访问的只读数组的内容。 强烈建议你使用以下过程之一：
 
--   将不能更改的强类型集合替换为数组。 有关详细信息，请参阅 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName> 。
+- 将不能更改的强类型集合替换为数组。 有关详细信息，请参阅 <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName> 。
 
--   使用返回私有数组副本的方法替换公共字段。 你的代码不依赖于克隆，因为如果，则不存在风险修改元素。
+- 使用返回私有数组副本的方法替换公共字段。 你的代码不依赖于克隆，因为如果，则不存在风险修改元素。
 
- 如果你选择第二种方法，请不该字段将替换为属性;属性返回数组造成负面影响性能。 有关详细信息，请参阅[CA1819： 属性不应返回数组](../code-quality/ca1819-properties-should-not-return-arrays.md)。
+  如果你选择第二种方法，请不该字段将替换为属性;属性返回数组造成负面影响性能。 有关详细信息，请参阅[CA1819： 属性不应返回数组](../code-quality/ca1819-properties-should-not-return-arrays.md)。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  强烈建议不要使用此规则的警告中排除。 几乎在任何情况下发生其中只读字段的内容并不重要。 如果与你的方案的情况，请删除`readonly`修饰符而不是排除警告消息。

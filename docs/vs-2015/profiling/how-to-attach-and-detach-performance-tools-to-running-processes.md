@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51ac98095f8b0dc6e303a0fc4135e022e9de5011
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ee38f210585124f8492f6aed9f062003602f287
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895309"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：在正在运行的进程中附加和分离性能工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,13 +39,13 @@ ms.locfileid: "49272150"
   
  可用于分析的进程取决于计算机管理员所设置的用户访问权限。 例如，用户帐户可能具有下列任一权限：  
   
--   当管理员启动了驱动程序和服务时，可访问高级分析功能。  
+- 当管理员启动了驱动程序和服务时，可访问高级分析功能。  
   
--   仅可访问样本分析（域用户）。  
+- 仅可访问样本分析（域用户）。  
   
--   拒绝所有人访问分析。  
+- 拒绝所有人访问分析。  
   
- 有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的管理选项。  
+  有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的管理选项。  
   
 ### <a name="to-attach-to-a-running-process"></a>附加到正在运行的进程  
   

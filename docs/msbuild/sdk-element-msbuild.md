@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15084b21c80967a5ebd170e175adf09d9623be5b
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1069a22e700eebfd9d1e8c387af99cf4241ffbe0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39154088"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834170"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 引用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目 SDK。  
@@ -54,9 +54,10 @@ ms.locfileid: "39154088"
  无。
 
 ### <a name="parent-elements"></a>父元素  
- |元素|描述|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
+
+| 元素 | 描述 |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
 
 ## <a name="see-also"></a>请参阅  
  [如何：引用 MSBuild 项目 SDK](../msbuild/how-to-use-project-sdk.md)   

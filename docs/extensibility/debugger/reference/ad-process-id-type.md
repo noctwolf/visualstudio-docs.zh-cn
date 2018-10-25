@@ -1,5 +1,5 @@
 ---
-title: AD_PROCESS_ID_TYPE |Microsoft 文档
+title: AD_PROCESS_ID_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8318efdc64adf9792e44ccf2f4ad4aa9f74dd67
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1fa934610778479551d411a4b231a4b190f29bcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098282"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937403"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-指定如何解释的进程 ID [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构。  
+指定如何解释中的进程 ID [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,13 +44,13 @@ public enum enum_AD_PROCESS_ID {
   
 ## <a name="members"></a>成员  
  AD_PROCESS_ID_SYSTEM  
- 进程 ID 是一个系统标识符。 使用`ProcessId.dwProcessId`字段[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构。  
+ 进程 ID 是系统标识符。 使用`ProcessId.dwProcessId`字段[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构。  
   
  AD_PROCESS_ID_GUID  
- 进程 ID 是一个 GUID。 使用`ProcessId.guidProcessId`字段`AD_PROCESS_ID`结构。  
+ 进程 ID 是一个 GUID。 使用`ProcessId.guidProcessId`字段的`AD_PROCESS_ID`结构。  
   
 ## <a name="remarks"></a>备注  
- 用于`ProcessIdType`的成员[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构来标识类型包含在结构中的进程 ID。 确定如何解释`ProcessId`联合结构中。  
+ 用于`ProcessIdType`的成员[AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)结构以确定结构中包含的进程 ID 的类型。 确定如何解释`ProcessId`联合结构中。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,6 +59,6 @@ public enum enum_AD_PROCESS_ID {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)

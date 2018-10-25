@@ -16,12 +16,12 @@ caps.latest.revision: 31
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 94185303eeb1d9efef32adf814b23d8cb21360b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e731803e58ac641034699719a9fb0cbfe3cb6f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285995"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872274"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49285995"
 ## <a name="how-to-use-models"></a>如何使用模型  
  模型可以通过几种方式帮助你：  
   
--   绘制建模图可帮助明确需求、体系结构和高级设计中所涉及的概念。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
+- 绘制建模图可帮助明确需求、体系结构和高级设计中所涉及的概念。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
--   使用模型可帮助你揭示需求中的不一致性。  
+- 使用模型可帮助你揭示需求中的不一致性。  
   
--   使用模型通信可帮助你沟通重要概念时比使用自然语言更明确。 有关详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
+- 使用模型通信可帮助你沟通重要概念时比使用自然语言更明确。 有关详细信息，请参阅[应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。  
   
--   有时可使用模型生成代码或其他项目（如数据库架构或文档）。 例如，[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 建模组件是从模型生成的。  有关详细信息，请参阅[生成和配置将应用程序模型从](../modeling/generate-and-configure-your-app-from-models.md)。  
+- 有时可使用模型生成代码或其他项目（如数据库架构或文档）。 例如，[!INCLUDE[vsUltShort](../includes/vsultshort-md.md)] 建模组件是从模型生成的。  有关详细信息，请参阅[生成和配置将应用程序模型从](../modeling/generate-and-configure-your-app-from-models.md)。  
   
- 你可以在从极端敏捷到崇礼的各种流程中使用模型。  
+  你可以在从极端敏捷到崇礼的各种流程中使用模型。  
   
 ### <a name="use-models-to-reduce-ambiguity"></a>使用模型减少多义性  
  建模语言比自然语言更明确，它用来表达软件开发期间通常需要的想法。  

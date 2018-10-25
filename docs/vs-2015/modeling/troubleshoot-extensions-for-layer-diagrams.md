@@ -15,12 +15,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c8ea8f4e6b102dd9bb4a84154096d5cef906eeab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b4d7dbe7fc11a41d44063aab558389555a4b7af
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879098"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>层关系图扩展疑难解答
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "49250063"
   
 #### <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-layer-diagrams-in-the-experimental-instance-of-includevsprvsincludesvsprvs-mdmd"></a>在我按 F5 调试扩展时，我的命令、笔势处理程序、验证扩展或自定义属性没有出现在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实验实例的层关系图上。  
   
-1.  中的实验实例中打开你的扩展解决方案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**构建**菜单中，单击**重新生成解决方案**。  
+1. 中的实验实例中打开你的扩展解决方案[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，然后在**构建**菜单中，单击**重新生成解决方案**。  
   
-2.  按**F5**或**CTRL + F5**若要启动的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 打开层关系图并测试你的扩展。  
+2. 按**F5**或**CTRL + F5**若要启动的实验实例[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 打开层关系图并测试你的扩展。  
   
- 如有必要，请继续下一个过程。  
+   如有必要，请继续下一个过程。  
   
 #### <a name="an-old-version-of-my-extension-runs"></a>将运行我的旧版本扩展。  
   
-1.  请确保没有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实验实例正在运行。  
+1. 请确保没有 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实验实例正在运行。  
   
-2.  删除以下文件夹： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
+2. 删除以下文件夹： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache  
   
-    > [!NOTE]
-    >  %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。  
+   > [!NOTE]
+   >  %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。  
   
- 如有必要，请继续下一个过程。  
+   如有必要，请继续下一个过程。  
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>将出现旧版本的验证结果，或我的验证方法未被调用。  
   

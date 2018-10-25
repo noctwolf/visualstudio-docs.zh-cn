@@ -18,29 +18,29 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7caa6af725fc1af5551e9b705e609e25f74121b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82ce653eda1ec074f050809845610fbc1ab1bc0c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833651"
 ---
 # <a name="visualize-code"></a>可视化代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 你可以在 Visual Studio 中使用可视化和建模工具，以帮助你了解现有代码并描述你的应用程序。 这可以让你直观地了解更改可能对代码产生的影响，并帮助你评估更改导致的工作和风险。 例如：  
   
--   了解代码的关系，可以用可视的方式映射这些关系。  
+- 了解代码的关系，可以用可视的方式映射这些关系。  
   
--   若要描述你的系统体系结构并确保代码与其设计保持一致，创建层关系图并对这些关系图进行代码验证。  
+- 若要描述你的系统体系结构并确保代码与其设计保持一致，创建层关系图并对这些关系图进行代码验证。  
   
--   若要描述类结构，请创建类关系图。  
+- 若要描述类结构，请创建类关系图。  
   
--   为系统的各个方面建模并进行沟通，绘制统一建模语言 (UML) 关系图。 例如，你可以为系统组件、类型、交互和进程建模。  
+- 为系统的各个方面建模并进行沟通，绘制统一建模语言 (UML) 关系图。 例如，你可以为系统组件、类型、交互和进程建模。  
   
- 这些工具还可以帮助你更轻松地与参与项目的人员进行沟通。 例如，你可以使用 UML 类关系图创建用于与项目利益干系人、用户和团队成员讨论系统的常用词汇表。  
+  这些工具还可以帮助你更轻松地与参与项目的人员进行沟通。 例如，你可以使用 UML 类关系图创建用于与项目利益干系人、用户和团队成员讨论系统的常用词汇表。  
   
- 若要查看支持每个功能的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
+  若要查看支持每个功能的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)  
   
 ## <a name="what-do-you-want-to-do"></a>你希望做什么？  
   

@@ -11,12 +11,12 @@ ms.author: bertaygu
 manager: douge
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 8ef7b61eca40c1a5c74deeb0b3e61de0df8a6be1
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: d1f2942c9f5987a686226c94e9764b8ab6300050
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934920"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>测量中启动扩展影响
 
@@ -169,11 +169,11 @@ PerfView 提供详细指导如何阅读更详细的分析其自己帮助菜单�
 
 1. IO 使用`System.IO`类： 虽然这些框架中的非独占成本可能不是在跟踪中过于昂贵，但它们是可能会造成问题，由于文件 IO 速度将不同计算机之间。
 
-  ![系统 io 帧](media/perfview-system-io-frames.png)
+   ![系统 io 帧](media/perfview-system-io-frames.png)
 
 2. 阻止调用等待其他异步工作： 在这种情况下，非独占时间将表示主线程阻塞在异步工作的完成时间。
 
-  ![阻止调用框架](media/perfview-blocking-call-frames.png)
+   ![阻止调用框架](media/perfview-blocking-call-frames.png)
 
 可以将有助于确定影响在跟踪中的其他视图之一**图像负载堆栈**。 您可以应用相同的筛选器应用于**线程时堆栈**查看并找出所有程序集加载，因为将自动加载的包执行的代码。
 

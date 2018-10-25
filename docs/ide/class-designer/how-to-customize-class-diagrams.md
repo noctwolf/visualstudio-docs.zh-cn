@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ed2a6112d59e5d433201a417d8d85fd6683b36d
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 4546324a5789c408c22ac610d7a878ad990af2a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33956752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913210"
 ---
 # <a name="how-to-customize-class-diagrams"></a>如何：自定义类图
 
@@ -108,7 +108,7 @@ ms.locfileid: "33956752"
 
 2. 右击具有隐藏的关联或继承的类型。
 
- 对关联行单击“显示所有成员”，对继承行单击“显示基类”或“显示派生类”。
+   对关联行单击“显示所有成员”，对继承行单击“显示基类”或“显示派生类”。
 
 ## <a name="remove-a-shape-from-a-class-diagram"></a>从类图中删除形状
 你可以在不影响类型的基础代码的情况下从类图中删除类型形状。 从类图移除类型形状只会影响该关系图：定义类型的基础代码和显示类型的其他关系图不受影响。

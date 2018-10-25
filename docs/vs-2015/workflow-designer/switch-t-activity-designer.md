@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 07675d7d6d592a83848b8af02031a573350c35f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01e583db3bb5b5aff6608b4028636823b4ca857c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244759"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844700"
 ---
 # <a name="switchlttgt-activity-designer"></a>交换机&lt;T&gt;活动设计器
 <xref:System.Activities.Statements.Switch%601> 活动计算指定表达式并执行活动集合中其关联键与计算所得值匹配的活动。  
@@ -50,11 +50,11 @@ ms.locfileid: "49244759"
   
  删除 case 的方法有两种：  
   
-1.  选中相应 case，然后删除它。  
+1. 选中相应 case，然后删除它。  
   
-2.  选择 case，右击以显示上下文菜单并选择**删除**。  
+2. 选择 case，右击以显示上下文菜单并选择**删除**。  
   
- 请注意，必须选中 case 本身才能删除它。 选中并删除 case 内的活动只会删除该活动而不会删除该 case。  
+   请注意，必须选中 case 本身才能删除它。 选中并删除 case 内的活动只会删除该活动而不会删除该 case。  
   
 ## <a name="see-also"></a>请参阅  
  [控制流](../workflow-designer/control-flow-activity-designers.md)

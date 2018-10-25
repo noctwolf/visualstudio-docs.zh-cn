@@ -11,31 +11,31 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 5d880ac873766c59adfa53e9e61a6ad13520c135
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 0192953ae88bf5665ea1f28356fb23f31113b76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31949018"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935076"
 ---
 # <a name="properties-of-domain-classes"></a>域类的属性
-域类具有下表中的属性。 有关域类的信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展的域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+域类具有下表中的属性。 域类的相关信息，请参阅[了解模型、 类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
 |属性|描述|默认|
-|--------------|-----------------|-------------|
+|-|-|-|
 |访问修饰符|域类的访问级别（`public` 或 `internal`）。|`public`|
 |自定义特性|用于将属性添加到此域类从生成的源代码类。|\<无 >|
-|生成双派生|如果`True`，将生成的基本类和分部类 （以支持通过替代的自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
-|具有自定义的构造函数|如果`True`，自定义的构造函数将提供的源代码中。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
-|继承修饰符|描述的域类从生成的源代码类继承的类型 (`none`，`abstract`或`sealed`)。|`none`|
+|生成双派生|如果`True`，将生成的基类和一个分部类 （以支持通过重写自定义）。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
+|具有自定义构造函数|如果`True`，将在源代码中提供自定义构造函数。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|`False`|
+|继承修饰符|介绍的从域类生成的源代码类的继承的类型 (`none`，`abstract`或`sealed`)。|`none`|
 |基类|如果此域类派生，类的基类的名称。|\<无 >|
-|名称|此域类的名称。|当前的名称|
+|name|此域类的名称。|当前名称|
 |命名空间|此域类的命名空间。|当前命名空间|
-|说明|与此域类相关联的非正式说明。|\<无 >|
-|描述|用于记录生成的设计器的 UI 中的说明。|\<无 >|
-|显示名称|将此域类的生成设计器中显示的名称。|\<无 >|
-|帮助关键字|可选关键字用于编制索引的此域类 F1 帮助。|\<无 >|
+|说明|此域类相关联的非正式说明。|\<无 >|
+|描述|用于记录生成的设计器的 UI 说明。|\<无 >|
+|显示名称|将此域类生成的设计器中显示的名称。|\<无 >|
+|帮助关键字|用于索引此域类的 F1 帮助中的可选关键字。|\<无 >|
 
 ## <a name="see-also"></a>请参阅
 
-- [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -22,12 +22,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: db774bdfb02d762c2370ab342cc67c1a9b792bed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0dabf5b84eb1adde1d6e579b7ec5ad6a6c443723
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859052"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>项目设计器 ->“引用”页 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49254704"
   
 > [!NOTE]
 >  当项目系统查找一个程序集引用时，系统通过在以下位置查找，按以下顺序解析引用：  
->   
->  1.  项目文件夹。 “显示所有文件”未生效时，解决方案资源管理器中会出现项目文件夹文件。  
-> 2.  在“引用路径”对话框中指定的文件夹。  
-> 3.  其文件出现在“添加引用”对话框中的文件夹。  
-> 4.  项目的 obj 文件夹。 （向项目添加 COM 引用时，可将一个或多个程序集添加到项目的 obj 文件夹中。）  
+> 
+> 1. 项目文件夹。 “显示所有文件”未生效时，解决方案资源管理器中会出现项目文件夹文件。  
+>    2.  在“引用路径”对话框中指定的文件夹。  
+>    3.  其文件出现在“添加引用”对话框中的文件夹。  
+>    4.  项目的 obj 文件夹。 （向项目添加 COM 引用时，可将一个或多个程序集添加到项目的 obj 文件夹中。）  
   
  **参考资料**  
  此列表显示项目中的所有引用，包括使用的或未使用的引用。  

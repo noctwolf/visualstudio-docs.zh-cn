@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c97810b69ef7256379b6d14bf29ba08a9e6e0040
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19e57f9cebf6e9a8086f736735527fb647544228
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273931"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833754"
 ---
 # <a name="just-my-code"></a>仅我的代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,13 +52,13 @@ ms.locfileid: "49273931"
   
  还有三个特性会影响调试器视为“我的代码”的内容：  
   
--   <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 告知调试器应用它的代码不是“我的代码”。  
+- <xref:System.Diagnostics.DebuggerNonUserCodeAttribute> 告知调试器应用它的代码不是“我的代码”。  
   
--   <xref:System.Diagnostics.DebuggerHiddenAttribute> 对调试器隐藏代码，即使“仅我的代码”关闭；  
+- <xref:System.Diagnostics.DebuggerHiddenAttribute> 对调试器隐藏代码，即使“仅我的代码”关闭；  
   
--   <xref:System.Diagnostics.DebuggerStepThroughAttribute> 告知调试器逐句通过其所应用的代码，而不是单步执行代码。  
+- <xref:System.Diagnostics.DebuggerStepThroughAttribute> 告知调试器逐句通过其所应用的代码，而不是单步执行代码。  
   
- 将所有其他代码都视为用户代码。  
+  将所有其他代码都视为用户代码。  
   
 ###  <a name="BKMK_NET_Stepping_behavior"></a> 单步执行行为  
  当您**单步执行**(键盘快捷键： F11) 非用户代码时，调试器将逐步执行代码的下一个用户语句。 当您**单步跳出**(键盘： Shift + F11)，调试器会运行到下一行用户代码。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
@@ -80,17 +80,17 @@ ms.locfileid: "49273931"
   
  默认情况下，调试器会将以下这些函数视为调用堆栈窗口中的非用户代码：  
   
--   在其符号文件中去除了源信息的函数。  
+- 在其符号文件中去除了源信息的函数。  
   
--   符号文件指示没有对应于堆栈帧的源文件的函数。  
+- 符号文件指示没有对应于堆栈帧的源文件的函数。  
   
--   `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 文件夹的 `*.natjmc` 文件中指定的函数。  
+- `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 文件夹的 `*.natjmc` 文件中指定的函数。  
   
- **单步执行**  
+  **单步执行**  
   
- 默认情况下，仅将 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 文件夹的 `*.natstepfilter` 文件中指定的函数视为非用户代码。  
+  默认情况下，仅将 `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` 文件夹的 `*.natstepfilter` 文件中指定的函数视为非用户代码。  
   
- 可以在 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 中创建自己的 `.natstepfilter` 和 `.natjmc` 以自定义单步执行和调用堆栈窗口行为。  
+  可以在 `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers` 中创建自己的 `.natstepfilter` 和 `.natjmc` 以自定义单步执行和调用堆栈窗口行为。  
   
 ###  <a name="BKMK_CPP_Stepping_behavior"></a> 单步执行行为  
  当您**单步执行**(键盘快捷键： F11) 从用户代码的非用户代码时，调试器将逐步执行代码到下一行用户代码。 当您**单步跳出**(键盘： Shift + F11)，调试器会运行到下一行用户代码。 如果未遇到用户代码，则执行会继续，直到应用退出、命中断点或发生异常。  
@@ -103,11 +103,11 @@ ms.locfileid: "49273931"
 ###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> 自定义单步执行行为  
  可以通过在 `*.natstepfilter` 文件中将函数列为非用户代码来指定要逐过程执行的函数。  
   
--   若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natstepfilter 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
+- 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natstepfilter 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
   
--   若要指定为单个用户的非用户代码，请添加到.natstepfilter 文件`%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`文件夹。  
+- 若要指定为单个用户的非用户代码，请添加到.natstepfilter 文件`%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`文件夹。  
   
- .natstepfilter 文件是 xml 文件使用以下语法：  
+  .natstepfilter 文件是 xml 文件使用以下语法：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -135,11 +135,11 @@ ms.locfileid: "49273931"
 ###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> 自定义调用堆栈行为  
  可以通过在 `*.natjmc` 文件中指定模块、源文件和函数，将它们指定视为调用堆栈中的非用户代码。  
   
--   若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natjmc 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
+- 若要指定非用户代码的 Visual Studio 计算机所有用户，请添加到.natjmc 文件`%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers`文件夹。  
   
--   若要指定为单个用户的非用户代码，请添加到.natjmc 文件`%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`文件夹。  
+- 若要指定为单个用户的非用户代码，请添加到.natjmc 文件`%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`文件夹。  
   
- .natjmc 文件是 xml 文件使用以下语法：  
+  .natjmc 文件是 xml 文件使用以下语法：  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -197,19 +197,19 @@ ms.locfileid: "49273931"
   
  JavaScript 调试器会自动对这些类型的代码进行分类：  
   
--   通过将字符串传递给主机提供执行的脚本`eval`函数分为**MyCode**。  
+- 通过将字符串传递给主机提供执行的脚本`eval`函数分为**MyCode**。  
   
--   通过传递到的字符串执行的脚本`Function`构造函数分为**LibraryCode**。  
+- 通过传递到的字符串执行的脚本`Function`构造函数分为**LibraryCode**。  
   
--   框架引用，如 WinJS 或 Azure SDK 中包含的脚本分类为**LibraryCode**。  
+- 框架引用，如 WinJS 或 Azure SDK 中包含的脚本分类为**LibraryCode**。  
   
--   通过传递到的字符串执行的脚本`setTimeout`， `setImmediate`，或`setInterval`函数分为**UnrelatedCode**。  
+- 通过传递到的字符串执行的脚本`setTimeout`， `setImmediate`，或`setInterval`函数分为**UnrelatedCode**。  
   
--   `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 为所有 Visual Studio JavaScript 项目指定其他用户和非用户代码。  
+- `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 为所有 Visual Studio JavaScript 项目指定其他用户和非用户代码。  
   
- 可以通过将一个名为 `mycode.json` 的 .json 文件添加到项目的根文件夹，来修改默认分类以及对特定文件和 url 进行分类。  
+  可以通过将一个名为 `mycode.json` 的 .json 文件添加到项目的根文件夹，来修改默认分类以及对特定文件和 url 进行分类。  
   
- 所有其他代码都分类为**MyCode**。  
+  所有其他代码都分类为**MyCode**。  
   
 ###  <a name="BKMK_JS_Stepping_behavior"></a> 单步执行行为  
   
@@ -234,30 +234,30 @@ ms.locfileid: "49273931"
 ###  <a name="BKMK_JS_Exception_behavior"></a> 异常行为  
  如果在以下内容中出现未经处理的异常：  
   
--   **MyCode**或**LibraryCode**代码，调试器始终中断。  
+- **MyCode**或**LibraryCode**代码，调试器始终中断。  
   
--   **UnrelatedCode**代码，并**MyCode**或**LibraryCode**代码位于调用堆栈，调试器中断。  
+- **UnrelatedCode**代码，并**MyCode**或**LibraryCode**代码位于调用堆栈，调试器中断。  
   
- 如果针对异常异常对话框中，启用了第一机会异常，并且引发异常**LibraryCode**或**UnrelatedCode**代码：  
+  如果针对异常异常对话框中，启用了第一机会异常，并且引发异常**LibraryCode**或**UnrelatedCode**代码：  
   
--   如果异常经过了处理，则调试器不会中断。  
+- 如果异常经过了处理，则调试器不会中断。  
   
--   如果异常未经过处理，则调试器中断。  
+- 如果异常未经过处理，则调试器中断。  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 自定义仅我的代码  
  若要针对单个 Visual Studio 项目对用户和非用户代码进行分类，请将一个名为 `mycode.json` 的 .json 文件添加到该项目的根文件夹。  
   
  按以下顺序执行分类：  
   
-1.  默认分类  
+1. 默认分类  
   
-2.  `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 文件中的分类  
+2. `%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json` 文件中的分类  
   
-3.  当前项目的 `mycode. json` 文件中的分类。  
+3. 当前项目的 `mycode. json` 文件中的分类。  
   
- 每个分类步骤都会重写前面的步骤。 .Json 文件无需列出所有键/值对，并**MyCode**，**库**，并**Unrelated**值可以是空数组。  
+   每个分类步骤都会重写前面的步骤。 .Json 文件无需列出所有键/值对，并**MyCode**，**库**，并**Unrelated**值可以是空数组。  
   
- “我的代码”.json 文件使用以下语法：  
+   “我的代码”.json 文件使用以下语法：  
   
 ```json  
 {  
@@ -295,15 +295,15 @@ ms.locfileid: "49273931"
   
  可以将值更改为以下关键字之一：  
   
--   `MyCode`  将脚本作为分类**MyCode**。  
+- `MyCode`  将脚本作为分类**MyCode**。  
   
--   `Library`  将脚本作为分类**LibraryCode**。  
+- `Library`  将脚本作为分类**LibraryCode**。  
   
--   `Unrelated`  将脚本作为分类**UnrelatedCode**。  
+- `Unrelated`  将脚本作为分类**UnrelatedCode**。  
   
- **MyCode、 Libraries 和不相关**  
+  **MyCode、 Libraries 和不相关**  
   
- **MyCode**，**库**，并**Unrelated**键/值对指定的 url 或想要包括在某个分类中的文件：  
+  **MyCode**，**库**，并**Unrelated**键/值对指定的 url 或想要包括在某个分类中的文件：  
   
 |||  
 |-|-|  

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::EnumLocals |Microsoft 文档
+title: IDebugMethodField::EnumLocals |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8379407a275fa4b89b4107037b2a39691d062dd9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a7983943aaa6680539557f68376d19e1e19580cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888237"
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
-创建所选的方法的局部变量的枚举数。  
+创建所选的方法的局部变量的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,18 +43,18 @@ int EnumLocals(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)表示选择的上下文或从其获取局部变量的作用域的调试地址的对象。  
+ [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)对象，表示选择的上下文或从其获取局部变量的作用域的调试地址。  
   
  `ppLocals`  
- [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象表示的局部变量列表; 否则，返回 null 值，如果不有任何局部变量。  
+ [out]返回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)对象，表示局部变量的列表; 否则，返回 null 值，如果不有任何局部变量。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK，则返回 S_FALSE，如果不有任何局部变量。 否则，返回错误代码。  
+ 如果成功，则返回 S_OK 或如果没有局部变量，则返回 S_FALSE。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 枚举只包含给定的调试地址块内定义的变量。 如果需要包括任何编译器生成的局部变量的所有局部变量，调用[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)方法。  
+ 将枚举中仅包含给定的调试地址块中定义的变量。 如果需要包括任何编译器生成的局部变量的所有局部变量，调用[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)方法。  
   
- 一种方法可以包含多个作用域的上下文或块。 例如，以下刻意的方法包含三个作用域、 两个内部块和方法体本身。  
+ 一种方法可以包含多个作用域的上下文或块。 例如，以下精心设计的方法包含三个作用域、 两个内部块和方法主体本身。  
   
 ```csharp  
 public void func(int index)  
@@ -74,9 +74,9 @@ public void func(int index)
 }  
 ```  
   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)对象所表示`func`方法本身。 调用`EnumLocals`方法替换[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)设置为`Inner Scope 1`地址返回一个枚举，其中包含`temp1`变量，例如。  
+ [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)对象表示`func`方法本身。 调用`EnumLocals`方法替换[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)设置为`Inner Scope 1`地址返回一个枚举，其中包含`temp1`变量，例如。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

@@ -14,23 +14,23 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd2fe9a025c4499b35c4d8aaea581c5242c00b65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f2e702689e0261012693db47a2743f4c3e58067
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902238"
 ---
 # <a name="counter"></a>计数器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 “计数器”选项从处理器（硬件）性能计数器收集数据。  
   
--   当使用采样分析方法时，“计数器”将指定芯片性能计数器和用作采样间隔的计数器事件数。 在使用采样时，仅可以指定一个计数器。  
+- 当使用采样分析方法时，“计数器”将指定芯片性能计数器和用作采样间隔的计数器事件数。 在使用采样时，仅可以指定一个计数器。  
   
--   当使用检测分析方法时，上一集合事件和当前集合事件间隔内出现的计数器事件数在探查器报表中作为单独字段列出。 使用检测时，可以指定多个“计数器”选项。  
+- 当使用检测分析方法时，上一集合事件和当前集合事件间隔内出现的计数器事件数在探查器报表中作为单独字段列出。 使用检测时，可以指定多个“计数器”选项。  
   
- 每个处理器类型都有一组自己的硬件性能计数器。 探查器定义一组几乎所有处理器都通用的泛型性能计数器。 若要列出计算机上的泛型计数器和特定于处理器的计数器，请使用 VSPerfCmd **QueryCounters** 命令。  
+  每个处理器类型都有一组自己的硬件性能计数器。 探查器定义一组几乎所有处理器都通用的泛型性能计数器。 若要列出计算机上的泛型计数器和特定于处理器的计数器，请使用 VSPerfCmd **QueryCounters** 命令。  
   
 ## <a name="syntax"></a>语法  
   

@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1222f1aaa68c573a61bf10e3935e21330aa63260
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: e9bb75c6d7265ca66ccc0922e2d26deaa4d7857a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320899"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874834"
 ---
 # <a name="unit-test-your-code"></a>对代码进行单元测试
 
@@ -43,7 +43,7 @@ ms.locfileid: "44320899"
 下面的主题可帮助你了解和创建单元测试：
 
 |任务|相关主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |**快速入门和演练：** 借助以下主题从代码示例中学习 Visual Studio 中的单元测试。|-   [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />-   [快速入门：通过测试资源管理器进行测试驱动开发](../test/quick-start-test-driven-development-with-test-explorer.md)<br />-   [将单元测试添加到现有 C++ 应用程序](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)|
 |**使用“测试资源管理器”进行单元测试：** 了解“测试资源管理器”如何帮助创建成效和效率更高的单元测试。|-   [单元测试基本信息](../test/unit-test-basics.md)<br />-   [创建单元测试项目](../test/create-a-unit-test-project.md)<br />-   [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md)<br />-   [安装第三方单元测试框架](../test/install-third-party-unit-test-frameworks.md)|
 |**对 C++ 代码进行单元测试**|-   [通过适用于 C++ 的 Microsoft 单元测试框架编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)|

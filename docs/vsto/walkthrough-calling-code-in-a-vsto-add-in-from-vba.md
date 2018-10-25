@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3bc8154be515bcf0509b2458534fed7c1c520e4e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 9e46cf9032cae7d6400822be7d72394a7845314f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513616"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843816"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练： VSTO 外接程序中从 VBA 调用代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。  
@@ -37,13 +37,13 @@ ms.locfileid: "39513616"
   
  本演练阐释了以下任务：  
   
--   定义可向其他 Office 解决方案公开的类。  
+- 定义可向其他 Office 解决方案公开的类。  
   
--   向其他 Office 解决方案公开类。  
+- 向其他 Office 解决方案公开类。  
   
--   从 VBA 代码调用类的方法。  
+- 从 VBA 代码调用类的方法。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -64,7 +64,7 @@ ms.locfileid: "39513616"
 ## <a name="define-a-class-that-you-can-expose-to-other-office-solutions"></a>定义可以公开的类向其他 Office 解决方案  
  本演练的目的是从 VBA 代码中调入 VSTO 外接程序中名为 `ImportData` 的类的 `AddInUtilities` 方法。 此方法将字符串写入活动工作表中的 A1 单元格。  
   
- 若要向其他 Office 解决方案公开 `AddInUtilities` 类，必须使该类成为公共类并对 COM 可见。 此外必须公开[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)接口的类中。 以下过程中的代码演示了一种可满足这些要求的方式。 有关更多信息，请参见 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+ 若要向其他 Office 解决方案公开 `AddInUtilities` 类，必须使该类成为公共类并对 COM 可见。 还必须在类中公开 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 接口。 以下过程中的代码演示了一种可满足这些要求的方式。 有关更多信息，请参见 [Calling Code in VSTO Add-ins from Other Office Solutions](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>定义可向其他 Office 解决方案公开的类  
   
@@ -84,7 +84,7 @@ ms.locfileid: "39513616"
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-     此代码使 `AddInUtilities` 类对于 COM 可见，并向该类中添加 `ImportData` 方法。 若要公开[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)接口，`AddInUtilities`类还具有<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>特性，并且该类实现的接口对 COM 可见。  
+     此代码使 `AddInUtilities` 类对于 COM 可见，并向该类中添加 `ImportData` 方法。 为了公开 [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) 接口， `AddInUtilities` 类还具有 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 特性，并且该类实现对 COM 可见的接口。  
   
 ## <a name="expose-the-class-to-other-office-solutions"></a>向其他 Office 解决方案公开类  
  若要向其他 Office 解决方案公开 `AddInUtilities` 类，请替代 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 方法。 在替代中，返回 `AddInUtilities` 类的一个实例。  
@@ -158,7 +158,7 @@ ms.locfileid: "39513616"
  [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [通过使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

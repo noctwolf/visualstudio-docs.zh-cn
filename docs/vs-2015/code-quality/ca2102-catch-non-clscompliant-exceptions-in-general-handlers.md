@@ -19,15 +19,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9b08b143df05ec365c069d4c6dbf7d9ed84813d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c2797b32bbcabd1c63fbfd510aec05c8bf54d21
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877410"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在常规处理程序中捕捉非 CLSCompliant 异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CatchNonClsCompliantExceptionsInGeneralHandlers|
@@ -41,11 +42,11 @@ ms.locfileid: "49244863"
 ## <a name="rule-description"></a>规则说明
  处理的 catch 块<xref:System.Exception>捕获了所有的公共语言规范 (CLS) 符合异常。 但是，它不捕捉非 CLS 兼容异常。 不符合 CLS 可引发符合异常，从本机代码或从托管代码生成的 Microsoft 中间语言 (MSIL) 组装器。 请注意，C# 和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]编译器不允许非 CLS 兼容异常引发和[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]不会捕获非 CLS 兼容异常。 如果在 catch 块的目的是处理所有异常，则使用以下常规 catch 块语法。
 
--   C#：`catch {}`
+- C#：`catch {}`
 
--   C + +:`catch(...) {}`或 `catch(Object^) {}`
+- C + +:`catch(...) {}`或 `catch(Object^) {}`
 
- 在 catch 块中删除以前允许的权限时，未处理的非 CLS 兼容异常将成为安全问题。 未捕获非 CLS 兼容异常，因为可以使用提升的权限运行恶意方法引发非 CLS 兼容异常。
+  在 catch 块中删除以前允许的权限时，未处理的非 CLS 兼容异常将成为安全问题。 未捕获非 CLS 兼容异常，因为可以使用提升的权限运行恶意方法引发非 CLS 兼容异常。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此规则的冲突时的目的是捕获所有异常，替换或添加的常规 catch 块或标记该程序集`RuntimeCompatibility(WrapNonExceptionThrows = true)`。 如果在 catch 块中移除的权限，则重复的功能在常规 catch 块。 如果它不是处理所有异常的意图，替换处理 catch 块<xref:System.Exception>与都处理特定异常类型的 catch 块。

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 697139499678814b4e4d6d360c42ed6d37bfd1e4
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2eea561b82b06d44dfbc787172e7ae063b421e2f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39636199"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929785"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函数
 此函数显示在客户端磁盘上的当前本地目录与源代码管理下的相应项目之间的差异。  

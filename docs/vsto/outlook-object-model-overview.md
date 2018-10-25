@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b11757990a17a867776376454142e5b84ee82510
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: b6885968385725f4aa7d991309902ca712849c8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941186"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如，<xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序，<xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹，<xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。  
@@ -59,13 +59,13 @@ ms.locfileid: "40008263"
 ### <a name="application-object"></a>应用程序对象  
  <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示 Outlook 应用程序，并且它是 Outlook 对象模型中最高级别的对象。 此对象的一些最重要的成员包括：  
   
--   [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法，可用于创建新项，如电子邮件、 任务或约会。  
+- [CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) 方法，可用于创建新项，如电子邮件、任务或约会。  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 属性，可用于访问将文件夹的内容显示在 Outlook 用户界面 (UI) 中的窗口。  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Explorers%2A> 属性，可用于访问将文件夹的内容显示在 Outlook 用户界面 (UI) 中的窗口。  
   
--   <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 属性，可用于访问显示单个项（如电子邮件或会议请求）的内容的窗口。  
+- <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 属性，可用于访问显示单个项（如电子邮件或会议请求）的内容的窗口。  
   
- 若要获取的实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`在项目中的类。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
+  若要获取的实例<xref:Microsoft.Office.Interop.Outlook.Application>对象，请使用的应用程序字段`ThisAddIn`在项目中的类。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
 > [!NOTE]  
 >  若要帮助避免出现安全警告，当使用由 Outlook 对象模型监护阻止的属性和方法时，获取 Outlook 对象的应用程序域中`ThisAddIn`类。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。  
@@ -88,7 +88,7 @@ ms.locfileid: "40008263"
   
 -   使用 <xref:Microsoft.Office.Interop.Outlook._Application.Inspectors%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 属性来访问 Outlook 中的所有 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。  
   
--   使用 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 。  
+-   使用 <xref:Microsoft.Office.Interop.Outlook.Application> 对象的 <xref:Microsoft.Office.Interop.Outlook._Application.ActiveInspector%2A> 方法以获取当前具有焦点的 <xref:Microsoft.Office.Interop.Outlook.Inspector>。  
   
 -   使用特定项的 `GetInspector` 方法（如 <xref:Microsoft.Office.Interop.Outlook.MailItem> 或 <xref:Microsoft.Office.Interop.Outlook.AppointmentItem>）来检索与之关联的检查器。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "40008263"
 ### <a name="taskitem-object"></a>TaskItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象表示要在指定时间范围内执行的任务。 <xref:Microsoft.Office.Interop.Outlook.TaskItem> 对象位于 **“任务”** 文件夹中。  
   
- 若要创建一个任务，请使用[CreateItem](/previous-versions/office/developer/office-2003/aa220082(v=office.11))方法<xref:Microsoft.Office.Interop.Outlook.Application>对象，并传入值<xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem>参数。  
+ 若要创建任务，请使用 [对象的](/previous-versions/office/developer/office-2003/aa220082(v=office.11)) CreateItem <xref:Microsoft.Office.Interop.Outlook.Application> 方法，并为参数传入值 <xref:Microsoft.Office.Interop.Outlook.OlItemType.olTaskItem> 。  
   
 ### <a name="contactitem-object"></a>ContactItem 对象  
  <xref:Microsoft.Office.Interop.Outlook.ContactItem>对象表示的联系人的**联系人**文件夹。 <xref:Microsoft.Office.Interop.Outlook.ContactItem> 对象包含它们表示的人员的各种联系信息，如街道地址、电子邮件地址和电话号码。  

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c17d5802e919108dfcb888f38acebe32c093bb76
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 1630432d6135ab4a6f6a221f54b89aa18e7e8cb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876225"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend"></a>Blend 中的“路径选择”工具修改键
 下表列出了在使用“路径选择”工具 ![Direct selection tool](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png) 修改现有路径形状时可使用的快捷方式。 要在现有路径上添加或删除点，或联接两个现有路径，请使用“钢笔”工具。
 
 |任务|操作步骤|指针|
-|-----------------------|-------------|-------------|
+| - |-------------|-------------|
 |为路径上的某个点显示切线图柄|单击路径上的某个点|![为路径上的某个点显示切线图柄](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移动点指针|
 |移动路径上的某个点|拖动路径上的某个点|![移动路径上的某个点](../designers/media/cfcc5f41-a666-4524-a958-50b9051130ca.png)<br /><br /> 移动点指针|
 |为路径上两个点之间的线段显示切线图柄|单击路径的一个线段|![为路径上两个点之间的线段显示切线图柄](../designers/media/2ace930f-98fa-410b-92cf-7a4b88503ee7.png)<br /><br /> 移动线段指针|

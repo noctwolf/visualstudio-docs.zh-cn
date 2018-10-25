@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93d5e45bc4e8efd146391c5dff78bcb11fcf067f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820689"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,39 +37,39 @@ ms.locfileid: "49292072"
   
  已通过在命令行上执行 MSBuild 和通过使用 Team Foundation Build 对下列操作系统验证了此演练。  
   
--   Windows 8（x86 和 x64）  
+- Windows 8（x86 和 x64）  
   
--   Windows 7 Ultimate  
+- Windows 7 Ultimate  
   
--   Windows Server 2008 R2 Standard  
+- Windows Server 2008 R2 Standard  
   
- 在完成此演练中的步骤之后，您可使用多计算机环境生成下列类型的应用程序：  
+  在完成此演练中的步骤之后，您可使用多计算机环境生成下列类型的应用程序：  
   
--   使用 Windows 8 SDK 的 C++ 桌面应用程序  
+- 使用 Windows 8 SDK 的 C++ 桌面应用程序  
   
--   面向 .NET Framework 4.5 的 Visual Basic 或 C# 桌面应用程序  
+- 面向 .NET Framework 4.5 的 Visual Basic 或 C# 桌面应用程序  
   
- 多计算机环境不能用于生成下列类型的应用程序：  
+  多计算机环境不能用于生成下列类型的应用程序：  
   
--   [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。 若要生成 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，您必须在生成计算机上安装 Visual Studio。  
+- [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。 若要生成 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用，您必须在生成计算机上安装 Visual Studio。  
   
--   面向 .NET Framework 4 或更早版本的桌面应用程序。 若要生成这些类型的应用程序，您必须在生成计算机上安装 Visual Studio 或 .NET 引用程序集和工具（通过 Windows 7.1 SDK）。  
+- 面向 .NET Framework 4 或更早版本的桌面应用程序。 若要生成这些类型的应用程序，您必须在生成计算机上安装 Visual Studio 或 .NET 引用程序集和工具（通过 Windows 7.1 SDK）。  
   
- 此演练分为下列部分：  
+  此演练分为下列部分：  
   
--   [在计算机上安装软件](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
+- [在计算机上安装软件](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingSoftware)  
   
--   [将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
+- [将文件从主计算机复制到生成计算机](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CopyingFiles)  
   
--   [创建注册表设置](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
+- [创建注册表设置](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingRegistry)  
   
--   [在生成计算机上设置环境变量](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
+- [在生成计算机上设置环境变量](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#SettingEnvVariables)  
   
--   [将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC) 中](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
+- [将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC) 中](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC)  
   
--   [生成项目](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
+- [生成项目](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#BuildingProjects)  
   
--   [创建可以签入源代码管理的生成环境](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
+- [创建可以签入源代码管理的生成环境](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#CreatingForSourceControl)  
   
 ## <a name="prerequisites"></a>系统必备  
   
@@ -91,196 +91,196 @@ ms.locfileid: "49292072"
 ##  <a name="CopyingFiles"></a>将文件从主计算机复制到生成计算机  
  本节包括将特定文件、编译器、生成工具、MSBuild 资产和注册表设置从主计算机复制到生成计算机。 这些说明假定，您已在主计算机的默认位置安装了 Visual Studio；如果安装在其他位置，请相应地调整步骤。  
   
--   在 x86 计算机上，默认位置为 C:\Program Files\Microsoft Visual Studio 11.0\  
+- 在 x86 计算机上，默认位置为 C:\Program Files\Microsoft Visual Studio 11.0\  
   
--   在 x64 计算机上，默认位置为 C:\Program Files (x86)\Microsoft Visual Studio 11.0\  
+- 在 x64 计算机上，默认位置为 C:\Program Files (x86)\Microsoft Visual Studio 11.0\  
   
- 请注意，Program Files 文件夹的名称取决于所安装的操作系统。 在 x86 计算机上，名称为 \Program Files\\；在 x64 计算机上，名称为 \Program Files (x86)\\。 不考虑系统体系结构，此演练中的 Program Files 文件夹指的是 %ProgramFiles%。  
+  请注意，Program Files 文件夹的名称取决于所安装的操作系统。 在 x86 计算机上，名称为 \Program Files\\；在 x64 计算机上，名称为 \Program Files (x86)\\。 不考虑系统体系结构，此演练中的 Program Files 文件夹指的是 %ProgramFiles%。  
   
 > [!NOTE]
 >  在生成计算机上，所有相关文件必须位于同一驱动器上；但是，该驱动器的驱动器号可能与主计算机上安装 Visual Studio 的驱动器的驱动器号不同。 在任何情况下，您在创建注册表项时，必须考虑文件位置，如本文档下文所述。  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>将 Windows SDK 文件复制到生成计算机  
   
-1.  如果您仅安装了 Windows SDK for Windows 8，请从主计算机将这些文件夹复制到生成计算机：  
+1. 如果您仅安装了 Windows SDK for Windows 8，请从主计算机将这些文件夹复制到生成计算机：  
   
-    -   %ProgramFiles%\Windows Kits\8.0\bin\  
+   - %ProgramFiles%\Windows Kits\8.0\bin\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Catalogs\  
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\DesignTime\  
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\include\  
+   - %ProgramFiles%\Windows Kits\8.0\include\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Lib\  
+   - %ProgramFiles%\Windows Kits\8.0\Lib\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\Redist\  
+   - %ProgramFiles%\Windows Kits\8.0\Redist\  
   
-    -   %ProgramFiles%\Windows Kits\8.0\References\  
+   - %ProgramFiles%\Windows Kits\8.0\References\  
   
      如果您还有其他 Windows 8 工具包…  
   
-    -   Microsoft Windows 评估和部署工具包  
+   - Microsoft Windows 评估和部署工具包  
   
-    -   Microsoft Windows 驱动程序工具包  
+   - Microsoft Windows 驱动程序工具包  
   
-    -   Microsoft Windows 硬件认证工具包  
+   - Microsoft Windows 硬件认证工具包  
   
      ...它们可能已将文件安装到上一步列出的 %ProgramFiles%\Windows Kits\8.0\ 文件夹中，并且其许可条款可能不允许这些文件的生成服务器权利。 查看安装的每个 Windows 工具包的许可条款以验证文件是否可复制到生成计算机。 如果许可条款不允许生成服务器权利，则将从生成计算机删除这些文件。  
   
-2.  将下列文件夹以递归方式从主计算机复制到生成计算机：  
+2. 将下列文件夹以递归方式从主计算机复制到生成计算机：  
   
-    -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
+   -   %ProgramFiles%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\  
   
-    -   %ProgramFiles%\Common Files\Merge Modules\  
+   -   %ProgramFiles%\Common Files\Merge Modules\  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\VC\  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\ProjectComponents\  
   
-    -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
+   -   %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\V110\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETCore\v4.5\  
   
-    -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
+   -   %ProgramFiles%\Reference Assemblies\Microsoft\Framework\\.NETFramework\v4.5\  
   
-3.  从这些文件从主计算机复制到生成计算机：  
+3. 从这些文件从主计算机复制到生成计算机：  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msobj110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdb110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbcore.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\mspdbsrv.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\IDE\msvcdis110.dll  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\makehm.exe  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\VCVarsQueryRegistry.bat  
   
-    -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
+   -   %ProgramFiles%\Microsoft Visual Studio 11.0\Common7\Tools\vsvars32.bat  
   
-4.  仅当您在生成计算机上运行生成输出时才需要下列 Visual C++ 运行库 - 例如，作为自动测试的一部分。 这些文件一般位于 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ 或 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ 文件夹下的子文件夹，具体取决于系统体系结构。 在 x86 系统中，将 x86 二进制文件复制到 \Windows\System32\ 文件夹。 在 x64 系统中，将 x86 二进制文件复制到 Windows\SysWOW64\ 文件夹，并将 x64 二进制文件复制到 Windows\System32\ 文件夹。  
+4. 仅当您在生成计算机上运行生成输出时才需要下列 Visual C++ 运行库 - 例如，作为自动测试的一部分。 这些文件一般位于 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x86\ 或 %ProgramFiles%\Microsoft Visual Studio 11.0\VC\redist\x64\ 文件夹下的子文件夹，具体取决于系统体系结构。 在 x86 系统中，将 x86 二进制文件复制到 \Windows\System32\ 文件夹。 在 x64 系统中，将 x86 二进制文件复制到 Windows\SysWOW64\ 文件夹，并将 x64 二进制文件复制到 Windows\System32\ 文件夹。  
   
-    -   \Microsoft.VC110.ATL\atl110.dll  
+   -   \Microsoft.VC110.ATL\atl110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcp110.dll  
+   -   \Microsoft.VC110.CRT\msvcp110.dll  
   
-    -   \Microsoft.VC110.CRT\msvcr110.dll  
+   -   \Microsoft.VC110.CRT\msvcr110.dll  
   
-    -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
+   -   \Microsoft.VC110.CXXAMP\vcamp110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110.dll  
+   -   \Microsoft.VC110.MFC\mfc110.dll  
   
-    -   \Microsoft.VC110.MFC\mfc110u.dll  
+   -   \Microsoft.VC110.MFC\mfc110u.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110.dll  
+   -   \Microsoft.VC110.MFC\mfcm110.dll  
   
-    -   \Microsoft.VC110.MFC\mfcm110u.dll  
+   -   \Microsoft.VC110.MFC\mfcm110u.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110chs.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110cht.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110deu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110enu.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110esn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110fra.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110ita.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110jpn.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110kor.dll  
   
-    -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
+   -   \Microsoft.VC110.MFCLOC\mfc110rus.dll  
   
-    -   \Microsoft.VC110.OPENMP\vcomp110.dll  
+   -   \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5.  只将下列文件从 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 无其他文件可复制。  
+5. 只将下列文件从 \Debug_NonRedist\x86\ 或 \Debug_NonRedist\x64\ 文件夹复制到生成计算机，如[准备用于运行调试可执行文件的测试计算机](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)中所述。 无其他文件可复制。  
   
-    -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
-    -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
+   -   \Microsoft.VC110.DebugCRT\msvcr110d.dll  
   
-    -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
+   -   \Microsoft.VC110.DebugCXXAMP\vcamp110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfc110ud.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110d.dll  
   
-    -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
+   -   \Microsoft.VC110.DebugMFC\mfcm110ud.dll  
   
-    -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
+   -   \Microsoft.VC110.DebugOpenMP\vcomp110d.dll  
   
 ##  <a name="CreatingRegistry"></a>创建注册表设置  
  您必须创建注册表项才能配置 MSBuild 的设置。  
   
 #### <a name="to-create-registry-settings"></a>创建注册表设置  
   
-1.  标识注册表项的父文件夹。 所有注册表项均是在同一父项下创建的。 在 x86 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。 在 x64 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。 不考虑系统体系结构，此演练中的父项指的是 %RegistryRoot%。  
+1. 标识注册表项的父文件夹。 所有注册表项均是在同一父项下创建的。 在 x86 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\。 在 x64 计算机上，父项为 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。 不考虑系统体系结构，此演练中的父项指的是 %RegistryRoot%。  
   
-    > [!NOTE]
-    >  如果您的主计算机体系结构与您的生成计算机的不同，则请确保在每台计算机上使用适当的父项。 这在您实现导出过程的自动化时尤其重要。  
-    >   
-    >  此外，如果您在生成计算机上使用的驱动器号不同于在主计算机上使用的，则请确保更改注册表项的值以匹配。  
+   > [!NOTE]
+   >  如果您的主计算机体系结构与您的生成计算机的不同，则请确保在每台计算机上使用适当的父项。 这在您实现导出过程的自动化时尤其重要。  
+   >   
+   >  此外，如果您在生成计算机上使用的驱动器号不同于在主计算机上使用的，则请确保更改注册表项的值以匹配。  
   
-2.  在生成计算机上创建下列注册表项。 所有这些项都是字符串（在注册表中类型为“REG_SZ”）。 将这些项的值设置为与主计算机上可比较项的值相同。  
+2. 在生成计算机上创建下列注册表项。 所有这些项都是字符串（在注册表中类型为“REG_SZ”）。 将这些项的值设置为与主计算机上可比较项的值相同。  
   
-    -   %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)  
+   - %RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder  
   
-    -   %Registryroot%\VisualStudio\11.0@Source 目录  
+   - %Registryroot%\VisualStudio\11.0@Source 目录  
   
-    -   %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir  
+   - %RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VC7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VC7@11.0  
   
-    -   %RegistryRoot%\VisualStudio\SxS\VS7@11.0  
+   - %RegistryRoot%\VisualStudio\SxS\VS7@11.0  
   
-    -   %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
+   - %RegistryRoot%\Windows Kits\Installed Roots@KitsRoot  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - %RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
      在 x64 生成计算机上，同样创建以下注册表项并参考主计算机来确定如何设置。  
   
-    -   %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
+   - %RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder  
   
      如果你的生成计算机为 x64 并且你要使用 64 位版本的 MSBuild，或者你要在 x64 计算机上使用 Team Foundation Server Build Service，则必须在本机 64 位注册表中创建下列注册表项。 请参见主计算机来确定如何设置这些项。  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
+   - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11  
   
 ##  <a name="SettingEnvVariables"></a>在生成计算机上设置环境变量  
  若要在生成计算机上使用 MSBuild，则必须设置 PATH 环境变量。 您可以使用 vcvarsall.bat 设置变量，也可以手动配置它们。  
@@ -301,23 +301,23 @@ ms.locfileid: "49292072"
   
 #### <a name="to-manually-set-environment-variables"></a>手动设置环境变量  
   
-1.  若要手动配置命令行环境，请将此路径添加到 PATH 环境变量：  
+1. 若要手动配置命令行环境，请将此路径添加到 PATH 环境变量：  
   
-    -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
+   -   %Program Files%\Microsoft Visual Studio 11.0\Common7\IDE  
   
-2.  您也可以将下列路径添加到 PATH 变量以使得使用 MSBuild 生成解决方案更容易。  
+2. 您也可以将下列路径添加到 PATH 变量以使得使用 MSBuild 生成解决方案更容易。  
   
-     如果要使用本机 32 位 MSBuild，请将下列路径添加到 PATH 变量中：  
+    如果要使用本机 32 位 MSBuild，请将下列路径添加到 PATH 变量中：  
   
-    -   %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools  
   
-    -   %windir%\Microsoft.NET\Framework\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework\v4.0.30319  
   
      如果要使用本机 64 位 MSBuild，请将下列路径添加到 PATH 变量：  
   
-    -   %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64  
   
-    -   %windir%\Microsoft.NET\Framework64\v4.0.30319  
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319  
   
 ##  <a name="InstallingMSBuildToGAC"></a>将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC) 中  
  MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。  

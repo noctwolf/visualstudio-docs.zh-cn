@@ -1,5 +1,5 @@
 ---
-title: IDebugMessageEvent2::SetResponse |Microsoft 文档
+title: IDebugMessageEvent2::SetResponse |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dfb3c71b15e54a622523833f58706d24b61484d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 73c5b29293b8e06ec79195621c8744c71a8bdd58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111673"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936124"
 ---
 # <a name="idebugmessageevent2setresponse"></a>IDebugMessageEvent2::SetResponse
-设置响应，如果有的话，该消息框中。  
+设置响应中，如果有，该消息框中。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,11 +42,11 @@ int SetResponse(
   
 #### <a name="parameters"></a>参数  
  `dwResponse`  
- [in]指定响应中，使用 Win32 的约定`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)有关详细信息的函数。  
+ [in]指定的响应，使用 Win32 的约定`MessageBox`函数。 请参阅[AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)函数的详细信息。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)   
  [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

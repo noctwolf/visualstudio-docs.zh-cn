@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aafc13f01d89177a144558126452d547a55f88d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e08059c18a7b5c1fff74539f4ba497c319838371
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881919"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "49266677"
   
 #### <a name="to-create-a-class-library-project"></a>创建类库项目  
   
-1.  上**文件**菜单中，选择**新建**然后单击**新项目**。  
+1. 上**文件**菜单中，选择**新建**然后单击**新项目**。  
   
-2.  在中**新的项目**对话框中的**项目类型**s，单击**Visual Basic**。  
+2. 在中**新的项目**对话框中的**项目类型**s，单击**Visual Basic**。  
   
-3.  在中**模板**框中，单击**类库**。  
+3. 在中**模板**框中，单击**类库**。  
   
-4.  在中**名称**框中，键入相应的名称为类库，如**MyFirstVisualizer**。  
+4. 在中**名称**框中，键入相应的名称为类库，如**MyFirstVisualizer**。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
- 创建类库后，必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便使用其中定义的类。 不过，首先要为您的项目赋予一个有意义的名称。  
+   创建类库后，必须添加对 Microsoft.VisualStudio.DebuggerVisualizers.DLL 的引用，以便使用其中定义的类。 不过，首先要为您的项目赋予一个有意义的名称。  
   
 #### <a name="to-rename-class1vb-and-add-microsoftvisualstudiodebuggervisualizers"></a>重命名 Class1.vb 并添加 Microsoft.VisualStudio.DebuggerVisualizers  
   
@@ -81,32 +81,32 @@ ms.locfileid: "49266677"
   
 #### <a name="to-inherit-from-dialogdebuggervisualizer"></a>从 DialogDebuggerVisualizer 继承  
   
-1.  在 DebuggerSide.vb 中，转到下面的代码行：  
+1. 在 DebuggerSide.vb 中，转到下面的代码行：  
   
-    ```  
-    Public Class DebuggerSide  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   ```  
   
-2.  编辑代码，使它类似于以下内容：  
+2. 编辑代码，使它类似于以下内容：  
   
-    ```  
-    Public Class DebuggerSide  
-    Inherits DialogDebuggerVisualizer  
-    ```  
+   ```  
+   Public Class DebuggerSide  
+   Inherits DialogDebuggerVisualizer  
+   ```  
   
- `DialogDebuggerVisualizer` 具有一个抽象方法 `Show`，您必须重写此方法。  
+   `DialogDebuggerVisualizer` 具有一个抽象方法 `Show`，您必须重写此方法。  
   
 #### <a name="to-override-the-dialogdebuggervisualizershow-method"></a>重写 DialogDebuggerVisualizer.Show 方法  
   
--   在 `public class DebuggerSide` 中添加下面的方法：  
+- 在 `public class DebuggerSide` 中添加下面的方法：  
   
-    ```  
-    Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
+  ```  
+  Protected Overrides Sub Show(ByVal windowService As Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService, ByVal objectProvider As Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider)  
   
-        End Sub  
-    ```  
+      End Sub  
+  ```  
   
- `Show` 方法包含实际创建可视化工具对话框或其他用户界面的代码，并显示已从调试器传递到可视化工具的信息。 你必须添加创建该对话框并显示该信息的代码。 在本演练中，将使用 Windows 窗体消息框执行此操作。 首先，必须为 `Imports` 添加一个引用和 <xref:System.Windows.Forms> 语句。  
+  `Show` 方法包含实际创建可视化工具对话框或其他用户界面的代码，并显示已从调试器传递到可视化工具的信息。 你必须添加创建该对话框并显示该信息的代码。 在本演练中，将使用 Windows 窗体消息框执行此操作。 首先，必须为 `Imports` 添加一个引用和 <xref:System.Windows.Forms> 语句。  
   
 #### <a name="to-add-systemwindowsforms"></a>添加 System.Windows.Forms  
   
@@ -155,30 +155,30 @@ ms.locfileid: "49266677"
   
 #### <a name="to-add-a-test-method-to-show-the-visualizer"></a>添加测试方法以显示可视化工具  
   
-1.  将下面的方法添加到类 `public DebuggerSide`：  
+1. 将下面的方法添加到类 `public DebuggerSide`：  
   
-    ```  
-    Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
-        Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
-    visualizerHost.ShowVisualizer()  
-    End Sub  
-    ```  
+   ```  
+   Shared Public Sub TestShowVisualizer(ByVal objectToVisualize As Object)  
+       Dim visualizerHost As New VisualizerDevelopmentHost(objectToVisualize, GetType(DebuggerSide))  
+   visualizerHost.ShowVisualizer()  
+   End Sub  
+   ```  
   
-2.  上**构建**菜单上，单击**生成 MyFirstVisualizer**。 该项目应能成功生成。 在继续前更正所有生成错误。  
+2. 上**构建**菜单上，单击**生成 MyFirstVisualizer**。 该项目应能成功生成。 在继续前更正所有生成错误。  
   
- 然后，您必须创建一个可执行项目以调用可视化工具 DLL。 为简单起见，使用一个控制台应用程序项目。  
+   然后，您必须创建一个可执行项目以调用可视化工具 DLL。 为简单起见，使用一个控制台应用程序项目。  
   
 #### <a name="to-add-a-console-application-project-to-the-solution"></a>将控制台应用程序项目添加到解决方案中  
   
-1.  上**文件**菜单上，单击**添加**，然后单击**新项目**。  
+1. 上**文件**菜单上，单击**添加**，然后单击**新项目**。  
   
-2.  在中**添加新项目**对话框中**模板**框中，单击**控制台应用程序**。  
+2. 在中**添加新项目**对话框中**模板**框中，单击**控制台应用程序**。  
   
-3.  在中**名称**框中，键入有意义的名称的控制台应用程序，如**MyTestConsole**。  
+3. 在中**名称**框中，键入有意义的名称的控制台应用程序，如**MyTestConsole**。  
   
-4.  单击 **“确定”**。  
+4. 单击 **“确定”**。  
   
- 现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。  
+   现在，必须添加必要的引用，以便 MyTestConsole 能够调用 MyFirstVisualizer。  
   
 #### <a name="to-add-necessary-references-to-mytestconsole"></a>添加对 MyTestConsole 的必需引用  
   
@@ -199,38 +199,38 @@ ms.locfileid: "49266677"
   
 #### <a name="to-add-code-to-mytestconsole"></a>将代码添加到 MyTestConsole  
   
-1.  在中**解决方案资源管理器**，右键单击**Program.vb**，然后在快捷菜单上，单击**重命名**。  
+1. 在中**解决方案资源管理器**，右键单击**Program.vb**，然后在快捷菜单上，单击**重命名**。  
   
-2.  编辑名称从 Module1.vb 为适当的如**TestConsole.vb**。  
+2. 编辑名称从 Module1.vb 为适当的如**TestConsole.vb**。  
   
-     请注意，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动更改 TestConsole.vb 中的类声明，使之与新文件名匹配。  
+    请注意，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 会自动更改 TestConsole.vb 中的类声明，使之与新文件名匹配。  
   
-3.  在 TestConsole。 vb，添加以下`Imports`语句：  
+3. 在 TestConsole。 vb，添加以下`Imports`语句：  
   
-    ```  
-    Imports MyFirstVisualizer  
-    ```  
+   ```  
+   Imports MyFirstVisualizer  
+   ```  
   
-4.  在方法 `Main` 中，添加以下代码：  
+4. 在方法 `Main` 中，添加以下代码：  
   
-    ```  
-    Dim myString As String = "Hello, World"  
-    DebuggerSide.TestShowVisualizer(myString)  
-    ```  
+   ```  
+   Dim myString As String = "Hello, World"  
+   DebuggerSide.TestShowVisualizer(myString)  
+   ```  
   
- 现在已准备好测试你的第一个可视化工具了。  
+   现在已准备好测试你的第一个可视化工具了。  
   
 #### <a name="to-test-the-visualizer"></a>测试可视化工具  
   
-1.  在中**解决方案资源管理器**，右键单击**MyTestConsole**，然后在快捷菜单上，单击**设为启动项目**。  
+1. 在中**解决方案资源管理器**，右键单击**MyTestConsole**，然后在快捷菜单上，单击**设为启动项目**。  
   
-2.  上**调试**菜单上，单击**启动**。  
+2. 上**调试**菜单上，单击**启动**。  
   
-     控制台应用程序启动。 此时将出现可视化工具，其中显示字符串“Hello, World”。  
+    控制台应用程序启动。 此时将出现可视化工具，其中显示字符串“Hello, World”。  
   
- 祝贺您！ 您刚刚生成了第一个可视化工具并进行了测试。  
+   祝贺您！ 您刚刚生成了第一个可视化工具并进行了测试。  
   
- 如果你想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)。  
+   如果你想在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中使用可视化工具，而不是只从测试工具中调用它，则需要安装它。 有关详细信息，请参阅[如何： 安装可视化工具](../debugger/how-to-install-a-visualizer.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [可视化工具体系结构](../debugger/visualizer-architecture.md)   

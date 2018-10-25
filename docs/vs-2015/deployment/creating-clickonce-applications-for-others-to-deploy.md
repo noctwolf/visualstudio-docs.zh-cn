@@ -30,12 +30,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 5afabc774165ac001545c084a77cba6d165cf88b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181514"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862081"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,13 +92,13 @@ ms.locfileid: "49181514"
   
  有三种方法，客户可以在此情况下对部署清单进行签名：  
   
-1.  客户可以使用由证书颁发机构 (CA) 颁发的有效证书。  
+1. 客户可以使用由证书颁发机构 (CA) 颁发的有效证书。  
   
-2.  作为此方法的变体，客户可以选择使用自签名证书及其部署清单进行签名。 对此的缺点是，它将导致应用程序时将其安装要求用户显示单词"未知发行商"。 但是，好处是它可防止较小的客户无需花费时间和金钱所需的证书颁发机构颁发的证书。  
+2. 作为此方法的变体，客户可以选择使用自签名证书及其部署清单进行签名。 对此的缺点是，它将导致应用程序时将其安装要求用户显示单词"未知发行商"。 但是，好处是它可防止较小的客户无需花费时间和金钱所需的证书颁发机构颁发的证书。  
   
-3.  最后，开发人员可以安装包中包含其自己的自签名的证书。 它引入了与本主题前面所述的应用程序标识的潜在问题。  
+3. 最后，开发人员可以安装包中包含其自己的自签名的证书。 它引入了与本主题前面所述的应用程序标识的潜在问题。  
   
- 安装程序部署项目方法的缺点是花费时间和生成自定义部署应用程序所需的费用。  
+   安装程序部署项目方法的缺点是花费时间和生成自定义部署应用程序所需的费用。  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>让客户生成部署清单  
  第三个可能的部署策略是应用程序文件和应用程序清单关闭到客户。 在此方案中，客户负责使用.NET Framework SDK 来生成和部署清单进行签名。  

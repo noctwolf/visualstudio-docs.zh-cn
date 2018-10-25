@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPosition2::GetFileName |Microsoft 文档
+title: IDebugDocumentPosition2::GetFileName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81417fbb025fdea70a4b9fb51f0b49fb0257cd8a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f77d7f89bd7970a17c78414393cd8856a6f62b4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872316"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
-获取包含文档位置的源代码文件的文件名。  
+获取包含文档位置的源文件的文件名。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,7 +41,7 @@ int GetFileName(
   
 #### <a name="parameters"></a>参数  
  `pbstrFileName`  
- [out]返回的源文件的文件名称。  
+ [out]返回源文件的文件名。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
@@ -49,5 +49,5 @@ int GetFileName(
 ## <a name="remarks"></a>备注  
  源文件可能始终没有 （源文件可能磁盘不存在，例如） 的文件名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

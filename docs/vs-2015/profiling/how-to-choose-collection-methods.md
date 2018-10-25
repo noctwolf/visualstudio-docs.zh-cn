@@ -18,12 +18,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 478183902012bd4e0a4400bf275fd7e67fade6b5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 20617a8c05a0d9b9a57f0a181a4c985d7ffc1f4e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274412"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940952"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "49274412"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 可以使用性能会话“方法”属性指定最适合应用程序的收集方法。 可从“性能向导”、“性能资源管理器”或性能会话的“属性”页中选择收集方法。 有关使用命令行工具的详细信息，请参阅[命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)。  
+  可以使用性能会话“方法”属性指定最适合应用程序的收集方法。 可从“性能向导”、“性能资源管理器”或性能会话的“属性”页中选择收集方法。 有关使用命令行工具的详细信息，请参阅[命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)。  
   
 ## <a name="performance-wizard"></a>性能向导  
   

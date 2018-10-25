@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_nopad |Microsoft 文档'
+title: 'Idiasectioncontrib:: Get_nopad |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b26005e6e7062fcf5a3a6f0a9aba4ac7a79b92f7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0cd7069b9b84ba088c7a40255a8805fc8bb2c394
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858038"
 ---
 # <a name="idiasectioncontribgetnopad"></a>IDiaSectionContrib::get_nopad
-检索一个标志，指示是否部分应不填充到下一步的内存边界。  
+检索一个标志，指示是否在部分应不填充到下一个内存边界。  
   
 ## <a name="syntax"></a>语法  
   
@@ -37,10 +37,10 @@ HRESULT get_nopad(
  [out]返回`TRUE`如果部分应不填充到下一步的内存边界; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 这是通常仅在较旧的文件上会出现一个属性。  
+ 这是通常会出现仅在较旧的文件上的属性。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

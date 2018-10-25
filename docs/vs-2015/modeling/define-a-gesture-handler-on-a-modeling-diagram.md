@@ -15,12 +15,12 @@ caps.latest.revision: 36
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0aa5eef915aea0eea01e9d6195228cddf8e974ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26a60151d89ffaa89338601c4992f9c2f41b099a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812967"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>在建模图上定义笔势处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,167 +43,167 @@ ms.locfileid: "49248071"
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>要在笔势处理程序自己的 VSIX 中创建它  
   
-1.  在“新建项目”  对话框中的“建模项目” 下，选择“笔势扩展” 。  
+1. 在“新建项目”  对话框中的“建模项目” 下，选择“笔势扩展” 。  
   
-2.  在新项目中打开 **.cs** 文件并修改 `GestureExtension` 类，以实现笔势处理程序。  
+2. 在新项目中打开 **.cs** 文件并修改 `GestureExtension` 类，以实现笔势处理程序。  
   
-     有关详细信息，请参阅 [实现笔势处理程序](#Implementing)。  
+    有关详细信息，请参阅 [实现笔势处理程序](#Implementing)。  
   
-3.  按 F5 测试笔势处理程序。 有关详细信息，请参阅 [执行笔势处理程序](#Executing)。  
+3. 按 F5 测试笔势处理程序。 有关详细信息，请参阅 [执行笔势处理程序](#Executing)。  
   
-4.  在另一台计算机上安装笔势处理程序，通过将文件复制**bin\\\*\\\*.vsix**生成的项目。 有关详细信息，请参阅 [安装和卸载扩展](#Installing)。  
+4. 在另一台计算机上安装笔势处理程序，通过将文件复制**bin\\\*\\\*.vsix**生成的项目。 有关详细信息，请参阅 [安装和卸载扩展](#Installing)。  
   
- 下面是替代过程：  
+   下面是替代过程：  
   
 #### <a name="to-create-a-separate-class-library-dll-project-for-the-gesture-handler"></a>要为笔势处理程序创建一个单独的类库 (dll) 项目  
   
-1.  在新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案或现有解决方案中创建类库项目。  
+1. 在新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案或现有解决方案中创建类库项目。  
   
-    1.  在“文件”  菜单上，选择“新建” 、“项目” 。  
+   1.  在“文件”  菜单上，选择“新建” 、“项目” 。  
   
-    2.  在“已安装的模板” 下，展开“Visual C#”  或“Visual Basic” ，然后在中间栏中选择“类库” 。  
+   2.  在“已安装的模板” 下，展开“Visual C#”  或“Visual Basic” ，然后在中间栏中选择“类库” 。  
   
-2.  将下列引用添加到项目中。  
+2. 将下列引用添加到项目中。  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
-     `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
+    `Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility`  
   
-     `Microsoft.VisualStudio.Uml.Interfaces`  
+    `Microsoft.VisualStudio.Uml.Interfaces`  
   
-     `System.ComponentModel.Composition`  
+    `System.ComponentModel.Composition`  
   
-     `System.Windows.Forms`  
+    `System.Windows.Forms`  
   
-     `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 仅当扩展层关系图时才需要此项。 有关详细信息，请参阅[扩展层关系图](../modeling/extend-layer-diagrams.md)。  
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` – 仅当扩展层关系图时才需要此项。 有关详细信息，请参阅[扩展层关系图](../modeling/extend-layer-diagrams.md)。  
   
-3.  将类文件添加到项目中，并将其内容设置为下面的代码。  
+3. 将类文件添加到项目中，并将其内容设置为下面的代码。  
   
-    > [!NOTE]
-    >  根据你的偏好更改命名空间和类名。  
+   > [!NOTE]
+   >  根据你的偏好更改命名空间和类名。  
   
-    ```  
-    using System.ComponentModel.Composition;  
-    using System.Linq;  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Modeling.Diagrams;  
-    using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
-    using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
-    using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
-    using Microsoft.VisualStudio.Modeling;  
-    using Microsoft.VisualStudio.Uml.Classes;  
-    // ADD other UML namespaces if required  
+   ```  
+   using System.ComponentModel.Composition;  
+   using System.Linq;  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Modeling.Diagrams;  
+   using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;  
+   using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
+   using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;  
+   using Microsoft.VisualStudio.Uml.AuxiliaryConstructs;  
+   using Microsoft.VisualStudio.Modeling;  
+   using Microsoft.VisualStudio.Uml.Classes;  
+   // ADD other UML namespaces if required  
   
-    namespace MyGestureHandler // CHANGE  
-    {  
-      // DELETE any of these attributes if the handler  
-      // should not work with some types of diagram.  
-      [ClassDesignerExtension]  
-      [ActivityDesignerExtension]  
-      [ComponentDesignerExtension]  
-      [SequenceDesignerExtension]  
-      [UseCaseDesignerExtension]  
-      // [LayerDesignerExtension]  
+   namespace MyGestureHandler // CHANGE  
+   {  
+     // DELETE any of these attributes if the handler  
+     // should not work with some types of diagram.  
+     [ClassDesignerExtension]  
+     [ActivityDesignerExtension]  
+     [ComponentDesignerExtension]  
+     [SequenceDesignerExtension]  
+     [UseCaseDesignerExtension]  
+     // [LayerDesignerExtension]  
   
-      // Gesture handlers must export IGestureExtension:  
-      [Export(typeof(IGestureExtension))]  
-      // CHANGE class name  
-      public class MyGesture1 : IGestureExtension  
-      {  
-        [Import]  
-        public IDiagramContext DiagramContext { get; set; }  
+     // Gesture handlers must export IGestureExtension:  
+     [Export(typeof(IGestureExtension))]  
+     // CHANGE class name  
+     public class MyGesture1 : IGestureExtension  
+     {  
+       [Import]  
+       public IDiagramContext DiagramContext { get; set; }  
   
-        /// <summary>  
-        /// Called when the user double-clicks on the diagram  
-        /// </summary>  
-        /// <param name="targetElement"></param>  
-        /// <param name="diagramPointEventArgs"></param>  
-        public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called when the user double-clicks on the diagram  
+       /// </summary>  
+       /// <param name="targetElement"></param>  
+       /// <param name="diagramPointEventArgs"></param>  
+       public void OnDoubleClick(ShapeElement targetElement, DiagramPointEventArgs diagramPointEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target shape, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetElement.CreateIShape();  
+         // Get the target shape, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetElement.CreateIShape();  
   
-          // Do something...  
-        }  
+         // Do something...  
+       }  
   
-        /// <summary>  
-        /// Called repeatedly when the user drags from anywhere on the screen.  
-        /// Return value should indicate whether a drop here is allowed.  
-        /// </summary>  
-        /// <param name="targetMergeElement">References the element to be dropped on.</param>  
-        /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
-        /// <returns></returns>  
-        public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       /// <summary>  
+       /// Called repeatedly when the user drags from anywhere on the screen.  
+       /// Return value should indicate whether a drop here is allowed.  
+       /// </summary>  
+       /// <param name="targetMergeElement">References the element to be dropped on.</param>  
+       /// <param name="diagramDragEventArgs">References the element to be dropped.</param>  
+       /// <returns></returns>  
+       public bool CanDragDrop(ShapeElement targetMergeElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
   
-          // Get the target element, if any. Null if the target is the diagram.  
-          IShape targetIShape = targetMergeElement.CreateIShape();  
+         // Get the target element, if any. Null if the target is the diagram.  
+         IShape targetIShape = targetMergeElement.CreateIShape();  
   
-          // This example allows drag of any UML elements.  
-          return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
-        }  
+         // This example allows drag of any UML elements.  
+         return GetModelElementsFromDragEvent(diagramDragEventArgs).Count() > 0;  
+       }  
   
-        /// <summary>  
-        /// Execute the action to be performed on the drop.  
-        /// </summary>  
-        /// <param name="targetDropElement"></param>  
-        /// <param name="diagramDragEventArgs"></param>  
-        public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
-        {  
-          // CHANGE THIS CODE FOR YOUR APPLICATION.  
-        }  
+       /// <summary>  
+       /// Execute the action to be performed on the drop.  
+       /// </summary>  
+       /// <param name="targetDropElement"></param>  
+       /// <param name="diagramDragEventArgs"></param>  
+       public void OnDragDrop(ShapeElement targetDropElement, DiagramDragEventArgs diagramDragEventArgs)  
+       {  
+         // CHANGE THIS CODE FOR YOUR APPLICATION.  
+       }  
   
-        /// <summary>  
-        /// Retrieves UML IElements from drag arguments.  
-        /// Works for drags from UML diagrams.  
-        /// </summary>  
-        private IEnumerable<IElement> GetModelElementsFromDragEvent  
-                (DiagramDragEventArgs dragEvent)  
-        {  
-          //ElementGroupPrototype is the container for  
-          //dragged and copied elements and toolbox items.  
-          ElementGroupPrototype prototype =  
-             dragEvent.Data.  
-             GetData(typeof(ElementGroupPrototype))  
-                  as ElementGroupPrototype;  
-          // Locate the originals in the implementation store.  
-          IElementDirectory implementationDirectory =  
-             dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
+       /// <summary>  
+       /// Retrieves UML IElements from drag arguments.  
+       /// Works for drags from UML diagrams.  
+       /// </summary>  
+       private IEnumerable<IElement> GetModelElementsFromDragEvent  
+               (DiagramDragEventArgs dragEvent)  
+       {  
+         //ElementGroupPrototype is the container for  
+         //dragged and copied elements and toolbox items.  
+         ElementGroupPrototype prototype =  
+            dragEvent.Data.  
+            GetData(typeof(ElementGroupPrototype))  
+                 as ElementGroupPrototype;  
+         // Locate the originals in the implementation store.  
+         IElementDirectory implementationDirectory =  
+            dragEvent.DiagramClientView.Diagram.Store.ElementDirectory;  
   
-          return prototype.ProtoElements.Select(  
-            prototypeElement =>  
-            {  
-              ModelElement element = implementationDirectory  
-                .FindElement(prototypeElement.ElementId);  
-              ShapeElement shapeElement = element as ShapeElement;  
-              if (shapeElement != null)  
-              {  
-                // Dragged from a diagram.  
-                return shapeElement.ModelElement as IElement;  
-              }  
-              else  
-              {  
-                // Dragged from UML Model Explorer.  
-                return element as IElement;  
-              }  
-            });  
-        }  
+         return prototype.ProtoElements.Select(  
+           prototypeElement =>  
+           {  
+             ModelElement element = implementationDirectory  
+               .FindElement(prototypeElement.ElementId);  
+             ShapeElement shapeElement = element as ShapeElement;  
+             if (shapeElement != null)  
+             {  
+               // Dragged from a diagram.  
+               return shapeElement.ModelElement as IElement;  
+             }  
+             else  
+             {  
+               // Dragged from UML Model Explorer.  
+               return element as IElement;  
+             }  
+           });  
+       }  
   
-      }  
-    }  
+     }  
+   }  
   
-    ```  
+   ```  
   
-     有关要在方法中放置的内容的详细信息，请参阅 [实现笔势处理程序](#Implementing)。  
+    有关要在方法中放置的内容的详细信息，请参阅 [实现笔势处理程序](#Implementing)。  
   
- 你必须将菜单命令添加到一个充当命令安装容器的 VSIX 项目中。 如果需要，可以将其他组件包括在同一 VSIX 中。  
+   你必须将菜单命令添加到一个充当命令安装容器的 VSIX 项目中。 如果需要，可以将其他组件包括在同一 VSIX 中。  
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>将单独的笔势处理程序添加到 VSIX 项目  
   
@@ -238,25 +238,25 @@ ms.locfileid: "49248071"
   
 #### <a name="to-test-the-gesture-handler"></a>要测试笔势处理程序  
   
-1.  按“F5” ，或在“调试”  菜单上，单击“开始调试” 。  
+1. 按“F5” ，或在“调试”  菜单上，单击“开始调试” 。  
   
-     此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
+    此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。  
   
-     **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
+    **疑难解答**：如果新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 未启动：  
   
-    -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
+   -   如果你有多个项目，请确保将 VSIX 项目设置为解决方案的启动项目。  
   
-    -   在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
+   -   在“解决方案资源管理器”中，在“启动”或“仅项目”的快捷菜单上选择“属性”。 在项目属性编辑器中，选择“调试”  选项卡。请确保“启动外部程序” ** 字段中的字符串是 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的完整路径名，通常为：  
   
-         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
+        `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于笔势处理程序类的特性中列出的某个类型的关系图。  
+2. 在实验性 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]中，打开或创建一个建模项目，然后打开或创建一个建模图。 使用属于笔势处理程序类的特性中列出的某个类型的关系图。  
   
-3.  在关系图上的任意位置双击。 应调用你的双击处理程序。  
+3. 在关系图上的任意位置双击。 应调用你的双击处理程序。  
   
-4.  将一个元素从 UML 资源管理器拖动到关系图上。 应调用你的拖动处理程序。  
+4. 将一个元素从 UML 资源管理器拖动到关系图上。 应调用你的拖动处理程序。  
   
- **疑难解答**：如果笔势处理程序未运行，请确保：  
+   **疑难解答**：如果笔势处理程序未运行，请确保：  
   
 -   该笔势处理程序项目作为一个 MEF 组件在“资产”  选项卡中列出，该选项卡位于 VSIX 项目的 **source.extensions.manifest** 中。  
   
@@ -374,15 +374,15 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
 #### <a name="to-uninstall-an-extension"></a>若要卸载扩展  
   
-1.  在“工具”  菜单上，选择“扩展和更新” 。  
+1. 在“工具”  菜单上，选择“扩展和更新” 。  
   
-2.  展开“已安装的扩展” 。  
+2. 展开“已安装的扩展” 。  
   
-3.  选择扩展，然后选择“卸载” 。  
+3. 选择扩展，然后选择“卸载” 。  
   
- 在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：  
+   在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：  
   
- *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%Localappdata%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="DragExample"></a> 示例  
  下面的示例演示如何在序列图中基于从组件图中拖动的组件的部件和端口来创建生命线。  

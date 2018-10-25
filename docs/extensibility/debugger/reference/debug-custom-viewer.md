@@ -1,5 +1,5 @@
 ---
-title: DEBUG_CUSTOM_VIEWER |Microsoft 文档
+title: DEBUG_CUSTOM_VIEWER |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84d8bdc7a4ea9ac59ee0956226618402b397844b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e86cae45298b3f137e2ebca65fa8c531c6d86457
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109985"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908439"
 ---
 # <a name="debugcustomviewer"></a>DEBUG_CUSTOM_VIEWER
-一个结构，它标识一个自定义查看器，或键入可视化工具。  
+标识自定义查看器的结构或类型可视化工具。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,25 +51,25 @@ public struct DEBUG_CUSTOM_VIEWER {
   
 ## <a name="members"></a>成员  
  dwID  
- ID 来区分多个查看器或由一个实现的可视化工具`GUID`。  
+ 一个 ID 来区分多个查看器或实现一个可视化工具`GUID`。  
   
  bstrMenuName  
- 将显示在下拉列表菜单中的文本。  
+ 将出现在下拉列表菜单文本。  
   
  bstrDescription  
- 自定义查看器或如果未使用 （必须是一个 null 值） 的类型可视化工具的说明。  
+ 如果未使用 （必须为 null 值） 的类型可视化工具的自定义查看器的说明。  
   
  guidLang  
  提供的表达式计算器的语言。  
   
  guidVendor  
- 供应商提供的表达式计算器。  
+ 提供的表达式计算器的供应商。  
   
  bstrMetric  
- 度量值在其下的自定义查看器或类型可视化工具`CLSID`存储。  
+ 指标在其下的自定义查看器或类型可视化工具`CLSID`存储。  
   
 ## <a name="remarks"></a>备注  
- 通过调用返回的此结构列表[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (并且进一步扩展， [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
+ 此结构的列表返回通过调用[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)方法 (以及由此而[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法)。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -78,7 +78,7 @@ public struct DEBUG_CUSTOM_VIEWER {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

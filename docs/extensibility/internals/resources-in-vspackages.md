@@ -1,5 +1,5 @@
 ---
-title: 在 Vspackage 中的资源 |Microsoft 文档
+title: Vspackage 中的资源 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,43 +15,43 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d252f61a9f634f4bb8435626c41c586bbe5cb839
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4de310a9b1c0cfdfcbbf2855d3e371e118be8bdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31130941"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856283"
 ---
-# <a name="resources-in-vspackages"></a>在 Vspackage 中的资源
-你可以在本机附属 UI Dll 托管的附属 Dll 或托管的 VSPackage 本身中嵌入的本地化的资源。  
+# <a name="resources-in-vspackages"></a>VSPackage 中的资源
+在本机附属 UI Dll 托管的附属 Dll 或托管的 VSPackage 本身中，可以嵌入已本地化的资源。  
   
- 无法将某些资源嵌入在 Vspackage 中。 可以嵌入以下托管的类型：  
+ 不能在 Vspackage 中嵌入一些资源。 可以嵌入以下托管的类型：  
   
--   字符串  
+- 字符串  
   
--   程序包加载密钥 （这也是字符串）  
+- 包加载密钥 （这也是字符串）  
   
--   工具窗口图标  
+- 工具窗口图标  
   
--   已编译的命令表输出 （首席技术官） 文件  
+- 已编译的命令表输出 （首席技术官） 文件  
   
--   首席技术官位图  
+- 首席技术官位图  
   
--   命令行帮助  
+- 命令行帮助  
   
--   有关对话框数据  
+- 有关对话框数据  
   
- 托管包中的资源选择的资源 id。 异常是首席技术官文件，它必须命名为 CTMENU。 首席技术官文件必须出现在资源表作为`byte[]`。 所有其他资源项由类型标识。  
+  托管包中的资源选择的资源 id。 异常是首席技术官文件，它必须命名为 CTMENU。 首席技术官文件必须出现在资源表作为`byte[]`。 由类型标识的所有其他资源项。  
   
- 你可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>属性以指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是否提供了托管的资源。  
+  可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>属性以指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]托管的资源都可用。  
   
- [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
- [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
+  [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
+  [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
   
- 设置<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>以这种方式指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在搜索的资源，例如，通过使用时应忽略非托管的附属 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]遇到两个或多个资源具有相同的资源 ID，它使用它找到的第一个资源。  
+  设置<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>在这种方式指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]例如，通过使用搜索资源时应忽略非托管的附属 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]遇到两个或多个资源具有相同的资源 ID，它使用找到的第一个资源。  
   
 ## <a name="example"></a>示例  
- 下面的示例是一个工具窗口图标托管表示形式。  
+ 下面的示例是一个工具窗口图标的托管表示形式。  
   
 ```  
 <data name="1001"  
@@ -67,7 +67,7 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 </data>  
 ```  
   
- 下面的示例演示如何嵌入必须命名为 CTMENU 首席技术官字节数组。  
+ 下面的示例演示如何嵌入必须命名为 CTMENU 的首席技术官字节数组。  
   
 ```  
 <data name="CTMENU"  
@@ -84,10 +84,10 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ```  
   
 ## <a name="implementation-notes"></a>实现说明  
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 只要有可能的 Vspackage 的延迟加载。 在 VSPackage 中嵌入首席技术官文件的结果是，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须在安装期间，这是在构建合并的命令表时将加载在内存中的所有此类 Vspackage。 通过检查元数据，而无需在 VSPackage 中运行代码，可以从 VSPackage 中提取资源。 最小的性能损失而在此时，VSPackage 未初始化。  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 延迟加载的 Vspackage，只要有可能。 在 VSPackage 中嵌入的首席技术官文件的结果是，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必须在安装期间，即在它生成合并的命令表加载在内存中的所有此类 Vspackage。 通过检查元数据，而无需在 VSPackage 中运行代码，可以从 VSPackage 中提取资源。 因此是最小的性能损失在此时，VSPackage 未初始化。  
   
- 当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]从安装后，VSPackage 的资源的请求，该程序包很可能已加载并初始化，因此是最小的性能损失。  
+ 当[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]请求资源从 VSPackage 安装完成后，该包是有可能已加载并初始化，因此是最小的性能损失。  
   
-## <a name="see-also"></a>另请参阅  
- [管理 Vspackage](../../extensibility/managing-vspackages.md)   
+## <a name="see-also"></a>请参阅  
+ [管理 VSPackages](../../extensibility/managing-vspackages.md)   
  [MFC 应用程序中已本地化的资源：附属 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   

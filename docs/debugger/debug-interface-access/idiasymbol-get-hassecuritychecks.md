@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hassecuritychecks |Microsoft 文档'
+title: 'Idiasymbol:: Get_hassecuritychecks |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b14858508d341d09616d8b4a6c44afe1a5f21594
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9679e54b8535168fa4208e6eedc2adf19e60fe9d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854177"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
-检索用于指定是否已编译的编译单位或函数用缓冲区溢出安全检查的标志 (例如， [/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器开关)。  
+检索一个标志，指定是否已编译的编译单位或函数与缓冲区溢出安全检查 (例如， [/GS （缓冲区安全检查）](/cpp/build/reference/gs-buffer-security-check)编译器开关)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_hasSecurityChecks(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果函数具有的任何安全检查; 否则，返回`FALSE`。  
+ [out]返回`TRUE`如果函数具有任何安全检查; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

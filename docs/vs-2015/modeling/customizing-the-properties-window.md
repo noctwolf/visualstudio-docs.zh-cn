@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa690b88b5ab2d7aac3f8aea9967419dcbd43df1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ab8f1e85bec4c8a12a122030d2b9487a13e826a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845740"
 ---
 # <a name="customizing-the-properties-window"></a>自定义“属性”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49241730"
   
  **说明**。 域属性的说明将显示在两个位置：  
   
--   底部的属性窗口时用户选择的属性。 可用于向用户说明该属性表示。  
+- 底部的属性窗口时用户选择的属性。 可用于向用户说明该属性表示。  
   
--   在生成的程序代码中。 如果您使用的文档功能来提取 API 文档，它将显示为此属性在 API 中的说明。  
+- 在生成的程序代码中。 如果您使用的文档功能来提取 API 文档，它将显示为此属性在 API 中的说明。  
   
- **Category**。 类别是属性窗口中的标题。  
+  **Category**。 类别是属性窗口中的标题。  
   
 ## <a name="exposing-style-features"></a>公开样式功能  
  可以表示某些图形元素的动态功能或*公开*作为域的属性。 可以由用户更新已以这种方式公开的功能，可以详细轻松地更新程序代码。  
@@ -101,38 +101,38 @@ ms.locfileid: "49241730"
   
  但是，可以指定以下编辑器和类型：  
   
-1.  与标准的类型一起使用的另一个编辑器。 例如，可以指定一个字符串属性的文件路径编辑器。  
+1. 与标准的类型一起使用的另一个编辑器。 例如，可以指定一个字符串属性的文件路径编辑器。  
   
-2.  有关域属性，并为其编辑器外部类型。  
+2. 有关域属性，并为其编辑器外部类型。  
   
-3.  诸如文件路径编辑器中，或您的.NET 编辑器可以创建你自己的自定义属性编辑器。  
+3. 诸如文件路径编辑器中，或您的.NET 编辑器可以创建你自己的自定义属性编辑器。  
   
-     外部类型和字符串，具有一个默认编辑器，如类型之间转换。  
+    外部类型和字符串，具有一个默认编辑器，如类型之间转换。  
   
- 在 DSL 中，*外部类型*是任何类型，不是简单类型 （例如布尔值或 Int32） 或字符串之一。  
+   在 DSL 中，*外部类型*是任何类型，不是简单类型 （例如布尔值或 Int32） 或字符串之一。  
   
 #### <a name="to-define-a-domain-property-that-has-an-external-type"></a>若要定义一个具有外部类型的域属性  
   
-1.  在中**解决方案资源管理器**，添加对程序集 (DLL) 中包含的外部类型的引用**Dsl**项目。  
+1. 在中**解决方案资源管理器**，添加对程序集 (DLL) 中包含的外部类型的引用**Dsl**项目。  
   
-     程序集可以是.NET 程序集或您提供的程序集。  
+    程序集可以是.NET 程序集或您提供的程序集。  
   
-2.  添加到类型**域类型**列表中，除非你已这样做。  
+2. 添加到类型**域类型**列表中，除非你已这样做。  
   
-    1.  打开 DslDefinition.dsl，然后在**DSL 资源管理器**，右键单击根节点，然后单击**添加新的外部类型**。  
+   1.  打开 DslDefinition.dsl，然后在**DSL 资源管理器**，右键单击根节点，然后单击**添加新的外部类型**。  
   
-         在下，将出现一个新项**域类型**节点。  
+        在下，将出现一个新项**域类型**节点。  
   
-        > [!WARNING]
-        >  菜单项不是在 DSL 的根节点，**域类型**节点。  
+       > [!WARNING]
+       >  菜单项不是在 DSL 的根节点，**域类型**节点。  
   
-    2.  在属性窗口中设置的名称和新类型的命名空间。  
+   2.  在属性窗口中设置的名称和新类型的命名空间。  
   
-3.  将域属性添加到域类，以通常的方式。  
+3. 将域属性添加到域类，以通常的方式。  
   
-     在属性窗口中，从下拉列表中选择的外部类型**类型**字段。  
+    在属性窗口中，从下拉列表中选择的外部类型**类型**字段。  
   
- 在此阶段，用户可以查看的属性的值，但它们不能编辑它。 显示的值从获取`ToString()`函数。 您可以编写程序代码设置的值的属性，例如在命令窗口或规则。  
+   在此阶段，用户可以查看的属性的值，但它们不能编辑它。 显示的值从获取`ToString()`函数。 您可以编写程序代码设置的值的属性，例如在命令窗口或规则。  
   
 ### <a name="setting-a-property-editor"></a>设置属性编辑器  
  将 CLR 特性添加到域属性，采用以下形式：  
@@ -178,11 +178,11 @@ ms.locfileid: "49241730"
   
  通过编写的类派生自定义编辑器<xref:System.Drawing.Design.UITypeEditor>。 您的类必须重写：  
   
--   <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>与用户交互和更新的属性值。  
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>与用户交互和更新的属性值。  
   
--   <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定是否在编辑器将打开一个对话框，或提供一个下拉列表菜单。  
+- <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>指定是否在编辑器将打开一个对话框，或提供一个下拉列表菜单。  
   
- 你还可以提供的图形表示形式将在属性网格中显示的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor> 。  
+  你还可以提供的图形表示形式将在属性网格中显示的属性的值。 若要执行此操作，重写`GetPaintValueSupported`，和`PaintValue`。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor> 。  
   
 > [!NOTE]
 >  在单独的代码文件中添加代码**Dsl**项目。  

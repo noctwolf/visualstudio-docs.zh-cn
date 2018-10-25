@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbyva |Microsoft 文档'
+title: 'Idiasession:: Findlinesbyva |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d88a93e5bd22befb661505bb09cdce6f5d3b544
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c199411504db6d4465b6e02f4ffaad988c48b46c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870648"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
 检索指定的虚拟地址 (VA) 范围中包含行的行号信息。  
@@ -39,13 +39,13 @@ HRESULT findLinesByVA (
  [in]指定的地址作为弗吉尼亚  
   
  `length`  
- [in]指定要与此查询涵盖地址范围的字节数。  
+ [in]指定要与此查询包含的地址范围的字节数。  
   
  `ppResult`  
- [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)对象，其中包含的所有行列表数字该覆盖指定的地址范围。  
+ [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)对象，其中包含一系列的行号，包括指定的地址范围。  
   
 ## <a name="example"></a>示例  
- 此示例演示获取使用函数的虚拟地址和长度的函数中包含的所有行号的函数。  
+ 此示例演示一个函数，获取使用该函数的虚拟地址和长度函数中包含的所有行号。  
   
 ```C++  
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)  

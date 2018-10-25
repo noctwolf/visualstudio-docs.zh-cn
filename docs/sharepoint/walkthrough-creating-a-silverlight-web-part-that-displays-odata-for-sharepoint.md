@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 504ec33ef2cf6e0e691c00e3cf1cc013ece5ce81
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626160"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878175"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练： 创建显示 SharePoint OData 的 Silverlight web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 RESTful 服务 ListData.svc 实现 OData 服务。 本演练演示如何创建承载 Silverlight 应用程序的 SharePoint web 部件。 Silverlight 应用程序使用 ListData.svc 显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)并[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -42,25 +42,25 @@ ms.locfileid: "42626160"
   
 #### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>若要创建 Silverlight 应用程序和 Silverlight web 部件
   
-1.  在菜单栏上依次选择**文件** > **新建** > **项目**显示**新建项目**对话框。  
+1. 在菜单栏上依次选择**文件** > **新建** > **项目**显示**新建项目**对话框。  
   
-2.  展开**SharePoint**节点下的**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
+2. 展开**SharePoint**节点下的**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
   
-3.  在模板窗格中，选择**SharePoint 2010 Silverlight Web 部件**模板。  
+3. 在模板窗格中，选择**SharePoint 2010 Silverlight Web 部件**模板。  
   
-4.  在中**名称**框中，输入**SLWebPartTest** ，然后选择**确定**按钮。  
+4. 在中**名称**框中，输入**SLWebPartTest** ，然后选择**确定**按钮。  
   
-     **SharePoint 自定义向导**对话框随即出现。  
+    **SharePoint 自定义向导**对话框随即出现。  
   
-5.  上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 服务器站点的 URL 或使用默认位置 (http://*系统名称*/).  
+5. 上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 服务器站点的 URL 或使用默认位置 (http://<em>系统名称</em>/).  
   
-6.  在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
+6. 在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
   
-     虽然此示例中使用的场解决方案，但 Silverlight web 部件项目可以部署为场或沙盒解决方案。 有关沙盒解决方案和场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
+    虽然此示例中使用的场解决方案，但 Silverlight web 部件项目可以部署为场或沙盒解决方案。 有关沙盒解决方案和场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  在中**要如何关联 Silverlight Web 部件**一部分**指定 Silverlight 配置信息**页上，选择**创建新的 Silverlight 项目和将其与 web 部件关联**选项按钮。  
+7. 在中**要如何关联 Silverlight Web 部件**一部分**指定 Silverlight 配置信息**页上，选择**创建新的 Silverlight 项目和将其与 web 部件关联**选项按钮。  
   
-8.  更改**名称**到**SLApplication**，将**语言**为**Visual Basic**或**Visual C#**，然后设置**Silverlight 版本**到**Silverlight 4.0**。  
+8. 更改**名称**到**SLApplication**，将**语言**为**Visual Basic**或**Visual C#**，然后设置**Silverlight 版本**到**Silverlight 4.0**。  
   
 9. 选择**完成**按钮。 项目出现在**解决方案资源管理器**。  
   

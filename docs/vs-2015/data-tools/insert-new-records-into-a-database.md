@@ -23,12 +23,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c0ae1272820b7d8ec5ef124aaaa77d44a1285dde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9613d154cd0d9bb307fbde6d7255a8f1ecce000
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891466"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ ms.locfileid: "49297396"
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>若要使用 TableAdapter.Update 方法将新记录插入数据库  
   
-1.  将新记录添加到所需<xref:System.Data.DataTable>通过创建一个新<xref:System.Data.DataRow>并将其添加到<xref:System.Data.DataTable.Rows%2A>集合。 有关详细信息，请参阅[如何： 向数据表中添加行](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
+1. 将新记录添加到所需<xref:System.Data.DataTable>通过创建一个新<xref:System.Data.DataRow>并将其添加到<xref:System.Data.DataTable.Rows%2A>集合。 有关详细信息，请参阅[如何： 向数据表中添加行](http://msdn.microsoft.com/library/78ebbb43-c402-49cf-81da-0715289487bf)。  
   
-2.  新行添加到后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。  
+2. 新行添加到后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。  
   
-     下面的代码演示如何添加到新的记录<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法以将新行保存到数据库。 (此示例使用`Region`Northwind 数据库中的表。)  
+    下面的代码演示如何添加到新的记录<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法以将新行保存到数据库。 (此示例使用`Region`Northwind 数据库中的表。)  
   
-     [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
-     [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
+    [!code-csharp[VbRaddataSaving#14](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#14)]
+    [!code-vb[VbRaddataSaving#14](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#14)]  
   
- 如果你的应用程序使用对象来存储数据，则可以使用`TableAdapter.Insert`方法直接在数据库中创建新行。 `Insert`方法接受单个值的每个列作为参数。 调用该方法将一条新记录插入数据库中传递的参数值。  
+   如果你的应用程序使用对象来存储数据，则可以使用`TableAdapter.Insert`方法直接在数据库中创建新行。 `Insert`方法接受单个值的每个列作为参数。 调用该方法将一条新记录插入数据库中传递的参数值。  
   
- 以下过程使用`Region`作为示例 Northwind 数据库中的表。  
+   以下过程使用`Region`作为示例 Northwind 数据库中的表。  
   
 #### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterinsert-method"></a>若要使用 TableAdapter.Insert 方法将新记录插入数据库  
   

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5977275b352bf11914760d9cdf7ccada22caccc8
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: aa0805b3cffe5a44ae2c6198c6ca2682ceca9f95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865397"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>安装.NET Compiler Platform 分析器
 
@@ -28,11 +28,11 @@ Visual Studio 2017 包括一组核心.NET 编译器平台 (*Roslyn*) 分析器�
 
 1. 找到你想要在 www.nuget.org 安装分析器包。例如，您可能希望[安装 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package)检查有关安全性和性能问题，以及其他代码。
 
-1. 在 Visual Studio 中，使用安装包[程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[包管理器 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
+2. 在 Visual Studio 中，使用安装包[程序包管理器控制台](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)或[包管理器 UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
 
    > [!NOTE]
    > 对于每个分析器包 www.nuget.org 页显示您要粘贴的命令**程序包管理器控制台**。 甚至还有一个方便的按钮文本复制到剪贴板。
-   >
+   > 
    > ![NuGet.org 页面显示包管理器控制台命令](media/nuget-install-command.png)
 
    分析器程序集安装并显示在**解决方案资源管理器**下**引用** > **分析器**。
@@ -46,25 +46,25 @@ Visual Studio 2017 包括一组核心.NET 编译器平台 (*Roslyn*) 分析器�
    > [!NOTE]
    > 或者，可以查找并下载分析器扩展直接从[Visual Studio Marketplace](https://marketplace.visualstudio.com)。
 
-1. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
+2. 展开**联机**在左窗格中，然后选择**Visual Studio Marketplace**。
 
-1. 在搜索框中，键入你想要安装分析器扩展插件的名称。 例如，您可能希望[安装 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)检查有关安全性和性能问题，以及其他代码。
+3. 在搜索框中，键入你想要安装分析器扩展插件的名称。 例如，您可能希望[安装 Microsoft FxCop 分析器](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-vsix)检查有关安全性和性能问题，以及其他代码。
 
-1. 选择**下载**。
+4. 选择**下载**。
 
    下载此扩展。
 
-1. 选择**确定**以关闭对话框，然后关闭 Visual Studio 启动的所有实例**VSIX 安装程序**。
+5. 选择**确定**以关闭对话框，然后关闭 Visual Studio 启动的所有实例**VSIX 安装程序**。
 
    **VSIX 安装程序**对话框随即打开。
 
    ![VSIX 安装程序以进行 Microsoft 代码分析](media/vsix-installer-code-analysis.png)
 
-1. 选择**修改**以开始安装。
+6. 选择**修改**以开始安装。
 
-1. 后一分钟或两个，安装完成。 选择**关闭**。
+7. 后一分钟或两个，安装完成。 选择**关闭**。
 
-1. Visual Studio 中再次打开。
+8. Visual Studio 中再次打开。
 
 如果你想要检查扩展是否已安装，选择**工具** > **扩展和更新**。 在**扩展和更新**对话框中，选择**已安装**左边的类别，然后按名称搜索该扩展。
 

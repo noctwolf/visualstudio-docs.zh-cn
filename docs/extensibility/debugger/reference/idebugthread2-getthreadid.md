@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetThreadId |Microsoft 文档
+title: IDebugThread2::GetThreadId |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac1701b3f52975e962860d558bc70b1847eef8e5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4968bdd26607f68c8a1e8e4467904939ee0f528d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873443"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 获取系统线程标识符。  
@@ -47,10 +47,10 @@ int GetThreadId (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 线程 ID 用于标识进程中的其他所有线程间的线程。  
+ 线程 ID 用于标识之间的进程中的所有其他线程的线程。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CProgram`实现对象[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)接口。  
+ 下面的示例演示如何实现此方法对于简单`CProgram`对象，它实现[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)接口。  
   
 ```cpp  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
@@ -59,5 +59,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

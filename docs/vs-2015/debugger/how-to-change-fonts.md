@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d1b2d6cf02bea494fb08583bcbc2c1e17583e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39d8638c3b0fba1c8753fd773a447863ee01be77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206851"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838616"
 ---
 # <a name="how-to-change-fonts"></a>如何：更改字体
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ ms.locfileid: "49206851"
   
 ### <a name="to-change-font-options"></a>若要更改字体选项  
   
-1.  从**视图**菜单中，选择**字体**。  
+1. 从**视图**菜单中，选择**字体**。  
   
-2.  选择字体、 字体样式和字体大小。  
+2. 选择字体、 字体样式和字体大小。  
   
-3.  单击 **“确定”**。  
+3. 单击 **“确定”**。  
   
- 选择**保存为默认字体**将导致所有将来 Spy + + windows 以使用此字体。  
+   选择**保存为默认字体**将导致所有将来 Spy + + windows 以使用此字体。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Spy + +](../debugger/using-spy-increment.md)   

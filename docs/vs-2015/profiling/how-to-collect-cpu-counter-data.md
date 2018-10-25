@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cf2f6e95a9a0614c578957cabeedf91f1c90ed1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 89750ad7ee47f1238d75d3c51ae0b6ee291944fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49299866"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940939"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,29 +33,29 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本主题演示
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 将发生两种类型的 CPU 计数器事件：  
+  将发生两种类型的 CPU 计数器事件：  
   
--   可移植事件 – 不考虑特定的 CPU，可收集的 CPU 事件。  
+- 可移植事件 – 不考虑特定的 CPU，可收集的 CPU 事件。  
   
--   平台事件 - 耦合到特定 CPU 的 CPU 事件。  
+- 平台事件 - 耦合到特定 CPU 的 CPU 事件。  
   
- 可移植事件包括常规事件，如已撤回指令和非终止的周期、CPU 缓冲区事件、分支的事件和 L2 缓存事件。 可用的平台事件计数器由处理器制造商确定。  
+  可移植事件包括常规事件，如已撤回指令和非终止的周期、CPU 缓冲区事件、分支的事件和 L2 缓存事件。 可用的平台事件计数器由处理器制造商确定。  
   
- 可在可移植计数器和平台计数器之间共享事件的类别。 例如，以下类别的数据经常适用于这两种类型：  
+  可在可移植计数器和平台计数器之间共享事件的类别。 例如，以下类别的数据经常适用于这两种类型：  
   
--   内存事件。  
+- 内存事件。  
   
--   前端事件。  
+- 前端事件。  
   
--   分支事件。  
+- 分支事件。  
   
- 可以在探查器中通过两种方式收集性能计数器数据：  
+  可以在探查器中通过两种方式收集性能计数器数据：  
   
--   通过检测进行分析时，从一个或多个计数器中收集数据。  
+- 通过检测进行分析时，从一个或多个计数器中收集数据。  
   
--   通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。  
+- 通过采样进行分析时，指定一个计数器事件作为采样间隔。 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)。  
   
 ### <a name="to-collect-cpu-performance-counter-data-when-you-profile-by-instrumentation"></a>通过检测进行分析时收集 CPU 性能计数器数据  
   

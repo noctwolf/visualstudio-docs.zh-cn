@@ -20,12 +20,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b8831493b9d065c8a87157dbb8c38bf0b06f0cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eeb7efb0c7faa9a2493cfd3f91f6cc4e72408f4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889355"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：创建数据驱动的单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49177666"
   
  本主题包含以下各节：  
   
--   [待测试的方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
+- [待测试的方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_The_method_under_test)  
   
--   [创建数据源](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
+- [创建数据源](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Creating_a_data_source)  
   
--   [向测试类添加 TestContext](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
+- [向测试类添加 TestContext](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Adding_a_TestContext_to_the_test_class)  
   
--   [编写测试方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
+- [编写测试方法](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Writing_the_test_method)  
   
-    -   [指定 DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
+  -   [指定 DataSourceAttribute](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Specifying_the_DataSourceAttribute)  
   
-    -   [使用 TestContext.DataRow 访问数据](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
+  -   [使用 TestContext.DataRow 访问数据](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Using_TestContext_DataRow_to_access_the_data)  
   
--   [运行测试并查看结果](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
+- [运行测试并查看结果](../test/how-to-create-a-data-driven-unit-test.md#BKMK_Running_the_test_and_viewing_results)  
   
- 创建数据驱动的单元测试包括以下步骤：  
+  创建数据驱动的单元测试包括以下步骤：  
   
 1.  创建包含测试方法中使用的值的数据源。 数据源可以是在运行测试的计算机上注册的任何类型数据源。  
   
@@ -61,17 +61,17 @@ ms.locfileid: "49177666"
 ##  <a name="BKMK_The_method_under_test"></a>待测试的方法  
  例如，假定我们已创建：  
   
-1.  一种名为 `MyBank` 的解决方案，此解决方案接受并处理不同类型的帐户的事务。  
+1. 一种名为 `MyBank` 的解决方案，此解决方案接受并处理不同类型的帐户的事务。  
   
-2.  `MyBank` 中名为 `BankDb` 的项目，此项目管理帐户的事务。  
+2. `MyBank` 中名为 `BankDb` 的项目，此项目管理帐户的事务。  
   
-3.  `DbBank` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。  
+3. `DbBank` 项目中名为 `Maths` 的类，此类执行数学函数，以确保任何事务对银行有利。  
   
-4.  名为 `BankDbTests` 的单元测试项目，用于测试 `BankDb` 组件的行为。  
+4. 名为 `BankDbTests` 的单元测试项目，用于测试 `BankDb` 组件的行为。  
   
-5.  名为 `MathsTests` 的单元测试类，用于验证 `Maths` 类的行为。  
+5. 名为 `MathsTests` 的单元测试类，用于验证 `Maths` 类的行为。  
   
- 我们将在 `Maths` 中测试一个方法，此方法使用循环添加两个整数：  
+   我们将在 `Maths` 中测试一个方法，此方法使用循环添加两个整数：  
   
 ```  
 public int AddIntegers(int first, int second)  

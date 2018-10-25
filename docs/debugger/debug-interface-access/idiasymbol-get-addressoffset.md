@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_addressoffset |Microsoft 文档'
+title: 'Idiasymbol:: Get_addressoffset |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d00838fc3f76221293241656743bbf5a2a7f4d26
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5dba9f8b40bd3246dd07ec2fae76ad6aa8b9c604
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466352"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917799"
 ---
 # <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
 检索地址位置的偏移量的部分。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为`LocIsStatic`。  
@@ -40,12 +40,12 @@ HRESULT get_addressOffset (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 对于位于外部的 DLL 的静态成员，此方法返回的偏移量可能为 0，此方法依赖于获取的成员的虚拟地址。 虚拟地址都有效才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)中的方法[IDiaSession](../../debugger/debug-interface-access/idiasession.md)接口已调用具有非零参数指定的 DLL 的加载地址。  
+ 对于位于外部 DLL 中的静态成员，此方法返回的偏移量可能为 0，因为此方法依赖于获取成员的虚拟地址。 虚拟地址都有效才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)中的方法[IDiaSession](../../debugger/debug-interface-access/idiasession.md)已使用指定的 dll 加载地址的非零参数调用接口。  
   
- 若要获取地址的部分部分，调用[idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。  
+ 若要获取地址部分部分，请调用[idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。  
   
 ## <a name="requirements"></a>要求  
   

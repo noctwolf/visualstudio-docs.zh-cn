@@ -19,33 +19,33 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 930eab1a9356cf16a8615015742af30aa338bd21
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d716d9f715e307b3ebd3538df1622454cc4b547
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832870"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio SDK 可帮助您扩展 Visual Studio 功能或集成到 Visual Studio 的新功能。 可以将分发给其他用户，以及 Visual Studio 库扩展。 以下是一些扩展 Visual Studio 的方式：  
   
--   将命令、 按钮、 菜单和其他 UI 元素添加到 IDE  
+- 将命令、 按钮、 菜单和其他 UI 元素添加到 IDE  
   
--   添加新功能的工具窗口  
+- 添加新功能的工具窗口  
   
--   扩展 IntelliSense 对于某种给定语言，或为新的编程语言提供 IntelliSense  
+- 扩展 IntelliSense 对于某种给定语言，或为新的编程语言提供 IntelliSense  
   
--   使用灯泡提供提示和建议，帮助开发人员编写更好的代码  
+- 使用灯泡提供提示和建议，帮助开发人员编写更好的代码  
   
--   启用对新语言的支持  
+- 启用对新语言的支持  
   
--   添加自定义项目类型  
+- 添加自定义项目类型  
   
--   让数百万开发人员通过 Visual Studio 库  
+- 让数百万开发人员通过 Visual Studio 库  
   
- 如果您从未书写过 Visual Studio 扩展之前，应找到有关这些功能以及在详细信息[开始开发 Visual Studio 扩展到](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
+  如果您从未书写过 Visual Studio 扩展之前，应找到有关这些功能以及在详细信息[开始开发 Visual Studio 扩展到](../extensibility/starting-to-develop-visual-studio-extensions.md)。  
   
 ## <a name="installing-the-visual-studio-sdk"></a>安装 Visual Studio SDK  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d4496c42bfcc0baecd69770ff529c189d85da026
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 23d810c6bbb460f01528d5f9fb55bb8ca482e383
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880749"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ ms.locfileid: "49220865"
   
 ### <a name="to-manually-create-a-web-template"></a>手动创建 Web 模板  
   
-1.  创建 Web 项目。  
+1. 创建 Web 项目。  
   
-2.  修改或删除项目中的文件，或将新文件添加到项目。  
+2. 修改或删除项目中的文件，或将新文件添加到项目。  
   
-3.  创建 XML 文件，并用 vstemplate 文件扩展名将其保存在与项目相同的目录中。 不要将其添加到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的项目中。  
+3. 创建 XML 文件，并用 vstemplate 文件扩展名将其保存在与项目相同的目录中。 不要将其添加到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的项目中。  
   
-4.  创建 vstemplate XML 文件以提供项目模板元数据。 有关详细信息，请参阅下一节的示例。  
+4. 创建 vstemplate XML 文件以提供项目模板元数据。 有关详细信息，请参阅下一节的示例。  
   
-5.  查找 vstemplate 文件中的 `ProjectType` 元素，将文本值设置为 `Web`。  
+5. 查找 vstemplate 文件中的 `ProjectType` 元素，将文本值设置为 `Web`。  
   
-6.  在该 `ProjectType` 元素之后，添加 `ProjectSubType` 元素并将文本值设置为模板的编程语言。 编程语言可以是下列值之一：  
+6. 在该 `ProjectType` 元素之后，添加 `ProjectSubType` 元素并将文本值设置为模板的编程语言。 编程语言可以是下列值之一：  
   
-    -   CSharp  
+   - CSharp  
   
-    -   VisualBasic  
+   - VisualBasic  
   
      例如：  
   
-    ```  
-    <TemplateData>  
-        ...  
-        <ProjectType>Web</ProjectType>  
-        <ProjectSubType>CSharp</ProjectSubType>  
-        ...  
-    </TemplateData>  
-    ```  
+   ```  
+   <TemplateData>  
+       ...  
+       <ProjectType>Web</ProjectType>  
+       <ProjectSubType>CSharp</ProjectSubType>  
+       ...  
+   </TemplateData>  
+   ```  
   
-7.  选择模板中的文件（包括 vstemplate 文件），右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹（zip 格式）”。 这些文件被压缩到一个 .zip 文件中。  
+7. 选择模板中的文件（包括 vstemplate 文件），右键单击所选文件，单击“发送至”，然后单击“压缩的文件夹（zip 格式）”。 这些文件被压缩到一个 .zip 文件中。  
   
-8.  将该 .zip 模板文件放入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板目录。 默认情况下，该目录为 \My Documents\Visual Studio Version\My Exported Templates\\。  
+8. 将该 .zip 模板文件放入 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板目录。 默认情况下，该目录为 \My Documents\Visual Studio Version\My Exported Templates\\。  
   
 ## <a name="example"></a>示例  
  以下示例显示 Web 项目模板的基本 vstemplate 文件。  

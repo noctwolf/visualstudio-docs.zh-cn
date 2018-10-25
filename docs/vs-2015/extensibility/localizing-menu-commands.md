@@ -20,12 +20,12 @@ ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b2486df22db8ebcbf8a9dd40a0bd374b6d8abfe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2584c3cdd60c130183e09d2a809ff0ee1621856d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868841"
 ---
 # <a name="localizing-menu-commands"></a>本地化菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,48 +37,48 @@ ms.locfileid: "49197699"
 ## <a name="localizing-command-names"></a>本地化的命令名称  
  在 Vspackage 中，菜单命令和工具栏按钮定义在.vsct 文件中。  
   
-1.  在**解决方案资源管理器**，将从.vsct 文件的名称更改*filename*到.vsct*文件名*.en US.vsct。  
+1. 在**解决方案资源管理器**，将从.vsct 文件的名称更改*filename*到.vsct*文件名*.en US.vsct。  
   
-2.  制作一份*文件名*.en US.vsct 为每个本地化语言。  
+2. 制作一份*文件名*.en US.vsct 为每个本地化语言。  
   
-     命名每个副本*文件名*。*区域设置*.vsct，其中*区域设置*是特定区域性名称。 有关区域性名称值的列表，请参阅[由 Microsoft 分配的区域设置 Id](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)。  
+    命名每个副本*文件名*。*区域设置*.vsct，其中*区域设置*是特定区域性名称。 有关区域性名称值的列表，请参阅[由 Microsoft 分配的区域设置 Id](https://msdn.microsoft.com/library/windows/apps/jj657969.aspx)。  
   
-     这些*文件名*。*区域设置*.vsct 文件将包含包的本地化的菜单文本。  
+    这些*文件名*。*区域设置*.vsct 文件将包含包的本地化的菜单文本。  
   
-3.  打开每个*文件名*。*区域设置*.vsct 文件将文本本地化。  
+3. 打开每个*文件名*。*区域设置*.vsct 文件将文本本地化。  
   
-    1.  修改[ButtonText](../extensibility/buttontext-element.md)值以适合特定语言元素。  
+   1. 修改[ButtonText](../extensibility/buttontext-element.md)值以适合特定语言元素。  
   
-    2.  如果将提供本地化的图标，修改[位图](../extensibility/bitmap-element.md)值以指向目标文件。  
+   2. 如果将提供本地化的图标，修改[位图](../extensibility/bitmap-element.md)值以指向目标文件。  
   
-     下面的示例显示了英语和西班牙语按钮文本命令，以打开家族树资源管理器工具窗口。  
+      下面的示例显示了英语和西班牙语按钮文本命令，以打开家族树资源管理器工具窗口。  
   
-     [FamilyTree.en US.vsct]  
+      [FamilyTree.en US.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Family Tree Explorer</ButtonText>  
-      </Strings>  
-    </Button>  
-    ```  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Family Tree Explorer</ButtonText>  
+     </Strings>  
+   </Button>  
+   ```  
   
-     [FamilyTree.es ES.vsct]  
+    [FamilyTree.es ES.vsct]  
   
-    ```xml  
-    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
-      <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
-      <Icon guid="guidImages" id="bmpPic2" />  
-      <Strings>  
-        <CommandName>cmdidFamilyTree</CommandName>  
-        <ButtonText>Explorar el arbol genealogico</ButtonText>  
-      </Strings>  
-    </Button>  
+   ```xml  
+   <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
+     <Parent guid="guidSHLMainMenu" id="IDG_VS_WNDO_OTRWNDWS1"/>  
+     <Icon guid="guidImages" id="bmpPic2" />  
+     <Strings>  
+       <CommandName>cmdidFamilyTree</CommandName>  
+       <ButtonText>Explorar el arbol genealogico</ButtonText>  
+     </Strings>  
+   </Button>  
   
-    ```  
+   ```  
   
 ## <a name="localizing-other-text-resources"></a>本地化文本的其他资源  
  资源 (.resx) 文件中定义了文本资源而不是命令名称。  

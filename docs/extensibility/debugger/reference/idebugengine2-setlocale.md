@@ -1,5 +1,5 @@
 ---
-title: IDebugEngine2::SetLocale |Microsoft 文档
+title: IDebugEngine2::SetLocale |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eca2f05c290f27a6c3037ef14cbf32fd219b6253
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5575a96a438cc0dced0e1508776320747bf4d921
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116472"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866033"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
-设置的调试引擎 (DE) 的区域设置。  
+设置调试引擎 (DE) 的区域设置。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,7 +47,7 @@ int SetLocale(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 会话调试管理器 (SDM)，以便正确本地化字符串由 DE 传播 IDE 的区域设置调用此方法。  
+ 会话调试管理器 (SDM) 传播 IDE 的区域设置，以便正确本地化字符串 DE 返回通过调用此方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

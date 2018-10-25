@@ -12,12 +12,12 @@ ms.topic: article
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: douge
-ms.openlocfilehash: 3ae06a36155ed7270ce01178fa49e40dff06aed8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 038f478d6a8dbdd3dc050b6db85af82be377c325
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236322"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833000"
 ---
 # <a name="making-custom-projects-version-aware"></a>使自定义项目版本可区别
 在自定义项目系统中，你可以允许在多个版本的 Visual Studio 中加载该类型的项目。 也可以阻止在早期版本的 Visual Studio 中加载该类型的项目。 还可以使该项目将其自身标识为较新版本，以防该项目需要修复、转换或弃用。  
@@ -125,13 +125,13 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
  如果此方法可将 `pUpgradeRequired` 设置为 TRUE 并返回 `S_OK`，则该结果将被视为“升级”，就像该方法向值 `VSPUVF_PROJECT_ONEWAYUPGRADE`设置了升级标志一样，本主题后面对此进行了描述。 使用此较旧方法支持下列返回值，但仅当 `pUpgradeRequired` 设置为 TRUE 时有效：  
   
-1.  `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_SAFEREPAIR`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
+1. `VS_S_PROJECT_SAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_SAFEREPAIR`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
   
-2.  `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_UNSAFEREPAIR`（本主题后面对此进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE  
+2. `VS_S_PROJECT_UNSAFEREPAIRREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_UNSAFEREPAIR`（本主题后面对此进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE  
   
-3.  `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_ONEWAYUPGRADE`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
+3. `VS_S_PROJECT_ONEWAYUPGRADEREQUIRED`。 此返回值等效于 `VSPUVF_PROJECT_ONEWAYUPGRADE`（本主题后面对其进行了描述），会将 `pUpgradeRequired` 值转换为 TRUE。  
   
- `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新实现让你可以更精确地指定迁移类型。  
+   `IVsProjectUpgradeViaFactory4` 和 `IVsProjectFlavorUpgradeViaFactory2` 中的新实现让你可以更精确地指定迁移类型。  
   
 > [!NOTE]
 >  可以缓存 `UpgradeProject_CheckOnly` 方法所进行兼容性检查的结果，以供对 `CreateProject`的后续调用使用。  

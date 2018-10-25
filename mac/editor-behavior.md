@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
-ms.openlocfilehash: 4d40d03bde0323ce44b9de6ff1ae13e281f0ed6c
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 9e83a851385b155eaafb372dfe096dbb1b34fed5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224295"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815798"
 ---
 # <a name="editor-behavior"></a>编辑器行为
 
@@ -18,13 +18,13 @@ ms.locfileid: "43224295"
 
 ![编辑器行为选项](media/source-editor-image9.png)
 
-*  创建新的类、方法或属性时，会自动将匹配的右大括号添加到代码。 选中此选项时，键入 `{` 将自动添加 `}`。
+* 创建新的类、方法或属性时，会自动将匹配的右大括号添加到代码。 选中此选项时，键入 `{` 将自动添加 `}`。
 * 按下分号或大括号等字符会触发即时生成的代码格式，模拟已设置的格式首选项。
 * 也可以选择在保存文件时设置其格式，该方法允许按需写入代码，让 IDE 负责按现有的首选项设置代码格式。
 * 可将缩进设置为“无”、“自动”或“智能”。 这些设置会执行以下操作：
- * 无 - 将脱字号设置到下一行的起始位置
- * 自动 - 将脱字号设置到下一行的同一列
- * 智能 - 基于代码在下一行缩进
+  * 无 - 将脱字号设置到下一行的起始位置
+  * 自动 - 将脱字号设置到下一行的同一列
+  * 智能 - 基于代码在下一行缩进
 * 不同 OS 有不同的断字行为，出于导航目的，文本编辑器需要知道字开始或结束的位置。 可以将格式设置为 Unix 或 Windows。
 
 也可以为 XML、CSS、HTML 和 JSON 设置格式规则。

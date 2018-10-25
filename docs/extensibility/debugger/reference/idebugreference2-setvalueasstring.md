@@ -1,5 +1,5 @@
 ---
-title: IDebugReference2::SetValueAsString |Microsoft 文档
+title: IDebugReference2::SetValueAsString |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21d4e3f23ae8a66ff4bfa26bdaf6d906a2b008a2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2b4c7af3a7cedd56b72032ad51ecc6ef4df04d8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120132"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837927"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-设置的值从字符串的引用。 留待将来使用。  
+设置引用的字符串值。 留待将来使用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,13 +48,13 @@ int SetValueAsString (
  [in]字符串形式的值。  
   
  `dwRadix`  
- [in]用于设置格式的任何数字信息基数。  
+ [in]用于格式化数值的任何信息的基数。  
   
  `dwTimeout`  
- [in]以毫秒为单位，从此方法返回前等待的最长时间。 使用`INFINITE`无限期等待。  
+ [in]最大时间 （毫秒），此方法返回前等待。 使用`INFINITE`无限期等待。  
   
 ## <a name="return-value"></a>返回值  
  始终返回 `E_NOTIMPL`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

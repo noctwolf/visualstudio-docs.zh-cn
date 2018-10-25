@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c1203b962627071d757dc1876a534977c574a813
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82d90d6965558ba6d28753fb71b3b227a84467a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179486"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852851"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,11 +93,11 @@ ms.locfileid: "49179486"
   
  但是，如果用户调用撤消或重做操作，或者如果正在回滚事务可能还调用 Set 方法。 当<xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A>为 true，Set 方法的行为，如下所示：  
   
--   它不应在存储中，例如将值分配给其他域属性进行更改。 撤消管理器将设置其值。  
+- 它不应在存储中，例如将值分配给其他域属性进行更改。 撤消管理器将设置其值。  
   
--   但是，它应更新任何外部资源，例如数据库或文件的内容或存储外的对象。 这将确保，它们保存在 synchronism 存储区中的值。  
+- 但是，它应更新任何外部资源，例如数据库或文件的内容或存储外的对象。 这将确保，它们保存在 synchronism 存储区中的值。  
   
- 例如：  
+  例如：  
   
 ```  
 void SetAgeValue(int value)  

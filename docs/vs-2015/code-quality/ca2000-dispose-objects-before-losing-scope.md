@@ -21,12 +21,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 96cde88c86552b7fad16a58839dc190d421b2bde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857856"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000：超出范围前释放对象
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ ms.locfileid: "49190874"
   
  在 OpenPort2 方法中，两个 SerialPort 对象是声明并且已设置为 null:  
   
--   `tempPort`用于测试方法操作成功。  
+- `tempPort`用于测试方法操作成功。  
   
--   `port`用于该方法的返回值。  
+- `port`用于该方法的返回值。  
   
- `tempPort`构造，以打开`try`块中，和任何其他所需的工作都在相同`try`块。 在末尾`try`块中，打开的端口分配给`port`将返回的对象和`tempPort`对象设置为`null`。  
+  `tempPort`构造，以打开`try`块中，和任何其他所需的工作都在相同`try`块。 在末尾`try`块中，打开的端口分配给`port`将返回的对象和`tempPort`对象设置为`null`。  
   
- `finally`块检查的值`tempPort`。 如果不为 null，该方法中的操作已失败，并`tempPort`关闭以确保释放任何资源。 如果该方法的操作成功，则如果操作失败，则将为 null，则返回的端口对象将包含打开的 SerialPort 对象。  
+  `finally`块检查的值`tempPort`。 如果不为 null，该方法中的操作已失败，并`tempPort`关闭以确保释放任何资源。 如果该方法的操作成功，则如果操作失败，则将为 null，则返回的端口对象将包含打开的 SerialPort 对象。  
   
- [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
+  [!code-csharp[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/cs/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.cs#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vb#1)]
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope/vb/fxcop.reliability.ca2000.disposeobjectsbeforelosingscope.vboverflow.vb#1)]  
   
 ## <a name="example"></a>示例  
  默认情况下，[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]编译器具有溢出检查的所有算术运算符。 因此，任何 Visual Basic 算术运算可能会引发<xref:System.OverflowException>。 这可能导致的规则，如 CA2000 意外冲突。 例如，以下 CreateReader1 函数将生成 CA2000 冲突，因为 Visual Basic 编译器发出溢出检查的加法运算的可能会引发异常会导致无法释放 StreamReader 的指令。  

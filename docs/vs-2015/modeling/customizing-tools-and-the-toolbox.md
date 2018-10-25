@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69ee365e3bc6902ffecd755d6f788b7f9e238c52
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847807"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ### <a name="custom-code-for-connection-builders"></a>为连接生成器自定义代码  
  在用户界面中有四个用于定义不同类型的连接生成器的自定义的复选框：  
   
--   **自定义接受**源或目标角色指令上的复选框  
+- **自定义接受**源或目标角色指令上的复选框  
   
--   **自定义连接**源或目标角色指令上的复选框  
+- **自定义连接**源或目标角色指令上的复选框  
   
--   **使用自定义连接**连接指令上的复选框  
+- **使用自定义连接**连接指令上的复选框  
   
--   **是自定义**连接生成器的属性  
+- **是自定义**连接生成器的属性  
   
- 你必须提供一些程序代码，才能进行这些自定义。 若要发现你必须提供的代码，请检查这些框之一、单击“转换所有模板”，然后生成解决方案。 将产生一个错误报告。 双击该错误报告以查看注释，该注释解释了应添加的代码。  
+  你必须提供一些程序代码，才能进行这些自定义。 若要发现你必须提供的代码，请检查这些框之一、单击“转换所有模板”，然后生成解决方案。 将产生一个错误报告。 双击该错误报告以查看注释，该注释解释了应添加的代码。  
   
 > [!NOTE]
 >  若要添加自定义代码，请在与 GeneratedCode 文件夹中的代码文件不同的代码文件中创建分部类定义。 为避免丢失工作，不应编辑生成的代码文件。 有关详细信息，请参阅[重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。  

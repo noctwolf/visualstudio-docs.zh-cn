@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba9cd561c80aec7a0b1b47b98f75ff8046d8a1b
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: b41416ea923e8f14aa39bf1607ad7c349e0b149c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081304"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880671"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>在游戏或应用中使用三维资产
 
@@ -41,7 +41,7 @@ ms.locfileid: "39081304"
 2.  在“可用的生成自定义文件”下，选中希望在项目中使用的资产类型对应的复选框，如下表中所述：
 
     |资产类型|生成自定义名称|
-    |----------------|------------------------------|
+    |----------------| - |
     |纹理和图像|ImageContentTask（.targets、.props）|
     |三维模型|MeshContentTask（.targets、.props）|
     |着色器|ShaderGraphContentTask（.targets、.props）|
@@ -67,7 +67,7 @@ ms.locfileid: "39081304"
 下面是三种内容管道项目类型及其关联的源文件类型和输出文件类型。
 
 |项目类型|源文件类型|输出文件格式|
-|---------------|-----------------------|------------------------|
+|---------------| - | - |
 |图像内容管道|可移植网络图形 (.png)<br /><br /> JPEG（.jpg、.jpeg、.jpe、.jfif）<br /><br /> 直接绘画表面 (.dds)<br /><br /> 图形交换格式 (.gif)<br /><br /> 位图（.bmp、.dib）<br /><br /> 标记图像文件格式（.tif、.tiff）<br /><br /> Targa (.tga)|直接绘画表面 (.dds)|
 |网格内容管道|Autodesk FBX 交换文件 (.fbx)<br /><br /> Collada DAE 文件 (.dae)<br /><br /> Wavefront OBJ 文件 (.obj)|三维网格文件 (.cmo)|
 |着色器内容管道|视觉对象着色器图 (.dgsl)|编译着色器输出 (.cso)|

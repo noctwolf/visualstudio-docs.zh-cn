@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09035e985926e3f1db3bd2dd1fc2bc009f111e33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863589"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在游戏或应用程序中使用三维资产
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,18 +57,18 @@ ms.locfileid: "49226300"
   
 #### <a name="to-add-an-asset-to-your-build"></a>将资产添加到生成  
   
-1.  在“解决方案资源管理器”中，在项目中打开资产的快捷菜单，然后选择“属性”。 随即显示资产的“属性页”对话框。  
+1. 在“解决方案资源管理器”中，在项目中打开资产的快捷菜单，然后选择“属性”。 随即显示资产的“属性页”对话框。  
   
-2.  请确保将“配置”和“平台”属性设置为你希望更改应用到的值。  
+2. 请确保将“配置”和“平台”属性设置为你希望更改应用到的值。  
   
-3.  在“配置属性”下，选择“常规”，然后在“常规”下的属性网格中，将“项目类型”属性设置为相应的内容管道项目类型。 例如，对于图像或纹理文件，请选择“图像内容管道”。  
+3. 在“配置属性”下，选择“常规”，然后在“常规”下的属性网格中，将“项目类型”属性设置为相应的内容管道项目类型。 例如，对于图像或纹理文件，请选择“图像内容管道”。  
   
-    > [!IMPORTANT]
-    >  默认情况下，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 假设应使用内置于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中“图像”项目类型对很多种类的图像文件进行分类。 因此，必须更改你希望通过图像内容管道处理的每个图像的“项目类型”属性。 三维模型和视觉着色器图形的内容管道源文件的其他类型默认为正确的“项目类型”。  
+   > [!IMPORTANT]
+   >  默认情况下，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 假设应使用内置于 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中“图像”项目类型对很多种类的图像文件进行分类。 因此，必须更改你希望通过图像内容管道处理的每个图像的“项目类型”属性。 三维模型和视觉着色器图形的内容管道源文件的其他类型默认为正确的“项目类型”。  
   
-4.  选择“确定”  按钮。  
+4. 选择“确定”  按钮。  
   
- 下面是三种内容管道项目类型及其关联的源文件类型和输出文件类型。  
+   下面是三种内容管道项目类型及其关联的源文件类型和输出文件类型。  
   
 |项目类型|源文件类型|输出文件格式|  
 |---------------|-----------------------|------------------------|  

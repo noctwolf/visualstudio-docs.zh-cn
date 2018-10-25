@@ -13,12 +13,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b57b50672fb476cfeac3a8748202d9e7dcb47a13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51e924f14ebb8b20f193d163529096efe76318f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267405"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831753"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,23 +26,23 @@ ms.locfileid: "49267405"
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的颜色  
  在 Visual Studio 中，颜色是主要用作通信工具，而不仅仅是作为修饰。 按最小方式使用颜色和保留的情况下，您希望对：  
   
--   通信含义或隶属关系 （例如，平台或语言修饰符）  
+- 通信含义或隶属关系 （例如，平台或语言修饰符）  
   
--   吸引注意力 （例如，指示状态更改）  
+- 吸引注意力 （例如，指示状态更改）  
   
--   提高可读性并提供用于导航 UI 的特征点  
+- 提高可读性并提供用于导航 UI 的特征点  
   
--   提高性能  
+- 提高性能  
   
- 将颜色分配到 Visual Studio 中的 UI 元素的存在多个选项。 有时可能很难进行图的选项，您就应该使用，或如何正确使用它。 本主题将帮助你：  
+  将颜色分配到 Visual Studio 中的 UI 元素的存在多个选项。 有时可能很难进行图的选项，您就应该使用，或如何正确使用它。 本主题将帮助你：  
   
-1.  了解不同的服务和系统用于在 Visual Studio 中定义的颜色。  
+1. 了解不同的服务和系统用于在 Visual Studio 中定义的颜色。  
   
-2.  选择给定元素的正确选项。  
+2. 选择给定元素的正确选项。  
   
-3.  正确地使用你选择的选项。  
+3. 正确地使用你选择的选项。  
   
- **重要说明：** 永远不会进行硬编码十六进制、 RGB 或到 UI 元素的系统颜色。 使用这些服务可以灵活地优化 hue。 此外，而无需服务，你将不能充分利用的主题切换功能[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
+   **重要说明：** 永远不会进行硬编码十六进制、 RGB 或到 UI 元素的系统颜色。 使用这些服务可以灵活地优化 hue。 此外，而无需服务，你将不能充分利用的主题切换功能[The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService)。  
   
 ### <a name="methods-for-assigning-color-to-visual-studio-interface-elements"></a>将颜色分配到 Visual Studio 界面元素的方法  
  选择最适合你的 UI 元素的方法。  
@@ -383,23 +383,23 @@ protected override void Dispose(bool disposing)
   
  通过包实现的方法[IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)必须提供与 IDE:  
   
--   类别中显示项的列表  
+- 类别中显示项的列表  
   
--   显示项的可本地化名称  
+- 显示项的可本地化名称  
   
--   显示类别的每个成员的信息  
+- 显示类别的每个成员的信息  
   
- **注意：** 显示每个类别必须包含至少一个显示项。  
+  **注意：** 显示每个类别必须包含至少一个显示项。  
   
- IDE 使用**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**接口可定义多个类别的联合。  
+  IDE 使用**T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup**接口可定义多个类别的联合。  
   
- 其实现提供了与 IDE:  
+  其实现提供了与 IDE:  
   
--   构成了一组给定的类别的列表  
+- 构成了一组给定的类别的列表  
   
--   对实例的访问[IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)支持组内的每个类别  
+- 对实例的访问[IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx)支持组内的每个类别  
   
--   可本地化的组名称  
+- 可本地化的组名称  
   
 #### <a name="updating-the-ide"></a>正在更新 IDE  
  IDE 将缓存有关字体和颜色设置的信息。 因此，任何修改后的 IDE 字体和颜色配置，确保缓存最新的是一种最佳做法。  
@@ -411,13 +411,13 @@ protected override void Dispose(bool disposing)
   
  若要执行此操作，VSPackage 必须：  
   
--   **处理 IDE 生成的事件**通过实现[IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx)接口。 IDE 调用后面的字体和颜色页的用户修改的相应方法。 例如，它调用[OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx)如果选择新字体的方法。  
+- **处理 IDE 生成的事件**通过实现[IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx)接口。 IDE 调用后面的字体和颜色页的用户修改的相应方法。 例如，它调用[OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx)如果选择新字体的方法。  
   
- **OR**  
+  **OR**  
   
--   **轮询更改 IDE**。 这可以通过系统实现[IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。 主要用于支持暂留，尽管[GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以获取显示项的字体和颜色信息。 字体和颜色设置的详细信息，请参阅 MSDN 文章[访问存储的字体和颜色设置](https://msdn.microsoft.com/library/bb166382.aspx)。  
+- **轮询更改 IDE**。 这可以通过系统实现[IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。 主要用于支持暂留，尽管[GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以获取显示项的字体和颜色信息。 字体和颜色设置的详细信息，请参阅 MSDN 文章[访问存储的字体和颜色设置](https://msdn.microsoft.com/library/bb166382.aspx)。  
   
- **注意：** 若要确保轮询结果是否正确，请使用[IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx)接口，以确定是否刷新的缓存和 update 之前调用的检索方法所需[IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。  
+  **注意：** 若要确保轮询结果是否正确，请使用[IVsFontAndColorCacheManager](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx)接口，以确定是否刷新的缓存和 update 之前调用的检索方法所需[IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)接口。  
   
 #### <a name="registering-custom-font-and-color-category-without-implementing-interfaces"></a>注册自定义字体和颜色类别，无需实现接口  
  下面的代码示例演示如何注册自定义字体和颜色而无需实现接口的类别：  

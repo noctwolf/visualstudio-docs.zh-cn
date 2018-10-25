@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce398f18913063d770aa180a06ff8e2017aebd86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 402e7f80ea208d714b31bd61e25b352494310487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949248"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>如何： 向工作表添加 ListObject 控件
   您可以添加<xref:Microsoft.Office.Tools.Excel.ListObject>到 Microsoft Office Excel 工作表在设计时和运行时在文档级项目中的控件。  
@@ -32,13 +32,13 @@ ms.locfileid: "35670560"
   
  本主题介绍了以下任务：  
   
--   [在设计时添加 ListObject 控件](#designtime)  
+- [在设计时添加 ListObject 控件](#designtime)  
   
--   [在运行时在文档级项目中添加 ListObject 控件](#runtimedoclevel)  
+- [在运行时在文档级项目中添加 ListObject 控件](#runtimedoclevel)  
   
--   [在运行时在 VSTO 外接程序项目中添加 ListObject 控件](#runtimeaddin)  
+- [在运行时在 VSTO 外接程序项目中添加 ListObject 控件](#runtimeaddin)  
   
- 有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
+  有关详细信息<xref:Microsoft.Office.Tools.Excel.ListObject>控件，请参阅[ListObject 控件](../vsto/listobject-control.md)。  
   
 ##  <a name="designtime"></a> 在设计时添加 ListObject 控件  
  有多种方法可在设计时在文档级项目中将 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加到工作表：从 Excel、从 Visual Studio“工具箱” ，以及从“数据源”  窗口。  

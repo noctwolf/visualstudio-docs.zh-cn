@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 567b03f9f0441e7f5eb38f4ca0e0b3a1d64cec91
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 824896a4e381a6a8d5c5e0935010b1cf224ed9b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839227"
 ---
 # <a name="walkthrough-linqtoxmldatabinding-example"></a>演练：LinqToXmlDataBinding 示例
 本演练介绍 LinqToXmlDataBinding 示例，解释它的两个主要源文件 L2DBForm.xaml 和 L2DBForm.xaml.cs 的一些更值得关注的内容。
@@ -26,19 +26,19 @@ ms.locfileid: "39081187"
 ## <a name="remarks"></a>备注
  LinqToXmlDataBinding 程序是一个 Windows Presentation Foundation (WPF) 应用程序，由 C# 和 XAML 源文件组成。 它包含定义书籍列表的嵌入式 XML 文档，允许用户查看、添加、删除和编辑这些项。 它由以下两个主要源文件组成：
 
--   L2DBForm.xaml 包含主窗口的用户界面 (UI) 的 XAML 声明代码。 还包含为书籍列表定义数据提供程序和嵌入式 XML 文档的窗口资源部分。
+- L2DBForm.xaml 包含主窗口的用户界面 (UI) 的 XAML 声明代码。 还包含为书籍列表定义数据提供程序和嵌入式 XML 文档的窗口资源部分。
 
--   L2DBForm.xaml.cs 包含与用户界面关联的初始化和事件处理方法。
+- L2DBForm.xaml.cs 包含与用户界面关联的初始化和事件处理方法。
 
- 主窗口分为以下四个垂直用户界面部分：
+  主窗口分为以下四个垂直用户界面部分：
 
--   “XML”显示嵌入式书籍列表的原始 XML 源。
+- “XML”显示嵌入式书籍列表的原始 XML 源。
 
--   “Book List”（书籍列表）以标准文本形式显示书籍项，允许用户选择和删除各项。
+- “Book List”（书籍列表）以标准文本形式显示书籍项，允许用户选择和删除各项。
 
--   “Edit Selected Book”（编辑所选书籍）允许用户编辑与当前所选书籍项关联的值。
+- “Edit Selected Book”（编辑所选书籍）允许用户编辑与当前所选书籍项关联的值。
 
--   “Add New Book”（添加新书籍）允许根据用户输入的值创建新书。
+- “Add New Book”（添加新书籍）允许根据用户输入的值创建新书。
 
 ## <a name="in-this-section"></a>本节内容
 

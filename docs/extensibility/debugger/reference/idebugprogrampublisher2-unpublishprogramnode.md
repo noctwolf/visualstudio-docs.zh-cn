@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft 文档
+title: IDebugProgramPublisher2::UnpublishProgramNode |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d62c68bfc8e43370105a94818437bb0cfa2221e8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b707f63aaf9e4873fe851c9b9db1d175fdb51ce2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926470"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
-从可用性调试引擎 (DEs) 和会话调试管理器 (SDM) 中删除指定的程序节点。  
+从可用性调试引擎 (DEs) 和会话调试管理器 (SDM) 中移除指定的程序节点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,17 +41,17 @@ int UnpublishProgramNode(
   
 #### <a name="parameters"></a>参数  
  `pProgramNode`  
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象表示要删除的程序节点。  
+ [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示要删除的程序节点。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 删除后，程序节点不再可供查询有关程序信息。  
+ 删除后，程序节点不再可用于查询的计划信息。  
   
  若要使程序节点可用，请调用[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)

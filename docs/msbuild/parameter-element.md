@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2407d37191e5a083080db579bc18b91b6c9449
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d4778923bf6c9e521a7ee26546510466fcfefc83
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151741"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894247"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 包含某个任务的特定参数信息，该任务可通过使用 `UsingTask` `TaskFactory` 生成。  元素的名称就是该参数的名称。  有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  

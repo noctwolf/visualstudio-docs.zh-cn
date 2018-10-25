@@ -9,12 +9,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f1287d97ed50e781a0b7bf30be1f77d558c908f
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7922d381d61d40c20fa69859dd091849684723b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899963"
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳做法和示例 (SAL)
 下面是一些关于充分利用源代码批注语言 (SAL)，并避免一些常见问题的方法。
@@ -61,7 +61,6 @@ void Func2(_Out_ int *p1)
 {
     *p = 1;
 }
-
 ```
 
 ## <a name="predefensive-and-postdefensive"></a>\_Pre\_防御\_并\_Post\_防御性\_
@@ -78,7 +77,6 @@ void Func2(_Out_ int *p1)
 void Func1(_Out_writes_(size) CHAR *pb,
     DWORD size
 );
-
 ```
 
 批注 `_Out_writes_` 表示您具有缓冲区。 它分配了 `cb` 个字节，其中第一个字节在退出时进行初始化。 此批注严格来说并没有错误，并且有助于表示分配的大小。 但是，它并未说明函数初始化了多少元素。
@@ -100,7 +98,6 @@ void Func2(_Out_writes_all_(size) CHAR *pb,
 void Func3(_Out_writes_(size) PSTR pb,
     DWORD size
 );
-
 ```
 
 ## <a name="out-pstr"></a>\_Out\_ PSTR
@@ -114,7 +111,6 @@ void Func1(_Out_ PSTR pFileName, size_t n);
 
 // Correct
 void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
-
 ```
 
 诸如 `_In_ PCSTR` 等批注很常见和有用。 它指向具有 NULL 终止的输入字符串，因为 `_In_` 的前置条件允许识别以 null 结尾的字符串。
@@ -130,7 +126,6 @@ void Func1(_In_ WCHAR* wszFileName);
 
 // Correct
 void Func2(_In_ PWSTR wszFileName);
-
 ```
 
 缺少 NULL 终止的正确规范很常见。 如下面的示例所示，请使用相应的 `STR` 版本来替换类型。
@@ -148,7 +143,6 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 {
     return strcmp(p1, p2) == 0;
 }
-
 ```
 
 ## <a name="outrange"></a>\_Out\_范围\_
@@ -170,7 +164,6 @@ void Func2(
     DWORD cbSize,
     _Deref_out_range_(0, cbSize) _Out_ DWORD *pcbFilled
 );
-
 ```
 
  一些工具并不是严格需要 `_Deref_out_range_(0, cbSize)`，因为它可从 `_Out_writes_to_(cbSize,*pcbFilled)` 推断，但为了完整性而将其显示在此处。
@@ -188,7 +181,6 @@ int Func1(_In_ MyData *p, int flag);
 // Correct
 _When_(flag == 0, _Requires_lock_held_(p->cs))
 int Func2(_In_ MyData *p, int flag);
-
 ```
 
  表达式 `result` 是指不适用于状态前的状态后值。
@@ -210,7 +202,6 @@ _Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
-
 ```
 
 ## <a name="reference-variable"></a>引用变量
@@ -230,7 +221,6 @@ void Func2(
     _Out_writes_bytes_all_(cbSize) BYTE *pb,
     _Out_range_(0, 2) _Out_ DWORD &cbSize
 );
-
 ```
 
 ## <a name="annotations-on-return-values"></a>对返回值的批注
@@ -244,7 +234,6 @@ _Out_opt_ void *MightReturnNullPtr1();
 
 // Correct
 _Ret_maybenull_ void *MightReturnNullPtr2();
-
 ```
 
 在此示例中，`_Out_opt_` 声明作为前置条件的一部分，指针可以为 NULL。 但是，前置条件不能应用于返回值。 在这种情况下，正确的批注为 `_Ret_maybenull_`。

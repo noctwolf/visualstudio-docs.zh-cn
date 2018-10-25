@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft 文档
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59589c0db502ac5ddbf7c204968ca0684340f685
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4582516126cad72c5b2939ef4c12fd59cc6fbcb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103560"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909877"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-从给定数据流加载调试符号**ICorDebugModule**对象。  
+从给定的数据流加载调试符号**icor 调试模块**对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,16 +53,16 @@ int LoadSymbolsFromStreamWithCorModule(
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `baseAddress`  
- [in]基本内存地址。  
+ [in]基本的内存地址。  
   
  `pUnkMetadataImport`  
  [in]包含符号元数据的对象。  
   
  `pUnkCorDebugModule`  
- [in]实现对象[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
+ [in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `pStream`  
  [in]包含要加载的调试符号的数据流。  
@@ -71,7 +71,7 @@ int LoadSymbolsFromStreamWithCorModule(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  
@@ -143,5 +143,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

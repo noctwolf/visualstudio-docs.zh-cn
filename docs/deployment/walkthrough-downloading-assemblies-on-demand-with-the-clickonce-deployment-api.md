@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de6698f6e635a151a0f78eecbb90f4d7bd525969
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: d6338044dff5aa5b0555b15b689c04ddd406c50f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39151270"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887652"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练： 下载使用 ClickOnce 部署 API 按需程序集
 默认情况下，所有程序集包含在[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]首次运行该应用程序时下载应用程序。 但是，您可能使用的一小组用户应用程序的部分。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将标记为"可选"，在应用程序中的某些程序集和如何使用下载中的类<xref:System.Deployment.Application>命名空间时公共语言运行时 (CLR) 需要它们。  
@@ -42,40 +42,40 @@ ms.locfileid: "39151270"
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly"></a>若要创建使用按需程序集的项目  
   
-1.  创建一个名为 ClickOnceOnDemand 目录。  
+1. 创建一个名为 ClickOnceOnDemand 目录。  
   
-2.  打开 Windows SDK 命令提示或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]命令提示符。  
+2. 打开 Windows SDK 命令提示或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]命令提示符。  
   
-3.  将更改为 ClickOnceOnDemand 目录。  
+3. 将更改为 ClickOnceOnDemand 目录。  
   
-4.  生成公共/专用密钥对使用以下命令：  
+4. 生成公共/专用密钥对使用以下命令：  
   
-    ```cmd  
-    sn -k TestKey.snk  
-    ```  
+   ```cmd  
+   sn -k TestKey.snk  
+   ```  
   
-5.  使用记事本或其他文本编辑器中，定义一个名为类`DynamicClass`具有单个属性名为`Message`。  
+5. 使用记事本或其他文本编辑器中，定义一个名为类`DynamicClass`具有单个属性名为`Message`。  
   
-     [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-     [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
+    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
+    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]  
   
-6.  将文本保存为文件命名*ClickOnceLibrary.cs*或*ClickOnceLibrary.vb*，具体取决于使用的语言于*ClickOnceOnDemand*目录。  
+6. 将文本保存为文件命名*ClickOnceLibrary.cs*或*ClickOnceLibrary.vb*，具体取决于使用的语言于*ClickOnceOnDemand*目录。  
   
-7.  将文件编译到程序集。  
+7. 将文件编译到程序集。  
   
-    ```csharp  
-    csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
-    ```  
+   ```csharp  
+   csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
+   ```  
   
-    ```vb  
-    vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
-    ```  
+   ```vb  
+   vbc /target:library /keyfile:TestKey.snk ClickOnceLibrary.vb  
+   ```  
   
-8.  若要获取该程序集的公钥令牌，请使用以下命令：  
+8. 若要获取该程序集的公钥令牌，请使用以下命令：  
   
-    ```cmd  
-    sn -T ClickOnceLibrary.dll  
-    ```  
+   ```cmd  
+   sn -T ClickOnceLibrary.dll  
+   ```  
   
 9. 创建新的文件使用文本编辑器并输入以下代码。 此代码创建在需要时下载 ClickOnceLibrary 程序集的 Windows 窗体应用程序。  
   
@@ -118,15 +118,15 @@ ms.locfileid: "39151270"
   
 #### <a name="to-test-your-on-demand-assembly"></a>测试按需程序集  
   
-1.  上传你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署到 Web 服务器。  
+1. 上传你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署到 Web 服务器。  
   
-2.  启动应用程序部署与[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从 Web 浏览器通过输入到部署清单 URL。 如果调用你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序`ClickOnceOnDemand`，并将其上载到 adatum.com 的根目录，你的 URL 将如下所示：  
+2. 启动应用程序部署与[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]从 Web 浏览器通过输入到部署清单 URL。 如果调用你[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]应用程序`ClickOnceOnDemand`，并将其上载到 adatum.com 的根目录，你的 URL 将如下所示：  
   
-    ```  
-    http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
-    ```  
+   ```  
+   http://www.adatum.com/ClickOnceOnDemand/ClickOnceOnDemand.application  
+   ```  
   
-3.  在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应会看到"Hello，World ！"中读取一个消息框窗口中的字符串。  
+3. 在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应会看到"Hello，World ！"中读取一个消息框窗口中的字符串。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.Deployment.Application.ApplicationDeployment>

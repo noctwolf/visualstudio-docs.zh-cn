@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3532f4e5b1fc38c25ebb462916bc7eefae9f9725
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: a0188a54e500f56c9c3d947ec27d53640173837b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912614"
 ---
 # <a name="architecture-of-document-level-customizations"></a>文档级自定义项的体系结构
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 包括用于为 Microsoft Office Word 和 Microsoft Office Excel 创建文档级自定义项的项目。 本主题介绍文档级自定义项的以下方面：  
   
--   [了解自定义项](#UnderstandingCustomizations)  
+- [了解自定义项](#UnderstandingCustomizations)  
   
--   [自定义项的组成部分](#Components)  
+- [自定义项的组成部分](#Components)  
   
--   [自定义项如何与 Microsoft Office 应用程序协同工作](#HowCustomizationsWork)  
+- [自定义项如何与 Microsoft Office 应用程序协同工作](#HowCustomizationsWork)  
   
- [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
+  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)， [一词的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)，并[excel 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
+  有关创建文档级自定义项的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)， [一词的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)，并[excel 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)。  
   
 ##  <a name="UnderstandingCustomizations"></a> 了解自定义项  
  使用 Visual Studio 中的 Office 开发人员工具生成文档级自定义项时，会创建一个与特定文档关联的托管代码程序集。 带有链接程序集的文档或工作簿被认为具有托管代码扩展。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。  
@@ -94,11 +94,11 @@ ms.locfileid: "35670581"
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>对具有.xml 文件扩展名的 Word 文档的支持  
  文档级项目模板不允许基于下列文件格式创建项目：  
   
--   Word XML 文档 (*\*xml*)。  
+- Word XML 文档 (*\*xml*)。  
   
--   Word 2003 XML 文档 (*\*xml*)。  
+- Word 2003 XML 文档 (*\*xml*)。  
   
- 如果希望最终用户在这些文件格式中使用自定义项，请生成并部署使用上表中指定的某个受支持文件格式的自定义项。 在安装后自定义项，最终用户可以保存该文档在 Word XML 文档 (*\*xml*) 格式或 Word 2003 XML 文档 (*\*xml*) 格式，并自定义项将继续按预期方式工作。  
+  如果希望最终用户在这些文件格式中使用自定义项，请生成并部署使用上表中指定的某个受支持文件格式的自定义项。 在安装后自定义项，最终用户可以保存该文档在 Word XML 文档 (*\*xml*) 格式或 Word 2003 XML 文档 (*\*xml*) 格式，并自定义项将继续按预期方式工作。  
   
 ##  <a name="Components"></a> 自定义项的组件  
  自定义项的主要组成部分是文档和程序集。 除了这些组成部分外，还有一些其他部件在 Microsoft Office 应用程序发现并加载自定义项的过程中扮演着重要角色。  
@@ -142,11 +142,11 @@ ms.locfileid: "35670581"
   
 8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将自定义项程序集加载到应用程序域中。  
   
-9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]调用**启动**中自定义程序集事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)  
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将在自定义项程序集中调用 **Startup** 事件处理程序。 有关详细信息，请参阅[Office 项目中的事件](../vsto/events-in-office-projects.md)  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   

@@ -15,12 +15,12 @@ ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b1c0cdc94a3aa796c981dbfb83aef3dd3c2ec1a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9dfe3ee16f9e4adf4514ce85057974ef244016b5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870154"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何： 打开开放文档编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49215990"
   
 #### <a name="to-open-a-project-specific-editor-for-an-open-file"></a>若要打开打开的文件的特定于项目的编辑器  
   
-1.  调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> 方法。  
+1. 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> 方法。  
   
-     如果适用，此调用返回到文档的层次结构、 层次结构项和窗口框架指针。  
+    如果适用，此调用返回到文档的层次结构、 层次结构项和窗口框架指针。  
   
-2.  如果文档处于打开状态，必须检查该项目以查看是否存在仅文档数据对象，或如果文档视图对象也存在。  
+2. 如果文档处于打开状态，必须检查该项目以查看是否存在仅文档数据对象，或如果文档视图对象也存在。  
   
-    -   如果文档视图对象存在，并且此视图是不同的层次结构或层次结构项，project 使用指向该视图的窗口框架的 resurface 现有窗口。  
+   - 如果文档视图对象存在，并且此视图是不同的层次结构或层次结构项，project 使用指向该视图的窗口框架的 resurface 现有窗口。  
   
-    -   如果文档视图对象存在，并且此视图相同的层次结构和层次结构项，项目可打开第二个视图，如果它可以将附加到基础文档数据对象。 否则，该项目应使用视图的窗口框架的指针来 resurface 现有窗口。  
+   - 如果文档视图对象存在，并且此视图相同的层次结构和层次结构项，项目可打开第二个视图，如果它可以将附加到基础文档数据对象。 否则，该项目应使用视图的窗口框架的指针来 resurface 现有窗口。  
   
-    -   如果只存在文档数据对象，该项目应确定是否可以为其视图使用文档数据对象。 如果文档数据对象是否兼容，完成步骤中所述[特定于项目的编辑器打开](../extensibility/how-to-open-project-specific-editors.md)。  
+   - 如果只存在文档数据对象，该项目应确定是否可以为其视图使用文档数据对象。 如果文档数据对象是否兼容，完成步骤中所述[特定于项目的编辑器打开](../extensibility/how-to-open-project-specific-editors.md)。  
   
      如果文档数据对象不兼容，则应指示文件正在使用中的用户显示错误。 此错误应仅显示在暂时性情况下，如文件在同一时间在编译时用户尝试打开该文件而不使用编辑器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心文本编辑器。 核心文本编辑器可以共享包含编译器的文档数据对象。  
   
-3.  如果文档未打开，因为没有文档数据对象或文档视图对象，请完成中的步骤[特定于项目的编辑器打开](../extensibility/how-to-open-project-specific-editors.md)。  
+3. 如果文档未打开，因为没有文档数据对象或文档视图对象，请完成中的步骤[特定于项目的编辑器打开](../extensibility/how-to-open-project-specific-editors.md)。  
   
 ## <a name="opening-a-standard-editor"></a>打开标准编辑器  
  使用以下过程可打开标准编辑器文件已打开。  

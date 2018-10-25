@@ -16,12 +16,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db82d0ccfbd4a82686e2b8069a26d3cdadffb73b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87d724f7df641169fde7445f6433687f67ccb8e7
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232058"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459798"
 ---
 # <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ ms.locfileid: "49232058"
  <xref:Microsoft.VisualStudio.Threading>  
  用于 Visual Studio 线程处理。  
   
- <xref:Microsoft.VisualStudio.Connected Services?qualifyHint=False&autoUpgrade=True> 用于 Visual Studio 连接服务。  
+ <xref:Microsoft.VisualStudio.ConnectedServices?qualifyHint=False&autoUpgrade=True> 用于 Visual Studio 连接服务。  
   
  [IntelliSenseHostFlags](../extensibility/intellisensehostflags.md)枚举  
  指定 IntelliSense 主机标志。  

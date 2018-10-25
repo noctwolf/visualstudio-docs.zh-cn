@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a9cb92b601fa8ba03e11d64e66bd24f9b9cca26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d841150a35e88a1ac5bf8a300f9c74fc8bbdf99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851057"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>快速入门：C/C++ 代码分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,15 +81,15 @@ ms.locfileid: "49241769"
   
  对解决方案运行代码分析：  
   
--   在“生成”菜单上，选择“对解决方案运行代码分析”。  
+- 在“生成”菜单上，选择“对解决方案运行代码分析”。  
   
- 对项目运行代码分析：  
+  对项目运行代码分析：  
   
--   在“解决方案资源管理器”中，选择项目名称。  
+- 在“解决方案资源管理器”中，选择项目名称。  
   
--   上**构建**菜单中，选择**上运行代码分析***项目名称*。  
+- 上**构建**菜单中，选择**上运行代码分析***项目名称*。  
   
- 编译项目或解决方案，并运行代码分析。 结果将显示在“代码分析”窗口中。  
+  编译项目或解决方案，并运行代码分析。 结果将显示在“代码分析”窗口中。  
   
 ##  <a name="BKMK_Analyze"></a> 分析和解决代码分析警告  
  若要分析某个具体的警告，请在“代码分析”窗口中选择该警告的标题。 该警告展开以显示有关相关问题的其他信息。 如果可能，代码分析会显示行号，并分析导致该警告的逻辑。 有关该警告的详细信息（包括对问题的可能解决方案），请选择该警告 ID 以显示 MSND 库中该消息的帮助主题。  
@@ -106,13 +106,13 @@ ms.locfileid: "49241769"
   
  取消显示警告：  
   
-1.  如果未显示详细信息，请选择警告标题将其展开。  
+1. 如果未显示详细信息，请选择警告标题将其展开。  
   
-2.  选择警告底部的“操作”链接。  
+2. 选择警告底部的“操作”链接。  
   
-3.  选择**禁止显示消息**，然后选择**在源**。  
+3. 选择**禁止显示消息**，然后选择**在源**。  
   
- 禁止显示消息会插入用于禁止显示代码行的警告的 `#pragma warning (disable:`*WarningId*`)`。  
+   禁止显示消息会插入用于禁止显示代码行的警告的 `#pragma warning (disable:`*WarningId*`)`。  
   
 ##  <a name="BKMK_Creating_work_items_for_code_analysis_warnings"></a> 为创建工作项的代码分析警告  
  可以使用 Visual Studio 中的工作项跟踪功能来记录 bug。 若要使用此功能，必须连接到 Team Foundation Server 的实例。  

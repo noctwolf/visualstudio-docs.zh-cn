@@ -1,5 +1,5 @@
 ---
-title: 'Idiasectioncontrib:: Get_addressoffset |Microsoft 文档'
+title: 'Idiasectioncontrib:: Get_addressoffset |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d799d4bf09ac54c298167de8a76f1b8b3e948718
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 80ec5548e0fa0d0a5723235da9d9a5b9b5a1d773
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870076"
 ---
 # <a name="idiasectioncontribgetaddressoffset"></a>IDiaSectionContrib::get_addressOffset
-检索的贡献地址的偏移量的部分。  
+检索发布内容的地址的偏移量的部分。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,10 +34,10 @@ HRESULT get_addressOffset (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回的贡献地址的偏移量的部分。  
+ [out]返回发布内容的地址的偏移量的部分。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

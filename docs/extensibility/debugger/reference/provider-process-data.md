@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_PROCESS_DATA |Microsoft 文档
+title: PROVIDER_PROCESS_DATA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b1b5d67faea0ce5c1c2a56b3f411cd4f947067
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 789385ae229214beeb6c2ab9be90a964127e5e13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126670"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819721"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
-此结构可提供有关在计算机上运行的进程的信息。  
+此结构可提供有关计算机上运行的进程的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,13 +48,13 @@ public struct PROVIDER_PROCESS_DATA {
  中的标志的组合[PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)指示填充的字段的枚举。  
   
  ProgramNodes  
- A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)包含程序节点的数组的结构。  
+ 一个[PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)结构，其中包含程序节点的数组。  
   
  fIsDebuggerPresent  
- 非零 (`TRUE`) 如果[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器正在运行，零 (`FALSE`) 如果不是。  
+ 非零值 (`TRUE`) 如果[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]调试器正在运行，零 (`FALSE`) 如果不是。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递给[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法中填充位置。  
+ 此结构传递给[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)填写其中的方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -63,7 +63,7 @@ public struct PROVIDER_PROCESS_DATA {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)   
  [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md)   

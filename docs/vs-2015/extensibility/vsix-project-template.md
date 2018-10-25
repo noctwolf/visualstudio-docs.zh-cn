@@ -16,12 +16,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fea3271ed628455d53a927fd5993e887564d27ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7260ba1dd2f5485c42c25dd3319f0aeb00ff9f05
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927198"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "49236179"
 ## <a name="uses-of-the-vsix-project-template"></a>VSIX 项目模板的用途  
  VSIX 项目模板具有两个主要用途：  
   
--   若要部署的项目模板、 项模板和已具有 VSIX 支持其他扩展。  
+- 若要部署的项目模板、 项模板和已具有 VSIX 支持其他扩展。  
   
--   若要将多个扩展的输出包装到一个部署包。  
+- 若要将多个扩展的输出包装到一个部署包。  
   
- 无需使用 VSIX 项目模板来部署 Vspackage 或其他类型的已有支持 VSIX 扩展。  
+  无需使用 VSIX 项目模板来部署 Vspackage 或其他类型的已有支持 VSIX 扩展。  
   
 ## <a name="packaging-an-extension-in-an-empty-vsix-project"></a>打包空 VSIX 项目中的扩展插件  
  您可以打包现有扩展插件或不具有支持，通过将其包装在一个空的 VSIX 项目中的 VSIX 扩展。 要包装的扩展必须支持的类型的[VSIX 架构](../extensibility/vsix-extension-schema-2-0-reference.md)。  

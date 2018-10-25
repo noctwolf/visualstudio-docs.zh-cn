@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 4ee3bfaac9cfcdf887a22c84e0b98a13f8add7ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812941"
 ---
 # <a name="defining-shapes-and-connectors"></a>定义形状和连接线
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,17 +27,17 @@ ms.locfileid: "49244603"
 ##  <a name="shapeTypes"></a> 基本类型的形状和连接线  
  DSL 关系图显示了一系列*形状*连接符的行或*连接器*。  通常情况下（但并非总是如此）：  
   
--   形状是模型元素的可视表示形式。  
+- 形状是模型元素的可视表示形式。  
   
--   连接符表示引用关系。  
+- 连接符表示引用关系。  
   
--   关系图表示模型根实例。  
+- 关系图表示模型根实例。  
   
--   模型元素之间的嵌入关系通过包容来显示。 例如，表示组件端口的元素将嵌入在组件中。  
+- 模型元素之间的嵌入关系通过包容来显示。 例如，表示组件端口的元素将嵌入在组件中。  
   
- 不会强制使用这些模式，但强烈支持使用它们。 在设计 DSL 时，请记住，嵌入关系的设计应受你希望在屏幕上呈现模型的方式所影响。 相比之下，引用关系应反映业务域的概念。  
+  不会强制使用这些模式，但强烈支持使用它们。 在设计 DSL 时，请记住，嵌入关系的设计应受你希望在屏幕上呈现模型的方式所影响。 相比之下，引用关系应反映业务域的概念。  
   
- 提供以下类型的形状：  
+  提供以下类型的形状：  
   
 |形状类型|描述|  
 |----------------|-----------------|  

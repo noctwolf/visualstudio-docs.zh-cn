@@ -23,12 +23,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3d44834fe02f873007e7461c789fb94f98c9208e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df09e647908b264ade467b8fafd4487641d3be6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841099"
 ---
 # <a name="install-visual-studio-2015"></a>安装 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,17 +135,17 @@ Visual Studio 2017 的最新安装文档，请参阅[安装 Visual Studio 2017](
   
 #### <a name="to-install-or-uninstall-help-content"></a>安装或卸载帮助内容  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 菜单栏上，选择“帮助” 和“添加和移除帮助内容” 。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 菜单栏上，选择“帮助” 和“添加和移除帮助内容” 。  
   
-2.  在“Microsoft 帮助查看器”  的“管理内容” 选项卡上，选择你的帮助内容对应的安装源。  
+2. 在“Microsoft 帮助查看器”  的“管理内容” 选项卡上，选择你的帮助内容对应的安装源。  
   
-3.  如果您正在寻找特定的帮助集合，输入名称或中的关键字**搜索**文本框中，再按**Enter**。  
+3. 如果您正在寻找特定的帮助集合，输入名称或中的关键字**搜索**文本框中，再按**Enter**。  
   
-4.  在所需帮助集合的名称旁边，选择“添加”  或“移除”  链接。  
+4. 在所需帮助集合的名称旁边，选择“添加”  或“移除”  链接。  
   
-5.  单击**更新**按钮。  
+5. 单击**更新**按钮。  
   
- 有关如何安装或部署脱机帮助的详细信息，请参阅[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)。  
+   有关如何安装或部署脱机帮助的详细信息，请参阅[帮助查看器管理员指南](../ide/help-viewer-administrator-guide.md)。  
   
 ##  <a name="serviceReleases"></a> 检查有 Service Release 和产品更新  
  并非所有扩展都都兼容，因为 Visual Studio 不会自动升级扩展从以前的版本升级时。 您必须重新安装的扩展[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=178891)或软件发行者。  

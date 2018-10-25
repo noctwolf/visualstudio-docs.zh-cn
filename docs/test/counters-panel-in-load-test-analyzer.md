@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2b85d2d20f4400e252cbfd19ea169c7b27b2aecf
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 229097b12e5b32e6be6af6b9614a628346780063
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176874"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921478"
 ---
 # <a name="use-the-counters-panel-in-graphs-view-and-tables-view"></a>使用“图”视图和“表”视图中的“计数器”面板
 
@@ -54,7 +54,7 @@ ms.locfileid: "39176874"
 ## <a name="tasks"></a>任务
 
 |任务|关联主题|
-|-----------|-----------------------|
+|-|-----------------------|
 |**在“图”视图上向图中添加更多性能计数器：** 在“计数器”面板上，可以向图中添加更多性能计数器，从而将不同种类的数据添加到负载测试图中。|-   [如何：在图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**分析已超出的在负载测试中指定的任何阈值：**“计数器”面板显示表示已超出阈值的图标，可供添加到表和图中，以供进一步分析。|-   [如何：使用“计数器”面板分析已超出的阈值](../test/analyze-threshold-rule-violations-in-load-tests.md)|
 |**分析在负载测试运行期间检测到的任何错误：**“计数器”面板中有错误节点，其中包含可用于向图中添加错误以供进一步分析的错误类别和子类别，如 HTTP 错误。|-   [如何：使用“计数器”面板分析错误](../test/how-to-analyze-errors-using-the-counters-panel.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "39176874"
 下面是有关采样速率的一些准则：
 
 |负载测试持续时间|建议的采样速率|
-|------------------------|-----------------------------|
+|-|-----------------------------|
 |\< 1 小时|5 秒|
 |1 - 8 小时|15 秒|
 |8 - 24 小时|30 秒|

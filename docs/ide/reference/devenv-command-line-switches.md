@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b6cf3bf422c861d5a649e5cfa71cf2b4a4b5fea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 8a8987354af4a0b62438cea3aab3f18f4def7bfa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907035"
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令行开关
 
@@ -61,7 +61,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 下列命令行开关显示 IDE 并执行描述的任务。
 
 |命令行开关|描述|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/Command](../../ide/reference/command-devenv-exe.md)|启动 IDE 并执行指定的命令。|
 |[/DebugExe](../../ide/reference/debugexe-devenv-exe.md)|在调试器的控制下加载 C++ 可执行文件。 此开关不可用于 Visual Basic 或 C# 可执行文件。 有关详细信息，请参阅[自动启动调试器中的进程](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|
 |[/LCID 或 /l](../../ide/reference/lcid-devenv-exe.md)|为 IDE 设置默认语言。 如果 Visual Studio 的安装中不包括指定的语言，将忽略此设置。|
@@ -77,7 +77,7 @@ Devenv 可用来设置集成开发环境 (IDE) 的各个选项，以及从命令
 以下命令行开关不显示 IDE。
 
 |命令行开关|描述|
-|-------------------------|-----------------|
+| - |-----------------|
 |[/?](../../ide/reference/q-devenv-exe.md)|在“命令提示符”窗口中显示 devenv 开关的相关帮助信息。<br /><br /> **Devenv /?**|
 |[build](../../ide/reference/build-devenv-exe.md)|根据指定解决方案的配置，生成指定的解决方案或项目。<br /><br /> **Devenv myproj.csproj /build**|
 |[/Clean](../../ide/reference/clean-devenv-exe.md)|删除由生成命令创建的任何文件，而不影响源文件。<br /><br /> **Devenv myproj.csproj /clean**|

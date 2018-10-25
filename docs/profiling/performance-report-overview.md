@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af31d6bce4f1c44fbe759423ddaeec9537054688
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 455c05ae0d8645040d3f9eac68d20f57138df5cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35255988"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830764"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 在 Visual Studio Team System Development Edition 集成开发环境 (IDE) 的“性能报告”窗口中，可以查看性能会话的分析数据。 分析数据保存在 .vsp 和 .vsps 文件中。 报告视图窗口可用于查看和分析应用程序性能问题。  
@@ -42,13 +42,13 @@ ms.locfileid: "35255988"
 ### <a name="callercallee-view"></a>“调用方/被调用方”视图  
  “调用方/被调用方”视图显示单个函数的调用树。 该视图划分为三个部分：  
   
--   目标函数显示在视图中间。  
+- 目标函数显示在视图中间。  
   
--   调用该函数的函数（调用方）显示在目标函数上方。  
+- 调用该函数的函数（调用方）显示在目标函数上方。  
   
--   目标函数调用的函数（被调用方）显示在目标下方。  
+- 目标函数调用的函数（被调用方）显示在目标下方。  
   
- 可以通过在调用方列表或被调用方列表中双击任何函数来选择不同的函数。 有关详细信息，请参阅[“调用方/被调用方”视图](../profiling/caller-callee-view.md)。  
+  可以通过在调用方列表或被调用方列表中双击任何函数来选择不同的函数。 有关详细信息，请参阅[“调用方/被调用方”视图](../profiling/caller-callee-view.md)。  
   
 ### <a name="call-tree-view"></a>“调用关系树”视图  
  “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它调用的所有函数以及有关这些函数调用的性能数据。  

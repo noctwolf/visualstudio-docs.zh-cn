@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 124516b0e214f1999792f40425976441bf3c9313
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3f1169ff5bc9487fc062ab7cbc6e2adb01151a19
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926145"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 
@@ -41,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ### <a name="parameters"></a>参数
 
 |**参数**|**说明**|
-|------------------|---------------------|
+|------------------| - |
 |`CollectionName`|指定项目集合的名称。 如果名称包含空格，则用引号将该名称引起来，例如“Fabrikam 网站”。|
 |`CollectionId`|指定项目集合的标识号。|
 |`ServerPath`|指定代码文件的路径。|
 
 |**选项**|**说明**|
-|----------------|---------------------|
+|----------------| - |
 |**/indexingStatus**|显示代码索引服务的状态和配置。|
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：开始为所有变更集创建索引。<br />-   **off**：停止为所有变更集创建索引。<br />-   **keepupOnly**：停止为之前创建的变更集创建索引，开始仅为新的变更集创建索引。|
 |**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> 可以在服务器路径的开头、末尾或两端使用通配符 (*)。|指定你不希望编制索引的代码文件的列表及其路径。<br /><br /> -   **add**：将不希望编制索引的文件添加到已忽略文件列表。<br />-   **remove**：从已忽略文件列表中移除希望编制索引的文件。<br />-   **removeAll**：清理忽略的文件列表，并开始为所有文件创建索引。<br />-   **view**：查看所有不要编制索引的文件。|

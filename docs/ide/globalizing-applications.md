@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b63a455ac1ff27bbdcf4434a6a70bc17b0a4893
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f1ab77b58047c92cfbf692e014f041e34456a01e
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31941741"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863577"
 ---
 # <a name="globalize-applications"></a>全球化应用程序
 
@@ -31,8 +31,8 @@ ms.locfileid: "31941741"
 
 - [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms)：提供 Windows 窗体全球化帮助页的链接。
 
-- [全球化和本地化](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)：提供 Web 窗体全球化帮助页的链接。
+- [全球化和本地化](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)：提供 Web 窗体全球化帮助页的链接。
 
 - [基于 .NET Framework 的国际应用程序简介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)：介绍有关使用 Visual Basic 或 C# 面向国际市场开发软件的基本概念。
 
-- [开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)：为国际受众提供关于编程的信息（例如设计问题和术语）。
+- [开发全球通用应用程序的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)：为国际受众提供关于编程的信息（例如设计问题和术语）。

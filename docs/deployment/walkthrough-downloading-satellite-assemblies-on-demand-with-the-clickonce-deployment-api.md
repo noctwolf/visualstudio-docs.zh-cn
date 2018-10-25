@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d7226726bc2eb9bbc53afa8920a26d342983af6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 506495f8be0b552f35bed0610e9fb43a77efb151
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281216"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883024"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练： 下载使用 ClickOnce 部署 API 按需的附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。  
@@ -45,24 +45,24 @@ ms.locfileid: "44281216"
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>按需下载附属程序集  
   
-1.  将以下代码添加到应用程序以启用按需下载附属程序集。  
+1. 将以下代码添加到应用程序以启用按需下载附属程序集。  
   
-     [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
-     [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
+    [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]  
   
-2.  使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+2. 使用生成你的应用程序的附属程序集[Resgen.exe （资源文件生成器）](/dotnet/framework/tools/resgen-exe-resource-file-generator)或[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-3.  生成应用程序清单，或通过打开现有的应用程序清单*MageUI.exe*。 有关此工具的详细信息，请参阅[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
+3. 生成应用程序清单，或通过打开现有的应用程序清单*MageUI.exe*。 有关此工具的详细信息，请参阅[MageUI.exe (Manifest Generation and Editing Tool，Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)。  
   
-4.  单击“文件”  选项卡。  
+4. 单击“文件”  选项卡。  
   
-5.  单击**省略号**按钮 (**...**)，然后选择包含的所有应用程序的程序集和文件，包括使用生成的附属程序集的目录*Resgen.exe*。 (附属程序集将包含一个名称，形式 *\<isoCode > \ApplicationName.resources.dll*，其中\<isoCode > 是 RFC 1766 格式的语言标识符。)  
+5. 单击**省略号**按钮 (**...**)，然后选择包含的所有应用程序的程序集和文件，包括使用生成的附属程序集的目录*Resgen.exe*。 (附属程序集将包含一个名称，形式 *\<isoCode > \ApplicationName.resources.dll*，其中\<isoCode > 是 RFC 1766 格式的语言标识符。)  
   
-6.  单击“填充”  将文件添加到部署。  
+6. 单击“填充”  将文件添加到部署。  
   
-7.  选择每个附属程序集的“可选”  复选框。  
+7. 选择每个附属程序集的“可选”  复选框。  
   
-8.  将每个附属程序集的组字段设置为它的 ISO 语言标识符。 例如，对于日语附属程序集，可以指定 `ja-JP`中可用的工具。 这将使在步骤 1 添加的代码能够下载适当的附属程序集，这取决于用户的 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性设置。  
+8. 将每个附属程序集的组字段设置为它的 ISO 语言标识符。 例如，对于日语附属程序集，可以指定 `ja-JP`中可用的工具。 这将使在步骤 1 添加的代码能够下载适当的附属程序集，这取决于用户的 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性设置。  
   
 ## <a name="next-steps"></a>后续步骤  
  在生产环境中，可能需要删除将 <xref:System.Threading.Thread.CurrentUICulture%2A> 设置为特定值的代码示例中的行，因为客户端计算机将以默认方式设置正确值。 例如，当在日语客户端计算机上运行应用程序时，默认情况下， <xref:System.Threading.Thread.CurrentUICulture%2A> 将设置为 `ja-JP` 。 以编程方式设置此值是在部署应用程序之前测试附属程序集的一个很好的方法。  

@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9e05c7aa16d689dd037546fe9a199f43a80b0401
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850043"
 ---
 # <a name="full-text-search-tips"></a>全文搜索提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ ms.locfileid: "49303428"
  如果指定搜索包含多个单词（如“word1 word2”）的字符串，该字符串等效于键入“word1 AND word2”，将仅返回包含搜索字符串中各个单词的主题。  
   
 > [!IMPORTANT]
->  1.  不支持短语搜索。 如果在搜索字符串中指定多个单词，返回的主题将包含所有指定的单词，但不一定是确切指定的短语。  
-> 2.  使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅[搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)。  
+> 1. 不支持短语搜索。 如果在搜索字符串中指定多个单词，返回的主题将包含所有指定的单词，但不一定是确切指定的短语。  
+>    2.  使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅[搜索表达式中的逻辑运算符](../ide/logical-operators-in-search-expressions.md)。  
   
 ### <a name="filters"></a>筛选器  
  可利用高级搜索运算符进一步限制搜索结果。 “帮助”包括三类用于筛选全文搜索结果的方式：标题、代码和关键字。 有关详细信息，请参阅[搜索表达式中的高级搜索运算符](../ide/advanced-search-operators-in-search-expressions.md)。  

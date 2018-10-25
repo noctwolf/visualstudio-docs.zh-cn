@@ -18,23 +18,23 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb4b84193f341163dc0a39ded71781cc678c7650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a66f3961cc6ddd4bb3f8970c77a8f7cff9b0fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192655"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849224"
 ---
 # <a name="execution-profile-report"></a>执行分析报告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 执行分析报告是传统的采样分析。 线程在逻辑内核上运行期间内，将大约每毫秒进行一次采样，并且并发可视化工具可通过调用累积的堆栈集构建典型的调用关系树。 此表中的数据可能受到当前时间范围、隐藏线程和可能应用的筛选器的影响：  
   
--   如果选择“仅我的代码”，则仅会显示具有用户代码的堆栈帧和该用户代码下的一个级别。  
+- 如果选择“仅我的代码”，则仅会显示具有用户代码的堆栈帧和该用户代码下的一个级别。  
   
--   如果设置了降噪值，则将把低于指定频率的排序堆栈筛从报告中筛选出去  
+- 如果设置了降噪值，则将把低于指定频率的排序堆栈筛从报告中筛选出去  
   
- 下表显示报告中的列。  
+  下表显示报告中的列。  
   
 |列|描述|  
 |------------|-----------------|  

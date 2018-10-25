@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: affdd3283d328fbc72b186904fdfb025bbe824e9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f0ec7d97ace8f61f209e4664c0de42b883a6a5d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266020"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896940"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,21 +46,21 @@ ms.locfileid: "49266020"
   
 #### <a name="to-change-the-layering-order"></a>更改分层顺序的步骤  
   
--   执行下列操作之一：  
+- 执行下列操作之一：  
   
-    -   在“文档大纲”窗口中，向上或向下拖动元素，以创建所需的分层顺序。  
+  - 在“文档大纲”窗口中，向上或向下拖动元素，以创建所需的分层顺序。  
   
-    -   右键单击文档大纲窗口中或美工板上想要更改其分层顺序的元素，指向“顺序”，然后单击以下选项之一：  
+  - 右键单击文档大纲窗口中或美工板上想要更改其分层顺序的元素，指向“顺序”，然后单击以下选项之一：  
   
-        -   “置于顶层”：将元素一直移动到顺序的顶层。  
+    -   “置于顶层”：将元素一直移动到顺序的顶层。  
   
-        -   “上移一层”，使元素在顺序中上移一层。  
+    -   “上移一层”，使元素在顺序中上移一层。  
   
-        -   “下移一层”，使元素在顺序中下移一层。  
+    -   “下移一层”，使元素在顺序中下移一层。  
   
-        -   “置于底层”：将元素一直移到顺序的底层。  
+    -   “置于底层”：将元素一直移到顺序的底层。  
   
-     更改属性窗口中“布局”部分的“ZIndex”属性。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序。 当元素重叠时，“ZIndex”值较小的元素将显示在前面。  
+    更改属性窗口中“布局”部分的“ZIndex”属性。 对于重叠元素，“ZIndex”属性优先于文档大纲窗口中显示的元素的顺序。 当元素重叠时，“ZIndex”值较小的元素将显示在前面。  
   
 ## <a name="changing-the-alignment-of-an-element"></a>更改元素的对齐方式  
  可以通过使用菜单命令或通过将元素拖到对齐线，对齐美工板中的元素。  
@@ -115,9 +115,9 @@ ms.locfileid: "49266020"
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>对元素进行取消分组并删除布局的步骤  
   
--   右键单击想要取消分组的组并单击“取消分组” 。  
+- 右键单击想要取消分组的组并单击“取消分组” 。  
   
- 还可以通过右键单击文档大纲窗口中选定的项，然后单击“分组”或“取消分组”，以对元素进行分组或取消分组 。  
+  还可以通过右键单击文档大纲窗口中选定的项，然后单击“分组”或“取消分组”，以对元素进行分组或取消分组 。  
   
 ## <a name="resetting-the-element-layout"></a>重置元素布局  
  可以通过使用“布局重置”命令还原某个元素特定布局属性的默认值。 通过使用此命令，可以单独或一起重置边距、对齐方式、宽度、高度和元素大小。  

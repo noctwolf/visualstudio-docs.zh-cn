@@ -1,5 +1,5 @@
 ---
-title: 缺少 VBArray |Microsoft 文档
+title: 缺少 VBArray |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,25 +21,25 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9b07c5e08e4178c9c31045317627424f5192f5e1
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844141"
 ---
 # <a name="vbarray-expected"></a>缺少 VBArray
-提供对象时不 Visual Basic safeArray，一个期望值。  
+您提供了一个对象，不是 Visual Basic 的 safeArray，当一个期望值。  
   
 ```  
 new VBArray(safeArray);  
 ```  
   
- VBArray 是只读的，不能直接创建。 SafeArray 自变量是一个 VBArray 值，和之前，必须获取一个 VBArray 值传递给`VBArray`构造函数。 只有从现有的 ActiveX 或其他对象进行检索，才能获取该值。  
+ VBArray 是只读的，不能直接创建。 SafeArray 参数是一个 VBArray 值，和之前，必须获取一个 VBArray 值传递给`VBArray`构造函数。 只有从现有的 ActiveX 或其他对象进行检索，才能获取该值。  
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保仅传递**VBArray**对象添加到**VBArray**构造函数。  
+-   确保只能通过**VBArray**对象添加到**VBArray**构造函数。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [VBArray 对象](../../javascript/reference/vbarray-object-javascript.md)   
  [使用数组](../../javascript/advanced/using-arrays-javascript.md)

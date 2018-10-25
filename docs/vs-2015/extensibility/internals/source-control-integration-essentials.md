@@ -17,12 +17,12 @@ ms.assetid: 442057cb-fd54-4283-96f8-2f6dc8bf2de7
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ecd87dfc4c2993023d0c882ce581280204f99d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f28781adb2679fb70e3d45d47507cd6e6aabd994
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811005"
 ---
 # <a name="source-control-integration-essentials"></a>源代码管理集成基础知识
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,28 +34,28 @@ ms.locfileid: "49232346"
   
  若要实现源代码管理插件使用源控制插件 API，请执行以下步骤：  
   
-1.  创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
+1. 创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
   
-2.  相应的注册表项，从而注册该 DLL，如中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
+2. 相应的注册表项，从而注册该 DLL，如中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)。  
   
-3.  创建帮助器 UI 并将其通过源控件适配器包出现提示时显示 ([!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]处理通过源代码管理插件的源代码管理功能的组件)。  
+3. 创建帮助器 UI 并将其通过源控件适配器包出现提示时显示 ([!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]处理通过源代码管理插件的源代码管理功能的组件)。  
   
- 有关详细信息，请参阅[创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)。  
+   有关详细信息，请参阅[创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)。  
   
 ## <a name="source-control-vspackage"></a>源代码管理 VSPackage  
  源代码管理 VSPackage 实现可用于开发的自定义的替换[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]源代码管理 UI。 此方法提供了完全控制源代码管理集成，但它要求您提供了 UI 元素，否则将下都能提供的插件方法的源代码控制接口实现。  
   
  若要实现源代码管理 VSPackage，你必须：  
   
-1.  创建并注册您自己的源代码管理 VSPackage，如中所述[注册和选择](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。  
+1. 创建并注册您自己的源代码管理 VSPackage，如中所述[注册和选择](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。  
   
-2.  使用自定义 UI 替换默认的源代码管理 UI。 请参阅[自定义用户界面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)。  
+2. 使用自定义 UI 替换默认的源代码管理 UI。 请参阅[自定义用户界面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)。  
   
-3.  指定字形来使用，并处理**解决方案资源管理器**标志符号的事件。 请参阅[字形控件](../../extensibility/internals/glyph-control-source-control-vspackage.md)。  
+3. 指定字形来使用，并处理**解决方案资源管理器**标志符号的事件。 请参阅[字形控件](../../extensibility/internals/glyph-control-source-control-vspackage.md)。  
   
-4.  处理查询编辑和保存查询的事件，如中所示[查询编辑查询保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)。  
+4. 处理查询编辑和保存查询的事件，如中所示[查询编辑查询保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)。  
   
- 有关详细信息，请参阅[创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
+   有关详细信息，请参阅[创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [概述](../../extensibility/internals/source-control-integration-overview.md)   

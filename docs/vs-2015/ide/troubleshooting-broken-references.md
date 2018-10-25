@@ -20,29 +20,29 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08cf57bb90ba85df8a818da92cfd5615c62c3468
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae619be498fcb1c48bbea8b706f0b0b5fa4db54c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292937"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950662"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果应用程序尝试使用损坏的引用，则会生成异常错误。 无法找到引用的组件是造成此错误的主要起因，但有几种情况可以将引用视为损坏。 下表中列出了这些情况：  
   
--   项目的引用路径不正确或不完整。  
+- 项目的引用路径不正确或不完整。  
   
--   已删除引用的文件。  
+- 已删除引用的文件。  
   
--   已重命名引用的文件。  
+- 已重命名引用的文件。  
   
--   网络连接或身份验证失败。  
+- 网络连接或身份验证失败。  
   
--   引用指向计算机上没有安装的 COM 组件。  
+- 引用指向计算机上没有安装的 COM 组件。  
   
- 下面列出了这些问题的补救措施。  
+  下面列出了这些问题的补救措施。  
   
 > [!NOTE]
 >  使用项目文件的绝对路径引用程序集中的文件。 因此，在多开发人员环境下工作的用户可能会在其本地环境中缺少引用的程序集。 为了避免这些错误，在这些情况下最好添加项目到项目的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)和[使用程序集编程](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)。  

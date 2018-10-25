@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ce77ac0d7d2cf7cfa131742f40f89af692982506
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8ef4cf0c416a72b61b1e02f97cf28798ecb340
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189044"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812851"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>如何：在 Visual Studio IDE 中移动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,20 +48,20 @@ ms.locfileid: "49189044"
   
 #### <a name="to-move-through-open-files-in-order-of-use"></a>按使用顺序在打开的文件之间移动  
   
--   若要以最近使用的顺序激活打开的文档，请按 CTRL + 减号。  
+- 若要以最近使用的顺序激活打开的文档，请按 CTRL + 减号。  
   
--   若要以相反顺序激活打开的文档，请按 CTRL + SHIFT + 减号。  
+- 若要以相反顺序激活打开的文档，请按 CTRL + SHIFT + 减号。  
   
-    > [!NOTE]
-    >  还可以在“视图”菜单上找到“向后导航”和“向前导航”。  
+  > [!NOTE]
+  >  还可以在“视图”菜单上找到“向后导航”和“向前导航”。  
   
- 还可以切换到编辑器中打开的特定文件，而不考虑上次访问该文件的时间，方法是使用“IDE 导航器”、编辑器中的“活动文件”列表或“Windows”对话框。  
+  还可以切换到编辑器中打开的特定文件，而不考虑上次访问该文件的时间，方法是使用“IDE 导航器”、编辑器中的“活动文件”列表或“Windows”对话框。  
   
- “IDE 导航器”工作方式非常类似于 Windows 应用程序切换器。 不能从菜单使用它，仅可使用键盘快捷方式进行访问。 可以使用两个命令中的任一个来访问“IDE 导航器”（如下所示）以便在文件间循环切换，具体取决于你希望的循环切换顺序。  
+  “IDE 导航器”工作方式非常类似于 Windows 应用程序切换器。 不能从菜单使用它，仅可使用键盘快捷方式进行访问。 可以使用两个命令中的任一个来访问“IDE 导航器”（如下所示）以便在文件间循环切换，具体取决于你希望的循环切换顺序。  
   
- ![Visual Studio IDE 导航器](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
+  ![Visual Studio IDE 导航器](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")  
   
- 使用 `Window.PreviousDocumentWindowNav` 可移动到最近访问的文件，使用 `Window.NextDocumentWindowNav` 可按相反顺序移动。 常规开发设置将 CTRL + SHIFT + TAB 分配给 `Window.PreviousDocumentWindowNav`，将 CTRL + TAB 分配给 `Window.NextDocumentWindowNav`。  
+  使用 `Window.PreviousDocumentWindowNav` 可移动到最近访问的文件，使用 `Window.NextDocumentWindowNav` 可按相反顺序移动。 常规开发设置将 CTRL + SHIFT + TAB 分配给 `Window.PreviousDocumentWindowNav`，将 CTRL + TAB 分配给 `Window.NextDocumentWindowNav`。  
   
 > [!NOTE]
 >  如果所用设置组合尚未向此命令分配快捷键组合，可以使用“选项”对话框的“键盘”页分配自己的自定义命令。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  

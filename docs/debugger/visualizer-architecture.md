@@ -1,5 +1,5 @@
 ---
-title: 可视化工具体系结构 |Microsoft 文档
+title: 可视化工具体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b20572409ac49451f58584be20fbabfdab39a3ba
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0e9c9f9012cc2811e0462586abe062e25a5478c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478156"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836601"
 ---
 # <a name="visualizer-architecture"></a>可视化工具体系结构
 调试器可视化工具的结构由两部分组成：  
   
--   *调试器端*运行在 Visual Studio 调试器中。 调试器端代码创建并显示可视化工具的用户界面。  
+- *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
   
--   *调试对象端*程序在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
+- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
   
- 可视化工具是一个调试器组件，使调试器中以显示 (*可视化*) 有意义且易理解的窗体中的数据对象的内容。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
+  可视化工具是使调试器能够显示一个调试器组件 (*可视化*) 有意义且易于理解的窗体中的数据对象的内容。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
   
- 要可视化的数据对象位于要调试的进程内 (*调试对象*过程)。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
+  要可视化的数据对象位于要调试的进程内 (*调试对象*过程)。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
   
 |调试器进程|调试对象进程|  
 |----------------------|----------------------|  
@@ -90,6 +90,6 @@ ms.locfileid: "31478156"
 ## <a name="see-also"></a>请参阅  
  [如何： 编写可视化工具](../debugger/how-to-write-a-visualizer.md)   
  [演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [演练： 在 Visual Basic 中编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
- [演练： 在 Visual Basic 中编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
+ [演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)   
  [可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame2::GetLanguageInfo |Microsoft 文档
+title: IDebugStackFrame2::GetLanguageInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a044d9279cb7efccb0e4ee61c988c6d4e7d7a5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ebb64c7c33391288037b56ce795e834dbbc02b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117597"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908791"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 获取与此堆栈帧关联的语言。  
@@ -43,10 +43,10 @@ int GetLanguageInfo (
   
 #### <a name="parameters"></a>参数  
  `pbstrLanguage`  
- [out]返回实现与此堆栈帧关联的方法的语言的名称。  
+ [out]返回的语言的实现与此堆栈帧关联的方法的名称。  
   
  `pguidLanguage`  
- [out]返回`GUID`的语言。 有关[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]语言，例如，以下可以返回：  
+ [out]返回`GUID`的语言。 有关[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]语言，例如，以下可返回：  
   
 -   `guidVBScriptLang`  
   
@@ -63,5 +63,5 @@ int GetLanguageInfo (
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

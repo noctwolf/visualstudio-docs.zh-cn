@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 47b50ece6d4fff79618890cb388c997503d95ad0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214742"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920126"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -295,17 +295,17 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式： 基方法中的片段  
  在下面的示例中使用的模式，请注意以下几点：  
   
--   类的基类`SharedFragments`定义类功能块中的方法`<#+ ... #>`。  
+- 类的基类`SharedFragments`定义类功能块中的方法`<#+ ... #>`。  
   
--   基类中包含任何自由文本。 相反，其所有文本块都出现在类功能方法。  
+- 基类中包含任何自由文本。 相反，其所有文本块都出现在类功能方法。  
   
--   在派生的类调用中定义的方法`SharedFragments`。  
+- 在派生的类调用中定义的方法`SharedFragments`。  
   
--   应用程序调用`TextTransform()`方法的派生类中，但不是转换类的基类`SharedFragments`。  
+- 应用程序调用`TextTransform()`方法的派生类中，但不是转换类的基类`SharedFragments`。  
   
--   基类和派生类是运行时文本模板： 即，**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。  
+- 基类和派生类是运行时文本模板： 即，**自定义工具**属性设置为**TextTemplatingFilePreprocessor**。  
   
- **SharedFragments.tt:**  
+  **SharedFragments.tt:**  
   
 ```csharp  
 <#@ template language="C#" #>  

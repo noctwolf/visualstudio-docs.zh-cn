@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 168f89512dee8331448db1becabdc7262b5e4744
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d390ba4cd47297c6d653cb68693439fd01c16815
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853605"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>查看调用堆栈和使用 Visual Studio 调试器中调用堆栈窗口
 
@@ -45,17 +45,17 @@ ms.locfileid: "43774718"
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
->  [!NOTE]
+> [!NOTE]
 > **调用堆栈**窗口处于类似于调试角度来看一些 Ide，如 Eclipse。 
-
+> 
 > [!NOTE]
 >  显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请选择**导入和导出设置**上**工具**菜单。  请参阅[个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)
   
 ## <a name="view-the-call-stack-while-in-the-debugger"></a>查看调试器中的调用堆栈 
   
--   在调试时，在**调试**菜单中，选择**Windows > 调用堆栈**。
+- 在调试时，在**调试**菜单中，选择**Windows > 调用堆栈**。
 
- ![调用堆栈窗口](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+  ![调用堆栈窗口](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
 
 一个黄色箭头标识执行指针当前所位于的堆栈帧。 默认情况下，这是在源中，将显示其信息的堆栈帧**局部变量**，**自动**，**观看**，以及**反汇编**windows. 如果你想要将调试器上下文更改为堆栈上的另一个帧，您可以通过做到这[切换到另一个堆栈帧](#bkmk_switch)。   
   

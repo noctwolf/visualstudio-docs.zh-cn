@@ -9,12 +9,12 @@ description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 7726470eaaec90ba5138a84901745bbde61201bd
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 88fb704df9858572581d205a8c5d457203488ee3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900847"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -79,11 +79,11 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 
 
 索取产品密钥：
-1.  登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。
-2.  单击“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡。
-3.  产品密钥根据产品名称按字母顺序列出。  可以向下滚动到所需产品的名称，也可以使用页面顶部的搜索栏进行搜索。
-    > [!div class="mx-imgBorder"]
-    > ![搜索产品密钥](_img\product-keys\visio-product-key-cropped.png)
+1. 登录到你的 Visual Studio 订阅。  必须登录才能下载产品或索取产品密码。
+2. 单击“[产品密钥](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)”选项卡。
+3. 产品密钥根据产品名称按字母顺序列出。  可以向下滚动到所需产品的名称，也可以使用页面顶部的搜索栏进行搜索。
+   > [!div class="mx-imgBorder"]
+   > ![搜索产品密钥](_img/product-keys/visio-product-key-cropped.png)
 
 在此示例中，我们使用了搜索栏查找 Visio 2010 的产品密钥。
 正如你所见，这里列出了几个版本的 Visio 2010。  为 Visio Standard 2010 和 Visio Premium 2010 分别索取了一个密钥，现在两者均剩余 4 个密钥。  已索取的这两个密钥为零售密钥，并且都显示在页面上。  注意，你可以在“注释”列记录有关已索取的密钥的简短说明。  可以结合“已索取”列中的日期，使用它来跟踪索取的密钥。  例如，可以在使用密钥激活产品的安装时进行记录。

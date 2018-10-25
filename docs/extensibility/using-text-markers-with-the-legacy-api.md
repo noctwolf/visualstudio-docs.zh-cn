@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcfae4cc786fb7a3e0c2ccd48f867bb6c32530d6
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 62b77180858b40bf2620eaed284fa35b9a48288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496124"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835925"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>旧版 API 中使用文本标记
 文本标记是区域的文本的浮动的范围内的缓冲区中，可能会影响显示和文本的行为。 标记包括断点、 书签、 波浪形下划线和只读区域。 文本标记为基本上不同于语法颜色设置。 语法颜色设置是通信与文本的区域关联的语言语法的快速方法。 Windows 重新绘制屏幕时速度很重要时通常所请求语法颜色设置。 语法颜色设置更改文本的颜色。 文本标记可以更改许多其他文本属性。 文本标记可以"浮动"并将应用特殊行为和颜色设置。  
@@ -30,14 +30,14 @@ ms.locfileid: "46496124"
   
 ## <a name="related-topics"></a>相关主题  
   
-|标题|描述|  
-|-----------|-----------------|  
-|[如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)|描述如何添加由提供的标准文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器文本视图。|  
-|[如何：实现错误标记](../extensibility/how-to-implement-error-markers.md)|介绍如何实现的实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]标记，用于通过使用红色的波浪形下划线指示错误。|  
-|[如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md)|介绍如何创建和自定义文本标记类型添加到文本视图。|  
-|[如何：使用文本标记](../extensibility/how-to-use-text-markers.md)|介绍如何添加文本标记。|  
-|[核心编辑器内](../extensibility/inside-the-core-editor.md)|介绍核心编辑器的功能，并提供有关如何自定义核心编辑器的详细信息。|  
-|[编辑器功能](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|描述中提供的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。|  
+| 标题 | 描述 |
+| - | - |
+| [如何：添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md) | 描述如何添加由提供的标准文本标记类型[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器文本视图。 |
+| [如何：实现错误标记](../extensibility/how-to-implement-error-markers.md) | 介绍如何实现的实例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]标记，用于通过使用红色的波浪形下划线指示错误。 |
+| [如何：创建自定义文本标记](../extensibility/how-to-create-custom-text-markers.md) | 介绍如何创建和自定义文本标记类型添加到文本视图。 |
+| [如何：使用文本标记](../extensibility/how-to-use-text-markers.md) | 介绍如何添加文本标记。 |
+| [核心编辑器内](../extensibility/inside-the-core-editor.md) | 介绍核心编辑器的功能，并提供有关如何自定义核心编辑器的详细信息。 |
+| [编辑器功能](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | 描述中提供的功能[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]核心编辑器。 |
   
 ## <a name="reference"></a>参考  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

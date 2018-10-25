@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f7710a84b05743c738bd694be0e5bcc117ab19
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 23286c6b042b7064c5ebfdf758a6b82e1b97f961
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48880274"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850228"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件
 
@@ -67,24 +67,24 @@ ms.locfileid: "48880274"
    
    默认情况下，如果已生成 DLL 或 *.exe*文件在计算机上，链接器将放的完整路径和文件名关联 *.pdb* DLL 中的文件或 *.exe*文件。 调试器将检查以查看在该位置中是否存在符号文件。  
    
-1. 与 DLL 相同的文件夹或 *.exe*文件。
+2. 与 DLL 相同的文件夹或 *.exe*文件。
    
-1. 指定符号文件的调试器选项中任何位置。 若要添加并启用符号位置，请参阅[配置符号位置和加载选项](#BKMK_Specify_symbol_locations_and_loading_behavior)。 
+3. 指定符号文件的调试器选项中任何位置。 若要添加并启用符号位置，请参阅[配置符号位置和加载选项](#BKMK_Specify_symbol_locations_and_loading_behavior)。 
    
-    - 任何本地符号缓存文件夹。  
+   - 任何本地符号缓存文件夹。  
   
-    - 如果选择，指定网络、 internet 或本地符号服务器和位置，例如 Microsoft 符号服务器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以从实现的符号服务器下载调试符号文件`symsrv`协议。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)并[的 Windows 调试工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx)是可以使用符号服务器的两个工具。 
+   - 如果选择，指定网络、 internet 或本地符号服务器和位置，例如 Microsoft 符号服务器。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以从实现的符号服务器下载调试符号文件`symsrv`协议。 [Visual Studio Team Foundation Server](http://msdn.microsoft.com/Library/bd6977ca-e30a-491a-a153-671d81222ce6)并[的 Windows 调试工具](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx)是可以使用符号服务器的两个工具。 
       
-      可以使用符号服务器包括：  
+     可以使用符号服务器包括：  
       
-      **公共 Microsoft 符号服务器**： 若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。 
+     **公共 Microsoft 符号服务器**： 若要调试到系统 DLL 或第三方库的调用期间发生的故障，您通常需要系统 *.pdb*文件。 系统 *.pdb*文件包含 Windows Dll 符号 *.exe*文件和设备驱动程序。 您可以获取符号的 Windows 操作系统、 MDAC、 IIS、 ISA 和[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]从公共 Microsoft 符号服务器。 
       
-      **符号服务器内部网络上或在本地计算机上**： 你的团队或公司可以从外部源创建符号服务器，你自己的产品，并为符号的缓存。 你自己的计算机上可能具有符号服务器。 
+     **符号服务器内部网络上或在本地计算机上**： 你的团队或公司可以从外部源创建符号服务器，你自己的产品，并为符号的缓存。 你自己的计算机上可能具有符号服务器。 
       
-      **第三方符号服务器**： 第三方提供商的 Windows 应用程序和库可以在 internet 上提供到符号服务器的访问。 
+     **第三方符号服务器**： 第三方提供商的 Windows 应用程序和库可以在 internet 上提供到符号服务器的访问。 
     
-    > [!WARNING]
-    > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保符号服务器及其路径是可信任。 由于符号文件可以包含任意可执行代码，则可以会面临安全威胁。  
+     > [!WARNING]
+     > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保符号服务器及其路径是可信任。 由于符号文件可以包含任意可执行代码，则可以会面临安全威胁。  
 
 <a name="BKMK_Specify_symbol_locations_and_loading_behavior"></a>
 ### <a name="configure-symbol-locations-and-loading-options"></a>配置符号位置和加载选项
@@ -101,7 +101,7 @@ ms.locfileid: "48880274"
    
    ![工具&#45;选项&#45;调试&#45;符号页](media/dbg-options-symbols.png "工具&#45;选项&#45;调试&#45;符号页")  
    
-1. 下**符号文件 (.pdb) 位置**，
+2. 下**符号文件 (.pdb) 位置**，
    - 若要使用**Microsoft 符号服务器**，选中该复选框。  
    
    - 若要添加新的符号服务器位置，
@@ -119,21 +119,21 @@ ms.locfileid: "48880274"
    - 若要编辑 URL 或路径，请双击该注册表项，或选择它并按**F2**。  
    - 要移除的项，选择它，并选择**-** 图标。
   
-1.  （可选）若要改进符号加载性能下**在此目录下缓存符号**，可以复制符号服务器的本地文件夹路径到符号的类型。  
+3. （可选）若要改进符号加载性能下**在此目录下缓存符号**，可以复制符号服务器的本地文件夹路径到符号的类型。  
   
-    > [!NOTE]
-    > 未将本地符号缓存放在受保护的文件夹，例如 C:\Windows 或子文件夹。 而应使用可读写的文件夹。  
+   > [!NOTE]
+   > 未将本地符号缓存放在受保护的文件夹，例如 C:\Windows 或子文件夹。 而应使用可读写的文件夹。  
   
-    > [!NOTE]
-    > 对于 c + + 项目，如果有`_NT_SYMBOL_PATH`环境变量集，它将重写下设置的值**在此目录下缓存符号**。
+   > [!NOTE]
+   > 对于 c + + 项目，如果有`_NT_SYMBOL_PATH`环境变量集，它将重写下设置的值**在此目录下缓存符号**。
   
-1. 指定希望调试器将从加载的模块**符号文件 (.pdb) 位置**启动时。  
+4. 指定希望调试器将从加载的模块**符号文件 (.pdb) 位置**启动时。  
   
-  -  选择**加载所有模块，除非排除**（默认） 加载所有符号的符号文件位置，除非专门排除的模块中的所有模块。 若要排除某些模块，请选择**指定排除的模块**，选择**+** 图标，键入要排除，并选择的模块的名称**确定**。  
+   -  选择**加载所有模块，除非排除**（默认） 加载所有符号的符号文件位置，除非专门排除的模块中的所有模块。 若要排除某些模块，请选择**指定排除的模块**，选择**+** 图标，键入要排除，并选择的模块的名称**确定**。  
   
-  -  若要加载符号文件位置从指定的模块，请选择**负载仅指定的模块**。 选择**指定包含的模块**，选择**+** 图标，键入要包括，，然后选择的模块的名称**确定**。 未加载其他模块的符号文件。  
+   -  若要加载符号文件位置从指定的模块，请选择**负载仅指定的模块**。 选择**指定包含的模块**，选择**+** 图标，键入要包括，，然后选择的模块的名称**确定**。 未加载其他模块的符号文件。  
   
-1.  选择“确定”。
+5. 选择“确定”。
 
 ## <a name="other-symbol-options-for-debugging"></a>用于调试的其他符号选项
   

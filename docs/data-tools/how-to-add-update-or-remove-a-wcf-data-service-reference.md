@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6726b2c859143f5dbc9b264e67bb9bb91757de5
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 9099c1ee0b1ed3af108c11792f7629453dfbf7c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819031"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何： 添加、 更新或删除 WCF 数据服务引用
 一个*服务参考*使得访问一个或多个项目[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**添加服务引用**对话框可以搜索[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在当前解决方案中，本地、 在本地网络，或在 Internet 上。
@@ -55,21 +55,21 @@ ms.locfileid: "37089307"
 
 ### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要在当前解决方案中添加对服务的引用
 
-1.  在中**解决方案资源管理器**，右键单击你想要添加该服务，然后单击的项目名称**添加服务引用**。
+1. 在中**解决方案资源管理器**，右键单击你想要添加该服务，然后单击的项目名称**添加服务引用**。
 
-     **添加服务引用**对话框随即出现。
+    **添加服务引用**对话框随即出现。
 
-2.  单击**发现**。
+2. 单击**发现**。
 
-     所有服务 (同时[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服务) 当前解决方案中添加到**Services**列表。
+    所有服务 (同时[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服务) 当前解决方案中添加到**Services**列表。
 
-3.  在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。
+3. 在中**Services**列表中，展开你想要使用，并选择一个实体集的服务的节点。
 
-4.  在中**Namespace**框中，输入你想要用于参考的命名空间。
+4. 在中**Namespace**框中，输入你想要用于参考的命名空间。
 
-5.  单击**确定**添加到项目引用。
+5. 单击**确定**添加到项目引用。
 
-     生成服务客户端 （代理），并描述该服务的元数据添加到*app.config*文件。
+    生成服务客户端 （代理），并描述该服务的元数据添加到*app.config*文件。
 
 ## <a name="update-a-service-reference"></a>更新服务引用
  实体数据模型的[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]有时会更改。 在此情况下，必须更新服务引用。

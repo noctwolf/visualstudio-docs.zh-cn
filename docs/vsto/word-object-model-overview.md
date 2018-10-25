@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0005dd52c9c70edf41c9fc32c51e555748c78bfc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 75a5f8e79bbd6dd34b046cbff6d59844a977efb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878006"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。  
@@ -53,17 +53,17 @@ ms.locfileid: "35258449"
   
  下列各节简要介绍了顶级对象以及它们彼此交互的方式。 这些对象包括下列五种：  
   
--   应用程序对象  
+- 应用程序对象  
   
--   文档对象  
+- 文档对象  
   
--   Selection 对象  
+- Selection 对象  
   
--   Range 对象  
+- Range 对象  
   
--   Bookmark 对象  
+- Bookmark 对象  
   
- 除 Word 对象模型以外，Visual Studio 中的 Office 项目还提供可扩展 Word 对象模型中的一些对象的 *主机项* 和 *主机控件* 。 主机项和主机控件的行为类似于它们扩展的 Word 对象，但它们还具有其他功能（如数据绑定功能）和额外事件。 有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)并[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
+  除 Word 对象模型以外，Visual Studio 中的 Office 项目还提供可扩展 Word 对象模型中的一些对象的 *主机项* 和 *主机控件* 。 主机项和主机控件的行为类似于它们扩展的 Word 对象，但它们还具有其他功能（如数据绑定功能）和额外事件。 有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)并[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。  
   
 ### <a name="application-object"></a>应用程序对象  
  <xref:Microsoft.Office.Interop.Word.Application> 对象表示 Word 应用程序，并且是所有其他对象的父级。 其成员通常作为一个整体应用于 Word。 你可以使用其属性和方法来控制 Word 环境。  
@@ -90,17 +90,17 @@ ms.locfileid: "35258449"
 ### <a name="range-object"></a>Range 对象  
  <xref:Microsoft.Office.Interop.Word.Range> 对象表示文档中的相邻区域，并由起始字符位置和结束字符位置进行定义。 并不仅限于单个 <xref:Microsoft.Office.Interop.Word.Range> 对象。 你可以在同一文档中定义多个 <xref:Microsoft.Office.Interop.Word.Range> 对象。 <xref:Microsoft.Office.Interop.Word.Range> 对象具有以下特性：  
   
--   它可以只包含单独的插入点，也可包含一个文本范围或整个文档。  
+- 它可以只包含单独的插入点，也可包含一个文本范围或整个文档。  
   
--   它包括非打印字符，如空格、制表符和段落标记。  
+- 它包括非打印字符，如空格、制表符和段落标记。  
   
--   它可以是当前选定内容所表示的区域，也可以表示不同于此内容的区域。  
+- 它可以是当前选定内容所表示的区域，也可以表示不同于此内容的区域。  
   
--   它在文档中不可见，这与选定内容不同，后者总是可见。  
+- 它在文档中不可见，这与选定内容不同，后者总是可见。  
   
--   它不随文档一起保存，且仅在代码运行时才存在。  
+- 它不随文档一起保存，且仅在代码运行时才存在。  
   
- 当在某个范围的末尾插入文本时，Word 会自动扩展该范围以包括插入的文本。  
+  当在某个范围的末尾插入文本时，Word 会自动扩展该范围以包括插入的文本。  
   
 ### <a name="content-control-objects"></a>内容控件对象  
  <xref:Microsoft.Office.Interop.Word.ContentControl> 提供一种用于控制 Word 文档内文本和其他类型的内容的输入和呈现的方法。 <xref:Microsoft.Office.Interop.Word.ContentControl> 可以显示多种不同类型的 UI，它们进行了优化以在 Word 文档中使用，如多信息文本控件、日期选取器或组合框。 你还可以使用 <xref:Microsoft.Office.Interop.Word.ContentControl> 来防止用户编辑文档或模板的某些节。  
@@ -110,13 +110,13 @@ ms.locfileid: "35258449"
 ### <a name="bookmark-object"></a>Bookmark 对象  
  <xref:Microsoft.Office.Interop.Word.Bookmark> 对象表示文档中的相邻区域，同时具有起始位置和结束位置。 你可以使用书签标记文档中的某个位置，也可将其作为文档中文本的容器。 <xref:Microsoft.Office.Interop.Word.Bookmark> 对象可以包含插入点，也可以与整个文档一样大。 <xref:Microsoft.Office.Interop.Word.Bookmark> 具有下列特征，以将其与 <xref:Microsoft.Office.Interop.Word.Range> 对象区别开来：  
   
--   你可以在设计时命名书签。  
+- 你可以在设计时命名书签。  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark> 对象随文档一起保存，因此在代码停止运行或文档关闭时不会被删除。  
+- <xref:Microsoft.Office.Interop.Word.Bookmark> 对象随文档一起保存，因此在代码停止运行或文档关闭时不会被删除。  
   
--   通过将 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 属性来访问 <xref:Microsoft.Office.Interop.Word.View> 属性设置为 **false** 或 **true**。  
+- 通过将 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 属性来访问 <xref:Microsoft.Office.Interop.Word.View> 属性设置为 **false** 或 **true**。  
   
- Visual Studio 通过提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主机控件来扩展 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.Bookmark>的类似，但它们还具有其他事件和数据绑定功能。 你可以将数据绑定到文档上的书签控件，操作方式与将数据绑定到 Windows 窗体上文本框控件的方式相同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。  
+  Visual Studio 通过提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主机控件来扩展 <xref:Microsoft.Office.Tools.Word.Bookmark> 对象。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主机控件的行为与本机 <xref:Microsoft.Office.Interop.Word.Bookmark>的类似，但它们还具有其他事件和数据绑定功能。 你可以将数据绑定到文档上的书签控件，操作方式与将数据绑定到 Windows 窗体上文本框控件的方式相同。 有关详细信息，请参阅[Bookmark 控件](../vsto/bookmark-control.md)。  
   
 ##  <a name="WordOMDocumentation"></a> 使用 Word 对象模型文档  
  有关 Word 对象模型的完整信息，可以参考 Word 主互操作程序集 (PIA) 引用和 Visual Basic for Applications (VBA) 对象模型引用。  

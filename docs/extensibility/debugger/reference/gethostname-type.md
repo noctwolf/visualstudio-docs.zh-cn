@@ -1,5 +1,5 @@
 ---
-title: GETHOSTNAME_TYPE |Microsoft 文档
+title: GETHOSTNAME_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c6bc4f0736950042a62786caac6179f1edffab8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 97e252f9f7b3d3177b099e98984ee459b85f0c82
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109374"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823055"
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
-指定的主机名的类型。  
+指定主机名的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,13 +44,13 @@ public enum enum_GETHOSTNAME_TYPE {
   
 ## <a name="members"></a>成员  
  GHN_FRIENDLY_NAME  
- 指定的友好名称的主机。  
+ 指定的主机的友好名称。  
   
  GHN_FILE_NAME  
  指定主机的文件名称。  
   
 ## <a name="remarks"></a>备注  
- 这些值传递的自变量作为[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法来检索主机名以不同的格式。  
+ 这些值会作为参数传递[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法来检索主机名以不同的格式。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -59,6 +59,6 @@ public enum enum_GETHOSTNAME_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

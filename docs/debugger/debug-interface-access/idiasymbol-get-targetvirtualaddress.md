@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_targetvirtualaddress |Microsoft 文档'
+title: 'Idiasymbol:: Get_targetvirtualaddress |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6732ecad84e379ee574be94ce0170b9758329bc2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9f4d4759bb256eea4db9cf00c6c051410c462131
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882352"
 ---
 # <a name="idiasymbolgettargetvirtualaddress"></a>IDiaSymbol::get_targetVirtualAddress
 检索转换 （thunk） 目标的虚拟地址 (VA)。  
@@ -40,12 +40,12 @@ HRESULT get_targetVirtualAddress (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 此属性才有效才形式的符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)值`SymTagThunk`。  
+ 此属性才有效才形式的符号[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)的值`SymTagThunk`。  
   
- "转换 （thunk）"是代码的一种 32 位内存地址空间 （也称为平面地址空间） 和 （称为分段的地址空间） 的 16 位地址空间之间进行转换。  
+ "转换 （thunk）"是代码的一种 32 位内存地址空间 （也称为平面地址空间） 和一个 16 位地址空间 （称为分段的地址空间） 之间进行转换。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

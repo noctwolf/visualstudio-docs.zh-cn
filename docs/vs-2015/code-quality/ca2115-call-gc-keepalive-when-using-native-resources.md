@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c48ad201a780c31fed5f324ff96a91bd21989522
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8f45b188945febcd3c81fc4be6a9427d8fe94ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948741"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115：使用本机资源时调用 GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|CallGCKeepAliveWhenUsingNativeResources|
@@ -50,11 +51,11 @@ ms.locfileid: "49213339"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  此规则可导致误报可能会导致一些假设。 可以安全地禁止显示此规则的警告，如果：
 
--   终结器不会释放的内容<xref:System.IntPtr>或<xref:System.UIntPtr>字段引用的方法。
+- 终结器不会释放的内容<xref:System.IntPtr>或<xref:System.UIntPtr>字段引用的方法。
 
--   该方法不会传递<xref:System.IntPtr>或<xref:System.UIntPtr>字段到非托管代码。
+- 该方法不会传递<xref:System.IntPtr>或<xref:System.UIntPtr>字段到非托管代码。
 
- 不包括它们之前仔细查看其他消息。 此规则检测到难以重现和调试的错误。
+  不包括它们之前仔细查看其他消息。 此规则检测到难以重现和调试的错误。
 
 ## <a name="example"></a>示例
  在下面的示例中，`BadMethod` 不包含对 `GC.KeepAlive` 的调用，因此违反了此规则。 `GoodMethod` 包含更正后的代码。

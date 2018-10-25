@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b94001c13f5925107cecb49936ecdc5fb1e73514
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 5ba91d26e038c0b0223217793f66debeeb63af85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876030"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 VSPerfCmd.exe **ProcessOff** 和 **ProcessOn** 子命令可暂停和继续对命令行分析会话中指定进程的分析。 **ProcessOff** 停止进程分析，而 **ProcessOn** 启动进程分析。  
@@ -26,11 +26,11 @@ VSPerfCmd.exe **ProcessOff** 和 **ProcessOn** 子命令可暂停和继续对命
   
  **ProcessOff** 和 **ProcessOn** 子命令还影响探查器 API 函数所控制的进程启动/停止计数。  
   
--   **ProcessOff** 将进程启动/停止计数立即设置为 0，因此暂停分析。  
+- **ProcessOff** 将进程启动/停止计数立即设置为 0，因此暂停分析。  
   
--   **ProcessOn** 将进程启动/停止计数立即设置为 1，因此继续分析。  
+- **ProcessOn** 将进程启动/停止计数立即设置为 1，因此继续分析。  
   
- 有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
+  有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>语法  
   

@@ -10,12 +10,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 4b6580602e730ae2f8cfc6fe47366d57ce1ff7ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e9390182f6fec91d049a1c080e33802aecfed305
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178810"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860690"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>了解关于使用 Xamarin 进行移动开发的信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49178810"
 ## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>基础知识：Visual Studio 和 Xamarin 环境概述  
  *5-15 分钟*  
   
--   将使用具备 Visual Studio 和 Xamarin 的 Windows 计算机完成大部分工作。 将在此计算机上直接构建 Windows 和 Android 应用，然后在设备或仿真程序上运行和调试这些应用。 你还将通过 Mac 远程生成、运行和调试 iOS 应用。 Windows 计算机上的 Visual Studio 还可连接到 iOS 情节提要设计器和 iOS 模拟器。  
+- 将使用具备 Visual Studio 和 Xamarin 的 Windows 计算机完成大部分工作。 将在此计算机上直接构建 Windows 和 Android 应用，然后在设备或仿真程序上运行和调试这些应用。 你还将通过 Mac 远程生成、运行和调试 iOS 应用。 Windows 计算机上的 Visual Studio 还可连接到 iOS 情节提要设计器和 iOS 模拟器。  
   
--   安装了 Xcode 和 Xamarin 的 Mac 将做为 iOS 应用的生成/签名主机和运行时环境。 不再使用 Windows 计算机上的 Visual Studio，而是转由此 Mac 构建 iOS；通过 Visual Studio 调试 iOS 应用时，它将在 Mac 的 iOS 模拟器上运行，或者在连接到该 Mac 的受限设备上直接运行。 在本例中，你将与 Mac 上或其周边的应用程序进行交互，并在 Visual Studio 中进行调试体验。  
+- 安装了 Xcode 和 Xamarin 的 Mac 将做为 iOS 应用的生成/签名主机和运行时环境。 不再使用 Windows 计算机上的 Visual Studio，而是转由此 Mac 构建 iOS；通过 Visual Studio 调试 iOS 应用时，它将在 Mac 的 iOS 模拟器上运行，或者在连接到该 Mac 的受限设备上直接运行。 在本例中，你将与 Mac 上或其周边的应用程序进行交互，并在 Visual Studio 中进行调试体验。  
   
- 下面阐明了这些关系，你还可以在 [适用于 Visual Studio 的 Xamarin.iOS 简介](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com) 上阅读有关生成 iOS 应用的更多信息。  
+  下面阐明了这些关系，你还可以在 [适用于 Visual Studio 的 Xamarin.iOS 简介](http://developer.xamarin.com/guides/ios/getting_started/installation/windows/introduction_to_xamarin_ios_for_visual_studio/) (xamarin.com) 上阅读有关生成 iOS 应用的更多信息。  
   
- ![Xamarin 环境中 Windows 与 Mac 开发计算机之间的关系](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
+  ![Xamarin 环境中 Windows 与 Mac 开发计算机之间的关系](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
 ## <a name="essentials-how-projects-are-structured"></a>基础知识：如何构造项目  
  *10-30 分钟*  
@@ -64,15 +64,15 @@ ms.locfileid: "49178810"
   
  你无需预先决定使用哪种方法；可以使用 Xamarin 本机与 Xamarin.Forms 的组合来实现应用：  
   
--   使用 Xamarin.Forms 生成可跨平台提供相同 UI 和功能（例如登录、联系人窗体和搜索结果）的通用屏幕。  
+- 使用 Xamarin.Forms 生成可跨平台提供相同 UI 和功能（例如登录、联系人窗体和搜索结果）的通用屏幕。  
   
--   使用 Xamarin.Forms 中的各种自定义功能在每个平台上的基础上调整 UI。 其中包括既可通过代码又可通过 XAML 使用的 OnPlatform API，用于创建自定义视图、扩展现有呈现器以及创建自定义呈现器。  
+- 使用 Xamarin.Forms 中的各种自定义功能在每个平台上的基础上调整 UI。 其中包括既可通过代码又可通过 XAML 使用的 OnPlatform API，用于创建自定义视图、扩展现有呈现器以及创建自定义呈现器。  
   
--   如有必要，使用 Xamarin 本机构建屏幕，构建的屏幕使用每个平台唯一的 UI 特性（例如使用本机相机捕获与图像操作的屏幕）。  
+- 如有必要，使用 Xamarin 本机构建屏幕，构建的屏幕使用每个平台唯一的 UI 特性（例如使用本机相机捕获与图像操作的屏幕）。  
   
- 我们建议始终从 Xamarin.Forms 解决方案开始设置跨平台共享的 UI 代码，并使用自定义功能进行特定于平台的调整。 如果需要完全特定于平台的屏幕，你可以使用 Xamarin 本机单独添加它们。  
+  我们建议始终从 Xamarin.Forms 解决方案开始设置跨平台共享的 UI 代码，并使用自定义功能进行特定于平台的调整。 如果需要完全特定于平台的屏幕，你可以使用 Xamarin 本机单独添加它们。  
   
- 了解更多信息：  
+  了解更多信息：  
   
 1.  [Xamarin.Forms](http://developer.xamarin.com/guides/cross-platform/xamarin-forms/) (xamarin.com) 提供了 Xamarin.Forms 与本机 UI 层（即 Xamarin.iOS 和 Xamarin.Android）的简要概述以及各自的利弊。  
   

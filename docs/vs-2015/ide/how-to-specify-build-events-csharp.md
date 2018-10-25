@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e4f0a5198f1f8c402fda54f448f3c9b520baabfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b645d51594cbb507ea0e6bb27a00eea21e73b7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872013"
 ---
 # <a name="how-to-specify-build-events-c"></a>如何：指定生成事件 (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,75 +78,75 @@ ms.locfileid: "49297285"
   
 #### <a name="to-create-an-exe-command-to-change-the-application-manifest"></a>创建 .exe 命令以更改应用程序清单  
   
-1.  为命令创建控制台应用程序。 在“文件”菜单中，指向“新建”，然后单击“项目”。  
+1. 为命令创建控制台应用程序。 在“文件”菜单中，指向“新建”，然后单击“项目”。  
   
-2.  在“新建项目”对话框中，展开“Visual C#”，单击“Windows”，然后单击“控制台应用程序”模板。 将项目命名为 `ChangeOSVersionCS`。  
+2. 在“新建项目”对话框中，展开“Visual C#”，单击“Windows”，然后单击“控制台应用程序”模板。 将项目命名为 `ChangeOSVersionCS`。  
   
-3.  在 Program.cs 中，将以下行添加到文件顶部的其他 `using` 语句：  
+3. 在 Program.cs 中，将以下行添加到文件顶部的其他 `using` 语句：  
   
-    ```  
-    using System.Xml;  
-    ```  
+   ```  
+   using System.Xml;  
+   ```  
   
-4.  在 `ChangeOSVersionCS` 命名空间中，将 `Program` 类实现替换为以下代码：  
+4. 在 `ChangeOSVersionCS` 命名空间中，将 `Program` 类实现替换为以下代码：  
   
-    ```  
-    class Program  
-    {  
-       /// <summary>  
-       /// This function will set the minimum operating system version for a ClickOnce application.  
-       /// </summary>  
-       /// <param name="args">  
-       /// Command Line Arguments:  
-       /// 0 - Path to application manifest (.exe.manifest).  
-       /// 1 - Version of OS  
-       ///</param>  
-       static void Main(string[] args)  
-       {  
-          string applicationManifestPath = args[0];  
-          Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
+   ```  
+   class Program  
+   {  
+      /// <summary>  
+      /// This function will set the minimum operating system version for a ClickOnce application.  
+      /// </summary>  
+      /// <param name="args">  
+      /// Command Line Arguments:  
+      /// 0 - Path to application manifest (.exe.manifest).  
+      /// 1 - Version of OS  
+      ///</param>  
+      static void Main(string[] args)  
+      {  
+         string applicationManifestPath = args[0];  
+         Console.WriteLine("Application Manifest Path: " + applicationManifestPath);  
   
-          // Get version name.  
-          Version osVersion = null;  
-          if (args.Length >=2 ){  
-             osVersion = new Version(args[1]);  
-          }else{  
-             throw new ArgumentException("OS Version not specified.");  
-          }  
-          Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
+         // Get version name.  
+         Version osVersion = null;  
+         if (args.Length >=2 ){  
+            osVersion = new Version(args[1]);  
+         }else{  
+            throw new ArgumentException("OS Version not specified.");  
+         }  
+         Console.WriteLine("Desired OS Version: " + osVersion.ToString());  
   
-          XmlDocument document;  
-          XmlNamespaceManager namespaceManager;  
-          namespaceManager = new XmlNamespaceManager(new NameTable());  
-          namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
-          namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
+         XmlDocument document;  
+         XmlNamespaceManager namespaceManager;  
+         namespaceManager = new XmlNamespaceManager(new NameTable());  
+         namespaceManager.AddNamespace("asmv1", "urn:schemas-microsoft-com:asm.v1");  
+         namespaceManager.AddNamespace("asmv2", "urn:schemas-microsoft-com:asm.v2");  
   
-          document = new XmlDocument();  
-          document.Load(applicationManifestPath);  
+         document = new XmlDocument();  
+         document.Load(applicationManifestPath);  
   
-          string baseXPath;  
-          baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
+         string baseXPath;  
+         baseXPath = "/asmv1:assembly/asmv2:dependency/asmv2:dependentOS/asmv2:osVersionInfo/asmv2:os";  
   
-          // Change minimum required operating system version.  
-          XmlNode node;  
-          node = document.SelectSingleNode(baseXPath, namespaceManager);  
-          node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
-          node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
-          node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
-          node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
+         // Change minimum required operating system version.  
+         XmlNode node;  
+         node = document.SelectSingleNode(baseXPath, namespaceManager);  
+         node.Attributes["majorVersion"].Value = osVersion.Major.ToString();  
+         node.Attributes["minorVersion"].Value = osVersion.Minor.ToString();  
+         node.Attributes["buildNumber"].Value = osVersion.Build.ToString();  
+         node.Attributes["servicePackMajor"].Value = osVersion.Revision.ToString();  
   
-          document.Save(applicationManifestPath);  
-       }  
-    }  
-    ```  
+         document.Save(applicationManifestPath);  
+      }  
+   }  
+   ```  
   
-     此命令采用两个参数：应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 Projectname.publish），以及新的操作系统版本。  
+    此命令采用两个参数：应用程序清单的路径（即生成进程在其中创建清单的文件夹，通常为 Projectname.publish），以及新的操作系统版本。  
   
-5.  生成项目。 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+5. 生成项目。 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-6.  将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
+6. 将 .exe 文件复制到目录，例如 `C:\TEMP\ChangeOSVersionVB.exe`。  
   
- 然后，在后期生成事件中调用此命令以修改应用程序清单。  
+   然后，在后期生成事件中调用此命令以修改应用程序清单。  
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>调用后期生成事件以修改应用程序清单  
   

@@ -28,12 +28,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eea8457c988e6ce1ff5f965a0154e8f2dbe87a2e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2807fa9d0085c70e3336a5f9a0d66b28a775f4fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244421"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830595"
 ---
 # <a name="how-to-debug-native-dlls"></a>如何：调试本机 DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,29 +43,29 @@ ms.locfileid: "49244421"
   
  当调试 DLL 时，可以从以下开始调试：  
   
--   用于创建调用 DLL 的可执行文件的项目。  
+- 用于创建调用 DLL 的可执行文件的项目。  
   
- \- 或 -  
+  \- 或 -  
   
--   用于创建 DLL 本身的项目。  
+- 用于创建 DLL 本身的项目。  
   
- 如果有用于创建可执行文件的项目，则从该项目开始调试。 然后可以打开 DLL 的源文件，并在该文件中设置断点，即使它不是用于创建可执行文件的项目的一部分。 有关详细信息，请参阅[断点](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
+  如果有用于创建可执行文件的项目，则从该项目开始调试。 然后可以打开 DLL 的源文件，并在该文件中设置断点，即使它不是用于创建可执行文件的项目的一部分。 有关详细信息，请参阅[断点](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583)。  
   
- 如果从创建 DLL 的项目开始调试，则必须指定在调试 DLL 时要使用的可执行文件。  
+  如果从创建 DLL 的项目开始调试，则必须指定在调试 DLL 时要使用的可执行文件。  
   
 ### <a name="to-specify-an-executable-for-the-debug-session"></a>为调试会话指定可执行文件  
   
-1.  在中**解决方案资源管理器**，选择创建 DLL 的项目。  
+1. 在中**解决方案资源管理器**，选择创建 DLL 的项目。  
   
-2.  从**视图**菜单中，选择**属性页**。  
+2. 从**视图**菜单中，选择**属性页**。  
   
-3.  在中**属性页**对话框中，打开**配置属性**文件夹，然后选择**调试**类别。  
+3. 在中**属性页**对话框中，打开**配置属性**文件夹，然后选择**调试**类别。  
   
-4.  在中**命令**框中，指定容器的路径名称。 例如，C:\Program Files\MyApplication\MYAPP.EXE。  
+4. 在中**命令**框中，指定容器的路径名称。 例如，C:\Program Files\MyApplication\MYAPP.EXE。  
   
-5.  在中**命令参数**框中，指定可执行文件的任何必需参数。  
+5. 在中**命令参数**框中，指定可执行文件的任何必需参数。  
   
- 如果未指定中的可执行文件_项目_**属性页**对话框中，[调试会话对话框可执行文件](../debugger/executable-for-debugging-session-dialog-box.md)启动调试时出现。  
+   如果未指定中的可执行文件_项目_**属性页**对话框中，[调试会话对话框可执行文件](../debugger/executable-for-debugging-session-dialog-box.md)启动调试时出现。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

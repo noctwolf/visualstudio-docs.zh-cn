@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 6e5e6b90350aa16d4e0ffee04673a1aa1063cded
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 3409bca77605bd55d0de15b38eb4812743af813e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057094"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836341"
 ---
 # <a name="setup-visual-studio-for-mac-tools-for-unity"></a>设置 Visual Studio for Mac Tools for Unity
 
@@ -57,11 +57,11 @@ ms.locfileid: "37057094"
 
 1. 在 Visual Studio 菜单中，选择“扩展...”。
 
-  ![选择扩展](media/setup-vsmac-tools-unity-image1.png)
+   ![选择扩展](media/setup-vsmac-tools-unity-image1.png)
 
-1. 展开“游戏开发”部分，确认 Visual Studio for Mac Tools for Unity。
+2. 展开“游戏开发”部分，确认 Visual Studio for Mac Tools for Unity。
 
-  ![查看 Unity 条目](media/setup-vsmac-tools-unity-image2.png)
+   ![查看 Unity 条目](media/setup-vsmac-tools-unity-image2.png)
 
 ## <a name="configure-unity-for-use-with-visual-studio-for-mac"></a>配置用于 Visual Studio for Mac 的 Unity
 
@@ -69,16 +69,16 @@ ms.locfileid: "37057094"
 
 1. 从 Unity 菜单选择“首选项...”。
 
-  ![选择首选项](media/setup-vsmac-tools-unity-image4.png)
+   ![选择首选项](media/setup-vsmac-tools-unity-image4.png)
 
-1. 在“首选项”对话框中，选择“外部工具”选项卡。
+2. 在“首选项”对话框中，选择“外部工具”选项卡。
 
-1. 从“外部脚本编辑器”下拉列表中，选择“Visual Studio”（如果列出此项），否则选择“浏览...”。
+3. 从“外部脚本编辑器”下拉列表中，选择“Visual Studio”（如果列出此项），否则选择“浏览...”。
 
-  ![选择 Visual Studio](media/setup-vsmac-tools-unity-image5.png)
+   ![选择 Visual Studio](media/setup-vsmac-tools-unity-image5.png)
 
-1. 如果已选择“浏览...”，导航到“应用程序目录”，选择“Visual Studio”，然后单击“打开”。
+4. 如果已选择“浏览...”，导航到“应用程序目录”，选择“Visual Studio”，然后单击“打开”。
 
-  ![选择“打开”](media/setup-vsmac-tools-unity-image6.png)
+   ![选择“打开”](media/setup-vsmac-tools-unity-image6.png)
 
-1. 在“外部脚本编辑器”列表中选择 Visual Studio 之后，关闭首选项对话框完成配置流程。
+5. 在“外部脚本编辑器”列表中选择 Visual Studio 之后，关闭首选项对话框完成配置流程。

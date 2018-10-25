@@ -14,17 +14,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb8e0dca8293d5d5e853dde19e0c411cfd3e4e63
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 77fb94e702615d0d27ce2587c034000f6c4b3e3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495292"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905098"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 键绑定元素指定的命令的键盘快捷方式。  
   
- 命令可以具有与之关联的单个和双键绑定。 单个键绑定的一个示例是**Ctrl**+**S**有关**保存**命令。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是**Ctrl * +** K **，** Ctrl**+** K * * 若要设置书签。  
+ 命令可以具有与之关联的单个和双键绑定。 单个键绑定的一个示例是**Ctrl**+**S**有关**保存**命令。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是<strong>Ctrl*+</strong>K<strong>，</strong>Ctrl<strong>+</strong>K** 若要设置书签。  
   
 ## <a name="syntax"></a>语法  
   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaframedata:: Get_addressoffset |Microsoft 文档'
+title: 'Idiaframedata:: Get_addressoffset |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d515a6309e0f9c1b7dd3f8cefe67a78666b0b3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6ea56af689d856cbda1e1207134a8e5edcd87952
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31459192"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853904"
 ---
 # <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-检索框架的代码地址偏移量的部分。  
+检索在框架的代码地址偏移量的部分。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,10 +34,10 @@ HRESULT get_addressOffset (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回为框架的代码地址的偏移量的部分。  
+ [out]返回框架的代码地址的偏移量的部分。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果不支持此属性。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`如果此属性不受支持。 否则，返回错误代码。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

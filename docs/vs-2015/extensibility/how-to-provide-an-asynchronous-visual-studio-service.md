@@ -10,12 +10,12 @@ ms.assetid: 0448274c-d3d2-4e12-9d11-8aca78a1f3f5
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1982162500ff21f754a15cf1f5aebe3117172310
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1938a3a8b5b0eb3c0cc7b062d6d43c4e869397eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851967"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供异步 Visual Studio 服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,11 +89,11 @@ ms.locfileid: "49185661"
 ## <a name="registering-a-service"></a>注册服务  
  若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到提供的服务包。 有两个区别注册同步服务：  
   
--   如果要自动加载包，必须添加<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>BackgroundLoad 值的属性。 有关自动加载 Vspackage 的详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
+- 如果要自动加载包，必须添加<xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>BackgroundLoad 值的属性。 有关自动加载 Vspackage 的详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。  
   
--   必须添加**AllowsBackgroundLoading = true**字段<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>。 有关 PackageRegistrationAttribute 详细信息，请参阅[注册和注销 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
+- 必须添加**AllowsBackgroundLoading = true**字段<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>。 有关 PackageRegistrationAttribute 详细信息，请参阅[注册和注销 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
- 下面是使用异步服务注册 AsyncPackage 的示例::  
+  下面是使用异步服务注册 AsyncPackage 的示例::  
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findChildrenExByAddr |Microsoft 文档
+title: IDiaSymbol::findChildrenExByAddr |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0ec0f91cc8a16ab7078715872057c9cbe3fd3d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7398f3afdf8a6895d0feaec35ca33b95e9054060
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466619"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834859"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
-检索位于指定地址有效的符号的子级。  
+检索在指定地址有效的符号的子级。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,13 +38,13 @@ HRESULT findChildrenExByAddr (
   
 #### <a name="parameters"></a>参数  
  `symtag`  
- [in]指定要检索的子级的符号标记中定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)。 设置为`SymTagNull`为要检索的所有子级。  
+ [in]指定要检索的子对象的符号标记中定义[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)。 设置为`SymTagNull`要检索的所有子级。  
   
  `name`  
- [in]指定要检索的子级的名称。 设置为`NULL`为要检索的所有子级。  
+ [in]指定要检索的子对象的名称。 设置为`NULL`要检索的所有子级。  
   
  `compareFlags`  
- [in]指定要应用于名称匹配的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
+ [in]指定要应用到匹配的名称的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
   
  `address`  
  [in]符号的地址。  
@@ -53,10 +53,10 @@ HRESULT findChildrenExByAddr (
  [out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号的列表的对象。  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`如果至少一个子级的符号找，或返回`S_FALSE`如果不发现任何子级; 否则，返回错误代码。  
+ 返回`S_OK`如果至少一个子级的符号已找到，或者返回`S_FALSE`是否不发现了任何子级; 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 返回的本地符号包括实时范围信息。  
+ 返回本地符号包括实时范围信息。  
   
 ## <a name="requirements"></a>要求  
  标头： Dia2.h  

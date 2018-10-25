@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 0a9d3b89e91e0540766621f0889a12482291740a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175261"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894516"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ ms.locfileid: "49175261"
   
  你的业务和你的项目还处理特殊组无法与 DSL 所述的概念。 例如，可以定义一个这些应用程序的 DSL:  
   
--   在网站上的导航路径的计划。  
+- 在网站上的导航路径的计划。  
   
--   电子组件的绑定关系图。  
+- 电子组件的绑定关系图。  
   
--   传送带和行李处理设备的机场的网络。  
+- 传送带和行李处理设备的机场的网络。  
   
- 在设计 DSL 时，您定义*域类*为每个域，如网页、 lamp 或机场签入服务台中的重要概念。 您定义*域关系*如超链接、 网络或传送带将概念连接在一起。  
+  在设计 DSL 时，您定义*域类*为每个域，如网页、 lamp 或机场签入服务台中的重要概念。 您定义*域关系*如超链接、 网络或传送带将概念连接在一起。  
   
- 你的 DSL 的用户创建*模型。* 模型是*实例*的 DSL。 例如，它们描述了特定的 Web 站点或特定设备或行李处理系统中特定机场的绑定。  
+  你的 DSL 的用户创建*模型。* 模型是*实例*的 DSL。 例如，它们描述了特定的 Web 站点或特定设备或行李处理系统中特定机场的绑定。  
   
- 作为关系图或 Windows 窗体，用户可以查看模型。 模型可以还查看作为 XML 使用，这是存储方式。 定义 DSL 时，您定义的每个域类和关系实例在用户屏幕上的显示方式。 典型的 DSL 显示为图标或矩形由箭头连接的集合。  
+  作为关系图或 Windows 窗体，用户可以查看模型。 模型可以还查看作为 XML 使用，这是存储方式。 定义 DSL 时，您定义的每个域类和关系实例在用户屏幕上的显示方式。 典型的 DSL 显示为图标或矩形由箭头连接的集合。  
   
- 下图显示在关系图 DSL 的小型模型：  
+  下图显示在关系图 DSL 的小型模型：  
   
- ![都铎王朝家谱模型](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
+  ![都铎王朝家谱模型](../modeling/media/tudor-familytreemodel.png "Tudor_FamilyTreeModel")  
   
 ## <a name="what-you-can-do-with-dsls"></a>您可以使用 Dsl 做什么  
  DSL 的典型的应用程序是生成程序代码或其他项目。 在定义 DSL 时，可以定义*文本模板*，读取 DSL 模型并生成文本文件。  

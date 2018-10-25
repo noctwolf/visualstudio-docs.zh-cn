@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Clone |Microsoft 文档'
+title: 'Idiaenuminjectedsources:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 661013b1fd709eb316b961b1db5fc30b3f4c8e66
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bca7bd10b7092654d1bd7c7bf8c0f0f18ee72a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468549"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950984"
 ---
 # <a name="idiaenuminjectedsourcesclone"></a>IDiaEnumInjectedSources::Clone
-创建包含与当前的枚举器相同的枚举状态的枚举。  
+创建一个包含当前枚举数形式的相同枚举状态的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>参数  
  `ppenum`  
- [out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含重复的枚举数。 插入的源不会出现重复的仅枚举数。  
+ [out]返回[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)对象，其中包含重复的枚举器。 未复制的插入的源，仅枚举器。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

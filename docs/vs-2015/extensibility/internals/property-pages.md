@@ -17,12 +17,12 @@ ms.assetid: b9b3e6e8-1e30-4c89-9862-330265dcf38c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3f68dc7cc470e4244616c6e9a3cb41bdeb8f9103
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2ce17deeb1af3054dfd87a42f0b8114c981d69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868776"
 ---
 # <a name="property-pages"></a>属性页
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,46 +45,46 @@ ms.locfileid: "49181060"
   
  有只有两个顶级类别可在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]属性页：  
   
--   通用属性，将显示所选的对象或对象的独立于配置的信息。 因此，选中一个通用属性子类别后，在对话框顶部的配置、 平台和配置管理器选项不可用。  
+- 通用属性，将显示所选的对象或对象的独立于配置的信息。 因此，选中一个通用属性子类别后，在对话框顶部的配置、 平台和配置管理器选项不可用。  
   
--   配置属性，其中包含与解决方案或项目的调试、 优化和生成参数相关的配置相关信息。  
+- 配置属性，其中包含与解决方案或项目的调试、 优化和生成参数相关的配置相关信息。  
   
- 无法创建任何其他的顶级类别，但可以选择不希望显示的实现中的一个或另一个`IVsPropertyPage`。 如果，例如，你没有要显示的对象的任何独立于配置的属性，您可以选择不希望显示的通用属性类别。 如果显示通用属性`ISpecifyPropertyPages`实现时，从项的浏览对象和配置属性实现`ISpecifyPropertyPages`中的配置对象 (对象实现`IVsCfg`， `IVsProjectCfg`，及相关接口）。  
+  无法创建任何其他的顶级类别，但可以选择不希望显示的实现中的一个或另一个`IVsPropertyPage`。 如果，例如，你没有要显示的对象的任何独立于配置的属性，您可以选择不希望显示的通用属性类别。 如果显示通用属性`ISpecifyPropertyPages`实现时，从项的浏览对象和配置属性实现`ISpecifyPropertyPages`中的配置对象 (对象实现`IVsCfg`， `IVsProjectCfg`，及相关接口）。  
   
- 每个类别成为顶级类别下显示表示单独的属性页。 类别和子类别可用项对话框中的由实现`ISpecifyPropertyPages`和`IVsPropertyPage`。  
+  每个类别成为顶级类别下显示表示单独的属性页。 类别和子类别可用项对话框中的由实现`ISpecifyPropertyPages`和`IVsPropertyPage`。  
   
- `IDispatch` 选择容器中的某些项具有属性显示在属性页实现的对象`ISpecifyPropertyPages`枚举类 Id 的列表。 类 Id 作为变量传递到`ISpecifyPropertyPages`和用于实例化的属性页。 类 Id 的列表也将传递到`IVsPropertyPage`创建对话框的左侧的树状结构。 然后，此属性页的信息传递回`IDispatch`对象，它实现`ISpecifyPropertyPages`和填充的每个页的信息。  
+  `IDispatch` 选择容器中的某些项具有属性显示在属性页实现的对象`ISpecifyPropertyPages`枚举类 Id 的列表。 类 Id 作为变量传递到`ISpecifyPropertyPages`和用于实例化的属性页。 类 Id 的列表也将传递到`IVsPropertyPage`创建对话框的左侧的树状结构。 然后，此属性页的信息传递回`IDispatch`对象，它实现`ISpecifyPropertyPages`和填充的每个页的信息。  
   
- 使用浏览对象的属性进行检索`IDispatch`选择容器中每个对象。  
+  使用浏览对象的属性进行检索`IDispatch`选择容器中每个对象。  
   
- 实现`Help::DisplayTopicFromF1Keyword`中你的 VSPackage 提供的功能的帮助按钮。  
+  实现`Help::DisplayTopicFromF1Keyword`中你的 VSPackage 提供的功能的帮助按钮。  
   
- 有关详细信息，请参阅`IDispatch`和`ISpecifyPropertyPages`MSDN 库中。  
+  有关详细信息，请参阅`IDispatch`和`ISpecifyPropertyPages`MSDN 库中。  
   
- 第二个属性页中显示的类型的示例主机窗体的属性网格中，如以下屏幕截图中所示。  
+  第二个属性页中显示的类型的示例主机窗体的属性网格中，如以下屏幕截图中所示。  
   
- ![VC 属性设置页面](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
-使用属性网格属性页对话框  
+  ![VC 属性设置页面](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages")  
+  使用属性网格属性页对话框  
   
- 接口`IVSMDPropertyBrowser`和`IVSMDPropertyGrid`（vsmanaged.h 中声明） 用于创建和填充属性网格中的对话框或窗口。  
+  接口`IVSMDPropertyBrowser`和`IVSMDPropertyGrid`（vsmanaged.h 中声明） 用于创建和填充属性网格中的对话框或窗口。  
   
- 从以前版本的项目的体系结构发生了显著[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 具体而言，这一概念的哪个项目处于活动状态已更改。 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，不存在某个活动项目的概念。 在上一个开发环境中，活动的项目是项目的生成和部署命令而不考虑上下文会默认为。 现在，解决方案控制并进行仲裁的生成和部署命令将应用于哪些项目。  
+  从以前版本的项目的体系结构发生了显著[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。 具体而言，这一概念的哪个项目处于活动状态已更改。 在[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，不存在某个活动项目的概念。 在上一个开发环境中，活动的项目是项目的生成和部署命令而不考虑上下文会默认为。 现在，解决方案控制并进行仲裁的生成和部署命令将应用于哪些项目。  
   
- 现在，在某个三种不同方式中捕获什么以前是活动项目：  
+  现在，在某个三种不同方式中捕获什么以前是活动项目：  
   
--   启动项目  
+- 启动项目  
   
-     您可以指定一个项目或从解决方案的属性页中，当用户按下 F5 或从生成菜单中选择运行时将启动项目。 这的工作方式类似于意义上说，使用加粗字体其名称显示在解决方案资源管理器中的旧活动项目。  
+   您可以指定一个项目或从解决方案的属性页中，当用户按下 F5 或从生成菜单中选择运行时将启动项目。 这的工作方式类似于意义上说，使用加粗字体其名称显示在解决方案资源管理器中的旧活动项目。  
   
-     通过调用检索自动化模型中的属性作为启动项目`DTE.Solution.SolutionBuild.StartupProjects`。 在 VSPackage 中，可以调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>方法。 `IVsSolutionBuildManager` 作为服务通过提供`QueryService`SID_SVsSolutionBuildManager 上。 有关详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)并[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
+   通过调用检索自动化模型中的属性作为启动项目`DTE.Solution.SolutionBuild.StartupProjects`。 在 VSPackage 中，可以调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A>方法。 `IVsSolutionBuildManager` 作为服务通过提供`QueryService`SID_SVsSolutionBuildManager 上。 有关详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)并[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
   
--   活动解决方案生成配置  
+- 活动解决方案生成配置  
   
-     [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 具有活动解决方案配置，可通过实现自动化模型中`DTE.Solution.SolutionBuild.ActiveConfiguration`。 解决方案配置是包含一个项目配置的解决方案 （每个项目可以具有不同名称的多个平台有多个配置） 中的每个项目集合。 与解决方案的属性页的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
+   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 具有活动解决方案配置，可通过实现自动化模型中`DTE.Solution.SolutionBuild.ActiveConfiguration`。 解决方案配置是包含一个项目配置的解决方案 （每个项目可以具有不同名称的多个平台有多个配置） 中的每个项目集合。 与解决方案的属性页的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  
   
--   当前选定项目  
+- 当前选定项目  
   
-     实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>方法来检索其中的项目层次结构和项目项或所选的项。 从 DTE，您将使用`SelectedItems.SelectedItem.Project`和`SelectedItems.SelectedItem.ProjectItem`方法。 在这些核心中的标题下的示例代码[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]文档。  
+   实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A>方法来检索其中的项目层次结构和项目项或所选的项。 从 DTE，您将使用`SelectedItems.SelectedItem.Project`和`SelectedItems.SelectedItem.ProjectItem`方法。 在这些核心中的标题下的示例代码[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]文档。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>   

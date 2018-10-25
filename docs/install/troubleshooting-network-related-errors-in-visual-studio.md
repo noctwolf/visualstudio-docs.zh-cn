@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 40898b249fae9f8d13d3fd5a80eafc3c72e3e819
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865773"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -55,19 +55,19 @@ ms.locfileid: "44281086"
 
 - 如果你想通过代理使用默认凭据，则可以执行以下操作：
 
-    1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
+  1. 查找 devenv.exe.config（devenv.exe 配置文件），查找位置为：%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE 或 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE。
 
-    1. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
+  2. 在配置文件中查找 `<system.net>` 块，然后添加这个代码：
 
-        ```xml
-        <defaultProxy enabled="true" useDefaultCredentials="true">
-            <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
-        </defaultProxy>
-        ```
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress=" HYPERLINK "http://<yourproxy:port#>" http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
 
-        你必须在 `proxyaddress="<http://<yourproxy:port#>` 中为你的网络插入正确的代理地址。
+      你必须在 `proxyaddress="<http://<yourproxy:port#>` 中为你的网络插入正确的代理地址。
 
-    或
+     或
 
 - 此外，也可以按照[如何通过经身份验证的 Web 代理进行连接](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)博客文章中的说明，了解如何添加允许你使用代理的代码。
 
@@ -109,8 +109,8 @@ Visual Studio 使用传输层安全性 (TLS) 1.2 协议连接到网络资源。 
 
 - &#42;.nuget.org（用于 NuGet 连接）
 
- > [!NOTE]
- > 此列表可能未包含私人拥有的 NuGet 服务器 URL。 你可以检查在 %APPData%\Nuget\NuGet.Config 中使用的 NuGet 服务器。
+  > [!NOTE]
+  > 此列表可能未包含私人拥有的 NuGet 服务器 URL。 你可以检查在 %APPData%\Nuget\NuGet.Config 中使用的 NuGet 服务器。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 082471c04bd8354e392a075f1ff559961cd402ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14517a3f941ae7d177c876a48a400113c775fdb2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194113"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897870"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,52 +33,52 @@ ms.locfileid: "49194113"
 ## <a name="requirements"></a>要求  
  以下是除图形诊断要求之外使用 GPU 使用情况工具的要求。  
   
--   支持必要计时规范的 GPU 和驱动程序。  
+- 支持必要计时规范的 GPU 和驱动程序。  
   
-    > [!NOTE]
-    >  有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
+  > [!NOTE]
+  >  有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
   
- 有关图形诊断要求的详细信息，请参阅[入门](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
+  有关图形诊断要求的详细信息，请参阅[入门](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="using-the-gpu-usage-tool"></a>使用 GPU 使用情况工具  
  在 GPU 使用情况工具下运行应用时，Visual Studio 将创建一个诊断会话，以图形方式实时显示有关应用的呈现性能和 GPU 利用率的高级信息。  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>启动 GPU 使用情况工具：  
   
-1.  在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
+1. 在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
   
-2.  在“性能和诊断”中心，选中“GPU 使用情况”旁的复选框。 （可选）选中你希望使用的其他工具旁的复选框。 你可以同时运行几个性能和诊断工具，以便对应用的性能有一个更全面的了解。  
+2. 在“性能和诊断”中心，选中“GPU 使用情况”旁的复选框。 （可选）选中你希望使用的其他工具旁的复选框。 你可以同时运行几个性能和诊断工具，以便对应用的性能有一个更全面的了解。  
   
-     ![选择要使用的诊断工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
+    ![选择要使用的诊断工具。](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  并非所有性能和诊断工具都可以同时使用。  
+   > [!NOTE]
+   >  并非所有性能和诊断工具都可以同时使用。  
   
-3.  选择“性能和诊断”中心底部的蓝色“启动”按钮，以便在所选工具下运行应用。  
+3. 选择“性能和诊断”中心底部的蓝色“启动”按钮，以便在所选工具下运行应用。  
   
- 实时显示的高级信息包括帧时间、帧速率和 GPU 利用率。 每条信息都显示在独立的图形中，但使用公共的时间刻度，因此你可以轻松将它们联系在一起。  
+   实时显示的高级信息包括帧时间、帧速率和 GPU 利用率。 每条信息都显示在独立的图形中，但使用公共的时间刻度，因此你可以轻松将它们联系在一起。  
   
- “帧时间(毫秒)”和“每秒帧数(FPS)”图形包含两条红色水平线，用于表示每秒 60 帧和 30 帧的性能目标。 在“帧时间”图形中，图形低于红线表示应用超过性能目标，高于红线表示未达到性能目标。 在“每秒帧数”图形中则相反，图形高于红线表示你的应用超过性能目标，低于红线表示未达到性能目标。 这些图形主要用于对你应用的性能有一个大致的了解，并确定你可能希望调查的减速情况，例如帧速率突降或 GPU 利用率陡升。  
+   “帧时间(毫秒)”和“每秒帧数(FPS)”图形包含两条红色水平线，用于表示每秒 60 帧和 30 帧的性能目标。 在“帧时间”图形中，图形低于红线表示应用超过性能目标，高于红线表示未达到性能目标。 在“每秒帧数”图形中则相反，图形高于红线表示你的应用超过性能目标，低于红线表示未达到性能目标。 这些图形主要用于对你应用的性能有一个大致的了解，并确定你可能希望调查的减速情况，例如帧速率突降或 GPU 利用率陡升。  
   
- 当你的应用在 GPU 使用情况工具下运行时，诊断会话还会收集有关在 GPU 上执行的图形事件的详细信息。 此信息用于生成有关应用如何利用硬件的更精细报告。 由于从收集的信息生成此报告需要一些时间，因此仅当诊断会话完成信息收集之后此报告才可用。  
+   当你的应用在 GPU 使用情况工具下运行时，诊断会话还会收集有关在 GPU 上执行的图形事件的详细信息。 此信息用于生成有关应用如何利用硬件的更精细报告。 由于从收集的信息生成此报告需要一些时间，因此仅当诊断会话完成信息收集之后此报告才可用。  
   
- 如果希望进一步了解性能或利用率问题，请停止收集性能信息，以便生成报告。  
+   如果希望进一步了解性能或利用率问题，请停止收集性能信息，以便生成报告。  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>生成和查看 GPU 使用情况报告：  
   
-1.  在诊断会话窗口底部，选择“停止收集”链接，或按左上角的“停止”。  
+1. 在诊断会话窗口底部，选择“停止收集”链接，或按左上角的“停止”。  
   
-     ![收集 GPU 和 CPU 计时信息。](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![收集 GPU 和 CPU 计时信息。](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  在报告的顶部，从显示要调查问题的图形中选择一个。 所选内容最长可达 3 秒，较长部分将被截尾。  
+2. 在报告的顶部，从显示要调查问题的图形中选择一个。 所选内容最长可达 3 秒，较长部分将被截尾。  
   
-     ![收集之后，选择范围以查看详细信息](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![收集之后，选择范围以查看详细信息](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  在报告底部的“...单击此处查看该范围内的 GPU 使用情况详细信息”消息中，选择“查看详细信息”链接，以查看所选内容的详细时间线。  
+3. 在报告底部的“...单击此处查看该范围内的 GPU 使用情况详细信息”消息中，选择“查看详细信息”链接，以查看所选内容的详细时间线。  
   
-     ![收集之后，选定范围](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![收集之后，选定范围](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
- 这将打开一个新的标签页式文档，文档中包含报告。 GPU 使用情况报告可帮助你了解图形事件在 CPU 上的启动时间、到达 GPU 的时间以及 GPU 执行该事件所花费的时间。 此信息可以帮助你确定瓶颈和机遇，以提高代码的并行度。  
+   这将打开一个新的标签页式文档，文档中包含报告。 GPU 使用情况报告可帮助你了解图形事件在 CPU 上的启动时间、到达 GPU 的时间以及 GPU 执行该事件所花费的时间。 此信息可以帮助你确定瓶颈和机遇，以提高代码的并行度。  
   
 ## <a name="using-the-gpu-usage-report"></a>使用 GPU 使用情况报告  
  GPU 使用情况报告的上半部分显示 CPU 处理活动、GPU 呈现活动以及 GPU 复制活动的时间线。 这些时间线由浅灰色的竖线分隔，竖线表示显示器的垂直同步。竖线的频率与从中收集 GPU 使用情况数据的其中一个显示器（使用“显示”下拉列表选择）的刷新率一致。 由于显示器的刷新率可能高于应用的性能目标，因此垂直同步与你希望达到的帧速率不一定具有一一对应关系。 若要达到其性能目标，应用必须完成所有处理、执行呈现，并对目标帧速率进行 Present() 调用，但在调用 Present() 后的下一个垂直同步之前，将不会显示呈现的帧。  

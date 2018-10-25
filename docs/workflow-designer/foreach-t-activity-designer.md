@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d506be0fbee9ad94e4ed8b97665665bc045ed130
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 99531f690e9dcbd1b35453acd17f1c52b8afb1d2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31970434"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836211"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt;活动设计器
 
@@ -28,10 +28,10 @@ ms.locfileid: "31970434"
 下表列出最有用的 <xref:System.Activities.Statements.ForEach%601> 活动属性并说明如何在设计器中使用它们。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ForEach%601> 活动的友好名称。 默认值是 ForEach < Int32\>。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|要循环访问的项的集合。 若要设置<xref:System.Activities.Statements.ForEach%601.Values%2A>，键入在 Visual Basic 表达式**值**框**ForEach < T\>** 活动设计器或在属性网格中。|
-|*TypeArgument*|True|中的项的类型<xref:System.Activities.Statements.ForEach%601.Values%2A>由泛型参数指定的集合*T*。默认情况下， *TypeArgument*设置为**Int32**。 若要更改类型，将更改的值*TypeArgument*在属性网格中的组合框。|
+|-|--------------|-|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ForEach%601> 活动的友好名称。 默认值为 ForEach < Int32\>。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.ForEach%601.Values%2A>|True|要循环访问的项的集合。 若要设置<xref:System.Activities.Statements.ForEach%601.Values%2A>，键入 Visual Basic 表达式**值**框**ForEach < T\>** 活动设计器或在属性网格中。|
+|*TypeArgument*|True|中的项的类型<xref:System.Activities.Statements.ForEach%601.Values%2A>由泛型参数指定的集合*T*。默认情况下*TypeArgument*设置为**Int32**。 若要更改的类型，更改的值*TypeArgument*属性网格中的组合框。|
 
 默认情况下，循环迭代器称为**项**。 可在 <xref:System.Activities.Statements.ForEach%601> 活动设计器中更改迭代器变量的名称。 循环迭代器可在 <xref:System.Activities.Statements.ForEach%601> 活动的子级中的表达式中使用。
 

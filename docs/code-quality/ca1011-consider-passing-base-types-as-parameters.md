@@ -20,12 +20,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44077dbe839fe6ce6b369f8d8b3b828bdb982a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b968a94b76f0b2161eef84fdad2cf01288165e65
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549425"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899404"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：考虑将基类型作为参数传递
 
@@ -37,16 +37,20 @@ ms.locfileid: "45549425"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 方法声明中包含的形参是一个派生的类型，且该方法调用只有参数的基类型的成员。
+
+方法声明中包含的形参是一个派生的类型，且该方法调用只有参数的基类型的成员。
 
 ## <a name="rule-description"></a>规则说明
- 在方法声明中将基类型指定为参数时，可以将派生自基类型的任何类型作为相应的自变量传递给方法。 在方法体中使用参数时，执行的特定方法取决于自变量的类型。 如果不需要提供的派生类型的其他功能，则使用的基类型可以得到更广泛使用的方法。
+
+在方法声明中将基类型指定为参数时，可以将派生自基类型的任何类型作为相应的自变量传递给方法。 在方法体中使用参数时，执行的特定方法取决于自变量的类型。 如果不需要提供的派生类型的其他功能，则使用的基类型可以得到更广泛使用的方法。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复此规则的冲突，请更改与其基类型的参数类型。
+
+若要修复此规则的冲突，请更改与其基类型的参数类型。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 则可以安全地禁止显示此规则的警告
+
+则可以安全地禁止显示此规则的警告
 
 - 如果该方法需要提供的派生类型的特定功能
 
@@ -54,14 +58,16 @@ ms.locfileid: "45549425"
 
 - 若要强制实施仅派生的类型或派生程度更大的类型，传递给方法。
 
- 在这些情况下，代码将由于强类型检查由编译器和运行时提供更可靠。
+在这些情况下，代码将由于强类型检查由编译器和运行时提供更可靠。
 
 ## <a name="example"></a>示例
- 下面的示例演示一种方法， `ManipulateFileStream`，，可仅与<xref:System.IO.FileStream>对象，与此规则冲突。 第二种方法， `ManipulateAnyStream`，通过替换来满足该规则<xref:System.IO.FileStream>通过使用参数<xref:System.IO.Stream>。
 
- [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
- [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
+下面的示例演示一种方法， `ManipulateFileStream`，，可仅与<xref:System.IO.FileStream>对象，与此规则冲突。 第二种方法， `ManipulateAnyStream`，通过替换来满足该规则<xref:System.IO.FileStream>通过使用参数<xref:System.IO.Stream>。
+
+[!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
+[!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
+[!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]
 
 ## <a name="related-rules"></a>相关的规则
- [CA1059：成员不应公开某些具体类型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+
+[CA1059：成员不应公开某些具体类型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

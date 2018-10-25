@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 409133c173f497b1f21b36c7d8c4c89561c0aa15
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171452"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922637"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 类型应只扩展 APTCA 基类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AptcaTypesShouldOnlyExtendAptcaBaseTypes|
@@ -44,15 +45,15 @@ ms.locfileid: "49171452"
 
  APTCA 属性是完全受信任的程序集，并在程序集中的类型继承自的类型不允许部分受信任调用方，则可能会产生安全问题。 如果两个类型`T1`并`T2`满足以下条件，则恶意调用方可以使用类型`T1`绕过的隐式完全信任继承要求保护`T2`:
 
--   `T1` 在完全受信任的程序集具有 APTCA 特性中声明的公共类型。
+- `T1` 在完全受信任的程序集具有 APTCA 特性中声明的公共类型。
 
--   `T1` 类型继承`T2`其程序集外部。
+- `T1` 类型继承`T2`其程序集外部。
 
--   `T2`程序集不具有 APTCA 特性，并且，因此，不应由部分受信任的程序集中的类型继承。
+- `T2`程序集不具有 APTCA 特性，并且，因此，不应由部分受信任的程序集中的类型继承。
 
- 部分受信任的类型`X`可以继承自`T1`，并向它授予访问权限的继承成员中声明`T2`。 因为`T2`不具有 APTCA 属性，其直接派生类型 (`T1`) 必须满足的完全信任; 继承要求`T1`具有完全信任权限，因此满足此检查。 安全风险是因为`X`不参与满足继承要求保护`T2`来自不受信任的子类化。 出于此原因，用 APTCA 特性的类型不能扩展没有该属性的类型。
+  部分受信任的类型`X`可以继承自`T1`，并向它授予访问权限的继承成员中声明`T2`。 因为`T2`不具有 APTCA 属性，其直接派生类型 (`T1`) 必须满足的完全信任; 继承要求`T1`具有完全信任权限，因此满足此检查。 安全风险是因为`X`不参与满足继承要求保护`T2`来自不受信任的子类化。 出于此原因，用 APTCA 特性的类型不能扩展没有该属性的类型。
 
- 另一个安全问题和可能是一个更常见的活动，是派生的类型 (`T1`) 可以通过编程器错误公开受保护的成员需要完全信任的类型 (`T2`)。 此操作时，不受信任调用方访问应仅供完全受信任的类型的信息。
+  另一个安全问题和可能是一个更常见的活动，是派生的类型 (`T1`) 可以通过编程器错误公开受保护的成员需要完全信任的类型 (`T2`)。 此操作时，不受信任调用方访问应仅供完全受信任的类型的信息。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  如果不需要 APTCA 特性的程序集中的冲突报告的类型，请将其删除。

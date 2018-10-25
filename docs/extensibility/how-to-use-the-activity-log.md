@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b5647a62064857bca6a6352a14fe56eff4386f9
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: fa564919abcfb4c8bd94fbaf139b69f2375deebd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825811"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何： 使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售环境中进行调试的 Vspackage。  
@@ -47,15 +47,15 @@ Vspackage 可以将消息写入活动日志。 此功能是非常适合在零售
   
 ## <a name="to-examine-the-activity-log"></a>活动日志中检查  
   
-1.  运行 Visual Studio 中使用[/log](../ide/reference/log-devenv-exe.md)命令行开关在会话期间将 ActivityLog.xml 写入到磁盘。
+1. 运行 Visual Studio 中使用[/log](../ide/reference/log-devenv-exe.md)命令行开关在会话期间将 ActivityLog.xml 写入到磁盘。
 
-2.  关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据: **%appdata%* \Microsoft\VisualStudio\15.0\ActivityLog.xml*。  
+2. 关闭 Visual Studio 后, 找到活动日志的子文件夹中的 Visual Studio 数据：  <em>*%appdata%</em>\Microsoft\VisualStudio\15.0\ActivityLog.xml*。  
   
-3.  使用任何文本编辑器打开活动日志。 以下是典型条目：  
+3. 使用任何文本编辑器打开活动日志。 以下是典型条目：  
   
-    ```  
-    Called for: Company.MyApp.MyAppPackage ...  
-    ```  
+   ```  
+   Called for: Company.MyApp.MyAppPackage ...  
+   ```  
   
 ## <a name="robust-programming"></a>可靠编程  
  活动日志是一项服务，因为活动日志是在 VSPackage 构造函数中不可用。  

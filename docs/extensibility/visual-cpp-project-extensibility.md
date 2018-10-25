@@ -11,12 +11,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76adb5df7fec7663f5c9bc1a4c84c378f0e14a82
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 2b9f8bfcaf9e6f584d4f0038ebef17daad3aa74a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135654"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850799"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统可扩展性和工具集集成
 
@@ -478,12 +478,13 @@ CPS 支持其他值的上下文类型，但它们不在 Visual c + + 项目中�
 
 `PageTemplate`属性定义了该规则中的显示方式**属性页**对话框。 该属性可以具有下列值之一：
 
-|特性|描述|
-|-|-|
-`generic`|在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml*
-`tool`|作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml*
-`debugger`|页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*调试器\_本地\_windows.xml*
-*custom*| 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml*
+
+| 特性 | 描述 |
+|------------| - |
+| `generic` | 在类别标题下一页上将显示所有属性<br/>规则可以对可见`Project`并`PropertySheet`上下文中，但不是`File`。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*general.xml* |
+| `tool` | 作为子页显示类别。<br/>规则可以在所有上下文中可见： `Project`，`PropertySheet`和`File`。<br/>仅当项目具有与项目的规则是在项目属性中可见`ItemType`中定义`Rule.DataSource`，除非中包含的规则名`ProjectTools`项组。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*clang.xml* |
+| `debugger` | 页面会显示为调试页的一部分。<br/>当前忽略类别。<br/>规则名称应匹配的调试启动程序 MEF 对象`ExportDebugger`属性。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033年*\\*调试器\_本地\_windows.xml* |
+| *custom* | 自定义模板。 模板的名称应与匹配`ExportPropertyPageUIFactoryProvider`属性的`PropertyPageUIFactoryProvider`MEF 对象。 请参阅**Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033年*\\*userMacros.xml* |
 
 如果该规则使用基于属性网格的模板之一，它可以为其属性来使用这些扩展点：
 

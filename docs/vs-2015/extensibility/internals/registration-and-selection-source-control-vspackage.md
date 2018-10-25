@@ -16,12 +16,12 @@ ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e7b6324112bed6d201ca57fd3fb5c77696a528f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bf98c263f3452e0383f5891116849e85140b763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818752"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ ms.locfileid: "49305781"
 ### <a name="registry-entries"></a>注册表项  
  源代码管理包需要三个专用 Guid:  
   
--   包 GUID： 这是包含 （在本部分中称为 ID_Package） 的源控件实现的包的主要 GUID。  
+- 包 GUID： 这是包含 （在本部分中称为 ID_Package） 的源控件实现的包的主要 GUID。  
   
--   源控件 GUID： 这是个源代码管理用于将注册 Visual Studio 源控件存根的 VSPackage 的 GUID，也可用作命令 UI 上下文的 GUID。 源代码管理 GUID 注册时源代码管理服务的 GUID。 在示例中，源控件 GUID 称为 ID_SccProvider。  
+- 源控件 GUID： 这是个源代码管理用于将注册 Visual Studio 源控件存根的 VSPackage 的 GUID，也可用作命令 UI 上下文的 GUID。 源代码管理 GUID 注册时源代码管理服务的 GUID。 在示例中，源控件 GUID 称为 ID_SccProvider。  
   
--   源控制服务 GUID： 这是专用的服务 （在本部分中称为 SID_SccPkgService） 的 Visual Studio 使用的 GUID。 除此之外，源代码管理包需要定义其他 Guid 的 Vspackage，工具窗口，依次类推。  
+- 源控制服务 GUID： 这是专用的服务 （在本部分中称为 SID_SccPkgService） 的 Visual Studio 使用的 GUID。 除此之外，源代码管理包需要定义其他 Guid 的 Vspackage，工具窗口，依次类推。  
   
- 必须由源代码管理 VSPackage 进行以下注册表项：  
+  必须由源代码管理 VSPackage 进行以下注册表项：  
   
 |项名称|条目|  
 |--------------|-------------|  
@@ -58,13 +58,13 @@ ms.locfileid: "49305781"
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 将源代码管理 VSPackage 加载时执行以下操作之一：  
   
--   （当解决方案处于源代码管理下），打开解决方案。  
+- （当解决方案处于源代码管理下），打开解决方案。  
   
-     打开解决方案或项目受源代码管理时，IDE 会导致源代码管理 VSPackage 已指定为要加载该解决方案。  
+   打开解决方案或项目受源代码管理时，IDE 会导致源代码管理 VSPackage 已指定为要加载该解决方案。  
   
--   执行任何源代码管理 VSPackage 的菜单命令。  
+- 执行任何源代码管理 VSPackage 的菜单命令。  
   
- 仅当它们实际上将会需要的任何组件应该加载 VSPackage 的源控件使用 （也称为延迟加载）。  
+  仅当它们实际上将会需要的任何组件应该加载 VSPackage 的源控件使用 （也称为延迟加载）。  
   
 ### <a name="automatic-solution-based-vspackage-swapping"></a>自动基于解决方案的 VSPackage 交换  
  你可以手动交换源代码管理 Vspackage 通过[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]**选项**对话框中的下**源代码管理**类别。 基于解决方案的包自动交换意味着打开该解决方案时，已被指定为特定解决方案的源代码管理包会自动设置为处于活动状态。 每个源代码管理包应实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetActive%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider.SetInactive%2A>。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 处理两者之间切换源代码管理插件 （实现源控件插件 API） 和源代码管理 Vspackage。  
@@ -76,15 +76,15 @@ ms.locfileid: "49305781"
 ### <a name="visual-studio-ui-for-package-selection-and-switching"></a>Visual Studio 包选择和切换用户界面  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供了源代码管理 VSPackage 的 UI 和插件中的所选内容**选项**对话框中的下**源代码管理**类别。 它允许用户选择活动的源代码管理插件或 VSPackage。 下拉列表包括：  
   
--   所有已安装的源代码管理包  
+- 所有已安装的源代码管理包  
   
--   所有安装的源代码管理插件  
+- 所有安装的源代码管理插件  
   
--   "None"选项，它表示禁用源代码管理  
+- "None"选项，它表示禁用源代码管理  
   
- 仅选择此活动的源控件的 UI 是可见的。 VSPackage 选择上一个 vspackage 隐藏 UI，并显示新的 UI。 活动的 VSPackage 选择基于每个用户。 如果用户具有的多个副本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]同时打开，每个有可能使用不同的 active VSPackage。 如果多个用户在登录到同一台计算机，每个用户可以拥有的单独实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]打开每个都有不同的 active VSPackage。 当多个实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]关闭的用户，源代码管理 VSPackage 的最后一个打开的解决方案将成为默认的源代码管理 VSPackage，若要设置活动上重新启动处于活动状态。  
+  仅选择此活动的源控件的 UI 是可见的。 VSPackage 选择上一个 vspackage 隐藏 UI，并显示新的 UI。 活动的 VSPackage 选择基于每个用户。 如果用户具有的多个副本[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]同时打开，每个有可能使用不同的 active VSPackage。 如果多个用户在登录到同一台计算机，每个用户可以拥有的单独实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]打开每个都有不同的 active VSPackage。 当多个实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]关闭的用户，源代码管理 VSPackage 的最后一个打开的解决方案将成为默认的源代码管理 VSPackage，若要设置活动上重新启动处于活动状态。  
   
- 与以前版本的不同[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，IDE 重新启动，则不能再切换源代码管理 Vspackage 的唯一方法。 VSPackage 选择是自动的。 切换包需要 Windows 用户权限 （没有管理员或超级用户）。  
+  与以前版本的不同[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，IDE 重新启动，则不能再切换源代码管理 Vspackage 的唯一方法。 VSPackage 选择是自动的。 切换包需要 Windows 用户权限 （没有管理员或超级用户）。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>   

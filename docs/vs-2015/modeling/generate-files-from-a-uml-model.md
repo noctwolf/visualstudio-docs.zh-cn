@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f7d2987084235f88d8360bb344445faa311956dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c126fab0226198fc182fe2c6c956594a11dc2ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831713"
 ---
 # <a name="generate-files-from-a-uml-model"></a>从 UML 模型生成文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,26 +28,26 @@ ms.locfileid: "49226494"
   
  有三种主要方案：  
   
--   [从菜单命令生成文件](#Command)或笔势。 定义在 UML 模型上可用的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令。  
+- [从菜单命令生成文件](#Command)或笔势。 定义在 UML 模型上可用的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 命令。  
   
--   [从应用程序生成文件](#Application)。 编写读取 UML 模型并生成文件的应用程序。  
+- [从应用程序生成文件](#Application)。 编写读取 UML 模型并生成文件的应用程序。  
   
--   [在设计时生成](#Design)。 可使用模型定义应用程序的某些功能，并在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中生成代码、资源等。  
+- [在设计时生成](#Design)。 可使用模型定义应用程序的某些功能，并在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案中生成代码、资源等。  
   
- 本主题结尾的讨论[如何使用文本生成](#What)。 有关详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
+  本主题结尾的讨论[如何使用文本生成](#What)。 有关详细信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。  
   
 ##  <a name="Command"></a> 从菜单命令生成文件  
  可以在 UML 菜单命令内使用预处理文本模板。 在文本模板的代码中（或在单独的分部类中），可以读取由关系图查看的模型。  
   
  有关这些功能的详细信息，请参阅以下主题：  
   
--   [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
+- [在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)  
   
--   [使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)  
+- [使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)  
   
--   [导航 UML 模型](../modeling/navigate-the-uml-model.md)  
+- [导航 UML 模型](../modeling/navigate-the-uml-model.md)  
   
- 当从模型关系图之一启动操作时，以下示例中演示的方法适用于从单一模型中生成文本。 若要处理单独的上下文中的模型，请考虑使用[Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md)访问模型和它的元素。  
+  当从模型关系图之一启动操作时，以下示例中演示的方法适用于从单一模型中生成文本。 若要处理单独的上下文中的模型，请考虑使用[Visual Studio Modelbus](../modeling/integrate-uml-models-with-other-models-and-tools.md)访问模型和它的元素。  
   
 ### <a name="example"></a>示例  
  若要运行此示例，请创建 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展 (VSIX) 项目。 此示例中使用的项目名称是`VdmGenerator`。 在中**source.extension.vsixmanifest**文件中，单击**添加内容**并将类型字段设置为**MEF 组件**和引用当前项目的源路径。 有关如何设置此类型的项目的详细信息，请参阅[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
@@ -174,41 +174,41 @@ Type Class2 ::
   
 ##### <a name="to-set-up-a-visual-studio-solution-for-this-example"></a>针对此示例设置 Visual Studio 解决方案  
   
-1.  在新的解决方案的建模项目中创建一个 UML 类图。  
+1. 在新的解决方案的建模项目中创建一个 UML 类图。  
   
-    1.  在中**体系结构**菜单上，单击**新关系图**。  
+   1.  在中**体系结构**菜单上，单击**新关系图**。  
   
-    2.  选择**UML 类图**。  
+   2.  选择**UML 类图**。  
   
-    3.  按照提示创建新的解决方案和建模项目。  
+   3.  按照提示创建新的解决方案和建模项目。  
   
-    4.  通过从工具箱拖动 UML 类工具，将某些类添加到关系图上。  
+   4.  通过从工具箱拖动 UML 类工具，将某些类添加到关系图上。  
   
-    5.  保存该文件。  
+   5.  保存该文件。  
   
-2.  在同一个解决方案中创建一个 C# 或 Visual Basic 项目。  
+2. 在同一个解决方案中创建一个 C# 或 Visual Basic 项目。  
   
-    -   在解决方案资源管理器中右键单击解决方案，指向**外**，然后单击**新项目**。 下**已安装的模板**，单击**Visual Basic**或**Visual C#** ，然后选择项目类型如**控制台应用程序**。  
+   -   在解决方案资源管理器中右键单击解决方案，指向**外**，然后单击**新项目**。 下**已安装的模板**，单击**Visual Basic**或**Visual C#** ，然后选择项目类型如**控制台应用程序**。  
   
-3.  将一个纯文本文件添加到 C# 或 Visual Basic 项目中。 此文件将包含你在编写多个文本模板时可共享的代码。  
+3. 将一个纯文本文件添加到 C# 或 Visual Basic 项目中。 此文件将包含你在编写多个文本模板时可共享的代码。  
   
-    -   在解决方案资源管理器，右键单击项目，指向**外**，然后单击**新项**。 选择**文本文件**。  
+   - 在解决方案资源管理器，右键单击项目，指向**外**，然后单击**新项**。 选择**文本文件**。  
   
      插入下节中显示的文本。  
   
-4.  将一个文本模板文件添加到 C# 或 Visual Basic 项目中。  
+4. 将一个文本模板文件添加到 C# 或 Visual Basic 项目中。  
   
-    -   在解决方案资源管理器，右键单击项目，指向**外**，然后单击**新项**。 选择**文本模板**。  
+   - 在解决方案资源管理器，右键单击项目，指向**外**，然后单击**新项**。 选择**文本模板**。  
   
      将以下的代码插入到该文本模板文件中。  
   
-5.  保存该文本模板文件。  
+5. 保存该文本模板文件。  
   
-6.  检查附属文件中的代码。 它应包含与模型中的每个 UML 类相对应的类。  
+6. 检查附属文件中的代码。 它应包含与模型中的每个 UML 类相对应的类。  
   
-    1.  在 Visual Basic 项目中，单击**显示所有文件**解决方案资源管理器工具栏中。  
+   1.  在 Visual Basic 项目中，单击**显示所有文件**解决方案资源管理器工具栏中。  
   
-    2.  在解决方案资源管理器中展开模板文件节点。  
+   2.  在解决方案资源管理器中展开模板文件节点。  
   
 #### <a name="content-of-the-shared-text-file"></a>共享文本文件的内容  
  在此示例中，文件名为“SharedTemplateCode.txt”，并且位于与文本模板相同的文件夹中。  

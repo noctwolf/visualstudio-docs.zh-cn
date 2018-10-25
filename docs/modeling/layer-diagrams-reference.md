@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 92b4b6eea3fcaa4ce6785385fe5e779ba38dac61
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 1ef2d68cb0f8e3d6904bdf3f3ebbab321649c3e1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920920"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图： 参考
 
@@ -59,7 +59,7 @@ ms.locfileid: "47860025"
 下表描述了可以使用依赖项关系图上的元素。
 
 |**形状**|**元素**|**说明**|
-|---------------|-----------------|---------------------|
+|-|-|-|
 |1|**层**|系统中的物理项目的逻辑组。 这些项目可以是命名空间、项目、类、方法等。<br /><br /> 若要查看链接到某个层的项目，打开层的快捷菜单，然后选择**查看链接**以打开**层资源管理器**。<br /><br /> 有关详细信息，请参阅[层资源管理器](#Explorer)。<br /><br /> -   **禁止 Namespace 依赖项**-指定与此层相关联的项目不能依赖于指定的命名空间。<br />-   **禁止的命名空间**-指定与此层相关联的项目不得属于指定的命名空间。<br />-   **所需的命名空间**-指定与此层相关联的项目必须属于某个指定的命名空间。|
 |2|**依赖关系**|指示某个层可以使用另一层的功能，但反之则不然。<br /><br /> -   **方向**-指定依赖项的方向。|
 |3|**双向依赖项**|指示某个层可以使用另一层的功能，反之易然。<br /><br /> -   **方向**-指定依赖项的方向。|
@@ -92,7 +92,7 @@ ms.locfileid: "47860025"
 > 如果您不能查看所有这些属性，请展开**层资源管理器**窗口。
 
 |**层资源管理器中的列**|**说明**|
-|----------------------------------|---------------------|
+|-|-|
 |**类别**|项目种类，例如类、命名空间、源文件等|
 |**层**|链接到该项目的层|
 |**支持验证**|如果 **，则返回 True**，则层验证过程可以验证项目是否符合指向或来自此元素的依赖关系。<br /><br /> 如果**False**，则该链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅[依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)。|

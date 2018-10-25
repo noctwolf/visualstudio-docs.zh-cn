@@ -13,12 +13,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 335219920a10816535f19e7fc21d856b1eb1cd06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a67f4f79688cb4cdbe482c90cd93b784349d748a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49212337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831687"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入门：通过测试资源管理器进行测试驱动开发
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ ms.locfileid: "49212337"
   
 #### <a name="to-run-unit-tests-by-using-test-explorer"></a>使用“测试资源管理器”运行单元测试  
   
-1.  使用你选择的测试框架创建单元测试。  
+1. 使用你选择的测试框架创建单元测试。  
   
-     例如，创建使用 MSTest 框架的测试：  
+    例如，创建使用 MSTest 框架的测试：  
   
-    1.  创建测试项目。  
+   1.  创建测试项目。  
   
-         在 **“新建项目”** 对话框中，展开 **“Visual Basic”**、 **“Visual C#”** 或 **“Visual C++”**，然后选择 **“测试”**。  
+        在 **“新建项目”** 对话框中，展开 **“Visual Basic”**、 **“Visual C#”** 或 **“Visual C++”**，然后选择 **“测试”**。  
   
-         选择 **“单元测试项目”**。  
+        选择 **“单元测试项目”**。  
   
-    2.  将每个单元测试编写为一个方法。 为每个测试方法添加 `[TestMethod]` 特性为前缀。  
+   2.  将每个单元测试编写为一个方法。 为每个测试方法添加 `[TestMethod]` 特性为前缀。  
   
-2.  如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
+2. 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
   
-3.  在菜单栏上，依次选择 **“测试”**、 **“运行单元测试”**、 **“所有测试”**。  
+3. 在菜单栏上，依次选择 **“测试”**、 **“运行单元测试”**、 **“所有测试”**。  
   
-     解决方案生成，测试运行。  
+    解决方案生成，测试运行。  
   
-     “测试资源管理器”将打开并显示结果摘要。  
+    “测试资源管理器”将打开并显示结果摘要。  
   
- **若要查看完整测试列表：** 请在任意类别中选择 **“全部显示”** 。  
+   **若要查看完整测试列表：** 请在任意类别中选择 **“全部显示”** 。  
   
- **若要查看测试结果的详细信息：** 请在“测试资源管理器”中选择该测试以查看详细信息，例如详细信息窗格中的异常消息。  
+   **若要查看测试结果的详细信息：** 请在“测试资源管理器”中选择该测试以查看详细信息，例如详细信息窗格中的异常消息。  
   
- **若要导航到测试的代码：** 请在“测试资源管理器”中双击该测试或从快捷菜单上选择 **“打开测试”** 。  
+   **若要导航到测试的代码：** 请在“测试资源管理器”中双击该测试或从快捷菜单上选择 **“打开测试”** 。  
   
- **若要调试测试：** 请打开一个或多个测试的快捷菜单，然后选择 **“调试选定的测试”**。  
+   **若要调试测试：** 请打开一个或多个测试的快捷菜单，然后选择 **“调试选定的测试”**。  
   
 > [!IMPORTANT]
 >  显示的结果是最近运行的测试结果。 彩色的结果栏仅显示曾经运行的测试的结果。 例如，你运行过多个测试，其中部分失败，然后仅运行了成功的测试，则结果栏将完全显示绿色。  
@@ -77,61 +77,61 @@ ms.locfileid: "49212337"
   
 #### <a name="creating-the-test-and-method"></a>创建测试和方法  
   
-1.  创建 Visual C# 类库项目。 此项目将包含我们希望提供的代码。 在此示例中，该类名为 `MyMath`。  
+1. 创建 Visual C# 类库项目。 此项目将包含我们希望提供的代码。 在此示例中，该类名为 `MyMath`。  
   
-2.  创建测试项目。  
+2. 创建测试项目。  
   
-    -   在 **“新建项目”** 对话框中，依次选择 **“Visual C#”**、 **“测试”** ，然后选择 **“单元测试项目”**。  
+   -   在 **“新建项目”** 对话框中，依次选择 **“Visual C#”**、 **“测试”** ，然后选择 **“单元测试项目”**。  
   
-         ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
+        ![新建代码和测试项目](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
-3.  编写基本测试方法。 根据特定输入验证获取的结果：  
+3. 编写基本测试方法。 根据特定输入验证获取的结果：  
   
-    ```csharp  
+   ```csharp  
   
-    [TestMethod]  
-    public void BasicRooterTest()  
-    {  
-      // Create an instance to test:  
-      Rooter rooter = new Rooter();  
-      // Define a test input and output value:  
-      double expectedResult = 2.0;  
-      double input = expectedResult * expectedResult;  
-      // Run the method under test:  
-      double actualResult = rooter.SquareRoot(input);  
-      // Verify the result:  
-      Assert.AreEqual(expectedResult, actualResult,  
-          delta: expectedResult / 100);  
-    }  
-    ```  
+   [TestMethod]  
+   public void BasicRooterTest()  
+   {  
+     // Create an instance to test:  
+     Rooter rooter = new Rooter();  
+     // Define a test input and output value:  
+     double expectedResult = 2.0;  
+     double input = expectedResult * expectedResult;  
+     // Run the method under test:  
+     double actualResult = rooter.SquareRoot(input);  
+     // Verify the result:  
+     Assert.AreEqual(expectedResult, actualResult,  
+         delta: expectedResult / 100);  
+   }  
+   ```  
   
-4.  从测试中生成方法。  
+4. 从测试中生成方法。  
   
-    1.  将光标放在 `Rooter`上，然后在快捷菜单中依次选择 **“生成”**、 **“新类型”**。  
+   1.  将光标放在 `Rooter`上，然后在快捷菜单中依次选择 **“生成”**、 **“新类型”**。  
   
-    2.  在 **“生成新类型”** 对话框中，将 **“项目”** 设置为类库项目。 在此示例中，设为 `MyMath`。  
+   2.  在 **“生成新类型”** 对话框中，将 **“项目”** 设置为类库项目。 在此示例中，设为 `MyMath`。  
   
-    3.  将光标放在 `SquareRoot`上，然后在快捷菜单中依次选择 **“生成”**、 **“方法存根”**。  
+   3.  将光标放在 `SquareRoot`上，然后在快捷菜单中依次选择 **“生成”**、 **“方法存根”**。  
   
-5.  运行单元测试。  
+5. 运行单元测试。  
   
-    1.  在 **“测试”** 菜单上，依次选择 **“运行单元测试”**、 **“所有测试”**。  
+   1.  在 **“测试”** 菜单上，依次选择 **“运行单元测试”**、 **“所有测试”**。  
   
-         解决方案将生成并运行。  
+        解决方案将生成并运行。  
   
-         “测试资源管理器”将打开并显示结果。  
+        “测试资源管理器”将打开并显示结果。  
   
-         测试显示在 **“失败的测试”** 下。  
+        测试显示在 **“失败的测试”** 下。  
   
-6.  选择测试名称。  
+6. 选择测试名称。  
   
-     “测试资源管理器”的下半部分将显示测试的详细信息。  
+    “测试资源管理器”的下半部分将显示测试的详细信息。  
   
-7.  选择 **“堆栈跟踪”** 下的项以查看测试失败位置。  
+7. 选择 **“堆栈跟踪”** 下的项以查看测试失败位置。  
   
- ![显示未通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
+   ![显示未通过的测试的单元测试资源管理器。](../test/media/unittestexplorerwalkthrough2.png "UnitTestExplorerWalkthrough2")  
   
- 此时，你已创建了测试和存根，在此基础上进行修改以使测试通过。  
+   此时，你已创建了测试和存根，在此基础上进行修改以使测试通过。  
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>在每次更改之后，都要使所有测试通过  
   

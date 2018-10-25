@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2d59798e5ecf503b1dcb6b76e9d0d8fb448cc1e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e362ca665d7012e52d7ed49cce66adc4632b013
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937884"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中，使用 XAML 设计器创建 UI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,31 +133,31 @@ Visual Studio 中的 XAML 设计器提供可视化界面，有助于设计基于
 ## <a name="document-outline-window"></a>“文档大纲”窗口  
  XAML 设计器中的“文档大纲”窗口有助于执行这些任务：  
   
--   查看美工板上所有元素的层次结构。  
+- 查看美工板上所有元素的层次结构。  
   
--   选择元素，以便可以对其进行修改（在层次结构中移动它们、在美工板上对其进行修改以及在“属性”窗口中设置其属性等）。 有关详细信息，请参见 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)  
+- 选择元素，以便可以对其进行修改（在层次结构中移动它们、在美工板上对其进行修改以及在“属性”窗口中设置其属性等）。 有关详细信息，请参见 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)  
   
--   创建和修改控件元素的模板。  
+- 创建和修改控件元素的模板。  
   
--   对所选元素使用上下文菜单。 同一个菜单对美工板中的所选元素也可用。  
+- 对所选元素使用上下文菜单。 同一个菜单对美工板中的所选元素也可用。  
   
- 若要查看“文档大纲”窗口，请依次在菜单栏上选择“查看” 、“其他窗口” 、“文档大纲” 。  
+  若要查看“文档大纲”窗口，请依次在菜单栏上选择“查看” 、“其他窗口” 、“文档大纲” 。  
   
- ![“文档大纲”窗口](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
+  ![“文档大纲”窗口](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")  
   
- 以下是“文档大纲”窗口中可用的选项：  
+  以下是“文档大纲”窗口中可用的选项：  
   
- **文档大纲**  
- “文档大纲”窗口中的主视图将显示树状结构中的文档层次结构。 可以使用文档大纲的层次结构性质检查不同级别的文档的详细信息，单个或成组地锁定和隐藏元素。  
+  **文档大纲**  
+  “文档大纲”窗口中的主视图将显示树状结构中的文档层次结构。 可以使用文档大纲的层次结构性质检查不同级别的文档的详细信息，单个或成组地锁定和隐藏元素。  
   
- **显示/隐藏**  
- 显示或隐藏与“文档大纲”中各项相对应的美工板元素。 使用“显示/隐藏”  按钮，该按钮显示时是一个眼睛状的标志，或者按 CTRL + H 隐藏元素，按 SHIFT + CTRL + H 显示元素。  
+  **显示/隐藏**  
+  显示或隐藏与“文档大纲”中各项相对应的美工板元素。 使用“显示/隐藏”  按钮，该按钮显示时是一个眼睛状的标志，或者按 CTRL + H 隐藏元素，按 SHIFT + CTRL + H 显示元素。  
   
- **锁定/解锁**  
- 锁定或解锁与“文档大纲”中各项相对应的美工板元素。 不能修改已锁定的元素。 使用“锁定/解锁”  按钮，该按钮锁定时是一个挂锁状的标志，或按 CTRL + L 锁定元素，按 SHIFT + CTRL + L 解锁元素。  
+  **锁定/解锁**  
+  锁定或解锁与“文档大纲”中各项相对应的美工板元素。 不能修改已锁定的元素。 使用“锁定/解锁”  按钮，该按钮锁定时是一个挂锁状的标志，或按 CTRL + L 锁定元素，按 SHIFT + CTRL + L 解锁元素。  
   
- **返回到 pageRoot 范围**  
- “文档大纲”窗口顶部的选项显示向上箭头符号，将使文档大纲返回到之前的范围。 仅当在样式或模板的范围中时，范围向上可用。  
+  **返回到 pageRoot 范围**  
+  “文档大纲”窗口顶部的选项显示向上箭头符号，将使文档大纲返回到之前的范围。 仅当在样式或模板的范围中时，范围向上可用。  
   
 ## <a name="properties-window"></a>“属性”窗口  
  通过“属性”窗口可以设置控件的属性值。 如下所示：  

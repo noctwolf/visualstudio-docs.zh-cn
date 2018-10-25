@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: b36d2ac3aa378a14dff0ec5a59a1d23f0843d3b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f03dc4ea85fe0f44ea2253da9544ace9b0068abc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922466"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "49250206"
   
  若要解决此错误并发布解决方案，必须执行以下任务：  
   
--   [将解决方案发布不使用视觉样式已启用](#BKMK_publishsolwovs)。  
+- [将解决方案发布不使用视觉样式已启用](#BKMK_publishsolwovs)。  
   
--   [创建清单文件](#BKMK_CreateManifest)。  
+- [创建清单文件](#BKMK_CreateManifest)。  
   
--   [将清单文件嵌入到已发布解决方案的可执行文件](#BKMK_embedmanifest)。  
+- [将清单文件嵌入到已发布解决方案的可执行文件](#BKMK_embedmanifest)。  
   
--   [应用程序和部署清单签名](#BKMK_signappdeplyman)。  
+- [应用程序和部署清单签名](#BKMK_signappdeplyman)。  
   
- 然后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。  
+  然后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。  
   
 ##  <a name="BKMK_publishsolwovs"></a> 将解决方案发布不使用视觉样式已启用  
   
@@ -100,72 +100,72 @@ ms.locfileid: "49250206"
   
 ##  <a name="BKMK_embedmanifest"></a> 将清单文件嵌入到已发布解决方案的可执行文件  
   
-1.  打开**Visual Studio 命令提示符**。  
+1. 打开**Visual Studio 命令提示符**。  
   
-     有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。  
+    有关如何打开详细信息**Visual Studio 命令提示符**，请参阅[命令提示](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)。  
   
-    > [!NOTE]
-    >  剩余的步骤使你的解决方案有关的以下假设：  
-    >   
-    >  -   解决方案的名称是**MyWPFProject**。  
-    > -   该解决方案位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
-    >   
-    >      该解决方案发布到以下目录： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
-    > -   最新版本的发布的应用程序文件位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
-    >   
-    >  无需使用的名称或上面所述的目录位置。 名称和位置上面所述仅用于说明发布你的解决方案所需的步骤。  
+   > [!NOTE]
+   >  剩余的步骤使你的解决方案有关的以下假设：  
+   > 
+   > - 解决方案的名称是**MyWPFProject**。  
+   >   -   该解决方案位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\`。  
+   > 
+   >   该解决方案发布到以下目录： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish`。  
+   >   -   最新版本的发布的应用程序文件位于以下目录中： `%UserProfile%\Documents\Visual Studio 2010\Projects\publish\Application Files\WPFApp_1_0_0_0`  
+   > 
+   >   无需使用的名称或上面所述的目录位置。 名称和位置上面所述仅用于说明发布你的解决方案所需的步骤。  
   
-2.  在命令提示符下，将更改为包含已发布的应用程序文件的最新版本的目录的路径。 下面的示例演示了此步骤。  
+2. 在命令提示符下，将更改为包含已发布的应用程序文件的最新版本的目录的路径。 下面的示例演示了此步骤。  
   
-    ```  
-    cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
-    ```  
+   ```  
+   cd "%UserProfile%\Documents\Visual Studio 2010\Projects\MyWPFProject\publish\Application Files\WPFApp_1_0_0_0"  
+   ```  
   
-3.  在命令提示符下运行以下命令以将清单文件嵌入到应用程序的可执行文件。  
+3. 在命令提示符下运行以下命令以将清单文件嵌入到应用程序的可执行文件。  
   
-    ```  
-    mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   mt –manifest c:\temp\themes.manifest –outputresource:MyWPFApp.exe.deploy  
+   ```  
   
 ##  <a name="BKMK_signappdeplyman"></a> 对应用程序和部署清单进行签名  
   
-1.  在命令提示符处，运行以下命令以删除`.deploy`从当前目录中的可执行文件的扩展。  
+1. 在命令提示符处，运行以下命令以删除`.deploy`从当前目录中的可执行文件的扩展。  
   
-    ```  
-    ren MyWPFApp.exe.deploy MyWPFApp.exe  
-    ```  
+   ```  
+   ren MyWPFApp.exe.deploy MyWPFApp.exe  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定只有一个文件具有`.deploy`文件扩展名。 请确保重命名此目录中的所有文件具有`.deploy`文件扩展名。  
+   > [!NOTE]
+   >  此示例假定只有一个文件具有`.deploy`文件扩展名。 请确保重命名此目录中的所有文件具有`.deploy`文件扩展名。  
   
-2.  在命令提示符下运行以下命令，应用程序清单进行签名。  
+2. 在命令提示符下运行以下命令，应用程序清单进行签名。  
   
-    ```  
-    mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定使用签名清单`.pfx`项目文件。 如果不签名的清单，则可以省略`–cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`–password`选项 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`)。  
+   > [!NOTE]
+   >  此示例假定使用签名清单`.pfx`项目文件。 如果不签名的清单，则可以省略`–cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`–password`选项 (`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`)。  
   
-3.  在命令提示符处，运行以下命令来添加`.deploy`扩展到您在此过程的上一步骤中重命名文件的名称。  
+3. 在命令提示符处，运行以下命令来添加`.deploy`扩展到您在此过程的上一步骤中重命名文件的名称。  
   
-    ```  
-    ren MyWPFApp.exe MyWPFApp.exe.deploy  
-    ```  
+   ```  
+   ren MyWPFApp.exe MyWPFApp.exe.deploy  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定只有一个文件具有`.deploy`文件扩展名。 请确保重命名以前此目录中的所有文件`.deploy`文件扩展名。  
+   > [!NOTE]
+   >  此示例假定只有一个文件具有`.deploy`文件扩展名。 请确保重命名以前此目录中的所有文件`.deploy`文件扩展名。  
   
-4.  在命令提示符下运行以下命令部署清单进行签名。  
+4. 在命令提示符下运行以下命令部署清单进行签名。  
   
-    ```  
-    mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
-    ```  
+   ```  
+   mage -u ..\..\MyWPFApp.application -appm MyWPFApp.exe.manifest -cf ..\..\..\MyWPFApp_TemporaryKey.pfx  
+   ```  
   
-    > [!NOTE]
-    >  此示例假定使用签名清单`.pfx`项目文件。 如果不签名的清单，则可以省略`–cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`–password`选项，如本例所示：`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`。  
+   > [!NOTE]
+   >  此示例假定使用签名清单`.pfx`项目文件。 如果不签名的清单，则可以省略`–cf`此示例中使用的参数。 如果您要签署的证书需要密码的清单，指定`–password`选项，如本例所示：`For example: mage –u MyWPFApp.exe.manifest –cf ..\..\..\MyWPFApp_TemporaryKey.pfx – password Password`。  
   
- 执行这些步骤后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。 如果你想要经常更新解决方案，可以将这些命令移到一个脚本，并运行该脚本每次发布新版本。  
+   执行这些步骤后，您可以将已发布的文件移动到要从中安装应用程序的最终用户的位置。 如果你想要经常更新解决方案，可以将这些命令移到一个脚本，并运行该脚本每次发布新版本。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 部署中的特定错误的疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)   

@@ -14,25 +14,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a9730a4f096ffbbe89eb3b6fef40393232efdfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01eddb375a521059cac35bf541dec4e4f09d881a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824219"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：  
   
--   Visual Studio 2015：4020  
+- Visual Studio 2015：4020  
   
--   Visual Studio 2013：4018  
+- Visual Studio 2013：4018  
   
--   Visual Studio 2012：4016  
+- Visual Studio 2012：4016  
   
- 换而言之，分配给远程调试器的端口数每个版本递增 2。 你可以根据需要设置其他端口号。 我们将在后面部分说明如何设置端口号。  
+  换而言之，分配给远程调试器的端口数每个版本递增 2。 你可以根据需要设置其他端口号。 我们将在后面部分说明如何设置端口号。  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位操作系统上的远程调试器端口  
  TCP 4020（在 Visual Studio 2015 中）是主端口，所有方案都必需。 你可以在命令行或远程调试器窗口中对此进行配置。  

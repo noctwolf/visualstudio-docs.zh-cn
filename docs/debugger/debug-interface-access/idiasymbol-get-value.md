@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_value |Microsoft 文档'
+title: 'Idiasymbol:: Get_value |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a6249506356f586a2e00d2b2c2bf73eb0283c0
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 23fb08303840c8d90644a292cac8832e29641246
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863732"
 ---
 # <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
-检索常量的值。  
+检索一个常量值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_value (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [在中，out]A`VARIANT`使用常量的值填充的对象。  
+ [in、 out]一个`VARIANT`使用的常量的值填充的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 传递到此方法前，必须初始化提供变体。 有关详细信息，请参阅示例。  
+ 传递给此方法之前，必须初始化的提供的变体。 有关详细信息，请参阅示例。  
   
 ## <a name="example"></a>示例  
   

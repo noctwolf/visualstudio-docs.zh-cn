@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c95007ed5b740812ca2b1a269390fbad6ffbc2ba
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 42c1a9cd2d1c9d1349b07e06d65a8da6a41b4245
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39079528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938211"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>向 Visual Studio 菜单栏添加菜单
 本演练演示如何将菜单添加到 Visual Studio 集成的开发环境 (IDE) 的菜单栏。 IDE 菜单栏包含菜单类别，如**文件**，**编辑**，**视图**，**窗口**，并**帮助**.  
@@ -41,48 +41,48 @@ ms.locfileid: "39079528"
   
 ## <a name="create-a-menu-on-the-ide-menu-bar"></a>在 IDE 的菜单栏上创建菜单  
   
-1.  在中**解决方案资源管理器**，打开*TestCommandPackage.vsct*。  
+1. 在中**解决方案资源管理器**，打开*TestCommandPackage.vsct*。  
   
-     在文件末尾，还有\<符号 > 节点，其中包含几个\<GuidSymbol > 节点。 在名为 guidTestCommandPackageCmdSet 节点中，添加一个新的符号，按如下所示：  
+    在文件末尾，还有\<符号 > 节点，其中包含几个\<GuidSymbol > 节点。 在名为 guidTestCommandPackageCmdSet 节点中，添加一个新的符号，按如下所示：  
   
-    ```xml  
-    <IDSymbol name="TopLevelMenu" value="0x1021"/>  
-    ```  
+   ```xml  
+   <IDSymbol name="TopLevelMenu" value="0x1021"/>  
+   ```  
   
-2.  创建一个空\<菜单 > 中的节点\<命令 > 节点，再\<组 >。 在中\<菜单 > 节点中，添加\<菜单 > 节点，按如下所示：  
+2. 创建一个空\<菜单 > 中的节点\<命令 > 节点，再\<组 >。 在中\<菜单 > 节点中，添加\<菜单 > 节点，按如下所示：  
   
-    ```xml  
-    <Menus>  
-          <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
-            <Parent guid="guidSHLMainMenu"  
-                    id="IDG_VS_MM_TOOLSADDINS" />  
-            <Strings>  
-              <ButtonText>TestMenu</ButtonText>  
-              <CommandName>TestMenu</CommandName>  
-            </Strings>  
-        </Menu>  
-    </Menus>  
-    ```  
+   ```xml  
+   <Menus>  
+         <Menu guid="guidTestCommandPackageCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">  
+           <Parent guid="guidSHLMainMenu"  
+                   id="IDG_VS_MM_TOOLSADDINS" />  
+           <Strings>  
+             <ButtonText>TestMenu</ButtonText>  
+             <CommandName>TestMenu</CommandName>  
+           </Strings>  
+       </Menu>  
+   </Menus>  
+   ```  
   
-     `guid`和`id`菜单的值设置的命令中指定设置的命令和特定的菜单。  
+    `guid`和`id`菜单的值设置的命令中指定设置的命令和特定的菜单。  
   
-     `guid`和`id`父级值定位的一部分包含工具和外接程序菜单在 Visual Studio 菜单栏上的菜单。  
+    `guid`和`id`父级值定位的一部分包含工具和外接程序菜单在 Visual Studio 菜单栏上的菜单。  
   
-     值`CommandName`字符串指定的文本应出现在菜单项。  
+    值`CommandName`字符串指定的文本应出现在菜单项。  
   
-3.  在中\<组 > 部分中，找到\<组 > 并将更改\<父 > 元素以指向我们刚添加的菜单：  
+3. 在中\<组 > 部分中，找到\<组 > 并将更改\<父 > 元素以指向我们刚添加的菜单：  
   
-    ```csharp  
-    <Groups>  
-          <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
-            <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
-          </Group>  
-        </Groups>  
-    ```  
+   ```csharp  
+   <Groups>  
+         <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
+           <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
+         </Group>  
+       </Groups>  
+   ```  
   
-     这使得新菜单的组部分。  
+    这使得新菜单的组部分。  
   
-4.  查找`Buttons`部分。 请注意，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]生成包模板`Button`已设置为其父级的元素`MyMenuGroup`。 因此，此命令显示在你的菜单上。  
+4. 查找`Buttons`部分。 请注意，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]生成包模板`Button`已设置为其父级的元素`MyMenuGroup`。 因此，此命令显示在你的菜单上。  
   
 ## <a name="build-and-test-the-extension"></a>生成并测试此扩展  
   

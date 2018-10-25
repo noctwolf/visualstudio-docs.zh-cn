@@ -15,12 +15,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f98990cfe1a3451b9932eb5614de614c05434edb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 62a451b1004a6e93980d7fb594781e661b06246d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863615"
 ---
 # <a name="unit-test-basics"></a>单元测试基础
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,19 +65,19 @@ ms.locfileid: "49221558"
   
  我们创建包含两个项目的 `MyBank` 解决方案：  
   
--   `Accounts`  
+- `Accounts`  
   
--   `BankDb`  
+- `BankDb`  
   
- 我们首次尝试设计 `Accounts` 的项目包含一个类来保存有关帐户的基本信息，以及指定任何类型的帐户的通用功能的接口的基本信息（如从该帐户存储和取出资产），以及从表示存款帐户的接口派生的类的基本信息。 首先，我们通过创建以下源文件开始帐户项目：  
+  我们首次尝试设计 `Accounts` 的项目包含一个类来保存有关帐户的基本信息，以及指定任何类型的帐户的通用功能的接口的基本信息（如从该帐户存储和取出资产），以及从表示存款帐户的接口派生的类的基本信息。 首先，我们通过创建以下源文件开始帐户项目：  
   
--   `AccountInfo.cs` 定义帐户的基本信息。  
+- `AccountInfo.cs` 定义帐户的基本信息。  
   
--   `IAccount.cs` 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。  
+- `IAccount.cs` 为帐户定义一个标准 `IAccount` 接口，包括从一个帐户存款和收回资产和检索帐户余额的方法。  
   
--   `CheckingAccount.cs` 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccounts` 接口。  
+- `CheckingAccount.cs` 包含 `CheckingAccount` 类，该类实现支票帐户的 `IAccounts` 接口。  
   
- 我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：  
+  我们根据经验可知，从支票帐户中取款必须要确保提取的金额小于帐户余额。 因此我们用检查这种情况的一种方法来重写 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 该方法可能如下所示：  
   
 ```csharp  
   
@@ -102,46 +102,46 @@ public void Withdraw(double amount)
   
  **生成单元测试项目和单元测试存根**  
   
-1.  在代码编辑器窗口中，从上下文菜单右键单击并选择“创建单元测试”  。  
+1. 在代码编辑器窗口中，从上下文菜单右键单击并选择“创建单元测试”  。  
   
-     ![在编辑器窗口中查看上下文菜单](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+    ![在编辑器窗口中查看上下文菜单](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。  
+2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。  
   
-     ![在编辑器中右键单击并选择“创建单元测试”](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+    ![在编辑器中右键单击并选择“创建单元测试”](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  在类的所有方法的新单元测试项目中创建单元测试存根。  
+3. 在类的所有方法的新单元测试项目中创建单元测试存根。  
   
-     ![创建的单元测试](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+    ![创建的单元测试](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  现在向前跳转，了解如何 [将代码添加到单元测试方法](#BKMK_Writing_your_tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。  
+4. 现在向前跳转，了解如何 [将代码添加到单元测试方法](#BKMK_Writing_your_tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。  
   
- **手动创建单元测试项目和单元测试**  
+   **手动创建单元测试项目和单元测试**  
   
- 单元测试项目通常会镜像单个代码项目的结构。 在 MyBank 示例中，你将把名为 `AccountsTests` 和 `BankDbTests` 的两个单元测试项目添加到 `MyBanks` 解决方案中。 测试项目名称是任意的，但采用标准命名约定是一个好主意。  
+   单元测试项目通常会镜像单个代码项目的结构。 在 MyBank 示例中，你将把名为 `AccountsTests` 和 `BankDbTests` 的两个单元测试项目添加到 `MyBanks` 解决方案中。 测试项目名称是任意的，但采用标准命名约定是一个好主意。  
   
- **若要向解决方案中添加单元测试项目：**  
+   **若要向解决方案中添加单元测试项目：**  
   
-1.  在“文件”  菜单上，选择“新建”  ，然后选择“项目”  （快捷键：Ctrl + Shift + N）。  
+5. 在“文件”  菜单上，选择“新建”  ，然后选择“项目”  （快捷键：Ctrl + Shift + N）。  
   
-2.  在“新建项目”对话框中，展开“已安装”  节点，选择你想要用于测试项目的语言，然后选择“测试” 。  
+6. 在“新建项目”对话框中，展开“已安装”  节点，选择你想要用于测试项目的语言，然后选择“测试” 。  
   
-3.  若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。  
+7. 若要使用 Microsoft 单元测试框架之一，请从项目模板的列表中选择“单元测试项目”  。 否则，请选择你想要使用的单元测试框架的项目模板。 若要测试我们的示例中的 `Accounts` 项目，你需要将该项目命名为 `AccountsTests`。  
   
-    > [!WARNING]
-    >  并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。  
+   > [!WARNING]
+   >  并非所有第三方和开放源代码单元测试框架都提供 Visual Studio 项目模板。 有关创建项目的信息，请参阅框架文档。  
   
-4.  在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。  
+8. 在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。  
   
-     若要创建代码项目的引用：  
+    若要创建代码项目的引用：  
   
-    1.  在解决方案资源管理器中选择项目。  
+   1.  在解决方案资源管理器中选择项目。  
   
-    2.  在“项目”  菜单上，选择“添加引用” 。  
+   2.  在“项目”  菜单上，选择“添加引用” 。  
   
-    3.  在“引用管理器”对话框中，打开“解决方案”  节点，然后选择“项目” 。 选择代码项目名称并关闭对话框。  
+   3.  在“引用管理器”对话框中，打开“解决方案”  节点，然后选择“项目” 。 选择代码项目名称并关闭对话框。  
   
- 每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：  
+   每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：  
   
 -   `AccountInfoTests` 类包含用于 `AccountInfo` 项目中 `BankAccount` 类的单元测试方法  
   
@@ -152,13 +152,13 @@ public void Withdraw(double amount)
   
  AAA（准备、执行、断言）模式是编写待测试方法的单元测试的常用方法。  
   
--   单元测试方法的 **准备** 部分初始化对象并设置传递给待测试方法的数据的值。  
+- 单元测试方法的 **准备** 部分初始化对象并设置传递给待测试方法的数据的值。  
   
--   **执行** 部分调用具有准备参数的待测试方法。  
+- **执行** 部分调用具有准备参数的待测试方法。  
   
--   **断言** 部分验证待测试方法的执行行为与预期相同。  
+- **断言** 部分验证待测试方法的执行行为与预期相同。  
   
- 若要测试我们的示例中的 `CheckingAccount.Withdraw` 方法，我们可以编写两个测试：一个验证方法的标准行为，另一个验证多于余额的取款将失败。 在 `CheckingAccountTests` 类中，我们将添加以下方法：  
+  若要测试我们的示例中的 `CheckingAccount.Withdraw` 方法，我们可以编写两个测试：一个验证方法的标准行为，另一个验证多于余额的取款将失败。 在 `CheckingAccountTests` 类中，我们将添加以下方法：  
   
 ```csharp  
 [TestMethod]  
@@ -265,24 +265,24 @@ public void My_Test ()
   
  **答：** 可以使用测试资源管理器为你的测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：  
   
-1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
+1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
-    > [!NOTE]
-    >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
+   > [!NOTE]
+   >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
   
-2.  在测试资源管理器中，选择测试方法，然后从快捷菜单选择“调试选定的测试”  。  
+2. 在测试资源管理器中，选择测试方法，然后从快捷菜单选择“调试选定的测试”  。  
   
- 了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。  
+   了解有关 [调试单元测试](../debugger/debugging-in-visual-studio.md)的更多详细信息。  
   
- **问：如果我正在使用 TDD，该如何从我的测试生成代码？**  
+   **问：如果我正在使用 TDD，该如何从我的测试生成代码？**  
   
- **答：** 使用 IntelliSense 在你的项目代码中生成类和方法。 编写调用你想要生成的类或方法的测试方法中的语句，然后打开调用下面的 IntelliSense 菜单。 如果调用新类的构造函数，请从菜单选择“生成新类型”  并按照向导在你的代码项目中插入此类。 如果调用方法，请从 IntelliSense 菜单选择“生成新方法”  。  
+   **答：** 使用 IntelliSense 在你的项目代码中生成类和方法。 编写调用你想要生成的类或方法的测试方法中的语句，然后打开调用下面的 IntelliSense 菜单。 如果调用新类的构造函数，请从菜单选择“生成新类型”  并按照向导在你的代码项目中插入此类。 如果调用方法，请从 IntelliSense 菜单选择“生成新方法”  。  
   
- ![生成方法存根 Intellisense 菜单](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+   ![生成方法存根 Intellisense 菜单](../test/media/ute-generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **问：我能否创建需要使用多组数据作为输入才能运行的单元测试？**  
+   **问：我能否创建需要使用多组数据作为输入才能运行的单元测试？**  
   
- **答：** 可以。 *数据驱动的测试方法* 使你可以用单个单元测试方法测试一系列值。 对指定包含你想要测试的变量值的数据源和表的测试方法使用 `DataSource` 属性。  在方法体中，你可以使用 `TestContext.DataRow[`*ColumnName*`]` 索引器将行值分配给变量。  
+   **答：** 可以。 *数据驱动的测试方法* 使你可以用单个单元测试方法测试一系列值。 对指定包含你想要测试的变量值的数据源和表的测试方法使用 `DataSource` 属性。  在方法体中，你可以使用 `TestContext.DataRow[`*ColumnName*`]` 索引器将行值分配给变量。  
   
 > [!NOTE]
 >  这些过程仅适用于你使用 Microsoft 单元测试框架为托管代码编写的测试方法。 如果你在使用不同的框架，请查阅框架文档，获取等效的功能。  
@@ -334,21 +334,21 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
  Microsoft Fakes 使用两种方法为外部依赖项创建替代类。  
   
-1.  *存根 (stub)* 生成派生自目标依赖关系类的父接口的替代类。 可以将存根 (stub) 方法替换为目标类的公共虚拟方法。  
+1. *存根 (stub)* 生成派生自目标依赖关系类的父接口的替代类。 可以将存根 (stub) 方法替换为目标类的公共虚拟方法。  
   
-2.  *填充码* 使用运行时检测将对目标方法的调用转移到非虚拟方法的替代填充码方法。  
+2. *填充码* 使用运行时检测将对目标方法的调用转移到非虚拟方法的替代填充码方法。  
   
- 通过这两种方法，你可以使用对依赖关系方法的调用所生成的委托，指定测试方法中所需的行为。  
+   通过这两种方法，你可以使用对依赖关系方法的调用所生成的委托，指定测试方法中所需的行为。  
   
- 了解有关 [使用 Microsoft Fakes 隔离单元测试方法](../test/isolating-code-under-test-with-microsoft-fakes.md)的详细信息。  
+   了解有关 [使用 Microsoft Fakes 隔离单元测试方法](../test/isolating-code-under-test-with-microsoft-fakes.md)的详细信息。  
   
- **问：是否可以使用其他单元测试框架创建单元测试？**  
+   **问：是否可以使用其他单元测试框架创建单元测试？**  
   
- **答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：  
+   **答：** 可以，请按照下列步骤 [查找和安装其他框架](../test/install-third-party-unit-test-frameworks.md)。 在重新启动 Visual Studio 后，重新打开解决方案以创建单元测试，然后在此处选择你已安装的框架：  
   
- ![选择安装的其他单元测试框架](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+   ![选择安装的其他单元测试框架](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- 将使用选定的框架创建单元测试存根。
+   将使用选定的框架创建单元测试存根。
 
 
 

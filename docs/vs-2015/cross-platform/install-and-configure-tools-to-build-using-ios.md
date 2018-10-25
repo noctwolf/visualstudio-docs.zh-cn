@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: b2fe10b960de79694050af5cbad3e707bb21568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 41ad445190624ba70305d0e96ac55fc964702763
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911273"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,39 +90,39 @@ ms.locfileid: "49295277"
   
 ###  <a name="DownloadInstall"></a> 下载和安装远程代理  
   
--   在 Mac 上的 Terminal 应用中，输入：  
+- 在 Mac 上的 Terminal 应用中，输入：  
   
-     `sudo npm install -g --unsafe-perm vcremote`  
+   `sudo npm install -g --unsafe-perm vcremote`  
   
-     全局安装 (**-g**) 开关是推荐使用而不是必须使用的。  
+   全局安装 (**-g**) 开关是推荐使用而不是必须使用的。  
   
-     在安装期间，vcremote 将被安装在你的 Mac 上，同时将激活开发人员模式。 同时还会安装[Homebrew](http://brew.sh/) 以及 vcremote lib 和 vcremote-utils 这两个 npm 包。  
+   在安装期间，vcremote 将被安装在你的 Mac 上，同时将激活开发人员模式。 同时还会安装[Homebrew](http://brew.sh/) 以及 vcremote lib 和 vcremote-utils 这两个 npm 包。  
   
-    > [!NOTE]
-    >  若要安装 Homebrew，你必须具有 sudo（管理员）访问权限。 如果你不想以 sudo 份安装 vcremote，你可以在 usr/local 位置手动安装 Homebrew 并将其 bin 文件夹添加到你的路径。 有关详细信息，请参阅 [Homebrew 文档](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手动启用开发者模式，请在 Terminal 应用中输入以下命令：`DevToolsSecurity –enable`  
+  > [!NOTE]
+  >  若要安装 Homebrew，你必须具有 sudo（管理员）访问权限。 如果你不想以 sudo 份安装 vcremote，你可以在 usr/local 位置手动安装 Homebrew 并将其 bin 文件夹添加到你的路径。 有关详细信息，请参阅 [Homebrew 文档](https://github.com/Homebrew/homebrew/wiki/Installation)。 若要手动启用开发者模式，请在 Terminal 应用中输入以下命令：`DevToolsSecurity –enable`  
   
- 如果更新到新版本的 Visual Studio，那么必须将远程代理也更新到最新版本。 若要更新远程代理，请重复下载并安装远程代理的步骤。  
+  如果更新到新版本的 Visual Studio，那么必须将远程代理也更新到最新版本。 若要更新远程代理，请重复下载并安装远程代理的步骤。  
   
 ##  <a name="Start"></a> 启动远程代理  
  必须运行远程代理才能通过 Visual Studio 生成并运行 iOS 代码。 Visual Studio 必须先与远程代理配对，然后才能进行通信。 默认情况下，远程代理在安全的连接模式下运行，此模式下需要 PIN 才能与 Visual Studio 配对。  
   
 ###  <a name="RemoteAgentStartServer"></a> 若要启动远程代理  
   
--   在 Mac 上的 Terminal 应用中，输入：  
+- 在 Mac 上的 Terminal 应用中，输入：  
   
-     `vcremote`  
+   `vcremote`  
   
-     这将启动默认生成目录为 ~/vcremote 的远程代理。 有关其他配置选项，请参阅 [Configure the remote agent on the Mac](#ConfigureMac)。  
+   这将启动默认生成目录为 ~/vcremote 的远程代理。 有关其他配置选项，请参阅 [Configure the remote agent on the Mac](#ConfigureMac)。  
   
- 第一次启动代理和每次创建新客户端证书时，将向你提供在 Visual Studio 中配置代理所需的信息，包括主机名、端口和 PIN。  
+  第一次启动代理和每次创建新客户端证书时，将向你提供在 Visual Studio 中配置代理所需的信息，包括主机名、端口和 PIN。  
   
- ![使用 vcremote 生成安全 PIN](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
+  ![使用 vcremote 生成安全 PIN](../cross-platform/media/cppmdd-vcremote-generateclientcert.png "CPPMDD_vcremote_generateClientCert")  
   
- 如果打算在 Visual Studio 中使用主机名配置远程代理，请使用该主机名从 Windows 对 Mac 进行 ping 操作，以确认它是可连接的。 否则，你可能需要使用 IP 地址。  
+  如果打算在 Visual Studio 中使用主机名配置远程代理，请使用该主机名从 Windows 对 Mac 进行 ping 操作，以确认它是可连接的。 否则，你可能需要使用 IP 地址。  
   
- 生成的 PIN 是一次性的，并仅在有限时间内有效。 如果在此有限时间内未将 Visual Studio 与远程代理进行配对，则需要生成一个新的 PIN。 有关详细信息，请参阅 [Generate a new security PIN](#GeneratePIN)。  
+  生成的 PIN 是一次性的，并仅在有限时间内有效。 如果在此有限时间内未将 Visual Studio 与远程代理进行配对，则需要生成一个新的 PIN。 有关详细信息，请参阅 [Generate a new security PIN](#GeneratePIN)。  
   
- 你可以在非安全模式下使用远程代理。 在非安全模式下，无需使用 PIN 即可将远程代理与 Visual Studio 进行配对。  
+  你可以在非安全模式下使用远程代理。 在非安全模式下，无需使用 PIN 即可将远程代理与 Visual Studio 进行配对。  
   
 #### <a name="to-disable-secured-connection-mode"></a>禁用安全连接模式  
   
@@ -132,11 +132,11 @@ ms.locfileid: "49295277"
   
 #### <a name="to-enable-secured-connection-mode"></a>启用安全连接模式  
   
--   若要启用安全连接模式，请输入此命令：  
+- 若要启用安全连接模式，请输入此命令：  
   
-     `vcremote --secure true`  
+   `vcremote --secure true`  
   
- 启动远程代理后，即可从 Visual Studio 使用该代理，直到你停用它。  
+  启动远程代理后，即可从 Visual Studio 使用该代理，直到你停用它。  
   
 #### <a name="to-stop-the-remote-agent"></a>停用远程代理  
   
@@ -147,36 +147,36 @@ ms.locfileid: "49295277"
   
 #### <a name="to-configure-the-remote-agent-from-visual-studio"></a>从 Visual Studio 配置远程代理  
   
-1.  如果代理尚未在 Mac 上运行，请遵循 [启动远程代理](#Start)中的步骤。 你的 Mac 必须正在运行 vcremote，Visual Studio 才能顺利配对、连接和生成项目。  
+1. 如果代理尚未在 Mac 上运行，请遵循 [启动远程代理](#Start)中的步骤。 你的 Mac 必须正在运行 vcremote，Visual Studio 才能顺利配对、连接和生成项目。  
   
-2.  在你的 Mac 上，获取 Mac 的主机名或 IP 地址。  
+2. 在你的 Mac 上，获取 Mac 的主机名或 IP 地址。  
   
-     可以通过在终端窗口中使用 **ifconfig** 命令来获取 IP 地址。 请使用活动网络接口下列出的 inet 地址。  
+    可以通过在终端窗口中使用 **ifconfig** 命令来获取 IP 地址。 请使用活动网络接口下列出的 inet 地址。  
   
-3.  在 Visual Studio 菜单栏上，依次选择“工具”和“选项”。  
+3. 在 Visual Studio 菜单栏上，依次选择“工具”和“选项”。  
   
-4.  在“选项”对话框中，展开“跨平台”、“C++”和“iOS”。  
+4. 在“选项”对话框中，展开“跨平台”、“C++”和“iOS”。  
   
-5.  在“主机名”  和“端口”  字段，输入远程代理在启动时指定的值。 主机名可以是 DNS 名或 Mac 的 IP 地址。 默认端口为 3030。  
+5. 在“主机名”  和“端口”  字段，输入远程代理在启动时指定的值。 主机名可以是 DNS 名或 Mac 的 IP 地址。 默认端口为 3030。  
   
-    > [!NOTE]
-    >  如果无法使用主机名 ping Mac，则可能需要使用 IP 地址。  
+   > [!NOTE]
+   >  如果无法使用主机名 ping Mac，则可能需要使用 IP 地址。  
   
-6.  如果以默认安全连接模式使用远程代理，请勾选“安全”  复选框，然后在 **Pin** 字段输入由远程代理指定的 PIN 值。 如果以非安全连接模式使用远程代理，请清除“安全”  复选框并将 **Pin** 字段留空。  
+6. 如果以默认安全连接模式使用远程代理，请勾选“安全”  复选框，然后在 **Pin** 字段输入由远程代理指定的 PIN 值。 如果以非安全连接模式使用远程代理，请清除“安全”  复选框并将 **Pin** 字段留空。  
   
-7.  选择“配对”以启用配对。  
+7. 选择“配对”以启用配对。  
   
-     ![为 iOS 版本配置 vcremote 连接](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![为 iOS 版本配置 vcremote 连接](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-     除非更改主机名或端口，否则配对会一直存在。 如果在“选项”  对话框中更改了主机名或端口，要撤销此更改，请选择“还原”  按钮以还原到上一配对。  
+    除非更改主机名或端口，否则配对会一直存在。 如果在“选项”  对话框中更改了主机名或端口，要撤销此更改，请选择“还原”  按钮以还原到上一配对。  
   
-     如果配对失败，请按照 [Start the remote agent](#Start)中的步骤验证远程代理是否正在运行。 如果生成远程代理 PIN 后已经过了很久，请在 Mac 上执行 [Generate a new security PIN](#GeneratePIN) 中的步骤，然后重试。 如果你使用的是 Mac 的主机名，请转而尝试在“主机名”  字段中使用 IP 地址。  
+    如果配对失败，请按照 [Start the remote agent](#Start)中的步骤验证远程代理是否正在运行。 如果生成远程代理 PIN 后已经过了很久，请在 Mac 上执行 [Generate a new security PIN](#GeneratePIN) 中的步骤，然后重试。 如果你使用的是 Mac 的主机名，请转而尝试在“主机名”  字段中使用 IP 地址。  
   
-8.  更新“远程根目录”  字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。  
+8. 更新“远程根目录”  字段中的文件夹名称，以在 Mac 上的主 (~) 目录中指定远程代理所用的文件夹。 默认情况下，远程代理会使用 /Users/`username`/vcremote 作为远程根目录。  
   
 9. 选择“确定”  以保存远程配对连接设置。  
   
- 你每次在 Visual Studio 时，它会使用相同信息连接到 Mac 上的远程代理。 除非你在 Mac 上生成了新的安全证书，或其主机名或 IP 地址发生了更改，否则，你无需再次将 Visual Studio 与远程代理进行配对。  
+   你每次在 Visual Studio 时，它会使用相同信息连接到 Mac 上的远程代理。 除非你在 Mac 上生成了新的安全证书，或其主机名或 IP 地址发生了更改，否则，你无需再次将 Visual Studio 与远程代理进行配对。  
   
 ##  <a name="GeneratePIN"></a> Generate a new security PIN  
  当你第一次启动远程代理时，生成的 PIN 在有限的时间（默认 10 分钟）内有效。 如果在此有限时间段内未将 Visual Studio 与远程代理进行配对，则需要生成一个新的 PIN。  

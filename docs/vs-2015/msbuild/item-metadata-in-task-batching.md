@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9c63936fb78d2de58a9ae1c937a9f8f536a8714c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c117f6864aadd7c981aa2b89302c06ccfd6c9768
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256979"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923779"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49256979"
   
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 能够基于项元数据将项列表划分为不同类别或批，并对每个批一次运行一个任务。 要准确了解哪个批中正在传递什么项可能比较困难。 本主题介绍了以下涉及批处理的常见方案。  
   
--   将一个项列表划分为多个批  
+- 将一个项列表划分为多个批  
   
--   将多个项列表划分为多个批  
+- 将多个项列表划分为多个批  
   
--   一次对一个项进行批处理  
+- 一次对一个项进行批处理  
   
--   筛选项列表  
+- 筛选项列表  
   
- 有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 批处理的详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。  
+  有关 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 批处理的详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。  
   
 ## <a name="dividing-an-item-list-into-batches"></a>将一个项列表划分为多个批  
  通过批处理可基于项元数据将一个项列表划分为不同的批，并将其中每个批单独传递到任务。 这对生成附属程序集非常有用。  

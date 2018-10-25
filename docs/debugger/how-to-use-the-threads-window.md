@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 65626bc483d7794c2adae141903783238a97eddd
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468460"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933555"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>演练： 调试多线程应用程序在 Visual Studio 中使用线程窗口
 Visual Studio 提供了**线程**窗口和其他用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用**线程**窗口和**调试位置**工具栏。 有关其他工具的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 本教程中，只需要几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。   
@@ -49,7 +49,7 @@ Visual Studio 提供了**线程**窗口和其他用户界面元素，以帮助�
   
 6.  删除出现在源代码文件中的代码并替换该主题的"创建线程"的部分中显示的示例代码[创建线程并传递数据的开始时间](/dotnet/standard/threading/creating-threads-and-passing-data-at-start-time)。  
   
-7.  上**文件**菜单上，单击**全部保存**。  
+7.  在“文件”  菜单上，单击“全部保存” 。  
   
 #### <a name="to-begin-the-tutorial"></a>若要开始学习教程  
   
@@ -72,29 +72,29 @@ Visual Studio 提供了**线程**窗口和其他用户界面元素，以帮助�
   
 #### <a name="to-start-debugging"></a>开始调试  
   
-1.  单击左滚动条槽中`Console.WriteLine`语句将新断点。  
+1. 单击左滚动条槽中`Console.WriteLine`语句将新断点。  
   
-     在源代码编辑器左侧的滚动条槽，将显示一个红色圆圈。 这表示现在已在该位置设置了一个断点。  
+    在源代码编辑器左侧的滚动条槽，将显示一个红色圆圈。 这表示现在已在该位置设置了一个断点。  
   
-2.  上**调试**菜单上，单击**开始调试**(**F5**)。  
+2. 上**调试**菜单上，单击**开始调试**(**F5**)。  
   
-     调试开始，您的控制台应用程序开始运行，随后在断点处停止。  
+    调试开始，您的控制台应用程序开始运行，随后在断点处停止。  
   
-3.  如果此时控制台应用程序窗口具有焦点，请在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 窗口中单击以使焦点返回到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+3. 如果此时控制台应用程序窗口具有焦点，请在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 窗口中单击以使焦点返回到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-4.  在源代码编辑器中，找到包含以下代码行：  
+4. 在源代码编辑器中，找到包含以下代码行：  
   
-    ```VB  
-    Thread.Sleep(5000)   
-    ```  
+   ```VB  
+   Thread.Sleep(5000)   
+   ```  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    Thread::Sleep(3000);  
-    ```
+   ```C++  
+   Thread::Sleep(3000);  
+   ```
   
 #### <a name="to-discover-the-thread-marker"></a>发现线程标记  
 

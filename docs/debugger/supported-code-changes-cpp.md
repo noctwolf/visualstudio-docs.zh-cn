@@ -1,5 +1,5 @@
 ---
-title: 受支持的代码更改 （c + +） |Microsoft 文档
+title: 支持代码更改 （c + +） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb97c08b8673854e0fe0d0bbd64efbe038227c43
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c1d4333014f63bec73c13b3a7b1d5f9c7d59697f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31477032"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854112"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。  
@@ -40,38 +40,38 @@ Visual C++ 的“编辑并继续”处理大多数类型的代码更改。 但�
 ##  <a name="BKMK_Unsupported_changes"></a> 不支持的更改  
  在调试会话期间，不能应用下列 C/C++ 更改：  
   
--   对全局或静态数据的大多数更改。  
+- 对全局或静态数据的大多数更改。  
   
--   对从其他计算机复制并且未在本地生成的可执行文件的更改。  
+- 对从其他计算机复制并且未在本地生成的可执行文件的更改。  
   
--   对影响对象（如类的数据成员）的布局的数据类型的更改。  
+- 对影响对象（如类的数据成员）的布局的数据类型的更改。  
   
--   添加 64k 字节以上的新代码或数据。  
+- 添加 64k 字节以上的新代码或数据。  
   
--   添加要求在指令指针前存在构造函数的变量。  
+- 添加要求在指令指针前存在构造函数的变量。  
   
--   影响需要运行时初始化的代码的更改。  
+- 影响需要运行时初始化的代码的更改。  
   
--   在某些实例中，添加异常处理程序。  
+- 在某些实例中，添加异常处理程序。  
   
--   对资源文件的更改。  
+- 对资源文件的更改。  
   
--   对只读文件中的代码的更改。  
+- 对只读文件中的代码的更改。  
   
--   对没有相应的 PDB 文件的代码的更改。  
+- 对没有相应的 PDB 文件的代码的更改。  
   
--   对没有对象文件的代码的更改。  
+- 对没有对象文件的代码的更改。  
   
- 如果进行了上面某项更改，然后尝试应用代码更改，则 **“输出”** 窗口中会出现错误或警告消息。  
+  如果进行了上面某项更改，然后尝试应用代码更改，则 **“输出”** 窗口中会出现错误或警告消息。  
   
--   “编辑并继续”不更新静态库。 如果您更改了静态库，则会继续执行老版本，且不发出任何警告。  
+- “编辑并继续”不更新静态库。 如果您更改了静态库，则会继续执行老版本，且不发出任何警告。  
   
 ##  <a name="BKMK_Unsupported_scenarios"></a> 不支持的方案  
  在以下调试方案中，C/C++ 的“编辑并继续”不可用：  
   
 -   调试使用 [/Zo（增强优化调试）](/cpp/build/reference/zo-enhance-optimized-debugging)编译的本机应用  
   
--   在 Visual Studio 2015 Update 1，调试 UWP 应用或组件之前的 Visual Studio 的版本。 从 Visual Studio 2015 Update 1 开始，你可以使用编辑并继续在 UWP c + + 应用和 DirectX 应用，因为它现在支持`/ZI`编译器开关`/bigobj`切换。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。  
+-   在 Visual Studio 2015 Update 1，调试 UWP 应用或组件之前的 Visual Studio 的版本。 从 Visual Studio 2015 Update 1 开始，你可以使用编辑并继续在 UWP c + + 应用和 DirectX 应用程序，因为它现在支持`/ZI`编译器开关与`/bigobj`切换。 你还可以使用具有二进制文件（使用 `/FASTLINK` 开关。  
   
 -   在 Windows 98 上进行调试。  
   

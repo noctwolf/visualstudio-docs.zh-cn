@@ -23,30 +23,30 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f14358307c2c95e1b796695a0253a520ea00e3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8354c850d1f55d229ce3f1205ca0bf0fe5f13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837069"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>如何：使用“并行监视”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列会显示在**并行监视**窗口：  
   
--   标记列，可在其中标记要特别注意的线程。  
+- 标记列，可在其中标记要特别注意的线程。  
   
--   帧列，其中箭头指示选定的帧。  
+- 帧列，其中箭头指示选定的帧。  
   
--   可配置的列，可显示计算机、进程、平铺、任务和线程。  
+- 可配置的列，可显示计算机、进程、平铺、任务和线程。  
   
-    > [!TIP]
-    >  必须打开**并行任务**窗口中显示中的任务信息**并行监视**窗口。  
+  > [!TIP]
+  >  必须打开**并行任务**窗口中显示中的任务信息**并行监视**窗口。  
   
--   **\<添加监视 >** 列中，您可以在其中输入要监视的表达式。  
+- **\<添加监视 >** 列中，您可以在其中输入要监视的表达式。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>显示“并行监视”窗口  
   

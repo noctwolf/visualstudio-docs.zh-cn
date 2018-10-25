@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadPropertyNames |Microsoft 文档
+title: IDiaPropertyStorage::ReadPropertyNames |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a13ac0e3a1af8dc20fe63f832e7a19d7bf40c271
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 4d51eaed785932703a5eb97714be8dc7b407fc81
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891812"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
 检索对应的字符串名称给定属性标识符。  
@@ -39,16 +39,16 @@ HRESULT ReadPropertyNames (
  [in]中的属性 id 数`rgpropid`。  
   
  `rgpropid`  
- [in]要为其获取名称的属性 id 的数组 (`PROPID`作为 WTypes.h 中定义`ULONG`)。  
+ [in]要为其获取名称的属性 id 的数组 (`PROPID`定义为 WTypes.h 中`ULONG`)。  
   
  `rglpwstrName`  
- [在中，out]指定的属性 id 的属性名称的数组。 该数组必须是预分配，以容纳的属性名称请求的数，并且必须能够以容纳至少`cpropid``BSTR`字符串。  
+ [in、 out]指定的属性 id 的属性名称的数组。 数组必须是预分配用于保存请求的数目的属性名称，并且必须能够至少容纳`cpropid``BSTR`字符串。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 返回的属性名称必须被释放 (通过调用`SysFreeString`函数) 它们不再需要时。  
+ 返回的属性名称，必须释放 (通过调用`SysFreeString`函数) 在不再需要时。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

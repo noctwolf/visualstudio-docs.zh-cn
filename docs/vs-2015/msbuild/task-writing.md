@@ -18,12 +18,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4b15434c75fb4cd2a295789794f6c9f8eb882bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914705"
 ---
 # <a name="task-writing"></a>任务写入
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49254886"
   
  实现任务时，有两种方法可供选择：  
   
--   直接实现 <xref:Microsoft.Build.Framework.ITask> 接口。  
+- 直接实现 <xref:Microsoft.Build.Framework.ITask> 接口。  
   
--   从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Task> 中派生类。 任务实现 ITask，并提供了一些 ITask 成员的默认实现。 此外，日志记录更为简单。  
+- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Task> 中派生类。 任务实现 ITask，并提供了一些 ITask 成员的默认实现。 此外，日志记录更为简单。  
   
- 在这两种情况下，都必须向类添加一个名为 `Execute` 的方法，也就是在任务运行时调用的方法。 该方法不带任何参数并返回一个 `Boolean` 值：如果任务成功，则返回 `true`；如果失败，则返回 `false`。 以下示例显示一个不执行任何操作并返回 `true` 的任务。  
+  在这两种情况下，都必须向类添加一个名为 `Execute` 的方法，也就是在任务运行时调用的方法。 该方法不带任何参数并返回一个 `Boolean` 值：如果任务成功，则返回 `true`；如果失败，则返回 `false`。 以下示例显示一个不执行任何操作并返回 `true` 的任务。  
   
 ```  
 using System;  

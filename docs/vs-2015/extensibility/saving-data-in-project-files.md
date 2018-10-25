@@ -17,23 +17,23 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3b46bffab25420b89ddb16c5eccfa64784d66e82
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d7121395b54716096e562a8fe14bb38103f4bd8c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274438"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863524"
 ---
 # <a name="saving-data-in-project-files"></a>将数据保存在项目文件中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 项目子类型可以保存和检索子类型特定的项目文件中的数据。 托管包框架 (MPF) 提供了两个接口来完成此任务：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>接口允许对访问属性值从**MSBuild**项目文件的部分。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>用户需要加载或保存生成相关的数据时可调用的任何用户。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>接口允许对访问属性值从**MSBuild**项目文件的部分。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>用户需要加载或保存生成相关的数据时可调用的任何用户。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用于保存非生成自由格式的 XML 中的相关的数据。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>由调用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]每当[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]永久保存在项目文件中的非生成相关的数据。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用于保存非生成自由格式的 XML 中的相关的数据。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>由调用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]每当[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]永久保存在项目文件中的非生成相关的数据。  
   
- 有关如何保留生成和非生成相关的数据的详细信息，请参阅[MSBuild 项目文件中保存数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
+  有关如何保留生成和非生成相关的数据的详细信息，请参阅[MSBuild 项目文件中保存数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
   
 ## <a name="saving-and-retrieving-build-related-data"></a>保存和检索生成的相关数据  
   

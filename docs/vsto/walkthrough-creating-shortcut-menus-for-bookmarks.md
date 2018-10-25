@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8153f0120259eec8ad284b0717e58be750e3b99d
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: ff261fd6032f3c666dfa3d745508586ffede6504
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38783837"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884077"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练： 创建书签的快捷菜单
   本演练演示如何创建快捷方式菜单<xref:Microsoft.Office.Tools.Word.Bookmark>Word 的文档级自定义项中的控件。 后在用户右键单击一个书签中的文本，快捷菜单会显示，并将用于设置文本格式的用户选项。  
@@ -32,15 +32,15 @@ ms.locfileid: "38783837"
   
  本演练阐释了以下任务：  
   
--   [创建项目](#BKMK_CreateProject)。  
+- [创建项目](#BKMK_CreateProject)。  
   
--   [向文档添加文本和书签](#BKMK_addtextandbookmarks)。  
+- [向文档添加文本和书签](#BKMK_addtextandbookmarks)。  
   
--   [将命令添加到快捷菜单](#BKMK_AddCmndsShortMenu)。  
+- [将命令添加到快捷菜单](#BKMK_AddCmndsShortMenu)。  
   
--   [在书签中的文本格式](#BKMK_formattextbkmk)。  
+- [在书签中的文本格式](#BKMK_formattextbkmk)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -69,22 +69,22 @@ ms.locfileid: "38783837"
   
 ### <a name="to-add-a-bookmark-control-to-your-document"></a>若要向文档添加书签控件  
   
-1.  在中**工具箱**，从**Word 控件**选项卡上，拖动<xref:Microsoft.Office.Tools.Word.Bookmark>到你的文档的控件。  
+1. 在中**工具箱**，从**Word 控件**选项卡上，拖动<xref:Microsoft.Office.Tools.Word.Bookmark>到你的文档的控件。  
   
-     **添加书签控件**对话框随即出现。  
+    **添加书签控件**对话框随即出现。  
   
-2.  选择"创建快捷菜单，右键单击文本时"的单词，然后单击**确定**。  
+2. 选择"创建快捷菜单，右键单击文本时"的单词，然后单击**确定**。  
   
-     `bookmark1` 将添加到文档。  
+    `bookmark1` 将添加到文档。  
   
-3.  添加另一个<xref:Microsoft.Office.Tools.Word.Bookmark>控制对单词"右键单击一个书签中的文本"。  
+3. 添加另一个<xref:Microsoft.Office.Tools.Word.Bookmark>控制对单词"右键单击一个书签中的文本"。  
   
-     `bookmark2` 将添加到文档。  
+    `bookmark2` 将添加到文档。  
   
-    > [!NOTE]  
-    >  "右键单击文本"会同时出现在单词`bookmark1`和`bookmark2`。  
+   > [!NOTE]  
+   >  "右键单击文本"会同时出现在单词`bookmark1`和`bookmark2`。  
   
- 当在设计时向文档添加书签时<xref:Microsoft.Office.Tools.Word.Bookmark>创建控件。 您可以对该书签的多个事件进行编程。 可以在编写代码<xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>事件的书签，以便当用户右键单击该书签中的文本将出现快捷菜单。  
+   当在设计时向文档添加书签时<xref:Microsoft.Office.Tools.Word.Bookmark>创建控件。 您可以对该书签的多个事件进行编程。 可以在编写代码<xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>事件的书签，以便当用户右键单击该书签中的文本将出现快捷菜单。  
   
 ##  <a name="BKMK_AddCmndsShortMenu"></a> 将命令添加到快捷菜单  
  向右键单击该文档时，将显示的快捷菜单添加按钮。  

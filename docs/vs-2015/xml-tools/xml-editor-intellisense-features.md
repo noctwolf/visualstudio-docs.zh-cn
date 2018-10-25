@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0e2b3452f64e97d56cae56a2575caa6fea00d1f5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296019"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830738"
 ---
 # <a name="xml-editor-intellisense-features"></a>XML 编辑器的 IntelliSense 功能
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
 ## <a name="intellisense-in-an-xslt-document"></a>XSLT 文档中的 IntelliSense  
  将命名模板或特性添加到 XSLT 文档中之后，便可以使用 IntelliSense 插入以下内容：  
   
--   特性集名称。  
+- 特性集名称。  
   
--   模板模式。  
+- 模板模式。  
   
--   模板名称。  
+- 模板名称。  
   
--   给定模式的参数名称。  
+- 给定模式的参数名称。  
   
--   给定命名模板的参数名称。  
+- 给定命名模板的参数名称。  
   
- 有关详细信息，请参阅[演练： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主题。  
+  有关详细信息，请参阅[演练： 使用 XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)主题。  
   
 ## <a name="auto-completion"></a>自动完成  
  “XML 编辑器”还通过为您填写必需的 XML 语法，使编辑 XML 更加容易。 例如，如果您键入以下开始标记：  
@@ -72,19 +72,19 @@ XML 编辑器提供了完整的 IntelliSense 功能，可与 Visual Studio 中�
   
  同样，“XML 编辑器”还为您自动插入以下 XML 语法：  
   
--   结束处理指令：`?>`  
+- 结束处理指令：`?>`  
   
--   结束 CDATA 块：`]]>`  
+- 结束 CDATA 块：`]]>`  
   
--   结束注释：`-->`  
+- 结束注释：`-->`  
   
--   结束 DTD 声明：`>`  
+- 结束 DTD 声明：`>`  
   
- 如果从智能感知列表中选择了命名空间限定的元素或特性，并且该元素或特性的命名空间尚不在相应范围内，“XML 编辑器”还可以插入命名空间声明。  
+  如果从智能感知列表中选择了命名空间限定的元素或特性，并且该元素或特性的命名空间尚不在相应范围内，“XML 编辑器”还可以插入命名空间声明。  
   
- 例如，如果从智能感知列表中选择了 `e:Book` 元素，该元素的前缀绑定到的 `http://books` 命名空间尚未在文档中声明，“XML 编辑器”将为您插入所需的命名空间声明。 以下是生成的 XML 文本：  
+  例如，如果从智能感知列表中选择了 `e:Book` 元素，该元素的前缀绑定到的 `http://books` 命名空间尚未在文档中声明，“XML 编辑器”将为您插入所需的命名空间声明。 以下是生成的 XML 文本：  
   
- `<e:Book xmlns:e="http://books"`  
+  `<e:Book xmlns:e="http://books"`  
   
 ## <a name="brace-matching"></a>括号匹配  
  “XML 编辑器”提供括号突出显示功能，针对您刚封闭的元素提供即时反馈。 您也可以使用快捷键 (CTRL+]) 从一个括号跳转到匹配的括号。  

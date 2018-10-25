@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Put_registervalue |Microsoft 文档'
+title: 'Idiastackwalkframe:: Put_registervalue |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a2188b412572b69abcf8bd3966c66e93d98ae2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 554be793ba1e41a5a8540d67c1b3f0585ad8664e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916371"
 ---
 # <a name="idiastackwalkframeputregistervalue"></a>IDiaStackWalkFrame::put_registerValue
 设置寄存器的值。  
@@ -35,7 +35,7 @@ HRESULT put_registerValue (
   
 #### <a name="parameters"></a>参数  
  `index`  
- [in]取值范围为[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)枚举指定要写入的寄存器。  
+ [in]中的值[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)枚举，它指定要写入到的寄存器。  
   
  `NewVal`  
  [in]新的注册值。  

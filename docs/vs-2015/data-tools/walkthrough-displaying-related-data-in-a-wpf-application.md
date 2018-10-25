@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 922d33e52e02a0d2cde9c17f799f6e35f1ae2db4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fc90acf94fde0ef815fc3a487412bba8e8257ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253183"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913132"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>演练：在 WPF 应用程序中显示相关数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,28 +36,28 @@ ms.locfileid: "49253183"
   
  本演练阐释了以下任务：  
   
--   创建 WPF 应用程序和实体数据模型的 AdventureWorksLT 示例数据库中的数据生成的。  
+- 创建 WPF 应用程序和实体数据模型的 AdventureWorksLT 示例数据库中的数据生成的。  
   
--   创建一组数据绑定控件显示订单的一组的概述信息。 通过将父实体从创建控件**数据源**到窗口**WPF 设计器**。  
+- 创建一组数据绑定控件显示订单的一组的概述信息。 通过将父实体从创建控件**数据源**到窗口**WPF 设计器**。  
   
--   创建<xref:System.Windows.Controls.DataGrid>选择顺序显示每个相关的详细信息的控件。 通过将子实体从创建控件**数据源**窗口中的一个窗口**WPF 设计器**。  
+- 创建<xref:System.Windows.Controls.DataGrid>选择顺序显示每个相关的详细信息的控件。 通过将子实体从创建控件**数据源**窗口中的一个窗口**WPF 设计器**。  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
--   对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
+- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
   
- 事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
+  事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
--   实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
--   使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
--   WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="creating-the-project"></a>创建项目  
  创建新的 WPF 项目以显示订单记录。  
@@ -85,80 +85,80 @@ ms.locfileid: "49253183"
   
 #### <a name="to-create-an-entity-data-model"></a>创建实体数据模型  
   
-1.  上**数据**菜单上，单击**添加新数据源**以打开**数据源配置向导**。  
+1. 上**数据**菜单上，单击**添加新数据源**以打开**数据源配置向导**。  
   
-2.  上**选择数据源类型**页上，单击**数据库**，然后单击**下一步**。  
+2. 上**选择数据源类型**页上，单击**数据库**，然后单击**下一步**。  
   
-3.  上**选择数据库模型**页上，单击**实体数据模型**，然后单击**下一步**。  
+3. 上**选择数据库模型**页上，单击**实体数据模型**，然后单击**下一步**。  
   
-4.  上**选择模型内容**页上，单击**从数据库生成**，然后单击**下一步**。  
+4. 上**选择模型内容**页上，单击**从数据库生成**，然后单击**下一步**。  
   
-5.  上**选择数据连接**页上，执行下列操作之一：  
+5. 上**选择数据连接**页上，执行下列操作之一：  
   
-    -   如果下拉列表中包含到 AdventureWorksLT 示例数据库的数据连接，请选择该连接。  
+   - 如果下拉列表中包含到 AdventureWorksLT 示例数据库的数据连接，请选择该连接。  
   
-         或  
+      或  
   
-    -   单击**新的连接**并创建与 AdventureWorksLT 数据库的连接。  
+   - 单击**新的连接**并创建与 AdventureWorksLT 数据库的连接。  
   
      请确保**将实体连接设置保存在 App.Config 作为**选项选择后，然后依次**下一步**。  
   
-6.  上**选择数据库对象**页上，展开**表**，，然后选择以下表：  
+6. 上**选择数据库对象**页上，展开**表**，，然后选择以下表：  
   
-    -   **销售订单详细信息**  
+   -   **销售订单详细信息**  
   
-    -   **SalesOrderHeader**  
+   -   **SalesOrderHeader**  
   
-7.  单击 **“完成”**。  
+7. 单击 **“完成”**。  
   
-8.  生成项目。  
+8. 生成项目。  
   
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>创建数据绑定控件显示订单的  
  创建通过拖动显示订单记录的控件`SalesOrderHeaders`从实体**数据源**到 WPF 设计器窗口。  
   
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>若要创建显示订单记录的数据绑定控件  
   
-1.  在中**解决方案资源管理器**，双击 MainWindow.xaml。  
+1. 在中**解决方案资源管理器**，双击 MainWindow.xaml。  
   
-     将在 WPF 设计器中打开相应的窗口。  
+    将在 WPF 设计器中打开相应的窗口。  
   
-2.  编辑 XAML，因此**高度**并**宽度**属性设置为 800  
+2. 编辑 XAML，因此**高度**并**宽度**属性设置为 800  
   
-3.  在中**数据源**窗口中，单击下拉列表菜单**SalesOrderHeaders**节点，然后选择**详细信息**。  
+3. 在中**数据源**窗口中，单击下拉列表菜单**SalesOrderHeaders**节点，然后选择**详细信息**。  
   
-4.  展开**SalesOrderHeaders**节点。  
+4. 展开**SalesOrderHeaders**节点。  
   
-5.  单击下拉列表菜单旁边**SalesOrderID** ，然后选择**组合框**。  
+5. 单击下拉列表菜单旁边**SalesOrderID** ，然后选择**组合框**。  
   
-6.  以下子节点的每个**SalesOrderHeaders**节点，单击下拉列表菜单，接下来的节点，然后选择**None**:  
+6. 以下子节点的每个**SalesOrderHeaders**节点，单击下拉列表菜单，接下来的节点，然后选择**None**:  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **类型 OnlineOrderFlag**  
+   - **类型 OnlineOrderFlag**  
   
-    -   **ShipToAddressID**  
+   - **ShipToAddressID**  
   
-    -   **BillToAddressID**  
+   - **BillToAddressID**  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **小计**  
+   - **小计**  
   
-    -   **TaxAmt**  
+   - **TaxAmt**  
   
-    -   **运费**  
+   - **运费**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
      此操作将阻止 Visual Studio 在下一步中为这些节点创建数据绑定控件。 对于本演练，假定最终用户不需要查看此数据。  
   
-7.  从**数据源**窗口中，拖动**SalesOrderHeaders**节点中的窗口**WPF 设计器**。  
+7. 从**数据源**窗口中，拖动**SalesOrderHeaders**节点中的窗口**WPF 设计器**。  
   
-     Visual Studio 将生成创建一组中的数据绑定控件的 XAML **SalesOrderHeaders**实体，并将数据加载的代码。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
+    Visual Studio 将生成创建一组中的数据绑定控件的 XAML **SalesOrderHeaders**实体，并将数据加载的代码。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-8.  在设计器中，单击组合框旁边**销售订单 ID**标签。  
+8. 在设计器中，单击组合框旁边**销售订单 ID**标签。  
   
 9. 在中**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
   
@@ -167,28 +167,28 @@ ms.locfileid: "49253183"
   
 #### <a name="to-create-a-datagrid-that-displays-the-order-details"></a>若要创建显示订单详细信息的 DataGrid  
   
-1.  在中**数据源**窗口中，找到**SalesOrderDetails**节点的子级**SalesOrderHeaders**节点。  
+1. 在中**数据源**窗口中，找到**SalesOrderDetails**节点的子级**SalesOrderHeaders**节点。  
   
-    > [!NOTE]
-    >  此外，还有**SalesOrderDetails**的对等节点**SalesOrderHeaders**节点。 请确保选择的子节点**SalesOrderHeaders**节点。  
+   > [!NOTE]
+   >  此外，还有**SalesOrderDetails**的对等节点**SalesOrderHeaders**节点。 请确保选择的子节点**SalesOrderHeaders**节点。  
   
-2.  展开子**SalesOrderDetails**节点。  
+2. 展开子**SalesOrderDetails**节点。  
   
-3.  以下子节点的每个**SalesOrderDetails**节点，单击下拉列表菜单，接下来的节点，然后选择**None**:  
+3. 以下子节点的每个**SalesOrderDetails**节点，单击下拉列表菜单，接下来的节点，然后选择**None**:  
   
-    -   **SalesOrderID**  
+   - **SalesOrderID**  
   
-    -   **SalesOrderDetailID**  
+   - **SalesOrderDetailID**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
      此操作可防止 Visual Studio 中的此数据包括<xref:System.Windows.Controls.DataGrid>下一步中创建的控件。 对于本演练，假定最终用户不需要查看此数据。  
   
-4.  从**数据源**窗口中，将子**SalesOrderDetails**节点中的窗口**WPF 设计器**。  
+4. 从**数据源**窗口中，将子**SalesOrderDetails**节点中的窗口**WPF 设计器**。  
   
-     Visual Studio 将生成 XAML 来定义新的数据绑定<xref:System.Windows.Controls.DataGrid>控件，且该控件将显示在设计器中。 Visual Studio 还会更新生成`GetSalesOrderHeadersQuery`要包括中的数据的代码隐藏文件中的方法**SalesOrderDetails**实体。  
+    Visual Studio 将生成 XAML 来定义新的数据绑定<xref:System.Windows.Controls.DataGrid>控件，且该控件将显示在设计器中。 Visual Studio 还会更新生成`GetSalesOrderHeadersQuery`要包括中的数据的代码隐藏文件中的方法**SalesOrderDetails**实体。  
   
 ## <a name="testing-the-application"></a>测试应用程序  
  生成并运行应用程序以验证它显示订单记录。  

@@ -17,12 +17,12 @@ ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4c65705cd38ef202d06e6461f59e5b4e5ae5c9a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2d5ad6c3c97fc88ef938caaccad1627dbc5859c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911897"
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49225285"
 ## <a name="using-expression-evaluators"></a>使用表达式计算器  
  使用创建表达式[ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)方法，按如下所示：  
   
-1.  调试引擎 (DE) 实现[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口。  
+1. 调试引擎 (DE) 实现[IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md)接口。  
   
-2.  调试包获取`IDebugExpressionContext2`对象从[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)接口，然后调用`IDebugStackFrame2::ParseText`方法以获取[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。  
+2. 调试包获取`IDebugExpressionContext2`对象从[IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)接口，然后调用`IDebugStackFrame2::ParseText`方法以获取[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)对象。  
   
-3.  调试包调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法以获取表达式的值。 `IDebugExpression2::EvaluateAsync` 从命令中的即时窗口调用。 所有其他 UI 组件调用`IDebugExpression2::EvaluateSync`。  
+3. 调试包调用[EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)方法或[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法以获取表达式的值。 `IDebugExpression2::EvaluateAsync` 从命令中的即时窗口调用。 所有其他 UI 组件调用`IDebugExpression2::EvaluateSync`。  
   
-4.  表达式计算的结果是[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象，其中包含名称、 类型和表达式计算结果的值。  
+4. 表达式计算的结果是[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象，其中包含名称、 类型和表达式计算结果的值。  
   
- 在表达式计算期间 EE 需要符号提供程序组件中的信息。 符号提供程序提供了用于确定和了解分析得出的表达式的符号信息。  
+   在表达式计算期间 EE 需要符号提供程序组件中的信息。 符号提供程序提供了用于确定和了解分析得出的表达式的符号信息。  
   
- 完成异步表达式求值时，异步事件发送由通过会话调试管理器 (SDM) DE 以通知 IDE 表达式计算已完成。 同步表达式计算完成后，从调用返回计算的结果`IDebugExpression2::EvaluateSync`方法。  
+   完成异步表达式求值时，异步事件发送由通过会话调试管理器 (SDM) DE 以通知 IDE 表达式计算已完成。 同步表达式计算完成后，从调用返回计算的结果`IDebugExpression2::EvaluateSync`方法。  
   
 ## <a name="implementation-notes"></a>实现说明  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]的调试引擎预期要与使用公共语言运行时 (CLR) 接口，表达式计算器进行对话。 因此，表达式计算器，适用于[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]的调试引擎必须支持 CLR (调试接口的所有 CLR 的完整列表可在 debugref.doc，它是一部分的[!INCLUDE[winsdklong](../../includes/winsdklong-md.md)])。  

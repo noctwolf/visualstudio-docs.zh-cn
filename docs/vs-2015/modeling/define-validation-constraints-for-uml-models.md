@@ -14,12 +14,12 @@ caps.latest.revision: 49
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6f2b97f2b7f3db141bbbbe17d5cf1ab63212be81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: da21c3b8646ef69432259e4430b940824ad05dd8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176535"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920659"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>为 UML 模型定义验证约束
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,24 +51,24 @@ ms.locfileid: "49176535"
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>若要在其自身 VSIX 中创建验证扩展  
   
-1.  在“新建项目”  对话框中，在“建模项目” 下，选择“验证扩展” 。  
+1. 在“新建项目”  对话框中，在“建模项目” 下，选择“验证扩展” 。  
   
-2.  在新项目中打开 **.cs** 文件并修改类，以实现验证约束。  
+2. 在新项目中打开 **.cs** 文件并修改类，以实现验证约束。  
   
-     有关详细信息，请参阅 [评估验证约束](#Implementing)。  
+    有关详细信息，请参阅 [评估验证约束](#Implementing)。  
   
-    > [!IMPORTANT]
-    >  请确保你的 **.cs** 文件包含以下 `using` 语句：  
-    >   
-    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
+   > [!IMPORTANT]
+   >  请确保你的 **.cs** 文件包含以下 `using` 语句：  
+   >   
+   >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
-3.  你可以通过定义新的方法来添加其他约束。 若要将方法标识为验证方法，必须采用与初始验证方法相同的方式标记其特性。  
+3. 你可以通过定义新的方法来添加其他约束。 若要将方法标识为验证方法，必须采用与初始验证方法相同的方式标记其特性。  
   
-4.  按 F5 以测试你的约束。 有关详细信息，请参阅 [执行验证约束](#Executing)。  
+4. 按 F5 以测试你的约束。 有关详细信息，请参阅 [执行验证约束](#Executing)。  
   
-5.  通过将文件复制在另一台计算机上安装菜单命令**bin\\\*\\\*.vsix**生成的项目。 有关详细信息，请参阅 [安装和卸载扩展](#Installing)。  
+5. 通过将文件复制在另一台计算机上安装菜单命令**bin\\\*\\\*.vsix**生成的项目。 有关详细信息，请参阅 [安装和卸载扩展](#Installing)。  
   
- 添加其他 **.cs** 文件时，通常将需要以下 `using` 语句：  
+   添加其他 **.cs** 文件时，通常将需要以下 `using` 语句：  
   
 ```csharp  
 using System.Collections.Generic;  
@@ -272,13 +272,13 @@ public void ValidateSomething
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
--   `"error string"` 将出现在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 错误列表中  
+- `"error string"` 将出现在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 错误列表中  
   
--   `errorCode` 是一个字符串，应该是错误的唯一标识符  
+- `errorCode` 是一个字符串，应该是错误的唯一标识符  
   
--   `elementsWithError` 标识模型中的元素。 当用户双击错误报告时，将选择代表此元素的形状。  
+- `elementsWithError` 标识模型中的元素。 当用户双击错误报告时，将选择代表此元素的形状。  
   
- `LogError(),` `LogWarning()` 和 `LogMessage()` 分别将消息放入错误列表的不同部分。  
+  `LogError(),` `LogWarning()` 和 `LogMessage()` 分别将消息放入错误列表的不同部分。  
   
 ## <a name="how-validation-methods-are-applied"></a>如何应用验证方法  
  验证应用于模型中的每个元素，其中包括关系和部分较大元素，例如类的特性和操作的参数。  
@@ -389,15 +389,15 @@ context.LogError(... , usecase);
   
 #### <a name="to-uninstall-an-extension"></a>若要卸载扩展  
   
-1.  在“工具”  菜单上，选择“扩展和更新” 。  
+1. 在“工具”  菜单上，选择“扩展和更新” 。  
   
-2.  展开“已安装的扩展” 。  
+2. 展开“已安装的扩展” 。  
   
-3.  选择扩展，然后选择“卸载” 。  
+3. 选择扩展，然后选择“卸载” 。  
   
- 在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
+   在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
   
- *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ##  <a name="Example"></a> 示例  
  本示例查找元素间依赖关系中的循环。  

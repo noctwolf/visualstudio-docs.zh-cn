@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7829df456540bc303993217c577bd6be3952a198
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2a47c77ecb441d2c1277fee1a7e94e1e9a7991b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900132"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 元素
 包含一系列可选参数，这些参数将显示在通过使用 `UsingTask` `TaskFactory` 生成的任务上。 有关详细信息，请参阅 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -52,9 +52,9 @@ ms.locfileid: "39152625"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。|  
+| 元素 | 描述 |
+| - | - |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | 提供在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中注册任务的方法。 项目中可能有零个或零个以上的 `UsingTask` 元素。 |
 
 ## <a name="example"></a>示例  
  下面的示例演示如何使用 `ParameterGroup` 元素。  

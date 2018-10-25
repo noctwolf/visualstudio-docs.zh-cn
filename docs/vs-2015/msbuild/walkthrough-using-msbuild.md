@@ -16,12 +16,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5970c7612e38b33e1f25d8e19b63a1042a9b6b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56d8ea0c4b79764c1326c96b42748b8291349ac2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841412"
 ---
 # <a name="walkthrough-using-msbuild"></a>演练：使用 MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49266690"
   
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：  
   
--   创建和操作的项目文件。  
+- 创建和操作的项目文件。  
   
--   如何使用生成属性  
+- 如何使用生成属性  
   
--   如何使用生成项。  
+- 如何使用生成项。  
   
- 可从 Visual Studio 或命令窗口运行 MSBuild。 本演练将使用 Visual Studio 创建 MSBuild 项目文件。 可在 Visual Studio 中编辑项目文件，并使用命令窗口生成项目并检查结果。  
+  可从 Visual Studio 或命令窗口运行 MSBuild。 本演练将使用 Visual Studio 创建 MSBuild 项目文件。 可在 Visual Studio 中编辑项目文件，并使用命令窗口生成项目并检查结果。  
   
 ## <a name="creating-an-msbuild-project"></a>创建 MSBuild 项目  
  Visual Studio 项目系统以 MSBuild 为基础。 因此可使用 Visual Studio 轻松创建新项目文件。 本部分将创建 Visual C# 项目文件。 可选择改为创建 Visual Basic 项目文件。 在本演练的上下文中，两种项目文件的差异很小。  
@@ -77,20 +77,20 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
  生成应用程序的工作由 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 元素完成。  
   
--   任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将项目添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。  
+- 任务是工作的最小单位，换言之，它是生成的“原子”。 任务是可单独执行的组件，具有输入和输出。 目前尚没有在项目文件中引用或定义的任务。 以下各部分介绍如何将项目添加到项目文件。 有关详细信息，请参阅[任务](../msbuild/msbuild-tasks.md)主题。  
   
--   目标是任务的已命名序列。 在项目文件末尾有两个目标，它们目前包含在 HTML注释中：BeforeBuild 和 AfterBuild。  
+- 目标是任务的已命名序列。 在项目文件末尾有两个目标，它们目前包含在 HTML注释中：BeforeBuild 和 AfterBuild。  
   
-    ```  
-    <Target Name="BeforeBuild">  
-    </Target>  
-    <Target Name="AfterBuild">  
-    </Target>  
-    ```  
+  ```  
+  <Target Name="BeforeBuild">  
+  </Target>  
+  <Target Name="AfterBuild">  
+  </Target>  
+  ```  
   
-     有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)主题。  
+   有关详细信息，请参阅[目标](../msbuild/msbuild-targets.md)主题。  
   
- 项目节点具有可选的 DefaultTargets 属性，用于选择要在此例生成中生成的默认目标。  
+  项目节点具有可选的 DefaultTargets 属性，用于选择要在此例生成中生成的默认目标。  
   
 ```  
 <Project ToolsVersion="12.0" DefaultTargets="Build" ...  
@@ -111,28 +111,28 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
   
 #### <a name="to-add-a-target-and-a-task"></a>添加目标和任务  
   
-1.  将这些行添加到项目文件中，添加到 Import 语句之后：  
+1. 将这些行添加到项目文件中，添加到 Import 语句之后：  
   
-    ```  
-    <Target Name="HelloWorld">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+   </Target>  
+   ```  
   
-     这将创建名为 HelloWorld 的目标。 请注意，编辑项目文件时会拥有 Intellisense 支持。  
+    这将创建名为 HelloWorld 的目标。 请注意，编辑项目文件时会拥有 Intellisense 支持。  
   
-2.  将行添加到 HelloWorld 目标，以便生成如下所示的结果：  
+2. 将行添加到 HelloWorld 目标，以便生成如下所示的结果：  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Hello"></Message>  <Message Text="World"></Message>  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Hello"></Message>  <Message Text="World"></Message>  
+   </Target>  
+   ```  
   
-3.  保存项目文件。  
+3. 保存项目文件。  
   
- Message 任务是 MSBuild 所附带的许多任务之一。 若要了解可用任务的完整列表以及用法信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
+   Message 任务是 MSBuild 所附带的许多任务之一。 若要了解可用任务的完整列表以及用法信息，请参阅[任务参考](../msbuild/msbuild-task-reference.md)。  
   
- Message 任务将文本属性的字符串值作为输入并显示在输出设备上。 HelloWorld 目标执行 Message 任务两次：第一次显示“Hello”，第二次显示“World”。  
+   Message 任务将文本属性的字符串值作为输入并显示在输出设备上。 HelloWorld 目标执行 Message 任务两次：第一次显示“Hello”，第二次显示“World”。  
   
 ## <a name="building-the-target"></a>生成目标  
  从 **Visual Studio 命令提示符**运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 /Target 或 /t 命令行开关选择该目标。  
@@ -257,19 +257,19 @@ $(PropertyName)
   
 #### <a name="to-set-a-property-value-from-the-command-line"></a>在命令行中设置属性值  
   
-1.  在“命令窗口”输入并执行此行：  
+1. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release  
+   ```  
   
-2.  检查输出。 应看到此行：  
+2. 检查输出。 应看到此行：  
   
-    ```  
-    Configuration is Release.  
-    ```  
+   ```  
+   Configuration is Release.  
+   ```  
   
- MSBuild 创建配置属性并赋予其“发布”值。  
+   MSBuild 创建配置属性并赋予其“发布”值。  
   
 ## <a name="special-characters"></a>特殊字符  
  某些字符在 MSBuild 项目文件中具有特殊意义。 这些字符的示例包括分号 (;) 和星号 (*)。 若要将这些特殊字符用作项目文件中的文本，必须使用语法 %xx 对它们进行指定，其中 xx 表示字符的 ASCII 十六进制值。  
@@ -278,27 +278,27 @@ $(PropertyName)
   
 #### <a name="to-use-special-characters-in-the-message-task"></a>在 Message 任务中使用特殊字符  
   
-1.  从代码编辑器中使用此行替换这两个 Message 任务：  
+1. 从代码编辑器中使用此行替换这两个 Message 任务：  
   
-    ```  
-    <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
-    ```  
+   ```  
+   <Message Text="%24(Configuration) is %22$(Configuration)%22" />  
+   ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  检查输出。 应看到此行：  
+4. 检查输出。 应看到此行：  
   
-    ```  
-    $(Configuration) is "Debug"  
-    ```  
+   ```  
+   $(Configuration) is "Debug"  
+   ```  
   
- 有关详细信息，请参阅 [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)。  
+   有关详细信息，请参阅 [MSBuild 特殊字符](../msbuild/msbuild-special-characters.md)。  
   
 ## <a name="build-items"></a>生成项  
  项是一段信息，通常是文件名，用作生成系统的输入。 例如，表示源文件的项集合可能会传递到名为“Compile”的任务，以将它们编译为程序集。  
@@ -338,31 +338,31 @@ $(PropertyName)
   
 #### <a name="to-examine-item-type-values"></a>检查项类型值  
   
-1.  从代码编辑器中使用以下代码替换 HelloWorld 目标任务：  
+1. 从代码编辑器中使用以下代码替换 HelloWorld 目标任务：  
   
-    ```  
-    <Target Name="HelloWorld">  
-      <Message Text="Compile item type contains @(Compile)" />  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="HelloWorld">  
+     <Message Text="Compile item type contains @(Compile)" />  
+   </Target>  
+   ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  检查输出。 应看到这一长行：  
+4. 检查输出。 应看到这一长行：  
   
-    ```  
-    Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
-    ```  
+   ```  
+   Compile item type contains Form1.cs;Form1.Designer.cs;Program.cs;Properties\AssemblyInfo.cs;Properties\Resources.Designer.cs;Properties\Settings.Designer.cs  
+   ```  
   
- 默认情况下，用分号分隔项类型的值。  
+   默认情况下，用分号分隔项类型的值。  
   
- 若要更改项类型的分隔符，请使用以下语法，其中 ItemType 是项类型，Separator 是一个或多个分隔字符的字符串：  
+   若要更改项类型的分隔符，请使用以下语法，其中 ItemType 是项类型，Separator 是一个或多个分隔字符的字符串：  
   
 ```  
 @(ItemType, Separator)  
@@ -491,62 +491,62 @@ $(PropertyName)
   
 #### <a name="to-examine-item-metadata"></a>检查项元数据  
   
-1.  从代码编辑器中使用此行替换 Message 任务：  
+1. 从代码编辑器中使用此行替换 Message 任务：  
   
-    ```  
-    <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
-    ```  
+   ```  
+   <Message Text="Compile.DependentUpon: %(Compile.DependentUpon)" />  
+   ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  检查输出。 应看到这些行：  
+4. 检查输出。 应看到这些行：  
   
-    ```  
-    Compile.DependentUpon:  
-    Compile.DependentUpon: Form1.cs  
-    Compile.DependentUpon: Resources.resx  
-    Compile.DependentUpon: Settings.settings  
-    ```  
+   ```  
+   Compile.DependentUpon:  
+   Compile.DependentUpon: Form1.cs  
+   Compile.DependentUpon: Resources.resx  
+   Compile.DependentUpon: Settings.settings  
+   ```  
   
- 请注意，短语“Compile.Dependent Upon”会多次出现。 在目标中使用具有此语法的元数据会造成“批处理”。 批处理是指针对每个唯一元数据值执行一次目标中的任务。 这是等效于常见的“for 循环”编程结构的 MSBuild 脚本。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。  
+   请注意，短语“Compile.Dependent Upon”会多次出现。 在目标中使用具有此语法的元数据会造成“批处理”。 批处理是指针对每个唯一元数据值执行一次目标中的任务。 这是等效于常见的“for 循环”编程结构的 MSBuild 脚本。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。  
   
 ### <a name="well-known-metadata"></a>常见元数据  
  无论何时向项列表添加项时，都会向该项分配一些常见元数据。 例如，%(Filename) 会返回任何项的文件名。 若要了解完整的常见元数据列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。  
   
 ##### <a name="to-examine-well-known-metadata"></a>检查常见元数据  
   
-1.  从代码编辑器中使用此行替换 Message 任务：  
+1. 从代码编辑器中使用此行替换 Message 任务：  
   
-    ```  
-    <Message Text="Compile Filename: %(Compile.Filename)" />  
-    ```  
+   ```  
+   <Message Text="Compile Filename: %(Compile.Filename)" />  
+   ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  检查输出。 应看到这些行：  
+4. 检查输出。 应看到这些行：  
   
-    ```  
-    Compile Filename: Form1  
-    Compile Filename: Form1.Designer  
-    Compile Filename: Program  
-    Compile Filename: AssemblyInfo  
-    Compile Filename: Resources.Designer  
-    Compile Filename: Settings.Designer  
-    ```  
+   ```  
+   Compile Filename: Form1  
+   Compile Filename: Form1.Designer  
+   Compile Filename: Program  
+   Compile Filename: AssemblyInfo  
+   Compile Filename: Resources.Designer  
+   Compile Filename: Settings.Designer  
+   ```  
   
- 通过比较上面两个示例，可以看到，虽然并非每个编译项类型中的项都有 DependentUpon 元数据，但所有项都具有常见 Filename 元数据。  
+   通过比较上面两个示例，可以看到，虽然并非每个编译项类型中的项都有 DependentUpon 元数据，但所有项都具有常见 Filename 元数据。  
   
 ### <a name="metadata-transformations"></a>元数据转换  
  项列表可以转换为新的项列表。 若要转换项列表，请使用以下语法，其中 ItemType 是项类型的名称，MetaDataName 是元数据的名称：  
@@ -559,27 +559,27 @@ $(PropertyName)
   
 ##### <a name="to-transform-items-using-metadata"></a>使用元数据转换项  
   
-1.  从代码编辑器中使用此行替换 Message 任务：  
+1. 从代码编辑器中使用此行替换 Message 任务：  
   
-    ```  
-    <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
-    ```  
+   ```  
+   <Message Text="Backup files: @(Compile->'%(filename).bak')" />  
+   ```  
   
-2.  保存项目文件。  
+2. 保存项目文件。  
   
-3.  在“命令窗口”输入并执行此行：  
+3. 在“命令窗口”输入并执行此行：  
   
-    ```  
-    msbuild buildapp.csproj /t:HelloWorld  
-    ```  
+   ```  
+   msbuild buildapp.csproj /t:HelloWorld  
+   ```  
   
-4.  检查输出。 应看到此行：  
+4. 检查输出。 应看到此行：  
   
-    ```  
-    Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
-    ```  
+   ```  
+   Backup files: Form1.bak;Form1.Designer.bak;Program.bak;AssemblyInfo.bak;Resources.Designer.bak;Settings.Designer.bak  
+   ```  
   
- 请注意，此语法中表示的元数据不会造成批处理。  
+   请注意，此语法中表示的元数据不会造成批处理。  
   
 ## <a name="whats-next"></a>接下来的内容  
  要了解如何一步步创建简单项目文件，请尝试[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)中的步骤。  

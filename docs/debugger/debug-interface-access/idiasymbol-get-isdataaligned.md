@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_isdataaligned |Microsoft 文档'
+title: 'Idiasymbol:: Get_isdataaligned |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2888ce16c64b12ad846289148412733b18bc2500
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d4c2d43129eadb0b0779086fc5dba0860c735cac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465546"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837797"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
-检索用于指定是否用户定义类型 (UDT) 对齐某些特定内存边界的标志。  
+检索一个标志，指定是否已为某些特定的内存边界对齐用户定义类型 (UDT)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_isDataAligned(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果 UDT 符合某些内存边界; 否则，返回`FALSE`。  
+ [out]返回`TRUE`UDT 符合某些内存边界; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 如果使用非默认数据对齐编译可执行文件通常设置此属性。 例如，Microsoft c + + 编译器可以更改的数据对齐方式，使用命令行选项，/Zp*#*，其中*#* 是一个字节值。  
+ 使用非默认数据对齐方式编译可执行文件时，通常设置此属性。 例如，Microsoft c + + 编译器可以更改使用命令行选项时，数据对齐 /Zp<em>#</em>，其中*#* 是一个字节值。  
   
 ## <a name="requirements"></a>要求  
   

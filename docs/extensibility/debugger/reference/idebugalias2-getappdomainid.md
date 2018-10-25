@@ -1,5 +1,5 @@
 ---
-title: IDebugAlias2::GetAppDomainId |Microsoft 文档
+title: IDebugAlias2::GetAppDomainId |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d24665526f4487f6d2f514f41eb2afbc291847c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 07c04aff053b8ce304290fefa7f56f08b448f244
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836627"
 ---
 # <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
-检索应用程序域的标识符。  
+检索应用程序域标识符。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,5 +48,5 @@ int GetAppDomainId (
 ## <a name="remarks"></a>备注  
  创建应用程序域标识符更改时重新启动应用程序和新的应用程序域。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

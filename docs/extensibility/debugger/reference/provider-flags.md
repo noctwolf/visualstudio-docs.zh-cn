@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS |Microsoft 文档
+title: PROVIDER_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340531f9c943052c1abd51203f3937ccd111e314
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a44fa73a51f1f6da073c63be0873fbefc669b15d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126430"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910489"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
-指定要从程序提供程序获取的所需的属性。  
+指定要从程序提供程序获取所需的属性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,13 +57,13 @@ public enum enum_PROVIDER_FLAGS {
  指定任何标志。  
   
  PFLAG_REMOTE_PORT  
- 调用方想比其他计算机上的程序列表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
+ 调用方想以外的其他计算机上的程序列表[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
  PFLAG_DEBUGGEE  
- 此实例的当前调试该进程[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
+ 进程当前正在调试的此实例[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 附加到正在调试的程序，但不是启动它。  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 附加到正在调试的程序，但未启动。  
   
  PFLAG_REASON_WATCH  
  [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 正在监视的事件。  
@@ -72,18 +72,18 @@ public enum enum_PROVIDER_FLAGS {
  调用方想`ProgramNodes`字段[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)结构。  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- 调用方想`fIsTheDebuggerPresent`字段`PROVIDER_PROCESS_DATA`结构。  
+ 调用方想`fIsTheDebuggerPresent`字段的`PROVIDER_PROCESS_DATA`结构。  
   
 ## <a name="remarks"></a>备注  
- 这些标志将传递到以下的方法：  
+ 这些标志将传递到以下方法：  
   
--   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
+- [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
--   [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
+- [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)  
   
--   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
+- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- 这些值可以与按位组合`OR`。  
+  可以组合这些值的按位`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -92,7 +92,7 @@ public enum enum_PROVIDER_FLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d50267ca8899343d2b704aa28beabc07ed432936
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: e26dafe6d8d7e455d1977f82f96f776185a5fdb3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845260"
 ---
 # <a name="how-to-use-the-imports-designer"></a>如何：使用导入设计器
 
@@ -25,13 +25,13 @@ ms.locfileid: "36755857"
 
 导入设计器既响应 UI 中的更改，也响应保存工作流时进行的更改。 保存工作流后，会向导入设计器中自动添加命名空间。 这些要求包括：
 
--   变量和参数声明中使用的所有类型的命名空间。
+- 变量和参数声明中使用的所有类型的命名空间。
 
--   表达式中使用的所有类型的命名空间。
+- 表达式中使用的所有类型的命名空间。
 
--   序列化工作流所需的其他任何命名空间（例如，放置在工作流中的自定义活动所使用的命名空间）。
+- 序列化工作流所需的其他任何命名空间（例如，放置在工作流中的自定义活动所使用的命名空间）。
 
- 保存工作流时，您可能会注意到您已手动删除的某些命名空间可能会由于上述列表中描述的逻辑自动重新添加到导入设计器中。
+  保存工作流时，您可能会注意到您已手动删除的某些命名空间可能会由于上述列表中描述的逻辑自动重新添加到导入设计器中。
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>向导入的命名空间列表中添加命名空间
 

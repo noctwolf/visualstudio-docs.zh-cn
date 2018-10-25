@@ -16,37 +16,37 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 07a6ae87919f0390e65dc9b2892932d794593b00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8568794b46a8d94e8d186fe297e9bb0d1cf53a3c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827450"
 ---
 # <a name="handling-specialized-deployment"></a>处理专用部署
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 部署是项目的可选操作。 Web 项目中，例如，支持的部署，以便更新 Web 服务器的项目。 同样，**智能设备**项目支持将复制到目标设备生成的应用程序的部署。 项目子类型可以通过实现来提供专门的部署行为<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口。 此接口定义一组完整的部署操作：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A>  
   
- 应在单独的线程，以便执行实际部署操作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]甚至更好地响应用户交互。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>来异步调用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]和允许环境查询在任何时间执行部署操作的状态或停止该操作，如有必要在后台运行。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口部署操作由环境在用户选择部署命令时调用。  
+  应在单独的线程，以便执行实际部署操作[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]甚至更好地响应用户交互。 提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>来异步调用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]和允许环境查询在任何时间执行部署操作的状态或停止该操作，如有必要在后台运行。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口部署操作由环境在用户选择部署命令时调用。  
   
- 若要通知的环境的部署操作已开始或结束，项目子类型需要调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。  
+  若要通知的环境的部署操作已开始或结束，项目子类型需要调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A>方法。  
   
 ## <a name="handling-specialized-deployment"></a>处理专用部署  
   

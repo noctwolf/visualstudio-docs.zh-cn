@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c30b665a27f4e77d21744582a23555fdb899c9
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 61ba39bc8a312fb06499bed7ca94e33dc5e7153e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825980"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 通过更改命令的外观，可以向用户提供反馈。 例如，可能想要看起来不同，它不可用时的命令。 可以使命令可用或不可用、 隐藏或显示它们，或选中或取消它们选中的菜单上。  
   
  若要更改命令的外观，请执行以下操作之一：  
   
--   在命令表文件中的命令定义中指定适当的标记。  
+- 在命令表文件中的命令定义中指定适当的标记。  
   
--   使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>服务。  
+- 使用<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService>服务。  
   
--   实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口，并修改原始命令对象。  
+- 实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口，并修改原始命令对象。  
   
- 以下步骤说明如何查找和使用托管包框架 (MPF) 更新命令的外观。  
+  以下步骤说明如何查找和使用托管包框架 (MPF) 更新命令的外观。  
   
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>若要更改菜单命令的外观  
   

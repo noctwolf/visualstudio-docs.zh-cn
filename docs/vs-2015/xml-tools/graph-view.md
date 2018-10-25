@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca48fecf68ad9ecd1db6dc61acbf168a0a1c0f14
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813617"
 ---
 # <a name="graph-view"></a>图形视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,11 +132,11 @@ ms.locfileid: "49298527"
   
  可通过以下方法控制缩放功能：  
   
--   当鼠标悬停在图形视图的图面上时，按住 Ctrl 键的同时滚动鼠标滚轮。  
+- 当鼠标悬停在图形视图的图面上时，按住 Ctrl 键的同时滚动鼠标滚轮。  
   
--   使用滑块控件。 滑块显示当前缩放级别。  
+- 使用滑块控件。 滑块显示当前缩放级别。  
   
- 当选择缩放滑块、将鼠标悬停在其上或将 Ctrl 与鼠标滚轮结合使用进行缩放时，缩放滑块是不透明的；在其他任何情况下，它均是透明的。  
+  当选择缩放滑块、将鼠标悬停在其上或将 Ctrl 与鼠标滚轮结合使用进行缩放时，缩放滑块是不透明的；在其他任何情况下，它均是透明的。  
   
 ## <a name="xml-editor-integration"></a>XML 编辑器集成  
  可通过以下方法在图形视图和 XML 编辑器之间来回切换：单击某个节点，然后使用“查看代码”上下文菜单。  

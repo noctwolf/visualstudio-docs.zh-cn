@@ -13,18 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f44264eace04475fc96e42b533a288ef87dd2c2b
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 5bcdd9120088663e469070c31962dfacc97bce0a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891006"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
 在创建操作数据库中的数据的应用程序时，你执行如定义连接字符串、 插入数据，以及运行存储的过程的基本任务。 通过按照本主题，了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 与从简单的 Windows 窗体"forms over data"应用程序中的数据库进行交互。  所有.NET 数据技术，包括数据集，LINQ to SQL 和实体框架 — 最终执行非常类似于本文中所示的步骤。
 
- 本文演示了一种快速的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。
+本文演示了一种快速的方式获取数据，这个数据库的简单方法。 如果你的应用程序需要修改重要的方法中的数据并更新数据库，则应考虑使用实体框架和使用数据绑定，以自动同步到基础数据中的更改的用户界面控件。
 
 > [!IMPORTANT]
 > 若要使代码保持简单，但不包括生产就绪的异常处理。
@@ -65,29 +65,29 @@ ms.locfileid: "36758478"
 
 ## <a name="create-the-forms-and-add-controls"></a>创建窗体并添加控件
 
-1.  为 Windows 窗体应用程序，创建一个项目，然后将其命名**SimpleDataApp**。
+1. 为 Windows 窗体应用程序，创建一个项目，然后将其命名**SimpleDataApp**。
 
-     Visual Studio 创建项目和多个文件，其中包括名为一个空 Windows 窗体**Form1**。
+    Visual Studio 创建项目和多个文件，其中包括名为一个空 Windows 窗体**Form1**。
 
-2.  将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：
+2. 将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：
 
-    -   **导航**
+   -   **导航**
 
-    -   **新的客户**
+   -   **新的客户**
 
-    -   **FillOrCancel**
+   -   **FillOrCancel**
 
-3.  对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。
+3. 对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。
 
-    > [!NOTE]
-    >  分组框和标签控件可提高清晰度，但不在代码中使用。
+   > [!NOTE]
+   > 分组框和标签控件可提高清晰度，但不在代码中使用。
 
- **Navigation 窗体**
+   **Navigation 窗体**
 
- ![“导航”对话框](../data-tools/media/simpleappnav.png)
+   ![“导航”对话框](../data-tools/media/simpleappnav.png)
 
 |Navigation 窗体的控件|属性|
-|--------------------------------------|----------------|
+| - |----------------|
 |Button|Name = btnGoToAdd|
 |Button|Name = btnGoToFillOrCancel|
 |Button|Name = btnExit|
@@ -97,7 +97,7 @@ ms.locfileid: "36758478"
  ![添加新客户或提交订单](../data-tools/media/simpleappnewcust.png)
 
 |NewCustomer 窗体的控件|属性|
-|---------------------------------------|----------------|
+| - |----------------|
 |文本框|Name = txtCustomerName|
 |文本框|Name = txtCustomerID<br /><br /> Readonly = True|
 |Button|Name = btnCreateAccount|
@@ -112,7 +112,7 @@ ms.locfileid: "36758478"
  ![填充或取消订单](../data-tools/media/simpleappcancelfill.png)
 
 |FillOrCancel 窗体的控件|属性|
-|----------------------------------------|----------------|
+| - |----------------|
 |文本框|Name = txtOrderID|
 |Button|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|

@@ -13,12 +13,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: ec0229107b4a9ab3ef3710fb5306f1dfdcccfa44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f2475a61839e34b69d8e99e01bde32fd47b9c276
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907139"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>从 Visual Studio 2010 升级编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,17 +56,17 @@ ms.locfileid: "49298936"
   
  应用更新以后，以下 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 编码 UI 测试工具功能将针对 Windows 8 有所改进：  
   
--   可以在运行 Windows 8 的计算机上为基于 Microsoft .NET Framework 4.5 的 Windows Presentation Foundation (WPF) 控件运行编码 UI 测试。  
+- 可以在运行 Windows 8 的计算机上为基于 Microsoft .NET Framework 4.5 的 Windows Presentation Foundation (WPF) 控件运行编码 UI 测试。  
   
--   可以在运行 Windows 8 的计算机上为 64 位 (x64) Internet Explorer 10 运行编码 UI 测试。  
+- 可以在运行 Windows 8 的计算机上为 64 位 (x64) Internet Explorer 10 运行编码 UI 测试。  
   
- 此更新还包含对以下问题的修复：  
+  此更新还包含对以下问题的修复：  
   
--   **代码覆盖率：** 无法在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 中打开由 Visual Studio 2012 创建的代码覆盖率文件 (.coverage)。  
+- **代码覆盖率：** 无法在 [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1 中打开由 Visual Studio 2012 创建的代码覆盖率文件 (.coverage)。  
   
--   **闲置测试项目：** 你的团队有一个分配给 Team Foundation Server (TFS) 2010 中的无效用户的测试项目。 例如，某位用户离开了公司，但仍有一个分配给他的测试用例。 你将 TFS 2010 升级到 TFS 2012。 并使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 连接到升级后的 TFS 服务器。 你无法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 将测试项目分配给任何 TFS 用户。  
+- **闲置测试项目：** 你的团队有一个分配给 Team Foundation Server (TFS) 2010 中的无效用户的测试项目。 例如，某位用户离开了公司，但仍有一个分配给他的测试用例。 你将 TFS 2010 升级到 TFS 2012。 并使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 连接到升级后的 TFS 服务器。 你无法使用 [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 将测试项目分配给任何 TFS 用户。  
   
--   **负载测试：** 当在运行 Windows 8 的计算机上使用局域网 (LAN) 配置文件以外的网络类型运行负载测试时，网络模拟器驱动程序会导致操作系统崩溃。 有关详细信息，请参见 [知识库文章 2736182](http://support.microsoft.com/kb/2736182)。  
+- **负载测试：** 当在运行 Windows 8 的计算机上使用局域网 (LAN) 配置文件以外的网络类型运行负载测试时，网络模拟器驱动程序会导致操作系统崩溃。 有关详细信息，请参见 [知识库文章 2736182](http://support.microsoft.com/kb/2736182)。  
   
 ## <a name="see-also"></a>请参阅  
  [移植、迁移和升级 Visual Studio 项目](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)   

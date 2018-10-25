@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetTypeByName |Microsoft 文档
+title: IDebugSymbolProvider::GetTypeByName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 565972b0f1f7d1f2e5e2ffd751cba60621fe284d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8b95117cd37f9ca6c2bfe3d2276bb03994f7a07b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118991"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924729"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
-此方法映射到符号类型的符号名称。  
+此方法将映射到符号类型的符号名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,7 +48,7 @@ int GetTypeByName(
  [in]符号名称。  
   
  `nameMatch`  
- [in]选择区分大小写的匹配项，例如，类型。 取值范围为[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。  
+ [in]选择区分大小写的匹配项，例如，类型。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举。  
   
  `ppField`  
  [out]返回与符号类型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象。  
@@ -57,9 +57,9 @@ int GetTypeByName(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法是一个泛型版本[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)。  
+ 此方法是泛型的版本[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   

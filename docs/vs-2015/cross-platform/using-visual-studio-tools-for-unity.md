@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 67c1661543370dc589bf5a20ad8837913e9d19e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1b99999c3a075b6e79f2b98fc70cf50a9d01a84d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892826"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49199207"
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>通过使用 MonoBehavior 向导创建 MonoBehavior 方法的空定义  
   
-1.  在 Visual Studio 中，将光标放置在你可能要插入方法的位置，然后按 **Ctrl+Shift+M** 启动 MonoBehavior 向导。 或者，如果要在已实现的方法后插入新方法，则可在稍后指定此操作；只需按 **Ctrl+Shift+M** 即可。  
+1. 在 Visual Studio 中，将光标放置在你可能要插入方法的位置，然后按 **Ctrl+Shift+M** 启动 MonoBehavior 向导。 或者，如果要在已实现的方法后插入新方法，则可在稍后指定此操作；只需按 **Ctrl+Shift+M** 即可。  
   
-2.  选择要重载的方法。 在“创建脚本方法”窗口中的“选择要创建的方法”下，标记每个要重载的方法的名称旁的复选框。  
+2. 选择要重载的方法。 在“创建脚本方法”窗口中的“选择要创建的方法”下，标记每个要重载的方法的名称旁的复选框。  
   
-3.  确保“Framework 版本”下拉列表中显示的版本与你正在使用的版本匹配。 如果不匹配，将下拉列表中的值更改为要使用的版本。  
+3. 确保“Framework 版本”下拉列表中显示的版本与你正在使用的版本匹配。 如果不匹配，将下拉列表中的值更改为要使用的版本。  
   
-4.  选择将插入方法的位置。 默认情况下，将在光标位置处插入这些方法；如果要在其他位置插入，可以选择在类中已实现的任何方法后进行插入。 若要选择其中一个位置，需将“插入点”下拉列表中的值更改为所需位置。  
+4. 选择将插入方法的位置。 默认情况下，将在光标位置处插入这些方法；如果要在其他位置插入，可以选择在类中已实现的任何方法后进行插入。 若要选择其中一个位置，需将“插入点”下拉列表中的值更改为所需位置。  
   
-5.  如果需要向导为所选方法生成注释，则标记“生成方法注释”复选框。 这些注释是为了帮助你了解方法的调用时间以及其常规责任。  
+5. 如果需要向导为所选方法生成注释，则标记“生成方法注释”复选框。 这些注释是为了帮助你了解方法的调用时间以及其常规责任。  
   
-6.  选择“确定”按钮退出向导，并将方法插入代码中。  
+6. 选择“确定”按钮退出向导，并将方法插入代码中。  
   
- 当你还在学习 Unity API 时，或者当你需要重载不熟悉的方法时，MonoBehavior 向导尤其有用。 对 Unity API 更加熟练时，你可能更愿意使用快速 MonoBehavior 向导来快速创建你已熟悉的方法。  
+   当你还在学习 Unity API 时，或者当你需要重载不熟悉的方法时，MonoBehavior 向导尤其有用。 对 Unity API 更加熟练时，你可能更愿意使用快速 MonoBehavior 向导来快速创建你已熟悉的方法。  
   
 #### <a name="quick-monobehavior-scripting-wizard"></a>快速 MonoBehavior 脚本向导  
  已经熟悉 Unity API 后，便可以使用快速 MonoBehavior 向导更快地实现重载的方法。 使用此向导，可以仅指定在光标位置插入的不带方法注释的一种方法。  
@@ -80,11 +80,11 @@ ms.locfileid: "49199207"
   
 ##### <a name="to-view-the-unity-project-explorer"></a>查看 Unity 项目资源管理器  
   
--   在 Visual Studio 的主菜单上选择“视图”，然后选择“Unity 项目资源管理器”。 键盘：**Alt+Shift+E**  
+- 在 Visual Studio 的主菜单上选择“视图”，然后选择“Unity 项目资源管理器”。 键盘：**Alt+Shift+E**  
   
-     ![查看 Unity 项目资源管理器窗口。](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
+   ![查看 Unity 项目资源管理器窗口。](../cross-platform/media/vstu-view-unity-project-explorer.png "vstu_view_unity_project_explorer")  
   
- Unity 项目资源管理器将使用与 Unity 编辑器相同的方法显示所有的 Unity 项目文件和目录 — 这与使用解决方案资源管理器导航 unity 脚本不同：后者仅包含你的脚本文件，将其显示为项目，并且由 Visual Studio Tools for Unity 生成的解决方案将对其进行组织。 尤其是在大型项目中，使用 Unity 项目资源管理器通常可以更轻松地定位需修改的脚本；还可以轻松地在 Visual studio 中修改其他种类的文件（例如，基于文本的配置文件），而无需将它们添加到 Visual Studio 解决方案中的一个项目中。  
+  Unity 项目资源管理器将使用与 Unity 编辑器相同的方法显示所有的 Unity 项目文件和目录 — 这与使用解决方案资源管理器导航 unity 脚本不同：后者仅包含你的脚本文件，将其显示为项目，并且由 Visual Studio Tools for Unity 生成的解决方案将对其进行组织。 尤其是在大型项目中，使用 Unity 项目资源管理器通常可以更轻松地定位需修改的脚本；还可以轻松地在 Visual studio 中修改其他种类的文件（例如，基于文本的配置文件），而无需将它们添加到 Visual Studio 解决方案中的一个项目中。  
   
 ### <a name="unity-error-list"></a>Unity 错误列表  
  连接到 Unity 实例时，可以从 Visual Studio 内部的 Unity 控制台查看消息。 这包括 Unity 中的错误和警告。 消息将显示在 Visual Studio 的“错误列表”窗口中；Unity 中的错误消息将显示在“错误”选项卡上，警告消息将显示在“警告”选项卡，而其他消息（比如通过使用 Debug.Log Unity API 发送的消息）将显示在“消息”选项卡上。  
@@ -149,20 +149,20 @@ ms.locfileid: "49199207"
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>在 Unity 播放器中启用脚本调试  
   
--   请确保在已启用脚本调试的状态下创建开发内部版本。 在 Unity 项目的版本设置中，标记“开发内部版本”和“脚本调试”复选框。  
+- 请确保在已启用脚本调试的状态下创建开发内部版本。 在 Unity 项目的版本设置中，标记“开发内部版本”和“脚本调试”复选框。  
   
- ![配置 Unity 生成设置进行调试。](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
+  ![配置 Unity 生成设置进行调试。](../cross-platform/media/vstu-debugging-build-settings.png "vstu_debugging_build_settings")  
   
- 此外，若要调试在 **Unity Web Player** 中运行的 Unity 应用，还需要将其配置为使用“开发版本通道”。  
+  此外，若要调试在 **Unity Web Player** 中运行的 Unity 应用，还需要将其配置为使用“开发版本通道”。  
   
 ##### <a name="to-configure-the-development-release-channel-in-unity-web-player"></a>在 Unity Web Player 中配置“开发版本通道”  
   
--   在 Unity Web Player 的上下文菜单上，选择“版本通道”并确保“开发”选项处于启用状态。  
+- 在 Unity Web Player 的上下文菜单上，选择“版本通道”并确保“开发”选项处于启用状态。  
   
-    > [!IMPORTANT]
-    >  在 Unity 4.2 及更高版本中，“版本通道”上下文菜单项仅当打开上下文菜单并按下 **Alt** 键时，才在 Web Player 上下文菜单上可用。 如果 Web Player 正在 Mac OS X 上运行，则按“选项”键。  
+  > [!IMPORTANT]
+  >  在 Unity 4.2 及更高版本中，“版本通道”上下文菜单项仅当打开上下文菜单并按下 **Alt** 键时，才在 Web Player 上下文菜单上可用。 如果 Web Player 正在 Mac OS X 上运行，则按“选项”键。  
   
- 最后，请确保连接到要调试的 Unity 实例。 有关如何执行该操作的信息，请参阅[将 Visual Studio 连接到 Unity](#connecting-visual-studio-to-unity) 部分。  
+  最后，请确保连接到要调试的 Unity 实例。 有关如何执行该操作的信息，请参阅[将 Visual Studio 连接到 Unity](#connecting-visual-studio-to-unity) 部分。  
   
 ### <a name="debugging-a-dll-in-your-unity-project"></a>在 Unity 项目中调试 DLL  
  许多 Unity 开发人员将代码组件编写为外部 Dll，以便可轻松地与其他项目共享开发的功能。 Visual Studio Tools for Unity 可以轻松无缝地调试这些 DLL 中的代码以及 Unity 项目中的其他代码。  
@@ -174,23 +174,23 @@ ms.locfileid: "49199207"
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>调试 Unity 项目中使用的托管 DLL 项目  
   
-1.  将现有的 DLL 项目添加到由 Visual Studio Tools for Unity 生成的 Visual Studio 解决方案中。 不太常见的情况是：你可能会启动一个新的托管 DLL 项目，以便在 Unity 项目中包含代码组件；如果是这种情况，则可将新的托管 DLL 项目添加到 Visual Studio 解决方案。 有关向解决方案添加新项目或现有项目的详细信息，请参阅[如何：向解决方案添加项目](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)。  
+1. 将现有的 DLL 项目添加到由 Visual Studio Tools for Unity 生成的 Visual Studio 解决方案中。 不太常见的情况是：你可能会启动一个新的托管 DLL 项目，以便在 Unity 项目中包含代码组件；如果是这种情况，则可将新的托管 DLL 项目添加到 Visual Studio 解决方案。 有关向解决方案添加新项目或现有项目的详细信息，请参阅[如何：向解决方案添加项目](https://msdn.microsoft.com/library/vstudio/ff460187.aspx)。  
   
-     ![将现有的 DLL 项目添加到解决方案。](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
+    ![将现有的 DLL 项目添加到解决方案。](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   
-     在任一情况下，Visual Studio Tools for Unity 均将维护项目引用，即使不得不再次重新生成项目和解决方案文件，所以你只需要执行一次这些步骤。  
+    在任一情况下，Visual Studio Tools for Unity 均将维护项目引用，即使不得不再次重新生成项目和解决方案文件，所以你只需要执行一次这些步骤。  
   
-2.  引用 DLL 项目中正确的 Unity 框架配置文件。 在 Visual Studio 的 DLL 项目属性中，将“目标框架”属性设置为正在使用的 Unity 框架版本。 这是与你的项目作为目标的 API 兼容性相匹配的 Unity 基类库，如 Unity 完整、微型或 Web 基类库。 这可以防止你的 DLL 调用存在于其他框架或兼容性级别中而不存在于你正在使用的 Unity 框架版本中的框架方法。  
+2. 引用 DLL 项目中正确的 Unity 框架配置文件。 在 Visual Studio 的 DLL 项目属性中，将“目标框架”属性设置为正在使用的 Unity 框架版本。 这是与你的项目作为目标的 API 兼容性相匹配的 Unity 基类库，如 Unity 完整、微型或 Web 基类库。 这可以防止你的 DLL 调用存在于其他框架或兼容性级别中而不存在于你正在使用的 Unity 框架版本中的框架方法。  
   
-     ![将 DLL 的目标框架设置为 Unity 框架。](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
+    ![将 DLL 的目标框架设置为 Unity 框架。](../cross-platform/media/vstu-debugging-dll-target-framework.png "vstu_debugging_dll_target_framework")  
   
-3.  将 DLL 复制到 Unity 项目的资产文件夹。 在 Unity 中，资产是与 Unity 应用一起打包和部署的文件，所以可以在运行时加载它们。 由于 DLL 于运行时链接，因而必须将 DLL 作为资产部署。 若要部署为资产，Unity 编辑器需要将 DLL 放置在 Unity 项目的“资产”文件夹中。 可以采用两种方法执行此操作：  
+3. 将 DLL 复制到 Unity 项目的资产文件夹。 在 Unity 中，资产是与 Unity 应用一起打包和部署的文件，所以可以在运行时加载它们。 由于 DLL 于运行时链接，因而必须将 DLL 作为资产部署。 若要部署为资产，Unity 编辑器需要将 DLL 放置在 Unity 项目的“资产”文件夹中。 可以采用两种方法执行此操作：  
   
-    -   修改 DLL 项目的生成设置，以包含将输出 DLL 和 PDB 文件从输出文件夹复制到 Unity 项目“资产”文件夹的生成后任务。  
+   - 修改 DLL 项目的生成设置，以包含将输出 DLL 和 PDB 文件从输出文件夹复制到 Unity 项目“资产”文件夹的生成后任务。  
   
-    -   修改 DLL 项目的生成设置，以将其输出文件夹设置为 Unity 项目的“资产”文件夹。 DLL 和 PDB 文件都将放置在“资产”文件夹中。  
+   - 修改 DLL 项目的生成设置，以将其输出文件夹设置为 Unity 项目的“资产”文件夹。 DLL 和 PDB 文件都将放置在“资产”文件夹中。  
   
      需要调试 PDB 文件（因为它们包含 DLL 的调试符号），并将 DLL 代码映射到其源代码形式。 Visual Studio Tools for Unity 将使用来自 DLL 和 PDB 的信息来创建一个 DLL.MDB 文件，此文件是 Unity 脚本引擎所使用的调试符号格式。  
   
-4.  调试代码。 现在可以同时调试 DLL 源代码以及 Unity 项目的源代码，并使用所有熟悉的调试功能，如断点和单步调试代码。
+4. 调试代码。 现在可以同时调试 DLL 源代码以及 Unity 项目的源代码，并使用所有熟悉的调试功能，如断点和单步调试代码。
 

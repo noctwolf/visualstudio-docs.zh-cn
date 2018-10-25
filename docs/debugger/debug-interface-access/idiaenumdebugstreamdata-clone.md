@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Clone |Microsoft 文档'
+title: 'Idiaenumdebugstreamdata:: Clone |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc2fc77cd7a0c71f2b30febea9a1351dd807933
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e2bc77d425f71be791bac853b57073a6cb3cc48e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862380"
 ---
 # <a name="idiaenumdebugstreamdataclone"></a>IDiaEnumDebugStreamData::Clone
-创建包含为当前的枚举器枚举的顺序一个枚举器。  
+创建一个包含当前枚举数相同的枚举的序列的枚举器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,7 +34,7 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>参数  
  ppenum  
- [out]返回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)包含重复的调试数据流记录序列的对象。  
+ [out]返回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)包含调试数据流记录的重复的序列的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

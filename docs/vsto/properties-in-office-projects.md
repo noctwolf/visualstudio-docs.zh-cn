@@ -21,20 +21,20 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2b5c5e0719f7b619fa00a3a0f4333ae0080c0715
-ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
+ms.openlocfilehash: 9369a42f1f4a8497df42f940bb8bd23453803a26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34692767"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862146"
 ---
 # <a name="properties-in-office-projects"></a>Office 项目中的属性
   有几个重要属性可用于 Visual Studio 中的 Office 项目。 可在 **“属性”** 窗口中访问这些属性。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="namespace-for-host-item"></a>Namespace 主机项  
- 在 Visual C# 项目中，使用 **“主机项的命名空间”** 属性可以更改主机项类（例如 `ThisAddIn`、 `ThisWorkbook`或 `ThisDocument` 类）的命名空间。 此属性将显示在**属性**窗口时对文档级项目中选择文档节点 (如*ExcelWorkbook1.xlsx*或*WordDocument1.docx*) 或 VSTO 外接程序中的项目 （如 Excel 或 Word） 中的应用程序节点**解决方案资源管理器**。  
+## <a name="namespace-for-host-item"></a>主机项的 Namespace  
+ 在 Visual C# 项目中，使用 **“主机项的命名空间”** 属性可以更改主机项类（例如 `ThisAddIn`、 `ThisWorkbook`或 `ThisDocument` 类）的命名空间。 此属性将出现在**属性**窗口时在文档级项目中选择文档节点 (如*ExcelWorkbook1.xlsx*或*WordDocument1.docx*) 或 VSTO 外接程序项目 （如 Excel 或 Word） 中的应用程序节点**解决方案资源管理器**。  
   
  创建 Visual C# Office 项目时，将根据项目名称为主机项指定命名空间。 建议使用 **“主机项的命名空间”** 属性来更改命名空间，而不要直接编辑代码文件。 使用此属性时，将在生成的（隐藏）代码文件中和可见代码文件中更改命名空间。  
   
@@ -43,11 +43,11 @@ ms.locfileid: "34692767"
   
  此属性采用布尔值：  
   
--   选择 **true** 可将数据集缓存到文档中。  
+- 选择 **true** 可将数据集缓存到文档中。  
   
--   如果不希望将数据集缓存到文档中，请选择 **false** 。  
+- 如果不希望将数据集缓存到文档中，请选择 **false** 。  
   
- 有关缓存数据的详细信息，请参阅[文档级自定义项中已缓存数据](../vsto/cached-data-in-document-level-customizations.md)。  
+  有关缓存数据的详细信息，请参阅[缓存的文档级自定义项中的数据](../vsto/cached-data-in-document-level-customizations.md)。  
   
 ## <a name="value2"></a>Value2  
  **“Value2”** 属性仅可用于 Excel 工作簿或模板项目。 在工作表设计器中选择 **控件时，该属性将显示在** “属性” **窗口中的** “数据绑定” <xref:Microsoft.Office.Tools.Excel.NamedRange> 属性节点之下。  

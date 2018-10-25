@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c360061e48b983007958042fd50e1e8cdcf0ac9f
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834275"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>报告负载测试结果以进行测试比较或趋势分析
 
@@ -38,7 +38,7 @@ ms.locfileid: "39176325"
 ## <a name="tasks"></a>任务
 
 |任务|关联主题|
-|-----------|-----------------------|
+|-|-|
 |创建性能和压力报告：可使用 Microsoft Excel 创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Excel 创建负载测试性能报告](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |使用 Microsoft Word 手动创建性能和压力报告：可以通过将摘要、表和关系图数据复制并粘贴到 Microsoft Word 文档中，手动创建有关负载测试和 Web 性能测试的报告。|- [如何：使用 Microsoft Word 手动创建负载测试性能报告](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 

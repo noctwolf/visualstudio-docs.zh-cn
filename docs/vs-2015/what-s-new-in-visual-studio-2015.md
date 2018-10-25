@@ -17,12 +17,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f97369709390d6a3e98ff8d995000d6edc574b13
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93cee87a7a68083955d8c09562a318b602427efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828736"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>什么&#39;Visual Studio 2015 中的 s
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -108,17 +108,17 @@ ms.locfileid: "49226158"
 ## <a name="connect-to-services"></a>连接到服务  
  Visual Studio 2015 让你比以往任何时候都更轻松地将应用连接到服务。  新的“添加连接的服务”向导会配置你的项目，添加必要的身份验证支持并下载必要的 NuGet 数据包，帮助你开始根据你的服务需要进行快速轻松的编码。 “添加连接的服务”向导还集成新的帐户管理器，令使用多个用户帐户和订阅变得容易。 在 Visual Studio 2015 中，对以下服务的支持立即可用（如果拥有帐户）：  
   
-1.  Azure 移动服务  
+1. Azure 移动服务  
   
-2.  Azure 存储  
+2. Azure 存储  
   
-3.  Office 365（邮件、联系人、日历、文件、用户和组）  
+3. Office 365（邮件、联系人、日历、文件、用户和组）  
   
-4.  销售团队  
+4. 销售团队  
   
- 新服务将不断增加，你可通过单击向导中的“查找新服务链接”来发现这些服务。  
+   新服务将不断增加，你可通过单击向导中的“查找新服务链接”来发现这些服务。  
   
- ![添加连接的服务对话框](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
+   ![添加连接的服务对话框](./ide/media/vs2015-addconnectedservicedialog.png "VS2015_AddConnectedServiceDialog")  
   
 ## <a name="design-your-ui"></a>设计你的 UI  
  设计 XAML 用户界面的 Blend 体验获得了巨大提升。 Blend 已经过完全重新设计，以提供更直观的 UI、更强大的 XAML 编辑功能（包括 IntelliSense）并实现与 Visual Studio 更好的集成。 有关详细信息，请参阅[Visual Studio 和 Blend for Visual Studio 中设计 XAML](./designers/designing-xaml-in-visual-studio.md)。  
@@ -188,19 +188,19 @@ ms.locfileid: "49226158"
   
  在 Visual Studio Enterprise 和 Visual Studio Professional 中，你现在可以：  
   
--   获取 Visual Studio 编辑器中整个代码文件的历史记录。  
+- 获取 Visual Studio 编辑器中整个代码文件的历史记录。  
   
-     ![CodeLens：获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
+   ![CodeLens：获取代码文件的详细信息](./ide/media/codelensfilelevel.png "CodeLensFileLevel")  
   
--   查看显示更改你的代码的人员的图。 这可以帮助发现团队更改中的模式并评估它们的影响。  
+- 查看显示更改你的代码的人员的图。 这可以帮助发现团队更改中的模式并评估它们的影响。  
   
-     ![CodeLens：通过图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")  
+   ![CodeLens：通过图形查看代码更改历史记录](./ide/media/codelens.png "CodeLens")  
   
--   轻松查看上次更改代码的时间。  
+- 轻松查看上次更改代码的时间。  
   
--   查找会影响你代码的其他分支中的更改。  
+- 查找会影响你代码的其他分支中的更改。  
   
- 请参阅 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
+  请参阅 [CodeLens](./ide/find-code-changes-and-other-history-with-codelens.md)。  
   
 ### <a name="design-and-modeling-tools-enterprise-edition-only"></a>设计和建模工具（仅限于 Enterprise 版）  
  **代码图和依赖项关系图**  
@@ -213,35 +213,35 @@ ms.locfileid: "49226158"
   
  其他改进包括：  
   
--   **改进的上下关系图**。 对于中型到大型 Visual Studio 解决方案，现在可以使用简化的体系结构菜单来获取更有用的解决方案代码图。 解决方案的程序集按解决方案文件夹进行组合，因此，你可以在上下文中进行查看并利用为结构化解决方案而完成的工作。 你将立即看到项目和程序集引用，然后会显示链接类型。 此外，解决方案外部的程序集以更紧凑的方式进行组合。  
+- **改进的上下关系图**。 对于中型到大型 Visual Studio 解决方案，现在可以使用简化的体系结构菜单来获取更有用的解决方案代码图。 解决方案的程序集按解决方案文件夹进行组合，因此，你可以在上下文中进行查看并利用为结构化解决方案而完成的工作。 你将立即看到项目和程序集引用，然后会显示链接类型。 此外，解决方案外部的程序集以更紧凑的方式进行组合。  
   
--   **测试项目的风格不一样且可以进行筛选**。 现在可以更加轻松快速地在代码图中确定测试项目，因为它们的风格不一样。 还可以将测试项目筛选出来，以便你能够专注于处理应用程序的工作代码。  
+- **测试项目的风格不一样且可以进行筛选**。 现在可以更加轻松快速地在代码图中确定测试项目，因为它们的风格不一样。 还可以将测试项目筛选出来，以便你能够专注于处理应用程序的工作代码。  
   
--   **简化的外部依赖项链接**。 依赖项链接不再表示来自 System.Object、System.ValueType、System.Enum 和 System.Delegate 的继承，这样一来，在代码图中查看外部依赖项变得更加方便。  
+- **简化的外部依赖项链接**。 依赖项链接不再表示来自 System.Object、System.ValueType、System.Enum 和 System.Delegate 的继承，这样一来，在代码图中查看外部依赖项变得更加方便。  
   
--   **“深入了解依赖项链接”将筛选器考虑在内**。 展开关系图以了解某个依赖项链接的贡献时，可以获得有用且清晰的关系图。 该关系图不那么杂乱，并将你选择的链接筛选选项考虑在内。  
+- **“深入了解依赖项链接”将筛选器考虑在内**。 展开关系图以了解某个依赖项链接的贡献时，可以获得有用且清晰的关系图。 该关系图不那么杂乱，并将你选择的链接筛选选项考虑在内。  
   
--   **代码元素与其上下文一起添加到代码图**。 因为关系图现在与其上下文一起显示（到可以筛选出来的程序集和解决方案文件夹，如果需要），所以从解决方案资源管理器、类视图、对象浏览器拖放代码元素时，或在解决方案资源管理器中选择元素并选择“在代码图上显示”时，可以获得更加有用的关系图。  
+- **代码元素与其上下文一起添加到代码图**。 因为关系图现在与其上下文一起显示（到可以筛选出来的程序集和解决方案文件夹，如果需要），所以从解决方案资源管理器、类视图、对象浏览器拖放代码元素时，或在解决方案资源管理器中选择元素并选择“在代码图上显示”时，可以获得更加有用的关系图。  
   
--   **更快速地获取反应式代码图**。 拖放操作可以生成即时结果，且节点之间的链接可以更快速地进行创建，而不会影响后续由用户启动的操作，例如展开节点或请求更多节点。 创建代码图而不生成解决方案时，所有极端案例（例如不生成程序集时）现在得到处理。  
+- **更快速地获取反应式代码图**。 拖放操作可以生成即时结果，且节点之间的链接可以更快速地进行创建，而不会影响后续由用户启动的操作，例如展开节点或请求更多节点。 创建代码图而不生成解决方案时，所有极端案例（例如不生成程序集时）现在得到处理。  
   
--   **跳过重新生成你的解决方案。** 在创建和编辑关系图时提供更好的性能。  
+- **跳过重新生成你的解决方案。** 在创建和编辑关系图时提供更好的性能。  
   
--   **筛选代码元素节点和组**。 通过根据代码元素的类别显示或隐藏代码元素，以及通过按解决方案文件夹、程序集、命名空间、项目文件夹和类型对代码元素进行组合，可以快速整理代码图。  
+- **筛选代码元素节点和组**。 通过根据代码元素的类别显示或隐藏代码元素，以及通过按解决方案文件夹、程序集、命名空间、项目文件夹和类型对代码元素进行组合，可以快速整理代码图。  
   
--   **筛选关系以使关系图更易于阅读**。 链接筛选现在也适用于跨组链接，与早期版本相比，链接筛选让使用筛选器窗口工作时产生的干扰变少。  
+- **筛选关系以使关系图更易于阅读**。 链接筛选现在也适用于跨组链接，与早期版本相比，链接筛选让使用筛选器窗口工作时产生的干扰变少。  
   
--   **根据类视图和对象浏览器创建关系图**。 从类视图和对象浏览器窗口将文件和程序集拖放到新的代码图或现有代码图中。  
+- **根据类视图和对象浏览器创建关系图**。 从类视图和对象浏览器窗口将文件和程序集拖放到新的代码图或现有代码图中。  
   
- 请参阅 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
+  请参阅 [Map dependencies across your solutions](./modeling/map-dependencies-across-your-solutions.md)。  
   
- **在此版本中其他设计和建模更改：**  
+  **在此版本中其他设计和建模更改：**  
   
--   **层关系图**。 使用类视图和对象浏览器更新这些关系图。 为满足软件设计要求，使用层关系图来描述软件所需的依赖项。 通过查找不满足这些约束条件的代码以及使用此基线验证未来的代码，使代码与此设计保持一致。  
+- **层关系图**。 使用类视图和对象浏览器更新这些关系图。 为满足软件设计要求，使用层关系图来描述软件所需的依赖项。 通过查找不满足这些约束条件的代码以及使用此基线验证未来的代码，使代码与此设计保持一致。  
   
--   **UML 关系图**。 不再能够根据代码创建 UML 类图和序列图。 但你仍可使用新的 UML 元素创建这些关系图。  
+- **UML 关系图**。 不再能够根据代码创建 UML 类图和序列图。 但你仍可使用新的 UML 元素创建这些关系图。  
   
--   **体系结构资源管理器**。 不再能够使用体系结构资源管理器创建关系图。 但你仍可使用解决方案资源管理器。  
+- **体系结构资源管理器**。 不再能够使用体系结构资源管理器创建关系图。 但你仍可使用解决方案资源管理器。  
   
 ## <a name="visual-studio-extensibility-tools"></a>Visual Studio 扩展性工具  
  安装 Visual Studio 扩展性工具（VS SDK 和模板）前所未有地容易，因为现在它们作为可选组件包含在安装过程中。  扩展性工具允许开发人员编写扩展以自定义并将功能添加到 Visual Studio。 有关 Visual Studio 扩展性的详细信息，请参阅 [Visual Studio SDK](./extensibility/visual-studio-sdk.md)  

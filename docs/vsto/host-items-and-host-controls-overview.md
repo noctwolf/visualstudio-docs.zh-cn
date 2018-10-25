@@ -39,12 +39,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 96cd626e283e9cf86b1a24a63a1939e717cab7b4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48ce311a767d68ce1402961d2ddf4cf8b673637c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670331"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49937494"
 ---
 # <a name="host-items-and-host-controls-overview"></a>主机项和主机控件概述
   宿主项和宿主控件是帮助向通过使用 Visual Studio 中的 Office 开发工具创建的 Office 解决方案提供编程模型的类型。 宿主项和宿主控件与基于 COM 的 Microsoft Office Word 和 Microsoft Office Excel 的对象模型交互，但更像与托管对象（如 Windows 窗体控件）进行交互。  
@@ -54,21 +54,21 @@ ms.locfileid: "35670331"
 ## <a name="host-items"></a>主机项  
  宿主项是位于 Office 项目中的对象模型层次结构顶部的类型。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为 Word 和 Excel 解决方案定义了以下宿主项：  
   
--   <xref:Microsoft.Office.Tools.Word.Document>  
+- <xref:Microsoft.Office.Tools.Word.Document>  
   
--   <xref:Microsoft.Office.Tools.Excel.Workbook>  
+- <xref:Microsoft.Office.Tools.Excel.Workbook>  
   
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>  
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>  
   
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>  
   
- 上述每种类型扩展了存在于本机 Word 或 Excel 对象模型的对象，称为 *本机 Office 对象*。 例如， <xref:Microsoft.Office.Tools.Word.Document> 宿主项扩展了 Word 的主互操作程序集中定义的 <xref:Microsoft.Office.Interop.Word.Document> 对象。  
+  上述每种类型扩展了存在于本机 Word 或 Excel 对象模型的对象，称为 *本机 Office 对象*。 例如， <xref:Microsoft.Office.Tools.Word.Document> 宿主项扩展了 Word 的主互操作程序集中定义的 <xref:Microsoft.Office.Interop.Word.Document> 对象。  
   
- 宿主项通常具有与相应的 Office 对象相同的基本功能，但增强了以下功能：  
+  宿主项通常具有与相应的 Office 对象相同的基本功能，但增强了以下功能：  
   
--   承载托管控件（包括宿主控件和 Windows 窗体控件）的功能。  
+- 承载托管控件（包括宿主控件和 Windows 窗体控件）的功能。  
   
--   更丰富的事件模型。 本机 Word 和 Excel 对象模型中的某些文档、工作簿和工作表事件仅在应用程序级引发。 主机项可提供这些文档级事件，因此，更易于处理特定文档的事件。  
+- 更丰富的事件模型。 本机 Word 和 Excel 对象模型中的某些文档、工作簿和工作表事件仅在应用程序级引发。 主机项可提供这些文档级事件，因此，更易于处理特定文档的事件。  
   
 ### <a name="understand-host-items-in-document-level-projects"></a>了解文档级项目中的主机项  
  在文档级项目中，宿主项提供了代码的入口点，并且它们的设计器可帮助你开发解决方案。  
@@ -85,35 +85,35 @@ ms.locfileid: "35670331"
  生成宿主项后，可以执行诸如向文档添加控件等任务。 有关详细信息，请参阅[扩展 Word 文档和 Excel 工作簿中运行时在 VSTO 加载项](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
 ## <a name="host-controls"></a>主机控件  
- 宿主控件扩展 Word 和 Excel 对象模型中的各种用户界面 (UI) 对象，如`Microsoft.Office.Interop.Word.ContentControl`和<xref:Microsoft.Office.Interop.Excel.Range>对象。  
+ 主机控件扩展了 Word 和 Excel 对象模型中的各种用户界面 (UI) 对象，例如 `Microsoft.Office.Interop.Word.ContentControl` 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。  
   
  以下宿主控件可用于 Excel 项目：  
   
--   [图表控件](../vsto/chart-control.md)  
+- [图表控件](../vsto/chart-control.md)  
   
--   [ListObject 控件](../vsto/listobject-control.md)  
+- [ListObject 控件](../vsto/listobject-control.md)  
   
--   [NamedRange 控件](../vsto/namedrange-control.md)  
+- [NamedRange 控件](../vsto/namedrange-control.md)  
   
--   [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)  
+- [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)  
   
- 以下宿主控件可用于 Word 项目：  
+  以下宿主控件可用于 Word 项目：  
   
--   [Bookmark 控件](../vsto/bookmark-control.md)  
+- [Bookmark 控件](../vsto/bookmark-control.md)  
   
--   [内容控件](../vsto/content-controls.md)  
+- [内容控件](../vsto/content-controls.md)  
   
--   [XMLNode 控件](../vsto/xmlnode-control.md)  
+- [XMLNode 控件](../vsto/xmlnode-control.md)  
   
--   [XMLNodes 控件](../vsto/xmlnodes-control.md)  
+- [XMLNodes 控件](../vsto/xmlnodes-control.md)  
   
- 添加到 Office 文档的宿主控件的行为类似于本机的 Office 对象；但是，宿主控件具有包括事件和数据绑定功能的附加功能。 例如，要捕获 Excel 中的本机 <xref:Microsoft.Office.Interop.Excel.Range> 对象的事件时，必须首先处理工作表的更改事件。 然后必须确定 <xref:Microsoft.Office.Interop.Excel.Range>中是否发生了更改。 与此相反， <xref:Microsoft.Office.Tools.Excel.NamedRange> 宿主控件具有可直接处理的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件。  
+  添加到 Office 文档的宿主控件的行为类似于本机的 Office 对象；但是，宿主控件具有包括事件和数据绑定功能的附加功能。 例如，要捕获 Excel 中的本机 <xref:Microsoft.Office.Interop.Excel.Range> 对象的事件时，必须首先处理工作表的更改事件。 然后必须确定 <xref:Microsoft.Office.Interop.Excel.Range>中是否发生了更改。 与此相反， <xref:Microsoft.Office.Tools.Excel.NamedRange> 宿主控件具有可直接处理的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 事件。  
   
- 主机项和宿主控件之间的关系是类似于 Windows 窗体和 Windows 窗体控件之间的关系。 就像你将文本框控件置于 Windows 窗体上，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件置于 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项上。 下图显示宿主项和宿主控件之间的关系。  
+  主机项和宿主控件之间的关系是类似于 Windows 窗体和 Windows 窗体控件之间的关系。 就像你将文本框控件置于 Windows 窗体上，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件置于 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项上。 下图显示宿主项和宿主控件之间的关系。  
   
- ![主机项和宿主控件之间的关系](../vsto/media/hostitemscontrols.png "主机项和宿主控件之间的关系")  
+  ![主机项和宿主控件之间的关系](../vsto/media/hostitemscontrols.png "主机项和宿主控件之间的关系")  
   
- 您还可以通过将 Windows 窗体控件添加到 Word 和 Excel 文档图面，从而在 Office 解决方案中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+  您还可以通过将 Windows 窗体控件添加到 Word 和 Excel 文档图面，从而在 Office 解决方案中使用 Windows 窗体控件。 有关详细信息，请参阅[Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
 > [!NOTE]  
 >  不支持将宿主控件或 Windows 窗体控件添加到 Word 子文档。  
@@ -121,31 +121,31 @@ ms.locfileid: "35670331"
 ### <a name="add-host-controls-to-your-documents"></a>将宿主控件添加到你的文档  
  在文档级项目中，你可以在设计时通过以下方式将宿主控件添加到 Word 文档或 Excel 工作表：  
   
--   在设计时按与添加本机对象相同的方式将宿主控件添加到你的文档。  
+- 在设计时按与添加本机对象相同的方式将宿主控件添加到你的文档。  
   
--   将宿主控件从“工具箱”  拖动到文档和工作表。 Excel 宿主控件位于 Excel 项目中的“Excel 控件”  选项卡，Word 宿主控件位于 Word 项目中的“Word 控件”  选项卡。  
+- 将宿主控件从“工具箱”  拖动到文档和工作表。 Excel 宿主控件位于 Excel 项目中的“Excel 控件”  选项卡，Word 宿主控件位于 Word 项目中的“Word 控件”  选项卡。  
   
--   将宿主控件从“数据源”  窗口拖动到文档和工作表。 这使你能够添加已绑定到数据的控件。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+- 将宿主控件从“数据源”  窗口拖动到文档和工作表。 这使你能够添加已绑定到数据的控件。 有关详细信息，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- 在文档级和 VSTO 外接程序项目中，您还可以在运行时向文档添加某些宿主控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  在文档级和 VSTO 外接程序项目中，您还可以在运行时向文档添加某些宿主控件。 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 有关如何将宿主控件添加到文档的详细信息，请参阅以下主题：  
+  有关如何将宿主控件添加到文档的详细信息，请参阅以下主题：  
   
--   [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)  
+- [如何： 向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)  
   
--   [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
+- [如何： 向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)  
   
--   [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
+- [如何： 向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)  
   
--   [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
+- [如何： 向工作表添加 XMLMappedRange 控件](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)  
   
--   [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
+- [如何： 向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)  
   
--   [如何： 将内容添加到 Word 文档的控件](../vsto/how-to-add-content-controls-to-word-documents.md)  
+- [如何： 将内容添加到 Word 文档的控件](../vsto/how-to-add-content-controls-to-word-documents.md)  
   
--   [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
+- [如何： 向 Word 文档添加 XMLNode 控件](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)  
   
--   [如何： 向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
+- [如何： 向 Word 文档添加 XMLNodes 控件](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)  
   
 ### <a name="name-host-controls"></a>命名宿主控件  
  将宿主控件从“工具箱”  拖动到文档时，将自动使用末端尾号递增的控件类型对该控件命名。 例如，书签命名为 **bookmark1**、 **bookmark2**，依此类推。 如果使用 Word 或 Excel 的本机功能来添加控件，你可以在创建此控件时指定特定名称。 也可以通过在“属性”  窗口更改“名称”  属性的值来重命名你的控件。  

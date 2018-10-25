@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c0fb64c5be7912f9453d3f9f25fd86a6fbfc1e
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 8e0caba3cce487f8a706aee7e0944a75255d1df6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939106"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行辅助进程
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。  
@@ -38,41 +38,41 @@ ms.locfileid: "37057182"
   
 #### <a name="to-run-aspnetwpexe-under-a-user-account"></a>以用户帐户运行 aspnet_wp.exe  
   
-1.  打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
+1. 打开 machine.config 文件，此文件位于计算机上运行时安装路径下的 CONFIG 文件夹中。  
   
-2.  查找&lt;processModel&gt;部分，并将用户和密码属性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
+2. 查找&lt;processModel&gt;部分，并将用户和密码属性更改为的名称和要用于运行 aspnet_wp.exe 的用户帐户的密码。  
   
-3.  保存 machine.config 文件。  
+3. 保存 machine.config 文件。  
   
-4.  在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] 上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
+4. 在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]上，默认情况下已安装 IIS 6.0。 相应的辅助进程是 w3wp.exe。若要在 IIS 6.0 模式下运行并将 aspnet_wp.exe 用作辅助进程，必须执行下列步骤：  
   
-    1.  单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。  
+   1.  单击 **“开始”**，单击 **“管理工具”** ，然后选择 **“Internet 信息服务”**。  
   
-    2.  在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。  
+   2.  在 **“Internet 信息服务”** 对话框中，右击 **“网站”** 文件夹并选择 **“属性”**。  
   
-    3.  在 **“网站属性”** 对话框中选择 **“服务”**。  
+   3.  在 **“网站属性”** 对话框中选择 **“服务”**。  
   
-    4.  选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。  
+   4.  选择 **“以 IIS6.0 隔离模式运行 WWW 服务”**。  
   
-    5.  关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。  
+   5.  关闭 **“属性”** 对话框和 **“Internet 服务管理器”**。  
   
-5.  打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：  
+5. 打开 Windows 命令提示窗口，通过运行下面的命令重置服务器：  
   
-    ```cmd
-    iisreset  
-    ```  
-    — 或 —  
+   ```cmd
+   iisreset  
+   ```  
+   — 或 —  
   
-    ```cmd
-    net stop iisadmin /y  
-    net start w3svc  
-    ```  
+   ```cmd
+   net stop iisadmin /y  
+   net start w3svc  
+   ```  
   
-6.  找到 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 文件夹，然后选择**属性**快捷菜单上。  
+6. 找到 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 文件夹，它应位于 CONFIG 文件夹所在的路径中。 右键单击 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 文件夹，然后选择快捷菜单上的“属性”  。  
   
-7.  在 **“临时 ASP.NET 文件属性”** 对话框中单击 **“安全性”** 选项卡。  
+7. 在 **“临时 ASP.NET 文件属性”** 对话框中单击 **“安全性”** 选项卡。  
   
-8.  单击 **“高级”**。  
+8. 单击 **“高级”**。  
   
 9. 在 **“临时 ASP.Net 文件的高级安全设置”** 对话框中单击 **“添加”**。  
   

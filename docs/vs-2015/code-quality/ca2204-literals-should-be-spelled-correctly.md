@@ -20,15 +20,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4bbf07e4b8475c45f5f9ea1818a51b5670e23454
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9fb00f8a0986d5ead81e36888a9b714244d1230c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928428"
 ---
 # <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204：应正确拼写文本
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
@@ -42,15 +43,15 @@ ms.locfileid: "49200341"
 ## <a name="rule-description"></a>规则说明
  此规则检查的作为值传递到参数或属性时一个文本字符串或多个以下情况下为 true:
 
--   <xref:System.ComponentModel.LocalizableAttribute>参数或属性的特性设置为 true。
+- <xref:System.ComponentModel.LocalizableAttribute>参数或属性的特性设置为 true。
 
--   参数或属性名称包含"Text"、"Message"描述"。
+- 参数或属性名称包含"Text"、"Message"描述"。
 
--   传递给 Console.Write 或 Console.WriteLine 方法将字符串参数名称是"值"format"。
+- 传递给 Console.Write 或 Console.WriteLine 方法将字符串参数名称是"值"format"。
 
- 此规则将文本字符串分析为切分组合词的单词，并检查每个单词/标记的拼写。 有关分析算法的信息，请参阅[CA1704： 标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
+  此规则将文本字符串分析为切分组合词的单词，并检查每个单词/标记的拼写。 有关分析算法的信息，请参阅[CA1704： 标识符应正确拼写](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。
 
- 默认情况下，使用拼写检查器的英语 (en) 版本。
+  默认情况下，使用拼写检查器的英语 (en) 版本。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请更正该单词的拼写或将该词添加到自定义字典。 有关如何使用自定义词典的信息，请参阅[如何： 自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)。

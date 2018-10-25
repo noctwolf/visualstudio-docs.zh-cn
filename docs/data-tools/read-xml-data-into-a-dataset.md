@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: dec4ca4ccd4b318cc337b10086fbf6b31a0e962c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 160d008425cc1c82fb8be26e7a6be9b3be82e999
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174770"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908417"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 
@@ -54,75 +54,75 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 由于本演练重点介绍 XML 数据读入数据集，提供的 XML 文件的内容。
 
-1.  上**项目**菜单中，选择**添加新项**。
+1. 上**项目**菜单中，选择**添加新项**。
 
-2.  选择**XML 文件**，将文件命名**authors.xml**，然后选择**添加**。
+2. 选择**XML 文件**，将文件命名**authors.xml**，然后选择**添加**。
 
    XML 文件加载到设计器，并可供编辑。
 
-3.  将以下 XML 数据粘贴到编辑器中的 XML 声明如下：
+3. 将以下 XML 数据粘贴到编辑器中的 XML 声明如下：
 
-    ```xml
-    <Authors_Table>
-      <authors>
-        <au_id>172-32-1176</au_id>
-        <au_lname>White</au_lname>
-        <au_fname>Johnson</au_fname>
-        <phone>408 496-7223</phone>
-        <address>10932 Bigge Rd.</address>
-        <city>Menlo Park</city>
-        <state>CA</state>
-        <zip>94025</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>213-46-8915</au_id>
-        <au_lname>Green</au_lname>
-        <au_fname>Margie</au_fname>
-        <phone>415 986-7020</phone>
-        <address>309 63rd St. #411</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94618</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>238-95-7766</au_id>
-        <au_lname>Carson</au_lname>
-        <au_fname>Cheryl</au_fname>
-        <phone>415 548-7723</phone>
-        <address>589 Darwin Ln.</address>
-        <city>Berkeley</city>
-        <state>CA</state>
-        <zip>94705</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>267-41-2394</au_id>
-        <au_lname>Hunter</au_lname>
-        <au_fname>Anne</au_fname>
-        <phone>408 286-2428</phone>
-        <address>22 Cleveland Av. #14</address>
-        <city>San Jose</city>
-        <state>CA</state>
-        <zip>95128</zip>
-        <contract>true</contract>
-      </authors>
-      <authors>
-        <au_id>274-80-9391</au_id>
-        <au_lname>Straight</au_lname>
-        <au_fname>Dean</au_fname>
-        <phone>415 834-2919</phone>
-        <address>5420 College Av.</address>
-        <city>Oakland</city>
-        <state>CA</state>
-        <zip>94609</zip>
-        <contract>true</contract>
-      </authors>
-    </Authors_Table>
-    ```
+   ```xml
+   <Authors_Table>
+     <authors>
+       <au_id>172-32-1176</au_id>
+       <au_lname>White</au_lname>
+       <au_fname>Johnson</au_fname>
+       <phone>408 496-7223</phone>
+       <address>10932 Bigge Rd.</address>
+       <city>Menlo Park</city>
+       <state>CA</state>
+       <zip>94025</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>213-46-8915</au_id>
+       <au_lname>Green</au_lname>
+       <au_fname>Margie</au_fname>
+       <phone>415 986-7020</phone>
+       <address>309 63rd St. #411</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94618</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>238-95-7766</au_id>
+       <au_lname>Carson</au_lname>
+       <au_fname>Cheryl</au_fname>
+       <phone>415 548-7723</phone>
+       <address>589 Darwin Ln.</address>
+       <city>Berkeley</city>
+       <state>CA</state>
+       <zip>94705</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>267-41-2394</au_id>
+       <au_lname>Hunter</au_lname>
+       <au_fname>Anne</au_fname>
+       <phone>408 286-2428</phone>
+       <address>22 Cleveland Av. #14</address>
+       <city>San Jose</city>
+       <state>CA</state>
+       <zip>95128</zip>
+       <contract>true</contract>
+     </authors>
+     <authors>
+       <au_id>274-80-9391</au_id>
+       <au_lname>Straight</au_lname>
+       <au_fname>Dean</au_fname>
+       <phone>415 834-2919</phone>
+       <address>5420 College Av.</address>
+       <city>Oakland</city>
+       <state>CA</state>
+       <zip>94609</zip>
+       <contract>true</contract>
+     </authors>
+   </Authors_Table>
+   ```
 
-4.  上**文件**菜单中，选择**保存 authors.xml**。
+4. 上**文件**菜单中，选择**保存 authors.xml**。
 
 ## <a name="create-the-user-interface"></a>创建用户界面
 
@@ -225,7 +225,7 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，您
 
 本演练介绍了 XML 文件读取到数据集，以及创建基于 XML 文件的内容架构的基础知识。 下面是一些你可能会在接下来执行的任务：
 
--   编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅<xref:System.Data.DataSet.WriteXml%2A>。
+-   编辑数据集，将它写回以 XML 形式的数据。 有关详细信息，请参阅 <xref:System.Data.DataSet.WriteXml%2A> 。
 
 -   编辑数据集中的数据并将其写出到数据库。
 

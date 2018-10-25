@@ -13,12 +13,12 @@ ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fc1d47030cf8c71b681e7f6f2ff3c6df5dfa58eb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c10611ee05178f907c36aae268b0d6990a9e6606
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905696"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>演练：使用 C++ 创建 SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,27 +148,27 @@ ms.locfileid: "49243706"
   
 ##  <a name="createSample"></a> 创建示例应用程序使用类库  
   
-1.  在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-2.  在模板列表中，展开**Visual c + +**， **Windows 应用商店**，然后选择**空白应用**。 在中**名称**框中，指定**NativeMathSDKSample**，然后选择**确定**按钮。  
+2. 在模板列表中，展开**Visual c + +**， **Windows 应用商店**，然后选择**空白应用**。 在中**名称**框中，指定**NativeMathSDKSample**，然后选择**确定**按钮。  
   
-3.  在中**解决方案资源管理器**，打开快捷菜单**NativeMathSDKSample**项目，，然后选择**添加**，**引用**。  
+3. 在中**解决方案资源管理器**，打开快捷菜单**NativeMathSDKSample**项目，，然后选择**添加**，**引用**。  
   
-4.  上**常见属性**，**框架和引用**属性页上，在列表中的引用类型，展开**Windows**，然后选择**扩展**. 在细节窗格中，选择**原生数学 SDK**扩展，然后选择**添加新引用**按钮。  
+4. 上**常见属性**，**框架和引用**属性页上，在列表中的引用类型，展开**Windows**，然后选择**扩展**. 在细节窗格中，选择**原生数学 SDK**扩展，然后选择**添加新引用**按钮。  
   
-5.  在中**添加引用**对话框中，选择**本机数学 SDK**复选框，，然后选择**确定**按钮。  
+5. 在中**添加引用**对话框中，选择**本机数学 SDK**复选框，，然后选择**确定**按钮。  
   
-6.  为 NativeMathSDKSample 显示项目属性。  
+6. 为 NativeMathSDKSample 显示项目属性。  
   
-     添加引用时，已应用 NativeMathSDK.props 中定义的属性。 可以通过检查来验证这**VC + + 目录**项目的属性**配置属性**。  
+    添加引用时，已应用 NativeMathSDK.props 中定义的属性。 可以通过检查来验证这**VC + + 目录**项目的属性**配置属性**。  
   
-7.  在中**解决方案资源管理器**，打开 MainPage.xaml，并使用以下 XAML 以将其内容为：  
+7. 在中**解决方案资源管理器**，打开 MainPage.xaml，并使用以下 XAML 以将其内容为：  
   
-     [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
+    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml#1)]  
   
-8.  更新 Mainpage.xaml.h 中以匹配此代码：  
+8. 更新 Mainpage.xaml.h 中以匹配此代码：  
   
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
+    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h#2)]  
   
 9. 更新 mainpage.xaml.cpp 中，以匹配此代码：  
   
@@ -180,7 +180,7 @@ ms.locfileid: "49243706"
   
      将显示正确的结果。  
   
- 本演练演示了如何创建和使用扩展 SDK 来调入[!INCLUDE[wrt](../includes/wrt-md.md)]库和非[!INCLUDE[wrt](../includes/wrt-md.md)]库。  
+    本演练演示了如何创建和使用扩展 SDK 来调入[!INCLUDE[wrt](../includes/wrt-md.md)]库和非[!INCLUDE[wrt](../includes/wrt-md.md)]库。  
   
 ## <a name="next-steps"></a>后续步骤  
   

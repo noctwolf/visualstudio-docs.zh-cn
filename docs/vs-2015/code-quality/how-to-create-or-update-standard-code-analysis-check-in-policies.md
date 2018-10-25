@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 63c1b27d762f79a8933a31bb33850ad4604a9c37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6821d218c22f2d83108205d8753fc2d5beac4f28
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939431"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49301556"
   
  代码分析签入策略设置在团队项目设置中，并将应用于团队项目中每个代码项目。 代码分析运行的代码项目的项目 (.xxproj) 文件中的代码项目的配置。 代码分析运行在本地计算机上执行。 时启用代码分析签入策略、 要签入代码项目中的文件必须在其最后一次编辑后编译和代码分析运行的最小值，包含团队项目设置中的规则必须在计算机上执行其中 changes 所做。  
   
--   通过指定的签入策略设置为托管代码中，*规则集*，其中包含代码分析规则的子集。  
+- 通过指定的签入策略设置为托管代码中，*规则集*，其中包含代码分析规则的子集。  
   
--   对于 C/c + + 代码，签入策略需要运行所有代码分析规则。 可以添加预处理器指令，以禁用你的团队项目中的单个代码项目的特定规则。  
+- 对于 C/c + + 代码，签入策略需要运行所有代码分析规则。 可以添加预处理器指令，以禁用你的团队项目中的单个代码项目的特定规则。  
   
- 指定托管代码的签入策略后，团队成员可以同步到团队项目的策略设置的代码项目及其代码分析设置。  
+  指定托管代码的签入策略后，团队成员可以同步到团队项目的策略设置的代码项目及其代码分析设置。  
   
 ### <a name="to-open-the-check-in-policy-editor"></a>若要打开签入策略编辑器  
   

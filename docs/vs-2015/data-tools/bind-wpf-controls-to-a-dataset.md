@@ -21,12 +21,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b56371ed66287f4b8f8005b6e793f6311427100
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 19189e63a3fb3fdfa3016cb2643cc34a193a2a52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289557"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892995"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,30 +36,30 @@ ms.locfileid: "49289557"
   
  本演练阐释了以下任务：  
   
--   创建一个 WPF 应用程序和一个利用 AdventureWorksLT 示例数据库中的数据生成的数据集。  
+- 创建一个 WPF 应用程序和一个利用 AdventureWorksLT 示例数据库中的数据生成的数据集。  
   
--   通过将数据从表创建数据绑定控件的一组**数据源**到 WPF 设计器中的窗口的窗口。  
+- 通过将数据从表创建数据绑定控件的一组**数据源**到 WPF 设计器中的窗口的窗口。  
   
--   创建用于向前/向后导航产品记录的按钮。  
+- 创建用于向前/向后导航产品记录的按钮。  
   
--   创建一个用于将用户对产品记录所做的更改保存到数据表和基础数据源的按钮。  
+- 创建一个用于将用户对产品记录所做的更改保存到数据表和基础数据源的按钮。  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
+- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
   
- 事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
+  事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
--   数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)并[TableAdapter 概述](../data-tools/tableadapter-overview.md)。  
+- 数据集和 TableAdapter。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)并[TableAdapter 概述](../data-tools/tableadapter-overview.md)。  
   
--   使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
--   WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-project"></a>创建项目  
  创建一个新的 WPF 项目。 该项目将显示产品记录。  

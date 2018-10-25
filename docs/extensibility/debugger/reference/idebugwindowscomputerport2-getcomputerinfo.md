@@ -1,5 +1,5 @@
 ---
-title: IDebugWindowsComputerPort2::GetComputerInfo |Microsoft 文档
+title: IDebugWindowsComputerPort2::GetComputerInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9dff1b64cafa6a212600cd467b86f8ddca83337
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 4e222eda1553e5fc608f1d34ab34d27da97cd650
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912941"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
-检索有关计算机在其上的信息中运行的调试器。  
+检索有关计算机上的信息的调试器中运行。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,6 +45,6 @@ public int GetComputerInfo(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)   
  [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

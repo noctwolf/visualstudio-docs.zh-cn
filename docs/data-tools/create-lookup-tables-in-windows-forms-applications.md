@@ -13,12 +13,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7b154b970d2a738e80efa5cbf669d29bd7bae589
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: f68cb2178242e5589f312f6ddc2c555da3f47a0e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872819"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>在 Windows 窗体应用程序中创建查找表
 术语*查找表*描述了绑定到两个相关的数据表的控件。 这些查找的控件显示基于所选第二个表中的值的第一个表中的数据。
@@ -52,7 +52,7 @@ ms.locfileid: "36756761"
      查找绑定现在已建立。 请参阅下表中的设置在控件的特定属性。
 
     |属性|设置说明|
-    |--------------|----------------------------|
+    |--------------| - |
     |**DataSource**|Visual Studio 将此属性设置为<xref:System.Windows.Forms.BindingSource>创建的表拖到控件 (而不是<xref:System.Windows.Forms.BindingSource>，创建控件时创建)。<br /><br /> 如果你需要进行调整，则将此设置为<xref:System.Windows.Forms.BindingSource>具有你想要显示的列的表。|
     |**DisplayMember**|对于你拖动到控件上的表，则 Visual Studio 将此属性设置为该主键后的具有字符串数据类型的第一列。<br /><br /> 如果你需要进行调整，其设置为你想要显示的列名称。|
     |**ValueMember**|Visual Studio 将此属性设置为参与主键的第一列，或表中的第一列（如果未定义任何键）。<br /><br /> 如果你需要进行调整，其设置为具有你想要显示的列的表中的主键。|

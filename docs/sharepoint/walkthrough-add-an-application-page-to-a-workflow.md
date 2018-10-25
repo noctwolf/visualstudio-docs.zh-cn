@@ -18,25 +18,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 841257a03e257b92b728d33751869a02e2c40db6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4bdb01e5cbb45b9986e61a99e18b5984e92d37dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774583"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866891"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练： 将应用程序页添加到工作流
   本演练演示如何添加显示数据派生自工作流到工作流项目的应用程序页。 它建立在本主题中介绍的项目[演练： 使用关联和初始化表单创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)。
 
  本演练演示了下列任务：
 
--   将 ASPX 应用程序页添加到 SharePoint 工作流项目。
+- 将 ASPX 应用程序页添加到 SharePoint 工作流项目。
 
--   从工作流项目中获取数据和操作。
+- 从工作流项目中获取数据和操作。
 
--   在应用程序页上的表中显示数据。
+- 在应用程序页上的表中显示数据。
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：
@@ -134,7 +134,7 @@ ms.locfileid: "43774583"
     using Microsoft.SharePoint.Navigation;
     ```
 
-3.  将以下代码添加到 `Page_Load` 方法：
+3.  将以下代码添加到 `Page_Load` 方法中：
 
     ```vb
     Try
@@ -305,23 +305,23 @@ ms.locfileid: "43774583"
 
 #### <a name="to-test-the-application-page"></a>若要测试的应用程序页
 
-1.  选择**F5**键以运行并将项目部署到 SharePoint。
+1. 选择**F5**键以运行并将项目部署到 SharePoint。
 
-2.  选择**主页**按钮，，然后选择**Shared Documents**快速启动栏显示在 SharePoint 站点上的共享文档列表上的链接。
+2. 选择**主页**按钮，，然后选择**Shared Documents**快速启动栏显示在 SharePoint 站点上的共享文档列表上的链接。
 
-3.  若要表示的此示例的费用报告，一些将新文档上载到文档列表通过选择**文档**链接**报销**选项卡顶部的页上，然后选择**上传文档**工具功能区上的按钮。
+3. 若要表示的此示例的费用报告，一些将新文档上载到文档列表通过选择**文档**链接**报销**选项卡顶部的页上，然后选择**上传文档**工具功能区上的按钮。
 
-4.  通过选择中上传一些文档后，实例化工作流**库**链接**报销**页，然后选择顶部的选项卡**库设置**工具功能区上的按钮。
+4. 通过选择中上传一些文档后，实例化工作流**库**链接**报销**页，然后选择顶部的选项卡**库设置**工具功能区上的按钮。
 
-5.  在中**文档库设置**页上，选择**工作流设置**中的链接**权限和管理**部分。
+5. 在中**文档库设置**页上，选择**工作流设置**中的链接**权限和管理**部分。
 
-6.  在中**工作流设置**页上，选择**添加工作流**链接。
+6. 在中**工作流设置**页上，选择**添加工作流**链接。
 
-7.  在中**添加工作流**页上，选择**ExpenseReport-Workflow1**工作流中，输入工作流的名称，例如**ExpenseTest**，然后选择**下一步**按钮。
+7. 在中**添加工作流**页上，选择**ExpenseReport-Workflow1**工作流中，输入工作流的名称，例如**ExpenseTest**，然后选择**下一步**按钮。
 
-     显示工作流关联窗体。 使用它来报告支出限制量。
+    显示工作流关联窗体。 使用它来报告支出限制量。
 
-8.  在关联窗体中，输入**1000年**到**自动 Approval Limit** ，然后再选择**相关联的工作流**按钮。
+8. 在关联窗体中，输入**1000年**到**自动 Approval Limit** ，然后再选择**相关联的工作流**按钮。
 
 9. 选择**家庭**按钮返回到 SharePoint 主页上。
 
@@ -337,7 +337,7 @@ ms.locfileid: "43774583"
 
 14. 重复步骤 11-13 共享文档列表中的其他文档。 （精确的文档数并不重要。）
 
-15. 通过 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://**_SystemName_**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
+15. 通过 Web 浏览器中打开以下 URL 显示费用报表汇总应用程序页： **http://**<em>SystemName</em>**/_layouts/ExpenseReport/ApplicationPage1.aspx**.
 
      零用金报销单摘要页列出所有超过分配的量的费用报告，它们超出了它，通过量，以及所有报表的总金额。
 

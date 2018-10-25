@@ -12,12 +12,12 @@ ms.author: corob
 manager: douge
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: a94490c60a8b2ccb4513cf3c6c5c9d0de1a6f392
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 0b8a2622c0b4d55376ecb0f3bc6641d41c524962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39233108"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845414"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 当为跨平台移动开发选项安装 Visual C++ 时，Visual Studio 2015 可用于创建完全正常运行的 Android 本机活动应用。 Android 本机开发工具包 (NDK) 是一个工具集，让你能够使用纯 C/C++ 代码实现大部分的 Android 应用。 一些 Java JNI 代码充当粘附，使 C/C++ 代码可以与 Android 进行交互。 Android NDK 引入了使用 Android API 级别 9 创建本机活动应用的功能。 本机活动代码很受欢迎，可创建使用 Unreal 引擎或 OpenGL 的游戏和图形密集型应用。 本主题将指导你创建使用 OpenGL 的简单本机活动应用。 其他主题向开发人员演示有关编辑、生成、调试和部署本机活动代码的生命周期。  
@@ -34,19 +34,19 @@ ms.locfileid: "39233108"
   
 #### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  打开 Visual Studio。 在菜单栏上，依次选择“文件” > “新建” > “项目”。  
+1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” > “新建” > “项目”。  
   
-2.  在“新建项目”对话框中，在“模板”下，选择“Visual C++” > “跨平台”，然后选择“本机活动应用程序 (Android)”模板。  
+2. 在“新建项目”对话框中，在“模板”下，选择“Visual C++” > “跨平台”，然后选择“本机活动应用程序 (Android)”模板。  
   
-3.  为应用命名（例如 `MyAndroidApp`），然后选择 **确认**。  
+3. 为应用命名（例如 `MyAndroidApp`），然后选择 **确认**。  
   
-     ![创建本机活动项目](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
+    ![创建本机活动项目](../cross-platform/media/cppmdd_newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio 创建新的解决方案并打开解决方案资源管理器。  
+    Visual Studio 创建新的解决方案并打开解决方案资源管理器。  
   
-     ![解决方案资源管理器中的本机活动项目](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![解决方案资源管理器中的本机活动项目](../cross-platform/media/cppmdd_rc_na_solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- 新的 Android 本机活动应用解决方案包括两个项目：  
+   新的 Android 本机活动应用解决方案包括两个项目：  
   
 -   `MyAndroidApp.NativeActivity` 包含应用的引用和粘附代码，以作为本机活动在 Android 上运行。 粘附代码的入口点的实现位于 main.cpp。 预编译头位于 pch.h。 本机活动应用项目编译为一个由打包项目选取的共享库 .so 文件。  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 50
 author: stevehoag
 ms.author: shoag
 manager: wpickett
-ms.openlocfilehash: 1235416a411935d811f3747fa5127cc395ef0f29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 682ae7d410f80d3ba5e960d485c144b2f7495141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909050"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,21 +44,21 @@ ms.locfileid: "49287087"
   
  下面是所需软件的列表：  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+- [Windows 10](http://windows.microsoft.com/windows/downloads)  
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 请确保可选功能列表中，通用 Windows 应用开发工具处于选中状态。 没有这些工具，你将无法创建通用应用。  
+- [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 请确保可选功能列表中，通用 Windows 应用开发工具处于选中状态。 没有这些工具，你将无法创建通用应用。  
   
- 在安装此软件之后，你需要 [启用 Windows 10 设备](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 以进行开发。 （不再需要每个 Windows 10 设备的开发人员许可证。）  
+  在安装此软件之后，你需要 [启用 Windows 10 设备](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 以进行开发。 （不再需要每个 Windows 10 设备的开发人员许可证。）  
   
- **Windows 8.1 和 Windows 7 支持**  
+  **Windows 8.1 和 Windows 7 支持**  
   
- 如果选择使用 Visual Studio 2015 在除 Windows 10 外的平台上开发通用 Windows 应用，存在以下限制：  
+  如果选择使用 Visual Studio 2015 在除 Windows 10 外的平台上开发通用 Windows 应用，存在以下限制：  
   
--   Windows 8.1：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 可使用 Visual Studio 中的仿真程序，但不能使用模拟器。  
+- Windows 8.1：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 可使用 Visual Studio 中的仿真程序，但不能使用模拟器。  
   
--   Windows 7：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 不能使用 Visual Studio 中的仿真程序或模拟器。  
+- Windows 7：不能在本地运行应用（仅在远程 Windows 10 设备上运行）。 不能使用 Visual Studio 中的仿真程序或模拟器。  
   
- 如果开发平台是 Windows 10，只能使用 XAML 设计器。  
+  如果开发平台是 Windows 10，只能使用 XAML 设计器。  
   
 ## <a name="universal-windows-apps"></a>通用 Windows 应用  
  从 C#、Visual Basic、C++ 或 JavaScript 中选择首选的开发语言以 [为 Windows 10 设备创建通用 Windows 应用](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或者，监视 [此入门视频](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb606712365108c869ee0cfe705359ad6064228
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 911c7dd0ff70029a3ca83ded9008472269dceaed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860402"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829464"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 设计时 T4 文本模板，您在 Visual Studio 项目中生成程序代码和其他文件。 通常情况下，你编写一些模板，以便它们改变它们根据中的数据生成的代码*模型*。 模型是文件或数据库，其中包含有关应用程序的要求的关键信息。
@@ -40,103 +40,102 @@ ms.locfileid: "47860402"
 
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>在 Visual Studio 中创建设计时 T4 模板
 
-1.  创建 Visual Studio 项目，或打开现有实验。
+1. 创建 Visual Studio 项目，或打开现有实验。
 
-     例如，在**文件**菜单中，选择**新建** > **项目**。
+    例如，在**文件**菜单中，选择**新建** > **项目**。
 
-2.  将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。
+2. 将文本模板文件添加到你的项目，并为其提供具有扩展名的名称 **.tt**。
 
-     若要执行此操作，在**解决方案资源管理器**，在你的项目的快捷菜单，选择**添加** > **新项**。 在中**添加新项**对话框中，选择**文本模板**从中间窗格。
+    若要执行此操作，在**解决方案资源管理器**，在你的项目的快捷菜单，选择**添加** > **新项**。 在中**添加新项**对话框中，选择**文本模板**从中间窗格。
 
-     请注意，**自定义工具**文件的属性是**TextTemplatingFileGenerator**。
+    请注意，**自定义工具**文件的属性是**TextTemplatingFileGenerator**。
 
-3.  打开该文件。 该文件中已包含下列指令：
+3. 打开该文件。 该文件中已包含下列指令：
 
-    ```
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    ```
+   ```
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   ```
 
-     如果已将模板添加到 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，则语言特性将为“`VB`”。
+    如果已将模板添加到 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，则语言特性将为“`VB`”。
 
-4.  在文件末尾添加一些文本。 例如：
+4. 在文件末尾添加一些文本。 例如：
 
-    ```
-    Hello, world!
-    ```
+   ```
+   Hello, world!
+   ```
 
-5.  保存该文件。
+5. 保存该文件。
 
-     你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击 **“确定”**。
+    你可能会看到**安全警告**要求你确认你想要运行该模板的消息框。 单击 **“确定”**。
 
-6.  在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。
+6. 在中**解决方案资源管理器**，展开模板文件节点，你将找到具有扩展名的文件 **.txt**。 该文件包含从该模板生成的文本。
 
-    > [!NOTE]
-    >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
+   > [!NOTE]
+   >  如果你的项目是 Visual Basic 项目，则必须单击**显示所有文件**才能看到输出文件。
 
 ### <a name="regenerating-the-code"></a>重新生成代码
  在下列任何一种情况下，将执行模板，同时生成附属文件：
 
--   编辑该模板，然后将焦点更改为不同的 Visual Studio 窗口。
+- 编辑该模板，然后将焦点更改为不同的 Visual Studio 窗口。
 
--   保存模板。
+- 保存模板。
 
--   单击**转换所有模板**中**生成**菜单。 这将转换的 Visual Studio 解决方案中的所有模板。
+- 单击**转换所有模板**中**生成**菜单。 这将转换的 Visual Studio 解决方案中的所有模板。
 
--   在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
+- 在中**解决方案资源管理器**文件，任何的快捷菜单上，选择**运行自定义工具**。 使用此方法可以转换选定的模板子集。
 
- 此外可以设置 Visual Studio 项目，以便执行模板时，会读取数据文件已更改。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
+  此外可以设置 Visual Studio 项目，以便执行模板时，会读取数据文件已更改。 有关详细信息，请参阅[自动重新生成代码](#Regenerating)。
 
 ## <a name="generating-variable-text"></a>生成可变文本
  通过文本模板，可以使用程序代码更改已生成文件的内容。
 
 #### <a name="to-generate-text-by-using-program-code"></a>使用程序代码生成文本
 
-1.  更改 `.tt` 文件的内容：
+1. 更改 `.tt` 文件的内容：
 
-    ```csharp
-    <#@ template hostspecific="false" language="C#" #>
-    <#@ output extension=".txt" #>
-    <#int top = 10;
+   ```csharp
+   <#@ template hostspecific="false" language="C#" #>
+   <#@ output extension=".txt" #>
+   <#int top = 10;
 
-    for (int i = 0; i<=top; i++)
-    { #>
+   for (int i = 0; i<=top; i++)
+   { #>
+      The square of <#= i #> is <#= i*i #>
+   <# } #>
+   ```
+
+   ```vb
+   <#@ template hostspecific="false" language="VB" #>
+   <#@ output extension=".txt" #>
+   <#Dim top As Integer = 10
+
+   For i As Integer = 0 To top
+   #>
        The square of <#= i #> is <#= i*i #>
-    <# } #>
-    ```
+   <#
+   Next
+   #>
+   ```
 
-    ```vb
-    <#@ template hostspecific="false" language="VB" #>
-    <#@ output extension=".txt" #>
-    <#Dim top As Integer = 10
+2. 保存 .tt 文件，然后重新检查已生成的 .txt 文件。 该文件列出数字 0 到 10 的平方。
 
-    For i As Integer = 0 To top
-    #>
-        The square of <#= i #> is <#= i*i #>
-    <#
-    Next
-    #>
+   请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
 
-    ```
-
-2.  保存 .tt 文件，然后重新检查已生成的 .txt 文件。 该文件列出数字 0 到 10 的平方。
-
- 请注意，语句括在 `<#...#>` 内，单个表达式括在 `<#=...#>` 内。 有关详细信息，请参阅[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)。
-
- 如果在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。
+   如果在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中编写生成代码，则 `template` 指令应包含 `language="VB"`。 默认为 `"C#"`。
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>调试设计时 T4 文本模板
  创建文本模板：
 
--   将 `debug="true"` 插入 `template` 指令。 例如：
+- 将 `debug="true"` 插入 `template` 指令。 例如：
 
-     `<#@ template debug="true" hostspecific="false" language="C#" #>`
+   `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
--   在模板中使用为普通代码设置断点的相同方式设置断点。
+- 在模板中使用为普通代码设置断点的相同方式设置断点。
 
--   选择**调试 T4 模板**从解决方案资源管理器中的文本模板文件的快捷菜单。
+- 选择**调试 T4 模板**从解决方案资源管理器中的文本模板文件的快捷菜单。
 
- 该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。
+  该模板将运行并在断点处停止。 你可以以常用方式检查变量并逐步执行代码。
 
 > [!TIP]
 >  `debug="true"` 使生成的代码更精确地映射到文本模板，方法是在生成的代码中插入更多行号指令。 如果不使用它，断点可能在错误状态下停止运行。
@@ -203,13 +202,13 @@ ms.locfileid: "47860402"
 ### <a name="structuring-text-templates"></a>结构化文本模板
  作为一种良好做法，我们往往将模板代码分成两部分：
 
--   配置或数据收集部分，它在变量中设置值，但不包含文本块。 在上一个示例中，此部分是 `properties` 的初始化。
+- 配置或数据收集部分，它在变量中设置值，但不包含文本块。 在上一个示例中，此部分是 `properties` 的初始化。
 
-     此部分有时称为“模型”部分，因为它会构造一个存储内模型，并且通常读取模型文件。
+   此部分有时称为“模型”部分，因为它会构造一个存储内模型，并且通常读取模型文件。
 
--   文本生成部分（示例中的 `foreach(...){...}`），它使用变量的值。
+- 文本生成部分（示例中的 `foreach(...){...}`），它使用变量的值。
 
- 虽然这不是必要的分离，但是通过这种方式可以降低包括文本的部分的复杂性，从而更便于读取模板。
+  虽然这不是必要的分离，但是通过这种方式可以降低包括文本的部分的复杂性，从而更便于读取模板。
 
 ## <a name="reading-files-or-other-sources"></a>读取文件或其他源
  若要访问模型文件或数据库，模板代码可以使用诸如 System.XML 之类的程序集。 若要获取对这些程序集的访问权限，必须插入如下指令：
@@ -236,7 +235,6 @@ ms.locfileid: "47860402"
 <# For Each propertyName As String In
              File.ReadLines("C:\\propertyList.txt")
 #>
-
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>通过相对路径名打开文件
@@ -244,7 +242,6 @@ ms.locfileid: "47860402"
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
-
 ```
 
  然后你可以进行编写，例如：
@@ -256,7 +253,6 @@ ms.locfileid: "47860402"
 ...
 <#  foreach (string propertyName in properties { #>
 ...
-
 ```
 
 ```vb
@@ -267,7 +263,6 @@ ms.locfileid: "47860402"
 <#   For Each propertyName As String In properties
 ...
 #>
-
 ```
 
  还可以使用 `this.Host.TemplateFile`，它标识当前模板文件的名称。
@@ -287,7 +282,6 @@ ms.locfileid: "47860402"
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 > [!TIP]
@@ -326,37 +320,39 @@ Warning("A warning message");
 
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板
 
-1.  将你想要生成，如类型的文件添加到你的 Visual Studio 项目`.cs`， `.vb`，或`.resx`文件。
+1. 将你想要生成，如类型的文件添加到你的 Visual Studio 项目`.cs`， `.vb`，或`.resx`文件。
 
-2.  测试新文件以确保其工作。
+2. 测试新文件以确保其工作。
 
-3.  在解决方案资源管理器，更改到的文件扩展名 **.tt**。
+3. 在解决方案资源管理器，更改到的文件扩展名 **.tt**。
 
-4.  验证的以下属性 **.tt**文件：
+4. 验证的以下属性 **.tt**文件：
 
-    |||
-    |-|-|
-    |**自定义工具 =**|**TextTemplatingFileGenerator**|
-    |**生成操作 =**|**无**|
 
-5.  在文件开头插入以下行：
+   | | |
+   |-|-|
+   | **自定义工具 =** | **TextTemplatingFileGenerator** |
+   | **生成操作 =** | **无** |
 
-    ```
-    <#@ template debug="false" hostspecific="false" language="C#" #>
-    <#@ output extension=".cs" #>
-    ```
 
-     如果要以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写模板的生成代码，请将 `language` 特性设置为 `"VB"`，而不是 `"C#"`。
+5. 在文件开头插入以下行：
 
-     将 `extension` 特性设置为要生成的文件类型的文件扩展名，例如 `.cs`、`.resx` 或 `.xml`。
+   ```
+   <#@ template debug="false" hostspecific="false" language="C#" #>
+   <#@ output extension=".cs" #>
+   ```
 
-6.  保存该文件。
+    如果要以 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 编写模板的生成代码，请将 `language` 特性设置为 `"VB"`，而不是 `"C#"`。
 
-     将使用指定扩展名创建一个附属文件。 该文件对于相应文件类型具有正确的属性。 例如，**生成操作**的.cs 文件的属性将为**编译**。
+    将 `extension` 特性设置为要生成的文件类型的文件扩展名，例如 `.cs`、`.resx` 或 `.xml`。
 
-     验证生成的文件是否包含与原始文件相同的内容。
+6. 保存该文件。
 
-7.  确定要更改的文件部分。 例如，一个仅在特定条件下显示的部分、一个重复的部分或特定值会有所变化的部分。 插入生成代码。 保存该文件，然后验证附属文件是否正确生成。 重复此步骤。
+    将使用指定扩展名创建一个附属文件。 该文件对于相应文件类型具有正确的属性。 例如，**生成操作**的.cs 文件的属性将为**编译**。
+
+    验证生成的文件是否包含与原始文件相同的内容。
+
+7. 确定要更改的文件部分。 例如，一个仅在特定条件下显示的部分、一个重复的部分或特定值会有所变化的部分。 插入生成代码。 保存该文件，然后验证附属文件是否正确生成。 重复此步骤。
 
 ## <a name="guidelines-for-code-generation"></a>代码生成的准则
  请参阅[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)。
@@ -364,7 +360,7 @@ Warning("A warning message");
 ## <a name="next-steps"></a>后续步骤
 
 |后续步骤|主题|
-|---------------|-----------|
+|-|-|
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|
 |运行 Visual Studio 外部的文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|

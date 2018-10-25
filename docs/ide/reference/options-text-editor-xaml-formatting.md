@@ -32,12 +32,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 59b161c1f2dedd0b9c14f9949cfcc164f39b26ea
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 272fb5368b73e483bb7d2f44c475d5e4e7bfdfcc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31950028"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933568"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>选项，文本编辑器，XAML，格式
 使用“格式设置”属性页可指定如何在 XAML 文档中设置元素和特性的格式。 若要打开“选项”对话框，请单击“工具”菜单，然后单击“选项”。 若要访问“格式设置”属性页，请依次展开“文本编辑器”、“XAML”、“格式设置”节点。
@@ -96,11 +96,12 @@ ms.locfileid: "31950028"
 ## <a name="element-spacing"></a>元素间距
  使用此设置可以控制元素在 XAML 文档中的排列方式
 
-|||
-|-|-|
-|**保留内容中的新行**|不移除元素内容中的空行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**将内容中的多个空行折叠为单个行**|元素内容中的多个空行会折叠为单个行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|
-|**移除内容中的空行**|移除元素内容中的所有空行。<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|
+
+| | |
+| - | - |
+| **保留内容中的新行** | 不移除元素内容中的空行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>\` |
+| **将内容中的多个空行折叠为单个行** | 元素内容中的多个空行会折叠为单个行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>` |
+| **移除内容中的空行** | 移除元素内容中的所有空行。<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>` |
 
 ## <a name="miscellaneous-section-auto-insert"></a>“杂项”部分->“自动插入”
  使用此设置可以控制自动生成标记和引号的时间。

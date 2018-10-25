@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 606f0129d49e8d5b8f07e6c8fac60fa5029a4828
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a2fdbbd98833ff43e07b17f605b6c3a105eb3efe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294042"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940575"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>在 Visual Studio 进行实时调试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,19 +62,19 @@ ms.locfileid: "49294042"
   
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>启用或禁用实时调试  
   
-1.  打开 Visual Studio。 在 **“工具”** 菜单上，单击 **“选项”**。  
+1. 打开 Visual Studio。 在 **“工具”** 菜单上，单击 **“选项”**。  
   
-2.  在中**选项**对话框中，选择**调试**文件夹。  
+2. 在中**选项**对话框中，选择**调试**文件夹。  
   
-3.  在中**调试**文件夹，选择**中实时**页。  
+3. 在中**调试**文件夹，选择**中实时**页。  
   
-4.  在中**这些类型的代码启用实时调试**框中，选择或清除相关的程序类型：**托管**，**本机**，或**脚本**.  
+4. 在中**这些类型的代码启用实时调试**框中，选择或清除相关的程序类型：**托管**，**本机**，或**脚本**.  
   
-     要在启用实时调试后禁用它，必须使用管理员特权运行。 启用实时调试会设置一个注册表项，需要管理员特权才可以更改该项。  
+    要在启用实时调试后禁用它，必须使用管理员特权运行。 启用实时调试会设置一个注册表项，需要管理员特权才可以更改该项。  
   
-5.  单击 **“确定”**。  
+5. 单击 **“确定”**。  
   
- 即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 未安装 Visual Studio 时，不能禁用中实时从 Visual Studio 调试**选项**对话框。 对于这种情况，你可以通过编辑 Windows 注册表来禁用实时调试。  
+   即便在你的计算机中不再安装有 Visual Studio，仍可启用实时调试。 未安装 Visual Studio 时，不能禁用中实时从 Visual Studio 调试**选项**对话框。 对于这种情况，你可以通过编辑 Windows 注册表来禁用实时调试。  
   
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>通过编辑注册表禁用实时调试  
   

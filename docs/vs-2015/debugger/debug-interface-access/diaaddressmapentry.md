@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ae4e4de3d3f81f335609201ce510b64a4b0f385
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3f1b06773cbc160c683c87c0ec2cd8b4f54436f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910662"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ struct DiaAddressMapEntry {
   
  地址转换`addrA`，在图 A 中为地址， `addrB`，在图 B 中，执行以下步骤：  
   
-1.  搜索的项映射`e`，，最大`rva`小于或等于`addrA`。  
+1. 搜索的项映射`e`，，最大`rva`小于或等于`addrA`。  
   
-2.  设置`delta = addrA – e.rva`。  
+2. 设置`delta = addrA – e.rva`。  
   
-3.  设置`addrB = e.rvaTo + delta`。  
+3. 设置`addrB = e.rvaTo + delta`。  
   
- 一个数组`DiaAddressMapEntry`结构传递给[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。  
+   一个数组`DiaAddressMapEntry`结构传递给[idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： dia2.h  

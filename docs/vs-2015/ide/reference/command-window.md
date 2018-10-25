@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f2149c1645639111e9e050b88632ed911d1157b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b83a9e86aea02e27242a0c1f02ca3f8459152214
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248568"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870180"
 ---
 # <a name="command-window"></a>“命令”窗口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,22 +101,22 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
   
  在此示例中，  
   
--   `Edit.ReplaceInFiles` 是命令  
+- `Edit.ReplaceInFiles` 是命令  
   
--   `/case` 和 `/pattern:regex` 是开关（以斜杠 [/] 字符开头）  
+- `/case` 和 `/pattern:regex` 是开关（以斜杠 [/] 字符开头）  
   
--   `regex` 是 `/pattern` 开关的值；`/case` 开关没有值  
+- `regex` 是 `/pattern` 开关的值；`/case` 开关没有值  
   
--   `var[1-3]+` 和 `oldpar` 是参数  
+- `var[1-3]+` 和 `oldpar` 是参数  
   
-    > [!NOTE]
-    >  任何包含空格的命令、参数、开关或值都必须用双引号引起来。  
+  > [!NOTE]
+  >  任何包含空格的命令、参数、开关或值都必须用双引号引起来。  
   
- 在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。  
+  在命令行上，开关和参数的位置可以随便互换，但 [Shell](../../ide/reference/shell-command.md) 命令是个例外，它要求开关和参数按特定的顺序出现。  
   
- 几乎命令所支持的每个开关都有两种格式：短格式（一个字符）和长格式。 多个短格式开关可组合为一组。 例如，`/p /g /m` 可表示为 `/pgm`。  
+  几乎命令所支持的每个开关都有两种格式：短格式（一个字符）和长格式。 多个短格式开关可组合为一组。 例如，`/p /g /m` 可表示为 `/pgm`。  
   
- 如果短格式开关组合为一组，而且给定一个值，则该值应用于每个开关。 例如，`/pgm:123` 等同于 `/p:123 /g:123 /m:123`。 如果该组中的任何开关都不接受值，则发生错误。  
+  如果短格式开关组合为一组，而且给定一个值，则该值应用于每个开关。 例如，`/pgm:123` 等同于 `/p:123 /g:123 /m:123`。 如果该组中的任何开关都不接受值，则发生错误。  
   
 ## <a name="escape-characters"></a>转义字符  
  命令行中的插入符号 (^) 字符表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的  

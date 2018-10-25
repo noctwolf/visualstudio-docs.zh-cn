@@ -13,77 +13,77 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 266b3c4154c10f537cdc9dec78b0f0a036d94503
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 612ad5668ebb1033ef07dcad1fc07030d78e1643
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512587"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921205"
 ---
 # <a name="how-to-create-a-vsct-file"></a>如何： 创建.vsct 文件  
   
 有几种方法来创建基于 XML 的 Visual Studio 命令表配置 (*.vsct*) 文件。  
   
--   您可以创建新的 VSPackage 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包模板。  
+- 您可以创建新的 VSPackage 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]包模板。  
   
--   可以使用基于 XML 的命令表配置编译器*Vsct.exe*，以便生成一个文件从现有 *.ctc*文件。  
+- 可以使用基于 XML 的命令表配置编译器*Vsct.exe*，以便生成一个文件从现有 *.ctc*文件。  
   
--   可以使用*Vsct.exe*生成 *.vsct*文件从现有 *.cto*文件。  
+- 可以使用*Vsct.exe*生成 *.vsct*文件从现有 *.cto*文件。  
   
--   您可以手动创建一个新 *.vsct*文件。  
+- 您可以手动创建一个新 *.vsct*文件。  
   
- 本文介绍如何手动创建一个新 *.vsct*文件。  
+  本文介绍如何手动创建一个新 *.vsct*文件。  
   
 ### <a name="to-manually-create-a-new-vsct-file"></a>若要手动创建新的.vsct 文件  
   
-1.  启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+1. 启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-2.  上**文件**菜单，依次指向**新建**，然后单击**文件**。  
+2. 上**文件**菜单，依次指向**新建**，然后单击**文件**。  
   
-3.  在中**模板**窗格中，单击**XML 文件**，然后单击**打开**。  
+3. 在中**模板**窗格中，单击**XML 文件**，然后单击**打开**。  
   
-4.  上**视图**菜单上，单击**属性**显示 XML 文件的属性。  
+4. 上**视图**菜单上，单击**属性**显示 XML 文件的属性。  
   
-5.  在中**属性**窗口中，单击**浏览**按钮**架构**属性。  
+5. 在中**属性**窗口中，单击**浏览**按钮**架构**属性。  
   
-6.  在 XSD 架构的列表中选择*vsct.xsd*架构。 如果不是在列表中，单击**添加**，然后找到本地驱动器上的文件。 单击**确定**完成之后。  
+6. 在 XSD 架构的列表中选择*vsct.xsd*架构。 如果不是在列表中，单击**添加**，然后找到本地驱动器上的文件。 单击**确定**完成之后。  
   
-7.  在 XML 文件中，键入 *< CommandTable* ，然后按**选项卡**。通过键入结束标记*>*。  
+7. 在 XML 文件中，键入 *< CommandTable* ，然后按**选项卡**。通过键入结束标记*>*。  
   
-     此操作将创建一个基本 *.vsct*文件。  
+    此操作将创建一个基本 *.vsct*文件。  
   
-8.  填写想要添加的 XML 文件的元素，根据[VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。 有关详细信息，请参阅[创作.vsct 文件](../../extensibility/internals/authoring-dot-vsct-files.md)  
+8. 填写想要添加的 XML 文件的元素，根据[VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)。 有关详细信息，请参阅[创作.vsct 文件](../../extensibility/internals/authoring-dot-vsct-files.md)  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-ctc-file"></a>
 
 ## <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>如何： 从现有的.ctc 文件创建.vsct 文件  
   
-您可以创建基于 XML 的 *.vsct*文件从现有命令表 *.ctc*源文件。 通过执行此操作，您可以充分利用新的基于 XML 的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表 (VSCT) 编译器格式。  
+您可以创建基于 XML 的 *.vsct*文件从现有命令表 *.ctc*源文件。 通过执行此操作，可以利用基于 XML 的新 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令表 (VSCT) 编译器格式。  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>从 .ctc 文件创建 .vsct  文件  
   
-1.  获取 Perl 语言的副本。  
+1. 获取 Perl 语言的副本。  
   
-2.  获取 Perl 脚本的副本*ConvertCTCToVSCT.pl*，它通常位于 *\<Visual Studio SDK 安装路径 > \VisualStudioIntegration\Tools\bin*文件夹。  
+2. 获取 Perl 脚本的副本*ConvertCTCToVSCT.pl*，它通常位于 *\<Visual Studio SDK 安装路径 > \VisualStudioIntegration\Tools\bin*文件夹。  
   
-3.  获取一份 *.ctc*你想要转换的源文件。  
+3. 获取一份 *.ctc*你想要转换的源文件。  
   
-4.  将这些文件放在同一个目录中。  
+4. 将这些文件放在同一个目录中。  
   
-5.  在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令提示窗口中，导航到的目录。  
+5. 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令提示窗口中，导航到的目录。  
   
-6.  类型  
+6. 类型  
   
-    ```  
-    perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
-    ```  
+   ```  
+   perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  
+   ```  
   
-     其中*PkgCmd.ctc*的名称 *.ctc*文件并*PkgCmd.vsct*的名称 *.vsct*你想要创建的文件。  
+    其中*PkgCmd.ctc*的名称 *.ctc*文件并*PkgCmd.vsct*的名称 *.vsct*你想要创建的文件。  
   
-     此操作将创建一个新 *.vsct* XML 命令表源文件。 可以使用编译此文件*Vsct.exe*，使用 VSCT 编译器为您像对任何其他 *.vsct*文件。  
+    此操作将创建一个新 *.vsct* XML 命令表源文件。 可以使用编译此文件*Vsct.exe*，使用 VSCT 编译器为您像对任何其他 *.vsct*文件。  
   
-    > [!NOTE]
-    >  可以改进的可读性 *.vsct*通过重新格式化 XML 注释的文件。  
+   > [!NOTE]
+   >  可以改进的可读性 *.vsct*通过重新格式化 XML 注释的文件。  
   
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 

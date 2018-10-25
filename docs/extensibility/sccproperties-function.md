@@ -1,5 +1,5 @@
 ---
-title: SccProperties 函数 |Microsoft 文档
+title: SccProperties 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d126a4691332f1121ebfc99a84b180d1e99f3d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8f8067464802899ce8966d63d702679d216b6377
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31136661"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875966"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函数
 此函数显示文件或项目的源控件属性。  
@@ -37,30 +37,30 @@ SCCRTN SccProperties (
   
 #### <a name="parameters"></a>参数  
  pvContext  
- [in]源控件插件上下文结构。  
+ [in]源控制插件上下文结构。  
   
  hWnd  
  [in]它提供了任何对话框，父级可以使用源代码管理插件，则 IDE 窗口的句柄。  
   
  lpFileName  
- [in]文件或项目的完全限定的路径名称。  
+ [in]项目的文件的完全限定的路径名称。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|SCC_OK|已成功地显示属性。|  
-|SCC_I_RELOADFILE|版本控制系统已修改的文件属性，因此 IDE 应重新加载此文件。|  
+|SCC_OK|已成功显示属性。|  
+|SCC_I_RELOADFILE|版本控制系统已修改文件属性，因此 IDE 应重新加载此文件。|  
 |SCC_E_PROJNOTOPEN|尚未在源代码管理中打开指定的项目。|  
 |SCC_E_NOTAUTHORIZED|用户无权查看此文件或项目的属性。|  
-|SCC_E_FILENOTCONTROLLED|指定的文件或项目不在源控件下。|  
+|SCC_E_FILENOTCONTROLLED|指定的文件或项目不受源代码管理。|  
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|出现未知或常规错误。|  
   
 ## <a name="remarks"></a>备注  
  源代码管理插件在其自己的对话框中显示的属性。  
   
- 这些属性定义的源代码管理插件和插件可能不同于插件。 如果该插件后，用户可以更改文件的源控件属性，它应返回`SCC_I_RELOAD`发出信号 IDE，需要重新加载此文件或项目。  
+ 这些属性定义的源代码管理插件和插件可能不同于插件。 如果该插件允许用户更改文件的源控件属性，它应返回`SCC_I_RELOAD`以指示需要重新加载此文件或项目的 IDE。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

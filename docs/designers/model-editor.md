@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0702d1f47b8924e97cd3a6df1bba2af2503d5b29
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: b7e3da13240eb172e29676b990d1c23be71e4542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029129"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855529"
 ---
 # <a name="model-editor"></a>模型编辑器
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029129"
 模型编辑器支持用于 DirectX 应用程序开发的若干三维模型格式。
 
 |格式名称|文件扩展名|支持的操作（查看、编辑、创建）|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |Autodesk FBX 交换文件|.fbx|查看、编辑、创建|
 |Collada DAE 文件|.dae|查看、编辑（通过使用 FBX 格式保存对 Collada DAE 文件的修改）。|
 |OBJ|.obj|查看、编辑（通过使用 FBX 格式保存对 OBJ 文件的修改）。|
@@ -254,7 +254,7 @@ Visual Studio 支持三维轴的每个方向，并从支持它的模型文件格
 若要修改特定对象在场景中的不同光源下的反应，你可以更改材料的照明属性，而不影响使用该材料的其他对象。 下表描述常见的照明属性：
 
 |照明属性|描述|
-|-----------------------|-----------------|
+| - |-----------------|
 |**环境**|描述环境照明对图面的影响。|
 |**漫射**|描述平行光和点光对图面的影响。|
 |**放射**|描述图面如何发光，与其他照明无关。|
@@ -294,7 +294,7 @@ Visual Studio 支持三维轴的每个方向，并从支持它的模型文件格
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
 
 |命令|键盘快捷键|
-|-------------|------------------------|
+|-------------| - |
 |切换到“选择”模式|Ctrl+G，Ctrl+Q<br /><br /> **S**|
 |切换到“缩放”模式|Ctrl+G，Ctrl+Z<br /><br /> **Z**|
 |切换到“平移”模式|Ctrl+G，Ctrl+P<br /><br /> **K**|

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4b6c401b602575b34fb80ab98b31bb4ebcd1620
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5d8a5cb7e29cfd900ce81fa5f4b6253f0c49014
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812460"
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：创建自定义规则集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49255497"
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>若要从单个的现有规则集创建自定义规则  
   
-1.  在解决方案资源管理器，右键单击项目，然后选择**属性**。  
+1. 在解决方案资源管理器，右键单击项目，然后选择**属性**。  
   
-2.  上**属性**选项卡上，单击**代码分析**。  
+2. 上**属性**选项卡上，单击**代码分析**。  
   
-3.  在中**规则集**下拉列表中，执行下列任一操作：  
+3. 在中**规则集**下拉列表中，执行下列任一操作：  
   
-    -   选择想要自定义的规则集。  
+   - 选择想要自定义的规则集。  
   
      \- 或 -  
   
-    -   选择**\<浏览...>** 指定的现有规则集不在列表中。  
+   - 选择**\<浏览...>** 指定的现有规则集不在列表中。  
   
-4.  单击**打开**若要在规则集编辑器中显示的规则。  
+4. 单击**打开**若要在规则集编辑器中显示的规则。  
   
 #### <a name="to-create-a-custom-rule-set-from-multiple-existing-rule-sets"></a>若要创建自定义规则集从多个现有规则集  
   

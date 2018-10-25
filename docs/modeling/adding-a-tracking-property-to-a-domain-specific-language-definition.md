@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7b9641ccc9064f576f471c7e75d59c3d5b8f0db6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 473cc26a9d3e7b7bc5ec97d1608706aea2ca3009
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859921"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898715"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 
@@ -30,29 +30,30 @@ ms.locfileid: "47859921"
 
 在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be)。
 
--   跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。
+- 跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。
 
- 跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：
+  跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：
 
--   中的跟踪状态，当计算跟踪属性的值，和的值更新为模型更改中的其他属性。
+- 中的跟踪状态，当计算跟踪属性的值，和的值更新为模型更改中的其他属性。
 
--   当在更新用户状态的跟踪属性的值将保留到的用户上次设置该属性的值。
+- 当在更新用户状态的跟踪属性的值将保留到的用户上次设置该属性的值。
 
--   在中**属性**窗口中，**重置**命令对于在更新属性时，仅启用了跟踪属性的用户状态。 **重置**命令的跟踪属性设置为跟踪状态。
+- 在中**属性**窗口中，**重置**命令对于在更新属性时，仅启用了跟踪属性的用户状态。 **重置**命令的跟踪属性设置为跟踪状态。
 
--   在中**属性**以常规字体显示窗口中，当跟踪属性处于跟踪状态，其值。
+- 在中**属性**以常规字体显示窗口中，当跟踪属性处于跟踪状态，其值。
 
--   在中**属性**窗口中，在更新跟踪属性时通过用户状态，以粗体显示其值。
+- 在中**属性**窗口中，在更新跟踪属性时通过用户状态，以粗体显示其值。
 
 ## <a name="prerequisites"></a>系统必备
 
 在开始本演练之前，必须首先安装这些组件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
+| [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581) |
 
 ## <a name="create-the-project"></a>创建项目
 
@@ -718,33 +719,33 @@ HelperClasses.cs 文件中，添加`TrackingHelper`和`CriticalException`类，�
 
 下一步是生成并运行 DSL 设计器中的新实例[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，以便您可以验证跟踪属性工作正常。
 
-1.  上**构建**菜单上，单击**重新生成解决方案**。
+1. 上**构建**菜单上，单击**重新生成解决方案**。
 
-2.  在“调试”菜单上，单击“启动调试”。
+2. 在“调试”菜单上，单击“启动调试”。
 
-     实验性生成[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]将打开**调试**解决方案，其中包含一个空测试文件。
+    实验性生成[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]将打开**调试**解决方案，其中包含一个空测试文件。
 
-3.  在中**解决方案资源管理器**，双击 Test.trackingPropertyDsl 文件以在设计器中打开它，然后单击设计图面。
+3. 在中**解决方案资源管理器**，双击 Test.trackingPropertyDsl 文件以在设计器中打开它，然后单击设计图面。
 
-     请注意，在**属性**关系图中，窗口**Default Namespace**属性是**DefaultNamespace**，和**自定义元素**属性是**0/0**。
+    请注意，在**属性**关系图中，窗口**Default Namespace**属性是**DefaultNamespace**，和**自定义元素**属性是**0/0**。
 
-4.  拖动**ExampleElement**从元素**工具箱**到关系图图面。
+4. 拖动**ExampleElement**从元素**工具箱**到关系图图面。
 
-5.  在**属性**窗口中的元素，选择**元素 Namespace**属性，并将值从**DefaultNamespace**到**OtherNamespace**。
+5. 在**属性**窗口中的元素，选择**元素 Namespace**属性，并将值从**DefaultNamespace**到**OtherNamespace**。
 
-     请注意，值**元素 Namespace**现在以粗体显示。
+    请注意，值**元素 Namespace**现在以粗体显示。
 
-6.  在中**属性**窗口中，右键单击**元素 Namespace**，然后单击**重置**。
+6. 在中**属性**窗口中，右键单击**元素 Namespace**，然后单击**重置**。
 
-     属性的值更改为**DefaultNamespace**，并以常规字体显示值。
+    属性的值更改为**DefaultNamespace**，并以常规字体显示值。
 
-     右键单击**元素 Namespace**试。 **重置**现已禁用命令，因为该属性目前是在其跟踪状态。
+    右键单击**元素 Namespace**试。 **重置**现已禁用命令，因为该属性目前是在其跟踪状态。
 
-7.  将另一个**ExampleElement**从**工具箱**到关系图图面，并更改其**元素 Namespace**到**OtherNamespace**。
+7. 将另一个**ExampleElement**从**工具箱**到关系图图面，并更改其**元素 Namespace**到**OtherNamespace**。
 
-8.  单击设计图面。
+8. 单击设计图面。
 
-     在中**属性**窗口中为关系图的值**自定义元素**现在**1/2**。
+    在中**属性**窗口中为关系图的值**自定义元素**现在**1/2**。
 
 9. 更改**默认 Namespace**从关系图**DefaultNamespace**到**NewNamespace**。
 

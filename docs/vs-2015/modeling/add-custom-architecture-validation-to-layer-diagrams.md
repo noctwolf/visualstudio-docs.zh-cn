@@ -14,12 +14,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2012ff0729853d365ed9bb32a9420f5b41bf47fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 26be7c766127c1da5d7aa4f26b2fb49cf510b850
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897909"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>向层关系图添加自定义体系结构验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,26 +44,26 @@ ms.locfileid: "49231085"
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展  
   
-1.  使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。  
+1. 使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。  
   
-2.  在“新建项目”  对话框中的“项目建模” 下，选择“层设计器验证扩展” 。  
+2. 在“新建项目”  对话框中的“项目建模” 下，选择“层设计器验证扩展” 。  
   
-     该模板将创建包含一个小型示例的项目。  
+    该模板将创建包含一个小型示例的项目。  
   
-    > [!WARNING]
-    >  到 makethe 模板正常工作：  
-    >   
-    >  -   编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。  
-    > -   如果使用自定义属性，应用更新中所述[向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。  
+   > [!WARNING]
+   >  到 makethe 模板正常工作：  
+   > 
+   > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。  
+   >   -   如果使用自定义属性，应用更新中所述[向层关系图添加自定义属性](../modeling/add-custom-properties-to-layer-diagrams.md)。  
   
-3.  编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。  
+3. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。  
   
-4.  若要测试此扩展，请参阅 [调试层验证](#debugging)。  
+4. 若要测试此扩展，请参阅 [调试层验证](#debugging)。  
   
-    > [!NOTE]
-    >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
+   > [!NOTE]
+   >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。  
   
-5.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+5. 主实例中安装扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件*bin\\*。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证程序  
  如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。 有关其他类型的建模扩展的信息，请参阅[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -127,42 +127,42 @@ ms.locfileid: "49231085"
 ##  <a name="programming"></a> 验证编程  
  若要定义层验证扩展，可以定义一个具有以下特征的类：  
   
--   声明的大体形式如下：  
+- 声明的大体形式如下：  
   
-    ```  
+  ```  
   
-    using System.ComponentModel.Composition;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
-    using Microsoft.VisualStudio.GraphModel;  
-    ...  
-     [Export(typeof(IValidateArchitectureExtension))]  
-      public partial class Validator1Extension :  
-                      IValidateArchitectureExtension  
+  using System.ComponentModel.Composition;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;  
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
+  using Microsoft.VisualStudio.GraphModel;  
+  ...  
+   [Export(typeof(IValidateArchitectureExtension))]  
+    public partial class Validator1Extension :  
+                    IValidateArchitectureExtension  
+    {  
+      public void ValidateArchitecture(Graph graph)  
       {  
-        public void ValidateArchitecture(Graph graph)  
-        {  
-           GraphSchema schema = graph.DocumentSchema;  
-          ...  
-      } }  
-    ```  
+         GraphSchema schema = graph.DocumentSchema;  
+        ...  
+    } }  
+  ```  
   
--   如果发现错误，可以使用 `LogValidationError()`进行报告。  
+- 如果发现错误，可以使用 `LogValidationError()`进行报告。  
   
-    > [!WARNING]
-    >  不要使用 `LogValidationError`的可选参数。  
+  > [!WARNING]
+  >  不要使用 `LogValidationError`的可选参数。  
   
- 用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：  
+  用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：  
   
--   表示为图形中节点和链接的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案的层模型。  
+- 表示为图形中节点和链接的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 解决方案的层模型。  
   
--   代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。  
+- 代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。  
   
--   从层节点到代码项目节点的链接。  
+- 从层节点到代码项目节点的链接。  
   
--   表示由验证程序发现的错误的节点。  
+- 表示由验证程序发现的错误的节点。  
   
- 构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。  
+  构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。  
   
 > [!NOTE]
 >  这与应用到 UML 关系图的验证过程不同，也与在域特定语言中可使用的验证过程不同。  
@@ -173,25 +173,25 @@ ms.locfileid: "49231085"
   
  每个节点和每个链接都有一个或多个指定元素类型或其表示的关系的类别。 典型图形的节点具有以下类别：  
   
--   Dsl.LayerModel  
+- Dsl.LayerModel  
   
--   Dsl.Layer  
+- Dsl.Layer  
   
--   Dsl.Reference  
+- Dsl.Reference  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Namespace  
+- CodeSchema_Namespace  
   
--   CodeSchema_Type  
+- CodeSchema_Type  
   
--   CodeSchema_Method  
+- CodeSchema_Method  
   
--   CodeSchema_Field  
+- CodeSchema_Field  
   
--   CodeSchema_Property  
+- CodeSchema_Property  
   
- 代码中从层到元素的链接具有“Represents”类别。  
+  代码中从层到元素的链接具有“Represents”类别。  
   
 ##  <a name="debugging"></a> 调试验证  
  若要调试你的层验证扩展，请按 Ctrl + F5。 将打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。  
@@ -199,11 +199,11 @@ ms.locfileid: "49231085"
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>使用包含依赖项的解决方案进行测试  
  除非出现以下特征，否则不执行验证：  
   
--   层关系图上至少有一个依赖项链接。  
+- 层关系图上至少有一个依赖项链接。  
   
--   模型中存在于代码元素相关联的层。  
+- 模型中存在于代码元素相关联的层。  
   
- 第一次启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。  
+  第一次启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。  
   
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案  
  每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果还未更新测试层关系图或其代码，则不会执行验证方法。  

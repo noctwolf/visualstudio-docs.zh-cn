@@ -15,12 +15,12 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c2efd5a626e92d180f7c842172f764fa7f8011e4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29ca670f5c660e70a5177754c3fac518443d310b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907880"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,33 +34,33 @@ ms.locfileid: "49245787"
   
  下面是如何实现您的项目类型支持的解决方案配置：  
   
--   项目  
+- 项目  
   
-     显示在当前解决方案中找到的项目的名称。  
+   显示在当前解决方案中找到的项目的名称。  
   
--   配置  
+- 配置  
   
-     若要提供的配置项目类型支持的列表，显示在属性页中，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>。  
+   若要提供的配置项目类型支持的列表，显示在属性页中，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>。  
   
-     配置列显示的要在此解决方案配置中，生成的项目配置名称，并单击箭头按钮时列出的所有项目配置。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A>方法来填充此列表。 如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A>方法指示项目支持编辑配置，新建或编辑的选择也会显示在配置标题下。 这些选择的每个启动调用的方法的对话框`IVsCfgProvider2`接口来编辑项目的配置。  
+   配置列显示的要在此解决方案配置中，生成的项目配置名称，并单击箭头按钮时列出的所有项目配置。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A>方法来填充此列表。 如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A>方法指示项目支持编辑配置，新建或编辑的选择也会显示在配置标题下。 这些选择的每个启动调用的方法的对话框`IVsCfgProvider2`接口来编辑项目的配置。  
   
-     如果项目不支持的配置，配置列显示无且被禁用。  
+   如果项目不支持的配置，配置列显示无且被禁用。  
   
--   平台  
+- 平台  
   
-     显示选定的项目配置生成，并单击箭头按钮时列出所有可用的平台的项目的平台。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A>方法来填充此列表。 如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A>方法指示项目支持编辑平台，新建或编辑的选择也会显示在平台标题下。 这些选择的每个启动调用的对话框`IVsCfgProvider2`方法来编辑项目的可用平台。  
+   显示选定的项目配置生成，并单击箭头按钮时列出所有可用的平台的项目的平台。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A>方法来填充此列表。 如果<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A>方法指示项目支持编辑平台，新建或编辑的选择也会显示在平台标题下。 这些选择的每个启动调用的对话框`IVsCfgProvider2`方法来编辑项目的可用平台。  
   
-     如果项目不支持的平台，该项目的平台列显示无且被禁用。  
+   如果项目不支持的平台，该项目的平台列显示无且被禁用。  
   
--   生成  
+- 生成  
   
-     指定由当前的解决方案配置生成项目。 尽管它们所包含任何项目依赖项调用解决方案级生成命令时不生成未选定的项目。 未选定要生成的项目仍包含在调试、 运行、 打包和部署解决方案中。  
+   指定由当前的解决方案配置生成项目。 尽管它们所包含任何项目依赖项调用解决方案级生成命令时不生成未选定的项目。 未选定要生成的项目仍包含在调试、 运行、 打包和部署解决方案中。  
   
--   部署  
+- 部署  
   
-     指定的开始或部署命令使用具有所选的解决方案生成配置时将部署项目。 此字段的复选框将提供如果项目支持部署通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口及其<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>对象。  
+   指定的开始或部署命令使用具有所选的解决方案生成配置时将部署项目。 此字段的复选框将提供如果项目支持部署通过实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg>接口及其<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>对象。  
   
- 后添加新的解决方案配置，用户可以选择从标准工具栏以生成和/或启动该配置的解决方案配置下拉列表框。  
+  后添加新的解决方案配置，用户可以选择从标准工具栏以生成和/或启动该配置的解决方案配置下拉列表框。  
   
 ## <a name="see-also"></a>请参阅  
  [管理配置选项](../../extensibility/internals/managing-configuration-options.md)   

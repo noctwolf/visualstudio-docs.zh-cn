@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5ab42b66fca32dc5325ce0cb4d78fbb53df8b90f
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: 32f613f29bb0627f45f5ce331589629744d61373
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36233790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840631"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>在负载测试分析器的详细信息视图中分析负载测试虚拟用户活动
 
@@ -54,7 +54,7 @@ ms.locfileid: "36233790"
 ## <a name="tasks"></a>任务
 
 |任务|关联主题|
-|-----------|-----------------------|
+|-|-|
 |**将负载测试配置为使用虚拟用户活动图：** 在运行要查看其虚拟用户活动数据的负载测试之前，必须先配置负载测试属性设置。|-   [如何：配置“收集完整详细信息”以启用虚拟用户活动图](../test/how-to-configure-load-tests-to-collect-full-details.md)|
 |运行负载测试：创建负载测试并将其配置为启用虚拟用户活动数据收集后，必须运行该测试，直到全部完成后才能查看其虚拟用户活动图。||
 |查看包含虚拟用户活动数据的负载测试结果：创建、配置并运行完负载测试后，可以使用虚拟用户活动图查看虚拟用户活动数据。|-   [分析负载测试结果](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [如何：分析虚拟用户在负载测试期间的操作](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|

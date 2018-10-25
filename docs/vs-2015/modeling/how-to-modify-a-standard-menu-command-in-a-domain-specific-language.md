@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1d1f16efc07f45fc3b2b80a58b50e4f28b1d57de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3d29a501ef6f55c835efd68e474bc39a847f745d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837552"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ ms.locfileid: "49302141"
   
  总之，若要修改命令，请执行以下操作：  
   
-1.  [发现可以修改的命令](#what)。  
+1. [发现可以修改的命令](#what)。  
   
-2.  [创建相应的命令集类的分部声明](#extend)。  
+2. [创建相应的命令集类的分部声明](#extend)。  
   
-3.  [重写 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
+3. [重写 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
   
- 本主题解释了此过程。  
+   本主题解释了此过程。  
   
 > [!NOTE]
 >  如果你想要创建自己的菜单命令，请参阅[如何： 向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
@@ -139,19 +139,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>编写方法的代码  
  以下片段通常在这些方法内十分有用：  
   
--   `this.CurrentSelection`。 用户右键单击的形状始终包含在此形状和连接符列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。  
+- `this.CurrentSelection`。 用户右键单击的形状始终包含在此形状和连接符列表中。 如果用户单击关系图的空白部分，则“关系图”是该列表中的唯一成员。  
   
--   `this.IsDiagramSelected()` - `true` 如果用户单击关系图的空白部分。  
+- `this.IsDiagramSelected()` - `true` 如果用户单击关系图的空白部分。  
   
--   `this.IsCurrentDiagramEmpty()`  
+- `this.IsCurrentDiagramEmpty()`  
   
--   `this.IsSingleSelection()` - 用户未选择多个形状  
+- `this.IsSingleSelection()` - 用户未选择多个形状  
   
--   `this.SingleSelection` - 用户右键单击的形状或关系图  
+- `this.SingleSelection` - 用户右键单击的形状或关系图  
   
--   `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。  
+- `shape.ModelElement as MyLanguageElement` - 由形状表示的模型元素。  
   
- 有关如何在元素之间导航以及如何创建对象和链接的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+  有关如何在元素之间导航以及如何创建对象和链接的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.MenuCommand>   

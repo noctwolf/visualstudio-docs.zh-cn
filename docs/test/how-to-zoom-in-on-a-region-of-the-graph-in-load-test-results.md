@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f39ff75eaa6efe0d71d884fd5d6d76f65e5dad50
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 3a5d07e4267291e30f85b1b16b49213ab119cd1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380196"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932346"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>如何：放大负载测试结果中关系图的区域
 
@@ -94,15 +94,15 @@ ms.locfileid: "39380196"
 
 ### <a name="to-zoom-to-a-region-of-the-graph-by-choosing-and-dragging"></a>通过选择和拖动来缩放关系图的区域
 
-1.  在缩放区域的一端选择关系图。
+1. 在缩放区域的一端选择关系图。
 
-2.  将鼠标指针拖动到缩放区域的另一端。
+2. 将鼠标指针拖动到缩放区域的另一端。
 
-3.  释放鼠标按钮。
+3. 释放鼠标按钮。
 
-     这将放大您通过选择和拖动定义的区域。
+    这将放大您通过选择和拖动定义的区域。
 
- 下列过程描述如何快速进行缩小，而不必调整缩放条的两端。
+   下列过程描述如何快速进行缩小，而不必调整缩放条的两端。
 
 ### <a name="to-zoom-out"></a>缩小
 

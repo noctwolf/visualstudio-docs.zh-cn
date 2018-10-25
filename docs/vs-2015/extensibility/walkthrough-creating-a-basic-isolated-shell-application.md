@@ -17,12 +17,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f7158dcbd55229998e49e2d2891ae46d88c7fbc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0a23acf29b0ffc3a763b34ca12e08abd5a81b5d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942564"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>演练： 创建基本的独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,13 +75,13 @@ ms.locfileid: "49199532"
   
 #### <a name="to-customize-the-default-web-browser-home-page"></a>若要自定义默认 Web 浏览器主页  
   
-1.  在 MyVSShellStub.Application.pkgdef 文件中，更改`DefaultHomePage`元素的值为"http://www.microsoft.com"。  
+1. 在 MyVSShellStub.Application.pkgdef 文件中，更改`DefaultHomePage`元素的值为"<http://www.microsoft.com>"。  
   
-2.  重新生成 MyVSShellStub 项目。  
+2. 重新生成 MyVSShellStub 项目。  
   
-3.  生成解决方案并启动调试。  
+3. 生成解决方案并启动调试。  
   
-4.  在中**视图 / 其他 Windows**，单击**Web 浏览器**。 **Web 浏览器**窗口会显示 Microsoft Corporation 主页。  
+4. 在中**视图 / 其他 Windows**，单击**Web 浏览器**。 **Web 浏览器**窗口会显示 Microsoft Corporation 主页。  
   
 ## <a name="removing-the-print-command"></a>删除打印命令  
  独立的 shell UI 项目中的.vsct 文件包含一窗体的声明`<Define name=No_`*元素*`>`，其中*元素*是一个标准的 Visual Studio 菜单和命令。  
@@ -173,26 +173,26 @@ ms.locfileid: "49199532"
 ## <a name="deploying-the-isolated-shell-application"></a>部署独立的 Shell 应用程序  
  通过创建安装项目部署到目标计算机在独立的 shell 应用程序。 必须指定以下操作：  
   
--   文件夹和目标计算机上的文件的布局。  
+- 文件夹和目标计算机上的文件的布局。  
   
--   在目标计算机上安装了保证.NET Framework 和 Visual Studio shell 运行时的启动条件。  
+- 在目标计算机上安装了保证.NET Framework 和 Visual Studio shell 运行时的启动条件。  
   
- 在下面的过程需要在计算机上安装 InstallShield Limited Edition。  
+  在下面的过程需要在计算机上安装 InstallShield Limited Edition。  
   
 #### <a name="to-create-the-setup-project"></a>若要创建安装项目  
   
-1.  在中**解决方案资源管理器**，右键单击解决方案节点，然后单击**添加新项目**。  
+1. 在中**解决方案资源管理器**，右键单击解决方案节点，然后单击**添加新项目**。  
   
-2.  在中**新的项目**对话框框中，展开**其他项目类型**，然后选择**安装和部署**。 选择 InstallShield 模板。 将新项目命名`MySetup`，然后单击**确定**。  
+2. 在中**新的项目**对话框框中，展开**其他项目类型**，然后选择**安装和部署**。 选择 InstallShield 模板。 将新项目命名`MySetup`，然后单击**确定**。  
   
-3.  如果已安装 InstallShield Limited Edition，则继续下一步。  
+3. 如果已安装 InstallShield Limited Edition，则继续下一步。  
   
-     如果尚未安装 InstallShield Limited Edition，将显示 InstallShield 下载页。 按照说明下载并安装该产品，选择与你的 Visual Studio 版本兼容的 InstallShield 的版本。 您必须决定是要注册的 InstallShield 安装，或者使用它以评估方式。 完成安装之后，必须重新启动 Visual Studio。  
+    如果尚未安装 InstallShield Limited Edition，将显示 InstallShield 下载页。 按照说明下载并安装该产品，选择与你的 Visual Studio 版本兼容的 InstallShield 的版本。 您必须决定是要注册的 InstallShield 安装，或者使用它以评估方式。 完成安装之后，必须重新启动 Visual Studio。  
   
-    > [!IMPORTANT]
-    >  在创建 InstallShield 项目之前，必须以管理员身份启动 Visual Studio。 如果不这样做，则会出现错误，生成项目时。  
+   > [!IMPORTANT]
+   >  在创建 InstallShield 项目之前，必须以管理员身份启动 Visual Studio。 如果不这样做，则会出现错误，生成项目时。  
   
- 后续步骤演示如何配置安装程序项目。  
+   后续步骤演示如何配置安装程序项目。  
   
 > [!IMPORTANT]
 >  请确保在配置安装项目之前构建独立的 shell 项目的发布配置至少一次。  

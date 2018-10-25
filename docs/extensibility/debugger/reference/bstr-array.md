@@ -1,5 +1,5 @@
 ---
-title: BSTR_ARRAY |Microsoft 文档
+title: BSTR_ARRAY |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a555a18021a1a48ffa11780161f88ea3ff8f578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d122afe0aca50b50133146edb26e13fd31d2c45b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31098636"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906937"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
-描述的字符串数组的结构。  
+描述一个字符串数组的结构。  
   
 ## <a name="syntax"></a>语法  
   
@@ -51,7 +51,7 @@ struct BSTR_ARRAY {
 ## <a name="remarks"></a>备注  
  此结构返回从[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)方法。  
   
- [C + +]必须使用对每个单个字符串被释放`SysFreeString`，和`Members`数组必须释放与`CoTaskMemFree`。  
+ [C + +]每个单个字符串，必须使用释放`SysFreeString`，并`Members`数组，必须释放与`CoTaskMemFree`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -60,6 +60,6 @@ struct BSTR_ARRAY {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

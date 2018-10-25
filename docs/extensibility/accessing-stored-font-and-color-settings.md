@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 553f183eff03ae6437e7db37102005a5e901c0a4
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 953f74b309d8dc147d04d86b843f138002de972f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910675"
 ---
 # <a name="access-stored-font-and-color-settings"></a>访问存储的字体和颜色设置
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 存储修改后的设置字体和颜色在注册表中。 可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>界面来访问这些设置。
@@ -49,17 +49,17 @@ ms.locfileid: "39081639"
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>若要使用的字体和颜色的状态持久性
  保留的字体和颜色涉及：
 
--   与存储在注册表中设置同步的 IDE 设置。
+- 与存储在注册表中设置同步的 IDE 设置。
 
--   传播注册表修改信息。
+- 传播注册表修改信息。
 
--   设置和检索存储在注册表中的设置。
+- 设置和检索存储在注册表中的设置。
 
- 与 IDE 设置同步的存储设置是很大程度上透明的。 基础 IDE 自动将写入的更新的设置**显示项**到类别的注册表项。
+  与 IDE 设置同步的存储设置是很大程度上透明的。 基础 IDE 自动将写入的更新的设置**显示项**到类别的注册表项。
 
- 如果多个 Vspackage 共享特定类别，VSPackage 应要求将生成事件时的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口用于修改存储的注册表设置。
+  如果多个 Vspackage 共享特定类别，VSPackage 应要求将生成事件时的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>接口用于修改存储的注册表设置。
 
- 默认情况下未启用事件生成。 若要启用事件生成，类别必须打开使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 打开一个类别使 IDE 调用适当<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 实现的方法。
+  默认情况下未启用事件生成。 若要启用事件生成，类别必须打开使用<xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>。 打开一个类别使 IDE 调用适当<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>VSPackage 实现的方法。
 
 > [!NOTE]
 >  通过修改**字体和颜色**属性页生成事件的独立<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>。 可以使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>接口，以确定是否在调用的方法需要更新的缓存的字体和颜色设置<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>类。

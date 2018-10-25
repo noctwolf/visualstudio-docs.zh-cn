@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: aff5a67d54376488ccce2bca5dd67b84d6c73949
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 87ab5ccde2c1100fbd0efc5f4272efe27803b717
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210179"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938612"
 ---
 # <a name="how-to-delete-records-in-a-database"></a>如何：删除数据库中的记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,12 +49,12 @@ ms.locfileid: "49210179"
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterupdate-method"></a>若要使用 TableAdapter.Update 方法从数据库删除记录  
   
--   删除记录所需<xref:System.Data.DataTable>通过删除<xref:System.Data.DataRow>表中的对象。 有关详细信息，请参阅[如何： 删除数据表中的行](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e)。 从删除行后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过将整个传入的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。 下面的代码演示如何删除来自<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法来更改进行通信并从数据库中删除行。 (本示例使用 Northwind 数据库`Region`表。)  
+- 删除记录所需<xref:System.Data.DataTable>通过删除<xref:System.Data.DataRow>表中的对象。 有关详细信息，请参阅[如何： 删除数据表中的行](http://msdn.microsoft.com/library/add481e5-08c7-4923-9276-f036ae29d31e)。 从删除行后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过将整个传入的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。 下面的代码演示如何删除来自<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法来更改进行通信并从数据库中删除行。 (本示例使用 Northwind 数据库`Region`表。)  
   
-     [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
-     [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
+   [!code-csharp[VbRaddataSaving#20](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#20)]
+   [!code-vb[VbRaddataSaving#20](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#20)]  
   
- 如果你的应用程序使用对象来存储你的应用程序中的数据，可以使用 TableAdapter 的 DBDirect 方法直接从数据库中删除数据。 调用`Delete`方法从数据库中传递的参数值中删除记录。  
+  如果你的应用程序使用对象来存储你的应用程序中的数据，可以使用 TableAdapter 的 DBDirect 方法直接从数据库中删除数据。 调用`Delete`方法从数据库中传递的参数值中删除记录。  
   
 #### <a name="to-delete-records-from-a-database-using-the-tableadapterdelete-method"></a>若要使用 TableAdapter.Delete 方法从数据库删除记录  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 029cd44bc19bd279ed9b5d46a5fea53539706a23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ad32edc94bea49010dfb7073cacbd84419513783
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272358"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913886"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ ms.locfileid: "49272358"
   
  此演练演示如何只使用文本编辑器以增量方式创建基本项目文件。 演练采用以下步骤：  
   
--   创建最小的应用程序源文件。  
+- 创建最小的应用程序源文件。  
   
--   创建最小的 MSBuild 项目文件。  
+- 创建最小的 MSBuild 项目文件。  
   
--   扩展 PATH 环境变量以包括 MSBuild。  
+- 扩展 PATH 环境变量以包括 MSBuild。  
   
--   使用项目文件生成应用程序。  
+- 使用项目文件生成应用程序。  
   
--   添加属性以控制生成。  
+- 添加属性以控制生成。  
   
--   通过更改属性值来控制生成。  
+- 通过更改属性值来控制生成。  
   
--   将目标添加到生成。  
+- 将目标添加到生成。  
   
--   通过指定目标来控制生成。  
+- 通过指定目标来控制生成。  
   
--   以增量方式生成。  
+- 以增量方式生成。  
   
- 此演练演示如何在命令提示符下生成项目并检查结果。 有关 MSBuild 以及如何在命令提示符下运行 MSBuild 的详细信息，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
+  此演练演示如何在命令提示符下生成项目并检查结果。 有关 MSBuild 以及如何在命令提示符下运行 MSBuild 的详细信息，请参阅[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
- 若要完成演练，你必须安装 .NET Framework（版本 2.0、3.5、4.0 或 4.5），因为其中包括演练所需的 MSBuild 和 Visual C# 编译器。  
+  若要完成演练，你必须安装 .NET Framework（版本 2.0、3.5、4.0 或 4.5），因为其中包括演练所需的 MSBuild 和 Visual C# 编译器。  
   
 ## <a name="creating-a-minimal-application"></a>创建最小的应用程序  
  本节演示如何使用文本编辑器创建最小的 Visual C# 应用程序源文件。  
@@ -109,39 +109,39 @@ ms.locfileid: "49272358"
   
 #### <a name="to-create-a-minimal-msbuild-project-file"></a>创建最小的 MSBuild 项目文件  
   
-1.  在文本编辑器中，用以下两行替换现有文本：  
+1. 在文本编辑器中，用以下两行替换现有文本：  
   
-    ```  
-    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    </Project>  
-    ```  
+   ```  
+   <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   </Project>  
+   ```  
   
-2.  插入此 `ItemGroup` 节点，作为 `Project` 节点的子元素：  
+2. 插入此 `ItemGroup` 节点，作为 `Project` 节点的子元素：  
   
-    ```  
-    <ItemGroup>  
-      <Compile Include="helloworld.cs" />  
-    </ItemGroup>  
-    ```  
+   ```  
+   <ItemGroup>  
+     <Compile Include="helloworld.cs" />  
+   </ItemGroup>  
+   ```  
   
-     请注意，此 `ItemGroup` 已包含一个项元素。  
+    请注意，此 `ItemGroup` 已包含一个项元素。  
   
-3.  添加一个 `Target` 节点，作为 `Project` 节点的子元素。 将该节点命名为 `Build`。  
+3. 添加一个 `Target` 节点，作为 `Project` 节点的子元素。 将该节点命名为 `Build`。  
   
-    ```  
-    <Target Name="Build">  
-    </Target>  
-    ```  
+   ```  
+   <Target Name="Build">  
+   </Target>  
+   ```  
   
-4.  插入此 task 元素，作为 `Target` 节点的子元素：  
+4. 插入此 task 元素，作为 `Target` 节点的子元素：  
   
-    ```  
-    <Csc Sources="@(Compile)"/>  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)"/>  
+   ```  
   
-5.  保存此项目文件，并将其命名为 Helloworld.csproj。  
+5. 保存此项目文件，并将其命名为 Helloworld.csproj。  
   
- 你的最小项目文件应类似于以下代码：  
+   你的最小项目文件应类似于以下代码：  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -201,36 +201,36 @@ ms.locfileid: "49272358"
   
 #### <a name="to-add-build-properties"></a>添加生成属性  
   
-1.  在命令提示符下，键入 **del helloworld.exe** 删除现有应用程序。  
+1. 在命令提示符下，键入 **del helloworld.exe** 删除现有应用程序。  
   
-2.  在项目文件中，插入此 `PropertyGroup` 元素，置于起始 `Project` 元素的后面：  
+2. 在项目文件中，插入此 `PropertyGroup` 元素，置于起始 `Project` 元素的后面：  
   
-    ```  
-    <PropertyGroup>  
-      <AssemblyName>MSBuildSample</AssemblyName>  
-      <OutputPath>Bin\</OutputPath>  
-    </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup>  
+     <AssemblyName>MSBuildSample</AssemblyName>  
+     <OutputPath>Bin\</OutputPath>  
+   </PropertyGroup>  
+   ```  
   
-3.  将此任务添加到 Build 目标，置于 `Csc` 任务的前面：  
+3. 将此任务添加到 Build 目标，置于 `Csc` 任务的前面：  
   
-    ```  
-    <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
-    ```  
+   ```  
+   <MakeDir Directories="$(OutputPath)"      Condition="!Exists('$(OutputPath)')" />  
+   ```  
   
-     `MakeDir` 任务将创建一个由 `OutputPath` 属性命名的文件夹，前提是当前不存在具有该名称的文件夹。  
+    `MakeDir` 任务将创建一个由 `OutputPath` 属性命名的文件夹，前提是当前不存在具有该名称的文件夹。  
   
-4.  将此 `OutputAssembly` 特性添加到 `Csc` 任务：  
+4. 将此 `OutputAssembly` 特性添加到 `Csc` 任务：  
   
-    ```  
-    <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
-    ```  
+   ```  
+   <Csc Sources="@(Compile)" OutputAssembly="$(OutputPath)$(AssemblyName).exe" />  
+   ```  
   
-     这将指示 Visual C# 编译器生成由 `AssemblyName` 属性命名的程序集，并将其放在由 `OutputPath` 属性命名的文件夹中。  
+    这将指示 Visual C# 编译器生成由 `AssemblyName` 属性命名的程序集，并将其放在由 `OutputPath` 属性命名的文件夹中。  
   
-5.  保存更改。  
+5. 保存更改。  
   
- 你的项目文件现在应类似于以下代码：  
+   你的项目文件现在应类似于以下代码：  
   
 ```  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -279,34 +279,34 @@ ms.locfileid: "49272358"
 ## <a name="adding-build-targets"></a>添加生成目标  
  接下来，向项目文件中另外添加两个目标，如下所示：  
   
--   一个用于删除旧文件的 Clean 目标。  
+- 一个用于删除旧文件的 Clean 目标。  
   
--   一个 Rebuild 目标，该目标使用 `DependsOnTargets` 特性，强制使 Clean 任务在 Build 任务之前运行。  
+- 一个 Rebuild 目标，该目标使用 `DependsOnTargets` 特性，强制使 Clean 任务在 Build 任务之前运行。  
   
- 既然有多个目标，就可以将 Build 目标设置为默认目标。  
+  既然有多个目标，就可以将 Build 目标设置为默认目标。  
   
 #### <a name="to-add-build-targets"></a>添加生成目标  
   
-1.  在项目文件中添加以下两个目标，置于 Build 目标的后面：  
+1. 在项目文件中添加以下两个目标，置于 Build 目标的后面：  
   
-    ```  
-    <Target Name="Clean" >  
-      <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
-    </Target>  
-    <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
-    ```  
+   ```  
+   <Target Name="Clean" >  
+     <Delete Files="$(OutputPath)$(AssemblyName).exe" />  
+   </Target>  
+   <Target Name="Rebuild" DependsOnTargets="Clean;Build" />  
+   ```  
   
-     Clean 目标调用 Delete 任务来删除应用程序。 在 Clean 目标和 Build 目标均已运行之前，Rebuild 目标不会运行。 尽管 Rebuild 目标没有任务，但它可使 Clean 目标在 Build 目标之前运行。  
+    Clean 目标调用 Delete 任务来删除应用程序。 在 Clean 目标和 Build 目标均已运行之前，Rebuild 目标不会运行。 尽管 Rebuild 目标没有任务，但它可使 Clean 目标在 Build 目标之前运行。  
   
-2.  将此 `DefaultTargets` 特性添加到起始 `Project` 元素：  
+2. 将此 `DefaultTargets` 特性添加到起始 `Project` 元素：  
   
-    ```  
-    <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    ```  
+   ```  
+   <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+   ```  
   
-     这会将 Build 目标设置为默认目标。  
+    这会将 Build 目标设置为默认目标。  
   
- 你的项目文件现在应类似于以下代码：  
+   你的项目文件现在应类似于以下代码：  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

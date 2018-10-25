@@ -23,12 +23,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d8d5321187d4665ebc10cb3e7471294df50db30
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 32c1c66484d5bdaff6ba37b8b37f7f86cb513e44
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255341"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851655"
 ---
 # <a name="creating-project-and-item-templates"></a>创建项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49255341"
 ## <a name="contents-of-a-template"></a>模板的内容  
  所有项目模板和项模板（无论是与 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 一起安装的还是由你创建的）均通过使用相同的原则工作并具有类似的内容。 所有模板均包含以下项：  
   
--   使用模板时要创建的文件。 包括源代码文件、嵌入资源、项目文件等。  
+- 使用模板时要创建的文件。 包括源代码文件、嵌入资源、项目文件等。  
   
--   一个 vstemplate 文件。 该文件包含元数据，元数据提供在“新建项目”和“添加新项”对话框中显示模板以及从模板创建项目或项时所需的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 信息。 有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
+- 一个 vstemplate 文件。 该文件包含元数据，元数据提供在“新建项目”和“添加新项”对话框中显示模板以及从模板创建项目或项时所需的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 信息。 有关 .vstemplate 文件的详细信息，请参阅[模板参数](../ide/template-parameters.md)。  
   
- 当这些文件被压缩成一个 .zip 文件并放在正确的文件夹内时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动显示这些文件。 项目模板显示在“新建项目”对话框的“我的模板”部分，项模板显示在“添加新项”对话框。 有关模板文件夹的详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
+  当这些文件被压缩成一个 .zip 文件并放在正确的文件夹内时，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 将自动显示这些文件。 项目模板显示在“新建项目”对话框的“我的模板”部分，项模板显示在“添加新项”对话框。 有关模板文件夹的详细信息，请参阅[如何：查找和组织模板](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
   
 ## <a name="starter-kits"></a>初学者工具包  
  初学者工具包是增强的模板，可与社区的其他成员共享。 初学者工具包包含可编译的代码示例、文档及其他资源，这些资源可帮助用户在生成有用的实际应用程序的同时学习新工具和编程技巧。 初学者工具包的基本内容和流程与模板的一样。 有关详细信息，请参阅[如何：创建初学者工具包](../ide/how-to-create-starter-kits.md)。  

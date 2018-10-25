@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6b22de4b3dd94ba39015605353a71412836a9ff4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7ac10e62c1c982f1b2357fcaea17b6b54865dec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228406"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872065"
 ---
 # <a name="adding-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,36 +55,36 @@ ms.locfileid: "49228406"
   
 ##### <a name="profiling-a-windows-desktop-application-example"></a>分析 Windows 桌面应用程序示例  
   
-1.  使用管理员特权打开命令提示符窗口。 单击“开始”，指向“所有程序”，再指向“附件”。 右键单击“命令提示符”，然后单击“以管理员身份运行”。  
+1. 使用管理员特权打开命令提示符窗口。 单击“开始”，指向“所有程序”，再指向“附件”。 右键单击“命令提示符”，然后单击“以管理员身份运行”。  
   
-2.  初始化 .NET 分析和 TIP 环境变量。 键入以下命令：  
+2. 初始化 .NET 分析和 TIP 环境变量。 键入以下命令：  
   
-    ```  
-    vsperfclrenv /traceon  
-    vsperfclrenv /interactionon  
-    ```  
+   ```  
+   vsperfclrenv /traceon  
+   vsperfclrenv /interactionon  
+   ```  
   
-3.  启动探查器。 键入以下命令：  
+3. 启动探查器。 键入以下命令：  
   
-    ```  
-    vsperfcmd /start:trace /output:Desktop_tip.vsp   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:Desktop_tip.vsp   
+   ```  
   
-4.  使用 VSPerfCmd 启动应用程序。 键入以下命令：  
+4. 使用 VSPerfCmd 启动应用程序。 键入以下命令：  
   
-    ```  
-    vsperfcmd /launch:DesktopApp.exe  
-    ```  
+   ```  
+   vsperfcmd /launch:DesktopApp.exe  
+   ```  
   
-5.  使用应用程序收集分析数据，然后以常规方式关闭应用程序。  
+5. 使用应用程序收集分析数据，然后以常规方式关闭应用程序。  
   
-6.  清除 TIP 环境变量。 键入以下命令：  
+6. 清除 TIP 环境变量。 键入以下命令：  
   
-    ```  
-    vsperfclrenv /off  
-    ```  
+   ```  
+   vsperfclrenv /off  
+   ```  
   
- 有关详细信息，请参阅[分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)。  
+   有关详细信息，请参阅[分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)。  
   
 ### <a name="profiling-services"></a>分析服务  
  若要分析包括 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序在内的服务，请使用 **VSPerfClrEnv /GlobalInteractionOn** 选项设置环境变量，并使用 **VSPerfClrEnv /GlobalInteractionOff** 选项将其删除。  
@@ -95,33 +95,33 @@ ms.locfileid: "49228406"
   
 ##### <a name="profiling-a-windows-service-example"></a>分析 Windows 服务示例  
   
-1.  必要时请安装该服务。  
+1. 必要时请安装该服务。  
   
-2.  使用管理员特权打开命令提示符窗口。 单击“开始”，指向“所有程序”，再指向“附件”。 右键单击“命令提示符”，然后单击“以管理员身份运行”。  
+2. 使用管理员特权打开命令提示符窗口。 单击“开始”，指向“所有程序”，再指向“附件”。 右键单击“命令提示符”，然后单击“以管理员身份运行”。  
   
-3.  初始化 .NET 分析环境变量。 键入以下命令：  
+3. 初始化 .NET 分析环境变量。 键入以下命令：  
   
-    ```  
-    vsperfclrenv /globaltraceon  
-    ```  
+   ```  
+   vsperfclrenv /globaltraceon  
+   ```  
   
-4.  初始化 TIP 环境变量。 键入以下命令  
+4. 初始化 TIP 环境变量。 键入以下命令  
   
-    ```  
-    vsperfclrenv /globalinteractionon  
-    ```  
+   ```  
+   vsperfclrenv /globalinteractionon  
+   ```  
   
-5.  重启计算机，注册环境变量。  
+5. 重启计算机，注册环境变量。  
   
-6.  使用管理员特权打开命令提示符窗口。  
+6. 使用管理员特权打开命令提示符窗口。  
   
-7.  启动探查器。 键入以下命令：  
+7. 启动探查器。 键入以下命令：  
   
-    ```  
-    vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
-    ```  
+   ```  
+   vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession   
+   ```  
   
-8.  必要时，请启动该服务。  
+8. 必要时，请启动该服务。  
   
 9. 将探查器附加到该服务。 键入以下命令：  
   
@@ -143,11 +143,11 @@ ms.locfileid: "49228406"
   
 13. 重启计算机，注册清除的环境变量。  
   
- 有关更多信息，请参见下列主题之一：  
+    有关更多信息，请参见下列主题之一：  
   
- [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+    [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
   
- [分析服务](../profiling/command-line-profiling-of-services.md)  
+    [分析服务](../profiling/command-line-profiling-of-services.md)  
   
 ## <a name="adding-tier-interaction-data-with-vsperfaspnetcmd"></a>通过 VSPerfASPNETCmd 添加层交互数据  
  通过 VSPerfASPNETCmd 命令行工具可轻松分析 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序。 与 **VSPerfCmd** 命令行工具相比，它减少了选项、不必设置任何环境变量且无需重启计算机。 通过 VSPerfASPNETCmd 的这些功能可轻松收集层交互数据。  

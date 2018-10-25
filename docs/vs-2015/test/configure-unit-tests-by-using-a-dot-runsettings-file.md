@@ -13,12 +13,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: a78c73afb11f5c04ef3cc61a5efecb9d8069bac4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 806c19b7132a4541ff97c253700a5e5e980ef556
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255614"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817972"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49255614"
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>使用 .runsettings 文件自定义测试  
   
-1.  将 XML 文件添加到 Visual Studio 解决方案并将其重命名为 test.runsettings。 （文件名并不重要，但扩展名必须是 .runsettings。）  
+1. 将 XML 文件添加到 Visual Studio 解决方案并将其重命名为 test.runsettings。 （文件名并不重要，但扩展名必须是 .runsettings。）  
   
-2.  将文件内容替换为 [示例](#example)。  
+2. 将文件内容替换为 [示例](#example)。  
   
-     根据你的需要对其进行编辑。  
+    根据你的需要对其进行编辑。  
   
-3.  在“测试”  菜单上，依次选择“测试设置” 、“选择测试设置文件” 。  
+3. 在“测试”  菜单上，依次选择“测试设置” 、“选择测试设置文件” 。  
   
- 通过使用“测试设置”菜单，可在解决方案中创建多个 \*.runsettings 文件，并在不同时间启用或禁用它们。  
+   通过使用“测试设置”菜单，可在解决方案中创建多个 \*.runsettings 文件，并在不同时间启用或禁用它们。  
   
- ![启用运行设置文件](../test/media/runsettings-1.png "RunSettings-1")  
+   ![启用运行设置文件](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a>复制此示例 .runsettings 文件  
  这是典型的 *.runsettings 文件。 文件的每个元素是可选的，因为每个值都有默认值。  

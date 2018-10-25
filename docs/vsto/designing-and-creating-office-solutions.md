@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 22ba120513d188f0a945ff18331b37062c08018f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 602525666e62a5eaa6e8db13c6e7029d8773bc8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917175"
 ---
 # <a name="design-and-create-office-solutions"></a>设计和创建 Office 解决方案
   Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的项目模板。 文档的此部分将介绍项目模板和提供有关创建 Office 项目的指导。 有关如何创建你的项目后实现代码和用户界面自定义的信息，请参阅[开发 Office 解决方案](../vsto/developing-office-solutions.md)。  
@@ -41,19 +41,19 @@ ms.locfileid: "35670570"
 ## <a name="choose-a-net-framework-version"></a>选择.NET Framework 版本  
  选择最适合你需求的项目类型之后，可以选择在开发过程中要使用的 .NET Framework 版本。 你可以选择 Office 项目中的以下 .NET Framework 版本作为目标：  
   
--   [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
+- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]  
   
--   [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
+- [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]  
   
--   [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
+- [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]  
   
- 选择为你的项目的.NET Framework 版本上运行你的解决方案的最终用户计算机需要。 例如，如果项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，则[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]需在最终用户计算机上。 在此示例中，如果只在最终用户计算机上安装了.NET Framework 3.5，将不运行你的解决方案。  
+  选择为你的项目的.NET Framework 版本上运行你的解决方案的最终用户计算机需要。 例如，如果项目面向[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]，则[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]需在最终用户计算机上。 在此示例中，如果只在最终用户计算机上安装了.NET Framework 3.5，将不运行你的解决方案。  
   
- 如果迁移的 VSTO 外接程序项目面向 .NET Framework 3.5，则 Visual Studio 会将你项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，具体取决于已安装的 Office 版本。  
+  如果迁移的 VSTO 外接程序项目面向 .NET Framework 3.5，则 Visual Studio 会将你项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，具体取决于已安装的 Office 版本。  
   
- 但是，在 Visual Studio 更改目标框架之后，你可能需要修改项目中的某些代码才能使用某些功能。 有关如何更改目标框架的详细信息，请参阅[如何： 面向.NET Framework 版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 可能需要在项目中进行更改的详细信息，请参阅[迁移 Office 解决方案为.NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
+  但是，在 Visual Studio 更改目标框架之后，你可能需要修改项目中的某些代码才能使用某些功能。 有关如何更改目标框架的详细信息，请参阅[如何： 面向.NET Framework 版本](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。 可能需要在项目中进行更改的详细信息，请参阅[迁移 Office 解决方案为.NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)。  
   
- 如果 Visual Studio 更改为你的项目的目标.NET Framework，并且打算使用 ClickOnce 来部署你的解决方案，请确保还选择在.NET Framework 中的相应版本**先决条件**对话框。 此选择不会在你更改项目的目标框架时自动更改。 有关详细信息，请参阅[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
+  如果 Visual Studio 更改为你的项目的目标.NET Framework，并且打算使用 ClickOnce 来部署你的解决方案，请确保还选择在.NET Framework 中的相应版本**先决条件**对话框。 此选择不会在你更改项目的目标框架时自动更改。 有关详细信息，请参阅[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。  
   
 > [!NOTE]  
 >  不能面向通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目中的 .NET Framework 3.5 或更早版本。 通过使用 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 创建的 Office 项目需要在 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] 中首次引入的功能  

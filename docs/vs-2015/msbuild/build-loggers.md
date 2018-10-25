@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 855160fa1e1f02bbebecaa8ddc522bb92f3f5bd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226429"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853227"
 ---
 # <a name="build-loggers"></a>生成记录器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "49226429"
   
  在实现记录器时，有两种方法可供选择：  
   
--   直接实现 <xref:Microsoft.Build.Framework.ILogger> 接口。  
+- 直接实现 <xref:Microsoft.Build.Framework.ILogger> 接口。  
   
--   从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。  
+- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。  
   
- 本主题将介绍如何编写派生自 <xref:Microsoft.Build.Utilities.Logger> 的简单记录器，并在控制台上显示用于响应特定生成事件的消息。  
+  本主题将介绍如何编写派生自 <xref:Microsoft.Build.Utilities.Logger> 的简单记录器，并在控制台上显示用于响应特定生成事件的消息。  
   
 ## <a name="registering-for-events"></a>注册事件  
  记录器的目的是收集有关生成进度的信息（正如生成引擎所报告的信息），随后以有用的方式报告该信息。 所有记录器都必须重写 <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> 方法，即记录器用于注册事件的位置。 在此示例中，记录器注册 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>、<xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 和 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 事件。  

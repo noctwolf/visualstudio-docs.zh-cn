@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f4c2e2929fecb29da6ddeecdd6cede6b8fa4d7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 505827d25a7e6016403567c172ad094d072f1ef3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497958"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885819"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>如何： 禁止显示文件更改通知
 表示文本缓冲区的物理文件更改后，对话框将显示与消息**是否要保存对以下各项的更改？** 这称为文件更改通知。 如果很多更改将为到该文件，但是，反复地显示此对话框中可以快速变得令人讨厌。  

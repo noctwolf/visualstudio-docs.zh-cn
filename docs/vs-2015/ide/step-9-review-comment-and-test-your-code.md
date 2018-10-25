@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3743c31aeca3c6e34afa84ed8c9ee3ddd59d98a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f27cbc54839318674ae41385bd39876c6c513f1b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300399"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836952"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,29 +28,29 @@ ms.locfileid: "49300399"
   
  您刚才构建了可用的程序，虽然尚未完成，但已能够下载图片。 在向代码添加注释并测试代码之前，请先花点时间了解一些代码概念，因为你将会频繁使用这些概念：  
   
--   双击 Windows 窗体设计器中的“显示图片”按钮后，IDE 会自动将一个方法添加到程序的代码中。  
+- 双击 Windows 窗体设计器中的“显示图片”按钮后，IDE 会自动将一个方法添加到程序的代码中。  
   
--   方法是指组织代码的方式：它指明如何将代码组合在一起。  
+- 方法是指组织代码的方式：它指明如何将代码组合在一起。  
   
--   大多数情况下，一个方法会按特定顺序执行少量操作，如 `showButton_Click()` 方法会显示对话框，然后加载图片。  
+- 大多数情况下，一个方法会按特定顺序执行少量操作，如 `showButton_Click()` 方法会显示对话框，然后加载图片。  
   
--   方法由代码语句或代码行组成。 将方法视为一种将代码语句捆绑在一起的方式。  
+- 方法由代码语句或代码行组成。 将方法视为一种将代码语句捆绑在一起的方式。  
   
--   在执行或调用某个方法时，会按顺序依次执行该方法中的各个语句（从第一个语句开始）。  
+- 在执行或调用某个方法时，会按顺序依次执行该方法中的各个语句（从第一个语句开始）。  
   
-     下面是一个语句示例。  
+   下面是一个语句示例。  
   
-    ```csharp  
-    pictureBox1.Load(openFileDialog1.FileName);  
-    ```  
+  ```csharp  
+  pictureBox1.Load(openFileDialog1.FileName);  
+  ```  
   
-    ```vb  
-    pictureBox1.Load(openFileDialog1.FileName)  
-    ```  
+  ```vb  
+  pictureBox1.Load(openFileDialog1.FileName)  
+  ```  
   
-     语句用于指示程序执行操作。 在 Visual C# 中，语句始终以分号结束。 在 Visual Basic 中，行的结尾即为语句的结尾。 （Visual Basic 中不需要使用分号。）前面的语句会告知 `PictureBox` 控件加载用户使用“OpenFileDialog”组件选择的文件。  
+   语句用于指示程序执行操作。 在 Visual C# 中，语句始终以分号结束。 在 Visual Basic 中，行的结尾即为语句的结尾。 （Visual Basic 中不需要使用分号。）前面的语句会告知 `PictureBox` 控件加载用户使用“OpenFileDialog”组件选择的文件。  
   
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)（教程 1：用 Visual Basic 创建图片查看器 - 视频 5）或 [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)（教程 1：用 C# 创建图片查看器 - 视频 5）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
+  ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 5](http://go.microsoft.com/fwlink/?LinkId=205216)（教程 1：用 Visual Basic 创建图片查看器 - 视频 5）或 [Tutorial 1: Create a Picture Viewer in C# - Video 5](http://go.microsoft.com/fwlink/?LinkId=205206)（教程 1：用 C# 创建图片查看器 - 视频 5）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
   
 ### <a name="to-add-comments"></a>添加注释  
   

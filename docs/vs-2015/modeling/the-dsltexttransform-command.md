@@ -14,12 +14,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1dbbf44a4adfe20f1940da32540eaad81c97251b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 882d2c8d0dec5e4673b24436067bd6255c2052be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269368"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853150"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ DslTextTransform.cmd 是一个脚本调用 TextTransform.exe 和运行使用常�
   
  作为输入 DslTextTransform.cmd，可以指定以下参数：  
   
--   域模型项目的输出目录。  
+- 域模型项目的输出目录。  
   
--   设计器定义项目的输出目录。  
+- 设计器定义项目的输出目录。  
   
--   文本模板文件的位置。  
+- 文本模板文件的位置。  
   
- DslTextTransform.cmd 处理指定的文本模板文件使用默认指令处理器和程序集。 如果创建自定义指令处理器，您可以创建自己调用 TextTransform.exe 的批处理文件。 在此批处理文件中，可以指定您的程序集和关联的自定义指令处理器。
+  DslTextTransform.cmd 处理指定的文本模板文件使用默认指令处理器和程序集。 如果创建自定义指令处理器，您可以创建自己调用 TextTransform.exe 的批处理文件。 在此批处理文件中，可以指定您的程序集和关联的自定义指令处理器。
 
 
 

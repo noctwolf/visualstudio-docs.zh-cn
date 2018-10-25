@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 94b1b46ce7d2843c733e1baf13f12672c98a3989
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851603"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
@@ -33,7 +33,7 @@ ms.locfileid: "44321185"
  下面是创建诊断数据适配器时可以使用的关键事件的部分列表。 有关诊断数据适配器事件的完整列表，请参见 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 抽象类。
 
 |事件|描述|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionStart>|开始测试运行|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.SessionEnd>|结束测试运行|
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseStart>|开始测试运行中的每个测试|
@@ -42,7 +42,7 @@ ms.locfileid: "44321185"
 |<xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestStepEnd>|结束测试中的每个测试步骤|
 
 > [!NOTE]
-> 完成手动测试时，不再将数据集合事件发送到诊断数据适配器。 测试重新运行时，将具有新的测试用例标识符。 如果用户在测试期间重置测试（这会引发 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件）或更改测试步骤结果，将不会向诊断数据适配器发送任何数据收集事件，但测试用例标识符保持不变。 若要确定是否重置了测试用例，必须跟踪诊断数据适配器中的测试用例标识符。
+> 完成手动测试时，不再将数据集合事件发送到诊断数据适配器。 测试重新运行时，将具有新的测试用例标识符。 如果用户在测试期间重置测试（这会引发 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件）或更改测试步骤结果，将不会向诊断数据适配器发送任何数据集合事件，但测试用例标识符保持不变。 若要确定是否重置了测试用例，必须跟踪诊断数据适配器中的测试用例标识符。
 
  使用下面的过程可创建诊断数据适配器，以收集基于在创建测试设置时所配置的信息的数据文件。
 
@@ -52,78 +52,78 @@ ms.locfileid: "44321185"
 
 ### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 
-1.  创建一个新的类库。
+1. 创建一个新的类库。
 
-    1.  在“文件”菜单上，选择“新建”，然后指向“新建项目”。
+   1.  在“文件”菜单上，选择“新建”，然后指向“新建项目”。
 
-    2.  从“项目类型”中选择要使用的语言。
+   2.  从“项目类型”中选择要使用的语言。
 
-    3.  从“Visual Studio 已安装的模板”中选择“类库”。
+   3.  从“Visual Studio 已安装的模板”中选择“类库”。
 
-    4.  为诊断数据适配器键入名称。
+   4.  为诊断数据适配器键入名称。
 
-    5.  选择 **“确定”**。
+   5.  选择 **“确定”**。
 
-2.  添加程序集“Microsoft.VisualStudio.QualityTools.ExecutionCommon”。
+2. 添加程序集“Microsoft.VisualStudio.QualityTools.ExecutionCommon”。
 
-    1.  在解决方案资源管理器中，右键单击“引用”，然后选择“添加引用”命令。
+   1.  在解决方案资源管理器中，右键单击“引用”，然后选择“添加引用”命令。
 
-    2.  选择“.NET”并查找“Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll”。
+   2.  选择“.NET”并查找“Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll”。
 
-    3.  选择 **“确定”**。
+   3.  选择 **“确定”**。
 
-3.  添加程序集“Microsoft.VisualStudio.QualityTools.Common”。
+3. 添加程序集“Microsoft.VisualStudio.QualityTools.Common”。
 
-    1.  在解决方案资源管理器中右键单击“引用”，然后选择“添加引用”命令。
+   1.  在解决方案资源管理器中右键单击“引用”，然后选择“添加引用”命令。
 
-    2.  选择“/.NET”并查找“Microsoft.VisualStudio.QualityTools.Common.dll”。
+   2.  选择“/.NET”并查找“Microsoft.VisualStudio.QualityTools.Common.dll”。
 
-    3.  选择 **“确定”**。
+   3.  选择 **“确定”**。
 
-4.  将以下 `using` 语句添加到您的类文件中：
+4. 将以下 `using` 语句添加到您的类文件中：
 
-    ```csharp
-    using Microsoft.VisualStudio.TestTools.Common;
-    using Microsoft.VisualStudio.TestTools.Execution;
-    using System.Linq;
-    using System.Text;
-    using System.Xml;
-    using System;
-    ```
+   ```csharp
+   using Microsoft.VisualStudio.TestTools.Common;
+   using Microsoft.VisualStudio.TestTools.Execution;
+   using System.Linq;
+   using System.Text;
+   using System.Xml;
+   using System;
+   ```
 
-5.  将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> 添加到诊断数据适配器的类中以将它标识为诊断数据适配器，用诊断数据适配器的相应信息来替换“公司”、“产品”和“版本”：
+5. 将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorTypeUriAttribute> 添加到诊断数据适配器的类中以将它标识为诊断数据适配器，用诊断数据适配器的相应信息来替换“公司”、“产品”和“版本”：
 
-    ```csharp
-    [DataCollectorTypeUri("datacollector://Company/Product/Version")]
-    ```
+   ```csharp
+   [DataCollectorTypeUri("datacollector://Company/Product/Version")]
+   ```
 
-6.  将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 特性添加到类中，用您的诊断数据适配器的相应信息来替换参数：
+6. 将 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorFriendlyNameAttribute> 特性添加到类中，用您的诊断数据适配器的相应信息来替换参数：
 
-    ```csharp
-    [DataCollectorFriendlyName("Collect Log Files", false)]
-    ```
+   ```csharp
+   [DataCollectorFriendlyName("Collect Log Files", false)]
+   ```
 
-     此友好名称将显示在测试设置活动中。
+    此友好名称将显示在测试设置活动中。
 
-    > [!NOTE]
-    > 还可以添加 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> 以指定用于此数据适配器的自定义配置编辑器的 `Type`，并可以选择指定要用于该编辑器的帮助文件。
-    >
-    > 还可以应用 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> 指定应始终启用该编辑器。
+   > [!NOTE]
+   > 还可以添加 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorConfigurationEditorAttribute> 以指定用于此数据适配器的自定义配置编辑器的 `Type`，并可以选择指定要用于该编辑器的帮助文件。
+   >
+   > 还可以应用 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectorEnabledByDefaultAttribute> 指定应始终启用该编辑器。
 
-7.  您的诊断数据适配器类必须从 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 类继承，如下所示：
+7. 您的诊断数据适配器类必须从 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector> 类继承，如下所示：
 
-    ```csharp
-    public class MyDiagnosticDataAdapter : DataCollector
-    ```
+   ```csharp
+   public class MyDiagnosticDataAdapter : DataCollector
+   ```
 
-8.  添加局部变量，如下所示：
+8. 添加局部变量，如下所示：
 
-    ```csharp
-    private DataCollectionEvents dataEvents;
-    private DataCollectionLogger dataLogger;
-    private DataCollectionSink dataSink;
-    private XmlElement configurationSettings;
-    ```
+   ```csharp
+   private DataCollectionEvents dataEvents;
+   private DataCollectionLogger dataLogger;
+   private DataCollectionSink dataSink;
+   private XmlElement configurationSettings;
+   ```
 
 9. 添加 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollector.Initialize*> 方法和“Dispose”方法。 在 `Initialize` 方法中，可按如下所示初始化数据接收器、测试设置中的任何配置数据，以及注册要使用的事件处理程序：
 
@@ -273,7 +273,7 @@ ms.locfileid: "44321185"
 
 17. 使用选择了你的诊断数据适配器的测试设置运行测试。
 
-   你指定的数据文件将被附加到测试结果中。
+    你指定的数据文件将被附加到测试结果中。
 
 ## <a name="see-also"></a>请参阅
 

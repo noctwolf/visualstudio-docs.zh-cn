@@ -17,12 +17,12 @@ ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 073245be91c1689d0dd70d30207dc4dd809c578e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d032863677a24f377da8068b4a6e5565c5a2241c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188562"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830673"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的资源
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,28 +31,28 @@ ms.locfileid: "49188562"
   
  不能在 Vspackage 中嵌入一些资源。 可以嵌入以下托管的类型：  
   
--   字符串  
+- 字符串  
   
--   包加载密钥 （这也是字符串）  
+- 包加载密钥 （这也是字符串）  
   
--   工具窗口图标  
+- 工具窗口图标  
   
--   已编译的命令表输出 （首席技术官） 文件  
+- 已编译的命令表输出 （首席技术官） 文件  
   
--   首席技术官位图  
+- 首席技术官位图  
   
--   命令行帮助  
+- 命令行帮助  
   
--   有关对话框数据  
+- 有关对话框数据  
   
- 托管包中的资源选择的资源 id。 异常是首席技术官文件，它必须命名为 CTMENU。 首席技术官文件必须出现在资源表作为`byte[]`。 由类型标识的所有其他资源项。  
+  托管包中的资源选择的资源 id。 异常是首席技术官文件，它必须命名为 CTMENU。 首席技术官文件必须出现在资源表作为`byte[]`。 由类型标识的所有其他资源项。  
   
- 可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>属性以指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]托管的资源都可用。  
+  可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>属性以指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]托管的资源都可用。  
   
- [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
- [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
+  [!code-csharp[VSSDKResources#1](../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs#1)]
+  [!code-vb[VSSDKResources#1](../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb#1)]  
   
- 设置<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>在这种方式指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]例如，通过使用搜索资源时应忽略非托管的附属 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]遇到两个或多个资源具有相同的资源 ID，它使用找到的第一个资源。  
+  设置<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>在这种方式指示[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]例如，通过使用搜索资源时应忽略非托管的附属 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]遇到两个或多个资源具有相同的资源 ID，它使用找到的第一个资源。  
   
 ## <a name="example"></a>示例  
  下面的示例是一个工具窗口图标的托管表示形式。  

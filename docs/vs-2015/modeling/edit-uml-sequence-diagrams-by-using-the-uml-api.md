@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b2c826174f65155e2a832ec55471246ffad9568b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0711a16206ae1f6fc1efba0b3422c650c993396d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185492"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941992"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>使用 UML API 编辑 UML 序列图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,13 +121,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>更新交互及其布局  
  更新交互时，请始终通过使用以下方法之一更新其布局来结束你的操作：  
   
--   `ISequenceDiagram.UpdateShapePositions()` 调整最近已插入或移动的形状和形状及其相邻形状的位置。  
+- `ISequenceDiagram.UpdateShapePositions()` 调整最近已插入或移动的形状和形状及其相邻形状的位置。  
   
--   `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 重绘整个关系图。 你可以使用该参数来指定生命线和/或消息的重新定位。  
+- `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` 重绘整个关系图。 你可以使用该参数来指定生命线和/或消息的重新定位。  
   
- 在插入新元素或移动现有元素时，这一点尤为重要。 在执行这些操作的其中一个之前，它们将不会位于关系图上的正确位置。 你只需在一系列更改结束时调用这些操作的其中一个。  
+  在插入新元素或移动现有元素时，这一点尤为重要。 在执行这些操作的其中一个之前，它们将不会位于关系图上的正确位置。 你只需在一系列更改结束时调用这些操作的其中一个。  
   
- 若要避免对在命令之后执行撤消操作的用户造成困惑，请使用 `ILinkedUndoTransaction` 以包括你的更改和最终的 `Layout()` 或 `UpdateShapePositions()` 操作。 例如：  
+  若要避免对在命令之后执行撤消操作的用户造成困惑，请使用 `ILinkedUndoTransaction` 以包括你的更改和最终的 `Layout()` 或 `UpdateShapePositions()` 操作。 例如：  
   
 ```  
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))  

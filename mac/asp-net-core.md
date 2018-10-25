@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 231994db8192f5c44919efcf5823e4e57342f2b1
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942941"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -64,12 +64,12 @@ public static void Main(string[] args)
 ```
 ASP.NET Core 应用将通过 [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) 实例配置并启动主机，以此在其 Main 方法中创建一个 Web 服务器。 此生成器提供方法以允许配置主机。 在模板应用中使用了以下配置：
 
- * `UseKestrel`：指定应用将使用的 Kestrel 服务器
- * `UseContentRoot(Directory.GetCurrentDirectory())`：从 Web 项目的根文件夹启动应用时，使用此文件夹作为应用的内容根
- * `.UseIISIntegration()`：指定应用程序应使用 IIS。 要在 ASP.NET Core 中使用 IIS，需要指定 `UseKestrel` 和 `UseIISIntegration`。
- * `.UseStartup<Startup>()`：指定启动类。
+* `UseKestrel`：指定应用将使用的 Kestrel 服务器
+* `UseContentRoot(Directory.GetCurrentDirectory())`：从 Web 项目的根文件夹启动应用时，使用此文件夹作为应用的内容根
+* `.UseIISIntegration()`：指定应用程序应使用 IIS。 要在 ASP.NET Core 中使用 IIS，需要指定 `UseKestrel` 和 `UseIISIntegration`。
+* `.UseStartup<Startup>()`：指定启动类。
 
- 生成并运行方法将生成 IWebHost，用于托管应用并使其开始侦听传入的 HTTP 请求。
+  生成并运行方法将生成 IWebHost，用于托管应用并使其开始侦听传入的 HTTP 请求。
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -229,7 +229,7 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 
 请确保成功完成所有四个步骤，以确保成功安装 .NET Core。
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>总结
 
 本指南介绍了 ASP.NET Core。 介绍了它是什么，何时使用，并提供了在 Visual Studio for Mac 中使用它的信息。
 有关后续步骤的详细信息，请参阅以下指南：

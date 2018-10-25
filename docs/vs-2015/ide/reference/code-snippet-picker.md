@@ -20,12 +20,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11a3a39b1b2f4d2d00f973cbaf38620641e45ca6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 31d5ced897badded98aa82b2245e8f210517afd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213299"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845289"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49213299"
   
  显示“代码片段选择器”的过程根据用户所使用的语言会有所不同。  
   
--   [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后选择“插入片段”。  
+- [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后选择“插入片段”。  
   
--   [!INCLUDE[csprcs](../../includes/csprcs-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
+- [!INCLUDE[csprcs](../../includes/csprcs-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
   
--   [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]：“代码片段选择器”不可用。  
+- [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]：“代码片段选择器”不可用。  
   
--   Visual F#：“代码片段选择器”不可用。  
+- Visual F#：“代码片段选择器”不可用。  
   
--   [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
+- [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)]：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
   
--   XML：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
+- XML：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
   
--   HTML：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
+- HTML：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”或“外侧代码”。  
   
--   SQL：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”。  
+- SQL：在代码编辑器中所需的位置处右击，以显示快捷菜单，然后单击“插入片段”。  
   
- 在大多数 Visual Studio 开发语言中，可以使用“代码片段管理器”将文件夹添加到“文件夹列表”，“代码片段选择器”会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 有关详细信息，请参阅[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
+  在大多数 Visual Studio 开发语言中，可以使用“代码片段管理器”将文件夹添加到“文件夹列表”，“代码片段选择器”会在该列表中扫描 XML 片段文件。 也可以创建自己的片段添加到该列表。 有关详细信息，请参阅[演练：创建代码片段](../../ide/walkthrough-creating-a-code-snippet.md)。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
  项名称  

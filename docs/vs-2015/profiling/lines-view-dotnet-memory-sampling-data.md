@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b77a262edcbf55f7c1f14c36d35a8618f5b788dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: edc922b2d96776d38de1b55ab2226be0d2c10f85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243005"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815723"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>“行”视图 - .NET 内存采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,21 +32,21 @@ ms.locfileid: "49243005"
   
  语句由以下数据标识：  
   
--   包含函数语句的源文件。  
+- 包含函数语句的源文件。  
   
--   包含该语句的函数。  
+- 包含该语句的函数。  
   
--   该语句的起始源代码行。  
+- 该语句的起始源代码行。  
   
--   该语句的起始源代码行中的字符。  
+- 该语句的起始源代码行中的字符。  
   
--   该语句的结束源代码行。  
+- 该语句的结束源代码行。  
   
--   该语句的结束源代码行中的字符。  
+- 该语句的结束源代码行中的字符。  
   
- “行名”列提供一串可排序的标识符数据。  
+  “行名”列提供一串可排序的标识符数据。  
   
- 根据定义，语句不调用其他函数。 因此，仅列出独占值。  
+  根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
 |列|描述|  
 |------------|-----------------|  

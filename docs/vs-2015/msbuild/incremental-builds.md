@@ -16,12 +16,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ef689ede76b85a393fc56e452f1f5af4b059d0e3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251443"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812317"
 ---
 # <a name="incremental-builds"></a>增量生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,13 +50,13 @@ ms.locfileid: "49251443"
   
  共有三种情况：  
   
--   目标具有计算结果为 `false` 的 `Condition` 属性。 这种情况不运行目标且不影响生成。  
+- 目标具有计算结果为 `false` 的 `Condition` 属性。 这种情况不运行目标且不影响生成。  
   
--   目标具有过时的输出，将运行目标，让这些输出保持为最新。  
+- 目标具有过时的输出，将运行目标，让这些输出保持为最新。  
   
--   目标没有过时的输出，将跳过目标。 MSBuild 会像已运行目标一样，计算目标并更改项和属性。  
+- 目标没有过时的输出，将跳过目标。 MSBuild 会像已运行目标一样，计算目标并更改项和属性。  
   
- 要支持增量编译，任务必须确保所有 `Output` 元素的 `TaskParameter` 属性值与某个任务输入参数相等。 下面是一些可能的恶意活动：  
+  要支持增量编译，任务必须确保所有 `Output` 元素的 `TaskParameter` 属性值与某个任务输入参数相等。 下面是一些可能的恶意活动：  
   
 ```  
 <CreateProperty Value="123">  

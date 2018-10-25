@@ -1,5 +1,5 @@
 ---
-title: SccInitialize 函数 |Microsoft 文档
+title: SccInitialize 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1146573f3d969ffc5cd56576ba92faa4e6ffdce0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 136978a6d1dc19a414079ba424ebcd5d50f6840a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31139118"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934569"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函数
-此函数初始化源代码管理插件，并提供功能和集成的开发环境 (IDE) 的限制。  
+此函数初始化源代码管理插件，并提供了功能和对集成的开发环境 (IDE) 的限制。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,22 +42,22 @@ SCCRTN SccInitialize (
   
 #### <a name="parameters"></a>参数  
  `ppvContext`  
- [in]此处用于源代码管理插件可以放置指向其上下文结构的指针。  
+ [in]源代码管理插件可以放置其上下文结构的指针。  
   
  `hWnd`  
  [in]它提供了任何对话框，父级可以使用源代码管理插件，则 IDE 窗口的句柄。  
   
  `lpCallerName`  
- [in]调用插件的源控件的程序的名称。  
+ [in]调用源代码管理插件的程序的名称。  
   
  `lpSccName`  
- [在中，out]源代码管理插件其中放入其自己的名称的缓冲区 (不能超过`SCC_NAME_LEN`)。  
+ [in、 out]源代码管理插件其中放入其自己的名称的缓冲区 (不能超过`SCC_NAME_LEN`)。  
   
  `lpSccCaps`  
- [out]返回的源控件即插即用接程序的功能标志。  
+ [out]返回源代码管理插件的功能标志。  
   
  `lpAuxPathLabel`  
- [在中，out]源代码管理插件其中将一个字符串，描述缓冲区`lpAuxProjPath`参数返回[SccOpenProject](../extensibility/sccopenproject-function.md)和[SccGetProjPath](../extensibility/sccgetprojpath-function.md) (不能超过`SCC_AUXLABEL_LEN`)。  
+ [in、 out]源代码管理插件将一个字符串，描述其中的缓冲区`lpAuxProjPath`返回参数[SccOpenProject](../extensibility/sccopenproject-function.md)并且[SccGetProjPath](../extensibility/sccgetprojpath-function.md) (不能超过`SCC_AUXLABEL_LEN`)。  
   
  `pnCheckoutCommentLen`  
  [out]返回签出注释的最大允许长度。  
@@ -66,28 +66,28 @@ SCCRTN SccInitialize (
  [out]返回其他注释的最大允许长度。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|源控件初始化成功。|  
 |SCC_E_INITIALIZEFAILED|无法初始化系统。|  
-|SCC_E_NOTAUTHORIZED|不允许用户执行指定的操作。|  
+|SCC_E_NOTAUTHORIZED|不允许用户以执行指定的操作。|  
 |SCC_E_NONSPECFICERROR|非特定故障;未初始化源代码管理系统。|  
   
 ## <a name="remarks"></a>备注  
- 它首次加载源代码管理插件时，IDE 将调用此函数。 它使 IDE 将某些信息，如调用方名称、 到该插件。 IDE 还会让某些信息如注释和即插即用接程序的功能的最大允许长度。  
+ 它首次加载源代码管理插件时，IDE 将调用此函数。 这样，IDE 将某些信息，例如调用方名称、 的插件。 IDE 还获取返回某些信息如注释和插件的功能的最大允许长度。  
   
- `ppvContext`指向`NULL`指针。 源代码管理插件可以分配为自己使用的结构并将存储到中该结构的指针`ppvContext`。 IDE 将此将指针传递给每个其他 VSSCI API 函数时，允许插件而无需进行全局存储中具有可用的上下文信息和支持的插件的多个实例。 此结构应释放时[SccUninitialize](../extensibility/sccuninitialize-function.md)调用。  
+ `ppvContext`指向`NULL`指针。 源代码管理插件可以分配供自己使用的结构和存储指向该结构中的`ppvContext`。 IDE 会将此指针传递到每个其他 VSSCI API 函数时，允许插件而不必求助于全局存储中有可用的上下文信息和支持的插件的多个实例。 此结构应为时已取消分配[SccUninitialize](../extensibility/sccuninitialize-function.md)调用。  
   
- `lpCallerName`和`lpSccName`参数启用 IDE 和源代码管理插件交换名称。 这些名称只可用于区分多个实例，或它们可能会实际出现在菜单或对话框。  
+ `lpCallerName`和`lpSccName`参数，在 IDE 和源代码管理插件来交换名称。 这些名称只可用于区分多个实例，或者它们可能会实际出现在菜单或对话框。  
   
- `lpAuxPathLabel`参数是为一个注释用于标识辅助项目路径，存储在解决方案文件并到源代码管理插件对的调用中传递一个字符串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 使用字符串"SourceSafe 项目:";其他源控件插件应避免使用此特定的字符串。  
+ `lpAuxPathLabel`参数是为一个注释用于标识存储在解决方案文件，并传递到源代码管理插件的调用中的辅助项目路径的字符串[SccOpenProject](../extensibility/sccopenproject-function.md)。 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] 使用字符串"SourceSafe 项目:";其他源代码管理插件应避免在使用此特定字符串。  
   
- `lpSccCaps`参数给出源代码管理插件一个位置来存储 bitflags，该值指示即插即用接程序的功能。 (有关功能 bitflags 的完整列表，请参阅[功能标志](../extensibility/capability-flags.md))。 例如，如果将结果写入到一个调用方提供的回调函数，该插件会设置功能的插件计划位 SCC_CAP_TEXTOUT。 这将指示 IDE 以为版本控制结果创建窗口。  
+ `lpSccCaps`参数提供了源代码管理插件一个位置来存储位标志，指示即插即用的项的功能。 (有关功能位标志的完整列表，请参阅[功能标志](../extensibility/capability-flags.md))。 例如，如果将结果写到调用方提供的回调函数，该插件将设置功能的插件计划位 SCC_CAP_TEXTOUT。 这会发出信号 IDE 来创建一个用于版本控制结果的窗口。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [SccUninitialize](../extensibility/sccuninitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [功能标志](../extensibility/capability-flags.md)

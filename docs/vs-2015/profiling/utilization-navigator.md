@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55a5c6eada52cead60abb830a5a873cc71cac194
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9c6550e4d9af994be1b703b56ab91cb33e6fdf5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824201"
 ---
 # <a name="utilization-navigator"></a>使用率导航器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49238584"
   
  此处演示如何通过使用率导航器来操作所显示的时间范围：  
   
--   可以通过左右拖动 Thumb 控件进行平移。 （键盘：将焦点移动到滚动块，然后按向左或向右键。）  
+- 可以通过左右拖动 Thumb 控件进行平移。 （键盘：将焦点移动到滚动块，然后按向左或向右键。）  
   
--   通过拖动其中一个图柄，可以更改间隔的程度。 （键盘：将焦点移动到一个图柄，然后按向右或向左键。）  
+- 通过拖动其中一个图柄，可以更改间隔的程度。 （键盘：将焦点移动到一个图柄，然后按向右或向左键。）  
   
- 如果使用另一种并发可视化工具缩放控件来更改间隔，则使用率导航器将会更新，以便反映所做的更改。
+  如果使用另一种并发可视化工具缩放控件来更改间隔，则使用率导航器将会更新，以便反映所做的更改。
 
 
 

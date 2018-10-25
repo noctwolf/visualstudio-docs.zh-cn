@@ -12,33 +12,33 @@ caps.latest.revision: 3
 author: steved0x
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 5f7b69d0fb1ccd547d522d65fab803bd79a10ed2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f99816153870884f868a6b229068bdc281408337
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865487"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>如何：在工作流设计器中定义和使用活动委托
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] 包括用于 <xref:System.Activities.Statements.InvokeDelegate> 活动的新的现成可用的设计器。  此设计器可用于将委托分配给从 <xref:System.Activities.ActivityDelegate> 派生的活动，例如 <xref:System.Activities.ActivityAction> 或 <xref:System.Activities.ActivityFunc%601>。  
   
 ### <a name="define-an-activity-delegate"></a>定义活动委托  
   
-1.  在中[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，选择**文件**，**新建**，**项目**。 选择**工作流**左侧节点和**工作流控制台应用程序**在右侧的模板。 命名项目 （如果需要），然后单击**确定**。  
+1. 在中[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，选择**文件**，**新建**，**项目**。 选择**工作流**左侧节点和**工作流控制台应用程序**在右侧的模板。 命名项目 （如果需要），然后单击**确定**。  
   
-2.  右键单击该项目中**解决方案资源管理器**，然后选择**添加**，**新项...**. 选择**工作流**左侧节点和**活动**在右侧的模板。 新活动命名**MyForEach.xaml**然后单击**确定**。 将在工作流设计器中打开活动。  
+2. 右键单击该项目中**解决方案资源管理器**，然后选择**添加**，**新项...**. 选择**工作流**左侧节点和**活动**在右侧的模板。 新活动命名**MyForEach.xaml**然后单击**确定**。 将在工作流设计器中打开活动。  
   
-3.  在工作流设计器中，单击**自变量**选项卡。  
+3. 在工作流设计器中，单击**自变量**选项卡。  
   
-4.  单击**创建参数**。 新的自变量命名**项**。  
+4. 单击**创建参数**。 新的自变量命名**项**。  
   
-5.  在中**自变量类型**列中，选择 **[T] 的数组**。  
+5. 在中**自变量类型**列中，选择 **[T] 的数组**。  
   
-6.  在类型浏览器中，选择**对象**。 单击**确定**。  
+6. 在类型浏览器中，选择**对象**。 单击**确定**。  
   
-7.  单击**创建自变量**试。 新的自变量命名**正文**。 在中**方向**新的自变量，选择的列**属性**。  
+7. 单击**创建自变量**试。 新的自变量命名**正文**。 在中**方向**新的自变量，选择的列**属性**。  
   
-8.  在自变量类型列中，选择**浏览类型...**  
+8. 在自变量类型列中，选择**浏览类型...**  
   
 9. 在类型浏览器中，输入**ActivityAction**中**类型名称**字段。 选择**ActivityAction\<T >** 树视图中。 选择**对象**显示为指定类型的下拉列表中**ActivityAction\<对象 >** 的参数。  
   
@@ -64,23 +64,23 @@ ms.locfileid: "49183373"
   
 20. 设置**到**的属性<xref:System.Activities.Statements.Assign>活动**索引**。 设置**值**的属性**分配**活动**索引 + 1**。  
   
- 自定义**myforeach**活动将立即调用一次用于传递到它通过每个值的任意活动**项**具有作为活动的输入集合中的值的集合。  
+    自定义**myforeach**活动将立即调用一次用于传递到它通过每个值的任意活动**项**具有作为活动的输入集合中的值的集合。  
   
 ### <a name="use-the-custom-activity-in-a-workflow"></a>使用工作流中的自定义活动  
   
-1.  生成项目，通过按**Ctrl + Shift + B**。  
+1. 生成项目，通过按**Ctrl + Shift + B**。  
   
-2.  在中**解决方案资源管理器**，打开**Workflow1.xaml**在设计器中。  
+2. 在中**解决方案资源管理器**，打开**Workflow1.xaml**在设计器中。  
   
-3.  拖动**myforeach**活动从工具箱拖到设计器图面。 该活动将位于工具箱的某个部分中，其名称与项目名称相同。  
+3. 拖动**myforeach**活动从工具箱拖到设计器图面。 该活动将位于工具箱的某个部分中，其名称与项目名称相同。  
   
-4.  设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}**。  
+4. 设置**项**的属性**myforeach**活动**new Object [] {1，"abc"}**。  
   
-5.  拖动<xref:System.Activities.Statements.WriteLine>活动从**基元**部分中的工具箱拖到**Delegate: Body**一部分**myforeach**活动。  
+5. 拖动<xref:System.Activities.Statements.WriteLine>活动从**基元**部分中的工具箱拖到**Delegate: Body**一部分**myforeach**活动。  
   
-6.  设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)**。  
+6. 设置**文本**的属性<xref:System.Activities.Statements.WriteLine>活动**argument.tostring （)**。  
   
- 当执行工作流时，控制台将显示以下信息：  
+   当执行工作流时，控制台将显示以下信息：  
   
- **1**   
-**abc**
+   **1**   
+   **abc**

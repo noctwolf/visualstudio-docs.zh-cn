@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 955e942f3e2215fa20a95b2e25c6abddc355fd6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267795"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895335"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>工作流设计器中的键盘快捷键
 可通过键盘访问 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 的所有核心功能。  
@@ -49,29 +49,29 @@ ms.locfileid: "49267795"
 ### <a name="flowchart"></a>流程图  
  下表列出了通过键盘构造流程图所使用的笔势。 与在 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 的其他内容中一样，会使用 [!INCLUDE[vs2010](../includes/vs2010-md.md)] 提供的全局工具箱快捷键将活动添加到设计器图面。  
   
--   若要移动某个活动，请选择该活动并使用箭头键重新定位该活动。  
+- 若要移动某个活动，请选择该活动并使用箭头键重新定位该活动。  
   
--   若要调整流程图的大小，请使用箭头键移动某个活动经过该流程图的当前边框。 将自动调整流程图的大小。  
+- 若要调整流程图的大小，请使用箭头键移动某个活动经过该流程图的当前边框。 将自动调整流程图的大小。  
   
--   若要将某个活动设置为开始节点，请使用**设置为 StartNode**命令的上下文菜单中。  
+- 若要将某个活动设置为开始节点，请使用**设置为 StartNode**命令的上下文菜单中。  
   
--   连接活动：  
+- 连接活动：  
   
-    1.  通过按 Tab 键定位到活动来选择源活动。  
+  1.  通过按 Tab 键定位到活动来选择源活动。  
   
-    2.  根据需要按 Ctrl+E，M 多次将键盘焦点移至目标活动。  
+  2.  根据需要按 Ctrl+E，M 多次将键盘焦点移至目标活动。  
   
-    3.  按 Ctrl+E，S 将目标活动添加到选择范围。  
+  3.  按 Ctrl+E，S 将目标活动添加到选择范围。  
   
-    4.  按 Ctrl+E，F 添加从源到目标的连接器。  
+  4.  按 Ctrl+E，F 添加从源到目标的连接器。  
   
- 有关通过键盘连接活动的说明：  
+  有关通过键盘连接活动的说明：  
   
--   通过在按 Ctrl+E，F 之前将多个活动添加到所选作用域可同时进行多个连接。按照向所选作用域添加活动的顺序进行连接。  
+- 通过在按 Ctrl+E，F 之前将多个活动添加到所选作用域可同时进行多个连接。按照向所选作用域添加活动的顺序进行连接。  
   
--   如果某对活动无法连接（例如，源活动已具有一个传出连接），则仍会尽可能进行所选作用域内活动之间的其他连接。  
+- 如果某对活动无法连接（例如，源活动已具有一个传出连接），则仍会尽可能进行所选作用域内活动之间的其他连接。  
   
--   当**FlowDecision**选定内容中包含和**FlowDecision**有没有传出连接器，连接器放置在**True**分支。  
+- 当**FlowDecision**选定内容中包含和**FlowDecision**有没有传出连接器，连接器放置在**True**分支。  
   
 ### <a name="expression-editing"></a>表达式编辑  
  默认情况下，用于 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 文本编辑的默认键盘快捷键适用于 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中的表达式编辑器，但具有以下限制：  

@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9f9679f235837521b06943b1335eb6577c9408
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 25294e9cb8f57036603ec4817fcbd59976a358a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840280"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练： 在使用按钮的工作表中的文本框中显示文本
   本演练演示在 Microsoft Office Excel 工作表，以及如何创建 Excel 项目中使用 Visual Studio 中的 Office 开发工具中使用按钮和文本框的基础知识。 若要查看已完成的示例，请参阅 Excel 控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
@@ -62,22 +62,22 @@ ms.locfileid: "35258436"
   
 ### <a name="to-add-a-button-and-a-text-box"></a>添加一个按钮和一个文本框  
   
-1.  确认**我 Excel Button.xlsx**工作簿是在 Visual Studio 设计器中，打开与`Sheet1`显示。  
+1. 确认**我 Excel Button.xlsx**工作簿是在 Visual Studio 设计器中，打开与`Sheet1`显示。  
   
-2.  从**公共控件**选项卡的工具箱拖动<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>到`Sheet1`。  
+2. 从**公共控件**选项卡的工具箱拖动<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>到`Sheet1`。  
   
-3.  从**视图**菜单中，选择**属性窗口**。  
+3. 从**视图**菜单中，选择**属性窗口**。  
   
-4.  确保**TextBox1**中可见**属性**窗口下拉列表框，然后**名称**属性的文本设置为**displayText**.  
+4. 确保**TextBox1**中可见**属性**窗口下拉列表框，然后**名称**属性的文本设置为**displayText**.  
   
-5.  拖动**按钮**控件拖动到`Sheet1`并更改以下属性：  
+5. 拖动**按钮**控件拖动到`Sheet1`并更改以下属性：  
   
-    |属性|“值”|  
-    |--------------|-----------|  
-    |**名称**|**insertText**|  
-    |**文本**|**插入文本**|  
+   |属性|“值”|  
+   |--------------|-----------|  
+   |**名称**|**insertText**|  
+   |**文本**|**插入文本**|  
   
- 现在编写代码时单击该按钮时运行。  
+   现在编写代码时单击该按钮时运行。  
   
 ## <a name="populate-the-text-box-when-the-button-is-clicked"></a>单击该按钮填充文本框  
  用户单击按钮，每次**Hello World ！** 将追加到文本框中。  

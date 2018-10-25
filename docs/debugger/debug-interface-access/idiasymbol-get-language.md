@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_language |Microsoft 文档'
+title: 'Idiasymbol:: Get_language |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b7797e4b6eb2aa35f13350580b110c757d7a5db
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 1b214e16538ba6447ce97ed6569bfbb580cf222e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935869"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 检索源的语言。  
@@ -34,13 +34,13 @@ HRESULT get_language (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个值从[CV_CFL_LANG 枚举](../../debugger/debug-interface-access/cv-cfl-lang.md)枚举用于指定的源的语言。  
+ [out]返回一个值从[CV_CFL_LANG 枚举](../../debugger/debug-interface-access/cv-cfl-lang.md)枚举，用于指定源的语言。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: fc773f9b4945a16bac0a9726e0a06f94726fad96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 230cd5ae3bd4ae0d46baf4fe48f00eca9ffe879d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236751"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825110"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,19 +66,19 @@ ms.locfileid: "49236751"
   
 ###### <a name="to-link-tests-to-a-use-case"></a>将测试链接到用例  
   
-1.  在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
+1. 在 [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] 中，创建一个要 求并使测试套件基于该需求。 若要了解如何执行此操作，请参阅[测试应用程序](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)。  
   
-     所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+    所创建的要求是 [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)] 中的工作项。 它可以是用户情景、要求或用例工作项，具体取决于项目在 [!INCLUDE[esprfound](../includes/esprfound-md.md)] 中使用的过程模板。 有关详细信息，请参阅[使用 Visual Studio Team Services 或 Team Foundation Server 跟踪工作](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
-2.  将要求工作项链接到模型中的一个或多个用例。  
+2. 将要求工作项链接到模型中的一个或多个用例。  
   
-     在用例图中，右键单击一个用例，然后单击**链接到工作项**。 有关详细信息，请参阅[链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)。  
+    在用例图中，右键单击一个用例，然后单击**链接到工作项**。 有关详细信息，请参阅[链接模型元素和工作项](../modeling/link-model-elements-and-work-items.md)。  
   
-3.  添加到测试套件（即验证用例的测试用例）。  
+3. 添加到测试套件（即验证用例的测试用例）。  
   
- 通常，每个用户情景或要求工作项将链接到模型中的多个用例，且每个用例将链接到多个用户情景或要求。 这是因为，每个用户情景或需求包括一组开发多个用例的任务。 例如，你可以在项目的早期迭代中开发基本用户情景，客户可以从用户情景的目录中选择项并进行提交。 在后期迭代中，情景可以是用户在完成订单时支付的款项以及供应商在发送货物后收到的金额。  每个情景都向“订货”用例的后置条件中添加一个子句。  
+   通常，每个用户情景或要求工作项将链接到模型中的多个用例，且每个用例将链接到多个用户情景或要求。 这是因为，每个用户情景或需求包括一组开发多个用例的任务。 例如，你可以在项目的早期迭代中开发基本用户情景，客户可以从用户情景的目录中选择项并进行提交。 在后期迭代中，情景可以是用户在完成订单时支付的款项以及供应商在发送货物后收到的金额。  每个情景都向“订货”用例的后置条件中添加一个子句。  
   
- 可以将后置条件的子句写入用例图上的单独注释，从而创建从要求到这些子句的单独链接。 可以将每个注释链接到要求工作项，并将注释链接到关系图上的用例。  
+   可以将后置条件的子句写入用例图上的单独注释，从而创建从要求到这些子句的单独链接。 可以将每个注释链接到要求工作项，并将注释链接到关系图上的用例。  
   
 ### <a name="base-tests-on-the-requirements-types"></a>使测试基于要求类型  
  需求模型的类型（即类、接口和枚举）依据用户对其业务的考虑和传达方式来描述概念和关系。 不包括仅与系统的内部设计有关的类型。  

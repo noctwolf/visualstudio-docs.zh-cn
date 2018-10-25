@@ -29,12 +29,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9cc71753fa34ceee7ba23cc63d45288d9b583b7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7b8a67a9105314ad73076d3a8b12d51c23f83097
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832727"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,9 +109,9 @@ ms.locfileid: "49193831"
   
 #### <a name="to-update-local-content"></a>要更新本地内容  
   
--   在状态栏的右下角，选择“单击此处立即下载”链接。  
+- 在状态栏的右下角，选择“单击此处立即下载”链接。  
   
- 安装时间可能不同，但可以在状态栏中查看进度。  
+  安装时间可能不同，但可以在状态栏中查看进度。  
   
 ## <a name="moving-local-content"></a>删除本地内容  
  可以通过将本地计算机上安装的内容移到网络共享或本地计算机上的其他分区来节省磁盘空间。  

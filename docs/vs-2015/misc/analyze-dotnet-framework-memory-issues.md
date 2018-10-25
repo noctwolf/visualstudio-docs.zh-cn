@@ -15,23 +15,23 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: susanno
 manager: douge
-ms.openlocfilehash: 210fb8ced645250789c9c1da0339abe0814656ae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f33b9e82ee1248988c949a9edea9f09de0d368df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812564"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>分析 .NET Framework 内存问题
 通过使用 Visual Studio 托管内存分析程序，在 .NET Framework 代码中查找内存泄漏和低效内存使用。 目标代码的最低 .NET Framework 版本为 .NET Framework 4.5。  
   
  内存分析工具分析中的信息*转储与堆数据的文件*的应用程序的内存中对象的副本。 从 Visual Studio IDE 或通过使用其他系统工具，你可以收集转储 (.dmp) 文件。  
   
--   你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
+- 你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
   
--   此外可以比较 (*差异*) 两个快照应用程序以在代码中找到的区域，导致内存使用随时间增加。  
+- 此外可以比较 (*差异*) 两个快照应用程序以在代码中找到的区域，导致内存使用随时间增加。  
   
- 托管的内存分析程序的演练，请参阅[到生产中诊断.NET 内存问题使用 Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server 博客上。  
+  托管的内存分析程序的演练，请参阅[到生产中诊断.NET 内存问题使用 Visual Studio 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx) Visual Studio ALM + Team Foundation Server 博客上。  
   
 ##  <a name="BKMK_Contents"></a> 内容  
  [.NET Framework 应用程序中的内存使用](#BKMK_Memory_use_in__NET_Framework_apps)  
@@ -68,32 +68,32 @@ ms.locfileid: "49288387"
   
  **若要从 Visual Studio 收集转储**  
   
-1.  你可以针对从 Visual Studio 项目开始的进程创建一个转储文件，或者也可以将调试器附加到正在运行的进程。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+1. 你可以针对从 Visual Studio 项目开始的进程创建一个转储文件，或者也可以将调试器附加到正在运行的进程。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
-2.  停止执行。 在调试器停止时选择**全部中断**上**调试**菜单中，或在发生异常或断点处  
+2. 停止执行。 在调试器停止时选择**全部中断**上**调试**菜单中，或在发生异常或断点处  
   
-3.  上**调试**菜单中，选择**转储另存为**。 中**转储另存为**对话框框中，指定的位置并确保选中**小型转储与堆**（默认值） 中选择**另存为类型**列表。  
+3. 上**调试**菜单中，选择**转储另存为**。 中**转储另存为**对话框框中，指定的位置并确保选中**小型转储与堆**（默认值） 中选择**另存为类型**列表。  
   
- **要比较两个内存快照**  
+   **要比较两个内存快照**  
   
- 若要分析应用内存使用中的增长，请从该应用的单个实例收集两个转储文件。  
+   若要分析应用内存使用中的增长，请从该应用的单个实例收集两个转储文件。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Analyze_memory_use"></a> 分析内存使用  
  [筛选对象列表](#BKMK_Filter_the_list_of_objects) **&#124;** [分析中从单个快照的内存数据](#BKMK_Analyze_memory_data_in_from_a_single_snapshot) **&#124;** [比较两个内存快照](#BKMK_Compare_two_memory_snapshots)  
   
  若要针对内存使用问题分析转储文件：  
   
-1.  在 Visual Studio 中，选择**文件**，**打开**并指定转储文件。  
+1. 在 Visual Studio 中，选择**文件**，**打开**并指定转储文件。  
   
-2.  上**小型转储文件摘要**页上，选择**调试托管内存**。  
+2. 上**小型转储文件摘要**页上，选择**调试托管内存**。  
   
-     ![转储文件摘要页](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
+    ![转储文件摘要页](../misc/media/mngdmem-dumpfilesummary.png "MNGDMEM_DumpFileSummary")  
   
- 内存分析程序启动调试会话以分析文件并且在“堆视图”页面上显示结果：  
+   内存分析程序启动调试会话以分析文件并且在“堆视图”页面上显示结果：  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ###  <a name="BKMK_Filter_the_list_of_objects"></a> 筛选对象列表  
  默认情况下，内存分析程序在内存快照中筛选对象列表，以便只显示用户代码的类型和实例，并且只显示那些总包含大小超过总堆大小阈值百分比的类型。 您可以更改这些选项在**视图设置**列表：  
@@ -117,28 +117,28 @@ ms.locfileid: "49288387"
 #### <a name="object-type-table"></a>对象类型表  
  上表列出了在内存中保留的对象的类型。  
   
--   **计数**快照中显示该类型的实例数。  
+- **计数**快照中显示该类型的实例数。  
   
--   **大小 （字节）** 是不包括其保留对引用对象的大小的类型的所有实例的大小。 必须向  
+- **大小 （字节）** 是不包括其保留对引用对象的大小的类型的所有实例的大小。 必须向  
   
--   **非独占大小 （字节）** 包括被引用对象的大小。  
+- **非独占大小 （字节）** 包括被引用对象的大小。  
   
- 您可以选择实例图标 (![对象类型列中的实例图标](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) 中**对象类型**列可查看的实例的列表类型。  
+  您可以选择实例图标 (![对象类型列中的实例图标](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) 中**对象类型**列可查看的实例的列表类型。  
   
 #### <a name="instance-table"></a>实例表  
  ![实例表](../misc/media/dbg-mma-instancestable.png "DBG_MMA_InstancesTable")  
   
--   **实例**是可作为对象的对象标识符的对象的内存位置  
+- **实例**是可作为对象的对象标识符的对象的内存位置  
   
--   **值**显示值类型的实际值。 你可以悬停在引用类型的名称上以便在数据提示中查看其数据值。  
+- **值**显示值类型的实际值。 你可以悬停在引用类型的名称上以便在数据提示中查看其数据值。  
   
-     ![实例数据提示中的值](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
+   ![实例数据提示中的值](../misc/media/dbg-mma-instancevaluesindatatip.png "DBG_MMA_InstanceValuesInDataTip")  
   
--   **大小 （字节）** 是对象，其中不包括其保留对引用对象的大小的大小。 必须向  
+- **大小 （字节）** 是对象，其中不包括其保留对引用对象的大小的大小。 必须向  
   
--   **非独占大小 （字节）** 包括被引用对象的大小。  
+- **非独占大小 （字节）** 包括被引用对象的大小。  
   
- 默认情况下，类型和实例按排序**非独占大小 （字节）**。 在列表中选择一个列标题以更改排序顺序。  
+  默认情况下，类型和实例按排序**非独占大小 （字节）**。 在列表中选择一个列标题以更改排序顺序。  
   
 #### <a name="paths-to-root"></a>根路径  
   
@@ -148,17 +148,17 @@ ms.locfileid: "49288387"
   
 #### <a name="referenced-types--referenced-objects"></a>引用类型/引用对象  
   
--   从所选类型**对象类型**表中，**引用的类型**选项卡显示的大小和数量的所选类型的所有对象所都持有的引用的类型。  
+- 从所选类型**对象类型**表中，**引用的类型**选项卡显示的大小和数量的所选类型的所有对象所都持有的引用的类型。  
   
--   所选实例的类型，**引用的对象**显示所选实例所持有的对象。 你可以悬停在该名称上以便在数据提示中查看其数据值。  
+- 所选实例的类型，**引用的对象**显示所选实例所持有的对象。 你可以悬停在该名称上以便在数据提示中查看其数据值。  
   
- **循环引用**  
+  **循环引用**  
   
- 对象可以引用直接或间接保留对第一个对象引用的第二个对象。 当内存分析器遇到这种情况下时，它将停止展开引用路径，并添加 **[检测到循环]** 批注相对于列表的第一个对象并停止。  
+  对象可以引用直接或间接保留对第一个对象引用的第二个对象。 当内存分析器遇到这种情况下时，它将停止展开引用路径，并添加 **[检测到循环]** 批注相对于列表的第一个对象并停止。  
   
- **根类型**  
+  **根类型**  
   
- 内存分析程序将批注添加到描述要保留的引用类型的根对象：  
+  内存分析程序将批注添加到描述要保留的引用类型的根对象：  
   
 |批注|描述|  
 |----------------|-----------------|  
@@ -176,17 +176,17 @@ ms.locfileid: "49288387"
 ###  <a name="BKMK_Compare_two_memory_snapshots"></a> 比较两个内存快照  
  你可以比较进程的两个转储文件以查找可能导致内存泄漏的原因。 第一个（早期）和第二个（晚期）文件的收集之间的间隔应足够大，（才能使）泄漏对象数目的增长显而易见。 若要比较两个文件：  
   
-1.  打开第二个转储文件，并选择**调试托管内存**上**小型转储文件摘要**页。  
+1. 打开第二个转储文件，并选择**调试托管内存**上**小型转储文件摘要**页。  
   
-2.  在内存分析报表页上，打开**选择基线**列表，，然后选择**浏览**来指定第一个转储文件。  
+2. 在内存分析报表页上，打开**选择基线**列表，，然后选择**浏览**来指定第一个转储文件。  
   
- 分析器将列添加到显示之间的差的报表的顶部窗格**计数**，**大小**，并**非独占大小**到中的那些值的类型以前的快照。  
+   分析器将列添加到显示之间的差的报表的顶部窗格**计数**，**大小**，并**非独占大小**到中的那些值的类型以前的快照。  
   
- ![类型列表中的差异列](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
+   ![类型列表中的差异列](../misc/media/mngdmem-diffcolumns.png "MNGDMEM_DiffColumns")  
   
- 一个**引用计数差异**还将列添加到**根路径**表。  
+   一个**引用计数差异**还将列添加到**根路径**表。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ## <a name="see-also"></a>请参阅  
  [VS ALM TFS 博客： 使用 Visual Studio 2013 诊断生产中的.NET 内存问题](http://blogs.msdn.com/b/visualstudioalm/archive/2013/06/20/using-visual-studio-2013-to-diagnose-net-memory-issues-in-production.aspx)   

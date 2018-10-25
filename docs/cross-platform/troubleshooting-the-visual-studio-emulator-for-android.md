@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 4456fdf61fc1ae7f3d4dc958afe3ba7cb6ff9add
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 2ce99d472c2499d773e48ba90d20844b1cfae8f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496085"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819610"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 模拟器疑难解答
 本主题包含的信息有助于解决使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到的一些问题。  
@@ -94,11 +94,11 @@ ms.locfileid: "46496085"
 ##  <a name="ManualNetworkConfig"></a> 当需要手动配置网络设置时无法连接到网络目标  
  若要从仿真程序连接到网络目标，网络必须满足以下要求：  
   
--   DHCP。 仿真程序需要 DHCP，因为它将自身配置为网络上具有自己的 IP 地址的一个单独的设备  
+- DHCP。 仿真程序需要 DHCP，因为它将自身配置为网络上具有自己的 IP 地址的一个单独的设备  
   
--   自动配置的 DNS 和网关设置。 无法为仿真程序手动配置 DNS 和网关设置。  
+- 自动配置的 DNS 和网关设置。 无法为仿真程序手动配置 DNS 和网关设置。  
   
- 如果网络要求手动配置的设置，请与 IT 管理员联系，确定如何为仿真程序启用网络连接。  
+  如果网络要求手动配置的设置，请与 IT 管理员联系，确定如何为仿真程序启用网络连接。  
   
 ##  <a name="SlowStart"></a>模拟器启动缓慢，由于超时或应用部署失败而无法启动  
  某些条件下，仿真程序需要几分钟才能启动，或由于超时而未能启动。 当仿真程序启动失败时，将出现以下消息：`App deployment failed. Please try again`。 以下条件可能导致此错误。  
@@ -134,138 +134,138 @@ ms.locfileid: "46496085"
   
      ![Android_Emu_V_Switch_Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")  
   
-     如果安装不正确，并且使用的是 Windows 10，则可以尝试[使用 netcfg – d 命令重新安装网络设备](http://windows.microsoft.com/en-us/windows-10/fix-network-connection-issues)（第 6 节）。  
+     如果安装不正确，并且使用的是 Windows 10，则可以尝试[使用 netcfg – d 命令重新安装网络设备](http://windows.microsoft.com/windows-10/fix-network-connection-issues)（第 6 节）。  
   
 -   如果这些步骤未解决问题，请参阅 [Emulator fails to start (first use)](#NoStart) ，了解可能会干扰仿真程序的第三方软件的信息。  
   
 ##  <a name="NoStart"></a> Emulator fails to start (first use)  
  如果仿真程序未启动，执行以下任务来确定并修复该问题。  
   
--   确保满足最低硬件要求以及 BIOS 设置正确。  
+- 确保满足最低硬件要求以及 BIOS 设置正确。  
   
-     仿真程序和 Windows 8 HYPER-V 需要支持二级地址转换 (SLAT) 的 64 位处理器。 对 Intel 而言，实际上需要 Core i3、i5 或 i7 处理器（或众多 Xeons 中的一种）。 [此处](http://support.amd.com/en-us)可查看 AMD 芯片列表。  
+   仿真程序和 Windows 8 HYPER-V 需要支持二级地址转换 (SLAT) 的 64 位处理器。 对 Intel 而言，实际上需要 Core i3、i5 或 i7 处理器（或众多 Xeons 中的一种）。 [此处](http://support.amd.com/en-us)可查看 AMD 芯片列表。  
   
-    1.  确保计算机满足 [系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
+  1. 确保计算机满足 [系统要求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)。  
   
-    2.  验证确认 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 报告计算机支持 SLAT。  
+  2. 验证确认 [SLAT 工具](https://slatstatuscheck.codeplex.com/) 报告计算机支持 SLAT。  
   
-    3.  在计算机的 BIOS 设置内，确保已启用所有虚拟化技术。 具体的 BIOS 说明可能会因硬件制造商而异。 一般情况下，启用与以下内容相关的功能：  
+  3. 在计算机的 BIOS 设置内，确保已启用所有虚拟化技术。 具体的 BIOS 说明可能会因硬件制造商而异。 一般情况下，启用与以下内容相关的功能：  
   
-        -   SLAT（二级地址转换）  
+     -   SLAT（二级地址转换）  
   
-        -   EPT（扩展页表）(Intel)  
+     -   EPT（扩展页表）(Intel)  
   
-        -   NPT（嵌套页表）(AMD)  
+     -   NPT（嵌套页表）(AMD)  
   
-        -   RVI（快速虚拟化索引）(AMD)  
+     -   RVI（快速虚拟化索引）(AMD)  
   
-        -   VMX（指示硬件辅助虚拟化支持的 Intel 首字母缩写词）  
+     -   VMX（指示硬件辅助虚拟化支持的 Intel 首字母缩写词）  
   
-        -   SVM（指示硬件辅助虚拟化支持的 AMD 首字母缩写词）  
+     -   SVM（指示硬件辅助虚拟化支持的 AMD 首字母缩写词）  
   
-        -   XD（执行禁用）(Intel)；必须启用  
+     -   XD（执行禁用）(Intel)；必须启用  
   
-        -   NX（无执行）(AMD)；必须启用。  
+     -   NX（无执行）(AMD)；必须启用。  
   
-    4.  如果 BIOS 中存在以下选项，则禁用它们。  
+  4. 如果 BIOS 中存在以下选项，则禁用它们。  
   
-        -   禁用 Intel VT d  
+     - 禁用 Intel VT d  
   
-        -   禁用受信任的执行  
+     - 禁用受信任的执行  
   
-         有关详细信息，请参阅此文章：Technet：Hyper-V：如何修复启用 Hyper-V 时发生的 BIOS 错误  
+       有关详细信息，请参阅此文章：Technet：Hyper-V：如何修复启用 Hyper-V 时发生的 BIOS 错误  
   
-    5.  确保至少具有 4 GB 系统内存，并且它未被其他占用大量资源的程序和进程使用。  
+  5. 确保至少具有 4 GB 系统内存，并且它未被其他占用大量资源的程序和进程使用。  
   
-    6.  确保正在运行 Windows 8 专业版或更好版本（不支持 Windows Server 2008）。 支持 Windows Server 2012，但必须启用“桌面体验”。  
+  6. 确保正在运行 Windows 8 专业版或更好版本（不支持 Windows Server 2008）。 支持 Windows Server 2012，但必须启用“桌面体验”。  
   
      可以检查事件查看器，查看是否存在任何虚拟机监控程序错误。 若要执行此操作，打开事件查看器（开始键+R，然后键入 `eventvwr`），然后选择“Windows 日志”、“系统”。 然后按事件源筛选日志，同时将源设置为 **“Hyper-V-虚拟机监控程序”**。 检查错误以帮助确定根源。  
   
      如果处理器满足最低要求而虚拟机监控程序仍失败，建议找出是否存在计算机可进行的 BIOS 升级。 如果存在升级并且选择要升级，务必在升级 BIOS 时采取制造商提出的所有预防措施（例如，确保 BIOS 固件升级不因断电中断，因为这样可能会永久损坏 BIOS）。  
   
--   确保至少具有 4 GB 系统内存，并且它未被其他占用大量资源的程序和进程使用。  
+- 确保至少具有 4 GB 系统内存，并且它未被其他占用大量资源的程序和进程使用。  
   
--   删除/禁用可能干扰虚拟网络的第三方驱动程序或软件。  
+- 删除/禁用可能干扰虚拟网络的第三方驱动程序或软件。  
   
-     某些安装在 Windows 8 下不与 Hyper-V 网络堆栈完全兼容的第三方产品（例如网络驱动程序/协议）存在一些已知的问题。  
+   某些安装在 Windows 8 下不与 Hyper-V 网络堆栈完全兼容的第三方产品（例如网络驱动程序/协议）存在一些已知的问题。  
   
-     一般情况下，是否更新其软件从而与 Windows 8 和 Hyper-V 兼容取决于这些产品的开发人员。  
+   一般情况下，是否更新其软件从而与 Windows 8 和 Hyper-V 兼容取决于这些产品的开发人员。  
   
-     以下产品可能需要升级以与 Windows 8 兼容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 客户端、软件防火墙、某些版本的 Cisco VPN 客户端和其他虚拟化系统。 与可疑虚拟化软件的开发人员合作，鼓励他们升级软件，从而使软件与 Windows 8 和 Hyper-V 兼容。  
+   以下产品可能需要升级以与 Windows 8 兼容：VirtualBox、Virtual PC 7、VMWare、某些 VPN 客户端、软件防火墙、某些版本的 Cisco VPN 客户端和其他虚拟化系统。 与可疑虚拟化软件的开发人员合作，鼓励他们升级软件，从而使软件与 Windows 8 和 Hyper-V 兼容。  
   
-     作为一种解决方法，可以禁用可能会干扰虚拟网络（仿真程序用于与 Visual Studio 进行通信）的所有第三方驱动程序和应用程序。 这些应用程序可能包括：  
+   作为一种解决方法，可以禁用可能会干扰虚拟网络（仿真程序用于与 Visual Studio 进行通信）的所有第三方驱动程序和应用程序。 这些应用程序可能包括：  
   
-    -   防病毒应用程序（挂接到网络堆栈）  
+  - 防病毒应用程序（挂接到网络堆栈）  
   
-    -   网络监视工具  
+  - 网络监视工具  
   
-    -   网络日志记录工具  
+  - 网络日志记录工具  
   
-    -   其他系统监视软件  
+  - 其他系统监视软件  
   
-     除了卸载相关产品（及请求产品开发人员发布更新的版本）外，另一个可能的解决方法是执行以下步骤。  
+    除了卸载相关产品（及请求产品开发人员发布更新的版本）外，另一个可能的解决方法是执行以下步骤。  
   
-    1.  启动网络连接管理器（在“开始”屏幕中，键入 `View Network Connections` ，然后选择此选项来查看网络连接。）  
+  1. 启动网络连接管理器（在“开始”屏幕中，键入 `View Network Connections` ，然后选择此选项来查看网络连接。）  
   
-    2.  对于 vEthernet（内部以太网端口 Windows Phone 仿真程序内部交换机）适配器，从上下文菜单选择 **“属性”** 。  
+  2. 对于 vEthernet（内部以太网端口 Windows Phone 仿真程序内部交换机）适配器，从上下文菜单选择 **“属性”** 。  
   
-         ![由 Hyper-V 使用的虚拟适配器](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
+      ![由 Hyper-V 使用的虚拟适配器](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")  
   
-         此处显示了适配器属性。  
+      此处显示了适配器属性。  
   
-         ![虚拟适配器属性](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
+      ![虚拟适配器属性](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")  
   
-    3.  对于此适配器，应在 **“此连接使用下列项”** 下选择的项只能为：  
+  3. 对于此适配器，应在 **“此连接使用下列项”** 下选择的项只能为：  
   
-        -   Microsoft 网络客户端  
+     -   Microsoft 网络客户端  
   
-        -   QoS 数据包计划程序  
+     -   QoS 数据包计划程序  
   
-        -   Microsoft 网络的文件和打印机共享  
+     -   Microsoft 网络的文件和打印机共享  
   
-        -   Microsoft LLDP 协议驱动程序  
+     -   Microsoft LLDP 协议驱动程序  
   
-        -   链路层拓扑发现映射器 I/O 驱动程序  
+     -   链路层拓扑发现映射器 I/O 驱动程序  
   
-        -   链路层拓扑发现响应程序  
+     -   链路层拓扑发现响应程序  
   
-        -   Internet 协议版本 6 (TCP/IPv6)  
+     -   Internet 协议版本 6 (TCP/IPv6)  
   
-        -   Internet 协议版本 4 (TCP/IPv4)  
+     -   Internet 协议版本 4 (TCP/IPv4)  
   
-    4.  取消选择任何其他项。  
+  4. 取消选择任何其他项。  
   
      使用这一方法的缺点是，只要新的第三方产品安装不受支持的驱动程序，或只要安装仿真程序时，都需重复这些步骤。  
   
      卸载第三方产品后，可能需要还原 Windows Phone 仿真程序内部交换机。 若要完成该操作：  
   
-    -   打开 Hyper V 并转入虚拟交换机管理器。 创建名为“Windows Phone 仿真程序内部交换机”的虚拟交换机，并将其连接类型设置为 **“内部网络”**。  
+  - 打开 Hyper V 并转入虚拟交换机管理器。 创建名为“Windows Phone 仿真程序内部交换机”的虚拟交换机，并将其连接类型设置为 **“内部网络”**。  
   
-         ![虚拟交换机管理器](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
+     ![虚拟交换机管理器](../cross-platform/media/android_emu_virtual_switch_manager.png "Android_Emu_Virtual_Switch_Manager")  
   
-     现在启动仿真程序。 它应正常工作。  
+    现在启动仿真程序。 它应正常工作。  
   
 ##  <a name="NoBoot"></a> 安装仿真程序后计算机无法启动  
  当以下条件为真时，会出现此问题：  
   
--   计算机具有 Gigabyte 主板。  
+- 计算机具有 Gigabyte 主板。  
   
--   主板上启用了 USB3。  
+- 主板上启用了 USB3。  
   
- 若要解决此问题，则在主板的 BIOS 设置中禁用 USB3，然后重新启动计算机。 然后，检查 Gigabyte 是否已为主板的 BIOS 发布了更新。  
+  若要解决此问题，则在主板的 BIOS 设置中禁用 USB3，然后重新启动计算机。 然后，检查 Gigabyte 是否已为主板的 BIOS 发布了更新。  
   
- 有关详细信息，请参阅以下知识库文章： [在 Gigabyte 系统上安装 Hyper-V 角色后启动失败](https://support.microsoft.com/en-us/kb/2693144)。  
+  有关详细信息，请参阅以下知识库文章： [在 Gigabyte 系统上安装 Hyper-V 角色后启动失败](https://support.microsoft.com/en-us/kb/2693144)。  
   
 ##  <a name="ADB"></a> Visual Studio 尝试将应用部署到仿真程序时遇到困难，或者仿真程序未在其他 IDE 中显示为调试目标。  
  如果仿真程序正在运行，但它似乎没有连接到 ADB（Android 调试桥）或未显示在使用 ADB 的 Android 工具中（如 Android Studio 或 Eclipse），则可能需要调整仿真程序查找 ADB 的位置。 仿真程序使用注册表项来标识 Android SDK 的基位置，并查找该目录下的 \platform-tools\adb.exe 文件。 若要修改仿真程序使用的 Android SDK 路径：  
   
--   从“开始”按钮上下文菜单中选择 **“运行”** ，在对话框中键入 `regedit` ，并选择 **“确定”**，由此打开注册表编辑器。  
+- 从“开始”按钮上下文菜单中选择 **“运行”** ，在对话框中键入 `regedit` ，并选择 **“确定”**，由此打开注册表编辑器。  
   
--   在左侧的文件夹树中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
+- 在左侧的文件夹树中，导航到 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Android SDK Tools。  
   
--   修改 **“路径”** 注册表变量，以匹配指向 Android SDK 的路径。  
+- 修改 **“路径”** 注册表变量，以匹配指向 Android SDK 的路径。  
   
- 重新启动仿真程序，现在应能够看到仿真程序已连接到 ADB 和关联的 Android 工具。  
+  重新启动仿真程序，现在应能够看到仿真程序已连接到 ADB 和关联的 Android 工具。  
   
 ##  <a name="XamarinPlayer"></a> 由于它无法设置 UDP 端口，仿真程序挂起。  
  由于与 Xamarin 播放器不兼容，你可能会遇到此问题。 如果仿真程序显示为挂起，或者如果出现此错误消息 - “仿真程序无法连接到设备操作系统: 无法设置 UDP 端口。  某些功能可能已禁用”，则这表示你可能遇到了此问题。 请执行下列步骤：  

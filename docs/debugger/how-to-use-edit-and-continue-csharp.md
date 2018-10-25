@@ -1,7 +1,7 @@
 ---
-title: 如何： 使用编辑并继续 (C#) |Microsoft 文档
+title: 如何： 使用编辑并继续 (C#) |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -17,39 +17,37 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1f073d401ddc1a99e365245f2a8c1b66b13fb8a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 41e97f488344e3d34ce326a3d35880d94da4ad9a
+ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475179"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49382800"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>如何：使用“编辑并继续”(C#)
-使用 C# 的“编辑并继续”，可以一边进行调试一边在中断模式下更改代码。 不必停止并重新启动调试会话即可应用更改。  
+编辑并继续，可以建立并调试，而无需停止和重新启动调试会话时将更改应用到你的代码在中断模式下。  
+
+编辑并继续的C#当你在中断模式下进行代码更改，然后继续进行调试，通过使用自动发生**继续**，**步骤**，或**设置下一语句**，或计算在调试器窗口函数。  
+
+有关详细信息，请参阅[编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)。
+
+>[!NOTE]
+>编辑并继续的优化，不支持混合使用，或 SQL Server 公共语言运行时 (CLR) 集成代码。 有关其他不受支持方案的信息，请参阅[支持的代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。 如果你尝试编辑并继续使用其中一种情形，出现一个消息框，指出，不支持编辑并继续。  
   
- 编辑并继续自动调用时在中断模式下，进行更改，然后选择调试器执行命令，如**继续**，**步骤**，或**设置下一语句**，或评估调试器窗口中的函数。  
+**若要启用或禁用编辑并继续：**  
+   
+1. 如果您在调试会话中，停止调试 (**调试** > **停止调试**或**Shift**+**F5**).
+   
+1. 在中**工具** > **选项**(或**调试** > **选项**) >**调试** > **常规**，选中或清除**启用编辑并继续**复选框。  
   
-> [!NOTE]
->  调试优化代码、 混合的本机/托管代码或 SQL Server 公共语言运行时 (CLR) 集成代码时不支持编辑并继续。 其他不支持的方案的信息，请参阅[支持的代码更改 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。 如果你尝试在这些情况下，不支持一个对话框，其中说明编辑并继续调试器显示之一应用代码更改。  
-  
-### <a name="to-invoke-edit-and-continue-automatically"></a>若要调用编辑并继续自动  
-  
-1.  在中断模式下，对你的源代码中进行更改。  
-  
-2.  从**调试**菜单上，单击**继续**，**步骤**，或**设置下一语句**或评估调试器窗口中的函数。  
-  
-     编译新代码，并继续新的代码进行调试。 编辑并继续不支持某些更改。 有关详细信息，请参阅[支持的代码更改 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)。  
-  
-### <a name="to-enabledisable-edit-and-continue"></a>启用/禁用“编辑并继续”  
-  
-1.  在 **“工具”** 菜单上，单击 **“选项”**。  
-  
-2.  在**选项**对话框框中，展开**调试**节点，然后选择**编辑并继续**。  
-  
-3.  在**选项**对话框**编辑并继续**页上，选中或清除**启用编辑并继续**复选框。  
-  
-     当你重新启动调试会话时，该设置将生效。  
-  
-## <a name="see-also"></a>请参阅  
- [编辑并继续 (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [受支持的代码更改 （C# 和 Visual Basic）](../debugger/supported-code-changes-csharp.md)   
+启动或重新启动调试会话时，该设置将生效。  
+
+**若要使用编辑并继续：**  
+   
+1. 在中断模式中调试时对源代码进行更改。  
+   
+1. 从**调试**菜单上，单击**继续**，**步骤**，或者**设置下一语句**，或计算在调试器窗口函数。  
+   
+   调试时，将继续使用新的、 已编译代码。 
+
+编辑并继续不支持某些类型的代码更改。 有关详细信息，请参阅[支持的代码更改 (C#和 Visual Basic)](../debugger/supported-code-changes-csharp.md)。   

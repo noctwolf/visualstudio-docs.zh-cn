@@ -17,12 +17,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b4ad3742befbf564c7924c520fb560e69037004c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848483"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>How to: Disable the Hosting Process
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49281393"
   
 ### <a name="to-disable-the-hosting-process"></a>禁用托管进程  
   
-1.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开可执行项目。 不会生成可执行文件的项目（例如，类库或服务项目）没有此选项。  
+1. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中打开可执行项目。 不会生成可执行文件的项目（例如，类库或服务项目）没有此选项。  
   
-2.  在“项目”菜单上，单击“属性”。  
+2. 在“项目”菜单上，单击“属性”。  
   
-3.  单击“调试”选项卡。  
+3. 单击“调试”选项卡。  
   
-4.  清除“启用 Visual Studio 托管进程”复选框。  
+4. 清除“启用 Visual Studio 托管进程”复选框。  
   
- 禁用托管进程时，几种调试功能会不可用或性能下降。 有关详细信息，请参阅[调试和承载进程](../debugger/debugging-and-the-hosting-process.md)。  
+   禁用托管进程时，几种调试功能会不可用或性能下降。 有关详细信息，请参阅[调试和承载进程](../debugger/debugging-and-the-hosting-process.md)。  
   
- 一般情况下，禁用托管进程时：  
+   一般情况下，禁用托管进程时：  
   
 -   开始调试 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 应用程序需要的时间会增长。  
   

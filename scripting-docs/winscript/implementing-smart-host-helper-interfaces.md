@@ -14,29 +14,29 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba571f6ad66855c44902e06467889e2cae5b4555
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 016e2a0641772992c9c3e6f423e105c42ae20ff1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24571517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909817"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>实现智能宿主帮助程序接口
 [IDebugDocumentHelper 接口](../winscript/reference/idebugdocumenthelper-interface.md)接口极大简化了为活动调试创建智能主机的任务，因为它提供了智能主机所需的许多接口的实现。  
   
  如果为使用 `IDebugDocumentHelper` 的智能主机，主机应用程序必须执行下列三种操作：  
   
-1.  `CoCreate` 进程调试管理器，并使用 [IProcessDebugManager 接口](../winscript/reference/iprocessdebugmanager-interface.md) 接口将应用程序添加到可调试的应用程序列表中。  
+1. `CoCreate` 进程调试管理器，并使用 [IProcessDebugManager 接口](../winscript/reference/iprocessdebugmanager-interface.md) 接口将应用程序添加到可调试的应用程序列表中。  
   
-2.  使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法创建每个脚本对象的调试文档帮助程序。 确保已定义文档名称、父文档、文本和脚本块。  
+2. 使用 [IProcessDebugManager::CreateDebugDocumentHelper](../winscript/reference/iprocessdebugmanager-createdebugdocumenthelper.md) 方法创建每个脚本对象的调试文档帮助程序。 确保已定义文档名称、父文档、文本和脚本块。  
   
-3.  在实现 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口（活动脚本所需的接口）的对象上实现 [IActiveScriptSiteDebug 接口](../winscript/reference/iactivescriptsitedebug-interface.md)接口。 `IActiveScriptSiteDebug` 接口上唯一不常用的方法只需委托给帮助程序。  
+3. 在实现 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 接口（活动脚本所需的接口）的对象上实现 [IActiveScriptSiteDebug 接口](../winscript/reference/iactivescriptsitedebug-interface.md)接口。 `IActiveScriptSiteDebug` 接口上唯一不常用的方法只需委托给帮助程序。  
   
- 如果主机需要进一步控制语法颜色、文档上下文创建和其他扩展功能，则该主机可以实现 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md)接口（可选）。  
+   如果主机需要进一步控制语法颜色、文档上下文创建和其他扩展功能，则该主机可以实现 [IDebugDocumentHost 接口](../winscript/reference/idebugdocumenthost-interface.md)接口（可选）。  
   
- 智能主机帮助程序的主要限制是，它只能处理添加后其内容更改或压缩的文档（尽管文档可以扩展）。 但是，对于许多智能主机来说，它提供的功能正好是所需要的。  
+   智能主机帮助程序的主要限制是，它只能处理添加后其内容更改或压缩的文档（尽管文档可以扩展）。 但是，对于许多智能主机来说，它提供的功能正好是所需要的。  
   
- 以下部分将更详细介绍每个步骤。  
+   以下部分将更详细介绍每个步骤。  
   
 ## <a name="create-an-application-object"></a>创建应用程序对象  
  在使用智能主机帮助程序之前，需要创建 [IDebugApplication 接口](../winscript/reference/idebugapplication-interface.md)对象以在调试程序中表示你的应用程序。  
@@ -105,5 +105,5 @@ pddh->CreateDebugDocumentContext(ulStartPos + uCharacterOffset, cChars, &pddcNew
   
 -   为文档提供文件系统中的路径名称。 某些调试 UI 使用它来允许用户编辑和保存对文档所做的更改。 调用 [IDebugDocumentHost::NotifyChanged](../winscript/reference/idebugdocumenthost-notifychanged.md)，以在文档保存后通知主机。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [活动脚本调试概述](../winscript/active-script-debugging-overview.md)

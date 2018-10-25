@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6c0bffb2ce6db081a0c8ddf82c6b603a5dddd9
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: dd42bc89eb853a5d65f8e15eab3fdf2cd054f278
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927796"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 与应用程序的文件扩展名关联通常具有首选的操作，当用户双击文件时发生。 此首选的操作链接到动词，例如打开对应于该操作。  
@@ -28,17 +28,17 @@ ms.locfileid: "46495253"
 ## <a name="register-standard-verbs"></a>注册标准谓词  
  操作系统识别出以下标准谓词：  
   
--   打开  
+- 打开  
   
--   Edit  
+- Edit  
   
--   播放  
+- 播放  
   
--   的  
+- 的  
   
--   预览  
+- 预览  
   
- 只要有可能，注册标准谓词。 最常见的选择是动词 Open。 仅当没有打开的文件和编辑文件之间有明显差异，请使用编辑谓词。 例如，打开 *.htm*文件将其显示在浏览器中，而编辑 *.htm*文件启动 HTML 编辑器。 标准谓词已本地化的操作系统的区域设置。  
+  只要有可能，注册标准谓词。 最常见的选择是动词 Open。 仅当没有打开的文件和编辑文件之间有明显差异，请使用编辑谓词。 例如，打开 *.htm*文件将其显示在浏览器中，而编辑 *.htm*文件启动 HTML 编辑器。 标准谓词已本地化的操作系统的区域设置。  
   
 > [!NOTE]
 >  注册标准谓词时, 未设置的默认值为打开的注册表。 默认值包含在菜单上的显示字符串。 操作系统提供标准谓词此字符串。  

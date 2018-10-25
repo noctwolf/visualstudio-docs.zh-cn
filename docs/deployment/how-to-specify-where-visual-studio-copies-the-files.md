@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b2a4d642bc551127f34fe7a64ec01665b7ace70
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 1cc4e6b3ad623497f50f60b5eb3c0d7c8b00b1cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39078623"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869582"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何： 指定 Visual Studio 复制文件的位置
 使用 ClickOnce 发布应用程序时，“`Publish Location`”属性指定放置应用程序文件和清单的位置。 这可以是文件路径或 FTP 服务器的路径。  
@@ -34,15 +34,15 @@ ms.locfileid: "39078623"
   
 ### <a name="to-specify-a-publishing-location"></a>指定发布位置  
   
-1.  在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
+1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。  
   
-2.  单击**发布**选项卡。  
+2. 单击**发布**选项卡。  
   
-3.  在中**发布位置**字段中，使用以下格式之一输入发布位置：  
+3. 在中**发布位置**字段中，使用以下格式之一输入发布位置：  
   
-    -   若要发布到文件共享或磁盘路径，通过使用 UNC 路径，或者输入的路径 (*\\\Server\ApplicationName*) 或文件路径 (*C:\Deploy\ApplicationName*)。  
+   - 若要发布到文件共享或磁盘路径，通过使用 UNC 路径，或者输入的路径 (*\\\Server\ApplicationName*) 或文件路径 (*C:\Deploy\ApplicationName*)。  
   
-    -   若要将发布到 FTP 服务器，输入在路径中使用格式*ftp://ftp.microsoft.com/\<应用程序名称 >*。  
+   - 若要将发布到 FTP 服务器，输入在路径中使用格式<em>ftp://ftp.microsoft.com/\<应用程序名称 ></em>。  
   
      请注意，文本必须位于**发布位置**框中使浏览 (**...**) 按钮正常工作。  
   

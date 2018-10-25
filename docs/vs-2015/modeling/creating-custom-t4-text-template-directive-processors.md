@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: d4e0b6b325f2418c031f00defc0f28bd2fc6b3f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176925"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852735"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ ms.locfileid: "49176925"
   
  最重要`DirectiveProcessor`必须实现的方法如下所示。  
   
--   `bool IsDirectiveSupported(string directiveName)` -返回`true`如果指令处理器可以处理通过命名指令。  
+- `bool IsDirectiveSupported(string directiveName)` -返回`true`如果指令处理器可以处理通过命名指令。  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` 模板引擎调用此方法对每个模板中的指令。 您的处理器应该保存结果。  
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` 模板引擎调用此方法对每个模板中的指令。 您的处理器应该保存结果。  
   
- 之后所有调用了 Processdirective 的模板化引擎将调用这些方法：  
+  之后所有调用了 Processdirective 的模板化引擎将调用这些方法：  
   
--   `string[] GetReferencesForProcessingRun()` -返回的模板代码需要的程序集的名称。  
+- `string[] GetReferencesForProcessingRun()` -返回的模板代码需要的程序集的名称。  
   
--   `string[] GetImportsForProcessingRun()` -返回可用的命名空间中的模板代码。  
+- `string[] GetImportsForProcessingRun()` -返回可用的命名空间中的模板代码。  
   
--   `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。  
+- `string GetClassCodeForProcessingRun()` -返回代码的方法、 属性和模板代码可以使用其他声明。 若要执行此操作的最简单方法是构建包含 C# 或 Visual Basic 代码的字符串。 若要使能够从使用任何 CLR 语言的模板调用指令处理器，您可以将语句构造为 CodeDom 树，然后返回序列化该模板使用的语言中的树的结果。  
   
--   有关详细信息，请参阅[演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
+- 有关详细信息，请参阅[演练： 创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md)  

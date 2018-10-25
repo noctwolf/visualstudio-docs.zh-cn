@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 36cbcf01a7e070ab88230e0cd0165db935944a59
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 3afb988b226ccf62fae92ab02d8380d20b19605b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326740"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853423"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>调入 SharePoint 对象模型
   在 Visual Studio 中创建 SharePoint 工具扩展时，可能需要调用 SharePoint Api 来执行特定任务。 例如，如果创建 SharePoint 项目自定义部署步骤时，您可能需要调用 SharePoint Api 来执行一些任务来部署解决方案。  
@@ -37,11 +37,11 @@ ms.locfileid: "36326740"
   
  但是，客户端对象模型在 SharePoint 工具扩展的上下文中有两个缺点：  
   
--   客户端对象模型提供了服务器对象模型的一个子集。 如果必须使用不在客户端对象模型中公开的 SharePoint 功能，则必须使用服务器对象模型。  
+- 客户端对象模型提供了服务器对象模型的一个子集。 如果必须使用不在客户端对象模型中公开的 SharePoint 功能，则必须使用服务器对象模型。  
   
--   尽管 SharePoint 工具扩展中使用客户端对象模型应运行在大多数情况下，可能会遇到某些情况下，其中对客户端对象模型执行操作无法按预期工作。 客户端对象模型用于在客户端应用程序中用于调入 SharePoint 站点上的远程服务器或场。 Visual Studio 中的 SharePoint 工具只使用在开发计算机上的本地 SharePoint 安装。 因此，在 SharePoint 工具扩展中使用客户端对象模型，可调用到 SharePoint 站点是不如何客户端对象模型专门设计用来在本地计算机上。  
+- 尽管 SharePoint 工具扩展中使用客户端对象模型应运行在大多数情况下，可能会遇到某些情况下，其中对客户端对象模型执行操作无法按预期工作。 客户端对象模型用于在客户端应用程序中用于调入 SharePoint 站点上的远程服务器或场。 Visual Studio 中的 SharePoint 工具只使用在开发计算机上的本地 SharePoint 安装。 因此，在 SharePoint 工具扩展中使用客户端对象模型，可调用到 SharePoint 站点是不如何客户端对象模型专门设计用来在本地计算机上。  
   
- 有关演示如何使用客户端对象模型中的 Visual Studio 中的 SharePoint 工具扩展的演练，请参阅[演练： 调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
+  有关演示如何使用客户端对象模型中的 Visual Studio 中的 SharePoint 工具扩展的演练，请参阅[演练： 调入 SharePoint 客户端对象模型中的服务器资源管理器扩展](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
 ## <a name="use-the-server-object-model-in-extension-projects"></a>在扩展项目中使用服务器对象模型
  服务器对象模型是客户端对象模型的超集。 当您使用服务器对象模型时，可以使用所有功能，[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]以编程方式公开。  

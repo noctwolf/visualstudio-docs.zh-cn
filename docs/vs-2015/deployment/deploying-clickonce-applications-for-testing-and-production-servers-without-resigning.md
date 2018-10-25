@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 146a525394b51f71f470f1246610a855d968dddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2b2a26e847a23e8a4037958532889626a931341c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180214"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840033"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>在不重新签名的情况下为测试服务器和生产服务器部署 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ ms.locfileid: "49180214"
   
  下面是两个示例来说明这一点。 在第一个示例中，发布 ClickOnce 应用程序不具有`deploymentProvider`标记，，并要求用户从 http://www.adatum.com/MyApplication/ 。 如果你决定想要发布的应用程序的下一个更新 http://subdomain.adatum.com/MyApplication/，将具有无法驻留在的部署清单中表示此 http://www.adatum.com/MyApplication/。 您可以执行两个操作之一：  
   
--   告知用户卸载以前的版本，并从新位置中安装新版本。  
+- 告知用户卸载以前的版本，并从新位置中安装新版本。  
   
--   包括在更新 http://www.adatum.com/MyApplication/，其中包含 `deploymentProvider` 指向 http://www.adatum.com/MyApplication/ 。 然后，释放更高版本与另一个更新 `deploymentProvider` 指向 http://subdomain.adatum.com/MyApplication/ 。  
+- 包括在更新 http://www.adatum.com/MyApplication/，其中包含 `deploymentProvider` 指向 http://www.adatum.com/MyApplication/ 。 然后，释放更高版本与另一个更新 `deploymentProvider` 指向 http://subdomain.adatum.com/MyApplication/ 。  
   
- 在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`已下载到客户端，您将不能用于更新，直到发布具有应用程序的版本路径重定向`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
+  在第二个示例中，发布 ClickOnce 应用程序指定`deploymentProvider`，然后决定将其删除。 一次新版本而无需`deploymentProvider`已下载到客户端，您将不能用于更新，直到发布具有应用程序的版本路径重定向`deploymentProvider`还原。 与第一个示例一样`deploymentProvider`最初必须指向当前的更新位置，而不是新位置。 在此情况下，如果你尝试插入`deploymentProvider`，是指 http://subdomain.adatum.com/MyApplication/，则下一次更新将失败。  
   
 ## <a name="creating-a-deployment"></a>创建部署  
  有关创建可从不同的网络位置部署的部署的分步指导，请参阅[演练： 手动部署 ClickOnce 应用程序，不会不需要重新签名并且该保留品牌信息](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  

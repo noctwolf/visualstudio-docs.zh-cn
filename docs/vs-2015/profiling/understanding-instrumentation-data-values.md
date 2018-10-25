@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61e942a1c3cb43bcd2d3d7ef813ed4bd98267a1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75a1fddc6195805b786f4ad343c1c8917129dcdb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298878"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949224"
 ---
 # <a name="understanding-instrumentation-data-values"></a>了解检测数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,37 +31,37 @@ ms.locfileid: "49298878"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 检测方法会在所分析二进制文件中的目标函数开头和末尾注入代码，并且是在这些函数每次调用到其他函数之前和之后注入。 注入的代码会记录以下信息：  
+  检测方法会在所分析二进制文件中的目标函数开头和末尾注入代码，并且是在这些函数每次调用到其他函数之前和之后注入。 注入的代码会记录以下信息：  
   
--   此收集事件和前一个事件之间的间隔。  
+- 此收集事件和前一个事件之间的间隔。  
   
--   操作系统是否在此间隔中执行了操作。 例如，操作系统可能会对磁盘进行读取或写入，或是在目标线程与其他进程中的其他线程之间切换。  
+- 操作系统是否在此间隔中执行了操作。 例如，操作系统可能会对磁盘进行读取或写入，或是在目标线程与其他进程中的其他线程之间切换。  
   
- **要求**  
+  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 对于每个间隔，探查器分析会在间隔结束时重新构造已存在的调用堆栈。 调用堆栈是某个时间点在处理器中处于活动状态的函数的列表。 只有一个函数（当前函数）在执行代码；其他函数是在调用当前函数时产生的函数调用链（调用堆栈）。  
+  对于每个间隔，探查器分析会在间隔结束时重新构造已存在的调用堆栈。 调用堆栈是某个时间点在处理器中处于活动状态的函数的列表。 只有一个函数（当前函数）在执行代码；其他函数是在调用当前函数时产生的函数调用链（调用堆栈）。  
   
- 对于记录间隔时调用堆栈中的每个函数，探查器分析会将间隔添加到函数的四个数据值中的一个或多个。 分析基于两个条件将间隔添加到函数的数据值：  
+  对于记录间隔时调用堆栈中的每个函数，探查器分析会将间隔添加到函数的四个数据值中的一个或多个。 分析基于两个条件将间隔添加到函数的数据值：  
   
--   间隔是在函数的代码中还是在子函数（函数调用的函数）中出现。  
+- 间隔是在函数的代码中还是在子函数（函数调用的函数）中出现。  
   
--   在间隔中是否发生了操作系统事件。  
+- 在间隔中是否发生了操作系统事件。  
   
- 函数或数据范围的间隔的数据值称为已用非独占、已用独占、应用程序非独占和应用程序独占：  
+  函数或数据范围的间隔的数据值称为已用非独占、已用独占、应用程序非独占和应用程序独占：  
   
--   函数的所有间隔都会添加到已用非独占数据值。  
+- 函数的所有间隔都会添加到已用非独占数据值。  
   
--   如果间隔在函数的代码中，而不在子函数中出现，则间隔会添加到函数的已用独占数据值。  
+- 如果间隔在函数的代码中，而不在子函数中出现，则间隔会添加到函数的已用独占数据值。  
   
--   如果在间隔中未发生操作系统事件，则间隔会添加到应用程序非独占数据值。  
+- 如果在间隔中未发生操作系统事件，则间隔会添加到应用程序非独占数据值。  
   
--   如果在间隔中未发生操作系统事件，并且此间隔出现在函数代码的直接执行中（即，未出现在子函数中），则间隔会添加到应用程序独占数据值。  
+- 如果在间隔中未发生操作系统事件，并且此间隔出现在函数代码的直接执行中（即，未出现在子函数中），则间隔会添加到应用程序独占数据值。  
   
- 分析工具报告会汇总分析会话本身中的函数以及会话的进程、线程和二进制文件的总计值。  
+  分析工具报告会汇总分析会话本身中的函数以及会话的进程、线程和二进制文件的总计值。  
   
 ## <a name="elapsed-inclusive-values"></a>已用非独占值  
  执行某个函数及其子函数所用的总时间。  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_signature |Microsoft 文档'
+title: 'Idiasymbol:: Get_signature |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f6fa73a5587f9a344f6caed8f9c6ce6f4b32892
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0ab1af02478673de77f7a0f27965e0841bedec0b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31469251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888111"
 ---
 # <a name="idiasymbolgetsignature"></a>IDiaSymbol::get_signature
 检索符号的签名值。  
@@ -40,7 +40,7 @@ HRESULT get_signature (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

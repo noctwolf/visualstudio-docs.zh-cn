@@ -14,29 +14,29 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f07c169b6c282b68c96c2e1c9be821ef4e00700
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a93caaf861c5118bf95651efbf41fcee1ef817e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276030"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846052"
 ---
 # <a name="memory-usage"></a>内存使用率
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 使用调试器集成的 **内存使用率** 诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照  。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
   
--   你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
+- 你可以分析单个快照以了解有关内存使用的对象类型的相对影响，并在你的应用中查找低效使用内存的代码。  
   
--   你还可以比较 (diff) 一个应用的两个快照，以便在你的代码中查找导致内存使用随时间增加的区域。  
+- 你还可以比较 (diff) 一个应用的两个快照，以便在你的代码中查找导致内存使用随时间增加的区域。  
   
- 下图显示 Visual Studio 2015 Update 1 中的“诊断工具”  窗口：  
+  下图显示 Visual Studio 2015 Update 1 中的“诊断工具”  窗口：  
   
- ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
- 虽然可以随时在 **内存使用率** 工具中收集内存快照，不过可以使用 Visual Studio 调试器在调查性能问题时控制应用程序的执行方式。 断点设置、步进、全部中断和其他调试器操作可以帮助将性能调查集中在最相关的代码路径上。 在应用运行期间执行这些操作可以从代码中消除不感兴趣的噪声，并可以显著减少用于诊断问题所花费的时间量。  
+  虽然可以随时在 **内存使用率** 工具中收集内存快照，不过可以使用 Visual Studio 调试器在调查性能问题时控制应用程序的执行方式。 断点设置、步进、全部中断和其他调试器操作可以帮助将性能调查集中在最相关的代码路径上。 在应用运行期间执行这些操作可以从代码中消除不感兴趣的噪声，并可以显著减少用于诊断问题所花费的时间量。  
   
- 还可以在调试器外部使用内存工具。 请参阅 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
+  还可以在调试器外部使用内存工具。 请参阅 [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0)。  
   
 > [!NOTE]
 >  **自定义分配器支持** 本机内存探查器的工作原理是在运行时收集 [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) 分配事件数据。  CRT 和 Windows SDK 中的分配器在源级别上注释，因此可以捕获其分配数据。  如果你正在编写你自己的分配器，则返回一个指向新分配的堆内存的任何函数可用 [__declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)（分配器）进行修饰，如此 myMalloc 示例所示：  
@@ -57,29 +57,29 @@ ms.locfileid: "49276030"
  ![拍摄快照](../profiling/media/dbgdiag-mem-mixedtoolbar-takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")  
   
 > [!TIP]
->  -   若要为进行内存比较而创建基线，请考虑在调试会话开始时拍摄快照。  
-> -   因为在应用经常分配并取消分配内存时捕获感兴趣的操作的内存配置文件十分具有挑战性，所以请在操作开始和结束时设置断点，或逐步执行操作以查找内存变化的确切点。  
+> - 若要为进行内存比较而创建基线，请考虑在调试会话开始时拍摄快照。  
+>   -   因为在应用经常分配并取消分配内存时捕获感兴趣的操作的内存配置文件十分具有挑战性，所以请在操作开始和结束时设置断点，或逐步执行操作以查找内存变化的确切点。  
   
 ## <a name="viewing-memory-snapshot-details"></a>查看内存快照详细信息  
  内存使用率摘要表中的行会列出在调试会话期间拍摄的快照。  
   
  行的列取决于在项目属性中选择的调试模式：.NET、本机或混合（.NET 和本机）。  
   
--   **“托管对象”** 和 **“本机分配”** 列显示拍摄快照时 .NET 和本机内存中的对象数。  
+- **“托管对象”** 和 **“本机分配”** 列显示拍摄快照时 .NET 和本机内存中的对象数。  
   
--   **“托管堆大小”** 和 **“本机堆大小”** 列显示 .NET 和本机堆中的字节数  
+- **“托管堆大小”** 和 **“本机堆大小”** 列显示 .NET 和本机堆中的字节数  
   
--   拍摄多个快照时，摘要表的单元格包含行快照与前一个快照之间的值变化。  
+- 拍摄多个快照时，摘要表的单元格包含行快照与前一个快照之间的值变化。  
   
-     ![内存摘要表单元格](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
+   ![内存摘要表单元格](../profiling/media/dbgdiag-mem-summarytablecell.png "DBGDIAG_MEM_SummaryTableCell")  
   
- **查看详细信息报表：**  
+  **查看详细信息报表：**  
   
--   若要仅查看所选快照的详细信息，请选择当前链接。  
+- 若要仅查看所选快照的详细信息，请选择当前链接。  
   
--   若要查看当前快照与前一个快照之间的差异的详细信息，请选择更改链接。  
+- 若要查看当前快照与前一个快照之间的差异的详细信息，请选择更改链接。  
   
- 报告会出现在单独的窗口中。  
+  报告会出现在单独的窗口中。  
   
 ## <a name="memory-usage-details-reports"></a>内存使用率详细信息报告  
   
@@ -121,17 +121,17 @@ ms.locfileid: "49276030"
   
 ### <a name="change-diff-reports"></a>更改（差异）报告  
   
--   在 **“诊断工具”** 窗口上的 **“内存使用率”** 选项卡的摘要表单元格中选择更改链接。  
+- 在 **“诊断工具”** 窗口上的 **“内存使用率”** 选项卡的摘要表单元格中选择更改链接。  
   
-     ![选择更改（差异）报告](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![选择更改（差异）报告](../profiling/media/dbgdiag-mem-choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   在托管或本机报告的 **“与之比较的对象”** 列表中选择快照。  
+- 在托管或本机报告的 **“与之比较的对象”** 列表中选择快照。  
   
-     ![从“比较对象”列表中选择一个快照](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![从“比较对象”列表中选择一个快照](../profiling/media/dbgdiag-mem-choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- 更改报告会向基本报告添加一些列（使用 **“(差异)”** 进行标记），这些列显示基本快照值与比较快照之间的差异。 下面是本机类型视图差异报告的可能外观：  
+  更改报告会向基本报告添加一些列（使用 **“(差异)”** 进行标记），这些列显示基本快照值与比较快照之间的差异。 下面是本机类型视图差异报告的可能外观：  
   
- ![本机类型差异视图](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![本机类型差异视图](../profiling/media/dbgdiag-mem-native-typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>博客和视频  
  [Visual Studio 2015 中的“诊断工具”调试器窗口](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  

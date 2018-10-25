@@ -26,12 +26,12 @@ caps.latest.revision: 41
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e2da6004598d04ca91cea6e29e07ae9fcc1fb28e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: acae33e015b158c36b5e8c27b5b88131c863fc9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273918"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949885"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,16 +42,16 @@ ms.locfileid: "49273918"
   
 ### <a name="to-display-a-datatip-in-break-mode-only"></a>显示数据提示（只在中断模式下）  
   
-1.  在源窗口中，将鼠标指针置于当前范围内的任何变量上。  
+1. 在源窗口中，将鼠标指针置于当前范围内的任何变量上。  
   
-     屏幕上显示数据提示。  
+    屏幕上显示数据提示。  
   
-    > [!NOTE]
-    >  始终在挂起执行的上下文中（而不是在光标的悬停位置）计算数据提示。 如果将鼠标指针悬停在另一函数中的变量的上方（该变量与当前上下文中的某个变量同名），则另一函数中该变量的值将显示为当前上下文中的该变量的值。  
+   > [!NOTE]
+   >  始终在挂起执行的上下文中（而不是在光标的悬停位置）计算数据提示。 如果将鼠标指针悬停在另一函数中的变量的上方（该变量与当前上下文中的某个变量同名），则另一函数中该变量的值将显示为当前上下文中的该变量的值。  
   
-2.  移开鼠标指针时，数据提示会消失。 若要固定数据提示以便它保持打开状态，请单击**固定到源**图标，或  
+2. 移开鼠标指针时，数据提示会消失。 若要固定数据提示以便它保持打开状态，请单击**固定到源**图标，或  
   
-    -   右键单击一个变量，然后单击**固定到源**。  
+   - 右键单击一个变量，然后单击**固定到源**。  
   
      在调试会话结束时，固定的数据提示将关闭。  
   

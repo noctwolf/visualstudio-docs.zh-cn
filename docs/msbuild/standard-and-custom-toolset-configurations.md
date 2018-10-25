@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5161f7b4878c6ef381dc26aa4689c4fe7b7cb961
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 2e9f851734a4066e1f6ab7956d124478e0cde76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152082"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815476"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和工具的引用。 MSBuild 包括标准工具集，但也可以创建自定义工具集。 有关如何指定工具集的信息，请参阅[工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
@@ -27,7 +27,7 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
  MSBuild 15.0 内附有以下标准工具集：  
   
 |ToolsVersion|工具集路径（如 MSBuildToolsPath 或 MSBuildBinPath 生成属性中所指定）|  
-|------------------|--------------------------------------------------------------------------------------------|  
+|------------------| - |  
 |2.0|\<Windows installation path\Microsoft.Net\Framework\v2.0.50727\\\|  
 |3.5|\<Windows installation path>\Microsoft.NET\Framework\v3.5\\|  
 |4.0|\<Windows installation path>\Microsoft.NET\Framework\v4.0.30319\\|  
@@ -39,9 +39,9 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
   
 |注册表项|项名称|字符串键值|  
 |------------------|--------------|----------------------|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\  |MSBuildToolsPath|.NET Framework 2.0 安装路径|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\  |MSBuildToolsPath|.NET Framework 3.5 安装路径|  
-|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\  |MSBuildToolsPath|.NET Framework 4 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\2.0\\ |MSBuildToolsPath|.NET Framework 2.0 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\3.5\\ |MSBuildToolsPath|.NET Framework 3.5 安装路径|  
+|\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ MSBuild\ToolsVersions\4.0\\ |MSBuildToolsPath|.NET Framework 4 安装路径|  
   
 ### <a name="sub-toolsets"></a>子工具集  
  如果上表中的注册表项有一个子项，MSBuild 会使用它确定子工具集的路径是否有可能重写父工具集中的路径。 下面是一个示例子项：  
@@ -91,11 +91,11 @@ MSBuild 工具集包含对可用来生成应用程序项目的任务、目标和
   
  下列属性特定于项目中所用的 `ToolsVersion` 的值：  
   
--   **$(MSBuildBinPath)** 设置为 `ToolsPath` 值，该值在定义 `ToolsVersion` 的注册表或配置文件中指定。 注册表或配置文件中的 `$(MSBuildToolsPath)` 设置指定核心任务和目标的位置。 在项目文件中，此值映射到 $(MSBuildBinPath) 属性和 $(MSBuildToolsPath) 属性。  
+- **$(MSBuildBinPath)** 设置为 `ToolsPath` 值，该值在定义 `ToolsVersion` 的注册表或配置文件中指定。 注册表或配置文件中的 `$(MSBuildToolsPath)` 设置指定核心任务和目标的位置。 在项目文件中，此值映射到 $(MSBuildBinPath) 属性和 $(MSBuildToolsPath) 属性。  
   
--   `$(MSBuildToolsPath)` 是一个由在配置文件中指定的 MSBuildToolsPath 属性提供的保留属性。 （此属性取代了 `$(MSBuildBinPath)`。 但是，`$(MSBuildBinPath)` 的目的是实现兼容性。）自定义工具集必须定义 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同时定义二者，除非它们具有相同的值。  
+- `$(MSBuildToolsPath)` 是一个由在配置文件中指定的 MSBuildToolsPath 属性提供的保留属性。 （此属性取代了 `$(MSBuildBinPath)`。 但是，`$(MSBuildBinPath)` 的目的是实现兼容性。）自定义工具集必须定义 `$(MSBuildToolsPath)` 或 `$(MSBuildBinPath)`，但不能同时定义二者，除非它们具有相同的值。  
   
- 还可以使用添加 MSBuildToolsPath 属性时所用的语法向配置文件添加特定于 ToolsVersion 的自定义属性。 如果要使这些自定义属性可在项目文件中使用，请使用与配置文件中指定的值相同的名称。 可以在配置文件中定义工具集但不能定义子工具集。  
+  还可以使用添加 MSBuildToolsPath 属性时所用的语法向配置文件添加特定于 ToolsVersion 的自定义属性。 如果要使这些自定义属性可在项目文件中使用，请使用与配置文件中指定的值相同的名称。 可以在配置文件中定义工具集但不能定义子工具集。  
   
 ## <a name="see-also"></a>请参阅  
  [工具集 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

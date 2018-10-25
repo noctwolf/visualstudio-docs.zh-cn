@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b632177ba941ad0e5ddb5700ae430573fd817d
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 0bce0be0f6c7953c44601edd090b1e1e7d3b6f6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758448"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832976"
 ---
 # <a name="delay-activity-designer"></a>Delay 活动设计器
 
@@ -38,7 +38,7 @@ ms.locfileid: "36758448"
 下表显示<xref:System.Activities.Statements.Delay>属性并说明它们如何使用在设计器中。 可以在属性网格中编辑这些属性，其中一些可以在工作流设计器图面上进行编辑。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 活动的友好名称。 默认值为 Delay。 尽管<xref:System.Activities.Activity.DisplayName%2A>值并非是严格要求，它是使用其中一个是最佳做法。|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|True|将工作流延迟的时长。 此属性在属性网格中设置。 键入 00:00:00 格式的文本 <xref:System.TimeSpan> 或 Visual Basic 表达式来指定时长。|
 

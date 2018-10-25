@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce17a44a6680288a31d80993a11d59eaa95f1a31
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 1d48f2a104505e6b6ea9942847d8cd4dd2f3e669
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670436"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900470"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>演练： 使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。  
@@ -70,41 +70,41 @@ ms.locfileid: "35670436"
   
 ### <a name="to-add-a-windows-form"></a>添加 Windows 窗体  
   
-1.  在“解决方案资源管理器”  中选择项目 **WinFormInput**。  
+1. 在“解决方案资源管理器”  中选择项目 **WinFormInput**。  
   
-2.  在  “项目”菜单上，单击“添加 Windows 窗体” 。  
+2. 在  “项目”菜单上，单击“添加 Windows 窗体” 。  
   
-3.  将窗体命名为 **GetInputString.vb** 或 **GetInputString.cs**，然后单击“添加” 。  
+3. 将窗体命名为 **GetInputString.vb** 或 **GetInputString.cs**，然后单击“添加” 。  
   
-     新窗体即在设计器中打开。  
+    新窗体即在设计器中打开。  
   
-4.  向窗体添加 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 。  
+4. 向窗体添加 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 。  
   
-5.  选择按钮，在“属性”  窗口找到属性“Text”  ，将文本更改为“OK” 。  
+5. 选择按钮，在“属性”  窗口找到属性“Text”  ，将文本更改为“OK” 。  
   
- 接下来，将代码添加到 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` 以收集用户的信息。  
+   接下来，将代码添加到 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` 以收集用户的信息。  
   
 ## <a name="display-the-windows-form-and-collecting-information"></a>显示 Windows 窗体和收集信息  
  创建 `GetInputString` Windows 窗体的一个实例并将其显示出来，然后将用户的信息写入工作表的一个单元格中。  
   
 #### <a name="to-display-the-form-and-collect-information"></a>显示窗体和收集信息  
   
-1.  右键单击“解决方案资源管理器”  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然后单击“查看代码” 。  
+1. 右键单击“解决方案资源管理器”  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然后单击“查看代码” 。  
   
-2.  在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件处理程序中，添加以下代码以声明窗体 `GetInputString` 的变量，然后显示窗体。  
+2. 在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件处理程序中，添加以下代码以声明窗体 `GetInputString` 的变量，然后显示窗体。  
   
-    > [!NOTE]  
-    >  在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+   > [!NOTE]  
+   >  在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅[如何： 在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  创建一个名为 `WriteStringToCell` 的将文本写入命名范围的方法。 此方法从窗体调用，用户输入传递到 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`单元格上的 **控件**。  
+3. 创建一个名为 `WriteStringToCell` 的将文本写入命名范围的方法。 此方法从窗体调用，用户输入传递到 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`单元格上的 **控件**。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+    [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+    [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- 接下来，将代码添加到窗体以处理按钮的 click 事件。  
+   接下来，将代码添加到窗体以处理按钮的 click 事件。  
   
 ## <a name="send-information-to-the-worksheet"></a>将信息发送到工作表  
   

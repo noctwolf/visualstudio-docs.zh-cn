@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49c1a38130b2182b18d5355181fabbf2703140a3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305547"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851681"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>演练：使用 Visual C# 或 Visual Basic 创建简单应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ ms.locfileid: "49305547"
   
 #### <a name="to-change-the-color-theme-of-the-ide"></a>更改 IDE 的颜色主题  
   
-1.  通过选择顶部的 **“选项”** 菜单打开 **选项** 对话框，然后选择 **选项...** 项。  
+1. 通过选择顶部的 **“选项”** 菜单打开 **选项** 对话框，然后选择 **选项...** 项。  
   
-     ![“工具”菜单上的“选项”命令](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")  
+    ![“工具”菜单上的“选项”命令](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE ToolsOptionsmenu")  
   
-2.  将 **“配色方案”** 更改为 **“深”**，然后单击 **“确定”**。  
+2. 将 **“配色方案”** 更改为 **“深”**，然后单击 **“确定”**。  
   
-     ![已选择深色主题](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE Darkthemeoptionsdlgbox")  
+    ![已选择深色主题](../ide/media/exploreide-darkthemeoptionsdlgbox.png "ExploreIDE Darkthemeoptionsdlgbox")  
   
- Visual Studio 的颜色应与下图相匹配：  
+   Visual Studio 的颜色应与下图相匹配：  
   
- ![应用了深色主题的 IDE](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
+   ![应用了深色主题的 IDE](../ide/media/exploreide-darkthemeide.png "ExploreIDE DarkThemeIDE")  
   
- 本演练剩余部分的图片使用的颜色主题是浅色主题。 有关自定义 IDE 的详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+   本演练剩余部分的图片使用的颜色主题是浅色主题。 有关自定义 IDE 的详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
 ##  <a name="BKMK_CreateApp"></a> 创建简单的应用程序  
   
@@ -81,67 +81,67 @@ ms.locfileid: "49305547"
   
 ##### <a name="to-create-the-wpf-project"></a>创建 WPF 项目  
   
-1.  创建新项目。 在菜单栏上，依次选择 **文件**、 **新建**和 **项目…**。  
+1. 创建新项目。 在菜单栏上，依次选择 **文件**、 **新建**和 **项目…**。  
   
-     ![在菜单栏上，依次选择“文件”、“新建”、“项目”](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
+    ![在菜单栏上，依次选择“文件”、“新建”、“项目”](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")  
   
-     你还可以在“快速启动”  框中输入 **新项目** ，完成相同的工作。  
+    你还可以在“快速启动”  框中输入 **新项目** ，完成相同的工作。  
   
-     ![在“快速启动”框中，指定新项目](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE QuickLaunchNewProjectsmall")  
+    ![在“快速启动”框中，指定新项目](../ide/media/exploreide-quicklaunchnewprojectsmall.png "ExploreIDE QuickLaunchNewProjectsmall")  
   
-2.  例如，通过在左窗格 **已安装**、 **模板**、 **Visual C#**、 **Windows**中进行选择，然后选择中间窗格中的 WPF 应用程序，以选择 Visual Basic 或 Visual C# WPF 应用程序模板。  命名新项目对话框底部的项目 HelloWPFApp。  
+2. 例如，通过在左窗格 **已安装**、 **模板**、 **Visual C#**、 **Windows**中进行选择，然后选择中间窗格中的 WPF 应用程序，以选择 Visual Basic 或 Visual C# WPF 应用程序模板。  命名新项目对话框底部的项目 HelloWPFApp。  
   
-     ![创建 Visual Basic WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectvb.png "ExploreIDE-NewProjectVB")  
+    ![创建 Visual Basic WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectvb.png "ExploreIDE-NewProjectVB")  
   
-     或  
+    或  
   
-     ![创建 Visual C# WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
+    ![创建 Visual C# WPF 项目，HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 **“解决方案资源管理器”** 中显示以下项：  
+   Visual Studio 将创建 HelloWPFApp 项目和解决方案， **解决方案资源管理器** 将显示各种文件。 WPF 设计器在拆分视图中显示 MainWindow.xaml 的设计视图和 XAML 视图。 您可以滑动拆分器，以显示任一视图的更多或更少部分。  您可以选择只查看可视化视图或 XAML 视图。 （有关详细信息，请参阅 [适用于 Windows 窗体开发人员的 WPF 设计器](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)）。 **“解决方案资源管理器”** 中显示以下项：  
   
- 图 5：项目项  
+   图 5：项目项  
   
- ![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+   ![已加载 HelloWPFApp 文件的解决方案资源管理器](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- 你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。 通过使用项目属性和属性页，可以显示和更改项目和解决方案的选项。  
+   你可以在创建项目后进行自定义。 通过使用 **属性** 窗口（ **视图** 菜单上），您可以显示和更改应用程序中的项目项、控件和其他项的选项。 通过使用项目属性和属性页，可以显示和更改项目和解决方案的选项。  
   
 ##### <a name="to-change-the-name-of-mainwindowxaml"></a>更改 MainWindow.xaml 的名称  
   
-1.  在下面的过程中，你将为 MainWindow 指定一个更具体的名称。 在 **“解决方案资源管理器”** 中，选择 MainWindow.xaml。 您应该会看到 **属性** 窗口，但如果您不这样做，请选择 **视图** 菜单和 **属性窗口** 项。 将 **“文件名称”** 属性更改为 `Greetings.xaml`。  
+1. 在下面的过程中，你将为 MainWindow 指定一个更具体的名称。 在 **“解决方案资源管理器”** 中，选择 MainWindow.xaml。 您应该会看到 **属性** 窗口，但如果您不这样做，请选择 **视图** 菜单和 **属性窗口** 项。 将 **“文件名称”** 属性更改为 `Greetings.xaml`。  
   
-     ![突出显示文件名的“属性”窗口](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE FilenameinPropertiesWindow")  
+    ![突出显示文件名的“属性”窗口](../ide/media/exploreide-filenameinpropertieswindow.png "ExploreIDE FilenameinPropertiesWindow")  
   
-     **解决方案资源管理器** 显示该文件的名称现在是 Greetings.xaml，并且如果您展开 MainWindow.xaml 的节点（通过将焦点放在该节点上并按右箭头键），您将看到 MainWindow.xaml.vb 或 MainWindow.xaml.cs 的名称现在是 Greetings.xaml.vb 或 Greetings.xaml.cs。 此代码文件被嵌套在 .xaml 文件节点下面，以显示它们的关系十分紧密。  
+    **解决方案资源管理器** 显示该文件的名称现在是 Greetings.xaml，并且如果您展开 MainWindow.xaml 的节点（通过将焦点放在该节点上并按右箭头键），您将看到 MainWindow.xaml.vb 或 MainWindow.xaml.cs 的名称现在是 Greetings.xaml.vb 或 Greetings.xaml.cs。 此代码文件被嵌套在 .xaml 文件节点下面，以显示它们的关系十分紧密。  
   
-    > [!WARNING]
-    >  此更改会导致错误，你在稍后的步骤中将了解如何调试和修复该错误。  
+   > [!WARNING]
+   >  此更改会导致错误，你在稍后的步骤中将了解如何调试和修复该错误。  
   
-2.  在 **解决方案资源管理器**上，在设计器视图中打开 Greetings.xaml（通过当该节点具有焦点时按下 Enter 键），并使用鼠标选择窗口的标题栏。  
+2. 在 **解决方案资源管理器**上，在设计器视图中打开 Greetings.xaml（通过当该节点具有焦点时按下 Enter 键），并使用鼠标选择窗口的标题栏。  
   
-3.  在 **“属性”** 窗口中，将 **“标题”** 属性的值更改为 `Greetings`。  
+3. 在 **“属性”** 窗口中，将 **“标题”** 属性的值更改为 `Greetings`。  
   
- MainWindow.xaml 的标题栏现在显示“Greetings”。  
+   MainWindow.xaml 的标题栏现在显示“Greetings”。  
   
 ### <a name="design-the-user-interface-ui"></a>设计用户界面 (UI)  
  我们会将三种类型的控件添加至此应用程序：一个 TextBlock 控件、两个 RadioButton 控件和一个 Button 控件。  
   
 ##### <a name="to-add-a-textblock-control"></a>添加 TextBlock 控件  
   
-1.  通过选择 **视图** 菜单和 **工具箱** 项打开 **工具箱** 窗口。  
+1. 通过选择 **视图** 菜单和 **工具箱** 项打开 **工具箱** 窗口。  
   
-2.  在 **“工具箱”** 中，搜索 TextBlock 控件。  
+2. 在 **“工具箱”** 中，搜索 TextBlock 控件。  
   
-     ![突出显示 TextBlock 控件的工具箱](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE-TextBlockToolbox")  
+    ![突出显示 TextBlock 控件的工具箱](../ide/media/exploreide-textblocktoolbox.png "ExploreIDE-TextBlockToolbox")  
   
-3.  通过选择 TextBlock 项并将其拖到设计图面的窗口中，将 TextBlock 控件添加到设计图面中。  把控件居中到窗口的顶部附近。  
+3. 通过选择 TextBlock 项并将其拖到设计图面的窗口中，将 TextBlock 控件添加到设计图面中。  把控件居中到窗口的顶部附近。  
   
- 你的窗口应与下图类似：  
+   你的窗口应与下图类似：  
   
- 图 7：具有 TextBlock 控件的 Greetings 窗口  
+   图 7：具有 TextBlock 控件的 Greetings 窗口  
   
- ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
+   ![Greetings 窗体上的 TextBlock 控件](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE GreetingswithTextblockonly")  
   
- XAML 标记应类似于以下示例：  
+   XAML 标记应类似于以下示例：  
   
 ```  
 <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
@@ -149,55 +149,55 @@ ms.locfileid: "49305547"
   
 ##### <a name="to-customize-the-text-in-the-text-block"></a>自定义文本块中的文本  
   
-1.  在 XAML 视图中，找到 TextBlock 的标记并更改 Text 属性：`Text=”Select a message option and then choose the Display button.”`  
+1. 在 XAML 视图中，找到 TextBlock 的标记并更改 Text 属性：`Text=”Select a message option and then choose the Display button.”`  
   
-2.  如果 TextBlock 为适应设计视图而不进行扩展，请放大 TextBlock 控件（使用边上的抓取手柄），以使其显示全部文本。  
+2. 如果 TextBlock 为适应设计视图而不进行扩展，请放大 TextBlock 控件（使用边上的抓取手柄），以使其显示全部文本。  
   
-3.  通过按 Ctrl-s 或使用 **文件** 菜单项保存所做的更改。  
+3. 通过按 Ctrl-s 或使用 **文件** 菜单项保存所做的更改。  
   
- 接下来，向窗体添加两个 [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) 控件。  
+   接下来，向窗体添加两个 [RadioButton](http://msdn.microsoft.com/library/6c9ba847-eab7-4bba-9c74-6b56ef72067b) 控件。  
   
 ##### <a name="to-add-radio-buttons"></a>添加单选按钮  
   
-1.  在 **“工具箱”** 中，搜索 RadioButton 控件。  
+1. 在 **“工具箱”** 中，搜索 RadioButton 控件。  
   
-     ![选定 RadioButton 控件的“工具箱”窗口](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE-RadioButtonToolbox")  
+    ![选定 RadioButton 控件的“工具箱”窗口](../ide/media/exploreide-radiobuttontoolbox.png "ExploreIDE-RadioButtonToolbox")  
   
-2.  通过选择单选按钮项并将其移动到设计界面的窗口中两次，并移动按钮（通过选择它们并使用箭头键），以便按钮并排显示在 TextBlock 控件下面，这样可以在设计界面上添加两个单选按钮控件。  
+2. 通过选择单选按钮项并将其移动到设计界面的窗口中两次，并移动按钮（通过选择它们并使用箭头键），以便按钮并排显示在 TextBlock 控件下面，这样可以在设计界面上添加两个单选按钮控件。  
   
-     你的窗口应如下所示：  
+    你的窗口应如下所示：  
   
-     图 8：Greetings 窗口中的 RadioButton。  
+    图 8：Greetings 窗口中的 RadioButton。  
   
-     ![包含文本块和两个单选按钮的 Greetings 窗体](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
+    ![包含文本块和两个单选按钮的 Greetings 窗体](../ide/media/exploreide-greetingswithradiobuttons.png "ExploreIDE Greetingswithradiobuttons")  
   
-3.  在左侧 RadioButton 控件的 **“属性”** 窗口中，将 **“名称”** 属性（位于 **“属性”** 窗口顶部）更改为 `RadioButton1`。  请确保您已选择了窗体中的单选按钮而不是背景网格；在名称字段下的属性窗口的类型字段应该显示单选按钮。  
+3. 在左侧 RadioButton 控件的 **“属性”** 窗口中，将 **“名称”** 属性（位于 **“属性”** 窗口顶部）更改为 `RadioButton1`。  请确保您已选择了窗体中的单选按钮而不是背景网格；在名称字段下的属性窗口的类型字段应该显示单选按钮。  
   
-4.  在右侧 RadioButton 控件的 **属性** 窗口中，把 **名称** 属性更改为 `RadioButton2`，然后通过按 Ctrl-s 或使用 **文件** 菜单项保存所做的更改。  请确保在更改和保存之前选择单选按钮。  
+4. 在右侧 RadioButton 控件的 **属性** 窗口中，把 **名称** 属性更改为 `RadioButton2`，然后通过按 Ctrl-s 或使用 **文件** 菜单项保存所做的更改。  请确保在更改和保存之前选择单选按钮。  
   
- 你现在可以为每个 RadioButton 控件添加显示文本。 以下程序将更新 RadioButton 控件的 **“内容”** 属性。  
+   你现在可以为每个 RadioButton 控件添加显示文本。 以下程序将更新 RadioButton 控件的 **“内容”** 属性。  
   
 ##### <a name="to-add-display-text-for-each-radio-button"></a>添加每个单选按钮的显示文本  
   
-1.  在设计界面上，通过在选择 RadioButton1 时按鼠标右键打开 RadioButton1 的快捷菜单，选择 **编辑文本**，然后输入 `Hello`。  
+1. 在设计界面上，通过在选择 RadioButton1 时按鼠标右键打开 RadioButton1 的快捷菜单，选择 **编辑文本**，然后输入 `Hello`。  
   
-2.  通过在选择 RadioButton2 时按鼠标右键打开 RadioButton2 的快捷菜单，选择 **编辑文本**，然后输入 `Goodbye`。  
+2. 通过在选择 RadioButton2 时按鼠标右键打开 RadioButton2 的快捷菜单，选择 **编辑文本**，然后输入 `Goodbye`。  
   
- 最后添加的 UI 元素是 [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) 控件。  
+   最后添加的 UI 元素是 [Button](http://msdn.microsoft.com/library/a9d8f5a5-c98c-463e-808a-5a4e63173098) 控件。  
   
 ##### <a name="to-add-the-button-control"></a>添加 Button 控件  
   
-1.  在 **工具箱**中，搜索 **按钮** 控件，然后通过选择按钮并将其拖到设计视图的窗体中，将其添加到 RadioButton 控件下方的设计界面中。  
+1. 在 **工具箱**中，搜索 **按钮** 控件，然后通过选择按钮并将其拖到设计视图的窗体中，将其添加到 RadioButton 控件下方的设计界面中。  
   
-2.  在 XAML 视图中，将 Button 控件的 **内容** 值从 `Content=”Button”` 更改为 `Content=”Display”`，然后保存更改（Ctrl-s 或使用 **文件** 菜单）。  
+2. 在 XAML 视图中，将 Button 控件的 **内容** 值从 `Content=”Button”` 更改为 `Content=”Display”`，然后保存更改（Ctrl-s 或使用 **文件** 菜单）。  
   
-     标记应与以下示例类似： `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
+    标记应与以下示例类似： `<Button Content="Display" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="215,204,0,0"/>`  
   
- 你的窗口应与下图类似。  
+   你的窗口应与下图类似。  
   
- 图 9：最后的 Greetings UI  
+   图 9：最后的 Greetings UI  
   
- ![包含控件标签的 Greetings 窗体](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
+   ![包含控件标签的 Greetings 窗体](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>向显示按钮添加代码  
  此应用程序运行时，用户首先选择单选按钮，再选择 **“显示”** 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 要创建此行为，需将代码添加至 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 Button_Click 事件。  
@@ -260,25 +260,25 @@ ms.locfileid: "49305547"
   
 ##### <a name="to-start-debugging-and-find-the-error"></a>开始调试和查找错误  
   
-1.  选择 **“调试”**-&gt; **“启动调试”**，启动调试器。  
+1. 选择 **“调试”**-&gt; **“启动调试”**，启动调试器。  
   
-     ![“调试”菜单上的“启动调试”命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+    ![“调试”菜单上的“启动调试”命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
-     此时将显示对话框，指示 IOException 已发生：无法定位资源“mainwindow.xaml”。  
+    此时将显示对话框，指示 IOException 已发生：无法定位资源“mainwindow.xaml”。  
   
-2.  选择 **“确定”** 按钮，然后停止调试器。  
+2. 选择 **“确定”** 按钮，然后停止调试器。  
   
-     ![“调试”菜单上的“停止调试”命令](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
+    ![“调试”菜单上的“停止调试”命令](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- 在本演练的开始部分中，我们将 Mainwindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 Mainwindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。  
+   在本演练的开始部分中，我们将 Mainwindow.xaml 重命名为 Greetings.xaml，但是该代码仍然引用 Mainwindow.xaml 作为应用程序的启动 URI，因此该项目无法启动。  
   
 ##### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI  
   
-1.  在 **解决方案资源管理器**中，通过选择文件并按下回车或通过双击它在 XAML 视图中打开 App.xaml 文件（在 C# 项目中）或 Application.xaml 文件（在 Visual Basic 项目中）（不能在设计视图中打开）。  
+1. 在 **解决方案资源管理器**中，通过选择文件并按下回车或通过双击它在 XAML 视图中打开 App.xaml 文件（在 C# 项目中）或 Application.xaml 文件（在 Visual Basic 项目中）（不能在设计视图中打开）。  
   
-2.  将 `StartupUri="MainWindow.xaml"` 更改为 `StartupUri="Greetings.xaml"`，然后按 Ctrl-s 保存更改。  
+2. 将 `StartupUri="MainWindow.xaml"` 更改为 `StartupUri="Greetings.xaml"`，然后按 Ctrl-s 保存更改。  
   
- 再次启动调试程序 （按 F5）。 你应看到应用程序的 Greetings 窗口。  
+   再次启动调试程序 （按 F5）。 你应看到应用程序的 Greetings 窗口。  
   
 ### <a name="to-debug-with-breakpoints"></a>使用断点进行调试  
  通过添加一些断点，可以在调试期间测试代码。 你可以通过在主菜单上选择 **调试** 添加断点，然后 **切换断点** ，或者通过在编辑器中想要添加断点的代码行旁边的左边距中单击添加断点。  
@@ -322,19 +322,19 @@ ms.locfileid: "49305547"
   
 ##### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>清理解决方案文件并生成发布版本  
   
-1.  在主菜单中，选择 **生成**，然后选择 **清理解决方案** ，删除上一生成过程中创建的中间文件和输出文件。  这不是必需的，但它会清理调试生成输出。  
+1. 在主菜单中，选择 **生成**，然后选择 **清理解决方案** ，删除上一生成过程中创建的中间文件和输出文件。  这不是必需的，但它会清理调试生成输出。  
   
-     ![“生成”菜单上的“清理解决方案”命令](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
+    ![“生成”菜单上的“清理解决方案”命令](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")  
   
-2.  使用工具栏（它当前表示“调试”）上的下拉列表控件把 HelloWPFApp 的生成配置从 **调试** 更改为 **发布** 。  
+2. 使用工具栏（它当前表示“调试”）上的下拉列表控件把 HelloWPFApp 的生成配置从 **调试** 更改为 **发布** 。  
   
-     ![选定了“发布”的“标准”工具栏](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
+    ![选定了“发布”的“标准”工具栏](../ide/media/exploreide-releaseversion.png "ExploreIDE-ReleaseVersion")  
   
-3.  通过选择 **生成**，然后是 **生成解决方案** 或按 F6 键构建解决方案。  
+3. 通过选择 **生成**，然后是 **生成解决方案** 或按 F6 键构建解决方案。  
   
-     ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
+    ![“生成”菜单上的“生成解决方案”命令](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")  
   
- 祝贺你完成本演练！ 可以在解决方案和项目目录下找到生成的.exe 文件 (…\HelloWPFApp\HelloWPFApp\bin\Release\\)。 如要了解更多示例，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。  
+   祝贺你完成本演练！ 可以在解决方案和项目目录下找到生成的.exe 文件 (…\HelloWPFApp\HelloWPFApp\bin\Release\\)。 如要了解更多示例，请参阅 [Visual Studio 示例](../ide/visual-studio-samples.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio 2015 中的新增功能](../what-s-new-in-visual-studio-2015.md)   

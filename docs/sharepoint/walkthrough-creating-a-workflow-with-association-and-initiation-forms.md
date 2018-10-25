@@ -22,37 +22,37 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4832ce22bfa0137040892ffcd1ce08b3f32646bd
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: b6aafde6fed0a1f1722c2d355499523114aaaa00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873872"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练： 使用关联和初始化表单创建工作流
   本演练演示如何创建一个基本顺序工作流，其中包含使用关联和初始化窗体。 这些是启用 SharePoint 管理员 （关联窗体），首次关联以及由用户 （启动窗体） 启动工作流时要添加到工作流参数的 ASPX 窗体。  
   
  本演练概述了用户要创建审批工作流的费用报告具有以下要求的方案：  
   
--   在工作流与列表相关联时，在其中它们输入限制为美元的费用报告一个关联窗体提示管理员。  
+- 在工作流与列表相关联时，在其中它们输入限制为美元的费用报告一个关联窗体提示管理员。  
   
--   员工将其费用报表上载到共享文档列表，启动工作流，然后输入工作流发起窗体中的总费用。  
+- 员工将其费用报表上载到共享文档列表，启动工作流，然后输入工作流发起窗体中的总费用。  
   
--   如果员工支出报表总数超过了管理员的预定义的限制，一项任务被创建该员工的经理批准费用报表。 不过，如果员工的费用报表总数小于或等于支出限制，已自动批准的消息都写入到工作流的历史记录列表。  
+- 如果员工支出报表总数超过了管理员的预定义的限制，一项任务被创建该员工的经理批准费用报表。 不过，如果员工的费用报表总数小于或等于支出限制，已自动批准的消息都写入到工作流的历史记录列表。  
   
- 本演练阐释了以下任务：  
+  本演练阐释了以下任务：  
   
--   创建 SharePoint 列表定义顺序工作流项目中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+- 创建 SharePoint 列表定义顺序工作流项目中的[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
--   创建工作流计划。  
+- 创建工作流计划。  
   
--   处理工作流活动事件。  
+- 处理工作流活动事件。  
   
--   创建工作流关联和初始化窗体。  
+- 创建工作流关联和初始化窗体。  
   
--   将工作流相关联。  
+- 将工作流相关联。  
   
--   手动启动工作流。  
+- 手动启动工作流。  
   
 > [!NOTE]  
 >  尽管本演练使用顺序工作流项目，该过程是相同的状态机工作流。  

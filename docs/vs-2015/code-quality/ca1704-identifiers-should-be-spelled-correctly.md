@@ -20,15 +20,16 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a39b0a05efd70dcbfb611fba19c5e17250be5e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263739"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827522"
 ---
 # <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704：标识符应正确拼写
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeSpelledCorrectly|
@@ -42,30 +43,30 @@ ms.locfileid: "49263739"
 ## <a name="rule-description"></a>规则说明
  此规则将标识符分析为令牌，并检查每个标记的拼写。 分析算法会执行以下转换：
 
--   以大写字母开头的新令牌。 例如，MyNameIsJoe 基于"我的"、"Name"、"Is"、"Joe"进行标记。
+- 以大写字母开头的新令牌。 例如，MyNameIsJoe 基于"我的"、"Name"、"Is"、"Joe"进行标记。
 
--   对于多个大写字母，最后一个大写字母开始一个新的标记。 例如，GUIEditor 基于到"GUI"，"编辑器"进行标记。
+- 对于多个大写字母，最后一个大写字母开始一个新的标记。 例如，GUIEditor 基于到"GUI"，"编辑器"进行标记。
 
--   删除前导空格和尾随撇号。 例如，发件人基于向"发件人"进行标记。
+- 删除前导空格和尾随撇号。 例如，发件人基于向"发件人"进行标记。
 
--   下划线表示标记的末尾，并删除。 例如，Hello_world 基于进行标记为"Hello"，"world"。
+- 下划线表示标记的末尾，并删除。 例如，Hello_world 基于进行标记为"Hello"，"world"。
 
--   将删除嵌入的与号。 例如，for&mat 标记化为“format”。
+- 将删除嵌入的与号。 例如，for&mat 标记化为“format”。
 
- 默认情况下，使用拼写检查器的英语 (en) 版本。 没有其他语言字典目前均可用。
+  默认情况下，使用拼写检查器的英语 (en) 版本。 没有其他语言字典目前均可用。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请更正该单词的拼写或将该词添加到名为 CustomDictionary.xml 自定义字典。 将项目目录中，工具的安装目录中或与用户的配置文件下工具相关联的目录中放置字典 (%USERPROFILE%\Application 数据\\...)。若要了解如何向项目中添加自定义词典[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，请参阅[如何： 自定义代码分析字典](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
--   添加不应导致违反了字典/单词/识别路径下的字词。
+- 添加不应导致违反了字典/单词/识别路径下的字词。
 
--   添加应导致违反了无法识别的单词/字典/路径下的字词。
+- 添加应导致违反了无法识别的单词/字典/路径下的字词。
 
--   添加单词应将标记为过时已弃用的单词/字典/路径下。 请参阅相关的规则主题[CA1726： 使用首选的词条](../code-quality/ca1726-use-preferred-terms.md)有关详细信息。
+- 添加单词应将标记为过时已弃用的单词/字典/路径下。 请参阅相关的规则主题[CA1726： 使用首选的词条](../code-quality/ca1726-use-preferred-terms.md)有关详细信息。
 
--   将异常添加到字典/首字母缩写词/CasingExceptions 路径的首字母缩略词大小写规则。
+- 将异常添加到字典/首字母缩写词/CasingExceptions 路径的首字母缩略词大小写规则。
 
- 下面是结构的自定义字典文件的示例。
+  下面是结构的自定义字典文件的示例。
 
 ```
 <Dictionary>

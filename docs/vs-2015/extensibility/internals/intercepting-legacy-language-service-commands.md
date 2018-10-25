@@ -16,12 +16,12 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 96a641778811d88c0087a23822ab789e72b066f0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 45f0084d060e9727f30ba39233ec5b92818d9205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829880"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>截获旧版语言服务命令
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49190003"
   
  具有命令处理的以下选项：  
   
--   处理命令，然后将该命令到下一个命令筛选器传递链中。  
+- 处理命令，然后将该命令到下一个命令筛选器传递链中。  
   
--   处理命令并不传递到下一个命令筛选器的命令。  
+- 处理命令并不传递到下一个命令筛选器的命令。  
   
--   不处理该命令，但将传递到下一个命令筛选器的命令。  
+- 不处理该命令，但将传递到下一个命令筛选器的命令。  
   
--   忽略该命令。 不处理它在当前筛选器，并不将它传递到下一个筛选器。  
+- 忽略该命令。 不处理它在当前筛选器，并不将它传递到下一个筛选器。  
   
- 语言服务应处理哪些命令有关的信息，请参阅[语言服务筛选器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。
+  语言服务应处理哪些命令有关的信息，请参阅[语言服务筛选器的重要命令](../../extensibility/internals/important-commands-for-language-service-filters.md)。
 

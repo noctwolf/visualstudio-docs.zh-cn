@@ -1,5 +1,5 @@
 ---
-title: IDebugProgram2::GetName |Microsoft 文档
+title: IDebugProgram2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7190e1af4bdd3304884e516a0af3610c7da47efc
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 45b30aa1935535f6a275f9507b53f2a914ae2a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31115627"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820560"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 获取该程序的名称。  
@@ -47,7 +47,7 @@ int GetName(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法返回的名称始终是描述该程序的友好，用户可显示名称。  
+ 此方法返回的名称始终是一个描述该程序的友好的用户可显示名称。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

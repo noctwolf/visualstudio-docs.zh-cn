@@ -13,12 +13,12 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 589e09f2eb6dae64a9f199b64a93238161d4731d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3932272acbfbfb7108b4b8d38ce526b51ef6e45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268342"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851984"
 ---
 # <a name="creating-a-software-development-kit"></a>创建软件开发工具包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ ms.locfileid: "49268342"
   
  有两种类型的 Sdk:  
   
--   平台 Sdk 的开发平台的应用程序的必需组件。 例如，[!INCLUDE[win81](../includes/win81-md.md)]开发所需的 SDK[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。  
+- 平台 Sdk 的开发平台的应用程序的必需组件。 例如，[!INCLUDE[win81](../includes/win81-md.md)]开发所需的 SDK[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。  
   
--   扩展 Sdk 是可选扩展平台，但不用于开发该平台的应用程序必需的组件。  
+- 扩展 Sdk 是可选扩展平台，但不用于开发该平台的应用程序必需的组件。  
   
- 以下各节介绍的常规基础结构的 Sdk 以及如何创建的平台 SDK 和扩展 SDK。  
+  以下各节介绍的常规基础结构的 Sdk 以及如何创建的平台 SDK 和扩展 SDK。  
   
--   [平台 Sdk](#PlatformSDKs)  
+- [平台 Sdk](#PlatformSDKs)  
   
--   [扩展 Sdk](#ExtensionSDKs)  
+- [扩展 Sdk](#ExtensionSDKs)  
   
 ##  <a name="PlatformSDKs"></a> 平台 Sdk  
  开发适用于平台的应用需要平台 Sdk。 例如，[!INCLUDE[win81](../includes/win81-md.md)]开发适用于应用程序所需的 SDK [!INCLUDE[win81](../includes/win81-md.md)]。  

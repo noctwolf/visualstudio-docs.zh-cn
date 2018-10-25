@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b07bdc7ab114619629ab4ef360ded3bf6655e6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: aae8681bf9db0998c1d86ad00112d3228a76081d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285111"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814410"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,15 +59,15 @@ ms.locfileid: "49285111"
   
  有关 Visual Studio 库上的其他文本编辑器功能，请参阅 [此处](http://go.microsoft.com/fwlink/?LinkId=692016)列表。 一个示例是 [C++ 快速修补](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)，它支持以下内容：  
   
--   **添加缺少的 #include** - 建议对你代码中的未知符号使用相关的 #include  
+- **添加缺少的 #include** - 建议对你代码中的未知符号使用相关的 #include  
   
--   **添加 using namespace/Fully qualify symbol** - 与上一项类似，但是是用于命名空间  
+- **添加 using namespace/Fully qualify symbol** - 与上一项类似，但是是用于命名空间  
   
--   **添加缺少的分号**  
+- **添加缺少的分号**  
   
--   **MSDN 帮助** - 搜索用于你的错误消息的 MSDN  
+- **MSDN 帮助** - 搜索用于你的错误消息的 MSDN  
   
- 你可以将鼠标悬停在波浪线上以获取灯泡，或者使用默认键盘快捷键 Ctrl+点 (Ctrl+.)。 注意，对于键盘快捷方式，你的插入点无需定位在特定的错误或令牌上；你只需将其与错误置于同一行，以调用该行上任何内容的建议。  
+  你可以将鼠标悬停在波浪线上以获取灯泡，或者使用默认键盘快捷键 Ctrl+点 (Ctrl+.)。 注意，对于键盘快捷方式，你的插入点无需定位在特定的错误或令牌上；你只需将其与错误置于同一行，以调用该行上任何内容的建议。  
   
 ## <a name="see-also"></a>请参阅  
  [设置语言特定的编辑器选项](../../ide/reference/setting-language-specific-editor-options.md)   

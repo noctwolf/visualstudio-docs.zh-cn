@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6e2c960fda37a15fe129a6a2b67c4a55c297cefa
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f2ba9e49a45305c42f813f996392bb1fa5af41b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670450"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842659"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO)
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。  
@@ -31,13 +31,13 @@ ms.locfileid: "35670450"
 ## <a name="choose-an-office-project-type"></a>选择 Office 项目类型  
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供了基于 VSTO 的 Office 开发的以下类型项目模板：  
   
--   **文档级自定义项** 与特定文档相关联。  
+- **文档级自定义项** 与特定文档相关联。  
   
--   **VSTO Add-ins** 与应用程序自身相关联。  
+- **VSTO Add-ins** 与应用程序自身相关联。  
   
- 若要确定这些项目类型中的哪一个最适合你的解决方案，可思考一下你想要代码仅在打开特定文档时运行还是想只要运行应用程序就提供代码。 有关项目模板的详细信息，请参阅[Office 项目模板概述](../vsto/office-project-templates-overview.md)。  
+  若要确定这些项目类型中的哪一个最适合你的解决方案，可思考一下你想要代码仅在打开特定文档时运行还是想只要运行应用程序就提供代码。 有关项目模板的详细信息，请参阅[Office 项目模板概述](../vsto/office-project-templates-overview.md)。  
   
- 可以创建的项目类型取决于在开发计算机上已安装的 Office 应用程序。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  可以创建的项目类型取决于在开发计算机上已安装的 Office 应用程序。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ### <a name="document-level-customizations"></a>文档级自定义项  
  文档级自定义项包含与 Microsoft Office Word 或 Microsoft Office Excel 中的单个文档、工作簿或模板相关联的程序集。 打开关联的文档时，就会加载程序集。 仅当打开关联的文档时，才提供创建的自定义项中的功能。 自定义项不能进行应用程序范围内的更改，例如打开任何文档时显示新菜单项或功能区选项卡。  
@@ -91,7 +91,7 @@ ms.locfileid: "35670450"
 ## <a name="see-also"></a>请参阅  
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [用于 Excel 的文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-excel.md)   
  [Word 文档级自定义项编程入门](../vsto/getting-started-programming-document-level-customizations-for-word.md)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  

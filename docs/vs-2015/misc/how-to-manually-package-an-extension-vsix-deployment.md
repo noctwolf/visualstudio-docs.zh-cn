@@ -12,23 +12,23 @@ ms.topic: article
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: douge
-ms.openlocfilehash: ad93bfe700c881977130ba6651bd3e271207a56f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d10d0e49389b43a288826adf2043c603aeff36a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269281"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925833"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>如何：手动将扩展打包（VSIX 部署）
 可以创建 VSIX 包来包装 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展，以便进行部署。 创建包的方式有三种：  
   
--   使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 中包含的可扩展性模板之一创建 VSIX 包项目。 在大多数情况下，这是最简单的选项。  
+- 使用 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 中包含的可扩展性模板之一创建 VSIX 包项目。 在大多数情况下，这是最简单的选项。  
   
--   将扩展项目的输出包装在一个空 [VSIX 项目](../extensibility/vsix-project-template.md)中。 对于模板、不受支持的程序集和自定义类型，建议使用此选项。  
+- 将扩展项目的输出包装在一个空 [VSIX 项目](../extensibility/vsix-project-template.md)中。 对于模板、不受支持的程序集和自定义类型，建议使用此选项。  
   
--   手动创建 VSIX 包。 仅当其他两个选项不可用时，才建议使用此选项。  
+- 手动创建 VSIX 包。 仅当其他两个选项不可用时，才建议使用此选项。  
   
- 本文档介绍第三个选项。  
+  本文档介绍第三个选项。  
   
 ## <a name="creating-a-vsix-package"></a>创建 VSIX 包  
  若要手动对扩展打包，请向扩展项目中添加 extension.manifest 文件和 [Content_Types].xml 文件，将其与生成输出一起放在压缩文件中，并对压缩文件重命名，使其具有 .vsix 文件扩展名。 要打包的扩展必须是 [VSIX 架构](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)支持的类型。  

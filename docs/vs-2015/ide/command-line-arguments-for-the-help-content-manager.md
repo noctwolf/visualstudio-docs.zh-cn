@@ -14,27 +14,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: be0c91441df0ff85771993195a4f34c7c682abdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873404"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行自变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以使用 Help Content Manager (HlpCtntmgr.exe) 的命令行自变量指定如何部署和管理本地帮助内容。 必须使用管理员权限运行用于此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：  
   
--   从磁盘或云添加或更新本地帮助内容。  
+- 从磁盘或云添加或更新本地帮助内容。  
   
--   移除本地帮助内容。  
+- 移除本地帮助内容。  
   
--   移动本地帮助内容存储区。  
+- 移动本地帮助内容存储区。  
   
--   以无提示方式添加、更新、移除或移动本地帮助内容。  
+- 以无提示方式添加、更新、移除或移动本地帮助内容。  
   
- 语法：  
+  语法：  
   
 ```  
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint  

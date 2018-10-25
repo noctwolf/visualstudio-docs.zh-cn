@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 183c459871f991aedb3cec19c7a83105091d2706
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6103f9601c55b9b29b83866d261d889c5555c86f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894373"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "49182996"
   
  在本演练中，创建域特定语言 (DSL) 具有 Namespace 跟踪基于模型的默认 Namespace 属性的默认值的属性。 有关跟踪属性的详细信息，请参阅[定义跟踪属性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
   
--   跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。  
+- 跟踪属性说明符 DSL 工具支持。 但是，在 DSL 设计器不能用于向语言添加跟踪属性。 因此，必须添加自定义代码来定义和实现的跟踪属性。  
   
- 跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：  
+  跟踪属性有两种状态： 跟踪，并更新用户。 跟踪属性具有以下功能：  
   
--   中的跟踪状态，当计算跟踪属性的值，和的值更新为模型更改中的其他属性。  
+- 中的跟踪状态，当计算跟踪属性的值，和的值更新为模型更改中的其他属性。  
   
--   当在更新用户状态的跟踪属性的值将保留到的用户上次设置该属性的值。  
+- 当在更新用户状态的跟踪属性的值将保留到的用户上次设置该属性的值。  
   
--   在中**属性**窗口中，**重置**命令对于在更新属性时，仅启用了跟踪属性的用户状态。 **重置**命令的跟踪属性设置为跟踪状态。  
+- 在中**属性**窗口中，**重置**命令对于在更新属性时，仅启用了跟踪属性的用户状态。 **重置**命令的跟踪属性设置为跟踪状态。  
   
--   在中**属性**以常规字体显示窗口中，当跟踪属性处于跟踪状态，其值。  
+- 在中**属性**以常规字体显示窗口中，当跟踪属性处于跟踪状态，其值。  
   
--   在中**属性**窗口中，在更新跟踪属性时通过用户状态，以粗体显示其值。  
+- 在中**属性**窗口中，在更新跟踪属性时通过用户状态，以粗体显示其值。  
   
 ## <a name="prerequisites"></a>系统必备  
  在开始本演练之前，必须首先安装这些组件：  

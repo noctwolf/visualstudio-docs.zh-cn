@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 9da35b83eead06f40452696bb9559d409da8e38d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294575"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942395"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>“规则集编辑器”对话框（旧版）
 本主题介绍如何使用**规则集编辑器**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
@@ -67,19 +67,19 @@ ms.locfileid: "49294575"
   
  表达式支持下列运算符：  
   
--   关系运算符：==、=、!=  
+- 关系运算符：==、=、!=  
   
--   比较运算符： <， \<=、 >、 > =  
+- 比较运算符： <， \<=、 >、 > =  
   
--   算术运算符：+、-、*、/、MOD  
+- 算术运算符：+、-、*、/、MOD  
   
--   逻辑运算符： 和，& &、 OR、 &#124; &#124;、 NOT、 ！  
+- 逻辑运算符： 和，& &、 OR、 &#124; &#124;、 NOT、 ！  
   
--   按位运算符： &，&#124;  
+- 按位运算符： &，&#124;  
   
- 表达式运算符优先级遵循 C# 运算符优先级规则。  
+  表达式运算符优先级遵循 C# 运算符优先级规则。  
   
- 有关条件的详细信息，请参阅[在工作流中使用条件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。  
+  有关条件的详细信息，请参阅[在工作流中使用条件](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77)。  
   
 ### <a name="halt-and-update-functions"></a>Halt 和 Update 函数  
  **Then 操作：** 并**Else 操作：** 表达式支持**暂停**并**更新**函数。 若要使用**暂停**函数中，键入**暂停**到**Then 操作：** 或**Else 操作：** 文本框。 **暂停**操作会导致规则集执行立即停止，并将控制权返回到调用代码。 您使用**更新**与正向链接的函数。  

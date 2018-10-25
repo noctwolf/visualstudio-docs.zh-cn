@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_thisadjust |Microsoft 文档'
+title: 'Idiasymbol:: Get_thisadjust |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93abb3b252d430510b8e1681d683078d5c25a379
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0c9ff814968077b32c4ed0ddb8d951808ebffea4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851843"
 ---
 # <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-检索的逻辑`this`人的方法。  
+检索逻辑`this`精算师方法。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,16 +34,16 @@ HRESULT get_thisAdjust (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回逻辑`this`人的方法。  
+ [out]返回逻辑`this`精算师方法。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 在某些多个继承情况下，该方法本身必须计算真正`this`通过添加到的偏移量值`this`。  
+ 在某些多个继承情况下该方法本身必须计算真正`this`通过将添加到的偏移量值`this`。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

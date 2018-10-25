@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findlinesbylinenum |Microsoft 文档'
+title: 'Idiasession:: Findlinesbylinenum |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d0cfcda8a48278abd8420e2c23954f5f7a22203
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 44a30929e3d6fbef3fb276fc8b468df4e8e5621c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464620"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878864"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-确定源文件中指定的行号介于内或其附近编译单位的行号。  
+确定将编译单位在源文件中指定的行号位于内或附近的行号。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,28 +38,28 @@ HRESULT findLinesByLinenum (
   
 #### <a name="parameters"></a>参数  
  `compiland`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示在其中搜索的行号编译单位的对象。 此参数不能为`NULL`。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示要在其中搜索的行号编译单位。 此参数不能为`NULL`。  
   
  `file`  
- [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)表示源文件在其中进行搜索的对象。 此参数不能为`NULL`。  
+ [in][IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)对象，表示要在中搜索的源文件。 此参数不能为`NULL`。  
   
  `linenum`  
  [in]指定基于 1 的行号。  
   
 > [!NOTE]
->  你无法使用零来指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法以查找所有行)。  
+>  您不能使用零指定所有行 (使用[idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md)方法来查找所有行)。  
   
  `column`  
- [in]指定的列号。 使用零来指定所有列。 列是一条线的字节偏移量。  
+ [in]指定的列号。 使用零来指定所有列。 列是行的字节的偏移量。  
   
  `ppResult`  
- [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)包含行号的列表的 objta 检索。  
+ [out]返回[IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta 包含的行号列表的检索。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何打开的源文件、 枚举撰写的此文件中，编译单位和每个编译单位的开始位置的源文件中找到的行号。  
+ 下面的示例演示如何打开的源文件、 枚举提供此文件中，编译单位和每个编译单位的开始位置的源文件中找到的行号。  
   
 ```C++  
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)  

@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumdebugstreamdata:: Next |Microsoft 文档'
+title: 'Idiaenumdebugstreamdata:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81e816edd5b93ffdfec46d36d9aabba154ab035d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 00ccf7edbe7eb985c83d56aa8b1e851d6ca21374
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458689"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895244"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-检索指定枚举的序列中的记录数。  
+检索指定的数目的枚举序列中的记录。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,13 +44,13 @@ HRESULT Next (
  [in]数据缓冲区，以字节为单位的大小。  
   
  pcbData  
- [out]返回返回的字节的数。 如果`data`为 NULL，则`pcbData`为所有请求的记录包含总的可用数据的字节数。  
+ [out]返回返回的字节数。 如果`data`为 NULL，则`pcbData`的所有请求的记录包含可用数据的字节总数。  
   
  数据]  
  [out]是要调试流记录数据填充缓冲区。  
   
  pceltFetched  
- [在中，out]返回的记录数`data`。  
+ [in、 out]返回中的记录数`data`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有更多记录。 否则，返回错误代码。  

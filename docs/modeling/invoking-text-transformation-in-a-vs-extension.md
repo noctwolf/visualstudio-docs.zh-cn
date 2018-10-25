@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6e5f72b079af3c1c82783cb5bb91e676c0f14bf6
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01a2b4863736b22e08cf2075e6402d836e9cc671
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859284"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926795"
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>在 VS 扩展中调用文本转换
 如果您正在编写 Visual Studio 扩展，如菜单命令或[域特定语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，可以使用文本模板化服务转换文本模板。 获取 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服务并将其转换为 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。
@@ -33,7 +33,6 @@ ITextTemplating t4 = serviceProvider.GetService(typeof(STextTemplating)) as ITex
 
 // Process a text template:
 string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath));
-
 ```
 
 ## <a name="passing-parameters-to-the-template"></a>将参数传递给模板
@@ -74,7 +73,6 @@ string result = t4.ProcessTemplate("",
 
 // This test code yields a result similar to the following line:
 //     Test: Hello    07/06/2010 12:37:45    42
-
 ```
 
 ## <a name="error-reporting-and-the-output-directive"></a>错误报告和输出指令
@@ -120,7 +118,6 @@ class T4Callback : ITextTemplatingCallback
   public void SetOutputEncoding(Encoding encoding, bool fromOutputDirective)
   { outputEncoding = encoding; }
 }
-
 ```
 
  可以通过类似于下面的模板文件测试代码：

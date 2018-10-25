@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4a24b088922de30f421621a5f367287b84e3ddc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184842"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949287"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "49184842"
   
  更改是在每个数据行中的跟踪两种方法：  
   
--   每个数据行包含与它的相关信息<xref:System.Data.DataRow.RowState%2A>(例如， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>，或<xref:System.Data.DataRowState>)。  
+- 每个数据行包含与它的相关信息<xref:System.Data.DataRow.RowState%2A>(例如， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>， <xref:System.Data.DataRowState>，或<xref:System.Data.DataRowState>)。  
   
--   每个已更改的数据行包含该行的多个版本 (<xref:System.Data.DataRowVersion>)，（更改） 之前, 的原始版本和 （之后的更改） 的当前版本。 期间挂起的更改时 (可以作出响应的时间<xref:System.Data.DataTable.RowChanging>事件)、 第三个版本 — 提议的版本，也可以。 有关详细信息，请参阅[如何： 获取 DataRow 的特定版本](../data-tools/how-to-get-specific-versions-of-a-datarow.md)。  
+- 每个已更改的数据行包含该行的多个版本 (<xref:System.Data.DataRowVersion>)，（更改） 之前, 的原始版本和 （之后的更改） 的当前版本。 期间挂起的更改时 (可以作出响应的时间<xref:System.Data.DataTable.RowChanging>事件)、 第三个版本 — 提议的版本，也可以。 有关详细信息，请参阅[如何： 获取 DataRow 的特定版本](../data-tools/how-to-get-specific-versions-of-a-datarow.md)。  
   
- <xref:System.Data.DataSet.HasChanges%2A>数据集的方法将返回`true`如果在数据集中进行了更改。 确定已更改的行存在之后, 可以调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>返回一组已更改的行。 有关详细信息，请参阅[如何： 检索已更改行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
+  <xref:System.Data.DataSet.HasChanges%2A>数据集的方法将返回`true`如果在数据集中进行了更改。 确定已更改的行存在之后, 可以调用`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>返回一组已更改的行。 有关详细信息，请参阅[如何： 检索已更改行](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9)。  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要确定是否已对任何行进行了更改  
   

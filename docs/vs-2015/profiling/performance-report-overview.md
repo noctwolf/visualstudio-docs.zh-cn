@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8449abf6fe178225f84aa65caa4d027df5021d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f62018eb3e58f69758bd07faebc7bd77fb26b33b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290428"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49845844"
 ---
 # <a name="performance-report-overview"></a>性能报告概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49290428"
 ### <a name="callercallee-view"></a>“调用方/被调用方”视图  
  “调用方/被调用方”视图显示单个函数的调用树。 该视图划分为三个部分：  
   
--   目标函数显示在视图中间。  
+- 目标函数显示在视图中间。  
   
--   调用该函数的函数（调用方）显示在目标函数上方。  
+- 调用该函数的函数（调用方）显示在目标函数上方。  
   
--   目标函数调用的函数（被调用方）显示在目标下方。  
+- 目标函数调用的函数（被调用方）显示在目标下方。  
   
- 可以通过在调用方列表或被调用方列表中双击任何函数来选择不同的函数。 有关详细信息，请参阅[“调用方/被调用方”视图](../profiling/caller-callee-view.md)。  
+  可以通过在调用方列表或被调用方列表中双击任何函数来选择不同的函数。 有关详细信息，请参阅[“调用方/被调用方”视图](../profiling/caller-callee-view.md)。  
   
 ### <a name="call-tree-view"></a>“调用关系树”视图  
  “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点都列出它调用的所有函数以及有关这些函数调用的性能数据。  

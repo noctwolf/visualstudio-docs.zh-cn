@@ -15,12 +15,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b089794cc9135d8658a47d61d3d40c3feef7451a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1ab7e4e0cf46d90a437f4239798c0ec8a0a28e74
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862757"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,17 +48,17 @@ ms.locfileid: "49227001"
   
  以下是一些基本类型的编辑器扩展：  
   
--   边距和滚动条  
+- 边距和滚动条  
   
--   Tags  
+- Tags  
   
--   修饰  
+- 修饰  
   
--   选项  
+- 选项  
   
--   IntelliSense  
+- IntelliSense  
   
- 有关编辑器扩展点的详细信息，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  
+  有关编辑器扩展点的详细信息，请参阅[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。  
   
 ## <a name="deploying-editor-extensions"></a>部署编辑器扩展  
  在 Visual Studio 中，你可以通过添加一个名为到解决方案中，生成解决方案时，source.extension.vsixmanifest 的元数据文件并将二进制文件和清单的副本已知的文件夹中添加到 Visual Studio 部署编辑器扩展。 清单文件用于定义扩展插件 （例如，名称、 作者、 版本和内容类型） 有关的基本情况。 有关 VSIX 清单文件以及如何将扩展部署的详细信息，请参阅[传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。  

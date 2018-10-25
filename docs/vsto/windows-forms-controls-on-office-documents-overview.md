@@ -30,12 +30,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 41870980aa27dd14576a3e04378d602f073091ab
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 51c671a583e4e96b51ae6627de1fce738696fe22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670482"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892774"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows 窗体控件在 Office 文档概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 文档级项目中，您可以添加 Windows 窗体控件的文档或工作簿项目中在设计时，或以编程方式可以在运行时添加这些控件。 以编程方式可以向任何打开的文档或工作表在 VSTO 外接程序中的运行时添加这些控件，Excel 或 Word。  
@@ -52,25 +52,25 @@ ms.locfileid: "35670482"
  在文档上。  
  -   希望始终显示控件时。  
   
--   希望用户在文档中直接输入数据时，例如，在编辑图面已锁定的基于窗体的文档中。  
+- 希望用户在文档中直接输入数据时，例如，在编辑图面已锁定的基于窗体的文档中。  
   
--   希望控件与文档中的数据对齐显示时。 例如，如果正向列表对象的每一行添加按钮，你将希望这些按钮与每个列表项对齐。  
+- 希望控件与文档中的数据对齐显示时。 例如，如果正向列表对象的每一行添加按钮，你将希望这些按钮与每个列表项对齐。  
   
- 在操作窗格或自定义任务窗格上。  
- -   希望为用户提供上下文信息时。  
+  在操作窗格或自定义任务窗格上。  
+  -   希望为用户提供上下文信息时。  
   
--   只希望结果（而非查询控件和数据）显示在文档中时。  
+- 只希望结果（而非查询控件和数据）显示在文档中时。  
   
--   希望确保控件不与文档一起打印时。  
+- 希望确保控件不与文档一起打印时。  
   
--   希望确保控件不会影响文档的视图时。  
+- 希望确保控件不会影响文档的视图时。  
   
- 在 Windows 窗体上。  
- -   希望控制 UI 的大小时。  
+  在 Windows 窗体上。  
+  -   希望控制 UI 的大小时。  
   
--   希望防止用户隐藏或删除控件时。  
+- 希望防止用户隐藏或删除控件时。  
   
--   希望获取用户输入，并防止用户在输入被接收之前在文档中执行任何操作时。  
+- 希望获取用户输入，并防止用户在输入被接收之前在文档中执行任何操作时。  
   
 ## <a name="add-windows-forms-controls-programmatically"></a>以编程方式添加 Windows 窗体控件  
  可以将 Windows 窗体控件添加到 Word 文档和 Excel 工作表在运行时。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 提供了用于添加最常用的 Windows 窗体控件的帮助程序方法。 利用这些帮助程序方法，可以快速向 Office 文档添加控件并访问这些控件的组合的 Windows 窗体控件功能及 Office 相关功能。  
@@ -134,13 +134,13 @@ ms.locfileid: "35670482"
   
  通过使用不同时向在运行时的 Word 文档添加控件，可以指定新的控件的布局样式`Add` \<*控制类*> 方法重载<xref:Microsoft.Office.Tools.Word.ControlCollection>类：  
   
--   若要使控件与文本对齐，请使用接受 <xref:Microsoft.Office.Interop.Word.Range> （用于指定该控件的位置）的重载。  
+- 若要使控件与文本对齐，请使用接受 <xref:Microsoft.Office.Interop.Word.Range> （用于指定该控件的位置）的重载。  
   
--   若要将控件作为浮点形状添加到文档中，请使用接受此控件的左坐标和上坐标的重载。  
+- 若要将控件作为浮点形状添加到文档中，请使用接受此控件的左坐标和上坐标的重载。  
   
- 有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
+  有关详细信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- 如果在 Visual Studio 设计器中打开 Word 模板，则模板上的非内联控件可能不可见，因为 Visual Studio 在“普通”  视图中打开该模板。 若要查看控件，请将视图更改为“打印布局” 。  
+  如果在 Visual Studio 设计器中打开 Word 模板，则模板上的非内联控件可能不可见，因为 Visual Studio 在“普通”  视图中打开该模板。 若要查看控件，请将视图更改为“打印布局” 。  
   
 ### <a name="controls-outside-the-main-document-body"></a>主文档正文外控件  
  页眉或页脚内、或子文档内不支持 Windows 窗体控件。  

@@ -3,7 +3,7 @@
 ## [安装 Visual Studio 2015](install/install-visual-studio-2015.md)
 ## [移植、迁移和升级 Visual Studio 项目](porting/porting-migrating-and-upgrading-visual-studio-projects.md)
 ## [Visual Studio IDE](ide/visual-studio-ide.md)
-## [扩展性](extensibility/extensibility-in-visual-studio.md)
+## [扩展性](extensibility/visual-studio-sdk.md)
 ## [数据访问](data-tools/accessing-data-in-visual-studio.md)
 ## [跨平台移动开发](cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 ## [Visual Basic](/dotnet/visual-basic)

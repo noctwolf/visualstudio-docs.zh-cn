@@ -7,12 +7,12 @@ ms.date: 05/03/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: 21ff2211632cba63dafe2a7abf1964e7a89e87c3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 6efc22f916973f292daa97bdd6b5129ac9311f04
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224000"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881067"
 ---
 # <a name="javascript-support"></a>Javascript 支持
 
@@ -34,7 +34,7 @@ Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSe
 
 ## <a name="intellisense"></a>Intellisense
 
-Visual Studio for Mac 使用 [Javascript 语言服务](https://docs.microsoft.com/en-us/visualstudio/ide/javascript-intellisense)提供 Intellisense，为用户在编写代码时提供智能代码完成、参数信息和成员列表。
+Visual Studio for Mac 使用 [Javascript 语言服务](/visualstudio/ide/javascript-intellisense)提供 Intellisense，为用户在编写代码时提供智能代码完成、参数信息和成员列表。
 
 Visual Studio for Mac 中的 Javascript intellisense 可以基于类型推理、JSDoc 或 Typescript 声明。
 

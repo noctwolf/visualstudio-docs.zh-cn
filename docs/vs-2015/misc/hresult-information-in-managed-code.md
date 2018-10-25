@@ -15,31 +15,31 @@ helpviewer_keywords:
 ms.assetid: 0795ee94-17a8-4327-bf57-27cd5e312a4c
 caps.latest.revision: 29
 manager: douge
-ms.openlocfilehash: b629f856bcdba13523c094b5d3fd32b6848ec23f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 08d14f1155838e53321224280a69e7a76bf07b52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911845"
 ---
 # <a name="hresult-information-in-managed-code"></a>在托管代码中的 HRESULT 信息
 当遇到 HRESULT 返回值时，托管代码和 COM 之间的交互可能会导致一些问题。  
   
  在 COM 接口中，HRESULT 返回值可以发挥以下作用：  
   
--   提供错误信息（例如 <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>）。  
+- 提供错误信息（例如 <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>）。  
   
--   提供有关正常程序行为的状态信息。  
+- 提供有关正常程序行为的状态信息。  
   
- 当 COM 调入托管代码时，HRESULT 可能会导致以下问题：  
+  当 COM 调入托管代码时，HRESULT 可能会导致以下问题：  
   
--   返回小于零的 HRESULT 值（故障代码）的 COM 函数会生成异常。  
+- 返回小于零的 HRESULT 值（故障代码）的 COM 函数会生成异常。  
   
--   无法辨别定期返回两个或更多个不同成功代码（例如，<xref:Microsoft.VisualStudio.VSConstants.S_OK> 或 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>）的 COM 方法。  
+- 无法辨别定期返回两个或更多个不同成功代码（例如，<xref:Microsoft.VisualStudio.VSConstants.S_OK> 或 <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>）的 COM 方法。  
   
- 由于许多 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 函数返回小于零的 HRESULT 值或返回不同的成功代码，因此，编写了 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 互操作程序集以便保留方法签名。 所有 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 互操作方法均为 `int` 类型。 HRESULT 值通过互操作层传递，无需更改且不会生成异常。  
+  由于许多 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] COM 函数返回小于零的 HRESULT 值或返回不同的成功代码，因此，编写了 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 互操作程序集以便保留方法签名。 所有 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 互操作方法均为 `int` 类型。 HRESULT 值通过互操作层传递，无需更改且不会生成异常。  
   
- 由于 COM 函数向调用它的托管方法返回 HRESULT，因此，进行调用的方法必须检查 HRESULT，并根据需要引发异常。  
+  由于 COM 函数向调用它的托管方法返回 HRESULT，因此，进行调用的方法必须检查 HRESULT，并根据需要引发异常。  
   
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>处理从 COM 返回到托管代码的 HRESULT  
  当从托管代码调用 COM 接口时，请检查 HRESULT 值并根据需要引发异常。 <xref:Microsoft.VisualStudio.ErrorHandler> 类包含 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 方法，该方法根据传递给它的 HRESULT 值引发 COM 异常。  

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a972d529b93445c1c66e9418b7d8f3e068b005c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 73a50b3daf77fdd1a1e0a058bd64ddd068467c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932983"
 ---
 # <a name="lines-view---sampling-data"></a>“行”视图 - 采样数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49289934"
   
  在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。 语句由以下数据标识：  
   
--   包含函数语句的源文件。  
+- 包含函数语句的源文件。  
   
--   包含该语句的函数。  
+- 包含该语句的函数。  
   
--   该语句的起始源代码行。  
+- 该语句的起始源代码行。  
   
--   该语句的起始源代码行中的字符。  
+- 该语句的起始源代码行中的字符。  
   
--   该语句的结束源代码行。  
+- 该语句的结束源代码行。  
   
--   该语句的结束源代码行中的字符。  
+- 该语句的结束源代码行中的字符。  
   
- “行名”列提供一串可排序的标识符数据。  
+  “行名”列提供一串可排序的标识符数据。  
   
- 根据定义，语句不调用其他函数。 因此，仅列出独占值。  
+  根据定义，语句不调用其他函数。 因此，仅列出独占值。  
   
 |列|描述|  
 |------------|-----------------|  

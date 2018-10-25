@@ -21,23 +21,23 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b732c7d562c97e1043bb6dc62bba7d3a405227b9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 561bc9b96ff12309ae9bc9ba7ea58cef16074361
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254003"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49922232"
 ---
 # <a name="error-user-could-not-execute-stored-procedure-spenablesqldebug"></a>错误：用户未能执行存储过程 sp_enable_sql_debug
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在服务器上未能执行存储过程 sp_enable_sql_debug。 这可能是由于：  
   
--   连接问题。 需要有一个到服务器的稳定连接。  
+- 连接问题。 需要有一个到服务器的稳定连接。  
   
--   在服务器上缺少必要的权限。 若要在 SQL Server 2005 上调试，运行 Visual Studio 的帐户和用于连接 SQL Server 的帐户都必须是 sysadmin 角色的成员。 用于连接 SQL Server 的帐户要么是 Windows 用户帐户（如果您正在使用 Windows 身份验证），要么是具有用户 ID 和密码的帐户（如果您使用 SQL 身份验证）。  
+- 在服务器上缺少必要的权限。 若要在 SQL Server 2005 上调试，运行 Visual Studio 的帐户和用于连接 SQL Server 的帐户都必须是 sysadmin 角色的成员。 用于连接 SQL Server 的帐户要么是 Windows 用户帐户（如果您正在使用 Windows 身份验证），要么是具有用户 ID 和密码的帐户（如果您使用 SQL 身份验证）。  
   
- 有关详细信息，请参阅[如何： 设置 SQL Server 调试权限](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
+  有关详细信息，请参阅[如何： 设置 SQL Server 调试权限](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)。  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 设置 SQL Server 权限以进行调试](http://msdn.microsoft.com/en-us/84e088d0-0409-41d4-841b-f5d4b0fda414)   

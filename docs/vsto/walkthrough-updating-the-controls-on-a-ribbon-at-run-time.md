@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2d9f8a585b6a9353c9e64cf03b0876e5324a539
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a90355a21fb525b108987ca565689867904ae6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35258796"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881750"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>演练： 更新在运行时功能区上的控件
   本演练演示如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新功能区上的控件。  
@@ -167,49 +167,49 @@ ms.locfileid: "35258796"
   
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>使用功能区对象模型更新自定义组中的控件  
   
-1.  在“项目”菜单上，单击“添加引用”。  
+1. 在“项目”菜单上，单击“添加引用”。  
   
-2.  在中**添加引用**对话框中，单击 **.NET**选项卡上，选择**System.Data.Linq**程序集，然后单击**确定**。  
+2. 在中**添加引用**对话框中，单击 **.NET**选项卡上，选择**System.Data.Linq**程序集，然后单击**确定**。  
   
-     此程序集包含有关使用语言集成查询 (LINQ) 的类。 你将通过 LINQ 使用 Northwind 数据库中的数据填充自定义组中的控件。  
+    此程序集包含有关使用语言集成查询 (LINQ) 的类。 你将通过 LINQ 使用 Northwind 数据库中的数据填充自定义组中的控件。  
   
-3.  在中**解决方案资源管理器**，单击**CustomerRibbon.cs**或**CustomerRibbon.vb**以将其选中。  
+3. 在中**解决方案资源管理器**，单击**CustomerRibbon.cs**或**CustomerRibbon.vb**以将其选中。  
   
-4.  上**视图**菜单上，单击**代码**。  
+4. 上**视图**菜单上，单击**代码**。  
   
-     功能区代码文件将在代码编辑器中打开。  
+    功能区代码文件将在代码编辑器中打开。  
   
-5.  将下面的语句添加到功能区代码文件的顶部。 通过执行这些语句，可轻松访问 LINQ 命名空间和 Outlook 主互操作程序集 (PIA) 的命名空间。  
+5. 将下面的语句添加到功能区代码文件的顶部。 通过执行这些语句，可轻松访问 LINQ 命名空间和 Outlook 主互操作程序集 (PIA) 的命名空间。  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]  
   
-6.  将以下代码添加`CustomerRibbon`类。 此代码声明了将用于存储 Northwind 数据库的“客户”、“订单”、“订单明细”和“产品”表中信息的数据表和表适配器。  
+6. 将以下代码添加`CustomerRibbon`类。 此代码声明了将用于存储 Northwind 数据库的“客户”、“订单”、“订单明细”和“产品”表中信息的数据表和表适配器。  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]  
   
-7.  将以下代码块添加到 `CustomerRibbon` 类中。 此代码将添加在运行时创建的功能区控件的三个帮助器方法。  
+7. 将以下代码块添加到 `CustomerRibbon` 类中。 此代码将添加在运行时创建的功能区控件的三个帮助器方法。  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
+    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
+    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]  
   
-8.  将 `CustomerRibbon_Load` 事件处理程序方法替换为以下代码。 此代码使用 LINQ 查询执行以下任务：  
+8. 将 `CustomerRibbon_Load` 事件处理程序方法替换为以下代码。 此代码使用 LINQ 查询执行以下任务：  
   
-    -   填充**客户**组合框使用 Northwind 数据库中的 ID 和 20 位客户的名称。  
+   - 填充**客户**组合框使用 Northwind 数据库中的 ID 和 20 位客户的名称。  
   
-    -   调用 `PopulateSalesOrderInfo` 帮助程序方法。 此方法会更新**ProductsPurchased**菜单，其中包含与当前所选客户相关的销售订单号。  
+   - 调用 `PopulateSalesOrderInfo` 帮助程序方法。 此方法会更新**ProductsPurchased**菜单，其中包含与当前所选客户相关的销售订单号。  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]  
   
 9. 向 `CustomerRibbon` 类添加下面的代码。 此代码使用 LINQ 查询执行以下任务：  
   
-    -   将添加到子菜单**ProductsPurchased**与所选客户相关的每个销售订单的菜单。  
+   - 将添加到子菜单**ProductsPurchased**与所选客户相关的每个销售订单的菜单。  
   
-    -   将按钮添加到与销售订单相关的产品的每个子菜单中。  
+   - 将按钮添加到与销售订单相关的产品的每个子菜单中。  
   
-    -   将事件处理程序添加到每个按钮。  
+   - 将事件处理程序添加到每个按钮。  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]  
@@ -224,26 +224,26 @@ ms.locfileid: "35258796"
   
 12. 将 `ComboBox1_TextChanged` 事件处理程序替换为以下代码。 这段代码执行下列任务：  
   
-    -   调用 `PopulateSalesOrderInfo` 帮助程序方法。 此方法会更新**产品购买**菜单，其中包含与所选客户相关的销售订单。  
+    - 调用 `PopulateSalesOrderInfo` 帮助程序方法。 此方法会更新**产品购买**菜单，其中包含与所选客户相关的销售订单。  
   
-    -   调用 `PopulateMailItem` 帮助程序方法并传入当前文本，该文本是所选客户名称。 此方法填充收件人、 主题和正文的新邮件消息的字段。  
+    - 调用 `PopulateMailItem` 帮助程序方法并传入当前文本，该文本是所选客户名称。 此方法填充收件人、 主题和正文的新邮件消息的字段。  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]  
   
-13. 添加以下`Click`事件处理程序`CustomerRibbon`类。 此代码添加到新邮件消息的正文字段所选产品的名称。  
+13. 向 `Click` 类添加以下 `CustomerRibbon` 事件处理程序。 此代码添加到新邮件消息的正文字段所选产品的名称。  
   
      [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
      [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]  
   
 14. 向 `CustomerRibbon` 类添加下面的代码。 这段代码执行下列任务：  
   
-    -   通过使用当前所选客户的电子邮件地址，从而填充新邮件消息收件人行。  
+    - 通过使用当前所选客户的电子邮件地址，从而填充新邮件消息收件人行。  
   
-    -   将文本添加到新邮件消息的主题和正文字段。  
+    - 将文本添加到新邮件消息的主题和正文字段。  
   
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
+      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
+      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]  
   
 ## <a name="test-the-controls-in-the-custom-group"></a>测试自定义组中的控件  
  自定义组时在 Outlook 中打开一个新的邮件窗体，名为**客户采购**上将显示**消息**功能区选项卡。  

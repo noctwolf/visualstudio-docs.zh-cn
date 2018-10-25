@@ -26,12 +26,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d91d99b6eaa33f3aae84ecd3510bf08fe194f101
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f37674f1899ab710d4612eb2b9cd89764ce74634
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186148"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898143"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>使用调试器浏览代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,25 +63,25 @@ ms.locfileid: "49186148"
   
  下面是一些有关的行为的详细信息**单步执行**:  
   
--   在嵌套函数调用上， **“逐语句”** 将进入并单步执行嵌套最深的函数。 如果对类似 **的调用使用** “逐语句” `Func1(Func2())`，调试器将进入并单步执行函数 `Func2`。  
+- 在嵌套函数调用上， **“逐语句”** 将进入并单步执行嵌套最深的函数。 如果对类似 **的调用使用** “逐语句” `Func1(Func2())`，调试器将进入并单步执行函数 `Func2`。  
   
--   实际上，调试器逐句通过代码语句，而不是物理行。 例如， `if` 子句可以写在一行内：  
+- 实际上，调试器逐句通过代码语句，而不是物理行。 例如， `if` 子句可以写在一行内：  
   
-    ```csharp  
-    int x = 42;  
-    string s = "Not answered";  
-    if( int x == 42) s = "Answered!";  
-    ```  
+  ```csharp  
+  int x = 42;  
+  string s = "Not answered";  
+  if( int x == 42) s = "Answered!";  
+  ```  
   
-    ```vb  
-    Dim x As Integer = 42  
-    Dim s As String = "Not answered"  
-    If x = 42 Then s = "Answered!"  
-    ```  
+  ```vb  
+  Dim x As Integer = 42  
+  Dim s As String = "Not answered"  
+  If x = 42 Then s = "Answered!"  
+  ```  
   
-     当你单步执行此行时，调试器将该条件视为一步，将结果视为另一步（在此示例中，条件为 true）。  
+   当你单步执行此行时，调试器将该条件视为一步，将结果视为另一步（在此示例中，条件为 true）。  
   
- 若要直观地跟踪调用堆栈，单步执行函数时，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
+  若要直观地跟踪调用堆栈，单步执行函数时，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
   
 ##  <a name="BKMK_Step_over_Step_out"></a> 单步执行代码，正在跳过函数  
  当在调试器中运行代码，通常您会意识到不需要查看特定函数中会发生什么情况 (不关心或知道其工作方式，类似于经过全面测试的库代码)。 使用以下命令以跳过代码 （函数仍可以执行，当然，但调试器跳过它们）。  
@@ -146,20 +146,20 @@ ms.locfileid: "49186148"
   
 > [!CAUTION]
 >  设置下一条语句将导致程序计数器直接跳到新位置。 使用此命令时要小心：  
->   
->  -   不执行旧执行点和新执行点之间的指令。  
-> -   如果向后移动执行点，则不撤消插入的指令。  
-> -   将下一条语句移动到另一个函数或范围通常会导致调用堆栈损坏，导致一个运行时错误或异常。 如果尝试将下一条语句移动到另一个范围，则调试器将打开一个含有警告的对话框，并提供一个取消该操作的机会。 在 Visual Basic 中，不能将下一条语句移动到另一个范围或函数。  
-> -   在本机 C++ 中，如果已启用运行时检查，设置下一条语句会导致执行到达方法的结尾时引发异常。  
-> -   当启用“编辑并继续”时，如果你进行了“编辑并继续”无法立即重新映射的编辑，那么 **“设置下一语句”** 将失败。 例如，如果你编辑了 catch 块中的代码，将发生这种情况。 发生这种情况时，你将看到一条错误消息，告诉你该操作不受支持。  
-  
+> 
+> - 不执行旧执行点和新执行点之间的指令。  
+>   -   如果向后移动执行点，则不撤消插入的指令。  
+>   -   将下一条语句移动到另一个函数或范围通常会导致调用堆栈损坏，导致一个运行时错误或异常。 如果尝试将下一条语句移动到另一个范围，则调试器将打开一个含有警告的对话框，并提供一个取消该操作的机会。 在 Visual Basic 中，不能将下一条语句移动到另一个范围或函数。  
+>   -   在本机 C++ 中，如果已启用运行时检查，设置下一条语句会导致执行到达方法的结尾时引发异常。  
+>   -   当启用“编辑并继续”时，如果你进行了“编辑并继续”无法立即重新映射的编辑，那么 **“设置下一语句”** 将失败。 例如，如果你编辑了 catch 块中的代码，将发生这种情况。 发生这种情况时，你将看到一条错误消息，告诉你该操作不受支持。  
+> 
 > [!NOTE]
 >  在托管代码中，在以下情况下不能移动下一条语句：  
->   
->  -   下一条语句与当前语句不在同一个方法中。  
-> -   使用实时调试启动调试。  
-> -   正在展开一个调用堆栈。  
-> -   已引发一个 System.StackOverflowException 或 System.Threading.ThreadAbortException 异常。  
+> 
+> - 下一条语句与当前语句不在同一个方法中。  
+>   -   使用实时调试启动调试。  
+>   -   正在展开一个调用堆栈。  
+>   -   已引发一个 System.StackOverflowException 或 System.Threading.ThreadAbortException 异常。  
   
  应用程序处于活动运行状态时不能设置下一条语句。 要设置下一语句，调试器必须处于中断模式。  
   

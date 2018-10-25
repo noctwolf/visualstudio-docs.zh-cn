@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_iscvtcil |Microsoft 文档'
+title: 'Idiasymbol:: Get_iscvtcil |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a959b145775bdc1ea5e6073e03b304ad33f84c83
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7d721338e1dfc21a54ce663377aba0aa71c83a87
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836458"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
-检索一个标志，指示是否模块已转换的公共中间语言 (CIL) 模块为本机模块。  
+检索一个标志，指示该模块从公共中间语言 (CIL) 模块的本机模块到转换。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_isCVTCIL(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果模块已从 CIL 转换为本机代码; 否则，返回`FALSE`。  
+ [out]返回`TRUE`如果该模块从 CIL 转换为本机代码; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  此属性是可从`SymTagCompilandDetails`符号类型 (请参阅[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)。  

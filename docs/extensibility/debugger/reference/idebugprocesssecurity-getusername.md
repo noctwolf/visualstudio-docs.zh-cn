@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessSecurity::GetUserName |Microsoft 文档
+title: IDebugProcessSecurity::GetUserName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94fcc74943deb33e7f98ba24e9d7389a9d5746fb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f13d7597877104613f0e6ef6380abf0b6bc2a594
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891461"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
-从端口供应商处获取的用户名。  
+从端口提供程序获取用户名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,10 +42,10 @@ int GetUserName (
  [out]包含的用户名称的字符串。  
   
 ## <a name="return-value"></a>返回值  
- 如果该方法成功，它将返回`S_OK`。 否则它将返回错误代码。  
+ 如果此方法成功，它将返回`S_OK`。 否则，它返回一个错误代码。  
   
 ## <a name="remarks"></a>备注  
- `GetUserName` 返回在显示的用户名称**用户名**列**附加到进程**对话框。 若要查看**附加到进程**对话框中，单击**附加到进程**上**工具**菜单中的[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  
+ `GetUserName` 返回在显示的用户名**用户名**的列**附加到进程**对话框。 若要查看**附加到进程**对话框中，单击**附加到进程**上**工具**菜单中的[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

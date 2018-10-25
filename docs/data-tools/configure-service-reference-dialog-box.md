@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1b2c37f551bf7b5e0a781b91420881c594ade68
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: daa18ea2716972daa1429580ad0b2f5be5afe76c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180459"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854073"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
@@ -104,7 +104,7 @@ ms.locfileid: "39180459"
 
 > [!NOTE]
 > 此选项应仅用于面向 2.0 版的项目[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。
-
+> 
 > [!NOTE]
 > **添加 Web 引用**按钮才可用**配置服务引用**对话框中显示从**添加服务引用对话框**。
 

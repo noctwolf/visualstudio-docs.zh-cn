@@ -15,12 +15,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3ff4df9e76494e6409ce9d988781926e1a10602a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1ced074e3257bee41cb9ffcc33279e17b148bbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242952"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838278"
 ---
 # <a name="how-to-implement-error-markers"></a>如何： 实现错误标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,23 +31,23 @@ ms.locfileid: "49242952"
   
 ### <a name="to-implement-the-red-wavy-underline-feature"></a>若要实现红色波浪下划线功能  
   
-1.  选择要在其下放置的红色的波浪下划线的文本。  
+1. 选择要在其下放置的红色的波浪下划线的文本。  
   
-2.  创建类型的标记`MARKER_CODESENSE_ERROR`。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+2. 创建类型的标记`MARKER_CODESENSE_ERROR`。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
-3.  此后，传入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口指针。  
+3. 此后，传入<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口指针。  
   
- 此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
+   此过程还允许您通过给定标记创建的提示文本或特殊的上下文菜单。 有关详细信息，请参阅[如何： 添加标准文本标记](../extensibility/how-to-add-standard-text-markers.md)。  
   
- 错误标记才能显示以下对象是必需的。  
+   错误标记才能显示以下对象是必需的。  
   
--   分析器。  
+- 分析器。  
   
--   任务提供程序 (即，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>)，以便确定要重新分析中的行保留行信息中的更改的记录。  
+- 任务提供程序 (即，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskProvider2>)，以便确定要重新分析中的行保留行信息中的更改的记录。  
   
--   捕获插入符号的文本视图筛选器从视图中使用的更改事件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) 方法。  
+- 捕获插入符号的文本视图筛选器从视图中使用的更改事件<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewEvents.OnChangeCaretLine%2A>) 方法。  
   
- 分析器、 任务提供程序和筛选器提供必要尽量将错误标记的基础结构。 以下步骤提供进程显示错误标记。  
+  分析器、 任务提供程序和筛选器提供必要尽量将错误标记的基础结构。 以下步骤提供进程显示错误标记。  
   
 1.  正在筛选的视图，在筛选器获取指向与该视图的数据关联的任务提供程序的指针。  
   

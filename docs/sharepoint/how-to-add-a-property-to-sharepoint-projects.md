@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 015725197c2c269a7b6aed2e20f0159e2a9f2fe6
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c956da1df5507d2efecb3ff72f034d54fb377eb5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898403"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何： 向 SharePoint 项目中添加属性
   项目扩展可用于将属性添加到任何 SharePoint 项目。 属性将出现在**属性**窗口中选择项目时**解决方案资源管理器**。  
@@ -48,11 +48,11 @@ ms.locfileid: "36758554"
   
  保存属性值，更改**设置**属性访问器使用以下 Api:  
   
--   `CustomUserFileProperty` 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>属性以将其值保存到项目用户选项文件。  
+- `CustomUserFileProperty` 使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>属性以将其值保存到项目用户选项文件。  
   
--   `CustomProjectFileProperty` 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法以将其值保存到项目文件。  
+- `CustomProjectFileProperty` 使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法以将其值保存到项目文件。  
   
- 有关这些文件中保存数据的详细信息，请参阅[将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+  有关这些文件中保存数据的详细信息，请参阅[将数据保存在 SharePoint 项目系统的扩展](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为  
  可以定义自定义属性的显示方式和行为**属性**通过应用中的属性窗口<xref:System.ComponentModel>到属性定义的命名空间。 以下属性可在许多情况下：  

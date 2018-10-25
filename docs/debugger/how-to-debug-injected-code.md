@@ -1,5 +1,5 @@
 ---
-title: 如何： 调试插入的代码 |Microsoft 文档
+title: 如何： 调试插入的代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf602d8ee670e5fce8602cb50d2aaa1066b501de
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 479df9e5761066248b8657d9656132b072bddb13
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31475150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866072"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 > [!NOTE]
@@ -39,17 +39,17 @@ ms.locfileid: "31475150"
   
  使用特性可大大简化 C++ 编程。 有关详细信息，请参阅[概念](/cpp/windows/attributed-programming-concepts)。 某些特性由编译器直接解释。 其他特性则向程序源中插入代码，然后由编译器进行编译。 此类插入的代码通过减少你必须编写的代码量使编程变得更容易。 但有时 bug 可能导致应用程序在执行插入的代码时失败。 发生这种情况时，你可能希望查看插入的代码。 Visual Studio 提供两种查看插入的代码的方法：  
   
--   你可以查看插入的代码中**反汇编**窗口。  
+- 您可以查看中插入的代码**反汇编**窗口。  
   
--   使用[/Fx](/cpp/build/reference/fx-merge-injected-code)，你可以创建合并的源文件，其中包含原始代码和插入代码。  
+- 使用[/Fx](/cpp/build/reference/fx-merge-injected-code)，可以创建合并的源文件，其中包含原始和注入的代码。  
   
- **反汇编**窗口显示与源代码和特性所插入代码对应的汇编语言指令。 此外，**反汇编**窗口可以显示源代码批注。  
+  **反汇编**窗口会显示对应的源代码和特性所插入的代码的程序集语言说明。 此外，**反汇编**窗口可以显示源代码批注。  
   
 ### <a name="to-turn-on-source-annotation"></a>打开源批注  
   
 -   右键单击**反汇编**窗口中，选择**显示源代码**从快捷菜单。  
   
-     如果知道特性在源窗口中的位置，你可以使用快捷菜单查找插入的代码中**反汇编**窗口。  
+     如果您知道在源窗口中特性的位置，可以使用快捷菜单来查找中插入的代码**反汇编**窗口。  
   
 ### <a name="to-view-injected-code"></a>查看插入的代码  
   
@@ -59,13 +59,13 @@ ms.locfileid: "31475150"
   
 3.  右键单击，然后选择**转到反汇编**从快捷菜单。  
   
-     如果特性位置在当前执行点附近，你可以选择**反汇编**从窗口**调试**菜单。  
+     如果特性位置是当前执行点附近，则可以选择**反汇编**从窗口**调试**菜单。  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>查看当前执行点处的反汇编代码  
   
 1.  调试器必须处于中断模式。  
   
-2.  从**调试**菜单上，选择**Windows**，然后单击**反汇编**。  
+2.  从**调试**菜单中，选择**Windows**，然后单击**反汇编**。  
   
 ## <a name="see-also"></a>请参阅  
  [调试器安全](../debugger/debugger-security.md)   

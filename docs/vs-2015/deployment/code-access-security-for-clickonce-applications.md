@@ -29,12 +29,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: e5cfc8ad2be56965f691b2c114d3908172f0edfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ea1f91a50180dce6edec17afead5649ecd3e1f50
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197966"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816054"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 ## <a name="default-clickonce-code-access-security"></a>默认的 ClickOnce 代码访问安全性  
  默认情况下，在客户端计算机上安装或运行 ClickOnce 应用程序时，它会获得完全信任权限。  
   
--   具有完全信任权限的应用程序可以不受限制地访问文件系统和注册表等资源。 这可能会导致你的应用程序（和最终用户的系统）被恶意代码利用。  
+- 具有完全信任权限的应用程序可以不受限制地访问文件系统和注册表等资源。 这可能会导致你的应用程序（和最终用户的系统）被恶意代码利用。  
   
--   当应用程序需要完全信任权限时，可能会提示最终用户向其授予对该应用程序的权限。 这意味着应用程序不会真正提供 ClickOnce 体验，并且该提示可能会给经验较少的用户造成混淆。  
+- 当应用程序需要完全信任权限时，可能会提示最终用户向其授予对该应用程序的权限。 这意味着应用程序不会真正提供 ClickOnce 体验，并且该提示可能会给经验较少的用户造成混淆。  
   
-    > [!NOTE]
-    >  当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关更多信息，请参见 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
+  > [!NOTE]
+  >  当从可移动媒体（如 CD-ROM）安装应用程序时，将不会提示用户。 此外，网络管理员可以配置网络策略，以便在从受信任的源安装应用程序时不会提示用户。 有关更多信息，请参见 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
- 若要限制 ClickOnce 应用程序的权限，可以修改应用程序的代码访问安全性权限，以请求最适合你的应用程序所需权限的区域。 在大多数情况下，你可以选择从中部署该应用程序的区域。 例如，如果你的应用程序是企业应用程序，则可以使用 **“本地 Intranet”** 区域。 如果你的应用程序是 Internet 应用程序，则可以使用 **“Internet”** 区域。  
+  若要限制 ClickOnce 应用程序的权限，可以修改应用程序的代码访问安全性权限，以请求最适合你的应用程序所需权限的区域。 在大多数情况下，你可以选择从中部署该应用程序的区域。 例如，如果你的应用程序是企业应用程序，则可以使用 **“本地 Intranet”** 区域。 如果你的应用程序是 Internet 应用程序，则可以使用 **“Internet”** 区域。  
   
 ## <a name="configuring-security-permissions"></a>配置安全权限  
  你始终应该配置 ClickOnce 应用程序，以请求适当的区域来限制代码访问安全性权限。 可以在 **“项目设计器”** 的 **“安全”** 页上配置安全性权限。  
@@ -80,23 +80,23 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 ## <a name="security-permissions-for-browser-hosted-applications"></a>浏览器托管的应用程序的安全权限  
  Visual Studio 为 Windows Presentation Foundation (WPF) 应用程序提供了以下项目类型：  
   
--   WPF Windows 应用程序  
+- WPF Windows 应用程序  
   
--   WPF Web 浏览器应用程序  
+- WPF Web 浏览器应用程序  
   
--   WPF 自定义控件库  
+- WPF 自定义控件库  
   
--   WCF 服务库  
+- WCF 服务库  
   
- 在这些项目类型中，只有 WPF Web 浏览器应用程序托管在 Web 浏览器中，因此需要特殊的部署和安全设置。 这些应用程序的默认安全设置如下：  
+  在这些项目类型中，只有 WPF Web 浏览器应用程序托管在 Web 浏览器中，因此需要特殊的部署和安全设置。 这些应用程序的默认安全设置如下：  
   
--   **“启用 ClickOnce 安全设置”**  
+- **“启用 ClickOnce 安全设置”**  
   
--   **这是部分信任应用程序**  
+- **这是部分信任应用程序**  
   
--   **“Internet 区域”** （具有选定的 WPF Web 浏览器应用程序的默认权限集）  
+- **“Internet 区域”** （具有选定的 WPF Web 浏览器应用程序的默认权限集）  
   
- 在 **“高级安全设置”** 对话框中， **“使用所选的权限集调试此应用程序”** 复选框被选中然后禁用。 这是因为不能关闭浏览器托管的应用程序的“在区域中调试”。  
+  在 **“高级安全设置”** 对话框中， **“使用所选的权限集调试此应用程序”** 复选框被选中然后禁用。 这是因为不能关闭浏览器托管的应用程序的“在区域中调试”。  
   
 ## <a name="see-also"></a>请参阅  
  [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)   

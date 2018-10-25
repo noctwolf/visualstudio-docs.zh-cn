@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3313957ae1cccbd3f56b1fafacfed58570531f
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 3ce10e56d197b720922356b72ab7245036c4f7d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865357"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace"></a>使用 IntelliTrace 部署后诊断问题
 
@@ -66,7 +66,7 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
      ![设置符号路径中生成管道 TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
-     有关符号的详细信息，请参阅[发布符号数据](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
+     有关符号的详细信息，请参阅 [发布符号数据](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts)。
 
 4.  添加此 MSBuild 参数以在生成清单文件中包含 TFS 和符号位置：
 
@@ -156,12 +156,12 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
  **/p: buildsymbolstorepath =**\<*符号的路径*>
 
 ##  <a name="DeployRelease"></a> 步骤 2： 发布你的应用
- 如果您使用[Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx)创建的生成过程以将应用部署、 生成清单从自动重命名"*ProjectName*。BuildInfo.config"为"BuildInfo.config"，与你的 web 服务器上的应用程序的 Web.config 文件一起放在同一文件夹中。
+ 如果使用生成过程创建的 [Web.Deploy 包](https://msdn.microsoft.com/library/dd394698.aspx) 来部署你的应用，则生成清单从“*ProjectName*.BuildInfo.config”自动重命名为“BuildInfo.config”，并在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
 
  如果你使用其他方法部署应用，请确保生成清单从“*ProjectName*.BuildInfo.config”重命名为“BuildInfo.config”，并且在 Web 服务器上与应用的 Web.config 文件一起放在相同的文件夹中。
 
 ## <a name="step-3-monitor-your-app"></a>步骤 3：监视你的应用
- 在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅[监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。
+ 在 Web 服务器上设置应用程序性能监视，以便可以监视应用程序中的问题、记录诊断事件并将这些事件保存到 IntelliTrace 日志文件中。 请参阅 [监视你的发布的部署问题](../debugger/using-the-intellitrace-stand-alone-collector.md)。
 
 ##  <a name="InvestigateEvents"></a> 步骤 4： 找出问题
  你的开发计算机或另一台计算机上将需要 Visual Studio Enterprise，以查看记录的事件并使用 IntelliTrace 调试代码。 你还可以使用诸如 CodeLens、调试器映射和代码映射等工具帮助你诊断问题。
@@ -264,100 +264,100 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
 
 3.  确保此文件包含必需的信息：
 
--   **ProjectName**
+- **ProjectName**
 
-     Visual Studio 中你的项目的名称。 例如：
+   Visual Studio 中你的项目的名称。 例如：
+
+  ```xml
+  <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+  ```
+
+- **SourceControl**
+
+- 有关你的源代码管理系统以及以下必需属性的信息：
+
+  - **TFS**
+
+    - **ProjectCollectionUri**：用于 Team Foundation Server 和项目集合的 URI
+
+    - **ProjectItemSpec**：应用的项目文件（.csproj 或 .vbproj）的路径
+
+    - **ProjectVersionSpec**：项目的版本
+
+      例如：
 
     ```xml
-    <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
+    <SourceControl type="TFS">
+       <TfsSourceControl>
+          <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
+          <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
+          <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
+       </TfsSourceControl>
+    </SourceControl>
     ```
 
--   **SourceControl**
+  - **Git**
 
--   有关你的源代码管理系统以及以下必需属性的信息：
+    - **GitSourceControl**： **GitSourceControl** 架构的位置
 
-    -   **TFS**
+    - **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI
 
-        -   **ProjectCollectionUri**：用于 Team Foundation Server 和项目集合的 URI
+    - **ProjectPath**：应用的项目文件（.csproj 或 .vbproj）的路径
 
-        -   **ProjectItemSpec**：应用的项目文件（.csproj 或 .vbproj）的路径
+    - **CommitId**：你的提交的 ID
 
-        -   **ProjectVersionSpec**：项目的版本
+      例如：
 
-         例如：
+    ```xml
+    <SourceControl type="Git">
+       <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
+          <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
+          <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
+          <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
+       </GitSourceControl>
+    </SourceControl>
+    ```
 
-        ```xml
-        <SourceControl type="TFS">
-           <TfsSourceControl>
-              <ProjectCollectionUri>http://fabrikamfiber:8080/tfs/FabrikamFiber</ProjectCollectionUri>
-              <ProjectItemSpec>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectItemSpec>
-              <ProjectVersionSpec>LFabrikamFiber_BuildAndPublish_20130813@$/WorkInProgress</ProjectVersionSpec>
-           </TfsSourceControl>
-        </SourceControl>
-        ```
+- **生成**
 
-    -   **Git**
+   有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：
 
-        -   **GitSourceControl**： **GitSourceControl** 架构的位置
+  - **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号的详细信息，请参阅 [使用生成号为已完成的生成提供有意义的名称](/azure/devops/pipelines/build/options?view=vsts)。
 
-        -   **RepositoryUrl**：用于 Team Foundation Server、项目集合和 Git 存储库的 URI
+  - **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。
 
-        -   **ProjectPath**：应用的项目文件（.csproj 或 .vbproj）的路径
+  - **BuildReportUrl** （对于 TeamBuild）：TFS 中的生成报告的位置
 
-        -   **CommitId**：你的提交的 ID
+  - **BuildId** （对于 TeamBuild）：TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。
 
-         例如：
+  - **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。
 
-        ```xml
-        <SourceControl type="Git">
-           <GitSourceControl xmlns="http://schemas.microsoft.com/visualstudio/deploymentevent_git/2013/09">
-              <RepositoryUrl>http://gittf:8080/tfs/defaultcollection/_git/FabrikamFiber</RepositoryUrl>
-              <ProjectPath>/FabrikamFiber.CallCenter/FabrikamFiber.Web/FabrikamFiber.Web.csproj</ProjectPath>
-              <CommitId>50662c96502dddaae5cd5ced962d9f14ec5bc64d</CommitId>
-           </GitSourceControl>
-        </SourceControl>
-        ```
+    例如：
 
--   **生成**
+  - **TFS**
 
-     有关生成系统（ `"TeamBuild"` 或 `"MSBuild"`）以及以下所需属性的信息：
+    ```xml
+    <Build type="TeamBuild">
+       <MsBuild>
+          <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
+          <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
+          <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
+          <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MsBuild>
+    </Build>
+    ```
 
-    -   **BuildLabel** （对于 TeamBuild）：生成名称和号码。 此标签也用作部署事件的名称。 有关生成号码的详细信息，请参阅[使用生成号为已完成的生成提供有意义的名称](/azure/devops/pipelines/build/options?view=vsts)。
+  - **Git**
 
-    -   **SymbolPath** （推荐）：你的符号（PDB 文件）位置的 URI 列表，采用分号分隔。 这些 URI 可以是 URL 或 UNC。 它使 Visual Studio 更易于查找匹配的符号以帮助你进行调试。
-
-    -   **BuildReportUrl** （对于 TeamBuild）：TFS 中的生成报告的位置
-
-    -   **BuildId** （对于 TeamBuild）：TFS 中生成详细信息的 URI。 此 URI 也用作部署事件的 ID。 如果不使用 TeamBuild，则它必须是唯一的 ID。
-
-    -   **BuiltSolution**：Visual Studio 用于查找和打开匹配的解决方案的解决方案文件的路径。 这是 **SolutionPath** MsBuild 属性的内容。
-
-     例如：
-
-    -   **TFS**
-
-        ```xml
-        <Build type="TeamBuild">
-           <MsBuild>
-              <BuildLabel kind="label">FabrikamFiber_BuildAndPublish_20130813.1</BuildLabel>
-              <SymbolPath>\\fabrikamfiber\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuildReportUrl kind="informative, url" url="http://fabrikamfiber:8080/tfs/FabrikamFiber/_releasePipeline/FindRelease?buildUri=fabrikamfiber%3a%2f%2f%2fBuild%2fBuild%2f448">Build Report Url</BuildReportUrl>
-              <BuildId kind="id">1c4444d2-518d-4673-a590-dce2773c7744,fabrikamfiber:///Build/Build/448</BuildId>
-              <BuiltSolution>$/WorkInProgress/FabrikamFiber/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MsBuild>
-        </Build>
-        ```
-
-    -   **Git**
-
-        ```xml
-        <Build type="MSBuild">
-           <MSBuild>
-              <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
-              <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
-           </MSBuild>
-        </Build>
-        ```
+    ```xml
+    <Build type="MSBuild">
+       <MSBuild>
+          <SymbolPath>\\gittf\FabrikamFiber.CallCenter\Symbols</SymbolPath>
+          <BuiltSolution>/FabrikamFiber.CallCenter/FabrikamFiber.CallCenter.sln</BuiltSolution>
+       </MSBuild>
+    </Build>
+    ```
 
 ####  <a name="IneligibleWorkspace"></a> 问： Visual Studio 为何提示我所选的工作区是不合格？
  **答：** 选中的工作区域没有源代码管理文件夹和本地文件夹之间的任何映射。 若要为此工作区创建映射，请选择“管理” 。 否则，请选择已映射的工作区或创建新的工作区。
@@ -382,7 +382,7 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
      ![源代码管理中打开&#45;迁移](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
 ####  <a name="WhatWorkspace"></a> 问： 什么是工作区？
- **答：** 你[工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts)以便您可以单独开发和测试它之前检查在你的工作。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
+ **答：** 你的 [工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，因此在签入工作之前，你可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
 
 ####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的此消息？
  ![使用不受信任的符号路径进行调试？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")

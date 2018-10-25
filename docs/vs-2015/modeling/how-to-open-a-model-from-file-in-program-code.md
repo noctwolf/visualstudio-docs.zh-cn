@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 8f3397cb520014ee9997a116ebbbfbc1c20dc9f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c084e756492a03abc86f7281728222632e12ec1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940861"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,13 +63,13 @@ ms.locfileid: "49190497"
 ## <a name="reading-from-a-file"></a>从文件进行读取  
  下面的示例可读取的 DSL 的重要类是按如下所示：  
   
--   FamilyTreeModel  
+- FamilyTreeModel  
   
--   FamilyTreeSerializationHelper  
+- FamilyTreeSerializationHelper  
   
--   FamilyTreeDomainModel  
+- FamilyTreeDomainModel  
   
- 在此 DSL 的其他域类是人。  
+  在此 DSL 的其他域类是人。  
   
 ```  
 using System;  

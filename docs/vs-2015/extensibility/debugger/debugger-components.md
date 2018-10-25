@@ -17,33 +17,33 @@ ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f1f13f3a9008d86812b0e1e11886cdc66457271e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5603450bdc761626a55f34813dc46cb8141da7be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811862"
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器作为 VSPackage 实现和管理整个调试会话。 调试会话包括以下元素：  
   
--   **调试包：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器提供了相同的用户界面，不论正在调试。  
+- **调试包：** [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器提供了相同的用户界面，不论正在调试。  
   
--   **会话调试管理器 (SDM):** 提供了一致的编程接口到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器的各种的调试引擎管理。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- **会话调试管理器 (SDM):** 提供了一致的编程接口到[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]调试器的各种的调试引擎管理。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   **进程调试管理器 (PDM):** 管理的所有正在运行的实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是也正在调试的所有程序的列表。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- **进程调试管理器 (PDM):** 管理的所有正在运行的实例[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]，可以是也正在调试的所有程序的列表。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
--   **调试引擎 (DE):** 负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序状态并提供的实时分析的表达式计算器和符号提供程序与之交互程序的内存和变量的状态。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（适用于它支持的语言） 和第三方供应商想要支持其自己的运行的时。  
+- **调试引擎 (DE):** 负责监视正在调试的程序进行通信的 SDM 和 PDM，正在运行的程序状态并提供的实时分析的表达式计算器和符号提供程序与之交互程序的内存和变量的状态。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（适用于它支持的语言） 和第三方供应商想要支持其自己的运行的时。  
   
--   **表达式计算器 (EE):** 动态评估变量和表达式的用户提供的程序已停止的特定点时提供支持。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（适用于它支持的语言） 和第三方供应商想要支持自己的语言。  
+- **表达式计算器 (EE):** 动态评估变量和表达式的用户提供的程序已停止的特定点时提供支持。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（适用于它支持的语言） 和第三方供应商想要支持自己的语言。  
   
--   **符号提供程序 (SP):** 也称为符号处理程序中，映射程序的调试符号的程序正在运行的实例，以便可以提供有意义的信息 （如代码源代码级调试和表达式计算）。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己专有存储调试信息的方法。  
+- **符号提供程序 (SP):** 也称为符号处理程序中，映射程序的调试符号的程序正在运行的实例，以便可以提供有意义的信息 （如代码源代码级调试和表达式计算）。 它由实现[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]（公共语言运行时 [CLR] 符号和程序数据库 [PDB] 符号文件格式） 和由第三方供应商有其自己专有存储调试信息的方法。  
   
- 下图显示了 Visual Studio 调试器的这些元素之间的关系。  
+  下图显示了 Visual Studio 调试器的这些元素之间的关系。  
   
- ![调试组件概述](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
+  ![调试组件概述](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")  
   
 ## <a name="in-this-section"></a>本节内容  
  [调试包](../../extensibility/debugger/debug-package.md)  

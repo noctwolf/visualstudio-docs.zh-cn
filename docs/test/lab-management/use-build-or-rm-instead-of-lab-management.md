@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5896eccbee65450ab6206dd26a8f76d3fc48d5c
-ms.sourcegitcommit: b9a32c3d94b19e7344f4872bc026efd3157cf220
+ms.openlocfilehash: 1347e6170b5cf58a4e88365d7c1653389cfb6607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46135590"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950649"
 ---
 # <a name="use-azure-test-plans-instead-of-lab-management-for-automated-testing"></a>使用 Azure Test Plans 代替实验室管理工具版进行自动测试
 
@@ -27,7 +27,7 @@ ms.locfileid: "46135590"
 MTM 和实验室管理工具版依赖 XAML 生成定义来自动生成、部署和测试应用程序。 XAML 生成依赖于在 MTM 中创建的各种构造（例如实验室环境、测试套件和测试设置）和各种基础结构组件（例如生成控制器、生成代理、测试控制器和测试代理）来实现此目标。 可使用 TFS 和 Azure Pipelines 中的 Build Management 或 Release Management 以更少的步骤来实现相同的目的。
 
 | 步骤 | 使用 XAML 生成 | 使用 Build Management 或 Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | 确定部署生成和运行测试的计算机。 | 使用这些计算机在 MTM 中创建标准实验室环境。 | n/a |
 | 确定要运行的测试。 | 在 MTM 中创建测试套件、创建测试用例并将自动化与每个测试用例关联。 在 MTM 中创建测试设置，标识计算机在运行测试的实验室环境中的角色。 | 如果打算通过测试计划管理测试，则以相同的方式在 MTM 中创建自动测试套件。 如果想从生成产生的测试二进制文件直接运行测试，则可以跳过此步骤。 两种情况下都无需创建测试设置。 |
 | 自动部署和测试。 | 使用 LabDefaultTemplate.*.xaml 创建 XAML 生成定义。 在生成定义中指定生成、测试套件和实验室环境。 | 使用单一环境创建[生成或发布管道](/azure/devops/pipelines/index?view=vsts)。 使用命令行任务从 XAML 生成定义运行相同的部署脚本，并使用“测试代理部署”和“运行功能测试”任务运行自动测试。 将一系列计算机及其凭据指定为这些任务的输入。 |
@@ -58,7 +58,7 @@ MTM 和实验室管理工具版依赖 XAML 生成定义来自动生成、部署�
 下表总结了在实验室中心执行的典型活动，以及如何通过 SCVMM 或 Azure（适用于基础结构管理活动）或通过 TFS 和 Azure DevOps Services（适用于测试或部署活动）完成这些活动：
 
 | 步骤 | 使用实验室中心 | 使用 Build Management 或 Release Management |
-|-------|----------------------|-----------------|
+|-------|-|-----------------|
 | 管理环境模板库。 | 创建实验室环境。 在虚拟机上安装必要的软件。 进行系统准备，并将环境存储为库中的模板。 | 使用 SCVMM 管理控制台直接创建和管理虚拟机模板或服务模板。 使用 Azure 时，选择其中的一个 [Azure 快速入门模板](https://azure.microsoft.com/resources/templates/)。 |
 | 创建实验室环境。 | 在库中选择一个环境模板并部署该模板。 提供自定义虚拟机配置所需的参数。 | 使用 SCVMM 管理控制台根据模板直接创建虚拟机或服务实例。 使用 Azure 门户直接创建资源。 或使用环境创建发布定义。 使用 Azure 任务或 [SCVMM 集成扩展](https://marketplace.visualstudio.com/items?itemname=ms-vscs-rm.scvmmapp)中的任务创建新虚拟机。 创建此定义的新发布相当于在实验室中心中创建新环境。 |
 | 连接到计算机。 | 在“环境查看器”中打开实验室环境。 | 使用 SCVMM 管理控制台直接连接到虚拟机。 或者使用虚拟机的 IP 地址或 DNS 名称打开远程桌面会话。 |

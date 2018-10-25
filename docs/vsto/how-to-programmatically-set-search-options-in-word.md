@@ -18,21 +18,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b02adab3b0ba032a39ce73c08bd287213ef2ffc4
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4e4e6b5471f1d36eab677d8a1d0b65ab39b7dba4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670564"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853938"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何： 以编程方式在 Word 中设置搜索选项
   有两种方法可以在 Microsoft Office Word 文档中设置的选择的搜索选项：  
   
--   设置各个属性的<xref:Microsoft.Office.Interop.Word.Find>对象。  
+- 设置各个属性的<xref:Microsoft.Office.Interop.Word.Find>对象。  
   
--   使用的自变量<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法的<xref:Microsoft.Office.Interop.Word.Find>对象。  
+- 使用的自变量<xref:Microsoft.Office.Interop.Word.Find.Execute%2A>方法的<xref:Microsoft.Office.Interop.Word.Find>对象。  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
 ## <a name="use-properties-of-a-find-object"></a>使用查找对象的属性  
  下面的代码设置的属性<xref:Microsoft.Office.Interop.Word.Find>对象以在当前所选内容中搜索文本。 请注意搜索条件，如搜索进、 自动换行，和文本要搜索的属性<xref:Microsoft.Office.Interop.Word.Find>对象。  

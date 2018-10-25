@@ -13,29 +13,29 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42ad89e544727a67611a305444f85ff022f6b2ff
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: e5ff8b850287e91cf2a1e5e6a546980c9087541d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500025"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824174"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>演练： 显示 QuickInfo 工具提示
 快速信息 IntelliSense 功能，用于显示方法签名，说明当用户将指针移到方法名称。 您可以通过定义的标识符来提供快速信息的说明，并创建要在其中显示内容的工具提示实现基于语言的功能，例如快速信息。 可以在语言服务的上下文中定义 QuickInfo 或可以定义自己的文件名称扩展和内容类型并显示快速信息只是该类型或可以为现有内容类型 （例如"text") 显示快速信息。 本演练演示如何显示快速信息的"text"内容类型。  
   
  当用户将指针移到方法名称，在本演练中的快速信息示例将显示工具提示。 此设计要求您实现这些四个接口：  
   
--   源接口  
+- 源接口  
   
--   源提供程序接口  
+- 源提供程序接口  
   
--   控制器接口  
+- 控制器接口  
   
--   控制器提供程序接口  
+- 控制器提供程序接口  
   
- 源和控制器提供程序是 Managed Extensibility Framework (MEF) 组件部分，并负责将导出的源和控制器类和导入服务，并如中转站<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，这将创建的工具提示文本缓冲区，和<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，随即将会触发 QuickInfo 会话。  
+  源和控制器提供程序是 Managed Extensibility Framework (MEF) 组件部分，并负责将导出的源和控制器类和导入服务，并如中转站<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，这将创建的工具提示文本缓冲区，和<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，随即将会触发 QuickInfo 会话。  
   
- 在此示例中，快速信息源，使用硬编码列表方法名称和说明，但在完整的实现，该语言服务和语言文档是负责提供该内容。  
+  在此示例中，快速信息源，使用硬编码列表方法名称和说明，但在完整的实现，该语言服务和语言文档是负责提供该内容。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，不需要从下载中心安装 Visual Studio SDK。 它包含作为 Visual Studio 安装程序中的可选功能。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
@@ -44,7 +44,7 @@ ms.locfileid: "39500025"
   
 ### <a name="to-create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`QuickInfoTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `QuickInfoTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "39500025"
   
 #### <a name="to-implement-the-quickinfo-source"></a>若要实现的快速信息源  
   
-1.  添加一个类文件并将其命名`TestQuickInfoSource`。  
+1.  添加一个类文件并将其命名为 `TestQuickInfoSource`。  
   
 2.  添加对的引用*Microsoft.VisualStudio.Language.IntelliSense*。  
   
@@ -154,7 +154,7 @@ ms.locfileid: "39500025"
      [!code-vb[VSSDKQuickInfoTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_16.vb)]
      [!code-csharp[VSSDKQuickInfoTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_16.cs)]  
   
-2.  导入<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>作为属性。  
+2.  将 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker> 作为属性导入。  
   
      [!code-vb[VSSDKQuickInfoTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_17.vb)]
      [!code-csharp[VSSDKQuickInfoTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_17.cs)]  

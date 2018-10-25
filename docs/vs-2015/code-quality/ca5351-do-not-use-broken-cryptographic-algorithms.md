@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ba7e632d4d91eeaaba886f7a438414c7e428746e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889810"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不使用损坏的加密算法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ ms.locfileid: "49233735"
   
  对于加密算法：  
   
--   <xref:System.Security.Cryptography.DES> 加密使用的密钥强度较低，可能在一天内被暴力破解。  
+- <xref:System.Security.Cryptography.DES> 加密使用的密钥强度较低，可能在一天内被暴力破解。  
   
--   <xref:System.Security.Cryptography.RC2> 加密容易遭受与密钥相关的攻击，攻击者可以通过这些攻击找出所有密钥值之间的数学关系。  
+- <xref:System.Security.Cryptography.RC2> 加密容易遭受与密钥相关的攻击，攻击者可以通过这些攻击找出所有密钥值之间的数学关系。  
   
- 当在源代码中找到上述任何加密函数时，将触发此规则并向用户发出警告。  
+  当在源代码中找到上述任何加密函数时，将触发此规则并向用户发出警告。  
   
 ## <a name="how-to-fix-violations"></a>如何解决冲突  
  使用更强大的加密选项：  

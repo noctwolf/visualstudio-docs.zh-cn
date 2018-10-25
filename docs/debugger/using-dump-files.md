@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d072dcf839f31df2dba14a3293ed962cd3a68fce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c346c74b88f899101d30a0ecfb3a46544093a596
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847837"
 ---
 # <a name="use-dump-files-with-visual-studio"></a>Visual Studio 中使用转储文件
 使用或不带堆; 的转储文件创建转储文件;打开转储文件;查找二进制文件、 pdb 的和转储文件的源文件。
@@ -64,11 +64,11 @@ ms.locfileid: "44281021"
 ##  <a name="BKMK_Create_a_dump_file"></a> 创建转储文件
  使用 Visual Studio 创建转储文件：
 
--   在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**调试**，然后**另存为转储**，然后**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。
+- 在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**调试**，然后**另存为转储**，然后**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。
 
--   与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+- 与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 
- 你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。
+  你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。
 
 ##  <a name="BKMK_Open_a_dump_file"></a> 打开转储文件
 
@@ -85,31 +85,31 @@ ms.locfileid: "44281021"
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找二进制文件、 符号 (.pdb) 文件和源文件
  若要使用 Visual Studio 的完整功能来调试转储文件，则需要访问以下文件：
 
--   为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。
+- 为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。
 
-     如果要调试带有堆数据的转储，则 Visual Studio 可以处理某些模块缺少二进制文件的情况，但是它必须具有足够多的模块的二进制文件才能生成有效的调用堆栈。 Visual Studio 将本机模块包含在带有堆的转储文件中。
+   如果要调试带有堆数据的转储，则 Visual Studio 可以处理某些模块缺少二进制文件的情况，但是它必须具有足够多的模块的二进制文件才能生成有效的调用堆栈。 Visual Studio 将本机模块包含在带有堆的转储文件中。
 
--   .exe 的符号 (.pdb) 文件以及其他二进制文件。
+- .exe 的符号 (.pdb) 文件以及其他二进制文件。
 
--   与你相关的模块的源文件。
+- 与你相关的模块的源文件。
 
-     可执行文件和 .pdb 文件必须与创建转储时使用的文件的版本和内部版本完全匹配。
+   可执行文件和 .pdb 文件必须与创建转储时使用的文件的版本和内部版本完全匹配。
 
-     可以使用模块的反汇编，如果找不到源文件，调试
+   可以使用模块的反汇编，如果找不到源文件，调试
 
- **可执行文件的默认搜索路径**
+  **可执行文件的默认搜索路径**
 
- Visual Studio 会自动搜索可执行文件的转储文件中不包括这些位置：
+  Visual Studio 会自动搜索可执行文件的转储文件中不包括这些位置：
 
-1.  包含转储文件的目录。
+1. 包含转储文件的目录。
 
-2.  转储文件中指定的模块的路径。 这是收集转储的计算机上的模块路径。
+2. 转储文件中指定的模块的路径。 这是收集转储的计算机上的模块路径。
 
-3.  中指定的符号路径**调试**，**选项**，**符号**页上的 Visual Studio**工具**，**选项**对话框。 你可以在此页上添加更多要搜索的位置。
+3. 中指定的符号路径**调试**，**选项**，**符号**页上的 Visual Studio**工具**，**选项**对话框。 你可以在此页上添加更多要搜索的位置。
 
- **使用无二进制 > 符号 > 源页**
+   **使用无二进制 > 符号 > 源页**
 
- 如果 Visual Studio 找不到所需调试转储中的模块的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+   如果 Visual Studio 找不到所需调试转储中的模块的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
 
 ## <a name="see-also"></a>请参阅
 

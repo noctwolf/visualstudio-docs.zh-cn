@@ -1,5 +1,5 @@
 ---
-title: DISASSEMBLY_FLAGS |Microsoft 文档
+title: DISASSEMBLY_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd1aa9c73fad40d07be371ad7f9b3108464aeb34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f6d42a7c5e9247359abfcdb4d65db5a4e0de247e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31101357"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916379"
 ---
 # <a name="disassemblyflags"></a>DISASSEMBLY_FLAGS
 指定反汇编的标志。  
@@ -52,7 +52,7 @@ public enum enum_DISASSEMBLY_FLAGS {
   
 ## <a name="members"></a>成员  
  DF_DOCUMENTCHANGE  
- 指示此指令为比前一个不同的文档。  
+ 指示此指令比前一个不同的文档。  
   
  DF_DISABLED  
  指示此指令将不会执行。  
@@ -64,7 +64,7 @@ public enum enum_DISASSEMBLY_FLAGS {
  指示此指令实际上是数据 （而不是代码）。  
   
  DF_HASSOURCE  
- 指示此指令具有源。 某些指令，如分析或垃圾收集代码具有没有相应的源。  
+ 指示此指令具有源。 一些说明，如分析或进行垃圾收集代码中，有没有相应的源。  
   
  DF_DOCUMENT_CHECKSUM  
  指示`bstrDocumentUrl`字段后的文档 URL 包含校验和数据。 请参阅备注部分[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)校验和数据的存储方式的结构。  
@@ -72,7 +72,7 @@ public enum enum_DISASSEMBLY_FLAGS {
 ## <a name="remarks"></a>备注  
  用作`dwFlags`的成员[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)结构。  
   
- 这些标志可以与按位组合`OR`。  
+ 可能的按位组合这些标志`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -81,6 +81,6 @@ public enum enum_DISASSEMBLY_FLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

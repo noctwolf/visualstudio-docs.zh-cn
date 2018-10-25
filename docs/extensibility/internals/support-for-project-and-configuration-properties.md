@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c36ee7332f896ed3228166b2c729a4bc2a4df03c
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 783c73cc73da188ec1be626cf54db93ca62af465
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865097"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>支持项目和配置属性
 **属性**窗口中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE) 可以显示的项目和配置属性。 可以项目类型提供属性页，以便用户可以设置为应用程序的属性。  
@@ -61,14 +61,14 @@ ms.locfileid: "46496033"
   
  `SettingsPage`类和`Microsoft.VisualStudio.Package.ProjectNode`类提供这些方法以持久保存项目和配置属性：  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`持久保存项目属性。  
+- `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和`Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty`持久保存项目属性。  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保持配置属性。  
+- `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和`Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty`保持配置属性。  
   
-    > [!NOTE]
-    >  实现`Microsoft.VisualStudio.Package.SettingsPage`并`Microsoft.VisualStudio.Package.ProjectNode`类使用`Microsoft.Build.BuildEngine`(MSBuild) 方法来获取和设置从项目文件的项目和配置属性。  
+  > [!NOTE]
+  >  实现`Microsoft.VisualStudio.Package.SettingsPage`并`Microsoft.VisualStudio.Package.ProjectNode`类使用`Microsoft.Build.BuildEngine`(MSBuild) 方法来获取和设置从项目文件的项目和配置属性。  
   
- 从派生的类`SettingsPage`必须实现`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`来持久保存项目文件的项目或配置属性。  
+  从派生的类`SettingsPage`必须实现`Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges`和`Microsoft.VisualStudio.Package.SettingsPage.BindProperties`来持久保存项目文件的项目或配置属性。  
   
 ## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute 和注册表路径  
  类派生自`SettingsPage`旨在在 Vspackage 中共享。 若要使 VSPackage 创建派生自的类`SettingsPage`，添加`Microsoft.VisualStudio.Shell.ProvideObjectAttribute`派生自的类到`Microsoft.VisualStudio.Shell.Package`。  

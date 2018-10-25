@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 864b60a7f2262803e9a25b967831c35202799cd5
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 6f418c9f3823aaceb4237546cadc68ea2f2bf95e
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077573"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879247"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>多处理器环境下的日志记录
 MSBuild 使用多个处理器的能力可以显著缩短项目生成时间，但同时会增加日志记录的复杂性。 在单处理器环境下，记录器可以用可预测的顺序方式处理传入的事件、消息、警告和错误。 但在多处理器环境下，来自多个源的事件可能同时到达或以无序方式到达。 MSBuild 提供了可以识别多处理器的新记录器，并允许创建自定义“转发记录器”。  
@@ -62,15 +62,15 @@ public interface IForwardingLogger: INodeLogger
  有关详细信息，请参阅[创建转发记录器](../msbuild/creating-forwarding-loggers.md)。  
   
 ### <a name="attaching-a-distributed-logger"></a>附加分布式记录器  
- 要在命令行生成上附加一个分布式记录器，请使用 `/distributedlogger`（或简称为 `/dl`）开关。 用于指定记录器类型名称和类名的格式与 `/logger` 开关对应的格式相同，只是分布式记录器由以下两个日志记录类组成：转发记录器和中心记录器。 以下是附加分布式记录器的示例：  
+ 要在命令行生成上附加一个分布式记录器，请使用 `-distributedlogger`（或简称为 `-dl`）开关。 用于指定记录器类型名称和类名的格式与 `-logger` 开关对应的格式相同，只是分布式记录器由以下两个日志记录类组成：转发记录器和中心记录器。 以下是附加分布式记录器的示例：  
   
 ```cmd  
-msbuild.exe *.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
+msbuild.exe *.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,  
 Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,  
 Culture=neutral  
 ```  
   
- 用星号 (*) 来分隔 `/dl` 开关中的两个记录器名称。  
+ 用星号 (*) 来分隔 `-dl` 开关中的两个记录器名称。  
   
 ## <a name="see-also"></a>请参阅  
  [生成记录器](../msbuild/build-loggers.md)   

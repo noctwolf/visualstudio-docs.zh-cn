@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1409431b0cdaec775ecd420fb9b6ea1ded0868de
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42627134"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842178"
 ---
 # <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
 如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
@@ -28,33 +28,33 @@ ms.locfileid: "42627134"
   
 ##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量数据  
   
-1.  在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
+1. 在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
   
-     ![选择发布和本地计算机](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![选择发布和本地计算机](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-    -   在“发布”  模式下运行应用能更清晰地看到实际的应用性能。  
+   -   在“发布”  模式下运行应用能更清晰地看到实际的应用性能。  
   
-    -   在本地计算机上运行应用可最佳复制安装的应用的执行过程。  
+   -   在本地计算机上运行应用可最佳复制安装的应用的执行过程。  
   
-    -   如果从远程设备收集数据，则可直接在该设备上运行应用，而不通过使用远程桌面连接运行。  
+   -   如果从远程设备收集数据，则可直接在该设备上运行应用，而不通过使用远程桌面连接运行。  
   
-    -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
+   -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
   
-2.  在“调试”菜单上，选择“性能探查器”。  
+2. 在“调试”菜单上，选择“性能探查器”。  
   
-3.  选择“CPU 使用率”  ，然后选择“启动” 。  
+3. 选择“CPU 使用率”  ，然后选择“启动” 。  
   
-     ![选择 CPU 使用率](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
+    ![选择 CPU 使用率](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
   
-4.  启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
+4. 启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
   
-5.  在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
+5. 在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
   
- ![停止 CpuUsage 数据收集](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CpuUsage 数据收集](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
   
- CPU 使用量工具可分析数据并显示报告。  
+   CPU 使用量工具可分析数据并显示报告。  
   
- ![CpuUsage 报告](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![CpuUsage 报告](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
   
 ## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用情况报告  
   

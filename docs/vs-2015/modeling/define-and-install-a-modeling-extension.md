@@ -15,12 +15,12 @@ caps.latest.revision: 39
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e550d7c34640b1c4b436f6a2e098a3f3ee494757
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c6ed7f72a8125d2307b91cd829bd6f474145fa78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234398"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827475"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>定义和安装建模扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "49234398"
 ## <a name="creating-a-modeling-extension-solution"></a>创建一个建模扩展解决方案  
  若要定义建模扩展，必须创建一个包含这些项目的解决方案：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成扩展 (VSIX) 项目。 这将生成一个文件，为你的扩展组件充当安装程序。  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 集成扩展 (VSIX) 项目。 这将生成一个文件，为你的扩展组件充当安装程序。  
   
--   包括程序代码的组件所需的类库项目。  
+- 包括程序代码的组件所需的类库项目。  
   
- 如果想要使扩展具有多个组件，可以在单个解决方案中对组件进行开发。 只需要有一个 VSIX 项目。  
+  如果想要使扩展具有多个组件，可以在单个解决方案中对组件进行开发。 只需要有一个 VSIX 项目。  
   
- 不需要代码的组件（例如，自定义工具箱项和自定义的 UML 配置文件）可以直接添加到 VSIX 项目中，而无需使用单独的类库项目。 需要程序代码的组件在单独的类库项目中定义更容易。 需要代码的组件包括笔势处理程序、菜单命令和验证代码。  
+  不需要代码的组件（例如，自定义工具箱项和自定义的 UML 配置文件）可以直接添加到 VSIX 项目中，而无需使用单独的类库项目。 需要程序代码的组件在单独的类库项目中定义更容易。 需要代码的组件包括笔势处理程序、菜单命令和验证代码。  
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>为菜单命令、笔势处理程序或验证创建一个类库项目  
   
@@ -133,15 +133,15 @@ ms.locfileid: "49234398"
   
 #### <a name="to-uninstall-an-extension"></a>若要卸载扩展  
   
-1.  在  “工具”菜单上，单击 “扩展和更新”。  
+1. 在  “工具”菜单上，单击 “扩展和更新”。  
   
-2.  展开“已安装的扩展” 。  
+2. 展开“已安装的扩展” 。  
   
-3.  选择扩展，然后单击“卸载” 。  
+3. 选择扩展，然后单击“卸载” 。  
   
- 在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
+   在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，您可以通过从以下位置删除文件来删除扩展其中 *%localappdata%* 通常*DriveName*: \Users\\*用户名*\AppData\Local:  
   
- *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%Localappdata%* **\Microsoft\VisualStudio\\[version] \Extensions**  
   
 ## <a name="see-also"></a>请参阅  
  [定义用于扩展 UML 的配置文件](../modeling/define-a-profile-to-extend-uml.md)   

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_access |Microsoft 文档'
+title: 'Idiasymbol:: Get_access |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36ae8a1d805e548ef2dfb4c30087ef4d57625894
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 88d801ded2d871952d4737596ae13bd07b551e04
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904071"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
-检索类成员的访问修饰符。  
+检索的类成员的访问修饰符。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_access (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回一个值从[CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)指定类成员的访问修饰符的枚举。  
+ [out]返回一个值从[CV_access_e 枚举](../../debugger/debug-interface-access/cv-access-e.md)枚举，用于指定类成员的访问修饰符。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdb02ccb4e1b32904e9423a0f851b538144d6f29
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 1a3b766e4eacc04bbf4d4a8e4c022484d452954f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39497649"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49820871"
 ---
 # <a name="how-to-use-text-markers"></a>如何： 使用文本标记
 文本标记可用于编辑<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>对象。  
@@ -41,19 +41,19 @@ ms.locfileid: "39497649"
   
 ### <a name="to-add-features-to-text-markers"></a>若要将功能添加到文本标记  
   
-1.  可能需要将其他功能添加到文本标记，如工具提示、 特殊的上下文菜单中或处理程序的特殊情况。 为此，请执行以下操作：  
+1. 可能需要将其他功能添加到文本标记，如工具提示、 特殊的上下文菜单中或处理程序的特殊情况。 为此，请执行以下操作：  
   
-2.  创建一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
+2. 创建一个对象，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
   
-3.  如果需要其他功能，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>上实现的相同对象的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
+3. 如果需要其他功能，实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，并<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>上实现的相同对象的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>接口。  
   
-4.  传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>创建，到对调用的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用于将文本标记应用到给定区域的文本。  
+4. 传递<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>创建，到对调用的接口<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法用于将文本标记应用到给定区域的文本。  
   
-5.  添加到文本标记区域的上下文菜单支持时，必须创建菜单。  
+5. 添加到文本标记区域的上下文菜单支持时，必须创建菜单。  
   
-     有关如何创建上下文菜单，请参阅详细信息[上下文菜单](../extensibility/context-menus.md)。  
+    有关如何创建上下文菜单，请参阅详细信息[上下文菜单](../extensibility/context-menus.md)。  
   
-6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]环境调用的方法提供的接口，如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法根据需要。  
+6. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]环境调用的方法提供的接口，如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>方法根据需要。  
   
 ## <a name="see-also"></a>请参阅  
  [文本标记中使用传统的 API](../extensibility/using-text-markers-with-the-legacy-api.md)   

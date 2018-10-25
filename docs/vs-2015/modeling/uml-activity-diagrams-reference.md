@@ -23,12 +23,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3fe8a0d33b0e9be8eecdc55ac68d23138f6506d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eed16e010c4fc070b9cc8be57731c97c2f03b2ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49177835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862276"
 ---
 # <a name="uml-activity-diagrams-reference"></a>UML 活动图：参考
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ ms.locfileid: "49177835"
   
  使用活动图可以像下面示例一样描述多种类型的进程：  
   
--   用户和你的系统间的业务流程或工作流。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
+- 用户和你的系统间的业务流程或工作流。 有关详细信息，请参阅[建立用户需求模型](../modeling/model-user-requirements.md)。  
   
--   用例中所执行的步骤。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
+- 用例中所执行的步骤。 有关详细信息，请参阅[UML 用例图： 准则](../modeling/uml-use-case-diagrams-guidelines.md)。  
   
--   软件协议，即得到允许的组件间的交互序列。  
+- 软件协议，即得到允许的组件间的交互序列。  
   
--   软件算法。  
+- 软件算法。  
   
- 本主题介绍了可以在活动图中使用的元素。 有关更详细的信息有关绘制活动图请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。 若要创建 UML 活动图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
+  本主题介绍了可以在活动图中使用的元素。 有关更详细的信息有关绘制活动图请参阅[UML 活动图： 准则](../modeling/uml-activity-diagrams-guidelines.md)。 若要创建 UML 活动图中，在**体系结构**菜单上，单击**新建 UML 或层关系图**。 有关如何在一般情况下绘制建模图的详细信息，请参阅[编辑 UML 模型和关系图](../modeling/edit-uml-models-and-diagrams.md)。  
   
 ## <a name="reading-activity-diagrams"></a>读取活动图  
  以下各节中的表介绍了可以在活动图上使用的元素以及它们的主要属性。 元素的属性的完整列表，请参阅[UML 活动图上元素的属性](../modeling/properties-of-elements-on-uml-activity-diagrams.md)。  

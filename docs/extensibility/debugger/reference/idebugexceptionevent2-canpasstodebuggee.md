@@ -1,5 +1,5 @@
 ---
-title: IDebugExceptionEvent2::CanPassToDebuggee |Microsoft 文档
+title: IDebugExceptionEvent2::CanPassToDebuggee |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0ffea7be736cbf6d04c368ba6124d0faf22be61
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1ea3ac73ceb5ce61cbf7cc9acb71c610b1a34b59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110622"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846260"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
-确定的调试引擎 (DE) 支持将此异常传递给执行恢复时被调试的程序的选项。  
+确定调试引擎 (DE) 支持将此异常传递给执行恢复时正在调试的程序的选项。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,11 +38,11 @@ int CanPassToDebuggee();
 ```  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`（此异常可以传递到该程序） 或`S_FALSE`（该异常无法传递上）。  
+ 返回`S_OK`（异常可以传递到该程序） 或`S_FALSE`（不能将异常传递）。  
   
 ## <a name="remarks"></a>备注  
- DE 必须具有传递给调试对象的默认操作。 IDE 可能会收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件并调用[继续](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法而不调用`CanPassToDebuggee`方法。 因此，DE 应具有或不将异常传递对默认大小写。  
+ DE 必须传递到调试对象的默认操作。 IDE 可能会收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件，并调用[继续](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法而无需调用`CanPassToDebuggee`方法。 因此，DE 应具有默认分支或不传递异常。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
  [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

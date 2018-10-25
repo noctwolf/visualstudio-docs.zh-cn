@@ -15,12 +15,12 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5c8fe37de7db5a09e9c0e81f25b09e9b4ff345c1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c217426d4186477f22a21c9348ff30e181faa840
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237648"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863277"
 ---
 # <a name="walkthrough-displaying-quickinfo-tooltips"></a>演练：显示 QuickInfo 工具提示
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49237648"
   
  当用户将指针移到方法名称，在本演练中的快速信息示例将显示工具提示。 此设计要求您实现这些四个接口：  
   
--   源接口  
+- 源接口  
   
--   源提供程序接口  
+- 源提供程序接口  
   
--   控制器接口  
+- 控制器接口  
   
--   控制器提供程序接口  
+- 控制器提供程序接口  
   
- 源和控制器提供程序是 Managed Extensibility Framework (MEF) 组件部分，并负责将导出的源和控制器类和导入服务，并如中转站<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，这将创建的工具提示文本缓冲区，和<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，随即将会触发 QuickInfo 会话。  
+  源和控制器提供程序是 Managed Extensibility Framework (MEF) 组件部分，并负责将导出的源和控制器类和导入服务，并如中转站<xref:Microsoft.VisualStudio.Text.ITextBufferFactoryService>，这将创建的工具提示文本缓冲区，和<xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoBroker>，随即将会触发 QuickInfo 会话。  
   
- 在此示例中，快速信息源，使用硬编码列表方法名称和说明，但在完整的实现，该语言服务和语言文档是负责提供该内容。  
+  在此示例中，快速信息源，使用硬编码列表方法名称和说明，但在完整的实现，该语言服务和语言文档是负责提供该内容。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

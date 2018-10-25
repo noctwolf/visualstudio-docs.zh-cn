@@ -16,12 +16,12 @@ ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fcdefc93f8d9843ac18a01f52e9c2a36f59ce4ee
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8f07801b22086aa9a1e96a2efc99093a84bc72e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226208"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843634"
 ---
 # <a name="changing-the-value-of-a-local"></a>更改局部值
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49226208"
   
  这是过程的本地的更改值的概述：  
   
-1.  用户输入新值后，Visual Studio 会调用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)与本地相关联的对象。  
+1. 用户输入新值后，Visual Studio 会调用[SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md)上[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)与本地相关联的对象。  
   
-2.  `IDebugProperty2::SetValueAsString` 执行下列任务：  
+2. `IDebugProperty2::SetValueAsString` 执行下列任务：  
   
-    1.  计算要生成一个值的字符串。  
+   1.  计算要生成一个值的字符串。  
   
-    2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
+   2.  将绑定相关联[IDebugField](../../extensibility/debugger/reference/idebugfield.md)对象，以获取[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)对象。  
   
-    3.  将值转换为一系列字节。  
+   3.  将值转换为一系列字节。  
   
-    4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。  
+   4.  调用[SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md)值的字节数放入内存，因此正在调试的程序可以访问它们。  
   
-3.  Visual Studio 刷新**局部变量**显示 (请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息)。  
+3. Visual Studio 刷新**局部变量**显示 (请参阅[显示局部变量](../../extensibility/debugger/displaying-locals.md)有关详细信息)。  
   
- 此过程还用于更改中的变量的值**Watch**窗口，只不过它是`IDebugProperty2`而不是使用该局部变量的值与关联的对象`IDebugProperty2`与本地相关联的对象本身。  
+   此过程还用于更改中的变量的值**Watch**窗口，只不过它是`IDebugProperty2`而不是使用该局部变量的值与关联的对象`IDebugProperty2`与本地相关联的对象本身。  
   
 ## <a name="in-this-section"></a>本节内容  
  [更改值的实现示例](../../extensibility/debugger/sample-implementation-of-changing-values.md)  

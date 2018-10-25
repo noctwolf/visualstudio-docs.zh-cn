@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_classparent |Microsoft 文档'
+title: 'Idiasymbol:: Get_classparent |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 745342547d7c8264ebd9f2fa06bfababcc3aebcb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f948e4ffdcd64c4c2c811aff7897f3245c100077
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464571"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816705"
 ---
 # <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-检索到的符号类父级的引用。  
+检索类父级的符号的引用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_classParent (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示类父项的符号的对象。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示类父级的符号的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   
@@ -50,7 +50,7 @@ HRESULT get_classParent (
 |版本:|DIA SDK v7.0|  
   
 ## <a name="remarks"></a>备注  
- 可以作为类父级的符号的类型均记录在[符号类型的类层次结构的](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)。  
+ 可以是类的父级的符号的类型均记录在[符号类型的类层次结构的](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

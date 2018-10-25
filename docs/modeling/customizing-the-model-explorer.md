@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1455c0e1d4d5ff0aae952294ef3ee127a0d325a3
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: ba5c208e6354e0588f939074ac73a49c5b24b049
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929967"
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 您可以更改的外观和行为在资源管理器域特定语言设计器，如下所示：
@@ -42,23 +42,23 @@ ms.locfileid: "47859889"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>若要将图标添加到资源管理器节点
 
-1.  创建[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案通过使用任务流解决方案模板。
+1. 创建[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]解决方案通过使用任务流解决方案模板。
 
-2.  将包含在一个 16 x 16 像素图标.bmp 文件放**Dsl\Resources**解决方案中的文件夹。
+2. 将包含在一个 16 x 16 像素图标.bmp 文件放**Dsl\Resources**解决方案中的文件夹。
 
-3.  在中**DSL 资源管理器**，右键单击**资源管理器行为**，然后单击**添加新的资源管理器节点设置**。
+3. 在中**DSL 资源管理器**，右键单击**资源管理器行为**，然后单击**添加新的资源管理器节点设置**。
 
-     **ExplorerNodeSettings**节点下显示**自定义节点设置**节点。
+    **ExplorerNodeSettings**节点下显示**自定义节点设置**节点。
 
-4.  选择**ExplorerNodeSettings**，然后在**属性**窗口中，设置**类**到**Actor**。
+4. 选择**ExplorerNodeSettings**，然后在**属性**窗口中，设置**类**到**Actor**。
 
-5.  设置**图标为显示**到图标文件的路径。
+5. 设置**图标为显示**到图标文件的路径。
 
-6.  转换所有模板，然后生成并运行解决方案。
+6. 转换所有模板，然后生成并运行解决方案。
 
-7.  在生成的设计器中打开示例关系图。
+7. 在生成的设计器中打开示例关系图。
 
-     在资源管理器应显示三个**Actor**具有您的图标的节点。
+    在资源管理器应显示三个**Actor**具有您的图标的节点。
 
 > [!NOTE]
 >  如果设置了生成资源管理器中显示的任何元素节点图标，资源管理器中的所有节点将都显示图标。 如果尚未设置任何图标，节点将显示默认图标。

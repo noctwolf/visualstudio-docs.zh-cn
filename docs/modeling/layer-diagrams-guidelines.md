@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 262dfd7860c5bd16c210e7305599eeb1003372fe
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b7e282ed6aa93189ab15e608a5b3abe0c56411b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863329"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图： 准则
 
@@ -105,7 +105,7 @@ ms.locfileid: "47860064"
 若要描述你打算对你的系统或预期的体系结构进行的更改，使用以下步骤编辑依赖项关系图。 你还可以考虑进行一些重构的更改，以提高代码的结构，然后再扩展。 请参阅[提高代码的结构](#Improving)。
 
 |**若要**|**执行这些步骤**|
-|------------|-----------------------------|
+|-|-|
 |删除不应存在的依赖项|单击依赖项，并按**删除**。|
 |更改或限制依赖项的方向|设置其**方向**属性。|
 |创建新的依赖项|使用**依赖项**并**双向依赖项**工具。<br /><br /> 若要绘制多个依赖关系，请双击该工具。 完成后，单击**指针**工具或按**ESC**密钥。|

@@ -1,5 +1,5 @@
 ---
-title: MODULE_FLAGS |Microsoft 文档
+title: MODULE_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 945a4a0fd5a7de1e9d04d409390caddfc718d92d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 89dbb562dfbab83f56664aad7fdd107ea9d0e397
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124802"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873966"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 用于描述模块。  
@@ -58,21 +58,21 @@ public enum enum_MODULE_FLAGS {
  指定系统模块。  
   
  MODULE_FLAG_SYMBOLS  
- 指定符号模块。  
+ 指定符号的模块。  
   
  MODULE_FLAG_64BIT  
  指定的 64 位模块。  
   
  MODULE_FLAG_OPTIMIZED  
- 指定已经过优化，该模块。 此状态将反映在**模块**窗口。  
+ 指定该模块已进行了优化。 此状态反映在**模块**窗口。  
   
  MODULE_FLAG_UNOPTIMIZED  
- 指定该模块具有未优化。 此状态将反映在**模块**窗口。 这是默认状态。  
+ 指定该模块未经过优化。 此状态反映在**模块**窗口。 这是默认状态。  
   
 ## <a name="remarks"></a>备注  
  用于`m_dwModuleFlags`的成员[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构。  
   
- 这些标志可以与按位组合`OR`。  
+ 可能的按位组合这些标志`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -81,6 +81,6 @@ public enum enum_MODULE_FLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b74279373a11a13fd7e2e3fc47b2eb57e35d981
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a89832fe70e2e19085e8006646de5370b6019cbc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848613"
 ---
 # <a name="application-properties"></a>Application Properties
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,31 +32,31 @@ ms.locfileid: "49209009"
   
  可在“应用程序”窗格中完成以下任务：  
   
--   指定程序集信息  
+- 指定程序集信息  
   
--   指定应用程序的初始屏幕  
+- 指定应用程序的初始屏幕  
   
--   指定应用程序级事件  
+- 指定应用程序级事件  
   
--   更改程序集名称  
+- 更改程序集名称  
   
--   更改应用程序的命名空间  
+- 更改应用程序的命名空间  
   
--   更改应用程序类型  
+- 更改应用程序类型  
   
--   更改应用程序的启动对象  
+- 更改应用程序的启动对象  
   
--   指定应用程序图标  
+- 指定应用程序图标  
   
--   启用 Windows XP 视觉样式  
+- 启用 Windows XP 视觉样式  
   
--   指定应用程序的实例化行为  
+- 指定应用程序的实例化行为  
   
--   启用自定义用户身份验证  
+- 启用自定义用户身份验证  
   
--   指定应用程序的关闭行为  
+- 指定应用程序的关闭行为  
   
- 适用于应用程序的任务取决于使用的开发语言。  
+  适用于应用程序的任务取决于使用的开发语言。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何：指定应用程序图标（Visual Basic、C#）](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)  

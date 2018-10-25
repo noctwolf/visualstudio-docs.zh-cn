@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d085fd350c3757af4a24d659fe8b6ee30165e7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829633"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49215158"
   
 数据集是数据的内存中副本。 如果您修改该数据，则最好将这些更改保存回数据库。 您实现这三种方式之一：  
   
--   通过调用之一`Update`的 TableAdapter 方法  
+- 通过调用之一`Update`的 TableAdapter 方法  
   
--   通过调用 TableAdapter 的 DBDirect 方法之一  
+- 通过调用 TableAdapter 的 DBDirect 方法之一  
   
--   通过调用 UpdateAll 方法`TableAdapterManager`数据集包含在数据集中的其他表相关的表时，Visual Studio 为你生成  
+- 通过调用 UpdateAll 方法`TableAdapterManager`数据集包含在数据集中的其他表相关的表时，Visual Studio 为你生成  
   
- 当你的数据绑定到 Windows 窗体或 XAML 页面上的控件的数据集表时，数据绑定体系结构为您做所有工作。  
+  当你的数据绑定到 Windows 窗体或 XAML 页面上的控件的数据集表时，数据绑定体系结构为您做所有工作。  
   
- 如果您熟悉使用 Tableadapter，您可以直接跳转到以下主题之一：  
+  如果您熟悉使用 Tableadapter，您可以直接跳转到以下主题之一：  
   
 |主题|描述|  
 |-----------|-----------------|  
@@ -107,11 +107,11 @@ ms.locfileid: "49215158"
   
  为了避免过早约束冲突可以暂时挂起更新约束。 这有两个用途：  
   
--   它会阻止在已完成更新一列，但尚未启动的另一个更新后引发错误。  
+- 它会阻止在已完成更新一列，但尚未启动的另一个更新后引发错误。  
   
--   它可防止某些更新来自正在事件引发 （通常用于验证的事件）。  
+- 它可防止某些更新来自正在事件引发 （通常用于验证的事件）。  
   
- 完成更新后，可以重新启用约束检查，还将重新启用更新事件并引发它们。  
+  完成更新后，可以重新启用约束检查，还将重新启用更新事件并引发它们。  
   
 > [!NOTE]
 >  在 Windows 窗体中数据网格中内置的数据绑定体系结构挂起约束检查，直到焦点移出一个行，并不需要显式调用<xref:System.Data.DataRow.BeginEdit%2A>， <xref:System.Data.DataRow.EndEdit%2A>，或<xref:System.Data.DataRow.CancelEdit%2A>方法。  
@@ -177,33 +177,33 @@ ms.locfileid: "49215158"
   
  如果所做的更改反映数据源的当前状态，不再需要维护该信息。 通常情况下，有两次时将数据集和其源是保持同步：  
   
--   立即后已将信息加载到数据集，如从源读取数据时。  
+- 立即后已将信息加载到数据集，如从源读取数据时。  
   
--   将更改从数据集发送到数据源之后 (而不是之前，因为可能会损失将更改发送到数据库所需的更改信息)。  
+- 将更改从数据集发送到数据源之后 (而不是之前，因为可能会损失将更改发送到数据库所需的更改信息)。  
   
- 您可以通过调用挂起的更改提交到数据集<xref:System.Data.DataSet.AcceptChanges%2A>方法。 通常情况下，<xref:System.Data.DataSet.AcceptChanges%2A>在以下时间中你的应用程序过程中调用。  
+  您可以通过调用挂起的更改提交到数据集<xref:System.Data.DataSet.AcceptChanges%2A>方法。 通常情况下，<xref:System.Data.DataSet.AcceptChanges%2A>在以下时间中你的应用程序过程中调用。  
   
--   将数据集加载之后。 如果加载数据集通过调用 TableAdapter 的`Fill`方法，则适配器会自动为您提交更改。 但是，如果通过将另一个数据集合并到它加载数据集，然后你必须手动提交所做的更改。  
+- 将数据集加载之后。 如果加载数据集通过调用 TableAdapter 的`Fill`方法，则适配器会自动为您提交更改。 但是，如果通过将另一个数据集合并到它加载数据集，然后你必须手动提交所做的更改。  
   
-    > [!NOTE]
-    >  可以防止自动提交所做的更改时调用适配器`Fill`方法通过设置`AcceptChangesDuringFill`适配器添加到属性`false`。 如果设置为`false`，则<xref:System.Data.DataRow.RowState%2A>的每个填充过程中插入的行设置为<xref:System.Data.DataRowState>。  
+  > [!NOTE]
+  >  可以防止自动提交所做的更改时调用适配器`Fill`方法通过设置`AcceptChangesDuringFill`适配器添加到属性`false`。 如果设置为`false`，则<xref:System.Data.DataRow.RowState%2A>的每个填充过程中插入的行设置为<xref:System.Data.DataRowState>。  
   
--   之后将数据集更改发送到另一个进程，例如 XML Web 服务。  
+- 之后将数据集更改发送到另一个进程，例如 XML Web 服务。  
   
-    > [!CAUTION]
-    >  这种方法提交更改，则会删除任何更改信息。 不提交后的更改直到您完成执行的操作所要求应用程序知道在数据集中进行了哪些更改。  
+  > [!CAUTION]
+  >  这种方法提交更改，则会删除任何更改信息。 不提交后的更改直到您完成执行的操作所要求应用程序知道在数据集中进行了哪些更改。  
   
- 此方法完成以下任务：  
+  此方法完成以下任务：  
   
--   将写入<xref:System.Data.DataRowVersion>版本记录到其<xref:System.Data.DataRowVersion>版本并覆盖原始版本。  
+- 将写入<xref:System.Data.DataRowVersion>版本记录到其<xref:System.Data.DataRowVersion>版本并覆盖原始版本。  
   
--   删除任何行位置<xref:System.Data.DataRow.RowState%2A>属性设置为<xref:System.Data.DataRowState>。  
+- 删除任何行位置<xref:System.Data.DataRow.RowState%2A>属性设置为<xref:System.Data.DataRowState>。  
   
--   集<xref:System.Data.DataRow.RowState%2A>属性的一条记录<xref:System.Data.DataRowState>。  
+- 集<xref:System.Data.DataRow.RowState%2A>属性的一条记录<xref:System.Data.DataRowState>。  
   
- <xref:System.Data.DataSet.AcceptChanges%2A>方法提供了三个级别。 你可以对调用<xref:System.Data.DataRow>到提交对象更改只是该行。 您还可以在调用它<xref:System.Data.DataTable>对象提交表中的所有行。 最后，在调用它<xref:System.Data.DataSet>对象提交的数据集的所有表的所有记录中所有挂起的更改。  
+  <xref:System.Data.DataSet.AcceptChanges%2A>方法提供了三个级别。 你可以对调用<xref:System.Data.DataRow>到提交对象更改只是该行。 您还可以在调用它<xref:System.Data.DataTable>对象提交表中的所有行。 最后，在调用它<xref:System.Data.DataSet>对象提交的数据集的所有表的所有记录中所有挂起的更改。  
   
- 下表描述了所提交的更改基于何种对象上调用该方法。  
+  下表描述了所提交的更改基于何种对象上调用该方法。  
   
 |方法|结果|  
 |------------|------------|  
@@ -221,16 +221,16 @@ ms.locfileid: "49215158"
   
  你可以验证几种方法中的数据：  
   
--   在业务层，通过将代码添加到应用程序以验证数据。 数据集是一个可以执行此操作的位置。 数据集提供了一些后端验证的优点，例如验证更改，如列和行的值变化的能力。 有关详细信息，请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md)。  
+- 在业务层，通过将代码添加到应用程序以验证数据。 数据集是一个可以执行此操作的位置。 数据集提供了一些后端验证的优点，例如验证更改，如列和行的值变化的能力。 有关详细信息，请参阅[验证数据集中](../data-tools/validate-data-in-datasets.md)。  
   
--   中的表示层，通过将验证添加到窗体。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
+- 中的表示层，通过将验证添加到窗体。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1)。  
   
--   数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。  
+- 数据在后端，通过将数据发送到数据源 — 例如，数据库，并使其能够接受或拒绝数据。 如果您正在使用的数据库，具有复杂的功能来验证数据并提供错误的信息，这可以是一个实用的方法，因为可以验证无论它是从哪里的数据。 但是，这种方法可能不适合特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致大量的往返到数据源，具体取决于你的应用程序如何由后端引发的验证错误的解决方法。  
   
-    > [!IMPORTANT]
-    >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （注入） 已修改或其他 SQL 语句，以获得未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
+  > [!IMPORTANT]
+  >  使用与数据命令时<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>属性设置为<xref:System.Data.CommandType>，仔细检查并向其传递到数据库之前从客户端发送的信息。 恶意用户可能会尝试发送 （注入） 已修改或其他 SQL 语句，以获得未经授权的访问或破坏数据库。 将内容传输到数据库的用户输入之前，始终验证信息有效。 它是始终使用参数化的查询或存储的过程时可能是最佳做法。 有关详细信息，请参阅[脚本侵入概述](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)。  
   
- 在数据集中进行了更改后，可以传输到数据源的更改。 大多数情况下，执行此操作通过调用`Update`TableAdapter （或数据适配器） 的方法。 该方法将遍历每个表中记录数据，确定所需的更新的类型 （更新、 插入或删除） (如果有） 并运行相应命令。  
+  在数据集中进行了更改后，可以传输到数据源的更改。 大多数情况下，执行此操作通过调用`Update`TableAdapter （或数据适配器） 的方法。 该方法将遍历每个表中记录数据，确定所需的更新的类型 （更新、 插入或删除） (如果有） 并运行相应命令。  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>传输更新数据源  
  为举例说明了如何进行更新，假设应用程序使用包含单个数据表的数据集。 应用程序从数据库提取两个行。 在检索之后，内存中数据的表如下所示：  

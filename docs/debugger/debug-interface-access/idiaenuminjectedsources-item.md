@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenuminjectedsources:: Item |Microsoft 文档'
+title: 'Idiaenuminjectedsources:: Item |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb753605a85dedefac5fc2cd33f4baf158b128b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e8299bce906c5f3e7a38296a9c19e9c85d03501b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31456863"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917438"
 ---
 # <a name="idiaenuminjectedsourcesitem"></a>IDiaEnumInjectedSources::Item
-通过索引中检索插入的源。  
+通过索引中检索的插入的源。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,10 +35,10 @@ HRESULT Item (
   
 #### <a name="parameters"></a>参数  
  索引  
- [in]索引的[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)要检索的对象。 索引是范围为 0 到`count`-1，其中`count`返回[idiaenuminjectedsources:: Get_count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)方法。  
+ [in]索引[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)要检索对象。 索引是范围 0 到`count`-1，其中`count`返回的[idiaenuminjectedsources:: Get_count](../../debugger/debug-interface-access/idiaenuminjectedsources-get-count.md)方法。  
   
  injectedSource  
- [out]返回[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)表示插入的源对象。  
+ [out]返回[IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)对象，表示插入的源。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

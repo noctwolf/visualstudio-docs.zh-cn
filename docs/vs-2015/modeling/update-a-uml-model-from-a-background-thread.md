@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6ed72cc65535849516de35c861942913ca750fba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7faef9f085f21db4d4f819746acf52c119189f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49216848"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940991"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>从后台线程中更新 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,35 +35,35 @@ ms.locfileid: "49216848"
   
 #### <a name="to-run-the-example"></a>运行示例  
   
-1.  创建 C# 项目中的命令处理程序，如中所述[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
+1. 创建 C# 项目中的命令处理程序，如中所述[在建模图上定义菜单命令](../modeling/define-a-menu-command-on-a-modeling-diagram.md)。  
   
-2.  确保该项目包含对这些程序集的引用：  
+2. 确保该项目包含对这些程序集的引用：  
   
-    -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.[版本号]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.[版本号]  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本号]  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本号]  
   
-    -   Microsoft.VisualStudio.Uml.Interfaces  
+   -   Microsoft.VisualStudio.Uml.Interfaces  
   
-    -   System.ComponentModel.Composition  
+   -   System.ComponentModel.Composition  
   
-    -   System.Windows.Forms  
+   -   System.Windows.Forms  
   
-3.  向项目中添加名为 Windows 窗体**ProgressForm**。 此窗体应显示一条指示正在进行更新的消息。 它不必包含任何其他控件。  
+3. 向项目中添加名为 Windows 窗体**ProgressForm**。 此窗体应显示一条指示正在进行更新的消息。 它不必包含任何其他控件。  
   
-4.  添加一个 C# 文件，其中包含步骤 7 后显示的代码。  
+4. 添加一个 C# 文件，其中包含步骤 7 后显示的代码。  
   
-5.  生成并运行该项目。  
+5. 生成并运行该项目。  
   
-     一个新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实例将以实验模式打开。  
+    一个新的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实例将以实验模式打开。  
   
-6.  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实验实例中创建或打开一个 UML 类关系图。  
+6. 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 实验实例中创建或打开一个 UML 类关系图。  
   
-7.  在 UML 类图中右键单击任意位置，然后单击**添加若干 UML 类**。  
+7. 在 UML 类图中右键单击任意位置，然后单击**添加若干 UML 类**。  
   
- 关系图中将以半秒的时间间隔接连显示若干新的类框。  
+   关系图中将以半秒的时间间隔接连显示若干新的类框。  
   
 ```csharp  
 using System;  

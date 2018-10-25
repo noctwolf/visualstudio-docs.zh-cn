@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f318f6092c24c58399b40c7a20c967a89ca5219
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6140ecf03802e283d8880a9c198e3a26667723f2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191621"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899690"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,25 +41,25 @@ ms.locfileid: "49191621"
   
 #### <a name="to-override-a-predefined-target"></a>重写预定义的目标  
   
-1.  标识 Microsoft.Common.targets 中需要重写的预定义目标。 请参阅下表，了解可安全重写的目标的完整列表。  
+1. 标识 Microsoft.Common.targets 中需要重写的预定义目标。 请参阅下表，了解可安全重写的目标的完整列表。  
   
-2.  在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如：  
+2. 在项目文件末尾（紧接在 `</Project>` 标记之前）定义一个或多个目标。 例如：  
   
-    ```  
-    <Project>  
-        ...  
-        <Target Name="BeforeBuild">  
-            <!-- Insert tasks to run before build here -->  
-        </Target>  
-        <Target Name="AfterBuild">  
-            <!-- Insert tasks to run after build here -->  
-        </Target>  
-    </Project>  
-    ```  
+   ```  
+   <Project>  
+       ...  
+       <Target Name="BeforeBuild">  
+           <!-- Insert tasks to run before build here -->  
+       </Target>  
+       <Target Name="AfterBuild">  
+           <!-- Insert tasks to run after build here -->  
+       </Target>  
+   </Project>  
+   ```  
   
-3.  生成项目文件。  
+3. 生成项目文件。  
   
- 下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。  
+   下表显示 Microsoft.Common.targets 中可以安全重写的所有目标。  
   
 |Target Name|描述|  
 |-----------------|-----------------|  

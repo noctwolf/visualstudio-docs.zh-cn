@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9ca1917d71ff2ef0961e9f5c99839759c7decff3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926743"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：截获对形状或修饰器的单击
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -126,17 +126,17 @@ public partial class MyShape // change
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>截获单击和拖动 CompartmentShape 列表上  
  下面的示例，用户可以在隔离舱形状中通过拖动它们重新排序项。 若要运行此代码：  
   
-1.  使用创建新 DSL 解决方案**类图**解决方案模板。  
+1. 使用创建新 DSL 解决方案**类图**解决方案模板。  
   
-     此外可以使用你自己的解决方案，其中包含隔离舱形状。 此代码假定是由形状表示的模型元素和隔离舱列表项中表示的元素之间的嵌入关系。  
+    此外可以使用你自己的解决方案，其中包含隔离舱形状。 此代码假定是由形状表示的模型元素和隔离舱列表项中表示的元素之间的嵌入关系。  
   
-2.  设置**生成双派生**隔离舱形状的属性。  
+2. 设置**生成双派生**隔离舱形状的属性。  
   
-3.  在文件中添加此代码**Dsl**项目。  
+3. 在文件中添加此代码**Dsl**项目。  
   
-4.  调整此代码，以匹配你自己的 DSL 中的域类和形状名称。  
+4. 调整此代码，以匹配你自己的 DSL 中的域类和形状名称。  
   
- 总之，代码如下所示。 在此示例中，`ClassShape`隔离舱形状的名称。  
+   总之，代码如下所示。 在此示例中，`ClassShape`隔离舱形状的名称。  
   
 -   在创建时，鼠标事件处理程序的一组附加到每个隔离舱实例中。  
   

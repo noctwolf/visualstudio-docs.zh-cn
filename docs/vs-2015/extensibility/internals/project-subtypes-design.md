@@ -15,12 +15,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: db689d1d8fdb7d60cba232685ee0c8f22ca9cbb2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d167559a442e351c6256d07943092825deef288a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839422"
 ---
 # <a name="project-subtypes-design"></a>项目子类型设计
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49243811"
 ## <a name="project-subtype-design"></a>项目子类型设计  
  项目子类型的初始化通过聚合主<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>对象。 这种聚合将使项目子类型重写或增强的大多数功能的基础项目。 项目子类型获取处理所使用的属性的第一个机会<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>，使用的命令<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>并<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>，和项目项管理使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>。 此外可以扩展项目子类型：  
   
--   项目配置对象。  
+- 项目配置对象。  
   
--   依赖于配置的对象。  
+- 依赖于配置的对象。  
   
--   配置独立于浏览对象。  
+- 配置独立于浏览对象。  
   
--   项目自动化对象。  
+- 项目自动化对象。  
   
--   项目自动化属性集合。  
+- 项目自动化属性集合。  
   
- 通过项目子类型的可扩展性的详细信息，请参阅[属性和由项目子类型扩展方法](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)。  
+  通过项目子类型的可扩展性的详细信息，请参阅[属性和由项目子类型扩展方法](../../extensibility/internals/properties-and-methods-extended-by-project-subtypes.md)。  
   
 ##### <a name="policy-files"></a>策略文件  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]环境提供的扩展基项目系统与项目子类型在其实现中的策略文件示例。 策略文件允许的形成[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过管理功能，其中包括在解决方案资源管理器中，环境**添加项目**对话框中，**添加新项**对话框和**属性**对话框。 策略子类型重写并增强了这些功能通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg>，`IOleCommandTarget`和<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>实现。  

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 56727c338f0f11c9d79704644888448c04064466
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f9e0251d41feb5bd9c61a719d932c6fd954be947
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178964"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932424"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 生成一个大项目时，不重新生成以前生成过但仍然为最新状态的组件十分重要。 如果每次都生成所有目标，则每次生成都需要很长时间才能完成。 为了启用增量生成（这类生成仅重新生成以前未生成过或已过期的目标）， [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 但是，在输入和输出之间必须存在一对一映射。 可以使用转换来使目标能够识别此直接映射。 有关转换的详细信息，请参阅[转换](../msbuild/msbuild-transforms.md)。  
@@ -29,15 +29,15 @@ ms.locfileid: "39178964"
   
 #### <a name="to-specify-inputs-and-outputs-for-a-target"></a>指定目标的输入和输出  
   
--   使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如:  
+- 使用 `Target` 元素的 `Inputs` 和 `Outputs` 属性。 例如:  
   
-    ```xml  
-    <Target Name="Build"  
-        Inputs="@(CSFile)"  
-        Outputs="hello.exe">  
-    ```  
+  ```xml  
+  <Target Name="Build"  
+      Inputs="@(CSFile)"  
+      Outputs="hello.exe">  
+  ```  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 在下面的示例中，如果 `@(CSFile)` 项列表中有任何文件比 hello.exe 文件新，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将运行该目标；否则将跳过它：  
+  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以对输入文件的时间戳和输出文件的时间戳进行比较，并确定是跳过、生成还是部分重新生成某个目标。 在下面的示例中，如果 `@(CSFile)` 项列表中有任何文件比 hello.exe 文件新，则 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 将运行该目标；否则将跳过它：  
   
 ```xml  
 <Target Name="Build"   

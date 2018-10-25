@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_DATA |Microsoft 文档
+title: BP_RESOLUTION_DATA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76cba8fa2b1ea01a2cbd7670a05b449d476127b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0f7ad3c88f0dd804daba2ee52126c7c6321a2a2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109920"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876082"
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
-介绍绑定数据断点的结果。  
+描述绑定数据断点的结果。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,13 +53,13 @@ public struct BP_RESOLUTION_DATA {
  函数的名称 （如果有），已在绑定数据断点。  
   
  `bstrImage`  
- 数据断点已绑定中的模块 (例如 MyModule.dll) 名称。  
+ 数据断点具有绑定中的模块 (例如 MyModule.dll) 的名称。  
   
  `dwFlags`  
- 取值范围为[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)枚举，描述如何实现数据断点。  
+ 中的值[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)描述如何实现数据断点的枚举。  
   
 ## <a name="remarks"></a>备注  
- 此结构是的成员[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构，是在打开的成员[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构返回[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
+ 此结构是的成员[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构，它是在打开的成员[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)由返回结构[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -68,7 +68,7 @@ public struct BP_RESOLUTION_DATA {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   

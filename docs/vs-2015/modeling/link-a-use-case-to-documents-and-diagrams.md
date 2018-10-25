@@ -17,29 +17,29 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 1e97c514ea861b74cfb66eeba00da97799b956c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2137863e48fbedfff4736588a6f3a177786aac57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232526"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824498"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>将用例链接到文档和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 你可以将用例图中的用例链接到另一个关系图或文档。 例如，可以将用例链接到以下关系图和文档：  
   
--   序列图，显示如何通过用户和系统设置或其中主要组件之间的交互实现用例的目标。  
+- 序列图，显示如何通过用户和系统设置或其中主要组件之间的交互实现用例的目标。  
   
--   活动图，显示执行用例的用户和系统或其主要组件的详细活动。  
+- 活动图，显示执行用例的用户和系统或其主要组件的详细活动。  
   
--   详细描述此用例的 OneNote 页面或段落。  
+- 详细描述此用例的 OneNote 页面或段落。  
   
--   详细描述用例的 Word 文档或 PowerPoint 演示文稿。 可以将此类文档保留在解决方案中或团队可访问的位置（如 SharePoint 网站）。  
+- 详细描述用例的 Word 文档或 PowerPoint 演示文稿。 可以将此类文档保留在解决方案中或团队可访问的位置（如 SharePoint 网站）。  
   
- 若要将某个用例链接到文档，请在用例图上创建一个项目，然后将该用例连接到该项目。 在项目的属性中，设置其他关系图或文档的文件路径。 双击该项目，即会打开其他关系图或文档。  
+  若要将某个用例链接到文档，请在用例图上创建一个项目，然后将该用例连接到该项目。 在项目的属性中，设置其他关系图或文档的文件路径。 双击该项目，即会打开其他关系图或文档。  
   
- 你可以根据需要将多个项目连接到每个用例。 还可以将项目链接到用例图上其他类型的元素。  
+  你可以根据需要将多个项目连接到每个用例。 还可以将项目链接到用例图上其他类型的元素。  
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>打开与项目关联的文档  
   

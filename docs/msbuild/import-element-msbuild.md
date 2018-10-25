@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4cba83b1e2ed91e827c8dc09dc3b3e7a02bc61
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 7dd5b0aa6f0ed56aaa3315c03aeef6ed1b77ad62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39077485"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839604"
 ---
 # <a name="import-element-msbuild"></a>Import 元素 (MSBuild)
 将一个项目文件的内容导入其他项目文件中。  
@@ -55,10 +55,10 @@ ms.locfileid: "39077485"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
-|[ImportGroup](../msbuild/importgroup-element.md)|包含在可选条件下进行分组的 `Import` 元素的集合。|  
+| 元素 | 描述 |
+| - | - |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
+| [ImportGroup](../msbuild/importgroup-element.md) | 包含在可选条件下进行分组的 `Import` 元素的集合。 |
 
 ## <a name="remarks"></a>备注  
  使用 `Import` 元素可以重复使用对许多项目文件通用的代码。 这样可以更轻松地维护代码，因为对共享的代码进行的任何更新都会传播到导入它的所有项目。  
@@ -75,7 +75,7 @@ ms.locfileid: "39077485"
 
 > [!NOTE]
 >  虽然条件导入语句可在命令行 MSBuild 中正常工作，不过它们不适用于 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中的 MSBuild。 使用加载项目时设置的配置和平台值来计算条件导入。 如果随后进行了需要对项目文件中的条件进行重新计算的更改（例如更改平台），则 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会对属性和项重新计算条件，但不会对导入重新计算。 因为不会重新计算导入条件，所以会跳过导入。  
->   
+> 
 >  若要解决此问题，请将条件导入置于 .targets 文件中，或将代码置于条件块（如 [Choose 元素 (MSBuild)](../msbuild/choose-element-msbuild.md) 块）中。  
 
 ## <a name="wildcards"></a>通配符  

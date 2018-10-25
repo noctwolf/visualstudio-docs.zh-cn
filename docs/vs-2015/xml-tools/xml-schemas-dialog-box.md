@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e229919a625241f270090eb59be4aa8cd478c18c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251681"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899586"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "49251681"
  **使用**  
  选择如何使用“XML 架构”。  
   
--   **自动**。 当前文档未使用此架构，但是此架构可用于自动关联。 如果 XML 文档声明一个与此架构的 `targetNamespace` 匹配的命名空间，则将自动关联此架构并将其包含在架构集中。  
+- **自动**。 当前文档未使用此架构，但是此架构可用于自动关联。 如果 XML 文档声明一个与此架构的 `targetNamespace` 匹配的命名空间，则将自动关联此架构并将其包含在架构集中。  
   
--   **使用此架构**。 当前文档正在使用此架构。 用户已显式请求通过单击此列来使用此架构，或者根据匹配的 `targetNamespace` 自动关联此架构。  
+- **使用此架构**。 当前文档正在使用此架构。 用户已显式请求通过单击此列来使用此架构，或者根据匹配的 `targetNamespace` 自动关联此架构。  
   
--   **不使用所选的架构**。 当前文档不使用此架构，即使此架构具有匹配的 `targetNamespace`。 当架构缓存或解决方案中有同一架构的多个版本时，可以使用此设置来解决冲突。  
+- **不使用所选的架构**。 当前文档不使用此架构，即使此架构具有匹配的 `targetNamespace`。 当架构缓存或解决方案中有同一架构的多个版本时，可以使用此设置来解决冲突。  
   
- **目标 Namespace**  
- 显示与 XML 架构关联的目标命名空间。  
+  **目标 Namespace**  
+  显示与 XML 架构关联的目标命名空间。  
   
- **文件的名称**  
- 显示 XML 架构文件名。  
+  **文件的名称**  
+  显示 XML 架构文件名。  
   
- **添加**  
- 此时将打开**打开 XSD 架构**对话框中，这样就可以选择要添加到架构集中的其他架构。 将架构添加到架构设置**使用**列的值设置为**使用此架构**。  
+  **添加**  
+  此时将打开**打开 XSD 架构**对话框中，这样就可以选择要添加到架构集中的其他架构。 将架构添加到架构设置**使用**列的值设置为**使用此架构**。  
   
- **移除**  
- 从架构集中移除当前所选的架构。 该操作将从内存中的架构缓存中移除架构，但不从文件系统中移除架构。  
+  **移除**  
+  从架构集中移除当前所选的架构。 该操作将从内存中的架构缓存中移除架构，但不从文件系统中移除架构。  
   
 ## <a name="see-also"></a>请参阅  
  [XML 编辑器组件](../xml-tools/xml-editor-components.md)   

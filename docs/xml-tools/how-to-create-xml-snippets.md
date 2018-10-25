@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae09c578eac5a4acbfa9c169ba175fe557872da5
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: db7d1cc841da888c46342ec25bf28c3af7370be9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34548539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867710"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何： 创建 XML 代码段
 
@@ -23,7 +23,7 @@ ms.locfileid: "34548539"
 
 ## <a name="to-create-a-new-xml-snippet"></a>新建 XML 代码段
 
- 要创建新的 XML 代码段将创建一个新的 XML 文件并使用**插入代码段**功能。
+ 若要创建新的 XML 代码段创建一个新的 XML 文件，并使用**插入代码段**功能。
 
 1.  上**文件**菜单上，单击**新建**，然后单击**文件**。
 
@@ -31,21 +31,21 @@ ms.locfileid: "34548539"
 
 3.  在编辑器窗格中右键单击并选择**插入代码段**。
 
-4.  选择**段**从列表和按**Enter**。
+4.  选择**代码片段**从该列表并按**Enter**。
 
 5.  对新的代码段进行所需的更改。
 
 6.  从**文件**菜单中选择**保存 XMLFile.xml**。
 
-     **文件另存为**对话框随即显示。
+     **将文件另存为**显示对话框。
 
 7.  输入新的代码段名称并选择**代码段文件**从**另存为类型**下拉窗口。
 
-8.  使用**将保存在**下拉列表更改到的文件位置*My Documents\Visual Studio 2005\Code \code Snippets\XML\My XML Snippets*文件夹，然后按**保存**。
+8.  使用**以保存**下拉列表更改到的文件位置*My Documents\Visual Studio 2005\Code Snippets\XML\My XML Snippets*文件夹，然后按**保存**。
 
 ## <a name="snippet-description"></a>代码段说明
 
- 本节介绍代码段样本中的一些重要元素。 有关所使用的 XML 代码段架构元素的详细信息，请参阅[代码片段架构参考](../ide/code-snippets-schema-reference.md)。
+ 本节介绍代码段样本中的一些重要元素。 有关使用的 XML 代码段架构元素的详细信息，请参阅[代码片段架构参考](../ide/code-snippets-schema-reference.md)。
 
 ### <a name="snippettype-element"></a>SnippetType 元素
 
@@ -80,13 +80,13 @@ ms.locfileid: "34548539"
 
  `Code` 元素包括三个变量。
 
--   $name$ 是用户定义变量。 该变量创建 `name` 元素，该元素的值可编辑，且默认值为“name”。 用户定义变量使用 `Literal` 元素定义。
+- $name$ 是用户定义变量。 该变量创建 `name` 元素，该元素的值可编辑，且默认值为“name”。 用户定义变量使用 `Literal` 元素定义。
 
--   $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。
+- $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。
 
--   $end$ 是预定义变量。 当用户按**Enter**若要完成代码段字段的编辑，此变量确定移动插入符号 (^) 位置。
+- $end$ 是预定义变量。 当用户按**Enter**完成编辑代码段字段，此变量确定插入符号 (^) 移动到的位置。
 
- 上面的 `Code` 元素插入以下 XML 文本：
+  上面的 `Code` 元素插入以下 XML 文本：
 
 ```xml
 <test>
@@ -107,7 +107,7 @@ ms.locfileid: "34548539"
 </Literal
 ```
 
- Literal 元素还可以指函数。 XML 编辑器包括一个名为函数**LookupPrefix**。 **LookupPrefix**函数从 XML 文档，此代码段从调用和返回如果有的话，为该命名空间定义的命名空间前缀，它包含冒号 （:） 中的位置查找给定的命名空间 URI在该名称。 以下是一种`Literal`用元素**LookupPrefix**函数。
+ Literal 元素还可以指函数。 XML 编辑器包含一个名为**LookupPrefix**。 **LookupPrefix**函数从 XML 文档，此代码段从调用和返回如果有，该命名空间定义的命名空间前缀，它包含冒号 （:） 中的位置查找给定的命名空间 URI在该名称。 以下是一种`Literal`使用的元素**LookupPrefix**函数。
 
 ```xml
 <Literal Editable="false">

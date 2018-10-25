@@ -26,12 +26,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bea3ca5adf462ec6c403099c8276bbdb87e4b57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67cc55d47e10093b440597ce464d7cc058689455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178940"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920360"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>针对 HPC（高性能计算）群集进行分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ ms.locfileid: "49178940"
 ## <a name="prerequisites"></a>系统必备  
  若要对 HPC 计算节点进行分析，必须执行以下操作：  
   
--   在与 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的计算机上安装 Microsoft HPC Pack 2008。 计算机不必是 HPC 群集的一部分。 可以在 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=177414)安装 HPC 包。  
+- 在与 [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] 相同的计算机上安装 Microsoft HPC Pack 2008。 计算机不必是 HPC 群集的一部分。 可以在 [Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkID=177414)安装 HPC 包。  
   
--   在 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 以及分析工具的独立版本。 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 和独立探查器的安装程序都位于 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安装媒体上。 **注意** 安装 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 后，必须重新启动计算机，然后才能安装分析工具。  
+- 在 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 以及分析工具的独立版本。 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 和独立探查器的安装程序都位于 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 安装媒体上。 **注意** 安装 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 后，必须重新启动计算机，然后才能安装分析工具。  
   
- 若要在活动 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和独立分析工具并对群集计算机启用分析，请按照以下步骤操作：  
+  若要在活动 HPC 计算节点上安装 [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] 和独立分析工具并对群集计算机启用分析，请按照以下步骤操作：  
   
 1.  打开随 HPC 包安装的命令提示符窗口。  
   

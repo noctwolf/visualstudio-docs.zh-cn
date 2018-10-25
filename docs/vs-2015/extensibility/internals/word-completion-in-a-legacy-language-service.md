@@ -17,12 +17,12 @@ ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 591967bd9ac61b611b1b062a006a5069fc94d114
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b1cf22cd0bc717e9e9e3d0b06b76bed8420d1778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910792"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>旧版语言服务中的文字完成
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49285293"
   
 ## <a name="implementation-steps"></a>实现步骤  
   
-1.  当用户选择**完成单词**从**IntelliSense**菜单中，<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令发送到语言服务。  
+1. 当用户选择**完成单词**从**IntelliSense**菜单中，<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>命令发送到语言服务。  
   
-2.  <xref:Microsoft.VisualStudio.Package.ViewFilter>类用于捕获命令以及调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。  
+2. <xref:Microsoft.VisualStudio.Package.ViewFilter>类用于捕获命令以及调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。  
   
-3.  <xref:Microsoft.VisualStudio.Package.Source>然后类调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法以获取可能的单词补全和显示工具提示中的单词列表使用的列表<xref:Microsoft.VisualStudio.Package.CompletionSet>类。  
+3. <xref:Microsoft.VisualStudio.Package.Source>然后类调用<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法以获取可能的单词补全和显示工具提示中的单词列表使用的列表<xref:Microsoft.VisualStudio.Package.CompletionSet>类。  
   
-     如果只有一个匹配的单词，<xref:Microsoft.VisualStudio.Package.Source>类完成单词。  
+    如果只有一个匹配的单词，<xref:Microsoft.VisualStudio.Package.Source>类完成单词。  
   
- 或者，如果扫描程序返回触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>标识符的第一个字符键入时，<xref:Microsoft.VisualStudio.Package.Source>检测到此类，并调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。 在这种情况下分析器必须检测存在成员选择字符，并提供成员的列表。  
+   或者，如果扫描程序返回触发器值<xref:Microsoft.VisualStudio.Package.TokenTriggers>标识符的第一个字符键入时，<xref:Microsoft.VisualStudio.Package.Source>检测到此类，并调用<xref:Microsoft.VisualStudio.Package.Source.Completion%2A>方法，分析原因为<xref:Microsoft.VisualStudio.Package.ParseReason>。 在这种情况下分析器必须检测存在成员选择字符，并提供成员的列表。  
   
 ## <a name="enabling-support-for-the-complete-word"></a>启用了完整的字词的支持  
  若要启用对 word 完成项集合的支持`CodeSense`名为参数传递给<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>与语言包相关联的用户属性。 这将设置<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A>属性上的<xref:Microsoft.VisualStudio.Package.LanguagePreferences>类。  

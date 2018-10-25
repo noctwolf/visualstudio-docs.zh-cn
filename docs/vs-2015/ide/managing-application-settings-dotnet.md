@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb2623c9122b987d8e0fe781b62127cd65bde0dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac4f670b813970d027925b681a2e3211e1898e1a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866124"
 ---
 # <a name="managing-application-settings-net"></a>管理应用程序设置 (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,13 +42,13 @@ ms.locfileid: "49289505"
   
  有两类基于范围的应用程序设置：  
   
--   应用程序范围的设置可以用于诸如 Web 服务的 URL 或数据库连接字符串这类的信息。 这些值是与应用程序关联的。 因此，用户无法在运行时更改这些值。  
+- 应用程序范围的设置可以用于诸如 Web 服务的 URL 或数据库连接字符串这类的信息。 这些值是与应用程序关联的。 因此，用户无法在运行时更改这些值。  
   
--   用户范围的设置可以用于诸如保持窗体的最后位置或字体首选项这类的信息。 用户可以在运行时更改这些值。  
+- 用户范围的设置可以用于诸如保持窗体的最后位置或字体首选项这类的信息。 用户可以在运行时更改这些值。  
   
- 可以使用 **“范围”** 属性更改设置类型。  
+  可以使用 **“范围”** 属性更改设置类型。  
   
- 项目系统将应用程序设置存储在两个 XML 文件中：一个是 app.config 文件，它是创建第一个应用程序设置时在设计时创建的；另一个是 user.config 文件，它是当运行应用程序的用户更改任何用户设置的值时在运行时创建的。 请注意，用户设置中的更改不会写到磁盘，除非应用程序专门调用某一方法这样做。  
+  项目系统将应用程序设置存储在两个 XML 文件中：一个是 app.config 文件，它是创建第一个应用程序设置时在设计时创建的；另一个是 user.config 文件，它是当运行应用程序的用户更改任何用户设置的值时在运行时创建的。 请注意，用户设置中的更改不会写到磁盘，除非应用程序专门调用某一方法这样做。  
   
 ## <a name="creating-application-settings-at-design-time"></a>在设计时创建应用程序设置  
  在设计时，可用两种方法来创建应用程序设置：通过使用 **“项目设计器”** 的 **“设置”** 页，或通过使用窗体或控件的 **“属性”** 窗口，都可以让你将设置直接绑定到属性。  

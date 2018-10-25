@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a0305c15e4230313cbe51d64a3a798d03eb3937e
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: b83fbf98143511bac19bef1fb2b528c71517a55f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546776"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823004"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 处理
+
 |||
 |-|-|
 |TypeName|InsecureDTDProcessing|
@@ -26,10 +27,12 @@ ms.locfileid: "45546776"
 |是否重大更改|非重大更改|
 
 ## <a name="cause"></a>原因
- 如果使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 实例或引用外部实体源，分析器可能会接受不受信任的输入并将敏感信息泄露给攻击者。
+
+如果使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 实例或引用外部实体源，分析器可能会接受不受信任的输入并将敏感信息泄露给攻击者。
 
 ## <a name="rule-description"></a>规则说明
- 一个*文档类型定义 (DTD)* 定义的是 XML 分析器可以确定文档有效性的两种方式之一[World Wide Web 联合会 (W3C) 可扩展标记语言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此规则查找接受不受信任数据的某些属性和实例以提醒开发人员有关的潜在 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威胁，该威胁可能会导致 [拒绝服务 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻击。 在以下情况下触发此规则：
+
+XML 分析器可以通过两种方式确定文档有效性， *文档类型定义 (DTD)* 是其中一种（根据  [万维网联合会 (W3C) 可扩展标记语言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)的定义）。 此规则查找接受不受信任数据的某些属性和实例以提醒开发人员有关的潜在 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威胁，该威胁可能会导致 [拒绝服务 (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻击。 在以下情况下触发此规则：
 
 - 在 <xref:System.Xml.XmlReader> 实例上启用了 DtdProcessing，它使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 实体。
 
@@ -43,7 +46,7 @@ ms.locfileid: "45546776"
 
 - <xref:System.Xml.XmlReader> 使用不安全的默认设置或值创建。
 
- 在这些情况下，结果均相同：来自文件系统或来自处理 XML 的计算机的网络共享的文件都将面临攻击，其随后可能会被用作 DoS 向量。
+在这些情况下，结果均相同：来自文件系统或来自处理 XML 的计算机的网络共享的文件都将面临攻击，其随后可能会被用作 DoS 向量。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
 
@@ -55,23 +58,24 @@ ms.locfileid: "45546776"
 
 - 确保从可信的源分配 <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> 的 <xref:System.Data.DataViewManager> 属性。
 
- .NET 3.5 及更早版本
+**.NET 3.5 及更早版本**
 
 - 如果正在处理不可信的源，请通过将 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 属性设置为 **true** 禁用 DTD 处理。
 
 - XmlTextReader 类具有完全信任继承要求。
 
- .NET 4 及更高版本
+**.NET 4 及更高版本**
 
 - 避免启用 DtdProcessing，如果您正在处理不可信的源通过设置<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>属性设置为**禁止**或**忽略**。
 
 - 确保在所有 InnerXml 用例中 load () 方法均采用 XmlReader 实例。
 
 > [!NOTE]
->  此规则可能会针对某些有效 XmlSecureResolver 实例进行误报。 我们正在努力解决此问题，并预计于 2016 年中期之前解决此问题。
+> 此规则可能会针对某些有效 XmlSecureResolver 实例进行误报。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 除非确信已知道输入是来自受信任的源，否则请勿禁止显示此警告的规则。
+
+除非确信已知道输入是来自受信任的源，否则请勿禁止显示此警告的规则。
 
 ## <a name="pseudo-code-examples"></a>伪代码示例
 

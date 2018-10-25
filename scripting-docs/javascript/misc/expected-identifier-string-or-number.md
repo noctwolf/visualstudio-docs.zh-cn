@@ -1,5 +1,5 @@
 ---
-title: 预期标识符、 字符串或数字 |Microsoft 文档
+title: 应为标识符、 字符串或数字 |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0ea67835a0c60d45d9e79f552183e0a4d6b677ac
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24632877"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855126"
 ---
 # <a name="expected-identifier-string-or-number"></a>应为标识符、字符串或数字
-使用不正确的文本语法来声明的对象文本。 文本的属性必须是对象的标识符、 字符串或数字。 对象文字 （也称为"对象初始值设定项"） 包含的属性： 值对，所有包含在括号内以逗号分隔列表。 例如：  
+不正确的文本语法用于声明对象文字。 对象文字的属性必须是标识符、 字符串或数字。 对象文字 （也称为"对象初始值设定项"） 包含以逗号分隔的属性： 值对，所有包含在括号内的列表。 例如：  
   
 ```JavaScript  
 var point = {x:1.2, y:-3.4};  
@@ -36,7 +36,7 @@ var point = {x:1.2, y:-3.4};
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   确保使用正确的文本语法。  
+-   请确保使用正确的文字语法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [逗号运算符 (,)](../../javascript/reference/comma-operator-decrement-javascript.md)

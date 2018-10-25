@@ -16,12 +16,12 @@ ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bd74c98b3ad2951437e8d0acdfb98c02e5dfa5e0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ded80c0bcb7ac8246d1ac620aa936d63ecb3b04d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220852"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902368"
 ---
 # <a name="automation-support-for-options-pages"></a>选项页的自动化支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ Vspackage 可以提供自定义**选项**到对话框**工具**中的菜单 （�
   
  它是可选的但强烈建议，以允许访问自动化模型通过此新页。 可以通过以下步骤来执行此操作：  
   
-1.  扩展<xref:EnvDTE._DTE.Properties%2A>IDispatch 派生的对象实现的对象。  
+1. 扩展<xref:EnvDTE._DTE.Properties%2A>IDispatch 派生的对象实现的对象。  
   
-2.  返回的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或托管代码的<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 到 IDispatch 派生的对象。  
+2. 返回的实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法 (或托管代码的<xref:Microsoft.VisualStudio.Shell.Package.GetAutomationObject%2A>方法) 到 IDispatch 派生的对象。  
   
-3.  当自动化使用者调用<xref:EnvDTE._DTE.Properties%2A>方法的自定义**选项**属性页中，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法来获取自定义**工具选项**页面的自动化实现。  
+3. 当自动化使用者调用<xref:EnvDTE._DTE.Properties%2A>方法的自定义**选项**属性页中，在环境中使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法来获取自定义**工具选项**页面的自动化实现。  
   
-4.  VSPackage 的自动化对象然后用于提供每个<xref:EnvDTE.Property>返回的<xref:EnvDTE._DTE.Properties%2A>。  
+4. VSPackage 的自动化对象然后用于提供每个<xref:EnvDTE.Property>返回的<xref:EnvDTE._DTE.Properties%2A>。  
   
- 实现自定义工具选项页的示例，请参阅[VSSDK 示例](../../misc/vssdk-samples.md)。  
+   实现自定义工具选项页的示例，请参阅[VSSDK 示例](../../misc/vssdk-samples.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [公开项目对象](../../extensibility/internals/exposing-project-objects.md)

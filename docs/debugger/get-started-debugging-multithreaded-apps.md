@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cb05ea81f086cf8c26e3058850968a909b84e3
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: 66239362e454d5ab333214c444aeee3fa54b1b8a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936846"
 ---
 # <a name="get-started-debugging-multithreaded-applications-in-visual-studio"></a>开始调试 Visual Studio 中的多线程应用程序
 Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用线程标记**并行堆栈**窗口中，**并行监视**窗口中，条件断点，并筛选器断点。 本教程中，只需要几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。
 
-|         |         |
+| | |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)上显示了类似的步骤的多线程调试。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171)上显示了类似的步骤的多线程调试。 |
 
 其他主题提供有关使用其他多线程调试工具的其他信息：
 
@@ -194,7 +194,7 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
     End Class
     ```
   
-7.  上**文件**菜单上，单击**全部保存**。  
+7.  在“文件”  菜单上，单击“全部保存” 。  
   
 #### <a name="to-begin-the-tutorial"></a>若要开始学习教程  
   
@@ -217,30 +217,30 @@ Visual Studio 提供多种工具和用户界面元素，以帮助您调试多线
   
 #### <a name="to-start-debugging"></a>开始调试  
   
-1.  左侧滚动条槽中单击`Thread.Sleep`或`this_thread::sleep_for`语句将新断点。  
+1. 左侧滚动条槽中单击`Thread.Sleep`或`this_thread::sleep_for`语句将新断点。  
   
-     在源代码编辑器左侧的滚动条槽，将显示一个红色圆圈。 这表示现在已在该位置设置了一个断点。 
+    在源代码编辑器左侧的滚动条槽，将显示一个红色圆圈。 这表示现在已在该位置设置了一个断点。 
   
-2.  上**调试**菜单上，单击**开始调试**(**F5**)。  
+2. 上**调试**菜单上，单击**开始调试**(**F5**)。  
   
-     Visual Studio 生成该解决方案、 应用程序开始运行附带，调试器，然后应用程序停止在断点处。  
+    Visual Studio 生成该解决方案、 应用程序开始运行附带，调试器，然后应用程序停止在断点处。  
   
-    > [!NOTE]
-    > 如果焦点切换到控制台窗口中，单击在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]窗口，以使焦点返回到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+   > [!NOTE]
+   > 如果焦点切换到控制台窗口中，单击在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]窗口，以使焦点返回到[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-4.  在源代码编辑器中，找到包含该断点的行：  
+3. 在源代码编辑器中，找到包含该断点的行：  
   
-    ```csharp  
-    Thread.Sleep(3000);  
-    ```  
+   ```csharp  
+   Thread.Sleep(3000);  
+   ```  
   
-    ```C++  
-    this_thread::sleep_for(chrono::seconds(3)); 
-    ```
+   ```C++  
+   this_thread::sleep_for(chrono::seconds(3)); 
+   ```
 
-    ```VB
-    Thread.Sleep(3000)
-    ```    
+   ```VB
+   Thread.Sleep(3000)
+   ```    
   
 #### <a name="ShowThreadsInSource"></a>若要发现线程标记  
 

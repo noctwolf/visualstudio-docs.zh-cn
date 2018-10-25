@@ -19,12 +19,12 @@ caps.latest.revision: 58
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be81688429d6a7d9d8d2cc5fa3e1e1a5662d1263
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 33450d7f904cebd79259c30245cf07e23ca1aba1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896130"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>演练：确定性能问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49274477"
   
 ## <a name="prerequisites"></a>系统必备  
   
--   对 C# 有中等程度的理解。  
+- 对 C# 有中等程度的理解。  
   
--   [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本。  
+- [PeopleTrax 示例](../profiling/peopletrax-sample-profiling-tools.md)的副本。  
   
- 若要使用分析提供的信息，最好有可用的调试符号信息。  
+  若要使用分析提供的信息，最好有可用的调试符号信息。  
   
 ## <a name="profiling-by-using-the-sampling-method"></a>使用采样方法进行分析  
  采样是一种分析方法，通过此方法可定期对相关进程进行轮询以确定活动的函数。 生成的数据提供对进程进行采样时相关函数位于调用堆栈顶部的频率计数。  
@@ -139,29 +139,29 @@ ms.locfileid: "49274477"
   
 #### <a name="to-analyze-instrumented-profiling-results"></a>分析检测的分析结果  
   
-1.  报表的“摘要”视图的时间线关系图显示分析运行期间该程序的 CPU 使用率。 导出数据操作应为该关系图右侧较大的峰值或停滞。 我们可以筛选性能会话以仅显示和分析导出操作中收集的数据。 单击该关系图上导出数据操作开始的数据点的左侧。 再次单击该操作的右侧。 然后在时间线右侧的链接列表中单击“按选定内容筛选”。  
+1. 报表的“摘要”视图的时间线关系图显示分析运行期间该程序的 CPU 使用率。 导出数据操作应为该关系图右侧较大的峰值或停滞。 我们可以筛选性能会话以仅显示和分析导出操作中收集的数据。 单击该关系图上导出数据操作开始的数据点的左侧。 再次单击该操作的右侧。 然后在时间线右侧的链接列表中单击“按选定内容筛选”。  
   
-     “热路径”树显示出 PeopleTrax.Form1.ExportData 方法调用的 <xref:System.String.Concat%2A> 方法消耗的时间占有很大的比重。 由于 **System.String.Concat** 也位于“执行单个工作最多的函数”列表的顶部，因此函数中消耗的时间可能是优化的一个方法。  
+    “热路径”树显示出 PeopleTrax.Form1.ExportData 方法调用的 <xref:System.String.Concat%2A> 方法消耗的时间占有很大的比重。 由于 **System.String.Concat** 也位于“执行单个工作最多的函数”列表的顶部，因此函数中消耗的时间可能是优化的一个方法。  
   
-2.  双击任一摘要表中的“System.String.Concat”以在“函数详细信息”视图中查看更多信息。  
+2. 双击任一摘要表中的“System.String.Concat”以在“函数详细信息”视图中查看更多信息。  
   
-3.  可以看到，PeopleTrax.Form1.ExportData 是唯一调用 Concat 的方法。 在“调用函数”列表中单击“PeopleTrax.Form1.ExportData”以选择方法作为“函数详细信息”视图的目标。  
+3. 可以看到，PeopleTrax.Form1.ExportData 是唯一调用 Concat 的方法。 在“调用函数”列表中单击“PeopleTrax.Form1.ExportData”以选择方法作为“函数详细信息”视图的目标。  
   
-4.  在“函数代码视图”窗口中检查该方法。 请注意，没有针对 **System.String.Concat** 的任何文本调用。 相反，多次使用了 += 操作数，编译器将其替换为对 **System.String.Concat** 的调用。 对 .NET Framework 中的字符串进行任何修改都会导致分配一个新的字符串。 .NET Framework 包括针对字符串串联优化的 <xref:System.Text.StringBuilder> 类  
+4. 在“函数代码视图”窗口中检查该方法。 请注意，没有针对 **System.String.Concat** 的任何文本调用。 相反，多次使用了 += 操作数，编译器将其替换为对 **System.String.Concat** 的调用。 对 .NET Framework 中的字符串进行任何修改都会导致分配一个新的字符串。 .NET Framework 包括针对字符串串联优化的 <xref:System.Text.StringBuilder> 类  
   
-5.  若要使用优化后的代码替换此问题区域，请将 OPTIMIZED_EXPORTDATA 作为条件编译符号添加到 PeopleTrax 项目中。  
+5. 若要使用优化后的代码替换此问题区域，请将 OPTIMIZED_EXPORTDATA 作为条件编译符号添加到 PeopleTrax 项目中。  
   
-6.  在“解决方案资源管理器”中右键单击 PeopleTrax 项目，再单击“属性”。  
+6. 在“解决方案资源管理器”中右键单击 PeopleTrax 项目，再单击“属性”。  
   
-     将出现 PeopleTrax 项目属性窗体。  
+    将出现 PeopleTrax 项目属性窗体。  
   
-7.  单击“生成”选项卡。  
+7. 单击“生成”选项卡。  
   
-8.  在“条件编译符号”文本框中，键入 **OPTIMIZED_EXPORTDATA**。  
+8. 在“条件编译符号”文本框中，键入 **OPTIMIZED_EXPORTDATA**。  
   
 9. 关闭项目属性窗体，然后在系统提示时选择“保存全部”。  
   
- 再次运行应用程序时，你将看到性能有了显著的改进。 建议即使有了用户可见的性能改进，也再次运行性能分析会话。 有必要在修复问题后查看数据，因为第一个问题可能掩盖某些其他问题。  
+   再次运行应用程序时，你将看到性能有了显著的改进。 建议即使有了用户可见的性能改进，也再次运行性能分析会话。 有必要在修复问题后查看数据，因为第一个问题可能掩盖某些其他问题。  
   
 ## <a name="see-also"></a>请参阅  
  [概述](../profiling/overviews-performance-tools.md)   

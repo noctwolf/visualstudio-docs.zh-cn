@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: deaa0b37988e2df04bb7937c76f341af849698f0
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9af687eb4b39afdbe9fd34df1aa03f18ce243ef8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124965"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903109"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中生成 C# Equals 和 GetHashCode 方法重写
 
@@ -43,10 +43,10 @@ ms.locfileid: "44124965"
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含类型声明的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含类型声明的行上，它会出现在左边）。
 
    ![生成重写预览](media/overrides-preview-cs.png)
 

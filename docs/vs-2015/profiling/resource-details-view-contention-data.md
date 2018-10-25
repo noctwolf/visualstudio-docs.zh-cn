@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a99cce1d78c91ce2300e30127d0e5375d2cc1b1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30f5725743fe74781ddc18ebf77f04945b44d8e3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49918189"
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ ms.locfileid: "49203718"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>查看或编辑调用堆栈中的函数的源代码  
   
--   在“调用堆栈”窗口中，单击函数名。  
+- 在“调用堆栈”窗口中，单击函数名。  
   
- 函数源代码必须是当前项目的一部分。  
+  函数源代码必须是当前项目的一部分。  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>查看资源的争用事件的调用树  
   

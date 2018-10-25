@@ -16,12 +16,12 @@ ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: da04f97cc31ba235fd70aea60f01c51f8c8a2b75
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d4b955879380166aae7d9a8e210ac7d5e53f882f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291897"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873469"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>在旧版语言服务中注释代码
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49291897"
 ## <a name="comment-styles"></a>注释样式  
  有两种常规样式的注释：  
   
-1.  行注释，其中注释是在单个行。  
+1. 行注释，其中注释是在单个行。  
   
-2.  块注释，注释可以包含多个行的位置。  
+2. 块注释，注释可以包含多个行的位置。  
   
- 行的注释通常具有起始字符 （或字符），块注释时具有开始和结束字符。 例如，在 C# 中，行注释开头 / /、 块注释开头和 / * 结尾\*/。  
+   行的注释通常具有起始字符 （或字符），块注释时具有开始和结束字符。 例如，在 C# 中，行注释开头 / /、 块注释开头和 / * 结尾\*/。  
   
- 当用户选择命令**注释选定内容**从**编辑** -> **高级**菜单中，该命令将路由到<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>方法<xref:Microsoft.VisualStudio.Package.Source>类。 当用户选择命令**取消注释选定内容**，该命令将路由到<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
+   当用户选择命令**注释选定内容**从**编辑** -> **高级**菜单中，该命令将路由到<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>方法<xref:Microsoft.VisualStudio.Package.Source>类。 当用户选择命令**取消注释选定内容**，该命令将路由到<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
   
 ## <a name="supporting-code-comments"></a>支持代码注释  
  你可以通过将语言服务支持代码注释`EnableCommenting`名为的参数<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>。 这将设置<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>属性的<xref:Microsoft.VisualStudio.Package.LanguagePreferences>类。 有关设置 servicce 功能的语言的详细信息，请参阅[注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md))。  

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 847f37d14743ae45efc273e8ac0b9f6d68b83e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6fa8f027fbb3418fff47b0459628afb691c8a05a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893671"
 ---
 # <a name="t4-import-directive"></a>T4 导入指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,15 +45,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>标准导入  
  将自动导入以下命名空间，您无需为其编写导入指令：  
   
--   `System`  
+- `System`  
   
- 另外，如果您使用自定义指令，则指令处理器可能会自动导入一些命名空间。  
+  另外，如果您使用自定义指令，则指令处理器可能会自动导入一些命名空间。  
   
- 例如，如果您为域特定语言 (DSL) 编写模板，则无需为下列命名空间编写导入指令：  
+  例如，如果您为域特定语言 (DSL) 编写模板，则无需为下列命名空间编写导入指令：  
   
--   `Microsoft.VisualStudio.Modeling`  
+- `Microsoft.VisualStudio.Modeling`  
   
--   DSL 的命名空间  
+- DSL 的命名空间  
   
 ## <a name="see-also"></a>请参阅  
  [T4 程序集指令](../modeling/t4-assembly-directive.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Enable |Microsoft 文档
+title: IDebugPendingBreakpoint2::Enable |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930e806616ef5f4c30aa39b8c6e8ac156ab4a1ba
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 51309f1af6a96663e9d2ad71348a5b56a0fab6f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122790"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855477"
 ---
 # <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 切换挂起断点的启用的状态。  
@@ -42,13 +42,13 @@ int Enable(
   
 #### <a name="parameters"></a>参数  
  `fEnable`  
- [in]设置为非零值 (`TRUE`) 若要启用挂起断点，或为零 (`FALSE`) 若要禁用。  
+ [in]设置为非零值 (`TRUE`) 以启用挂起断点，或为零 (`FALSE`) 若要禁用。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。  
   
 ## <a name="remarks"></a>备注  
- 当挂起断点是启用还是禁用时，它从绑定的所有断点都设置为相同的状态。  
+ 当启用或禁用挂起断点，从该绑定的所有断点都设置为相同的状态。  
   
  可能有必要，请根据多次调用此方法，即使已启用或禁用断点。  
   
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

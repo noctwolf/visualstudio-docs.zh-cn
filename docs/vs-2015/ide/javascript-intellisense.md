@@ -31,12 +31,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1daa2681b52f8e052d2868135d028bbbe0092fe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 215bebb071ce707e2997e934fd58901ec2d56b8b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816334"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,27 +45,27 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
   
  使用 IntelliSense 可以比较轻松地完成以下任务：  
   
--   查找成员信息。  
+- 查找成员信息。  
   
--   将语言元素直接插入代码中。  
+- 将语言元素直接插入代码中。  
   
--   维护上下文，而不必脱离代码编辑器。  
+- 维护上下文，而不必脱离代码编辑器。  
   
--   利用 XML 文档注释和 JavaScript IntelliSense 扩展性支持自定义 IntelliSense。  
+- 利用 XML 文档注释和 JavaScript IntelliSense 扩展性支持自定义 IntelliSense。  
   
- 本主题包含以下各节：  
+  本主题包含以下各节：  
   
--   [确定 IntelliSense 上下文](#DeterminingIntelliSenseContext)  
+- [确定 IntelliSense 上下文](#DeterminingIntelliSenseContext)  
   
--   [处理 IntelliSense 信息](#ProcessingIntelliSenseInformation)  
+- [处理 IntelliSense 信息](#ProcessingIntelliSenseInformation)  
   
--   [JavaScript IntelliSense 功能](#Features)  
+- [JavaScript IntelliSense 功能](#Features)  
   
--   [JavaScript IntelliSense 扩展性](#Extensibility)  
+- [JavaScript IntelliSense 扩展性](#Extensibility)  
   
--   [JavaScript 验证](#Validation)  
+- [JavaScript 验证](#Validation)  
   
- 有关 IntelliSense 功能的详细信息[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。  
+  有关 IntelliSense 功能的详细信息[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。  
   
 ##  <a name="DeterminingIntelliSenseContext"></a> 确定 IntelliSense 上下文  
  JavaScript IntelliSense 根据与当前脚本上下文相关的所有脚本提供编码选项。 这包括当前文件中的脚本元素。 它还包括从脚本中直接或间接引用的任何代码，例如脚本文件引用、程序集脚本引用、服务引用以及与页面关联的引用。  
@@ -103,25 +103,25 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 ##  <a name="Features"></a> JavaScript IntelliSense 功能  
  JavaScript IntelliSense 支持以下对象：  
   
--   [文档对象模型 (DOM) 元素](#HTMLDom)  
+- [文档对象模型 (DOM) 元素](#HTMLDom)  
   
--   [内部对象](#IntrinsicObjects)  
+- [内部对象](#IntrinsicObjects)  
   
--   [用户定义的变量、 函数和对象](#UserDefined)  
+- [用户定义的变量、 函数和对象](#UserDefined)  
   
--   如使用引用的外部文件中定义的对象[脚本引用](#Script)，[引用指令](#ReferenceDirectives)，并[引用组](#ReferenceGroups)。  
+- 如使用引用的外部文件中定义的对象[脚本引用](#Script)，[引用指令](#ReferenceDirectives)，并[引用组](#ReferenceGroups)。  
   
--   从 Visual Studio 下载的远程文件中定义的对象。  
+- 从 Visual Studio 下载的远程文件中定义的对象。  
   
--   中指定的对象[XML 文档注释](#XMLDocComments)，例如参数和字段。  
+- 中指定的对象[XML 文档注释](#XMLDocComments)，例如参数和字段。  
   
--   使用标准 JavaScript 注释标记 (//) 描述的对象。 有关详细信息，请参阅[扩展 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
+- 使用标准 JavaScript 注释标记 (//) 描述的对象。 有关详细信息，请参阅[扩展 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
   
--   支持使用的对象[JavaScript IntelliSense 扩展性](#Extensibility)机制。 有关详细信息，请参阅[扩展 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
+- 支持使用的对象[JavaScript IntelliSense 扩展性](#Extensibility)机制。 有关详细信息，请参阅[扩展 JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)。  
   
--   [ASP.NET AJAX 对象](#ASPNet)  
+- [ASP.NET AJAX 对象](#ASPNet)  
   
- IntelliSense 无法确定对象的类型时，将使用活动文档中的标识符提供语句结束选项。 有关详细信息，请参阅[适用于标识符的语句结束](../ide/statement-completion-for-identifiers.md)。  
+  IntelliSense 无法确定对象的类型时，将使用活动文档中的标识符提供语句结束选项。 有关详细信息，请参阅[适用于标识符的语句结束](../ide/statement-completion-for-identifiers.md)。  
   
 ###  <a name="HTMLDom"></a> HTML DOM 元素  
  JavaScript IntelliSense 为诸如 `body`、`form` 和 `div` 之类的动态 HTML (DHTML) DOM 元素提供编程引用。 IntelliSense 只显示包括在当前文档和母版页中的元素。 JavaScript IntelliSense 还支持 `window` 和 `document` 对象及其成员。  
@@ -227,15 +227,15 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
 ####  <a name="ReferenceGroups"></a> 引用组  
  你可以使用预定义的引用组指定特殊的 IntelliSense .js 文件位于不同 JavaScript 项目的范围内。 可用引用组类型如下：  
   
--   隐式 (Windows)，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。 包含在该组中的文件位于代码编辑器中为指定类型的项目打开的每个 .js 文件的范围中。  
+- 隐式 (Windows)，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用。 包含在该组中的文件位于代码编辑器中为指定类型的项目打开的每个 .js 文件的范围中。  
   
--   隐式 (Web)，用于 HTML5 项目。 包含在该组中的文件位于代码编辑器中为这些项目类型打开的每个 .js 文件的范围中。  
+- 隐式 (Web)，用于 HTML5 项目。 包含在该组中的文件位于代码编辑器中为这些项目类型打开的每个 .js 文件的范围中。  
   
--   专用工作线程引用组，用于 HTML5 Web 工作线程。 该组中指定的文件位于显式引用专用工作线程引用组的 .js 文件的范围中。  
+- 专用工作线程引用组，用于 HTML5 Web 工作线程。 该组中指定的文件位于显式引用专用工作线程引用组的 .js 文件的范围中。  
   
--   一般类型，用于其他 JavaScript 项目类型。  
+- 一般类型，用于其他 JavaScript 项目类型。  
   
- 在大多数情况下，你不必修改引用组。 但是，如果要更改，可使用 JavaScript 代码编辑器的配置选项，指定引用组中包含的文件。 有关使用此功能的说明，请参阅[选项，文本编辑器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
+  在大多数情况下，你不必修改引用组。 但是，如果要更改，可使用 JavaScript 代码编辑器的配置选项，指定引用组中包含的文件。 有关使用此功能的说明，请参阅[选项，文本编辑器、 JavaScript、 IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md)。  
   
 > [!TIP]
 >  IntelliSense 引用通常用于提供 IntelliSense 支持，为全局对象以及 intellisense[扩展](#Extensibility)。 你还可以对必须在运行时使用脚本加载程序加载的脚本使用该功能。  
@@ -256,13 +256,13 @@ IntelliSense 可在你编码时提供信息，从而有助于较快地编写代�
   
  IntelliSense 可以在以下方案中显示 XML 文档注释：  
   
--   一个引用另一个 .js 文件的 .js 文件。  
+- 一个引用另一个 .js 文件的 .js 文件。  
   
--   一个引用 .aspx 文件的 .js 文件。  
+- 一个引用 .aspx 文件的 .js 文件。  
   
--   一个引用 .js 文件的 .aspx 文件。  
+- 一个引用 .js 文件的 .aspx 文件。  
   
- 当一个 .aspx 文件引用另一个 .aspx 文件时，IntelliSense 不可用。  
+  当一个 .aspx 文件引用另一个 .aspx 文件时，IntelliSense 不可用。  
   
 ###  <a name="ASPNet"></a> ASP.NET AJAX 对象  
  ASP.NET AJAX 也支持 JavaScript IntelliSense。 ASP.NET AJAX 包含一个客户端框架，该框架将扩展可用于 ECMAScript (JavaScript) 的标准类型。 为使 JavaScript IntelliSense 能够提供有关 ASP.NET AJAX 对象的详细信息，XML 文档注释已添加到整个 [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)] 中。 使用包含在 ASP.NET AJAX 库中的类型和成员时，将会显示这些 XML 文档注释。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator2::SetCallback |Microsoft 文档
+title: IDebugExpressionEvaluator2::SetCallback |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4b7c0333ff5328f4bdfd2411356074dc39d567c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 03565e5fb6012a236eb5191aa8c126d923d04739
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110603"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823224"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-使表达式计算器 (EE) 来指定调试器引擎 (DE) 将用于读取度量值设置的回调接口。  
+使表达式计算器 (EE) 来指定调试器引擎 (DE) 将用于读取指标设置的回调接口。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,10 +46,10 @@ int SetCallback (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法的表达式计算器可用于读取指标设置的会话调试管理器提供的接口。 它可在远程调试上读取的指标[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]计算机。  
+ 此方法提供的表达式计算器可用于读取指标设置会话调试管理器的接口。 适用于远程调试上读取指标[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]计算机。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CEE**公开的对象[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CEE**对象，它公开[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口。  
   
 ```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
@@ -76,5 +76,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

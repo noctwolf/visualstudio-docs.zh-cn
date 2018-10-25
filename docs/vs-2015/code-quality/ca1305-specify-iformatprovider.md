@@ -20,15 +20,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 107248d0dddf89f63056a8a385eeb2a942ca91c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834284"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|SpecifyIFormatProvider|
@@ -48,15 +49,15 @@ ms.locfileid: "49186688"
 ## <a name="rule-description"></a>规则说明
  当<xref:System.Globalization.CultureInfo?displayProperty=fullName>或<xref:System.IFormatProvider>未提供对象，则重载成员提供的默认值可能不想要在所有区域设置中起作用。 此外，[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]成员选择默认区域性和格式设置基于可能不为你的代码正确的假设。 若要确保代码按预期为方案运行，应提供特定于区域性的信息，按照以下原则：
 
--   如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
+- 如果将向用户显示的值，则使用当前区域性。 请参阅 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>。
 
--   如果的值将存储并访问的软件 （保存到文件或数据库），使用固定区域性。 请参阅 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
+- 如果的值将存储并访问的软件 （保存到文件或数据库），使用固定区域性。 请参阅 <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>。
 
--   如果不知道的值的目标，具有数据使用者或提供程序指定的区域性。
+- 如果不知道的值的目标，具有数据使用者或提供程序指定的区域性。
 
- 请注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>仅用于使用的实例中检索本地化的资源<xref:System.Resources.ResourceManager?displayProperty=fullName>类。
+  请注意，<xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName>仅用于使用的实例中检索本地化的资源<xref:System.Resources.ResourceManager?displayProperty=fullName>类。
 
- 即使重载的成员的默认行为是适用于你的需求，则最好显式调用特定于区域性的重载，因此，你的代码是一目了然，且更易维护。
+  即使重载的成员的默认行为是适用于你的需求，则最好显式调用特定于区域性的重载，因此，你的代码是一目了然，且更易维护。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请使用接受的重载<xref:System.Globalization.CultureInfo>或<xref:System.IFormatProvider>和指定的参数根据前面已列出的准则。

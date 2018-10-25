@@ -1,5 +1,5 @@
 ---
-title: CV_call_e |Microsoft 文档
+title: CV_call_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ccdc9df86180883a5a3891563b22625fab4a2ad2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ca4be9d62ee9e0261e5c08a50b53df013ad6ffcf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466378"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851099"
 ---
 # <a name="cvcalle"></a>CV_call_e
 指定的函数的调用约定。  
   
 > [!NOTE]
->  此处记录了只有最常见的枚举值。 Cvconst.h 标头文件中提供了完整枚举。  
+>  此处介绍了仅是最常见的枚举值。 完整的枚举是 cvconst.h 标头文件中。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,19 +42,19 @@ typedef enum CV_call_e {
   
 ## <a name="elements"></a>元素  
  CV_CALL_NEAR_C  
- 指定使用 near 右到左推送的函数调用约定。 调用的函数可清除堆栈。  
+ 指定使用近右到左推送的函数调用约定。 调用函数清除堆栈。  
   
  CV_CALL_NEAR_FAST  
- 指定使用寄存器近的从左到右推送的函数调用约定。 调用的函数使用参数字节之的和清除堆栈。  
+ 指定使用寄存器使用几乎从左到右推式函数调用约定。 被调用的函数使用参数的字节数之和来清除堆栈。  
   
  CV_CALL_NEAR_STD  
- 指定使用 near 标准调用 （从右到左推送） 的函数调用约定。  
+ 指定使用近乎标准调用 （从右到左推送） 的函数调用约定。  
   
  CV_CALL_NEAR_SYS  
- 指定使用 near 系统调用的函数调用约定。  
+ 指定通过近乎系统调用的函数调用约定。  
   
  CV_CALL_THISCALL  
- 指定函数调用约定使用`this`调用 (`this`指针寄存器中传递)。  
+ 函数调用约定使用指定`this`调用 (`this`在寄存器中传递的指针)。  
   
  CV_CALL_CLRCALL  
  指定使用由公共语言运行时 (CLR) （也称为托管代码调用约定） 的函数调用约定。  

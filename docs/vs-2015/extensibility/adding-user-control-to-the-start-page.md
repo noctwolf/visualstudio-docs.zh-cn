@@ -17,12 +17,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: b174145561f6005e9498384190800945e36af078
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 40d508a11807fe90981104e0cc7e6557577da103
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855594"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>将用户控件添加到起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -141,41 +141,41 @@ ms.locfileid: "49259982"
 ## <a name="adding-the-user-control-to-the-start-page"></a>将用户控件添加到起始页  
  若要使此控件可用于起始页项目起始页项目文件中，添加对新的控件库的引用。 然后可以将控件添加到启动页 XAML 标记。  
   
-1.  在中**解决方案资源管理器**，在起始页项目中，右键单击**引用**，然后单击**添加引用**。  
+1. 在中**解决方案资源管理器**，在起始页项目中，右键单击**引用**，然后单击**添加引用**。  
   
-2.  上**项目**选项卡上，选择**WebUserControl** ，然后单击**确定**。  
+2. 上**项目**选项卡上，选择**WebUserControl** ，然后单击**确定**。  
   
-3.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+3. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
-     生成解决方案时向用户控件提供 IntelliSense 的解决方案中其他文件。  
+    生成解决方案时向用户控件提供 IntelliSense 的解决方案中其他文件。  
   
- 若要将控件添加到启动页 XAML 标记，添加对该程序集的命名空间引用，然后将页面上的控件。  
+   若要将控件添加到启动页 XAML 标记，添加对该程序集的命名空间引用，然后将页面上的控件。  
   
 #### <a name="to-add-the-control-to-the-markup"></a>若要将控件添加到标记  
   
-1.  在中**解决方案资源管理器**，打开起始页.xaml 文件。  
+1. 在中**解决方案资源管理器**，打开起始页.xaml 文件。  
   
-2.  在中**XAML**窗格中，将以下命名空间声明添加到顶级<xref:System.Windows.Controls.Grid>元素。  
+2. 在中**XAML**窗格中，将以下命名空间声明添加到顶级<xref:System.Windows.Controls.Grid>元素。  
   
-    ```xml  
-    xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
-    ```  
+   ```xml  
+   xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
+   ```  
   
-3.  在中**XAML**窗格中，滚动到\<网格 > 部分。  
+3. 在中**XAML**窗格中，滚动到\<网格 > 部分。  
   
-     部分包含<xref:System.Windows.Controls.TabControl>中的元素<xref:System.Windows.Controls.Grid>元素。  
+    部分包含<xref:System.Windows.Controls.TabControl>中的元素<xref:System.Windows.Controls.Grid>元素。  
   
-4.  添加\<TabControl > 元素，其中包含\<TabItem >，其中包含对你的用户控件的引用。  
+4. 添加\<TabControl > 元素，其中包含\<TabItem >，其中包含对你的用户控件的引用。  
   
-    ```xml  
+   ```xml  
   
-    <TabItem Header="Web" Height="Auto">  
-        <vsc:UserControl1 />  
-    </TabItem>  
+   <TabItem Header="Web" Height="Auto">  
+       <vsc:UserControl1 />  
+   </TabItem>  
   
-    ```  
+   ```  
   
- 现在，你可以测试控件。  
+   现在，你可以测试控件。  
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>测试手动创建自定义起始页  
   

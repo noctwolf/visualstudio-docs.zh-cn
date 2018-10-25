@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b4b3eea594bbfca0701fc8e719af0cf481fa434c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194115"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930632"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,141 +30,141 @@ ms.locfileid: "49194115"
   
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要启用由 MEF 扩展 DSL  
   
-1.  创建一个名为的新文件夹**MefExtension**内**DslPackage**项目。 将以下文件添加到它：  
+1. 创建一个名为的新文件夹**MefExtension**内**DslPackage**项目。 将以下文件添加到它：  
   
-     文件名： `CommandExtensionVSCT.tt`  
+    文件名： `CommandExtensionVSCT.tt`  
   
-    > [!IMPORTANT]
-    >  在此文件以 GUID CommandSetId DslPackage\GeneratedCode\Constants.tt 中定义的相同设置 GUID  
+   > [!IMPORTANT]
+   >  在此文件以 GUID CommandSetId DslPackage\GeneratedCode\Constants.tt 中定义的相同设置 GUID  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#  
-    // CmdSet Guid must be defined before master template is included  
-    // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
-    Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
-    string menuidCommandsExtensionBaseId="0x4000";  
-    #>  
-    <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#  
+   // CmdSet Guid must be defined before master template is included  
+   // This Guid must be kept synchronized with the CommandSetId Guid in Constants.tt  
+   Guid guidCmdSet = new Guid ("00000000-0000-0000-0000-000000000000");  
+   string menuidCommandsExtensionBaseId="0x4000";  
+   #>  
+   <#@ include file="DslPackage\CommandExtensionVSCT.tt" #>  
+   ```  
   
-     文件名： `CommandExtensionRegistrar.tt`  
+    文件名： `CommandExtensionRegistrar.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\CommandExtensionRegistrar.tt" #>  
+   ```  
   
-     文件名： `ValidationExtensionEnablement.tt`  
+    文件名： `ValidationExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionEnablement.tt" #>  
+   ```  
   
-     文件名： `ValidationExtensionRegistrar.tt`  
+    文件名： `ValidationExtensionRegistrar.tt`  
   
-     如果将此文件的添加，则必须启用验证在 DSL 中使用至少一个中的交换机**EditorValidation**在 DSL 资源管理器。  
+    如果将此文件的添加，则必须启用验证在 DSL 中使用至少一个中的交换机**EditorValidation**在 DSL 资源管理器。  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\ValidationExtensionRegistrar.tt" #>  
+   ```  
   
-     文件名： `PackageExtensionEnablement.tt`  
+    文件名： `PackageExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>  
+   ```  
   
-2.  创建一个名为的新文件夹**MefExtension**内**Dsl**项目。 将以下文件添加到它：  
+2. 创建一个名为的新文件夹**MefExtension**内**Dsl**项目。 将以下文件添加到它：  
   
-     文件名： `DesignerExtensionMetaDataAttribute.tt`  
+    文件名： `DesignerExtensionMetaDataAttribute.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\DesignerExtensionMetadataAttribute.tt" #>  
+   ```  
   
-     文件名： `GestureExtensionEnablement.tt`  
+    文件名： `GestureExtensionEnablement.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionEnablement.tt" #>  
+   ```  
   
-     文件名： `GestureExtensionController.tt`  
+    文件名： `GestureExtensionController.tt`  
   
-    ```  
-    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
-    <#@ include file="Dsl\GestureExtensionController.tt" #>  
-    ```  
+   ```  
+   <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
+   <#@ include file="Dsl\GestureExtensionController.tt" #>  
+   ```  
   
-3.  将以下行添加到名为现有文件**DslPackage\Commands.vsct**:  
+3. 将以下行添加到名为现有文件**DslPackage\Commands.vsct**:  
   
-    ```  
-    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
-    ```  
+   ```  
+   <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
+   ```  
   
-     在现有之后插入行`<Include>`指令。  
+    在现有之后插入行`<Include>`指令。  
   
-4.  `Open DslDefinition.dsl.`  
+4. `Open DslDefinition.dsl.`  
   
-5.  在 DSL 资源管理器中选择**编辑器 \ 验证**。  
+5. 在 DSL 资源管理器中选择**编辑器 \ 验证**。  
   
-6.  在属性窗口中，请确保至少一个属性名为**使用...** 是`true`。  
+6. 在属性窗口中，请确保至少一个属性名为**使用...** 是`true`。  
   
-7.  在解决方案资源管理器工具栏中，单击**转换所有模板**。  
+7. 在解决方案资源管理器工具栏中，单击**转换所有模板**。  
   
-     下面的每个文件添加显示附属文件。  
+    下面的每个文件添加显示附属文件。  
   
-8.  生成并运行解决方案，以验证仍然正常工作。  
+8. 生成并运行解决方案，以验证仍然正常工作。  
   
- 你的 DSL 现已启用 MEF 的。 您可以编写作为 MEF 扩展的菜单命令、 笔势处理程序和验证约束。 您可以在 DSL 解决方案以及其他自定义代码中编写这些扩展。 此外，您或其他开发人员可以编写单独[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展 DSL 的扩展。  
+   你的 DSL 现已启用 MEF 的。 您可以编写作为 MEF 扩展的菜单命令、 笔势处理程序和验证约束。 您可以在 DSL 解决方案以及其他自定义代码中编写这些扩展。 此外，您或其他开发人员可以编写单独[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展 DSL 的扩展。  
   
 ## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>创建适用于启用了 MEF 的 DSL 扩展  
  如果你有权访问由自己或其他人创建的启用 MEF 的 DSL，你可以为其编写扩展。 扩展可用于添加菜单命令、 笔势处理程序或验证约束。 若要创作这些扩展，请使用[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]扩展 (VSIX) 解决方案。 该解决方案由两部分组成： 一个类库项目的生成代码的程序集，并打包程序集的 VSIX 项目。  
   
 #### <a name="to-create-a-dsl-extension-vsix"></a>若要创建 DSL 扩展 VSIX  
   
-1.  创建一个新类库项目。 若要执行此操作，在**新的项目**对话框中，选择**Visual Basic**或**Visual C#** ，然后选择**类库**。  
+1. 创建一个新类库项目。 若要执行此操作，在**新的项目**对话框中，选择**Visual Basic**或**Visual C#** ，然后选择**类库**。  
   
-2.  新类库项目中，将添加到 DSL 的程序集的引用。  
+2. 新类库项目中，将添加到 DSL 的程序集的引用。  
   
-    -   此程序集通常具有文件名结尾"。Dsl.dll"。  
+   - 此程序集通常具有文件名结尾"。Dsl.dll"。  
   
-    -   如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\bin\\\***  
+   - 如果你有权访问 DSL 项目，可以找到程序集文件的目录下**Dsl\bin\\\\***  
   
-    -   如果你有权访问的 DSL 的 VSIX 文件，您可以通过 VSIX 文件的文件扩展名更改为".zip"找到程序集。 解压缩.zip 文件。  
+   - 如果你有权访问的 DSL 的 VSIX 文件，您可以通过 VSIX 文件的文件扩展名更改为".zip"找到程序集。 解压缩.zip 文件。  
   
-3.  添加以下.NET 程序集的引用：  
+3. 添加以下.NET 程序集的引用：  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-    -   System.ComponentModel.Composition.dll  
+   -   System.ComponentModel.Composition.dll  
   
-    -   System.Windows.Forms.dll  
+   -   System.Windows.Forms.dll  
   
-4.  在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。  
+4. 在同一解决方案中创建一个 VSIX 项目。 若要执行此操作，在**新的项目**对话框框中，展开**Visual Basic**或**Visual C#**，单击**扩展性**，然后选择**VSIX 项目**。  
   
-5.  在解决方案资源管理器，右键单击 VSIX 项目，然后单击**设为启动项目**。  
+5. 在解决方案资源管理器，右键单击 VSIX 项目，然后单击**设为启动项目**。  
   
-6.  在新的项目中，打开**source.extension.vsixmanifest**。  
+6. 在新的项目中，打开**source.extension.vsixmanifest**。  
   
-7.  单击**添加内容**。 在对话框中，将**内容类型**到**MEF 组件**，并**源项目**到你的类库项目。  
+7. 单击**添加内容**。 在对话框中，将**内容类型**到**MEF 组件**，并**源项目**到你的类库项目。  
   
-8.  添加到 DSL 的 VSIX 引用。  
+8. 添加到 DSL 的 VSIX 引用。  
   
-    1.  在中**source.extension.vsixmanifest**，单击**添加引用**  
+   1. 在中**source.extension.vsixmanifest**，单击**添加引用**  
   
-    2.  在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件**DslPackage\bin\\\***。  
+   2. 在对话框中，单击**添加负载**，然后查找的 DSL 的 VSIX 文件。 在 DSL 解决方案中生成的 VSIX 文件 * * DslPackage\bin\\\\* * *。  
   
-         这允许用户在同时安装 DSL 和扩展。 如果用户已安装 DSL，则将安装你的扩展。  
+       这允许用户在同时安装 DSL 和扩展。 如果用户已安装 DSL，则将安装你的扩展。  
   
 9. 查看和更新的其他字段**source.extension.vsixmanifest**。 单击**选择版本**，并验证正确[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]设置版本。  
   

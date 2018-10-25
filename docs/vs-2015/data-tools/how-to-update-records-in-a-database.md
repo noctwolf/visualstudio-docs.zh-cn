@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: b880353b227eae86c7c35f274271fb404b62ede0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b62dc86425dcbebb225c66eecd51505f674e20ec
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199507"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949027"
 ---
 # <a name="how-to-update-records-in-a-database"></a>如何：更新数据库中的记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,18 +62,18 @@ ms.locfileid: "49199507"
   
 #### <a name="to-update-records-in-a-database-with-the-tableadapterupdate-method-that-takes-dataset-datatable-datarow-or-datarows"></a>若要使用采用数据集、 数据表、 DataRow，或者 DataRows() TableAdapter.Update 方法更新数据库中的记录  
   
-1.  编辑记录中的所需<xref:System.Data.DataTable>通过直接编辑<xref:System.Data.DataRow>中<xref:System.Data.DataTable>。 有关详细信息，请参阅[如何： 编辑数据表中的行](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)。  
+1. 编辑记录中的所需<xref:System.Data.DataTable>通过直接编辑<xref:System.Data.DataRow>中<xref:System.Data.DataTable>。 有关详细信息，请参阅[如何： 编辑数据表中的行](http://msdn.microsoft.com/library/d5eea200-9bfa-4956-bf7c-08dd6fb6663c)。  
   
-2.  对行中进行编辑后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。  
+2. 对行中进行编辑后<xref:System.Data.DataTable>，调用`TableAdapter.Update`方法。 您可以控制要更新通过传入一个完整的数据量<xref:System.Data.DataSet>、 一个<xref:System.Data.DataTable>，数组<xref:System.Data.DataRow>s 或将单个<xref:System.Data.DataRow>。  
   
-     下面的代码演示如何编辑中的记录<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法以将所做的更改保存到数据库。 （此示例使用 Northwind 数据库区域表）。  
+    下面的代码演示如何编辑中的记录<xref:System.Data.DataTable>，然后调用`TableAdapter.Update`方法以将所做的更改保存到数据库。 （此示例使用 Northwind 数据库区域表）。  
   
-     [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
-     [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
+    [!code-csharp[VbRaddataSaving#17](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form5.cs#17)]
+    [!code-vb[VbRaddataSaving#17](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form5.vb#17)]  
   
- 如果应用程序使用对象来存储你的应用程序中的数据，则可以使用 TableAdapter 的`DBDirect`方法将数据从您的对象直接发送到数据库。 这些方法，可将每列的单个值作为方法参数传递。 调用此方法使用的列的值传递给该方法更新数据库中的现有记录。  
+   如果应用程序使用对象来存储你的应用程序中的数据，则可以使用 TableAdapter 的`DBDirect`方法将数据从您的对象直接发送到数据库。 这些方法，可将每列的单个值作为方法参数传递。 调用此方法使用的列的值传递给该方法更新数据库中的现有记录。  
   
- 以下过程使用 Northwind`Region`作为示例表。  
+   以下过程使用 Northwind`Region`作为示例表。  
   
 #### <a name="to-update-records-in-a-database-using-the-tableadapterupdate-method-that-takes-column-values"></a>若要使用的 TableAdapter.Update 方法带有列的值的数据库中更新记录  
   

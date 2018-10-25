@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a58396756456d025f978ca101076c921d4d2772
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 948edbfbef7d3de0ace7c6e33e88d63dadc4dee7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237128"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897441"
 ---
 # <a name="how-to-display-message-properties"></a>如何：显示消息属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "49237128"
   
 ### <a name="to-open-a-message-properties-dialog-box"></a>若要打开消息属性对话框  
   
-1.  从在消息视图中显示的树中选择一条消息。  
+1. 从在消息视图中显示的树中选择一条消息。  
   
-2.  从**视图**菜单中，选择**属性**。  
+2. 从**视图**菜单中，选择**属性**。  
   
- 属性对话框不是模式，因此你可以单击视图窗口中的另一个项，对话框中将所选项目上显示的信息。
+   属性对话框不是模式，因此你可以单击视图窗口中的另一个项，对话框中将所选项目上显示的信息。
 
 
 

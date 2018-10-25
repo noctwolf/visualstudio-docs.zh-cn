@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_basetype |Microsoft 文档'
+title: 'Idiasymbol:: Get_basetype |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 080c8872682f9c255eda77449cb24dd703cd9583
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f7cb7b8a003f3aea5d821d5ffb9f312d069edb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461761"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901783"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-检索此符号的基类型 *。*  
+检索此符号的基类型<em>。</em>  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,10 +40,10 @@ HRESULT get_baseType (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 可通过首先获取对符号类型，然后直接查询返回的基类型的类型确定符号的基本类型。 请注意某些符号可能没有基类型 — 例如，结构名称。  
+ 可通过首先获取符号的类型，然后询问的返回类型的基类型确定符号的基本类型。 请注意，某些符号可能不具有基类型，例如，结构名称。  
   
 ## <a name="example"></a>示例  
   

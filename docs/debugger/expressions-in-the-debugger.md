@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a29c9cd7c1c80ca27ea3e72b4aab3e881bb8d480
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4df9ae5c8b525ff75985ff7aff071d2b2e86e1cb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926184"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的表达式
 Visual Studio 调试器包括表达式计算器，当您在 **“快速监视”** 对话框、 **“监视”** 窗口或 **“即时”** 窗口中输入表达式时，这些计算器可以对其进行计算。 这些表达式计算器还可以在 **“断点”** 窗口和调试器中的许多其他位置使用。
@@ -91,13 +91,13 @@ int main()
   
  调试器内部函数：  
   
--   一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
+- 一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
   
--   在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
+- 在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
   
--   在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
+- 在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
   
- 此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, "asd")` 比 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更易于写入断点条件中。 )  
+  此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, "asd")` 比 `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`更易于写入断点条件中。 )  
   
 |区域|内部函数|  
 |----------|-------------------------|  
@@ -147,7 +147,7 @@ int main()
 ## <a name="visual-basic---unsupported-expressions"></a>Visual Basic - 不支持的表达式  
   
 ### <a name="dynamic-objects"></a>动态对象  
- 你可以使用静态类型化为动态的调试器表达式中的变量。 当对象实现<xref:System.Dynamic.IDynamicMetaObjectProvider>中监视窗口中，节点会添加一个动态视图计算。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
+ 你可以使用静态类型化为动态的调试器表达式中的变量。 在“监视”窗口中计算实现 <xref:System.Dynamic.IDynamicMetaObjectProvider> 的对象时，会添加一个“动态视图”节点。 该动态视图节点显示对象成员，但不允许编辑成员的值。  
   
  不支持动态对象的下列功能：  
   
@@ -208,6 +208,6 @@ int main()
   
 ## <a name="see-also"></a>请参阅  
  [C + + 中的格式说明符](../debugger/format-specifiers-in-cpp.md)   
- [上下文运算符 （c + +）](../debugger/context-operator-cpp.md)   
+ [Context Operator (C++)](../debugger/context-operator-cpp.md)   
  [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)   
  [伪变量](../debugger/pseudovariables.md)

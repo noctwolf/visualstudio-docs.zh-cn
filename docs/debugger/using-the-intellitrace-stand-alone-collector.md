@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81c538897de64f6b7cc1f832cc07604991375872
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: dfdcb3e273e3e2c7b957a78280511980fa9c93fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905306"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>使用 IntelliTrace 独立收集器
 **IntelliTrace 独立收集器** 可让你收集生产服务器或其他环境中应用的 IntelliTrace 诊断数据，而无需在目标计算机上安装 Visual Studio 或更改目标系统环境。 IntelliTrace 独立收集器可用于 Web、SharePoint、WPF 和 Windows 窗体应用中。 数据收集完毕后，只需删除收集器以进行卸载。
@@ -33,22 +33,22 @@ ms.locfileid: "44283738"
 
  **要求**
 
--   .NET Framework 3.5、4 或 4.5
+- .NET Framework 3.5、4 或 4.5
 
--   开发计算机或其他计算机上的 Visual Studio Enterprise（但不是 Professional 或 Community 版本），可用来打开 .iTrace 文件
+- 开发计算机或其他计算机上的 Visual Studio Enterprise（但不是 Professional 或 Community 版本），可用来打开 .iTrace 文件
 
-    > [!NOTE]
-    >  务必保存符号 (.pdb) 文件。 要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
+  > [!NOTE]
+  >  务必保存符号 (.pdb) 文件。 要调试 IntelliTrace 并单步调试代码，你必须有相匹配的源文件和符号文件。 请参阅[部署后诊断问题](../debugger/diagnose-problems-after-deployment.md)。
 
- **常见问题解答**
+  **常见问题解答**
 
--   [哪些应用上可使用该收集器？](#WhatApps)
+- [哪些应用上可使用该收集器？](#WhatApps)
 
--   [如何开始？](#GetStarted)
+- [如何开始？](#GetStarted)
 
--   [如何在应用速度不减的前提下获取最多的数据？](#Minimizing)
+- [如何在应用速度不减的前提下获取最多的数据？](#Minimizing)
 
--   [可从哪些其他渠道获取 IntelliTrace 数据？](#WhereElse)
+- [可从哪些其他渠道获取 IntelliTrace 数据？](#WhereElse)
 
 ##  <a name="WhatApps"></a> 哪些应用上可使用该收集器？
 
@@ -78,40 +78,40 @@ ms.locfileid: "44283738"
 
 ##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> 安装收集器
 
-1.  在您的应用程序服务器上创建收集器目录，例如： **C:\IntelliTraceCollector**
+1. 在您的应用程序服务器上创建收集器目录，例如： **C:\IntelliTraceCollector**
 
-2.  从 Microsoft 下载中心或 Visual Studio 2013 Update 3 安装文件夹获取收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)：
+2. 从 Microsoft 下载中心或 Visual Studio 2013 Update 3 安装文件夹获取收集器。 [IntelliTrace Collector for Visual Studio 2013 Update 4](https://www.microsoft.com/en-us/download/details.aspx?id=44909)：
 
-    -   **Microsoft 下载中心**：
+   - **Microsoft 下载中心**：
 
-        1.  选择 **IntelliTraceCollector.exe**旁的“下载” 。
+     1. 选择 **IntelliTraceCollector.exe**旁的“下载” 。
 
-        2.  将 IntelliTraceCollector.exe 保存到收集器目录，如： **C:\IntelliTraceCollector**
+     2. 将 IntelliTraceCollector.exe 保存到收集器目录，如： **C:\IntelliTraceCollector**
 
-        3.  运行 IntelliTraceCollector.exe。 此程序会提取 IntelliTraceCollection.cab 文件。
+     3. 运行 IntelliTraceCollector.exe。 此程序会提取 IntelliTraceCollection.cab 文件。
 
-         \- 或 -
+        \- 或 -
 
-    -   **Visual Studio 安装文件夹**：
+   - **Visual Studio 安装文件夹**：
 
-        1.  复制以下文件夹中的 IntelliTraceCollection.cab：
+     1.  复制以下文件夹中的 IntelliTraceCollection.cab：
 
-             **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
+          **..\Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-        2.  将 IntelliTraceCollection.cab 放在收集器目录中，如： **C:\IntelliTraceCollector**
+     2.  将 IntelliTraceCollection.cab 放在收集器目录中，如： **C:\IntelliTraceCollector**
 
-3.  扩展 IntelliTraceCollection.cab：
+3. 扩展 IntelliTraceCollection.cab：
 
-    1.  在您的应用程序服务器上以管理员身份打开命令提示符窗口。
+   1.  在您的应用程序服务器上以管理员身份打开命令提示符窗口。
 
-    2.  浏览到收集器目录，如： **C:\IntelliTraceCollector**
+   2.  浏览到收集器目录，如： **C:\IntelliTraceCollector**
 
-    3.  使用 **expand** 命令来扩展 IntelliTraceCollection.cab，加上最后的句点（“.”）：
+   3.  使用 **expand** 命令来扩展 IntelliTraceCollection.cab，加上最后的句点（“.”）：
 
-         `expand  /f:* IntelliTraceCollection.cab .`
+        `expand  /f:* IntelliTraceCollection.cab .`
 
-        > [!NOTE]
-        >  该句点（“.”）保留包含本地化收集计划的子文件夹。
+       > [!NOTE]
+       >  该句点（“.”）保留包含本地化收集计划的子文件夹。
 
 ##  <a name="ConfigurePermissionsRunningCollector"></a> 设置回收器目录的权限
 
@@ -167,47 +167,47 @@ ms.locfileid: "44283738"
 
 ##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> 设置 .iTrace 文件目录的权限
 
-1.  在应用服务器上创建.iTrace 文件目录，例如： **C:\IntelliTraceLogFiles**
+1. 在应用服务器上创建.iTrace 文件目录，例如： **C:\IntelliTraceLogFiles**
 
-    > [!NOTE]
-    >  -   若要避免应用速度变慢，请选择不是非常活跃的本地高速磁盘上的某个位置。
-    > -   你可以将 .iTrace 文件和收集器文件放在同一位置。 但是，如果你有一个 Web 应用或 SharePoint 应用程序，务必确保该位置与托管应用程序的目录位置不同。
+   > [!NOTE]
+   > - 若要避免应用速度变慢，请选择不是非常活跃的本地高速磁盘上的某个位置。
+   >   -   你可以将 .iTrace 文件和收集器文件放在同一位置。 但是，如果你有一个 Web 应用或 SharePoint 应用程序，务必确保该位置与托管应用程序的目录位置不同。
+   > 
+   > [!IMPORTANT]
+   > - .iTrace 文件目录中只可包含那些与收集器兼容的标识。 .iTrace 文件中可能包含敏感信息，如用户、数据库、其他源位置及连接字符串数据，因为 IntelliTrace 可记录进入方法参数或作为返回值的任何数据。
+   >   -   确保那些可打开 .iTrace 文件的人员拥有查看敏感数据的权限。 共享 .iTrace 文件时要格外小心。 如果其他人员必须访问，请将文件复制到安全的共享位置。
 
-    > [!IMPORTANT]
-    >  -   .iTrace 文件目录中只可包含那些与收集器兼容的标识。 .iTrace 文件中可能包含敏感信息，如用户、数据库、其他源位置及连接字符串数据，因为 IntelliTrace 可记录进入方法参数或作为返回值的任何数据。
-    > -   确保那些可打开 .iTrace 文件的人员拥有查看敏感数据的权限。 共享 .iTrace 文件时要格外小心。 如果其他人员必须访问，请将文件复制到安全的共享位置。
+2. 针对 Web 应用或 SharePoint 应用程序，授予其应用程序池对 .iTrace 文件目录的完全权限。 你可以使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。
 
-2.  针对 Web 应用或 SharePoint 应用程序，授予其应用程序池对 .iTrace 文件目录的完全权限。 你可以使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。
+    例如：
 
-     例如：
+   - 要使用 Windows **icacls** 命令设置权限，请：
 
-    -   要使用 Windows **icacls** 命令设置权限，请：
+     - 对于“DefaultAppPool”  应用程序池中的 Web 应用：
 
-        -   对于“DefaultAppPool”  应用程序池中的 Web 应用：
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\DefaultAppPool":F`
+     - 对于“SharePoint - 80”  应用程序池中的一个 SharePoint 应用程序：
 
-        -   对于“SharePoint - 80”  应用程序池中的一个 SharePoint 应用程序：
+        `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
 
-             `icacls "C:\IntelliTraceLogFiles" /grant "IIS APPPOOL\SharePoint - 80":F`
+       或
 
-         或
+   - 要设置 Windows 资源管理器（或文件资源管理器）的权限，请：
 
-    -   要设置 Windows 资源管理器（或文件资源管理器）的权限，请：
+     1.  打开 .iTrace 文件目录的“属性”  。
 
-        1.  打开 .iTrace 文件目录的“属性”  。
+     2.  在“安全”  选项卡上，选择“编辑” ，然后单击“添加” 。
 
-        2.  在“安全”  选项卡上，选择“编辑” ，然后单击“添加” 。
+     3.  确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果不存在，选择**对象类型**以将其添加。
 
-        3.  确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果不存在，选择**对象类型**以将其添加。
+     4.  确保本地计算机出现在“从此处”  框中。 如果不存在，选择**位置**若要对其进行更改。
 
-        4.  确保本地计算机出现在“从此处”  框中。 如果不存在，选择**位置**若要对其进行更改。
+     5.  在“输入要选择的对象名称”  框中，添加 Web 应用或 SharePoint 应用程序的应用程序池。
 
-        5.  在“输入要选择的对象名称”  框中，添加 Web 应用或 SharePoint 应用程序的应用程序池。
+     6.  选择“检查名称”  来解析名称。 选择 **“确定”**。
 
-        6.  选择“检查名称”  来解析名称。 选择 **“确定”**。
-
-        7.  确保该应用程序池拥有“完全控制” 。
+     7.  确保该应用程序池拥有“完全控制” 。
 
 ##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> 从 Web 应用程序或 SharePoint 应用程序中收集数据
 
@@ -291,98 +291,95 @@ ms.locfileid: "44283738"
 
  以下是在应用速度不减的前提下获取最多的数据的一些方法：
 
--   仅当你认为存在问题，或可以再现该问题，请运行收集器。
+- 仅当你认为存在问题，或可以再现该问题，请运行收集器。
 
-     开始收集，再现该问题，然后停止收集。 在 Visual Studio Enterprise 中打开 .iTrace 文件并检查相关数据。 请参阅 [在 Visual Studio Enterprise 中打开 .iTrace 文件](#BKMK_View_IntelliTrace_Log_Files)模式对性能的影响更小。
+   开始收集，再现该问题，然后停止收集。 在 Visual Studio Enterprise 中打开 .iTrace 文件并检查相关数据。 请参阅 [在 Visual Studio Enterprise 中打开 .iTrace 文件](#BKMK_View_IntelliTrace_Log_Files)模式对性能的影响更小。
 
--   针对 Web 应用和 SharePoint 应用程序，收集器会记录共享指定应用程序池的各应用的数据。 虽然你只能在一个收集计划中指定一个单应用的模块，但这可能使任何共享同一应用程序池的应用速度变慢。
+- 针对 Web 应用和 SharePoint 应用程序，收集器会记录共享指定应用程序池的各应用的数据。 虽然你只能在一个收集计划中指定一个单应用的模块，但这可能使任何共享同一应用程序池的应用速度变慢。
 
-     要防止收集器使应用速度变慢，请将各应用托管在各自的应用程序池中。
+   要防止收集器使应用速度变慢，请将各应用托管在各自的应用程序池中。
 
--   检查 IntelliTrace 要收集数据的收集计划中的事件。 编辑收集计划以禁用无关或不感兴趣的事件。
+- 检查 IntelliTrace 要收集数据的收集计划中的事件。 编辑收集计划以禁用无关或不感兴趣的事件。
 
-     要禁用事件，请将 `enabled` 元素的 `<DiagnosticEventSpecification>` 属性设为 `false`：
+   要禁用事件，请将 `enabled` 元素的 `<DiagnosticEventSpecification>` 属性设为 `false`：
 
-     `<DiagnosticEventSpecification enabled="false">`
+   `<DiagnosticEventSpecification enabled="false">`
 
-     如果 `enabled` 属性不存在，则该事件已启用。
+   如果 `enabled` 属性不存在，则该事件已启用。
 
-     *这如何提高性能？*
+   *这如何提高性能？*
 
-    -   可通过禁用与应用无关的事件来减少启动时间。 如，禁用未使用 Windows 工作流的应用的 Windows 工作流事件。
+  -   可通过禁用与应用无关的事件来减少启动时间。 如，禁用未使用 Windows 工作流的应用的 Windows 工作流事件。
 
-    -   可通过禁用访问注册表但不显示注册表设置问题的应用的注册表事件，提高启动及运行时性能。
+  -   可通过禁用访问注册表但不显示注册表设置问题的应用的注册表事件，提高启动及运行时性能。
 
--   检查 IntelliTrace 要收集数据的收集计划中的模块。 编辑收集计划，只加入你感兴趣的模块：
+- 检查 IntelliTrace 要收集数据的收集计划中的模块。 编辑收集计划，只加入你感兴趣的模块：
 
-    1.  打开收集计划。 查找 `<ModuleList>` 元素。
+  1. 打开收集计划。 查找 `<ModuleList>` 元素。
 
-    2.  在 `<ModuleList>`中，将 `isExclusionList` 属性设为 `false`。
+  2. 在 `<ModuleList>`中，将 `isExclusionList` 属性设为 `false`。
 
-    3.  使用 `<Name>` 元素为各模块指定以下一项：文件名、字符串值（以便加入任何名称中包含该字符串的模块）或公钥。
+  3. 使用 `<Name>` 元素为各模块指定以下一项：文件名、字符串值（以便加入任何名称中包含该字符串的模块）或公钥。
 
      如，要只从 Fabrikam Fiber Web 应用的 Web 主模块中收集数据，请创建一个与此类似的列表：
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>FabrikamFiber.Web.dll</Name>
-    </ModuleList>
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>FabrikamFiber.Web.dll</Name>
+  </ModuleList>
+  ```
 
-    ```
+   要从任何名称中包含“Fabrikam”的模块中收集数据，请创建一个与此类似的列表：
 
-     要从任何名称中包含“Fabrikam”的模块中收集数据，请创建一个与此类似的列表：
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>Fabrikam</Name>
+  </ModuleList>
+  ```
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>Fabrikam</Name>
-    </ModuleList>
+   要通过指定模块公钥标记从中收集数据，请创建一个与此类似的列表：
 
-    ```
+  ```xml
+  <ModuleList isExclusionList="false">
+     <Name>PublicKeyToken:B77A5C561934E089</Name>
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>
+  </ModuleList>
+  ```
 
-     要通过指定模块公钥标记从中收集数据，请创建一个与此类似的列表：
+   *这如何提高性能？*
 
-    ```xml
-    <ModuleList isExclusionList="false">
-       <Name>PublicKeyToken:B77A5C561934E089</Name>
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>
-    </ModuleList>
+   这可减少应用启动、运行时 IntelliTrace 收集的方法调用信息及其他检测数据的数量。 你可使用该数据来：
 
-    ```
+  - 收集数据后单步调试代码。
 
-     *这如何提高性能？*
+  - 检查函数调用接收及返回的值。
 
-     这可减少应用启动、运行时 IntelliTrace 收集的方法调用信息及其他检测数据的数量。 你可使用该数据来：
+    *为何不排除模块呢？*
 
-    -   收集数据后单步调试代码。
+    通常情况下，收集计划通过将 `isExclusionList` 属性设为 `true`来排除模块。 然而，排除的模块可能仍然会收集不符合列表标准以及你可能不感兴趣的模块中的数据，如第三方或开源模块。
 
-    -   检查函数调用接收及返回的值。
+- *是否存在 IntelliTrace 不会收集的任何数据？*
 
-     *为何不排除模块呢？*
+   是的，为减少对性能的影响，IntelliTrace 只会收集以下数据：方法接收及返回的基元数据类型值以及顶层对象字段中的基元数据类型值。
 
-     通常情况下，收集计划通过将 `isExclusionList` 属性设为 `true`来排除模块。 然而，排除的模块可能仍然会收集不符合列表标准以及你可能不感兴趣的模块中的数据，如第三方或开源模块。
+   如，假定你有一个 `AlterEmployee` 方法签名，其包含一个整数 `id` 和一个 `Employee` 对象 `oldemployee`：
 
--   *是否存在 IntelliTrace 不会收集的任何数据？*
+   `public Employee AlterEmployee(int id, Employee oldemployee)`
 
-     是的，为减少对性能的影响，IntelliTrace 只会收集以下数据：方法接收及返回的基元数据类型值以及顶层对象字段中的基元数据类型值。
+   `Employee` 类型具有以下属性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 和 `Address` 类型之间存在关联。
 
-     如，假定你有一个 `AlterEmployee` 方法签名，其包含一个整数 `id` 和一个 `Employee` 对象 `oldemployee`：
+   ![员工与地址之间的关系](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
 
-     `public Employee AlterEmployee(int id, Employee oldemployee)`
-
-     `Employee` 类型具有以下属性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 和 `Address` 类型之间存在关联。
-
-     ![员工与地址之间的关系](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")
-
-     收集器记录 `id`方法返回的 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 对象的值。 但是，除记录 `Address` 对象是否为空以外，收集器不会记录该对象的其他信息。 收集器也不会记录 `AlterEmployee` 方法中局部变量相关的数据，除非其他方法将这些局部变量用作参数，记录为方法参数。
+   收集器记录 `id`方法返回的 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 对象的值。 但是，除记录 `Address` 对象是否为空以外，收集器不会记录该对象的其他信息。 收集器也不会记录 `AlterEmployee` 方法中局部变量相关的数据，除非其他方法将这些局部变量用作参数，记录为方法参数。
 
 ##  <a name="WhereElse"></a> 可从哪些其他渠道获取 IntelliTrace 数据？
 
 -   从 IntelliTrace 调试 Visual Studio Enterprise 中的会话，请参阅[IntelliTrace 功能](../debugger/intellitrace-features.md)。
 
--   Microsoft 测试管理器中的测试会话，请参阅[如何： 收集 IntelliTrace 数据以帮助调试难题](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues)。
+-   可通过 Microsoft 测试管理器中的测试会话获取，请参阅 [如何：收集 IntelliTrace 数据以帮助调试难题](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues)。
 
 ## <a name="where-can-i-get-more-information"></a>在何处可以获取详细信息？
  [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)

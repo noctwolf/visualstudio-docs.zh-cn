@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: be768f684a495271f06a2a79a71647a9bbaa8552
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 87fbda8cb55d0d2a6ef9f21a2a7878d4babd3fe6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498865"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830686"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>创建父容器的解决方案文件夹
 在源控制插件 API 版本 1.2，用户可以指定一个根源控制目标的解决方案中的所有 web 项目。 此单个根称为超级统一根 (SUR)。  
@@ -50,7 +50,7 @@ ms.locfileid: "39498865"
 在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，建议 SUR 文件夹的名称是不带扩展名的解决方案名称相同。 下表总结了两个版本中的行为。  
   
 |功能|源代码管理插件 API 版本 1.1|源代码管理插件 API 版本 1.2|  
-|-------------|----------------------------------------------|---------------------------------------------|  
+|-------------| - | - |  
 |将解决方案添加到源代码管理|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccGetProjPath()<br /><br /> SccOpenProject()|SccInitialize()<br /><br /> SccGetProjPath()<br /><br /> SccCreateSubProject()<br /><br /> SccCreateSubProject()<br /><br /> SccOpenProject()|  
 |将项目添加到受源代码管理解决方案|SccGetProjPath()<br /><br /> OpenProject()|SccGetParentProjectPath()<br /><br /> SccOpenProject()<br /><br />  **注意：** Visual Studio 假设一种解决方案是 SUR.的直接子级|  
   

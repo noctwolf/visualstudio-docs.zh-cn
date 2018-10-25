@@ -1,5 +1,5 @@
 ---
-title: 常量 （调试接口访问 SDK） |Microsoft 文档
+title: 常量 （调试接口访问 SDK） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c77febb7ad9f41880fef604849af75aa065ff593
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: dd6908a8a0b49f5078e4c0d448ba2dedbe8f720a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31458913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872039"
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常量（调试接口访问 SDK）
-这些字符串常量可以用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。  
+这些字符串常量可用于标识程序调试数据库 (PDB) 文件通过 DIA SDK 的各个部分。  
   
 ## <a name="constants"></a>常量  
  以下被声明为 C/c + + 宏。  
   
-|宏|值|  
+|宏|“值”|  
 |-----------|-----------|  
 |`DiaTable_Symbols`|L"符号"|  
-|`DiaTable_Sections`|L"部分"|  
+|`DiaTable_Sections`|L"Section"|  
 |`DiaTable_SrcFiles`|L"SourceFiles"|  
 |`DiaTable_LineNums`|L"LineNumbers"|  
 |`DiaTable_SegMap`|L"SegmentMap"|  
@@ -40,7 +40,7 @@ ms.locfileid: "31458913"
 |`DiaTable_FrameData`|L"FrameData"|  
   
 ## <a name="example"></a>示例  
- 下面是一个示例使用这些符号之一：  
+ 下面是示例使用这些符号之一：  
   
 ```C++  
 HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)  

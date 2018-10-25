@@ -16,12 +16,12 @@ ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d6d1e7f9323227ca6d925acadf93068935887f3d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1d701679755d73e01e27c7be0ba9833bf878bc43
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260031"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894438"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何： 创建 Atom 馈送专用库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49260031"
 ## <a name="creating-an-atom-feed"></a>创建 Atom 馈送  
  若要创建 Atom 馈送作为专用库，你首先收集有关你的扩展 （.vsix 文件） 到一个文件夹。 您可以将它们组织到子文件夹的前提。 您将需要以下资源：  
   
--   提供扩展作为专用库 atom.xml 文件。 有关如何连接到 atom.xml 文件信息**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。  
+- 提供扩展作为专用库 atom.xml 文件。 有关如何连接到 atom.xml 文件信息**扩展和更新**，请参阅[专用库](../extensibility/private-galleries.md)。  
   
--   包含已从扩展插件 （例如，屏幕截图） 中提取任何图像文件的文件夹。 Atom.xml 文件，使他们能够在包含这些图像的相对链接**扩展和更新**。  
+- 包含已从扩展插件 （例如，屏幕截图） 中提取任何图像文件的文件夹。 Atom.xml 文件，使他们能够在包含这些图像的相对链接**扩展和更新**。  
   
- 例如，假设您到文件夹收集了以下两个扩展：  
+  例如，假设您到文件夹收集了以下两个扩展：  
   
--   Template_Wizard_239.vsix，这是一个空的 VSIX 项目模板。  
+- Template_Wizard_239.vsix，这是一个空的 VSIX 项目模板。  
   
--   SelectionHighlight.vsix，这是一个工具，可突出显示所选单词的所有实例。  
+- SelectionHighlight.vsix，这是一个工具，可突出显示所选单词的所有实例。  
   
- Atom.xml 文件的内容将类似于下面的示例：  
+  Atom.xml 文件的内容将类似于下面的示例：  
   
 ```  
   <?xml version="1.0" encoding="utf-8" ?>   
