@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d835a8592108b549a109f7bb7e128a8ae5b01611
-ms.sourcegitcommit: 697162f54d3c4e30df702fd0289e447e211e3a85
+ms.openlocfilehash: a04075c0625eb7b4dc899a4e183588b96eb7eadd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2018
-ms.locfileid: "34549098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872234"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>如何： 选择要使用的 XML 架构
 
@@ -30,27 +30,27 @@ XML 编辑器提供的架构缓存位于 *%InstallDir%\Xml\Schemas*目录。 架
 
 ## <a name="to-select-an-xml-schema-from-the-schema-cache"></a>若要从架构缓存中选择 XML 架构
 
-1.  在“XML 编辑器”中打开文件。
+1. 在“XML 编辑器”中打开文件。
 
-2.  在文档属性窗口中，单击按钮上**架构**字段。
+2. 在文档属性窗口中，单击上按钮**架构**字段。
 
-     **XML 架构**对话框随即显示。 该对话框列出包含的所有架构。*xsd*架构缓存中的扩展 (包括架构中引用*catalog.xml*文件)，并且还将在当前解决方案中，打开在 Visual Studio 中，引用中的任何架构`xsd:schemaLocation`属性，或在引用**架构**属性。
+    **XML 架构**显示对话框。 对话框中列出了与所有架构。*xsd*架构缓存中的扩展 (包括架构中引用*catalog.xml*文件)，并且还将在当前解决方案中，打开在 Visual Studio 中，引用中的任何架构`xsd:schemaLocation`属性，或在引用**架构**属性。
 
-3.  通过执行下列操作之一选择用于验证的架构：
+3. 通过执行下列操作之一选择用于验证的架构：
 
-    -   选择一个列出中的架构**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。
+   - 选择架构中列出**XML 架构**对话框中，单击**使用**列，，然后选择**使用此架构**。
 
-     -或-
+     或
 
-    -   选择多个架构中列出**XML 架构**对话框，右键单击并选择**使用此架构**。
+   - 选择多个架构中列出**XML 架构**对话框中，右键单击并选择**使用此架构**。
 
-4.  单击 **“确定”**。
+4. 单击 **“确定”**。
 
-     所选架构的列表复制回**架构**文档属性。
+    所选架构的列表复制回**架构**文档属性。
 
-## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>将 XML 架构添加到架构缓存
+## <a name="to-add-an-xml-schema-to-the-schema-cache"></a>若要将 XML 架构添加到架构缓存
 
-1.  在文档属性窗口中，单击按钮上**架构**字段。
+1.  在文档属性窗口中，单击上按钮**架构**字段。
 
 2.  单击 **添加**。
 
@@ -60,18 +60,18 @@ XML 编辑器提供的架构缓存位于 *%InstallDir%\Xml\Schemas*目录。 架
 
 4.  单击**打开**。
 
-     添加到架构的架构缓存，并且**使用**列值设置为**使用此架构**。
+     添加到架构的架构缓存，并且**使用**列的值设置为**使用此架构**。
 
 ## <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>若要从架构缓存中删除 XML 架构
 
-1.  在文档属性窗口中，单击按钮上**架构**字段。
+1.  在文档属性窗口中，单击上按钮**架构**字段。
 
 2.  选择要删除，然后单击的架构**删除**。
 
      此架构即会从内存中的架构缓存中移除，但不会从文件系统中移除。
 
     > [!NOTE]
-    > 如果您仍然必须对通过架构的引用`schemaLocation`属性，或者有匹配`targetNamespace`然后**删除**中由于自动关联这种情况下将不工作。 在这种情况下建议你将为此架构标记**不使用所选的架构**中**使用**列。
+    > 如果您仍然可以对通过架构的引用`schemaLocation`属性，或者有匹配`targetNamespace`然后**删除**将无法在这种情况下，由于自动关联。 在这种情况下建议将标记作为架构**不使用所选的架构**中**使用**列。
 
 ## <a name="see-also"></a>请参阅
 

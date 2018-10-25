@@ -1,5 +1,5 @@
 ---
-title: BP_FLAGS90 |Microsoft 文档
+title: BP_FLAGS90 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8153f3fb2419e26f7e7d3a741ae4c79c9272a4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 32109a6065811c5f36cf00b0287291ca760eb7c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862692"
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
-枚举有效可选标志的值。 可选标志可能用于设置断点时指定的其他信息。 此枚举扩展[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)枚举。  
+枚举有效的可选标志值。 可选标志可能用于设置断点时指定的其他信息。 此枚举扩展[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)枚举。  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,13 +57,13 @@ public enum enum_BP_FLAGS90
  不指定任何断点标志。  
   
  BP90_FLAG_MAP_DOCPOSITION  
- 指定的调试引擎 (DE) 应通过使用文档位置映射断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。  
+ 指定调试引擎 (DE) 应使用的文档位置的映射断点。 这是仅适用于面向脚本的源代码文件，如 Active Server Pages (ASP) 中设置断点。  
   
  BP90_FLAG_DONT_STOP  
- 指定的调试引擎中，应处理断点，但调试引擎最终应不停止进行控制。也就是说， [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)不应发送事件对象。 此标志用于主要与跟踪点一起使用。  
+ 指定调试引擎中，应处理断点，但调试引擎最终应不停止进行控制。即[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)不应发送事件对象。 此标志用于主要与跟踪点一起使用。  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- 由本机调试引擎使用，以确定是否应清除单步执行状态。 它不同于 BP90_FLAG_DONT_STOP 因为如果跟踪点执行宏，则不会设置 BP90_FLAG_DONT_STOP 的不同而不同。  
+ 由本机调试引擎使用，以确定是否应该清除单步执行状态。 它不同于 BP90_FLAG_DONT_STOP 因为如果跟踪点执行宏，则不设置 BP90_FLAG_DONT_STOP。  
   
 ## <a name="requirements"></a>要求  
  标头： Msdbg90.h  
@@ -72,5 +72,5 @@ public enum enum_BP_FLAGS90
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

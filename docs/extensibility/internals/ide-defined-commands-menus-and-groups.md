@@ -1,5 +1,5 @@
 ---
-title: IDE 定义命令、 菜单和组 |Microsoft 文档
+title: IDE 定义的命令、 菜单和组 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,40 +15,40 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b65266ad3367df5cebeabc251bc8bceb6cda7075
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 34c41608a90b15538e190be093ed2791a90824f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31129384"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857271"
 ---
-# <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义命令、 菜单和组
-许多菜单、 命令和命令组已定义以供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 扩展时，可能也包括可供你使用这些命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+# <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义的命令、菜单和组
+多个菜单、 命令和命令组已定义以供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。 在扩展时，这些命令也已可供你使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="finding-environment-defined-commands"></a>查找环境定义命令  
+## <a name="finding-environment-defined-commands"></a>查找环境定义的命令  
  一组四个.vsct 文件中定义的环境命令：  
   
--   SharedCmdDef.vsct  
+- SharedCmdDef.vsct  
   
--   SharedCmdPlace.vsct  
+- SharedCmdPlace.vsct  
   
--   ShellCmdDef.vsct  
+- ShellCmdDef.vsct  
   
--   ShellCmdPlace.vsct  
+- ShellCmdPlace.vsct  
   
- 这些文件位于 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和可用于你的 VSPackage 的命令表 (.vsct) 配置文件中作为容器你自己的菜单、 组和命令的组的 Guid。  
+  这些文件位于 *\<Visual Studio SDK 安装路径 >* \VisualStudioIntegration\Common\Inc\\。 这些文件提供定义和菜单和组可用于你的 VSPackage 的命令表配置 (.vsct) 文件中作为容器菜单、 组和命令的 Guid。  
   
 ## <a name="in-this-section"></a>本节内容  
  [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)  
- 提供在 Visual Studio 菜单栏上，菜单和它们所包含的组的 GUID 和 ID 值。  
+ 提供的 GUID 和 ID 值的菜单栏上的 Visual Studio 菜单上，以及它们所包含的组。  
   
  [Visual Studio 工具栏中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)  
- 提供在 Visual Studio IDE 中的工具栏和它们所包含的组的 GUID 和 ID 值。  
+ 提供的 Visual Studio IDE 中的工具栏和它们所包含的组的 GUID 和 ID 值。  
   
  [Visual Studio 命令中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)  
- 提供由 Visual Studio IDE 的命令的 GUID 和 ID 值。  
+ 提供了由 Visual Studio IDE 定义的命令 GUID 和 ID 值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Visual Studio 命令表 (。Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
- [用于扩展项目系统 IDE 定义命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
+ [IDE 定义用于扩展项目系统的命令](../../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)   
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

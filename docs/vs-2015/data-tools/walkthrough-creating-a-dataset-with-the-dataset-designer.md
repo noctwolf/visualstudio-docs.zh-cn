@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 1a9d47431497f05fd5538510b39b44298587dd0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d77d63cc82b7af6281183b3eae67d09b0454fffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287360"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868256"
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>演练：使用数据集设计器创建数据集
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ ms.locfileid: "49287360"
   
  本演练涉及以下任务：  
   
--   创建一个新**Windows 应用程序**项目。  
+- 创建一个新**Windows 应用程序**项目。  
   
--   添加一个空**数据集**到项目的项。  
+- 添加一个空**数据集**到项目的项。  
   
--   创建和配置应用程序中的数据源，通过生成具有的数据集**数据集设计器**。  
+- 创建和配置应用程序中的数据源，通过生成具有的数据集**数据集设计器**。  
   
--   创建到 Northwind 数据库中的连接**服务器资源管理器**。  
+- 创建到 Northwind 数据库中的连接**服务器资源管理器**。  
   
--   基于数据库中的表在数据集中使用 Tableadapter 创建表。  
+- 基于数据库中的表在数据集中使用 Tableadapter 创建表。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  若要完成本演练，你需要：  

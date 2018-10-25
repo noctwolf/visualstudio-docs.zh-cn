@@ -20,12 +20,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afe7f71508de6dca3d29afeead23258eccbc667b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75ec3e300b0d85b066692a9d67c1bcce39198a79
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247177"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867372"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -799,113 +799,113 @@ ms.locfileid: "49247177"
   
 ##  <a name="bkmk_TextEditor"></a>文本编辑器  
   
-|命令|键盘快捷键|  
-|--------------|------------------------|  
-|编辑.分行|Enter<br /><br /> 或<br /><br /> Shift+Enter|  
-|编辑.左移字符|向左键|  
-|编辑.向左扩展一个字符|Shift+向左键|  
-|编辑.向左扩展一个字符列|Shift+Alt+向左键|  
-|编辑.右移字符|向右键|  
-|编辑.向右扩展一个字符|Shift+向右键|  
-|编辑.向右扩展一个字符列|Shift+Alt+向右键|  
-|编辑.字符转置|Ctrl+T|  
-|编辑.清除书签|Ctrl+K、Ctrl+L|  
-|编辑.折叠所有大纲显示|Ctrl+M、Ctrl+A|  
-|编辑.折叠当前区域|Ctrl+M、Ctrl+S|  
-|编辑.折叠标记|Ctrl+M、Ctrl+T|  
-|编辑.折叠到定义|Ctrl+M、Ctrl+O|  
-|编辑.注释选定内容|Ctrl+K、Ctrl+C|  
-|编辑.完成单词|Ctrl+空格键<br /><br /> 或<br /><br /> Alt + 向右键|  
-|编辑.复制参数提示|Ctrl+Shift+Alt+C|  
-|编辑.减少筛选器级别|Alt+,|  
-|编辑.向后删除|Backspace<br /><br /> 或<br /><br /> Shift+Bkspce|  
-|编辑.删除水平空白|Ctrl+K、Ctrl+\|  
-|编辑.文档结尾|Ctrl+End|  
-|编辑.文档结尾扩展|Ctrl+Shift+End|  
-|编辑.文档开始|Ctrl+Home|  
-|编辑.文档开始扩展|Ctrl+Shift+Home|  
-|编辑.展开所有大纲显示|Ctrl+M、Ctrl+X|  
-|编辑.展开当前区域|Ctrl+M、Ctrl+E|  
-|编辑.编排文档格式|Ctrl+K、Ctrl+D|  
-|编辑.格式化选定内容|Ctrl+K、Ctrl+F|  
-|编辑.转到大括号|Ctrl+]|  
-|编辑.扩展转到大括号|Ctrl+Shift+]|  
-|编辑.隐藏选定内容|Ctrl+M、Ctrl+H|  
-|编辑.增加筛选器级别|Alt+.|  
-|编辑.渐进式搜索|Ctrl+I|  
-|编辑.插入制表符|Tab|  
-|编辑.剪切行|Ctrl+L|  
-|编辑.删除行|Ctrl+Shift+L|  
-|编辑.向下移动一行|向下键|  
-|编辑.向下扩展一行|Shift+向下键|  
-|编辑.向下扩展列|Shift+Alt+向下键|  
-|编辑.行尾|End — 结束|  
-|编辑.扩展到行尾|Shift+End|  
-|编辑.行尾扩展列|Shift+Alt+End|  
-|编辑.上开新行|Ctrl+Enter|  
-|编辑.下开新行|Ctrl+Shift+Enter|  
-|编辑.行首|主页|  
-|编辑.扩展到行首|Shift+Home|  
-|编辑.行首扩展列|Shift+Alt+Home|  
-|编辑.行转置|Shift+Alt+T|  
-|编辑.向上移动一行|向上键|  
-|编辑.向上扩展一行|Shift+向上键|  
-|编辑.向上扩展列|Shift+Alt+向上键|  
-|编辑.列出成员|Ctrl+J|  
-|编辑.转换为小写|Ctrl+U|  
-|编辑.转换为大写|Ctrl+Shift+U|  
-|编辑.将选定行下移|Alt+向下键|  
-|编辑.将选定行上移|Alt+向上键|  
-|编辑.下一个突出显示的引用|Ctrl+Shift+向下键|  
-|编辑.改写模式|Insert|  
-|编辑.向下翻页|PgDn|  
-|编辑.向下扩展一页|Shift+PgDn|  
-|编辑.向上翻页|PgUp|  
-|编辑.向上扩展一页|Shift+PgUp|  
-|编辑.参数信息|Ctrl+Shift+空格键|  
-|编辑.粘贴参数提示|Ctrl+Shift+Alt+P|  
-|编辑.向后查看|Ctrl+Alt+-|  
-|编辑.查看定义|Alt+F12|  
-|编辑.向前查看|Ctrl+Alt+=|  
-|编辑.上一个突出显示的引用|Ctrl+Shift+向上键|  
-|编辑.快速信息|Ctrl+K、Ctrl+I|  
-|编辑.反向渐进式搜索|Ctrl+Shift+I|  
-|编辑.向下滚动一行|Ctrl+向下键|  
-|编辑.向上滚动一行|Ctrl+向上键|  
-|编辑.选择当前字|Ctrl+W|  
-|编辑.取消选定|Esc 键|  
-|编辑.选择到最后一个返回|Ctrl+=|  
-|编辑.显示 CodeLens 菜单|Alt+`|  
-|编辑.停止隐藏当前区域|Ctrl+M、Ctrl+U|  
-|编辑.停止大纲显示|Ctrl+M、Ctrl+P|  
-|编辑.交换定位点|Ctrl+K、Ctrl+A|  
-|编辑.左缩进|Shift+Tab|  
-|编辑.切换所有大纲显示|Ctrl+M、Ctrl+L|  
-|编辑.切换书签|Ctrl+K、Ctrl+K|  
-|Edit.ToggleCompletionMode|Ctrl+Alt+空格键|  
-|编辑.切换大纲显示展开|Ctrl+M、Ctrl+M|  
-|编辑.切换任务列表快捷方式|Ctrl+K、Ctrl+H|  
-|编辑.切换自动换行|Ctrl+E、Ctrl+W|  
-|编辑.取消注释选定内容|Ctrl+K、Ctrl+U|  
-|编辑.视图底部|Ctrl+PgDn|  
-|编辑.扩展到视图底部|Ctrl+Shift+PgDn|  
-|编辑.视图顶部|Ctrl+PgUp|  
-|编辑.扩展到视图顶部|Ctrl+Shift+PgUp|  
-|编辑.查看空白|Ctrl+R、Ctrl+W|  
-|编辑.字删除直至结尾处|Ctrl+Delete|  
-|编辑.字删除直至开始处|Ctrl+Backspace|  
-|编辑.下一字|Ctrl+向右键|  
-|编辑.扩展到下一字|Ctrl+Shift+向右键|  
-|编辑.向后扩展一个字列|Ctrl+Shift+Alt+向右键|  
-|编辑.上一字|Ctrl+向左键|  
-|编辑.扩展到上一字|Ctrl+Shift+向左键|  
-|编辑.向前扩展一个字列|Ctrl+Shift+Alt+向左键|  
-|编辑.字转置|Ctrl+Shift+T|  
-|编辑器上下文菜单.代码窗口.交互执行|Alt+Enter|  
-|编辑器上下文菜单.代码窗口.交互执行行|Alt+'|  
-|其他上下文菜单.HTML 上下文.在 Page Inspector 中查看|Ctrl+K、Ctrl+G|  
-|Team Foundation 上下文菜单.批注.Tfs 批注移动下一个区域|Alt+PgDn|  
-|Team Foundation 上下文菜单.批注.Tfs 批注移动上一个区域|Alt+PgUp|  
+|                             命令                              |                  键盘快捷键                   |
+|-------------------------------------------------------------------|-------------------------------------------------------|
+|                          编辑.分行                           |     Enter<br /><br /> 或<br /><br /> Shift+Enter      |
+|                           编辑.左移字符                           |                      向左键                       |
+|                        编辑.向左扩展一个字符                        |                   Shift+向左键                    |
+|                     编辑.向左扩展一个字符列                     |                 Shift+Alt+向左键                  |
+|                          编辑.右移字符                           |                      向右键                      |
+|                       编辑.向右扩展一个字符                        |                   Shift+向右键                   |
+|                    编辑.向右扩展一个字符列                     |                 Shift+Alt+向右键                 |
+|                        编辑.字符转置                         |                        Ctrl+T                         |
+|                        编辑.清除书签                        |                    Ctrl+K、Ctrl+L                     |
+|                     编辑.折叠所有大纲显示                     |                    Ctrl+M、Ctrl+A                     |
+|                    编辑.折叠当前区域                     |                    Ctrl+M、Ctrl+S                     |
+|                         编辑.折叠标记                          |                    Ctrl+M、Ctrl+T                     |
+|                    编辑.折叠到定义                     |                    Ctrl+M、Ctrl+O                     |
+|                       编辑.注释选定内容                       |                    Ctrl+K、Ctrl+C                     |
+|                         编辑.完成单词                         | Ctrl+空格键<br /><br /> 或<br /><br /> Alt + 向右键 |
+|                       编辑.复制参数提示                       |                   Ctrl+Shift+Alt+C                    |
+|                     编辑.减少筛选器级别                      |                         Alt+,                         |
+|                       编辑.向后删除                        |   Backspace<br /><br /> 或<br /><br /> Shift+Bkspce   |
+|                  编辑.删除水平空白                  |                    Ctrl+K、Ctrl+\                     |
+|                         编辑.文档结尾                          |                       Ctrl+End                        |
+|                      编辑.文档结尾扩展                       |                    Ctrl+Shift+End                     |
+|                        编辑.文档开始                         |                       Ctrl+Home                       |
+|                     编辑.文档开始扩展                      |                    Ctrl+Shift+Home                    |
+|                      编辑.展开所有大纲显示                      |                    Ctrl+M、Ctrl+X                     |
+|                     编辑.展开当前区域                      |                    Ctrl+M、Ctrl+E                     |
+|                        编辑.编排文档格式                        |                    Ctrl+K、Ctrl+D                     |
+|                       编辑.格式化选定内容                        |                    Ctrl+K、Ctrl+F                     |
+|                          编辑.转到大括号                           |                        Ctrl+]                         |
+|                       编辑.扩展转到大括号                        |                     Ctrl+Shift+]                      |
+|                        编辑.隐藏选定内容                         |                    Ctrl+M、Ctrl+H                     |
+|                     编辑.增加筛选器级别                      |                         Alt+.                         |
+|                      编辑.渐进式搜索                       |                        Ctrl+I                         |
+|                          编辑.插入制表符                           |                          Tab                          |
+|                           编辑.剪切行                            |                        Ctrl+L                         |
+|                          编辑.删除行                          |                     Ctrl+Shift+L                      |
+|                           编辑.向下移动一行                           |                      向下键                       |
+|                        编辑.向下扩展一行                        |                   Shift+向下键                    |
+|                     编辑.向下扩展列                     |                 Shift+Alt+向下键                  |
+|                           编辑.行尾                            |                          End — 结束                          |
+|                        编辑.扩展到行尾                         |                       Shift+End                       |
+|                     编辑.行尾扩展列                      |                     Shift+Alt+End                     |
+|                        编辑.上开新行                         |                      Ctrl+Enter                       |
+|                        编辑.下开新行                         |                   Ctrl+Shift+Enter                    |
+|                          编辑.行首                           |                         主页                          |
+|                       编辑.扩展到行首                        |                      Shift+Home                       |
+|                    编辑.行首扩展列                     |                    Shift+Alt+Home                     |
+|                        编辑.行转置                         |                      Shift+Alt+T                      |
+|                            编辑.向上移动一行                            |                       向上键                        |
+|                         编辑.向上扩展一行                         |                    Shift+向上键                     |
+|                      编辑.向上扩展列                      |                  Shift+Alt+向上键                   |
+|                         编辑.列出成员                          |                        Ctrl+J                         |
+|                        编辑.转换为小写                         |                        Ctrl+U                         |
+|                        编辑.转换为大写                         |                     Ctrl+Shift+U                      |
+|                    编辑.将选定行下移                     |                    Alt+向下键                     |
+|                     编辑.将选定行上移                      |                     Alt+向上键                      |
+|                   编辑.下一个突出显示的引用                   |                 Ctrl+Shift+向下键                 |
+|                         编辑.改写模式                         |                        Insert                         |
+|                           编辑.向下翻页                           |                         PgDn                          |
+|                        编辑.向下扩展一页                        |                      Shift+PgDn                       |
+|                            编辑.向上翻页                            |                         PgUp                          |
+|                         编辑.向上扩展一页                         |                      Shift+PgUp                       |
+|                        编辑.参数信息                         |                  Ctrl+Shift+空格键                  |
+|                      编辑.粘贴参数提示                       |                   Ctrl+Shift+Alt+P                    |
+|                         编辑.向后查看                         |                      Ctrl+Alt+-                       |
+|                        编辑.查看定义                        |                        Alt+F12                        |
+|                         编辑.向前查看                          |                      Ctrl+Alt+=                       |
+|                 编辑.上一个突出显示的引用                 |                  Ctrl+Shift+向上键                  |
+|                          编辑.快速信息                           |                    Ctrl+K、Ctrl+I                     |
+|                   编辑.反向渐进式搜索                   |                     Ctrl+Shift+I                      |
+|                        编辑.向下滚动一行                        |                    Ctrl+向下键                    |
+|                         编辑.向上滚动一行                         |                     Ctrl+向上键                     |
+|                      编辑.选择当前字                       |                        Ctrl+W                         |
+|                       编辑.取消选定                        |                        Esc 键                         |
+|                      编辑.选择到最后一个返回                      |                        Ctrl+=                         |
+|                       编辑.显示 CodeLens 菜单                       |                        Alt +\`                         |
+|                      编辑.停止隐藏当前区域                       |                    Ctrl+M、Ctrl+U                     |
+|                        编辑.停止大纲显示                         |                    Ctrl+M、Ctrl+P                     |
+|                          编辑.交换定位点                          |                    Ctrl+K、Ctrl+A                     |
+|                           编辑.左缩进                            |                       Shift+Tab                       |
+|                      编辑.切换所有大纲显示                      |                    Ctrl+M、Ctrl+L                     |
+|                        编辑.切换书签                        |                    Ctrl+K、Ctrl+K                     |
+|                     Edit.ToggleCompletionMode                     |                    Ctrl+Alt+空格键                     |
+|                   编辑.切换大纲显示展开                   |                    Ctrl+M、Ctrl+M                     |
+|                    编辑.切换任务列表快捷方式                    |                    Ctrl+K、Ctrl+H                     |
+|                        编辑.切换自动换行                        |                    Ctrl+E、Ctrl+W                     |
+|                      编辑.取消注释选定内容                      |                    Ctrl+K、Ctrl+U                     |
+|                          编辑.视图底部                          |                       Ctrl+PgDn                       |
+|                       编辑.扩展到视图底部                       |                    Ctrl+Shift+PgDn                    |
+|                           编辑.视图顶部                            |                       Ctrl+PgUp                       |
+|                        编辑.扩展到视图顶部                         |                    Ctrl+Shift+PgUp                    |
+|                        编辑.查看空白                        |                    Ctrl+R、Ctrl+W                     |
+|                       编辑.字删除直至结尾处                        |                      Ctrl+Delete                      |
+|                      编辑.字删除直至开始处                       |                    Ctrl+Backspace                     |
+|                           编辑.下一字                           |                   Ctrl+向右键                    |
+|                        编辑.扩展到下一字                        |                Ctrl+Shift+向右键                 |
+|                     编辑.向后扩展一个字列                     |              Ctrl+Shift+Alt+向右键               |
+|                         编辑.上一字                         |                    Ctrl+向左键                    |
+|                      编辑.扩展到上一字                      |                 Ctrl+Shift+向左键                 |
+|                   编辑.向前扩展一个字列                   |               Ctrl+Shift+Alt+向左键               |
+|                        编辑.字转置                         |                     Ctrl+Shift+T                      |
+|        编辑器上下文菜单.代码窗口.交互执行         |                       Alt+Enter                       |
+|      编辑器上下文菜单.代码窗口.交互执行行       |                         Alt+'                         |
+|         其他上下文菜单.HTML 上下文.在 Page Inspector 中查看         |                    Ctrl+K、Ctrl+G                     |
+|   Team Foundation 上下文菜单.批注.Tfs 批注移动下一个区域   |                       Alt+PgDn                        |
+| Team Foundation 上下文菜单.批注.Tfs 批注移动上一个区域 |                       Alt+PgUp                        |
   
 ##  <a name="bkmk_UMLactivityDiagram"></a>UML 活动图  
   

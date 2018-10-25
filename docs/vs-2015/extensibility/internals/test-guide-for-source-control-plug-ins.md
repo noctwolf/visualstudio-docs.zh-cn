@@ -19,12 +19,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1620de29372d1d8e397ad879e3c9f413c41b1286
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1893a30ff46470949fb5aa534f61f590e7ba2d95
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219578"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873547"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,19 +46,19 @@ ms.locfileid: "49219578"
  Web 项目  
  有四种类型的 Web 项目： 文件系统、 本地 IIS、 远程站点和 FTP。  
   
--   在本地路径上创建文件系统项目，但它们不需要 Internet 信息服务 (IIS)，因为它们通过 UNC 路径，在内部访问，可以将放置在从 IDE，类似于客户端项目内部的源代码管理下安装。  
+- 在本地路径上创建文件系统项目，但它们不需要 Internet 信息服务 (IIS)，因为它们通过 UNC 路径，在内部访问，可以将放置在从 IDE，类似于客户端项目内部的源代码管理下安装。  
   
--   本地 IIS 项目与 IIS 配合使用的同一台计算机上安装和访问与指向本地计算机的 URL。  
+- 本地 IIS 项目与 IIS 配合使用的同一台计算机上安装和访问与指向本地计算机的 URL。  
   
--   远程站点项目还会创建下一项 IIS 服务，但在 IIS 服务器计算机上而不是从源代码管理下放入内部[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
+- 远程站点项目还会创建下一项 IIS 服务，但在 IIS 服务器计算机上而不是从源代码管理下放入内部[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]IDE。  
   
--   FTP 项目通过远程 FTP 服务器进行访问，但不能将它们放在源代码管理下。  
+- FTP 项目通过远程 FTP 服务器进行访问，但不能将它们放在源代码管理下。  
   
- 登记  
- 该解决方案或项目源代码管理下的另一种说法。  
+  登记  
+  该解决方案或项目源代码管理下的另一种说法。  
   
- 版本存储区  
- 正在通过源控件插件 API 访问源代码管理数据库。  
+  版本存储区  
+  正在通过源控件插件 API 访问源代码管理数据库。  
   
 ## <a name="test-areas-covered-in-this-section"></a>在本部分中介绍的测试环节  
   

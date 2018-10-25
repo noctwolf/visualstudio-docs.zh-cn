@@ -29,21 +29,21 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 219ffa4a7a9c7d32348a262ea49c6f66d20e1c7f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: b169242b9828f47f1ecfb87ebf02a9f86234699f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670594"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836991"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime 概述
   若要运行使用 Visual Studio 中的 Microsoft Office 开发人员工具创建的解决方案，必须在最终用户计算机上安装 Visual Studio 2010 Tools for Office 运行时。 有关详细信息，请参阅[如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。 Visual Studio 2010 Tools for Office 运行时包含两个主要组件：  
   
--   Office 的 .NET Framework 扩展。 这些组件是提供解决方案和 Microsoft Office 应用程序之间的通信层的托管程序集。 有关详细信息，请参阅[了解有关.NET Framework 的 Office 扩展](#officeextensions)。  
+- Office 的 .NET Framework 扩展。 这些组件是提供解决方案和 Microsoft Office 应用程序之间的通信层的托管程序集。 有关详细信息，请参阅[了解有关.NET Framework 的 Office 扩展](#officeextensions)。  
   
--   Office 解决方案加载程序。 此组件是 Office 应用程序用于加载运行时和解决方案的一组非托管 DLL。 有关详细信息，请参阅[了解 Office 解决方案加载程序](#UnmanagedLoader)。  
+- Office 解决方案加载程序。 此组件是 Office 应用程序用于加载运行时和解决方案的一组非托管 DLL。 有关详细信息，请参阅[了解 Office 解决方案加载程序](#UnmanagedLoader)。  
   
- 可以通过多种不同的方法安装运行时。 根据计算机上的配置，安装运行时期间将安装不同的运行时组件。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
+  可以通过多种不同的方法安装运行时。 根据计算机上的配置，安装运行时期间将安装不同的运行时组件。 有关详细信息，请参阅[Visual Studio Tools for Office runtime 安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。  
   
 ##  <a name="officeextensions"></a> 了解.NET Framework 的 Office 扩展  
  Visual Studio 2010 Tools for Office 运行时包括.NET Framework 3.5 的 Office 扩展[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]及更高版本。 以 .NET Framework 各版本为目标的解决方法使用该版本适用的扩展。  
@@ -65,17 +65,17 @@ ms.locfileid: "35670594"
   
  默认情况下，在创建面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目时不会启用类型等效性功能。 如果要启用此功能，请将项目中以下任何程序集引用的 **“嵌入互操作类型”** 属性设置为 **“True”**：  
   
--   Microsoft.Office.Tools.dll  
+- Microsoft.Office.Tools.dll  
   
--   Microsoft.Office.Tools.Common.dll  
+- Microsoft.Office.Tools.Common.dll  
   
--   Microsoft.Office.Tools.Excel.dll  
+- Microsoft.Office.Tools.Excel.dll  
   
--   Microsoft.Office.Tools.Outlook.dll  
+- Microsoft.Office.Tools.Outlook.dll  
   
--   Microsoft.Office.Tools.Word.dll  
+- Microsoft.Office.Tools.Word.dll  
   
- 进行此更改后，项目所使用的所有运行时类型的类型信息都会在生成该项目时嵌入到解决方案程序集中。 在运行时的解决方案使用此嵌入的类型信息，而不是中引用的程序集中的类型信息。  
+  进行此更改后，项目所使用的所有运行时类型的类型信息都会在生成该项目时嵌入到解决方案程序集中。 在运行时的解决方案使用此嵌入的类型信息，而不是中引用的程序集中的类型信息。  
   
 ##  <a name="UnmanagedLoader"></a> 了解 Office 解决方案加载程序  
  Visual Studio Tools for Office Runtime 包含一些非托管 DLL，Office 应用程序使用这些 DLL 加载运行时和 Office 解决方案。 虽然从来不必直接使用这些 DLL，但是知道这些 DLL 的用途可以帮助你更好地了解 Office 解决方案的体系结构。  
@@ -90,17 +90,17 @@ ms.locfileid: "35670594"
 ### <a name="vstoloaderdll"></a>VSTOLoader.dll  
  之后*VSTOEE.dll*加载相应版本[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， *VSTOLoader.dll*执行加载解决方案程序集所需的工作的大部分。 *VSTOLoader.dll*执行多项操作：  
   
--   它为每个解决方案程序集创建一个应用程序域。  
+- 它为每个解决方案程序集创建一个应用程序域。  
   
--   它执行一组安全性检查以验证解决方案程序集是否有运行的权限。  
+- 它执行一组安全性检查以验证解决方案程序集是否有运行的权限。  
   
--   它加载解决方案所需的 Office 的 .NET Framework 扩展的版本。  
+- 它加载解决方案所需的 Office 的 .NET Framework 扩展的版本。  
   
- *VSTOLoader.dll*还将执行特定于 VSTO 外接程序的多个操作：  
+  *VSTOLoader.dll*还将执行特定于 VSTO 外接程序的多个操作：  
   
--   它实现 <xref:Extensibility.IDTExtensibility2> 接口。 <xref:Extensibility.IDTExtensibility2> 是一个 Microsoft Office 应用程序的所有 VSTO 外接程序都必须实现的 COM 接口。 此接口定义应用程序为与 VSTO 外接程序通信而调用的方法。  
+- 它实现 <xref:Extensibility.IDTExtensibility2> 接口。 <xref:Extensibility.IDTExtensibility2> 是一个 Microsoft Office 应用程序的所有 VSTO 外接程序都必须实现的 COM 接口。 此接口定义应用程序为与 VSTO 外接程序通信而调用的方法。  
   
--   它实现 IManagedAddin 接口。 Office 应用程序使用此接口来帮助加载 VSTO 外接程序。有关详细信息，请参阅[IManagedAddin 接口](../vsto/imanagedaddin-interface.md)。  
+- 它实现 IManagedAddin 接口。 Office 应用程序使用此接口来帮助加载 VSTO 外接程序。有关详细信息，请参阅[IManagedAddin 接口](../vsto/imanagedaddin-interface.md)。  
   
 ## <a name="understand-the-32-bit-and-64-bit-versions-of-the-runtime"></a>了解运行时的 32 位和 64 位版本  
  有单独的 64 位和 32 位版本的 Visual Studio 2010 Tools for Office 运行时。 这两种运行时版本用于在 64 位和 32 位版本的 Office 中运行解决方案。 下表显示 Windows 与 Office 的各种组合所需的运行时版本。  
@@ -123,7 +123,7 @@ ms.locfileid: "35670594"
  [Visual Studio Tools for Office runtime 中的程序集](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md)   
  [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [升级和迁移 Office 解决方案](../vsto/upgrading-and-migrating-office-solutions.md)  
   

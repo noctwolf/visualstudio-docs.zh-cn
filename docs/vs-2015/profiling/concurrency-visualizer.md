@@ -21,23 +21,23 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ac795c2068a27d673b6c603d4ef8c7d3be056cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0898b20ae61feaef79a4923211ac47b902c61e76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304182"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826424"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 请注意]
 >  对于 Visual Studio，并发可视化工具是可选扩展。 从以下链接下载并发可视化工具和并发可视化工具收集工具：  
->   
->  -   下载              [并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 扩展。  
-> -   下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。  
->   
->      [并发可视化工具命令行实用工具(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) 使你能够从命令行收集跟踪，可以在 Visual Studio 2015 的并发可视化工具中查看该命令行。 该工具可以在未安装 Visual Studio 的计算机上使用。  
+> 
+> - 下载              [并发可视化工具](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) 扩展。  
+>   -   下载              [Visual Studio 2015 的并发可视化工具收集工具](http://www.microsoft.com/download/details.aspx?id=49103)。  
+> 
+>   [并发可视化工具命令行实用工具(CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) 使你能够从命令行收集跟踪，可以在 Visual Studio 2015 的并发可视化工具中查看该命令行。 该工具可以在未安装 Visual Studio 的计算机上使用。  
   
  使用并发可视化工具，可以检查多线程应用的执行方式。 并发可视化工具中的视图提供图形、表格和文本形式的数据，可表明程序中的线程与整个系统之间的时态关系。 可以使用并发可视化工具查找性能瓶颈、CPU 利用率不足、线程争用、跨内核线程迁移、同步延迟、DirectX 活动、I/O 重叠区域和其他信息。 这些视图通过将其图形输出与调用堆栈和源代码关联在一起，提供可操作数据。  
   

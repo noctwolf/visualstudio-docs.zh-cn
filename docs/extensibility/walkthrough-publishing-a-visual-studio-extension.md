@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80bf0d3885f9dc4e4360b8516bd13a62cfbea952
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: ae0b9d48e2a2292229b40e3aaf2a1c755e4c844e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815736"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练： 发布 Visual Studio 扩展
 
@@ -39,7 +39,7 @@ ms.locfileid: "39566799"
 
 1. 更新扩展 *.vsixmanifest*有关产品名称、 作者和版本的正确信息。
 
-  ![更新扩展 vsixmanifest](media/update-extension-vsixmanifest.png)
+   ![更新扩展 vsixmanifest](media/update-extension-vsixmanifest.png)
 
 2. 构建您的扩展插件**版本**模式。 现在你的扩展打包为 VSIX \bin\Release 文件夹中。
 
@@ -67,7 +67,7 @@ ms.locfileid: "39566799"
 
 5. 单击**发布的扩展**。  此选项可导航到你的所有扩展的管理页。 如果你没有发布者帐户，系统会提示创建一个在这一次。
 
-  ![将上传到 Marketplace](media/upload-to-marketplace.png)
+   ![将上传到 Marketplace](media/upload-to-marketplace.png)
 
 6. 选择你想要用于上传你的扩展发布的服务器。 可以通过单击左侧列出的发布服务器名称更改发布服务器。 单击**新的扩展插件**，然后选择**Visual Studio**。
 
@@ -85,29 +85,29 @@ ms.locfileid: "39566799"
     
    * **徽标**用于你的扩展。 此徽标是从自动填充*source.extension.vsixmanifest*文件提供。
     
-    * **简短说明**的扩展功能的。 此说明是从自动填充*source.extension.vsixmanifest*文件。
+     * **简短说明**的扩展功能的。 此说明是从自动填充*source.extension.vsixmanifest*文件。
     
-    * **概述**是包括屏幕截图和有关您的扩展插件的作用的详细的信息的好时机。
+     * **概述**是包括屏幕截图和有关您的扩展插件的作用的详细的信息的好时机。
     
-    * **支持的 Visual Studio 版本**允许您选择的 Visual Studio 版本中将处理您的扩展插件。 您的扩展插件仅安装到这些版本。
+     * **支持的 Visual Studio 版本**允许您选择的 Visual Studio 版本中将处理您的扩展插件。 您的扩展插件仅安装到这些版本。
     
-    * * * 支持 Visual Studio 版本，可以选择您的扩展插件将适用于 Visual Studio 的版本。 您的扩展插件仅安装到这些版本。
+     * * * 支持 Visual Studio 版本，可以选择您的扩展插件将适用于 Visual Studio 的版本。 您的扩展插件仅安装到这些版本。
     
-    * **类型**。 最常见的扩展类型是**工具**。
+     * **类型**。 最常见的扩展类型是**工具**。
     
-    * **类别**。 选择最多三个是最佳适合您的扩展插件的。
+     * **类别**。 选择最多三个是最佳适合您的扩展插件的。
     
-    * **标记**是关键字，可帮助用户找到您的扩展插件。 标记可帮助提高你的扩展在 Marketplace 中搜索相关性。
+     * **标记**是关键字，可帮助用户找到您的扩展插件。 标记可帮助提高你的扩展在 Marketplace 中搜索相关性。
     
-    * **定价类别**是您的扩展插件的成本。
+     * **定价类别**是您的扩展插件的成本。
     
-    * **源代码存储库**使您可以与社区分享你的源代码的链接。
+     * **源代码存储库**使您可以与社区分享你的源代码的链接。
     
-    * **您的扩展允许问答**允许用户在你扩展条目页面留下的问题。
+     * **您的扩展允许问答**允许用户在你扩展条目页面留下的问题。
 
 9. 单击**保存并上传**。 此选项操作，将返回到发布服务器管理页。 您的扩展插件尚未发布。 若要发布扩展，右键单击扩展，然后选择**设为公开**。 您可以查看您的扩展插件的外观像在 Marketplace 上通过选择**查看扩展**。 获取数字，请单击**报表**。 若要更改您的扩展插件，请单击**编辑**。
 
-  ![扩展项菜单](media/extension-entry-menu.png)
+   ![扩展项菜单](media/extension-entry-menu.png)
 
 10. 单击后**设为公开**，您的扩展现在是公共的。 你的扩展在 Visual Studio Marketplace 中搜索。
 
@@ -119,17 +119,17 @@ Marketplace 支持授予其他用户权限来访问和管理发布者帐户。
 
 2. 选择**成员**，然后单击**添加**。
 
-  ![添加其他用户](media/add-users.png)
+   ![添加其他用户](media/add-users.png)
 
 3. 然后可以指定你想要添加并授予适当的下的访问级别的用户的电子邮件地址**选择一个角色**。  可从以下选项中进行选择：
 
-  * **创建者**： 用户可以发布扩展，但不能查看或管理其他用户发布的扩展。
+   * **创建者**： 用户可以发布扩展，但不能查看或管理其他用户发布的扩展。
   
-  * **读取器**： 用户可以查看扩展，但不能发布或管理扩展。
+   * **读取器**： 用户可以查看扩展，但不能发布或管理扩展。
   
-  * **参与者**： 用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权限。
+   * **参与者**： 用户可以发布和管理扩展，但不能编辑发布服务器设置或管理访问权限。
   
-  * **所有者**： 用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
+   * **所有者**： 用户可以发布和管理扩展，编辑发布服务器设置和管理访问权限。
   
 ## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>从 Visual Studio Marketplace 安装扩展
 

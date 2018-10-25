@@ -22,25 +22,25 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d6b036fdd9f75afc0c9976591ae0df23194b196d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 223e060083554169ab6ffdb95faf4979e9466d02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268900"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825616"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要附加到正在运行的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序，您必须知道 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程的名称：  
   
--   如果正在运行 IIS 6.0 或 IIS 7.0，则名称为 w3wp.exe。  
+- 如果正在运行 IIS 6.0 或 IIS 7.0，则名称为 w3wp.exe。  
   
--   如果正在运行 IIS 的早期版本，则该进程的名称为 aspnet_wp.exe。  
+- 如果正在运行 IIS 的早期版本，则该进程的名称为 aspnet_wp.exe。  
   
- 通过使用生成的应用程序[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]或更高版本，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]代码可以驻留在文件系统上并在测试服务器 WebDev.WebServer.exe 下运行。 在这种情况下，必须附加到 WebDev.WebServer.exe 而不是 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程。 此方案仅适用于本地调试。  
+  通过使用生成的应用程序[!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)]或更高版本，[!INCLUDE[vstecasp](../includes/vstecasp-md.md)]代码可以驻留在文件系统上并在测试服务器 WebDev.WebServer.exe 下运行。 在这种情况下，必须附加到 WebDev.WebServer.exe 而不是 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 进程。 此方案仅适用于本地调试。  
   
- 当原来的 ASP 应用程序在进程内运行时，它们会在 IIS 进程 inetinfo.exe 内部运行。  
+  当原来的 ASP 应用程序在进程内运行时，它们会在 IIS 进程 inetinfo.exe 内部运行。  
   
 > [!NOTE]
 >  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅 [在 Visual Studio 中自定义开发设置](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c5044479ca08933f5088101cc088ea3011b4c4
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 73d1462cd6a5dacf57939ae06e7b490235483a60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495539"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843127"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows 安装程序安装和卸载应用程序或用户的计算机上的软件产品在名为 Windows 安装程序组件 （有时称为 WICs 或只是组件） 的单元中执行这些任务。 一个 GUID 标识每个 WIC，它是安装和引用计数对于使用 Windows 安装程序安装的基本单位。  
@@ -29,17 +29,17 @@ Windows 安装程序安装和卸载应用程序或用户的计算机上的软件
 ## <a name="authoring-a-vspackage"></a>创作 VSPackage  
  Windows 安装程序使用安装包，其中包含 Windows 安装程序需要安装、 卸载或修复产品，并且运行安装程序用户界面 (UI) 的信息。 每个安装包包括一个.msi 文件，其中包含安装数据库、 摘要信息流和数据流的各个部件的安装。 若要使用安装程序，你必须编写安装。 因为安装程序组织安装组件的概念，并将安装的相关信息存储在关系数据库，广泛地创作一个安装包的过程需要执行以下步骤：  
   
-1.  规划编写，以支持您的版本控制和并行的策略设置。  
+1. 规划编写，以支持您的版本控制和并行的策略设置。  
   
-2.  标识要呈现给用户的功能。  
+2. 标识要呈现给用户的功能。  
   
-3.  将 VSPackage 和依赖项组织到组件。  
+3. 将 VSPackage 和依赖项组织到组件。  
   
-4.  安装使用填充数据库的信息。  
+4. 安装使用填充数据库的信息。  
   
-5.  验证安装的包。  
+5. 验证安装的包。  
   
- 本文档主要关心此过程的第一个和第三个步骤。 在执行这些步骤期间您将组织 VSPackage 功能到 WICs 以便在版本控制和服务策略才能实现的后续版本可以帧[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 Platform SDK 中的 Windows Installer 文档中详细介绍剩余三个步骤。  
+   本文档主要关心此过程的第一个和第三个步骤。 在执行这些步骤期间您将组织 VSPackage 功能到 WICs 以便在版本控制和服务策略才能实现的后续版本可以帧[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 Platform SDK 中的 Windows Installer 文档中详细介绍剩余三个步骤。  
   
 ## <a name="key-terms"></a>关键术语  
  以下是与 Windows 安装程序技术相关的重要术语的定义。  

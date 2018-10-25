@@ -10,35 +10,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9688948ebe2fa5e045578ee808e068d59450d748
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 7f6904313ff585b8099c993f83e90bacb91a4ba2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433386"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847950"
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 本主题介绍如何配置防火墙以在运行以下操作系统的计算机上启用远程调试：  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8/8.1  
+- Windows 8/8.1  
   
--   Windows 7   
+- Windows 7   
   
--   Windows Server 2012 R2  
+- Windows Server 2012 R2  
 
--   Windows Server 2012
+- Windows Server 2012
   
--   Windows Server 2008 R2 
+- Windows Server 2008 R2 
   
- 如果正在调试的网络不受防火墙保护，则此配置是不必要的。 否则，承载 Visual Studio 的计算机和要调试的远程计算机均需要对防火墙配置的更改。  
+  如果正在调试的网络不受防火墙保护，则此配置是不必要的。 否则，承载 Visual Studio 的计算机和要调试的远程计算机均需要对防火墙配置的更改。  
   
- “” If your network requires that communication be performed using , you must open additional ports on both the Visual Studio host computer and the remote computer.  
+  “” If your network requires that communication be performed using , you must open additional ports on both the Visual Studio host computer and the remote computer.  
   
- “Web 服务器” 如果你正在调试远程 Web 服务器，则必须打开远程计算机上的其他端口。 （对于 IIS，端口 80 必须打开。）  
+  “Web 服务器” 如果你正在调试远程 Web 服务器，则必须打开远程计算机上的其他端口。 （对于 IIS，端口 80 必须打开。）  
   
- 请注意，这两台计算机不需要运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
+  请注意，这两台计算机不需要运行相同的操作系统。 例如，Visual Studio 计算机可以运行 Windows 10，而远程计算机可以运行 Windows Server 2012 R2。      
   
 ## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>启用远程调试的远程计算机上的端口  
   
@@ -120,4 +120,4 @@ ms.locfileid: "37433386"
 |80|传出|TCP|Web 服务器调试所必需。|
   
 ## <a name="see-also"></a>请参阅  
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

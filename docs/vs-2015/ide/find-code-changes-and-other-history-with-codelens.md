@@ -14,12 +14,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1fac3a8fde417065aecb7e3882ff9dc12b06402
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: df4b435f791b066afda90ac9f5492a946d7e215c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224949"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49825654"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,46 +42,46 @@ ms.locfileid: "49224949"
 ##  <a name="FindReferences"></a>查找对代码的引用  
  你将需要：  
   
--   Visual Studio Enterprise 或 Visual Studio Professional  
+- Visual Studio Enterprise 或 Visual Studio Professional  
   
--   Visual C# .NET 或 Visual Basic .NET 代码  
+- Visual C# .NET 或 Visual Basic .NET 代码  
   
- 选择“引用”  指示器（“Alt + 2”）。 如果看到“0 个引用” ，则没有来自 Visual C# 或 Visual Basic 代码的引用。 这不包括来自其他项（如 XAML 和 ASPX 文件）的引用。  
+  选择“引用”  指示器（“Alt + 2”）。 如果看到“0 个引用” ，则没有来自 Visual C# 或 Visual Basic 代码的引用。 这不包括来自其他项（如 XAML 和 ASPX 文件）的引用。  
   
- ![CodeLens - 选择引用指示器](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
+  ![CodeLens - 选择引用指示器](../ide/media/codelensviewreferenceslist.png "CodeLensViewReferencesList")  
   
- 若要查看引用代码，将你的鼠标移动到引用的顶部。  
+  若要查看引用代码，将你的鼠标移动到引用的顶部。  
   
- ![CodeLens - 查看引用](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
+  ![CodeLens - 查看引用](../ide/media/codelensviewreferencespeekreference.png "CodeLensViewReferencesPeekReference")  
   
- 若要打开包含该引用的文件，请双击该引用。  
+  若要打开包含该引用的文件，请双击该引用。  
   
- 若要查看此代码与其引用之间的关系，请[创建代码图](../modeling/map-dependencies-across-your-solutions.md)并在代码图快捷菜单中选择“显示所有引用”。  
+  若要查看此代码与其引用之间的关系，请[创建代码图](../modeling/map-dependencies-across-your-solutions.md)并在代码图快捷菜单中选择“显示所有引用”。  
   
- ![CodeLens - 代码映射上的引用](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
+  ![CodeLens - 代码映射上的引用](../ide/media/codelensmappedreferences.png "CodeLensMappedReferences")  
   
 ##  <a name="FindCodeHistory"></a>查找代码历史记录和链接项  
  查看代码的历史记录，了解你的代码所发生的情况。 或者，在将这些更改合并到你的代码中之前查看它们，这样你可以更好地了解其他分支中的更改可能影响你的代码的方式。  
   
  你将需要：  
   
--   Visual Studio Enterprise 或 Visual Studio Professional  
+- Visual Studio Enterprise 或 Visual Studio Professional  
   
--   Team Foundation Server 2013 或更高版本、Visual Studio Team Services 或 Git  
+- Team Foundation Server 2013 或更高版本、Visual Studio Team Services 或 Git  
   
--   [Lync 2010 或更高版本、或 Skype for Business](http://technet.microsoft.com/lync)，可从代码编辑器联系你的团队  
+- [Lync 2010 或更高版本、或 Skype for Business](http://technet.microsoft.com/lync)，可从代码编辑器联系你的团队  
   
- 对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 Visual C#.NET 或 Visual Basic.NET 代码，你可以获取类和方法级别的 CodeLens 详细信息（*代码元素级别* 指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。  
+  对于随 Team Foundation 版本控制 (TFVC) 或 Git 一起存储的 Visual C#.NET 或 Visual Basic.NET 代码，你可以获取类和方法级别的 CodeLens 详细信息（*代码元素级别* 指示器）。 如果你的 Git 存储库托管在 TfGit 中，则还可以获取指向 TFS 工作项的链接。  
   
- ![代码元素 - 级别指示器](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
+  ![代码元素 - 级别指示器](../ide/media/codelenselementlevelindicators.png "CodeLensElementLevelIndicators")  
   
- 对于可在 Visual Studio 编辑器中打开的所有其他类型的文件，在窗口底部的某个位置获取整个文件的 CodeLens 详细信息（*文件级* 指示器）。  
+  对于可在 Visual Studio 编辑器中打开的所有其他类型的文件，在窗口底部的某个位置获取整个文件的 CodeLens 详细信息（*文件级* 指示器）。  
   
- ![文件 - 级别 CodeLens 指示器](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
+  ![文件 - 级别 CodeLens 指示器](../ide/media/almcodelensfilelevelindicators.png "ALMCodeLensFileLevelIndicators")  
   
- 若要使用键盘来选择指示器，请按住“ALT”  键以显示相关的数字键。  
+  若要使用键盘来选择指示器，请按住“ALT”  键以显示相关的数字键。  
   
- ![按 Alt 以查看键盘访问数字键](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
+  ![按 Alt 以查看键盘访问数字键](../ide/media/codelensaltkeyindicators.png "CodeLensAltKeyIndicators")  
   
 ### <a name="find-changes-in-your-code"></a>查找你的代码中的更改  
  在代码元素级指示器中，查找你的 C# 或 Visual Basic 代码的更改人员以及他们所做的更改。 这是你在 Team Foundation Server 或 Visual Studio Team Services 中使用 Team Foundation 版本控制 (TFVC) 时看到的内容。  
@@ -243,11 +243,11 @@ ms.locfileid: "49224949"
   
  **支持哪些 Lync 和 Skype 配置？**  
   
--   Skype for Business（32 位或 64 位）  
+- Skype for Business（32 位或 64 位）  
   
--   仅 Lync 2010 或更高版本（32 位或 64 位），但不是使用 Windows 8.1 的 Lync Basic 2013  
+- 仅 Lync 2010 或更高版本（32 位或 64 位），但不是使用 Windows 8.1 的 Lync Basic 2013  
   
- CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所有本地化版本的 Visual Studio 本地化 Lync 或 Skype。  
+  CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所有本地化版本的 Visual Studio 本地化 Lync 或 Skype。  
   
 ### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>问：如何更改 CodeLens 的字体和颜色？  
  **答：** 转到 **“工具”**、 **“选项”**、 **“环境”** 和 **“字体和颜色”**。  

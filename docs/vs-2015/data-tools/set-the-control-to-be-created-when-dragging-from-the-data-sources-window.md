@@ -22,12 +22,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 883c2ce82dc1c4b1d8d17d9be57ced0e598840e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e48bac812f8d87b7e65b6a2a5832a7a36e4f95c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293678"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860352"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49293678"
   
 #### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>若要设置为数据表或对象创建的控件  
   
-1.  请确保在 WPF 设计器或 Windows 窗体设计器处于打开状态。  
+1. 请确保在 WPF 设计器或 Windows 窗体设计器处于打开状态。  
   
-2.  在中**数据源**窗口中，选择表示数据表的项或要设置对象。  
+2. 在中**数据源**窗口中，选择表示数据表的项或要设置对象。  
   
-3.  单击项的下拉列表菜单，然后单击菜单中的以下项之一：  
+3. 单击项的下拉列表菜单，然后单击菜单中的以下项之一：  
   
-    -   若要在单独控件中显示每个数据字段，请单击**详细信息**。 将数据项拖到设计器中，此操作将创建每个列或属性的父数据的表或对象，以及为每个控件的标签的不同数据绑定控件。  
+   - 若要在单独控件中显示每个数据字段，请单击**详细信息**。 将数据项拖到设计器中，此操作将创建每个列或属性的父数据的表或对象，以及为每个控件的标签的不同数据绑定控件。  
   
-    -   若要在单个控件中显示的所有数据，请选择一个不同的控件在列表中，如**DataGrid**或**列表**在 WPF 应用程序中，或**DataGridView**在 Windows 窗体中应用程序。  
+   - 若要在单个控件中显示的所有数据，请选择一个不同的控件在列表中，如**DataGrid**或**列表**在 WPF 应用程序中，或**DataGridView**在 Windows 窗体中应用程序。  
   
      可用控件列表取决于所在的设计器上已打开，.NET Framework 的版本将项目目标，以及是否已添加自定义控件支持数据绑定到的**工具箱**。 如果你想要创建的控件的可用控件列表中，可以将控件添加到列表。 有关详细信息，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   

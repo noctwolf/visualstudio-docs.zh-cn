@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkhelper:: Symbolforva |Microsoft 文档'
+title: 'Idiastackwalkhelper:: Symbolforva |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e70dac639f18f934bb997cc4979bdbe6a7d8c4c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a9af63460d3b5c082f52d3dbd9725fbfeef9c24f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31467532"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863907"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 检索包含指定的虚拟地址的符号。  
@@ -35,7 +35,7 @@ HRESULT symbolForVA(
   
 #### <a name="parameters"></a>参数  
  `va`  
- [in]在请求的符号中包含的虚拟地址。 该符号必须是`SymTagFunctionType`(从值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。  
+ [in]包含请求的符号中的虚拟地址。 该符号必须是`SymTagFunctionType`(取值[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举)。  
   
  `ppSymbol`  
  [out][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示指定地址处的符号。  

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71ed93b4acef31dd3b1be55983525ac8999c539c
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 190c94d70b87306ce119a2f37cf10b0f034fede9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869283"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 代码分析使用内置的字典来检查拼写、 语法的情况下和.NET Framework 准则的其他命名约定中的错误代码中的标识符。 可以创建要添加、 删除或修改条款、 缩写和首字母缩写词到内置词典的自定义词典 Xml 文件。
@@ -61,17 +61,17 @@ ms.locfileid: "47860051"
 ## <a name="custom-dictionary-elements"></a>自定义词典元素
  可以通过将条款添加为自定义字典中的以下元素的内部文本来修改代码分析字典中的行为：
 
--   [字典/单词/识别/中的单词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
+- [字典/单词/识别/中的单词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 
--   [字典/单词/无法识别的/中的单词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
+- [字典/单词/无法识别的/中的单词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
--   [字典/单词/已弃用/术语 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [字典/单词/已弃用/术语 [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
--   [字典/单词/复合/术语 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
+- [字典/单词/复合/术语 [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
--   [字典/单词/DiscreteExceptions/术语](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [字典/单词/DiscreteExceptions/术语](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
--   [字典/首字母缩写词/CasingExceptions/首字母缩略词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
+- [字典/首字母缩写词/CasingExceptions/首字母缩略词](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
 ###  <a name="BKMK_DictionaryWordsRecognizedWord"></a> 字典/单词/识别/中的单词
  若要包括的代码分析会正确标识的字词列表中的一个术语，拼写，作为字典/单词/识别/Word 元素的内部文本添加术语。 字典/单词/识别/Word 元素中的条款不区分大小写。
@@ -89,7 +89,6 @@ ms.locfileid: "47860051"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  字典/单词/识别节点中的条款被应用于以下的代码分析规则：
@@ -124,7 +123,6 @@ ms.locfileid: "47860051"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  无法识别的单词/字典/节点中的条款被应用于以下的代码分析规则：
@@ -148,11 +146,11 @@ ms.locfileid: "47860051"
 
  若要包含在警告中建议的替代字词，字词元素 PreferredAlternate 属性中指定备用服务器。 如果不希望建议一个替代，可以将属性值留空。
 
--   字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。
+- 字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。
 
--   PreferredAlternate 属性值是区分大小写。 对于复合备用项使用 Pascal 大小写。
+- PreferredAlternate 属性值是区分大小写。 对于复合备用项使用 Pascal 大小写。
 
- **示例**
+  **示例**
 
 ```
 <Dictionary>
@@ -165,7 +163,6 @@ ms.locfileid: "47860051"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  已弃用的单词/字典/节点中的条款被应用于以下的代码分析规则：
@@ -183,11 +180,11 @@ ms.locfileid: "47860051"
 ###  <a name="BKMK_DictionaryWordsCompoundTermCompoundAlternate"></a> 字典/单词/复合/术语 [@CompoundAlternate]
  内置词典标识作为单一的离散的术语，而不是一个复合术语的一些术语。 若要与搜索条件的代码分析标识为一个组合词列表中包括一个术语，并指定正确的大小写的字词，添加一词作为字典/单词/复合/术语元素的内部文本。 术语元素 CompoundAlternate 属性中指定的单个单词利用不同的单词 （Pascal 大小写） 的第一个字母组成的复合术语。 请注意，内部文本中指定的术语自动添加到字典/单词/DiscreteExceptions 列表。
 
--   字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。
+- 字典/单词中的不推荐使用的词条/已弃用/术语元素不是区分大小写。
 
--   PreferredAlternate 属性值是区分大小写。 对于复合备用项使用 Pascal 大小写。
+- PreferredAlternate 属性值是区分大小写。 对于复合备用项使用 Pascal 大小写。
 
- **示例**
+  **示例**
 
 ```
 <Dictionary>
@@ -200,7 +197,6 @@ ms.locfileid: "47860051"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  字典/单词/化合物节点中的条款被应用于以下的代码分析规则：
@@ -229,7 +225,6 @@ ms.locfileid: "47860051"
       </Words>
       ...
 </Dictionary>
-
 ```
 
  字典/单词/DiscreteExceptions 节点中的条款被应用于以下的代码分析规则：
@@ -254,7 +249,6 @@ ms.locfileid: "47860051"
       </Acronyms>
       ...
 </Dictionary>
-
 ```
 
  字典/首字母缩写词/CasingExceptions 节点中的条款被应用于以下的代码分析规则：

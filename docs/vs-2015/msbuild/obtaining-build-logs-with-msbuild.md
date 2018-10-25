@@ -17,12 +17,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f2a3b03c09ffd3f215c0fc404f027601c8b549
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb4a1822d0be86d19f25bfaa46e296abc7a73a0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176002"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811745"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>用 MSBuild 获取生成日志
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ ms.locfileid: "49176002"
 ## <a name="setting-the-level-of-detail"></a>设置详细信息级别  
  在不指定详细信息等级的情况下使用 MSBuild 生成项目时，输出日志中会出现以下信息：  
   
--   错误、警告和被分类为极为重要的消息。  
+- 错误、警告和被分类为极为重要的消息。  
   
--   一些状态事件。  
+- 一些状态事件。  
   
--   生成总结。  
+- 生成总结。  
   
- 使用 **/verbosity** (**/v**) 开关可控制出现在输出日志中的数据量。 对于故障排除，请使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的详细级别，它可提供大部分信息。  
+  使用 **/verbosity** (**/v**) 开关可控制出现在输出日志中的数据量。 对于故障排除，请使用 `detailed` (`d`) 或 `diagnostic` (`diag`) 的详细级别，它可提供大部分信息。  
   
- 将 **/verbosity** 设置为 `detailed` 时，生成过程会减慢；将 **/verbosity** 设置为 `diagnostic` 时，该过程会更慢。  
+  将 **/verbosity** 设置为 `detailed` 时，生成过程会减慢；将 **/verbosity** 设置为 `diagnostic` 时，该过程会更慢。  
   
 ```  
 msbuild MyProject.proj /t:go /v:diag  

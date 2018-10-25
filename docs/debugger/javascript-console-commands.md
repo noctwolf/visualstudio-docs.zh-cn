@@ -14,16 +14,16 @@ manager: douge
 ms.workload:
 - uwp
 - cordova
-ms.openlocfilehash: 8642d59beb845bf2784d09133a590a4716897ed4
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f10439e63b95fc2e78980ceb585e32dbbabd44d9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282204"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823744"
 ---
 # <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 控制台命令
   
- 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持的控制台命令的信息，请参见[调试应用程序](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 在 Internet Explorer F12 工具中使用控制台的信息，请参阅[本主题](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
+ 你可以在 Visual Studio 的“JavaScript 控制台”窗口中使用命令发送消息和执行其他任务。 有关演示如何使用该窗口的示例，请参阅[快速入门： 调试 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主题中的信息适用于 UWP 应用和使用 Visual Studio Tools for Apache Cordova 创建的应用。 有关 Cordova 应用中受支持控制台命令的信息，请参阅 [Debug Your App](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 有关在 Internet Explorer F12 工具中使用控制台的信息，请参阅 [本主题](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255006(v=vs.85))。  
   
  如果 JavaScript 控制台窗口已关闭，则可以打开它通过选择 Visual Studio 中调试时，**调试** > **Windows** > **JavaScript控制台**。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "44282204"
 |`msIsIndependentlyComposed(element)`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
 |`profile(reportName)`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
 |`profileEnd()`|在 Web 应用中使用。 不支持在使用 JavaScript 的 UWP 应用中。|不支持。|  
-|`select(element)`|选择指定的 HTML`element`中[DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
+|`select(element)`|在 `element` DOM 资源管理器 [中选择指定的 HTML](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
 |`time (name)`|启动由可选的 `name` 参数标识的计时器。 配合 `console.timeEnd`使用时，计算 `time` 和 `timeEnd`之间经历的时间，并使用 `name` 字符串作为前缀将结果（以 ms 为测量单位）发送到控制台。 用于启用应用程序代码的检测以衡量性能。|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|停止由可选的 `name` 参数标识的计时器。 请参见 `time` 控制台命令。|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|将堆栈跟踪发送到控制台窗口。 跟踪包括完整的调用堆栈以及文件名、行号和列号等信息。|`console.trace();`|  
@@ -66,11 +66,11 @@ ms.locfileid: "44282204"
   
 |命令|描述|示例|  
 |-------------|-----------------|-------------|  
-|`$0`, `$1`, `$2`, `$3`, `$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|  
+|`$0`，`$1`，`$2`，`$3`，`$4`|将指定元素返回到控制台窗口。 `$0` 返回当前在 DOM 资源管理器中选择的元素，`$1` 返回以前在 DOM 资源管理器中选择的元素，依此类推，最多可返回第四个以前选择的元素。|$3|  
 |`$(id)`|按 ID 返回元素。 这是 `document.getElementById(id)`的快捷方式命令，其中 `id` 是一个表示元素 ID 的字符串。|`$("contenthost")`|  
 |`$$(selector)`|使用 CSS 选择器语法返回与指定选择器匹配的元素的数组。 这是 `document.querySelectorAll()`的快捷方式命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|用于将表达式计算的上下文从页面的默认顶级窗口改为指定框架的窗口。 无参数调用 `cd()` 可使上下文返回顶级窗口。|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|选择中的指定的元素[DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|在 [DOM 资源管理器](../debugger/quickstart-debug-html-and-css.md)中选择指定元素。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|为指定的对象返回一个可视化工具。 可使用该可视化工具在控制台窗口中检查属性。|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>检查控制台命令是否存在  
@@ -104,16 +104,16 @@ console.log(user.first, user.last);
   
  支持以下替换模式：  
   
--   %s - 字符串  
-     %i - 整数  
-     %d - 整数  
-     %f - 浮点数  
-     %o - 对象  
-     %b - 二进制  
-     %x - 十六进制  
-     %e - 指数  
+- %s - 字符串  
+   %i - 整数  
+   %d - 整数  
+   %f - 浮点数  
+   %o - 对象  
+   %b - 二进制  
+   %x - 十六进制  
+   %e - 指数  
   
- 下面是在 `console.log`中使用替换模式的一些示例：  
+  下面是在 `console.log`中使用替换模式的一些示例：  
   
 ```javascript  
 var user = new Object();  

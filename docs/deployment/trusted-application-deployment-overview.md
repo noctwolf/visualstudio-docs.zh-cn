@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f99bd0188c89110796f4d082e803f35ce10da867
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: c1be49bb015334ed37326fbe301ac2035a6f3269
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39152677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848782"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 本主题概述了如何通过使用受信任的应用程序部署技术部署具有提升权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
@@ -51,21 +51,21 @@ ms.locfileid: "39152677"
   
  在大型组织中，发布者和部署人员通常是两个独立的实体：  
   
--   发布者是创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的组。  
+- 发布者是创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的组。  
   
--   部署人员是将 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发给集团企业台式计算机的组（通常为信息技术 (IT) 部）。  
+- 部署人员是将 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发给集团企业台式计算机的组（通常为信息技术 (IT) 部）。  
   
 必须执行以下步骤以使用受信任的应用程序部署：  
   
-1.  获取发布者的证书。  
+1. 获取发布者的证书。  
   
-2.  将发布者添加到所有客户端上的受信任的发布者存储区。  
+2. 将发布者添加到所有客户端上的受信任的发布者存储区。  
   
-3.  创建你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
+3. 创建你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
   
-4.  使用发布者的证书来签署部署清单。  
+4. 使用发布者的证书来签署部署清单。  
   
-5.  将应用程序部署发布到客户端计算机。  
+5. 将应用程序部署发布到客户端计算机。  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>获取发布服务器的证书  
  数字证书是 Microsoft 验证码身份验证和安全系统的核心组件。 验证码是 Windows 操作系统的标准部分。 所有 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序均必须使用数字证书进行签名，无论它们是否参与受信任的应用程序部署。 有关验证码如何与协同工作的完整说明[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，请参阅[ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)。  

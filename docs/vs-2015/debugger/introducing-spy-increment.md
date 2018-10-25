@@ -16,33 +16,33 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5e420adb00bc8972aead555eb281826db689914
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60ad2462d5b5331401384f528c7baf93d91851df
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844604"
 ---
 # <a name="introducing-spy"></a>Spy++ 简介
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可利用 Spy++ 执行以下任务：  
   
--   显示系统对象之间关系的图形树。 这些对象包括 [进程](../debugger/processes-view.md)、 [线程](../debugger/threads-view.md)和 [窗口](../debugger/windows-view.md)。  
+- 显示系统对象之间关系的图形树。 这些对象包括 [进程](../debugger/processes-view.md)、 [线程](../debugger/threads-view.md)和 [窗口](../debugger/windows-view.md)。  
   
--   搜索指定 [窗口](../debugger/how-to-search-for-a-window-in-windows-view.md)、 [线程](../debugger/how-to-search-for-a-thread-in-threads-view.md)、 [进程](../debugger/how-to-search-for-a-process-in-processes-view.md)或 [消息](../debugger/how-to-search-for-a-message-in-messages-view.md)。  
+- 搜索指定 [窗口](../debugger/how-to-search-for-a-window-in-windows-view.md)、 [线程](../debugger/how-to-search-for-a-thread-in-threads-view.md)、 [进程](../debugger/how-to-search-for-a-process-in-processes-view.md)或 [消息](../debugger/how-to-search-for-a-message-in-messages-view.md)。  
   
--   查看所选 [窗口](../debugger/how-to-display-window-properties.md)、 [线程](../debugger/how-to-display-thread-properties.md)、 [进程](../debugger/how-to-display-process-properties.md)或 [消息](../debugger/how-to-display-message-properties.md)的属性。  
+- 查看所选 [窗口](../debugger/how-to-display-window-properties.md)、 [线程](../debugger/how-to-display-thread-properties.md)、 [进程](../debugger/how-to-display-process-properties.md)或 [消息](../debugger/how-to-display-message-properties.md)的属性。  
   
--   直接从视图中选择窗口、线程、进程或消息。  
+- 直接从视图中选择窗口、线程、进程或消息。  
   
--   使用 [查找程序工具](../debugger/how-to-use-the-finder-tool.md) ，通过鼠标指针定位选择窗口。  
+- 使用 [查找程序工具](../debugger/how-to-use-the-finder-tool.md) ，通过鼠标指针定位选择窗口。  
   
--   使用复杂消息日志选择参数设置 **消息选项** 。  
+- 使用复杂消息日志选择参数设置 **消息选项** 。  
   
- Spy++ 拥有工具栏和超链接，可以帮助你更快地工作。 它还提供用于更新活动视图的“刷新”  命令、方便监视的“窗口查找程序工具”  和用于自定义视图窗口的“字体”  对话框。 此外，Spy++ 还可以保存和还原用户首选项。  
+  Spy++ 拥有工具栏和超链接，可以帮助你更快地工作。 它还提供用于更新活动视图的“刷新”  命令、方便监视的“窗口查找程序工具”  和用于自定义视图窗口的“字体”  对话框。 此外，Spy++ 还可以保存和还原用户首选项。  
   
- 在各个 Spy++ 窗口中，可以单击鼠标右键以显示常用命令的快捷菜单。 显示的命令取决于指针所在的位置。 例如，如果在窗口视图中右键单击某个条目，且所选窗口可见，那么单击快捷方式菜单上的“突出显示”  可使所选窗口边框闪烁，以便你能更轻松地找到该窗口。  
+  在各个 Spy++ 窗口中，可以单击鼠标右键以显示常用命令的快捷菜单。 显示的命令取决于指针所在的位置。 例如，如果在窗口视图中右键单击某个条目，且所选窗口可见，那么单击快捷方式菜单上的“突出显示”  可使所选窗口边框闪烁，以便你能更轻松地找到该窗口。  
   
 > [!NOTE]
 >  有其他两种实用程序类似于 Spy++：用于显示进程和线程详细信息的 PView 和允许你监视动态数据交换 (DDE) 消息的 DDESPY.EXE。  

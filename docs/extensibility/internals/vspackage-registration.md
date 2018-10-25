@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73a2dd2288ae54c184405793323cd3084b90e35a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 67b80eb48129fb989822e28bcb0ac0e330c426bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495279"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828408"
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]他们安装，并应被加载。 通过在注册表中写入信息来完成此过程。 这是安装程序的典型的作业。  
@@ -48,15 +48,15 @@ Vspackage 必须告知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md
   
  虽然从理论上讲适用，自注册有几个缺点，使其不适合 VSPackage 安装：  
   
--   正确支持安装、 卸载、 安装回滚和卸载回滚需要你编写为通过调用 RegPkg 自我注册每个托管 VSPackage 的四个自定义操作。  
+- 正确支持安装、 卸载、 安装回滚和卸载回滚需要你编写为通过调用 RegPkg 自我注册每个托管 VSPackage 的四个自定义操作。  
   
--   方法的-同时支持可能需要您编写的每个受支持的版本调用 RegSvr32 或 RegPkg 的四个自定义操作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+- 方法的-同时支持可能需要您编写的每个受支持的版本调用 RegSvr32 或 RegPkg 的四个自定义操作[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   不能安全地回滚与自助注册的模块的安装，因为没有告诉自行注册的密钥由另一个功能或应用程序的方法。  
+- 不能安全地回滚与自助注册的模块的安装，因为没有告诉自行注册的密钥由另一个功能或应用程序的方法。  
   
--   自助注册的 Dll 有时链接到不存在或版本有错误的辅助 Dll。 与此相反，Windows 安装程序可以注册使用此注册表表而不依赖于系统的当前状态的 Dll。  
+- 自助注册的 Dll 有时链接到不存在或版本有错误的辅助 Dll。 与此相反，Windows 安装程序可以注册使用此注册表表而不依赖于系统的当前状态的 Dll。  
   
--   自注册代码可以对其拒绝访问网络资源，例如类型库中，如果一个组件是同时指定为运行从源和 SelfReg 表中列出。 这会导致要在管理安装过程中失败的组件安装。  
+- 自注册代码可以对其拒绝访问网络资源，例如类型库中，如果一个组件是同时指定为运行从源和 SelfReg 表中列出。 这会导致要在管理安装过程中失败的组件安装。  
   
 ## <a name="see-also"></a>请参阅  
  [Windows 安装程序](/windows/desktop/Msi/windows-installer-portal)   

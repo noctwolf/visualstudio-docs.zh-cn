@@ -24,12 +24,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b1ebe51079735beab22e63d595ae3a3cfbee3e5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f265bf63890cfe2dcc9ecb9ef845803ef1c858cc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49185886"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49840644"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：为 Web 站点收集性能数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "49185886"
   
  根据管理员提供的用户访问权限设置，单个用户可能会有（也可能没有）在托管 ASP.NET 进程的计算机上创建探查器会话的安全权限。 下面的示例说明了用户之间可能存在的差异：  
   
--   当管理员启动了驱动程序和服务时，某些用户可能会访问高级分析功能。  
+- 当管理员启动了驱动程序和服务时，某些用户可能会访问高级分析功能。  
   
--   域用户仅可访问样本分析。  
+- 域用户仅可访问样本分析。  
   
--   某些用户可能拒绝其他所有用户访问分析。  
+- 某些用户可能拒绝其他所有用户访问分析。  
   
- 有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的管理选项。  
+  有关详细信息，请参阅[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)和 [VSPerfCmd](../profiling/vsperfcmd.md) 中的管理选项。  
   
 ### <a name="to-profile-a-web-site-project"></a>若要分析网站项目  
   
@@ -75,33 +75,33 @@ ms.locfileid: "49185886"
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>未在 Visual Studio 中打开项目的情况下分析网站  
   
-1.  打开 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]。  
+1. 打开 [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] 或 [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)]。  
   
-2.  在“分析”  菜单上，单击“启动性能向导” 。  
+2. 在“分析”  菜单上，单击“启动性能向导” 。  
   
-3.  在向导的第一页上，选择一种分析方法，然后单击“下一步” 。 有关详细信息，请参阅[了解性能收集方法](../profiling/understanding-performance-collection-methods.md)。  
+3. 在向导的第一页上，选择一种分析方法，然后单击“下一步” 。 有关详细信息，请参阅[了解性能收集方法](../profiling/understanding-performance-collection-methods.md)。  
   
-4.  在向导的第二页上，选择“分析 ASP.NET 或 JavaScript 应用程序选项”  ，然后单击“下一步” 。  
+4. 在向导的第二页上，选择“分析 ASP.NET 或 JavaScript 应用程序选项”  ，然后单击“下一步” 。  
   
-5.  在向导第三页的“运行 Web 应用程序的 URL 或路径是什么”  框中，在应用程序主页上输入 URL，然后单击“下一步” 。  
+5. 在向导第三页的“运行 Web 应用程序的 URL 或路径是什么”  框中，在应用程序主页上输入 URL，然后单击“下一步” 。  
   
-    -   对于基于服务器 (IIS) 的网站，请键入一个 URL（如 http://localhost/MySite/default.aspx）。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。  
+   - 对于基于服务器 (IIS) 的网站，请键入一个 URL（如 http://localhost/MySite/default.aspx）。 这将导致对 MySite 应用程序根目录上本地计算机中的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动该站点网页 default.aspx，从而启动会话。  
   
-    -   对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 http://localhost:nnnn/MySite/default.aspx 网页，从而启动会话。  
+   - 对于基于文件的网站，请键入路径，例如文件 ///**c:\WebSites\MySite\default.aspx**。 这将导致对位于 c:\webSites\MySite 上的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 应用程序进行分析，并且在 Internet Explorer 中启动 http://localhost:nnnn/MySite/default.aspx 网页，从而启动会话。  
   
-    -   对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 http://www.contoso.com）。  
+   - 对于想在其中收集 JavaScript 数据的外部网站，请输入 URL（如 http://www.contoso.com）。  
   
      有关详细信息，请查看 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 目标二进制文件的属性页。  
   
-6.  在向导的第三页上，可以选择添加层交互分析 (TIP) 数据和/或网页上运行的 JavaScript 中的数据。  
+6. 在向导的第三页上，可以选择添加层交互分析 (TIP) 数据和/或网页上运行的 JavaScript 中的数据。  
   
-    -   若要收集层交互，请选中“启用层交互分析”  复选框。  
+   -   若要收集层交互，请选中“启用层交互分析”  复选框。  
   
-    -   若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
+   -   若要从网页中运行的 JavaScript 中收集数据，请选中“分析 JavaScript”  复选框。  
   
-7.  单击 **“下一步”**。  
+7. 单击 **“下一步”**。  
   
-8.  在向导的第四页上，单击“完成” 。  
+8. 在向导的第四页上，单击“完成” 。  
   
 9. 这样就为 ASP.NET 应用程序创建了性能会话，并在浏览器中启动了网站。 练习要分析的功能，然后关闭浏览器。  
   

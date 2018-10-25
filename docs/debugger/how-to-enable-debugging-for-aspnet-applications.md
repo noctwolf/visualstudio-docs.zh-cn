@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 28dbf874ab5f7f80d7f67f789e8122bcff1a2fa6
-ms.sourcegitcommit: 56f3c31f1a06f6a6d2a8793b1abfa60cdf482497
+ms.openlocfilehash: 41da2eb360bac4c50f85bd908f980f5ee3c1d141
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813414"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>调试 Visual Studio 中的 ASP.NET 或 ASP.NET Core 应用
 
@@ -121,29 +121,29 @@ ASP.NET 项目具有*web.config*文件默认情况下，其中包含这两个应
   
 3. 请确保`debug`中的属性`compilation`元素设置为`true`。 (如果`compilation`元素不包含`debug`属性，将其添加并将其设置为`true`。) 
   
-  如果使用本地 IIS 而不默认 IIS Express 服务器，请确保`targetFramework`属性中的值`compilation`元素都与匹配的 IIS 服务器上的框架。
+   如果使用本地 IIS 而不默认 IIS Express 服务器，请确保`targetFramework`属性中的值`compilation`元素都与匹配的 IIS 服务器上的框架。
   
-  `compilation`的元素*web.config*文件应如以下示例所示：
+   `compilation`的元素*web.config*文件应如以下示例所示：
 
-  > [!NOTE]
-  > 此示例是一个分部*web.config*文件。 有中的通常其他 XML 部分`configuration`并`system.web`元素，并`compilation`元素还可能包含其他属性和元素。
+   > [!NOTE]
+   > 此示例是一个分部*web.config*文件。 有中的通常其他 XML 部分`configuration`并`system.web`元素，并`compilation`元素还可能包含其他属性和元素。
   
-  ```xml
-  <configuration>  
+   ```xml
+   <configuration>  
       ...  
       <system.web>  
           <compilation  debug="true"  targetFramework="4.6.1" ... > 
              ...  
           </compilation>  
       </system.web>  
-  </configuration>  
-  ```
+   </configuration>  
+   ```
 
 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 自动检测到的任何更改*web.config*文件并应用新的配置设置。 您无需重新启动计算机或 IIS 服务器，以使更改生效。  
   
 网站可以使用包含多个虚拟目录和子目录*web.config*中每个文件。 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序继承中的配置设置*web.config*文件 URL 路径中的更高级别。 分层*web.config*文件设置应用于所有[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]下面这些层次结构中的应用。 在中设置不同的配置*web.config*文件层次结构中较低级别重写更高版本的文件中的设置。  
   
-例如，如果您指定`debug="true"`中*www.microsoft.com/aaa/web.config*中的任何应用*aaa*文件夹或任何子文件夹中*aaa*继承该设置，如果这些应用程序的其中一个重写具有其自己的设置除外*web.config*文件。  
+例如，如果您指定`debug="true"`中<em>www.microsoft.com/aaa/web.config</em>中的任何应用*aaa*文件夹或任何子文件夹中*aaa*继承该设置，如果这些应用程序的其中一个重写具有其自己的设置除外*web.config*文件。  
   
 ## <a name="publish-in-debug-mode-using-the-file-system"></a>在调试模式下使用文件系统中发布
 

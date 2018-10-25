@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29bb94664fce8d7adf282a50e94eba39b232a0e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bc48a5f2c5bd05816ca11aac89d6dd63b9fd78
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833383"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ VSPerfCmd.exe **ThreadOff** 和 **ThreadOn** 子命令只能在使用检测方�
   
  **ThreadOff** 和 **ThreadOn** 子命令还影响探查器 API 函数所控制的线程启动/停止计数。  
   
--   **ThreadOff** 将线程启动/停止计数立即设置为 0，从而暂停分析。  
+- **ThreadOff** 将线程启动/停止计数立即设置为 0，从而暂停分析。  
   
--   **ThreadOn** 将线程启动/停止计数立即设置为 1，从而继续分析。  
+- **ThreadOn** 将线程启动/停止计数立即设置为 1，从而继续分析。  
   
- 有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
+  有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>语法  
   

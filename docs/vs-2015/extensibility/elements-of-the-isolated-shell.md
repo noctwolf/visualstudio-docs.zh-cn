@@ -15,12 +15,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c051425f2d3ae131362c2d95494ed0edbef5353e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ca63b6a8c973b33a9dffc98966fd0622c0a5407a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246046"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868425"
 ---
 # <a name="elements-of-the-isolated-shell"></a>独立 Shell 的元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49246046"
 ## <a name="run-time-settings"></a>运行时间设置  
  当用户启动独立的 shell 应用程序时，它调用的 Visual Studio shell 的启动入口点。 应用程序设置定义你的应用程序启动时，按如下所示：  
   
-1.  在 Visual Studio shell 检查特定密钥的应用程序注册表。 如果对启动入口点的调用中指定的键的设置，则该值将覆盖注册表中的值。  
+1. 在 Visual Studio shell 检查特定密钥的应用程序注册表。 如果对启动入口点的调用中指定的键的设置，则该值将覆盖注册表中的值。  
   
-2.  如果既没有注册表，也没有入口点参数指定的值的设置，然后使用该设置的默认值。  
+2. 如果既没有注册表，也没有入口点参数指定的值的设置，然后使用该设置的默认值。  
   
- 当用户从命令行启动你的应用程序时，所有命令行参数将传递给 Visual Studio shell，它会将它们视为相同的 Devenv 的方式处理中。 有关 Devenv 开关的详细信息，请参阅[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)并[VSPackage 开发的 Devenv 命令行开关](../extensibility/devenv-command-line-switches-for-vspackage-development.md)。 有关如何将包注册的命令行开关的详细信息，请参阅[添加命令行开关](../extensibility/adding-command-line-switches.md)。  
+   当用户从命令行启动你的应用程序时，所有命令行参数将传递给 Visual Studio shell，它会将它们视为相同的 Devenv 的方式处理中。 有关 Devenv 开关的详细信息，请参阅[Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)并[VSPackage 开发的 Devenv 命令行开关](../extensibility/devenv-command-line-switches-for-vspackage-development.md)。 有关如何将包注册的命令行开关的详细信息，请参阅[添加命令行开关](../extensibility/adding-command-line-switches.md)。  
   
 ## <a name="the-start-entry-point"></a>启动入口点  
  Appenvstub.dll 文件包含用于访问独立的 shell 入口点。 当应用程序启动时，它将调用启动入口点的 Appenvstub.dll。  

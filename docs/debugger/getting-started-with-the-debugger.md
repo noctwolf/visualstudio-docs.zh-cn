@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4534db0f4e85cda2cb3f0c45fdd57e768fa75ab1
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827553"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程： 了解如何使用 Visual Studio 进行调试
 
 本文介绍了 Visual Studio 调试器中的分步演练的功能。 如果你想的调试器功能的更高级别的视图，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。 当您*调试应用*，这通常意味着附加调试器运行应用程序。 调试器时执行此操作，提供多种方式查看你的代码执行的操作运行时。 您可以单步执行代码，并查看存储在变量中的值，您可以设置监视变量以查看值发生更改时，您可以检查您的代码的执行路径，请参阅代码的分支是否正在运行，等等。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
 
-|         |         |
+| | |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)上调试，显示了类似的步骤。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)上调试，显示了类似的步骤。 |
 
 尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。
 
@@ -329,8 +329,8 @@ ms.locfileid: "49101038"
 
      ![使用运行到单击功能](../debugger/media/get-started-run-to-click.png "运行时单击")
 
-    >  [!NOTE]
-    > **运行时单击**是中新增的按钮[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。 如果看不到绿色箭头按钮，使用**F11**在此示例中改为使调试器前进到正确的位置。
+   > [!NOTE]
+   > **运行时单击**是中新增的按钮[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。 如果看不到绿色箭头按钮，使用**F11**在此示例中改为使调试器前进到正确的位置。
 
 6. 单击**运行时单击**按钮![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
 
@@ -408,14 +408,14 @@ ms.locfileid: "49101038"
 
 1. 在暂停时`foreach`循环 (`for` c + + 中的循环)，单击**调用堆栈**窗口中，这是默认情况下在右下窗格中打开。
 
-1. 单击**F11**几次，直到您看到调试器中暂停`Circle.Draw`代码编辑器中的方法。 看看**调用堆栈**窗口。
+2. 单击**F11**几次，直到您看到调试器中暂停`Circle.Draw`代码编辑器中的方法。 看看**调用堆栈**窗口。
 
     ![检查调用堆栈](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
     **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 最上面一行显示当前函数 (`Circle.Draw`或`Circle::Draw`此应用程序中的方法)。 第二行显示`Circle.Draw`从调用`Main`方法 (`main` c + + 中)，依次类推。
 
-    >  [!NOTE]
-    > **调用堆栈**窗口处于类似于调试角度来看一些 Ide，如 Eclipse。
+   > [!NOTE]
+   > **调用堆栈**窗口处于类似于调试角度来看一些 Ide，如 Eclipse。
 
     调用堆栈是检查和了解应用的执行流的好方法。
 
