@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 403b85ba7c5fc45a2809f695ce038a4e1576c93a
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 2b330dfc360a4986f5e255fc6369b819eabd4ebf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836432"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
 当您修改或在域特定语言解决方案中添加文本模板时，可能会收到错误，当引擎转换模板源代码或对其进行编译生成的代码。 下面的演练演示了一些可以执行的操作来调试文本模板。
@@ -25,15 +25,15 @@ ms.locfileid: "39382534"
 ## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
  在此过程中，你创建域特定语言解决方案具有以下特征：
 
--   名称： DebuggingTestLanguage
+- 名称： DebuggingTestLanguage
 
--   解决方案模板： 最小语言
+- 解决方案模板： 最小语言
 
--   文件扩展名：.ddd
+- 文件扩展名：.ddd
 
--   公司名称： Fabrikam
+- 公司名称： Fabrikam
 
- 有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  有关创建域特定语言解决方案的详细信息，请参阅[如何： 创建域特定语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>创建文本模板
  将文本模板添加到你的解决方案。

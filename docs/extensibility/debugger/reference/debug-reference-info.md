@@ -1,5 +1,5 @@
 ---
-title: DEBUG_REFERENCE_INFO |Microsoft 文档
+title: DEBUG_REFERENCE_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: a528f73f0a13ab2702e35212a3ba00f8c8c13378
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b9c25c06f4fa92030bec5bd3b6f2566111dadad4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829620"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
-描述一个引用。  
+描述的引用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,28 +53,28 @@ public struct DEBUG_REFERENCE_INFO {
   
 ## <a name="members"></a>成员  
  dwFields  
- 中的标志的组合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)指定哪些字段填出的枚举。  
+ 中的标志的组合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)枚举，用于指定哪些字段填写。  
   
  bstrName  
- 用户指定的名称的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象。  
+ 用户指定的名称[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象。  
   
  bstrType  
- 格式化字符串形式的引用类型。  
+ 形式的格式化字符串的引用类型。  
   
  bstrValue  
- 格式化字符串形式的引用值  
+ 形式的格式化字符串的引用值  
   
  dwAttrib  
  中的标志的组合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)指定调试属性特性的标志的枚举。  
   
  dwRefType  
- 取值范围为[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)枚举用于指定引用类型是强还是弱。  
+ 中的值[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)枚举，用于指定引用类型是强还是弱。  
   
  m_pReference  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)对象，它指定的参考信息。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递给调用[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法填充的。 从列表的一部分，也会返回此结构[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)接口即，反过来，通过调用[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)方法。  
+ 此结构传递给调用[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)要填充的方法。 从列表的一部分，也会返回此结构[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)接口，反过来，通过调用将返回该值[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -83,7 +83,7 @@ public struct DEBUG_REFERENCE_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   

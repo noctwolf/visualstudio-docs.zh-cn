@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft 文档
+title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed07afde1db8aa99ce8edea093abd9bf25c069d6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 619c96a2e38302ff4f40a8376116a67c5664743c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102738"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834276"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-确定按名称是否存在的自定义特性。  
+确定名称是否存在自定义属性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,10 +44,10 @@ int IsCustomAttributeDefined(
  [in]包含要查找的自定义属性的名称的字符串。  
   
 ## <a name="return-value"></a>返回值  
- 返回，则为 S_OK 如果自定义属性未定义此字段中，否则返回 S_FALSE。  
+ 返回 S_OK 如果自定义属性定义此字段，否则，返回 S_FALSE。  
   
 ## <a name="remarks"></a>备注  
- 若要获取与此自定义特性关联的属性字节，调用[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。  
+ 若要获取与自定义属性相关联的属性字节，请调用[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

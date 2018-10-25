@@ -13,12 +13,12 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 67117992e7043335152adea59d7e15f7bbdcce00
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f6929054fd2983fa6b08801cd35eab7148bd8100
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829438"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,19 +60,19 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
   
 #### <a name="command-buttons"></a>命令按钮  
   
--   在内容的对话框框架上运行的命令按钮。 它们应放置在底部右侧，并且应具有足够上述设置这些按钮分别单独的变量空间。  
+- 在内容的对话框框架上运行的命令按钮。 它们应放置在底部右侧，并且应具有足够上述设置这些按钮分别单独的变量空间。  
   
--   如果有运行在对话框中的水平按钮，备用命令按钮配置是在右上角的垂直堆栈。 请参阅[内部命令按钮](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons)下面。  
+- 如果有运行在对话框中的水平按钮，备用命令按钮配置是在右上角的垂直堆栈。 请参阅[内部命令按钮](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons)下面。  
   
--   左侧的命令按钮 （底部左侧/中间位置对话框） 的空间是被视为"带区"对话框操作控件的一部分。 应起、 强行进入该空间的唯一事情是与整个任务或对话框的帮助链接。  
+- 左侧的命令按钮 （底部左侧/中间位置对话框） 的空间是被视为"带区"对话框操作控件的一部分。 应起、 强行进入该空间的唯一事情是与整个任务或对话框的帮助链接。  
   
--   命令按钮应为 75 x 23 像素。  
+- 命令按钮应为 75 x 23 像素。  
   
--   命令按钮应为 6 个像素相隔。  
+- 命令按钮应为 6 个像素相隔。  
   
- ![基本按钮对齐](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
+  ![基本按钮对齐](../../extensibility/ux-guidelines/media/0801-c-buttonalign.png "0801 c_ButtonAlign")  
   
- **图 c: 08.01 基本按钮对齐方式**  
+  **图 c: 08.01 基本按钮对齐方式**  
   
 #### <a name="labels"></a>标签  
   
@@ -110,19 +110,19 @@ Visual Studio 对话框大部分[实用程序对话框布局](../../extensibilit
 ####  <a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮  
  更复杂的对话框中内部控件可能具有其自身相关的按钮，这可能会影响在对话框的提交按钮的位置。  
   
--   使用内部为垂直对齐方式 （列） 按钮**确定**/**取消**水平方向，在右下角中。  
+- 使用内部为垂直对齐方式 （列） 按钮**确定**/**取消**水平方向，在右下角中。  
   
--   使用内部为水平对齐方式 （行） 按钮**确定**/**取消**垂直方向，在右上角中。 这种情况下并不常见。  
+- 使用内部为水平对齐方式 （行） 按钮**确定**/**取消**垂直方向，在右上角中。 这种情况下并不常见。  
   
--   内部的按钮的大小应为目标的 75 x 23 像素，匹配的大小的标准按钮大小**确定**/**取消**按钮在可能的情况。 如果按钮标签超出标准按钮大小的按钮，在该集中其他按钮应与该更广的大小保持一致。  
+- 内部的按钮的大小应为目标的 75 x 23 像素，匹配的大小的标准按钮大小**确定**/**取消**按钮在可能的情况。 如果按钮标签超出标准按钮大小的按钮，在该集中其他按钮应与该更广的大小保持一致。  
   
- ![水平确定和取消按钮](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
+  ![水平确定和取消按钮](../../extensibility/ux-guidelines/media/0801-f-horizokcan.png "0801 f_HorizOKCan")  
   
- **图 f: 08.01 垂直内部水平确定 / 取消按钮**  
+  **图 f: 08.01 垂直内部水平确定 / 取消按钮**  
   
- ![垂直确定和取消按钮](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
+  ![垂直确定和取消按钮](../../extensibility/ux-guidelines/media/0801-g-vertokcan.png "0801 g_VertOKCan")  
   
- **图 g: 08.01 水平内部按钮使用垂直确定 / 取消**  
+  **图 g: 08.01 水平内部按钮使用垂直确定 / 取消**  
   
 #### <a name="browse-button"></a>[浏览...]按钮  
  **[浏览...]** 遵循文本框中的按钮应拼写成"浏览..."完整，包括省略号。 如果空间紧密或有多个 **[浏览...]** 屏幕按钮上的按钮可以减少到只需省略号。  

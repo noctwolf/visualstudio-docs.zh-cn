@@ -15,12 +15,12 @@ ms.assetid: dda23b18-96ef-43c6-b0dc-06d15cbe5cbb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab42c05d404492883493645731094a67f5eb368b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e929f46ae6e7f1ef374c663242abb5b332ed4ffb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246033"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828426"
 ---
 # <a name="instantiating-the-core-editor-by-using-the-legacy-api"></a>实例化使用旧 API 的核心编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,34 +29,34 @@ ms.locfileid: "49246033"
   
  可以实例化三种方式之一中的核心编辑器的实例：  
   
--   显式创建的实例的核心编辑器在窗口中。  
+- 显式创建的实例的核心编辑器在窗口中。  
   
--   提供一个编辑器工厂返回的核心编辑器实例  
+- 提供一个编辑器工厂返回的核心编辑器实例  
   
--   从项目层次结构中打开一个文件。  
+- 从项目层次结构中打开一个文件。  
   
- 以下部分介绍如何使用传统的 API 来实例化编辑器中。  
+  以下部分介绍如何使用传统的 API 来实例化编辑器中。  
   
 ## <a name="explicitly-opening-a-core-editor-instance"></a>显式打开核心编辑器实例  
  当显式获取核心编辑器的实例：  
   
--   获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>以保存所编辑的文档数据对象。  
+- 获取<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>以保存所编辑的文档数据对象。  
   
--   通过创建来创建面向行的文档数据对象表示形式<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>接口从<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口。  
+- 通过创建来创建面向行的文档数据对象表示形式<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>接口从<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>接口。  
   
--   设置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>的文档数据对象的默认实现的实例作为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>接口，使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A>方法。  
+- 设置<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>的文档数据对象的默认实现的实例作为<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>接口，使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow.SetBuffer%2A>方法。  
   
-     主机<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>实例中<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>通过使用接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A>方法。  
+   主机<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>实例中<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>通过使用接口<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateToolWindow%2A>方法。  
   
- 此时，显示<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>接口提供了一个窗口，其中包含核心编辑器的一个实例。  
+  此时，显示<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>接口提供了一个窗口，其中包含核心编辑器的一个实例。  
   
- 但是，这不是非常有用的实例，因为它不具有键盘快捷方式，或访问高级功能。 若要获取对键盘快捷方式和高级的功能的访问：  
+  但是，这不是非常有用的实例，因为它不具有键盘快捷方式，或访问高级功能。 若要获取对键盘快捷方式和高级的功能的访问：  
   
--   使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>方法以将语言服务和编辑器使用的文档数据对象相关联。  
+- 使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A>方法以将语言服务和编辑器使用的文档数据对象相关联。  
   
--   创建你自己键盘快捷方式，或通过设置使用系统默认<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>对象显示的属性。 若要执行此操作，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A>方法替换<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>属性。  
+- 创建你自己键盘快捷方式，或通过设置使用系统默认<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>对象显示的属性。 若要执行此操作，调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetGuidProperty%2A>方法替换<xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>属性。  
   
-     若要获得并使用非标准的快捷键，生成使用.vsct 文件。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+   若要获得并使用非标准的快捷键，生成使用.vsct 文件。 有关详细信息，请参阅 [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
 ## <a name="how-to-use-an-editor-factory-to-obtain-the-core-editor"></a>如何使用编辑器工厂获取核心编辑器  
  实现与编辑器工厂使用的核心编辑器时<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法，请遵循所有用于显式托管在上一部分中所述的步骤<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>使用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>文档数据对象<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>对象。  

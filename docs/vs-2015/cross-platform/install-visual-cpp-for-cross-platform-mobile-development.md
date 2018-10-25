@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: d0732cc08c679bd3eab973632164d366efe87b3b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 13db7f4e4f1676f46a8b0170ffeadd5cd9eb31b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203853"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817439"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>安装用于跨平台移动开发的 Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,18 +37,18 @@ ms.locfileid: "49203853"
   
 ##  <a name="Requirements"></a> 要求  
   
--   有关安装要求，请参阅 [Visual Studio 2015 系统要求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
+- 有关安装要求，请参阅 [Visual Studio 2015 系统要求](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs)。  
   
-    > [!IMPORTANT]
-    >  如果使用的是 Windows 7 或 Windows Server 2008 R2，则可以针对经典 Windows 应用程序、Android Native Activity 应用和库以及适用于 iOS 的应用和代码库开发代码，但不能针对 Windows 应用商店应用或通用 Windows 应用开发代码。  
+  > [!IMPORTANT]
+  >  如果使用的是 Windows 7 或 Windows Server 2008 R2，则可以针对经典 Windows 应用程序、Android Native Activity 应用和库以及适用于 iOS 的应用和代码库开发代码，但不能针对 Windows 应用商店应用或通用 Windows 应用开发代码。  
   
- 若要为特定的设备平台创建应用，还需要满足一些附加要求：  
+  若要为特定的设备平台创建应用，还需要满足一些附加要求：  
   
--   Windows Phone 仿真程序和适用于 Android 的 Microsoft Visual Studio 仿真程序需要可以运行 Hyper-V 的计算机。 必须先启用 Windows 中的 Hyper-V 功能，然后才能安装和运行仿真程序。 有关详细信息，请参阅仿真程序的[系统要求](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
+- Windows Phone 仿真程序和适用于 Android 的 Microsoft Visual Studio 仿真程序需要可以运行 Hyper-V 的计算机。 必须先启用 Windows 中的 Hyper-V 功能，然后才能安装和运行仿真程序。 有关详细信息，请参阅仿真程序的[系统要求](http://msdn.microsoft.com/en-us/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)。  
   
--   Android SDK 附带的 x86 Android 仿真程序在可以运行 Intel HAXM 驱动程序的计算机上工作性能最好。 此驱动程序需要具有 VT-x 和执行禁用位支持的 Intel x64 处理器。 有关详细信息，请参阅 [Intel® 硬件加速执行管理器安装说明 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
+- Android SDK 附带的 x86 Android 仿真程序在可以运行 Intel HAXM 驱动程序的计算机上工作性能最好。 此驱动程序需要具有 VT-x 和执行禁用位支持的 Intel x64 处理器。 有关详细信息，请参阅 [Intel® 硬件加速执行管理器安装说明 - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385)。  
   
--   若要构建适用于 iOS 的代码，需要 Apple ID、iOS Developer Program 帐户，以及可在 OS X Mavericks 或更高版本上运行 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 或更高版本的 Mac 计算机。 有关简单的安装步骤，请参阅 [Install tools for iOS](#InstallForiOS)。  
+- 若要构建适用于 iOS 的代码，需要 Apple ID、iOS Developer Program 帐户，以及可在 OS X Mavericks 或更高版本上运行 [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) 或更高版本的 Mac 计算机。 有关简单的安装步骤，请参阅 [Install tools for iOS](#InstallForiOS)。  
   
 ##  <a name="GetTheTools"></a>获取工具  
  适用于跨平台移动开发的 Visual C++ 是 Visual Studio Community、Professional 和 Enterprise 版所随附的可安装组件。 若要获取 Visual Studio，请转到 [Visual Studio 2015 下载](http://go.microsoft.com/fwlink/p/?linkid=517106)页面，并下载 Visual Studio 2015 Update 2 或更高版本。  
@@ -101,31 +101,31 @@ ms.locfileid: "49203853"
   
  阅读以下信息并使用这些链接来手动安装依赖项。  
   
--   [Java SE 开发工具包](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+- [Java SE 开发工具包](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-     默认情况下，安装程序将 Java 工具放置在以下路径：C:\Program Files (x86)\Java。  
+   默认情况下，安装程序将 Java 工具放置在以下路径：C:\Program Files (x86)\Java。  
   
--   [Android SDK](https://developer.android.com/sdk/index.html#Other)  
+- [Android SDK](https://developer.android.com/sdk/index.html#Other)  
   
-     在安装过程中按照推荐更新 API。 确保至少安装了 SDK for Android 5.0 Lollipop（API 级别 21）。 默认情况下，安装程序将 Android SDK 放置在以下路径 C:\Program Files (x86)\Android\android-sdk。  
+   在安装过程中按照推荐更新 API。 确保至少安装了 SDK for Android 5.0 Lollipop（API 级别 21）。 默认情况下，安装程序将 Android SDK 放置在以下路径 C:\Program Files (x86)\Android\android-sdk。  
   
-     可再次运行 Android SDK 目录中的 SDK 管理器应用，以更新 SDK 并安装可选工具和其他 API 级别。 除非你使用“以管理员身份运行”  运行 SDK Manager 应用，否则安装更新可能会失败。 如果构建 Android 应用存在问题，请检查已安装的 SDK 的 SDK Manager 更新。  
+   可再次运行 Android SDK 目录中的 SDK 管理器应用，以更新 SDK 并安装可选工具和其他 API 级别。 除非你使用“以管理员身份运行”  运行 SDK Manager 应用，否则安装更新可能会失败。 如果构建 Android 应用存在问题，请检查已安装的 SDK 的 SDK Manager 更新。  
   
-     若要使用 Android SDK 附带的某些 Android 仿真程序，则必须安装可选的 Intel HAXM 驱动程序。 可能需要从 Windows 中删除 HYPER-V 功能才能成功安装 Intel HAXM 驱动程序。 必须还原 HYPER-V 功能，以使用 Android 的 Windows Phone 仿真程序和 Microsoft Visual Studio Emulator for Android。  
+   若要使用 Android SDK 附带的某些 Android 仿真程序，则必须安装可选的 Intel HAXM 驱动程序。 可能需要从 Windows 中删除 HYPER-V 功能才能成功安装 Intel HAXM 驱动程序。 必须还原 HYPER-V 功能，以使用 Android 的 Windows Phone 仿真程序和 Microsoft Visual Studio Emulator for Android。  
   
--   [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
+- [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html)  
   
-     默认情况下，安装程序将 Android NDK 放置在以下路径：C:\ProgramData\Microsoft\AndroidNDK。 你可再次下载和安装 Android NDK，以更新 NDK 安装。  
+   默认情况下，安装程序将 Android NDK 放置在以下路径：C:\ProgramData\Microsoft\AndroidNDK。 你可再次下载和安装 Android NDK，以更新 NDK 安装。  
   
--   [Apache Ant](http://ant.apache.org/bindownload.cgi)  
+- [Apache Ant](http://ant.apache.org/bindownload.cgi)  
   
-     安装程序将 Apache Ant 默认置于以下路径： C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps。  
+   安装程序将 Apache Ant 默认置于以下路径： C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps。  
   
--   [适用于 Android 的 Microsoft Visual Studio 模拟器](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
+- [适用于 Android 的 Microsoft Visual Studio 模拟器](http://go.microsoft.com/fwlink/p/?LinkId=536390)  
   
-     可以从 Visual Studio 库安装和更新适用于 Android 的 Microsoft Visual Studio 仿真程序。  
+   可以从 Visual Studio 库安装和更新适用于 Android 的 Microsoft Visual Studio 仿真程序。  
   
- 在大多数情况下，Visual Studio 可以检测到已安装的第三方软件的配置，并维护内部环境变量中的安装路径。 可以覆盖 Visual Studio IDE 中的这些跨平台开发工具的默认路径。  
+  在大多数情况下，Visual Studio 可以检测到已安装的第三方软件的配置，并维护内部环境变量中的安装路径。 可以覆盖 Visual Studio IDE 中的这些跨平台开发工具的默认路径。  
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>若要设置第三方工具的路径  
   

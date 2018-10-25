@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f37e725c0666da39bf75b8c04b7c2a73d8622ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3bcbbb8ede9f30ed1c0340098ffb358cf5715487
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209555"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49813203"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>如何：创建基本颜色着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "49209555"
   
 #### <a name="to-create-a-flat-color-shader"></a>创建平面颜色着色器  
   
-1.  创建要使用的 DGSL 着色器。 若要了解如何向项目添加 DGSL 着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“入门”部分。  
+1. 创建要使用的 DGSL 着色器。 若要了解如何向项目添加 DGSL 着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“入门”部分。  
   
-2.  删除“点颜色”节点。 使用“选择”工具选择“点颜色”节点，然后在菜单栏上选择“编辑”和“删除”。  
+2. 删除“点颜色”节点。 使用“选择”工具选择“点颜色”节点，然后在菜单栏上选择“编辑”和“删除”。  
   
-3.  将“颜色常量”节点添加到关系图。 在“常量”的“工具箱”中，选择“颜色常量”，然后将其移到设计图面。  
+3. 将“颜色常量”节点添加到关系图。 在“常量”的“工具箱”中，选择“颜色常量”，然后将其移到设计图面。  
   
-4.  为“颜色常量”节点指定颜色值。 使用“选择”工具选择“颜色常量”节点，然后在“属性”窗口的“输出”属性中指定颜色值。 为橙色指定 (1.0, 0.5, 0.2, 1.0) 中的值。  
+4. 为“颜色常量”节点指定颜色值。 使用“选择”工具选择“颜色常量”节点，然后在“属性”窗口的“输出”属性中指定颜色值。 为橙色指定 (1.0, 0.5, 0.2, 1.0) 中的值。  
   
-5.  将颜色常量连接到最终颜色。 若要创建连接，请将“颜色常量”节点的“RGB”终端移到“最终颜色”节点的“RGB”终端，然后将“颜色常量”节点的“Alpha”终端移到“最终颜色”节点的“Alpha”终端。 这些连接将最终颜色设置为上一步中定义的颜色常量。  
+5. 将颜色常量连接到最终颜色。 若要创建连接，请将“颜色常量”节点的“RGB”终端移到“最终颜色”节点的“RGB”终端，然后将“颜色常量”节点的“Alpha”终端移到“最终颜色”节点的“Alpha”终端。 这些连接将最终颜色设置为上一步中定义的颜色常量。  
   
- 下图显示了已完成的着色器关系图和应用于立方体的着色器预览。  
+   下图显示了已完成的着色器关系图和应用于立方体的着色器预览。  
   
 > [!NOTE]
 >  在图中，指定橙色以更好地展示着色器的效果。  

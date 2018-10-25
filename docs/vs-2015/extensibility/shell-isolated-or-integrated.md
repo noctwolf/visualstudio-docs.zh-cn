@@ -19,12 +19,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0001ff15bd6f74ea0b993c73a9c458d5724a28a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 01a16f7711b35d8c1062117d486fdf00ab998566
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266106"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835979"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell （独立或集成）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ ms.locfileid: "49266106"
   
 > [!IMPORTANT]
 >  [最终用户许可协议 (EULA)](https://www.visualstudio.com/en-us/support/legal/mt171552)为 Visual Studio 集成和独立 shell 包括一节介绍了数据收集 (**第 3 部分。数据**)。  它介绍了从构建到你的应用程序的任一集成或独立 shell 软件的用户可能由 Microsoft 收集的客户使用情况数据。 有关详细信息，请参阅[Microsoft Visual Studio 产品系列隐私声明](https://www.visualstudio.com/en-us/dn948229)。  
->   
+> 
 >  如果从客户收集单独使用情况数据，通过你的应用程序，您必须向您收集的应用程序的用户提供相应通知。  将独立或集成 shell 软件分发的应用程序中，根据 Visual Studio 软件开发工具包许可证，一部分时必须包括以下项之一：  
->   
->  -   最终用户许可协议为应用程序许可证的一部分  
-> -   要求在客户同意的条款来保护在 Visual Studio 自己 EULA 集成或独立 shell 至少要作为命令行程序软件的 Microsoft 最终用户许可条款  
+> 
+> - 最终用户许可协议为应用程序许可证的一部分  
+>   -   要求在客户同意的条款来保护在 Visual Studio 自己 EULA 集成或独立 shell 至少要作为命令行程序软件的 Microsoft 最终用户许可条款  
   
 ## <a name="additional-resources"></a>其他资源  
  有关可再发行组件包的详细信息，请参阅[Visual Studio 扩展性下载](http://go.microsoft.com/fwlink/?LinkID=119298)Web 站点。  
