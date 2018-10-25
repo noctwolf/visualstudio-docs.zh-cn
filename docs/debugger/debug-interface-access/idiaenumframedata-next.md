@@ -1,5 +1,5 @@
 ---
-title: 'Idiaenumframedata:: Next |Microsoft 文档'
+title: 'Idiaenumframedata:: Next |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6835cda6c8c2a5cb20135abf92a523a270b32c78
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 55320b4f07eb2acda1d46875fa6f3bd5eefe2813
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949976"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
 检索指定的数目的帧枚举序列中的数据元素。  
@@ -36,10 +36,10 @@ HRESULT Next (
   
 #### <a name="parameters"></a>参数  
  celt  
- [in]要检索的枚举器中的帧数据元素的数目。  
+ [in]要检索的枚举器中的帧数据元素数。  
   
  rgelt  
- [out]数组[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)要使用的请求的框架数据元素填充的对象。  
+ [out]一个数组[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)要填充的请求的范围数据元素的对象。  
   
  pceltFetched  
  [out]在提取枚举器返回帧数据元素的数。  

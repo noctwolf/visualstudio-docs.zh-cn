@@ -19,12 +19,12 @@ caps.latest.revision: 44
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aebac5a95a6d1b1ab6aa0d4230094003de2a2062
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2886e454e9986e63cbc3496d3ef5b0664e85dede
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851590"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>定义用于扩展 UML 的配置文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "49221255"
   
  你可以定义自己的配置文件，以采用 UML 并将其扩展到自己的业务范围或体系结构。 例如：  
   
--   如果需要经常定义网站，则可以定义自己的配置文件，其中提供可应用到类图中的类的 «网页» 构造型。 然后可以使用类图规划网站。 每个 «网页» 类都会具有页面内容、样式等的额外属性。  
+- 如果需要经常定义网站，则可以定义自己的配置文件，其中提供可应用到类图中的类的 «网页» 构造型。 然后可以使用类图规划网站。 每个 «网页» 类都会具有页面内容、样式等的额外属性。  
   
--   如果需要开发银行软件，则可以定义一个提供 «帐户» 构造型的配置文件。 然后可以使用类图定义不同类型的帐户并显示这些帐户之间的关系。  
+- 如果需要开发银行软件，则可以定义一个提供 «帐户» 构造型的配置文件。 然后可以使用类图定义不同类型的帐户并显示这些帐户之间的关系。  
   
- 你可以将自己的配置文件分发给你的团队。 每个团队成员都可以安装你的配置文件。 这样一来，团队成员便可以编辑和创建使用其构造型的模型。  
+  你可以将自己的配置文件分发给你的团队。 每个团队成员都可以安装你的配置文件。 这样一来，团队成员便可以编辑和创建使用其构造型的模型。  
   
 > [!NOTE]
 >  如果你在自己所编辑的模型中应用某个配置文件的构造型，然后与他人共享该模型，则他们应在其自己的计算机上安装同一配置文件。 否则，他们将无法看到你使用的构造型。  
@@ -83,56 +83,56 @@ ms.locfileid: "49221255"
   
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>在新 Visual Studio 扩展中定义配置文件  
   
-1.  创建 Visual Studio 扩展项目。  
+1. 创建 Visual Studio 扩展项目。  
   
-    > [!NOTE]
-    >  必须安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此过程。  
+   > [!NOTE]
+   >  必须安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] 才能使用此过程。  
   
-    1.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
+   1.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“项目”**。  
   
-    2.  在中**新的项目**对话框中的**已安装的模板**，展开**Visual C#**，单击**扩展性**，然后单击**VSIX 项目**。 设置项目名称，然后单击**确定**。  
+   2.  在中**新的项目**对话框中的**已安装的模板**，展开**Visual C#**，单击**扩展性**，然后单击**VSIX 项目**。 设置项目名称，然后单击**确定**。  
   
-2.  将你的配置文件添加到项目中。  
+2. 将你的配置文件添加到项目中。  
   
-    -   在解决方案资源管理器，右键单击项目，指向**外**，然后单击**现有项**。 在对话框中找到你的配置文件。  
+   -   在解决方案资源管理器，右键单击项目，指向**外**，然后单击**现有项**。 在对话框中找到你的配置文件。  
   
-3.  设置该配置文件**复制到输出**属性。  
+3. 设置该配置文件**复制到输出**属性。  
   
-    1.  在解决方案资源管理器，右键单击该配置文件，然后依次**属性**。  
+   1.  在解决方案资源管理器，右键单击该配置文件，然后依次**属性**。  
   
-    2.  在属性窗口中设置**复制到输出目录**属性设置为**始终复制**。  
+   2.  在属性窗口中设置**复制到输出目录**属性设置为**始终复制**。  
   
-4.  在解决方案资源管理器中，打开 `source.extension.vsixmanifest`。  
+4. 在解决方案资源管理器中，打开 `source.extension.vsixmanifest`。  
   
-     文件将在扩展清单编辑器中打开。  
+    文件将在扩展清单编辑器中打开。  
   
-5.  上**资产**页上，添加一行来描述该配置文件：  
+5. 上**资产**页上，添加一行来描述该配置文件：  
   
-    -   单击“新建” 。 设置中的字段**添加新资产**，如下所示的对话框。  
+   -   单击“新建” 。 设置中的字段**添加新资产**，如下所示的对话框。  
   
-    -   设置**类型**到 `Microsoft.VisualStudio.UmlProfile`  
+   -   设置**类型**到 `Microsoft.VisualStudio.UmlProfile`  
   
-         这不是一个下拉式选择。 使用键盘输入此名称。  
+        这不是一个下拉式选择。 使用键盘输入此名称。  
   
-    -   单击**在文件系统上的文件**并选择你的配置文件的名称，例如 `MyProfile.profile`  
+   -   单击**在文件系统上的文件**并选择你的配置文件的名称，例如 `MyProfile.profile`  
   
-6.  生成项目。  
+6. 生成项目。  
   
-7.  **若要调试配置文件**，按 F5。  
+7. **若要调试配置文件**，按 F5。  
   
-     这将打开一个 Visual Studio 实验实例。 在此实例中，打开建模项目。 在 UML 资源管理器中，选择模型的根元素，并在“属性”窗口中选择配置文件。 然后选择模型中的元素，并设置已为其定义的构造型。  
+    这将打开一个 Visual Studio 实验实例。 在此实例中，打开建模项目。 在 UML 资源管理器中，选择模型的根元素，并在“属性”窗口中选择配置文件。 然后选择模型中的元素，并设置已为其定义的构造型。  
   
-8.  **若要提取部署的 VSIX**  
+8. **若要提取部署的 VSIX**  
   
-    1.  在 Windows 资源管理器中，打开文件夹 **.\bin\Debug**或 **.\bin\Release**若要查找 **.vsix**文件。 此文件是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 扩展文件。 可以在你的计算机上安装该文件，也可将其发送给其他 Visual Studio 用户。  
+   1.  在 Windows 资源管理器中，打开文件夹 **.\bin\Debug**或 **.\bin\Release**若要查找 **.vsix**文件。 此文件是 [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 扩展文件。 可以在你的计算机上安装该文件，也可将其发送给其他 Visual Studio 用户。  
   
-    2.  安装扩展：  
+   2.  安装扩展：  
   
-        1.  双击 `.vsix` 文件。 Visual Studio 扩展安装程序将启动。  
+       1.  双击 `.vsix` 文件。 Visual Studio 扩展安装程序将启动。  
   
-        2.  重启任何正在运行的 Visual Studio 实例。  
+       2.  重启任何正在运行的 Visual Studio 实例。  
   
- 如果尚未安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]，则可以使用以下替代过程进行小型扩展。  
+   如果尚未安装 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]，则可以使用以下替代过程进行小型扩展。  
   
 #### <a name="to-define-a-profile-extension-without-using-visual-studio-sdk"></a>定义配置文件扩展而不使用 Visual Studio SDK  
   
@@ -348,24 +348,24 @@ ms.locfileid: "49221255"
  当我打开 UML 模型时，将显示以下错误： **VS1707： 无法加载以下配置文件，因为序列化时出错： MyProfile.profile**  
  1.  验证 .profile 的基本 XML 语法是否正确。  
   
-2.  确保每个名字对象名称的格式都为 /profileName/nodeName。 profileName 是根配置文件节点中的名称特性的值。 nodeName 是元类、externalType 或 enumerationType 的名称特性的值。  
+2. 确保每个名字对象名称的格式都为 /profileName/nodeName。 profileName 是根配置文件节点中的名称特性的值。 nodeName 是元类、externalType 或 enumerationType 的名称特性的值。  
   
-3.  确保语法如下所述，和中所示_驱动器_**: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
+3. 确保语法如下所述，和中所示_驱动器_**: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .  
   
-4.  卸载有错误的扩展。 在  “工具”菜单上，单击 “扩展和更新”。  
+4. 卸载有错误的扩展。 在  “工具”菜单上，单击 “扩展和更新”。  
   
-    -   如果未显示该扩展，请查看下一个项。  
+   -   如果未显示该扩展，请查看下一个项。  
   
-5.  重新生成 VSIX 文件，然后在 Windows 资源管理器中打开该文件以将其重新安装。 重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+5. 重新生成 VSIX 文件，然后在 Windows 资源管理器中打开该文件以将其重新安装。 重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
- 在扩展管理器中，不显示该扩展，但当你尝试重新安装它，将显示以下消息：**扩展已安装到所有适用的产品。**  
- 1.  一个子文件夹中删除扩展文件*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
+   在扩展管理器中，不显示该扩展，但当你尝试重新安装它，将显示以下消息：**扩展已安装到所有适用的产品。**  
+   1.  一个子文件夹中删除扩展文件*LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\  
   
-    -   若要查看*LocalAppData*，必须在 Windows 资源管理器文件夹选项视图选项卡中设置显示隐藏的文件和文件夹。  
+   -   若要查看*LocalAppData*，必须在 Windows 资源管理器文件夹选项视图选项卡中设置显示隐藏的文件和文件夹。  
   
-    -   *LocalAppData*通常位于 C:\Users\\*用户名*\AppData\Local\  
+   -   *LocalAppData*通常位于 C:\Users\\*用户名*\AppData\Local\  
   
-2.  重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 重新启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
  [向 UML 模型元素添加构造型](../modeling/add-stereotypes-to-uml-model-elements.md)   

@@ -10,25 +10,25 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 988731be4376e1d1e402b3722bed157cc9b655d2
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 1570468a56a4eaba80965d8feea669a0d3f3cb1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39150997"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905059"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：  
 
--   Visual Studio 2017: 4022
+- Visual Studio 2017: 4022
 
--   Visual Studio 2015：4020  
+- Visual Studio 2015：4020  
   
--   Visual Studio 2013：4018  
+- Visual Studio 2013：4018  
   
--   Visual Studio 2012：4016  
+- Visual Studio 2012：4016  
   
- 换而言之，分配给远程调试器的端口数每个版本递增 2。 你可以根据需要设置其他端口号。 我们将在后面部分说明如何设置端口号。  
+  换而言之，分配给远程调试器的端口数每个版本递增 2。 你可以根据需要设置其他端口号。 我们将在后面部分说明如何设置端口号。  
   
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位操作系统上的远程调试器端口  
  （在 Visual Studio 2017) 的 TCP 4022 是主端口，需对所有方案。 你可以在命令行或远程调试器窗口中对此进行配置。  
@@ -59,4 +59,4 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
 ## <a name="see-also"></a>请参阅  
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

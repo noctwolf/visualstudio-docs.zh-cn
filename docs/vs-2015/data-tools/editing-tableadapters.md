@@ -26,12 +26,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: faeac90c92675c897774cc3650575cd60f5be991
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b242f8154f31391d168f2a41bfd00c01f037d87e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49288400"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877642"
 ---
 # <a name="editing-tableadapters"></a>编辑 Tableadapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,21 +127,21 @@ ms.locfileid: "49288400"
 ## <a name="create-new-stored-procedures"></a>创建新存储过程  
  本部分介绍如何完成**TableAdapter 查询配置向导**选择时**创建新的存储的过程**选项。  
   
-1.  在中**生成存储过程**页上，键入要在调用存储的过程时执行的 SQL 语句。  
+1. 在中**生成存储过程**页上，键入要在调用存储的过程时执行的 SQL 语句。  
   
-    > [!NOTE]
-    >  该向导提供对访问**查询生成器**，一个用于创建 SQL 查询的可视化工具。 若要打开它，请单击**查询生成器**按钮。  
+   > [!NOTE]
+   >  该向导提供对访问**查询生成器**，一个用于创建 SQL 查询的可视化工具。 若要打开它，请单击**查询生成器**按钮。  
   
-2.  在中**创建存储的过程**页上，执行以下操作：  
+2. 在中**创建存储的过程**页上，执行以下操作：  
   
-    1.  为新存储过程键入名称。  
+   1. 为新存储过程键入名称。  
   
-    2.  指定是否在基础数据库中创建存储过程。  
+   2. 指定是否在基础数据库中创建存储过程。  
   
-        > [!NOTE]
-        >  在数据库中创建存储过程的能力由特定数据库的安全设置所决定。  
+      > [!NOTE]
+      >  在数据库中创建存储过程的能力由特定数据库的安全设置所决定。  
   
-     **查看向导结果**页显示了创建 TableAdapter 查询的结果。 如果向导遇到问题，此屏幕会提供错误信息。  
+      **查看向导结果**页显示了创建 TableAdapter 查询的结果。 如果向导遇到问题，此屏幕会提供错误信息。  
   
 ## <a name="use-existing-stored-procedures"></a>使用现有存储过程  
  本部分介绍如何完成**TableAdapter 查询配置向导**选择时**使用现有存储的过程**选项。  

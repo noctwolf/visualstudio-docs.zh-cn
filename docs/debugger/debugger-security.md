@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d7cc0e24255da8c9fdb8ab3e4e49f030d758d11
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1032e3db1513f628e540643acf7b1d98f89b5bff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865591"
 ---
 # <a name="debugger-security"></a>调试器安全
 调试其他进程的能力赋予你极广泛的权力，这是无法通过其他途经获得的，在进行远程调试时更是如此。 恶意的调试器可能对正在调试的计算机造成大范围的损害。  
@@ -39,11 +39,11 @@ ms.locfileid: "44279558"
 ### <a name="managed-debugging-security"></a>托管调试安全  
  下面是一些适用于所有托管调试的常规建议。  
   
--   附加到不受信任的用户的进程时要小心： 当你执行此操作，您认为它是可信任。 尝试附加到非信任用户的进程时，将出现一个安全警告对话框确认，询问是否希望附加到该进程。 “信任用户”包括你以及在安装了 .NET Framework 的计算机上通常定义的一组标准用户，如“aspnet” 、“localsystem” 、“networkservice” 和“localservice” 。 有关详细信息，请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
+- 附加到不受信任的用户的进程时要小心： 当你执行此操作，您认为它是可信任。 尝试附加到非信任用户的进程时，将出现一个安全警告对话框确认，询问是否希望附加到该进程。 “信任用户”包括你以及在安装了 .NET Framework 的计算机上通常定义的一组标准用户，如“aspnet” 、“localsystem” 、“networkservice” 和“localservice” 。 有关详细信息，请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)。  
   
--   从 Internet 下载项目并将其加载到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]时要小心。 即使没有进行调试这样做也很冒险。 这样做时，你假定该项目和它包含的代码是可以信赖的。  
+- 从 Internet 下载项目并将其加载到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]时要小心。 即使没有进行调试这样做也很冒险。 这样做时，你假定该项目和它包含的代码是可以信赖的。  
   
- 有关更多信息，请参见 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
+  有关更多信息，请参见 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
   
 ### <a name="remote-debugging-security"></a>远程调试安全  
  本地调试通常比远程调试更安全。 远程调试增加了可查看的总表面积。  
@@ -59,7 +59,7 @@ ms.locfileid: "44279558"
  有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。  
   
 ### <a name="web-services-debugging-security"></a>Web 服务调试安全  
- 本地调试要安全一些，但是如果在 Web 服务器上没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，则本地调试也许不是实际可行的。 通常，调试 Web 服务都是远程完成的，除非在开发期间，因此远程调试安全的建议也适用于 Web 服务调试。 下面是一些其他最佳做法。 有关详细信息，请参阅[Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
+ 本地调试要安全一些，但是如果在 Web 服务器上没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，则本地调试也许不是实际可行的。 通常，调试 Web 服务都是远程完成的，除非在开发期间，因此远程调试安全的建议也适用于 Web 服务调试。 下面是一些其他最佳做法。 有关详细信息，请参阅 [Debugging XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00)。  
   
 -   不要在已受威胁的 Web 服务器上启用调试。  
   
@@ -73,14 +73,14 @@ ms.locfileid: "44279558"
 ### <a name="symbols-and-source-code"></a>符号和源代码  
  两个需要考虑安全的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具如下：  
   
--   源服务器，用于从源代码存储库中提供源代码的版本。 当没有程序源代码的当前版本时它很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。  
+- 源服务器，用于从源代码存储库中提供源代码的版本。 当没有程序源代码的当前版本时它很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。  
   
--   符号服务器，用于在系统调用期间提供调试崩溃所需的符号。  
+- 符号服务器，用于在系统调用期间提供调试崩溃所需的符号。  
   
- 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   
  [Debugger Basics](../debugger/getting-started-with-the-debugger.md) （调试器基础知识）  
  [安全警告：附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)   
- [安全警告：调试器必须执行不受信任的命令](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+ [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

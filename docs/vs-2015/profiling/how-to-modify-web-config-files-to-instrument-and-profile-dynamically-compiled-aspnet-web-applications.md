@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c5cfc94bef15e34deaec9d07a4b66021cb4fc39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5be66c8a762d7d690ec30a7658c59bcff75c3d53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877486"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "49176301"
   
  web.config 文件的根元素为 **configuration** 元素。 若要检测和分析动态编译的 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Web 应用程序，必须添加或修改以下元素：  
   
--   **configuration/runtime/assemblyBinding/dependentAssembly** 元素，它标识控制分析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 程序集。 **dependentAssembly** 元素包含两个子元素：**assemblyIdentity** 和 **codeBase**。  
+- **configuration/runtime/assemblyBinding/dependentAssembly** 元素，它标识控制分析的 Microsoft.VisualStudio.Enterprise.ASPNetHelper 程序集。 **dependentAssembly** 元素包含两个子元素：**assemblyIdentity** 和 **codeBase**。  
   
--   **configuration/system.web/compilation** 元素，它标识目标程序集的探查器处理后编译步骤。  
+- **configuration/system.web/compilation** 元素，它标识目标程序集的探查器处理后编译步骤。  
   
--   标识分析工具位置的两个 **add** 元素将被添加到 **configuration/appSettings** 节。  
+- 标识分析工具位置的两个 **add** 元素将被添加到 **configuration/appSettings** 节。  
   
- 建议创建原始 web.config 文件的副本，该副本可用于还原应用程序的配置。  
+  建议创建原始 web.config 文件的副本，该副本可用于还原应用程序的配置。  
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>添加 ASPNetHelper 程序集作为 configuration/runtime/assemblyBinding/dependentAssembly 元素  
   

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3ca011f519c53924681d2c1a7042f25dcfaad208
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635195"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910961"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练： 使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。  
@@ -44,15 +44,15 @@ ms.locfileid: "42635195"
   
  您还需要完成本演练在开发计算机上的以下组件：  
   
--   支持的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支持的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
+- 用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
   
--   在 SharePoint 中的自定义操作。 有关详细信息，请参阅[自定义操作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
+- 在 SharePoint 中的自定义操作。 有关详细信息，请参阅[自定义操作](http://go.microsoft.com/fwlink/?LinkId=177800)。  
   
 ## <a name="create-the-wizard-project"></a>创建向导项目
  若要完成本演练中，必须将项目添加到你在中创建的 CustomActionProjectItem 解决方案[演练： 使用项模板，第 1 部分创建自定义操作项目项](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
@@ -327,7 +327,7 @@ ms.locfileid: "42635195"
   
      **列表设置**页将出现。  
   
-4.  下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭浏览器。  
+4.  下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站 http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机
  在完成测试的项目项后，从 Visual Studio 的实验实例中删除项目项模板。  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e430ac4658cd34db34f87c6b051c9269c3b6454
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 3146de7efb7db567149b7741f2868a932f8476ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073657"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842061"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>使用 Microsoft Monitoring Agent
 你可使用 **Microsoft 监视代理**本地监视 IIS 托管的 ASP.NET Web 应用和 SharePoint 2010 或 2013 应用程序，以查找错误、性能问题或其他问题。 可将代理发出的诊断事件保存为 IntelliTrace 日志（也就是 .iTrace）文件。 随后可打开 Visual Studio Enterprise （但不是 Professional 或 Community 版本）中的日志，以使用 Visual Studio 的所有诊断工具调试问题。 你也可运行 **跟踪** 模式中的代理，进而收集 IntelliTrace 诊断数据及方法数据。 Microsoft Monitoring Agent 可以与 [Application Insights](/azure/application-insights/) 和 [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))集成。 安装时，Microsoft 监视代理确实会改变目标系统的环境。  
@@ -79,33 +79,33 @@ ms.locfileid: "49073657"
 ####  <a name="FullPermissionsITLog"></a> 问：如何设置访问应用程序池的权限？  
  **答：** 使用 Windows **icacls** 命令或使用 Windows 资源管理器（或文件资源管理器）。 例如：  
   
--   要使用 Windows **icacls** 命令设置权限，请：  
+- 要使用 Windows **icacls** 命令设置权限，请：  
   
-    -   对于“DefaultAppPool”  应用程序池中的 Web 应用：  
+  - 对于“DefaultAppPool”  应用程序池中的 Web 应用：  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\DefaultAppPool":RX`  
   
-    -   对于“SharePoint - 80”  应用程序池中的一个 SharePoint 应用程序：  
+  - 对于“SharePoint - 80”  应用程序池中的一个 SharePoint 应用程序：  
   
-         `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
+     `icacls "C:\IntelliTraceLogs" /grant "IIS APPPOOL\SharePoint - 80":RX`  
   
-     或  
+    或  
   
--   要设置 Windows 资源管理器（或文件资源管理器）的权限，请：  
+- 要设置 Windows 资源管理器（或文件资源管理器）的权限，请：  
   
-    1.  打开 IntelliTrace 日志目录中的“属性”  。  
+  1.  打开 IntelliTrace 日志目录中的“属性”  。  
   
-    2.  在“安全”  选项卡上，选择“编辑” ，然后单击“添加” 。  
+  2.  在“安全”  选项卡上，选择“编辑” ，然后单击“添加” 。  
   
-    3.  确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果不存在，选择**对象类型**以将其添加。  
+  3.  确保“内置安全主体”  出现在“选择此对象类型”  框中。 如果不存在，选择**对象类型**以将其添加。  
   
-    4.  确保本地计算机出现在“从此处”  框中。 如果不存在，选择**位置**若要对其进行更改。  
+  4.  确保本地计算机出现在“从此处”  框中。 如果不存在，选择**位置**若要对其进行更改。  
   
-    5.  在“输入要选择的对象名称”  框中，添加 Web 应用或 SharePoint 应用程序的应用程序池。  
+  5.  在“输入要选择的对象名称”  框中，添加 Web 应用或 SharePoint 应用程序的应用程序池。  
   
-    6.  选择“检查名称”  来解析名称。 选择 **“确定”**。  
+  6.  选择“检查名称”  来解析名称。 选择 **“确定”**。  
   
-    7.  请确保应用程序池拥有**读取 & 执行**权限。  
+  7.  请确保应用程序池拥有**读取 & 执行**权限。  
   
 ##  <a name="MonitorEvents"></a> 步骤 2：开始监视你的应用程序  
  使用 Windows PowerShell [Start-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313686) 命令开始监视应用。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](http://technet.microsoft.com/library/dn465157.aspx)。  
@@ -149,83 +149,83 @@ ms.locfileid: "49073657"
 ####  <a name="Minimizing"></a> 问：如何在应用速度不减的前提下获取最多的数据？  
  **答：** Microsoft 监视代理可收集大量数据并且会影响应用的性能，具体取决于你选择收集的数据及收集方式。 以下是在应用速度不减的前提下获取最多的数据的一些方法：  
   
--   针对 Web 应用和 SharePoint 应用程序，代理会记录共享指定应用程序池的各应用的数据。 虽然你能限制一个单应用的模块的收集，但这可能使任何共享同一应用程序池的应用速度变慢。 要避免使其他应用速度变慢，请将各应用托管在各自的应用程序池中。  
+- 针对 Web 应用和 SharePoint 应用程序，代理会记录共享指定应用程序池的各应用的数据。 虽然你能限制一个单应用的模块的收集，但这可能使任何共享同一应用程序池的应用速度变慢。 要避免使其他应用速度变慢，请将各应用托管在各自的应用程序池中。  
   
--   检查代理收集收集计划中的数据的事件。 编辑收集计划以禁用无关或不感兴趣的事件。 这可以提高启动性能和运行时性能。  
+- 检查代理收集收集计划中的数据的事件。 编辑收集计划以禁用无关或不感兴趣的事件。 这可以提高启动性能和运行时性能。  
   
-     要禁用事件，请将 `enabled` 元素的 `<DiagnosticEventSpecification>` 属性设为 `false`：  
+   要禁用事件，请将 `enabled` 元素的 `<DiagnosticEventSpecification>` 属性设为 `false`：  
   
-     `<DiagnosticEventSpecification enabled="false">`  
+   `<DiagnosticEventSpecification enabled="false">`  
   
-     如果 `enabled` 属性不存在，则该事件已启用。  
+   如果 `enabled` 属性不存在，则该事件已启用。  
   
-     例如：  
+   例如：  
   
-    -   禁用未使用 Windows 工作流的应用的 Windows 工作流事件。  
+  -   禁用未使用 Windows 工作流的应用的 Windows 工作流事件。  
   
-    -   禁用访问注册表但不显示注册表设置问题的应用的注册表事件。  
+  -   禁用访问注册表但不显示注册表设置问题的应用的注册表事件。  
   
--   检查代理收集收集计划中的数据的模块。 编辑收集计划，只加入你感兴趣的模块。  
+- 检查代理收集收集计划中的数据的模块。 编辑收集计划，只加入你感兴趣的模块。  
   
-     这可减少应用启动、运行时代理收集的方法调用信息及其他检测数据的数量。 调试并检查函数调用接收及返回的值时，该数据有助于你单步调试代码。  
+   这可减少应用启动、运行时代理收集的方法调用信息及其他检测数据的数量。 调试并检查函数调用接收及返回的值时，该数据有助于你单步调试代码。  
   
-    1.  打开收集计划。 查找 `<ModuleList>` 元素。  
+  1. 打开收集计划。 查找 `<ModuleList>` 元素。  
   
-    2.  在 `<ModuleList>`中，将 `isExclusionList` 属性设为 `false`。  
+  2. 在 `<ModuleList>`中，将 `isExclusionList` 属性设为 `false`。  
   
-    3.  使用 `<Name>` 元素为各模块指定以下一项：文件名、字符串值（以便加入任何名称中包含该字符串的模块）或公钥。  
+  3. 使用 `<Name>` 元素为各模块指定以下一项：文件名、字符串值（以便加入任何名称中包含该字符串的模块）或公钥。  
   
      该示例创建了一个列表，该列表只收集 Fabrikam Fiber Web 应用主模块中的数据：  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>FabrikamFiber.Web.dll</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>FabrikamFiber.Web.dll</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     要从任何名称中包含“Fabrikam”的模块中收集数据，请创建一个与此类似的列表：  
+   要从任何名称中包含“Fabrikam”的模块中收集数据，请创建一个与此类似的列表：  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>Fabrikam</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>Fabrikam</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     要通过指定模块公钥标记从中收集数据，请创建一个与此类似的列表：  
+   要通过指定模块公钥标记从中收集数据，请创建一个与此类似的列表：  
   
-    ```xml  
-    <ModuleList isExclusionList="false">  
-       <Name>PublicKeyToken:B77A5C561934E089</Name>  
-       <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
-       <Name>PublicKeyToken:31BF3856AD364E35</Name>  
-       <Name>PublicKeyToken:89845DCD8080CC91</Name>  
-       <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
-    </ModuleList>  
+  ```xml  
+  <ModuleList isExclusionList="false">  
+     <Name>PublicKeyToken:B77A5C561934E089</Name>  
+     <Name>PublicKeyToken:B03F5F7F11D50A3A</Name>  
+     <Name>PublicKeyToken:31BF3856AD364E35</Name>  
+     <Name>PublicKeyToken:89845DCD8080CC91</Name>  
+     <Name>PublicKeyToken:71E9BCE111E9429C</Name>  
+  </ModuleList>  
   
-    ```  
+  ```  
   
-     **问：为何不排除模块呢？**  
+   **问：为何不排除模块呢？**  
   
-     **答：** 默认情况下，收集计划通过将 `isExclusionList` 属性设为 `true`来排除模块。 然而，这可能仍然会收集不符合列表标准以及你可能不感兴趣的模块中的数据，如第三方或开源模块。  
+   **答：** 默认情况下，收集计划通过将 `isExclusionList` 属性设为 `true`来排除模块。 然而，这可能仍然会收集不符合列表标准以及你可能不感兴趣的模块中的数据，如第三方或开源模块。  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>问：代理收集哪些值？  
  **答：** 为降低对性能的影响，代理只收集以下这些值：  
   
--   方法接收及返回的基元数据类型  
+- 方法接收及返回的基元数据类型  
   
--   传入方法以及从方法返回的顶级对象的字段中的基元数据类型  
+- 传入方法以及从方法返回的顶级对象的字段中的基元数据类型  
   
- 如，假定你有一个 `AlterEmployee` 方法签名，其包含一个整数 `id` 和一个 `Employee` 对象 `oldemployee`：  
+  如，假定你有一个 `AlterEmployee` 方法签名，其包含一个整数 `id` 和一个 `Employee` 对象 `oldemployee`：  
   
- `public Employee AlterEmployee(int id, Employee oldemployee)`  
+  `public Employee AlterEmployee(int id, Employee oldemployee)`  
   
- `Employee` 类型具有以下属性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 和 `Address` 类型之间存在关联。  
+  `Employee` 类型具有以下属性： `Id`、 `Name`和 `HomeAddress`。 `Employee` 和 `Address` 类型之间存在关联。  
   
- ![员工与地址之间的关系](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
+  ![员工与地址之间的关系](../debugger/media/employeeaddressrelationship.png "EmployeeAddressRelationship")  
   
- 代理只记录 `id`方法返回的 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 对象的值。 然而，除记录 `Address` 对象是否为空以外，代理不会收集有关该对象的其他信息。 代理也不会记录 `AlterEmployee` 方法中局部变量相关的数据，除非其他方法将这些局部变量用作参数，记录为方法参数。  
+  代理只记录 `id`方法返回的 `Employee.Id`、 `Employee.Name` 、 `Employee` 和 `AlterEmployee` 对象的值。 然而，除记录 `Address` 对象是否为空以外，代理不会收集有关该对象的其他信息。 代理也不会记录 `AlterEmployee` 方法中局部变量相关的数据，除非其他方法将这些局部变量用作参数，记录为方法参数。  
   
 ##  <a name="SaveEvents"></a> 步骤 3：保存已记录的事件  
  发现错误或性能问题时，将已记录的事件保存为 IntelliTrace 日志。 代理只在记录事件的情况下会创建日志。 如果你使用 System Center 2012，请参阅 [使用 Microsoft 监视代理监视 Web 应用程序](http://technet.microsoft.com/library/dn465157.aspx)。  
@@ -233,63 +233,63 @@ ms.locfileid: "49073657"
 ### <a name="save-recorded-events-but-continue-monitoring"></a>保存已记录的事件，但继续监视  
  当你希望创建 IntelliTrace 日志但又不希望重启应用或停止监视时，可执行这些步骤。 即使服务器或应用程序重启，代理也会继续监视。  
   
-1.  以管理员身份打开 Web 服务器上的 Windows PowerShell 命令提示符窗口。  
+1. 以管理员身份打开 Web 服务器上的 Windows PowerShell 命令提示符窗口。  
   
-2.  运行 [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 命令以保存 IntelliTrace 日志快照：  
+2. 运行 [Checkpoint-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313684) 命令以保存 IntelliTrace 日志快照：  
   
-     **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Checkpoint-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- 或 -  
+    \- 或 -  
   
-     **Checkpoint-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Checkpoint-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     例如：  
+    例如：  
   
-     **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**  
+    **PS c:\\> Checkpoint-webapplicationmonitoring"Fabrikam\FabrikamFiber.Web"**  
   
-     或  
+    或  
   
-     **PS c: > Checkpoint-webapplicationmonitoring"IIS:sitesFabrikamFabrikamFiber.Web"**  
+    **PS c: > Checkpoint-webapplicationmonitoring"IIS:sitesFabrikamFabrikamFiber.Web"**  
   
-     有关详细信息，运行**get-help Checkpoint-webapplicationmonitoring-detailed**命令或**get-help Checkpoint-webapplicationmonitoring-示例**命令。  
+    有关详细信息，运行**get-help Checkpoint-webapplicationmonitoring-detailed**命令或**get-help Checkpoint-webapplicationmonitoring-示例**命令。  
   
-3.  将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise （但不是 Professional 或 Community 版本）的计算机打开该日志。  
+3. 将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise （但不是 Professional 或 Community 版本）的计算机打开该日志。  
   
-    > [!IMPORTANT]
-    >  共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。  
+   > [!IMPORTANT]
+   >  共享 IntelliTrace 日志时务必小心，因为这些日志中可能包含个人数据及敏感数据。 确保可访问这些日志的所有人拥有查看相应数据的权限。 查看你所在公司的隐私政策。  
   
- **下一步：** [Visual Studio Enterprise 中诊断记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **下一步：** [Visual Studio Enterprise 中诊断记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ### <a name="save-recorded-events-and-stop-monitoring"></a>保存已记录的事件并停止监视  
  如果复制特定问题时你只想获取诊断信息，请执行这些步骤。 这将重启你的 Web 服务器上的所有 Web 应用。  
   
-1.  以管理员身份打开 Web 服务器上的 Windows PowerShell 命令提示符窗口。  
+1. 以管理员身份打开 Web 服务器上的 Windows PowerShell 命令提示符窗口。  
   
-2.  运行 [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 命令以创建 IntelliTrace 日志并停止监视特定的 Web 应用：  
+2. 运行 [Stop-WebApplicationMonitoring](http://go.microsoft.com/fwlink/?LinkID=313687) 命令以创建 IntelliTrace 日志并停止监视特定的 Web 应用：  
   
-     **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
+    **Stop-webapplicationmonitoring** *"\<IISWebsiteName >\\< IISWebAppName\>"*  
   
-     \- 或 -  
+    \- 或 -  
   
-     **Stop-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
+    **Stop-webapplicationmonitoring"IIS:\sites**  *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-     或停止监视所有 Web 应用：  
+    或停止监视所有 Web 应用：  
   
-     **Stop-webapplicationmonitoring-所有**  
+    **Stop-webapplicationmonitoring-所有**  
   
-     例如：  
+    例如：  
   
-     **PS c:\\> Stop-webapplicationmonitoring"Fabrikam\iFabrikamFiber.Web"**  
+    **PS c:\\> Stop-webapplicationmonitoring"Fabrikam\iFabrikamFiber.Web"**  
   
-     \- 或 -  
+    \- 或 -  
   
-     **PS c:\\> Stop-webapplicationmonitoring"IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
+    **PS c:\\> Stop-webapplicationmonitoring"IIS:\sites\Fabrikam\FabrikamFiber.Web"**  
   
-     有关详细信息，运行**get-help Stop-webapplicationmonitoring-detailed**命令或**get-help Stop-webapplicationmonitoring-示例**命令。  
+    有关详细信息，运行**get-help Stop-webapplicationmonitoring-detailed**命令或**get-help Stop-webapplicationmonitoring-示例**命令。  
   
-3.  将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise 的计算机打开该日志。  
+3. 将日志复制到一个安全的共享文件夹中，随后从装有 Visual Studio Enterprise 的计算机打开该日志。  
   
- **下一步：** [Visual Studio Enterprise 中诊断记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
+   **下一步：** [Visual Studio Enterprise 中诊断记录的事件](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)  
   
 ## <a name="q--a"></a>问题解答  
   

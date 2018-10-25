@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_ismsilnetmodule |Microsoft 文档'
+title: 'Idiasymbol:: Get_ismsilnetmodule |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c902252e250c78e5712f5e91b8cc5404851cc6b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 65399d8afde22a4856c43d3de0e7d2dc555d32fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468523"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904682"
 ---
 # <a name="idiasymbolgetismsilnetmodule"></a>IDiaSymbol::get_isMSILNetmodule
-检索一个标志，指示模块是否.netmodule （Microsoft 中间语言 (MSIL) 模块只包含元数据和任何本机符号）。  
+检索一个标志，指示模块是否一个.netmodule （只包含元数据，并且没有本机符号是 Microsoft 中间语言 (MSIL) 模块）。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,7 +40,7 @@ HRESULT get_isMSILNetmodule(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  此属性是可从`SymTagCompilandDetails`符号类型 (请参阅[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。  

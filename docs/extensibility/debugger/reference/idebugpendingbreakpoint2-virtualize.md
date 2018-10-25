@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Virtualize |Microsoft 文档
+title: IDebugPendingBreakpoint2::Virtualize |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9145cff487ebb97894d9b93ad5e1ec54d5b4b2
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: eb2e66378b2a7b906b6bf9e0efe4e718316ade54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948286"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
-切换此断点挂起的虚拟化的状态。 当挂起断点虚拟化时，将尝试每次新代码将加载到程序时将其绑定的调试引擎。  
+切换此挂起断点的虚拟化的状态。 挂起断点虚拟化时，调试引擎将尝试将其绑定每次新代码将加载到该程序。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,13 +42,13 @@ int Virtualize(
   
 #### <a name="parameters"></a>参数  
  `fVirtualize`  
- [in]设置为非零值 (`TRUE`) 虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。  
+ [in]设置为非零值 (`TRUE`) 来虚拟化挂起断点，或为零 (`FALSE`) 若要关闭虚拟化。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。  
   
 ## <a name="remarks"></a>备注  
- 每次加载代码时，将绑定虚拟化的断点。  
+ 每次加载代码时，绑定虚拟化的断点。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何实现此方法对于简单`CPendingBreakpoint`公开的对象[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)接口。  
@@ -85,5 +85,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

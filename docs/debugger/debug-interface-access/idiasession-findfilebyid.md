@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findfilebyid |Microsoft 文档'
+title: 'Idiasession:: Findfilebyid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ed79b65823c3a777c13a90331468074347425ef5
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7c56d66a78b52e99aecb8cb744cc3d8465d0d243
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31466716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941407"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-通过源文件标识符来检索源文件。  
+按源文件标识符检索源文件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,7 +35,7 @@ HRESULT findFileById (
   
 #### <a name="parameters"></a>参数  
  `uniqueId`  
- [in]指定的源文件标识符。  
+ [in]指定源文件标识符。  
   
  `ppResult`  
  [out]返回[IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)检索表示源文件的对象。  
@@ -44,7 +44,7 @@ HRESULT findFileById (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 源文件标识符是对 DIA SDK 在内部使用，以使所有源文件是唯一的唯一值。 此方法通常在内部用于 DIA SDK。  
+ 源文件标识符是到 DIA SDK 在内部使用，以使所有源代码文件是唯一的唯一值。 DIA sdk，是通常在内部使用此方法。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   

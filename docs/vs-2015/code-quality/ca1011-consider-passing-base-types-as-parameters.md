@@ -20,15 +20,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 71bf8247fca736fd1257ec7489c71752cd9cc21a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a9afb073ef3e722a2a07a05e1ee8629b31b4cfab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898628"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011：考虑将基类型作为参数传递
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ConsiderPassingBaseTypesAsParameters|
@@ -48,13 +49,13 @@ ms.locfileid: "49220150"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  则可以安全地禁止显示此规则的警告
 
--   如果该方法需要提供的派生类型的特定功能
+- 如果该方法需要提供的派生类型的特定功能
 
-     \- 或 -
+   \- 或 -
 
--   若要强制实施仅派生的类型或派生程度更大的类型，传递给方法。
+- 若要强制实施仅派生的类型或派生程度更大的类型，传递给方法。
 
- 在这些情况下，代码将由于强类型检查由编译器和运行时提供更可靠。
+  在这些情况下，代码将由于强类型检查由编译器和运行时提供更可靠。
 
 ## <a name="example"></a>示例
  下面的示例演示一种方法， `ManipulateFileStream`，，可仅与<xref:System.IO.FileStream>对象，与此规则冲突。 第二种方法， `ManipulateAnyStream`，通过替换来满足该规则<xref:System.IO.FileStream>通过使用参数<xref:System.IO.Stream>。

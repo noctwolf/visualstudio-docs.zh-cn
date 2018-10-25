@@ -15,12 +15,12 @@ ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c0c663e521e113de69e749a68bf3d81bfd523687
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7bc4d7caefe0d0db2cdadf684702ec7e0d800c9c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884148"
 ---
 # <a name="source-control-configuration-details"></a>源代码管理配置详细信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "49297812"
   
  在响应`IVsQueryEditQuerySave2::QueryEditFiles`调用，该环境可以执行以下操作：  
   
--   拒绝对更改的调用，在这种情况下的编辑器或项目必须保持不变 （清理） 状态。  
+- 拒绝对更改的调用，在这种情况下的编辑器或项目必须保持不变 （清理） 状态。  
   
--   指示应重新加载文档数据。 对于项目，环境将重新加载项目的数据。 编辑器必须从通过磁盘将数据重新加载其<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>实现。 在任一情况下，重新加载数据时，可以更改项目或编辑器中的上下文。  
+- 指示应重新加载文档数据。 对于项目，环境将重新加载项目的数据。 编辑器必须从通过磁盘将数据重新加载其<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>实现。 在任一情况下，重新加载数据时，可以更改项目或编辑器中的上下文。  
   
- 它是一种复杂且难以实现的任务，需改进相应`IVsQueryEditQuerySave2::QueryEditFiles`到现有基本代码的调用。 因此，应在项目或编辑器的创建过程集成这些调用。  
+  它是一种复杂且难以实现的任务，需改进相应`IVsQueryEditQuerySave2::QueryEditFiles`到现有基本代码的调用。 因此，应在项目或编辑器的创建过程集成这些调用。  
   
 ## <a name="request-permission-to-save-a-file"></a>请求保存文件的权限  
  项目或编辑器在保存文件之前，必须调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>。 对于项目文件，这些调用会自动完成的解决方案，它知道何时将项目文件保存。 编辑器的负责进行这些调用，除非的编辑器实现`IVsPersistDocData2`使用 helper 函数<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>。 如果你的编辑器实现`IVsPersistDocData2`在这种方式，然后调用`IVsQueryEditQuerySave2::QuerySaveFile`或`IVsQueryEditQuerySave2::QuerySaveFiles`做。  

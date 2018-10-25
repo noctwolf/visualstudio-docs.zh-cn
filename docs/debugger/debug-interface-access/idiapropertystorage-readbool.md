@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadBOOL |Microsoft 文档
+title: IDiaPropertyStorage::ReadBOOL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a7ec4afc044af9d63fc65826e473d9036bf9ca3
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 3df4ce44c0cf0b3b09442dc695f73c415035e84a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904175"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 读取`BOOL`属性组中的值。  
@@ -35,16 +35,16 @@ HRESULT ReadBOOL (
   
 #### <a name="parameters"></a>参数  
  `id`  
- [in]要读取的属性的标识符 (`PROPID`作为 WTypes.h 中定义`ULONG`)。  
+ [in]要读取的属性的标识符 (`PROPID`定义为 WTypes.h 中`ULONG`)。  
   
  `pValue`  
  [out]返回属性值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则返回错误代码。 返回`E_INVALIDARG`如果属性的类型不是`BOOL`。  
+ 如果成功，则返回`S_OK`; 否则返回错误代码。 返回`E_INVALIDARG`如果该属性的类型不是`BOOL`。  
   
 ## <a name="remarks"></a>备注  
- 获得一致的结果，解释`BOOL`值，则为非 0 值以便`TRUE`0 是`FALSE`。  
+ 一致的结果，将解释`BOOL`值，以便非零值都`TRUE`零值为`FALSE`。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

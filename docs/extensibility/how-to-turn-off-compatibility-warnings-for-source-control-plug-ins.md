@@ -14,23 +14,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e096b52bdf6e3e0065eefbba708d7bda18ab189
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b1dca06ca82e467080f4bcd88a3b10c691345344
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498043"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888341"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何： 关闭源代码管理插件的兼容性警告
 使用源代码管理中的时，用户可能会看到几个兼容性警告[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 显示警告取决于源代码管理插件的功能，可禁用详细信息如下。  
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>若要禁用此警告:"以确保获得最佳的源代码管理与 Visual Studio 集成"  
   
--   设置以下注册表项 （如有必要，将添加值）：  
+- 设置以下注册表项 （如有必要，将添加值）：  
   
-     **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword: 00000001**  
+   **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword: 00000001**  
   
-     此警告将显示所有非[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]插件。  
+   此警告将显示所有非[!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)]插件。  
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>若要禁用此警告:"已安装的源代码管理提供程序不支持所有功能"  
   

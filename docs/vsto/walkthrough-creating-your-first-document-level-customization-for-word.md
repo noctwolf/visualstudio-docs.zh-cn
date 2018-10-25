@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 160609032a4118c0a15abe88115971f267b90f4c
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 1c5c25163a49e51b0759e57318d6119edec97983
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38778102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928810"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练： 创建 word 在第一个文档级自定义项
   本介绍性演练演示了如何创建 Microsoft Office Word 的文档级自定义项。 仅在特定文档处于打开状态时，才可提供你在这种解决方案中创建的功能。 不能使用文档级自定义项进行应用程序范围的更改，例如在任何文档处于打开状态时显示新“功能区”选项卡。  
@@ -31,17 +31,17 @@ ms.locfileid: "38778102"
   
  本演练阐释了以下任务：  
   
--   创建 Word 文档项目。  
+- 创建 Word 文档项目。  
   
--   将文本添加到 Visual Studio 设计器中托管的文档。  
+- 将文本添加到 Visual Studio 设计器中托管的文档。  
   
--   编写代码，使用 Word 对象模型在自定义文档时打开时向其中添加文本。  
+- 编写代码，使用 Word 对象模型在自定义文档时打开时向其中添加文本。  
   
--   生成并运行项目，以对其进行测试。  
+- 生成并运行项目，以对其进行测试。  
   
--   清理项目，以便从开发计算机删除不必要的生成文件和安全设置。  
+- 清理项目，以便从开发计算机删除不必要的生成文件和安全设置。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  

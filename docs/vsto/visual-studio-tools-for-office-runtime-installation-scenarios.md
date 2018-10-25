@@ -15,23 +15,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f286acae2996451688b0e1a40c4d758c4de8caf6
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857843"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安装方案
   以下三种方式，可以安装 Visual Studio 2010 Tools for Office 运行时：  
   
--   安装 Visual Studio 时。  
+- 安装 Visual Studio 时。  
   
--   安装 Microsoft Office 时。  
+- 安装 Microsoft Office 时。  
   
--   当你安装 Visual Studio 2010 Tools for Office runtime 可再发行组件。  
+- 当你安装 Visual Studio 2010 Tools for Office runtime 可再发行组件。  
   
- 安装的运行时组件取决于计算机的配置和安装方案。  
+  安装的运行时组件取决于计算机的配置和安装方案。  
   
 ## <a name="runtime-components-that-are-installed-in-each-installation-scenario"></a>在每个安装方案中安装的运行时组件  
  Visual Studio 2010 Tools for Office 运行时有三个组件： Office 解决方案加载程序、.NET Framework 3.5 的 Office 扩展和的 Office 扩展[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本。 在安装运行时时，始终安装 Office 解决方案加载程序。 .NET Framework 的 Office 扩展的安装取决于计算机的配置和安装方案。 如果在首次安装运行时时 Office 扩展之一不能安装，则当满足某些需求时，运行时将稍后自动安装缺少的 Office 扩展。 在运行时此功能被称为*按需安装*。  
@@ -39,7 +39,7 @@ ms.locfileid: "35670566"
  下表显示每个运行时安装方案中默认安装的运行时组件。 有关每个方案的详细信息将在后面显示。  
   
 |运行时安装方案|Office 解决方案加载程序|.NET Framework 3.5 的 Office 扩展|[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 扩展|[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 扩展|  
-|-----------------------------------|----------------------------|--------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------|  
+|-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|  
 |通过 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 及更高版本|是|是的，如果已安装 .NET Framework 3.5。|是|是|  
 |通过 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|是|是的，如果已安装 .NET Framework 3.5。|否|否|  
 |通过 Office 2010 Service Pack 1 (SP1) 或更高版本|是|是的，如果已安装 .NET Framework 3.5。|是的，如果已安装 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]。|否|  

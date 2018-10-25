@@ -1,5 +1,5 @@
 ---
-title: CV_HREG_e |Microsoft 文档
+title: CV_HREG_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,18 +14,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa6e567f811f163f8b79b277f5e0c8d2e4fc775b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 091b91cb896d0e2d5753f9c3b55cac58deee8cd5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465676"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848600"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
-指定目标寄存器。  
+指定目标注册。  
   
 > [!NOTE]
->  因为`CV_HREG_e`枚举而言太大，若要复制整个此处，缩写的形式： 提供作为引用。 斜体位置缺失的条目是位置标记。 Cvconst.h 标头文件中提供了完整枚举。  
+>  因为`CV_HREG_e`枚举太大，无法复制无法全部展示，作为参考提供的简化的版本。 在斜体标记缺失的条目。 完整的枚举是 cvconst.h 标头文件中。  
   
 ## <a name="syntax"></a>语法  
   
@@ -412,42 +412,42 @@ enum CV_HREG_e {
   
 ## <a name="elements"></a>元素  
  CV_REG_ *  
- Intel 80x86 和 ix86 处理器和 p 代码使用的寄存器。  
+ 注册由 Intel 80x86 和 ix86 处理器和 p 代码。  
   
  CV_R68_ *  
- 由 68 K 处理器的寄存器。  
+ 68 K 处理器使用的寄存器。  
   
  CV_M4_ *  
  由 MIPS 4000 系列处理器的寄存器。  
   
  CV_ALPHA_ *  
- 使用数字设备 Corporation Alpha AXP 系列处理器的寄存器。  
+ 使用的数字设备 Corporation Alpha AXP 系列处理器的寄存器。  
   
  CV_PPC_ *  
- 由 Motorola/IBM PowerPC 处理器的寄存器。  
+ / IBM Motorola PowerPC 处理器使用的寄存器。  
   
  CV_SH3_ * 和 CV_SH_\*  
- 由 Hitachi SH3 和 Hitachi SH 系列处理器的寄存器。  
+ 使用的人： Hitachi SH3 和 Hitachi SH 系列处理器的寄存器。  
   
  CV_ARM_ *  
- 高级 RISC 计算机 (ARM) 处理器使用的寄存器。  
+ 使用高级 RISC 计算机 (ARM) 处理器的寄存器。  
   
  CV_IA64_ *  
- 使用 Intel IA64 系列处理器的寄存器。  
+ 由 Intel IA64 系列处理器的寄存器。  
   
  CV_TRI_ *  
- 由 Infineon 技术 TriCore 处理器的寄存器。  
+ Infineon 技术 TriCore 处理器使用的寄存器。  
   
  CV_AM33_ *  
- 寄存器使用 Matsushita/Panasonic AM33 和相关的处理器。  
+ 注册和使用 Matsushita/Panasonic AM33，与处理器相关。  
   
  CV_M32R_ *  
- 由三菱 M32R 处理器的寄存器。  
+ Mitsubishi M32R 处理器使用的寄存器。  
   
 ## <a name="remarks"></a>备注  
- 每个处理器类型使用其自身唯一的寄存器组。  
+ 每个处理器类型使用其自己独特的寄存器。  
   
- 此枚举中的值将传递到以下的方法：  
+ 此枚举中的值将传递到以下方法：  
   
 -   [IDiaStackWalkFrame::get_registerValue](../../debugger/debug-interface-access/idiastackwalkframe-get-registervalue.md)  
   

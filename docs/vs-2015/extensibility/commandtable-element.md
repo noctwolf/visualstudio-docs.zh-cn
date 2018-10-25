@@ -18,12 +18,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87b755ac0dbe7e10cfe52693840101729ab32069
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ce1d7b431e7918c172947c508ae06e5770877ea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241197"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863498"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ CommandTable 是.vsct 文件的根元素。 这是定义的实际布局和 VSPac
   
 ### <a name="attributes"></a>特性  
   
-|特性|描述|  
-|---------------|-----------------|  
-|xmlns|必须的。 XML 命名空间：<br /><br /> xmlns ="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"<br /><br /> xmlns:xs ="http://www.w3.org/2001/XMLSchema"|  
-|语言|可选。 语言特性可用于指定的默认语言的所有\<字符串 > 命令表中的元素。  如果未指定语言，将使用当前进程的语言：<br /><br /> 语言 ="en-我们"|  
+| 特性 |                                                                                                                   描述                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   xmlns   |                                   必须的。 XML 命名空间：<br /><br /> xmlns ="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs ="<http://www.w3.org/2001/XMLSchema>"                                   |
+| 语言  | 可选。 语言特性可用于指定的默认语言的所有\<字符串 > 命令表中的元素。  如果未指定语言，将使用当前进程的语言：<br /><br /> 语言 ="en-我们" |
   
 ### <a name="child-elements"></a>子元素  
   

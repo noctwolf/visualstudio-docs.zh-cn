@@ -16,12 +16,12 @@ ms.assetid: fdf09e00-108c-4d51-bbd5-72452d52a490
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 808ed1ce13af06fa263a339bc9c6788595a261a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a903d1cfdb503650f044a17961542c9d011b55bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229250"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856660"
 ---
 # <a name="test-area-5-change-source-control"></a>测试区域 5：更改源代码管理
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ ms.locfileid: "49229250"
   
  **更改源代码管理**命令为用户提供四个基本函数：  
   
--   **绑定：**  
+- **绑定：**  
   
-     允许用户建立或重新建立解决方案/项目与版本存储区之间的源控件链接。  
+   允许用户建立或重新建立解决方案/项目与版本存储区之间的源控件链接。  
   
--   **取消绑定：**  
+- **取消绑定：**  
   
-     从每个连接基础上的源代码管理中删除项目/解决方案。  
+   从每个连接基础上的源代码管理中删除项目/解决方案。  
   
--   **连接/断开连接：**  
+- **连接/断开连接：**  
   
- 受控的解决方案，区域 3 中介绍了切换连接或脱机状态。 有关详细信息，请参阅[测试区域 3： 签出 / 撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
+  受控的解决方案，区域 3 中介绍了切换连接或脱机状态。 有关详细信息，请参阅[测试区域 3： 签出 / 撤销签出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)。  
   
 ## <a name="command-menu-access"></a>命令菜单访问  
  以下[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]测试用例中使用集成的开发环境菜单路径。  

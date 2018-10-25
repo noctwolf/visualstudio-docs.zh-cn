@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8e7a90925c4e7a86b39ca8e3d998055d09400e7
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 67c773fcd6afe5953d47e7f563189263d1092444
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926536"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Guid 和 Id 的 Visual Studio 命令
 Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio 集成的开发环境 (IDE) 中包含的命令的 GUID 和 ID 值。 有关详细信息，请参阅[IDE 定义的命令、 菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
@@ -34,23 +34,23 @@ Visual Studio SDK 的一部分安装的.vsct 文件中定义的 Visual Studio �
   
 ### <a name="to-locate-a-command-definition"></a>若要查找命令定义  
   
-1.  在 Visual Studio 中打开以下文件中的 *< Visual Studio SDK 安装路径\>\VisualStudioIntegration\Common\Inc\\* 文件夹： *SharedCmdDef.vsct*，*ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
+1. 在 Visual Studio 中打开以下文件中的 *< Visual Studio SDK 安装路径\>\VisualStudioIntegration\Common\Inc\\* 文件夹： *SharedCmdDef.vsct*，*ShellCmdDef.vsct*， *VsDbgCmdUsed.vsct*， *Venusmenu.vsct*。  
   
-     Visual Studio 的大多数命令中定义*SharedCmdDef.vsct*并*ShellCmdDef.vsct*。 *VsDbgCmdUsed.vsct*定义与调试器相关的命令和*Venusmenu.vsct*定义特定于 Web 开发的命令。  
+    Visual Studio 的大多数命令中定义*SharedCmdDef.vsct*并*ShellCmdDef.vsct*。 *VsDbgCmdUsed.vsct*定义与调试器相关的命令和*Venusmenu.vsct*定义特定于 Web 开发的命令。  
   
-2.  如果该命令的菜单项，记下的菜单项的确切文本。 如果该命令是按钮在工具栏上的，请注意将显示在其上悬停时的工具提示文本。  
+2. 如果该命令的菜单项，记下的菜单项的确切文本。 如果该命令是按钮在工具栏上的，请注意将显示在其上悬停时的工具提示文本。  
   
-3.  按**Ctrl**+**F**以打开**查找**对话框。  
+3. 按**Ctrl**+**F**以打开**查找**对话框。  
   
-4.  在中**查找内容**框中，键入在步骤 2 中记下的文本。  
+4. 在中**查找内容**框中，键入在步骤 2 中记下的文本。  
   
-5.  确认**所有打开的文档**中显示**查找**框。  
+5. 确认**所有打开的文档**中显示**查找**框。  
   
-6.  单击**查找下一步**按钮，直至在中选择文本`<Strings>`一部分[Button 元素](../../extensibility/button-element.md)。  
+6. 单击**查找下一步**按钮，直至在中选择文本`<Strings>`一部分[Button 元素](../../extensibility/button-element.md)。  
   
-     `<Button>`命令也显示在的元素是命令定义。  
+    `<Button>`命令也显示在的元素是命令定义。  
   
- 在您找到命令定义，您可以将副本放命令的另一个菜单或工具栏上通过创建[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`与命令的值。 有关详细信息，请参阅[创建可重用的按钮组](../../extensibility/creating-reusable-groups-of-buttons.md)。  
+   在您找到命令定义，您可以将副本放命令的另一个菜单或工具栏上通过创建[CommandPlacement 元素](../../extensibility/commandplacement-element.md)具有相同`guid`和`id`与命令的值。 有关详细信息，请参阅[创建可重用的按钮组](../../extensibility/creating-reusable-groups-of-buttons.md)。  
   
 ### <a name="special-cases"></a>特殊情况  
  在以下情况下，菜单文本或工具提示文本可能不完全匹配中的命令定义。  

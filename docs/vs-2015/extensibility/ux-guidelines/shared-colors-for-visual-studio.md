@@ -13,12 +13,12 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd99df10b7cfeefea38bd8399c3d21961d65d205
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72aaaa4a3eb75043f4a2cf3bdd20352bdd2af93b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245383"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856686"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享的颜色
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ ms.locfileid: "49245383"
  使用...  
  -   每当需要创建自定义菜单时。  
   
--   如果具有要与 Visual Studio 菜单匹配的新 UI 组件时。  
+- 如果具有要与 Visual Studio 菜单匹配的新 UI 组件时。  
   
- 请勿使用...  
- 单独的背景色。 始终使用指定的背景/前景组合。  
+  请勿使用...  
+  单独的背景色。 始终使用指定的背景/前景组合。  
   
 #### <a name="menu-title"></a>菜单标题  
  菜单标题由背景、边框和标题文本以及可选的标志符号（通常是在菜单位于命令栏中使用）组成。  
@@ -64,137 +64,137 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于并非希望始终与菜单标题匹配的任何内容。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![菜单标题默认值](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303年 002_MenuTitleDefault")  
+  ![菜单标题默认值](../../extensibility/ux-guidelines/media/0303-002-menutitledefault.png "0303年 002_MenuTitleDefault")  
   
- **菜单标题**  
+  **菜单标题**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![具有默认值标志符号的菜单标题](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303年 003_MenuTitleWithGlyphDefault")  
+  ![具有默认值标志符号的菜单标题](../../extensibility/ux-guidelines/media/0303-003-menutitlewithglyphdefault.png "0303年 003_MenuTitleWithGlyphDefault")  
   
- **具有字形的菜单标题**  
+  **具有字形的菜单标题**  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarMenuGlyph`  
+  `Environment.CommandBarMenuGlyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的菜单标题](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303年 004_MenuTitleHover")  
+  ![悬停时的菜单标题](../../extensibility/ux-guidelines/media/0303-004-menutitlehover.png "0303年 004_MenuTitleHover")  
   
- **菜单标题**  
+  **菜单标题**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- ![菜单标题的具有字形的悬停](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303年 005_MenuTitleWithGlyphHover")  
+  ![菜单标题的具有字形的悬停](../../extensibility/ux-guidelines/media/0303-005-menutitlewithglyphhover.png "0303年 005_MenuTitleWithGlyphHover")  
   
- **具有字形的菜单标题**  
+  **具有字形的菜单标题**  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarMenuMouseOverGlyph`  
+  `Environment.CommandBarMenuMouseOverGlyph`  
   
- Border  
+  Border  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![按下的菜单标题](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303年 006_MenuTitlePressed")  
+  ![按下的菜单标题](../../extensibility/ux-guidelines/media/0303-006-menutitlepressed.png "0303年 006_MenuTitlePressed")  
   
- **菜单标题**  
+  **菜单标题**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- ![具有标志符号按下的菜单标题](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303年 007_MenuTitleWithGlyphPressed")  
+  ![具有标志符号按下的菜单标题](../../extensibility/ux-guidelines/media/0303-007-menutitlewithglyphpressed.png "0303年 007_MenuTitleWithGlyphPressed")  
   
- **具有字形的菜单标题**  
+  **具有字形的菜单标题**  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarMenuMouseDownGlyph`  
+  `Environment.CommandBarMenuMouseDownGlyph`  
   
- Border  
+  Border  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- 仅限左侧、顶端和右侧。  
+  仅限左侧、顶端和右侧。  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![禁用的具有字形的菜单标题](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303年 008_MenuTitleWithGlyphDisabled")  
+  ![禁用的具有字形的菜单标题](../../extensibility/ux-guidelines/media/0303-008-menutitlewithglyphdisabled.png "0303年 008_MenuTitleWithGlyphDisabled")  
   
- **具有字形的菜单标题**  
+  **具有字形的菜单标题**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
 #### <a name="menu"></a>菜单  
  各个菜单项由菜单文本和可选的图标、复选框或子菜单标志符号组成。 其背景和文本颜色会在鼠标悬停在上方时更改。 此颜色标记是前景/背景对。  
@@ -207,153 +207,153 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于在另一个上下文中出现的任何下拉列表。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![菜单默认值](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303年 010_MenuDefault")  
+  ![菜单默认值](../../extensibility/ux-guidelines/media/0303-010-menudefault.png "0303年 010_MenuDefault")  
   
- **菜单**  
+  **菜单**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMenuBackgroundGradientBegin`  
+  `Environment.CommandBarMenuBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- 前景（子菜单标志符号）  
+  前景（子菜单标志符号）  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- Border  
+  Border  
   
- `Environment.CommandBarMenuBorder`  
+  `Environment.CommandBarMenuBorder`  
   
- 图标通道背景  
+  图标通道背景  
   
- `Environment.CommandBarMenuIconBackground`  
+  `Environment.CommandBarMenuIconBackground`  
   
- Separator  
+  Separator  
   
- `Environment.CommandBarMenuSeparator`  
+  `Environment.CommandBarMenuSeparator`  
   
- 阴影  
+  阴影  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- ![选中的菜单](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303年 011_MenuChecked")  
+  ![选中的菜单](../../extensibility/ux-guidelines/media/0303-011-menuchecked.png "0303年 011_MenuChecked")  
   
- **已选中**  
+  **已选中**  
   
- 选中标记  
+  选中标记  
   
- `Environment.CommandBarCheckBox`  
+  `Environment.CommandBarCheckBox`  
   
- 复选标记背景  
+  复选标记背景  
   
- `Environment.CommandBarSelectedIcon`  
+  `Environment.CommandBarSelectedIcon`  
   
- ![选定的菜单](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303年 012_MenuSelected")  
+  ![选定的菜单](../../extensibility/ux-guidelines/media/0303-012-menuselected.png "0303年 012_MenuSelected")  
   
- **选择**  
+  **选择**  
   
- 图标背景  
+  图标背景  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- 图标边框  
+  图标边框  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![菜单悬停](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303年 013_MenuHover")  
+  ![菜单悬停](../../extensibility/ux-guidelines/media/0303-013-menuhover.png "0303年 013_MenuHover")  
   
- **菜单项**  
+  **菜单项**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarMenuItemMouseOver`  
+  `Environment.CommandBarMenuItemMouseOver`  
   
- 前景（子菜单标志符号）  
+  前景（子菜单标志符号）  
   
- `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
+  `Environment.CommandBarMenuMouseOverSubmenuGlyph`  
   
- ![选中的菜单悬停](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303年 014_MenuHoverChecked")  
+  ![选中的菜单悬停](../../extensibility/ux-guidelines/media/0303-014-menuhoverchecked.png "0303年 014_MenuHoverChecked")  
   
- **已选中**  
+  **已选中**  
   
- 选中标记  
+  选中标记  
   
- `Environment.CommandBarCheckBoxMouseOver`  
+  `Environment.CommandBarCheckBoxMouseOver`  
   
- 复选标记背景  
+  复选标记背景  
   
- `Environment.CommandBarHoverOverSelectedIcon`  
+  `Environment.CommandBarHoverOverSelectedIcon`  
   
- ![选定的菜单悬停](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303年 015_MenuHoverSelected")  
+  ![选定的菜单悬停](../../extensibility/ux-guidelines/media/0303-015-menuhoverselected.png "0303年 015_MenuHoverSelected")  
   
- **选择**  
+  **选择**  
   
- 图标背景  
+  图标背景  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- 图标边框  
+  图标边框  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![禁用的菜单](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303年 016_MenuDisabled")  
+  ![禁用的菜单](../../extensibility/ux-guidelines/media/0303-016-menudisabled.png "0303年 016_MenuDisabled")  
   
- Menu item  
+  Menu item  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- 前景（子菜单标志符号）  
+  前景（子菜单标志符号）  
   
- `Environment.CommandBarMenuSubmenuGlyph`  
+  `Environment.CommandBarMenuSubmenuGlyph`  
   
- ![选中的禁用的菜单](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303年 017_MenuDisabledChecked")  
+  ![选中的禁用的菜单](../../extensibility/ux-guidelines/media/0303-017-menudisabledchecked.png "0303年 017_MenuDisabledChecked")  
   
- 已选中  
+  已选中  
   
- 选中标记  
+  选中标记  
   
- `Environment.CommandBarCheckBoxDisabled`  
+  `Environment.CommandBarCheckBoxDisabled`  
   
- 复选标记背景  
+  复选标记背景  
   
- `Environment.CommandBarSelectedIconDisabled`  
+  `Environment.CommandBarSelectedIconDisabled`  
   
 ### <a name="command-bar"></a>命令栏  
  命令栏在 Visual Studio IDE 中可以出现在多个位置处，最值得注意的是命令架以及嵌入在工具或文档窗口中。  
@@ -383,33 +383,33 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于与命令栏不相似的 UI 元素。  
   
--   对于指定了其标记名称的命令栏组件之外的命令栏组件。  
+- 对于指定了其标记名称的命令栏组件之外的命令栏组件。  
   
- **默认值** （无任何其他状态）  
+  **默认值** （无任何其他状态）  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- 背景  
+  背景  
   
- `Environment.CommandBarGradientBegin`  
+  `Environment.CommandBarGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- Border  
+  Border  
   
- `Environment.CommandBarToolBarBorder`  
+  `Environment.CommandBarToolBarBorder`  
   
- 拖动句柄  
+  拖动句柄  
   
- `Environment.CommandBarDragHandle`  
+  `Environment.CommandBarDragHandle`  
   
- Separator  
+  Separator  
   
- `Environment.CommandBarToolBarSeparator`  
+  `Environment.CommandBarToolBarSeparator`  
   
- `Environment.CommandBarToolBarSeparatorHighlight`  
+  `Environment.CommandBarToolBarSeparatorHighlight`  
   
 #### <a name="command-icons"></a>命令图标  
  ![命令图标红线](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303年 021_CommandIconRedline1")  
@@ -422,139 +422,139 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于具有自己的标记名称的控件。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![命令图标默认值](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")  
+  ![命令图标默认值](../../extensibility/ux-guidelines/media/0303-023-commandicondefault.png "0303年 023_CommandIconDefault")  
   
- **默认**  
+  **默认**  
   
- 背景  
+  背景  
   
- 不适用（从命令栏背景继承）  
+  不适用（从命令栏背景继承）  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- ![命令图标默认选定](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")  
+  ![命令图标默认选定](../../extensibility/ux-guidelines/media/0303-024-commandicondefaultselected.png "0303年 024_CommandIconDefaultSelected")  
   
- **选择**  
+  **选择**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarSelected`  
+  `Environment.CommandBarSelected`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextSelected`  
+  `Environment.CommandBarTextSelected`  
   
- Border  
+  Border  
   
- `Environment.CommandBarSelectedBorder`  
+  `Environment.CommandBarSelectedBorder`  
   
- **悬停和键盘已设定焦点**  
+  **悬停和键盘已设定焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![命令图标悬停](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303年 025_CommandIconHover")  
+  ![命令图标悬停](../../extensibility/ux-guidelines/media/0303-025-commandiconhover.png "0303年 025_CommandIconHover")  
   
- **悬停时的标准**  
+  **悬停时的标准**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- Border  
+  Border  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- ![命令选择图标悬停](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303年 026_CommandIconHoverSelected")  
+  ![命令选择图标悬停](../../extensibility/ux-guidelines/media/0303-026-commandiconhoverselected.png "0303年 026_CommandIconHoverSelected")  
   
- **悬停时的选择**  
+  **悬停时的选择**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarHoverOverSelected`  
+  `Environment.CommandBarHoverOverSelected`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextHoverOverSelected`  
+  `Environment.CommandBarTextHoverOverSelected`  
   
- Border  
+  Border  
   
- `Environment.CommandBarHoverOverSelectedIconBorder`  
+  `Environment.CommandBarHoverOverSelectedIconBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![按下命令图标](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303年 027_CommandIconPressed")  
+  ![按下命令图标](../../extensibility/ux-guidelines/media/0303-027-commandiconpressed.png "0303年 027_CommandIconPressed")  
   
- **已按下的命令图标**  
+  **已按下的命令图标**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- Border  
+  Border  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![禁用命令图标](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")  
+  ![禁用命令图标](../../extensibility/ux-guidelines/media/0303-028-commandicondisabled.png "0303年 028_CommandIconDisabled")  
   
- **已禁用的命令图标**  
+  **已禁用的命令图标**  
   
- 背景  
+  背景  
   
- 不适用（从命令栏背景继承）  
+  不适用（从命令栏背景继承）  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
 ####  <a name="BKMK_CommandComboBox"></a> 组合框  
   
@@ -566,242 +566,242 @@ ms.locfileid: "49245383"
  使用...  
  -   当构建自定义组合框时。  
   
--   当创建类似于组合框的命令栏控件时。  
+- 当创建类似于组合框的命令栏控件时。  
   
- 请勿使用...  
- -   对于并非希望始终与命令栏 UI 匹配的任何内容。  
+  请勿使用...  
+  -   对于并非希望始终与命令栏 UI 匹配的任何内容。  
   
--   当你可以访问设置了样式的组合框时。  
+- 当你可以访问设置了样式的组合框时。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![组合框输入的字段](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303年 030_ComboBoxInputField")  
+  ![组合框输入的字段](../../extensibility/ux-guidelines/media/0303-030-comboboxinputfield.png "0303年 030_ComboBoxInputField")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxBackground`  
+  `Environment.ComboBoxBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxText`  
+  `Environment.ComboBoxText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxBorder`  
+  `Environment.ComboBoxBorder`  
   
- Separator  
+  Separator  
   
- 无分隔符  
+  无分隔符  
   
- ![组合框下拉&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")  
+  ![组合框下拉&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-031-comboboxdropdownbutton.png "0303年 031_ComboBoxDropdownButton")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- 不适用（继承）  
+  不适用（继承）  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ComboBoxGlyph`  
+  `Environment.ComboBoxGlyph`  
   
- ![组合框&#47;删除&#45;列表中向下](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303年 032_ComboBoxDropdownList")  
+  ![组合框&#47;删除&#45;列表中向下](../../extensibility/ux-guidelines/media/0303-032-comboboxdropdownlist.png "0303年 032_ComboBoxDropdownList")  
   
- **下拉列表**  
+  **下拉列表**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxPopupBackgroundBegin`  
+  `Environment.ComboBoxPopupBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxPopupBorder`  
+  `Environment.ComboBoxPopupBorder`  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的组合框输入的字段](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303年 033_ComboBoxInputFieldHover")  
+  ![悬停时的组合框输入的字段](../../extensibility/ux-guidelines/media/0303-033-comboboxinputfieldhover.png "0303年 033_ComboBoxInputFieldHover")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxMouseOverBackgroundBegin`  
+  `Environment.ComboBoxMouseOverBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxMouseOverText`  
+  `Environment.ComboBoxMouseOverText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxMouseOverBorder`  
+  `Environment.ComboBoxMouseOverBorder`  
   
- Separator  
+  Separator  
   
- `Environment.ComboBoxMouseOverSeparator`  
+  `Environment.ComboBoxMouseOverSeparator`  
   
- ![组合框&#47;删除&#45;向下按钮上悬停](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303年 034_ComboBoxDropdownButtonHover")  
+  ![组合框&#47;删除&#45;向下按钮上悬停](../../extensibility/ux-guidelines/media/0303-034-comboboxdropdownbuttonhover.png "0303年 034_ComboBoxDropdownButtonHover")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxButtonMouseOverBackground`  
+  `Environment.ComboBoxButtonMouseOverBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ComboBoxMouseOverGlyph`  
+  `Environment.ComboBoxMouseOverGlyph`  
   
- ![组合框&#47;删除&#45;下拉列表的悬停](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303年 035_ComboBoxDropdownListHover")  
+  ![组合框&#47;删除&#45;下拉列表的悬停](../../extensibility/ux-guidelines/media/0303-035-comboboxdropdownlisthover.png "0303年 035_ComboBoxDropdownListHover")  
   
- **下拉列表**  
+  **下拉列表**  
   
- 背景（菜单项）  
+  背景（菜单项）  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- 边框（菜单项）  
+  边框（菜单项）  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Color.category  
+  标记名称：Color.category  
   
- ![已设定焦点的组合框输入的字段](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303年 036_ComboBoxInputFieldFocused")  
+  ![已设定焦点的组合框输入的字段](../../extensibility/ux-guidelines/media/0303-036-comboboxinputfieldfocused.png "0303年 036_ComboBoxInputFieldFocused")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxFocusedBackground`  
+  `Environment.ComboBoxFocusedBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxFocusedText`  
+  `Environment.ComboBoxFocusedText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxFocusedBorder`  
+  `Environment.ComboBoxFocusedBorder`  
   
- Separator  
+  Separator  
   
- `Environment.ComboBoxFocusedButtonSeparator`  
+  `Environment.ComboBoxFocusedButtonSeparator`  
   
- ![组合框&#47;删除&#45;向下按钮已设定焦点](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303年 037_ComboBoxDropdownButtonFocused")  
+  ![组合框&#47;删除&#45;向下按钮已设定焦点](../../extensibility/ux-guidelines/media/0303-037-comboboxdropdownbuttonfocused.png "0303年 037_ComboBoxDropdownButtonFocused")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxFocusedButtonBackground`  
+  `Environment.ComboBoxFocusedButtonBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ComboBoxFocusedGlyph`  
+  `Environment.ComboBoxFocusedGlyph`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Color.category  
+  标记名称：Color.category  
   
- ![组合框输入的字段按下](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303年 038_ComboBoxInputFieldPressed")  
+  ![组合框输入的字段按下](../../extensibility/ux-guidelines/media/0303-038-comboboxinputfieldpressed.png "0303年 038_ComboBoxInputFieldPressed")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxMouseDownBackground`  
+  `Environment.ComboBoxMouseDownBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxMouseDownText`  
+  `Environment.ComboBoxMouseDownText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxMouseDownBorder`  
+  `Environment.ComboBoxMouseDownBorder`  
   
- Separator  
+  Separator  
   
- `Environment.ComboBoxMouseDownSeparator`  
+  `Environment.ComboBoxMouseDownSeparator`  
   
- ![组合框&#47;删除&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303年 039_ComboBoxDropdownButtonPressed")  
+  ![组合框&#47;删除&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-039-comboboxdropdownbuttonpressed.png "0303年 039_ComboBoxDropdownButtonPressed")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxButtonMouseDownBackground`  
+  `Environment.ComboBoxButtonMouseDownBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ComboBoxMouseDownGlyph`  
+  `Environment.ComboBoxMouseDownGlyph`  
   
- 已禁用  
+  已禁用  
   
- ![组合框输入的字段已禁用](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303年 041_ComboBoxInputFieldDisabled")  
+  ![组合框输入的字段已禁用](../../extensibility/ux-guidelines/media/0303-041-comboboxinputfielddisabled.png "0303年 041_ComboBoxInputFieldDisabled")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `Environment.ComboBoxDisabledBackground`  
+  `Environment.ComboBoxDisabledBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxDisabledText`  
+  `Environment.ComboBoxDisabledText`  
   
- Border  
+  Border  
   
- `Environment.ComboBoxDisabledBorder`  
+  `Environment.ComboBoxDisabledBorder`  
   
- Separator  
+  Separator  
   
- 无分隔符  
+  无分隔符  
   
- ![组合框&#47;删除&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")  
+  ![组合框&#47;删除&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-040-comboboxdropdownbuttondisabled.png "0303年 040_ComboBoxDropdownButtonDisabled")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ComboBoxDisabledGlyph`  
+  `Environment.ComboBoxDisabledGlyph`  
   
 ####  <a name="BKMK_CommandDropDown"></a> 下拉列表  
   
@@ -816,203 +816,203 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于不类似于下拉列表的任何内容。  
   
--   对于组合框或拆分按钮。  
+- 对于组合框或拆分按钮。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;下选择字段](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303年 043_DropdownSelectionField")  
+  ![删除&#45;下选择字段](../../extensibility/ux-guidelines/media/0303-043-dropdownselectionfield.png "0303年 043_DropdownSelectionField")  
   
- **选择字段**  
+  **选择字段**  
   
- 背景  
+  背景  
   
- `Environment.DropDownBackground`  
+  `Environment.DropDownBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `DropDownText`  
+  `DropDownText`  
   
- Border  
+  Border  
   
- `DropDownBorder`  
+  `DropDownBorder`  
   
- Separator  
+  Separator  
   
- 无分隔符  
+  无分隔符  
   
- ![删除&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303年 044_DropdownButton")  
+  ![删除&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-044-dropdownbutton.png "0303年 044_DropdownButton")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DropDownGlyph`  
+  `Environment.DropDownGlyph`  
   
- ![删除&#45;列表中向下](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303年 045_DropdownList")  
+  ![删除&#45;列表中向下](../../extensibility/ux-guidelines/media/0303-045-dropdownlist.png "0303年 045_DropdownList")  
   
- **下拉列表**  
+  **下拉列表**  
   
- 背景  
+  背景  
   
- `Environment.DropDownPopupBackgroundBegin`  
+  `Environment.DropDownPopupBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxItemText`  
+  `Environment.ComboBoxItemText`  
   
- Border  
+  Border  
   
- `Environment.DropDownPopupBorder`  
+  `Environment.DropDownPopupBorder`  
   
- 阴影  
+  阴影  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;下选择字段的悬停](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303年 046_DropdownSelectionFieldHover")  
+  ![删除&#45;下选择字段的悬停](../../extensibility/ux-guidelines/media/0303-046-dropdownselectionfieldhover.png "0303年 046_DropdownSelectionFieldHover")  
   
- **选择字段**  
+  **选择字段**  
   
- 背景  
+  背景  
   
- `Environment.DropDownMouseOverBackgroundBegin`  
+  `Environment.DropDownMouseOverBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.DropDownMouseOverText`  
+  `Environment.DropDownMouseOverText`  
   
- Border  
+  Border  
   
- `Environment.DropDownMouseOverBorder`  
+  `Environment.DropDownMouseOverBorder`  
   
- Separator  
+  Separator  
   
- `Environment.DropDownButtonMouseOverSeparator`  
+  `Environment.DropDownButtonMouseOverSeparator`  
   
- ![删除&#45;向下按钮上悬停](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303年 047_DropdownButtonHover")  
+  ![删除&#45;向下按钮上悬停](../../extensibility/ux-guidelines/media/0303-047-dropdownbuttonhover.png "0303年 047_DropdownButtonHover")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `Environment.DropDownButtonMouseOverBackground`  
+  `Environment.DropDownButtonMouseOverBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DropDownMouseOverGlyph`  
+  `Environment.DropDownMouseOverGlyph`  
   
- ![删除&#45;悬停时的列表中向下](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303年 048_DropdownListHover")  
+  ![删除&#45;悬停时的列表中向下](../../extensibility/ux-guidelines/media/0303-048-dropdownlisthover.png "0303年 048_DropdownListHover")  
   
- **下拉列表**  
+  **下拉列表**  
   
- 背景（菜单项）  
+  背景（菜单项）  
   
- `Environment.ComboBoxItemMouseOverBackground`  
+  `Environment.ComboBoxItemMouseOverBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxItemMouseOverText`  
+  `Environment.ComboBoxItemMouseOverText`  
   
- 边框（菜单项）  
+  边框（菜单项）  
   
- `Environment.ComboBoxItemMouseOverBorder`  
+  `Environment.ComboBoxItemMouseOverBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;下按下的选择字段](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")  
+  ![删除&#45;下按下的选择字段](../../extensibility/ux-guidelines/media/0303-049-dropdownselectionfieldpressed.png "0303年 049_DropdownSelectionFieldPressed")  
   
- **选择字段**  
+  **选择字段**  
   
- 背景  
+  背景  
   
- `Environment.DropDownMouseDownBackground`  
+  `Environment.DropDownMouseDownBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.DropDownMouseDownText`  
+  `Environment.DropDownMouseDownText`  
   
- Border  
+  Border  
   
- `Environment.DropDownMouseDownBorder`  
+  `Environment.DropDownMouseDownBorder`  
   
- Separator  
+  Separator  
   
- `Environment.DropDownButtonMouseDownSeparator`  
+  `Environment.DropDownButtonMouseDownSeparator`  
   
- ![删除&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303年 050_DropdownButtonPressed")  
+  ![删除&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-050-dropdownbuttonpressed.png "0303年 050_DropdownButtonPressed")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `Environment.DropDownButtonMouseDownBackground`  
+  `Environment.DropDownButtonMouseDownBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DropDownMouseDownGlyph`  
+  `Environment.DropDownMouseDownGlyph`  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;下选择字段已禁用](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")  
+  ![删除&#45;下选择字段已禁用](../../extensibility/ux-guidelines/media/0303-051-dropdownselectionfielddisabled.png "0303年 051_DropdownSelectionFieldDisabled")  
   
- 背景  
+  背景  
   
- `Environment.DropDownDisabledBackground`  
+  `Environment.DropDownDisabledBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.DropDownDisabledText`  
+  `Environment.DropDownDisabledText`  
   
- Border  
+  Border  
   
- `Environment.DropDownDisabledBorder`  
+  `Environment.DropDownDisabledBorder`  
   
- Separator  
+  Separator  
   
- 无分隔符  
+  无分隔符  
   
- ![删除&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")  
+  ![删除&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-052-dropdownbuttondisabled.png "0303年 052_DropdownButtonDisabled")  
   
- 背景  
+  背景  
   
- 不可用  
+  不可用  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DropDownDisabledGlyph`  
+  `Environment.DropDownDisabledGlyph`  
   
 #### <a name="split-button"></a>“拆分”按钮  
  拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的实现。  
@@ -1025,139 +1025,139 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于其他类型的按钮。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![拆分按钮](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")  
+  ![拆分按钮](../../extensibility/ux-guidelines/media/0303-054-splitbutton.png "0303年 054_SplitButton")  
   
- **拆分按钮 （默认值）**  
+  **拆分按钮 （默认值）**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextActive`  
+  `Environment.CommandBarTextActive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarSplitButtonGlyph`  
+  `Environment.CommandBarSplitButtonGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- Separator  
+  Separator  
   
- 不可用  
+  不可用  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![拆分按钮上悬停](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303年 055_SplitButtonHover")  
+  ![拆分按钮上悬停](../../extensibility/ux-guidelines/media/0303-055-splitbuttonhover.png "0303年 055_SplitButtonHover")  
   
- **拆分按钮 （悬停）**  
+  **拆分按钮 （悬停）**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMouseOverBackgroundBegin`  
+  `Environment.CommandBarMouseOverBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextHover`  
+  `Environment.CommandBarTextHover`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarSplitButtonMouseOverGlyph`  
+  `Environment.CommandBarSplitButtonMouseOverGlyph`  
   
- Border  
+  Border  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Separator  
+  Separator  
   
- `Environment.CommandBarSplitButtonSeparator`  
+  `Environment.CommandBarSplitButtonSeparator`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![拆分按钮按下](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")  
+  ![拆分按钮按下](../../extensibility/ux-guidelines/media/0303-056-splitbuttonpressed.png "0303年 056_SplitButtonPressed")  
   
- **拆分按钮 （按下）**  
+  **拆分按钮 （按下）**  
   
- 背景  
+  背景  
   
- `Environment.CommandBarMouseDownBackgroundBegin`  
+  `Environment.CommandBarMouseDownBackgroundBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.CommandBarTextMouseDown`  
+  `Environment.CommandBarTextMouseDown`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarSplitButtonMouseDownGlyph`  
+  `Environment.CommandBarSplitButtonMouseDownGlyph`  
   
- Border  
+  Border  
   
- `Environment.CommandBarBorder`  
+  `Environment.CommandBarBorder`  
   
- Separator  
+  Separator  
   
- 不可用  
+  不可用  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![拆分按钮禁用](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")  
+  ![拆分按钮禁用](../../extensibility/ux-guidelines/media/0303-057-splitbuttondisabled.png "0303年 057_SplitButtonDisabled")  
   
- **拆分按钮 （禁用）**  
+  **拆分按钮 （禁用）**  
   
- 背景  
+  背景  
   
- 不可用  
+  不可用  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.ComboBoxItemTextInactive`  
+  `Environment.ComboBoxItemTextInactive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.CommandBarTextInactive`  
+  `Environment.CommandBarTextInactive`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- Separator  
+  Separator  
   
- 不可用  
+  不可用  
   
 #### <a name="more-options-and-overflow-buttons"></a>“更多选项”和“溢出”按钮  
  通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。  
@@ -1420,19 +1420,19 @@ ms.locfileid: "49245383"
 #### <a name="open-document-tabs"></a>打开文档选项卡  
  每个打开的文档都在文档选项卡通道中具有显示其名称的选项卡。 文档可以处于已选定状态，或在后台打开，其选项卡会反映这些状态：  
   
--   已选定选项卡表示当前显示在文档井中的文档。 已选定选项卡具有沿文档井上边缘扩展的文档边框。  
+- 已选定选项卡表示当前显示在文档井中的文档。 已选定选项卡具有沿文档井上边缘扩展的文档边框。  
   
--   背景选项卡为不是当前已选定选项卡的任何文档选项卡。单击之后，它们会成为已选定选项卡，并从这些标记名称获取所有背景、边框和文本颜色。  
+- 背景选项卡为不是当前已选定选项卡的任何文档选项卡。单击之后，它们会成为已选定选项卡，并从这些标记名称获取所有背景、边框和文本颜色。  
   
- ![打开的文档选项卡红线](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303年 073_OpenDocumentTabRedline")  
+  ![打开的文档选项卡红线](../../extensibility/ux-guidelines/media/0303-073-opendocumenttabredline.png "0303年 073_OpenDocumentTabRedline")  
   
- 使用...  
- 当创建自定义文档选项卡时。  
+  使用...  
+  当创建自定义文档选项卡时。  
   
- 请勿使用...  
- -   对于临时（预览）选项卡。  
+  请勿使用...  
+  -   对于临时（预览）选项卡。  
   
--   对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
+- 对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
   
 #### <a name="selected-tab"></a>已选定选项卡  
  **已设定焦点**  
@@ -1553,117 +1553,117 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于不是临时（预览）的任何种类的文档或选项卡。  
   
--   对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
+- 对于不希望在 shell 具有主题更新时自动更改的任何 UI。  
   
- **已选定的预览选项卡： 已设定焦点**  
+  **已选定的预览选项卡： 已设定焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![已设定焦点的预览选项卡](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303年 079_PreviewTabFocused")  
+  ![已设定焦点的预览选项卡](../../extensibility/ux-guidelines/media/0303-079-previewtabfocused.png "0303年 079_PreviewTabFocused")  
   
- **已设定焦点的预览选项卡**  
+  **已设定焦点的预览选项卡**  
   
- 背景  
+  背景  
   
- `Environment.FileTabProvisionalSelectedActive`  
+  `Environment.FileTabProvisionalSelectedActive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.FileTabProvisionalSelectedActiveForeground`  
+  `Environment.FileTabProvisionalSelectedActiveForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- 设置为与背景相同的颜色。  
+  设置为与背景相同的颜色。  
   
- 文档边框  
+  文档边框  
   
- `Environment.FileTabProvisionalSelectedActiveBorder`  
+  `Environment.FileTabProvisionalSelectedActiveBorder`  
   
- **已选定的预览选项卡： 失去焦点**  
+  **已选定的预览选项卡： 失去焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![失去焦点的预览选项卡](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303年 080_PreviewTabUnfocused")  
+  ![失去焦点的预览选项卡](../../extensibility/ux-guidelines/media/0303-080-previewtabunfocused.png "0303年 080_PreviewTabUnfocused")  
   
- **失去焦点的预览选项卡**  
+  **失去焦点的预览选项卡**  
   
- 背景  
+  背景  
   
- `Environment.FileTabProvisionalSelectedInactive`  
+  `Environment.FileTabProvisionalSelectedInactive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.FileTabProvisionalSelectedInactiveForeground`  
+  `Environment.FileTabProvisionalSelectedInactiveForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- 文档边框  
+  文档边框  
   
- `Environment.FileTabProvisionalSelectedInactiveBorder`  
+  `Environment.FileTabProvisionalSelectedInactiveBorder`  
   
- **背景预览选项卡： 默认**  
+  **背景预览选项卡： 默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![预览背景选项卡](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303年 081_PreviewBackgroundTab")  
+  ![预览背景选项卡](../../extensibility/ux-guidelines/media/0303-081-previewbackgroundtab.png "0303年 081_PreviewBackgroundTab")  
   
- **预览选项卡背景选项卡**  
+  **预览选项卡背景选项卡**  
   
- 背景  
+  背景  
   
- `Environment.FileTabProvisionalInactive`  
+  `Environment.FileTabProvisionalInactive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.FileTabProvisionalInactiveForeground`  
+  `Environment.FileTabProvisionalInactiveForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalInactiveBorder`  
+  `Environment.FileTabProvisionalInactiveBorder`  
   
- 设置为与背景相同的颜色。  
+  设置为与背景相同的颜色。  
   
- **背景预览选项卡： 将鼠标悬停在**  
+  **背景预览选项卡： 将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的预览背景选项卡](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303年 082_PreviewBackgroundTabHover")  
+  ![悬停时的预览背景选项卡](../../extensibility/ux-guidelines/media/0303-082-previewbackgroundtabhover.png "0303年 082_PreviewBackgroundTabHover")  
   
- **悬停时的预览选项卡的背景选项卡**  
+  **悬停时的预览选项卡的背景选项卡**  
   
- 背景  
+  背景  
   
- `Environment.FileTabProvisionalHover`  
+  `Environment.FileTabProvisionalHover`  
   
- 前景（文本）  
+  前景（文本）  
   
- `Environment.FileTabProvisionalHoverForeground`  
+  `Environment.FileTabProvisionalHoverForeground`  
   
- Border  
+  Border  
   
- `Environment.FileTabProvisionalHoverBorder`  
+  `Environment.FileTabProvisionalHoverBorder`  
   
- 设置为与背景相同的颜色。  
+  设置为与背景相同的颜色。  
   
 #### <a name="document-overflow-button"></a>文档溢出按钮  
  如果有一个或多个文档打开，则无论当前配置中是否有垂直空间可容纳所有文档选项卡，都会提供文档溢出按钮。 通过 **CommandBarMenu** 颜色（请参见 [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)）控制的文档溢出下拉菜单会显示所有打开的文档（可见或隐藏）的列表，溢出标志符号会根据是否所有打开的文档都显示在选项卡通道中而更改。  
@@ -1676,79 +1676,79 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于不类似于溢出按钮的 UI。  
   
--   对于命令栏溢出按钮。  
+- 对于命令栏溢出按钮。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303年 084_Overflow")  
+  ![Overflow](../../extensibility/ux-guidelines/media/0303-084-overflow.png "0303年 084_Overflow")  
   
- **文档溢出按钮**  
+  **文档溢出按钮**  
   
- 背景  
+  背景  
   
- `Environment.DocWellOverflowButtonBackground`  
+  `Environment.DocWellOverflowButtonBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DocWellOverflowButtonGlyph`  
+  `Environment.DocWellOverflowButtonGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的溢出](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303年 085_OverflowHover")  
+  ![悬停时的溢出](../../extensibility/ux-guidelines/media/0303-085-overflowhover.png "0303年 085_OverflowHover")  
   
- **悬停时的文档溢出按钮**  
+  **悬停时的文档溢出按钮**  
   
- 背景  
+  背景  
   
- `Environment.DocWellOverflowButtonMouseOverBackground`  
+  `Environment.DocWellOverflowButtonMouseOverBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DocWellOverflowButtonMouseOverGlyph`  
+  `Environment.DocWellOverflowButtonMouseOverGlyph`  
   
- Border  
+  Border  
   
- `Environment.DocWellOverflowButtonMouseOverBorder`  
+  `Environment.DocWellOverflowButtonMouseOverBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![按下的溢出](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303年 086_OverflowPressed")  
+  ![按下的溢出](../../extensibility/ux-guidelines/media/0303-086-overflowpressed.png "0303年 086_OverflowPressed")  
   
- **按下文档溢出按钮**  
+  **按下文档溢出按钮**  
   
- 背景  
+  背景  
   
- `Environment.DocWellOverflowButtonMouseDownBackground`  
+  `Environment.DocWellOverflowButtonMouseDownBackground`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.DocWellOverflowButtonMouseDownGlyph`  
+  `Environment.DocWellOverflowButtonMouseDownGlyph`  
   
- Border  
+  Border  
   
- `Environment.DocWellOverflowButtonMouseDownBorder`  
+  `Environment.DocWellOverflowButtonMouseDownBorder`  
   
 ## <a name="tool-windows"></a>工具窗口  
  无需复制工具窗口，因为它们由 Visual Studio 环境提供。 但是，你可能会决定要利用工具窗口中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。  
@@ -1908,127 +1908,127 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于在其他位置出现的按钮。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![标题栏按钮已设定焦点](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")  
+  ![标题栏按钮已设定焦点](../../extensibility/ux-guidelines/media/0303-096-titlebarbuttonfocused.png "0303年 096_TitleBarButtonFocused")  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 背景  
+  背景  
   
- 不可用  
+  不可用  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonActiveGlyph`  
+  `Environment.ToolWindowButtonActiveGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- ![标题栏失去焦点的按钮](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")  
+  ![标题栏失去焦点的按钮](../../extensibility/ux-guidelines/media/0303-097-titlebarbuttonunfocused.png "0303年 097_TitleBarButtonUnfocused")  
   
- **失去焦点**  
+  **失去焦点**  
   
- 背景  
+  背景  
   
- 不可用  
+  不可用  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonInactiveGlyph`  
+  `Environment.ToolWindowButtonInactiveGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的设定焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303年 098_TitleBarButtonFocusedHover")  
+  ![悬停时的设定焦点的标题栏按钮](../../extensibility/ux-guidelines/media/0303-098-titlebarbuttonfocusedhover.png "0303年 098_TitleBarButtonFocusedHover")  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 背景  
+  背景  
   
- `Environment.ToolWindowButtonHoverActive`  
+  `Environment.ToolWindowButtonHoverActive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonHoverActiveGlyph`  
+  `Environment.ToolWindowButtonHoverActiveGlyph`  
   
- Border  
+  Border  
   
- `Environment.ToolWindowButtonHoverActiveBorder`  
+  `Environment.ToolWindowButtonHoverActiveBorder`  
   
- ![标题栏按钮悬停时的失去焦点](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303年 099_TitleBarButtonUnfocusedHover")  
+  ![标题栏按钮悬停时的失去焦点](../../extensibility/ux-guidelines/media/0303-099-titlebarbuttonunfocusedhover.png "0303年 099_TitleBarButtonUnfocusedHover")  
   
- **失去焦点**  
+  **失去焦点**  
   
- 背景  
+  背景  
   
- `Environment.ToolWindowButtonHoverInactive`  
+  `Environment.ToolWindowButtonHoverInactive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonHoverInactiveGlyph`  
+  `Environment.ToolWindowButtonHoverInactiveGlyph`  
   
- Border  
+  Border  
   
- `Environment.ToolWindowButtonHoverInactiveBorder`  
+  `Environment.ToolWindowButtonHoverInactiveBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![标题栏按钮已设定焦点，并按下](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303年 100_TitleBarButtonFocusedPressed")  
+  ![标题栏按钮已设定焦点，并按下](../../extensibility/ux-guidelines/media/0303-100-titlebarbuttonfocusedpressed.png "0303年 100_TitleBarButtonFocusedPressed")  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 背景  
+  背景  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonDownActiveGlyph`  
+  `Environment.ToolWindowButtonDownActiveGlyph`  
   
- Border  
+  Border  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
- ![失去焦点或按下状态的标题栏按钮](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303年 101_TitleBarButtonUnfocusedPressed")  
+  ![失去焦点或按下状态的标题栏按钮](../../extensibility/ux-guidelines/media/0303-101-titlebarbuttonunfocusedpressed.png "0303年 101_TitleBarButtonUnfocusedPressed")  
   
- **失去焦点**  
+  **失去焦点**  
   
- 背景  
+  背景  
   
- `Environment.ToolWindowButtonDown`  
+  `Environment.ToolWindowButtonDown`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `Environment.ToolWindowButtonDownInactiveGlyph`  
+  `Environment.ToolWindowButtonDownInactiveGlyph`  
   
- Border  
+  Border  
   
- `Environment.ToolWindowButtonDownBorder`  
+  `Environment.ToolWindowButtonDownBorder`  
   
 ### <a name="tool-window-tabs"></a>工具窗口选项卡  
  ![工具窗口选项卡红线](../../extensibility/ux-guidelines/media/0303-102-toolwindowtabredline.png "0303年 102_ToolWindowTabRedline")  
@@ -2218,307 +2218,307 @@ ms.locfileid: "49245383"
   
  搜索框可以具有多种状态之一，其中一些状态互相排斥：  
   
--   “已设定焦点”或“失去焦点”是指光标是否处于文本框中。  
+- “已设定焦点”或“失去焦点”是指光标是否处于文本框中。  
   
--   “活动”或“非活动”是指用户是否在文本框中输入了搜索查询。  
+- “活动”或“非活动”是指用户是否在文本框中输入了搜索查询。  
   
--   “悬停”表示用户将鼠标指针置于搜索框上方（此状态优先于所有其他状态）。  
+- “悬停”表示用户将鼠标指针置于搜索框上方（此状态优先于所有其他状态）。  
   
--   “已禁用”表示为当前上下文关闭了搜索功能。  
+- “已禁用”表示为当前上下文关闭了搜索功能。  
   
- ![搜索框红线](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303年 110_SearchBoxRedline")  
+  ![搜索框红线](../../extensibility/ux-guidelines/media/0303-110-searchboxredline.png "0303年 110_SearchBoxRedline")  
   
- 使用...  
- 当在设计自定义搜索框时。  
+  使用...  
+  当在设计自定义搜索框时。  
   
- 请勿使用...  
- -   对于不是搜索框的任何内容。  
+  请勿使用...  
+  -   对于不是搜索框的任何内容。  
   
--   对于并非希望始终与搜索框 UI 匹配的任何内容。  
+- 对于并非希望始终与搜索框 UI 匹配的任何内容。  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![已设定焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303年 111_SearchInputFieldFocused")  
+  ![已设定焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-111-searchinputfieldfocused.png "0303年 111_SearchInputFieldFocused")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Border  
+  Border  
   
- `SearchControl.FocusedBorder`  
+  `SearchControl.FocusedBorder`  
   
- Separator  
+  Separator  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- ![已设定焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")  
+  ![已设定焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-112-searchactionbuttonfocused.png "0303年 112_SearchActionButtonFocused")  
   
- **操作按钮**  
+  **操作按钮**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（搜索标志符号）  
+  前景（搜索标志符号）  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- 前景（停止标志符号）  
+  前景（停止标志符号）  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- 前景（清除标志符号）  
+  前景（清除标志符号）  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- ![搜索下拉&#45;下已设定焦点的按钮](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")  
+  ![搜索下拉&#45;下已设定焦点的按钮](../../extensibility/ux-guidelines/media/0303-113-searchdropdownbuttonfocused.png "0303年 113_SearchDropdownButtonFocused")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `SearchControl.FocusedDropDownButton`  
+  `SearchControl.FocusedDropDownButton`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.FocusedDropDownButtonGlyph`  
+  `SearchControl.FocusedDropDownButtonGlyph`  
   
- Border  
+  Border  
   
- `SearchControl.FocusedDropDownButtonBorder`  
+  `SearchControl.FocusedDropDownButtonBorder`  
   
- **失去焦点**  
+  **失去焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![失去焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303年 114_SearchInputFieldUnfocused")  
+  ![失去焦点的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114-searchinputfieldunfocused.png "0303年 114_SearchInputFieldUnfocused")  
   
- **活动输入的字段**  
+  **活动输入的字段**  
   
- 背景  
+  背景  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.SearchActiveBackground`  
+  `SearchControl.SearchActiveBackground`  
   
- Border  
+  Border  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Separator  
+  Separator  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![失去焦点并处于非活动状态的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")  
+  ![失去焦点并处于非活动状态的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-114-1-searchinputfieldunfocusedinactive.png "0303年 114 1_SearchInputFieldUnfocusedInactive")  
   
- **非活动的输入的字段**  
+  **非活动的输入的字段**  
   
- 背景  
+  背景  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.Unfocused`  
+  `SearchControl.Unfocused`  
   
- Border  
+  Border  
   
- `SearchControl.UnfocusedBorder`  
+  `SearchControl.UnfocusedBorder`  
   
- Separator  
+  Separator  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![失去焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")  
+  ![失去焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-115-searchactionbuttonunfocused.png "0303年 115_SearchActionButtonUnfocused")  
   
- **操作按钮**  
+  **操作按钮**  
   
- 背景  
+  背景  
   
- 不可用  
+  不可用  
   
- 前景（搜索标志符号）  
+  前景（搜索标志符号）  
   
- `SearchControl.SearchGlyph`  
+  `SearchControl.SearchGlyph`  
   
- 前景（停止标志符号）  
+  前景（停止标志符号）  
   
- `SearchControl.StopGlyph`  
+  `SearchControl.StopGlyph`  
   
- 前景（清除标志符号）  
+  前景（清除标志符号）  
   
- `SearchControl.ClearGlyph`  
+  `SearchControl.ClearGlyph`  
   
- Border  
+  Border  
   
- 不可用  
+  不可用  
   
- ![搜索下拉&#45;向下按钮失去焦点](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")  
+  ![搜索下拉&#45;向下按钮失去焦点](../../extensibility/ux-guidelines/media/0303-116-searchdropdownbuttonunfocused.png "0303年 116_SearchDropdownButtonUnfocused")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `SearchControl.UnfocusedDropDownButton`  
+  `SearchControl.UnfocusedDropDownButton`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.UnfocusedDropDownButtonGlyph`  
+  `SearchControl.UnfocusedDropDownButtonGlyph`  
   
- Border  
+  Border  
   
- `SearchControl.UnfocusedDropDownButtonBorder`  
+  `SearchControl.UnfocusedDropDownButtonBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![搜索操作按钮按下](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303年 116 1_SearchActionButtonPressed")  
+  ![搜索操作按钮按下](../../extensibility/ux-guidelines/media/0303-116-1-searchactionbuttonpressed.png "0303年 116 1_SearchActionButtonPressed")  
   
- **操作按钮**  
+  **操作按钮**  
   
- 背景  
+  背景  
   
- `SearchControl.ActionButtonMouseDown`  
+  `SearchControl.ActionButtonMouseDown`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.ActionButtonMouseDownGlyph`  
+  `SearchControl.ActionButtonMouseDownGlyph`  
   
- Border  
+  Border  
   
- `SearchControl.ActionButtonMouseDownBorder`  
+  `SearchControl.ActionButtonMouseDownBorder`  
   
- ![搜索下拉&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303年 116 2_SearchDropdownButtonPressed")  
+  ![搜索下拉&#45;向下按钮按下](../../extensibility/ux-guidelines/media/0303-116-2-searchdropdownbuttonpressed.png "0303年 116 2_SearchDropdownButtonPressed")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- `SearchControl.MouseDownDropDownButton`  
+  `SearchControl.MouseDownDropDownButton`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.MouseDownDropDownButtonGlyph`  
+  `SearchControl.MouseDownDropDownButtonGlyph`  
   
- Border  
+  Border  
   
- `SearchControl.MouseDownDropDownButtonBorder`  
+  `SearchControl.MouseDownDropDownButtonBorder`  
   
- **突出显示 （纯文本）**  
+  **突出显示 （纯文本）**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![搜索输入的字段突出显示](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303年 120_SearchInputFieldHighlight")  
+  ![搜索输入的字段突出显示](../../extensibility/ux-guidelines/media/0303-120-searchinputfieldhighlight.png "0303年 120_SearchInputFieldHighlight")  
   
- **突出显示文本的输入的字段**  
+  **突出显示文本的输入的字段**  
   
- 背景  
+  背景  
   
- `SearchControl.Selection`  
+  `SearchControl.Selection`  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.FocusedBackground`  
+  `SearchControl.FocusedBackground`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- Separator  
+  Separator  
   
- `SearchControl.FocusedDropDownSeparator`  
+  `SearchControl.FocusedDropDownSeparator`  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![禁用的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303年 121_SearchInputFieldDisabled")  
+  ![禁用的搜索输入的字段](../../extensibility/ux-guidelines/media/0303-121-searchinputfielddisabled.png "0303年 121_SearchInputFieldDisabled")  
   
- **输入的字段**  
+  **输入的字段**  
   
- 背景  
+  背景  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.Disabled`  
+  `SearchControl.Disabled`  
   
- Border  
+  Border  
   
- `SearchControl.DisabledBorder`  
+  `SearchControl.DisabledBorder`  
   
- Separator  
+  Separator  
   
- `SearchControl.DropDownSeparator`  
+  `SearchControl.DropDownSeparator`  
   
- ![禁用的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303年 122_SearchActionButtonDisabled")  
+  ![禁用的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-122-searchactionbuttondisabled.png "0303年 122_SearchActionButtonDisabled")  
   
- **操作按钮**  
+  **操作按钮**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.ActionButtonDisabledGlyph`  
+  `SearchControl.ActionButtonDisabledGlyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- ![搜索下拉&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303年 123_SearchDropdownButtonDisabled")  
+  ![搜索下拉&#45;向下按钮禁用](../../extensibility/ux-guidelines/media/0303-123-searchdropdownbuttondisabled.png "0303年 123_SearchDropdownButtonDisabled")  
   
- **下拉按钮**  
+  **下拉按钮**  
   
- 背景  
+  背景  
   
- 无  
+  无  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `SearchControl.DisabledDownButtonGlyph`  
+  `SearchControl.DisabledDownButtonGlyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
 #### <a name="search-drop-down-lists"></a>搜索下拉列表  
  搜索框下拉菜单可能比 Visual Studio 中的其他下拉菜单稍微复杂一些。 “建议的搜索”和“搜索选项”部分可以在菜单中单独或一起出现，各自分别进行着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。  
@@ -2528,176 +2528,176 @@ ms.locfileid: "49245383"
  使用...  
  -   当创建自定义搜索下拉列表时。  
   
--   正确列表组件的正确标记名称。  
+- 正确列表组件的正确标记名称。  
   
- 请勿使用...  
- -   对于在其他上下文中出现的下拉列表。  
+  请勿使用...  
+  -   对于在其他上下文中出现的下拉列表。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认 （无任何其他状态）**  
+  **默认 （无任何其他状态）**  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- Border  
+  Border  
   
- `SearchControl.PopupBorder`  
+  `SearchControl.PopupBorder`  
   
- Separator  
+  Separator  
   
- `SearchControl.PopupSectionHeaderSeparator`  
+  `SearchControl.PopupSectionHeaderSeparator`  
   
- 阴影  
+  阴影  
   
- `Environment.DropShadowBackground`  
+  `Environment.DropShadowBackground`  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![建议的搜索](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303年 125_SearchSuggested")  
+  ![建议的搜索](../../extensibility/ux-guidelines/media/0303-125-searchsuggested.png "0303年 125_SearchSuggested")  
   
- **建议的搜索**  
+  **建议的搜索**  
   
- 背景  
+  背景  
   
- `SearchControl.PopupItemsListBackgroundGradientBegin`  
+  `SearchControl.PopupItemsListBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.PopupItemText`  
+  `SearchControl.PopupItemText`  
   
- ![搜索复选框](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303年 126_SearchCheckbox")  
+  ![搜索复选框](../../extensibility/ux-guidelines/media/0303-126-searchcheckbox.png "0303年 126_SearchCheckbox")  
   
- **搜索选项 （复选框）**  
+  **搜索选项 （复选框）**  
   
- ![搜索选项](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303年 127_SearchOptions")  
+  ![搜索选项](../../extensibility/ux-guidelines/media/0303-127-searchoptions.png "0303年 127_SearchOptions")  
   
- **搜索选项 （链接）**  
+  **搜索选项 （链接）**  
   
- 背景  
+  背景  
   
- `SearchControl.PopupSectionBackgroundGradientBegin`  
+  `SearchControl.PopupSectionBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（复选框文本）  
+  前景（复选框文本）  
   
- `SearchControl.PopupCheckboxText`  
+  `SearchControl.PopupCheckboxText`  
   
- 前景（链接文本）  
+  前景（链接文本）  
   
- `SearchControl.PopupButtonText`  
+  `SearchControl.PopupButtonText`  
   
- 标题背景  
+  标题背景  
   
- `SearchControl.PopupSectionHeaderGradientBegin`  
+  `SearchControl.PopupSectionHeaderGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（标题文本）  
+  前景（标题文本）  
   
- `SearchControl.PopupSectionHeaderText`  
+  `SearchControl.PopupSectionHeaderText`  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![悬停时的建议的搜索](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303年 128_SearchSuggestedHover")  
+  ![悬停时的建议的搜索](../../extensibility/ux-guidelines/media/0303-128-searchsuggestedhover.png "0303年 128_SearchSuggestedHover")  
   
- **建议的搜索**  
+  **建议的搜索**  
   
- 背景  
+  背景  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（文本）  
+  前景（文本）  
   
- `SearchControl.PopupMouseOverItemText`  
+  `SearchControl.PopupMouseOverItemText`  
   
- Border  
+  Border  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- ![悬停时的搜索复选框](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303年 129_SearchCheckboxHover")  
+  ![悬停时的搜索复选框](../../extensibility/ux-guidelines/media/0303-129-searchcheckboxhover.png "0303年 129_SearchCheckboxHover")  
   
- **建议的搜索 （复选框）**  
+  **建议的搜索 （复选框）**  
   
- ![搜索选项的悬停](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303年 130_SearchOptionsHover")  
+  ![搜索选项的悬停](../../extensibility/ux-guidelines/media/0303-130-searchoptionshover.png "0303年 130_SearchOptionsHover")  
   
- **搜索选项**  
+  **搜索选项**  
   
- 背景  
+  背景  
   
- `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseOverBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（复选框文本）  
+  前景（复选框文本）  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- 前景（链接文本）  
+  前景（链接文本）  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
- Border  
+  Border  
   
- `SearchControl.PopupControlMouseOverBorder`  
+  `SearchControl.PopupControlMouseOverBorder`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![按下的搜索建议](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303年 131_SearchSuggestedPressed")  
+  ![按下的搜索建议](../../extensibility/ux-guidelines/media/0303-131-searchsuggestedpressed.png "0303年 131_SearchSuggestedPressed")  
   
- **建议的搜索 （复选框）**  
+  **建议的搜索 （复选框）**  
   
- ![搜索按下的选项](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303年 132_SearchOptionsPressed")  
+  ![搜索按下的选项](../../extensibility/ux-guidelines/media/0303-132-searchoptionspressed.png "0303年 132_SearchOptionsPressed")  
   
- **搜索选项**  
+  **搜索选项**  
   
- 复选框背景  
+  复选框背景  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
+  `SearchControl.PopupControlMouseDownBackgroundGradientEnd`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（复选框文本）  
+  前景（复选框文本）  
   
- `SearchControl.PopupCheckboxMouseDownText`  
+  `SearchControl.PopupCheckboxMouseDownText`  
   
- 链接背景  
+  链接背景  
   
- `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
+  `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`  
   
- 未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
+  未在现代主题 UI 中使用时，此背景具有梯度停止点和值。  
   
- 前景（链接文本）  
+  前景（链接文本）  
   
- `SearchControl.PopupButtonMouseDownText`  
+  `SearchControl.PopupButtonMouseDownText`  
   
 ### <a name="hyperlink"></a>超链接  
  超链接是一个没有前景/背景对的控件。 在所有情况下，都使用超链接前景色，它可在黑色、灰色和白色背景上正确显示。 如果不使用超链接控件的颜色标记，则会看到用于“已按下”的默认系统颜色（以红色闪烁）。 这是控件未使用正确环境颜色标记的信号。  
@@ -2923,181 +2923,181 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于不类似于树视图的任何内容。  
   
--   在指定组合之外的任何背景/前景组合中。  
+- 在指定组合之外的任何背景/前景组合中。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![树视图](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303年 148_TreeView")  
+  ![树视图](../../extensibility/ux-guidelines/media/0303-148-treeview.png "0303年 148_TreeView")  
   
- 背景  
+  背景  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.Glyph`  
+  `TreeView.Glyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![树视图的悬停](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303年 149_TreeViewHover")  
+  ![树视图的悬停](../../extensibility/ux-guidelines/media/0303-149-treeviewhover.png "0303年 149_TreeViewHover")  
   
- 背景  
+  背景  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.Background`  
+  `TreeView.Background`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.GlyphMouseOver`  
+  `TreeView.GlyphMouseOver`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- **拖动**  
+  **拖动**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![树视图拖动](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303年 150_TreeViewDragOver")  
+  ![树视图拖动](../../extensibility/ux-guidelines/media/0303-150-treeviewdragover.png "0303年 150_TreeViewDragOver")  
   
- 背景  
+  背景  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.DragOverItem`  
+  `TreeView.DragOverItem`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.DragOverItemGlyph`  
+  `TreeView.DragOverItemGlyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- **选择**  
+  **选择**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![树视图已设定焦点](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303年 151_TreeViewFocused")  
+  ![树视图已设定焦点](../../extensibility/ux-guidelines/media/0303-151-treeviewfocused.png "0303年 151_TreeViewFocused")  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 背景  
+  背景  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.SelectedItemActiveGlyph`  
+  `TreeView.SelectedItemActiveGlyph`  
   
- Border  
+  Border  
   
- `TreeView.FocusVisualBorder`  
+  `TreeView.FocusVisualBorder`  
   
- ![树视图已失去焦点](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303年 152_TreeViewUnfocused")  
+  ![树视图已失去焦点](../../extensibility/ux-guidelines/media/0303-152-treeviewunfocused.png "0303年 152_TreeViewUnfocused")  
   
- **失去焦点**  
+  **失去焦点**  
   
- 背景  
+  背景  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.SelectedItemInactiveGlyph`  
+  `TreeView.SelectedItemInactiveGlyph`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- **悬停在选定内容**  
+  **悬停在选定内容**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![树视图侧重于悬停](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303年 153_TreeViewFocusedHover")  
+  ![树视图侧重于悬停](../../extensibility/ux-guidelines/media/0303-153-treeviewfocusedhover.png "0303年 153_TreeViewFocusedHover")  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 背景  
+  背景  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.SelectedItemActive`  
+  `TreeView.SelectedItemActive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Border  
+  Border  
   
- 无`TreeView.FocusVisualBorder`  
+  无`TreeView.FocusVisualBorder`  
   
- ![树视图失去焦点的悬停](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303年 154_TreeViewUnfocusedHover")  
+  ![树视图失去焦点的悬停](../../extensibility/ux-guidelines/media/0303-154-treeviewunfocusedhover.png "0303年 154_TreeViewUnfocusedHover")  
   
- **失去焦点**  
+  **失去焦点**  
   
- 背景  
+  背景  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 前景（文本）  
+  前景（文本）  
   
- `TreeView.SelectedItemInactive`  
+  `TreeView.SelectedItemInactive`  
   
- 前景（标志符号）  
+  前景（标志符号）  
   
- `TreeView.SelectedItemActiveGlyphMouseOver`  
+  `TreeView.SelectedItemActiveGlyphMouseOver`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
 ### <a name="button-controls"></a>按钮控件  
  ![按钮控件红线](../../extensibility/ux-guidelines/media/0303-155-buttoncontrolredline.png "0303年 155_ButtonControlRedline")  
@@ -3346,229 +3346,229 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   对于不是下拉框或组合框的任何 UI。  
   
--   对于命令栏中的 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。  
+- 对于命令栏中的 [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) 或 [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) 。  
   
- **默认**  
+  **默认**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;组合框](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303年 168_DropDownComboBox")  
+  ![删除&#45;关闭&#47;组合框](../../extensibility/ux-guidelines/media/0303-168-dropdowncombobox.png "0303年 168_DropDownComboBox")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxBackground`  
+  `CommonControls.ComboBoxBackground`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxBorder`  
+  `CommonControls.ComboBoxBorder`  
   
- Text  
+  Text  
   
- `CommonControls.ComboBoxText`  
+  `CommonControls.ComboBoxText`  
   
- Separator  
+  Separator  
   
- `CommonControls.ComboBoxSeparator`  
+  `CommonControls.ComboBoxSeparator`  
   
- 标志符号  
+  标志符号  
   
- `CommonControls.ComboBoxGlyph`  
+  `CommonControls.ComboBoxGlyph`  
   
- 标志符号背景  
+  标志符号背景  
   
- `CommonControls.ComboBoxGlyphBackground`  
+  `CommonControls.ComboBoxGlyphBackground`  
   
- 已禁用  
+  已禁用  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;组合框禁用](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")  
+  ![删除&#45;关闭&#47;组合框禁用](../../extensibility/ux-guidelines/media/0303-169-dropdowncomboboxdisabled.png "0303年 169_DropDownComboBoxDisabled")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxBackgroundDisabled`  
+  `CommonControls.ComboBoxBackgroundDisabled`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxBorderDisabled`  
+  `CommonControls.ComboBoxBorderDisabled`  
   
- Text  
+  Text  
   
- `CommonControls.ComboBoxTextDisabled`  
+  `CommonControls.ComboBoxTextDisabled`  
   
- Separator  
+  Separator  
   
- `CommonControls.ComboBoxSeparatorDisabled`  
+  `CommonControls.ComboBoxSeparatorDisabled`  
   
- 标志符号  
+  标志符号  
   
- `CommonControls.ComboBoxGlyphDisabled`  
+  `CommonControls.ComboBoxGlyphDisabled`  
   
- 标志符号背景  
+  标志符号背景  
   
- `CommonControls.ComboBoxGlyphBackgroundDisabled`  
+  `CommonControls.ComboBoxGlyphBackgroundDisabled`  
   
- **将鼠标悬停在**  
+  **将鼠标悬停在**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;组合框上悬停](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303年 170_DropDownComboBoxHover")  
+  ![删除&#45;关闭&#47;组合框上悬停](../../extensibility/ux-guidelines/media/0303-170-dropdowncomboboxhover.png "0303年 170_DropDownComboBoxHover")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxBackgroundHover`  
+  `CommonControls.ComboBoxBackgroundHover`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxBorderHover`  
+  `CommonControls.ComboBoxBorderHover`  
   
- Text  
+  Text  
   
- `CommonControls.ComboBoxTextHover`  
+  `CommonControls.ComboBoxTextHover`  
   
- Separator  
+  Separator  
   
- `CommonControls.ComboBoxSeparatorHover`  
+  `CommonControls.ComboBoxSeparatorHover`  
   
- 标志符号  
+  标志符号  
   
- `CommonControls.ComboBoxGlyphHover`  
+  `CommonControls.ComboBoxGlyphHover`  
   
- 标志符号背景  
+  标志符号背景  
   
- `CommonControls.ComboBoxGlyphBackgroundHover`  
+  `CommonControls.ComboBoxGlyphBackgroundHover`  
   
- **按下**  
+  **按下**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;按下的组合框](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")  
+  ![删除&#45;关闭&#47;按下的组合框](../../extensibility/ux-guidelines/media/0303-171-dropdowncomboboxpressed.png "0303年 171_DropDownComboBoxPressed")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxBackgroundPressed`  
+  `CommonControls.ComboBoxBackgroundPressed`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxBorderPressed`  
+  `CommonControls.ComboBoxBorderPressed`  
   
- Text  
+  Text  
   
- `CommonControls.ComboBoxTextPressed`  
+  `CommonControls.ComboBoxTextPressed`  
   
- Separator  
+  Separator  
   
- `CommonControls.ComboBoxSeparatorPressed`  
+  `CommonControls.ComboBoxSeparatorPressed`  
   
- 标志符号  
+  标志符号  
   
- `CommonControls.ComboBoxGlyphPressed`  
+  `CommonControls.ComboBoxGlyphPressed`  
   
- 标志符号背景  
+  标志符号背景  
   
- `CommonControls.ComboBoxGlyphBackgroundPressed`  
+  `CommonControls.ComboBoxGlyphBackgroundPressed`  
   
- **已设定焦点**  
+  **已设定焦点**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;已设定焦点的组合框](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303年 172_DropDownComboBoxFocused")  
+  ![删除&#45;关闭&#47;已设定焦点的组合框](../../extensibility/ux-guidelines/media/0303-172-dropdowncomboboxfocused.png "0303年 172_DropDownComboBoxFocused")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxBackgroundFocused`  
+  `CommonControls.ComboBoxBackgroundFocused`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxBorderFocused`  
+  `CommonControls.ComboBoxBorderFocused`  
   
- Text  
+  Text  
   
- `CommonControls.ComboBoxTextFocused`  
+  `CommonControls.ComboBoxTextFocused`  
   
- Separator  
+  Separator  
   
- `CommonControls.ComboBoxSeparatorFocused`  
+  `CommonControls.ComboBoxSeparatorFocused`  
   
- 标志符号  
+  标志符号  
   
- `CommonControls.ComboBoxGlyphFocused`  
+  `CommonControls.ComboBoxGlyphFocused`  
   
- 标志符号背景  
+  标志符号背景  
   
- `CommonControls.ComboBoxGlyphBackgroundFocused`  
+  `CommonControls.ComboBoxGlyphBackgroundFocused`  
   
- **文本输入的选择**  
+  **文本输入的选择**  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- ![删除&#45;关闭&#47;组合框文本输入](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303年 173_DropDownComboBoxTextInput")  
+  ![删除&#45;关闭&#47;组合框文本输入](../../extensibility/ux-guidelines/media/0303-173-dropdowncomboboxtextinput.png "0303年 173_DropDownComboBoxTextInput")  
   
- 突出显示  
+  突出显示  
   
- `CommonControls.ComboBoxTextInputSelection`  
+  `CommonControls.ComboBoxTextInputSelection`  
   
- **已按下 – 列表项视图**  
+  **已按下 – 列表项视图**  
   
- ![删除&#45;关闭&#47;组合框列表视图](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303年 174_DropDownComboBoxListView")  
+  ![删除&#45;关闭&#47;组合框列表视图](../../extensibility/ux-guidelines/media/0303-174-dropdowncomboboxlistview.png "0303年 174_DropDownComboBoxListView")  
   
- 背景  
+  背景  
   
- `CommonControls.ComboBoxListBackground`  
+  `CommonControls.ComboBoxListBackground`  
   
- `CommonControls.ComboBoxListBackgroundHover`  
+  `CommonControls.ComboBoxListBackgroundHover`  
   
- `CommonControls.ComboBoxListItemBackgroundPressed`  
+  `CommonControls.ComboBoxListItemBackgroundPressed`  
   
- `CommonControls.ComboBoxListItemBackgroundFocused`  
+  `CommonControls.ComboBoxListItemBackgroundFocused`  
   
- Border  
+  Border  
   
- `CommonControls.ComboBoxListBorder`  
+  `CommonControls.ComboBoxListBorder`  
   
- `CommonControls.ComboBoxListBorderHover`  
+  `CommonControls.ComboBoxListBorderHover`  
   
- `CommonControls.ComboBoxListBorderPressed`  
+  `CommonControls.ComboBoxListBorderPressed`  
   
- `CommonControls.ComboBoxListBorderFocused`  
+  `CommonControls.ComboBoxListBorderFocused`  
   
- 项文本  
+  项文本  
   
- `CommonControls.ComboBoxListItemText`  
+  `CommonControls.ComboBoxListItemText`  
   
- `CommonControls.ComboBoxListItemTextHover`  
+  `CommonControls.ComboBoxListItemTextHover`  
   
- `CommonControls.ComboBoxListItemTextPressed`  
+  `CommonControls.ComboBoxListItemTextPressed`  
   
- `CommonControls.ComboBoxListItemTextFocused`  
+  `CommonControls.ComboBoxListItemTextFocused`  
   
- 背景阴影  
+  背景阴影  
   
- `CommonControls.ComboBoxListBackgroundShadow`  
+  `CommonControls.ComboBoxListBackgroundShadow`  
   
 ### <a name="tabular-data-grid-controls"></a>表格数据（网格）控件  
  表格数据控件（也称为网格控件）是可以用于在多列中呈现大量数据的 Visual Studio 公共控件。 可以在 Visual Studio 中的多个位置中找到标准表格数据控件：错误列表工具窗口、IntelliTrace 报告和内存堆视图及其他位置。 始终使用提供的标准表格数据控件。 在某些极少数情况下，你可能无法访问标准表格数据控件。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他表格数据控件保持一致。  
@@ -3703,66 +3703,66 @@ ms.locfileid: "49245383"
  使用...  
  -   对于类似于清单设计器的设计器。  
   
--   在文档井中编辑器的顶部代替使用公共选项卡控件。  
+- 在文档井中编辑器的顶部代替使用公共选项卡控件。  
   
- 请勿使用...  
- -   如果你有六个以上的选项卡。  
+  请勿使用...  
+  -   如果你有六个以上的选项卡。  
   
--   对于结构不类似于清单设计器中的任何 UI。  
+- 对于结构不类似于清单设计器中的任何 UI。  
   
- 状态  
+  状态  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- 默认值（已选定）  
+  默认值（已选定）  
   
- Tab  
+  Tab  
   
- 背景  
+  背景  
   
- `ManifestDesigner.TabActive`  
+  `ManifestDesigner.TabActive`  
   
- Border  
+  Border  
   
- 无  
+  无  
   
- 说明窗格  
+  说明窗格  
   
- 背景  
+  背景  
   
- `ManifestDesigner.DescriptionPane`  
+  `ManifestDesigner.DescriptionPane`  
   
- 内容页  
+  内容页  
   
- 背景  
+  背景  
   
- `ManifestDesigner.Background`  
+  `ManifestDesigner.Background`  
   
- 对话框帮助程序文本  
+  对话框帮助程序文本  
   
- `ManifestDesigner.WatermarkText`  
+  `ManifestDesigner.WatermarkText`  
   
- 此标记名称与其功能不匹配。  
+  此标记名称与其功能不匹配。  
   
- 未选定  
+  未选定  
   
- Tab  
+  Tab  
   
- 背景  
+  背景  
   
- `ManifestDesigner.Tab.Inactive`  
+  `ManifestDesigner.Tab.Inactive`  
   
- 悬停  
+  悬停  
   
- Tab  
+  Tab  
   
- 背景  
+  背景  
   
- `ManifestDesigner.Tab.Mouseover`  
+  `ManifestDesigner.Tab.Mouseover`  
   
 ## <a name="tagging"></a>标记  
  Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用于跟踪。 例如，项目经理和开发人员可以使用 Team Foundation Server (TFS) 对工作项进行标记。 下表为标记本身以及在悬停和已选定状态下出现的“关闭图标”标志符号提供颜色名称。  
@@ -3980,39 +3980,39 @@ ms.locfileid: "49245383"
  请勿使用...  
  -   作为不是背景图面的位置的填充。  
   
--   作为要在其上放置前景元素的背景。  
+- 作为要在其上放置前景元素的背景。  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- 下层  
+  下层  
   
- 背景  
+  背景  
   
- `Environment.EnvironmentBackground`  
+  `Environment.EnvironmentBackground`  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- 上层  
+  上层  
   
- 背景  
+  背景  
   
- *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
+  *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
   
- `Environment.EnvironmentBackgroundGradientBegin`  
+  `Environment.EnvironmentBackgroundGradientBegin`  
   
- `Environment.EnvironmentBackgroundGradientEnd`  
+  `Environment.EnvironmentBackgroundGradientEnd`  
   
- `Environment.EnvironmentBackgroundGradientMiddle1`  
+  `Environment.EnvironmentBackgroundGradientMiddle1`  
   
- `Environment.EnvironmentBackgroundGradientMiddle2`  
+  `Environment.EnvironmentBackgroundGradientMiddle2`  
   
 ### <a name="command-shelf"></a>命令架  
  有两组标记名称用于命令架背景：一组用于菜单栏所在的位置，另一组用于命令栏所在的位置。 单个命令栏组具有自己的背景色值（在“命令栏”部分中进行更详细的讨论）。 菜单栏和命令栏文本分别在菜单和命令栏部分中进行了讨论。  
@@ -4022,40 +4022,40 @@ ms.locfileid: "49245383"
  使用...  
  -   用于在其中放置菜单或工具栏的区域。  
   
--   具有正确的背景 /？ 前景标记名称组合。  
+- 具有正确的背景 /？ 前景标记名称组合。  
   
- 请勿使用...  
- 对于与命令架不相似的区域。  
+  请勿使用...  
+  对于与命令架不相似的区域。  
   
- 组件  
+  组件  
   
- 元素  
+  元素  
   
- 标记名称：Category.color  
+  标记名称：Category.color  
   
- 菜单栏  
+  菜单栏  
   
- 背景  
+  背景  
   
- *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
+  *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
   
- `Environment.CommandShelfHighlightGradientBegin`  
+  `Environment.CommandShelfHighlightGradientBegin`  
   
- `Environment.CommandShelfHighlightGradientMiddle`  
+  `Environment.CommandShelfHighlightGradientMiddle`  
   
- `Environment.CommandShelfHighlightGradientEnd`  
+  `Environment.CommandShelfHighlightGradientEnd`  
   
- 命令栏  
+  命令栏  
   
- 背景  
+  背景  
   
- *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
+  *梯度停止点设置为 Visual Studio 2013 浅色和深色主题中的相同颜色值。*  
   
- `Environment.CommandShelfBackgroundGradientBegin`  
+  `Environment.CommandShelfBackgroundGradientBegin`  
   
- `Environment.CommandShelfBackgroundGradientMiddle`  
+  `Environment.CommandShelfBackgroundGradientMiddle`  
   
- `Environment.CommandShelfBackgroundGradientEnd`  
+  `Environment.CommandShelfBackgroundGradientEnd`  
   
 ## <a name="toolbox"></a>工具箱  
  工具箱是 Visual Studio 中最常使用的公共工具窗口之一。 它实质上是应用了特殊主题和样式的树控件。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointResolution2::GetBreakpointType |Microsoft 文档
+title: IDebugBreakpointResolution2::GetBreakpointType |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3c25a1c83f91de1e97dd4f328ea68c572867f0c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3a98ccf6e211233aed6099f554733a51f40c3363
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106625"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875264"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-获取表示此解析的断点的类型。  
+获取此解析由表示该断点的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,10 +41,10 @@ int GetBreakpointType(
   
 #### <a name="parameters"></a>参数  
  `pBPType`  
- [out]返回一个值从[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)指定此断点的类型的枚举。  
+ [out]返回一个值从[BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)枚举，用于指定此断点的类型。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则返回错误代码。 如果返回 E_FAIL`bpResLocation`字段关联[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构不是有效。  
+ 如果成功，则返回`S_OK`; 否则返回错误代码。 如果返回 E_FAIL`bpResLocation`字段中关联[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构无效。  
   
 ## <a name="remarks"></a>备注  
  断点可能是一个代码或数据断点，例如。  
@@ -83,7 +83,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
  [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   

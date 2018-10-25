@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2683f9dc520603004e71778e8498f5b2493b1895
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: af0ce2e4ff9b8df28ebc0c6dd57ad5b4ebee895f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914562"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,19 +93,19 @@ ms.locfileid: "49301816"
   
 ##### <a name="to-view-a-list-of-a-list-of-all-cpu-counters-that-are-supported-on-the-current-platform"></a>查看当前平台上支持的所有 CPU 计数器列表的列表  
   
-1.  在“性能资源管理器”中，右键单击性能会话，然后单击“属性”。  
+1. 在“性能资源管理器”中，右键单击性能会话，然后单击“属性”。  
   
-2.  执行下列操作之一：  
+2. 执行下列操作之一：  
   
-    -   单击“采样”，然后从“采样”事件列表中选择“性能计数器”。 CPU 计数器列在“可用的性能计数器”中。  
+   - 单击“采样”，然后从“采样”事件列表中选择“性能计数器”。 CPU 计数器列在“可用的性能计数器”中。  
   
-         **请注意**：单击“取消”可返回到上一个采样配置。  
+      **请注意**：单击“取消”可返回到上一个采样配置。  
   
      或  
   
-    -   选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。  
+   - 选择“CPU 计数器”，然后选择“收集 CPU 计数器”。 CPU 计数器列在“可用的计数器”中。  
   
-         **请注意**：单击“取消”可返回到上一个计数器收集配置。  
+      **请注意**：单击“取消”可返回到上一个计数器收集配置。  
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>查看当前平台上支持的 Windows 计数器列表的列表  
   

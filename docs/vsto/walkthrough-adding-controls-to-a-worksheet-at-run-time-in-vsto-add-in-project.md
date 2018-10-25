@@ -1,5 +1,5 @@
 ---
-title: 演练： 在运行时在 VSTO 外接程序项目时向工作表添加控件
+title: 演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology:
@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c6f972f2daa734bbabcea39ada9270acb7644db6
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: b3671b00ecad0380dd38e770beeef703fa916fac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767330"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915693"
 ---
-# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练： 在运行时在 VSTO 外接程序项目时向工作表添加控件
+# <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>演练： 将控件添加到在运行时在 VSTO 外接程序项目中的工作表
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅[在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
- **适用于：** 本主题中的信息适用于 Excel VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **适用于：** excel，本主题中的信息适用于 VSTO 外接程序项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
  本演练阐释了以下任务：  
   
--   提供用于将控件添加到工作表的用户界面 (UI)。  
+- 提供用于将控件添加到工作表的用户界面 (UI)。  
   
--   将控件添加到工作表。  
+- 将控件添加到工作表。  
   
--   从工作表中移除控件。  
+- 从工作表中移除控件。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -47,25 +47,25 @@ ms.locfileid: "34767330"
   
 -   Excel  
   
-## <a name="create-a-new-excel-vsto-add-in-project"></a>创建一个新的 Excel VSTO 外接程序项目  
+## <a name="create-a-new-excel-vsto-add-in-project"></a>创建新的 Excel VSTO 外接程序项目  
  首先创建 Excel VSTO 外接程序项目。  
   
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>若要新建 Excel VSTO 外接程序项目  
   
-1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，使用名称创建一个 Excel VSTO 外接程序项目**ExcelDynamicControls**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  在中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，创建一个 Excel VSTO 外接程序项目名称**ExcelDynamicControls**。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
 2.  添加对的引用**Microsoft.Office.Tools.Excel.v4.0.Utilities.dll**程序集。 在本演练稍后内容中，需要此引用以编程方式将 Windows 窗体控件添加到工作表。  
   
-## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>提供用于向工作表添加控件的 UI  
+## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>提供用于将控件添加到工作表的 UI  
  添加自定义选项卡到 Excel 功能区。 用户可以选中选项卡上的复选框，以向工作表添加控件。  
   
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>若要提供用于将控件添加到工作表的 UI  
   
 1.  在 **“项目”** 菜单上，单击 **“添加新项”**。  
   
-2.  在**添加新项**对话框中，选择**功能区 （可视化设计器）**，然后单击**添加**。  
+2.  在中**添加新项**对话框中，选择**功能区 （可视化设计器）**，然后单击**添加**。  
   
-     名为的文件**Ribbon1.cs**或**Ribbon1.vb**将在功能区设计器中打开并显示一个默认选项卡和组。  
+     名为的文件**Ribbon1.cs**或**Ribbon1.vb**在功能区设计器中打开并显示一个默认选项卡和组。  
   
 3.  从**Office 功能区控件**选项卡**工具箱**，将复选框控件拖到**group1**。  
   
@@ -92,7 +92,7 @@ ms.locfileid: "34767330"
     |**名称**|**ListObject**|  
     |**标签**|**ListObject**|  
   
-## <a name="add-controls-to-the-worksheet"></a>向工作表添加控件  
+## <a name="add-controls-to-the-worksheet"></a>将控件添加到工作表  
  托管的控件只能添加到主机项，充当容器。 因为 VSTO 外接程序项目使用任何打开的工作簿，所以 VSTO 外接程序会将工作表转换为主机项，或获取现有的主机项，然后才添加控件。 将代码添加到每个控件的单击事件处理程序中以生成基于打开的工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主机项。 然后，在工作表当前所选内容中添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。  
   
 ### <a name="to-add-controls-to-a-worksheet"></a>若要向工作表添加控件  
@@ -108,7 +108,7 @@ ms.locfileid: "34767330"
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]  
   
-3.  在**解决方案资源管理器**，选择*Ribbon1.cs*或*Ribbon1.vb*。  
+3.  在中**解决方案资源管理器**，选择*Ribbon1.cs*或*Ribbon1.vb*。  
   
 4.  上**视图**菜单上，单击**设计器**。  
   
@@ -136,11 +136,11 @@ ms.locfileid: "34767330"
      [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]  
   
 ## <a name="remove-controls-from-the-worksheet"></a>从工作表中删除控件  
- 保存并关闭工作表时，不会保留控件。 保存工作表之前应以编程方式移除所有生成的 Windows 窗体控件，否则再次打开工作薄时，将仅出现控件的边框。 将代码添加到用于从生成的主机项的控件集合中移除 Windows 窗体控件的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件中。 有关详细信息，请参阅[保留在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
+ 保存并关闭工作表时，不会保留控件。 保存工作表之前应以编程方式移除所有生成的 Windows 窗体控件，否则再次打开工作薄时，将仅出现控件的边框。 将代码添加到用于从生成的主机项的控件集合中移除 Windows 窗体控件的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件中。 有关详细信息，请参阅[持久保存在 Office 文档中的动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
 ### <a name="to-remove-controls-from-the-worksheet"></a>若要从工作表中移除控件  
   
-1.  在**解决方案资源管理器**，选择*ThisAddIn.cs*或*ThisAddIn.vb*。  
+1.  在中**解决方案资源管理器**，选择*ThisAddIn.cs*或*ThisAddIn.vb*。  
   
 2.  上**视图**菜单上，单击**代码**。  
   
@@ -154,29 +154,29 @@ ms.locfileid: "34767330"
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]  
   
 ## <a name="test-the-solution"></a>测试解决方案  
- 将控件添加到工作表中，通过从功能区上的自定义选项卡中选择。 保存该工作表时，这些控件也随之移除。  
+ 通过从功能区上的自定义选项卡中选择将控件添加到工作表。 保存该工作表时，这些控件也随之移除。  
   
 ### <a name="to-test-the-solution"></a>若要测试解决方案。  
   
-1.  按**F5**运行项目。  
+1.  按**F5**运行你的项目。  
   
 2.  在 Sheet1 中选择任意单元格。  
   
 3.  单击 **“外接程序”** 选项卡。  
   
-4.  在**group1**组中，单击**按钮**。  
+4.  在中**group1**组中，单击**按钮**。  
   
      选定的单元格中会出现一个按钮。  
   
 5.  在 Sheet1 中选择不同的单元格。  
   
-6.  在**group1**组中，单击**NamedRange**。  
+6.  在中**group1**组中，单击**NamedRange**。  
   
      则会为选定的单元格定义命名范围。  
   
 7.  在 Sheet1 中选择一系列单元格。  
   
-8.  在**group1**组中，单击**ListObject**。  
+8.  在中**group1**组中，单击**ListObject**。  
   
      则会为选定的单元格添加列表对象。  
   
@@ -187,11 +187,11 @@ ms.locfileid: "34767330"
 ## <a name="next-steps"></a>后续步骤  
  你可以从此主题中了解关于 Excel VSTO 外接程序项目中控件的详细信息：  
   
--   若要了解有关如何将控件保存到工作表，请参阅 Excel VSTO 外接程序动态控件示例在[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
+-   若要了解有关如何将控件保存到工作表，请参阅 Excel VSTO 外接程序动态控件示例[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Excel 解决方案](../vsto/excel-solutions.md)   
- [Windows 窗体上的控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
+ [Windows 窗体控件在 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)   
  [Office 文档上的控件](../vsto/controls-on-office-documents.md)   
  [NamedRange 控件](../vsto/namedrange-control.md)   
  [ListObject 控件](../vsto/listobject-control.md)  

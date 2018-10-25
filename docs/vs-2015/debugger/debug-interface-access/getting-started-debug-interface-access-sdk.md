@@ -19,12 +19,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d24d4b1fe15656f074ce580a809fe394d861a71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bde835248c6f837b27958f13085c4cb832c25e9a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928472"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,21 +33,21 @@ ms.locfileid: "49252469"
   
  若要充分利用 DIA SDK，应熟悉以下：  
   
--   C + + 编程语言  
+- C + + 编程语言  
   
--   COM 编程  
+- COM 编程  
   
--   用于编译示例 visual Studio 集成的开发环境 (IDE)  
+- 用于编译示例 visual Studio 集成的开发环境 (IDE)  
   
- 使用 Visual Studio 通常安装 DIA SDK，其默认位置是 *[驱动器]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 作为安装的一部分，msdia90.dll，实现 DIA SDK，将自动注册，因此，您需要执行的操作使用它，只需包括`dia2.h`程序和链接到`diaguids.lib`。  
+  使用 Visual Studio 通常安装 DIA SDK，其默认位置是 *[驱动器]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 作为安装的一部分，msdia90.dll，实现 DIA SDK，将自动注册，因此，您需要执行的操作使用它，只需包括`dia2.h`程序和链接到`diaguids.lib`。  
   
- 标头： include\dia2.h  
+  标头： include\dia2.h  
   
- 库： lib\diaguids.lib  
+  库： lib\diaguids.lib  
   
- DLL: bin\msdia80.dll  
+  DLL: bin\msdia80.dll  
   
- IDL: idl\dia2.idl  
+  IDL: idl\dia2.idl  
   
 ## <a name="in-this-section"></a>本节内容  
  [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  

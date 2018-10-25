@@ -1,5 +1,5 @@
 ---
-title: 入门 （调试接口访问 SDK） |Microsoft 文档
+title: 入门 （调试接口访问 SDK） |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -15,40 +15,40 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfe560f22374c0b46305d096bea32a784babe6
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e5cfcad351f19f48678d575e11b074375c6aaadc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887288"
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>入门（调试接口访问 SDK）
-调试接口访问 (DIA) SDK 向你提供指导文档和示例，说明了如何使用 DIA API。 使用的接口和方法在 DIA SDK 开发自定义应用程序打开的.pdb 和.dbg 文件并搜索其内容实现符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与在 c + + 应用程序中找到的符号关联的属性引用表。  
+调试接口访问 (DIA) SDK 将向您提供指导文档和示例，说明了如何使用 DIA API。 在 DIA SDK 中使用接口和方法，可以开发自定义应用程序打开的文件.pdb 和.dbg 文件并搜索其内容的符号、 值、 属性、 地址和其他调试信息。 此 SDK 还提供了与 c + + 应用程序中的符号关联的属性引用表。  
   
- 若要充分利用 DIA SDK，你应熟悉以下：  
+ 若要充分利用 DIA SDK，应熟悉以下：  
   
--   C + + 编程语言  
+- C + + 编程语言  
   
--   COM 编程  
+- COM 编程  
   
--   用于编译示例 visual Studio 集成的开发环境 (IDE)  
+- 用于编译示例 visual Studio 集成的开发环境 (IDE)  
   
- 使用 Visual Studio 通常安装 DIA SDK，其默认位置是 *[驱动器]* files\microsoft Visual Studio 9.0\DIA SDK。 作为安装的一部分，msdia90.dll，实现 DIA SDK，将自动注册，因此你需要要做，以使用它的所有是包括`dia2.h`程序和链接中`diaguids.lib`。  
+  使用 Visual Studio 通常安装 DIA SDK，其默认位置是 *[驱动器]* \Program Files\Microsoft Visual Studio 9.0\DIA SDK。 作为安装的一部分，msdia90.dll，实现 DIA SDK，将自动注册，因此，您需要执行的操作使用它，只需包括`dia2.h`程序和链接到`diaguids.lib`。  
   
- 标头： include\dia2.h  
+  标头： include\dia2.h  
   
- 库： lib\diaguids.lib  
+  库： lib\diaguids.lib  
   
- DLL: bin\msdia80.dll  
+  DLL: bin\msdia80.dll  
   
- IDL: idl\dia2.idl  
+  IDL: idl\dia2.idl  
   
 ## <a name="in-this-section"></a>本节内容  
  [概述](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
- 查看 DIA.的基本体系结构  
+ 评审 dia 时的基本体系结构  
   
  [查询 .Pdb 文件](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
- 有关如何使用 DIA API 来查询.pdb 文件提供分步说明。  
+ 分步说明了如何使用 DIA API 来查询.pdb 文件。  
   
 ## <a name="see-also"></a>请参阅  
  [调试接口访问 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

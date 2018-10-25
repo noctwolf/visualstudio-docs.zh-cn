@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a0fb7e9593ee49df3e766fbc52c578e635e2d72d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 163fcc07318ae02ff88fda13d4ea6300d513806e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857401"
 ---
 # <a name="how-to-create-starter-kits"></a>如何：创建初学者工具包
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "49243381"
   
  如果要创建示例应用程序或插件：  
   
--   创建一个在生成时未发生错误的项目。  
+- 创建一个在生成时未发生错误的项目。  
   
--   添加模板代码以实现其他任务（可选）。  
+- 添加模板代码以实现其他任务（可选）。  
   
--   准备文档。  
+- 准备文档。  
   
- 如果要创建学习工具：  
+  如果要创建学习工具：  
   
--   创建一个在生成时未发生错误的项目。  
+- 创建一个在生成时未发生错误的项目。  
   
--   组织资源，例如代码片段和项模板。  
+- 组织资源，例如代码片段和项模板。  
   
--   准备文档。  
+- 准备文档。  
   
 ## <a name="creating-a-template"></a>创建模板  
  完成项目和文档的步骤后，即可准备创建初学者工具包的项目模板。 此过程与项目模板的创建完全相同。  

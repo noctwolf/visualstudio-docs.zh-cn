@@ -75,12 +75,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f939c365718e60cf5053f76dd65b18c257de627e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: df3dbcd36bdb72bdd76972ff03a295ba9310f8f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433465"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897077"
 ---
 # <a name="crt-debug-heap-details"></a>CRT 调试堆详细信息
 本主题详细描述了 CRT 调试堆。  
@@ -207,19 +207,19 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **若要使用调试堆**  
   
--   用 C 运行库的调试版本链接应用程序的调试版本。  
+- 用 C 运行库的调试版本链接应用程序的调试版本。  
   
- **若要更改一个或多个 _crtDbgFlag 位域并创建标志的新状态**  
+  **若要更改一个或多个 _crtDbgFlag 位域并创建标志的新状态**  
   
-1.  在 `_CrtSetDbgFlag` 参数设置为 `newFlag` 的情况下调用 `_CRTDBG_REPORT_FLAG`（以获取当前的 `_crtDbgFlag` 状态），并在一个临时变量中存储返回值。  
+1. 在 `_CrtSetDbgFlag` 参数设置为 `newFlag` 的情况下调用 `_CRTDBG_REPORT_FLAG`（以获取当前的 `_crtDbgFlag` 状态），并在一个临时变量中存储返回值。  
   
-2.  打开的任何位`OR`-ing (按位&#124;符号) 带相应位屏蔽 （在应用程序代码中由清单常量显示） 的临时变量。  
+2. 打开的任何位`OR`-ing (按位&#124;符号) 带相应位屏蔽 （在应用程序代码中由清单常量显示） 的临时变量。  
   
-3.  通过对带有相应位屏蔽的 `AND`（按位 ~ 符号）的变量进行 `NOT`-ing（按位 & 符号）运算关闭其他位。  
+3. 通过对带有相应位屏蔽的 `AND`（按位 ~ 符号）的变量进行 `NOT`-ing（按位 & 符号）运算关闭其他位。  
   
-4.  在 `_CrtSetDbgFlag` 参数设置为临时变量中存储的值的情况下调用 `newFlag`，以创建 `_crtDbgFlag` 的新状态。  
+4. 在 `_CrtSetDbgFlag` 参数设置为临时变量中存储的值的情况下调用 `newFlag`，以创建 `_crtDbgFlag` 的新状态。  
   
- 例如，下列代码行打开自动泄漏检测，关闭检查 `_CRT_BLOCK` 类型的块：  
+   例如，下列代码行打开自动泄漏检测，关闭检查 `_CRT_BLOCK` 类型的块：  
   
 ```cpp
 // Get current flag  

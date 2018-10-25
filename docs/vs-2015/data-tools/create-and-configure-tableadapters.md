@@ -23,12 +23,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9c1c9337fac3cde818fd8af298813c89c8c13daf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03cb6c67b4887762885a0cb920eb928359b4708b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199246"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917643"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Tableadapter 提供你的应用程序和数据库之间的通信。 在连接到
   
  当您执行以下操作之一时，会为您创建 Tableadapter:  
   
--   运行[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然后选择**数据库**或**Web 服务**数据源类型。  
+- 运行[数据源配置向导](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f)，然后选择**数据库**或**Web 服务**数据源类型。  
   
--   将从数据库对象拖放[服务器资源管理器](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)成**数据集设计器**。  
+- 将从数据库对象拖放[服务器资源管理器](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d)成**数据集设计器**。  
   
- 您可以创建新的 TableAdapter，并将其与数据源配置通过将 TableAdapter 从工具箱拖到一个空区域**数据集设计器**图面。  
+  您可以创建新的 TableAdapter，并将其与数据源配置通过将 TableAdapter 从工具箱拖到一个空区域**数据集设计器**图面。  
   
- Tableadapter 的简介，请参阅[使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)。  
+  Tableadapter 的简介，请参阅[使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)。  
   
- [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="use-the-tableadapter-configuration-wizard"></a>使用 TableAdapter 配置向导  
  运行**TableAdapter 配置向导**若要创建或编辑 Tableadapter 及其关联的 Datatable。 可以通过右键单击在其上配置现有 TableAdapter**数据集设计器**。  

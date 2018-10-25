@@ -18,12 +18,12 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9b5738f3119a8e5f1f6c1d8cb3ee47d64df1541d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6c7e3c0804fb354bc1f17fa4769ce118e13b3352
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195476"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939548"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49195476"
   
  你有若干选项，需要注意的有关你的项目中的项的持久性。 您可以执行以下选项之一：  
   
--   单独保存每个文件，它已被更改时。  
+- 单独保存每个文件，它已被更改时。  
   
--   捕获在单个的多个事务**保存**操作。  
+- 捕获在单个的多个事务**保存**操作。  
   
--   保存文件进行本地，然后发布到服务器或使用项表示远程对象的数据连接时保存项目项的另一种方法。  
+- 保存文件进行本地，然后发布到服务器或使用项表示远程对象的数据连接时保存项目项的另一种方法。  
   
- 有关持久性的详细信息，请参阅[项目持久性](../../extensibility/internals/project-persistence.md)并[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。  
+  有关持久性的详细信息，请参阅[项目持久性](../../extensibility/internals/project-persistence.md)并[打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。  
   
 ## <a name="project-commitment-model"></a>项目的承诺模型  
  将打开持久化的数据对象在直接模式下或事务处理模式下？  

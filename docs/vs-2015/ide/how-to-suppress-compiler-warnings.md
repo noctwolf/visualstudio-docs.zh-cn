@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 738934450536d6ae51e67223c440e607ac6b6839
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7cb1bbc637b51ecf75c0b491a5918ceaa147aa8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286086"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932307"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>如何：取消显示编译器警告
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,59 +57,59 @@ ms.locfileid: "49286086"
   
 #### <a name="to-suppress-specific-warnings-for-visual-basic"></a>要取消显示特定的 Visual Basic 警告  
   
-1.  在**解决方案资源管理器**中，选择想要取消显示警告的项目。  
+1. 在**解决方案资源管理器**中，选择想要取消显示警告的项目。  
   
-2.  在菜单栏上，依次选择“项目”、“卸载项目”。  
+2. 在菜单栏上，依次选择“项目”、“卸载项目”。  
   
-3.  在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“编辑_ProjectName_.vbproj”。  
+3. 在“解决方案资源管理器”中，打开项目的快捷菜单，然后选择“编辑_ProjectName_.vbproj”。  
   
-     此项目文件在代码编辑器中打开。  
+    此项目文件在代码编辑器中打开。  
   
-4.  找到生成所使用的生成配置中的 `<NoWarn></NoWarn>` 元素。  
+4. 找到生成所使用的生成配置中的 `<NoWarn></NoWarn>` 元素。  
   
-     以下示例显示在 x86 平台上的调试生成配置中的使用粗体文本的 `<NoWarn></NoWarn>` 元素：  
+    以下示例显示在 x86 平台上的调试生成配置中的使用粗体文本的 `<NoWarn></NoWarn>` 元素：  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn></NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn></NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-5.  添加一个或多个警告编号作为 `<NoWarn>` 元素的值。 如果指定多个警告编号，请使用逗号分隔，如以下示例所示。  
+5. 添加一个或多个警告编号作为 `<NoWarn>` 元素的值。 如果指定多个警告编号，请使用逗号分隔，如以下示例所示。  
   
-    ```  
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
-        <PlatformTarget>x86</PlatformTarget>  
-        <DebugSymbols>true</DebugSymbols>  
-        <DebugType>full</DebugType>  
-        <Optimize>false</Optimize>  
-        <OutputPath>bin\Debug\</OutputPath>  
-        <DefineDebug>true</DefineDebug>  
-        <DefineTrace>true</DefineTrace>  
-        <ErrorReport>prompt</ErrorReport>  
-        <NoWarn>40059,42024</NoWarn>  
-        <WarningLevel>1</WarningLevel>  
-      </PropertyGroup>  
-    ```  
+   ```  
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">  
+       <PlatformTarget>x86</PlatformTarget>  
+       <DebugSymbols>true</DebugSymbols>  
+       <DebugType>full</DebugType>  
+       <Optimize>false</Optimize>  
+       <OutputPath>bin\Debug\</OutputPath>  
+       <DefineDebug>true</DefineDebug>  
+       <DefineTrace>true</DefineTrace>  
+       <ErrorReport>prompt</ErrorReport>  
+       <NoWarn>40059,42024</NoWarn>  
+       <WarningLevel>1</WarningLevel>  
+     </PropertyGroup>  
+   ```  
   
-6.  保存对 .vbproj 文件所做的更改。  
+6. 保存对 .vbproj 文件所做的更改。  
   
-7.  在菜单栏上，依次选择“项目”、“重载项目”。  
+7. 在菜单栏上，依次选择“项目”、“重载项目”。  
   
-8.  在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
+8. 在菜单栏上，依次选择“生成”、“重新生成解决方案”。  
   
-     “输出”窗口不再显示指定的警告。  
+    “输出”窗口不再显示指定的警告。  
   
- 有关详细信息，请参阅 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。  
+   有关详细信息，请参阅 [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)。  
   
 ## <a name="see-also"></a>请参阅  
  [演练：生成应用程序](../ide/walkthrough-building-an-application.md)   

@@ -14,25 +14,25 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 25b957db194065b53ae69e7a5542aca79d723366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 93ce8f97f32ac41c4724db3c4cc08389f052f1ef
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923376"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 Click 事件处理程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 匹配游戏的运行原理如下所示：  
   
-1.  当玩家选择一个带有隐藏图标的方块时，程序会通过将图标颜色更改为黑色来向玩家显示该图标。  
+1. 当玩家选择一个带有隐藏图标的方块时，程序会通过将图标颜色更改为黑色来向玩家显示该图标。  
   
-2.  然后玩家选择另一个隐藏的图标。  
+2. 然后玩家选择另一个隐藏的图标。  
   
-3.  如果图标互相匹配，则它们保持可见。 如果不匹配，则两个图标都会再次隐藏。  
+3. 如果图标互相匹配，则它们保持可见。 如果不匹配，则两个图标都会再次隐藏。  
   
- 为了使程序按此方式运行，你需要添加一个 Click 事件处理程序以更改所选择的标签的颜色。  
+   为了使程序按此方式运行，你需要添加一个 Click 事件处理程序以更改所选择的标签的颜色。  
   
 ### <a name="to-add-a-click-event-handler-to-each-label"></a>向每个标签添加一个 Click 事件处理程序  
   

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContainerField |Microsoft 文档
+title: IDebugSymbolProvider::GetContainerField |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41709f658da15001b6f604b78bf081edefd88b8c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ac7acc5d12ecce72119f19a51b1f4313a1aabe08
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118929"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926394"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 此方法获取包含调试地址的字段。  
@@ -43,15 +43,15 @@ int GetContainerField(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in]地址所表示的[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
+ [in]地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
   
  `ppContainerField`  
- [out]返回表示由容器字段[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)接口。  
+ [out]返回表示容器字段[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)接口。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 912752c39d8180f7f3cd5dc0cca719e39e39a0e8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a5f6c89f6b71ecd2902877757f7d852c0e51088
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49171959"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852916"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,31 +48,31 @@ N-层 * 数据应用程序是数据应用程序，分为多个*层*。 也称为
 ## <a name="presentation-tier"></a>表示层  
  *表示层*是用户与应用程序交互的层。 它通常还包含其他应用程序逻辑。 典型的表示层组件包括：  
   
--   数据绑定组件，如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
+- 数据绑定组件，如<xref:System.Windows.Forms.BindingSource>和<xref:System.Windows.Forms.BindingNavigator>。  
   
--   对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)表示层中使用的实体类。  
+- 对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)表示层中使用的实体类。  
   
- 表示层通常通过使用服务引用来访问中间层 (例如， [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)应用程序)。 表示层不直接访问数据层。 表示层与数据层通过中间层中的数据访问组件进行通信。  
+  表示层通常通过使用服务引用来访问中间层 (例如， [Windows Communication Foundation 服务和 Visual Studio 中的 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)应用程序)。 表示层不直接访问数据层。 表示层与数据层通过中间层中的数据访问组件进行通信。  
   
 ## <a name="middle-tier"></a>中间层  
  *中间层*表示层与数据层的层用于相互通信。 典型的中间层组件包括：  
   
--   业务逻辑，例如业务规则和数据验证。  
+- 业务逻辑，例如业务规则和数据验证。  
   
--   数据访问组件和逻辑，如下所示：  
+- 数据访问组件和逻辑，如下所示：  
   
-    -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
+  -   [Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)并[Dataadapter 和 Datareader](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74)。  
   
-    -   对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
+  -   对象表示的数据，例如[LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)实体类。  
   
-    -   常见的应用程序服务，例如身份验证、 授权和个性化设置。  
+  -   常见的应用程序服务，例如身份验证、 授权和个性化设置。  
   
- 下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的中间层。  
+  下图显示了功能和技术，可在 Visual Studio 中以及其中它们可能适合为 n 层应用程序的中间层。  
   
- ![中间层组件](../data-tools/media/ntiermid.png "NtierMid")  
-中间层  
+  ![中间层组件](../data-tools/media/ntiermid.png "NtierMid")  
+  中间层  
   
- 中间层通常可以通过使用数据连接连接到数据层。 此数据连接通常存储在数据访问组件。  
+  中间层通常可以通过使用数据连接连接到数据层。 此数据连接通常存储在数据访问组件。  
   
 ## <a name="data-tier"></a>数据层  
  *数据层*基本上是将应用程序的数据存储在服务器 (例如，运行的服务器[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)])。  

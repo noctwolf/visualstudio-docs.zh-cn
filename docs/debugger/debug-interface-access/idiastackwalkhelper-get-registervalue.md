@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::get_registerValue |Microsoft 文档
+title: IDiaStackWalkHelper::get_registerValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ccc491ec9e966b8d893b6d669aafc64ebc5c8cf
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: af5f68aaf5b2caed50d28a1a53022a095d478e60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887912"
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 检索寄存器的值。  
@@ -35,7 +35,7 @@ HRESULT get_registerValue (
   
 #### <a name="parameters"></a>参数  
  `index`  
- [in]取值范围为[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)枚举指定的注册以获取的值。  
+ [in]中的值[CV_HREG_e 枚举](../../debugger/debug-interface-access/cv-hreg-e.md)枚举，它指定其注册以获取的值。  
   
  `pRetVal`  
  [out]返回注册的当前值。  
@@ -44,7 +44,7 @@ HRESULT get_registerValue (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 虽然的大，但`pRetVal`参数，实现应只什么注册通常包含存储。 例如，一个 8 位寄存器保存仅最低 8 位的给定的值。 为 64 位从此方法返回时扩展此 8 位的值。  
+ 虽然的大，但`pRetVal`参数，实现应存储仅注册通常存放。 例如，一个 8 位寄存器保存仅中的最小 8 位的给定值。 此 8 位值扩展到 64 位时此方法返回。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 2dc895d6922197c3bba43b84f874d591ac75d54f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903811"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,21 +54,21 @@ ms.locfileid: "49231499"
 ### <a name="invoke-methods-from-a-template"></a>调用模板中的方法  
  如果方法中已存在，例如，标准[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]类：  
   
--   使用\<#@assembly#> 指令来加载该程序集，并使用\<#@import#> 若要设置的命名空间上下文。 有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。  
+- 使用\<#@assembly#> 指令来加载该程序集，并使用\<#@import#> 若要设置的命名空间上下文。 有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。  
   
-     如果您经常使用一组相同的程序集并导入指令，应考虑编写指令处理器。 在每个模板，可以调用指令处理器，它可以加载这些程序集和模型文件和设置的命名空间上下文。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
+   如果您经常使用一组相同的程序集并导入指令，应考虑编写指令处理器。 在每个模板，可以调用指令处理器，它可以加载这些程序集和模型文件和设置的命名空间上下文。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。  
   
- 如果你要自行编写方法：  
+  如果你要自行编写方法：  
   
--   如果你正在编写运行时文本模板，编写一个具有与运行时文本模板相同的名称的分部类定义。 添加到此类的其他方法。  
+- 如果你正在编写运行时文本模板，编写一个具有与运行时文本模板相同的名称的分部类定义。 添加到此类的其他方法。  
   
--   编写类功能控制块`<#+ ... #>`在方法、 属性和私有类可以声明的其中。 编译时文本模板，它将转换为一个类。 标准控制块`<#...#>`和文本转换为单个的方法和类功能块插入作为单独的成员。 有关详细信息，请参阅[文本模板控制块](../modeling/text-template-control-blocks.md)。  
+- 编写类功能控制块`<#+ ... #>`在方法、 属性和私有类可以声明的其中。 编译时文本模板，它将转换为一个类。 标准控制块`<#...#>`和文本转换为单个的方法和类功能块插入作为单独的成员。 有关详细信息，请参阅[文本模板控制块](../modeling/text-template-control-blocks.md)。  
   
-     定义为类功能还可以包含嵌入的文本块的方法。  
+   定义为类功能还可以包含嵌入的文本块的方法。  
   
-     请考虑将类功能放在单独的文件，您可以`<#@include#>`到一个或多个模板文件。  
+   请考虑将类功能放在单独的文件，您可以`<#@include#>`到一个或多个模板文件。  
   
--   在单独的程序集 （类库） 中编写方法，并从你的模板调用它们。 使用`<#@assembly#>`加载的程序集的指令和`<#@import#>`设置命名空间上下文。 请注意，以便在调试时，重新生成程序集，可能必须停止并重新启动[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。  
+- 在单独的程序集 （类库） 中编写方法，并从你的模板调用它们。 使用`<#@assembly#>`加载的程序集的指令和`<#@import#>`设置命名空间上下文。 请注意，以便在调试时，重新生成程序集，可能必须停止并重新启动[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。  
   
 ### <a name="generate-many-files-from-one-model-schema"></a>从一个模型架构生成多个文件  
  如果您经常从具有相同的 XML 或数据库架构的模型生成文件：  

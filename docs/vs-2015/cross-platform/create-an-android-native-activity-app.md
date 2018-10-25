@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: BrianPeek
 ms.author: brpeek
 manager: ghogen
-ms.openlocfilehash: 10ea620f357c40e3e549d58f1d9df4fd0809cac9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 69ba9f13b9fc651fc68c4ed36f704abc17c5ad76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49174000"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899924"
 ---
 # <a name="create-an-android-native-activity-app"></a>创建 Android 本机活动应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +41,19 @@ ms.locfileid: "49174000"
   
 #### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  打开 Visual Studio。 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
+1. 打开 Visual Studio。 在菜单栏上，依次选择“文件” 、“新建” 、“项目” 。  
   
-2.  在 **新项目** 对话框中，在 **模板**下，选择 **Visual C++**、 **跨平台**，然后选择 **本机活动应用程序 (Android)** 模板。  
+2. 在 **新项目** 对话框中，在 **模板**下，选择 **Visual C++**、 **跨平台**，然后选择 **本机活动应用程序 (Android)** 模板。  
   
-3.  为应用提供一个名称（如 `MyAndroidApp`），然后选择“确定”。  
+3. 为应用提供一个名称（如 `MyAndroidApp`），然后选择“确定”。  
   
-     ![创建本机活动项目](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
+    ![创建本机活动项目](../cross-platform/media/cppmdd-newproject.PNG "CppMDD_NewProject")  
   
-     Visual Studio 创建新的解决方案并打开解决方案资源管理器。  
+    Visual Studio 创建新的解决方案并打开解决方案资源管理器。  
   
-     ![解决方案资源管理器中的本机活动项目](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
+    ![解决方案资源管理器中的本机活动项目](../cross-platform/media/cppmdd-rc-na-solutionexp.PNG "CPPMDD_RC_NA_SolutionExp")  
   
- 新的 Android 本机活动应用解决方案包括两个项目：  
+   新的 Android 本机活动应用解决方案包括两个项目：  
   
 -   **MyAndroidApp.NativeActivity** 包含应用的引用和粘合代码，以作为本机活动在 Android 上运行。 粘合代码的入口点的实现位于 main.cpp。 预编译头位于 pch.h。 本机活动应用项目编译为一个由打包项目选取的共享库 .so 文件。  
   
