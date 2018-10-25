@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7feaa8629078be9e5e7a915fe3c09a9599a8f292
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 17bb1aaaae10c5c23968634ae06773909c27ffcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234190"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929557"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>演练：查找内存泄漏 (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,44 +139,44 @@ ms.locfileid: "49234190"
   
 ### <a name="analyzing-the-memory-usage"></a>分析内存使用量  
   
-1.  在 **“调试”** 工具栏上的 **“启动调试”** 列表中，选择已更新的项目的调试目标：某个 Windows Phone 仿真程序或 **“模拟器”**。  
+1. 在 **“调试”** 工具栏上的 **“启动调试”** 列表中，选择已更新的项目的调试目标：某个 Windows Phone 仿真程序或 **“模拟器”**。  
   
-    > [!TIP]
-    >  对于 Windows 应用商店应用，也可以选择该列表中的 **“本地计算机”** 或 **“远程计算机”** 。 但是，使用仿真器或模拟器的优点是，你可以将其放置在 Visual Studio 旁，并且在正在运行的应用和 JavaScript 内存分析器之间轻松切换。 有关更多信息，请参阅[从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)和[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
+   > [!TIP]
+   >  对于 Windows 应用商店应用，也可以选择该列表中的 **“本地计算机”** 或 **“远程计算机”** 。 但是，使用仿真器或模拟器的优点是，你可以将其放置在 Visual Studio 旁，并且在正在运行的应用和 JavaScript 内存分析器之间轻松切换。 有关更多信息，请参阅[从 Visual Studio 运行应用](../debugger/run-store-apps-from-visual-studio.md)和[在远程计算机上运行 Windows 应用商店应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
   
-2.  在“调试”  菜单上，选择“性能探查器...” 。  
+2. 在“调试”  菜单上，选择“性能探查器...” 。  
   
-3.  在 **“可用工具”** 中，选择 **“JavaScript 内存”**，然后选择 **“启动”**。  
+3. 在 **“可用工具”** 中，选择 **“JavaScript 内存”**，然后选择 **“启动”**。  
   
-     在本教程中，你将把内存分析器连接到启动项目。 有关其他选项的信息，如将内存分析器连接到所安装的应用，请参阅 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
+    在本教程中，你将把内存分析器连接到启动项目。 有关其他选项的信息，如将内存分析器连接到所安装的应用，请参阅 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
-     当您启动内存分析器时，可能会发现用户帐户控制正在请求运行 VsEtwCollector.exe 的权限。 选择 **“是”**。  
+    当您启动内存分析器时，可能会发现用户帐户控制正在请求运行 VsEtwCollector.exe 的权限。 选择 **“是”**。  
   
-4.  连续选择 **“泄露内存”** 按钮 4 次。  
+4. 连续选择 **“泄露内存”** 按钮 4 次。  
   
-     当选择此按钮时，default.js 中的事件处理代码将起作用，导致内存泄漏。 你将使用此内存泄漏用于诊断目的。  
+    当选择此按钮时，default.js 中的事件处理代码将起作用，导致内存泄漏。 你将使用此内存泄漏用于诊断目的。  
   
-    > [!TIP]
-    >  通过重现要测试是否存在内存泄漏情况的场景，可以更轻松地筛选掉不相关的信息，例如，在应用程序初始化期间或在加载页面时添加到堆中的对象。  
+   > [!TIP]
+   >  通过重现要测试是否存在内存泄漏情况的场景，可以更轻松地筛选掉不相关的信息，例如，在应用程序初始化期间或在加载页面时添加到堆中的对象。  
   
-5.  从正在运行的应用程序中，切换到 Visual Studio (Alt+Tab)。  
+5. 从正在运行的应用程序中，切换到 Visual Studio (Alt+Tab)。  
   
-     JavaScript 内存分析器在 Visual Studio 的新选项卡中显示信息。  
+    JavaScript 内存分析器在 Visual Studio 的新选项卡中显示信息。  
   
-     此摘要视图中的内存图显示一段时间内的进程内存使用量。 此视图还提供诸如 **“拍摄堆快照”** 等命令。 快照提供特定时刻有关内存使用量的详细信息。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
+    此摘要视图中的内存图显示一段时间内的进程内存使用量。 此视图还提供诸如 **“拍摄堆快照”** 等命令。 快照提供特定时刻有关内存使用量的详细信息。 有关更多信息，请参见 [“JavaScript 内存”](../profiling/javascript-memory.md)。  
   
-6.  选择 **“拍摄堆快照”**。  
+6. 选择 **“拍摄堆快照”**。  
   
-7.  切换到应用并选择 **“泄漏内存”**。  
+7. 切换到应用并选择 **“泄漏内存”**。  
   
-8.  切换到 Visual Studio 并再次选择 **“拍摄堆快照”** 。  
+8. 切换到 Visual Studio 并再次选择 **“拍摄堆快照”** 。  
   
-     下图显示了基线快照 (#1) 和快照 #2。  
+    下图显示了基线快照 (#1) 和快照 #2。  
   
-     ![基线快照和快照 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
+    ![基线快照和快照 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
-    > [!NOTE]
-    >  在拍摄快照时，Windows Phone 仿真程序不显示应用程序的屏幕快照。  
+   > [!NOTE]
+   >  在拍摄快照时，Windows Phone 仿真程序不显示应用程序的屏幕快照。  
   
 9. 切换到应用并再次选择 **“泄漏内存”** 按钮。  
   
@@ -193,18 +193,18 @@ ms.locfileid: "49234190"
   
 12. 在 Visual Studio 中比较快照。 快照 #2 显示以下内容：  
   
-    -   与快照 #1 相比，堆大小（左侧的红色向上箭头指示）增加了几 KB。  
+    - 与快照 #1 相比，堆大小（左侧的红色向上箭头指示）增加了几 KB。  
   
-        > [!IMPORTANT]
-        >  堆大小的准确内存使用率值取决于调试目标。  
+      > [!IMPORTANT]
+      >  堆大小的准确内存使用率值取决于调试目标。  
   
-    -   与快照 #1 相比，堆上的对象数量（右侧的红色向上箭头指示）有所增加。 添加了一个对象 (+1)，未移除任何对象 (-0)。  
+    - 与快照 #1 相比，堆上的对象数量（右侧的红色向上箭头指示）有所增加。 添加了一个对象 (+1)，未移除任何对象 (-0)。  
   
-     快照 #3 显示以下内容：  
+      快照 #3 显示以下内容：  
   
-    -   与快照 #2 相比，堆大小再次增加了几百字节。  
+    - 与快照 #2 相比，堆大小再次增加了几百字节。  
   
-    -   与快照 #2 相比，堆上的对象数量再次增加。 添加了一个对象 (+1)，未移除任何对象 (-0)。  
+    - 与快照 #2 相比，堆上的对象数量再次增加。 添加了一个对象 (+1)，未移除任何对象 (-0)。  
   
 13. 在快照 #3 中，选择位于右侧红色向上箭头旁的链接文本，该文本显示值 +1/-0。  
   
@@ -220,76 +220,76 @@ ms.locfileid: "49234190"
   
      此视图显示有关内存泄漏的有用信息，例如：  
   
-    -   此视图显示 ID 为 `item`的 DIV 元素，并且对象的保留大小为几百字节（具体值将有所不同）。  
+    - 此视图显示 ID 为 `item`的 DIV 元素，并且对象的保留大小为几百字节（具体值将有所不同）。  
   
-    -   此对象是快照 #2 中的剩余对象，说明可能存在内存泄漏。  
+    - 此对象是快照 #2 中的剩余对象，说明可能存在内存泄漏。  
   
-     此时对该应用的一些了解可提供帮助：选择 **“泄漏内存”** 按钮应能移除 DIV 元素和添加元素，因此代码似乎不起作用（也就是说，泄漏了内存）。 下一部分将说明如何修复此问题。  
+      此时对该应用的一些了解可提供帮助：选择 **“泄漏内存”** 按钮应能移除 DIV 元素和添加元素，因此代码似乎不起作用（也就是说，泄漏了内存）。 下一部分将说明如何修复此问题。  
   
     > [!TIP]
     >  有时，定位与 `Global` 对象相关的对象可能有助于确定此问题。 为此，请打开标识符的快捷菜单，然后选择 **“在根视图中显示”**。  
   
 ##  <a name="FixingMemory"></a> 修复内存问题  
   
-1.  通过使用探查器显示的数据，可以检查负责移除 ID 为“item”的 DOM 元素的代码。 它将出现在 `initialize()` 函数中。  
+1. 通过使用探查器显示的数据，可以检查负责移除 ID 为“item”的 DOM 元素的代码。 它将出现在 `initialize()` 函数中。  
   
-    ```javascript  
-    function initialize() {  
+   ```javascript  
+   function initialize() {  
   
-        if (wrapper != null) {  
-            elem.removeNode(true);  
-        }  
-    }  
-    ```  
+       if (wrapper != null) {  
+           elem.removeNode(true);  
+       }  
+   }  
+   ```  
   
-     `elem.removeNode(true)` 可能无法正常运行。 检查代码如何缓存 DOM 元素并发现问题；未更新对缓存元素的引用。  
+    `elem.removeNode(true)` 可能无法正常运行。 检查代码如何缓存 DOM 元素并发现问题；未更新对缓存元素的引用。  
   
-2.  调用 `appendChild`前，在 default.js 中添加以下加载函数代码行：  
+2. 调用 `appendChild`前，在 default.js 中添加以下加载函数代码行：  
   
-    ```javascript  
-    elem = newDiv;  
-    ```  
+   ```javascript  
+   elem = newDiv;  
+   ```  
   
-     此代码将更新对缓存元素的引用，以便在你选择 **“泄漏内存”** 按钮时正确移除元素。 加载函数的完整代码现在如下所示：  
+    此代码将更新对缓存元素的引用，以便在你选择 **“泄漏内存”** 按钮时正确移除元素。 加载函数的完整代码现在如下所示：  
   
-    ```javascript  
-    function load() {  
+   ```javascript  
+   function load() {  
   
-        wrapper = document.querySelector(".wrapper");  
+       wrapper = document.querySelector(".wrapper");  
   
-        var newDiv = document.createElement("div");  
+       var newDiv = document.createElement("div");  
   
-        newDiv.style.zIndex = "-1";  
-        newDiv.id = "item";  
-        elem = newDiv;  
+       newDiv.style.zIndex = "-1";  
+       newDiv.id = "item";  
+       elem = newDiv;  
   
-        wrapper.appendChild(newDiv);  
-    }  
-    ```  
+       wrapper.appendChild(newDiv);  
+   }  
+   ```  
   
-3.  在 **“调试”** 菜单上，选择 **“性能和诊断”**。  
+3. 在 **“调试”** 菜单上，选择 **“性能和诊断”**。  
   
-4.  在 **“可用工具”** 中，选择 **“JavaScript 内存”**，然后选择 **“启动”**。  
+4. 在 **“可用工具”** 中，选择 **“JavaScript 内存”**，然后选择 **“启动”**。  
   
-5.  按照与前面相同的步骤来拍摄三张快照。 步骤摘要如下：  
+5. 按照与前面相同的步骤来拍摄三张快照。 步骤摘要如下：  
   
-    1.  在应用程序中，连续选择 **“泄露内存”** 按钮 4 次。  
+   1. 在应用程序中，连续选择 **“泄露内存”** 按钮 4 次。  
   
-    2.  切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄基线快照。  
+   2. 切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄基线快照。  
   
-    3.  在应用中，选择 **“泄漏内存”** 按钮。  
+   3. 在应用中，选择 **“泄漏内存”** 按钮。  
   
-    4.  切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄第二张快照。  
+   4. 切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄第二张快照。  
   
-    5.  在应用中，选择 **“泄漏内存”** 按钮。  
+   5. 在应用中，选择 **“泄漏内存”** 按钮。  
   
-    6.  切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄第三张快照。  
+   6. 切换到 Visual Studio 并选择 **“拍摄堆快照”** 以拍摄第三张快照。  
   
-     快照 #3 现在显示堆大小从快照 #2 开始 **“未增加”** ，并且对象计数为 +1/-1，这说明添加了一个对象，并且移除了一个对象。 这是正常行为。  
+      快照 #3 现在显示堆大小从快照 #2 开始 **“未增加”** ，并且对象计数为 +1/-1，这说明添加了一个对象，并且移除了一个对象。 这是正常行为。  
   
-     下图显示了快照 #2 和快照 #3。  
+      下图显示了快照 #2 和快照 #3。  
   
-     ![显示固定内存泄漏的快照](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
+      ![显示固定内存泄漏的快照](../profiling/media/js-mem-app-fixed-snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
 ## <a name="see-also"></a>请参阅  
  [“JavaScript 内存”](../profiling/javascript-memory.md)

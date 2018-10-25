@@ -13,14 +13,14 @@ ms.author: chitray
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: f87f359d9c143adc9093b08ef58ebca89dca524e
-ms.sourcegitcommit: ed524fd809b17ad1d06bf9cd4c3374c71a44d7bf
+ms.openlocfilehash: 2e0215b22c66d6b555650e05985a674f2ad9aed4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39409910"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943097"
 ---
-# <a name="walkthrough-create-an-extension-pack"></a>演练： 创建一个扩展包
+# <a name="walkthrough-create-an-extension-pack"></a>演练：创建扩展包
 
 扩展包是一套可以一起安装的扩展插件。 扩展包，可以轻松地与其他用户共享你喜欢的扩展或捆绑包的一组一起使用以获得特定方案的扩展。
   
@@ -40,8 +40,8 @@ ms.locfileid: "39409910"
   
 3. 其中包含以下代码添加 ExtensionPack1.vsext 文件
 
-  ```json
-  {
+   ```json
+   {
     "id": "ExtensionPack1",
     "name": "ExtensionPack1",
     "description": "Read about creating extension packs at https://aka.ms/vsextpack",
@@ -56,8 +56,8 @@ ms.locfileid: "39409910"
         "name": "CopyAsHtml"
       }
     ]
-  }  
-  ```
+   }  
+   ```
 
 4. 在找不到要包含在扩展包中的扩展 vsixid [Visual Studio Marketplace](https://marketplace.visualstudio.com/)。 找到你想要包括，然后单击的扩展**复制 ID**。 您可以更新现有**vsixId** ，以上文件，或者将另一个扩展添加到列表。
 

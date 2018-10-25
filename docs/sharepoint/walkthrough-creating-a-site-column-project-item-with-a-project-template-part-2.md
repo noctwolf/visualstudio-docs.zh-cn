@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7616dd184bae2cabb433879ceadae79dbeb23b93
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d4512dc15d394cdf2442d8bfcf440ccb31623a29
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942070"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练： 使用项目模板，第 2 部分中创建站点栏项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板创建新的项目包含项目项。 可以使用你收集的信息来初始化项目项。  
@@ -48,15 +48,15 @@ ms.locfileid: "42626011"
   
  您还需要完成本演练在开发计算机上的以下组件：  
   
--   支持的 Windows、 SharePoint 和 Visual Studio 版本。
+- 支持的 Windows、 SharePoint 和 Visual Studio 版本。
   
--   Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
+- 用于 Visual Studio 中的项目和项模板的向导。 有关详细信息，请参阅[如何： 使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口。  
   
--   在 SharePoint 中的站点列。 有关详细信息，请参阅[列](http://go.microsoft.com/fwlink/?LinkId=183547)。  
+- 在 SharePoint 中的站点列。 有关详细信息，请参阅[列](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
 ## <a name="understand-the-wizard-components"></a>了解向导组件
  本演练中演示此向导包含多个组件。 下表描述了这些组件。  
@@ -72,11 +72,11 @@ ms.locfileid: "42626011"
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，需要将多个项目添加到你在中创建 SiteColumnProjectItem 解决方案[演练： 使用项目模板，第 1 部分创建站点栏项目项](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   WPF 项目。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
+- WPF 项目。 将实现<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>接口，并在此项目中定义的向导 UI。  
   
--   一个定义的 SharePoint 命令的类库项目。 此项目必须面向.net Framework 3.5。  
+- 一个定义的 SharePoint 命令的类库项目。 此项目必须面向.net Framework 3.5。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-wpf-project"></a>创建 WPF 项目
   
@@ -192,13 +192,13 @@ ms.locfileid: "42626011"
 ## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>创建向导模型、 签名管理器和 SharePoint 命令 Id
  将代码添加到 ProjectTemplateWizard 项目，以实现示例中的以下组件：  
   
--   SharePoint 命令 Id。 这些字符串标识该向导将使用的 SharePoint 命令。 稍后在本演练中，你会将代码添加到 SharePointCommands 项目以实现命令。  
+- SharePoint 命令 Id。 这些字符串标识该向导将使用的 SharePoint 命令。 稍后在本演练中，你会将代码添加到 SharePointCommands 项目以实现命令。  
   
--   向导数据模型。  
+- 向导数据模型。  
   
--   项目签名管理器。  
+- 项目签名管理器。  
   
- 有关这些组件的详细信息，请参阅[了解向导组件](#wizardcomponents)。  
+  有关这些组件的详细信息，请参阅[了解向导组件](#wizardcomponents)。  
   
 #### <a name="to-define-the-sharepoint-command-ids"></a>若要定义的 SharePoint 命令 Id
   
@@ -485,29 +485,29 @@ ms.locfileid: "42626011"
   
 #### <a name="to-test-the-wizard-in-visual-studio"></a>若要在 Visual Studio 中测试向导  
   
-1.  在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。  
+1. 在实验实例中的 Visual Studio 中，在菜单栏上，选择**文件** > **新建** > **项目**。  
   
-2.  展开**Visual C#** 节点或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
+2. 展开**Visual C#** 节点或**Visual Basic**节点 （具体取决于你的项目模板支持的语言），展开**SharePoint**节点，然后选择**2010年**节点。  
   
-3.  在项目模板列表中，选择**网站栏**，将项目命名**SiteColumnWizardTest**，然后选择**确定**按钮。  
+3. 在项目模板列表中，选择**网站栏**，将项目命名**SiteColumnWizardTest**，然后选择**确定**按钮。  
   
-4.  验证中设置的断点处停止 Visual Studio 的其他实例中的代码`RunStarted`方法。  
+4. 验证中设置的断点处停止 Visual Studio 的其他实例中的代码`RunStarted`方法。  
   
-5.  继续调试该项目通过选择**F5**关键的或在菜单栏中选择**调试** > **继续**。  
+5. 继续调试该项目通过选择**F5**关键的或在菜单栏中选择**调试** > **继续**。  
   
-6.  在中**SharePoint 自定义向导**，输入你想要用于调试，站点的 URL，然后选择**下一步**按钮。  
+6. 在中**SharePoint 自定义向导**，输入你想要用于调试，站点的 URL，然后选择**下一步**按钮。  
   
-7.  中的第二页**SharePoint 自定义向导**，进行以下选择：  
+7. 中的第二页**SharePoint 自定义向导**，进行以下选择：  
   
-    -   在中**类型**列表中，选择**布尔**。  
+   - 在中**类型**列表中，选择**布尔**。  
   
-    -   在中**组**列表中，选择**自定义否列**。  
+   - 在中**组**列表中，选择**自定义否列**。  
   
-    -   在中**名称**框中，输入**我否列**，然后选择**完成**按钮。  
+   - 在中**名称**框中，输入**我否列**，然后选择**完成**按钮。  
   
      中**解决方案资源管理器**，新的项目出现，其中包含名为一个项目项**Field1**，并打开项目的 Visual Studio *Elements.xml*在编辑器中的文件。  
   
-8.  确认*Elements.xml*包含向导中指定的值。  
+8. 确认*Elements.xml*包含向导中指定的值。  
   
 #### <a name="to-test-the-site-column-in-sharepoint"></a>若要在 SharePoint 中测试的网站栏  
   

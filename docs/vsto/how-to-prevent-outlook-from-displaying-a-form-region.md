@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 87a03e62c77730c7be2c9487c5e344d668ea62cc
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 1ec9f45b2055a7a56e067440d216482877da14c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35254783"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949053"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何： 防止 Outlook 显示窗体区域
   可能有不希望 Microsoft Office Outlook 显示特定项的窗体区域的情况。 例如，如果联系人项目不包含业务地址，可以防止使其不显示地图中显示的业务位置的窗体区域。  
@@ -30,13 +30,13 @@ ms.locfileid: "35254783"
   
 ## <a name="to-prevent-outlook-from-displaying-a-form-region"></a>若要防止 Outlook 显示窗体区域  
   
-1.  打开你想要修改的窗体区域代码文件。  
+1. 打开你想要修改的窗体区域代码文件。  
   
-2.  展开**窗体区域工厂**代码区域。  
+2. 展开**窗体区域工厂**代码区域。  
   
-3.  将代码添加到`FormRegionInitializing`事件处理程序设置<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>的属性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>类来**true**。  
+3. 将代码添加到`FormRegionInitializing`事件处理程序设置<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>的属性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>类来**true**。  
   
- 在此示例中，如果联系人项目不包含地址<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>属性设置为**true**，窗体区域没有显示。  
+   在此示例中，如果联系人项目不包含地址<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>属性设置为**true**，窗体区域没有显示。  
   
 ## <a name="example"></a>示例  
  [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]

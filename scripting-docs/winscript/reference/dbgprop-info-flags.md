@@ -1,5 +1,5 @@
 ---
-title: DBGPROP_INFO_FLAGS |Microsoft 文档
+title: DBGPROP_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9821cde6c159712ff44438b74eea0f8e01247155
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 377815adc7751841e2a2a3bb2f4dc8b51beecdea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24641047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941277"
 ---
 # <a name="dbgpropinfoflags"></a>DBGPROP_INFO_FLAGS
 用于指定`DebugPropertyInfo`字段  
@@ -61,11 +61,11 @@ enum {
  初始化`dwAttrib`字段。  
   
  DBGPROP_INFO_DEBUGPROP  
- 初始化`pDebugProp`字段，其中包含`IDebugProperty`接口。  
+ 初始化`pDebugProp`字段包含`IDebugProperty`接口。  
   
  DBGPROP_INFO_AUTOEXPAND  
- 指定值字段应包含的自动扩展值中，是否可用，此类型的对象。  
+ 指定的值字段应包含自动扩展值中，是否可用，此类型的对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [DebugPropertyInfo 结构](../../winscript/reference/debugpropertyinfo-structure.md)   
  [IDebugProperty 接口](../../winscript/reference/idebugproperty-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::SetDebuggerPresent |Microsoft 文档
+title: IDebugProgramPublisher2::SetDebuggerPresent |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5725d6e143f10cd3a3fae18398ec0cb08729fa34
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e53fa8c1adcf9e66b06fb2b3c286c74dbc4ab7dd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117317"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942109"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-告知调试器已存在并且正在运行的程序发布服务器。  
+告知调试器存在并且运行程序发布服务器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,14 +41,14 @@ int SetDebuggerPresent(
   
 #### <a name="parameters"></a>参数  
  `fDebuggerPresent`  
- [in]非零 (`TRUE`) 如果存在调试程序，零 (`FALSE`) 如果不是。  
+ [in]非零 (`TRUE`) 如果存在调试程序，则为零 (`FALSE`) 如果不是。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 返回从数据中是否反映是否存在调试器[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法： 存在返回的值进行设置或清除调用`SetDebuggerPresent`方法。  
+ 从返回的数据中反映出来是否存在调试器[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法： 存在返回的值是设置，或者通过调用之前清除`SetDebuggerPresent`方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

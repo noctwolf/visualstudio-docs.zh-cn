@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3190aebd98270dee4bb5148868c04a4f5e430781
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f777c9bdd0cf2ea300d2df8e7cbfbc8900c25c2a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269528"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929525"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 代码（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,23 +68,23 @@ ms.locfileid: "49269528"
 ### <a name="type-resolution-issues"></a>类型解析问题  
  以下原因可能会导致类设计器无法解析类型：  
   
--   该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
--   由于该类型未处于正确的范围内，因此类设计器无法找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
+- 由于该类型未处于正确的范围内，因此类设计器无法找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
   
--   该类型不存在（或已被注释掉）。 若要更正此错误，请确保未注释掉或删除该类型。  
+- 该类型不存在（或已被注释掉）。 若要更正此错误，请确保未注释掉或删除该类型。  
   
--   类型位于由 #import 指令引用的库中。 可行的解决方法是：手动将生成的代码（.tlh 文件）添加到头文件的 #include 指令中。  
+- 类型位于由 #import 指令引用的库中。 可行的解决方法是：手动将生成的代码（.tlh 文件）添加到头文件的 #include 指令中。  
   
- 最有可能看到的有关类型解析问题的错误是：无法在类图“\<element>”中找到一个或多个形状的代码。 此错误消息不一定表示你的代码错误。 它仅指示选件类设计器无法显示你的代码。 你可以尝试以下方法。  
+  最有可能看到的有关类型解析问题的错误是：无法在类图“\<element>”中找到一个或多个形状的代码。 此错误消息不一定表示你的代码错误。 它仅指示选件类设计器无法显示你的代码。 你可以尝试以下方法。  
   
--   确保该类型存在。 确保你没有无意中注释掉或删除源代码。  
+- 确保该类型存在。 确保你没有无意中注释掉或删除源代码。  
   
--   确保类设计器支持你输入的类型。 请参阅 [C++ 代码元素的限制](#limitations)。  
+- 确保类设计器支持你输入的类型。 请参阅 [C++ 代码元素的限制](#limitations)。  
   
--   尝试解析的类型。 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+- 尝试解析的类型。 该类型所在的项目或程序集未从包含类图的项目进行引用。 若要纠正此错误，请添加一个对包含该类型的项目或程序集的引用。 有关详细信息，请参阅 [NIB 如何：使用“添加引用”对话框添加或删除引用](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
--   确保该类型位于正确的范围，因此选件类设计器可以找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
+- 确保该类型位于正确的范围，因此选件类设计器可以找到它。 确保代码未缺失 `using`、`imports` 或 `#include` 语句。 还请确保未将该类型（或相关类型）移出它原来所在的命名空间。  
   
 ### <a name="troubleshooting-other-error-messages"></a>排除其他错误消息  
  在 Microsoft Developer Network (MSDN) 公共论坛中，可以找到有关对错误和警告进行疑难解答的帮助。 请参阅 [Visual Studio 类设计器论坛](http://go.microsoft.com/fwlink/?linkid=160754)。  

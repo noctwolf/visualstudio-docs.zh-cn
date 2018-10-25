@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: a197952bcc392f84db3f612a158817237e077d36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 60bb855202cfb333820fe2292fedc0b31608c5c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202275"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949014"
 ---
 # <a name="how-to-save-dataset-changes-to-a-database"></a>如何：将数据集更改保存到数据库中
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,15 +69,15 @@ ms.locfileid: "49202275"
 ## <a name="updating-two-related-tables-in-a-dataset"></a>更新数据集中的两个相关的表  
  当更新在数据集中的相关的表时，务必更新以正确的顺序，降低违反引用完整性约束的可能性。 命令执行的顺序也将遵循的索引<xref:System.Data.DataRowCollection>在数据集中。 若要防止数据完整性错误而引发，最佳做法是以更新数据库，按以下顺序：  
   
-1.  子表： 删除记录。  
+1. 子表： 删除记录。  
   
-2.  父表： 插入、 更新和删除记录。  
+2. 父表： 插入、 更新和删除记录。  
   
-3.  子表： 插入和更新记录。  
+3. 子表： 插入和更新记录。  
   
- 将数据保存从多个表的详细信息，请参阅[将数据保存到数据库 （多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)。  
+   将数据保存从多个表的详细信息，请参阅[将数据保存到数据库 （多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)。  
   
- 如果要更新两个或多个相关的表，则应包含在一个事务内的所有更新逻辑。 事务是指一个过程，它首先确保对数据库的所有相关更改均可成功完成，然后再提交更改。 有关详细信息，请参阅[事务和并发性](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
+   如果要更新两个或多个相关的表，则应包含在一个事务内的所有更新逻辑。 事务是指一个过程，它首先确保对数据库的所有相关更改均可成功完成，然后再提交更改。 有关详细信息，请参阅[事务和并发性](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b)。  
   
 #### <a name="to-update-two-related-tables-using-a-tableadapter"></a>若要更新使用 TableAdapter 的两个相关的表  
   

@@ -1,5 +1,5 @@
 ---
-title: INTERCEPT_EXCEPTION_ACTION |Microsoft 文档
+title: INTERCEPT_EXCEPTION_ACTION |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8241ab85ad705200e256b4facccaecd0a50a1de
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1249e6b435f7cd396ea7912cb7aebf8d78cf94f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31124447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948377"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 指定当截获异常时要执行的操作。  
@@ -44,10 +44,10 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
   
 #### <a name="parameters"></a>参数  
  IEA_INTERCEPT  
- 启用截获当前异常。 这是唯一目前支持的值，必须指定。  
+ 启用截获当前异常。 这是目前支持的唯一值，必须指定。  
   
 ## <a name="remarks"></a>备注  
- 这些值传递给[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法。  
+ 这些值传递到[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -56,6 +56,6 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

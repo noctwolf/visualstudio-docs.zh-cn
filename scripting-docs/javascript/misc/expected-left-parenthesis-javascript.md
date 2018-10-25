@@ -1,5 +1,5 @@
 ---
-title: 预期 &#39; (&#39;(JavaScript) |Microsoft 文档
+title: 预期&#39;(&#39; (JavaScript) |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-client-threshold
@@ -21,14 +21,14 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 31f611c2dc387a4aec574a3d5f8525b7b298d39d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24633277"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942278"
 ---
-# <a name="expected-3939-javascript"></a>预期 &#39; (&#39;(JavaScript)
-你试图将括在括号内，一组内的表达式，但不是包括左括号。 某些表达式必须括在一组的左、 右括号内。 请注意，使用在下面的示例中的括号。  
+# <a name="expected-3939-javascript"></a>预期&#39;(&#39; (JavaScript)
+您试图将括在括号内，一组表达式，但不是包括左括号。 某些表达式必须括在一组左、 右括号。 请注意，使用下面的示例中的括号。  
   
 ```JavaScript  
 for (initialize; test; increment) {  
@@ -38,4 +38,4 @@ statement;
   
 ### <a name="to-correct-this-error"></a>更正此错误  
   
--   添加为计算表达式的左的括号。
+-   将左的括号添加到的求值表达式。

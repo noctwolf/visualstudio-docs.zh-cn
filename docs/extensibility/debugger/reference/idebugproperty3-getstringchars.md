@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty3::GetStringChars |Microsoft 文档
+title: IDebugProperty3::GetStringChars |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f7d5430326f57acf686b90f911445cc36dbf02
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d6df39bcd02fe74e2c6ada24d341cd3d2fdfb75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118240"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932924"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
-检索此属性与关联的字符串，并将其存储在用户提供的缓冲区。  
+检索与此属性关联的字符串并将其存储在用户提供的缓冲区。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,12 +45,12 @@ int GetStringChars(
   
 #### <a name="parameters"></a>参数  
  `buflen`  
- [in]用户提供缓冲区可以容纳最大字符数。  
+ [in]用户提供缓冲区可容纳最大字符数。  
   
  `rgString`  
  [out]返回的字符串。  
   
- [仅 c + +]，`rgString`是指向接收字符串的 Unicode 字符的缓冲区的指针。 此缓冲区必须至少`buflen`大小中的字符 （不字节为单位）。  
+ [仅 c + +]，`rgString`指向该缓冲区用于接收字符串的 Unicode 字符的指针。 此缓冲区必须至少为`buflen`中大小的字符 （而非字节）。  
   
  `pceltFetched`  
  [out]其中返回的实际存储在缓冲区中的字符数。 (可以是`NULL`c + + 中。)  
@@ -59,10 +59,10 @@ int GetStringChars(
  如果成功，则返回`S_OK`; 否则返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- C + + 中必须格外小心地保证缓冲区至少`buflen`Unicode 字符。 请注意，Unicode 字符长 2 个字节。  
+ 在 c + +，必须格外小心以确保缓冲区至少`buflen`Unicode 字符。 请注意，Unicode 字符 2 个字节长。  
   
 > [!NOTE]
->  在 c + +，则返回的字符串不包括终止 null 字符。 如果给出，`pceltFetched`将字符串中指定的字符数。  
+>  在 c + +，则返回的字符串不包括终止 null 字符。 如果给定，`pceltFetched`将在字符串中指定的字符数。  
   
 ## <a name="example"></a>示例  
  
@@ -87,7 +87,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```    
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

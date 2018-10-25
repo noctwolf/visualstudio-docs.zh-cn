@@ -1,5 +1,5 @@
 ---
-title: 进程视图 |Microsoft 文档
+title: 进程视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,41 +14,41 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cd848f2e771a2207e89d67eddbead22d2180990
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 003ea4962766d9c0b8adef698912024fecd1508e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474841"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936701"
 ---
 # <a name="processes-view"></a>进程视图
-进程视图显示你的系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定的系统进程，它通常对应于执行程序，请使用进程视图。 进程标识由模块名称，或者其指定为"系统 processes"。  
+进程视图显示在系统上的所有活动进程树。 显示进程 ID 和模块名称。 如果你想要检查特定系统进程，它通常对应于正在执行的程序，请使用进程视图。 进程标识由模块名称，或者它们被指定"系统进程"。  
   
- Microsoft Windows 支持多个进程。 每个进程都可以有一个或多个线程和每个线程可以具有一个或多个关联的顶级窗口。 每个顶级窗口可以拥有一系列窗口。 一个 + 符号指示级别处于折叠状态。 在折叠的视图包含一个行，每个进程。 单击 + 符号来扩展该级别。  
+ Microsoft Windows 支持多个进程。 每个进程都可以有一个或多个线程和每个线程可以具有一个或多个关联的顶级窗口。 每个顶层窗口都可以拥有一系列的 windows。 一个 + 符号指示一个级别处于折叠状态。 折叠的视图包含每个进程的一行。 单击加号以展开级别。  
   
- 如果你想要检查特定的系统进程，它通常对应于执行程序，请使用进程视图。 进程标识由模块名称，或者其指定为"系统 processes"。 若要查找进程，折叠树和搜索列表。  
+ 如果你想要检查特定系统进程，它通常对应于正在执行的程序，请使用进程视图。 进程标识由模块名称，或者它们被指定"系统进程"。 若要查找一个过程，折叠决策树和搜索列表。  
   
 ## <a name="procedures"></a>过程  
   
 #### <a name="to-open-the-processes-view"></a>若要打开进程视图  
   
-1.  从**Spy**菜单上，选择**进程**。  
+1. 从**Spy**菜单中，选择**进程**。  
   
- ![Spy&#43; &#43;进程视图](../debugger/media/spy--_processes.png "Spy + + _Processes")  
-Spy++ 进程视图  
+   ![Spy&#43; &#43;进程视图](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+   Spy++ 进程视图  
   
- 上图显示了与进程和线程节点已展开的进程视图。  
+   上图中显示与进程和线程节点已展开进程视图。  
   
 ### <a name="in-this-section"></a>本节内容  
- [进程视图中的进程搜索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- 说明如何在进程视图中查找特定的进程。  
+ [在进程视图中的进程搜索](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ 介绍如何在进程视图中查找特定的进程。  
   
  [显示进程属性](../debugger/how-to-display-process-properties.md)  
- 说明如何显示一条消息有关的详细信息。  
+ 说明如何显示一条消息的详细信息。  
   
 ### <a name="related-sections"></a>相关章节  
  [Spy++ 视图](../debugger/spy-increment-views.md)  
- 说明 windows、 消息、 进程和线程 Spy + + 树视图。  
+ 介绍 windows、 消息、 进程和线程的 Spy + + 树的视图。  
   
  [使用 Spy++](../debugger/using-spy-increment.md)  
  引入了 Spy + + 工具，并说明如何使用它。  
@@ -60,4 +60,4 @@ Spy++ 进程视图
  显示在进程视图中选择的进程的属性。  
   
  [Spy++ 参考](../debugger/spy-increment-reference.md)  
- 包含描述每个 Spy + + 菜单和对话框框中的部分。
+ 包含描述每个 Spy + + 菜单和对话框中的各个部分。

@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 966f9dd422137b2966deb23a7c29e328a21957a5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: ef2a2800ecb46f12f9dde4357bf54711a1df8797
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934673"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>演练： 调入 SharePoint 客户端对象模型中的服务器资源管理器扩展
   本演练演示如何从适用于扩展调用 SharePoint 客户端对象模型**SharePoint 连接**中的节点**服务器资源管理器**。 有关如何使用 SharePoint 客户端对象模型的详细信息，请参阅[调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
@@ -57,11 +57,11 @@ ms.locfileid: "42635263"
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，必须创建两个项目：  
   
--   若要创建要部署的 VSIX 包的 VSIX 项目**服务器资源管理器**扩展。  
+- 若要创建要部署的 VSIX 包的 VSIX 项目**服务器资源管理器**扩展。  
   
--   一个类库项目用于实现**服务器资源管理器**扩展。  
+- 一个类库项目用于实现**服务器资源管理器**扩展。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   

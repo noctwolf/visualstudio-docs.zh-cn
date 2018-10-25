@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 069dd7638296987c195fbae6cc9d858fdd3421ee
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 24cd668165b940955902605ef64c1ffb522b9fe1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37058667"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929772"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断入门
 在此部分中，你会准备首次使用图形诊断，然后从 Direct3D 应用捕获帧并在图形分析器中检查它们。  
@@ -34,17 +34,17 @@ ms.locfileid: "37058667"
   
 #### <a name="to-install-graphics-tools-for-windows-10"></a>为 Windows 10 安装图形工具  
   
-1.  在搜索中，键入**应用程序和功能**，然后打开**应用和功能**设置。
+1. 在搜索中，键入**应用程序和功能**，然后打开**应用和功能**设置。
   
-3.  在右侧**应用和功能**对话框中，选择**管理可选功能**(在**应用和功能**)。
+2. 在右侧**应用和功能**对话框中，选择**管理可选功能**(在**应用和功能**)。
 
-    **管理可选功能**此时将显示对话框。
+   **管理可选功能**此时将显示对话框。
   
-4.  在中**管理可选功能**对话框中，选择**添加一项功能**。 可以安装的可选功能列表随即出现。  
+3. 在中**管理可选功能**对话框中，选择**添加一项功能**。 可以安装的可选功能列表随即出现。  
   
-5.  选择**图形工具**的功能列表，然后选择**安装**。  
+4. 选择**图形工具**的功能列表，然后选择**安装**。  
   
- 安装 Windows 10 SDK 时，也会自动安装图形工具功能。  
+   安装 Windows 10 SDK 时，也会自动安装图形工具功能。  
   
 > [!TIP]
 >  可选的图形工具功能的 Windows 10 提供轻量级捕获和播放功能 — 如命令行捕获程序**dxcap.exe**，可以采用支持、 测试和上的诊断方案未安装开发人员工具的计算机。 有关详细信息，请参阅[命令行捕获工具](command-line-capture-tool.md)主题。  
@@ -58,7 +58,7 @@ ms.locfileid: "37058667"
 - **DirectX 11 应用 (通用 Windows)** 或**DirectX 12 应用 (通用 Windows)** 适用于 Windows 10 的项目模板。
 - [Direct3D 12 UAP 示例](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f)适用于 Windows 10。  
   
- 确保在继续之前可以生成应用。  
+  确保在继续之前可以生成应用。  
   
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - 启动图形诊断会话  
  现在你已准备好启动第一个图形诊断会话。 在 Visual Studio 中，在主菜单上，选择**调试、 图形，启动图形调试**，或只需按**Alt + F5**。 这会在图形诊断下启动你的应用并在 Visual Studio 中显示诊断会话窗口。  
@@ -75,11 +75,11 @@ ms.locfileid: "37058667"
   
 #### <a name="to-capture-a-sequence-of-frames"></a>捕获帧序列  
   
--   在 Visual Studio 中，在诊断会话窗口中，设置**要捕获的帧**到你想要在序列中捕获的帧数，然后按顺序捕获的使用任何上述捕获单个帧的方法。  
+- 在 Visual Studio 中，在诊断会话窗口中，设置**要捕获的帧**到你想要在序列中捕获的帧数，然后按顺序捕获的使用任何上述捕获单个帧的方法。  
   
-     若要再次捕获单个帧，设置**要捕获的帧**到*1*。  
+   若要再次捕获单个帧，设置**要捕获的帧**到*1*。  
   
- 完成后捕获帧只需退出应用，或选择**停止**从图形工具栏或诊断会话窗口按钮。  
+  完成后捕获帧只需退出应用，或选择**停止**从图形工具栏或诊断会话窗口按钮。  
   
 ### <a name="4---examine-captured-frames-in-the-graphics-analyzer"></a>4-检查在图形分析器中捕获的帧  
  现在你已准备好检查刚捕获的帧。 若要开始分析帧，请从诊断会话窗口选择要检查的帧的帧号码。 这将打开中的帧**图形分析器**，其中您可以使用图形诊断工具来检查您的应用程序如何使用 Direct3D 来跟踪呈现问题，或使用**帧分析**到工具了解其性能。  

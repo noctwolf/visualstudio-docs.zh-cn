@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b74929d741b166d30762d7a84bf001a0ea7ba429
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268159"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933425"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>重写和扩展生成的类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ DSL 定义是一个平台，你可以在其生成一组强大的基于域特定�
   
  例如，在示例 Library.dsl，`CirculationBook`域类具有`Generates``Double Derived`属性设置为`true`。 为此域类生成的代码包含两个类：  
   
--   `CirculationBookBase`它是一个抽象，它包含所有方法和属性。  
+- `CirculationBookBase`它是一个抽象，它包含所有方法和属性。  
   
--   `CirculationBook`它派生自`CirculationBookBase`。 它是空的但其构造函数除外。  
+- `CirculationBook`它派生自`CirculationBookBase`。 它是空的但其构造函数除外。  
   
- 若要重写任何方法，您创建派生类的分部定义如`CirculationBook`。 您可以重写生成的方法和从建模 framework 继承的方法。  
+  若要重写任何方法，您创建派生类的分部定义如`CirculationBook`。 您可以重写生成的方法和从建模 framework 继承的方法。  
   
- 与所有类型的元素，包括模型元素、 关系、 形状、 图和连接器，可以使用此方法。 此外可以重写的其他生成的类的方法。 某些生成如 ToolboxHelper 始终是双派生的类。  
+  与所有类型的元素，包括模型元素、 关系、 形状、 图和连接器，可以使用此方法。 此外可以重写的其他生成的类的方法。 某些生成如 ToolboxHelper 始终是双派生的类。  
   
 ### <a name="custom-constructors"></a>自定义构造函数  
  您不能重写构造函数。 甚至在双派生类中，构造函数必须在派生类中。  

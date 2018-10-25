@@ -1,5 +1,5 @@
 ---
-title: 演练： 捕获图形信息 |Microsoft 文档
+title: 演练： 捕获图形信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 037bdbbfb81c36e4f8e4d124801907ca0600aee7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 81e647f1e98a13a87c1b526630eee349fde3fd69
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31476343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932918"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>演练：捕获图形信息
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断从 Direct3D 应用手动捕获图形信息。  
@@ -31,29 +31,29 @@ ms.locfileid: "31476343"
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>在加载项目或解决方案后启用图形信息捕获  
   
-1.  在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
+1. 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]中，为你希望从中捕获图形信息的应用加载项目或解决方案文件。  
   
-2.  在“图形诊断”工具栏上，选择“启动诊断” 。  
+2. 在“图形诊断”工具栏上，选择“启动诊断” 。  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>不加载项目或解决方案而启用图形信息捕获  
   
-1.  在菜单栏上，依次选择 **“文件”**、 **“打开”** 和 **“项目/解决方案”**。 此时将出现“打开项目”  对话框。  
+1. 在菜单栏上，依次选择 **“文件”**、 **“打开”** 和 **“项目/解决方案”**。 此时将出现“打开项目”  对话框。  
   
-2.  不为应用指定项目或解决方案文件，而是为其指定你希望从中捕获图形信息的可执行文件，然后选择“打开” 。  
+2. 不为应用指定项目或解决方案文件，而是为其指定你希望从中捕获图形信息的可执行文件，然后选择“打开” 。  
   
-3.  在菜单栏上，依次选择 **“调试”**、 **“图形”**、 **“启动诊断”**。  
+3. 在菜单栏上，依次选择 **“调试”**、 **“图形”**、 **“启动诊断”**。  
   
- 在启动应用并且它呈现帧之后，您可捕获图形信息。  
+   在启动应用并且它呈现帧之后，您可捕获图形信息。  
   
 #### <a name="to-capture-graphics-information"></a>捕获图形信息  
   
--   在“图形诊断”工具栏上，选择“捕获”  按钮。 ![图形捕获按钮图标](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
+- 在“图形诊断”工具栏上，选择“捕获”  按钮。 ![图形捕获按钮图标](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")  
   
-     -或-  
+   或  
   
-     当焦点位于应用上时，按 **Print Screen**。  
+   当焦点位于应用上时，按 **Print Screen**。  
   
- 每次捕获有关帧的信息时，图形诊断都将记录 Direct3D 事件和关联的状态，并将该数据添加到图形日志。 将为每个图形诊断会话创建一个新图形日志。 有关图形日志的信息，请参阅[概述](overview-of-visual-studio-graphics-diagnostics.md)。  
+  每次捕获有关帧的信息时，图形诊断都将记录 Direct3D 事件和关联的状态，并将该数据添加到图形日志。 将为每个图形诊断会话创建一个新图形日志。 有关图形日志的信息，请参阅[概述](overview-of-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="next-steps"></a>后续步骤  
  本演练演示了如何手动捕获图形信息。 下一步，请考虑此选项：  

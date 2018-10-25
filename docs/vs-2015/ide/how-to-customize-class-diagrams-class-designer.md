@@ -19,12 +19,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ffa0506b6a7c49cdf1ba1f3c86d865df3c59a7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6a4b163aef25972968933d3352486aab9ebbf962
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296174"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950971"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>如何：自定义类图（类设计器）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,11 +129,11 @@ ms.locfileid: "49296174"
   
 ##  <a name="DisplayAssociationAndInheritance"></a> 显示隐藏的关系  
   
-1.  在类设计器中打开并选择类图文件。  
+1. 在类设计器中打开并选择类图文件。  
   
-2.  右击具有隐藏的关联或继承的类型。  
+2. 右击具有隐藏的关联或继承的类型。  
   
- 对关联行单击“显示所有成员”，对继承行单击“显示基类”或“显示派生类”。  
+   对关联行单击“显示所有成员”，对继承行单击“显示基类”或“显示派生类”。  
   
 ##  <a name="RemoveCodeAndShape"></a> 从类图中删除形状  
  你可以在不影响类型的基础代码的情况下从类图中删除类型形状。 从类图移除类型形状只会影响该关系图：定义类型的基础代码和显示类型的其他关系图不受影响。  
