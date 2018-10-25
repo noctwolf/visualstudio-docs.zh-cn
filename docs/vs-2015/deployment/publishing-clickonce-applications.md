@@ -26,12 +26,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 70cf261f2d235a8ed1b27550acad916cf5a355a7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4282ce38671e2270c1e91d70df8968d790c54a22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49265637"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891760"
 ---
 # <a name="publishing-clickonce-applications"></a>发布 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +43,15 @@ ms.locfileid: "49265637"
 ## <a name="publish-wizard"></a>发布向导  
  你可以使用“发布向导”进行基本设置以发布应用程序。 这包括以下发布属性：  
   
--   发布文件夹所在的位置 - Visual Studio 将从其复制文件的位置（本地计算机、网络文件共享、FTP 服务器或网站）  
+- 发布文件夹所在的位置 - Visual Studio 将从其复制文件的位置（本地计算机、网络文件共享、FTP 服务器或网站）  
   
--   安装文件夹所在的位置 - 最终用户将从其进行安装的位置（网络文件共享、FTP 服务器、网站、CD/DVD）  
+- 安装文件夹所在的位置 - 最终用户将从其进行安装的位置（网络文件共享、FTP 服务器、网站、CD/DVD）  
   
--   联机或脱机可用性 - 最终用户在有或没有网络连接的情况下访问应用程序  
+- 联机或脱机可用性 - 最终用户在有或没有网络连接的情况下访问应用程序  
   
--   更新频率 - 应用程序检查新更新的频率。  
+- 更新频率 - 应用程序检查新更新的频率。  
   
- 有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
+  有关详细信息，请参阅[如何： 发布 ClickOnce 应用程序使用发布向导](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。  
   
 ## <a name="publish-page"></a>“发布”页面  
  “项目设计器”  上的“发布”  页面用于针对 ClickOnce 部署配置属性。 下表列出主题  

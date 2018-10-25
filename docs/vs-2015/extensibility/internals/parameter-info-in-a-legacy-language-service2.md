@@ -17,12 +17,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6362b05967d937afa3b08a0680fd62854645b728
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fabc1f5e199b9b1456db704552a288a6c9beb76f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887561"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>旧版语言服务中的参数信息
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,11 +101,11 @@ namespace TestLanguagePackage
 ## <a name="supporting-the-parameter-info-tooltip-in-the-parser"></a>在分析器中支持的参数信息工具提示  
  <xref:Microsoft.VisualStudio.Package.Source>类会进行某些假设的内容<xref:Microsoft.VisualStudio.Package.AuthoringScope>和<xref:Microsoft.VisualStudio.Package.AuthoringSink>类时显示和更新的参数信息工具提示。  
   
--   给定分析器<xref:Microsoft.VisualStudio.Package.ParseReason>时键入参数列表的起始字符。  
+- 给定分析器<xref:Microsoft.VisualStudio.Package.ParseReason>时键入参数列表的起始字符。  
   
--   给定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>对象是参数列表的起始字符之后立即。 分析器必须收集的位置并将其存储在你的版本的列表中的所有可在方法声明签名<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象。 此列表包括方法名称，方法类型 （或返回类型），以及可能的参数的列表。 更高版本的方法签名或签名的参数信息工具提示中显示搜索此列表。  
+- 给定的位置<xref:Microsoft.VisualStudio.Package.ParseRequest>对象是参数列表的起始字符之后立即。 分析器必须收集的位置并将其存储在你的版本的列表中的所有可在方法声明签名<xref:Microsoft.VisualStudio.Package.AuthoringScope>对象。 此列表包括方法名称，方法类型 （或返回类型），以及可能的参数的列表。 更高版本的方法签名或签名的参数信息工具提示中显示搜索此列表。  
   
- 分析器必须然后分析由指定的行<xref:Microsoft.VisualStudio.Package.ParseRequest>中键入参数是对象来收集输入的方法以及多久完成用户的名称。 这通过传递到方法的名称来实现<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>对象，然后再调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>分析方法时参数列表的起始字符时，调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>方法时参数列表下一个字符是已分析，并最后调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>方法分析的参数列表末尾字符时。 将使用这些方法调用的结果<xref:Microsoft.VisualStudio.Package.Source>类，以相应地更新参数信息工具提示。  
+  分析器必须然后分析由指定的行<xref:Microsoft.VisualStudio.Package.ParseRequest>中键入参数是对象来收集输入的方法以及多久完成用户的名称。 这通过传递到方法的名称来实现<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A>方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>对象，然后再调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>分析方法时参数列表的起始字符时，调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>方法时参数列表下一个字符是已分析，并最后调用<xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>方法分析的参数列表末尾字符时。 将使用这些方法调用的结果<xref:Microsoft.VisualStudio.Package.Source>类，以相应地更新参数信息工具提示。  
   
 ### <a name="example"></a>示例  
  下面是文本的用户可能输入行。 线下方的数字表示哪些步骤均由该位置中的行 （假设分析移动从左到右） 分析器。 此处的假设是，在行之前的所有内容已进行分析的方法签名，包括"testfunc"方法签名。  

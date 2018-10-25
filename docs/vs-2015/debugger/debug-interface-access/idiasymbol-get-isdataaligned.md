@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06016472ee627134fb5eb328cf82d0c3de1b5365
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4e01ab9de41bd8ead1348eb58308008e55e6323e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251109"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891968"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ HRESULT get_isDataAligned(
 >  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
- 使用非默认数据对齐方式编译可执行文件时，通常设置此属性。 例如，Microsoft c + + 编译器可以更改使用命令行选项时，数据对齐 /Zp*#*，其中*#* 是一个字节值。  
+ 使用非默认数据对齐方式编译可执行文件时，通常设置此属性。 例如，Microsoft c + + 编译器可以更改使用命令行选项时，数据对齐 /Zp<em>#</em>，其中*#* 是一个字节值。  
   
 ## <a name="requirements"></a>要求  
   

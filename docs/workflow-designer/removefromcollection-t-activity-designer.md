@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a9bdbdd951b5d67575e9bf9283dcc054dfa25b13
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 415d03ffda6bbd2e839354b4f7cb143337ab08c8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891357"
 ---
 # <a name="removefromcollectiont-activity-designer"></a>RemoveFromCollection\<T > 活动设计器
 
@@ -29,14 +29,15 @@ ms.locfileid: "47860207"
 
 ### <a name="using-the-removefromcollectiont-activity-designer"></a>使用 RemoveFromCollection\<T > 活动设计器
 
-访问**RemoveFromCollection\<T >** 活动设计器中的**集合**类别**工具箱**。 **RemoveFromCollection\<T >** 活动设计器可以从拖动**工具箱**和无论通常放置活动的如在何处放置到工作流设计器图面内部<xref:System.Activities.Statements.Sequence>。 这将创建<xref:System.Activities.Statements.RemoveFromCollection%601>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>RemoveFromCollection 的 < Int32\>。 <xref:System.Activities.Activity.DisplayName%2A>值可以在的标头中编辑**RemoveFromCollection < T\>** 活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在属性网格上编辑。
+访问**RemoveFromCollection\<T >** 活动设计器中的**集合**类别**工具箱**。
+**RemoveFromCollection\<T >** 活动设计器可以从拖动**工具箱**和无论通常放置活动的如在何处放置到工作流设计器图面内部<xref:System.Activities.Statements.Sequence>。 这将创建<xref:System.Activities.Statements.RemoveFromCollection%601>默认值的活动<xref:System.Activities.Activity.DisplayName%2A>RemoveFromCollection 的 < Int32\>。 <xref:System.Activities.Activity.DisplayName%2A>值可以在的标头中编辑**RemoveFromCollection < T\>** 活动设计器中或在**DisplayName**属性网格的框。 其他属性必须在属性网格上编辑。
 
 ### <a name="the-removefromcollectiont-properties"></a>RemoveFromCollection < T\>属性
 
 下表显示<xref:System.Activities.Statements.RemoveFromCollection%601>属性并说明如何在设计器中使用：
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.RemoveFromCollection%601> 活动的可选友好名称。 默认值为 RemoveFromCollection < Int32\>。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Item%2A>|True|要移除的项**集合\<T >**。 此项的类型是*T*，它属于类型*TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
 |<xref:System.Activities.Statements.RemoveFromCollection%601.Collection%2A>|True|应从中删除项的集合。 此集合属于类型**ICollection < TypeArgument\>。** 若要指定集合，请键入在属性网格中的 Visual Basic 表达式。|

@@ -1,5 +1,5 @@
 ---
-title: 托管代码中的断言 |Microsoft 文档
+title: 托管代码中的断言 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -24,15 +24,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: e5b4c66beba2a4c3953a0720a3f770f7f651db79
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 07f422348a10bbe6d5c02a50073c9486a679cfaf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465403"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892059"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
-断言（或 `Assert` 语句）测试您指定为 `Assert` 语句的参数的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
+断言（或 `Assert` 语句）测试你指定为 `Assert` 语句的自变量的条件。 如果此条件的计算结果为 true，则不发生操作。 如果此条件的计算结果 false，则断言失败。 如果正在使用调试版本运行，则程序将进入中断模式。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [在 System.Diagnostics Namespace 中断言](#BKMK_Asserts_in_the_System_Diagnostics_Namespace)  
@@ -52,7 +52,7 @@ ms.locfileid: "31465403"
 ##  <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> 在 System.Diagnostics Namespace 中断言  
  在 Visual Basic 和 Visual C# 中，可以使用 `Assert` 或 <xref:System.Diagnostics.Debug>（二者位于 <xref:System.Diagnostics.Trace> 命名空间中）中的 <xref:System.Diagnostics> 方法。 程序的发行版中不包含 <xref:System.Diagnostics.Debug> 类方法，因此它们不增大发行代码的大小，也不会减慢发行代码的速度。  
   
- C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 你可以使用来实现相同的效果<xref:System.Diagnostics.Trace>类与条件编译，如`#ifdef DEBUG`...`#endif`.  
+ C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`.  
   
  [在本主题中](#BKMK_In_this_topic)  
   
@@ -144,22 +144,22 @@ Debug.Assert ( temp != 0 );
   
  否则，若要使 <xref:System.Diagnostics.Trace> 方法能够正常工作，程序必须在源文件的顶部放置下列项之一：  
   
--   Visual Basic 中的 `#Const TRACE = True`  
+- Visual Basic 中的 `#Const TRACE = True`  
   
--   Visual C# 和 C++ 中的 `#define TRACE`  
+- Visual C# 和 C++ 中的 `#define TRACE`  
   
- 或者，程序必须是用 TRACE 选项生成的：  
+  或者，程序必须是用 TRACE 选项生成的：  
   
--   Visual Basic 中的 `/d:TRACE=True`  
+- Visual Basic 中的 `/d:TRACE=True`  
   
--   Visual C# 和 C++ 中的 `/d:TRACE`  
+- Visual C# 和 C++ 中的 `/d:TRACE`  
   
- 如果需要在 C# 或 Visual Basic 发行版中使用 DEBUG 方法，您必须在“发布”配置中定义 DEBUG 符号。  
+  如果需要在 C# 或 Visual Basic 发行版中使用 DEBUG 方法，您必须在“发布”配置中定义 DEBUG 符号。  
   
- C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 你可以使用来实现相同的效果<xref:System.Diagnostics.Trace>类与条件编译，如`#ifdef DEBUG`...`#endif`. 你可以定义中的这些符号**\<项目 > 属性页**对话框。 有关详细信息，请参阅[更改 Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`. 您可以定义中的这些符号**\<项目 > 属性页**对话框。 有关详细信息，请参阅[更改为 Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ##  <a name="BKMK_Assert_arguments"></a> 断言自变量  
- <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多有三个参数。 第一个自变量是强制的，它是要检查的条件。 如果调用<xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>仅带一个参数，`Assert`方法检查条件，并且如果结果为 false，将输出到调用堆栈的内容**输出**窗口。 下面的示例显示 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：  
+ <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多有三个参数。 第一个自变量是强制的，它是要检查的条件。 如果您调用<xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>只有一个参数与`Assert`方法检查条件，并且如果结果为 false，则输出到调用堆栈的内容**输出**窗口。 下面的示例显示 <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName>：  
   
 ```VB  
 Debug.Assert(stacksize > 0)  
@@ -171,7 +171,7 @@ Debug.Assert ( stacksize > 0 );
 Trace.Assert ( stacksize > 0 );   
 ```  
   
- 第二个和第三个自变量（如果有）必须是字符串。 如果调用带有两个或三个参数的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个参数为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：  
+ 第二个和第三个自变量（如果有）必须是字符串。 如果调用带有两个或三个自变量的 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>，则第一个自变量为条件。 该方法检查此条件，如果结果为 false，则输出第二个和第三个字符串。 下面的示例演示与以下两个参数一起使用的 <xref:System.Diagnostics.Debug.Assert(System.Boolean,System.String)?displayProperty=fullName> 和 <xref:System.Diagnostics.Trace.Assert(System.Boolean,System.String)?displayProperty=fullName>：  
   
 ```VB  
 Debug.Assert(stacksize > 0, "Out of stack space")  
@@ -199,11 +199,11 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
  [在本主题中](#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Customizing_Assert_behavior"></a> 自定义断言行为  
- 如果在用户界面模式中运行你的应用程序`Assert`方法显示**断言失败**对话框中的条件失败时。 断言失败时发生的操作由控制<xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>属性。  
+ 如果在用户界面模式中运行你的应用程序`Assert`方法将显示**断言失败**对话框中的条件失败时。 断言失败时发生的操作受<xref:System.Diagnostics.Debug.Listeners%2A>或<xref:System.Diagnostics.Trace.Listeners%2A>属性。  
   
  可以通过向 <xref:System.Diagnostics.TraceListener> 集合添加 `Listeners` 对象、从 <xref:System.Diagnostics.TraceListener> 集合中移除 `Listeners` 或者重写现有 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 的 `TraceListener` 方法来自定义输出行为，使其变得不同。  
   
- 例如，你无法重写<xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>方法写入事件日志而不是显示**断言失败**对话框。  
+ 例如，您可以重写<xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName>方法将写入事件日志而不是显示**断言失败**对话框。  
   
  若要通过此方式自定义输出，您的程序必须包含侦听器，并且必须从 <xref:System.Diagnostics.TraceListener> 继承并重写其 <xref:System.Diagnostics.TraceListener.Fail%2A?displayProperty=fullName> 方法。  
   
