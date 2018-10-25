@@ -18,25 +18,25 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 105a4ed0f30991fe656c7f257ca766dd06c150a9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b00f2ae82a2fd8afb62dcd42237bd313c0355ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261711"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941706"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用互操作程序集的命令和菜单
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 通过使用互操作程序集来实现菜单和工具栏命令的 VSPackage 必须：  
   
--   通知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有关所支持的命令以及它们当前是否启用的集成的开发环境 (IDE)。  
+- 通知[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]有关所支持的命令以及它们当前是否启用的集成的开发环境 (IDE)。  
   
--   遵守的规则 （协定） 处理的命令。  
+- 遵守的规则 （协定） 处理的命令。  
   
--   显式实现通过使用命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
+- 显式实现通过使用命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
   
- 下面介绍如何执行这些任务。  
+  下面介绍如何执行这些任务。  
   
 ## <a name="in-this-section"></a>本节内容  
  [使用互操作程序集确定命令状态](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

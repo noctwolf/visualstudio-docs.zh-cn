@@ -24,12 +24,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfa1f6fa49c8fab1bd93a0d2a38b85ec958a6fed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0b138b9ad49a0fd1a406e698aafd121478e95f4a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275699"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935401"
 ---
 # <a name="relationships-in-datasets"></a>数据集中的关系
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,33 +39,33 @@ ms.locfileid: "49275699"
   
  <xref:System.Data.DataRelation>对象执行两个功能：  
   
--   它可以提供与你正在使用的记录相关的记录。 它提供了子记录，如果你在父记录 (<xref:System.Data.DataRow.GetChildRows%2A>)，如果你正在使用子记录的父记录 (<xref:System.Data.DataRow.GetParentRow%2A>)。  
+- 它可以提供与你正在使用的记录相关的记录。 它提供了子记录，如果你在父记录 (<xref:System.Data.DataRow.GetChildRows%2A>)，如果你正在使用子记录的父记录 (<xref:System.Data.DataRow.GetParentRow%2A>)。  
   
--   它可以强制执行约束的引用完整性，例如当删除父记录中删除相关的子记录。  
+- 它可以强制执行约束的引用完整性，例如当删除父记录中删除相关的子记录。  
   
- 务必要了解真正的联接的函数之间的区别<xref:System.Data.DataRelation>对象。 在真正的联接，记录处于取自父和子表，将放入单个的平面记录集。 当你使用<xref:System.Data.DataRelation>对象，创建新的记录集。 相反，DataRelation 跟踪的表之间的关系，并使父和子记录保持同步。  
+  务必要了解真正的联接的函数之间的区别<xref:System.Data.DataRelation>对象。 在真正的联接，记录处于取自父和子表，将放入单个的平面记录集。 当你使用<xref:System.Data.DataRelation>对象，创建新的记录集。 相反，DataRelation 跟踪的表之间的关系，并使父和子记录保持同步。  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation 对象和约束  
  一个<xref:System.Data.DataRelation>对象还用于创建和强制实施以下限制：  
   
--   唯一约束，这可确保表中的列包含没有重复项。  
+- 唯一约束，这可确保表中的列包含没有重复项。  
   
--   Foreign key 约束，可用于在数据集中的父和子表之间维护引用完整性。  
+- Foreign key 约束，可用于在数据集中的父和子表之间维护引用完整性。  
   
- 在中指定的约束<xref:System.Data.DataRelation>对象实现通过自动创建相应的对象或设置属性。 如果您通过使用创建 foreign key 约束<xref:System.Data.DataRelation>对象、 实例的<xref:System.Data.ForeignKeyConstraint>类添加到<xref:System.Data.DataRelation>对象的<xref:System.Data.DataRelation.ChildKeyConstraint%2A>属性。  
+  在中指定的约束<xref:System.Data.DataRelation>对象实现通过自动创建相应的对象或设置属性。 如果您通过使用创建 foreign key 约束<xref:System.Data.DataRelation>对象、 实例的<xref:System.Data.ForeignKeyConstraint>类添加到<xref:System.Data.DataRelation>对象的<xref:System.Data.DataRelation.ChildKeyConstraint%2A>属性。  
   
- 唯一约束实现只需设置<xref:System.Data.DataColumn.Unique%2A>数据列到属性`true`或通过添加的实例<xref:System.Data.UniqueConstraint>类来<xref:System.Data.DataRelation>对象的<xref:System.Data.DataRelation.ParentKeyConstraint%2A>属性。 在数据集中挂起约束的信息，请参阅[填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
+  唯一约束实现只需设置<xref:System.Data.DataColumn.Unique%2A>数据列到属性`true`或通过添加的实例<xref:System.Data.UniqueConstraint>类来<xref:System.Data.DataRelation>对象的<xref:System.Data.DataRelation.ParentKeyConstraint%2A>属性。 在数据集中挂起约束的信息，请参阅[填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
   
 ### <a name="referential-integrity-rules"></a>引用完整性规则  
  作为外键约束的一部分，可以指定应用于三个点的引用完整性规则：  
   
--   更新父记录时  
+- 更新父记录时  
   
--   删除父记录时  
+- 删除父记录时  
   
--   当接受或拒绝更改  
+- 当接受或拒绝更改  
   
- 可在规则中指定<xref:System.Data.Rule>枚举并列出在下表中。  
+  可在规则中指定<xref:System.Data.Rule>枚举并列出在下表中。  
   
 |外键约束规则|操作|  
 |----------------------------------|------------|  

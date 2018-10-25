@@ -41,25 +41,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b1006a8c4b04fcb935d651f65031764a874b75f8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671517"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940224"
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：  
   
--   用户界面 (UI)，包含类似于窗体的受控输入。  
+- 用户界面 (UI)，包含类似于窗体的受控输入。  
   
--   限制条件，防止用户编辑文档或模板中的受保护部分。 有关详细信息，请参阅[通过使用内容控件保护文档的某些部分](#Protection)。  
+- 限制条件，防止用户编辑文档或模板中的受保护部分。 有关详细信息，请参阅[通过使用内容控件保护文档的某些部分](#Protection)。  
   
--   与数据源绑定的数据。 有关详细信息，请参阅[将数据绑定到内容控件](#DataBinding)。  
+- 与数据源绑定的数据。 有关详细信息，请参阅[将数据绑定到内容控件](#DataBinding)。  
   
- [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
+  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[将数据绑定到 Word 2007 内容控件适用于 Office system (3.0) 中使用 Visual Studio Tools](http://go.microsoft.com/fwlink/?LinkId=136785)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[将数据绑定到 Word 2007 内容控件适用于 Office system (3.0) 中使用 Visual Studio Tools](http://go.microsoft.com/fwlink/?LinkId=136785)。  
   
 ## <a name="overview-of-content-controls"></a>内容控件概述  
  内容控件提供了已针对用户输入和打印进行优化的 UI。 将内容控件添加到文档时，该控件通过边框、标题以及能够为用户提供说明的临时文本进行识别。 打印版本的文档中不会出现控件的边框和标题。  
@@ -68,11 +68,11 @@ ms.locfileid: "35671517"
   
  内容控件还有助于执行以下操作：  
   
--   防止用户编辑或删除文档各部分。 如果文档或模板中包含用户应能读取但无法编辑的信息，或者如果想让用户能够编辑内容控件但不能删除控件，可使用此方法。  
+- 防止用户编辑或删除文档各部分。 如果文档或模板中包含用户应能读取但无法编辑的信息，或者如果想让用户能够编辑内容控件但不能删除控件，可使用此方法。  
   
--   将文档或模板中的某些部分绑定到数据。 可以将内容控件绑定到数据库字段、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 中的托管对象、文档中存储的 XML 元素以及其他数据源。  
+- 将文档或模板中的某些部分绑定到数据。 可以将内容控件绑定到数据库字段、[!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 中的托管对象、文档中存储的 XML 元素以及其他数据源。  
   
- 在文档级项目中，可以在设计时或运行时向文档中添加内容控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档中添加内容控件。 有关详细信息，请参阅[如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
+  在文档级项目中，可以在设计时或运行时向文档中添加内容控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档中添加内容控件。 有关详细信息，请参阅[如何： 向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。  
   
 > [!NOTE]  
 >  仅在以 Open XML 格式保存的文档中，可以使用内容控件。 不能在 Word 97-2003 文档中保存的文档中使用内容控件 (*.doc*) 格式。  
@@ -133,11 +133,11 @@ ms.locfileid: "35671517"
   
  如果要保护的区域位于内容控件中，则可以使用内容控件的属性来阻止用户编辑或删除控件：  
   
--   **LockContents**属性阻止用户编辑的内容。  
+- **LockContents**属性阻止用户编辑的内容。  
   
--   **LockContentControl**属性阻止用户删除控件。  
+- **LockContentControl**属性阻止用户删除控件。  
   
- 如果要保护的区域不在内容控件中，或者要保护的区域中包含内容控件和其他类型的内容，则可以将整个区域置于 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中。 与其他内容控件不同，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供任何对用户可见的 UI。 其唯一的目的是定义用户无法编辑的区域。  
+  如果要保护的区域不在内容控件中，或者要保护的区域中包含内容控件和其他类型的内容，则可以将整个区域置于 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中。 与其他内容控件不同，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供任何对用户可见的 UI。 其唯一的目的是定义用户无法编辑的区域。  
   
 > [!NOTE]  
 >  如果创建包含嵌入式内容控件的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则不会自动保护嵌入的内容控件。 必须使用**LockContents**每个属性嵌入控件以防止用户编辑其内容。  
@@ -149,11 +149,11 @@ ms.locfileid: "35671517"
   
  内容控件提供以下数据绑定选项：  
   
--   可以使用与 Windows 窗体相同的数据绑定模型，将内容控件绑定到数据库字段或托管对象。  
+- 可以使用与 Windows 窗体相同的数据绑定模型，将内容控件绑定到数据库字段或托管对象。  
   
--   可以将内容控件绑定到的 XML 片段中的元素 (也称为*自定义 XML 部件*) 嵌入在文档中。  
+- 可以将内容控件绑定到的 XML 片段中的元素 (也称为*自定义 XML 部件*) 嵌入在文档中。  
   
- 在 Office 解决方案中的主机控件绑定到数据的概述，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+  在 Office 解决方案中的主机控件绑定到数据的概述，请参阅[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
 ### <a name="use-the-windows-forms-data-binding-model"></a>使用 Windows 窗体数据绑定模型  
  大多数内容控件都支持 Windows 窗体使用的简单数据绑定模型。 简单数据绑定意味着将控件绑定到单个数据元素，例如数据表中某一列的值。 有关详细信息，请参阅[数据绑定和 Windows 窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)。  

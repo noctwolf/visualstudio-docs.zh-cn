@@ -22,12 +22,12 @@ caps.latest.revision: 42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47cb401bae952e8ecdfaf18848e63f9d9a320be7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 853719e66bf7cd6a258bc2df231ca04fca7a9242
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884896"
 ---
 # <a name="walkthrough-debugging-a-multithreaded-application"></a>演练：调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,17 +105,17 @@ Thread::Sleep(3000);
   
 #### <a name="to-discover-the-thread-marker"></a>发现线程标记  
   
-1.  在中右击**线程**窗口中，然后单击**在源中显示线程**。  
+1. 在中右击**线程**窗口中，然后单击**在源中显示线程**。  
   
-2.  查看窗口左侧的滚动条槽。 在这条槽线上，您将看到一个类似于两根细线的图标。 一根线是红色的，另一根是蓝色的。 线程标记指示线程在此位置停止。 线程有可能在此位置停止。  
+2. 查看窗口左侧的滚动条槽。 在这条槽线上，您将看到一个类似于两根细线的图标。 一根线是红色的，另一根是蓝色的。 线程标记指示线程在此位置停止。 线程有可能在此位置停止。  
   
-3.  将指针悬停在线程标记上。 数据提示随即显示。 数据提示将告诉您每个已停止线程的名称和线程 ID 号。 在此情况下，只有一个线程，其名称可能是 `<noname>`。  
+3. 将指针悬停在线程标记上。 数据提示随即显示。 数据提示将告诉您每个已停止线程的名称和线程 ID 号。 在此情况下，只有一个线程，其名称可能是 `<noname>`。  
   
-4.  右击线程标记。 请注意快捷菜单上的选项。  
+4. 右击线程标记。 请注意快捷菜单上的选项。  
   
- 此图标是*线程标记*:  
+   此图标是*线程标记*:  
   
- ![线程标记](../debugger/media/threadmarker.gif "ThreadMarker")  
+   ![线程标记](../debugger/media/threadmarker.gif "ThreadMarker")  
   
 ## <a name="flagging-and-unflagging-threads"></a>标记线程和取消标记线程  
  在 [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] 中，可以标记要格外关注的线程。 标记线程是一种跟踪重要线程并忽略您不关心的线程的好方法。  

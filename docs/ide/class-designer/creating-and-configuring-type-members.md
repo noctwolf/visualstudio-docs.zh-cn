@@ -31,19 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b5e60da7ea3058f192ad59dcc57a493115a751b
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 0b93fa4720a6f0de9e2d7a64eb2c820811610297
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938794"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 
 可以将以下成员添加到类图上的类型中并在“类详细信息”窗口中配置这些成员：
 
 |**Type**|**包含的成员**|
-|--------------|--------------------------------|
+|--------------| - |
 |类|方法、属性（对于 C# 和 Visual Basic）、字段、事件（对于 C# 和 Visual Basic）、构造函数（方法）、析构函数（方法）和常数|
 |Enum|成员|
 |接口|方法、属性和事件（对于 C# 和 Visual Basic）|
@@ -58,7 +58,7 @@ ms.locfileid: "33957692"
 ## <a name="common-tasks"></a>常见任务
 
 |任务|支持内容|
-|----------|------------------------|
+|----------| - |
 |**开始：** 创建并配置类型成员之前，必须打开“类详细信息”窗口。|- [打开“类详细信息”窗口](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [“类详细信息”用法说明](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [显示只读信息](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [类图和“类详细信息”窗口中的键盘快捷方式和鼠标快捷方式](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
 |**创建和修改类型成员：** 可以使用“类详细信息”窗口创建新成员、修改成员并向方法中添加参数。|- [创建成员](creating-and-configuring-type-members.md#create-members)<br />- [修改类型成员](creating-and-configuring-type-members.md#modify-type-members)<br />- [向方法中添加参数](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 

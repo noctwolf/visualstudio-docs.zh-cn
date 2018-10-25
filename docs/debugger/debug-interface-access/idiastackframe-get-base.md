@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackframe:: Get_base |Microsoft 文档'
+title: 'Idiastackframe:: Get_base |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e59059380ab2ad4010fcce524d2323c02ab47ed7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 728c9af4470cfaa96d333cd41d119a342bc680ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31460978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931046"
 ---
 # <a name="idiastackframegetbase"></a>IDiaStackFrame::get_base
-检索帧的基址。  
+检索在帧的基址。  
   
 ## <a name="syntax"></a>语法  
   

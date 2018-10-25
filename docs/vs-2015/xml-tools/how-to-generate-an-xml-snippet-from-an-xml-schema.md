@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7911a23530a8aea7aa93e52f23f4aeb473e35c6e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6eb03fba400e20227155a2528b8aaf0b28f7761a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210727"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951465"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>如何：从 XML 架构生成 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,25 +29,25 @@ ms.locfileid: "49210727"
   
  此功能只适用于元素。 下列规则也适用：  
   
--   元素必须具有关联的架构类型；即元素必须符合某个关联的架构。 架构类型不能是抽象的，并且该类型必须包含必选的属性和/或必选的子元素。  
+- 元素必须具有关联的架构类型；即元素必须符合某个关联的架构。 架构类型不能是抽象的，并且该类型必须包含必选的属性和/或必选的子元素。  
   
--   编辑器中的当前元素必须是空的，不包含任何属性。 例如，下列元素均有效  
+- 编辑器中的当前元素必须是空的，不包含任何属性。 例如，下列元素均有效  
   
-    -   `<Account`  
+  -   `<Account`  
   
-    -   `<Account>`  
+  -   `<Account>`  
   
-    -   `<Account></Account>`  
+  -   `<Account></Account>`  
   
--   光标必须紧邻元素名右侧。  
+- 光标必须紧邻元素名右侧。  
   
- 生成的代码段包含所有必选的属性和元素。 如果 `minOccurs` 大于 1，代码段中将包括该元素所需的最小实例数，最多可达 100 个实例。 架构中发现的任何固定值都会使代码段中生成固定值。 `xsd:any` 和 `xsd:anyAttribute` 元素将被忽略，不生成任何其他代码段构造。  
+  生成的代码段包含所有必选的属性和元素。 如果 `minOccurs` 大于 1，代码段中将包括该元素所需的最小实例数，最多可达 100 个实例。 架构中发现的任何固定值都会使代码段中生成固定值。 `xsd:any` 和 `xsd:anyAttribute` 元素将被忽略，不生成任何其他代码段构造。  
   
- 将生成默认值并标记为可编辑值。 如果架构指定了默认值，将使用此默认值。 但是，如果架构的默认值是空字符串，编辑器将通过以下方式生成默认值：  
+  将生成默认值并标记为可编辑值。 如果架构指定了默认值，将使用此默认值。 但是，如果架构的默认值是空字符串，编辑器将通过以下方式生成默认值：  
   
--   如果架构类型包含任何枚举方面（直接或间接地利用联合类型的任何成员），架构对象模型中发现的第一个枚举值将作为默认值使用。  
+- 如果架构类型包含任何枚举方面（直接或间接地利用联合类型的任何成员），架构对象模型中发现的第一个枚举值将作为默认值使用。  
   
--   如果架构类型为原子类型，编辑器将获取原子类型并插入原子类型名称。 对于派生的简单类型，将使用基简单类型。 对于列表类型，原子类型为 `itemType`。 对于联合，原子类型为第一个 `memberType` 的原子类型。  
+- 如果架构类型为原子类型，编辑器将获取原子类型并插入原子类型名称。 对于派生的简单类型，将使用基简单类型。 对于列表类型，原子类型为 `itemType`。 对于联合，原子类型为第一个 `memberType` 的原子类型。  
   
 ## <a name="example"></a>示例  
  本节中的步骤说明如何使用“XML 编辑器”的从架构生成 XML 代码段的功能。  

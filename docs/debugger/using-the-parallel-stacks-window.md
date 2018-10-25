@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cd35f8545c1c768b07ff45ff8a6cdf84d24f3c58
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: d344cc8cd30d250c441788a7920d05086c38ca5f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940003"
 ---
 # <a name="view-threads-and-tasks-using-the-parallel-stacks-window"></a>查看线程和任务使用并行堆栈窗口
 **并行堆栈**时你正在调试多线程应用程序窗口非常有用。 其**线程视图**显示应用程序中的所有线程的都调用堆栈信息。 使用该视图可以在线程和这些线程上的堆栈帧之间进行导航。 在托管代码中，**任务视图**显示调用堆栈的<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象。 在本机代码中，**任务视图**所示的调用堆栈[任务组](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[并行算法](/cpp/parallel/concrt/parallel-algorithms)，[异步代理](/cpp/parallel/concrt/asynchronous-agents)，和[轻量级任务](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。  
@@ -92,21 +92,21 @@ ms.locfileid: "39176962"
 ## <a name="tasks-view"></a>任务视图  
  如果使用你的应用程序<xref:System.Threading.Tasks.Task?displayProperty=fullName>对象 （托管代码） 或`task_handle`表达并行性的对象 （本机代码），您可以使用并行堆栈窗口工具栏中的组合框切换到*任务视图*。 任务视图显示任务（而不是线程）的调用堆栈。 任务视图与线程视图不同，如下所示：  
   
--   不显示未运行任务的线程的调用堆栈。  
+- 不显示未运行任务的线程的调用堆栈。  
   
--   在顶部和底部对运行任务的线程的调用堆栈进行直观的修剪，以便显示与任务关系最密切的帧。  
+- 在顶部和底部对运行任务的线程的调用堆栈进行直观的修剪，以便显示与任务关系最密切的帧。  
   
--   当一个线程上有多个任务时，会将这些任务的调用堆栈拆分为单独的节点。  
+- 当一个线程上有多个任务时，会将这些任务的调用堆栈拆分为单独的节点。  
   
- 下图右侧显示的是并行堆栈任务视图，左侧显示的是对应的线程视图。  
+  下图右侧显示的是并行堆栈任务视图，左侧显示的是对应的线程视图。  
   
- ![任务并行堆栈窗口中的视图](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
+  ![任务并行堆栈窗口中的视图](../debugger/media/parallel_tasksview.png "Parallel_TasksView")  
   
- 若要查看整个调用堆栈，只需切换回线程视图通过右击堆栈帧，然后单击**转到线程**。  
+  若要查看整个调用堆栈，只需切换回线程视图通过右击堆栈帧，然后单击**转到线程**。  
   
- 中所述早期的表中，通过将鼠标悬停上一个方法，可以看到其他信息。 下图显示了线程视图和任务视图的工具提示中的信息。  
+  中所述早期的表中，通过将鼠标悬停上一个方法，可以看到其他信息。 下图显示了线程视图和任务视图的工具提示中的信息。  
   
- ![并行堆栈窗口中的工具提示](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
+  ![并行堆栈窗口中的工具提示](../debugger/media/parallel_stack_tooltips.png "Parallel_Stack_Tooltips")  
   
 ## <a name="method-view"></a>方法视图  
  在线程视图或任务视图中，可以通过单击工具栏上的“方法视图”图标，以当前方法为中心显示图形。 方法视图非常清晰地显示了调用当前方法或被当前方法调用的所有线程上的所有方法。 下图显示了一个线程视图，以及同样的信息在方法视图中的显示情况。  

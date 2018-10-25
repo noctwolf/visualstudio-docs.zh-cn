@@ -15,29 +15,29 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ab478d6a007081787d8b076e906f5094caea8b2d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d0f89d02d0fcccc66ddd1f66b411f6b3f542cff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939262"
 ---
 # <a name="adding-search-to-a-tool-window"></a>将搜索添加到工具窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 当创建或更新您的扩展插件中的工具窗口时，可以在 Visual Studio 中添加相同的搜索功能的其他位置出现。 此功能包括以下功能：  
   
--   在工具栏的自定义区域中始终位于一个搜索框。  
+- 在工具栏的自定义区域中始终位于一个搜索框。  
   
--   在搜索框本身叠加一个进度指示器。  
+- 在搜索框本身叠加一个进度指示器。  
   
--   只要输入每个字符 （即时搜索） 或者仅在选择 Enter 键 （按需搜索） 后，才显示结果的功能。  
+- 只要输入每个字符 （即时搜索） 或者仅在选择 Enter 键 （按需搜索） 后，才显示结果的功能。  
   
--   一个列表，显示为其已搜索最新的条款。  
+- 一个列表，显示为其已搜索最新的条款。  
   
--   筛选搜索按特定字段或搜索目标的各个方面的功能。  
+- 筛选搜索按特定字段或搜索目标的各个方面的功能。  
   
- 通过完成本演练，你将了解如何执行以下任务：  
+  通过完成本演练，你将了解如何执行以下任务：  
   
 1.  创建 VSPackage 项目。  
   
