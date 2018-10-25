@@ -15,12 +15,12 @@ ms.assetid: daa2df22-9181-4bad-b007-a7d40302bce1
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 950e7606292487f10ee6e901e82abaa3c6f92a08
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5c075d375e70a33d89e56dc9691b3f7af3ef4473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195723"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862971"
 ---
 # <a name="providing-a-language-service-context-by-using-the-legacy-api"></a>使用旧版 API 提供的语言服务上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,20 +39,20 @@ ms.locfileid: "49195723"
   
  有两种不同方式实现`IVsLanguageContextProvider`:  
   
--   提供对上下文包关键字  
+- 提供对上下文包关键字  
   
-     当在编辑器调用来更新上下文包时，传入适当的关键字和属性，然后返回`S_OK`。 此返回值指示要保留关键字和属性上下文而不会提供上下文包到光标位置处关键字的编辑器。  
+   当在编辑器调用来更新上下文包时，传入适当的关键字和属性，然后返回`S_OK`。 此返回值指示要保留关键字和属性上下文而不会提供上下文包到光标位置处关键字的编辑器。  
   
--   获取从光标位置处关键字的关键字  
+- 获取从光标位置处关键字的关键字  
   
-     当编辑器调用以更新上下文包时，相应的属性中传递，然后返回`E_FAIL`。 此返回值指示要保留你的特性中的上下文包，但更新上下文包使用的光标位置处关键字的编辑器。  
+   当编辑器调用以更新上下文包时，相应的属性中传递，然后返回`E_FAIL`。 此返回值指示要保留你的特性中的上下文包，但更新上下文包使用的光标位置处关键字的编辑器。  
   
- 下图演示了如何实现的语言服务提供上下文`IVsLanguageContextProvider`。  
+  下图演示了如何实现的语言服务提供上下文`IVsLanguageContextProvider`。  
   
- ![LangServiceImplementation2 图](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
-语言服务上下文  
+  ![LangServiceImplementation2 图](../extensibility/media/vslanguageservice2.gif "vsLanguageService2")  
+  语言服务上下文  
   
- 正如您在图中，可以看到[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心文本编辑器具有上下文包连接到它。 此上下文包指向三个单独的子上下文包： 语言服务、 默认编辑器和文本标记。 语言服务和文本标记子上下文包包含特性和关键字为语言服务，如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>接口实现，以及文本标记如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>接口实现。 如果未实现这些接口之一，在编辑器对默认编辑器子上下文包中光标位置处关键字提供上下文。  
+  正如您在图中，可以看到[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]核心文本编辑器具有上下文包连接到它。 此上下文包指向三个单独的子上下文包： 语言服务、 默认编辑器和文本标记。 语言服务和文本标记子上下文包包含特性和关键字为语言服务，如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider>接口实现，以及文本标记如果<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider>接口实现。 如果未实现这些接口之一，在编辑器对默认编辑器子上下文包中光标位置处关键字提供上下文。  
   
 ## <a name="context-guidelines-for-editors-and-designers"></a>上下文为编辑器和设计器的指导原则  
  设计器和编辑器必须提供的编辑器或设计器窗口的常规关键字。 这样，以便当用户按 F1 时，泛型类型，但相应，帮助主题将显示的设计器或编辑器。 编辑器必须除此之外，提供当前光标位置处关键字或提供基于当前所选内容的关键术语。 这样做是为了确保指向帮助主题的文本或 UI 元素，或选择显示在用户按 F1 时。 设计器提供了设计器，如在窗体上按钮中选择的项的上下文。 编辑器和设计器还必须连接到语言服务中所述[旧版语言服务基础知识](../extensibility/internals/legacy-language-service-essentials.md)。

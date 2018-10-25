@@ -15,12 +15,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1a413fd1787e4197cf46de6936523ef576016a37
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3aa3daa8925c9fec79f80d4d2fa6b4e8365b15b2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300308"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929330"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ ms.locfileid: "49300308"
 ## <a name="tracking-selection-in-the-ide"></a>跟踪在 IDE 中的选定内容  
  窗口框架或站点，拥有的 IDE，具有一个名为服务<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>。 以下步骤说明如何更改在选择到另一个打开的窗口中更改焦点或选择不同的项目项中的用户所致**解决方案资源管理器**，实现更改中显示的内容**属性**窗口。  
   
-1.  你在所选的窗口调用中确定位置的 VSPackage 创建的对象<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>能够<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
+1. 你在所选的窗口调用中确定位置的 VSPackage 创建的对象<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>能够<xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>。  
   
-2.  选择容器，提供的所选的窗口中，将创建其自己<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>对象。 当所选内容更改，VSPackage 调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>来通知任何侦听器在环境中，包括**属性**窗口中，更改。 它还提供对与新的所选内容相关的层次结构和项信息的访问。  
+2. 选择容器，提供的所选的窗口中，将创建其自己<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>对象。 当所选内容更改，VSPackage 调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>来通知任何侦听器在环境中，包括**属性**窗口中，更改。 它还提供对与新的所选内容相关的层次结构和项信息的访问。  
   
-3.  调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>并将其传递中的所选层次结构项`VSHPROPID_BrowseObject`参数填充<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>对象。  
+3. 调用<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>并将其传递中的所选层次结构项`VSHPROPID_BrowseObject`参数填充<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>对象。  
   
-4.  一个派生自[IDispatch 接口](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)为返回<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>请求的内容项，并在环境包装到<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>（请参阅下一步）。 如果调用失败，环境将第二个调用`IVsHierarchy::GetProperty`，并向其传递所选内容容器<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>提供层次结构项。  
+4. 一个派生自[IDispatch 接口](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)为返回<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>请求的内容项，并在环境包装到<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>（请参阅下一步）。 如果调用失败，环境将第二个调用`IVsHierarchy::GetProperty`，并向其传递所选内容容器<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>提供层次结构项。  
   
-     VSPackage 不会创建的项目<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>因为实现它的 VSPackage 的提供环境的窗口 (例如，**解决方案资源管理器**) 构造<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>代表其自身。  
+    VSPackage 不会创建的项目<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>因为实现它的 VSPackage 的提供环境的窗口 (例如，**解决方案资源管理器**) 构造<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>代表其自身。  
   
-5.  环境调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>若要获取基于的对象`IDispatch`接口以填写**属性**窗口。  
+5. 环境调用的方法<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>若要获取基于的对象`IDispatch`接口以填写**属性**窗口。  
   
- 中的值时**属性**更改窗口时，Vspackage 实现`IVsTrackSelectionEx::OnElementValueChangeEx`和`IVsTrackSelectionEx::OnSelectionChangeEx`要报告给此元素的值的更改。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>或<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>中显示的信息保持**属性**窗口同步的属性值。 有关详细信息，请参阅[属性窗口中更新属性值](../../misc/updating-property-values-in-the-properties-window.md)。  
+   中的值时**属性**更改窗口时，Vspackage 实现`IVsTrackSelectionEx::OnElementValueChangeEx`和`IVsTrackSelectionEx::OnSelectionChangeEx`要报告给此元素的值的更改。 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>或<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>中显示的信息保持**属性**窗口同步的属性值。 有关详细信息，请参阅[属性窗口中更新属性值](../../misc/updating-property-values-in-the-properties-window.md)。  
   
- 除了选择其他项目项中**解决方案资源管理器**若要显示与该项相关的属性，还可以选择从使用下拉列表可在上一个窗体或文档窗口中的不同对象**属性**窗口。 有关详细信息，请参阅[属性窗口对象列表](../../extensibility/internals/properties-window-object-list.md)。  
+   除了选择其他项目项中**解决方案资源管理器**若要显示与该项相关的属性，还可以选择从使用下拉列表可在上一个窗体或文档窗口中的不同对象**属性**窗口。 有关详细信息，请参阅[属性窗口对象列表](../../extensibility/internals/properties-window-object-list.md)。  
   
- 你可以更改中显示信息的方式**属性**窗口网格中按字母顺序排列到分类，并且如果可用，您还可以通过单击上的相应按钮来打开所选对象的属性页**属性**窗口。 有关详细信息，请参阅[属性窗口按钮](../../extensibility/internals/properties-window-buttons.md)并[属性页](../../extensibility/internals/property-pages.md)。  
+   你可以更改中显示信息的方式**属性**窗口网格中按字母顺序排列到分类，并且如果可用，您还可以通过单击上的相应按钮来打开所选对象的属性页**属性**窗口。 有关详细信息，请参阅[属性窗口按钮](../../extensibility/internals/properties-window-buttons.md)并[属性页](../../extensibility/internals/property-pages.md)。  
   
- 最后，底部**属性**窗口中还包含在所选的字段的说明**属性**窗口网格。 有关详细信息，请参阅[从属性窗口获取字段说明](../../misc/getting-field-descriptions-from-the-properties-window.md)。  
+   最后，底部**属性**窗口中还包含在所选的字段的说明**属性**窗口网格。 有关详细信息，请参阅[从属性窗口获取字段说明](../../misc/getting-field-descriptions-from-the-properties-window.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展属性](../../extensibility/internals/extending-properties.md)

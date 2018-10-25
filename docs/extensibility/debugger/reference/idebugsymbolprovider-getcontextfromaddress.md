@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetContextFromAddress |Microsoft 文档
+title: IDebugSymbolProvider::GetContextFromAddress |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9a82f69c0a671628a29148c7b09c47db48dc787
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 88cf623bab8824e6f079a28fe491d001b47735f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120496"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870206"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
-此方法的调试地址映射到文档上下文。  
+此方法将调试地址映射到文档上下文。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,15 +43,15 @@ int GetContextFromAddress(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in]调试地址所表示的[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
+ [in]调试地址由[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
   
  `ppDocContext`  
- [out]返回文档上下文所表示的[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。  
+ [out]由返回文档上下文[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)接口。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

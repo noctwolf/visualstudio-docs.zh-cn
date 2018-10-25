@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 081a3dfd809cc936f11d436e593d2be258452f85
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4d69322360a83a6d615efcaf8de077de80e64398
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670704"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847573"
 ---
 # <a name="build-office-solutions"></a>生成 Office 解决方案
   通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的常规信息，请参阅[编译并在 Visual Studio 中生成](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
@@ -64,23 +64,23 @@ ms.locfileid: "35670704"
 ### <a name="application-level-projects"></a>应用程序级项目  
  当生成 VSTO 外接程序项目时，项目输出中包含以下项：  
   
--   项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。  
+- 项目程序集以及“复制本地”  属性设置为 **true**的所有引用的程序集。  
   
--   具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
+- 具有文件扩展名的应用程序清单 *.manifest*。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。  
   
--   部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。  
+- 部署清单，具有文件扩展名 *.vsto*。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。  
   
--   程序数据库 (*PDB*) 项目程序集文件。  
+- 程序数据库 (*PDB*) 项目程序集文件。  
   
- VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
+  VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
- 如果生成包含窗体区域的 Outlook VSTO 外接程序项目，生成过程会向注册表中添加以下附加信息：  
+  如果生成包含窗体区域的 Outlook VSTO 外接程序项目，生成过程会向注册表中添加以下附加信息：  
   
--   与一个或多个窗体区域关联的每个邮件类的键。  
+- 与一个或多个窗体区域关联的每个邮件类的键。  
   
--   每个窗体区域的项以及表示 Outlook VSTO 外接程序的名称的关联值。  
+- 每个窗体区域的项以及表示 Outlook VSTO 外接程序的名称的关联值。  
   
- Outlook 需要此信息来加载窗体区域。  
+  Outlook 需要此信息来加载窗体区域。  
   
 ## <a name="referenced-assemblies"></a>引用的程序集  
  可以从“生成 Office 解决方案”项目引用程序集（包括类库项目）。 每个引用的程序集都具有一个名为“复制本地” 的属性。 “复制本地” 指示是否将程序集复制到输出目录中。 默认情况下，此属性设置为 **true**。 “复制本地”  设置为 **true** 的每个引用的程序集都被复制到输出目录中。  

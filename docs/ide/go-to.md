@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 00ec7361304d76d33264b98b45cf373bc5fc9f51
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 8d9ceeb7c4d24871bc0f2ddfc743c2c65e087205
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907048"
 ---
 # <a name="find-code-using-go-to-commands"></a>使用“转到”命令查找代码
 
@@ -27,10 +27,10 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 ## <a name="how-to-use-it"></a>使用方法
 
-输入        | 函数
+输入 | 函数
 ------------ | ---
 **键盘** | 按 Ctrl+T 或 Ctrl+,
-**鼠标**    | 选择“编辑” > “转到” > “转到所有”
+**鼠标** | 选择“编辑” > “转到” > “转到全部”
 
 代码编辑器的右上方会显示一个小窗口。
 
@@ -42,7 +42,7 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 还可以输入一个问号 (?) 来获取更多帮助。
 
-![“转到所有”帮助](media/go-to-all-help.png)
+![转到全部帮助](media/go-to-all-help.png)
 
 ## <a name="filtered-searches"></a>经过筛选的搜索
 
@@ -54,9 +54,9 @@ Visual Studio 的“转到”命令可执行代码的重点搜索，有助于快
 
 要缩小对特定类型的码位元素的搜索范围，可以在搜索框中指定一个前缀，也可以从以下五个筛选器图标中选择一个：
 
-前缀 | 图标 | 快捷键 | 说明
+前缀 | 图标 | 快捷键 | 描述
 :-: | - | - | -
-:| ![行图标](media/gotoall-line-icon.png) | Ctrl+G         | 转到指定行号
+:| ![行图标](media/gotoall-line-icon.png) | Ctrl+G | 转到指定行号
 f| ![文件图标](media/gotoall-files-icon.png) | Ctrl+1、Ctrl+F | 转到指定文件
 r| ![“最近使用的文件”图标](media/gotoall-recent-files-icon.png) | **Ctrl**+**1****Ctrl**+**R** | 转到最近访问的指定文件
 t| ![类型图标](media/gotoall-types-icon.png) | Ctrl+1、Ctrl+T | 转到指定类型
@@ -85,8 +85,8 @@ m| ![成员图标](media/gotoall-members-icon.png) | Ctrl+1、Ctrl+M | 转到指
 设置 | 描述
 ------- | ---
 使用预览选项卡 | 在 IDE 的预览选项卡中立即显示所选的项
-显示详细信息    | 在窗口的文档注释中显示项目、文件、行和摘要信息
-使窗口居中   | 将此窗口移动到代码编辑器的正上方而不是右上方
+显示详细信息 | 在窗口的文档注释中显示项目、文件、行和摘要信息
+使窗口居中 | 将此窗口移动到代码编辑器的正上方而不是右上方
 
 ## <a name="see-also"></a>请参阅
 

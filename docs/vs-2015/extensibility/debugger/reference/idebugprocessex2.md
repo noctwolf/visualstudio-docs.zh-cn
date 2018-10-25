@@ -17,12 +17,12 @@ ms.assetid: 44e309ba-1d6f-499b-aa7e-9b34858a6d57
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a89eb4a770371d19e0c7b422fcac2a08d142f731
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c91f0ee5df47f2bb57ecd3c5faece13fb17384f4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912287"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ IDebugProcessEx2 : IUnknown
 ## <a name="notes-for-implementers"></a>实施者的说明  
  自定义端口提供程序在与相同的对象上实现此接口[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)接口以便：  
   
--   支持跟踪的会话连接到的进程  
+- 支持跟踪的会话连接到的进程  
   
--   支持自动附加跨多个调试引擎  
+- 支持自动附加跨多个调试引擎  
   
- 如果还选择能自定义端口供应商可以实现此接口。  
+  如果还选择能自定义端口供应商可以实现此接口。  
   
 ## <a name="notes-for-callers"></a>调用方的说明  
   

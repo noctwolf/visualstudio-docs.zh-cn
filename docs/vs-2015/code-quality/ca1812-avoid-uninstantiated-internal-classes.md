@@ -20,15 +20,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 250a22c29c359ac099df237bd9a33e4522ee39ba
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5236fd2dd4635b88ce82b993ebbc15a25e767df1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287257"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899781"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812：避免未实例化的内部类
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidUninstantiatedInternalClasses|
@@ -44,21 +45,21 @@ ms.locfileid: "49287257"
 
  该规则不检查以下类型：
 
--   值类型
+- 值类型
 
--   抽象类型
+- 抽象类型
 
--   枚举
+- 枚举
 
--   委托
+- 委托
 
--   编译器发出的数组类型
+- 编译器发出的数组类型
 
--   类型无法实例化和用于定义`static`(`Shared`在 Visual Basic 中) 只方法。
+- 类型无法实例化和用于定义`static`(`Shared`在 Visual Basic 中) 只方法。
 
- 如果将应用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>对所分析的程序集，此规则不会标记为任何构造函数上发生`internal`因为无法确定是否一个字段正由另一个`friend`程序集。
+  如果将应用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName>对所分析的程序集，此规则不会标记为任何构造函数上发生`internal`因为无法确定是否一个字段正由另一个`friend`程序集。
 
- 即使您不能解决此限制中也是如此[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]代码分析外部的独立 FxCop 会发生内部构造函数上每个`friend`程序集是在分析中存在。
+  即使您不能解决此限制中也是如此[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]代码分析外部的独立 FxCop 会发生内部构造函数上每个`friend`程序集是在分析中存在。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请删除类型或添加使用它的代码。 如果类型仅包含静态方法，请将以下项之一添加到要阻止编译器发出的默认公共实例构造函数的类型：
@@ -70,32 +71,32 @@ ms.locfileid: "49287257"
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它可以安全地禁止显示此规则的警告。 我们建议您取消显示在以下情况下的此警告：
 
--   如通过反射后期绑定方法创建的类<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
+- 如通过反射后期绑定方法创建的类<xref:System.Activator.CreateInstance%2A?displayProperty=fullName>。
 
--   类是由运行时或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 自动创建的。 例如，用于实现 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 或 <xref:System.Web.IHttpHandler?displayProperty=fullName> 的类。
+- 类是由运行时或 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 自动创建的。 例如，用于实现 <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> 或 <xref:System.Web.IHttpHandler?displayProperty=fullName> 的类。
 
--   类是作为具有一个新约束的泛型类型参数传递。 例如，下面的示例将引发此规则。
+- 类是作为具有一个新约束的泛型类型参数传递。 例如，下面的示例将引发此规则。
 
-    ```csharp
-    internal class MyClass
-    {
-        public DoSomething()
-        {
-        }
-    }
-    public class MyGeneric<T> where T : new()
-    {
-        public T Create()
-        {
-            return new T();
-        }
-    }
-    // [...]
-    MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
-    mc.Create();
-    ```
+  ```csharp
+  internal class MyClass
+  {
+      public DoSomething()
+      {
+      }
+  }
+  public class MyGeneric<T> where T : new()
+  {
+      public T Create()
+      {
+          return new T();
+      }
+  }
+  // [...]
+  MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
+  mc.Create();
+  ```
 
- 在这些情况下，我们建议您取消显示此警告。
+  在这些情况下，我们建议您取消显示此警告。
 
 ## <a name="related-rules"></a>相关的规则
  [CA1811：避免使用未调用的私有代码](../code-quality/ca1811-avoid-uncalled-private-code.md)

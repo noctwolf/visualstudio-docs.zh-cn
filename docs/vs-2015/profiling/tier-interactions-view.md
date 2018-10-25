@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7e33868c0609483f748c29cdc446bf720509d35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 012d79a99ee8df2acf26106be922fac8c335fae3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878019"
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49184049"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)]  
   
- “交互”视图在两个窗格中显示层交互数据：  
+  “交互”视图在两个窗格中显示层交互数据：  
   
--   主窗格是层次结构树。 顶层行包含 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 页面或进程的数据库连接的聚合数据。 子节点包含父级的数据库连接的聚合数据。  
+- 主窗格是层次结构树。 顶层行包含 [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 页面或进程的数据库连接的聚合数据。 子节点包含父级的数据库连接的聚合数据。  
   
--   在主窗格中单击某个数据库调用节点时，该数据库调用的实例的数据会显示在详细信息窗格中。  
+- 在主窗格中单击某个数据库调用节点时，该数据库调用的实例的数据会显示在详细信息窗格中。  
   
- 时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”菜单，单击“选项”，然后选择“将时间值显示为”选项中的一个。  
+  时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”菜单，单击“选项”，然后选择“将时间值显示为”选项中的一个。  
   
 ## <a name="master-pane"></a>主窗格  
   

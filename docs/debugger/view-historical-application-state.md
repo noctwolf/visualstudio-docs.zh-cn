@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b34fd85e8449949bb1e96efc1dd79aacbc1bd9
-ms.sourcegitcommit: 1c675dae7c348defb32d9f7ccf7079a1062a1c4b
+ms.openlocfilehash: 6d43e1a04570d68ce69f283cde264280fc24865a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48243947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846858"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio"></a>检查 Visual Studio 中使用 IntelliTrace 后退的上一个应用程序状态
 
@@ -106,17 +106,17 @@ IntelliTrace 事件的唯一模式允许您进行激活历史调试对调试器�
 * 如果使用 IntelliTrace 事件和快照模式下的早于 Windows 10 Fall Creators Update (RS3) 的 Windows 版本上，并且如果应用程序的调试平台目标设置为 x86，IntelliTrace 不拍摄快照。
 
     解决方法：
-    * 如果您是在 Windows 10 周年更新 (RS1) 及更低版本 10.0.14393.2273，[安装 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
-    * 如果您是在 Windows 10 创意者更新 (RS2) 及更低版本 10.0.15063.1112，[安装 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
-    * 安装或升级到 Windows 10 Fall Creators Update (RS3)。 
-    * 或者： 
-        1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
-        2. 生成目标应用程序。
-        3. 从命令行中，使用 editbin 工具设置`Largeaddressaware`目标可执行文件的标志。 例如，在 （更新后的路径） 可能会使用此命令:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
-        4. 若要启用调试，请按 F5。 现在，对调试器步骤和断点拍摄快照。
+  * 如果您是在 Windows 10 周年更新 (RS1) 及更低版本 10.0.14393.2273，[安装 KB4103720](https://support.microsoft.com/help/4103720/windows-10-update-kb4103720)。 
+  * 如果您是在 Windows 10 创意者更新 (RS2) 及更低版本 10.0.15063.1112，[安装 KB4103722](https://support.microsoft.com/help/4103722/windows-10-update-4103722)。
+  * 安装或升级到 Windows 10 Fall Creators Update (RS3)。 
+  * 或者： 
+    1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
+    2. 生成目标应用程序。
+    3. 从命令行中，使用 editbin 工具设置`Largeaddressaware`目标可执行文件的标志。 例如，在 （更新后的路径） 可能会使用此命令:"C:\Program Files (x86) \Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe"/Largeaddressaware"C:\Path\To\Application\app.exe"。
+    4. 若要启用调试，请按 F5。 现在，对调试器步骤和断点拍摄快照。
 
-        > [!Note]
-        > `Largeaddressaware`标志必须设置每个使用更改重新生成可执行文件的时间。
+       > [!Note]
+       > `Largeaddressaware`标志必须设置每个使用更改重新生成可执行文件的时间。
 
 * 使用持久化的内存映射文件的应用程序上创建应用程序的进程的快照时, 的快照进程保留上内存映射文件的排他锁，（即使父进程已发布其锁）。 其他进程将仍然能够读取，但未写入到内存映射文件。
 

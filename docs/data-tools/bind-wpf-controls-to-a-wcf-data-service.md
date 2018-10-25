@@ -17,12 +17,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3cd83a16ff3d497bd9e6a46f3a66a3d99506a1f
-ms.sourcegitcommit: 3a11feebad45a0dd4ac45efcbfdf172fce46e1de
+ms.openlocfilehash: 0f18aaff185e6591d43f10c979c00b654d5608a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39582390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949378"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -52,13 +52,13 @@ ms.locfileid: "39582390"
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 
--   WCF 数据服务。 有关详细信息，请参阅[概述](/dotnet/framework/data/wcf/wcf-data-services-overview)。
+- WCF 数据服务。 有关详细信息，请参阅[概述](/dotnet/framework/data/wcf/wcf-data-services-overview)。
 
--   [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 中的数据模型。
+- [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 中的数据模型。
 
--   实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](/dotnet/framework/data/adonet/ef/overview)。
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](/dotnet/framework/data/adonet/ef/overview)。
 
--   WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
+- WPF 数据绑定。 有关详细信息，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>创建服务项目
 
@@ -171,23 +171,23 @@ ms.locfileid: "39582390"
 
 通过在 WPF 设计器中修改 XAML，将多个按钮添加到该窗口中。 在本演练后面的部分中，你将添加可让用户通过使用这些按钮来查看和更新销售记录的代码。
 
-1.  在中**解决方案资源管理器**，双击**MainWindow.xaml**。
+1. 在中**解决方案资源管理器**，双击**MainWindow.xaml**。
 
-     将在 WPF 设计器中打开相应的窗口。
+    将在 WPF 设计器中打开相应的窗口。
 
-2.  在设计器的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 视图中，在 `<Grid>` 标记之间添加以下代码：
+2. 在设计器的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 视图中，在 `<Grid>` 标记之间添加以下代码：
 
-    ```xaml
-    <Grid.RowDefinitions>
-        <RowDefinition Height="75" />
-        <RowDefinition Height="525" />
-    </Grid.RowDefinitions>
-    <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
-    <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
-    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
-    ```
+   ```xaml
+   <Grid.RowDefinitions>
+       <RowDefinition Height="75" />
+       <RowDefinition Height="525" />
+   </Grid.RowDefinitions>
+   <Button HorizontalAlignment="Left" Margin="22,20,0,24" Name="backButton" Width="75"><</Button>
+   <Button HorizontalAlignment="Left" Margin="116,20,0,24" Name="nextButton" Width="75">></Button>
+   <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
+   ```
 
-3.  生成项目。
+3. 生成项目。
 
 ## <a name="create-the-data-bound-controls"></a>创建数据绑定控件
 

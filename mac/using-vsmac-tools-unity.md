@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: cd368c6b6bfd8d38817ef1b7014e9f1c91cac2ab
-ms.sourcegitcommit: 522ba712c0d625e51352506146b0556414681964
+ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37889939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898819"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -33,31 +33,31 @@ Unity 引擎向 MonoBehaviour 脚本广播消息，以便开发者编写代码�
 
 但是，Visual Studio for Mac Tools for Unity 将其 IntelliSense 功能扩展到 Unity 消息。 这简化了在 MonoBehaviour 脚本中实现 Unity 消息，并有助于学习 Unity API。 对 Unity 消息使用 IntelliSense：
 
-1.  将光标置于类主体内的新行上，该类派生自 MonoBehaviour。
+1. 将光标置于类主体内的新行上，该类派生自 MonoBehaviour。
 
-2.  开始键入 Unity 消息的名称，如 `OnTriggerEnter`。
+2. 开始键入 Unity 消息的名称，如 `OnTriggerEnter`。
 
-3.  键入字母“ont”后，将显示 IntelliSense 建议列表。
+3. 键入字母“ont”后，将显示 IntelliSense 建议列表。
 
-  ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
-4.  可通过以下三种方式更改列表中的选择：
+4. 可通过以下三种方式更改列表中的选择：
 
-    * 使用向上键和向下键。
+   * 使用向上键和向下键。
 
-    * 使用鼠标单击所需项。
+   * 使用鼠标单击所需项。
 
-    * 继续键入所需项的名称。
+   * 继续键入所需项的名称。
 
-5.  IntelliSense 可插入所选 Unity 消息，包括任何必需的参数：
+5. IntelliSense 可插入所选 Unity 消息，包括任何必需的参数：
 
-    * 通过按 Tab。
+   * 通过按 Tab。
 
-    * 通过按 Return。
+   * 通过按 Return。
 
-    * 通过双击所选项。
+   * 通过双击所选项。
 
-  ![从 IntelliSense 插入 Unity 消息](media/using-vsmac-tools-unity-image3.png)
+   ![从 IntelliSense 插入 Unity 消息](media/using-vsmac-tools-unity-image3.png)
 
 ## <a name="adding-new-unity-files-and-folders"></a>添加新 Unity 文件和文件夹
 
@@ -93,22 +93,22 @@ Unity 编辑器的“项目”窗口会反映这些添加。
 
 若要开始调试：
 
-1.  通过单击“播放”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity。
+1. 通过单击“播放”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity。
 
-  ![在 Visual Studio 中单击“播放”](media/using-vsmac-tools-unity-image5.png)
+   ![在 Visual Studio 中单击“播放”](media/using-vsmac-tools-unity-image5.png)
 
-2.  切换到 Unity 并单击“播放”按钮，在编辑器中运行游戏。
+2. 切换到 Unity 并单击“播放”按钮，在编辑器中运行游戏。
 
-  ![在 Unity 中单击“播放”](media/using-vsmac-tools-unity-image6.png)
+   ![在 Unity 中单击“播放”](media/using-vsmac-tools-unity-image6.png)
 
-3.  当游戏在连接到 Visual Studio 的情况下在 Unity 编辑器中运行时，遇到的任何断点都会中断游戏执行，并在 Visual Studio for Mac 中显示游戏遇到断点的代码行。
+3. 当游戏在连接到 Visual Studio 的情况下在 Unity 编辑器中运行时，遇到的任何断点都会中断游戏执行，并在 Visual Studio for Mac 中显示游戏遇到断点的代码行。
 
 ### <a name="stop-debugging"></a>停止调试
 
 停止调试：
 
-1.  在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
+1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
 
-  ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
+   ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
 
 有关在 Visual Studio for Mac 中调试的详细信息，请参阅[使用调试程序](https://docs.microsoft.com/visualstudio/mac/debugging)。

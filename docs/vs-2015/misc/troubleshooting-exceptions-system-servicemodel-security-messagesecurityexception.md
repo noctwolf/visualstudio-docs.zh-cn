@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikeblome
 ms.author: mblome
 manager: douge
-ms.openlocfilehash: 304847259f9955706f345ef0f27800dfb77eddfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 676f51b34bfc83d0a2af195da85a2c46cae08ac5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241223"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853163"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>关于异常的疑难解答：System.ServiceModel.Security.MessageSecurityException
 一个<xref:System.ServiceModel.Security.MessageSecurityException>时将引发异常[!INCLUDE[vsindigo](../includes/vsindigo-md.md)]确定消息未受到正确保护或已被篡改。 当下列条件全为真时，此错误会非常频繁地发生：  
@@ -48,35 +48,35 @@ ms.locfileid: "49241223"
   
 #### <a name="to-create-a-custom-service-binding-for-the-wcf-service-hosted-inside-the-aspnet-development-server"></a>为 ASP.NET 开发服务器中承载的 WCF 服务创建自定义服务绑定  
   
-1.  打开生成异常的 WCF 服务的 Web.config 文件。  
+1. 打开生成异常的 WCF 服务的 Web.config 文件。  
   
-2.  在该 Web.config 文件中输入以下信息。  
+2. 在该 Web.config 文件中输入以下信息。  
   
-    ```  
-    <bindings>  
-      <customBinding>  
-        <binding name="Service1Binding">  
-          <transactionFlow />  
-          <textMessageEncoding />  
-          <httpTransport authenticationScheme="Ntlm" />  
-        </binding>  
-      </customBinding>  
-    </bindings>  
-    ```  
+   ```  
+   <bindings>  
+     <customBinding>  
+       <binding name="Service1Binding">  
+         <transactionFlow />  
+         <textMessageEncoding />  
+         <httpTransport authenticationScheme="Ntlm" />  
+       </binding>  
+     </customBinding>  
+   </bindings>  
+   ```  
   
-3.  保存并关闭 Web.config 文件。  
+3. 保存并关闭 Web.config 文件。  
   
-4.  在 WCF 或 Web 服务的代码中，将终结点值更改为下面的值：  
+4. 在 WCF 或 Web 服务的代码中，将终结点值更改为下面的值：  
   
-    ```  
-    <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
-    ```  
+   ```  
+   <endpoint address="" binding="customBinding" bindingConfiguration="Service1Binding" contract="IService1" />  
+   ```  
   
-     这样可确保服务使用自定义绑定。  
+    这样可确保服务使用自定义绑定。  
   
-5.  在访问服务的 Web 应用程序中，添加对服务的引用。 （在 **“添加服务引用”** 对话框中，添加对服务的引用，就像处理生成异常的原始服务一样。）  
+5. 在访问服务的 Web 应用程序中，添加对服务的引用。 （在 **“添加服务引用”** 对话框中，添加对服务的引用，就像处理生成异常的原始服务一样。）  
   
- 在处理 WCF 服务引用时，可以按照以下步骤来禁用 NTLM 安全。  
+   在处理 WCF 服务引用时，可以按照以下步骤来禁用 NTLM 安全。  
   
 > [!IMPORTANT]
 >  建议不要关闭 NTLM 安全功能，否则可能构成安全威胁。  

@@ -19,16 +19,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5f5552cb87f1c8b4501930f23765143a9e9399
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 2152f90d244ed283250bf8ea6a42a39b545f9c09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946684"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847972"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：配置项目以面向目标平台
 
-可使用 Visual Studio 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 Visual Studio 中对 64 位平台的支持，请参阅 [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。
+可使用 Visual Studio 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 Visual Studio 中对 64 位平台的支持，请参阅 [64 位应用程序](/dotnet/framework/64-bit-apps)。
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用 Configuration Manager 设定目标平台
 
@@ -59,15 +59,15 @@ ms.locfileid: "31946684"
 
 此任务的执行根据所用编程语言而有所不同。 有关详细信息，请参阅以下链接：
 
--   对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请参阅 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
+- 对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请参阅 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
 
--   对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
+- 对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
--   对于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](/cpp/build/reference/clr-common-language-runtime-compilation)。
+- 对于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](/cpp/build/reference/clr-common-language-runtime-compilation)。
 
 ## <a name="see-also"></a>请参阅
 
 - [了解生成平台](../ide/understanding-build-platforms.md)
 - [/platform（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)
-- [64 位应用程序](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)
+- [64 位应用程序](/dotnet/framework/64-bit-apps)
 - [Visual Studio IDE 64 位支持](../ide/visual-studio-ide-64-bit-support.md)

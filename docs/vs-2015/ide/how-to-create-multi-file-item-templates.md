@@ -18,25 +18,25 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda39459d0ddc0920dbb5b47157d90160ad3d166
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 00d7fbaa97172c98db61f93706f7e596bb22ddee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862172"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：创建多文件项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 项模板仅能指定一个项，但有时该项由多个文件组成。 例如，适用于 Visual Basic 的 Windows 窗体项模板需要下列三个文件：  
   
--   包含用于窗体的代码的 .vb 文件。  
+- 包含用于窗体的代码的 .vb 文件。  
   
--   包含用于窗体的设计器信息的设计器 .vb 文件。  
+- 包含用于窗体的设计器信息的设计器 .vb 文件。  
   
--   包含用于窗体的嵌入资源的 .resx 文件。  
+- 包含用于窗体的嵌入资源的 .resx 文件。  
   
- 多文件项模板需要参数，用于确保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建该项时使用正确的文件扩展名。 如果使用“导出模板”向导创建项模板，会自动生成这些参数，无需进一步编辑。 下列步骤解释如何使用参数来确保创建正确的文件扩展名。  
+  多文件项模板需要参数，用于确保在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建该项时使用正确的文件扩展名。 如果使用“导出模板”向导创建项模板，会自动生成这些参数，无需进一步编辑。 下列步骤解释如何使用参数来确保创建正确的文件扩展名。  
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>手动创建多文件项模板  
   

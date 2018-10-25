@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7faa1e88a37416db85624863968e13b28de40bc6
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 5f1c3b03507ca97724106c6ca1d121b3c54eb659
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326122"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853137"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页*是专为在 SharePoint 网站中使用的 ASP.NET 网页。 应用程序页面是 ASP.NET 页的专用化的类型。 应用程序页和一个标准的 ASP.NET 页面的主要区别是应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页作为站点上的其他页面共享相同的外观和行为。  
@@ -67,7 +67,7 @@ ms.locfileid: "36326122"
   
  您可以调试应用程序页，就像就像调试其他 Visual Studio 中的 SharePoint 项目项。 启动 Visual Studio 调试器时，Visual Studio 会打开 SharePoint 站点。  
   
- 若要查看应用程序页上，您必须手动导航到应用程序页的位置 (例如： http://*Server_Name*/_layouts/*Project_Name*/ApplicationPage1.aspx)。  
+ 若要查看应用程序页上，您必须手动导航到应用程序页的位置 (例如： http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx)。  
   
  有关如何调试 SharePoint 项目的详细信息，请参阅[进行故障排除 SharePoint 解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。  
   

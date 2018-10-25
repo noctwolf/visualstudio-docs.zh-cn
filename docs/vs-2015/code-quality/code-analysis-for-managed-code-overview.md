@@ -19,12 +19,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 048ea406fd9237640976f3a44bb5e53504276e0c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b2d84ba17fb3fd866dcd73cd2821289c40153b6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872663"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>托管代码的代码分析概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +63,11 @@ ms.locfileid: "49279365"
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析  
  作为一个单位，可能希望所有签入行为满足特定的策略。 特别是希望确保遵从下列策略：  
   
--   要签入的代码中没有生成错误。  
+- 要签入的代码中没有生成错误。  
   
--   在最近一次生成中运行了代码分析。  
+- 在最近一次生成中运行了代码分析。  
   
- 可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用团队项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
+  可以通过指定签入策略来实现该任务。 有关详细信息，请参阅[利用团队项目签入策略提高代码质量](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)。  
   
 ## <a name="team-build-integration"></a>Team Build 集成  
  你可以使用生成系统的集成功能在生成过程中运行分析工具。 有关详细信息，请参阅[生成应用程序](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  

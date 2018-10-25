@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2421a1f39f2969563bc10a43367936ae499fac30
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6c5993f09581faf6e3cedb4c71598ea26b16b699
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118509"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863264"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常情况下，SharePoint 解决方案部署到 SharePoint 服务器通过使用解决方案包 (.wsp) 文件。 若要将你的 SharePoint 项目项组织到功能并创建要部署您的 SharePoint 功能的程序包，可以使用 Visual Studio。  
@@ -67,23 +67,23 @@ ms.locfileid: "37118509"
 ### <a name="packaging-explorer"></a>打包资源管理器  
  若要补充的功能设计器和包设计器，可以使用打包资源管理器将 SharePoint 文件分组到功能和包。 此外，请参阅层次结构视图的包，功能，SharePoint 项目项和文件。 打包资源管理器是一个工具窗口，可用于完成以下任务：  
   
--   打开 SharePoint 项目项和文件。  
+- 打开 SharePoint 项目项和文件。  
   
--   拖放的 SharePoint 项目项从一个功能到另一个。  
+- 拖放的 SharePoint 项目项从一个功能到另一个。  
   
--   拖放到另一个包中的 SharePoint 项目项和功能。  
+- 拖放到另一个包中的 SharePoint 项目项和功能。  
   
--   向包中添加一项新功能。  
+- 向包中添加一项新功能。  
   
--   打开功能或包设计器。  
+- 打开功能或包设计器。  
   
--   验证功能和包。  
+- 验证功能和包。  
   
- 在 Visual Studio 中的 SharePoint 开发工具具有验证规则，以帮助确保解决方案包的位置正确。 此外，这些规则确认 *.wsp*可以成功部署和 SharePoint 服务器上激活解决方案文件。 有关功能的 XML 架构的详细信息，请参阅[功能架构](http://go.microsoft.com/fwlink/?LinkID=169192)。  
+  在 Visual Studio 中的 SharePoint 开发工具具有验证规则，以帮助确保解决方案包的位置正确。 此外，这些规则确认 *.wsp*可以成功部署和 SharePoint 服务器上激活解决方案文件。 有关功能的 XML 架构的详细信息，请参阅[功能架构](http://go.microsoft.com/fwlink/?LinkID=169192)。  
   
- 可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关详细信息，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
+  可以向 SharePoint 项目系统中添加自定义功能和包验证规则。 有关详细信息，请参阅[如何： 创建自定义功能和包验证规则为 SharePoint 解决方案](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。  
   
- 有关打包资源管理器的详细信息，请参阅[如何： 添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
+  有关打包资源管理器的详细信息，请参阅[如何： 添加和删除使用打包资源管理器的功能和包项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer.md)。  
   
 ### <a name="solution-explorer"></a>“解决方案资源管理器”
  解决方案资源管理器可用于导航，并打开 SharePoint 项目的文件。 在解决方案资源管理器中使用上下文菜单以添加功能，功能事件接收器和功能的资源。 此外，您可以打开功能设计器和包设计器，若要配置的功能和部署的包。  
@@ -100,11 +100,11 @@ ms.locfileid: "37118509"
   
  例如，若要添加 *.xml*文件向 SharePoint 项目中，执行以下操作之一：  
   
--   将 SharePoint"布局"映射文件夹添加到你的项目。 这将创建在**解决方案资源管理器**名为的文件夹**布局**具有项目的子文件夹。 添加 *.xml*到新的子文件夹的文件。 默认情况下，该文件将部署到 SharePoint 文件系统下 *...\TEMPLATE\LAYOUTS\\\<文件夹名称 >*。 有关如何添加映射的文件夹的信息，请参阅[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
+- 将 SharePoint"布局"映射文件夹添加到你的项目。 这将创建在**解决方案资源管理器**名为的文件夹**布局**具有项目的子文件夹。 添加 *.xml*到新的子文件夹的文件。 默认情况下，该文件将部署到 SharePoint 文件系统下 *...\TEMPLATE\LAYOUTS\\\<文件夹名称 >*。 有关如何添加映射的文件夹的信息，请参阅[如何： 添加和移除映射的文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。  
   
--   添加 *.xml*的文件权限的 SharePoint 项目项文件夹，然后将更改**部署类型**属性 *.xml*文件从**NoDeployment**到另一个设置如**RootFile**或**ElementFile**。 适当**部署类型**设置取决于文件和项目。 有关详细信息**部署类型**属性设置，请参阅[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)。  
+- 添加 *.xml*的文件权限的 SharePoint 项目项文件夹，然后将更改**部署类型**属性 *.xml*文件从**NoDeployment**到另一个设置如**RootFile**或**ElementFile**。 适当**部署类型**设置取决于文件和项目。 有关详细信息**部署类型**属性设置，请参阅[开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)。  
   
- 如果添加了的文件不适用于解决方案中任何特定项目，可以将一个空 SharePoint 项目添加到你的解决方案并将其他文件添加到它。 有关将文件部署到 SharePoint，尤其是对内容数据库，另一种方法是将模块添加到项目，然后将文件添加到模块。 有关详细信息，请参阅[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
+  如果添加了的文件不适用于解决方案中任何特定项目，可以将一个空 SharePoint 项目添加到你的解决方案并将其他文件添加到它。 有关将文件部署到 SharePoint，尤其是对内容数据库，另一种方法是将模块添加到项目，然后将文件添加到模块。 有关详细信息，请参阅[使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。  
   
 ## <a name="see-also"></a>请参阅
  [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)   

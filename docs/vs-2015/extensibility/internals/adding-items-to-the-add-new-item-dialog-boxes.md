@@ -15,12 +15,12 @@ ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 6d45431d2d6757169c225136620124d94a6e75dd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7a421ba2278c177eeb0fdba8571497e50ba71b39
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223074"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894230"
 ---
 # <a name="adding-items-to-the-add-new-item-dialog-boxes"></a>将项添加到“添加新项”对话框
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,15 +72,15 @@ ms.locfileid: "49223074"
 ## <a name="filtering-project-items"></a>筛选项目项  
  `IVsFilterAddProjectItemDlg2` 提供了用于筛选元素树 （左窗格） 和项目文件 （右窗格） 中的以下方面：  
   
--   本地化的名称 （.vsdir 文件中包含的对话框中显示的标题） 通过提供`IVsFilterAddProjectItemDlg`。  
+- 本地化的名称 （.vsdir 文件中包含的对话框中显示的标题） 通过提供`IVsFilterAddProjectItemDlg`。  
   
--   通过文件和磁盘上的文件夹的实际名称 (非本地化 — 没有.vsdir 文件) 提供的`IVsFilterAddProjectItemDlg`。  
+- 通过文件和磁盘上的文件夹的实际名称 (非本地化 — 没有.vsdir 文件) 提供的`IVsFilterAddProjectItemDlg`。  
   
--   按类别提供`IVsFilterAddProjectItemDlg2`。  
+- 按类别提供`IVsFilterAddProjectItemDlg2`。  
   
- 若要按类别筛选，请提供连接到某个.vsdir 文件，如"Web 窗体"中的项或在 Visual Basic 中的"客户端项"中的类别字符串。 然后，对话框代码从.vsdir 文件中检索类别分类，并将其传递给你。 然后可以将该信息传递到你的实现`IVsFilterAddProjectItemDlg2`来筛选**添加新项**对话框中的类别。 为网页或客户端 Win32 应用程序的情况下，还可以筛选项。 此外，可以指定[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]标记为 Microsoft 基础类 (MFC) 或活动模板库 (ATL) 项的项。 时识别出这些项，项目系统可定义其自己的分类，以便系统可以根据类别和分类筛选。  
+  若要按类别筛选，请提供连接到某个.vsdir 文件，如"Web 窗体"中的项或在 Visual Basic 中的"客户端项"中的类别字符串。 然后，对话框代码从.vsdir 文件中检索类别分类，并将其传递给你。 然后可以将该信息传递到你的实现`IVsFilterAddProjectItemDlg2`来筛选**添加新项**对话框中的类别。 为网页或客户端 Win32 应用程序的情况下，还可以筛选项。 此外，可以指定[!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]标记为 Microsoft 基础类 (MFC) 或活动模板库 (ATL) 项的项。 时识别出这些项，项目系统可定义其自己的分类，以便系统可以根据类别和分类筛选。  
   
- 如果你实现此筛选器功能，您无需映射应隐藏的每个项的表。 只需对项进行分类到类型并置于.vsdir 文件或文件的分类。 然后您可以隐藏任何通过实现接口中有某个特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态根据项目中的状态。  
+  如果你实现此筛选器功能，您无需映射应隐藏的每个项的表。 只需对项进行分类到类型并置于.vsdir 文件或文件的分类。 然后您可以隐藏任何通过实现接口中有某个特定分类的项。 在这种方式，可以进行中的项**添加新项**对话框框中动态根据项目中的状态。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>   

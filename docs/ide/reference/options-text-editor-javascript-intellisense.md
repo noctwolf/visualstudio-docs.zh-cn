@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2496e676b37b23afbe9b4e135f475a73d8df
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: f870468852b7de53d22a66683bc7c8f64ffcc174
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49848522"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>选项，文本编辑器，JavaScript，IntelliSense
 使用 **“选项”** 对话框的 **“IntelliSense”** 页可以修改影响 IntelliSense for JavaScript 行为的设置。 可以通过选择菜单栏上的 **“工具”** 、 **“选项”**, **“文本编辑器”** 、 **““IntelliSense””**, **“IntelliSense”**, **“工具”.** 页。
@@ -67,13 +67,13 @@ ms.locfileid: "39179744"
 
  可以使用预定义的引用组指定特定 IntelliSense .js 文件位于不同 JavaScript 项目的范围内。 提供四个引用组：
 
--   隐式 (Windows *version*)，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用。 包含在该组中的文件位于代码编辑器中打开的每个 .js 文件的范围内，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用。
+- 隐式 (Windows *version*)，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用。 包含在该组中的文件位于代码编辑器中打开的每个 .js 文件的范围内，用于使用 JavaScript 的 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用。
 
--   隐式 (Web)，用于 HTML5 项目。 包含在该组中的文件位于代码编辑器中为这些项目类型打开的每个 .js 文件的范围中。
+- 隐式 (Web)，用于 HTML5 项目。 包含在该组中的文件位于代码编辑器中为这些项目类型打开的每个 .js 文件的范围中。
 
--   专用工作线程引用组，用于 HTML5 Web 工作线程。 该组中指定的文件位于显式引用专用工作线程引用组的 .js 文件的范围中。
+- 专用工作线程引用组，用于 HTML5 Web 工作线程。 该组中指定的文件位于显式引用专用工作线程引用组的 .js 文件的范围中。
 
--   一般类型，用于其他 JavaScript 项目类型。
+- 一般类型，用于其他 JavaScript 项目类型。
 
 **包含的文件**
 

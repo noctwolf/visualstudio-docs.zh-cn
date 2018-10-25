@@ -13,12 +13,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b7a032db42003c62fbd96dc6e2ba54bb152d7e78
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cc12f77a8f1c3443606537dd6f818e9ee6625327
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182170"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853176"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根针对单元测试隔离应用程序的各个部分
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ End Function
   
  接口注入应用了以下规则：  
   
--   应用程序的所有组件的代码始终不应该显式引用另一个组件中的类（无论是在声明中还是在 `new` 语句中）。 相反，应使用接口声明变量和参数。 组件实例只应由组件的容器创建。  
+- 应用程序的所有组件的代码始终不应该显式引用另一个组件中的类（无论是在声明中还是在 `new` 语句中）。 相反，应使用接口声明变量和参数。 组件实例只应由组件的容器创建。  
   
-     在本例中，“组件”指的是一个类或你同时开发和更新的一组类。 通常，组件是一个 Visual Studio 项目中的代码。 分离一个组件中的类不太重要，因为它们是同时更新的。  
+   在本例中，“组件”指的是一个类或你同时开发和更新的一组类。 通常，组件是一个 Visual Studio 项目中的代码。 分离一个组件中的类不太重要，因为它们是同时更新的。  
   
-     从相对稳定的平台（如 System.dll）的类中分离你的组件也不是那么重要。 为所有这些类编写接口将使你的代码显得杂乱。  
+   从相对稳定的平台（如 System.dll）的类中分离你的组件也不是那么重要。 为所有这些类编写接口将使你的代码显得杂乱。  
   
- 因此，可以使用类似下面的接口从 StockFeed 中分离 StockAnalyzer 代码，从而对其进行改进：  
+  因此，可以使用类似下面的接口从 StockFeed 中分离 StockAnalyzer 代码，从而对其进行改进：  
   
 ```csharp  
 public interface IStockFeed  

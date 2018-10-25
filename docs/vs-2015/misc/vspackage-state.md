@@ -16,39 +16,39 @@ helpviewer_keywords:
 ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: douge
-ms.openlocfilehash: 1fee544dcf9bec9295d297f153df7f86dd464bda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0364d7190244217bef50b50b60462d69e1fc145c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895205"
 ---
 # <a name="vspackage-state"></a>VSPackage 状态
 许多因素的确定组持久的值或状态，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用程序。  
   
--   项目具有项目和配置属性。  
+- 项目具有项目和配置属性。  
   
--   解决方案具有的属性。  
+- 解决方案具有的属性。  
   
--   用户设置确定的大小和位置的文档窗口中，工具窗口、 停靠状态和键盘快捷方式。  
+- 用户设置确定的大小和位置的文档窗口中，工具窗口、 停靠状态和键盘快捷方式。  
   
--   应用程序可以具有用户设置的选项。  
+- 应用程序可以具有用户设置的选项。  
   
--   应用程序创建的对象可以具有其自己的属性。  
+- 应用程序创建的对象可以具有其自己的属性。  
   
- 以下是几种的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以管理应用程序状态：  
+  以下是几种的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]可以管理应用程序状态：  
   
--   通过项目和解决方案属性页。  
+- 通过项目和解决方案属性页。  
   
--   通过**导入和导出设置向导**，这使用户能够将设置从一台计算机移动到另一个。  
+- 通过**导入和导出设置向导**，这使用户能够将设置从一台计算机移动到另一个。  
   
--   通过**选项**对话框，其中包含与应用程序相关的选项。  
+- 通过**选项**对话框，其中包含与应用程序相关的选项。  
   
--   通过**属性**窗口，其中显示对象的属性。  
+- 通过**属性**窗口，其中显示对象的属性。  
   
--   通过自动化。 应用程序可以访问已公开为自动化的 VSPackage 和对象属性。  
+- 通过自动化。 应用程序可以访问已公开为自动化的 VSPackage 和对象属性。  
   
- 基础应用程序状态是启用要进行保存和还原的应用程序状态的各种持久性机制。  
+  基础应用程序状态是启用要进行保存和还原的应用程序状态的各种持久性机制。  
   
 ## <a name="in-this-section"></a>本节内容  
  [状态持久性支持](../misc/support-for-state-persistence.md)  

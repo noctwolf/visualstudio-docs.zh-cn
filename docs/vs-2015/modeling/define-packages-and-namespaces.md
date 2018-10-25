@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 79ceb9393291f6197cd68743dffdfd314776e717
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 58a6c33449162665c10c6fa1d2c96f665c904a98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219409"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915007"
 ---
 # <a name="define-packages-and-namespaces"></a>定义包和命名空间
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,20 +78,20 @@ ms.locfileid: "49219409"
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>在 UML 模型资源管理器中创建包  
   
-1.  打开**UML 模型资源管理器**。 上**体系结构**菜单，依次指向**Windows**，然后单击**UML 模型资源管理器**。  
+1. 打开**UML 模型资源管理器**。 上**体系结构**菜单，依次指向**Windows**，然后单击**UML 模型资源管理器**。  
   
-2.  右键单击想要向其中添加新包的包或模型。  
+2. 右键单击想要向其中添加新包的包或模型。  
   
-    > [!NOTE]
-    >  可以将一个包嵌套到另一个包中。  
+   > [!NOTE]
+   >  可以将一个包嵌套到另一个包中。  
   
-3.  指向**外**，然后单击**包**。  
+3. 指向**外**，然后单击**包**。  
   
-     此时模型中将显示新包。  
+    此时模型中将显示新包。  
   
-4.  为该包键入新名称。  
+4. 为该包键入新名称。  
   
- 如果已在 UML 模型资源管理器中创建了包，则可以让它在 UML 类图中显示。 还可以让包在多个 UML 类图中显示。  
+   如果已在 UML 模型资源管理器中创建了包，则可以让它在 UML 类图中显示。 还可以让包在多个 UML 类图中显示。  
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>在 UML 类图中显示现有包  
   
@@ -103,15 +103,15 @@ ms.locfileid: "49219409"
 ##  <a name="Elements"></a> 创建包内的模型元素  
  可以通过以下四种方法将模型元素放置到包中：  
   
--   在 UML 模型资源管理器中将新元素添加到包中。  
+- 在 UML 模型资源管理器中将新元素添加到包中。  
   
--   在 UML 类图中将类和其他类型添加到包中。  
+- 在 UML 类图中将类和其他类型添加到包中。  
   
--   设置**LinkedPackage**关系图的属性，以便在关系图上创建新元素放置到您指定的包。 可以通过这种方式将类图、组件图和用例图链接到包。  
+- 设置**LinkedPackage**关系图的属性，以便在关系图上创建新元素放置到您指定的包。 可以通过这种方式将类图、组件图和用例图链接到包。  
   
--   在 UML 模型资源管理器中将元素移入或移出包。  
+- 在 UML 模型资源管理器中将元素移入或移出包。  
   
- 在 UML 模型资源管理器中，包中的元素将在包的下方显示，且其限定名以包的限定名开头。 若要查看的任何元素的限定的名称，右键单击该元素，然后依次**属性**。 **限定名**属性将出现在**属性**窗口。  
+  在 UML 模型资源管理器中，包中的元素将在包的下方显示，且其限定名以包的限定名开头。 若要查看的任何元素的限定的名称，右键单击该元素，然后依次**属性**。 **限定名**属性将出现在**属性**窗口。  
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>在 UML 模型资源管理器中创建包中的元素  
   

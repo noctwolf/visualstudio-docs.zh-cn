@@ -13,12 +13,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 93d08695a891aeda0d4f153fa2f3e6738d647b27
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1de284c8d4fdfe5cb84a474641b880590c2094aa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49200013"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895314"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ ms.locfileid: "49200013"
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [代码生成和编译](#BKMK_Code_generation_and_compilation)  
   
--   [配置存根的代码生成](#BKMK_Configuring_code_generation_of_stubs) • [类型筛选](#BKMK_Type_filtering) • [将实际类和虚拟方法用作存根](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [内部类型](#BKMK_Internal_types) • [优化生成时间](#BKMK_Optimizing_build_times) • [避免程序集名称冲突](#BKMK_Avoiding_assembly_name_clashing)  
+- [配置存根的代码生成](#BKMK_Configuring_code_generation_of_stubs) • [类型筛选](#BKMK_Type_filtering) • [将实际类和虚拟方法用作存根](#BKMK_Stubbing_concrete_classes_and_virtual_methods) • [内部类型](#BKMK_Internal_types) • [优化生成时间](#BKMK_Optimizing_build_times) • [避免程序集名称冲突](#BKMK_Avoiding_assembly_name_clashing)  
   
- [Fakes 命名约定](#BKMK_Fakes_naming_conventions)  
+  [Fakes 命名约定](#BKMK_Fakes_naming_conventions)  
   
--   [填充码类型和存根类型命名约定](#BKMK_Shim_type_and_stub_type_naming_conventions) • [填充码委托属性或存根委托字段命名约定](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [参数类型命名约定](#BKMK_Parameter_type_naming_conventions) • [递归规则](#BKMK_Recursive_rules)  
+- [填充码类型和存根类型命名约定](#BKMK_Shim_type_and_stub_type_naming_conventions) • [填充码委托属性或存根委托字段命名约定](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions) • [参数类型命名约定](#BKMK_Parameter_type_naming_conventions) • [递归规则](#BKMK_Recursive_rules)  
   
- [外部资源](#BKMK_External_resources)  
+  [外部资源](#BKMK_External_resources)  
   
--   [指南](#BKMK_Guidance)  
+- [指南](#BKMK_Guidance)  
   
 ##  <a name="BKMK_Code_generation_and_compilation"></a>代码生成和编译  
   
@@ -127,21 +127,21 @@ ms.locfileid: "49200013"
   
  如果已填充的程序集具有强名称，并且你希望访问该程序集的内部类型：  
   
--   测试程序集和 Fakes 程序集都必须具有强名称。  
+- 测试程序集和 Fakes 程序集都必须具有强名称。  
   
--   必须将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中我们的示例属性所呈现的效果：  
+- 必须将测试的公钥和 Fakes 程序集添加到已填充的程序集的“InternalsVisibleToAttribute”属性中。 这是当已填充的程序集具有强名称时，在已填充的程序集代码中我们的示例属性所呈现的效果：  
   
-    ```csharp  
-    // FileSystem\AssemblyInfo.cs  
-    [assembly: InternalsVisibleTo("FileSystem.Fakes",  
-        PublicKey=<Fakes_assembly_public_key>)]  
-    [assembly: InternalsVisibleTo("FileSystem.Tests",  
-        PublicKey=<Test_assembly_public_key>)]  
-    ```  
+  ```csharp  
+  // FileSystem\AssemblyInfo.cs  
+  [assembly: InternalsVisibleTo("FileSystem.Fakes",  
+      PublicKey=<Fakes_assembly_public_key>)]  
+  [assembly: InternalsVisibleTo("FileSystem.Tests",  
+      PublicKey=<Test_assembly_public_key>)]  
+  ```  
   
- 如果已填充的程序集具有强名称，则 Fakes 框架将自动对生成的 Fakes 程序集进行强签名。 你需要对测试程序集进行强签名。 请参阅[创建和使用具有强名称的程序集](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)。  
+  如果已填充的程序集具有强名称，则 Fakes 框架将自动对生成的 Fakes 程序集进行强签名。 你需要对测试程序集进行强签名。 请参阅[创建和使用具有强名称的程序集](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)。  
   
- Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，你可以将此代码片段用作起点以将 Fakes 程序集的“InternalsVisibleTo”属性添加到已填充的程序集代码中。  
+  Fakes 框架使用相同的密钥为所有生成的程序集签名，因此，你可以将此代码片段用作起点以将 Fakes 程序集的“InternalsVisibleTo”属性添加到已填充的程序集代码中。  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
@@ -211,38 +211,38 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a>填充类型和存根类型命名约定  
  **命名空间**  
   
--   向命名空间添加 .Fakes 后缀。  
+- 向命名空间添加 .Fakes 后缀。  
   
-     例如，`System.Fakes` 命名空间包含系统命名空间的填充码类型。  
+   例如，`System.Fakes` 命名空间包含系统命名空间的填充码类型。  
   
--   Global.Fakes 包含空命名空间的填充码类型。  
+- Global.Fakes 包含空命名空间的填充码类型。  
   
- **类型名称**  
+  **类型名称**  
   
--   向类型名称添加填充码前缀可生成填充码类型名称。  
+- 向类型名称添加填充码前缀可生成填充码类型名称。  
   
-     例如，ShimExample 是示例类型的填充码类型。  
+   例如，ShimExample 是示例类型的填充码类型。  
   
--   向类型名称添加存根前缀可生成存根类型名称。  
+- 向类型名称添加存根前缀可生成存根类型名称。  
   
-     例如，StubIExample 是 IExample 类型的存根类型。  
+   例如，StubIExample 是 IExample 类型的存根类型。  
   
- **类型参数和嵌套类型结构**  
+  **类型参数和嵌套类型结构**  
   
--   复制泛型类型参数。  
+- 复制泛型类型参数。  
   
--   根据填充码类型复制嵌套类型结构。  
+- 根据填充码类型复制嵌套类型结构。  
   
 ###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a>填充委托属性或存根委托字段命名约定  
  字段命名的**基本规则**，从空的名称开始：  
   
--   追加方法名称。  
+- 追加方法名称。  
   
--   如果方法名称是显式接口实现，则删除点。  
+- 如果方法名称是显式接口实现，则删除点。  
   
--   如果是泛型方法，则追加 `Of`*n*，其中 *n* 是泛型方法自变量的数量。  
+- 如果是泛型方法，则追加 `Of`*n*，其中 *n* 是泛型方法自变量的数量。  
   
- **特殊方法名称**（比如属性 getter 或 setter）将按下表所述方式处理。  
+  **特殊方法名称**（比如属性 getter 或 setter）将按下表所述方式处理。  
   
 |如果方法是…|示例|追加的方法名称|  
 |-------------------|-------------|--------------------------|  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a111c1f7bc228a26ab320f82f19111eafaf2ee
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 6242b80c1dcefe0e1a3a35561337a75e6098d25d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924325"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913440"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：创建基本三维模型
 
@@ -42,37 +42,37 @@ ms.locfileid: "37924325"
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>创建房屋的简化三维模型
 
-1.  创建要使用的三维模型。 若要了解如何向项目添加模型，请参阅[模型编辑器](../designers/model-editor.md)中的“入门”部分。
+1. 创建要使用的三维模型。 若要了解如何向项目添加模型，请参阅[模型编辑器](../designers/model-editor.md)中的“入门”部分。
 
-2.  将立方体添加到场景中。 在“工具箱”窗口的“形状”下，选择“立方体”，然后将其移动到设计图面。
+2. 将立方体添加到场景中。 在“工具箱”窗口的“形状”下，选择“立方体”，然后将其移动到设计图面。
 
-3.  切换到面选择。 在“模型编辑器”工具栏上，选择“选择面”。
+3. 切换到面选择。 在“模型编辑器”工具栏上，选择“选择面”。
 
-4.  细分立方体的顶部。 在面选择模式下，选择立方体一次将其激活以供选择，然后选择立方体的顶部以选择顶部面。 在“模型编辑器”工具栏上，选择“细分面”。 这会向立方体的顶部添加新顶点，这些顶点将立方体拆分为四个大小相等的分区。
+4. 细分立方体的顶部。 在面选择模式下，选择立方体一次将其激活以供选择，然后选择立方体的顶部以选择顶部面。 在“模型编辑器”工具栏上，选择“细分面”。 这会向立方体的顶部添加新顶点，这些顶点将立方体拆分为四个大小相等的分区。
 
-     ![已对立方体的顶端进行细分](../designers/media/gfx_model_demo_house_subdiv.png)
+    ![已对立方体的顶端进行细分](../designers/media/gfx_model_demo_house_subdiv.png)
 
-5.  延伸立方体的两条相邻边 - 例如，立方体的前边和右边。 在面选择模式下，选择立方体一次将其激活以供选择，然后选择立方体的一边。 按住 Ctrl 键，选择与首先选择的立方体边相邻的另一个边，然后在“模型编辑器”工具栏上选择“延伸面”。
+5. 延伸立方体的两条相邻边 - 例如，立方体的前边和右边。 在面选择模式下，选择立方体一次将其激活以供选择，然后选择立方体的一边。 按住 Ctrl 键，选择与首先选择的立方体边相邻的另一个边，然后在“模型编辑器”工具栏上选择“延伸面”。
 
-     ![已延伸立方体的两侧](../designers/media/gfx_model_demo_house_extrude.png)
+    ![已延伸立方体的两侧](../designers/media/gfx_model_demo_house_extrude.png)
 
-6.  扩展其中一个延伸。 选择刚延伸的某个面，然后在“模型编辑器”工具栏上选择“平移”工具，并按延伸的方向移动平移操控程序。
+6. 扩展其中一个延伸。 选择刚延伸的某个面，然后在“模型编辑器”工具栏上选择“平移”工具，并按延伸的方向移动平移操控程序。
 
-     ![已进一步延伸立方体的一侧。](../designers/media/gfx_model_demo_house_extend.png)
+    ![已进一步延伸立方体的一侧。](../designers/media/gfx_model_demo_house_extend.png)
 
-7.  对模型进行三角测量。 在“模型编辑器”工具栏上，依次选择“高级” > “工具” > “三角化”。
+7. 对模型进行三角测量。 在“模型编辑器”工具栏上，依次选择“高级” > “工具” > “三角化”。
 
-8.  创建房子的屋顶。 选择“模型编辑器”工具栏上的“选择边”切换到边选择模式，然后选择立方体将其激活。 选择此处显示的边时，请按住 Ctrl 键：
+8. 创建房子的屋顶。 选择“模型编辑器”工具栏上的“选择边”切换到边选择模式，然后选择立方体将其激活。 选择此处显示的边时，请按住 Ctrl 键：
 
-     ![将形成屋顶顶端的边缘](../designers/media/gfx_model_demo_house_edges.png)
+    ![将形成屋顶顶端的边缘](../designers/media/gfx_model_demo_house_edges.png)
 
-     选择边后，请在“模型编辑器”工具栏上选择“平移”工具，然后将平移操控程序上移来创建房子的屋顶。
+    选择边后，请在“模型编辑器”工具栏上选择“平移”工具，然后将平移操控程序上移来创建房子的屋顶。
 
- 简化的房子模型已完成。 下面是应用了平面着色的最终模型：
+   简化的房子模型已完成。 下面是应用了平面着色的最终模型：
 
- ![简约建筑的已完成模型](../designers/media/gfx_model_demo_house_final.png)
+   ![简约建筑的已完成模型](../designers/media/gfx_model_demo_house_final.png)
 
- 下一步，可以将着色器应用于此三维模型。 相关信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
+   下一步，可以将着色器应用于此三维模型。 相关信息，请参阅[如何：向三维模型应用着色器](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。
 
 ## <a name="see-also"></a>请参阅
 

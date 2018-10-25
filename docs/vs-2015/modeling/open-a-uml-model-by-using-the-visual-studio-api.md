@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e92ece9a8097071c8d8cef5b77ca9fdb242d677f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14fa94779fc8d849bbfdb9176fdc94049078c674
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292703"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920187"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>使用 Visual Studio API 打开 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,27 +35,27 @@ ms.locfileid: "49292703"
 ##  <a name="Showing"></a> 在 Visual Studio 中打开模型和关系图  
  若要在用户界面中打开某个模型，请使用标准 Visual Studio API `EnvDTE.DTE`。 有两个有用的强制转换，你可以在建模项目项上执行：  
   
--   如果项目是建模项目，并且已在当前 AppDomain 中加载该项目，则 `EnvDTE.Project` 可以在 `IModelingProject` 间来回转换。  
+- 如果项目是建模项目，并且已在当前 AppDomain 中加载该项目，则 `EnvDTE.Project` 可以在 `IModelingProject` 间来回转换。  
   
--   如果该项为 UML 关系图，则 `EnvDTE.ProjectItem` 可以在 `IDiagramContext` 间来回转换。  
+- 如果该项为 UML 关系图，则 `EnvDTE.ProjectItem` 可以在 `IDiagramContext` 间来回转换。  
   
- 对于以下示例，你的项目应导入这些引用：  
+  对于以下示例，你的项目应导入这些引用：  
   
--   EnvDTE  
+- EnvDTE  
   
--   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+- Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
--   Microsoft.VisualStudio.Modeling.Sdk.[版本号]  
+- Microsoft.VisualStudio.Modeling.Sdk.[版本号]  
   
--   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本号]  
+- Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[版本号]  
   
--   Microsoft.VisualStudio.Shell.Immutable.[版本号]  
+- Microsoft.VisualStudio.Shell.Immutable.[版本号]  
   
--   Microsoft.VisualStudio.Uml.Interfaces  
+- Microsoft.VisualStudio.Uml.Interfaces  
   
--   System.ComponentModel.Composition  
+- System.ComponentModel.Composition  
   
- 示例将在 Visual Studio 中打开一个 UML 模型：  
+  示例将在 Visual Studio 中打开一个 UML 模型：  
   
 ```  
 using EnvDTE; // Visual Studio API for loading diagrams  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36d9e78a1944817d9384d0c55b9584e58a758ccc
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 79b4adcfbcacc8cf342b5fc4183ae4fe27431b09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31925076"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864761"
 ---
 # <a name="visual-c-structures-in-class-designer"></a>类设计器中的 Visual C++ 结构
 
@@ -37,7 +37,7 @@ struct MyStructure
 类图中的 C++ 结构形状的外观和运行方式都与类形状相似，不同之处在于它的标签名为 **Struct**，且为方角（而不是圆角）。
 
 |代码元素|类设计器视图|
-|------------------|-------------------------|
+|------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> 结构|
 
 ## <a name="see-also"></a>请参阅

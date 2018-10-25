@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d45145da27d019b0750202a38c24ecb1e147d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f19bbbfbde9a111c6edea112b7250fca934ac7f7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203939"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881685"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中调试器的异常
 
@@ -217,7 +217,7 @@ public class GenericException<T> : Exception
 
    ![异常的额外条件](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. 对于每个条件行中，键入模块的名称并更改到的比较运算符列表**等于**或**不等于**。 你可以指定通配符 (**\***) 中指定多个模块的名称。
+3. 对于每个条件行中，键入模块的名称并更改到的比较运算符列表**等于**或**不等于**。 你可以指定通配符 (* *\\* * *) 中指定多个模块的名称。
 
 4. 如果你需要删除条件，请选择**X**条件行尾。
 

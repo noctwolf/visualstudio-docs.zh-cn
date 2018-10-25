@@ -18,12 +18,12 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0fe6d5cb678cade67ef9e46e9b3c113c988bf879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bfd8b3d6a74d4be6edce66e6d921a6c608f861ae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902862"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的选择和货币
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,15 +52,15 @@ ms.locfileid: "49270916"
 ### <a name="window-types-and-selection"></a>窗口类型和所选内容  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 将 windows 组织到两种常规类型：  
   
--   层次结构类型 windows  
+- 层次结构类型 windows  
   
--   框架窗口，如工具和文档窗口  
+- 框架窗口，如工具和文档窗口  
   
- IDE 以不同的方式跟踪的每个窗口类型的货币。  
+  IDE 以不同的方式跟踪的每个窗口类型的货币。  
   
- 最常见的项目类型窗口是解决方案资源管理器，它控制 IDE。 项目类型窗口跟踪的全局层次结构和 ItemID 的全局选择上下文，并在窗口依赖于用户的选择来确定当前层次结构。 对于项目类型 windows 环境提供了全局服务<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>，通过的 Vspackage 可以监视打开的元素的当前值。 在环境中浏览的属性取决于此全局服务。  
+  最常见的项目类型窗口是解决方案资源管理器，它控制 IDE。 项目类型窗口跟踪的全局层次结构和 ItemID 的全局选择上下文，并在窗口依赖于用户的选择来确定当前层次结构。 对于项目类型 windows 环境提供了全局服务<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>，通过的 Vspackage 可以监视打开的元素的当前值。 在环境中浏览的属性取决于此全局服务。  
   
- 框架窗口，但是，使用该文档框架窗口内推送 SelectionContext 值 （层次结构/ItemID/SelectionContainer 三个）。 . 框架窗口使用服务<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>实现此目的。 该文档可以推送仅为所选内容容器的值保留本地值的层次结构和 ItemID 不变，因为是典型的 MDI 子文档。  
+  框架窗口，但是，使用该文档框架窗口内推送 SelectionContext 值 （层次结构/ItemID/SelectionContainer 三个）。 . 框架窗口使用服务<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>实现此目的。 该文档可以推送仅为所选内容容器的值保留本地值的层次结构和 ItemID 不变，因为是典型的 MDI 子文档。  
   
 ### <a name="events-and-currency"></a>事件和货币  
  两种类型的事件可能会发生，会影响环境的这一概念的货币：  

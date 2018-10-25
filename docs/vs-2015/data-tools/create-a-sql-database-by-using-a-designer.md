@@ -28,12 +28,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 8a1765c142fcf039b28b2e1c2e6ad1bf7038aaa9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0ef261ec4ea803dcfc42b6151a5c828d5b03811a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860319"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>使用设计器创建 SQL 数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ ms.locfileid: "49220730"
   
 #### <a name="to-create-a-project-and-a-database-file"></a>创建项目和数据库文件  
   
-1.  创建名为一个 Windows 窗体项目`SampleDatabaseWalkthrough`。  
+1. 创建名为一个 Windows 窗体项目`SampleDatabaseWalkthrough`。  
   
-2.  在菜单栏上，选择**项目** > **添加新项**。  
+2. 在菜单栏上，选择**项目** > **添加新项**。  
   
-3.  在项模板列表中，向下滚动并选择**基于服务的数据库**。  
+3. 在项模板列表中，向下滚动并选择**基于服务的数据库**。  
   
-     ![项模板对话框](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+    ![项模板对话框](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-4.  命名数据库**SampleDatabase**，然后选择**添加**按钮。  
+4. 命名数据库**SampleDatabase**，然后选择**添加**按钮。  
   
-5.  如果**数据源**窗口未打开，通过选择 Shift + Alt + D 键，或在菜单栏，选择打开该**视图** > **其他 Windows**  > **数据源**。  
+5. 如果**数据源**窗口未打开，通过选择 Shift + Alt + D 键，或在菜单栏，选择打开该**视图** > **其他 Windows**  > **数据源**。  
   
-6.  在中**数据源**窗口中，选择**添加新数据源**链接。  
+6. 在中**数据源**窗口中，选择**添加新数据源**链接。  
   
-7.  在中**数据源配置向导**，选择**下一步**按钮四次以接受默认设置，然后选择**完成**按钮。  
+7. 在中**数据源配置向导**，选择**下一步**按钮四次以接受默认设置，然后选择**完成**按钮。  
   
- 通过打开数据库的属性窗口，可查看其连接字串符和主 .mdf 文件的位置。 您会看到数据库文件是在项目文件夹中。  
+   通过打开数据库的属性窗口，可查看其连接字串符和主 .mdf 文件的位置。 您会看到数据库文件是在项目文件夹中。  
   
 -   在 Visual Studio 中，选择**视图** > **SQL Server 对象资源管理器**如果该窗口尚未打开。 打开属性窗口，展开**数据连接**节点，打开 SampleDatabase.mdf，快捷菜单，然后选中**属性**。  
   

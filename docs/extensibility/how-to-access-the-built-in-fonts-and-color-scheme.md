@@ -15,25 +15,25 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 180dc474b2458ec38a8a76ed8f931a592cf29225
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 295f6d26d086914bf75d5744ca47594dfefb6591
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39500090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911247"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>如何： 访问内置的字体和颜色 ccheme
 Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关联的字体和颜色的方案。 您可以访问通过此方案<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>接口。
 
  若要使用内置的字体和颜色方案，VSPackage 必须：
 
--   定义要用于默认字体和颜色服务的类别。
+- 定义要用于默认字体和颜色服务的类别。
 
--   向默认字体和颜色服务器注册的类别。
+- 向默认字体和颜色服务器注册的类别。
 
--   建议 IDE 特定窗口通过使用内置的显示项和类别<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>接口。
+- 建议 IDE 特定窗口通过使用内置的显示项和类别<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>和<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>接口。
 
- IDE 窗口的句柄作为使用生成的类别。 该类别的名称显示在**显示其设置：** 下拉列表框中的**字体和颜色**属性页。
+  IDE 窗口的句柄作为使用生成的类别。 该类别的名称显示在**显示其设置：** 下拉列表框中的**字体和颜色**属性页。
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>若要定义使用内置的字体和颜色的类别
 
@@ -67,15 +67,15 @@ Visual Studio 集成的开发环境 (IDE) 具有一种与编辑器窗口相关�
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>若要启动使用系统提供的字体和颜色
 
-1.  创建的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口作为窗口的实现和初始化的一部分。
+1. 创建的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer>接口作为窗口的实现和初始化的一部分。
 
-2.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法来获取的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>接口对应于当前<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>实例。
+2. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A>方法来获取的实例<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer>接口对应于当前<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>实例。
 
-3.  调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>两次。
+3. 调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A>两次。
 
-    -   使用一次调用`VSEDITPROPID_ViewGeneral_ColorCategory`作为自变量。
+   - 使用一次调用`VSEDITPROPID_ViewGeneral_ColorCategory`作为自变量。
 
-    -   使用一次调用`VSEDITPROPID_ViewGeneral_FontCategory`作为自变量。
+   - 使用一次调用`VSEDITPROPID_ViewGeneral_FontCategory`作为自变量。
 
      此设置，并将默认字体和颜色服务公开为窗口的属性。
 

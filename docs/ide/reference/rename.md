@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 696ec34bb0009b9b09b5902a102c71cf1331f320
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b85814be6df104a0d5859fbb339ce0dc665c09c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945449"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908728"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>“重命名代码符号”重构
 
@@ -41,34 +41,34 @@ ms.locfileid: "31945449"
 
    - C#：
 
-    ![突出显示的代码 - C#](media/rename-highlight-cs.png)
+       ![突出显示的代码 - C#](media/rename-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 - Visual Basic](media/rename-highlight-vb.png)
+       ![突出显示的代码 - Visual Basic](media/rename-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+R”，然后按“Ctrl+R”。 （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
+      - 按“Ctrl+R”，然后按“Ctrl+R”。 （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
    - **鼠标**
-     - 选择“编辑 > 重构 > 重命名”。
-     - 右键单击代码并选择“重命名”。
+      - 选择“编辑 > 重构 > 重命名”。
+      - 右键单击代码并选择“重命名”。
 
-1. 只需通过键入新名称即可重命名项。
+3. 只需通过键入新名称即可重命名项。
 
    - C#：
 
-    ![重命名动画 - C#](media/rename-animated-cs.gif)
+      ![重命名动画 - C#](media/rename-animated-cs.gif)
 
    - Visual Basic：
 
-    ![重命名 - VB](media/rename-rename-vb.png)
+      ![重命名 - VB](media/rename-rename-vb.png)
 
    > [!TIP]
    > 还可将注释和其他字符串更新为使用该新名称，也可在保存前使用“重命名”框（在编辑器的右上方）中的复选框[预览更改](../../ide/preview-changes.md)。
 
-1. 对更改感到满意时，单击“应用”按钮或按 Enter 即可提交所做的更改。
+4. 对更改感到满意时，单击“应用”按钮或按 Enter 即可提交所做的更改。
 
 > [!NOTE]
 > 如果所用名称已存在（这可能导致冲突），“重命名”框将发出警告。

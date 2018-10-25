@@ -31,12 +31,12 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e5cd62b5cc5eabd731e5ad398cbb9ddbe60db073
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: feae495e83e4f78fcd627bec25dd5e988962cec4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219110"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917695"
 ---
 # <a name="assertions-in-managed-code"></a>托管代码中的断言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -153,19 +153,19 @@ Debug.Assert ( temp != 0 );
   
  否则，若要使 <xref:System.Diagnostics.Trace> 方法能够正常工作，程序必须在源文件的顶部放置下列项之一：  
   
--   Visual Basic 中的 `#Const TRACE = True`  
+- Visual Basic 中的 `#Const TRACE = True`  
   
--   Visual C# 和 C++ 中的 `#define TRACE`  
+- Visual C# 和 C++ 中的 `#define TRACE`  
   
- 或者，程序必须是用 TRACE 选项生成的：  
+  或者，程序必须是用 TRACE 选项生成的：  
   
--   Visual Basic 中的 `/d:TRACE=True`  
+- Visual Basic 中的 `/d:TRACE=True`  
   
--   Visual C# 和 C++ 中的 `/d:TRACE`  
+- Visual C# 和 C++ 中的 `/d:TRACE`  
   
- 如果需要在 C# 或 Visual Basic 发行版中使用 DEBUG 方法，您必须在“发布”配置中定义 DEBUG 符号。  
+  如果需要在 C# 或 Visual Basic 发行版中使用 DEBUG 方法，您必须在“发布”配置中定义 DEBUG 符号。  
   
- C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`. 您可以定义中的这些符号**\<项目 > 属性页**对话框。 有关详细信息，请参阅[更改为 Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+  C++ 不支持 <xref:System.Diagnostics.Debug> 类方法。 可以通过使用实现相同的效果<xref:System.Diagnostics.Trace>类使用条件编译，如`#ifdef DEBUG`...`#endif`. 您可以定义中的这些符号**\<项目 > 属性页**对话框。 有关详细信息，请参阅[更改为 Visual Basic 调试配置的项目设置](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或[更改 C 或 c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
 ##  <a name="BKMK_Assert_arguments"></a> 断言自变量  
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> 最多有三个参数。 第一个自变量是强制的，它是要检查的条件。 如果您调用<xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName>或<xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>只有一个参数与`Assert`方法检查条件，并且如果结果为 false，则输出到调用堆栈的内容**输出**窗口。 下面的示例显示 <xref:System.Diagnostics.Trace.Assert%28System.Boolean%29?displayProperty=fullName> 和 <xref:System.Diagnostics.Debug.Assert%28System.Boolean%29?displayProperty=fullName>：  

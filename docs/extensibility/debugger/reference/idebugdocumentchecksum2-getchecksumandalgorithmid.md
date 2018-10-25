@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId |Microsoft 文档
+title: IDebugDocumentChecksum2::GetChecksumAndAlgorithmId |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36cacd8ba313c9beb7565ebb20cbce23f7b6c12e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fbb12f315bc0e83e14ad4a342443ed3207411dae
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107850"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846377"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 检索要使用的字节的最大数目的文档校验和算法标识符。  
@@ -49,19 +49,19 @@ public int GetChecksumAndAlgorithmId(
  [out]校验和算法的唯一标识符。  
   
  `cMaxBytes`  
- [in]要用于校验和的字节的最大数量。  
+ [in]要使用的校验和的字节的最大数目。  
   
  `pChecksum`  
- [out]校验和值。  
+ [out]校验和的值。  
   
  `pcNumBytes`  
- [out]实际用于校验和的字节数。  
+ [out]实际使用的校验和的字节数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例使用此方法来获取的校验和和文档的算法。  
+ 以下示例使用此方法以获取校验和和文档的算法。  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
@@ -126,5 +126,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

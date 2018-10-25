@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b2fc6fb0be13dbda001c23a4d51e11dc9f53853d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bfb45efc199ea1f643c71bdc19a90862bb6c5dd6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916057"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标框架和目标平台
 可以生成要在目标框架（.NET Framework 的一个特定版本）和目标平台（一种特定的软件体系结构）上运行的项目。  例如，可将一个应用程序的目标设定为在与 802x86 处理器系列 (“x86”) 兼容的 32 位平台上的 .NET Framework 2.0 上运行。 目标框架与目标平台的组合称为“目标上下文”。  
@@ -25,23 +25,23 @@ ms.locfileid: "43774701"
   
  目前，以下版本的 .NET Framework 可供使用：  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0（包含在 Visual Studio 2005 中）  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0（包含在 Visual Studio 2005 中）  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0（包含在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 中）  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0（包含在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 中）  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5（包含在 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 中）  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5（包含在 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 中）  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2  
   
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6（包含在 [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] 中）  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6（包含在 [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)] 中）  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7  
 
--   [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
+- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1  
 
 在可供引用的各程序集的列表中，.NET Framework 的版本各不相同。 例如，不能生成 Windows Presentation Foundation (WPF) 应用程序，除非项目面向 .NET Framework 3.0 或更高版本。  
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugDefaultPort2::GetServer |Microsoft 文档
+title: IDebugDefaultPort2::GetServer |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61e4ea81da1e8f31cabd7c2dae6ca5dc3251eef8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 273e6b89ce9ca38c05034ae1b31e4eeb9fec5b86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106666"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874366"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 此方法获取此端口的服务器的接口。  
@@ -47,8 +47,8 @@ int GetServer(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)实现由 Visual Studio，并表示端口位于的服务器。  
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)实现由 Visual Studio 和表示该端口位于的服务器。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: acfe9f80a5125ef13996e7cd8ec88a35cfb83211
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 9c6b5a12b37509e6e5113c704ef2c3ff931ea32e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756381"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886404"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 模板设计器
 
@@ -44,20 +44,21 @@ ms.locfileid: "36756381"
 
 下表列出 <xref:System.ServiceModel.Activities.SendReply> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性和某些可编辑工作流设计器图面上。
 
-|属性名|必需|用法|
-|-------------------|--------------|-----------|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.SendReply> 活动的可选友好名称。 默认值为 SendReplyToReceive。<br /><br /> 虽然对友好使用非默认值<xref:System.Activities.Activity.DisplayName%2A>并不严格要求，最好是使用此类值。|
-|<xref:System.ServiceModel.Activities.SendReply.Request%2A>|True|对与此 <xref:System.ServiceModel.Activities.Receive> 活动配对的 <xref:System.ServiceModel.Activities.SendReply> 活动的引用。 此属性不能**null**。 在服务器上将 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活动配合使用，可对请求/响应消息模式进行建模。 此属性指定配对的 <xref:System.ServiceModel.Activities.Send> 活动。 在设计器中，您不能编辑此属性，因为它自动绑定到<xref:System.ServiceModel.Activities.Send>活动从其创建<xref:System.ServiceModel.Activities.SendReply>活动。|
-|<xref:System.ServiceModel.Activities.SendReply.Content%2A>|False|指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 编辑此属性的旁边单击省略号按钮**内容**在属性网格中，或单击字段**定义**按钮旁边**内容**上标签**接收**活动设计器图面。 两者都显示**内容定义**对话框。 有关如何使用此框的详细信息，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。|
-|<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>|False|指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>属性在属性网格中，打开**添加相关初始值设定项**对话框。 有关使用此框的详细信息，请参阅[添加相关初始值设定项对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。|
-|<xref:System.ServiceModel.Activities.SendReply.Action%2A>|False|指定消息的操作标头。 如果未显式设置，其默认值为：<br /><br /> **https://tempuri.org/{service 协定命名空间} / {服务协定名称} / {操作名称}**|
-|<xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A>|False|指定在发送回复消息前是否应保留工作流实例。 默认值为“false”。|
+
+| 属性名 | 必需 | 用法 |
+|-|----------|-|
+| <xref:System.Activities.Activity.DisplayName%2A> | False | <xref:System.ServiceModel.Activities.SendReply> 活动的可选友好名称。 默认值为 SendReplyToReceive。<br /><br /> 虽然对友好使用非默认值<xref:System.Activities.Activity.DisplayName%2A>并不严格要求，最好是使用此类值。 |
+| <xref:System.ServiceModel.Activities.SendReply.Request%2A> | True | 对与此 <xref:System.ServiceModel.Activities.Receive> 活动配对的 <xref:System.ServiceModel.Activities.SendReply> 活动的引用。 此属性不能**null**。 在服务器上将 <xref:System.ServiceModel.Activities.Receive> 和 <xref:System.ServiceModel.Activities.SendReply> 活动配合使用，可对请求/响应消息模式进行建模。 此属性指定配对的 <xref:System.ServiceModel.Activities.Send> 活动。 在设计器中，您不能编辑此属性，因为它自动绑定到<xref:System.ServiceModel.Activities.Send>活动从其创建<xref:System.ServiceModel.Activities.SendReply>活动。 |
+| <xref:System.ServiceModel.Activities.SendReply.Content%2A> | False | 指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 编辑此属性的旁边单击省略号按钮**内容**在属性网格中，或单击字段**定义**按钮旁边**内容**上标签**接收**活动设计器图面。 两者都显示**内容定义**对话框。 有关如何使用此框的详细信息，请参阅[内容定义对话框](../workflow-designer/content-definition-dialog-box.md)主题。 |
+| <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | False | 指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击省略号按钮旁边<xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A>属性在属性网格中，打开**添加相关初始值设定项**对话框。 有关使用此框的详细信息，请参阅[添加相关初始值设定项对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)主题。 |
+| <xref:System.ServiceModel.Activities.SendReply.Action%2A> | False | 指定消息的操作标头。 如果未显式设置，其默认值为：<br /><br /> <strong>https://tempuri.org/{service 协定命名空间} / {服务协定名称} / {操作名称}</strong> |
+| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | False | 指定在发送回复消息前是否应保留工作流实例。 默认值为“false”。 |
 
 ## <a name="see-also"></a>请参阅
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [接收](../workflow-designer/receive-activity-designer.md)
-- [发送](../workflow-designer/send-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

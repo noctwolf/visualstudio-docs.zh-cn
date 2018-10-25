@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9ebda2068358a43ed942e25d46e58ed2f45d9733
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913964"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练： 使用业务数据在 SharePoint 中创建外部列表
 
@@ -232,12 +232,12 @@ ms.locfileid: "42635536"
 
 5. 在中`ContactService`类中，将为`ReadList`用下面的代码的方法。 这段代码执行下列任务：
 
-    - 从 AdventureWorks 数据库的联系人表中检索数据。
+   - 从 AdventureWorks 数据库的联系人表中检索数据。
 
-    - 返回到 BDC 服务联系人实体的列表。
+   - 返回到 BDC 服务联系人实体的列表。
 
-    > [!NOTE]
-    > 值替换为`ServerName`字段与服务器的名称。
+     > [!NOTE]
+     > 值替换为`ServerName`字段与服务器的名称。
 
      [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
      [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

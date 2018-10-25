@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: da09f01e602f2d30288bc9f872f761d0bee4fc42
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: c328925fd558e01138354427a80db7a692753710
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498401"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924910"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>演练： 自定义文本视图
 可以通过修改其编辑器格式映射中的下列属性的任何自定义文本视图：  
@@ -40,7 +40,7 @@ ms.locfileid: "39498401"
   
 ## <a name="create-a-mef-project"></a>创建 MEF 项目  
   
-1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名`ViewPropertyTest`。  
+1.  创建一个 C# VSIX 项目。 (在**新的项目**对话框中，选择**Visual C# / 可扩展性**，然后**VSIX 项目**。)将解决方案命名为 `ViewPropertyTest`。  
   
 2.  将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
@@ -48,26 +48,26 @@ ms.locfileid: "39498401"
   
 ## <a name="define-the-content-type"></a>将内容类型定义  
   
-1.  添加一个类文件并将其命名`ViewPropertyModifier`。  
+1. 添加一个类文件并将其命名为 `ViewPropertyModifier`。  
   
-2.  以下代码添加到`using`指令：  
+2. 以下代码添加到`using`指令：  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
-     [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_1.cs)]
+    [!code-vb[VSSDKViewPropertyTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_1.vb)]  
   
-3.  声明一个名为的类`TestViewCreationListener`，它继承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 导出此类具有以下属性：  
+3. 声明一个名为的类`TestViewCreationListener`，它继承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 导出此类具有以下属性：  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定的内容应用到此侦听器的类型。  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定的内容应用到此侦听器的类型。  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定该侦听器的角色。  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定该侦听器的角色。  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_2.cs)]
      [!code-vb[VSSDKViewPropertyTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_2.vb)]  
   
-4.  在此类中，导入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
+4. 在此类中，导入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
-     [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_3.cs)]
+    [!code-vb[VSSDKViewPropertyTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_3.vb)]  
   
 ## <a name="change-the-view-properties"></a>更改视图属性  
   

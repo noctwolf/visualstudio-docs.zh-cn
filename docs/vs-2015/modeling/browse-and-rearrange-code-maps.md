@@ -27,12 +27,12 @@ caps.latest.revision: 91
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 784f36c022f967f59e365ac35912a9e54a81b82c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dba1be310260a2b1ae6ad28efe4b3d98ac14c4a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281432"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896830"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>浏览和重新排列代码图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -178,25 +178,25 @@ ms.locfileid: "49281432"
 ###  <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>添加现有代码元素之间的链接  
   
-1.  选择源代码元素。 代码元素的上方会出现一个工具栏。  
+1. 选择源代码元素。 代码元素的上方会出现一个工具栏。  
   
-     ![依赖项关系图工具栏](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
+    ![依赖项关系图工具栏](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  在工具栏中，选择第一个图标**创建从此节点到下一步单击的任意节点的新链接**。  
+2. 在工具栏中，选择第一个图标**创建从此节点到下一步单击的任意节点的新链接**。  
   
-3.  选择目标代码元素。 链接将出现在两个代码元素之间。  
+3. 选择目标代码元素。 链接将出现在两个代码元素之间。  
   
- \- 或 -  
+   \- 或 -  
   
-1.  在代码图上选择源代码元素。  
+4. 在代码图上选择源代码元素。  
   
-2.  如果你安装了鼠标，将鼠标指针移动到代码图的边界外。  
+5. 如果你安装了鼠标，将鼠标指针移动到代码图的边界外。  
   
-3.  打开代码元素的快捷菜单，然后选择**编辑**，**添加**，**一般链接**。  
+6. 打开代码元素的快捷菜单，然后选择**编辑**，**添加**，**一般链接**。  
   
-4.  用 Tab 键移动并为该链接选择目标代码元素。  
+7. 用 Tab 键移动并为该链接选择目标代码元素。  
   
-5.  按 “Return”。  
+8. 按 “Return”。  
   
 ###  <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>向代码图上的现有节点中添加注释  

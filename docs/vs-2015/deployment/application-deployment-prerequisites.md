@@ -25,12 +25,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 699d7261db325b23502003f250e8ed2fc61f5c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e382c5d312a2de69281bdeda92e9c275e2877932
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890982"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ ms.locfileid: "49217927"
 ## <a name="bootstrapping-and-clickonce-deployment"></a>引导和 ClickOnce 部署  
  在客户端计算机上安装应用程序之前，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 会对客户端进行检查，以确保客户端具备应用程序清单中指定的要求。 这些要求包括：  
   
--   公共语言运行时的最低要求版本（在应用程序清单中被指定为一个程序集依赖项）。  
+- 公共语言运行时的最低要求版本（在应用程序清单中被指定为一个程序集依赖项）。  
   
--   应用程序要求的 Windows 操作系统的最低要求版本（在应用程序清单中使用 `<osVersionInfo>` 元素指定）。 (请参阅[\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md))  
+- 应用程序要求的 Windows 操作系统的最低要求版本（在应用程序清单中使用 `<osVersionInfo>` 元素指定）。 (请参阅[\<依赖项 > 元素](../deployment/dependency-element-clickonce-application.md))  
   
--   必须预先安装在全局程序集缓存 (GAC) 中的任何程序集及所有程序集的最低版本（由程序集清单中的程序集依赖项声明指定）。  
+- 必须预先安装在全局程序集缓存 (GAC) 中的任何程序集及所有程序集的最低版本（由程序集清单中的程序集依赖项声明指定）。  
   
- [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
+  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 可以检测到缺少的先决条件，并可以使用引导程序来安装系统必备组件。 有关详细信息，请参阅[如何： 与 ClickOnce 应用程序的安装必备组件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)。  
   
 > [!NOTE]
 >  若要更改由 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 和 MageUI.exe 之类的工具生成的清单中的默认值，你需要在文本编辑器中编辑应用程序清单，然后重新对应用程序和部署清单进行签名。 有关详细信息，请参阅 [如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。  

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 012805e83e0fa3fae2a58274bfa400818d6d22fd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 574fad0cdccd0112d7d078e86486569d16919a75
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183010"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867438"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,26 +105,26 @@ ms.locfileid: "49183010"
 ## <a name="understanding-monikers"></a>了解名字对象  
  名字对象用于表示的模型和关系图文件的不同部分之间的交叉引用。 中还使用`.diagram`文件以引用的模型文件中的节点。 有两种形式的名字对象：  
   
--   *Id 名字对象*用引号括起来的目标元素的 GUID。 例如：  
+- *Id 名字对象*用引号括起来的目标元素的 GUID。 例如：  
   
-    ```  
-    <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
+  ```  
+  <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />  
   
-    ```  
+  ```  
   
--   *限定键的名字对象*通过一个名为的名字对象密钥的指定的域属性的值确定目标元素。 目标元素的名字对象由其父元素的嵌入关系树中的名字对象作为前缀。  
+- *限定键的名字对象*通过一个名为的名字对象密钥的指定的域属性的值确定目标元素。 目标元素的名字对象由其父元素的嵌入关系树中的名字对象作为前缀。  
   
-     下面的示例取自 DSL 中这是一个名为唱片集，具有到域类名为的 Song 的嵌入关系的域类：  
+   下面的示例取自 DSL 中这是一个名为唱片集，具有到域类名为的 Song 的嵌入关系的域类：  
   
-    ```  
-    <albumMoniker title="/My Favorites/Jazz after Teatime" />  
-    <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
+  ```  
+  <albumMoniker title="/My Favorites/Jazz after Teatime" />  
+  <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />  
   
-    ```  
+  ```  
   
-     如果目标类具有为其域属性，则使用限定键的名字对象选项**名字对象键**设置为`true`中**Xml 序列化行为**。 在示例中，此选项设置为"唱片集"和"歌曲"的域类中名为"Title"域属性。  
+   如果目标类具有为其域属性，则使用限定键的名字对象选项**名字对象键**设置为`true`中**Xml 序列化行为**。 在示例中，此选项设置为"唱片集"和"歌曲"的域类中名为"Title"域属性。  
   
- 限定键的名字对象是易于阅读比 ID 名字对象。 如果你想要的人员无法读取模型文件的 XML，请考虑使用限定键的名字对象。 但是，它是用户可以设置多个元素具有相同的名字对象密钥。 重复的键可能会导致不正确地重新下载文件。 因此，如果你定义使用限定键的名字对象引用的域类，则应考虑种方法可以防止用户保存具有重复名字对象的文件。  
+  限定键的名字对象是易于阅读比 ID 名字对象。 如果你想要的人员无法读取模型文件的 XML，请考虑使用限定键的名字对象。 但是，它是用户可以设置多个元素具有相同的名字对象密钥。 重复的键可能会导致不正确地重新下载文件。 因此，如果你定义使用限定键的名字对象引用的域类，则应考虑种方法可以防止用户保存具有重复名字对象的文件。  
   
 #### <a name="to-set-a-domain-class-to-be-referenced-by-id-monikers"></a>若要设置用于引用的 ID 名字对象的域类  
   
