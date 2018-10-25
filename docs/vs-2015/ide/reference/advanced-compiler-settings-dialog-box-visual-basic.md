@@ -18,12 +18,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6f64f5510974af133100a355656bf3689d928869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd910b0e0295ca12807b96af189032ffec766429
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949820"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>“高级编译器设置”对话框 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ ms.locfileid: "49261581"
   
 ### <a name="to-access-this-dialog-box"></a>访问此对话框  
   
-1.  在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。  
+1. 在“解决方案资源管理器”中，选择项目节点（而非“解决方案”节点）。  
   
-2.  在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。  
+2. 在“项目”菜单上，单击“属性”。 当“项目设计器”出现时，单击“编译”选项卡。  
   
-3.  在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
+3. 在[“编译”->“项目设计器”(Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)上，依次选择“配置”和“平台”。 在简化生成配置中，不会显示“配置”和“平台”列表。 有关详细信息，请参阅[调试和发布项目配置](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)。  
   
-4.  单击“高级编译选项”。  
+4. 单击“高级编译选项”。  
   
- [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
   
 ## <a name="optimizations"></a>优化  
  以下选项可以指定优化，在某些情况下缩小程序文件、加快程序运行速度或加速生成过程。  

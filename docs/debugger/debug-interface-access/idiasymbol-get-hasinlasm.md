@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_hasinlasm |Microsoft 文档'
+title: 'Idiasymbol:: Get_hasinlasm |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 584f2410400bc18b461ea9dc9ba05cde1c1a3681
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: c582e57a7cc2302d1afb9b9cfe4ac479bcdd0bdf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847729"
 ---
 # <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
-检索用于指定该函数是否包含内联程序集的标志。  
+检索一个标志，指定该函数是否包含内联程序集。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,7 +40,7 @@ HRESULT get_hasInlAsm(
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 6d4f460d39d01f231cea03bf6bc81b927528844e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a72c907bf08ce534a61eb4ab7e4667135f104149
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173844"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885599"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>How to: Create and Run an Unattended Installation of Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ ms.locfileid: "49173844"
   
 #### <a name="to-run-an-unattended-installation-on-a-client-computer"></a>在客户端计算机上运行无人参与安装  
   
--   打开**启动**菜单中，选择**运行**，然后输入\\ \\ *ServerName*\IDEinstall\vs_*产品*.exe /adminfile *PathOfTheAdmindeployment.xmlFile**AdditionalParametersAsNeeded*  
+- 打开**启动**菜单中，选择**运行**，然后输入\\ \\ *ServerName*\IDEinstall\vs_*产品*.exe /adminfile *PathOfTheAdmindeployment.xmlFile*<em>AdditionalParametersAsNeeded</em>  
   
-     例如，可以指定以下命令行：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
+   例如，可以指定以下命令行：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
 #### <a name="to-enable-clients-to-manually-install-visual-studio-with-pre-defined-settings"></a>使客户端能够使用预定义的设置手动安装 Visual Studio  
   
@@ -115,59 +115,59 @@ ms.locfileid: "49173844"
   
 #### <a name="to-change-admindeployment-settings-on-a-client-computer-after-visual-studio-has-been-installed"></a>在已安装 Visual Studio 之后更改客户端计算机上的 AdminDeployment 设置  
   
-1.  根据需要更新 AdminDeployment.xml。  
+1. 根据需要更新 AdminDeployment.xml。  
   
-2.  打开 **“开始”** 菜单，然后选择 **“运行”**。  
+2. 打开 **“开始”** 菜单，然后选择 **“运行”**。  
   
-3.  输入以下文本： \\ \\ *ServerName*\IDEinstall\vs_*产品*.exe /AdminFile PathToAdmindeployment.xml 文件  
+3. 输入以下文本： \\ \\ *ServerName*\IDEinstall\vs_*产品*.exe /AdminFile PathToAdmindeployment.xml 文件  
   
-     AdditionalParametersAsNeeded  
+    AdditionalParametersAsNeeded  
   
-     例如，可以指定以下命令行：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
+    例如，可以指定以下命令行：`\\server1\IDEinstall\vs_enterprise.exe /adminfile \\server1\IDEinstall\AdminDeployment.xml /quiet /norestart`  
   
- 安装 Visual Studio 之后，修复是默认参数。 如果与已更新的 /AdminFile 修复 Visual Studio，则将重写与更新的 AdminDeployment.xml 文件调用当前的管理员部署设置。  
+   安装 Visual Studio 之后，修复是默认参数。 如果与已更新的 /AdminFile 修复 Visual Studio，则将重写与更新的 AdminDeployment.xml 文件调用当前的管理员部署设置。  
   
 ## <a name="updating-an-installation"></a>更新安装  
  Microsoft 发布了 Visual Studio 2015 的多个更新。 本部分介绍如何更新 Visual Studio 2015 的无人参与的安装映像，使其包含的更新。  
   
 #### <a name="to-update-an-unattended-installation-of-visual-studio"></a>若要更新 Visual Studio 的无人参与的安装  
   
-1.  现有的网络图中找到 Product.exe 文件中，右键单击它，并单击**属性**。  
+1. 现有的网络图中找到 Product.exe 文件中，右键单击它，并单击**属性**。  
   
-2.  单击**详细信息**选项卡，然后记下**产品版本**属性。  
+2. 单击**详细信息**选项卡，然后记下**产品版本**属性。  
   
-     ![在 Visual Studio 的无人参与安装中的属性对话框的示例](../install/media/unattended-install-properties-dialog-box.PNG "无人参与安装的属性对话框")  
+    ![在 Visual Studio 的无人参与安装中的属性对话框的示例](../install/media/unattended-install-properties-dialog-box.PNG "无人参与安装的属性对话框")  
   
-3.  ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>如果产品版本为 14.0.24720.0 或 14.0.24720.1，执行以下步骤：  
-4.  1.  运行*Product.exe* /Layout*驱动器：* \IDEinstall 具有 Internet 访问权限的计算机上。 (例如，运行： `vs_enterprise.exe /Layout d:\IDEinstall`。)  
+3. ###### <a name="if-the-product-version-is-140247200-or-140247201-follow-these-steps"></a>如果产品版本为 14.0.24720.0 或 14.0.24720.1，执行以下步骤：  
+4. 1.  运行*Product.exe* /Layout*驱动器：* \IDEinstall 具有 Internet 访问权限的计算机上。 (例如，运行： `vs_enterprise.exe /Layout d:\IDEinstall`。)  
   
-    2.  /Layout 完成后，将新映像复制到新位置。  
+   2.  /Layout 完成后，将新映像复制到新位置。  
   
-    3.  创建和修改 AdminDeployment.xml 文件。 若要执行此操作，请使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 （有关详细信息，请参阅此文章的"在无人参与模式下部署 Visual Studio"部分）。  
+   3.  创建和修改 AdminDeployment.xml 文件。 若要执行此操作，请使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 （有关详细信息，请参阅此文章的"在无人参与模式下部署 Visual Studio"部分）。  
   
-    4.  在客户端计算机上运行以下命令以更新以前安装的 Visual Studio 的副本:"\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart"。  
+   4.  在客户端计算机上运行以下命令以更新以前安装的 Visual Studio 的副本:"\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart"。  
   
-         例如，运行： `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
-5.  ###### <a name="for-other-product-version-values-follow-these-steps"></a>有关其他产品版本值，请执行以下步骤：  
-6.  1.  运行*Product.exe* /Layout*驱动器：* \IDEinstall 具有 Internet 访问权限的计算机上。 (例如，运行`vs-enterprise.exe /Layout d:\IDEinstall`。)  
+        例如，运行： `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+5. ###### <a name="for-other-product-version-values-follow-these-steps"></a>有关其他产品版本值，请执行以下步骤：  
+6. 1.  运行*Product.exe* /Layout*驱动器：* \IDEinstall 具有 Internet 访问权限的计算机上。 (例如，运行`vs-enterprise.exe /Layout d:\IDEinstall`。)  
   
-    2.  /Layout 完成后，将新映像复制到新位置。 （或者，您可以改为覆盖现有的网络映像。）  
+   2.  /Layout 完成后，将新映像复制到新位置。 （或者，您可以改为覆盖现有的网络映像。）  
   
-    3.  创建并修改 AdminDeployment.xml 文件。 若要执行此操作，请使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 （有关详细信息，请参阅此文章的"在无人参与模式下部署 Visual Studio"部分）。  
+   3.  创建并修改 AdminDeployment.xml 文件。 若要执行此操作，请使用`/CreateAdminFile` *\<文件位置 >* 命令行参数。 （有关详细信息，请参阅此文章的"在无人参与模式下部署 Visual Studio"部分）。  
   
-    4.  如果将映像复制到新位置时，则必须更新以前安装的 Visual Studio 的副本在客户端计算机上运行以下命令:"\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart"。  
+   4.  如果将映像复制到新位置时，则必须更新以前安装的 Visual Studio 的副本在客户端计算机上运行以下命令:"\\\\*server1*\IDEinstall_Updated_1\\*Product.exe* /adminfile \\\server1\ IDEinstall_Updated_1\AdminDeployment.xml/quiet/norestart"。  
   
-         例如，运行： `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
+        例如，运行： `\\server1\IDEinstall_Updated_1\vs_enterprise.exe /adminfile \\server1\IDEinstall_Updated_1\AdminDeployment.xml /quiet /norestart`  
   
-    5.  如果重写现有的网络映像，可以运行命令，列出在上一步骤中，或您可以执行以下操作：  
+   5.  如果重写现有的网络映像，可以运行命令，列出在上一步骤中，或您可以执行以下操作：  
   
-    6.  1.  打开 **“控制面板”**，然后选择 **“程序和功能”**。  
+   6.  1.  打开 **“控制面板”**，然后选择 **“程序和功能”**。  
   
-        2.  选择**Visual Studio**，然后选择**更改**。  
+       2.  选择**Visual Studio**，然后选择**更改**。  
   
-        3.  在维护模式下启动 Visual Studio 后，单击**修改**。  
+       3.  在维护模式下启动 Visual Studio 后，单击**修改**。  
   
-        4.  在功能页面上应显示最新的更新。 选择的其他功能，你想要安装，请单击**下一步**，然后单击**更新**安装更新和新功能。  
+       4.  在功能页面上应显示最新的更新。 选择的其他功能，你想要安装，请单击**下一步**，然后单击**更新**安装更新和新功能。  
   
 ## <a name="registering-the-product"></a>正在注册产品  
  安装完成后，可以从 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内部注册 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的副本。  

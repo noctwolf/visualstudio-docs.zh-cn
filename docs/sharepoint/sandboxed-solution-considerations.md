@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 796e1266e93fca845f9ac40d1fef0c1ca5a5b919
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 2f9a5d0c439d619864cc6e9559608e3c3891fc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118729"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890031"
 ---
 # <a name="sandboxed-solution-considerations"></a>沙盒解决方案注意事项
   *沙盒解决方案*是使站点集合用户上传自己的自定义代码的解决方案的 Microsoft SharePoint 2010 中的功能。 常见的沙盒解决方案是将 Web 部件添加其自己的用户。  
@@ -81,66 +81,66 @@ ms.locfileid: "37118729"
 ## <a name="sandboxed-solution-limitations"></a>沙盒解决方案的限制
  沙盒解决方案部署时，向其提供的 SharePoint 功能的数组是限制以减少可能会有任何安全漏洞。 其中某些限制包括：  
   
--   沙盒解决方案已部署的解决方案元素提供给他们的受限的子集。 可能有漏洞的 SharePoint 项目模板，如站点定义和工作流，将不可用。  
+- 沙盒解决方案已部署的解决方案元素提供给他们的受限的子集。 可能有漏洞的 SharePoint 项目模板，如站点定义和工作流，将不可用。  
   
--   SharePoint 在进程中运行沙盒解决方案代码 (*SPUCWorkerProcess.exe*) 独立于主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]应用程序池 (*w3wp.exe*) 过程。  
+- SharePoint 在进程中运行沙盒解决方案代码 (*SPUCWorkerProcess.exe*) 独立于主[!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)]应用程序池 (*w3wp.exe*) 过程。  
   
--   无法将映射的文件夹添加到项目。  
+- 无法将映射的文件夹添加到项目。  
   
--   中的类型[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能使用沙盒解决方案中的程序集。 此外，仅在类型[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]可以沙盒解决方案中使用 Microsoft.SharePoint 程序集。  
+- 中的类型[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]Microsoft.Office.Server 不能使用沙盒解决方案中的程序集。 此外，仅在类型[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]可以沙盒解决方案中使用 Microsoft.SharePoint 程序集。  
   
- 务必要注意该指定 SharePoint 解决方案作为沙盒解决方案; 的 SharePoint 服务器上不产生任何影响它只确定如何将 SharePoint 项目部署到 SharePoint 从[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和它到绑定的程序集。 它不会影响生成 *.wsp*文件，并 *.wsp*文件没有直接关联到任何数据*沙盒解决方案*属性。  
+  务必要注意该指定 SharePoint 解决方案作为沙盒解决方案; 的 SharePoint 服务器上不产生任何影响它只确定如何将 SharePoint 项目部署到 SharePoint 从[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]和它到绑定的程序集。 它不会影响生成 *.wsp*文件，并 *.wsp*文件没有直接关联到任何数据*沙盒解决方案*属性。  
   
 ## <a name="capabilities-and-elements-in-sandboxed-solutions"></a>功能和沙盒解决方案中的元素
  沙盒解决方案支持以下功能和元素：  
   
--   内容的类型字段  
+- 内容的类型字段  
   
--   自定义操作  
+- 自定义操作  
   
--   声明性工作流  
+- 声明性工作流  
   
--   事件接收器  
+- 事件接收器  
   
--   功能标注  
+- 功能标注  
   
--   列表定义  
+- 列表定义  
   
--   列表实例  
+- 列表实例  
   
--   模块/文件  
+- 模块/文件  
   
--   导航  
+- 导航  
   
--   *Onet.xml*  
+- *Onet.xml*  
   
--   SPItemEventReceiver  
+- SPItemEventReceiver  
   
--   SPListEventReceiver  
+- SPListEventReceiver  
   
--   SPWebEventReceiver  
+- SPWebEventReceiver  
   
--   对派生的所有 Web 部件的支持 `System.Web.UI.WebControls.WebParts.WebPart`  
+- 对派生的所有 Web 部件的支持 `System.Web.UI.WebControls.WebParts.WebPart`  
   
--   Web 部件  
+- Web 部件  
   
--   WebTemplate 功能元素 (而不是*Webtemp.xml*)  
+- WebTemplate 功能元素 (而不是*Webtemp.xml*)  
   
--   可视 Web 部件  
+- 可视 Web 部件  
   
- 沙盒解决方案不支持以下功能和元素：  
+  沙盒解决方案不支持以下功能和元素：  
   
--   应用程序页  
+- 应用程序页  
   
--   自定义操作组  
+- 自定义操作组  
   
--   服务器场范围的功能  
+- 服务器场范围的功能  
   
--   `HideCustomAction` 元素  
+- `HideCustomAction` 元素  
   
--   Web 应用程序范围的功能  
+- Web 应用程序范围的功能  
   
--   使用代码的工作流  
+- 使用代码的工作流  
   
 ## <a name="see-also"></a>请参阅
  [区别沙盒解决方案与场解决方案](../sharepoint/differences-between-sandboxed-and-farm-solutions.md)   

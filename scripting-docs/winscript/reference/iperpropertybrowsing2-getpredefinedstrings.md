@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings |Microsoft 文档
+title: IPerPropertyBrowsing2::GetPredefinedStrings |Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.prod: windows-script-interfaces
@@ -18,15 +18,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e07d52eca9434acc7e54f3b35b111cf12af0a871
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: a60225e69a04399a3ff0160291b84e9f3fda513c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2017
-ms.locfileid: "24729247"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915955"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-允许调用方使用的字符串指针表示此属性的可能值的计数数组填充列表框。  
+允许调用方使用的字符串指针，它表示此属性的可能值的计数数组填充列表框。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,16 +40,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>参数  
  `dispid`  
- [in]为其调用方请求的字符串列表的属性的调度标识符。  
+ [in]调用方为其请求的字符串列表的属性的调度标识符。  
   
  `pCaStrings`  
- [out]指向包含的元素计数和地址方法分配的字符串指针数组的调用方分配的计数数组结构的指针。 如果此方法失败，会分配任何内存，并是不确定的结构的内容。  
+ [out]指向调用方分配，计数数组结构，其中包含的元素计数和地址的字符串指针的方法分配的数组。 如果方法失败，会分配任何内存，并该结构的内容是不确定。  
   
  `pCaCookies`  
- [out]指向包含的元素计数和地址方法分配的 dword 值数组的调用方分配的计数数组结构的指针。 如果此方法失败，会分配任何内存，并是不确定的结构的内容。  
+ [out]指向调用方分配的计数数组结构，其中包含的元素数和地址的方法分配的 dword 值数组的指针。 如果方法失败，会分配任何内存，并该结构的内容是不确定。  
   
 ## <a name="return-value"></a>返回值  
  返回一个有效`HRESULT`，通常`S_OK`。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IPerPropertyBrowsing2 接口 1](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

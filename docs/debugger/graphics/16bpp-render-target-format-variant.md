@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e9a8e990ee3b95d93f8757f54b92c808fb650f8
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: f9c72abaaf1a799316686c77b127952f1fe4f689
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832883"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 呈现目标格式变体
 将所有呈现器目标和后台缓冲区的像素格式设置为 DXGI_FORMAT_B5G6R5_UNORM。  
@@ -43,9 +43,9 @@ ms.locfileid: "37433323"
 2. 通过绘制与呈现器目标用作源纹理的全屏四核，将复制到交换链后台缓冲区上的呈现器目标。
 3. 在交换链上调用 Present。
 
- 如果此策略将保存不是通过将呈现器目标复制到交换链后台缓冲区占用更多带宽，则会提高呈现性能。
+   如果此策略将保存不是通过将呈现器目标复制到交换链后台缓冲区占用更多带宽，则会提高呈现性能。
 
- 使用呈现技术的 GPU 体系结构可以通过使用 16 bpp 帧缓冲区格式看到显著的性能优势。 此项改进是因为较大一部分的帧缓冲区能够符合每个磁贴的本地帧缓冲区高速缓存。 有时会在手机和 Tablet 计算机的 GPU 中找到磁贴呈现体系结构；它们极少出现在此适当位置以外。  
+   使用呈现技术的 GPU 体系结构可以通过使用 16 bpp 帧缓冲区格式看到显著的性能优势。 此项改进是因为较大一部分的帧缓冲区能够符合每个磁贴的本地帧缓冲区高速缓存。 有时会在手机和 Tablet 计算机的 GPU 中找到磁贴呈现体系结构；它们极少出现在此适当位置以外。  
   
 ## <a name="remarks"></a>备注  
  每次调用创建呈现器目标的 `ID3D11Device::CreateTexture2D` 时，呈现器目标格式都将重置为 DXGI_FORMAT_B5G6R5_UNORM。 具体而言，当在 pDesc 中传递的 D3D11_TEXTURE2D_DESC 对象描述呈现器目标时将重写该格式；即：  

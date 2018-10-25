@@ -1,5 +1,5 @@
 ---
-title: MODULE_INFO_FIELDS |Microsoft 文档
+title: MODULE_INFO_FIELDS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcc6bd76a4a9aecade72347613ed4f36968c65eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cf01cb2573922adb5d8b5b4bc26b10b839009dda
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125924"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832844"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 指定调试模块信息的标志。  
@@ -69,47 +69,47 @@ public enum enum_MODULE_INFO_FIELDS {
  初始化/使用无结构中的字段。  
   
  MIF_NAME  
- 初始化/使用`m_bstrName`字段[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构。  
+ 初始化/用`m_bstrName`字段中[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构。  
   
  MIF_URL  
- 初始化/使用`m_bstrUrl`字段`MODULE_INFO`结构。  
+ 初始化/用`m_bstrUrl`字段中`MODULE_INFO`结构。  
   
  MIF_VERSION  
- 初始化/使用`m_bstrVersion`字段`MODULE_INFO`结构。  
+ 初始化/用`m_bstrVersion`字段中`MODULE_INFO`结构。  
   
  MIF_DEBUGMESSAGE  
- 初始化/使用`m_bstrDebugMessage`字段`MODULE_INFO`结构。  
+ 初始化/用`m_bstrDebugMessage`字段中`MODULE_INFO`结构。  
   
  MIF_LOADADDRESS  
- 初始化/使用`m_addrLoadAddress`字段`MODULE_INFO`结构。  
+ 初始化/用`m_addrLoadAddress`字段中`MODULE_INFO`结构。  
   
  MIF_PREFFEREDADDRESS  
- 初始化/使用`m_addrPreferredLoadAddress`字段`MODULE_INFO`结构。  
+ 初始化/用`m_addrPreferredLoadAddress`字段中`MODULE_INFO`结构。  
   
  MIF_SIZE  
- 初始化/使用`m_dwSize`字段`MODULE_INFO`结构。  
+ 初始化/用`m_dwSize`字段中`MODULE_INFO`结构。  
   
  MIF_LOADORDER  
- 初始化/使用`m_dwLoadOrder`字段`MODULE_INFO`结构。  
+ 初始化/用`m_dwLoadOrder`字段中`MODULE_INFO`结构。  
   
  MIF_TIMESTAMP  
- 初始化/使用`m_TimeStamp`字段`MODULE_INFO`结构。  
+ 初始化/用`m_TimeStamp`字段中`MODULE_INFO`结构。  
   
  MIF_URLSYMBOLLOCATION  
- 初始化/使用`m_bstrUrlSymbolLocation`字段`MODULE_INFO`结构。  
+ 初始化/用`m_bstrUrlSymbolLocation`字段中`MODULE_INFO`结构。  
   
  MIF_FLAGS  
- 初始化/使用`m_dwModuleFlags`字段`MODULE_INFO`结构。  
+ 初始化/用`m_dwModuleFlags`字段中`MODULE_INFO`结构。  
   
  MIF_ALLFIELDS  
  中的字段的所有初始化/使用`MODULE_INFO`结构。  
   
 ## <a name="remarks"></a>备注  
- 这些值传递的自变量作为[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以指示哪些字段[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构是否被初始化。  
+ 这些值会作为参数传递[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以指示的哪些字段[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)结构是进行初始化。  
   
- 这些值也用在`MODULE_INFO`结构以指示哪些字段是使用和有效。  
+ 中还使用这些值`MODULE_INFO`结构，用于指示哪些字段是使用，有效。  
   
- 这些标志可以与按位组合`OR`。  
+ 可能的按位组合这些标志`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -118,7 +118,7 @@ public enum enum_MODULE_INFO_FIELDS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

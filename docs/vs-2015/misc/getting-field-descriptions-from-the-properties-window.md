@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: douge
-ms.openlocfilehash: f152572198116a200f91672691b6a4787538063e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49814787"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>从属性窗口中获取字段说明
 在“属性”  窗口底部，说明区域显示了与所选属性字段相关的信息。 默认情况下此功能处于开启状态。 如果你想要隐藏说明字段，右键单击“属性”  窗口并单击“说明” 。 执行此操作还会删除“菜单”窗口中“说明”  标题旁的复选标记。 你可以按照将“说明”  切换回开启状态的步骤来再次显示该字段。  
@@ -28,18 +28,18 @@ ms.locfileid: "49301504"
   
 ### <a name="to-specify-localized-help-strings"></a>指定本地化的帮助字符串  
   
-1.  将 `helpstringdll` 特性添加到类型库中的库语句（`typelib`）。  
+1. 将 `helpstringdll` 特性添加到类型库中的库语句（`typelib`）。  
   
-    > [!NOTE]
-    >  如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。  
+   > [!NOTE]
+   >  如果类型库位于对象库 (.olb) 文件中，则此步骤是可选的。  
   
-2.  为字符串指定 `helpstringcontext` 特性。 你还可以指定 `helpstring` 特性。  
+2. 为字符串指定 `helpstringcontext` 特性。 你还可以指定 `helpstring` 特性。  
   
-     这些特性不同于包含在实际 .chm 文件帮助主题中的 `helpfile` 和 `helpcontext` 特性。  
+    这些特性不同于包含在实际 .chm 文件帮助主题中的 `helpfile` 和 `helpcontext` 特性。  
   
- 若要检索为突出显示的属性名称，显示的说明信息**属性**窗口中调用<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A>处于选中状态的属性，指定所需`lcid`属性输出字符串。 在内部，<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> 查找 `helpstringdll` 特性中指定的 .dll 文件，并在该 .dll 文件上调用 `DLLGetDocumentation` 与指定的内容和 `lcid` 特性。  
+   若要检索为突出显示的属性名称，显示的说明信息**属性**窗口中调用<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetDocumentation2%2A>处于选中状态的属性，指定所需`lcid`属性输出字符串。 在内部，<xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2> 查找 `helpstringdll` 特性中指定的 .dll 文件，并在该 .dll 文件上调用 `DLLGetDocumentation` 与指定的内容和 `lcid` 特性。  
   
- `DLLGetDocumentation` 的签名和实现为：  
+   `DLLGetDocumentation` 的签名和实现为：  
   
 ```  
 STDAPI DLLGetDocumentation  

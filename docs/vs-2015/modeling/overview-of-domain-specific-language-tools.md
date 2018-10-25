@@ -14,12 +14,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c0c8730d2a73b5e6dd2c48138c1633e24234db29
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c01116ee4a4b0edc43a6277db7725e8d962bd607
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839318"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,31 +39,31 @@ ms.locfileid: "49273255"
 ## <a name="the-dsl-tools-solution"></a>DSL 工具解决方案  
  特定于域的设计器向导提供了以下解决方案模板：  
   
--   任务流  
+- 任务流  
   
--   类图  
+- 类图  
   
--   最小语言  
+- 最小语言  
   
--   组件模型  
+- 组件模型  
   
--   最小 WPF  
+- 最小 WPF  
   
--   最小 Windows.Forms  
+- 最小 Windows.Forms  
   
--   DSL 库  
+- DSL 库  
   
- 有关详细信息，请参阅[选择域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
+  有关详细信息，请参阅[选择域特定语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
   
- 该向导将创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案，它具有以下项目：  
+  该向导将创建[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]解决方案，它具有以下项目：  
   
--   Dsl  
+- Dsl  
   
-     在 Dsl 项目定义的特定于域的语言和其编辑功能和正在处理的工具。  
+   在 Dsl 项目定义的特定于域的语言和其编辑功能和正在处理的工具。  
   
--   **DslPackage**  
+- **DslPackage**  
   
-     在 DslPackage 项目确定的语言工具如何与集成[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+   在 DslPackage 项目确定的语言工具如何与集成[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
 ## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具的图形界面  
  DSL 工具的图形界面可用于将元素和关系添加到你的特定于域的语言。 添加元素后，可以通过将其映射到形状、 自定义颜色，并添加修饰器来定义其外观。 此外可以向工具箱添加元素。  

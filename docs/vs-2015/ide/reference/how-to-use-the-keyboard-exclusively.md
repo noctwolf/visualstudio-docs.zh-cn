@@ -21,12 +21,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 588f93a89713d42efaba61a34b0dabe5eb2af523
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dd4e133ac057de9340900501b16e2c3b1ee7a388
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238512"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862159"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：仅使用键盘进行操作
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49238512"
   
 #### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用键盘将工具箱中的控件添加到设计器中  
   
-1.  在菜单栏上，依次选择“视图”、“工具箱”。  
+1. 在菜单栏上，依次选择“视图”、“工具箱”。  
   
-2.  选择 Ctrl+向上键或 Ctrl+向下键，在当前“工具箱”选项卡的各部分间移动。  
+2. 选择 Ctrl+向上键或 Ctrl+向下键，在当前“工具箱”选项卡的各部分间移动。  
   
-3.  选择向上键或向下键，在控件之间移动。  
+3. 选择向上键或向下键，在控件之间移动。  
   
-4.  选中控件后，选择 Enter 键。  
+4. 选中控件后，选择 Enter 键。  
   
- 该控件会添加到表单或设计器中。  
+   该控件会添加到表单或设计器中。  
   
 ## <a name="dialog-box-options"></a>对话框选项  
  通过使用键盘，可以在对话框中的选项间移动并更改选项的设置。  

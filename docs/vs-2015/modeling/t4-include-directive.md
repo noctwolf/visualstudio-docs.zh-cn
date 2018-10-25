@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f0ad5f409b6f7da852abbf2872bf01ef678b7a5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233982"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835938"
 ---
 # <a name="t4-include-directive"></a>T4 包含指令
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,31 +30,31 @@ ms.locfileid: "49233982"
 <#@ include file="filePath" [once="true"] #>  
 ```  
   
--   `filePath` 可以是绝对的，或相对于当前模板文件。  
+- `filePath` 可以是绝对的，或相对于当前模板文件。  
   
-     另外，特定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展可以指定其自己的目录以便搜索包含文件。 例如，当安装了可视化和建模 SDK （DSL 工具），则以下文件夹添加到 include 列表： `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`。  
+   另外，特定 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展可以指定其自己的目录以便搜索包含文件。 例如，当安装了可视化和建模 SDK （DSL 工具），则以下文件夹添加到 include 列表： `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`。  
   
-     这些附加包含文件夹可能取决于包含文件的文件扩展名。 例如，DSL 工具包含仅具有文件扩展名 `.tt` 的包含文件可访问的文件夹。  
+   这些附加包含文件夹可能取决于包含文件的文件扩展名。 例如，DSL 工具包含仅具有文件扩展名 `.tt` 的包含文件可访问的文件夹。  
   
--   `filePath` 可以包括用“%”分隔的环境变量。 例如：  
+- `filePath` 可以包括用“%”分隔的环境变量。 例如：  
   
-    ```  
-    <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
-    ```  
+  ```  
+  <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>  
+  ```  
   
--   包含的文件的名称将不必使用扩展名 `".tt"`。  
+- 包含的文件的名称将不必使用扩展名 `".tt"`。  
   
-     你可能需要对包含的文件使用其他扩展名，例如，`".t4"`。 这是因为，当您将添加`.tt`文件到项目中，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]会自动设置其**自定义工具**属性设置为`TextTemplatingFileGenerator`。 你通常不希望单独转换包含的文件。  
+   你可能需要对包含的文件使用其他扩展名，例如，`".t4"`。 这是因为，当您将添加`.tt`文件到项目中，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]会自动设置其**自定义工具**属性设置为`TextTemplatingFileGenerator`。 你通常不希望单独转换包含的文件。  
   
-     另一方面，在某种情况下应注意，文件扩展名会影响将要搜索哪些附加文件夹来获得包含文件。 您具有包括其他文件的已包含文件时，这可能会很重要。  
+   另一方面，在某种情况下应注意，文件扩展名会影响将要搜索哪些附加文件夹来获得包含文件。 您具有包括其他文件的已包含文件时，这可能会很重要。  
   
--   在处理时，被包含内容就像是包含文本模板的组成部分一样。 不过，即使 `<#+...#>` 指令后为普通文本块和标准控制块，也可以包括含有类功能块 `include` 的文件。  
+- 在处理时，被包含内容就像是包含文本模板的组成部分一样。 不过，即使 `<#+...#>` 指令后为普通文本块和标准控制块，也可以包括含有类功能块 `include` 的文件。  
   
--   使用 `once="true"` 以确保一个模板只包括一次，即使从多个其他包括文件对其进行调用也是如此。  
+- 使用 `once="true"` 以确保一个模板只包括一次，即使从多个其他包括文件对其进行调用也是如此。  
   
-     无需担心，我们可以很容易建立一种可重用的 T4 代码段库，可以包括在将此功能使某些其他代码段具有已包括它们。  例如，假设您有非常精准处理模板处理和 C# 生成的代码片段的库。  反过来，这些使用一些更特定于任务的实用程序，例如生成异常，然后，可以使用从任何更多特定于应用程序模板。 如果绘制依赖项关系图，则你会看到将会多次包含某些代码片段。 但 `once` 参数阻止后续包含。  
+   无需担心，我们可以很容易建立一种可重用的 T4 代码段库，可以包括在将此功能使某些其他代码段具有已包括它们。  例如，假设您有非常精准处理模板处理和 C# 生成的代码片段的库。  反过来，这些使用一些更特定于任务的实用程序，例如生成异常，然后，可以使用从任何更多特定于应用程序模板。 如果绘制依赖项关系图，则你会看到将会多次包含某些代码片段。 但 `once` 参数阻止后续包含。  
   
- **MyTextTemplate.tt:**  
+  **MyTextTemplate.tt:**  
   
 ```  
 <#@ output extension=".txt" #>  

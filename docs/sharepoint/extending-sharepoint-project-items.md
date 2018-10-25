@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2be6c99f8601ae8dfaa819a3b70119a7b5921214
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: b83d5f92a54d58aae2d4c7860e6648920615d63f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36326980"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823627"
 ---
 # <a name="extend-sharepoint-project-items"></a>扩展 SharePoint 项目项
   创建项目项扩展，如果想要将功能添加到已安装 Visual Studio 中的 SharePoint 项目项的类型。 例如，可以创建扩展的内置**事件接收器**或**列表定义**项目项在 Visual Studio 中，也可以创建自定义项目项类型的扩展。 此外可以创建适用于所有类型的 SharePoint 项目项的扩展。  
@@ -32,11 +32,11 @@ ms.locfileid: "36326980"
   
  项目项扩展时，还可以对项目项添加了以下功能：  
   
--   将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**。 通过右键单击项目项或选择它，然后选择打开快捷菜单**Shift**+**F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
+- 将快捷菜单项添加到项目项。 打开中的项目项的快捷菜单时显示的菜单项**解决方案资源管理器**。 通过右键单击项目项或选择它，然后选择打开快捷菜单**Shift**+**F10**密钥。 有关详细信息，请参阅[如何： 将快捷菜单项添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
   
--   将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
+- 将自定义属性添加到项目项。 属性将出现在**属性**窗口中选择中的项目项时**解决方案资源管理器**。 有关详细信息，请参阅[如何： 将属性添加到 SharePoint 项目项扩展](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
   
- 有关演示如何创建、 部署和测试项目项扩展的演练，请参阅[演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
+  有关演示如何创建、 部署和测试项目项扩展的演练，请参阅[演练： 扩展 SharePoint 项目项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
   
 ## <a name="understand-the-relationship-between-project-item-extensions-and-project-item-instances"></a>了解项目项扩展和项目项实例之间的关系
  在创建项目项扩展，Visual Studio 将加载您的扩展插件关联的类型的项目项添加到 SharePoint 项目时。 例如，如果创建的扩展**事件接收器**项目项，当用户将添加 Visual Studio 加载你的扩展**事件接收器**项目项的项目。 Visual Studio 使用您的扩展插件的同一个实例关联的项目项类型的所有实例。 在上一示例中，如果用户将添加第二个**事件接收器**项目到项目的项，您的扩展插件的同一个实例使用自定义第二个项目项。  
@@ -46,11 +46,11 @@ ms.locfileid: "36326980"
 ## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 项目项的标识符
  每个 SharePoint 项目项都有相应的字符串标识符。 如果你想要执行以下任务，您必须知道项目项的标识符：  
   
--   创建项目项的扩展。 在这种情况下，必须将想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型，请创建一个扩展，将传递**\*** 字符串值。  
+- 创建项目项的扩展。 在这种情况下，必须将想要扩展的构造函数的项目项的标识符传递<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要为所有项目项类型，请创建一个扩展，将传递**\\*** 的字符串值。  
   
--   以编程方式向项目添加项目项。 在这种情况下，必须将传递到的项目项的标识符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。  
+- 以编程方式向项目添加项目项。 在这种情况下，必须将传递到的项目项的标识符<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。  
   
- 下表列出了 Visual Studio 附带的 SharePoint 项目项的标识符。  
+  下表列出了 Visual Studio 附带的 SharePoint 项目项的标识符。  
   
 |项目项名称|字符串标识符|  
 |-----------------------|-----------------------|  

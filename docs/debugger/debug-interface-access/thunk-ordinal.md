@@ -1,5 +1,5 @@
 ---
-title: THUNK_ORDINAL |Microsoft 文档
+title: THUNK_ORDINAL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b0701706deee68cf2dde522d48f9aa62b9a00142
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: a92e0fa81bdfc7c33e790c5022c2fbe341d632be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847703"
 ---
 # <a name="thunkordinal"></a>THUNK_ORDINAL
 指定转换 （thunk） 类型。  
@@ -45,19 +45,19 @@ typedef enum THUNK_ORDINAL {
  标准转换 （thunk)。  
   
  THUNK_ORDINAL_ADJUSTOR  
- A`this`人转换 （thunk)。  
+ 一个`this`精算师转换 （thunk)。  
   
  THUNK_ORDINAL_VCALL  
- 虚调用转换 （thunk)。  
+ 虚调用 thunk。  
   
  THUNK_ORDINAL_PCODE  
  P 代码转换 （thunk)。  
   
  THUNK_ORDINAL_LOAD  
- 延迟负载转换 （thunk)。  
+ 延迟加载转换 （thunk)。  
   
  THUNK_ORDINAL_TRAMP_INCREMENTAL  
- 增量 trampoline thunk （一个 trampoline thunk，用于从一个内存空间的调用反弹到另一个）。  
+ 增量 trampoline thunk （trampoline 转换 （thunk） 用于从一个内存空间之间反弹调用）。  
   
  THUNK_ORDINAL_TRAMP_BRANCHISLAND  
  分支点 trampoline 转换 （thunk)。  

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c7801cb937f2a94df92bf8ab3052e4e0e2f734d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed11edadca2f5e5e521eda824ece5ab735814125
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277441"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912164"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>如何：在线程视图中搜索线程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,24 +30,24 @@ ms.locfileid: "49277441"
   
 ### <a name="to-search-for-a-thread-in-threads-view"></a>若要搜索的线程视图中的线程  
   
-1.  排列窗口，因此该 Spy + + 和活动[线程视图](../debugger/threads-view.md)是可见的窗口。  
+1. 排列窗口，因此该 Spy + + 和活动[线程视图](../debugger/threads-view.md)是可见的窗口。  
   
-2.  从**搜索**菜单中，选择**查找线程**。  
+2. 从**搜索**菜单中，选择**查找线程**。  
   
-     [线程搜索对话框](../debugger/thread-search-dialog-box.md)随即打开。  
+    [线程搜索对话框](../debugger/thread-search-dialog-box.md)随即打开。  
   
-3.  键入的线程 ID 或模块字符串作为搜索条件。  
+3. 键入的线程 ID 或模块字符串作为搜索条件。  
   
-4.  清除不想为其指定值的任何字段。  
+4. 清除不想为其指定值的任何字段。  
   
-    > [!TIP]
-    >  若要查找模块拥有的所有线程，请清除**线程**中的文本框然后键入该模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的线程。  
+   > [!TIP]
+   >  若要查找模块拥有的所有线程，请清除**线程**中的文本框然后键入该模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的线程。  
   
-5.  选择**向上**或**向下**搜索的初始方向。  
+5. 选择**向上**或**向下**搜索的初始方向。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
- 如果找到匹配的线程，则它将突出显示在线程视图窗口中。
+   如果找到匹配的线程，则它将突出显示在线程视图窗口中。
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugQueryEngine2::GetEngineInterface |Microsoft 文档
+title: IDebugQueryEngine2::GetEngineInterface |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e171805500322ff97feac0155abf50f32296366
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 735bf7a7d5dfe0ea1c9f4f347e9461cb48ce1e7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117896"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909966"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 获取自定义调试引擎 (DE) 接口。  
@@ -41,15 +41,15 @@ int GetEngineInterface(
   
 #### <a name="parameters"></a>参数  
  `ppUnk`  
- [out]返回`IUnknown`对象，表示的调试引擎 (DE)，以及其中可以查询 DE 与关联的任何其他有效的接口 (例如[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)或[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。  
+ [out]返回`IUnknown`对象表示调试引擎 (DE)，这可以与部署相关联的任何其他有效的接口的查询 (例如[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)或[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md))。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 应慎用生成接口，因为通过此方法从检索到的接口的调用绕过会话调试管理器的处理，并可能导致 SDM 使进入错误状态，或在调试时生成错误。  
+ 应谨慎使用生成的接口，因为通过此方法从检索到的接口的调用绕过会话调试管理器的处理，并且可能会导致 SDM 进入错误状态，或在调试时生成错误。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

@@ -15,12 +15,12 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 661c812625856551f2f6c8194fa97e5df21efbaf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e8474190b6b140883a43555f5dc35091daecebe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199038"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923194"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>演练：自定义文本视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,26 +52,26 @@ ms.locfileid: "49199038"
   
 ## <a name="defining-the-content-type"></a>定义的内容类型  
   
-1.  添加一个类文件并将其命名为 `ViewPropertyModifier`。  
+1. 添加一个类文件并将其命名为 `ViewPropertyModifier`。  
   
-2.  以下代码添加到`using`指令：  
+2. 以下代码添加到`using`指令：  
   
-     [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
-     [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
+    [!code-csharp[VSSDKViewPropertyTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#1)]
+    [!code-vb[VSSDKViewPropertyTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#1)]  
   
-3.  声明一个名为的类`TestViewCreationListener`，它继承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 导出此类具有以下属性：  
+3. 声明一个名为的类`TestViewCreationListener`，它继承自<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>。 导出此类具有以下属性：  
   
-    -   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定的内容应用到此侦听器的类型。  
+   - <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 若要指定的内容应用到此侦听器的类型。  
   
-    -   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定该侦听器的角色。  
+   - <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 若要指定该侦听器的角色。  
   
      [!code-csharp[VSSDKViewPropertyTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#2)]
      [!code-vb[VSSDKViewPropertyTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#2)]  
   
-4.  在此类中，导入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
+4. 在此类中，导入<xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMapService>。  
   
-     [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
-     [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
+    [!code-csharp[VSSDKViewPropertyTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#3)]
+    [!code-vb[VSSDKViewPropertyTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#3)]  
   
 ## <a name="changing-the-view-properties"></a>更改视图属性  
   

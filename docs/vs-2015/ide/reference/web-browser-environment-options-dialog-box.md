@@ -29,12 +29,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 76abbde711e73598eb8c7bcfde052335222d0822
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa793fa91667dd360c301442ccb0831d11122473
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175599"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931826"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "49175599"
  在下列编辑器中查看源  
  设置从内部 Web 浏览器页上选择“查看源”时用于打开网页的编辑器。  
   
--   **源编辑器** 选择此选项可在[编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。  
+- **源编辑器** 选择此选项可在[编写代码](../../ide/writing-code-in-the-code-and-text-editor.md)中查看源。  
   
--   **HTML 编辑器** 选择此选项可在 [HTML Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)（HTML 设计器）中查看源。 使用此选项可在两个视图之一中编辑网页：设计视图或基于标准文本的源视图。  
+- **HTML 编辑器** 选择此选项可在 [HTML Designer](http://msdn.microsoft.com/library/640043cc-3657-4677-a091-bc315e636477)（HTML 设计器）中查看源。 使用此选项可在两个视图之一中编辑网页：设计视图或基于标准文本的源视图。  
   
--   **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。  
+- **外部编辑器** 选择此选项可在其他编辑器中查看源。 指定所选任何编辑器（例如 Notepad.exe）的路径。  
   
- Internet Explorer 选项  
- 单击此选项可更改“Internet 属性”对话框中的 Internet Explorer 选项。 在此对话框中所做的更改会同时影响内部 Web 浏览器和在 Visual Studio 的 IDE 外部（例如，从“开始”菜单）启动的 Internet Explorer 实例。  
+  Internet Explorer 选项  
+  单击此选项可更改“Internet 属性”对话框中的 Internet Explorer 选项。 在此对话框中所做的更改会同时影响内部 Web 浏览器和在 Visual Studio 的 IDE 外部（例如，从“开始”菜单）启动的 Internet Explorer 实例。  
   
 > [!NOTE]
 >  若要替换 Visual Studio 内部 Web 浏览器（使用其他外部 Web 浏览器的 Internet Explorer 版本），请使用“浏览方式”对话框。  

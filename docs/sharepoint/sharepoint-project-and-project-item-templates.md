@@ -25,12 +25,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ccff01afcb2556469453d4227b14ebe3b897de50
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 6e38a3e709a8d49d29d598e7eabd55e7be154836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896440"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。 
@@ -95,17 +95,17 @@ ms.locfileid: "37118503"
 ### <a name="event-receiver"></a>事件接收器
  *事件接收器*处理 SharePoint 站点，例如某项添加到列表时，web 项被删除时，或时启动工作流中的项的事件。 事件接收方项目项模板可让你处理  
   
--   列出的事件  
+- 列出的事件  
   
--   列表项事件  
+- 列表项事件  
   
--   列出的电子邮件事件  
+- 列出的电子邮件事件  
   
--   Web 事件  
+- Web 事件  
   
--   列表工作流事件  
+- 列表工作流事件  
   
- 事件接收方项目项创建**事件接收器**文件夹中包含的所有事件的事件处理程序创建的项目中时指定一个类文件**SharePoint 自定义项向导**。 事件接收器类可以处理添加、 更新、 删除，或移除项，如文件、 字段、 项、 列表、 附件、 web 部件和工作流时，SharePoint 站点发生的事件。 有关详细信息，请参阅[如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)并[构建基块： 事件处理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
+  事件接收方项目项创建**事件接收器**文件夹中包含的所有事件的事件处理程序创建的项目中时指定一个类文件**SharePoint 自定义项向导**。 事件接收器类可以处理添加、 更新、 删除，或移除项，如文件、 字段、 项、 列表、 附件、 web 部件和工作流时，SharePoint 站点发生的事件。 有关详细信息，请参阅[如何： 创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)并[构建基块： 事件处理](http://go.microsoft.com/fwlink/?LinkId=179416)。  
   
 ### <a name="list"></a>列表  
  列表是可重用基 SharePoint 列表定义，如日历或任务列表的实例。 将列表添加到你的解决方案之后, 列表设计器，可将站点列添加到列表并创建自定义列表的列。 这包括从内容类型的站点列。 您可以指定*视图*有关列表，用于确定将显示在列表中的列。 有关详细信息，请参阅[演练： 创建 SharePoint 网站栏、 内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)并[构建基块： 列表和文档库](http://go.microsoft.com/fwlink/?LinkId=179421)。  
@@ -125,13 +125,13 @@ ms.locfileid: "37118503"
 ### <a name="site-definition-farm-solution-only"></a>网站定义 （仅场解决方案）
  *网站定义*项目项包含站点定义文件夹，其中包含以下文件：  
   
--   默认的.aspx 页，为该站点用作默认的网页。  
+- 默认的.aspx 页，为该站点用作默认的网页。  
   
--   *Onet.xml*定义的站点组件的文件。  
+- *Onet.xml*定义的站点组件的文件。  
   
--   指定出现在站点定义配置的 webtemp xml 文件**模板选择**一部分**新的 SharePoint 站点**页。  
+- 指定出现在站点定义配置的 webtemp xml 文件**模板选择**一部分**新的 SharePoint 站点**页。  
   
- 添加站点定义后，你添加代码和文件来引入的功能。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 站点定义](../sharepoint/creating-site-definitions-for-sharepoint.md)并[站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=260554)。  
+  添加站点定义后，你添加代码和文件来引入的功能。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 站点定义](../sharepoint/creating-site-definitions-for-sharepoint.md)并[站点定义和配置](http://go.microsoft.com/fwlink/?LinkId=260554)。  
   
 ### <a name="state-machine-workflow-farm-solution-only"></a>状态机工作流 （仅场解决方案）
  一个*状态机工作流*是一组业务逻辑状态、 转换和操作。 按顺序; 不执行状态机工作流中的步骤相反，它们触发的操作和状态。 与顺序工作流状态机工作流是与 SharePoint 项，如列表和文档相关联。 再次重申，您可以创建站点级别 （全局） 工作流或列表级别 (local) 工作流。 此外可以选择是否自动或手动启动工作流。 此项目项可仅在场解决方案。 此项目项仅向场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)， [SharePoint Server 2010 中的工作流](http://go.microsoft.com/fwlink/?LinkId=260555)，并[What's New： 工作流改进](http://go.microsoft.com/fwlink/?LinkId=179418)。  

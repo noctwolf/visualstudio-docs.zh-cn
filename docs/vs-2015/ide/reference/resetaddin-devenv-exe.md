@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: df5fe62efd783551a483853543ddb30312e64c65
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f1b53a30845ca4b20372fb5a6e3552f31f3c1b60
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213663"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950519"
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Devenv /ResetAddin AddIn
  可选。 外接程序的命令名称。  
   
 ## <a name="remarks"></a>备注  
- 默认情况下，外接程序的命令名称等于 *\<AddInSolutionName>*.Connect *.\<AddInSolutionName>*，并在 Connect.cs 中显示为 `Exec` 方法的 `commandName` 参数。 还可以通过开始在 Visual Studio 的“命令”窗口中键入外接程序的名称并使用 Intellisense 填充其余部分来验证命令名称。  
+ 默认情况下，外接程序的命令名称等于 *\<AddInSolutionName>*.Connect<em>.\<AddInSolutionName></em>，并在 Connect.cs 中显示为 `Exec` 方法的 `commandName` 参数。 还可以通过开始在 Visual Studio 的“命令”窗口中键入外接程序的名称并使用 Intellisense 填充其余部分来验证命令名称。  
   
 ## <a name="example"></a>示例  
  以下示例启动 Visual Studio 并阻止 `MyAddin` 外接程序在启动时运行。  

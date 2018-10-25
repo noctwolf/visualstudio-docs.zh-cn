@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 442e37dfac8e7eb022ee12bfaadacae548625793
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: ce47b5e9db018a8c3c525d5202a01f0860def2a6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36303035"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940445"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
@@ -33,64 +33,64 @@ ms.locfileid: "36303035"
 
 ### <a name="step-1---create-a-coded-ui-test"></a>步骤 1 - 创建编码的 UI 测试
 
-1.  创建项目。
+1. 创建项目。
 
-     ![创建编码的 UI 测试项目](../test/media/cuit_datadriven_.png)
+    ![创建编码的 UI 测试项目](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
    > 如未看到“编码的 UI 测试项目”模板，则需要安装[编码的 UI 测试组件](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component)。
 
-2.  选择“记录操作”。
+2. 选择“记录操作”。
 
-     ![选择以记录操作](../test/media/cuit_datadriven_generatecodedialog.png)
+    ![选择以记录操作](../test/media/cuit_datadriven_generatecodedialog.png)
 
-3.  打开计算器应用程序并开始记录测试。
+3. 打开计算器应用程序并开始记录测试。
 
-     ![记录操作](../test/media/cuit_datadriven_cuitbuilder.png)
+    ![记录操作](../test/media/cuit_datadriven_cuitbuilder.png)
 
-4.  添加 1 + 2，暂停记录器并生成测试方法。 以后我们将用数据文件中的值替换该用户输入的值。
+4. 添加 1 + 2，暂停记录器并生成测试方法。 以后我们将用数据文件中的值替换该用户输入的值。
 
-     ![生成测试方法](../test/media/cuit_datadriven_cuitbuildergencode.png)
+    ![生成测试方法](../test/media/cuit_datadriven_cuitbuildergencode.png)
 
-     关闭测试生成器。 方法已添加到测试中：
+    关闭测试生成器。 方法已添加到测试中：
 
-    ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-    }
-    ```
+   ```csharp
+   [TestMethod]
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+   }
+   ```
 
-5.  使用 `AddNumbers()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷方式：Ctrl+R、T）。
+5. 使用 `AddNumbers()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷方式：Ctrl+R、T）。
 
-     表明测试通过还是失败的测试结果会显示在“测试资源管理器”窗口中。 若要打开测试资源管理器窗口，请从“测试”菜单中选择“窗口”，然后选择“测试资源管理器”。
+    表明测试通过还是失败的测试结果会显示在“测试资源管理器”窗口中。 若要打开测试资源管理器窗口，请从“测试”菜单中选择“窗口”，然后选择“测试资源管理器”。
 
-6.  因为数据源还可以用于断言参数值（供测试用于验证预期的值），所以通过添加断言来验证这两个数的总和是正确的。 将游标放在上面所示的测试方法中，打开上下文菜单，然后依次选择“为编码的 UI 测试生成代码”、“使用编码的 UI 测试生成器”。
+6. 因为数据源还可以用于断言参数值（供测试用于验证预期的值），所以通过添加断言来验证这两个数的总和是正确的。 将游标放在上面所示的测试方法中，打开上下文菜单，然后依次选择“为编码的 UI 测试生成代码”、“使用编码的 UI 测试生成器”。
 
-     映射显示总和的计算器中的文本控件。
+    映射显示总和的计算器中的文本控件。
 
-     ![映射 UI 文本控制](../test/media/cuit_datadriven_addassertion.png)
+    ![映射 UI 文本控制](../test/media/cuit_datadriven_addassertion.png)
 
-7.  添加验证总和数值正确的断言。 选择具有值“3”的“DisplayText”属性，然后选择“添加断言”。 使用“AreEqual”比较运算符并确认比较值为“3”。
+7. 添加验证总和数值正确的断言。 选择具有值“3”的“DisplayText”属性，然后选择“添加断言”。 使用“AreEqual”比较运算符并确认比较值为“3”。
 
-     ![配置断言](../test/media/cuit_datadriven_builderaddassertion2.png)
+    ![配置断言](../test/media/cuit_datadriven_builderaddassertion2.png)
 
-8.  配置断言之后，再次从生成器生成代码。 这就创建一个新的验证方法。
+8. 配置断言之后，再次从生成器生成代码。 这就创建一个新的验证方法。
 
-     ![生成断言方法](../test/media/cuit_datadriven_assertiongencode.png)
+    ![生成断言方法](../test/media/cuit_datadriven_assertiongencode.png)
 
-     因为 `ValidateSum` 方法验证了 `AddNumbers` 方法的结果，将其移至代码块的底部。
+    因为 `ValidateSum` 方法验证了 `AddNumbers` 方法的结果，将其移至代码块的底部。
 
-    ```csharp
-    public void CodedUITestMethod1()
-    {
-        // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
-        this.UIMap.AddNumbers();
-        this.UIMap.ValidateSum();
-    }
-    ```
+   ```csharp
+   public void CodedUITestMethod1()
+   {
+       // To generate code for this test, select "Generate Code for Coded UI Test" from the shortcut menu and select one of the menu items.
+       this.UIMap.AddNumbers();
+       this.UIMap.ValidateSum();
+   }
+   ```
 
 9. 通过 `ValidateSum()` 方法验证测试正常运行。 将游标放在上面所示的测试方法中，打开上下文菜单，然后选择“运行测试”。 （键盘快捷方式：Ctrl+R、T）。
 

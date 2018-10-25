@@ -19,12 +19,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b17f8abed32a14aead89a685a030654e1afe32f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 74c3361e4c254841bb58f23ad789ed7a2cad584f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857388"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>在模拟器中运行 Windows 应用商店应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,35 +123,35 @@ Visual Studio 的 Windows 应用商店应用程序模拟器是一个桌面应用
   
  若要模拟网络属性，请执行以下操作：  
   
-1.  在模拟器工具栏上，选择  “更改网络属性”按钮。  
+1. 在模拟器工具栏上，选择  “更改网络属性”按钮。  
   
-2.  在  “设置网络属性”对话框中，选择“使用模拟网络属性” 。  
+2. 在  “设置网络属性”对话框中，选择“使用模拟网络属性” 。  
   
-     清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
+    清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
   
-3.  输入模拟网络的 **“配置文件名”** 。 建议使用可以用于标识 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 对象的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 属性中的模拟的唯一名称。  
+3. 输入模拟网络的 **“配置文件名”** 。 建议使用可以用于标识 [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.profilename.aspx) 对象的 [ProfileName](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) 属性中的模拟的唯一名称。  
   
-4.  选择 [](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) “网络成本类型”列表中的配置文件的 **NetworkCostType** 值。  
+4. 选择 [“网络成本类型”](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkcosttype.aspx) 列表中的配置文件的 **NetworkCostType** 值。  
   
-5.  从  “数据限制状态标志”列表中，你可以将 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 属性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)属性设为 true，也可以选择  “在数据限制内”将这两个值均设为 false。  
+5. 从  “数据限制状态标志”列表中，你可以将 [ApproachingDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.approachingdatalimit.aspx) 属性或 [OverDataLimit](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.overdatalimit.aspx)属性设为 true，也可以选择  “在数据限制内”将这两个值均设为 false。  
   
-6.  从  “漫游状态”列表中，设置 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 属性。  
+6. 从  “漫游状态”列表中，设置 [Roaming](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectioncost.roaming.aspx) 属性。  
   
-7.  选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 类型的后台 **SystemTrigger**来模拟网络属性。  
+7. 选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) 事件和 [NetworkStateChange](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.aspx) 类型的后台 **SystemTrigger**来模拟网络属性。  
   
- **有关管理网络连接的详细信息**  
+   **有关管理网络连接的详细信息**  
   
- [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入门：管理按流量计费的网络成本约束](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [网络信息示例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [网络信息示例](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [分析能量使用情况](../profiling/analyze-energy-use-in-store-apps.md)  
+   [分析能量使用情况](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
+   [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
- [如何通过后台任务响应系统事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [如何通过后台任务响应系统事件](http://msdn.microsoft.com/en-us/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
- [如何在 Windows 应用商店应用中触发挂起、继续和后台事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [如何在 Windows 应用商店应用中触发挂起、继续和后台事件](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 用键盘在模拟器中导航  
  通过按 **CTRL+ALT+向上箭头** 将焦点从模拟器窗口切换到模拟器工具栏上，导航模拟器工具栏。 使用 **向上键头** 和 **向下键头** 在工具栏按钮之间移动。  

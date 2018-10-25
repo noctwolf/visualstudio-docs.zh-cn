@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd859492faeb5af7a74d0261ff8d86333ff5ade8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f7d5b5e459d80c69f856860a9b2aa0302191a968
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858922"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024：在适用处使用属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|UsePropertiesWhereAppropriate|
@@ -42,25 +43,25 @@ ms.locfileid: "49222724"
 ## <a name="rule-description"></a>规则说明
  在大多数情况下，属性表示数据和方法执行的操作。 像字段，使其更易使用访问属性。 一种方法非常适于成为属性，如果存在下列条件之一：
 
--   不采用任何参数，并返回一个对象的状态信息。
+- 不采用任何参数，并返回一个对象的状态信息。
 
--   接受单个参数要设置对象状态的某些部分。
+- 接受单个参数要设置对象状态的某些部分。
 
- 属性行为方式就像它们是字段;如果该方法不能它不应更改到的属性。 方法要优于在以下情况下的属性：
+  属性行为方式就像它们是字段;如果该方法不能它不应更改到的属性。 方法要优于在以下情况下的属性：
 
--   该方法执行耗时的操作。 此方法是速度明显慢于所需设置或获取字段的值的时间。
+- 该方法执行耗时的操作。 此方法是速度明显慢于所需设置或获取字段的值的时间。
 
--   该方法执行的转换。 访问字段不返回存储的数据的已转换的版本。
+- 该方法执行的转换。 访问字段不返回存储的数据的已转换的版本。
 
--   Get 方法具有明显的副作用。 检索字段的值不会产生任何负面影响。
+- Get 方法具有明显的副作用。 检索字段的值不会产生任何负面影响。
 
--   执行的顺序非常重要。 设置字段的值不依赖于其他操作的匹配项。
+- 执行的顺序非常重要。 设置字段的值不依赖于其他操作的匹配项。
 
--   连续两次调用该方法创建不同的结果。
+- 连续两次调用该方法创建不同的结果。
 
--   该方法是静态的但返回调用方可以更改的对象。 检索字段的值不允许调用方更改按字段存储的数据。
+- 该方法是静态的但返回调用方可以更改的对象。 检索字段的值不允许调用方更改按字段存储的数据。
 
--   该方法返回一个数组。
+- 该方法返回一个数组。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要解决此规则的冲突，请将方法更改为一个属性。

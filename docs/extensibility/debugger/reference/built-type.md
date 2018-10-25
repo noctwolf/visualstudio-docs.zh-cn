@@ -1,5 +1,5 @@
 ---
-title: BUILT_TYPE |Microsoft 文档
+title: BUILT_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14a9010925db5c175b7110fb12261eb135162246
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f0955ca40e136e5b89f105430f3dd887b66f25a2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853306"
 ---
 # <a name="builttype"></a>BUILT_TYPE
-此结构指定字段类型从元数据中获取有关的信息。  
+此结构指定从元数据字段类型有关的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,13 +45,13 @@ public struct BUILT_TYPE {
   
 #### <a name="parameters"></a>参数  
  ulAppDomainID  
- 符号源于应用程序 ID。 这用于唯一标识应用程序的实例。  
+ 符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。  
   
  guidModule  
  包含此字段的模块的 GUID。  
   
  pUnderlyingField  
- [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)标识与此内置字段相关的基础字段的对象。  
+ [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)标识与此生成的字段关联的基础字段对象。  
   
 ## <a name="remarks"></a>备注  
  此结构显示为中的联合的一部分[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构时`dwKind`字段`TYPE_INFO`结构设置为`TYPE_KIND_BUILT`(从值[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举）。  
@@ -63,7 +63,7 @@ public struct BUILT_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)   

@@ -22,12 +22,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 426377d82385cd42de5dd265b0e727a94c0b24d1
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: e33fa9b6047cbe470702cebdbb27f74d074e460e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39177339"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916902"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 
@@ -73,21 +73,21 @@ ms.locfileid: "39177339"
 当合并数据集，您可以传递布尔参数 (`preserveChanges`)，它告诉<xref:System.Data.DataSet.Merge%2A>方法是否保留在目标数据集中的现有修改。 由于数据集维护记录的多个版本，务必要时刻牢记合并多个记录的版本。 下表显示了如何合并两个数据集中的记录：
 
 |DataRowVersion|目标数据集|源数据集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James Wilson|James C.Wilson|
 |当前|Jim Wilson|James C.Wilson|
 
 调用<xref:System.Data.DataSet.Merge%2A>方法使用了上表`preserveChanges=false targetDataset.Merge(sourceDataset)`将导致以下数据：
 
 |DataRowVersion|目标数据集|源数据集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |当前|James C.Wilson|James C.Wilson|
 
 调用<xref:System.Data.DataSet.Merge%2A>方法替换`preserveChanges = true targetDataset.Merge(sourceDataset, true)`将导致以下数据：
 
 |DataRowVersion|目标数据集|源数据集|
-|--------------------|--------------------|--------------------|
+| - | - | - |
 |原始|James C.Wilson|James C.Wilson|
 |当前|Jim Wilson|James C.Wilson|
 
@@ -128,7 +128,7 @@ ms.locfileid: "39177339"
 下表详细说明的可能值<xref:System.Data.DataRowState>枚举：
 
 |DataRowState 值|描述|
-|------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowState.Added>|行添加到的项作为<xref:System.Data.DataRowCollection>。 (处于此状态的行不具有相应的原始版本，因为它不存在时最后一个<xref:System.Data.DataRow.AcceptChanges%2A>调用方法)。|
 |<xref:System.Data.DataRowState.Deleted>|使用已删除该行<xref:System.Data.DataRow.Delete%2A>的<xref:System.Data.DataRow>对象。|
 |<xref:System.Data.DataRowState.Detached>|该行已创建，但不属于任何<xref:System.Data.DataRowCollection>。 一个<xref:System.Data.DataRow>对象在立即创建后，之前它已添加到一个集合，并已从集合中删除它后处于此状态。|
@@ -142,7 +142,7 @@ ms.locfileid: "39177339"
 下表详细说明的可能值<xref:System.Data.DataRowVersion>枚举：
 
 |DataRowVersion 值|描述|
-|--------------------------|-----------------|
+| - |-----------------|
 |<xref:System.Data.DataRowVersion.Current>|一条记录的当前版本包含在上次记录执行的所有修改<xref:System.Data.DataRow.AcceptChanges%2A>调用。 如果行已被删除，则没有当前版本。|
 |<xref:System.Data.DataRowVersion.Default>|一条记录，定义数据集架构或数据源的默认值。|
 |<xref:System.Data.DataRowVersion.Original>|一条记录的原始版本是记录的副本，因为它是最后一次提交更改时在数据集中。 实际上，这通常是一条记录的版本为已读从数据源。|

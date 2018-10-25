@@ -19,25 +19,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ce7024f54eccf595fefa8fa45c438bcb2d55adf3
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: fdde21ef6e65a741b7a9ac08bfc69de4dd1f9856
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670426"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933438"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：  
   
--   [了解 VSTO 外接程序](#UnderstandingAddIns)  
+- [了解 VSTO 外接程序](#UnderstandingAddIns)  
   
--   [VSTO 外接程序的组件](#AddinComponents)  
+- [VSTO 外接程序的组件](#AddinComponents)  
   
--   [VSTO 外接程序如何与 Microsoft Office 应用程序协同工作](#HowAddinsWork)  
+- [VSTO 外接程序如何与 Microsoft Office 应用程序协同工作](#HowAddinsWork)  
   
- [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
+  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- 有关创建 VSTO 外接程序的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)。  
+  有关创建 VSTO 外接程序的常规信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)。  
   
 ##  <a name="UnderstandingAddIns"></a> 了解 VSTO 外接程序  
  当您使用在 Visual Studio 中的 Office 开发人员工具生成 VSTO 外接程序中时，您将创建由 Microsoft Office 应用程序加载的托管的代码程序集。 加载该程序集后，VSTO 外接程序可以响应在应用程序中引发的事件（例如，用户单击菜单项时）。 VSTO 外接程序也可以调入对象模型，以便实现应用程序自动化和扩展应用程序，并且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。  

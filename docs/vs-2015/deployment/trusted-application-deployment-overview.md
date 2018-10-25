@@ -22,12 +22,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 1807efdefd387c4e4fa01c2acec0f7b32bbce6f8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 733eb98544d48716ec073605d68628ddeab7b794
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215912"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827579"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,11 +57,11 @@ ms.locfileid: "49215912"
   
  在大型组织中，发布者和部署人员通常是两个独立的实体：  
   
--   发布者是创建 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的组。  
+- 发布者是创建 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序的组。  
   
--   部署人员是将 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序分发给集团企业台式计算机的组（通常为信息技术 (IT) 部）。  
+- 部署人员是将 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 应用程序分发给集团企业台式计算机的组（通常为信息技术 (IT) 部）。  
   
- 必须执行以下步骤以使用受信任的应用程序部署：  
+  必须执行以下步骤以使用受信任的应用程序部署：  
   
 1.  获取发布者的证书。  
   

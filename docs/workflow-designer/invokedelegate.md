@@ -13,12 +13,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e3d802000bede1a654b088fb80b134a36a0185be
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1e1f91b88d686f3e9a6ddee9573824eb4191e2bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758522"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927926"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -37,7 +37,7 @@ ms.locfileid: "36758522"
 下表列出 <xref:System.Activities.Statements.InvokeDelegate> 属性并说明如何在设计器中使用它们。 可以在属性网格中编辑这些属性，一些可以在工作流设计器图面上进行编辑。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 活动的友好名称。 默认值为 InvokeDelegate。<br /><br /> 尽管<xref:System.Activities.Activity.DisplayName%2A>并不严格要求，最好是使用其中一个。|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|要在执行活动时调用的 <xref:System.Activities.ActivityDelegate> 的名称。 此属性可编辑设计器图面，并且是必需的。|
 |<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|调用委托的自变量集合。 键是参数对象的名称上<xref:System.Activities.ActivityDelegate>，而值是其表达式进行计算并分配到相应的参数对象的参数。 若要显示**DelegateArguments**对话框中，你可以设置此属性，请单击中的省略号按钮**DelegateArguments**属性网格的字段。 单击**创建自变量**字段以添加自变量。|

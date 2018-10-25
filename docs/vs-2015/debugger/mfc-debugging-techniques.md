@@ -32,12 +32,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b311954172038d20327ab92283812a8b157a0d06
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac5c208478147e0b264165383df7deea23720c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303909"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867892"
 ---
 # <a name="mfc-debugging-techniques"></a>MFC 调试方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ ms.locfileid: "49303909"
   
  [在 MFC 中检测内存泄漏](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [跟踪内存分配](#BKMK_Tracking_memory_allocations)  
+- [跟踪内存分配](#BKMK_Tracking_memory_allocations)  
   
--   [启用内存诊断](#BKMK_Enabling_memory_diagnostics)  
+- [启用内存诊断](#BKMK_Enabling_memory_diagnostics)  
   
--   [拍摄内存快照](#BKMK_Taking_memory_snapshots)  
+- [拍摄内存快照](#BKMK_Taking_memory_snapshots)  
   
--   [查看内存统计信息](#BKMK_Viewing_memory_statistics)  
+- [查看内存统计信息](#BKMK_Viewing_memory_statistics)  
   
--   [采用对象转储](#BKMK_Taking_object_dumps)  
+- [采用对象转储](#BKMK_Taking_object_dumps)  
   
-    -   [解释内存转储](#BKMK_Interpreting_memory_dumps)  
+  - [解释内存转储](#BKMK_Interpreting_memory_dumps)  
   
-    -   [自定义对象转储](#BKMK_Customizing_object_dumps)  
+  - [自定义对象转储](#BKMK_Customizing_object_dumps)  
   
-     [减小 MFC 调试生成的大小](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+    [减小 MFC 调试生成的大小](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [生成带有选定模块的调试信息的 MFC 应用程序](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+  - [生成带有选定模块的调试信息的 MFC 应用程序](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
  MFC 提供特殊的 [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) 函数，以供在源代码中对断点进行硬编码：  
@@ -145,62 +145,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
  **启用或禁用内存诊断**  
   
--   调用全局函数 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 来启用或禁用诊断内存分配器。 由于默认情况下内存诊断在调试库中是打开的，所以通常会使用该函数暂时关闭内存诊断，这会提高程序执行速度并减少诊断输出。  
+- 调用全局函数 [AfxEnableMemoryTracking](http://msdn.microsoft.com/library/0a40e0c4-855d-46e2-9577-a8f2346f47db) 来启用或禁用诊断内存分配器。 由于默认情况下内存诊断在调试库中是打开的，所以通常会使用该函数暂时关闭内存诊断，这会提高程序执行速度并减少诊断输出。  
   
- **使用 afxMemDF 选择特定内存诊断功能**  
+  **使用 afxMemDF 选择特定内存诊断功能**  
   
--   如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
+- 如果希望对内存诊断功能进行更精确的控制，可以通过设置 MFC 全局变量 [afxMemDF](http://msdn.microsoft.com/library/cf117501-5446-4fce-81b3-f7194bc95086)的值，来有选择地打开和关闭单个内存诊断功能。 该变量可以具有下列值（由枚举类型 **afxMemDF**所指定）。  
   
-    |“值”|描述|  
-    |-----------|-----------------|  
-    |**allocMemDF**|打开诊断内存分配器（默认）。|  
-    |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
-    |**checkAlwaysMemDF**|每次分配或释放内存时均调用 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 。|  
+  |“值”|描述|  
+  |-----------|-----------------|  
+  |**allocMemDF**|打开诊断内存分配器（默认）。|  
+  |**delayFreeMemDF**|在调用 `delete` 或 `free` 时延迟释放内存，直到程序退出。 这将使你的程序分配可能的最大内存量。|  
+  |**checkAlwaysMemDF**|每次分配或释放内存时均调用 [AfxCheckMemory](http://msdn.microsoft.com/library/4644da71-7d14-41dc-adc0-ee9558fd7a28) 。|  
   
-     可以通过执行逻辑 OR 操作来组合使用这些值，如下所示：  
+   可以通过执行逻辑 OR 操作来组合使用这些值，如下所示：  
   
-    ```cpp  
-    afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
-    ```  
+  ```cpp  
+  afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
+  ```  
   
- [在本主题中](#BKMK_In_this_topic)  
+  [在本主题中](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Taking_memory_snapshots"></a> 拍摄内存快照  
   
-1.  创建一个 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 对象并调用 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成员函数。 这将创建第一个内存快照。  
+1. 创建一个 [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 对象并调用 [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a) 成员函数。 这将创建第一个内存快照。  
   
-2.  在程序执行了其内存分配和释放操作以后，创建另一个 `CMemoryState` 对象，并为该对象调用 `Checkpoint` 。 这将得到内存使用的第二个快照。  
+2. 在程序执行了其内存分配和释放操作以后，创建另一个 `CMemoryState` 对象，并为该对象调用 `Checkpoint` 。 这将得到内存使用的第二个快照。  
   
-3.  创建第三个 `CMemoryState` 对象，并调用其 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 成员函数，同时将前两个 `CMemoryState` 对象作为参数提供。 如果这两个内存状态之间有差异，则 `Difference` 函数将返回非零值。 这指示有些内存块尚未被释放。  
+3. 创建第三个 `CMemoryState` 对象，并调用其 [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 成员函数，同时将前两个 `CMemoryState` 对象作为参数提供。 如果这两个内存状态之间有差异，则 `Difference` 函数将返回非零值。 这指示有些内存块尚未被释放。  
   
-     本示例显示相应的代码：  
+    本示例显示相应的代码：  
   
-    ```  
-    // Declare the variables needed  
-    #ifdef _DEBUG  
-        CMemoryState oldMemState, newMemState, diffMemState;  
-        oldMemState.Checkpoint();  
-    #endif  
+   ```  
+   // Declare the variables needed  
+   #ifdef _DEBUG  
+       CMemoryState oldMemState, newMemState, diffMemState;  
+       oldMemState.Checkpoint();  
+   #endif  
   
-        // Do your memory allocations and deallocations.  
-        CString s("This is a frame variable");  
-        // The next object is a heap object.  
-       CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
+       // Do your memory allocations and deallocations.  
+       CString s("This is a frame variable");  
+       // The next object is a heap object.  
+      CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
   
-    #ifdef _DEBUG  
-        newMemState.Checkpoint();  
-        if( diffMemState.Difference( oldMemState, newMemState ) )  
-        {  
-            TRACE( "Memory leaked!\n" );  
-        }  
-    #endif  
-    ```  
+   #ifdef _DEBUG  
+       newMemState.Checkpoint();  
+       if( diffMemState.Difference( oldMemState, newMemState ) )  
+       {  
+           TRACE( "Memory leaked!\n" );  
+       }  
+   #endif  
+   ```  
   
-     请注意，内存检查语句由 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 块括起来，这样就只能在程序的调试版本中对它们进行编译。  
+    请注意，内存检查语句由 `#ifdef`[_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** 块括起来，这样就只能在程序的调试版本中对它们进行编译。  
   
-     既然已经知道存在内存泄漏，便可以使用另一个成员函数 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) ，该函数将有助于对其进行定位。  
+    既然已经知道存在内存泄漏，便可以使用另一个成员函数 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) ，该函数将有助于对其进行定位。  
   
- [在本主题中](#BKMK_In_this_topic)  
+   [在本主题中](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Viewing_memory_statistics"></a> 查看内存统计信息  
  [CMemoryState::Difference](http://msdn.microsoft.com/library/aba69e2f-71dd-4255-99b5-3da2e56a0c9c) 函数监视两个内存状态对象，并检测起始状态和结束状态之间未从堆释放的所有对象。 在拍摄内存快照并使用 `CMemoryState::Difference`对它们进行比较后，可以调用 [CMemoryState::DumpStatistics](http://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) 来获取有关尚未释放的对象的信息。  
@@ -424,72 +424,72 @@ pMyPerson->Dump( afxDump );
 ##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 减小 MFC 调试生成的大小  
  大型 MFC 应用程序的调试信息会占用大量磁盘空间。 你可以使用以下过程之一减小该大小：  
   
-1.  重新生成 MFC 库使用[/Z7、 /Zi、 /ZI （调试信息格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)选项，而不是 **/z7**。 这些选项生成单个程序数据库 (PDB) 文件，该文件包含整个库的调试信息，减少了冗遇并节省了空间。  
+1. 重新生成 MFC 库使用[/Z7、 /Zi、 /ZI （调试信息格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)选项，而不是 **/z7**。 这些选项生成单个程序数据库 (PDB) 文件，该文件包含整个库的调试信息，减少了冗遇并节省了空间。  
   
-2.  重新生成没有调试信息的 MFC 库 (没有[/Z7、 /Zi、 /ZI （调试信息格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)选项)。 在此情况下，缺少调试信息将妨碍你在 MFC 库代码内使用大多数调试器功能，但由于 MFC 库已完全调试，所以可能不会有问题。  
+2. 重新生成没有调试信息的 MFC 库 (没有[/Z7、 /Zi、 /ZI （调试信息格式）](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8)选项)。 在此情况下，缺少调试信息将妨碍你在 MFC 库代码内使用大多数调试器功能，但由于 MFC 库已完全调试，所以可能不会有问题。  
   
-3.  生成你自己的只带有选定模块的调试信息的应用程序，如下所述。  
+3. 生成你自己的只带有选定模块的调试信息的应用程序，如下所述。  
   
- [在本主题中](#BKMK_In_this_topic)  
+   [在本主题中](#BKMK_In_this_topic)  
   
 ###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 生成带有选定模块的调试信息的 MFC 应用程序  
  生成带有 MFC 调试库的选定模块以后，你便可以在这些模块中使用单步执行和其他调试功能。 该过程同时利用 Visual C++ 生成文件的“Debug”模式和“Release”模式，从而使得有必要进行下面所描述的更改（也使得在需要完全发布版本时必须进行“全部重新生成”）。  
   
-1.  在“解决方案资源管理器”中，选择项目。  
+1. 在“解决方案资源管理器”中，选择项目。  
   
-2.  从 **“视图”** 菜单中选定 **“属性页”**。  
+2. 从 **“视图”** 菜单中选定 **“属性页”**。  
   
-3.  首先，将创建一个新的项目配置。  
+3. 首先，将创建一个新的项目配置。  
   
-    1.  在中**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
+   1.  在中**\<项目 > 属性页**对话框中，单击**Configuration Manager**按钮。  
   
-    2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
+   2.  在 [“配置管理器”对话框](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b)中，在网格中定位你的项目。 在中**配置**列中，选择**\<新建...>**。  
   
-    3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
+   3.  在 [“新建项目配置”对话框](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)中的 **“项目配置名”** 框中键入新配置的名称，如“Partial Debug”（部分调试）。  
   
-    4.  在 **“从此处复制设置”** 列表中，选择 **“Release”**。  
+   4.  在 **“从此处复制设置”** 列表中，选择 **“Release”**。  
   
-    5.  单击 **“确定”** 以关闭 **“新建项目配置”** 对话框。  
+   5.  单击 **“确定”** 以关闭 **“新建项目配置”** 对话框。  
   
-    6.  关闭 **“配置管理器”** 对话框。  
+   6.  关闭 **“配置管理器”** 对话框。  
   
-4.  现在，将为整个项目设置选项。  
+4. 现在，将为整个项目设置选项。  
   
-    1.  在 **“属性页”** 对话框中的 **“配置属性”** 文件夹下选定 **“常规”** 类别。  
+   1.  在 **“属性页”** 对话框中的 **“配置属性”** 文件夹下选定 **“常规”** 类别。  
   
-    2.  在项目设置网格中展开 **“项目默认值”** （如有必要）。  
+   2.  在项目设置网格中展开 **“项目默认值”** （如有必要）。  
   
-    3.  在 **“项目默认值”** 下找到 **“MFC 的使用”**。 当前设置将显示在网格的右列中。 单击当前设置并将它更改为 **“在静态库中使用 MFC”**。  
+   3.  在 **“项目默认值”** 下找到 **“MFC 的使用”**。 当前设置将显示在网格的右列中。 单击当前设置并将它更改为 **“在静态库中使用 MFC”**。  
   
-    4.  在 **“属性页”** 对话框的左窗格中，打开 **“C/C++”** 文件夹并选定 **“预处理器”**。 在“属性”网格中找到 **“预处理器定义”** ，并用“_DEBUG”替换“NDEBUG”。  
+   4.  在 **“属性页”** 对话框的左窗格中，打开 **“C/C++”** 文件夹并选定 **“预处理器”**。 在“属性”网格中找到 **“预处理器定义”** ，并用“_DEBUG”替换“NDEBUG”。  
   
-    5.  在 **“属性页”** 对话框的左窗格中，打开 **“链接器”** 文件夹并选定 **“输入”** 类别。 在“属性”网格中找到 **“附加依赖项”**。 在 **“附加依赖项”** 设置中，键入“NAFXCWD.LIB”和“LIBCMT”。  
+   5.  在 **“属性页”** 对话框的左窗格中，打开 **“链接器”** 文件夹并选定 **“输入”** 类别。 在“属性”网格中找到 **“附加依赖项”**。 在 **“附加依赖项”** 设置中，键入“NAFXCWD.LIB”和“LIBCMT”。  
   
-    6.  单击 **“确定”** 以保存新的生成选项并关闭 **“属性页”** 对话框。  
+   6.  单击 **“确定”** 以保存新的生成选项并关闭 **“属性页”** 对话框。  
   
-5.  从 **“生成”** 菜单中选定 **“重新生成”**。 这将从模块中移除所有调试信息，但不影响 MFC 库。  
+5. 从 **“生成”** 菜单中选定 **“重新生成”**。 这将从模块中移除所有调试信息，但不影响 MFC 库。  
   
-6.  现在必须将调试信息添加回应用程序中的选定模块。 请记住，只能在已用调试信息编译了的模块中设置断点和执行其他调试器函数。 对于要包括调试信息的每个项目文件，执行以下步骤：  
+6. 现在必须将调试信息添加回应用程序中的选定模块。 请记住，只能在已用调试信息编译了的模块中设置断点和执行其他调试器函数。 对于要包括调试信息的每个项目文件，执行以下步骤：  
   
-    1.  在“解决方案资源管理器”中，打开位于你的项目下的 **“源文件”** 文件夹。  
+   1.  在“解决方案资源管理器”中，打开位于你的项目下的 **“源文件”** 文件夹。  
   
-    2.  选择要为其设置调试信息的文件。  
+   2.  选择要为其设置调试信息的文件。  
   
-    3.  从 **“视图”** 菜单中选定 **“属性页”**。  
+   3.  从 **“视图”** 菜单中选定 **“属性页”**。  
   
-    4.  在 **“属性页”** 对话框中的 **“配置设置”** 文件夹下，打开 **“C/C++”** 文件夹，然后选定 **“常规”** 类别。  
+   4.  在 **“属性页”** 对话框中的 **“配置设置”** 文件夹下，打开 **“C/C++”** 文件夹，然后选定 **“常规”** 类别。  
   
-    5.  在“属性”网格中找到 **“调试信息格式”.**  
+   5.  在“属性”网格中找到 **“调试信息格式”.**  
   
-    6.  单击 **“调试信息格式”** 设置并为调试信息选择所需选项（通常为 **“/ZI”**）。  
+   6.  单击 **“调试信息格式”** 设置并为调试信息选择所需选项（通常为 **“/ZI”**）。  
   
-    7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 可以通过更改来关闭预编译标头**创建/使用预编译标头**中设置**\<项目 > 属性**对话框中 (**配置属性**文件夹中， **C/c + +** 子文件夹中，**预编译标头**类别)。  
+   7.  如果要使用应用程序向导生成的应用程序或具有预编译头，则在编译其他模块以前必须关闭预编译头或重新编译预编译头。 否则，将收到警告 C4650 和错误消息 C2855。 可以通过更改来关闭预编译标头**创建/使用预编译标头**中设置**\<项目 > 属性**对话框中 (**配置属性**文件夹中， **C/c + +** 子文件夹中，**预编译标头**类别)。  
   
-7.  从 **“生成”** 菜单中选定 **“生成”** 以重新生成已过期的项目文件。  
+7. 从 **“生成”** 菜单中选定 **“生成”** 以重新生成已过期的项目文件。  
   
- 作为本主题中所描述技术的替换技术，可以使用外部生成文件为每个文件定义单个选项。 在这种情况下，若要链接 MFC 调试库，必须为每个模块都定义 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 标志。 如果想使用 MFC 发布库，必须定义了 NDEBUG。 有关编写外部生成文件的更多信息，请参见 [NMAKE 参考](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)。  
+   作为本主题中所描述技术的替换技术，可以使用外部生成文件为每个文件定义单个选项。 在这种情况下，若要链接 MFC 调试库，必须为每个模块都定义 [_DEBUG](http://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a) 标志。 如果想使用 MFC 发布库，必须定义了 NDEBUG。 有关编写外部生成文件的更多信息，请参见 [NMAKE 参考](http://msdn.microsoft.com/library/0421104d-8b7b-4bf3-86c1-928d9b7c1a8c)。  
   
- [在本主题中](#BKMK_In_this_topic)  
+   [在本主题中](#BKMK_In_this_topic)  
   
 ## <a name="see-also"></a>请参阅  
  [调试 Visual C++](../debugger/debugging-native-code.md)

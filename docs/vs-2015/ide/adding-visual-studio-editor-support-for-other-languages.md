@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c5fc84272c7041c2d761b4f4ec96add898659049
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0a978470a307c46805e902db85cd5a638c0d83f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300503"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823770"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>为其他语言添加 Visual Studio 编辑器支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,23 +49,23 @@ ms.locfileid: "49300503"
   
  除语法着色和基本语句完成外，Visual Studio 还具有一种称为[导航到](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/)的功能。 可使用此功能快速搜索代码文件、文件路径和代码符号。 Visual Studio 为以下语言提供“导航到”支持。  
   
--   前往  
+- 前往  
   
--   Java  
+- Java  
   
--   JavaScript  
+- JavaScript  
   
--   PHP  
+- PHP  
   
--   TypeScript  
+- TypeScript  
   
--   Visual Basic  
+- Visual Basic  
   
--   Visual C++  
+- Visual C++  
   
--   Visual C#  
+- Visual C#  
   
- 所有这些文件类型均有上述功能，即使尚未安装对某种语言的支持也是如此。 安装某种语言的专门支持可能会提供其他语言支持，例如 IntelliSense 或其他高级语言功能（如灯泡）。  
+  所有这些文件类型均有上述功能，即使尚未安装对某种语言的支持也是如此。 安装某种语言的专门支持可能会提供其他语言支持，例如 IntelliSense 或其他高级语言功能（如灯泡）。  
   
 ## <a name="adding-support-for-non-supported-languages"></a>添加对不受支持语言的支持  
  Visual Studio 2015 Update 1 及更高版本通过 [TextMate 语法](https://manual.macromates.com/en/language_grammars)在编辑器中提供语言支持。 如果你喜欢的编程语言当前在 Visual Studio 编辑器中不受支持，请先在 Web 上搜索，可能存在该语言的 TextMate 包。 如果还是找不到，可通过创建语言语法和代码段的 TextMate 包模型在 Visual Studio 2015 Update 1 及更高版本中自行添加对该语言的支持。  

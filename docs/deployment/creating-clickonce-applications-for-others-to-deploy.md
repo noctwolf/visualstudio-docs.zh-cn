@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: da9941ab179234b9afae95a63dcaaacd66daf7fa
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: b74e8a988505c5386b444df27f7726a8ceb51a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39512143"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870767"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署 ClickOnce 应用程序
 并非所有开发人员正在创建 ClickOnce 部署都计划来部署应用程序本身。 其中许多只需将其应用程序打包使用 ClickOnce，然后将文件提交给客户，如大公司。 客户将成为一个负责承载其网络上的应用程序。 本主题讨论了一些在 3.5 版之前的.NET Framework 的版本中的此类部署中固有的问题。 然后，它介绍通过使用新的"使用信任的清单"功能在.NET Framework 3.5 中提供的一个新的解决方案。 最后，则可以确定创建的客户仍在使用较旧版本的.NET Framework 的 ClickOnce 部署的建议策略。  
@@ -86,13 +86,13 @@ ms.locfileid: "39512143"
   
  有三种方法，客户可以在此情况下对部署清单进行签名：  
   
-1.  客户可以使用由证书颁发机构 (CA) 颁发的有效证书。  
+1. 客户可以使用由证书颁发机构 (CA) 颁发的有效证书。  
   
-2.  作为此方法的变体，客户可以选择使用自签名证书及其部署清单进行签名。 对此的缺点是，它将导致应用程序时将其安装要求用户显示单词"未知发行商"。 但是，好处是它可防止较小的客户无需花费时间和金钱所需的证书颁发机构颁发的证书。  
+2. 作为此方法的变体，客户可以选择使用自签名证书及其部署清单进行签名。 对此的缺点是，它将导致应用程序时将其安装要求用户显示单词"未知发行商"。 但是，好处是它可防止较小的客户无需花费时间和金钱所需的证书颁发机构颁发的证书。  
   
-3.  最后，开发人员可以安装包中包含其自己的自签名的证书。 它引入了与本主题前面所述的应用程序标识的潜在问题。  
+3. 最后，开发人员可以安装包中包含其自己的自签名的证书。 它引入了与本主题前面所述的应用程序标识的潜在问题。  
   
- 安装程序部署项目方法的缺点是花费时间和生成自定义部署应用程序所需的费用。  
+   安装程序部署项目方法的缺点是花费时间和生成自定义部署应用程序所需的费用。  
   
 ### <a name="have-customer-generate-deployment-manifest"></a>已生成的部署清单的客户  
  第三个可能的部署策略是仅应用程序关闭文件和应用程序清单复制到客户。 在此方案中，客户负责使用.NET Framework SDK 来生成和部署清单进行签名。  

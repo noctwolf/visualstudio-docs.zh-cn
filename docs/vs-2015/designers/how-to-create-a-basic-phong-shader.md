@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3ad96b9ed53b7600417f3c3e8a283c7a4a372842
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286489"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832675"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：创建基本冯氏着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,19 +43,19 @@ ms.locfileid: "49286489"
   
 #### <a name="to-create-a-phong-shader"></a>创建冯氏着色器  
   
-1.  按[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述创建朗伯着色器。  
+1. 按[如何：创建基本朗伯着色器](../designers/how-to-create-a-basic-lambert-shader.md)中所述创建朗伯着色器。  
   
-2.  从“最终颜色”节点断开“朗伯”节点。 选择“朗伯”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。  
+2. 从“最终颜色”节点断开“朗伯”节点。 选择“朗伯”节点的“RGB”终端，然后选择“断开链接”。 这为在下一步中添加的节点腾出空间。  
   
-3.  向关系图添加“添加”节点。 在“工具箱”中的“数学”下选择“添加”，然后将其移到设计图面。  
+3. 向关系图添加“添加”节点。 在“工具箱”中的“数学”下选择“添加”，然后将其移到设计图面。  
   
-4.  向关系图添加“反射”节点。 在“工具箱”中的“实用工具”下，选择“反射”，然后将其移到设计图面。  
+4. 向关系图添加“反射”节点。 在“工具箱”中的“实用工具”下，选择“反射”，然后将其移到设计图面。  
   
-5.  添加反射比例。 将“反射”节点的“输出”终端移到“添加”节点的“X”终端，然后将“朗伯”节点的“输出”终端移到“添加”节点的“Y”终端。 这些连接会组合像素的总漫射比例和总反射颜色比例。  
+5. 添加反射比例。 将“反射”节点的“输出”终端移到“添加”节点的“X”终端，然后将“朗伯”节点的“输出”终端移到“添加”节点的“Y”终端。 这些连接会组合像素的总漫射比例和总反射颜色比例。  
   
-6.  将计算得出的颜色值连接到最终颜色。 将“添加”节点的“输出”终端移到“最终颜色”节点的“RGB”终端。  
+6. 将计算得出的颜色值连接到最终颜色。 将“添加”节点的“输出”终端移到“最终颜色”节点的“RGB”终端。  
   
- 下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
+   下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
   
 > [!NOTE]
 >  为了更好地演示该图中着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色，并使用  **MaterialSpecular** 和 **MaterialSpecularPower**  参数指定了金属外观。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  

@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_RETVAL |Microsoft 文档
+title: METADATA_ADDRESS_RETVAL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7358669f3057bf26ab88f3a1ef3fc301904c6b0a
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: fd6501fd04b7f80879e439daba68f1a4c9a9cf86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125390"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903733"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 此结构表示的方法或函数返回的值。  
@@ -47,16 +47,16 @@ public struct METADATA_ADDRESS_RETVAL {
   
 ## <a name="terms"></a>术语  
  tokMethod  
- 对于此返回值为该方法的 ID。  
+ 此返回值是为该方法的 ID。  
   
  dwCorType  
- 返回值的基类型。 这是一个介于`CorElementType`中定义的枚举[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 文件。  
+ 返回值的基类型。 这是一个介于`CorElementType`枚举中定义[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK corhdr.h 中的文件。  
   
  dwSigSize  
- 返回值签名的大小 (如存储在`rgSig`)。  
+ 返回值签名的大小 (存储在`rgSig`)。  
   
  rgSig  
- 构成的返回值的签名的字节数组。  
+ 构成签名的返回值的字节数组。  
   
 ## <a name="remarks"></a>备注  
  此结构是中的联合的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)结构时`dwKind`字段`DEBUG_ADDRESS_UNION`结构设置为`ADDRESS_KIND_RETVAL`(从值[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举）。  
@@ -68,7 +68,7 @@ public struct METADATA_ADDRESS_RETVAL {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

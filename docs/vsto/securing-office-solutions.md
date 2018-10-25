@@ -17,38 +17,38 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 430a4b3a1c4f0d66acfd2486c44bd8eff7df1fcb
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 13b0680e9222302feab8a7cbe1ad375a1f7255be
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49074060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846195"
 ---
 # <a name="secure-office-solutions"></a>保护 Office 解决方案
   Office 解决方案的安全模型涉及多种技术： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]， [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]，Microsoft Office 和 Internet Explorer 受限的站点区域中的信任中心。 以下各节介绍不同安全功能的工作方式：  
   
--   [向 Office 解决方案授予信任](#GrantingTrustToSolutions)  
+- [向 Office 解决方案授予信任](#GrantingTrustToSolutions)  
   
--   [向文档授予信任](#GrantingTrustToDocuments)  
+- [向文档授予信任](#GrantingTrustToDocuments)  
   
--   [使用 Windows Installer 时授予信任](#GrantingTrustWindowsInstaller)  
+- [使用 Windows Installer 时授予信任](#GrantingTrustWindowsInstaller)  
   
--   [有关 Office 解决方案的特定安全注意事项](#Security)  
+- [有关 Office 解决方案的特定安全注意事项](#Security)  
   
--   [开发过程中的安全性](#SecurityDuringDeployment)  
+- [开发过程中的安全性](#SecurityDuringDeployment)  
   
--   [Visual Studio Tools for Office 运行时](#VisualStudioToolsForOfficeRuntime)  
+- [Visual Studio Tools for Office 运行时](#VisualStudioToolsForOfficeRuntime)  
   
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
+  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
 ##  <a name="GrantingTrustToSolutions"></a> 向 Office 解决方案授予信任  
  向 Office 解决方案授予信任信任意味着修改每个最终用户的安全策略，以便基于以下证据信任 Office 解决方案：  
   
--   用于对部署清单进行签名的证书。  
+- 用于对部署清单进行签名的证书。  
   
--   部署清单的 URL。  
+- 部署清单的 URL。  
   
- 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
+  有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
   
 ##  <a name="GrantingTrustToDocuments"></a> 向文档授予信任  
  文档级自定义项要求文档位于被指定为可信位置的目录中。 有关详细信息，请参阅[向文档授予信任](../vsto/granting-trust-to-documents.md)。  
@@ -65,11 +65,11 @@ ms.locfileid: "49074060"
 ### <a name="document-level-solutions"></a>文档级解决方案  
  如果要开发以下类型的项目，则必须将文档的完全限定的路径添加到 Microsoft Office 应用程序中的可信位置列表：  
   
--   文档级解决方案，如位于网络文件共享 *\\\servername\sharename*。  
+- 文档级解决方案，如位于网络文件共享 *\\\servername\sharename*。  
   
--   使用 word 的文档级解决方案 *.doc*或 *.docm*文件。  
+- 使用 word 的文档级解决方案 *.doc*或 *.docm*文件。  
   
- 在向可信位置列表中添加文档位置时，请包括子目录，或者专门包括调试和生成文件夹。 有关详细信息，请参阅 Microsoft Office Online 帮助文章[创建、 删除或更改你的文件的受信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
+  在向可信位置列表中添加文档位置时，请包括子目录，或者专门包括调试和生成文件夹。 有关详细信息，请参阅 Microsoft Office Online 帮助文章[创建、 删除或更改你的文件的受信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。  
   
 ### <a name="temporary-certificates"></a>临时证书  
  如果不存在签名证书，则 Visual Studio 会创建一个临时证书。 只应在开发过程中使用此临时证书，在部署时应该购买正式证书。  

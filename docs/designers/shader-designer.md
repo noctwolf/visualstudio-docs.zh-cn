@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e57a42846833024fefb4bf73660484123474d00a
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 6f2f53e801df70345e34c14c15d4456e39561623
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029048"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847625"
 ---
 # <a name="shader-designer"></a>着色器设计器
 
@@ -31,7 +31,7 @@ ms.locfileid: "47029048"
 着色器设计器支持以下着色器格式：
 
 |格式名称|文件扩展名|支持的操作（查看、编辑、导出）|
-|-----------------|--------------------|-------------------------------------------------|
+|-----------------| - | - |
 |有向图着色器语言|.dgsl|查看、编辑|
 |HLSL 着色器（源代码）|.hlsl|导出|
 |HLSL 着色器（字节码）|.cso|导出|
@@ -177,7 +177,7 @@ ms.locfileid: "47029048"
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
 
 |命令|键盘快捷键|
-|-------------|------------------------|
+|-------------| - |
 |切换到“选择”模式|Ctrl+G，Ctrl+Q<br /><br /> **S**|
 |切换到“缩放”模式|Ctrl+G，Ctrl+Z<br /><br /> **Z**|
 |切换到“平移”模式|Ctrl+G，Ctrl+P<br /><br /> **K**|

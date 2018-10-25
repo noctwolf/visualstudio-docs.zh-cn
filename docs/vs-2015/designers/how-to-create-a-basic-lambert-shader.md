@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8706e596946c7231e501c59536a4d79253c0337f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274334"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929720"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本朗伯着色器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ ms.locfileid: "49274334"
   
 #### <a name="to-create-a-lambert-shader"></a>创建朗伯着色器  
   
-1.  创建要使用的 DGSL 着色器。 若要了解如何向项目添加 DGSL 着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“入门”部分。  
+1. 创建要使用的 DGSL 着色器。 若要了解如何向项目添加 DGSL 着色器，请参阅[着色器设计器](../designers/shader-designer.md)中的“入门”部分。  
   
-2.  从“最终颜色”节点断开“点颜色”节点。 选择“点颜色”节点的“RGB”终端，然后选择“断开链接”。 让“Alpha”终端保持连接状态。  
+2. 从“最终颜色”节点断开“点颜色”节点。 选择“点颜色”节点的“RGB”终端，然后选择“断开链接”。 让“Alpha”终端保持连接状态。  
   
-3.  向关系图添加“朗伯”节点。 在“工具箱”中的“实用工具”下选择“朗伯”，然后将其移到设计图面。 朗伯节点基于环境和漫射照明参数计算像素的总漫射颜色比例。  
+3. 向关系图添加“朗伯”节点。 在“工具箱”中的“实用工具”下选择“朗伯”，然后将其移到设计图面。 朗伯节点基于环境和漫射照明参数计算像素的总漫射颜色比例。  
   
-4.  将“点颜色”节点连接到“朗伯”节点。 在“选择”模式下，将“点颜色”节点的“RGB”终端移到“朗伯”节点的“漫射颜色”终端。 此连接为朗伯节点提供了像素的内插漫射颜色。  
+4. 将“点颜色”节点连接到“朗伯”节点。 在“选择”模式下，将“点颜色”节点的“RGB”终端移到“朗伯”节点的“漫射颜色”终端。 此连接为朗伯节点提供了像素的内插漫射颜色。  
   
-5.  将计算得出的颜色值连接到最终颜色。 将“朗伯”节点的“输出”终端移到“最终颜色”节点的“RGB”终端。  
+5. 将计算得出的颜色值连接到最终颜色。 将“朗伯”节点的“输出”终端移到“最终颜色”节点的“RGB”终端。  
   
- 下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
+   下图显示了已完成的着色器关系图和应用于茶壶体的着色器预览。  
   
 > [!NOTE]
 >  为了更好地演示该图着色器的效果，使用着色器的 **MaterialDiffuse** 参数指定了橙色。 游戏或应用可使用此参数为每个对象提供唯一的颜色值。 有关材质参数的信息，请参阅[着色器设计器](../designers/shader-designer.md)中的“预览着色器”部分。  

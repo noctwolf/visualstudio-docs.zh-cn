@@ -15,12 +15,12 @@ ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bb8b7ebc9cb5f0b1f6b2f2b313fa42418105ceec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9adeb87fe7830854ba2f7823ebb24605e072d10e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294029"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907698"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧版语言服务模型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49294029"
 ## <a name="a-minimal-language-service"></a>最小语言服务  
  最基本的语言服务包含以下两个对象：  
   
--   *语言服务*实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口。 语言服务包含的语言，包括其名称、 文件扩展名，代码窗口管理器中和着色器有关的信息。  
+- *语言服务*实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口。 语言服务包含的语言，包括其名称、 文件扩展名，代码窗口管理器中和着色器有关的信息。  
   
--   *Colorizer*实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>接口。  
+- *Colorizer*实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>接口。  
   
- 以下概念图显示了一个模型的基本语言服务。  
+  以下概念图显示了一个模型的基本语言服务。  
   
- ![语言服务模型图](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
-基本语言服务模型  
+  ![语言服务模型图](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+  基本语言服务模型  
   
- 文档窗口承载*文档视图*编辑器中，在此情况下的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心编辑器。 文档视图和文本缓冲区拥有通过在编辑器中。 这些对象使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过专用的文档窗口称为*代码窗口*。 中包含代码窗口<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>对象是创建和控制的 IDE。  
+  文档窗口承载*文档视图*编辑器中，在此情况下的[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]核心编辑器。 文档视图和文本缓冲区拥有通过在编辑器中。 这些对象使用[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]通过专用的文档窗口称为*代码窗口*。 中包含代码窗口<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>对象是创建和控制的 IDE。  
   
- 加载给定扩展名的文件时，编辑器查找与该扩展插件关联的语言服务并将传递给它的代码窗口通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>方法。 此语言服务将返回*代码窗口管理器*，它可以实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>接口。  
+  加载给定扩展名的文件时，编辑器查找与该扩展插件关联的语言服务并将传递给它的代码窗口通过调用<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>方法。 此语言服务将返回*代码窗口管理器*，它可以实现<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>接口。  
   
- 下表概述了在模型中的对象。  
+  下表概述了在模型中的对象。  
   
 |组件|对象|函数|  
 |---------------|------------|--------------|  

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ed7c1ec10b6cc6b2eac450ea33beceaaf58bc06
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2149410782587d8472faff678cbc20bf1ea577c1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029116"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878370"
 ---
 # <a name="image-editor"></a>图像编辑器
 
@@ -30,7 +30,7 @@ ms.locfileid: "47029116"
 图像编辑器支持以下图像格式：
 
 |格式名称|文件扩展名|
-|-----------------|-------------------------|
+|-----------------| - |
 |可迁移网络图形|.png|
 |JPEG|.jpg、.jpeg、.jpe、.jfif|
 |Direct Draw Surface|.dds|
@@ -245,7 +245,7 @@ DirectDraw Surface (.dds) 等部分图像格式支持透明度效果。 使用�
 ## <a name="keyboard-shortcuts"></a>键盘快捷键
 
 |命令|键盘快捷键|
-|-------------|------------------------|
+|-------------| - |
 |切换到“选择”模式|**S**|
 |切换到“缩放”模式|**Z**|
 |切换到“平移”模式|**K**|

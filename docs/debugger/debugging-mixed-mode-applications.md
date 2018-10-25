@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 795b1bf9f2c3d2014e1fa2c4ccd25254a07a70a8
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f06a1da269fec2cf1966b17b9497e840808b6c73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887606"
 ---
 # <a name="debugging-mixed-mode-applications"></a>调试混合模式应用程序
 混合模式应用程序是任何组合了本机代码 (C++) 与托管代码（在公共语言运行时上运行的 Visual Basic、Visual C# 或 C++）的应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试混合模式应用程序基本上是透明的；它与调试单模式应用程序没有太大区别。 但有几个特殊的注意事项。  
@@ -48,13 +48,13 @@ ms.locfileid: "44283303"
   
 #### <a name="to-turn-off-property-evaluation"></a>关闭属性求值  
   
-1.  在 **“工具”** 菜单上，选择 **“选项”**。  
+1. 在 **“工具”** 菜单上，选择 **“选项”**。  
   
-2.  在中**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
+2. 在中**选项**对话框中，打开**调试**文件夹，然后选择**常规**类别。  
   
-3.  清除**启用属性求值和其他隐式函数调用**复选框。  
+3. 清除**启用属性求值和其他隐式函数调用**复选框。  
   
- 由于本机调用堆栈和托管调用堆栈不同，因此调试器不能总是为混合代码提供完整的调用堆栈。 当本机代码调用托管代码时，你可能会注意到某些差异。 有关详细信息，请参阅[混合代码与在调用堆栈窗口中缺少信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
+   由于本机调用堆栈和托管调用堆栈不同，因此调试器不能总是为混合代码提供完整的调用堆栈。 当本机代码调用托管代码时，你可能会注意到某些差异。 有关详细信息，请参阅[混合代码与在调用堆栈窗口中缺少信息](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试托管代码](../debugger/debugging-managed-code.md)

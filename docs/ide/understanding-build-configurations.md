@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cb699b02723e88454f26f4b897cfd7ba3ff46592
-ms.sourcegitcommit: a8e01952be5a539104e2c599e9b8945322118055
+ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32425120"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901185"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 
@@ -51,7 +51,7 @@ ms.locfileid: "32425120"
 
 > [!NOTE]
 > 在定义新的解决方案配置并选中“创建新的项目配置”复选框后，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动将新的配置分配给所有项目。 同样，在定义新的解决方案平台并选中“创建新的项目平台”复选框后，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 也会自动将新的平台分配给所有项目。 此外，如果您添加一个面向新平台的项目，则 Visual Studio 会将该平台添加到解决方案平台列表中并将其分配给所有项目。
->
+> 
 > 您仍可以修改每个项目的设置。
 
 活动解决方案配置还为 IDE 提供了上下文。 例如，如果处理的是项目，并且配置指定将针对移动设备生成，那么“工具箱”只会显示可在移动设备项目中使用的项。

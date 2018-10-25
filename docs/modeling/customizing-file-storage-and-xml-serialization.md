@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dbac1e67e5b23f277d2698c0cb1a959918c32372
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8a21067eab6e55f3fb031e57fa2257b0d40a7eb6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886456"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
@@ -301,7 +301,7 @@ ms.locfileid: "47860493"
 源类节点下可找到角色数据节点。
 
 |属性|描述|
-|--------------|-----------------|
+|-|-|
 |具有自定义名字对象|设置为 true，如果你想要提供自己的代码生成和解决遍历此关系的名字对象。<br /><br /> 有关详细说明，生成解决方案，，然后双击错误消息。|
 |域关系|指定这些选项适用的关系。 只读。|
 |省略元素|如果为 true，该架构中省略对应于源角色的 XML 节点。<br /><br /> 如果源和目标类之间存在多个关系，此角色节点可区分属于两个关系的链接。 因此，我们建议，不设置此选项在这种情况下。|

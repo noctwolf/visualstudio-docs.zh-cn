@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 477c3103ce3d0da27ee0f149065a1d58eca21a01
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38ed3c8396457f66fe40148216587b750c493190
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301127"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827020"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ VSPerfCmd.exe 的“GlobalOff” 和“GlobalOn”选项暂停和继续命令行
   
  “GlobalOff”和“GlobalOn”选项还会影响探查器的 API 函数所操作的全局启动/停止计数。  
   
--   “GlobalOff”将全局启动/停止计数立即设置为 0，从而暂停分析。  
+- “GlobalOff”将全局启动/停止计数立即设置为 0，从而暂停分析。  
   
--   “GlobalOn”将全局启动/停止计数立即设置为 1，从而继续分析。  
+- “GlobalOn”将全局启动/停止计数立即设置为 1，从而继续分析。  
   
- 有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
+  有关更多信息，请参阅[分析工具 API](../profiling/profiling-tools-apis.md)。  
   
 ## <a name="syntax"></a>语法  
   

@@ -1,5 +1,5 @@
 ---
-title: BP_COND_STYLE |Microsoft 文档
+title: BP_COND_STYLE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64c3ac876f0d7be8582ca8162fd93c83cb6d343e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 8ff46d6cae842d258aab8fb03409ff263670c410
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939763"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
-指定的断点条件样式挂起和绑定断点。  
+指定断点条件的样式的挂起和绑定断点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,13 +46,13 @@ public enum enum_BP_COND_STYLE {
   
 ## <a name="members"></a>成员  
  BP_COND_NONE  
- 在到达该断点的位置时，将引发断点。 指定任何断点条件。  
+ 到达断点的位置时，会触发断点。 没有指定断点条件。  
   
  BP_COND_WHEN_TRUE  
- 触发断点的条件表达式时与断点关联的计算结果为仅`true`。  
+ 仅在条件表达式时与断点关联的计算结果为触发断点`true`。  
   
  BP_COND_WHEN_CHANGED  
- 已从其以前的评估更改断点仅在与断点关联的条件表达式的值时激发。  
+ 触发断点仅在与断点关联的条件表达式的值时已从其以前的评估。  
   
 ## <a name="remarks"></a>备注  
  用于`styleCondition`的成员[BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)结构。  
@@ -64,6 +64,6 @@ public enum enum_BP_COND_STYLE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

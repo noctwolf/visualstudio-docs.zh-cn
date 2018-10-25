@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8de1d8777f7f4b232ed4dcc2dabe69e0c1712fdf
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 7e87b1a71cde4d6fb37e05fa99698b636ff87bf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321237"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49876719"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但它不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。
@@ -56,7 +56,7 @@ ms.locfileid: "44321237"
  若要在命令提示符处运行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，请将项目文件随相应的命令行选项一起传递到 MSBuild.exe。 命令行选项允许你设置属性、执行特定的目标，以及设置可控制生成过程的其他选项。 例如，使用以下命令行语法生成文件 MyProj.proj，并将 `Configuration` 属性设置为 `Debug`。
 
 ```cmd
-MSBuild.exe MyProj.proj /property:Configuration=Debug
+MSBuild.exe MyProj.proj -property:Configuration=Debug
 ```
 
  有关 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 命令行选项的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。
@@ -170,19 +170,19 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 
 ## <a name="see-also"></a>请参阅
 
-|标题|描述|
-|-----------|-----------------|
-|[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|演示如何只使用文本编辑器以增量方式创建基本项目文件。|
-|[演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。|
-|[MSBuild 概念](../msbuild/msbuild-concepts.md)|演示 MSBuild 的四个生成块：属性、项、目标和任务。|
-|[项](../msbuild/msbuild-items.md)|介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。|
-|[MSBuild 属性](../msbuild/msbuild-properties.md)|介绍属性和属性集合。 属性是可用于配置生成的键/值对。|
-|[目标](../msbuild/msbuild-targets.md)|介绍如何按特定的顺序将任务组合到一起，并允许从命令行调用生成过程的各个部分。|
-|[任务](../msbuild/msbuild-tasks.md)|演示如何创建 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可用于执行原子生成操作的可执行代码单元。|
-|[条件](../msbuild/msbuild-conditions.md)|论述如何在 MSBuild 元素中使用 `Condition` 特性。|
-|[高级概念](../msbuild/msbuild-advanced-concepts.md)|演示批处理、执行转换、多目标和其他高级技术。|
-|[MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md)|介绍如何记录生成事件、消息和错误。|
-|[其他资源](../msbuild/additional-msbuild-resources.md)|列出社区和支持资源，用于了解有关 MSBuild 的更多信息。|
+| 标题 | 描述 |
+| - | - |
+| [演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | 演示如何只使用文本编辑器以增量方式创建基本项目文件。 |
+| [演练：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md) | 介绍 MSBuild 的构建基块，并演示如何在不关闭 Visual Studio IDE 的情况下编写、操作和调试 MSBuild 项目。 |
+| [MSBuild 概念](../msbuild/msbuild-concepts.md) | 演示 MSBuild 的四个生成块：属性、项、目标和任务。 |
+| [项](../msbuild/msbuild-items.md) | 介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 文件格式背后的常规概念，以及所有这些概念之间的关系。 |
+| [MSBuild 属性](../msbuild/msbuild-properties.md) | 介绍属性和属性集合。 属性是可用于配置生成的键/值对。 |
+| [目标](../msbuild/msbuild-targets.md) | 介绍如何按特定的顺序将任务组合到一起，并允许从命令行调用生成过程的各个部分。 |
+| [任务](../msbuild/msbuild-tasks.md) | 演示如何创建 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可用于执行原子生成操作的可执行代码单元。 |
+| [条件](../msbuild/msbuild-conditions.md) | 论述如何在 MSBuild 元素中使用 `Condition` 特性。 |
+| [高级概念](../msbuild/msbuild-advanced-concepts.md) | 演示批处理、执行转换、多目标和其他高级技术。 |
+| [MSBuild 中的日志记录](../msbuild/logging-in-msbuild.md) | 介绍如何记录生成事件、消息和错误。 |
+| [其他资源](../msbuild/additional-msbuild-resources.md) | 列出社区和支持资源，用于了解有关 MSBuild 的更多信息。 |
 
 ## <a name="reference"></a>参考
  [MSBuild 参考](../msbuild/msbuild-reference.md) 指向包含参考信息的主题的链接。

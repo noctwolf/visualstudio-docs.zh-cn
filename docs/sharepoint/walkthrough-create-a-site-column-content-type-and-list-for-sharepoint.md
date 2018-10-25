@@ -24,29 +24,29 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 1c0359af3d55f6efe26b2ae3bde7bc7726f7d333
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2fb78f5c40a04bb69d2f95d7f872b05e3d501113
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635650"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900119"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练： 为 SharePoint 创建网站栏、 内容类型和列表
   以下过程演示如何创建自定义 SharePoint 站点列，或*字段*— 以及使用的站点列的内容类型。 它还演示如何创建使用新的内容类型的列表。  
   
  本演练包含以下任务：  
   
--   [创建自定义站点列](#BKMK_CreatingCustSiteCols)。  
+- [创建自定义站点列](#BKMK_CreatingCustSiteCols)。  
   
--   [创建自定义内容类型](#BKMK_CreateCustContType)。  
+- [创建自定义内容类型](#BKMK_CreateCustContType)。  
   
--   [创建列表](#BKMK_CreateList)。  
+- [创建列表](#BKMK_CreateList)。  
   
--   [创建列表](#BKMK_CreateList)。  
+- [创建列表](#BKMK_CreateList)。  
   
--   [测试应用程序](#BKMK_TestApp)。  
+- [测试应用程序](#BKMK_TestApp)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  

@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6248b61b2332694151d84bd9f5969ff18587c7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6ac13d8998972ddf60576537f8b0af55d832d820
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817530"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,19 +51,19 @@ ms.locfileid: "49180596"
   
  但是，移除所选书籍项的核心工作仅通过两个语句完成：  
   
--   首先，检索与列表框中当前所选项相关联的书籍元素：  
+- 首先，检索与列表框中当前所选项相关联的书籍元素：  
   
-    ```  
-    XElement selBook = (XElement)lbBooks.SelectedItem;   
-    ```  
+  ```  
+  XElement selBook = (XElement)lbBooks.SelectedItem;   
+  ```  
   
--   然后，从数据提供程序中删除此元素：  
+- 然后，从数据提供程序中删除此元素：  
   
-    ```  
-    selBook.Remove();  
-    ```  
+  ```  
+  selBook.Remove();  
+  ```  
   
- 此外，动态数据绑定将确保自动更新程序的 UI。  
+  此外，动态数据绑定将确保自动更新程序的 UI。  
   
 ## <a name="example"></a>示例  
   

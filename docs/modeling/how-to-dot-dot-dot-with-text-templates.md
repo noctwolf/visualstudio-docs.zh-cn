@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4564772fd118e3928f6e8a091c1066e2e8e92534
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 20dbc5223ddb053355fa5e8076ae66badee688a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859882"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883064"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 在 Visual Studio 中的文本模板提供任何类型的生成文本的有用的方法。 可以使用文本模板生成文本，在你的应用程序的一部分运行时和在设计时生成的某些项目代码。 本主题总结了最常要求"如何实现...？" 问题。
@@ -35,7 +35,7 @@ ms.locfileid: "47859882"
 
 -   将运行时文本模板添加到你的项目。 此模板创建在代码中，可以实例化和用于生成文本的类。 在构造函数参数，可以将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
--   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写一个 Visual Studio 扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅<xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
+-   如果你想要从仅在运行时提供的模板生成，可以使用标准文本模板。 如果你正在编写一个 Visual Studio 扩展，可以调用文本模板化服务。 有关详细信息，请参阅[VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 。
 
      使用\<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅[T4 参数指令](../modeling/t4-parameter-directive.md)。
 
@@ -49,21 +49,21 @@ ms.locfileid: "47859882"
 ### <a name="invoke-methods-from-a-template"></a>调用模板中的方法
  如果方法中已存在，例如，标准[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]类：
 
--   使用\<#@assembly#> 指令来加载该程序集，并使用\<#@import#> 若要设置的命名空间上下文。 有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。
+- 使用\<#@assembly#> 指令来加载该程序集，并使用\<#@import#> 若要设置的命名空间上下文。 有关详细信息，请参阅[T4 导入指令](../modeling/t4-import-directive.md)。
 
-     如果您经常使用一组相同的程序集并导入指令，应考虑编写指令处理器。 在每个模板，可以调用指令处理器，它可以加载这些程序集和模型文件和设置的命名空间上下文。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
+   如果您经常使用一组相同的程序集并导入指令，应考虑编写指令处理器。 在每个模板，可以调用指令处理器，它可以加载这些程序集和模型文件和设置的命名空间上下文。 有关详细信息，请参阅[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
 
- 如果你要自行编写方法：
+  如果你要自行编写方法：
 
--   如果你正在编写运行时文本模板，编写一个具有与运行时文本模板相同的名称的分部类定义。 添加到此类的其他方法。
+- 如果你正在编写运行时文本模板，编写一个具有与运行时文本模板相同的名称的分部类定义。 添加到此类的其他方法。
 
--   编写类功能控制块`<#+ ... #>`在方法、 属性和私有类可以声明的其中。 编译时文本模板，它将转换为一个类。 标准控制块`<#...#>`和文本转换为单个的方法和类功能块插入作为单独的成员。 有关详细信息，请参阅[文本模板控制块](../modeling/text-template-control-blocks.md)。
+- 编写类功能控制块`<#+ ... #>`在方法、 属性和私有类可以声明的其中。 编译时文本模板，它将转换为一个类。 标准控制块`<#...#>`和文本转换为单个的方法和类功能块插入作为单独的成员。 有关详细信息，请参阅[文本模板控制块](../modeling/text-template-control-blocks.md)。
 
-     定义为类功能还可以包含嵌入的文本块的方法。
+   定义为类功能还可以包含嵌入的文本块的方法。
 
-     请考虑将类功能放在单独的文件，您可以`<#@include#>`到一个或多个模板文件。
+   请考虑将类功能放在单独的文件，您可以`<#@include#>`到一个或多个模板文件。
 
--   在单独的程序集 （类库） 中编写方法，并从你的模板调用它们。 使用`<#@assembly#>`加载的程序集的指令和`<#@import#>`设置命名空间上下文。 请注意，以便在调试时，重新生成程序集，您可能需要停止并重新启动 Visual Studio。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。
+- 在单独的程序集 （类库） 中编写方法，并从你的模板调用它们。 使用`<#@assembly#>`加载的程序集的指令和`<#@import#>`设置命名空间上下文。 请注意，以便在调试时，重新生成程序集，您可能需要停止并重新启动 Visual Studio。 有关详细信息，请参阅[T4 文本模板指令](../modeling/t4-text-template-directives.md)。
 
 ### <a name="generate-many-files-from-one-model-schema"></a>从一个模型架构生成多个文件
  如果您经常从具有相同的 XML 或数据库架构的模型生成文件：
@@ -91,7 +91,6 @@ ms.locfileid: "47859882"
 #>
 
 Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
-
 ```
 
 ### <a name="execute-text-templates-in-the-build-process"></a>在生成过程中执行文本模板

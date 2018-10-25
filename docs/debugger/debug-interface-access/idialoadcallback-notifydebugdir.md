@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifydebugdir |Microsoft 文档'
+title: 'Idialoadcallback:: Notifydebugdir |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 46621c667967f0b87d197839012e830207cc306a
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: cdceb0f1f07a3ef9d22dbd30a02b2558c4d81603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462556"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950870"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
-当在.exe 文件中找到一个调试目录时调用。  
+当在.exe 文件中发现的调试目录时调用。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,23 +36,23 @@ HRESULT NotifyDebugDir (
   
 #### <a name="parameters"></a>参数  
  `fExecutable`  
- [in]`TRUE`如果的调试目录读取从可执行文件 （而不是.dbg 文件）。  
+ [in]`TRUE`如果从可执行文件 （而非.dbg 文件） 中读取的调试目录。  
   
  `cbData`  
- [in]调试目录中的数据的字节数。  
+ [in]中的调试目录数据的字节数。  
   
  `data[]`  
- [in]使用的调试目录填充数组。  
+ [in]使用的调试目录填充的数组。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 通常忽略返回代码。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回代码通常被忽略。  
   
 ## <a name="remarks"></a>备注  
- [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法调用此回调，在处理的可执行文件时找到的调试目录时。  
+ [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法处理的可执行文件时找到调试目录时将调用此回调。  
   
- 此方法中删除客户端进行反向工程的可执行文件和/或调试文件需要支持以外的.pdb 文件中找到的调试信息。 借助此数据，客户端可以识别的调试信息可用类型和它位于可执行文件或.dbg 文件。  
+ 此方法删除客户端进行反向工程，可执行文件和/或调试文件需要支持以外的.pdb 文件中找到的调试信息。 使用此数据，客户端可以识别可用的调试信息的类型和它位于可执行文件或.dbg 文件。  
   
- 大多数客户端不需要此回调，因为`IDiaDataSource::loadDataForExe`方法以透明方式打开时提供符号所需的.pdb 和.dbg 文件。  
+ 大多数客户端不需要此回调，因为`IDiaDataSource::loadDataForExe`方法以透明方式打开时需提供符号的.pdb 和.dbg 文件。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)   

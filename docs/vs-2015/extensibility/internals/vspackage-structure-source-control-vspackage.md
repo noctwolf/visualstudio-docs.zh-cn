@@ -16,12 +16,12 @@ ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 592f24a4fc4100f7c716c7fbec0c300c0adec906
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 63c1eae7d53050f1763ba868d8d545ab7f326a34
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906918"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 结构（源代码管理 VSPackage）
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ ms.locfileid: "49305027"
   
  VSPackage 语义包括：  
   
--   由于正在 VSPackage 实现的接口 (`IVsPackage`接口)  
+- 由于正在 VSPackage 实现的接口 (`IVsPackage`接口)  
   
--   UI 命令实现 (.vsct 文件和实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口)  
+- UI 命令实现 (.vsct 文件和实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>接口)  
   
--   使用 VSPackage 注册[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
+- 使用 VSPackage 注册[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]。  
   
- 源代码管理 VSPackage 必须与通信这些其他[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]实体：  
+  源代码管理 VSPackage 必须与通信这些其他[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]实体：  
   
--   项目  
+- 项目  
   
--   编辑器  
+- 编辑器  
   
--   解决方案  
+- 解决方案  
   
--   Windows  
+- Windows  
   
--   运行文档表  
+- 运行文档表  
   
 ### <a name="visual-studio-environment-services-that-may-be-consumed"></a>可能使用的 visual Studio 环境服务  
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>  

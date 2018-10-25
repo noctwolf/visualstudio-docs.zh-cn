@@ -23,12 +23,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: 58a7c92cab0f7bbf410d28cc1bc86dd6ce4f13df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8cf7a6db209bb6bbed1d8044bbdc3ed106e64836
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231516"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948936"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>ClickOnce 部署中的服务器和客户端配置问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "49231516"
   
  某些 Web 服务器可能会阻止具有.dll、.config 中和.mdf 等扩展名的文件。 基于 Windows 的应用程序通常包括具有这些扩展名的一些文件。 如果用户尝试运行[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]访问 Web 服务器上被阻止的文件的应用程序，将导致错误。 而不是取消阻止所有文件扩展名，[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]默认情况下发布".deploy"文件扩展名为每个应用程序文件。 因此，管理员只需将 Web 服务器配置为允许以下三个文件扩展名：  
   
--   .application  
+- .application  
   
--   .manifest  
+- .manifest  
   
--   .deploy  
+- .deploy  
   
- 但是，可以禁用此选项通过清除**使用".deploy"文件扩展名**选项卡上[Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在这种情况下必须配置 Web 服务器以允许所有文件扩展名在应用程序中使用。  
+  但是，可以禁用此选项通过清除**使用".deploy"文件扩展名**选项卡上[Publish Options Dialog Box](http://msdn.microsoft.com/en-us/fd9baa1b-7311-4f9e-8ffb-ae50cf110592)，在这种情况下必须配置 Web 服务器以允许所有文件扩展名在应用程序中使用。  
   
- 你将需要配置.manifest、.application 和.deploy，例如，如果使用不具有安装的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或者如果正在使用另一台 Web 服务器 (例如 Apache)。  
+  你将需要配置.manifest、.application 和.deploy，例如，如果使用不具有安装的 IIS [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，或者如果正在使用另一台 Web 服务器 (例如 Apache)。  
   
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce 和安全套接字层 (SSL)  
  一个[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序可以正常工作通过 SSL，除 Internet Explorer 时引发的 SSL 证书相关提示。 错误的证书，如当站点名称不匹配或证书已过期时，可以引发提示。 若要使[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]工作通过 SSL 连接，请确保该证书是最新的并且证书数据与匹配的站点数据。  
@@ -122,11 +122,11 @@ ms.locfileid: "49231516"
   
  如果部署使用 IIS 服务器，运行 inetmgr.exe 并添加新的默认 Web 页的文件类型：  
   
--   有关.application 和.manifest 扩展中，MIME 类型应为"应用程序/x 的 ms-应用程序。" 对于其他文件类型，MIME 类型应为"应用程序/八进制流。"  
+- 有关.application 和.manifest 扩展中，MIME 类型应为"应用程序/x 的 ms-应用程序。" 对于其他文件类型，MIME 类型应为"应用程序/八进制流。"  
   
--   如果使用扩展创建 MIME 类型"*"和"应用程序/八进制流"的 MIME 类型，它将允许阻止的文件类型，要下载的文件。 （但是，阻止不能下载类型，例如.aspx 和.asmx 文件）。  
+- 如果使用扩展创建 MIME 类型"*"和"应用程序/八进制流"的 MIME 类型，它将允许阻止的文件类型，要下载的文件。 （但是，阻止不能下载类型，例如.aspx 和.asmx 文件）。  
   
- Windows Server 上配置 MIME 类型的具体说明，请参阅 Microsoft 知识库文章 KB326965，"IIS 6.0 不提供未知 MIME 类型"网址[ http://support.microsoft.com/default.aspx?scid=kb; en-我们; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
+  Windows Server 上配置 MIME 类型的具体说明，请参阅 Microsoft 知识库文章 KB326965，"IIS 6.0 不提供未知 MIME 类型"网址[ http://support.microsoft.com/default.aspx?scid=kb; en-我们; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965)。  
   
 ## <a name="content-type-mappings"></a>内容类型映射  
  .Application 文件的内容类型 （也称为 MIME 类型） 在通过 HTTP 发布时，应为"应用程序/x 的 ms-应用程序。" 如果您有[!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)]安装在服务器上，这会为你自动设置。 如果未安装，则您需要创建 MIME 类型关联的[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序虚拟根 （或整个服务器）。  

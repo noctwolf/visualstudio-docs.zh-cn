@@ -16,21 +16,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5a86fa111af041e601dbc16ee5f1f6da1c54fba
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 1a6912f1b3877eadf6739d696f01d0f391a97b30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34447812"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892709"
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：更改编辑器中的字体和颜色
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：
 
--   “字体”和“大小”设置适用于所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器中的所有文本元素。
+- “字体”和“大小”设置适用于所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器中的所有文本元素。
 
--   固定宽度字体的名称以粗体列出。
+- 固定宽度字体的名称以粗体列出。
 
--   可以为每种文本元素类型设置“项前景”、“项背景”和“粗体”选项。 例如，如果更改“注释”和“书签”的颜色，并为它们选择“粗体”，其他类型的文本元素不会受影响。
+- 可以为每种文本元素类型设置“项前景”、“项背景”和“粗体”选项。 例如，如果更改“注释”和“书签”的颜色，并为它们选择“粗体”，其他类型的文本元素不会受影响。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能与“帮助”中的描述不同，具体取决于现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。

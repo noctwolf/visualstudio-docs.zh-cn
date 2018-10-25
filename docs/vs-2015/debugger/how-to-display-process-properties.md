@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6816aed50bd7d03338508856472f893b441842e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3a9c5f368cef94bdc270d678a25f0ec0d94052b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49296060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912872"
 ---
 # <a name="how-to-display-process-properties"></a>如何：显示进程属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "49296060"
   
 ### <a name="to-open-a-process-properties-dialog-box"></a>若要打开进程属性对话框  
   
-1.  从显示在树中选择一个进程**进程视图**。  
+1. 从显示在树中选择一个进程**进程视图**。  
   
-2.  从**视图**菜单中，选择**属性**。  
+2. 从**视图**菜单中，选择**属性**。  
   
- 属性对话框不是模式，因此你可以单击视图窗口中的另一个项，对话框中将所选项目上显示的信息。
+   属性对话框不是模式，因此你可以单击视图窗口中的另一个项，对话框中将所选项目上显示的信息。
 
 
 

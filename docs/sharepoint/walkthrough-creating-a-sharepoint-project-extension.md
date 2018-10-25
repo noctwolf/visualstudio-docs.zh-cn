@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b8620a51480868302fc840bffea5bbdb427c48f5
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 44bafccdb3c99032678a808ba3f82f9f14558b3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893424"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练： 创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目扩展。 项目扩展可用于对等添加、 删除或重命名项目时的项目级事件做出响应。 此外可以添加自定义属性或属性值发生更改时进行响应。 与项目项扩展不同项目扩展将不能为与特定的 SharePoint 项目类型关联。 该扩展时创建的项目扩展，请加载任何类型的 SharePoint 项目中打开时[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
@@ -53,11 +53,11 @@ ms.locfileid: "42635611"
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，必须创建两个项目：  
   
--   若要创建要部署项目扩展的 VSIX 包一个 VSIX 项目。  
+- 若要创建要部署项目扩展的 VSIX 包一个 VSIX 项目。  
   
--   一个用于实现项目扩展的库项目。  
+- 一个用于实现项目扩展的库项目。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   

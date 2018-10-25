@@ -20,12 +20,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bbe14f4eec069b7a7a65beb8c5ff2e2085b17e11
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 37876502a464e263ebd6803216b29bd62b65af5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274607"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890174"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>演练：创建 N 层数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,25 +39,25 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
   
  在本演练中，你将执行以下步骤：  
   
--   新建将包含多个项目的 N 层解决方案。  
+- 新建将包含多个项目的 N 层解决方案。  
   
--   将两个类库项目添加到 N 层解决方案中。  
+- 将两个类库项目添加到 N 层解决方案中。  
   
--   使用创建类型化数据集**数据源配置向导**。  
+- 使用创建类型化数据集**数据源配置向导**。  
   
--   将生成[Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和数据集代码分离到相互独立的项目。  
+- 将生成[Tableadapter](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)和数据集代码分离到相互独立的项目。  
   
--   创建 Windows Communication Foundation (WCF) 服务以调入数据访问层。  
+- 创建 Windows Communication Foundation (WCF) 服务以调入数据访问层。  
   
--   在服务中创建函数以从数据访问层检索数据。  
+- 在服务中创建函数以从数据访问层检索数据。  
   
--   创建 Windows 窗体应用程序来充当表示层。  
+- 创建 Windows 窗体应用程序来充当表示层。  
   
--   创建绑定到数据源的 Windows 窗体控件。  
+- 创建绑定到数据源的 Windows 窗体控件。  
   
--   编写代码以填充数据表。  
+- 编写代码以填充数据表。  
   
- ![视频链接](../data-tools/media/playvideo.gif "播放视频")本主题的视频版本，请参阅[视频帮助： 创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。  
+  ![视频链接](../data-tools/media/playvideo.gif "播放视频")本主题的视频版本，请参阅[视频帮助： 创建 N 层数据应用程序](http://go.microsoft.com/fwlink/?LinkId=115188)。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要完成本演练，你需要：  
@@ -144,17 +144,17 @@ N-层 * 数据应用程序是应用程序访问数据且分为多个逻辑层，
   
 #### <a name="to-separate-the-tableadapters-from-the-dataset"></a>将 TableAdapter 与数据集分离  
   
-1.  双击**NorthwindDataSet.xsd**中**解决方案资源管理器**以打开中的数据集**数据集设计器**。  
+1. 双击**NorthwindDataSet.xsd**中**解决方案资源管理器**以打开中的数据集**数据集设计器**。  
   
-2.  单击设计器上的空白区域。  
+2. 单击设计器上的空白区域。  
   
-3.  找到**数据集项目**中的节点**属性**窗口。  
+3. 找到**数据集项目**中的节点**属性**窗口。  
   
-4.  在中**数据集项目**列表中，单击**DataEntityTier**。  
+4. 在中**数据集项目**列表中，单击**DataEntityTier**。  
   
-5.  在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
+5. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。  
   
- 将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (DataAccessTier) 现在只包含 TableAdapter。 中指定的项目**数据集项目**属性 (DataEntityTier) 包含类型化数据集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
+   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (DataAccessTier) 现在只包含 TableAdapter。 中指定的项目**数据集项目**属性 (DataEntityTier) 包含类型化数据集： NorthwindDataSet.Dataset.Designer.vb （或 NorthwindDataSet.Dataset.Designer.cs）。  
   
 > [!NOTE]
 >  当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 你必须手动将它们移到数据集项目中。  

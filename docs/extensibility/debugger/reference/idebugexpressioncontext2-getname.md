@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext2::GetName |Microsoft 文档
+title: IDebugExpressionContext2::GetName |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84ac767c8e2cd53045dec9921f6d90300f1a87e0
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5664710d69b8c6d7af315de600fd1fcd27a2b36d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111171"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873521"
 ---
 # <a name="idebugexpressioncontext2getname"></a>IDebugExpressionContext2::GetName
 检索评估上下文的名称。  
@@ -41,17 +41,17 @@ int GetName(
   
 #### <a name="parameters"></a>参数  
  `pbstrName`  
- [out]返回评估上下文的名称。  
+ [out]返回计算上下文的名称。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 名称是此评估上下文的描述。 它通常是可以通过将引用此精确评估上下文的表达式计算器分析的内容。 例如，在 c + + 名称是，如下所示：  
+ 名称是此计算上下文的描述。 它通常是指可以通过将引用此确切评估上下文的表达式计算器分析。 例如，在 c + + 名称如下所示：  
   
 ```  
 "{ function-name, source-file-name, module-file-name }"  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)

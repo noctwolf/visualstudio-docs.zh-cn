@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e2339dcfe80e994b8bc9062d137263d3b25d274d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: d5c479251b7002e506f1dff5e64a028875aa8f80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542411"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882661"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>先来看一下 Visual Studio 调试器
 
@@ -188,7 +188,7 @@ F10 使调试器，而无需单步执行函数或方法在应用代码 （仍执
 
 异常帮助器是一项强大功能可帮助你调试错误。 此外可以执行诸如查看错误详细信息，并从异常帮助程序添加监视。 或者，如果需要可以更改引发特定异常的条件。
 
->  [!NOTE]
+> [!NOTE]
 > 异常帮助器将替换中的助手异常[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
 展开**异常设置**节点以查看更多选项如何处理此异常类型，但你无需更改此教程中的任何内容 ！

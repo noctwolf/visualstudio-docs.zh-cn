@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd1ddaff24cbceb73af3982cc7be3e9f09d351c2
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: b7f7d52ad8dc75f8e8bd313794b44c231522cde7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499947"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829932"
 ---
 # <a name="how-to-update-the-status-bar"></a>如何： 更新状态栏
 **状态栏**控件条位于底部的多个应用程序窗口，其中包含一个或多个状态文本行或指示器。  
@@ -35,19 +35,19 @@ ms.locfileid: "39499947"
 ## <a name="robust-programming"></a>可靠编程  
  一个**状态栏**包含四个单独的字段：  
   
--   状态文本  
+- 状态文本  
   
--   进度栏  
+- 进度栏  
   
--   动画的图标  
+- 动画的图标  
   
--   编辑器的信息  
+- 编辑器的信息  
   
- 有关详细信息，请参阅[状态栏](/cpp/mfc/status-bars)。  
+  有关详细信息，请参阅[状态栏](/cpp/mfc/status-bars)。  
   
- IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。  
+  IDE 将自动调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A>方法在<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>文档窗口被激活时实现。  
   
- VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。  
+  VSPackage 实现器负责更新状态栏中的状态文本。 IDE 重置此字符串为"就绪"，如果 status 文本字段设置为空文本 ("") 在空闲时间。  
   
 ## <a name="see-also"></a>请参阅  
  [状态栏](/cpp/mfc/status-bars)

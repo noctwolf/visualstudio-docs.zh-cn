@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e7820723c88fd76639fa47e5c97ad179a208fc18
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 517058c99a6ec5a297b95324decbb2cfcbe04271
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118469"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950753"
 ---
 # <a name="url-picker-dialog-box-sharepoint-development-in-visual-studio"></a>URL 选取器对话框 （Visual Studio 中的 SharePoint 开发）
   在“URL 选取器”对话框中，您可以选择文件，如位于项目中或运行 SharePoint 的本地服务器上的母版页文件或图像文件。  
@@ -36,27 +36,27 @@ ms.locfileid: "37118469"
   
  展开**项目**节点，以在项目中选择文件。 若要在对话框中显示为可选项，你的项目中的文件必须满足以下条件：  
   
--   该文件必须包含在映射的文件夹。  
+- 该文件必须包含在映射的文件夹。  
   
--   该文件必须添加到解决方案包。  
+- 该文件必须添加到解决方案包。  
   
--   文件不能位于另一个项目。  
+- 文件不能位于另一个项目。  
   
- 如果你想要引用未满足这些条件的文件，您必须手动输入文件的路径。  
+  如果你想要引用未满足这些条件的文件，您必须手动输入文件的路径。  
   
- 展开**Server**节点，以选择位于运行 SharePoint 的本地服务器的文件。 若要在对话框中显示为可选项，这些文件必须满足以下条件：  
+  展开**Server**节点，以选择位于运行 SharePoint 的本地服务器的文件。 若要在对话框中显示为可选项，这些文件必须满足以下条件：  
   
--   该文件必须位于以下映射文件夹之一：**映像**，**布局**，或**controltemplates 设置样式**。  
+- 该文件必须位于以下映射文件夹之一：**映像**，**布局**，或**controltemplates 设置样式**。  
   
--   文件不能位于 SharePoint 内容数据库。  
+- 文件不能位于 SharePoint 内容数据库。  
   
- 如果你想要引用未满足这些条件的文件，您必须手动输入文件的路径。  
+  如果你想要引用未满足这些条件的文件，您必须手动输入文件的路径。  
   
- **文件夹的内容**  
- 显示选定文件夹中的文件的列表。 选择一个文件，然后选择**确定**按钮以关闭对话框，并将所选内容发送到调用它的进程。  
+  **文件夹的内容**  
+  显示选定文件夹中的文件的列表。 选择一个文件，然后选择**确定**按钮以关闭对话框，并将所选内容发送到调用它的进程。  
   
- **文件类型**  
- 允许你从适合于正在执行的任务的一组文件中进行选择。  
+  **文件类型**  
+  允许你从适合于正在执行的任务的一组文件中进行选择。  
   
 ## <a name="see-also"></a>请参阅
  [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)   

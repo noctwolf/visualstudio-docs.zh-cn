@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43854b2d0aad0e1466f8d8b6fcb45921999aba5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2b08760e567f6e000e191703695ee0703da7215
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812135"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>如何：导出纹理以用于 Direct2D 或 Javascipt 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,22 +55,22 @@ ms.locfileid: "49186285"
   
 #### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>创建与 Direct2D 呈现约定相兼容的纹理  
   
-1.  从基本纹理开始。 加载现有映像，或如[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)中所述，创建一个新纹理。 若要支持 .dds 格式的块压缩，请指定宽度和高度为 4 的倍数（例如，100x100、128x128 或 256x192）的纹理。 由于不支持 mipmapping，因此纹理无需为正方形，并且大小无需为 2 的幂。  
+1. 从基本纹理开始。 加载现有映像，或如[如何：创建基本纹理](../designers/how-to-create-a-basic-texture.md)中所述，创建一个新纹理。 若要支持 .dds 格式的块压缩，请指定宽度和高度为 4 的倍数（例如，100x100、128x128 或 256x192）的纹理。 由于不支持 mipmapping，因此纹理无需为正方形，并且大小无需为 2 的幂。  
   
-2.  配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开刚刚创建的纹理文件的快捷菜单，然后选择“属性”。 在“配置属性”，常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。  
+2. 配置纹理文件，使其由图像内容管道进行处理。 在“解决方案资源管理器”中，打开刚刚创建的纹理文件的快捷菜单，然后选择“属性”。 在“配置属性”，常规”页上，将“项目类型”属性设置为“图像内容管道”。 请确保将“内容”属性设置为“是”，并且将“从生成中排除”设置为“否”，然后选择“应用”按钮。 将出现“图像内容管道”配置属性页。  
   
-3.  将输出格式设置为块压缩的格式之一。 在“配置属性”、“图像内容管道”、“常规”页上，将“压缩”属性设置为“BC3_UNORM 压缩(/compress:BC3_UNORM)”。 根据具体需求，还可以选择任何其他的 BC1、BC2 或 BC3 格式。 Direct2D 当前不支持 BC4、BC5、BC6 或 BC7 纹理。 有关不同 BC 格式的详细信息，请参阅 [Block Compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)（块压缩 (Direct3D 10)）。  
+3. 将输出格式设置为块压缩的格式之一。 在“配置属性”、“图像内容管道”、“常规”页上，将“压缩”属性设置为“BC3_UNORM 压缩(/compress:BC3_UNORM)”。 根据具体需求，还可以选择任何其他的 BC1、BC2 或 BC3 格式。 Direct2D 当前不支持 BC4、BC5、BC6 或 BC7 纹理。 有关不同 BC 格式的详细信息，请参阅 [Block Compression (Direct3D 10)](http://msdn.microsoft.com/library/windows/desktop/bb694531.aspx)（块压缩 (Direct3D 10)）。  
   
-    > [!NOTE]
-    >  指定的压缩格式确定图像内容管道生成的文件的格式。 这不同于“图像编辑器”中源映像的“格式”属性，该“格式”属性确定存储在磁盘上时源映像文件的格式 - 即工作格式。 通常情况下，不需要已压缩的工作格式。  
+   > [!NOTE]
+   >  指定的压缩格式确定图像内容管道生成的文件的格式。 这不同于“图像编辑器”中源映像的“格式”属性，该“格式”属性确定存储在磁盘上时源映像文件的格式 - 即工作格式。 通常情况下，不需要已压缩的工作格式。  
   
-4.  配置图像内容管道以生成使用预乘的 Alpha 的输出。 在“配置属性”、“图像内容管道”、“常规”页上，将“转换为预乘 alpha 格式”属性设置为“是(/generatepremultipliedalpha)”。  
+4. 配置图像内容管道以生成使用预乘的 Alpha 的输出。 在“配置属性”、“图像内容管道”、“常规”页上，将“转换为预乘 alpha 格式”属性设置为“是(/generatepremultipliedalpha)”。  
   
-5.  配置图像内容管道，使其不生成 mipmap。 在“配置属性”、“图像内容管道”、“常规”页上，将“生成 Mip”属性设置为“否”。  
+5. 配置图像内容管道，使其不生成 mipmap。 在“配置属性”、“图像内容管道”、“常规”页上，将“生成 Mip”属性设置为“否”。  
   
-6.  选择“确定”  按钮。  
+6. 选择“确定”  按钮。  
   
- 生成项目时，图像内容管道会将源映像从工作格式转换为指定的输出格式（转换包括生成预乘的 Alpha），并且结果将被复制到项目的输出目录。
+   生成项目时，图像内容管道会将源映像从工作格式转换为指定的输出格式（转换包括生成预乘的 Alpha），并且结果将被复制到项目的输出目录。
 
 
 

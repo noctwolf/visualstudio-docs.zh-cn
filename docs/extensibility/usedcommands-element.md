@@ -1,5 +1,5 @@
 ---
-title: UsedCommands 元素 |Microsoft 文档
+title: UsedCommands 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa2dd8bbcfaaa84905f60e2f4ae984f3269c7095
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e707a8336fb5e324c667ae16eceac2c2e9f55654
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934764"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 元素
-UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。  
+UsedCommands 元素进行分组 UsedCommand 元素和其他 UsedCommands 分组。  
   
  UsedCommands 元素是可选的。 如果未调用你的包的外部定义的命令，你无需在.vsct 文件中包含此部分。  
   
@@ -55,7 +55,7 @@ UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。
   
 |元素|描述|  
 |-------------|-----------------|  
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 提供的命令 （例如，菜单项、 菜单、 工具栏和组合框） 到集成的开发环境 (IDE) 的所有元素。|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素表示集成的开发环境 (IDE) 的 VSPackage 提供的命令 （例如，菜单项、 菜单、 工具栏和组合框）。|  
   
 ## <a name="example"></a>示例  
   
@@ -67,6 +67,6 @@ UsedCommands 元素分组 UsedCommand 元素和其他 UsedCommands 分组。
 </UsedCommands>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [UsedCommand 元素](../extensibility/usedcommand-element.md)   
  [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

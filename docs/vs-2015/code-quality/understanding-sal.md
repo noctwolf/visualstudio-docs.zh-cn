@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7551b507a90ffb5bba6a969029e4c53092f3db1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: be3d54921f7bc3a74c858340f28b68b03497939a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874275"
 ---
 # <a name="understanding-sal"></a>了解 SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,11 +51,11 @@ void * memcpy(
   
  文档中包含几位的信息，建议你的代码具有要维护某些属性，以确保程序的正确性：  
   
--   `memcpy` 副本`count`中的字节源缓冲区到目标缓冲区。  
+- `memcpy` 副本`count`中的字节源缓冲区到目标缓冲区。  
   
--   目标缓冲区必须至少与源缓冲区一样大。  
+- 目标缓冲区必须至少与源缓冲区一样大。  
   
- 但是，编译器无法读取的文档或非正式注释。 它不知道两个缓冲区之间不存在关系和`count`，它也不能有效地猜猜有关关系。 SAL 可以提供更多更清晰的属性和函数的实现，如下所示：  
+  但是，编译器无法读取的文档或非正式注释。 它不知道两个缓冲区之间不存在关系和`count`，它也不能有效地猜猜有关关系。 SAL 可以提供更多更清晰的属性和函数的实现，如下所示：  
   
 ```cpp  
   
@@ -117,16 +117,16 @@ wchar_t * wmemcpy(
   
 ##### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>使用 Visual Studio 代码分析工具和 SAL  
   
-1.  在 Visual Studio 中，打开包含 SAL 注释的 c + + 项目。  
+1. 在 Visual Studio 中，打开包含 SAL 注释的 c + + 项目。  
   
-2.  在菜单栏上依次选择**构建**，**对解决方案运行代码分析**。  
+2. 在菜单栏上依次选择**构建**，**对解决方案运行代码分析**。  
   
-     请考虑 _In\_在本部分中的示例。 如果对其运行代码分析，则显示此警告：  
+    请考虑\_在\_在本部分中的示例。 如果对其运行代码分析，则显示此警告：  
   
-    > **C6387 无效的参数值**   
-    > pInt 可能是"0": 这不符合函数 InCallee 的规范。  
+   > **C6387 无效的参数值**   
+   > pInt 可能是"0": 这不符合函数 InCallee 的规范。  
   
-### <a name="example-the-in-annotation"></a>示例： _In\_批注  
+### <a name="example-the-in-annotation"></a>示例：\_在\_批注  
  `_In_`批注指示：  
   
 -   该参数必须是有效，并且不会被修改。  
@@ -164,7 +164,7 @@ void BadInCaller()
   
  如果在此示例中使用 Visual Studio 代码分析，它会验证调用方将非 Null 指针传递给初始化缓冲区`pInt`。 在这种情况下，`pInt`指针不能为 NULL。  
   
-### <a name="example-the-inopt-annotation"></a>示例： _In_opt\_批注  
+### <a name="example-the-inopt-annotation"></a>示例： \_In_opt\_批注  
  `_In_opt_` 等同于`_In_`，只不过允许的输入的参数为 NULL，并且因此，该函数应检查这一点。  
   
 ```cpp  
@@ -192,7 +192,7 @@ void InOptCaller()
   
  Visual Studio 代码分析会验证该函数检查为空，然后才能访问缓冲区。  
   
-### <a name="example-the-out-annotation"></a>示例： _Out\_批注  
+### <a name="example-the-out-annotation"></a>示例：\_出\_批注  
  `_Out_` 支持一种常见的方案，在其中传入指向的元素的缓冲区的非 NULL 指针和函数来初始化元素。 调用方没有调用; 之前将缓冲区初始化被调用的函数有望在返回之前对其进行初始化。  
   
 ```cpp  
@@ -219,7 +219,7 @@ void OutCaller()
   
  Visual Studio 代码分析工具验证调用方将非 NULL 指针传递到的缓冲区`pInt`并在返回之前，将缓冲区初始化函数。  
   
-### <a name="example-the-outopt-annotation"></a>示例： _Out_opt\_批注  
+### <a name="example-the-outopt-annotation"></a>示例： \_Out_opt\_批注  
  `_Out_opt_` 等同于`_Out_`，只不过该参数是否可为 NULL，并且因此，该函数应检查这一点。  
   
 ```cpp  
@@ -247,7 +247,7 @@ void OutOptCaller()
   
  Visual Studio 代码分析验证，此函数会检查是否在之前为空`pInt`被取消引用，并且如果`pInt`不为 NULL，在返回之前，该函数初始化缓冲区。  
   
-### <a name="example-the-inout-annotation"></a>示例： _Inout\_批注  
+### <a name="example-the-inout-annotation"></a>示例： \_Inout\_批注  
  `_Inout_` 用于进行批注可能会更改函数的指针参数。 指针必须指向有效的调用之前已初始化的数据，并且即使更改，仍必须有效的值返回。 批注指定函数可能会随意从读取和写入一个元素缓冲区。 调用方必须提供缓冲区，并对其进行初始化。  
   
 > [!NOTE]
@@ -279,7 +279,7 @@ void BadInOutCaller()
   
  Visual Studio 代码分析验证调用方将非 NULL 指针传递给初始化缓冲区`pInt`，并且，在返回时之前,`pInt`仍非 null 和缓冲区初始化。  
   
-### <a name="example-the-inoutopt-annotation"></a>示例： _Inout_opt\_批注  
+### <a name="example-the-inoutopt-annotation"></a>示例： \_Inout_opt\_批注  
  `_Inout_opt_` 等同于`_Inout_`，只不过允许的输入的参数为 NULL，并且因此，该函数应检查这一点。  
   
 ```cpp  
@@ -309,7 +309,7 @@ void InOutOptCaller()
   
  Visual Studio 代码分析验证，此函数进行 NULL 检查，它将访问缓冲区之前，并且如果`pInt`不为 NULL，在返回之前，该函数初始化缓冲区。  
   
-### <a name="example-the-outptr-annotation"></a>示例： _Outptr\_批注  
+### <a name="example-the-outptr-annotation"></a>示例： \_Outptr\_批注  
  `_Outptr_` 用于批注的目的是要返回的指针参数。  参数本身不应为 NULL，和调用的函数中返回非 NULL 指针，该指针指向已初始化的数据。  
   
 ```cpp  
@@ -340,7 +340,7 @@ void OutPtrCaller()
   
  Visual Studio 代码分析验证调用方传递非空指针`*pInt`，并在返回之前，将缓冲区初始化函数。  
   
-### <a name="example-the-outptropt-annotation"></a>示例： _Outptr_opt\_批注  
+### <a name="example-the-outptropt-annotation"></a>示例： \_Outptr_opt\_批注  
  `_Outptr_opt_` 等同于`_Outptr_`，只不过参数是可选的调用方可以传递给 NULL 指针的参数。  
   
 ```cpp  
@@ -373,7 +373,7 @@ void OutPtrOptCaller()
   
  Visual Studio 代码分析验证此函数检查 null 之前`*pInt`被取消引用，并在返回之前，将缓冲区初始化函数。  
   
-### <a name="example-the-success-annotation-in-combination-with-out"></a>示例： _Success\_结合 _Out 批注\_  
+### <a name="example-the-success-annotation-in-combination-with-out"></a>示例：\_成功\_批注结合\_出\_  
  批注可以应用于大多数对象。  具体而言，你可以批注整个函数。  一个函数的最明显特征之一是它可以成功或失败。 但其大小和缓冲区之间的关联，如 C/c + + 无法表达函数成功还是失败。 通过使用`_Success_`批注，您可以说，函数成功指数。  为参数`_Success_`批注是只是一个表达式，为 true 表示该函数已成功。 表达式可以是任何批注分析器可以处理。 如果此函数成功后该函数将返回, 的批注的效果才适用。 此示例演示如何`_Success_`与交互`_Out_`以执行正确的操作。 可以使用关键字`return`来表示返回值。  
   
 ```cpp  
@@ -403,15 +403,15 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ### <a name="when-do-i-annotate"></a>何时批注?  
  以下是一些准则：  
   
--   批注所有指针参数。  
+- 批注所有指针参数。  
   
--   批注值范围批注，以便代码分析可确保缓冲区和指针安全。  
+- 批注值范围批注，以便代码分析可确保缓冲区和指针安全。  
   
--   锁定规则和锁定的副作用批注。 有关详细信息，请参阅[批注锁定行为](../code-quality/annotating-locking-behavior.md)。  
+- 锁定规则和锁定的副作用批注。 有关详细信息，请参阅[批注锁定行为](../code-quality/annotating-locking-behavior.md)。  
   
--   驱动程序属性和其他特定于域的属性批注。  
+- 驱动程序属性和其他特定于域的属性批注。  
   
- 或者，可以对所有参数，以便在你的意图更明显，使其更方便地进行检查，进行了批注进行都批注。  
+  或者，可以对所有参数，以便在你的意图更明显，使其更方便地进行检查，进行了批注进行都批注。  
   
 ## <a name="related-resources"></a>相关资源  
  [代码分析团队博客](http://go.microsoft.com/fwlink/p/?LinkId=251197)  

@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::EnumProcesses |Microsoft 文档
+title: IDebugPort2::EnumProcesses |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53f66e87ed65a824df600500a82f019c249b8380
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6302bcff27184713af94330a2795fd8f7867a3f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31122345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935206"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
-返回一个端口上运行的所有进程的列表。  
+返回所有端口上运行的进程的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,11 +41,11 @@ int EnumProcesses(
   
 #### <a name="parameters"></a>参数  
  `ppEnum`  
- [out]返回[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)对象，其中包含所有的端口上运行的进程的列表。  
+ [out]返回[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)对象，其中包含的所有端口上运行的进程列表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

@@ -35,12 +35,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 10cd0e1740aa53902d266ed0af6820b500a453e9
-ms.sourcegitcommit: 1466ac0f49ebf7448ea4507ae3f79acb25d51d3e
+ms.openlocfilehash: 85cbee61cde596831d06aa83af326cc0a0534f0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34448709"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949677"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。  
@@ -106,29 +106,29 @@ ms.locfileid: "34448709"
 ### <a name="order-of-events-in-document-level-excel-projects"></a>文档级 Excel 项目中的事件的顺序  
  Excel 项目中 **Startup** 事件处理程序的调用顺序如下：  
   
-1.  `ThisWorkbook_Startup`。  
+1. `ThisWorkbook_Startup`。  
   
-2.  `Sheet1_Startup`。  
+2. `Sheet1_Startup`。  
   
-3.  `Sheet2_Startup`。  
+3. `Sheet2_Startup`。  
   
-4.  `Sheet3_Startup`。  
+4. `Sheet3_Startup`。  
   
-5.  按顺序排列的其他工作表。  
+5. 按顺序排列的其他工作表。  
   
- 工作簿解决方案中 **Shutdown** 事件处理程序的调用顺序如下：  
+   工作簿解决方案中 **Shutdown** 事件处理程序的调用顺序如下：  
   
-1.  `ThisWorkbook_Shutdown`。  
+6. `ThisWorkbook_Shutdown`。  
   
-2.  `Sheet1_Shutdown`。  
+7. `Sheet1_Shutdown`。  
   
-3.  `Sheet2_Shutdown`。  
+8. `Sheet2_Shutdown`。  
   
-4.  `Sheet3_Shutdown`。  
+9. `Sheet3_Shutdown`。  
   
-5.  按顺序排列的其他工作表。  
+10. 按顺序排列的其他工作表。  
   
- 在编译项目时确定顺序。 如果用户重新排列在运行时工作表，它不会更改的下次打开或关闭工作簿会引发事件的顺序。  
+    在编译项目时确定顺序。 如果用户重新排列在运行时工作表，则不会更改的下次打开或关闭工作簿会引发事件的顺序。  
   
 ## <a name="vsto-add-in-projects"></a>VSTO 外接程序项目  
  Visual Studio 在 VSTO 外接程序中提供生成的代码。此代码引发两个不同的事件： <xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown>。  
@@ -138,9 +138,9 @@ ms.locfileid: "34448709"
   
  `ThisAddIn_Startup` 事件处理程序中的代码是要运行的第一个用户代码，除非你的 VSTO 外接程序替代 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在这种情况下，将在 `ThisAddIn_Startup` 之后调用 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>事件处理程序。  
   
- 未添加中的代码`ThisAdd-In_Startup`如果代码需要文档才能打开的事件处理程序。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅[Office 应用程序启动时访问文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+ 不要将代码中的添加`ThisAdd-In_Startup`如果代码需要文档才能打开的事件处理程序。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅[Office 应用程序启动时访问文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
   
- 有关 VSTO 外接程序的启动顺序的详细信息，请参阅[体系结构的 VSTO 外接程序](../vsto/architecture-of-vsto-add-ins.md)。  
+ 有关 VSTO 外接程序的启动顺序的详细信息，请参阅[Architecture of VSTO 外接程序](../vsto/architecture-of-vsto-add-ins.md)。  
   
 ### <a name="shutdown-event"></a>Shutdown 事件  
  即将卸载你的代码加载在其中的应用程序域时，将引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 此事件由生成的代码文件中的 `ThisAddIn_Shutdown` 方法处理。 此事件处理程序是在卸载 VSTO 外接程序时要运行的最后一个用户代码。  
@@ -153,7 +153,7 @@ ms.locfileid: "34448709"
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 对象的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。  
   
 > [!NOTE]  
->  当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[关闭更改 Outlook 2010 的](http://go.microsoft.com/fwlink/?LinkID=184614)。  
+>  当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[Outlook 2010 的 Shutdown 更改](http://go.microsoft.com/fwlink/?LinkID=184614)。  
   
 ## <a name="see-also"></a>请参阅  
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   

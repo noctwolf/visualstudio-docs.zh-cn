@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo |Microsoft 文档
+title: IDebugComPlusSymbolProvider2::FunctionHasLineInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8175946e7d4c01a2013e31ff39ba7d1ea4161f6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d169c57f612bf8a047387045dcc7e1b33dbc0afb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104834"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888497"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 确定指定的方法是否具有行信息。  
@@ -40,13 +40,13 @@ int FunctionHasLineInfo(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in]由调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。 此地址必须是 METHOD_ADDRESS。  
+ [in]由表示的调试地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。 该地址必须是 METHOD_ADDRESS。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::FunctionHasLineInfo(  
@@ -85,5 +85,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

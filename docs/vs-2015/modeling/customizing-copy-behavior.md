@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b5e57f5d7b3ab3fa7f956516879f687ff9ac7491
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2478925ecf481aaf49dbfbe5818d8839b9ad54f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49286463"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844077"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ ms.locfileid: "49286463"
   
  默认情况下，当用户将元素复制到剪贴板时，还会复制以下元素：  
   
--   所选元素的嵌入后代。 （即，作为源于复制元素的嵌入关系目标的元素。）  
+- 所选元素的嵌入后代。 （即，作为源于复制元素的嵌入关系目标的元素。）  
   
--   复制的元素之间的关系链接。  
+- 复制的元素之间的关系链接。  
   
- 此规则将按递归方式应用到复制的元素和链接。  
+  此规则将按递归方式应用到复制的元素和链接。  
   
- ![复制并粘贴元素](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
+  ![复制并粘贴元素](../modeling/media/dslcopypastedefault.png "DslCopyPasteDefault")  
   
- 复制的元素和链接将进行序列化并存储在位于剪贴板上的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP)。  
+  复制的元素和链接将进行序列化并存储在位于剪贴板上的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP)。  
   
- 复制的元素的图像也位于该剪贴板上。 这将允许用户将其粘贴到其他应用程序（如 Word）中。  
+  复制的元素的图像也位于该剪贴板上。 这将允许用户将其粘贴到其他应用程序（如 Word）中。  
   
- 用户可以根据 DSL 定义将复制的元素粘贴到可以接受元素的目标上。 例如，在从组件解决方案模板生成的 DSL 中，用户可以将端口复制到组件上，但不能复制到关系图上；并且可以将组件粘贴到关系图上，但不能粘贴到其他组件上。  
+  用户可以根据 DSL 定义将复制的元素粘贴到可以接受元素的目标上。 例如，在从组件解决方案模板生成的 DSL 中，用户可以将端口复制到组件上，但不能复制到关系图上；并且可以将组件粘贴到关系图上，但不能粘贴到其他组件上。  
   
 ## <a name="customizing-copy-and-paste-behavior"></a>自定义复制和粘贴行为  
  通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
@@ -227,15 +227,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
  有三个值：  
   
--   不传播复制  
+- 不传播复制  
   
--   仅将复制传播到链接 - 在粘贴该组时，此链接的新副本将引用链接另一端上的现有元素。  
+- 仅将复制传播到链接 - 在粘贴该组时，此链接的新副本将引用链接另一端上的现有元素。  
   
--   将复制传播到链接和相反的角色扮演者 - 复制的组包括位于链接另一端上的元素的副本。  
+- 将复制传播到链接和相反的角色扮演者 - 复制的组包括位于链接另一端上的元素的副本。  
   
- ![使用 propagatecopytolinkonly 进行复制的效果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
+  ![使用 propagatecopytolinkonly 进行复制的效果](../modeling/media/dslpropagatecopy.png "DslPropagateCopy")  
   
- 所进行的更改将同时影响元素和复制的图像。  
+  所进行的更改将同时影响元素和复制的图像。  
   
 ## <a name="programming-copy-and-paste-behavior"></a>编程复制和粘贴行为  
  与复制、粘贴、创建和删除对象有关的 DSL 行为的许多方面都由耦合到关系图的 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 的实例控制。 通过从 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 中派生自己的类并重写关系图类的 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 属性，可修改 DSL 的行为。  
@@ -249,13 +249,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   
 #### <a name="to-define-your-own-elementoperations"></a>定义自己的 ElementOperations  
   
-1.  在 DSL 项目的新文件中，创建派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的类。  
+1. 在 DSL 项目的新文件中，创建派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的类。  
   
-2.  为关系图类添加分部类定义。 此类的名称可在**Dsl\GeneratedCode\Diagrams.cs**。  
+2. 为关系图类添加分部类定义。 此类的名称可在**Dsl\GeneratedCode\Diagrams.cs**。  
   
-     在关系图类中，重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以返回 ElementOperations 子类的实例。 应在每次调用时返回同一个实例。  
+    在关系图类中，重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以返回 ElementOperations 子类的实例。 应在每次调用时返回同一个实例。  
   
- 在 DslPackage 项目的自定义代码文件中添加此代码：  
+   在 DslPackage 项目的自定义代码文件中添加此代码：  
   
 ```csharp  
   

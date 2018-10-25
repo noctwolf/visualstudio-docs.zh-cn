@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ac06fa18ee9459d8dc43bd0c536b68f9d027c97d
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 024241870bb4a0a2ef696130cbe5ddc94319493a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837199"
 ---
 # <a name="resource-details-view---contention-data"></a>“资源详细信息”视图 - 争用数据
 “资源详细信息”视图显示针对所选资源的争用所导致的阻塞事件的时间线关系图。 如果由于另一个线程已锁定对资源的访问，因此线程被迫挂起执行，则会发生阻塞事件。  
@@ -48,9 +48,9 @@ ms.locfileid: "31584394"
   
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>查看或编辑调用堆栈中的函数的源代码  
   
--   在“调用堆栈”窗口中，单击函数名。  
+- 在“调用堆栈”窗口中，单击函数名。  
   
- 函数源代码必须是当前项目的一部分。  
+  函数源代码必须是当前项目的一部分。  
   
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>查看资源的争用事件的调用树  
   

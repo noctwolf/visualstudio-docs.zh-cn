@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce2ab15d215b9758e42c0a7d973153f2f5c18f8d
-ms.sourcegitcommit: 99d097d82ee4f9eff6f588e5ebb6b17d8f724b04
+ms.openlocfilehash: a914afada4422364db043582be43658cf494b9c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42902814"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864668"
 ---
 # <a name="extend-projects"></a>扩展项目
 项目和解决方案是 Visual Studio 将代码和资源文件组织到编译和部署单元的方法。 您可以找到有关中的项目的详细信息[项目 (Visual Studio SDK)](../extensibility/extending-projects.md)。  
@@ -36,7 +36,7 @@ ms.locfileid: "42902814"
  介绍如何创建自定义项目系统。  
   
  [将数据保存在项目文件中](../extensibility/saving-data-in-project-files.md)  
- 介绍了如何将添加到项目 (*。* proj *） 文件。  
+ 介绍了如何将添加到项目 (<em>。</em>proj *） 文件。  
   
  [在运行时验证项目的子类型](../extensibility/verifying-subtypes-of-a-project-at-run-time.md)  
  介绍如何在运行时验证项目的子类型。  

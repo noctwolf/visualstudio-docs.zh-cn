@@ -1,5 +1,5 @@
 ---
-title: BP_TYPE |Microsoft 文档
+title: BP_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 823b2b4bd53aabfdbcc887fe8ce4e1bf1bf858d7
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c525b30a290a1a0c5f732f65967acb50219c9647
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31099221"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905152"
 ---
 # <a name="bptype"></a>BP_TYPE
-指定断点位于代码位置、 是一个数据位置，或另一种类型的断点。  
+指定断点在代码位置、 是一个数据位置，或另一种类型的断点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -57,10 +57,10 @@ public enum enum_BP_TYPE {
  指定数据断点。  
   
  BPT_SPECIAL  
- 指定既不为代码，也不一种数据类型的断点。 此类型已弃用，不应使用。  
+ 指定一个代码和数据类型都不是一个断点。 此类型已弃用，不应使用。  
   
 ## <a name="remarks"></a>备注  
- 作为参数传递给传递[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)和[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)方法。  
+ 作为参数传递给[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)并[GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -69,7 +69,7 @@ public enum enum_BP_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md)

@@ -29,12 +29,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5522c9da025b76a3892d3923cdd7397b8ed5ce5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fbe323d5c8939ee5a4088436c906b99b4696254e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207488"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872923"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“实时”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ ms.locfileid: "49207488"
   
  可以为以下程序类型启用实时调试：  
   
--   Managed  
+- Managed  
   
--   Native  
+- Native  
   
--   脚本  
+- 脚本  
   
- 实时调试是一种用于调试在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的外部启动的程序的方法。 可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 环境之外运行在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建的程序。 如果已启用实时调试，则发生崩溃时会显示一个对话框，询问您是否需要调试。  
+  实时调试是一种用于调试在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的外部启动的程序的方法。 可以在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 环境之外运行在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 中创建的程序。 如果已启用实时调试，则发生崩溃时会显示一个对话框，询问您是否需要调试。  
   
 ## <a name="associated-warnings"></a>关联警告  
  当您访问的此页**选项**对话框中，可能会看到类似这样的警告消息：  

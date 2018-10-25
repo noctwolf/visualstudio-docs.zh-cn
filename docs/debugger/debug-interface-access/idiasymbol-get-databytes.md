@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_databytes |Microsoft 文档'
+title: 'Idiasymbol:: Get_databytes |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e87eb61c70f3c3be28058c2acbc39f24d919c9
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 98febaa0d72071ac990cb88cec2d56845b3e9d67
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463541"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911819"
 ---
 # <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
-检索数据的 OEM 符号字节的长度。  
+检索 OEM 符号的数据字节。  
   
 ## <a name="syntax"></a>语法  
   
@@ -36,7 +36,7 @@ HRESULT get_dataBytes (
   
 #### <a name="parameters"></a>参数  
  `cbData`  
- [in]要保存数据的缓冲区的大小。  
+ [in]若要保存的数据缓冲区的大小。  
   
  `pcbData`  
  [out]返回写入字节数，或者，如果`data`参数是`NULL`，返回可用的字节数。  
@@ -48,7 +48,7 @@ HRESULT get_dataBytes (
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="requirements"></a>要求  
   

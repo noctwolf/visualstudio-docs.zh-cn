@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c8a7c88c0c1808b5155ada9d46cfbdad9edd5cf5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 2f5b8948d94c64d84b33714a4b432a46bfb73b59
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859349"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49931540"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 在你自己的计算机上或其他计算机上，可以安装特定于域的语言。 Visual Studio 必须已安装在目标计算机上。
@@ -23,7 +23,7 @@ ms.locfileid: "47859349"
  有两种部署域特定语言的方法：
 
 |方法|优点|
-|------------|--------------|
+|-|-|
 |VSX （Visual Studio 扩展）|非常易于部署： 副本和执行 **.vsix** DslPackage 项目中的文件。<br /><br /> 有关详细信息请参阅[安装和卸载 DSL 使用 VSX](#Installing)。|
 |MSI （安装程序文件）|-允许用户通过双击 DSL 文件打开 Visual Studio。<br />-将图标与目标计算机中的 DSL 文件类型关联。<br />-将与 DSL 的文件类型关联的 XSD （XML 架构）。 该文件加载到 Visual Studio 时，这可以避免警告。<br /><br /> 必须将安装项目添加到解决方案以创建 MSI。<br /><br /> 有关详细信息，请参阅[使用 MSI 文件部署 DSL](#msi)。|
 
@@ -32,37 +32,37 @@ ms.locfileid: "47859349"
 
 #### <a name="to-install-a-dsl-by-using-the-vsx"></a>若要使用 VSX 安装 DSL
 
-1.  在您的计算机，找到 **.vsix**由 DSL 包项目生成的文件。
+1. 在您的计算机，找到 **.vsix**由 DSL 包项目生成的文件。
 
-    1.  在中**解决方案资源管理器**，右键单击**DslPackage**项目，并单击**在 Windows 资源管理器中打开文件夹**。
+   1.  在中**解决方案资源管理器**，右键单击**DslPackage**项目，并单击**在 Windows 资源管理器中打开文件夹**。
 
-    2.  找到的文件**bin\\\*\\**_YourProject_**。DslPackage.vsix**
+   2.  找到的文件**bin\\\*\\**_YourProject_**。DslPackage.vsix**
 
-2.  复制 **.vsix**到目标计算机，你想要安装 DSL 的文件。 该计算机可以是自己的计算机或其他计算机。
+2. 复制 **.vsix**到目标计算机，你想要安装 DSL 的文件。 该计算机可以是自己的计算机或其他计算机。
 
-    -   目标计算机必须具有的版本之一[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]Dsl 支持在运行时。 有关详细信息，请参阅[的可视化和建模 SDK 支持 Visual Studio 版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)。
+   - 目标计算机必须具有的版本之一[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]Dsl 支持在运行时。 有关详细信息，请参阅[的可视化和建模 SDK 支持 Visual Studio 版本](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)。
 
-    -   目标计算机必须具有 Visual Studio 中指定的版本之一**DslPackage\source.extensions.manifest**。
+   - 目标计算机必须具有 Visual Studio 中指定的版本之一**DslPackage\source.extensions.manifest**。
 
-3.  在目标计算机上，双击 **.vsix**文件。
+3. 在目标计算机上，双击 **.vsix**文件。
 
-     “” 将会打开并安装扩展。
+    “” 将会打开并安装扩展。
 
-4.  启动或重启 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
+4. 启动或重启 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
 
-5.  若要测试 DSL，使用 Visual Studio 创建新的文件扩展名为你的 DSL 定义。
+5. 若要测试 DSL，使用 Visual Studio 创建新的文件扩展名为你的 DSL 定义。
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>若要卸载使用 VSX 安装 DSL
 
-1.  上**工具**菜单上，单击**扩展管理器**。
+1. 上**工具**菜单上，单击**扩展管理器**。
 
-2.  展开“已安装的扩展” 。
+2. 展开“已安装的扩展” 。
 
-3.  选择该扩展在其中定义 DSL，然后单击**卸载**。
+3. 选择该扩展在其中定义 DSL，然后单击**卸载**。
 
- 在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：
+   在极少数情况下，有错误的扩展无法加载并在错误窗口中创建报告，但不显示在扩展管理器中。 在这种情况下，可以通过从以下位置删除文件来删除扩展：
 
- *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
+   *LocalAppData* **\Microsoft\VisualStudio\10.0\Extensions**
 
 ## <a name="msi"></a> 部署在 MSI 中的 DSL
  通过定义用于 DSL 的 MSI （Windows 安装程序） 文件，可以允许用户从 Windows 资源管理器中打开 DSL 文件。 您还可以在文件扩展名关联的图标和简短说明。 此外，MSI 可以安装一个可以用来验证 DSL 文件的 XSD。 如果你想，您可以将其他组件添加到将安装在同一时间的 MSI。
@@ -73,47 +73,47 @@ ms.locfileid: "47859349"
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>若要部署在 MSI 中的 DSL
 
-1.  设置`InstalledByMsi`扩展清单中。 这会阻止 VSX 正在安装和卸载 MSI 除外。 这是重要信息： 如果将 MSI 中包括其他组件。
+1. 设置`InstalledByMsi`扩展清单中。 这会阻止 VSX 正在安装和卸载 MSI 除外。 这是重要信息： 如果将 MSI 中包括其他组件。
 
-    1.  打开 DslPackage\source.extension.tt
+   1.  打开 DslPackage\source.extension.tt
 
-    2.  插入以下行之前`<SupportedProducts>`:
+   2.  插入以下行之前`<SupportedProducts>`:
 
-        ```xml
-        <InstalledByMsi>true</InstalledByMsi>
-        ```
+       ```xml
+       <InstalledByMsi>true</InstalledByMsi>
+       ```
 
-2.  创建或编辑图标来表示你在 Windows 资源管理器的 DSL。 例如，编辑**DslPackage\Resources\File.ico**
+2. 创建或编辑图标来表示你在 Windows 资源管理器的 DSL。 例如，编辑**DslPackage\Resources\File.ico**
 
-3.  请确保你的 DSL 的以下属性正确：
+3. 请确保你的 DSL 的以下属性正确：
 
-    -   在 DSL 资源管理器中单击根节点，并在属性窗口中，查看：
+   -   在 DSL 资源管理器中单击根节点，并在属性窗口中，查看：
 
-        -   描述
+       -   描述
 
-        -   版本
+       -   版本
 
-    -   单击**编辑器**节点，在属性窗口中，单击**图标**。 设置要引用的图标文件中的值**DslPackage\Resources**，如**File.ico**
+   -   单击**编辑器**节点，在属性窗口中，单击**图标**。 设置要引用的图标文件中的值**DslPackage\Resources**，如**File.ico**
 
-    -   上**构建**菜单中，打开**Configuration Manager**，然后选择你想要构建，例如配置**版本**或**调试**.
+   -   上**构建**菜单中，打开**Configuration Manager**，然后选择你想要构建，例如配置**版本**或**调试**.
 
-4.  转到[可视化和建模 SDK 主页](http://go.microsoft.com/fwlink/?LinkID=186128)，并从**下载**选项卡上，下载**CreateMsiSetupProject.tt**。
+4. 转到[可视化和建模 SDK 主页](http://go.microsoft.com/fwlink/?LinkID=186128)，并从**下载**选项卡上，下载**CreateMsiSetupProject.tt**。
 
-5.  添加**CreateMsiSetupProject.tt**到 Dsl 项目。
+5. 添加**CreateMsiSetupProject.tt**到 Dsl 项目。
 
-     Visual Studio 将创建名为的文件**CreateMsiSetupProject.vdproj**。
+    Visual Studio 将创建名为的文件**CreateMsiSetupProject.vdproj**。
 
-6.  在 Windows 资源管理器，复制 Dsl\\\*.vdproj 到新的文件夹名为安装程序。
+6. 在 Windows 资源管理器，复制 Dsl\\\*.vdproj 到新的文件夹名为安装程序。
 
-     （如果你想，您现在可以排除 CreateMsiSetupProject.tt 从 Dsl 项目。）
+    （如果你想，您现在可以排除 CreateMsiSetupProject.tt 从 Dsl 项目。）
 
-7.  在中**解决方案资源管理器**，添加**安装程序\\\*.vdproj**作为现有项目。
+7. 在中**解决方案资源管理器**，添加**安装程序\\\*.vdproj**作为现有项目。
 
-8.  上**项目**菜单上，单击**项目依赖项**。
+8. 上**项目**菜单上，单击**项目依赖项**。
 
-     在中**项目依赖项**对话框框中，选择安装项目。
+    在中**项目依赖项**对话框框中，选择安装项目。
 
-     选中此框旁边**DslPackage**。
+    选中此框旁边**DslPackage**。
 
 9. 重新生成解决方案。
 
@@ -127,7 +127,7 @@ ms.locfileid: "47859349"
 
     -   当您双击文件、 Visual Studio 将启动，并在 DSL 的编辑器中打开 DSL 文件。
 
- 如果您愿意，你可以安装项目手动创建，而不是使用文本模板。 包括此过程的演练，请参阅第 5 章[可视化和建模 SDK 实验室](http://go.microsoft.com/fwlink/?LinkId=208878)。
+    如果您愿意，你可以安装项目手动创建，而不是使用文本模板。 包括此过程的演练，请参阅第 5 章[可视化和建模 SDK 实验室](http://go.microsoft.com/fwlink/?LinkId=208878)。
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>若要卸载从 MSI 安装的 DSL
 

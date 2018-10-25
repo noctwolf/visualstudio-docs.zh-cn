@@ -1,5 +1,5 @@
 ---
-title: 工具窗口显示配置 |Microsoft 文档
+title: 工具窗口中显示配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,19 +14,19 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175e2005047312f6815e90c21c60ab831c036064
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 087fc8bc20b8ed70001b44ae06c614fad58c1439
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31143688"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839695"
 ---
-# <a name="tool-window-display-configuration"></a>工具窗口显示配置
-可选值以指定 VSPackage 时注册工具窗口、 的默认位置、 大小、 停靠样式和可见性的其他信息。 工具窗口注册的详细信息，请参阅[注册表中的工具窗口](../extensibility/tool-windows-in-the-registry.md)  
-  
+# <a name="tool-window-display-configuration"></a>工具窗口中显示配置
+可选值中指定了当 VSPackage 注册为工具窗口中，默认位置、 大小、 停靠样式和其他可见性信息。 工具窗口注册的详细信息，请参阅[工具 Windows 注册表中](../extensibility/tool-windows-in-the-registry.md)  
+
 ## <a name="window-display-information"></a>窗口显示信息  
  工具窗口的基本显示配置存储在最多六个可选值：  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -37,21 +37,22 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\  
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000  
 ```  
-  
-|名称|类型|数据|描述|  
-|----------|----------|----------|-----------------|  
-|名称|REG_SZ|"短名称在此处显示"|描述该工具窗口的短名称。 仅用于注册表中的引用。|  
-|Float|REG_SZ|"X1，Y1，X2，Y2"|四个以逗号分隔值。 X1，Y1 是工具窗口的左上角的坐标。 X2，Y2 是右下角的坐标。 所有值都都以屏幕坐标。|  
-|样式|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "链接"<br /><br /> "选项卡式"<br /><br /> "AlwaysFloat"|指定初始关键字显示的工具窗口的状态。<br /><br /> "MDI"= 与 MDI 窗口停靠在一起。<br /><br /> "Float"= 浮动。<br /><br /> "链接"= 链接在一起 （在窗口中的项中指定） 的另一个窗口。<br /><br /> "选项卡式"= 与另一个工具窗口结合使用。<br /><br /> "AlwaysFloat"= 不能固定。<br /><br /> 有关详细信息，请参阅下面的注释部分。|  
-|窗口|REG_SZ|*\<GUID &GT;*|到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于其自己的窗口之一或之一中的窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。|  
-|方向|REG_SZ|"左"<br /><br /> "右侧"<br /><br /> "Top"<br /><br /> "底部"|请参阅下面的注释部分。|  
-|DontForceCreate|REG_DWORD|0 或 1|此项存在后，其值不为零，窗口将加载，但不是立即显示。|  
-  
+
+
+| name | 类型 | 数据 | 描述 |
+|-----------------|-----------| - | - |
+| name | REG_SZ | "此处显示短名称" | 描述的工具窗口的短名称。 仅用于在注册表中的引用。 |
+| Float | REG_SZ | "X1，Y1，X2，Y2" | 四个逗号分隔的值。 X1，Y1 是工具窗口的左上角的坐标。 X2，Y2 是右下角的坐标。 所有值都均以屏幕坐标。 |
+| 样式 | REG_SZ | "MDI"<br /><br /> "浮动"<br /><br /> "链接"<br /><br /> "选项卡式"<br /><br /> "AlwaysFloat" | 关键字指定初始显示工具窗口的状态。<br /><br /> "MDI"= 与 MDI 窗口停靠在一起。<br /><br /> "浮动"= 浮动。<br /><br /> "链接"= 与另一个窗口 （在窗口中的项中指定） 链接。<br /><br /> "选项卡式"= 与另一个工具窗口结合使用。<br /><br /> "AlwaysFloat"= 不固定。<br /><br /> 有关详细信息，请参阅下面的注释部分。 |
+| 窗口 | REG_SZ | *\<GUID &GT;* | 到工具窗口可以链接或选项卡式窗口的 GUID。 GUID 可能属于一个你自己的 windows 或 windows 中的一个[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 |
+| 方向 | REG_SZ | "Left"<br /><br /> "右"<br /><br /> "Top"<br /><br /> "底部" | 请参阅下面的注释部分。 |
+| DontForceCreate | REG_DWORD | 0 或 1 | 此条目存在后，其值不为零，窗口加载，但不是会立即显示。 |
+
 ### <a name="comments"></a>注释  
- 方向条目定义其中工具窗口停靠双击其标题栏时的位置。 位置是相对于窗口中的项中指定的窗口。 如果样式条目设置为"链接"，则方向项可以是"Left"、"Right"、"顶部"或"底部"。 如果样式条目为"选项卡式"、 方向条目可以"忽略"Right"，并指定该选项卡添加的位置。 如果样式项是"浮动"，该工具窗口浮动第一次。 双击标题栏时，方向和窗口条目将应用，而该窗口使用的"选项卡式"样式。 如果"AlwaysFloat"样式项，则不能停靠工具窗口。 如果"MDI"样式项，则该工具窗口链接到 MDI 区域中，和窗口条目被忽略。  
-  
+ 方向项定义工具窗口将双击标题栏时停靠的位置。 位置是相对于窗口中的项中指定的窗口。 如果样式条目设置为"链接"，则方向项可以是"Left"、"Right"、"Top"或"底部"。 如果样式条目为"选项卡式"、 方向条目可以"保留"右"并指定选项卡添加的位置。 如果样式项是"浮动"，工具窗口浮动第一次。 双击标题栏时，方向和窗口项适用，并且窗口使用"选项卡式"样式。 如果"AlwaysFloat"样式项，则不能固定工具窗口。 如果"MDI"样式项，则工具窗口链接到 MDI 区域中，并忽略窗口中的项。  
+
 ### <a name="example"></a>示例  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -68,10 +69,10 @@ HKEY_LOCAL_MACHINE\
               Style           = reg_sz: Tabbed  
               Window          = reg_sz: {34E76E81-EE4A-11D0-00A0C90FFFC3}  
 ```  
-  
+
 ## <a name="tool-window-visibility"></a>工具窗口可见性  
- 可选的可见性子项中的值确定工具窗口的可见性设置。 值的名称用于存储需要窗口的可见性的命令的 Guid。 如果执行命令时，IDE 将保证工具窗口创建并使其可见。  
-  
+ 可选的可见性子项中的值确定工具窗口的可见性设置。 值的名称用于存储需要窗口的可见性的命令的 Guid。 如果执行该命令时，IDE 可保证工具窗口创建并使其可见。  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -86,14 +87,14 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_dword:  
                 <GUID>    = reg_sz:  
 ```  
-  
-|名称|类型|数据|描述|  
+
+|name|类型|数据|描述|  
 |----------|----------|----------|-----------------|  
 |(默认)|REG_SZ|无|将保留为空。|  
-|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或一个描述性的字符串。|可选。 项的名称必须是命令需要可见性的 GUID。 只包含一个信息性的字符串值。 通常情况下，值是`reg_dword`设置为 0。|  
-  
+|*\<GUID &GT;*|REG_DWORD 或 REG_SZ|0 或描述性字符串。|可选。 项的名称必须是命令的需要可见性的 GUID。 值只保留一个信息性的字符串。 通常情况下，值是`reg_dword`设置为 0。|  
+
 ### <a name="example"></a>示例  
-  
+
 ```  
 HKEY_LOCAL_MACHINE\  
   Software\  
@@ -108,6 +109,6 @@ HKEY_LOCAL_MACHINE\
                 {9DA22B82-6211-11d2-9561-00600818403B} = reg_dword: 0x00000000  
                 {adfc4e66-0397-11d1-9f4e-00a0c911004f} = reg_dword: 0x00000000  
 ```  
-  
-## <a name="see-also"></a>另请参阅  
+
+## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_addresstaken |Microsoft 文档'
+title: 'Idiasymbol:: Get_addresstaken |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dc5fae2b172299c79b730f75320b9b7b05c3cf4f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 8244940212237ed6725017cc92d2ba005ccc0d10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464103"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822457"
 ---
 # <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
 检索一个标志，指示的另一个符号是否引用此符号的地址。  
@@ -34,16 +34,16 @@ HRESULT get_addressTaken (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`TRUE`如果另一个符号引用此地址; 否则，返回`FALSE`。  
+ [out]返回`TRUE`如果另一种符号引用此地址; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，`B`引用`A`。 因此，符号`A`的`get_addressTaken`方法返回`TRUE`。  
+ 在以下示例中，`B`引用`A`。 因此，符号`A`的`get_addressTaken`方法将返回`TRUE`。  
   
 ```C++  
 int A  = 0;  

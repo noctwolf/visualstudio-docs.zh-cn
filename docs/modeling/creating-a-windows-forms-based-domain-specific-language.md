@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f8034ae225707ec6030daba39ed09bab3bd161c4
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 01b2b906d514d8fd9042c1046ea2481faee39499
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859518"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926678"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
 可以使用 Windows 窗体以显示特定于域的语言 (DSL) 模型，而不是使用 DSL 关系图的状态。 本主题将指导你通过将 Windows 窗体绑定到使用 Visual Studio 可视化和建模 SDK 的 DSL。
@@ -26,30 +26,32 @@ ms.locfileid: "47859518"
 
 #### <a name="to-create-a-minimal-winforms-dsl"></a>若要创建的最小的 WinForms DSL
 
-1.  创建从 DSL**最小 WinForm 设计器**模板。
+1. 创建从 DSL**最小 WinForm 设计器**模板。
 
-     在本演练中，假定以下名称：
+    在本演练中，假定以下名称：
 
-    |||
-    |-|-|
-    |解决方案和 DSL 名称|FarmApp|
-    |命名空间|Company.FarmApp|
 
-2.  该模板提供的初始示例试验：
+   | | |
+   |-|-|
+   | 解决方案和 DSL 名称 | FarmApp |
+   | 命名空间 | Company.FarmApp |
 
-    1.  转换所有模板。
 
-    2.  生成并运行示例 (**CTRL + F5**)。
+2. 该模板提供的初始示例试验：
 
-    3.  在 Visual Studio 的实验实例中，打开`Sample`调试的项目文件中。
+   1.  转换所有模板。
 
-         请注意显示的 Windows 窗体控件。
+   2.  生成并运行示例 (**CTRL + F5**)。
 
-         此外可以查看模型资源管理器中显示的元素。
+   3.  在 Visual Studio 的实验实例中，打开`Sample`调试的项目文件中。
 
-         添加窗体或资源管理器中，一些元素，它们会显示其他显示。
+        请注意显示的 Windows 窗体控件。
 
- 在 Visual Studio 的主实例，请注意有关 DSL 解决方案的以下几点：
+        此外可以查看模型资源管理器中显示的元素。
+
+        添加窗体或资源管理器中，一些元素，它们会显示其他显示。
+
+   在 Visual Studio 的主实例，请注意有关 DSL 解决方案的以下几点：
 
 -   `DslDefinition.dsl` 不包含任何关系图元素。 这是因为不会使用 DSL 关系图来查看此 DSL 的实例模型。 相反，会将 Windows 窗体绑定到模型中，并在窗体上的元素将显示该模型。
 
@@ -132,30 +134,30 @@ ms.locfileid: "47859518"
 
 #### <a name="to-connect-your-model-to-a-form"></a>若要向窗体连接您的模型
 
-1.  在中**UI**项目中，删除现有的所有.cs 文件。
+1. 在中**UI**项目中，删除现有的所有.cs 文件。
 
-2.  添加一个新**用户控件**名为的文件`FarmControl`到**UI**项目。
+2. 添加一个新**用户控件**名为的文件`FarmControl`到**UI**项目。
 
-3.  在中**数据源**窗口中的，在下拉列表菜单**场**，选择**详细信息**。
+3. 在中**数据源**窗口中的，在下拉列表菜单**场**，选择**详细信息**。
 
-     保留其他属性的默认设置。
+    保留其他属性的默认设置。
 
-4.  在设计视图中打开 FarmControl.cs。
+4. 在设计视图中打开 FarmControl.cs。
 
-     拖动**场**FarmControl 到数据源窗口中。
+    拖动**场**FarmControl 到数据源窗口中。
 
-     控件将显示一组，一个用于每个属性。 关系属性不会生成控件。
+    控件将显示一组，一个用于每个属性。 关系属性不会生成控件。
 
-5.  删除**farmBindingNavigator**。 这还会自动生成中`FarmControl`设计器中，但这不是适用于此应用程序。
+5. 删除**farmBindingNavigator**。 这还会自动生成中`FarmControl`设计器中，但这不是适用于此应用程序。
 
-6.  使用工具箱中，创建的两个实例**DataGridView**，并将它们命名`AnimalGridView`和`FieldGridView`。
+6. 使用工具箱中，创建的两个实例**DataGridView**，并将它们命名`AnimalGridView`和`FieldGridView`。
 
-    > [!NOTE]
-    >  一个可选步骤是从数据源窗口拖动到控件上拖动动物和字段项目。 此操作将自动创建的数据网格和网格视图和数据源之间的绑定。 但是，此绑定不会无法正常工作的 Dsl。 因此最好创建的数据网格和绑定手动。
+   > [!NOTE]
+   >  一个可选步骤是从数据源窗口拖动到控件上拖动动物和字段项目。 此操作将自动创建的数据网格和网格视图和数据源之间的绑定。 但是，此绑定不会无法正常工作的 Dsl。 因此最好创建的数据网格和绑定手动。
 
-7.  如果工具箱中不包含**ModelingBindingSource**工具中，将其添加。 在快捷菜单上**数据**选项卡上，选择**选择项**。 在中**选择工具箱项**对话框中，选择**ModelingBindingSource**从 **.NET Framework 选项卡**。
+7. 如果工具箱中不包含**ModelingBindingSource**工具中，将其添加。 在快捷菜单上**数据**选项卡上，选择**选择项**。 在中**选择工具箱项**对话框中，选择**ModelingBindingSource**从 **.NET Framework 选项卡**。
 
-8.  使用工具箱中，创建的两个实例**ModelingBindingSource**，并将它们命名`AnimalBinding`和`FieldBinding`。
+8. 使用工具箱中，创建的两个实例**ModelingBindingSource**，并将它们命名`AnimalBinding`和`FieldBinding`。
 
 9. 设置**数据源**每个属性**ModelingBindingSource**到**farmBindingSource**。
 
@@ -165,15 +167,15 @@ ms.locfileid: "47859518"
 
 11. 调整到你的味道场控件的布局。
 
- **ModelingBindingSource**是执行特定于 Dsl 的多个功能的适配器：
+    **ModelingBindingSource**是执行特定于 Dsl 的多个功能的适配器：
 
--   VMSDK 存储事务中包装更新它。
+- VMSDK 存储事务中包装更新它。
 
-     例如，当用户从数据视图网格中删除行，正则绑定将导致事务异常。
+   例如，当用户从数据视图网格中删除行，正则绑定将导致事务异常。
 
--   它可以确保，当用户选择某一行，属性窗口显示相应的模型元素，而不是数据网格行的属性。
+- 它可以确保，当用户选择某一行，属性窗口显示相应的模型元素，而不是数据网格行的属性。
 
- ![DslWpf4](../modeling/media/dslwpf4.png)架构的数据源和视图之间的链接。
+  ![DslWpf4](../modeling/media/dslwpf4.png)架构的数据源和视图之间的链接。
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>若要完成到 DSL 的绑定
 
@@ -247,62 +249,60 @@ ms.locfileid: "47859518"
 
 #### <a name="to-provide-add-buttons"></a>若要提供添加按钮
 
-1.  在 FarmControl.cs 设计视图中，使用工具箱以在窗体上创建一个按钮。
+1. 在 FarmControl.cs 设计视图中，使用工具箱以在窗体上创建一个按钮。
 
-     编辑名称和文本的按钮，例如到`New Sheep`。
+    编辑名称和文本的按钮，例如到`New Sheep`。
 
-2.  按钮背后的代码 （例如双击打开它）。
+2. 按钮背后的代码 （例如双击打开它）。
 
-     按如下所示编辑：
+    按如下所示编辑：
 
-    ```csharp
-    private void NewSheepButton_Click(object sender, EventArgs e)
-    {
-      using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
-      {
-        elementOperations.MergeElementGroup(farm,
-          new ElementGroup(new Sheep(farm.Partition)));
-        t.Commit();
-      }
-    }
+   ```csharp
+   private void NewSheepButton_Click(object sender, EventArgs e)
+   {
+     using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))
+     {
+       elementOperations.MergeElementGroup(farm,
+         new ElementGroup(new Sheep(farm.Partition)));
+       t.Commit();
+     }
+   }
 
-    // The following code is shared with other add buttons:
-    private ElementOperations operationsCache = null;
-    private ElementOperations elementOperations
-    {
-      get
-      {
-        if (operationsCache == null)
-        {
-          operationsCache = new ElementOperations(farm.Store, farm.Partition);
-        }
-        return operationsCache;
-      }
-    }
-    private Farm farm
-    {
-      get { return this.farmBindingSource.DataSource as Farm; }
-    }
+   // The following code is shared with other add buttons:
+   private ElementOperations operationsCache = null;
+   private ElementOperations elementOperations
+   {
+     get
+     {
+       if (operationsCache == null)
+       {
+         operationsCache = new ElementOperations(farm.Store, farm.Partition);
+       }
+       return operationsCache;
+     }
+   }
+   private Farm farm
+   {
+     get { return this.farmBindingSource.DataSource as Farm; }
+   }
+   ```
 
-    ```
+    您还需要插入以下指令：
 
-     您还需要插入以下指令：
+   ```csharp
 
-    ```csharp
+   using Microsoft.VisualStudio.Modeling;
+   ```
 
-    using Microsoft.VisualStudio.Modeling;
+3. 添加 Goats 和字段的相似按钮。
 
-    ```
+4. 生成和运行解决方案。
 
-3.  添加 Goats 和字段的相似按钮。
+5. 验证新建按钮添加一个项。 在这两个 FarmApp 资源管理器和相应的数据网格视图中，应显示新项。
 
-4.  生成和运行解决方案。
+    您应能够编辑数据网格视图中的元素的名称。 此外可以在从中删除它。
 
-5.  验证新建按钮添加一个项。 在这两个 FarmApp 资源管理器和相应的数据网格视图中，应显示新项。
-
-     您应能够编辑数据网格视图中的元素的名称。 此外可以在从中删除它。
-
- ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>有关代码中添加元素
  为新元素按钮，以下替代代码是稍微简单一些。
@@ -316,7 +316,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
     t.Commit();
   }
 }
-
 ```
 
  但是，此代码不设置新项目的默认名称。 它不会运行任何您可能已定义中的自定义的合并**元素合并指令**的 DSL 中，而不运行任何可能已定义的自定义的合并代码。

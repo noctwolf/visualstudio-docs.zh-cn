@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualaddress |Microsoft 文档'
+title: 'Idiasymbol:: Get_virtualaddress |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b9207f9ec88ed09712c32f72d2e52a85fcd2cc8f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: f9083e1be60c8ed7fd69710a2ddf68040be87d90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470876"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915251"
 ---
 # <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
-检索的位置的虚拟地址 (VA)。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为`LocIsStatic`。  
+检索到的位置的虚拟地址 (VA)。 何时使用[LocationType 枚举](../../debugger/debug-interface-access/locationtype.md)设置为`LocIsStatic`。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_virtualAddress (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回的位置的虚拟地址。  
+ [out]返回位置的虚拟地址。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

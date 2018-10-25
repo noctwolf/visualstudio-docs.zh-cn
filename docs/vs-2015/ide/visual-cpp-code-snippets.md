@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a125223521bf73012944841c6fcf531df3a9ae8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed64d9dde53b31cfe5f52ce708e4ee96d91fe8ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242757"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861353"
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 代码片段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "49242757"
 ## <a name="inserting-a-code-snippet"></a>插入代码片段。  
  若要插入代码片段，请打开一个 C++ 代码文件（.cpp 或 .h），单击文件内的某个位置，然后执行以下操作之一：  
   
--   右键单击以获取上下文菜单并选择“插入代码片段”  
+- 右键单击以获取上下文菜单并选择“插入代码片段”  
   
--   在“编辑”/“IntelliSense”菜单中，选择“插入代码片段”  
+- 在“编辑”/“IntelliSense”菜单中，选择“插入代码片段”  
   
--   使用热键：**CTRL + K + X**  
+- 使用热键：**CTRL + K + X**  
   
- 将出现一个以“#if”开头的选择列表。 选择“#if”后，显示添加到文件的以下代码：  
+  将出现一个以“#if”开头的选择列表。 选择“#if”后，显示添加到文件的以下代码：  
   
 ```cpp  
 #if 0  
@@ -50,13 +50,13 @@ ms.locfileid: "49242757"
 ## <a name="using-a-code-snippet-to-surround-selected-code"></a>使用代码片段来包围所选代码  
  若要使用代码片段来包围所选代码，请选择一行（或多行），然后执行下列操作之一：  
   
-1.  右键单击以获取上下文菜单并选择“外侧代码”  
+1. 右键单击以获取上下文菜单并选择“外侧代码”  
   
-2.  在“编辑”/“IntelliSense”菜单中，选择“外侧代码”  
+2. 在“编辑”/“IntelliSense”菜单中，选择“外侧代码”  
   
-3.  使用热键：**CTRL + K + S**  
+3. 使用热键：**CTRL + K + S**  
   
- 选择“#if”。 将显示如下所示的内容：  
+   选择“#if”。 将显示如下所示的内容：  
   
 ```cpp  
 #if 0  

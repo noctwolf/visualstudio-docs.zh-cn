@@ -30,12 +30,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 312dbee46f13bf1f8f5d0666dcba18adc1116cdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94b3f066a66a380875609b4f6485d56a19ebde3e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49210478"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885572"
 ---
 # <a name="local-data-overview"></a>本地数据概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "49210478"
   
 2.  
   
--  
+- 
   
--  
+- 
   
--   通过单击解决方案资源管理器中的解决方案节点，然后选择创建一个 SQL Server 数据库项目**添加&#124;新建项目**。  在左窗格中，选择**SQL Server&#124;数据库**项目，然后单击确定。 在解决方案资源管理器，右键单击数据库项目节点，以导入本地数据库文件，然后开发连接到数据库项目生成的应用程序。 在开发和您在开发应用程序的同时修改数据库架构时适用。  
+- 通过单击解决方案资源管理器中的解决方案节点，然后选择创建一个 SQL Server 数据库项目**添加&#124;新建项目**。  在左窗格中，选择**SQL Server&#124;数据库**项目，然后单击确定。 在解决方案资源管理器，右键单击数据库项目节点，以导入本地数据库文件，然后开发连接到数据库项目生成的应用程序。 在开发和您在开发应用程序的同时修改数据库架构时适用。  
   
-     ![数据库导入数据库项目](../data-tools/media/raddata-import-database-into-database-project.png "raddata 导入数据库到数据库项目")  
+   ![数据库导入数据库项目](../data-tools/media/raddata-import-database-into-database-project.png "raddata 导入数据库到数据库项目")  
   
--   如果您正在创建新数据库，首先将添加**基于服务的数据库文件**到你的项目 (**项目&#124;添加新项)**。 这将创建新的.mdf 文件附加到本地计算机，即默认情况下 (localdb) \MSSQLocalDB 上的默认 SQL Server 实例。 数据库应出现在服务器资源管理器。 展开节点，然后右键单击要添加新的数据库对象，如表、 视图、 函数和等等的节点。  
+- 如果您正在创建新数据库，首先将添加**基于服务的数据库文件**到你的项目 (**项目&#124;添加新项)**。 这将创建新的.mdf 文件附加到本地计算机，即默认情况下 (localdb) \MSSQLocalDB 上的默认 SQL Server 实例。 数据库应出现在服务器资源管理器。 展开节点，然后右键单击要添加新的数据库对象，如表、 视图、 函数和等等的节点。  
   
- 有关 SQL Server Express LocalDB 的详细信息，请参阅[向 LocalDB 引入、 改进的 SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375)并[LocalDB： 其中，是我的数据库？](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 网站上。  
+  有关 SQL Server Express LocalDB 的详细信息，请参阅[向 LocalDB 引入、 改进的 SQL Express](http://go.microsoft.com/fwlink/?LinkId=234375)并[LocalDB： 其中，是我的数据库？](http://go.microsoft.com/fwlink/?LinkId=234376) Microsoft 网站上。  
   
- 下表提供了介绍如何将应用程序连接到本地数据的主题的链接：  
+  下表提供了介绍如何将应用程序连接到本地数据的主题的链接：  
   
 |主题|描述|  
 |-----------|-----------------|  

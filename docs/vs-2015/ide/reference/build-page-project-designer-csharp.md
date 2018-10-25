@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b762345c9f5c81e6244e16b2ee249f29283cc589
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a377db0ac82b672d053e59c621714945fa9b515c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837173"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "49280611"
   
  仅在以下条件都为 true 的情况下，才可使用此复选框：  
   
--   在“生成”页上，“平台目标”列表设置为“任何 CPU”。  
+- 在“生成”页上，“平台目标”列表设置为“任何 CPU”。  
   
--   在“应用程序”页上，“输出类型”列表指定项目是应用程序。  
+- 在“应用程序”页上，“输出类型”列表指定项目是应用程序。  
   
--   在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。  
+- 在“应用程序”页上，“目标框架”列表指定 .NET Framework 4.5。  
   
- **允许不安全代码**  
- 允许使用[不安全](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)关键字进行编译的代码。 有关详细信息，请参阅 [/unsafe（C# 编译器选项）](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)。  
+  **允许不安全代码**  
+  允许使用[不安全](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0)关键字进行编译的代码。 有关详细信息，请参阅 [/unsafe（C# 编译器选项）](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc)。  
   
- **优化代码**  
- 启用或禁用编译器执行的优化，使输出文件更小、更快、更有效。 有关详细信息，请参阅 [/optimize（C# 编译器选项）](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)。  
+  **优化代码**  
+  启用或禁用编译器执行的优化，使输出文件更小、更快、更有效。 有关详细信息，请参阅 [/optimize（C# 编译器选项）](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0)。  
   
 ## <a name="errors-and-warnings"></a>错误和警告  
  以下设置用于配置生成过程的错误和警告选项。  

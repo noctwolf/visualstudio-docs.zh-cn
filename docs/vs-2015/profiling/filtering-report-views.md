@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 79df08496cfa0e15f2caa648afcb1ee78c636d56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2054181bfd34e9f9382391c879030e147ce2b8d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878448"
 ---
 # <a name="filtering-report-views"></a>筛选报告视图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,19 +53,19 @@ ms.locfileid: "49238285"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>从“标记报告”视图中创建探查器报告筛选器  
   
-1.  在“性能报告”视图工具栏上，从“当前视图”列表中选择“标记”。  
+1. 在“性能报告”视图工具栏上，从“当前视图”列表中选择“标记”。  
   
-     此时将显示“标记探查器”报告。  
+    此时将显示“标记探查器”报告。  
   
-2.  选择要用作报告起始点的 ETW 或采样事件。  
+2. 选择要用作报告起始点的 ETW 或采样事件。  
   
-3.  按住 Ctrl 并单击要用作报告结束点的事件。  
+3. 按住 Ctrl 并单击要用作报告结束点的事件。  
   
-4.  右键单击，然后单击下列选项之一：  
+4. 右键单击，然后单击下列选项之一：  
   
-    -   “添加针对标记的筛选器”将创建使用“标记”列作为筛选器字段的筛选器子句。  
+   - “添加针对标记的筛选器”将创建使用“标记”列作为筛选器字段的筛选器子句。  
   
-    -   “添加针对时间戳的筛选器”将创建使用“时间戳(毫秒)”列作为筛选器字段的筛选器子句。  
+   - “添加针对时间戳的筛选器”将创建使用“时间戳(毫秒)”列作为筛选器字段的筛选器子句。  
   
      这两个选项在相同的开始点和结束点筛选当前数据文件。 如果将筛选器导出以供在其他报告中使用，可以选用任一选项。  
   

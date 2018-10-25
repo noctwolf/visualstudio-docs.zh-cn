@@ -1,5 +1,5 @@
 ---
-title: BPREQI_FIELDS90 |Microsoft 文档
+title: BPREQI_FIELDS90 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef4363b210fff059a88f80bd7377d91971ef2bce
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 3412b0a27704ec0ddd3d77f296b3fa73976bf359
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903161"
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 枚举指定断点请求有关的信息要检索的有效值。 此枚举扩展[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)枚举。  
@@ -78,7 +78,7 @@ public enum enum_BPREQI_FIELDS90
   
 #### <a name="parameters"></a>参数  
  BPREQI90_BPLOCATION  
- 初始化或使用`bpLocation`（断点位置） 字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
+ 初始化或使用`bpLocation`（断点位置） 的字段[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)或[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构。  
   
  BPREQI90_LANGUAGE  
  初始化或使用`guidLanguage`字段`BP_REQUEST_INFO`或`BP_REQUEST_INFO2`结构。  
@@ -108,16 +108,16 @@ public enum enum_BPREQI_FIELDS90
  初始化或使用的所有字段的`BP_REQUEST_INFO`结构。  
   
  BPREQI90_VENDOR  
- 初始化或使用`guidVendor`字段`BP_REQUEST_INFO2`结构。  
+ 初始化或使用`guidVendor`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI90_CONSTRAINT  
- 初始化或使用`bstrConstraint`字段`BP_REQUEST_INFO2`结构。  
+ 初始化或使用`bstrConstraint`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI90_TRACEPOINT  
- 初始化或使用`bstrTracepoint`字段`BP_REQUEST_INFO2`结构。  
+ 初始化或使用`bstrTracepoint`字段的`BP_REQUEST_INFO2`结构。  
   
  BPREQI90_MACROTRACEPOINT  
- 初始化或使用`bstrMacroTracepoint`字段`BP_REQUEST_INFO2`结构。 BPREQI_ALLFIELDS 不包括此字段。  
+ 初始化或使用`bstrMacroTracepoint`字段的`BP_REQUEST_INFO2`结构。 BPREQI_ALLFIELDS 不包括此字段。  
   
  BPREQI90_ALLFIELDS  
  指定的所有字段`BP_REQUEST_INFO2`结构。  
@@ -129,5 +129,5 @@ public enum enum_BPREQI_FIELDS90
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

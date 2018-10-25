@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852bf01278829616a2e8592a8c6ffcbaa87d3628
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232461"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891188"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>如何：忽略任务中的错误
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49232461"
   
  `ContinueOnError` 属性可以包含下列值之一：  
   
--   **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。  
+- **WarnAndContinue** 或 **true**。 当任务失败时，[Target](../msbuild/target-element-msbuild.md) 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为警告。  
   
--   **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。  
+- **ErrorAndContinue**。 当任务失败时，`Target` 元素中的后续任务和生成将继续执行，并且来自该任务的所有错误都被视为错误。  
   
--   **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。  
+- **ErrorAndStop** 或 **false**（默认值）。 当任务失败时，将不会执行 `Target` 元素中的剩余任务和生成，并且整个 `Target` 元素和生成都被视为已失败。  
   
- 4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。  
+  4.5 之前的 .NET Framework 版本仅支持 `true` 和 `false` 值。  
   
- `ContinueOnError` 的默认值为 `ErrorAndStop`。 如果你将属性设置为 `ErrorAndStop`，则会使此行为对读取项目文件的任何人都显式可见。  
+  `ContinueOnError` 的默认值为 `ErrorAndStop`。 如果你将属性设置为 `ErrorAndStop`，则会使此行为对读取项目文件的任何人都显式可见。  
   
 #### <a name="to-ignore-an-error-in-a-task"></a>忽略任务中的错误  
   

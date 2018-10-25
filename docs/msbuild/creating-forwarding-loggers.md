@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e84e6c3637fb5d40dfcef14e8dd6a06dc47ce
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6597bfcdcbfb5acddbbbf8804d198036c5b98c53
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179198"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880967"
 ---
 # <a name="create-forwarding-loggers"></a>创建转发记录器
 在多处理器系统上生成项目时，转发记录器允许选择要监视的事件，提高了日志记录效率。 启用转发记录器后，可防止不必要的事件影响中心记录器、降低生成速度以及造成日志混乱。  
@@ -35,7 +35,7 @@ ms.locfileid: "39179198"
  在多处理器环境中，事件消息的接收顺序可能是紊乱的。 因此，必须使用转发记录器中的事件处理程序评估事件，并对其进行编程，才能确定将哪些事件传递给重定向程序以转发到中心记录器。 为此，可使用附加到每条消息上的 <xref:Microsoft.Build.Framework.BuildEventContext> 类来协助标识要转发的事件，然后将事件名称传递给 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 类（或其子类）。 在使用此方法时，无需要其他特定的编码即可转发事件。  
   
 ## <a name="specify-a-forwarding-logger"></a>指定转发记录器  
- 转发记录器编译为程序集后，必须告知 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在生成过程中使用该程序集。 为此，请使用 `/FileLogger`、`/FileLoggerParameters` 和 `/DistributedFileLogger` 开关，以及 MSBuild.exe。 `/FileLogger` 开关会告知 MSBuild.exe 已直接附加记录器。 `/DistributedFileLogger` 开关表示每个节点都存在一个日志文件。 要在转发记录器上设置参数，请使用 `/FileLoggerParameters` 开关。 有关以上开关和其他 MSBuild.exe 开关的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
+ 转发记录器编译为程序集后，必须告知 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在生成过程中使用该程序集。 为此，请使用 `-FileLogger`、`-FileLoggerParameters` 和 `-DistributedFileLogger` 开关，以及 MSBuild.exe。 `-FileLogger` 开关会告知 MSBuild.exe 已直接附加记录器。 `-DistributedFileLogger` 开关表示每个节点都存在一个日志文件。 要在转发记录器上设置参数，请使用 `-FileLoggerParameters` 开关。 有关以上开关和其他 MSBuild.exe 开关的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
 ## <a name="multi-processor-aware-loggers"></a>可识别多处理器的记录器  
  在多处理器系统上生成项目时，来自每个处理器的生成消息并不会按统一的顺序自动交错。 因此，必须使用附加到每条消息上的 <xref:Microsoft.Build.Framework.BuildEventContext> 类建立消息分组优先级。 有关多处理器生成的详细信息，请参阅[多处理器环境下的日志记录](../msbuild/logging-in-a-multi-processor-environment.md)。  

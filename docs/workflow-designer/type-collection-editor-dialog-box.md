@@ -12,37 +12,37 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 09bb5c7789be78a39a8d33a556ce66385db4a1d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 08c6e8e2f7851d74bfbeb0399dd758ae0ca25b4f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31973009"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812736"
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 
-**类型集合编辑器**对话框用于添加到已知的类型**发送**和**接收**活动。 此外可以使用此对话框来添加到泛型类型自变量**InvokeMethod**活动。 当用于**发送**和**接收**活动添加已知的类型，**类型集合编辑器**对话框需要类型添加项。 是唯一的。 如果添加了重复的类型，并且通过单击提交了更改**确定**，返回错误消息。 当用于**InvokeMethod**活动添加泛型类型参数时，**类型集合编辑器**对话框允许添加重复的类型。
+**类型集合编辑器**使用对话框添加到已知的类型**发送**并**接收**活动。 此对话框还用于添加到泛型类型参数**InvokeMethod**活动。 当用于**发送**并**接收**活动添加已知的类型**类型集合编辑器**对话框要求添加的类型是唯一的。 如果添加了重复的类型，并通过单击提交更改**确定**，返回一条错误消息。 当用于**InvokeMethod**活动添加泛型类型参数**类型集合编辑器**对话框允许添加重复的类型。
 
 有关详细信息，请参阅[数据协定已知的类型](/dotnet/framework/wcf/feature-details/data-contract-known-types)。
 
-下表描述的用户界面 (UI) 元素**类型集合**对话框。
+下表介绍的用户界面 (UI) 元素**类型的集合**对话框。
 
 |UI 元素|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**类型列表**|已添加或移除的类型的列表。|
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>为 Send 和 Receive 活动打开“类型集合编辑器”
 
 1.  选择**发送**或**接收**设计视图中的活动。
 
-2.  按**F4**弹出**属性**窗口。
+2.  按**F4**以打开**属性**窗口。
 
-3.  在**属性**窗口中，单击省略号按钮旁边**KnownTypes**属性。
+3.  在中**属性**窗口中，单击旁边的省略号按钮**KnownTypes**属性。
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>为 InvokeMethod 活动打开“类型集合编辑器”
 
 1.  选择**InvokeMethod**设计视图中的活动。
 
-2.  按**F4**弹出**属性**窗口。
+2.  按**F4**以打开**属性**窗口。
 
-3.  在**属性**窗口中，单击省略号按钮旁边**GenericTypeArguments**属性。
+3.  在中**属性**窗口中，单击旁边的省略号按钮**GenericTypeArguments**属性。

@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ee20be802884e20b885e232da43f2ade9f96dbfb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5053910e4f5760648eef989162eb31e3c3cc5c9e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896323"
 ---
 # <a name="xml-editor"></a>XML 编辑器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,27 +27,27 @@ ms.locfileid: "49236868"
   
 “XML 编辑器”基于 [!INCLUDE[msCoName](../includes/msconame-md.md)] Visual Studio 文本编辑器，并增加了对 XML 语言的支持。 “XML 编辑器”具有下列功能：  
   
--   XML 1.0 语法检查。  
+- XML 1.0 语法检查。  
   
--   键入时的架构验证。  
+- 键入时的架构验证。  
   
--   XML 代码段支持，包括从架构生成的代码段。  
+- XML 代码段支持，包括从架构生成的代码段。  
   
--   支持文档类型定义 (DTD)。  
+- 支持文档类型定义 (DTD)。  
   
--   支持 XML 架构定义语言 (XSD) 架构。  
+- 支持 XML 架构定义语言 (XSD) 架构。  
   
--   从 XML 实例文档创建 XML 架构。  
+- 从 XML 实例文档创建 XML 架构。  
   
--   将 DTD 或 XML 数据简化 (XDR) 架构转换为 XML 架构。  
+- 将 DTD 或 XML 数据简化 (XDR) 架构转换为 XML 架构。  
   
--   XSLT 1.0 语法检查。  
+- XSLT 1.0 语法检查。  
   
--   文档以大纲方式显示，从而使得可以展开和折叠元素。  
+- 文档以大纲方式显示，从而使得可以展开和折叠元素。  
   
--   与集成[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 这可提供 XML 架构的分层视图。  
+- 与集成[XML 架构资源管理器](../xml-tools/xml-schema-explorer.md)。 这可提供 XML 架构的分层视图。  
   
- 将为 .xml、.xsd、.xsl 和 .config 等常见的文件扩展名调用 XML 编辑器。如果文件似乎包含 XML，未知的文件扩展名也会调用“XML 编辑器”。 您可以还打开任何文件使用 XML 编辑器中使用**打开**选项，并从列表中选择 XML 编辑器。  
+  将为 .xml、.xsd、.xsl 和 .config 等常见的文件扩展名调用 XML 编辑器。如果文件似乎包含 XML，未知的文件扩展名也会调用“XML 编辑器”。 您可以还打开任何文件使用 XML 编辑器中使用**打开**选项，并从列表中选择 XML 编辑器。  
   
 ## <a name="express-editions"></a>Express Editions  
  Visual Studio Express Edition 中无法使用下列 XML 编辑器功能：  

@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE |Microsoft 文档
+title: METADATA_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66a1632198a0af5490e66a843458fc55bcad2d6d
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 77e0a87f6b20093c1ddca1a9f132003f63afbaa1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134716"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900314"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
-此结构指定字段类型从元数据中获取有关的信息。  
+此结构指定从元数据字段类型有关的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,7 +45,7 @@ public struct METADATA_TYPE {
   
 #### <a name="parameters"></a>参数  
  ulAppDomainID  
- 符号源于应用程序 ID。 这用于唯一标识应用程序的实例。  
+ 符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。  
   
  guidModule  
  包含此字段的模块的 GUID。  
@@ -67,7 +67,7 @@ public struct METADATA_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

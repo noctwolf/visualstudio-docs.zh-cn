@@ -30,12 +30,12 @@ caps.latest.revision: 56
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bdf517e94fe829d92ab95826899008323e1e3cb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1fb0f55783d40e92187a0d4091fecd50a27e3c89
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232253"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837433"
 ---
 # <a name="using-dump-files"></a>使用转储文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,40 +65,40 @@ ms.locfileid: "49232253"
 ##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> 使用或不带堆的转储文件  
  你可以创建带有或不带堆信息的转储文件。  
   
--   **转储文件的堆**包含应用程序的内存的快照。 这包括创建转储时的变量的值。 如果加载与堆一起保存的转储文件，即使未找到应用程序二进制文件，Visual Studio 也可以加载符号。 Visual Studio 还会在转储文件中保存加载的本机模块的二进制文件，这可让调试更加容易。  
+- **转储文件的堆**包含应用程序的内存的快照。 这包括创建转储时的变量的值。 如果加载与堆一起保存的转储文件，即使未找到应用程序二进制文件，Visual Studio 也可以加载符号。 Visual Studio 还会在转储文件中保存加载的本机模块的二进制文件，这可让调试更加容易。  
   
--   **转储文件不带堆**比带有堆信息的转储小得多。 但是，调试器必须加载应用程序二进制文件才能查找符号信息。 该二进制文件必须与创建转储时使用的二进制文件完全匹配。 仅在不带堆数据的转储文件中存储堆栈变量的值。  
+- **转储文件不带堆**比带有堆信息的转储小得多。 但是，调试器必须加载应用程序二进制文件才能查找符号信息。 该二进制文件必须与创建转储时使用的二进制文件完全匹配。 仅在不带堆数据的转储文件中存储堆栈变量的值。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Requirements_and_limitations"></a> 要求和限制  
   
--   调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。  
+- 调试优化过代码的转储文件可能让人困惑。 例如，函数的编译器内联可能产生意外的调用堆栈，而其他优化可能更改变量的生存期。  
   
--   64 位计算机中的转储文件必须在运行于 64 位计算机中的 Visual Studio 的实例上进行调试。  
+- 64 位计算机中的转储文件必须在运行于 64 位计算机中的 Visual Studio 的实例上进行调试。  
   
--   在 VS 2013 之前的 Visual Studio 版本中，对于在 64 位计算机上运行的 32 位应用，通过某些工具（例如，任务管理器和 64 位 WinDbg）收集的转储无法在 Visual Studio 中打开。 VS 2013 中已经取消了此限制。  
+- 在 VS 2013 之前的 Visual Studio 版本中，对于在 64 位计算机上运行的 32 位应用，通过某些工具（例如，任务管理器和 64 位 WinDbg）收集的转储无法在 Visual Studio 中打开。 VS 2013 中已经取消了此限制。  
   
--   Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。  
+- Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 Visual Studio 还可以调试 ARM 设备中的托管应用的应用转储文件，但仅限于本机调试器中。  
   
--   若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的调试工具的 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
+- 若要调试[内核模式](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx)转储文件在 Visual Studio 2013，请下载[Windows 8.1 版本的调试工具的 Windows](http://msdn.microsoft.com/windows/hardware/gg463009)。 请参阅[Visual Studio 中的内核调试](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx)。  
   
--   Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。  
+- Visual Studio 无法调试转储文件保存在名为较旧转储格式[完整的用户模式转储](http://msdn.microsoft.com/library/windows/hardware/ff545506.aspx)。 请注意，完全用户模式转储与带有堆的转储不同。  
   
--   若要使用调试[SOS.dll （SOS 调试扩展）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版： 下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
+- 若要使用调试[SOS.dll （SOS 调试扩展）](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)在 Visual Studio 中，您必须安装调试工具的 Windows 的 Windows 驱动程序工具包 (WDK) 的一部分。 请参阅[Windows 8.1 预览版： 下载工具包、 组件和工具](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx)。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Create_a_dump_file"></a> 创建转储文件  
  使用 Visual Studio 创建转储文件：  
   
--   在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**另存为转储**，**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。  
+- 在 Visual Studio 中调试进程时，你可以在调试器已在异常或断点处停止时保存转储文件。 选择**另存为转储**，**调试**。 在中**转储另存为**对话框中**另存为类型**列表中，可以选择**小型转储**或**附带堆信息的小型转储**（默认值）。  
   
--   与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
+- 与[实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)启用，可以将调试器附加到在调试器外部运行的故障进程，然后保存转储文件。 请参阅[将附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
- 你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。  
+  你还可以使用支持 Windows 小型转储格式的任意程序创建转储文件。 例如， **Procdump**从命令行实用工具[Windows Sysinternals](http://technet.microsoft.com/sysinternals/default)可以创建基于触发器或按需进程故障转储文件。 请参阅[要求和限制](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations)在此主题中有关使用其他工具创建转储文件的其他信息。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_Open_a_dump_file"></a> 打开转储文件  
   
@@ -115,33 +115,33 @@ ms.locfileid: "49232253"
 ##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> 查找二进制文件、 符号 (.pdb) 文件和源文件  
  若要使用 Visual Studio 的完整功能来调试转储文件，则需要访问以下文件：  
   
--   为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。  
+- 为其执行转储的 .exe 文件和转储过程中使用的其他二进制文件（DLL 等）。  
   
-     如果要调试带有堆数据的转储，则 Visual Studio 可以处理某些模块缺少二进制文件的情况，但是它必须具有足够多的模块的二进制文件才能生成有效的调用堆栈。 Visual Studio 将本机模块包含在带有堆的转储文件中。  
+   如果要调试带有堆数据的转储，则 Visual Studio 可以处理某些模块缺少二进制文件的情况，但是它必须具有足够多的模块的二进制文件才能生成有效的调用堆栈。 Visual Studio 将本机模块包含在带有堆的转储文件中。  
   
--   .exe 的符号 (.pdb) 文件以及其他二进制文件。  
+- .exe 的符号 (.pdb) 文件以及其他二进制文件。  
   
--   与你相关的模块的源文件。  
+- 与你相关的模块的源文件。  
   
-     可执行文件和 .pdb 文件必须与创建转储时使用的文件的版本和内部版本完全匹配。  
+   可执行文件和 .pdb 文件必须与创建转储时使用的文件的版本和内部版本完全匹配。  
   
-     如果你找不到源文件，则可以使用模块的反汇编进行调试。  
+   如果你找不到源文件，则可以使用模块的反汇编进行调试。  
   
- **可执行文件的默认搜索路径**  
+  **可执行文件的默认搜索路径**  
   
- Visual Studio 会自动搜索未包含在转储文件中的可执行文件的位置：  
+  Visual Studio 会自动搜索未包含在转储文件中的可执行文件的位置：  
   
-1.  包含转储文件的目录。  
+1. 包含转储文件的目录。  
   
-2.  转储文件中指定的模块的路径。 这是收集转储的计算机上的模块路径。  
+2. 转储文件中指定的模块的路径。 这是收集转储的计算机上的模块路径。  
   
-3.  中指定的符号路径**调试**，**选项**，**符号**页上的 Visual Studio**工具**，**选项**对话框。 你可以在此页上添加更多要搜索的位置。  
+3. 中指定的符号路径**调试**，**选项**，**符号**页上的 Visual Studio**工具**，**选项**对话框。 你可以在此页上添加更多要搜索的位置。  
   
- **使用无二进制符号 / 无源页**  
+   **使用无二进制符号 / 无源页**  
   
- 如果 Visual Studio 找不到所需调试转储中的模块的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+   如果 Visual Studio 找不到所需调试转储中的模块的文件，它将显示相应的页 (**未找到二进制**，**未找到符号**，或**未找到源**)。 这些页面提供了有关问题原因的详细信息，并提供了可帮助你识别文件的正确位置的操作链接。 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ## <a name="see-also"></a>请参阅  
  [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   

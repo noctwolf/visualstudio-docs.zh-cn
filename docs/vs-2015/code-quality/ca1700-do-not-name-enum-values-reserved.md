@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 58b1d329447ab73f9df93d2f75a62c2e21a6dcfc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3229b8432af89857d1aadd8bf1531c8b11a29ed7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204719"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897987"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700： 不要命名枚举值&#39;保留&#39;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotNameEnumValuesReserved|
@@ -46,11 +47,11 @@ ms.locfileid: "49204719"
 
  在有限数量的情况下成员的添加是一项重大更改，即使原始成员保留其原始值。 首先，新的成员不能返回从现有的代码路径而不会破坏使用的调用方`switch`(`Select`中[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) 返回值使用一个包含整个成员列表和的引发异常的语句默认情况。 次要问题是，客户端代码可能不处理行为的反射方法更改如<xref:System.Enum.IsDefined%2A?displayProperty=fullName>。 相应地，如果要从现有方法中返回具有新的成员，或者已知的应用程序不兼容时由于较差的反射，唯一的非中断性解决方案是：
 
-1.  添加新的枚举，它包含原始的和新成员。
+1. 添加新的枚举，它包含原始的和新成员。
 
-2.  标记使用的原始枚举<xref:System.ObsoleteAttribute?displayProperty=fullName>属性。
+2. 标记使用的原始枚举<xref:System.ObsoleteAttribute?displayProperty=fullName>属性。
 
- 请按照相同的过程的任何外部可见的类型或公开原始枚举的成员。
+   请按照相同的过程的任何外部可见的类型或公开原始枚举的成员。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请删除或重命名的成员。

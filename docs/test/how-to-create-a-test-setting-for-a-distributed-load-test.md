@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d2ee44fd277766cb206f3e1e71ed52be6d406a08
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b7d7592d1bdbce0a5a80b304a89c7eaa28875502
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381063"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816048"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分布式负载测试创建测试设置
 
@@ -124,7 +124,7 @@ Visual Studio 的测试设置存储在一个文件中。 测试设置定义了�
      **用于负载测试的诊断数据适配器**
 
     |诊断数据适配器|在负载测试中使用|关联主题|
-    |-----------------------------|-------------------------|----------------------|
+    |-|-------------------------|-|
     |用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理：此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。|![“信息”图标](../test/media/vc364f4.gif)<br /><br /> 除非你具有收集测试代理计算机的系统信息的特定需要，否则不要包含此适配器。 注意：建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集的数据量太大而导致问题。 <br /><br /> 测试影响数据不是使用负载测试收集到的。||
     |**IntelliTrace：** 可以配置特定诊断跟踪信息，该信息存储在一个日志文件中。 该日志文件的扩展名为 .tdlog。 运行测试时如果某个测试步骤未通过，则可以创建一个 Bug。 包含诊断跟踪的日志文件会自动附加到此 Bug 中。 该日志文件中收集的数据可减少重现和诊断代码中的错误所需的时间，从而提高调试效率。 可以基于此日志文件在另一台计算机上重新创建本地会话。 这会降低无法重现 Bug 的风险。<br /><br /> 有关详细信息，请参阅[收集 IntelliTrace 数据](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)。|![“重要事项”图标](../test/media/vc364f3.gif)<br /><br /> 我们建议不要在负载测试中使用 IntelliTrace 适配器，因为这样会因收集和记录的数据量太大而导致问题。 应该仅在运行时间不长、使用的测试代理不多的负载测试中尝试使用 IntelliTrace 适配器。|[如何：收集 IntelliTrace 数据以帮助调试难题](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |ASP.NET 探查器：可以创建包含 ASP.NET 分析的测试设置，该分析收集 ASP.NET Web 应用程序的性能数据。|ASP.NET 探查器诊断数据适配器分析 Internet Information Services (IIS) 进程，因此它不针对开发 Web 服务器工作。 若要在负载测试中分析网站，必须在运行 IIS 的计算机上安装测试代理。 测试代理不生成负载，它是仅用于收集的代理。 有关详细信息，请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。|[如何：使用测试设置为负载测试配置 ASP.NET 探查器](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|

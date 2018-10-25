@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 0bd6c2c2ebad1526a06cccdffef38936d201fc0b
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 18cad086419be13a666d4eddbf454885c9cf9c36
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860415"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812486"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
 您可以在任何应用程序中打开 DSL 模型。
@@ -58,13 +58,13 @@ ms.locfileid: "47860415"
 ## <a name="reading-from-a-file"></a>从文件进行读取
  下面的示例可读取的 DSL 的重要类是按如下所示：
 
--   FamilyTreeModel
+- FamilyTreeModel
 
--   FamilyTreeSerializationHelper
+- FamilyTreeSerializationHelper
 
--   FamilyTreeDomainModel
+- FamilyTreeDomainModel
 
- 在此 DSL 的其他域类是人。
+  在此 DSL 的其他域类是人。
 
 ```csharp
 using System;

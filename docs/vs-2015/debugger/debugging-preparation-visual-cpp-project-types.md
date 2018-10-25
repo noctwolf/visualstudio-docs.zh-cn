@@ -25,12 +25,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cd2726c8b67344fbed4c1aec7dc89eef288b573d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa800b52f1477fa55caaab606d5fb1e87ead147d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868570"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>调试准备：Visual C++ 项目类型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49304936"
   
  [Win32 项目](#BKMK_Win32_Projects)  
   
--   [若要调试的 C 或 c + + Win32 应用程序](#BKMK_To_debug_a_C_or_C___Win32_application)  
+- [若要调试的 C 或 c + + Win32 应用程序](#BKMK_To_debug_a_C_or_C___Win32_application)  
   
--   [若要手动设置调试配置](#BKMK_To_manually_set_a_Debug_configuration)  
+- [若要手动设置调试配置](#BKMK_To_manually_set_a_Debug_configuration)  
   
- [Windows 窗体应用程序 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
+  [Windows 窗体应用程序 (.NET)](#BKMK_Windows_Forms_Applications___NET_)  
   
 ##  <a name="BKMK_Recommended_Property_Settings"></a> 建议的属性设置  
  应以相同的方式设置所有非托管调试方案的某些属性。 以下各表显示了建议的属性设置。 未在此处列出的设置可能有各种不同的非托管项目类型。 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)  
@@ -84,25 +84,25 @@ ms.locfileid: "49304936"
   
 ###  <a name="BKMK_To_manually_set_a_Debug_configuration"></a> 若要手动设置调试配置  
   
-1.  上**视图**菜单上，单击**属性页**。  
+1. 上**视图**菜单上，单击**属性页**。  
   
-2.  单击**配置属性**节点以打开它，如果尚未  
+2. 单击**配置属性**节点以打开它，如果尚未  
   
-3.  选择**常规**，并将值设置**输出**到行**调试**。  
+3. 选择**常规**，并将值设置**输出**到行**调试**。  
   
-4.  打开**C/c + +** 节点，然后选择**常规**。  
+4. 打开**C/c + +** 节点，然后选择**常规**。  
   
-     在中**调试**行指定的调试信息由编译器生成的类型。 可以选择的值包括**程序数据库 (/Zi)** 或**用于编辑并继续 (/ZI) 的程序数据库**。  
+    在中**调试**行指定的调试信息由编译器生成的类型。 可以选择的值包括**程序数据库 (/Zi)** 或**用于编辑并继续 (/ZI) 的程序数据库**。  
   
-5.  选择**优化**，然后在**优化**行中，选中**已禁用 (/ 0d)** 从下拉列表。  
+5. 选择**优化**，然后在**优化**行中，选中**已禁用 (/ 0d)** 从下拉列表。  
   
-     优化代码更难调试，因为生成的指令与源代码并不直接对应。 如果发现程序具有只出现在优化代码中的 bug，则可以打开此设置，但应记住“反汇编”窗口中显示的代码是从可能与在源窗口中见到的内容不匹配的优化源生成的。 有些功能（如单步执行）显示的断点和执行点有可能不正确。  
+    优化代码更难调试，因为生成的指令与源代码并不直接对应。 如果发现程序具有只出现在优化代码中的 bug，则可以打开此设置，但应记住“反汇编”窗口中显示的代码是从可能与在源窗口中见到的内容不匹配的优化源生成的。 有些功能（如单步执行）显示的断点和执行点有可能不正确。  
   
-6.  打开**链接器**节点，然后选择**调试**。 在第一个**Generate**行中，选中**是 (/debug)** 从下拉列表。 调试期间应始终这样设置。  
+6. 打开**链接器**节点，然后选择**调试**。 在第一个**Generate**行中，选中**是 (/debug)** 从下拉列表。 调试期间应始终这样设置。  
   
- 有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
+   有关详细信息，请参阅[c + + 调试配置的项目设置](../debugger/project-settings-for-a-cpp-debug-configuration.md)。  
   
- [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
+   [在本主题中](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)  
   
 ##  <a name="BKMK_Windows_Forms_Applications___NET_"></a> Windows 窗体应用程序 (.NET)  
  **Windows 窗体应用程序 (.NET)** 模板创建[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]Windows 窗体应用程序。 有关详细信息，请参阅 [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  

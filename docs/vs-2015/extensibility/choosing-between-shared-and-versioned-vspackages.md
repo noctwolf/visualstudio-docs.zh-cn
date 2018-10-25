@@ -17,12 +17,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d642c265104f490739613897e1fd5c177ac0d6f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 75bc095ba4e9fc12033787b64dd516459e574b26
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263687"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49859925"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>选择共享的 VSPackage 和带有版本的 VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ ms.locfileid: "49263687"
 ## <a name="binary-compatibility"></a>二进制文件兼容性  
  通常情况下，二进制文件兼容性使开发与早期版本的 Visual Studio 在更高版本的 Visual Studio 中运行的本机代码 Vspackage。 但是，有三个重要的例外情况：  
   
--   如果你的 VSPackage 依赖于特定版本的公共语言运行时，则它必须确定哪一个版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]正在运行。  
+- 如果你的 VSPackage 依赖于特定版本的公共语言运行时，则它必须确定哪一个版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]正在运行。  
   
--   VSPackage 可能依赖于另一个 VSPackage 或另一个产品的特定功能。 因此，VSPackage 可以仅在满足依赖项，在运行。  
+- VSPackage 可能依赖于另一个 VSPackage 或另一个产品的特定功能。 因此，VSPackage 可以仅在满足依赖项，在运行。  
   
--   安全修补程序中，VSPackage 可能会影响[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]service pack 或更高版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在这些情况下，与早期版本的开发 VSPackage[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]的版本中可能会不运行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用安全修补程序后。 但是，可以重新生成包与更高版本，并将其在早期版本中还运行。  
+- 安全修补程序中，VSPackage 可能会影响[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]service pack 或更高版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 在这些情况下，与早期版本的开发 VSPackage[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]的版本中可能会不运行[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]应用安全修补程序后。 但是，可以重新生成包与更高版本，并将其在早期版本中还运行。  
   
- 必须使用版本的生成托管的 Vspackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]并[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]匹配的目标版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+  必须使用版本的生成托管的 Vspackage[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]并[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]匹配的目标版本[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
- 除了规划你的 VSPackage 的二进制文件的二进制文件兼容性，您还应考虑解决方案和项目文件格式。 如果你的 VSPackage 创建一个新的项目类型，则必须确定它是否可以运行一个版本中或在多个版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 有关详细信息，请参阅[升级自定义项目](../misc/upgrading-custom-projects.md)。  
+  除了规划你的 VSPackage 的二进制文件的二进制文件兼容性，您还应考虑解决方案和项目文件格式。 如果你的 VSPackage 创建一个新的项目类型，则必须确定它是否可以运行一个版本中或在多个版本的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。 有关详细信息，请参阅[升级自定义项目](../misc/upgrading-custom-projects.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 Windows Installer 安装 Vspackage](../extensibility/internals/installing-vspackages-with-windows-installer.md)   

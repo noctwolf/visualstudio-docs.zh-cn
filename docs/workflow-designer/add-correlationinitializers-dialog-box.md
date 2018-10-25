@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d54724655db7147c06687aa88a4fe623bb277a45
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 724c4e3ac911e5fda62304a08565937f38425368
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756933"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948949"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>“添加相关初始值设定项”对话框
 
@@ -33,7 +33,7 @@ ms.locfileid: "36756933"
 下表介绍的用户界面 (UI) 元素**添加相关初始值设定项**对话框：
 
 |UI 元素|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**添加初始值设定项**|单击**添加 initialize**框以将其他初始值设定项添加到集合。|
 |**相关类型**|指定相关初始值设定项的类型。 有四种类型可供选择：<br /><br /> 1.用于指定 <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer> 的回调相关初始值设定项。<br />2.用于指定 <xref:System.ServiceModel.Activities.CorrelationInitializer> 的上下文相关初始值设定项。<br />3.用于指定 <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> 的请求-答复相关初始值设定项。<br />4.用于指定 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 的查询相关初始值设定项。<br /><br /> 若要编辑**CorrelationType**<br /><br /> 1.中的特定行的选项卡**添加初始值设定项**DataGrid。<br />2.若要将焦点设置到**CorrelationTypeComboBox**，按**Ctrl**+**选项卡**。<br />3.按 Alt + 向下弹出**组合框**和对其进行编辑。|
 |**XPath 查询**|包含用于从传入和传出消息中提取相关数据的查询的键/值对。 仅当使用 <xref:System.ServiceModel.Activities.QueryCorrelationInitializer> 类型时此列表才有效。|

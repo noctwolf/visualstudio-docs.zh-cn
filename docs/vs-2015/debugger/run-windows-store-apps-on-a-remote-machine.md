@@ -19,12 +19,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a5e6044a56bfc94f7bc0e517ccbd91ae10d5b9d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f031e81911c9a36cd2c48abf7bd2b092bb5940f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289570"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886274"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>在远程计算机上运行 Windows 应用商店应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49289570"
   
  [配置 Visual Studio 项目以便进行远程调试](#BKMK_ConnectVS)  
   
--   [为 C# 和 Visual Basic 项目选择远程设备](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
+- [为 C# 和 Visual Basic 项目选择远程设备](#BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects)  
   
--   [为 JavaScript 和 C++ 项目选择远程设备](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
+- [为 JavaScript 和 C++ 项目选择远程设备](#BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects)  
   
- [运行远程调试会话](#BKMK_RunRemoteDebug)  
+  [运行远程调试会话](#BKMK_RunRemoteDebug)  
   
 ##  <a name="BKMK_Prerequisites"></a> 先决条件  
  在远程设备上进行调试：  
@@ -123,20 +123,20 @@ ms.locfileid: "49289570"
 ##  <a name="BKMK_ConfigureRemoteDebugger"></a> 配置远程调试器  
  可以使用两个工具来修改远程调试器的配置。  
   
-1.  在 **“Visual Studio 远程调试监视器”** 的 **“工具”** 菜单上：  
+1. 在 **“Visual Studio 远程调试监视器”** 的 **“工具”** 菜单上：  
   
-    1.  选择 **“选项”** ，更改远程调试器的端口号、身份验证模式或超时间隔。  
+   1.  选择 **“选项”** ，更改远程调试器的端口号、身份验证模式或超时间隔。  
   
-    2.  选择 **“权限”** ，添加或移除具有远程调试权限的用户。  
+   2.  选择 **“权限”** ，添加或移除具有远程调试权限的用户。  
   
-        > [!NOTE]
-        >  必须为远程调试的每个用户帐户授予权限。  
+       > [!NOTE]
+       >  必须为远程调试的每个用户帐户授予权限。  
   
- 使用 **“远程调试器配置向导”** ，设置远程调试器的高级选项。 若要打开向导，请选择“开始”屏幕上的 **“远程调试器配置向导”** 。  
+   使用 **“远程调试器配置向导”** ，设置远程调试器的高级选项。 若要打开向导，请选择“开始”屏幕上的 **“远程调试器配置向导”** 。  
   
-1.  在 **“配置 Visual Studio 远程调试器”** 页上，可以选择将远程调试器作为服务运行。 在大多数情况下，不需要作为服务运行。  
+2. 在 **“配置 Visual Studio 远程调试器”** 页上，可以选择将远程调试器作为服务运行。 在大多数情况下，不需要作为服务运行。  
   
-2.  在 **“配置 Windows 防火墙以便进行调试”** 页上，您可以添加或移除要将远程调试器连接到的网络类型。 只会启用该设备当前已连接到的网络。 必须选择至少一个网络。  
+3. 在 **“配置 Windows 防火墙以便进行调试”** 页上，您可以添加或移除要将远程调试器连接到的网络类型。 只会启用该设备当前已连接到的网络。 必须选择至少一个网络。  
   
 ##  <a name="BKMK_ConnectVS"></a> 配置 Visual Studio 项目以便进行远程调试  
  可在项目的属性中指定所连接到的远程计算机。 该过程因编程语言而有所不同。 可键入远程设备的网络名称，也可从“选择远程调试器连接”对话框中选择该设备。  

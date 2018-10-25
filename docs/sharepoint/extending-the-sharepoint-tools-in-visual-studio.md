@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 312c216f3670599653ddc6833f3e8f0e5cf5a8d2
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: f360982f26cf2eb9ffe26678743bb514d9606ae7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42625919"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890668"
 ---
 # <a name="extend-the-sharepoint-tools-in-visual-studio"></a>扩展 Visual Studio 中的 SharePoint 工具
   Visual Studio 中的 SharePoint 工具满足许多应用程序开发方案的要求。 但是，可能会发现它们不提供你或其他开发人员需要的功能的情况。 在这些情况下，您可以扩展 SharePoint 工具以创建所需的功能。
@@ -38,11 +38,11 @@ ms.locfileid: "42625919"
 ### <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的 SharePoint 连接节点
  在 Visual Studio 中，你可以使用**SharePoint 连接**中的节点**服务器资源管理器**窗口以分层树视图中查看许多组件的一个或多个本地 SharePoint 站点。 您还可以扩展**SharePoint 连接**节点中的以下方法：
 
--   通过添加自己的节点。 这是你想要显示的 SharePoint 网站的默认情况下不显示组件的情况下很有用。
+- 通过添加自己的节点。 这是你想要显示的 SharePoint 网站的默认情况下不显示组件的情况下很有用。
 
--   通过扩展现有节点。 例如，可以将新的子节点添加到现有节点，或者可以添加到节点的快捷菜单项和开发人员单击菜单项时执行任务。
+- 通过扩展现有节点。 例如，可以将新的子节点添加到现有节点，或者可以添加到节点的快捷菜单项和开发人员单击菜单项时执行任务。
 
- 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
+  有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
 
 ## <a name="development-computer-requirements"></a>开发计算机要求
  若要创建 SharePoint 工具扩展，在开发计算机必须满足相同要求的 Visual Studio 中创建 SharePoint 解决方案。

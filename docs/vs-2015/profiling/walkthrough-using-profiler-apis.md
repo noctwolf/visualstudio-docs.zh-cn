@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ad4b22be98396fe58734f9c785da201450bdafcc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d046015b1a88b3699fa8ef572e39e2ffefec2064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49172531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898754"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,19 +124,19 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中收集和查看数据  
   
-1.  打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。 在“分析”菜单上指向“探查器”，然后选择“新建性能会话”。  
+1. 打开 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE。 在“分析”菜单上指向“探查器”，然后选择“新建性能会话”。  
   
-2.  将编译的二进制文件添加到“性能资源管理器”窗口的“目标”列表中。 右键单击“目标”，然后选择“添加目标二进制文件”。 在“添加目标二进制文件”对话框中找到二进制文件，然后单击“打开”。  
+2. 将编译的二进制文件添加到“性能资源管理器”窗口的“目标”列表中。 右键单击“目标”，然后选择“添加目标二进制文件”。 在“添加目标二进制文件”对话框中找到二进制文件，然后单击“打开”。  
   
-3.  从“性能资源管理器”工具栏上的“方法”列表中选择“检测”。  
+3. 从“性能资源管理器”工具栏上的“方法”列表中选择“检测”。  
   
-4.  单击“启动并启用分析功能”。  
+4. 单击“启动并启用分析功能”。  
   
-     探查器将检测和执行该二进制文件，并创建一个性能报告文件。 性能报告文件将显示在“性能资源管理器”的“报告”节点中。  
+    探查器将检测和执行该二进制文件，并创建一个性能报告文件。 性能报告文件将显示在“性能资源管理器”的“报告”节点中。  
   
-5.  打开生成的性能报告文件。  
+5. 打开生成的性能报告文件。  
   
- 默认情况下，当探查器启动时，探查器将在全局级别收集数据。 下面的代码位于程序开头，其功能是关闭全局分析。  
+   默认情况下，当探查器启动时，探查器将在全局级别收集数据。 下面的代码位于程序开头，其功能是关闭全局分析。  
   
 ```  
 DataCollection.StopProfile(  

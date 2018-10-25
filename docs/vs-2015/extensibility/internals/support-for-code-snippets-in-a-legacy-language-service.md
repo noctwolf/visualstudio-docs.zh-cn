@@ -17,12 +17,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 71098c0dda7c06f446658c4970d0b6cf2e35e55e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d1769b4064b92283e75c242a5abb897296c5156
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198505"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847773"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -335,15 +335,15 @@ namespace TestLanguagePackage
   
  当语言服务获取的快捷名称时，它将调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A>方法来获取文件名和代码片段的标题。 语言服务然后调用<xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A>中的方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>类，以插入代码片段。 通过 Visual Studio 中给定的顺序调用以下方法<xref:Microsoft.VisualStudio.Package.ExpansionProvider>在过程中插入代码段的类：  
   
-1.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-2.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+2. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-3.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+3. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
- 获取语言服务的安装的代码片段的列表的详细信息，请参阅[演练： 获取列表的安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
+   获取语言服务的安装的代码片段的列表的详细信息，请参阅[演练： 获取列表的安装代码片段 （旧版实现）](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。  
   
 ## <a name="implementing-the-expansionfunction-class"></a>实现 ExpansionFunction 类  
  扩展函数是命名的函数的嵌入代码片段模板，并返回一个或多个要放置在一个字段的值。 为了支持扩展函数语言服务中，你必须从派生类<xref:Microsoft.VisualStudio.Package.ExpansionFunction>类，实现<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A>方法。 然后必须重写<xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A>中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>类以返回你的版本的新实例化<xref:Microsoft.VisualStudio.Package.ExpansionFunction>支持每个扩展函数的类。 如果您支持的可能值的扩展函数的列表，还必须重写<xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A>中的方法<xref:Microsoft.VisualStudio.Package.ExpansionFunction>类以返回这些值的列表。  

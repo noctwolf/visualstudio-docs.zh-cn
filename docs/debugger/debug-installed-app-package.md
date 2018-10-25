@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 291f24c6ffdf885cf3d24c5ff163c2f4f911d7ce
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279545"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908233"
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>调试 Visual Studio (UWP) 中的已安装的应用程序包
 
@@ -78,25 +78,25 @@ ms.locfileid: "44279545"
 
      如果您不能将附加使用计算机名称 (在选择后**启动**)，改为使用的 IP 地址。 用于 XBox、 HoloLens 或 IoT 设备的 IP 地址。
 
-5. 选择如何通过选择中的一个选项来进行身份验证**身份验证模式**。
+6. 选择如何通过选择中的一个选项来进行身份验证**身份验证模式**。
 
     对于大多数应用中，保留默认值**通用 （未加密的协议）**。
 
-6. 选择你想要调试时所应用的名称**运行**或**未在运行**，然后选择**启动**或 （对于正在运行的应用）**附加**。
+7. 选择你想要调试时所应用的名称**运行**或**未在运行**，然后选择**启动**或 （对于正在运行的应用）**附加**。
 
      如果选择**不启动，但在启动时调试我的代码**，这会导致 Visual Studio 调试器附加到你的应用程序包时在自定义时启动它。 这是调试中的控制路径的有效途径[不同的启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，如使用自定义参数的协议激活。
 
      当第一次调试连接 XBox、 HoloLens 或 IoT 设备上安装的应用包时，Visual Studio 安装的目标设备的远程调试器的正确版本。 这可能需要一点时间，你将看到一条消息``Starting remote debugger``而发生这种情况。
 
      > [!NOTE]
-> 在展示，XBox 或 HoloLens 设备将在附有如果它已在运行调试器的情况下重新启动应用。
+   > 在展示，XBox 或 HoloLens 设备将在附有如果它已在运行调试器的情况下重新启动应用。
 
 UWP 应用的远程部署的高级选项的信息，请参阅 [部署和调试 UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)。 
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
- [远程调试](../debugger/remote-debugging.md)  
+ [Remote Debugging](../debugger/remote-debugging.md)  
  [配置 Windows 防火墙以便进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1669a13b047236044e5f7c65c2d27e187096b62b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 140dea9d65260a4ea5140e09df5876a59e64b2de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267457"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49938599"
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ ms.locfileid: "49267457"
 ### <a name="links-to-related-graphics-objects"></a>指向相关图形对象的链接  
  有时需要附加上下文才能确定绘图调用为何以特定方式与图形管道进行交互。 为了使这一附加上下文更易于查找，“图形管道阶段”窗口链接到一个或多个对象，这些对象可提供与图形管道中发生的情况相关的附加上下文。  
   
--   在 Direct3D 12 中，此对象通常是命令列表。  
+- 在 Direct3D 12 中，此对象通常是命令列表。  
   
--   在 Direct3D 11 中，此对象通常是图形设备上下文。  
+- 在 Direct3D 11 中，此对象通常是图形设备上下文。  
   
- 这些链接是位于“图形管道阶段”窗口左上角的当前图形事件签名的一部分。 访问其中任何链接都可检查有关对象的其他详细信息。  
+  这些链接是位于“图形管道阶段”窗口左上角的当前图形事件签名的一部分。 访问其中任何链接都可检查有关对象的其他详细信息。  
   
 ### <a name="viewing-and-debugging-shader-code"></a>查看和调试着色器代码  
  可以在“管道阶段”窗口中使用相应阶段底部的控件，来针对顶点、外壳、域、几何和像素着色器检查和调试代码。  

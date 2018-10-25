@@ -1,5 +1,5 @@
 ---
-title: IDebugProcessEx2::Detach |Microsoft 文档
+title: IDebugProcessEx2::Detach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0423ae28bfee6e9acf10e2a9682e58a973c37d70
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 1369f33e047ed2340ce8f3b181e581512f9bd233
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932112"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-此方法将通知过程会话不再调试进程。  
+此方法将通知该过程在会话不再调试进程。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,13 +41,13 @@ int Detach(
   
 #### <a name="parameters"></a>参数  
  `pSession`  
- [in]一个值，唯一标识要分离从此进程的会话。  
+ [in]一个值，唯一标识要分离从的此进程的会话。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 接口中进行传递`pSession`是若要仅作为 cookie 处理，用于唯一标识会话调试管理器，它最初的值附加到此过程; 提供的接口上的方法都正常工作。  
+ 接口传入`pSession`仅作为 cookie 处理，用于唯一标识会话调试管理器最初的值附加到此过程; 上提供的接口的方法不起作用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

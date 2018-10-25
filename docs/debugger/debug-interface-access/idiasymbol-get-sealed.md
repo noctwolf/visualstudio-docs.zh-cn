@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_sealed |Microsoft 文档'
+title: 'Idiasymbol:: Get_sealed |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d6ec278fd3ed2b3fef157c30300c16ccaaa8087b
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: e77e379d3f3635cf6976765450ba32ea6de81ef2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31478969"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841801"
 ---
 # <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-检索用于指定是否已密封的类或方法的标志。  
+检索一个标志，指定是否密封类或方法。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_sealed(
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回`TRUE`如果类或方法都密封的; 否则，返回`FALSE`。  
+ [out]返回`TRUE`类或方法都密封的; 否则，返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  密封类不能用作基类。 密封的方法不能被重写。  

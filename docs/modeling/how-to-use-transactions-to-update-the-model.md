@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: b69015a58b4772a13c387f67f0dc9d6a2571e1b7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 97eb050bb99c522f5c5e97ea3355f3146086c29e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859219"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926288"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 事务，请确保对在存储区所做的更改被视为一个组。 可以提交或回滚作为一个单元进行分组的更改。
@@ -101,5 +101,4 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 
 ```csharp
 if (!this.Store.InSerializationTransaction) {...}
-
 ```

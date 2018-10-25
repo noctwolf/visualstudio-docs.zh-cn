@@ -15,12 +15,12 @@ ms.technology: vs-ide-modeling
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0623616848c6e996a49baffa19f412a22f28e846
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c430dad62686e49d9ce07fdff9a3665b0ea519a4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36234419"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930318"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 
@@ -44,7 +44,7 @@ ms.locfileid: "36234419"
 
 `<#@ CoolDirective Processor="CustomDirectiveProcessor" FileName="<Your Path>DocFile.xml" #>`
 
-自定义指令处理器将变量和属性添加到生成转换类。 您编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom>类中 Visual C# 或 Visual Basic 中，具体取决于中指定的语言创建代码`language`参数的`template`指令。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。
+自定义指令处理器将变量和属性添加到生成转换类。 你编写的指令使用 <xref:System.CodeDom> 类创建引擎添加到生成转换类的代码。 <xref:System.CodeDom>类中 Visual C# 或 Visual Basic 中，具体取决于中指定的语言创建代码`language`参数的`template`指令。 指令处理器的语言和访问指令处理器的文本模板的语言不必一致。
 
 指令创建的代码如下所示：
 
@@ -603,7 +603,7 @@ End Property
 
 4. 对于仅限 Visual Basic，打开**项目**菜单，然后单击**CustomDP 属性**。 上**应用程序**选项卡上，在**根命名空间**，删除默认值为`CustomDP`。
 
-5. 上**文件**菜单上，单击**全部保存**。
+5. 在“文件”  菜单上，单击“全部保存” 。
 
 6. 在 **“生成”** 菜单上，单击 **“生成解决方案”**。
 
@@ -656,19 +656,22 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
      注册表项应具有以下值：
 
-    |name|类型|数据|
-    |----------|----------|----------|
-    |(默认)|REG_SZ|(未设置值)|
-    |类|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |CodeBase|REG_SZ|**\<解决方案的路径 >** CustomDP\bin\Debug\CustomDP.dll|
+
+   | name | 类型 | 数据 |
+   |-|-|-|
+   | (默认) | REG_SZ | (未设置值) |
+   | 类 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<解决方案的路径 ></strong>CustomDP\bin\Debug\CustomDP.dll |
 
      如果已将程序集放置在 GAC 中，则值应如下所示：
 
-    |name|类型|数据|
-    |----------|----------|----------|
-    |(默认)|REG_SZ|(未设置值)|
-    |类|REG_SZ|CustomDP.CustomDirectiveProcessor|
-    |Assembly|REG_SZ|CustomDP.dll|
+
+   | name | 类型 | 数据 |
+   |-|-|-|
+   | (默认) | REG_SZ | (未设置值) |
+   | 类 | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Assembly | REG_SZ | CustomDP.dll |
+
 
 6. 重新启动 Visual Studio。
 

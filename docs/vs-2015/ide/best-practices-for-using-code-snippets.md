@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c02abbef9a5a9022e5a887c5a9aa452143adb8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1dad7bd7ccddf3645abb11dc55afcdf2e7cce7ad
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241307"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919905"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>有关使用代码段的最佳做法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +44,19 @@ ms.locfileid: "49241307"
 ## <a name="security"></a>安全性  
  代码片段的安全程度取决于源代码中使用它的位置以及位于代码中后如何对其进行修改。 以下列表包含几个必须考虑的区域。  
   
--   文件和数据库访问  
+- 文件和数据库访问  
   
--   代码访问安全性  
+- 代码访问安全性  
   
--   保护资源（如事件日志、注册表）  
+- 保护资源（如事件日志、注册表）  
   
--   存储机密  
+- 存储机密  
   
--   验证输入  
+- 验证输入  
   
--   将数据传递到脚本编写技术  
+- 将数据传递到脚本编写技术  
   
- 有关详细信息，请参阅[保证应用程序的安全](../ide/securing-applications.md)。  
+  有关详细信息，请参阅[保证应用程序的安全](../ide/securing-applications.md)。  
   
 ## <a name="downloaded-code-snippets"></a>下载的代码片段  
  由 Visual Studio 安装的 IntelliSense 代码片段就其本身而言并非安全隐患。 但它们会在应用程序中带来安全性风险。 应像任何其他下载内容一样，极其谨慎地对待从 Internet 下载的代码片段。  

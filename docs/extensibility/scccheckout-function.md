@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50e82c04dc9dda306d8c9204aad6606dff6f89c7
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 1ba80df71dce70ad4a6a0953d37f8f87bd487e12
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635907"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908517"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 有了完全限定的文件名的列表，此函数将它们签出到本地驱动器。 注释应用于签出的所有文件。注释参数可以是`null`字符串。  

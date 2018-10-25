@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f977c30f1f4d6db7ce165de8483c8fd1977922d8
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31952098"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909784"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 
@@ -46,7 +46,7 @@ ms.locfileid: "31952098"
 
  可以在“工具”对话框中“环境”选项的“字体和颜色”窗格中更改基于文本的工具窗口的设置，例如“命令”窗口、“即时”窗口和“输出”窗口。 在“显示其设置”下拉列表中选中“[全部文本工具窗口]”时，默认设置会在“项前景”和“项背景”下拉列表中作为“默认值”列出。 还可以更改编辑器中文本显示方式的设置。
 
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>更改基于文本的工具窗口和编辑器中文本的大小
+#### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>更改基于文本的工具窗口和编辑器中文本的大小
 
 1.  从“工具”菜单中选择“选项”。
 
@@ -69,7 +69,7 @@ ms.locfileid: "31952098"
 6.  在“大小”中选择一个新的字号。
 
     > [!NOTE]
-    >  若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。
+    > 若要重置基于文本的工具窗口和编辑器的文本大小，请选择“使用默认值”。
 
 7.  选择 **“确定”**。
 
@@ -80,8 +80,7 @@ ms.locfileid: "31952098"
 > [!NOTE]
 > 若要对操作系统上的所有应用程序窗口使用高对比度的颜色，请按左 Alt+左 Shift+PrtScn。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 处于打开状态，请关闭并重新打开 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以完全实现高对比度的颜色。
 
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>更改编辑器中项的颜色
+#### <a name="to-change-the-color-of-items-in-the-editor"></a>更改编辑器中项的颜色
 
 1.  从“工具”菜单中选择“选项”。
 
@@ -99,7 +98,7 @@ ms.locfileid: "31952098"
 
  为了提高工具栏的可用性和易用性，可以向工具栏按钮添加文本。
 
-#### <a name="to-assign-text-to-toolbar-buttons"></a>为工具栏按钮指定文本
+### <a name="to-assign-text-to-toolbar-buttons"></a>为工具栏按钮指定文本
 
 1.  在“工具”菜单中选择“自定义”。
 
@@ -113,7 +112,7 @@ ms.locfileid: "31952098"
 
 6.  选择“图像和文本”。
 
-#### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按钮中的显示文本
+### <a name="to-modify-the-displayed-text-in-a-button"></a>修改按钮中的显示文本
 
 1.  重新选择“修改所选内容”。
 

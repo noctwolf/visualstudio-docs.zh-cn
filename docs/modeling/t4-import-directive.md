@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: c14cfea94277158583717aa77edc4636f245e58a
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: b0e641ca9eafb0fb78dbe42e2deb936db8fd840b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47857849"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49916018"
 ---
 # <a name="t4-import-directive"></a>T4 导入指令
 
@@ -41,15 +41,15 @@ The file contains: <#=  fileContent #>
 ## <a name="standard-imports"></a>标准导入
  将自动导入以下命名空间，您无需为其编写导入指令：
 
--   `System`
+- `System`
 
- 另外，如果您使用自定义指令，则指令处理器可能会自动导入一些命名空间。
+  另外，如果您使用自定义指令，则指令处理器可能会自动导入一些命名空间。
 
- 例如，如果您为域特定语言 (DSL) 编写模板，则无需为下列命名空间编写导入指令：
+  例如，如果您为域特定语言 (DSL) 编写模板，则无需为下列命名空间编写导入指令：
 
--   `Microsoft.VisualStudio.Modeling`
+- `Microsoft.VisualStudio.Modeling`
 
--   DSL 的命名空间
+- DSL 的命名空间
 
 ## <a name="see-also"></a>请参阅
 

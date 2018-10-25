@@ -1,5 +1,5 @@
 ---
-title: PDB_TYPE |Microsoft 文档
+title: PDB_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc610963fa1ca82fec30e04abb90583db48bdf55
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 83d891de330b66841b1ad48a7fc4593b1144e9e7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31125365"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888109"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
-此结构指定有关摘自 PDB 符号字段类型的信息。  
+此结构指定来自 PDB 符号字段类型有关的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,7 +45,7 @@ public struct PDB_TYPE {
   
 #### <a name="parameters"></a>参数  
  ulAppDomainID  
- 符号源于应用程序 ID。 这用于唯一标识应用程序的实例。  
+ 符号所来自的应用程序 ID。 这用于唯一标识应用程序的实例。  
   
  guidModule  
  包含此字段的模块的 GUID。  
@@ -63,7 +63,7 @@ public struct PDB_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

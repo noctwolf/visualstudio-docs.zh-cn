@@ -16,23 +16,23 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f67419240b8632c3032bd3877894d871245e55e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 2212d9eb38487bf824fd8df3c497d9f256379c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513437"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907802"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用互操作程序集的命令和菜单
 通过使用互操作程序集来实现菜单和工具栏命令的 VSPackage 必须：  
   
--   通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有关所支持的命令以及它们当前是否启用的集成的开发环境 (IDE)。  
+- 通知[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]有关所支持的命令以及它们当前是否启用的集成的开发环境 (IDE)。  
   
--   遵守的规则 （协定） 处理的命令。  
+- 遵守的规则 （协定） 处理的命令。  
   
--   显式实现通过使用命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
+- 显式实现通过使用命令处理<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>或<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口。  
   
- 以下部分介绍如何执行这些任务。  
+  以下部分介绍如何执行这些任务。  
   
 ## <a name="in-this-section"></a>本节内容  
  [使用互操作程序集来确定命令状态](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)  

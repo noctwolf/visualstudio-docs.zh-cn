@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18045c8b6c388839f09ba42284ab498caf11dbf5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866566"
 ---
 # <a name="item-definitions"></a>项定义
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,11 +94,11 @@ ms.locfileid: "49182060"
 ## <a name="additive-and-multiple-definitions"></a>累加性和多个定义  
  当添加定义或使用多个 ItemDefinitionGroup 时，请记住以下几点：  
   
--   将其他元数据规范添加到此类型中。  
+- 将其他元数据规范添加到此类型中。  
   
--   最新规范优先。  
+- 最新规范优先。  
   
- 当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如：  
+  当拥有多个 ItemDefinitionGroup 时，每个后续规范将其元数据添加至先前的定义。 例如：  
   
 ```  
 <ItemDefinitionGroup>  

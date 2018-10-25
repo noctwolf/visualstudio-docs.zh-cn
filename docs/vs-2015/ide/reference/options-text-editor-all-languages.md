@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2584f56e31dea55ff7a4d67b61b8c7453ade4c10
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 987e0339f2d27405c81ce05b6a30181a1469be7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49255705"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884168"
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,11 +79,11 @@ ms.locfileid: "49255705"
  没有选定内容时对空行应用剪切或复制命令  
  此选项设置当你将插入点放置在空行上，未选中任何内容，然后复制或剪切时，编辑器的行为。  
   
--   选中此选项后，将复制或剪切空行。 如果随后执行粘贴操作，会插入一个新的空行。  
+- 选中此选项后，将复制或剪切空行。 如果随后执行粘贴操作，会插入一个新的空行。  
   
--   清除此选项后，“剪切”命令将移除空行。 但仍保留剪贴板中的数据。 因此，如果随后使用“粘贴”命令，则会粘贴最近复制到剪贴板的内容。 如果先前没有复制任何内容，则不会粘贴任何内容。  
+- 清除此选项后，“剪切”命令将移除空行。 但仍保留剪贴板中的数据。 因此，如果随后使用“粘贴”命令，则会粘贴最近复制到剪贴板的内容。 如果先前没有复制任何内容，则不会粘贴任何内容。  
   
- 此设置对行非空时的复制或剪切操作无效。 如果未选择任何内容，将会对整行进行复制或剪切。 如果随后执行粘贴操作，则粘贴整行文本及其行尾字符。  
+  此设置对行非空时的复制或剪切操作无效。 如果未选择任何内容，将会对整行进行复制或剪切。 如果随后执行粘贴操作，则粘贴整行文本及其行尾字符。  
   
 > [!TIP]
 >  若要显示空格、制表符和行尾的指示符，从而区分缩进行和完全空白的行，请从“编辑”菜单中选择“高级”，然后选择“查看空白”。  

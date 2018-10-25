@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress |Microsoft 文档
+title: IDebugSymbolProvider::GetNextAddress |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a682342410b32422bc87f180b00f017520322d8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 927069dd3a62ffc56534f68179db2921ccc227f5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31119095"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49849198"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-获取遵循中方法的给定的调试地址的调试地址。  
+获取遵循一种方法中的给定的调试地址的调试地址。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,10 +45,10 @@ int GetNextAddress(
   
 #### <a name="parameters"></a>参数  
  `pAddress`  
- [in]提供调试地址。  
+ [in]给定的调试地址。  
   
  `fStatementOnly`  
- [in]如果为 TRUE，限制到单个语句的调试地址。  
+ [in]如果为 TRUE，则限制为单个语句的调试地址。  
   
  `ppAddress`  
  [out]返回下一个调试地址。  
@@ -56,5 +56,5 @@ int GetNextAddress(
 ## <a name="return-value"></a>返回值  
  返回一个有效`HRESULT`，通常，则为 S_OK。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

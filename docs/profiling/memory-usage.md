@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6924ff846da2ca7fb3ad7591f6d1c8e07f89b0d
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: eeacfb15b02c19ea4a166fbc8511aab644d41ea5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626890"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861405"
 ---
 # <a name="profile-memory-usage-in-visual-studio"></a>在 Visual Studio 中分析内存使用情况
 使用集成了调试器的内存使用情况诊断工具在进行调试时查找内存泄漏和低效内存。 通过内存使用率工具可以拍摄托管和本机内存堆的一个或多个快照，帮助理解对象类型的内存使用率影响。 可以收集 .NET、本机或混合模式（.NET 和本机）应用的快照。  
@@ -101,14 +101,14 @@ ms.locfileid: "42626890"
 
 若要分析内存使用率，请单击其中一个链接，打开内存使用率详细报表：  
 
--   若要查看当前快照与前一个快照之间的差异的详细信息，请选择箭头左侧的更改链接（![内存使用率增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "Memory Usage Increase")）。 红色箭头表示内存使用率增加，绿色箭头表示减少。
+- 若要查看当前快照与前一个快照之间的差异的详细信息，请选择箭头左侧的更改链接（![内存使用率增加](../profiling/media/prof-tour-mem-usage-up-arrow.png "Memory Usage Increase")）。 红色箭头表示内存使用率增加，绿色箭头表示减少。
 
-    > [!TIP]
-    >  为了帮助更快地识别内存问题，差异报告按照总体数量增加最多（单击“对象(差异)”列中的更改链接）的对象类型或整体堆大小增加最多（单击“堆大小(差异)”列中的更改链接）的对象类型进行排序。
+  > [!TIP]
+  >  为了帮助更快地识别内存问题，差异报告按照总体数量增加最多（单击“对象(差异)”列中的更改链接）的对象类型或整体堆大小增加最多（单击“堆大小(差异)”列中的更改链接）的对象类型进行排序。
 
--   若要仅查看所选快照的详细信息，请单击无更改链接。 
+- 若要仅查看所选快照的详细信息，请单击无更改链接。 
   
- 报告会出现在单独的窗口中。   
+  报告会出现在单独的窗口中。   
   
 ### <a name="managed-types-reports"></a>托管类型报告  
  在内存使用率摘要表中选择“对象(差异)”或“分配(差异)”单元格的当前链接。  
@@ -148,23 +148,23 @@ ms.locfileid: "42626890"
   
 ### <a name="change-diff-reports"></a>更改（差异）报告  
   
--   在 **“诊断工具”** 窗口上的 **“内存使用率”** 选项卡的摘要表单元格中选择更改链接。  
+- 在 **“诊断工具”** 窗口上的 **“内存使用率”** 选项卡的摘要表单元格中选择更改链接。  
   
-     ![选择更改（差异）报告](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+   ![选择更改（差异）报告](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   在托管或本机报告的 **“与之比较的对象”** 列表中选择快照。  
+- 在托管或本机报告的 **“与之比较的对象”** 列表中选择快照。  
   
-     ![从“比较对象”列表中选择一个快照](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+   ![从“比较对象”列表中选择一个快照](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- 更改报告会向基本报告添加一些列（使用 **“(差异)”** 进行标记），这些列显示基本快照值与比较快照之间的差异。 下面是本机类型视图差异报告可能会采用的外观：  
+  更改报告会向基本报告添加一些列（使用 **“(差异)”** 进行标记），这些列显示基本快照值与比较快照之间的差异。 下面是本机类型视图差异报告可能会采用的外观：  
   
- ![本机类型差异视图](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+  ![本机类型差异视图](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
 ## <a name="blogs-and-videos"></a>博客和视频  
 
-|         |         |
+| | |
 |---------|---------|
-|  ![视频的摄像机图标](../install/media/video-icon.png "观看视频")  |    [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何在 Visual Studio 2017 中分析内存使用率以及 CPU 使用率。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看介绍诊断工具用法的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171)，了解如何在 Visual Studio 2017 中分析内存使用率以及 CPU 使用率。 |
 
  [调试时分析 CPU 和内存](https://blogs.msdn.microsoft.com/visualstudio/2016/02/15/analyze-cpu-memory-while-debugging/)  
   

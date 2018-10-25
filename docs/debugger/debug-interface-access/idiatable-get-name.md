@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: Get_name |Microsoft 文档'
+title: 'Idiatable:: Get_name |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dedf326d718c9d015aa488c1dc2fdf9210c4fc9e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 87527cd4a025973294ffc6219a452eb1b23bc897
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31471078"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880697"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 检索表的名称。  
@@ -34,7 +34,7 @@ HRESULT get_name (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回表的名称。  
+ [out]返回的表的名称。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

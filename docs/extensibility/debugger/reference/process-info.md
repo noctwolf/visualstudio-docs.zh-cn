@@ -1,5 +1,5 @@
 ---
-title: PROCESS_INFO |Microsoft 文档
+title: PROCESS_INFO |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35b94b6153b65672453ed8b4e7d2c0d9c2bd5eb
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2a8f07cfb99ac42704d3829c30dbf5adbb16e9d0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31134354"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864616"
 ---
 # <a name="processinfo"></a>PROCESS_INFO
 包含有关进程的信息。  
@@ -57,19 +57,19 @@ public struct PROCESS_INFO {
   
 ## <a name="members"></a>成员  
  字段  
- 中的标志的组合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定哪些字段填出的枚举。  
+ 中的标志的组合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)枚举，用于指定哪些字段填写。  
   
  bstrFileName  
- 进程的完整路径名称。 等效于调用[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)与参数的方法`GN_FILENAME`。  
+ 过程的完整路径名称。 等效于调用[GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法及参数`GN_FILENAME`。  
   
  bstrBaseName  
- 文件名和过程的扩展。 等效于调用`IDebugProcess2::Getname`与参数的方法`GN_BASENAME`。  
+ 文件的名称和进程的扩展。 等效于调用`IDebugProcess2::Getname`方法及参数`GN_BASENAME`。  
   
  bstrTitle  
- 此过程中，如果存在的标题。 等效于调用`IDebugProcess2::Getname`与参数的方法`GN_TITLE`。  
+ 此过程中，如果存在的标题。 等效于调用`IDebugProcess2::Getname`方法及参数`GN_TITLE`。  
   
  ProcessId  
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)标识的进程的结构。 等效于调用[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。  
+ [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)标识进程的结构。 等效于调用[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)方法。  
   
  dwSessionId  
  调试会话中运行此进程的标识符。  
@@ -84,7 +84,7 @@ public struct PROCESS_INFO {
  中的标志的组合[PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)指定进程的属性的枚举。  
   
 ## <a name="remarks"></a>备注  
- 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)方法中填充位置。  
+ 此结构传递给[GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md)填写其中的方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -93,7 +93,7 @@ public struct PROCESS_INFO {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
  [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)   

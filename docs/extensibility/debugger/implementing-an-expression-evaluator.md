@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bdf4f290c3312be234f491debe95f532c85802b
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 6c5bf8b782d34cb1375f4357cd33f6e47cc22988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39232502"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908452"
 ---
 # <a name="implement-an-expression-evaluator"></a>实现表达式计算器
 > [!IMPORTANT]
@@ -29,37 +29,37 @@ ms.locfileid: "39232502"
   
  EE DE 中字符串的形式从所需的表达式和解析或对其进行计算。 EE 运行由德国的以下接口：  
   
--   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
+- [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
--   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
+- [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
- EE 调用 DE，若要获取的符号和对象的值由提供的联编程序对象。 EE 使用由 DE 实现以下接口：  
+  EE 调用 DE，若要获取的符号和对象的值由提供的联编程序对象。 EE 使用由 DE 实现以下接口：  
   
--   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
+- [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
--   [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
+- [IDebugArrayObject](../../extensibility/debugger/reference/idebugarrayobject.md)  
   
--   [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
+- [IDebugFunctionObject](../../extensibility/debugger/reference/idebugfunctionobject.md)  
   
--   [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
+- [IDebugPointerObject](../../extensibility/debugger/reference/idebugpointerobject.md)  
   
--   [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
+- [IDebugManagedObject](../../extensibility/debugger/reference/idebugmanagedobject.md)  
   
--   [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
+- [IEnumDebugObjects](../../extensibility/debugger/reference/ienumdebugobjects.md)  
   
--   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
+- [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
- 运行 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供用于描述结果的表达式计算，如本地变量、 基元或到 Visual Studio，然后显示中的相应信息的对象的机制**局部变量**，**监视**，或**即时**窗口。  
+  运行 EE [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)。 `IDebugProperty2` 提供用于描述结果的表达式计算，如本地变量、 基元或到 Visual Studio，然后显示中的相应信息的对象的机制**局部变量**，**监视**，或**即时**窗口。  
   
- SP 时为指定 EE DE 通过要求提供的信息。 SP 运行描述地址和域，如下面的接口和其派生类的接口：  
+  SP 时为指定 EE DE 通过要求提供的信息。 SP 运行描述地址和域，如下面的接口和其派生类的接口：  
   
--   [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
+- [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)  
   
--   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
+- [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
--   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
+- [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
- EE 使用所有这些接口。  
+  EE 使用所有这些接口。  
   
 ## <a name="in-this-section"></a>本节内容  
  [表达式计算器实施策略](../../extensibility/debugger/expression-evaluator-implementation-strategy.md)  

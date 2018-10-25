@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: ea2cf8293a0969a152e38304b469e0b4042073c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dc5c40fbabcba4e9f8aab230f21449cabba2a622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249497"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891227"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>在 Visual Studio 中为应用商店应用创建并运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,12 +30,12 @@ Visual Studio 2012 Express for Windows 8 单元测试工具旨在为那些将单
   
 > [!NOTE]
 >  本部分中的主题描述了 Visual Studio 2012 Express for Windows 8 的功能。 Visual Studio Ultimate、VS Premium 和 VS Professional 提供其他适用于单元测试的功能。  
->   
->  -   在 VS Ultimate、VS Premium 和 VS Professional 中，你可以使用已为 Microsoft 测试资源管理器创建外接程序适配器的任何第三方和开放源代码单元测试框架。 还可使用 VS Ultimate 和 VS Premium 为测试分析和显示代码覆盖率信息。  
-> -   在 VS Ultimate 中，你可以在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。  
-> -   **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 不提供 JavaScript 单元测试功能。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 单元测试框架作为 Visual Studio 库中的扩展提供。 你也可以使用某个独立的第三方或开源 JavaScript 单元测试框架，测试 JavaScript 代码。  
->   
->  有关详细信息，请参阅 MSDN 库中的[单元测试代码](../test/unit-test-your-code.md)。  
+> 
+> - 在 VS Ultimate、VS Premium 和 VS Professional 中，你可以使用已为 Microsoft 测试资源管理器创建外接程序适配器的任何第三方和开放源代码单元测试框架。 还可使用 VS Ultimate 和 VS Premium 为测试分析和显示代码覆盖率信息。  
+>   -   在 VS Ultimate 中，你可以在每次生成后运行测试。 你也可以使用 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码将你的测试集中于你自己的代码之上。  
+>   -   **JavaScript**。 Visual Studio Express for Windows 8 的 IDE 不提供 JavaScript 单元测试功能。 在 Visual Studio Professional、Premium 和 Ultimate 中，JavaScript 单元测试框架作为 Visual Studio 库中的扩展提供。 你也可以使用某个独立的第三方或开源 JavaScript 单元测试框架，测试 JavaScript 代码。  
+> 
+>   有关详细信息，请参阅 MSDN 库中的[单元测试代码](../test/unit-test-your-code.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [对 C# 代码进行单元测试](../test/unit-testing-visual-csharp-code-in-a-store-app.md)  

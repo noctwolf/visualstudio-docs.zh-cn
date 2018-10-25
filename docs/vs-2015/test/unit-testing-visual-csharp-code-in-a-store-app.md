@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 593ef51a9c9462253c77a9ca91d3d5460cd65f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245435"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901549"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>对应用商店应用中的 Visual C# 代码进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ ms.locfileid: "49245435"
   
 > [!NOTE]
 >  Visual Studio Community、Enterprise. 和 Professional 提供其他适用于单元测试的功能。  
->   
->  -   使用已为 Microsoft 测试资源管理器创建附加设备适配器的任何第三方和开放源代码单元测试框架。 还可为测试分析并显示代码覆盖率信息。  
-> -   在每次生成后运行测试。  
-> -   VS Enterprise 还包含 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码帮助你将测试集中于自己的代码之上。  
->   
->  有关详细信息，请参阅 MSDN 库中的[使用单元测试验证代码](http://msdn.microsoft.com/library/dd264975.aspx)。  
+> 
+> - 使用已为 Microsoft 测试资源管理器创建附加设备适配器的任何第三方和开放源代码单元测试框架。 还可为测试分析并显示代码覆盖率信息。  
+>   -   在每次生成后运行测试。  
+>   -   VS Enterprise 还包含 Microsoft Fakes（托管代码的隔离框架），通过替换系统和第三方功能的测试代码帮助你将测试集中于自己的代码之上。  
+> 
+>   有关详细信息，请参阅 MSDN 库中的[使用单元测试验证代码](http://msdn.microsoft.com/library/dd264975.aspx)。  
   
 ##  <a name="BKMK_In_this_topic"></a> 在本主题中  
  [创建解决方案和单元测试项目](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -152,48 +152,48 @@ ms.locfileid: "49245435"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a>将测试项目和应用项目相关联  
   
-1.  将对 Maths 应用程序的引用添加到 RooterTests 项目。  
+1. 将对 Maths 应用程序的引用添加到 RooterTests 项目。  
   
-    1.  在“解决方案资源管理器”中，依次选择“RooterTests”项目和快捷菜单中的“添加引用...”。  
+   1.  在“解决方案资源管理器”中，依次选择“RooterTests”项目和快捷菜单中的“添加引用...”。  
   
-    2.  在“添加引用 - RooterTests”对话框中，展开“解决方案”，然后选择“项目”。 然后，选择“Maths”项。  
+   2.  在“添加引用 - RooterTests”对话框中，展开“解决方案”，然后选择“项目”。 然后，选择“Maths”项。  
   
-         ![添加对 Maths 项目的引用](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
+        ![添加对 Maths 项目的引用](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
-2.  向 UnitTest1.cs 文件添加 using 语句：  
+2. 向 UnitTest1.cs 文件添加 using 语句：  
   
-    1.  打开“UnitTest1.cs”。  
+   1.  打开“UnitTest1.cs”。  
   
-    2.  在 `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 行下添加以下代码：  
+   2.  在 `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` 行下添加以下代码：  
   
-        ```csharp  
-        using Maths;  
-        ```  
+       ```csharp  
+       using Maths;  
+       ```  
   
-3.  添加使用 Rooter 函数的测试。 将以下代码添加到 **UnitTest1.cpp**：  
+3. 添加使用 Rooter 函数的测试。 将以下代码添加到 **UnitTest1.cpp**：  
   
-    ```csharp  
-    [TestMethod]  
-    public void BasicTest()  
-    {  
-        Maths.Rooter rooter = new Rooter();  
-        double expected = 0.0;  
-        double actual = rooter.SquareRoot(expected * expected);  
-        double tolerance = .001;  
-        Assert.AreEqual(expected, actual, tolerance);  
-    }  
+   ```csharp  
+   [TestMethod]  
+   public void BasicTest()  
+   {  
+       Maths.Rooter rooter = new Rooter();  
+       double expected = 0.0;  
+       double actual = rooter.SquareRoot(expected * expected);  
+       double tolerance = .001;  
+       Assert.AreEqual(expected, actual, tolerance);  
+   }  
   
-    ```  
+   ```  
   
-4.  生成解决方案。  
+4. 生成解决方案。  
   
-     新测试将显示在测试资源管理器的“未运行的测试”节点中。  
+    新测试将显示在测试资源管理器的“未运行的测试”节点中。  
   
-5.  在“测试资源管理器”中，选择 **“全部运行”**。  
+5. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
-     ![已通过基本测试](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![已通过基本测试](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- 你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
+   你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 以迭代方式增加测试并使它们通过  
   
@@ -256,70 +256,70 @@ ms.locfileid: "49245435"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> 调试失败测试  
   
-1.  将另一个测试添加到 **UnitTest1.cs** 中：  
+1. 将另一个测试添加到 **UnitTest1.cs** 中：  
   
-    ```csharp  
-    // Verify that negative inputs throw an exception.  
-    [TestMethod]  
-    public void NegativeRangeTest()  
-    {  
-        string message;  
-        Rooter rooter = new Rooter();  
-        for (double v = -0.1; v > -3.0; v = v - 0.5)  
-        {  
-            try  
-            {  
-                // Should raise an exception:  
-                double actual = rooter.SquareRoot(v);  
+   ```csharp  
+   // Verify that negative inputs throw an exception.  
+   [TestMethod]  
+   public void NegativeRangeTest()  
+   {  
+       string message;  
+       Rooter rooter = new Rooter();  
+       for (double v = -0.1; v > -3.0; v = v - 0.5)  
+       {  
+           try  
+           {  
+               // Should raise an exception:  
+               double actual = rooter.SquareRoot(v);  
   
-                message = String.Format("No exception for input {0}", v);  
-                Assert.Fail(message);  
-            }  
-            catch (ArgumentOutOfRangeException ex)  
-            {  
-                continue; // Correct exception.  
-            }  
-            catch (Exception e)  
-            {  
-                message = String.Format("Incorrect exception for {0}", v);  
-                Assert.Fail(message);  
-            }  
-        }  
-    }  
+               message = String.Format("No exception for input {0}", v);  
+               Assert.Fail(message);  
+           }  
+           catch (ArgumentOutOfRangeException ex)  
+           {  
+               continue; // Correct exception.  
+           }  
+           catch (Exception e)  
+           {  
+               message = String.Format("Incorrect exception for {0}", v);  
+               Assert.Fail(message);  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  在“测试资源管理器”中，选择 **“全部运行”**。  
+2. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
-     测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。  
+    测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。  
   
-     ![NegativeRangeTests 失败](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+    ![NegativeRangeTests 失败](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
   
-3.  若要查看未通过测试的原因，请单步调试函数：  
+3. 若要查看未通过测试的原因，请单步调试函数：  
   
-    1.  在 `SquareRoot` 函数的开头设置断点。  
+   1.  在 `SquareRoot` 函数的开头设置断点。  
   
-    2.  在失败测试的快捷菜单上，选择“调试所选测试” 。  
+   2.  在失败测试的快捷菜单上，选择“调试所选测试” 。  
   
-         当在断点处停止运行时，请单步调试代码。  
+        当在断点处停止运行时，请单步调试代码。  
   
-    3.  向 Rooter 方法添加代码以捕获异常：  
+   3.  向 Rooter 方法添加代码以捕获异常：  
   
-        ```csharp  
-        public double SquareRoot(double x)  
-        {  
-            if (x < 0.0)  
-            {  
-                throw new ArgumentOutOfRangeException();  
-        }  
+       ```csharp  
+       public double SquareRoot(double x)  
+       {  
+           if (x < 0.0)  
+           {  
+               throw new ArgumentOutOfRangeException();  
+       }  
   
-        ```  
+       ```  
   
-    1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保你未引入回归。  
+   1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保你未引入回归。  
   
- 现在所有测试均通过。  
+   现在所有测试均通过。  
   
- ![所有测试均通过](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+   ![所有测试均通过](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_"></a>重构代码  
  **简化 SquareRoot 函数的核心计算。**  

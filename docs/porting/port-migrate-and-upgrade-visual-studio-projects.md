@@ -1,7 +1,7 @@
 ---
 title: 移植、迁移和升级项目
 description: 有关 Visual Studio 2017 中对 Visual Studio 早期版本中创建的项目的支持，以及 Visual Studio 确定何时需要迁移项目方式的参考。
-ms.date: 06/19/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: e83aec143d2b7fdb6ed7a338b6a726aa81147e7f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84c023342bb3c54e1d967f869962a204fbf1289d
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280713"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49325024"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio-2017"></a>Visual Studio 2017 的项目迁移和升级参考
 
@@ -41,7 +41,7 @@ Visual Studio 的每个版本通常都支持大部分以前的项目、文件和
 
 以下列表描述了 Visual Studio 2017 中对在之前版本中创建的项目的支持。
 
-如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](port-migrate-and-upgrade-visual-studio-projects.md)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
+如果未看到本应在此列出的项目或文件类型，请查阅[本文的 Visual Studio 2015 版本](https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015)，并使用此页底部的“提供文档反馈”选项来提供有关项目的详细信息。 （如果想要响应，请使用文档反馈而不是匿名的“此页面有帮助吗？” 控件。）
 
 | 项目类型 | 支持 |
 | --- | --- |

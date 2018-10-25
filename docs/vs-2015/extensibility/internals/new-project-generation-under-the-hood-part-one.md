@@ -16,12 +16,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 122ef6b8f1e597006fd53e6360d10d304cc760b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c69df0e8c1aace595a1c79d52b7ca4cd08b7a004
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49302609"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49941213"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -175,35 +175,35 @@ devenv /installvstemplates
 #### <a name="a-quick-review"></a>快速查看  
  让我们修改**新的项目**对话框并创建一个新的用户项目模板。  
   
-1.  将 MyProjectNode 子文件夹添加到 \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp 文件夹。  
+1. 将 MyProjectNode 子文件夹添加到 \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp 文件夹。  
   
-2.  使用任何文本编辑器在 MyProjectNode 文件夹中创建 MyProject.vstdir 文件。  
+2. 使用任何文本编辑器在 MyProjectNode 文件夹中创建 MyProject.vstdir 文件。  
   
-3.  将以下行添加到.vstdir 文件：  
+3. 将以下行添加到.vstdir 文件：  
   
-    ```  
-    <TemplateDir Version="1.0.0">  
-        <SortOrder>6</SortOrder>  
-    </TemplateDir>  
-    ```  
+   ```  
+   <TemplateDir Version="1.0.0">  
+       <SortOrder>6</SortOrder>  
+   </TemplateDir>  
+   ```  
   
-4.  保存并关闭.vstdir 文件。  
+4. 保存并关闭.vstdir 文件。  
   
-5.  使用任何文本编辑器在 MyProjectNode 文件夹中创建 MyProject.vstemplate 文件。  
+5. 使用任何文本编辑器在 MyProjectNode 文件夹中创建 MyProject.vstemplate 文件。  
   
-6.  将以下行添加到.vstemplate 文件：  
+6. 将以下行添加到.vstemplate 文件：  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-        <TemplateData>  
-            <ProjectType>CSharp</ProjectType>  
-        </TemplateData>  
-    </VSTemplate>  
-    ```  
+   ```  
+   <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+       <TemplateData>  
+           <ProjectType>CSharp</ProjectType>  
+       </TemplateData>  
+   </VSTemplate>  
+   ```  
   
-7.  保存 the.vstemplate 文件并关闭编辑器。  
+7. 保存 the.vstemplate 文件并关闭编辑器。  
   
-8.  .Vstemplate 文件发送到新的压缩 MyProjectNode\MyProject.zip 文件夹。  
+8. .Vstemplate 文件发送到新的压缩 MyProjectNode\MyProject.zip 文件夹。  
   
 9. 从 Visual Studio 命令窗口中，键入：  
   
@@ -211,13 +211,13 @@ devenv /installvstemplates
     devenv /installvstemplates  
     ```  
   
- 打开 Visual Studio。  
+   打开 Visual Studio。  
   
-1.  打开**新的项目**对话框框中，展开**Visual C#** 项目节点。  
+10. 打开**新的项目**对话框框中，展开**Visual C#** 项目节点。  
   
- ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
+    ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")  
   
- **MyProjectNode**显示为子节点的 Visual C# Windows 节点的正下方。  
+    **MyProjectNode**显示为子节点的 Visual C# Windows 节点的正下方。  
   
 ## <a name="see-also"></a>请参阅  
  [生成新项目：揭秘，第 2 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

@@ -16,12 +16,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 9c1a0c138cbfcf3892508fb9ae42685ffe895411
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3d65a1fb510daec68060261141ddb2d05822988
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836848"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ ms.locfileid: "49228652"
   
  修改 Vspackage 可以监视的全局选择上下文触发器事件。 Vspackage 可以通过实现来执行以下任务`IVsTrackSelectionEx`和<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>接口：  
   
--   更新层次结构中当前处于活动状态的文件。  
+- 更新层次结构中当前处于活动状态的文件。  
   
--   监视器更改为某些类型的元素。 例如，如果你的 VSPackage 使用特殊**属性**窗口中，你可以监视处于活动状态的更改**属性**窗口，然后重新启动你在需要时。  
+- 监视器更改为某些类型的元素。 例如，如果你的 VSPackage 使用特殊**属性**窗口中，你可以监视处于活动状态的更改**属性**窗口，然后重新启动你在需要时。  
   
- 按以下顺序显示了典型的选定内容跟踪过程。  
+  按以下顺序显示了典型的选定内容跟踪过程。  
   
 1.  IDE 从新打开的窗口检索选定内容上下文，并将其放入全局选定内容上下文。 如果选定内容上下文使用 HIERARCHY_DONTPROPAGATE 或 SELCONTAINER_DONTPROPAGATE，该信息不会传播到全局上下文。 有关详细信息，请参阅[向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。  
   

@@ -23,12 +23,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 21e2b1a7a90df2baef48483647c692c8b986c59f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: f8555d1edae8d22acd6a34a14c66f4e432b39e61
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670340"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917097"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>对 Office 解决方案中的错误进行故障排除
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：  
@@ -139,11 +139,11 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
   
  此代码将导致以下编译错误：  
   
--   Visual Basic:"对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
+- Visual Basic:"对类 'DocumentClass' 的引用不是允许使用 NO-PIA 模式链接其程序集时。"  
   
--   Visual C#:"互操作类型不能嵌入 'Microsoft.Office.Interop.Word.DocumentClass'。 请改用适用的接口。”  
+- Visual C#:"互操作类型不能嵌入 'Microsoft.Office.Interop.Word.DocumentClass'。 请改用适用的接口。”  
   
- 若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。  
+  若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。  
   
 ```vb  
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  

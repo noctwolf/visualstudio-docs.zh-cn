@@ -15,12 +15,12 @@ ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1ff260b8b54e3aff37b9cbceffaa1e4b3a374556
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c2ef86b1985f71b1f6ea53106c4818e09a7f43b0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831806"
 ---
 # <a name="core-interfaces"></a>核心接口
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,47 +30,47 @@ ms.locfileid: "49217732"
 ## <a name="discussion"></a>讨论  
  这些接口主要用于创建调试引擎 (DE)。 在此处按类别进行组织：  
   
--   [断点](#Breakpoints)  
+- [断点](#Breakpoints)  
   
--   [上下文](#Contexts)  
+- [上下文](#Contexts)  
   
--   [核心服务器](#CoreServer)  
+- [核心服务器](#CoreServer)  
   
--   [调试引擎](#DebugEngines)  
+- [调试引擎](#DebugEngines)  
   
--   [文档](#Documents)  
+- [文档](#Documents)  
   
--   [事件](#Events)  
+- [事件](#Events)  
   
--   [表达式](#Expressions)  
+- [表达式](#Expressions)  
   
--   [内存](#Memory)  
+- [内存](#Memory)  
   
--   [模块](#Modules)  
+- [模块](#Modules)  
   
--   [端口](#Ports)  
+- [端口](#Ports)  
   
--   [进程](#Processes)  
+- [进程](#Processes)  
   
--   [程序](#Programs)  
+- [程序](#Programs)  
   
--   [属性](#Properties)  
+- [属性](#Properties)  
   
--   [堆栈帧](#StackFrames)  
+- [堆栈帧](#StackFrames)  
   
--   [线程](#Threads)  
+- [线程](#Threads)  
   
--   [类型可视化工具](#TypeVisualizers)  
+- [类型可视化工具](#TypeVisualizers)  
   
- 可以实现接口的实体是：  
+  可以实现接口的实体是：  
   
--   调试引擎 (DE)  
+- 调试引擎 (DE)  
   
--   端口提供程序 (PS)  
+- 端口提供程序 (PS)  
   
--   表达式计算器 (EE)  
+- 表达式计算器 (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 ##  <a name="Breakpoints"></a> 断点  
  有关这些接口的实现和跟踪断点。  

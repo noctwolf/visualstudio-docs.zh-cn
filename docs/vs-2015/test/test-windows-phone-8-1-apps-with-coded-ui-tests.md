@@ -13,12 +13,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 604ac82fbcda190c63a15e5ba0a1800022853b07
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 808482fdd7599adb270fe7634d61d4b88acb0d80
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890136"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 Windows UWP 和 Phone 8.1 应用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,37 +85,37 @@ ms.locfileid: "49285930"
 
 [如何为通用 Windows 平台 (UWP) 应用创建编码的 UI 测试？](#uwpapps)
   
-1.  将新的编码 UI 测试项目添加到包含 Windows Phone 应用的解决方案。  
+1. 将新的编码 UI 测试项目添加到包含 Windows Phone 应用的解决方案。  
   
-     ![新建适用于 Windows Phone 的编码的 UI 测试](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
+    ![新建适用于 Windows Phone 的编码的 UI 测试](../test/media/cuit-phone-newproject.png "CUIT_Phone_NewProject")  
   
-2.  选择使用十字线工具编辑 UI 映射。  
+2. 选择使用十字线工具编辑 UI 映射。  
   
-     ![使用十字线工具生成编码的 UI 测试。](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
+    ![使用十字线工具生成编码的 UI 测试。](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")  
   
-3.  使用十字线工具来选择该应用，然后为应用的“AutomationId”  属性复制值，该值将在稍后用于启动测试中的应用。  
+3. 使用十字线工具来选择该应用，然后为应用的“AutomationId”  属性复制值，该值将在稍后用于启动测试中的应用。  
   
-     ![复制应用的 AutomationId 值](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
+    ![复制应用的 AutomationId 值](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")  
   
-4.  在模拟器中，启动该应用并使用十字线工具来选择按钮控件。 然后将按钮控件添加到 UI 控件图。  
+4. 在模拟器中，启动该应用并使用十字线工具来选择按钮控件。 然后将按钮控件添加到 UI 控件图。  
   
-     ![使用十字线工具映射控件](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
+    ![使用十字线工具映射控件](../test/media/cuit-phone-mapbuttoncontrol.png "CUIT_Phone_MapButtonControl")  
   
-5.  若要将文本框控件添加到 UI 控件图，请重复上一个步骤。  
+5. 若要将文本框控件添加到 UI 控件图，请重复上一个步骤。  
   
-     ![使用十字线工具并映射文本框控件](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
+    ![使用十字线工具并映射文本框控件](../test/media/cuit-phone-maptextboxcontrol.png "CUIT_Phone_MapTextBoxControl")  
   
-6.  生成代码以创建用于 UI 控件映射的更改的代码。  
+6. 生成代码以创建用于 UI 控件映射的更改的代码。  
   
-     ![从生成器生成代码](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
+    ![从生成器生成代码](../test/media/cuit-phone-generatecode.png "CUIT_Phone_GenerateCode")  
   
-7.  使用十字线工具选择文本框控件，然后选择 **“文本”** 属性。  
+7. 使用十字线工具选择文本框控件，然后选择 **“文本”** 属性。  
   
-     ![选择 Text 属性](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
+    ![选择 Text 属性](../test/media/cuit-phone-textproperty.png "CUIT_Phone_TextProperty")  
   
-8.  添加断言。 将在测试中使用它以验证该值是否正确。  
+8. 添加断言。 将在测试中使用它以验证该值是否正确。  
   
-     ![向测试添加断言](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
+    ![向测试添加断言](../test/media/cuit-phone-addassertion.png "CUIT_Phone_AddAssertion")  
   
 9. 为断言方法添加并生成代码。  
   
@@ -223,37 +223,37 @@ ms.locfileid: "49285930"
   
 11. 在“解决方案资源管理器”中，打开 CodedUITest1.cs 或 CodedUITest1.vb 文件。 针对运行测试所需的操作，你现在可以将代码添加到 CodedUTTestMethod1 方法。 使用已添加到 UIMap 的控件来添加代码：  
   
-    1.  使用你之前复制到剪贴板的自动化 ID 属性启动 Windows Phone 应用：  
+    1. 使用你之前复制到剪贴板的自动化 ID 属性启动 Windows Phone 应用：  
   
-        ```csharp  
-        XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```csharp  
+       XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-        ```vb  
-        XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
-        ```  
+       ```vb  
+       XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
+       ```  
   
-    2.  添加手势以点击按钮控件：  
+    2. 添加手势以点击按钮控件：  
   
-        ```csharp  
-        Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
-        ```  
+       ```csharp  
+       Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
+       ```  
   
-        ```vb  
-        Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
-        ```  
+       ```vb  
+       Gesture.Tap(Me.UIMap.UIApp1Window.UIButtonButton)  
+       ```  
   
-    3.  验证对已自动生成的断言方法的调用是否发生在启动应用和按钮上的点击手势之后：  
+    3. 验证对已自动生成的断言方法的调用是否发生在启动应用和按钮上的点击手势之后：  
   
-        ```csharp  
-        this.UIMap.AssertMethod1();  
-        ```  
+       ```csharp  
+       this.UIMap.AssertMethod1();  
+       ```  
   
-        ```vb  
-        Me.UIMap.AssertMethod1()  
-        ```  
+       ```vb  
+       Me.UIMap.AssertMethod1()  
+       ```  
   
-     添加代码后，CodedUITestMethod1 测试方法应如下所示：  
+       添加代码后，CodedUITestMethod1 测试方法应如下所示：  
   
     ```csharp  
     [TestMethod]  
@@ -340,11 +340,11 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>问：如何为通用 Windows 平台 (UWP) 应用创建编码的 UI 测试？  
  **答**：根据要在其中测试 UWP 应用的平台，通过以下方式之一创建编码的 UI 测试项目：  
   
--   在本地计算机上运行的 UWP 应用将作为应用商店应用运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows”** 节点。  
+- 在本地计算机上运行的 UWP 应用将作为应用商店应用运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows”** 节点。  
   
--   在移动设备或仿真器上运行的 UWP 应用将作为 Phone 应用进行运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows Phone)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows Phone”** 节点。  
+- 在移动设备或仿真器上运行的 UWP 应用将作为 Phone 应用进行运行。 若要对此进行测试，必须使用 **“编码的 UI 测试项目(Windows Phone)”** 模板。 若要在创建新项目时查找此模板，请转到“Windows” 、“通用”  节点。 或转到 **“Windows”**、 **“Windows 8”**、 **“Windows Phone”** 节点。  
   
- 创建项目后，将测试创作为与之前保持相同。  
+  创建项目后，将测试创作为与之前保持相同。  
   
 ### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>问：我是否可以选择模拟器外部的控件？  
  **答**：否，生成器将不会检测它们。  

@@ -10,37 +10,37 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 884f97acb6ff0e54c641c3a5df9c5edba9868e50
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f88aa5b9983390771a9b869a6e141802e94d684
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949807"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio 图像库查看器工具可以加载并搜索图像的清单，从而允许用户在相同的方式将 Visual Studio 中处理它们。 用户可以更改背景、 大小、 DPI、 高对比度和其他设置。 该工具也会显示正在加载信息为每个映像清单和映像清单中显示的每个映像的源信息。 此工具可用于：  
   
-1.  诊断错误  
+1. 诊断错误  
   
-2.  在自定义映像的清单中正确设置确保属性  
+2. 在自定义映像的清单中正确设置确保属性  
   
-3.  搜索 Visual Studio 映像目录中的映像，以便 Visual Studio 扩展可以使用适合的 Visual Studio 样式的图像  
+3. 搜索 Visual Studio 映像目录中的映像，以便 Visual Studio 扩展可以使用适合的 Visual Studio 样式的图像  
   
- ![图像库查看器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "图像库查看器 Hero")  
+   ![图像库查看器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "图像库查看器 Hero")  
   
- **图像名字对象**  
+   **图像名字对象**  
   
- 图像名字对象 （或简称名字对象） 是唯一标识图像资产或映像库中的图像列表资产的 guid: id 对。  
+   图像名字对象 （或简称名字对象） 是唯一标识图像资产或映像库中的图像列表资产的 guid: id 对。  
   
- **图像清单文件**  
+   **图像清单文件**  
   
- 图像清单 (.imagemanifest) 文件的 XML 文件，用于定义一组图像资产，表示这些资产和实际的图像或图像，表示每个资产的名字对象。 图像的清单可以定义独立图像或图像列表的旧 UI 支持。 此外，还有设置的属性可以在资产或隐藏每个资产的各个图像上更改何时以及如何显示这些资产。  
+   图像清单 (.imagemanifest) 文件的 XML 文件，用于定义一组图像资产，表示这些资产和实际的图像或图像，表示每个资产的名字对象。 图像的清单可以定义独立图像或图像列表的旧 UI 支持。 此外，还有设置的属性可以在资产或隐藏每个资产的各个图像上更改何时以及如何显示这些资产。  
   
- **图像清单架构**  
+   **图像清单架构**  
   
- 完成映像清单如下所示：  
+   完成映像清单如下所示：  
   
 ```xml  
 <ImageManifest>  

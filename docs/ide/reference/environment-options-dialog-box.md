@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 959be2a2f80f215aa3d72a36b8b989e6fa219c3d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930539"
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
 使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。
@@ -28,7 +28,7 @@ ms.locfileid: "31947932"
 
 
 |有关如何执行下列操作的信息|查看|
-|----------------------------------|---------|
+| - |---------|
 |自定义窗口、菜单和其他 IDE 元素的外观和行为。|[“选项”对话框 ->“环境”->“常规”](../../ide/reference/general-environment-options-dialog-box.md)|
 |更改文件的自动保存和还原设置。|[“选项”对话框 ->“环境”->“自动恢复”](../../ide/reference/autorecover-environment-options-dialog-box.md)|
 |建立文档的显示和管理设置，其中包括“其他”文件的行为。|[“选项”对话框 ->“环境”->“文档”](../../ide/reference/documents-environment-options-dialog-box.md)|

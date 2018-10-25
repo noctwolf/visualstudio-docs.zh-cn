@@ -20,12 +20,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4c961d0a8e313760db20a74fb1397706d5890b96
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 239416a1638940207a8dcb78b395ed1915e8a93a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214248"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867062"
 ---
 # <a name="extending-javascript-intellisense"></a>扩展 JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,13 +84,13 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  在扩展代码中，可以创建以下事件类型的处理程序，通过使用`addEventListener`:  
   
--   `statementcompletion`这会增加语句完成事件的处理程序。 键入一个特殊字符，例如句点 （.） 后，将显示为特定类型的成员的列表或键入时或当您按 CTRL + j。 将显示标识符的列表，提供了语句完成该处理程序接收类型的事件对象`CompletionEvent`，它支持以下成员：[项属性](#Items)，[属性为目标](#Target)， [targetName 属性](#TargetName)，并[作用域属性](#Scope)。  
+- `statementcompletion`这会增加语句完成事件的处理程序。 键入一个特殊字符，例如句点 （.） 后，将显示为特定类型的成员的列表或键入时或当您按 CTRL + j。 将显示标识符的列表，提供了语句完成该处理程序接收类型的事件对象`CompletionEvent`，它支持以下成员：[项属性](#Items)，[属性为目标](#Target)， [targetName 属性](#TargetName)，并[作用域属性](#Scope)。  
   
--   `signaturehelp`其中添加处理程序的参数的 IntelliSense 信息。 参数信息提供了数、 名称和类型的函数所需参数的信息。 该处理程序接收类型的事件对象`SignatureHelpEvent`，它支持以下成员：[属性为目标](#Target)， [parentObject 属性](#ParentObject)， [functionComments 属性](#FunctionComments)， [functionHelp 属性](#FunctionHelp)。  
+- `signaturehelp`其中添加处理程序的参数的 IntelliSense 信息。 参数信息提供了数、 名称和类型的函数所需参数的信息。 该处理程序接收类型的事件对象`SignatureHelpEvent`，它支持以下成员：[属性为目标](#Target)， [parentObject 属性](#ParentObject)， [functionComments 属性](#FunctionComments)， [functionHelp 属性](#FunctionHelp)。  
   
--   `statementcompletionhint`其中添加处理程序的 IntelliSense 快速信息。 快速信息弹出框在代码中显示了标识符的完整声明。 该处理程序接收类型的事件对象`CompletionHintEvent`，它支持以下成员： [completionItem 属性](#CompletionItem)，和[symbolHelp 属性](#SymbolHelp)。  
+- `statementcompletionhint`其中添加处理程序的 IntelliSense 快速信息。 快速信息弹出框在代码中显示了标识符的完整声明。 该处理程序接收类型的事件对象`CompletionHintEvent`，它支持以下成员： [completionItem 属性](#CompletionItem)，和[symbolHelp 属性](#SymbolHelp)。  
   
- 显示 IntelliSense 功能，如语句完成、 参数信息和快速信息的示例，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。  
+  显示 IntelliSense 功能，如语句完成、 参数信息和快速信息的示例，请参阅[使用 IntelliSense](../ide/using-intellisense.md)。  
   
 > [!NOTE]
 >  在 JavaScript 中，快速信息是指将出现完成列表右侧的弹出框。 不能手动调用快速信息。  

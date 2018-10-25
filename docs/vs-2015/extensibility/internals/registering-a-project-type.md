@@ -17,12 +17,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 30956d812aa2ece166231d6ae7580b226025e308
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 103792f4751d290d9d782fa4e71309ebcf3914da
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911325"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -215,17 +215,17 @@ ms.locfileid: "49271773"
   
  菜单项指向用于检索菜单信息的资源的 IDE。 当此数据已合并到菜单数据库时，将注册表 MenusMerged 部分中添加相同的密钥。 VSPackage 应直接修改 MenusMerged 部分下的任何内容信息。 在下表中的数据字段中，有三个以逗号分隔的字段。 第一个字段用于标识菜单资源文件的完整路径：  
   
--   如果省略第一个字段，则该菜单资源从附属 DLL VSPackage GUID 标识加载。  
+- 如果省略第一个字段，则该菜单资源从附属 DLL VSPackage GUID 标识加载。  
   
- 第二个字段用于标识菜单资源 ID 为 CTMENU 类型：  
+  第二个字段用于标识菜单资源 ID 为 CTMENU 类型：  
   
--   如果指定的资源 ID，并且第一个参数提供的文件路径，从完整文件路径加载菜单资源。  
+- 如果指定的资源 ID，并且第一个参数提供的文件路径，从完整文件路径加载菜单资源。  
   
--   如果提供的资源 ID，但不是文件路径，该菜单资源从附属 DLL 中加载。  
+- 如果提供的资源 ID，但不是文件路径，该菜单资源从附属 DLL 中加载。  
   
--   如果提供的完整文件路径和省略资源 ID，要加载的文件应是首席技术官文件。  
+- 如果提供的完整文件路径和省略资源 ID，要加载的文件应是首席技术官文件。  
   
- 最后一个字段标识 CTMENU 资源的版本号。 你可以通过更改版本号再次合并菜单。  
+  最后一个字段标识 CTMENU 资源的版本号。 你可以通过更改版本号再次合并菜单。  
   
 |name|类型|数据|描述|  
 |----------|----------|----------|-----------------|  

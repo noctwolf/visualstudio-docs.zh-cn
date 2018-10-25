@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8903f18a578c9365b34ea420706b4e9f41fd2b1c
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36758864"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890226"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的简单数据绑定
 
@@ -74,27 +74,27 @@ ms.locfileid: "36758864"
 
 ### <a name="to-add-a-typed-dataset-to-the-project"></a>向项目中添加类型化数据集
 
-1.  如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。
+1. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。
 
-2.  选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。
+2. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。
 
-3.  单击“数据库” ，然后单击“下一步” 。
+3. 单击“数据库” ，然后单击“下一步” 。
 
-4.  如果已与 `AdventureWorksLT` 数据库建立连接，请选择此连接，然后单击“下一步” 。
+4. 如果已与 `AdventureWorksLT` 数据库建立连接，请选择此连接，然后单击“下一步” 。
 
-     否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
+    否则，单击“新建连接” ，然后使用“添加连接”  对话框创建新连接。 有关详细信息，请参阅[添加新连接](../data-tools/add-new-connections.md)。
 
-5.  在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
+5. 在“将连接字符串保存到应用程序配置文件中”  页中，单击“下一步” 。
 
-6.  在“选择数据库对象”  页中展开“表”  ，再选择“Customer (SalesLT)” 。
+6. 在“选择数据库对象”  页中展开“表”  ，再选择“Customer (SalesLT)” 。
 
-7.  单击 **“完成”**。
+7. 单击 **“完成”**。
 
-     *AdventureWorksLTDataSet.xsd*文件添加到**解决方案资源管理器**。 此文件定义以下各项：
+    *AdventureWorksLTDataSet.xsd*文件添加到**解决方案资源管理器**。 此文件定义以下各项：
 
-    -   一个名为 `AdventureWorksLTDataSet`的类型化数据集。 此数据集表示 AdventureWorksLT 数据库中的“Customer (SalesLT)”  表的内容。
+   - 一个名为 `AdventureWorksLTDataSet`的类型化数据集。 此数据集表示 AdventureWorksLT 数据库中的“Customer (SalesLT)”  表的内容。
 
-    -   名为 TableAdapter `CustomerTableAdapter`。 此 TableAdapter 可用于读取和写入数据中`AdventureWorksLTDataSet`。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+   - 名为 TableAdapter `CustomerTableAdapter`。 此 TableAdapter 可用于读取和写入数据中`AdventureWorksLTDataSet`。 有关详细信息，请参阅[TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
      在本演练后面的部分中，你将使用这两个对象。
 

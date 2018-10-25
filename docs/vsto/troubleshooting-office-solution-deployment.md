@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9bed7d523d91b43abe5455ea19567da5647f468c
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: bba978da26a2aa7b7263fa5d2e88fa8acdc272f0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43774643"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885998"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 解决方案部署故障排除
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。  
@@ -35,11 +35,11 @@ ms.locfileid: "43774643"
 ## <a name="change-the-assembly-name-causes-conflicts"></a>更改程序集名称会导致冲突  
  如果您更改**程序集名称**中的值**应用程序**页**项目设计器**您已经部署了解决方案后，发布工具会修改安装程序包以包含一个*Setup.exe*文件和两个部署清单。 如果部署两个清单文件，则可能会出现以下条件：  
   
--   如果最终用户同时安装这两个版本，则应用程序会同时加载这两个 VSTO 外接程序。  
+- 如果最终用户同时安装这两个版本，则应用程序会同时加载这两个 VSTO 外接程序。  
   
--   如果在更改程序集名称之前安装了 VSTO 外接程序，则最终用户从不会收到更新。  
+- 如果在更改程序集名称之前安装了 VSTO 外接程序，则最终用户从不会收到更新。  
   
- 若要避免这些情况，不更改解决方案的**程序集名称**值后部署解决方案。  
+  若要避免这些情况，不更改解决方案的**程序集名称**值后部署解决方案。  
   
 ## <a name="check-for-updates-takes-a-long-time"></a>检查更新的时间较长  
  Visual Studio 2010 Tools for Office runtime 提供了一个注册表项，管理员可以使用设置为清单和解决方案下载的超时值。  
@@ -63,7 +63,7 @@ ms.locfileid: "43774643"
  可以将 .NET Framework、 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]和 Office 主互操作程序集作为随 Office 解决方案部署的先决条件添加到安装程序包中。 有关如何安装主互操作程序集的信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)并[如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)。  
   
 ## <a name="publish-using-localhost-can-cause-installation-problems"></a>使用发布的 Localhost 可能会导致安装问题  
- 当你使用"http://localhost"作为文档级解决方案的发布或安装位置**发布向导**不会将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
+ 当你使用"<http://localhost>"作为文档级解决方案的发布或安装位置**发布向导**不会将字符串转换为实际计算机名称。 在这种情况下，必须在开发计算机上安装解决方案。 要使部署的解决方案在开发计算机上使用 IIS，请对所有 HTTP/HTTPS/FTP 位置使用完全限定的名称，而不是 localhost。  
   
 ## <a name="cached-assemblies-are-loaded-instead-of-updated-assemblies"></a>将缓存程序集而不是更新的程序集加载  
  当项目输出路径位于网络文件共享上、程序集使用强名称进行签名以及自定义项的程序集版本未更改时，Fusion（.NET Framework 程序集加载程序）会加载程序集的缓存副本。 如果更新的程序集符合这些条件，则更新不会在下次运行项目时出现，因为会加载缓存副本。  
@@ -72,13 +72,13 @@ ms.locfileid: "43774643"
   
 ### <a name="to-download-assemblies-instead-of-loading-cached-copies"></a>下载程序集而不是加载缓存副本  
   
-1.  在菜单栏上依次选择**项目**， _ProjectName_**属性**。  
+1. 在菜单栏上依次选择**项目**， _ProjectName_**属性**。  
   
-2.  在“应用程序”  页上，选择“程序集信息” 。  
+2. 在“应用程序”  页上，选择“程序集信息” 。  
   
-3.  在第一个**程序集版本**框中，输入一个星号 (\*)，然后选择**确定**按钮。  
+3. 在第一个**程序集版本**框中，输入一个星号 (\*)，然后选择**确定**按钮。  
   
- 更改程序集版本之后，可以继续使用强名称对程序集进行签名，Fusion 会加载自定义项的最新版本。  
+   更改程序集版本之后，可以继续使用强名称对程序集进行签名，Fusion 会加载自定义项的最新版本。  
   
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>URI 具有不 US ASCII 字符时，安装失败  
  将 Office 解决方案发布到 HTTP/HTTPS/FTP 位置时，路径不能包含不属于 US-ASCII 的任何 Unicode 字符。 这类字符会导致安装程序中出现不一致的行为。 请对安装路径使用 US-ASCII 字符。  
@@ -91,15 +91,15 @@ ms.locfileid: "43774643"
 ## <a name="uncaught-exception-or-method-not-found-error-when-you-install-a-solution"></a>未捕获的异常或方法找不到错误时安装解决方案  
  通过打开部署清单来安装 Office 解决方案时 ( *.vsto*文件)，可能会出现以下条件的 Office 应用程序、 文档或工作簿中，错误消息：  
   
--   找不到方法。  
+- 找不到方法。  
   
--   MissingMethodException。  
+- MissingMethodException。  
   
--   未捕获的异常。  
+- 未捕获的异常。  
   
- 要防止出现这些错误消息，请通过运行安装程序来安装解决方案。  
+  要防止出现这些错误消息，请通过运行安装程序来安装解决方案。  
   
- 在不运行安装程序的情况下安装解决方案时，安装程序不会检查或安装先决条件。 安装程序会检查是否存在正确版本的先决条件并根据需要安装它们。  
+  在不运行安装程序的情况下安装解决方案时，安装程序不会检查或安装先决条件。 安装程序会检查是否存在正确版本的先决条件并根据需要安装它们。  
   
 ## <a name="manifest-registry-keys-for-add-ins-change-after-an-installshield-limited-edition-project-is-built"></a>清单生成 InstallShield Limited Edition 项目之后外接程序更改的注册表项  
  是 VSTO 外接程序安装的一部分的清单注册表项有时编程中的更改 *.vsto*到 *。 dll.manifest*生成 InstallShield Limited Edition 项目时。  

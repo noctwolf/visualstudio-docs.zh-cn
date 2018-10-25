@@ -1,5 +1,5 @@
 ---
-title: IDiaStackWalkHelper::pdataForVA |Microsoft 文档
+title: IDiaStackWalkHelper::pdataForVA |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb500539184d6ac5e7e3cb00e753a00f3585057
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: ec11596091f7039d9f711acc0d96510340a77c6c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463213"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901419"
 ---
 # <a name="idiastackwalkhelperpdataforva"></a>IDiaStackWalkHelper::pdataForVA
 返回与虚拟地址相关联的 PDATA 数据块。  
@@ -43,18 +43,18 @@ HRESULT pdataForVA(
  [in]以字节为单位来获取数据的大小。  
   
  `pcbData`  
- [out]返回以字节为单位获得数据的实际大小。  
+ [out]返回以字节为单位获取数据的实际大小。  
   
  `pbData`  
- [在中，out]使用请求的数据填充缓冲区。 不能为 `NULL`。  
+ [in、 out]使用所请求的数据填充缓冲区。 不能为 `NULL`。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`。 返回`S_FALSE`如果没有指定的地址不 PDATA。 否则，返回错误代码。  
+ 如果成功，则返回`S_OK`。 返回`S_FALSE`是否存在指定的地址不 PDATA。 否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- PDATA （名为".pdata"部分） 的编译单位包含有关异常处理函数的信息。  
+ PDATA （名为".pdata"一节） 的编译单位包含有关异常处理函数的信息。  
   
- 调用方知道了以便调用方具有无需要求提供了有关数据量的要返回的数据量。 因此，它是可接受的返回错误，如果此方法的实现`pbData`参数是`NULL`。  
+ 调用方知道了要使调用方具有要求数据量对于提供了无需返回的数据量。 因此，它是可接受的返回错误，如果此方法的实现`pbData`参数是`NULL`。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

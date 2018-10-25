@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetSymUnmanagedReader |Microsoft 文档
+title: IDebugSymbolProviderDirect::GetSymUnmanagedReader |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 311b03657cef0d0ec6785cad332cbf7c9530b48e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 705c5d1184f159309d289d70c7a787dc3fce03b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118868"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872715"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 检索非托管代码的符号读取器。  
@@ -47,13 +47,13 @@ int GetSymUnmanagedReader (
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `ppSymUnmanagedReader`  
- [out]返回一个表示非托管代码的符号读取器对象。  
+ [out]返回一个对象，表示非托管代码的符号读取器。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -16,12 +16,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: f3e03ea9985840d20c812f56d7a0f9cae66420cc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ff386c2f333d3558aa6631dd2e4c13f8bfd595c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49261803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838746"
 ---
 # <a name="test-area-6-delete"></a>测试区域 6：删除
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ ms.locfileid: "49261803"
   
  下面是要删除的项的列表：  
   
--   文件  
+- 文件  
   
--   文件夹  
+- 文件夹  
   
--   项目  
+- 项目  
   
- 可能会根据项目类型中，可以选择**删除**项目 （留在磁盘上的文件） 或**删除**（删除磁盘上的文件） 的项目。 以上任一操作中删除项目或项从**解决方案资源管理器**。  
+  可能会根据项目类型中，可以选择**删除**项目 （留在磁盘上的文件） 或**删除**（删除磁盘上的文件） 的项目。 以上任一操作中删除项目或项从**解决方案资源管理器**。  
   
 ## <a name="expected-behavior"></a>预期的行为  
  删除测试区域中的测试用例预期的行为是：  

@@ -15,12 +15,12 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 09cf6f69348c08ec284e074feea8d9a33c488f0b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3674d6ccbda89a2a3ee1de551587ba034ba51c7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229458"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49932619"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -204,13 +204,13 @@ ms.locfileid: "49229458"
   
 #### <a name="step-5--run-the-data-driven-test"></a>步骤 5 – 运行数据驱动的测试  
   
-1.  通过再次运行测试来验证现在测试是数据驱动的。  
+1. 通过再次运行测试来验证现在测试是数据驱动的。  
   
-     使用 .csv 文件中的值你可以看到测试通过这三个迭代运行。 验证工作仍可进行，并且测试资源管理器中的测试应显示为通过。  
+    使用 .csv 文件中的值你可以看到测试通过这三个迭代运行。 验证工作仍可进行，并且测试资源管理器中的测试应显示为通过。  
   
- **指南**  
+   **指南**  
   
- 有关其他信息，请参阅 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)（使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部）和 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)（使用 Visual Studio 2012 测试连续交付 - 第 5 章：自动化系统测试）  
+   有关其他信息，请参阅 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)（使用 Visual Studio 2012 测试连续交付 - 第 2 章：单元测试：测试内部）和 [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5: Automating System Tests](http://go.microsoft.com/fwlink/?LinkID=255196)（使用 Visual Studio 2012 测试连续交付 - 第 5 章：自动化系统测试）  
   
 ## <a name="q--a"></a>问题解答  
   

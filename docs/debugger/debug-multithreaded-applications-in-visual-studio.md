@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80618257e61356285d9b8c9c2bcf2a7a2e11e831
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1d238f1c6be12753fe87cece03139185e1c24ad6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854760"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其分配处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。  
@@ -88,19 +88,19 @@ Visual Studio 还提供了功能强大的断点和跟踪点，在调试多线程
 ## <a name="related-sections"></a>相关章节  
  [使用断点](../debugger/using-breakpoints.md)
 
- - 当你想要调试单个线程时使用断点条件或筛选器。  
+- 当你想要调试单个线程时使用断点条件或筛选器。  
   
- - 使用跟踪点可以在不中断的情况下跟踪程序的执行。 对于研究死锁之类的问题，这一点十分有用。  
+- 使用跟踪点可以在不中断的情况下跟踪程序的执行。 对于研究死锁之类的问题，这一点十分有用。  
   
- [线程处理](/dotnet/standard/threading/index)  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 编程中的线程处理概念，包括代码示例。  
+  [线程处理](/dotnet/standard/threading/index)  
+  [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 编程中的线程处理概念，包括代码示例。  
   
- [组件中的多线程处理](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
- 如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 组件中使用多线程处理。  
+  [组件中的多线程处理](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 组件中使用多线程处理。  
   
- [针对旧代码的多线程支持 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
- 针对使用 MFC 的 C++ 程序员的线程处理概念和代码示例。  
+  [针对旧代码的多线程支持 (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)  
+  针对使用 MFC 的 C++ 程序员的线程处理概念和代码示例。  
   
 ## <a name="see-also"></a>请参阅  
  [调试线程和进程](../debugger/debug-threads-and-processes.md)   
- [远程调试](../debugger/remote-debugging.md)
+ [Remote Debugging](../debugger/remote-debugging.md)

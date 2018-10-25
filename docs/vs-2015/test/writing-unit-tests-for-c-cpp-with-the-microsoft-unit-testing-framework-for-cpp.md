@@ -13,12 +13,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9c3b24aea533083e7d9158b54e2e68b5095f06df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 180f970f35ed0bb3de70ba3a7b7b47dbe656ddf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250531"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904032"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>用 Microsoft 适用于 C++ 的单元测试框架编写 C/C++ 单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,53 +187,53 @@ ms.locfileid: "49250531"
   
 ###  <a name="coupleProjects"></a> 将测试项目耦合到 DLL 项目  
   
-1.  将 DLL 项目添加到测试项目的项目引用中：  
+1. 将 DLL 项目添加到测试项目的项目引用中：  
   
-    1.  打开一个测试项目的属性，选择“通用属性” 、“框架和引用” 。  
+   1.  打开一个测试项目的属性，选择“通用属性” 、“框架和引用” 。  
   
-         ![C&#43;&#43; 项目属性 &#45; 框架和引用](../test/media/utecpp08.png "UteCpp08")  
+        ![C&#43;&#43; 项目属性 &#45; 框架和引用](../test/media/utecpp08.png "UteCpp08")  
   
-    2.  选择“添加新引用” 。  
+   2.  选择“添加新引用” 。  
   
-         在“添加引用”  对话框中，选择 DLL 项目并选择“添加” 。  
+        在“添加引用”  对话框中，选择 DLL 项目并选择“添加” 。  
   
-         ![C&#43;&#43; 项目属性 &#45; 添加新引用](../test/media/utecpp09.png "UteCpp09")  
+        ![C&#43;&#43; 项目属性 &#45; 添加新引用](../test/media/utecpp09.png "UteCpp09")  
   
-2.  在主体单元测试 .cpp 文件中，将 DLL 代码的 .h 文件包括在内：  
+2. 在主体单元测试 .cpp 文件中，将 DLL 代码的 .h 文件包括在内：  
   
-    ```cpp  
-    #include "..\RootFinder\RootFinder.h"  
-    ```  
+   ```cpp  
+   #include "..\RootFinder\RootFinder.h"  
+   ```  
   
-3.  添加使用导出函数的基本测试：  
+3. 添加使用导出函数的基本测试：  
   
-    ```cpp  
-    TEST_METHOD(BasicTest)  
-    {  
-    CRootFinder rooter;  
-    Assert::AreEqual(  
-    // Expected value:  
-    0.0,   
-    // Actual value:  
-    rooter.SquareRoot(0.0),   
-    // Tolerance:  
-    0.01,  
-    // Message:  
-    L"Basic test failed",  
-    // Line number - used if there is no PDB file:  
-    LINE_INFO());  
-    }  
-    ```  
+   ```cpp  
+   TEST_METHOD(BasicTest)  
+   {  
+   CRootFinder rooter;  
+   Assert::AreEqual(  
+   // Expected value:  
+   0.0,   
+   // Actual value:  
+   rooter.SquareRoot(0.0),   
+   // Tolerance:  
+   0.01,  
+   // Message:  
+   L"Basic test failed",  
+   // Line number - used if there is no PDB file:  
+   LINE_INFO());  
+   }  
+   ```  
   
-4.  生成解决方案。  
+4. 生成解决方案。  
   
-     新测试出现在测试资源管理器中。  
+    新测试出现在测试资源管理器中。  
   
-5.  在“测试资源管理器”中，选择 **“全部运行”**。  
+5. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
-     ![单元测试资源管理器 &#45; 已通过基本测试](../test/media/utecpp10.png "UteCpp10")  
+    ![单元测试资源管理器 &#45; 已通过基本测试](../test/media/utecpp10.png "UteCpp10")  
   
- 你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
+   你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
   
 ###  <a name="iterate"></a> 以迭代方式增加测试并使它们通过  
   

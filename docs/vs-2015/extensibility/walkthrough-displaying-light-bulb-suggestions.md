@@ -13,12 +13,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 34ce6854c5af256c9a4fde35340414b6b2de640f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: de18b0371baae2d48be9341b605f064875ef21de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252494"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869049"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>演练：显示灯泡建议
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,21 +27,21 @@ ms.locfileid: "49252494"
   
  在 Visual C# 和 Visual Basic 编辑器中，您还可以使用.NET 编译器平台 ("Roslyn") 编写并打包你自己的自动显示灯泡的操作的代码分析器。 有关详细信息，请参见:  
   
--   [如何： 编写 C# 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
+- [如何： 编写 C# 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix)  
   
--   [如何： 编写 Visual Basic 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
+- [如何： 编写 Visual Basic 诊断和代码修补程序](https://github.com/dotnet/roslyn/wiki/How-To-Write-a-Visual-Basic-Analyzer-and-Code-Fix)  
   
- C + + 等其他语言还提供一些快速操作，如创建该函数的存根 （stub） 实现建议灯泡。  
+  C + + 等其他语言还提供一些快速操作，如创建该函数的存根 （stub） 实现建议灯泡。  
   
- 下面是一个灯泡如下所示。 在 Visual Basic 或 Visual C# 项目中，红色曲线将显示在变量名称下时是无效的。 当您将鼠标移到无效的标识符时，在光标附近将显示灯泡。  
+  下面是一个灯泡如下所示。 在 Visual Basic 或 Visual C# 项目中，红色曲线将显示在变量名称下时是无效的。 当您将鼠标移到无效的标识符时，在光标附近将显示灯泡。  
   
- ![灯泡](../extensibility/media/lightbulb.png "灯泡图标")  
+  ![灯泡](../extensibility/media/lightbulb.png "灯泡图标")  
   
- 如果通过灯泡图标中单击向下箭头，将显示一组建议的操作，以及所选操作的预览。 在这种情况下，它显示如果执行该操作将对你的代码的更改。  
+  如果通过灯泡图标中单击向下箭头，将显示一组建议的操作，以及所选操作的预览。 在这种情况下，它显示如果执行该操作将对你的代码的更改。  
   
- ![灯泡预览](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
+  ![灯泡预览](../extensibility/media/lightbulbpreview.png "LightBulbPreview")  
   
- 可以使用灯泡提供建议的操作。 例如，您可以提供要移动打开到新行的大括号或将它们移动到上一行末尾的操作。 下面的演练演示如何创建将显示一个灯泡在当前单词上并且具有两个建议操作：**转换为大写**并**转换为小写**。  
+  可以使用灯泡提供建议的操作。 例如，您可以提供要移动打开到新行的大括号或将它们移动到上一行末尾的操作。 下面的演练演示如何创建将显示一个灯泡在当前单词上并且具有两个建议操作：**转换为大写**并**转换为小写**。  
   
 ## <a name="prerequisites"></a>系统必备  
  从 Visual Studio 2015 开始，您并不安装 Visual Studio SDK 从下载中心获得。 它是作为 Visual Studio 安装程序中的可选功能包含在内。 此外可以在以后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  

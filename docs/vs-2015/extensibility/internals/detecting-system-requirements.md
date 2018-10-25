@@ -16,12 +16,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: e1956130203498d32d1ee39d67121f7797dd41fc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7d92d895b0986a8a6df888d4bea258f9dab067e8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187468"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880554"
 ---
 # <a name="detecting-system-requirements"></a>检测系统要求
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ VSPackage 不能作用，除非安装了 Visual Studio。 当您使用 Microsoft
 ## <a name="detecting-visual-studio-editions"></a>检测 Visual Studio 版本  
  若要确定是否安装了 Visual Studio 的版本，验证安装注册表项的值是 (REG_DWORD) 1 中相应的文件夹，如下表中列出。 请注意，Visual Studio 版本的层次结构：  
   
-1.  企业  
+1. 企业  
   
-2.  Professional  
+2. Professional  
   
-3.  社区  
+3. 社区  
   
- 安装的"更高"的版本时，会添加与"低"的版本以及该版本的注册表项。 也就是说，如果安装的 Enterprise edition，则安装密钥设置为 1 企业版、 以及专业版和社区版。 因此需要进行仅检查所需的"最高"版本。  
+   安装的"更高"的版本时，会添加与"低"的版本以及该版本的注册表项。 也就是说，如果安装的 Enterprise edition，则安装密钥设置为 1 企业版、 以及专业版和社区版。 因此需要进行仅检查所需的"最高"版本。  
   
 > [!NOTE]
 >  在注册表编辑器的 64 位版本，32 位密钥将显示下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\。 Visual Studio 键是下 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\。  

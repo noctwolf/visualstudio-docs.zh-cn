@@ -32,12 +32,12 @@ caps.latest.revision: 37
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9ce78912be4e4b29e323061996de650e1f2ff255
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9b487f8805c81a1d854a7c077f74e6b70172f7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297188"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925495"
 ---
 # <a name="memory-windows"></a>“内存”窗口
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,21 +91,21 @@ ms.locfileid: "49297188"
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>更改“内存”窗口中的列数  
   
-1.  在顶部的工具栏**内存**窗口中，找到**列**列表。  
+1. 在顶部的工具栏**内存**窗口中，找到**列**列表。  
   
-2.  在中**列**列表中，选择你想要显示或选择的列数**自动**自动调整以适应窗口的宽度。  
+2. 在中**列**列表中，选择你想要显示或选择的列数**自动**自动调整以适应窗口的宽度。  
   
- 如果不希望的内容**内存**窗口更改为您的程序执行时，可以关闭活动表达式计算。  
+   如果不希望的内容**内存**窗口更改为您的程序执行时，可以关闭活动表达式计算。  
   
 #### <a name="to-toggle-live-evaluation"></a>打开或关闭活动计算  
   
-1.  右键单击**内存**窗口。  
+1. 右键单击**内存**窗口。  
   
-2.  在快捷菜单上，单击**自动重新计算**。  
+2. 在快捷菜单上，单击**自动重新计算**。  
   
-     如果打开活动计算，则该选项处于选中状态，单击该选项将关闭活动计算。 如果关闭活动计算，则该选项未处于选中状态，单击该选项将打开活动计算。  
+    如果打开活动计算，则该选项处于选中状态，单击该选项将关闭活动计算。 如果关闭活动计算，则该选项未处于选中状态，单击该选项将打开活动计算。  
   
- 可以隐藏或显示在顶部工具栏**内存**窗口。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
+   可以隐藏或显示在顶部工具栏**内存**窗口。 当工具栏隐藏时，无法访问“地址”框或其他工具。  
   
 #### <a name="to-toggle-the-toolbar"></a>切换工具栏  
   

@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 72aa7681293fa6dd50b23e4b9d090f086d3c67ad
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 6839385e64503ce939d5244b116a9f24be786395
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860454"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904428"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在域特定语言 (DSL) 创建使用 Visual Studio 可视化和建模 SDK，可以更改当用户复制并粘贴元素时，会发生什么情况。
@@ -24,19 +24,19 @@ ms.locfileid: "47860454"
 
  默认情况下，当用户将元素复制到剪贴板时，还会复制以下元素：
 
--   所选元素的嵌入后代。 （即，作为源于复制元素的嵌入关系目标的元素。）
+- 所选元素的嵌入后代。 （即，作为源于复制元素的嵌入关系目标的元素。）
 
--   复制的元素之间的关系链接。
+- 复制的元素之间的关系链接。
 
- 此规则将按递归方式应用到复制的元素和链接。
+  此规则将按递归方式应用到复制的元素和链接。
 
- ![复制和粘贴的元素](../modeling/media/dslcopypastedefault.png)
+  ![复制和粘贴的元素](../modeling/media/dslcopypastedefault.png)
 
- 复制的元素和链接将进行序列化并存储在位于剪贴板上的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP)。
+  复制的元素和链接将进行序列化并存储在位于剪贴板上的 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> (EGP)。
 
- 复制的元素的图像也位于该剪贴板上。 这将允许用户将其粘贴到其他应用程序（如 Word）中。
+  复制的元素的图像也位于该剪贴板上。 这将允许用户将其粘贴到其他应用程序（如 Word）中。
 
- 用户可以根据 DSL 定义将复制的元素粘贴到可以接受元素的目标上。 例如，在从组件解决方案模板生成的 DSL 中，用户可以将端口复制到组件上，但不能复制到关系图上；并且可以将组件粘贴到关系图上，但不能粘贴到其他组件上。
+  用户可以根据 DSL 定义将复制的元素粘贴到可以接受元素的目标上。 例如，在从组件解决方案模板生成的 DSL 中，用户可以将端口复制到组件上，但不能复制到关系图上；并且可以将组件粘贴到关系图上，但不能粘贴到其他组件上。
 
 ## <a name="customizing-copy-and-paste-behavior"></a>自定义复制和粘贴行为
  通过使用程序代码自定义模型的详细信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
@@ -72,7 +72,6 @@ partial class MyDslClipboardCommandSet
      .SelectObjects(1, new object[] { diagram }, 0);
   }
 } }
-
 ```
 
  **当用户粘贴到所选目标上时，请创建其他链接。** 例如，当将注释框粘贴到元素上时，它们之间即创建一个链接。
@@ -142,7 +141,6 @@ partial class MyDslDiagram // EDIT NAME
   }
  private MyElementOperations singleton = null;
 }
-
 ```
 
  **在所选的位置，例如当前光标位置粘贴形状。**
@@ -222,15 +220,15 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
  有三个值：
 
--   不传播复制
+- 不传播复制
 
--   仅将复制传播到链接 - 在粘贴该组时，此链接的新副本将引用链接另一端上的现有元素。
+- 仅将复制传播到链接 - 在粘贴该组时，此链接的新副本将引用链接另一端上的现有元素。
 
--   将复制传播到链接和相反的角色扮演者 - 复制的组包括位于链接另一端上的元素的副本。
+- 将复制传播到链接和相反的角色扮演者 - 复制的组包括位于链接另一端上的元素的副本。
 
- ![使用 PropagateCopyToLinkOnly 进行复制的效果](../modeling/media/dslpropagatecopy.png)
+  ![使用 PropagateCopyToLinkOnly 进行复制的效果](../modeling/media/dslpropagatecopy.png)
 
- 所进行的更改将同时影响元素和复制的图像。
+  所进行的更改将同时影响元素和复制的图像。
 
 ## <a name="programming-copy-and-paste-behavior"></a>编程复制和粘贴行为
  对于复制、 粘贴、 创建和删除对象的 DSL 行为的许多方面均由的实例<xref:Microsoft.VisualStudio.Modeling.ElementOperations>的耦合到关系图。 您可以通过派生您自己的类从修改 DSL 的行为<xref:Microsoft.VisualStudio.Modeling.ElementOperations>并重写<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A>关系图类的属性。
@@ -244,13 +242,13 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 
 #### <a name="to-define-your-own-elementoperations"></a>定义自己的 ElementOperations
 
-1.  在 DSL 项目的新文件中，创建派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的类。
+1. 在 DSL 项目的新文件中，创建派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations> 的类。
 
-2.  为关系图类添加分部类定义。 此类的名称可在**Dsl\GeneratedCode\Diagrams.cs**。
+2. 为关系图类添加分部类定义。 此类的名称可在**Dsl\GeneratedCode\Diagrams.cs**。
 
-     在关系图类中，重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以返回 ElementOperations 子类的实例。 应在每次调用时返回同一个实例。
+    在关系图类中，重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> 以返回 ElementOperations 子类的实例。 应在每次调用时返回同一个实例。
 
- 在 DslPackage 项目的自定义代码文件中添加此代码：
+   在 DslPackage 项目的自定义代码文件中添加此代码：
 
 ```csharp
 
@@ -281,7 +279,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
     { }
     // Overridden methods follow
   }
-
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>接收从其他模型拖动的项
@@ -311,7 +308,6 @@ public override bool CanMerge(ModelElement targetShape, System.Windows.Forms.IDa
         return true;
    return base.CanMerge(targetShape, data);
  }
-
 ```
 
 ## <a name="mergeelementgroupprototype"></a>MergeElementGroupPrototype()
@@ -329,7 +325,6 @@ public override void MergeElementGroupPrototype(ModelElement targetShape, Elemen
   if (prototypeToMerge != null)
     base.MergeElementGroupPrototype(targetShape, prototypeToMerge);
 }
-
 ```
 
  此示例将处理从 UML 类关系图中拖动的 UML 类元素。 DSL 的设计目的不是直接存储 UML 类，而是为每个拖动的 UML 类创建 DSL 元素。 例如，如果 DSL 是实例关系图，则这将十分有用。 用户可以将类拖动到关系图上来创建这些类的实例。
@@ -367,7 +362,6 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
   }
   return null;
 }
-
 ```
 
 ## <a name="standard-copy-behavior"></a>标准复制行为
@@ -558,7 +552,6 @@ namespace Company.MyDsl
     }
   }
 }
-
 ```
 
 ## <a name="see-also"></a>请参阅

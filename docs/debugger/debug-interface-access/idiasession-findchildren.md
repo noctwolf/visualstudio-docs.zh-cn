@@ -1,5 +1,5 @@
 ---
-title: 'Idiasession:: Findchildren |Microsoft 文档'
+title: 'Idiasession:: Findchildren |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9b9aabf920fa33828d86e2f0c3ac96f7e6dbdb
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 16033fc289e5a1fe2a8331e927bba51ce1671fd2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896162"
 ---
 # <a name="idiasessionfindchildren"></a>IDiaSession::findChildren
-检索指定的父标识符的所有匹配的名称和符号类型的子级。  
+检索指定的父标识符相匹配的名称和符号类型的所有子级。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,19 +38,19 @@ HRESULT findChildren (
   
 #### <a name="parameters"></a>参数  
  `parent`  
- [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示父对象。 如果此父符号是函数、 模块或块，则在返回其子词法`ppResult`。 如果父符号是一种类型，则返回其子类。 如果此参数为`NULL`，然后`symtag`必须设置为`SymTagExe`或`SymTagNull`，这将返回全局作用域 （.exe 文件）。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示父对象。 如果此父符号是函数、 模块或块，则返回其子词法`ppResult`。 如果父符号是一种类型，则返回其子类。 如果此参数为`NULL`，然后`symtag`必须设置为`SymTagExe`或`SymTagNull`，这会返回全局作用域 （.exe 文件）。  
   
  `symtag`  
- [in]指定要检索的子级的符号标记。 值，将从[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 设置为`SymTagNull`检索所有子级。  
+ [in]指定要检索的子对象的符号标记。 值取自[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)枚举。 设置为`SymTagNull`以检索所有子级。  
   
  `name`  
- [in]指定要检索的子级的名称。 设置为`NULL`为要检索的所有子级。  
+ [in]指定要检索的子对象的名称。 设置为`NULL`要检索的所有子级。  
   
  `compareFlags`  
- [in]指定应用于名称匹配的比较选项。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
+ [in]指定比较选项应用到匹配的名称。 中的值[NameSearchOptions 枚举](../../debugger/debug-interface-access/namesearchoptions.md)枚举可以单独或组合使用。  
   
  `ppResult`  
- [out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号列表中的对象。  
+ [out]返回[IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)检索包含子符号的列表的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 40cc0e20b08f151e3a7bbda8060469f40b2b9050
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b085bf032611eafcb822a4e083d00d4ae72fd1ac
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893372"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>演练： 改进 UI 响应能力 (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,45 +163,45 @@ ms.locfileid: "49258305"
   
 ### <a name="analyzing-performance-data"></a>分析性能数据  
   
-1.  在“调试”工具栏上的“开始调试”列表中，选择一个 Windows Phone 仿真器或“模拟器”。  
+1. 在“调试”工具栏上的“开始调试”列表中，选择一个 Windows Phone 仿真器或“模拟器”。  
   
-2.  在 **“调试”** 菜单上，选择 **“性能和诊断”**。  
+2. 在 **“调试”** 菜单上，选择 **“性能和诊断”**。  
   
-3.  在“可用工具”中，选择“HTML UI 响应能力”，然后选择“启动”。  
+3. 在“可用工具”中，选择“HTML UI 响应能力”，然后选择“启动”。  
   
-     在本教程中，你将把探查器连接到启动项目。 有关其他选项的信息（例如将探查器连接到所安装的应用），请参阅 [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)。  
+    在本教程中，你将把探查器连接到启动项目。 有关其他选项的信息（例如将探查器连接到所安装的应用），请参阅 [HTML UI 响应能力](../profiling/html-ui-responsiveness.md)。  
   
-     当你启动探查器时，可能会显示“用户帐户控制”，要求你提供运行 VsEtwCollector.exe 的权限。 选择 **“是”**。  
+    当你启动探查器时，可能会显示“用户帐户控制”，要求你提供运行 VsEtwCollector.exe 的权限。 选择 **“是”**。  
   
-4.  在正在运行的应用中，选择“等待值”并等待大约 10 秒。 验证按钮文本和颜色是否约每秒更新一次。  
+4. 在正在运行的应用中，选择“等待值”并等待大约 10 秒。 验证按钮文本和颜色是否约每秒更新一次。  
   
-5.  从正在运行的应用程序中，切换到 Visual Studio (Alt+Tab)。  
+5. 从正在运行的应用程序中，切换到 Visual Studio (Alt+Tab)。  
   
-6.  选择“停止收集”。  
+6. 选择“停止收集”。  
   
-     探查器在 Visual Studio 的新选项卡中显示信息。 查看 CPU 使用率和可视吞吐量 (FPS) 数据时，可以轻松确定一些趋势：  
+    探查器在 Visual Studio 的新选项卡中显示信息。 查看 CPU 使用率和可视吞吐量 (FPS) 数据时，可以轻松确定一些趋势：  
   
-    -   CPU 使用率在按下“等待值”按钮后大约 3 秒显著提高，并显示从此时起所发生的事件（脚本编写、样式设置和绘制事件的一致组合）的清晰模式。  
+   - CPU 使用率在按下“等待值”按钮后大约 3 秒显著提高，并显示从此时起所发生的事件（脚本编写、样式设置和绘制事件的一致组合）的清晰模式。  
   
-    -   可视吞吐量不受影响，FPS 保持在 60 吞吐量（即不丢弃帧）。  
+   - 可视吞吐量不受影响，FPS 保持在 60 吞吐量（即不丢弃帧）。  
   
      我们来看看“CPU 使用率”图的典型部分，了解应用在此高活动量期间的工作。  
   
-7.  在“CPU 使用率”图的中间选择一个一到两秒的部分（单击并拖动或使用 Tab 键和箭头键）。 下图显示了做出选择后的“CPU 使用率”图。 非共享区域为选定内容。  
+7. 在“CPU 使用率”图的中间选择一个一到两秒的部分（单击并拖动或使用 Tab 键和箭头键）。 下图显示了做出选择后的“CPU 使用率”图。 非共享区域为选定内容。  
   
-     ![CPU 使用率图](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
+    ![CPU 使用率图](../profiling/media/js-htmlviz-app-cpu.png "JS_HTMLViz_App_CPU")  
   
-8.  选择“放大”。  
+8. 选择“放大”。  
   
-     此图将更改，更详细地显示选定时间段。 下图显示了放大后的“CPU 使用率”图。 （具体数据可能不同，但常规模式是明显的。）  
+    此图将更改，更详细地显示选定时间段。 下图显示了放大后的“CPU 使用率”图。 （具体数据可能不同，但常规模式是明显的。）  
   
-     ![放大视图](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
+    ![放大视图](../profiling/media/js-htmlviz-app-zoom.png "JS_HTMLViz_App_Zoom")  
   
-     下方窗格中的“时间线详细信息”显示选定时间段的详细信息的示例。  
+    下方窗格中的“时间线详细信息”显示选定时间段的详细信息的示例。  
   
-     ![时间线详细信息](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
+    ![时间线详细信息](../profiling/media/js-htmlviz-app-details.png "JS_HTMLViz_App_Details")  
   
-     “时间线详细信息”中的事件可确认“CPU 使用率”图中的明显趋势：在短时间内发生大量事件。 “时间线详细信息”显示这些事件是 `Timer`、`Layout` 和 `Paint` 事件。  
+    “时间线详细信息”中的事件可确认“CPU 使用率”图中的明显趋势：在短时间内发生大量事件。 “时间线详细信息”显示这些事件是 `Timer`、`Layout` 和 `Paint` 事件。  
   
 9. 从上下文菜单中选择（或右键单击）下方窗格中的某个 `Timer` 事件，然后选择“筛选到事件”。 下图显示了此测试应用程序中的某个 `Timer` 事件的特定详细信息的示例。  
   

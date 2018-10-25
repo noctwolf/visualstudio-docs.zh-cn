@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d973c688243ce9b5923ec193edcd573770b1569
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a0bd5eb8dc4c99d05d8c31aa05914327a0ab7f02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241229"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925872"
 ---
 # <a name="target-build-order"></a>目标生成顺序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "49241229"
   
 如果目标的输入取决于另一目标的输出，那么必须将目标排序。 可使用这些属性指定目标运行的顺序：  
   
--   `InitialTargets`。 `Project` 属性指定将首先运行的目标，即使在命令行或 `DefaultTargets` 属性中指定了目标。  
+- `InitialTargets`。 `Project` 属性指定将首先运行的目标，即使在命令行或 `DefaultTargets` 属性中指定了目标。  
   
--   `DefaultTargets`。 如果未在命令行上显示指定目标，则此 `Project` 属性可指定要运行的目标。  
+- `DefaultTargets`。 如果未在命令行上显示指定目标，则此 `Project` 属性可指定要运行的目标。  
   
--   `DependsOnTargets`。 此 `Target` 属性指定必须运行的目标后才能运行此目标。  
+- `DependsOnTargets`。 此 `Target` 属性指定必须运行的目标后才能运行此目标。  
   
--   `BeforeTargets` 和 `AfterTargets`。 这些 `Target` 属性指定应在指定的目标运行前或后 (MSBuild 4.0) 运行此目标。  
+- `BeforeTargets` 和 `AfterTargets`。 这些 `Target` 属性指定应在指定的目标运行前或后 (MSBuild 4.0) 运行此目标。  
   
- 生成过程中一个目标绝不会运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。  
+  生成过程中一个目标绝不会运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。  
   
- 目标可能有 `Condition` 属性。 如果指定的条件评估结果为 `false`，那么该目标不会执行且对生成没有影响。 有关条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。  
+  目标可能有 `Condition` 属性。 如果指定的条件评估结果为 `false`，那么该目标不会执行且对生成没有影响。 有关条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。  
   
 ## <a name="initial-targets"></a>初始目标  
  [Project`DefaultTargets` 元素的 `InitialTargets` 属性指定将首先运行的目标，即使在命令行或 ](../msbuild/project-element-msbuild.md) 属性中指定了目标。 初始目标常用于错误检查。  

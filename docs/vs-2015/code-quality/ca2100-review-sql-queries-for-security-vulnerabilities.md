@@ -21,15 +21,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7d39d324942348050d05dfb5273a9b4075747b1c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c77e448a492a64e3bbdf0f86809cdf82d7fd72fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206500"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877395"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：检查 SQL 查询中是否有安全漏洞
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ReviewSqlQueriesForSecurityVulnerabilities|
@@ -43,25 +44,25 @@ ms.locfileid: "49206500"
 ## <a name="rule-description"></a>规则说明
  此规则假定字符串参数中包含用户输入。 基于用户输入生成的 SQL 命令字符串易于受到 SQL 注入式攻击。 在 SQL 注入攻击，恶意用户提供输入，在尝试损坏或未经授权地访问基础数据库中更改查询的设计。 典型的方法包括注入的单个引号或撇号，这是 SQL 文本字符串分隔符;表示 SQL 注释; 的两个短划线并使用分号，这表示，新的命令如下所示。 如果用户输入必须是使用以下命令，其中一个查询的一部分的顺序列出的效率，以降低攻击风险。
 
--   使用存储的过程。
+- 使用存储的过程。
 
--   使用参数化的命令字符串。
+- 使用参数化的命令字符串。
 
--   验证类型和内容的用户输入，然后构建命令字符串。
+- 验证类型和内容的用户输入，然后构建命令字符串。
 
- 以下[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]类型可实现<xref:System.Data.IDbCommand.CommandText%2A>属性或提供通过使用字符串自变量来设置属性的构造函数。
+  以下[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]类型可实现<xref:System.Data.IDbCommand.CommandText%2A>属性或提供通过使用字符串自变量来设置属性的构造函数。
 
--   <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
+- <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> 和 <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OleDb.OleDbCommand?displayProperty=fullName> 和 <xref:System.Data.OleDb.OleDbDataAdapter?displayProperty=fullName>
 
--   <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
+- <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> 和 <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
--   [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) 和 [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) 和 [System.Data.SqlServerCe.SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
--   <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
+- <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> 和 <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
- 请注意，此规则冲突时显式或隐式使用 ToString 方法的类型来构造查询字符串。 下面是一个示例。
+  请注意，此规则冲突时显式或隐式使用 ToString 方法的类型来构造查询字符串。 下面是一个示例。
 
 ```
 int x = 10;

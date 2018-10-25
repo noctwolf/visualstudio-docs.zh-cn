@@ -16,12 +16,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 99520828ff4a6ac44ca4512b2104cb3019a9785a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 39ce7fa1baee3f28a86cf92fd2a063646de33778
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235373"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49841268"
 ---
 # <a name="deploying-custom-start-pages"></a>部署自定义起始页
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ ms.locfileid: "49235373"
 ## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>使用起始页项目模板的 VSIX 部署  
  当使用起始页项目模板，创建一个起始页，然后生成项目时，Visual Studio 创建可以分发的.vsix 文件。 打包.vsix 文件中的启动页提供了部署，具体取决于您的目标受众的以下选项：  
   
--   在网络共享上或在公共网站上，可以将.vsix 文件。 在有人打开文件时，会自动安装启动页。  
+- 在网络共享上或在公共网站上，可以将.vsix 文件。 在有人打开文件时，会自动安装启动页。  
   
--   可以上传到.vsix 文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以使用来安装它**扩展管理器**。  
+- 可以上传到.vsix 文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以使用来安装它**扩展管理器**。  
   
- 起始页项目模板创建一份默认 Visual Studio 起始页，以便您可以修改副本，并保留原始。  
+  起始页项目模板创建一份默认 Visual Studio 起始页，以便您可以修改副本，并保留原始。  
   
- 你可以通过使用获取起始页项目模板**扩展管理器**或通过从 Web 站点下载它。  
+  你可以通过使用获取起始页项目模板**扩展管理器**或通过从 Web 站点下载它。  
   
 ## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>而无需使用起始页项目模板的 VSIX 部署  
  成功的 VSIX 部署需要在 VSIX 注册过程和识别的文件夹中安装的扩展**扩展管理器**。 由于起始页项目模板已指定正确的文件夹中，我们建议要打包为 VSIX 部署扩展时使用它。 但是，如果你不能在其中使用该模板的用例，您可以创建 VSIX 部署而无需使用它。  
   
  若要创建 VSIX 部署而无需使用起始页项目模板，首先创建这两种方式之一中的启动页的.vsix 文件：  
   
--   通过将自定义起始页文件添加到一个空的 VSIX 项目。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。  
+- 通过将自定义起始页文件添加到一个空的 VSIX 项目。 有关详细信息，请参阅[VSIX 项目模板](../extensibility/vsix-project-template.md)。  
   
--   通过手动创建.vsix 文件。 有关详细信息，请参阅[如何： 手动将扩展打包 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
+- 通过手动创建.vsix 文件。 有关详细信息，请参阅[如何： 手动将扩展打包 （VSIX 部署）](../misc/how-to-manually-package-an-extension-vsix-deployment.md)。  
   
- Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]***扩展插件名称*。  
+  Visual studio 能够识别启动页上，`Content Element`必须包含的 VSIX 清单`CustomExtension Element`具有`Type`属性设置为`"StartPage"`。 使用 VSIX 部署安装起始页扩展将出现在**自定义起始页**上列出**启动**选项页中以 **[安装的扩展]***扩展插件名称*。  
   
- 如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括具有以下信息的.pkgdef 文件。  
+  如果起始页包中包含的程序集，必须添加绑定路径注册，以便它们可用于 Visual Studio 将启动。 若要执行此操作，请确保您的包，包括具有以下信息的.pkgdef 文件。  
   
 ```  
 [$RootKey$\BindingPaths\{Insert a new GUID here}]  

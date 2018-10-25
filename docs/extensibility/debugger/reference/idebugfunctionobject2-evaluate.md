@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::Evaluate |Microsoft 文档
+title: IDebugFunctionObject2::Evaluate |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8196eb45b2fe7eccbff5c23a7ffc58fd3eb59282
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9f7ec017e67543fab60f98839581aaa85e48f87f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31112696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880321"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-调用函数并返回一个对象作为生成的值。  
+调用函数，并返回结果值作为对象。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,22 +47,22 @@ int Evaluate (
   
 #### <a name="parameters"></a>参数  
  `ppParams`  
- [in]数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示的输入的参数的对象。 每个这些参数是通过使用创建方法之一在此界面中创建的。  
+ [in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示输入的参数的对象。 这些参数的每个已通过此界面中使用一种创建方法。  
   
  `dwParams`  
- [in]中的参数数目`ppParams`数组。  
+ [in]中的参数数量`ppParams`数组。  
   
  `dwEvalFlags`  
- [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定如何执行计算的枚举。  
+ [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定计算的执行方式的枚举。  
   
  `dwTimeout`  
- [in]指定以毫秒为单位，从此方法返回前等待的最长时间。 使用**无限**无限期等待。  
+ [in]指定以毫秒为单位，此方法返回前等待的最长时间。 使用**无限**无限期等待。  
   
  `ppResult`  
- [out]返回**IDebugObject** ，表示对象的函数的值。  
+ [out]返回**IDebugObject**表示函数作为对象的值。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

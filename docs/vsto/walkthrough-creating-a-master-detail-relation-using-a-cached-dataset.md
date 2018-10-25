@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 534398e57c1a8111f2b1f83a61322a581539c962
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 9d877eae119c922939ea61007a845e5bd7049076
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808260"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933152"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练： 创建使用缓存的数据集的主从关系
   本演练演示在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。  
@@ -57,34 +57,34 @@ ms.locfileid: "38808260"
   
 ### <a name="to-create-a-new-project"></a>创建新项目  
   
-1.  使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1. 使用名称创建的 Excel 工作簿项目**我的大纲-细节**，使用 Visual Basic 或 C#。 请确保**创建一个新文档**处于选中状态。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
- Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的母版-详细信息**投影到**解决方案资源管理器**。  
+   Visual Studio 设计器中打开新 Excel 工作簿并将添加**我的母版-详细信息**投影到**解决方案资源管理器**。  
   
 ## <a name="create-the-data-source"></a>创建数据源  
  使用 **“数据源”** 窗口将类型化数据集添加到项目中。  
   
 ### <a name="to-create-the-data-source"></a>创建数据源  
   
-1.  如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。  
+1. 如果**数据源**窗口不可见，显示它，在菜单栏中选择**视图** > **其他 Windows**  >  **数据源**。  
   
-2.  选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。  
+2. 选择 **“添加新数据源”** 以启动 **“数据源配置向导”**。  
   
-3.  选择**数据库**，然后单击**下一步**。  
+3. 选择**数据库**，然后单击**下一步**。  
   
-4.  选择与 Northwind 示例 SQL Server 数据库的数据连接或通过添加新的连接**新的连接**按钮。  
+4. 选择与 Northwind 示例 SQL Server 数据库的数据连接或通过添加新的连接**新的连接**按钮。  
   
-5.  在选择或创建连接，单击**下一步**。  
+5. 在选择或创建连接，单击**下一步**。  
   
-6.  如果选中，保存连接的选项，然后单击清除**下一步**。  
+6. 如果选中，保存连接的选项，然后单击清除**下一步**。  
   
-7.  展开**表**中的节点**数据库对象**窗口。  
+7. 展开**表**中的节点**数据库对象**窗口。  
   
-8.  选择**订单**表和**订单详细信息**表。  
+8. 选择**订单**表和**订单详细信息**表。  
   
 9. 单击 **“完成”**。  
   
- 该向导将添加到两个表**数据源**窗口。 它还将类型化数据集添加到项目中的可见**解决方案资源管理器**。  
+   该向导将添加到两个表**数据源**窗口。 它还将类型化数据集添加到项目中的可见**解决方案资源管理器**。  
   
 ## <a name="add-controls-to-the-worksheet"></a>将控件添加到工作表  
  在此步骤中，将向第一个工作表中添加命名的范围、 一个列表对象和两个按钮。 首先，添加命名的范围并从列表对象**数据源**窗口，从而使它们自动绑定到数据源。 接下来，添加从按钮**工具箱**。  
@@ -109,30 +109,30 @@ ms.locfileid: "38808260"
   
 ### <a name="to-add-two-buttons"></a>若要添加两个按钮  
   
-1.  从**公共控件**选项卡**工具箱**，添加<xref:System.Windows.Forms.Button>单元格的控件**A3**的工作表。  
+1. 从**公共控件**选项卡**工具箱**，添加<xref:System.Windows.Forms.Button>单元格的控件**A3**的工作表。  
   
-     此按钮名为`Button1`。  
+    此按钮名为`Button1`。  
   
-2.  添加另一个<xref:System.Windows.Forms.Button>控制对单元格**B3**的工作表。  
+2. 添加另一个<xref:System.Windows.Forms.Button>控制对单元格**B3**的工作表。  
   
-     此按钮名为`Button2`。  
+    此按钮名为`Button2`。  
   
- 接下来，将标记要缓存到文档中的数据集。  
+   接下来，将标记要缓存到文档中的数据集。  
   
 ## <a name="cache-the-dataset"></a>缓存数据集  
  标记要使公共和设置，从而将数据集缓存到文档中的数据集**CacheInDocument**属性。  
   
 ### <a name="to-cache-the-dataset"></a>若要将数据集缓存  
   
-1.  选择**NorthwindDataSet**组件栏中。  
+1. 选择**NorthwindDataSet**组件栏中。  
   
-2.  在中**属性**窗口中，更改**修饰符**属性设置为**公共**。  
+2. 在中**属性**窗口中，更改**修饰符**属性设置为**公共**。  
   
-     数据集必须是公共的之前启用缓存。  
+    数据集必须是公共的之前启用缓存。  
   
-3.  更改**CacheInDocument**属性设置为**True**。  
+3. 更改**CacheInDocument**属性设置为**True**。  
   
- 下一步是将文本添加到按钮，并在 C# 中添加代码以挂接事件处理程序。  
+   下一步是将文本添加到按钮，并在 C# 中添加代码以挂接事件处理程序。  
   
 ## <a name="initialize-the-controls"></a>初始化控件  
  设置按钮文本和添加事件处理程序期间<xref:Microsoft.Office.Tools.Excel.Workbook.Startup>事件。  

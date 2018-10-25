@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41641a0c5b24ea9492b2980fac998155b8ea5332
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d33c99ba2bbca5c7e99d73c9c8168e08674b499e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49187534"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905245"
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "49187534"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 用户组的成员将需要访问磁盘上与团队的其他成员共享的文件夹和文件。 第二个过程“授予对共享项目文件的访问权限”描述如何授予该访问权限。  
+  用户组的成员将需要访问磁盘上与团队的其他成员共享的文件夹和文件。 第二个过程“授予对共享项目文件的访问权限”描述如何授予该访问权限。  
   
- 如果管理员为用户组的成员授予对分析工具的软件驱动程序的访问权限，则他们就可以运行分析工具。 最后一个过程“授予对分析驱动程序的访问权限”描述如何授予对该驱动程序的访问权限。  
+  如果管理员为用户组的成员授予对分析工具的软件驱动程序的访问权限，则他们就可以运行分析工具。 最后一个过程“授予对分析驱动程序的访问权限”描述如何授予对该驱动程序的访问权限。  
   
 > [!NOTE]
 >  需要管理员权限才能执行这些过程中的步骤。  
@@ -89,47 +89,47 @@ ms.locfileid: "49187534"
   
 ### <a name="to-grant-access-to-the-profiling-driver"></a>授予对分析驱动程序的访问权限  
   
-1.  作为管理员打开命令提示。  
+1. 作为管理员打开命令提示。  
   
-2.  将目录切换到：  
+2. 将目录切换到：  
   
-    ```  
-    <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
-    ```  
+   ```  
+   <drive>:\Program Files\Microsoft Visual Studio 10\Team Tools\Performance Tools  
+   ```  
   
-3.  运行下面的命令：  
+3. 运行下面的命令：  
   
-    ```  
-    vsperfcmd /admin:driver,start /admin:service,start  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,start /admin:service,start  
+   ```  
   
-     此命令将安装并启动分析工具的驱动程序。  
+    此命令将安装并启动分析工具的驱动程序。  
   
-     此命令启动分析驱动程序和服务，以便非管理用户可以使用其用户进程空间中可用的分析功能。 只有管理员才能运行此命令，非管理用户无法运行。  
+    此命令启动分析驱动程序和服务，以便非管理用户可以使用其用户进程空间中可用的分析功能。 只有管理员才能运行此命令，非管理用户无法运行。  
   
-     请注意，除非还执行本过程中的最后一步，否则此步骤的效果在计算机重新启动后撤消。  
+    请注意，除非还执行本过程中的最后一步，否则此步骤的效果在计算机重新启动后撤消。  
   
-4.  运行此命令以允许对计算机没有管理员访问权限的用户或组访问分析驱动程序功能：  
+4. 运行此命令以允许对计算机没有管理员访问权限的用户或组访问分析驱动程序功能：  
   
-    ```  
-    vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
-    ```  
+   ```  
+   vsperfcmd /admin:security,allow,<right[,right],<user name|group name>  
+   ```  
   
-     此命令为 \<用户名> 或 \<组名称> 帐户授予对分析工具的访问权限。 \<权限> 选项用于确定用户可访问的分析功能。 \<权限> 选项可以是下面的一个或多个值：  
+    此命令为 \<用户名> 或 \<组名称> 帐户授予对分析工具的访问权限。 \<权限> 选项用于确定用户可访问的分析功能。 \<权限> 选项可以是下面的一个或多个值：  
   
-    -   FullAccess — 允许访问所有分析方法，包括从服务、采样和跨会话分析收集性能数据。  
+   -   FullAccess — 允许访问所有分析方法，包括从服务、采样和跨会话分析收集性能数据。  
   
-    -   SampleProfiling — 允许访问采样分析方法  
+   -   SampleProfiling — 允许访问采样分析方法  
   
-    -   CrossSession — 允许访问分析服务所需的跨会话分析。  
+   -   CrossSession — 允许访问分析服务所需的跨会话分析。  
   
-5.  （可选）若要在计算机重新启动以后保留以上所有步骤的效果，请运行以下命令：  
+5. （可选）若要在计算机重新启动以后保留以上所有步骤的效果，请运行以下命令：  
   
-    ```  
-    vsperfcmd /admin:driver,autostart,on  
-    ```  
+   ```  
+   vsperfcmd /admin:driver,autostart,on  
+   ```  
   
- 现在，指定的用户登录后，能在没有管理员权限的情况下使用分析工具。  
+   现在，指定的用户登录后，能在没有管理员权限的情况下使用分析工具。  
   
 ## <a name="see-also"></a>请参阅  
  [配置性能会话](../profiling/configuring-performance-sessions.md)   

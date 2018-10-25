@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionObject2::CreateObject |Microsoft 文档
+title: IDebugFunctionObject2::CreateObject |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5283d72972e1ba579cafa82648cbf0ec0fcf80c
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 35dac5f88a755ac0622fcf752f3bcc409341441c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113466"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948975"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 创建使用给定评估标志设置和超时值的构造函数的对象。  
@@ -53,16 +53,16 @@ int CreateObject (
  [in][IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)对象，表示要创建的对象的构造函数。  
   
  `dwArgs`  
- [in]中的参数数目`pArg`数组。 表示传递给构造函数的参数的数目。  
+ [in]中的参数数量`pArg`数组。 表示传递给构造函数的参数数目。  
   
  `pArgs`  
- [in]数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示的参数的对象传递给构造函数。  
+ [in]一个数组[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)表示的参数的对象传递给构造函数。  
   
  `dwEvalFlags`  
- [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定如何执行计算的枚举。  
+ [in]中的标志的组合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定计算的执行方式的枚举。  
   
  `dwTimeout`  
- [in]以毫秒为单位，从此方法返回前等待的最长时间。 使用**无限**无限期等待。  
+ [in]最大时间 （毫秒），此方法返回前等待。 使用**无限**无限期等待。  
   
  `ppObject`  
  [out]返回**IDebugObject**表示新创建的对象。  
@@ -71,7 +71,7 @@ int CreateObject (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 调用此方法以创建一个对象，表示一个类或其他复杂类型的要求的构造函数的参数的实例。  
+ 调用此方法以创建一个对象，表示一个类或其他复杂类型，它需要是一个参数的构造函数的实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

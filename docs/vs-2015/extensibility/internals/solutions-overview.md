@@ -15,12 +15,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 8204dcfc7a0d8937551914ebedbc035767127507
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7255ed981bd65e364d1028c365aab66a73a76dcb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292653"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815996"
 ---
 # <a name="solutions-overview"></a>解决方案概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ ms.locfileid: "49292653"
   
  如果打开解决方案时，以下过程将会发生。  
   
-1.  在环境中读取该解决方案。  
+1. 在环境中读取该解决方案。  
   
-2.  如果找到了环境`CLSID`，它将加载相应的 VSPackage。  
+2. 如果找到了环境`CLSID`，它将加载相应的 VSPackage。  
   
-3.  如果加载 VSPackage，环境调用`QueryInterface`为<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>接口，VSPackage 需要的接口。  
+3. 如果加载 VSPackage，环境调用`QueryInterface`为<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>接口，VSPackage 需要的接口。  
   
-    1.  当从.sln 文件读取，环境在调用`QueryInterface`为`IVsPersistSolutionProps`。  
+   1.  当从.sln 文件读取，环境在调用`QueryInterface`为`IVsPersistSolutionProps`。  
   
-    2.  当从.suo 文件读取，环境在调用`QueryInterface`为`IVsPersistSolutionOpts`。  
+   2.  当从.suo 文件读取，环境在调用`QueryInterface`为`IVsPersistSolutionOpts`。  
   
- 使用这些文件与相关的特定信息可在[解决方案 (。Sln) 文件](../../extensibility/internals/solution-dot-sln-file.md)和[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
+   使用这些文件与相关的特定信息可在[解决方案 (。Sln) 文件](../../extensibility/internals/solution-dot-sln-file.md)和[解决方案用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。  
   
 > [!NOTE]
 >  如果你想要创建新的解决方案配置包含两个项目配置和从生成中排除第三，您需要使用属性页用户界面或自动化。 不能直接更改解决方案的生成管理器配置和其属性，但可以操作解决方案生成管理器使用`SolutionBuild`从 DTE 自动化模型中的类。 有关配置解决方案的详细信息，请参阅[解决方案配置](../../extensibility/internals/solution-configuration.md)。  

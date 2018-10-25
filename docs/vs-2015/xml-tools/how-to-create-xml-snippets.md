@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fbcb7254ad1cd417b8cdb90c3ea257868ab5a84
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818154"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 代码段
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "49203926"
   
  `Code` 元素包括三个变量。  
   
--   $name$ 是用户定义变量。 该变量创建 `name` 元素，该元素的值可编辑，且默认值为“name”。 用户定义变量使用 `Literal` 元素定义。  
+- $name$ 是用户定义变量。 该变量创建 `name` 元素，该元素的值可编辑，且默认值为“name”。 用户定义变量使用 `Literal` 元素定义。  
   
--   $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。  
+- $selected$ 是预定义变量。 该变量表示在调用代码段之前在“XML 编辑器”中选择的文本。 设置此变量可以确定所选文本在包围它的代码段中出现的位置。  
   
--   $end$ 是预定义变量。 用户按 ENTER 键完成代码段字段的编辑后，此变量将确定移动插入符号 (^) 的目标位置。  
+- $end$ 是预定义变量。 用户按 ENTER 键完成代码段字段的编辑后，此变量将确定移动插入符号 (^) 的目标位置。  
   
- 上面的 `Code` 元素插入以下 XML 文本：  
+  上面的 `Code` 元素插入以下 XML 文本：  
   
 ```  
 <test>  

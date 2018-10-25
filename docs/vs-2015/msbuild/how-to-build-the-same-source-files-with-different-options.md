@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c506d0e82bd1c71431ae766be636db35d96debd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c46d0577d19a3b3ad0fcd150f33d400e76d550d3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243914"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830998"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,23 +75,23 @@ ms.locfileid: "49243914"
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令行上指定多个项目属性  
   
--   多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如：  
+- 多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如：  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug;Platform=x86  
+  ```  
   
-     - 或 -  
+   - 或 -  
   
-    ```  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```  
+  msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
+  ```  
   
- 环境变量也被视为属性，并且由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自动合并。 有关使用环境变量的详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  环境变量也被视为属性，并且由 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 自动合并。 有关使用环境变量的详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
- 在命令行中指定的属性值将优先于任何在项目文件中为同一属性设置的值，而项目文件中的值优先于环境变量中的值。  
+  在命令行中指定的属性值将优先于任何在项目文件中为同一属性设置的值，而项目文件中的值优先于环境变量中的值。  
   
- 你可以通过使用项目标记中的 `TreatAsLocalProperty` 属性更改此行为。 对于列出具有该特性的属性名称，在命令行上指定的属性值并不优先于项目文件中的值。 你在本主题后面找到示例。  
+  你可以通过使用项目标记中的 `TreatAsLocalProperty` 属性更改此行为。 对于列出具有该特性的属性名称，在命令行上指定的属性值并不优先于项目文件中的值。 你在本主题后面找到示例。  
   
 ## <a name="example"></a>示例  
  以下代码示例“Hello World”项目，包含两个可用于创建调试版本和发布版本的新属性组。  

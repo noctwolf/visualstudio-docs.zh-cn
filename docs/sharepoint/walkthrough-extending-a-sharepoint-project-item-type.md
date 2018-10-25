@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c333d38dde1d440d5bac10770d0b3386f82ad4ad
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: e1210d95a73038ea21c0455e944eb46b1791b426
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844506"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>演练： 扩展 SharePoint 项目项类型
   可以使用**业务数据连接模型**项目项以在 SharePoint 中创建业务数据连接 (BDC) 服务的模型。 默认情况下，通过使用此项目项，创建模型时模型中的数据是不向用户显示。 此外必须在 SharePoint 以使用户能够查看的数据创建外部列表。  
@@ -42,24 +42,24 @@ ms.locfileid: "42626141"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
+- 支持的 Microsoft Windows、 SharePoint 和 Visual Studio 版本。  
   
--   [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   中的 BDC 服务[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 有关详细信息，请参阅[BDC 体系结构](http://go.microsoft.com/fwlink/?LinkId=177798)。  
+- 中的 BDC 服务[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]。 有关详细信息，请参阅[BDC 体系结构](http://go.microsoft.com/fwlink/?LinkId=177798)。  
   
--   BDC 模型的 XML 架构。 有关详细信息，请参阅[BDC 模型基础结构](http://go.microsoft.com/fwlink/?LinkId=177799)。  
+- BDC 模型的 XML 架构。 有关详细信息，请参阅[BDC 模型基础结构](http://go.microsoft.com/fwlink/?LinkId=177799)。  
   
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练中，您需要创建两个项目：  
   
--   若要创建要部署项目项扩展的 VSIX 包一个 VSIX 项目。  
+- 若要创建要部署项目项扩展的 VSIX 包一个 VSIX 项目。  
   
--   一个用于实现项目项扩展的库项目。  
+- 一个用于实现项目项扩展的库项目。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   

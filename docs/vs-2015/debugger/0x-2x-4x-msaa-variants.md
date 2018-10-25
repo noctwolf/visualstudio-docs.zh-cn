@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 876e901e13a2fe25957744665e54f703e209fc7d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c179639c0ab559ae4147559b9279fb7ef694c45c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251173"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912794"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ ms.locfileid: "49251173"
 ## <a name="remarks"></a>备注  
  调用创建呈现器目标的 `ID3DDevice::CreateTexture2D` 时，这些变体将重写样本计数和 sample-quality 自变量。 具体而言，在以下情况下将重写这些参数：  
   
--   在 `D3D11_TEXTURE2D_DESC` 中传入的 `pDesc` 对象描述呈现器目标；即：  
+- 在 `D3D11_TEXTURE2D_DESC` 中传入的 `pDesc` 对象描述呈现器目标；即：  
   
-    -   BindFlags 成员设置 D3D11_BIND_TARGET 标志或 D3D11_BIND_DEPTH_STENCIL 标志。  
+  -   BindFlags 成员设置 D3D11_BIND_TARGET 标志或 D3D11_BIND_DEPTH_STENCIL 标志。  
   
-    -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT。  
+  -   将 Usage 成员设置为 D3D11_USAGE_DEFAULT。  
   
-    -   将 CPUAccessFlags 成员设置为 0。  
+  -   将 CPUAccessFlags 成员设置为 0。  
   
-    -   将 MipLevels 成员设置为 1。  
+  -   将 MipLevels 成员设置为 1。  
   
--   设备支持请求的呈现器目标格式（D3D11_TEXTURE2D_DESC::Format 成员）的请求样本计数（0、2 或 4）和样本质量 (0)，由 `ID3D11Device::CheckMultisampleQualityLevels` 确定。  
+- 设备支持请求的呈现器目标格式（D3D11_TEXTURE2D_DESC::Format 成员）的请求样本计数（0、2 或 4）和样本质量 (0)，由 `ID3D11Device::CheckMultisampleQualityLevels` 确定。  
   
- 如果 D3D11_TEXTURE2D_DESC::BindFlags 成员设置了 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 标志，则将创建两个版本的纹理；第一个版本将清除这些标志以用作呈现器目标，另一个版本是使这些标志保持不变以充当第一个版本的解析缓冲区的非 MSAA 纹理。 这是有必要的，因为将 MSAA 纹理用作着色器资源或用于无序访问可能无效，例如，充当它的着色器可能会产生不正确的结果，因为它会需要非 MSAA 纹理。 如果变体创建了辅助的非 MSAA 纹理，则无论何时从设备上下文中取消设置 MSAA 呈现器目标，其内容都将解析为非 MSAA 纹理。 同理，无论何时 MSAA 呈现器目标应绑定为着色器资源，或在无序访问视图中使用，都将绑定解析的非 MSAA 纹理。  
+  如果 D3D11_TEXTURE2D_DESC::BindFlags 成员设置了 D3D_BIND_SHADER_RESOUCE 或 D3D11_BIND_UNORDERED_ACCESS 标志，则将创建两个版本的纹理；第一个版本将清除这些标志以用作呈现器目标，另一个版本是使这些标志保持不变以充当第一个版本的解析缓冲区的非 MSAA 纹理。 这是有必要的，因为将 MSAA 纹理用作着色器资源或用于无序访问可能无效，例如，充当它的着色器可能会产生不正确的结果，因为它会需要非 MSAA 纹理。 如果变体创建了辅助的非 MSAA 纹理，则无论何时从设备上下文中取消设置 MSAA 呈现器目标，其内容都将解析为非 MSAA 纹理。 同理，无论何时 MSAA 呈现器目标应绑定为着色器资源，或在无序访问视图中使用，都将绑定解析的非 MSAA 纹理。  
   
- 这些变体还将重写通过使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 创建的所有交换链上的 MSAA 设置。  
+  这些变体还将重写通过使用 `IDXGIFactory::CreateSwapChain`、`IDXGIFactory2::CreateSwapChainForHwnd`、`IDXGIFactory2::CreateSwapChainForCoreWindow`、`IDXGIFactory2::CreateSwapChainForComposition` 和 `ID3D11CreateDeviceAndSwapChain` 创建的所有交换链上的 MSAA 设置。  
   
- 这些更改的实际影响是，针对 MSAA 呈现器目标完成所有呈现，但是如果你的应用程序将其中一个呈现器目标或交换链缓冲区用作着色器资源视图或无序访问视图，则将从解析的呈现器目标的非 MSAA 副本中对数据进行采样。  
+  这些更改的实际影响是，针对 MSAA 呈现器目标完成所有呈现，但是如果你的应用程序将其中一个呈现器目标或交换链缓冲区用作着色器资源视图或无序访问视图，则将从解析的呈现器目标的非 MSAA 副本中对数据进行采样。  
   
 ## <a name="restrictions-and-limitations"></a>限制和约束  
  在 Direct3D11 中，MSAA 纹理比非 MSAA 纹理更受限制。 例如，你无法在 MSAA 纹理上调用 `ID3D11DeviceContext::UpdateSubresource`，而且如果源资源和目标资源的样本计数和样本质量不匹配，则调用 `ID3D11DeviceContext::CopySubresourceRegion` 会失败，当此变体重写一种资源而非另一种资源的 MSAA 设置时，可能会发生这种情况。  

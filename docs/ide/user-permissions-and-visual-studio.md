@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a415d49770b003c15d4394e4635a138a795cb55
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 2df7031baffcdcfcac07f4b2054ff2aeb9ab81ab
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42627310"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885754"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "42627310"
 可以以普通用户身份在 Visual Studio IDE 中执行几乎任何操作。 需要管理员权限才能完成以下任务：
 
 |区域|任务|更多相关信息|
-|----------|----------|--------------------------|
+|----------|----------| - |
 |安装|安装 Visual Studio。|[安装 Visual Studio](../install/install-visual-studio.md)|
 ||安装、更新或删除本地帮助内容。|[安装和管理本地帮助内容](../ide/install-and-manage-local-content.md)|
 |工具箱|将经典 COM 控件添加到“工具箱”。|[工具箱](../ide/reference/toolbox.md)|

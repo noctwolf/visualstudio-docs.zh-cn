@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 6898fb890828a01f286f321f14de3999fdf1ca64
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: aafa410352be27084f2febecc734c68e4f316d6f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827956"
 ---
 # <a name="setting-up-a-git-repository"></a>设置 Git 存储库
 
@@ -38,7 +38,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
     ![查看和复制地址](media/version-control-git3.png)
 
-  要将 Visual Studio for Mac 指向此存储库，需要 HTTPS 地址。
+   要将 Visual Studio for Mac 指向此存储库，需要 HTTPS 地址。
 
 
 ## <a name="publishing-an-existing-project"></a>发布现有项目
@@ -108,7 +108,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 5. 输入要将存储库克隆到的目录并按“签出”。
 
 > [!NOTE]
-如果存储库大小超过 4 GB，可能会遇到问题。
+> 如果存储库大小超过 4 GB，可能会遇到问题。
 
 ## <a name="troubleshooting"></a>疑难解答
 

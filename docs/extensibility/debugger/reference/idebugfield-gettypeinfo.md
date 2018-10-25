@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetTypeInfo |Microsoft 文档
+title: IDebugField::GetTypeInfo |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3354a67d5d92aeebf67216ed22ed46666d4fc5e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: dfc82e7450c88420cfca50c74a3ac9451a78b095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111090"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925989"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
-此方法获取有关符号或类型的独立于类型的信息。  
+此方法获取的符号的类型的独立于类型的信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,15 +41,15 @@ int GetTypeInfo(
   
 #### <a name="parameters"></a>参数  
  `pTypeInfo`  
- [out]返回类型信息从提供[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构。  
+ [out]返回类型信息中提供[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)结构。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 例如，独立于类型的信息将包括 AppDomain、 模块和包含符号的类。  
+ 例如，独立于类型的信息将包括在 AppDomain、 模块和包含的符号的类。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

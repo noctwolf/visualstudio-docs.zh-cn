@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 237d38fe601b8ae2d530cc735701fe236572601a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b6795675d8cf2b41310dadfc7aec44eb9ae8a0f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269576"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49928758"
 ---
 # <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018：运行的 32 位应用程序达到了进程托管内存的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,23 +57,23 @@ ms.locfileid: "49269576"
   
  如果托管内存开销过多引发问题，请考虑采用以下任一选项：  
   
--   优化应用程序对托管内存资源的使用情况  
+- 优化应用程序对托管内存资源的使用情况  
   
-     或  
+   或  
   
--   采取措施以解除对 32 位进程虚拟内存最大大小的体系结构约束  
+- 采取措施以解除对 32 位进程虚拟内存最大大小的体系结构约束  
   
- 若要优化应用程序对托管内存资源的使用情况，请在 .NET 内存分配分析运行期间收集托管内存分配数据。 查看 [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)报告，了解应用程序的内存分配模式。  
+  若要优化应用程序对托管内存资源的使用情况，请在 .NET 内存分配分析运行期间收集托管内存分配数据。 查看 [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)报告，了解应用程序的内存分配模式。  
   
- 使用[对象生存期视图](../profiling/object-lifetime-view.md)确定哪些程序的数据对象可通过生成并在此被回收。  
+  使用[对象生存期视图](../profiling/object-lifetime-view.md)确定哪些程序的数据对象可通过生成并在此被回收。  
   
- 使用[分配视图](../profiling/dotnet-memory-allocations-view.md)确定这些分配的执行路径。  
+  使用[分配视图](../profiling/dotnet-memory-allocations-view.md)确定这些分配的执行路径。  
   
- 有关如何提高垃圾回收性能的详细信息，请参阅 MSDN 站点上的 .NET Framework 技术文章：[Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946)（垃圾回收器基础知识和性能提示）。  
+  有关如何提高垃圾回收性能的详细信息，请参阅 MSDN 站点上的 .NET Framework 技术文章：[Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946)（垃圾回收器基础知识和性能提示）。  
   
- 若要解除对进程地址空间的专用部分大小的虚拟内存体系结构约束，请尝试在 64 位计算机上运行此 32 位进程。  64 位计算机上的 32 位进程最多可获得 4 GB 的专用虚拟内存。  
+  若要解除对进程地址空间的专用部分大小的虚拟内存体系结构约束，请尝试在 64 位计算机上运行此 32 位进程。  64 位计算机上的 32 位进程最多可获得 4 GB 的专用虚拟内存。  
   
- 64 位计算机上运行的 64 位进程最多可获得 8 TB 的虚拟内存。 请考虑重新编译应用程序，将其作为本机 64 位应用程序执行。 此规则仅供参考，可能不需要采取纠正措施。
+  64 位计算机上运行的 64 位进程最多可获得 8 TB 的虚拟内存。 请考虑重新编译应用程序，将其作为本机 64 位应用程序执行。 此规则仅供参考，可能不需要采取纠正措施。
 
 
 

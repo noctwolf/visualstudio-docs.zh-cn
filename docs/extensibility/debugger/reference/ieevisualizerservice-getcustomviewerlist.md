@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList |Microsoft 文档
+title: IEEVisualizerService::GetCustomViewerList |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd16834e941109ccdb4f177ad2080bb710480af
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a3a8c70064849f602110adbc3aaadd00cd114f6d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31121230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856218"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-此方法返回此服务就会了解有关的类型可视化工具列表。  
+此方法返回此服务知道的类型可视化工具的列表。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,26 +47,26 @@ int GetCustomViewerList(
   
 #### <a name="parameters"></a>参数  
  `celtSkip`  
- [in]可视化工具跳过的数。  
+ [in]可视化工具，以便跳过的数。  
   
  `celRequested`  
- [in]可视化工具以检索数 (还指定大小的`rgViewers`数组)。  
+ [in]可视化工具，以便检索数 (还指定了大小的`rgViewers`数组)。  
   
  `rgViewers`  
- [在中，out]数组[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)结构填充的。  
+ [in、 out]数组[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)要填充的结构。  
   
  `pceltFetched`  
- [out]实际检索可视化工具的数量。  
+ [out]实际检索的可视化工具数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)将请求传递给此方法作为其支持的一部分的类型的可视化工具。 如果表达式计算器还提供了为同一类型的自定义查看器，它可以追加适当填充扩展[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)到列表这些自定义查看器的结构。 请确保[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)反映这些附加的浏览器。  
+ [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)将请求传递给此方法作为其支持的一部分的类型可视化工具。 如果表达式计算器还提供了相同类型的自定义查看器，它可以追加相应地填充扩展[DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)列表对这些自定义查看器的结构。 请确保[GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)反映了这些附加的浏览器。  
   
- 请参阅[类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)有关可视化工具和查看者之间的差异的详细信息。  
+ 请参阅[类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)有关可视化工具和查看器之间的差异的详细信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
  [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   

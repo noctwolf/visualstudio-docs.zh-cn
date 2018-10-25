@@ -1,5 +1,5 @@
 ---
-title: REFERENCE_TYPE |Microsoft 文档
+title: REFERENCE_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c30bb562784d9de0d9b44a2c3169b595bb4bd39
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: bcbf8792cf2972c4b419b6309ba2f561b8308812
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31127137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906892"
 ---
 # <a name="referencetype"></a>REFERENCE_TYPE
-指定的引用类型。  
+指定引用类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,15 +44,15 @@ public enum enum_REFERENCE_TYPE {
   
 ## <a name="members"></a>成员  
  REF_TYPE_WEAK  
- 指定的弱引用。 不能与组合`REF_TYPE_STRONG`。  
+ 指定的弱引用。 不能结合`REF_TYPE_STRONG`。  
   
  REF_TYPE_STRONG  
- 指定的强引用。 不能与组合`REF_TYPE_WEAK`。  
+ 指定的强引用。 不能结合`REF_TYPE_WEAK`。  
   
 ## <a name="remarks"></a>备注  
  用作`dwRefType`的成员[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构。  
   
- 作为参数传递给传递[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)方法。  
+ 作为参数传递给[SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -61,7 +61,7 @@ public enum enum_REFERENCE_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md)

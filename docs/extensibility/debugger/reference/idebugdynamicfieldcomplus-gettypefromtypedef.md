@@ -1,5 +1,5 @@
 ---
-title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef |Microsoft 文档
+title: IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7143892f71a798db1aa9f922a64eac320f973eb8
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0238da9c435fcfc02aacf00e4e54459d0fc59c10
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109839"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853216"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
-检索给定标记的类型。  
+检索在给定其标记的类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -49,16 +49,16 @@ int GetTypeFromTypeDef(
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `tokClass`  
  [in]令牌表示的类型。  
   
  `ppType`  
- [out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)包含的类型的对象。  
+ [out]返回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)包含类型的对象。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

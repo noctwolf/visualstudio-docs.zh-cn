@@ -15,12 +15,12 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 87701b2404ebb929d2a21fed6ddc22b075c1f186
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2256ec8185ef59c4380ce3c1d5ce43e92507827e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243264"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846988"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +48,13 @@ ms.locfileid: "49243264"
 ## <a name="extending-content-types"></a>扩展内容类型  
  内容类型是类型的文本编辑器，例如处理、"text"、"代码"或"CSharp"的定义。 通过声明类型的变量来定义新的内容类型<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>并提供一个唯一的名称的新内容类型。 若要使用编辑器注册内容类型，请将其导出以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 是的内容类型的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 是的内容类型的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> 是从中派生此内容类型的内容类型的名称。 内容类型可以从多个其他内容类型继承。  
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute> 是从中派生此内容类型的内容类型的名称。 内容类型可以从多个其他内容类型继承。  
   
- 因为<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
+  因为<xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
   
- 下面的示例演示的内容类型定义导出特性。  
+  下面的示例演示的内容类型定义导出特性。  
   
 ```  
 [Export]  
@@ -66,51 +66,51 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
   
  内容类型可以基于零个或多个预先存在的内容类型。 以下是内置类型：  
   
--   任何一个： 基本内容类型。 所有其他内容类型的父级。  
+- 任何一个： 基本内容类型。 所有其他内容类型的父级。  
   
--   文本： 非投影内容基本类型。 从"任何"继承。  
+- 文本： 非投影内容基本类型。 从"任何"继承。  
   
--   纯文本： 对于非代码的文本。 继承自"text"。  
+- 纯文本： 对于非代码的文本。 继承自"text"。  
   
--   代码： 对于所有类型的代码。 继承自"text"。  
+- 代码： 对于所有类型的代码。 继承自"text"。  
   
--   插入： 从任何类型的处理中排除的文本。 此内容类型的文本不会对其应用任何扩展。  
+- 插入： 从任何类型的处理中排除的文本。 此内容类型的文本不会对其应用任何扩展。  
   
--   投影： 为投影缓冲区的内容。 从"任何"继承。  
+- 投影： 为投影缓冲区的内容。 从"任何"继承。  
   
--   Intellisense： 为 IntelliSense 的内容。 继承自"text"。  
+- Intellisense： 为 IntelliSense 的内容。 继承自"text"。  
   
--   Sighelp： 签名帮助。 从"intellisense"继承。  
+- Sighelp： 签名帮助。 从"intellisense"继承。  
   
--   Sighelp doc： 签名帮助文档。 从"intellisense"继承。  
+- Sighelp doc： 签名帮助文档。 从"intellisense"继承。  
   
- 以下是一些由 Visual Studio 定义的内容类型和一些 Visual Studio 中托管的语言：  
+  以下是一些由 Visual Studio 定义的内容类型和一些 Visual Studio 中托管的语言：  
   
--   Basic  
+- Basic  
   
--   C/C++  
+- C/C++  
   
--   ConsoleOutput  
+- ConsoleOutput  
   
--   CSharp  
+- CSharp  
   
--   CSS  
+- CSS  
   
--   ENC  
+- ENC  
   
--   中文本  
+- 中文本  
   
--   F#  
+- F#  
   
--   HTML  
+- HTML  
   
--   JScript  
+- JScript  
   
--   XAML  
+- XAML  
   
--   XML  
+- XML  
   
- 若要发现可用的内容类型的列表，请导入<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>，可以维护在编辑器的内容类型的集合。 下面的代码将此服务作为属性导入。  
+  若要发现可用的内容类型的列表，请导入<xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService>，可以维护在编辑器的内容类型的集合。 下面的代码将此服务作为属性导入。  
   
 ```  
 [Import]  
@@ -124,13 +124,13 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
   
  若要导出到内容类型定义的文件扩展名，必须包含以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>： 指定的文件扩展名。  
+- <xref:Microsoft.VisualStudio.Utilities.FileExtensionAttribute>： 指定的文件扩展名。  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 指定的内容类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 指定的内容类型。  
   
- 因为<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
+  因为<xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
   
- 下面的示例演示导出特性上的内容类型定义的文件名称扩展。  
+  下面的示例演示导出特性上的内容类型定义的文件名称扩展。  
   
 ```  
 [Export]  
@@ -146,13 +146,13 @@ internal static FileExtensionToContentTypeDefinition TestFileExtensionDefinition
   
  若要使用编辑器注册分类类型，请将其导出以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 分类类型的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 分类类型的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>： 此分类类型继承的分类类型的名称。 所有分类类型均都继承自"text"，并且分类类型可能都继承自多个其他分类类型。  
+- <xref:Microsoft.VisualStudio.Utilities.BaseDefinitionAttribute>： 此分类类型继承的分类类型的名称。 所有分类类型均都继承自"text"，并且分类类型可能都继承自多个其他分类类型。  
   
- 因为<xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
+  因为<xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeDefinition>类密封的可以将其导出不使用任何类型参数。  
   
- 下面的示例演示的分类类型定义导出特性。  
+  下面的示例演示的分类类型定义导出特性。  
   
 ```  
 [Export]  
@@ -163,29 +163,29 @@ internal static ClassificationTypeDefinition CSharpTestDefinition;
   
  <xref:Microsoft.VisualStudio.Language.StandardClassification.IStandardClassificationService>能够使用标准的分类。 其中包括内置分类类型：  
   
--   “文本”  
+- “文本”  
   
--   "自然语言"（从"text"派生而来）  
+- "自然语言"（从"text"派生而来）  
   
--   "正式语言"（从"text"派生而来）  
+- "正式语言"（从"text"派生而来）  
   
--   "string"（从"文本"派生而来）  
+- "string"（从"文本"派生而来）  
   
--   "character"（从"文本"派生而来）  
+- "character"（从"文本"派生而来）  
   
--   "数字"（从"文本"派生而来）  
+- "数字"（从"文本"派生而来）  
   
- 一组不同的错误类型继承自<xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>。 它们包括以下的错误类型：  
+  一组不同的错误类型继承自<xref:Microsoft.VisualStudio.Text.Adornments.ErrorTypeDefinition>。 它们包括以下的错误类型：  
   
--   "语法错误"  
+- "语法错误"  
   
--   "编译器错误"  
+- "编译器错误"  
   
--   "其他错误"  
+- "其他错误"  
   
--   "警告"  
+- "警告"  
   
- 若要发现可用分类类型的列表，请导入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可以维护编辑器分类类型的集合。 下面的代码将此服务作为属性导入。  
+  若要发现可用分类类型的列表，请导入<xref:Microsoft.VisualStudio.Text.Classification.IClassificationTypeRegistryService>，可以维护编辑器分类类型的集合。 下面的代码将此服务作为属性导入。  
   
 ```  
 [Import]  
@@ -194,17 +194,17 @@ internal IClassificationTypeRegistryService ClassificationTypeRegistryService { 
   
  为新的分类类型，可以定义分类格式定义。 从派生类<xref:Microsoft.VisualStudio.Text.Classification.ClassificationFormatDefinition>并将其导出类型<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>一起使用具有以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 的格式的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 的格式的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>： 格式的显示名称。  
+- <xref:Microsoft.VisualStudio.Utilities.DisplayNameAttribute>： 格式的显示名称。  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 指定是否在显示的格式**字体和颜色**页**选项**对话框。  
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 指定是否在显示的格式**字体和颜色**页**选项**对话框。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 格式的优先级。 有效值为从<xref:Microsoft.VisualStudio.Text.Classification.Priority>。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 格式的优先级。 有效值为从<xref:Microsoft.VisualStudio.Text.Classification.Priority>。  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>： 此格式映射到类型分类的名称。  
+- <xref:Microsoft.VisualStudio.Text.Classification.ClassificationTypeAttribute>： 此格式映射到类型分类的名称。  
   
- 下面的示例显示了根据分类格式定义导出特性。  
+  下面的示例显示了根据分类格式定义导出特性。  
   
 ```  
 [Export(typeof(EditorFormatDefinition))]  
@@ -230,25 +230,25 @@ internal IEditorFormatMapService FormatMapService { get; set; }
   
  若要注册使用编辑器边距提供程序，必须导出提供程序和以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 边距的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 边距的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 边距显示，相对于其他边距的顺序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: 边距显示，相对于其他边距的顺序。  
   
-     以下是内置边距：  
+   以下是内置边距：  
   
-    -   "Wpf 水平滚动条"  
+  - "Wpf 水平滚动条"  
   
-    -   "Wpf 垂直滚动条"  
+  - "Wpf 垂直滚动条"  
   
-    -   "Wpf 行号边距"  
+  - "Wpf 行号边距"  
   
-     有顺序的属性的水平边距`After="Wpf Horizontal Scrollbar"`如下所示的内置边距和有顺序的属性的水平边距`Before ="Wpf Horizontal Scrollbar"`显示上方的内置边距。 右键有顺序的属性的垂直边距`After="Wpf Vertical Scrollbar"`显示滚动条的右侧。 留有顺序的属性的垂直边距`After="Wpf Line Number Margin"`显示左侧的行号边距 （如果可见）。  
+    有顺序的属性的水平边距`After="Wpf Horizontal Scrollbar"`如下所示的内置边距和有顺序的属性的水平边距`Before ="Wpf Horizontal Scrollbar"`显示上方的内置边距。 右键有顺序的属性的垂直边距`After="Wpf Vertical Scrollbar"`显示滚动条的右侧。 留有顺序的属性的垂直边距`After="Wpf Line Number Margin"`显示左侧的行号边距 （如果可见）。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>： 边距 （左、 右、 顶部或底部） 的类型。  
+- <xref:Microsoft.VisualStudio.Text.Editor.MarginContainerAttribute>： 边距 （左、 右、 顶部或底部） 的类型。  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在边距的有效内容 （例如，"text"或"代码"） 的类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在边距的有效内容 （例如，"text"或"代码"） 的类型。  
   
- 下面的示例演示导出特性上将出现在右侧的行号边距的边距的边距提供程序。  
+  下面的示例演示导出特性上将出现在右侧的行号边距的边距的边距提供程序。  
   
 ```  
 [Export(typeof(IWpfTextViewMarginProvider))]  
@@ -261,11 +261,11 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 ## <a name="extending-tags"></a>扩展标记  
  标记是文本的一种方法将数据与不同类型相关联。 在许多情况下，关联的数据显示为视觉效果，但不是所有标记都具有可视化表示形式。 您可以定义自己的标记的类型通过实现<xref:Microsoft.VisualStudio.Text.Tagging.ITag>。 此外必须实现<xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>为一组给定的文本的 span，提供标记和<xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>提供标记器。 必须导出标记器提供程序和以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 你的标记的有效内容 （例如，"text"或"代码"） 的类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 你的标记的有效内容 （例如，"text"或"代码"） 的类型。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 标记的类型。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 标记的类型。  
   
- 下面的示例演示导出特性标记器提供程序上。  
+  下面的示例演示导出特性标记器提供程序上。  
   
 ```  
 [Export(typeof(ITaggerProvider))]  
@@ -276,22 +276,22 @@ internal class TestTaggerProvider : ITaggerProvider
   
  以下类型是标记的内置的：  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>： 与关联<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>： 与关联<xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>： 与错误类型相关联。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag>： 与错误类型相关联。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 使用修饰与相关联。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>： 使用修饰与相关联。  
   
-    > [!NOTE]
-    >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
+  > [!NOTE]
+  >  有关的示例<xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>，请参阅中的 HighlightWordTag 定义[演练： 突出显示文本](../extensibility/walkthrough-highlighting-text.md)。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 与可展开或折叠大纲显示中的区域相关联。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>： 与可展开或折叠大纲显示中的区域相关联。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>： 在文本视图中定义的修饰所占用的空间。 有关空间协商修饰的详细信息，请参阅以下部分。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>： 在文本视图中定义的修饰所占用的空间。 有关空间协商修饰的详细信息，请参阅以下部分。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>： 提供自动的间距和大小调整为修饰。  
+- <xref:Microsoft.VisualStudio.Text.Editor.IntraTextAdornmentTag>： 提供自动的间距和大小调整为修饰。  
   
- 若要查找和使用标记进行缓冲区和视图，导入<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>或<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>，这为您提供<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>的请求的类型。 下面的代码将此服务作为属性导入。  
+  若要查找和使用标记进行缓冲区和视图，导入<xref:Microsoft.VisualStudio.Text.Tagging.IViewTagAggregatorFactoryService>或<xref:Microsoft.VisualStudio.Text.Tagging.IBufferTagAggregatorFactoryService>，这为您提供<xref:Microsoft.VisualStudio.Text.Tagging.ITagAggregator%601>的请求的类型。 下面的代码将此服务作为属性导入。  
   
 ```  
 [Import]  
@@ -301,13 +301,13 @@ internal IViewTagAggregatorFactoryService ViewTagAggregatorFactoryService { get;
 #### <a name="tags-and-markerformatdefinitions"></a>标记和 MarkerFormatDefinitions  
  您可以扩展<xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>类定义的标记的外观。 必须将导出你的类 (作为<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition>) 具有以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 用于引用此格式的名称  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 用于引用此格式的名称  
   
--   <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 这将导致要在 UI 中显示的格式  
+- <xref:Microsoft.VisualStudio.Text.Classification.UserVisibleAttribute>： 这将导致要在 UI 中显示的格式  
   
- 在构造函数中，您定义的显示名称和标记的外观。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 定义填充颜色和<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定义的边框颜色。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>格式定义的可本地化的名称。  
+  在构造函数中，您定义的显示名称和标记的外观。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.BackgroundColor%2A> 定义填充颜色和<xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.ForegroundColor%2A>定义的边框颜色。 <xref:Microsoft.VisualStudio.Text.Classification.EditorFormatDefinition.DisplayName%2A>格式定义的可本地化的名称。  
   
- 下面是格式定义的示例：  
+  下面是格式定义的示例：  
   
 ```  
 [Export(typeof(EditorFormatDefinition))]  
@@ -336,11 +336,11 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
  在修饰类中，您必须声明<xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>。 若要注册您修饰的层，将其导出以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 修饰的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 修饰的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层： 选择、 大纲显示、 插入符号和文本。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 相对于其他修饰层修饰的顺序。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers>定义默认的四个层： 选择、 大纲显示、 插入符号和文本。  
   
- 下面的示例演示在修饰层定义导出特性。  
+  下面的示例演示在修饰层定义导出特性。  
   
 ```  
 [Export]  
@@ -351,11 +351,11 @@ internal AdornmentLayerDefinition testLayerDefinition;
   
  必须创建另一个类实现<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>，并处理其<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A>通过实例化修饰的事件。 必须导出此类以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 为其修饰是有效的内容 （例如，"text"或"代码"） 类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 为其修饰是有效的内容 （例如，"text"或"代码"） 类型。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此修饰的有效文本视图的类型。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有的预定义的文本视图角色集。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本视图的文件。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于文本视图，用户可以编辑或使用鼠标和键盘导航。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此修饰的有效文本视图的类型。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有的预定义的文本视图角色集。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本视图的文件。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于文本视图，用户可以编辑或使用鼠标和键盘导航。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
   
- 下面的示例演示导出特性修饰提供程序上。  
+  下面的示例演示导出特性修饰提供程序上。  
   
 ```  
 [Export(typeof(IWpfTextViewCreationListener))]  
@@ -379,13 +379,13 @@ internal AdornmentLayerDefinition testAdornmentLayer;
   
  若要注册的标记器提供程序，必须将其导出以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在修饰的有效内容 （例如，"text"或"代码"） 的类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在修饰的有效内容 （例如，"text"或"代码"） 的类型。  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此文本视图的类型标记或修饰是否有效。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有的预定义的文本视图角色集。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本视图的文件。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于文本视图，用户可以编辑或使用鼠标和键盘导航。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
+- <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute>： 此文本视图的类型标记或修饰是否有效。 类<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles>具有的预定义的文本视图角色集。 例如，<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>主要用于文本视图的文件。 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive> 用于文本视图，用户可以编辑或使用鼠标和键盘导航。 示例<xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Interactive>视图是编辑器文本视图和**输出**窗口。  
   
--   <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 类型的标记或已定义的修饰。 必须将添加第二个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>为<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>。  
+- <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>： 类型的标记或已定义的修饰。 必须将添加第二个<xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute>为<xref:Microsoft.VisualStudio.Text.Tagging.SpaceNegotiatingAdornmentTag>。  
   
- 下面的示例演示导出特性上的空间协商修饰标记标记器提供程序。  
+  下面的示例演示导出特性上的空间协商修饰标记标记器提供程序。  
   
 ```  
 [Export(typeof(ITaggerProvider))]  
@@ -412,59 +412,59 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 ## <a name="extending-drop-handlers"></a>扩展拖放处理程序  
  可以通过创建实现的类来自定义特定类型的文本的拖放处理程序的行为<xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandler>和第二个类，用以实现<xref:Microsoft.VisualStudio.Text.Editor.DragDrop.IDropHandlerProvider>创建拖放处理程序。 必须将导出的拖放处理程序以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>： 此拖放处理程序的有效的文本格式。 按从最高到低的优先级顺序处理以下格式：  
+- <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>： 此拖放处理程序的有效的文本格式。 按从最高到低的优先级顺序处理以下格式：  
   
-    1.  任何自定义格式  
+  1.  任何自定义格式  
   
-    2.  FileDrop  
+  2.  FileDrop  
   
-    3.  EnhancedMetafile  
+  3.  EnhancedMetafile  
   
-    4.  WaveAudio  
+  4.  WaveAudio  
   
-    5.  Riff  
+  5.  Riff  
   
-    6.  差异  
+  6.  差异  
   
-    7.  区域设置  
+  7.  区域设置  
   
-    8.  调色板  
+  8.  调色板  
   
-    9. PenData  
+  9. PenData  
   
-    10. 可序列化  
+  10. 可序列化  
   
-    11. SymbolicLink  
+  11. SymbolicLink  
   
-    12. Xaml  
+  12. Xaml  
   
-    13. XamlPackage  
+  13. XamlPackage  
   
-    14. Tiff  
+  14. Tiff  
   
-    15. Bitmap  
+  15. Bitmap  
   
-    16. Dib  
+  16. Dib  
   
-    17. MetafilePicture  
+  17. MetafilePicture  
   
-    18. CSV  
+  18. CSV  
   
-    19. System.String  
+  19. System.String  
   
-    20. HTML 格式  
+  20. HTML 格式  
   
-    21. UnicodeText  
+  21. UnicodeText  
   
-    22. OEMText  
+  22. OEMText  
   
-    23. Text  
+  23. Text  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 删除处理程序的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 删除处理程序的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 之前或之后默认拖放处理程序拖放处理程序的顺序。 Visual Studio 默认拖放处理程序命名为"DefaultFileDropHandler"。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 之前或之后默认拖放处理程序拖放处理程序的顺序。 Visual Studio 默认拖放处理程序命名为"DefaultFileDropHandler"。  
   
- 下面的示例演示导出特性上拖放处理程序提供程序。  
+  下面的示例演示导出特性上拖放处理程序提供程序。  
   
 ```  
 [Export(typeof(IDropHandlerProvider))]  
@@ -479,13 +479,13 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
   
  若要添加一个新的选项，请从这些选项定义类之一派生一个类：  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>  
+- <xref:Microsoft.VisualStudio.Text.Editor.EditorOptionDefinition%601>  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.ViewOptionDefinition%601>  
+- <xref:Microsoft.VisualStudio.Text.Editor.ViewOptionDefinition%601>  
   
--   <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>  
+- <xref:Microsoft.VisualStudio.Text.Editor.WpfViewOptionDefinition%601>  
   
- 下面的示例显示了如何导出选项定义具有一个布尔值。  
+  下面的示例显示了如何导出选项定义具有一个布尔值。  
   
 ```  
 [Export(typeof(EditorOptionDefinition))]  
@@ -497,17 +497,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
   
  IntelliSense 功能的设计是在所有情况下非常相似：  
   
--   IntelliSense *broker*负责整个过程。  
+- IntelliSense *broker*负责整个过程。  
   
--   IntelliSense*会话*表示之间的表示器并或取消所选内容的触发事件的顺序。 某些用户手势通常触发该会话。  
+- IntelliSense*会话*表示之间的表示器并或取消所选内容的触发事件的顺序。 某些用户手势通常触发该会话。  
   
--   IntelliSense*控制器*负责决定会话应开始和结束时。 它还会决定信息应提交和时，应取消会话。  
+- IntelliSense*控制器*负责决定会话应开始和结束时。 它还会决定信息应提交和时，应取消会话。  
   
--   IntelliSense*源*提供内容，并决定最佳匹配项。  
+- IntelliSense*源*提供内容，并决定最佳匹配项。  
   
--   IntelliSense *presenter*负责显示内容。  
+- IntelliSense *presenter*负责显示内容。  
   
- 在大多数情况下，我们建议你提供的控制器和至少一个源。 如果你想要自定义显示内容，还可以提供表示器。  
+  在大多数情况下，我们建议你提供的控制器和至少一个源。 如果你想要自定义显示内容，还可以提供表示器。  
   
 ### <a name="implementing-an-intellisense-source"></a>实现智能感知源  
  若要自定义源，必须实现一个 （或多个） 的以下源接口：  
@@ -565,13 +565,13 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
 ### <a name="implementing-an-intellisense-controller"></a>实现智能感知控制器  
  若要自定义控制器，则必须实现<xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController>接口。 此外，必须实现控制器提供程序以及以下属性：  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 控制器的名称。  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>： 控制器的名称。  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在控制器适用的内容 （例如，"text"或"代码"） 类型。  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>： 在控制器适用的内容 （例如，"text"或"代码"） 类型。  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 在控制器应 （相对于其他控制器） 的显示的顺序。  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>： 在控制器应 （相对于其他控制器） 的显示的顺序。  
   
- 下面的示例显示了完成控制器提供程序上的导出特性。  
+  下面的示例显示了完成控制器提供程序上的导出特性。  
   
 ```  
 Export(typeof(IIntellisenseControllerProvider))]  

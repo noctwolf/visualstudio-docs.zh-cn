@@ -20,15 +20,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e80857ae1cfafdc6733af3eec78735dc249f4905
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287477"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877291"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063：正确实现 IDisposable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementIDisposableCorrectly|
@@ -39,23 +40,23 @@ ms.locfileid: "49287477"
 ## <a name="cause"></a>原因
  `IDisposable` 未正确实现。 此处列出了此问题的一些原因：
 
--   在类中重新实现 IDisposable。
+- 在类中重新实现 IDisposable。
 
--   完成重新中被重写。
+- 完成重新中被重写。
 
--   重写 dispose。
+- 重写 dispose。
 
--   Dispose （） 不是公共的密封的或名为 Dispose。
+- Dispose （） 不是公共的密封的或名为 Dispose。
 
--   Dispose （bool） 不受保护、 虚拟或未密封。
+- Dispose （bool） 不受保护、 虚拟或未密封。
 
--   在未密封类型中，dispose （） 必须调用 dispose （true）。
+- 在未密封类型中，dispose （） 必须调用 dispose （true）。
 
--   对于非密封类型 Finalize 实现不会调用一个或两个 dispose （bool） 或事例类终结器。
+- 对于非密封类型 Finalize 实现不会调用一个或两个 dispose （bool） 或事例类终结器。
 
- 这些模式的任何一个冲突将触发此警告。
+  这些模式的任何一个冲突将触发此警告。
 
- 每个未密封的根 IDisposable 类型都必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 Dipose(true) 和 Finalize 应调用 dispose （false）。 如果要创建未密封的根 IDisposable 类型，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理了非托管资源](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 设计准则](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文档的部分。
+  每个未密封的根 IDisposable 类型都必须提供其自己受保护的虚拟 void dispose （bool） 方法。 Dispose （） 应调用 Dipose(true) 和 Finalize 应调用 dispose （false）。 如果要创建未密封的根 IDisposable 类型，必须定义 dispose （bool），调用它。 有关详细信息，请参阅[清理了非托管资源](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)中[Framework 设计准则](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b).NET Framework 文档的部分。
 
 ## <a name="rule-description"></a>规则说明
  所有的 IDisposable 类型都应当正确实现 Dispose 模式。

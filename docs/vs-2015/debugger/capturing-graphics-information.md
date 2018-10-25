@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aef056176df4f760941cc6775faab7b232892520
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8a66d13e9fef647432f05dc01ce60732a0c40b16
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289375"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855399"
 ---
 # <a name="capturing-graphics-information"></a>捕获图形信息
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,30 +35,30 @@ ms.locfileid: "49289375"
   
 #### <a name="to-run-your-app-under-graphics-diagnostics"></a>在图形诊断下运行应用程序  
   
--   在菜单栏上，依次选择 **“调试”**、 **“图形”**、 **“启动诊断”**。 （键盘：按 Alt+F5）  
+- 在菜单栏上，依次选择 **“调试”**、 **“图形”**、 **“启动诊断”**。 （键盘：按 Alt+F5）  
   
--   上**图形**工具栏上，选择**启动诊断**按钮。  
+- 上**图形**工具栏上，选择**启动诊断**按钮。  
   
- 当应用程序在图形诊断下运行时，将始终捕获某些类型的图形信息；这包括设备设置、交换链的创建、图形对象和资源的创建以及其他影响多个帧的重要事件。 同时，你可以捕获有关特定帧的详细信息；这包括绘图调用和计算着色器调度，以及支持它们的 Direct3D 对象和资源。  
+  当应用程序在图形诊断下运行时，将始终捕获某些类型的图形信息；这包括设备设置、交换链的创建、图形对象和资源的创建以及其他影响多个帧的重要事件。 同时，你可以捕获有关特定帧的详细信息；这包括绘图调用和计算着色器调度，以及支持它们的 Direct3D 对象和资源。  
   
 #### <a name="to-capture-a-frame"></a>捕获帧  
   
--   在 Visual Studio 中，在**图形**工具栏上，选择**捕获帧**按钮![图形捕获按钮图标](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
+- 在 Visual Studio 中，在**图形**工具栏上，选择**捕获帧**按钮![图形捕获按钮图标](../debugger/media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").  
   
--   在键盘上，按 Print Screen。  
+- 在键盘上，按 Print Screen。  
   
-    > [!NOTE]
-    >  在运行应用时**图形诊断**，Print Screen 键仅可用于捕获图形信息的帧; 它不会执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。  
+  > [!NOTE]
+  >  在运行应用时**图形诊断**，Print Screen 键仅可用于捕获图形信息的帧; 它不会执行其常规功能。 这将一直有效，直到你停止捕获图形信息（通常通过停止调试或正常退出应用程序），即使另一应用程序具有焦点时也是如此。  
   
--   在 Visual Studio 捕获接口中，选择**捕获帧**按钮位于上方**诊断会话**时间线，也可选择**捕获帧**按钮位于下方**每秒帧数**泳道和右侧的任何先前捕获的帧。 两个按钮均突出显示在下方的图像中。  
+- 在 Visual Studio 捕获接口中，选择**捕获帧**按钮位于上方**诊断会话**时间线，也可选择**捕获帧**按钮位于下方**每秒帧数**泳道和右侧的任何先前捕获的帧。 两个按钮均突出显示在下方的图像中。  
   
-     ![捕获帧使用 GPU 使用情况工具。](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
+   ![捕获帧使用 GPU 使用情况工具。](../debugger/media/pix-gpu-usage-tool-capture-frame.png "pix_gpu_usage_tool_capture_frame")  
   
-     如果你已准备好检查的帧已捕获、 启动**Visual Studio 图形分析器**按照**帧...** 链接上方图像缩略图，或通过双击该缩略图。  
+   如果你已准备好检查的帧已捕获、 启动**Visual Studio 图形分析器**按照**帧...** 链接上方图像缩略图，或通过双击该缩略图。  
   
- 只能捕获整帧，因此当你启动捕获时，实际上将记录下一帧中的图形信息。 记录将在显示你从中启动捕获的帧后立即开始，在显示捕获的帧后结束。 应用程序在图形诊断下运行时，可以捕获你所需的多个帧。 如果未捕获任何帧，将丢弃图形日志。  
+  只能捕获整帧，因此当你启动捕获时，实际上将记录下一帧中的图形信息。 记录将在显示你从中启动捕获的帧后立即开始，在显示捕获的帧后结束。 应用程序在图形诊断下运行时，可以捕获你所需的多个帧。 如果未捕获任何帧，将丢弃图形日志。  
   
- 捕获帧时，Visual Studio 将显示诊断会话 (.diagsession) 窗口。 如果关闭此窗口、停止调试或关闭应用，则无法继续将任何帧捕获到该日志。 要捕获更多图形信息，必须在图形诊断下再次运行应用以启动新的诊断会话。  
+  捕获帧时，Visual Studio 将显示诊断会话 (.diagsession) 窗口。 如果关闭此窗口、停止调试或关闭应用，则无法继续将任何帧捕获到该日志。 要捕获更多图形信息，必须在图形诊断下再次运行应用以启动新的诊断会话。  
   
 ### <a name="graphics-diagnostics-capture-options"></a>图形诊断捕获选项  
  你可以通过配置捕获来收集所有图形事件或有限子集的调用堆栈，禁用捕获 HUD，也可以启用或禁用捕获兼容模式。  

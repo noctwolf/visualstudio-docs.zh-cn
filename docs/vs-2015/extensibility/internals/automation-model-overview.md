@@ -16,12 +16,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c31d3b9f18ede2137b5cffe2dd3600de727b9de1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e85e0a56ac11baf93ad743569d57152601077599
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235685"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49815918"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,15 +40,15 @@ Visual Studio 自动化对象
   
  你可以考虑扩展环境的自动化模型的位置：  
   
--   项目  
+- 项目  
   
--   Document  
+- Document  
   
--   代码  
+- 代码  
   
--   生成  
+- 生成  
   
- 自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。  
+  自动化的详细信息，请参阅[的 Visual Studio 自动化和扩展性](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6)。 本文档和文档，它提供了链接，帮助你做出决定，你应如何提供你的 VSPackage 的自动化。  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 创建的外接程序](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

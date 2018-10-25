@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 36cc776f18990e7cc97b1583267c9f9f9b9c95eb
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 276ec679525682486db5a579ac34f52cec5081f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885651"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -43,11 +43,12 @@ Dsl 的主体应用程序之一是生成程序代码、 配置文件和其他项
 
 若要定义 DSL，必须安装以下组件：
 
-|||
+
+| | |
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Visual Studio 的建模 SDK||
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580) |
+| Visual Studio 的建模 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
@@ -143,7 +144,7 @@ Dsl 的主体应用程序之一是生成程序代码、 配置文件和其他项
 
 ### <a name="the-content-of-a-model"></a>模型的内容
 
-调用是 DSL 的实例的文件的内容*模型*。 该模型包含*模型 * * 元素*并*链接*元素之间。 DSL 定义中指定哪些类型的模型元素，并可以存在于模型中的链接。 例如，在最小语言模板创建的 DSL，没有一种类型的模型元素和一个类型的链接。
+调用是 DSL 的实例的文件的内容*模型*。 该模型包含*模型*<em>元素</em>并*链接*元素之间。 DSL 定义中指定哪些类型的模型元素，并可以存在于模型中的链接。 例如，在最小语言模板创建的 DSL，没有一种类型的模型元素和一个类型的链接。
 
 DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使用不同的形状和连接线的样式。 您可以指定某些形状出现在其他形状内。
 
@@ -246,39 +247,39 @@ DSL 定义中可以指定模型关系图上的显示方式。 您可以选择使
 
 ##### <a name="to-add-properties-and-display-them"></a>若要添加的属性并将其显示
 
-1.  添加属性。
+1. 添加属性。
 
-    1.  在 DSL 定义关系图中，右键单击**Person**域类中，依次指向**添加**，然后单击**域属性**。
+   1.  在 DSL 定义关系图中，右键单击**Person**域类中，依次指向**添加**，然后单击**域属性**。
 
-    2.  键入一系列新的属性名称，如**出生**并**死亡**。 按**Enter**后每个。
+   2.  键入一系列新的属性名称，如**出生**并**死亡**。 按**Enter**后每个。
 
-2.  添加将在形状中显示的属性的修饰器。
+2. 添加将在形状中显示的属性的修饰器。
 
-    1.  按照从 Person 域类延伸到关系图的另一端的灰色线条。 这是关系图元素映射。 它链接到形状类的域类。
+   1.  按照从 Person 域类延伸到关系图的另一端的灰色线条。 这是关系图元素映射。 它链接到形状类的域类。
 
-    2.  右键单击此形状类、 指向**外**，然后单击**文本修饰器**。
+   2.  右键单击此形状类、 指向**外**，然后单击**文本修饰器**。
 
-    3.  添加两个具有名称的修饰器，例如**BirthDecorator**并**DeathDecorator**。
+   3.  添加两个具有名称的修饰器，例如**BirthDecorator**并**DeathDecorator**。
 
-    4.  选择每个新的修饰器，并在属性窗口中设置**位置**字段。 这可确定将在形状中显示域属性值。 例如，设置**InnerBottomLeft**并**InnerBottomRight**。
+   4.  选择每个新的修饰器，并在属性窗口中设置**位置**字段。 这可确定将在形状中显示域属性值。 例如，设置**InnerBottomLeft**并**InnerBottomRight**。
 
-         ![隔离舱形状定义](../modeling/media/familyt_compartment.png)
+        ![隔离舱形状定义](../modeling/media/familyt_compartment.png)
 
-3.  将修饰器映射到属性。
+3. 将修饰器映射到属性。
 
-    1.  打开 DSL 详细信息窗口中。 它通常是在输出窗口的旁边的选项卡。 如果看不到它，在**视图**菜单，依次指向**其他 Windows**，然后单击**DSL 详细信息**。
+   1.  打开 DSL 详细信息窗口中。 它通常是在输出窗口的旁边的选项卡。 如果看不到它，在**视图**菜单，依次指向**其他 Windows**，然后单击**DSL 详细信息**。
 
-    2.  在 DSL 定义关系图中，单击连接的连线**人员**到形状类的域类。
+   2.  在 DSL 定义关系图中，单击连接的连线**人员**到形状类的域类。
 
-    3.  在中**DSL 详细信息**，然后在**修饰器映射**选项卡上，单击上未映射的修饰器的复选框。 在中**显示属性**，选择要其映射的域属性。 例如，映射**BirthDecorator**到**出生**。
+   3.  在中**DSL 详细信息**，然后在**修饰器映射**选项卡上，单击上未映射的修饰器的复选框。 在中**显示属性**，选择要其映射的域属性。 例如，映射**BirthDecorator**到**出生**。
 
-4.  保存 DSL 中，单击转换所有模板，并按 F5。
+4. 保存 DSL 中，单击转换所有模板，并按 F5。
 
-5.  在示例模型关系图中，验证你现在可以单击所选的位置并向其中键入值。 此外，选择**人员**形状，属性窗口显示出生和死亡的新属性。
+5. 在示例模型关系图中，验证你现在可以单击所选的位置并向其中键入值。 此外，选择**人员**形状，属性窗口显示出生和死亡的新属性。
 
-6.  在.tt 文件中，可以添加代码可用于获取每个 person 的属性。
+6. 在.tt 文件中，可以添加代码可用于获取每个 person 的属性。
 
- ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
+   ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
 
 ### <a name="define-new-classes"></a>定义新类
  可以向模型添加域类和关系。 例如，可以创建一个新类来表示城市分类，以及新的关系来表示一个人惊叹闪亮登场。

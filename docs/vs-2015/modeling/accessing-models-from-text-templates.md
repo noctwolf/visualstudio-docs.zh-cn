@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 7ad3d921de04c3fd612571a55d012588793b91db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257187"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919853"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "49257187"
   
  若要从文本模板访问模型：  
   
--   设置为 template 指令的继承属性<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 这提供对应用商店的访问。  
+- 设置为 template 指令的继承属性<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 这提供对应用商店的访问。  
   
--   指定你想要访问 DSL 的指令处理器。 这将加载用于 DSL 的程序集，以便可以在文本模板的代码中使用其域类、 属性和关系。 它还会加载您指定的模型文件。  
+- 指定你想要访问 DSL 的指令处理器。 这将加载用于 DSL 的程序集，以便可以在文本模板的代码中使用其域类、 属性和关系。 它还会加载您指定的模型文件。  
   
- 一个`.tt`时创建一个新的调试项目中创建类似于下面的示例文件[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]从 DSL 最小语言模板的解决方案。  
+  一个`.tt`时创建一个新的调试项目中创建类似于下面的示例文件[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]从 DSL 最小语言模板的解决方案。  
   
 ```  
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  
@@ -97,11 +97,11 @@ Here is a list of elements in the model:
   
  请注意：  
   
-1.  `filename`和`validation`参数分隔与";"，且必须具有其他分隔符或空格。  
+1. `filename`和`validation`参数分隔与";"，且必须具有其他分隔符或空格。  
   
-2.  验证类别列表确定将执行的验证方法。 应使用分隔多个类别"&#124;"，且必须具有其他分隔符或空格。  
+2. 验证类别列表确定将执行的验证方法。 应使用分隔多个类别"&#124;"，且必须具有其他分隔符或空格。  
   
- 如果找到错误，则它将在错误窗口中，报告和结果文件将包含一条错误消息。  
+   如果找到错误，则它将在错误窗口中，报告和结果文件将包含一条错误消息。  
   
 ##  <a name="Multiple"></a> 从文本模板访问多个模型  
   

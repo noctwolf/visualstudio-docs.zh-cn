@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a85d5cd2fc1a6b86b209cad7de08f60f01fd0c9
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: bf8e172f6693b4efcff1cfff3eb8c79178bb9f90
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34262618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919164"
 ---
 # <a name="filter-report-views"></a>筛选报告视图
 可以将筛选器应用于分析数据文件，限制“性能报告”视图中显示的和导出到报告文件的分析数据。 可以将报告现定于两个时间戳值之间的数据，并可以将数据限定于特定的进程和线程。 可以将筛选器保存到文件，然后通过导入保存的筛选器，在另一分析数据文件中创建筛选器。  
@@ -46,19 +46,19 @@ ms.locfileid: "34262618"
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>从“标记报告”视图中创建探查器报告筛选器  
   
-1.  在“性能报告”视图工具栏上，从“当前视图”列表中选择“标记”。  
+1. 在“性能报告”视图工具栏上，从“当前视图”列表中选择“标记”。  
   
-     此时将显示“标记探查器”报告。  
+    此时将显示“标记探查器”报告。  
   
-2.  选择要用作报告起始点的 ETW 或采样事件。  
+2. 选择要用作报告起始点的 ETW 或采样事件。  
   
-3.  按住 Ctrl 并单击要用作报告结束点的事件。  
+3. 按住 Ctrl 并单击要用作报告结束点的事件。  
   
-4.  右键单击，然后单击下列选项之一：  
+4. 右键单击，然后单击下列选项之一：  
   
-    -   “添加针对标记的筛选器”将创建使用“标记”列作为筛选器字段的筛选器子句。  
+   - “添加针对标记的筛选器”将创建使用“标记”列作为筛选器字段的筛选器子句。  
   
-    -   “添加针对时间戳的筛选器”将创建使用“时间戳(毫秒)”列作为筛选器字段的筛选器子句。  
+   - “添加针对时间戳的筛选器”将创建使用“时间戳(毫秒)”列作为筛选器字段的筛选器子句。  
   
      这两个选项在相同的开始点和结束点筛选当前数据文件。 如果将筛选器导出以供在其他报告中使用，可以选用任一选项。  
   

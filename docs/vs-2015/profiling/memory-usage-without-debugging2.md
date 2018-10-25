@@ -19,25 +19,25 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e9b2cd003011d610b56ac97ed95e3008b5cabc6a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 583296b47c2d230a48c21952613954b17ebfe622
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49892332"
 ---
 # <a name="memory-usage-without-debugging"></a>不调试的内存使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 可以在不调试的情况下使用**内存使用率**执行以下操作  
   
--   监视在制订方案时 Visual Studio 中应用的内存使用情况。  
+- 监视在制订方案时 Visual Studio 中应用的内存使用情况。  
   
--   创建应用的内存状态的详细快照。  
+- 创建应用的内存状态的详细快照。  
   
--   通过比较快照，找出内存问题的根本原因。  
+- 通过比较快照，找出内存问题的根本原因。  
   
- 本主题介绍如何使用“内存使用率”工具分析 Windows Universal XAML 应用。 如果想要在使用 JavaScript 和 HTML 的 Windows 通用应用中分析内存使用情况，请参阅[分析内存使用率 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
+  本主题介绍如何使用“内存使用率”工具分析 Windows Universal XAML 应用。 如果想要在使用 JavaScript 和 HTML 的 Windows 通用应用中分析内存使用情况，请参阅[分析内存使用率 (JavaScript)](http://msdn.microsoft.com/library/windows/apps/jj819176.aspx)。  
   
 ##  <a name="BKMK_Start_a_Memory_Usage_diagnostic_session"></a>启动内存使用率诊断会话  
   
@@ -76,13 +76,13 @@ ms.locfileid: "49267418"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>“内存使用率”快照视图  
  使用快照视图以在新的 Visual Studio 窗口中打开详细的报告。 存在两种类型的快照视图：  
   
--   [快照详细报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)显示某个快照中的类型和实例。  
+- [快照详细报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_details_reports)显示某个快照中的类型和实例。  
   
--   [快照差异报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)比较两个快照中的类型和实例。  
+- [快照差异报告](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports)比较两个快照中的类型和实例。  
   
- ![快照视图链接](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![快照视图链接](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- 快照视图图片中带编号的项是可以打开内存使用量报告视图的链接。  
+  快照视图图片中带编号的项是可以打开内存使用量报告视图的链接。  
   
 |||  
 |-|-|  

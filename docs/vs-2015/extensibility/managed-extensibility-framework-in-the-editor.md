@@ -15,12 +15,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7fb7214f4cd9d338c06e9f1eba5f1cc2c50fbc0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 65e3c544fc5e571368afb9872e6e13fda128e79a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215665"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877577"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>编辑器中的 Managed Extensibility Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49215665"
 ### <a name="component-parts-and-composition-containers"></a>组件的各部分和撰写容器  
  某一组件部分是类还是可以执行一个 （或两者） 的以下类的成员：  
   
--   使用另一个组件  
+- 使用另一个组件  
   
--   可供另一个组件  
+- 可供另一个组件  
   
- 例如，考虑具有取决于产品可用性数据仓库清单组件提供一个订单项组件的购物应用程序。 在 MEF 术语中，清单一部分可以*导出*产品可用性数据，并且订单条目一部分可以*导入*数据。 订单项部分和清单部分不需要知道有关彼此;*撰写容器*（由主机应用程序提供） 是负责维护的导出，集和解析导出和导入。  
+  例如，考虑具有取决于产品可用性数据仓库清单组件提供一个订单项组件的购物应用程序。 在 MEF 术语中，清单一部分可以*导出*产品可用性数据，并且订单条目一部分可以*导入*数据。 订单项部分和清单部分不需要知道有关彼此;*撰写容器*（由主机应用程序提供） 是负责维护的导出，集和解析导出和导入。  
   
- 撰写容器<xref:System.ComponentModel.Composition.Hosting.CompositionContainer>，通常拥有的主机。 撰写容器维护*目录*导出的组件构成。  
+  撰写容器<xref:System.ComponentModel.Composition.Hosting.CompositionContainer>，通常拥有的主机。 撰写容器维护*目录*导出的组件构成。  
   
 ### <a name="exporting-and-importing-component-parts"></a>导出和导入组件的各部分  
  只要它作为公共类或类 （属性或方法） 的公共成员，您可以导出任何功能。 无需派生来自您组件部件<xref:System.ComponentModel.Composition.Primitives.ComposablePart>。 相反，必须添加<xref:System.ComponentModel.Composition.ExportAttribute>类或类成员，你想要导出的属性。 此属性指定*协定*通过的另一个组件部分可以导入您的功能。  

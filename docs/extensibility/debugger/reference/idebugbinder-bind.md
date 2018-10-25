@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder::Bind |Microsoft 文档
+title: IDebugBinder::Bind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c49e4254df9ec06813499237054ec916bb4b6c1b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a1210b84a52aa15d3c8e1bb73bc58d1fbe48a19d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31100060"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920347"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-此方法获取的内存上下文或包含符号的当前值的对象。  
+此方法获取的内存上下文或对象，其中包含符号的当前值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,15 +48,15 @@ int Bind(
  [in][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)包含引用子`pField`。  
   
  `pField`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示符号。  
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示该符号。  
   
  `ppObject`  
- [out]返回`IDebugObject`，表示的符号的实例。  
+ [out]返回`IDebugObject`表示实例的符号。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

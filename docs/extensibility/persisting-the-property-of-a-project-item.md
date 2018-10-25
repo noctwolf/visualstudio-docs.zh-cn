@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94b5db74c6480c848f669983cea0febcd922cefe
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: da231c924e3167a50c885cf18ef878a02b28b166
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639345"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915576"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保存项目项的属性
 您可能想要保留的属性添加到项目项，例如源代码文件的作者。 可以通过将属性存储在项目文件中执行此操作。
@@ -117,22 +117,22 @@ ms.locfileid: "39639345"
 
 ## <a name="to-verify-that-the-property-is-persisted"></a>若要验证属性保持不变
 
-1.  启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然后打开或创建解决方案。
+1. 启动[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]然后打开或创建解决方案。
 
-2.  选择的项目项中的 VsPkg.cs**解决方案资源管理器**。
+2. 选择的项目项中的 VsPkg.cs**解决方案资源管理器**。
 
-3.  使用断点或否则来确定加载你的 VSPackage 和 SetItemAttribute 运行。
+3. 使用断点或否则来确定加载你的 VSPackage 和 SetItemAttribute 运行。
 
-    > [!NOTE]
-    > 你可以自动加载 VSPackage 的 UI 上下文中<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。
+   > [!NOTE]
+   > 你可以自动加载 VSPackage 的 UI 上下文中<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>。 有关详细信息，请参阅[加载 Vspackage](../extensibility/loading-vspackages.md)。
 
-4.  关闭[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然后在记事本中打开项目文件。 应会看到\<作者 > 标记值 Tom，按如下所示：
+4. 关闭[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，然后在记事本中打开项目文件。 应会看到\<作者 > 标记值 Tom，按如下所示：
 
-    ```xml
-    <Compile Include="VsPkg.cs">
-        <Author>Tom</Author>
-    </Compile>
-    ```
+   ```xml
+   <Compile Include="VsPkg.cs">
+       <Author>Tom</Author>
+   </Compile>
+   ```
 
 ## <a name="see-also"></a>请参阅
 

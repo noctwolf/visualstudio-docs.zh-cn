@@ -15,27 +15,27 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 63e1bc230df89fe219607c20e1cce248fc2238e2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9109ef312fb16b4b370a9a8428f3ffb202b272ff
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862861"
 ---
 # <a name="sending-events"></a>发送事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 调试器与调试引擎 (DE) 之间的通信的机制是基于 DCOM 的事件模型。 为 COM 对象，发送事件和每个事件具有参数，指定下列各项：  
   
--   DE 调用该事件。  
+- DE 调用该事件。  
   
--   发生了什么情况的说明。  
+- 发生了什么情况的说明。  
   
--   进程、 程序和线程标识的事件发生的上下文的信息。 该过程不会发送从设备发送的事件。  
+- 进程、 程序和线程标识的事件发生的上下文的信息。 该过程不会发送从设备发送的事件。  
   
--   事件类型，该值指示事件是否是同步还是异步。  
+- 事件类型，该值指示事件是否是同步还是异步。  
   
- 使用该方法发送所有调试事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
+  使用该方法发送所有调试事件[IDebugEventCallback2::Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [事件源](../../extensibility/debugger/event-sources-visual-studio-sdk.md)  

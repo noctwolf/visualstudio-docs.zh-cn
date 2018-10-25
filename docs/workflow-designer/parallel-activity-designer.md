@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4f10b9bb564268f5aeee59d871fd44324097cc
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 76e0d7646645c7d86859de7f79ff22a46131c4a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756671"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863758"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活动设计器
 
@@ -42,13 +42,13 @@ ms.locfileid: "36756671"
 下表列出 Parallel 活动属性并说明如何在设计器中使用这些属性。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活动设计器在标头中的友好显示名称。 默认值是**并行**。 值可以根据需要在中编辑**属性**网格或直接在活动设计器标头。|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|包含要执行的子活动的集合。|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|在分支完成后计算。 如果其计算结果为 **，则返回 True**，然后计划取消挂起的分支。 如果此属性未设置或计算结果为**False**，活动完成其所有子活动后完成。 默认值是**null**。|
 
 ## <a name="see-also"></a>请参阅
 
-- [序列](../workflow-designer/sequence-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

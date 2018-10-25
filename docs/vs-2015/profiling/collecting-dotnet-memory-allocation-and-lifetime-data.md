@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53443ed1681e5709edc0581fca8e2fd46a51834d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e0bda22a63b5286db9336bc0924ce11bc05e2bc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245552"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844570"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 内存分配数据和生存期数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 分析工具支持收集 .NET 内存分配和对象生存期数据，此数据有助于检测应用程序中与内存相关的性能问题。  
   
--   有关 .NET 内存分配的数据包括所分配的 .NET Framework 内存对象的大小和数量。  
+- 有关 .NET 内存分配的数据包括所分配的 .NET Framework 内存对象的大小和数量。  
   
--   对象生存期数据包括三代垃圾回收所回收的 .NET Framework 内存对象大小的和数目。  
+- 对象生存期数据包括三代垃圾回收所回收的 .NET Framework 内存对象大小的和数目。  
   
- **要求**  
+  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Windows 8 和 Windows Server 2012 中增强的安全功能需要以 Visual Studio 探查器在这些平台上收集数据的方式进行重大更改。 Windows 应用商店应用程序也需要新的收集技术。 请参阅 [Windows 8 和 Windows Server 2012 应用程序上的性能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
@@ -64,9 +64,9 @@ ms.locfileid: "49245552"
 ## <a name="common-tasks"></a>常规任务  
  可以指定 _性能会话_ 对话框中的附加选项。 若要打开此对话框：  
   
--   在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
+- 在“性能资源管理器” 中，右键单击性能会话名称，然后单击“属性” 。  
   
- 下表中的任务说明了在收集 .NET 内存数据时，可以在“性能会话属性页”对话框中指定的选项。  
+  下表中的任务说明了在收集 .NET 内存数据时，可以在“性能会话属性页”对话框中指定的选项。  
   
 |任务|相关内容|  
 |----------|---------------------|  

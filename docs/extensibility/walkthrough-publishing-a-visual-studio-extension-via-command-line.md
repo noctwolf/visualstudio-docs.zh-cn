@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a915a8acdd9918f27a8909cdff2a790e6488566
-ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
+ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863880"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883349"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练： 发布 Visual Studio 扩展中的通过命令行
 
@@ -33,12 +33,12 @@ VsixPublisher.exe 是发布到 Marketplace 的 Visual Studio 扩展的命令行�
 
 将扩展发布到 Marketplace。 该扩展可以是 vsix、 exe/msi 文件或链接。 如果扩展已存在具有相同的版本，它将覆盖该扩展。 如果尚不存在该扩展，它将创建一个新的扩展。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|有效负载 （必需）                 |  若要发布的有效负载或将其用作"详细信息 URL"的链接到的路径。      |
-|publishManifest （必需）         |  发布路径清单文件使用。       |
-|ignoreWarnings                     |  要发布扩展时忽略的警告的列表。 发布扩展时，将为命令行的消息中显示这些警告。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
-|personalAccesToken                 |  个人访问令牌用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 pat。       |
+|有效负载 （必需） | 若要发布的有效负载或将其用作"详细信息 URL"的链接到的路径。 |
+|publishManifest （必需） | 发布路径清单文件使用。 |
+|ignoreWarnings | 要发布扩展时忽略的警告的列表。 发布扩展时，将为命令行的消息中显示这些警告。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
+|personalAccesToken | 个人访问令牌用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 pat。 |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
@@ -48,13 +48,13 @@ VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to v
 
 在 Marketplace 上创建发布服务器。 此外将记录发布服务器到未来的操作 （例如删除/发布扩展） 的计算机。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|displayName （必需）             |  发布服务器上的显示名称。      |
-|publisherName （必需）           |  发布服务器 （例如，标识符） 的名称。      |
-|personalAccessToken （必需）     |  个人访问令牌用于进行身份验证发布服务器。      |
-|shortDescription                   |  发布服务器 （而不是文件） 的简短说明。       |
-|longDescription                    |  发布服务器 （而不是文件） 的详细说明。      |
+|displayName （必需） | 发布服务器上的显示名称。 |
+|publisherName （必需） | 发布服务器 （例如，标识符） 的名称。 |
+|personalAccessToken （必需） | 个人访问令牌用于进行身份验证发布服务器。 |
+|shortDescription | 发布服务器 （而不是文件） 的简短说明。 |
+|longDescription | 发布服务器 （而不是文件） 的详细说明。 |
 
 ```
 VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName "{Publisher Display Name}" -personalAccessToken "{Personal Access Token}"
@@ -64,10 +64,10 @@ VsixPublisher.exe createPublisher -publisherName "{Publisher Name}" -displayName
 
 发布服务器上，在 Marketplace 中删除。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|publisherName （必需）           |  发布服务器 （例如，标识符） 的名称。      |
-|personalAccessToken （必需）     |  个人访问令牌用于进行身份验证发布服务器。      |
+|publisherName （必需） | 发布服务器 （例如，标识符） 的名称。 |
+|personalAccessToken （必需） | 个人访问令牌用于进行身份验证发布服务器。 |
 
 ```
 VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAccessToken "{Personal Access Token}"
@@ -77,11 +77,11 @@ VsixPublisher.exe deletePublisher -publisherName "{Publisher Name}" -personalAcc
 
 从 Marketplace 中删除扩展。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|extensionName （必需）           |  要删除的扩展插件的名称。      |
-|publisherName （必需）           |  发布服务器 （例如，标识符） 的名称。      |
-|personalAccessToken                |  个人访问令牌用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 pat。     |
+|extensionName （必需） | 要删除的扩展插件的名称。 |
+|publisherName （必需） | 发布服务器 （例如，标识符） 的名称。 |
+|personalAccessToken | 个人访问令牌用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 pat。 |
 
 ```
 VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherName "{Publisher Name}"
@@ -91,11 +91,11 @@ VsixPublisher.exe deleteExtension -extensionName "{Extension Name}" -publisherNa
 
 登录到计算机的发布服务器。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|（所需的 personalAccessToken      |  个人访问令牌用于进行身份验证发布服务器。      |
-|publisherName （必需）           |  发布服务器 （例如，标识符） 的名称。      |
-|覆盖                          |  指定应使用新的个人访问令牌覆盖任何现有发布服务器。     |
+|（所需的 personalAccessToken | 个人访问令牌用于进行身份验证发布服务器。 |
+|publisherName （必需） | 发布服务器 （例如，标识符） 的名称。 |
+|覆盖 | 指定应使用新的个人访问令牌覆盖任何现有发布服务器。 |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -105,10 +105,10 @@ VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publishe
 
 记录从计算机的发布服务器。
 
-|命令选项                    |描述  |
+|命令选项 |描述 |
 |---------|---------|
-|publisherName （必需）           |  发布服务器 （例如，标识符） 的名称。      |
-|ignoreMissingPublisher             |  指定该工具应不是错误，是否指定的发布服务器是不已登录的。     |
+|publisherName （必需） | 发布服务器 （例如，标识符） 的名称。 |
+|ignoreMissingPublisher | 指定该工具应不是错误，是否指定的发布服务器是不已登录的。 |
 
 ```
 VsixPublisher.exe logout -publisherName "{Publisher Name}"

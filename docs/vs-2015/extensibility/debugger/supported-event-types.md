@@ -15,42 +15,42 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 846a889a22188249a1a42e8d66f0b3730a19dfc2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e7c4297b1beaf93d82233eb756d0c812cc38e20c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228756"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839383"
 ---
 # <a name="supported-event-types"></a>支持的事件类型
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Visual Studio 调试当前支持以下事件类型：  
   
--   异步事件  
+- 异步事件  
   
-     通知会话调试管理器 (SDM) 和正在调试的应用程序的状态将更改的 IDE。 SDM 和 IDE 的閒旅遊处理这些事件。 处理事件后，会不发送到调试引擎 (DE) 任何回复。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)并[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)接口是异步事件的示例。  
+   通知会话调试管理器 (SDM) 和正在调试的应用程序的状态将更改的 IDE。 SDM 和 IDE 的閒旅遊处理这些事件。 处理事件后，会不发送到调试引擎 (DE) 任何回复。 [IDebugOutputStringEvent2](../../extensibility/debugger/reference/idebugoutputstringevent2.md)并[IDebugMessageEvent2](../../extensibility/debugger/reference/idebugmessageevent2.md)接口是异步事件的示例。  
   
--   同步事件  
+- 同步事件  
   
-     通知 SDM 和正在调试的应用程序的状态将更改的 IDE。 这些事件和异步事件的唯一区别在于，通过发送答复[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
+   通知 SDM 和正在调试的应用程序的状态将更改的 IDE。 这些事件和异步事件的唯一区别在于，通过发送答复[ContinueFromSynchronousEvent](../../extensibility/debugger/reference/idebugengine2-continuefromsynchronousevent.md)方法。  
   
-     发送同步事件是很有用，如果您需要在 DE 以继续处理后 IDE 接收并处理该事件。  
+   发送同步事件是很有用，如果您需要在 DE 以继续处理后 IDE 接收并处理该事件。  
   
--   同步的停止事件，或停止事件  
+- 同步的停止事件，或停止事件  
   
-     通知 SDM 和 IDE 正在调试的应用程序已停止执行代码。 如果要将停止事件发送方法[事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)，则[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)参数是必需的。 正在停止事件是通过调用以下方法之一 （续）：  
+   通知 SDM 和 IDE 正在调试的应用程序已停止执行代码。 如果要将停止事件发送方法[事件](../../extensibility/debugger/reference/idebugeventcallback2-event.md)，则[IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md)参数是必需的。 正在停止事件是通过调用以下方法之一 （续）：  
   
-    -   [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
+  - [Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)  
   
-    -   [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
+  - [Step](../../extensibility/debugger/reference/idebugprogram2-step.md)  
   
-    -   [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
+  - [Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)  
   
-     接口[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)并[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)是停止事件的示例。  
+    接口[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)并[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)是停止事件的示例。  
   
-    > [!NOTE]
-    >  不支持异步停止事件。 它是错误发送异步停止事件。  
+  > [!NOTE]
+  >  不支持异步停止事件。 它是错误发送异步停止事件。  
   
 ## <a name="discussion"></a>讨论  
  事件的实际实现取决于你 DE 设计。 发送每个事件的类型是由设计 DE 时设置其属性确定的。 例如，可能会发送一个 DE [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md)作为异步事件，而另一个可能会将其作为停止事件。  

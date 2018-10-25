@@ -1,5 +1,5 @@
 ---
-title: IDebugBreakpointChecksumRequest2::GetChecksum |Microsoft 文档
+title: IDebugBreakpointChecksumRequest2::GetChecksum |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,15 +13,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ecd6d0ed9c69cad1275a399ffacf402529eebf4
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b78c5f44d8f73aa9bb2af5a5b2aa43d5b15bd7db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104870"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910519"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-检索给定的唯一标识符的校验和算法的断点请求使用的文档校验和。  
+检索给定的校验和算法的唯一标识符的断点请求使用的文档校验和。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,13 +44,13 @@ public int GetChecksum(
  [in]校验和算法的唯一标识符。  
   
  `pChecksumData`  
- [out]断点请求的文档校验和。  
+ [out]断点请求文档的校验和。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示检查一个文档，即将绑定的校验和是否与 UI 中的一个属性匹配的函数。  
+ 下面的示例显示了检查的文档，其中是要绑定，校验和是否与某个用户界面中匹配的函数。  
   
 ```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
@@ -104,5 +104,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

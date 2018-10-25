@@ -16,12 +16,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0317b4d641cb965b5f92ad31cfab6d3580db30a6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cc3395f065d211c2d8e7d4f68a6b3ec8c25474d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225558"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949301"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,19 +116,19 @@ ms.locfileid: "49225558"
   
 ### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>若要解决缺少 VSPackage 或其某个依赖项  
   
-1.  对于托管代码中，请确保引用路径正确。  
+1. 对于托管代码中，请确保引用路径正确。  
   
-    1.  在“项目”菜单上，单击“属性”。  
+   1.  在“项目”菜单上，单击“属性”。  
   
-    2.  选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。  
+   2.  选择**引用**选项卡**属性页**对话框，并确保所有路径都是否正确。 或者，可以使用**对象浏览器**来查找被引用对象。  
   
-         对于托管代码中，你可以使用[Fuslogvw.exe （程序集绑定日志查看器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)显示失败的程序集加载的详细信息。  
+        对于托管代码中，你可以使用[Fuslogvw.exe （程序集绑定日志查看器）](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296)显示失败的程序集加载的详细信息。  
   
-2.  对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 注册表节点：  
+2. 对于非托管代码中，找到的 VSPackage 中 CLSID [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID 注册表节点：  
   
-     HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\*\<版本 >* \CLSID  
   
- 请确保 InprocServer32 项具有 VSPackage dll 的正确路径。  
+   请确保 InprocServer32 项具有 VSPackage dll 的正确路径。  
   
 ## <a name="see-also"></a>请参阅  
  [VSPackage](../extensibility/internals/vspackages.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e51fdad7d4eaaec306de396c4693d00f0b434b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 453b8b8ef4667b7f049fbd4b62dbdc582c0a84ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198856"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942876"
 ---
 # <a name="how-to-unlock-visual-studio"></a>如何解锁 Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ ms.locfileid: "49198856"
   
  此消息表示你的订阅可能仍将有效，但 Visual Studio 用来保持订阅更新的许可证令牌尚未刷新，且由于以下原因之一已过时：  
   
-1.  没有使用 Visual Studio，或者没有用来延长时间的 Internet 连接。  
+1. 没有使用 Visual Studio，或者没有用来延长时间的 Internet 连接。  
   
-2.  已注销 Visual Studio。  
+2. 已注销 Visual Studio。  
   
- 许可证令牌过期之前，Visual Studio 将首先显示警告消息，要求你重新输入凭据。  
+   许可证令牌过期之前，Visual Studio 将首先显示警告消息，要求你重新输入凭据。  
   
- 如果不重新输入凭据，则令牌将过期。 发生这种情况时，“帐户设置”对话框将显示距令牌完全过期还有多少天。 令牌过期后，需要使用以上另一种方法重新对此帐户或许可证输入凭据，然后才能继续使用 Visual Studio。  
+   如果不重新输入凭据，则令牌将过期。 发生这种情况时，“帐户设置”对话框将显示距令牌完全过期还有多少天。 令牌过期后，需要使用以上另一种方法重新对此帐户或许可证输入凭据，然后才能继续使用 Visual Studio。  
   
 > [!IMPORTANT]
 >  如果在有限或者没有 Internet 访问的环境中延长使用 Visual Studio，应该使用产品密钥解锁 Visual Studio，以避免中断。  

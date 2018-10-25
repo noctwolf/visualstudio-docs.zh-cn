@@ -19,33 +19,33 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4a8777dff45eb257a941716306f099c67e3fcda7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 4ab2eded41d9416f03592c9346a379f8a276366a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42626083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948755"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>演练： 添加功能事件接收器
   功能事件接收器是在 SharePoint 中与功能相关的以下事件之一发生时执行的方法：
 
--   安装一项功能。
+- 安装一项功能。
 
--   激活某个功能。
+- 激活某个功能。
 
--   一项功能将停用。
+- 一项功能将停用。
 
--   删除一项功能。
+- 删除一项功能。
 
- 本演练演示如何将事件接收器添加到 SharePoint 项目中的功能。 它演示了以下任务：
+  本演练演示如何将事件接收器添加到 SharePoint 项目中的功能。 它演示了以下任务：
 
--   使用功能事件接收器创建空项目。
+- 使用功能事件接收器创建空项目。
 
--   处理**FeatureDeactivating**方法。
+- 处理**FeatureDeactivating**方法。
 
--   使用 SharePoint 项目对象模型添加到公告列表的公告。
+- 使用 SharePoint 项目对象模型添加到公告列表的公告。
 
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
 ## <a name="prerequisites"></a>系统必备
  你需要以下组件来完成本演练：

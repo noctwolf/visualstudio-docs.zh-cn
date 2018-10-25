@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0323e6902be9c5b784a17bfc8b48f4f9a1225e41
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39180316"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925202"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 
@@ -27,7 +27,7 @@ ms.locfileid: "39180316"
 创建编码的 UI 测试时，**编码的 UI 测试生成器**会创建受测用户界面的映射，以及所有测试的测试方法、参数和断言。 此外，它还会为每个测试创建一个类文件。
 
 |文件|内容|可编辑？|
-|----------|--------------|---------------|
+|-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[声明部分](#UIMapDesignerFile)<br /><br /> [UIMap 类](#UIMapClass)（自动生成的分部类）<br /><br /> [方法](#UIMapMethods)<br /><br /> [属性](#UIMapProperties)|否|
 |[UIMap.cs](#UIMapCS)|[UIMap 类](#UIMapCS)（分部类）|是|
 |[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 类](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [属性](#CodedUITestProperties)|是|

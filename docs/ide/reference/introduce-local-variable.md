@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d028d89f149a2fe444508d09086f6bec2408889e
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 220a7b7ca4fe9c6167f05ba78877994d9abe57e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510996"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854887"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引入局部变量
 
@@ -36,23 +36,23 @@ ms.locfileid: "39510996"
 
    - C#：
 
-    ![突出显示的代码 C#](media/local-highlight-cs.png)
+       ![突出显示的代码 C#](media/local-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/local-highlight-vb.png)
+       ![突出显示的代码 VB](media/local-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
    ![引入本地预览](media/local-preview-cs.png)
 
-1. 从下拉菜单中选择“引入‘表达式’（的所有匹配项）的本地内容”。
+3. 从下拉菜单中选择“引入‘表达式’（的所有匹配项）的本地内容”。
 
    > [!TIP]
    > 进行选择前，使用预览窗口底部的“预览更改”链接[查看将发生的所有更改](../../ide/preview-changes.md)。
@@ -61,11 +61,11 @@ ms.locfileid: "39510996"
 
    - C#：
 
-      ![“实现接口”的结果 C#](media/local-result-cs.png)
+       ![“实现接口”的结果 C#](media/local-result-cs.png)
 
    - Visual Basic：
 
-      ![“实现接口”的结果 VB](media/local-result-vb.png)
+       ![“实现接口”的结果 VB](media/local-result-vb.png)
 
    > [!NOTE]
    > 可使用“...出现的所有...”菜单选项替换每个选定表达式的实例，而不仅替换特地突出显示的表达式。

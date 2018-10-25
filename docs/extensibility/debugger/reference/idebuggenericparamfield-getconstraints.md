@@ -1,5 +1,5 @@
 ---
-title: IDebugGenericParamField::GetConstraints |Microsoft 文档
+title: IDebugGenericParamField::GetConstraints |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5101aceb0c187996d601d9a3c3adbd746df9ad09
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ab8d543a54c9174795f3b20f32894123030b35c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49947926"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
-检索此泛型参数与关联的约束。  
+检索与此泛型参数的约束。  
   
 ## <a name="syntax"></a>语法  
   
@@ -47,16 +47,16 @@ int GetConstraints(
  [in]约束的数目。  
   
  `ppConstraints`  
- [out]返回一个数组，其中包含与此字段相关的约束。  
+ [out]返回一个数组，其中包含与此字段关联的约束。  
   
  `pcConstraints`  
- [在中，out]中的约束的数`ppConstraints`数组。  
+ [in、 out]中的约束的数目`ppConstraints`数组。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugGenericParamFieldType**公开的对象[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugGenericParamFieldType**对象，它公开[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口。  
   
 ```cpp  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
@@ -151,5 +151,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

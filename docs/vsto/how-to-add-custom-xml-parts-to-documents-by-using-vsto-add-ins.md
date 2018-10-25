@@ -22,25 +22,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 259058569c2c4d2a040272d87e4621b963342ba7
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a559f8c074a7e80ea898f86dc205dec6ad2bb064
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42636230"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826891"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何： 使用 VSTO 外接程序将自定义 XML 部件添加到文档
   通过在 VSTO 外接程序中创建自定义 XML 部件，可以将 XML 数据存储在以下类型的文档中：  
   
--   Microsoft Office Excel 工作簿。  
+- Microsoft Office Excel 工作簿。  
   
--   Microsoft Office Word 文档。  
+- Microsoft Office Word 文档。  
   
--   Microsoft Office PowerPoint 演示文稿。  
+- Microsoft Office PowerPoint 演示文稿。  
   
- 有关详细信息，请参阅[自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。  
+  有关详细信息，请参阅[自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。  
   
- **适用于：** 本主题中的信息适用于 Excel、PowerPoint 和 Word 的应用程序级项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+  **适用于：** 本主题中的信息适用于 Excel、PowerPoint 和 Word 的应用程序级项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
   
 ## <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>向 Excel 工作簿添加自定义 XML 部件  
   

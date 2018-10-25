@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_localbasepointerregisterid |Microsoft 文档'
+title: 'Idiasymbol:: Get_localbasepointerregisterid |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa7796cf4d69066b7c129c00b142c6fc807d99d8
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 7775de97e8bdd37223b772999f30f5808bf1b2b9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463746"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819975"
 ---
 # <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-检索包含基指针到堆栈上的本地变量的寄存器的 ID。 何时使用[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为`SymTagFunction`。  
+检索到堆栈上的本地变量包含基指针寄存器的 ID。 何时使用[SymTagEnum 枚举](../../debugger/debug-interface-access/symtagenum.md)设置为`SymTagFunction`。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_localBasePointerRegisterId (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回基指针到堆栈上的本地变量的寄存器的 ID。  
+ [out]返回基指针保存到堆栈上的本地变量的寄存器的 ID。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
   

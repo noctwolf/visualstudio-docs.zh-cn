@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e5197ba9e1a2fda9cb6a41cfe903bd772db53331
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: 92744b9fdbfa0e383ba061cfe51c80c9b8cd9976
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626960"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49929421"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>运行带/不带调试器的分析工具
 Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU 使用率”和“内存使用率”）可在使用/不使用调试器的情况下运行。 不带调试器的性能工具用于在发布配置上运行，而集成了调试器的工具用于在调试配置上运行。  
@@ -42,60 +42,60 @@ Visual Studio 现提供一些性能工具的选择，其中一些（如“CPU �
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> 在调试期间收集分析数据  
  下面这一节对本地调试进行介绍。 后续章节介绍关于在设备上进行调试和远程调试的信息。  
   
-1.  打开想要调试的项目，然后单击“调试” > “启动调试”（或按工具栏上的“启动”或按 F5）。  
+1. 打开想要调试的项目，然后单击“调试” > “启动调试”（或按工具栏上的“启动”或按 F5）。  
   
-2.  将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。  
+2. 将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。  
   
-3.  运行要为其收集数据的方案。  
+3. 运行要为其收集数据的方案。  
   
-     运行会话时，你可以看到有关事件、进程内存和 CPU 使用率的信息。  
+    运行会话时，你可以看到有关事件、进程内存和 CPU 使用率的信息。  
   
-     下图显示 Visual Studio 2015 Update 1 中的“诊断工具”  窗口：  
+    下图显示 Visual Studio 2015 Update 1 中的“诊断工具”  窗口：  
   
-     ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
-4.  可以使用工具栏上的“选择工具”设置选择是否查看“内存使用率”和/或“CPU 使用率”。 如果运行的是 Visual Studio Enterprise，则可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。  
+4. 可以使用工具栏上的“选择工具”设置选择是否查看“内存使用率”和/或“CPU 使用率”。 如果运行的是 Visual Studio Enterprise，则可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。  
   
-5.  当停止调试时，诊断会话结束。  
+5. 当停止调试时，诊断会话结束。  
   
- 在 Visual Studio 2015 Update 1 中，“诊断工具”  窗口可让你更容易地关注感兴趣的事件。   事件名现在显示时会带有类别前缀（“手势”、“程序输出”、“断点”、“文件”等），因此，你可以快速扫描给定类别的列表或跳过你不关心的类别。  
+   在 Visual Studio 2015 Update 1 中，“诊断工具”  窗口可让你更容易地关注感兴趣的事件。   事件名现在显示时会带有类别前缀（“手势”、“程序输出”、“断点”、“文件”等），因此，你可以快速扫描给定类别的列表或跳过你不关心的类别。  
   
- 窗口中现在有搜索框，因此你可以在事件列表中任何位置查找指定的字符串。 例如，下图显示搜索字符串“install”的结果，其匹配四个事件：  
+   窗口中现在有搜索框，因此你可以在事件列表中任何位置查找指定的字符串。 例如，下图显示搜索字符串“install”的结果，其匹配四个事件：  
   
- ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+   ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
- 你也可以在该窗口中的视图内和视图外筛选事件。 在“筛选”  下拉列表中，你可以勾选或取消勾选指定事件类别： 类别名称与前缀名称相同。  
+   你也可以在该窗口中的视图内和视图外筛选事件。 在“筛选”  下拉列表中，你可以勾选或取消勾选指定事件类别： 类别名称与前缀名称相同。  
   
- ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+   ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
- 有关详细信息，请参阅 [搜索和筛选“诊断工具”窗口中的“事件”选项卡](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)。  
+   有关详细信息，请参阅 [搜索和筛选“诊断工具”窗口中的“事件”选项卡](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)。  
   
 ## <a name="collect-profiling-data-without-debugging"></a>在不进行调试的情况下收集分析数据  
  一些分析工具需要管理员权限才能运行。 启动诊断会话时，你可以管理员身份启动 Visual Studio，也可以管理员身份运行工具。  
   
-1.  在 Visual Studio 中打开项目。  
+1. 在 Visual Studio 中打开项目。  
   
-2.  在“调试”菜单上，选择“性能探查器”（快捷键：Alt+F2）。  
+2. 在“调试”菜单上，选择“性能探查器”（快捷键：Alt+F2）。  
   
-3.  在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# UWP 应用，选项设置如下：  
+3. 在诊断启动页上，选择要在会话中运行的一个或多个工具。 将仅显示适用于项目类型、操作系统和编程语言的工具。 选择诊断工具时，将禁用对不能在同一诊断会话中运行的工具的选择。 对于 C# UWP 应用，选项设置如下：  
   
-     ![选择诊断工具](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+    ![选择诊断工具](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
-4.  若要启动诊断会话，请单击“开始”。  
+4. 若要启动诊断会话，请单击“开始”。  
   
-5.  运行要为其收集数据的方案。  
+5. 运行要为其收集数据的方案。  
   
-     在运行会话时，一些工具将在诊断工具启动页上显示实时数据图。  
+    在运行会话时，一些工具将在诊断工具启动页上显示实时数据图。  
   
-     ![在“性能和诊断”页上收集数据](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+    ![在“性能和诊断”页上收集数据](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
-6.  若要结束诊断会话，请单击“停止收集”。  
+6. 若要结束诊断会话，请单击“停止收集”。  
   
- 停止在诊断会话中收集数据后，将分析数据，并在“诊断”页中显示报告。  
+   停止在诊断会话中收集数据后，将分析数据，并在“诊断”页中显示报告。  
   
- 还可从诊断工具启动页上的最近打开列表打开已保存的 .diagnosis 会话文件。  
+   还可从诊断工具启动页上的最近打开列表打开已保存的 .diagnosis 会话文件。  
   
- ![打开保存的诊断会话文件](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+   ![打开保存的诊断会话文件](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>分析报告  
  ![诊断工具报告](../profiling/media/diag_report.png "DIAG_Report")  

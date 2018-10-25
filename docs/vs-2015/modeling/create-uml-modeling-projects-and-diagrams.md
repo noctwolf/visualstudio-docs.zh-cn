@@ -28,12 +28,12 @@ caps.latest.revision: 50
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 69027b99d1c7db25f1d01e91d8e6d5c05141a2d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c5b7f053a2a63830e80247eeeeadcf34e2a6a351
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250479"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926093"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>创建 UML 建模项目和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,29 +50,29 @@ UML 模型的有助于你了解、讨论和设计软件系统。 Visual Studio �
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>若要创建关系图并将其添加到项目中  
   
-1.  上**体系结构**菜单中，选择**新建 UML 或层关系图**。  
+1. 上**体系结构**菜单中，选择**新建 UML 或层关系图**。  
   
-2.  在中**添加新关系图**对话框框中，单击所需的建模图的类型。  
+2. 在中**添加新关系图**对话框框中，单击所需的建模图的类型。  
   
-     ![添加新关系图对话框](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
+    ![添加新关系图对话框](../modeling/media/uml-adddiagram.png "UML_AddDiagram")  
   
-3.  为新关系图键入名称。  
+3. 为新关系图键入名称。  
   
-4.  在中**将添加到建模项目**框：  
+4. 在中**将添加到建模项目**框：  
   
-    -   在解决方案中，选择已存在一个建模项目，然后单击**确定**。  
+   - 在解决方案中，选择已存在一个建模项目，然后单击**确定**。  
   
      \- 或 -  
   
-    1.  选择**创建一个新建模项目**，然后单击**确定**。  
+   1.  选择**创建一个新建模项目**，然后单击**确定**。  
   
-    2.  在中**创建新的建模项目**对话框中，键入名称和新项目的位置，然后单击**确定**。  
+   2.  在中**创建新的建模项目**对话框中，键入名称和新项目的位置，然后单击**确定**。  
   
-         ![创建新的建模项目对话框](../modeling/media/uml-createmodel.png "UML_CreateModel")  
+        ![创建新的建模项目对话框](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
-         如果你的解决方案已打开，新的项目被添加到解决方案中。 如果你没有打开解决方案，你可以为新解决方案键入名称。  
+        如果你的解决方案已打开，新的项目被添加到解决方案中。 如果你没有打开解决方案，你可以为新解决方案键入名称。  
   
- 如果你已经有一个建模项目，你还可以使用以下过程。  
+   如果你已经有一个建模项目，你还可以使用以下过程。  
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>若要将关系图添加到现有建模项目中  
   

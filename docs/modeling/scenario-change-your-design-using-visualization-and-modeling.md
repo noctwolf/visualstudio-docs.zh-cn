@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a79ddd1644103d3e60f42c909706f2a3d771e9
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860506"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942473"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -82,7 +82,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 下表描述了这些工具在软件开发生命周期的各个阶段中可扮演的角色：
 
 ||**用户需求建模**|**业务流程建模**|**系统体系结构和设计**|**代码可视化和浏览**|**确认**|
-|------|------------------------------------|-----------------------------------|--------------------------------------|------------------------------------------|----------------------|
+|------|-|-|-|-|-|
 |域特定语言 (DSL) 图|是|是|是|||
 |依赖项关系图，层验证|||是|是|是|
 |代码图|||是|是|是|
@@ -145,7 +145,7 @@ Lucerne 使用关系图执行以下任务：
 Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于此更改将对系统的其他部件造成的影响的程度。 为了帮助他们了解这一点，Dinner Now 的一位开发人员根据现有代码创建了以下代码图和关系图：
 
 |**代码图或关系图**|**显示**|
-|------------------------|---------------|
+|-|-|
 |*代码图*<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)<br />- [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)|代码中的依赖关系以及其他关系。<br /><br /> 例如，Dinner Now 首先会查看程序集代码图，大致了解这些程序集及其依赖关系。 他们可以深入探讨代码图，浏览这些程序集中的命名空间和类。<br /><br /> Dinner Now 还可以创建代码图来浏览特定区域和代码中其他类型的关系。 他们借助解决方案资源管理器来帮助查找和选择感兴趣的区域和关系。|
 |*基于代码的类图*<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|代码中的现有类|
 
@@ -166,14 +166,14 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
  要描述对系统其他部分（如组件或交互）进行的更改，团队可以在白板上绘制这些元素。 这两个团队还可以在 Visual Studio 中绘制以下关系图，以捕获、管理和了解详细信息：
 
 |**关系图**|**描述**|
-|------------------|-------------------|
+|-|-|
 |*基于代码的类图*<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|代码中的现有类。|
 
 ### <a name="ValidatingCode"></a> 使代码与设计保持一致
  Dinner Now 必须确保更新的代码与设计保持一致。 他们创建依赖项关系图的功能层的描述系统中，指定到了这些层，并将解决方案项目之间存在的依赖关系。
 
 |**关系图**|**描述**|
-|-----------------|-------------------|
+|-|-|
 |*依赖项关系图*<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|代码的逻辑体系结构。<br /><br /> 整理并映射抽象组名为 Visual Studio 解决方案中的项目到依赖项关系图*层*。 这些层可标识这些项目在系统中执行的角色、任务或功能。<br /><br /> 层关系图可用于描述系统的预期设计并对该设计验证相关代码。<br /><br /> 要创建层，请从解决方案资源管理器、代码图、类视图和对象浏览器中拖动项。 要绘制新层，请使用工具箱或右键单击关系图图面。<br /><br /> 要查看现有依赖关系，请右键单击层关系图图面，然后单击 “生成依赖项”。 要指定预期的依赖关系，请绘制新的依赖关系。|
 
  例如，以下依赖项关系图描述了层与每个层相关联的项目数之间的依赖关系：
@@ -312,7 +312,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
      要快速了解编译的代码，请创建一个空白代码图，然后将程序集文件或二进制文件拖动到该代码图图面上。
 
-- 要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅[映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)。
+- 要了解特定代码或解决方案项，请使用解决方案资源管理器来选择要可视化的项和关系。 然后，你可以生成新的代码图或向现有代码图添加选定项。 请参阅 [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md)。
 
 - 为了帮助你浏览代码图，请重新排列布局，使其适合你要执行的各类任务。
 
@@ -330,7 +330,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系
 
 |**关系图**|**描述**|
-|-----------------|-------------------|
+|-|-|
 |依赖项关系图|系统的逻辑体系结构。 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 若要帮助您识别现有 dependencys 或预期的 dependencys、 创建代码映射和相关的项进行分组。 若要创建依赖项关系图，请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)|
 |类图（基于代码）|针对某个特定项目的代码中的现有类。<br /><br /> 要可视化和修改代码中的现有类，请使用类设计器。<br /><br /> 请参阅 [How to: Add Class Diagrams to Projects (Class Designer)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)。|
 
@@ -369,11 +369,11 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - *“关联”* ，指示两个分类器之间的某种关系。
 
-    - *“聚合”* ，它是指示两个分类器之间的共享所有权的关联。
+  - *“聚合”* ，它是指示两个分类器之间的共享所有权的关联。
 
-    - *“复合”* ，它是指示分类器之间的整体-部分关系的关联。
+  - *“复合”* ，它是指示分类器之间的整体-部分关系的关联。
 
-     要显示聚合或复合，请设置关联上的“聚合”  属性。 “共享” 可显示聚合，“复合”  可显示复合。
+    要显示聚合或复合，请设置关联上的“聚合”  属性。 “共享” 可显示聚合，“复合”  可显示复合。
 
 - *“依赖关系”* ，指示更改一个分类器的定义可能会更改另一个分类器的定义。
 
@@ -399,7 +399,7 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系
 
 |**关系图**|**说明**|
-|-----------------|---------------------|
+|-|-|
 |依赖项关系图|定义与类相关的系统的逻辑体系结构。<br /><br /> 使用依赖项验证以确保代码保持与设计保持一致。<br /><br /> 请参阅：<br /><br /> - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图： 参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图： 准则](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|
 |代码图|可视化现有代码中的组织和关系。<br /><br /> 要标识类、类的关系和类的方法，请创建一个显示这些元素的代码图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)|
 
@@ -440,13 +440,13 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
      层上的数字显示链接到该层的项目数。 这些项目可以是命名空间、项目、类、方法等。 在解释层上的项目数时，请记住以下事项：
 
-    - 如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。
+  - 如果某个层链接到一个包含其他项目的项目，但该层未直接链接到其他项目，则该数字仅包括链接的项目。 但是，在层验证过程中其他项目包括在分析范围内。
 
-         例如，如果一个层链接到单个命名空间，则链接的项目数是 1，即使该命名空间包含类也是如此。 如果该层还链接到命名空间中的每个类，则该数字将包括链接的类。
+       例如，如果一个层链接到单个命名空间，则链接的项目数是 1，即使该命名空间包含类也是如此。 如果该层还链接到命名空间中的每个类，则该数字将包括链接的类。
 
-    - 如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。
+  - 如果一个层包含链接到项目的其他层，则容器层也链接到这些项目，即使容器层上的数字不包括这些项目。
 
-     若要查看链接到某个层的项目，右键单击依赖项，然后依次**查看链接**以打开**层资源管理器**。
+    若要查看链接到某个层的项目，右键单击依赖项，然后依次**查看链接**以打开**层资源管理器**。
 
 - *“依赖关系”* ，指示某个层可以使用另一个层中的功能，但反过来行不通。 *“双向依赖关系”* ，指示某个层可以使用另一个层中的功能，反之亦然。
 
@@ -473,14 +473,14 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 #### <a name="relationship-to-other-diagrams"></a>与其他关系图的关系
 
 |**关系图**|**说明**|
-|-----------------|---------------------|
+|-|-|
 |代码图|可视化现有代码中的组织和关系。<br /><br /> 要创建层，请生成一个代码图，然后将该代码图上的项作为可能的层进行分组。 将组从该映射拖到依赖项关系图。<br /><br /> 请参阅：<br /><br /> - [映射解决方案之间的依赖项](../modeling/map-dependencies-across-your-solutions.md)<br />- [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)|
 
 ## <a name="external-resources"></a>外部资源
 
 |**类别**|**Links**|
-|------------------|---------------|
-|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|-|-|
+|**论坛**|- [Visual Studio 可视化和建模工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|
 
 ## <a name="see-also"></a>请参阅
 

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 815186959d4a8cd1daea46c69bda976eb4483c1f
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 0389665349ae9c39a0f820bc047af6cc4db2b683
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282581"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867528"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>在 Windows Vista 上的 ClickOnce 部署
 
@@ -32,25 +32,25 @@ ms.locfileid: "44282581"
 
 Visual Studio 以便生成清单中提供以下选项：  
   
--   使用嵌入式的清单。 在应用程序的可执行文件中嵌入 UAC 数据并以普通用户身份运行。  
+- 使用嵌入式的清单。 在应用程序的可执行文件中嵌入 UAC 数据并以普通用户身份运行。  
   
-     这是默认设置 （除非使用 ClickOnce）。 此设置在 Windows Vista 上支持通常在 Visual Studio 上进行操作的方式，与内部和外部的生成清单使用`AsInvoker`。  
+   这是默认设置 （除非使用 ClickOnce）。 此设置在 Windows Vista 上支持通常在 Visual Studio 上进行操作的方式，与内部和外部的生成清单使用`AsInvoker`。  
   
--   使用外部清单。 使用生成外部清单*app.manifest*。  
+- 使用外部清单。 使用生成外部清单*app.manifest*。  
   
-     这将通过使用中的信息生成仅在外部清单*app.manifest*。 通过使用 ClickOnce 或免注册 COM 发布应用程序，在 Visual Studio 添加*app.manifest*到项目，然后添加此选项。  
+   这将通过使用中的信息生成仅在外部清单*app.manifest*。 通过使用 ClickOnce 或免注册 COM 发布应用程序，在 Visual Studio 添加*app.manifest*到项目，然后添加此选项。  
   
--   使用没有清单。 创建不带清单的应用程序。  
+- 使用没有清单。 创建不带清单的应用程序。  
   
-     这种方法是也称为*虚拟化*。 使用此选项与现有的应用程序从 Visual Studio 的早期版本的兼容性。  
+   这种方法是也称为*虚拟化*。 使用此选项与现有的应用程序从 Visual Studio 的早期版本的兼容性。  
   
- 新的属性可用于**应用程序**（对于 Visual C# 项目只能） 在项目设计器页以 MSBuild 项目文件格式。  
+  新的属性可用于**应用程序**（对于 Visual C# 项目只能） 在项目设计器页以 MSBuild 项目文件格式。  
   
- 在 Visual Studio IDE 中配置 UAC 清单生成的方法不同，具体取决于项目类型 （Visual C# 或 Visual Basic）。  
+  在 Visual Studio IDE 中配置 UAC 清单生成的方法不同，具体取决于项目类型 （Visual C# 或 Visual Basic）。  
   
-   * 有关配置的清单生成的 Visual C# 项目的信息，请参阅[应用程序页，项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)。  
+  * 有关配置的清单生成的 Visual C# 项目的信息，请参阅[应用程序页，项目设计器 (C#)](../ide/reference/application-page-project-designer-csharp.md)。  
   
-   * 有关配置的清单生成的 Visual Basic 项目的信息，请参阅[应用程序页，项目设计器 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
+  * 有关配置的清单生成的 Visual Basic 项目的信息，请参阅[应用程序页，项目设计器 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)   

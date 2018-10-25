@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::findInlineeLinesByAddr |Microsoft 文档
+title: IDiaSymbol::findInlineeLinesByAddr |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b0470bc77be8089b9b66949bdb9a0161317d3d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 79be504d780efb7ea661f0362f20db4bcd0c780b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31463297"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49904942"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-检索一个枚举，允许客户端循环访问位于内联，直接或间接，该符号在指定的地址范围内的所有函数的行号信息。  
+检索一个枚举，允许客户端进行循环访问，将内联，直接或间接指定的地址范围内此符号中的所有函数的行号信息。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,13 +38,13 @@ HRESULT findInlineeLinesByAddr (
  [in]指定地址的部分组件。  
   
  `offset`  
- [in]指定地址的偏移量的组件。  
+ [in]指定地址的偏移量的部分。  
   
  `length`  
- [in]指定的地址范围中的字节，以覆盖与此查询数。  
+ [in]中的字节数，以覆盖与此查询指定地址范围。  
   
  `ppResult`  
- [out]保存`IDiaEnumLineNumbers`对象，其中包含检索的行号的列表。  
+ [out]保存`IDiaEnumLineNumbers`对象，其中包含检索到的行号的列表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  

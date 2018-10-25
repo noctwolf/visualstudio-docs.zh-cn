@@ -23,12 +23,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f49a6f55cdccc82214c20c4b489d83bbd0199d8a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: cb8856f250810988b73058562402c8d1fe8c644f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227833"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49902472"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>选项，文本编辑器，基本 (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,28 +42,28 @@ ms.locfileid: "49227833"
  **整齐排列代码（重新设置格式）**  
  文本编辑器会适当地重新设置代码格式。 选定此选项后，代码编辑器会：  
   
--   将代码与正确的制表符位置对齐  
+- 将代码与正确的制表符位置对齐  
   
--   重新确定关键字、变量和对象的大小写，以符合正确的形式  
+- 重新确定关键字、变量和对象的大小写，以符合正确的形式  
   
--   向 `If...Then` 语句添加缺少的 `Then`  
+- 向 `If...Then` 语句添加缺少的 `Then`  
   
--   在函数调用中添加括号  
+- 在函数调用中添加括号  
   
--   在字符串中添加缺少的结束引号  
+- 在字符串中添加缺少的结束引号  
   
--   重新设置指数表示法格式  
+- 重新设置指数表示法格式  
   
--   重新设置日期格式  
+- 重新设置日期格式  
   
- **启用大纲显示模式**  
- 在代码编辑器中打开文件时，可在大纲显示模式下查看该文档。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。 选定此选项后，打开文件即会激活大纲显示功能。  
+  **启用大纲显示模式**  
+  在代码编辑器中打开文件时，可在大纲显示模式下查看该文档。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。 选定此选项后，打开文件即会激活大纲显示功能。  
   
- **自动插入 Interface 和 MustOverride 成员**  
- 为类提交 `Implements` 语句或 `Inherits` 语句时，文本编辑器分别为必须实现或必须替代的成员插入原型。  
+  **自动插入 Interface 和 MustOverride 成员**  
+  为类提交 `Implements` 语句或 `Inherits` 语句时，文本编辑器分别为必须实现或必须替代的成员插入原型。  
   
- **显示过程行分隔符**  
- 文本编辑器指示过程的可视范围。 在项目的 .vb 源文件中，在下表列出的位置绘制行：  
+  **显示过程行分隔符**  
+  文本编辑器指示过程的可视范围。 在项目的 .vb 源文件中，在下表列出的位置绘制行：  
   
 |.vb 源文件中的位置|行位置示例|  
 |---------------------------------|------------------------------|  

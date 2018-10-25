@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6c05befbfa59063956d0df37a7aa57d955503ec5
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 806e0984ce0309ff071e595725615034a7d42f09
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882517"
 ---
 # <a name="accessing-models-from-text-templates"></a>从文本模板访问模型
 通过使用文本模板，可以创建报表文件、 源代码文件和其他基于特定于域的语言模型的文本文件。 有关文本模板的基本信息，请参阅[代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 文本模板时你正在调试你的 DSL 中，将在实验模式下工作，还将具有在其部署 DSL 的计算机上工作。
@@ -26,11 +26,11 @@ ms.locfileid: "47860337"
 
  若要从文本模板访问模型：
 
--   设置为 template 指令的继承属性<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 这提供对应用商店的访问。
+- 设置为 template 指令的继承属性<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>。 这提供对应用商店的访问。
 
--   指定你想要访问 DSL 的指令处理器。 这将加载用于 DSL 的程序集，以便可以在文本模板的代码中使用其域类、 属性和关系。 它还会加载您指定的模型文件。
+- 指定你想要访问 DSL 的指令处理器。 这将加载用于 DSL 的程序集，以便可以在文本模板的代码中使用其域类、 属性和关系。 它还会加载您指定的模型文件。
 
- 一个`.tt`时从 DSL 最小语言模板创建新的 Visual Studio 解决方案中调试项目中创建文件类似于下面的示例。
+  一个`.tt`时从 DSL 最小语言模板创建新的 Visual Studio 解决方案中调试项目中创建文件类似于下面的示例。
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -50,22 +50,21 @@ Here is a list of elements in the model:
 <#
   }
 #>
-
 ```
 
  请注意，此模板有关的以下几点：
 
--   域类、 属性和在 DSL 定义中定义的关系，可以使用该模板。
+- 域类、 属性和在 DSL 定义中定义的关系，可以使用该模板。
 
--   加载模板中指定的模型文件`requires`属性。
+- 加载模板中指定的模型文件`requires`属性。
 
--   中的属性`this`包含根元素。 在这里，你的代码可以导航到模型的其他元素。 属性的名称通常是与你的 DSL 的根域类相同。 在此示例中，设为 `this.ExampleModel`。
+- 中的属性`this`包含根元素。 在这里，你的代码可以导航到模型的其他元素。 属性的名称通常是与你的 DSL 的根域类相同。 在此示例中，设为 `this.ExampleModel`。
 
--   尽管编写的代码片段所用的语言为 C#，可以生成任何类型的文本。 或者可以在编写代码[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]属性添加`language="VB"`到`template`指令。
+- 尽管编写的代码片段所用的语言为 C#，可以生成任何类型的文本。 或者可以在编写代码[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]属性添加`language="VB"`到`template`指令。
 
--   若要调试该模板，添加`debug="true"`到`template`指令。 如果发生异常，将在 Visual Studio 的另一个实例中打开该模板。 如果你想要在代码中的特定点在调试器中中断，insert 语句 `System.Diagnostics.Debugger.Break();`
+- 若要调试该模板，添加`debug="true"`到`template`指令。 如果发生异常，将在 Visual Studio 的另一个实例中打开该模板。 如果你想要在代码中的特定点在调试器中中断，insert 语句 `System.Diagnostics.Debugger.Break();`
 
-     有关详细信息，请参阅[调试 T4 文本模板](../modeling/debugging-a-t4-text-template.md)。
+   有关详细信息，请参阅[调试 T4 文本模板](../modeling/debugging-a-t4-text-template.md)。
 
 ## <a name="about-the-dsl-directive-processor"></a>有关 DSL 的指令处理器
  该模板可以使用 DSL 定义中定义的域类。 这使通常会显示该模板的起点附近的指令。 在上一示例中，它是以下。
@@ -87,16 +86,15 @@ Here is a list of elements in the model:
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
-
 ```
 
  请注意：
 
-1.  `filename`和`validation`参数分隔与";"，且必须具有其他分隔符或空格。
+1. `filename`和`validation`参数分隔与";"，且必须具有其他分隔符或空格。
 
-2.  验证类别列表确定将执行的验证方法。 应使用分隔多个类别"&#124;"，且必须具有其他分隔符或空格。
+2. 验证类别列表确定将执行的验证方法。 应使用分隔多个类别"&#124;"，且必须具有其他分隔符或空格。
 
- 如果找到错误，则它将在错误窗口中，报告和结果文件将包含一条错误消息。
+   如果找到错误，则它将在错误窗口中，报告和结果文件将包含一条错误消息。
 
 ## <a name="Multiple"></a> 从文本模板访问多个模型
 
@@ -173,7 +171,6 @@ For Each element As ExampleElement In Me.WorkModel.Elements
    // Here you generate more content derived from the element.
   }
 #>
-
 ```
 
  `LoopSplitter.tt` 调用`LoopTemplate.t4`，然后将生成的文件拆分为其段和。 请注意，此模板没有已建模的模板，因为它不会读取模型。
@@ -215,5 +212,4 @@ For Each element As ExampleElement In Me.WorkModel.Elements
      File.WriteAllText(Path.Combine(dir, parts[0] + ".txt"), parts[1]);
   }
 #>
-
 ```

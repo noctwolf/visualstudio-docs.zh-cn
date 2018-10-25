@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::Attach |Microsoft 文档
+title: IDebugProcess2::Attach |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56f14b399a904c2584e81c2b6c8f344654b69a18
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 587104668449fe9c2ec0dd36fe20e76fec6be6fa
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117769"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837498"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 将会话调试管理器 (SDM) 附加到进程。  
@@ -47,31 +47,31 @@ int Attach(
   
 #### <a name="parameters"></a>参数  
  `pCallback`  
- [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)调试事件通知使用的对象。  
+ [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用于调试事件通知的对象。  
   
  `rgguidSpecificEngines`  
- [in]可用于调试在进程中运行的程序的调试引擎的 Guid 数组。 此参数可以为 null 值。 有关详细信息，请参阅备注。  
+ [in]Guid 的数组的调试引擎以用于调试的进程中运行的程序。 此参数可以为 null 值。 有关详细信息，请参阅备注。  
   
  `celtSpecificEngines`  
- [in]调试数引擎中`rgguidSpecificEngines`数组和大小`rghrEngineAttach`数组。  
+ [in]引擎中，调试数`rgguidSpecificEngines`数组和大小`rghrEngineAttach`数组。  
   
  `rghrEngineAttach`  
- [在中，out]HRESULT 代码的调试引擎返回的数组。 此数组的大小以指定`celtSpecificEngines`参数。 每个代码是通常`S_OK`或`S_ATTACH_DEFERRED`。 后者，则指示 DE 当前连接到任何节目。  
+ [in、 out]HRESULT 代码的调试引擎返回的数组。 此数组的大小指定为`celtSpecificEngines`参数。 每个代码通常是`S_OK`或`S_ATTACH_DEFERRED`。 后者表示 DE 当前附加到任何程序。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示其他可能的值。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 下表显示了其他可能的值。  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
-|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的进程已附加到调试器中。|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加过程中发生了安全冲突。|  
-|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面进程无法附加到调试器。|  
+|`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的进程已附加到调试器。|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|在附加过程中发生了安全冲突。|  
+|`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面的过程不能附加到调试器。|  
   
 ## <a name="remarks"></a>备注  
- 附加到进程将 SDM 附加到运行中指定的调试引擎 (DE) 可以调试该进程中的所有程序`rgguidSpecificEngines`数组。 设置`rgguidSpecificEngines`为 null 的参数值，或将包括`GUID_NULL`数组中要将附加到进程中的所有程序。  
+ 附加到进程将 SDM 附加到可调试的调试引擎 (DE) 中指定该进程中运行的所有程序`rgguidSpecificEngines`数组。 设置`rgguidSpecificEngines`参数为 null 值或包含`GUID_NULL`数组中要将附加到进程中的所有程序。  
   
- 在进程中发生的所有调试事件都发送到给定[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象。 这`IDebugEventCallback2`SDM 调用此方法时提供对象。  
+ 在过程中发生的所有调试事件都发送到给定[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)对象。 这`IDebugEventCallback2`SDM 调用此方法时提供对象。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

@@ -14,32 +14,32 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d86d42ce7e345a30c56390bede6957dff8bcd67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 8b0b7a5949ab8fe624a087a1e024367f896ddb99
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205059"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884883"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>教程 2：创建计时数学测验
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教程中，您将构建一个测验，在该测验中，测验对象必须在指定时间内回答四道随机算术题。 您将学习如何：  
   
--   使用 `Random` 类生成随机数。  
+- 使用 `Random` 类生成随机数。  
   
--   使用“计时器”控件触发事件，使之在特定时间发生。  
+- 使用“计时器”控件触发事件，使之在特定时间发生。  
   
--   使用 `if else` 语句控制程序流。  
+- 使用 `if else` 语句控制程序流。  
   
--   使用代码执行基本算术运算。  
+- 使用代码执行基本算术运算。  
   
- 当您完成时，您的测验看上去与下图类似，但数字有所不同。  
+  当您完成时，您的测验看上去与下图类似，但数字有所不同。  
   
- ![包含四个问题的数学测验](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
-您在本教程中创建的测验  
+  ![包含四个问题的数学测验](../ide/media/express-finishedquiz.png "Express_FinishedQuiz")  
+  您在本教程中创建的测验  
   
- 若要下载测验的完整版本，请参阅 [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)（数学测验教程的完整示例）。  
+  若要下载测验的完整版本，请参阅 [Complete Math Quiz tutorial sample](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c)（数学测验教程的完整示例）。  
   
 > [!NOTE]
 >  本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。  

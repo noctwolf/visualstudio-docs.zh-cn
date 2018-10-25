@@ -13,12 +13,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 9188cf2039249f5207685217719bc41d25abd0a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d8a0b09bf2e67813548865b6ed56fee0b0170cc5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281744"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890161"
 ---
 # <a name="customizing-code-coverage-analysis"></a>自定义代码覆盖率分析
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,40 +27,40 @@ ms.locfileid: "49281744"
   
  在自定义代码覆盖率行为之前，请考虑某些替代项：  
   
--   *我希望代码覆盖率结果中不包含测试代码，只包含应用代码。*  
+- *我希望代码覆盖率结果中不包含测试代码，只包含应用代码。*  
   
-     将 `ExcludeFromCodeCoverage Attribute` 添加到测试类中。  
+   将 `ExcludeFromCodeCoverage Attribute` 添加到测试类中。  
   
--   *我希望包含属于我的解决方案的程序集。*  
+- *我希望包含属于我的解决方案的程序集。*  
   
-     获取这些程序集的 .pdb 文件并将这些文件复制到与程序集 .dll 文件相同的文件夹中。  
+   获取这些程序集的 .pdb 文件并将这些文件复制到与程序集 .dll 文件相同的文件夹中。  
   
- 若要自定义代码覆盖率行为，请复制[本主题结尾的示例](#sample)，然后使用文件扩展名 .runsettings 将其添加到你的解决方案中。 根据你自己的需求编辑示例，然后在“测试”菜单上，依次选择“测试设置”和“选择测试设置文件”。 本主题的其余部分更详细地介绍了此过程。  
+  若要自定义代码覆盖率行为，请复制[本主题结尾的示例](#sample)，然后使用文件扩展名 .runsettings 将其添加到你的解决方案中。 根据你自己的需求编辑示例，然后在“测试”菜单上，依次选择“测试设置”和“选择测试设置文件”。 本主题的其余部分更详细地介绍了此过程。  
   
 ## <a name="the-runsettings-file"></a>.runsettings 文件  
  高级代码覆盖率设置在 .runsettings 文件中指定。 这是由单元测试工具使用的配置文件。 建议复制[本主题结尾的示例](#sample)，然后根据你自己的需求编辑示例。  
   
--   *我在 Visual Studio 2010 中使用的 .testsettings 文件经历了什么？*  
+- *我在 Visual Studio 2010 中使用的 .testsettings 文件经历了什么？*  
   
-     在 Visual Studio 2010 中，.testsettings 文件仅适用于基于 MSTest 框架的单元测试。 在 Visual Studio 2012 中，测试工具不仅适用于 MSTest，还适用于类似 NUnit 和 xUnit.net 的其他框架。 .testsettings 文件不适用于这些框架。 .runsettings 文件旨在以一种适用于所有测试框架的方式自定义测试工具。  
+   在 Visual Studio 2010 中，.testsettings 文件仅适用于基于 MSTest 框架的单元测试。 在 Visual Studio 2012 中，测试工具不仅适用于 MSTest，还适用于类似 NUnit 和 xUnit.net 的其他框架。 .testsettings 文件不适用于这些框架。 .runsettings 文件旨在以一种适用于所有测试框架的方式自定义测试工具。  
   
- 若要自定义代码覆盖率，你需要将 .runsettings 文件添加到解决方案中：  
+  若要自定义代码覆盖率，你需要将 .runsettings 文件添加到解决方案中：  
   
-1.  将 .xml 文件添加为扩展名为 `.runsettings` 的解决方案项：  
+1. 将 .xml 文件添加为扩展名为 `.runsettings` 的解决方案项：  
   
-     在“解决方案资源管理器”中，从解决方案的快捷菜单中，依次选择“添加”、“新建项”和“XML 文件”。 保存名称以 `CodeCoverage.runsettings` 等结尾的文件  
+    在“解决方案资源管理器”中，从解决方案的快捷菜单中，依次选择“添加”、“新建项”和“XML 文件”。 保存名称以 `CodeCoverage.runsettings` 等结尾的文件  
   
-2.  添加本主题结尾的示例中给定的内容，然后按你的需要自定义它，如以下章节所述。  
+2. 添加本主题结尾的示例中给定的内容，然后按你的需要自定义它，如以下章节所述。  
   
-3.  在“测试”菜单上，依次选择“测试设置”、“选择测试设置文件”和文件。  
+3. 在“测试”菜单上，依次选择“测试设置”、“选择测试设置文件”和文件。  
   
-4.  现在，当你运行“分析代码覆盖率”时，此 `.runsettings` 文件将会控制其行为。 不要忘记你必须再次运行代码覆盖率：在运行测试或更新代码时，你之前的覆盖率结果和代码着色不会自动更新。  
+4. 现在，当你运行“分析代码覆盖率”时，此 `.runsettings` 文件将会控制其行为。 不要忘记你必须再次运行代码覆盖率：在运行测试或更新代码时，你之前的覆盖率结果和代码着色不会自动更新。  
   
-5.  若要禁用和启用自定义设置，请依次选择“测试”和“测试设置”菜单，然后取消选择或选择文件。  
+5. 若要禁用和启用自定义设置，请依次选择“测试”和“测试设置”菜单，然后取消选择或选择文件。  
   
- ![包含自定义设置文件的“测试设置”菜单](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
+   ![包含自定义设置文件的“测试设置”菜单](../test/media/codecoverage-settingsfile.png "CodeCoverage-settingsFile")  
   
- 可在同一 .runsettings 文件中配置单元测试的其他方面。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。  
+   可在同一 .runsettings 文件中配置单元测试的其他方面。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。  
   
 ### <a name="specifying-symbol-search-paths"></a>指定符号搜索路径  
  代码覆盖率需要符号（.pdb 文件）才能确保程序集存在。 对于解决方案生成的程序集，符号文件通常与二进制文件一起出现，且代码覆盖率将自动工作。 但在某些情况下，你可能需要在你的代码覆盖率分析中包含引用的程序集。 在这种情况下，.pdb 文件可能不会与二进制文件相邻，但你可以在 .runsettings 文件中指定符号搜索路径。  
@@ -106,21 +106,21 @@ ms.locfileid: "49281744"
 ### <a name="regular-expressions"></a>正则表达式  
  包括和排除节点使用正则表达式。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。 正则表达式与通配符不同。 具体而言：  
   
-1.  **\.\*** 匹配任何字符的字符串  
+1. **\.\\*** 匹配任何字符的字符串  
   
-2.  **\\.** 与句点“.”匹配  
+2. **\\.** 与句点“.”匹配  
   
-3.  **\\(   \\)** 与括号“(  )”匹配  
+3. **\\(   \\)** 与括号“(  )”匹配  
   
-4.  **\\\\** 与文件路径分隔符“\\”匹配  
+4. **\\\\** 与文件路径分隔符“\\”匹配  
   
-5.  **^** 与字符串的开头匹配  
+5. **^** 与字符串的开头匹配  
   
-6.  **$** 与字符串的结尾匹配  
+6. **$** 与字符串的结尾匹配  
   
- 所有匹配项都不区分大小写。  
+   所有匹配项都不区分大小写。  
   
- 例如：  
+   例如：  
   
 ```xml  
 <ModulePaths>  
@@ -144,25 +144,25 @@ ms.locfileid: "49281744"
 ### <a name="other-ways-to-include-or-exclude-elements"></a>包括或排除元素的其他方法  
  有关示例，请参阅[本主题结尾的示例](#sample)。  
   
--   `ModulePath` - 按程序集文件路径指定的程序集。  
+- `ModulePath` - 按程序集文件路径指定的程序集。  
   
--   `CompanyName` - 按“公司”特性匹配程序集。  
+- `CompanyName` - 按“公司”特性匹配程序集。  
   
--   `PublicKeyToken` - 按公钥标记匹配签名程序集。 例如，若要与所有 Visual Studio 组件和扩展匹配，请使用 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`。  
+- `PublicKeyToken` - 按公钥标记匹配签名程序集。 例如，若要与所有 Visual Studio 组件和扩展匹配，请使用 `<PublicKeyToken>^B03F5F7F11D50A3A$</PublicKeyToken>`。  
   
--   `Source` - 按在其中定义元素的源文件的路径名称匹配元素。  
+- `Source` - 按在其中定义元素的源文件的路径名称匹配元素。  
   
--   `Attribute` - 与特定属性附加到的元素匹配。 指定特性的全名，包括名称结尾的“Attribute”。  
+- `Attribute` - 与特定属性附加到的元素匹配。 指定特性的全名，包括名称结尾的“Attribute”。  
   
--   `Function` - 按完全限定名匹配过程、函数或方法。  
+- `Function` - 按完全限定名匹配过程、函数或方法。  
   
- **与函数名称匹配**  
+  **与函数名称匹配**  
   
- 正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如，  
+  正则表达式必须与函数的完全限定名匹配，包括命名空间、类名、方法名称和参数列表。 例如，  
   
--   C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
+- C# 或 Visual Basic：`Fabrikam.Math.LocalMath.SquareRoot(double)`  
   
--   C++：`Fabrikam::Math::LocalMath::SquareRoot(double)`  
+- C++：`Fabrikam::Math::LocalMath::SquareRoot(double)`  
   
 ```xml  
 <Functions>  
@@ -201,17 +201,17 @@ ms.locfileid: "49281744"
   
  ![在生成定义中指定 .runsettings](../test/media/codecoverage-buildrunsettings.png "CodeCoverage-buildRunsettings")  
   
-1.  确保签入你的 .runsettings 文件。  
+1. 确保签入你的 .runsettings 文件。  
   
-2.  在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
+2. 在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
   
-3.  在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 选择 **.runsettings** 文件。  
+3. 在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 选择 **.runsettings** 文件。  
   
-    -   *不过，显示的是“测试程序集”，而不是“测试源”。尝试设置“运行设置”字段时，我只能选择 .testsettings 文件。*  
+   - <em>但是**测试程序集</em>* 而不是将显示**测试源**。尝试设置“运行设置”** 字段时，我只能选择 .testsettings 文件。*  
   
-         在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。  
+      在“自动测试”下，依次选择“测试程序集”和行尾的“[...]”。 在“添加/编辑测试运行”对话框中，将“测试运行程序”设为“Visual Studio 测试运行程序”。  
   
- 结果在生成报告的摘要部分可见。  
+   结果在生成报告的摘要部分可见。  
   
 ##  <a name="sample"></a>示例 .runsettings 文件  
  复制此代码并对其进行编辑以满足你自己的需求。 这是默认的 .runsettings 文件。  

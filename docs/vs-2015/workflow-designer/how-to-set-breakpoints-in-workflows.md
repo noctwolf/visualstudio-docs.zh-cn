@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 18d87e523e9c0456f0f80add89c2ade32cf903fa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b3dedba320ce8a783b7d54df54a30b0759a6bd00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199805"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49896219"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>如何：在工作流中设置断点
 使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 时，可以在图形工作流上设置断点，就像在 Visual Basic 或 C# 代码中设置断点一样。 正如所料，工作流执行将在设置的每个断点处停止。  
@@ -26,10 +26,10 @@ ms.locfileid: "49199805"
   
 > [!NOTE]
 >  不支持在调用的工作流上设置断点。  
-  
+> 
 > [!WARNING]
->  请确保选择的选项**启用仅我的代码 （仅限托管）** 从**工具**，**选项**，**调试**在之前的菜单调试。 如果有嵌套在另一个序列中的两个序列，并在第一个内部序列上设置断点，按**F11**不会其如果调试到第二个内部序列**启用仅我的代码 （仅限托管）** 未选择选项。  
-  
+>  请确保选择的选项**启用仅我的代码 （仅限托管）** 从**工具**，**选项**，**调试**在之前的菜单调试。 如果有嵌套在另一个序列中的两个序列，并在第一个内部序列上设置断点，按**F11**不会其如果调试到第二个内部序列<strong>启用仅我的代码 （仅限托管）</strong>未选择选项。  
+> 
 > [!WARNING]
 >  如果 XAML 文件属性的完整路径不准确，将不命中工作流中的断点。在将项目/解决方案移到另一个文件夹或另一台计算机后，XAML 文件的完整路径不准确。选择 Ctrl + S 可保存和更新完整路径属性。  
   

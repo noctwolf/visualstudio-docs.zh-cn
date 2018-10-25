@@ -9,12 +9,12 @@ ms.author: ghogen
 manager: douge
 ms.workload:
 - azure
-ms.openlocfilehash: 079ae6affd5c495136d97a00eae2ddccfa2c9066
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 8cf4192ce0f925624dbbe890381d3557f2a27223
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356777"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942928"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>开始使用 Visual Studio 的 Kubernetes 工具
 
@@ -90,21 +90,21 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
    ![屏幕快照的发布菜单项](media/k8s-tools-publish-project.png)
 
-1. 在中**发布**屏幕上，选择**容器注册表**作为发布目标，并按照提示来选择容器注册表。 如果还没有容器注册表，选择**创建新的 Azure 容器注册表**若要从 Visual Studio 中创建一个。 有关详细信息，请参阅[将容器发布到 Azure 容器注册表](#publish-your-container-to-azure-container-registry)。
+2. 在中**发布**屏幕上，选择**容器注册表**作为发布目标，并按照提示来选择容器注册表。 如果还没有容器注册表，选择**创建新的 Azure 容器注册表**若要从 Visual Studio 中创建一个。 有关详细信息，请参阅[将容器发布到 Azure 容器注册表](#publish-your-container-to-azure-container-registry)。
 
    ![选取发布目标屏幕的屏幕截图](media/k8s-tools-publish-to-acr.png)
 
-1. 返回在解决方案资源管理器，右键单击你*解决方案*然后单击**发布到 Azure AKS**。
+3. 返回在解决方案资源管理器，右键单击你*解决方案*然后单击**发布到 Azure AKS**。
 
    ![屏幕快照的发布到 Azure AKS 菜单项](media/k8s-tools-publish-solution.png)
 
-1. 选择你的订阅和 AKS 群集，以及 ACR 发布刚创建的配置文件。 然后单击“确定” 。
+4. 选择你的订阅和 AKS 群集，以及 ACR 发布刚创建的配置文件。 然后单击“确定” 。
 
    ![屏幕快照的发布到 AKS 屏幕](media/k8s-tools-publish-to-aks.png)
 
    将进入**发布到 Azure AKS**屏幕。
 
-1.  选择**配置 Helm**链接以更新用来在服务器上安装 Helm 图表的命令行。
+5. 选择**配置 Helm**链接以更新用来在服务器上安装 Helm 图表的命令行。
 
    ![配置 Helm 屏幕快照链接](media/k8s-tools-configure-helm.png)
 
@@ -112,7 +112,7 @@ Visual Studio Kubernetes 工具可帮助简化面向 Kubernetes 的容器化应�
 
    ![屏幕截图的 Helm 配置屏幕](media/k8s-tools-helm-configure-screen.png)
 
-1. 若要部署准备就绪后，单击**发布**按钮以发布应用程序到 AKS。
+6. 若要部署准备就绪后，单击**发布**按钮以发布应用程序到 AKS。
 
    ![发布到 Azure AKS 屏幕的屏幕截图](media/k8s-tools-publish-screen.png)
 

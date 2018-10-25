@@ -14,40 +14,40 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8e881b4d8faef7ced037c8752f099af0e5e8bfa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0cdc926121212a8082fac126e4ab91b753df7dee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884961"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教程中，您将生成一个从文件加载图片并将其显示在窗口中的程序。 您将学习如何拖动控件（如窗体上的按钮和图片框）、设置控件属性，以及如何使用容器来平滑地调整窗体的大小。 您还将开始编写代码。 您将学习如何：  
   
--   创建新项目。  
+- 创建新项目。  
   
--   测试（调试）应用程序。  
+- 测试（调试）应用程序。  
   
--   向窗体中添加基本控件（如复选框和按钮）。  
+- 向窗体中添加基本控件（如复选框和按钮）。  
   
--   使用布局在窗体上定位控件。  
+- 使用布局在窗体上定位控件。  
   
--   向窗体中添加“打开文件”和“颜色”对话框。  
+- 向窗体中添加“打开文件”和“颜色”对话框。  
   
--   使用 IntelliSense 和代码片段编写代码。  
+- 使用 IntelliSense 和代码片段编写代码。  
   
--   编写事件处理程序方法。  
+- 编写事件处理程序方法。  
   
- 当您完成时，程序将类似下图所示。  
+  当您完成时，程序将类似下图所示。  
   
- ![在本教程中创建的图片](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
-你在本教程中创建的图片  
+  ![在本教程中创建的图片](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone")  
+  你在本教程中创建的图片  
   
- 若要下载完整的示例版本，请参阅 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)（图片查看器教程的完整示例）。  
+  若要下载完整的示例版本，请参阅 [Complete Picture Viewer tutorial sample](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)（图片查看器教程的完整示例）。  
   
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
+  ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207) 或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。  
   
 > [!NOTE]
 >  这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。 本教程中同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您所用编程语言的信息。  

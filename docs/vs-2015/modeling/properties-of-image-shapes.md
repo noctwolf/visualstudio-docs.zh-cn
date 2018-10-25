@@ -17,37 +17,37 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 6b324e82608a79f8f57762e2538b401c794d831c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d0b2de4ce9c332b5a4f54ad41e6d3af500b49956
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304091"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843478"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 图像形状可用于指定域类生成的设计器中的显示方式。 通过设置来定义了图像形状`Image`类预定义的图像文件的属性。 支持以下格式：  
   
--   .gif  
+- .gif  
   
--   .jpg  
+- .jpg  
   
--   .jpeg  
+- .jpeg  
   
--   .bmp  
+- .bmp  
   
--   .wmf  
+- .wmf  
   
--   .emf  
+- .emf  
   
--   .png  
+- .png  
   
- 默认情况下，设计器的资源文件，如图像文件位于**资源**中的文件夹**Dsl**项目。  
+  默认情况下，设计器的资源文件，如图像文件位于**资源**中的文件夹**Dsl**项目。  
   
- 有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
+  有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
- 图像形状具有下表中列出的属性。  
+  图像形状具有下表中列出的属性。  
   
 |属性|描述|默认|  
 |--------------|-----------------|-------------|  

@@ -15,12 +15,12 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 465adc1c7804582767415c3e9e5311c2379c7b8b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9f7df8c667753c13a5b69935a31755a72d232a96
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281380"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914250"
 ---
 # <a name="managing-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,23 +100,23 @@ pSLMgrSupport.SetProjectLoadPriority(guidProjectID, (uint)_VSProjectLoadPriority
 ## <a name="detecting-and-managing-solution-and-project-loading"></a>检测和管理解决方案和项目加载  
  若要检测的项目和解决方案加载状态，请调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.GetProperty%2A>使用以下值：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`解决方案和所有项目已加载，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`解决方案和所有项目已加载，否则如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载在后台，否则`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载在后台，否则`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载以同步方式由于用户命令或其他显式负载，否则`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4>:`var`将返回`true`如果一批项目当前正在加载以同步方式由于用户命令或其他显式负载，否则`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`将返回`true`解决方案当前正在关闭，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2>:`var`将返回`true`解决方案当前正在关闭，否则如果`false`。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`将返回`true`当前正在打开解决方案，否则如果`false`。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID>:`var`将返回`true`当前正在打开解决方案，否则如果`false`。  
   
- 此外可以通过调用以下方法之一来确保项目和解决方案加载 （无论项目负载优先顺序是什么）：  
+  此外可以通过调用以下方法之一来确保项目和解决方案加载 （无论项目负载优先顺序是什么）：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 调用此方法会强制加载完毕，该方法将返回解决方案中的项目。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureSolutionIsLoaded%2A>： 调用此方法会强制加载完毕，该方法将返回解决方案中的项目。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 调用此方法会强制在项目`guidProject`加载完毕，该方法返回。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectIsLoaded%2A>： 调用此方法会强制在项目`guidProject`加载完毕，该方法返回。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 调用此方法会强制中的项目`guidProjectID`加载完毕，该方法返回。  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution4.EnsureProjectsAreLoaded%2A>： 调用此方法会强制中的项目`guidProjectID`加载完毕，该方法返回。  
   
 > [!NOTE]
 >  . 默认情况下仅有需求的项目加载和后台负载优先级已加载，但如果<xref:Microsoft.VisualStudio.Shell.Interop.__VSBSLFLAGS>标志中传递给方法，所有项目将都加载的标记来显式加载除外。

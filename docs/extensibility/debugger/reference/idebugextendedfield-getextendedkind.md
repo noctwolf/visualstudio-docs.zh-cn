@@ -1,5 +1,5 @@
 ---
-title: IDebugExtendedField::GetExtendedKind |Microsoft 文档
+title: IDebugExtendedField::GetExtendedKind |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfafd854d9493ac57ef9dc082ddb7969e0b6136
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: a5e1be1da0ca207f5bc030bf5de72efdb0d24ea8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31110206"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897597"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
-检索指定的扩展的字段类型。  
+检索指定扩展的字段类型。  
   
 ## <a name="syntax"></a>语法  
   
@@ -40,10 +40,10 @@ int GetExtendedKind(
   
 #### <a name="parameters"></a>参数  
  `pdwKind`  
- [在中，out]从值[FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md)定义中的字段类型的枚举。  
+ [in、 out]值从[FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md)定义的字段类型的枚举。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

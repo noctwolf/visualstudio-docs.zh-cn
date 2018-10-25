@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82f96af18400aa6a9f659144fb874c32feaf08ed
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 075f3391a155938082847c708f831d0587cf54fe
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907477"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Roslyn 分析器和 immutablearrays 的代码识别库
 
@@ -82,7 +82,6 @@ public class ImmutableArrayAnalyzerAnalyzer : DiagnosticAnalyzer
 
 ```csharp
 public override void Initialize(AnalysisContext context) {}
-
 ```
 
 打开一个新行方法和类型"在此上下文中。" 若要查看的 IntelliSense 完成列表。  您可以看到在完成列表中有许多`Register...`方法来处理各种类型的事件。  例如，第一个`RegisterCodeBlockAction`，回调到您的代码块，这通常是大括号之间的代码。  注册为块还调用返回到你的代码字段，提供给属性的值或可选参数的值的初始值设定项。
@@ -225,7 +224,6 @@ namespace ImmutableArrayAnalyzer
     [ExportCodeFixProvider(LanguageNames.CSharp)]
     class BuildCodeFixProvider : CodeFixProvider
     {}
-
 ```
 
 **去掉派生的成员。** 现在，将编辑器插入点放在标识符中`CodeFixProvider`并按**Ctrl**+**。** （句点） 以派生出此抽象基类的实现。  这将为您生成的属性和方法。

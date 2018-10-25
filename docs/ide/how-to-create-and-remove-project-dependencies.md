@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0948dab860431d9693e67489d958f00743fa17
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c7075f21f7927a87968dd573863402a71a40c3c4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31942017"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49856010"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>如何：创建和删除项目依赖项
 
@@ -32,20 +32,20 @@ ms.locfileid: "31942017"
 
 ## <a name="to-assign-dependencies-to-projects"></a>将依赖项分配给项目
 
-1.  在“解决方案资源管理器”中，选择一个项目。
+1. 在“解决方案资源管理器”中，选择一个项目。
 
-2.  在“项目”菜单上，选择“项目依赖项”。
+2. 在“项目”菜单上，选择“项目依赖项”。
 
-     “项目依赖项”对话框随即打开。
+    “项目依赖项”对话框随即打开。
 
-    > [!NOTE]
-    > “项目依赖项”选项仅可在具有多个项目的解决方案中使用。
+   > [!NOTE]
+   > “项目依赖项”选项仅可在具有多个项目的解决方案中使用。
 
-3.  从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。
+3. 从“依赖项”选项卡上的“项目”下拉菜单中选择一个项目。
 
-4.  在“依赖对象”字段中，选中必须在此项目生成前生成的任何其他项目的复选框。
+4. 在“依赖对象”字段中，选中必须在此项目生成前生成的任何其他项目的复选框。
 
- 解决方案必须包含多个项目才能创建项目依赖项。
+   解决方案必须包含多个项目才能创建项目依赖项。
 
 ## <a name="to-remove-dependencies-from-projects"></a>删除项目中的依赖项
 

@@ -27,12 +27,12 @@ caps.latest.revision: 142
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 882b8bd2e44bb630f70efe93a1338b8dd21dc501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6f96b0df5028974317be46fed7c727b3141e8b64
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228574"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49912976"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ ms.locfileid: "49228574"
   
 使用 IntelliTrace 记录和跟踪代码的执行历史记录时，可缩短调试应用程序所用的时间。 你可以更轻松地发现 Bug，因为 IntelliTrace 让你能够：  
   
--   记录特定事件  
+- 记录特定事件  
   
-     检查相关的代码，在显示的数据**局部变量**窗口期间调试器事件和函数调用信息  
+   检查相关的代码，在显示的数据**局部变量**窗口期间调试器事件和函数调用信息  
   
--   调试难以重现或在部署中出现的错误  
+- 调试难以重现或在部署中出现的错误  
   
- 可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  
+  可以在 Visual Studio Enterprise 版（但不可在 Professional 或 Community 版）中使用 IntelliTrace。  
   
 ## <a name="what-do-you-want-to-do"></a>你希望做什么？  
   
@@ -78,92 +78,92 @@ ms.locfileid: "49228574"
   
  你可以从这些源中保存 IntelliTrace 数据：  
   
--   Visual Studio 2015 Enterprise 或早期版本的 Visual Studio Ultimate 中的 IntelliTrace 会话。  
+- Visual Studio 2015 Enterprise 或早期版本的 Visual Studio Ultimate 中的 IntelliTrace 会话。  
   
--   Microsoft 测试管理器中的测试会话  
+- Microsoft 测试管理器中的测试会话  
   
--   IIS 上托管的 ASP.NET Web 应用程序，或使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用）时在部署中运行的 SharePoint 2010 和 SharePoint 2013 应用程序。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)并[监视使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。  
+- IIS 上托管的 ASP.NET Web 应用程序，或使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用）时在部署中运行的 SharePoint 2010 和 SharePoint 2013 应用程序。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)并[监视使用 Microsoft Monitoring Agent](http://technet.microsoft.com/library/dn465153.aspx)。  
   
- 下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：  
+  下面是一些示例，说明 IntelliTrace 如何帮助你进行调试：  
   
--   你的应用程序损坏了一个数据文件，但是你不知道此事件的发生位置。  
+- 你的应用程序损坏了一个数据文件，但是你不知道此事件的发生位置。  
   
-     如果不使用 IntelliTrace，则必须浏览代码以查找所有可能的文件访问，在这些访问上放置断点，并重新运行应用程序以查找出现问题的位置。 如果使用 IntelliTrace，则在每个事件发生时，可以查看收集的所有文件访问事件和有关应用程序的特定详细信息。  
+   如果不使用 IntelliTrace，则必须浏览代码以查找所有可能的文件访问，在这些访问上放置断点，并重新运行应用程序以查找出现问题的位置。 如果使用 IntelliTrace，则在每个事件发生时，可以查看收集的所有文件访问事件和有关应用程序的特定详细信息。  
   
--   发生异常。  
+- 发生异常。  
   
-     如果不使用 IntelliTrace，你会获得有关异常的消息，但不会获得有关导致异常的事件的大量信息。 你可以检查调用堆栈，以查看导致异常的调用链，但不能查看这些调用过程中发生的事件序列。 如果使用 IntelliTrace，你可以检查在异常之前发生的事件。  
+   如果不使用 IntelliTrace，你会获得有关异常的消息，但不会获得有关导致异常的事件的大量信息。 你可以检查调用堆栈，以查看导致异常的调用链，但不能查看这些调用过程中发生的事件序列。 如果使用 IntelliTrace，你可以检查在异常之前发生的事件。  
   
--   你的应用程序在测试计算机上崩溃，但在开发计算机上成功运行。  
+- 你的应用程序在测试计算机上崩溃，但在开发计算机上成功运行。  
   
-     可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[手动测试中的更多诊断数据收集](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)并[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。  
+   可以从 Microsoft 测试管理器中收集 IntelliTrace 数据，将该数据保存到 .iTrace 文件，并将此文件附加到 Team Foundation Server 工作项以备以后调查使用。 请参阅[手动测试中的更多诊断数据收集](http://msdn.microsoft.com/library/bb5a2cc0-84f5-4dfe-9560-ca3d313aefd2)并[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。  
   
--   在已部署的应用程序中发生 Bug 或崩溃。  
+- 在已部署的应用程序中发生 Bug 或崩溃。  
   
-     对于基于 Microsoft Azure 的应用，在发布应用程序之前，可以配置 IntelliTrace 数据收集。 应用程序运行时，IntelliTrace 会将数据保存到 .iTrace 文件。 请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248)。  
+   对于基于 Microsoft Azure 的应用，在发布应用程序之前，可以配置 IntelliTrace 数据收集。 应用程序运行时，IntelliTrace 会将数据保存到 .iTrace 文件。 请参阅[调试已发布的云服务使用 IntelliTrace 和 Visual Studio](http://go.microsoft.com/fwlink/?LinkID=262248)。  
   
-     对于 IIS 7.0、7.5 和 8.0 上托管的 ASP.NET Web 应用程序，以及 SharePoint 2010 或 SharePoint 2013 应用程序，请使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用），以备将 IntelliTrace 数据保存到 .iTrace 文件中。  
+   对于 IIS 7.0、7.5 和 8.0 上托管的 ASP.NET Web 应用程序，以及 SharePoint 2010 或 SharePoint 2013 应用程序，请使用 Microsoft Monitoring Agent（单独使用或与 System Center 2012 一起使用），以备将 IntelliTrace 数据保存到 .iTrace 文件中。  
   
-     当你需要诊断部署中的应用程序的问题时，这会很有用。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+   当你需要诊断部署中的应用程序的问题时，这会很有用。 请参阅[使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
   
 ##  <a name="WhatData"></a> IntelliTrace 收集哪些数据？  
  **收集事件信息**  
   
  默认情况下，IntelliTrace 仅记录 IntelliTrace 事件：调试程序事件、异常、.NET Framework 事件以及可帮助进行调试的其他系统事件。 你可以选择想要收集的 IntelliTrace 事件的类型（始终收集的调试器事件和异常除外）。 请参阅[配置 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
--   **调试器事件**  
+- **调试器事件**  
   
-     IntelliTrace 始终记录 Visual Studio 调试器中发生的事件。 例如，启动应用程序是一个调试程序事件。 其他调试程序事件包括会导致应用程序中断执行的停止事件。 例如，您的程序命中断点、 命中跟踪点，或执行**步骤**命令。  
+   IntelliTrace 始终记录 Visual Studio 调试器中发生的事件。 例如，启动应用程序是一个调试程序事件。 其他调试程序事件包括会导致应用程序中断执行的停止事件。 例如，您的程序命中断点、 命中跟踪点，或执行**步骤**命令。  
   
-     为了帮助提高性能，IntelliTrace 不记录调试器事件的每个可能的值， 而是记录以下值：  
+   为了帮助提高性能，IntelliTrace 不记录调试器事件的每个可能的值， 而是记录以下值：  
   
-    -   中的值**局部变量**窗口。 保持**局部变量**窗口打开状态以查看这些值。  
+  -   中的值**局部变量**窗口。 保持**局部变量**窗口打开状态以查看这些值。  
   
-    -   中的值**自动**窗口才**自动**窗口处于打开状态  
+  -   中的值**自动**窗口才**自动**窗口处于打开状态  
   
-    -   在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。  
+  -   在将鼠标指针移到源窗口中的变量的上方以查看其值时显示的数据提示中的值。 IntelliTrace 不收集固定数据提示中的值。  
   
--   **异常**  
+- **异常**  
   
-     IntelliTrace 会记录异常类型和以下各类异常的消息：  
+   IntelliTrace 会记录异常类型和以下各类异常的消息：  
   
-    -   已处理的异常（已引发并捕获异常）  
+  -   已处理的异常（已引发并捕获异常）  
   
-    -   未经处理的异常  
+  -   未经处理的异常  
   
--   **.NET framework 事件**  
+- **.NET framework 事件**  
   
-     默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如：  
+   默认情况下，IntelliTrace 记录最常见的 .NET Framework 事件。 例如：  
   
-    -   对于“文件访问”事件，IntelliTrace 将收集文件名。  
+  -   对于“文件访问”事件，IntelliTrace 将收集文件名。  
   
-    -   对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。  
+  -   对于选中复选框事件，IntelliTrace 将收集复选框状态和文本。  
   
--   **SharePoint 2010 和 SharePoint 2013 应用程序事件**  
+- **SharePoint 2010 和 SharePoint 2013 应用程序事件**  
   
-     你可以为在 Visual Studio 外运行的 SharePoint 2010 和 2013 应用程序记录用户配置文件事件以及一部分统一日志记录系统 (ULS) 事件。 你可以将这些事件保存到 .iTrace 文件中。 需要 Visual Studio Enterprise 2015、 以前版本的 Visual Studio 旗舰版或[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)正在**跟踪**模式。  
+   你可以为在 Visual Studio 外运行的 SharePoint 2010 和 2013 应用程序记录用户配置文件事件以及一部分统一日志记录系统 (ULS) 事件。 你可以将这些事件保存到 .iTrace 文件中。 需要 Visual Studio Enterprise 2015、 以前版本的 Visual Studio 旗舰版或[Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384)正在**跟踪**模式。  
   
-     打开 .iTrace 文件时，输入 SharePoint 相关 ID 以查找其匹配的 Web 请求，查看记录事件，并从特定事件开始调试。 如果文件包含未经处理的异常，可以选择相关 ID，开始调试异常。  
+   打开 .iTrace 文件时，输入 SharePoint 相关 ID 以查找其匹配的 Web 请求，查看记录事件，并从特定事件开始调试。 如果文件包含未经处理的异常，可以选择相关 ID，开始调试异常。  
   
-     请参阅：  
+   请参阅：  
   
-    -   [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  -   [使用 IntelliTrace 独立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-    -   [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)  
+  -   [使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)  
   
-    -   [演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  -   [演练：使用 IntelliTrace 调试 SharePoint 应用程序](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
- **收集函数调用信息**  
+  **收集函数调用信息**  
   
- 可以配置 IntelliTrace 以收集函数的调用信息。 此信息使你可以查看调用堆栈历史记录，并能在代码中向后移动和向前移动调用。 对于每个函数调用，IntelliTrace 将记录此数据：  
+  可以配置 IntelliTrace 以收集函数的调用信息。 此信息使你可以查看调用堆栈历史记录，并能在代码中向后移动和向前移动调用。 对于每个函数调用，IntelliTrace 将记录此数据：  
   
--   函数名  
+- 函数名  
   
--   在函数入口点作为参数传递并在函数退出点返回的基元数据类型的值  
+- 在函数入口点作为参数传递并在函数退出点返回的基元数据类型的值  
   
--   读取或更改自动属性时该属性的值  
+- 读取或更改自动属性时该属性的值  
   
--   指向第一级子对象的指针，而不是它们的值，除非它们为 null  
+- 指向第一级子对象的指针，而不是它们的值，除非它们为 null  
   
 > [!NOTE]
 >  IntelliTrace 仅收集数组中的头 256 个对象和字符串的头 256 个字符。  

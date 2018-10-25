@@ -17,12 +17,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7a38d92aa43056b3824b4d583ccd93f255b1439f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204303"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49824277"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,41 +52,41 @@ ms.locfileid: "49204303"
 ## <a name="prerequisites"></a>系统必备  
  要创建应用程序，你将需要：  
   
--   Visual Studio Community Edition。  
+- Visual Studio Community Edition。  
   
--   SQL Server Express LocalDB。  
+- SQL Server Express LocalDB。  
   
--   按照中的步骤创建小型示例数据库[通过使用脚本创建 SQL 数据库](../data-tools/create-a-sql-database-by-using-a-script.md)。  
+- 按照中的步骤创建小型示例数据库[通过使用脚本创建 SQL 数据库](../data-tools/create-a-sql-database-by-using-a-script.md)。  
   
--   设置数据库后的数据库连接字符串。 您可以找到此值，通过打开**SQL Server 对象资源管理器**，打开数据库的快捷菜单，选择**属性**，并滚动到**ConnectionString**属性。  
+- 设置数据库后的数据库连接字符串。 您可以找到此值，通过打开**SQL Server 对象资源管理器**，打开数据库的快捷菜单，选择**属性**，并滚动到**ConnectionString**属性。  
   
- 本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果您不熟悉这些任务，我们建议你先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)在开始本主题之前。  
+  本主题假定你已经熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows 窗体应用程序，将窗体添加到项目，将按钮和其他控件安装到这些窗体上，为这些控件设置属性，以及对简单事件进行编码。 如果您不熟悉这些任务，我们建议你先完成[Getting Started with Visual C# 和 Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md)在开始本主题之前。  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> 设置示例数据库  
  本演练的示例数据库由客户和订单表组成。 表最初不包含数据，但你会在运行将创建的应用程序时添加数据。 该数据库中还有五个简单的存储过程。 [通过使用脚本创建 SQL 数据库](../data-tools/create-a-sql-database-by-using-a-script.md)包含创建表、 主键和外键、 约束和存储的过程的 TRANSACT-SQL 脚本。  
   
 ##  <a name="BKMK_createtheformsandaddcontrols"></a> 创建窗体并添加控件  
   
-1.  为 Windows 窗体应用程序，创建一个项目并将其 SimpleDataApp。  
+1. 为 Windows 窗体应用程序，创建一个项目并将其 SimpleDataApp。  
   
-     Visual Studio 将创建项目以及若干个文件，其中包括名为 Form1 的空 Windows 窗体。  
+    Visual Studio 将创建项目以及若干个文件，其中包括名为 Form1 的空 Windows 窗体。  
   
-2.  将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：  
+2. 将两个 Windows 窗体添加到你的项目，以使其具有三种形式，然后为他们提供以下名称：  
   
-    -   导航  
+   -   导航  
   
-    -   NewCustomer  
+   -   NewCustomer  
   
-    -   FillOrCancel  
+   -   FillOrCancel  
   
-3.  对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。  
+3. 对于每个窗体，添加文本框、按钮和其他控件，如下图所示。 对于每个控件，设置表中描述的属性。  
   
-    > [!NOTE]
-    >  分组框和标签控件可提高清晰度，但不在代码中使用。  
+   > [!NOTE]
+   >  分组框和标签控件可提高清晰度，但不在代码中使用。  
   
- **Navigation 窗体**  
+   **Navigation 窗体**  
   
- ![导航对话框](../data-tools/media/simpleappnav.png "SimpleAppNav")  
+   ![导航对话框](../data-tools/media/simpleappnav.png "SimpleAppNav")  
   
 |Navigation 窗体的控件|属性|  
 |--------------------------------------|----------------|  

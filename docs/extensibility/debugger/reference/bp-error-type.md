@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE |Microsoft 文档
+title: BP_ERROR_TYPE |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 676ec19fec1406d85e6a7d9e66865b2794f72aa6
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f61247bafe95039b89b43e740ce69693b584604f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31103001"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49866332"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 指定断点的错误类型。  
@@ -68,22 +68,22 @@ public enum enum_BP_ERROR_TYPE {
  指定警告样式断点错误。  
   
  BPET_TYPE_ERROR  
- 指定了错误样式断点错误。  
+ 指定错误样式断点错误。  
   
  BPET_SEV_HIGH  
- 指定高严重性断点错误。  
+ 指定高严重级别断点错误。  
   
  BPET_SEV_GENERAL  
- 指定的中等严重性断点错误。  
+ 指定中等严重性断点错误。  
   
  BPET_SEV_LOW  
- 指定的低严重性断点错误。  
+ 指定低严重性断点错误。  
   
  BPET_TYPE_MASK  
  指定掩码样式断点错误。  
   
  BPET_SEV_MASK  
- 指定严重性掩码样式断点错误。  
+ 指定严重级别掩码样式断点错误。  
   
  BPET_GENERAL_WARNING  
  指定常规警告样式断点错误。  
@@ -95,9 +95,9 @@ public enum enum_BP_ERROR_TYPE {
  指定所有断点错误类型。  
   
 ## <a name="remarks"></a>备注  
- 这些值可以与按位组合`OR`和用于`dwType`的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构。 作为参数传递给传递[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。  
+ 这些值可能组合的按位`OR`，用于`dwType`的成员[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)结构。 作为参数传递给[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。  
   
- 断点错误类型组成的类型和严重性。 这意味着该断点错误类型永远不会为刚类型 (例如， `BPET_TYPE_ERROR`，) 或严重级别 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 和`BPET_GENERAL_ERROR`为常规的警告和错误断点提供预定义的值。  
+ 断点错误类型组成的类型和严重性。 这意味着该断点错误类型永远不会为只是类型 (例如， `BPET_TYPE_ERROR`，) 或严重级别 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 和`BPET_GENERAL_ERROR`为常规警告和错误断点提供预定义的值。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -106,7 +106,7 @@ public enum enum_BP_ERROR_TYPE {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

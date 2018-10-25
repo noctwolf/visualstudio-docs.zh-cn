@@ -21,12 +21,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e497800f209c7653c1f47904df03baf604b3b134
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830972"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：查找和组织项目模板和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,26 +39,26 @@ ms.locfileid: "49229393"
 ### <a name="installed-templates"></a>已安装的模板  
  默认情况下，与产品一起安装的模板位于以下位置：  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Language*\\*Locale*\  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\\*Language*\\*Locale*\  
   
--   \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Language*\\*Locale\\*  
+- \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\\*Language*\\*Locale\\*  
   
- 例如，以下目录包含以英语表示的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板：  
+  例如，以下目录包含以英语表示的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板：  
   
- C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
+  C:\\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\VisualBasic\1033\  
   
 ### <a name="custom-templates"></a>自定义模板  
  默认情况下，自定义模板位于以下位置：  
   
--   \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Language*\  
+- \My Documents\Visual Studio *Version*\Templates\ProjectTemplates\\*Language*\  
   
--   \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\*Language*\  
+- \My Documents\Visual Studio *Version*\Templates\ItemTemplates\\*Language*\  
   
- 例如，以下目录包含自定义 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目模板：  
+  例如，以下目录包含自定义 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 项目模板：  
   
- C:\Documents and Settings\UserName\My 文档\\< Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My 文档\\< Visual Studio 版本\>\Templates\ProjectTemplates\Visual C# \  
   
- 自定义模板不包含已本地化模板的子目录。 可在“环境\项目和解决方案”下的“选项”对话框中更改自定义模板的默认目录。  
+  自定义模板不包含已本地化模板的子目录。 可在“环境\项目和解决方案”下的“选项”对话框中更改自定义模板的默认目录。  
   
 ## <a name="organizing-templates"></a>组织模板  
  “新建项目”和“添加新项”对话框中的类别反映存在于已安装模板位置和自定义模板位置的目录结构。 可以修改这些目录结构，以需要的方式组织模板。  
@@ -73,25 +73,25 @@ ms.locfileid: "49229393"
   
 ##### <a name="to-create-new-installed-project-template-categories"></a>如要新建已安装的项目模板类别  
   
-1.  在已安装的模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板创建 Office 类别，你将创建以下目录：  
+1. 在已安装的模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 项目模板创建 Office 类别，你将创建以下目录：  
   
-     \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
+    \\*VisualStudioInstallationDirectory*\Common7\IDE\ProjectTemplates\VisualBasic\1033\Office\  
   
-2.  将此类别的所有模板放入新文件夹。  
+2. 将此类别的所有模板放入新文件夹。  
   
-3.  关闭 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有实例。  
+3. 关闭 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的所有实例。  
   
-4.  在“启动”菜单上，单击“运行”，键入“cmd”，然后单击“确定”。  
+4. 在“启动”菜单上，单击“运行”，键入“cmd”，然后单击“确定”。  
   
-5.  在命令提示符处，找到包含 devenv.exe 的目录，然后键入“devenv /installvstemplates”。  
+5. 在命令提示符处，找到包含 devenv.exe 的目录，然后键入“devenv /installvstemplates”。  
   
-6.  运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+6. 运行 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
-7.  在 **“文件”** 菜单上，单击 **“新建”**，然后单击 **“项目”**。  
+7. 在 **“文件”** 菜单上，单击 **“新建”**，然后单击 **“项目”**。  
   
-8.  验证确认 Office 类别显示在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 下“项目类型”窗格中的“新建项目”对话框中。  
+8. 验证确认 Office 类别显示在 [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] 下“项目类型”窗格中的“新建项目”对话框中。  
   
- 还可以将项目项模板的子集分组到自定义文件夹中。  
+   还可以将项目项模板的子集分组到自定义文件夹中。  
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>如要新建已安装的项模板类别  
   
@@ -120,17 +120,17 @@ ms.locfileid: "49229393"
   
 ##### <a name="to-create-new-custom-project-template-categories"></a>如要新建自定义项目模板类别  
   
-1.  在自定义项目模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
+1. 在自定义项目模板目录的语言文件夹中创建一个文件夹。 例如，要为 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 模板创建 HelloWorld 类别，你将创建以下目录：  
   
-     \My documents\\< Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My documents\\< Visual Studio 版本\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
-2.  将此类别的所有模板放入新文件夹。  
+2. 将此类别的所有模板放入新文件夹。  
   
-3.  在 **“文件”** 菜单上，单击 **“新建”**，然后单击 **“项目”**。  
+3. 在 **“文件”** 菜单上，单击 **“新建”**，然后单击 **“项目”**。  
   
-4.  验证确认 HelloWorld 类别显示在 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 下“项目类型”窗格中的“新建项目”对话框中。  
+4. 验证确认 HelloWorld 类别显示在 [!INCLUDE[csprcs](../includes/csprcs-md.md)] 下“项目类型”窗格中的“新建项目”对话框中。  
   
- 还可以将自定义项模板的子集分组到自定义文件夹中。  
+   还可以将自定义项模板的子集分组到自定义文件夹中。  
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>新建自定义项模板类别  
   

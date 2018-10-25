@@ -16,33 +16,33 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: a604ce47b6a96182d7e362d5d1dbcb00f052cf85
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231083"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838538"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>“规则条件编辑器”对话框（旧版）
 本主题介绍如何使用**规则条件编辑器**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
  创建和修改通过使用声明性规则条件**规则条件编辑器**对话框。 这些规则条件作为以下 Windows Workflow Foundation 现成可用的活动属性被公开：  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
- 你访问**规则条件编辑器**通过使用对话框[选择条件对话框 （旧版）](../workflow-designer/select-condition-dialog-box-legacy.md)。  
+  你访问**规则条件编辑器**通过使用对话框[选择条件对话框 （旧版）](../workflow-designer/select-condition-dialog-box-legacy.md)。  
   
- 下表介绍的用户界面 (UI) 元素**规则条件编辑器**对话框。  
+  下表介绍的用户界面 (UI) 元素**规则条件编辑器**对话框。  
   
 |UI 元素|描述|  
 |----------------|-----------------|  
@@ -56,33 +56,33 @@ ms.locfileid: "49231083"
   
  该规则条件编辑器支持以下运算符：  
   
--   关系运算符：==、=、!=  
+- 关系运算符：==、=、!=  
   
--   比较运算符： <， \<=、 >、 > =  
+- 比较运算符： <， \<=、 >、 > =  
   
--   算术运算符：+、-、*、/、MOD  
+- 算术运算符：+、-、*、/、MOD  
   
--   逻辑运算符： 和，& &、 OR、 &#124; &#124;、 NOT、 ！  
+- 逻辑运算符： 和，& &、 OR、 &#124; &#124;、 NOT、 ！  
   
--   按位运算符： &，&#124;  
+- 按位运算符： &，&#124;  
   
- 表达式运算符优先级遵循 C# 运算符优先级规则。  
+  表达式运算符优先级遵循 C# 运算符优先级规则。  
   
- 该规则条件编辑器支持以下数值表达式：  
+  该规则条件编辑器支持以下数值表达式：  
   
- this.i == 1D（解析为 1.0）  
+  this.i == 1D（解析为 1.0）  
   
- this.i == 1E1（解析为 10.0）  
+  this.i == 1E1（解析为 10.0）  
   
- this.i == 1L（解析为 long 类型值）  
+  this.i == 1L（解析为 long 类型值）  
   
- this.i == 1M（解析为 decimal 类型值）  
+  this.i == 1M（解析为 decimal 类型值）  
   
- this.i == 1F（解析为 single 类型值）  
+  this.i == 1F（解析为 single 类型值）  
   
- this.i == 1U（解析为 unsigned int 类型值）  
+  this.i == 1U（解析为 unsigned int 类型值）  
   
- 有关条件的详细信息，请参阅[在工作流中使用条件](http://go.microsoft.com/fwlink?LinkID=65009)。  
+  有关条件的详细信息，请参阅[在工作流中使用条件](http://go.microsoft.com/fwlink?LinkID=65009)。  
   
 ## <a name="see-also"></a>请参阅  
  [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033)   

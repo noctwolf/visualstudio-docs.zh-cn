@@ -12,12 +12,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a0feb539be589a4eab51544f1a04154c11f6f9c7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: dc918adb6a66f64cdcda46ea535cd0ab017c0676
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382329"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939495"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -100,7 +100,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ### <a name="test-explorer-groups"></a>测试资源管理器组
 
 |Group|描述|
-|-----------|-----------------|
+|-|-----------------|
 |**持续时间**|按执行时间对测试进行分组： **“快速”**、 **“中速”** 和 **“慢速”**。|
 |**结果**|按执行结果对测试进行分组： **“失败的测试”**、 **“跳过的测试”**、 **“通过的测试”**。|
 |**特征**|按你定义的类别/值对对测试进行分组。 用于指定特征类别和值的语法由单元测试框架定义。|
@@ -115,7 +115,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
  在适用于托管应用的 Microsoft 单元测试框架中，在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 属性中定义特征名称/值对。 测试框架还包括以下预定义特征：
 
 |特征|描述|
-|-----------|-----------------|
+|-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|“所有者”类别由单元测试框架定义，并要求你提供所有者的字符串值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|“优先级”类别由单元测试框架定义，并要求你提供优先级的整数值。|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|你可以通过 TestCategory 属性提供类别而不提供值。 由 TestCategory 属性定义的类别也可以是 TestProperty 属性的类别。|
@@ -143,7 +143,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 > 搜索不区分大小，并将指定字符串与条件值的任何部分匹配。
 
 |限定符|描述|
-|---------------|-----------------|
+|-|-----------------|
 |**特征**|搜索特征类别和值的匹配项。 用于指定特征类别和值的语法由单元测试框架定义。|
 |**Project**|搜索测试项目名称的匹配项。|
 |**错误消息**|搜索由失败的断言返回的用户定义错误消息的匹配项。|
@@ -187,7 +187,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 
 2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。
 
- 有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
+   有关该调试程序的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。
 
 ### <a name="diagnose-test-method-performance-issues"></a>诊断测试方法性能问题
 
@@ -216,7 +216,7 @@ FilterName:"Criteria" -FilterName:"SubsetCriteria"
 可以从“测试资源管理器”运行测试，方法是：在代码编辑器中右键单击测试，并选择“运行测试”，或者在 Visual Studio 中使用默认的[测试资源管理器快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)。 一些快捷方式是基于上下文的。 这意味着它们根据光标在代码编辑器中的位置来运行或调试测试。 如果光标位于某一测试方法内，则运行该测试方法。 如果光标位于类级别，则运行该类中的所有测试。 如果光标位于命名空间级别，则运行该命名空间级别中的所有测试。
 
 |常见命令| 键盘快捷键|
-|--------------|------------------------|
+|-|------------------------|
 |测试资源管理器.调试上下文中的所有测试|Ctrl+R、Ctrl+T|
 |测试资源管理器.运行上下文中的所有测试|Ctrl+R、T|
 

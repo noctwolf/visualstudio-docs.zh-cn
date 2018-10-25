@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: c366ce3d393e639590e5d45fc55ad5523be920b6
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 5d51139d2e5197607de2255b267c24bf2a9db2b3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31943861"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919060"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>在 Visual Studio 中生成方法重写
 
@@ -36,13 +36,13 @@ ms.locfileid: "31943861"
 
    - C#：
 
-    ![重写 IntelliSense C#](media/override-intellisense-cs.png)
+      ![重写 IntelliSense C#](media/override-intellisense-cs.png)
 
    - Visual Basic：
 
-    ![重写 IntelliSense VB](media/override-intellisense-vb.png)
+      ![重写 IntelliSense VB](media/override-intellisense-vb.png)
 
-1. 从基类中选择要重写的方法。
+2. 从基类中选择要重写的方法。
 
    > [!TIP]
    > - 使用“属性”图标 ![“属性”图标](media/override-property-cs.png) 显示或隐藏列表中的属性。
@@ -52,11 +52,11 @@ ms.locfileid: "31943861"
 
    - C#：
 
-      ![重写结果 C#](media/override-result-cs.png)
+       ![重写结果 C#](media/override-result-cs.png)
 
    - Visual Basic：
 
-      ![重写结果 VB](media/override-result-vb.png)
+       ![重写结果 VB](media/override-result-vb.png)
 
 ## <a name="see-also"></a>请参阅
 

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 93aec7e83ba5af9bab8da351624df861b46e475c
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 65b00ab033feb9f057be195afe28b0416f44f95e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36282101"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926015"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -201,42 +201,42 @@ attribute of the Assembly element in the .fakes:
 
  **命名空间**
 
--   向命名空间添加 .Fakes 后缀。
+- 向命名空间添加 .Fakes 后缀。
 
-     例如，`System.Fakes` 命名空间包含系统命名空间的填充码类型。
+   例如，`System.Fakes` 命名空间包含系统命名空间的填充码类型。
 
--   Global.Fakes 包含空命名空间的填充码类型。
+- Global.Fakes 包含空命名空间的填充码类型。
 
- **类型名称**
+  **类型名称**
 
--   向类型名称添加填充码前缀可生成填充码类型名称。
+- 向类型名称添加填充码前缀可生成填充码类型名称。
 
-     例如，ShimExample 是示例类型的填充码类型。
+   例如，ShimExample 是示例类型的填充码类型。
 
--   向类型名称添加存根前缀可生成存根类型名称。
+- 向类型名称添加存根前缀可生成存根类型名称。
 
-     例如，StubIExample 是 IExample 类型的存根类型。
+   例如，StubIExample 是 IExample 类型的存根类型。
 
- **类型参数和嵌套类型结构**
+  **类型参数和嵌套类型结构**
 
--   复制泛型类型参数。
+- 复制泛型类型参数。
 
--   根据填充码类型复制嵌套类型结构。
+- 根据填充码类型复制嵌套类型结构。
 
 ### <a name="shim-delegate-property-or-stub-delegate-field-naming-conventions"></a>填充委托属性或存根委托字段命名约定
 
 字段命名的**基本规则**，从空的名称开始：
 
--   追加方法名称。
+- 追加方法名称。
 
--   如果方法名称是显式接口实现，则删除点。
+- 如果方法名称是显式接口实现，则删除点。
 
--   如果是泛型方法，则追加 `Of`*n*，其中 *n* 是泛型方法自变量的数量。
+- 如果是泛型方法，则追加 `Of`*n*，其中 *n* 是泛型方法自变量的数量。
 
- 特殊方法名称（比如属性 getter 或 setter）将按下表所述方式处理：
+  特殊方法名称（比如属性 getter 或 setter）将按下表所述方式处理：
 
 |如果方法是…|示例|追加的方法名称|
-|-------------------|-------------|--------------------------|
+|-|-|-|
 |**构造函数**|`.ctor`|`Constructor`|
 |静态**构造函数**|`.cctor`|`StaticConstructor`|
 |方法名称由以“_”分隔的两部分组成（比如属性 getter）的**取值函数**|*kind_name*（通常情况下，但不是由 ECMA 强制执行）|*NameKind*，两部分均首字母大写且进行交换|
@@ -256,7 +256,7 @@ attribute of the Assembly element in the .fakes:
 ### <a name="parameter-type-naming-conventions"></a>参数类型命名约定
 
 |假定为|追加的字符串是…|
-|-----------|-------------------------|
+|-|-|
 |**类型**`T`|T<br /><br /> 已放置命名空间、嵌套结构和泛型 tic。|
 |**out 参数**`out T`|`TOut`|
 |**ref 参数**`ref T`|`TRef`|

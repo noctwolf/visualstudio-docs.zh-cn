@@ -18,23 +18,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 23fbe0a7563dbb1ebb3832dbe5c340e67dacac72
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3a31bac6b3cbd13fcff8c841c9947e8c14f8984a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671692"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839760"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何： 使用主机控件中的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：  
   
-1.  使用控件中的已修改数据更新内存中数据源。 通常情况下，内存中数据源是一个 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或某个其他数据对象。  
+1. 使用控件中的已修改数据更新内存中数据源。 通常情况下，内存中数据源是一个 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或某个其他数据对象。  
   
-2.  使用内存中数据源中的已更改数据更新数据库。 此步骤仅适用于数据源连接到后端数据库（例如 SQL Server 或 Microsoft Office Access 数据库）的情况。  
+2. 使用内存中数据源中的已更改数据更新数据库。 此步骤仅适用于数据源连接到后端数据库（例如 SQL Server 或 Microsoft Office Access 数据库）的情况。  
   
- 有关主机控件和数据绑定的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)并[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
+   有关主机控件和数据绑定的详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)并[将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
- [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
+   [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]  
   
 ## <a name="update-the-in-memory-data-source"></a>更新内存中数据源  
  默认情况下，支持简单数据绑定的宿主控件（例如 Word 文档中的内容控件或 Excel 工作表中的命名范围控件）不将数据更改保存到内存中数据源。 也就是说，如果最终用户更改宿主控件中的某个值后离开此控件，则该控件中的这个新值并不会自动保存到数据源中。  
@@ -57,16 +57,16 @@ ms.locfileid: "35671692"
   
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>通过使用代码将控件设置为自动更新内存中数据源  
   
-1.  使用的 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 模式<xref:System.Windows.Forms.Binding>将控件绑定到数据源的对象。 有两个选项可用于更新数据源：  
+1. 使用的 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 模式<xref:System.Windows.Forms.Binding>将控件绑定到数据源的对象。 有两个选项可用于更新数据源：  
   
-    -   若要验证控件时更新数据源，请将此属性设置为 System.Windows.Forms.DataSourceUpdateMode.OnValidation。  
+   - 若要验证控件时更新数据源，请将此属性设置为 System.Windows.Forms.DataSourceUpdateMode.OnValidation。  
   
-    -   若要更新的数据源控件的数据绑定属性的值更改时，将此属性设置为 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。  
+   - 若要更新的数据源控件的数据绑定属性的值更改时，将此属性设置为 System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged。  
   
-        > [!NOTE]  
-        >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 主机控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。  
+     > [!NOTE]  
+     >  System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 主机控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。  
   
-     下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。  
+     下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 `namedRange1` 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。  
   
      [!code-csharp[Trin_VstcoreDataExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#19)]
      [!code-vb[Trin_VstcoreDataExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#19)]  

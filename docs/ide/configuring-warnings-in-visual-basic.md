@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa98e9b9b66f863915e120c2c31b0ab508c9929f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: d8cb2cec8258813fa9c93c466afb607ce88acc7e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918977"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865956"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 
@@ -39,7 +39,7 @@ ms.locfileid: "31918977"
  此外，还可以使用该编译器的 **/warnaserror** 命令行选项指定是否将警告视为错误。 可以将逗号分隔的列表添加到此选项，以通过使用 + 或 - 指定应将哪些警告视为错误或警告。 下表对可能的选项进行了详细说明。
 
 |命令行选项|指定|
-|--------------------------|---------------|
+| - |---------------|
 |`/warnaserror+`|将所有警告视为错误|
 |`/warnsaserror`-|不将警告视为错误。 这是默认设置。|
 |`/warnaserror+:<warning list` `>`|对于在逗号分隔列表中按其错误 ID 号列出的特定警告，将它们视为错误。|
@@ -125,5 +125,5 @@ ms.locfileid: "31918977"
 - [Try...Catch...Finally 语句](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)
 - [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)
 - [/warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror)
-- [“项目设计器”->“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
+- [项目设计器的“编译”页 (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)
 - [默认关闭的编译器警告](/cpp/preprocessor/compiler-warnings-that-are-off-by-default)

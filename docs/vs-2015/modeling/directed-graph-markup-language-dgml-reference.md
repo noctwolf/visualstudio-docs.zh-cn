@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: f3188d3421a9962aa7d238d90fcc6d1ce3f1b762
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a09bf3bc22ce74dc316c75b877231bbc3222655c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886261"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,278 +32,278 @@ ms.locfileid: "49214664"
 ##  <a name="DGML"></a> DGML 语法  
  下表描述在 DGML 中使用的各种元素：  
   
--   `<DirectedGraph></DirectedGraph>`  
+- `<DirectedGraph></DirectedGraph>`  
   
-     此元素是代码图 (.dgml) 文档的根元素。 所有其他 DGML 元素将在此元素的范围内出现。  
+   此元素是代码图 (.dgml) 文档的根元素。 所有其他 DGML 元素将在此元素的范围内出现。  
   
-     下面的列表描述可包含的可选特性：  
+   下面的列表描述可包含的可选特性：  
   
-     `Background` - 代码图背景的颜色  
+   `Background` - 代码图背景的颜色  
   
-     `BackgroundImage` - 要用作代码图背景的图像文件的位置。  
+   `BackgroundImage` - 要用作代码图背景的图像文件的位置。  
   
-     `GraphDirection` - 代码图设置为树布局 (`Sugiyama`) 时排列节点，使大多数链接都按指定的方向流动：`TopToBottom`、`BottomToTop`、`LeftToRight` 或 `RightToLeft`。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
+   `GraphDirection` - 代码图设置为树布局 (`Sugiyama`) 时排列节点，使大多数链接都按指定的方向流动：`TopToBottom`、`BottomToTop`、`LeftToRight` 或 `RightToLeft`。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
   
-     `Layout` - 将代码图设置为下列布局：`None`、`Sugiyama`（树布局）、`ForceDirected`（快速群集）或 `DependencyMatrix`。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
+   `Layout` - 将代码图设置为下列布局：`None`、`Sugiyama`（树布局）、`ForceDirected`（快速群集）或 `DependencyMatrix`。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
   
-     `NeighborhoodDistance` - 代码图设置为树布局或快速群集布局时，仅显示距所选节点指定链接数 (1-7) 的节点。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
+   `NeighborhoodDistance` - 代码图设置为树布局或快速群集布局时，仅显示距所选节点指定链接数 (1-7) 的节点。 请参阅[更改代码图布局](../modeling/browse-and-rearrange-code-maps.md#Selecting)。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" Background="Blue" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          ...  
-       </Nodes>  
-       <Links>  
-          ...  
-       </Links>  
-       <Categories>  
-          ...  
-       </Categories>  
-       <Properties>  
-          ...  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" Background="Blue" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        ...  
+     </Nodes>  
+     <Links>  
+        ...  
+     </Links>  
+     <Categories>  
+        ...  
+     </Categories>  
+     <Properties>  
+        ...  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
--   `<Nodes></Nodes>`  
+- `<Nodes></Nodes>`  
   
-     此可选元素包含 `<Node/>` 元素的列表，这些元素可定义代码图上的节点。 有关更多信息，请参见 `<Node/>` 元素。  
+   此可选元素包含 `<Node/>` 元素的列表，这些元素可定义代码图上的节点。 有关更多信息，请参见 `<Node/>` 元素。  
   
-    > [!NOTE]
-    >  在 `<Link/>` 元素中引用未定义的节点时，代码图会自动创建 `<Node/>` 元素。  
+  > [!NOTE]
+  >  在 `<Link/>` 元素中引用未定义的节点时，代码图会自动创建 `<Node/>` 元素。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node ... />  
-       </Nodes>  
-       <Links>  
-          <Link ... />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node ... />  
+     </Nodes>  
+     <Links>  
+        <Link ... />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Node/>`  
+- `<Node/>`  
   
-     此元素定义单个节点。 该节点将出现在 `<Nodes><Nodes/>` 元素列表内。  
+   此元素定义单个节点。 该节点将出现在 `<Nodes><Nodes/>` 元素列表内。  
   
-     此元素必须包括以下特性：  
+   此元素必须包括以下特性：  
   
-     `Id` - 节点的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。 此名称必须与引用它的链接的 `Source` 或 `Target` 特性匹配。  
+   `Id` - 节点的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。 此名称必须与引用它的链接的 `Source` 或 `Target` 特性匹配。  
   
-     下面的列表描述可包含的部分可选特性：  
+   下面的列表描述可包含的部分可选特性：  
   
-     `Label` 的节点显示名称。  
+   `Label` 的节点显示名称。  
   
-     样式特性。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+   样式特性。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
-     `Category` - 标识共享此特性的元素的类别的名称。 有关更多信息，请参见 `<Category/>` 元素。  
+   `Category` - 标识共享此特性的元素的类别的名称。 有关更多信息，请参见 `<Category/>` 元素。  
   
-     `Property` - 标识具有相同属性值的元素的属性的名称。 有关更多信息，请参见 `<Property/>` 元素。  
+   `Property` - 标识具有相同属性值的元素的属性的名称。 有关更多信息，请参见 `<Property/>` 元素。  
   
-     `Group` - 如果节点包含其他节点，请将此特性设置为 `Expanded` 或 `Collapsed` 以显示或隐藏其内容。 必须有一个 `<Link/>` 元素，此元素包含 `Category="Contains"` 特性并将父节点指定为源节点，而将子节点指定为目标节点。 请参阅[代码元素分组](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)。  
+   `Group` - 如果节点包含其他节点，请将此特性设置为 `Expanded` 或 `Collapsed` 以显示或隐藏其内容。 必须有一个 `<Link/>` 元素，此元素包含 `Category="Contains"` 特性并将父节点指定为源节点，而将子节点指定为目标节点。 请参阅[代码元素分组](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes)。  
   
-     `Visibility` - 将此特性设置为 `Visible`、`Hidden` 或 `Collapsed`。 使用 `System.Windows.Visibility`。 请参阅[隐藏或显示节点和链接](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。  
+   `Visibility` - 将此特性设置为 `Visible`、`Hidden` 或 `Collapsed`。 使用 `System.Windows.Visibility`。 请参阅[隐藏或显示节点和链接](../modeling/browse-and-rearrange-code-maps.md#HidingShowing)。  
   
-     `Reference` - 将此特性设置为链接到文档或 URL。 请参阅[文档或 Url 链接到代码元素和链接](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)。  
+   `Reference` - 将此特性设置为链接到文档或 URL。 请参阅[文档或 Url 链接到代码元素和链接](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences)。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Student" Category="Person" />  
-          <Node Id="Passenger" Label="Instructor" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-       </Nodes>  
-       <Links>  
-          <Link ... />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Student" Category="Person" />  
+        <Node Id="Passenger" Label="Instructor" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+     </Nodes>  
+     <Links>  
+        <Link ... />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Links></Links>`  
+- `<Links></Links>`  
   
-     此元素包含 `<Link>` 元素的列表，这些元素可定义两个节点之间的链接。 有关更多信息，请参见 `<Link/>` 元素。  
+   此元素包含 `<Link>` 元素的列表，这些元素可定义两个节点之间的链接。 有关更多信息，请参见 `<Link/>` 元素。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Links>  
-          <Link ... />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Links>  
+        <Link ... />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Link/>`  
+- `<Link/>`  
   
-     此元素定义一个用于将源节点连接到目标节点的链接。 该节点将出现在 `<Links></Links>` 元素列表内。  
+   此元素定义一个用于将源节点连接到目标节点的链接。 该节点将出现在 `<Links></Links>` 元素列表内。  
   
-    > [!NOTE]
-    >  如果此元素引用未定义的节点，则代码图文档将自动创建具有指定特性（如果有）的节点。  
+  > [!NOTE]
+  >  如果此元素引用未定义的节点，则代码图文档将自动创建具有指定特性（如果有）的节点。  
   
-     此元素必须包括以下特性：  
+   此元素必须包括以下特性：  
   
-     `Source` - 链接的源节点  
+   `Source` - 链接的源节点  
   
-     `Target` - 链接的目标节点  
+   `Target` - 链接的目标节点  
   
-     下面的列表描述可包含的部分可选特性：  
+   下面的列表描述可包含的部分可选特性：  
   
-     `Label` - 链接的显示名称  
+   `Label` - 链接的显示名称  
   
-     样式特性。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+   样式特性。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
-     `Category` - 标识共享此特性的元素的类别的名称。 有关更多信息，请参见 `<Category/>` 元素。  
+   `Category` - 标识共享此特性的元素的类别的名称。 有关更多信息，请参见 `<Category/>` 元素。  
   
-     `Property` - 标识具有相同属性值的元素的属性的名称。 有关更多信息，请参见 `<Property/>` 元素。  
+   `Property` - 标识具有相同属性值的元素的属性的名称。 有关更多信息，请参见 `<Property/>` 元素。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Student" Category="Person" />  
-          <Node Id="Passenger" Label="Instructor" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-       </Nodes>  
-       <Links>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Link Source="Driver" Target="Car" Label="Passed" Stroke="Black" Background="Green" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Stroke="Black" Background="Red" Category="PassedTest" />  
-       </Links>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Student" Category="Person" />  
+        <Node Id="Passenger" Label="Instructor" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+     </Nodes>  
+     <Links>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Link Source="Driver" Target="Car" Label="Passed" Stroke="Black" Background="Green" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Stroke="Black" Background="Red" Category="PassedTest" />  
+     </Links>  
+  </DirectedGraph>  
+  ```  
   
--   `<Categories></Categories>`  
+- `<Categories></Categories>`  
   
-     此元素包含 `<Category/>` 元素的列表。 有关更多信息，请参见 `<Category/>` 元素。  
+   此元素包含 `<Category/>` 元素的列表。 有关更多信息，请参见 `<Category/>` 元素。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Categories>  
-           <Category ... />  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Categories>  
+         <Category ... />  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Category/>`  
+- `<Category/>`  
   
-     此元素定义 `Category` 特性，此特性用于标识共享此特性的元素。 `Category` 特性可用于组织代码图元素，通过继承提供共享特性或定义其他元数据。  
+   此元素定义 `Category` 特性，此特性用于标识共享此特性的元素。 `Category` 特性可用于组织代码图元素，通过继承提供共享特性或定义其他元数据。  
   
-     此元素必须包括以下特性：  
+   此元素必须包括以下特性：  
   
-     `Id` - 类别的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。  
+   `Id` - 类别的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。  
   
-     下面的列表描述可包含的部分可选特性：  
+   下面的列表描述可包含的部分可选特性：  
   
-     `Label` - 类别的读者友好名称。  
+   `Label` - 类别的读者友好名称。  
   
-     `BasedOn` - 当前元素的 `<Category/>` 继承自的父类别。  
+   `BasedOn` - 当前元素的 `<Category/>` 继承自的父类别。  
   
-     在此元素的示例中，`FailedTest` 类别从 `Stroke` 类别继承其 `PassedTest` 特性。 请参阅"创建分层类别"中的[通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+   在此元素的示例中，`FailedTest` 类别从 `Stroke` 类别继承其 `PassedTest` 特性。 请参阅"创建分层类别"中的[通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
-     类别还提供一些基本模板行为，这些行为用于控制节点和链接在代码图上显示的外观。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
+   类别还提供一些基本模板行为，这些行为用于控制节点和链接在代码图上显示的外观。 请参阅 [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Driver" Category="Person" />  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-          <Node Id="Passenger" Category="Person" />  
-       </Nodes>  
-       <Links>  
-          <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
-          <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
-       </Categories>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Driver" Category="Person" />  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+        <Node Id="Passenger" Category="Person" />  
+     </Nodes>  
+     <Links>  
+        <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
+        <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
+     </Categories>  
+  </DirectedGraph>  
+  ```  
   
--   `<Properties></Properties>`  
+- `<Properties></Properties>`  
   
-     此元素包含 `<Property/>` 元素的列表。 有关更多信息，请参见 `<Property/>` 元素。  
+   此元素包含 `<Property/>` 元素的列表。 有关更多信息，请参见 `<Property/>` 元素。  
   
-     示例:  
+   示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Properties>  
-           <Property ... />  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Properties>  
+         <Property ... />  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
--   `<Property/>`  
+- `<Property/>`  
   
-     此元素定义 `Property` 特性，此特性可用于将值分配给任何 DGML 元素或特性（包括类别和其他属性）。  
+   此元素定义 `Property` 特性，此特性可用于将值分配给任何 DGML 元素或特性（包括类别和其他属性）。  
   
-     此元素必须包括以下特性：  
+   此元素必须包括以下特性：  
   
-    -   `Id` - 该属性的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。  
+  - `Id` - 该属性的唯一名称和 `Label` 特性的默认值（如果未指定单独的 `Label` 特性）。  
   
-    -   `DataType` - 该属性存储的数据的类型  
+  - `DataType` - 该属性存储的数据的类型  
   
-     如果你想要在显示的属性**属性**窗口中，使用`Label`属性以指定该属性的显示名称。  
+    如果你想要在显示的属性**属性**窗口中，使用`Label`属性以指定该属性的显示名称。  
   
-     请参阅[向代码元素和链接分配类别](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)。  
+    请参阅[向代码元素和链接分配类别](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories)。  
   
-     示例:  
+    示例:  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8"?>  
-    <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
-       <Nodes>  
-          <Node Id="Driver" Label="Driver" Category="Person" DrivingAge="18"/>  
-          <Node Id="Car" Label="Car" Category="Automobile" />  
-          <Node Id="Truck" Label="Truck" Category="Automobile" />  
-          <Node Id="Passenger" Category="Person" />  
-       </Nodes>  
-       <Links>  
-          <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
-          <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
-       </Links>  
-       <Categories>  
-          <Category Id="Person" Background="Orange" />  
-          <Category Id="Automobile" Background="Yellow"/>  
-          <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
-          <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
-       </Categories>  
-       <Properties>  
-           <Property Id="DrivingAge" Label="Driving Age" DataType="System.Int32" />  
-       </Properties>  
-    </DirectedGraph>  
-    ```  
+  ```xml  
+  <?xml version="1.0" encoding="utf-8"?>  
+  <DirectedGraph Title="DrivingTest" xmlns="http://schemas.microsoft.com/vs/2009/dgml">  
+     <Nodes>  
+        <Node Id="Driver" Label="Driver" Category="Person" DrivingAge="18"/>  
+        <Node Id="Car" Label="Car" Category="Automobile" />  
+        <Node Id="Truck" Label="Truck" Category="Automobile" />  
+        <Node Id="Passenger" Category="Person" />  
+     </Nodes>  
+     <Links>  
+        <Link Source="Driver" Target="Car" Label="Passed" Category="PassedTest" />  
+        <Link Source="Driver" Target="Truck" Label="Failed" Category="FailedTest" />  
+     </Links>  
+     <Categories>  
+        <Category Id="Person" Background="Orange" />  
+        <Category Id="Automobile" Background="Yellow"/>  
+        <Category Id="PassedTest" Label="Passed" Stroke="Black" Background="Green" />  
+        <Category Id="FailedTest" Label="Failed" BasedOn="PassedTest" Background="Red" />  
+     </Categories>  
+     <Properties>  
+         <Property Id="DrivingAge" Label="Driving Age" DataType="System.Int32" />  
+     </Properties>  
+  </DirectedGraph>  
+  ```  
   
 ###  <a name="AddAlias"></a> 常用路径的别名  
  将常用路径替换为别名有助于减小 .dgml 文件的大小和加载或保存该文件所需的时间。 若要创建别名，请在 .dgml 文件的结尾处添加 `<Paths></Paths>` 部分。 在此部分添加 `<Path/>` 元素以定义路径的别名：  

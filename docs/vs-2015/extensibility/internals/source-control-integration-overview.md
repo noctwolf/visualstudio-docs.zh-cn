@@ -15,12 +15,12 @@ ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 1658f54cb50ca1d04668f177657b8aaa80592494
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a16a0ece140f205f8276f0b3ec7db6b2402d3537
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224180"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836761"
 ---
 # <a name="source-control-integration-overview"></a>源代码管理集成概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ ms.locfileid: "49224180"
   
  若要实现源代码管理插件使用源控制插件 API，请执行以下步骤：  
   
-1.  创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
+1. 创建实现中所指定的函数的 DLL[源代码管理插件](../../extensibility/source-control-plug-ins.md)。  
   
-2.  相应的注册表项，从而注册该 DLL (中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
+2. 相应的注册表项，从而注册该 DLL (中所述[如何： 安装源代码管理插件](../../extensibility/internals/how-to-install-a-source-control-plug-in.md))。  
   
-3.  创建一个帮助程序 UI 和显示当出现提示时源代码管理适配器包 （处理通过源代码管理插件的源代码管理功能的 Visual Studio 组件）  
+3. 创建一个帮助程序 UI 和显示当出现提示时源代码管理适配器包 （处理通过源代码管理插件的源代码管理功能的 Visual Studio 组件）  
   
- 一个源代码管理命令响应，Visual Studio IDE 提供了一个标准用户界面的基本操作，然后将信息传递到源代码管理插件通过源控件插件 API 中定义的函数。 有关高级选项，源代码管理插件不能对调用以提供自己的 UI，例如，浏览源代码管理的项目。 这意味着，用户可能会出现两种可能具有不同样式的 UI 时面对的源代码管理： Visual Studio 会显示在 UI 和源代码管理插件显示用户界面。 这是最明显与高级的源代码管理操作。  
+   一个源代码管理命令响应，Visual Studio IDE 提供了一个标准用户界面的基本操作，然后将信息传递到源代码管理插件通过源控件插件 API 中定义的函数。 有关高级选项，源代码管理插件不能对调用以提供自己的 UI，例如，浏览源代码管理的项目。 这意味着，用户可能会出现两种可能具有不同样式的 UI 时面对的源代码管理： Visual Studio 会显示在 UI 和源代码管理插件显示用户界面。 这是最明显与高级的源代码管理操作。  
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>实现源代码管理插件的缺点  
   

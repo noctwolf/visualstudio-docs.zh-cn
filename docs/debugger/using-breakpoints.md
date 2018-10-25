@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a84c87ecc3c5ca0ab1d2fe52e1ff56265c9365d
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356803"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816678"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。  
@@ -203,15 +203,15 @@ ms.locfileid: "49356803"
 
 **若要设置断点条件：**
 
-1.  右键单击断点符号，然后选择**条件**。 或悬停在断点符号，选择**设置**图标，并选择**条件**中**断点设置**窗口。  
+1. 右键单击断点符号，然后选择**条件**。 或悬停在断点符号，选择**设置**图标，并选择**条件**中**断点设置**窗口。  
 
-    您还可以在设置条件**断点**窗口中的右键单击断点并选择**设置**，然后选择**条件**。 
+   您还可以在设置条件**断点**窗口中的右键单击断点并选择**设置**，然后选择**条件**。 
   
-  ![断点设置](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+   ![断点设置](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
-1. 在下拉列表中，选择**条件表达式**，**命中计数**，或**筛选器**，并相应地设置值。 
+2. 在下拉列表中，选择**条件表达式**，**命中计数**，或**筛选器**，并相应地设置值。 
   
-1. 选择**关闭**或按**Ctrl**+**Enter**关闭**断点设置**窗口。 或者，从**断点**窗口中，选择**确定**关闭对话框。 
+3. 选择**关闭**或按**Ctrl**+**Enter**关闭**断点设置**窗口。 或者，从**断点**窗口中，选择**确定**关闭对话框。 
 
 显示具有设置条件断点**+** 源代码中的符号和**断点**windows。 
 

@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 446ec0dbc13e3f1d0907933388830c6f7d02f091
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919736"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -25,7 +25,7 @@ ms.locfileid: "43223963"
 > * 与 Web 和 Azure 存储资源集成
 > * 安排涉及多个 Azure Functions 的工作流
 
-## <a name="requirements"></a>需求
+## <a name="requirements"></a>要求
 
 - Visual Studio for Mac 7.5 或更高版本。
 - Azure 订阅（[https://azure.com/free](https://azure.com/free) 中免费提供）。
@@ -34,17 +34,17 @@ ms.locfileid: "43223963"
 
 1. 启动“Visual Studio for Mac”。
 
-1. 选择“文件”>“新建解决方案”。
+2. 选择“文件”>“新建解决方案”。
 
-1. 从“云”>“常规”类别中，选择“Azure Functions”模板。 使用 C# 创建托管 Azure Functions 的 .NET 类库。 单击 **“下一步”**。
+3. 从“云”>“常规”类别中，选择“Azure Functions”模板。 使用 C# 创建托管 Azure Functions 的 .NET 类库。 单击 **“下一步”**。
 
     ![Azure Functions 模板选择](media/azure-functions-lab-image1.png)
 
-1. 将“项目名称”设置为“AzureFunctionsLab”，单击“创建”。
+4. 将“项目名称”设置为“AzureFunctionsLab”，单击“创建”。
 
     ![命名和创建 Azure Function 项目](media/azure-functions-lab-image2.png)
 
-1. 展开“Solution Pad”中的节点。 默认项目模板包括对各种 Azure WebJobs 包以及 Newtonsoft.Json 包的 NuGet 引用。 
+5. 展开“Solution Pad”中的节点。 默认项目模板包括对各种 Azure WebJobs 包以及 Newtonsoft.Json 包的 NuGet 引用。 
 
      也有三个文件：  
         - host.json 用于描述该主机的全局配置选项  
@@ -408,7 +408,7 @@ ms.locfileid: "43223963"
     ![](https://user-images.githubusercontent.com/3944468/29033725-be9d5a5e-7b4a-11e7-8b55-df0a200b6320.png)
 -->
 
-## <a name="summary"></a>摘要
+## <a name="summary"></a>总结
 
 在本实验室中，你已了解如何使用 Visual Studio for Mac 开始生成 Azure Functions。
 

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: abb318f74c04c372aaddb520ff581e7f84128f5e
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: afee98dfd4d3192bb964c09ba4813c4469af95ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839903"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含"\<html >..."和所有其他标准部件的 HTML 页。 插入到模板中都*控制块*，这是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
@@ -255,7 +255,6 @@ private void WriteSquareLine(int i)
 #>
 Content of MyFile.txt is:
 <#= myFile #>
-
 ```
 
 还可以获取主机提供的其他服务。 有关详细信息，请参阅[访问 Visual Studio 或从模板的其他主机](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4)。
@@ -272,7 +271,7 @@ Content of MyFile.txt is:
 ## <a name="related-topics"></a>相关主题
 
 |任务|主题|
-|----------|-----------|
+|-|-|
 |编写模板。|[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |使用程序代码生成文本。|[文本模板的结构](../modeling/writing-a-t4-text-template.md)|
 |在 Visual Studio 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|

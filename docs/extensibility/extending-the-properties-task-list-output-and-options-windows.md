@@ -18,12 +18,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad9cd6c3356d38184b24a7e2ecfa06ca954bfbb0
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: ebff9aaeb49d99b26b92d1908e22397b9ab0a20d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499872"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868685"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>扩展属性、 任务列表、 输出和选项 windows
 您可以访问 Visual Studio 中的任何工具窗口。 本演练演示如何将工具窗口有关的信息集成到一个新**选项**页和上的新设置**属性**页上，以及如何将写入到**任务列表**并**输出**windows。  
@@ -98,33 +98,33 @@ ms.locfileid: "39499872"
 ## <a name="create-an-options-page"></a>创建选项页  
  你可以提供中的页**选项**对话框中，以便用户可以更改工具窗口的设置。 创建选项页需要两个类，用于描述的选项和中的条目*TodoListPackage.cs*或*TodoListPackage.vb*文件。  
   
-1.  添加一个名为类`ToolsOptions.cs`。 请`ToolsOptions`类继承自<xref:Microsoft.VisualStudio.Shell.DialogPage>。  
+1. 添加一个名为类`ToolsOptions.cs`。 请`ToolsOptions`类继承自<xref:Microsoft.VisualStudio.Shell.DialogPage>。  
   
-    ```csharp  
-    class ToolsOptions : DialogPage  
-    {  
-    }  
-    ```  
+   ```csharp  
+   class ToolsOptions : DialogPage  
+   {  
+   }  
+   ```  
   
-2.  添加以下 using 语句：  
+2. 添加以下 using 语句：  
   
-    ```csharp  
-    using Microsoft.VisualStudio.Shell;  
-    ```  
+   ```csharp  
+   using Microsoft.VisualStudio.Shell;  
+   ```  
   
-3.  在本演练中选项页提供了名为 DaysAhead 只有一个选项。 添加名为的私有字段**daysAhead**和名为的属性**DaysAhead**到`ToolsOptions`类：  
+3. 在本演练中选项页提供了名为 DaysAhead 只有一个选项。 添加名为的私有字段**daysAhead**和名为的属性**DaysAhead**到`ToolsOptions`类：  
   
-    ```csharp  
-    private double daysAhead;  
+   ```csharp  
+   private double daysAhead;  
   
-    public double DaysAhead  
-    {  
-        get { return daysAhead; }  
-        set { daysAhead = value; }  
-    }  
-    ```  
+   public double DaysAhead  
+   {  
+       get { return daysAhead; }  
+       set { daysAhead = value; }  
+   }  
+   ```  
   
- 现在必须使该项目注意此选项页。  
+   现在必须使该项目注意此选项页。  
   
 ### <a name="make-the-options-page-available-to-users"></a>向用户提供选项页  
   

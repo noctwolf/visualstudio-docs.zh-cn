@@ -1,5 +1,5 @@
 ---
-title: CV_access_e |Microsoft 文档
+title: CV_access_e |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35b10f8a98284fdec9e94043a4b827fab226d3aa
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: b6de95d74b8d7edc3bde08437c3d018270758112
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31457922"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878981"
 ---
 # <a name="cvaccesse"></a>CV_access_e
-指定可见性 （访问级别） 成员函数和变量的作用的域。  
+指定的成员函数和变量的可见性 （访问级别） 的范围。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,7 +45,7 @@ typedef enum CV_access_e {
  成员具有公共访问权限。  
   
 ## <a name="remarks"></a>备注  
- `friend`此处访问说明符不包含原因通常由有权访问类的私有和受保护的元素的非成员函数。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法以查找具有符号`SymTagFriend`访问。  
+ `friend`此处访问说明符不包含因为通常由有权访问类的私有和受保护的元素的非成员函数。 使用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法来使用的查找符号`SymTagFriend`访问。  
   
 ## <a name="requirements"></a>要求  
  标头： cvconst.h  

@@ -16,29 +16,29 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 4baec4427c09eff34b2fedb205de5556f22a4aa6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd45feec9fed576882aa665a2b0193a996884f54
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246138"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897766"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>“选择条件”对话框（旧版）
 本主题介绍如何使用**选择条件**对话框中，在旧[!INCLUDE[wfd1](../includes/wfd1-md.md)]。 在需要面向 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 或 [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] 时，请使用旧 [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]。  
   
  **选择条件**对话框用于选择要分配给活动的条件属性的声明性规则条件。 这些规则条件作为以下 Windows Workflow Foundation 现成可用的活动属性被公开：  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
- 有关如何访问信息**选择条件**对话框中，请参阅[如何： 创建声明性规则条件 （旧版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
+  有关如何访问信息**选择条件**对话框中，请参阅[如何： 创建声明性规则条件 （旧版）](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md)。  
   
- 下表介绍的用户界面 (UI) 元素**选择条件**对话框。  
+  下表介绍的用户界面 (UI) 元素**选择条件**对话框。  
   
 |UI 元素|描述|  
 |----------------|-----------------|  

@@ -25,12 +25,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c71181a939ae91986ed31e2518456002f5bb417c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3852a02015ba175b49a8e94adf8991003707a497
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237011"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914679"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>将 WPF 控件绑定到 Visual Studio 中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,26 +68,26 @@ ms.locfileid: "49237011"
 ### <a name="datasets"></a>数据集  
  当将表或列从**数据源**到设计器中，窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，执行以下操作：  
   
--   将数据集和新的 <xref:System.Windows.Data.CollectionViewSource> 添加到将项拖至的容器的资源中。 <xref:System.Windows.Data.CollectionViewSource> 是可用于导航和显示数据集中的数据的对象。  
+- 将数据集和新的 <xref:System.Windows.Data.CollectionViewSource> 添加到将项拖至的容器的资源中。 <xref:System.Windows.Data.CollectionViewSource> 是可用于导航和显示数据集中的数据的对象。  
   
--   为控件创建数据绑定。 如果将项拖动到设计器中的一个现有控件上，则 XAML 会将该控件绑定到该项。 如果将项拖动到容器时，XAML 创建拖动的项，为选定的控件，并将控件绑定到的项。 将在新的 <xref:System.Windows.Controls.Grid> 内创建该控件。  
+- 为控件创建数据绑定。 如果将项拖动到设计器中的一个现有控件上，则 XAML 会将该控件绑定到该项。 如果将项拖动到容器时，XAML 创建拖动的项，为选定的控件，并将控件绑定到的项。 将在新的 <xref:System.Windows.Controls.Grid> 内创建该控件。  
   
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 还将对代码隐藏文件做出以下更改：  
+  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 还将对代码隐藏文件做出以下更改：  
   
--   为包含该控件的 <xref:System.Windows.FrameworkElement.Loaded> 元素创建 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件处理程序。 该事件处理程序用数据填充表，从容器的资源中检索 <xref:System.Windows.Data.CollectionViewSource>，然后使第一个数据项成为当前项。 如果<xref:System.Windows.FrameworkElement.Loaded>事件处理程序已存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]将此代码添加到现有的事件处理程序。  
+- 为包含该控件的 <xref:System.Windows.FrameworkElement.Loaded> 元素创建 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件处理程序。 该事件处理程序用数据填充表，从容器的资源中检索 <xref:System.Windows.Data.CollectionViewSource>，然后使第一个数据项成为当前项。 如果<xref:System.Windows.FrameworkElement.Loaded>事件处理程序已存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]将此代码添加到现有的事件处理程序。  
   
 ### <a name="entity-data-models"></a>实体数据模型  
  当您将实体或实体属性从**数据源**到设计器中，窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]，执行以下操作：  
   
--   将新的 <xref:System.Windows.Data.CollectionViewSource> 添加到将项拖至的容器的资源中。 <xref:System.Windows.Data.CollectionViewSource> 是可用于导航和显示实体中的数据的对象。  
+- 将新的 <xref:System.Windows.Data.CollectionViewSource> 添加到将项拖至的容器的资源中。 <xref:System.Windows.Data.CollectionViewSource> 是可用于导航和显示实体中的数据的对象。  
   
--   为控件创建数据绑定。 如果将项拖动到设计器中的一个现有控件上，则 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 会将该控件绑定到该项。 如果将项拖动到容器中，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]创建控件的选择为拖动的项，并将控件绑定到的项。 将在新的 <xref:System.Windows.Controls.Grid> 内创建该控件。  
+- 为控件创建数据绑定。 如果将项拖动到设计器中的一个现有控件上，则 [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] 会将该控件绑定到该项。 如果将项拖动到容器中，[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]创建控件的选择为拖动的项，并将控件绑定到的项。 将在新的 <xref:System.Windows.Controls.Grid> 内创建该控件。  
   
- Visual Studio 还将对代码隐藏文件做出以下更改：  
+  Visual Studio 还将对代码隐藏文件做出以下更改：  
   
--   添加一种新方法，该方法返回对拖动到设计器中的实体（或包含拖动到设计器中的属性的实体）的查询。 新的方法具有的名称为 Get*EntityName*查询，其中*EntityName*是实体的名称。  
+- 添加一种新方法，该方法返回对拖动到设计器中的实体（或包含拖动到设计器中的属性的实体）的查询。 新的方法具有的名称为 Get*EntityName*查询，其中*EntityName*是实体的名称。  
   
--   为包含该控件的 <xref:System.Windows.FrameworkElement.Loaded> 元素创建 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件处理程序。 事件处理程序调用 Get*EntityName*查询方法来填充数据，检索该实体<xref:System.Windows.Data.CollectionViewSource>从容器的资源，然后使第一个数据项的当前项。 如果<xref:System.Windows.FrameworkElement.Loaded>事件处理程序已存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]将此代码添加到现有的事件处理程序。  
+- 为包含该控件的 <xref:System.Windows.FrameworkElement.Loaded> 元素创建 [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] 事件处理程序。 事件处理程序调用 Get*EntityName*查询方法来填充数据，检索该实体<xref:System.Windows.Data.CollectionViewSource>从容器的资源，然后使第一个数据项的当前项。 如果<xref:System.Windows.FrameworkElement.Loaded>事件处理程序已存在，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]将此代码添加到现有的事件处理程序。  
   
 ### <a name="services"></a>服务  
  当将服务对象或属性从**数据源**到设计器窗口[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]生成[!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)]创建数据绑定控件 （或将现有控件绑定到对象或属性）。 但是，[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 不会生成用数据填充代理服务对象的代码。 你必须自己编写此代码。 有关演示如何执行此操作的示例，请参阅[绑定 WPF 控件添加到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。  

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 54d7ead9f759e990b741ac9c5219af693d10a412
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884220"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>如何：基于 XSD 架构创建 XML 文档
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "49287263"
   
  可以在下列情况下使用此选项：  
   
--   了解架构中各个构造的使用情况。  
+- 了解架构中各个构造的使用情况。  
   
--   确认架构发挥了应有的作用。  
+- 确认架构发挥了应有的作用。  
   
- **生成示例 XML**功能仅对全局元素可用，并且需要有效的 XML 架构集。  
+  **生成示例 XML**功能仅对全局元素可用，并且需要有效的 XML 架构集。  
   
- 此功能通常会生成有效的 XML 文档。 但是，如果架构包含下列一项或多项内容，示例可能无效：  
+  此功能通常会生成有效的 XML 文档。 但是，如果架构包含下列一项或多项内容，示例可能无效：  
   
--   `xs:key`、`xs:keyref` 和 `xs:unique` 标识约束。  
+- `xs:key`、`xs:keyref` 和 `xs:unique` 标识约束。  
   
--   `xs:pattern` 方面。  
+- `xs:pattern` 方面。  
   
--   `xs:QName` 类型的枚举。  
+- `xs:QName` 类型的枚举。  
   
--   `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 类型。  
+- `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 类型。  
   
- 另请注意，只有当架构中发生 `xs:base64Binary` 类型的枚举时，才会生成同类型的内容。  
+  另请注意，只有当架构中发生 `xs:base64Binary` 类型的枚举时，才会生成同类型的内容。  
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>基于 XSD 文件生成 XML 实例文档  
   

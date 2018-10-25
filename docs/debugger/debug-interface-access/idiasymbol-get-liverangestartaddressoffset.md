@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_liveRangeStartAddressOffset |Microsoft 文档
+title: IDiaSymbol::get_liveRangeStartAddressOffset |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 471c9ecfb7ee1aa318e2db9c1c7de0cd56a1184f
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 517e3c516f18d32634d0c8243d65674175e7da17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468641"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49870973"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 返回本地符号的范围的起始地址的偏移量的部分。  
@@ -40,12 +40,12 @@ HRESULT get_liveRangeStartAddressOffset (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 > [!NOTE]
->  返回的错误代码意味着符号不具有实时范围信息。  
+>  返回的错误代码表示符号不具有实时范围信息。  
   
 ## <a name="remarks"></a>备注  
- 通过部分和偏移量而形成的地址是符号无效范围的开始处。  
+ 通过部分和偏移量而形成的地址是范围的符号无效的开头。  
   
- 若要获取的地址部分部分，使用[IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md)。  
+ 若要获取的地址部分一部分，请使用[IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md)。  
   
 ## <a name="requirements"></a>要求  
  标头： Dia2.h  

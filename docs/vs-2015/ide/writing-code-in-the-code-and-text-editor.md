@@ -65,12 +65,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64b8af9e995dc863fe578f61e22647726da73b35
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220527"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49838681"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>在代码和文本编辑器中编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,19 +146,19 @@ Visual Studio 编辑器提供了许多功能，让你可以更轻松地编写和
 
  若要隐藏导航栏，请更改“文本编辑器的所有语言”设置中的“导航栏”  选项（“工具/选项/文本编辑器/所有语言”，或者可以更改各语言的设置）。 可在下拉框中导航，如下所示：  
 
--   若要将焦点从代码窗口切换到导航栏，请按快捷组合键 CTRL+F2。  
+- 若要将焦点从代码窗口切换到导航栏，请按快捷组合键 CTRL+F2。  
 
--   若要将焦点从导航栏返回到代码窗口，请按 ESC 键。  
+- 若要将焦点从导航栏返回到代码窗口，请按 ESC 键。  
 
--   若要在导航栏上的项之间切换焦点，请按 TAB 键。  
+- 若要在导航栏上的项之间切换焦点，请按 TAB 键。  
 
--   若要选择具有焦点的导航栏项并返回 IDE，请按 ENTER 键  
+- 若要选择具有焦点的导航栏项并返回 IDE，请按 ENTER 键  
 
--   若要定位到类或类型，请在左侧的下拉列表中单击其名称。  
+- 若要定位到类或类型，请在左侧的下拉列表中单击其名称。  
 
--   若要直接定位到类中的过程，请单击右侧下拉列表中的过程。  
+- 若要直接定位到类中的过程，请单击右侧下拉列表中的过程。  
 
- 分部类中，在当前代码文件外部定义的成员可能会显示为灰色。  
+  分部类中，在当前代码文件外部定义的成员可能会显示为灰色。  
 
 ## <a name="find-code-using-navigate-to"></a>使用“导航到”查找代码
 Visual Studio 的"导航到"命令执行的代码以帮助您快速在代码文件、 文件路径和代码符号中查找指定的元素已设定焦点的搜索。 与其他文本搜索（例如“查找”或“在文件中查找”）不同的是，“导航到”会将其搜索范围限制为实际代码所在的区域，例如文件、窗体和代码模块。 例如，在 ASP.NET Web 应用程序中搜索某个字符串时，如果在整个解决方案中使用“查找”或“在文件中查找”，则有可能收到多个匹配项，包括代码注解中字符串的实例。 通过使用导航到，但是，你可能只能获取单个函数，而忽略代码注解中字符串的任何实例。

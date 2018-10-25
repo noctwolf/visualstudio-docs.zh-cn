@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e898620fe7b319b785e8e0d337cc04192b206bd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b4a3c0e60dc9211baf0b8568b3804b1df7f82765
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49227720"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812161"
 ---
 # <a name="network-usage"></a>网络使用情况
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +34,19 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ## <a name="collecting-network-tool-data"></a>收集网络工具数据  
  你应在 Visual Studio 计算机上打开的 Visual Studio 项目中运行“网络”工具。  
   
-1.  在 Visual Studio 中打开项目。  
+1. 在 Visual Studio 中打开项目。  
   
-2.  在菜单上，单击“调试/性能探查器...”。选择“网络”，然后选择“启动”。  
+2. 在菜单上，单击“调试/性能探查器...”。选择“网络”，然后选择“启动”。  
   
-3.  网络工具将开始收集应用的 HTTP 流量。  
+3. 网络工具将开始收集应用的 HTTP 流量。  
   
-     当运行应用时，左窗格中的摘要视图将自动显示捕获的 HTTP 操作列表。 在摘要视图中选择一个项，以在右窗格的“详细信息”面板中查看详细信息。  
+    当运行应用时，左窗格中的摘要视图将自动显示捕获的 HTTP 操作列表。 在摘要视图中选择一个项，以在右窗格的“详细信息”面板中查看详细信息。  
   
-4.  选择“停止”关闭应用。  
+4. 选择“停止”关闭应用。  
   
- “报表”窗口应类似于以下形式：  
+   “报表”窗口应类似于以下形式：  
   
- ![“网络”窗口](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![“网络”窗口](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>分析数据  
  通过选择摘要视图上显示的任何网络操作，可在运行应用的同时（甚至在已关闭应用后）分析捕获的 HTTP 流量。  

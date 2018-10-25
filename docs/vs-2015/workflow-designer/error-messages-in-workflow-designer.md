@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 942cd4846b091e31bc74ab3d45860e2782767079
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efd6bc680be42f1074da8d2313b1a4b8e9307580
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305053"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894841"
 ---
 # <a name="error-messages-in-workflow-designer"></a>工作流设计器中的错误消息
 本主题介绍在使用 [!INCLUDE[wfd1](../includes/wfd1-md.md)] 时可能遇到的错误消息的类型。  
@@ -29,17 +29,17 @@ ms.locfileid: "49305053"
 ## <a name="situations-in-which-errors-in-the-workflow-designer-occur"></a>工作流设计器中出现错误的情况  
  在以下情况下 [!INCLUDE[wfd2](../includes/wfd2-md.md)] 中会出现错误：  
   
-1.  表达式中存在错误。  
+1. 表达式中存在错误。  
   
-2.  活动的验证约束未满足。  
+2. 活动的验证约束未满足。  
   
-3.  XAML 文件中存在错误，导致活动无法加载。  
+3. XAML 文件中存在错误，导致活动无法加载。  
   
-4.  XAML 文件中存在错误，导致工作流无法加载。  
+4. XAML 文件中存在错误，导致工作流无法加载。  
   
- 无效的表达式和未满足的验证约束不会导致工作流无法生成。 会成功生成工作流，但在运行时将引发 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 文件中存在错误，生成将失败。  
+   无效的表达式和未满足的验证约束不会导致工作流无法生成。 会成功生成工作流，但在运行时将引发 <xref:System.Activities.InvalidWorkflowException>。 如果 XAML 文件中存在错误，生成将失败。  
   
- 内部[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，当加载工作流时，其错误都显示在**错误列表**。 若要导航到错误的源的活动，请双击中的错误**错误列表**。  
+   内部[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，当加载工作流时，其错误都显示在**错误列表**。 若要导航到错误的源的活动，请双击中的错误**错误列表**。  
   
 ### <a name="expression-errors"></a>表达式错误  
  无效表达式用红色圆圈表示，并且该表达式旁有一个白色感叹号。 悬停在此图标上将显示描述错误来源的工具提示。 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 内，单击该表达式可查看对错误来源加下划线的行。 悬停在此加下划线的文本上将显示描述错误来源的工具提示。  

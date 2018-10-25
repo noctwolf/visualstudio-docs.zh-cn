@@ -15,12 +15,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b44d57fbd36e82a84aaa0b2e837d24d429073f79
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: ca43b4daea5c5bb95a0752eeae93814d234e9a62
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34845313"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923012"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>将控件绑定到 Visual Studio 中的数据
 通过将数据绑定到控件，可以向应用程序的用户显示数据。 可以通过将项从创建这些数据绑定控件**数据源**窗口拖到设计图面上或在 Visual Studio 中的图面上的控件。
@@ -30,14 +30,15 @@ ms.locfileid: "34845313"
 ## <a name="data-sources"></a>数据源
  在数据绑定的上下文中，数据源表示可绑定到您的用户界面的内存中的数据。 在实践中，数据源可以是实体框架类、 数据集、 封装.NET 代理对象、 LINQ to SQL 类或任何.NET 对象或集合中的服务终结点。 某些数据源，可以通过将项从创建数据绑定控件**数据源**窗口中，而其他数据源不能。 下表显示了支持的数据源。
 
-|数据源|中的拖放支持**Windows 窗体设计器**|中的拖放支持**WPF 设计器**|中的拖放支持**Silverlight 设计器**|
-|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|
-|数据集|是|是|否|
-|实体数据模型|是<sup>1</sup>|是|是|
-|LINQ to SQL 类|否<sup>2</sup>|否<sup>2</sup>|否<sup>2</sup>|
-|服务 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服务和 web 服务)|是|是|是|
-|对象|是|是|是|
-|SharePoint|是|是|是|
+
+| 数据源 | 中的拖放支持**Windows 窗体设计器** | 中的拖放支持**WPF 设计器** | 中的拖放支持**Silverlight 设计器** |
+| - | - | - | - |
+| 数据集 | 是 | 是 | 否 |
+| 实体数据模型 | 是<sup>1</sup> | 是 | 是 |
+| LINQ to SQL 类 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
+| 服务 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服务和 web 服务) | 是 | 是 | 是 |
+| 对象 | 是 | 是 | 是 |
+| SharePoint | 是 | 是 | 是 |
 
  1. 生成模型使用**实体数据模型**向导中，然后将这些对象拖到设计器。
 
@@ -54,7 +55,7 @@ ms.locfileid: "34845313"
  下表列出了一些最常见的任务所需执行将控件绑定到数据。
 
 |任务|详细信息|
-|----------|----------------------|
+|----------| - |
 |打开**数据源**窗口。|在编辑器中打开设计图面，然后选择**视图** > **数据源**。|
 |将数据源添加到你的项目。|[添加新数据源](../data-tools/add-new-data-sources.md)|
 |设置中的项拖时创建的控件**数据源**到设计器窗口。|[设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|

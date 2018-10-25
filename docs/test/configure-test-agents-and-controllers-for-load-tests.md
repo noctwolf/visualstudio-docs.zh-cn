@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: a0da0ca3fb5c36a0c878e641121312b2773b8215
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: abc993d13752cdae00ea75c1eba8e39901f562c0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321107"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942980"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>配置测试代理和测试控制器以运行负载测试
 
@@ -35,25 +35,25 @@ Visual Studio 可以使用物理计算机或虚拟机为应用生成模拟负载
 
 此体系结构提供了以下好处：
 
--   通过将其他测试代理添加到测试控制器增加负载生成的功能。
+- 通过将其他测试代理添加到测试控制器增加负载生成的功能。
 
--   在相同或不同计算机上灵活安装客户端、测试控制器和测试代理软件。 例如:
+- 在相同或不同计算机上灵活安装客户端、测试控制器和测试代理软件。 例如:
 
-     **本地配置：**
+   **本地配置：**
 
-    -   Machine1：Visual Studio、控制器、代理。
+  - Machine1：Visual Studio、控制器、代理。
 
-     ![使用控制器和代理的本地计算机](./media/load-test-configa.png)
+    ![使用控制器和代理的本地计算机](./media/load-test-configa.png)
 
-     **典型远程配置：**
+    **典型远程配置：**
 
-    -   Machine1 和 Machine2：Visual Studio（多名测试人员可以使用同一个控制器）。
+  - Machine1 和 Machine2：Visual Studio（多名测试人员可以使用同一个控制器）。
 
-    -   Machine3：控制器（也可安装代理）。
+  - Machine3：控制器（也可安装代理）。
 
-    -   Machine4-n：与 Machine3 上的控制器关联的一个或多个代理。
+  - Machine4-n：与 Machine3 上的控制器关联的一个或多个代理。
 
-     ![使用控制器和代理的远程计算机](./media/load-test-configb.png)
+    ![使用控制器和代理的远程计算机](./media/load-test-configb.png)
 
 即使测试控制器通常管理多个测试代理，代理也只能关联到一个控制器。 每个测试代理可以由一组开发人员共享。 此体系结构可以轻松地增加测试代理数量，从而生成更大的负载。
 

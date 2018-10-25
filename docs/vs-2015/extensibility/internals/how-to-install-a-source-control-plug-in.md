@@ -16,12 +16,12 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 35150331ed22960bb8556a7b1175e0ed629efca7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5f8c442aec21042faa4aa992dcdefc4f9d2ad335
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292976"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812980"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何： 安装源代码管理插件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,16 +98,16 @@ ms.locfileid: "49292976"
 ## <a name="how-an-ide-locates-the-dll"></a>IDE 如何定位 DLL  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE 提供两种方法可以查找源控制插件 DLL:  
   
--   查找默认的源代码管理插件，并以无提示方式连接到它。  
+- 查找默认的源代码管理插件，并以无提示方式连接到它。  
   
--   查找所有已注册的源控制插件，从中可以选择一个。  
+- 查找所有已注册的源控制插件，从中可以选择一个。  
   
- 要在第一种方法中查找该 DLL，IDE 将查找条目 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子项下。 此项的值将指向另一个子项。 IDE 将然后查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的第二个子项中的条目。 此项的值指向该 DLL 的 IDE。  
+  要在第一种方法中查找该 DLL，IDE 将查找条目 ProviderRegKey HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider 子项下。 此项的值将指向另一个子项。 IDE 将然后查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的第二个子项中的条目。 此项的值指向该 DLL 的 IDE。  
   
 > [!NOTE]
 >  IDE 不会从相对路径 (例如，.\NewProvider.DLL) 加载 Dll。 必须指定 DLL 的完整路径 (例如，c:\Providers\NewProvider.DLL)。 这可通过阻止未经授权或模拟插件 Dll 加载增强安全性的 IDE。  
   
- 要在第二种方法中查找该 DLL，IDE 将查找所有条目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子项下 *。* 每个项包含一个名称和值。 IDE 将向用户显示这些名称的列表 *。* 当用户选择一个名称时，IDE 将查找指向一个子项的所选名称的值。 IDE 将查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的子项中的条目。 该条目的值指向正确的 DLL 的 IDE。  
+ 要在第二种方法中查找该 DLL，IDE 将查找所有条目的 HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders 子项下<em>。</em> 每个项包含一个名称和值。 IDE 将向用户显示这些名称的列表<em>。</em> 当用户选择一个名称时，IDE 将查找指向一个子项的所选名称的值。 IDE 将查找名 SccServerPath 为 HKEY_LOCAL_MACHINE 下的子项中的条目。 该条目的值指向正确的 DLL 的 IDE。  
   
  源代码管理插件需要支持查找 DLL 的两种方式，并因此，设置 ProviderRegKey，覆盖任何以前的设置。 更重要的是，它必须本身向列表添加的 InstalledSccProviders 因此，用户可以选择的源代码管理插件，以使用。  
   

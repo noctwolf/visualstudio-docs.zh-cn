@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4f23cae01c9356da26c42ca299a6ac6bb7c190f
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 34c263479be170b9f108c4cbc095be737f0b2b22
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498706"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936027"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板允许你创建的控件，将自动添加到**工具箱**时安装该扩展。 本主题演示如何使用模板创建简单的计数器控件，可以将它们分发给其他用户。  
@@ -61,7 +61,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
     |`Button1`|**文本**|重置|  
   
 ### <a name="code-the-user-control"></a>代码的用户控件  
- `Counter`控件将公开一个方法，用于递增计数器，每当增加计数器的数值，将引发一个事件**重置**按钮和用于存储当前计数、 显示文本，以及是否要显示的三个属性或隐藏**重置**按钮。 `ProvideToolboxControl`属性确定在何处**工具箱**`Counter`控件将显示。  
+ `Counter`控件将公开一个方法，用于递增计数器，每当增加计数器的数值，将引发一个事件**重置**按钮和用于存储当前计数、 显示文本，以及是否要显示的三个属性或隐藏**重置**按钮。 `ProvideToolboxControl` 特性确定 **控件会出现在“工具箱”**`Counter` 的什么位置。  
   
 #### <a name="to-code-the-user-control"></a>编写用户控件的代码  
   
@@ -139,7 +139,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
   
     ```  
   
-8.  类定义正上方中`ProvideToolboxControl`特性声明，将从第一个参数的值更改`"MyWinFormsControl.Counter"`到`"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。  
+8.  在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。  
   
      以下示例演示了 `ProvideToolboxControl` 特性和调整后的类定义。  
   
@@ -209,7 +209,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
      该计数器将重置为**0**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*中 * \bin\debug\*项目文件夹。 可以将该控件部署通过上传 *.vsix*文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。  
+ 在生成**工具箱**控件，Visual Studio 将创建名为的文件*ProjectName.vsix*中<em>\bin\debug\*项目文件夹。可以通过上传 *.vsix 部署控件</em>文件到网络或网站。 当用户在打开 *.vsix*安装文件，该控件并将其添加到 Visual Studio**工具箱**用户的计算机上。 或者，可以上传 *.vsix*的文件[Visual Studio 库](http://go.microsoft.com/fwlink/?LinkID=123847)Web 站点，以便用户可以通过在浏览找到它**工具** >  **扩展和更新**对话框。  
   
 ## <a name="see-also"></a>请参阅  
  [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)   

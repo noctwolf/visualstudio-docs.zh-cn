@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgramNode |Microsoft 文档
+title: IDebugProgramPublisher2::PublishProgramNode |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f04624f7a2b42fa50360841b91db4cb70b5e15ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e1182158852e978cb78096eec6e60783317f1cc0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930450"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
-使程序节点可用于使用的调试引擎 (DEs) 和会话调试管理器 (SDM)。  
+使程序节点可供使用的调试引擎 (DEs) 和会话调试管理器 (SDM)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,17 +41,17 @@ int PublishProgramNode(
   
 #### <a name="parameters"></a>参数  
  `pProgramNode`  
- [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)表示程序节点要提供的对象。  
+ [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)对象，表示要提供的程序节点。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法使程序可以查询有关之前选择并启动它们以进行调试的信息。  
+ 此方法使程序能够查询的信息，然后选择并启动它们以进行调试。  
   
- 若要从可用性删除程序节点，调用[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)方法。  
+ 若要从可用性删除程序节点，请调用[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)

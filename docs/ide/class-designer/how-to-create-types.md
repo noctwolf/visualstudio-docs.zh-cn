@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c41f7c5a9fb9540661440a19462ee12b1aadd9
-ms.sourcegitcommit: 4c0db930d9d5d8b857d3baf2530ae89823799612
+ms.openlocfilehash: 769bcfa202961c5a492e4fcb5af8e522b9052059
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33957251"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842256"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 
@@ -71,21 +71,21 @@ ms.locfileid: "33957251"
 
 ##  <a name="CustAttributeType"></a>将自定义特性应用于类型
 
-1.  在类图上单击类型的形状。
+1. 在类图上单击类型的形状。
 
-2.  在“属性”中，单击类型的“自定义属性”属性旁边的省略号 (...) 按钮。
+2. 在“属性”中，单击类型的“自定义属性”属性旁边的省略号 (...) 按钮。
 
-3.  添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
+3. 添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
 
    自定义属性随即应用于类型。
 
 ##  <a name="CustAttributeMember"></a>将自定义特性应用于类型成员
 
-1.  在类图上类型的形状中单击成员的名称，或者在“类详细信息”窗口中单击成员所在的行。
+1. 在类图上类型的形状中单击成员的名称，或者在“类详细信息”窗口中单击成员所在的行。
 
-2.  在“属性”中，查找成员的“自定义属性”属性。
+2. 在“属性”中，查找成员的“自定义属性”属性。
 
-3.  添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
+3. 添加一个或多个自定义特性，一行一个。 请不要将它们放在括号内。
 
    自定义属性随即应用于类型。
 

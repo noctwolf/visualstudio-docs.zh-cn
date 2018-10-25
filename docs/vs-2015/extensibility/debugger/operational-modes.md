@@ -15,25 +15,25 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: bdadec54c5b28ae77d4905d2884bbee2d1f2a2ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ae5380f360ca1a18bcf0edafea762417084aa3d7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298819"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817453"
 ---
 # <a name="operational-modes"></a>操作模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 有三种模式在其中 IDE 可以操作，按如下所示：  
   
--   [设计模式](#vsconoperationalmodesanchor1)  
+- [设计模式](#vsconoperationalmodesanchor1)  
   
--   [运行模式](#vsconoperationalmodesanchor2)  
+- [运行模式](#vsconoperationalmodesanchor2)  
   
--   [中断模式](#vsconoperationalmodesanchor3)  
+- [中断模式](#vsconoperationalmodesanchor3)  
   
- 如何在自定义调试引擎 (DE) 转换这些模式之间是要求你熟悉转换机制的实施决策。 DE 可能或不能直接实现这些模式。 这些模式是真正调试包模式切换的基于用户执行任何操作或来自德国的事件。 例如，从运行模式下以中断模式的转换被策划从 DE 停止事件。 从中断模式或步骤模式下运行的转换是由用户执行操作，例如步骤或 Execute 策划。 有关 DE 转换的详细信息，请参阅[控制执行](../../extensibility/debugger/control-of-execution.md)。  
+  如何在自定义调试引擎 (DE) 转换这些模式之间是要求你熟悉转换机制的实施决策。 DE 可能或不能直接实现这些模式。 这些模式是真正调试包模式切换的基于用户执行任何操作或来自德国的事件。 例如，从运行模式下以中断模式的转换被策划从 DE 停止事件。 从中断模式或步骤模式下运行的转换是由用户执行操作，例如步骤或 Execute 策划。 有关 DE 转换的详细信息，请参阅[控制执行](../../extensibility/debugger/control-of-execution.md)。  
   
 ##  <a name="vsconoperationalmodesanchor1"></a> 设计模式  
  设计模式是 nonrunning 状态的 Visual Studio 调试时，在此期间可以设置调试应用程序中的功能。  

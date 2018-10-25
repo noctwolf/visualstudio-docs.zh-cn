@@ -32,12 +32,12 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d02d36e29f823db424c32cf40d036d498282da7c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 3254ea0197ee0b241735df9c1f437490a09da969
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289323"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49914305"
 ---
 # <a name="expressions-in-the-debugger"></a>调试器中的表达式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,13 +104,13 @@ int main()
   
  调试器内部函数：  
   
--   一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
+- 一定是安全的：执行调试器内部函数将不会中断将调试的进程。  
   
--   在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
+- 在任何表达式中都是被允许的，甚至在不允许副作用和函数计算的方案中也是如此。  
   
--   在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
+- 在无法进行正则函数调用的方案（例如，调试小型转储）中是可行的。  
   
- 此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, “asd”)` 比 `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`更易于写入断点条件中。 )  
+  此外，可利用调试器内部函数更方便地计算表达式。 例如， `strncmp(str, “asd”)` 比 `str[0] == ‘a’ && str[1] == ‘s’ && str[2] == ‘d’`更易于写入断点条件中。 )  
   
 |区域|内部函数|  
 |----------|-------------------------|  

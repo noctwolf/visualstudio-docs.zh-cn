@@ -17,12 +17,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1c1342d97d07ab44a30768e7515521c7d08b90e6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ac752d0b85a45193fe4aafb55e33ec23e26aed6a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182788"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942005"
 ---
 # <a name="shader-designer"></a>着色器设计器
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,11 +125,11 @@ ms.locfileid: "49182788"
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>将不同的纹理绑定到一个纹理寄存器中，或修改其他材料参数  
   
-1.  在“选择”模式下，选择设计图面的空白区域。 这将使“属性”窗口显示全局着色器属性。  
+1. 在“选择”模式下，选择设计图面的空白区域。 这将使“属性”窗口显示全局着色器属性。  
   
-2.  在“属性”窗口中，为要更改的纹理和参数属性指定新值。  
+2. 在“属性”窗口中，为要更改的纹理和参数属性指定新值。  
   
- 以下是可以修改的着色器参数：  
+   以下是可以修改的着色器参数：  
   
 |参数|属性|  
 |---------------|----------------|  

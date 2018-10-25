@@ -10,33 +10,33 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3772e194f801735edf4c857b605b3abb6c22144b
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3e3e5fb1eea1d8bf821bf55b50ccfc1db488249b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945813"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910597"
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同时生成多个配置
 
 使用“批生成”对话框，可以同时使用大多数类型的项目的多个甚至所有生成配置来生成这些项目。 但是，不能同时在多个生成配置中生成以下类型的项目：
 
-1.  使用 JavaScript 为 Windows 生成的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。
+1. 使用 JavaScript 为 Windows 生成的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。
 
-2.  所有 Visual Basic 项目。
+2. 所有 Visual Basic 项目。
 
- 有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
+   有关生成配置的详细信息，请参阅[了解生成配置](../ide/understanding-build-configurations.md)。
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>在多个生成配置中生成项目
 
-1.  在菜单栏上，依次选择“生成” > “批生成”。
+1. 在菜单栏上，依次选择“生成” > “批生成”。
 
-2.  在“生成”列中，选择要在其中生成项目的配置的复选框。
+2. 在“生成”列中，选择要在其中生成项目的配置的复选框。
 
     > [!TIP]
     > 若要编辑或创建解决方案的生成配置，请在菜单栏上选择“生成” > “Configuration Manager”，以打开“Configuration Manager”对话框。 在对解决方案的生成配置进行编辑后，请选择“批生成”对话框中的“重新生成”按钮，以更新解决方案中项目的所有生成配置。
 
-3.  选择“生成”或“重新生成”按钮以使用指定配置生成项目。
+3. 选择“生成”或“重新生成”按钮以使用指定配置生成项目。
 
 ## <a name="see-also"></a>请参阅
 

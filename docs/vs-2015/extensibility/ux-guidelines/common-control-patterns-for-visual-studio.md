@@ -13,12 +13,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: fb915f7d17070d78e5749834c325bfee4e8a6879
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 56f1afba0db8ba213a601835ca7a8df39d56f171
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224037"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49860755"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的常见控件模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -218,23 +218,23 @@ ms.locfileid: "49224037"
   
 ##### <a name="visual-style"></a>视觉样式  
   
--   水印应在窗口中水平居中。  
+- 水印应在窗口中水平居中。  
   
--   水印应为居中对齐，不是左对齐。  
+- 水印应为居中对齐，不是左对齐。  
   
--   水印可能垂直居中或定位在区域的顶部附近。 如果位于区域的顶部附近，必须有足够的空间更高版本，以便突出显示水印。  
+- 水印可能垂直居中或定位在区域的顶部附近。 如果位于区域的顶部附近，必须有足够的空间更高版本，以便突出显示水印。  
   
--   使用`Environment.GrayText`颜色的令牌和标准环境字体。 超链接应使用标准的超链接共享令牌： `Environment.PanelHyperlink`， `Environment.PanelHyperlinkHover`， `Environment.PanelHyperlinkPressed`，和`Environment.PanelHyperlinkDisabled`。  
+- 使用`Environment.GrayText`颜色的令牌和标准环境字体。 超链接应使用标准的超链接共享令牌： `Environment.PanelHyperlink`， `Environment.PanelHyperlinkHover`， `Environment.PanelHyperlinkPressed`，和`Environment.PanelHyperlinkDisabled`。  
   
--   水印不能选择背景上  
+- 水印不能选择背景上  
   
--   如果可能，包括链接中的水印，以帮助用户入门。  
+- 如果可能，包括链接中的水印，以帮助用户入门。  
   
- ![水印设计器窗口中的文本](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
+  ![水印设计器窗口中的文本](../../extensibility/ux-guidelines/media/070702-05-watermark1.png "070702 05_Watermark1")  
   
- ![水印文本工具窗口中的](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
+  ![水印文本工具窗口中的](../../extensibility/ux-guidelines/media/070702-06-watermark2.png "070702 06_Watermark2")  
   
- **Visual Studio 中的水印文本的示例**  
+  **Visual Studio 中的水印文本的示例**  
   
 ##  <a name="BKMK_ButtonsAndHyperlinks"></a> 按钮和超链接  
   
@@ -246,25 +246,25 @@ ms.locfileid: "49224037"
   
  何时使用命令按钮：  
   
--   主命令  
+- 主命令  
   
--   显示用于收集输入的 windows 或做出选择，即使它们是辅助命令  
+- 显示用于收集输入的 windows 或做出选择，即使它们是辅助命令  
   
--   破坏性或不可逆的操作  
+- 破坏性或不可逆的操作  
   
--   向导和页面流内的承诺按钮  
+- 向导和页面流内的承诺按钮  
   
- 避免在工具窗口中的命令按钮或如果标签需要两个以上的单词。 链接具有更长的标签。  
+  避免在工具窗口中的命令按钮或如果标签需要两个以上的单词。 链接具有更长的标签。  
   
- 何时使用链接：  
+  何时使用链接：  
   
--   导航到另一个窗口、 文档或网页  
+- 导航到另一个窗口、 文档或网页  
   
--   情况下，需要更长的标签或简短句子来描述操作的目的  
+- 情况下，需要更长的标签或简短句子来描述操作的目的  
   
--   其中一个按钮将会严重影响 UI，前提是该操作不破坏性或不可逆的紧密空格  
+- 其中一个按钮将会严重影响 UI，前提是该操作不破坏性或不可逆的紧密空格  
   
--   取消加重辅助命令的情况下在其中有很多命令  
+- 取消加重辅助命令的情况下在其中有很多命令  
   
 #### <a name="examples"></a>示例  
  ![以下状态消息的信息栏命令链接](../../extensibility/ux-guidelines/media/070703-01-commandlinkinfobar.png "070703 01_CommandLinkInfobar")  
@@ -307,19 +307,19 @@ ms.locfileid: "49224037"
   
  何时使用仅限省略号的短按钮：  
   
--   如果有多个长 **[浏览...]** 在对话框中，如当多个字段允许的浏览按钮。 使用短 **[...]** 为每个要避免这种情况下创建的令人困惑访问项的按钮 (**& 浏览**并**B (&)** 相同对话框中)。  
+- 如果有多个长 **[浏览...]** 在对话框中，如当多个字段允许的浏览按钮。 使用短 **[...]** 为每个要避免这种情况下创建的令人困惑访问项的按钮 (**& 浏览**并**B (&)** 相同对话框中)。  
   
--   在紧密的对话框中，或没有合理的位置将很长的按钮。  
+- 在紧密的对话框中，或没有合理的位置将很长的按钮。  
   
--   如果该按钮将显示一个网格控件中。  
+- 如果该按钮将显示一个网格控件中。  
   
- 使用该按钮的准则：  
+  使用该按钮的准则：  
   
--   不要使用访问密钥。 若要访问它使用键盘，用户必须按 tab 键从相邻的控件。 请确保 tab 键顺序，以便其将填充的字段后立即处于任何浏览按钮。 永远不会使用下面的第一个期间下划线。  
+- 不要使用访问密钥。 若要访问它使用键盘，用户必须按 tab 键从相邻的控件。 请确保 tab 键顺序，以便其将填充的字段后立即处于任何浏览按钮。 永远不会使用下面的第一个期间下划线。  
   
--   设置 Microsoft Active Accessibility (MSAA)**名称**属性设置为**浏览...** （包括省略号） 这样的屏幕阅读器将读取它作为"浏览"并不是"圆点点点"或"期间期期间。" 对于托管控件，这意味着设置**AccessibleName**属性。  
+- 设置 Microsoft Active Accessibility (MSAA)**名称**属性设置为**浏览...** （包括省略号） 这样的屏幕阅读器将读取它作为"浏览"并不是"圆点点点"或"期间期期间。" 对于托管控件，这意味着设置**AccessibleName**属性。  
   
--   永远不会使用省略号 **[...]** 用于浏览操作以外的按钮。 例如，如果您需要 **[新建...]** 按钮，但没有足够的空间的文本，然后在对话框需要重新设计。  
+- 永远不会使用省略号 **[...]** 用于浏览操作以外的按钮。 例如，如果您需要 **[新建...]** 按钮，但没有足够的空间的文本，然后在对话框需要重新设计。  
   
 ##### <a name="sizing-and-spacing"></a>调整大小和间距  
  ![调整大小&#91;浏览...&#93;按钮](../../extensibility/ux-guidelines/media/070703-06-browsesizing.png "070703 06_BrowseSizing")  
@@ -442,13 +442,13 @@ ms.locfileid: "49224037"
 ##### <a name="trid-tree-view-and-grid-view"></a>Trid （树视图和网格视图）  
  Trid 控件是一个复杂的控件，它包含 grid 中的树视图。 展开、 折叠，和导航树应遵守相同的键盘命令为树视图中，添加以下内容：  
   
--   **向右箭头：** 展开的节点。 展开节点后，它应继续导航到在右侧最接近的列。 导航应停止的行的末尾。  
+- **向右箭头：** 展开的节点。 展开节点后，它应继续导航到在右侧最接近的列。 导航应停止的行的末尾。  
   
--   **选项卡上：** 导航到在右侧的最接近的单元格。  在行结束时，导航到下一行将继续。  
+- **选项卡上：** 导航到在右侧的最接近的单元格。  在行结束时，导航到下一行将继续。  
   
--   **按 shift + Tab:** 导航到左侧的最接近的单元格。  在行的开头，导航到上一行中最右边的单元格将继续。  
+- **按 shift + Tab:** 导航到左侧的最接近的单元格。  在行的开头，导航到上一行中最右边的单元格将继续。  
   
- ![在 Visual Studio 中的 Trid 控件](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
+  ![在 Visual Studio 中的 Trid 控件](../../extensibility/ux-guidelines/media/070705-6-trid.png "070705 6_Trid")  
   
- **在 Visual Studio 中的 trid 控件**
+  **在 Visual Studio 中的 trid 控件**
 

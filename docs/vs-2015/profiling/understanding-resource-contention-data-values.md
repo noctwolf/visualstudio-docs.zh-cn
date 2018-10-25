@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54f8c7a545e0517c9d27dc32b68428e078cdfd40
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f9a6ac882a258767fd1de1ebd45015e9b86912e9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263232"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49911982"
 ---
 # <a name="understanding-resource-contention-data-values"></a>了解资源争用数据值
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,21 +31,21 @@ ms.locfileid: "49263232"
   
  **要求**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
- 资源争用报告显示争用的总数，以及对于在其中发生等待的模块、函数、源代码行和指令，等待资源所用的总时间。  
+  资源争用报告显示争用的总数，以及对于在其中发生等待的模块、函数、源代码行和指令，等待资源所用的总时间。  
   
--   非独占值显示资源争用迫使函数等待的争用总数以及函数等待的总时间。  非独占值包括函数调用的子函数导致的争用。  
+- 非独占值显示资源争用迫使函数等待的争用总数以及函数等待的总时间。  非独占值包括函数调用的子函数导致的争用。  
   
--   独占值只显示迫使函数等待并且由函数体中的代码导致的争用数。 不包括子函数导致的争用。 函数的独占时间也只包括函数体中的语句导致的等待时间。  
+- 独占值只显示迫使函数等待并且由函数体中的代码导致的争用数。 不包括子函数导致的争用。 函数的独占时间也只包括函数体中的语句导致的等待时间。  
   
- 资源争用报告视图还包括显示一段时间内各个争用事件的时间线关系图，并显示创建特定事件的调用堆栈。 有关更多信息，请参见下列主题之一：  
+  资源争用报告视图还包括显示一段时间内各个争用事件的时间线关系图，并显示创建特定事件的调用堆栈。 有关更多信息，请参见下列主题之一：  
   
--   [“线程详细信息”视图](../profiling/thread-details-view-contention-data.md)  
+- [“线程详细信息”视图](../profiling/thread-details-view-contention-data.md)  
   
--   [“资源详细信息”视图](../profiling/resource-details-view-contention-data.md)  
+- [“资源详细信息”视图](../profiling/resource-details-view-contention-data.md)  
   
- 有关并发分析的第二个模式的详细信息，请参阅[并发可视化工具](../profiling/concurrency-visualizer.md)。
+  有关并发分析的第二个模式的详细信息，请参阅[并发可视化工具](../profiling/concurrency-visualizer.md)。
 
 
 

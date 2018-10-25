@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: fd0aa403e702a591a0b09d0891116063a3ed9ff2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: f8d1ae730947a70cac253866d0257aa4e0216626
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44281047"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49882764"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 适用于 UWP 应用的 Visual Studio 模拟器是模拟的 UWP 应用的桌面应用程序。 通常情况下，想要在本地计算机、 连接的设备或远程计算机上进行调试。 但是，在某些情况下，你可能想要使用的 Visual Studio 模拟器来模拟不同的物理屏幕大小和分辨率。 此外可以模拟常用的触摸和旋转事件，并模拟网络连接属性。
@@ -109,41 +109,41 @@ ms.locfileid: "44281047"
      ![屏幕快照设置上下文菜单](../debugger/media/simulator_screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ##  <a name="BKMK_Simulate_network_connection_properties"></a> 模拟网络连接属性  
- 可帮助你的应用程序用户通过维护感知网络连接成本或数据计划状态更改和启用应用程序以便使用此信息避免产生额外的漫游或超出成本管理按流量计费的网络连接的成本指定的数据传输限制。 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) Api 可响应[NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation)并[TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger)签名的事件。 请参阅[快速入门： 管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
+ 可帮助你的应用程序用户通过维护感知网络连接成本或数据计划状态更改和启用应用程序以便使用此信息避免产生额外的漫游或超出成本管理按流量计费的网络连接的成本指定的数据传输限制。 利用 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) API 能够对签名的 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 和 [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) 事件作出响应。 请参见 [快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)。  
   
  若要调试或测试网络成本感知代码，可使用模拟器模拟通过公开的网络的属性[ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile)返回的对象[GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation)。
   
  若要模拟网络属性，请执行以下操作：  
   
-1.  在模拟器工具栏上，选择  “更改网络属性”按钮。  
+1. 在模拟器工具栏上，选择  “更改网络属性”按钮。  
   
-2.  在  “设置网络属性”对话框中，选择“使用模拟网络属性” 。  
+2. 在  “设置网络属性”对话框中，选择“使用模拟网络属性” 。  
   
-     清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
+    清除复选框以移除模拟并返回到当前连接的接口的网络属性。  
   
-3.  输入模拟网络的 **“配置文件名”** 。 我们建议使用可用于标识中的模拟的唯一名称[ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile)的属性[ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile)对象。  
+3. 输入模拟网络的 **“配置文件名”** 。 建议使用可以用于标识 [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) 对象的 [ProfileName](/uwp/api/windows.networking.connectivity.connectionprofile) 属性中的模拟的唯一名称。  
   
-4.  选择[NetworkCostType](/uwp/api/windows.networking.connectivity.networkcosttype)值的配置文件**网络成本类型**列表。  
+4. 选择 [](/uwp/api/windows.networking.connectivity.networkcosttype) “网络成本类型”列表中的配置文件的 **NetworkCostType** 值。  
   
-5.  从**数据限制状态标志**列表中，您可以设置[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)属性或[OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)属性设为 true，也可以选择**在数据限制内**将这两个值设置为 false。  
+5. 从**数据限制状态标志**列表中，您可以设置[ApproachingDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)属性或[OverDataLimit](/uwp/api/windows.networking.connectivity.connectioncost)属性设为 true，也可以选择**在数据限制内**将这两个值设置为 false。  
   
-6.  从**漫游状态**列表中，设置[漫游](/uwp/api/windows.networking.connectivity.connectioncost)属性。  
+6. 从  “漫游状态”列表中，设置 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) 属性。  
   
-7.  选择**设置属性**若要模拟网络属性，通过触发前台[NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation)事件和背景[SystemTrigger](/uwp/api/windows.applicationmodel.background.systemtrigger)类型的**NetworkStateChange**。  
+7. 选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 事件和 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 类型的后台 **SystemTrigger**来模拟网络属性。  
   
- **有关管理网络连接的详细信息**  
+   **有关管理网络连接的详细信息**  
   
- [快速入门： 管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [快速入门：管理按流量计费的网络成本约束](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
- [网络信息示例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [网络信息示例](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
- [分析能量使用情况](../profiling/analyze-energy-use-in-store-apps.md)  
+   [分析能量使用情况](../profiling/analyze-energy-use-in-store-apps.md)  
   
- [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
+   [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)  
   
- [如何通过后台任务的系统事件响应](/previous-versions/windows/apps/hh977058(v=win.10))  
+   [如何通过后台任务响应系统事件](/previous-versions/windows/apps/hh977058(v=win.10))  
   
- [如何在 UWP 应用中触发挂起、继续和后台事件](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
+   [如何在 UWP 应用中触发挂起、继续和后台事件](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)  
   
 ##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> 用键盘在模拟器中导航  
  可以通过按导航模拟器工具栏**CTRL + ALT + 向上键**将焦点从模拟器窗口切换到模拟器工具栏。 使用 **向上键头** 和 **向下键头** 在工具栏按钮之间移动。  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3169ba8aaa348a6db698b968e7bec4e8273dfada
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303389"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862198"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49303389"
 ## <a name="completion-lists"></a>完成列表  
  Visual C# 中的 IntelliSense 完成列表包含来自列表成员、完成单词等的标记。 它提供到以下内容的快速访问：  
   
--   类型或命名空间的成员，  
+- 类型或命名空间的成员，  
   
--   变量、命令和函数名称，  
+- 变量、命令和函数名称，  
   
--   [代码片段](#CodeSnippets)，  
+- [代码片段](#CodeSnippets)，  
   
--   [语言关键字](#Keywords)，  
+- [语言关键字](#Keywords)，  
   
--   [扩展方法](#ExtensionMethods)  
+- [扩展方法](#ExtensionMethods)  
   
- C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅 [C# 中经过筛选的完成列表](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中预选择的完成列表项](../misc/pre-selected-completion-list-items-in-csharp.md)。  
+  C# 中的完成列表也足够智能，可筛选出不相关的标记，并可基于上下文预先选择标记。 有关详细信息，请参阅 [C# 中经过筛选的完成列表](../misc/filtered-completion-lists-in-csharp.md)和 [C# 中预选择的完成列表项](../misc/pre-selected-completion-list-items-in-csharp.md)。  
   
 ###  <a name="CodeSnippets"></a> 完成列表中的代码片段  
  在 Visual C# 中，完成列表包含代码片段，可助你将预定义的代码体轻松插入程序。 代码片段作为片段的 [Shortcut 元素（Intellisense 代码片段）](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)出现在完成列表中。  若要了解 Visual C# 中默认情况下可用的代码片段，请参阅 [Visual C# 代码片段](../ide/visual-csharp-code-snippets.md)。  
@@ -123,23 +123,23 @@ ms.locfileid: "49303389"
   
  若要显示相应的选项，可以使用以下过程之一：  
   
--   单击未定义的标识符。 在最左侧的字符下将显示一条短下划线。 将鼠标指针停留在短下划线上，将显示一个智能标记（图标）。 单击该智能标记。  
+- 单击未定义的标识符。 在最左侧的字符下将显示一条短下划线。 将鼠标指针停留在短下划线上，将显示一个智能标记（图标）。 单击该智能标记。  
   
--   单击未定义的标识符，然后按 CTRL+. （句点）。  
+- 单击未定义的标识符，然后按 CTRL+. （句点）。  
   
--   右键单击未定义的标识符，然后单击“生成”。  
+- 右键单击未定义的标识符，然后单击“生成”。  
   
- 显示的选项可包括以下选项：  
+  显示的选项可包括以下选项：  
   
--   **生成属性存根**  
+- **生成属性存根**  
   
--   **生成字段存根**  
+- **生成字段存根**  
   
--   **生成方法存根**  
+- **生成方法存根**  
   
--   **生成类**  
+- **生成类**  
   
--   **生成新类型**（对于类、结构、接口或枚举）  
+- **生成新类型**（对于类、结构、接口或枚举）  
   
 ## <a name="generate-event-handlers"></a>生成事件处理程序  
  在代码编辑器中，IntelliSense 可帮助你将方法（事件处理程序）挂钩到事件字段。  

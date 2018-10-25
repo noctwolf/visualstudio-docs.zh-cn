@@ -27,12 +27,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2364fa5ed202f9821ab276fb5cfbb9346a4b258c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4d841456ab95d06a7b586f7a8566f8530acbb021
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298137"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897493"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,16 +99,16 @@ ms.locfileid: "49298137"
  [使用断点](../debugger/using-breakpoints.md)  
  -   如果要将一个断点置于单个线程上，可以使用断点筛选器。  
   
--   使用跟踪点可以在不中断的情况下跟踪程序的执行。 对于研究死锁之类的问题，这一点十分有用。  
+- 使用跟踪点可以在不中断的情况下跟踪程序的执行。 对于研究死锁之类的问题，这一点十分有用。  
   
- [线程处理](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
- [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 编程中的线程处理概念，包括代码示例。  
+  [线程处理](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)  
+  [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 编程中的线程处理概念，包括代码示例。  
   
- [组件中的多线程处理](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
- 如何在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 组件中使用多线程处理。  
+  [组件中的多线程处理](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)  
+  如何在 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 组件中使用多线程处理。  
   
- [针对旧代码的多线程支持 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
- 针对使用 MFC 的 C++ 程序员的线程处理概念和代码示例。  
+  [针对旧代码的多线程支持 (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c)  
+  针对使用 MFC 的 C++ 程序员的线程处理概念和代码示例。  
   
 ## <a name="see-also"></a>请参阅  
  [调试线程和进程](../debugger/debug-threads-and-processes.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugProcess2::EnumThreads |Microsoft 文档
+title: IDebugProcess2::EnumThreads |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 786a3b4b5988b66e1fccc624154eeef67285ec84
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: c916e8b176444a8af81cb874c394e9eb832a01b4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939704"
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
 检索在进程中运行的所有线程的列表。  
@@ -41,17 +41,17 @@ int EnumThreads(
   
 #### <a name="parameters"></a>参数  
  `ppEnum`  
- [out]返回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)对象，其中包含在进程中的所有程序中的所有线程的列表。  
+ [out]返回[IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)对象，其中包含一系列过程中的所有程序中的所有线程。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法枚举在每个程序中运行的线程，然后将它们合并到线程进程视图。 单个线程可能会运行多个程序;此方法一次枚举该线程。  
+ 此方法枚举每个程序中正在运行的线程，然后将它们合并到线程的进程视图。 单个线程可能会运行多个程序;此方法一次枚举该线程。  
   
- 此方法显示一个列表没有重复项的进程的线程。 否则，若要枚举在特定的程序中运行的线程，使用[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法。  
+ 此方法会显示该进程的线程没有重复项的列表。 否则，若要枚举在特定的程序中运行的线程，请使用[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   

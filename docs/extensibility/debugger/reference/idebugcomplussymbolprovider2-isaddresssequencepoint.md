@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft 文档
+title: IDebugComPlusSymbolProvider2::IsAddressSequencePoint |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a49723bb585f65ce544c0508bf886d9daba5c6b
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ec0aefd8f59793fdd555ff0cc14f767c10e8972a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31105660"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829906"
 ---
 # <a name="idebugcomplussymbolprovider2isaddresssequencepoint"></a>IDebugComPlusSymbolProvider2::IsAddressSequencePoint
-确定指定的调试地址是否序列点。  
+确定指定的调试地址是序列点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,10 +43,10 @@ int IsAddressSequencePoint(
  [in]调试由表示的地址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)接口。  
   
 ## <a name="return-value"></a>返回值  
- 如果调试地址为序列点，则返回`S_OK`; 否则为返回`S_FALSE`。  
+ 如果调试地址是序列点，则返回`S_OK`; 否则为返回`S_FALSE`。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::IsAddressSequencePoint(  
@@ -86,5 +86,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

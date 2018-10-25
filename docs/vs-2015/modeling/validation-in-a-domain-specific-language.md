@@ -15,12 +15,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 75df1e1f2bbc5bc5c3bdd56b8c16f0587f18751b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263635"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950781"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ ms.locfileid: "49263635"
 ## <a name="running-validation"></a>运行验证  
  当用户编辑模型时（即域特定语言的实例），以下操作可运行验证：  
   
--   右键单击关系图，然后选择**全部验证**。  
+- 右键单击关系图，然后选择**全部验证**。  
   
--   右键单击 DSL 和选择的资源管理器中的顶级节点**全部验证**  
+- 右键单击 DSL 和选择的资源管理器中的顶级节点**全部验证**  
   
--   保存模型。  
+- 保存模型。  
   
--   打开模型。  
+- 打开模型。  
   
--   此外，还可编写运行验证的程序代码，例如，作为菜单命令的一部分或响应更改。  
+- 此外，还可编写运行验证的程序代码，例如，作为菜单命令的一部分或响应更改。  
   
- 任何验证错误将出现在**错误列表**窗口。 用户可以双击错误消息，以选中引起错误的模型元素。  
+  任何验证错误将出现在**错误列表**窗口。 用户可以双击错误消息，以选中引起错误的模型元素。  
   
 ## <a name="defining-validation-constraints"></a>定义验证约束  
  通过将验证方法添加到 DSL 的域类或关系中定义验证约束。 当验证运行时，可由用户或在程序控制下执行一些或所有验证方法。 每个方法都将应用到其类的每个实例，并且在每个类中可以有多个验证方法。  
@@ -59,37 +59,37 @@ ms.locfileid: "49263635"
   
 #### <a name="to-define-a-validation-constraint"></a>定义验证约束  
   
-1.  中启用验证**编辑器 \ 验证**节点：  
+1. 中启用验证**编辑器 \ 验证**节点：  
   
-    1.  打开**Dsl\DslDefinition.dsl**。  
+   1.  打开**Dsl\DslDefinition.dsl**。  
   
-    2.  在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。  
+   2.  在 DSL 资源管理器，展开**编辑器**节点，然后选择**验证**。  
   
-    3.  在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。  
+   3.  在属性窗口中设置**使用**属性设置为`true`。 设置所有这些属性非常方便。  
   
-    4.  单击**转换所有模板**解决方案资源管理器工具栏中。  
+   4.  单击**转换所有模板**解决方案资源管理器工具栏中。  
   
-2.  为一个或多个域类或域关系编写分部类定义。 中的新代码文件中编写这些定义**Dsl**项目。  
+2. 为一个或多个域类或域关系编写分部类定义。 中的新代码文件中编写这些定义**Dsl**项目。  
   
-3.  为每个类添加带有此特性的前缀：  
+3. 为每个类添加带有此特性的前缀：  
   
-    ```csharp  
-    [ValidationState(ValidationState.Enabled)]  
-    ```  
+   ```csharp  
+   [ValidationState(ValidationState.Enabled)]  
+   ```  
   
-    -   默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。  
+   -   默认情况下，此特性还将针对派生类启用验证。 如果想要针对特定派生类禁用验证，则可以使用 `ValidationState.Disabled`。  
   
-4.  将验证方法添加到类。 每个验证方法都可以具有任何名称，但要具有类型 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 的一个参数。  
+4. 将验证方法添加到类。 每个验证方法都可以具有任何名称，但要具有类型 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext> 的一个参数。  
   
-     必须为它添加带有一个或多个 `ValidationMethod` 特性的前缀：  
+    必须为它添加带有一个或多个 `ValidationMethod` 特性的前缀：  
   
-    ```csharp  
-    [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
-    ```  
+   ```csharp  
+   [ValidationMethod (ValidationCategories.Open | ValidationCategories.Save | ValidationCategories.Menu ) ]  
+   ```  
   
-     ValidationCategories 指定何时执行该方法。  
+    ValidationCategories 指定何时执行该方法。  
   
- 例如：  
+   例如：  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -132,21 +132,21 @@ public partial class ParentsHaveChildren
   
  请注意有关此代码的以下几点：  
   
--   可以将验证方法添加到域类或域关系。 对于这些类型的代码位于**Dsl\Generated Code\Domain\*.cs**。  
+- 可以将验证方法添加到域类或域关系。 对于这些类型的代码位于**Dsl\Generated Code\Domain\*.cs**。  
   
--   每个验证方法都将应用到它的类和子类的每个实例。 对于域关系，每个实例都是两个模型元素之间的链接。  
+- 每个验证方法都将应用到它的类和子类的每个实例。 对于域关系，每个实例都是两个模型元素之间的链接。  
   
--   验证方法不按任何指定的顺序进行应用，并且每个方法都不按任何可预知的顺序应用到它的类的实例。  
+- 验证方法不按任何指定的顺序进行应用，并且每个方法都不按任何可预知的顺序应用到它的类的实例。  
   
--   通常情况下，验证方法最好不要更新存储内容，因为这会导致不一致的结果。 相反，该方法应通过调用 `context.LogError`、`LogWarning` 或 `LogInfo` 报告任何错误。  
+- 通常情况下，验证方法最好不要更新存储内容，因为这会导致不一致的结果。 相反，该方法应通过调用 `context.LogError`、`LogWarning` 或 `LogInfo` 报告任何错误。  
   
--   在 LogError 调用中，可以提供将在用户双击错误消息时选中的模型元素或关系链接的列表。  
+- 在 LogError 调用中，可以提供将在用户双击错误消息时选中的模型元素或关系链接的列表。  
   
--   有关如何读取程序代码中的模型的信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
+- 有关如何读取程序代码中的模型的信息，请参阅[导航和更新程序代码中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
- 该示例将应用到以下域模型。 ParentsHaveChildren 关系具有称为 Child 和 Parent 的角色。  
+  该示例将应用到以下域模型。 ParentsHaveChildren 关系具有称为 Child 和 Parent 的角色。  
   
- ![DSL 定义关系图&#45;家族树模型](../modeling/media/familyt-person.png "FamilyT_Person")  
+  ![DSL 定义关系图&#45;家族树模型](../modeling/media/familyt-person.png "FamilyT_Person")  
   
 ## <a name="validation-categories"></a>验证类别  
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 特性中，指定应何时执行验证方法。  
@@ -202,7 +202,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
   
  如果你将域关系的角色的重数设置为 1..* 或 1..1，但用户未创建此关系的链接，则将显示验证错误消息。  
   
- 例如，如果 DSL 具有类 Person 和城镇和具有关系的关系 PersonLivesInTown **1...\*** 城镇角色，然后对于每个用户都有没有一条错误消息将显示。  
+ 例如，如果 DSL 具有类 Person 和城镇和具有关系的关系 PersonLivesInTown **1...\\*** 城镇角色，然后对于每个用户都有没有一条错误消息将显示。  
   
 ## <a name="running-validation-from-program-code"></a>从程序代码运行验证  
  通过访问或创建 ValidationController，可运行验证。 如果想要在错误窗口中向用户显示错误，则使用附加到关系图的 DocData 的 ValidationController。 例如，如果你要编写菜单命令，则命令集类中提供了 `CurrentDocData.ValidationController`：  

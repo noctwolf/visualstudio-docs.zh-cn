@@ -13,12 +13,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c4e10d7545973e1c202f29c17e9e3ba06f024501
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301114"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49900899"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安装第三方单元测试框架
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,34 +34,34 @@ Visual Studio 测试资源管理器可以运行任何针对该资源管理器开
   
 ### <a name="installing-from-visual-studio"></a>从 Visual Studio 安装  
   
-1.  在标准菜单上，依次选择“工具”和“扩展和更新”。  
+1. 在标准菜单上，依次选择“工具”和“扩展和更新”。  
   
-2.  依次展开“联机”、“Visual Studio 库”和“工具”。 选择“测试”。  
+2. 依次展开“联机”、“Visual Studio 库”和“工具”。 选择“测试”。  
   
-3.  浏览列表以查找框架。  
+3. 浏览列表以查找框架。  
   
-4.  依次选择框架和“下载”。  
+4. 依次选择框架和“下载”。  
   
- 有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)。  
+   有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)。  
   
 ### <a name="installing-from-the-web"></a>从 Web 安装  
  如果你了解所需框架：  
   
-1.  打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+1. 打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
   
-2.  在“查找”框中键入框架名称。  
+2. 在“查找”框中键入框架名称。  
   
-3.  在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
+3. 在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
   
- 浏览框架以及其他测试工具的列表：  
+   浏览框架以及其他测试工具的列表：  
   
-1.  打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
+4. 打开 MSDN 网站上的 [Visual Studio 库](http://go.microsoft.com/fwlink/?LinkId=236267)。  
   
-2.  选择“浏览”。  
+5. 选择“浏览”。  
   
-3.  在“分类”列表中，展开“工具”节点，然后选择“测试”。  
+6. 在“分类”列表中，展开“工具”节点，然后选择“测试”。  
   
-4.  在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
+7. 在结果列表中选择框架以导航到用于该工具的 Visual Studio 库页面。  
   
 ## <a name="see-also"></a>请参阅  
  [单元测试代码](../test/unit-test-your-code.md)

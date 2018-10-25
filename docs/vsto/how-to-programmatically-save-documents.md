@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 00ad8f91e738cb98aeba93b69cb47c6ab644aa3f
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e794a995d1e978cf5aae8d1b6ec9c1711436af73
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670300"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883466"
 ---
 # <a name="how-to-programmatically-save-documents"></a>如何： 以编程方式保存文档
   有几种方法来保存 Microsoft Office Word 文档。 您可以将文档保存而无需更改文档的名称或可以使用新名称保存文档。  
@@ -32,19 +32,19 @@ ms.locfileid: "35670300"
   
 ### <a name="to-save-the-document-associated-with-a-document-level-customization"></a>若要保存与文档级自定义关联的文档  
   
-1.  调用 <xref:Microsoft.Office.Tools.Word.Document> 类的 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。  
+1.  调用 <xref:Microsoft.Office.Tools.Word.Document.Save%2A> 类的 <xref:Microsoft.Office.Tools.Word.Document> 方法。 若要使用此代码示例，请从项目中的 `ThisDocument` 类运行它。  
   
      [!code-vb[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreWordAutomation#7](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#7)]  
   
 ### <a name="to-save-the-active-document"></a>若要保存活动文档  
   
-1.  调用<xref:Microsoft.Office.Interop.Word._Document.Save%2A>活动文档的方法。 若要使用此代码模板，请从项目中的 `ThisDocument` 或 `ThisAddIn` 类运行它。  
+1. 调用<xref:Microsoft.Office.Interop.Word._Document.Save%2A>活动文档的方法。 若要使用此代码模板，请从项目中的 `ThisDocument` 或 `ThisAddIn` 类运行它。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
-     [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
+    [!code-vb[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#8)]
+    [!code-csharp[Trin_VstcoreWordAutomation#8](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#8)]  
   
- 如果不确定要用于保存的文档是否是活动文档，可以按其名称来引用它。  
+   如果不确定要用于保存的文档是否是活动文档，可以按其名称来引用它。  
   
 ### <a name="to-save-a-document-specified-by-name"></a>若要保存由名称指定的文档  
   

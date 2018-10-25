@@ -33,25 +33,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8e9295b71248650b078415d4539f72d2b94dc315
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: d1ad35b9aecc9e7559902104f447cbbec3415b49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670418"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934322"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：  
   
--   [文档级自定义项](#DocLevel)  
+- [文档级自定义项](#DocLevel)  
   
--   [VSTO 外接程序](#AppLevel)  
+- [VSTO 外接程序](#AppLevel)  
   
- 有关这些类型的 Office 解决方案的详细比较，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
+  有关这些类型的 Office 解决方案的详细比较，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
   
- Office 项目模板位于 **“新建项目”** 对话框中，你可以从 **“Visual C#”** 和 **“Visual Basic”** 语言节点的 **“Office”** 节点下找到该对话框。 每个模板都使用目标应用程序的相应配置来生成项目，包括程序集引用和调试设置。  
+  Office 项目模板位于 **“新建项目”** 对话框中，你可以从 **“Visual C#”** 和 **“Visual Basic”** 语言节点的 **“Office”** 节点下找到该对话框。 每个模板都使用目标应用程序的相应配置来生成项目，包括程序集引用和调试设置。  
   
- 每个项目都提供了文件和代码，使你可以开始使用特定类型的解决方案。 每个项目的生成代码都包括启动和关闭事件处理程序。 可以向这些事件处理程序添加代码，以便在加载解决方案时对其进行初始化，并在卸载解决方案时对其进行清理。 有关详细信息，请参阅[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)并[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
+  每个项目都提供了文件和代码，使你可以开始使用特定类型的解决方案。 每个项目的生成代码都包括启动和关闭事件处理程序。 可以向这些事件处理程序添加代码，以便在加载解决方案时对其进行初始化，并在卸载解决方案时对其进行清理。 有关详细信息，请参阅[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)并[Office 项目中的事件](../vsto/events-in-office-projects.md)。  
   
 > [!NOTE]  
 >  Office 开发工具随某些 Visual Studio 版本提供。 有关详细信息，请参阅[配置计算机以开发 Office 解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
@@ -59,25 +59,25 @@ ms.locfileid: "35670418"
 ##  <a name="DocLevel"></a> 文档级自定义项  
  **“新建项目”** 对话框中的 **“Office”** 节点提供下列项目模板，可以使用这些模板开始创建 Word 和 Excel 的文档级自定义项：  
   
--   **Word 2013 和 2016 VSTO 文档**  
+- **Word 2013 和 2016 VSTO 文档**  
   
--   **Word 2013 和 2016 VSTO 模板**  
+- **Word 2013 和 2016 VSTO 模板**  
   
--   **Excel 2013 和 2016 VSTO 工作簿**  
+- **Excel 2013 和 2016 VSTO 工作簿**  
   
--   **Excel 2013 和 2016 VSTO 模板**  
+- **Excel 2013 和 2016 VSTO 模板**  
   
--   **Word 2010 VSTO 文档**  
+- **Word 2010 VSTO 文档**  
   
--   **Word 2010 VSTO 模板**  
+- **Word 2010 VSTO 模板**  
   
--   **Excel 2010 VSTO 工作簿**  
+- **Excel 2010 VSTO 工作簿**  
   
--   **Excel 2010 VSTO 模板**  
+- **Excel 2010 VSTO 模板**  
   
- Word 文档和 Excel 工作簿项目模板提供了代码，使你可以开始创建基于特定文档或工作簿的解决方案。 在这些类型的解决方案中，只有在 Word 或 Excel 中打开关联的文档时，代码才运行。  
+  Word 文档和 Excel 工作簿项目模板提供了代码，使你可以开始创建基于特定文档或工作簿的解决方案。 在这些类型的解决方案中，只有在 Word 或 Excel 中打开关联的文档时，代码才运行。  
   
- “Word 模板”和“Excel 模板”项目模板的工作方式与“Word 文档”和“Excel 工作簿”项目模板相同。 但是，用户可以使用“Word 模板”和“Excel 模板”项目模板轻松地为解决方案中的自定义模板创建新的本地文档或工作簿副本。 用户从模板创建的新文档中提供了你的解决方案中的功能。  
+  “Word 模板”和“Excel 模板”项目模板的工作方式与“Word 文档”和“Excel 工作簿”项目模板相同。 但是，用户可以使用“Word 模板”和“Excel 模板”项目模板轻松地为解决方案中的自定义模板创建新的本地文档或工作簿副本。 用户从模板创建的新文档中提供了你的解决方案中的功能。  
   
 > [!NOTE]  
 >  引用托管代码扩展的 Word 模板不能被用作全局 VSTO 外接程序。如果从 Word 的 Startup 目录加载模板，则不会调用该程序集。 有关详细信息，请参阅[全局模板和 Excel 外接程序 （.xla 文件） 的限制](#Limitations)  
@@ -97,51 +97,51 @@ ms.locfileid: "35670418"
 ##  <a name="AppLevel"></a> VSTO 外接程序  
  **“新建项目”** 对话框中的 **“Office/SharePoint”** 节点提供下列项目模板，可以使用这些模板开始创建 VSTO 外接程序。  
   
--   **Excel 2013 和 2016 VSTO 外接程序**  
+- **Excel 2013 和 2016 VSTO 外接程序**  
   
--   **InfoPath 2013 VSTO 外接程序**  
+- **InfoPath 2013 VSTO 外接程序**  
   
--   **Outlook 2013 和 2016 VSTO 外接程序**  
+- **Outlook 2013 和 2016 VSTO 外接程序**  
   
--   **PowerPoint 2013 和 2016 外接程序**  
+- **PowerPoint 2013 和 2016 外接程序**  
   
--   **Project 2013 和 2016 外接程序**  
+- **Project 2013 和 2016 外接程序**  
   
--   **Visio 2013 和 2016 外接程序**  
+- **Visio 2013 和 2016 外接程序**  
   
--   **Word 2013 和 2016 外接程序**  
+- **Word 2013 和 2016 外接程序**  
   
--   **Excel 2010 外接程序**  
+- **Excel 2010 外接程序**  
   
--   **InfoPath 2010 外接程序**  
+- **InfoPath 2010 外接程序**  
   
--   **Outlook 2010 外接程序**  
+- **Outlook 2010 外接程序**  
   
--   **PowerPoint 2010 外接程序**  
+- **PowerPoint 2010 外接程序**  
   
--   **Project 2010 外接程序**  
+- **Project 2010 外接程序**  
   
--   **Visio 2010 外接程序**  
+- **Visio 2010 外接程序**  
   
--   **Word 2010 外接程序**  
+- **Word 2010 外接程序**  
   
- 当创建基于这些项目模板之一的项目时，解决方案中的代码会在关联应用程序打开时运行。 与文档级项目不同，代码不与单个文档关联。  
+  当创建基于这些项目模板之一的项目时，解决方案中的代码会在关联应用程序打开时运行。 与文档级项目不同，代码不与单个文档关联。  
   
- 有关这些项目类型入门的详细信息，请参阅下列主题：  
+  有关这些项目类型入门的详细信息，请参阅下列主题：  
   
--   [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
+- [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)  
   
--   [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
+- [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)  
   
--   [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
+- [演练： 创建第一个 VSTO 外接程序 Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
   
--   [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
+- [演练： 创建在第一个 VSTO 外接程序的 Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)  
   
--   [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
+- [演练： 为 PowerPoint 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)  
   
--   [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
+- [演练： 创建在第一个 VSTO 外接程序项目](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)  
   
--   [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
+- [演练： 为 Word 创建第一个 VSTO 外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)  
   
 ## <a name="document-vs-template-solutions"></a>记录与模板解决方案  
  在围绕 Word 文档或 Excel 工作簿设计解决方案时，必须确定将该文档提供给用户的最佳方式。  

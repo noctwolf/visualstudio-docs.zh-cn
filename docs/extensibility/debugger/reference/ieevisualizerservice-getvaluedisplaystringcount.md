@@ -1,5 +1,5 @@
 ---
-title: IEEVisualizerService::GetValueDisplayStringCount |Microsoft 文档
+title: IEEVisualizerService::GetValueDisplayStringCount |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f67c1f0566f9e5749f4ff9233f1d2a803754550
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 5ef642e48ee4389e48c1141c18a70f9ad5d0b793
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31117499"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49949664"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
-检索值字符串，以显示针对指定的属性或字段的数目。  
+检索要显示为指定的属性或字段的值字符串数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -44,16 +44,16 @@ int GetValueDisplayStringCount (
   
 #### <a name="parameters"></a>参数  
  `displayKind`  
- [in]从值[DisplayKind](../../../extensibility/debugger/reference/displaykind.md)枚举。  
+ [in]值从[DisplayKind](../../../extensibility/debugger/reference/displaykind.md)枚举。  
   
  `propertyOrField`  
- [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的属性或字段的接口。  
+ [in][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示属性或字段的接口。  
   
  `pcelt`  
- [out]返回值字符串，以显示的数量。  
+ [out]返回要显示的值字符串数。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

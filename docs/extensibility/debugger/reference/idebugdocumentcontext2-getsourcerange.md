@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext2::GetSourceRange |Microsoft 文档
+title: IDebugDocumentContext2::GetSourceRange |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f003ba3f97f053c4617408bfc9334da057bb98ef
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6d2fb0128aef16d236db10918eec215c8e198ae4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107220"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951114"
 ---
 # <a name="idebugdocumentcontext2getsourcerange"></a>IDebugDocumentContext2::GetSourceRange
-获取此文档上下文的代码的源范围。  
+获取此文档上下文的源的代码范围。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,20 +43,20 @@ int GetSourceRange(
   
 #### <a name="parameters"></a>参数  
  `pBegPosition`  
- [在中，out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)使用的起始位置填充的结构。 如果不需要此信息，请将此参数设置为 null 值。  
+ [in、 out]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)填充的起始位置的结构。 如果不需要此信息，请将此参数设置为 null 值。  
   
  `pEndPosition`  
- [在中，out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)使用结束位置填充的结构。 如果不需要此信息，请将此参数设置为 null 值。  
+ [in、 out]一个[TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)填充的结束位置的结构。 如果不需要此信息，请将此参数设置为 null 值。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 源的范围是源代码的整个范围，从当前的语句后，之后提供的代码与前一个语句。 源范围通常用于混合源语句，其中包括注释，使用反汇编窗口中的代码。  
+ 源范围是源代码，从当前的语句后，前面代码的语句之后的整个范围。 源范围通常用于混合源语句，其中包括注释，使用反汇编窗口中的代码。  
   
- 若要获取有关只包含在此文档上下文中的代码语句范围，请调用[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)方法。  
+ 若要获取的只是包含在此文档上下文中的代码语句的范围，请调用[GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

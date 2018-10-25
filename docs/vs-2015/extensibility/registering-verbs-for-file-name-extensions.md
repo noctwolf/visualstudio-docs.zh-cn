@@ -15,12 +15,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 73555abcc1a3c6afebf6528cc493e62a403ad00a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9d81916910eb4769801ae330c10edde24cb52f52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49196314"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923402"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,17 +32,17 @@ ms.locfileid: "49196314"
 ## <a name="registering-standard-verbs"></a>注册标准谓词  
  操作系统识别出以下标准谓词：  
   
--   打开  
+- 打开  
   
--   Edit  
+- Edit  
   
--   播放  
+- 播放  
   
--   的  
+- 的  
   
--   预览  
+- 预览  
   
- 只要有可能，注册标准谓词。 最常见的选择是动词 Open。 仅当没有打开的文件和编辑文件之间有明显差异，请使用编辑谓词。 例如，打开.htm 文件将其显示在浏览器中，而编辑.htm 文件启动 HTML 编辑器。 标准谓词已本地化的操作系统的区域设置。  
+  只要有可能，注册标准谓词。 最常见的选择是动词 Open。 仅当没有打开的文件和编辑文件之间有明显差异，请使用编辑谓词。 例如，打开.htm 文件将其显示在浏览器中，而编辑.htm 文件启动 HTML 编辑器。 标准谓词已本地化的操作系统的区域设置。  
   
 > [!NOTE]
 >  注册标准谓词时, 未设置的默认值为打开的注册表。 默认值包含在菜单上的显示字符串。 操作系统提供标准谓词此字符串。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugObject::SetValue |Microsoft 文档
+title: IDebugObject::SetValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae6f8f589c0dca8c97e1a9664d9eaa93bf9e8741
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: f1b78a4513aab8a9c4d2c539a592799dffdcea53
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31113326"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850966"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-设置对象的值从一系列连续的字节。  
+设置对象的值从一系列连续的字节数。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,17 +43,17 @@ int SetValue(
   
 #### <a name="parameters"></a>参数  
  `pValue`  
- [in]表示新值的字节数组。  
+ [in]一个表示新值的字节数组。  
   
  `nSize`  
  [in]以字节为单位的值的大小。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 数组中的值复制到此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，同时将替换任何现有值。 新值的大小可大于或小于的现有值。 这`IDebugObject`不能为 null 引用。  
+ 数组中的值复制到此[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)对象，并将任何现有值替换。 新值的大小可大于或小于现有值。 这`IDebugObject`不能为 null 引用。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

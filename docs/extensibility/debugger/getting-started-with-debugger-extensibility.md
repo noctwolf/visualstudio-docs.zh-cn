@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1a812575d14ef6595d58cc3ecc5d9f94b8f5635
-ms.sourcegitcommit: 25a62c2db771f938e3baa658df8b1ae54a960e4f
+ms.openlocfilehash: 642f46e9497e20cd8a8276265fb434c5bd7522bb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/24/2018
-ms.locfileid: "39231276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49851167"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>开始使用调试器可扩展性
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供了您需要创建和自定义用于调试程序中的调试器组件的信息[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]环境。  
@@ -31,11 +31,11 @@ ms.locfileid: "39231276"
   
  最大效用[!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]，您应熟悉以下各项：  
   
--   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)  
+- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成的开发环境 (IDE)  
   
--   C + + 编程语言  
+- C + + 编程语言  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>本节内容  
  [扩展调试器的路线图](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

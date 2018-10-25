@@ -9,12 +9,12 @@ description: 如果别名或友好名称已被使用，登录可能会失败
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d05ecb8645b9970b08ad15418a43a5c95f8b2c3c
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637677"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49854463"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -116,10 +116,10 @@ ms.locfileid: "39637677"
 1. 导航到 https://my.visualstudio.com，然后单击“创建新的 Microsoft 帐户”。
 
 2. 填写字段：
-    - 在 Someone@example.com 框中输入接收欢迎电子邮件的电子邮件地址
-    - 创建密码
-    - 选择促销设置
-    - 单击“下一步” 
+   - 在 Someone@example.com 框中输入接收欢迎电子邮件的电子邮件地址
+   - 创建密码
+   - 选择促销设置
+   - 单击“下一步” 
 
 3. 完成验证步骤，然后单击“下一步”。
 
@@ -141,10 +141,10 @@ ms.locfileid: "39637677"
 2. 单击右侧的“创建新的 Microsoft 帐户”
 
 3. 填写此表单：
-    - 在 someone@example.com 框中填写公司电子邮件地址
-    - 输入密码
-    - 选择促销首选项
-    - 单击“下一步”
+   - 在 someone@example.com 框中填写公司电子邮件地址
+   - 输入密码
+   - 选择促销首选项
+   - 单击“下一步”
 
 4. 完成帐户验证步骤
 

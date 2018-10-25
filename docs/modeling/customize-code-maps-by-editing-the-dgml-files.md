@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 19278cc1fd08a0dd4d4d18e11c7cb7a3e09ae7e0
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 21a32cf13f598c894ebc7841f5ef4a0af3af82ed
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859765"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878968"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>通过编辑 DGML 文件自定义代码图
 
@@ -41,43 +41,43 @@ ms.locfileid: "47859765"
 ## <a name="OrganizeNodes"></a> 代码元素分组
  你可以添加新组，也可以将现有节点转换为一个组。
 
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
-2.  若要将代码元素转换为一个组，请查找该代码元素的 `<Node/>` 元素。
+2. 若要将代码元素转换为一个组，请查找该代码元素的 `<Node/>` 元素。
 
-     \- 或 -
+    \- 或 -
 
-     若要添加新组，请查找 `<Nodes>` 部分。 创建新的 `<Node/>` 元素。
+    若要添加新组，请查找 `<Nodes>` 部分。 创建新的 `<Node/>` 元素。
 
-3.  在 `<Node/>` 元素中，添加一个 `Group` 特性以指定组显示为展开状态还是折叠状态。 例如：
+3. 在 `<Node/>` 元素中，添加一个 `Group` 特性以指定组显示为展开状态还是折叠状态。 例如：
 
-    ```xml
-    <Nodes>
-       <Node Id="MyFirstGroup" Group="Expanded" />
-       <Node Id="MySecondGroup" Group="Collapsed" />
-    </Nodes>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyFirstGroup" Group="Expanded" />
+      <Node Id="MySecondGroup" Group="Collapsed" />
+   </Nodes>
+   ```
 
-4.  在 `<Links>` 部分，确保对于组代码元素与其子代码元素之间的每个关系都存在具有以下特性的 `<Link/>` 元素：
+4. 在 `<Links>` 部分，确保对于组代码元素与其子代码元素之间的每个关系都存在具有以下特性的 `<Link/>` 元素：
 
-    -   指定组代码元素的 `Source` 特性
+   - 指定组代码元素的 `Source` 特性
 
-    -   指定子代码元素的 `Target` 特性
+   - 指定子代码元素的 `Target` 特性
 
-    -   指定组代码元素与其子代码元素之间的 `Category` 关系的 `Contains` 特性
+   - 指定组代码元素与其子代码元素之间的 `Category` 关系的 `Contains` 特性
 
      例如：
 
-    ```xml
-    <Links>
-       <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
-       <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
-       <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
-       <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
-    </Links>
-    ```
+   ```xml
+   <Links>
+      <Link Category="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildOne" />
+      <Link Category ="Contains" Source="MyFirstNewGroup" Target="FirstGroupChildTwo" />
+      <Link Category ="Contains" Source="MySecondNewGroup" Target="SecondGroupChildOne" />
+      <Link Category="Contains" Source="MySecondNewGroup" Target="SecondGroupChildTwo" />
+   </Links>
+   ```
 
-     有关详细信息`Category`属性，请参阅[向代码元素和链接分配类别](#AssignCategories)。
+    有关详细信息`Category`属性，请参阅[向代码元素和链接分配类别](#AssignCategories)。
 
 ## <a name="ChangeGraphStyle"></a> 更改地图的样式
  你可以通过编辑代码图的 .dgml 文件来更改代码图的背景色和边框颜色。 若要更改代码元素和链接的样式，请参阅[更改代码元素和链接的样式](#Highlight)。
@@ -248,81 +248,81 @@ ms.locfileid: "47859765"
 
 ##### <a name="to-apply-custom-styles-to-a-group-of-code-elements-or-links"></a>将自定义样式应用于代码元素或链接组
 
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
-2.  如果 `<Styles></Styles>` 元素不存在，请在 `<DirectedGraph></DirectedGraph>` 元素下的 `<Links></Links>` 元素后面添加一个该元素。
+2. 如果 `<Styles></Styles>` 元素不存在，请在 `<DirectedGraph></DirectedGraph>` 元素下的 `<Links></Links>` 元素后面添加一个该元素。
 
-3.  在 `<Styles></Styles>` 元素中的 `<Style/>` 元素下，指定以下特性：
+3. 在 `<Styles></Styles>` 元素中的 `<Style/>` 元素下，指定以下特性：
 
-    -   `TargetType="Node` &#124; `Link | Graph"`
+   - `TargetType="Node` &#124; `Link | Graph"`
 
-    -   `GroupLabel="` *NameInLegendBox* `"`
+   - `GroupLabel="` *NameInLegendBox* `"`
 
-    -   `ValueLabel="` *NameInStylePickerBox* `"`
+   - `ValueLabel="` *NameInStylePickerBox* `"`
 
      若要将自定义样式应用于所有目标类型，请不要使用条件。
 
 ##### <a name="to-apply-a-conditional-style-to-groups-of-code-elements-or-links"></a>将条件样式应用于代码元素或链接组
 
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
-2.  在 `<Style/>` 元素中，添加一个包含 `<Condition/>` 特性的 `Expression` 元素，以指定返回布尔值的表达式。
+2. 在 `<Style/>` 元素中，添加一个包含 `<Condition/>` 特性的 `Expression` 元素，以指定返回布尔值的表达式。
 
-     例如：
+    例如：
 
-    ```xml
-    <Condition Expression="MyCategory"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory"/>
+   ```
 
-     - 或 -
+    - 或 -
 
-    ```xml
-    <Condition Expression="MyCategory > 100"/>
-    ```
+   ```xml
+   <Condition Expression="MyCategory > 100"/>
+   ```
 
-     - 或 -
+    - 或 -
 
-    ```xml
-    <Condition Expression="HasCategory('MyCategory')"/>
-    ```
+   ```xml
+   <Condition Expression="HasCategory('MyCategory')"/>
+   ```
 
-     此表达式使用以下 Backus-Naur 形式 (BNF) 语法：
+    此表达式使用以下 Backus-Naur 形式 (BNF) 语法：
 
-     <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
+    <Expression> ::= <BinaryExpression> &#124; <UnaryExpression> &#124; "("<Expression>")" &#124; <MemberBindings> &#124; <Literal> &#124; <Number>
 
-     <BinaryExpression> ::= <Expression> <Operator> <Expression>
+    <BinaryExpression> ::= <Expression> <Operator> <Expression>
 
-     <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
+    <UnaryExpression> ::= "!" <Expression> &#124; "+" <Expression> &#124; "-" <Expression>
 
-     <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; " &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    <Operator> :: ="<" &#124; "\<=" &#124; "=" &#124; "> =" &#124; ">" &#124; "！ =" &#124; " &#124; "和" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-     <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
+    <MemberBindings> ::= <MemberBindings> &#124; <MemberBinding> "." <MemberBinding>
 
-     <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
+    <MemberBinding> ::= <MethodCall> &#124; <PropertyGet>
 
-     <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
+    <MethodCall> ::= <Identifier> "(" <MethodArgs> ")"
 
-     <PropertyGet> :: = 标识符
+    <PropertyGet> :: = 标识符
 
-     <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
+    <MethodArgs> ::= <Expression> &#124; <Expression> "," <MethodArgs> &#124; <empty>
 
-     <Identifier> ::= [^. ]*
+    <Identifier> ::= [^. ]*
 
-     <Literal> :: = 单引号或双引号中的字符串文本
+    <Literal> :: = 单引号或双引号中的字符串文本
 
-     <Number> :: = 带有可选小数点的数字的字符串
+    <Number> :: = 带有可选小数点的数字的字符串
 
-     可以指定多个`<Condition/>`必须均为 true 才能应用样式的元素。
+    可以指定多个`<Condition/>`必须均为 true 才能应用样式的元素。
 
-3.  在 `<Condition/>` 元素后的下一行上，添加一个或多个 `<Setter/>` 元素，以指定要应用于满足条件的代码图、代码元素或链接的 `Property` 特性和固定 `Value` 特性或者计算所得的 `Expression` 特性。
+3. 在 `<Condition/>` 元素后的下一行上，添加一个或多个 `<Setter/>` 元素，以指定要应用于满足条件的代码图、代码元素或链接的 `Property` 特性和固定 `Value` 特性或者计算所得的 `Expression` 特性。
 
-     例如：
+    例如：
 
-    ```xml
-    <Setter Property="BackGround" Value="Green"/>
-    ```
+   ```xml
+   <Setter Property="BackGround" Value="Green"/>
+   ```
 
- 作为一个完整的简单示例，以下条件根据代码元素的 `Passed` 类别是设置为 `True` 还是 `False` 来指定该代码元素显示为绿色或红色：
+   作为一个完整的简单示例，以下条件根据代码元素的 `Passed` 类别是设置为 `True` 还是 `False` 来指定该代码元素显示为绿色或红色：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -571,74 +571,74 @@ ms.locfileid: "47859765"
 
 #### <a name="to-link-a-document-or-url-to-a-code-element"></a>将文档或 URL 链接到代码元素
 
-1.  在文本编辑器或 XML 编辑器中打开 .dgml 文件。
+1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
-2.  查找所需代码元素的 `<Node/>` 元素。
+2. 查找所需代码元素的 `<Node/>` 元素。
 
-3.  执行下表中的任务之一：
+3. 执行下表中的任务之一：
 
-     单个代码元素
+    单个代码元素
 
-    -   在 `<Node/>` 或 `<Link/>` 元素中，添加 `Reference` 特性以指定代码元素的位置。
+   - 在 `<Node/>` 或 `<Link/>` 元素中，添加 `Reference` 特性以指定代码元素的位置。
 
-        > [!NOTE]
-        >  每个元素只能具有一个 `Reference` 特性。
-
-     例如：
-
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" Reference="MyDocument.txt" />
-    </Nodes>
-    <Properties>
-       <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
-
-     多个代码元素
-
-    1.  在 `<Node/>` 或 `<Link/>` 元素中，添加一个新特性以指定每个引用的位置。
-
-    2.  在 `<Properties>` 部分：
-
-        1.  为每个新引用类型添加一个 `<Property/>` 元素。
-
-        2.  将 `Id` 特性设置为新引用特性的名称。
-
-        3.  添加`IsReference`属性，并将其设置为`True`以使引用出现在代码元素上**转到引用**快捷菜单。
-
-        4.  使用`Label`特性以指定代码元素上的显示文本**转到引用**快捷菜单。
+     > [!NOTE]
+     >  每个元素只能具有一个 `Reference` 特性。
 
      例如：
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
-    </Nodes>
-    <Properties>
-       <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
-       <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
-    </Properties>
-    ```
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" Reference="MyDocument.txt" />
+   </Nodes>
+   <Properties>
+      <Property Id="Reference" Label="My Document" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
 
-     在代码图上，代码元素的名称带下划线显示。 当您打开代码元素或链接的快捷菜单时，您将看到**转到引用**包含供你选择的链接的代码元素的快捷菜单。
+    多个代码元素
 
-4.  使用 `ReferenceTemplate` 特性来指定多个引用使用的公共字符串（例如 URL），而不是在引用中重复该字符串。
+   1. 在 `<Node/>` 或 `<Link/>` 元素中，添加一个新特性以指定每个引用的位置。
 
-     `ReferenceTemplate` 特性为引用的值指定占位符。 在下面的示例中，`{0}` 特性中的 `ReferenceTemplate` 占位符将替换为 `MyFirstReference` 元素中 `MySecondReference` 和 `<Node/>` 特性的值，以生成完整路径：
+   2. 在 `<Properties>` 部分：
 
-    ```xml
-    <Nodes>
-       <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
-       <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
-    </Nodes>
-    <Properties>
-       <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
-       <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
-    </Properties>
-    ```
+      1.  为每个新引用类型添加一个 `<Property/>` 元素。
 
-5.  若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择**转到引用**，然后代码元素。
+      2.  将 `Id` 特性设置为新引用特性的名称。
+
+      3.  添加`IsReference`属性，并将其设置为`True`以使引用出现在代码元素上**转到引用**快捷菜单。
+
+      4.  使用`Label`特性以指定代码元素上的显示文本**转到引用**快捷菜单。
+
+      例如：
+
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" SequenceDiagram="MySequenceDiagram.sequencediagram" ActiveBugs="MyActiveBugs.wiq"/>
+   </Nodes>
+   <Properties>
+      <Property Id="SequenceDiagram" Label="My Sequence Diagram" DataType="System.String" IsReference="True" />
+      <Property Id="ActiveBugs" Label="Active Bugs" DataType="System.String" IsReference="True" />
+   </Properties>
+   ```
+
+    在代码图上，代码元素的名称带下划线显示。 当您打开代码元素或链接的快捷菜单时，您将看到**转到引用**包含供你选择的链接的代码元素的快捷菜单。
+
+4. 使用 `ReferenceTemplate` 特性来指定多个引用使用的公共字符串（例如 URL），而不是在引用中重复该字符串。
+
+    `ReferenceTemplate` 特性为引用的值指定占位符。 在下面的示例中，`{0}` 特性中的 `ReferenceTemplate` 占位符将替换为 `MyFirstReference` 元素中 `MySecondReference` 和 `<Node/>` 特性的值，以生成完整路径：
+
+   ```xml
+   <Nodes>
+      <Node Id="MyNode" MyFirstReference="MyFirstDocument" MySecondReference="MySecondDocument"/>
+      <Node Id="MySecondNode" MyFirstReference="AnotherFirstDocument" MySecondReference="AnotherSecondDocument"/>
+   </Nodes>
+   <Properties>
+      <Property Id="MyFirstReference" Label="My First Document" DataType="System.String" IsReference="True" ReferenceTemplate="http://www.Fabrikam.com/FirstDocuments/{0}.asp"/>
+      <Property Id="MySecondReference" Label="My Second Document" DataType="System.String" IsReference="True" ReferenceTemplate=" http://www.Fabrikam.com/SecondDocuments/{0}.asp"/>
+   </Properties>
+   ```
+
+5. 若要查看引用的代码元素或代码图中的代码元素，请打开代码元素或链接的快捷菜单。 选择**转到引用**，然后代码元素。
 
 ## <a name="see-also"></a>请参阅
 

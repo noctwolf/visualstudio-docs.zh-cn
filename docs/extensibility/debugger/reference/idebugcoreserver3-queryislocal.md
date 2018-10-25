@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::QueryIsLocal |Microsoft 文档
+title: IDebugCoreServer3::QueryIsLocal |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a899a1d37f1dc57f6aaac7bf1f5ec3823003f29
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 418ab83917d30d4e4665669eda60d69ca076d1cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31106021"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818037"
 ---
 # <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
-确定是否调用方的本地服务器。  
+确定服务器是否本地给调用方。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,7 +38,7 @@ int QueryIsLocal();
 ```  
   
 ## <a name="return-value"></a>返回值  
- 返回`S_OK`以指示服务器是本地。 返回`S_FALSE`如果服务器运行 msvsmon.exe，通常用于远程调试的一个实例。  
+ 返回`S_OK`以指示服务器是本地。 返回`S_FALSE`如果服务器运行 msvsmon.exe，通常用于远程调试的实例中。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

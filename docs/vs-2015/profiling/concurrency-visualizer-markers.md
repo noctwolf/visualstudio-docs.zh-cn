@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63a4844f83961b2d060f9f9a574e0aaeb44991a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2cfbc1f3fd18b14891ecac825545bbdaeddad039
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264943"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830185"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49264943"
 ## <a name="known-sources-of-markers"></a>已知的标记源  
  只要某些约束，任何 ETW 提供程序都可以生成标记。 您可以配置并发可视化工具，使之侦听其他的标记事件源。 默认情况下，它将侦听这些事件源：  
   
--   [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)  
+- [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)  
   
--   [任务并行库 (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
+- [任务并行库 (TPL)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23)  
   
--   [数据流](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
+- [数据流](http://msdn.microsoft.com/library/643575d0-d26d-4c35-8de7-a9c403e97dd6)  
   
--   [并行 LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
+- [并行 LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)  
   
--   [并发运行时](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
+- [并发运行时](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)  
   
--   [方案标记支持](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [方案标记支持](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
   
--   [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
+- [C++ AMP (C++ Accelerated Massive Parallelism)](http://msdn.microsoft.com/library/e27824cb-3167-409b-8c3f-a0e476d8f349)  
   
- 使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中的“标记”选项卡，可以控制是否在并发可视化工具中显示来自不同源的标记，也可以根据重要性和类别来筛选标记。  
+  使用[高级设置](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md)对话框中的“标记”选项卡，可以控制是否在并发可视化工具中显示来自不同源的标记，也可以根据重要性和类别来筛选标记。  
   
 ## <a name="markers-from-eventsource"></a>来自 EventSource 的标记  
  并发可视化工具还可以显示 EventSource 事件。  有关详细信息，请参阅[将 EventSource 事件作为标记可视化](../profiling/visualizing-eventsource-events-as-markers.md)。  

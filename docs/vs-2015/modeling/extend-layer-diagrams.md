@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 5551a982b7f7135235c116cde28c71a0695874db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3c149558f53effff29d15bfce0d05f0dada0f7b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301829"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49847066"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "49301829"
 ##  <a name="prereqs"></a> 要求  
  必须在想要开发层扩展的计算机上安装了以下内容：  
   
--   Visual Studio  
+- Visual Studio  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md)  
   
--   [Visual Studio 2015 建模 SDK](http://www.microsoft.com/download/details.aspx?id=48148)  
+- [Visual Studio 2015 建模 SDK](http://www.microsoft.com/download/details.aspx?id=48148)  
   
- 在想要运行层扩展的计算机上必须安装合适版本的 Visual Studio。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
+  在想要运行层扩展的计算机上必须安装合适版本的 Visual Studio。 有关详细信息，请参阅[部署层模型扩展](../modeling/deploy-a-layer-model-extension.md)。  
   
- 若要查看支持层关系图的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+  若要查看支持层关系图的 Visual Studio 的版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="in-this-section"></a>本节内容  
  [向层关系图添加命令和笔势](../modeling/add-commands-and-gestures-to-layer-diagrams.md)  

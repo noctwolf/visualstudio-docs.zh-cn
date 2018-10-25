@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2905cd6fcf9255eb8ba76d636d908651e2254115
-ms.sourcegitcommit: e6b13898cfbd89449f786c2e8f3e3e7377afcf25
+ms.openlocfilehash: 21515d6e9841d943cf91799224afdebf8326e07e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/22/2018
-ms.locfileid: "36327071"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836822"
 ---
 # <a name="developer-community-data-privacy"></a>开发人员社区数据隐私
 
@@ -33,13 +33,13 @@ ms.locfileid: "36327071"
 
 1. 在创建的报表中，选择“添加评论”，创建对问题的私人说明。
 
-1. 在回复编辑器中，使用“提交”和“取消”按钮下的控件，指定可查看回复的群体。 选择“版主和贴主可见”，可仅允许 Microsoft 员工和自己查看。
+2. 在回复编辑器中，使用“提交”和“取消”按钮下的控件，指定可查看回复的群体。 选择“版主和贴主可见”，可仅允许 Microsoft 员工和自己查看。
 
    ![开发者社区上的“隐私”控件](media/developer-community-privacy-control.png)
 
    只有指定的人员能看到该评论及其内附的图像、链接或代码。 该评论下的所有回复与最初的评论具有相同的可见性。 即使回复上的隐私控件未正确显示可见性受限状态，仍是如此。
 
-1. 添加重现所需的说明和所有其他信息、图像和文件附件。 选择“提交”按钮将私下发送此信息。
+3. 添加重现所需的说明和所有其他信息、图像和文件附件。 选择“提交”按钮将私下发送此信息。
 
    > [!NOTE]
    > 附件大小不得超过 2 GB，最多可附加 10 个文件。 如果需要上传更大的文件，可提交新的问题报表或在私人评论中上传 Microsoft 员工的 URL。
@@ -82,8 +82,8 @@ ms.locfileid: "36327071"
 
    - 转储文件
 
-   > [!NOTE]
-   > 提交报表前，可删除任何不想提交的记录数据。
+    > [!NOTE]
+    > 提交报表前，可删除任何不想提交的记录数据。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: dbe546f43b0a66abc78b94480894b63dc4f5eafa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9d924ee92258e348d5ffee1551fcde7707d711cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283102"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855204"
 ---
 # <a name="get-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 入门
 
@@ -47,7 +47,7 @@ ms.locfileid: "44283102"
 
 如果已安装 Visual Studio 2017 或者希望手动安装，请运行“Visual Studio 安装程序”。
 
-1. [下载 Visual Studio 安装程序](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)，如已安装，则打开它。
+1. [下载 Visual Studio 安装程序](/visualstudio/install/install-visual-studio)，如已安装，则打开它。
 
 1. 为所需的 Visual Studio 版本单击“修改”（如已安装）或“安装”（适用于新安装）。
 
@@ -63,21 +63,21 @@ ms.locfileid: "44283102"
 
 1. 从“编辑”菜单选择“首选项”。
 
-  ![选择首选项](media/vstu_unity-preferences.png)
+   ![选择首选项](media/vstu_unity-preferences.png)
 
-1. 在“首选项”对话框中，选择“外部工具”选项卡。
+2. 在“首选项”对话框中，选择“外部工具”选项卡。
 
-1. 从“外部脚本编辑器”下拉列表中，选择所需版本的 Visual Studio（如果列出此项），否则选择“浏览...”。
+3. 从“外部脚本编辑器”下拉列表中，选择所需版本的 Visual Studio（如果列出此项），否则选择“浏览...”。
 
-  ![选择 Visual Studio](media/vstu_unity-external-tools.png)
+   ![选择 Visual Studio](media/vstu_unity-external-tools.png)
 
-1. 如果已选择“浏览...”，导航到 Visual Studio 安装目录中的“Common7/IDE”目录，然后选择“devenv.exe”。 然后单击“打开”。
+4. 如果已选择“浏览...”，导航到 Visual Studio 安装目录中的“Common7/IDE”目录，然后选择“devenv.exe”。 然后单击“打开”。
 
-  ![选择“打开”](media/vstu_browse-for-application.png)
+   ![选择“打开”](media/vstu_browse-for-application.png)
 
-1. 在“外部脚本编辑器”列表中选择 Visual Studio 后，确认已选中“编辑器连接”复选框。
+5. 在“外部脚本编辑器”列表中选择 Visual Studio 后，确认已选中“编辑器连接”复选框。
 
-1. 关闭“首选项”对话框以完成配置过程。
+6. 关闭“首选项”对话框以完成配置过程。
 
 ## <a name="support-for-older-versions"></a>支持旧版本
 

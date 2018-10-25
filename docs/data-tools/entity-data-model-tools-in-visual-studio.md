@@ -10,12 +10,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 679c91014966167c64296638d9d0a9b2d302d345
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: bbffe18b108beb230a77da38df99a7100e542a27
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44284023"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49819090"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>在 Visual Studio 中的实体框架工具
 Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够通过使用特定于域的对象处理关系数据。 它不要求提供开发人员通常需要编写的大部分数据访问代码。 实体框架是建模技术，用于新的.NET 应用程序的建议的对象关系映射 (ORM)。
@@ -28,16 +28,16 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 这些是组成 Visual Studio 中的实体框架工具的特定工具：
 
--   可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]设计器**(**实体设计器**) 直观地创建和修改实体、 关联、 映射和继承关系。 **实体设计器**还会生成[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]对象层代码。
+- 可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]设计器**(**实体设计器**) 直观地创建和修改实体、 关联、 映射和继承关系。 **实体设计器**还会生成[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]对象层代码。
 
--   可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。
+- 可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]向导**从现有数据库生成概念模型并将数据库连接信息添加到你的应用程序。
 
--   可以使用**创建数据库向导**首先创建概念模型，然后创建支持该模型的数据库。
+- 可以使用**创建数据库向导**首先创建概念模型，然后创建支持该模型的数据库。
 
--   可以使用**模型更新向导**基础数据库发生更改时，更新概念模型、 存储模型和映射。
+- 可以使用**模型更新向导**基础数据库发生更改时，更新概念模型、 存储模型和映射。
 
-    > [!NOTE]
-    >  从 Visual Studio 2010 开始，不支持实体框架工具[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
+  > [!NOTE]
+  >  从 Visual Studio 2010 开始，不支持实体框架工具[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。
 
 这些工具生成或修改 *.edmx*文件。 这 *.edmx*文件包含描述概念模型、 存储模型中，以及它们之间的映射信息。 有关详细信息，请参阅[EDMX](https://docs.microsoft.com/ef/ef6/)。
 
@@ -45,12 +45,12 @@ Entity Framework 是一种对象关系映射技术，使.NET 开发人员能够�
 
 ## <a name="related-topics"></a>相关主题
 
-|标题|描述|
-|-----------|-----------------|
-|[ADO.NET 实体框架](/dotnet/framework/data/adonet/ef/index)|介绍如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供创建应用程序。|
-|[实体数据模型](/dotnet/framework/data/adonet/entity-data-model)|提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。|
-|[Entity Framework (EF) 文档）](https://docs.microsoft.com/ef/ef6/get-started)|提供的视频、 教程和高级的文档可帮助您充分利用 Entity Framework 的索引。|
-|[ASP.NET 5 应用程序指向新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|介绍如何使用 Entity Framework 7 创建一个新的 ASP.NET 5 应用程序。|
+| 标题 | 描述 |
+| - | - |
+| [ADO.NET 实体框架](/dotnet/framework/data/adonet/ef/index) | 介绍如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供创建应用程序。 |
+| [实体数据模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用于处理数据的基础上构建的应用程序使用链接和信息[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。 |
+| [Entity Framework (EF) 文档）](https://docs.microsoft.com/ef/ef6/get-started) | 提供的视频、 教程和高级的文档可帮助您充分利用 Entity Framework 的索引。 |
+| [ASP.NET 5 应用程序指向新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 介绍如何使用 Entity Framework 7 创建一个新的 ASP.NET 5 应用程序。 |
 
 ## <a name="see-also"></a>请参阅
 

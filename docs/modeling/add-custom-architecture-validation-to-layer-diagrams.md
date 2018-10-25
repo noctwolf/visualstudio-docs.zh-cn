@@ -11,59 +11,63 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: ffb018e590b95a13e811180e88d1906bf5f703b0
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: e9343ed8fdb1f3993fcd5c2f70595fd4bdd92dcd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370830"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875445"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
+
 在 Visual Studio 中，用户可以验证对照层模型项目中的源代码，以便他们可以验证源代码符合对依赖项关系图的依赖项。 有标准的验证算法，但你可以定义自己的验证扩展。
 
- 当用户选择**验证体系结构**命令在依赖项关系图中，调用标准验证方法时后, 跟任意验证扩展已安装的。
+当用户选择**验证体系结构**命令在依赖项关系图中，调用标准验证方法时后, 跟任意验证扩展已安装的。
 
 > [!NOTE]
->  在依赖项关系图中，验证的主要用途是将关系图与解决方案的其他部分中的程序代码进行比较。
+> 在依赖项关系图中，验证的主要用途是将关系图与解决方案的其他部分中的程序代码进行比较。
 
- 你可以将层验证扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。 你可以通过其自身将你的验证程序放入 VSIX 中，也可以作为其他扩展在同一 VSIX 中组合使用。 应在其自身的 Visual Studio 项目中编写验证程序的代码，而不是在与其他扩展相同的项目中编写。
+你可以将层验证扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。 你可以通过其自身将你的验证程序放入 VSIX 中，也可以作为其他扩展在同一 VSIX 中组合使用。 应在其自身的 Visual Studio 项目中编写验证程序的代码，而不是在与其他扩展相同的项目中编写。
 
 > [!WARNING]
->  创建验证项目之后，请复制本主题末尾的 [示例代码](#example) ，然后根据自己的需要进行编辑。
+> 创建验证项目之后，请复制本主题末尾的 [示例代码](#example) ，然后根据自己的需要进行编辑。
 
 ## <a name="requirements"></a>要求
- 请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。
+
+请参阅 [要求](../modeling/extend-layer-diagrams.md#prereqs)。
 
 ## <a name="defining-a-layer-validator-in-a-new-vsix"></a>在新的 VSIX 中定义层验证程序
- 创建验证程序最快的方法就是使用项目模板。 这会将代码和 VSIX 清单置于同一项目中。
 
-#### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展
+创建验证程序最快的方法就是使用项目模板。 这会将代码和 VSIX 清单置于同一项目中。
 
-1.  使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。
+### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展
 
-2.  在“新建项目”  对话框中的“项目建模” 下，选择“层设计器验证扩展” 。
+1. 使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。
 
-     该模板将创建包含一个小型示例的项目。
+2. 在“新建项目”  对话框中的“项目建模” 下，选择“层设计器验证扩展” 。
 
-    > [!WARNING]
-    >  到 makethe 模板正常工作：
-    >
-    >  -   编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。
-    > -   如果使用自定义属性，应用更新中所述[将自定义属性添加到依赖项关系图](../modeling/add-custom-properties-to-layer-diagrams.md)。
+    该模板将创建包含一个小型示例的项目。
 
-3.  编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
+   > [!WARNING]
+   > 若要使模板正常工作：
+   >
+   > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。
+   > - 如果使用自定义属性，应用更新中所述[将自定义属性添加到依赖项关系图](../modeling/add-custom-properties-to-layer-diagrams.md)。
 
-4.  若要测试此扩展，请参阅 [调试层验证](#debugging)。
+3. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
 
-    > [!NOTE]
-    >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
+4. 若要测试此扩展，请参阅 [调试层验证](#debugging)。
 
-5.  若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 **.vsix**中的文件**bin\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
+   > [!NOTE]
+   > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
+
+5. 若要安装该扩展的 Visual Studio 中，或在另一台计算机上的主实例中，找到 *.vsix*中的文件*bin*目录。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择**扩展和更新**上**工具**菜单。
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证程序
- 如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。
 
-#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证
+如果要创建一个包含层验证程序、命令和其他扩展的 VSIX，建议创建一个项目来定义该 VSIX，并分隔项目和处理程序。
+
+### <a name="to-add-layer-validation-to-a-separate-vsix"></a>向单独的 VSIX 添加层验证
 
 1.  在新的或现有 Visual Studio 解决方案中创建类库项目。 在“新建项目”  对话框中，单击“Visual C#”  ，然后单击“类库” 。 此项目将包含层验证类。
 
@@ -100,7 +104,7 @@ ms.locfileid: "46370830"
 5.  返回层验证项目，并添加以下项目引用：
 
     |**引用**|**允许执行的操作**|
-    |-------------------|------------------------------------|
+    |-|-|
     |Microsoft.VisualStudio.GraphModel.dll|读取体系结构图|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|读取与层关联的代码 DOM|
     |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|读取层模型|
@@ -113,104 +117,108 @@ ms.locfileid: "46370830"
 7.  若要测试此扩展，请参阅 [调试层验证](#debugging)。
 
     > [!NOTE]
-    >  将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
+    > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
 8.  若要安装的 Visual Studio 中，或在另一台计算机上的主实例中的 VSIX，查找 **.vsix**中的文件**bin** VSIX 项目的目录。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
      若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。
 
 ##  <a name="programming"></a> 验证编程
- 若要定义层验证扩展，可以定义一个具有以下特征的类：
 
--   声明的大体形式如下：
+若要定义层验证扩展，可以定义一个具有以下特征的类：
 
-    ```
+- 声明的大体形式如下：
 
-    using System.ComponentModel.Composition;
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;
-    using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
-    using Microsoft.VisualStudio.GraphModel;
-    ...
-     [Export(typeof(IValidateArchitectureExtension))]
-      public partial class Validator1Extension :
-                      IValidateArchitectureExtension
+  ```csharp
+  using System.ComponentModel.Composition;
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema;
+  using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
+  using Microsoft.VisualStudio.GraphModel;
+  ...
+   [Export(typeof(IValidateArchitectureExtension))]
+    public partial class Validator1Extension :
+                    IValidateArchitectureExtension
+    {
+      public void ValidateArchitecture(Graph graph)
       {
-        public void ValidateArchitecture(Graph graph)
-        {
-           GraphSchema schema = graph.DocumentSchema;
-          ...
-      } }
-    ```
+         GraphSchema schema = graph.DocumentSchema;
+        ...
+    } }
+  ```
 
--   如果发现错误，可以使用 `LogValidationError()`进行报告。
+- 如果发现错误，可以使用 `LogValidationError()`进行报告。
 
-    > [!WARNING]
-    >  不要使用 `LogValidationError`的可选参数。
+  > [!WARNING]
+  > 不要使用 `LogValidationError`的可选参数。
 
- 用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
+用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
 
--   表示为节点和关系图中的链接层模型的 Visual Studio 解决方案。
+- 表示为节点和关系图中的链接层模型的 Visual Studio 解决方案。
 
--   代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。
+- 代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。
 
--   从层节点到代码项目节点的链接。
+- 从层节点到代码项目节点的链接。
 
--   表示由验证程序发现的错误的节点。
+- 表示由验证程序发现的错误的节点。
 
- 构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。
+构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。
 
 > [!NOTE]
->  这不是可以在域特定语言中使用的验证过程相同。
+> 这不是可以在域特定语言中使用的验证过程相同。
 
- 验证方法不应更改正在验证的层模型或代码。
+验证方法不应更改正在验证的层模型或代码。
 
- 在 <xref:Microsoft.VisualStudio.GraphModel>中定义了图形模型。 其主体类为 <xref:Microsoft.VisualStudio.GraphModel.GraphNode> 和 <xref:Microsoft.VisualStudio.GraphModel.GraphLink>。
+在 <xref:Microsoft.VisualStudio.GraphModel>中定义了图形模型。 其主体类为 <xref:Microsoft.VisualStudio.GraphModel.GraphNode> 和 <xref:Microsoft.VisualStudio.GraphModel.GraphLink>。
 
- 每个节点和每个链接都有一个或多个指定元素类型或其表示的关系的类别。 典型图形的节点具有以下类别：
+每个节点和每个链接都有一个或多个指定元素类型或其表示的关系的类别。 典型图形的节点具有以下类别：
 
--   Dsl.LayerModel
+- Dsl.LayerModel
 
--   Dsl.Layer
+- Dsl.Layer
 
--   Dsl.Reference
+- Dsl.Reference
 
--   CodeSchema_Type
+- CodeSchema_Type
 
--   CodeSchema_Namespace
+- CodeSchema_Namespace
 
--   CodeSchema_Type
+- CodeSchema_Type
 
--   CodeSchema_Method
+- CodeSchema_Method
 
--   CodeSchema_Field
+- CodeSchema_Field
 
--   CodeSchema_Property
+- CodeSchema_Property
 
- 代码中从层到元素的链接具有“Represents”类别。
+代码中从层到元素的链接具有“Represents”类别。
 
 ##  <a name="debugging"></a> 调试验证
- 若要调试你的层验证扩展，请按 Ctrl + F5。 这将打开一个 Visual Studio 实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。
+
+若要调试你的层验证扩展，请按 Ctrl + F5。 这将打开一个 Visual Studio 实验实例。 在本例中，将打开或创建一个层模型。 此模型必须与代码相关联，并且必须具有至少一个依赖项。
 
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>使用包含依赖项的解决方案进行测试
- 除非出现以下特征，否则不执行验证：
 
--   依赖项关系图上没有至少一个依赖项链接。
+除非出现以下特征，否则不执行验证：
 
--   模型中存在于代码元素相关联的层。
+- 依赖项关系图上没有至少一个依赖项链接。
 
- 启动测试验证扩展，Visual Studio 的实验实例第一次打开或创建具有以下特征的解决方案。
+- 模型中存在于代码元素相关联的层。
+
+启动测试验证扩展，Visual Studio 的实验实例第一次打开或创建具有以下特征的解决方案。
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案
- 每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果未更新测试依赖项关系图或其代码，将不会执行验证方法。
+
+每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果未更新测试依赖项关系图或其代码，将不会执行验证方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器
- 验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。
 
- 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当出现调试对话框中，选择 Visual Studio 的主实例。
+验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。
 
- 或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。
+若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当出现调试对话框中，选择 Visual Studio 的主实例。
 
- 始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
+或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 消息框出现时，请转到主实例的 Visual Studio 并在**调试**菜单上，单击**附加到进程**。 选择名为 **Graphcmd.exe**的进程。
+
+始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
 
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展
 

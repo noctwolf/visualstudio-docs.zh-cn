@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 331fa8a91bb4fff51cb59b7a9f3cce23a38b3d2e
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: a602f50e9d3c439fc450c286923341dafff1e116
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881659"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何： 以编程方式向 Word 文档中插入文本
   向 Microsoft Office Word 文档中插入文本主要有三种方式：  
@@ -94,39 +94,39 @@ ms.locfileid: "35257207"
   
 ### <a name="to-insert-text-using-the-typetext-method"></a>若要使用 TypeText 方法插入文本  
   
-1.  声明 <xref:Microsoft.Office.Interop.Word.Selection> 对象变量。  
+1. 声明 <xref:Microsoft.Office.Interop.Word.Selection> 对象变量。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
-     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+    [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+    [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  如果 **Overtype** 选项已打开，请将其关闭。  
+2. 如果 **Overtype** 选项已打开，请将其关闭。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
-     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+    [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+    [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  测试当前选择项是否未插入点。  
+3. 测试当前选择项是否未插入点。  
   
-     如果是，此代码将使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>插入一个句子，然后使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> 方法插入段落标记。  
+    如果是，此代码将使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>插入一个句子，然后使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> 方法插入段落标记。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
-     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+    [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+    [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  **ElseIf** 块中的代码用于测试选择项是否为正常选择项。 如果是，则另一个 **If** 块将测试 **ReplaceSelection** 选项是否已打开。 如果是，该代码将使用选择项的 <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> 方法将选择项折叠为文本所选块起始处的插入点。 插入文本和段落标记。  
+4. **ElseIf** 块中的代码用于测试选择项是否为正常选择项。 如果是，则另一个 **If** 块将测试 **ReplaceSelection** 选项是否已打开。 如果是，该代码将使用选择项的 <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> 方法将选择项折叠为文本所选块起始处的插入点。 插入文本和段落标记。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
-     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+    [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+    [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  如果选择项不是所选文本的插入点或块，则 **Else** 块中的代码将不会执行任何操作。  
+5. 如果选择项不是所选文本的插入点或块，则 **Else** 块中的代码将不会执行任何操作。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
-     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+    [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+    [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- 此外可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A>方法<xref:Microsoft.Office.Interop.Word.Selection>对象，它模拟的功能**退格符**键盘上键。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。  
+   此外可以使用<xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A>方法<xref:Microsoft.Office.Interop.Word.Selection>对象，它模拟的功能**退格符**键盘上键。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。  
   
- 以下示例显示了完整的代码。 若要使用此示例，请运行项目中的 `ThisDocument` 或 `ThisAddIn` 类的代码。  
+   以下示例显示了完整的代码。 若要使用此示例，请运行项目中的 `ThisDocument` 或 `ThisAddIn` 类的代码。  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
- [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+   [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+   [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
 ## <a name="see-also"></a>请参阅  
  [如何： 以编程方式设置的文档中的文本格式](../vsto/how-to-programmatically-format-text-in-documents.md)   

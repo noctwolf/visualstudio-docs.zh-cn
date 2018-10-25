@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8ac70ae10389bb39a86e5ad305f3457c54bbb8
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: afbb16d3f5bd9d9278ba6e787a6bba673cc28acb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49910005"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 在本演练中创建 Visual Studio 设置类别和使用它来保存到的值并设置文件中还原值。 设置类别是一组显示为"自定义设置点;"的相关属性也就是说，作为中的复选框**导入和导出设置**向导。 (您可以在找到它**工具**菜单。)设置进行保存或还原为类别，以及各项设置不会显示在该向导。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  

@@ -24,35 +24,35 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 908d5094ad36a6f907c781987fba1fd053d673dc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 64c663e423d0d87fa0b710b65f60b4890a836d88
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205928"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49830933"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中标识并自定义键盘快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 你可以认识 Visual Studio 命令的键盘快捷键，自定义这些快捷键并将其导出以供他人使用。 许多快捷键总是调用相同的命令，但是，快捷键的行为可能因以下条件而异：  
   
--   你首次运行 Visual Studio（例如，常规开发或 Visual C#）时选择了哪些默认环境设置。  
+- 你首次运行 Visual Studio（例如，常规开发或 Visual C#）时选择了哪些默认环境设置。  
   
--   你是否已自定义快捷键的行为。  
+- 你是否已自定义快捷键的行为。  
   
--   你选择快捷键时所在的上下文。 例如，你使用设置设计器时，F2 快捷键将调用“编辑.编辑单元格”命令；而你使用团队资源管理器时，则调用“文件.重命名”命令。  
+- 你选择快捷键时所在的上下文。 例如，你使用设置设计器时，F2 快捷键将调用“编辑.编辑单元格”命令；而你使用团队资源管理器时，则调用“文件.重命名”命令。  
   
- 不管设置、自定义和上下文，始终可以在“选项”对话框中找到并更改键盘快捷方式。 还可以在[常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查找诸多命令的默认键盘快捷方式，并可在[默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)中查找所有默认快捷方式（基于常规开发设置）的完整列表。  
+  不管设置、自定义和上下文，始终可以在“选项”对话框中找到并更改键盘快捷方式。 还可以在[常用命令的默认键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查找诸多命令的默认键盘快捷方式，并可在[默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)中查找所有默认快捷方式（基于常规开发设置）的完整列表。  
   
- **在本主题中**  
+  **在本主题中**  
   
--   [认识键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
+- [认识键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_identify)  
   
--   [自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
+- [自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_assign)  
   
--   [共享自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
+- [共享自定义键盘快捷方式](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md#bkmk_transfer)  
   
- 如果一个快捷键仅分配给全局上下文中的一个命令，则该快捷键将始终调用该命令。 但是，一个快捷键可以同时分配给全局上下文和特定上下文中的不同命令。 如果你在特定上下文中使用这个快捷键，则该快捷键将调用特定上下文中的命令，而非全局上下文中的命令。  
+  如果一个快捷键仅分配给全局上下文中的一个命令，则该快捷键将始终调用该命令。 但是，一个快捷键可以同时分配给全局上下文和特定上下文中的不同命令。 如果你在特定上下文中使用这个快捷键，则该快捷键将调用特定上下文中的命令，而非全局上下文中的命令。  
   
 > [!NOTE]
 >  你的 Visual Studio 设置和版本可能会更改对话框中显示的菜单命令和选项的名称和位置。 本主题基于“常规开发设置”。  

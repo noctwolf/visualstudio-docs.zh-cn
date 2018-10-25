@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7897869e8cc010d54c1914cbfa8ca763dd3a3bfa
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 2a4234d8f6ee9fa946f2accfd50a587e6dbd8068
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279337"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822096"
 ---
 # <a name="localize-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。  
@@ -69,16 +69,16 @@ ms.locfileid: "44279337"
   
  按需下载附属程序集与按需下载其他类型的程序集略有不同。 有关如何启用此方案中使用的详细信息和代码示例[!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)]工具[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]，请参阅[演练： 使用 ClickOnce 部署 API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。  
   
- 还可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此方案。  另请参阅[演练： 使用 ClickOnce 部署 API 使用设计器按需下载附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110))或[演练： 使用 ClickOnce 部署 API 按需下载附属程序集使用设计器](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。  
+ 还可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此方案。  另请参阅 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 或 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>本地化的 ClickOnce 应用程序在部署之前测试  
  仅当应用程序主线程的 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性设置为附属程序集的区域性时，才将附属程序集用于 Windows 窗体应用程序。 本地市场中的客户可能已经在运行 Windows 的本地化版本，并且已将区域性设置为相应默认值。  
   
  向客户提供应用程序前，你有如下三个选项，供测试已本地化的部署：  
   
--   可在 Windows 相应的本地化版本上运行自己的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
+- 可在 Windows 相应的本地化版本上运行自己的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。  
   
--   可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）  
+- 可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）  
   
 ## <a name="see-also"></a>请参阅  
  [\<assemblyIdentity > 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)   

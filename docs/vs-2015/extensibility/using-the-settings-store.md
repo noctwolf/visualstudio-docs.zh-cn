@@ -15,23 +15,23 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 15f0aeda589b101d9d02c9741eabf8b0e1866e4c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e7d103415869cc30f2c940b632c73f611986af2
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273359"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811357"
 ---
 # <a name="using-the-settings-store"></a>使用设置存储
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有两种类型的设置存储：  
   
--   配置设置是只读的 Visual Studio 和 VSPackage 的设置。 Visual Studio 将合并到此存储区的所有已知的.pkgdef 文件中的设置。  
+- 配置设置是只读的 Visual Studio 和 VSPackage 的设置。 Visual Studio 将合并到此存储区的所有已知的.pkgdef 文件中的设置。  
   
--   用户设置，包括可写设置，如在页面上显示的那些**选项**对话框、 属性页和某些其他对话框。 Visual Studio 扩展可能会使用这些本地存储少量数据。  
+- 用户设置，包括可写设置，如在页面上显示的那些**选项**对话框、 属性页和某些其他对话框。 Visual Studio 扩展可能会使用这些本地存储少量数据。  
   
- 本演练演示如何从配置设置存储中读取数据。 请参阅[写入用户设置存储](../extensibility/writing-to-the-user-settings-store.md)有关如何将写入到的用户设置存储中的说明。  
+  本演练演示如何从配置设置存储中读取数据。 请参阅[写入用户设置存储](../extensibility/writing-to-the-user-settings-store.md)有关如何将写入到的用户设置存储中的说明。  
   
 ## <a name="creating-the-example-project"></a>创建示例项目  
  本部分演示如何使用演示的菜单命令创建一个简单的扩展项目。  
@@ -43,44 +43,44 @@ ms.locfileid: "49273359"
 ## <a name="using-the-configuration-settings-store"></a>使用配置设置存储  
  本部分介绍如何检测和显示配置设置。  
   
-1.  在 SettingsStorageCommand.cs 文件中，添加以下 using 语句：  
+1. 在 SettingsStorageCommand.cs 文件中，添加以下 using 语句：  
   
-    ```  
-    using System.Collections.Generic;  
-    using Microsoft.VisualStudio.Settings;  
-    using Microsoft.VisualStudio.Shell.Settings;  
-    using System.Windows.Forms;  
-    ```  
+   ```  
+   using System.Collections.Generic;  
+   using Microsoft.VisualStudio.Settings;  
+   using Microsoft.VisualStudio.Shell.Settings;  
+   using System.Windows.Forms;  
+   ```  
   
-2.  在`MenuItemCallback`，删除方法的主体，并添加以下行获取配置设置存储区：  
+2. 在`MenuItemCallback`，删除方法的主体，并添加以下行获取配置设置存储区：  
   
-    ```  
-    SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-    SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-    ```  
+   ```  
+   SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+   SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+   ```  
   
-     <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>是一个托管帮助器类，通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>服务。  
+    <xref:Microsoft.VisualStudio.Shell.Settings.ShellSettingsManager>是一个托管帮助器类，通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsSettingsManager>服务。  
   
-3.  现在，了解是否安装了 Windows Phone 工具。 代码应如下所示：  
+3. 现在，了解是否安装了 Windows Phone 工具。 代码应如下所示：  
   
-    ```  
-    private void MenuItemCallback(object sender, EventArgs e)  
-    {  
-        SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
-        SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
-        bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
-        string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
-        MessageBox.Show(message);  
-    }  
-    ```  
+   ```  
+   private void MenuItemCallback(object sender, EventArgs e)  
+   {  
+       SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
+       SettingsStore configurationSettingsStore = settingsManager.GetReadOnlySettingsStore(SettingsScope.Configuration);  
+       bool arePhoneToolsInstalled = configurationSettingsStore.CollectionExists(@"InstalledProducts\Microsoft Windows Phone Developer Tools");  
+       string message = "Microsoft Windows Phone Developer Tools: " + arePhoneToolsInstalled;  
+       MessageBox.Show(message);  
+   }  
+   ```  
   
-4.  测试代码。 生成项目并启动调试。  
+4. 测试代码。 生成项目并启动调试。  
   
-5.  在实验实例上**工具**菜单上，单击**调用 SettingsStoreCommand**。  
+5. 在实验实例上**工具**菜单上，单击**调用 SettingsStoreCommand**。  
   
-     应会看到消息框： **Microsoft Windows Phone 开发人员工具：** 跟**True**或**False**。  
+    应会看到消息框： **Microsoft Windows Phone 开发人员工具：** 跟**True**或**False**。  
   
- Visual Studio 将设置存储在系统注册表中。  
+   Visual Studio 将设置存储在系统注册表中。  
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>若要使用注册表编辑器来验证配置设置  
   

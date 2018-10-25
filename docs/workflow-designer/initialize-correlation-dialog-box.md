@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c3525eb8964ed603e40ba74f0c06b17b494390c7
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: edfdef1c1f946e2c5f677d0ff1578a40ea7bcd8f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36755835"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49906229"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 
@@ -26,7 +26,7 @@ ms.locfileid: "36755835"
 下表介绍的用户界面 (UI) 元素**初始化相关**对话框：
 
 |UI 元素|描述|
-|----------------|-----------------|
+|-|-----------------|
 |**关联**|要初始化的相关的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
 |**在初始化**|一个键/值对，包含要初始化的数据。 此值对应于<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>属性。 有效的键/值对的一个示例是名为"OrderID"与名为 OrderID 的变量配合使用的密钥。|
 

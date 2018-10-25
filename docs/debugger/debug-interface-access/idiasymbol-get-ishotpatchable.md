@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_ishotpatchable |Microsoft 文档'
+title: 'Idiasymbol:: Get_ishotpatchable |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb3da57daefbcb51b5bcbeb32ec4d06b1e0d3f89
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 53e125db7928c71c6f1cc6b2cab04e3612a87ef9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31465598"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834885"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
-检索一个标志，指示模块是否用编译[/hotpatch （创建可热修补的映像）](/cpp/build/reference/hotpatch-create-hotpatchable-image)编译器开关。  
+检索一个标志，指示是否编译该模块[/hotpatch （创建可热修补映像）](/cpp/build/reference/hotpatch-create-hotpatchable-image)编译器开关。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_isHotpatchable(
   
 #### <a name="parameters"></a>参数  
  `pFlag`  
- [out]返回`TRUE`如果模块是热修补; 否则为返回`FALSE`。  
+ [out]返回`TRUE`如果该模块可热修补; 否则为返回`FALSE`。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="remarks"></a>备注  
  此属性是可从`SymTagCompilandDetails`符号类型 (请参阅[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md))。  

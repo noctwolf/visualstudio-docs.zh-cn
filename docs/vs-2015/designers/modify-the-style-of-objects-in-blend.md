@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6fef77a22d043d4b98d337286e539666b5d4b2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49843627"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>修改 Blend 中对象的样式
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,15 +80,15 @@ ms.locfileid: "49240144"
   
  若要创建样式，请选择对象，在“对象”菜单上选择“编辑样式”，然后选择“编辑副本”或“创建空白项”。  
   
--   选择“编辑副本”可从控件的默认样式或模板开始。  
+- 选择“编辑副本”可从控件的默认样式或模板开始。  
   
--   选择“创建空白项”可从头开始。  
+- 选择“创建空白项”可从头开始。  
   
- **编辑当前**编辑样式或已创建的模板时，才会显示选项。 对于仍在使用默认系统模板的控件，它不会出现。  
+  **编辑当前**编辑样式或已创建的模板时，才会显示选项。 对于仍在使用默认系统模板的控件，它不会出现。  
   
- 在“创建样式资源”对话框中，可以命名样式或模板以便可以在以后使用它，也可以将样式或模板应用于该类型的所有控件。  
+  在“创建样式资源”对话框中，可以命名样式或模板以便可以在以后使用它，也可以将样式或模板应用于该类型的所有控件。  
   
- ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
+  ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
 >  不能为控件的每种类型都创建样式或模板。 如果控件不支持它们，则痕迹导航按钮不会出现在美工板上方。  

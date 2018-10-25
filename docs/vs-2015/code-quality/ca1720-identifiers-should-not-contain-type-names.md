@@ -20,15 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8dda659a746f98bfa8038156d38316729f43016c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ec0980d312d4a65a770e63f0a23203a7e95c546f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49282498"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862328"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：标识符不应包含类型名称
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
@@ -48,89 +49,89 @@ ms.locfileid: "49282498"
 
  每个离散的标记参数或成员的名称被签入以下特定于语言的数据类型名称，不区分大小写的方式：
 
--   Bool
+- Bool
 
--   WChar
+- WChar
 
--   Int8
+- Int8
 
--   UInt8
+- UInt8
 
--   Short
+- Short
 
--   UShort
+- UShort
 
--   Int
+- Int
 
--   UInt
+- UInt
 
--   整数
+- 整数
 
--   UInteger
+- UInteger
 
--   Long
+- Long
 
--   ULong
+- ULong
 
--   无符号
+- 无符号
 
--   签名
+- 签名
 
--   Float
+- Float
 
--   float32
+- float32
 
--   float64
+- float64
 
- 此外，参数的名称是还会检查以下独立于语言的数据类型名称，不区分大小写的方式：
+  此外，参数的名称是还会检查以下独立于语言的数据类型名称，不区分大小写的方式：
 
--   对象
+- 对象
 
--   obj
+- obj
 
--   Boolean
+- Boolean
 
--   Char
+- Char
 
--   String
+- String
 
--   SByte
+- SByte
 
--   Byte
+- Byte
 
--   UByte
+- UByte
 
--   Int16
+- Int16
 
--   UInt16
+- UInt16
 
--   Int32
+- Int32
 
--   UInt32
+- UInt32
 
--   Int64
+- Int64
 
--   UInt64
+- UInt64
 
--   IntPtr
+- IntPtr
 
--   ptr
+- ptr
 
--   指针
+- 指针
 
--   UInptr
+- UInptr
 
--   UPtr
+- UPtr
 
--   UPointer
+- UPointer
 
--   Single
+- Single
 
--   Double
+- Double
 
--   十进制
+- 十进制
 
--   GUID
+- GUID
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  **如果针对参数引发的：**

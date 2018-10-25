@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider::GetSymAttribute |Microsoft 文档
+title: IDebugComPlusSymbolProvider::GetSymAttribute |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 283333c8d505952e36dc8524d1377fd828142aca
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ae9bafa3aa97146abd63cd6f98516632d079bfd3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104990"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49903232"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 检索与给定的父属性指定模块的调试符号。  
@@ -55,16 +55,16 @@ int GetSymAttribute (
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `tokParent`  
- [in]父属性的标记。  
+ [in]父特性的标记。  
   
  `pstrName`  
  [in]模块的名称。  
   
  `cBuffer`  
- [in]所需的输出的字节数`buffer`。  
+ [in]输出所需的字节数`buffer`。  
   
  `pcBuffer`  
  [out]输出的长度`buffer`。  
@@ -76,7 +76,7 @@ int GetSymAttribute (
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::GetSymAttribute(  
@@ -106,5 +106,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

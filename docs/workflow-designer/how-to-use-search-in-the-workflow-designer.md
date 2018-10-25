@@ -10,12 +10,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 3e8e44586f6b0f2f8aea5ab13eb27886d7b3a6e8
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: ecf4839cec08e9ffb0419aebcff9da145214b117
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49943058"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 
@@ -35,11 +35,11 @@ ms.locfileid: "36757963"
 
 ### <a name="use-quick-find"></a>使用快速查找
 
-1.  工作流设计器中打开，然后按**Ctrl + F**，或选择**编辑** > **查找和替换** > **快速查找**.
+1. 工作流设计器中打开，然后按**Ctrl + F**，或选择**编辑** > **查找和替换** > **快速查找**.
 
-2.  输入到搜索词**查找内容**文本框中，单击**查找下一个**。
+2. 输入到搜索词**查找内容**文本框中，单击**查找下一个**。
 
-3.  搜索字词位于当前工作流中。 下图显示了位于设计器中的活动显示名称：
+3. 搜索字词位于当前工作流中。 下图显示了位于设计器中的活动显示名称：
 
    ![在工作流设计器中搜索结果](../workflow-designer/media/designersearch.png)
 

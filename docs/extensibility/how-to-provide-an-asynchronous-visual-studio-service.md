@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6139187ec619ac1825cc56f801035bc4f719854b
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: c022f1a039aacee3599dd680adfa92a9404b34b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39639255"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915667"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供异步 Visual Studio 服务
 如果你想要获取服务而不会阻塞 UI 线程，您应创建异步服务，并加载在后台线程上的包。 可以使用为此目的<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而非<xref:Microsoft.VisualStudio.Shell.Package>，使用异步包的特殊异步方法中添加服务。
@@ -104,11 +104,11 @@ ms.locfileid: "39639255"
 ## <a name="register-a-service"></a>注册服务  
  若要注册一个服务，将添加<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>到提供的服务包。 不同于注册同步服务，你必须确保包和服务都支持异步加载：
   
--   必须添加**AllowsBackgroundLoading = true**字段<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>若要确保包可以以异步方式初始化 PackageRegistrationAttribute 有关详细信息，请参阅[注册和注销 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
+- 必须添加**AllowsBackgroundLoading = true**字段<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>若要确保包可以以异步方式初始化 PackageRegistrationAttribute 有关详细信息，请参阅[注册和注销 Vspackage](../extensibility/registering-and-unregistering-vspackages.md)。  
   
--   必须添加**IsAsyncQueryable = true**字段<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>以确保可以以异步方式初始化服务实例。
+- 必须添加**IsAsyncQueryable = true**字段<xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>以确保可以以异步方式初始化服务实例。
 
- 下面是示例的`AsyncPackage`使用异步服务注册：
+  下面是示例的`AsyncPackage`使用异步服务注册：
   
 ```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  

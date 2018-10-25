@@ -1,5 +1,5 @@
 ---
-title: SymTagEnum |Microsoft 文档
+title: SymTagEnum |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 36dc9b3d9fc15b06c92db27b38d94805c1ce8a25
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 9a9b3f28858bdeb6783175301de40de0d492739a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31480857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49875212"
 ---
 # <a name="symtagenum"></a>SymTagEnum
 指定符号的类型。  
@@ -73,119 +73,119 @@ enum SymTagEnum {
  指示符号具有任何类型。  
   
  `SymTagExe`  
- 指示符号是.exe 文件。 只有一个`SymTagExe`每符号存储区的符号。 它用作全局作用域，并不具有词法父级。  
+ 表示符号是.exe 文件。 只有一个`SymTagExe`每个符号存储区的符号。 它可作为全局作用域并没有词法父级。  
   
  `SymTagCompiland`  
- 指示每个编译单位组件的符号存储区的编译单位符号。 对于本机应用程序，`SymTagCompiland`符号对应对象文件链接到的映像。 对于某些类型的 Microsoft 中间语言 (MSIL) 映像，是一个编译单位，每个类。  
+ 表示符号存储区的每个编译单位组件编译单位符号。 对于本机应用程序，`SymTagCompiland`符号对应于对象文件链接到该映像。 对于某些类型的 Microsoft 中间语言 (MSIL) 映像，还有一个编译单位，每个类。  
   
  `SymTagCompilandDetails`  
- 指示该符号包含编译单位的扩展的属性。 检索这些属性可能需要加载编译单位符号。  
+ 指示该符号包含扩展的属性的编译单位。 检索这些属性可能需要加载编译单位符号。  
   
  `SymTagCompilandEnv`  
- 指示符号为环境字符串为编译单位定义。  
+ 表示符号是可编译单位为定义的环境字符串。  
   
  `SymTagFunction`  
- 指示符号是一个函数。  
+ 指示该符号是一个函数。  
   
  `SymTagBlock`  
- 指示符号是嵌套的块。  
+ 表示符号是嵌套的块。  
   
  `SymTagData`  
  指示符号数据。  
   
  `SymTagAnnotation`  
- 指示符号针对的代码批注。 此符号的子级是连续的数据字符串 (`SymTagData`， `LocIsConstant`， `DataIsConstant`)。 大多数客户端忽略此符号。  
+ 指示符号的代码注释。 此符号的子级是连续的数据的字符串 (`SymTagData`， `LocIsConstant`， `DataIsConstant`)。 大多数客户端忽略此符号。  
   
  `SymTagLabel`  
- 指示符号是一个标签。  
+ 表示符号是一个标签。  
   
  `SymTagPublicSymbol`  
- 指示符号是公共符号。 对于本机应用程序，此符号是链接映像时遇到 COFF 外部符号。  
+ 表示符号是公共符号。 对于本机应用程序，该符号是链接映像时遇到的 COFF 外部符号。  
   
  `SymTagUDT`  
- 指示该符号为用户定义类型 （结构、 类或联合）。  
+ 表示符号是用户定义类型 （结构、 类或联合）。  
   
  `SymTagEnum`  
- 指示符号是一个枚举。  
+ 指示该符号是一个枚举。  
   
  `SymTagFunctionType`  
- 指示符号是函数签名类型。  
+ 表示符号是函数签名类型。  
   
  `SymTagPointerType`  
- 指示符号是指针类型。  
+ 表示符号是指针类型。  
   
  `SymTagArrayType`  
- 指示符号是一个数组类型。  
+ 表示符号是数组类型。  
   
  `SymTagBaseType`  
- 指示符号是基类型。  
+ 表示符号是基类型。  
   
  `SymTagTypedef`  
- 指示该符号`typedef`，即，另一种类型的别名。  
+ 表示符号是`typedef`，另一种类型的别名。  
   
  `SymTagBaseClass`  
- 指示符号是用户定义类型的基类。  
+ 表示符号是用户定义类型的基类。  
   
  `SymTagFriend`  
- 指示符号是用户定义类型的友元。  
+ 表示符号是用户定义类型的友元。  
   
  `SymTagFunctionArgType`  
- 指示符号是一个函数参数。  
+ 指示该符号是函数的参数。  
   
  `SymTagFuncDebugStart`  
- 指示符号是函数的序言代码的结束位置。  
+ 表示符号是函数的序言代码的结束位置。  
   
  `SymTagFuncDebugEnd`  
- 指示符号是函数的尾声代码的开始位置。  
+ 表示符号是函数的尾声代码的开始位置。  
   
  `SymTagUsingNamespace`  
- 指示符号是当前作用域中处于活动状态的命名空间名称。  
+ 表示符号是当前作用域中处于活动状态的命名空间名称。  
   
  `SymTagVTableShape`  
- 指示符号是虚拟表说明。  
+ 表示符号是虚拟表说明。  
   
  `SymTagVTable`  
- 指示了符号是一个虚拟表指针。  
+ 表示符号是一个虚拟表指针。  
   
  `SymTagCustom`  
- 表示符号是一个自定义的符号，无法解释 DIA.  
+ 指示该符号是一个自定义的符号和 dia 时不会解释  
   
  `SymTagThunk`  
- 指示符号是一个 thunk，用于 16 和 32 位代码之间的共享数据。  
+ 表示符号是可用于 16 和 32 位代码之间共享数据的转换 （thunk）。  
   
  `SymTagCustomType`  
- 表示符号自定义编译器符号。  
+ 表示符号是可自定义编译器符号。  
   
  `SymTagManagedType`  
- 指示符号是在元数据中。  
+ 表示符号是在元数据中。  
   
  `SymTagDimension`  
- 指示符号是 FORTRAN 多维数组。  
+ 表示符号是 FORTRAN 多维数组。  
   
  `SymTagCallSite`  
- 指示符号表示调用站点。  
+ 指示该符号表示调用站点。  
   
  `SymTagInlineSite`  
- 指示符号表示内联站点。  
+ 指示该符号表示内联站点。  
   
  `SymTagBaseInterface`  
- 指示符号是一个基接口。  
+ 表示符号是基接口。  
   
  `SymTagVectorType`  
- 指示符号是矢量类型。  
+ 表示符号是矢量类型。  
   
  `SymTagMatrixType`  
- 指示该符号为矩阵类型。  
+ 表示符号是矩阵类型。  
   
  `SymTagHLSLType`  
- 指示符号为高级别着色器语言类型。  
+ 表示符号是高级别着色器语言类型。  
   
 ## <a name="remarks"></a>备注  
- 调试文件中的所有符号都有一个识别的标记，它指定符号的类型。  
+ 调试文件中的所有符号都有一个标识标记的指定符号的类型。  
   
  此枚举中的值返回通过调用[idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)方法。  
   
- 此枚举中的值将传递到以下的方法，以限制对特定符号类型的搜索作用域中：  
+ 此枚举中的值传递到以下方法来限制对特定符号类型的搜索作用域：  
   
 -   [IDiaSession::findSymbolByAddr](../../debugger/debug-interface-access/idiasession-findsymbolbyaddr.md)  
   

@@ -20,15 +20,16 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f81efa03c3955114561e923c232e8ee81dd2af6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259072"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890577"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502：避免过度复杂
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|AvoidExcessiveComplexity|
@@ -59,11 +60,11 @@ ms.locfileid: "49259072"
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>如何计算圈复杂度
  圈复杂度计算通过将 1 添加到以下：
 
--   分支数 (如`if`， `while`，和`do`)
+- 分支数 (如`if`， `while`，和`do`)
 
--   数`case`中的语句 `switch`
+- 数`case`中的语句 `switch`
 
- 以下示例显示圈复杂度不断变化的方法。
+  以下示例显示圈复杂度不断变化的方法。
 
 ## <a name="example"></a>示例
  **为 1 的圈复杂度**

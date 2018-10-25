@@ -9,12 +9,12 @@ ms.topic: article
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: e9a0f740232493d24cf1bdcd6decba338036e6c9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1f662a4383c56c21528b3dab556928fdaa043095
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194696"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49884090"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>如何： 使用 Visual Studio 扩展的基于规则的 UI 上下文
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,75 +28,75 @@ Visual Studio 允许加载 Vspackage 时某些已知<xref:Microsoft.VisualStudio
   
  可以多种方式使用基于规则的 UI 上下文：  
   
-1.  指定命令和工具窗口的可见性的限制。 满足 UI 上下文规则之前，您可以隐藏 windows 命令/工具。  
+1. 指定命令和工具窗口的可见性的限制。 满足 UI 上下文规则之前，您可以隐藏 windows 命令/工具。  
   
-2.  为自动加载约束： 自动加载包仅当满足规则  
+2. 为自动加载约束： 自动加载包仅当满足规则  
   
-3.  延迟的任务： 延迟加载之前指定的时间间隔已过，是否仍满足该规则。  
+3. 延迟的任务： 延迟加载之前指定的时间间隔已过，是否仍满足该规则。  
   
- 可以通过任何 Visual Studio 扩展中使用的机制。  
+   可以通过任何 Visual Studio 扩展中使用的机制。  
   
 ## <a name="create-a-rule-based-ui-context"></a>创建基于规则的 UI 上下文  
  假设您具有名为 TestPackage，它提供了菜单命令，将仅适用于具有".config"扩展名的文件扩展名。 在 VS2015 之前, 的最佳选择是加载 TestPackage 时<xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A>UI 上下文已激活。 这并不高效，因为加载的解决方案甚至可能不包含某一.config 文件。 告诉我们，请参阅如何基于规则的 UI 上下文可用于激活的 UI 上下文具有.config 扩展名的文件时仅选择后，，和负载 TestPackage 时激活该 UI 上下文。  
   
-1.  定义新的 UIContext GUID，并将添加到 VSPackage 类<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。  
+1. 定义新的 UIContext GUID，并将添加到 VSPackage 类<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute>和<xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。  
   
-     例如，假设新 UIContext"UIContextGuid"是要添加。 创建的 GUID (可以通过单击工具来创建 GUID-> 创建 guid) 是"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然后添加以下包类中：  
+    例如，假设新 UIContext"UIContextGuid"是要添加。 创建的 GUID (可以通过单击工具来创建 GUID-> 创建 guid) 是"8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B"。 然后添加以下包类中：  
   
-    ```csharp  
-    public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
-    ```  
+   ```csharp  
+   public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
+   ```  
   
-     对于属性，添加以下项: （这些属性的详细信息将稍后介绍）  
+    对于属性，添加以下项: （这些属性的详细信息将稍后介绍）  
   
-    ```csharp  
-    [ProvideAutoLoad(TestPackage.UIContextGuid)]      
-    [ProvideUIContextRule(TestPackage.UIContextGuid,  
-        name: "Test auto load",   
-        expression: "DotConfig",  
-        termNames: new[] { "DotConfig" },  
-        termValues: new[] { "HierSingleSelectionName:.config$" })]  
-    ```  
+   ```csharp  
+   [ProvideAutoLoad(TestPackage.UIContextGuid)]      
+   [ProvideUIContextRule(TestPackage.UIContextGuid,  
+       name: "Test auto load",   
+       expression: "DotConfig",  
+       termNames: new[] { "DotConfig" },  
+       termValues: new[] { "HierSingleSelectionName:.config$" })]  
+   ```  
   
-     这些元数据定义新 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 和单个字词，"DotConfig"引用的表达式。 "DotConfig"一词计算结果为 true，只要在活动的层次结构中当前所选内容具有与正则表达式模式匹配的名称"\\.config$"（以".config"）。 （默认值） 值定义可用于调试的规则的可选名称。  
+    这些元数据定义新 UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) 和单个字词，"DotConfig"引用的表达式。 "DotConfig"一词计算结果为 true，只要在活动的层次结构中当前所选内容具有与正则表达式模式匹配的名称"\\.config$"（以".config"）。 （默认值） 值定义可用于调试的规则的可选名称。  
   
-     属性的值将添加到 pkgdef 之后尽早的时间生成过程中生成。  
+    属性的值将添加到 pkgdef 之后尽早的时间生成过程中生成。  
   
-2.  在 VSCT 文件 TestPackage 的命令中，将"DynamicVisibility"标志添加到适当的命令：  
+2. 在 VSCT 文件 TestPackage 的命令中，将"DynamicVisibility"标志添加到适当的命令：  
   
-    ```xml  
-    <CommandFlag>DynamicVisibility</CommandFlag>  
-    ```  
+   ```xml  
+   <CommandFlag>DynamicVisibility</CommandFlag>  
+   ```  
   
-3.  在 VSCT 可见性部分中，将绑定到新 UIContext GUID #1 中定义适当的命令：  
+3. 在 VSCT 可见性部分中，将绑定到新 UIContext GUID #1 中定义适当的命令：  
   
-    ```xml  
-    <VisibilityConstraints>   
-        <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
-    </VisibilityConstraints>  
-    ```  
+   ```xml  
+   <VisibilityConstraints>   
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>   
+   </VisibilityConstraints>  
+   ```  
   
-4.  在符号部分中，添加 UIContext 的定义：  
+4. 在符号部分中，添加 UIContext 的定义：  
   
-    ```xml  
-    <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
-    ```  
+   ```xml  
+   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
+   ```  
   
-     现在，仅当在解决方案资源管理器中的选定的项是一个".config"文件，直到选择了一个这些命令将不加载包时，*.config 文件的上下文菜单命令将可以看到。  
+    现在，仅当在解决方案资源管理器中的选定的项是一个".config"文件，直到选择了一个这些命令将不加载包时，*.config 文件的上下文菜单命令将可以看到。  
   
- 接下来，让我们使用调试器来确认包加载仅当我们预期的那样。 若要调试 TestPackage:  
+   接下来，让我们使用调试器来确认包加载仅当我们预期的那样。 若要调试 TestPackage:  
   
-1.  中设置断点<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
+5. 中设置断点<xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>方法。  
   
-2.  生成 TestPackage 并启动调试。  
+6. 生成 TestPackage 并启动调试。  
   
-3.  创建项目或打开一个。  
+7. 创建项目或打开一个。  
   
-4.  选择任何文件扩展名不.config。应不会命中断点。  
+8. 选择任何文件扩展名不.config。应不会命中断点。  
   
-5.  选择的 App.Config 文件。  
+9. 选择的 App.Config 文件。  
   
- TestPackage 加载，并在断点处停止。  
+   TestPackage 加载，并在断点处停止。  
   
 ## <a name="adding-more-rules-for-ui-context"></a>为 UI 上下文中添加更多的规则  
  由于 UI 上下文规则都是布尔表达式，可以添加更受限制的规则的 UI 上下文。 例如，在上面的 UI 上下文中，可以指定该规则仅在加载与项目的解决方案时适用。 这样一来，命令不会显示是否您打开".config"文件作为独立文件，而不是项目的一部分。  

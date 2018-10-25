@@ -16,34 +16,34 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d3c19f48ffe00f3c824dc5085910b0319bc3c184
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7722132a81c63902450edd85ef90bde94ad94744
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880495"
 ---
 # <a name="installing-an-isolated-shell-application"></a>安装独立的 Shell 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 若要安装的 Shell 应用程序必须执行以下步骤。  
   
--   准备你的解决方案。  
+- 准备你的解决方案。  
   
--   创建你的应用程序的 Windows Installer (MSI) 包。  
+- 创建你的应用程序的 Windows Installer (MSI) 包。  
   
--   创建安装程序引导程序。  
+- 创建安装程序引导程序。  
   
- 本文档中的示例代码的所有来自[Shell 部署示例](http://go.microsoft.com/fwlink/?LinkId=262245)，可以从 MSDN 网站上的代码库下载。 此示例演示执行每个步骤的结果。  
+  本文档中的示例代码的所有来自[Shell 部署示例](http://go.microsoft.com/fwlink/?LinkId=262245)，可以从 MSDN 网站上的代码库下载。 此示例演示执行每个步骤的结果。  
   
 ## <a name="prerequisites"></a>系统必备  
  若要执行本主题介绍的过程，必须在计算机上安装以下工具。  
   
--   Visual Studio SDK  
+- Visual Studio SDK  
   
--   [Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=82720)版本 3.6  
+- [Windows Installer XML 工具集](http://go.microsoft.com/fwlink/?LinkId=82720)版本 3.6  
   
- 此示例还要求 Microsoft 可视化和建模 SDK，这不是所有外壳都需要。  
+  此示例还要求 Microsoft 可视化和建模 SDK，这不是所有外壳都需要。  
   
 ## <a name="preparing-your-solution"></a>准备你的解决方案  
  默认情况下，Shell 模板构建到 VSIX 包，但此行为旨在主要用于调试目的。 外壳应用程序部署时，必须使用 MSI 包以在安装过程中允许进行注册表访问和重新启动的。 若要准备 MSI 部署应用程序，请执行以下步骤。  

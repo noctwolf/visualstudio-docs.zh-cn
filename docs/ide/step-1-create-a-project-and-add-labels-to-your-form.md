@@ -11,18 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a34a49a3a66cebb81553f3e2786f281758c4dee
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: eb29a985a39344c5bffad59e63a9d540311ec648
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747572"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49925107"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
+
 在开发此测验的过程中，首先应创建项目并将数个标签、一个按钮和其他控件添加到窗体。 此外还要设置已添加各个控件的属性。 项目将包含窗体、控件和代码（在本教程下文中）。 按钮用于启动测验，标签用于显示测验问题，其他控件则用于显示测验答案和完成测验所剩时间。
 
 > [!NOTE]
->  本主题是基本编码概念教程系列中的一部分。 若要概览本教程，请参阅[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。
+> 本主题是基本编码概念教程系列中的一部分。 若要概览本教程，请参阅[教程 2：创建计时数学测验](../ide/tutorial-2-create-a-timed-math-quiz.md)。
 
 ## <a name="to-create-a-project-and-set-properties-for-a-form"></a>创建项目并设置窗体属性
 
@@ -68,8 +69,7 @@ ms.locfileid: "34747572"
 
      如下图所示，您可以更改多个字体属性。
 
-     ****![显示字号的“属性”窗口](../ide/media/express_setfontsize.png)
-显示字号的“属性”窗口
+     ![显示字号的“属性”窗口](../ide/media/express_setfontsize.png)
 
 8.  从“工具箱”中再添加一个“标签”控件，然后将其字号设置为“15.75”。
 
@@ -117,7 +117,7 @@ ms.locfileid: "34747572"
 
      如下图所示，您已创建了第一行。
 
-     ![数学测验的第一行](../ide/media/express_firstrow.png)数学测验的第一行
+     ![数学测验的第一行](../ide/media/express_firstrow.png)
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>添加减法、乘法和除法题的控件
 
@@ -144,7 +144,7 @@ ms.locfileid: "34747572"
 9. 在第四行中，将第一个标签命名为“dividedLeftLabel”，将第二个标签的“Text”属性更改为“÷”（除号），将第三个标签命名为“dividedRightLabel”，然后将 NumericUpDown 控件命名为“quotient”。
 
     > [!NOTE]
-    >  您可以复制本教程中的乘号 × 和除号 ÷，将它们粘贴到窗体中。
+    > 您可以复制本教程中的乘号 × 和除号 ÷，将它们粘贴到窗体中。
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>添加“开始”按钮并设置 Tab 键索引顺序
 
@@ -161,13 +161,13 @@ ms.locfileid: "34747572"
 6.  将“startButton”控件的“TabIndex”属性值设置为“1”。
 
     > [!NOTE]
-    >  “TabIndex”属性用于设置测验对象选择 Tab 键时的控件顺序。 若要查看其工作原理，请打开任何对话框（例如，在菜单栏上，依次选择“文件” > “打开”），然后选择几次 Tab 键。 观察每次选择 Tab 键时，光标是如何从一个控件移动到另一个控件的。 程序员在创建该窗体时便已确定这一顺序。
+    > “TabIndex”属性用于设置测验对象选择 Tab 键时的控件顺序。 若要查看其工作原理，请打开任何对话框（例如，在菜单栏上，依次选择“文件” > “打开”），然后选择几次 Tab 键。 观察每次选择 Tab 键时，光标是如何从一个控件移动到另一个控件的。 程序员在创建该窗体时便已确定这一顺序。
 
 7.  将 NumericUpDown sum 控件的“TabIndex”属性值设置为“2”，将 difference 控件的此属性值设置为“3”，将 product 控件的此属性值设置为“4”，将 quotient 控件的此属性值设置为“5”。
 
      窗体看上去应该如下图所示。
 
-     ![初始数学测验窗体](../ide/media/express_formlaidout.png)初始数学测验窗体
+     ![初始数学测验窗体](../ide/media/express_formlaidout.png)
 
 8.  若要验证“TabIndex”属性是否按照预期运行，请选择 F5 键或选择菜单栏上的“调试” > “启动调试”保存并运行程序，然后选择几次 Tab 键。
 

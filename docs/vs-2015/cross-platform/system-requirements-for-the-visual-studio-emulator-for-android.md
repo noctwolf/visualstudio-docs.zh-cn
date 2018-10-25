@@ -13,12 +13,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 819f64b9d526cc307f0f9fbd0a35db5d4e7bd1ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a566a6aa73ef9b1e3729248b14b0f3879f21d21c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176561"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49898768"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,76 +50,76 @@ ms.locfileid: "49176561"
   
  系统要求  
   
--   Hyper-V 支持（请参阅下面的 Hyper-V 要求）  
+- Hyper-V 支持（请参阅下面的 Hyper-V 要求）  
   
--   6 GB 或 6 GB 以上的 RAM。  
+- 6 GB 或 6 GB 以上的 RAM。  
   
--   Windows 8、Windows 8.1、Windows 10 或更高版本的 64 位专业版  
+- Windows 8、Windows 8.1、Windows 10 或更高版本的 64 位专业版  
   
--   支持 SSSE3 或更高版本的处理器。  
+- 支持 SSSE3 或更高版本的处理器。  
   
- 网络要求  
+  网络要求  
   
--   DHCP  
+- DHCP  
   
--   自动配置的 DNS 和网关设置  
+- 自动配置的 DNS 和网关设置  
   
- Hyper-V 要求  
+  Hyper-V 要求  
   
--   在 BIOS 中，必须支持以下功能：  
+- 在 BIOS 中，必须支持以下功能：  
   
-    -   硬件辅助虚拟化  
+  -   硬件辅助虚拟化  
   
-    -   第二级别的地址转换 (SLAT)  
+  -   第二级别的地址转换 (SLAT)  
   
-    -   基于硬件的数据执行保护 (DEP)  
+  -   基于硬件的数据执行保护 (DEP)  
   
--   在 Windows 中，必须启用并运行 Hyper-V。  
+- 在 Windows 中，必须启用并运行 Hyper-V。  
   
--   你需要成为本地 Hyper-V 管理员组的成员。  
+- 你需要成为本地 Hyper-V 管理员组的成员。  
   
 ##  <a name="System"></a> 系统要求  
  计算机必须满足以下要求：  
   
--   Hyper-V 支持（请参阅 [Hyper-V 要求](#HyperV)）  
+- Hyper-V 支持（请参阅 [Hyper-V 要求](#HyperV)）  
   
--   6 GB 或 6 GB 以上的 RAM。  
+- 6 GB 或 6 GB 以上的 RAM。  
   
--   Windows 8、Windows 8.1、Windows 10 或更高版本的 64 位专业版。  
+- Windows 8、Windows 8.1、Windows 10 或更高版本的 64 位专业版。  
   
- 要检查 RAM 和 Windows 的要求，请在“控制面板”中选择“系统和安全”，然后选择“系统”。  
+  要检查 RAM 和 Windows 的要求，请在“控制面板”中选择“系统和安全”，然后选择“系统”。  
   
- ![验证系统要求](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
+  ![验证系统要求](../cross-platform/media/android-emu-system-requirements.png "Android_Emu_System_Requirements")  
   
 ##  <a name="Network"></a>网络要求  
  网络必须满足以下要求：  
   
--   DHCP  
+- DHCP  
   
-     仿真程序需要 DHCP，因为它将自身配置为网络上具有自己的 IP 地址的一个单独的设备。  
+   仿真程序需要 DHCP，因为它将自身配置为网络上具有自己的 IP 地址的一个单独的设备。  
   
--   自动配置的 DNS 和网关设置  
+- 自动配置的 DNS 和网关设置  
   
-     不可能为仿真程序手动配置 DNS 和网关设置。  
+   不可能为仿真程序手动配置 DNS 和网关设置。  
   
- 要对仿真器中的网络问题进行故障排除，请参阅以下主题：  
+  要对仿真器中的网络问题进行故障排除，请参阅以下主题：  
   
--   [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
+- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)  
   
 ##  <a name="HyperV"></a> Hyper-V 要求  
  BIOS 中的 Hyper-V 要求  
   
  计算机的 BIOS 必须支持下列要求，且必须实现这些要求：  
   
--   硬件辅助虚拟化  
+- 硬件辅助虚拟化  
   
--   第二级别的地址转换 (SLAT)  
+- 第二级别的地址转换 (SLAT)  
   
--   基于硬件的数据执行保护 (DEP)  
+- 基于硬件的数据执行保护 (DEP)  
   
- Windows 中的 Hyper-V 要求  
+  Windows 中的 Hyper-V 要求  
   
- 当计算机和 BIOS 设置已配置为支持 Hyper-V 时，安装程序会启用并启动 Hyper-V。 否则，可能需要手动实现这些要求。  
+  当计算机和 BIOS 设置已配置为支持 Hyper-V 时，安装程序会启用并启动 Hyper-V。 否则，可能需要手动实现这些要求。  
   
 |需求|如何检查并实现此要求|  
 |-----------------|----------------------------------------------|  
@@ -147,15 +147,15 @@ ms.locfileid: "49176561"
 ##  <a name="Files"></a> Hyper-V 需要未经压缩且未经加密的文件  
  在配置了 NTFS 文件系统的硬盘上，Hyper-V 使用的虚拟硬盘文件必须是未经压缩且未经加密的。 请确保不要压缩或加密以下目录：  
   
--   %localappdata%\Microsoft\XDE  
+- %localappdata%\Microsoft\XDE  
   
--   C:\Program Files (x86)\Microsoft Emulator Manager  
+- C:\Program Files (x86)\Microsoft Emulator Manager  
   
--   C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
+- C:\Program Files (x86)\Microsoft Visual Studio Emulator for Android  
   
--   %localappdata%\Microsoft\VisualStudioEmulator  
+- %localappdata%\Microsoft\VisualStudioEmulator  
   
- 在 ReFS 文件系统上，虚拟硬盘文件不能设置完整性位。  
+  在 ReFS 文件系统上，虚拟硬盘文件不能设置完整性位。  
   
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>硬件图形转发（OpenGL ES 支持）要求  
  为了让仿真器能够仿真对 GPU 的调用（例如 OpenGL ES 使用的那些调用），计算机必须具有兼容 DirectX 的 GPU 且安装了合适的 DirectX 驱动程序。  

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 276a353dbbd47e2ded3a3c562e7a4a10df157655
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 7847f8b1dbea5ac5dbd2f9c1ed492c9172e539b7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895465"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 评估子元素，选择一组 `ItemGroup` 元素和/或 `PropertyGroup` 元素进行评估。  
@@ -64,11 +64,11 @@ ms.locfileid: "37945764"
 
 ### <a name="parent-elements"></a>父元素  
 
-|元素|描述|  
-|-------------|-----------------|  
-|[Otherwise](../msbuild/otherwise-element-msbuild.md)|当所有 `When` 元素的条件的计算结果为 `false` 时，指定要执行的代码块。|  
-|[Project](../msbuild/project-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。|  
-|[When](../msbuild/when-element-msbuild.md)|指定一个可能的代码块供 `Choose` 元素选择。|  
+| 元素 | 描述 |
+| - | - |
+| [Otherwise](../msbuild/otherwise-element-msbuild.md) | 当所有 `When` 元素的条件的计算结果为 `false` 时，指定要执行的代码块。 |
+| [Project](../msbuild/project-element-msbuild.md) | [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。 |
+| [When](../msbuild/when-element-msbuild.md) | 指定一个可能的代码块供 `Choose` 元素选择。 |
 
 ## <a name="remarks"></a>备注  
  `Choose`、`When` 和 `Otherwise` 元素一起用来提供一种方式，通过这种方式选择代码的一部分来执行许多种可能的替代选择。 有关详细信息，请参阅[条件构造](../msbuild/msbuild-conditional-constructs.md)。  

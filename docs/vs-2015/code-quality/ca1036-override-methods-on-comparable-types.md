@@ -20,15 +20,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1069316d0a027678b1161a948765bb81f1de68de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67fa52a674b9e3d77d7e3eed7493bf28c1b2514d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49202821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49948757"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：重写可比较类型中的方法
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|OverrideMethodsOnComparableTypes|
@@ -45,15 +46,15 @@ ms.locfileid: "49202821"
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请重写<xref:System.Object.Equals%2A>。 如果您的编程语言支持运算符重载，提供以下运算符：
 
--   op_Equality
+- op_Equality
 
--   op_Inequality
+- op_Inequality
 
--   op_LessThan
+- op_LessThan
 
--   op_GreaterThan
+- op_GreaterThan
 
- 在 C# 中，用来表示这些运算符的令牌，如下所示为: = =、 ！ =、 \<，和 >。
+  在 C# 中，用来表示这些运算符的令牌，如下所示为: = =、 ！ =、 \<，和 >。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  它可以安全地禁止显示此规则的警告时冲突导致因缺少运算符和您的编程语言不支持运算符重载，可以使用 Visual Basic.NET 这种情况。 它也是安全地禁止显示此规则的警告，而不 op_Equality 如果你确定实现了运算符的应用程序上下文中不难理解它触发上相等运算符时。 但是，您应始终通过 op_Equality 和 = = 运算符，如果重写 Object.Equals。

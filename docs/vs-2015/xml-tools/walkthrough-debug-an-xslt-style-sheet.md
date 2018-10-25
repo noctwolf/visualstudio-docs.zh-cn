@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1be04d9cc723b2a741ba43676977854306cd03e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198791"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887684"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>演练：调试 XSLT 样式表
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ ms.locfileid: "49198791"
   
 #### <a name="to-start-debugging"></a>开始调试  
   
-1.  从**文件**菜单，依次指向**打开**，然后单击**文件**。  
+1. 从**文件**菜单，依次指向**打开**，然后单击**文件**。  
   
-2.  找到 belowAvg.xsl 文件并单击**打开**。  
+2. 找到 belowAvg.xsl 文件并单击**打开**。  
   
-     该样式表将在“XML 编辑器”中打开。  
+    该样式表将在“XML 编辑器”中打开。  
   
-3.  单击浏览按钮 (**...**) 上**输入**字段的文档属性窗口。  
+3. 单击浏览按钮 (**...**) 上**输入**字段的文档属性窗口。  
   
-4.  找到 books.xml 文件并单击**打开**。  
+4. 找到 books.xml 文件并单击**打开**。  
   
-     此时将设置用于 XSLT 转换的源文档文件。  
+    此时将设置用于 XSLT 转换的源文档文件。  
   
-5.  右键单击`xsl:if`开始标记，指向**断点**，然后单击**插入断点**。  
+5. 右键单击`xsl:if`开始标记，指向**断点**，然后单击**插入断点**。  
   
-6.  单击**调试 XSL** XML 编辑器工具栏上的按钮。  
+6. 单击**调试 XSL** XML 编辑器工具栏上的按钮。  
   
- 此时将开始调试过程，并打开几个新窗口供调试程序使用。  
+   此时将开始调试过程，并打开几个新窗口供调试程序使用。  
   
- 有两个窗口显示输入文档和样式表。 调试器使用这些窗口来显示当前的执行状态。 调试器位于样式表的 `xsl:if` 元素上和 books.xml 文件中的第一个 book 节点上。  
+   有两个窗口显示输入文档和样式表。 调试器使用这些窗口来显示当前的执行状态。 调试器位于样式表的 `xsl:if` 元素上和 books.xml 文件中的第一个 book 节点上。  
   
- “局部变量”窗口显示所有局部变量及其当前值。 其中包括样式表中定义的变量，也包括调试程序在跟踪上下文中的当前节点时使用的变量。  
+   “局部变量”窗口显示所有局部变量及其当前值。 其中包括样式表中定义的变量，也包括调试程序在跟踪上下文中的当前节点时使用的变量。  
   
- **XSL 输出**窗口显示 XSL 转换的输出。 此窗口是独立于**Visual Studio 输出**窗口。  
+   **XSL 输出**窗口显示 XSL 转换的输出。 此窗口是独立于**Visual Studio 输出**窗口。  
   
 ## <a name="watch-window"></a>监视窗口  
   

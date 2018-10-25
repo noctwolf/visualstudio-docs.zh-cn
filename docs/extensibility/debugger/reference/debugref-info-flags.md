@@ -1,5 +1,5 @@
 ---
-title: DEBUGREF_INFO_FLAGS |Microsoft 文档
+title: DEBUGREF_INFO_FLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5864b3503b19e8a473f45e4167aad835181da50
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 9957b0aaf81048c5040e3f7ff54f3fa9be742dc1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31108370"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858558"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 指定要检索有关调试引用对象的信息。  
@@ -76,20 +76,20 @@ public enum enum_DEBUGREF_INFO_FLAGS {
  初始化/使用`pReference`结构中的字段。  
   
  DEBUGREF_INFO_VALUE_AUTOEXPAND  
- 值字段应包含自动展开值时，如果可用，此类型的对象。  
+ 值字段应包含自动扩展值中，如果可用，此类型的对象。  
   
  DEBUGREF_INFO_NONE  
- 指示不设置任何标志。  
+ 指示未设置任何标志。  
   
  DEBUGREF_INFO_ALL  
- 指示标志的掩码。  
+ 表示的标志的掩码。  
   
 ## <a name="remarks"></a>备注  
- 这些标志传递给[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)和[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法以指示哪些字段[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是否被初始化。  
+ 这些标志传递给[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)并[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法，以指示的哪些字段[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)结构是进行初始化。  
   
- 用于`dwFields`的成员`DEBUG_REFERENCE_INFO`以指示哪些字段是使用和有效时返回结构的结构。  
+ 用于`dwFields`的成员`DEBUG_REFERENCE_INFO`结构，用于指示哪些字段是使用，有效时返回该结构。  
   
- 这些值可以与按位组合`OR`。  
+ 可能的按位组合这些值`OR`。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -98,7 +98,7 @@ public enum enum_DEBUGREF_INFO_FLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   

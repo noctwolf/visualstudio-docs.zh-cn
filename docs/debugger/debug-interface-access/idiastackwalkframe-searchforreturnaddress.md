@@ -1,5 +1,5 @@
 ---
-title: 'Idiastackwalkframe:: Searchforreturnaddress |Microsoft 文档'
+title: 'Idiastackwalkframe:: Searchforreturnaddress |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eeea9e72989454c0b9f22a1f3196f61128571d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 34aaf4b7136bb81086ad095fa9a0af2167ebbd30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31462894"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879930"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-搜索指定的堆栈帧接近函数寄信人地址。  
+搜索指定的堆栈帧的最接近的函数返回地址。  
   
 ## <a name="syntax"></a>语法  
   

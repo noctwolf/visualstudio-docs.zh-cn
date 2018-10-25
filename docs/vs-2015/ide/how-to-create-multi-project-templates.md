@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 99c8a008cf48d596569e61534d7bfbf7cb9e45c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: eee52a4f77c7d3a07b237f01877c5cba30e53900
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256563"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49950844"
 ---
 # <a name="how-to-create-multi-project-templates"></a>如何：创建多项目模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,55 +32,55 @@ ms.locfileid: "49256563"
   
  多项目模板必须包括以下各项，并压缩为 .zip 文件：  
   
--   整个多项目模板的根 .vstemplate 文件。 此根 .vstemplate 文件包含“新建项目”对话框中显示的元数据，并指定查找此模板中项目的 .vstemplate 文件的位置。 此文件必须位于 .zip 文件的根目录中。  
+- 整个多项目模板的根 .vstemplate 文件。 此根 .vstemplate 文件包含“新建项目”对话框中显示的元数据，并指定查找此模板中项目的 .vstemplate 文件的位置。 此文件必须位于 .zip 文件的根目录中。  
   
--   一个或多个文件夹，其中包含完整的项目模板所需的文件。 这包括项目的所有代码文件，以及项目的 .vstemplate 文件。  
+- 一个或多个文件夹，其中包含完整的项目模板所需的文件。 这包括项目的所有代码文件，以及项目的 .vstemplate 文件。  
   
- 例如，具有两个项目的多项目模板 .zip 文件具有以下文件和目录：  
+  例如，具有两个项目的多项目模板 .zip 文件具有以下文件和目录：  
   
- MultiProjectTemplate.vstemplate  
+  MultiProjectTemplate.vstemplate  
   
- \Project1\Project1.vstemplate  
+  \Project1\Project1.vstemplate  
   
- \Project1\Project1.vbproj  
+  \Project1\Project1.vbproj  
   
- \Project1\Class.vb  
+  \Project1\Class.vb  
   
- \Project2\Project2.vstemplate  
+  \Project2\Project2.vstemplate  
   
- \Project2\Project2.vbproj  
+  \Project2\Project2.vbproj  
   
- \Project2\Class.vb  
+  \Project2\Class.vb  
   
- 多项目模板的根 .vstemplate 文件不同于单项目模板，表现在以下方面：  
+  多项目模板的根 .vstemplate 文件不同于单项目模板，表现在以下方面：  
   
--   `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如：  
+- `VSTemplate` 元素的 `Type` 属性包含值：`ProjectGroup`。 例如：  
   
-    ```  
-    <VSTemplate Version="2.0.0" Type="ProjectGroup"  
-        xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
-    ```  
+  ```  
+  <VSTemplate Version="2.0.0" Type="ProjectGroup"  
+      xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
+  ```  
   
--   `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如：  
+- `TemplateContent` 元素包含的 `ProjectCollection` 元素具有一个或多个用于定义指向所含项目中 .vstemplate 文件的路径的 `ProjectTemplateLink` 元素。 例如：  
   
-    ```  
-    <TemplateContent>  
-        <ProjectCollection>  
-            <ProjectTemplateLink>  
-                Project1\Project1.vstemplate  
-            </ProjectTemplateLink>  
-            <ProjectTemplateLink>  
-                Project2\Project2.vstemplate  
-            </ProjectTemplateLink>  
-        </ProjectCollection>  
-    </TemplateContent>  
-    ```  
+  ```  
+  <TemplateContent>  
+      <ProjectCollection>  
+          <ProjectTemplateLink>  
+              Project1\Project1.vstemplate  
+          </ProjectTemplateLink>  
+          <ProjectTemplateLink>  
+              Project2\Project2.vstemplate  
+          </ProjectTemplateLink>  
+      </ProjectCollection>  
+  </TemplateContent>  
+  ```  
   
- 多项目模板的行为也不同于常规模板。 多项目模板具有以下独特的特征：  
+  多项目模板的行为也不同于常规模板。 多项目模板具有以下独特的特征：  
   
--   无法通过“新建项目”对话框向多项目模板中的各个项目分配名称。 改为使用 `ProjectTemplateLink` 元素的 `ProjectName` 属性指定每个项目的名称。 有关详细信息，请参阅下一节的第一个示例。  
+- 无法通过“新建项目”对话框向多项目模板中的各个项目分配名称。 改为使用 `ProjectTemplateLink` 元素的 `ProjectName` 属性指定每个项目的名称。 有关详细信息，请参阅下一节的第一个示例。  
   
--   多项目模板可以包含以不同的语言编写的项目，但通过使用 `ProjectType` 元素，仅可将整个模板本身放置在一个类别中。  
+- 多项目模板可以包含以不同的语言编写的项目，但通过使用 `ProjectType` 元素，仅可将整个模板本身放置在一个类别中。  
   
 ### <a name="to-create-a-multi-project-template"></a>创建多项目模板  
   

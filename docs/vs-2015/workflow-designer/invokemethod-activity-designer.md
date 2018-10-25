@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: erikre
-ms.openlocfilehash: 27be9bc979ba1f3e86996aaf913502ca80142ebd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252962"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863680"
 ---
 # <a name="invokemethod-activity-designer"></a>InvokeMethod 活动设计器
 **InvokeMethod**设计器用于创建和配置<xref:System.Activities.Statements.InvokeMethod>活动。  
@@ -51,15 +51,15 @@ ms.locfileid: "49252962"
   
  在 <xref:System.Activities.Activity.CacheMetadata%2A> 中注册这些参数的算法如下所列：  
   
-1.  注册 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 参数。  
+1. 注册 <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> 参数。  
   
-2.  注册 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 参数。  
+2. 注册 <xref:System.Activities.Statements.InvokeMethod.Result%2A> 参数。  
   
-3.  循环访问 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合并注册每个参数。  
+3. 循环访问 <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> 集合并注册每个参数。  
   
- 产生的异常的类型为 <xref:System.Activities.InvalidWorkflowException> 并带有以下消息：“InvokeMethod”: 已存在名为“TargetObject”的变量、RuntimeArgument 或 DelegateArgument。 在环境作用域中，名称必须唯一。  
+   产生的异常的类型为 <xref:System.Activities.InvalidWorkflowException> 并带有以下消息：“InvokeMethod”: 已存在名为“TargetObject”的变量、RuntimeArgument 或 DelegateArgument。 在环境作用域中，名称必须唯一。  
   
- 此限制不适用于 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 和 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>，因为它们不是工作流自变量，因此在 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 方法中而不在 <xref:System.Activities.Statements.InvokeMethod> 活动的 <xref:System.Activities.Activity.CacheMetadata%2A> 集合中注册。  
+   此限制不适用于 <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> 和 <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A>，因为它们不是工作流自变量，因此在 <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> 方法中而不在 <xref:System.Activities.Statements.InvokeMethod> 活动的 <xref:System.Activities.Activity.CacheMetadata%2A> 集合中注册。  
   
 ## <a name="see-also"></a>请参阅  
  [基元](../workflow-designer/primitives-activity-designers.md)   

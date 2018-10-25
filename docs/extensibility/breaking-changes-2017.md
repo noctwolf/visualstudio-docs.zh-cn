@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36d001a14815e5e8e8639ba0937506a1c06d3fc2
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 1a7ed5322c131bd9f3b758b31169676865880fd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280566"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826487"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展中的更改
 
@@ -59,13 +59,14 @@ ms.locfileid: "44280566"
 > [INSTALLDIR] 下面指的是 Visual Studio 的安装根目录。 *VSIXInstaller.exe*将自动填充此操作，但若要编写自定义部署代码，请阅读[查找 Visual Studio](locating-visual-studio.md)。
 
 * 仅安装到 GAC 的程序集：
-  * 现在，这些程序集都安装了下 * [INSTALLDIR] \Common7\IDE\*， *[INSTALLDIR] \Common7\IDE\PublicAssemblies*或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 这些文件夹是 Visual Studio 进程的探测路径的一部分。
+  * 现在，这些程序集都安装了下<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*。 这些文件夹是 Visual Studio 进程的探测路径的一部分。
+
 * 已安装到非探测路径和 GAC 的程序集：
   * 在 GAC 中的副本已从安装程序删除。
   * 一个 *.pkgdef*添加了文件，以指定程序集的代码基础项。
 
     例如：
-    
+
     ```xml
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
     "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
@@ -81,7 +82,7 @@ ms.locfileid: "44280566"
   * 你的代码将能够找到 Visual Studio 核心程序集。
   * 请考虑使用 *.pkgdef*文件可以根据需要指定您的程序集的路径。
 * 如果在 Visual Studio 进程之外运行您的扩展插件：
-  * 查找 Visual Studio 核心程序集下，请考虑 * [INSTALLDIR] \Common7\IDE\*， *[INSTALLDIR] \Common7\IDE\PublicAssemblies*或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用配置文件或程序集冲突解决程序。
+  * 查找 Visual Studio 核心程序集下，请考虑<em>[INSTALLDIR] \Common7\IDE\*，* [INSTALLDIR] \Common7\IDE\PublicAssemblies</em>或 *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*使用配置文件或程序集冲突解决程序。
 
 ## <a name="change-reduce-registry-impact"></a>更改： 降低注册表的影响
 

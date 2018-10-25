@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: edd88755fbc3065cf6d9ff95b9859b7e70393300
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670480"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49811576"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导 （在 Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置，创建清单文件，并创建安装程序。  
@@ -41,13 +41,13 @@ ms.locfileid: "35670480"
   
  为磁盘路径、 文件共享、 FTP 站点或网站 URL 键入位置或单击**浏览**按钮以浏览的位置。 路径可以是以下格式：  
   
--   标准中的相对或绝对路径 Windows 格式，例如*C:\Deploy\MyApplication*或*\MyApplication*。  
+- 标准中的相对或绝对路径 Windows 格式，例如*C:\Deploy\MyApplication*或*\MyApplication*。  
   
--   通用命名约定 (UNC) 路径，如 *\\\ServerName\MyApplication\\*。  
+- 通用命名约定 (UNC) 路径，如 *\\\ServerName\MyApplication\\*。  
   
--   URL 的 web 站点，如 http://www.microsoft.com/MyApplication。  
+- URL 的 web 站点，如 http://www.microsoft.com/MyApplication。  
   
- 默认情况下，发布位置是*http://localhost/projectname/* 如果您安装了 IIS，或如果这样做的 publish\ 目录不具有安装 IIS。  
+  默认情况下，发布位置是*http://localhost/projectname/* 如果您安装了 IIS，或如果这样做的 publish\ 目录不具有安装 IIS。  
   
 > [!NOTE]  
 >  如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是*发布\\*目录下，无论是否安装了 IIS。  

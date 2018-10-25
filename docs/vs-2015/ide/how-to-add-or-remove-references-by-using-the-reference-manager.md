@@ -28,12 +28,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4958785f2db12dada9bcf062d3865b6b1ae19869
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 82e09b1d27c8ac7905fd0e6511381b97fcae2cd7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258175"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49917534"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "49258175"
   
 #### <a name="to-add-a-reference"></a>添加引用  
   
-1.  在“解决方案资源管理器”中，右键单击“引用”节点，然后选择“添加引用”。  
+1. 在“解决方案资源管理器”中，右键单击“引用”节点，然后选择“添加引用”。  
   
-2.  指定要添加的引用，然后选择“确定”按钮。  
+2. 指定要添加的引用，然后选择“确定”按钮。  
   
- 此时将打开“引用管理器”，并按组列出可用引用。 项目类型确定将显示以下哪一组：  
+   此时将打开“引用管理器”，并按组列出可用引用。 项目类型确定将显示以下哪一组：  
   
 -   “程序集”组，包含“框架”和“扩展”子组。  
   
@@ -69,29 +69,29 @@ ms.locfileid: "49258175"
   
  “程序集”选项卡包含两个子选项卡：  
   
-1.  “框架”列出组成目标框架的所有程序集。  
+1. “框架”列出组成目标框架的所有程序集。  
   
-    -   当你的项目以目标框架的配置文件为目标时，公布的程序集在完整框架中并在“框架”列表中枚举。 公布的程序集显示为灰色，以便与项目的目标框架配置文件中存在的程序集区分。 例如，如果项目以 .NET Framework 4 Client 为目标，“框架”列表将显示 .NET Framework 4 中的公布程序集。 用户添加已公布的程序集时，在“引用管理器”对话框关闭后，用户将收到通知，表明项目将重定目标为 .NET Framework 4，并将添加已公布的程序集。  
+   -   当你的项目以目标框架的配置文件为目标时，公布的程序集在完整框架中并在“框架”列表中枚举。 公布的程序集显示为灰色，以便与项目的目标框架配置文件中存在的程序集区分。 例如，如果项目以 .NET Framework 4 Client 为目标，“框架”列表将显示 .NET Framework 4 中的公布程序集。 用户添加已公布的程序集时，在“引用管理器”对话框关闭后，用户将收到通知，表明项目将重定目标为 .NET Framework 4，并将添加已公布的程序集。  
   
-    -   默认情况下，针对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的项目在项目创建时包含对目标[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用。” 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。  
+   -   默认情况下，针对 [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用的项目在项目创建时包含对目标[!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] 中所有程序集的引用。 在托管项目中，“解决方案资源管理器”中“引用”文件夹下的只读节点指示对整个框架的引用。 因此，“框架”选项卡不从框架枚举任何程序集，而是显示以下消息：“已引用所有框架程序集。 请使用对象浏览器浏览框架中的引用。” 对于桌面项目，“框架”选项卡枚举目标框架中的程序集，用户必须添加应用程序所需的引用。  
   
-2.  “扩展”列出了组件和控件的外部供应商为扩展目标框架而开发的所有程序集。 根据用户应用程序的用途，可能需要这些程序集。  
+2. “扩展”列出了组件和控件的外部供应商为扩展目标框架而开发的所有程序集。 根据用户应用程序的用途，可能需要这些程序集。  
   
-    -   “扩展”通过枚举在以下位置注册的程序集来填充：  
+   -   “扩展”通过枚举在以下位置注册的程序集来填充：  
   
-        ```  
-        32-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        64-bit machine:  
-        HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
-        And older versions of the [Target Framework Identifier]  
-        ```  
+       ```  
+       32-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       64-bit machine:  
+       HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\[Target Framework Identifier]\v[Target Framework Version]\AssemblyFoldersEx\[UserComponentName]\@default=[Disk location of assemblies]  
+       And older versions of the [Target Framework Identifier]  
+       ```  
   
-         例如，如果项目以 32 位计算机上的 .NET Framework 4 为目标，则“扩展”将枚举在 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 和 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下注册的程序集。  
+        例如，如果项目以 32 位计算机上的 .NET Framework 4 为目标，则“扩展”将枚举在 \Microsoft\\.NETFramework\v4.0\AssemblyFoldersEx\\、\Microsoft\\.NETFramework\v3.5\AssemblyFoldersEx\\、Microsoft\\.NETFramework\v3.0\AssemblyFoldersEx\\ 和 \Microsoft\\.NETFramework\v2.0\AssemblyFoldersEx\\ 下注册的程序集。  
   
- 列表中的一些组件可能不会显示，具体取决于项目的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 在下列条件下，可能会出现这种情况：  
+   列表中的一些组件可能不会显示，具体取决于项目的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。 在下列条件下，可能会出现这种情况：  
   
 -   使用最新版本的 .NET Framework 的组件与以早期版本的 .NET Framework 为目标的项目不兼容。  
   
@@ -108,35 +108,35 @@ ms.locfileid: "49258175"
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>在“添加引用”对话框中显示程序集  
   
--   将程序集移动或复制到下列位置之一：  
+- 将程序集移动或复制到下列位置之一：  
   
-    -   当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）  
+  - 当前项目目录。 （可以使用 **“浏览”** 选项卡查找这些程序集。）  
   
-    -   同一解决方案中的其他项目目录。 （可以使用“项目”选项卡查找这些程序集。）  
+  - 同一解决方案中的其他项目目录。 （可以使用“项目”选项卡查找这些程序集。）  
   
-     \- 或 -  
+    \- 或 -  
   
--   设置指定要显示的程序集位置的注册表项：  
+- 设置指定要显示的程序集位置的注册表项：  
   
-     对于 32 位操作系统，添加以下注册表项之一。  
+   对于 32 位操作系统，添加以下注册表项之一。  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
   
-     对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。  
+    对于 64 位操作系统，在 32 位注册表配置单元中添加以下注册表项之一。  
   
-    -   [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
+  - [HKEY_CURRENT_USER\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
   
-    -   [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
+  - [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\\VersionMinimum\AssemblyFoldersEx\MyAssemblies]@="AssemblyLocation"  
   
-     VersionMinimum 是适用的最低 .NET Framework 版本。 如果 VersionMinimum 为 v3.0，则在 AssemblyFoldersEx 中指定的文件夹适用于面向 .NET Framework 3.0 和更高版本的项目。  
+    VersionMinimum 是适用的最低 .NET Framework 版本。 如果 VersionMinimum 为 v3.0，则在 AssemblyFoldersEx 中指定的文件夹适用于面向 .NET Framework 3.0 和更高版本的项目。  
   
-     AssemblyLocation 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies\\。  
+    AssemblyLocation 是要在“添加引用”对话框中显示的程序集目录，例如 C:\MyAssemblies\\。  
   
-     通过在 HKEY_LOCAL_MACHINE 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集。 如果在 HKEY_CURRENT_USER 节点下创建注册表项，则只会影响当前用户的设置。  
+    通过在 HKEY_LOCAL_MACHINE 节点下创建注册表项，所有用户都可以在“添加引用”对话框中的指定位置看到这些程序集。 如果在 HKEY_CURRENT_USER 节点下创建注册表项，则只会影响当前用户的设置。  
   
-     再次打开“添加引用”对话框。 程序集应出现在“.NET”选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation 目录中，然后重启 Visual Studio 并重试。  
+    再次打开“添加引用”对话框。 程序集应出现在“.NET”选项卡中。如果未显示，请确保这些程序集位于指定的 AssemblyLocation 目录中，然后重启 Visual Studio 并重试。  
   
 ## <a name="com-tab"></a>“COM”选项卡  
  “COM”选项卡列出可供引用的所有 COM 组件。 如果要添加对包含内部清单的已注册 COM DLL 的引用，请先注销该 DLL。 否则，Visual Studio 会将程序集引用作为 ActiveX 控件而不是本机 DLL 添加。  
@@ -159,11 +159,11 @@ ms.locfileid: "49258175"
   
  可以通过两种方式在 Visual Studio 中生成 WinMD 文件：  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 Visual C# 项目只能使用通过 [!INCLUDE[win8](../includes/win8-md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]应用托管项目**：[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用项目可通过设置“项目属性”|“输出类型”=“WinMD 文件”来输出 WinMD 二进制文件。 WinMD 文件名必须是其中包含的所有命名空间的超集命名空间。 例如，如果项目包括命名空间 A.B 和 A.B.C，则其输出的 WinMD 的可能名称为 A.winmd 和 A.B.winmd。 如果用户输入与项目中的命名空间集不相交的“项目属性”|“程序集名称”或“项目属性”|“命名空间值”，或者项目中没有超集命名空间，则将生成一个生成警告：“A.winmd”不是此程序集的有效 .winmd 文件名。 Windows 元数据文件中的所有类型必须存在于文件名的子命名空间中。 无法在运行时查找文件名子命名空间中不存在的类型。 在此程序集中，最小的公共命名空间为“CSWSClassLibrary1”。 桌面 Visual Basic 或 Visual C# 项目只能使用通过 [!INCLUDE[win8](../includes/win8-md.md)] SDK 生成的 WinMD（也称为第一方 WinMD），无法生成 WinMD。  
   
--   **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。  
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] 应用本机项目**：本机 WinMD 文件仅包含元数据。 它的实现存在于单独 DLL 文件中。 若要生成本机二进制文件，可在“新建项目”对话框中选择“Windows 运行时组件”项目模板，或者从空项目开始并修改项目属性以生成 WinMD 文件。 如果项目中包含不相交的命名空间，则将出现生成错误，告知用户合并命名空间或运行 MSMerge 工具。  
   
- “Windows”选项卡包括两个子组。  
+  “Windows”选项卡包括两个子组。  
   
 ### <a name="core-subgroup"></a>“核心”子组  
  “核心”子组列出目标 Windows 版本的 SDK 中的所有 WinMD（对于 Windows 运行时元素）。  

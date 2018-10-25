@@ -19,25 +19,25 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bc9f03650e4e99b7a7277f183993b84d79a67ab2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4ec6a27b8fcd35b4b74108f7bc608c975e120b02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217121"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828683"
 ---
 # <a name="visualizer-architecture"></a>可视化工具体系结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 调试器可视化工具的结构由两部分组成：  
   
--   *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
+- *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
   
--   *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
+- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
   
- 可视化工具是使调试器能够显示一个调试器组件 (*可视化*) 有意义且易于理解的窗体中的数据对象的内容。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
+  可视化工具是使调试器能够显示一个调试器组件 (*可视化*) 有意义且易于理解的窗体中的数据对象的内容。 某些可视化工具还支持数据对象编辑。 通过编写自定义可视化工具，可以扩展调试器的功能，使其能够处理你自己的自定义数据类型。  
   
- 要可视化的数据对象位于要调试的进程内 (*调试对象*过程)。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
+  要可视化的数据对象位于要调试的进程内 (*调试对象*过程)。 用于显示数据的用户界面在 Visual Studio 调试器进程内创建：  
   
 |调试器进程|调试对象进程|  
 |----------------------|----------------------|  

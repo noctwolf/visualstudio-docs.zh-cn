@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer2::GetPort |Microsoft 文档
+title: IDebugCoreServer2::GetPort |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1f889e44895faf9b5afdc2186adc5baadd5a578
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 14172972c77218663da59d36e3e94ffd3c07c2d8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104584"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887333"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 检索特定端口。  
@@ -43,14 +43,14 @@ int GetPort(
   
 #### <a name="parameters"></a>参数  
  `guidPort`  
- [in]要检索的端口 GUID。  
+ [in]要检索的端口的 GUID。  
   
  `ppPort`  
  [out]返回[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)对象，表示所需的端口。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_PORTSUPPLIER_NO_PORT`如果没有任何端口与给定的标识符。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_PORTSUPPLIER_NO_PORT`是否存在具有给定标识符的任何端口。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)   
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

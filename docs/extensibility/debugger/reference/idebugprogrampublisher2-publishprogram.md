@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2::PublishProgram |Microsoft 文档
+title: IDebugProgramPublisher2::PublishProgram |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67ac5bad37ad5df85022ba6572da44d32de39736
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: b0ac385eaff1344d21b47e902e7c76d7f4c39343
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31120119"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49869751"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
-此方法使程序可用于的调试引擎 (DEs) 和会话调试管理器。  
+此方法将可用于调试引擎 (DEs) 的程序和会话调试管理器。  
   
 ## <a name="syntax"></a>语法  
   
@@ -45,20 +45,20 @@ int PublishProgram(
   
 #### <a name="parameters"></a>参数  
  `Engines`  
- [in]针对 DEs 可以启动或将附加到此程序的 Guid 数组。  
+ [in]针对 DEs 的可启动或附加到此程序的 Guid 的数组。  
   
  `szFriendlyName`  
- [in]（这将显示在菜单或对话框向用户显示） 的程序的友好名称。  
+ [in]（这会显示在菜单或对话框向用户显示） 的程序的友好名称。  
   
  `pDebuggeeInterface`  
- [in]`IUnknown`程序接口 （此值用作 cookie 用来唯一地标识程序; 此相同的值用于"取消发布"节目）  
+ [in]`IUnknown`程序接口 （此值用作一个 cookie 以唯一标识程序; 此相同的值用于"取消发布"程序）  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 若要使程序不再可用于调试，调用[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)。  
+ 若要使程序不再可用于调试，请调用[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
  [UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)

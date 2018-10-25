@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 1ab3e3c2f299adb8a2f0ec5703f81b14fe5fc4ff
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 8acde589ebf47d4a67609e847a84bd7c7acd8482
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860350"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899638"
 ---
 # <a name="troubleshoot-extensions-for-dependency-diagrams"></a>依赖项关系图扩展疑难解答
 
@@ -25,22 +25,22 @@ ms.locfileid: "47860350"
 
 ## <a name="when-i-press-f5-to-debug-my-extension-my-commands-gesture-handlers-validation-extensions-or-custom-properties-do-not-appear-on-dependency-diagrams-in-the-experimental-instance-of-visual-studio"></a>我按 F5 调试扩展，我的命令、 笔势处理程序、 验证扩展或自定义属性不会显示在 Visual Studio 的实验实例中的依赖项关系图上
 
-1.  在实验实例中的 Visual Studio 中，并在打开你的扩展解决方案**构建**菜单上，单击**重新生成解决方案**。
+1. 在实验实例中的 Visual Studio 中，并在打开你的扩展解决方案**构建**菜单上，单击**重新生成解决方案**。
 
-2.  按**F5**或**CTRL + F5**启动 Visual Studio 的实验实例。 打开依赖项关系图并测试你的扩展。
+2. 按**F5**或**CTRL + F5**启动 Visual Studio 的实验实例。 打开依赖项关系图并测试你的扩展。
 
- 如有必要，请继续下一个过程。
+   如有必要，请继续下一个过程。
 
 ## <a name="an-old-version-of-my-extension-runs"></a>将运行我的旧版本扩展。
 
-1.  请确保 Visual Studio 的实验实例正在运行。
+1. 请确保 Visual Studio 的实验实例正在运行。
 
-2.  删除以下文件夹： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache
+2. 删除以下文件夹： %LocalAppData%\Microsoft\VisualStudio\\[version] \ComponentModelCache
 
-    > [!NOTE]
-    > %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。
+   > [!NOTE]
+   > %Localappdata%通常是*DriveName*: \Users\\*用户名*\AppData\Local。
 
- 如有必要，请继续下一个过程。
+   如有必要，请继续下一个过程。
 
 ## <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>将出现旧版本的验证结果，或我的验证方法未被调用。
 

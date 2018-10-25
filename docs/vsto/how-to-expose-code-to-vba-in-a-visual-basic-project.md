@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8a979d62c8320d57c3243e4d60ef93ee56eb06cf
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 7e4bc9f4227c11f8e34838a2785b27da62a0a6b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35256092"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49839643"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何： 向 VBA 公开代码在 Visual Basic 项目中
   您可以公开中的代码[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]项目到 Visual Basic for Applications (VBA) 代码，如果您希望两种类型的代码与彼此进行交互。  
@@ -35,11 +35,11 @@ ms.locfileid: "35256092"
   
  该过程与不同主机项类中的代码比其他类中的代码：  
   
--   [公开主机项类中的代码](#HostItemCode)  
+- [公开主机项类中的代码](#HostItemCode)  
   
--   [公开不是主机项类中的代码](#NonHostItem)  
+- [公开不是主机项类中的代码](#NonHostItem)  
   
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 调用 VSTO 代码从 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
+  ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现： 调用 VSTO 代码从 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
   
 ##  <a name="HostItemCode"></a> 公开主机项类中的代码  
  若要使 VBA 代码能够调用主机项类中的 Visual Basic 代码，设置**EnableVbaCallers**主机项的属性**True**。  

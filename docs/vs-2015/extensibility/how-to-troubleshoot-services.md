@@ -15,27 +15,27 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 97084a1fe66bb84c56e1f6452397df9128f4d08f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fdce9cb5e6499066c7e96abe895db1505f952011
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279027"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49826619"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何： 对服务进行故障排除
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有几个常见的问题时尝试获得的服务可能发生的：  
   
--   服务未注册与[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
+- 服务未注册与[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]。  
   
--   请求服务时通过接口类型而不是由服务类型。  
+- 请求服务时通过接口类型而不是由服务类型。  
   
--   VSPackage 请求该服务没有就位。  
+- VSPackage 请求该服务没有就位。  
   
--   使用错误的服务提供程序。  
+- 使用错误的服务提供程序。  
   
- 如果所请求的服务无法获取，则会调用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>，则返回 null。 您应始终测试存在 null 请求服务后：  
+  如果所请求的服务无法获取，则会调用<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>，则返回 null。 您应始终测试存在 null 请求服务后：  
   
 ```csharp  
 IVsActivityLog log =   

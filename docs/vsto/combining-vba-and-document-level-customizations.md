@@ -27,12 +27,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c61e155cd1dc70a747c6161de3aeb0fd57752816
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2243a3e03ed84325523f62d77ae3cc6d20f83bbb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670433"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49878071"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>结合 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。  
@@ -47,17 +47,17 @@ ms.locfileid: "35670433"
 ## <a name="call-vba-code-from-the-customization-assembly"></a>从自定义程序集调用 VBA 代码  
  可以在 Word 文档中调用宏，也可以在 Excel 工作簿中调用宏和函数。 若要执行此操作，请使用以下方法之一：  
   
--   对于 Word，调用 <xref:Microsoft.Office.Interop.Word._Application.Run%2A>类的 <xref:Microsoft.Office.Interop.Word.Application> 方法。  
+- 对于 Word，调用 <xref:Microsoft.Office.Interop.Word._Application.Run%2A>类的 <xref:Microsoft.Office.Interop.Word.Application> 方法。  
   
--   对于 Excel，调用 <xref:Microsoft.Office.Interop.Excel._Application.Run%2A> 类的 <xref:Microsoft.Office.Interop.Excel.Application> 方法。  
+- 对于 Excel，调用 <xref:Microsoft.Office.Interop.Excel._Application.Run%2A> 类的 <xref:Microsoft.Office.Interop.Excel.Application> 方法。  
   
- 对于每个方法，第一个参数标识要调用的宏或函数的名称，其余的可选参数指定要传递到宏或函数的参数。 对于 Word 和 Excel，第一个参数的格式可能不同：  
+  对于每个方法，第一个参数标识要调用的宏或函数的名称，其余的可选参数指定要传递到宏或函数的参数。 对于 Word 和 Excel，第一个参数的格式可能不同：  
   
--   对于 Word，第一个参数是一个字符串，该字符串可以是模板、模块和宏名称的任意组合。 如果指定文档名称，则你的代码只能运行与当前上下文相关的文档中的宏，而不是任何文档中的任何宏。  
+- 对于 Word，第一个参数是一个字符串，该字符串可以是模板、模块和宏名称的任意组合。 如果指定文档名称，则你的代码只能运行与当前上下文相关的文档中的宏，而不是任何文档中的任何宏。  
   
--   对于 Excel，第一个参数可以是指定宏名称的字符串、指示函数位置的 <xref:Microsoft.Office.Interop.Excel.Range> 或已注册 DLL (XLL) 函数的注册 ID。 如果传递字符串，则将在活动工作表的上下文中计算该字符串。  
+- 对于 Excel，第一个参数可以是指定宏名称的字符串、指示函数位置的 <xref:Microsoft.Office.Interop.Excel.Range> 或已注册 DLL (XLL) 函数的注册 ID。 如果传递字符串，则将在活动工作表的上下文中计算该字符串。  
   
- 下面的代码示例演示如何从 Excel 文档级项目调用名为 `MyMacro` 的宏。 此示例假定 `MyMacro` 是在 `Sheet1`中定义的 。  
+  下面的代码示例演示如何从 Excel 文档级项目调用名为 `MyMacro` 的宏。 此示例假定 `MyMacro` 是在 `Sheet1`中定义的 。  
   
 ```vb  
 Globals.Sheet1.Application.Run("MyMacro")  
@@ -77,11 +77,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="call-code-in-document-level-customizations-from-vba"></a>在文档级自定义项从 VBA 中调用代码  
  可以配置 Word 或 Excel 的文档级项目，以便文档中的 Visual Basic for Applications (VBA) 代码能够调用自定义程序集中的代码。 这在以下应用场景中很有用：  
   
--   你希望使用与某个文档相关联的文档级自定义项中的功能扩展同一文档中的现有 VBA 代码。  
+- 你希望使用与某个文档相关联的文档级自定义项中的功能扩展同一文档中的现有 VBA 代码。  
   
--   你希望将你使用文档级自定义项开发的服务提供给能够通过在文档中编写 VBA 代码来访问服务的最终用户。  
+- 你希望将你使用文档级自定义项开发的服务提供给能够通过在文档中编写 VBA 代码来访问服务的最终用户。  
   
- Visual Studio 中的 Office 开发工具可为 VSTO 外接程序提供相似的功能。如果你正在开发 VSTO 外接程序，可以从其他 Microsoft Office 解决方案调用 VSTO 外接程序中的代码。 有关详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
+  Visual Studio 中的 Office 开发工具可为 VSTO 外接程序提供相似的功能。如果你正在开发 VSTO 外接程序，可以从其他 Microsoft Office 解决方案调用 VSTO 外接程序中的代码。 有关详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。  
   
 > [!NOTE]  
 >  此功能无法在 Word 模板项目中使用。 它只能在 Word 文档、Excel 工作簿或 Excel 模板项目中使用。  
@@ -106,21 +106,21 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="enable-vba-code-to-call-into-the-customization-assembly"></a>使 VBA 代码能够调入自定义程序集  
  可通过两种不同方式向文档中的 VBA 代码公开自定义项程序集中的成员：  
   
--   可以向 VBA 公开 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 项目中某个主机项类的成员。 若要这样做，请在设计器中打开主机项（即文档、工作表或工作簿），并在 **“属性”** 窗口中将主机项的 **EnableVbaCallers** 属性设置为 **True** 。 Visual Studio 会自动执行使 VBA 代码能够调用类成员所需的所有工作。  
+- 可以向 VBA 公开 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 项目中某个主机项类的成员。 若要这样做，请在设计器中打开主机项（即文档、工作表或工作簿），并在 **“属性”** 窗口中将主机项的 **EnableVbaCallers** 属性设置为 **True** 。 Visual Studio 会自动执行使 VBA 代码能够调用类成员所需的所有工作。  
   
--   可以向 VBA公开 Visual C# 项目中任何公共类的成员或 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 项目中非主机项类的成员。 通过此选项，你可以更自由地选择要向 VBA 公开的类，但它也需要更多的手动步骤。  
+- 可以向 VBA公开 Visual C# 项目中任何公共类的成员或 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 项目中非主机项类的成员。 通过此选项，你可以更自由地选择要向 VBA 公开的类，但它也需要更多的手动步骤。  
   
-     为此，必须执行下列主要步骤：  
+   为此，必须执行下列主要步骤：  
   
-    1.  向 COM 公开该类。  
+  1.  向 COM 公开该类。  
   
-    2.  替代项目中主机项类的 **GetAutomationObject** 方法，以返回要向 VBA 公开的类的实例。  
+  2.  替代项目中主机项类的 **GetAutomationObject** 方法，以返回要向 VBA 公开的类的实例。  
   
-    3.  将项目中任何主机项类的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。 这会将自定义项程序集的类型库嵌入程序集，并将对该类型库的引用添加到文档中的 VBA 项目。  
+  3.  将项目中任何主机项类的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。 这会将自定义项程序集的类型库嵌入程序集，并将对该类型库的引用添加到文档中的 VBA 项目。  
   
- 有关详细说明，请参阅[如何： 向 VBA 公开代码在 Visual Basic 项目中的](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)并[如何： 向在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
+  有关详细说明，请参阅[如何： 向 VBA 公开代码在 Visual Basic 项目中的](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)并[如何： 向在 Visual C 中向 VBA 代码公开&#35;项目](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
- **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 属性仅在设计时在 **“属性”** 窗口中可用，无法在运行时使用。 若要查看这些属性，请在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开主机项的设计器。 Visual Studio 设置这些属性时执行的特定任务的详细信息，请参阅[由主机项属性执行的任务](#PropertyTasks)。  
+  **EnableVbaCallers** 和 **ReferenceAssemblyFromVbaProject** 属性仅在设计时在 **“属性”** 窗口中可用，无法在运行时使用。 若要查看这些属性，请在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中打开主机项的设计器。 Visual Studio 设置这些属性时执行的特定任务的详细信息，请参阅[由主机项属性执行的任务](#PropertyTasks)。  
   
 > [!NOTE]  
 >  如果工作簿或文档尚未包含 VBA 代码，或者如果运行文档中的 VBA 代码时不信任该代码，则在将 **“EnableVbaCallers”** 或 **“ReferenceAssemblyFromVbaProject”** 属性设置为 **“True”** 时，你将收到一条错误消息。 这是因为在这种情况下，Visual Studio 无法修改文档中的 VBA 项目。  
@@ -128,11 +128,11 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 ## <a name="use-members-in-vba-code-to-call-into-the-customization-assembly"></a>使用成员中的 VBA 代码调入自定义程序集  
  在将项目配置为使 VBA 代码能够调入自定义项程序集后，Visual Studio 会将以下成员添加到文档中的 VBA 项目：  
   
--   对于所有项目，Visual Studio 都会添加一个名为 `GetManagedClass`的全局方法。  
+- 对于所有项目，Visual Studio 都会添加一个名为 `GetManagedClass`的全局方法。  
   
--   对于在其中使用 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 属性公开主机项类成员的 **“属性”** 项目，Visual Studio 还会将一个名为 `CallVSTOAssembly` 的属性添加到 VBA 项目中的 `ThisDocument`、 `ThisWorkbook`、 `Sheet1`、 `Sheet2`或 `Sheet3` 模块。  
+- 对于在其中使用 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 属性公开主机项类成员的 **“属性”** 项目，Visual Studio 还会将一个名为 `CallVSTOAssembly` 的属性添加到 VBA 项目中的 `ThisDocument`、 `ThisWorkbook`、 `Sheet1`、 `Sheet2`或 `Sheet3` 模块。  
   
- 可以使用 `CallVSTOAssembly` 属性或 `GetManagedClass` 方法来访问向项目中的 VBA 代码公开的类的公共成员。  
+  可以使用 `CallVSTOAssembly` 属性或 `GetManagedClass` 方法来访问向项目中的 VBA 代码公开的类的公共成员。  
   
 > [!NOTE]  
 >  在开发和部署解决方案时，可以在多个不同的文档副本中添加 VBA 代码。 有关详细信息，请参阅[向文档添加 VBA 的准则代码](#Guidelines)。  
@@ -210,37 +210,37 @@ GetManagedClass(pdispInteropObject Object) As Object
 ### <a name="enablevbacallers"></a>“属性”  
  当你在 Visual Basic 项目中将主机项的 **EnableVbaCallers** 属性设置为 **True** 时，Visual Studio 将执行以下任务：  
   
-1.  向主机项类添加 <xref:Microsoft.VisualBasic.ComClassAttribute> 和 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 特性。  
+1. 向主机项类添加 <xref:Microsoft.VisualBasic.ComClassAttribute> 和 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 特性。  
   
-2.  替代主机项类的 **GetAutomationObject** 方法。  
+2. 替代主机项类的 **GetAutomationObject** 方法。  
   
-3.  将主机项的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。  
+3. 将主机项的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**。  
   
- 当你将 **EnableVbaCallers** 属性重新设置为 **False**时，Visual Studio 将执行以下任务：  
+   当你将 **EnableVbaCallers** 属性重新设置为 **False**时，Visual Studio 将执行以下任务：  
   
-1.  从 <xref:Microsoft.VisualBasic.ComClassAttribute> 类删除 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 和 `ThisDocument` 特性。  
+4. 从 <xref:Microsoft.VisualBasic.ComClassAttribute> 类删除 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 和 `ThisDocument` 特性。  
   
-2.  从主机项类删除 **GetAutomationObject** 方法。  
+5. 从主机项类删除 **GetAutomationObject** 方法。  
   
-    > [!NOTE]  
-    >  Visual Studio 不会自动将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**。 可以使用 **“属性”** 窗口将此属性手动设置为 **False** 。  
+   > [!NOTE]  
+   >  Visual Studio 不会自动将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**。 可以使用 **“属性”** 窗口将此属性手动设置为 **False** 。  
   
 ### <a name="referenceassemblyfromvbaproject"></a>ReferenceAssemblyFromVbaProject  
  当 Visual Basic 项目或 Visual C# 项目中任何主机项的 **ReferenceAssemblyFromVbaProject** 属性设置为 **True**时，Visual Studio 将执行以下任务：  
   
-1.  为自定义程序集生成一个类型库，并将该类型库嵌入程序集。  
+1. 为自定义程序集生成一个类型库，并将该类型库嵌入程序集。  
   
-2.  在文档内的 VBA 项目中添加对以下类型库的引用：  
+2. 在文档内的 VBA 项目中添加对以下类型库的引用：  
   
-    -   自定义程序集的类型库。  
+   -   自定义程序集的类型库。  
   
-    -   Microsoft Visual Studio Tools for Office Execution Engine 9.0 类型库。 此类型库包含在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。  
+   -   Microsoft Visual Studio Tools for Office Execution Engine 9.0 类型库。 此类型库包含在 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]中。  
   
- 将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**时，Visual Studio 将执行以下任务：  
+   将 **ReferenceAssemblyFromVbaProject** 属性重新设置为 **False**时，Visual Studio 将执行以下任务：  
   
-1.  文档内的 VBA 项目中删除类型库引用。  
+3. 文档内的 VBA 项目中删除类型库引用。  
   
-2.  从程序集中删除嵌入的类型库。  
+4. 从程序集中删除嵌入的类型库。  
   
 ## <a name="troubleshoot"></a>疑难解答
  下表列出了一些常见错误以及修复错误的建议。  

@@ -15,12 +15,12 @@ caps.latest.revision: 40
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 3985372ba8c6aa8ba198f70a3538e3062a6d89ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f70bcea2599ac318d59255a274629b5c53cea730
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223207"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49889777"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>向层关系图添加命令和笔势
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "49223207"
   
 #### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展  
   
-1.  使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。  
+1. 使用“文件”  菜单上的“新建项目”  命令，在新的解决方案中创建项目。  
   
-2.  在“新建项目”  对话框的“建模项目” 下，选择“层设计器命令扩展”  或“层设计器笔势扩展” 。  
+2. 在“新建项目”  对话框的“建模项目” 下，选择“层设计器命令扩展”  或“层设计器笔势扩展” 。  
   
-     模板将创建包含一个小型工作示例的项目。  
+    模板将创建包含一个小型工作示例的项目。  
   
-3.  若要测试此扩展，请按“CTRL+F5”  或“F5” 。  
+3. 若要测试此扩展，请按“CTRL+F5”  或“F5” 。  
   
-     此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在此实例中创建层关系图。 命令或笔势扩展应在此关系图中使用。  
+    此时将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的实验实例。 在此实例中创建层关系图。 命令或笔势扩展应在此关系图中使用。  
   
-4.  关闭实验实例并修改示例代码。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+4. 关闭实验实例并修改示例代码。 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-5.  可以向同一项目添加更多命令或笔势处理程序。 有关详细信息，请参阅以下章节之一：  
+5. 可以向同一项目添加更多命令或笔势处理程序。 有关详细信息，请参阅以下章节之一：  
   
-     [定义菜单命令](#command)  
+    [定义菜单命令](#command)  
   
-     [定义笔势处理程序](#gesture)  
+    [定义笔势处理程序](#gesture)  
   
-6.  若要在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]的主实例中或在另一台计算机上安装扩展，请找到 **bin\*** 中的 **.vsix\\\***。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
+6. 主实例中安装扩展[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，或在另一台计算机上找到 **.vsix**中的文件*bin\\*。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请使用“工具”  菜单上的“扩展和更新”  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>将命令或笔势添加到单独的 VSIX  
  如果想要创建一个包含命令、层验证程序和其他扩展的 VSIX，建议创建一个项目来定义 VSIX，并分隔处理程序的项目。 有关其他类型的建模扩展的信息，请参阅[扩展 UML 模型和关系图](../modeling/extend-uml-models-and-diagrams.md)。  
@@ -116,37 +116,37 @@ ms.locfileid: "49223207"
 ##  <a name="command"></a> 定义菜单命令  
  可向现有笔势或命令项目添加更多菜单命令定义。 每个命令均由具有以下特性的类进行定义：  
   
--   类的声明方式如下：  
+- 类的声明方式如下：  
   
-     `[LayerDesignerExtension]`  
+   `[LayerDesignerExtension]`  
   
-     `[Export(typeof(ICommandExtension))]`  
+   `[Export(typeof(ICommandExtension))]`  
   
-     `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
+   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`  
   
--   命名空间和类的名称并不重要。  
+- 命名空间和类的名称并不重要。  
   
--   实现 `ICommandExtension` 的方法如下：  
+- 实现 `ICommandExtension` 的方法如下：  
   
-    -   `string Text {get;}` - 菜单中显示的标签。  
+  -   `string Text {get;}` - 菜单中显示的标签。  
   
-    -   `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。  
+  -   `void QueryStatus(IMenuCommand command)` - 用户右键单击关系图时调用它，用于确定对于用户的当前选择内容，命令是否可见和已启用。  
   
-    -   `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。  
+  -   `void Execute(IMenuCommand command)` - 用户选择此命令时调用它。  
   
--   若要确定当前选择内容，可导入 `IDiagramContext`：  
+- 若要确定当前选择内容，可导入 `IDiagramContext`：  
   
-     `[Import]`  
+   `[Import]`  
   
-     `public IDiagramContext DiagramContext { get; set; }`  
+   `public IDiagramContext DiagramContext { get; set; }`  
   
-     `...`  
+   `...`  
   
-     `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
+   `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- 有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+  有关详细信息，请参阅[导航和更新层模型在程序代码中的](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
- 若要添加新命令，请创建包含以下示例的新代码文件。 然后测试并编辑它。  
+  若要添加新命令，请创建包含以下示例的新代码文件。 然后测试并编辑它。  
   
 ```  
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;  
@@ -242,30 +242,30 @@ namespace MyLayerExtensions // change to your preference
   
  请注意关于笔势处理程序的以下几点：  
   
--   `IGestureExtension` 的成员如下：  
+- `IGestureExtension` 的成员如下：  
   
-     **OnDoubleClick** - 用户双击关系图上的任意位置时调用它。  
+   **OnDoubleClick** - 用户双击关系图上的任意位置时调用它。  
   
-     **CanDragDrop** - 如果用户在将项拖动到关系图上的同时移动鼠标，则重复调用它。 它必须快速运行。  
+   **CanDragDrop** - 如果用户在将项拖动到关系图上的同时移动鼠标，则重复调用它。 它必须快速运行。  
   
-     **OnDragDrop** - 用户将项放到关系图上时调用它。  
+   **OnDragDrop** - 用户将项放到关系图上时调用它。  
   
--   每个方法的第一个参数是 `IShape`，你可以从它获取层元素。 例如：  
+- 每个方法的第一个参数是 `IShape`，你可以从它获取层元素。 例如：  
   
-    ```  
-    public void OnDragDrop(IShape target, IDataObject data)  
-    {  
-        ILayerElement element = target.GetLayerElement();  
-        if (element is ILayer)  
-        {  
-            // ...  
-        }  
-    }  
-    ```  
+  ```  
+  public void OnDragDrop(IShape target, IDataObject data)  
+  {  
+      ILayerElement element = target.GetLayerElement();  
+      if (element is ILayer)  
+      {  
+          // ...  
+      }  
+  }  
+  ```  
   
--   已为某些类型的拖动项定义了处理程序。 例如，用户可以将项从解决方案资源管理器拖动到层关系图上。 无法为这些类型的项定义拖动处理程序。 在这些情况下，不会调用 `DragDrop` 方法。  
+- 已为某些类型的拖动项定义了处理程序。 例如，用户可以将项从解决方案资源管理器拖动到层关系图上。 无法为这些类型的项定义拖动处理程序。 在这些情况下，不会调用 `DragDrop` 方法。  
   
- 有关如何进行解码时它们拖动到关系图上的其他项的详细信息，请参阅[建模图上定义笔势处理程序](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。  
+  有关如何进行解码时它们拖动到关系图上的其他项的详细信息，请参阅[建模图上定义笔势处理程序](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [导航和更新程序代码中的层模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   

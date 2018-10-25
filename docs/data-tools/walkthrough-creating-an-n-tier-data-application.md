@@ -16,12 +16,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 007a0a85bf9d7200860194b881a3d0505f6bee45
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 87b88c6fc8c6add2c93721b46165ffd295f4d614
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37175338"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942889"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练： 创建 n 层数据应用程序
 *N 层*数据应用程序是应用程序访问数据且分为多个逻辑层，或*层*。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅[N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
@@ -73,7 +73,7 @@ ms.locfileid: "37175338"
  本演练的第一步是创建一个解决方案和两个类库项目。 第一类的库包含数据集 (生成的类型化`DataSet`类以及保存应用程序的数据的数据表)。 此项目将用作应用程序的数据实体层，它通常位于中间层内。 数据集创建初始数据集，并自动将代码分离为两个类库。
 
 > [!NOTE]
->  请务必正确命名项目和解决方案，然后再单击**确定**。 这样做可使你更轻松地完成本演练。
+> 请务必正确命名项目和解决方案，然后再单击**确定**。 这样做可使你更轻松地完成本演练。
 
 ### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>创建 N 层解决方案和 DataEntityTier 类库
 
@@ -106,7 +106,7 @@ ms.locfileid: "37175338"
  下一步是创建类型化数据集。 使用这两个数据集类创建类型化数据集 (包括`DataTables`类) 和`TableAdapter`单个项目中的类。 （所有类都将生成到单个文件中。）分离时的数据集和 Tableadapter 到不同的项目，它是移动到其他项目，使数据集类`TableAdapter`原始项目中的类。 因此，最终将包含 Tableadapter （DataAccessTier 项目） 的项目中创建数据集。 使用创建数据集**数据源配置向导**。
 
 > [!NOTE]
->  你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
+> 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关如何设置 Northwind 示例数据库的信息，请参阅[如何： 安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ### <a name="to-create-the-dataset"></a>创建数据集
 
@@ -129,7 +129,7 @@ ms.locfileid: "37175338"
 6.  如果数据库需要密码，请选择选项以包括敏感数据，然后选择**下一步**。
 
     > [!NOTE]
-    >  如果选择了本地数据库文件（而不是连接至 SQL Server），系统可能会询问你是否将该文件添加到项目中。 选择**是**将数据库文件添加到项目。
+    > 如果选择了本地数据库文件（而不是连接至 SQL Server），系统可能会询问你是否将该文件添加到项目中。 选择**是**将数据库文件添加到项目。
 
 7.  选择**下一步**上**将连接字符串保存到应用程序配置文件**页。
 
@@ -144,20 +144,20 @@ ms.locfileid: "37175338"
 
 ### <a name="to-separate-the-tableadapters-from-the-dataset"></a>将 TableAdapter 与数据集分离
 
-1.  双击**NorthwindDataSet.xsd**中**解决方案资源管理器**以打开中的数据集**数据集设计器**。
+1. 双击**NorthwindDataSet.xsd**中**解决方案资源管理器**以打开中的数据集**数据集设计器**。
 
-2.  选择设计器上的空白区域。
+2. 选择设计器上的空白区域。
 
-3.  找到**数据集项目**中的节点**属性**窗口。
+3. 找到**数据集项目**中的节点**属性**窗口。
 
-4.  在中**数据集项目**列表中，选择**DataEntityTier**。
+4. 在中**数据集项目**列表中，选择**DataEntityTier**。
 
-5.  在“生成”菜单上，选择“生成解决方案”。
+5. 在“生成”菜单上，选择“生成解决方案”。
 
- 将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
+   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集的项目 (`DataAccessTier`) 现在只包含 Tableadapter。 中指定的项目**数据集项目**属性 (`DataEntityTier`) 包含类型化数据集： *NorthwindDataSet.Dataset.Designer.vb* (或*NorthwindDataSet.Dataset.Designer.cs*)。
 
 > [!NOTE]
->  当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 你必须手动将它们移到数据集项目中。
+> 当你将数据集和 Tableadapter (通过设置**数据集项目**属性)，将不会自动移动项目中的现有数据集分部类。 你必须手动将它们移到数据集项目中。
 
 ## <a name="create-a-new-service-application"></a>创建新的服务应用程序
 本演练演示如何使用 WCF 服务访问的数据访问层，因此，让我们创建一个新的 WCF 服务应用程序。
@@ -224,7 +224,7 @@ ms.locfileid: "37175338"
  现在数据访问层包含返回数据的方法，接下来要在数据服务中创建调用这些方法的方法。
 
 > [!NOTE]
->  对于 C# 项目，必须添加对 `System.Data.DataSetExtensions` 程序集的引用，才能编译下面的代码。
+> 对于 C# 项目，必须添加对 `System.Data.DataSetExtensions` 程序集的引用，才能编译下面的代码。
 
 ### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>在数据服务中创建 GetCustomers 和 GetOrders 函数
 
@@ -323,7 +323,7 @@ ms.locfileid: "37175338"
 3.  选择**Service1** ，然后选择**确定**。
 
     > [!NOTE]
-    >  如果当前计算机上有多个服务，选择先前在本演练中创建的服务 (包含的服务`GetCustomers`和`GetOrders`方法)。
+    > 如果当前计算机上有多个服务，选择先前在本演练中创建的服务 (包含的服务`GetCustomers`和`GetOrders`方法)。
 
 ## <a name="add-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>将 datagridview 添加添加到窗体要显示由数据服务返回的数据
  添加对数据服务的服务引用后**数据源**窗口会自动填充由服务返回的数据。
@@ -361,7 +361,7 @@ ms.locfileid: "37175338"
 默认值为`maxReceivedMessageSize`不是足够大以保存从检索的数据`Customers`和`Orders`表。 在以下步骤中，会增加为 6553600 的值。 更改客户端会自动更新服务引用的值。
 
 > [!NOTE]
->  较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关详细信息，请参阅<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
+> 较小的默认大小旨在降低遭受拒绝服务 (DoS) 攻击的可能性。 有关详细信息，请参阅<xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>。
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>增加 maxReceivedMessageSize 值
 

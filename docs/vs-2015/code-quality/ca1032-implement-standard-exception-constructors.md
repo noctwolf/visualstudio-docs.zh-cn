@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 871381e1013face4531e90b06d680d194955e3c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: efef441e84c4f1d51c633e3fdcb2da8d1ba3e963
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49193591"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49868607"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032：实现标准异常构造函数
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
@@ -42,15 +43,15 @@ ms.locfileid: "49193591"
 ## <a name="rule-description"></a>规则说明
  异常类型必须实现以下构造函数：
 
--   公共 NewException()
+- 公共 NewException()
 
--   公共 NewException(string)
+- 公共 NewException(string)
 
--   公共 NewException (string，异常)
+- 公共 NewException (string，异常)
 
--   受保护或私有 NewException （SerializationInfo，StreamingContext）
+- 受保护或私有 NewException （SerializationInfo，StreamingContext）
 
- 如果不能提供完整的构造函数集，要正确处理异常将变得比较困难。 例如，已签名的构造函数`NewException(string, Exception)`用于创建的其他异常导致的异常。 而无需此构造函数中不能创建和引发自定义异常，其中包含内部 （嵌套） 异常的实例，这是托管的代码应在这种情况中执行操作。 前三种异常构造函数是公共的约定。 第四个构造函数是在未密封类中，受保护和私钥在密封类中。 有关详细信息，请参阅[CA2229： 实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md)
+  如果不能提供完整的构造函数集，要正确处理异常将变得比较困难。 例如，已签名的构造函数`NewException(string, Exception)`用于创建的其他异常导致的异常。 而无需此构造函数中不能创建和引发自定义异常，其中包含内部 （嵌套） 异常的实例，这是托管的代码应在这种情况中执行操作。 前三种异常构造函数是公共的约定。 第四个构造函数是在未密封类中，受保护和私钥在密封类中。 有关详细信息，请参阅[CA2229： 实现序列化构造函数](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
  若要修复此规则的冲突，请将缺少的构造函数添加到异常，并确保它们具有正确的可访问性。

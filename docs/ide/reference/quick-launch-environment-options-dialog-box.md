@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ad37856e8692d5182ddba4f80ec1c07aa095f674
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 4149a6cc7974f1c38c146620c0f3a6e95f760ad3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31946775"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49936649"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“快速启动”
 可以使用“快速启动”快速搜索并对选项、模板和菜单等 IDE 资产执行操作。 不能使用“快速启动”搜索代码和符号。 “快速启动”搜索框位于菜单栏的右上角并且可以通过选择 Ctrl + Q 键进行访问。 只需在框中输入搜索字符串。 若要搜索包含 @ 的字符串，请使用“@@”。
@@ -34,7 +34,7 @@ ms.locfileid: "31946775"
  以下快捷方式可用于将搜索限于特定的类别。
 
 |类别|快捷键|快捷方式说明|
-|--------------|--------------|--------------------------|
+|--------------|--------------| - |
 |最近使用的|@mru<br /><br /> 例如，`@mru font`|显示最多五个“最近使用的”项。|
 |菜单|@menu<br /><br /> 例如，`@menu font`|将搜索限定为菜单项。|
 |选项|@opt<br /><br /> 例如，`@opt font`|将搜索限定为“选项”对话框中的设置。|

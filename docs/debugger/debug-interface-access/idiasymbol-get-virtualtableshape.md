@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualtableshape |Microsoft 文档'
+title: 'Idiasymbol:: Get_virtualtableshape |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0a7d238b72ea6f3137aad9b5d5ff8a31659f8e
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 48c5bc66938d6139eaacf23c5f269c507800d68f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31481926"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871844"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
-检索虚拟表的用户定义的类型的类型的符号接口。  
+检索用户定义类型的虚拟表的类型的符号接口。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_virtualTableShape (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示的用户定义的类型的虚拟表对象。  
+ [out]返回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)对象，表示用户定义类型的虚拟表。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

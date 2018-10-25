@@ -15,12 +15,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 5ca68d0046e7dc46087fa6de3835bd6246bc58e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 07fb73b5a469cca5afc39160feae96f18ee37d86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267353"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873430"
 ---
 # <a name="supplying-undo-support-to-designers"></a>向设计器提供撤消支持
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,17 +31,17 @@ ms.locfileid: "49267353"
   
  需要撤消功能提供支持的设计器实现：  
   
--   通过实现的抽象基类提供撤消管理 <xref:System.ComponentModel.Design.UndoEngine>  
+- 通过实现的抽象基类提供撤消管理 <xref:System.ComponentModel.Design.UndoEngine>  
   
--   通过实现来支持提供持久性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>类。  
+- 通过实现来支持提供持久性和 CodeDOM<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>类。  
   
- 有关编写使用设计器的详细信息[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，请参阅[扩展设计时支持](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)。  
+  有关编写使用设计器的详细信息[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]，请参阅[扩展设计时支持](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)。  
   
- [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供的默认撤消基础结构：  
+  [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]提供的默认撤消基础结构：  
   
--   提供撤消管理实现通过<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>和<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>类。  
+- 提供撤消管理实现通过<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>和<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>类。  
   
--   提供持久性和 CodeDOM 支持通过默认<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>实现。  
+- 提供持久性和 CodeDOM 支持通过默认<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>和<xref:System.ComponentModel.Design.IComponentChangeService>实现。  
   
 ## <a name="obtaining-undo-support-automatically"></a>自动获取撤消支持  
  在中创建任何设计器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]具有自动和完全撤消支持 if、 设计器：  
@@ -68,44 +68,44 @@ ms.locfileid: "49267353"
   
  Visual Studio 提供了以下功能，到设计器撤消：  
   
--   跨多个设计器的链接的撤消功能。  
+- 跨多个设计器的链接的撤消功能。  
   
--   其父级进行交互的子单元的设计器中可以通过实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>并<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>上<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>。  
+- 其父级进行交互的子单元的设计器中可以通过实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>并<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>上<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>。  
   
- 环境 SDK 提供 CodeDOM 和持久性支持通过提供：  
+  环境 SDK 提供 CodeDOM 和持久性支持通过提供：  
   
--   <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 作为的实现 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+- <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> 作为的实现 <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
- 一个<xref:System.ComponentModel.Design.IComponentChangeService>提供的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]' 设计宿主。  
+  一个<xref:System.ComponentModel.Design.IComponentChangeService>提供的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]' 设计宿主。  
   
 ## <a name="using-the-environment-sdk-features-to-supply-undo-support"></a>使用环境 SDK 功能来提供撤消支持  
  若要获取撤消支持，实现设计器的对象必须：  
   
--   实例化和初始化的实例<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>类的有效<xref:System.IServiceProvider>实现。  
+- 实例化和初始化的实例<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>类的有效<xref:System.IServiceProvider>实现。  
   
--   这<xref:System.IServiceProvider>类必须提供以下服务：  
+- 这<xref:System.IServiceProvider>类必须提供以下服务：  
   
-    -   <xref:System.ComponentModel.Design.IDesignerHost>。  
+  -   <xref:System.ComponentModel.Design.IDesignerHost>。  
   
-    -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
-         使用设计器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CodeDOM 序列化可能选择使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>随附[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]作为其实现的<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。  
+       使用设计器[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]CodeDOM 序列化可能选择使用<xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService>随附[!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]作为其实现的<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>。  
   
-         在这种情况下，<xref:System.IServiceProvider>类提供给<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>构造函数应返回此对象的实现作为<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>类。  
+       在这种情况下，<xref:System.IServiceProvider>类提供给<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>构造函数应返回此对象的实现作为<xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>类。  
   
-    -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
   
-         使用默认的设计器<xref:System.ComponentModel.Design.DesignSurface>提供的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]设计宿主可以保证的默认实现<xref:System.ComponentModel.Design.IComponentChangeService>类。  
+       使用默认的设计器<xref:System.ComponentModel.Design.DesignSurface>提供的[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]设计宿主可以保证的默认实现<xref:System.ComponentModel.Design.IComponentChangeService>类。  
   
- 设计器实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>如果基于的撤消机制可自动跟踪更改：  
+  设计器实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>如果基于的撤消机制可自动跟踪更改：  
   
--   通过进行属性更改<xref:System.ComponentModel.TypeDescriptor>对象。  
+- 通过进行属性更改<xref:System.ComponentModel.TypeDescriptor>对象。  
   
--   <xref:System.ComponentModel.Design.IComponentChangeService> 提交可撤消更改时，手动生成事件。  
+- <xref:System.ComponentModel.Design.IComponentChangeService> 提交可撤消更改时，手动生成事件。  
   
--   在设计器上的进行修改的上下文中创建<xref:System.ComponentModel.Design.DesignerTransaction>。  
+- 在设计器上的进行修改的上下文中创建<xref:System.ComponentModel.Design.DesignerTransaction>。  
   
--   在设计器中选择显式创建撤消单元使用的实现所提供的标准的撤消单元<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 的特定于实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，它派生<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>，还提供了这两者的实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。  
+- 在设计器中选择显式创建撤消单元使用的实现所提供的标准的撤消单元<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>或 Visual Studio 的特定于实现<xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit>，它派生<xref:System.ComponentModel.Design.UndoEngine.UndoUnit>，还提供了这两者的实现<xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>和<xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit>。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:System.ComponentModel.Design.UndoEngine>   

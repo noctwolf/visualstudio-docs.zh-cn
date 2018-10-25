@@ -15,12 +15,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 837e004dfffbaba5eac154b195ff4ed8c382430d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f4c5a8a4d090a7603f83f6fb3c3d9deb0c67d5f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218343"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846832"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,17 +67,17 @@ ms.locfileid: "49218343"
 ###  <a name="BKMK_Run_tests"></a>运行测试  
  你可以运行解决方案中的所有测试、组中的所有测试或你选择的一组测试。 执行下列操作之一：  
   
--   若要运行解决方案中的所有测试，请选择 **“全部运行”**。  
+- 若要运行解决方案中的所有测试，请选择 **“全部运行”**。  
   
--   若要运行默认组中的所有测试，请选择 **“运行...”** ，然后选择菜单上的组。  
+- 若要运行默认组中的所有测试，请选择 **“运行...”** ，然后选择菜单上的组。  
   
--   选择你希望运行的各个测试，打开选定测试的上下文菜单，然后选择 **“运行选定的测试”**。  
+- 选择你希望运行的各个测试，打开选定测试的上下文菜单，然后选择 **“运行选定的测试”**。  
   
--   如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
+- 如果各个测试没有依赖项会阻止其以任意顺序运行，请使用工具栏上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") 切换按钮来启用执行并行测试。 这可以显著降低运行所有测试所需的时间。  
   
- 测试运行时，测试资源管理器窗口顶部的“通过/失败”条动态显示。 测试运行结束时，如果所有测试均通过，则“通过/失败”条将变为绿色；如果有测试失败，则变为红色。  
+  测试运行时，测试资源管理器窗口顶部的“通过/失败”条动态显示。 测试运行结束时，如果所有测试均通过，则“通过/失败”条将变为绿色；如果有测试失败，则变为红色。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ###  <a name="BKMK_Run_tests_after_every_build"></a>每次生成后运行测试  
   
@@ -102,19 +102,19 @@ ms.locfileid: "49218343"
   
  测试细节窗格中显示以下信息：  
   
--   源文件名和测试方法的行号。  
+- 源文件名和测试方法的行号。  
   
--   测试的状态。  
+- 测试的状态。  
   
--   运行测试方法所花的时间。  
+- 运行测试方法所花的时间。  
   
- 如果测试失败，细节窗格中还将显示：  
+  如果测试失败，细节窗格中还将显示：  
   
--   测试的单元测试框架返回的消息。  
+- 测试的单元测试框架返回的消息。  
   
--   测试失败时的堆栈跟踪。  
+- 测试失败时的堆栈跟踪。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+  ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a>查看测试方法的源代码  
  若要在 Visual Studio 编辑器中显示测试方法的源代码，请选择该测试，然后在上下文菜单中选择 **“打开测试”** （键盘：按 F12）。  
@@ -197,13 +197,13 @@ TEST_METHOD(Method1)
   
  按其他条件进行筛选：  
   
-1.  打开搜索框右侧的下拉列表。  
+1. 打开搜索框右侧的下拉列表。  
   
-2.  选择新条件。  
+2. 选择新条件。  
   
-3.  在引号中输入筛选值。  
+3. 在引号中输入筛选值。  
   
- ![在测试资源管理器中筛选测试](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
+   ![在测试资源管理器中筛选测试](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
 >  搜索不区分大小，并将指定字符串与条件值的任何部分匹配。  
@@ -255,16 +255,16 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Debug_unit_tests"></a>调试单元测试  
  可以使用测试资源管理器为你的测试启动调试会话。 使用 Visual Studio 调试程序无缝地逐句通过代码将使你在单元测试和所测试项目之间来回反复。 若要开始调试：  
   
-1.  在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
+1. 在 Visual Studio 编辑器中，在想要调试的一个或多个测试方法中设置断点。  
   
-    > [!NOTE]
-    >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
+   > [!NOTE]
+   >  因为测试方法可以按任何顺序运行，请在你想要调试的所有测试方法中设置断点。  
   
-2.  在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。  
+2. 在测试资源管理器中，选择测试方法，然后选择上下文菜单中的 **“调试选定的测试”** 。  
   
- 有关该调试器的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。  
+   有关该调试器的详细信息，请参阅[在 Visual Studio 中进行调试](../debugger/debugging-in-visual-studio.md)。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ###  <a name="BKMK_Diagnose_test_method_performance_issues"></a>诊断测试方法性能问题  
  若要诊断测试方法花费过多时间的原因，请在测试资源管理器中选择该方法，然后在上下文菜单中选择“配置文件”。 请参阅[性能资源管理器](../profiling/performance-explorer.md)。  
@@ -278,19 +278,19 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  在解决方案中为测试方法运行代码覆盖率：  
   
-1.  在 Visual Studio 菜单上选择 **“测试”** ，然后选择 **“分析代码覆盖率”**。  
+1. 在 Visual Studio 菜单上选择 **“测试”** ，然后选择 **“分析代码覆盖率”**。  
   
-2.  从子菜单中选择下列命令之一：  
+2. 从子菜单中选择下列命令之一：  
   
-    -   **选定的测试** 运行你在测试资源管理器中选择的测试方法。  
+   -   **选定的测试** 运行你在测试资源管理器中选择的测试方法。  
   
-    -   **所有测试** 在解决方案中运行所有测试方法。  
+   -   **所有测试** 在解决方案中运行所有测试方法。  
   
- 代码覆盖率结果窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。  
+   代码覆盖率结果窗口显示行、函数、类、命名空间和模块执行的产品代码块的百分比。  
   
- 有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
+   有关详细信息，请参阅[使用代码覆盖率确定正在测试的代码数量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
- ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
+   ![返回页首](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [目录](#BKMK_Contents)  
   
 ##  <a name="BKMK_External_resources"></a> 外部资源  
   

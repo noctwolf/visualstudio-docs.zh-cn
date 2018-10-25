@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ebca3b412b631634e45846ca15f00f31126f5
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 9e8ad899d7cf62b2d874d5dc4971c8e7ad7f950a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282447"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829754"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何： 检索在联机 ClickOnce 应用程序中的查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值*的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：  
@@ -57,17 +57,17 @@ ms.locfileid: "44282447"
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>使用 MageUI.exe 在 ClickOnce 应用程序中启用查询字符串传递  
   
-1.  打开 .NET 命令提示符并输入：  
+1. 打开 .NET 命令提示符并输入：  
   
-    ```cmd  
-    MageUI  
-    ```  
+   ```cmd  
+   MageUI  
+   ```  
   
-2.  在“文件”  菜单中，选择“打开” ，然后打开 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。  
+2. 在“文件”  菜单中，选择“打开” ，然后打开 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的部署清单（这是以 `.application` 扩展名结尾的文件）。  
   
-3.  在左侧导航窗口中选择“部署选项”  面板，然后选中“允许向应用程序传递 URL 参数”  复选框。  
+3. 在左侧导航窗口中选择“部署选项”  面板，然后选中“允许向应用程序传递 URL 参数”  复选框。  
   
-4.  在“文件”  菜单中选择“保存” 。  
+4. 在“文件”  菜单中选择“保存” 。  
   
 > [!NOTE]
 >  或者，可以在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]中启用查询字符串传递。 选中“允许向应用程序传递 URL 参数”  复选框（可以通过打开“项目属性” ，选择“发布”  选项卡，单击“选项”  按钮，然后选择“清单” 来找到该复选框）。  

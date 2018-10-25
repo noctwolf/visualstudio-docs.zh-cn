@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dee03e2cd7b1c22faf5f1b06ec5efe763bad1387
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8a9a879db7c1d24dbfd8312dbc75d9b0bbaa8803
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118749"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844397"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练： 创建基本站点定义项目
   本演练演示如何创建包含与上它的某些控件的可视 Web 部件的基本网站定义。 为清楚起见，您创建的可视化 Web 部件有仅几个控件。 但是，可以创建包含更多的功能的更复杂的 SharePoint 网站定义。  
   
  本演练演示了下列任务：  
   
--   通过创建站点定义[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]项目模板。  
+- 通过创建站点定义[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]项目模板。  
   
--   在 SharePoint 中使用的站点定义创建 SharePoint 站点。  
+- 在 SharePoint 中使用的站点定义创建 SharePoint 站点。  
   
--   将可视 Web 部件添加到解决方案。  
+- 将可视 Web 部件添加到解决方案。  
   
--   通过将新的可视 Web 部件添加到其自定义站点的 default.aspx 页。  
+- 通过将新的可视 Web 部件添加到其自定义站点的 default.aspx 页。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -52,29 +52,29 @@ ms.locfileid: "37118749"
   
 #### <a name="to-create-a-site-definition-project"></a>若要创建站点定义项目  
   
-1.  在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果您的 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上，选择**文件** > **新项目**。  
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果您的 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上，选择**文件** > **新项目**。  
   
-     此时将出现 “新建项目” 对话框。  
+    此时将出现 “新建项目” 对话框。  
   
-2.  展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
+2. 展开**Visual C#** 节点或**Visual Basic**节点，展开**SharePoint**节点，然后选择**2010年**节点。  
   
-3.  在中**模板**列表中，选择**SharePoint 2010 项目**模板。  
+3. 在中**模板**列表中，选择**SharePoint 2010 项目**模板。  
   
-4.  在中**名称**框中，输入**TestSiteDef**，然后选择**确定**按钮。  
+4. 在中**名称**框中，输入**TestSiteDef**，然后选择**确定**按钮。  
   
-     **SharePoint 自定义向导**出现。  
+    **SharePoint 自定义向导**出现。  
   
-5.  上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 站点的 URL 或使用默认位置 (http://*系统名称*/)。  
+5. 上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 站点的 URL 或使用默认位置 (http://<em>系统名称</em>/)。  
   
-6.  在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
+6. 在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
   
-     站点定义的所有项目必须都部署为场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
+    站点定义的所有项目必须都部署为场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  选择**完成**按钮。  
+7. 选择**完成**按钮。  
   
-     项目将出现在**解决方案资源管理器**。  
+    项目将出现在**解决方案资源管理器**。  
   
-8.  在中**解决方案资源管理器**，选择项目节点，然后，在菜单栏上选择**项目** > **添加新项**。  
+8. 在中**解决方案资源管理器**，选择项目节点，然后，在菜单栏上选择**项目** > **添加新项**。  
   
 9. 下**Visual C#** 或**Visual Basic**，展开**SharePoint**节点，然后选择**2010年**节点。  
   

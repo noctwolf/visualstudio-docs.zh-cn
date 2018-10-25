@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_libraryname |Microsoft 文档'
+title: 'Idiasymbol:: Get_libraryname |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 631104cb6328b715f18b7afd564a627f275a503d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: d290849d4bf0dd07f53f60060623d457e4146de4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31464194"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951153"
 ---
 # <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-检索从其加载对象的库或对象文件的文件名称。  
+检索加载该对象的库或对象文件的文件名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -34,13 +34,13 @@ HRESULT get_libraryName (
   
 #### <a name="parameters"></a>参数  
  `pRetVal`  
- [out]返回从其加载对象的库或对象文件的文件名称。  
+ [out]返回从中加载该对象的库或对象文件的文件名。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回`S_FALSE`或错误代码。  
   
 > [!NOTE]
->  返回值`S_FALSE`意味着属性不是可用于符号。  
+>  返回值为`S_FALSE`表示该属性不是可用于符号。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

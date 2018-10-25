@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: e38514b2c65fb5db557d49b1ae2a7daf0b932dd9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c80404320f399139a18d863d71147d33a11ce86d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277857"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885195"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +52,11 @@ ms.locfileid: "49277857"
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>在只读模式下可执行的更改  
  如果你在一个不支持创建模型的 Visual Studio 中打开模型及其关系图，则你无法更改模型。 也就是说，你无法更改显示在关系图或模型资源管理器上的元素和关系。 但是，你可以对关系图的布局进行某些更改：  
   
--   重新排列关系图上的形状和连接符。  
+- 重新排列关系图上的形状和连接符。  
   
--   展开和折叠形状  
+- 展开和折叠形状  
   
- 你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送已更新 **.layout**文件。  
+  你可以保存这些更改。 如果你想要使所做的更改对其他用户可见，则必须至少发送已更新 **.layout**文件。  
   
 ##  <a name="RelatedTopics"></a> 相关的主题  
   

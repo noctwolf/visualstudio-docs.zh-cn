@@ -15,12 +15,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 142e39a9d1b826edaaf519eea2ecaf8dfb72b5ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: abb37b7bdfbc01affea63aa90d35b3702dcb4719
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208645"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907919"
 ---
 # <a name="code-generation-in-a-build-process"></a>生成过程中的代码生成
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,11 +160,11 @@ Visual Studio 解决方案生成过程的一部分，可以调用文本转换。
 
 在 `AfterTransform` 中，你可以引用文件列表：
 
--   GeneratedFiles - 由过程写入的文件的列表。 对于覆盖现有只读文件的文件，%(GeneratedFiles.ReadOnlyFileOverwritten) 为 true。 可将这些文件签出源代码管理。
+- GeneratedFiles - 由过程写入的文件的列表。 对于覆盖现有只读文件的文件，%(GeneratedFiles.ReadOnlyFileOverwritten) 为 true。 可将这些文件签出源代码管理。
 
--   NonGeneratedFiles - 未覆盖的只读文件的列表。
+- NonGeneratedFiles - 未覆盖的只读文件的列表。
 
- 例如，定义任务以签出 GeneratedFiles。
+  例如，定义任务以签出 GeneratedFiles。
 
 ## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath 和 OutputFileName
 
@@ -255,7 +255,6 @@ Visual Studio 宏（如 $(SolutionDir）在 MSBuild 中不起作用。 你可以
       <Value>$(myLibFolder)</Value>
     </T4ParameterValues>
   </ItemGroup>
-
 ```
 
 现在，你可以在 Assembly 和 Include 指令中使用项目属性：

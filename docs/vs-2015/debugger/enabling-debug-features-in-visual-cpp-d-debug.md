@@ -30,25 +30,25 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 452cf6ac386affb886e9a318e8686eea85e59d66
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e512620e1af8da85039ed403d4280568101fbe57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237141"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49829256"
 ---
 # <a name="enabling-debug-features-in-visual-c-ddebug"></a>在 Visual C++ 中启用调试功能 (/D_DEBUG)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在中[!INCLUDE[vcprvc](../includes/vcprvc-md.md)]，调试功能，如当符号重新编译程序时，启用断言 **_DEBUG**定义。 您可以定义 **_DEBUG**中两种方式之一：  
   
--   指定 **#define _DEBUG**在源代码中或  
+- 指定 **#define _DEBUG**在源代码中或  
   
--   指定 **/D_DEBUG**编译器选项。 (如果在使用向导，Visual Studio 中创建你的项目 **/D_DEBUG**调试配置中自动定义。)  
+- 指定 **/D_DEBUG**编译器选项。 (如果在使用向导，Visual Studio 中创建你的项目 **/D_DEBUG**调试配置中自动定义。)  
   
- 当 **_DEBUG**是定义，则编译器将编译包围的代码的部分 **#ifdef _DEBUG**和`#endif`。  
+  当 **_DEBUG**是定义，则编译器将编译包围的代码的部分 **#ifdef _DEBUG**和`#endif`。  
   
- MFC 程序的调试配置必须与 MFC 库的调试版本链接。 MFC 标头文件确定要链接的 MFC 库的正确版本根据已定义，如符号 **_DEBUG**并 **_UNICODE**。 有关详细信息，请参阅[MFC 库版本](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)。  
+  MFC 程序的调试配置必须与 MFC 库的调试版本链接。 MFC 标头文件确定要链接的 MFC 库的正确版本根据已定义，如符号 **_DEBUG**并 **_UNICODE**。 有关详细信息，请参阅[MFC 库版本](http://msdn.microsoft.com/library/3d7a8ae1-e276-4cf8-ba63-360c2f85ad0e)。  
   
 ## <a name="see-also"></a>请参阅  
  [调试本机代码](../debugger/debugging-native-code.md)   

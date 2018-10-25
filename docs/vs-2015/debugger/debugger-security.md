@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9d446cfa4eca86ff4657fc9a8741aa965fd43de
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: ed03ae8ace6fe96c579d324422403d69e2248687
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290493"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881958"
 ---
 # <a name="debugger-security"></a>调试器安全
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "49290493"
 ### <a name="managed-debugging-security"></a>托管调试安全  
  下面是一些适用于所有托管调试的常规建议。  
   
--   附加到非信任用户的进程时要小心：当这样做时，你假定它是可以信赖的。 尝试附加到非信任用户的进程时，将出现一个安全警告对话框确认，询问是否希望附加到该进程。 “信任用户”包括你以及在安装了 .NET Framework 的计算机上通常定义的一组标准用户，如“aspnet” 、“localsystem” 、“networkservice” 和“localservice” 。 有关详细信息，请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
+- 附加到非信任用户的进程时要小心：当这样做时，你假定它是可以信赖的。 尝试附加到非信任用户的进程时，将出现一个安全警告对话框确认，询问是否希望附加到该进程。 “信任用户”包括你以及在安装了 .NET Framework 的计算机上通常定义的一组标准用户，如“aspnet” 、“localsystem” 、“networkservice” 和“localservice” 。 有关详细信息，请参阅[安全警告： 附加到不受信任的用户所拥有的进程可能很危险。以下信息看上去可疑或者你不确定，如果未附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
   
--   从 Internet 下载项目并将其加载到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]时要小心。 即使没有进行调试这样做也很冒险。 这样做时，你假定该项目和它包含的代码是可以信赖的。  
+- 从 Internet 下载项目并将其加载到 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]时要小心。 即使没有进行调试这样做也很冒险。 这样做时，你假定该项目和它包含的代码是可以信赖的。  
   
- 有关更多信息，请参见 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
+  有关更多信息，请参见 [Debugging Managed Code](../debugger/debugging-managed-code.md)。  
   
 ### <a name="remote-debugging-security"></a>远程调试安全  
  本地调试通常比远程调试更安全。 远程调试增加了可查看的总表面积。  
@@ -79,11 +79,11 @@ ms.locfileid: "49290493"
 ### <a name="symbols-and-source-code"></a>符号和源代码  
  两个需要考虑安全的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 工具如下：  
   
--   源服务器，用于从源代码存储库中提供源代码的版本。 当没有程序源代码的当前版本时它很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。  
+- 源服务器，用于从源代码存储库中提供源代码的版本。 当没有程序源代码的当前版本时它很有用。 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。  
   
--   符号服务器，用于在系统调用期间提供调试崩溃所需的符号。  
+- 符号服务器，用于在系统调用期间提供调试崩溃所需的符号。  
   
- 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+  请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
 ## <a name="see-also"></a>请参阅  
  [调试器设置和准备](../debugger/debugger-settings-and-preparation.md)   

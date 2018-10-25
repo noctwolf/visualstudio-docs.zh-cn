@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 370bb8d9194ff442a3e8674a95b67f4eec595d60
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 0b2d44d0fa50a4d733f62845d54116cceb2f2016
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370752"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49865344"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用测试设置收集诊断信息
 
@@ -42,7 +42,7 @@ ms.locfileid: "46370752"
 下表概述了将诊断数据适配器配置为用于本地或远程计算机角色的各种方法。
 
 |测试设置中使用的诊断数据适配器|本地计算机上的手动测试|自动测试|手动测试：使用角色集和环境收集数据|说明|
-|----------------------------------------------------------|-----------------------------------|---------------------|------------------------------------------------------------------------------|-----------|
+|-|-|-|-|-|
 |用于 IntelliTrace 和测试影响的 ASP.NET 客户端代理：此代理允许你为 IntelliTrace 和测试影响诊断数据适配器收集有关从客户端到 Web 服务器的 http 调用的信息。|是|是|是|-   只有在为客户端角色选择了 IntelliTrace 或测试影响诊断数据适配器的情况下，才使用此设置。|
 |ASP.NET 探查器：可以创建包含 ASP.NET 分析的测试设置，该分析收集 ASP.NET Web 应用程序的性能数据。|否|是（请参见“注释”）|否|-   仅当在 Visual Studio 中运行负载测试时，才支持诊断数据适配器。|
 |**代码覆盖率：** 可以创建包含代码覆盖率信息的测试设置，该信息用于调查测试覆盖的代码范围。|否|是（请参见“注释”）|否|-   仅当在运行自动测试的计算机上通过 Visual Studio 或 mstest.exe 运行该测试时，才能使用代码覆盖率。 不支持远程收集。<br />-   如果还将测试设置配置为收集 IntelliTrace 信息，则收集代码覆盖率数据不起作用。 **注意：** 此诊断数据适配器仅适用于 Visual Studio 测试设置。 不适用于 Microsoft 测试管理器中的测试设置。 此外，此适配器用于与 Visual Studio 2010 测试项目的兼容性。 **注意：** 为了实现兼容，当自动测试从 Microsoft 测试管理器运行或在 Visual Studio 中的远程测试代理（使用旧的 MSTest 运行程序）上运行时，将应用代码覆盖率。|

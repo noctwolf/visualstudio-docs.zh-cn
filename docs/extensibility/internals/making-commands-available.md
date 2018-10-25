@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7344fe7227f6fa7afd00684a99d8172bad8736
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: c1292dc3879effa53f3b4a41b87374a3a5f46ff0
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39510932"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857128"
 ---
 # <a name="making-commands-available"></a>提供可用命令
 当多个 Vspackage 添加到 Visual Studio 中时，用户界面 (UI) 可能会变得 overcrowded 命令。 您可以编写您的程序包以帮助减少此问题，请按如下所示：
@@ -54,12 +54,13 @@ ms.locfileid: "39510932"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 监视而导致的用户操作，例如加载项目或编辑转到生成的更改。 发生更改时，会自动修改 IDE 的外观。 下表显示了四种主要上下文的 IDE 更改[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]监视器。
 
-|上下文的类型|描述|
-|---------------------|-----------------|
-|活动项目类型|对于大多数项目类型，这`GUID`值并作为 VSPackage 实现项目的 GUID 相同。 但是，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目使用的项目类型`GUID`作为值。|
-|活动窗口|通常情况下，这是建立键绑定的当前 UI 上下文的最后一个活动文档窗口。 但是，它也可能是一个工具窗口，有一个类似于内部 Web 浏览器的键绑定表。 对于多选项卡式文档窗口，如 HTML 编辑器，每个选项卡都有一个不同的命令上下文`GUID`。|
-|活动的语言服务|与当前显示在文本编辑器中的文件相关联的语言服务。|
-|活动工具窗口|工具窗口处于打开状态且具有焦点。|
+
+| 上下文的类型 | 描述 |
+|-------------------------| - |
+| 活动项目类型 | 对于大多数项目类型，这`GUID`值并作为 VSPackage 实现项目的 GUID 相同。 但是，[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]项目使用的项目类型`GUID`作为值。 |
+| 活动窗口 | 通常情况下，这是建立键绑定的当前 UI 上下文的最后一个活动文档窗口。 但是，它也可能是一个工具窗口，有一个类似于内部 Web 浏览器的键绑定表。 对于多选项卡式文档窗口，如 HTML 编辑器，每个选项卡都有一个不同的命令上下文`GUID`。 |
+| 活动的语言服务 | 与当前显示在文本编辑器中的文件相关联的语言服务。 |
+| 活动工具窗口 | 工具窗口处于打开状态且具有焦点。 |
 
  第五个主要的上下文区域是在 IDE 的 UI 状态。 由活动命令上下文标识 UI 上下文`GUID`s，按如下所示：
 

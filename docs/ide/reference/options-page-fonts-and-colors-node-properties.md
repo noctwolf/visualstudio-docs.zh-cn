@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cf39d9a01794e34a50d81489214bb006e4c6448
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 05724c81b9983414c4e0c86870b630e29c33ade3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31944682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926574"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>“选项”页 ->“字体和颜色”节点属性
 本文档介绍某个工具窗口的字体和颜色属性，该窗口注册显示在“选项”对话框“环境”类别中的”字体和颜色”下。 这支持可着色项组的动态特性，安装或卸载 VSPackages 时，这些特性可能会发生更改。
@@ -37,7 +37,7 @@ ms.locfileid: "31944682"
  `DTE.Properties("FontsAndColors", "Dialogs and Tool Windows")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |FontFamily|Get/Set (String)|要使用的字体名称，如“Courier New”。|
 |FontCharacterSet|Get/Set (<xref:EnvDTE.vsFontCharSet>)|<xref:EnvDTE.vsFontCharSet> 值，指定要使用的字符集的类型，例如希伯来语或俄语。|
 |FontSize|Get/Set (Short)|要使用的字体大小（以磅为单位）。 例如，10 或 12。|

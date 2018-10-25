@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 12363adb78c4fca7d5ef3416a2642a68a7c3eab7
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: e1101a3e21fa75a180ec2421cdce37aa40bc9656
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47860519"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49861275"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 域特定语言 (DSL) 是由其 DSL 定义文件定义，以及你可以编写任何自定义程序代码。 DSL 解决方案中的程序代码的大多数生成的此文件。
@@ -135,7 +135,7 @@ ms.locfileid: "47860519"
  通过键入关系图上或通过修改配置的角色多重性`Multiplicity`中的属性**属性**窗口。 下表描述此属性的设置。
 
 |重数类型|描述|
-|-----------------------|-----------------|
+|-|-|
 |0..* （从零到多个）|域类的每个实例可以有多个实例的关系的任何实例。|
 |0..1 (0 到 1)|域类的每个实例可以有多个实例的关系的任何实例。|
 |1..1 （一个）|域类的每个实例可以有关系的一个实例。 无法从任何角色类的实例来创建此关系的多个实例。 如果启用验证，则当角色类的任何实例都不具有关系的任何实例时，将出现验证错误。|

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3830f33879101a720a72276ff0c4b7425f46a83f
-ms.sourcegitcommit: 56ae5032d99d948aae0548ae318ca2bae97ea962
+ms.openlocfilehash: 3227b2f17932936e54c244f385a648c583677923
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39586347"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831921"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构 2.0 参考
 VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的文件格式。 此架构的 2.0 版支持的自定义类型和属性添加。  清单的架构是可扩展的。 清单加载程序将忽略 XML 元素和属性并不理解。  
@@ -41,7 +41,7 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
   
 -   `<Assets>` -此部分包含的所有资产包含在此包。 本部分中，没有此包不会呈现任何内容。  
   
--   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A>和<xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
+-   `<AnyElement>*` -清单架构的灵活性以允许任何其他元素。 由清单加载程序无法识别的任何子元素被称为扩展管理器 API 中多余的 XmlElement 对象。 使用这些子元素，VSIX 扩展可以在 Visual Studio 中运行的代码可以访问在运行时在清单文件中定义的其他数据。 请参见 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> 和 <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>。  
   
 ### <a name="metadata-element"></a>元数据元素  
  本部分是有关包、 其标识和公布信息的元数据。 `<Metadata>` 包含下列元素：  
@@ -162,33 +162,33 @@ VSIX 部署清单文件描述的 VSIX 包的内容。 由某一架构控制的�
 ### <a name="assets-element"></a>资产元素  
  此元素包含一系列`<Asset>`扩展或内容的每个元素的标记显示此包。  
   
--   `<Asset>` -此元素包含以下属性和元素：  
+- `<Asset>` -此元素包含以下属性和元素：  
   
-    -   `Type` 扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
+  - `Type` 扩展或此元素所表示的内容的类型。 每个`<Asset>`元素必须具有单个`Type`，但多个`<Asset>`元素可能具有相同`Type`。 根据命名空间约定，应为完全限定名称，表示此属性。 已知的类型包括：  
   
-        1.  Microsoft.VisualStudio.VsPackage  
+    1. Microsoft.VisualStudio.VsPackage  
   
-        2.  Microsoft.VisualStudio.MefComponent  
+    2. Microsoft.VisualStudio.MefComponent  
   
-        3.  Microsoft.VisualStudio.ToolboxControl  
+    3. Microsoft.VisualStudio.ToolboxControl  
   
-        4.  Microsoft.VisualStudio.Samples  
+    4. Microsoft.VisualStudio.Samples  
   
-        5.  Microsoft.VisualStudio.ProjectTemplate  
+    5. Microsoft.VisualStudio.ProjectTemplate  
   
-        6.  Microsoft.VisualStudio.ItemTemplate  
+    6. Microsoft.VisualStudio.ItemTemplate  
   
-        7.  Microsoft.VisualStudio.Assembly  
+    7. Microsoft.VisualStudio.Assembly  
   
-         可以创建自己的类型，并为其提供唯一名称。 在 Visual Studio 内部的运行时，你的代码可枚举并通过扩展管理器 API 访问这些自定义的类型。  
+       可以创建自己的类型，并为其提供唯一名称。 在 Visual Studio 内部的运行时，你的代码可枚举并通过扩展管理器 API 访问这些自定义的类型。  
   
-    -   `Path` -包含资产的包中文件夹的文件的相对路径。  
+  - `Path` -包含资产的包中文件夹的文件的相对路径。  
     
-    -   `TargetVersion` -给定的资产适用的版本范围。 用于传送到不同版本的 Visual Studio 资产的多个版本。 需要 Visual Studio 2017.3 或更高版本才能生效。
+  - `TargetVersion` -给定的资产适用的版本范围。 用于传送到不同版本的 Visual Studio 资产的多个版本。 需要 Visual Studio 2017.3 或更高版本才能生效。
   
-    -   `AnyAttribute*` 的在运行时作为名称 / 值对字典的路由公开的属性开放式集。  
+  - `AnyAttribute*` 的在运行时作为名称 / 值对字典的路由公开的属性开放式集。  
   
-         `<AnyElement>*` 的之间允许任何结构化的内容`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。  
+     `<AnyElement>*` 的之间允许任何结构化的内容`<Asset>`开始和结束标记。 所有元素都公开为一系列 XmlElement 对象。 VSIX 扩展可以在清单文件中定义结构化的类型特定的元数据，并且在运行时枚举它们。  
   
 ### <a name="sample-manifest"></a>示例清单  
   

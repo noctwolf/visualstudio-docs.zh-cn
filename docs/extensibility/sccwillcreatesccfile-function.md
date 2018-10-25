@@ -1,5 +1,5 @@
 ---
-title: SccWillCreateSccFile 函数 |Microsoft 文档
+title: SccWillCreateSccFile 函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: af6da09badf0ffea4846d35fe00b4ca146243d64
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 6723eed8d29df62b2016a851bd69ae0e53a6453c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31137049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49927627"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函数
-此函数可确定源代码管理插件是否支持 MSSCCPRJ 创建。每个给定文件 SCC 文件。  
+此函数确定源代码管理插件是否支持 MSSCCPRJ 创建。每个给定文件的源代码管理文件。  
   
 ## <a name="syntax"></a>语法  
   
@@ -38,7 +38,7 @@ SCCRTN SccWillCreateSccFile(
   
 #### <a name="parameters"></a>参数  
  pContext  
- [in]源控件插件的上下文指针。  
+ [in]源控件插件上下文指针。  
   
  nFiles  
  [in]文件名称中包含的数量`lpFileNames`数组的长度以及`pbSccFiles`数组。  
@@ -47,20 +47,20 @@ SCCRTN SccWillCreateSccFile(
  [in]若要检查的完全限定的文件名称的数组 （数组必须由调用方已分配）。  
   
  pbSccFiles  
- [在中，out]要在其中存储结果的数组。  
+ [in、 out]要在其中存储结果的数组。  
   
 ## <a name="return-value"></a>返回值  
- 此函数的源代码控制插件实现应返回以下值之一：  
+ 此函数的源控制插件实现应返回以下值之一：  
   
-|值|描述|  
+|“值”|描述|  
 |-----------|-----------------|  
 |SCC_OK|成功。|  
-|SCC_E_INVALIDFILEPATH|其中一个数组中的路径无效。|  
-|SCC_E_NONSPECIFICERROR|非特定的失败。|  
+|SCC_E_INVALIDFILEPATH|一个数组中的路径是无效的。|  
+|SCC_E_NONSPECIFICERROR|非特定故障。|  
   
 ## <a name="remarks"></a>备注  
- 使用的文件，以确定如果源代码管理插件在中提供支持 MSSCCPRJ 列表调用此函数。SCC 文件为每个给定文件 （针对 MSSCCPRJ 的详细信息。SCC 文件，请参阅[MSSCCPRJ。SCC 文件](../extensibility/mssccprj-scc-file.md))。 源控件插件可以声明它们是否具有创建 MSSCCPRJ 的功能。通过声明的 SCC 文件`SCC_CAP_SCCFILE`在初始化过程。 插件返回`TRUE`或`FALSE`在每个文件`pbSccFiles`数组以指示哪些给定文件具有 MSSCCPRJ。SCC 支持。 如果该插件从函数返回成功代码，将遵循返回数组中的值。 在失败时，该数组将被忽略。  
+ 使用一组文件，以确定是否 MSSCCPRJ 中支持的源代码管理插件调用此函数。SCC 文件为每个给定文件 （针对 MSSCCPRJ 的详细信息。SCC 文件，请参阅[MSSCCPRJ。SCC 文件](../extensibility/mssccprj-scc-file.md))。 源代码管理插件可以声明其是否具有创建 MSSCCPRJ 的功能。SCC 文件通过声明`SCC_CAP_SCCFILE`在初始化过程中。 该插件返回`TRUE`或`FALSE`为每个文件`pbSccFiles`数组指示哪些给定文件具有 MSSCCPRJ。SCC 的支持。 如果该插件从函数返回成功代码，将遵循返回数组中的值。 在失败时，该数组将被忽略。  
   
-## <a name="see-also"></a>另请参阅  
- [源控件插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>请参阅  
+ [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)   
  [MSSCCPRJ.SCC 文件](../extensibility/mssccprj-scc-file.md)

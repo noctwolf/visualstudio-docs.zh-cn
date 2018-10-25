@@ -25,12 +25,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ddc0af7daecaeb64586d84e210180d7025ad81
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49301387"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49850511"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,21 +49,21 @@ ms.locfileid: "49301387"
  在编辑器中用下划线标出错误  
  标识代码中的生成错误。 选中此选项后，不同颜色的波浪下划线具有不同的特定含义：  
   
--   分析错误为红色。  
+- 分析错误为红色。  
   
--   生成错误为蓝色。  
+- 生成错误为蓝色。  
   
--   生成警告为绿色。  
+- 生成警告为绿色。  
   
--   无效的[编辑并继续](../../debugger/edit-and-continue.md)编辑为紫色。  
+- 无效的[编辑并继续](../../debugger/edit-and-continue.md)编辑为紫色。  
   
- 将指针移到用下划线标出的代码段，可查看包含错误相关信息的工具提示。  
+  将指针移到用下划线标出的代码段，可查看包含错误相关信息的工具提示。  
   
- 显示实时语义错误  
- 标识某些没有显式编译的编译错误，例如，声明和使用未知类型或引用未知属性。  
+  显示实时语义错误  
+  标识某些没有显式编译的编译错误，例如，声明和使用未知类型或引用未知属性。  
   
- 突出显示对光标下符号的引用  
- 光标定位在符号内，或单击某个符号时，将突出显示代码文件中该符号的所有实例。  
+  突出显示对光标下符号的引用  
+  光标定位在符号内，或单击某个符号时，将突出显示代码文件中该符号的所有实例。  
   
 ## <a name="refactoring"></a>重构  
  验证重构结果  

@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 522a9035bc272d643ae3277e5471f0d67baedcde
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225233"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823497"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化 TableAdapter 查询
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,41 +65,41 @@ ms.locfileid: "49225233"
   
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>将查询添加到现有数据绑定窗体  
   
-1.  在“Windows 窗体设计器”中打开窗体。  
+1. 在“Windows 窗体设计器”中打开窗体。  
   
-2.  上**数据**菜单中，选择**添加查询**或**数据智能标记**。  
+2. 上**数据**菜单中，选择**添加查询**或**数据智能标记**。  
   
-    > [!NOTE]
-    >  如果**添加查询**上不可用**数据**菜单中，选择要添加到参数化，显示的数据源，在窗体上的控件。 例如，如果窗体在 <xref:System.Windows.Forms.DataGridView> 控件中显示数据，则选择该控件。 如果窗体在各个控件中显示数据，则选择任意数据绑定控件。  
+   > [!NOTE]
+   >  如果**添加查询**上不可用**数据**菜单中，选择要添加到参数化，显示的数据源，在窗体上的控件。 例如，如果窗体在 <xref:System.Windows.Forms.DataGridView> 控件中显示数据，则选择该控件。 如果窗体在各个控件中显示数据，则选择任意数据绑定控件。  
   
-3.  在中**选择数据源表**区域中，选择您要的 tablethat 添加到参数化。  
+3. 在中**选择数据源表**区域中，选择您要的 tablethat 添加到参数化。  
   
-4.  中键入一个名称**新的查询名称**框如果要创建一个新的查询。  
+4. 中键入一个名称**新的查询名称**框如果要创建一个新的查询。  
   
-     或  
+    或  
   
-     中选择一个查询**现有查询名称**框。  
+    中选择一个查询**现有查询名称**框。  
   
-5.  在中**查询文本**框中，键入不带参数的查询。  
+5. 在中**查询文本**框中，键入不带参数的查询。  
   
-6.  选择**确定**。  
+6. 选择**确定**。  
   
-     一个控件用于输入参数和一个**负载**按钮添加到窗体中<xref:System.Windows.Forms.ToolStrip>控件。  
+    一个控件用于输入参数和一个**负载**按钮添加到窗体中<xref:System.Windows.Forms.ToolStrip>控件。  
   
- TableAdapter 参数您想要的记录没有当前值的查询可以分配 null 值。 例如，考虑下面的查询具有`ShippedDate`中的参数及其`WHERE`子句：  
+   TableAdapter 参数您想要的记录没有当前值的查询可以分配 null 值。 例如，考虑下面的查询具有`ShippedDate`中的参数及其`WHERE`子句：  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+   `SELECT CustomerID, OrderDate, ShippedDate`  
   
- `FROM Orders`  
+   `FROM Orders`  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+   `WHERE (ShippedDate = @ShippedDate) OR`  
   
- `(ShippedDate IS NULL)`  
+   `(ShippedDate IS NULL)`  
   
- 如果这是 TableAdapter 的查询，则可以查询尚未发运用下面的代码的所有订单：  
+   如果这是 TableAdapter 的查询，则可以查询尚未发运用下面的代码的所有订单：  
   
- [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
- [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
+   [!code-csharp[VbRaddataTableAdapters#8](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Form2.cs#8)]
+   [!code-vb[VbRaddataTableAdapters#8](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Form2.vb#8)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>若要启用查询能够接受 null 值  
   

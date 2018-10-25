@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c8e82986d890f4d453190e1da6511c42dfe8866
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: b675b74ef843a9a6b186149d16086df2528eab57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468785"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49872637"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio"></a>演练： 调试并行应用程序在 Visual Studio 中
 本演练演示如何使用**并行任务**并**并行堆栈**窗口调试并行应用程序。 这些窗口有助于您了解和验证使用的代码的运行时行为[任务并行库 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)或[并发运行时](/cpp/parallel/concrt/concurrency-runtime)。 本演练提供了具有内置断点的代码示例。 本演练演示如何使用代码中断后**并行任务**并**并行堆栈**windows 来对其进行检查。  
@@ -63,25 +63,25 @@ ms.locfileid: "39468785"
   
 #### <a name="to-create-the-sample-project"></a>创建示例项目  
   
-1.  在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。  
+1. 在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。  
   
-2.  选择任一**Visual C#**， **Visual Basic**，或**Visual c + +**。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 显示在框架框中。  
+2. 选择任一**Visual C#**， **Visual Basic**，或**Visual c + +**。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] 显示在框架框中。  
   
-3.  下**Windows 桌面**，选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
+3. 下**Windows 桌面**，选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
   
-4.  在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。  
+4. 在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。  
   
-5.  将所选语言的以下代码粘贴到上述空代码文件中。  
+5. 将所选语言的以下代码粘贴到上述空代码文件中。  
   
- [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
- [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
- [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
+   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
+   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
+   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]  
   
-1.  上**文件**菜单上，单击**全部保存**。  
+6. 在“文件”  菜单上，单击“全部保存” 。  
   
-2.  上**构建**菜单上，单击**重新生成解决方案**。  
+7. 上**构建**菜单上，单击**重新生成解决方案**。  
   
-     请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。  
+    请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>使用“并行堆栈”窗口：“线程”视图  
  在“调试”菜单上，单击“启动调试”。 等待命中第一个断点。  

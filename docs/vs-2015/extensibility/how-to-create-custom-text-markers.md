@@ -15,58 +15,58 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 05c8e43d90837ec73f4d6674e35581eecc5d2e3e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 88828eb5abbb9a4e81d69bae9662c291cf5fd9b8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181618"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49885702"
 ---
 # <a name="how-to-create-custom-text-markers"></a>如何： 创建自定义文本标记
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 如果你想要创建自定义文本标记，以强调或组织代码，必须执行以下步骤：  
   
--   注册新文本标记，以便其他工具可以访问它  
+- 注册新文本标记，以便其他工具可以访问它  
   
--   提供的默认实现和文本标记的配置  
+- 提供的默认实现和文本标记的配置  
   
--   创建一个服务用于其他进程可用于使文本标记的使用  
+- 创建一个服务用于其他进程可用于使文本标记的使用  
   
- 有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)。  
+  有关如何将文本标记应用到某个区域的代码的详细信息，请参阅[如何： 使用文本标记](../extensibility/how-to-use-text-markers.md)。  
   
 ### <a name="to-register-a-custom-marker"></a>若要注册自定义标记  
   
-1.  创建一个注册表项，如下所示：  
+1. 创建一个注册表项，如下所示：  
   
-     HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID >*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID >*  
   
-     *\<MarkerGUID >* 是`GUID`用于标识要添加的标记  
+    <em>\<MarkerGUID ></em>是`GUID`用于标识要添加的标记  
   
-     *\<版本 >* 新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，例如 8.0  
+    *\<版本 >* 新版[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]，例如 8.0  
   
-     *\<PackageGUID >* 是实现自动化对象的 vspackage 的 GUID。  
+    *\<PackageGUID >* 是实现自动化对象的 vspackage 的 GUID。  
   
-    > [!NOTE]
-    >  根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
+   > [!NOTE]
+   >  根路径的 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* 初始化 Visual Studio shell 时，有关详细信息，请参阅时，可以使用备用根覆盖[命令行开关](../extensibility/command-line-switches-visual-studio-sdk.md)。  
   
-2.  创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID>*  
+2. 创建四个值下 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<版本 >* \Text Editor\External 标记\\*\<MarkerGUID>*  
   
-    -   (默认)  
+   -   (默认)  
   
-    -   服务  
+   -   服务  
   
-    -   DisplayName  
+   -   DisplayName  
   
-    -   Package  
+   -   Package  
   
-    -   `Default` 是 REG_SZ 类型的可选项。 设置时，该条目的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
+   -   `Default` 是 REG_SZ 类型的可选项。 设置时，该条目的值是包含一些有用的标识信息，例如"自定义文本标记"的字符串。  
   
-    -   `Service` 类型为 REG_SZ 的条目包含通过 proffering 提供自定义文本标记的服务的 GUID 字符串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+   -   `Service` 类型为 REG_SZ 的条目包含通过 proffering 提供自定义文本标记的服务的 GUID 字符串<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerTypeProvider>。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
-    -   `DisplayName` 类型为 REG_SZ 的条目包含自定义文本标记的名称的资源 ID。 格式为 #YYYY。  
+   -   `DisplayName` 类型为 REG_SZ 的条目包含自定义文本标记的名称的资源 ID。 格式为 #YYYY。  
   
-    -   `Package` 条目的类型 REG_SZ 包含`GUID`VSPackage 提供服务的服务下列出。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
+   -   `Package` 条目的类型 REG_SZ 包含`GUID`VSPackage 提供服务的服务下列出。 格式为 {XXXXXX XXXX XXXX XXXX XXXXXXXXX}。  
   
 ### <a name="to-create-a-custom-text-marker"></a>若要创建自定义文本标记  
   

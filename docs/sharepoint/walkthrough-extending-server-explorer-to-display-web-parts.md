@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 84060ed018059f4b067b4744465bf4116f72841b
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: dc6b015058445ddf35e5d247847a40d01e691047
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634733"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915803"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练： 扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，你可以使用**SharePoint 连接**的节点**服务器资源管理器**来查看 SharePoint 站点上的组件。 但是，**服务器资源管理器**默认情况下不会显示某些组件。 在本演练中，你将扩展**服务器资源管理器**，以便它显示在 Web 部件库在每个连接 SharePoint 站点。  
@@ -48,26 +48,26 @@ ms.locfileid: "42634733"
 ## <a name="prerequisites"></a>系统必备  
  需要要完成本演练的开发计算机上安装以下组件：  
   
--   支持的 Windows、 SharePoint 和 Visual Studio 版本。  
+- 支持的 Windows、 SharePoint 和 Visual Studio 版本。  
   
--   Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
+- Visual Studio SDK。 本演练使用**VSIX 项目**中此 SDK 来创建 VSIX 包来部署项目项模板。 有关详细信息，请参阅[扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- 了解以下概念很有帮助，但不是必需，若要完成本演练：  
+  了解以下概念很有帮助，但不是必需，若要完成本演练：  
   
--   使用 for SharePoint 服务器对象模型。 有关详细信息，请参阅[使用 SharePoint Foundation 服务器端对象模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
+- 使用 for SharePoint 服务器对象模型。 有关详细信息，请参阅[使用 SharePoint Foundation 服务器端对象模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   在 SharePoint 解决方案中的 web 部件。 有关详细信息，请参阅[Web 部件概述](http://go.microsoft.com/fwlink/?LinkId=177803)。  
+- 在 SharePoint 解决方案中的 web 部件。 有关详细信息，请参阅[Web 部件概述](http://go.microsoft.com/fwlink/?LinkId=177803)。  
   
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，必须创建三个项目：  
   
--   创建 VSIX 包将扩展部署的 VSIX 项目。  
+- 创建 VSIX 包将扩展部署的 VSIX 项目。  
   
--   实现扩展的类库项目。 此项目必须面向.NET Framework 4.5。  
+- 实现扩展的类库项目。 此项目必须面向.NET Framework 4.5。  
   
--   一个用于定义自定义的 SharePoint 命令的类库项目。 此项目必须面向.net Framework 3.5。  
+- 一个用于定义自定义的 SharePoint 命令的类库项目。 此项目必须面向.net Framework 3.5。  
   
- 首先演练创建项目。  
+  首先演练创建项目。  
   
 #### <a name="to-create-the-vsix-project"></a>若要创建 VSIX 项目  
   

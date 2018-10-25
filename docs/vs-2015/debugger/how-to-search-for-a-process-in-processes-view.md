@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e924acf48af293fedae2e9c47347e336ed6450f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 14421b6baede8f946a9bdfd86759e78657e1e603
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49222893"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49817413"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在进程视图中搜索进程
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,24 +31,24 @@ ms.locfileid: "49222893"
   
 ### <a name="to-search-for-a-process-in-processes-view"></a>若要在进程视图中的进程搜索  
   
-1.  排列窗口，因此该 Spy + + 和活动[进程视图](../debugger/processes-view.md)是可见的窗口。  
+1. 排列窗口，因此该 Spy + + 和活动[进程视图](../debugger/processes-view.md)是可见的窗口。  
   
-2.  从**搜索**菜单中，选择**查找进程**  
+2. 从**搜索**菜单中，选择**查找进程**  
   
-     [进程搜索对话框](../debugger/process-search-dialog-box.md)随即打开。  
+    [进程搜索对话框](../debugger/process-search-dialog-box.md)随即打开。  
   
-3.  键入的进程 ID 或模块字符串作为搜索条件。  
+3. 键入的进程 ID 或模块字符串作为搜索条件。  
   
-4.  清除不想为其指定值的任何字段。  
+4. 清除不想为其指定值的任何字段。  
   
-    > [!TIP]
-    >  若要查找模块拥有的所有进程，请清除**进程**框中，键入中的模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的进程。  
+   > [!TIP]
+   >  若要查找模块拥有的所有进程，请清除**进程**框中，键入中的模块名称**模块**框。 然后，使用**查找下一个**表示不继续搜索的进程。  
   
-5.  选择**向上**或**向下**搜索的初始方向。  
+5. 选择**向上**或**向下**搜索的初始方向。  
   
-6.  单击 **“确定”**。  
+6. 单击 **“确定”**。  
   
- 如果找到匹配的进程，则它以突出显示**进程视图**窗口。
+   如果找到匹配的进程，则它以突出显示**进程视图**窗口。
 
 
 

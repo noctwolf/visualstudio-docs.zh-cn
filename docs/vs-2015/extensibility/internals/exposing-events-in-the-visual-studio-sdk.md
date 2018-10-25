@@ -16,12 +16,12 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 3c7e001d71ca413cb5b984fabf203eaa6f748b98
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 96cbc9ad5c7098ff1aba2bc9cd3f387ca229cc98
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195567"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49919879"
 ---
 # <a name="exposing-events-in-the-visual-studio-sdk"></a>在 Visual Studio SDK 中公开事件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,23 +32,23 @@ ms.locfileid: "49195567"
   
  以下过程说明如何返回特定于 VSPackage 的事件。  
   
-1.  环境将开始。  
+1. 环境将开始。  
   
-2.  它从注册表中读取所有 Vspackage 的自动化、 AutomationEvents 和 AutomationProperties 密钥下的所有值名称，并将这些名称存储在表中。  
+2. 它从注册表中读取所有 Vspackage 的自动化、 AutomationEvents 和 AutomationProperties 密钥下的所有值名称，并将这些名称存储在表中。  
   
-3.  自动化使用者调用，在此示例中，`DTE.Events.AutomationProjectsEvents`或`DTE.Events.AutomationProjectItemsEvents`。  
+3. 自动化使用者调用，在此示例中，`DTE.Events.AutomationProjectsEvents`或`DTE.Events.AutomationProjectItemsEvents`。  
   
-4.  在环境表中查找的字符串参数并加载相应的 VSPackage。  
+4. 在环境表中查找的字符串参数并加载相应的 VSPackage。  
   
-5.  环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法使用的名称传递的调用中; 在此示例中，AutomationProjectsEvents 或 AutomationProjectItemsEvents。  
+5. 环境调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>方法使用的名称传递的调用中; 在此示例中，AutomationProjectsEvents 或 AutomationProjectItemsEvents。  
   
-6.  VSPackage 创建根对象，如具有方法`get_AutomationProjectsEvents`和`get_AutomationProjectItemEvents`，然后返回到该对象的 IDispatch 指针。  
+6. VSPackage 创建根对象，如具有方法`get_AutomationProjectsEvents`和`get_AutomationProjectItemEvents`，然后返回到该对象的 IDispatch 指针。  
   
-7.  环境调用适当的方法基于传递到自动化调用的名称。  
+7. 环境调用适当的方法基于传递到自动化调用的名称。  
   
-8.  `get_`方法创建同时实现的另一种基于 IDispatch 的事件对象`IConnectionPointContainer`界面和`IConnectionPoint`接口，并将返回 IDispatchpointer 对象。  
+8. `get_`方法创建同时实现的另一种基于 IDispatch 的事件对象`IConnectionPointContainer`界面和`IConnectionPoint`接口，并将返回 IDispatchpointer 对象。  
   
- 若要通过使用自动化来公开一个事件，您必须响应<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>和向注册表添加的字符串的监视。 在基本项目示例中，字符串是"BscProjectsEvents"和"BscProjectItemsEvents"。  
+   若要通过使用自动化来公开一个事件，您必须响应<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>和向注册表添加的字符串的监视。 在基本项目示例中，字符串是"BscProjectsEvents"和"BscProjectItemsEvents"。  
   
 ## <a name="registry-entries-from-the-basic-project-sample"></a>从基本项目示例的注册表项  
  本部分演示向注册表添加自动化事件值的位置。  

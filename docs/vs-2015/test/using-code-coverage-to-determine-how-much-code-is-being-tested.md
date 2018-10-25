@@ -15,12 +15,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: da8a33d454b5c406e43fa04157ae154a709cfe1e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253158"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49834053"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用代码覆盖率确定所测试的代码量
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ ms.locfileid: "49253158"
   
 > [!TIP]
 >  若要获得准确的结果：  
->   
->  -   确保关闭编译器优化。  
->   
->      如果要处理非托管（本机）代码，请使用调试版本。  
-> -   确保为每个程序集生成 .pdb（符号）文件。  
->   
->  如果没有获得预期的结果，请参阅[代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)。 . 不要忘记在更新代码后再次运行代码覆盖率。 在修改代码后或运行测试时，覆盖率结果和代码着色不会自动更新。  
+> 
+> - 确保关闭编译器优化。  
+> 
+>   如果要处理非托管（本机）代码，请使用调试版本。  
+>   -   确保为每个程序集生成 .pdb（符号）文件。  
+> 
+>   如果没有获得预期的结果，请参阅[代码覆盖率疑难解答](../test/troubleshooting-code-coverage.md)。 . 不要忘记在更新代码后再次运行代码覆盖率。 在修改代码后或运行测试时，覆盖率结果和代码着色不会自动更新。  
   
 ## <a name="reporting-in-blocks-or-lines"></a>报告块或行  
  代码覆盖率将以块为单位计数。 块是恰好有一个入口点和出口点的一段代码。  在测试运行期间，如果程序的控制流通过某个块，则将该块计为“已覆盖”。 块的使用次数对结果没有影响。  
@@ -255,19 +255,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-the-build-service"></a>分析生成服务中的代码覆盖率  
  签入代码时，你的测试以及其他团队成员的所有其他测试将在生成服务器中运行。 （如果还没有对此进行设置，请参阅 [Run tests in your build process](http://msdn.microsoft.com/library/d05743a1-c5cf-447e-bed9-bed3cb595e38)（在生成过程中运行测试）。）对生成服务分析代码覆盖率很有用，因为这样能提供整个项目中的覆盖率的最新、最全面的情报。 它还包含你不常在开发计算机上运行的自动系统测试和其他编码的测试。  
   
-1.  在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
+1. 在“团队资源管理器”中，打开“生成”，然后添加或编辑生成定义。  
   
-2.  在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 将“运行设置文件的类型”设为“已启用代码覆盖率”。  
+2. 在“进程”页中，展开“自动测试”、“测试源”和“运行设置”。 将“运行设置文件的类型”设为“已启用代码覆盖率”。  
   
-     如果你有多个测试源定义，请对每个定义重复此步骤。  
+    如果你有多个测试源定义，请对每个定义重复此步骤。  
   
-    -   但是，没有名为“运行设置文件的类型”的字段。  
+   - <em>但没有名为的字段 **类型的运行设置文件</em>*。 *  
   
-         在“自动测试”下，选择“测试程序集”，然后选择行尾的省略号按钮“[...]”。 在“添加/编辑测试运行”对话框的“测试运行程序”下，选择“Visual Studio 测试运行程序”。  
+      在“自动测试”下，选择“测试程序集”，然后选择行尾的省略号按钮“[...]”。 在“添加/编辑测试运行”对话框的“测试运行程序”下，选择“Visual Studio 测试运行程序”。  
   
- ![为代码覆盖率设置生成定义](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+   ![为代码覆盖率设置生成定义](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
- 生成运行后，代码覆盖率结果将附加到测试运行并显示在生成摘要中。  
+   生成运行后，代码覆盖率结果将附加到测试运行并显示在生成摘要中。  
   
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>分析命令行上的代码覆盖率  
  若要从命令行运行测试，请使用 vstest.console.exe。 代码覆盖率是此实用工具的一个选项。 有关详细信息，请参阅 [VSTest.Console.exe 命令行选项](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11)。  

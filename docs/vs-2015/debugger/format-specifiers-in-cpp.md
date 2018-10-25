@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52320637f9de3f7c96af75dae7a53a5626dfeb36
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249816"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894048"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式说明符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ ms.locfileid: "49249816"
   
 > [!NOTE]
 >  更改到新调试引擎的 Visual Studio 本机调试器。 作为此更改的一部分，添加了一些新的格式说明符，删除了一些旧的格式说明符。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。 本主题的以下各部分介绍每种调试引擎的格式说明符。  
->   
->  -   [格式说明符](#BKMK_Visual_Studio_2012_format_specifiers) 描述新的调试引擎中的格式说明符。  
-> -   [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
+> 
+> - [格式说明符](#BKMK_Visual_Studio_2012_format_specifiers) 描述新的调试引擎中的格式说明符。  
+>   -   [使用 C++/CLI 的互操作调试的格式说明符](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述较早的调试引擎中的格式说明符。  
   
 ## <a name="using-format-specifiers"></a>使用格式说明符  
  如果你有以下代码：  

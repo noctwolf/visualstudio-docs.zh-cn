@@ -33,12 +33,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9bdff85f80999d312a6c09c0c92e39fedfa37439
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d110056488b7555bc7bbccc5cbad3205d9de7405
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173596"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901640"
 ---
 # <a name="viewing-the-structure-of-code"></a>查看代码的结构
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,23 +145,23 @@ ms.locfileid: "49173596"
   
  可以在“对象浏览器”中筛选要查看的内容。 通过使用窗口顶部的下拉列表，你可以选择下列选项之一：  
   
--   任何 .NET Framework  
+- 任何 .NET Framework  
   
--   Silverlight  
+- Silverlight  
   
--   活动解决方案  
+- 活动解决方案  
   
--   一组自定义组件  
+- 一组自定义组件  
   
- 自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。 自定义设置保存在 Visual Studio 用户应用程序目录 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat。  
+  自定义组件可以包括托管代码可执行文件、库程序集、类型库和 .ocx 文件。 不能添加 C++ 自定义组件。 自定义设置保存在 Visual Studio 用户应用程序目录 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat。  
   
- “对象浏览器”的左窗格显示物理容器，如 .NET Framework 和 COM 组件。 你可以展开容器节点以显示它们所包含的命名空间，然后展开命名空间以显示它们所包含的类型。 选择类型时，其成员（如属性和方法）在右窗格中列出。 右下窗格显示与所选项相关的详细信息。  
+  “对象浏览器”的左窗格显示物理容器，如 .NET Framework 和 COM 组件。 你可以展开容器节点以显示它们所包含的命名空间，然后展开命名空间以显示它们所包含的类型。 选择类型时，其成员（如属性和方法）在右窗格中列出。 右下窗格显示与所选项相关的详细信息。  
   
- 可以通过使用窗口顶部的“搜索”框搜索特定的项。 搜索不区分大小写。 搜索结果显示在左窗格中。 若要清除搜索，请选择“搜索”框旁边的“清除搜索”(X) 按钮。  
+  可以通过使用窗口顶部的“搜索”框搜索特定的项。 搜索不区分大小写。 搜索结果显示在左窗格中。 若要清除搜索，请选择“搜索”框旁边的“清除搜索”(X) 按钮。  
   
- “对象浏览器”跟踪所做的选择，并且你可以通过使用工具栏上的“前进”和“后退”按钮在选项之间进行导航。  
+  “对象浏览器”跟踪所做的选择，并且你可以通过使用工具栏上的“前进”和“后退”按钮在选项之间进行导航。  
   
- 通过选择某一项（程序集、命名空间、类型或成员），然后选择工具栏上的“添加引用”按钮，可以使用“对象浏览器”将程序集引用添加到打开的解决方案。  
+  通过选择某一项（程序集、命名空间、类型或成员），然后选择工具栏上的“添加引用”按钮，可以使用“对象浏览器”将程序集引用添加到打开的解决方案。  
   
 ### <a name="object-browser-settings"></a>对象浏览器设置  
  通过使用工具栏上的“对象浏览器设置”按钮，可以指定以下视图之一。  

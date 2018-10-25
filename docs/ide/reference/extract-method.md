@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b4b5a818a75399fc4ce29fb7f2bec6332dac0585
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 049b3caebc884ea22bd2928e9e4ff10e9921fd1d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945787"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930591"
 ---
 # <a name="extract-a-method-refactoring"></a>“提取方法”重构
 
@@ -41,21 +41,21 @@ ms.locfileid: "31945787"
 
    - C#：
 
-    ![突出显示的代码- C#](media/extractmethod-highlight-cs.png)
+       ![突出显示的代码- C#](media/extractmethod-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 - Visual Basic](media/extractmethod-highlight-vb.png)
+       ![突出显示的代码 - Visual Basic](media/extractmethod-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl+R”，然后按“Ctrl+M”。 （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
+      - 按“Ctrl+R”，然后按“Ctrl+M”。 （请注意，键盘快捷方式可能因所选的配置文件而有所不同。）
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
    - **鼠标**
-     - 选择“编辑 > 重构 > 提取方法”。
-     - 右键单击代码，然后选择“重构 > 提取 > 提取方法”。
-     - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
+      - 选择“编辑 > 重构 > 提取方法”。
+      - 右键单击代码，然后选择“重构 > 提取 > 提取方法”。
+      - 右键单击代码，选择“快速操作和重构”菜单，然后从“预览”弹出窗口选择“提取方法”。
 
    将立即创建方法。 现在可以在此处为方法重命名，只需键入新的名称即可。
 
@@ -64,13 +64,13 @@ ms.locfileid: "31945787"
 
    - C#：
 
-    ![重命名方法 - C#](media/extractmethod-rename-cs.png)
+      ![重命名方法 - C#](media/extractmethod-rename-cs.png)
 
    - Visual Basic：
 
-    ![重命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
+      ![重命名方法 - Visual Basic](media/extractmethod-rename-vb.png)
 
-1. 对更改感到满意时，单击“应用”按钮或按 Enter 即可提交所做的更改。
+3. 对更改感到满意时，单击“应用”按钮或按 Enter 即可提交所做的更改。
 
 ## <a name="see-also"></a>请参阅
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a1a6888ca35df54ff6073aefaf686327b4cd8a
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: b5a485baaa1fdeab4a0d4c61b82f5381a931ac85
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31584927"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897181"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用性能数据文件保存符号信息
 
@@ -43,7 +43,7 @@ ms.locfileid: "31584927"
 
 - 如果收集了类型数据，请将 /SUMMARY:TYPE 添加到 vsperfreport 命令行。
 
- 如果从 Windows 或其他 Microsoft 程序看不到符号：
+  如果从 Windows 或其他 Microsoft 程序看不到符号：
 
 - 确保设置了 Windows 符号缓存的路径。 执行以下操作之一以设置符号缓存路径：
 

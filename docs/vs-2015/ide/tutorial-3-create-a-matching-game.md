@@ -14,34 +14,34 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8742924e1693a79268d6a35bc266caf5c5f32ec
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e5bd7243e49c447dc8c362b0c98bf2cc7d77d76d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49259087"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49939485"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在本教程中，将生成一个匹配游戏，在该游戏中，玩家必须匹配隐藏的图标对。 您将学习如何：  
   
--   在 `List` 对象中存储对象，例如图标。  
+- 在 `List` 对象中存储对象，例如图标。  
   
--   使用 `foreach` 循环（Visual C# 中）或 `For Each` 循环（Visual Basic 中）循环访问列表中的各项。  
+- 使用 `foreach` 循环（Visual C# 中）或 `For Each` 循环（Visual Basic 中）循环访问列表中的各项。  
   
--   使用引用变量跟踪窗体的状态。  
+- 使用引用变量跟踪窗体的状态。  
   
--   生成事件处理程序，以响应可用于多个对象的事件。  
+- 生成事件处理程序，以响应可用于多个对象的事件。  
   
--   创建一个计时器，进行倒计时，然后在启动后立即准确触发事件。  
+- 创建一个计时器，进行倒计时，然后在启动后立即准确触发事件。  
   
- 当你完成本教程时，程序将类似下图所示。  
+  当你完成本教程时，程序将类似下图所示。  
   
- ![在本教程中创建的游戏](../ide/media/express-finishedgame.png "Express_FinishedGame")  
-在本教程中创建的游戏  
+  ![在本教程中创建的游戏](../ide/media/express-finishedgame.png "Express_FinishedGame")  
+  在本教程中创建的游戏  
   
- 若要下载示例的完整版本，请参阅 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)（完整匹配游戏教程示例）。  
+  若要下载示例的完整版本，请参阅 [Complete Matching Game tutorial sample](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)（完整匹配游戏教程示例）。  
   
 > [!NOTE]
 >  在本教程中，同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您使用的编程语言的信息。  

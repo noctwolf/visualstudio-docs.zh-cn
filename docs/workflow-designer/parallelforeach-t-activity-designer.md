@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 53b8a8790cfa4f4e1f962fa5e6ce82b62781430f
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: c62918811ba91fe9c30f60e930ce77a640959d0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756901"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49846338"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活动设计器
 
@@ -44,7 +44,7 @@ ms.locfileid: "36756901"
 下表列出最有用的 <xref:System.Activities.Statements.ParallelForEach%601> 活动属性并说明如何在设计器中使用它们。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|指定活动设计器在标头中的友好显示名称。 默认值是**ParallelForEach\<Int32 >**。 值可以根据需要在中编辑**属性**网格或直接在活动设计器标头。|
 |<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|要为集合中的每一项执行的活动。 若要添加<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>活动，将活动从工具箱拖到拖**正文**框**ParallelForEach\<T >** 带提示文本"此处放置活动"的活动设计器。|
 |**TypeArgument**|True|中的项的类型<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>由泛型参数指定的集合*T*。默认情况下**TypeArgument**设置为**Int32**。 若要更改中的类型 T **ParallelForEach < T\>** 活动设计器的值更改**TypeArgument**属性网格中的组合框。|
@@ -55,6 +55,6 @@ ms.locfileid: "36756901"
 
 ## <a name="see-also"></a>请参阅
 
-- [序列](../workflow-designer/sequence-activity-designer.md)
-- [并行](../workflow-designer/parallel-activity-designer.md)
+- [Sequence](../workflow-designer/sequence-activity-designer.md)
+- [Parallel](../workflow-designer/parallel-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c46fbd570765d8843c9e6d87f37a5395c5b0133
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 613b3580d863e7d09ae62cb41182bd997f65df58
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279768"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49823651"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>演练：调试并行应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,25 +68,25 @@ ms.locfileid: "49279768"
   
 #### <a name="to-create-the-sample-project"></a>创建示例项目  
   
-1.  在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。  
+1. 在 Visual Studio 中的“文件”菜单上，指向“新建”，然后单击“项目”。  
   
-2.  在中**已安装的模板**窗格中，选择 Visual C#、 Visual Basic 或 Visual c + +。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 显示在框架框中。  
+2. 在中**已安装的模板**窗格中，选择 Visual C#、 Visual Basic 或 Visual c + +。 对于托管语言，请确保 [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] 显示在框架框中。  
   
-3.  选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
+3. 选择**控制台应用程序**，然后单击**确定**。 保留默认的调试配置。  
   
-4.  在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。  
+4. 在项目中打开 .cpp、.cs 或 .vb 代码文件。 删除其内容以创建一个空代码文件。  
   
-5.  将所选语言的以下代码粘贴到上述空代码文件中。  
+5. 将所选语言的以下代码粘贴到上述空代码文件中。  
   
- [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
- [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
- [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
+   [!code-cpp[Debugger#1](../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp#1)]
+   [!code-csharp[Debugger#1](../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs#1)]
+   [!code-vb[Debugger#1](../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb#1)]  
   
-1.  在“文件”  菜单上，单击“全部保存” 。  
+6. 在“文件”  菜单上，单击“全部保存” 。  
   
-2.  上**构建**菜单上，单击**重新生成解决方案**。  
+7. 上**构建**菜单上，单击**重新生成解决方案**。  
   
-     请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。  
+    请注意，有四个对 `Debugger.Break`（在 C++ 示例中为 `DebugBreak`）的调用。因此，您无需插入断点；您只需运行应用程序即可使其四次中断调试器。  
   
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>使用“并行堆栈”窗口：“线程”视图  
  在“调试”菜单上，单击“启动调试”。 等待命中第一个断点。  
@@ -153,33 +153,33 @@ ms.locfileid: "49279768"
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>继续执行到第三个断点  
   
-1.  若要继续执行到命中第三个断点，请在**调试**菜单上，单击**继续**。  
+1. 若要继续执行到命中第三个断点，请在**调试**菜单上，单击**继续**。  
   
-     如果有多个线程位于同一方法中，但该方法不在调用堆栈开头，则会在不同框中显示该方法。 当前断点处的一个示例是 S.L，它包含三个线程并在三个框中显示这三个线程。 双击 S.L。  
+    如果有多个线程位于同一方法中，但该方法不在调用堆栈开头，则会在不同框中显示该方法。 当前断点处的一个示例是 S.L，它包含三个线程并在三个框中显示这三个线程。 双击 S.L。  
   
-     ![在并行堆栈窗口的执行路径](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
+    ![在并行堆栈窗口的执行路径](../debugger/media/pdb-walkthrough-3b.png "PDB_Walkthrough_3B")  
   
-     请注意，S.L 在其他两个框中为粗体，这样您可以看到 S.L 的其他显示位置。 如果你想要查看的帧调用 s.l 和调用的帧，请单击**切换方法视图**工具栏上的按钮。 下图显示的方法视图**并行堆栈**窗口。  
+    请注意，S.L 在其他两个框中为粗体，这样您可以看到 S.L 的其他显示位置。 如果你想要查看的帧调用 s.l 和调用的帧，请单击**切换方法视图**工具栏上的按钮。 下图显示的方法视图**并行堆栈**窗口。  
   
-     ![并行堆栈窗口中的方法视图](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
+    ![并行堆栈窗口中的方法视图](../debugger/media/pdw-walkthrough-4.png "PDW_Walkthrough_4")  
   
-     请注意以上关系图以所选方法为中心并将其单独放在视图中间的方框中。 被调用方和调用方分别显示在顶部和底部。 单击**切换方法视图**按钮再次以退出此模式。  
+    请注意以上关系图以所选方法为中心并将其单独放在视图中间的方框中。 被调用方和调用方分别显示在顶部和底部。 单击**切换方法视图**按钮再次以退出此模式。  
   
-     快捷菜单**并行堆栈**窗口还具有以下其他项。  
+    快捷菜单**并行堆栈**窗口还具有以下其他项。  
   
-    -   **十六进制显示**用于切换在十进制和十六进制之间工具提示中的数字。  
+   - **十六进制显示**用于切换在十进制和十六进制之间工具提示中的数字。  
   
-    -   **符号加载信息**并**符号设置**打开各自的对话框。  
+   - **符号加载信息**并**符号设置**打开各自的对话框。  
   
-    -   **转到源代码**并**转到反汇编**导航到所选的方法在编辑器中。  
+   - **转到源代码**并**转到反汇编**导航到所选的方法在编辑器中。  
   
-    -   **显示外部代码**显示所有帧，即使它们不是在用户代码中。 使用此项可查看展开的关系图，其中包含其他帧（这些帧可能因没有相应符号而灰显）。  
+   - **显示外部代码**显示所有帧，即使它们不是在用户代码中。 使用此项可查看展开的关系图，其中包含其他帧（这些帧可能因没有相应符号而灰显）。  
   
      如果关系图较大，当单步执行到下一断点时，您可能希望视图自动滚动到当前线程的活动堆栈帧；即第一个命中该断点的线程。 在中**并行堆栈**窗口中，请确保**自动滚动到当前堆栈帧**已启用工具栏上的按钮。  
   
      ![并行堆栈窗口中的自动滚动](../debugger/media/pdb-walkthrough-4a.png "PDB_Walkthrough_4A")  
   
-2.  在继续之前**并行堆栈**窗口中，滚动到左侧和一直向下的所有方式。  
+2. 在继续之前**并行堆栈**窗口中，滚动到左侧和一直向下的所有方式。  
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>继续执行到第四个断点  
   

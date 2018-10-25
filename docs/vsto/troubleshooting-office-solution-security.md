@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 347cd6cfa1e773d3900e7294d691f061d91a762d
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 002759a1a5fd8a16ee3e7842df7439d6e6b9755f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670695"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49862926"
 ---
 # <a name="troubleshoot-office-solution-security"></a>Office 解决方案安全性疑难解答
   本主题包含用于解决在保护 Office 解决方案时可能遇到的常见问题的提示。  
@@ -32,17 +32,17 @@ ms.locfileid: "35670695"
   
  部署清单的 URL 可以分为五个区域之一：  
   
--   我的计算机  
+- 我的计算机  
   
--   Internet  
+- Internet  
   
--   本地 intranet  
+- 本地 intranet  
   
--   受信任的站点  
+- 受信任的站点  
   
--   受限制的站点  
+- 受限制的站点  
   
- 如果已分配给受限制的站点区域中，部署清单的位置[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不会安装该解决方案。 如果位置已知，并且可以是受信任的用户可以从受限制的站点区域中删除位置和安装该解决方案。 有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
+  如果已分配给受限制的站点区域中，部署清单的位置[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]不会安装该解决方案。 如果位置已知，并且可以是受信任的用户可以从受限制的站点区域中删除位置和安装该解决方案。 有关如何管理区域的信息，请参阅[配置 ClickOnce 受信任的发行者](http://go.microsoft.com/fwlink/?LinkId=94774)。  
   
 ## <a name="solutions-cannot-be-installed-from-network-file-shares-or-web-locations-when-internet-explorer-enhanced-security-configuration-or-internet-explorer-7-is-installed"></a>安装 Internet Explorer 增强安全配置或 Internet Explorer 7 时，不能从网络文件共享或 web 位置安装解决方案  
  Internet Explorer 增强安全配置 （安装 ieesc 时） 在 Windows Server 2003 和更高版本和 Internet Explorer 7 及更高版本，大大限制的用户浏览 Internet 的功能。 当用户尝试从网络文件共享或 web 位置中安装 Office 解决方案时，他们可能会收到以下错误消息:"由于使用证书来签署的部署清单中此应用程序的自定义功能无法工作*SolutionName*不受信任。 与管理员联系以获得进一步帮助。"  

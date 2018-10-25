@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4056a390bf2ed486df6391d48fd17c1d0af2cdad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194735"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49921829"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为面向多个平台
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ ms.locfileid: "49194735"
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>一次生成多个解决方案配置  
   
-1.  使用“配置资源管理器”为解决方案添加至少两个目标平台。  
+1. 使用“配置资源管理器”为解决方案添加至少两个目标平台。  
   
-2.  使用“批量生成”窗口可以同时生成多个解决方案配置。  
+2. 使用“批量生成”窗口可以同时生成多个解决方案配置。  
   
- 例如，可以将解决方案级别的平台设置为 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]，并使该解决方案中项目都不面向该平台。 解决方案中可以存在多个项目，并且每个项目面向不同的平台。 如果具有此类解决方案，建议创建一个新的配置并使用描述性名称命名，以免混淆。  
+   例如，可以将解决方案级别的平台设置为 [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]，并使该解决方案中项目都不面向该平台。 解决方案中可以存在多个项目，并且每个项目面向不同的平台。 如果具有此类解决方案，建议创建一个新的配置并使用描述性名称命名，以免混淆。  
   
 ## <a name="see-also"></a>请参阅  
  [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)   

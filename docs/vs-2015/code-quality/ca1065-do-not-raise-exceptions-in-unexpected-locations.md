@@ -20,15 +20,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 56f51fb381a65060fd81a3e25f1cc989c8974de8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284682"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49887579"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065：不要在意外的位置引发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
 |||
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
@@ -42,27 +43,27 @@ ms.locfileid: "49284682"
 ## <a name="rule-description"></a>规则说明
  不应引发异常的方法可以进行分类，如下所示：
 
--   属性 Get 方法
+- 属性 Get 方法
 
--   事件访问器方法
+- 事件访问器方法
 
--   Equals 方法
+- Equals 方法
 
--   GetHashCode 方法
+- GetHashCode 方法
 
--   ToString 方法
+- ToString 方法
 
--   静态构造函数
+- 静态构造函数
 
--   终结器
+- 终结器
 
--   Dispose 方法
+- Dispose 方法
 
--   相等运算符
+- 相等运算符
 
--   隐式强制转换运算符
+- 隐式强制转换运算符
 
- 以下各节讨论这些方法类型。
+  以下各节讨论这些方法类型。
 
 ### <a name="property-get-methods"></a>属性 Get 方法
  属性是基本上就是智能字段。 因此，它们应该表现得像尽可能多地一个字段。 字段不会引发异常，也不应该属性。 如果您有一个属性，它将引发异常，请考虑使它成为方法。
@@ -91,22 +92,22 @@ ms.locfileid: "49284682"
 ### <a name="equals-methods"></a>Equals 方法
  以下**等于**方法不应引发异常：
 
--   <xref:System.Object.Equals%2A?displayProperty=fullName>
+- <xref:System.Object.Equals%2A?displayProperty=fullName>
 
--   [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
 
- **等于**方法应返回`true`或`false`而不是引发异常。 例如，如果等于传递两个不匹配的类型则只应返回`false`而不是引发<xref:System.ArgumentException>。
+  **等于**方法应返回`true`或`false`而不是引发异常。 例如，如果等于传递两个不匹配的类型则只应返回`false`而不是引发<xref:System.ArgumentException>。
 
 ### <a name="gethashcode-methods"></a>GetHashCode 方法
  以下**GetHashCode**方法不应通常引发异常：
 
--   <xref:System.Object.GetHashCode%2A>
+- <xref:System.Object.GetHashCode%2A>
 
--   [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](http://go.microsoft.com/fwlink/?LinkId=113477)
 
- **GetHashCode**应始终返回一个值。 否则，可能会丢失哈希表中的项。
+  **GetHashCode**应始终返回一个值。 否则，可能会丢失哈希表中的项。
 
- 版本**GetHashCode**采用自变量可能会引发<xref:System.ArgumentException>。 但是， **Object.GetHashCode**应永远不会引发异常。
+  版本**GetHashCode**采用自变量可能会引发<xref:System.ArgumentException>。 但是， **Object.GetHashCode**应永远不会引发异常。
 
 ### <a name="tostring-methods"></a>ToString 方法
  调试器使用<xref:System.Object.ToString%2A?displayProperty=fullName>可帮助将以字符串格式显示有关对象的信息。 因此， **ToString**不应更改对象的状态和不应引发异常。

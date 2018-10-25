@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetPendingBreakpoint |Microsoft 文档
+title: IDebugBoundBreakpoint2::GetPendingBreakpoint |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 899afbc801baee88dd941763b559845b90be8500
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: ed136217f9f5c7cffc72ba03562d308723ef5029
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109504"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49867775"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
-获取从中创建指定的绑定的断点挂起断点。  
+获取从其创建指定的绑定的断点的挂起断点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -48,7 +48,7 @@ int GetPendingBreakpoint(
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 挂起断点可以看作将断点绑定到可以应用于一个或多个程序的代码所需的所有必要的信息的集合。  
+ 挂起断点可以看作将断点绑定到可以应用于一个或多个程序的代码所需的所有必要信息的集合。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何实现此方法对于简单`CBoundBreakpoint`公开的对象[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)接口。  
@@ -84,6 +84,6 @@ HRESULT CBoundBreakpoint::GetPendingBreakpoint(
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

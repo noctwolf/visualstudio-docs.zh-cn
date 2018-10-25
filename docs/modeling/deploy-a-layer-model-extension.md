@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: dace2a3de8e61a92672442adbf77199232c76e12
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: feae82f3909be5816e025de21200acda20933d63
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370908"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49874613"
 ---
 # <a name="deploy-a-layer-model-extension"></a>部署层模型扩展
 
@@ -29,13 +29,13 @@ ms.locfileid: "46370908"
 
 ### <a name="to-install-the-extension"></a>安装扩展
 
-1.  中包含的项目**source.vsix.manifest**，打开**bin\\ \*** 在文件资源管理器。
+1. 中包含的项目**source.vsix.manifest**，打开*bin*目录在文件资源管理器。
 
-2.  复制 **\*.vsix**到要安装扩展的计算机的文件。
+2. 复制 **\*.vsix**到要安装扩展的计算机的文件。
 
-3.  在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。
+3. 在目标计算机的 Windows 资源管理器中，双击 *.vsix 文件。
 
-     VSIX 安装程序将打开。
+    VSIX 安装程序将打开。
 
 ### <a name="to-uninstall-the-extension"></a>卸载扩展
 

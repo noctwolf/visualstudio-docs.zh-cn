@@ -19,12 +19,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc89caf18523e57671a18884fdb6b2961d962b99
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 2d8439d706dbe8c84d807fb445eda272b96ad589
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39638513"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822873"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 当用户执行从集成的开发环境 (IDE) 内部的源代码管理操作时，源代码管理插件可能想要传达与操作相关的错误或状态消息。 该插件可以实现此目的中显示其自己的消息框。 但是，对于更多的无缝集成，该插件可以传递字符串到 IDE，然后将它们显示在其本机的显示状态信息的方式。 此机制是`LPTEXTOUTPROC`函数指针。 IDE 实现此函数用于显示错误和状态 （下面更详细地介绍）。  

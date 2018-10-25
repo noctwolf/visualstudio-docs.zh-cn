@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b210b5e0d3d0f3638e78331d9db093f7e86079e
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 7f72cb538018588ab11335be5a99fe86b5c474c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117168"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49879878"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活动设计器
 
@@ -42,7 +42,7 @@ ms.locfileid: "37117168"
 下表显示<xref:System.ServiceModel.Activities.InitializeCorrelation>属性并说明它们如何使用在设计器中。 这些属性可以在中编辑**属性**窗口或工作流设计器图面上。
 
 |属性名|必需|用法|
-|-------------------|--------------|-----------|
+|-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的友好名称。 默认值为 InitializeCorrelation。<br /><br /> 虽然对友好使用非默认值<xref:System.Activities.Activity.DisplayName%2A>并非是严格要求，建议。|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|用于关联相关中的工作流活动的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|将消息与工作流实例相关联的相关数据的字典。<br /><br /> 使用**初始化相关**对话框可以配置<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>。 有关使用此对话框中，请参阅[类型集合编辑器对话框](../workflow-designer/type-collection-editor-dialog-box.md)一文。|
@@ -50,8 +50,8 @@ ms.locfileid: "37117168"
 ## <a name="see-also"></a>请参阅
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
-- [接收](../workflow-designer/receive-activity-designer.md)
+- [Receive](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
-- [发送](../workflow-designer/send-activity-designer.md)
+- [Send](../workflow-designer/send-activity-designer.md)
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)
 - [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

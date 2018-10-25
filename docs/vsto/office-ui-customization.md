@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: dfbb7b1a10c27793133afdfdaf0d673fac9535c8
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 48c7fe1948231f88aba8309d6d06186848d32455
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671669"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49836757"
 ---
 # <a name="office-ui-customization"></a>Office UI 自定义
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：  
@@ -61,13 +61,13 @@ ms.locfileid: "35671669"
   
  Visual Studio 中的 Office 开发工具提供了两种不同的自定义任务窗格方法：  
   
--   可以向文档级自定义项添加操作窗格。 默认情况下，操作窗格显示在应用程序的右边，在文档的右侧。 但是，也可以在文档的左侧、顶部或底部显示操作窗格。  
+- 可以向文档级自定义项添加操作窗格。 默认情况下，操作窗格显示在应用程序的右边，在文档的右侧。 但是，也可以在文档的左侧、顶部或底部显示操作窗格。  
   
--   可以向 VSTO 外接程序添加自定义任务窗格。 用户可以将自定义任务窗格停靠到应用程序窗口中的各侧，也可将自定义任务窗格拖动到窗口中的任意位置。  
+- 可以向 VSTO 外接程序添加自定义任务窗格。 用户可以将自定义任务窗格停靠到应用程序窗口中的各侧，也可将自定义任务窗格拖动到窗口中的任意位置。  
   
- 操作窗格和自定义任务窗格通过承载各种控件来提供功能，以协助用户进行数据输入等任务。 与功能区组相比，操作窗格和自定义任务窗格提供更大的区域来包括文本和控件。  
+  操作窗格和自定义任务窗格通过承载各种控件来提供功能，以协助用户进行数据输入等任务。 与功能区组相比，操作窗格和自定义任务窗格提供更大的区域来包括文本和控件。  
   
- 有关操作窗格的详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。 有关自定义任务窗格的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
+  有关操作窗格的详细信息，请参阅[操作窗格概述](../vsto/actions-pane-overview.md)。 有关自定义任务窗格的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)。  
   
 ##  <a name="Ribbon"></a> 自定义功能区 UI  
  可以自定义功能区 UI，以显示在 Office 中添加到应用程序的功能。 功能区是一种以控件形式整理相关命令（便于查找）的方法。 可以创建你自己的功能区选项卡和组，以便用户能够访问解决方案中提供的功能。 之前通过使用 Microsoft Office System 早期版本中的菜单和工具栏访问的大多数功能，现在都可以通过使用功能区进行访问。  

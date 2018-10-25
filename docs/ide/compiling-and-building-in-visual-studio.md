@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1e911dad2b4abe2fb092b2adb221c4aebec136
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 5ce6a85ff80d8da081b0d69763ed477174de7ed4
+ms.sourcegitcommit: b6dfa1bdf4c23c2e341754454bbd4758db2218e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370765"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863616"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>在 Visual Studio 中编译和生成
 
@@ -56,4 +56,4 @@ ms.locfileid: "46370765"
 
 ## <a name="see-also"></a>请参阅
 
-- [生成（编译）网站项目](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
+- [生成（编译）网站项目](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)

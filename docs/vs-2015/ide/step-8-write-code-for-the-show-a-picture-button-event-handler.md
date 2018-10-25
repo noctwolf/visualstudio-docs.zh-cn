@@ -14,25 +14,25 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 37d47adff9bf8bc364e1972a6ab588a3591c120b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 6172188fb7d06122cdcc178889b2a5b37ca1bb0f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203263"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49933542"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 在此步骤中，将生成按如下方式工作的“显示图片”按钮：  
   
--   用户选择此按钮时，程序将打开“打开文件”对话框。  
+- 用户选择此按钮时，程序将打开“打开文件”对话框。  
   
--   如果用户打开一个图片文件，则程序将在 PictureBox 中显示该图片。  
+- 如果用户打开一个图片文件，则程序将在 PictureBox 中显示该图片。  
   
- IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码。 当您输入代码时，IDE 会打开一个框，其中显示与您所输入的部分单词对应的完整建议内容。 它尝试确定您接下来要做的事情，并自动跳到您从列表中选择的最后一项。 您可以使用向上键或向下键在列表中进行移动，也可以继续键入字母以缩小选择范围。 当您看到所需的选项时，请选择 Tab 键以将其选中。 或者，也可以忽略不需要的建议。  
+  IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码。 当您输入代码时，IDE 会打开一个框，其中显示与您所输入的部分单词对应的完整建议内容。 它尝试确定您接下来要做的事情，并自动跳到您从列表中选择的最后一项。 您可以使用向上键或向下键在列表中进行移动，也可以继续键入字母以缩小选择范围。 当您看到所需的选项时，请选择 Tab 键以将其选中。 或者，也可以忽略不需要的建议。  
   
- ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215)（教程 1：用 Visual Basic 创建图片查看器 - 视频 4）或 [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203)（教程 1：用 C# 创建图片查看器 - 视频 4）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
+  ![视频链接](../data-tools/media/playvideo.gif "PlayVideo")有关本主题的视频版本，请观看[Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215)（教程 1：用 Visual Basic 创建图片查看器 - 视频 4）或 [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203)（教程 1：用 C# 创建图片查看器 - 视频 4）。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。  
   
 ### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>为“显示图片”按钮事件处理程序编写代码  
   

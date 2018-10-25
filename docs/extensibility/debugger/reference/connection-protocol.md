@@ -1,5 +1,5 @@
 ---
-title: CONNECTION_PROTOCOL |Microsoft 文档
+title: CONNECTION_PROTOCOL |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1e1dc8cd22b529eafd6183578be7de6ffe69549
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: d70aa31e7574e9fcdb0ed4e8d89847e832f3739b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31109998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832756"
 ---
 # <a name="connectionprotocol"></a>CONNECTION_PROTOCOL
-指示正在使用的调试服务器和调试包 (DE) 之间进行通信的协议。  
+指示正在使用调试服务器和调试包 (DE) 之间进行通信的协议。  
   
 ## <a name="syntax"></a>语法  
   
@@ -53,25 +53,25 @@ public enum CONNECTION_PROTOCOL {
   
 #### <a name="parameters"></a>参数  
  CONNECTION_NONE  
- 已将没有连接到服务器。  
+ 没有连接到服务器。  
   
  CONNECTION_UNKNOWN  
- 已建立连接，但它是未知类型。  
+ 已建立连接，但它属于未知类型。  
   
  CONNECTION_LOCAL  
  连接是连接到本地服务器。  
   
  CONNECTION_PIPE  
- 连接是通过命名管道。  
+ 通过命名管道连接。  
   
  CONNECTION_TCPIP  
  连接使用 TCP/IP。  
   
  CONNECTION_HTTP  
- 连接 （通过 Web 服务器） 使用 HTTP。  
+ 将使用 HTTP 连接 （通过 Web 服务器上）。  
   
  CONNECTION_OTHER  
- 已建立连接的某些其他类型 （此值当前未使用）。  
+ 已建立某种其他类型的连接 （此值当前未使用）。  
   
 ## <a name="remarks"></a>备注  
  这些值返回从[GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)方法。  
@@ -83,6 +83,6 @@ public enum CONNECTION_PROTOCOL {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md)

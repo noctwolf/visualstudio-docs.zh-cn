@@ -18,27 +18,27 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: d235508bb0b58ac17846d0b02db25f044c504deb
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: 5db5e9408a64df80311667267561ee69234fd7d5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42634701"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852736"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>演练： 分析 SharePoint 应用程序
   本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器，可以找到和消除开销最大 （最慢执行） 项目的一部分，也称为*热路径*。  
   
  本演练演示了下列任务：  
   
--   [添加功能和功能事件接收器](#BKMK_AddFtrandFtrEvntReceiver)。  
+- [添加功能和功能事件接收器](#BKMK_AddFtrandFtrEvntReceiver)。  
   
--   [配置和部署 SharePoint 应用程序](#BKMK_ConfigSharePointApp)。  
+- [配置和部署 SharePoint 应用程序](#BKMK_ConfigSharePointApp)。  
   
--   [运行 SharePoint 应用程序](#BKMK_RunSPApp)。  
+- [运行 SharePoint 应用程序](#BKMK_RunSPApp)。  
   
--   [查看和解释分析结果](#BKMK_ViewResults)。  
+- [查看和解释分析结果](#BKMK_ViewResults)。  
   
- [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
+  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
@@ -52,23 +52,23 @@ ms.locfileid: "42634701"
   
 #### <a name="to-create-a-sharepoint-project"></a>创建 SharePoint 项目  
   
-1.  在菜单栏上依次选择**文件** > **新建** > **项目**显示**新建项目**对话框。  
+1. 在菜单栏上依次选择**文件** > **新建** > **项目**显示**新建项目**对话框。  
   
-2.  展开**SharePoint**节点下的**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
+2. 展开**SharePoint**节点下的**Visual C#** 或**Visual Basic**，然后选择**2010年**节点。  
   
-3.  在模板窗格中，选择**SharePoint 2010 项目**模板。  
+3. 在模板窗格中，选择**SharePoint 2010 项目**模板。  
   
-4.  在中**名称**框中，输入**ProfileTest**，然后选择**确定**按钮。  
+4. 在中**名称**框中，输入**ProfileTest**，然后选择**确定**按钮。  
   
-     **SharePoint 自定义向导**出现。  
+    **SharePoint 自定义向导**出现。  
   
-5.  上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 服务器站点的 URL 或使用默认位置 (http://*系统名称*/).  
+5. 上**指定用于调试的网站和安全级别**页上，输入你想要调试站点定义的 SharePoint 服务器站点的 URL 或使用默认位置 (http://<em>系统名称</em>/).  
   
-6.  在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
+6. 在中**此 SharePoint 解决方案的信任级别是什么？** 部分中，选择**部署为场解决方案**选项按钮。  
   
-     目前，只能分析场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
+    目前，只能分析场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅[沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。  
   
-7.  选择**完成**按钮。 项目将出现在**解决方案资源管理器**。  
+7. 选择**完成**按钮。 项目将出现在**解决方案资源管理器**。  
   
 ## <a name="add-a-feature-and-feature-event-receiver"></a>添加功能和功能事件接收器
  接下来，向项目中添加功能和该功能的事件接收器。 此事件接收器将包含要分析的代码。  

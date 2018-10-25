@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3db94813f6d6b87d29744be2d1f53e26c3b80f26
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 882a355742a100f7a105abab541832f86740afe7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280163"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942719"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -163,16 +163,16 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![Python 项目上下文菜单上的 Django 命令](media/django/step01-django-commands-menu.png)
 
-1. 在你的项目中是一个与项目名称相同的文件夹。 它包含基本 Django 项目文件：
+2. 在你的项目中是一个与项目名称相同的文件夹。 它包含基本 Django 项目文件：
 
-    - __init.py：告知 Python 此文件夹是 Python 包的空文件。
-    - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点。 通常会按原样保留该文件，因为它为生产 Web 服务器提供挂钩。
-    - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置。
-    - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录。
+   - __init.py：告知 Python 此文件夹是 Python 包的空文件。
+   - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点。 通常会按原样保留该文件，因为它为生产 Web 服务器提供挂钩。
+   - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置。
+   - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录。
 
-    ![解决方案资源管理器中的 Django 项目文件](media/django/step01-django-project-in-solution-explorer.png)
+     ![解决方案资源管理器中的 Django 项目文件](media/django/step01-django-project-in-solution-explorer.png)
 
-1. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
+3. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>问：在我安装其他包后，Visual Studio 能否从虚拟环境生成 requirements.txt 文件？
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugMethodField::GetThis |Microsoft 文档
+title: IDebugMethodField::GetThis |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cde294ea10a6eedd1046a41686dbfa9f3b47e4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 302486a0cd59f6bc843af6aba76f734775cf405e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118276"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842932"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
-获取`this`(`Me`中[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) 的方法所属的对象的指针。  
+获取`this`(`Me`中[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) 包含方法的对象的指针。  
   
 ## <a name="syntax"></a>语法  
   
@@ -41,14 +41,14 @@ int GetThis(
   
 #### <a name="parameters"></a>参数  
  `ppClass`  
- [out]返回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)表示"this"指针的对象。  
+ [out]返回[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)对象，表示"this"指针。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则，返回错误代码。  
+ 如果成功，则返回 S_OK;否则，返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 在面向对象语言中，通常没有当前实例化类的隐式的指针中。 这称为`this`在 C# / c + + 并将它作为`Me`中[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]。  
+ 在面向对象的语言，通常不存在类的当前实例化的隐式的指针。 这称为`this`C# 中 / c + + 和 as`Me`中[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

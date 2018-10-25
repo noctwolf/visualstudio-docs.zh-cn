@@ -17,12 +17,12 @@ caps.latest.revision: 79
 author: gewarren
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 384592f89df9537300c11cdf3e8cea622d8c9c63
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1a294c9c1eaeb0c59f8c2e9c58c75a161c0d61e6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224726"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883323"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ ms.locfileid: "49224726"
   
  MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使用专用编辑器来将架构或抽象语法与图形表示法一起定义。 根据此定义，VMSDK 将生成：  
   
--   使用运行于基于事务的存储内的强类型 API 的模型实现。  
+- 使用运行于基于事务的存储内的强类型 API 的模型实现。  
   
--   一个基于树的资源管理器。  
+- 一个基于树的资源管理器。  
   
--   一个图形编辑器，用户可在其中查看你定义的模型或其各个部分。  
+- 一个图形编辑器，用户可在其中查看你定义的模型或其各个部分。  
   
--   以可读的 XML 形式保存模型的序列化方法。  
+- 以可读的 XML 形式保存模型的序列化方法。  
   
--   使用文本模板化生成程序代码和其他项目的设施。  
+- 使用文本模板化生成程序代码和其他项目的设施。  
   
- 你可以自定义和扩展所有这些功能。 你的扩展以某种方式集成，以使你仍能更新 DSL 定义并重新生成功能而不丢失扩展。  
+  你可以自定义和扩展所有这些功能。 你的扩展以某种方式集成，以使你仍能更新 DSL 定义并重新生成功能而不丢失扩展。  
   
 ## <a name="samples-and-the-latest-information"></a>示例和最新信息  
  [下载用于 Visual Studio 2015 SDK 的建模](http://www.microsoft.com/download/details.aspx?id=48148)  

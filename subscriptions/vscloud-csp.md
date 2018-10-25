@@ -9,12 +9,12 @@ description: 有关云解决方案提供商如何为客户购买和管理 Visual
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 9d040d2f586e2c47a6f904f06d483fe484a57429
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 50f4cfeaa6d0f530a70729155f0e81065359281d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495799"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899456"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 
@@ -75,6 +75,7 @@ ms.locfileid: "46495799"
 若要查看适用于 CSP 合作伙伴的 Visual Studio 定价，请登录[合作伙伴中心](https://partnercenter.microsoft.com)。  从左侧导航栏中选择“定价和优惠”。  选择右上方“基于使用情况的服务”下的当前月份定价文件。 下载 Excel 电子表格后，转到“Azure 价目表”工作表，并在“计量类别”列筛选出“Visual Studio”。
 
 下面解释了在此电子表格中看到的内容：
+
 | 计量类别    |   name                 |  单位                                |           这是什么                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | 企业             |  订阅                         | Visual Studio Enterprise 月度订阅   |

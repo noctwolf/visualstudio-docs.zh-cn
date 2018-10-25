@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d5118aafae296d839ad182d51b996da11a6bc556
-ms.sourcegitcommit: 0bf2aff6abe485e3fe940f5344a62a885ad7f44e
+ms.openlocfilehash: 04ffdd5d0256ae0fc42b89dfa850fb0ae2d36748
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37057393"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49818661"
 ---
 # <a name="debugging-dll-projects-from-visual-studio"></a>从 Visual Studio 的调试 DLL 项目
 下面的 Visual Studio 模板创建 Dll:  
@@ -54,24 +54,24 @@ ms.locfileid: "37057393"
 ##  <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Ways to debug the DLL  
  本节的每个项目都创建一个 DLL。 您无法直接运行 DLL，它必须由应用程序（通常为 EXE）调用。 有关详细信息，请参阅 [Creating and Managing Visual C++ Projects](/cpp/ide/creating-and-managing-visual-cpp-projects)。 调用应用程序可能满足下列任一条件：  
   
--   内置在同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中包含类库的另一个项目中的应用程序。  
+- 内置在同一 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 解决方案中包含类库的另一个项目中的应用程序。  
   
--   已经部署到测试或生产计算机上的现有应用程序。  
+- 已经部署到测试或生产计算机上的现有应用程序。  
   
--   位于 Web 上并通过 URL 访问。  
+- 位于 Web 上并通过 URL 访问。  
   
--   包含嵌入了 DLL 的网页的 Web 应用程序。  
+- 包含嵌入了 DLL 的网页的 Web 应用程序。  
   
 ###  <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Debugging the calling application  
 若要调试 DLL，请从调试调用应用程序开始，通常是 EXE 或者 Web 应用程序。 调试方式有许多种。  
   
--   如果有调用应用程序的项目，则可以打开该项目并从 **“调试”** 菜单开始执行。 有关详细信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。  
+- 如果有调用应用程序的项目，则可以打开该项目并从 **“调试”** 菜单开始执行。 有关详细信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。  
   
--   如果调用应用程序是已经部署到测试或生产计算机上并已经运行的现有程序，则可以附加到该应用程序上。 如果 DLL 是由 Internet Explorer 承载的控件或网页上的控件，请使用此方法。 有关详细信息，请参阅 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+- 如果调用应用程序是已经部署到测试或生产计算机上并已经运行的现有程序，则可以附加到该应用程序上。 如果 DLL 是由 Internet Explorer 承载的控件或网页上的控件，请使用此方法。 有关详细信息，请参阅 [How to: Attach to a Running Process](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
   
--   您可以从 DLL 项目中调试。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
+- 您可以从 DLL 项目中调试。 有关详细信息，请参阅 [How to: Debug from a DLL Project](../debugger/how-to-debug-from-a-dll-project.md)。  
   
--   您可以从其进行调试[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][即时窗口](#vxtskdebuggingdllprojectstheimmediatewindow)。 在这种情况下， **“即时”** 窗口充当应用程序的角色。  
+- 您可以从其进行调试[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)][即时窗口](#vxtskdebuggingdllprojectstheimmediatewindow)。 在这种情况下， **“即时”** 窗口充当应用程序的角色。  
   
 在开始调试调用应用程序之前，通常希望在类库中设置一个断点。 有关详细信息，请参阅 [Using Breakpoints](../debugger/using-breakpoints.md)。 命中断点时，可以逐句通过代码，同时观察每行的操作，直到将问题隔离出来。 有关详细信息，请参阅[在调试器中导航代码](../debugger/navigating-through-code-with-the-debugger.md)。
   
@@ -110,7 +110,7 @@ ms.locfileid: "37057393"
 
 你的项目需要能够找到的 DLL，并用于调试的.pdb 文件。 可以创建自定义生成任务来复制这些文件复制到**\<项目文件夹 > \Debug**输出文件夹中，也可以手动将文件复制到输出文件夹中。
 
-您可以轻松地设置属性页中的标头文件和 *.lib 文件的位置 (右键单击 c + + 项目，然后选择**查看属性**，然后选择**所有配置**) 而无需复制其输出文件夹：
+您可以轻松地设置标头文件的位置和<em>属性页中的.lib 文件 (右键单击 c + + 项目，然后选择 * * 视图属性</em><em>，然后选择 **所有配置</em>*)而无需将其复制到输出文件夹：
 
 - C/c + + 文件夹 （常规类别）-指定包含中的标头文件的文件夹**附加包含目录**字段。
 - 链接器文件夹 （常规类别）-指定包含中的.lib 文件的文件夹**附加库目录**字段。 

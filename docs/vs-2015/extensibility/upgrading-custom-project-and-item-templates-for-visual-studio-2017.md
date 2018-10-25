@@ -10,12 +10,12 @@ ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 7e44ea1c267d9fe57c3f32ddad876b412f69ea24
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 9137510f8d6949271a255b14b293f59366048f77
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221151"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923441"
 ---
 # <a name="upgrading-custom-project-and-item-templates-for-visual-studio-15"></a>升级 Visual studio"15"的自定义项目和项模板
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,24 +181,24 @@ VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.c
 ## <a name="upgrades-for-extensions-installed-with-an-msi"></a>与安装扩展的升级。MSI  
  某些基于 MSI 的扩展插件将模板部署到常用的模板位置，如下所示：  
   
--   **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/项模板 >**  
+- **\<Visual Studio 安装目录 > \Common7\IDE\\< ProjectTemplates/项模板 >**  
   
--   **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目/项模板 >**  
+- **\<Visual Studio 安装目录 > \Common7\IDE\Extensions\\< ExtensionName\>\\< 项目/项模板 >**  
   
- 如果你的扩展执行的基于 MSI 的部署，需要手动生成模板清单，并确保它包含在扩展安装程序中。 您应比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看需要包含  
+  如果你的扩展执行的基于 MSI 的部署，需要手动生成模板清单，并确保它包含在扩展安装程序中。 您应比较上面列出的.vstman 示例和[Visual Studio 模板清单架构参考](../extensibility/visual-studio-template-manifest-schema-reference.md)。 若要查看需要包含  
   
- 应创建单独的项目和项模板清单，它们应指向根模板目录指定更高版本。 您应创建一个清单，每个扩展和区域设置。  
+  应创建单独的项目和项模板清单，它们应指向根模板目录指定更高版本。 您应创建一个清单，每个扩展和区域设置。  
   
 ## <a name="troubleshooting-template-installation"></a>模板安装故障排除  
  如果遇到问题，部署项目或项模板，则可以启用诊断日志记录。  
   
-1.  运行以下命令以设置注册表项来启用日志记录：  
+1. 运行以下命令以设置注册表项来启用日志记录：  
   
-     **reg 添加 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
+    **reg 添加 HKCU\software\microsoft\visualstudio\15.0_Config\VSTemplate /v EnableTemplateDiscoveryLog /t REG_DWORD /d 1**  
   
-2.  启动 Visual Studio，并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在显示在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**。 每个模板树初始化附加到此日志条目。  
+2. 启动 Visual Studio，并启动新项目和新项对话框，以便初始化两个模板树。 模板日志现在显示在 **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**。 每个模板树初始化附加到此日志条目。  
   
- 日志文件包含以下列：  
+   日志文件包含以下列：  
   
 -   **FullPathToTemplate**，其中包含以下值：  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59ff131289d5ae69cc66f3069bb7fd693e7878f2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7e0acee43c05332dd3f9f10eecb7ea55b02671f1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306301"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49842633"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中导航调试会话（Xaml 和 C#）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,29 +93,29 @@ ms.locfileid: "49306301"
   
  单步执行某个代码行时，调试器会执行以下操作之一：  
   
--   如果下一个语句不是对解决方案中的函数的调用，则调试器会执行该语句，移动到下一个语句中，然后挂起执行。  
+- 如果下一个语句不是对解决方案中的函数的调用，则调试器会执行该语句，移动到下一个语句中，然后挂起执行。  
   
--   如果下一个语句是对解决方案中的函数的调用，则调试器会移动到调用的函数的入口点，然后挂起执行。  
+- 如果下一个语句是对解决方案中的函数的调用，则调试器会移动到调用的函数的入口点，然后挂起执行。  
   
- 继续单步执行 Example1 的语句，直到达到退出点。 调试器会突出显示方法的右大括号。  
+  继续单步执行 Example1 的语句，直到达到退出点。 调试器会突出显示方法的右大括号。  
   
- **在数据提示中查看变量值。** 将鼠标悬停在变量名上方时，变量的名称、值和类型会显示在数据提示中。  
+  **在数据提示中查看变量值。** 将鼠标悬停在变量名上方时，变量的名称、值和类型会显示在数据提示中。  
   
- ![调试器数据提示](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
+  ![调试器数据提示](../debugger/media/dbg-basics-datatip.png "DBG_Basics_DataTip")  
   
- 将鼠标悬停在变量 `a`上方。 记下名称、值和数据类型。 将鼠标悬停在变量 `methodTrack`上方。 记下名称、值和数据类型。  
+  将鼠标悬停在变量 `a`上方。 记下名称、值和数据类型。 将鼠标悬停在变量 `methodTrack`上方。 记下名称、值和数据类型。  
   
- **在“局部变量”窗口中检查变量值。** On the **“启动调试”** 菜单上指向 **“窗口”**，然后选择 **“局部变量”**。 （键盘：Alt+4）。  
+  **在“局部变量”窗口中检查变量值。** On the **“启动调试”** 菜单上指向 **“窗口”**，然后选择 **“局部变量”**。 （键盘：Alt+4）。  
   
- ![局部变量窗口](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
+  ![局部变量窗口](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")  
   
- “局部变量”窗口是函数的参数和变量的树视图。 对象变量的属性是对象本身的子节点。 `this` 变量是每个对象方法中用于表示对象本身的隐藏参数。 在此例中，它表示 MainPage 类。 因为 `methodTrack` 是 MainPage 类的成员，所以其值和数据类型会在 `this`下方的行中列出。 展开 `this` 节点以查看 `methodTrack` 信息。  
+  “局部变量”窗口是函数的参数和变量的树视图。 对象变量的属性是对象本身的子节点。 `this` 变量是每个对象方法中用于表示对象本身的隐藏参数。 在此例中，它表示 MainPage 类。 因为 `methodTrack` 是 MainPage 类的成员，所以其值和数据类型会在 `this`下方的行中列出。 展开 `this` 节点以查看 `methodTrack` 信息。  
   
- **添加为 methodTrack 变量监视。** `methodWatch` 变量在本快速入门全篇中用于显示示例中调用的方法。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在“局部变量”窗口中右键单击变量名，然后选择 **“添加监视”**。  
+  **添加为 methodTrack 变量监视。** `methodWatch` 变量在本快速入门全篇中用于显示示例中调用的方法。 要更加方便地查看变量的值，请将它添加到监视窗口中。 在“局部变量”窗口中右键单击变量名，然后选择 **“添加监视”**。  
   
- ![监视窗口](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
+  ![监视窗口](../debugger/media/dbg-basics-watchwindow.png "DBG_Basics_WatchWindow")  
   
- 可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如“局部变量”窗口和数据提示窗口中的值）。 还可以从代码编辑器将变量添加到监视窗口中。 选择要监视的变量，右键单击，然后选择 **“添加监视”**。  
+  可以在监视窗口中监视多个变量。 只要挂起执行，便会更新受监视的变量的值（如“局部变量”窗口和数据提示窗口中的值）。 还可以从代码编辑器将变量添加到监视窗口中。 选择要监视的变量，右键单击，然后选择 **“添加监视”**。  
   
 ##  <a name="BKMK_StepIntoOverOut"></a> 单步执行、逐过程执行和跳出执行方法  
  与单步执行父方法调用的方法相反，逐过程执行方法会执行子方法，然后在父方法继续时在调用方法中挂起执行。 当你熟悉方法的工作方式，并且确定其执行不会影响正在调查的问题时，可以逐过程执行方法。  

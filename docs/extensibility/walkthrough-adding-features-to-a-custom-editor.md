@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93861fc6238949d8666072b0bf5a5cc7efdb87b
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 7062f44fe119858e579a53325deca0ea04b46475
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498936"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873014"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练： 将功能添加到自定义编辑器
 创建自定义编辑器后，您可以向其添加更多的功能。  
@@ -122,38 +122,38 @@ ms.locfileid: "39498936"
   
 13. 通过实现公开自动化对象模型从你的编辑器`IDispatch`接口。  
   
-     有关详细信息，请参阅[参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)。  
+     有关详细信息，请参阅 [Contributing to the Automation Model](../extensibility/internals/contributing-to-the-automation-model.md)。  
   
 ## <a name="robust-programming"></a>可靠编程  
   
--   IDE 调用时将创建编辑器实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果编辑器支持多个视图`CreateEditorInstance`创建文档的数据和文档视图对象。 如果文档数据对象已打开，非 null`punkDocDataExisting`值传递给`IVsEditorFactory::CreateEditorInstance`。 编辑器工厂实现必须确定现有的文档数据对象是否通过查询在其上的相应接口兼容。 有关详细信息，请参阅[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
+- IDE 调用时将创建编辑器实例<xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>方法。 如果编辑器支持多个视图`CreateEditorInstance`创建文档的数据和文档视图对象。 如果文档数据对象已打开，非 null`punkDocDataExisting`值传递给`IVsEditorFactory::CreateEditorInstance`。 编辑器工厂实现必须确定现有的文档数据对象是否通过查询在其上的相应接口兼容。 有关详细信息，请参阅[Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md)。  
   
--   如果您使用简化的嵌入方法，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口。  
+- 如果您使用简化的嵌入方法，实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>接口。  
   
--   如果您决定使用就地激活，实现以下接口：  
+- 如果您决定使用就地激活，实现以下接口：  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleObject>  
   
-     <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
+   <xref:Microsoft.VisualStudio.OLE.Interop.IOleInPlaceActiveObject>  
   
-     <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
+   <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
-    > [!NOTE]
-    >  `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。  
+  > [!NOTE]
+  >  `IOleInPlaceComponent`接口用于避免 OLE 2 菜单合并。  
   
-     你`IOleCommandTarget`实现处理命令，如**剪切**，**副本**，并且**粘贴**。 在实现时`IOleCommandTarget`，确定您的编辑器需要自己 *.vsct*文件以定义其自己的命令菜单结构或如果它可以实现定义的标准命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单并定义其自己的工具栏。 但是，它通常是一个编辑器，用于定义其自己特定的命令，除了使用 IDE 的标准命令集所需的。 你的编辑器必须声明它使用标准命令，再定义任何新的命令、 上下文、 顶级菜单中菜单和工具栏 *.vsct*文件。 如果您创建就地激活编辑器，实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，并为在编辑器中定义的菜单和工具栏 *.vsct*文件而不是使用 OLE 2 菜单合并。  
+   你`IOleCommandTarget`实现处理命令，如**剪切**，**副本**，并且**粘贴**。 在实现时`IOleCommandTarget`，确定您的编辑器需要自己 *.vsct*文件以定义其自己的命令菜单结构或如果它可以实现定义的标准命令[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 通常情况下，编辑器使用和扩展 IDE 的菜单并定义其自己的工具栏。 但是，它通常是一个编辑器，用于定义其自己特定的命令，除了使用 IDE 的标准命令集所需的。 你的编辑器必须声明它使用标准命令，再定义任何新的命令、 上下文、 顶级菜单中菜单和工具栏 *.vsct*文件。 如果您创建就地激活编辑器，实现<xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>，并为在编辑器中定义的菜单和工具栏 *.vsct*文件而不是使用 OLE 2 菜单合并。  
   
--   若要防止出现拥挤的 UI 中的菜单命令，您应使用现有的命令在 IDE 中创建新的命令之前。 共享的命令中定义*SharedCmdDef.vsct*并*ShellCmdDef.vsct*。 这些文件安装的 VisualStudioIntegration\Common\Inc 子目录中的默认情况下你[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安装。  
+- 若要防止出现拥挤的 UI 中的菜单命令，您应使用现有的命令在 IDE 中创建新的命令之前。 共享的命令中定义*SharedCmdDef.vsct*并*ShellCmdDef.vsct*。 这些文件安装的 VisualStudioIntegration\Common\Inc 子目录中的默认情况下你[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]安装。  
   
--   `ISelectionContainer` 可以表示单个和多个选择。 每个所选的对象作为`IDispatch`对象。  
+- `ISelectionContainer` 可以表示单个和多个选择。 每个所选的对象作为`IDispatch`对象。  
   
--   IDE 实现`IOleUndoManager`作为一项服务可从访问<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或作为一个对象，可以通过实例化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 编辑器实现`IOleUndoUnit`为每个接口`Undo`操作。  
+- IDE 实现`IOleUndoManager`作为一项服务可从访问<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>或作为一个对象，可以通过实例化<xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A>。 编辑器实现`IOleUndoUnit`为每个接口`Undo`操作。  
   
--   有两个位置的自定义编辑器可以公开自动化对象：  
+- 有两个位置的自定义编辑器可以公开自动化对象：  
   
-    -   `Document.Object`  
+  -   `Document.Object`  
   
-    -   `Window.Object`  
+  -   `Window.Object`  
   
 ## <a name="see-also"></a>请参阅  
  [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)   

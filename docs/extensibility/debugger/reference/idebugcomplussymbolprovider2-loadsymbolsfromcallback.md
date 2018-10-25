@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft 文档
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 767c9218e8b666eb1f27891bd84ae110befbb798
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 2cb59685d75b249d510ee3bc979916cfe931479e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31104639"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897571"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 加载调试符号使用指定的回调方法。  
@@ -55,28 +55,28 @@ int LoadSymbolsFromCallback(
  [in]应用程序域的标识符。  
   
  `guidModule`  
- [in]模块的唯一标识符。  
+ [in]该模块的唯一标识符。  
   
  `pUnkMetadataImport`  
  [in]包含符号元数据的对象。  
   
  `pUnkCorDebugModule`  
- [in]实现对象[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
+ [in]对象，它实现[ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `bstrModuleName`  
  [in]模块的名称。  
   
  `bstrSymSearchPath`  
- [in]用于搜索符号文件的路径。  
+ [in]搜索符号文件的路径。  
   
  `pCallback`  
- [in]表示的回调方法的对象。  
+ [in]对象，该对象表示的回调方法。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**公开的对象[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
+ 下面的示例演示如何实现此方法对于**CDebugSymbolProvider**对象，它公开[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
@@ -169,5 +169,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

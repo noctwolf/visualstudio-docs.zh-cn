@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bf4f094a603c20e12b52adb452b193fb57a33
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2312b82fbcb6f4cd4ed00b288cb87283538cb372
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292794"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49855828"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ ms.locfileid: "49292794"
   
 #### <a name="to-create-a-bullseye-target-texture"></a>创建“靶心”目标纹理  
   
-1.  创建要使用的纹理。 有关如何向项目中添加纹理的信息，请参阅[图像编辑器](../designers/image-editor.md)中的“入门”部分。  
+1. 创建要使用的纹理。 有关如何向项目中添加纹理的信息，请参阅[图像编辑器](../designers/image-editor.md)中的“入门”部分。  
   
-2.  将图像大小设置为 512x512 像素。 在“属性”窗口中，将“宽度”和“高度”属性的值设置为 `512`。  
+2. 将图像大小设置为 512x512 像素。 在“属性”窗口中，将“宽度”和“高度”属性的值设置为 `512`。  
   
-3.  在“图像编辑器”工具栏上，选择“填充”工具。 “属性”窗口现在显示“填充”工具的属性以及图像属性。  
+3. 在“图像编辑器”工具栏上，选择“填充”工具。 “属性”窗口现在显示“填充”工具的属性以及图像属性。  
   
-4.  将前景色设置为完全透明的黑色。 在“属性”窗口的“颜色”属性组中，选择“前景色”。 将颜色选取器旁边的“R”、“G”、“B”和“A”属性的值设置为 `0`。  
+4. 将前景色设置为完全透明的黑色。 在“属性”窗口的“颜色”属性组中，选择“前景色”。 将颜色选取器旁边的“R”、“G”、“B”和“A”属性的值设置为 `0`。  
   
-5.  在“图像编辑器”工具栏上，选择“填充”工具，然后按住 Shift 键并选择图像中的任意点。 使用 Shift 键让填充颜色的 Alpha 值替换图像中的颜色；否则，Alpha 值将用于将填充颜色与图像中的颜色进行混合。  
+5. 在“图像编辑器”工具栏上，选择“填充”工具，然后按住 Shift 键并选择图像中的任意点。 使用 Shift 键让填充颜色的 Alpha 值替换图像中的颜色；否则，Alpha 值将用于将填充颜色与图像中的颜色进行混合。  
   
-    > [!IMPORTANT]
-    >  此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。  
+   > [!IMPORTANT]
+   >  此步骤和上一步中的颜色选择一起确保为要绘制的“靶心”目标纹理准备好了基本图像。 当用透明黑色填充图像时（因为目标的边框是黑色的），目标周围将没有混叠的项。  
   
-6.  在“图像编辑器”工具栏上，选择“椭圆形”工具。  
+6. 在“图像编辑器”工具栏上，选择“椭圆形”工具。  
   
-7.  将前景色设置为完全不透明的黑色。 将“R”、“G”和“B” 属性的值设置为 `0`，将“A”属性的值设置为 `255`。  
+7. 将前景色设置为完全不透明的黑色。 将“R”、“G”和“B” 属性的值设置为 `0`，将“A”属性的值设置为 `255`。  
   
-8.  将背景色设置为完全不透明的白色。 在“属性”窗口的“颜色”属性组中，选择“背景”。 将 **R**、**G**、**B** 和 **A** 属性的值设置为 `255`。  
+8. 将背景色设置为完全不透明的白色。 在“属性”窗口的“颜色”属性组中，选择“背景”。 将 **R**、**G**、**B** 和 **A** 属性的值设置为 `255`。  
   
 9. 设置椭圆形边框的宽度。 在“属性”窗口的“外观”属性组中，将“宽度”属性的值设置为 `8`。  
   
@@ -89,11 +89,11 @@ ms.locfileid: "49292794"
   
 17. 从像素坐标 `(192, 192)` 到像素坐标 `(320, 320)` 绘制另一个圆。  
   
- “靶心”目标纹理是完整的。 下面是最终图像（以透明度显示）。  
+    “靶心”目标纹理是完整的。 下面是最终图像（以透明度显示）。  
   
- ![完整的“靶心”目标纹理](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
+    ![完整的“靶心”目标纹理](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
- 作为下一步，可以为此纹理生成 MIP 级别。 有关信息，请参阅[如何：创建和修改 MIP 级别](../designers/how-to-create-and-modify-mip-levels.md)。  
+    作为下一步，可以为此纹理生成 MIP 级别。 有关信息，请参阅[如何：创建和修改 MIP 级别](../designers/how-to-create-and-modify-mip-levels.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [图像编辑器](../designers/image-editor.md)

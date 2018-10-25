@@ -1,5 +1,5 @@
 ---
-title: IDebugPropertyField::GetPropertySetter |Microsoft 文档
+title: IDebugPropertyField::GetPropertySetter |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055c057120753d156b19bbb359c4cc1ded3f58b5
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: e193ae70de88606d68861ccb9eb20d6926d18241
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31118656"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49905787"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 获取设置的属性的方法。  
@@ -41,15 +41,15 @@ int GetPropertySetter(
   
 #### <a name="parameters"></a>参数  
  `ppField`  
- [out]返回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)表示设置的属性的方法对象。  
+ [out]返回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)表示的方法用于设置属性的对象。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，返回，则为 S_OK;否则返回错误代码。  
+ 如果成功，则返回 S_OK;否则将返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 若要获取获取的属性的方法，调用[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)方法。  
+ 若要获取的属性的方法，调用[GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

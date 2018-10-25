@@ -17,25 +17,25 @@ caps.latest.revision: 23
 author: corob-msft
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e1332c335387342d381c1e0030c3c66003c3528b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5bcdb1e026808071167b23b829597a4d28775c02
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880645"
 ---
 # <a name="demo-sample"></a>演示示例
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 以下过程演示如何创建的示例[演练： 分析 C/c + + 代码缺陷](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md)。 这些过程将创建：  
   
--   一个[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]名为 CppDemo 解决方案。  
+- 一个[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]名为 CppDemo 解决方案。  
   
--   静态库项目命名为 CodeDefects。  
+- 静态库项目命名为 CodeDefects。  
   
--   静态库项目命名为批注。  
+- 静态库项目命名为批注。  
   
- 过程还会提供代码的静态库的标头和.cpp 文件。  
+  过程还会提供代码的静态库的标头和.cpp 文件。  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>创建 CppDemo 解决方案和 CodeDefects 项目  
   

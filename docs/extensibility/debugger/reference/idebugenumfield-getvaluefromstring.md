@@ -1,5 +1,5 @@
 ---
-title: IDebugEnumField::GetValueFromString |Microsoft 文档
+title: IDebugEnumField::GetValueFromString |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31e7985491833be8243a30bd3134db2d1af1d2cf
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 86cf8b1421769ac9a4b302e0da3676d826b9bea6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31111259"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49942226"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
-此方法返回的枚举常数的名称与关联的值。  
+此方法返回与枚举常量的名称相关联的值。  
   
 ## <a name="syntax"></a>语法  
   
@@ -43,17 +43,17 @@ int GetValueFromString(
   
 #### <a name="parameters"></a>参数  
  `pszValue`  
- [in]指定要为其获取值的名称的字符串。 请注意，对于 c + +，这是宽字符字符串。  
+ [in]指定要为其获取值的名称的字符串。 请注意，对于 c + +，这是一个宽字符字符串。  
   
  `pValue`  
  [out]返回关联的数字值。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`，如果名称不是枚举，则返回错误代码的一部分。  
+ 如果成功，则返回`S_OK`; 否则为返回`S_FALSE`，如果名称不是枚举或错误代码的一部分。  
   
 ## <a name="remarks"></a>备注  
- 此方法是区分大小写。 如果不区分大小写的搜索需要 （例如，在 Visual Basic 名称不区分大小写等语言） 中，使用[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。  
+ 此方法是区分大小写。 如果不区分大小写的搜索需要 （例如，在 Visual Basic 名称不区分大小写之类的语言），使用[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

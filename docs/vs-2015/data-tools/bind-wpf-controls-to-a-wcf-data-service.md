@@ -21,12 +21,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fdd13647eb485fa20da9c95a1c67ccc3e5f38cc9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 341ada0250c03776ab51ba62efcb98fb987088bd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251831"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812421"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,36 +36,36 @@ ms.locfileid: "49251831"
   
  本演练阐释了以下任务：  
   
--   创建一个利用 AdventureWorksLT 示例数据库中的数据生成的实体数据模型。  
+- 创建一个利用 AdventureWorksLT 示例数据库中的数据生成的实体数据模型。  
   
--   创建[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]公开实体数据模型与 WPF 应用程序中的数据。  
+- 创建[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]公开实体数据模型与 WPF 应用程序中的数据。  
   
--   通过将项从创建一组数据绑定控件**数据源**到 WPF 设计器窗口。  
+- 通过将项从创建一组数据绑定控件**数据源**到 WPF 设计器窗口。  
   
--   创建用于向前/向后导航客户记录的按钮。  
+- 创建用于向前/向后导航客户记录的按钮。  
   
--   创建一个按钮，将更改保存到控件中的数据到[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]和基础数据源。  
+- 创建一个按钮，将更改保存到控件中的数据到[!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)]和基础数据源。  
   
-     [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
+   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="prerequisites"></a>系统必备  
  你需要以下组件来完成本演练：  
   
--   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
+- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站上](http://go.microsoft.com/fwlink/?linkid=87843)。  
   
- 事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
+  事先了解以下概念也很有用，但对于完成本演练并不是必需的：  
   
--   WCF 数据服务。 有关详细信息，请参阅[概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
+- WCF 数据服务。 有关详细信息，请参阅[概述](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb)。  
   
--   [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 中的数据模型。  
+- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] 中的数据模型。  
   
--   实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅[实体框架概述](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0)。  
   
--   使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+- 使用 WPF 设计器。 有关详细信息，请参阅[WPF 和 Silverlight 设计器概述](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
--   WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
+- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)。  
   
 ## <a name="create-the-service-project"></a>创建服务项目  
  从为 [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] 创建项目开始本演练。  
@@ -207,39 +207,39 @@ ms.locfileid: "49251831"
   
 #### <a name="to-create-the-data-bound-controls"></a>创建数据绑定控件  
   
-1.  在中**数据源**窗口中，单击下拉列表菜单**SalesOrderHeaders**节点，然后选择**详细信息**。  
+1. 在中**数据源**窗口中，单击下拉列表菜单**SalesOrderHeaders**节点，然后选择**详细信息**。  
   
-2.  展开**SalesOrderHeaders**节点。  
+2. 展开**SalesOrderHeaders**节点。  
   
-3.  对于此示例中，某些字段将不会显示，因此单击以下节点旁边的下拉列表菜单并选择**None**:  
+3. 对于此示例中，某些字段将不会显示，因此单击以下节点旁边的下拉列表菜单并选择**None**:  
   
-    -   **CreditCardApprovalCode**  
+   - **CreditCardApprovalCode**  
   
-    -   **ModifiedDate**  
+   - **ModifiedDate**  
   
-    -   **类型 OnlineOrderFlag**  
+   - **类型 OnlineOrderFlag**  
   
-    -   **RevisionNumber**  
+   - **RevisionNumber**  
   
-    -   **rowguid**  
+   - **rowguid**  
   
      此操作将阻止 Visual Studio 在下一步中为这些节点创建数据绑定控件。 本演练中，假设，最终用户不需要查看此数据。  
   
-4.  从**数据源**窗口中，拖动**SalesOrderHeaders**到位于包含按钮的行下方的网格行的节点。  
+4. 从**数据源**窗口中，拖动**SalesOrderHeaders**到位于包含按钮的行下方的网格行的节点。  
   
-     Visual Studio 生成 XAML 和代码创建一组中的数据绑定的控件**产品**表。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
+    Visual Studio 生成 XAML 和代码创建一组中的数据绑定的控件**产品**表。 有关生成的 XAML 和代码的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
   
-5.  在设计器中，单击文本框旁边**客户 ID**标签。  
+5. 在设计器中，单击文本框旁边**客户 ID**标签。  
   
-6.  在中**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
+6. 在中**属性**窗口中，选择旁边的复选框**IsReadOnly**属性。  
   
-7.  设置**IsReadOnly**以下文本框中的每个属性：  
+7. 设置**IsReadOnly**以下文本框中的每个属性：  
   
-    -   **采购订单号**  
+   -   **采购订单号**  
   
-    -   **销售订单 ID**  
+   -   **销售订单 ID**  
   
-    -   **销售订单号**  
+   -   **销售订单号**  
   
 ## <a name="load-the-data-from-the-service"></a>从服务加载数据  
  使用服务代理对象从服务加载销售数据。 然后将返回的数据分配给数据源<xref:System.Windows.Data.CollectionViewSource>WPF 窗口中。  

@@ -1,5 +1,5 @@
 ---
-title: PARSEFLAGS |Microsoft 文档
+title: PARSEFLAGS |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,15 +15,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70766aef19c199a191f141947f1b5a458450c322
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7192483b4f2ce88235fc5e8d48f1d51ef71b442f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31126186"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49913002"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-指定如何分析的表达式。  
+指定如何分析表达式。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,16 +46,16 @@ public enum enum_PARSEFLAGS {
   
 ## <a name="members"></a>成员  
  PARSE_EXPRESSION  
- 指示表达式不是一个语句。  
+ 指示该表达式不是一个语句。  
   
  PARSE_FUNCTION_AS_ADDRESS  
- 该值指示表达式是进行分析 （和更高版本评估） 的地址。  
+ 指示表达式是以进行分析 （和更高版本评估） 地址。  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
  指示在设计时正在分析表达式 （即，设计器打开时）。  
   
 ## <a name="remarks"></a>备注  
- 作为参数传递给传递[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)和[分析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。  
+ 作为参数传递给[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)并[分析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。  
   
 ## <a name="requirements"></a>要求  
  标头： msdbg.h  
@@ -64,7 +64,7 @@ public enum enum_PARSEFLAGS {
   
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
  [分析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

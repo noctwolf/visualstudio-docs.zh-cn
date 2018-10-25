@@ -13,31 +13,31 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20565c798e9c94cb40a39deb4a80f9a83d67e161
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 943b75c9c5f9c0c32ab02b5e73c07282728e0beb
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174934"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49864720"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练： 创建 LINQ to SQL 类通过使用单表继承 （O/R 设计器）
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支持单表继承中，通常是在关系数据库管理系统中实现。 本演练中提供的通用步骤进行了扩展[如何： 通过使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)主题，并提供一些真实数据演示了如何使用中的继承[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。
 
  在本演练中，你将执行以下任务：
 
--   创建一个数据库表，并向其中添加数据。
+- 创建一个数据库表，并向其中添加数据。
 
--   创建一个 Windows 窗体应用程序。
+- 创建一个 Windows 窗体应用程序。
 
--   将一个 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 文件添加到项目。
+- 将一个 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 文件添加到项目。
 
--   创建新的实体类。
+- 创建新的实体类。
 
--   配置实体类使用继承。
+- 配置实体类使用继承。
 
--   查询继承类。
+- 查询继承类。
 
--   在 Windows 窗体上显示数据。
+- 在 Windows 窗体上显示数据。
 
 ## <a name="create-a-table-to-inherit-from"></a>创建一个表继承
  若要查看继承的工作方式，创建一个较小`Person`表，将其用作基类，并创建`Employee`从其继承的对象。
@@ -191,6 +191,6 @@ ms.locfileid: "37174934"
 
 - [LINQ to SQL 工具在 Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练： 创建 LINQ to SQL 类 （O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [如何： 分配存储的过程以便执行更新、 插入和删除操作 （O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [如何：分配存储过程以便执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [如何： 在 Visual Basic 或 C# 中生成对象模型](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 93b809bbb4a26ac759478e84e85fdccf5b05771e
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 4958436e7b67872648c94c8aa65137a1297461c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433202"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49863108"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Point、Bilinear、Trilinear 和 Anisotropic 纹理过滤变量
 重写相应纹理取样器上的筛选模式。  
@@ -23,42 +23,42 @@ ms.locfileid: "37433202"
 ## <a name="interpretation"></a>解释  
  不同的纹理采样方法具有不同的性能开销和图像质量。 按照增加开销（提高视觉质量）的顺序，筛选模式如下：  
   
-1.  点筛选（能耗最低、视觉质量最差）  
+1. 点筛选（能耗最低、视觉质量最差）  
   
-2.  双线性筛选  
+2. 双线性筛选  
   
-3.  三线性筛选  
+3. 三线性筛选  
   
-4.  各向异性筛选（能耗最高、视觉质量最佳）  
+4. 各向异性筛选（能耗最高、视觉质量最佳）  
   
- 如果每个变体的性能开销巨大，或随占用性能更多的筛选模式而增加，则你可以在其开销和提高图像质量之间进行权衡。 根据你的评估，你可以接受其他性能开销以提高视觉质量，或者接受降低了的视觉质量以达到更高的帧速率或回收你可以通过其他方式使用的性能。  
+   如果每个变体的性能开销巨大，或随占用性能更多的筛选模式而增加，则你可以在其开销和提高图像质量之间进行权衡。 根据你的评估，你可以接受其他性能开销以提高视觉质量，或者接受降低了的视觉质量以达到更高的帧速率或回收你可以通过其他方式使用的性能。  
   
- 如果你发现无论筛选模式如何，性能开销都可忽略或很稳定（例如，当你面向的 GPU 具有充足的着色器吞吐量和内存带宽时），则请考虑使用各向异性筛选，以在应用中达到最佳图像质量。  
+   如果你发现无论筛选模式如何，性能开销都可忽略或很稳定（例如，当你面向的 GPU 具有充足的着色器吞吐量和内存带宽时），则请考虑使用各向异性筛选，以在应用中达到最佳图像质量。  
   
 ## <a name="remarks"></a>备注  
  这些变体将在调用 `ID3D11DeviceContext::PSSetSamplers` 时重写取采样器状态，其中应用程序提供的取样器的筛选模式为以下模式之一：  
   
--   `D3D11_FILTER_MIN_MAG_MIP_POINT`  
+- `D3D11_FILTER_MIN_MAG_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_MAG_POINT_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_MAG_POINT_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT`  
+- `D3D11_FILTER_MIN_POINT_MAG_LINEAR_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_POINT_MAG_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_POINT_MAG_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_LINEAR_MAG_MIP_POINT`  
+- `D3D11_FILTER_MIN_LINEAR_MAG_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_LINEAR_MAG_POINT_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_LINEAR_MAG_POINT_MIP_LINEAR`  
   
--   `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`  
+- `D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`  
   
--   `D3D11_FILTER_MIN_MAG_MIP_LINEAR`  
+- `D3D11_FILTER_MIN_MAG_MIP_LINEAR`  
   
--   `D3D11_FILTER_ANISOTROPIC`  
+- `D3D11_FILTER_ANISOTROPIC`  
   
- 在中**点纹理筛选**变体，提供应用程序的筛选模式将替换`D3D11_FILTER_MIN_MAG_MIP_POINT`; 在**双线性纹理筛选**变体，它将替换`D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`;然后在**三线性纹理筛选**变体，它将替换`D3D11_FILTER_MIN_MAG_MIP_LINEAR`。  
+  在中**点纹理筛选**变体，提供应用程序的筛选模式将替换`D3D11_FILTER_MIN_MAG_MIP_POINT`; 在**双线性纹理筛选**变体，它将替换`D3D11_FILTER_MIN_MAG_LINEAR_MIP_POINT`;然后在**三线性纹理筛选**变体，它将替换`D3D11_FILTER_MIN_MAG_MIP_LINEAR`。  
   
- 在中**各向异性纹理筛选**变体，提供应用程序的筛选模式将替换`D3D11_FILTER_ANISOTROPIC`，并最大各向异性将设置为 16。  
+  在中**各向异性纹理筛选**变体，提供应用程序的筛选模式将替换`D3D11_FILTER_ANISOTROPIC`，并最大各向异性将设置为 16。  
   
 ## <a name="restrictions-and-limitations"></a>限制和约束  
  在 Direct3D 中，功能级别 9.1 指定最大各向异性为 2x。 因为**各向异性纹理筛选**变体尝试以独占方式使用 16 x 各向异性，帧分析功能级别 9.1 的设备上运行时播放将失败。 受此约束影响的现代设备包括基于 ARM 的 Surface RT 和 Surface 2 Windows 平板电脑。 仍然可能在某些计算机中找到的较旧 GPU 也可能会受影响，但是将它们普遍视为已过时且它们越来越不常见。  

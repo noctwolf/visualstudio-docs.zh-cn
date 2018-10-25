@@ -1,5 +1,5 @@
 ---
-title: CV_CFL_LANG |Microsoft 文档
+title: CV_CFL_LANG |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c383fd188c035dfacf41cdf86a84b4afe8dfa40d
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 63426af550894df0e9796babaec91ff5758bbf1e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31461049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49909899"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
-指定的应用程序或链接的模块的源代码语言。  
+指定应用程序或链接的模块的源代码语言。  
   
 ## <a name="syntax"></a>语法  
   
@@ -62,13 +62,13 @@ typedef enum CV_CFL_LANG {
  应用程序语言是 Microsoft 宏汇编程序。  
   
  CV_CFL_PASCAL  
- 应用程序语言是 Pascal。  
+ 应用程序语言是帕斯卡命名法。  
   
  CV_CFL_BASIC  
  应用程序语言为 BASIC。  
   
  CV_CFL_COBOL  
- 应用程序语言为 COBOL。  
+ 应用程序语言是 COBOL。  
   
  CV_CFL_LINK  
  应用程序是一个链接器生成的模块。  
@@ -77,10 +77,10 @@ typedef enum CV_CFL_LANG {
  应用程序是使用 CVTRES 工具转换的资源模块。  
   
  CV_CFL_CVTPGD  
- 应用程序是使用 CVTPGD 工具生成一个优化的 POGO 模块。  
+ 应用程序是使用 CVTPGD 工具生成的 POGO 优化模块。  
   
  CV_CFL_CSHARP  
- 应用程序语言为 C#。  
+ 应用程序语言是 C#。  
   
  CV_CFL_VB  
  应用程序语言是 Visual Basic。  
@@ -95,7 +95,7 @@ typedef enum CV_CFL_LANG {
  应用程序语言为 Jscript。  
   
  CV_CFL_MSIL  
- 应用程序语言是未知 Microsoft 中间语言 (MSIL)，可能是由于使用[/LTCG （链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)切换。  
+ 应用程序语言是未知 Microsoft 中间语言 (MSIL)，可能使用的结果[/LTCG （链接时间代码生成）](/cpp/build/reference/ltcg-link-time-code-generation)切换。  
   
  CV_CFL_HLSL  
  应用程序语言是高级别着色器语言。  

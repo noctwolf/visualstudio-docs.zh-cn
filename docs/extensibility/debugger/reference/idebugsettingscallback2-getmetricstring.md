@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString |Microsoft 文档
+title: IDebugSettingsCallback2::GetMetricString |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbb7de4157d991355f7ae3b0d5b6dcd27e374a1e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: cbe7bb633ce7674718e94a90ea56712ad83f1e9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31116537"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899105"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-检索在给定其名称的度量值的值字符串。  
+检索在给定名称的度量值的值字符串。  
   
 ## <a name="syntax"></a>语法  
   
@@ -46,13 +46,13 @@ private int GetMetricString(
   
 #### <a name="parameters"></a>参数  
  `pszType`  
- [in]度量值的类型。  
+ [in]该度量值的类型。  
   
  `guidSection`  
  [in]部分中的唯一标识符。  
   
  `pszMetric`  
- [in]度量值名称。  
+ [in]指标的名称。  
   
  `pbstrValue`  
  [out]返回度量值的值字符串。  
@@ -60,5 +60,5 @@ private int GetMetricString(
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

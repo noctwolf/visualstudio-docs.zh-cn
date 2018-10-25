@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d1a59e3e07120e01fa7757b53b71833a7bc09c
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: b918ed26e6268adb71cbf500a8499f1eed02c54d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951916"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49899326"
 ---
 # <a name="replace-in-files"></a>在文件中替换
 
@@ -36,11 +36,11 @@ ms.locfileid: "31951916"
 
 1. 在“编辑”菜单上展开“查找和替换”。
 
-1. 选择“在文件中替换”。
+2. 选择“在文件中替换”。
 
    — 或 —
 
-  如果已经打开“查找和替换”窗口，则在工具栏上选择“在文件中替换”。
+   如果已经打开“查找和替换”窗口，则在工具栏上选择“在文件中替换”。
 
 ## <a name="find-what"></a>查找内容
 

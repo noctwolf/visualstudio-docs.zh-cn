@@ -1,5 +1,5 @@
 ---
-title: StackFrameTypeEnum |Microsoft 文档
+title: StackFrameTypeEnum |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 329661e857859a1f6452506ba2984ac962bf4ff2
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: fcf5e120e769b69c064306432c3026194eb0d851
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31470811"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49853917"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 指定的堆栈帧类型。  
@@ -39,7 +39,7 @@ enum StackFrameTypeEnum {
   
 ## <a name="elements"></a>元素  
  `FrameTypeFPO`  
- 框架指针省略;FPO 信息可用。  
+ 帧指针省略;FPO 信息可用。  
   
  `FrameTypeTrap`  
  内核陷阱帧。  
@@ -51,10 +51,10 @@ enum StackFrameTypeEnum {
  标准 EBP 堆栈帧。  
   
  `FrameTypeFrameData`  
- 框架指针省略;帧数据信息可用。  
+ 帧指针省略;帧数据信息可用。  
   
  `FrameTypeUnknown`  
- 没有任何调试信息的帧。  
+ 不具有任何调试信息的帧。  
   
 ## <a name="remarks"></a>备注  
  此枚举中的值返回通过调用[idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)方法。  

@@ -10,12 +10,12 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 6ef92d907b34705e0a0461d06827f5504b0e61c3
-ms.sourcegitcommit: e5a382de633156b85b292f35e3d740f817715d47
+ms.openlocfilehash: 207e4c2d6e7db9dd40288306b3a87086c4568f76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38978305"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827709"
 ---
 # <a name="set-up-remote-workspaces"></a>设置远程工作区
 
@@ -97,15 +97,15 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 若要自行颁发自签名证书，请执行以下操作：
 
 1. 使用 SSH 连接到或登录到 Linux 计算机。
-1. 安装 `ssl-cert` 程序包：
+2. 安装 `ssl-cert` 程序包：
     ```sh
     sudo apt-get install ssl-cert
     ```
-1. 运行 `make-ssl-cert` 以生成默认的自签名 SSL 证书：
+3. 运行 `make-ssl-cert` 以生成默认的自签名 SSL 证书：
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-1. 将生成的密钥和 PEM 文件转换为 PFX。 生成的 PFX 应位于主文件夹中：
+4. 将生成的密钥和 PEM 文件转换为 PFX。 生成的 PFX 应位于主文件夹中：
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -135,12 +135,12 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 1. 下载并安装下列内容之一：
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/windows/base/)
 
-    虽然二者功能相同，但 Microsoft R Open 另外还受益于 [Intel Math Kernel 库](https://software.intel.com/intel-mkl)的附加硬件加速线性代数库。
+     虽然二者功能相同，但 Microsoft R Open 另外还受益于 [Intel Math Kernel 库](https://software.intel.com/intel-mkl)的附加硬件加速线性代数库。
 
-1. 运行 [R 服务安装程序](https://aka.ms/rtvs-services)并根据提示重启。 安装程序执行如下操作：
+2. 运行 [R 服务安装程序](https://aka.ms/rtvs-services)并根据提示重启。 安装程序执行如下操作：
 
     - 在 %PROGRAMFILES%\R Tools for Visual Studio\1.0\\ 中创建文件夹并复制所有所需二进制文件。
     - 安装 `RHostBrokerService` 和 `RUserProfileService` 并配置为自动启动。
@@ -160,12 +160,12 @@ RTVS 要求通过 HTTP 实现所有与远程服务器的通信，这就要求服
 
 1. 下载并安装下列内容之一：
 
-    - [Microsoft R Open](https://mran.microsoft.com/open/)
-    - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
+   - [Microsoft R Open](https://mran.microsoft.com/open/)
+   - [CRAN R for Windows](https://cran.r-project.org/bin/linux/ubuntu/)
 
-    虽然二者功能相同，但 Microsoft R Open 另外还受益于 [Intel Math Kernel 库](https://software.intel.com/intel-mkl)的附加硬件加速线性代数库。
+     虽然二者功能相同，但 Microsoft R Open 另外还受益于 [Intel Math Kernel 库](https://software.intel.com/intel-mkl)的附加硬件加速线性代数库。
 
-1. 请按照有关[适用于 Linux 的远程 R 服务](setting-up-remote-r-service-on-linux.md)的说明进行操作，该服务涵盖了物理 Ubuntu 计算机、Azure Ubuntu VM、适用于 Linux 的 Windows 子系统 (WSL) 和 Docker 容器（包括在 Azure 容器存储库上运行的那些容器）。
+2. 请按照有关[适用于 Linux 的远程 R 服务](setting-up-remote-r-service-on-linux.md)的说明进行操作，该服务涵盖了物理 Ubuntu 计算机、Azure Ubuntu VM、适用于 Linux 的 Windows 子系统 (WSL) 和 Docker 容器（包括在 Azure 容器存储库上运行的那些容器）。
 
 ## <a name="configure-r-services"></a>配置 R 服务
 

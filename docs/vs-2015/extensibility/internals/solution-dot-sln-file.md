@@ -17,12 +17,12 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0b6248bf97650212324fe9ca0791ccbd981d92ce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4bd3089d6916615a8b16d07b92b51f32afafaedc
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49173675"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49886950"
 ---
 # <a name="solution-sln-file"></a>解决方案 (.Sln) 文件
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,45 +65,45 @@ EndGlobal
   
  若要加载一个解决方案，该环境，请执行以下一系列任务。  
   
-1.  在环境中读取的.sln 文件的全局部分并处理标记的所有部分`preSolution`。 在这种情况下，还有一个此类语句：  
+1. 在环境中读取的.sln 文件的全局部分并处理标记的所有部分`preSolution`。 在这种情况下，还有一个此类语句：  
   
-    ```  
-    GlobalSection(SolutionConfiguration) = preSolution  
-         ConfigName.0 = Debug  
-         ConfigName.1 = Release  
-    ```  
+   ```  
+   GlobalSection(SolutionConfiguration) = preSolution  
+        ConfigName.0 = Debug  
+        ConfigName.1 = Release  
+   ```  
   
-     当在环境中读取`GlobalSection('name')`标记，它将名称映射到使用注册表的 VSPackage。 密钥名称应存在注册表中 [HKLM\\< 应用程序 ID 注册表根\>\SolutionPersistence\AggregateGUIDs]。 密钥的默认值为编写了项的 VSPackage 的包 GUID (REG_SZ)。  
+    当在环境中读取`GlobalSection('name')`标记，它将名称映射到使用注册表的 VSPackage。 密钥名称应存在注册表中 [HKLM\\< 应用程序 ID 注册表根\>\SolutionPersistence\AggregateGUIDs]。 密钥的默认值为编写了项的 VSPackage 的包 GUID (REG_SZ)。  
   
-2.  在环境加载 VSPackage，调用`QueryInterface`上的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>接口，并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>使 VSPackage 能够存储数据的部分中的数据的方法。 环境会为每个重复此过程`preSolution`部分。  
+2. 在环境加载 VSPackage，调用`QueryInterface`上的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>接口，并调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.ReadSolutionProps%2A>使 VSPackage 能够存储数据的部分中的数据的方法。 环境会为每个重复此过程`preSolution`部分。  
   
-3.  项目持久性块循环访问环境。 在这种情况下，没有一个项目。  
+3. 项目持久性块循环访问环境。 在这种情况下，没有一个项目。  
   
-    ```  
-    Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
-    "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
-    EndProject  
-    ```  
+   ```  
+   Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1",  
+   "Project1.vbproj", "{8CDD8387-B905-44A8-B5D5-07BB50E05BEA}"  
+   EndProject  
+   ```  
   
-     此语句包含 GUID 的唯一项目和项目类型 GUID。 在环境使用此信息来查找的项目文件或属于该解决方案的文件和 VSPackage 所需的每个项目。 项目 GUID 传递给<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>加载特定 VSPackage 项目相关，然后加载该项目是由 VSPackage。 在这种情况下，为此项目加载 VSPackage 是 Visual Basic。  
+    此语句包含 GUID 的唯一项目和项目类型 GUID。 在环境使用此信息来查找的项目文件或属于该解决方案的文件和 VSPackage 所需的每个项目。 项目 GUID 传递给<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>加载特定 VSPackage 项目相关，然后加载该项目是由 VSPackage。 在这种情况下，为此项目加载 VSPackage 是 Visual Basic。  
   
-     每个项目可以保留一个唯一的项目实例 ID，以便根据需要由解决方案中的其他项目进行访问。 理想情况下，如果解决方案和项目源代码管理下，项目的路径应相对于解决方案的路径。 首次加载解决方案时，项目文件不能为用户的计算机上。 通过采用相对于解决方案文件服务器上存储的项目文件，是要找出并复制到用户的计算机上的项目文件的相对简单。 然后，再将复制，并加载该项目所需的文件的其余部分。  
+    每个项目可以保留一个唯一的项目实例 ID，以便根据需要由解决方案中的其他项目进行访问。 理想情况下，如果解决方案和项目源代码管理下，项目的路径应相对于解决方案的路径。 首次加载解决方案时，项目文件不能为用户的计算机上。 通过采用相对于解决方案文件服务器上存储的项目文件，是要找出并复制到用户的计算机上的项目文件的相对简单。 然后，再将复制，并加载该项目所需的文件的其余部分。  
   
-4.  根据项目一部分的.sln 文件中包含的信息，环境将加载每个项目文件。 项目本身负责，然后填充项目层次结构，并加载任何嵌套的项目。  
+4. 根据项目一部分的.sln 文件中包含的信息，环境将加载每个项目文件。 项目本身负责，然后填充项目层次结构，并加载任何嵌套的项目。  
   
-5.  .Sln 文件的所有部分进行都处理后，解决方案将显示在解决方案资源管理器，并可供用户修改。  
+5. .Sln 文件的所有部分进行都处理后，解决方案将显示在解决方案资源管理器，并可供用户修改。  
   
- 如果任何 VSPackage 实现项目解决方案中无法加载，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A>调用方法和解决方案中的每个其他项目就会有机会以忽略在加载期间可能已做的更改。 如果出现分析错误，请尽可能多的信息保留使用的解决方案文件，并在环境显示一个对话框，警告用户该解决方案已损坏。  
+   如果任何 VSPackage 实现项目解决方案中无法加载，<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.OnProjectLoadFailure%2A>调用方法和解决方案中的每个其他项目就会有机会以忽略在加载期间可能已做的更改。 如果出现分析错误，请尽可能多的信息保留使用的解决方案文件，并在环境显示一个对话框，警告用户该解决方案已损坏。  
   
- 保存或关闭，解决方案时<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A>方法调用并传递给层次结构，以查看是否已对需要为其输入到.sln 文件的解决方案进行了更改。 Null 值，在传递给`QuerySaveSolutionProps`在<xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>，指示解决方案保留信息。 如果值不为 null，保持的信息是由指向指针的特定项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。  
+   保存或关闭，解决方案时<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.QuerySaveSolutionProps%2A>方法调用并传递给层次结构，以查看是否已对需要为其输入到.sln 文件的解决方案进行了更改。 Null 值，在传递给`QuerySaveSolutionProps`在<xref:Microsoft.VisualStudio.Shell.Interop.VSQUERYSAVESLNPROPS>，指示解决方案保留信息。 如果值不为 null，保持的信息是由指向指针的特定项目<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>接口。  
   
- 如果没有要保存信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>接口的指针调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A>方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>环境，以检索从名称-值对然后调用方法`IPropertyBag`接口，并将信息写入到.sln 文件。  
+   如果没有要保存信息<xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>接口的指针调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.SaveSolutionProps%2A>方法。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A>环境，以检索从名称-值对然后调用方法`IPropertyBag`接口，并将信息写入到.sln 文件。  
   
- `SaveSolutionProps` 并`WriteSolutionProps`对象调用以检索从保存信息的环境以递归方式`IPropertyBag`接口之前的所有更改都已都输入到.sln 文件。 这样一来，可以确保信息就会保存解决方案并打开解决方案时可用的下一次。  
+   `SaveSolutionProps` 并`WriteSolutionProps`对象调用以检索从保存信息的环境以递归方式`IPropertyBag`接口之前的所有更改都已都输入到.sln 文件。 这样一来，可以确保信息就会保存解决方案并打开解决方案时可用的下一次。  
   
- 枚举每个加载的 VSPackage 以查看是否有任何内容将保存到.sln 文件。 它是仅在加载时，查询注册表项。 因为它们是在保存解决方案时在内存中，则环境知道有关所有已加载的包。  
+   枚举每个加载的 VSPackage 以查看是否有任何内容将保存到.sln 文件。 它是仅在加载时，查询注册表项。 因为它们是在保存解决方案时在内存中，则环境知道有关所有已加载的包。  
   
- 只有.sln 文件包含中的条目`preSolution`和`postSolution`部分。 不相似的节中有.suo 文件由于解决方案需要此信息才能正确加载。 .Suo 文件包含特定于用户的选项，如不应被共享或放置在源代码管理下的私人的便笺。  
+   只有.sln 文件包含中的条目`preSolution`和`postSolution`部分。 不相似的节中有.suo 文件由于解决方案需要此信息才能正确加载。 .Suo 文件包含特定于用户的选项，如不应被共享或放置在源代码管理下的私人的便笺。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   

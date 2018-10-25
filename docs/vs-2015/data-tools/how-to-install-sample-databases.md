@@ -24,12 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: fd51bd397e6db3728c10f52db68d45e226fb605b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3ffe88fb54da26468ca510a2f1a7ab6170d88db
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251026"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49881711"
 ---
 # <a name="how-to-install-sample-databases"></a>如何：安装示例数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,11 +96,11 @@ ms.locfileid: "49251026"
   
 #### <a name="to-install-the-northwind-sample-database-for-microsoft-access"></a>安装 Microsoft Access 的 Northwind 示例数据库  
   
-1.  在 Microsoft Access 2010 或更高版本，northwind，搜索联机模板，然后选择**桌面 Northwind 2007 示例数据库**。  
+1. 在 Microsoft Access 2010 或更高版本，northwind，搜索联机模板，然后选择**桌面 Northwind 2007 示例数据库**。  
   
-2.  在 Mocrosoft Access 中，将数据库文件保存为 Northwind.accdb。  
+2. 在 Mocrosoft Access 中，将数据库文件保存为 Northwind.accdb。  
   
- Access 数据库的新扩展名是 .accdb。 请参阅[使用 Microsoft Access 2010 进行数据编程](http://msdn.microsoft.com/library/office/ff965871.aspx)。 若要使用访问连接到 Northwind 数据库，请参阅[如何： 连接到 Northwind 数据库](../data-tools/how-to-connect-to-the-northwind-database.md)。  
+   Access 数据库的新扩展名是 .accdb。 请参阅[使用 Microsoft Access 2010 进行数据编程](http://msdn.microsoft.com/library/office/ff965871.aspx)。 若要使用访问连接到 Northwind 数据库，请参阅[如何： 连接到 Northwind 数据库](../data-tools/how-to-connect-to-the-northwind-database.md)。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  示例数据库仅用于演示目的，未必展示了最佳安全实践。  

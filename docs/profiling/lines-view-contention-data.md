@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ae52ad47e18a0572a883c50f43689bdaae60234d
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 7c05f928d7c5c6f35226985147b6a4545e2a2937
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843846"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49890044"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 - 争用数据
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。  
   
  语句由以下数据标识：  
   
--   包含函数语句的源文件。  
+- 包含函数语句的源文件。  
   
--   包含该语句的函数。  
+- 包含该语句的函数。  
   
--   该语句的起始源代码行。  
+- 该语句的起始源代码行。  
   
--   该语句的起始源代码行中的字符。  
+- 该语句的起始源代码行中的字符。  
   
--   该语句的结束源代码行。  
+- 该语句的结束源代码行。  
   
--   该语句的结束源代码行中的字符。  
+- 该语句的结束源代码行中的字符。  
   
- “行名”列提供一串可排序的标识符数据。  
+  “行名”列提供一串可排序的标识符数据。  
   
- 下表介绍“行视图”报告中的各列。  
+  下表介绍“行视图”报告中的各列。  
   
 |列|描述|  
 |------------|-----------------|  

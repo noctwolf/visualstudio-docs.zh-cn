@@ -1,5 +1,5 @@
 ---
-title: IDebugPendingBreakpoint2::Delete |Microsoft 文档
+title: IDebugPendingBreakpoint2::Delete |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c28b482f0dd6e4d7ee302396c246c2e6b24eec9
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 0b5b6b91dd871582c78be62202f7355ca68ffbea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31114730"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49822080"
 ---
 # <a name="idebugpendingbreakpoint2delete"></a>IDebugPendingBreakpoint2::Delete
-删除此挂起断点和从其绑定的所有断点。  
+删除此挂起断点和从该绑定的所有断点。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,7 +42,7 @@ int Delete();
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果断点已被删除。  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何实现此方法对于简单`CPendingBreakpoint`实现对象[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)接口。  
+ 下面的示例演示如何实现此方法对于简单`CPendingBreakpoint`对象，它实现[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)接口。  
   
 ```cpp  
 HRESULT CPendingBreakpoint::Delete(void)    
@@ -84,5 +84,5 @@ HRESULT CPendingBreakpoint::Delete(void)
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

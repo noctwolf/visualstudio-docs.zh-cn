@@ -27,12 +27,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5dd01b20e84bbe39e0c082a0b598fb6742f33d9f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fa90ddb397d1c18e88ab8f25e2a0c3aee3e4d9a5
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279014"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49891123"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,21 +47,21 @@ ms.locfileid: "49279014"
 ## <a name="validate-data"></a>验证数据  
  在数据集中的验证可以通过以下方式完成：  
   
--   通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。  有关详细信息，请参阅[如何： 验证数据在列更改](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
+- 通过创建自己的特定于应用程序的验证，可在更改过程中检查各个数据列中的值。  有关详细信息，请参阅[如何： 验证数据在列更改](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
   
--   通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+- 通过创建自己的特定于应用程序的验证，可以检查整个数据时对值的数据行发生了变化。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
--   通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。 有关将验证合并到的架构定义的详细信息，请参阅[限制为包含唯一值 DataColumn](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。  
+- 通过创建关键字、 唯一约束，等等为数据集的实际架构定义的一部分。 有关将验证合并到的架构定义的详细信息，请参阅[限制为包含唯一值 DataColumn](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df)。  
   
--   通过设置的属性<xref:System.Data.DataColumn>对象，如<xref:System.Data.DataColumn.MaxLength%2A>， <xref:System.Data.DataColumn.AllowDBNull%2A>，和<xref:System.Data.DataColumn.Unique%2A>。  
+- 通过设置的属性<xref:System.Data.DataColumn>对象，如<xref:System.Data.DataColumn.MaxLength%2A>， <xref:System.Data.DataColumn.AllowDBNull%2A>，和<xref:System.Data.DataColumn.Unique%2A>。  
   
- 多个事件引发的<xref:System.Data.DataTable>对象记录中发生更改时：  
+  多个事件引发的<xref:System.Data.DataTable>对象记录中发生更改时：  
   
--   <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期间和之后的单个列对每个更改，则会引发事件。 <xref:System.Data.DataTable.ColumnChanging>事件非常有用，当你想要验证的特定列中的更改。 有关建议的更改的信息作为与事件自变量传递。 有关详细信息，请参阅[如何： 验证数据在列更改](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
+- <xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>期间和之后的单个列对每个更改，则会引发事件。 <xref:System.Data.DataTable.ColumnChanging>事件非常有用，当你想要验证的特定列中的更改。 有关建议的更改的信息作为与事件自变量传递。 有关详细信息，请参阅[如何： 验证数据在列更改](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5)。  
   
--   <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>引发事件期间和之后任何行中的更改。 <xref:System.Data.DataTable.RowChanging>事件是更多常规。 它表示在一行中，某个位置发生更改，但不知道哪些列发生改变。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+- <xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>引发事件期间和之后任何行中的更改。 <xref:System.Data.DataTable.RowChanging>事件是更多常规。 它表示在一行中，某个位置发生更改，但不知道哪些列发生改变。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
- 默认情况下，对列的每个更改因此引发四个事件。 第一个是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在更改的特定列的事件。 接下来是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果对行进行了多个更改，每次更改都会引发事件。  
+  默认情况下，对列的每个更改因此引发四个事件。 第一个是<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.ColumnChanged>正在更改的特定列的事件。 接下来是<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>事件。 如果对行进行了多个更改，每次更改都会引发事件。  
   
 > [!NOTE]
 >  数据行<xref:System.Data.DataRow.BeginEdit%2A>方法会关闭<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>后每个单独的列更改事件。 在这种情况下，不会引发事件之前<xref:System.Data.DataRow.EndEdit%2A>已调用方法，当<xref:System.Data.DataTable.RowChanging>和<xref:System.Data.DataTable.RowChanged>只需一次引发事件。 有关详细信息，请参阅[填充数据集时关闭约束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
@@ -94,13 +94,13 @@ ms.locfileid: "49279014"
   
  通过响应中的数据列的值更改时，可以验证数据<xref:System.Data.DataTable.ColumnChanging>事件。 当引发，此事件将传递的事件自变量 (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>)，其中包含个当前列的建议的值。 基于内容的`e.ProposedValue`，你可以：  
   
--   接受建议的值，方法不执行任何操作。  
+- 接受建议的值，方法不执行任何操作。  
   
--   通过设置列错误拒绝建议的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 从列更改事件处理程序中。  
+- 通过设置列错误拒绝建议的值 (<xref:System.Data.DataRow.SetColumnError%2A>) 从列更改事件处理程序中。  
   
--   （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅[ErrorProvider 组件](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)。  
+- （可选） 使用<xref:System.Windows.Forms.ErrorProvider>控件来向用户显示一条错误消息。 有关详细信息，请参阅[ErrorProvider 组件](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6)。  
   
- 此外可以在执行验证<xref:System.Data.DataTable.RowChanging>事件。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
+  此外可以在执行验证<xref:System.Data.DataTable.RowChanging>事件。 有关详细信息，请参阅[如何： 将数据验证期间行更改](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc)。  
   
 ## <a name="validate-data-during-row-changes"></a>在行更改过程中验证数据  
  可以编写代码以验证你想要验证每个的列包含满足要求的应用程序的数据。 为此，设置该列以指示其包含一个错误，是否建议的值是不可接受。 下面的示例设置列错误时`Quantity`列是小于或等于 0。 行更改事件处理程序应类似于下面的示例。  

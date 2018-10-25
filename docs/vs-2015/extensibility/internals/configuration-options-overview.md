@@ -16,12 +16,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4778fd01dde3f08bcc76cd6fc5dd5814f2bc913b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e502f78698d830c916b09968e8fa2cfbcd74fbf7
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49294289"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915771"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ ms.locfileid: "49294289"
   
  与上面的关系图相关的一些注释：  
   
--   `IDispatch` 标记为可选的配置对象中。 具体而言，是可选的能够浏览对象上的配置接口。  
+- `IDispatch` 标记为可选的配置对象中。 具体而言，是可选的能够浏览对象上的配置接口。  
   
--   `IVsDebuggableProjectCfg` 标记为可选中配置对象，但需要调试支持。  
+- `IVsDebuggableProjectCfg` 标记为可选中配置对象，但需要调试支持。  
   
--   `IVsProjectCfg2` 标记为可选中配置对象，但所需的输出分组的支持。  
+- `IVsProjectCfg2` 标记为可选中配置对象，但所需的输出分组的支持。  
   
--   `Config Provider`对象标记为可选的对象，但是实现它的位置的选项。 项目对象或上一个单独的对象，可以实现对象。  
+- `Config Provider`对象标记为可选的对象，但是实现它的位置的选项。 项目对象或上一个单独的对象，可以实现对象。  
   
--   `IVsCfgProvider2` 是所需的平台支持和配置编辑。 `IVsCfgProvider` 已足够，如果您不会实现该功能。  
+- `IVsCfgProvider2` 是所需的平台支持和配置编辑。 `IVsCfgProvider` 已足够，如果您不会实现该功能。  
   
--   在关系图中显示为单独的对象可以合并到同一个类，在实际应用中这些对象中的部分根据特定的设计要求。 在本部分的其他主题中，但是，对象和与这些对象关联的接口将讨论根据关系图中给出的方案。  
+- 在关系图中显示为单独的对象可以合并到同一个类，在实际应用中这些对象中的部分根据特定的设计要求。 在本部分的其他主题中，但是，对象和与这些对象关联的接口将讨论根据关系图中给出的方案。  
   
--   单独实现某些对象。 例如，项目和解决方案构建发生在单独的线程和要单独从对象，该对象描述生成的配置管理生成的生活的对象。  
+- 单独实现某些对象。 例如，项目和解决方案构建发生在单独的线程和要单独从对象，该对象描述生成的配置管理生成的生活的对象。  
   
- 有关对配置对象接口和上图中的配置提供程序对象接口的详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)。 此外，[构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)在配置生成器并生成依赖项对象的接口，提供了详细信息和[用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)进一步描述附加到的配置部署人员和部署依赖关系对象的接口。 最后，[输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)描述了输出组并输出对象的接口，以及如何使用属性页可以查看和设置配置相关的属性。  
+  有关对配置对象接口和上图中的配置提供程序对象接口的详细信息，请参阅[项目配置对象](../../extensibility/internals/project-configuration-object.md)。 此外，[构建的项目配置](../../extensibility/internals/project-configuration-for-building.md)在配置生成器并生成依赖项对象的接口，提供了详细信息和[用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)进一步描述附加到的配置部署人员和部署依赖关系对象的接口。 最后，[输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)描述了输出组并输出对象的接口，以及如何使用属性页可以查看和设置配置相关的属性。  
   
 ## <a name="see-also"></a>请参阅  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   

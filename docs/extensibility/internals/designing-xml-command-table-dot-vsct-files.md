@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7a28e8ea14d27eb96100a4f1f67a875746dc5f6
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 4e94d93d407f7499afbd43c8af2b7532ca1b4d8e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39499258"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49934556"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表格 (.vsct) 文件
 XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPackage。 命令项包括按钮、 组合框、 菜单、 工具栏和命令项的组。 本文介绍 XML 命令表文件、 它们如何影响命令项和菜单，以及如何创建它们。
@@ -33,37 +33,37 @@ XML 命令表 (*.vsct*) 文件描述的布局和外观的命令项对为 VSPacka
 ## <a name="differences-between-ctc-and-vsct-files"></a>.Ctc 和.vsct 文件之间的差异
  虽然标记中的 XML 背后的含义 *.vsct*文件将与这些标记中现已弃用相同 *.ctc*文件格式，其实现是稍有不同：
 
--   新 **\<extern >** 标记是其中引用其他 *.h*文件以进行编译，这些文件以查找如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具栏。
+- 新 **\<extern >** 标记是其中引用其他 *.h*文件以进行编译，这些文件以查找如[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]工具栏。
 
--   虽然 *.vsct*文件支持 **/include**语句，为 *.ctc*文件，它还具有一个新**\<导入 >** 元素。 其差异是， **/include**引入了*所有*的信息，而**\<导入 >** 将仅在名称中。
+- 虽然 *.vsct*文件支持 **/include**语句，为 *.ctc*文件，它还具有一个新**\<导入 >** 元素。 其差异是， **/include**引入了*所有*的信息，而**\<导入 >** 将仅在名称中。
 
--   虽然 *.ctc*文件需要在其中定义预处理器指令的标头文件，不需要 *.vsct*文件。 相反，将在指令放置在符号表中，位于**\<符号 >** 元素，位于底部 *.vsct*文件。
+- 虽然 *.ctc*文件需要在其中定义预处理器指令的标头文件，不需要 *.vsct*文件。 相反，将在指令放置在符号表中，位于**\<符号 >** 元素，位于底部 *.vsct*文件。
 
--   *.vsct*文件功能**\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。
+- *.vsct*文件功能**\<批注 >** 标记，它使您可以嵌入您喜欢，如说明或甚至图片的任何信息。
 
--   值存储为项的特性。
+- 值存储为项的特性。
 
--   可以单独存储或堆积图命令标志。  IntelliSense，但是，不适用于堆积的命令标志。 有关命令标志的详细信息，请参阅[CommandFlag 元素](../../extensibility/command-flag-element.md)。
+- 可以单独存储或堆积图命令标志。  IntelliSense，但是，不适用于堆积的命令标志。 有关命令标志的详细信息，请参阅[CommandFlag 元素](../../extensibility/command-flag-element.md)。
 
--   可以指定多个类型，例如拆分下拉列表、 combos，等等。
+- 可以指定多个类型，例如拆分下拉列表、 combos，等等。
 
--   Guid 不验证。
+- Guid 不验证。
 
--   每个 UI 元素有一个字符串，表示与它一起显示的文本。
+- 每个 UI 元素有一个字符串，表示与它一起显示的文本。
 
--   父级是可选的。 如果省略，则这*未知组*使用。
+- 父级是可选的。 如果省略，则这*未知组*使用。
 
--   *图标*参数是可选的。
+- *图标*参数是可选的。
 
--   位图部分： 此部分是中的相同 *.ctc*文件，只不过现在可以指定将由请求中的 Href 通过文件名*vsct.exe*编译器在编译时。
+- 位图部分： 此部分是中的相同 *.ctc*文件，只不过现在可以指定将由请求中的 Href 通过文件名*vsct.exe*编译器在编译时。
 
--   ResID： 旧位图的资源 ID 可以是使用和仍处于工作中的相同 *.ctc*文件。
+- ResID： 旧位图的资源 ID 可以是使用和仍处于工作中的相同 *.ctc*文件。
 
--   HRef： 一个新的方法，允许您指定的位图资源文件的名称。 它假定，将使用所有，因此可以省略使用的部分。 编译器将首先搜索文件，然后在任何网络共享上的本地资源，并且任何资源由 **/I**切换。
+- HRef： 一个新的方法，允许您指定的位图资源文件的名称。 它假定，将使用所有，因此可以省略使用的部分。 编译器将首先搜索文件，然后在任何网络共享上的本地资源，并且任何资源由 **/I**切换。
 
--   键绑定： 不再需要指定一个仿真程序。 如果指定一个，则编译器将假定在编辑器和仿真程序是相同的。
+- 键绑定： 不再需要指定一个仿真程序。 如果指定一个，则编译器将假定在编辑器和仿真程序是相同的。
 
--   Keychord: Keychord 已被删除。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字符、 十六进制、 或 VK 常量。
+- Keychord: Keychord 已被删除。 新的格式是*Key1、 Mod1、 Key2、 Mod2*。  您可以指定字符、 十六进制、 或 VK 常量。
        
 新的编译器*vsct.exe*，将同时编译 *.ctc*并 *.vsct*文件。 旧*ctc.exe*编译器，但是，将不识别或编译 *.vsct*文件。
 

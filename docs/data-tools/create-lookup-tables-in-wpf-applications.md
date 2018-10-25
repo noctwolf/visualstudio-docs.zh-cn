@@ -18,12 +18,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98dbffecc51b19a40b1b54cc9afc654fb850155b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: bbecb481d96df1071388e834d44f8f712def2935
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39176123"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49924188"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>在 WPF 应用程序中创建查找表
 术语*查找表*(有时称为*查找绑定*) 介绍了一个控件，显示来自一个数据表基于另一个表中的外键字段的值的信息。 可以通过拖动对主节点的父表中创建查找表或对象中**数据源**窗口拖到已绑定到列或相关的子表中的属性的控件。
@@ -83,7 +83,7 @@ ms.locfileid: "39176123"
      Visual Studio 来配置查找绑定在控件上设置某些属性。 下表列出了 Visual Studio 会修改的属性。 如果有必要，您可以更改这些属性在 XAML 中或在**属性**窗口。
 
     |属性|设置说明|
-    |--------------|----------------------------|
+    |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|此属性指定的集合或用于获取在控件中显示的数据的绑定。 Visual Studio 将此属性设置为<xref:System.Windows.Data.CollectionViewSource>拖到控件的父数据。|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|此属性指定的控件中显示的数据项的路径。 Visual Studio 后为主键，具有字符串数据类型将此属性设置为第一列或父数据中的属性。<br /><br /> 如果你想要在父数据中显示不同的列或属性，此属性更改为不同的属性的路径。|
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 将此属性绑定到列或拖动到设计器中的子数据的属性。 这是父数据的外键。|

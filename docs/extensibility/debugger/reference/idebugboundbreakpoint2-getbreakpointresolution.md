@@ -1,5 +1,5 @@
 ---
-title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft 文档
+title: IDebugBoundBreakpoint2::GetBreakpointResolution |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35337b26053876c9009be124bba9791743f53009
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 7d58c58dbbaad6d57518c8f13620029034ae4b76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31102946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920386"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
-获取描述此断点的断点分辨率。  
+获取描述此断点的断点解决方法。  
   
 ## <a name="syntax"></a>语法  
   
@@ -42,17 +42,17 @@ int GetBreakpointResolution(
   
 #### <a name="parameters"></a>参数  
  `ppBPResolution`  
- [out]返回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)接口表示以下项之一：  
+ [out]返回[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)接口，表示以下值之一：  
   
--   描述代码中的位置，其中已绑定一个代码断点的断点解析对象。  
+-   断点解析对象，描述代码中绑定一个代码断点的位置。  
   
--   数据断点已绑定其中数据位置。  
+-   数据断点已绑定到的位置数据位置。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则为返回错误代码。 返回`E_BP_DELETED`如果绑定的断点对象的状态设置为`BPS_DELETED`(属于[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚举)。  
   
 ## <a name="remarks"></a>备注  
- 调用[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)方法来确定断点解析是否代码或数据。  
+ 调用[GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)方法来确定断点解决方法是代码或数据。  
   
 ## <a name="example"></a>示例  
  下面的示例演示如何实现此方法对于简单`CBoundBreakpoint`公开的对象[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)接口。  
@@ -88,7 +88,7 @@ HRESULT CBoundBreakpoint::GetBreakpointResolution(
 }    
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
  [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md)

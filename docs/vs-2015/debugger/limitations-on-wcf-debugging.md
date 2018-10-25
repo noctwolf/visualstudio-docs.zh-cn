@@ -22,25 +22,25 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4e28ee8c4fa17eca8f2b5419b1d9aefb229fd020
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 5e5d49b70cc594a05bae8056fe8139e405e15cba
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219149"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49888087"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 有三种开始 WCF 服务调试的方式：  
   
--   调试调用服务的客户端进程。 调试器单步执行该服务。 该服务不必与客户端应用程序处于同一个解决方案中。  
+- 调试调用服务的客户端进程。 调试器单步执行该服务。 该服务不必与客户端应用程序处于同一个解决方案中。  
   
--   调试请求服务的客户端进程。 该服务必须是解决方案的一部分。  
+- 调试请求服务的客户端进程。 该服务必须是解决方案的一部分。  
   
--   您使用**附加到进程**将附加到当前正在运行的服务。 调试将在该服务内部开始。  
+- 您使用**附加到进程**将附加到当前正在运行的服务。 调试将在该服务内部开始。  
   
- 本主题描述了有关这些方案的限制。  
+  本主题描述了有关这些方案的限制。  
   
 ## <a name="limitations-on-stepping-into-a-service"></a>单步执行服务的限制  
  若要从正在调试的客户端应用程序单步执行服务，必须满足下列条件：  

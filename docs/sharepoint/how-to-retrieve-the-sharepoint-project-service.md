@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7e2dc633621734740065b8e0c80dd34795eac830
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e8f9faa0ca539c3b5381aca4159cc4653543087a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118784"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880593"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何： 检索 SharePoint 项目服务
   您可以访问以下类型的解决方案中的 SharePoint 项目服务：  
@@ -96,11 +96,11 @@ ms.locfileid: "37118784"
   
  在 VSPackage 中，可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>对象通过使用以下方法之一：  
   
--   <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关详细信息，请参阅[如何： 获取服务](../extensibility/how-to-get-a-service.md)。  
+- <xref:System.IServiceProvider.GetService%2A>方法的派生的托管 VSPackage<xref:Microsoft.VisualStudio.Shell.Package>类。 有关详细信息，请参阅[如何： 获取服务](../extensibility/how-to-get-a-service.md)。  
   
--   静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 有关详细信息，请参阅[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
+- 静态<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。 有关详细信息，请参阅[使用 GetGlobalService](../extensibility/internals/service-essentials.md#how-to-use-getglobalservice)。  
   
- 在 Visual Studio 扩展中，有权访问<xref:EnvDTE80.DTE2>对象，可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>通过使用对象<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法的<xref:Microsoft.VisualStudio.Shell.ServiceProvider>对象。 有关详细信息，请参阅[从 DTE 对象获取服务](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
+  在 Visual Studio 扩展中，有权访问<xref:EnvDTE80.DTE2>对象，可以请求<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService>通过使用对象<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>方法的<xref:Microsoft.VisualStudio.Shell.ServiceProvider>对象。 有关详细信息，请参阅[从 DTE 对象获取服务](../extensibility/how-to-get-a-service.md#getting-a-service-from-the-dte-object)。  
   
 ## <a name="see-also"></a>请参阅
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)   

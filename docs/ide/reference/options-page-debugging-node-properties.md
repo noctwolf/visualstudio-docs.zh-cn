@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d0556dd29e37f45b460e3dde271384e94b1c09ed
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951773"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49920893"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。
@@ -24,7 +24,7 @@ ms.locfileid: "31951773"
  `DTE.Properties("Debugging", "General")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |PromptOnBreakpointDelete|Get/Set (Boolean)|确定调试器是否在删除项目中的所有断点之前请示授权。|
 |BreakAllProcesses|Get/Set (Boolean)|确定调试器是否在单个进程中断时中断所有进程。|
 |BreakAtBoundaries|Get/Set (Boolean)|确定当异常跨越 AppDomains 之间或托管代码和本机代码之间的边框时，调试器是否中断执行。|
@@ -54,7 +54,7 @@ ms.locfileid: "31951773"
  `DTE.Properties("Debugging", "EditAndContinue")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |EnableEditAndContinue|Get/Set (Boolean)|确定是否启用“编辑并继续”。 此选项适用于所有支持“编辑并继续”的语言。|
 |InvokedByCommands|Get/Set (Boolean)|确定当用户选择调试命令（例如“单步执行”或“继续”）时，是否自动将“编辑并继续”应用代码更改。 此选项仅适用于本机代码。|
 |InvokedByCommandsAskFirst|Get/Set (Boolean)|确定当用户选择调试命令（例如“单步执行”或“继续”）时，“编辑并继续”是否提示用户授权以应用代码更改。 此选项仅适用于本机代码。|
@@ -66,7 +66,7 @@ ms.locfileid: "31951773"
  `DTE.Properties("Debugging", "JustInTime")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |JitManaged|Get/Set (Boolean)|确定是否为托管代码启用实时调试。|
 |JitNative|Get/Set (Boolean)|确定是否为本机代码启用实时调试。|
 |JitScript|Get/Set (Boolean)|确定是否为脚本代码启用实时调试。|
@@ -75,7 +75,7 @@ ms.locfileid: "31951773"
  `DTE.Properties("Debugging", "Native")`
 
 |属性项名称|“值”|描述|
-|------------------------|-----------|-----------------|
+| - |-----------|-----------------|
 |LoadDllExports|Get/Set (Boolean)|确定调试器是否加载 DLL 导出表。|
 |EnableRPC|Get/Set (Boolean)|确定调试器是否可以单步执行 COM 远程过程调用。|
 

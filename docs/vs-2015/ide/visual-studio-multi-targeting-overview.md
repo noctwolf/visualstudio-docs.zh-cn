@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ab13a42c706b5f8c45f128e54bb4630b164e6a2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 03ffd0a1d7150d03a801fdc839f48b072f278130
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49277064"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857674"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目标概述
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,29 +37,29 @@ ms.locfileid: "49277064"
 ## <a name="framework-targeting-features"></a>框架目标功能  
  框架目标包含下列功能：  
   
--   打开针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 早期版本的项目时，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 可自动升级项目或者保持目标不变。  
+- 打开针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 早期版本的项目时，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 可自动升级项目或者保持目标不变。  
   
--   创建项目时，可指定要面向的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。  
+- 创建项目时，可指定要面向的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本。  
   
--   可更改被现有项目视为目标的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的版本。  
+- 可更改被现有项目视为目标的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 的版本。  
   
--   可在同一解决方案的各项目中将不同的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本视为目标。  
+- 可在同一解决方案的各项目中将不同的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本视为目标。  
   
--   更改项目所面向的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本时，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 会对引用和配置文件进行任何所需更改。  
+- 更改项目所面向的 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 版本时，[!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] 会对引用和配置文件进行任何所需更改。  
   
- 处理针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 早期版本的项目时，Visual Studio 会对开发环境进行如下动态更改：  
+  处理针对 [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] 早期版本的项目时，Visual Studio 会对开发环境进行如下动态更改：  
   
--   筛选“新建项目”对话框、“添加新项”对话框、“添加新引用”对话框和“添加服务引用”对话框中的项，以忽略在目标版本中不可用的选项。  
+- 筛选“新建项目”对话框、“添加新项”对话框、“添加新引用”对话框和“添加服务引用”对话框中的项，以忽略在目标版本中不可用的选项。  
   
--   在“工具箱”中筛选自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新版本。  
+- 在“工具箱”中筛选自定义控件，以删除在目标版本中不可用的控件，并在多个控件可用时仅显示最新版本。  
   
--   对 IntelliSense 进行筛选，以忽略在目标版本中不可用的语言功能。  
+- 对 IntelliSense 进行筛选，以忽略在目标版本中不可用的语言功能。  
   
--   筛选“属性”窗口中的属性，以忽略在目标版本中不可用的属性。  
+- 筛选“属性”窗口中的属性，以忽略在目标版本中不可用的属性。  
   
--   筛选菜单选项以忽略在目标版本中不可用的选项。  
+- 筛选菜单选项以忽略在目标版本中不可用的选项。  
   
--   对于生成，Visual Studio 使用适用于目标版本的编译器版本和编译器选项。  
+- 对于生成，Visual Studio 使用适用于目标版本的编译器版本和编译器选项。  
   
 > [!NOTE]
 >  框架目标不保证应用程序可正常运行。 必须对应用程序进行测试，以确保其能够针对目标版本运行。 无法面向版本早于 .NET Framework 2.0 的 Framework。  

@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d68f1ab876ffc24e5b422265f427ef5b26937d23
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f470c55b08cc559e481ed75e962fda4f0e625a5c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256946"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49871285"
 ---
 # <a name="help-viewer-administrator-guide"></a>帮助查看器管理员指南
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +47,18 @@ ms.locfileid: "49256946"
   
  要求：  
   
--   客户端计算机必须可以访问 Internet。  
+- 客户端计算机必须可以访问 Internet。  
   
--   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
+- 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
   
- 注意：  
+  注意：  
   
--   帮助的默认源仍处于联机状态。  
+- 帮助的默认源仍处于联机状态。  
   
-    > [!TIP]
-    >  可以通过修改 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 注册表项来更改帮助的默认源。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+  > [!TIP]
+  >  可以通过修改 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp 注册表项来更改帮助的默认源。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
--   系统仍会在首次启动 Visual Studio 时提示客户端安装基本帮助内容。 可以通过修改 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 注册表项来禁用此提示。  
+- 系统仍会在首次启动 Visual Studio 时提示客户端安装基本帮助内容。 可以通过修改 HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection 注册表项来禁用此提示。  
   
 ### <a name="example"></a>示例  
  以下示例将用于 Visual Studio 的英语内容安装到客户端计算机。  
@@ -78,47 +78,47 @@ ms.locfileid: "49256946"
   
  要求:  
   
--   用于安装内容集的计算机必须可以访问 Internet。  
+- 用于安装内容集的计算机必须可以访问 Internet。  
   
--   用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
+- 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。  
   
-    > [!TIP]
-    >  如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+  > [!TIP]
+  >  如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
- 注意：  
+  注意：  
   
--   如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+- 如果用户没有管理员权限，则建议在帮助查看器中禁用“管理内容”选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
--   帮助的默认源仍处于联机状态。  
+- 帮助的默认源仍处于联机状态。  
   
--   系统仍会在首次启动 Visual Studio 时提示客户端安装基本帮助内容。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
+- 系统仍会在首次启动 Visual Studio 时提示客户端安装基本帮助内容。 有关详细信息，请参阅 [Help Content Manager 重写](../ide/help-content-manager-overrides.md)。  
   
 ### <a name="create-the-content-set"></a>创建内容集  
  必须先在目标计算机上卸载所有本地 Visual Studio 内容，然后才能创建基本内容集。  
   
 ##### <a name="to-uninstall-local-help"></a>卸载本地帮助  
   
-1.  在 Help Viewer 中，选择“管理内容”选项卡。  
+1. 在 Help Viewer 中，选择“管理内容”选项卡。  
   
-2.  下**可用的文档**，导航到 Visual Studio 文档集。  
+2. 下**可用的文档**，导航到 Visual Studio 文档集。  
   
-3.  选择每个子项旁的“删除”。  
+3. 选择每个子项旁的“删除”。  
   
-4.  选择**启动**卸载  
+4. 选择**启动**卸载  
   
-5.  浏览到*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12，并验证该文件夹仅包含文件 catalogType.xml。  
+5. 浏览到*n*: \ProgramData\Microsoft\HelpLibrary2\Catalogs\VisualStudio12，并验证该文件夹仅包含文件 catalogType.xml。  
   
- 一旦移除所有以前安装的本地 Visual Studio 帮助内容，便已准备好下载基本内容集。  
+   一旦移除所有以前安装的本地 Visual Studio 帮助内容，便已准备好下载基本内容集。  
   
 ##### <a name="to-download-the-content"></a>下载内容  
   
-1.  在 Help Viewer 中，选择“管理内容”选项卡。  
+1. 在 Help Viewer 中，选择“管理内容”选项卡。  
   
-2.  下**可用的文档**，导航到的文档集，你想要下载，然后选择**添加**。  
+2. 下**可用的文档**，导航到的文档集，你想要下载，然后选择**添加**。  
   
-3.  选择“启动”。  
+3. 选择“启动”。  
   
- 接下来，需要对内容进行打包，以便它可以部署到客户端计算机。  
+   接下来，需要对内容进行打包，以便它可以部署到客户端计算机。  
   
 ##### <a name="to-package-the-content"></a>对内容进行打包  
   

@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 34568cc24253eb2c0288fd7ba4311b5f33964df0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1e3a8cdd6d8551a4ea399a2ef387d383acca136c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49205058"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49873664"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>对 UML 扩展运行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 为了使代码在连续更改中保持稳定，建议你编写单元测试并将这些测试作为常规生成过程的一部分执行。 有关详细信息，请参阅[单元测试代码](../test/unit-test-your-code.md)。 若要设置用于 Visual Studio 建模扩展的测试，你需要一些关键信息。 摘要：  
   
--   [设置用于 VSIX 扩展的单元测试](#Host)  
+- [设置用于 VSIX 扩展的单元测试](#Host)  
   
-     使用 VS IDE 主机适配器运行测试。 为每个测试方法添加 `[HostType("VS IDE")]`为前缀。 运行测试时，此主机适配器将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
+   使用 VS IDE 主机适配器运行测试。 为每个测试方法添加 `[HostType("VS IDE")]`为前缀。 运行测试时，此主机适配器将启动 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 。  
   
--   [访问 DTE 和 ModelStore](#DTE)  
+- [访问 DTE 和 ModelStore](#DTE)  
   
-     通常，在测试初始化中，你必须打开模型及其关系图并访问 `IModelStore` 。  
+   通常，在测试初始化中，你必须打开模型及其关系图并访问 `IModelStore` 。  
   
--   [打开模型图](#Opening)  
+- [打开模型图](#Opening)  
   
-     可以在 `EnvDTE.ProjectItem` 和 `IDiagramContext`之间来回转换。  
+   可以在 `EnvDTE.ProjectItem` 和 `IDiagramContext`之间来回转换。  
   
--   [在 UI 线程中执行的更改](#UiThread)  
+- [在 UI 线程中执行的更改](#UiThread)  
   
-     必须在 UI 线程中执行用于更改模型存储的测试。 可以将 `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` 用于此测试。  
+   必须在 UI 线程中执行用于更改模型存储的测试。 可以将 `Microsoft.VSSDK.Tools.VsIdeTesting.UIThreadInvoker` 用于此测试。  
   
--   [测试命令、 笔势和其他 MEF 组件](#MEF)  
+- [测试命令、 笔势和其他 MEF 组件](#MEF)  
   
-     若要测试 MEF 组件，你必须将这些组件的导入属性显式连接到值。  
+   若要测试 MEF 组件，你必须将这些组件的导入属性显式连接到值。  
   
- 以下各节详述了这些内容。  
+  以下各节详述了这些内容。  
   
- 可在 [UML – 使用文本快速输入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)上的代码示例库中找到经单元测试的 UML 扩展的示例。  
+  可在 [UML – 使用文本快速输入](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)上的代码示例库中找到经单元测试的 UML 扩展的示例。  
   
 ## <a name="requirements"></a>要求  
  请参阅 [要求](../modeling/extend-uml-models-and-diagrams.md#Requirements)。  

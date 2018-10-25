@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09792f951b0cc77d2087904b1dcebc1c9b3b6a06
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 5bd810d0c2f33d4a8ddbffd876357ead7e0e5e7a
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816503"
 ---
 # <a name="command-design"></a>命令设计
 当将命令添加到 VSPackage 时，必须指定它的位置显示、 时可用，和它的方式进行处理。  
@@ -44,15 +44,15 @@ ms.locfileid: "39513054"
 ### <a name="command-organization"></a>命令组织  
  在环境定位按组、 优先级别和菜单命令。  
   
--   组是逻辑集合的相关命令，例如，则**剪切**，**副本**，并**粘贴**命令组。 组是显示在菜单的命令。  
+- 组是逻辑集合的相关命令，例如，则**剪切**，**副本**，并**粘贴**命令组。 组是显示在菜单的命令。  
   
--   优先级确定在组中的单个命令的菜单的显示的顺序。  
+- 优先级确定在组中的单个命令的菜单的显示的顺序。  
   
--   菜单作为容器的组。  
+- 菜单作为容器的组。  
   
- 某些命令、 组和菜单，预定义环境。 有关详细信息，请参阅[的默认命令、 组和工具栏位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
+  某些命令、 组和菜单，预定义环境。 有关详细信息，请参阅[的默认命令、 组和工具栏位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)。  
   
- 命令可以分配给主组。 主要组控制的命令在主菜单结构和位置**自定义**对话框。 命令可以出现在多个组;例如，命令可以是主菜单、 快捷菜单和工具栏。 有关详细信息，请参阅[Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
+  命令可以分配给主组。 主要组控制的命令在主菜单结构和位置**自定义**对话框。 命令可以出现在多个组;例如，命令可以是主菜单、 快捷菜单和工具栏。 有关详细信息，请参阅[Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)。  
   
 ### <a name="command-routing"></a>命令传送  
  调用和 Vspackage 的路由命令的过程不同于对象实例上调用方法的过程。  

@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6b739d91bfe5931d1af853ec01e145a0cb2c85
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: 9ebfc937ee5cf6025761bb9da5d5f6589caf77d1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153293"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49901042"
 ---
 # <a name="add-command-line-switches"></a>添加命令行开关
 可以添加适用于你的 VSPackage 的命令行开关时*devenv.exe*执行。 使用<xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute>声明的开关和其属性的名称。 在此示例中，MySwitch 的交换机添加为子类名为 VSPackage **AddCommandSwitchPackage**不带任何参数且会自动加载 VSPackage。  
@@ -36,7 +36,7 @@ ms.locfileid: "39153293"
 |-|-|-|-|
 | 参数 | 描述|
 | 自变量 | 开关的参数数目。 可以是"*"，或自变量的列表。 |
-| DemandLoad |  如果此值设置为 1，否则设置为 0，则会自动加载 VSPackage。 |  
+| DemandLoad | 如果此值设置为 1，否则设置为 0，则会自动加载 VSPackage。 |  
 | HelpString | 帮助字符串或资源 ID 的字符串以显示与**devenv /？**。 |
 | name | 开关。 |
 | PackageGuid | 包的 GUID。 |  
@@ -54,11 +54,11 @@ ms.locfileid: "39153293"
 ## <a name="retrieve-command-line-switches"></a>检索命令行开关  
  加载包时，可以通过完成以下步骤检索的命令行开关。  
   
-1.  在你的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>实现中，调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>若要获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>接口。  
+1. 在你的 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>实现中，调用`QueryService`上<xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine>若要获取<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>接口。  
   
-2.  调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>来检索用户输入的命令行开关。  
+2. 调用<xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A>来检索用户输入的命令行开关。  
   
- 下面的代码演示如何找出是否由用户输入 MySwitch 命令行开关：  
+   下面的代码演示如何找出是否由用户输入 MySwitch 命令行开关：  
   
 ```csharp  
 IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  

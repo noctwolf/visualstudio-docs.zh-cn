@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1ad7efda94ea3914caafa39d39870a77b08056d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e937f08ba73c8014bc7917fa0149b110ef349678
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278234"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897584"
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ JavaScript 是 Visual Studio 中的一级语言。 当你在 Visual Studio IDE �
   
  可能需要特定版本的 Visual Studio 或特定 Visual Studio 扩展来使用 HTML 和 JavaScript 开发特定应用程序类型和服务。 下面的列表包含指向详细信息的链接。  
   
--   若要使用 Apache Cordova 创建跨平台的应用，请[获取 Visual Studio 用于 Apache Cordova 的工具](http://go.microsoft.com/fwlink/p/?LinkId=397606)。  
+- 若要使用 Apache Cordova 创建跨平台的应用，请[获取 Visual Studio 用于 Apache Cordova 的工具](http://go.microsoft.com/fwlink/p/?LinkId=397606)。  
   
--   若要创建 [Windows 应用商店](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 和通用应用（支持这两种平台的应用），请[获取这些工具](http://dev.windows.com/en-us/develop/downloads)。  
+- 若要创建 [Windows 应用商店](http://dev.windows.com/develop)、[Windows Phone](http://dev.windows.com/develop) 和通用应用（支持这两种平台的应用），请[获取这些工具](http://dev.windows.com/en-us/develop/downloads)。  
   
--   若要创建基于云的服务，请参阅 [Microsoft Azure 站点](http://azure.microsoft.com/documentation/)。  
+- 若要创建基于云的服务，请参阅 [Microsoft Azure 站点](http://azure.microsoft.com/documentation/)。  
   
--   若要创建网站和 Web 应用，请[参阅 ASP.NET 站点](http://www.asp.net/get-started/websites)。  
+- 若要创建网站和 Web 应用，请[参阅 ASP.NET 站点](http://www.asp.net/get-started/websites)。  
   
-    > [!NOTE]
-    >  你可以创建一个空的 ASP.Net Web 站点，然后将其用于 HTML、CSS 和 JavaScript 编程。 由 ASP.NET 提供的 Webconfig 文件会在 Visual Studio 中启用调试（你也可以在运行该应用时使用 F12 工具）。  
+  > [!NOTE]
+  >  你可以创建一个空的 ASP.Net Web 站点，然后将其用于 HTML、CSS 和 JavaScript 编程。 由 ASP.NET 提供的 Webconfig 文件会在 Visual Studio 中启用调试（你也可以在运行该应用时使用 F12 工具）。  
   
- Visual Studio 中的 JavaScript 编辑器提供 IntelliSense 支持。 有关详细信息，请参阅 [JavaScript IntelliSense](../ide/javascript-intellisense.md)。  
+  Visual Studio 中的 JavaScript 编辑器提供 IntelliSense 支持。 有关详细信息，请参阅 [JavaScript IntelliSense](../ide/javascript-intellisense.md)。  
   
 ## <a name="whats-new-in-javascript"></a>JavaScript 的新增功能  
  下表列出了 JavaScript 的新增功能。  

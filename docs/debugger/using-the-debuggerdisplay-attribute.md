@@ -14,15 +14,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc83fc859e99a86b1057a02b7cfb9ff2e1232af
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: d3adb481ba06c086db3a272c026543464018b542
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635520"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926197"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>使用 DebuggerDisplay 特性
-<xref:System.Diagnostics.DebuggerDisplayAttribute>控制对象、 属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
+<xref:System.Diagnostics.DebuggerDisplayAttribute> 控制对象、属性或字段在调试器变量窗口中的显示方式。 此特性可应用于类型、委托、属性、字段和程序集。  
   
  `DebuggerDisplay` 特性有一个参数，此参数是要在值列中为类型的实例显示的字符串。 此字符串可以包含大括号（`{` 和 `}`）。 一对大括号之间的文本将作为字段、属性或方法进行计算。  
   
@@ -36,7 +36,7 @@ ms.locfileid: "42635520"
  下表显示 `DebuggerDisplay` 特性的一些可能用法和示例输出。  
   
 |特性|在值列中显示的输出|  
-|---------------|------------------------------------------------|  
+|---------------| - |  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 在具有 `x` 和 `y`字段的类型上使用。|`x = 5 y = 18`|  
 |`[DebuggerDisplay("String value is {getString()}")]`参数语法在不同的语言中会有所不同。 因此，使用时要小心。|`String value is [5, 6, 6]`|  
   
@@ -61,17 +61,17 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>在 DebuggerDisplay 中使用表达式  
  虽然您可以在 DebuggerDisplay 特性中的大括号之间使用常规表达式，但建议不要这样做。  
   
- DebuggerDisplay 中的常规表达式只能隐式访问目标类型的当前实例的 `this` 指针。 该表达式不能访问别名、局部变量或指针。 如果表达式引用属性，则不处理这些属性上的特性。 例如，C# 代码`[DebuggerDisplay("Object {count - 2}")]`将显示`Object 6`如果字段`count`是 8。  
+ DebuggerDisplay 中的常规表达式只能隐式访问目标类型的当前实例的 `this` 指针。 该表达式不能访问别名、局部变量或指针。 如果表达式引用属性，则不处理这些属性上的特性。 例如，如果字段 `[DebuggerDisplay("Object {count - 2}")]`  是 8，则 C# 代码 `Object 6` 将显示 `count` 。  
   
  在 DebuggerDisplay 中使用表达式可能导致以下问题：  
   
--   计算表达式是调试器中最消耗资源的操作，并且表达式在每次显示时都会被计算。 在单步执行代码时，这可能会导致性能问题。 例如，当元素的数量很大时，一个用来在集合或列表中显示值的复杂表达式可能会很慢。  
+- 计算表达式是调试器中最消耗资源的操作，并且表达式在每次显示时都会被计算。 在单步执行代码时，这可能会导致性能问题。 例如，当元素的数量很大时，一个用来在集合或列表中显示值的复杂表达式可能会很慢。  
   
--   表达式是通过当前堆栈帧的语言表达式计算器计算的，而不是通过表达式记录语言的计算器计算的。 当语言不同时，这可能导致不可预知的结果。  
+- 表达式是通过当前堆栈帧的语言表达式计算器计算的，而不是通过表达式记录语言的计算器计算的。 当语言不同时，这可能导致不可预知的结果。  
   
--   计算表达式可更改应用程序的状态。 例如，设置属性值的表达式在执行代码时会改变属性值。  
+- 计算表达式可更改应用程序的状态。 例如，设置属性值的表达式在执行代码时会改变属性值。  
   
- 减少表达式计算可能出现的问题的一种方法是创建执行操作并返回字符串的私有属性。 然后，DebuggerDisplay 特性可以显示该私有属性的值。 以下示例实现了这种模式：  
+  减少表达式计算可能出现的问题的一种方法是创建执行操作并返回字符串的私有属性。 然后，DebuggerDisplay 特性可以显示该私有属性的值。 以下示例实现了这种模式：  
   
 ```csharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  

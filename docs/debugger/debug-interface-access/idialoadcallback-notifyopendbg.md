@@ -1,5 +1,5 @@
 ---
-title: 'Idialoadcallback:: Notifyopendbg |Microsoft 文档'
+title: 'Idialoadcallback:: Notifyopendbg |Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 717c9395805b3fe12640164261d3ec916bd8067c
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 2a51692b7ff554e656690898993d9dfb4a0eda57
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31468536"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49883245"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
 当打开候选.dbg 文件时调用。  
@@ -38,10 +38,10 @@ HRESULT NotifyOpenDBG (
  [in].Dbg 文件的完整路径。  
   
  `resultCode`  
- [in]指示是否成功的代码 (`S_OK`) 或失败的应用到此文件的负载。  
+ [in]指示是否成功的代码 (`S_OK`) 或失败的负载应用到此文件。  
   
 ## <a name="return-value"></a>返回值  
- 如果成功，则返回`S_OK`; 否则为返回错误代码。 通常忽略返回代码。  
+ 如果成功，则返回`S_OK`; 否则为返回错误代码。 返回代码通常被忽略。  
   
 ## <a name="see-also"></a>请参阅  
  [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

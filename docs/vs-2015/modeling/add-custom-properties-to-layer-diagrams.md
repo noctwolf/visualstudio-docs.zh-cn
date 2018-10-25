@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: b43f7ab5a3247bbff4954616732aa0861726cc2b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 517d9f40dc0c98ca8572c31ae256e81de864171e
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235152"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49844393"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>向层关系图添加自定义属性
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ ms.locfileid: "49235152"
   
 > [!IMPORTANT]
 >  要显示属性，您必须对要显示层属性的每台计算机做出以下更改。  
->   
->  1.  使用运行记事本**以管理员身份运行**。 打开 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
-> 2.  在 `Content` 元素中，添加：  
->   
->     ```xml  
->     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->     ```  
-> 3.  下**Visual Studio Tools**部分中的 Visual Studio 应用程序开始菜单，打开**开发人员命令提示**。  
->   
->      输入：  
->   
->      `devenv /rootSuffix /updateConfiguration`  
->   
->      `devenv /rootSuffix Exp /updateConfiguration`  
-> 4.  重新启动 Visual Studio。  
+> 
+> 1. 使用运行记事本**以管理员身份运行**。 打开 `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>    2.  在 `Content` 元素中，添加：  
+> 
+>    ```xml  
+>    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>    ```  
+>    3.  下**Visual Studio Tools**部分中的 Visual Studio 应用程序开始菜单，打开**开发人员命令提示**。  
+> 
+>    输入：  
+> 
+>    `devenv /rootSuffix /updateConfiguration`  
+> 
+>    `devenv /rootSuffix Exp /updateConfiguration`  
+>    4.  重新启动 Visual Studio。  
   
  **请确保你的代码在 VSIX 项目**  
   

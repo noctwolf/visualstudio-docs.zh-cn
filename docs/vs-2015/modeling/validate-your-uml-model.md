@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: alexhomer1
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 470eadf92fa76e294ee92899a8c92cb1391a9b58
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: c13a5e8ed5ae7fe778908af87958d4ed25951c1c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292690"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812499"
 ---
 # <a name="validate-your-uml-model"></a>验证 UML 模型
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,20 @@ ms.locfileid: "49292690"
 ## <a name="invoking-validation"></a>调用验证  
  安装验证扩展后，可以在以下情况下应用它提供的约束。 某些约束设置为仅在某些情况下应用。  
   
--   **验证命令。** 若要调用在任何时间验证，请单击**验证 UML 模型**上**体系结构**菜单。  
+- **验证命令。** 若要调用在任何时间验证，请单击**验证 UML 模型**上**体系结构**菜单。  
   
-    > [!NOTE]
-    >  仅当安装了验证约束时，才显示该命令。  
+  > [!NOTE]
+  >  仅当安装了验证约束时，才显示该命令。  
   
--   **在保存模型时。** 可以在保存模型时应用验证约束。 这些约束的目的在于帮助确保不保存你的项目解释为无效的模型。  
+- **在保存模型时。** 可以在保存模型时应用验证约束。 这些约束的目的在于帮助确保不保存你的项目解释为无效的模型。  
   
-     如有错误，系统将询问是否仍要保存该模型。 可以选择是要更正错误，还是仍然保存该模型。  
+   如有错误，系统将询问是否仍要保存该模型。 可以选择是要更正错误，还是仍然保存该模型。  
   
--   **在打开某一模型。** 打开某一模型时，可将验证方法应用于还原保存模型时存在的错误消息。 也可通过正在使用模型的不同部分的用户所做的更改之间的不一致引入错误。 有关详细信息，请参阅[共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)。  
+- **在打开某一模型。** 打开某一模型时，可将验证方法应用于还原保存模型时存在的错误消息。 也可通过正在使用模型的不同部分的用户所做的更改之间的不一致引入错误。 有关详细信息，请参阅[共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)。  
   
- 在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 错误窗口中报告验证错误。  
+  在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 错误窗口中报告验证错误。  
   
- 若要在关系图中选择不正确的元素，请双击该错误。 这仅适用于在打开的关系图中可见的错误元素。  
+  若要在关系图中选择不正确的元素，请双击该错误。 这仅适用于在打开的关系图中可见的错误元素。  
   
 ## <a name="installing-validation-constraints"></a>安装验证约束  
  约束打包在 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 扩展 (VSIX) 文件内。 通常情况下，一组约束将是扩展的一部分，它也包含其他定义（如菜单命令、配置文件和工具箱项）。  

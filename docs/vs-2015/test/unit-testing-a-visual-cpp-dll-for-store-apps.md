@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: robinr
-ms.openlocfilehash: 7da550c3091be24ba8b7be008f0695038c2b2056
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244356"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49816490"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>对应用商店应用的 Visual C++ DLL 进行单元测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -154,56 +154,56 @@ ms.locfileid: "49244356"
   
 ##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> 将测试项目耦合到 DLL 项目  
   
-1.  将 RooterLib 添加到 RooterLibTests 项目。  
+1. 将 RooterLib 添加到 RooterLibTests 项目。  
   
-    1.  在解决方案资源管理器中，选择 **RooterLibTests** 项目，然后选择快捷菜单上的“引用...”。  
+   1.  在解决方案资源管理器中，选择 **RooterLibTests** 项目，然后选择快捷菜单上的“引用...”。  
   
-    2.  在 RooterLib 项目属性对话框上，展开“通用属性”，然后选择“框架和引用”。  
+   2.  在 RooterLib 项目属性对话框上，展开“通用属性”，然后选择“框架和引用”。  
   
-    3.  选择“添加新引用....”  
+   3.  选择“添加新引用....”  
   
-    4.  在“添加引用”对话框上，展开“解决方案”，然后选择“项目”。 然后选择“RouterLib”项。  
+   4.  在“添加引用”对话框上，展开“解决方案”，然后选择“项目”。 然后选择“RouterLib”项。  
   
-2.  将 RooterLib 头文件包括到 **unittest1.cpp** 中。  
+2. 将 RooterLib 头文件包括到 **unittest1.cpp** 中。  
   
-    1.  打开 **unittest1.cpp**。  
+   1.  打开 **unittest1.cpp**。  
   
-    2.  将此代码添加到以下 `#include "CppUnitTest.h"` 行：  
+   2.  将此代码添加到以下 `#include "CppUnitTest.h"` 行：  
   
-        ```cpp  
-        #include "..\RooterLib\RooterLib.h"  
-        ```  
+       ```cpp  
+       #include "..\RooterLib\RooterLib.h"  
+       ```  
   
-3.  添加一个使用 imported 函数的测试。 将以下代码添加到 **unittest1.cpp**：  
+3. 添加一个使用 imported 函数的测试。 将以下代码添加到 **unittest1.cpp**：  
   
-    ```  
-    TEST_METHOD(BasicTest)  
-    {  
-        CRooterLib rooter;  
-        Assert::AreEqual(  
-            // Expected value:  
-            0.0,   
-            // Actual value:  
-            rooter.SquareRoot(0.0),   
-            // Tolerance:  
-            0.01,  
-            // Message:  
-            L"Basic test failed",  
-            // Line number - used if there is no PDB file:  
-            LINE_INFO());  
-    }  
+   ```  
+   TEST_METHOD(BasicTest)  
+   {  
+       CRooterLib rooter;  
+       Assert::AreEqual(  
+           // Expected value:  
+           0.0,   
+           // Actual value:  
+           rooter.SquareRoot(0.0),   
+           // Tolerance:  
+           0.01,  
+           // Message:  
+           L"Basic test failed",  
+           // Line number - used if there is no PDB file:  
+           LINE_INFO());  
+   }  
   
-    ```  
+   ```  
   
-4.  生成解决方案。  
+4. 生成解决方案。  
   
-     新测试将显示在测试资源管理器的“未运行的测试”节点中。  
+    新测试将显示在测试资源管理器的“未运行的测试”节点中。  
   
-5.  在“测试资源管理器”中，选择 **“全部运行”**。  
+5. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
-     ![已通过基本测试](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
+    ![已通过基本测试](../test/media/ute-cpp-testexplorer-basictest.png "UTE_Cpp_TestExplorer_BasicTest")  
   
- 你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
+   你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。  
   
 ##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 以迭代方式增加测试并使它们通过  
   
@@ -268,73 +268,73 @@ ms.locfileid: "49244356"
   
 ##  <a name="BKMK_Debug_a_failing_test"></a> 调试失败测试  
   
-1.  将另一个测试添加到 **unittest1.cpp**：  
+1. 将另一个测试添加到 **unittest1.cpp**：  
   
-    ```  
-    // Verify that negative inputs throw an exception.  
-     TEST_METHOD(NegativeRangeTest)  
-     {  
-       wchar_t message[200];  
-       CRooterLib rooter;  
-       for (double v = -0.1; v > -3.0; v = v - 0.5)  
-       {  
-         try   
-         {  
-           // Should raise an exception:  
-           double result = rooter.SquareRoot(v);  
-  
-           swprintf_s(message, L"No exception for input %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-         catch (std::out_of_range ex)  
-         {  
-           continue; // Correct exception.  
-         }  
-         catch (...)  
-         {  
-           swprintf_s(message, L"Incorrect exception for %g", v);  
-           Assert::Fail(message, LINE_INFO());  
-         }  
-       }  
-    };  
-  
-    ```  
-  
-2.  在“测试资源管理器”中，选择 **“全部运行”**。  
-  
-     测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。  
-  
-     ![NegativeRangeTests 失败](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
-  
-3.  若要查看未通过测试的原因，请单步调试函数：  
-  
-    1.  在 `SquareRoot` 函数的开头设置断点。  
-  
-    2.  在失败测试的快捷菜单上，选择“调试所选测试” 。  
-  
-         当在断点处停止运行时，请单步调试代码。  
-  
-    3.  将代码添加到 **RooterLib.cpp** 来捕获异常：  
-  
-        ```  
-        #include <stdexcept>  
-        ...  
-        double CRooterLib::SquareRoot(double v)  
+   ```  
+   // Verify that negative inputs throw an exception.  
+    TEST_METHOD(NegativeRangeTest)  
+    {  
+      wchar_t message[200];  
+      CRooterLib rooter;  
+      for (double v = -0.1; v > -3.0; v = v - 0.5)  
+      {  
+        try   
         {  
-            //Validate the input parameter:  
-            if (v < 0.0)   
-            {  
-              throw std::out_of_range("Can't do square roots of negatives");  
-            }  
-        ...  
+          // Should raise an exception:  
+          double result = rooter.SquareRoot(v);  
   
-        ```  
+          swprintf_s(message, L"No exception for input %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+        catch (std::out_of_range ex)  
+        {  
+          continue; // Correct exception.  
+        }  
+        catch (...)  
+        {  
+          swprintf_s(message, L"Incorrect exception for %g", v);  
+          Assert::Fail(message, LINE_INFO());  
+        }  
+      }  
+   };  
   
-    1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保你未引入回归。  
+   ```  
   
- 现在所有测试均通过。  
+2. 在“测试资源管理器”中，选择 **“全部运行”**。  
   
- ![所有测试均通过](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
+    测试将不会通过。 在测试资源管理器中选择测试名称。 失败的断言会突出显示。 失败消息会显示在测试资源管理器的详细信息窗格中。  
+  
+    ![NegativeRangeTests 失败](../test/media/ute-cpp-testexplorer-negativerangetest-fail.png "UTE_Cpp_TestExplorer_NegativeRangeTest_Fail")  
+  
+3. 若要查看未通过测试的原因，请单步调试函数：  
+  
+   1.  在 `SquareRoot` 函数的开头设置断点。  
+  
+   2.  在失败测试的快捷菜单上，选择“调试所选测试” 。  
+  
+        当在断点处停止运行时，请单步调试代码。  
+  
+   3.  将代码添加到 **RooterLib.cpp** 来捕获异常：  
+  
+       ```  
+       #include <stdexcept>  
+       ...  
+       double CRooterLib::SquareRoot(double v)  
+       {  
+           //Validate the input parameter:  
+           if (v < 0.0)   
+           {  
+             throw std::out_of_range("Can't do square roots of negatives");  
+           }  
+       ...  
+  
+       ```  
+  
+   1.  在测试资源管理器中，选择“全部运行”以测试已更正的方法，并确保你未引入回归。  
+  
+   现在所有测试均通过。  
+  
+   ![所有测试均通过](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 ##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> 在不更改测试的情况下重构代码  
   

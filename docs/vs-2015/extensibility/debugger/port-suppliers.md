@@ -16,27 +16,27 @@ ms.assetid: a8f3db96-1a13-4e93-9ef6-0861880369e0
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dc9258d8eb3e7b819e068cd246a6dc3d358234d8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 173ff6b7550731262e8f4e3293b6f7c35eac4062
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49217615"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49858805"
 ---
 # <a name="port-suppliers"></a>端口提供程序
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 在调试器体系结构，方面**端口供应商**:  
   
--   包含由服务器并提供有关对该服务器的请求的端口。  
+- 包含由服务器并提供有关对该服务器的请求的端口。  
   
--   可以添加和删除包含服务器的端口。  
+- 可以添加和删除包含服务器的端口。  
   
--   可以枚举具有提供给服务器的所有端口。  
+- 可以枚举具有提供给服务器的所有端口。  
   
--   为由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)接口，通过在注册表中注册与 Visual Studio。 此接口可以通过调用来获取[GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)。  
+- 为由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)接口，通过在注册表中注册与 Visual Studio。 此接口可以通过调用来获取[GetPortSupplier](../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)。  
   
- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供了默认端口提供程序和默认端口。 如果需要实现自定义端口，则自定义端口提供程序还需要实现以提供这些自定义端口。  
+  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 提供了默认端口提供程序和默认端口。 如果需要实现自定义端口，则自定义端口提供程序还需要实现以提供这些自定义端口。  
   
 ## <a name="see-also"></a>请参阅  
  [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)   

@@ -29,25 +29,25 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: e216bf3f3a15027b26c93e986df3eb8594d4d589
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: e4ce9f864307ffaee4bce51a565e9ad1726d043d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37118764"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49893294"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>提供在项目项中的打包和部署信息
   中的所有 SharePoint 项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有可用于项目部署到 SharePoint 时提供额外的数据的属性。 这些属性如下所示：  
   
--   功能属性  
+- 功能属性  
   
--   功能接收器  
+- 功能接收器  
   
--   项目输出引用  
+- 项目输出引用  
   
--   安全控件项  
+- 安全控件项  
   
- 这些属性将显示在**属性**窗口。  
+  这些属性将显示在**属性**窗口。  
   
 ## <a name="feature-properties"></a>功能属性
  使用**功能属性**属性指定的功能使用的数据。 功能属性数据是一组值 （以键/值对的形式存储），它将部署到 SharePoint 时，将包含与某个功能。 部署功能后，可在代码中访问属性值。  

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomViewer::DisplayValue |Microsoft 文档
+title: IDebugCustomViewer::DisplayValue |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 017e1e7a27839dae91559468c62be353bbd43b4e
-ms.sourcegitcommit: 6a9d5bd75e50947659fd6c837111a6a547884e2a
+ms.openlocfilehash: 44295cb6cc3635d099a93ef62c7d4ae4e2bdd4cd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31107054"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49833832"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 调用此方法以显示指定的值。  
@@ -53,20 +53,20 @@ int DisplayValue(
  [in]支持多个类型的自定义查看器的 ID。  
   
  `pHostServices`  
- [in]保留。 始终设置为 null。  
+ [in] 保留。 始终设置为 null。  
   
  `pDebugProperty`  
- [in]可以用于检索要显示的值的接口。  
+ [in]可用于检索要显示的值的接口。  
   
 ## <a name="return-value"></a>返回值  
  如果成功，则返回`S_OK`; 否则返回错误代码。  
   
 ## <a name="remarks"></a>备注  
- 此方法将创建必要的窗口，显示的值、 等待输入，然后关闭该窗口，所有在返回给调用方之前，显示为"模式"。 这意味着该方法必须处理的显示属性的值，从创建到等待用户输入，到销毁窗口输出的窗口的所有方面。  
+ 显示的"modal"在于此方法将创建必要的窗口，显示的值，等待输入，并关闭窗口，然后再返回给调用方所有。 这意味着该方法必须处理的显示属性的值，从创建一个用于输出，等待用户输入，到销毁窗口的窗口的所有方面。  
   
- 若要支持上更改的值给定[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)对象时，可以使用[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法-如果值可以表示为一个字符串。 否则，它是创建自定义接口所需-专用于实现该表达式计算器`DisplayValue`方法-实现对同一对象`IDebugProperty3`接口。 此自定义接口将提供用于更改任意大小或复杂的数据。  
+ 若要支持上更改的值给定[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)对象，可以使用[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法 — 如果值可以表示为一个字符串。 否则，将创建一个自定义接口所需 — 独占向表达式计算器实施这`DisplayValue`方法，实现对同一对象`IDebugProperty3`接口。 此自定义接口将提供用于更改数据的任意大小或复杂性的方法。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

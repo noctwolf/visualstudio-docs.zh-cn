@@ -16,12 +16,12 @@ ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 654a0d7de3ad75c541d14a38a2a897adb731ea7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d64ff7ec1aea24a5e98b3f37339639440e31bf42
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249205"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49837238"
 ---
 # <a name="legacy-language-service-interfaces"></a>旧版语言服务接口
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +35,15 @@ ms.locfileid: "49249205"
   
  可以在任意数量的单独的类上实现核心语言服务接口。 但是，常见方法是在单个类中实现以下接口：  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> （可选）  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageBlock> （可选）  
   
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口必须实现所有的语言服务。 它提供有关你的语言服务，如语言，与语言服务，以及如何检索着色器关联的文件扩展名的本地化名称的信息。  
+  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>接口必须实现所有的语言服务。 它提供有关你的语言服务，如语言，与语言服务，以及如何检索着色器关联的文件扩展名的本地化名称的信息。  
   
 ## <a name="additional-language-service-interfaces"></a>另一种语言服务接口  
  其他接口可以提供与你的语言服务。 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] 请求这些接口的文本缓冲区的每个实例的单独实例。 因此，您应实现这些接口的每个在其自己的对象上。 下表显示了需要每个文本缓冲区实例的一个实例的接口。  

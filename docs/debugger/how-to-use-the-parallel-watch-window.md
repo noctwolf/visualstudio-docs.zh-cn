@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a142b512c5bbaf5d93dc0302aa39db92fb7c7ae
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: e9381479fdfa3d64f3504e947f49411b99d53e2d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808069"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857947"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio"></a>在 Visual Studio 中的并行线程中的变量上设置监视
 在“并行监视”窗口中，您可同时显示一个表达式保留在多个线程上的值。 每个行均表示一个在应用程序中运行的线程，但一个线程可能用多个行表示。 更具体地说，每个行均表示一个函数调用，其函数签名与当前堆栈帧上的函数的签名匹配。 您可以对列中的项进行排序、重新排序、移除和分组操作。 您可标记、取消标记、冻结（禁止显示）和解冻（恢复）线程。 下面的列会显示在**并行监视**窗口：  
   
--   标记列，可在其中标记要特别注意的线程。  
+- 标记列，可在其中标记要特别注意的线程。  
   
--   当前线程列，其中的黄色箭头指示当前线程 （带有卷尾的绿色箭头指示非当前线程具有当前的调试器上下文）。  
+- 当前线程列，其中的黄色箭头指示当前线程 （带有卷尾的绿色箭头指示非当前线程具有当前的调试器上下文）。  
   
--   可配置的列，可显示计算机、进程、平铺、任务和线程。  
+- 可配置的列，可显示计算机、进程、平铺、任务和线程。  
   
-    > [!TIP]
-    >  显示任务中的信息**并行监视**窗口中，必须首先打开**任务**窗口。  
+  > [!TIP]
+  >  显示任务中的信息**并行监视**窗口中，必须首先打开**任务**窗口。  
   
--   空白*添加监视*列，您可以在其中输入要监视的表达式。  
+- 空白*添加监视*列，您可以在其中输入要监视的表达式。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ### <a name="to-display-the-parallel-watch-window"></a>显示“并行监视”窗口  
   

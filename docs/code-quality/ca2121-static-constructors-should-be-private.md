@@ -16,14 +16,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f4f0240b8a3cc1a08b29d0f7f21f3f7599ab3fe
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: f20115d694657053e3e687b4e399df463957e9c6
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45546664"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49923922"
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121：静态构造函数应为私有
+
 |||
 |-|-|
 |TypeName|StaticConstructorsShouldBePrivate|
@@ -32,21 +33,25 @@ ms.locfileid: "45546664"
 |是否重大更改|重大|
 
 ## <a name="cause"></a>原因
- 类型具有不是私有的静态构造函数。
+
+类型具有不是私有的静态构造函数。
 
 ## <a name="rule-description"></a>规则说明
- 静态构造函数，也称为类构造函数，用于初始化的类型。 系统在创建第一个类型实例或引用任何静态成员之前调用静态构造函数。 用户可以调用静态构造函数时没有控制。 如果静态构造函数不是私有，则系统以外的代码可以调用它。 根据构造函数中执行的操作，这可能导致意外行为。
 
- 此规则由 C# 和 Visual Basic 编译器强制执行。
+静态构造函数，也称为类构造函数，用于初始化的类型。 系统在创建第一个类型实例或引用任何静态成员之前调用静态构造函数。 用户可以调用静态构造函数时没有控制。 如果静态构造函数不是私有，则系统以外的代码可以调用它。 根据构造函数中执行的操作，这可能导致意外行为。
+
+此规则由 C# 和 Visual Basic 编译器强制执行。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 冲突通常由以下操作之一引起：
+
+冲突通常由以下操作之一引起：
 
 - 为你的类型定义静态构造函数和未将它设置为私有。
 
 - 编程语言编译器添加到你的类型的默认静态构造函数和未将它设置为私有。
 
- 若要解决冲突的第一个类型，请将静态构造函数专用。 若要解决的第二个类型，请与您的类型添加私有静态构造函数。
+若要解决冲突的第一个类型，请将静态构造函数专用。 若要解决的第二个类型，请与您的类型添加私有静态构造函数。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
- 不要禁止显示这些冲突。 如果您的软件设计要求显式静态构造函数调用，则很可能设计存在严重缺陷，应进行检查。
+
+不要禁止显示这些冲突。 如果您的软件设计要求显式静态构造函数调用，则很可能设计存在严重缺陷，应进行检查。

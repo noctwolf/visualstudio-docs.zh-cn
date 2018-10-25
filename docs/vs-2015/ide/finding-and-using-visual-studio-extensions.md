@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b97cffd30416313ac9f46e6d0ab1bbd505fc4aed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 256000fb3371477c74d4f922de6cb10f3998ae86
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268161"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49831128"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>查找和使用 Visual Studio 扩展
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ Visual Studio 扩展是在 Visual Studio 内运行的代码包，并且提供了
 ## <a name="sample-master-copies-and-working-copies"></a>主控副本和工作副本示例  
  安装联机示例时，解决方案存储在两个位置：  
   
--   工作副本存储在你在 **“新建项目”** 对话框中指定的位置。  
+- 工作副本存储在你在 **“新建项目”** 对话框中指定的位置。  
   
--   你的计算机上存储一个单独的主控副本。  
+- 你的计算机上存储一个单独的主控副本。  
   
- 你可以使用 **“扩展和更新”** 对话框来执行这些与示例相关的任务：  
+  你可以使用 **“扩展和更新”** 对话框来执行这些与示例相关的任务：  
   
--   列出已安装示例的主控副本。  
+- 列出已安装示例的主控副本。  
   
--   禁用或卸载示例的主控副本。  
+- 禁用或卸载示例的主控副本。  
   
--   安装示例包，示例包是与技术或功能相关的一系列示例的集合。  
+- 安装示例包，示例包是与技术或功能相关的一系列示例的集合。  
   
--   安装个别联机示例。 （你也可以在 **“新建项目”** 对话框中执行此操作。）  
+- 安装个别联机示例。 （你也可以在 **“新建项目”** 对话框中执行此操作。）  
   
--   当发布已安装示例的源代码更改时，查看更新通知。  
+- 当发布已安装示例的源代码更改时，查看更新通知。  
   
--   当存在更新通知时，更新已安装示例的主控副本。  
+- 当存在更新通知时，更新已安装示例的主控副本。  
   
 ## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>不使用“扩展和更新”对话框进行安装  
  可在 Visual Studio 库以外的位置获取已打包在 .vsix 文件中的扩展。 “扩展和更新”  对话框无法检测到这些文件，但你可以通过双击该文件，或者选择文件并按下 ENTER 键来安装 .vsix 文件。 此后，只需按照说明操作。 当扩展安装完成后，可以使用 **“扩展和更新”** 对话框启用、禁用或卸载此扩展。  

@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6cc733d3d926581801391a086c7886db3cec1bcc
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 9458fd6886243102f6479166fb9df21f9e4869fd
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382724"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49877245"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 
@@ -117,53 +117,53 @@ ms.locfileid: "39382724"
 
 ##  <a name="make_functions_visible"></a> 将测试项目耦合到 DLL 项目
 
-1.  将 DLL 项目添加到测试项目的项目引用中：
+1. 将 DLL 项目添加到测试项目的项目引用中：
 
-    1.  打开测试项目的属性，选择“通用属性” > “框架和引用”。
+   1.  打开测试项目的属性，选择“通用属性” > “框架和引用”。
 
-         ![C++ 项目属性 | 框架和引用](../test/media/utecpp08.png)
+        ![C++ 项目属性 | 框架和引用](../test/media/utecpp08.png)
 
-    2.  选择“添加新引用” 。
+   2.  选择“添加新引用” 。
 
-         在“添加引用”  对话框中，选择 DLL 项目并选择“添加” 。
+        在“添加引用”  对话框中，选择 DLL 项目并选择“添加” 。
 
-         ![C++ 项目属性 | 添加新引用](../test/media/utecpp09.png)
+        ![C++ 项目属性 | 添加新引用](../test/media/utecpp09.png)
 
-2.  在主体单元测试 .cpp 文件中，将 DLL 代码的 .h 文件包括在内：
+2. 在主体单元测试 .cpp 文件中，将 DLL 代码的 .h 文件包括在内：
 
-    ```cpp
-    #include "..\RootFinder\RootFinder.h"
-    ```
+   ```cpp
+   #include "..\RootFinder\RootFinder.h"
+   ```
 
-3.  添加使用导出函数的基本测试：
+3. 添加使用导出函数的基本测试：
 
-    ```cpp
-    TEST_METHOD(BasicTest)
-    {
-       CRootFinder rooter;
-       Assert::AreEqual(
-          // Expected value:
-          0.0,
-          // Actual value:
-          rooter.SquareRoot(0.0),
-          // Tolerance:
-          0.01,
-         // Message:
-         L"Basic test failed",
-         // Line number - used if there is no PDB file:
-         LINE_INFO());
-    }
-    ```
+   ```cpp
+   TEST_METHOD(BasicTest)
+   {
+      CRootFinder rooter;
+      Assert::AreEqual(
+         // Expected value:
+         0.0,
+         // Actual value:
+         rooter.SquareRoot(0.0),
+         // Tolerance:
+         0.01,
+        // Message:
+        L"Basic test failed",
+        // Line number - used if there is no PDB file:
+        LINE_INFO());
+   }
+   ```
 
-4.  生成解决方案。
+4. 生成解决方案。
 
-     新测试出现在测试资源管理器中。
+    新测试出现在测试资源管理器中。
 
-5.  在“测试资源管理器”中，选择“全部运行”。
+5. 在“测试资源管理器”中，选择“全部运行”。
 
-     ![单元测试资源管理器 - 已通过基本测试](../test/media/utecpp10.png)
+    ![单元测试资源管理器 - 已通过基本测试](../test/media/utecpp10.png)
 
- 你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。
+   你已设置测试和代码项目，并已验证可运行测试（运行测试项目中的函数）。 现在可以开始编写实际测试和代码。
 
 ##  <a name="iterate"></a> 以迭代方式增加测试并使它们通过
 

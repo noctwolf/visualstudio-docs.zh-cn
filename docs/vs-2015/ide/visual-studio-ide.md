@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 760dc4f859de68040676439d84fea60d23602aeb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 327de2e75b089e7ba836837c3c29c0d92d9ad864
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292781"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49852708"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,31 +116,31 @@ Microsoft Visual Studio 2015 是一套用于创建软件的工具，包括通过
 
  文本编辑器可实现高度交互（如果你希望如此），具有很多工作效率功能，可帮助更好更快地编写代码。 功能因语言而异，并且不必使用以上任意语言（在“快速启动”中键入“Editor”）来打开或关闭功能。一些常见的工作效率功能为：
 
-1.  [Refactoring](../ide/refactoring-in-visual-studio.md) 包括智能重命名变量、移动选定的代码行到单独的函数、移动代码到其他位置、重新排序函数参数以及更多操作。
+1. [Refactoring](../ide/refactoring-in-visual-studio.md) 包括智能重命名变量、移动选定的代码行到单独的函数、移动代码到其他位置、重新排序函数参数以及更多操作。
 
-2.  *“IntelliSense”* 是一组常用功能的涵盖性术语，这些功能可用于在编辑器中直接显示代码的类型信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在单独帮助窗口查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了一些处于工作状态的 IntelliSense 功能：
+2. *“IntelliSense”* 是一组常用功能的涵盖性术语，这些功能可用于在编辑器中直接显示代码的类型信息，并且可在某些情况下编写小段代码。 如同在编辑器中拥有了基本文档内联，从而节省了在单独帮助窗口查看类型信息的时间。 IntelliSense 功能因语言而异。 有关详细信息，请参阅 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md) 和 [Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下图显示了一些处于工作状态的 IntelliSense 功能：
 
-     ![Visual Studio 成员列表](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
+    ![Visual Studio 成员列表](../ide/media/vs2015-intellisense.png "vs2015_Intellisense")
 
-3.  “波形曲线” 实时警告键入时代码中的错误或潜在问题，这样便可以立即修复错误，而无需等到编译时或运行时才发现。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
+3. “波形曲线” 实时警告键入时代码中的错误或潜在问题，这样便可以立即修复错误，而无需等到编译时或运行时才发现。 如果将鼠标悬停在波形曲线上，将看到关于此错误的其他信息。 左边距上也可能会出现一个灯泡，提供有关如何修复此错误的建议。 有关详细信息，请参阅 [Perform quick actions with light bulbs](../ide/perform-quick-actions-with-light-bulbs.md)。
 
-     ![带鼠标悬停的灯泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
+    ![带鼠标悬停的灯泡](../ide/media/vs2015-lightbulb-hover.png "VS2015_LightBulb_Hover")
 
-4.  [书签](../ide/setting-bookmarks-in-code.md)使你能够快速导航到文件中正在主动处理的特定行。
+4. [书签](../ide/setting-bookmarks-in-code.md)使你能够快速导航到文件中正在主动处理的特定行。
 
-5.  可以在文本编辑器“上下文”菜单中调用 [Call Hierarchy](../ide/reference/call-hierarchy.md) 窗口，以显示调用方法、被调用方法和插入点下的方法。
+5. 可以在文本编辑器“上下文”菜单中调用 [Call Hierarchy](../ide/reference/call-hierarchy.md) 窗口，以显示调用方法、被调用方法和插入点下的方法。
 
-6.  “代码透镜” 能够查找代码引用、代码更改、链接错误、工作项、代码评审和单元测试，所有操作都在编辑器上进行。 有关详细信息，请参阅[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)。
+6. “代码透镜” 能够查找代码引用、代码更改、链接错误、工作项、代码评审和单元测试，所有操作都在编辑器上进行。 有关详细信息，请参阅[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)。
 
-7.  “查看定义”  窗口显示方法或类型的定义内联，而无需离开当前的上下文。 此窗口现在也适用于 XAML。
+7. “查看定义”  窗口显示方法或类型的定义内联，而无需离开当前的上下文。 此窗口现在也适用于 XAML。
 
-8.  “转到定义”  上下文菜单选项可直接进入其中定义函数或对象的位置。 还可以在编辑器中右键单击来获取其他导航命令。
+8. “转到定义”  上下文菜单选项可直接进入其中定义函数或对象的位置。 还可以在编辑器中右键单击来获取其他导航命令。
 
 9. [对象浏览器](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)，作为相关的工具，可以检查系统上的 .NET 或 Windows 运行时程序集，以查看其中包含的类型以及这些类型包含的方法和属性。
 
      ![显示 System.Timer 的对象浏览器](../ide/media/objectbrowser.png "ObjectBrowser")
 
- “编辑”菜单和“视图”菜单上的大多数项都以某种方式关联代码编辑器。 关于编辑器的详细信息，请参阅[编写代码](../ide/writing-code-in-the-code-and-text-editor.md)和[编辑代码](https://www.visualstudio.com/features/ide-vs)。
+   “编辑”菜单和“视图”菜单上的大多数项都以某种方式关联代码编辑器。 关于编辑器的详细信息，请参阅[编写代码](../ide/writing-code-in-the-code-and-text-editor.md)和[编辑代码](https://www.visualstudio.com/features/ide-vs)。
 
 ## <a name="compiling-and-building-your-code"></a>编译和生成代码
 
