@@ -9,12 +9,12 @@ description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bol
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a7c384a8bc4b84aea4982bd195b0d92820c68ecb
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 981d6a655a203a7d44728fa7d12761fba2918d76
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542346"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49935768"
 ---
 #  <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
 
@@ -22,49 +22,51 @@ ms.locfileid: "46542346"
 
 ## <a name="activation-steps"></a>激活步骤
 
-1.  若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2.  在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益磁贴](_img\vs-whitesource\vs-whitesource-tile.png)
+2. 在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 权益磁贴](_img/vs-whitesource/vs-whitesource-tile.png)
 
-2.  你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益代码](_img\vs-whitesource\vs-whitesource-code.png)
+3. 你将收到一条显示激活代码的通知。  将代码复制到剪贴板，然后单击“激活”。
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 权益代码](_img/vs-whitesource/vs-whitesource-code.png)
 
-3.  在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。
-    > [!div class="mx-imgBorder"]
-    > ![激活 WhiteSource 权益](_img\vs-whitesource\vs-whitesource-activate-page-cropped.png)
+4. 在 WhiteSource 网页上，单击“激活”按钮，或向下滚动到该页面的“激活帐户”部分。
+   > [!div class="mx-imgBorder"]
+   > ![激活 WhiteSource 权益](_img/vs-whitesource/vs-whitesource-activate-page-cropped.png)
 
-4.  该页面的“激活帐户”部分将引导你完成以下四个步骤：
+5. 该页面的“激活帐户”部分将引导你完成以下四个步骤：
 
-    - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
+   - 从 Microsoft Visual Studio Marketplace [安装](https://marketplace.visualstudio.com/items?itemName=whitesource.ws-bolt) WhiteSource Bolt 扩展。 如果无权安装扩展，请参阅[安装适用于 Azure DevOps Services 的免费扩展](/azure/devops/marketplace/install-vsts-extension?view=vsts)。
 
 
-    如果使用的是 Azure DevOps Services，请单击绿色的“安装”按钮；如果使用的是 Team Foundation Server，请单击“下载”按钮。  此示例中，我们将使用 Azure DevOps Services。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益安装扩展](_img\vs-whitesource\vs-whitesource-download-install.png)
+~~~
+Click the green **Install** button if you are using Azure DevOps Services, or the **Download** button for Team Foundation Server.  For this example, we will use Azure DevOps Services.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Extension](_img\vs-whitesource\vs-whitesource-download-install.png)
 
-    - 接下来，选择要使用的 Azure DevOps 组织，然后单击“确认”。  （如果尚未设置 Azure DevOps Services，请访问[权益](https://my.visualstudio.com/benefits)页面并激活 Azure DevOps Services 权益。）
+- Next, select the Azure DevOps organization you want to use and click **Confirm**.  (If you have not yet set up Azure DevOps Services, visit the [Benefits](https://my.visualstudio.com/benefits) page and activate your Azure DevOps Services benefit.)
 
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益确认帐户](_img\vs-whitesource\vs-whitesource-confirm-account.png)
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Confirm Account](_img\vs-whitesource\vs-whitesource-confirm-account.png)
 
-    - 你会收到一条确认信息，指示该扩展已安装并可以使用。  单击“开始”返回 WhiteSource Bolt 页面，然后继续。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益安装完毕](_img\vs-whitesource\vs-whitesource-install-complete.png)
+- You’ll receive a confirmation that the extension is installed and ready to use.  Click **Get started** to return to the WhiteSource Bolt page and continue.
+> [!div class="mx-imgBorder"]
+> ![WhiteSource Benefit Install Complete](_img\vs-whitesource\vs-whitesource-install-complete.png)
+~~~
 
-5.  打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益添加扩展](_img\vs-whitesource\vs-whitesource-installed-cropped.png)
+5. 打开 Azure DevOps 项目仪表板，单击“Azure Pipelines”菜单，然后选择“WhiteSource Bolt”。
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 权益添加扩展](_img/vs-whitesource/vs-whitesource-installed-cropped.png)
 
 6. 粘贴 WhiteSource Bolt 权益磁贴中的激活代码，然后单击“激活”。 一个激活代码只能激活一个项目。
-    > [!div class="mx-imgBorder"]
-    > ![WhiteSource 权益激活代码](_img\vs-whitesource\vs-whitesource-activate-code-cropped.png)
+   > [!div class="mx-imgBorder"]
+   > ![WhiteSource 权益激活代码](_img/vs-whitesource/vs-whitesource-activate-code-cropped.png)
 
-7.  激活现已完成，订阅还剩 180 天。
+7. 激活现已完成，订阅还剩 180 天。
 
-8.  在生成步骤中需要添加 WhiteSource Bolt 扩展。  [WhiteSource Bolt 页](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)中提供了一个视频介绍如何操作。
+8. 在生成步骤中需要添加 WhiteSource Bolt 扩展。  [WhiteSource Bolt 页](https://www.whitesourcesoftware.com/whitesource_bolt_visualstudio_2017/#activate)中提供了一个视频介绍如何操作。
 
 9. 运行生成后，将自动产生以下完整报告和仪表板：
     - 安全漏洞仪表板
@@ -84,7 +86,7 @@ ms.locfileid: "46542346"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络 (Professional)。
+<sup>1</sup> 包括：Microsoft 合作伙伴网络 (Enterprise)。不包括：其他的不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Microsoft 合作伙伴网络（专业）。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
