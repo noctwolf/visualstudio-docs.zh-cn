@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0a3b14086957d37809c8fbcba88386daff57be4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0e28653749b19c9f53bd8e43e245fd8dcb20aa31
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891994"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050257"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 消息类相关联
   您可以指定哪些 Microsoft Office Outlook 项显示的窗体区域，通过将窗体区域与每个项的消息类相关联。 例如，如果你想要将窗体区域附加到邮件项的底部，则可以将窗体区域与`IPM.Note`message 类。  
@@ -111,7 +111,7 @@ ms.locfileid: "49891994"
  [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)   
  [演练： 设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
  [若要创建 Outlook 窗体区域的准则](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [窗体名称和 message 类概述](http://msdn.microsoft.com/library/office/ff867629.aspx)   
- [Outlook 窗体和项如何协同工作](http://msdn.microsoft.com/library/office/ff869706.aspx)  
+ [窗体名称和 message 类概述](/office/vba/outlook/Concepts/Forms/form-name-and-message-class-overview)   
+ [Outlook 窗体和项如何协同工作](/office/vba/outlook/Concepts/Forms/how-outlook-forms-and-items-work-together)  
   
   

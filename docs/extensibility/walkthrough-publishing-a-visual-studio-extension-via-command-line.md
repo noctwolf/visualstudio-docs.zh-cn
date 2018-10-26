@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b50e5e1c0198f1a8c6e33254f0cdab17bc38535
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d95e2fbe36a73074b97f47f6714f1fc4aa8228c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883349"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050178"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>演练： 发布 Visual Studio 扩展中的通过命令行
 
@@ -38,7 +38,7 @@ VsixPublisher.exe 是发布到 Marketplace 的 Visual Studio 扩展的命令行�
 |有效负载 （必需） | 若要发布的有效负载或将其用作"详细信息 URL"的链接到的路径。 |
 |publishManifest （必需） | 发布路径清单文件使用。 |
 |ignoreWarnings | 要发布扩展时忽略的警告的列表。 发布扩展时，将为命令行的消息中显示这些警告。 (例如，"VSIXValidatorWarning01，VSIXValidatorWarning02")  
-|personalAccesToken | 个人访问令牌用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 pat。 |
+|personalAccessToken | 个人访问令牌 (PAT) 用于进行身份验证发布服务器。 如果未提供，则会从登录的用户获取 PAT。 |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
