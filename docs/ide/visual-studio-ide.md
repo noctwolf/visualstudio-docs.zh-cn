@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4465eff996664dca2fe1b5dcb31b5d7af049db53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320782"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49907516"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -94,11 +94,11 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 - [转到定义](../ide/go-to-and-peek-definition.md)
 
-  “转到定义”功能可将你直接带到定义函数或类型的位置。
+   “转到定义”功能可将你直接带到定义函数或类型的位置。
 
    ![转到定义](../ide/media/go-to-definition-menu.png)
 
-- [速览定义](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- 查看定义[](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    “速览定义”窗口显示方法或类型的定义，而无需实际打开一个单独的文件。
 
@@ -112,14 +112,14 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![菜单栏上的“文件”>“新建项目”](../ide/media/file-new-project-menu.png)
 
-1. “新建项目”对话框中会显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。 在“Visual C#”下选择“.NET Core”类别，然后选择“控制台应用(.NET Core)”模板。 在“名称”文本框中，键入“HelloWorld”，然后选择“确定”按钮。
+2. “新建项目”对话框中会显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。 在“Visual C#”下选择“.NET Core”类别，然后选择“控制台应用(.NET Core)”模板。 在“名称”文本框中，键入“HelloWorld”，然后选择“确定”按钮。
 
    ![.NET Core 应用模板](../ide/media/overview-new-project-dialog.png)
 
    Visual Studio 随即创建项目。 它是简单的“Hello World”应用程序，可调用 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法在控制台窗口中 显示文本字符串“Hello World!”。
 
-  > [!NOTE]
-  > 如果未看到“.NET Core”类别，则需要安装“.NET Core 跨平台开发”工作负载。 为此，选择“新建项目”对话框左下角的“打开 Visual Studio 安装程序”链接。 “Visual Studio 安装程序”打开后，向下滚动并选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
+   > [!NOTE]
+   > 如果未看到“.NET Core”类别，则需要安装“.NET Core 跨平台开发”工作负载。 为此，选择“新建项目”对话框左下角的“打开 Visual Studio 安装程序”链接。 “Visual Studio 安装程序”打开后，向下滚动并选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
    稍后，将看到类似于以下的内容：
 
@@ -127,21 +127,21 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    应用程序的 C# 代码显示于编辑器窗口中，会占用大部分空间。 请注意，文本已自动着色，用于指示代码的不同方面，如关键字或类型。 此外，代码中的垂直短虚线指示哪两个大括号相匹配，行号能够帮助你在以后查找代码。 可以通过选择带减号的小方形来折叠或展开代码块。 此代码大纲功能可以隐藏不需要的代码，最大程度地减少屏幕混乱。 右侧名为“解决方案资源管理器”的窗口中列出了项目文件。
 
-  ![具有红色框的 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
+   ![具有红色框的 Visual Studio IDE](../ide/media/overview-ide-console-app-red-boxes.png)
 
-  还提供了一些其他的菜单和工具窗口，但是现在我们继续下一步操作。
+   还提供了一些其他的菜单和工具窗口，但是现在我们继续下一步操作。
 
-1. 现在启动该应用。 可从菜单栏的“调试”菜单中选择“开始执行(不调试)”，以执行此操作。 还可按 Ctrl+F5。
+3. 现在启动该应用。 可从菜单栏的“调试”菜单中选择“开始执行(不调试)”，以执行此操作。 还可按 Ctrl+F5。
 
-  ![“调试”>“开始执行(不调试)”菜单](../ide/media/overview-start-without-debugging.png)
+   ![“调试”>“开始执行(不调试)”菜单](../ide/media/overview-start-without-debugging.png)
 
-  Visual Studio 生成应用，控制台窗口随即打开并显示消息“Hello World!”。 现在你拥有了一个正在运行的应用！
+   Visual Studio 生成应用，控制台窗口随即打开并显示消息“Hello World!”。 现在你拥有了一个正在运行的应用！
 
-  ![控制台窗口](../ide/media/overview-console-window.png)
+   ![控制台窗口](../ide/media/overview-console-window.png)
 
-1. 要关闭控制台窗口，请在键盘上按任意键。
+4. 要关闭控制台窗口，请在键盘上按任意键。
 
-1. 接下来，向应用添加一些附加代码。 在 `Console.WriteLine("Hello World!");` 行的前面添加以下 C# 代码：
+5. 接下来，向应用添加一些附加代码。 在 `Console.WriteLine("Hello World!");` 行的前面添加以下 C# 代码：
 
    ```csharp
    Console.WriteLine("\nWhat is your name?");
@@ -150,21 +150,21 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    此代码在控制台窗口中显示“What is your name?”，然后等待用户输入文本并按 Enter 键。
 
-1. 将显示 `Console.WriteLine("Hello World!");` 的行更改为以下代码：
+6. 将显示 `Console.WriteLine("Hello World!");` 的行更改为以下代码：
 
    ```csharp
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. 选择“调试” > “开始执行(不调试)”，或按 Ctrl+F5，再次运行该应用。
+7. 选择“调试” > “开始执行(不调试)”，或按 Ctrl+F5，再次运行该应用。
 
    Visual Studio 重新生成应用，控制台窗口随即打开，并提示输入姓名。
 
-1. 在控制台窗口中输入姓名，并按 Enter。
+8. 在控制台窗口中输入姓名，并按 Enter。
 
    ![控制台窗口输入](media/overview-console-input.png)
 
-1. 按任意键关闭控制台窗口，并停止正在运行的程序。
+9. 按任意键关闭控制台窗口，并停止正在运行的程序。
 
 ## <a name="use-refactoring-and-intellisense"></a>使用重构和 IntelliSense
 
@@ -174,11 +174,11 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 1. 双击 `name` 变量将其选中。
 
-1. 为变量 username 键入新名称。
+2. 为变量 username 键入新名称。
 
    请注意，变量周围将显示灰色框且边距中会出现灯泡。
 
-1. 选择灯泡图标，显示可用的[快速操作](quick-actions.md)。 选择“将 'name' 重命名为 'username'”。
+3. 选择灯泡图标，显示可用的[快速操作](quick-actions.md)。 选择“将 'name' 重命名为 'username'”。
 
    ![Visual Studio 中的重命名操作](media/rename-quick-action.png)
 
@@ -186,15 +186,15 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![显示 Visual Studio 中重命名重构的 gif 动图](media/rename-refactoring.gif)
 
-1. 接下来介绍 IntelliSense。 在 `Console.WriteLine($"\nHello {username}!");` 行的下方，键入 DateTime now = DateTime.。
+4. 接下来介绍 IntelliSense。 在 `Console.WriteLine($"\nHello {username}!");` 行的下方，键入 DateTime now = DateTime.。
 
    此时，框中显示 <xref:System.DateTime> 类的成员。 另外，当前所选成员的说明会显示在单独的框中。
 
    ![Visual Studio 中的 IntelliSense 列表成员](media/intellisense-list-members.png)
 
-1. 通过双击或按 Tab 选择名为“Now”（该类的一个属性）的成员。通过添加分号“;”结束该代码行。
+5. 通过双击或按 Tab 选择名为“Now”（该类的一个属性）的成员。通过添加分号“;”结束该代码行。
 
-1. 在其下方，键入或复制以下代码行：
+6. 在其下方，键入或复制以下代码行：
 
    ```csharp
    int dayOfYear = now.DayOfYear;
@@ -206,17 +206,17 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
    > [!TIP]
    > <xref:System.Console.Write%2A?displayProperty=nameWithType> 与 <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> 稍有不同，它在打印后不会添加行终止符。 这意味着发送到输出的下一段文本将打印在同一行上。 将鼠标悬停在代码中的每个方法上，即可查看其说明。
 
-1. 接下来，我们将再次使用重构来使代码更加简洁。 单击 `DateTime now = DateTime.Now;` 行中的 `now` 变量。
+7. 接下来，我们将再次使用重构来使代码更加简洁。 单击 `DateTime now = DateTime.Now;` 行中的 `now` 变量。
 
    请注意，该行的边距中会显示一个小螺丝刀图标。
 
-1. 单击螺丝刀图标，查看 Visual Studio 提供的建议。 在本示例中，它显示[内联临时变量](reference/inline-temporary-variable.md)重构，可在无需更改整体行为的情况下删除代码行：
+8. 单击螺丝刀图标，查看 Visual Studio 提供的建议。 在本示例中，它显示[内联临时变量](reference/inline-temporary-variable.md)重构，可在无需更改整体行为的情况下删除代码行：
 
    ![Visual Studio 中的内联临时变量重构](media/inline-temporary-variable-refactoring.png)
 
-1. 单击“内联临时变量”，重构代码。
+9. 单击“内联临时变量”，重构代码。
 
-1. 按 Ctrl+F5 重新运行程序。 输出的内容与以下类似：
+10. 按 Ctrl+F5 重新运行程序。 输出的内容与以下类似：
 
    ![显示程序输出的控制台窗口](../ide/media/overview-console-final.png)
 
@@ -252,7 +252,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 1. 在菜单栏中，选择“工具” > “选项”，打开“选项”对话框。
 
-1. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
+2. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后选择“确定”。
 
    此时，整个 IDE 的颜色主题更改为“深色”。
 
