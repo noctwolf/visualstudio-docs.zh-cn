@@ -36,12 +36,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ab3e3238e78062bc1193a6d81b3f74749a263968
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897708"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143445"
 ---
 # <a name="link-task"></a>Link 任务
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -194,7 +194,7 @@ ms.locfileid: "49897708"
   
    指定链接器是否将 **SuppressUnmanagedCodeSecurityAttribute** 应用到链接器生成的从托管代码到本机 DLL 的 P/Invoke 调用。  
   
-   有关详细信息，请参阅 [/CLRUNMANAGEDCODECHECK（添加 SupressUnmanagedCodeSecurityAttribute）](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2)。  
+   有关详细信息，请参阅[/clrunmanagedcodecheck (添加 SuppressUnmanagedCodeSecurityAttribute) 有效，则](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2)。  
   
 - **CreateHotPatchableImage**  
   
