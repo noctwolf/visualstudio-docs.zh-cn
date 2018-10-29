@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28c6b2a9fa289bacaad783f70cd85365b7b0628f
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 859ec81ff3ed2c3b6385de1d093ba512203da9d9
+ms.sourcegitcommit: 551f13774e8bb0eb47cbd973745628a956e866aa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31951991"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49459785"
 ---
 # <a name="signing-page-project-designer"></a>“项目设计器”->“签名”页
 使用“项目设计器”的“签名”页对应用程序和部署清单及程序集进行签名（强名称签名）。
@@ -73,7 +73,7 @@ ms.locfileid: "31951991"
 
  选择此复选框可为程序集签名并创建强名称密钥文件。 有关使用“项目设计器”为程序集签名的详细信息，请参阅[如何：为程序集签名 (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)。
 
- 此选项使用 [!INCLUDE[winsdklong](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name) 提供的 Al.exe 工具。
+ 此选项使用 Windows 软件开发工具包 (SDK) 提供的 Al.exe 工具对程序集进行签名。 有关 Al.exe 的详细信息，请参阅[如何：使用强名称为程序集签名](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)。
 
  “选择强名称密钥文件”列表
 
