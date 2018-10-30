@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9f029cad2b0c8cb215a054502de5bc693cce5df5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928953"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219778"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>对 SharePoint 解决方案进行故障排除
   当使用调试 SharePoint 解决方案时，可能出现以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
@@ -136,7 +136,7 @@ ms.locfileid: "49928953"
   
 -   安装 [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)]。  
   
--   确保有 SharePoint 网站管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]在线文章[分配或删除 SharePoint Server 中的服务应用程序管理员](https://docs.microsoft.com/en-us/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
+-   确保有 SharePoint 网站管理员访问权限。 有关详细信息，请参阅[!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)]在线文章[分配或删除 SharePoint Server 中的服务应用程序管理员](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications)。  
   
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>事件接收方项目中不会发生站点删除 web 事件
  当你创建事件接收器项目，并且您选择某些 Web 事件，如"正在删除网站"时，永远不会发生该事件。  

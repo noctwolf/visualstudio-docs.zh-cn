@@ -33,12 +33,12 @@ caps.latest.revision: 45
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2f1a09cf7e4f6e15ee49ce62914b650c3622e6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 20b27a232c0e707751f8dd8111989d761635e9e6
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894048"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220308"
 ---
 # <a name="format-specifiers-in-c"></a>C++ 中的格式说明符
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ int main() {
 |**l,h**|用于 d、i、u、o、x、X 的 long 或 short 前缀|00406042|0x0c22|  
 |**f**|带符号的浮点|(3./2.), f|1.500000|  
 |**e**|有符号的科学计数法|(3.0/2.0)|1.500000e+000|  
-|**g**g|有符号的浮点数字或有符号的科学计数法，显示其中较短的数|(3.0/2.0)|1.5|  
+|**g**|有符号的浮点数字或有符号的科学计数法，显示其中较短的数|(3.0/2.0)|1.5|  
 |c|单个字符|\<location>|101 'e'|  
 |秒|const char*|\<location>|"hello world"|  
 |su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  

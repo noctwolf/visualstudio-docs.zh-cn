@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 616b837613e0e2c76330a68133929e6b85a94f98
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3141f2480aabc2ce6aa7b10f99991fc5cba0d05
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812928"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220412"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -215,8 +215,8 @@ ms.locfileid: "49812928"
   
      会引发并发错误，并显示消息框。  
   
-10. 选择**否**取消更新并使用当前数据库中的值更新数据集。选择**是**建议的值写入数据库。  
+10. 选择**否**取消更新并使用当前数据库中的值更新数据集。 选择**是**建议的值写入数据库。
   
-## <a name="see-also"></a>请参阅  
- [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>请参阅
 
+- [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

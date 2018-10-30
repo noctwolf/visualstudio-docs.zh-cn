@@ -14,14 +14,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 7e492996a194c6602af3ec412b86f7477ef233e1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d69db4619aaa3b0f2dde4ab5daac0bd31e958975
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928706"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220103"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
+
 图像形状可用于指定域类生成的设计器中的显示方式。 通过设置来定义了图像形状`Image`类预定义的图像文件的属性。 支持以下格式：
 
 - .gif
@@ -38,11 +39,11 @@ ms.locfileid: "49928706"
 
 - .png
 
-  默认情况下，设计器的资源文件，如图像文件位于**资源**中的文件夹**Dsl**项目。
+默认情况下，设计器的资源文件，如图像文件位于**资源**中的文件夹**Dsl**项目。
 
-  有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+有关详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅[自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-  图像形状具有下表中列出的属性。
+图像形状具有下表中列出的属性。
 
 |属性|描述|默认|
 |-|-|-|

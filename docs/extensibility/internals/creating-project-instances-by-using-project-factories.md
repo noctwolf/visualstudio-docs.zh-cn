@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10b62093f85c51ee349386ec09470228d0194e9d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4a02d6dd09ec019ad05404c033889f89ed140dd1
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833988"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219492"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用项目工厂创建的项目实例
 中的项目类型[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用*项目工厂*若要创建的项目对象的实例。 项目工厂是类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable;它们只能通过使用项目工厂创建。  
@@ -27,8 +27,6 @@ ms.locfileid: "49833988"
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 调用在你的 VSPackage 中实现，当用户加载现有项目或创建新的项目中的项目工厂[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 新的项目对象提供具有足够的信息的 IDE 来填充**解决方案资源管理器**。 新的项目对象还提供了所需的接口支持所有相关的 UI 操作启动的 IDE。  
   
  您可以实现<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>中你的项目中的类接口。 通常情况下，它驻留在其自己的模块。  
-  
- 有关实现的示例`IVsProjectFactory`接口，请参阅*PrjFac.cpp*，其中包含在[基本项目](https://www.microsoft.com/download/details.aspx?id=55984)示例目录。  
   
  支持由所有者所聚合的项目必须保留其项目文件中的所有者密钥。 当<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>具有所有者键项目上调用方法、 所拥有的项目将其所有者密钥转换为 GUID 然后调用一个项目工厂`CreateProject`上执行的实际创建此项目工厂方法。  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ea54b743853bba445618ad3b6e08fd9a9a54027
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 86c766f776195da17a33b9d52570a2867f700c9b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271045"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219986"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>选项，文本编辑器，JavaScript，格式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "49271045"
 |**将控制块的左大括号置于新行**|选择此选项后，代码编辑器会将与控制块（例如，`if` 和 `while` 控制块）关联的左大括号移动到新行。|  
   
 ## <a name="spacing"></a>间距  
- 这些选项可确定在“源”视图中插入空格的方式。  
+ 这些选项用于确定如何在插入空格**源**视图。  
   
 ## <a name="uielement-list"></a>UIElement 列表  
   
