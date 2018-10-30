@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d84780565d1761e75de7be9e5996a908d399f5f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4c73dd654a2d48be963e592d94685c74d3a16057
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233775"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219570"
 ---
 # <a name="save-data-by-using-a-transaction"></a>使用事务保存数据
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "49233775"
   
 1.  上**项目**菜单中，选择**添加引用**。  
   
-2.  上 **.NET**选项卡 (**SQL Server** SQL Server 项目的选项卡)，选择**System.Transactions**，并选择下列**确定**。  
+2.  上 **.NET**选项卡 (**SQL Server** SQL Server 项目的选项卡)，选择**System.Transactions**，然后选择**确定**。  
   
      System.transactions.dll 的引用添加到项目。  
   

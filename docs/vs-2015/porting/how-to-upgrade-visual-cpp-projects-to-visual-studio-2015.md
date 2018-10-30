@@ -16,17 +16,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: a8673d2d1648acad973ebfa339e0334a5c1fd769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: dea8f8ff1354ac2729c7c11b6ff575b90837af66
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188560"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220064"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>如何：将 Visual C++ 项目升级到 Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio 2017 的最新文档，请参阅[Visual c + + 移植和升级指南](https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide)。
+Visual Studio 2017 的最新文档，请参阅[Visual c + + 移植和升级指南](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide)。
 
 当你首次打开在早期版本的 Visual Studio 中创建的 Visual C++ 项目时，系统可能会提示你更新项目。 该消息会询问你是否想要升级到 Visual C++ 编译器和库的最新版本。 升级的选项取决于用于创建该项目的 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 的版本。  
   

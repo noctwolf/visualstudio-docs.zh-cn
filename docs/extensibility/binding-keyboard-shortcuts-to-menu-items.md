@@ -17,12 +17,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba37ffc3bb277590b6cbdd309bc92e1466345183
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 66436f31a0c2f3b895b4f12a5fb352eddf685632
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822094"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219635"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 若要绑定到自定义菜单命令的键盘快捷方式，只需添加一个条目 *.vsct*包文件。 本主题说明如何映射到自定义按钮、 菜单项或工具栏命令的键盘快捷方式以及如何将应用的默认编辑器中的键盘映射或将其限制到自定义编辑器。  
@@ -45,7 +45,7 @@ ms.locfileid: "49822094"
 4. 直到找到未映射，请尝试不同的键组合。  
   
    > [!NOTE]
-   >  即使用键盘快捷方式**Alt**可能会打开一个菜单，并不是直接执行命令。 因此，**当前使用的快捷键**框中键入包括的快捷方式时可能为空**Alt**。你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
+   >  即使用键盘快捷方式**Alt**可能会打开一个菜单，并不是直接执行命令。 因此，**当前使用的快捷方式**框中键入包括的快捷方式时可能为空**Alt**。你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
   
    以下过程假设您有一个菜单命令与现有 VSPackage。 如果您需要执行该操作的帮助，看一看[与菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "49822094"
   
    在大多数情况下， **Shift**不应在由于已按导致大多数键入大写字母或符号的字母数字键使用不带第二个修饰符。  
   
-   虚拟键代码使你可以访问不具有字符与它们，例如，功能键相关联的特殊键和**退格符**密钥。 有关详细信息，请参阅[虚拟键代码](https://docs.microsoft.com/en-us/windows/desktop/inputdev/virtual-key-codes)。  
+   虚拟键代码使你可以访问不具有字符与它们，例如，功能键相关联的特殊键和**退格符**密钥。 有关详细信息，请参阅[虚拟键代码](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes)。  
   
    若要使该命令在 Visual Studio 中提供编辑器，将设置`editor`属性为`guidVSStd97`。  
   

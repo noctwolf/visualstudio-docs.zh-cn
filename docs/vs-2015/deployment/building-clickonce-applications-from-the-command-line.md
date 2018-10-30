@@ -22,12 +22,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: wpickett
-ms.openlocfilehash: dac26a7846f4a6b611c53e9cd537d112a8205d2f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c9a9b2e248e4f10e9b5d3f045c67a9622edd2c2b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836783"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220012"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ ms.locfileid: "49836783"
   
 5. 键入 `msbuild /target:publish`。  
   
-   上述步骤将生成完整[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]的子文件夹中的名为 P 的项目的应用程序部署**ublish**。 CmdLineDemo.application 是[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署清单。 文件夹 CmdLineDemo_1.0.0.0 包含 CmdLineDemo.exe CmdLineDemo.exe.manifest，文件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序清单。 Setup.exe 是引导程序、 其默认配置安装[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 DotNetFX 文件夹中包含的可再发行组件[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 这是在 Web 上或者通过 UNC 或 CD/DVD 部署你的应用程序所需的文件的整个集。  
+   上述步骤将生成完整[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]的子文件夹中的名为的项目的应用程序部署**发布**。 CmdLineDemo.application 是[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]部署清单。 文件夹 CmdLineDemo_1.0.0.0 包含 CmdLineDemo.exe CmdLineDemo.exe.manifest，文件[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]应用程序清单。 Setup.exe 是引导程序、 其默认配置安装[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 DotNetFX 文件夹中包含的可再发行组件[!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]。 这是在 Web 上或者通过 UNC 或 CD/DVD 部署你的应用程序所需的文件的整个集。  
   
 ## <a name="publishing-properties"></a>发布属性  
  在上面的过程中发布应用程序，以下属性是通过发布向导插入到项目文件。 这些属性直接影响如何[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]生成应用程序。  

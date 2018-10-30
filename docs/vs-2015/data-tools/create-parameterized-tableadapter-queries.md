@@ -24,12 +24,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 150105de459912716cd3cfccff9efb35927c7d49
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56e14d66275bd961829fc09e06f7d5e99dbcc2c4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823497"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218894"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化 TableAdapter 查询
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ ms.locfileid: "49823497"
 2. 上**数据**菜单中，选择**添加查询**或**数据智能标记**。  
   
    > [!NOTE]
-   >  如果**添加查询**上不可用**数据**菜单中，选择要添加到参数化，显示的数据源，在窗体上的控件。 例如，如果窗体在 <xref:System.Windows.Forms.DataGridView> 控件中显示数据，则选择该控件。 如果窗体在各个控件中显示数据，则选择任意数据绑定控件。  
+   > 如果**添加查询**上不可用**数据**菜单中，选择要添加到参数化，显示的数据源，在窗体上的控件。 例如，如果窗体在 <xref:System.Windows.Forms.DataGridView> 控件中显示数据，则选择该控件。 如果窗体在各个控件中显示数据，则选择任意数据绑定控件。  
   
 3. 在中**选择数据源表**区域中，选择您要的 tablethat 添加到参数化。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "49823497"
   
 5. 在中**查询文本**框中，键入不带参数的查询。  
   
-6. 选择**确定**。  
+6. 选择“确定”。  
   
     一个控件用于输入参数和一个**负载**按钮添加到窗体中<xref:System.Windows.Forms.ToolStrip>控件。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "49823497"
   
 1.  在中**数据集设计器**，选择需要接受 null 参数值的 TableAdapter 查询。  
   
-2.  在中**属性**窗口中，选择**参数**。然后按旁边的省略号 (**...**) 按钮以打开**参数集合编辑器**。  
+2.  在中**属性**窗口中，选择**参数**。 然后按旁边的省略号 (**...**) 按钮以打开**参数集合编辑器**。  
   
 3.  选择允许 null 值的参数，并设置**AllowDbNull**属性设置为`true`。  
   

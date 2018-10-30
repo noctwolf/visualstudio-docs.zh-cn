@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd3a3f47af8251f6f4bfa1b5b5f08da7a1f3e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f82d53d5bbc9d309ba5d7e8710f0afe2023b8965
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933555"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219882"
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>演练： 调试多线程应用程序在 Visual Studio 中使用线程窗口
 Visual Studio 提供了**线程**窗口和其他用户界面元素，以帮助您调试多线程应用程序。 本教程演示如何使用**线程**窗口和**调试位置**工具栏。 有关其他工具的信息，请参阅[开始调试多线程应用程序](../debugger/get-started-debugging-multithreaded-apps.md)。 本教程中，只需要几分钟，但完成它将使您熟悉用于调试多线程应用程序的功能。   
@@ -37,7 +37,7 @@ Visual Studio 提供了**线程**窗口和其他用户界面元素，以帮助�
   
      此时将出现 “新建项目” 对话框。  
   
-2.  在中**项目类型**s 框中，单击所选的语言： **Visual Basic**， **Visual C#**，或者**Visual c + +**。  
+2.  在中**项目类型**框中，单击所选的语言： **Visual Basic**， **Visual C#** ，或**Visual c + +**。  
   
 3.  下**Windows 桌面**，选择**控制台应用**。  
   

@@ -19,12 +19,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c7100e3fc6e18387cf8ef8cfdc2b485b610b3dc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 009e9269961b3cd532736fd5b72e28a389a4382a
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812707"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220038"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ ms.locfileid: "49812707"
   
 3. 在中**按快捷键**框中，键入你想要使用的键盘快捷方式。  
   
-    如果在 Visual Studio 中，已使用该快捷方式**当前使用的快捷键**框将显示当前调用快捷方式命令。  
+    如果在 Visual Studio 中，已使用该快捷方式**快捷键的当前使用**框将显示当前调用快捷方式命令。  
   
 4. 直到找到未映射，请尝试不同的键组合。  
   
    > [!NOTE]
-   >  使用 ALT 的键盘快捷方式可能打开一个菜单，并不是直接执行命令。 因此，**当前使用的快捷键**类型包括 ALT 的快捷方式时，框可能为空。 你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
+   >  使用 ALT 的键盘快捷方式可能打开一个菜单，并不是直接执行命令。 因此，**快捷键的当前使用**类型包括 ALT 的快捷方式时，框可能为空。 你可以验证快捷方式不会打开一个菜单，通过关闭**选项**对话框，然后按多个键。  
   
    以下过程假设您有一个菜单命令与现有 VSPackage。 如果您需要执行该操作的帮助，看一看[使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
