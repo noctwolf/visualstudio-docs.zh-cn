@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 19f903ae02413bf18474aa2d95d71d765c288fa9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71667a9d00dd1935e8eaeb281c5f0c6834208702
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900626"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244393"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228：不要发行未发布的资源格式
 
@@ -39,7 +39,7 @@ ms.locfileid: "49900626"
  通过使用预发行版本的.NET Framework 生成的资源文件可能不是可由支持的.NET Framework 版本。
 
 ## <a name="how-to-fix-violations"></a>如何解决冲突
- 若要修复与此规则的冲突，生成使用.NET Frameworkk 的受支持的版本的资源。
+ 若要修复与此规则的冲突，生成使用支持的.NET Framework 版本的资源。
 
 ## <a name="when-to-suppress-warnings"></a>何时禁止显示警告
  不禁止显示此规则发出的警告。
