@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 337badd0f32dad5c6bbf87dd981dc47de0cb87d3
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224265"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228852"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教程
 
@@ -97,7 +97,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 
 ![分支名称用来表示源控件下的项目](media/ide-tour-image22.png)
 
-未提交更改的文件在解决方案窗格的文件图标上标有注释，如下所示：
+如果文件有未提交的更改，文件在解决方案窗格中的图标上就会有注释，如下图所示：
 
 ![Solution Pad 中的未提交文件](media/ide-tour-image23.png)
 

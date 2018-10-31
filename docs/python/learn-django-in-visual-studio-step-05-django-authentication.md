@@ -1,4 +1,4 @@
----
+﻿---
 title: 教程 - 了解 Visual Studio 中的 Django，步骤 5
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体介绍了 Django Web 项目模板提供的身份验证功能。
 ms.date: 08/13/2018
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 419c9f54d0c537d417034eb4375d6402951609bd
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627282"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120350"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 
@@ -198,7 +198,7 @@ ms.locfileid: "42627282"
 
 1. 完成所有操作后，停止服务器，并再次将所做的更改提交到源代码管理。
 
-### <a name="question-what-is-the-purpose-of-the--crsftoken--tag-that-appears-in-the-form-elements"></a><a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>问：\<form\> 元素中显示的 {% csrf_token %} 标记的用途是什么？
+### <a name="question-what-is-the-purpose-of-the--csrftoken--tag-that-appears-in-the-form-elements"></a>问：\<form\> 元素中的 {% csrf_token %} 标记有何用途？
 
 答：`{% csrf_token %}` 标记包含 Django 的内置[跨网站请求伪造 (csrf) 保护](https://docs.djangoproject.com/en/2.0/ref/csrf/)（Django 文档）。 通常将此标记添加到涉及 POST、PUT 或 DELETE 请求方法的任何元素（如窗体）。 然后，模板呈现函数 (`render`) 会插入必要的保护。
 

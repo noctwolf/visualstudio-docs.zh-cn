@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e862322995c7cda4a7080ee387c7a080437748
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 94fdbb5f143d1c087d97490961d230ace239f348
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178513"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48880144"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBuild 的构建基块，并演示如何编写、操作和调试 MSBuild 项目。 学习内容：
@@ -116,7 +116,7 @@ Message 任务是 MSBuild 所附带的许多任务之一。 有关可用任务�
 Message 任务将文本属性的字符串值作为输入并显示在输出设备上。 HelloWorld 目标执行 Message 任务两次：第一次显示“Hello”，第二次显示“World”。
 
 ## <a name="build-the-target"></a>生成目标
- 从 **Visual Studio 命令提示符**运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 /Target 或 /t 命令行开关选择该目标。
+ 从 **Visual Studio 命令提示符**运行 MSBuild，生成上面定义的 HelloWorld 目标。 使用 -target 或 -t 命令行开关选择目标。
 
 > [!NOTE]
 >  以下各部分将 **Visual Studio 命令提示符**称为**命令窗口**。
@@ -127,10 +127,10 @@ Message 任务将文本属性的字符串值作为输入并显示在输出设备
 
 2.  从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp。
 
-3.  使用命令开关 /t:HelloWorld 运行 MSBuild。 这将选择并生成 HelloWorld 目标：
+3.  使用命令开关 -t:HelloWorld 运行 msbuild。 这将选择并生成 HelloWorld 目标：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  在“命令窗口”检查输出。 应看到两行“Hello”和“World”：
@@ -200,7 +200,7 @@ $(PropertyName)
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到这两行（.NET Framework 版本可能不同）：
@@ -231,14 +231,14 @@ $(PropertyName)
  可使用与生成属性相同的方式引用项目文件中的环境变量。 例如，若要使用项目文件中的 PATH 环境变量，可使用 $(Path)。 如果项目包含与环境变量具有相同名称的属性定义，则项目中的属性将替代环境变量的值。 有关详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。
 
 ## <a name="set-properties-from-the-command-line"></a>从命令行设置属性
- 可使用 /property 或 /p 命令行开关在命令行上定义属性。 从命令行接收的属性值将替代在项目文件和环境变量中设置的属性值。
+ 可使用 -property 或 -p 命令行开关在命令行中定义属性。 从命令行接收的属性值将替代在项目文件和环境变量中设置的属性值。
 
 #### <a name="to-set-a-property-value-from-the-command-line"></a>在命令行中设置属性值
 
 1.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld /p:Configuration=Release
+    msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
 2.  检查输出。 应看到此行：
@@ -267,7 +267,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到此行：
@@ -329,7 +329,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到这一长行：
@@ -361,7 +361,7 @@ MSBuild 创建配置属性并赋予其“发布”值。
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到这些行：
@@ -441,7 +441,7 @@ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位
 4.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 5.  检查输出。 应看到此行：
@@ -482,7 +482,7 @@ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到这些行：
@@ -512,7 +512,7 @@ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到这些行：
@@ -550,7 +550,7 @@ Exclude 属性只会影响由 Include 属性添加的项（这两个属性均位
 3.  在“命令窗口”输入并执行此行：
 
     ```cmd
-    msbuild buildapp.csproj /t:HelloWorld
+    msbuild buildapp.csproj -t:HelloWorld
     ```
 
 4.  检查输出。 应看到此行：

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab08de0c6993f57c719f69ccf27e30e3cbe41c32
-ms.sourcegitcommit: 80f9daba96ff76ad7e228eb8716df3abfd115bc3
+ms.openlocfilehash: 16c92111fc29071447d4af5e736b881fa7c7a769
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37433297"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356738"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -32,6 +32,69 @@ ms.locfileid: "37433297"
 
    针对解决方案中的所有文件启用代码分析，而不仅针对打开的代码文件。 详情请参阅[完整解决方案分析](../../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)。
 
+## <a name="using-directives"></a>Using 指令
+
+- 对 using 排序时将“System”指令排在第一位
+
+   当你选择右键单击菜单中的“删除和排序 Using”命令后，它会对 `using` 指令进行排序，并将“System”命名空间置于列表顶部
+
+   排序前：
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   排序后：
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   using AutoMapper;
+   using FluentValidation;
+   using Newtonsoft.Json;
+   ```
+   
+- 单独的 using 指令组
+
+   当你选择右键单击菜单中的“删除和排序 Using”命令后，它会在具有相同根命名空间的指令组之间插入空行，以将 `using` 指令分隔开来。
+
+   排序前：
+
+   ```csharp
+   using AutoMapper;
+   using FluentValidation;
+   using System.Collections.Generic;
+   using System.Linq;
+   using Newtonsoft.Json;
+   using System;
+   ```
+   
+   排序后：
+   
+   ```csharp
+   using AutoMapper;
+   
+   using FluentValidation;
+   
+   using Newtonsoft.Json;
+   
+   using System;
+   using System.Collections.Generic;
+   using System.Linq;
+   ```
+   
+- 为引用程序集和 NuGet 包中的类型添加 using 
+
+   选择[“快速操作”](../quick-actions.md)后，可使用它安装 NuGet 包，并为未引用的类型添加 `using` 指令。
+
+   ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
+  
 ## <a name="highlighting"></a>Highlighting
 
 - 突出显示对光标下符号的引用

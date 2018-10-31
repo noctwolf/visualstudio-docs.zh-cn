@@ -49,12 +49,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4405e50a2bc264c88c073980da77fafbedf49cbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3cb2a939fb569ca9c50e6334fa7b836a6953dca4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830660"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219154"
 ---
 # <a name="options-text-editor-general"></a>选项，文本编辑器，常规
 
@@ -94,14 +94,6 @@ ms.locfileid: "49830660"
 ### <a name="indicator-margin"></a>指示器边距
 
 勾选此项后，将显示编辑器文本区域的左侧边缘外的垂直边距。 在此边距内单击时，会显示与文本有关的图标和工具提示。 例如，指示器边距内会出现断点或任务列表快捷方式。 但不显示指示器边距信息。
-
-### <a name="vertical-scroll-bar"></a>垂直滚动条
-
-勾选此项后，会显示一个垂直滚动条，用户可以上下滚动，查看编辑器查看区域外的元素。 如果垂直滚动条不可用，可以使用 Page Up、Page Down 键和光标键滚动。
-
-### <a name="horizontal-scroll-bar"></a>水平滚动条
-
-勾选此项后，会显示一个水平滚动条，用户可以左右滚动，查看编辑器查看区域外的元素。 如果水平滚动条不可用，可以使用光标键滚动。
 
 ### <a name="highlight-current-line"></a>突出显示当前行
 

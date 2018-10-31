@@ -18,12 +18,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: 44c99fd2a35ffbdb1db07ed1a63613dbe79dd61e
-ms.sourcegitcommit: 0cf1e63b6e0e6a0130668278489b21a6e5038084
+ms.openlocfilehash: e909f711c7e0e3fc5fc607ab6d7e05fd1b7c8373
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39468175"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219167"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
@@ -65,7 +65,7 @@ Dotfuscator CE 可将[应用程序验证代码][checks]插入程序集（包括[
 
 <!-- Copyright © 2017 PreEmptive Solutions, LLC -->
 
-[assemblies]:  https://docs.microsoft.com/en-us/dotnet/standard/assembly-format
+[assemblies]:  https://docs.microsoft.com/dotnet/standard/assembly-format
 [uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
 [xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 

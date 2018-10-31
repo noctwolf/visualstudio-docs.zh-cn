@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2766af365625890a0769f298d1801179da9c7e07
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: ee40aadd3287018e52910ad6b4a4000db6bcce8a
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029282"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443410"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入门：使用 Visual Studio 创建第一个 C# 控制台应用
 
@@ -39,9 +39,9 @@ ms.locfileid: "47029282"
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-csharp-dotnetcore-helloworld-console-app.png)
 
-     如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。
+     如果看不到“控制台应用(.NET Core)”项目模板，请选择“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。
 
-   ![单击“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
+   ![选择“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/csharp-open-visual-studio-installer-hello-world.png)
 
      Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
@@ -75,9 +75,9 @@ ms.locfileid: "47029282"
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-1. 单击工具栏上的“HelloWorld”按钮以在调试模式下运行应用程序。 （或者，可以按 F5。）
+1. 选择工具栏中的“HelloWorld”按钮，在调试模式下运行应用程序。 （或者，可以按 F5。）
 
-   ![单击“Hello World”按钮，从工具栏运行程序](../ide/media/csharp-console-hello-world-button.png)
+   ![选择工具栏中的“HelloWorld”按钮以运行应用程序](../ide/media/csharp-console-hello-world-button.png)
 
 1. 在控制台窗口中查看你的应用。
 
@@ -98,4 +98,4 @@ ms.locfileid: "47029282"
 祝贺你完成此快速入门！ 我们希望你已对 C# 和 Visual Studio IDE 有了一定了解。 要更加深入地了解，请继续学习下面的教程。
 
 > [!div class="nextstepaction"]
-> [C# 教程](/dotnet/csharp/tutorials/)
+> [Visual Studio 中的 C# 控制台应用程序入门](tutorial-csharp-console.md)

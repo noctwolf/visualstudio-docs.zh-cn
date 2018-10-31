@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 813fdbccaf7bb685f0b4bf182f0bd0aede907f83
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551657"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101129"
 ---
 # <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何分配用于项目的 Python 环境
 
@@ -50,7 +50,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 
 使用虚拟环境的一项优势是，随着项目的开发，虚拟环境始终反映出项目的确切依赖项。 （另一方面，无论是否在项目中使用库，共享的全局环境中都包含任意数量的库。）随后即可通过虚拟环境轻松创建 requirements.txt 文件，此文件之后用于在另一台开发/生产计算机上重新安装上述依赖项。 有关详细信息，请参阅[使用 requirements.txt 管理所需的包](managing-required-packages-with-requirements-txt.md)。
 
-在 Visual Studio 中打开包含 requirements.txt 文件的项目时，Visual Studio 自动显示用于重新创建虚拟环境的选项。 在未安装 Visual Studio 的计算机（如 Azure 应用服务）上，可使用 `pip install -r requirements.txt` 进行包的还原（相关流程请参阅[在 Azure 应用服务上管理 Python](managing-python-on-azure-app-service.md)）。
+在 Visual Studio 中打开包含 requirements.txt 文件的项目时，Visual Studio 自动显示用于重新创建虚拟环境的选项。 在未安装 Visual Studio 的计算机上，可运行 `pip install -r requirements.txt` 还原包。
 
 由于虚拟环境包含到基础解释器的硬编码路径，且你可使用 requirements.txt 重新创建环境，因此通常省略来自源代码管理功能集的整个虚拟环境。
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d524626187e95a02654f00ca7cf7921fd819e7c6
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: e80252582f93c995330f9c586a56e2f8f2c4e6a3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081652"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897168"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 在生成项目时，你经常使用不同的生成选项编译相同的组件。 例如，你可以使用符号信息创建调试版本，或者使用无符号信息但启用优化来创建发布版本。 或者，可以生成项目，在某个特定平台（例如，x86 或[!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]）上运行。 在所有这些情况下，大部分生成选项保持不变；只更改几个选项以控制生成配置。 利用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，你可以使用属性和条件来创建不同的生成配置。  
@@ -50,41 +50,41 @@ ms.locfileid: "39081652"
     ```  
   
 ## <a name="specify-properties-on-the-command-line"></a>在命令行上指定属性  
- 你的项目文件编写为接受多个配置后，你需要能够在生成项目时更改这些配置。 通过允许在命令行上使用 **/property** 或 **/p** 开关来指定属性，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以提供此功能。  
+ 你的项目文件编写为接受多个配置后，你需要能够在生成项目时更改这些配置。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 可以提供此功能，具体是通过允许使用 -property 或 -p 开关在命令行中指定属性。  
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性  
   
--   使用 **/property** 开关以及属性和属性值。 例如:  
+-   结合使用 -property 开关与属性和属性值。 例如:  
   
     ```cmd  
-    msbuild file.proj /property:Flavor=Debug  
+    msbuild file.proj -property:Flavor=Debug  
     ```  
   
     或  
   
     ```cmd  
-    Msbuild file.proj /p:Flavor=Debug  
+    Msbuild file.proj -p:Flavor=Debug  
     ```  
   
 #### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令行上指定多个项目属性  
   
--   多次使用 **/property** 或 **/p** 开关以及属性和属性值，或者使用一个 **/property** 或 **/p** 开关并使用分号 (;) 分隔多个属性。 例如:  
+- 多次结合使用 -property 或 -p 开关与属性和属性值，或使用一个 -property 或 -p 开关，并使用分号 (;) 分隔多个属性。 例如:  
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug;Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug;Platform=x86  
+  ```  
   
-    或
+  或
   
-    ```cmd  
-    msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
-    ```  
+  ```cmd  
+  msbuild file.proj -p:Flavor=Debug -p:Platform=x86  
+  ```  
   
- 环境变量也被视为属性，并且由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 自动合并。 有关使用环境变量的详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
+  环境变量也被视为属性，并且由 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 自动合并。 有关使用环境变量的详细信息，请参阅[如何：在生成中使用环境变量](../msbuild/how-to-use-environment-variables-in-a-build.md)。  
   
- 在命令行中指定的属性值将优先于任何在项目文件中为同一属性设置的值，而项目文件中的值优先于环境变量中的值。  
+  在命令行中指定的属性值将优先于任何在项目文件中为同一属性设置的值，而项目文件中的值优先于环境变量中的值。  
   
- 你可以通过使用项目标记中的 `TreatAsLocalProperty` 属性更改此行为。 对于列出具有该特性的属性名称，在命令行上指定的属性值并不优先于项目文件中的值。 你在本主题后面找到示例。  
+  你可以通过使用项目标记中的 `TreatAsLocalProperty` 属性更改此行为。 对于列出具有该特性的属性名称，在命令行上指定的属性值并不优先于项目文件中的值。 你在本主题后面找到示例。  
   
 ## <a name="example"></a>示例  
  以下代码示例“Hello World”项目，包含两个可用于创建调试版本和发布版本的新属性组。  
@@ -92,13 +92,13 @@ ms.locfileid: "39081652"
  若要此项目的调试版本，请键入：  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=debug  
+msbuild consolehwcs1.proj -p:flavor=debug  
 ```  
   
  若要此项目的零售版本，请键入：  
   
 ```cmd  
-msbuild consolehwcs1.proj /p:flavor=retail  
+msbuild consolehwcs1.proj -p:flavor=retail  
 ```  
   
 ```xml  
@@ -159,7 +159,7 @@ msbuild consolehwcs1.proj /p:flavor=retail
  若要生成项目，请输入以下命令：  
   
 ```cmd  
-msbuild colortest.proj /t:go /property:Color=Green  
+msbuild colortest.proj -t:go -property:Color=Green  
 ```  
   
 ```xml  

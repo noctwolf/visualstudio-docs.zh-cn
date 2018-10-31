@@ -1,7 +1,7 @@
 ---
 title: 分析不使用 VS 调试器情况下的内存使用率 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 09/28/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6647fb758d6895db98aa6bad47295a6a4aae86
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35668394"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49827724"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>分析不使用 Visual Studio 调试器情况下的内存使用情况
 可以在不调试的情况下使用**内存使用率**执行以下操作  
   
--   监视在制订方案时 Visual Studio 中应用的内存使用情况。  
+- 监视在制订方案时 Visual Studio 中应用的内存使用情况。  
   
--   创建应用的内存状态的详细快照。  
+- 创建应用的内存状态的详细快照。  
   
--   通过比较快照，找出内存问题的根本原因。  
+- 通过比较快照，找出内存问题的根本原因。  
   
- 本主题介绍了如何使用“内存使用”工具分析 UWP XAML 应用。 若要对使用 JavaScript 和 HTML 的 UWP 应用分析内存使用，请参阅[分析内存使用 (JavaScript)](../profiling/javascript-memory.md)。  
+  目前，必须使用随附调试器的工具，才能度量 .NET Core 应用的内存使用情况。 对于其他托管应用和本机应用，可使用随附或未随附调试器的工具。 本主题中的屏幕截图展示的是 UWP XAML 应用。 若要对使用 JavaScript 和 HTML 的 UWP 应用分析内存使用，请参阅[分析内存使用 (JavaScript)](../profiling/javascript-memory.md)。
   
 ## <a name="start-a-memory-usage-diagnostic-session"></a>启动内存使用量诊断会话  
   
@@ -69,13 +69,13 @@ ms.locfileid: "35668394"
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>“内存使用率”快照视图  
  使用快照视图以在新的 Visual Studio 窗口中打开详细的报告。 存在两种类型的快照视图：  
   
--   [快照详细报告](#snapshot-reports)显示某个快照中的类型和实例。  
+- [快照详细报告](#snapshot-reports)显示某个快照中的类型和实例。  
   
--   [快照差异报告](#snapshot-difference-diff-reports)比较两个快照中的类型和实例。  
+- [快照差异报告](#snapshot-difference-diff-reports)比较两个快照中的类型和实例。  
   
- ![快照视图链接](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![快照视图链接](../profiling/media/memuse__snapshotview_numbered.png "MEMUSE__SnapshotView_Numbered")  
   
- 快照视图图片中带编号的项是可以打开内存使用量报告视图的链接。  
+  快照视图图片中带编号的项是可以打开内存使用量报告视图的链接。  
   
 |||  
 |-|-|  

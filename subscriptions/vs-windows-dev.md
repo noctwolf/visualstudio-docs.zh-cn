@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: c9d7bc13013d3dd98f675a22b5fb01ac46b2b134
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: be7a740e22201a230658dec0803a8523f7716462
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44279318"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49832402"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 
@@ -29,27 +29,28 @@ ms.locfileid: "44279318"
 1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在“工具”部分中找到“Windows 开发人员帐户”磁贴，然后单击“权益”磁贴底部的“获取代码”链接。  将代码复制到剪贴板，然后单击“激活”。
-    > [!div class="mx-imgBorder"]
-    > ![Windows 开发者权益磁贴](_img\vs-windows-dev\vs-windows-dev-tile.png)
+   > [!div class="mx-imgBorder"]
+   > ![Windows 开发者权益磁贴](_img/vs-windows-dev/vs-windows-dev-tile.png)
 
-2. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 站点上可以开始注册过程。  单击“注册”以继续。
-    > [!div class="mx-imgBorder"]
-    > ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-register1-cropped.png)
+3. 在 [https://developer.microsoft.com](https://developer.microsoft.com) 站点上可以开始注册过程。  单击“注册”以继续。
+   > [!div class="mx-imgBorder"]
+   > ![Windows 开发者权益注册](_img/vs-windows-dev/vs-windows-dev-register1-cropped.png)
 
-3. 登录到你的订阅。  如果有多个帐户，请选择与你的企业订阅相关联的帐户。
-4. 在下一页中，选择居住地或业务所在地的国家/地区，然后单击“下一步”。
-5. 选择“个人”作为你的帐户类型。
-6. 创建发布者显示名称。  这将是客户看到的与你的应用、加载项和服务相关联的唯一名称。
-7. 提供你的联系信息和首选电子邮件语言，然后单击“下一步”。
-8. 可能需要验证密码。  输入密码，然后单击“登录”。
-9. 在“注册 – 付款”页上，将之前复制的代码粘贴到“促销代码”字段中。  该页面将更新，显示“不需要付款”。  单击 **“下一步”**。
+4. 登录到你的订阅。  如果有多个帐户，请选择与你的企业订阅相关联的帐户。
+5. 在下一页中，选择居住地或业务所在地的国家/地区，然后单击“下一步”。
+6. 选择“个人”作为你的帐户类型。
+7. 创建发布者显示名称。  这将是客户看到的与你的应用、加载项和服务相关联的唯一名称。
+8. 提供你的联系信息和首选电子邮件语言，然后单击“下一步”。
+9. 可能需要验证密码。  输入密码，然后单击“登录”。
+10. 在“注册 – 付款”页上，将之前复制的代码粘贴到“促销代码”字段中。  该页面将更新，显示“不需要付款”。  单击 **“下一步”**。
     > [!div class="mx-imgBorder"]
-    > ![Windows 开发者权益注册](_img\vs-windows-dev\vs-windows-dev-promo-cropped.png)
+    > ![Windows 开发者权益注册](_img/vs-windows-dev/vs-windows-dev-promo-cropped.png)
 
-10. 查看帐户信息、应用开发人员协议，然后单击复选框以指示接受条款和条件。  然后，单击“完成”。
-11. 单击“转到仪表板”，开始使用你的 Windows 开发者帐户！
+11. 查看帐户信息、应用开发人员协议，然后单击复选框以指示接受条款和条件。  然后，单击“完成”。
+12. 单击“转到仪表板”，开始使用你的 Windows 开发者帐户！
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | Included       |  是|
@@ -59,7 +60,7 @@ ms.locfileid: "44279318"
 | Visual Studio Dev Essentials | NA  | 不可用                                            |  NA|
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员。不包括：Microsoft 合作伙伴网络 (MPN)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务。
+<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员。不包括：Microsoft 合作伙伴网络 (MPN)、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 

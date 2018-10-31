@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d70460671bcea19f0a4e56de6ebdd3c7affdb670
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 4e2fba3d5a80de2be973d7a1efad7290731e5a7c
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179185"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49828846"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>演练：从头开始创建 MSBuild 项目文件
 面向 .NET Framework 的编程语言将使用 MSBuild 项目文件来介绍并控制应用程序生成过程。 使用 Visual Studio 创建 MSBuild 项目文件时，会自动将适当的 XML 添加到该文件。 但是，你可能会发现，了解 XML 的组织方式以及如何能够更改 XML 来控制生成将非常有用。  
@@ -172,7 +172,7 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
   
 #### <a name="to-build-the-application"></a>生成应用程序  
   
-1.  在命令提示符处，键入 **msbuild helloworld.csproj /t:Build**。  
+1.  在命令提示符处，键入 msbuild helloworld.csproj -t:Build。  
   
      此操作将调用 Visual C# 编译器来创建 Helloworld 应用程序，从而生成 Helloworld 项目文件的 Build 目标。  
   
@@ -183,7 +183,7 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
 > [!NOTE]
 >  可以通过提高详细信息级别来查看有关生成的更多详细级别。 要将详细级别设置为“详细”，请在命令提示符下键入命令：  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+>  **msbuild helloworld.csproj -t:Build -verbosity:detailed**  
   
 ## <a name="add-build-properties"></a>添加生成属性  
  可以将生成属性添加到项目文件中，从而进一步控制生成。 现在添加以下属性：  
@@ -259,7 +259,7 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
   
 #### <a name="to-test-the-build-properties"></a>测试生成属性  
   
-1.  在命令提示符处，键入 **msbuild helloworld.csproj /t:Build**。  
+1.  在命令提示符处，键入 msbuild helloworld.csproj -t:Build。  
   
      这将创建“\Bin\\”文件夹，然后调用 Visual C# 编译器创建 MSBuildSample 应用程序，并将其放在“\Bin\\”文件夹中。  
   
@@ -334,9 +334,9 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
   
 #### <a name="to-test-the-build-targets"></a>测试生成目标  
   
-1.  在命令提示符处，键入 **msbuild helloworld.csproj /p:AssemblyName=Greetings**。  
+1.  在命令提示符处，键入msbuild helloworld.csproj -p:AssemblyName=Greetings。  
   
-     由于未使用 **/t** 开关显式设置目标，因此 MSBuild 将运行默认的 Build 目标。 **/p** 开关将替代 `AssemblyName` 属性，并为其指定新值 `Greetings`。 这将导致在“\Bin\\”文件夹中创建一个新应用程序 Greetings.exe。  
+     由于未使用 -t 开关显式设置目标，因此 MSBuild 运行默认 Build 目标。 -p 开关替代 `AssemblyName` 属性，并为它指定新值 `Greetings`。 这将导致在“\Bin\\”文件夹中创建一个新应用程序 Greetings.exe。  
   
 2.  要验证“\Bin\\”文件夹是否同时包含 MSBuildSample 应用程序和新的 Greetings 应用程序，请键入“dir Bin”。  
   
@@ -344,11 +344,11 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
   
      显示的消息应为 **Hello, world!** 。  
   
-4.  键入 **msbuild helloworld.csproj /t:clean** 删除 MSBuildSample 应用程序。  
+4.  通过键入 msbuild helloworld.csproj -t:clean，删除 MSBuildSample 应用程序。  
   
      这将运行 Clean 任务，以删除具有默认 `AssemblyName` 属性值 `MSBuildSample` 的应用程序。  
   
-5.  键入 **msbuild helloworld.csproj /t:clean /p:AssemblyName=Greetings** 删除 Greetings 应用程序。  
+5.  通过键入 msbuild helloworld.csproj -t:clean -p:AssemblyName=Greetings，删除 Greetings 应用程序。  
   
      这将运行 Clean 任务，以删除具有指定 **AssemblyName** 属性值 `Greetings` 的应用程序。  
   
@@ -382,11 +382,11 @@ Build 目标中的任务按顺序执行。 在本例中，Visual C# 编译器 `C
     </Target>  
     ```  
   
-2.  在命令提示符下，键入 **msbuild /v:d** 测试 Build 目标。  
+2.  在命令提示符处，键入 msbuild -v:d，以测试 Build 目标。  
   
      请记住，helloworld.csproj 是默认项目文件，并且 Build 为默认目标。  
   
-     **/v:d** 开关指定生成过程的详细说明。  
+     -v:d 开关指定了生成流程的详细说明。  
   
      此时应显示以下各行：  
   

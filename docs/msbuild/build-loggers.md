@@ -14,23 +14,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8fc3ce425f2eaf6052d1e301d23c00d3503daec
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 2e1faf28c05dec58117e5d34e21e7c8020ad3a4d
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894282"
 ---
 # <a name="build-loggers"></a>生成记录器
 记录器提供一种方法，通过此方法可自定义生成的输出并显示消息、错误或警告以响应特定生成事件。 每个记录器作为 .NET 类实现，此类实现 Microsoft.Build.Framework.dll 程序集中定义的 <xref:Microsoft.Build.Framework.ILogger> 接口。  
   
  在实现记录器时，有两种方法可供选择：  
   
--   直接实现 <xref:Microsoft.Build.Framework.ILogger> 接口。  
+- 直接实现 <xref:Microsoft.Build.Framework.ILogger> 接口。  
   
--   从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。  
+- 从 Microsoft.Build.Utilities.dll 程序集中定义的帮助程序类 <xref:Microsoft.Build.Utilities.Logger> 中派生类。 <xref:Microsoft.Build.Utilities.Logger> 实现 <xref:Microsoft.Build.Framework.ILogger>，并提供了一些 <xref:Microsoft.Build.Framework.ILogger> 成员的默认实现代码。  
   
- 本主题将介绍如何编写派生自 <xref:Microsoft.Build.Utilities.Logger> 的简单记录器，并在控制台上显示用于响应特定生成事件的消息。  
+  本主题将介绍如何编写派生自 <xref:Microsoft.Build.Utilities.Logger> 的简单记录器，并在控制台上显示用于响应特定生成事件的消息。  
   
 ## <a name="register-for-events"></a>注册事件  
  记录器的目的是收集有关生成进度的信息（正如生成引擎所报告的信息），随后以有用的方式报告该信息。 所有记录器都必须重写 <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> 方法，即记录器用于注册事件的位置。 在此示例中，记录器注册 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>、<xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 和 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 事件。  
@@ -43,25 +43,25 @@ ms.locfileid: "39179978"
  [!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]  
   
 ## <a name="respond-to-logger-verbosity-values"></a>响应记录器详细信息值  
- 在某些情况下，如果 MSBuild.exe **/verbosity** 开关包含特定值，可能需要仅记录事件中的信息。 在此示例中，如果 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 属性为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`（由 /verbosity 开关设置），<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件处理程序仅记录一条消息。  
+ 在某些情况下，如果 MSBuild.exe -verbosity 开关包含特定值，建议仅记录事件信息。 在此示例中，仅当 verbosity 开关设置的 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 属性为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` 时，<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件处理程序才记录消息。  
   
  [!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]  
   
 ## <a name="specify-a-logger"></a>指定记录器  
- 将记录器编译到程序集后，你需要告诉 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在生成过程中使用该记录器。 可以通过配合使用 /logger 开关和 MSBuild.exe 来执行此操作。 有关可用于 MSBuild.exe 的开关的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
+ 将记录器编译到程序集后，你需要告诉 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在生成过程中使用该记录器。 为此，可结合使用 -logger 开关和 MSBuild.exe。 有关可用于 MSBuild.exe 的开关的详细信息，请参阅[命令行参考](../msbuild/msbuild-command-line-reference.md)。  
   
- 以下命令行生成项目 MyProject.csproj，并使用在 SimpleLogger.dll 中实现的记录器类。 **/nologo** 开关隐藏版权标志和版权消息，**/noconsolelogger** 开关禁用默认的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 控制台记录器。  
+ 以下命令行生成项目 MyProject.csproj，并使用在 SimpleLogger.dll 中实现的记录器类。 -nologo 开关隐藏横幅和版权所有消息，-noconsolelogger 开关禁用默认的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 控制台记录器。  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll  
 ```  
   
  以下命令行通过相同记录器生成项目，但是 `Verbosity` 级别为 `Detailed`。  
   
 ```cmd  
-MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed  
+MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed  
 ```  
-  
+
 ## <a name="example"></a>示例  
   
 ### <a name="description"></a>描述  

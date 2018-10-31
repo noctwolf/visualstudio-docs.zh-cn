@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af9d6476e82f37d02e1a32b1d6cb23812f0fdde5
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34748213"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143185"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 
@@ -100,7 +100,7 @@ ms.locfileid: "34748213"
 
 1. 选择“生成”页，然后在“禁止显示警告”框中，指定警告编号“0168”。
 
-     ![“生成”页，“项目设计器”](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![“生成”页，“项目设计器”](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      有关详细信息，请参阅 [“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -114,23 +114,23 @@ ms.locfileid: "34748213"
 
 1. 在“解决方案资源管理器”中，选择顶级项目节点。
 
-1. 在菜单栏上，依次选择“查看” > “属性页”。
+2. 在菜单栏上，依次选择“查看” > “属性页”。
 
      将打开“项目设计器”。
 
-1. 在“编译”页上，选择“禁用所有警告”复选框。
+3. 在“编译”页上，选择“禁用所有警告”复选框。
 
-     ![“编译”页，“项目设计器”](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![“编译”页，“项目设计器”](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      有关详细信息，请参阅[在 Visual Basic 中配置警告](../ide/configuring-warnings-in-visual-basic.md)。
 
-1. 生成解决方案。
+4. 生成解决方案。
 
- “输出”窗口仅显示生成的摘要信息。
+   “输出”窗口仅显示生成的摘要信息。
 
- ![输出窗口 Visual Basic 生成警告](../ide/media/buildwalk_visualbasicbuildwarnings.png)
+   ![输出窗口 Visual Basic 生成警告](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
- 有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
+   有关详细信息，请参阅[如何：禁止显示编译器警告](../ide/how-to-suppress-compiler-warnings.md)。
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>在“输出”窗口中显示其他生成详细信息
 
@@ -138,7 +138,6 @@ ms.locfileid: "34748213"
 
 > [!IMPORTANT]
 > 如果显示详细信息，生成将花费更长时间才能完成。
-
 
 ### <a name="change-the-amount-of-information-in-the-output-window"></a>更改“输出”窗口中的信息量
 
@@ -221,7 +220,7 @@ ms.locfileid: "34748213"
 
    可执行文件已复制到指定的网络路径。 其路径将为 `\\myserver\builds\\FileName.exe`。
 
-祝贺：你已成功完成此演练。
+祝贺你！ 已成功完成此演练。
 
 ## <a name="see-also"></a>请参阅
 

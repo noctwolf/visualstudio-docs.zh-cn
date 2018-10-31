@@ -9,12 +9,12 @@ description: 了解如何充分利用 Visual Studio 订阅中包含的 Azure 顾
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 653611a2baa9211c74fa28ee90d2397c11c4bbe3
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 84eb6c7021a4e64b65c6e5390ef43833dd6c7fea
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44278889"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49895998"
 ---
 # <a name="azure-advisory-chat"></a>Azure 顾问聊天
 
@@ -38,14 +38,15 @@ ms.locfileid: "44278889"
 
 ## <a name="eligibility"></a>资格
 
-| 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售   | 一年      |  是          |
-| Visual Studio Professional（标准、年度云、月度云） Visual Studio Enterprise（月度云、NFR<sup>1</sup>） | 全部                                      | 不可用                                                            |  否          |
-| Visual Studio Test Professional（标准）                         | 全部                                              | 不可用                                             |  否          |
-| MSDN 平台（标准）                                          | 全部                                              |不可用                                              |  否          |
-| Visual Studio Dev Essentials                                          | 不可用                                              |不可用                                              |  否          |
-<sup>1</sup> 包括：限制转售 (NFR)、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT
+|                                                      订阅级别                                                      |     信道      |    好处    | 是否续订？ |
+|------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
+|                                      Visual Studio Enterprise（标准、年度云）                                       | VL、Azure、零售 |   一年    |    是     |
+| Visual Studio Professional（标准、年度云、月度云） Visual Studio Enterprise（月度云、NFR<sup>1</sup>） |        全部        | 不可用 |     否     |
+|                                          Visual Studio Test Professional（标准）                                          |        全部        | 不可用 |     否     |
+|                                                  MSDN 平台（标准）                                                   |        全部        | 不可用 |     否     |
+|                                                 Visual Studio Dev Essentials                                                 |        不可用        | 不可用 |     否     |
+
+<sup>1</sup>包括：不得转售 (NFR)、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、MCT
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 

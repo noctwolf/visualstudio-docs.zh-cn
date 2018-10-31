@@ -7,16 +7,16 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 9771040b9e60b7942810335967b3c5478c4c72d9
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
+ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223975"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49991531"
 ---
-# <a name="installing-preview-releases"></a>安装预览版
+# <a name="install-a-preview-release"></a>安装预览版
 
-新版本的 Visual Studio for Mac 在正式发布之前，作为预览版发布。 在新功能和最新 bug 修补程序完全纳入产品之前，用户可通过预览版抢先尝试这些功能并获取最新修补程序。
+新版 Visual Studio for Mac 在正式发布前是作为预览版提供。 在新功能和最新 bug 修补程序完全纳入产品之前，用户可通过预览版抢先尝试这些功能并获取最新修补程序。
 
 Visual Studio for Mac 的预览版是作为更新发布的，而不是通过单独下载发布。 如[更新](update.md)一文所述，Visual Studio for Mac 具有三个更新通道：稳定版本、Beta 版本和 Alpha 版本。
 
