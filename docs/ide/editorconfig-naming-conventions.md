@@ -12,12 +12,12 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3630eee4a58571277cf6a0c2c265fee95f2e37e1
-ms.sourcegitcommit: db94ca7a621879f98d4c6aeefd5e27da1091a742
+ms.openlocfilehash: df74252361e330ac992f8f3e852d9c33006d18e7
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42626777"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443579"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>EditorConfig 适用的 .NET 命名约定
 
@@ -88,11 +88,14 @@ ms.locfileid: "42626777"
 
 以下列表显示了允许的值，可通过以逗号分隔值来指定多个值。
 
-- abstract 或 must_inherit
-- async
-- const
-- readonly
-- static 或 shared
+- `abstract` 或 `must_inherit`
+- `async`
+- `const`
+- `readonly`
+- `static` 或 `shared`
+
+   > [!NOTE]
+   > 如果 `static` 或 `shared` 符号有命名规则，此规则也适用于 `const` 符号，因为它们是隐式静态的。 如果不希望将 `static` 命名规则应用于 `const` 符号，请为 `const` 符号单独创建命名规则。
 
 `required_modifiers` 为可选属性。 如果忽略此属性，则命名规则应用于所有修饰符。
 

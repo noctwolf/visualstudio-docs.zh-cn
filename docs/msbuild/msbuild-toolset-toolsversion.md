@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 061065b23aa8a2e7504b32358628ec4e0b3f4b47
-ms.sourcegitcommit: 0e5289414d90a314ca0d560c0c3fe9c88cb2217c
+ms.openlocfilehash: feedf1789e4ee3f6b7e04966d945a5a2638242c3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39153155"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49821105"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild 工具集 (ToolsVersion)
 MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通常，MSBuild 工具集包括 microsoft.common.tasks 文件、microsoft.common.targets 文件以及编译器（如 csc.exe 和 vbc.exe）。 大多数工具集可用于将应用程序编译为多个版本的 .NET Framework 以及多个系统平台。 但 MSBuild 2.0 工具集仅可用于面向 .NET Framework 2.0。  
@@ -40,7 +40,7 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
   
  当 `ToolsVersion` 值在项目文件中定义时，MSBuild 将使用该值来确定在该项目中可用的工具集属性的值。 其中一个工具集属性为 `$(MSBuildToolsPath)`，该属性指定 .NET Framework 工具的路径。 仅该工具集属性（或 `$(MSBuildBinPath)`）是必需的。  
   
- 从 Visual Studio 2013 开始，MSBuild 工具集版本号与 Visual Studio 版本号相同。 无论项目文件中指定哪个工具集版本，MSBuild 都会在 Visual Studio 中和命令行上默认使用该工具集。  使用 /ToolsVersion 标志可重写此行为。 有关详细信息，请参阅[重写 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。  
+ 从 Visual Studio 2013 开始，MSBuild 工具集版本号与 Visual Studio 版本号相同。 无论项目文件中指定哪个工具集版本，MSBuild 都会在 Visual Studio 中和命令行上默认使用该工具集。  可使用 -ToolsVersion 标志重写此行为。 有关详细信息，请参阅[重写 ToolsVersion 设置](../msbuild/overriding-toolsversion-settings.md)。  
   
  在下面的示例中，MSBuild 将使用 `MSBuildToolsPath` 保留的属性查找 Microsoft.CSharp.targets 文件。  
   
@@ -61,9 +61,9 @@ MSBuild 使用任务、目标和工具的工具集以生成应用程序。 通�
 ## <a name="toolset-implementation"></a>工具集实现  
  通过选择组成某个工具集的各种工具、目标以及任务的路径来实现该工具集。 MSBuild 定义的工具集中的工具来自以下源：  
   
--   .NET Framework 文件夹。  
+- .NET Framework 文件夹。  
   
--   其他托管工具。  
+- 其他托管工具。  
   
   这些托管工具包括 ResGen.exe 和 TlbImp.exe。  
 

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 702c1124e3b14f8bfec4f514edd8e1e7def6b776
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 238c903fc81ef2323d0de44e4e5b900a9b68d766
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947633"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915837"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 
@@ -40,7 +40,7 @@ ms.locfileid: "31947633"
 
 ## <a name="change-the-content-installation-source"></a>更改内容安装源
 
-默认情况下，帮助查看器通过将 Microsoft 联机服务用作源来安装内容。 通常不应更改内容，除非你所在的企业环境的系统管理员已为其安装其他位置的内容。
+默认情况下，Help Viewer 将 Microsoft 联机服务用作源，以安装内容。 通常不应更改内容，除非你所在的企业环境的系统管理员已为其安装其他位置的内容。
 
 ### <a name="to-change-the-content-installation-source"></a>要更改内容安装源
 
@@ -110,9 +110,9 @@ ms.locfileid: "31947633"
 
 ### <a name="to-update-local-content"></a>要更新本地内容
 
--   在状态栏的右下角，选择“单击此处立即下载”链接。
+- 在状态栏的右下角，选择“单击此处立即下载”链接。
 
- 安装时间可能不同，但可以在状态栏中查看进度。
+安装时间可能不同，但可以在状态栏中查看进度。
 
 ## <a name="move-local-content"></a>移动本地内容
 

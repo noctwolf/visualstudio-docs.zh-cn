@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b492f0dca9df9e5ef78cb261df325599e9e895
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 9c6eaa3b776e7a4c4e90795265f94af2d0df994b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44125049"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49894009"
 ---
 # <a name="common-quick-actions"></a>常见快速操作
 
@@ -31,7 +31,7 @@ ms.locfileid: "44125049"
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>更正拼写错误的符号或关键字
 
-如果在 Visual Studio 中意外拼错类型或关键字，此“快速操作”会自动更正拼写错误。 灯泡菜单***“将* *‘拼写错误的单词’更改为*** ‘正确单词’”中会显示这些项。  例如:
+如果在 Visual Studio 中意外拼错类型或关键字，此“快速操作”会自动更正拼写错误。 灯泡菜单***“将* *‘拼写错误的单词’更改为*** ‘正确单词’”中会显示这些项。 例如:
 
 ```csharp
 // Before
@@ -59,8 +59,8 @@ Function MyFunction as Integer
 End Function
 ```
 
-|  错误 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 错误 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | CS0103、BC30002 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
 
 ### <a name="resolve-git-merge-conflict"></a>解决 git 合并冲突
@@ -71,17 +71,10 @@ End Function
 // Before
 private void MyMethod()
 {
-<<<<<<< HEAD
-    if (true)
-    {
-
-    }
-=======
     if (false)
     {
 
     }
->>>>>>> upstream
 }
 
 // Take changes from 'HEAD'
@@ -96,61 +89,23 @@ private void MyMethod()
 }
 ```
 
-|  错误 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
-| CS8300、BC37284  | C# 和 Visual Basic | Visual Studio 2017 版本 15.3 |
-
-### <a name="make-method-asynchronous"></a>使方法异步
-
-如果在方法内使用 `await` 或 `Await` 关键字，方法本身还应标记有 `async` 或 `Async` 关键字。  但是，如果不是这种情况，则会出现使方法异步的快速操作。 从“快速操作”菜单中使用“使方法/函数异步”选项。
-
-```csharp
-// Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-
-// Make method asynchronous
-
-// After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
-```
-
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
-
-' Make method asynchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-|  错误 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
-| CS4032、BC37057 | C# 和 Visual Basic | Visual Studio 2017 |
+| 错误 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
+| CS8300、BC37284 | C# 和 Visual Basic | Visual Studio 2017 版本 15.3 |
 
 ## <a name="actions-that-remove-unnecessary-code"></a>删除不必要代码的操作
 
 ### <a name="remove-unnecessary-usingsimports"></a>删除不必要的 using/Import
 
-“删除不必要的 using/Import”快速操作将删除当前文件中任何未使用的 `using` 和 `Import` 语句。  选择此项后，将删除未使用的命名空间导入。
+“删除不必要的 using/Import”快速操作将删除当前文件中任何未使用的 `using` 和 `Import` 语句。 选择此项后，将删除未使用的命名空间导入。
 
-|  适用的语言 |  支持的版本 |
-|  -------------------- | ----------------  |
-|  C# 和 Visual Basic | Visual Studio 2015 RTW |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
+| C# 和 Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unnecessary-cast"></a>删除不必要的 cast
 
-如果将某类型强制转换为不需要强制转换的另一类型，则“删除不必要的强制转换”快速操作将删除该不必要的强制转换。
+如果你将一种类型强制转换为另一种不需要强制转换的类型，“删除不必要的强制转换”快速操作可删除不必要的强制转换。
 
 ```csharp
 // before
@@ -172,8 +127,8 @@ Dim number as Integer = CType(3, Integer)
 Dim number as Integer = 3
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0004 | C# 和 Visual Basic | Visual Studio 2015 RTW |
 
 ### <a name="remove-unused-variables"></a>删除未使用的变量
@@ -199,8 +154,8 @@ public MyMethod()
 }
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | CS0219、BC42024 | C# 和 Visual Basic | Visual Studio 2017 版本 15.3 |
 
 ### <a name="remove-type-from-default-value-expression"></a>从“默认”值表达式中删除类型
@@ -215,11 +170,10 @@ void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { 
 
 // After
 void DoWork(CancellationToken cancellationToken = default) { ... }
-
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0034 | C# 7.1+ | Visual Studio 2017 版本 15.3 |
 
 ## <a name="actions-that-add-missing-code"></a>添加缺失代码的操作
@@ -257,8 +211,8 @@ Imports System.Diagnostics
 Debug.WriteLine("Hello")
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | CS0103、BC30451 | C# 和 Visual Basic| Visual Studio 2015 Update 2 |
 
 ### <a name="add-missing-casesdefault-caseboth"></a>添加缺少的 case/默认 case/二者
@@ -326,8 +280,8 @@ Select Case myEnum
 End Select
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0010 | C# 和 Visual Basic| Visual Studio 2017 版本 15.3 |
 
 ### <a name="add-null-checks-for-parameters"></a>添加 null 参数检查
@@ -360,8 +314,8 @@ class MyClass
 }
 ```
 
-| 适用的语言 |  支持的版本 |
-| -------------------- | ----------------  |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
 | C# 和 Visual Basic| Visual Studio 2017 版本 15.3 |
 
 ### <a name="add-argument-name"></a>添加参数名称
@@ -376,8 +330,8 @@ var date = new DateTime(1997, 7, 8);
 var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-| 适用的语言 |  支持的版本 |
-| -------------------- | ----------------  |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
 | C# 和 Visual Basic| Visual Studio 2017 版本 15.3 |
 
 ### <a name="add-braces"></a>添加大括号
@@ -398,8 +352,8 @@ if (true)
 }
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0011 | C# | Visual Studio 2017 RTW |
 
 ### <a name="add-and-order-modifiers"></a>添加修饰符并对其排序
@@ -432,8 +386,8 @@ static private int thisFieldIsPublic;
 private static int thisFieldIsPublic;
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0036 | C# 和 Visual Basic| Visual Studio 2017 版本 15.5 |
 | IDE0040 | C# 和 Visual Basic| Visual Studio 2017 版本 15.5 |
 
@@ -490,13 +444,13 @@ Select Case obj
 End Select
 ```
 
-| 适用的语言 |  支持的版本 |
-| -------------------- | ----------------  |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
 | C# 和 Visual Basic| Visual Studio 2017 版本 15.3 |
 
 ### <a name="convert-to-interpolated-string"></a>转换为内插字符串
 
-类似于 **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** 方法，[内插字符串](/dotnet/csharp/language-reference/keywords/interpolated-strings)是使用嵌入式变量来表达字符串的一种简单方式。  此快速操作可识别何时需要将字符串连接在一起或使用 **String.Format**，然后将用法更改为内插字符串。
+类似于 **[String.Format](/dotnet/api/system.string.format#overloads)** 方法，[内插字符串](/dotnet/csharp/language-reference/keywords/interpolated-strings)是使用嵌入式变量来表达字符串的一种简单方式。  此快速操作可识别何时需要将字符串连接在一起或使用 **String.Format**，然后将用法更改为内插字符串。
 
 ```csharp
 // Before
@@ -522,13 +476,13 @@ Dim num as Integer = 3
 Dim s As String = $"My string with {num} in the middle"
 ```
 
-| 适用的语言 |  支持的版本 |
-| -------------------- | ----------------  |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
 | C# 6.0+ 和 Visual Basic 14+ | Visual Studio 2017 RTW |
 
 ### <a name="use-object-initializers"></a>使用对象初始值设定项
 
-借助此快速操作，可以使用[对象初始值设定项](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)，而无需调用构造函数和添加赋值语句行。
+借助此快速操作，可使用[对象初始值设定项](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)，无需调用构造函数并添加赋值语句行。
 
 ```csharp
 // Before
@@ -553,7 +507,7 @@ Dim c = New Customer() With {.Age = 21}
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0017 | C# 和 Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="use-collection-initializers"></a>使用集合初始值设定项
@@ -587,7 +541,7 @@ Dim list = New List(Of Integer) From {1, 2, 3}
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0028 | C# 和 Visual Basic | Visual Studio 2017 RTW |
 
 ### <a name="convert-auto-property-to-full-property"></a>将自动属性转换为完整属性
@@ -627,8 +581,8 @@ Public Property Name As String
 End Property
 ```
 
-|  适用的语言 |  支持的版本 |
-|  -------------------- | ----------------  |
+| 适用的语言 | 支持的版本 |
+| -------------------- | ---------------- |
 | C# 和 Visual Basic | Visual Studio 2017 版本 15.5 |
 
 ### <a name="convert-block-body-to-expression-bodied-member"></a>将程序块主体转换为 expression-bodied 成员
@@ -680,8 +634,8 @@ class MyClass4
 }
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
 
 ### <a name="convert-anonymous-function-to-local-function"></a>将匿名函数转换为本地函数
@@ -707,8 +661,8 @@ int fibonacci(int n)
 
 ### <a name="convert-referenceequals-to-is-null"></a>将“ReferenceEquals”转换为“is null”
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0041 | C# 7.0+ | Visual Studio 2017 版本 15.5 |
 
 此快速操作建议尽可能使用[模式匹配](/dotnet/csharp/pattern-matching)，而不是 ```ReferenceEquals``` 代码模式。
@@ -731,8 +685,8 @@ if (value is null)
 }
 ```
 
-|  诊断 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 诊断 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | IDE0039 | C# 7.0+ | Visual Studio 2017 版本 15.5 |
 
 ### <a name="introduce-pattern-matching"></a>引入模式匹配
@@ -774,7 +728,7 @@ if (o is string s)
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
 | IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
 
@@ -803,7 +757,7 @@ Dim countdown As Integer = &H200000
 ```
 
 | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0+ 和 Visual Basic 14+ | Visual Studio 2017 版本 15.3 |
 
 ### <a name="insert-digit-separators-into-literals"></a>将数字分隔符插入数字文本
@@ -831,7 +785,7 @@ Dim countdown As Integer = 1_000_000
 ```
 
 | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | C# 7.0+ 和 Visual Basic 14+ | Visual Studio 2017 版本 15.3 |
 
 ### <a name="use-explicit-tuple-names"></a>使用显式元组名称
@@ -863,7 +817,7 @@ Dim name = customer.name
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0033 | C# 7.0+ 和 Visual Basic 15+ | Visual Studio 2017 RTW |
 
 ### <a name="use-inferred-names"></a>使用推断名称
@@ -891,7 +845,7 @@ var tuple = (age, name);
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0037 | C# | Visual Studio 2017 v. 15.5 |
 | IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
 
@@ -918,12 +872,12 @@ Console.WriteLine($"{x} {y}");
 ```
 
 | 诊断 ID | 适用的语言 | 支持的版本 |
-| ------- | -------------------- | ----------------  |
+| ------- | -------------------- | ---------------- |
 | IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
 
 ### <a name="make-method-synchronous"></a>使方法同步
 
-如果对方法使用 `async` 或 `Async` 关键字，还应在相应方法中使用 `await` 或 `Await` 关键字。  不过，如果不是这种情况，则会显示快速操作，可用于删除 `async` 或 `Async` 关键字并更改返回类型，从而让方法变成同步方法。 从“快速操作”菜单中使用“使方法同步”选项。
+如果对方法使用 `async` 或 `Async` 关键字，还应在相应方法中使用 `await` 或 `Await` 关键字。 不过，如果不是这种情况，则会显示快速操作，可用于删除 `async` 或 `Async` 关键字并更改返回类型，从而让方法变成同步方法。 从“快速操作”菜单中使用“使方法同步”选项。
 
 ```csharp
 // Before
@@ -955,9 +909,47 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-|  错误 ID | 适用的语言 |  支持的版本 |
-| ------- | -------------------- | ----------------  |
+| 错误 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
 | CS1998、BC42356 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
+
+### <a name="make-method-asynchronous"></a>使方法异步
+
+如果你在方法内使用的是 `await` 或 `Await` 关键字，方法应标记有 `async` 或 `Async` 关键字。 不过，如果不是这种情况，便会看到让方法异步的快速操作。 从“快速操作”菜单中使用“使方法/函数异步”选项。
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+| 错误 ID | 适用的语言 | 支持的版本 |
+| ------- | -------------------- | ---------------- |
+| CS4032、BC37057 | C# 和 Visual Basic | Visual Studio 2017 |
 
 ## <a name="see-also"></a>请参阅
 

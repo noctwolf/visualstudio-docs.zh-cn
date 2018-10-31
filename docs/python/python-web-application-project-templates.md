@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 07/03/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 0db1d84c09c44cc39fe3fd614379c2381b915014
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029022"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219843"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -34,7 +34,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
-所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org) 以便[部署到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)
+所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](http://www.python.org/dev/peps/pep-3333/) (python.org)，以用于生产 Web 服务器。
 
 ### <a name="blank-group"></a>空白组
 

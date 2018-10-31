@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bbc5d194552952ccce4a30a7c15b917e7a7a32ae
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45549464"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443644"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -409,6 +409,7 @@ Visual Studio 支持一起调试 Python 和 C++ 代码。 本节演示了使用 
 | ctype | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | 无编译，广泛可用性。 | 访问和转变 C 结构的过程比较繁琐且容易出错。 |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | 针对多种语言立即生成绑定。 | 如果 Python 是唯一目标，则开销过大。 |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/)、[pypy](https://pypy.org/) | 易于集成，与 PyPy 兼容。 | 较新，不够成熟。 |
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | 类似于使用 C++ 的 cffi。 | 较新，与 VS 2017 有一些兼容性问题。 |  
 
 ## <a name="see-also"></a>请参阅
 

@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的企业移动性 + 安�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 81d93a4a030fd4a588903073d065041a6dbd69e6
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 96f093f6f267e80c5136bd87a009dd25e43ab2cf
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283283"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49930110"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的企业移动性 + 安全性 (EMS)
 
@@ -27,31 +27,32 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 
 若要使用 EMS，需要设置帐户或使用现有帐户登录。
 
-1.  登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
+1. 登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
-2.  在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。
-    > [!div class="mx-imgBorder"]
-    > ![EMS 权益磁贴](_img\vs-ems\vs-ems-tile.png)
+2. 在“工具”部分找到“企业移动性和安全性”磁贴，然后单击磁贴底部的“获取代码”链接。   你将收到一条通知消息，指示已成功检索到代码。  单击“激活”。
+   > [!div class="mx-imgBorder"]
+   > ![EMS 权益磁贴](_img/vs-ems/vs-ems-tile.png)
 
-2.  在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”。
-    > [!div class="mx-imgBorder"]
-    > ![EMS 权益：创建帐户](_img\vs-ems\vs-ems-create-account-cropped.png)
+3. 在“企业移动性 + 安全性 E5”页上，可以使用现有订阅帐户登录或创建新的帐户。  若要创建新帐户，请填写所需信息，然后单击“下一步”。
+   > [!div class="mx-imgBorder"]
+   > ![EMS 权益：创建帐户](_img/vs-ems/vs-ems-create-account-cropped.png)
 
-3. 创建用户 ID 和密码。  单击“创建我的帐户”，然后继续。
-    > [!div class="mx-imgBorder"]
-    > ![EMS 权益：创建用户 ID](_img\vs-ems\vs-ems-userID-cropped.png)
+4. 创建用户 ID 和密码。  单击“创建我的帐户”，然后继续。
+   > [!div class="mx-imgBorder"]
+   > ![EMS 权益：创建用户 ID](_img/vs-ems/vs-ems-userID-cropped.png)
 
-4.  接下来，请提供电话号码，以通过电话或短信接收验证码。  输入验证码，然后单击“下一步”。
-    > [!div class="mx-imgBorder"]
-    > ![EMS 权益：验证](_img\vs-ems\vs-ems-robot-cropped.png)
+5. 接下来，请提供电话号码，以通过电话或短信接收验证码。  输入验证码，然后单击“下一步”。
+   > [!div class="mx-imgBorder"]
+   > ![EMS 权益：验证](_img/vs-ems/vs-ems-robot-cropped.png)
 
-5.  下一页将显示登录页和用户 ID。  保存该信息，供之后使用。  单击“你已准备就绪….”
-    > [!div class="mx-imgBorder"]
-    > ![已创建 EMS 权益帐户](_img\vs-ems\vs-ems-save-info-cropped.png)
+6. 下一页将显示登录页和用户 ID。  保存该信息，供之后使用。  单击“你已准备就绪….”
+   > [!div class="mx-imgBorder"]
+   > ![已创建 EMS 权益帐户](_img/vs-ems/vs-ems-save-info-cropped.png)
 
-6.  EMS 需要访问 Microsoft [Azure 门户](https://azure.microsoft.com)。  按照 EMS 登录页的三个步骤激活 Azure 订阅、添加用户并配置 EMS。
+7. EMS 需要访问 Microsoft [Azure 门户](https://azure.microsoft.com)。  按照 EMS 登录页的三个步骤激活 Azure 订阅、添加用户并配置 EMS。
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是          |
@@ -61,7 +62,7 @@ Visual Studio Enterprise 年度云订阅和标准订阅包含企业移动性 + �
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Dev Essentials | 不可用  | 不可用 |不可用 |
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark。不包括：Microsoft 最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务、Imagine、Microsoft 合作伙伴网络 (Professional)。
 
 <sup>2</sup> 不包括：Microsoft 合作伙伴网络 (Professional)
 

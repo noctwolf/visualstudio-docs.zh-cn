@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 109d95202d5ce67b2bdda1aab61d1b725a3ac23c
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 3c8835dab5ca866762a7d2b0e6cad1d0d80726b0
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39080745"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879182"
 ---
 # <a name="msbuild-properties"></a>MSBuild 属性
 属性是可用于配置生成的名称/值对。 属性可用于将值传递给任务，评估条件和存储将在整个项目文件中引用的值。  
@@ -84,12 +84,12 @@ $(registry:Hive\MyKey\MySubKey)
 ```  
   
 ## <a name="global-properties"></a>全局属性  
- 通过 MSBuild，可在命令行中使用 **/property**（或 **/p**）开关设置属性。 这些全局属性值会覆盖项目文件中设置的属性值。 这包括环境属性，但不包括不能更改的保留属性。  
+ 借助 MSBuild，可使用 -property（或 -p）开关在命令行中设置属性。 这些全局属性值会覆盖项目文件中设置的属性值。 这包括环境属性，但不包括不能更改的保留属性。  
   
  以下示例将全局 `Configuration` 属性设置为 `DEBUG`。  
   
 ```cmd  
-msbuild.exe MyProj.proj /p:Configuration=DEBUG  
+msbuild.exe MyProj.proj -p:Configuration=DEBUG  
 ```  
   
  还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 除非使用 MSBuild 任务的 `RemoveProperties` 属性来指定不准备转发的属性列表，否则全局属性同样会转发到子项目。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。

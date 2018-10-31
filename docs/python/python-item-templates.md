@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8319c99e5de12ce1c09a2c20fc5cf1b132f34092
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c282bdbfbfad589418c48d6caa65dedfdc7a53b2
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776030"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49100934"
 ---
 # <a name="python-item-templates"></a>Python 项模板
 
@@ -42,15 +42,10 @@ Python 项目中的项模板可通过“项目” > “添加新项”菜单命�
 | **IronPython WPF 窗口** | WPF 窗口包含两个并排显示的文件：使用空 `<Grid>` 元素定义 `<Window>` 的 .xaml 文件，和使用 `wpf` 库加载 XAML 文件的关联 .py 文件。 通常在使用某一 IronPython 项目模板创建的项目中使用。 请参阅[管理 Python 项目 - 项目模板](managing-python-projects-in-visual-studio.md#project-templates)。 |
 | **Web 角色支持文件** | 项目根目录中的 bin 文件夹（不考虑项目中所选的文件夹）。 文件夹包含默认部署脚本和 Azure 云服务 Web 角色的 web.config 文件。 模板还包含介绍了详细说明的 readme.html 文件。 |
 | **辅助角色支持文件** | 项目根目录中的 bin 文件夹（不考虑项目中所选的文件夹）。 该文件夹包含默认部署和启动脚本，以及针对 Azure 云服务辅助角色的 web.config 文件。 模板还包含介绍了详细说明的 readme.html 文件。 |
-| **Azure web.config (FastCGI)** | 包含应用条目的 web.config 文件，这些应用使用 [WSGI](https://wsgi.readthedocs.io/en/latest/) 对象来处理传入的连接。 此文件通常部署到运行 IIS 的 Web 服务器的根目录中，例如 Azure 应用服务。 有关详细信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure web.config (HttpPlatformHandler)** | 包含应用条目的 web.config 文件，这些应用侦听套接字的传入连接。 此文件通常部署到运行 IIS 的 Web 服务器的根目录中，例如 Azure 应用服务。 有关详细信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure 静态文件 web.config** | 一个 web.config 文件，通常被添加到“静态”文件夹（或包含静态项的其他文件夹）以禁止 Python 处理该文件夹。 此配置文件与上面其中一个 FastCGI 或 HttpPlatformHandler 配置文件结合使用。 有关详细信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。 |
-| **Azure 远程调试 web.config** | 一个 web.config.debug 文件，它支持通过 WebSocket 进行远程调试，另外还有“Microsoft.PythonTools.WebRole.dll”和“ptvsd”文件夹，其中包含要部署到服务器以支持远程调试的模块。 通常在与 web.config 文件相同的位置创建此项目。 有关详细信息，请参阅[在 Azure 上远程调试 Python 代码](debugging-remote-python-code-on-azure.md)。 另请参阅下面的说明。 |
-
-> [!Note]
-> 如果将调试 web.config 模板添加到项目并计划使用 Python 远程调试，需要在“调试” 配置中发布站点。 此设置独立于当前的活动解决方案配置，且始终默认为“发布”。 若要更改它，请打开“设置”选项卡，并使用“发布”向导中的“配置”组合框。 （有关创建和部署到 Azure Web 应用的详细信息，请参阅 [Azure 文档](https://azure.microsoft.com/develop/python/)。）
->
-> ![更改发布配置](media/template-web-publish-config.png)
+| **Azure web.config (FastCGI)** | 包含应用条目的 web.config 文件，这些应用使用 [WSGI](https://wsgi.readthedocs.io/en/latest/) 对象来处理传入的连接。 此文件通常部署到运行 IIS 的 Web 服务器的根目录中。 有关详细信息，请参阅[为应用配置 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure web.config (HttpPlatformHandler)** | 包含应用条目的 web.config 文件，这些应用侦听套接字的传入连接。 此文件通常部署到运行 IIS 的 Web 服务器的根目录中，例如 Azure 应用服务。 有关详细信息，请参阅[为应用配置 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure 静态文件 web.config** | 一个 web.config 文件，通常被添加到“静态”文件夹（或包含静态项的其他文件夹）以禁止 Python 处理该文件夹。 此配置文件与上面其中一个 FastCGI 或 HttpPlatformHandler 配置文件结合使用。 有关详细信息，请参阅[为应用配置 IIS](configure-web-apps-for-iis-windows.md)。 |
+| **Azure 远程调试 web.config** | 已弃用（曾用于在适用于 Windows 的 Azure 应用服务上执行远程调试，现已不再受支持）。 |
 
 ## <a name="see-also"></a>请参阅
 

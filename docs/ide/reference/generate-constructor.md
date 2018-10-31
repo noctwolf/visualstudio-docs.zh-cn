@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成构造函数
+title: 生成构造函数快速操作
 ms.date: 01/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6c063d8abc3b00ce15726ebfe0e8733254718428
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124978"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49926730"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 
@@ -47,10 +47,10 @@ ms.locfileid: "44124978"
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边）。
 
    ![生成构造函数预览](media/constructor1-preview-cs.png)
 
@@ -78,12 +78,12 @@ ms.locfileid: "44124978"
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边）。
 
-     ![生成构造函数预览](media/constructor2-preview-cs.png)
+      ![生成构造函数预览](media/constructor2-preview-cs.png)
 
 1. 从下拉菜单中选择“生成构造函数 'TypeName(...)'”。
 
@@ -97,24 +97,24 @@ ms.locfileid: "44124978"
 
    - C#：
 
-    ![突出显示的代码 C#](media/constructor-highlight-cs.png)
+       ![突出显示的代码 C#](media/constructor-highlight-cs.png)
 
    - Visual Basic：
 
-    ![突出显示的代码 VB](media/constructor-highlight-vb.png)
+       ![突出显示的代码 VB](media/constructor-highlight-vb.png)
 
-1. 接下来，执行以下操作之一：
+2. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
-    ![生成构造函数预览](media/constructor-preview-cs.png)
+      ![生成构造函数预览](media/constructor-preview-cs.png)
 
-1. 从下拉菜单中选择“在 'TypeName' 中生成构造函数”。
+3. 从下拉菜单中选择“在 'TypeName' 中生成构造函数”。
 
    > [!TIP]
    > 进行选择前，使用预览窗口底部的“预览更改”链接[查看将发生的所有更改](../../ide/preview-changes.md)。
@@ -123,36 +123,38 @@ ms.locfileid: "44124978"
 
    - C#：
 
-      ![“生成方法”的结果 C#](media/constructor-result-cs.png)
+       ![“生成方法”的结果 C#](media/constructor-result-cs.png)
 
    - Visual Basic：
 
-      ![“生成方法”的结果 VB](media/constructor-result-vb.png)
+       ![“生成方法”的结果 VB](media/constructor-result-vb.png)
 
 ## <a id="addparameter"></a> 向现有构造函数添加参数（仅限 C#）
 
 1. 从现有构造函数调用添加参数。
 
-1. 将光标放在有红色波形曲线的行上，该曲线指示使用了尚不存在的构造函数。
+2. 将光标放在有红色波形曲线的行上，该曲线指示使用了尚不存在的构造函数。
 
     ![生成构造函数突出显示](media/constructor4-highlight-cs.png)
 
-1. 接下来，执行以下操作之一：
+3. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
 
-    ![生成构造函数预览](media/constructor4-preview-cs.png)
+      ![生成构造函数预览](media/constructor4-preview-cs.png)
 
-1. 从下拉菜单中选择“将参数添加到 'TypeName(...)'”。
+4. 从下拉菜单中选择“将参数添加到 'TypeName(...)'”。
 
    这会使用从参数用法推断出的类型将其添加到构造函数。
 
    ![生成构造函数结果](media/constructor4-result-cs.png)
+
+还可以向现有方法添加参数。 有关详细信息，请参阅[向方法添加参数](add-parameter.md)。
 
 ## <a id="create"></a> 基于构造函数参数创建和初始化字段或属性（仅限 C#）
 
@@ -165,10 +167,10 @@ ms.locfileid: "44124978"
 1. 接下来，执行以下操作之一：
 
    - **键盘**
-     - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
-     - 右键单击并选择“快速操作和重构”菜单。
-     - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边）。
+      - 右键单击并选择“快速操作和重构”菜单。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边）。
 
    ![生成构造函数预览](media/constructor5-preview-cs.png)
 

@@ -1,7 +1,7 @@
 ---
 title: WriteLinesToFile 任务 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/20/2018
 ms.technology: msbuild
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e8fa6ff5dbfcbbeb158f22256e18f6fb90bab348
-ms.sourcegitcommit: 4f82c178b1ac585dcf13b515cc2a9cb547d5f949
+ms.openlocfilehash: 909c35ca889295385cae98d51a81b22b4f7eb5d8
+ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39341805"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47228833"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile 任务
 将指定项的路径写入指定的文本文件。  
@@ -38,8 +38,9 @@ ms.locfileid: "39341805"
 |`File`|必选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定要将项写入到的文件。|  
 |`Lines`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要写入到文件的项。|  
 |`Overwrite`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，该任务覆盖文件中的任何现有内容。|  
-|`Encoding`|可选 `String` 参数。<br /><br /> 选择字符编码，例如“Unicode”。  另请参见<xref:System.Text.Encoding>。|  
-  
+|`Encoding`|可选 `String` 参数。<br /><br /> 选择字符编码，例如“Unicode”。  另请参阅 <xref:System.Text.Encoding>。|  
+|`WriteOnlyWhenDifferent`|可选 `Boolean` 参数。<br /><br /> 如果为 `true`，便会指定目标文件（若有），并先读取它来与写入的任务进行比较。 如果完全相同，此文件就不会写入到磁盘中，并且会保留时间戳。|  
+
 ## <a name="remarks"></a>备注  
  如果 `Overwrite` 为 `true`，创建一个新文件，向其中写入内容，然后关闭文件。 如果目标文件已存在，则覆盖该文件。 如果 `Overwrite` 为 `false`会将内容追加到文件中，如果目标文件还不存在则创建该文件。  
   

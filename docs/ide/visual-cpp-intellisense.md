@@ -1,26 +1,34 @@
 ---
 title: C++ IntelliSense
-ms.date: 09/06/2018
+ms.date: 10/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikeblome
+ms.author: mblome
+manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b7912e624881e7dcd40ff2fdb9476d61d29e1c
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: ab520f7cdf512ebbfd07770d63d2ed50caee7a55
+ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44124900"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48879845"
 ---
 # <a name="visual-c-intellisense-features"></a>Visual C++ IntelliSense 功能
 
 IntelliSense 是使编码更方便的一组功能的名称。 用于 C++ 的 IntelliSense 可用于独立文件及作为 C++ 项目一部分的文件。 在跨平台项目中，一些 IntelliSense 功能可用于共享代码项目中的 .cpp 和 .c 文件，甚至在处于 Android 或 iOS 上下文中也可以。
 
-可以使用下图所示的菜单项和键盘快捷方来访问 IntelliSense：
+本文概述了 C++ IntelliSense 功能。 若要详细了解如何为项目配置 IntelliSense，以及如何排查问题，请参阅[为 C++ 项目配置 IntelliSense](visual-cpp-intellisense-configuration.md)。
+
+## <a name="intellisense-features-in-c"></a>C++ 中的 IntelliSense 功能
+
+IntelliSense 是使编码更方便的一组功能的名称。 由于不同的人对方便的定义有着不同的看法，几乎所有的 IntelliSense 功能都可以在“选项”对话框中的“文本编辑器” > “C/C++” > “高级”下启用或禁用。 可从菜单栏上的“工具”菜单中访问“选项”对话框。
+
+![“工具选项”对话框](../ide/media/sintellisensecpptoolsoptions.PNG)
+
+可以使用下图所示的菜单项和键盘快捷方来访问 IntelliSense。
 
 ![IntelliSense 菜单](../ide/media/vs2015_cpp_intellisense_menu.png)
 
@@ -101,3 +109,4 @@ IntelliSense 是使编码更方便的一组功能的名称。 用于 C++ 的 Int
 ## <a name="see-also"></a>请参阅
 
 - [使用 IntelliSense](../ide/using-intellisense.md)
+- [为 C++ 项目配置 IntelliSense](visual-cpp-intellisense-configuration.md)

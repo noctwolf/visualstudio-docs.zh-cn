@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f7215817907e729b1e6cfcdfa07a0eaa307a7eb
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: 28d98b7c74ebc57bd5b7b529303f2f5a17277ff5
+ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39204123"
+ms.lasthandoff: 09/28/2018
+ms.locfileid: "47443592"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` 属性中指定）。 根据项元素名称，将其组成不同的项类型。 项类型是项的命名列表，可用作任务参数。 任务使用项值来执行生成过程。  
@@ -35,7 +35,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
 </ItemGroup>  
 ```  
   
- 项“file2.cs”不会替换项“file1.cs”；相反，将在 `Compile` 项类型的值列表中追加该文件名。 在生成的评估阶段，不能从项类型中删除项。  
+ 项“file2.cs”不会替换项“file1.cs”；相反，将在 `Compile` 项类型的值列表中追加该文件名。
   
  以下 XML 通过在一个 `Include` 属性中声明两个文件，创建相同的项类型。 请注意，文件名由分号分隔。  
   
@@ -60,25 +60,26 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
  默认情况下，项类型的项展开时由分号 (;) 分隔。 可使用语法 @(\<ItemType>, '\<separator>') 指定非默认分隔符。 有关详细信息，请参阅[如何：显示用逗号分隔的项列表](../msbuild/how-to-display-an-item-list-separated-with-commas.md)。  
   
 ##  <a name="use-wildcards-to-specify-items"></a>使用通配符指定项  
- 可使用 **、\* 和 ?  通配符将一组文件指定为生成的输入，而非单独列出每个文件。  
-  
--   ?  通配符可匹配单个字符。  
-  
--   \* 通配符可匹配零个或多个字符。  
-  
--   \*\* 通配符序列可匹配部分路径。  
 
-例如，可使用项目文件中的下列元素在包含项目文件的目录中指定所有 .cs 文件。  
+可使用 `**`、`*` 和 `?` 通配符，将一组文件指定为生成项目的输入，而不用单独列出每个文件。
+  
+- `?` 通配符匹配单个字符。
+- `*` 通配符匹配零个或多个字符。
+- `**` 通配符序列匹配部分路径。
+
+例如，可以在项目文件中使用下列元素，以在包含项目文件的目录中指定所有 `.cs` 文件。
 
 ```xml  
 <CSFile Include="*.cs"/>  
 ```  
 
-下列元素可选择 D: 驱动器上的所有 .vb 文件：  
+下列元素选择 `D:` 驱动器上的所有 `.vb` 文件：
 
 ```xml  
 <VBFile Include="D:/**/*.vb"/>  
 ```  
+
+若要在项中添加 `*` 或 `?` 文本字符，而不进行通配符扩展，必须[转义通配符](../msbuild/how-to-escape-special-characters-in-msbuild.md)。
 
 有关通配符的详细信息，请参阅[如何：选择要生成的文件](../msbuild/how-to-select-the-files-to-build.md)。  
 
@@ -180,7 +181,7 @@ MSBuild 项是生成系统的输入，通常表示文件（文件在 `Include` �
  从 .NET Framework 3.5 起，`Target` 元素可能会包含 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素，后者可能会包含项元素。 为 `Target` 中 `ItemGroup` 内的项指定此部分中属性时，该属性有效。  
   
 ###  <a name="BKMK_RemoveAttribute"></a>删除属性  
- 目标的 `ItemGroup` 中的项可包含 `Remove` 属性，该属性用于从项类型中删除特定项（文件）。 此属性是在 .NET Framework 3.5 中引入的。  
+ `Remove` 属性从项类型中删除特定项（文件）。 虽然此属性是在 .NET Framework 3.5 中引入，但只能在低于 MSBuild 15.0 的版本中用于目标。
   
  以下示例从 Compile 项类型删除所有 .config 文件。  
   

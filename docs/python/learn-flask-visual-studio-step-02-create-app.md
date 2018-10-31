@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 61a7b36892e5cec36a4641c154227df8621c6602
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 92b34ed0abbef18473ab9ccf6b85c236111822f9
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43776150"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49812609"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Flask 应用
 
@@ -36,7 +36,7 @@ ms.locfileid: "43776150"
 
 1. 在项目文件夹中，创建名为 `HelloFlask` 的应用文件夹（右键单击解决方案资源管理器中的项目并选择“添加” > “新建文件夹”。）
 
-1. 在 HelloFlask 文件夹中，创建名为 \_\_init\_\_.py 的文件，包含创建 `Flask` 实例并加载应用视图（下一步中创建）的以下内容：
+2. 在 HelloFlask 文件夹中，创建名为 \_\_init\_\_.py 的文件，包含创建 `Flask` 实例并加载应用视图（下一步中创建）的以下内容：
 
     ```python
     from flask import Flask
@@ -45,7 +45,7 @@ ms.locfileid: "43776150"
     import HelloFlask.views
     ```
 
-1. 在 HelloFlask 文件夹中，创建名为 views.py 的文件，包含以下内容。 名称 views.py 很重要，因为在 \_\_init\_\_.py 中使用 `import HelloFlask.views`；如果名称不匹配，将会在运行时看到错误。
+3. 在 HelloFlask 文件夹中，创建名为 views.py 的文件，包含以下内容。 名称 views.py 很重要，因为在 \_\_init\_\_.py 中使用 `import HelloFlask.views`；如果名称不匹配，将会在运行时看到错误。
 
     ```python
     from flask import Flask
@@ -59,9 +59,9 @@ ms.locfileid: "43776150"
 
     除了将函数和路由重命名为 `home`，此代码包含 app.py 的页面呈现代码并导入 \_\_init\_\_.py 中声明的 `app` 对象。
 
-1. 在 HelloFlask 中创建名为 templates 的子文件夹，目前为空。
+4. 在 HelloFlask 中创建名为 templates 的子文件夹，目前为空。
 
-1. 在项目的根文件夹中，将 app.py 重命名为 runserver.py，并使内容匹配以下代码：
+5. 在项目的根文件夹中，将 app.py 重命名为 runserver.py，并使内容匹配以下代码：
 
     ```python
     import os
@@ -77,17 +77,17 @@ ms.locfileid: "43776150"
 
         app.run(HOST, PORT)
     ```
-1. 项目结构应如下图所示：
+6. 项目结构应如下图所示：
 
     ![重构代码后的项目结构](media/flask/step02-project-structure.png)
 
-1. 选择“调试” > “启动调试”(F5) 或使用工具栏上的“Web 服务器”按钮（所看到的浏览器可能会有所不同）启动应用并打开浏览器。 同时尝试 / 和 /home URL 路由。
+7. 选择“调试” > “启动调试”(F5) 或使用工具栏上的“Web 服务器”按钮（所看到的浏览器可能会有所不同）启动应用并打开浏览器。 同时尝试 / 和 /home URL 路由。
 
-1. 还可以在代码的不同部分设置断点，并且重新启动应用，跟随启动顺序。 例如，在 runserver.py 和 HelloFlask\__init__.py 的第一行设置断点，并在 views.py 中的 `return "Hello Flask!"` 行上设置断点。 然后，重启应用（“调试” > “重启”，按 Ctrl+F5 或者下示工具栏按钮）并逐步执行 (F10) 代码，或者使用 F5 从每个断点运行。
+8. 还可以在代码的不同部分设置断点，并且重新启动应用，跟随启动顺序。 例如，对 runserver.py 和 HelloFlask\_init_.py 的第一行设置断点，并对 views.py 中的 `return "Hello Flask!"` 行设置断点。 然后，重启应用（“调试” > “重启”，按 Ctrl+F5 或者下示工具栏按钮）并逐步执行 (F10) 代码，或者使用 F5 从每个断点运行。
 
     ![Visual Studio 中调试工具栏上的重启按钮](media/debugging-restart-toolbar-button.png)
 
-1. 完成后停止应用。
+9. 完成后停止应用。
 
 ### <a name="commit-to-source-control"></a>提交到源代码管理
 

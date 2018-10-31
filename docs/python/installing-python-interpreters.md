@@ -1,7 +1,7 @@
 ---
 title: 选择并安装 Python 解释程序
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
-ms.date: 09/04/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6491f5ec5fdcfc1435891cd953287e2c5123538a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45548949"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324972"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
 默认情况下，在 Visual Studio 2017 中安装 Python 开发工作负载也会安装 Python 3（64 位）。 可以选择安装 32 位和 64 位版本的 Python 2、Python 3、Anaconda 2 和 Anaconda 3，如[安装](installing-python-support-in-visual-studio.md)中所述。
 
-除了 Visual Studio 安装程序，还可以手动安装下表列出的任何解释器。 例如，如果在安装 Visual Studio 之前安装了 Anaconda 3，则不需要通过 Visual Studio 安装程序再次进行安装。
+除了 Visual Studio 安装程序，还可以手动安装下表列出的任何解释器。 例如，如果在安装 Visual Studio 之前安装了 Anaconda 3，则不需要通过 Visual Studio 安装程序再次进行安装。 例如，如果在 Visual Studio 安装程序中尚无可安装的更高版本，也可以手动安装解释器。
 
 对于 Visual Studio 2015 及更早版本，必须手动安装其中一个解释器。
 

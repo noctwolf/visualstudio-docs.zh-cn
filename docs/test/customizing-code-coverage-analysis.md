@@ -9,12 +9,12 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7b48fc77dd88cf327050c0bf8ba893f8d4a626fa
-ms.sourcegitcommit: 498e39e89a89ad7bf9dcb0617424fff999b1c3b2
+ms.openlocfilehash: b5d652c24f5250af38e6a1c82dbb57dc739cbe3b
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36302998"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49880775"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 
@@ -91,7 +91,7 @@ ms.locfileid: "36302998"
 
 包括和排除节点使用正则表达式。 有关详细信息，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。 正则表达式与通配符不同。 具体而言：
 
-- .\* 与任意字符组成的字符串匹配
+- .\\* 与包含任意字符的字符串匹配
 
 - **\\.** 与句点“.”匹配
 

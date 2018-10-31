@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Cen
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 266ce307b8ee06eed427385d67c48d4258ae2a1c
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: 112597455bbabe9f42cc2834bd06bf5c52d7cc9f
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44283166"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49940978"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -41,6 +41,7 @@ Visual Studio App Center 入门十分简单。
     > ![VS App Center 门户](_img/vs-app-center/vs-app-center-portal.png)
 
 ## <a name="eligibility"></a>资格
+
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、年度云、月度云）   | VL、Azure、零售、NFR<sup>1</sup> | Included       |  是          |
@@ -50,7 +51,7 @@ Visual Studio App Center 入门十分简单。
 | Visual Studio Dev Essentials | NA  | Included                                                            |是 |
 
 
-<sup>1</sup> 包括：限制转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、Microsoft 重要合作伙伴 (MVP)、区域总监 (RD)。
+<sup>1</sup>包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 

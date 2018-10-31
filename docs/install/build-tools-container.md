@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 42bf1427e71c21fecb0cd3822469b143b9d42df5
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 08026b744cc6b71e31179666c5f85102a4093843
+ms.sourcegitcommit: 9571742f4a808c75b1034aa72fc24b54bc50692e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138646"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49411009"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -57,7 +57,7 @@ Visual Studio 生成工具（在更大程度上是 Visual Studio）需要大量�
 
 **在 Windows 10 上**：
 
-1. 在系统任务栏中[右键单击用于 Windows 的 Docker 图标](https://docs.docker.com/docker-for-windows/#docker-settings)，然后单击“设置...”。
+1. [右键单击系统托盘中的“用于 Windows 的 Docker”图标](https://docs.docker.com/docker-for-windows/#docker-settings)，再单击“设置”。
 2. [单击守护程序](https://docs.docker.com/docker-for-windows/#docker-daemon)部分。
 3. [将“基本”](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file)按钮切换为“高级”。
 4. 添加以下 JSON 数组属性以将磁盘空间增大到 120 GB（足以在占用空间增多的情况下用于生成工具）。

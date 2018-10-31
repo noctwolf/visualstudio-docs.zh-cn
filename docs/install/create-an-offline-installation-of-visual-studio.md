@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 079416a411af5b5a953bd9cccd03681a4dddaefb
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028944"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050062"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -53,13 +53,16 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 | 版本                    | 文件                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
-| Visual Studio 社区    | [vs_community.exe](https://aka.ms/vs/15/release/vs_community.exe)       |
-| Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/15/release/vs_professional.exe) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/15/release/vs_enterprise.exe)     |
+| Visual Studio 社区    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline&install&utm_content=download+vs2017)       |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline&install&utm_content=download+vs2017) |
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline&install&utm_content=download+vs2017)     |
 
 ### <a name="step-2---create-a-local-install-cache"></a>步骤 2 - 创建本地安装缓存
 
 必须具有 Internet 连接才能完成此步骤。
+
+> [!IMPORTANT]
+> 如果已安装 Visual Studio Community 2017，必须在安装后的 30 天内激活它。 必须连接到 Internet，才能执行此操作。
 
 请打开命令提示符，并使用以下示例中的任一命令。 此处列出的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 

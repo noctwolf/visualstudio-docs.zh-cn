@@ -1,7 +1,7 @@
 ---
 title: 调试 Python 代码
 description: Visual Studio 中专门用于 Python 代码的调试功能概述，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
-ms.date: 08/14/2018
+ms.date: 10/10/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6766e5e498b631ea4e95a535d65ebf09ff973b59
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 52869de661d9818252b68271c089f6b04a0b9f00
+ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42626736"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101155"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -25,7 +25,6 @@ Visual Studio 提供全面的 Python 调试体验，包括附加到正在运行�
 另请参阅以下情景特定的调试文章：
 
 - [Linux 远程调试](debugging-python-code-on-remote-linux-machines.md)
-- [Azure 远程调试](debugging-remote-python-code-on-azure.md)
 - [Python/C++ 混合模式调试](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
 - [混合模式调试的符号](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
@@ -170,7 +169,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 | 命令 | 自变量 | 描述 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 从当前语句开始运行程序。 |
-| `$down`, `$d` | 在堆栈跟踪中将当前帧下移一级。 |
+| `$down`， `$d` | 在堆栈跟踪中将当前帧下移一级。 |
 | `$frame` | | 显示当前的帧 ID。
 | `$frame` | 帧 ID | 将当前帧切换为指定帧 ID。
 | `$load` | 从文件加载命令并执行，直到完成 |
@@ -183,7 +182,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 | `$thread` | | 显示当前的线程 ID。 |
 | `$thread` | 线程 ID | 将当前线程切换为指定线程 ID。 |
 | `$threads` | | 列出当前正在调试的线程。 |
-| `$up`, `$u` | | 在堆栈跟踪中将当前帧上移一级。 |
+| `$up`， `$u` | | 在堆栈跟踪中将当前帧上移一级。 |
 | `$where`, `$w`, `$bt` | 列出当前线程的帧。 |
 
 请注意，标准调试器窗口（如进程、线程和调用堆栈）不与调试交互窗口同步。 更改调试交互窗口中的活动进程、线程或帧不会影响其他调试器窗口。 同样，更改其他调试器窗口中的活动进程、线程或帧也不会影响调试交互窗口。
@@ -227,9 +226,45 @@ Visual Studio 2017 版本 15.8 及更高版本使用基于 ptvsd 版本 4.1+ 的
 
 1. 如果版本低于 4.1.1a9（与 Visual Studio 捆绑的版本），请选择包右侧的“X”以卸载旧版本。 随后，Visual Studio 使用其捆绑版本。 （也可使用 `pip uninstall ptvsd` 从 PowerShell 卸载。）
 
-1. 或者，可将 ptvsd 包更新到其最新版本。 在搜索框中输入 `ptvsd --upgrade -pre`，然后选择“运行命令: pip install ptvsd --upgrade -pre”。 （也可使用 PowerShell 中的相同命令。）
+1. 也可以按照[疑难解答](#troubleshooting)部分中的说明操作，将 ptvsd 包更新为最新版本。
 
-    ![在“Python 环境”窗口中提供升级命令](media/debugging-experimental-upgrade-ptvsd.png)
+## <a name="troubleshooting"></a>疑难解答
+
+如果无法使用调试器，请先升级 ptvsd 版本，步骤如下：
+
+1. 导航到“Python 环境”窗口中的“包”选项卡。
+
+1. 在搜索框中输入“`ptvsd --upgrade`”，再选择“运行命令: pip install ptvsd --upgrade”。 （也可使用 PowerShell 中的相同命令。）
+
+    ![在 Python 环境窗口中提供 ptvsd 升级命令](media/debugging-experimental-upgrade-ptvsd.png)
+
+如果此问题一再出现，请在 [PTVS GitHub 存储库](https://github.com/Microsoft/ptvs/issues)中提交问题。
+
+### <a name="enable-debugger-logging"></a>启用调试器日志记录
+
+在调查调试器问题的过程中，Microsoft 可能会要求你启用并收集有助于诊断的调试器日志。
+
+若要在当前 Visual Studio 会话中启用调试，请按照以下步骤操作：
+
+1. 依次使用“视图” > “其他 Windows” > “命令窗口”菜单命令，在 Visual Studio 中打开命令窗口。
+
+1. 输入以下命令：
+
+    ```ps
+    DebugAdapterHost.Logging /On
+    ```
+
+1. 开始调试并完成重现问题所需的任何步骤。 在此期间，调试日志显示在“调试适配器主机日志”下的“输出”窗口中。 然后，可以将日志从此窗口中复制并粘贴到 GitHub 问题、电子邮件等中。
+
+    ![“输出”窗口中的调试器日志记录输出](media/debugger-logging-output.png)
+
+1. 如果 Visual Studio 挂起或你无法以其他方式访问“输出”窗口，请重启 Visual Studio，打开命令窗口，并输入以下命令：
+
+    ```ps
+    DebugAdapterHost.Logging /On /OutputWindow
+    ```
+
+1. 开始调试并再次重现问题。 然后，可以在 `%temp%\DebugAdapterHostLog.txt` 中找到调试器日志。
 
 ## <a name="see-also"></a>请参阅
 
