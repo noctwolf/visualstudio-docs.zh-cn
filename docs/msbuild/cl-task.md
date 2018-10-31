@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f23a23f1dbdb8dc66a46e1eb1e0b9f1156182e2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1c239dc78d152e9060d176ebe1d4abd3b981a57d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922401"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220360"
 ---
 # <a name="cl-task"></a>CL 任务
 包装 Visual C++ 编译器工具 cl.exe。 编译器生成可执行 (.exe) 文件、动态链接库 (.dll) 文件或者代码模块 (.netmodule) 文件。 有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  
@@ -52,7 +52,9 @@ ms.locfileid: "49922401"
   
    有关详细信息，请参阅[编译器选项](/cpp/build/reference/compiler-options)。  
   
-- **AdditionalUsingDirectories**可选 String[] 参数。  
+- **AdditionalUsingDirectories**
+
+   可选 String[] 参数。  
   
    指定在解析传递给 **#using** 指令的文件引用时编译器将搜索的目录。  
   

@@ -7,7 +7,6 @@ ms.topic: reference
 f1_keywords:
 - VS.Environment.Web Browser
 - VS.ToolsOptionsPages.Environment.WebBrowser
-- VS.ToolsOptionsPag.Environment.Web_Browser
 - VS.ToolsOptionsPages.Environment.Web_Browser
 helpviewer_keywords:
 - browsers, customizing
@@ -25,12 +24,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f8dc8fb781e75116dbdcb6e316981225f32439
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: f4eb5b3a73d2b06123e7878ac90ceb5bdf21869c
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947113"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143159"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“Web 浏览器”
 为内部 Web 浏览器和 Internet Explorer 设置选项。 若要访问此对话框，请在“工具”菜单上单击“选项”，展开“环境”文件夹，然后选择“Web 浏览器”。

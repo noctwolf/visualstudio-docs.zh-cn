@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 994edc924d0261a7eb26c4eac6e3c9277f15a81c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b15617dce090a3aacde71ad48bf4984f5efbcac4
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823867"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50218920"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
 在“选项”（“工具”菜单）对话框的“文本编辑器”文件夹下的“Basic”文件夹中，“VB 专用”属性页包含以下属性：
@@ -71,16 +71,6 @@ ms.locfileid: "49823867"
 **自动插入 Interface 和 MustOverride 成员**
 
 为类提交 `Implements` 语句或 `Inherits` 语句时，文本编辑器分别为必须实现或必须替代的成员插入原型。
-
-**显示过程行分隔符**
-
-文本编辑器指示过程的可视范围。 在项目的 .vb 源文件中，在下表列出的位置绘制行：
-
-|.vb 源文件中的位置|行位置示例|
-| - | - |
-|在块声明构造结束之后|-   在类、结构、模块、接口或枚举的末尾<br />-   在属性、函数或子类之后<br />-   不在属性中的 get 和 set 子句之间|
-|在一组单行构造之后|-   在类文件中的导入语句之后，在类型定义之前<br />-   在类中声明的变量之后，在所有过程之前|
-|在单行声明（非块级声明）之后|-   在导入语句、继承语句、变量声明、事件声明、委托声明和 DLL 声明语句之后|
 
 **启用错误纠正建议**
 

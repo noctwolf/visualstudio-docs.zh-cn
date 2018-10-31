@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3822e7d3c4ac027dbb010c642de6d9bf0ff1d13a
-ms.sourcegitcommit: 6b092e7d466377f06913d49d183dbbdca16730f0
+ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43138919"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050360"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -33,9 +33,9 @@ ms.locfileid: "43138919"
 
 将命令行选项与安装引导程序结合使用。安装引导程序是启动下载过程的小型（约 1MB）文件。 安装引导程序是你从 Visual Studio 网站下载时启动的第一个可执行文件。 单击下面的链接，直接链接到要安装的产品版本所对应的最新版安装引导程序：
 
-* [Visual Studio 2017 Enterprise](https://aka.ms/vs/15/release/vs_enterprise.exe)
-* [Visual Studio 2017 Professional](https://aka.ms/vs/15/release/vs_professional.exe)
-* [Visual Studio 2017 Community](https://aka.ms/vs/15/release/vs_community.exe)
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
 
 ## <a name="list-of-command-line-parameters"></a>命令行参数列表
 
@@ -149,7 +149,7 @@ ms.locfileid: "43138919"
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
-* [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
-* [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)
-* [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)
+- [Visual Studio 2017 安装的命令行参数示例](command-line-parameter-examples.md)
+- [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
+- [通过响应文件自动执行 Visual Studio 安装](automated-installation-with-response-file.md)
+- [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md)

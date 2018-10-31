@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d22e5fc3169cc731428e8c5fafff607847c156
+ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942213"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50143185"
 ---
 # <a name="walkthrough-build-an-application"></a>演练：生成应用程序
 
@@ -100,7 +100,7 @@ ms.locfileid: "49942213"
 
 1. 选择“生成”页，然后在“禁止显示警告”框中，指定警告编号“0168”。
 
-     ![“生成”页，“项目设计器”](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![“生成”页，“项目设计器”](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      有关详细信息，请参阅 [“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
@@ -120,7 +120,7 @@ ms.locfileid: "49942213"
 
 3. 在“编译”页上，选择“禁用所有警告”复选框。
 
-     ![“编译”页，“项目设计器”](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![“编译”页，“项目设计器”](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      有关详细信息，请参阅[在 Visual Basic 中配置警告](../ide/configuring-warnings-in-visual-basic.md)。
 

@@ -1,7 +1,7 @@
 ---
 title: Python 的 Web 应用程序模板
 description: 使用 Python 编写的 Web 应用程序的 Visual Studio 模板的概述（使用 Bottle、Flask 和 Django 框架），包括调试配置和发布到 Azure 应用服务。
-ms.date: 07/03/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ad905581252bd2af7307292d617669d00320c398
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100999"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219843"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
