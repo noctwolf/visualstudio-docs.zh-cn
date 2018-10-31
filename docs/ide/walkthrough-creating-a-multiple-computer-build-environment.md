@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e77f5bbcdc09e44018e1a10c861e9875c569f65
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 2dc88c3861adb8b1d9f239d6ceedee2b76bc2e25
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371051"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951608"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -55,7 +55,7 @@ ms.locfileid: "46371051"
 
 1. 在主计算机上安装 Visual Studio。
 
-2. 在生成计算机上，安装 .NET Framework 4.5。 若要验证是否已安装，请确保注册表项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full@Version 的值以“4.5”开头。
+2. 在生成计算机上，安装 .NET Framework 4.5 或更高版本。 若要验证是否已安装，请检查注册表子项 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full 中的 Version 条目值是否以 4.5 或更大值开头。
 
 ## <a name="copy-files-from-the-host-computer-to-the-build-computer"></a>将文件从主机计算机复制到生成计算机
 
@@ -73,29 +73,29 @@ ms.locfileid: "46371051"
 
 1. 如果您仅安装了 Windows SDK for Windows 8，请从主计算机将这些文件夹复制到生成计算机：
 
-    - %ProgramFiles%\Windows Kits\8.0\bin\
+   - %ProgramFiles%\Windows Kits\8.0\bin\
 
-    - %ProgramFiles%\Windows Kits\8.0\Catalogs\
+   - %ProgramFiles%\Windows Kits\8.0\Catalogs\
 
-    - %ProgramFiles%\Windows Kits\8.0\DesignTime\
+   - %ProgramFiles%\Windows Kits\8.0\DesignTime\
 
-    - %ProgramFiles%\Windows Kits\8.0\include\
+   - %ProgramFiles%\Windows Kits\8.0\include\
 
-    - %ProgramFiles%\Windows Kits\8.0\Lib\
+   - %ProgramFiles%\Windows Kits\8.0\Lib\
 
-    - %ProgramFiles%\Windows Kits\8.0\Redist\
+   - %ProgramFiles%\Windows Kits\8.0\Redist\
 
-    - %ProgramFiles%\Windows Kits\8.0\References\
+   - %ProgramFiles%\Windows Kits\8.0\References\
 
-    如果您还有其他 Windows 8 工具包…
+     如果您还有其他 Windows 8 工具包…
 
-    - Microsoft Windows 评估和部署工具包
+   - Microsoft Windows 评估和部署工具包
 
-    - Microsoft Windows 驱动程序工具包
+   - Microsoft Windows 驱动程序工具包
 
-    - Microsoft Windows 硬件认证工具包
+   - Microsoft Windows 硬件认证工具包
 
-    ...它们可能已将文件安装到上一步列出的 %ProgramFiles%\Windows Kits\8.0 文件夹中，并且其许可条款可能不允许这些文件的生成服务器权利。 查看安装的每个 Windows 工具包的许可条款以验证文件是否可复制到生成计算机。 如果许可条款不允许生成服务器权利，则将从生成计算机删除这些文件。
+     ...它们可能已将文件安装到上一步列出的 %ProgramFiles%\Windows Kits\8.0 文件夹中，并且其许可条款可能不允许这些文件的生成服务器权利。 查看安装的每个 Windows 工具包的许可条款以验证文件是否可复制到生成计算机。 如果许可条款不允许生成服务器权利，则将从生成计算机删除这些文件。
 
 2. 将下列文件夹以递归方式从主计算机复制到生成计算机：
 
@@ -202,53 +202,53 @@ ms.locfileid: "46371051"
 
 2. 在生成计算机上创建下列注册表项。 所有这些项都是字符串（在注册表中类型为“REG_SZ”）。 将这些项的值设置为与主计算机上可比较项的值相同。
 
-    - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
+   - **%RegistryRoot%\\.NETFramework\v4.0.30319\AssemblyFoldersEx\VCMSBuild Public Assemblies@(Default)**
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools@InstallationFolder</strong>
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x86@InstallationFolder</strong>
 
-    - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
+   - **%RegistryRoot%\VisualStudio\11.0@Source Directories**
 
-    - **%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir**
+   - <strong>%RegistryRoot%\VisualStudio\11.0\Setup\VC@ProductDir</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkDir64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer32</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64**
+   - <strong>%RegistryRoot%\VisualStudio\SxS\VC7@FrameworkVer64</strong>
 
-    - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VC7@11.0**
 
-    - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
+   - **%RegistryRoot%\VisualStudio\SxS\VS7@11.0**
 
-    - **%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot**
+   - <strong>%RegistryRoot%\Windows Kits\Installed Roots@KitsRoot</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>%RegistryRoot%\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
-    在 x64 生成计算机上，同样创建以下注册表项并参考主计算机来确定如何设置。
+   在 x64 生成计算机上，同样创建以下注册表项并参考主计算机来确定如何设置。
 
-    - **%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder**
+   - <strong>%RegistryRoot%\Microsoft SDKs\Windows\v8.0A\WinSDK-NetFx40Tools-x64@InstallationFolder</strong>
 
-    如果你的生成计算机为 x64 并且你要使用 64 位版本的 MSBuild，或者你要在 x64 计算机上使用 Team Foundation Server Build Service，则必须在本机 64 位注册表中创建下列注册表项。 请参见主计算机来确定如何设置这些项。
+   如果生成计算机为 x64，且要使用 64 位版 MSBuild，或要在 x64 计算机上使用 Team Foundation Server Build Service，请在本机 64 位注册表中创建下列注册表项。 请参见主计算机来确定如何设置这些项。
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Setup\VS@ProductDir</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath10</strong>
 
-    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSBuild\ToolsVersions\4.0\11.0@VCTargetsPath11</strong>
 
 ## <a name="set-environment-variables-on-the-build-computer"></a>在生成计算机上设置环境变量
 
@@ -261,7 +261,7 @@ ms.locfileid: "46371051"
 下表描述了 vcvarsall.bat 支持的参数：
 
 |Vcvarsall.bat 参数|编译器|生成计算机体系结构|生成输出体系结构|
-|----------------------------|--------------|---------------------------------|-------------------------------|
+| - |--------------| - | - |
 |x86（默认）|32 位本机|x86、x64|x86|
 |x86_amd64|x64 兼容|x86、x64|X64|
 |amd64|x64 本机|X64|X64|
@@ -276,17 +276,17 @@ ms.locfileid: "46371051"
 
 2. 您也可以将下列路径添加到 PATH 变量以使得使用 MSBuild 生成解决方案更容易。
 
-    如果要使用本机 32 位 MSBuild，请将下列路径添加到 PATH 变量中：
+   如果要使用本机 32 位 MSBuild，请将下列路径添加到 PATH 变量中：
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools
 
-    - %windir%\Microsoft.NET\Framework\v4.0.30319
+   - %windir%\Microsoft.NET\Framework\v4.0.30319
 
-    如果要使用本机 64 位 MSBuild，请将下列路径添加到 PATH 变量：
+   如果要使用本机 64 位 MSBuild，请将下列路径添加到 PATH 变量：
 
-    - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
+   - %Program Files%\Microsoft SDKs\Windows\v8.0A\bin\NETFX 4.0 Tools\x64
 
-    - %windir%\Microsoft.NET\Framework64\v4.0.30319
+   - %windir%\Microsoft.NET\Framework64\v4.0.30319
 
 ## <a name="install-msbuild-assemblies-to-the-global-assembly-cache-gac-on-the-build-computer"></a>将 MSBuild 程序集安装到生成计算机上的全局程序集缓存 (GAC)
 

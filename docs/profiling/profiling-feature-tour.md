@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aeda3752fdee6ce36094c68758d99c612c82fd76
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 9f884b92d03027782eed27f4583e06b1141341db
+ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320834"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49356790"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>快速入门：首先了解分析工具
 
@@ -34,7 +34,8 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 “诊断工具”窗口通常是探查应用的首选方式，但对于版本生成，也可改为对应用执行事后分析。 若要详细了解不同方法，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 若要了解不同应用类型对应的探查工具支持，请参阅[我应使用哪个工具？](#which-tool-should-i-use)。
 
-> [注意] 可在 Windows 7 及更高版本中使用事后分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
+> [!NOTE]
+> 可以在 Windows 7 及更高版本中使用事后分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
 
 ## <a name="analyze-cpu-usage"></a>分析 CPU 的使用量
 
@@ -119,7 +120,7 @@ CPU 使用率和内存使用量等分析工具可与调试器配合使用（见�
 
 关系图还可用于确定是否存在与 CPU 或 GPU 绑定的性能瓶颈。
 
-## <a name="analyze-performance-javascript"></a>分析性能 (JavaScript)
+## <a name="analyze-performance-javascript-uwp"></a>分析性能 (JavaScript UWP)
 
 对于 UWP 应用，可以使用“JavaScript 内存”工具和“HTML UI 响应能力”工具。
 
@@ -155,8 +156,8 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
   
 |性能工具|Windows 桌面|UWP|ASP.NET/ASP.NET Core| 
 |----------------------|---------------------|-------------|-------------|  
-|[内存使用率](../profiling/memory-usage.md)|是|是|是| 
 |[CPU 使用率](../profiling/cpu-usage.md)|是|是|是|
+|[内存使用率](../profiling/memory-usage.md)|是|是|是| 
 |[GPU 使用情况](../debugger/gpu-usage.md)|是|是|否| 
 |[应用程序时间线](../profiling/application-timeline.md)|是|是|否|
 |[性能提示](../profiling/perftips.md)|是|XAML 适用，HTML 不适用|是|

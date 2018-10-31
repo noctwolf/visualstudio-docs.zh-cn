@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d700be4cec30bf27dc826b220a1e318cdcd14c99
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 2b9378f64bce3c1da95120b6456767f12b34d379
+ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028944"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47859558"
 ---
 # <a name="create-an-offline-installation-of-visual-studio-2017"></a>创建 Visual Studio 2017 脱机安装缓存
 
@@ -60,6 +60,9 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 ### <a name="step-2---create-a-local-install-cache"></a>步骤 2 - 创建本地安装缓存
 
 必须具有 Internet 连接才能完成此步骤。
+
+> [!IMPORTANT]
+> 如果已安装 Visual Studio Community 2017，必须在安装后的 30 天内激活它。 必须连接到 Internet，才能执行此操作。
 
 请打开命令提示符，并使用以下示例中的任一命令。 此处列出的示例假定用户使用的是 Visual Studio 社区版；请根据版本相应调整命令。
 

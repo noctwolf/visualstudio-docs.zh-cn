@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 418ea3661f236866bbadcf278f288632c5e49435
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: b1331890a0ec9b788b17214a0d5f90b63ceb1a32
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44280089"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49908980"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>步骤 5：使用投票 Flask Web 项目模板
 
@@ -228,7 +228,7 @@ def seed():
     return redirect('/')
 ```
 
-`repository.add_sample_polls()` 调用结束，最终将显示所选数据存储的某个特定 `Repository` 实现。 每个实现都调用 models\__init__.py 中找到的 `_load_samples_json` 方法将 models\samples.json 文件负载到内存中，然后循环访问该数据，在数据存储中创建必需的 `Poll` 和 `Choice` 对象。
+`repository.add_sample_polls()` 调用结束，最终将显示所选数据存储的某个特定 `Repository` 实现。 每个实现都调用 models\_\_init\_\_.py 中的 `_load_samples_json` 方法，将 models\samples.json 文件加载到内存中，再循环访问相应数据，以在数据存储中创建必要的 `Poll` 和 `Choice` 对象。
 
 完成此过程后，`seed` 方法中的 `redirect('/')` 语句将返回到主页。 此时，因为 `repository.get_polls` 现在返回一个数据对象，所以 templates\index.html 中的条件标记会呈现一个包含投票的表。
 
@@ -352,11 +352,8 @@ def results(key):
 
 在开发计算机上运行 Web 应用只是使应用可供客户使用的一个步骤。 后续步骤可能包括以下任务：
 
-- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)，其中包括 Flask 应用所需的特定更改。
+- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 
 - 添加一个使用其他生产级数据存储的存储库实现，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 另外，还可使用 [Azure SDK for Python](azure-sdk-for-python.md)，以便使用表和 blob 等 Azure 存储服务以及 Cosmos DB。
 
-- 在 Azure Pipelines 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 Azure Repos、GitHub 或其他位置）外，还可以让 Azure Test Plans 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps Services 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参见:
-
-  - [使用 Azure DevOps Projects 为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)
-  - [通过 Visual Studio Team Services 在 Azure 中开发 Python（视频，11 分 21 秒）](https://azure.microsoft.com/resources/videos/connect-2017-python-development-in-azure-with-visual-studio-team-services/)。
+- 在 Visual Studio Team Services (VSTS) 之类的服务上设置持续集成/持续部署管道。 除了使用源代码管理（在 VSTS、GitHub 或其他位置）外，还可以让 VSTS 自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，VSTS 还与监视解决方案（如 App Insights）集成，并使用敏捷规划工具关闭整个周期。 有关详细信息，请参阅[使用 Azure DevOps 项目创建 Python 应用的 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts)。

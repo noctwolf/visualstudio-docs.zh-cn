@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d0e337ebb97b487adfd79be43ddc1301612ba090
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
+ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46496111"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49284045"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -131,7 +131,7 @@ ms.locfileid: "46496111"
 
 1. 保持浏览器窗口呈打开状态并返回 Visual Studio。
 
-1. 在 Visual Studio 中，选择“About.cshtml”。 然后，删除词更改并在该位置添加词文件和目录。
+1. 在 Visual Studio 中，选择“About.cshtml”。 然后，删除“additional”一词，并在这个词的位置上添加词语“file and directory”。
 
     ![更改 About.cshtml 文件中的文本](../ide/media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -197,4 +197,4 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 ## <a name="see-also"></a>请参阅
 
-[使用 Visual Studio 将 Web 应用发布到 Azure App Service](..//deployment/quickstart-deploy-to-azure.md)
+[使用 Visual Studio 将 Web 应用发布到 Azure App Service](../deployment/quickstart-deploy-to-azure.md)

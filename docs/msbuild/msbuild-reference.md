@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 80e76fd7677eab8c56827dcdbaeaf42ee72c5c28
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 9b2710b6efcc765f98977c2730c5f729e3a8b260
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081779"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120378"
 ---
 # <a name="msbuild-reference"></a>MSBuild 参考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的生成系统。 可通过以下链接查看包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 参考信息的主题。  
@@ -71,25 +71,24 @@ ms.locfileid: "39081779"
  列出可能需要被“转义”才能正确解释的字符。 转义序列是一系列字符，表示其后的内容是替代解释。  
   
 ## <a name="see-also"></a>请参阅  
- [MSBuild 概述](../msbuild/msbuild.md)介绍 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 并提供指向介绍如何使用它来生成项目的链接。  
+ [MSBuild 概述](../msbuild/msbuild.md)     
+ 介绍了 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，并收录了介绍如何使用它来生成项目的主题链接。  
   
- <xref:Microsoft.Build.Conversion>  
+ [Microsoft.Build.Conversion](https://docs.microsoft.com/dotnet/api/microsoft.build.conversion)  
  包含 Conversion 命名空间引用。  
   
- <xref:Microsoft.Build.Evaluation>  
+ [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)  
  包含 Evaluation 命名空间引用。  
   
- <xref:Microsoft.Build.Execution>  
+ [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)  
  包含 Execution 命名空间引用。  
   
- <xref:Microsoft.Build.Framework>  
+ [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)  
  包含 Framework 命名空间引用。  
   
- <xref:Microsoft.Build.Logging>  
- 包含 Logging 命名空间引用。  
+ [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging) 包含 Logging 命名空间参考。  
   
- <xref:Microsoft.Build.Tasks>  
+ [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)  
  包含 Task 命名空间引用。  
   
- <xref:Microsoft.Build.Utilities>  
- 包含 Utilities 命名空间引用。
+ [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities) 包含 Utilities 命名空间参考。

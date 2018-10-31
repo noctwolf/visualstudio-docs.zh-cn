@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd397420652d5d70429daa7ecea35210194dd37a
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 31856366712da0a2287f73906c6e3a5f81f63a00
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175951"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49857583"
 ---
 # <a name="customize-your-build"></a>自定义生成
 
@@ -34,6 +34,11 @@ ms.locfileid: "39175951"
 
 但现在，通过在包含源的根文件夹的名为 Directory.Build.props 的单个文件中定义一个新属性，只需一步即可向每个项目添加该属性。 在 MSBuild 运行时，Microsoft.Common.props 会搜索 Directory.Build.props 文件的目录结构（Microsoft.Common.targets 将查找 Directory.Build.targets）。 如果找到，就会导入该属性。 Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。
 
+> [!NOTE]
+> 基于 Linux 的文件系统区分大小写。 请确保 Directory.Build.props 文件名的大小写完全匹配，否则将不会在生成流程中检测到它。
+>
+> 有关详细信息，请参阅[此 GitHub 问题](https://github.com/dotnet/core/issues/1991#issue-368441031)。
+
 ### <a name="directorybuildprops-example"></a>Directory.Build.props 示例
 
 例如，如果想要使所有项目都可以访问新的 Roslyn /deterministic 功能（属性 `$(Deterministic)` 在 Roslyn `CoreCompile` 目标中公开了此功能），可以执行以下操作。
@@ -41,13 +46,13 @@ ms.locfileid: "39175951"
 1. 在存储库根目录中创建一个名为 Directory.Build.props 的新文件。
 2. 将以下 XML 添加到此文件。
 
-  ```xml
-  <Project>
+   ```xml
+   <Project>
     <PropertyGroup>
       <Deterministic>true</Deterministic>
     </PropertyGroup>
-  </Project>
-  ```
+   </Project>
+   ```
 3. 运行 MSBuild。 项目现有的 Microsoft.Common.props 和 Microsoft.Common.targets 导入会找到该文件并将其导入。
 
 ### <a name="search-scope"></a>搜索范围

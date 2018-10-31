@@ -10,15 +10,24 @@ ms.author: tglee
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abec2e0d2485b99d5cde020bffc5ad0b2dd473ac
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: cd23bbf09e79ac4f7763a563e361954d9cfde072
+ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775379"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48120674"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="3807"></a>3.8.0.7
+ 发布时间：2018 年 9 月 20 日
+ 
+### <a name="bug-fixes"></a>Bug 修复
+
+-   **调试器：**
+
+    -   修复了用于与 Unity 调试器引擎进行通信的库中的死锁，此死锁会导致 Visual Studio 或 Unity 冻结，尤其是在用户点击“附加到 Unity”或重启游戏时。
 
 ## <a name="3806"></a>3.8.0.6
  发布日期：2018 年 8 月 27 日

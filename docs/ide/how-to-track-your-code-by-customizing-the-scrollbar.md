@@ -1,60 +1,75 @@
 ---
-title: 如何：通过自定义滚动条来跟踪代码
-ms.date: 11/04/2016
+title: 滚动条的地图模式和滚动条模式
+ms.date: 09/25/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.Scroll_Bars
 author: gewarren
 ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc18b436a7f25baad9870e36c3224f23de920241
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: fca9b8dd8f4c3cd17ee6ca7f23b3622fc1a9e4ee
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745732"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897051"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>如何：通过自定义滚动条来跟踪代码
+# <a name="how-to-customize-the-scroll-bar"></a>操作说明：自定义滚动条
 
-使用长码文件时，可能很难记住所有内容。 可自定义代码窗口的滚动条，以便获得代码中所发生情况的鸟瞰图。
+处理很长的代码文件时，可能很难跟踪所有代码在文件中的位置。 可自定义代码编辑器的滚动条，以了解代码的整体使用情况。
 
-## <a name="to-show-annotations-on-the-scroll-bar"></a>显示滚动条上的注释
+## <a name="annotations"></a>批注
 
-1. 可设置滚动条，以显示代码更改、断点、错误和书签。
+可选择滚动条是否显示注释（如代码更改、断点、书签、错误和插入点位置）。
 
-    选择“工具” > “选项” > “文本编辑器” > “所有语言”或特定语言，打开“滚动条”选项页面，也可在“快速启动”窗口中输入“滚动条”将其打开。
+   1. 依次选择“工具” > “选项” > “文本编辑器” > “所有语言” > “滚动条”，以打开“滚动条”选项页。
 
-2. 选择“在垂直滚动条上方显示注释”，然后选择要查看的注释。
+   2. 依次选择“在垂直滚动条上方显示注释”和所需的注释。 可选择下列注释：
 
-    “标记”选项包括断点和书签。
+      - 更改
+      - 标记
+      - 错误
+      - 插入点位置
 
-3. 现在试一试。打开大型代码文件，并替换出现在文件中多个位置的内容。 滚动条将显示替换的效果，从而在替换了不应替换的内容时可撤回更改。
+      > [!TIP]
+      > “显示标记”选项包括断点和书签。
 
-    下面是搜索字符串后滚动条的外观。 注意将显示字符串的所有实例。
+试试吧！请打开一个大型代码文件，并替换文件中多处出现的某文本。 滚动条将显示替换的效果，从而在替换了不应替换的内容时可撤回更改。
 
-    ![搜索字符串后的滚动条。](../ide/media/enhancedscrollbarsearch.png)
+下面是搜索字符串后滚动条的外观。 请注意，字符串的所有实例都会显示在滚动条中。
 
-    下面是替换字符串的所有实例后滚动条的外观。 将立即看到操作导致了一些问题。
+![搜索字符串后的 Visual Studio 滚动条](../ide/media/enhancedscrollbarsearch.png)
 
-    ![替换字符串并发生错误后的滚动条](../ide/media/enhancedscrollbarreplace.png)
+下面是替换字符串的所有实例后滚动条的外观。 滚动条中的红色标记表明文本替换位置抛出错误。
 
-## <a name="to-set-the-display-mode-for-the-scroll-bar"></a>设置滚动条的显示模式
+![替换字符串出错后的 Visual Studio 滚动条](../ide/media/enhancedscrollbarreplace.png)
 
-1. 滚动条具有两种模式：条状模式（默认）和映射模式。 条状模式只显示滚动条上的注释指示器。 映射模式下，在滚动条上表示代码行。 可选择它们的宽度，以及将指针停留在它们上时是否显示基础代码。 单击滚动条上的某个位置时，游标将移到代码中的该位置。 折叠区域所带的阴影不同；双击这些区域可将其展开。
+## <a name="display-modes"></a>显示模式
 
-    在“滚动条”选项页上，选择“使用垂直滚动条的条状模式”或“使用垂直滚动条的映射模式”。 可在“源概述”下拉列表中选择宽度。
+滚动条有两种模式：滚动条模式和地图模式。
 
-    下面是启用映射模式且宽度设置为“中等”时搜索示例的外观：
+### <a name="bar-mode"></a>滚动条模式
 
-    ![映射模式中的滚动条](../ide/media/enhancedscrollbar.png)
+滚动条模式在滚动条上显示注释指示器。 单击滚动条会向上或向下滚动页面，但不会跳到文件中的相应位置。
 
-2. 映射模式下，若要在滚动条上上下移动游标时启用代码预览，选择“显示预览工具提示”选项。 下面是它的外观：
+### <a name="map-mode"></a>地图模式
 
-    ![显示工具提示的滚动条](../ide/media/enhancedscrollbarsearchtooltip.png)
+当你在地图模式下单击滚动条上的某个位置后，光标会跳到文件中的相应位置，而不只是向上或向下滚动页面。 代码行以缩图形式显示在滚动条上。 可选择地图列的宽度，具体方法是在“源代码概述”中设置值。 若要在将指针悬停在地图之上时放大预览代码，请选择“显示预览工具提示”选项。 折叠区域进行了不同的阴影化处理，双击阴影即可展开此类区域。
 
-    如果要保留映射模式滚动行为和预览工具提示，但不想看到源代码概述，可将“源概述”设置为“关闭”。
+> [!TIP]
+> 在地图模式下，可禁用代码缩图，具体方法是将“源代码概述”设置为“关”。 如果已选择“显示预览工具提示”，仍可在将指针悬停在滚动条之上时预览相应位置的代码，并且在你单击滚动条后光标仍会跳到文件中的相应位置。
+
+下图展示了地图模式已启用且宽度设置为“中等”时的搜索示例：
+
+![地图模式下的 Visual Studio 滚动条](../ide/media/enhancedscrollbar.png)
+
+下图展示了“显示预览工具提示”选项：
+
+![显示工具提示的 Visual Studio 滚动条](../ide/media/enhancedscrollbarsearchtooltip.png)
 
 ## <a name="see-also"></a>请参阅
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
-ms.openlocfilehash: 8e2118564cb6e0a3eb4811cb69283256cd48a489
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: 78f1c071469026b9e0e7d503483b7ddacc6d3cf1
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627066"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49835899"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>使用 EditorConfig 创建可移植的自定义编辑器设置
 
@@ -22,8 +22,7 @@ ms.locfileid: "42627066"
 
 许多代码编辑器和 IDE（包括 Visual Studio）都支持 EditorConfig 设置。 它是一种随代码移动的可移植组件，甚至可以在 Visual Studio 外强制实施编码样式。
 
-> [!NOTE]
-> 在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。 可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
+在 Visual Studio 中将 EditorConfig 文件添加到你的项目时，现有代码的格式设置不会更改，除非设置文档格式（在默认配置文件中单击“编辑” > “高级” > “设置文档格式”或按 Ctrl+K、Ctrl+D）。 但任何新的代码行都将根据 EditorConfig 设置设置格式。 可定义希望“设置文档格式”在[“设置格式”选项](reference/options-text-editor-csharp-formatting.md#format-document-settings)页面上应用的 EditorConfig 设置。
 
 ## <a name="coding-consistency"></a>编码一致性
 
@@ -32,6 +31,9 @@ EditorConfig 文件中的设置用于在基本代码库中维持一致的编码�
 个人项目中使用的编码约定可能不同于团队项目使用的编码约定。 例如，你可能倾向在编码时，缩进操作会添加制表符。 但你的团队可能更倾向使用四个空格字符的缩进，而不是制表符。 EditorConfig 文件让你能对每个方案进行配置，从而解决这一问题。
 
 由于这些设置包含在基本代码的文件中，因此能与基本代码一起移动。 只要在 EditorConfig 兼容的编辑器中打开代码文件，就能实现文本编辑器设置。 有关 EditorConfig 文件的详细信息，请参阅 [EditorConfig.org](http://editorconfig.org/) 网站。
+
+> [!NOTE]
+> EditorConfig 文件中设置的约定暂无法在 CI/CD 管道中强制执行为生成错误或警告。 任何样式偏差都仅显示在 Visual Studio 编辑器和“错误列表”中。
 
 ## <a name="supported-settings"></a>支持的设置
 
@@ -126,7 +128,7 @@ Visual Studio 提供 IntelliSense 完成列表，帮助你编辑 .editorconfig �
 
 ![文本编辑器 Tab 设置](../ide/media/vside_editorconfig_tabsetting.png)
 
-按预期，在下一行按 **Tab** 键会使该行首行缩进四个空格字符。
+在下一行中按 Tab 键应该会让这一行首行缩进四个空格字符。
 
 ![使用 EditorConfig 之前的代码](../ide/media/vside_editorconfig_before.png)
 

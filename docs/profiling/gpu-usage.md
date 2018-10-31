@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9926846ceaba3591a3e89f2eba0fa2d3888e9302
-ms.sourcegitcommit: 42ea834b446ac65c679fa1043f853bea5f1c9c95
+ms.openlocfilehash: 591cf2465d8d37b55c0b4d3fb11a5416fb04bf33
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/19/2018
-ms.locfileid: "31575554"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49897519"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 在 Visual Studio 性能和诊断中心使用 GPU 使用情况工具，更好地了解你 Direct3D 应用的高级硬件利用率。 你可以使用该工具来确定应用的性能是与 CPU 绑定还是与 GPU 绑定，并深入了解如何更有效地使用平台的硬件。 GPU 使用情况工具支持使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的应用，但不支持其他图形 API（如 Direct2D 或 OpenGL）。  
@@ -23,55 +23,55 @@ ms.locfileid: "31575554"
   
  ![GPU 使用情况报告，提供 CPU 和 GPU 时间线](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
-## <a name="requirements"></a>惠?  
+## <a name="requirements"></a>要求  
  以下是除图形诊断要求之外使用 GPU 使用情况工具的要求。  
   
--   支持必要计时规范的 GPU 和驱动程序。  
+- 支持必要计时规范的 GPU 和驱动程序。  
   
-    > [!NOTE]
-    >  有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
+  > [!NOTE]
+  >  有关支持的硬件和驱动程序的详细信息，请参阅本文档末尾的[硬件和驱动程序支持](#hwsupport)。  
   
- 有关图形诊断要求的详细信息，请参阅[入门](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md)。  
+  有关图形诊断要求的详细信息，请参阅[入门](../debugger/graphics/getting-started-with-visual-studio-graphics-diagnostics.md)。  
   
 ## <a name="using-the-gpu-usage-tool"></a>使用 GPU 使用情况工具  
  在 GPU 使用情况工具下运行应用时，Visual Studio 将创建一个诊断会话，以图形方式实时显示有关应用的呈现性能和 GPU 利用率的高级信息。  
   
 #### <a name="to-start-the-gpu-usage-tool"></a>启动 GPU 使用情况工具：  
   
-1.  在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
+1. 在主菜单上，选择“调试”，然后选择“性能和诊断”（键盘：按 Alt+F2）。  
   
-2.  在“性能和诊断”中心，选中“GPU 使用情况”旁的复选框。 （可选）选中你希望使用的其他工具旁的复选框。 可同时运行多个性能和诊断工具，更全面地了解应用的性能。  
+2. 在“性能和诊断”中心，选中“GPU 使用情况”旁的复选框。 （可选）选中你希望使用的其他工具旁的复选框。 可同时运行多个性能和诊断工具，更全面地了解应用的性能。  
   
-     ![选择要使用的诊断工具。](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+    ![选择要使用的诊断工具。](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
-    > [!NOTE]
-    >  并非所有性能和诊断工具都可以同时使用。  
+   > [!NOTE]
+   >  并非所有性能和诊断工具都可以同时使用。  
   
-3.  选择“性能和诊断”中心底部的蓝色“启动”按钮，以便在所选工具下运行应用。  
+3. 选择“性能和诊断”中心底部的蓝色“启动”按钮，以便在所选工具下运行应用。  
   
- 实时显示的高级信息包括帧时间、帧速率和 GPU 利用率。 每条信息都显示在独立的图形中，但使用公共的时间刻度，因此你可以轻松将它们联系在一起。  
+   实时显示的高级信息包括帧时间、帧速率和 GPU 利用率。 每条信息都显示在独立的图形中，但使用公共的时间刻度，因此你可以轻松将它们联系在一起。  
   
- “帧时间(毫秒)”和“每秒帧数(FPS)”图形包含两条红色水平线，用于表示每秒 60 帧和 30 帧的性能目标。 在“帧时间”图形中，图形低于红线表示应用超过性能目标，高于红线表示未达到性能目标。 在“每秒帧数”图形中则相反，图形高于红线表示应用超过性能目标，低于红线表示未达到性能目标。 这些图形主要用于大致了解应用的性能，并确定可能希望调查的减速情况，例如帧速率突降或 GPU 利用率陡升。  
+   “帧时间(毫秒)”和“每秒帧数(FPS)”图形包含两条红色水平线，用于表示每秒 60 帧和 30 帧的性能目标。 在“帧时间”图形中，图形低于红线表示应用超过性能目标，高于红线表示未达到性能目标。 在“每秒帧数”图形中则相反，图形高于红线表示应用超过性能目标，低于红线表示未达到性能目标。 这些图形主要用于大致了解应用的性能，并确定可能希望调查的减速情况，例如帧速率突降或 GPU 利用率陡升。  
   
- 当你的应用在 GPU 使用情况工具下运行时，诊断会话还会收集有关在 GPU 上执行的图形事件的详细信息。 此信息用于生成有关应用如何利用硬件的更精细报告。 由于从收集的信息生成此报告需要一些时间，因此仅当诊断会话完成信息收集之后此报告才可用。  
+   当你的应用在 GPU 使用情况工具下运行时，诊断会话还会收集有关在 GPU 上执行的图形事件的详细信息。 此信息用于生成有关应用如何利用硬件的更精细报告。 由于从收集的信息生成此报告需要一些时间，因此仅当诊断会话完成信息收集之后此报告才可用。  
   
- 如果希望进一步了解性能或利用率问题，请停止收集性能信息，以便生成报告。  
+   如果希望进一步了解性能或利用率问题，请停止收集性能信息，以便生成报告。  
   
 #### <a name="to-generate-and-view-the-gpu-usage-report"></a>生成和查看 GPU 使用情况报告：  
   
-1.  在诊断会话窗口底部，选择“停止收集”链接，或按左上角的“停止”。  
+1. 在诊断会话窗口底部，选择“停止收集”链接，或按左上角的“停止”。  
   
-     ![收集 GPU 和 CPU 计时信息。](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+    ![收集 GPU 和 CPU 计时信息。](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
-2.  在报告的顶部，从显示要调查问题的图形中选择一个。 所选内容最长可达 3 秒，较长部分将被截尾。  
+2. 在报告的顶部，从显示要调查问题的图形中选择一个。 所选内容最长可达 3 秒，较长部分将被截尾。  
   
-     ![收集之后，选择范围以查看详细信息](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+    ![收集之后，选择范围以查看详细信息](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  在报告底部的“...单击此处查看该范围内的 GPU 使用情况详细信息”消息中，选择“查看详细信息”链接，查看所选内容的详细时间线。  
+3. 在报告底部的“...单击此处查看该范围内的 GPU 使用情况详细信息”消息中，选择“查看详细信息”链接，查看所选内容的详细时间线。  
   
-     ![收集之后，选定范围](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+    ![收集之后，选定范围](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
- 这将打开一个新的标签页式文档，文档中包含报告。 GPU 使用情况报告可帮助你了解图形事件在 CPU 上的启动时间、到达 GPU 的时间以及 GPU 执行该事件所花费的时间。 此信息可以帮助你确定瓶颈和机遇，以提高代码的并行度。  
+   这将打开一个新的标签页式文档，文档中包含报告。 GPU 使用情况报告可帮助你了解图形事件在 CPU 上的启动时间、到达 GPU 的时间以及 GPU 执行该事件所花费的时间。 此信息可以帮助你确定瓶颈和机遇，以提高代码的并行度。  
 
 <!-- VERSIONLESS -->
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>导出到 GPUView 或 Windows Performance Analyzer

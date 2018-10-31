@@ -1,7 +1,7 @@
 ---
 title: 安装 Python 支持
 description: 如何在 Visual Studio 2017、2015、2013、2012 和 2010 中安装针对 Visual Studio 的 Python 工具 (PTVS)，包括选项和安装位置。
-ms.date: 09/24/2018
+ms.date: 10/09/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1f6a11de4b273b55910e03e73be79f6e3473bac5
-ms.sourcegitcommit: 000cdd1e95dd02e99a7c7c1a34c2f8fba6a632af
+ms.openlocfilehash: e4f4e79941be143f4eb6252dac735015f6145881
+ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168365"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49324985"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -59,7 +59,7 @@ ms.locfileid: "47168365"
 
     | 选项 | 描述 |
     | --- | --- |
-    | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）注意：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 |
+    | Python 分发版本 | 选择计划使用的 Python 2、Python 3、Anaconda2 和 Anaconda3 分发版本的 32 位和 64 位变型的任意组合。 每个组合都包含分发版本的解释器、运行时和库。 具体来说，Anaconda 是开放数据科学平台，包含各种预安装的包。 （可随时返回 Visual Studio 安装程序来添加或删除分发版本。）注意：如果已安装 Visual Studio 安装程序之外的分发版本，则无需检查此处的等效选项。 Visual Studio 会自动检测现有的 Python 安装。 请参阅 [Python 环境](managing-python-environments-in-visual-studio.md)。 此外，若有比安装程序中所显示的版本更高的 Python 版本可用，可以单独安装较高版本，并且 Visual Studio 会检测到它。 |
     | **Cookiecutter 模板支持** | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支持** | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
     | **Python IoT 支持** | 支持使用 Python 开发 Windows IoT Core。 |

@@ -1,35 +1,34 @@
 ---
 ms.technology: vs-ai-tools
-ms.openlocfilehash: b86097cc1e0e531fe6f95a01cfa1cae5e4ac42d7
-ms.sourcegitcommit: 33c954fbc8e05f7ba54bfa2c0d1bc1f9bbc68876
+ms.openlocfilehash: 7e09023659b1f44af1951e157878d78b641be3f3
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33870611"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49915940"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>通过现有代码创建 AI 项目
 
 [安装 Visual Studio Tools for AI](installation.md) 后，就可以轻松地将现有 Python 代码引入 Visual Studio 项目。
 
 > [!Important]
->
 > 此处所述的过程不移动或复制原始源文件。 如果要使用副本，请先复制文件夹。
 
 1. 启动 Visual Studio，然后选择“文件”>“新建”>“项目”。
 
-1. 在“新建项目”对话框中，搜索“AI 工具”，选择“从现有的 Python 代码”模板，为项目提供名称和位置，然后选择“确定”。
+2. 在“新建项目”对话框中，搜索“AI 工具”，选择“从现有的 Python 代码”模板，为项目提供名称和位置，然后选择“确定”。
 
-    ![根据现有代码新建项目，步骤 1](media\create-project-existing\new-ai-project.png)
+   ![根据现有代码新建项目，步骤 1](media/create-project-existing/new-ai-project.png)
 
-1. 在出现的向导中，设置现有代码的路径和文件类型筛选器，并指定项目需要的任何搜索路径，然后选择“确定”。 如果不知道搜索路径是什么，则将该字段留空。
+3. 在出现的向导中，设置现有代码的路径和文件类型筛选器，并指定项目需要的任何搜索路径，然后选择“确定”。 如果不知道搜索路径是什么，则将该字段留空。
 
-![根据现有代码新建项目，步骤 2](media\create-project-existing\azurebatch-newproject.png)
+   ![根据现有代码新建项目，步骤 2](media/create-project-existing/azurebatch-newproject.png)
 
-> 如果现有代码是 Azure 机器学习项目的一部分，则选中“是 Azure 机器学习文件夹”，确保成功转换重要的 Azure 机器学习配置详细信息，要使用的试验帐户、工作区、计算上下文等。
+   如果现有代码属于 Azure 机器学习项目，请选中“是 Azure 机器学习文件夹”，以确保成功转换重要的 Azure 机器学习配置详细信息，如试验帐户、工作区、要使用的计算上下文等。
 
-1. 要设置启动文件，请在“解决方案资源管理器”中找到该文件，右键单击，然后选择“设置为启动文件”。
+4. 若要设置启动文件，请在“解决方案资源管理器”中找到此文件，右键单击它，再选择“设置为启动文件”。
 
-1. 如果需要，可按 Ctrl+F5 或选择“调试”>“开始执行(不调试)”运行程序。
+5. 按 Ctrl+F5，或依次选择“调试”>“启动但不调试”，以运行程序。
 
 > [!div class="nextstepaction"]
 > [教程：在 Visual Studio 中使用 Python](../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md)
