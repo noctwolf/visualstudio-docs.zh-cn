@@ -92,7 +92,7 @@ ID 是基于标头文本自动生成的。 因此，例如，如果某个唯一�
 
 如果在 Markdown 文件中显示一个 URL，此 URL 将转换为可单击的链接。
 
-- 示例：http://www.github.com
+- 示例： http://www.github.com
 
 ### <a name="links-to-apis"></a>链接到 API
 
@@ -330,7 +330,7 @@ docs.microsoft 为 GitHub Flavored Markdown 提供了其他一些扩展。
 > [!div class="button"]
 [按钮链接](../docs/core/index.md)
 
-可在 [Intune 文档](https://docs.microsoft.com/en-us/intune/get-started/choose-how-to-enroll-devices)中查看按钮操作示例。 
+可在 [Intune 文档](https://docs.microsoft.com/intune/get-started/choose-how-to-enroll-devices)中查看按钮操作示例。 
 
 ### <a name="selectors"></a>选择器
 
@@ -338,7 +338,7 @@ docs.microsoft 为 GitHub Flavored Markdown 提供了其他一些扩展。
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/using-on-windows.md)
 
-可在 [Intune 文档](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)中查看选择器操作示例。
+可在 [Intune 文档](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps)中查看选择器操作示例。
 
 ### <a name="step-by-steps"></a>按步执行
 
@@ -346,4 +346,4 @@ docs.microsoft 为 GitHub Flavored Markdown 提供了其他一些扩展。
 [上一步](../docs/csharp/expression-trees-interpreting.md)
 [下一步](../docs/csharp/expression-trees-translating.md)
 
-可在[高级威胁分析文档](https://docs.microsoft.com/en-us/advanced-threat-analytics/deploy-use/install-ata-step2)中查看按步执行示例。
+可在[高级威胁分析文档](https://docs.microsoft.com/advanced-threat-analytics/deploy-use/install-ata-step2)中查看按步执行示例。
