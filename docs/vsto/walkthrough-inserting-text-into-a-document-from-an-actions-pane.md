@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ad60aa15b3924bd562ed95c30ed9aaf4adef0133
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c858cfbd2fb48aa850e395d74d7f03386ec8bc2f
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862185"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671854"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练： 向操作窗格中的文档中插入文本
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件收集输入，然后将文本发送到该文档。  
@@ -178,14 +178,14 @@ ms.locfileid: "49862185"
 ## <a name="next-steps"></a>后续步骤  
  以下是接下来可能要执行的一些任务：  
   
--   在 Excel 中创建操作窗格。 有关详细信息，请参阅[如何： 将操作窗格添加到 Excel 工作簿](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)。  
+-   在 Excel 中创建操作窗格。 有关详细信息，请参阅[如何： 将操作窗格添加到 Excel 工作簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))。  
   
 -   将数据绑定到操作窗格上的控件。 有关详细信息，请参阅[演练： 将数据绑定到 Word 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [操作窗格概述](../vsto/actions-pane-overview.md)   
  [如何： 将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [如何： 将操作窗格添加到 Excel 工作簿](http://msdn.microsoft.com/62abfce6-e44f-419d-85d8-26bf59f33872)   
+ [如何： 将操作窗格添加到 Excel 工作簿](/previous-versions/visualstudio/visual-studio-2010/e3zbk0hz(v=vs.100))   
  [如何： 管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
  [Bookmark 控件](../vsto/bookmark-control.md)  
   

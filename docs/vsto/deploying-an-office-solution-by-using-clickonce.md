@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f469cf6e3dba13f1a4c7ad6ec847cf8c8190447c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e46a0bdc23ee16c4821d3da751d5a90aa62a14c3
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859364"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673063"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>使用 ClickOnce 部署 Office 解决方案
   如果使用 ClickOnce，则部署 Office 解决方案的步骤更少。 如果发布更新，解决方案将自动检测并安装更新。 不过，ClickOnce 需要你分别为计算机的每个用户安装解决方案。 因此，应考虑使用 Windows 安装程序 (*.msi*) 如果多个用户将在同一台计算机上运行你的解决方案。  
@@ -86,7 +86,7 @@ ms.locfileid: "49859364"
 9. 如果解决方案同时面向.NET Framework 4.5 中，选择**Visual Studio 2010 Tools for Office Runtime**复选框。  
 
     > [!NOTE]  
-    >  默认情况下，不会显示此复选框。 若要显示此复选框，必须创建引导程序包。 请参阅[使用 Visual Studio 2012 创建的 Office 2013 VSTO 外接程序的引导程序包](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)。  
+    >  默认情况下，不会显示此复选框。 若要显示此复选框，必须创建引导程序包。 请参阅[使用 Visual Studio 2012 创建的 Office 2013 VSTO 外接程序的引导程序包](create-vsto-add-ins-for-office-by-using-visual-studio.md)。  
 
 10. 下**指定系统必备组件的安装位置**，选择一个选项，会出现，然后选择**确定**按钮。  
 
@@ -362,7 +362,7 @@ ms.locfileid: "49859364"
 |错误代码|定义|  
 |----------------|----------------|  
 |0|已成功安装或卸载解决方案，或者显示 VSTOInstaller 帮助。|  
-|-100|一个或多个命令行选项无效或多次设置。 有关详细信息，输入"vstoinstaller /？" 或请参阅[创建 ClickOnce Office 解决方案的自定义安装程序](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
+|-100|一个或多个命令行选项无效或多次设置。 有关详细信息，输入"vstoinstaller /？" 或请参阅[创建 ClickOnce Office 解决方案的自定义安装程序](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
 |-101|一个或多个命令行选项无效。 有关详细信息，请输入“vstoinstaller /?”。|  
 |-200|部署清单 URI 无效。 有关详细信息，请输入“vstoinstaller /?”。|  
 |-201|由于部署清单无效，无法安装解决方案。 请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。|  
@@ -463,9 +463,9 @@ ms.locfileid: "49859364"
 ## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
  [发布 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [如何： 安装 ClickOnce Office 解决方案](http://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
- [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](http://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
- [创建 ClickOnce office 解决方案的自定义安装程序](http://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+ [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [如何： 安装 ClickOnce Office 解决方案](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)   
+ [如何： 使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [创建 ClickOnce office 解决方案的自定义安装程序](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)  
 
 

@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: ceb85bbad90074a7cfb6db053398698a0a333c1a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 14d35e8d6aa6209f628e38be65c9be5fbc614561
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673011"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>VSTO 外接程序的注册表项
   部署使用 Visual Studio 创建的 VSTO 外接程序时，必须创建一组特定的注册表项。 这些注册表项可提供一些信息，使 Microsoft Office 应用程序能够发现和加载 VSTO 外接程序。  
@@ -88,7 +88,7 @@ ms.locfileid: "49881776"
   
  与所有 VSTO 外接程序共享的其他注册表项类似，生成项目时，Visual Studio 会在开发计算机上创建窗体区域注册表项。 如果使用 ClickOnce 来部署 VSTO 外接程序中，最终用户计算机上自动创建的注册表项。 如果使用 Windows Installer 部署 VSTO 外接程序中，您必须配置 InstallShield Limited Edition 项目最终用户计算机上创建注册表项。  
   
- 有关窗体区域注册表项的详细信息，请参阅[指定自定义窗体中的窗体区域的位置](http://msdn.microsoft.com/library/office/ff868998.aspx)。 有关 Outlook 窗体区域的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
+ 有关窗体区域注册表项的详细信息，请参阅[指定自定义窗体中的窗体区域的位置](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form)。 有关 Outlook 窗体区域的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。  
   
 ##  <a name="LoadBehavior"></a> LoadBehavior 值  
  **LoadBehavior**下的条目*根*\Software\Microsoft\Office\\*应用程序名称*\Addins\\*外接程序ID*键包含指定 VSTO 外接程序的运行的时行为的值的按位组合。 最低顺序位（值 0 和 1）指示 VSTO 外接程序当前是已卸载还是已加载。 其他位指示应用程序何时尝试加载 VSTO 外接程序。  

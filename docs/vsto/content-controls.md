@@ -41,12 +41,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 6880437616f2a1250488e5faaf910823a1b4b58a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 924f31ac38219453ae96fd573d968b18ce19c913
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940224"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672894"
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：  
@@ -81,7 +81,7 @@ ms.locfileid: "49940224"
  有九种不同类型的内容控件可添加到文档中。 大多数内容控件在 <xref:Microsoft.Office.Tools.Word> 命名空间内都具有对应的类型。 还可以使用通用 <xref:Microsoft.Office.Tools.Word.ContentControl> 以表示任一可用的内容控件。 有关演示如何使用每个可用的内容控件的演练，请参阅[演练： 使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
   
 ### <a name="build-block-gallery"></a>生成块库  
- 构建基块库可让用户从列表中选择*文档构建基块*要插入到文档。 文档构建基块是为了多次使用而创建的一段内容，例如共同的封面页、格式化表格或标头。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 类型。 有关构建基块的详细信息，请参阅[What's new for Word 2007 中的开发人员](http://msdn.microsoft.com/74aa6688-65b3-4167-997d-131f26ad8f84)。  
+ 构建基块库可让用户从列表中选择*文档构建基块*要插入到文档。 文档构建基块是为了多次使用而创建的一段内容，例如共同的封面页、格式化表格或标头。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 类型。 有关构建基块的详细信息，请参阅[What's new for Word 2007 中的开发人员](/previous-versions/office/developer/office-2007/bb266218(v=office.12))。  
   
 ### <a name="check-box"></a>复选框  
  复选框提供了代表二元状态（已选择或已清除）的 UI。  

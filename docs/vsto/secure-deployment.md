@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 81d6aefcf98b43524e7ffa1e0965e6a5df9189fb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 852e66bb4e29e732093cdac6b44c6791ad9b772d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865721"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671075"
 ---
 # <a name="secure-deployment"></a>安全部署
   创建 Office 解决方案时，是自动更新你的开发计算机以允许你运行的项目中的代码。 但是，在部署你的解决方案时，必须提供要签名的证书，该解决方案或使用基于信任决定的证据[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示密钥。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。  
@@ -49,7 +49,7 @@ ms.locfileid: "49865721"
   
 ## <a name="see-also"></a>请参阅  
  [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)   
- [准备计算机以运行或托管 Office 解决方案](http://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
+ [准备计算机以运行或托管 Office 解决方案](https://msdn.microsoft.com/be1b173f-7261-4d74-aa4e-94ccd43db8d8)   
  [保护 Office 解决方案](../vsto/securing-office-solutions.md)  
   
   

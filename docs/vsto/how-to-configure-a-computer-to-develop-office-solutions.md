@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 53a54c0d3ead9670f745258260461c86849cf0b9
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 6a07545fb9a7ddb2fc70ba5053ad131d2e214636
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671308"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何： 配置计算机以开发 Office 解决方案
   若要配置开发计算机以便可以使用 Visual Studio 中的 Microsoft Office 开发人员工具，请按照本主题中的说明进行操作。 必须在本地计算机上具有管理特权才能执行这些步骤。  
@@ -37,7 +37,7 @@ ms.locfileid: "35670573"
 3.  如果您有英语版本的 Visual Studio，但对 Windows 使用非英语设置，则可以安装[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]语言包以查看[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]与 Windows 相同的语言中的消息。 Visual Studio 的非英语版本将自动安装该语言包。 语言包是可从[Microsoft 下载中心](http://go.microsoft.com/fwlink/?LinkId=140386)。  
   
 ## <a name="see-also"></a>请参阅  
- [什么是中的 Office 开发的新增功能](http://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
+ [什么是中的 Office 开发的新增功能](https://msdn.microsoft.com/bf054af2-c896-4723-aa15-6381145b14bb)   
  [开始&#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)   
  [如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)   
  [如何： 安装 Office 主互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)  

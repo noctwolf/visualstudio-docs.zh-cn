@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4710dea4e194328a226f0e9d76b236d3e30e97bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0373bcba5cecbbc47451f3ad050ba0ea44a12246
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890226"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672660"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的简单数据绑定
 
@@ -50,9 +50,9 @@ ms.locfileid: "49890226"
 
 -   对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 您可以下载`AdventureWorksLT`数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?LinkId=115611)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。
+    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。
+    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>创建新项目
 

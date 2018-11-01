@@ -22,12 +22,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c2710fae53cd860b6d67cc9f9d8c7ce61afa2b03
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6fac14df471b0dfcda1d0bf4763158280211bc33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672442"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：  
@@ -62,9 +62,9 @@ ms.locfileid: "49929850"
 |公开 VSTO 外接程序中向其他 Microsoft Office 解决方案的对象。|VSTO 外接程序项目。|[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)|  
 |以下主机控件：<br /><br /> -图表<br />-ListObject<br />-NamedRange<br />的内容控件<br />书签|文档级项目。<br /><br /> 用于 Word 和 Excel 的 VSTO 外接程序项目。|[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)|  
 |以下主机控件：<br /><br /> -XMLMappedRange<br />-XMLNode<br />-XMLNodes|文档级项目。|[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)|  
-|多项目部署。|文档级项目。<br /><br /> VSTO 外接程序项目。|[演练： 部署在单个 ClickOnce 安装程序中的多个 Office 解决方案](http://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
+|多项目部署。|文档级项目。<br /><br /> VSTO 外接程序项目。|[演练： 部署在单个 ClickOnce 安装程序中的多个 Office 解决方案](https://msdn.microsoft.com/051223c0-4082-4799-b78b-a4763a9def55)|  
 |Outlook 窗体区域。|用于 Outlook 的 VSTO 外接程序项目。|[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)|  
-|部署后操作。|文档级项目。<br /><br /> VSTO 外接程序项目。|[演练： 在安装 ClickOnce 后将文档复制到最终用户计算机](http://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
+|部署后操作。|文档级项目。<br /><br /> VSTO 外接程序项目。|[演练： 在安装 ClickOnce 后将文档复制到最终用户计算机](https://msdn.microsoft.com/100090f7-bc63-4152-b3e1-19b48bc27466)|  
 |功能区自定义。|文档级项目。<br /><br /> 以下应用程序的 VSTO 外接程序项目：<br /><br /> -Excel<br />-InfoPath （InfoPath 2013 和 InfoPath 2010 仅）<br />-Outlook<br />-PowerPoint<br />项目<br />Visio<br />-Word|[功能区概述](../vsto/ribbon-overview.md)|  
 |可视化文档设计器。|文档级项目。|[在 Visual Studio 环境中的 office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)|  
   

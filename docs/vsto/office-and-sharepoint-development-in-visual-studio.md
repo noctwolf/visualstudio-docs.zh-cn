@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7217c2b3177d3eb1f591cbb6256b9e40fba23b12
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 38291b46f2f9fee83ba9af0ae553cecca5ee35f6
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671709"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671698"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。  
@@ -45,7 +45,7 @@ ms.locfileid: "35671709"
 ##  <a name="Apps"></a> 创建 Office 和 SharePoint 的外接程序  
  Office 2013 和 SharePoint 2013 引入了一个新的外接程序模型，有助于生成、分发和货币化那些扩展 Office 和 SharePoint 的外接程序。  这些外接程序可以在 Office 或 SharePoint 内在线运行，用户可以从多种设备上与它们进行交互。  
   
- 了解如何使用新[Office 外接程序模型](https://msdn.microsoft.com/library/office/jj220082.aspx)来扩展你的用户的 Office 体验。  
+ 了解如何使用新[Office 外接程序模型](/office/dev/add-ins/overview/office-add-ins)来扩展你的用户的 Office 体验。  
   
  这些加载项需求量小与 VSTO 外接程序和解决方案，相比，还可以通过使用几乎任何 web 编程 HTML5、 JavaScript、 CSS3 和 XML 等技术来生成。  若要开始，请使用 Visual Studio 中的 Office 开发人员工具，或使用代码名为“Napa Office 365 开发工具”的基于 Web 的轻量级工具，通过这些工具，可以创建项目、编写代码并在浏览器中运行外接程序。  
   
@@ -64,8 +64,8 @@ ms.locfileid: "35671709"
   
 |到|查看|  
 |--------|---------|  
-|了解有关 Office 外接程序的详细信息，然后生成一个外接程序。|[Office 外接程序](http://msdn.microsoft.com/office/dn448457)|  
-|比较你可用于扩展 Office 的不同方式，然后决定应该使用应用还是 Office 外接程序。|[Office 外接程序、 VSTO 和 VBA 的路线图](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
+|了解有关 Office 外接程序的详细信息，然后生成一个外接程序。|[Office 外接程序](/office/dev/add-ins/publish/publish)|  
+|比较你可用于扩展 Office 的不同方式，然后决定应该使用应用还是 Office 外接程序。|[Office 外接程序、 VSTO 和 VBA 的路线图](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
   
 ### <a name="build-a-sharepoint-add-in"></a>生成 SharePoint 外接程序  
  若要为你的用户扩展 SharePoint，可生成 SharePoint 外接程序。 它基本上是小的、 易于使用的、 独立的应用程序，满足为用户或业务需求。  
@@ -80,9 +80,9 @@ ms.locfileid: "35671709"
   
 |到|查看|  
 |--------|---------|  
-|了解有关 SharePoint 外接程序的详细信息，然后生成一个外接程序。|[SharePoint 外接程序](https://msdn.microsoft.com/library/office/fp179930.aspx)|  
-|比较 SharePoint 外接程序和传统的 SharePoint 解决方案。|[SharePoint 外接程序与 SharePoint 解决方案相比较](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
-|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[SharePoint 外接程序和 SharePoint 解决方案之间做出决定](https://msdn.microsoft.com/library/office/jj163114.aspx)|
+|了解有关 SharePoint 外接程序的详细信息，然后生成一个外接程序。|[SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)|  
+|比较 SharePoint 外接程序和传统的 SharePoint 解决方案。|[SharePoint 外接程序与 SharePoint 解决方案相比较](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
+|选择是生成 SharePoint 外接程序还是 SharePoint 解决方案。|[SharePoint 外接程序和 SharePoint 解决方案之间做出决定](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
   
 ##  <a name="Add-ins"></a> 创建一个 VSTO 外接程序  
  创建一个 VSTO 外接程序以面向 Office 2007 或 Office 2010，或者除了可能与 Office 加载项扩展 Office 2013 和 Office 2016。VSTO 外接程序只能在桌面上运行。 用户必须安装 VSTO 外接程序，因此它们通常更加难以进行部署和支持。  但是，VSTO 外接程序可以与 Office 更紧密地集成。 例如，可以向 Office 功能区添加选项卡和控件并执行高级自动化任务，例如合并文档或修改图表。 你可以借助 .NET Framework 并使用 C# 和 Visual Basic 与 Office 对象进行交互。  
@@ -95,8 +95,8 @@ ms.locfileid: "35671709"
   
 |到|读取|  
 |--------|----------|  
-|比较可用于扩展 Office 的不同方式，然后决定应该使用 VSTO 外接程序还是 Office 外接程序。|[Office 外接程序、 VSTO 和 VBA 的路线图](http://blogs.msdn.com/b/officeapps/archive/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba.aspx)|  
-|创建一个 VSTO 外接程序。|[使用 Visual Studio 的 VSTO 外接程序生成](https://msdn.microsoft.com/library/jj620922.aspx)|  
+|比较可用于扩展 Office 的不同方式，然后决定应该使用 VSTO 外接程序还是 Office 外接程序。|[Office 外接程序、 VSTO 和 VBA 的路线图](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|  
+|创建一个 VSTO 外接程序。|[使用 Visual Studio 的 VSTO 外接程序生成](create-vsto-add-ins-for-office-by-using-visual-studio.md)|  
   
 ##  <a name="Solutions"></a> 创建 SharePoint 解决方案  
  创建 SharePoint 解决方案以面向 SharePoint Foundation 2010 和 SharePoint Server 2010，或者可能采用 SharePoint 外接程序的其他方式扩展 SharePoint 2013 和 SharePoint 2016。  
@@ -107,7 +107,7 @@ ms.locfileid: "35671709"
   
 |到|查看|  
 |--------|---------|  
-|比较 SharePoint 解决方案与 SharePoint 外接程序。|[SharePoint 外接程序与 SharePoint 解决方案相比较](http://msdn.microsoft.com/library/office/jj163114.aspx)|  
+|比较 SharePoint 解决方案与 SharePoint 外接程序。|[SharePoint 外接程序与 SharePoint 解决方案相比较](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|  
 |创建 SharePoint 解决方案。|[创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)|  
   
   

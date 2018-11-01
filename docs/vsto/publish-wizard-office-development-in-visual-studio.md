@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 9b7d898f4be4a314a8f046399f9d82ca9a9a84f8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0d1b72745b3bd8a24dc69a5bc4e1508c8b2f7571
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811576"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672743"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>发布向导 （在 Visual Studio 中的 Office 开发）
   使用**发布向导**若要将解决方案文件复制到指定位置，创建清单文件，并创建安装程序。  
@@ -53,7 +53,7 @@ ms.locfileid: "49811576"
 >  如果目标计算机正在运行 Windows Vista，有更多注意事项。 必须是 Windows Vista 计算机上的管理员才能使用本地发布选项。 此外，默认位置始终是*发布\\*目录下，无论是否安装了 IIS。  
   
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>最终用户计算机上的默认安装路径是什么？  
- 安装路径是可选的。 如果您愿意，可以稍后再设置安装路径。 有关详细信息，请参阅[如何： 更改 Office 解决方案的安装路径](http://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
+ 安装路径是可选的。 如果您愿意，可以稍后再设置安装路径。 有关详细信息，请参阅[如何： 更改 Office 解决方案的安装路径](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd)。  
   
  安装路径是最终用户将在其中安装自定义项的目录。 这也是解决方案将用于检查更新的路径。 **发布向导**不会不将解决方案部署到此位置中，除非该路径中输入相同**指定要发布此应用程序的位置**前一页上的框。  
   

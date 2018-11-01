@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: da2ddc582c6555e8ec4567f4faace603f6f0f677
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af82d74c0e0a0446b759a06a9e874a39fc57b6fd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872481"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672518"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
@@ -46,9 +46,9 @@ ms.locfileid: "49872481"
 
 -   对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 您可以下载`AdventureWorksLT`数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?LinkId=115611)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。
+    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。
+    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建 Excel VSTO 外接程序项目。
