@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 0da6dac3ffde6e6394546e78462205eb4fa08c8c
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: 872665a9af220e1b86a3d053254880e3ababa6cd
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34767827"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671399"
 ---
 # <a name="visio-object-model-overview"></a>Visio 对象模型概述
   要为 Microsoft Office Visio 开发 Office 解决方案，则可以与 Visio 对象模型进行交互。 此对象模型包含 Visio 中主互操作程序集所提供的类和接口，并在 `Microsoft.Office.Interop.Visio` 命名空间中定义。  
@@ -37,9 +37,9 @@ ms.locfileid: "34767827"
 -   [使用 Visio 形状](../vsto/working-with-visio-shapes.md)  
   
 ## <a name="understand-the-visio-object-model"></a>了解 Visio 对象模型  
- Visio 提供了许多可与之交互的对象。 这些对象采用严格遵循用户界面的层次结构进行组织。 层次结构的顶部是 [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx) 对象。 此对象表示 Visio 的当前实例。 `Microsoft.Office.Interop.Visio.Application`对象包含`Microsoft.Office.Interop.Visio.Document`和`Microsoft.Office.Interop.Visio.Page`对象以及`Microsoft.Office.Interop.Visio.Documents`和`Microsoft.Office.Interop.Visio.Pages`集合。 每个对象和集合都有许多方法和属性，可进行访问以便操作并与其进行交互。  
+ Visio 提供了许多可与之交互的对象。 这些对象采用严格遵循用户界面的层次结构进行组织。 层次结构的顶部是 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) 对象。 此对象表示 Visio 的当前实例。 `Microsoft.Office.Interop.Visio.Application`对象包含`Microsoft.Office.Interop.Visio.Document`并`Microsoft.Office.Interop.Visio.Page`对象并将`Microsoft.Office.Interop.Visio.Documents`和`Microsoft.Office.Interop.Visio.Pages`集合。 每个对象和集合都有许多方法和属性，可进行访问以便操作并与其进行交互。  
   
- 有关详细信息，请参阅适用于 [Microsoft.Office.Interop.Visio.Application](https://msdn.microsoft.com/library/office/ff766485.aspx)、 [Microsoft.Office.Interop.Visio.Document](https://msdn.microsoft.com/library/office/ff765575.aspx)和 [Microsoft.Office.Interop.Visio.Page](https://msdn.microsoft.com/library/office/ff767035.aspx) 对象，以及 [Microsoft.Office.Interop.Visio.Documents](https://msdn.microsoft.com/library/office/ff768812.aspx) 和 [Microsoft.Office.Interop.Visio.Pages](https://msdn.microsoft.com/library/office/ff766165.aspx) 集合的 VBA 的参考文档。  
+ 有关详细信息，请参阅适用于 [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application)、 [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document)和 [Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) 对象，以及 [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) 和 [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) 集合的 VBA 的参考文档。  
   
  下列各节简要介绍了顶级对象以及它们彼此交互的方式。 这些对象包括以下对象：  
   
@@ -50,14 +50,14 @@ ms.locfileid: "34767827"
 -   Page 对象  
   
 ### <a name="application-object"></a>应用程序对象  
- Microsoft.Office.Interop.Visio.Application 对象表示 Visio 应用程序，并且所有其他对象的父级。 其成员通常作为一个整体应用于 Visio。 你可以使用的属性和方法的 Microsoft.Office.Interop.Visio.Application 和`Microsoft.Office.Interop.Visio.ApplicationSettings`对象以控制 Visio 环境。  
+ Microsoft.Office.Interop.Visio.Application 对象表示 Visio 应用程序，并且所有其他对象的父级。 其成员通常作为一个整体应用于 Visio。 可以使用的属性和方法 Microsoft.Office.Interop.Visio.Application 和`Microsoft.Office.Interop.Visio.ApplicationSettings`对象来控制 Visio 环境。  
   
- 在 VSTO 外接程序项目中，你可以通过访问 Microsoft.Office.Interop.Visio.Application 对象`Application`字段`ThisAddIn`类。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
+ 在 VSTO 外接程序项目中，可以通过访问 Microsoft.Office.Interop.Visio.Application 对象`Application`字段的`ThisAddIn`类。 有关详细信息，请参阅 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
 ### <a name="document-object"></a>文档对象  
- Microsoft.Office.Interop.Visio.Document 对象是 Visio 编程的核心。 它表示绘图、模具或模板文件。 当你打开 Visio 文档或创建新文档时，创建一个新的 Microsoft.Office.Interop.Visio.Document 对象，该添加到 Microsoft.Office.Interop.Visio.Application 对象 Microsoft.Office.Interop.Visio.Documents 集合对象.  
+ Microsoft.Office.Interop.Visio.Document 对象是 Visio 编程的核心。 它表示绘图、模具或模板文件。 当您打开 Visio 文档，或创建新文档时，创建到 Microsoft.Office.Interop.Visio.Documents Microsoft.Office.Interop.Visio.Application 对象的集合添加一个新 Microsoft.Office.Interop.Visio.Document 对象.  
   
- 具有焦点的文档被称为活动文档。 它由`Microsoft.Office.Interop.Visio.Application.ActiveDocument`Microsoft.Office.Interop.Visio.Application 对象属性。  
+ 具有焦点的文档被称为活动文档。 由表示`Microsoft.Office.Interop.Visio.Application.ActiveDocument`Microsoft.Office.Interop.Visio.Application 对象的属性。  
   
 ### <a name="page-object"></a>Page 对象  
  Microsoft.Office.Interop.Visio.Page 对象表示前景页或背景页的绘图区域。 可以使用 `Microsoft.Office.Interop.Visio.Page.Background` 属性来确定某页是前景页还是背景页。  
@@ -67,7 +67,7 @@ ms.locfileid: "34767827"
 ## <a name="use-the-visio-object-model-documentation"></a>使用 Visio 对象模型文档  
  有关 Visio 对象模型的完整信息，可以参考 Visio VBA 对象模型引用。 VBA 对象模型引用在 Visio 对象模型被公开到 Visual Basic for Applications (VBA) 代码时记录该对象模型。 有关详细信息，请参阅[Visio 2010 对象模型引用](http://go.microsoft.com/fwlink/?LinkId=199775)。  
   
- VBA 对象模型引用中的所有对象和成员都对应于 Visio 主互操作程序集 (PIA) 中的类型和成员。 例如， `Document` VBA 对象模型引用中的对象都对应于 Visio PIA 中的 Microsoft.Office.Interop.Visio.Document 类型。 虽然 VBA 对象模型引用提供大多数属性、方法和事件的代码示例，但如果想要将其用于使用 Visual Studio 创建的 Visio VSTO 外接程序项目，则必须将本引用中的 VBA 代码转换成 Visual Basic 或 Visual C#。  
+ VBA 对象模型引用中的所有对象和成员都对应于 Visio 主互操作程序集 (PIA) 中的类型和成员。 例如， `Document` VBA 对象模型引用中的对象对应于 Visio PIA 中的 Microsoft.Office.Interop.Visio.Document 类型。 虽然 VBA 对象模型引用提供大多数属性、方法和事件的代码示例，但如果想要将其用于使用 Visual Studio 创建的 Visio VSTO 外接程序项目，则必须将本引用中的 VBA 代码转换成 Visual Basic 或 Visual C#。  
   
 > [!NOTE]  
 >  此时，没有任何 Visio 主互操作程序集的参考文档。  
@@ -77,7 +77,7 @@ ms.locfileid: "34767827"
 ### <a name="additional-types-in-primary-interop-assemblies"></a>主互操作程序集中的其他类型  
  可以在主互操作程序集中找到因为实现不同而对 VBA 不可见的类型。 VBA 提供 Visio 对象模型的视图，该视图仅包括可以直接使用的对象和成员。 主互操作程序集公开相同的对象模型，但它们还包括将 COM 对象模型中的对象转换为托管代码的其他接口、类和的成员。 这些附加项不应直接在代码中使用。  
   
- 有关详细信息，请参阅[概述类和接口的 Office 主互操作程序集](http://go.microsoft.com/fwlink/?LinkId=189592)和[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
+ 有关详细信息，请参阅[概述中 Office 主互操作程序集类和接口](http://go.microsoft.com/fwlink/?LinkId=189592)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Visio 解决方案](../vsto/visio-solutions.md)   

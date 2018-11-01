@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf00afb612e12ce6712206808897a3b851d68b3a
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 3f821b9769b9353fbee6379ddc1b3826f87ac2de
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671088"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>在 Office 中的 COM、 VSTO 和 VBA 外接程序的开发最佳实践
   如果你 office 开发 COM、 VSTO 或 VBA 的加载项，请按照本文中所述的开发最佳做法。   这将有助于确保：
@@ -39,12 +39,12 @@ ms.locfileid: "35670292"
 如果您的解决方案使用.NET 的早期版本，我们建议你更新你的解决方案使用.NET 4.0 或更高版本。 使用.NET 4.0 或更高版本可减少在较新版本的 Windows 运行时必备组件。
   
 ## <a name="avoid-depending-on-specific-office-versions"></a>避免具体取决于特定的 Office 版本  
-如果您的解决方案使用选项仅适用于较新版本的 Office 的功能，验证在运行时 （例如，使用异常处理或通过检查版本） 的功能存在 （如果可能，请在功能级别）。 验证最小版本中，而不是特定版本中，使用支持的 Api 中的对象模型，如[Application.Version 属性](https://msdn.microsoft.com/library/office/microsoft.office.interop.excel._application.version.aspx)。 我们不建议您依赖于 Office 二进制元数据、 安装路径或注册表项的，因为它们可以安装、 环境和版本之间进行更改。
+如果您的解决方案使用选项仅适用于较新版本的 Office 的功能，验证在运行时 （例如，使用异常处理或通过检查版本） 的功能存在 （如果可能，请在功能级别）。 验证最小版本中，而不是特定版本中，使用支持的 Api 中的对象模型，如[Application.Version 属性](<xref:Microsoft.Office.Interop.Excel._Application.Version%2A>)。 我们不建议您依赖于 Office 二进制元数据、 安装路径或注册表项的，因为它们可以安装、 环境和版本之间进行更改。
 
 ## <a name="enable-both-32-bit-and-64-bit-office-usage"></a>启用 32 位和 64 位 Office 使用情况   
 在默认的 build 目标应支持 (x86) 32 位和 64 位 (x64)，除非你的解决方案依赖于它们仅适用于特定位数的库。 在采用，尤其是在大数据环境增加 Office 的 64 位版本。 支持 32 位和 64 位简化你的用户的 Office 的 32 位和 64 位版本之间的转换。
 
-编写 VBA 代码时，使用 64 位安全声明语句，并将转换为相应的变量。 此外，请确保可以通过提供有关每个位数的代码运行 32 位或 64 位版本的 Office 的用户之间共享文档。 有关详细信息，请参阅[64 位 Visual Basic 应用程序概述](https://msdn.microsoft.com/library/office/gg264421.aspx)。
+编写 VBA 代码时，使用 64 位安全声明语句，并将转换为相应的变量。 此外，请确保可以通过提供有关每个位数的代码运行 32 位或 64 位版本的 Office 的用户之间共享文档。 有关详细信息，请参阅[64 位 Visual Basic 应用程序概述](/office/vba/Language/Concepts/Getting-Started/64-bit-visual-basic-for-applications-overview)。
 
 ## <a name="support-restricted-environments"></a>支持受限制的环境   
 你的解决方案应该不需要用户帐户提升或管理员权限。 此外，该解决方案不应依赖于设置或更改：

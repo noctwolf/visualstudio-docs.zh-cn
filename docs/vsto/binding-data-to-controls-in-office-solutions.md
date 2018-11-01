@@ -22,11 +22,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: f329680d4e469d5009c8659e7a2047c87f906105
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670562"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744858"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>将数据绑定到 Office 解决方案中的控件
   可以将 Microsoft Office Word 文档或 Microsoft Office Excel 工作表中的 Windows 窗体控件和 *宿主控件* 绑定到某个数据源，以便这些控件自动显示数据。 可以将数据绑定到应用程序级项目和文档级项目中的控件。  
@@ -42,7 +42,7 @@ ms.locfileid: "35670562"
 ## <a name="simple-data-binding"></a>简单数据绑定  
  当控件属性绑定到单个数据元素（例如数据表中的值）时，即存在简单数据绑定。 例如， <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件中便有一个可以绑定到数据集中一个字段的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性。 当数据集中的字段发生更改时，命名范围中的值也会发生更改。 除 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控件外，所有宿主控件都支持简单数据绑定。 <xref:Microsoft.Office.Tools.Word.XMLNodes> 控件是一个集合，因此不支持数据绑定。  
   
- 若要执行简单数据绑定到宿主控件，添加<xref:System.Windows.Forms.Binding>到`DataBindings`控件的属性。 <xref:System.Windows.Forms.Binding> 对象表示控件属性值和数据元素值之间的简单绑定。  
+ 若要执行到宿主控件的简单数据绑定，请将 <xref:System.Windows.Forms.Binding> 添加到此控件的 `DataBindings` 属性。 <xref:System.Windows.Forms.Binding> 对象表示控件属性值和数据元素值之间的简单绑定。  
   
  下面的示例演示如何在文档级项目中将 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性绑定到数据元素。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "35670562"
 ## <a name="complex-data-binding"></a>复杂数据绑定  
  当控件属性绑定到多个数据元素（例如数据表中的多个列）时，即存在复杂数据绑定。 Excel 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件是唯一支持复杂数据绑定的宿主控件。 此外，还有很多支持复杂数据绑定的 Windows 窗体控件，例如 <xref:System.Windows.Forms.DataGridView> 控件。  
   
- 若要执行复杂数据绑定，设置`DataSource`到数据源对象支持的复杂数据绑定控件的属性。 例如， <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 控件的 <xref:Microsoft.Office.Tools.Excel.ListObject> 属性可以绑定到一个数据表中的多个列。 数据表中的所有数据都在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中显示，而当数据表中的数据发生更改时， <xref:Microsoft.Office.Tools.Excel.ListObject> 也会发生更改。 有关可用于复杂数据绑定的数据源的列表，请参阅[支持的 Windows 窗体数据源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
+ 若要执行复杂数据绑定，请将控件的 `DataSource` 属性设置为复杂数据绑定支持的数据源对象。 例如，<xref:Microsoft.Office.Tools.Excel.ListObject> 控件的 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 属性可以绑定到一个数据表中的多个列。 数据表中的所有数据都在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件中显示，而当数据表中的数据发生更改时， <xref:Microsoft.Office.Tools.Excel.ListObject> 也会发生更改。 有关可用于复杂数据绑定的数据源的列表，请参阅[支持的 Windows 窗体数据源](/dotnet/framework/winforms/data-sources-supported-by-windows-forms)。  
   
  下面的代码示例创建具有两个 <xref:System.Data.DataSet> 对象的 <xref:System.Data.DataTable> ，并使用数据填充其中一个表。 代码随后将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到包含数据的表。 此示例适用于 Excel 文档级项目。  
   

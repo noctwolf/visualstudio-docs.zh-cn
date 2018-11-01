@@ -16,23 +16,23 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 4caf48d0268e653b7ce6f7a5c8e7efb1e2ec39e6
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: 6beed729ed670d5f34c645575795b625e03e9583
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257500"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671217"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>如何： 以编程方式打印 Visio 文档
   你可以打印完整的 Microsoft Office Visio 文档或仅打印某一特定页。  
   
- 有关打印方法的详细信息，请参阅 [Microsoft.Office.Interop.Visio.Document.Print](https://msdn.microsoft.com/library/office/ff767996.aspx) 方法和 [Microsoft.Office.Interop.Visio.Page.Print](https://msdn.microsoft.com/library/office/ff765064.aspx) 方法的 VBA 参考文档。  
+ 有关打印方法的详细信息，请参阅 [Microsoft.Office.Interop.Visio.Document.Print](/office/vba/api/Visio.Document.Print) 方法和 [Microsoft.Office.Interop.Visio.Page.Print](/office/vba/api/Visio.Page.Print) 方法的 VBA 参考文档。  
   
 ## <a name="print-a-visio-document"></a>打印 Visio 文档  
   
 ### <a name="to-print-a-complete-document"></a>打印完整的文档  
   
--   调用`Microsoft.Office.Interop.Visio.Document.Print`方法的`Microsoft.Office.Interop.Visio.Document`您想要打印的对象。  
+-   调用要打印的 `Microsoft.Office.Interop.Visio.Document` 对象的 `Microsoft.Office.Interop.Visio.Document.Print` 方法。  
   
      下面的代码示例将打印活动文档。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "35257500"
   
 ### <a name="to-print-a-page-of-a-document"></a>打印文档的某一页  
   
--   调用`Microsoft.Office.Interop.Visio.Pages.Print`方法的`Microsoft.Office.Interop.Visio.Pages`您想要打印的对象。  
+-   调用要打印的 `Microsoft.Office.Interop.Visio.Pages` 对象的 `Microsoft.Office.Interop.Visio.Pages.Print` 方法。  
   
      下面的代码示例打印活动文档的第一页。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。  
   

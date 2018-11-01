@@ -20,12 +20,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 80a95bdce139ccaf1e18af8dd36aecc63f913c08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 23d0aa3b065a05b1c85b54e7889c4fe1bac4af7a
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49846429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671516"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
@@ -58,5 +58,5 @@ Visual Studio 生成的文档级项目时，将两个自定义属性添加到项
 - [Visual Studio 中的 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [在 Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
-- [如何： 使用 ClickOnce 发布 Office 解决方案](http://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [如何： 使用 ClickOnce 发布 Office 解决方案](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
 - [如何： 创建和修改自定义文档属性](../vsto/how-to-create-and-modify-custom-document-properties.md)

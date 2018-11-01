@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a89f77dc7a4adc7f1aafa1a59b425eefc5b4074e
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: ab047953c1a19d444b4315b7dc605a1a990667df
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670866"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。  
@@ -108,10 +108,10 @@ ms.locfileid: "35671728"
  [MSDN 库的 Microsoft Office 开发部分](http://go.microsoft.com/fwlink/?LinkId=149870)  
  可以在其中查找文章，并可参考有关开发解决方案的多个版本的 Office （不特定于使用 Visual Studio 的 Office 开发） 的文档上的 MSDN library 的区域。  
   
- [Visual Studio 中的应用程序开发](http://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
+ [Visual Studio 中的应用程序开发](https://msdn.microsoft.com/97490c1b-a247-41fb-8f2c-bc4c201eff68)  
  包含指向这些主题介绍如何使用 Visual Studio 设计、 开发、 调试和部署 web 应用程序、 XML web 服务和传统客户端应用程序。  
   
- [在 Visual Studio 中的.NET framework 编程](http://msdn.microsoft.com/f3f63195-82c6-48e8-a4a0-612810e7d093)  
+ [在 Visual Studio 中的.NET framework 编程](/previous-versions/visualstudio/visual-studio-2010/k1s94fta(v=vs.100))  
  讨论在 Visual Basic 和 Visual C# 中使用 .NET Framework 的应用程序开发。  
   
   

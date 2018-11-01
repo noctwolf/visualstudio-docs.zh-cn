@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 145bc3c4301b337a0f882b3893910ad5bb2fc2ac
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ebf335291246ac8c3c15d8f04fb064a3bfaa8ef7
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857843"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670892"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools for Office runtime 安装方案
   以下三种方式，可以安装 Visual Studio 2010 Tools for Office 运行时：  
@@ -60,14 +60,14 @@ ms.locfileid: "49857843"
   
  [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 的 Office 扩展随 Office 一起安装。 最终用户可以通过安装 Windows 更新来获得 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的 Office 扩展。  
   
- 若要确保你的用户具有必要的扩展以使用你的应用程序，包括最新版本的 Visual Studio 2010 Tools for Office 运行时可再发行组件为你的解决方案的必备组件。 有关先决条件的详细信息，请参阅[用于部署 Office 解决方案必备组件](http://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
+ 若要确保你的用户具有必要的扩展以使用你的应用程序，包括最新版本的 Visual Studio 2010 Tools for Office 运行时可再发行组件为你的解决方案的必备组件。 有关先决条件的详细信息，请参阅[用于部署 Office 解决方案必备组件](https://msdn.microsoft.com/9f672809-43a3-40a1-9057-397ce3b5126e)。  
   
 ### <a name="install-the-runtime-by-using-the-runtime-redistributable"></a>使用运行时可再发行组件安装在运行时  
  通过手动运行 Visual Studio 2010 Tools for Office runtime 可再发行组件或包括可再发行的必备组件，在部署 Office 解决方案时，可以安装在运行时。  
   
  当使用 Visual Studio 2010 Tools for Office runtime 可再发行组件、.NET Framework 3.5 的 Office 扩展和的 Office 扩展安装运行时[!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]或更高版本时将安装相应版本的.NET框架已在计算机上存在。 如果在运行时已安装的情况下计算机缺少 .NET Framework 的这些版本之一，则此时将不安装缺少的 .NET framework 版本的 Office 扩展。 如果你于稍后安装 .NET Framework 所缺少的版本，则下一次解决方案需要已安装（如果运行时与使用 ClickOnce 部署的解决方案一起安装）或已加载（如果运行时与使用 Windows Installer 部署的解决方案一起安装）扩展时，运行时将自动安装相应的 Office 扩展。  
   
- 有关 ClickOnce 解决方案中将必备组件的详细信息，请参阅[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](http://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 有关如何手动安装可再发行组件包中的运行时的详细信息，请参阅[如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
+ 有关 ClickOnce 解决方案中将必备组件的详细信息，请参阅[如何： 以运行 Office 解决方案的最终用户计算机上安装的必备组件](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98)。 有关如何手动安装可再发行组件包中的运行时的详细信息，请参阅[如何： 安装 Visual Studio Tools for Office runtime 可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)   

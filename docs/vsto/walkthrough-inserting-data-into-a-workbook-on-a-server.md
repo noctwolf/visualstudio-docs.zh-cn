@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 325883bed0b917aa24d7c4b02239472b95d3e513
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dc27a04e39ad93d9898364df308f6e7b042cd11b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892652"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672322"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练： 将数据插入到的服务器上的工作簿
   本演练演示如何将数据插入到一个数据集，而不启动 Excel，通过使用 Microsoft Office Excel 工作簿中缓存<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>类。
@@ -57,9 +57,9 @@ ms.locfileid: "49892652"
 
 -   对 Microsoft SQL Server 或 Microsoft SQL Server Express 的 AdventureWorksLT 示例数据库附加到它的运行中实例的访问权限。 您可以下载 AdventureWorksLT 数据库从[CodePlex 网站](http://go.microsoft.com/fwlink/?linkid=87843)。 有关附加数据库的详细信息，请参阅下列主题：
 
-    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](http://msdn.microsoft.com/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。
+    -   若要通过使用 SQL Server Management Studio 或 SQL Server Management Studio Express 来附加数据库，请参阅[如何： 附加数据库 (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database)。
 
-    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](http://msdn.microsoft.com/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。
+    -   若要使用命令行中附加数据库，请参阅[如何： 将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>创建一个类库项目定义数据集
  若要使用的 Excel 工作簿项目和控制台应用程序中的相同数据集，必须在单独的程序集引用的这两个这些项目中定义数据集。 在本演练中，在一个类库项目中定义数据集。

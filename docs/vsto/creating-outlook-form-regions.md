@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a5be9417ab3140ce652535b8c0c6a5979d50ffb6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: HT
+ms.openlocfilehash: d5d4aed381841d5f88209aefdcff641a2a821f01
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866423"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673076"
 ---
 # <a name="create-outlook-form-regions"></a>创建 Outlook 窗体区域
   窗体区域可用于自定义 Microsoft Office Outlook 窗体。 Visual Studio 提供了高级工具，可使你更轻松地设计、开发和调试窗体区域。  
@@ -60,7 +60,7 @@ ms.locfileid: "49866423"
   
 - 在阅读窗格和检查器中显示自定义 UI。  
   
-  有关详细信息，请参阅[自定义窗体页和窗体区域](http://msdn.microsoft.com/library/office/ff869060.aspx)。  
+  有关详细信息，请参阅[自定义窗体页和窗体区域](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)。  
   
 ##  <a name="Adding"></a> 将 Outlook 窗体区域添加到你的项目  
  可以使用**新建 Outlook 窗体区域**向导来设计新的窗体区域或导入在 Outlook 中设计的窗体区域。 此外，如果有在其他 Outlook VSTO 外接程序项目中使用的窗体区域，则可以重新使用现有的窗体区域。  

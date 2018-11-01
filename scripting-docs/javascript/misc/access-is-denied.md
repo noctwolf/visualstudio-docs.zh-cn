@@ -29,11 +29,11 @@ ms.locfileid: "24632727"
 # <a name="access-is-denied"></a>拒绝访问
 脚本尝试从当前页的主机以外的源访问数据。 后跟 Internet Explorer 及其他浏览器的同一初始策略允许脚本只从具备当前页 URL 的同一方案、主机和端口的源访问数据。  
   
- 例如，如果当前页是 https://employees.mycompany.com，则不能从以下 URL 访问数据：  
+ 例如，如果当前页是 https://employees.mycompany.com ，则不能从以下 URL 访问数据：  
   
--   http://data.contoso.com ，因为它使用 HTTP 而不 HTTPS。  
+-   [http://data.contoso.com](http://data.contoso.com) ，因为它使用 HTTP 而不 HTTPS。  
   
--   https://somedatasource.com ，因为它是不同的域。  
+-   [https://somedatasource.com](https://somedatasource.com) ，因为它是不同的域。  
   
 -   https://employees.mycompany.com:8888 ，因为它使用不同的端口。  
   

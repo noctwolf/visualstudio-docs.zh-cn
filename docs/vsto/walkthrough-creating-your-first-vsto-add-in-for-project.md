@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: a1c6e96815c69ad6a05b3c8bc55e22f13c212e24
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7fb6ece309fb0c5e7c67abf039d2b27a9f04236d
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884857"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671412"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>演练： 创建在第一个 VSTO 外接程序项目
   本演练演示如何为 Microsoft Office Project 创建 VSTO 外接程序中。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的项目无关。 有关详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -103,7 +103,7 @@ ms.locfileid: "49884857"
   
 1.  按 **F5** 生成并运行项目。 Microsoft Project 启动并自动打开新的空白项目。  
   
-     生成项目时，代码会编译成一个程序集，此程序集包含在项目的生成输出文件夹中。 Visual Studio 还会创建一组注册表项，通过这些注册表项，Project 能够发现和加载 VSTO 外接程序，Visual Studio 还将开发计算机上的安全设置配置为允许 VSTO 外接程序运行。 有关详细信息，请参阅[Office 解决方案生成过程概述](http://msdn.microsoft.com/a9d12e4f-c9ea-4a62-a841-c42b91f831ee)。  
+     生成项目时，代码会编译成一个程序集，此程序集包含在项目的生成输出文件夹中。 Visual Studio 还会创建一组注册表项，通过这些注册表项，Project 能够发现和加载 VSTO 外接程序，Visual Studio 还将开发计算机上的安全设置配置为允许 VSTO 外接程序运行。 有关详细信息，请参阅[Office 解决方案生成过程概述](/previous-versions/visualstudio/visual-studio-2010/h2c9cdc0(v=vs.100))。  
   
 2.  验证新任务已添加到空白项目。  
   

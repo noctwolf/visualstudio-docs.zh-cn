@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 06d91a2a9e7dc206e2303637bce013b473cf6560
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6930ce085405c010e59e13adb8a3d380cff28d0e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49839032"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672764"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何： 在 Visual Studio 中创建 Office 项目
   可以使用[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]创建 VSTO 外接程序和文档级自定义 Microsoft Office 应用程序。 有关这些类型的项目的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -87,7 +87,7 @@ ms.locfileid: "49839032"
 7. 选择“确定”  按钮。
   
     > [!NOTE]  
-    >  创建外接程序项目时，要始终对其进行保存。 不能将其创建为临时项目。 有关临时项目的详细信息，请参阅[临时项目](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
+    >  创建外接程序项目时，要始终对其进行保存。 不能将其创建为临时项目。 有关临时项目的详细信息，请参阅[临时项目](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b)。  
   
 ### <a name="to-create-a-document-level-customization-project"></a>若要创建文档级自定义项目  
   

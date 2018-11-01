@@ -21,12 +21,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 078bbbf448b1a940461f2859601944627b7c2394
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: 4ae2882cbf38349eac57f1dfb731cc7d717769a4
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670286"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670853"
 ---
 # <a name="infopath-solutions"></a>InfoPath 解决方案
   Visual Studio 提供了一些项目模板，你可以使用这些模板来创建用于 Microsoft Office InfoPath 2013 和 InfoPath 2010 的 VSTO 外接程序。 InfoPath 在 Office 2016 中不可用。  
@@ -47,7 +47,7 @@ ms.locfileid: "35670286"
 ## <a name="automate-infopath-by-using-an-add-in"></a>通过使用外接程序自动化 InfoPath  
  若要从使用 Visual Studio 中的 Office 开发工具创建的 Office VSTO 外接程序访问 InfoPath 对象模型，请在项目中使用 `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回 <xref:Microsoft.Office.Interop.InfoPath.Application> 对象，该对象表示 InfoPath 的当前实例。 有关详细信息，请参阅[程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。  
   
- 当调入 InfoPath 对象模型从 VSTO 外接程序中时，将使用 InfoPath 的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和 InfoPath 中的 COM 对象模型之间的桥梁。 InfoPath 主互操作程序集中的所有类型都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空间中定义的。 有关 InfoPath 主互操作程序集的详细信息，请参阅[有关 Microsoft Office InfoPath 主互操作程序集](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)。 有关主互操作程序集的详细信息的一般情况下，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
+ 当调入 InfoPath 对象模型从 VSTO 外接程序中时，将使用 InfoPath 的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和 InfoPath 中的 COM 对象模型之间的桥梁。 InfoPath 主互操作程序集中的所有类型都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空间中定义的。 有关 InfoPath 主互操作程序集的详细信息，请参阅[有关 Microsoft Office InfoPath 主互操作程序集](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)。 有关主互操作程序集的详细信息的一般情况下，请参阅[Office 解决方案开发概述&#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md)并[Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。  
   
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>外接程序中使用自定义 InfoPath 用户界面  
  为 InfoPath 创建 VSTO 外接程序中，必须多个不同的 UI 自定义选项。 下表列出了其中一些选项。  
@@ -60,10 +60,10 @@ ms.locfileid: "35670286"
  有关自定义 InfoPath 用户界面和其他 Microsoft Office 应用程序的详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [有关 Microsoft Office InfoPath 主互操作程序集](http://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
+ [有关 Microsoft Office InfoPath 主互操作程序集](https://msdn.microsoft.com/1b3ae03c-6951-49e4-a489-4712d3f7ba72)   
  [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)   
  [Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
  [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)   

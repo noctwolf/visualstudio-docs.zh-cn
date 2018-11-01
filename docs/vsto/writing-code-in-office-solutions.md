@@ -36,12 +36,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: c3466a5a448baf378cf18a00c0e987f3cbcc0cb5
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: e9773c06293f189e572ef84e9b10f45a1ca5d5d8
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35670438"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670983"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 解决方案中编写代码
   编写 Office 项目代码与编写 Visual Studio 中其他类型的代码在某些方面存在不同。 其中许多差异与 Office 对象模型公开给托管代码的方式相关。 其他差异与 Office 项目的设计相关。  
@@ -62,7 +62,7 @@ ms.locfileid: "35670438"
  若要运行面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 解决方案，无需在最终用户计算机上安装 Office PIA。 有关详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。  
   
 ### <a name="use-types-in-primary-interop-assemblies"></a>在主互操作程序集中使用类型  
- Office PIA 包含类型组合，该类型组合公开 Office 应用程序和不应直接在代码中使用的其他基础结构类型的对象模型。 有关 Office Pia 中的类型的概述，请参阅[概述中 Office 主互操作程序集类和接口](http://msdn.microsoft.com/da92dc3c-8209-44de-8095-a843659368d5)。  
+ Office PIA 包含类型组合，该类型组合公开 Office 应用程序和不应直接在代码中使用的其他基础结构类型的对象模型。 有关 Office Pia 中的类型的概述，请参阅[概述中 Office 主互操作程序集类和接口](/previous-versions/office/office-12/ms247299\(v\=office.12\))。  
   
  由于 Office PIA 中的类型对应于基于 COM 的对象模型中的类型，因此使用这些类型的方式通常不同于其他托管类型。 例如，调用在 Office 主互操作程序集中具有可选参数的方法的方式取决于你正在项目中使用的编程语言。 有关详细信息，请参阅下列主题：  
   

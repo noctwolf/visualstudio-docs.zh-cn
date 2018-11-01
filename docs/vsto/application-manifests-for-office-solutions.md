@@ -16,11 +16,11 @@ manager: douge
 ms.workload:
 - office
 ms.openlocfilehash: df388fb346c43f173ec1f96e3869088d7ce5b9dc
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35671544"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50744933"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Office 解决方案的应用程序清单
   应用程序清单是一个 XML 文件，描述加载到 Microsoft Office 解决方案中的程序集。 在 Visual Studio 中的 Microsoft Office 开发工具使用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]中定义的应用程序清单架构[ClickOnce 应用程序清单](/visualstudio/deployment/clickonce-application-manifest)引用。  
@@ -30,7 +30,7 @@ ms.locfileid: "35671544"
 |元素|描述|特性|  
 |-------------|-----------------|----------------|  
 |[&#60;程序集&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/assembly-element-clickonce-deployment)|必须的。 顶级元素。|**manifestVersion**|  
-|[&#60;assemblyIdentity&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|必须的。 标识 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序的主程序集。|**name**<br /><br /> **version**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> language|  
+|[&#60;assemblyIdentity&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/assemblyidentity-element-clickonce-deployment)|必须的。 标识 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序的主程序集。|**name**<br /><br /> **版本**<br /><br /> **publicKeyToken**<br /><br /> **ProcessorArchitecture**<br /><br /> language|  
 |[&#60;trustInfo&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/trustinfo-element-clickonce-application)|标识应用程序安全性要求。|无|  
 |[&#60;entryPoint&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/entrypoint-element-clickonce-application)|必须的。 标识用于执行的应用程序代码入口点。|**name**<br /><br /> **dependencyName**<br /><br /> **p o i**|  
 |[&#60;依赖关系&#62;元素&#40;ClickOnce 应用程序&#41;](/visualstudio/deployment/dependency-element-clickonce-deployment)|必须的。 标识应用程序运行所需的每个依赖项。 （可选）标识需要进行预安装的程序集。|无|  
@@ -90,13 +90,13 @@ ms.locfileid: "35671544"
 |[&#60;说明&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/description-element-office-development-in-visual-studio.md)|仅针对 VSTO 外接程序为必需。存储在已安装的程序的列表中出现的描述。|无|  
 |[&#60;formRegions&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|仅为包含窗体区域的 Outlook VSTO 外接程序所需。|无|  
 |[&#60;formRegion&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|仅为包含窗体区域的 Outlook VSTO 外接程序所需。|**名称**|  
-|[&#60;vstoRuntime&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|必须的。 介绍 Office 解决方案支持的特定版本的 Visual Studio Tools for Office Runtime。|**release**<br /><br /> **version**<br /><br /> **supportUrl**|  
+|[&#60;vstoRuntime&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/vstoruntime-element-office-development-in-visual-studio.md)|必须的。 介绍 Office 解决方案支持的特定版本的 Visual Studio Tools for Office Runtime。|**release**<br /><br /> **版本**<br /><br /> **supportUrl**|  
   
 ## <a name="remarks"></a>备注  
  可以在 Office 解决方案中手动编辑应用程序和部署清单。 此后，必须重新签名应用程序和部署清单通过使用清单生成和编辑工具 (*mage.exe*并*mageui.exe*)。 有关详细信息，请参阅[如何： 对应用程序和部署清单重新签名](/visualstudio/deployment/how-to-re-sign-application-and-deployment-manifests)。  
   
 ## <a name="file-location"></a>文件位置  
- 应用程序清单特定于单一版本的解决方案。 为此，应用程序清单应与部署清单分开存储。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将特定于版本的文件放置在中的关联版本命名的子目录*应用程序文件*publish 文件夹中的子目录。  
+ 应用程序清单特定于单一版本的解决方案。 为此，应用程序清单应与部署清单分开存储。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将特定于版本的文件放置在一个子目录中，该子目录以发布文件夹中 *应用程序文件* 子目录中的关联版本命名。  
   
 ## <a name="file-name-syntax"></a>文件名语法  
  应用程序清单文件的名称应为完整名称和扩展应用程序中确定**assemblyIdentity**元素，该扩展后跟 *.manifest*。 例如，是指应用程序清单*OutlookAddIn1.dll*自定义将使用以下文件名语法。  
