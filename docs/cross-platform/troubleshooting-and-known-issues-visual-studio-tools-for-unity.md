@@ -90,7 +90,7 @@ Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下�
 
 ## <a name="breakpoints-not-hit"></a>未命中断点
 
-检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（*.csproj、*.sln）和整个库文件夹。
+检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（\*.csproj、\*.sln）和整个库文件夹。
 
 ## <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 
