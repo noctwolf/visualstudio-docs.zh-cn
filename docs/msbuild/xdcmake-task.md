@@ -31,7 +31,7 @@ ms.locfileid: "39231174"
 # <a name="xdcmake-task"></a>XDCMake 任务
 包装 XML 文档工具 (xdcmake.exe)，它将 XML 文档注释 (.xdc) 文件合并到一个 .xml 文件中。  
   
- 如果在 Visual C++ 源代码中提供文档注释，并使用“/doc”[](/cpp/build/reference/doc-process-documentation-comments-c-cpp)编译器选项进行编译，就会创建“.xdc”文件。 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助选项 (/?)。  
+ 如果在 Visual C++ 源代码中提供文档注释，并使用 [/doc](/cpp/build/reference/doc-process-documentation-comments-c-cpp)编译器选项进行编译，就会创建“.xdc”文件。 有关详细信息，请参阅 [XDCMake 参考](/cpp/ide/xdcmake-reference)、[XML 文档生成器工具属性页](/cpp/ide/xml-document-generator-tool-property-pages)和 xdcmake.exe 的命令行帮助选项 (/?)。  
   
 ## <a name="remarks"></a>备注  
  默认情况下，xdcmake.exe 工具支持几个命令行选项。 如果你指定 **/old** 命令行选项，此工具还支持其他选项。  

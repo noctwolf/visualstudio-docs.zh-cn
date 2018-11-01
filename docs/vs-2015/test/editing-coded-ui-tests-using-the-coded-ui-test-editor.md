@@ -17,12 +17,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: aa426175155f45feb480b8185b5902049101f577
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1bf24c24a60a37fd8fc5859d216c34eaa2e9b4f8
+ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242718"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49951244"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ ms.locfileid: "49242718"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 'http://Contoso1/default.aspx'”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 '<http://Contoso1/default.aspx’>'”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  
@@ -125,19 +125,19 @@ ms.locfileid: "49242718"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
--   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 拆分方法时，如果仍希望包括这些 UI 操作，必须将调用现有方法的任意代码修改为还可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。  
+- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 拆分方法时，如果仍希望包括这些 UI 操作，必须将调用现有方法的任意代码修改为还可以调用要创建的新方法。 拆分方法时，将显示一个 Microsoft Visual Studio 对话框。 它会警告你必须修改可调用现有方法的任何代码，使其还可以调用要创建的新方法。 选择 **“是”**。  
   
- **提示**  
+  **提示**  
   
--   ![提示](../test/media/tip.png "Tip") 若要撤消拆分，请选择“编辑”菜单中的“撤消”，或按 Ctrl+Z。  
+- ![提示](../test/media/tip.png "Tip") 若要撤消拆分，请选择“编辑”菜单中的“撤消”，或按 Ctrl+Z。  
   
--   ![提示](../test/media/tip.png "Tip") 可以重命名新方法。 在 UI 操作窗格中选择它，然后选择编码的 UI 测试编辑器工具栏中的“重命名”  按钮。  
+- ![提示](../test/media/tip.png "Tip") 可以重命名新方法。 在 UI 操作窗格中选择它，然后选择编码的 UI 测试编辑器工具栏中的“重命名”  按钮。  
   
-     或  
+   或  
   
-     打开新测试方法的快捷菜单，并选择“重命名” 。  
+   打开新测试方法的快捷菜单，并选择“重命名” 。  
   
-     将显示一个 Microsoft Visual Studio 对话框。 它会警告你，必须修改引用该方法的任何代码。 选择 **“是”**。  
+   将显示一个 Microsoft Visual Studio 对话框。 它会警告你，必须修改引用该方法的任何代码。 选择 **“是”**。  
   
 ##  <a name="CodedUITestEditor_MoveMethods"></a> 将测试方法移动到 UIMap 文件以便于自定义  
  如果确定编码的 UI 测试中的其中一种测试方法需要自定义代码，则必须将其移动到 UIMap.cs 或 UIMap.vb 文件。 否则，只要编码的 UI 测试被重新编译，你的代码就会被重写。 如果不移动方法，则每次重新编译测试时都会重写你的自定义代码。  
@@ -149,11 +149,11 @@ ms.locfileid: "49242718"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
--   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 一旦移动了方法，便无法再使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
+- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 一旦移动了方法，便无法再使用编码的 UI 测试编辑器对其进行编辑。 你必须使用代码编辑器添加并维护你的自定义代码。 移动方法时，将显示一个 Microsoft Visual Studio 对话框。 该对话框将警告你，该方法将从 UIMap.uitest 文件移动到 UIMap.cs 或 UIMap.vb 文件，并且你将不能再使用编码的 UI 测试编辑器来编辑该方法。 选择 **“是”**。  
   
- **提示**  
+  **提示**  
   
--   ![提示](../test/media/tip.png "Tip") 若要撤消移动，请选择“编辑”菜单中的“撤消”，或按 Ctrl+Z。 但是，随后必须手动从 UIMap.cs 或 UIMap.vb 文件删除该代码。  
+- ![提示](../test/media/tip.png "Tip") 若要撤消移动，请选择“编辑”菜单中的“撤消”，或按 Ctrl+Z。 但是，随后必须手动从 UIMap.cs 或 UIMap.vb 文件删除该代码。  
   
 ##  <a name="CodedUITestEditor_LocateUIControl"></a> 在受测应用程序中查找 UI 控件  
  有时，可能很难直观显示控件在受测应用程序 UI 中的位置。 编码的 UI 测试编辑器的功能之一是，你可以选择 UI 控件图中列出的控件和查看其在受测应用程序中的位置。 受测应用程序中的“查找 UI 控件”  功能还可以用于验证你对控件所做的搜索属性修改。  
@@ -167,11 +167,11 @@ ms.locfileid: "49242718"
  *我应该知道哪些其他内容？*  
  **重要事项**  
   
--   ![“警告”图标](../test/media/caution.gif "caution") **警告：** 查找 UI 控件之前，请务必确认与测试相关联的应用是否正在运行。  
+- ![“警告”图标](../test/media/caution.gif "caution") **警告：** 查找 UI 控件之前，请务必确认与测试相关联的应用是否正在运行。  
   
- **提示**  
+  **提示**  
   
--   ![提示](../test/media/tip.png "Tip") 也可以使用“查找全部”选项来确认能否正确找到容器下的所有控件。 下一部分中对此选项进行了介绍。  
+- ![提示](../test/media/tip.png "Tip") 也可以使用“查找全部”选项来确认能否正确找到容器下的所有控件。 下一部分中对此选项进行了介绍。  
   
 ##  <a name="CodedUITestEditor_LocateDecendants"></a> 查找控件及其后代  
  你可以验证是否可以在受测应用程序的 UI 中准确查找容器中的所有控件。 这对于验证你对容器所做的搜索属性更改非常有帮助。 此外，如果对受测应用程序的 UI 进行了重大更改，你可以验证现有的控件搜索属性是否仍正确。  
@@ -201,11 +201,11 @@ ms.locfileid: "49242718"
  *我应该知道哪些其他内容？*  
  **注意**  
   
--   ![先决条件](../test/media/prereq.png "Prereq") 如果需要确保特定控件在 UI 操作前可用，应考虑使用相应的 UITestControl.WaitForControlXXX() 方法将自定义代码添加到测试方法中。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
+- ![先决条件](../test/media/prereq.png "Prereq") 如果需要确保特定控件在 UI 操作前可用，应考虑使用相应的 UITestControl.WaitForControlXXX() 方法将自定义代码添加到测试方法中。 [!INCLUDE[crdefault](../includes/crdefault-md.md)][播放期间让编码的 UI 测试等待特定事件](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md)。  
   
- **提示**  
+  **提示**  
   
--   ![提示](../test/media/tip.png "Tip") 如果“属性”窗口未显示，请在按住 Alt 键的同时按 Enter 键，或者按 F4 键。  
+- ![提示](../test/media/tip.png "Tip") 如果“属性”窗口未显示，请在按住 Alt 键的同时按 Enter 键，或者按 F4 键。  
   
 ## <a name="external-resources"></a>外部资源  
   
