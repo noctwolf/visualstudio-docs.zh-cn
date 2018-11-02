@@ -1,30 +1,30 @@
 ---
-title: 如何： 针对 Visual Studio 的往返扩展 |Microsoft Docs
-ms.custom: ''
+title: 如何往返扩展
 ms.date: 06/25/2017
 ms.technology:
 - vs-ide-sdk
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: willbrown
+ms.author: gregvanl
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: cdbd8703f3aad9a32b2a86efa01ce5922ed64144
-ms.sourcegitcommit: 1c2ed640512ba613b3bbbc9ce348e28be6ca3e45
+ms.openlocfilehash: 826089f1018bc6156cd49bab3afb19e7bb34a47d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39498680"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750727"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>如何： 使扩展与 Visual Studio 2017 和 Visual Studio 2015 兼容
 
-本文档介绍如何使 Visual Studio 2015 和 Visual Studio 2017 之间往返扩展性项目。 完成此升级之后，将能够打开、 生成、 安装和运行 Visual Studio 2015 和 Visual Studio 2017 中一个项目。  作为参考，可以找到一些扩展，可以 Visual Studio 2015 和 Visual Studio 2017 之间的往返[此处](https://github.com/Microsoft/VSSDK-Extensibility-Samples)在 Microsoft 的可扩展性示例。
+本文档介绍如何使 Visual Studio 2015 和 Visual Studio 2017 之间往返扩展性项目。 完成此升级之后，将能够打开、 生成、 安装和运行 Visual Studio 2015 和 Visual Studio 2017 中一个项目。 作为参考，可以中找到一些扩展，可以 Visual Studio 2015 和 Visual Studio 2017 之间的往返[VS SDK 扩展性示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
 如果只想生成在 Visual Studio 2017 中，但却希望输出 VSIX，若要在 Visual Studio 2015 和 Visual Studio 2017 中运行，请参阅[扩展迁移文档](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。
 
->**注意：** 由于在 Visual Studio 版本之间的更改，都在一个版本中工作的一些事项不起作用另一个。 确保可以在这两个版本中，使用你尝试访问的功能或扩展都将有意外的结果。
+> [!NOTE]
+> 由于在 Visual Studio 版本之间的更改，在另一个，都在一个版本中工作的一些事项不起作用。 请确保这两个版本中提供了你尝试访问的功能或扩展都将有意外的结果。
 
 下面是将完成保存/还原 VSIX 本文档中的步骤概述：
 
@@ -57,13 +57,13 @@ ms.locfileid: "39498680"
 如果您的项目包含*project.json*文件：
 
 * 记下中的引用*project.json*。
-* 从**解决方案资源管理器**，删除*project.json*从项目文件。
-    * 此操作将删除*project.json*文件，并从项目中删除它。
-* 添加 NuGet 引用中返回到该项目。
+* 从**解决方案资源管理器**，删除*project.json*从项目文件。 这会删除*project.json*文件，并将其从项目删除。
+* 添加 NuGet 引用中返回到项目：
     * 右键单击**解决方案**，然后选择**为解决方案管理 NuGet 包**。
-    * Visual Studio 自动创建*packages.config*为你的文件
+    * Visual Studio 自动创建*packages.config*为你的文件。
 
->**注意：** 如果你的项目包含 EnvDTE 包，它们可能需要通过右键单击要添加**引用**选择**添加引用**并添加适当的引用。  使用 NuGet 包可能会尝试生成项目时创建的错误。
+> [!NOTE]
+> 如果你的项目包含 EnvDTE 包，它们可能需要通过右键单击要添加**引用**选择**添加引用**并添加适当的引用。  使用 NuGet 包可能会尝试生成项目时创建的错误。
 
 ## <a name="add-appropriate-build-tools"></a>添加相应的生成工具
 
@@ -113,7 +113,8 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 保存并关闭文件。
 
->**注意：** 如果您选择要完成此操作与在 Visual Studio 2017 的 VSIX 设计器，将需要手动编辑系统必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。  这是因为在设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。  但是，由于其他用户可能具有较早版本，因此将需要手动编辑此字段为 15.0。
+> [!NOTE]
+> 如果您选择要完成此操作与在 Visual Studio 2017 的 VSIX 设计器，将需要手动编辑系统必备组件的版本，以确保它是与所有版本的 Visual Studio 2017 兼容。  这是因为在设计器将插入的最低版本为当前版本的 Visual Studio (例如，15.0.26208.0)。  但是，由于其他用户可能具有较早版本，因此将需要手动编辑此字段为 15.0。
 
 此时，你的清单文件应如下所示：
 
@@ -139,7 +140,8 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 * 添加以下标记`<VsixType>v3</VsixType>`到属性组。
 
->**注意：** 建议将此添加下面`<OutputType></OutputType>`标记。
+> [!NOTE]
+> 建议将此添加下面`<OutputType></OutputType>`标记。
 
 ### <a name="3-add-the-debugging-properties"></a>3.添加的调试属性
 
@@ -211,4 +213,5 @@ Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 ![查找 VSIX](media/finding-a-VSIX-example.png)
 
->**注意：** 如果你的项目挂起并显示消息**打开的文件**，强制关闭 Visual Studio、 导航到你的项目目录、 显示隐藏的文件夹，并删除 *.vs*文件夹。
+> [!NOTE]
+> 如果你的项目并显示消息挂起**打开的文件**，强制关闭 Visual Studio、 导航到你的项目目录、 显示隐藏的文件夹，并删除 *.vs*文件夹。

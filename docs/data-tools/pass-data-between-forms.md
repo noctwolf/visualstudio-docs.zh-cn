@@ -19,20 +19,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8d400f8fa46fa10876d1827205671b6d90a3e33
-ms.sourcegitcommit: e9d1018a01af62c3dc5aeb6b325faba7e20bd496
+ms.openlocfilehash: 580ca6a9a384fff373a72e5449af2790a8c1e5b8
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37089433"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750754"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
+
 本演练提供了有关将数据从一个窗体传递到另一个窗体的分步说明。 使用的客户和订单来自 Northwind 的表，一个窗体，用户可以选择一个客户，并第二个窗体显示所选的客户的订单。 本演练演示如何从第一个窗体接收数据的第二个窗体上创建一种方法。
 
 > [!NOTE]
->  本演练仅演示在窗体之间传递数据的一种方法。 用于将数据传递到窗体，包括创建第二个构造函数来接收数据，其他选项，或创建一个公共属性可以用来设置数据从第一个窗体。
+> 本演练仅演示在窗体之间传递数据的一种方法。 用于将数据传递到窗体，包括创建第二个构造函数来接收数据，其他选项，或创建一个公共属性可以用来设置数据从第一个窗体。
 
- 本演练涉及以下任务：
+本演练涉及以下任务：
 
 -   创建一个新**Windows 窗体应用程序**项目。
 
@@ -49,6 +50,7 @@ ms.locfileid: "37089433"
 -   在窗体间传递数据。
 
 ## <a name="prerequisites"></a>系统必备
+
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
 1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分**数据存储和处理**工作负荷，或作为单个组件。
@@ -65,9 +67,7 @@ ms.locfileid: "37089433"
 
        后不久，查询完成运行并创建 Northwind 数据库。
 
-## <a name="create-the-windows-forms-application"></a>创建 Windows 窗体应用程序
-
-### <a name="to-create-the-new-windows-project"></a>创建新的 Windows 项目
+## <a name="create-the-windows-forms-app-project"></a>创建 Windows 窗体应用程序项目
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
@@ -80,8 +80,6 @@ ms.locfileid: "37089433"
      **PassingDataBetweenForms**项目时创建，并添加到**解决方案资源管理器**。
 
 ## <a name="create-the-data-source"></a>创建数据源
-
-### <a name="to-create-the-data-source"></a>创建数据源
 
 1.  在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
@@ -108,7 +106,8 @@ ms.locfileid: "37089433"
      **NorthwindDataSet**添加到你的项目，并**客户**并**订单**表中出现**数据源**窗口。
 
 ## <a name="create-the-first-form-form1"></a>创建第一个窗体 (Form1)
- 可以创建数据绑定网格 (<xref:System.Windows.Forms.DataGridView>控件)，通过拖动**客户**从节点**数据源**拖到窗体的窗口。
+
+可以创建数据绑定网格 (<xref:System.Windows.Forms.DataGridView>控件)，通过拖动**客户**从节点**数据源**拖到窗体的窗口。
 
 ### <a name="to-create-a-data-bound-grid-on-the-form"></a>在窗体上创建数据绑定网格
 
@@ -116,9 +115,9 @@ ms.locfileid: "37089433"
 
      一个<xref:System.Windows.Forms.DataGridView>和工具栏 (<xref:System.Windows.Forms.BindingNavigator>) 上出现用于导航记录**Form1**。 一个[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)，CustomersTableAdapter <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。
 
-## <a name="create-the-second-form-form2"></a>创建第二个窗体 (Form2)
+## <a name="create-the-second-form"></a>创建第二个窗体
 
-### <a name="to-create-a-second-form-to-pass-the-data-to"></a>创建要传入数据的第二个窗体
+创建要传入数据的第二个窗体。
 
 1.  从“项目”菜单中，选择“添加 Windows 窗体”。
 
@@ -132,9 +131,9 @@ ms.locfileid: "37089433"
 
      **OrdersBindingNavigator**从消失**Form2**。
 
-## <a name="add-a-tableadapter-query-to-form2-to-load-orders-for-the-selected-customer-on-form1"></a>向 Form2 加载 Form1 上所选客户的订单添加 TableAdapter 查询
+## <a name="add-a-tableadapter-query"></a>添加 TableAdapter 查询
 
-### <a name="to-create-a-tableadapter-query"></a>若要创建 TableAdapter 查询
+将 TableAdapter 查询添加到 Form2 加载 Form1 上所选客户的订单。
 
 1.  双击**NorthwindDataSet.xsd**中的文件**解决方案资源管理器**。
 
@@ -153,7 +152,7 @@ ms.locfileid: "37089433"
     ```
 
     > [!NOTE]
-    >  验证数据库的参数语法是否正确。 例如，在 Microsoft Access 中，WHERE 子句应当如下：`WHERE CustomerID = ?`。
+    > 验证数据库的参数语法是否正确。 例如，在 Microsoft Access 中，WHERE 子句应当如下：`WHERE CustomerID = ?`。
 
 6.  单击 **“下一步”**。
 
@@ -165,8 +164,6 @@ ms.locfileid: "37089433"
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>若要将数据传递到在 Form2 上创建一个方法
 
-### <a name="to-create-a-method-to-pass-data-to"></a>创建要传入数据的方法
-
 1.  右键单击**Form2**，然后选择**查看代码**以打开**Form2**中**代码编辑器**。
 
 2.  将以下代码添加到**Form2**后`Form2_Load`方法：
@@ -175,8 +172,6 @@ ms.locfileid: "37089433"
      [!code-csharp[VbRaddataDisplaying#1](../data-tools/codesnippet/CSharp/pass-data-between-forms_1.cs)]
 
 ## <a name="create-a-method-on-form1-to-pass-data-and-display-form2"></a>在 Form1 传递数据并显示 Form2 上创建一个方法
-
-### <a name="to-create-a-method-to-pass-data-to-form2"></a>创建向 Form2 传递数据的方法
 
 1.  在中**Form1**，客户数据网格中，右键单击，然后单击**属性**。
 
@@ -191,9 +186,7 @@ ms.locfileid: "37089433"
      [!code-csharp[VbRaddataDisplaying#2](../data-tools/codesnippet/CSharp/pass-data-between-forms_2.cs)]
      [!code-vb[VbRaddataDisplaying#2](../data-tools/codesnippet/VisualBasic/pass-data-between-forms_2.vb)]
 
-## <a name="run-the-application"></a>运行应用程序
-
-### <a name="to-run-the-application"></a>要运行应用程序
+## <a name="run-the-app"></a>运行应用
 
 -   按 **F5** 运行该应用程序。
 

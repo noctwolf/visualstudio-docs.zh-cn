@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41db830fbf7dcbe97f44d64ffa9b9701ec658c1e
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: d89cd2f7ff1be28ac9d96578ba5ce57f653cc65e
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370583"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750905"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>开始使用 Roslyn 分析器
 
@@ -30,12 +30,12 @@ ms.locfileid: "46370583"
 
 [现实世界 Roslyn 分析器](../extensibility/roslyn-analyzers-and-code-aware-library-for-immutablearrays.md)，还可查看作为[通信](https://channel9.msdn.com/events/Build/2015/3-725)
 
-[Github 上的几个示例分为三种类型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
+[GitHub 上的几个示例分为三种类型的分析器](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Samples.md)
 
 [简介和教程的几个分析器通信](https://channel9.msdn.com/Events/dotnetConf/2015/NET-Compiler-Platform-Roslyn-Analyzers-and-the-Rise-of-Code-Aware-Libraries)
 
 ## <a name="see-also"></a>请参阅
 
 - [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)
-- [Github OSS 站点上的多个文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
+- [GitHub OSS 站点上的多个文档](https://github.com/dotnet/roslyn/tree/master/docs/analyzers)
 - [FxCop 规则实现通过 GitHub 上的 Roslyn 分析器](https://github.com/dotnet/roslyn/tree/master/src/Diagnostics/FxCop)
