@@ -59,7 +59,7 @@ ms.locfileid: "36327198"
  此外可以添加要运行部署之前和之后的命令。 有关详细信息，请参阅[如何： 设置 SharePoint 部署命令](../sharepoint/how-to-set-sharepoint-deployment-commands.md)。  
   
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>将包发布到远程或本地服务器
- 若要将沙盒 SharePoint 解决方案发布到远程服务器，在菜单栏上，选择**构建**，**发布**，然后在**发布**对话框框中，选择**发布到 SharePoint 站点**选项按钮，提供远程服务器的 URL，如**https://someremoteserver.sharepoint.microsoftonline.com**。  
+ 若要将沙盒 SharePoint 解决方案发布到远程服务器，在菜单栏上，选择**构建**，**发布**，然后在**发布**对话框框中，选择**发布到 SharePoint 站点**选项按钮，提供远程服务器的 URL，如 **https://someremoteserver.sharepoint.microsoftonline.com**。  
   
  若要在中发布到本地服务器的 SharePoint 解决方案**发布**对话框框中，选择**发布到文件系统**选项按钮，提供本地系统路径。  
   

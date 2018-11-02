@@ -19,17 +19,19 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2829e1dffa0975a1970b8727f9baf79febf9b32c
-ms.sourcegitcommit: f37affbc1b885dfe246d4b2c295a6538b383a0ca
+ms.openlocfilehash: 97d18ef8323eeb0781eb103eb8baa0c3fab0d63c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37174882"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750823"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>演练：在事务中保存数据
+
 本演练演示如何将数据保存在事务中，通过使用<xref:System.Transactions>命名空间。 在本演练中，将创建 Windows 窗体应用程序。 将使用数据源配置向导在 Northwind 示例数据库中创建两个表的数据集。 你将添加到 Windows 窗体数据绑定控件并将修改 BindingNavigator 的保存按钮以更新在 TransactionScope 内的数据库的代码。
 
 ## <a name="prerequisites"></a>系统必备
+
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
 1.  如果您没有 SQL Server Express LocalDB，安装它从[SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)，或通过**Visual Studio 安装程序**。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以安装的一部分 **.NET 桌面开发**工作负荷，或作为单个组件。
@@ -47,9 +49,8 @@ ms.locfileid: "37174882"
        后不久，查询完成运行并创建 Northwind 数据库。
 
 ## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
- 第一步是创建**Windows 窗体应用程序**。
 
-#### <a name="to-create-the-new-windows-project"></a>创建新的 Windows 项目
+第一步是创建**Windows 窗体应用程序**。
 
 1. 在 Visual Studio 中，在**文件**菜单中，选择**新建** > **项目**。
 
@@ -62,9 +63,8 @@ ms.locfileid: "37174882"
      **SavingDataInATransactionWalkthrough**创建项目并将其添加到**解决方案资源管理器**。
 
 ## <a name="create-a-database-data-source"></a>创建数据库数据源
- 此步骤中使用**数据源配置向导**创建基于数据源`Customers`和`Orders`Northwind 示例数据库中的表。
 
-#### <a name="to-create-the-data-source"></a>创建数据源
+此步骤中使用**数据源配置向导**创建基于数据源`Customers`和`Orders`Northwind 示例数据库中的表。
 
 1.  上**数据**菜单中，选择**显示数据源**。
 
@@ -91,24 +91,24 @@ ms.locfileid: "37174882"
      **NorthwindDataSet**添加到项目并`Customers`并`Orders`表中出现**数据源**窗口。
 
 ## <a name="add-controls-to-the-form"></a>将控件添加到窗体
- 可以通过将项从创建数据绑定控件**数据源**窗口拖到窗体上的。
 
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>若要创建数据绑定 Windows 窗体控件
+可以通过将项从创建数据绑定控件**数据源**窗口拖到窗体上的。
 
--   在中**数据源**窗口中，展开**客户**节点。
+1. 在中**数据源**窗口中，展开**客户**节点。
 
--   将主**客户**从节点**数据源**窗口拖到**Form1**。
+2. 将主**客户**从节点**数据源**窗口拖到**Form1**。
 
-     用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 一个[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。
+   用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 一个[NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `CustomersTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>组件栏中出现。
 
--   将相关**订单**节点 (非主**订单**节点，但下面的相关的子表节点**传真**列) 到下面的表单上**CustomersDataGridView**。
+3. 将相关**订单**节点 (非主**订单**节点，但下面的相关的子表节点**传真**列) 到下面的表单上**CustomersDataGridView**。
 
-     窗体上显示一个 <xref:System.Windows.Forms.DataGridView>。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>组件栏中出现。
+   窗体上显示一个 <xref:System.Windows.Forms.DataGridView>。 `OrdersTableAdapter`和<xref:System.Windows.Forms.BindingSource>组件栏中出现。
 
 ## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>添加对 System.Transactions 程序集的引用
- 事务使用 <xref:System.Transactions> 命名空间。 默认情况下，没有添加对 system.transactions 程序集的项目引用，因此你需要手动将其添加。
 
-#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>添加对 System.Transactions DLL 文件的引用
+事务使用 <xref:System.Transactions> 命名空间。 默认情况下，没有添加对 system.transactions 程序集的项目引用，因此你需要手动将其添加。
+
+### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>添加对 System.Transactions DLL 文件的引用
 
 1.  上**项目**菜单中，选择**添加引用**。
 
@@ -117,9 +117,10 @@ ms.locfileid: "37174882"
      对引用**System.Transactions**添加到项目。
 
 ## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>修改 BindingNavigator 的 SaveItem 按钮中的代码
- 对于拖放到窗体上的第一个表，代码添加到默认情况下`click`事件的保存按钮<xref:System.Windows.Forms.BindingNavigator>。 你需要手动添加代码以更新所有附加的表。 对于本演练，我们重构的现有保存代码源自保存按钮的单击事件处理程序。 我们还创建更多的方法来提供基于行是否需要添加或删除特定的更新功能。
 
-#### <a name="to-modify-the-auto-generated-save-code"></a>修改自动生成的保存代码
+对于拖放到窗体上的第一个表，代码添加到默认情况下`click`事件的保存按钮<xref:System.Windows.Forms.BindingNavigator>。 你需要手动添加代码以更新所有附加的表。 对于本演练，我们重构的现有保存代码源自保存按钮的单击事件处理程序。 我们还创建更多的方法来提供基于行是否需要添加或删除特定的更新功能。
+
+### <a name="to-modify-the-auto-generated-save-code"></a>修改自动生成的保存代码
 
 1.  选择**保存**按钮**CustomersBindingNavigator** （带有软盘图标的按钮）。
 
@@ -138,28 +139,28 @@ ms.locfileid: "37174882"
 
 -   插入子记录。 (在这种情况下中, 插入记录`Orders`表。)
 
-#### <a name="to-delete-existing-orders"></a>删除现有顺序
+### <a name="to-delete-existing-orders"></a>删除现有顺序
 
 -   添加以下`DeleteOrders`方法**Form1**:
 
      [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
      [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]
 
-#### <a name="to-delete-existing-customers"></a>删除现有客户
+### <a name="to-delete-existing-customers"></a>删除现有客户
 
 -   添加以下`DeleteCustomers`方法**Form1**:
 
      [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
      [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]
 
-#### <a name="to-add-new-customers"></a>添加新客户
+### <a name="to-add-new-customers"></a>添加新客户
 
 -   添加以下`AddNewCustomers`方法**Form1**:
 
      [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
      [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]
 
-#### <a name="to-add-new-orders"></a>添加新顺序
+### <a name="to-add-new-orders"></a>添加新顺序
 
 -   添加以下`AddNewOrders`方法**Form1**:
 
@@ -168,9 +169,7 @@ ms.locfileid: "37174882"
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-#### <a name="to-run-the-application"></a>要运行应用程序
-
--   选择**F5**运行该应用程序。
+按 **F5** 运行该应用程序。
 
 ## <a name="see-also"></a>请参阅
 

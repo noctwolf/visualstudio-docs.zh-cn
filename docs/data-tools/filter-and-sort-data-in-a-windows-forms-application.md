@@ -21,20 +21,21 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21ebae03dd2ba58a751a839f5e3151654faa39e0
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
+ms.openlocfilehash: 1868d670458e204f6e503b132aaceab17f3da742
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36757590"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750918"
 ---
 # <a name="filter-and-sort-data-in-a-windows-forms-application"></a>在 Windows 窗体应用程序中对数据进行筛选和排序
+
 设置筛选数据<xref:System.Windows.Forms.BindingSource.Filter%2A>属性设置为一个字符串表达式，返回所需的记录。
 
- 对数据进行排序通过设置<xref:System.Windows.Forms.BindingSource.Sort%2A>属性设置为列名称在其进行排序; 追加`DESC`按降序排序，还是追加`ASC`以按升序排序。
+对数据进行排序通过设置<xref:System.Windows.Forms.BindingSource.Sort%2A>属性设置为列名称在其进行排序; 追加`DESC`按降序排序，还是追加`ASC`以按升序排序。
 
 > [!NOTE]
->  如果你的应用程序不使用<xref:System.Windows.Forms.BindingSource>组件，您可以筛选和排序数据使用<xref:System.Data.DataView>对象。 有关详细信息，请参阅[Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)。
+> 如果你的应用程序不使用<xref:System.Windows.Forms.BindingSource>组件，您可以筛选和排序数据使用<xref:System.Data.DataView>对象。 有关详细信息，请参阅[Dataview](/dotnet/framework/data/adonet/dataset-datatable-dataview/dataviews)。
 
 ## <a name="to-filter-data-by-using-a-bindingsource-component"></a>通过使用 BindingSource 组件来筛选数据
 

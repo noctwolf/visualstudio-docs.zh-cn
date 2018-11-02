@@ -1,27 +1,25 @@
 ---
-title: Visual Studio 的颜色值参考 |Microsoft Docs
+title: 颜色值参考
 description: 用于创建新的 Visual Studio 颜色标记的引用： 十六进制代码
 keywords: 颜色、 十六进制代码、 色调，主题 UI 中，主题设置
 author: brickgeorge
-ms.author: v-brickg
+ms.author: gregvanl
 ms.date: 08/04/2017
 ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
-ms.custom: ''
 ms.reviewer: Jamie.Young
 ms.technology:
 - vs-ide-sdk
 manager: douge
-ms.workload:
-- v-brickg
-ms.openlocfilehash: d0055ae3d0031d1cb1ffa7896a4594eadf69d42d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5216be58983b8b354a8136f9d7941a460915dc44
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49902601"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751084"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Visual Studio 的颜色值参考
+
 本主题是用于创建新的颜色标记的引用。 当你要创建新的用户界面时，可以使用现有 UI 中的相似颜色以选择为每个主要的主题颜色和高对比度主题该元素的系统颜色名称。 
 
 有关创建新的颜色标记的实现信息，请参阅[颜色主题工具](../../extensibility/internals/color-theming-tools.md)。

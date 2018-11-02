@@ -17,34 +17,36 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9b5884ff140097010c90fbf2208fecd95980f2fe
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: a5b34bcb9c1532190f730e26c691289d489a2f3c
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31924444"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751071"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>扩展 TableAdapter 的功能
-可以通过将代码添加到 TableAdapter 的分部类文件来扩展 TableAdapter 的功能。
 
- 对在 TableAdapter 进行任何更改时，将重新定义 TableAdapter 的代码**数据集设计器**，或当向导修改 TableAdapter 的配置。 若要防止在 TableAdapter 的重新生成过程正在删除你的代码，请将代码添加到 TableAdapter 的分部类文件。
+可以通过将代码添加到 TableAdapter 的分部类文件扩展 TableAdapter 的功能。
 
- 分部类允许为特定类划分到多个物理文件的代码。 有关详细信息，请参阅[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部 （类型）](/dotnet/csharp/language-reference/keywords/partial-type)。
+中对 TableAdapter 进行任何更改时重新生成代码，用于定义 TableAdapter**数据集设计器**，或当向导修改 TableAdapter 的配置。 若要防止在 TableAdapter 的重新生成过程中删除你的代码，请将代码添加到 TableAdapter 的分部类文件。
 
-## <a name="locate-tableadapters-in-code"></a>在代码中找到 Tableadapter
- 虽然 Tableadapter 的设计也考虑了**数据集设计器**，生成的 TableAdapter 类就不是嵌套的类的<xref:System.Data.DataSet>。 Tableadapter 位于基于 TableAdapter 的关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为数据集`HRDataSet`，将位于 Tableadapter`HRDataSetTableAdapters`命名空间。 (命名约定遵循以下模式： *DatasetName* + `TableAdapters`)。
+分部类允许划分到多个物理文件的特定类代码。 有关详细信息，请参阅[分部](/dotnet/visual-basic/language-reference/modifiers/partial)或[分部 （类型）](/dotnet/csharp/language-reference/keywords/partial-type)。
 
- 下面的示例假定名为 TableAdapter`CustomersTableAdapter`在项目中使用`NorthwindDataSet`。
+## <a name="locate-tableadapters-in-code"></a>在代码中查找 Tableadapter
 
-#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要为 TableAdapter 创建分部类
+Tableadapter 的设计时**数据集设计器**，生成的 TableAdapter 类不是嵌套的类的<xref:System.Data.DataSet>。 Tableadapter 位于基于 TableAdapter 的关联数据集的名称的命名空间中。 例如，如果你的应用程序包含名为的数据集`HRDataSet`，Tableadapter 将位于`HRDataSetTableAdapters`命名空间。 (命名约定采用这种模式： *DatasetName* + `TableAdapters`)。
 
-1.  将新类添加到你的项目中，通过转到**项目**菜单并选择**添加类**。
+下面的示例假定名为 TableAdapter`CustomersTableAdapter`在与项目`NorthwindDataSet`。
+
+### <a name="to-create-a-partial-class-for-a-tableadapter"></a>若要为 TableAdapter 创建分部类
+
+1.  将新类添加到你的项目，通过转到**项目**菜单并选择**添加类**。
 
 2.  将此类命名为 `CustomersTableAdapterExtended`。
 
-3.  选择**添加**。
+3.  选择“添加”。
 
-4.  将代码替换正确的命名空间和为你的项目的分部类名称如下所示：
+4.  该代码将替换为正确的命名空间和你的项目的分部类名称，如下所示：
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
