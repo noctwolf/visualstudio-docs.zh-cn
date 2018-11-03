@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 3e80e90928bd5ff81e7364e23a1d5035d2bfbe3a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed1259ef04f59d37752d89f922623b963bcbbc22
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860638"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967527"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义特定于域的语言 (DSL)，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
@@ -213,7 +213,7 @@ ms.locfileid: "49860638"
 
 ##### <a name="to-test-the-new-domain-classes"></a>测试新的域类
 
-1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，以生成 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+1.  **单击转换所有模板**的工具栏中的解决方案资源管理器，以生成 DSL 设计器代码。 可以自动化执行此步骤。 有关详细信息，请参阅[如何自动执行转换所有模板](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 2.  **生成并运行 DSL。** 按 F5 或 CTRL + F5，在实验模式下运行 Visual Studio 的新实例。 在 Visual Studio 的实验实例中，打开或创建具有 DSL 的文件扩展名的文件。
 

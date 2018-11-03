@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e508dc838fd7bf8ff3dab493aa2d5d52c747d180
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf35f0d09178dd0516794ab79e8ac92239e42cd6
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849438"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966539"
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
 
@@ -52,10 +52,10 @@ ms.locfileid: "49849438"
 |[建立用户需求模型](../modeling/model-user-requirements.md)|使用模型来阐明和传达用户的需求。|
 |[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|使用模型来描述系统的整体结构和行为，并确保它满足用户的需求。|
 |[在开发过程中验证系统](../modeling/validate-your-system-during-development.md)|确保软件与用户的需求和系统的整体体系结构保持一致。|
-|[在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型来帮助你在系统开发的过程中了解和更改你的系统。|
+|[在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)<br /><br /> [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|使用模型来帮助你在系统开发的过程中了解和更改你的系统。|
 |[安排建模解决方案](../modeling/structure-your-modeling-solution.md)|在大中型项目中组织模型。|
 
 ## <a name="resources"></a>资源
 
 - [Visual Studio 可视化和建模工具论坛](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Visual Studio 扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsx)
+- [Visual Studio 扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

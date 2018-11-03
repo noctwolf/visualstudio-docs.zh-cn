@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 26ea23c6091910a83ddec41194aa43ae93c9b9eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ee3c602dfc89aeafbfb82ae50771abc7ce66937e
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820769"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966933"
 ---
 # <a name="whats-new-for-design-in-visual-studio"></a>Visual Studio 中用于设计的新增功能
 
@@ -40,7 +40,7 @@ ms.locfileid: "49820769"
 
 您现在看到立即在当前解决方案中的代码分析结果中的更改的影响每次保存关系图。 您无需再等待完成的"验证依赖项"命令。
 
-有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
+有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/)。
 
 ## <a name="uml-designers-have-been-removed"></a>已删除 UML 设计器
 
@@ -61,7 +61,7 @@ UML 设计器已从 Visual Studio Enterprise 的此版本中删除。
 
 如果您是 UML 设计器的大量用户，你可以继续使用 Visual Studio 2015 或更早版本，而 UML 需要确定一种备选工具。
 
-有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
+有关更多详细信息，请参阅[这篇博客文章](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

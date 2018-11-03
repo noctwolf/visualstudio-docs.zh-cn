@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 25155615090ce627a4bf30a5fd0b54bd913fe2da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f736a8d5b8e09bbb1c5a894e3f0f450de19fd02f
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939756"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967020"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>如何：将域特定语言迁移至新版本
 你可以迁移项目的定义和使用特定于域的语言设置为[!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]的版本从[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]一起分发[!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)]。
@@ -76,7 +76,7 @@ ms.locfileid: "49939756"
    2.  单击**转换所有模板**解决方案资源管理器的标头中的按钮。
 
        > [!NOTE]
-       >  您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a)。
+       >  您可以进行此步骤不必要。 有关详细信息，请参阅[如何自动执行转换所有模板](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\))。
 
 6. 更新自定义代码，在转换后的项目中。
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 933c18a43cb8ebacd32914cb487fb0216b538b25
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc8066148b2c8612b3a07922e15422022b8c9c4d
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942473"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967501"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -186,11 +186,11 @@ Dinner Now 必须估计满足新的需求所需的成本。 这部分取决于�
 
 请参阅：
 
-- [定义生成过程](http://msdn.microsoft.com/Library/61593e10-d24b-492f-b19a-af4d85abea6b)
+- [使用可视化设计器](/azure/devops/pipelines/get-started-designer)
 
-- [使用封闭签入生成过程以验证更改](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)
+- [TFVC 封闭签入](/azure/devops/pipelines/build/triggers#gated)
 
-- [自定义生成过程模板](http://msdn.microsoft.com/Library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
+- [生成和发布任务](/azure/devops/pipelines/tasks/index)
 
 ### <a name="general-tips-for-creating-and-using-models"></a>创建和使用模型的一般提示
 
@@ -220,7 +220,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 - [图表、 仪表板和小组件 （Azure DevOps 服务）](/azure/devops/report/dashboards/overview?view=vsts)
 
-- [使用 Project 创建积压工作 (backlog) 和任务](http://msdn.microsoft.com/Library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)
+- [使用 Project 创建积压工作 (backlog) 和任务](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="TestValidateCheckInCode"></a> 测试、 验证和签入代码
 
@@ -486,5 +486,5 @@ Lucerne 和 Dinner Now 必须集成其支付系统。 以下各部分介绍了�
 
 - [代码可视化](../modeling/visualize-code.md)
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
-- [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
