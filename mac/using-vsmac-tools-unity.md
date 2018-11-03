@@ -14,13 +14,13 @@ ms.locfileid: "49898819"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
-本部分介绍如何使用 Visual Studio for Mac Tools for Unity 的集成和生产力功能，以及如何使用 Visual Studio for Mac 调试程序进行 Unity 开发。
+在本节中，您将学习如何使用 Visual Studio for Mac Tools for Unity 的集成和生产力功能，以及如何使用 Visual Studio for Mac 调试器进行 Unity 开发。
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中打开 Unity 脚本
 
 将 Visual Studio for Mac [设置为 Unity 的外部脚本编辑器](setup-vsmac-tools-unity.md#configure-unity-for-use-with-visual-studio-for-mac)后，在 Unity 编辑器中打开任何脚本都会自动启动或切换到 Visual Studio for Mac，并打开选择的脚本。
 
-或者，可以通过从 Unity 的“资产”菜单中选择“打开 C# 项目”打开 Visual Studio for Mac，而无需在源编辑器中打开任何脚本。
+或者，可以通过从 Unity 的“Assets”菜单中选择“Open C# Project”打开 Visual Studio for Mac，而无需在源编辑器中打开任何脚本。
 
 ![打开 C# 项目](media/using-vsmac-tools-unity-image1.png)
 
@@ -29,7 +29,7 @@ ms.locfileid: "49898819"
 Visual Studio for Mac Tools for Unity 包括用于访问 Unity API 文档的快捷方式。 要从 Visual Studio for Mac 访问 Unity API 文档，请将光标放置于想要了解的 Unity API 上，并按 ⌘ command + ‘。
 
 ## <a name="intellisense-for-unity-messages"></a>针对 Unity 消息的 IntelliSense
-Unity 引擎向 MonoBehaviour 脚本广播消息，以便开发者编写代码。响应 OnMouseDown 和 OnTriggerEnter 等消息。由于这些不是 MonoBehaviour 基类中的虚拟方法，因此一些 IDE（如 MonoDevelop）缺少适用于 Unity 消息的代码完成功能。
+Unity 引擎向 MonoBehaviour 脚本广播消息，允许开发人员编写对 OnMouseDown，OnTriggerEnter 等消息作出响应的代码。由于这些不是 MonoBehaviour 基类中的虚拟方法，因此一些 IDE（如 MonoDevelop）缺少适用于 Unity 消息的代码完成功能。
 
 但是，Visual Studio for Mac Tools for Unity 将其 IntelliSense 功能扩展到 Unity 消息。 这简化了在 MonoBehaviour 脚本中实现 Unity 消息，并有助于学习 Unity API。 对 Unity 消息使用 IntelliSense：
 
@@ -61,26 +61,26 @@ Unity 引擎向 MonoBehaviour 脚本广播消息，以便开发者编写代码�
 
 ## <a name="adding-new-unity-files-and-folders"></a>添加新 Unity 文件和文件夹
 
-始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
+您始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>添加新的 C# MonoBehaviour 脚本
 
-要添加新的 C# MonoBehaviour 脚本，请在 Solution Pad 中右键单击“资产”文件夹或它的一个子目录，并选择“添加”>“新 MonoBehaviour”。
+要添加新的 C# MonoBehaviour 脚本，请在 Solution Pad 中右键单击“Assets”文件夹或它的一个子目录，并选择“Add > New MonoBehaviour”。
 
 ![添加新的 MonoBehaviour](media/using-vsmac-tools-unity-image4.png)
 
 ### <a name="add-a-new-unity-shader"></a>添加新的 Unity 着色器
 
-要添加新的 Unity 着色器，请在 Solution Pad 中右键单击“资产”文件夹或一个子目录，并选择“添加”>“新着色器”。
+要添加新的 Unity 着色器，请在 Solution Pad 中右键单击“Assets”文件夹或一个子目录，并选择“Add > New Shader”。
 
 ### <a name="add-a-new-folder"></a>添加新文件夹
 
-若要添加新文件夹，请在 Solution Pad 中右键单击“资产”文件夹或一个子目录，并选择“添加”>“新文件夹”。
+若要添加新文件夹，请在 Solution Pad 中右键单击“Assets”文件夹或一个子目录，并选择“Add > New Folder”。
 
-Unity 编辑器的“项目”窗口会反映这些添加。
+Unity 编辑器的“Project”窗口会反映这些添加。
 
 ### <a name="to-rename-a-file-or-folder"></a>重命名文件或文件夹
-在 Solution Pad 中右键单击想要重命名的项，并选择“重命名...”。
+在 Solution Pad 中右键单击想要重命名的项，并选择“Rename...”。
 
 > [!NOTE]
 > 如果新的 Unity 项目中不包含任何脚本，且 Visual Studio for Mac 的 Solution Pad 中未显示“资产”文件夹，请从 Unity 编辑器内添加初始 C# 脚本。
@@ -93,11 +93,11 @@ Unity 编辑器的“项目”窗口会反映这些添加。
 
 若要开始调试：
 
-1. 通过单击“播放”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity。
+1. 通过单击“Play”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity。
 
    ![在 Visual Studio 中单击“播放”](media/using-vsmac-tools-unity-image5.png)
 
-2. 切换到 Unity 并单击“播放”按钮，在编辑器中运行游戏。
+2. 切换到 Unity 并单击“Play”按钮，在编辑器中运行游戏。
 
    ![在 Unity 中单击“播放”](media/using-vsmac-tools-unity-image6.png)
 
@@ -107,7 +107,7 @@ Unity 编辑器的“项目”窗口会反映这些添加。
 
 停止调试：
 
-1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
+1. 在 Visual Studio for Mac 中单击“Stop”按钮，或按“Shift + Command + Return”。
 
    ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
 
