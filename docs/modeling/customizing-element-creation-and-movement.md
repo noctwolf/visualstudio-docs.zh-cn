@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 4b584495ee4848a3c01ebe63ee30b5bc52b0ff34
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2181e9f89fc8d859bfda9a29de6af8726ae5aef3
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895634"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967423"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 
@@ -322,4 +322,4 @@ EMD 的职责是确定如何对象组应合并到模型中的特定位置。 具
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [自定义工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)
-- [线路关系图示例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [线路关系图示例 DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: f174e4dde2c96383e9f8bdf61ff63558bb1d7bb3
-ms.sourcegitcommit: ef828606e9758c7a42a2f0f777c57b2d39041ac3
+ms.openlocfilehash: 6aa827781cb8ea78aa5df79f8cb839a6f3548e11
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39566776"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967046"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用域特定语言修改标准的菜单命令
 
@@ -152,5 +152,4 @@ protected override void ProcessOnMenuDeleteCommand()
 - [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 架构参考](../extensibility/vsct-xml-schema-reference.md)
-- [VMSDK-电路图示例。广泛的 DSL 自定义](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-- [示例代码： 电路图](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [VMSDK-电路图示例。广泛的 DSL 自定义](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

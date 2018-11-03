@@ -21,12 +21,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 17b0cfb4ecc1809098670b0b9d3e831b5bc75a62
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71eebd95db1a616d4f86866ef60fb32251634cc0
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835704"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967280"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -173,7 +173,7 @@ ms.locfileid: "49835704"
 
 ## <a name="validate-code-automatically"></a>自动验证代码
 
-每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Azure DevOps，则可以执行与封闭签入，这可以通过创建自定义 MSBuild 任务，并使用生成报告来收集验证错误指定的层验证。 若要创建封闭的签入生成，请参阅[使用封闭的签入生成过程以验证更改](http://msdn.microsoft.com/Library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)。
+每次运行本地生成时，都可以执行层验证。 如果你的团队使用 Azure DevOps，则可以执行与封闭签入，这可以通过创建自定义 MSBuild 任务，并使用生成报告来收集验证错误指定的层验证。 若要创建封闭的签入生成，请参阅[TFVC 封闭签入](/azure/devops/pipelines/build/triggers#gated)。
 
 ### <a name="to-validate-code-automatically-during-a-local-build"></a>在本地生成期间自动验证代码
 
@@ -237,6 +237,6 @@ ms.locfileid: "49835704"
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 2017 中的实时依赖项验证](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Visual Studio 2017 中的实时依赖项验证](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)
 - [视频： 验证实时体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

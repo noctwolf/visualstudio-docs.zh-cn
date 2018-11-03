@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e69fe2741329ee7e8b2cae6b99dca150caa022fe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25debac1e5f2e977e5dd36ec8b4a083a1a362d1b
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824290"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967215"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -140,7 +140,7 @@ ms.locfileid: "49824290"
 
 ## <a name="see-also"></a>请参阅
 
-- [在敏捷开发中使用模型](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
+- [在敏捷开发中使用模型](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)
 - [为应用程序创建模型](../modeling/create-models-for-your-app.md)
 - [建立用户需求模型](../modeling/model-user-requirements.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)

@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 6196f8b8a058424732469ff954d607e00c97d396
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d54ba969e06f3bd951556f8d8f347977419fc015
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49819766"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966487"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 当首次在 Visual Studio 中打开的域特定语言工具 （DSL 工具） 解决方案时，用户界面类似于下图。
@@ -51,5 +51,5 @@ ms.locfileid: "49819766"
 ## <a name="see-also"></a>请参阅
 
 - [域特定语言工具的概述](../modeling/overview-of-domain-specific-language-tools.md)
-- [域特定语言工具术语表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
 - [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

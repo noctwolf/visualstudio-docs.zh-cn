@@ -11,15 +11,15 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 94839efcf8899c288c07de15a362b2c09d9ad13d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 7b486cec0808f6d0b98770cf354e27054f27ebdd
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31965156"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50966617"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>使用域特定语言资源管理器
-**DSL 资源管理器**在树视图中显示的信息的几种类型。 有关大部分 DSL 资源管理器中的项的详细信息，请参阅[如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)。
+**DSL 资源管理器**树视图中显示多种类型的信息。 有关 DSL 资源管理器中的项的大多数详细信息，请参阅[如何定义特定于域的语言](../modeling/how-to-define-a-domain-specific-language.md)。
 
  它具有以下节点：
 
@@ -35,7 +35,7 @@ ms.locfileid: "31965156"
 
 -   **域类型**。 在模型中使用的内置和外部类型的列表。
 
--   **编辑器**。 一份**工具箱**选项卡和它们包含的项和模型的验证设置。 有关验证的详细信息，请参阅[域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
+-   **编辑器**。 一系列**工具箱**选项卡和所包含的项和用于该模型的验证设置。 有关验证的详细信息，请参阅[特定于域的语言中的验证](../modeling/validation-in-a-domain-specific-language.md)。
 
 -   **资源管理器行为**。 在生成的设计器中指定资源管理器的行为的设置。 有关如何自定义资源管理器的详细信息，请参阅[自定义模型资源管理器](../modeling/customizing-the-model-explorer.md)。
 
@@ -45,4 +45,4 @@ ms.locfileid: "31965156"
 
 ## <a name="see-also"></a>请参阅
 
-- [域特定语言工具词汇表](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [域特定语言工具术语表](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

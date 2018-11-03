@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 61c71b67c02493ac77a2fd1c21bb47e78122a1d7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6572ef97027466fa97c254664327f2f77b4ea7f2
+ms.sourcegitcommit: 768d7877fe826737bafdac6c94c43ef70bf45076
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928654"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50967071"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>使用 TextTransform 实用工具生成文件
 
@@ -62,7 +62,7 @@ TextTransform [<options>] <templateName>
 |**-I** \<includedirectory>|包含指定的文本模板中包括的文本模板的目录。|
 |**-P** \<referencepath >|一个目录来搜索的文本模板中指定的程序集或使用 **-r**选项。<br /><br /> 例如，若要包括用于 Visual Studio API 的程序集，使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName>!\<className>!\<assemblyName&#124;codeBase>|名称、 完整类型名称和程序集可用于处理文本模板中的自定义指令的指令处理器。|
-|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|指定参数值为指令处理器。 如果指定只是参数名称和值，该参数将可供所有指令处理器。 如果指定的指令处理器，该参数是仅供在指定的处理器。 如果指定指令的名称，仅当正在处理在指定的指令参数才可用。<br /><br /> 若要访问指令处理器或文本模板的参数值，使用[ITextTemplatingEngineHost.ResolveParameterValue](https://msdn.microsoft.com/library/microsoft.visualstudio.texttemplating.itexttemplatingenginehost.resolveparametervalue.aspx)。 在文本模板中，包括`hostspecific`模板指令中，并在调用消息`this.Host`。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`。<br /><br /> 始终键入 ！ 标记，即使省略可选的处理器和指令的名称。 例如：<br /><br /> `-a !!param!value`|
+|**-a** [processorName]![directiveName]!\<parameterName>!\<parameterValue>|指定参数值为指令处理器。 如果指定只是参数名称和值，该参数将可供所有指令处理器。 如果指定的指令处理器，该参数是仅供在指定的处理器。 如果指定指令的名称，仅当正在处理在指定的指令参数才可用。<br /><br /> 若要访问指令处理器或文本模板的参数值，使用[ITextTemplatingEngineHost.ResolveParameterValue](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))。 在文本模板中，包括`hostspecific`模板指令中，并在调用消息`this.Host`。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`。<br /><br /> 始终键入 ！ 标记，即使省略可选的处理器和指令的名称。 例如：<br /><br /> `-a !!param!value`|
 |**-h**|提供帮助。|
 
 ## <a name="related-topics"></a>相关主题
