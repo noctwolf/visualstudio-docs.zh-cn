@@ -21,7 +21,7 @@ ms.locfileid: "39252435"
 本部分将介绍使用 Visual Studio Tools for Unity API 的示例。
 
 ## <a name="examples"></a>示例
-下面是一些演示 Visual Studio Tools for Unity ApI 使用方法的示例。
+ 下面是一些演示 Visual Studio Tools for Unity ApI 使用方法的示例。
 
 ### <a name="customize-project-files-created-by-vstu"></a>自定义 VSTU 创建的项目文件
  Visual Studio Tools for Unity 在项目文件生成期间提供 Unity 风格的回调。 若要了解每当项目文件重新生成时如何对其进行修改，请参阅[示例：项目文件生成](../cross-platform/customize-project-files-created-by-vstu.md)。
