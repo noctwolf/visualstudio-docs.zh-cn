@@ -2,7 +2,7 @@
 title: Visual Studio 中的 C# 控制台应用程序入门
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: ''
-ms.date: 09/28/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: ad1ee95cb9cc754261502e7377cde6c91e5befce
-ms.sourcegitcommit: ad5fb20f18b23eb8bd2568717f61edc6b7eee5e7
+ms.openlocfilehash: 3450572e4cf4959530599c5eea9efb3168485b58
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47859505"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244367"
 ---
 # <a name="tutorial-get-started-with-a-c-console-app-in-visual-studio"></a>教程：Visual Studio 中的 C# 控制台应用程序入门
 
@@ -61,11 +61,7 @@ ms.locfileid: "47859505"
 
 ## <a name="create-a-c-console-calculator-app"></a>创建“C# 控制台计算器”应用程序
 
-1. 打开 Visual Studio 2017，然后在顶部菜单栏中，选择“文件” > “新建” > “项目”。
-
-1. 在“新建项目”对话框的左窗格中，展开“C#”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 然后，将文件命名为“计算器”。
-
-1. 在代码编辑器中，输入或粘贴下面的代码：
+1. 创建“C# 控制台应用程序”后，在代码编辑器中输入或粘贴以下代码：
 
     ```csharp
     using System;

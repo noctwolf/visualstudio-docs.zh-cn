@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b1b41fe707c751b5cd32706d1c27f707f964dff8
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 9f1eb52e87cf9a411cf453c90f35ebc192616e8c
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49100921"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050217"
 ---
 # <a name="azure-sdk-for-python"></a>Azure SDK for Python
 
@@ -39,7 +39,7 @@ pip install azure
 
 [Azure SDK for Python 开发人员中心](https://docs.microsoft.com/python/azure/?view=azure-python)也有大量有用资源，其中包括许多教程：
 
-- 在 Linux 上的 Azure 应用服务中创建 Web 应用 (/azure/app-service/containers/quickstart-python)。
+- [在 Linux 上的 Azure 应用服务上创建 Web 应用](/azure/app-service/containers/quickstart-python)。
 - [Blob 存储](/azure/storage/blobs/storage-quickstart-blobs-python)
 - [表存储](/azure/cosmos-db/table-storage-how-to-use-python)
 - [队列存储](/azure/storage/storage-python-how-to-use-queue-storage)

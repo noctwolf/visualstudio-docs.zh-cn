@@ -9,12 +9,12 @@ description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro �
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 739598d8783a6ba0eb7930b5efff6c018eed942a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 50c9b39772e65ba00f859254df4a993870f08023
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894555"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219531"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
@@ -92,9 +92,24 @@ ms.locfileid: "49894555"
 - 信用卡。  如果提供信用卡卡号，不会对该卡收费。 
 - 转账。  如果选择“转账”作为付款方式，则不需要提供信用卡卡号。  也可以将间隔设置为“每年”。  你将收到一封电子邮件，通知你账单已准备就绪。  账单金额为 0.00 美元。  
 
-### <a name="q--can-the-power-bi-pro-benefit-included-in-my-subscription-be-used-in-a-production-environment"></a>问：订阅中的 Power BI Pro 权益是否可用于生产环境？
+### <a name="q--is-the-power-bi-pro-benefit-included-in-my-subscription-licenses-for-use-in-a-production-environment"></a>问：订阅许可证中的 Power BI Pro 权益是否可用于生产环境？
 答：是。  
 
+### <a name="q--when-i-try-to-activate-power-bi-pro-i-get-a-message-you-already-have-an-account-through-work--can-i-still-use-the-benefit"></a>问：当我尝试激活 Power BI Pro 时，收到一条消息“你已经通过工作获得帐户”。  我仍可以使用此权益吗？
+答：是。  消息表明你登录到一个已有活动 Office 365 租户的域，而你不是其中的管理员。  若要将 Power BI Pro 添加到租户，你必须是该租户的管理员。  要解决此问题，请按照以下步骤创建自己的租户。
+1.  看到你已经通过工作获得帐户的消息时，请点击“新建帐户”。
+
+2.  在下一个屏幕上，提供联系信息，然后单击“下一步”。
+
+3.  创建用户 ID 和密码。  要利用免费优惠，请务必选择“.onmicrosoft.com”作为域。 单击“创建我的帐户”。
+    > [!div class="mx-imgBorder"]
+    > ![Power BI Pro 权益：创建专用租户用户 ID](_img/vs-pbi/vs-pbi-work-userid.png)
+    
+4.  从步骤 6 开始，该过程中的其余步骤与项目正文中列出的步骤相同。
+
+
+### <a name="q--im-on-a-government-domain--can-i-use-the-benefit"></a>问：若我处在政府域，  是否可以使用此权益？ 
+答：不能。  Power BI Pro 权益不能添加到政府域中的租户。 
 
 ## <a name="support-resources"></a>支持资源
 -  需要有关 Power BI Pro 的帮助？
@@ -103,3 +118,6 @@ ms.locfileid: "49894555"
     - 浏览首要的问题，从社区获得帮助或在[支持页](https://powerbi.microsoft.com/support/)上提交支持票证。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
+
+## <a name="next-steps"></a>后续步骤
+若要激活 Power BI Pro 权益，请访问 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)

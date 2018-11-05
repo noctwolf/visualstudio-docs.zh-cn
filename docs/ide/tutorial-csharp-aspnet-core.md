@@ -2,7 +2,7 @@
 title: Visual Studio 中的 C# 和 ASP.NET Core 入门
 description: 了解如何在 Visual Studio 中使用 C# 逐步创建 ASP.NET Core Web 应用。
 ms.custom: ''
-ms.date: 09/17/2018
+ms.date: 10/29/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-acquisition
 ms.topic: tutorial
@@ -15,18 +15,30 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 25ddfd7c0d45666c4dbbafe98c88dc8f66aac447
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d684ecb9e29dd4c6f140ad7d6f52e301e0d0da13
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284045"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244484"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
 在这一使用 Visual Studio 的 C# 开发和 ASP.NET Core 的教程中，你将创建 C# ASP.NET Core Web 应用、对其进行更改、探索 IDE 的一些功能，然后运行该应用。
 
+## <a name="before-you-begin"></a>在开始之前
+
+### <a name="install-visual-studio"></a>安装 Visual Studio
+
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+
+### <a name="update-visual-studio"></a>更新 Visual Studio
+
+如果已经安装 Visual Studio，请确保运行的是最新版本。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
+
+### <a name="choose-your-theme-optional"></a>选择主题（可选）
+
+本教程包含使用深色主题的屏幕截图。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](quickstart-personalize-the-ide.md)页面，了解具体方法。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -46,7 +58,7 @@ ms.locfileid: "49284045"
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>方式 1：打开“新建项目”对话框
 
-1. 选择“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。
+1. 选择“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接。 （根据你的显示设置，进行滚动以便查看。）
 
    ![选择“新建项目”对话框中的“打开 Visual Studio 安装程序”链接](../ide/media/open-visual-studio-installer-mycoreapp.png)
 
@@ -71,6 +83,9 @@ ms.locfileid: "49284045"
 1. 验证顶部下拉菜单中是否显示 ASP.NET Core 2.1。 然后选择“确定”。
 
    ![“新建 ASP.NET Core Web 应用程序”对话框](../ide/media/new-project-csharp-aspnet-razor-web-app.png)
+
+   > [!NOTE]
+   > 如果没有从顶部下拉菜单中看到“ASP.NET Core 2.0”或更高版本，请确保你运行的是最新版本的 Visual Studio。 有关如何更新安装的详细信息，请参阅[将 Visual Studio 2017 更新到最新版本](../install/update-visual-studio.md)页面。
 
 ### <a name="about-your-solution"></a>关于解决方案
 

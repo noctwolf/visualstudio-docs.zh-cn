@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bb9186726a54099b0c75a468a99d760abd22b7f3
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bef854fd04ce8ac2ddf6fe834b3bede0f371eefe
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37945541"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050295"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -49,7 +49,8 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |零次或多次匹配前面的表达式（匹配尽可能多的字符）|*?|`e.*?e` 匹配“feeder”中的“ee”，而不是“eede”。|
 |一次或多次匹配前面的表达式（匹配尽可能多的字符）|+?|`e.+?e` 匹配“enterprise”中的“ente”和“erprise”，但不匹配整个单词“enterprise”。|
 |将匹配字符串定位到行或字符串的开头|^|`^car` 仅在出现于行开头时才匹配单词“car”。|
-|将匹配字符串定位到行尾|\r?$|`End\r?$` 仅在出现于行尾时才匹配“end”。|
+|将匹配字符串定位到行尾|\r?$|`end\r?$` 仅在出现于行尾时才匹配“end”。|
+|将匹配字符串定位到文件末尾|$|`end$` 仅在出现于文件末尾时才匹配“end”。|
 |匹配集中的任何单个字符|[abc]|`b[abc]` 匹配“ba”、“bb”和“bc”。|
 |匹配的字符范围中的任意字符|[a-f]|`be[n-t]` 匹配“between”中的“bet”，“beneath”中的“ben”，“beside”中的“bes”，但不匹配“below”。|
 |捕获包含在括号中的表达式并对其进行隐式编号|()|`([a-z])X\1` 匹配“aXa”和“bXb”，但不匹配“aXb”。 “\1”指第一个表达式组“[a-z]”。|
@@ -58,8 +59,8 @@ Visual Studio 使用 [.NET Framework 正则表达式](/dotnet/standard/base-type
 |匹配符号前或符号后的表达式。|&#124;|`(sponge\|mud) bath` 匹配“sponge bath”和“mud bath”。|
 |对反斜杠后面的字符进行转义| \\ |`\^` 匹配字符 ^。|
 |指定前面的字符或组的出现次数|{x}，其中 x 是出现次数|`x(ab){2}x` 匹配“xababx”，`x(ab){2,3}x` 匹配“xababx”和“xabababx”，但不匹配“xababababx”。|
-|匹配 Unicode 字符类中的文本，其中“X”是 Unicode 数字。 有关 Unicode 字符类的详细信息，请参阅 <br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
-|与字边界匹配|`\b`（在字符类 \b 的外部指定字边界，而在字符类内部指定退格符）。|`\bin` 匹配“inside”中的“in”，不匹配“pinto”。|
+|匹配 Unicode 字符类中的文本。 有关 Unicode 字符类的详细信息，请参阅 <br /><br /> [Unicode Standard 5.2 字符属性](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf)。|\p{X}，其中“X”是 Unicode 数字。|`\p{Lu}` 匹配“Thomas Doe”中的“T”和“D”。|
+|与字边界匹配|\b（在字符类外部，`\b` 指定字边界，而在字符类内部，`\b` 指定退格符。）|`\bin` 匹配“inside”中的“in”，不匹配“pinto”。|
 |与换行符（即新行后跟回车）相匹配。|\r?\n|仅当“End”是一行的最后一个字符串，且“Begin”是下一行的第一个字符串时，`End\r?\nBegin` 才匹配“End”和“Begin”。|
 |匹配任意字母数字字符|\w|`a\wd` 匹配“add”和“a1d”，不匹配“a d”。|
 |匹配任意空格字符。|(?([^\r\n])\s)|`Public\sInterface` 匹配词组“Public Interface”。|

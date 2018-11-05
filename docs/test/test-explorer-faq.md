@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: douge
-ms.openlocfilehash: 069150d7f441b754b21c0a3a487f5238ef94e039
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
+ms.openlocfilehash: c9321c90132b026a71733dbbadc19a82db20d981
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43775099"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244380"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -84,6 +84,10 @@ ms.locfileid: "43775099"
 测试资源管理器搜索框中不再有“文件路径”筛选器。
 
 Visual Studio 2017 版本 15.7 预览版 3 已删除“测试资源管理器”搜索框中的文件路径筛选器。 此功能的使用率较低，测试资源管理器删除此功能后可提升测试方法的检索速度。 如果此更改会中断你的开发流，请通过[开发人员社区](https://developercommunity.visualstudio.com/)向我们提供反馈。
+
+## <a name="remove-undocumented-interfaces"></a>删除未记录的接口
+Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些更改？
+在 Visual Studio 2019 中，将删除以前标记为公开但从未正式记录过的某些测试窗口 API。 它们在 Visual Studio 2017 中被标记为“弃用”，提前通告扩展维护人员。 据我们所知，很少有扩展找过这些 API 并依赖于它们。 它们包括 `IGroupByProvider`、`IGroupByProvider<T>`、`KeyComparer`、`ISearchFilter`、`ISearchFilterToken`、`ISearchToken` 和 `SearchFilterTokenType`。 若此更改影响了你的扩展，请在[开发者社区](https://developercommunity.visualstudio.com)上提交一个 bug 告知我们。
 
 ## <a name="test-adapter-nuget-reference"></a>测试适配器 NuGet 引用
 在 Visual Studio 2017 版本 15.8 中，发现了我的测试但不执行。

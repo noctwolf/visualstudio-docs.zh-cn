@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3acd9add6f19ec258f808fd55a955eac14b6e5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e95677bde8fbd1a05e83ab460396201316a7786d
+ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831728"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50050308"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 项目文件必需的根元素。  
@@ -59,7 +59,7 @@ ms.locfileid: "49831728"
 | 特性 | 描述 |
 |------------------------| - |
 | `DefaultTargets` | 可选特性。<br /><br /> 如果未指定目标，则默认目标将作为生成的入口点。 使用分号 (;) 分隔多个目标。<br /><br /> 如果未在 `DefaultTargets` 属性或 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 命令行中指定默认目标，那么引擎会在评估 [Import](../msbuild/import-element-msbuild.md) 元素后在项目文件中执行第一个目标。 |
-| `InitialTargets` | 可选特性。<br /><br /> 会在 `DefaultTargets` 属性中或命令行上指定的目标前运行初始目标。 使用分号 (;) 分隔多个目标。 |
+| `InitialTargets` | 可选特性。<br /><br /> 会在 `DefaultTargets` 属性中或命令行上指定的目标前运行初始目标。 使用分号 (`;`) 分隔多个目标。 如果多个导入文件定义 `InitialTargets`，则将按照导入的顺序运行所有提到的目标。 |
 | `Sdk` | 可选特性。 <br /><br /> 用于创建添加到 .proj 文件的隐式 Import 语句的 SDK 名称和可选版本。 如果不指定任何版本，则 MSBuild 将尝试解析默认版本。  例如，`<Project Sdk="Microsoft.NET.Sdk" />` 或 `<Project Sdk="My.Custom.Sdk/1.0.0" />`。 |
 | `ToolsVersion` | 可选特性。<br /><br /> 用于确定 $(MSBuildBinPath) 和 $(MSBuildToolsPath) 的值的工具集 MSBuild 的版本。 |
 | `TreatAsLocalProperty` | 可选特性。<br /><br /> 不会被视为全局的属性名称。 此属性可防止特定命令行属性替代项目或目标文件和所有后续导入中设置的属性值。 使用分号 (;) 分隔多个属性。<br /><br /> 通常，全局属性会替代项目或文件中设置的属性值。 如果该属性在 `TreatAsLocalProperty` 值中列出，那么全局属性值不会替代在该文件或任何后续导入中设置的属性值。 有关详细信息，请参阅[如何：使用不同选项生成相同的源文件](../msbuild/how-to-build-the-same-source-files-with-different-options.md)。 **注意**：可使用 -property（或 -p）开关，在命令提示符处设置全局属性。 还可使用 MSBuild 任务的 `Properties` 属性为多项目生成中的子项目设置或修改全局属性。 有关详细信息，请参阅 [MSBuild 任务](../msbuild/msbuild-task.md)。 |

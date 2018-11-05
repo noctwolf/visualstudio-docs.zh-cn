@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ab45a6867fd94294746c03560dc49eeda9e68af0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e11b7458c5d26d56252b228522c53b00ebadb35b
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853514"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220295"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>使用 CodeLens 查找代码更改和其他历史记录
 
@@ -297,7 +297,7 @@ CodeLens 不支持安装不同版本的 Lync 或 Skype。 可能不会针对所�
 
 4. 按 Tab 转到“显示其设置”列表，然后按向下键选择“CodeLens”。
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>问：我是否能移动 CodeLens `head`s-up 显示？
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>问：我是否能移动 CodeLens 提醒显示？
 
 **答：** 可以，选择![“停靠”图标](../ide/media/codelensdockwindow.png)，将 CodeLens 作为窗口停靠。
 

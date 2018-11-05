@@ -32,12 +32,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c06e9a92eb6b6df82e4f45790b877286e6c52725
-ms.sourcegitcommit: 8ee7efb70a1bfebcb6dd9855b926a4ff043ecf35
+ms.openlocfilehash: 5cd79db9b5bfc2e68dea2ff711b2da6ce55c9bc0
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39081704"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220116"
 ---
 # <a name="link-task"></a>Link 任务
 包装 Visual C++ 链接器工具 (link.exe)。 链接器工具将通用对象文件格式 (COFF) 对象文件和库链接起来，以创建可执行 (.exe) 文件或动态链接库 (DLL)。 有关详细信息，请参阅[链接器选项](/cpp/build/reference/linker-options)。  
@@ -67,7 +67,7 @@ ms.locfileid: "39081704"
   
      指定将放入清单文件的 `dependency` 节的属性。  
   
-     有关详细信息，请参阅 [/MANIFESTDEPENDENCY（指定清单依赖项）](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另请参阅 [Publisher configuration files（发布服务器配置文件）](https://docs.microsoft.com/en-us/windows/desktop/SbsCs/publisher-configuration-files)。  
+     有关详细信息，请参阅 [/MANIFESTDEPENDENCY（指定清单依赖项）](/cpp/build/reference/manifestdependency-specify-manifest-dependencies)。 另请参阅 [Publisher configuration files（发布服务器配置文件）](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files)。  
   
 -   **AdditionalOptions**  
   
@@ -187,7 +187,7 @@ ms.locfileid: "39081704"
   
      指定链接器是否将 **SuppressUnmanagedCodeSecurityAttribute** 应用到链接器生成的从托管代码到本机 DLL 的 P/Invoke 调用。  
   
-    有关详细信息，请参阅 [/CLRUNMANAGEDCODECHECK（添加 SupressUnmanagedCodeSecurityAttribute）](/cpp/build/reference/clrunmanagedcodecheck-add-supressunmanagedcodesecurityattribute)。  
+    有关详细信息，请参阅 [/CLRUNMANAGEDCODECHECK（添加 SuppressUnmanagedCodeSecurityAttribute）](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute)。  
   
 -   **CreateHotPatchableImage**  
   
