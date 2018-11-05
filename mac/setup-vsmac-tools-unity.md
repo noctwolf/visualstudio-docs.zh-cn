@@ -40,7 +40,6 @@ ms.locfileid: "49836341"
 
 ### <a name="manual-installation"></a>手动安装
 
-
 如果您已经拥有Unity 5.6.1或更高版本，但没有 Visual Studio for Mac，则可以手动安装 Visual Studio for Mac。 Visual Studio for Mac 的所有版本都与Visual Studio for Mac Tools for Unity捆绑在一起，包括免费的 Community Edition：
 
 * 前往 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/) 下载 Visual Studio for Mac。
