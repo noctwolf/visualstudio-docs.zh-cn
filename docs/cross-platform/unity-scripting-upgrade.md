@@ -30,15 +30,15 @@ ms.locfileid: "46495604"
 
 若要启用 .NET 4.x 脚本运行时，请执行以下步骤：
 
-1. 通过选择“编辑”>“项目设置”>“播放机”，在 Unity 检查器中打开 PlayerSettings。
+1. 通过选择“Edit > Project Settings > Player”，在 Unity Inspector中打开 PlayerSettings。
 
-1. 在“配置”标题下，单击“脚本运行时版本”下拉列表，然后选择“.NET 4.x 等效”。 系统会提示重启 Unity。
+1. 在“Configuration”标题下，单击“Scripting Runtime Version”下拉列表，然后选择“.NET 4.x Equivalent”。 系统会提示重启 Unity。
 
 ![选择 .NET 4.x 等效项](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>在 .NET 4.x 和 .NET Standard 2.0 配置文件之间进行选择
 
-一旦切换到 .NET 4.x 等效脚本运行时，可使用 PlayerSettings 中的下拉菜单指定“API 兼容级别”（“编辑”>“项目设置”>“播放机”）。 有两种选项：
+一旦切换到 .NET 4.x 等效脚本运行时，可使用 PlayerSettings 中的下拉菜单指定“Api Compatibility Level”（“Edit > Project Settings > Player”）。 有两种选项：
 
 * **.NET Standard 2.0**。 此配置文件与 .NET Foundation 发布的 [.NET Standard 2.0 配置文件](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)匹配。 Unity 建议新项目使用 .NET Standard 2.0。 它比 .NET 4.x 小，有利于尺寸受限的平台。 此外，Unity 承诺在 Unity 支持的所有平台上支持此配置文件。
 
@@ -58,7 +58,7 @@ ms.locfileid: "46495604"
 
 每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用名为 mcs.rsp 的特殊文本文件：
 
-1. 在 Unity 项目的根资产目录中创建名为 mcs.rsp 的新文本文件。
+1. 在 Unity 项目的根Assets目录中创建名为 mcs.rsp 的新文本文件。
 
 1. 在空文本文件的第一行，输入：`-r:System.Net.Http.dll`，然后保存文件。 可将“System.Net.Http.dll”替换为可能缺少引用的任何包含的程序集。
 
@@ -74,7 +74,7 @@ ms.locfileid: "46495604"
 
 1. 浏览 NuGet 以查找要添加的兼容包（.NET Standard 2.0 或 .NET 4.x）。 此示例演示将 [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)（一种用于处理 JSON 的常见包）添加到 .NET Standard 2.0 项目中。
 
-1. 单击“下载”按钮：
+1. 单击“Download”按钮：
 
     ![“下载”按钮](media/vstu_nuget-download.png)
 
@@ -82,11 +82,11 @@ ms.locfileid: "46495604"
 
 1. 在 zip 文件中，导航到 lib/netstandard2.0 目录并复制 Newtonsoft.Json.dll 文件。
 
-1. 在 Unity 项目的根资产文件夹中，创建一个名为“Plugins”的新文件夹。 插件是 Unity 中的特殊文件夹名称。 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
+1. 在 Unity 项目的根Assets文件夹中，创建一个名为“Plugins”的新文件夹。 Plugins是 Unity 中的特殊文件夹名称 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
 
 1. 将 Newtonsoft.Json.dll 文件粘贴到 Unity 项目的“Plugins”目录中。
 
-1. 在 Unity 项目的“资产”目录中创建名为 link.xml 的文件，并添加以下 XML。  此操作将确保 Unity 的字节码去除过程在导出到 IL2CPP 平台时不会删除必要的数据。  虽然此步骤专用于此库，但在处理其他以类似方式使用反射的库时可能会遇到问题。  有关详细信息，请参阅有关此主题的 [Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+1. 在 Unity 项目的“Assets”目录中创建名为 link.xml 的文件，并添加以下 XML。  此操作将确保 Unity 的字节码去除过程在导出到 IL2CPP 平台时不会删除必要的数据。  虽然此步骤专用于此库，但在处理其他以类似方式使用反射的库时可能会遇到问题。  有关详细信息，请参阅有关此主题的 [Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
     ```xml
     <linker>
