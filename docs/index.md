@@ -4,12 +4,12 @@ hide_bc: true
 title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: hub-page
-ms.openlocfilehash: b16114bd175be4c8e13c0418494c730ed58b9d12
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: d458683758916e78d3773b2700fb9ab2ae3acd39
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672858"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750704"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -308,7 +308,7 @@ Unity 游戏</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>调试</h3>
-                                                    <p>调查和修复代码问题。</p>
+                                                    <p>调查并修复代码中的 bug。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -402,7 +402,7 @@ Unity 游戏</a>
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>提高性能</h3>
+                                                    <h3>测量性能</h3>
                                                     <p>通过使用诊断工具来标识瓶颈，并优化代码性能。
                                                     </p>
                                                 </div>
