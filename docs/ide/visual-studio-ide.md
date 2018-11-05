@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2017 概述
-ms.date: 06/01/2018
+ms.date: 10/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cccaef2d5678bffa19e822cf537f4acb3d046cca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49907516"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244445"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
-Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。
+Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。 本文重点介绍 Visual Studio 2017 的 Windows 版本。
 
-这篇概括性的文章主要介绍了 Visual Studio 2017 for Windows。 本文介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
+Visual Studio 2017 有三个版本：Community、Professional 和 Enterprise。 请参阅[比较 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)，了解各个版本支持哪些功能。
+
+本概述文章介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
 
 ## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
 
@@ -98,7 +100,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![转到定义](../ide/media/go-to-definition-menu.png)
 
-- 查看定义[](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [查看定义](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
 
    “速览定义”窗口显示方法或类型的定义，而无需实际打开一个单独的文件。
 

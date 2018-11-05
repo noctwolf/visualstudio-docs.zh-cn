@@ -9,12 +9,12 @@ description: 了解一些 Visual Studio 订阅中随附的 Office 365 权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3aa6a9dc60ea48db5e0d97b7a3c417dcb18559a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 273bba31f0b080116677e9a8dfa727af462fb7bc
+ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908387"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50244458"
 ---
 # <a name="office-365-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365
 
@@ -25,15 +25,24 @@ ms.locfileid: "49908387"
 若要下载和激活 Office 365，请按照下面这些步骤操作：
 1. 登录 Visual Studio Enterprise 订阅。  
 2. 单击“下载”选项卡。
-3. 此时，系统会列出特别推荐的下载内容。 在 Office 列表中，选择“Office 专业增强版 2019”。
-0. 此时，你会看到两个列表。  第二个列表是针对 Office 365。  验证第一个和最后一个下拉列表（用于确定体系结构和媒体类型）是否分别显示“UNK”和“OTH”。   
-0. 必须有产品密钥，才能安装 Office 365。  单击第二个列表下的“获取密钥”链接。
-0. 此时，弹出窗口会显示你已声明的所有密钥。  若要获取新密钥，请单击“声明密钥”。
+3. 此时，系统会列出特别推荐的下载内容。 在 Office 列表中，选择“Office 365”。 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365 下载](_img/vs-office365/vs-office365-downloads.png)
+0. 必须有产品密钥，才能安装 Office 365。  单击 Office 365 列表下的“获取密钥”链接。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365：获取产品密钥](_img/vs-office365/vs-office365-get-key.png)
+0. 弹出窗口将显示任何你已认领的密钥以及可用的密钥。  要获取新密钥，请单击“Office Professional Plus 2019”列表下的“索取密钥”。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365：索取产品密钥](_img/vs-office365/vs-office365-claim-key.png)
 0. 记录刚刚声明的密钥。 （可随时返回到此列表，以再次查看。）
 0. 关闭弹出窗口。
 0. 单击“下载”按钮。 
+   > [!div class="mx-imgBorder"]
+   > ![Office 365：开始下载](_img/vs-office365/vs-office365-download-button.png)
 0. 使用 Microsoft 帐户登录。 （如果已登录，请单击“下一步”。）
 0. 输入产品密钥、国家/地区和语言，再单击“下一步”。
+   > [!div class="mx-imgBorder"]
+   > ![Office 365：输入产品密钥](_img/vs-office365/vs-office365-enter-key.png)
 0. 再次单击“下一步”。
 0. 单击“安装”，以安装 Office 应用。 
 

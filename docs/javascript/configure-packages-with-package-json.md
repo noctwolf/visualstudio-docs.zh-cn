@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 039d88fb3aac6c1f7f0880be8b0f08dcf71bff5a
-ms.sourcegitcommit: aea5cdb76fbc7eb31d1e5cc3c8d6adb0c743220f
+ms.openlocfilehash: 711d7b65eb329e844fedb0148006cacb1c7a0ebf
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44126633"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50219090"
 ---
 # <a name="packagejson-configuration"></a>package.json 配置
 
@@ -28,7 +28,7 @@ npm 包版本控制系统具有严格的规则。 版本格式符合以下规则
 
     [major].[minor].[patch]
 
-假设应用中有一个 5.2.1 版本的包。 5 是主版本，2 是次要版本，1 是修补程序。
+假设应用中有一个 5.2.1 版本的包。 主版本为 5，次版本为 2，修补程序为 1。
 
 * 在主版本更新中，包包含不可后向兼容的新功能，即中断性变更。
 * 在次要版本更新中，向包添加了与早期包版本后向兼容的新功能。

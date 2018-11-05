@@ -7,7 +7,7 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.General
 - VS.ToolsOptionsPages.Text_Editor.ResJSON.General
-- vs.toolsoptionspages.text_editor.all_languages.scrollbars
+- VS.ToolsOptionsPages.Text_Editor.All_Languages.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - statement completion
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3537cf15ef1ec619a701df0036431810dfb7c087
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 6e8d3494ad0c48bb6254090b26faef9162a89f8d
+ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175730"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50220477"
 ---
 # <a name="options-text-editor-all-languages"></a>选项、文本编辑器、所有语言
 使用此对话框可更改代码编辑器的默认行为。 这些设置也适用于其他基于代码编辑器的编辑器，如 HTML 设计器的“源”视图。 若要打开此对话框，请从“工具”菜单中选择“选项”。 在“文本编辑器”文件夹中，展开“所有语言”子文件夹，然后选择“常规”。
@@ -42,24 +42,24 @@ ms.locfileid: "39175730"
 
 
 ## <a name="statement-completion"></a>语句结束
- 自动列出成员
+ **自动列出成员**
 
  选中后，在编辑器中键入时，IntelliSense 会显示可用的成员、属性、值或方法的弹出列表。 从弹出列表中选择任何项即可将该项插入代码中。 选择此选项将启用“隐藏高级成员”选项。
 
- 隐藏高级成员
+ **隐藏高级成员**
 
  选中后，通过只显示最常用的项，缩短弹出语句完成列表。 其他项从列表中被筛选掉。
 
- 参数信息
+ **参数信息**
 
  选中后，当前声明或过程的完整语法及其所有可用的参数显示在编辑器中的插入点下。 下一个可赋值参数以粗体显示。
 
 ## <a name="settings"></a>设置
- 启用虚拟空格
+ **启用虚拟空格**
 
  选中此选项并清除“自动换行”时，可以在代码编辑器中行尾以外的任意位置单击并键入。 此功能可以用于将注释放置在代码旁的一致点处。
 
- 自动换行
+ **自动换行**
 
  选中后，行中水平方向超出可视编辑器区域的任何部分会自动显示在下一行。 选择此选项将启用“显示可视的自动换行标志符号”选项。
 
@@ -67,7 +67,7 @@ ms.locfileid: "39175730"
 > “自动换行”打开时，“虚空格”功能会被关闭。
 
 
- 显示可视的自动换行标志符号
+ **显示可视的自动换行标志符号**
 
  选中后，在一个长行换行到第二行的位置会显示一个回车箭头指示符。
 
@@ -79,7 +79,23 @@ ms.locfileid: "39175730"
 > 这些提醒箭头不会添加到代码中，也不会打印出来。 它们仅供参考。
 
 
- 没有选定内容时对空行应用剪切或复制命令
+**行号**
+
+ 选中后，行号出现在每行代码的旁边。
+
+> [!NOTE]
+> 这些行号不会添加到代码中，也不会打印出来。 它们仅供参考。
+
+
+ **启用单击 URL 定位**
+
+ 选中后，鼠标光标在经过编辑器中的 URL 时会变成向上指的手形。 可以单击该 URL 以在 Web 浏览器中显示指示页面。
+
+ **导航栏**
+
+ 选中后，将在代码编辑器的顶部显示“导航栏”。 它的下拉“对象”和“成员”列表可用于在代码中选择特定的对象，从它的成员中选择，然后导航到代码编辑器中选定成员的声明。
+
+**没有选定内容时对空行应用剪切或复制命令**
 
  此选项设置当你将插入点放置在空行上，未选中任何内容，然后复制或剪切时，编辑器的行为。
 
@@ -91,24 +107,6 @@ ms.locfileid: "39175730"
 
 > [!TIP]
 > 若要显示空格、制表符和行尾的指示符，从而区分缩进行和完全空白的行，请从“编辑”菜单中选择“高级”，然后选择“查看空白”。
-
-
-## <a name="display"></a>显示
- 行号
-
- 选中后，行号出现在每行代码的旁边。
-
-> [!NOTE]
-> 这些行号不会添加到代码中，也不会打印出来。 它们仅供参考。
-
-
- 启用单击 URL 定位
-
- 选中后，鼠标光标在经过编辑器中的 URL 时会变成向上指的手形。 可以单击该 URL 以在 Web 浏览器中显示指示页面。
-
- 导航栏
-
- 选中后，将在代码编辑器的顶部显示“导航栏”。 它的下拉“对象”和“成员”列表可用于在代码中选择特定的对象，从它的成员中选择，然后导航到代码编辑器中选定成员的声明。
 
 ## <a name="see-also"></a>请参阅
 
