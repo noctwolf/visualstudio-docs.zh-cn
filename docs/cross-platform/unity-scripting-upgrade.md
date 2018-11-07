@@ -42,25 +42,25 @@ ms.locfileid: "46495604"
 
 * **.NET Standard 2.0**。 此配置文件与 .NET Foundation 发布的 [.NET Standard 2.0 配置文件](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md)匹配。 Unity 建议新项目使用 .NET Standard 2.0。 它比 .NET 4.x 小，有利于尺寸受限的平台。 此外，Unity 承诺在 Unity 支持的所有平台上支持此配置文件。
 
-* **.NET 4.x**。 此配置文件提供对最新 .NET 4 API 的访问。 它包括 .NET Framework 类库中提供的所有代码，并且还支持 .NET Standard 2.0 配置文件。 如果 .NET Standard 2.0 配置文件中未包含项目所需的部分 API，请使用 .NET 4.x 配置文件。 但此 API 的某些部分并非在所有 Unity 平台上均受支持。
+* **.NET 4.x**。 此配置文件提供对最新 .NET 4 API 的访问权限。 它包括 .NET Framework 类库中提供的所有代码，并且支持 .NET Standard 2.0 配置文件。 如果 .NET Standard 2.0 配置文件中未包含项目所需的部分 API，请使用 .NET 4.x 配置文件。 但此 API 的某些部分并非在所有 Unity 平台上均受支持。
 
-您可以在 Unity 的[博客文章](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)中阅读有关这些选项的更多信息。
+可在 Unity 的[博客文章](https://blogs.unity3d.com/2018/03/28/updated-scripting-runtime-in-unity-2018-1-what-does-the-future-hold/)中阅读有关这些选项的更多信息。
 
 ### <a name="adding-assembly-references-when-using-the-net-4x-api-compatibility-level"></a>使用 .NET 4.x API 兼容级别时添加程序集引用
 
-在“Api Compatibility Level”下拉列表中使用 .NET Standard 2.0 设置时，将引用和使用 API 配置文件中的所有程序集。 但是，在使用较大的 .NET 4.x 配置文件时，默认情况下不会引用 Unity 附带的某些程序集。 若要使用这些 API，必须手动添加程序集引用。 可在 Unity 编辑器安装目录下的 MonoBleedingEdge/lib/mono 目录中查看 Unity 附带的程序集：
+在“API 兼容级别”下拉列表中使用 .NET Standard 2.0 设置时，将引用和使用 API 配置文件中的所有程序集。 但是，在使用较大的 .NET 4.x 配置文件时，默认情况下不会引用 Unity 附带的某些程序集。 若要使用这些 API，必须手动添加程序集引用。 可在 Unity 编辑器安装的 MonoBleedingEdge/lib/mono 目录中查看 Unity 附带的程序集：
 
 ![MonoBleedingEdge 目录](media/vstu_monobleedingedge.png)
 
-例如，如果您使用的是 .NET 4.x 配置文件且希望使用 `HttpClient`，则必须为 System.Net.Http.dll 添加程序集引用。 如果没有它，编译器将报错，提示缺少程序集引用：
+例如，如果使用的是 .NET 4.x 配置文件且希望使用 `HttpClient`，则必须为 System.Net.Http.dll 添加程序集引用。 如果没有它，编译器将报错，指示缺少程序集引用：
 
 ![缺少程序集引用](media/vstu_missing-reference.png)
 
-每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，您无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用名为 mcs.rsp 的特殊文本文件：
+每次打开 Unity 项目时 Visual Studio 都会为其重新生成 .csproj 和 .sln 文件。 因此，无法直接在 Visual Studio 中添加程序集引用，因为它们将在重新打开项目时丢失。 相反，必须使用名为 mcs.rsp 的特殊文本文件：
 
 1. 在 Unity 项目的根Assets目录中创建名为 mcs.rsp 的新文本文件。
 
-1. 在空文本文件的第一行，输入：`-r:System.Net.Http.dll`，然后保存文件。 您可将“System.Net.Http.dll”替换为可能缺少引用的任何包含的程序集。
+1. 在空文本文件的第一行，输入：`-r:System.Net.Http.dll`，然后保存文件。 可将“System.Net.Http.dll”替换为可能缺少引用的任何包含的程序集。
 
 1. 重启 Unity 编辑器。
 
@@ -130,7 +130,7 @@ public class JSONTest : MonoBehaviour
 
 ## <a name="new-syntax-and-language-features"></a>新的语法和语言功能
 
-使用已更新的脚本运行时，Unity 开发者可使用 C# 6 以及一系列新的语言功能和语法。
+使用已更新的脚本运行时，Unity 开发者可访问 C# 6 以及一系列新的语言功能和语法。
 
 ### <a name="auto-property-initializers"></a>自动属性初始化表达式
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>字符串内插
 
-使用较旧的 .NET 3.5 运行时，字符串连接需要繁琐的语法。 现在使用 .NET 4.x 运行时，[`$`字符串内插](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated)功能允许以更直接和可读的语法将表达式插入到字符串中：
+使用较旧的 .NET 3.5 运行时，字符串串联需要繁琐的语法。 现在使用 .NET 4.x 运行时，[`$`字符串内插](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated)功能允许以更直接和可读的语法将表达式插入到字符串中：
 
 ```csharp
 // .NET 3.5
@@ -300,7 +300,7 @@ private void Start ()
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 在需要使用同一个类中的多个静态函数时，通过使用 using static 可以节约空间和时间（写更少的代码）：
+[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 在需要使用同一个类中的多个静态函数时，通过使用 using static 可以节约空间和时间：
 
 ```csharp
 // .NET 3.5
@@ -333,9 +333,10 @@ public class UsingStaticExample: MonoBehaviour
 
 ## <a name="il2cpp-considerations"></a>IL2CPP 注意事项
 
-将游戏导出到 iOS 等平台时，Unity 将使用其 IL2CPP 引擎将 IL“转换”为 C++ 代码，然后使用目标平台的本机编译器进行编译。 在此方案中，有几个不支持的 .NET 功能，例如反射的部分内容和使用 `dynamic` 关键字。 尽管你可以在自己的代码中控制对这些功能的使用，但使用那些没有考虑 Unity 和 IL2CPP 机制的第三方 DLL 和 SDK 时可能会遇到问题。 有关此主题的详细信息，请参阅 Unity 站点上的[脚本限制](https://docs.unity3d.com/Manual/ScriptingRestrictions.html)文档。
+将游戏导出到 iOS 等平台时，Unity 将使用其 IL2CPP 引擎将 IL“转换”为 C++ 代码，然后使用目标平台的本机编译器进行编译。 在此方案中，有几个不支持的 .NET 功能，例如反射的部分内容和使用 `dynamic` 关键字。 尽管你可以在自己的代码中控制对这些功能的使用，但使用那些在编写时没有考虑 Unity 和
+IL2CPP 机制的第三方 DLL 和 SDK 时可能会遇到问题。 有关此主题的详细信息，请参阅 Unity 站点上的[脚本限制](https://docs.unity3d.com/Manual/ScriptingRestrictions.html)文档。
 
-此外，如之前 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中裁剪掉未使用的代码。  虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定是否被调用而在运行时可能被调用的属性或方法。  若要解决这些问题，请添加一个 link.xml 文件到您的项目中，该文件中包含的程序集和命名空间列表不会执行裁剪过程。  有关完整详细信息，请参阅[有关字节码裁剪的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如之前 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中裁剪掉未使用的代码。 虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定是否被调用而在运行时可能被调用的属性或方法。 若要解决这些问题，请添加一个 link.xml 文件到项目中，该文件中包含的程序集和命名空间列表不会执行裁剪过程。 有关完整详细信息，请参阅[有关字节码裁剪的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 示例 Unity 项目
 
