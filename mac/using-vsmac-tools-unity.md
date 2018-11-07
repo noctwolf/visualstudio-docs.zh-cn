@@ -14,7 +14,7 @@ ms.locfileid: "49898819"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
-在本节中，您将学习如何使用 Visual Studio for Mac Tools for Unity 的集成和生产力功能，以及如何使用 Visual Studio for Mac 调试器进行 Unity 开发。
+本部分介绍如何使用 Visual Studio for Mac Tools for Unity 的集成和生产力功能，以及如何使用 Visual Studio for Mac 调试程序进行 Unity 开发。
 
 ## <a name="opening-unity-scripts-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中打开 Unity 脚本
 
