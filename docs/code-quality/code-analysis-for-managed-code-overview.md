@@ -25,20 +25,16 @@ ms.locfileid: "44320808"
 
 Visual Studio 2017 以两种方式分析托管代码：使用传统的托管程序集*FxCop*静态分析和.NET 编译器平台 *分析器*。 本主题介绍 FxCop 静态代码分析。 要了解有关使用.NET Compiler Platform分析器分析代码的更多信息，请参阅[Roslyn分析器概述](../code-quality/roslyn-analyzers-overview.md)。
 
-
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如违反 Microsoft .NET Framework 设计指南中规定的编程和设计准则。
 
 
 分析工具将它在分析期间执行的检查表示为警告消息。 警告消息标识任何相关的编程和设计问题，如有可能，还提供有关如何修复问题的信息。
 
-
 > [!NOTE]
 > Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果您在作为 msbuild 一部分的.NET Core 或.NET Standard 项目上运行代码分析，您将看到类似的错误**error : CA0055 : Could not identify platform for <your.dll>** 。 若要分析.NET Core 或.NET Standard 项目中的代码，请改用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 
-
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
-
 
 您可以手动或自动在您的项目上运行代码分析。
 
@@ -49,7 +45,6 @@ Visual Studio 2017 以两种方式分析托管代码：使用传统的托管程�
 ## <a name="rule-sets"></a>规则集
 
 托管代码的代码分析规则被分组为[规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)。 您可以使用 Microsoft 标准规则集中的一个，也可以[创建自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)以满足特定需求。
-
 
 ## <a name="suppress-warnings"></a>禁止显示警告
 
@@ -73,7 +68,6 @@ Public class MyClass
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 
 作为一个组织，您可能希望要求所有签入都满足某些策略。 特别是，您希望确保遵循以下策略：
-
 
 - 签入的代码中没有构建错误。
 
