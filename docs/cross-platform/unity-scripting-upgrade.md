@@ -1,4 +1,4 @@
----
+﻿---
 title: 在 Unity 中使用 .NET 4.x
 author: conceptdev
 ms.author: crdun
@@ -17,7 +17,7 @@ ms.locfileid: "46495604"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
-自 2002 年 Microsoft 最初发布更新以来，C# 和 .NET（Unity 脚本的基础技术）一直在不断更新。 但 Unity 开发者可能并未意识到 C# 语言和 .NET Framework 不断在添加新功能。 那是因为在 Unity 2017.1 之前，Unity 一直在使用与 .NET 3.5 等效的脚本运行时，已多年未进行更新。
+自从 Microsoft 最初在 2002 年发布它们以来，C＃ 和 .NET（Unity 脚本的基础技术）一直在不断更新。但 Unity 开发者可能并未意识到 C# 语言和 .NET Framework 不断在添加新功能。 那是因为在 Unity 2017.1 之前，Unity 一直在使用与 .NET 3.5 等效的脚本运行时，已多年未进行更新。
 
 随着 Unity 2017.1 的发布，Unity 引入其脚本运行时的实验版，升级到 .NET 4.6、C# 6 兼容版本。 在 Unity 2018.1 中，与 .NET 4.x 等效的运行时不再视为实验版，较旧的等效于 .NET 3.5 的运行时现被视为旧版本。 随着 Unity 2018.3 的发布，Unity 计划将已升级的脚本运行时作为默认选择，并进一步更新为 C# 7。 有关此路线图的详细信息和最新更新，请阅读 Unity 的[博客文章](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)或访问其[实验性脚本预览论坛](https://forum.unity.com/forums/experimental-scripting-previews.107/)。 与此同时，请查看以下部分，了解有关 .NET 4.x 脚本运行时现在可用的新功能的详细信息。
 
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>Expression-Bodied 成员
 
-使用 .NET 4.x 运行时中可用的较新 C# 语法，[Lambda 表达式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可替换函数主体，使它们更为简洁：
+使用 .NET 4.x 运行时中提供的新的 C# 语法，[Lambda 表达式](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions)可替换函数主体，使它们更为简洁：
 
 ```csharp
 // .NET 3.5
@@ -300,7 +300,7 @@ private void Start ()
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 通过 using static，在需要使用同一类中的多个静态函数时，可节省空间和时间：
+[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 在需要使用同一个类中的多个静态函数时，通过使用 using static 可以节约空间和时间：
 
 ```csharp
 // .NET 3.5
@@ -333,9 +333,10 @@ public class UsingStaticExample: MonoBehaviour
 
 ## <a name="il2cpp-considerations"></a>IL2CPP 注意事项
 
-将游戏导出到 iOS 等平台时，Unity 将使用其 IL2CPP 引擎将 IL“转换”为 C++ 代码，然后使用目标平台的本机编译器进行编译。 在此方案中，有几个不支持的 .NET 功能，例如反射的部分内容和使用 `dynamic` 关键字。 虽然可在自己的代码中使用这些功能，但使用第三方 DLL 和 SDK 时可能会遇到问题，这些 DLL 和 SDK 并非使用 Unity 和 IL2CPP 编写。 有关此主题的详细信息，请参阅 Unity 站点上的[脚本限制](https://docs.unity3d.com/Manual/ScriptingRestrictions.html)文档。
+将游戏导出到 iOS 等平台时，Unity 将使用其 IL2CPP 引擎将 IL“转换”为 C++ 代码，然后使用目标平台的本机编译器进行编译。 在此方案中，有几个不支持的 .NET 功能，例如反射的部分内容和使用 `dynamic` 关键字。 尽管你可以在自己的代码中控制对这些功能的使用，但使用那些在编写时没有考虑 Unity 和
+IL2CPP 机制的第三方 DLL 和 SDK 时可能会遇到问题。 有关此主题的详细信息，请参阅 Unity 站点上的[脚本限制](https://docs.unity3d.com/Manual/ScriptingRestrictions.html)文档。
 
-此外，如以上 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中去除未使用的代码。  虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定而在运行时可能被调用的属性或方法。  若要解决这些问题，请将 link.xml 文件添加到特定项目中，该项目包含不运行去除过程的程序集和命名空间的列表。  有关完整详细信息，请参阅[有关字节码去除的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
+此外，如之前 Json.NET 示例中所述，Unity 将尝试在 IL2CPP 导出过程中裁剪掉未使用的代码。 虽然这通常不是问题，但对于使用反射的库，它可能会意外地删除在导出时无法确定是否被调用而在运行时可能被调用的属性或方法。 若要解决这些问题，请添加一个 link.xml 文件到项目中，该文件中包含的程序集和命名空间列表不会执行裁剪过程。 有关完整详细信息，请参阅[有关字节码裁剪的 Unity 文档](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html)。
 
 ## <a name="net-4x-sample-unity-project"></a>.NET 4.x 示例 Unity 项目
 
