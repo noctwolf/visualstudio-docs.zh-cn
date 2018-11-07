@@ -1,4 +1,4 @@
----
+﻿---
 title: 设置 Visual Studio for Mac Tools for Unity
 description: 设置和安装用于 Visual Studio for Mac 的 Unity 工具
 author: dantogno
@@ -22,7 +22,7 @@ ms.locfileid: "49836341"
 
 自 Unity 2018.1 起，Visual Studio for Mac 为 Unity 的默认 C# IDE，并且包含在 Unity 下载助手和 Unity 中心安装工具中。 前往 [store.unity.com](https://store.unity.com/) 下载 Unity。
 
-安装期间，请确保 Visual Studio for Mac 签入组件列表以使用 Unity 进行安装：
+在安装过程中，确保在要与 Unity 一起安装的组件列表中选中 Visual Studio for Mac：
 
 #### <a name="unity-hub"></a>Unity 中心
 
