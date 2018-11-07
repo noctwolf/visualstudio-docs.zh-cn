@@ -32,7 +32,6 @@ Visual Studio 2017 以两种方式分析托管代码：使用传统的托管程�
 > [!NOTE]
 > Visual Studio 中的 .NET Core 和 .NET Standard 项目不支持静态代码分析。 如果您在作为 msbuild 一部分的.NET Core 或.NET Standard 项目上运行代码分析，您将看到类似的错误**error : CA0055 : Could not identify platform for <your.dll>** 。 若要分析.NET Core 或.NET Standard 项目中的代码，请改用[Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
-
 ## <a name="ide-integrated-development-environment-integration"></a>IDE （集成的开发环境） 集成
 
 您可以手动或自动在您的项目上运行代码分析。
