@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 19792a9804072e7c6ade836b408951e2cfadd070
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2c37ab6f42be8e363dcba8a3e2aa6ef78816bff0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910961"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296237"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练： 使用项模板，第 2 部分中创建自定义操作项目项
   定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板后，可能想要为模板提供一个向导。 该向导可用于从用户收集信息，当用户使用模板向项目添加项目项的新实例。 可以使用你收集的信息来初始化项目项。  
@@ -306,7 +306,7 @@ ms.locfileid: "49910961"
   
 13. 在中**描述**框中，输入**此时将打开 SharePoint 开发人员中心网站**。  
   
-14. 在中**URL**框中，输入**http://msdn.microsoft.com/sharepoint/default.aspx**，然后选择**完成**按钮。  
+14. 在中**URL**框中，输入**https://docs.microsoft.com/sharepoint/dev/**，然后选择**完成**按钮。  
   
      Visual Studio 将添加名为的项**CustomAction1**项目并打开*Elements.xml*在编辑器中的文件。 确认*Elements.xml*包含向导中指定的值。  
   
@@ -327,7 +327,7 @@ ms.locfileid: "49910961"
   
      **列表设置**页将出现。  
   
-4.  下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站 http://msdn.microsoft.com/sharepoint/default.aspx，然后关闭浏览器。  
+4.  下**通信**标题页的顶部附近，选择**SharePoint 开发人员中心**链接，请验证是否在浏览器打开该网站 https://docs.microsoft.com/sharepoint/dev/，然后关闭浏览器。  
   
 ## <a name="cleaning-up-the-development-computer"></a>清理开发计算机
  在完成测试的项目项后，从 Visual Studio 的实验实例中删除项目项模板。  

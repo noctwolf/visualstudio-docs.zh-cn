@@ -18,17 +18,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b9eb1de3f18c487a2e6d3cdf3d0ce7ef95e578b3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25a7402a8d0464152e9b1bdd9d2edcdc66824914
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889992"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295899"
 ---
 # <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅[SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。  
   
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。  
+ 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。  
   
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 项目的元素
  SharePoint 项目中的节点被称为 *SharePoint 项*。 SharePoint 项也可能包含一个或多个称为 *SharePoint 项文件*的子文件，例如， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 配置文件和 .aspx 窗体等等。  
@@ -97,10 +97,10 @@ ms.locfileid: "49889992"
   
 |属性名|描述|  
 |-------------------|-----------------|  
-|生成操作|指定文件与生成和部署过程的关系。 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|复制到输出目录|指定是否将源文件复制到“输出”目录。 可以是以下值之一：<br /><br /> -   *不复制*<br />-   *始终复制*<br />-   *如果较新则复制*<br /><br /> 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自定义工具|指定在设计时转换文件并将转换输出放置到另一个文件的工具的名称（如果有）。 例如，数据集 ([!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 文件具有一个默认的自定义工具。 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
-|自定义工具命名空间|用于复制自定义工具的输出的命名空间。 有关详细信息，请参阅 [文件属性](http://msdn.microsoft.com/library/0c6xyb66(v=vs.100).aspx)。|  
+|生成操作|指定文件与生成和部署过程的关系。 有关详细信息，请参阅 [文件属性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|复制到输出目录|指定是否将源文件复制到“输出”目录。 可以是以下值之一：<br /><br /> -   *不复制*<br />-   *始终复制*<br />-   *如果较新则复制*<br /><br /> 有关详细信息，请参阅 [文件属性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自定义工具|指定在设计时转换文件并将转换输出放置到另一个文件的工具的名称（如果有）。 例如，数据集 ([!INCLUDE[TLA2#tla_xsd](../sharepoint/includes/tla2sharptla-xsd-md.md)]) 文件具有一个默认的自定义工具。 有关详细信息，请参阅 [文件属性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
+|自定义工具命名空间|用于复制自定义工具的输出的命名空间。 有关详细信息，请参阅 [文件属性](/previous-versions/visualstudio/visual-studio-2010/0c6xyb66\(v\=vs.100\))。|  
 |部署位置|该文件在 SharePoint 服务器中的完全限定路径。 此路径由部署根和部署路径的子属性组成。|  
 |部署路径|在 SharePoint 服务器文件，例如 Workflow1 上的文件的相对路径\\。 通过串联 *Deployment Path* 值与 *Deployment Root* 值的末端，创建文件的完全限定路径。<br /><br /> 选择的值*RootFile*有关*部署类型*属性更改*Deployment Root*属性设置为\<SharePointRoot >\\，从而导致的完全限定的路径\<SharePointRoot > \Workflow1\\。 有关详细信息，请参阅[打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)。|  
 |Deployment Root|字符串。 将文件部署到 SharePoint Server 中的根文件夹。 例如， \<SharePointRoot > \Template\Features\\\<FeatureName >\\。<br /><br /> *Deployment Type* 设置决定 *Deployment Root* 属性的值。|  

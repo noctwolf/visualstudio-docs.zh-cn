@@ -29,7 +29,7 @@ ms.locfileid: "49898819"
 Visual Studio for Mac Tools for Unity 包括用于访问 Unity API 文档的快捷方式。 要从 Visual Studio for Mac 访问 Unity API 文档，请将光标放置于想要了解的 Unity API 上，并按 ⌘ command + ‘。
 
 ## <a name="intellisense-for-unity-messages"></a>针对 Unity 消息的 IntelliSense
-Unity 引擎向 MonoBehaviour 脚本广播消息，以便开发者编写代码。响应 OnMouseDown 和 OnTriggerEnter 等消息。由于这些不是 MonoBehaviour 基类中的虚拟方法，因此一些 IDE（如 MonoDevelop）缺少适用于 Unity 消息的代码完成功能。
+Unity 引擎向 MonoBehaviour 脚本广播消息，允许开发人员编写对 OnMouseDown，OnTriggerEnter 等消息作出响应的代码。由于这些不是 MonoBehaviour 基类中的虚拟方法，因此一些 IDE（如 MonoDevelop）缺少适用于 Unity 消息的代码完成功能。
 
 但是，Visual Studio for Mac Tools for Unity 将其 IntelliSense 功能扩展到 Unity 消息。 这简化了在 MonoBehaviour 脚本中实现 Unity 消息，并有助于学习 Unity API。 对 Unity 消息使用 IntelliSense：
 
@@ -61,7 +61,7 @@ Unity 引擎向 MonoBehaviour 脚本广播消息，以便开发者编写代码�
 
 ## <a name="adding-new-unity-files-and-folders"></a>添加新 Unity 文件和文件夹
 
-始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
+您始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>添加新的 C# MonoBehaviour 脚本
 

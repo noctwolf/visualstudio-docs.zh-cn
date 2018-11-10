@@ -14,12 +14,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d301d2a43e820f59979692071edbfb25ba1d7386
-ms.sourcegitcommit: 50b19010b2e2b4736835350710e2edf93b980b56
+ms.openlocfilehash: 4c38a74a48dbac190b5f557641e10f54a0413703
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49073736"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671984"
 ---
 # <a name="visual-studio-product-feedback"></a>Visual Studio 产品反馈
 
@@ -54,7 +54,7 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 
 ## <a name="i-want-to-get-involved-in-the-developer-community"></a>我想加入开发人员社区
 
-若要与其他开发人员分享问题和答案，请使用 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)网站、[MSDN 论坛](http://social.msdn.microsoft.com/Forums/home)或 [StackOverflow](http://stackoverflow.com/)。 还可以在[开发人员代码示例](http://code.msdn.microsoft.com/)网站上查看其他开发人员的代码并分享你自己的示例。
+若要与其他开发人员分享问题和答案，请使用 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com)网站、[MSDN 论坛](https://social.msdn.microsoft.com/Forums/home)或 [StackOverflow](http://stackoverflow.com/)。 还可以在[开发人员代码示例](https://code.msdn.microsoft.com/)网站上查看其他开发人员的代码并分享你自己的示例。
 
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我希望帮助改进 Visual Studio 文档
 

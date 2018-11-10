@@ -19,15 +19,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b363e64cbd23bcaa05eeca9aae9c26a6d4e376b3
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: f68f6e50be569df6130f7e6c6f3aa4bc7c107214
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219778"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296042"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>对 SharePoint 解决方案进行故障排除
-  当使用调试 SharePoint 解决方案时，可能出现以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](http://msdn.microsoft.com/en-us/3a5392f3-66f3-48be-956e-02de23fa6247)。
+  当使用调试 SharePoint 解决方案时，可能出现以下问题或警报[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]调试器。 有关详细信息，请参阅[调试 SharePoint 2007 工作流解决方案](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247)。
   
 ## <a name="token-restrictions-in-sandboxed-visual-web-parts"></a>沙盒可视 web 部件中的标记限制
  沙盒解决方案中的可视 Web 部件无法处理标准标记，例如 SharePoint 运行时支持的 $SPUrl。 因此不会解析 URL，并且如果你直接在脚本元素中引用 URL，则无法在可视 Web 部件设计器的“设计”视图中预览内容：  
@@ -105,7 +105,7 @@ ms.locfileid: "50219778"
  无。  
   
 ### <a name="resolution"></a>解决方法  
- 由于不正确的值中会发生此问题**路径**属性为 webtemp 站点定义配置文件，如*webtemp_SiteDefinitionProject1.xml*。 在**路径**webtemp 文件，位于属性**部署位置**，为相应的区域设置更改 1033年[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文区域设置将值更改为 1041年。 有关详细信息，请参阅[由 Microsoft 分配的区域设置 Id](http://go.microsoft.com/fwlink/?LinkID=165561) MSDN 网站上。  
+ 由于不正确的值中会发生此问题**路径**属性为 webtemp 站点定义配置文件，如*webtemp_SiteDefinitionProject1.xml*。 在**路径**webtemp 文件，位于属性**部署位置**，为相应的区域设置更改 1033年[!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]。 例如，若要使用日文区域设置将值更改为 1041年。 有关详细信息，请参阅[由 Microsoft 分配的区域设置 Id](http://go.microsoft.com/fwlink/?LinkID=165561)。  
   
 ## <a name="error-appears-when-a-workflow-project-is-deployed-on-a-clean-system"></a>在干净系统上部署工作流项目时，会出现错误
  如果在干净系统上部署 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的工作流项目，则会发生此问题。 干净系统是指以全新方式安装了 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 SharePoint 但未部署工作流项目的计算机。  

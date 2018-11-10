@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b84223f9758302064622313cd5406b10c872f170
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 16b8c3a35a7d4a489a199b4de9f7fbe34bca9361
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179900"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671009"
 ---
 # <a name="localizing-applications"></a>本地化应用程序
 
@@ -42,6 +42,6 @@ ms.locfileid: "39179900"
 
  [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms) 提供有关创建支持多种区域性的 Windows 应用程序的页面链接。
 
- [全球化和本地化](http://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 提供了有关创建支持多区域性的 Web 应用程序的页面链接。
+ [全球化和本地化](https://msdn.microsoft.com/Library/8ef3838e-9d05-4236-9dd0-ceecff9df80d) 提供了有关创建支持多区域性的 Web 应用程序的页面链接。
 
- [开发全球通用应用程序的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)为国际受众提供关于编程的信息（例如设计问题和术语）。
+ [开发全球通用应用程序的最佳做法](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps)为国际受众提供关于编程的信息（例如设计问题和术语）。

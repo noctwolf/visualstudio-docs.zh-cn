@@ -13,12 +13,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: douge
-ms.openlocfilehash: c77243f69cedbd340ee91354ef49651e31605e04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a2c5806af5712a396659d484d09d3fd7374111a1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845356"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220926"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ Microsoft Fakes 将应用的其余部分替换为*存根*或*垫片*，有助于
   
     ```  
   
-     此处最为神奇的就是类 `StubIStockFeed`。 对于所引用程序集中的每个接口，Microsoft Fakes 机制将生成一个存根类。 存根类的名称派生自接口的名称，前缀为“`Fakes.Stub`”，并且在名称后面追加了参数类型名称。  
+     此处最为神奇的就是类 `StubIStockFeed`。 对于所引用程序集中的每个接口，Microsoft Fakes 机制将生成一个存根类。 存根类的名称派生自的接口名称与"`Fakes.Stub`"作为前缀，追加的参数类型名称。  
   
      另外，还会为属性的 getter 和 setter、事件和泛型方法生成存根。 有关详细信息，请参阅[使用存根隔离应用的各个部分以供单元测试使用](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
   

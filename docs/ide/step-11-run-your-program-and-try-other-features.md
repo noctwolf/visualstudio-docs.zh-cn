@@ -11,17 +11,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: feee6c95852e90fef5f3fcacf47dfb67d48255b7
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 87992bb8ab2557dbca4c8e7e3a94dd99e5de7682
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34747637"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671919"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步骤 11：运行程序并尝试其他功能
 您的程序已完成并已做好运行准备。 可以运行程序并设置 <xref:System.Windows.Forms.PictureBox> 的背景色。 若要了解更多信息，请尝试通过以下操作来改进程序：更改窗体的颜色、自定义按钮和复选框以及更改窗体的属性。
 
- 若要下载完整的示例版本，请参阅[图片查看器教程的完整示例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)。
+ 若要下载完整的示例版本，请参阅[图片查看器教程的完整示例](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)。
 
  ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205216) 或[教程 1：在 C# 中创建图片查看器 - 视频 5](http://go.microsoft.com/fwlink/?LinkId=205206)。 这些视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
@@ -53,7 +53,7 @@ ms.locfileid: "34747637"
 
 ## <a name="to-continue-or-review"></a>继续或查看
 
--   若要了解有关 Visual Studio 编程的详细信息，请参阅[编程概念](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)。
+-   若要了解有关 Visual Studio 编程的详细信息，请参阅[编程概念](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)。
 
 -   若要了解有关 Visual Basic 的详细信息，请参阅[使用 Visual Basic 开发应用程序](/dotnet/visual-basic/developing-apps/index)。
 

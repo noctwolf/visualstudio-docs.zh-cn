@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 202a9ac88310656c59fa507cbb8fe271b6f1d040
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 56f50a3c50156cbd932fc7a7247fd96c4c6c2834
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813202"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296250"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练： 使用项目模板，第 1 部分创建站点栏项目项
   SharePoint 项目是针对一个或多个 SharePoint 项目项的容器。 可以通过创建自己的 SharePoint 项目项类型，然后将其关联到的项目模板来扩展 Visual Studio 中的 SharePoint 项目系统。 在此演练中，将为创建网站栏中，定义项目项类型，然后将创建可用于创建包含网站栏项目项的新项目的项目模板。  
@@ -642,7 +642,7 @@ ms.locfileid: "49813202"
   
 1.  在中**解决方案资源管理器**，在**SiteColumnProjectItem**项目中，在清单编辑器中打开 source.extension.vsixmanifest 文件中。  
   
-     在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**站点列**。  
   
@@ -657,7 +657,7 @@ ms.locfileid: "49813202"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.ProjectTemplate**。  
   
     > [!NOTE]  
-    >  此值对应于`ProjectTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目模板的 VSIX 包。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)。  
+    >  此值对应于`ProjectTemplate`extension.vsixmanifest 文件中的元素。 此元素标识的子文件夹中包含的项目模板的 VSIX 包。 有关详细信息，请参阅[ProjectTemplate 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -670,7 +670,7 @@ ms.locfileid: "49813202"
 10. 在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 11. 在中**源**列表中，选择**当前解决方案中的项目**。  
   

@@ -24,12 +24,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bf13870d54de312be3e97009c07076b49785516b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 18848f0ebd6ffa289ea09553de82f5b9eb893181
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913964"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295834"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练： 使用业务数据在 SharePoint 中创建外部列表
 
@@ -85,7 +85,7 @@ ms.locfileid: "49913964"
 
 2. 将连接添加到 SQL Server AdventureWorks 示例数据库。
 
-     有关详细信息，请参阅[添加/修改连接 (Microsoft SQL Server)](http://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)。
+     有关详细信息，请参阅[添加/修改连接 (Microsoft SQL Server)](https://msdn.microsoft.com/fa400910-26c3-4df7-b9d1-115e688b4ea3)。
 
 3. 在 **“解决方案资源管理器”** 中，选择项目节点。
 

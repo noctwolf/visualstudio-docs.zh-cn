@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f0b90ae76717ce8365bad2ef780efb51b509d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d2c76a6eb760e55659c7da4df2a1a341426f0c6e
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874665"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50671802"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步骤 8：为“显示图片”按钮事件处理程序编写代码
 
@@ -28,7 +28,7 @@ ms.locfileid: "49874665"
 
 IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码。 当您输入代码时，IDE 会打开一个框，其中显示与您所输入的部分单词对应的完整建议内容。 它尝试确定您接下来要做的事情，并自动跳到您从列表中选择的最后一项。 您可以使用向上键或向下键在列表中进行移动，也可以继续键入字母以缩小选择范围。 当你看到所需的选项时，请选择 Tab 键以将其选中。 或者，也可以忽略不需要的建议。
 
-![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](https://msdn.microsoft.com/en-us/vstudio/gg315355.aspx)。 此视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
+![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请观看[教程 1：在 Visual Basic 中创建图片查看器 - 视频 4](https://msdn.microsoft.com/vstudio/gg315355.aspx)。 此视频使用 Visual Studio 的早期版本，因此在一些菜单命令和其他用户界面元素上略有差异。 但是，概念和过程与当前版本的 Visual Studio 大同小异。
 
 ## <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>为“显示图片”按钮事件处理程序编写代码
 
@@ -48,7 +48,7 @@ IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码�
 
     2.  “IntelliSense”窗口打开并显示“openFileDialog1”。 选择 Tab 键以将其选定。 （在 Visual Basic 中，因为首字母大写，所以会看到“OpenFileDialog1”。 确保“OpenFileDialog1”已选中。）
 
-         若要了解有关 `OpenFileDialog` 的详细信息，请参阅 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。
+         若要了解有关 `OpenFileDialog` 的详细信息，请参阅 [OpenFileDialog](<xref:System.Windows.Forms.OpenFileDialog>)。
 
     3.  键入句点 (`.`)（许多程序员称此符号为点）。由于在“openFileDialog1”的后面紧接着键入了一个句点，因此“IntelliSense”窗口将打开，其中填充有“OpenFileDialog”组件的所有属性和方法。 在 Windows 窗体设计器中选择该组件时，“属性”窗口中将显示相同的属性。 您还可选择将告知组件要执行的操作（例如打开对话框）的方法。
 
@@ -63,7 +63,7 @@ IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码�
 
     4.  开始键入 `ShowDialog`（是否大写对 IntelliSense 来说不重要）。 `ShowDialog()` 方法将显示“打开文件”对话框。 在窗口突出显示“ShowDialog”之后，请选择 Tab 键。 也可突出显示“ShowDialog”并选择 F1 键，获取有关它的帮助。
 
-         若要了解有关 `ShowDialog()` 方法的详细信息，请参阅 [ShowDialog 方法](http://msdn.microsoft.com/library/c7ykbedk.aspx)。
+         若要了解有关 `ShowDialog()` 方法的详细信息，请参阅 [ShowDialog 方法](<xref:System.Windows.Forms.Form.ShowDialog%2A>)。
 
     5.  对控件或组件使用方法（称为“调用方法”）时，需要添加圆括号。 因此请在 `ShowDialog` 中紧接着“g”之后输入左括号和右括号 `()`，现在它看起来应像“openFileDialog1.ShowDialog()”。
 
@@ -79,7 +79,7 @@ IDE 提供一种名为 IntelliSense 的强大工具，可帮助您编写代码�
 
     8.  键入一个点，在“IntelliSense”窗口中打开 DialogResult 值。 输入字母 `O`，然后选择 Tab 键插入“OK”。
 
-         若要了解有关 DialogResult 的详细信息，请参阅 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。
+         若要了解有关 DialogResult 的详细信息，请参阅 [DialogResult](<xref:System.Windows.Forms.DialogResult>)。
 
         > [!NOTE]
         >  第一行代码应会完成。 对于 Visual C#，此代码行应如下所示。
