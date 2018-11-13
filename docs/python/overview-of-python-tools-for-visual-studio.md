@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d686d51216141ccf2960a9b6cffd0ea9aafb329
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: ee6d8349887207a7c9eaf34ec2485d045acd4e47
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991609"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000869"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 
@@ -151,7 +151,7 @@ Python 工作负载包括 Azure SDK for Python，用于简化在 Windows、Mac O
 
 **问：是否可通过 Visual Studio for Mac 获得 Python 支持？**
 
-答： 目前不行，但你可以在 [UserVoice](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac/suggestions/18670291-python-tools-for-visual-studio-mac) 上为该请求投票。 [Visual Studio for Mac](/visualstudio/mac/) 文档会标识当前支持的开发类型。 同时，Windows、Mac 和 Linux 上的 Visual Studio Code 可[通过可用扩展与 Python 配合工作](https://code.visualstudio.com/docs/languages/python)。
+答： 目前不行，但你可以在[开发者社区](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html)上为该请求投票。 [Visual Studio for Mac](/visualstudio/mac/) 文档会标识当前支持的开发类型。 同时，Windows、Mac 和 Linux 上的 Visual Studio Code 可[通过可用扩展与 Python 配合工作](https://code.visualstudio.com/docs/languages/python)。
 
 **问：构建 Python UI 可以使用什么工具？**
 

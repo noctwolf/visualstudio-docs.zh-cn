@@ -1,5 +1,5 @@
 ---
-title: MSTest 命令行选项
+title: VSTest.Console.exe 命令行选项
 ms.date: 07/12/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,12 +12,12 @@ author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f090607f1ebae6a03c7f12536e0dd5d46199f6e
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 4394fe8d7920f4127f5043808003d400bc991590
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612657"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220965"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -41,10 +41,10 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/Enablecodecoverage**|在测试运行中启用数据诊断适配器 CodeCoverage。<br />如果未使用设置文件指定设置，则将使用默认设置。|
 |**/InIsolation**|在隔离的进程中运行测试。<br />这种隔离使 vstest.console.exe 进程不太可能在测试出错时停止，但测试的运行速度可能较慢。|
 |**/UseVsixExtensions**|此选项使 vstest.console.exe 进程使用或跳过在测试运行中安装的 VSIX 扩展（如果有）。<br />此选项已弃用。 从 Visual Studio 的下一个主版本开始，此选项可能会删除。 转为作为 NuGet 包提供的使用扩展。<br />示例：`/UseVsixExtensions:true`|
-|**/TestAdapterPath:[路径]**|强制 vstest.console.exe 进程使用测试运行中指定路径（如果有）内的自定义测试适配器。<br />示例：`/TestAdapterPath:&lt;pathToCustomAdapters&gt;`|
+|**/TestAdapterPath:[路径]**|强制 vstest.console.exe 进程使用测试运行中指定路径（如果有）内的自定义测试适配器。<br />示例：`/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[平台类型]**|将用来执行测试的目标平台体系结构。<br />有效值为 x86、x64 和 ARM。|
 |**/Framework: [Framework 版本]**|要用于测试执行的目标 .NET Framework 版本。<br />有效值为 Framework35、Framework40、Framework45 和 FrameworkUap10。<br />如果将目标框架指定为 Framework35，则测试在 CLR 4.0“兼容模式”下运行。<br />示例：`/Framework:framework40`|
-|**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly&#124;FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
+|**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[\|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|显示使用情况信息。|
 |**/Logger:[*uri/friendlyname*]**|为测试结果指定一个记录器。<br />示例：若要将结果记录到 Visual Studio 测试结果文件 (TRX)，请使用 /Logger:trx。<br />示例：若要将测试结果发布到 Team Foundation Server，请使用 TfsPublisher：<br />**/logger:TfsPublisher;**<br />**Collection=<project url\>;**<br />**BuildName=<build name\>;**<br />**TeamProject=<project name\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<title\>]**|
 |**/ListTests:[文件名]**|列出给定测试容器中的已发现的测试。|

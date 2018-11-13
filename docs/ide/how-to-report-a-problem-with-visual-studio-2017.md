@@ -12,12 +12,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a059e25546abf0d1624d3c8bc08a531d3fc4b382
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: f0d53ece6add1c781cb18569139fea5ffbbeca76
+ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "36755919"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51000224"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何报告 Visual Studio 2017 的问题
 
@@ -125,7 +125,7 @@ ms.locfileid: "36755919"
 
 如果不希望或不能使用 Visual Studio 报告问题，可能 [Visual Studio 开发人员社区](https://developercommunity.visualstudio.com/)页上已报告此问题并且已发布解决方案。
 
-如果没有要报告的问题但希望提供产品反馈或建议，也可以。 有关详细信息，请参阅 [UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-ide) 页。
+如果没有要报告的问题但希望建议一项功能，也可以在此处提供反馈。 有关详细信息，请参阅[建议一项功能](https://developercommunity.visualstudio.com/content/idea/post.html?space=8)页面。
 
 ## <a name="see-also"></a>请参阅
 

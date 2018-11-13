@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 689889e98a5a9b69a49e73ccea73f30fc3c25249
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e2204f10711db96033976cf7b4f7bd3639daf422
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49274308"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349083"
 ---
 # <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>在 Visual Studio 中的字符串可视化工具中查看字符串
 
@@ -43,9 +43,9 @@ ms.locfileid: "49274308"
 
 ## <a name="view-string-visualizer-data"></a>查看字符串可视化工具数据
 
-在字符串可视化工具窗口中，**表达式**字段显示的变量或表达式要悬停，并**值**字段显示的字符串值。 
+在字符串可视化工具窗口中，**表达式**字段显示的变量或表达式要悬停，并**值**字段显示的字符串值。
 
-空白**值**意味着所选的可视化工具不能识别该字符串。 例如， **XML 可视化工具**显示空白**值**无 XML 标记，一个文本字符串或 JSON 字符串。 
+空白**值**意味着所选的可视化工具不能识别该字符串。 例如， **XML 可视化工具**显示空白**值**无 XML 标记，一个文本字符串或 JSON 字符串。
 
 若要查看所选的可视化工具无法识别的字符串，请选择**文本可视化工具**。 **文本可视化工具**显示纯文本。
 
@@ -67,5 +67,7 @@ ms.locfileid: "49274308"
 
 ![HTML 字符串可视化工具](../debugger/media/dbg-string-visualizers-html.png "HTML 字符串可视化工具")
 
-## <a name="see-also"></a>请参阅  
- [创建自定义可视化工具 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)
+## <a name="see-also"></a>请参阅
+
+- [创建自定义可视化工具 （C#、 Visual Basic）](../debugger/create-custom-visualizers-of-data.md)
+- [在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)

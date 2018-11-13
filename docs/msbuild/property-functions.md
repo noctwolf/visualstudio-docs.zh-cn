@@ -163,7 +163,7 @@ $([MSBuild]::Add($(NumberOne), $(NumberTwo)))
 |long Modulo(长型值 a, 长型值 b)|对两个长型值取模。|
 |string Escape(未转义字符串)|根据 MSBuild 转义规则对字符串进行转义。|
 |string Unescape(已转义字符串)|根据 MSBuild 转义规则取消对字符串进行转义。|
-|int BitwiseOr(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `OR`（第一个值 | 第二个值）。|
+|int BitwiseOr(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `OR`（第一个值 &#124; 第二个值）。|
 |int BitwiseAnd(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `AND`（第一个值 & 第二个值）。|
 |int BitwiseXor(第一个整型值, 第二个整型值)|对第一个值和第二个值执行按位 `XOR`（第一个值 ^ 第二个值）。|
 |int BitwiseNot(第一个整型值)|执行按位 `NOT`（~第一个值）。|
