@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2c8c23be02f13646c8577d2672bc60b63a1d0a
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: 966634ee9a71854334bdd5342326c1663b9ad16c
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672153"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>教程 1：创建图片查看器
 
@@ -42,7 +42,7 @@ ms.locfileid: "40008676"
 
 ## <a name="tutorial-links"></a>教程链接
 
-若要下载完整的示例版本，请参阅[图片查看器教程的完整示例](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)。
+若要下载完整的示例版本，请参阅[图片查看器教程的完整示例](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8)。
 
 ![视频链接](../data-tools/media/playvideo.gif)有关本主题的视频版本，请参阅[如何在 Visual Basic 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205207)或[如何在 C# 中创建图片查看器？](http://go.microsoft.com/fwlink/?LinkId=205198)。
 

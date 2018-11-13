@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5215770d362e2f1ebd21f9131b82073376c28bf6
-ms.sourcegitcommit: 4c60bcfa2281bcc1a28def6a8e02433d2c905be6
+ms.openlocfilehash: e1c4e55fe6275d750d3bc3b03fb8f0ac5eec2751
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42627030"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672920"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -27,7 +27,7 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 
 如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
-有关详细信息，请参阅[内存限制](https://msdn.microsoft.com/library/windows/desktop/aa366778(v=vs.85).aspx#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
+有关详细信息，请参阅[内存限制](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
 
 ## <a name="disable-automatic-file-restore"></a>禁用自动文件还原
 

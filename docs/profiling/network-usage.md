@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d620ae0f93b2bbcee66419cfe9ff5e76e470c5f0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 03b5a669c0977aa35ef6943af3fa6afe6dda2aaa
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918878"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220783"
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP 应用中的网络使用情况
 Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http API](/uwp/api/windows.web.http) 执行的网络操作的数据。 分析数据可以帮助你解决问题（如访问和身份验证问题、不正确的缓存用法和不良的显示和下载性能）。  
@@ -23,7 +23,7 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
  “网络”工具仅支持 UWP 应用。 目前不支持其他平台。  
   
 > [!NOTE]
->  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studios-network-tool.aspx)。  
+>  有关该网络工具的更完整说明，请参阅 [Visual Studio 的网络工具简介](https://blogs.msdn.microsoft.com/visualstudio/2015/05/04/introducing-visual-studios-network-tool/)。  
   
 ## <a name="collect-network-tool-data"></a>收集网络工具数据  
  你应在 Visual Studio 计算机上打开的 Visual Studio 项目中运行“网络”工具。  
@@ -75,6 +75,6 @@ Visual Studio“网络”诊断工具用于收集有关使用 [Windows.Web.Http 
 ## <a name="see-also"></a>请参阅  
  [运行带/不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 博客：Visual Studio 网络检查器简介](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [第 9 频道视频：VS 诊断工具 – 新的网络探查器](http://channel9.msdn.com/Series/ConnectOn-Demand/206)  
+ [第 9 频道视频：VS 诊断工具 – 新的网络探查器](https://channel9.msdn.com/Series/ConnectOn-Demand/206)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [首先了解分析工具](../profiling/profiling-feature-tour.md)

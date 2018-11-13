@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ca071c7e46325901425048417b0fd1a07607fd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ad5ab8a337d790af8cd6d800c7bf36ea6ff01286
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49826526"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348668"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 以下是常见的问题可能与你的 VSPackage 并解决问题的提示。  
@@ -44,7 +44,7 @@ ms.locfileid: "49826526"
   
 3. 请检查 VSPackage 的注册表条目。  
   
-    有关详细信息，请参阅[注册 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)并[管理 Vspackage](../extensibility/managing-vspackages.md)。  
+    有关详细信息，请参阅[注册 Vspackage](registering-and-unregistering-vspackages.md)并[管理 Vspackage](../extensibility/managing-vspackages.md)。  
   
 4. 打开**输出**的实例的窗口[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]无法加载 VSPackage。 有关 VSPackage 无法加载的原因的信息可能显示在该窗口中。  
   

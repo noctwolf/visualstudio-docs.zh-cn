@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bf0cd52e94ecd3765dd580d437a227f5c11c149d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cf07f939a9ce15d2ebca7afb0ee37695fa5fbf98
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884779"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220593"
 ---
 # <a name="concurrency-visualizer-markers"></a>并发可视化工具标记
 在并发可视化工具中，标记是代表应用事件的图标。  通常，应用生成这些事件是为了指定应用程序中的阶段或匹配项。  事件可以由应用或应用所使用的库和运行时生成。  
@@ -53,7 +53,7 @@ ms.locfileid: "49884779"
   
 - [并发运行时](/cpp/parallel/concrt/concurrency-runtime)  
   
-- [方案标记支持](http://msdn.microsoft.com/en-us/e3b55bc2-b451-4214-ae00-0c7f5a5baec8)  
+- [方案标记支持](/previous-versions/visualstudio/visual-studio-2010/dd984115\(v\=vs.100\))  
   
 - [C++ AMP (C++ Accelerated Massive Parallelism)](/cpp/parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism)  
   

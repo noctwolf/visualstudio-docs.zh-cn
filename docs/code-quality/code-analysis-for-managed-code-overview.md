@@ -1,4 +1,4 @@
----
+﻿---
 title: 在 Visual Studio 中的托管代码的代码分析
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
@@ -23,7 +23,7 @@ ms.locfileid: "44320808"
 ---
 # <a name="overview-of-code-analysis-for-managed-code"></a>托管代码的代码分析概述
 
-Visual Studio 2017 以两种方式分析托管代码：一种是使用传统的托管程序集 *FxCop* 静态分析，另一种是使用 .NET Compiler Platform **分析器。本主题介绍 FxCop 静态代码分析。若要详细了解如何使用 .NET Compiler Platform 分析器来分析代码，请参阅 [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 2017 以两种方式分析托管代码：一种是使用传统的托管程序集 *FxCop* 静态分析，另一种是使用 .NET Compiler Platform 分析器。 本主题介绍 FxCop 静态代码分析。 若要详细了解如何使用 .NET Compiler Platform 分析器来分析代码，请参阅 [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)。
 
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如违反 Microsoft .NET Framework 设计指南中规定的编程和设计准则。
 
@@ -48,6 +48,7 @@ Visual Studio 2017 以两种方式分析托管代码：一种是使用传统的�
 
 通常，指出警告不适用是有用的。这样可以告知开发人员以及可能会在以后检查代码的其他人员：这个警告已被调查过，并且已被禁止显示或被忽略。
 
+
 在源代码中禁止显示警告是通过自定义特性实现的。 若要禁止显示警告，请向源代码添加特性 `SuppressMessage`，如下面的示例所示：
 
 ```csharp
@@ -61,7 +62,7 @@ Public class MyClass
 有关详细信息，请参阅[禁止显示警告](../code-quality/in-source-suppression-overview.md)。
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。如果还没有准备好修复警告，并且想要立即提高工作效率，则可*重置*项目的分析状态。从**分析**菜单中，选择**运行代码分析并取消未解决的问题**。
+> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 如果还没有准备好修复警告，并且想要立即提高工作效率，则可*重置*项目的分析状态。 从**分析**菜单中，选择**运行代码分析并取消未解决的问题**。
 
 ## <a name="run-code-analysis-as-part-of-check-in-policy"></a>作为签入策略的一部分运行代码分析
 

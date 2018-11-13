@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c79184af7afa11e2008ff32ce2ffb2dedd19559
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4fb3f0c5d44ed8043266640cfeb30838f7d37894
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827724"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220770"
 ---
 # <a name="analyze-memory-usage-without-the-visual-studio-debugger"></a>分析不使用 Visual Studio 调试器情况下的内存使用情况
 可以在不调试的情况下使用**内存使用率**执行以下操作  
@@ -204,5 +204,5 @@ ms.locfileid: "49827724"
  [JavaScript 内存](../profiling/javascript-memory.md)  
  [使用 Visual Studio 分析](../profiling/index.md)  
  [首先了解分析工具](../profiling/profiling-feature-tour.md)  
- [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [使用 C++、C# 和 Visual Basic 的 UWP 应用的性能最佳做法](/previous-versions/windows/apps/hh750313\(v\=win.10\))   
  [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)（在 Visual Studio 中使用新的内存使用情况工具诊断内存问题）

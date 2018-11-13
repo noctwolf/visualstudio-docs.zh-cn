@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c21402c3b2b71372aaf170c68c65777eba4e95bf
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 1d6d2c5355fbce44bbb97a33e21ad623997ddceb
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33703741"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670801"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 在启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 后执行指定的命令。
@@ -35,7 +35,7 @@ devenv /command CommandName
 ## <a name="remarks"></a>备注
  启动完成后，IDE 将执行已命名的命令。 如果使用此开关，IDE 将不会在启动时显示 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 起始页。
 
- 如果外接程序公开了某个命令，则可以使用此开关从命令行启动此外接程序。 有关详细信息，请参阅[如何：使用外接程序管理器控制外接程序](http://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)。
+ 如果外接程序公开了某个命令，则可以使用此开关从命令行启动此外接程序。 有关详细信息，请参阅[如何：使用外接程序管理器控制外接程序](https://msdn.microsoft.com/Library/4f60444a-cb48-4cdb-8df4-941f6419aeeb)。
 
 ## <a name="example"></a>示例
  此示例将启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 并自动运行宏“打开收藏夹文件”。
@@ -47,4 +47,4 @@ devenv /command "Macros.MyMacros.Module1.OpenFavoriteFiles"
 ## <a name="see-also"></a>请参阅
 
 - [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)
-- [Visual Studio 命令别名](../../ide/reference/visual-studio-command-aliases.md)
+- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

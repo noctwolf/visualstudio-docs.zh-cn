@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f64de3b95d21fdae87dd6b14754956381d60e9a3
-ms.sourcegitcommit: 96a6d1f16d06ca28d309d05b6e9fbd52f628cdbc
+ms.openlocfilehash: d77bfad86024cf95ce1649498ddda5d1450a1c33
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40008237"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672010"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
 
@@ -38,12 +38,12 @@ ms.locfileid: "40008237"
 
 ## <a name="tutorial-links"></a>教程链接
 
-若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
+若要下载示例的完整版本，请参阅[完整匹配游戏教程示例](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba)。
 
 > [!NOTE]
 > 在本教程中，同时涉及 Visual C# 和 Visual Basic，因此请关注特定于您使用的编程语言的信息。
 
-如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral)和 [Visual C# 论坛](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
+如果你遇到困难或在编程方面有疑问，请尝试在一个 MSDN 论坛上发布你的问题。 请参阅 [Visual Basic 论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vbgeneral)和 [Visual C# 论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=csharpgeneral)。 另外，那里有很好的免费视频学习资源供你使用。 若要了解有关 Visual Basic 编程的详细信息，请参阅 [Visual Basic 基础知识：零基础开发](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners)。 若要了解有关 Visual C# 编程的详细信息，请参阅 [C# 基础知识：零基础开发](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners)。
 
 ## <a name="related-topics"></a>相关主题
 

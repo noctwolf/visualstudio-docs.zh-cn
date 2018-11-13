@@ -32,7 +32,7 @@ ms.locfileid: "31474358"
 # <a name="remote-debugging-errors-and-troubleshooting"></a>远程调试错误和疑难解答
 尝试远程调试时，可能会遇到下面的错误。  
   
--   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [错误：无法自动单步执行服务器](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
 -   [错误：Microsoft Visual Studio 远程调试监视器 (MSVSMON.EXE) 似乎没有在远程计算机上运行。](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   

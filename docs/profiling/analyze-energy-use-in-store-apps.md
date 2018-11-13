@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e74ec5e1e4efe4cbdf98125aa17cb3646fbc136
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 08723f30957ece57af0f666a5464907a686ad604
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930903"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220730"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备上的 UWP 应用的功率和能耗情况，这些低功率平板设备在所有时间或部分时间内靠自有电池运行。 在电池供电的设备上，如果应用程序使用过多的能量，可能导致客户非常不满，最终客户甚至可能将其卸载。 能量利用的优化可使更多的客户选择并使用你的应用程序。  
@@ -54,7 +54,7 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
   
  **向 C#、Visual Basic、C++ 代码添加标记**  
   
- 若要向 C#、Visual Basic、C++ 代码添加标记，请先创建一个 [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) 对象。 然后在代码中要标记的位置插入对 [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) 方法的调用。 在调用中使用 [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) 。  
+ 若要向 C#、Visual Basic、C++ 代码添加标记，请先创建一个 [Windows.Foundation.Diagnostics LoggingChannel](xref:Windows.Foundation.Diagnostics.LoggingChannel) 对象。 然后在代码中要标记的位置插入对 [LoggingChannel.LogMessage](xref:Windows.Foundation.Diagnostics.LoggingChannel.LogMessage%2A) 方法的调用。 在调用中使用 [LoggingLevel.Information](xref:Windows.Foundation.Diagnostics.LoggingLevel) 。  
   
  执行此方法时，用户标记将与消息一起添加到分析数据中。  
   
@@ -62,7 +62,7 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 > - Windows.Foundation.Diagnostics LoggingChannel 实现 [Windows.Foundation.IClosable](/uwp/api/windows.foundation.iclosable) 接口（在 C# 和 VB 中表现为 [System.IDisposable](/dotnet/api/system.idisposable)）。若要避免操作系统资源泄露，请在完成日志记录通道时调用 [LoggingChannel.Close](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)（在 C# 和 VB 中为 [Windows.Foundation.Diagnostics.LoggingChannel.Dispose](/uwp/api/Windows.Foundation.Diagnostics.LoggingChannel)）。  
 >   -   每个打开的日志记录通道都必须有唯一的名称。 尝试创建与未释放的通道同名的新日志记录通道会导致出现异常。  
   
- 有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。  
+ 有关示例，请参阅 Windows SDK 示例 [LoggingSession 示例](https://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336)。  
   
  **向 JavaScript 代码添加标记**  
   
@@ -147,7 +147,7 @@ if (performance && performance.mark) {
   
 ## <a name="other-resources"></a>其他资源  
   
--   Windows 开发人员中心中 [C#/VB/C++ 和 XAML](http://msdn.microsoft.com/en-us/0ee0b706-8432-4d49-9801-306ed90764e1) 和 [JavaScript 和 HTML](http://msdn.microsoft.com/en-us/372afa6a-1c7c-4657-967d-03a77cd8e933) 的“连接状态和成本管理”  部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
+-   Windows 开发人员中心中 [C#/VB/C++ 和 XAML](/previous-versions/windows/apps/hh452985\(v\=win.10\)) 和 [JavaScript 和 HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) 的“连接状态和成本管理”  部分介绍了提供网络连接信息的 Windows API，你的应用程序可以使用这些信息最大程度降低网络通信成本。  
   
      使用 UWP 应用的 Visual Studio 模拟器可以模拟网络信息 API 的数据连接属性。 请参阅[在模拟器中运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)  
   

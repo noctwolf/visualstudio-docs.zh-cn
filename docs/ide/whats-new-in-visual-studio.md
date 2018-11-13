@@ -17,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d2762843141d1383c1fb4f7d4925b1fbe37a9298
-ms.sourcegitcommit: 25fc9605ba673afb51a24ce587cf4304b06aa577
+ms.openlocfilehash: 5bf6de28ff98bf7a05098cabefb86b8cd5169d27
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50673024"
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -212,7 +212,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 ![Visual Studio 中“新异常帮助程序”对话框](../ide/media/vs2017ide-ExceptionHelper.png)
 
-有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
+有关详细信息，请参阅 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/devops/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/)（使用 Visual Studio 中的新异常帮助器）博客文章。
 
 #### <a name="snapshots-and-intellitrace-step-back"></a>快照和 IntelliTrace 后退
 
@@ -264,7 +264,7 @@ Visual Studio 中的若干改进包括：使用 Visual Studio 分发 C++ 核心�
 
 &mdash;从 C#、Visual Basic、C++ 或 JavaScript 中&mdash;选择首选的开发语言用来为 Windows 10 设备创建通用 Windows 平台应用。 Visual Studio 2017 提供所有语言的 UWP 应用模板，借助该模板可创建一个适用于所有设备的项目。 工作完成后，可以生成应用包，并从 Visual Studio 中将其提交到 Microsoft Store，以面向任何使用 Windows 10 设备的客户推出应用。
 
-**15.5 中的新增功能**：Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支持。 Windows 10 Fall Creators Update 也为 UWP 开发人员推出了许多改进内容。 以下是其中最重大的一些改进： 
+**15.5 中的新增功能**：Visual Studio 2017 版本 15.5 提供对 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支持。 Windows 10 Fall Creators Update 也为 UWP 开发人员推出了许多改进内容。 以下是其中最重大的一些改进： 
 
 * **支持 .NET Standard 2.0**<br/>除了简化的应用部署，Windows 10 Fall Creators Update 还是 Windows 10 第一个提供 .NET Standard 2.0 支持的版本。 实际上，[.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) 是对任何 .NET 平台均可实现的基类库的引用实现。 .NET Standard 的设计目的是让 .NET 开发人员能够尽可能轻松地在其选择使用的任何 .NET 平台上共享代码。
 * **最佳 UWP 和 Win32**<br/>已通过 [Desktop Bridge](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) 改善 Windows 10 平台，以便 Windows 10 能为 .NET 开发人员提供更好的使用体验，无论他们当前关注的对象是 UWP、WPF、Windows Forms 还是 Xamarin。 使用 Visual Studio 2017 版本 15.5 中新的应用打包项目类型，可为 WPF 或 Windows 窗体项目创建 Windows 应用包，正如为 UWP 项目创建那样。 打包应用程序后，便获得所有 Windows 10 应用部署权益，并可选择通过 Microsoft Store（消费者应用）或商业版和教育版 Microsoft Store 进行分发。 由于打包的应用可在桌面上访问完整的 UWP API 界面和 Win32 API，因此现在可以使用 UWP API 和 Windows 10 功能逐渐实现 WPF 和 Windows 窗体应用程序的现代化。 此外，可将 Win32 组件包括在 UWP 应用程序中，凭借各种 Win32 功能，它们将在桌面上大放光彩。

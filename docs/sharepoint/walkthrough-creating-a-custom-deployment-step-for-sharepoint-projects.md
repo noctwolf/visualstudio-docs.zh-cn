@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 8f42433b4ec79138e60b11e6380a6b709e74bacd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c74feaed6c108f9dcfb5f2b374a72c34526134b0
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812838"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296146"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>演练： 创建 SharePoint 项目自定义部署步骤
   在部署 SharePoint 项目时，Visual Studio 按特定顺序执行一系列的部署步骤。 Visual Studio 提供了许多内置部署步骤，但您也可以创建您自己。  
@@ -193,7 +193,7 @@ ms.locfileid: "49812838"
   
 1.  在中**解决方案资源管理器**下**UpgradeDeploymentStep**项目中，打开快捷菜单**source.extension.vsixmanifest**文件，，然后选择**打开**。  
   
-     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
+     Visual Studio 清单编辑器中打开该文件。 在 source.extension.vsixmanifest 文件是所有 VSIX 包都需要 extension.vsixmanifest 文件的基础。 有关此文件的详细信息，请参阅[VSIX 扩展架构 1.0 参考](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
 2.  在中**产品名称**框中，输入**升级 SharePoint 项目的部署步骤**。  
   
@@ -208,7 +208,7 @@ ms.locfileid: "49812838"
 6.  在中**类型**列表中，选择**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+    >  此值对应于`MefComponent`extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中的扩展插件程序集名称。 有关详细信息，请参阅[MEFComponent 元素 （VSX 架构）](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。  
   
 7.  在中**源**列表中，选择**当前解决方案中的项目**。  
   
@@ -221,7 +221,7 @@ ms.locfileid: "49812838"
 10. 在中**类型**列表中，输入**SharePoint.Commands.v4**。  
   
     > [!NOTE]  
-    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
+    >  此元素指定要包含在 Visual Studio 扩展中的自定义扩展插件。 有关详细信息，请参阅[资产元素 （VSX 架构）](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
 11. 在中**源**列表中，选择**当前解决方案中的项目**。  
   

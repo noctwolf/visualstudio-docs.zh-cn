@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c85ce933f7ec1c19304a2c0d0fc4c1001df91823
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 65da91ea1182a5c14d6c4b27057b6561221077e8
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929798"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220824"
 ---
 # <a name="summary-view"></a>“摘要”视图
 “摘要”视图显示有关分析运行期间，性能开销最大的函数或对象的信息。 此视图根据分析方法的性能指标，提供一个时间线图，以及性能开销最大的函数或对象的两个或多个列表。 此视图中的数据取决于所用的分析方法（采样、检测或并发）以及是否收集 .NET 内存分配。  
@@ -52,8 +52,8 @@ ms.locfileid: "49929798"
 | **显示已修整的调用树** | 在“调用树”视图中，显示性能开销最大的的执行路径。 有关详细信息，请参阅[“调用树”视图](../profiling/call-tree-view.md)。 |
 | **显示热行** | 不可用于使用检测方法收集的分析数据。 在“行”视图中，显示性能开销最大的源代码行。 有关详细信息，请参阅[“行”视图](../profiling/lines-view.md)。 |
 | **比较报告** | 显示“选择要比较的分析文件”对话框，可在其中指定要与当前文件进行比较的另一个分析数据文件。 有关详细信息，请参阅[比较性能数据文件](../profiling/comparing-performance-data-files.md)。 |
-| **导出报告数据** | 显示“导出报告”对话框，可在其中指定一个或多个要保存为逗号分隔值 (.csv) 文件或 .xml 文件的报告视图。 有关详细信息，请参阅[如何：导出分析工具报告](http://msdn.microsoft.com/en-us/174b5bd3-df9b-4fd4-88d4-76032ab90451)。 |
-| **保存已分析的报告** | 将当前分析数据文件保存为 .vsps 文件，该文件可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面中更快速地打开。 有关详细信息，请参阅[如何：保存已分析的分析数据文件](http://msdn.microsoft.com/en-us/0340ddde-caf4-48ac-8af3-d15dcdade556)。 |
+| **导出报告数据** | 显示“导出报告”对话框，可在其中指定一个或多个要保存为逗号分隔值 (.csv) 文件或 .xml 文件的报告视图。 有关详细信息，请参阅[如何：导出分析工具报告](/previous-versions/visualstudio/visual-studio-2010/ms182394\(v\=vs.100\))。 |
+| **保存已分析的报告** | 将当前分析数据文件保存为 .vsps 文件，该文件可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面中更快速地打开。 有关详细信息，请参阅[如何：保存已分析的分析数据文件](/previous-versions/visualstudio/visual-studio-2010/bb763106\(v\=vs.100\))。 |
 | **筛选报告数据** | 显示分析报告筛选器窗格，可在其中指定条件来限制报告视图中显示的数据。 有关详细信息，请参阅[性能报告视图筛选器](../profiling/performance-report-view-filter.md) |
 | **切换全屏显示** | 切换报告视图的全屏模式。 |
 

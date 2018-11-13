@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f184fc08679100562a53c1f3f27d797a4cdff37
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 5d8285ad08a9ad83ecd137223459a6b29cb7ae69
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49918020"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561707"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -141,7 +141,7 @@ private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
     {
         //get the COLORREF structure
         uint win32Color;
-        uiShell.GetVSSysColorEx(VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
+        uiShell2.GetVSSysColorEx((int)__VSSYSCOLOREX.VSCOLOR_SMARTTAG_HOVER_FILL, out win32Color);
 
         //translate it to a managed Color structure
         Color myColor = ColorTranslator.FromWin32((int)win32Color);
@@ -425,7 +425,7 @@ IDE 将缓存有关字体和颜色设置的信息。 因此，任何修改后的
 
 - **处理 IDE 生成的事件**通过实现[IVsFontAndColorEvents](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents)接口。 IDE 调用后面的字体和颜色页的用户修改的相应方法。 例如，它调用[OnFontChanged](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged)如果选择新字体的方法。
 
-  **OR**
+  **或**
 
 - **轮询更改 IDE**。 这可以通过系统实现[IVsFontAndColorStorage](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage)接口。 主要用于支持暂留，尽管[GetItem](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem)方法可以获取显示项的字体和颜色信息。 字体和颜色设置的详细信息，请参阅 MSDN 文章[访问存储的字体和颜色设置](../accessing-stored-font-and-color-settings.md)。
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 87a70451799c7fc3a15eb14a9efbb0233ea2b154
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: ec3f3be069e92d52071a6b40857f7fac46e8d3e5
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220142"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51221043"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。  
@@ -351,11 +351,11 @@ if (performance.mark && performance.measure) {
   
 ## <a name="additional-information"></a>其他信息  
   
--   观看 [此视频](http://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
+-   观看 [此视频](https://channel9.msdn.com/Events/Build/2013/3-316) （来自 Build 2013 大会，介绍了 UI 响应能力探查器）。  
   
--   阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+-   阅读关于使用 JavaScript 为 Windows 生成的 UWP 应用的性能提示。 有关详细信息，请参阅[使用 JavaScript 的 UWP 应用的性能最佳做法](/previous-versions/windows/apps/hh465194\(v\=win.10\))。  
   
--   若要了解单线程代码执行模型和性能，请参见 [执行代码](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
+-   若要了解单线程代码执行模型和性能，请参见 [执行代码](/previous-versions/windows/apps/hh781217\(v\=win.10\))。  
   
 ## <a name="see-also"></a>请参阅  
  [首先了解分析工具](../profiling/profiling-feature-tour.md)

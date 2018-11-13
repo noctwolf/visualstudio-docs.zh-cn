@@ -17,17 +17,17 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3f2c306876451ef13977fb9237d96da66bd069bf
-ms.sourcegitcommit: 55f7ce2d5d2e458e35c45787f1935b237ee5c9f8
+ms.openlocfilehash: a8078ff645227e07d7facbaf773c310546afdf2a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42635279"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295210"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>获取已启动 （中的 SharePoint 开发 Visual Studio）
   此部分帮助你开始使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来开发利用 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]的 SharePoint 解决方案。
 
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](http://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](http://msdn.microsoft.com/library/office/apps/jj163230%28v=office.15%29.aspx)。
+ 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://msdn.microsoft.com/library/jj162979.aspx) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
  SharePoint 提供基于 Web 的协作平台。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 提供了很多用于创建 SharePoint 网站和内容的项目模板，包括列表定义、工作流、业务数据连接模型和网站定义。 此外，可以在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中创建 SharePoint 项目和工具的扩展。
 

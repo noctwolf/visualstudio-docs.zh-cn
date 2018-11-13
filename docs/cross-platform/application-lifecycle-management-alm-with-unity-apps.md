@@ -1,4 +1,4 @@
----
+﻿---
 title: 适用于 Unity 应用的应用程序生命周期管理 (ALM) | Microsoft Docs
 ms.date: 08/21/2018
 ms.technology: vs-unity-tools
@@ -65,7 +65,7 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 |[查找代码更改和其他历史记录](../ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)|是||
 
- Unity 版本控制特别注意事项：
+Unity 版本控制特别注意事项：
 
 1. Unity 使用一个默认隐藏的不透明库来追踪和游戏资产相关的元数据。若要使文件和元数据保持同步，需使元数据可见，并将其保存在更易于管理的区块中。有关详细信息，请参阅 [Using External Version Control Systems with Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html)（配合使用 Unity 与外部版本控制系统）（Unity 文档）。
 
