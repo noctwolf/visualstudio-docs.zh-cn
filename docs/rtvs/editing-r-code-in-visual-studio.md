@@ -1,7 +1,7 @@
 ---
 title: 编辑 R 代码
 description: Visual Studio 为 R 提供量身定制的编辑体验，同时保留所有功能并且能够使用扩展。
-ms.date: 01/24/2018
+ms.date: 11/05/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-rtvs
 ms.topic: conceptual
@@ -10,16 +10,16 @@ ms.author: kraigb
 manager: douge
 ms.workload:
 - data-science
-ms.openlocfilehash: 9eef75c505cb3ed41e24f99e08468512e424884a
-ms.sourcegitcommit: f685fa5e2df9dc307bf1230dd9dc3288aaa408b5
+ms.openlocfilehash: c1d44e6d316db2ddce799784169a11a06578fe7f
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36235216"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220874"
 ---
 # <a name="edit-r-code-in-visual-studio"></a>在 Visual Studio 中编辑 R 代码
 
-针对 Visual Studio 的 R 工具 (RTVS) 为 R 专门量身定制 Visual Studio 编辑体验，同时保留所有功能并且能够使用扩展。 （例如，如果偏好 VIM 键绑定，可从 Visual Studio 库安装免费 [VsVim 扩展](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)。）
+针对 Visual Studio 的 R 工具 (RTVS) 为 R 专门量身定制 Visual Studio 编辑体验，同时保留所有功能并且能够使用扩展。 （例如，如果偏好 VIM 键绑定，可从 Visual Studio Marketplace 安装免费的 [VsVim 扩展](https://marketplace.visualstudio.com/items?itemName=JaredParMSFT.VsVim)。）
 
 除了本文中的功能，另请参阅 [IntelliSense](r-intellisense.md)、[linting](linting-r-code.md)、[代码片段](code-snippets-for-r.md)和 [R Markdown](rmarkdown-with-r-in-visual-studio.md)。
 

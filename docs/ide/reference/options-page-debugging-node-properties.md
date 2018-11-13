@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 261eef97d6b76d5cc793ecb34d2697abc717e0ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70a06548dd25ade1bf64bad6a99261e043f6ac65
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670827"
 ---
 # <a name="options-page-debugging-node-properties"></a>“选项”页 ->“调试”节点属性
 下表描述了与“选项”对话框的“调试”类别 `DTE.Properties("Debugging", <Property Page>)` 关联的页面（或属性集合）。
@@ -81,10 +81,10 @@ ms.locfileid: "49920893"
 
 ## <a name="see-also"></a>请参阅
 
-- [控制选项设置](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
-- [确定“选项”页中属性项的名称](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [控制选项设置](https://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [确定“选项”页中属性项的名称](https://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
 - [“选项”页 ->“字体和颜色”节点属性](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [“选项”页 ->“文本编辑器”节点属性](../../ide/reference/options-page-text-editor-node-properties.md)
 - [“选项”对话框 ->“调试”->“常规”](../../debugger/general-debugging-options-dialog-box.md)
-- [“选项”对话框 ->“调试”->“编辑并继续”](http://msdn.microsoft.com/Library/009d225f-ef65-463f-a146-e4c518f86103)
+- [“选项”对话框 ->“调试”->“编辑并继续”](/visualstudio/debugger/edit-and-continue?view=vs-2015)
 - [“选项”对话框 ->“调试”->“实时”](../../debugger/just-in-time-debugging-options-dialog-box.md)

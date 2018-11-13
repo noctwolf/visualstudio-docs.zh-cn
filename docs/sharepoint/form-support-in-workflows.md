@@ -16,15 +16,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: b2ccffd384bd508998f2d82098a99835f59ad641
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 27e8ab6651c6838de92b8a3d83311ebd47fabcbb
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908777"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296185"
 ---
 # <a name="form-support-in-workflows"></a>在工作流中的窗体支持
-  可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)MSDN 网站上。  
+  可以在工作流中使用四种类型的窗体： 关联、 初始化、 任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 级别支持[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]提供了用于特定窗体取决于若干因素下, 表中所述。 有关工作流窗体类型的详细信息，请参阅[工作流窗体概述](http://go.microsoft.com/fwlink/?LinkId=185228)。  
   
 ## <a name="xml-refactoring"></a>XML 重构
  当您添加到 ASPX 关联或启动窗体[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]工作流项目项[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]自动重构工作流中的 XML *Elements.xml*要保留引用关联的属性文件或启动窗体保持同步每次更新窗体或部署路径时或在窗体已被删除。 但是，如果使用其他窗体类型在工作流，如任务或修改窗体中*Elements.xml*不重构文件。  

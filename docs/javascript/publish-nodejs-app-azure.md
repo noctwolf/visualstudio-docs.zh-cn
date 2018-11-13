@@ -2,7 +2,7 @@
 title: 将 Node.js 应用发布到 Linux 应用服务
 description: 可以将 Visual Studio 中创建的 Node.js 应用程序发布到 Azure 上的 Linux 应用服务
 ms.custom: ''
-ms.date: 06/10/2018
+ms.date: 11/1/2018
 ms.technology: vs-nodejs
 ms.topic: tutorial
 ms.devlang: javascript
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cf96610abcd0cc18bdaab6177980ca04e0232642
-ms.sourcegitcommit: db680e8fa8066f905e7f9240342ece7ab9259308
+ms.openlocfilehash: 8af99919fe80f1f5e2776e381d24aa8d37bad36d
+ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37924767"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50750756"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>将 Node.js 应用程序发布到 Azure（Linux 应用服务）
 
@@ -42,15 +42,19 @@ Linux 应用服务部署 Linux Docker 容器来运行 Node.js 应用程序（不
 
 1. 使用“文件” > “新建项目”对话框，创建新的 TypeScript Express 应用。
 
+1. 在“TypeScript”节点下，选择“基本 Node.js Express 4 应用程序”。
+
     ![创建新的 TypeScript Express 应用](../javascript/media/azure-ts-express-app.png)
 
-2. 按 F5 来生成并运行应用，确保一切按预期运行。
+1. 单击“确定”以在 Visual Studio 中创建项目文件。
 
-3. 选择“文件” > “添加到源代码管理”，创建项目的本地 Git 存储库。
+1. 按 F5 来生成并运行应用，确保一切按预期运行。
+
+1. 选择“文件” > “添加到源代码管理”，创建项目的本地 Git 存储库。
 
     此时，采用 Express 框架且以 TypeScript 编写的 Node.js 应用正常工作并签入到本地源代码管理。
 
-4. 根据需要编辑项目，再继续到下一步骤。
+1. 根据需要编辑项目，再继续到下一步骤。
 
 ## <a name="push-code-from-visual-studio-to-github"></a>将代码从 Visual Studio 推送到 GitHub
 

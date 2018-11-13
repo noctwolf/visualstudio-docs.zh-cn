@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8f6928dd09b971e2c5924d34058a1a0d5e28394
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 3ab871d07a8519fa6850ad3d1743a7cd1d0fa110
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31947386"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672480"
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
 
@@ -46,9 +46,7 @@ ms.locfileid: "31947386"
 
 - 显示完成项筛选器
 
-- 显示名称建议
-
-### <a name="snippets-behavior"></a>片段行为
+## <a name="snippets-behavior"></a>片段行为
 
 - 从不包含片段
 
@@ -62,7 +60,7 @@ ms.locfileid: "31947386"
 
    选择此选项后，IntelliSense 会在标识符后按 ?+Tab 时，将 C# 代码片段的别名添加到完成列表中
 
-### <a name="enter-key-behavior"></a>输入关键行为
+## <a name="enter-key-behavior"></a>输入关键行为
 
 - 按下 Enter 时不添加新行
 
@@ -85,6 +83,10 @@ ms.locfileid: "31947386"
 - 按下 Enter 时始终添加新行
 
    指定如果键入完成列表中某条目的任意字符后按 Enter，则自动添加新行并且光标移动到新行。
+
+## <a name="show-name-suggestions"></a>显示名称建议
+
+   为最近所选择的成员执行自动对象名称完成。 
 
 ## <a name="see-also"></a>请参阅
 

@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b233f360e4a5fb066ae41b288dc0cdb2d610f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e81462b2ccb5d29a0090623d72cf78183abd6917
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820457"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348742"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>将 COM 组件与 ClickOnce 部署
 旧的 COM 组件的部署具有传统上是一个困难的任务。 组件需要全局注册，因此可能会导致重叠的应用程序之间的意外副作用。 这种情况下通常不是.NET Framework 应用程序中的问题由于完全独立于应用程序或组件的并行兼容。 Visual Studio，可部署在 Windows XP 或更高版本的操作系统上的独立的 COM 组件。  
   
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 提供了一种简单而安全的机制，用于部署.NET 应用程序。 但是，如果您的应用程序使用旧的 COM 组件，您需要采取其他步骤进行部署。 本主题介绍如何部署独立的 COM 组件并引用本机组件 （例如，从 Visual Basic 6.0 或 Visual c + +）。  
   
- 有关部署独立的 COM 组件的详细信息，请参阅"使用简化应用程序部署[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]和免注册 COM"处[ http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。  
+ 有关部署独立的 COM 组件的详细信息，请参阅[使用 ClickOnce 和免注册 COM 简化应用部署](https://web.archive.org/web/20050326005413/msdn.microsoft.com/msdnmag/issues/05/04/RegFreeCOM/default.aspx)。
   
 ## <a name="registration-free-com"></a>免注册 COM  
  免注册 COM 是一项新技术用于部署和激活隔离的 COM 组件。 其工作方式是将所有组件的类型库和通常安装到名为一个清单，为 XML 文件在系统注册表的注册信息存储在应用程序所在的文件夹中。  

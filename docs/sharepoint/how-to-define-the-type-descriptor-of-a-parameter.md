@@ -20,15 +20,15 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 586d7181c1a8eb3c94a8ad236d4ff40602378199
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ec2b0173838446c770f3323aacefebabc195c48b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869257"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294976"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何： 定义参数的类型描述符
-  类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅[TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)。  
+  类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
   
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>定义参数的类型描述符  
   
@@ -46,7 +46,7 @@ ms.locfileid: "49869257"
   
 2.  在列表中下一步**TypeName**属性中，选择适当的数据类型 (例如， **Int32**)。  
   
-     有关其他可选参数的信息，请参阅[TypeDescriptor](http://msdn.microsoft.com/library/ms543392%28v=office.12%29.aspx)。  
+     有关其他可选参数的信息，请参阅[TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。  
   
 ### <a name="to-define-an-entity"></a>定义实体  
   

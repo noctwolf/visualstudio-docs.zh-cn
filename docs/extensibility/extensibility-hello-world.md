@@ -1,5 +1,5 @@
 ---
-title: Hello World |Microsoft Docs
+title: Hello World 扩展教程 |Microsoft Docs
 ms.custom: ''
 ms.date: 07/10/2017
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91d9c809d16a3763bed75d5de4c03bd7112c6e8a
-ms.sourcegitcommit: e680e8ac675f003ebcc8f8c86e27f54ff38da662
+ms.openlocfilehash: e2122a98778372690990a75269be2f3087653678
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49356751"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349460"
 ---
 # <a name="create-your-first-extension-hello-world"></a>创建第一个扩展： Hello World
 
@@ -30,6 +30,9 @@ ms.locfileid: "49356751"
 对于此示例中，您将使用 Visual C# 来添加自定义菜单按钮名为"说 Hello World ！" 如下所示：
 
 ![Hello World 命令](media/hello-world-say-hello-world.png)
+
+> [!NOTE]
+> 本文适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[Visual Studio for Mac 中的可扩展性演练](/visualstudio/mac/extending-visual-studio-mac-walkthrough)。
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -133,6 +136,6 @@ ms.locfileid: "49356751"
 
 现在，了解使用 Visual Studio 扩展性的基础知识，下面是可以从何处了解详细信息：
 
-* [开始开发 Visual Studio 扩展](starting-to-develop-visual-studio-extensions.md)-示例、 教程。 和发布你的扩展。
+* [开始开发 Visual Studio 扩展](starting-to-develop-visual-studio-extensions.md)-示例、 教程。 和发布你的扩展
 * [什么是 Visual Studio 2017 SDK 中的新增](what-s-new-in-the-visual-studio-2017-sdk.md)-Visual Studio 2017 中的新可扩展性功能
 * [在 Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -了解 Visual Studio 扩展性的详细信息

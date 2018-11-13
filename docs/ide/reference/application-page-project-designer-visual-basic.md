@@ -1,6 +1,6 @@
 ---
-title: Application Page, Project Designer (Visual Basic)
-ms.date: 11/04/2016
+title: 应用程序页上的 VB 项目属性
+ms.date: 10/30/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62cbae6115b8268adbb1e2f9d6c27df8bf94a28b
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 4ceb1612ee678a005cba0be0cfb44337c126cb71
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38800728"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50670957"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 
 使用项目设计器的“应用程序”页可指定项目的应用程序设置和属性。
 
-若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目” > “属性”。 当项目设计器出现时，选择“应用程序”选项卡。
+若要访问“应用程序”页，请在**解决方案资源管理器**中选择项目节点（而非“解决方案”节点）。 然后在菜单栏上依次选择“项目” > “属性”。 当“项目设计器”出现时，选择“应用程序”选项卡。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
@@ -36,7 +36,11 @@ ms.locfileid: "38800728"
 
 ### <a name="assembly-name"></a>程序集名称
 
-指定将包含程序集清单的输出文件的名称。 如果更改此属性，“输出名称”属性也会随之更改。 此外，还可以使用 [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 编译器开关，通过命令提示符指定输出文件名。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。
+指定将包含程序集清单的输出文件的名称。 如果更改此属性，“输出名称”属性也会随之更改。
+
+此外，还可以使用 [/out (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/out) 编译器开关，通过命令提示符指定输出文件名。
+
+有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.AssemblyName%2A>。
 
 ### <a name="root-namespace"></a>根命名空间
 
@@ -45,7 +49,7 @@ ms.locfileid: "38800728"
 如果清除“根命名空间”，则可以在代码中指定项目的命名空间结构。
 
 > [!NOTE]
-> 如果在 [Namespace 语句](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 Global 关键字，则可以在项目的根命名空间外定义命名空间。 如果清除“根命名空间”，无需在 `Namespace` 语句中使用 `Global` 关键字，`Global` 便可成为顶级命名空间。 有关详细信息，请参阅 [Visual Basic 中的命名空间](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的“Namespace 语句中的 Global 关键字”。
+> 如果在 [Namespace 语句](/dotnet/visual-basic/language-reference/statements/namespace-statement)中使用 `Global` 关键字，则可以在项目的根命名空间外部定义命名空间。 如果清除“根命名空间”，无需在 `Namespace` 语句中使用 `Global` 关键字，`Global` 便可成为顶级命名空间。 有关详细信息，请参阅 [Visual Basic 中的命名空间](/dotnet/visual-basic/programming-guide/program-structure/namespaces)中的“Namespace 语句中的 Global 关键字”。
 
 有关如何在代码中创建命名空间的信息，请参阅 [Namespace 语句](/dotnet/visual-basic/language-reference/statements/namespace-statement)。
 
@@ -66,20 +70,17 @@ ms.locfileid: "38800728"
 
 ### <a name="application-type"></a>应用程序类型
 
-指定要生成的应用程序类型。 对于 Windows 8.x 应用，可以指定“Windows 应用商店应用”、“类库”或“WinMD 文件”。 对于其他大多数应用程序类型，可以指定“Windows 应用程序”、“控制台应用程序”、“类库”、“Windows 服务”或“Web 控件库”。
+指定要生成的应用程序类型。 值因项目类型而异。 例如，对于“Windows 窗体应用”项目，可以指定“Windows 窗体应用程序”、“类库”、“控制台应用程序”、“Windows 服务”或“Web 控件库”。
 
 对于 Web 应用程序项目，必须指定“类库”。
 
-如果指定“WinMD 文件”选项，可以将类型投影到任何 Windows 运行时编程语言中。 通过将项目输出打包为 WinMD 文件，可以用多种语言编写应用程序代码，并让代码进行互操作，就像代码全部是用同一种语言编写的一样。 可以对面向 Windows 运行时库的解决方案（包括 [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 应用）使用“WinMD 文件”选项。 有关详细信息，请参阅[用 C# 和 Visual Basic 创建 Windows 运行时组件](/windows/uwp/winrt-components/creating-windows-runtime-components-in-csharp-and-visual-basic)。
-
-> [!NOTE]
-> Windows 运行时可以投影类型，使其在任何一种使用它们的语言中看起来都像本机对象一样。 例如，与 Windows 运行时交互的 JavaScript 应用程序将其用作一组 JavaScript 对象，而 C# 应用程序则将库用作一个 .NET 对象集合。 通过将项目输出打包为 WinMD 文件，可以充分利用 Windows 运行时所用的技术。
-
 有关“应用程序类型”属性的详细信息，请参阅 [/target (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/target)。 有关如何以编程方式访问此属性的信息，请参阅 <xref:VSLangProj.ProjectProperties.OutputType%2A>。
 
-### <a name="icon"></a>图标
+### <a name="auto-generate-binding-redirects"></a>自动生成绑定重定向
 
-设置要用作程序图标的 .ico 文件。 选择“\<浏览...>”以浏览现有图形。 有关详细信息，请参阅 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)（或 [/win32icon（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)）。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
+如果应用或其组件引用同一程序集的多个版本，则绑定重定向将添加到项目中。 如果要在项目文件中手动定义绑定重定向，请取消选中“自动生成绑定重定向”。 Visual Studio 2017 版本 15.7 中引入了此复选框。
+
+有关重定向的详细信息，请参阅[重定向程序集版本](/dotnet/framework/configure-apps/redirect-assembly-versions)。
 
 ### <a name="startup-form--startup-object--startup-uri"></a>启动窗体/启动对象/启动 URI
 
@@ -92,6 +93,10 @@ ms.locfileid: "38800728"
 如果“启用应用程序框架”处于清除状态，则此列表将变为“启动对象”，并且同时显示窗体和带有 `Sub Main` 的类或模块。
 
 “启动对象”定义应用程序加载时要调用的入口点。 此选项通常设置为应用程序中的主窗体或当应用程序启动时应运行的 `Sub Main` 过程。 类库没有入口点，因此它们为此属性提供的唯一选项是“(无)”。 有关详细信息，请参阅 [/main](/dotnet/visual-basic/reference/command-line-compiler/main)。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.StartupObject%2A>。
+
+### <a name="icon"></a>图标
+
+设置要用作程序图标的 .ico 文件。 选择“\<浏览...>”以浏览现有图形。 有关详细信息，请参阅 [/win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon)（或 [/win32icon（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)）。 若要以编程方式访问此属性，请参阅 <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>。
 
 ### <a name="assembly-information"></a>程序集信息
 
@@ -117,7 +122,10 @@ ClickOnce 在 `asInvoker` 级别或虚拟化模式下运行（无清单生成）
 
 ## <a name="windows-application-framework-properties"></a>Windows 应用程序框架属性
 
-“Windows 应用程序框架属性”节提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。 本节后面的一节介绍了 Windows Presentation Foundation (WPF) 应用程序的“Windows 应用程序框架属性”设置。
+“Windows 应用程序框架属性”节提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。
+
+> [!TIP]
+> 本部分后面的一节介绍了特定于 Windows Presentation Foundation (WPF) 应用的“Windows 应用程序框架属性”设置。
 
 ### <a name="enable-xp-visual-styles"></a>启用 XP 视觉样式
 
@@ -153,13 +161,13 @@ ClickOnce 在 `asInvoker` 级别或虚拟化模式下运行（无清单生成）
 
 单击此按钮以显示可以在其中为应用程序框架事件 `Startup`、`Shutdown`、`UnhandledException`、`StartupNextInstance` 和 `NetworkAvailabilityChanged` 写入事件的事件代码文件。 还可以重写某些应用程序框架方法。 例如，可以通过重写 `OnInitialize` 来更改初始屏幕的显示行为。
 
-## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-applications"></a>Windows Presentation Foundation (WPF) 应用程序的 Windows 应用程序框架属性
+## <a name="windows-application-framework-properties-for-windows-presentation-foundation-wpf-apps"></a>Windows Presentation Foundation (WPF) 应用的 Windows 应用程序框架属性
 
-当项目为 Windows Presentation Foundation 应用程序时，“Windows 应用程序框架属性”节提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。 此表中列出的选项仅适用于 WPF 应用程序或 WPF 浏览器应用程序， 不适用于 WPF 用户控件或自定义控件库。
+当项目为 Windows Presentation Foundation (WPF) 应用时，“Windows 应用程序框架属性”部分提供以下设置。 仅当“启用应用程序框架”复选框处于选中状态时，这些选项才可用。 此表中列出的选项仅适用于 WPF 或 WPF 浏览器应用程序。 不适用于 WPF 用户控件或自定义控件库。
 
 ### <a name="shutdown-mode"></a>关闭模式
 
-此属性仅适用于 Windows Presentation Foundation 应用程序。
+此属性仅适用于 Windows Presentation Foundation (WPF) 应用程序。
 
 选择“在显式关闭时”以指定应用程序在用户显式调用 <xref:System.Windows.Application.Shutdown%2A> 时退出。
 
@@ -171,10 +179,10 @@ ClickOnce 在 `asInvoker` 级别或虚拟化模式下运行（无清单生成）
 
 ### <a name="edit-xaml"></a>编辑 XAML
 
-单击此按钮以在 XAML 编辑器中打开并修改应用程序定义文件 (Application.xaml)。 单击此按钮时，Application.xaml 将在应用程序定义节点处打开。 可能需要编辑此文件才能执行某些任务，例如定义资源。 如果应用程序定义文件不存在，项目设计器将创建一个。
+此按钮在 XAML 编辑器中打开应用程序定义文件 (Application.xaml)。 单击此按钮时，Application.xaml 将在应用程序定义节点处打开。 可能需要编辑此文件才能执行某些任务，例如定义资源。 如果应用程序定义文件不存在，项目设计器将创建一个。
 
 ### <a name="view-application-events"></a>查看应用程序事件
 
-单击此按钮以在代码编辑器中显示 `Application` 分部类文件 (Application.xaml.vb)。 如果该文件不存在，项目设计器将创建一个具有适当类名和命名空间的此类文件。
+此按钮在代码编辑器中显示 `Application` 类文件 (Application.xaml.vb)。 如果该文件不存在，项目设计器将创建一个具有适当类名和命名空间的此类文件。
 
 <xref:System.Windows.Application> 对象在应用程序状态出现某些变化时（例如，在应用程序启动或关闭时）引发事件。 有关此类公开的事件的完整列表，请参阅 <xref:System.Windows.Application>。 这些事件在 `Application` 分部类的用户代码节中进行处理。

@@ -15,12 +15,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 58f03bc18c2e851bb7732b54ff334e6e3332f74e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 67742078cefcd0608d1cff9a5bab609053544392
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878175"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296107"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练： 创建显示 SharePoint OData 的 Silverlight web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，由 RESTful 服务 ListData.svc 实现 OData 服务。 本演练演示如何创建承载 Silverlight 应用程序的 SharePoint web 部件。 Silverlight 应用程序使用 ListData.svc 显示 SharePoint 公告列表信息。 有关详细信息，请参阅[SharePoint Foundation REST 接口](http://go.microsoft.com/fwlink/?LinkId=225999)并[开放数据协议](http://go.microsoft.com/fwlink/?LinkId=226000)。  
@@ -71,7 +71,7 @@ ms.locfileid: "49878175"
   
 #### <a name="to-customize-the-silverlight-application"></a>若要自定义 Silverlight 应用程序
   
-1.  在 Silverlight 应用程序中添加对 system.windows.data 的引用程序集引用。 有关详细信息，请参阅[如何： 添加或删除引用通过使用添加引用对话框](http://msdn.microsoft.com/en-us/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
+1.  在 Silverlight 应用程序中添加对 system.windows.data 的引用程序集引用。 有关详细信息，请参阅[如何： 添加或删除引用通过使用添加引用对话框](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)。  
   
 2.  在中**解决方案资源管理器**，打开快捷菜单**引用**，然后选择**添加服务引用**。  
   

@@ -1,7 +1,7 @@
 ---
 title: 如何： 在混合模式调试 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 11/05/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a08cf3cf95073d06c1dfa350f2de86bf72837c5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 2ef87a1f9fd90395a9a1f5c99ad6e8090b13304e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49182671"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295470"
 ---
 # <a name="how-to-debug-in-mixed-mode"></a>如何： 在混合模式下调试
 以下过程介绍如何为托管和本机代码组合在一起，也称为混合模式调试启用调试。 有两个混合模式调试方案：  
@@ -58,9 +58,12 @@ ms.locfileid: "49182671"
    
 1. 选择**调试**选项卡，然后选择**启用本机代码调试**。
    
-1. 使用**文件** > **保存选定项**或**Ctrl + S**以保存更改。
+1. 关闭属性页以保存所做的更改。
 
    ![启用本机代码调试](../debugger/media/dbg-mixed-mode-from-csharp.png "启用本机代码调试")
   
+>[!NOTE]
+>在大多数版本的 Visual Studio 2017，你必须使用*launchSettings.json*文件而不是项目属性以启用混合模式调试的.NET Core 应用中的本机代码。 有关详细信息，请参阅[调试托管和本机代码](../debugger/how-to-debug-managed-and-native-code.md)。
+
 ## <a name="see-also"></a>请参阅  
  [如何：从 DLL 项目进行调试](../debugger/how-to-debug-from-a-dll-project.md)

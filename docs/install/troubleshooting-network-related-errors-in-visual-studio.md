@@ -18,12 +18,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 210a39d5392ef6ba93f4988c86850db58644ed10
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 28c92fdc09320effcb8603c42edcfca152f71248
+ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49865773"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50672309"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>安装或使用 Visual Studio 时与网络相关错误的疑难解答
 
@@ -69,7 +69,7 @@ ms.locfileid: "49865773"
 
      或
 
-- 此外，也可以按照[如何通过经身份验证的 Web 代理进行连接](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx)博客文章中的说明，了解如何添加允许你使用代理的代码。
+- 此外，也可以按照[如何通过经身份验证的 Web 代理进行连接](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/)博客文章中的说明，了解如何添加允许你使用代理的代码。
 
 ## <a name="error-the-underlying-connection-was-closed"></a>错误：“基础连接已关闭”
 

@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 键盘快捷方式
-ms.date: 06/21/2017
+ms.date: 11/02/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cc99820eded646d745d54e50fb58917a2c15b094
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
+ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44321276"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51220848"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -73,6 +73,11 @@ ms.locfileid: "44321276"
 
 |命令|快捷键|适用版本|
 |-|-|-|
+|转到全部|**Ctrl**+**T**|
+|转到最近使用的文件|**Ctrl**+**T**,**R**|
+|多脱字号多个插入点|**Ctrl**+**Alt**+**单击**|
+|多脱字号添加匹配选择|**Shift**+**Alt**+**Ins**|
+|设置文档的格式|**Ctrl**+**K**,**D**|Visual Studio 2017 版本 15.8|
 |IntelliSense 建议模式|Ctrl+Alt+空格键（切换）||
 |强制显示 IntelliSense|Ctrl+J||
 |快速操作|Ctrl+.||
@@ -95,6 +100,9 @@ ms.locfileid: "44321276"
 |在多个“查看定义”窗口之间导航|**Ctrl**+**Alt**+**-** 和 **Ctrl**+**Alt**+**=**||
 |在多个查看结果之间导航|**F8** 和 **Shift**+**F8**||
 |在“代码编辑器”窗口和“查看定义”窗口之间切换|Shift+Esc||
+|转到封闭块|**Ctrl**+**Alt**+**向上键**|
+|转到下一个/上一个问题|**Alt**+**PgUp**/**PgDn**|
+|上下文导航菜单|**Alt**+**`**|
 
 ## <a name="toolbars"></a>工具栏
 
@@ -128,4 +136,4 @@ ms.locfileid: "44321276"
 
 - [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
 - [键盘快捷方式（Azure DevOps Services 和 TFS）](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio tips and tricks blog](http://blogs.msdn.com/b/zainnab)（Visual Studio 提示和技巧博客）
+- [Visual Studio tips and tricks blog](https://blogs.msdn.com/b/zainnab)（Visual Studio 提示和技巧博客）
