@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7791eec2408f14a442a8dd50c1a881ffc0802697
-ms.sourcegitcommit: 48bc8492973e93612e5afaba3b47d0f98aecf97c
+ms.openlocfilehash: 3a81d81160bd6ad097e848f4af964d6ed00b17a5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49324972"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348703"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -30,7 +30,7 @@ Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows
 
 如果 Visual Studio 并未检测到安装的环境，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
 
-Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studio.md)窗口中显示所有已知环境，并自动检测现有解释器的更新。
+Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studio.md#the-python-environments-window)窗口中显示所有已知环境，并自动检测现有解释器的更新。
 
 | 解释器 | 描述 |
 | --- | --- |
