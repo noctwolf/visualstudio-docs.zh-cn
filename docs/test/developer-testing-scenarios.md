@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: a731f7a481280d5755d72a83a4532eb8e6998f97
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 396bbfdb915d0e3ecc31f516d60eab80cca6a421
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370635"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295145"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>开发人员测试工具、方案和功能
 
@@ -31,7 +31,7 @@ ms.locfileid: "46370635"
 ![操作中的 IntelliTest](media/devtest-intellitest.png)
 
 * [Visual Studio 的 IntelliTest 简介](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest – One test to rule them all](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)（IntelliTest - 一个测试掌控所有情况）
+* [IntelliTest – One test to rule them all](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)（IntelliTest - 一个测试掌控所有情况）
 * [IntelliTest 视频](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [IntelliTest 入门](generate-unit-tests-for-your-code-with-intellitest.md)
 * [IntelliTest 参考手册](intellitest-manual/index.md)
@@ -80,7 +80,7 @@ Visual Studio 也可扩展，并支持第三方单元测试适配器，如 NUnit
 ## <a name="see-also"></a>请参阅
 
 * [单元测试入门](getting-started-with-unit-testing.md)
-* [Speed up unit test execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx)（在 Team Foundation Server 中加快单元测试执行）
-* [并行和区分上下文的单元测试执行](https://blogs.msdn.microsoft.com/visualstudioalm/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Speed up unit test execution in Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)（在 Team Foundation Server 中加快单元测试执行）
+* [并行和区分上下文的单元测试执行](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [使用 Visual Studio（实验室）进行单元测试、代码覆盖率分析和代码克隆分析](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [编写 C/C++ 单元测试](writing-unit-tests-for-c-cpp.md)

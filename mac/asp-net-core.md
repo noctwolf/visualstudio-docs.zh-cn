@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
-ms.openlocfilehash: 694f6f10a482318f6c6a1c40e6796e09daac0913
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9576048cb6a62f7a4e8c93456154997af359a711
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942941"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296471"
 ---
 # <a name="getting-started-with-aspnet-core"></a>ASP.NET Core 入门
 
@@ -62,7 +62,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-ASP.NET Core 应用将通过 [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) 实例配置并启动主机，以此在其 Main 方法中创建一个 Web 服务器。 此生成器提供方法以允许配置主机。 在模板应用中使用了以下配置：
+ASP.NET Core 应用将通过 [`WebHostBuilder`](/aspnet/core/fundamentals/hosting) 实例配置并启动主机，以此在其 Main 方法中创建一个 Web 服务器。 此生成器提供方法以允许配置主机。 在模板应用中使用了以下配置：
 
 * `UseKestrel`：指定应用将使用的 Kestrel 服务器
 * `UseContentRoot(Directory.GetCurrentDirectory())`：从 Web 项目的根文件夹启动应用时，使用此文件夹作为应用的内容根
@@ -108,7 +108,7 @@ Startup 类必须始终遵守以下规则：
 
 `ConfigureServices` 方法定义将在应用中使用的服务。
 
-通过 `Configure` 可使用 [Middleware](https://docs.microsoft.com/aspnet/core/fundamentals/middleware) 撰写请求管道。 将在 ASP.NET 应用程序管道中使用这些组件，用于处理请求和响应。 HTTP 管道包含大量按顺序调用的请求委托。 每个委托可选择处理请求本身，或将其传递给下一个委托。
+通过 `Configure` 可使用 [Middleware](/aspnet/core/fundamentals/middleware) 撰写请求管道。 将在 ASP.NET 应用程序管道中使用这些组件，用于处理请求和响应。 HTTP 管道包含大量按顺序调用的请求委托。 每个委托可选择处理请求本身，或将其传递给下一个委托。
 
 可通过在 `IApplicationBuilder` 上使用 `Run`、`Map` 和 `Use` 方法配置委托。但 `Run` 方法不会调用下一个委托，应始终用于管道末尾。
 
@@ -134,7 +134,7 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 - **视图**：显示应用的用户界面（通常为模型数据）。
 - **控制器**：处理浏览器请求的类，响应用户的输入和交互。
 
-有关使用 MVC 的详细信息，请参阅 [Overview of ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/mvc/overview)（ASP.NET Core MVC 概述）。
+有关使用 MVC 的详细信息，请参阅 [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview)（ASP.NET Core MVC 概述）。
 
 要添加控制器，请执行下列操作：
 
@@ -233,6 +233,6 @@ ASP.NET Core 应用使用模型视图控制器 (MVC) 设计模式，来为应用
 
 本指南介绍了 ASP.NET Core。 介绍了它是什么，何时使用，并提供了在 Visual Studio for Mac 中使用它的信息。
 有关后续步骤的详细信息，请参阅以下指南：
-- [ASP.NET Core ](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) 文档。
-- [Creating Backend Services for Native Mobile Applications（为本地移动应用程序创建后端服务）](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend)，介绍了如何使用 ASP.NET Core 为 Xamarin.Forms 应用生成 REST 服务。
+- [ASP.NET Core ](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc) 文档。
+- [Creating Backend Services for Native Mobile Applications（为本地移动应用程序创建后端服务）](/aspnet/core/mobile/native-mobile-backend)，介绍了如何使用 ASP.NET Core 为 Xamarin.Forms 应用生成 REST 服务。
 - [ASP.NET Core 动手实验](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
