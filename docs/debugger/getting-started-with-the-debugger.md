@@ -1,7 +1,7 @@
 ---
 title: 了解如何使用 Visual Studio 调试器进行调试
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
-ms.custom: mvc
+ms.custom: debug-experiment
 ms.date: 08/01/2018
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -16,55 +16,55 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d9cb4e6b69f88f0c3e61d17211ffe5ff464f1b17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827553"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561668"
 ---
-# <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程： 了解如何使用 Visual Studio 进行调试
+# <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程：了解如何使用 Visual Studio 进行调试
 
-本文介绍了 Visual Studio 调试器中的分步演练的功能。 如果你想的调试器功能的更高级别的视图，请参阅[调试器功能简介](../debugger/debugger-feature-tour.md)。 当您*调试应用*，这通常意味着附加调试器运行应用程序。 调试器时执行此操作，提供多种方式查看你的代码执行的操作运行时。 您可以单步执行代码，并查看存储在变量中的值，您可以设置监视变量以查看值发生更改时，您可以检查您的代码的执行路径，请参阅代码的分支是否正在运行，等等。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+本文通过分步演练介绍了 Visual Studio 调试器的功能。 如果需要更加深入地了解调试器功能，请参阅[调试器功能浏览](../debugger/debugger-feature-tour.md)。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
 
 | | |
 |---------|---------|
-| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)上调试，显示了类似的步骤。 |
+| ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看有关调试的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)，其中展示了类似的步骤。 |
 
-尽管演示应用程序是 C# 和 c + +，但功能都适用于 Visual Basic、 JavaScript 和 Visual Studio （除非另有说明） 支持其他语言。 屏幕截图与 C# 中。
+尽管演示应用为 C# 和 C++，但这些功能也适用于 Visual Basic、JavaScript 和 Visual Studio 支持的其他语言（除非另有说明）。 屏幕截图为 C#。
 
 在本教程中，你将：
 
 > [!div class="checklist"]
 > * 启动调试器并命中断点。
-> * 了解单步执行代码在调试器中的命令
+> * 了解在调试器中逐步执行代码的命令
 > * 检查数据提示和调试器窗口中的变量
 > * 检查调用堆栈
 
 ## <a name="prerequisites"></a>系统必备
 
-* 你必须安装 Visual Studio 2017 并 **.NET 桌面开发**或**使用 c + + 的桌面开发**工作负荷。
+* 必须安装有 Visual Studio 2017 并具有“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载。
 
-    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
 
-    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择。**NET 桌面开发**或**使用 c + + 的桌面开发**工作负荷中，然后选择**修改**。
+    如果需要安装工作负载，但已有 Visual Studio，则单击“新建项目”对话框左窗格中的“打开 Visual Studio 安装程序”链接（选择“文件” > “新建” > “项目”）。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
 
 ## <a name="create-a-project"></a>创建项目
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-2. 下**Visual C#** 或**Visual c + +**，选择**Windows 桌面**，然后在中间窗格中选择**控制台应用**(**Windows 控制台应用程序**c + + 中)。
+2. 在“Visual C#”或“Visual C++”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用”（C++ 中的“Windows 控制台应用程序”）。
 
-    如果没有看到**控制台应用程序**项目模板，请单击**打开 Visual Studio 安装程序**的左窗格中的链接**新项目**对话框。 Visual Studio 安装程序启动。 选择 *.NET 桌面开发** 或**使用 c + + 的桌面开发**工作负荷中，然后选择**修改**。
+    如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”。
 
-3. 键入一个名称，如**获取启动调试**然后单击**确定**。
+3. 键入名称（如“get-started-debugging”），然后单击“确定”。
 
     Visual Studio 随即创建项目。
 
     > [!NOTE]
-    > 若要切换 C# 和 c + + 这篇文章中的代码示例，请使用此页的右上角的语言筛选器。
+    > 若要在本文中在 C# 和 C++ 示例代码间切换，请使用本页右上角的语言筛选器。
 
-4. 在中*Program.cs* (C#) 或*get 启动 debugging.cpp* （c + +），将以下代码
+4. 在“Program.cs”(C#) 或“get-started-debugging.cpp”(C++) 中，将以下代码
 
     ```csharp
     using System;
@@ -268,11 +268,11 @@ ms.locfileid: "49827553"
     */
     ```
 
-## <a name="start-the-debugger"></a>启动调试程序 ！
+## <a name="start-the-debugger"></a>启动调试器！
 
-1. 按**F5** (**调试 > 启动调试**) 或**启动调试**按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")调试工具栏中。
+1. 按 F5（“调试”>“开始调试”）或调试工具栏中的“开始调试”按钮（![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）。
 
-     **F5**启动应用程序与调试程序附加到应用程序处理，但现在，我们还没有做任何特殊操作即可检查代码。 因此该应用程序只需加载并查看的控制台输出。
+     通过 **F5** 启动应用时，调试器会附加到应用进程，但现在我们还未执行任何特殊操作来检查代码。 因此应用只会加载，控制台输出如你所见。
 
     ```
     Drawing a rectangle
@@ -283,168 +283,168 @@ ms.locfileid: "49827553"
     Performing base class drawing tasks
     ```
 
-     在本教程中，我们将更详细地介绍此应用程序中使用调试器，看一看调试器功能。
+     在本教程中，我们将使用调试器仔细查看此应用，并查看调试器功能。
 
-2. 通过按红色 stop 停止调试器![停止调试](../debugger/media/dbg-tour-stop-debugging.png "停止调试")按钮。
+2. 按红色的停止（![停止调试](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging")）按钮来停止调试器。
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>设置断点并启动调试器
 
-1. 在中`foreach`循环`Main`函数 (`for` c + + 中的循环`main`函数)，通过单击下面的代码行的左边的距中设置断点：
+1. 在 `Main` 函数的 `foreach` 循环（C++ `main` 函数中的 `for` 循环）中，通过单击以下代码行的左边距来设置断点：
 
-    `shape.Draw()` (或者，`shape->Draw()`中 c + +)
+    `shape.Draw()`（或者，C++ 中的 `shape->Draw()`）
 
-    将断点设置会显示一个红色圆圈。
+    设置断点的位置会出现一个红色圆圈。
 
     断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
 
-6. 按**F5**或**开始调试**按钮，该应用启动时，和调试器的运行的代码行到设置了断点。
+6. 按 F5 或“开始调试”按钮，应用随即启动，调试器将运行到你设置断点的代码行。
 
     ![设置并命中断点](../debugger/media/get-started-set-breakpoint.gif)
 
-    黄色箭头表示在其暂停调试器，还在相同的点 （此语句具有尚未执行） 处挂起应用程序执行的语句。
+    黄色箭头表示调试器暂停处的语句，它还在同一点上暂停应用执行（此语句尚未执行）。
 
-     如果应用尚未运行， **F5**启动调试器并在第一个断点处停止。 否则为**F5**运行的应用程序运行到下一个断点。
+     如果应用尚未运行，则按 F5 会启动调试器并在第一个断点处停止。 否则，按 F5 将继续运行应用至下一个断点。
 
-    断点是代码的代码的一个有用的功能，当您知道行或你想要检查详细信息中部分。
+    当你知道要详细检查的代码行或代码段时，断点功能非常有用。
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>在使用单步执行命令在调试器中导航代码
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a>使用单步执行命令在调试器中导航代码
 
-大多数情况下，我们使用的键盘快捷方式，因为它是好办法获取快速在调试器 （等效命令如菜单命令显示在括号中） 中执行您的应用程序。
+大多数情况下，我们使用键盘快捷方式，因为这是在调试器中快速执行应用的好方法（括号中显示了等效的命令，如菜单命令）。
 
-1. 在暂停时`shape.Draw`方法中调用`Main`方法 (`shape->Draw` c + + 中)，按**F11** (或选择**调试 > 单步执行**) 转到代码`Rectangle`类。
+1. 在 `Main` 方法（C++ 中的 `shape->Draw`）的 `shape.Draw` 方法调用中暂停时，按 F11（或选择“调试”>“单步执行”）前进到 `Rectangle` 类的代码。
 
-     ![使用 F11 来单步执行代码](../debugger/media/get-started-f11.png "F11 单步执行")
+     ![使用 F11 单步执行代码](../debugger/media/get-started-f11.png "F11 Step Into")
 
-     是 F11**单步执行**命令，并向前移动一次的应用程序执行一个语句。 F11 是检查中的大部分详细信息的执行流的好方法。 （若要通过代码更快地移动，我们介绍一些其他选项也。）默认情况下，调试器跳过非用户代码 (如果需要更多详细信息，请参阅[仅我的代码](../debugger/just-my-code.md))。
+     F11 是“单步执行”命令，每单击一次，应用就执行一个语句。 F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地浏览代码，我们还向你展示一些其他选项。）默认情况下，调试器会跳过非用户代码（如果需要更多详细信息，请参阅[仅我的代码](../debugger/just-my-code.md)）。
 
-2. 按**F10** (或选择**调试 > 单步跳过**) 几次，直到上停止调试器`base.Draw`方法调用 (`Shape::Draw` c + + 中)，然后按**F10**再来一次。
+2. 按几次 F10（或选择“调试”>“单步跳过”），直到调试器停止于 `base.Draw` 方法调用（C++ 中的 `Shape::Draw`），然后再按一次 F10。
 
-     ![单步跳过代码使用 F10](../debugger/media/get-started-step-over.png "F10 单步跳过")
+     ![使用 F10 单步跳过代码](../debugger/media/get-started-step-over.png "F10 Step Over")
 
-     请注意这次不，调试器不会单步执行`Draw`基类的方法 (`Shape`)。 **F10**使调试器，而无需单步执行函数或方法在应用代码 （仍执行的代码）。 通过按 F10 `base.Draw` (或`Shape::Draw`) 方法调用 (而不是**F11**)，我们跳过的实现代码`base.Draw`（我们不感兴趣现在哪些可能）。
+     请注意，这次调试器不会单步执行基类 (`Shape`) 的 `Draw` 方法。 按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 通过在进行 `base.Draw`（或 `Shape::Draw`）方法调用时按 F10（而不是 F11），我们跳过了 `base.Draw` 的实现代码（我们现在可能对此不感兴趣）。
 
-## <a name="navigate-code-using-run-to-click"></a>导航代码中使用运行时单击
+## <a name="navigate-code-using-run-to-click"></a>使用“运行时单击”导航代码
 
-5. 在代码编辑器中，向下滚动并悬停`Console.WriteLine`方法 (`std::cout` c + + 中) 中`Triangle`直到绿色类**运行时单击**按钮![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")显示在左侧。
+5. 在代码编辑器中，向下滚动并将鼠标悬停在 `Triangle` 类中的 `Console.WriteLine` 方法（C++ 中的 `std::cout`）上，直到左侧出现绿色的“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 
-     ![使用运行到单击功能](../debugger/media/get-started-run-to-click.png "运行时单击")
+     ![使用“运行时单击”功能](../debugger/media/get-started-run-to-click.png "Run to Click")
 
    > [!NOTE]
-   > **运行时单击**是中新增的按钮[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。 如果看不到绿色箭头按钮，使用**F11**在此示例中改为使调试器前进到正确的位置。
+   > “运行时单击”是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的新增按钮。 如果未看到绿色箭头按钮，请在此示例中改为使用 F11 以使调试器前进到正确的位置。
 
-6. 单击**运行时单击**按钮![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+6. 单击“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 
-    使用此按钮将类似于设置临时断点。 **运行时单击**便于快速入门应用程序代码 （可以单击任何打开的文件中） 的可见区域内。
+    使用此按钮类似于设置临时断点。 “运行时单击”对于快速到达应用代码的可见区域十分方便（你可在任何打开的文件中单击）。
 
-    调试器将进入第`Console.WriteLine`方法实现`Triangle`类 (`std::cout` c + + 中)。
+    调试器前进到 `Triangle` 类的 `Console.WriteLine` 方法实现（C++ 中的 `std::cout`）。
 
-    在暂停时，你注意到有拼写错误 ！ "绘制 trangle"的输出是拼写错误。 我们可以在调试器中运行应用程序时修复它就在这里。
+    暂停时，你注意到有拼写错误！ “Drawing a trangle”输出拼写错误。 在调试器中运行应用时，我们可直接在此处修复它。
 
 ## <a name="edit-code-and-continue-debugging"></a>编辑代码并继续调试
 
-1. 单击"绘制 trangle"并键入更正，将"trangle"更改为"triangle"。
+1. 单击“Drawing a trangle”内并键入校正，将“trangle”更改为“triangle”。
 
-1. 按**F11**一次，你会看到调试器再次前移。
-
-    > [!NOTE]
-    > 具体取决于在调试器中编辑的代码类型，可能会看到一条警告消息。 在某些情况下，代码将需要重新编译，然后才能继续。
-
-## <a name="step-out"></a>跳出
-
-假设您已完成检查`Draw`中的方法`Triangle`类，并且你想要利用此函数，但仍保持在调试程序。 你可以使用**单步跳出**命令。
-
-1. 按**Shift** + **F11** (或**调试 > 跳出**)。
-
-     此命令恢复应用程序执行 （和使调试器），直到当前函数返回。
-
-     应为回到`foreach`循环`Main`方法 (`for` c + + 中的循环)。
-
-## <a name="restart-your-app-quickly"></a>快速重新启动您的应用程序
-
-单击**重新启动**![重新启动应用程序](../debugger/media/dbg-tour-restart.png "RestartApp")调试工具栏中的按钮 (**Ctrl** + **Shift**  +  **F5**)。
-
-当您按下**重新启动**，从而节省了时间和停止应用程序并重新启动调试器。 调试器会在执行代码被命中的第一个断点处暂停。
-
-调试器在设置的断点处停止再次`shape.Draw()`方法 (`shape->Draw()` c + + 中)。
-
-## <a name="inspect-variables-with-data-tips"></a>检查与数据提示中的变量
-
-功能，可使您可以检查变量是在调试器的最有用的功能之一，通过不同的方式来执行此操作。 通常情况下，当你尝试调试问题，您正在尝试找出变量是否存储您期望它们已在特定时间的值。
-
-1. 在暂停时`shape.Draw()`方法 (`shape->Draw()` c + + 中)，将鼠标悬停`shapes`对象，并查看其默认属性值`Count`属性。
-
-1. 展开`shapes`对象以查看所有属性，如数组的第一个索引`[0]`，其中包含的值为`Rectangle`(C#) 或内存地址 （c + +）。
-
-     ![查看数据提示](../debugger/media/get-started-data-tip.gif "查看数据提示")
-
-    可以进一步展开对象，若要查看其属性，例如`Height`矩形的属性。
-
-    通常情况下，在调试时，你想要快速检查对象的属性值和数据提示是执行此操作的好办法。
-
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>检查与自动和局部变量窗口中的变量
-
-1. 看看**自动**底部的代码编辑器窗口。
-
-     ![检查自动窗口中的变量](../debugger/media/get-started-autos-window.png "自动窗口")
-
-    在中**自动**窗口中，请参阅变量和其当前值。 **自动**窗口显示当前行或在前面的行上使用的所有变量 （在 c + + 中，窗口将都显示变量中前三行代码。 查看文档，了解特定于语言的行为）。
+1. 按一次 F11，你会看到调试器再次前进。
 
     > [!NOTE]
-    > 在 JavaScript 中，**局部变量**但不是支持窗口**自动**窗口。
+    > 根据你在调试器中编辑的代码类型，可能会看到一条警告消息。 在某些情况下，代码需要重新编译才能继续。
 
-2. 接下来，看看**局部变量**窗口中，在下一步的选项卡**自动**窗口。
+## <a name="step-out"></a>单步跳出
 
-    **局部变量**窗口显示在当前的变量[作用域](https://www.wikipedia.org/wiki/Scope_(computer_science))。
+假设你已完成了对 `Triangle` 类中 `Draw` 方法的检查，并且希望退出该函数但保持位于调试器中。 可使用“单步跳出”命令执行此操作。
+
+1. 按 Shift + F11（或“调试”>“单步跳出”）。
+
+     此命令将恢复应用执行（并使调试器前进），直到当前函数返回。
+
+     你应当会回到 `Main` 方法的 `foreach` 循环（C++ 中的 `for` 循环）中。
+
+## <a name="restart-your-app-quickly"></a>快速重启应用
+
+单击调试工具栏中的“重启”（![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")）按钮（Ctrl + Shift + F5）。
+
+当你按下“重启”时，与停止应用并重启调试器相比，它节省了时间。 调试器在通过执行代码命中的第一个断点处暂停。
+
+调试器再次在你在 `shape.Draw()` 方法（C++ 中的 `shape->Draw()`）上设置的断点处停止。
+
+## <a name="inspect-variables-with-data-tips"></a>使用数据提示检查变量
+
+允许你检查变量的功能是调试器最有用的功能之一，并且有不同的方法来执行此操作。 通常，当尝试调试问题时，你试图找出变量是否存储了你期望它们在特定时间具有的值。
+
+1. 在 `shape.Draw()` 方法（C++ 中的 `shape->Draw()`）上暂停时，将鼠标悬停在 `shapes` 对象上，你会看到其默认属性值 `Count` 属性。
+
+1. 展开 `shapes` 对象以查看其所有属性，例如数组 `[0]` 的第一个索引，其值为 `Rectangle` (C#) 或内存地址 (C++)。
+
+     ![查看数据提示](../debugger/media/get-started-data-tip.gif "View a Data Tip")
+
+    可进一步展开对象以查看其属性，例如矩形的 `Height` 属性。
+
+    通常，在调试时，你需要快速检查对象的属性值，数据提示是一种实现此目的的好方法。
+
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>使用“自动”和“局部变量”窗口检查变量
+
+1. 查看代码编辑器底部的“自动”窗口。
+
+     ![在“自动”窗口中检查变量](../debugger/media/get-started-autos-window.png "Autos Window")
+
+    在“自动”窗口中，可看到变量及其当前值。 “自动”窗口显示当前行或前一行使用的所有变量（在 C++ 中，该窗口显示前三个代码行中的变量。 查看文档以了解特定于语言的行为）。
+
+    > [!NOTE]
+    > 在 JavaScript 中，支持“局部变量”窗口，但不支持“自动”窗口。
+
+2. 接下来，我们来看看“自动”窗口旁边的选项卡中的“局部变量”窗口。
+
+    “局部变量”窗口显示当前[作用域](https://www.wikipedia.org/wiki/Scope_(computer_science))中的变量。
 
 ## <a name="set-a-watch"></a>设置监视
 
-1. 在主代码编辑器窗口中，右键单击`shapes`对象，并选择**添加监视**。
+1. 在主代码编辑器窗口中，右键单击 `shapes` 对象，然后选择“添加监视”。
 
-    **监视**窗口将打开代码编辑器的底部。 可以使用**监视**窗口上指定一个变量 （或表达式），你想要密切关注。
+    “监视”窗口将在代码编辑器的底部打开。 可使用“监视”窗口指定要关注的变量（或表达式）。
 
-    现在，可以监视上设置`shapes`对象，您可以看到当移动通过调试程序时更改其值。 与其他变量窗口中，不同**监视**窗口始终显示的变量，观看 （它们灰显时超出范围）。
+    现在，你在 `shapes` 对象上设置好了监视，当你在调试器中移动时，可看到其值发生变化。 与其他变量窗口不同，“监视”窗口始终显示你正在监视的变量（当超出作用域时，它们会变灰）。
 
 ## <a name="examine-the-call-stack"></a>检查调用堆栈
 
-1. 在暂停时`foreach`循环 (`for` c + + 中的循环)，单击**调用堆栈**窗口中，这是默认情况下在右下窗格中打开。
+1. 在 `foreach` 循环（C++ 中的 `for` 循环）中暂停时，单击“调用堆栈”窗口，默认情况下，该窗口在右下方窗格中打开。
 
-2. 单击**F11**几次，直到您看到调试器中暂停`Circle.Draw`代码编辑器中的方法。 看看**调用堆栈**窗口。
+2. 单击 F11 几次，直至看到调试器在代码编辑器中的 `Circle.Draw` 方法中暂停。 查看“调用堆栈”窗口。
 
     ![检查调用堆栈](../debugger/media/get-started-call-stack.png "ExamineCallStack")
 
-    **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 最上面一行显示当前函数 (`Circle.Draw`或`Circle::Draw`此应用程序中的方法)。 第二行显示`Circle.Draw`从调用`Main`方法 (`main` c + + 中)，依次类推。
+    “调用堆栈”窗口显示方法和函数被调用的顺序。 最上面一行显示当前函数（此应用中的 `Circle.Draw` 或 `Circle::Draw` 方法）。 第二行显示 `Circle.Draw` 是从 `Main` 方法（C++ 中的 `main`）调用的，依此类推。
 
    > [!NOTE]
-   > **调用堆栈**窗口处于类似于调试角度来看一些 Ide，如 Eclipse。
+   > “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图。
 
-    调用堆栈是检查和了解应用的执行流的好方法。
+    调用堆栈是检查和理解应用执行流的好方法。
 
-    你可以双击要查看该源代码的代码行，并还更改正在由调试器来检查当前作用域。 此操作，不再处理调试器。
+    可双击代码行来查看该源代码，这也会更改调试器正在检查的当前作用域。 此操作不会使调试器前进。
 
-    此外可以使用从右键单击菜单**调用堆栈**窗口中执行其他操作。 例如，您可以将断点插入到指定的函数，请继续学习使用调试器**运行到光标处**，再检查源代码。 有关详细信息，请参阅[如何： 检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+    还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”推进调试器，然后检查源代码。 有关详细信息，请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
 
 ## <a name="change-the-execution-flow"></a>更改执行流
 
-1. 使用调试器中暂停`Circle.Draw`方法调用中，按**F11**几次，直到上暂停调试器`base.Draw`方法调用 (`Shape::Draw` c + + 中)。
+1. 在 `Circle.Draw` 方法调用中暂停调试器后，按几次 F11，直到调试器暂停于 `base.Draw` 方法调用（C++ 中的 `Shape::Draw`）。
 
-1. 使用鼠标抓取在左侧的黄色箭头 （执行指针） 并将移动到一个行的黄色箭头`Console.WriteLine`(`std::cout`中 c + +) 方法调用。
+1. 使用鼠标抓住左侧的黄色箭头（执行指针），将黄色箭头向上移动一行到 `Console.WriteLine`（C++ 中的 `std::cout`）方法调用。
 
-1. 按**F11**多一次。
+1. 再按一次 F11。
 
-    重新运行调试器`Console.WriteLine`方法 (`std::cout` c + + 中)。
+    调试器重新运行 `Console.WriteLine` 方法（C++ 中的 `std::cout`）。
 
-    通过更改执行流，可以执行某些操作，如测试不同的代码执行路径或重新运行代码，而无需重新启动调试器。
+    通过更改执行流，你可以进行测试不同代码执行路径或重新运行代码等操作，而无需重启调试器。
 
     > [!WARNING]
-    > 通常需要谨慎使用此功能，并查看工具提示中的警告。 您也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态的应用程序。
+    > 通常你需要小心使用此功能，工具提示中会出现警告。 你也可能会看到其他警告。 移动指针无法将应用程序还原到更早的应用状态。
 
-1. 按**F5**继续运行该应用程序。
+1. 按 F5 继续运行应用。
 
     恭喜你完成本教程！
 
 ## <a name="next-steps"></a>后续步骤
 
-在本教程中，已学习了如何启动调试器，单步执行代码，并检查变量。 您可能想要深入了解调试器功能，此外还提供详细信息链接。
+在本教程中，你已了解了如何启动调试器、逐步执行代码以及检查变量。 你可能会希望更深入地了解调试器功能以及查看指向更多信息的链接。
 
 > [!div class="nextstepaction"]
 > [调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)
