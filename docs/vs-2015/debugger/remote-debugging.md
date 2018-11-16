@@ -21,15 +21,15 @@ helpviewer_keywords:
 - remote debugging, setup
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 caps.latest.revision: 81
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 61b1bc7f81ca4d6c3f313c543be23b746d56d37e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0ac1bbe2cc1832d0b34706f88b4df583d117149c
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812889"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51799270"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ ms.locfileid: "49812889"
   
 4. 添加用户帐户的名称和密码。  
   
-    你可能需要将“作为服务登录”  的用户权限添加到此帐户。 （找到“启动”  页或窗口（或命令提示符下的类型 **secpol** ）中的  “本地安全策略”(secpol.msc)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到**属性**窗口，然后单击**确定**。)单击**下一步**。  
+    你可能需要将“作为服务登录”  的用户权限添加到此帐户。 （找到“启动”  页或窗口（或命令提示符下的类型 **secpol** ）中的  “本地安全策略”(secpol.msc)。 当显示窗口时，双击“用户权限分配” ，然后在右窗格中找到  “作为服务登录”。 双击该选项。 将用户帐户添加到**属性**窗口，然后单击**确定**。)单击 **“下一步”**。  
   
 5. 选择你希望远程工具与之通信的网络类型。 必须至少选择一种网络类型。 如果这些计算机通过域连接，则应选择第一项。 如果这些计算机通过工作组或家庭组连接，则应选择第二或第三项。 单击 **“下一步”**。  
   
