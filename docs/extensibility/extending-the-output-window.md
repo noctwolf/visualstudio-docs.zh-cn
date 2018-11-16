@@ -13,17 +13,17 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceb739cc8ad2dc65b1aca6c38d6c4f49ec792215
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 33e34a78fc06bc2b7f40129e33b6d2d78ff561c5
+ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39635864"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51645206"
 ---
 # <a name="extend-the-output-window"></a>扩展输出窗口
 **输出**窗口是一组的读/写文本窗格。 Visual Studio 提供了这些内置窗格：**构建**，有关生成，消息通信的项目中并**常规**，在其中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]将有关 IDE 的消息传递。 项目将获得对的引用**构建**窗格中会自动通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>接口方法和 Visual Studio 提供了直接访问权限**常规**窗格通过<xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane>服务。 除了内置的窗格中，可以创建和管理自己的自定义窗格。  
   
- 您可以控制**输出**窗口直接通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>接口，由提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服务，请定义用于创建、 检索和销毁方法**输出**窗口窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>接口定义用于显示窗格中，隐藏窗格，和操作其文本的方法。 控制的替代方法**输出**窗口是通过<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio 自动化对象模型中的对象。 几乎所有的功能，这些对象将封装<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 此外，<xref:EnvDTE.OutputWindow>并<xref:EnvDTE.OutputWindowPane>对象添加一些更高级别的功能，以使其更轻松地枚举**输出**窗口窗格并从窗格中检索文本。  
+ 您可以控制**输出**窗口直接通过<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>接口，由提供<xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow>服务，请定义用于创建、 检索和销毁方法**输出**窗口窗格。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口定义用于显示窗格中，隐藏窗格，和操作其文本的方法。 控制的替代方法**输出**窗口是通过<xref:EnvDTE.OutputWindow>和<xref:EnvDTE.OutputWindowPane>Visual Studio 自动化对象模型中的对象。 几乎所有的功能，这些对象将封装<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow>和<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane>接口。 此外，<xref:EnvDTE.OutputWindow>并<xref:EnvDTE.OutputWindowPane>对象添加一些更高级别的功能，以使其更轻松地枚举**输出**窗口窗格并从窗格中检索文本。  
   
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>创建使用输出窗格中的扩展  
  您可以进行练习的输出窗格中的不同方面的扩展。  
