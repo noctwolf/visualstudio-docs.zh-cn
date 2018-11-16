@@ -1,7 +1,7 @@
 ---
-title: 调试安装的应用包 (UWP) |Microsoft Docs
+title: 调试安装的 UWP 应用包 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 07/17/2017
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,82 +21,84 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 3bb858f2ee20eb65c09dd4979f2bbba1470cbe0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 331fd642001f1e6217736185d4b3bbbd7f56923e
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908233"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51784411"
 ---
-# <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>调试 Visual Studio (UWP) 中的已安装的应用程序包
+# <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>调试 Visual Studio 中安装的 UWP 应用包
 
-可以通过单击来调试任何已安装的应用程序包**调试 > 其他调试目标 > 调试安装的应用程序包**。 此调试方法有针对通用 Windows 应用 (UWP) 在这些设备上：
+Visual Studio 可以调试在 Windows 10 计算机和 Xbox、 HoloLens 和 IoT 设备上的已安装通用 Windows 平台 (UWP) 应用程序包。 
 
-* Windows 10 （不支持在电话上）
-* XBox
-* HoloLens
-* IoT
+>[!NOTE]
+>在电话上不支持的 visual Studio 调试已安装的 UWP 应用的。
+   
+有关调试 UWP 应用的详细信息，请参阅博客文章上[调试已安装的应用包](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)并[构建通用 Windows 应用 (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
 
-有关这些功能的详细信息，请参阅博客文章上的更新[调试已安装的应用包](https://blogs.msdn.microsoft.com/devops/2016/03/30/updates-for-debugging-installed-app-packages-in-visual-studio-2015-update-2/)和在 post[构建通用 Windows 应用 (UWP)](https://blogs.msdn.microsoft.com/visualstudio/2016/08/02/universal-windows-apps-targeting-windows-10-anniversary-sdk/)。
+## <a name="debug-an-installed-uwp-app-on-a-local-machine"></a>调试本地计算机上已安装的 UWP 应用
 
-## <a name="debug-an-installed-app-package-or-running-app-on-a-local-machine-or-device"></a>调试安装的应用包或在本地计算机或设备上运行的应用
-
-1. 在 Visual Studio 中打开 UWP 项目后，单击**调试 > 其他调试目标 > 调试安装的应用程序包**。
-
-2. 选择任一**本地计算机**或**设备**。
-
-     如果愿意**设备**，计算机必须以物理方式连接到 Windows 10 设备。
-
-     ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
-
-     当前正在运行安装应用包都将出现下的**运行**节点。 已安装的应用包不运行显示向上**未运行**。
-
-3. 选择你想要调试时所应用的名称**运行**或**未在运行**，然后选择**启动**或者，如果已在运行该应用程序，选择**附加**.
-
-     如果选择**不启动，但在启动时调试我的代码**，这会导致 Visual Studio 调试器附加到您的应用程序时在自定义时启动它。 这是调试中的控制路径的有效途径[不同的启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，如使用自定义参数的协议激活。
+1. 在 Visual Studio 中，选择**调试** > **其他调试目标** > **调试安装的应用程序包**。
+   
+1. 在中**调试安装的应用程序包**对话框下**连接类型**，选择**本地计算机**。
+   
+1. 下**安装的应用程序包**，选择想要调试的应用或搜索框中键入其名称。 在运行非已安装的应用包会出现下**未在运行**，且正在运行的应用属于**运行**。 
+   
+   ![DebugInstalledAppPackage](../debugger/media/debug-installed-app-pkg.png "DebugInstalledAppPackage")
+   
+1. 如有必要，更改下面的代码类型**调试此代码类型**，并选择其他选项。 
+   - 选择**不启动，但在启动时调试我的代码**开始调试时启动该应用程序。 启动调试时在应用启动是调试中的控制路径的有效途径[不同的启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，如使用自定义参数的协议激活。
+   
+1. 选择**启动**，或如果应用正在运行，选择**附加**。
 
 > [!NOTE]
-> Visual Studio 还可以通过选择附加到任何正在运行的 UWP 应用进程**调试**，然后**附加到进程**。 将附加到正在运行的进程不需要原始的 Visual Studio 项目中，但加载进程的符号将起到显著作用调试不含的原始代码的进程时。
+> 此外可以通过选择附加到任何正在运行的 UWP 或其他应用程序的进程**调试** > **附加到进程**Visual Studio 中。 您不需要原始的 Visual Studio 项目，以将附加到正在运行的进程，但加载应用程序的符号将起到显著作用调试不含的原始代码的进程时。 请参阅[在调试器中指定符号和源文件](specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-## <a name="remote"></a> 调试远程计算机上已安装或正在运行的应用程序 
+## <a name="remote"></a> 调试远程计算机或设备上已安装的 UWP 应用
 
-当第一次调试远程计算机上安装的应用包时，Visual Studio 安装你的目标设备的远程工具的正确版本。 Windows 10 计算机、 XBox、 HoloLens 或 IoT 设备，必须为你的目标设备。
+Visual Studio 调试已安装的 UWP 应用的 Windows 10 设备或远程 post 的创建者的更新 Windows 10 计算机上的第一次它在目标设备上安装远程调试工具。 
 
-1. 在 Windows 10 设备上启用[开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)。
+1. [启用开发人员模式](/windows/uwp/get-started/enable-your-device-for-development)Visual Studio 计算机和远程设备或计算机上。
+   
+1. 如果要连接到远程计算机运行前的创建者的更新 Windows 10 中，[手动安装并启动远程调试器](../debugger/remote-debugging.md)远程计算机上。
+   
+1. 在 Visual Studio 计算机上，选择**调试** > **其他调试目标** > **调试安装的应用程序包**。
+   
+1. 在中**调试安装的应用程序包**对话框下**连接类型**，选择**远程计算机**或者**设备**。
+   
+   如果选择**设备**，计算机必须以物理方式连接到 Windows 10 设备。
+   
+   为远程计算机，如果计算机地址没有旁边出现**地址**，选择**更改**。 
+      
+   1. 在中**远程连接**对话框旁边**地址**，键入名称或你想要连接到计算机的 IP 地址。
+      
+      ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
+      
+      如果调试器无法连接到远程计算机使用的计算机名称，请改为使用的 IP 地址。 用于 Xbox、 HoloLens 或 IoT 设备的 IP 地址。
+   1. 选择一个身份验证选项旁边**身份验证模式**。
+      
+      对于大多数应用中，保留默认值**通用 （未加密的协议）**。
+   1. 选择**选择**。 
 
-2. 如果要连接到远程电脑手动首次运行前的创建者的更新版本的 Windows 10[安装并启动远程调试器](../debugger/remote-debugging.md)。
+1. 下**安装的应用程序包**，选择想要调试的应用或搜索框中键入其名称。 在运行非已安装的应用包会出现下**未在运行**，且正在运行的应用属于**运行**。 
+   
+1. 如有必要，更改下面的代码类型**调试此代码类型**，并选择其他选项。 
+   - 选择**不启动，但在启动时调试我的代码**开始调试时启动该应用程序。 启动调试时在应用启动是调试中的控制路径的有效途径[不同的启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，如使用自定义参数的协议激活。
+   
+1. 选择**启动**，或如果应用正在运行，选择**附加**。
 
-     对于 XBox、 HoloLens 或 IoT 设备和运行 Windows 10 创意者更新的 Windows 设备，您不必手动安装远程调试器。 部署应用时，将自动安装远程工具。
+当开始第一次调试连接 Xbox、 HoloLens 或 IoT 设备上安装的应用包时，Visual Studio 安装的目标设备的远程调试器的正确版本。 安装远程调试器可能需要一些时间和消息**正在启动远程调试器**显示在它的执行过程。
 
-3. 单击**调试 > 其他调试目标 > 调试安装的应用程序包**。
+>[!NOTE]
+>目前，Xbox 或 HoloLens 设备重启应用，如果已运行，则附加调试器。
 
-4. 从第一个下拉列表中，选择**远程计算机**。
-
-5. 键入名称或你想要将附加到计算机的 IP 地址。
-
-     ![ChooseRemoteComputer](../debugger/media/debug-remote-app-pkg.png "ChooseRemoteComputer")
-
-     如果您不能将附加使用计算机名称 (在选择后**启动**)，改为使用的 IP 地址。 用于 XBox、 HoloLens 或 IoT 设备的 IP 地址。
-
-6. 选择如何通过选择中的一个选项来进行身份验证**身份验证模式**。
-
-    对于大多数应用中，保留默认值**通用 （未加密的协议）**。
-
-7. 选择你想要调试时所应用的名称**运行**或**未在运行**，然后选择**启动**或 （对于正在运行的应用）**附加**。
-
-     如果选择**不启动，但在启动时调试我的代码**，这会导致 Visual Studio 调试器附加到你的应用程序包时在自定义时启动它。 这是调试中的控制路径的有效途径[不同的启动方法](/windows/uwp/xbox-apps/automate-launching-uwp-apps)，如使用自定义参数的协议激活。
-
-     当第一次调试连接 XBox、 HoloLens 或 IoT 设备上安装的应用包时，Visual Studio 安装的目标设备的远程调试器的正确版本。 这可能需要一点时间，你将看到一条消息``Starting remote debugger``而发生这种情况。
-
-     > [!NOTE]
-   > 在展示，XBox 或 HoloLens 设备将在附有如果它已在运行调试器的情况下重新启动应用。
-
-UWP 应用的远程部署的高级选项的信息，请参阅 [部署和调试 UWP apps]((/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)。 
+UWP 应用的远程部署的详细信息，请参阅[部署和调试 UWP 应用](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps#advanced-remote-deployment-options)并[远程计算机上的调试 UWP 应用](run-windows-store-apps-on-a-remote-machine.md)。 
   
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中进行调试](../debugger/index.md)  
  [调试器功能简介](../debugger/debugger-feature-tour.md)  
- [Remote Debugging](../debugger/remote-debugging.md)  
+ [远程调试](../debugger/remote-debugging.md)  
  [配置 Windows 防火墙以便进行远程调试](../debugger/configure-the-windows-firewall-for-remote-debugging.md)  
  [远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)  
  [远程调试错误和疑难解答](../debugger/remote-debugging-errors-and-troubleshooting.md)
