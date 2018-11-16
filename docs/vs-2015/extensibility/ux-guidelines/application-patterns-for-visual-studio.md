@@ -13,12 +13,12 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: d52a6e8eb5be9fb6516bcbc7788cf3115e2debdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d3c0be041628d840908b1814e26f14a488651603
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848691"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51748470"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Visual Studio 的应用程序模式
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -387,7 +387,7 @@ ms.locfileid: "49848691"
   
   避免选择默认命令的永久破坏性操作。 如果存在此类命令，则更安全的命令为默认值改为选择。  
   
-#### <a name="access-keys"></a>访问密钥  
+#### <a name="access-keys"></a>访问键  
  不使用访问密钥**确定**/**取消**/**帮助**按钮。 默认情况下，这些按钮映射到键盘快捷方式：  
   
 |按钮名称|键盘快捷键|  
