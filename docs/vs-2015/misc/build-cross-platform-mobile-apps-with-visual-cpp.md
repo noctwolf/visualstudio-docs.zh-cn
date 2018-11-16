@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: douge
-ms.openlocfilehash: e7b7f30378f863e119c121b1805aa5f805fa60ed
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f498ce1a0176bc0ebb1b705a13333a63e89776a6
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260165"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51802092"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>生成 Visual c + + 的跨平台移动应用
 可以通过使用适用于跨平台移动开发的 Visual C++ 构建用于 Android、iOS 和 Windows 设备的跨平台代码。 这是在 Visual Studio 2015 中可用的一项可选功能，Visual Studio 2015 通过使用 Visual C++ 实现适用于 iOS、Android 和 Windows 的跨平台代码开发。  
