@@ -13,12 +13,12 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: a8a1336ca880a3824e16f432c07ccf0caa769f60
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4ab668678a0ec867112f461b7978962d941bcdc8
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872533"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51749155"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -390,7 +390,7 @@ ms.locfileid: "49872533"
   
 |||||||  
 |-|-|-|-|-|-|  
-|![Visual Basic 图标](../../extensibility/ux-guidelines/media/0405-25-vb.png "0405年 25_VB") **VB**|![C&#35;图标](../../extensibility/ux-guidelines/media/0405-26-csharp.png "0405年 26_CSharp") **C#**|![C&#43; &#43;图标](../../extensibility/ux-guidelines/media/0405-27-cplusplus.png "0405年 27_CPlusPlus") **c + +**|![F&#35;图标](../../extensibility/ux-guidelines/media/0405-28-fsharp.png "0405年 28_FSharp") **F #**|![JavaScript 图标](../../extensibility/ux-guidelines/media/0405-29-javascript.png "0405年 29_JavaScript") **JavaScript**|![Python 图标](../../extensibility/ux-guidelines/media/0405-30-python.png "0405年 30_Python") **Python**|  
+|![Visual Basic 图标](../../extensibility/ux-guidelines/media/0405-25-vb.png "0405年 25_VB") **VB**|![C&#35;图标](../../extensibility/ux-guidelines/media/0405-26-csharp.png "0405年 26_CSharp")**C#**|![C&#43; &#43;图标](../../extensibility/ux-guidelines/media/0405-27-cplusplus.png "0405年 27_CPlusPlus") **c + +**|![F&#35;图标](../../extensibility/ux-guidelines/media/0405-28-fsharp.png "0405年 28_FSharp")**F#**|![JavaScript 图标](../../extensibility/ux-guidelines/media/0405-29-javascript.png "0405年 29_JavaScript") **JavaScript**|![Python 图标](../../extensibility/ux-guidelines/media/0405-30-python.png "0405年 30_Python") **Python**|  
 |![HTML 图标](../../extensibility/ux-guidelines/media/0405-31-html.png "0405年 31_HTML") **HTML**|![WPF 图标](../../extensibility/ux-guidelines/media/0405-32-wpf.png "0405年 32_WPF") **WPF**|![ASP 图标](../../extensibility/ux-guidelines/media/0405-33-asp.png "0405年 33_ASP") **ASP**|![CSS 图标](../../extensibility/ux-guidelines/media/0405-34-css.png "0405年 34_CSS") **CSS**|![TypeScript 图标](../../extensibility/ux-guidelines/media/0405-35-typescript.png "0405年 35_TypeScript") **TypeScript**||  
   
 #### <a name="intellisense"></a>IntelliSense  
