@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 865fbca5092378af044d6121862119ecba8625a2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748684"
+ms.locfileid: "51826725"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
-Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  
+Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
   
 ## <a name="basic-debugging"></a>基础调试  
 
@@ -183,4 +183,9 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 1. 在中**模块**窗口中，您可以知道该模块具有中加载符号**符号状态**列。 右键单击你想要加载符号，然后选择该模块**加载符号**。  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 单步执行托管代码中的属性和运算符  
- 默认情况下，调试器将单步执行属性和托管代码中的运算符。 逐过程执行属性和运算符通常提供更好的调试体验。 若要启用单步执行属性和运算符，在**工具**(或**调试**) >**选项** > **调试** > **常规**，清除**逐过程执行属性和运算符 （仅限托管）** 复选框。
+ 默认情况下，调试器将逐过程执行托管代码中的属性和运算符。 在多数情况下，这会提供较好的调试体验。 若要启用单步执行属性或运算符，请选择**调试** > **选项**。 上**调试** > **常规**页上，清除**逐过程执行属性和运算符 （仅限托管）** 复选框。
+
+## <a name="see-also"></a>请参阅
+ [什么调试？](../debugger/what-is-debugging.md)  
+ [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [首先看一下调试](../debugger/debugger-feature-tour.md) 

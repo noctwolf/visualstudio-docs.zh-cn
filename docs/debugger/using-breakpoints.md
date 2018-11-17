@@ -36,15 +36,15 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e34d01d2488ad5345ff65237cd708c06764661
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816678"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826838"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
-断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。  
+断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
   
 ##  <a name="BKMK_Overview"></a> 在源代码中设置断点  
  可以在任意可执行代码行上设置断点。 例如，在以下 C# 代码，可以设置断点在变量声明`for`循环中或内的任何代码`for`循环。 命名空间或类声明或方法签名，无法设置断点。  
@@ -235,8 +235,8 @@ ms.locfileid: "49816678"
  >- 对于本机代码，调试器不会考虑更改，因此不会命中第一次计算断点条件的第一次计算。 
  >- 对于托管代码，调试器命中断点后第一次计算**发生更改时**处于选中状态。  
   
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>条件表达式 （C# 和 F #，仅） 中使用对象 Id  
- 有些的时候，当你想要观察特定对象的行为。 例如，你可能想要找出为什么对象插入到集合一次以上。 在 C# 和 F #，您可以创建的特定实例的对象 Id[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)，并在断点条件中使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  
+### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>在条件表达式中使用对象 Id (C#和F#仅)  
+ 有些的时候，当你想要观察特定对象的行为。 例如，你可能想要找出为什么对象插入到集合一次以上。 在C#和F#，可以创建的特定实例的对象 Id[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)，并在断点条件中使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  
 
 **若要创建对象 ID:** 
   
@@ -305,5 +305,7 @@ ms.locfileid: "49816678"
 跟踪点显示为红色方块中的源代码的左边距和**断点**windows。 
   
 ## <a name="see-also"></a>请参阅  
-[在 Visual Studio 调试器中的断点疑难解答](../debugger/troubleshooting-breakpoints.md)  
-[使用调试器浏览代码](../debugger/navigating-through-code-with-the-debugger.md)
+ [什么调试？](../debugger/what-is-debugging.md)  
+ [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [首先看一下调试](../debugger/debugger-feature-tour.md)  
+ [在 Visual Studio 调试器中的断点疑难解答](../debugger/troubleshooting-breakpoints.md)  
