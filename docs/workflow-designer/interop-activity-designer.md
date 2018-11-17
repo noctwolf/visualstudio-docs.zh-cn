@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47ede5eebc4d7caf4fe1565c5d8b93b2524ed6ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7f3b5fd2674d63fad6398eeaee082862c4cf6476
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49849354"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51809124"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 
@@ -35,7 +35,7 @@ ms.locfileid: "49849354"
 
 对于 C# 项目，您可以重新将项目定为右键单击该项目中的使用完整的.NET Framework 4**解决方案资源管理器**，然后选择**属性**。 上**应用程序**选项卡上，选择**NET Framework 4**选项**目标框架**。 选择**是**确认此更改。
 
-对于 VB 项目，您可以重新将项目定为右键单击项目中使用完整的.NET Framework 4**解决方案资源管理器**，然后选择**属性**。 上**编译**选项卡上，单击**高级编译选项**按钮。 选择 **.Net Framework 4**从**目标框架列表**，然后单击**确定**。 选择**是**确认此更改。
+对于 Visual Basic 项目，您可以重新将项目定为右键单击项目中使用完整的.NET Framework 4**解决方案资源管理器**，然后选择**属性**。 上**编译**选项卡上，单击**高级编译选项**按钮。 选择 **.Net Framework 4**从**目标框架列表**，然后单击**确定**。 选择**是**确认此更改。
 
 **互操作**活动设计器可以从拖动**工具箱**和放置到工作流设计器图面上通常放置活动的例如内无论<xref:System.Activities.Statements.Sequence>。 删除**Interop**活动设计器创建<xref:System.Activities.Statements.Interop>默认值的活动**DisplayName**互操作。 可以编辑<xref:System.Activities.Activity.DisplayName%2A>中的标头**互操作**活动设计器中，或在**DisplayName**属性网格的框。
 
