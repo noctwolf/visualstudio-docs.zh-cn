@@ -1,5 +1,5 @@
 ---
-title: '调试 F # |Microsoft Docs'
+title: 调试F#|Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -19,22 +19,22 @@ helpviewer_keywords:
 - F#, debugging
 ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 caps.latest.revision: 7
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd722e40a0579181e3c361706f0775aaf350c341
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 4cfe65671e0f3d9b3e4702c9f08740c6694286ce
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209568"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51734811"
 ---
 # <a name="debugging-f"></a>调试 F# #
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 调试 F# 与调试任何托管语言类似，但有以下几种例外情况：  
   
--   **自动**窗口不会显示 F # 变量。  
+-   **自动**窗口不会显示F#变量。  
   
 -   F# 不支持“编辑并继续”。 在调试会话期间编辑 F# 代码是可以的，但应避免这样做。 因为在调试会话期间无法应用代码更改，所以在调试期间编辑 F# 代码将导致源代码和正在进行调试的代码之间不匹配。  
   
