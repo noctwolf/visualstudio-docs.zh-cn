@@ -17,12 +17,12 @@ ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 13df0a98d7a13e6f529cb32081fd38cf12639800
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 628d6e5ae2e13ea117cb3fd50aca3ba2150ac59f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829231"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51755453"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ public struct TYPE_INFO {
  联合的名称。  
   
  unionmember  
- [仅限 C#]封送到适当的结构类型基于`dwKind`。  
+ [C#仅]封送到适当的结构类型基于`dwKind`。  
   
 ## <a name="remarks"></a>备注  
  此结构传递给[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)填写其中的方法。 如何解释该结构的内容基于`dwKind`字段。  
@@ -78,7 +78,7 @@ public struct TYPE_INFO {
 > [!NOTE]
 >  [C + +]如果`dwKind`等于`TYPE_KIND_BUILT`，然后才可释放基础[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)对象时销毁`TYPE_INFO`结构。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。  
   
- [仅限 C#]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。  
+ [C#仅]下表显示了如何解释`unionmember`每种类型的成员。 以下示例显示如何这是一种类型的类型。  
   
 |`dwKind`|`unionmember` 解释为|  
 |--------------|----------------------------------|  
