@@ -1,6 +1,6 @@
 ---
 title: 让 Visual Studio 帮助您编写C#使用更少 bug 的代码
-description: 了解何时使用调试器来调试您的应用程序
+description: 了解如何编写更好的代码更少 bug
 ms.custom: debug-experiments
 ms.date: 10/30/2018
 ms.technology: vs-ide-debug
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b020dcf27ee9b248b460465a9b0c75cdb3b0ab6
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561746"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948954"
 ---
 # <a name="write-better-c-code-using-visual-studio"></a>更好地编写C#使用 Visual Studio 代码
 
@@ -33,7 +33,7 @@ ms.locfileid: "51561746"
 
 * 何时使用调试器
 
-为了演示这些任务，我们介绍几种最常见的错误和调试您的应用程序时，将会遇到的 bug 类型。 尽管此示例代码C#、 概念性信息是通常适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除非另有说明）。 屏幕截图与 C# 中。
+为了演示这些任务，我们介绍几种最常见的错误和调试您的应用程序时，将会遇到的 bug 类型。 尽管此示例代码C#、 概念性信息是通常适用于 c + +、 Visual Basic、 JavaScript 和其他语言支持的 Visual Studio （除非另有说明）。 屏幕截图为 C#。
 
 ## <a name="follow-along-using-the-sample-app"></a>跟着介绍一起操作使用示例应用
 
@@ -42,7 +42,7 @@ ms.locfileid: "51561746"
 若要创建应用程序，打开 Visual Studio，然后选择**文件 > 新建项目**。 下**可视化C#** ，选择**Windows Desktop**或 **.NET Core**，然后在中间窗格中选择**控制台应用**。 键入一个名称，如**Console_Parse_JSON**然后单击**确定**。 Visual Studio 随即创建项目。 粘贴[示例代码](#sample-code)到项目的*Program.cs*文件。
 
 > [!NOTE]
-> 如果没有看到**控制台应用程序**项目模板，请单击**打开 Visual Studio 安装程序**的左窗格中的链接**新项目**对话框。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**或 **.NET Core 跨平台开发**工作负荷中，然后选择**修改**。
+> 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**或 **.NET Core 跨平台开发**工作负荷中，然后选择**修改**。
 
 ## <a name="find-the-red-and-green-squiggles"></a>查找红色和绿色波形曲线 ！
 
@@ -166,13 +166,13 @@ catch (SerializationException)
     }
     ```
 
-* 对于不熟悉应用程序中包括的方法，检查文档，请参阅该方法则可能会引发哪些异常。 这可能是正确的错误处理和调试您的应用程序的关键信息。
+* 对于不熟悉函数包含在应用中，专用那些与外部数据 （例如 web 请求） 进行交互，检查文档以查看该函数是可能会引发哪些异常。 这可能是正确的错误处理和调试您的应用程序的关键信息。
 
 有关示例应用中，修复`SerializationException`中`GetJsonData`方法通过更改`4o`到`40`。
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>通过使用断言，明确你代码的意图
 
-单击**重新启动**![重新启动应用程序](../debugger/media/dbg-tour-restart.png "RestartApp")调试工具栏中的按钮 (**Ctrl** + **Shift**  +  **F5**)。 这更少的步骤中重新启动该应用程序。 请参阅控制台窗口中的以下输出。
+单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)。 这更少的步骤中重新启动该应用程序。 请参阅控制台窗口中的以下输出。
 
 ![在输出中的 null 值](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -208,7 +208,7 @@ if (existingUser == false)
 
 通过以这种方式指定意图，您强制执行你的要求。 这是简单方便的方法，您可以使用图面上的 bug 在开发过程。 (`assert`语句也可用作单元测试中的主要元素。)
 
-单击**重新启动**![重新启动应用程序](../debugger/media/dbg-tour-restart.png "RestartApp")调试工具栏中的按钮 (**Ctrl** + **Shift**  +  **F5**)。
+单击调试工具栏中的“重启”![重启应用](../debugger/media/dbg-tour-restart.png "RestartApp")按钮 (Ctrl + Shift + F5)。
 
 > [!NOTE]
 > `assert`代码处于活动状态仅在调试版本中。
@@ -217,7 +217,10 @@ if (existingUser == false)
 
 ![断言解析为 false](../debugger/media/write-better-code-using-assert.png)
 
-`assert`错误告知你是否有需要调查的问题。 `assert` 可以包含很多情况下将不一定出现异常。 在此示例中，用户不会看到异常 (在其他情况下`NullReferenceException`可能会发生)，和一个`null`值获取将添加为`firstname`在数据库中。 这可能会导致问题更高版本上 （例如，您看到控制台输出中），并且还可能更难进行调试。
+`assert`错误告知你是否有需要调查的问题。 `assert` 可以包含很多情况下将不一定出现异常。 在此示例中，用户不会看到异常，和一个`null`值获取将添加为`firstname`列表中的记录。 这可能会导致问题更高版本上 （例如，您看到控制台输出中），并且还可能更难进行调试。
+
+> [!NOTE]
+> 在其中调用方法的情况下`null`值，`NullReferenceException`结果。 你通常想要避免使用`try/catch`阻止对于常规的异常，即，不依赖于特定的库函数的异常。 任何对象可能会引发`NullReferenceException`。 如果您不确定，请检查库函数的文档。
 
 在调试过程中，它是很好的特定`assert`语句，直至你知道需要将它替换为实际代码修补程序。 让我们假设你决定用户可能会遇到应用程序的发行版中的异常。 在这种情况下，则必须重构代码以确保您的应用程序不会引发致命异常或导致其他一些错误。 因此，若要修复此代码，将以下代码：
 
@@ -276,7 +279,7 @@ Bug 的另一种包括导致你的应用运行缓慢或占用大量内存的代�
 
 ## <a name="sample-code"></a> 示例代码
 
-下面的代码完全可以使用 Visual Studio IDE 来修复一些 bug。 应用此处是一个简单的应用，用于模拟从某项操作，反序列化到对象，数据和使用新数据更新一个简单的内存中数据库获取 JSON 数据。
+下面的代码完全可以使用 Visual Studio IDE 来修复一些 bug。 应用此处是一个简单的应用，用于模拟从某项操作，反序列化到对象，数据和使用新数据更新的简单列表获取的 JSON 数据。
 
 ```csharp
 using System;
