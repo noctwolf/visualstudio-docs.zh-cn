@@ -1,5 +1,5 @@
 ﻿---
-title: 在 Visual Studio 中的托管代码的代码分析
+title: 托管代码的静态代码分析
 ms.date: 03/26/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-code-analysis
@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad1b093c224e37ce53dc77472518d03f2dc8093b
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: 1e77955de9bb650ac262d8f9b7513c90acbd19ac
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320808"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948421"
 ---
-# <a name="overview-of-code-analysis-for-managed-code"></a>托管代码的代码分析概述
+# <a name="overview-of-static-code-analysis-for-managed-code-in-visual-studio"></a>在 Visual Studio 中的托管代码的静态代码分析的概述
 
-Visual Studio 2017 以两种方式分析托管代码：一种是使用传统的托管程序集 *FxCop* 静态分析，另一种是使用 .NET Compiler Platform 分析器。 本主题介绍 FxCop 静态代码分析。 若要详细了解如何使用 .NET Compiler Platform 分析器来分析代码，请参阅 [Roslyn 分析器概述](../code-quality/roslyn-analyzers-overview.md)。
+Visual Studio 2017 可以通过两种方式执行托管代码的代码分析： 使用*FxCop*静态分析托管程序集，并提供详细的新式*Roslyn 分析器*。 本主题介绍 FxCop 静态代码分析。 若要了解有关使用代码分析器来分析代码的详细信息，请参阅[概述的 Roslyn 分析器](../code-quality/roslyn-analyzers-overview.md)。
 
 针对托管代码的代码分析用于分析托管程序集并报告有关程序集的信息，例如违反 Microsoft .NET Framework 设计指南中规定的编程和设计准则。
 

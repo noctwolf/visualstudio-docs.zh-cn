@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: 1bd1687e545546780db4c76169bf2ca0affd47fe
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224405"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294261"
 ---
 # <a name="creating-new-projects-and-solutions"></a>创建新项目和解决方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>使用模板创建新项目和解决方案
 
-可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”，然后依次选择所需平台和所需模板：
+可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”，然后依次选择所需平台和所需模板 ****：
 
 ![创建新解决方案](media/projects-and-solutions-image0.png)
 
@@ -26,7 +26,7 @@ ms.locfileid: "43224405"
 
 若要将新项目添加到解决方案，请右键单击解决方案名称，选择“添加”>“添加新项目”，显示“新建项目”对话框：
 
- ![添加新项目](media/projects-and-solutions-image4.png)
+![添加新项目](media/projects-and-solutions-image4.png)
 
 这种添加新项目的方法可以用于充分利用 Xamarin 代码共享功能。 将共享项目或可移植库模板添加到现有解决方案提供一种包含任何跨平台逻辑的方法，该逻辑可在解决方案中的所有其他项目中使用。 有关更多关于生成跨平台应用程序的详细信息，请参阅[相关指南](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/)。
 
@@ -34,7 +34,10 @@ ms.locfileid: "43224405"
 
 Visual Studio 的登录页面显示最近使用的项目列表：
 
- ![欢迎页上的最近使用解决方案部分](media/create-new-projects-recent.png)
+![欢迎页上的最近使用解决方案部分](media/create-new-projects-recent.png)
 
-可以使用“筛选器”框筛选列表，或从列表中移除单个项。 
- 
+可以使用“筛选器”框筛选列表，或从列表中移除单个项。
+
+## <a name="see-also"></a>请参阅
+
+- [创建解决方案和项目（Windows 上的 Visual Studio）](/visualstudio/ide/creating-solutions-and-projects)

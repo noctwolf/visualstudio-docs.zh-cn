@@ -9,12 +9,12 @@ ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: f6404b15e8a7cd3f95ac63bbae6076ef62fcff06
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: b20a43181ad4d36377e61434b880b491543a6c47
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001582"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791600"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>使用 Azure 资源组部署项目的 Azure DevOps 服务中的持续集成
 若要部署 Azure 模板，您执行任务在各个阶段： 生成、 测试、 复制到 Azure （也称为"暂存"），并部署模板。 有两种不同方法，将模板部署到 Azure DevOps 服务。 这两种方法提供相同的结果，因此请选择最适合您的工作流。

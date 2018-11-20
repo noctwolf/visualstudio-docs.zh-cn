@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6fc870e53e9323b8f76cfa39b2e6f961b04e973a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4da74a60741ac33143efd7aecf0a4275185b6d3b
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825759"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294691"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中实现抽象类
 
@@ -49,7 +49,7 @@ ms.locfileid: "49825759"
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
    ![实现类预览](media/abstract-preview-cs.png)
 

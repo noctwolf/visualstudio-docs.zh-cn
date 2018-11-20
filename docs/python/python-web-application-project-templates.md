@@ -11,18 +11,18 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cbdf9b6890613cc4ad41af77e27f7f41c6f5c9da
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3245cd647f5da391bb0e36afc65d867137618808
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219843"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349330"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
 Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过项目模板和可配置为处理不同框架的调试启动程序开发 Web 项目。 这些模板包括 requirements.txt 文件来声明必需的依赖项。 基于其中一个模板创建项目时，Visual Studio 会提示安装这些包（请参阅本文后面的[安装项目要求](#install-project-requirements)）。
 
-也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到用于项目的环境中（请参阅[管理 Python 环境](managing-python-environments-in-visual-studio.md)）。
+也可以使用其他框架（如 Pyramid）的通用“Web 项目”模板。 在这种情况下，不会随模板一起安装框架。 而是将必要的包安装到用于项目的环境中（请参阅 [Python 环境窗口 - 包选项卡](python-environments-window-tab-reference.md#packages-tab)）。
 
 有关将 Python Web 应用部署到 Azure 的信息，请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
 

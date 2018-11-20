@@ -16,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: fb97c5b8-0b60-4253-b7e4-b8759b54ec40
 caps.latest.revision: 14
 author: BillWagner
-ms.author: billchi
+ms.author: wiwagn
 manager: douge
-ms.openlocfilehash: 5ed75cb07294f8429cba426b85ee97b679594cf7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 29d5cd359ee53b3fcbe6e27d36e6bb55a3e22ded
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203016"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51742452"
 ---
 # <a name="intellisense-for-most-recently-used-members"></a>用于最近使用过的成员的 IntelliSense
 此内容已移动到[Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)。

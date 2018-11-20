@@ -27,16 +27,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb8395d0e0a3b7d4295577cd86568cf15f0db3d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a3e361b407d013f27f3cf76d1ff0da98aa36c3c8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901185"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349044"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 
 您可以存储不同的解决方案配置和项目属性以便在各种生成中使用。 若要创建、选择、修改或删除配置，可以使用“配置管理器”。 若要打开它，请在菜单栏上选择“生成” > “配置管理器”，或在“快速启动”框中键入“配置”。 也可以使用“标准”工具栏上的“解决方案配置”列表，选择配置或打开“配置管理器”。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成配置](/visualstudio/mac/configurations)。
 
 > [!NOTE]
 > 如果在工具栏上找不到解决方案配置设置且无法访问“配置管理器”，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 开发设置可能适用。 有关详细信息，请参阅[如何：在应用 Visual Basic 开发者设置后管理配置](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md)。
@@ -51,7 +54,7 @@ ms.locfileid: "49901185"
 
 > [!NOTE]
 > 在定义新的解决方案配置并选中“创建新的项目配置”复选框后，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会自动将新的配置分配给所有项目。 同样，在定义新的解决方案平台并选中“创建新的项目平台”复选框后，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 也会自动将新的平台分配给所有项目。 此外，如果您添加一个面向新平台的项目，则 Visual Studio 会将该平台添加到解决方案平台列表中并将其分配给所有项目。
-> 
+>
 > 您仍可以修改每个项目的设置。
 
 活动解决方案配置还为 IDE 提供了上下文。 例如，如果处理的是项目，并且配置指定将针对移动设备生成，那么“工具箱”只会显示可在移动设备项目中使用的项。
@@ -92,3 +95,4 @@ ms.locfileid: "49901185"
 - [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
 - [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)
+- [生成配置 (Visual Studio for Mac)](/visualstudio/mac/configurations)

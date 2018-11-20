@@ -19,16 +19,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eba5c5dc2ec357d9aaf6a5e8f9cdef18102b8da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7c3ba26f014b09624b1a8fec88bed8a5aefa632b
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856166"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349684"
 ---
 # <a name="install-visual-studio-2017"></a>安装 Visual Studio 2017
 
 欢迎以全新方式安装 Visual Studio！ 最新版本方便你更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[安装 Visual Studio for Mac](/visualstudio/mac/installation)。
 
 想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releasenotes/vs2017-relnotes)。
 
@@ -149,4 +152,4 @@ ms.locfileid: "49856166"
 * [卸载 Visual Studio 2017](uninstall-visual-studio.md)
 * [创建 Visual Studio 2017 的脱机安装](create-an-offline-installation-of-visual-studio.md)
 * [使用命令行参数安装 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
-* [设置和安装 Visual Studio for Mac](/visualstudio/mac/installation)
+* [安装 Visual Studio for Mac](/visualstudio/mac/installation)

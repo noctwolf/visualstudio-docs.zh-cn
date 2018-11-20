@@ -16,20 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 35fa37831ad79a55effe849f8605ae6b5d299d3a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349645"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826700"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
-**自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。
-
-**自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。
-
-若要打开**自动**窗口中的，调试时，选择**调试** > **Windows** > **自动**，或按**Ctrl**+**Alt**+**V** > **A**。
+**自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。 **自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+  
+若要打开**自动**窗口中的，调试时，选择**调试** > **Windows** > **自动**，或按**Ctrl**+**Alt**+**V** > **A**。  
 
 若要打开**局部变量**窗口中的，调试时，选择**调试** > **Windows** > **局部变量**，或按**Alt**+**4**。
 
@@ -147,13 +145,13 @@ private static int subtractVars(int i, int j)
 
 若要查看的返回值`sumVars()`和`subtractVars()`方法调用自动窗口中：
 
-1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。
-
-1. 开始调试，并在断点处暂停执行，选择**单步跳过**或按**F10**。 您应看到在以下的返回值**自动**窗口：
-
-  ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")
-
-## <a name="see-also"></a>请参阅
-
-- [调试器窗口](../debugger/debugger-windows.md)
-- [在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)
+1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。  
+   
+1. 开始调试，并在断点处暂停执行，选择**单步跳过**或按**F10**。 您应看到在以下的返回值**自动**窗口：  
+   
+  ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")  
+  
+## <a name="see-also"></a>请参阅  
+ [什么调试？](../debugger/what-is-debugging.md)  
+ [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)

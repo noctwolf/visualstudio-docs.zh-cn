@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: douge
 ms.workload:
 - vssdk
-ms.openlocfilehash: 669f3625827d923a0951caa1bb0137d38c0daacc
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: 195d63e5ddb8b8536c1d0c1c4197270f5b3aa508
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637492"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826812"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 将扩展性项目迁移到 Visual Studio 2017
 
@@ -63,7 +63,7 @@ ms.locfileid: "39637492"
 * 确保`InstallationTarget`包括 15.0。
 * 添加所需的安装必备组件 （如下面的示例中所示）。
   * 我们建议您指定仅组件的安装必备组件的 Id。
-  * 请参阅本文档末尾[标识组件 Id 的说明](#finding-component-ids)。
+  * 请参阅本文档末尾[标识组件 Id 的说明](#find-component-ids)。
 
 示例:
 

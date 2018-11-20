@@ -19,16 +19,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e0e854cc2d271048a7d7205017710264efac0395
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: b9a80a84276648f8a0f0d5a94992b5f58cbcfefa
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39381642"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348109"
 ---
 # <a name="manage-application-resources-net"></a>管理应用程序资源 (.NET)
 
 资源文件是应用程序使用的不可编译的文件，例如图标文件或音频文件。 由于这些文件不是编译过程的一部分，因此你可以更改它们而无需重新编译二进制文件。 如果打算本地化你的应用程序，则应为本地化应用程序时需要进行更改的所有字符串和其他资源使用资源文件。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[管理应用资源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)。
 
 有关 .NET 桌面应用中的资源的详细信息，请参阅 [桌面应用中的资源](/dotnet/framework/resources/index)。
 
@@ -52,3 +55,4 @@ ms.locfileid: "39381642"
 ## <a name="see-also"></a>请参阅
 
 - [桌面应用中的资源 (.NET Framework)](/dotnet/framework/resources/index)
+- [管理应用资源 (Visual Studio for Mac)](/visualstudio/mac/managing-app-resources)

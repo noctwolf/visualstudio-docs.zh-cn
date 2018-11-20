@@ -7,17 +7,17 @@ ms.date: 09/05/2018
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 5a1d7fb7519e9402e2fa780e978fc1176702b26d
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: 9cb6a466d764c85012477fb2d849c05920908f02
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542426"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295925"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
 > [!NOTE]
-> 请注意：Team Foundation 版本控制支持目前处于预览状态，某些功能尚未完全正常工作。 我们衷心期待能在[开发者社区](https://developercommunity.visualstudio.com/spaces/41/index.html)收到你有关任何问题的反馈意见。 更多更改陆续到来！
+> Team Foundation 版本控制支持目前处于预览状态，某些功能尚未完全正常工作。 我们衷心期待能在[开发者社区](https://developercommunity.visualstudio.com/spaces/41/index.html)收到你有关任何问题的反馈意见。 更多更改陆续到来！
 
 Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 Team Foundation 版本控制 (TFVC)（集中式版本控制）。 本文提供借助 Visual Studio for Mac 使用 TFVC 的概述和起点。
 
@@ -29,9 +29,9 @@ Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 T
 
 ## <a name="installation"></a>安装
 
-在 Visual Studio for Mac 中，从菜单中选择“Visual Studio”>“扩展...”。 在“库”选项卡中，选择“版本控制”>“适用于 TFS 和 VSTS 的 Team Foundation 版本控制”，然后单击“安装...”：
+在 Visual Studio for Mac 中，从菜单中选择“Visual Studio”>“扩展”。 在“库”选项卡中，选择“版本控制”>“适用于 TFS 和 VSTS 的 Team Foundation 版本控制”，然后单击“安装”：
 
-  ![扩展管理器](media/tfvc-install.png)
+![扩展管理器](media/tfvc-install.png)
 
 按照提示安装扩展。 安装后，重启 IDE。
 
@@ -39,27 +39,27 @@ Azure Repos 提供两个版本控制模型：Git（分布式版本控制）和 T
 
 TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual Studio”>“扩展...”，然后选择“更新”选项卡。从列表中选择扩展，然后选择“更新”按钮：
 
-  ![显示更新的扩展管理器](media/tfvc-update.png)
+![显示更新的扩展管理器](media/tfvc-update.png)
 
 选择下一对话框中的“安装”来卸载旧包并安装新包。
 
-若要了解每个版本中的新增功能，请参阅[发行说明](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes)。
+若要了解每个版本中的新增功能，请参阅[发行说明](/visualstudio/releasenotes/vs2017-mac-preview-relnotes#team-foundation-version-control-extension--release-notes)。
 
 ## <a name="using-the-add-in"></a>使用加载项
 
 安装扩展后，选择“版本控制”>“TFS/Azure DevOps”>“从远程存储库打开”菜单项。
 
-  ![用于打开扩展的菜单项](media/tfvc-source-control-explorer-devops.png)
+![用于打开扩展的菜单项](media/tfvc-source-control-explorer-devops.png)
 
 选择 VSTS 或 Team Foundation Server 以开始使用，然后选择“继续”：
 
-  ![与服务器连接](media/tfvc-choose-server-type-devops.png)
+![与服务器连接](media/tfvc-choose-server-type-devops.png)
 
 ### <a name="azure-repos-authentication"></a>Azure Repos 身份验证
 
 选择在 Azure Repos 上托管的项目时，系统会提示输入 Microsoft 帐户详细信息：
 
-  ![与 Azure Repos 连接](media/tfvc-vsts-login.png)
+![与 Azure Repos 连接](media/tfvc-vsts-login.png)
 
 ### <a name="tfs-authentication"></a>TFS 身份验证
 
@@ -71,7 +71,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 成功通过身份验证后，可在“在源代码管理中打开”对话框中看到与帐户关联的存储库的列表：
 
-  ![显示项目的“在源代码管理中打开”对话框](media/tfvc-vsts-projects.png)
+![显示项目的“在源代码管理中打开”对话框](media/tfvc-vsts-projects.png)
 
 此对话框分为以下节点：
 
@@ -188,3 +188,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 - 工作区名称中不可使用无效字符。
 - 名称必须少于 64 个字符。
 - 任何其他工作区都不能使用本地路径。
+
+## <a name="see-also"></a>请参阅
+
+- [使用 Visual Studio 开发和共享 TFVC 中的代码 (Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)

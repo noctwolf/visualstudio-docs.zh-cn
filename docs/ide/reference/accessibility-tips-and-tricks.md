@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 57898fbcfba72c67b199ea584d494cb96dfbf491
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 473f46e87ded78e134ab021b68c57248f8ac1a33
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811836"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349200"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 的辅助功能提示和技巧
 
@@ -26,6 +26,9 @@ ms.locfileid: "49811836"
 > 若要详细了解最新的辅助功能更新，请参阅博文 [Visual Studio 2017 版本 15.3 中的辅助功能改进](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/)。
 
 Visual Studio 具有内置辅助功能，这些辅助功能与屏幕阅读器以及其他辅助技术兼容。 本主题列出了常见快捷键组合（通过这些快捷键，可以仅使用键盘执行任务），并且介绍了有关使用高对比度主题改进可见性的信息。 同时，它显示了如何使用注释显示有关代码的实用信息以及如何设置生成和断点事件的声音提示。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
 
 ## <a name="save-your-ide-settings"></a>保存 IDE 设置
 
@@ -104,3 +107,4 @@ Visual Studio 编辑器包括很多文本“修饰”，比如灯泡、错误和
 * [如何：在 Visual Studio 中自定义菜单和工具栏](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 * [Microsoft 辅助功能](https://www.microsoft.com/Accessibility)
+* [辅助功能 (Visual Studio for Mac)](/visualstudio/mac/accessibility)

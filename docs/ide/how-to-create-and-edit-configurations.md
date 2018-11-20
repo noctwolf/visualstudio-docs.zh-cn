@@ -20,18 +20,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa3aaa197f392d300e8787d582314846e789f47
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38808787"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348521"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：创建和编辑配置
 
 可以为一个解决方案创建多个生成配置。 例如，可以配置调试生成供测试人员用于查找和修复问题，也可以配置不同种类的生成，供你分发给不同的客户。
 
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建和编辑配置](/visualstudio/mac/create-and-edit-configurations)。
 
 ## <a name="create-build-configurations"></a>创建生成配置
 
@@ -127,3 +128,4 @@ ms.locfileid: "38808787"
 - [了解生成配置](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [管理项目和解决方案属性](managing-project-and-solution-properties.md)
+- [创建和编辑配置 (Visual Studio for Mac)](/visualstudio/mac/create-and-edit-configurations)

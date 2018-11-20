@@ -5,18 +5,18 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/22/2018
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
-ms.openlocfilehash: f1df4aaa3eeaf0361176ca433cc2262afca480ce
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: e29e1f1d7cce6fc77157628ee6e1889a538a1800
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224316"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294469"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
-Visual Studio 客户体验改善计划 (VSCEIP) 旨在随着时间推移帮助 Microsoft 改进 Visual Studio for Mac。 此程序收集有关计算机硬件以及 Visual Studio for Mac 的使用方式，而不中断用户在计算机中的任务。 收集的信息可帮助 Microsoft 确定要改善的功能。 本文档介绍如何选择加入或退出 VSCEIP。
+Visual Studio 客户体验改善计划 (VSCEIP) 旨在随着时间推移帮助 Microsoft 改进 Visual Studio for Mac。 此程序收集有关计算机硬件以及 Visual Studio for Mac 的使用方式，而不中断用户在计算机中的任务。 收集的信息可帮助 Microsoft 确定要改善的功能。 本文介绍如何选择加入或退出 VSCEIP。
 
-有关 VSCEIP 收集、处理或传输的信息的详情，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。  
+有关 VSCEIP 收集、处理或传输的信息的详情，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="choice-and-control-over-the-visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划的选择与控制
 
@@ -34,6 +34,8 @@ VSCEIP 默认开启。 可以按照以下步骤将其关闭或者再次打开。
 
 ## <a name="see-also"></a>请参阅
 
+* [客户体验改善计划（Windows 上的 Visual Studio）](/visualstudio/ide/visual-studio-experience-improvement-program)
+* [由 Visual Studio 收集的系统生成的日志 (Windows)](/visualstudio/ide/diagnostic-data-collection)
 * [如何报告 Visual Studio for Mac 的问题](report-a-problem.md)
 * [Visual Studio for Mac 开发者社区](https://developercommunity.visualstudio.com/spaces/41/index.html)
 * [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)

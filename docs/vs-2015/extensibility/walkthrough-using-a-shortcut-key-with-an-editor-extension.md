@@ -15,12 +15,12 @@ ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: dd08e17349008760fd029887c0bc17554ef4c7d8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848678"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51797450"
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>演练：在编辑器扩展中使用快捷键
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 3.  名为 KeyBindingCommandFilter 的类应继承自<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
     ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  在命令链和一个标志，用于表示是否已添加命令筛选器中添加私有字段文本视图、 下一个命令。  
@@ -79,8 +79,8 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
 5.  添加构造函数，用于设置文本视图。  

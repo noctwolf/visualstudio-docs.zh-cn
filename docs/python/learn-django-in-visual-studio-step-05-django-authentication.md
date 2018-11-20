@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: cc238b6a8ba1a190471d25952a4d7c976ca56b9f
-ms.sourcegitcommit: e7b3fc8c788fb49d6ba4215abf27139f2a08e1a1
+ms.openlocfilehash: cd3dce86104343b6c10bd1329b3ee3cdb7c7ee4f
+ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48120350"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561642"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>步骤 5：在 Django 中对用户进行身份验证
 
@@ -152,24 +152,30 @@ ms.locfileid: "48120350"
 
 1. 若要确定经过身份验证的用户是否有权访问特定资源，需要从数据库中检索用户特定的权限。 有关详细信息，请参阅[使用 Django 身份验证系统](https://docs.djangoproject.com/en/2.0/topics/auth/default/#permissions-and-authorization)（Django 文档）。
 
-1. 特别需要指出的是，超级用户或管理员有权访问内置 Django 管理员界面，方法是使用相对 URL“/admin/”和“/admin/doc/”。 要启用这些界面，请打开 Django 项目的 urls.py 并删除以下条目的注释：
+1. 特别需要指出的是，超级用户或管理员有权访问内置 Django 管理员界面，方法是使用相对 URL“/admin/”和“/admin/doc/”。 要启用这些接口，请执行以下操作：
 
-    ```python
-    from django.conf.urls import include
-    from django.contrib import admin
-    admin.autodiscover()
+    1. 将 docutils Python 包安装到环境中。 一个不错的办法是将“docutils”添加到 requirements.txt 文件，然后在“解决方案资源管理器”中展开该项目，再展开“Python 环境”节点，然后右键单击正在使用的环境并选择“通过 requirements.txt 安装”。
 
-    # ...
-    urlpatterns = [
+    1. 打开 Django 项目的 urls.py 并从下列条目中删除默认注释：
+
+        ```python
+        from django.conf.urls import include
+        from django.contrib import admin
+        admin.autodiscover()
+
         # ...
-        url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-        url(r'^admin/', include(admin.site.urls)),
-    ]
-    ```
+        urlpatterns = [
+            # ...
+            url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+            url(r'^admin/', include(admin.site.urls)),
+        ]
+        ```
 
-    重新启动应用时，可以导航到“/admin/”和“/admin/doc/”并执行任务，如创建其他用户帐户。
+    1. 在 Django 项目的 settings.py 文件内，导航到 `INSTALLED_APPS` 集合并添加 `'django.contrib.admindocs'`。
 
-    ![Django 管理员界面](media/django/step05-administrator-interface.png)
+    1. 重新启动应用时，可以导航到“/admin/”和“/admin/doc/”并执行任务，如创建其他用户帐户。
+
+        ![Django 管理员界面](media/django/step05-administrator-interface.png)
 
 1. 身份验证流的最后一部分是注销。 正如 loginpartial.html 中所示，“注销”链接只需对相对 URL“/login”执行 POST 操作，这由内置视图 `django.contrib.auth.views.logout` 处理。 此视图不显示任何 UI，只需导航到主页（如“^logout$”模式 urls.py 中所示）。 若要显示注销页，首先按照下面的方式更改 URL，添加“template_name”属性并删除“next_page”属性：
 
