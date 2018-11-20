@@ -5,16 +5,16 @@ author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
-ms.openlocfilehash: 4ffb7ce8a796641d54a5c29c58b9f166a9189d1c
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 76a536f621a3c715a62b9e132dc661a2bcf8eb07
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228794"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294924"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>打开 Visual Studio for Mac 的多个解决方案或实例
 
-默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用。 也就是说，如果要使用的应用程序已经打开（由停靠栏中图标下方的点指明），再次选择此图标会打开正在运行的实例，而不是新实例。  如果需要应用程序的其他实例，可提示系统打开，如[下一部分](#open-a-second-instance-of-visual-studio-for-mac)中所述。
+默认情况下，Mac 上的所有应用程序（包括 Visual Studio for Mac）都是单实例应用。 也就是说，如果要使用的应用程序已经打开（由停靠栏中图标下方的点指明），再次选择此图标会打开正在运行的实例，而不是新实例。 如果需要应用程序的其他实例，可提示系统打开，如[下一部分](#open-a-second-instance-of-visual-studio-for-mac)中所述。
 
 此外，打开解决方案时，默认行为是在新工作区中打开解决方案并关闭当前工作区（如有必要）。 可通过保持当前工作区打开来替代此默认行为，如[打开第二个解决方案](#open-a-second-solution-inside-a-single-instance)部分中所述。
 
@@ -33,13 +33,14 @@ open -n "/Applications/Visual Studio.app"
 1. 在第一个解决方案已打开后，依次选择“文件” > “打开”。
 2. 浏览文件系统，查找现有解决方案。
 3. 依次选择 .sln 文件和“选项”：
-    
+
     ![突出显示 .sln 文件和“选项”的 Visual Studio for Mac 屏幕截图](media/open-multiple-solutions-image3.png)
+
 4. 取消选中“关闭当前工作区”框：
 
     ![已清除“关闭当前工作区”框的“选项”对话框屏幕截图](media/open-multiple-solutions-image1.png)
 
-1. 选择“打开”，在 Solution Pad 中打开第二个解决方案。
+5. 选择“打开”，在 Solution Pad 中打开第二个解决方案。
 
 或者，如果最近打开过解决方案，可按照以下步骤操作：
 

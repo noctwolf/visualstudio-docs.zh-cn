@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00e3f1d994c854bab319b6fec823fce213f4f2ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 60472c83738351ebc46a96e9d53bc4ae3015c514
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49822782"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296224"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>在 Visual Basic 中生成字段、属性或局部变量
 
@@ -49,7 +49,7 @@ ms.locfileid: "49822782"
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成字段/属性/本地内容预览](media/field-preview-cs.png)
 

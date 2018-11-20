@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 caps.latest.revision: 66
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 839bfcd761ac090924b0964e99ea3d1f360cc7f9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e6c4c60265fda66f7506fe6d886fa671527c1587
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852357"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51785451"
 ---
 # <a name="diagnose-problems-after-deployment"></a>诊断部署后出现的问题
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "49852357"
   
     如果使用自定义模板，请确保该模板具有用于为源编制索引的活动。 之后你将添加 MSBuild 参数以指定保存符号文件的位置。  
   
-    ![设置符号路径中的生成定义 TFS 2013](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
+    ![设置生成定义 TFS 2013 中的符号路径](../debugger/media/ffr-tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")  
   
     有关符号的详细信息，请参阅 [发布符号数据](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6)。  
   

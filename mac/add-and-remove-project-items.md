@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: d7401395d817d4c07b179c0d096612469fed6291
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223931"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296289"
 ---
 # <a name="adding-and-removing-project-items"></a>添加和移除项目项
 
@@ -26,7 +26,6 @@ ms.locfileid: "43223931"
 
 可以右键单击项目节点并选择“添加”>“添加文件...”，将现有文件添加到项目。或者，若要添加整个文件夹，请选择“添加”>“添加现有文件夹...”。此时将显示文件浏览器，通过该浏览器可以在系统中搜索要添加的所需项。
 
-
 ## <a name="removing-items"></a>移除项
 
 若要从当前项目中移除项，请右键单击该项，然后选择“移除”
@@ -38,4 +37,8 @@ ms.locfileid: "43223931"
 ![删除项对话框](media/add-and-remove-project-items-image4.png)
 
 * **删除** - 从项目和磁盘中移除项。
-* **从项目中移除** - 从项目中移除项，但不会将其从磁盘中移除 
+* **从项目中移除** - 从项目中移除项，但不会将其从磁盘中移除
+
+## <a name="see-also"></a>请参阅
+
+* [Visual Studio 中的解决方案和项目 (Windows)](/visualstudio/ide/solutions-and-projects-in-visual-studio)

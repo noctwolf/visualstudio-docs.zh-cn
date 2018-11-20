@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e1c289ca84b4f3298aa32cc0016b3be9132263b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c6b267bee0c78de19ffa0d443f515375eeae949a
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926730"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295821"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>在 Visual Studio 中生成构造函数
 
@@ -50,7 +50,7 @@ ms.locfileid: "49926730"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在此类中的空行上，它会出现在左边缘）。
 
    ![生成构造函数预览](media/constructor1-preview-cs.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "49926730"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含选定内容的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor2-preview-cs.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "49926730"
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor-preview-cs.png)
 
@@ -144,7 +144,7 @@ ms.locfileid: "49926730"
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成构造函数预览](media/constructor4-preview-cs.png)
 
@@ -170,7 +170,7 @@ ms.locfileid: "49926730"
       - 按“Ctrl”+**。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在包含所添加的参数的行上，它会出现在左边缘）。
 
    ![生成构造函数预览](media/constructor5-preview-cs.png)
 

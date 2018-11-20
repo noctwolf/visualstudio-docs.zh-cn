@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 66ddb896fad5d69fafc67c04ef839b952cac4d11
 ms.sourcegitcommit: 0aafcfa08ef74f162af2e5079be77061d7885cac
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/01/2018
 ms.locfileid: "34572769"
 ---
-# <a name="sample-xsd-file-relationships"></a>示例 XSD 文件： 关系
+# <a name="sample-xsd-file-relationships"></a>示例 XSD 文件：关系
 
 以下 XSD 文件用在 XSD 架构设计器文档中的各个示例中。 此文件是带批注和文档的订单架构。
 

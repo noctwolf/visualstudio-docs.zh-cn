@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4db887a3e27d995229da6d954c4b3f66173e9e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897350"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826786"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量 
 
@@ -278,5 +278,6 @@ static void Main(string[] args)
 1. 继续调试。 您可以观察中的变量**监视**窗口。
 
 ## <a name="see-also"></a>请参阅
-
-[调试器窗口](../debugger/debugger-windows.md)
+ [什么调试？](../debugger/what-is-debugging.md)  
+ [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)

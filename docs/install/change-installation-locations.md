@@ -1,56 +1,65 @@
 ---
-title: 更改 Visual Studio 2017 中的安装位置
-description: 了解如何通过将下载缓存、共享组件、SDK 和工具的位置更改到不同的驱动器以减少系统驱动器上的安装痕迹。
-ms.date: 05/07/2018
+title: 在 Visual Studio 2017 中选择安装位置
+description: 了解如何通过将下载缓存、共享组件、SDK 和工具的位置更改到不同的驱动器来减少系统驱动器上的安装占用。
+ms.date: 11/07/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - change installation locations for Visual Studio
+- select an installation location for Visual Studio files
 - move installation files to different drives
+- use the D drive
 author: TerryGLee
 ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 887ebca8645ab30d6d284433baf58451ab10b80c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ed3b54674c24e3becf62e7568be127344104de0f
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49869374"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295028"
 ---
-# <a name="change-the-installation-locations-in-visual-studio-2017"></a>更改 Visual Studio 2017 中的安装位置
+# <a name="select-the-installation-locations-in-visual-studio-2017"></a>在 Visual Studio 2017 中选择安装位置
 
-**15.7 版中的新增功能**：可通过将下载缓存、共享组件、SDK 和工具移动到不同的驱动器减少系统驱动器上的安装痕迹。
-
-操作方法如下。
-
-1. 安装 Visual Studio 时，选择“安装选项”选项卡。
-
-   ![Visual Studio 2017 - 更改安装位置](media/installation-options-by-location.png "更改安装位置")
-
-   > [!IMPORTANT]
-   > 如果暂停安装并在稍后继续安装，Visual Studio 会从中断处继续安装。 换言之，安装进度适用于余下需要下载和安装的内容，并且不会从以前的计数开始。
-
-2. 在“Visual Studio IDE”部分中，接受默认值。 这将安装核心产品，并包含特定于此 Visual Studio 版本的文件。
-
-   > [!IMPORTANT]
-   > 如果系统驱动器是固态硬盘 (SSD)，这就是我们建议用户接受系统驱动器上默认位置的原因：使用 Visual Studio 进行开发时，会从大量文件中读取数据或将数据写入到其中，这会增加磁盘 I/O 活动。  最好选择最快的驱动器来处理负载。
-
-3. 在“下载缓存”部分，决定是否保留下载缓存，然后相应地选中或取消选中“保留下载缓存”。 <br><br>如果决定不保留下载缓存，则仅临时使用该位置。 同样，此操作将不会影响或删除以前安装的文件。 （若要清除所有安装包，必须单独修改以前的安装。）
-
-4. 在“下载缓存”部分，指定要在其中存储安装文件和清单的驱动器。 <br><br>例如，如果选择“使用 C++ 的桌面开发”工作负载，系统驱动器上临时需要的大小为 1.58 GB，安装完成后即会释放。
+**15.7 中的新增功能**：通过更改 Visual Studio 某些文件的位置，可以减少其在系统驱动器上的安装占用。 具体来说，下载缓存、共享组件、SDK 和工具文件可使用不同位置。
 
    > [!NOTE]
-   > 首先将文件下载到系统驱动器上的临时文件夹，并在 Visual Studio 验证后再将其删除，然后将其移动到下载缓存文件夹。 如果选择将下载缓存保留到另一个驱动器，则 Visual Studio 仍需要与系统驱动器上的下载缓存大小相当的磁盘空间。
-   > [!IMPORTANT]
-   > 该位置在首次安装时进行设置，并且之后无法从安装程序 UI 中更改。 相反，必须[使用命令行参数](use-command-line-parameters-to-install-visual-studio.md)移动下载缓存
+   > 某些工具和 SDK 对于安装位置有不同规则。 即使选择另一位置，这些工具和 SDK 也会安装在系统驱动器上。
 
-5. 在“共享组件、工具和 SDK”部分，指定要在其中存储由 Visual Studio 并行安装共享的文件的驱动器。 使 Visual Studio 安装程序更改其安装位置的 SDK 和工具也存储在该目录中。
+准备好开始了吗？ 操作方法如下。
 
-   > [!NOTE]
-   > 有些工具和 SDK 在其可以安装的位置具有不同的规则。 即使选择另一个位置，这些工具和 SDK 仍将安装在系统驱动器上。
+1. 安装 Visual Studio 时，选择“安装位置”选项卡。
+
+   ![Visual Studio 2017 - 选择安装位置](media/vs-installation-locations.png "选择安装位置。")
+
+1. 在“Visual Studio IDE”部分中，接受默认值。 Visual Studio 将安装核心产品并包含特定于此版本的 Visual Studio 的文件。
+
+   ![“安装位置”选项卡的“Visual Studio IDE”部分](media/vs-installation-locations-ide.png "接受“安装位置”选项卡的“Visual Studio IDE”部分的默认值。")
+
+   > [!TIP]
+   > 如果系统驱动器是固态硬盘 (SSD)，建议你接受系统驱动器上的默认位置。 原因？ 当使用 Visual Studio 进行开发时，将从大量文件进行读取并写入大量文件，这会增加磁盘 I/O 活动。 最好选择最快的驱动器来处理负载。
+
+1. 在“下载缓存”部分，决定是否保留下载缓存，然后决定其文件的存储位置。
+
+     ![“安装位置”选项卡的“下载缓存”部分](media/vs-installation-locations-cache.png "选择安装完成后是否保留下载缓存，然后指定要存储文件的驱动器。")
+
+    1. 选中或取消选中“安装完成后保留下载缓存”。
+
+       如果决定不保留下载缓存，则仅临时使用该位置。 此操作不会影响或删除以前的安装内容。
+
+    1. 指定在其中存储下载缓存中的安装文件和清单的驱动器。
+
+        例如，如果选择“使用 C++ 的桌面开发”工作负载，系统驱动器上临时需要的大小为 1.58 GB，安装完成后即会释放。
+
+       > [!IMPORTANT]
+       > 该位置在首次安装时进行设置，并且之后无法从安装程序 UI 中更改。 相反，必须[使用命令行参数](use-command-line-parameters-to-install-visual-studio.md)删除下载缓存。
+
+1. 在“共享组件、工具和 SDK”部分，指定要存储由 Visual Studio 并行安装所共享的文件的驱动器。 SDK 和工具也存储在此目录中。
+
+   ![“安装位置”选项卡的“共享组件、工具和 SDK”部分](media/vs-installation-locations-shared.png "指定想要存储共享组件、工具和 SDK 的位置。")
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

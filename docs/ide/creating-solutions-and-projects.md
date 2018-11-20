@@ -17,18 +17,21 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8d222a35c06cd7d53e2e104761cc1f30bf816e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a912534b9e0212e68a947fa892395a233f263a87
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813812"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349632"
 ---
 # <a name="create-solutions-and-projects"></a>创建解决方案和项目
 
 *项目*是 Visual Studio 中的逻辑容器，用于存放生成应用所需的项，比如源代码文件、位图、图标以及组件和服务引用。 创建新项目时，Visual Studio 会创建一个解决方案来包含该项目。 然后可以根据需要向解决方案添加其他新项目或现有项目。 解决方案还可以包含未连接到任何特定项目的文件。
 
 ![解决方案/项目层次结构](./media/vside-proj-soln.png)
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中创建项目](/visualstudio/mac/create-new-projects)。
 
 可在名为“解决方案资源管理器”的工具窗口中查看解决方案和项目。 以下屏幕截图显示“解决方案资源管理器”中的一个示例解决方案 (BikeSharing.Xamarin-UWP)，该解决方案 包含两个项目：BikeSharing.Clients.Core 和 BikeSharing.Clients.Windows。 每个项目均包含多个文件、文件夹和引用。 粗体形式的项目名称是*启动项目*；即，运行应用时启动的项目。 可以指定将哪个项目作为启动项目。
 
@@ -39,7 +42,7 @@ ms.locfileid: "49813812"
 也就是说，在 Visual Studio 中开发应用时不需要解决方案和项目。 用户也可以直接打开从 Git 克隆或从其他地方下载的代码。 有关详细信息，请参阅[在 Visual Studio 中开发代码而无需创建项目或解决方案](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
 
 > [!NOTE]
-> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具”，“导入和导出设置”，然后选择“重置所有设置”。
+> 本主题中的说明基于 Visual Studio Community 版。 您看到的对话框和菜单命令可能与此处描述的有所不同，这取决于您的设置或 Visual Studio 版本。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
 
 ## <a name="to-create-a-project-from-a-project-template"></a>从项目模板创建项目
 
@@ -138,3 +141,4 @@ ms.locfileid: "49813812"
 - [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
 - [GitHub 上的 Microsoft 开放源代码存储库](https://github.com/Microsoft)
 - [开发者代码示例](https://code.msdn.microsoft.com/)
+- [创建项目 (Visual Studio for Mac)](/visualstudio/mac/create-new-projects)

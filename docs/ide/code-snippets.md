@@ -19,16 +19,19 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d41a5a3995c9c93f17f090e5befc10a0bd544c3
-ms.sourcegitcommit: d9e4ea95d0ea70827de281754067309a517205a1
+ms.openlocfilehash: 8ed3f2f8e588aa908827516fee44c1a38ad6a008
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37117207"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348482"
 ---
 # <a name="code-snippets"></a>代码片段
 
 代码片段是小块可重用的代码，可使用上下文菜单命令或热键组合将其插入代码文件中。 代码片段通常包含常用的代码块（如 `try-finally` 或 `if-else` 块），可用于插入整个类或方法。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[代码片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)。
 
 代码片段可用于多种语言，例如 C#、C++、Visual Basic、XML 和 T-SQL。 要在安装项中查看对某语言可用的所有片段，请在 Visual Studio 的“工具”菜单中打开“代码片段管理器”，然后从顶部的下拉菜单中选择此语言。
 
@@ -103,3 +106,4 @@ End Property
 - [C# 代码片段](../ide/visual-csharp-code-snippets.md)
 - [Visual C++ 代码片段](../ide/visual-cpp-code-snippets.md)
 - [代码片段架构参考](../ide/code-snippets-schema-reference.md)
+- [代码片段 (Visual Studio for Mac)](/visualstudio/mac/snippets)

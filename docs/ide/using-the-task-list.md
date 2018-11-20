@@ -16,16 +16,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 47468c7ff7ead04ad2c6261725089ca454faffc2
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 7766a7fd935cc1e1131c4780a5a88ef6fa54e838
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612696"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349386"
 ---
 # <a name="use-the-task-list"></a>使用任务列表
 
 使用“任务列表”跟踪使用 `TODO` 和 `HACK` 或自定义令牌等令牌的代码注释，还能管理直接导向代码中的预定义位置的快捷方式。 单击列表中的项以转到其在源代码中的位置。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[任务注释 (Visual Studio for Mac)](/visualstudio/mac/task-comments)。
 
 ## <a name="the-task-list-window"></a>“任务列表”窗口
 
@@ -104,3 +107,4 @@ Visual Studio 2015 中已删除用户任务功能。 若打开的解决方案具
 ## <a name="see-also"></a>请参阅
 
 - [“选项”对话框 ->“环境”->“任务列表”](../ide/reference/task-list-environment-options-dialog-box.md)
+- [任务注释 (Visual Studio for Mac)](/visualstudio/mac/task-comments)

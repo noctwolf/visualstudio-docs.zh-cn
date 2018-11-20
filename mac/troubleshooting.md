@@ -1,17 +1,17 @@
 ---
-title: Visual Studio for Mac 疑难解答
+title: 疑难解答
 description: Visual Studio for Mac 用户的常见问题和解决方法。
 ms.topic: troubleshooting
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
-ms.openlocfilehash: 6d8edc7942b460c4c11e20bc9a0c5cae204328cf
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 3a5ea59e6f98891cd113ccad9a74038ca52cccf8
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224343"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294638"
 ---
 # <a name="troubleshooting"></a>疑难解答
 
@@ -46,3 +46,7 @@ ms.locfileid: "43224343"
 11. 复制按钮 - 将 `exception.ToString()` 输出复制到剪贴板。
 
 请注意某些部分只有在异常属于内部异常时可见。
+
+## <a name="see-also"></a>请参阅
+
+- [用于排除 IDE 错误的资源（Windows 上的 Visual Studio）](/visualstudio/ide/reference/resources-for-troubleshooting-integrated-development-environment-errors)

@@ -33,12 +33,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f6359585f13a4086a332d8a4dbcc3c435aeaa26
-ms.sourcegitcommit: 4708f0ba09b540424efcc344f8438f25432e3d51
+ms.openlocfilehash: 6120d1ece56e24712fd1217090159ec627f88d61
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44384235"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349096"
 ---
 # <a name="find-and-replace-text"></a>查找和替换文本
 
@@ -93,6 +93,9 @@ ms.locfileid: "44384235"
 
 ## <a name="multi-caret-selection"></a>多个插入点选择
 
+> [!NOTE]
+> 本部分适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[块选择](/visualstudio/mac/block-selection)。
+
 **Visual Studio 2017 版本 15.8 中的新增内容**
 
 使用“多个插入点选择”同时在两个或多个位置进行相同编辑。 例如，可同时插入相同的文本或修改多个位置的现有文本。
@@ -130,3 +133,4 @@ ms.locfileid: "44384235"
 
 - [在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)
 - [在 Visual Studio 中重构代码](../ide/refactoring-in-visual-studio.md)
+- [块选择 (Visual Studio for Mac)](/visualstudio/mac/block-selection)

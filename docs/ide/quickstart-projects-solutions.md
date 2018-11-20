@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2995e3b71ffb46b726d17ffc2f1f7fe68f6663ff
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: dffc0344c0cd7c226ae6651679c4a8f491d8aaa3
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42627198"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607798"
 ---
 # <a name="learn-about-projects-and-solutions"></a>了解项目和解决方案
 
@@ -100,7 +100,7 @@ ms.locfileid: "42627198"
    }
    ```
 
-   你无需了解代码的作用，但是如果你想知道，可运行该程序，即可看到程序将今天的日期打印到控制台（或标准输出）窗口。
+   你无需了解代码的作用，但是如果你想知道，可通过按 Ctrl+F5 来运行该程序，即可看到程序将今天的日期打印到控制台（或标准输出）窗口。
 
 ## <a name="add-a-second-project"></a>添加第二个项目
 
@@ -148,7 +148,7 @@ ms.locfileid: "42627198"
 
    你会看到某些代码下出现红色“波浪线”。 将测试项目设为“QuickDate”项目的[友元程序集](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)来解决此错误。
 
-1. 返回“QuickDate”项目，如果“Calendar.cs”文件尚未打开，则打开该文件，然后添加以下 [using](/dotnet/csharp/language-reference/keywords/using-statement) 语句和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性，解决测试项目中的错误。
+1. 返回“QuickDate”项目，如果 Calendar.cs 文件尚未打开，则打开该文件，然后将以下 [using 语句](/dotnet/csharp/language-reference/keywords/using-statement)和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性添加到文件顶部，以解决测试项目中的错误。
 
    ```csharp
    using System.Runtime.CompilerServices;
@@ -162,11 +162,11 @@ ms.locfileid: "42627198"
 
 ## <a name="project-properties"></a>项目属性
 
-包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性的 C# 代码文件中的行引用了“QuickTest”项目的程序集名称（文件名）。 程序集名称可能不会始终与项目名称相同。 若要查看项目的程序集名称，请打开项目属性。
+包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 属性的 Calendar.cs 文件中的行引用了“QuickTest”项目的程序集名称（文件名）。 程序集名称可能不会始终与项目名称相同。 若要查看项目的程序集名称，请打开项目属性。
 
 1. 在“解决方案资源管理器”中，选择“QuickTest”项目。 在右键菜单或上下文菜单中，选择“属性”，或只按 Alt+Enter 即可。
 
-   项目的“属性页”随即在“应用程序”选项卡上打开。属性页包含项目的各种设置。 请注意，“QuickTest”项目的程序集名称确实为“QuickTest”。 如果想要更改，可在此处更改。 随后，在生成测试项目时，生成的可执行文件的名称将从“QuickTest.exe”更改为你选择的名称。
+   项目的“属性页”随即在“应用程序”选项卡上打开。属性页包含项目的各种设置。 请注意，“QuickTest”项目的程序集名称确实为“QuickTest”。 如果想要更改，可在此处更改。 随后，在生成测试项目时，生成的二进制文件的名称将从“QuickTest.dll”更改为所选择的名称。
 
    ![项目属性](media/quickstart-projects-properties.png)
 
@@ -175,6 +175,11 @@ ms.locfileid: "42627198"
 ## <a name="next-steps"></a>后续步骤
 
 若希望检查单元测试是否正常工作，请从菜单栏依次选择“测试” > “运行” > “所有测试”。 此时名为“测试资源管理器”的窗口打开，你应该会看到“TestGetCurrentDate”测试通过。
+
+![Visual Studio 中显示已通过的测试的文本资源管理器](media/quickstart-projects-test-explorer.png)
+
+> [!TIP]
+> 如果“测试资源管理器”未自动打开，请从菜单中选择“测试” > “Windows” > “测试资源管理器”。
 
 ## <a name="see-also"></a>请参阅
 

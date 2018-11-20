@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 67e6e8744672c35bdf13e30269297dcc52c50a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f7b8733e6c2a1464b5ea9c07c9c9109064183a6c
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929603"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296276"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中生成类或类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "49929603"
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![灯泡](media/bulb-cs.png) 图标。
-      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边）。
+      - 单击 ![灯泡](media/bulb-cs.png) 图标（如果文本光标已在具有红色波形曲线的行上，它会出现在左边缘）。
 
       ![生成类预览](media/class-preview-cs.png)
 

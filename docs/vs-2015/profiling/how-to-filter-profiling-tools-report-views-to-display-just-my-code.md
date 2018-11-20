@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
 caps.latest.revision: 20
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7bc1719b0cac40aa35c0aad3841a0ca49c9da44
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: d3efdd43762e3ce9afdfebf29a9a7529b97ca995
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226468"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51754455"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：筛选分析工具报告视图以显示“仅我的代码”
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

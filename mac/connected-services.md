@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: conceptdev
 ms.author: crdun
 ms.date: 04/04/2018
-ms.openlocfilehash: bcc09fab45bf9580349675a65150319c34236f97
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 463b002ed2a511c47b518dba756f3ca4c6a5ca35
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43223896"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295171"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 
@@ -18,8 +18,7 @@ ms.locfileid: "43223896"
 
 此演练介绍如何添加 Azure 后端服务，该服务将云数据存储、身份验证和推送通知引入到跨平台 Xamarin.Forms 可移植类库 (PCL) 应用程序。
 
-
-1.  首先双击解决方案中的“连接的服务”节点，随即出现“服务库”。
+1. 首先双击解决方案中的“连接服务”节点，随即出现“服务库”。
   这是一个列表，其中列出了适用于该应用程序类型的所有可用服务。 通过单击选择服务（例如“Azure App Service 的移动后端”）。
 
     [![Visual Studio for Mac 中的“连接的服务”节点](media/connected-services-image001-sml.png "Visual Studio for Mac 中的“连接的服务”节点")](media/connected-services-image001.png#lightbox)
@@ -68,7 +67,11 @@ ms.locfileid: "43223896"
 
 -   **应用服务名称** – 计划的唯一名称/ID
 -   **订阅** – 想要用于支付该服务的订阅
--   **资源组** – 一种为某个项目组织所有的 Azure 资源的方式。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
+-   **资源组** – 一种为项目组织所有 Azure 资源的方法。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
 -   **服务计划** – 确定使用计划的任何资源的位置和成本。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请使用默认服务计划或在免费层 (F1) 中创建新的。
 
-访问 [Azure 应用服务文档](https://azure.microsoft.com/documentation/learning-paths/appservice-mobileapps/)，获取详细信息。
+访问[移动应用文档](/azure/app-service-mobile/)，获取详细信息。
+
+## <a name="see-also"></a>请参阅
+
+- [连接服务（Windows 上的 Visual Studio）](/visualstudio/azure/vs-azure-tools-connected-services-storage)

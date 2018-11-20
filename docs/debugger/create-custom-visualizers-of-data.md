@@ -1,7 +1,7 @@
 ---
-title: 创建数据的自定义可视化工具 |Microsoft Docs
+title: 创建自定义数据可视化工具 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/19/2017
+ms.date: 11/07/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -21,68 +21,68 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 859bf6493a06663a8977898ffa07d600b826d458
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4c5f505bfa8032b0f7d59f348835e1e4969b2648
+ms.sourcegitcommit: 6a955a2d179cd0e137942389f940d9fcbbe125de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854307"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51607817"
 ---
-# <a name="create-custom-visualizers-of-data"></a>创建数据的自定义可视化工具
- 可视化工具是组件的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面。 一个*可视化工具*创建对话框或另一个接口，以适合于其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并按照该字符串出现在浏览器窗口中时的样子显示结果；位图可视化工具解释位图结构并显示该位图结构表示的图形。 某些可视化工具允许您修改数据，还允许您查看数据。
+# <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具 
+ 一个*可视化工具*属于[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器用户界面中以适合其数据类型的方式显示变量或对象。 例如，HTML 可视化工具解释 HTML 字符串，并显示结果，就像在浏览器窗口中显示。 位图可视化工具解释位图结构并显示它所代表的图形。 某些可视化工具可让你还可以查看的数据修改。
 
- [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 调试器包括六个标准可视化工具。 这些是文本、 HTML、 XML 和 JSON 可视化工具，所有这些处理字符串对象;WPF 树可视化工具，用于显示 WPF 对象可视化树; 的属性和数据集可视化工具，一种用于 DataSet、 DataView 和 DataTable 对象。 将来可以从 Microsoft Corporation 以及第三方和社区下载更多的可视化工具。 此外，你可以编写自己的可视化工具，并将它们安装在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 调试器中。
+ [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 调试器包括六个标准可视化工具。 文本、 HTML、 XML 和 JSON 可视化工具处理字符串对象。 WPF 树可视化工具显示 WPF 对象可视化树的属性。 数据集可视化工具一种用于 DataSet、 DataView 和 DataTable 对象。 
+
+可从 Microsoft、 第三方和社区下载更多可视化工具。 此外可以编写自己的可视化工具，并将它们安装在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]调试器。
+
+在调试器中，可视化工具由一个放大镜图标表示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。 可以选择在图标**数据提示**，调试器**监视**窗口中，或**快速监视**对话框中，并选择相应的对象的相应可视化工具。
+
+## <a name="write-custom-visualizers"></a>编写自定义可视化工具
 
  > [!NOTE]
- > 若要创建的本机代码的自定义可视化工具，请参阅[SQLite 本机调试器可视化工具](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)示例。 在 UWP 和 Windows 8.x 应用中，不支持自定义可视化工具。
+ > 若要创建的本机代码的自定义可视化工具，请参阅[SQLite 本机调试器可视化工具](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/SqliteVisualizer)示例。 对于 UWP 和 Windows 8.x 应用程序不支持自定义可视化工具。
 
- 在调试器中，可视化工具由一个放大镜图标表示![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。 请参阅中的放大镜图标时**数据提示**，在调试器窗口等**监视**窗口中，或在**快速监视**对话框中，可以单击到放大镜选择适合于相应对象的数据类型的可视化工具。
+您可以编写除任何托管类的对象的自定义可视化工具<xref:System.Object>和<xref:System.Array>。  
+  
+调试器可视化工具的结构由两部分组成：  
+  
+- *调试器端*运行在 Visual Studio 调试器中，并创建并显示可视化工具用户界面。  
+  
+- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。 调试对象进程中存在要实现可视化效果 （例如，字符串对象） 的数据对象。 调试对象端将对象发送到调试器端，在您创建的用户界面中显示。  
 
-## <a name="overview-of-custom-visualizers"></a>自定义可视化工具的概述
+在调试器端接收中的数据对象*对象提供程序*实现<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>接口。 调试对象端将通过对象发送*对象源*，它派生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 
 
-可以为任何托管类（除 <xref:System.Object> 或 <xref:System.Array> 之外）的对象编写自定义可视化工具。  
+对象提供程序还可以发送数据返回到对象源，使你可以编写可视化工具，可以编辑数据。 重写要与表达式计算器和对象源的对象提供程序。  
   
- 调试器可视化工具的结构由两部分组成：  
+调试对象端和调试器端通过与其他通信<xref:System.IO.Stream>方法将数据序列化对象插入<xref:System.IO.Stream>和反序列化<xref:System.IO.Stream>回数据对象。  
+
+仅当类型为开放类型，可以为泛型类型编写可视化工具。 此限制与使用 `DebuggerTypeProxy` 特性时的限制相同。 有关详细信息，请参阅[使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)。  
   
-- *调试器端*程序在 Visual Studio 调试器中运行。 调试器端代码创建并显示可视化工具的用户界面。  
+自定义可视化工具可能有安全性问题。 请参阅[可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)。  
   
-- *调试对象端*在 Visual Studio 正在调试的进程中运行 (*调试对象*)。  
-  
-  要可视化的数据对象（如 String 对象）存在于调试对象进程中。 因此，调试器端必须将数据对象发送到调试对象端，然后调试器端可以使用您创建的用户界面进行显示。  
-  
-  在调试器端接收从可视化此数据对象*对象提供程序*实现<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>接口。 调试对象端发送的数据对象通过*对象源*，它派生自<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。 对象提供程序还可以将数据发送回对象源，这样您便能够编写可编辑并显示数据的可视化工具。 可以重写此对象提供程序，以便与表达式计算器进行对话，进而与对象源进行对话  
-  
-  调试对象端和调试器端通过 <xref:System.IO.Stream> 相互通信。 提供了将数据对象序列化为 <xref:System.IO.Stream> 以及将 <xref:System.IO.Stream> 反序列化为数据对象的方法。  
-  
-  调试对象端代码是使用 DebuggerVisualizer 特性 (<xref:System.Diagnostics.DebuggerVisualizerAttribute>) 指定的。  
-  
-  若要在调试器端创建可视化工具用户界面，必须创建从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 继承的类，并且重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法来显示界面。  
-  
-  可以使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 通过可视化工具显示 Windows 窗体、对话框和控件。  
-  
-  对泛型类型的支持是有限的。 只有在一个泛型类型是开放类型时，才可以为属于该泛型类型的目标编写可视化工具。 此限制与使用 `DebuggerTypeProxy` 特性时的限制相同。 有关详细信息，请参阅[使用 DebuggerTypeProxy 特性](../debugger/using-debuggertypeproxy-attribute.md)。  
-  
-  自定义可视化工具可能有安全性问题。 请参阅[可视化工具安全注意事项](../debugger/visualizer-security-considerations.md)。  
-  
-  下面的过程高度概括了创建可视化工具时所需完成的操作。 有关更详细的说明，请参阅[演练： 用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)。  
+以下步骤进行可视化工具创建了高级概述。 有关详细说明，请参阅[演练： 编写可视化工具C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)或[演练： 用 Visual Basic 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)。  
   
 ### <a name="to-create-the-debugger-side"></a>创建调试器端  
   
+若要在调试器端创建可视化工具用户界面，您可以创建继承的类<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>，并替代<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName>方法来显示的界面。 可以使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>要在可视化工具中显示 Windows 窗体、 对话框和控件。  
+  
 1.  使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 方法在调试器端获取可视化的对象。  
   
-2.  创建一个从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 继承的类。  
+1.  创建一个从 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer> 继承的类。  
   
-3.  重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以显示接口。 使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 方法将 Windows 窗体、对话框和控件显示为界面的一部分。  
+1.  重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以显示接口。 使用<xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService>方法，以便在界面中显示 Windows 窗体、 对话框和控件。  
   
-4.  应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，为它指定可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。  
+4.  将应用<xref:System.Diagnostics.DebuggerVisualizerAttribute>，为其提供要显示的可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。  
   
 ### <a name="to-create-the-debuggee-side"></a>创建调试对象端  
   
-1.  应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，为它指定可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和对象源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果省略对象源，则使用默认对象源  
+使用指定调试对象端代码<xref:System.Diagnostics.DebuggerVisualizerAttribute>。  
   
-2.  如果希望可视化工具能够编辑和显示数据对象，则需要重写 `TransferData` 中的 `CreateReplacementObject` 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 方法。   
+1.  应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，为它指定可视化工具 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) 和对象源 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>)。 如果省略对象源，可视化工具将使用默认对象源。  
   
-## <a name="in-this-section"></a>本节内容
+1.  若要允许编辑，也显示的数据对象的可视化工具，请重写`TransferData`或`CreateReplacementObject`方法从<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。   
+  
+## <a name="see-also"></a>请参阅
   
  [演练：用 C# 编写可视化工具](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 
@@ -94,5 +94,4 @@ ms.locfileid: "49854307"
   
  [可视化工具 API 参考](../debugger/visualizer-api-reference.md)  
   
-## <a name="related-sections"></a>相关章节  
- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)
+ [在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)

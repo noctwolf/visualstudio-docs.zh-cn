@@ -5,12 +5,12 @@ author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f91651d72cff067bcc0e679fa66f250a8a1a55d0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b53de918f51abd03d28173bf00d83d98503e86bd
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898819"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348925"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -61,7 +61,7 @@ Unity 引擎向 MonoBehaviour 脚本广播消息，允许开发人员编写对 O
 
 ## <a name="adding-new-unity-files-and-folders"></a>添加新 Unity 文件和文件夹
 
-您始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
+始终都可在 Unity 编辑器中将新文件添加到 Unity 项目，也可通过 Visual Studio for Mac 轻松从 Visual Studio 中创建新的 Unity 脚本、着色器和文件夹。
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>添加新的 C# MonoBehaviour 脚本
 
@@ -107,8 +107,8 @@ Unity 编辑器的“Project”窗口会反映这些添加。
 
 停止调试：
 
-1. 在 Visual Studio for Mac 中单击“Stop”按钮，或按“Shift + Command + Return”。
+1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
 
    ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
 
-有关在 Visual Studio for Mac 中调试的详细信息，请参阅[使用调试程序](https://docs.microsoft.com/visualstudio/mac/debugging)。
+有关在 Visual Studio for Mac 中调试的详细信息，请参阅[使用调试程序](debugging.md)。

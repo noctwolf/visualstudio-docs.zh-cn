@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
 caps.latest.revision: 14
-author: TerryGLee
-ms.author: tglee
+author: conceptdev
+ms.author: crdun
 manager: ghogen
-ms.openlocfilehash: 98d0aa1be1ac30de74a226735ca90743474043b7
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: f21a5491d1b0e23bff90ce0105b81eb6291ac7e5
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000837"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51807187"
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>更改日志（Visual Studio Tools for Unity）
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -333,9 +333,9 @@ Visual Studio Tools for Unity 更改日志。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
--   修复 Visual Studio 主题的处理。 以前，黑色主题中的对话框可能显示为空。
+-   修复 Visual Studio 主题的处理。 之前，黑色主题中的对话框可能会显示为空。
 
--   修复 Unity 冻结时连接调试器同时 Unity 进行重新编译。
+-   修复当连接调试器同时 Unity 进行重新编译时发生的 Unity 冻结。
 
 -   调试在另一个系统编译的远程编辑器或播放器时，修复断点。
 
@@ -345,7 +345,7 @@ Visual Studio Tools for Unity 更改日志。
 
 -   修复调试器中变量范围的处理，以避免出现的实时变量超出范围。
 
--   修复调试器的表达式计算中静态成员的查找。
+-   修复在调试器的表达式计算中静态成员的查找。
 
 -   修复调试器的表达式计算中的类型显示，以显示静态字段和属性。
 

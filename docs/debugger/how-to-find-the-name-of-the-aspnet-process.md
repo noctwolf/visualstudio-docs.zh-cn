@@ -1,7 +1,7 @@
 ---
-title: 如何： 查找 ASP.NET 进程的名称 |Microsoft 文档
+title: 查找正在运行的 ASP.NET 进程 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -18,41 +18,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - aspnet
-ms.openlocfilehash: 899860baf5461eb798341cebf775ccde488915b7
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 6bbb2aed6f7218170e26b736d82ba0f3d88b2fae
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473814"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51751774"
 ---
-# <a name="how-to-find-the-name-of-the-aspnet-process"></a>如何：查找 ASP.NET 进程的名称
-若要附加到正在运行的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 应用程序，您必须知道 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 进程的名称：  
+# <a name="find-the-name-of-the-aspnet-process"></a>查找 ASP.NET 进程的名称
 
--   如果你在 IIS 或 IISExpress 上运行 ASP.NET Core，进程名称是 dotnet.exe。
+若要调试正在运行[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]应用程序中，Visual Studio 调试器必须附加到[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]进程的名称。
 
--   如果你运行 ASP.NET IIS 6.0 上更高版本，则名称为 w3wp.exe。  
-  
--   如果你在早期版本的 IIS 上运行 ASP.NET，名称为 aspnet_wp.exe。
+**若要查看哪个进程正在运行的 ASP.NET 应用：**
 
--   如果你正在 IISExpress 上运行 ASP.NET，名称为 iisexpress.exe。
-  
-通过使用 Visual Studio 2012 之前的 Visual Studio 的版本生成的应用程序[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]代码可能驻留在文件系统，并在测试服务器 WebDev.WebServer.exe 或 WebDev.WebServer40.exe 下运行。 在这种情况下，必须将附加到 WebDev.WebServer.exe 或而不是 WebDev.WebServer40.exe[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]过程。 此方案仅适用于本地调试。
-  
-当原来的 ASP 应用程序在进程内运行时，它们会在 IIS 进程 inetinfo.exe 内部运行。  
+1. 与应用程序运行，请在 Visual Studio 中，选择**调试** > **附加到进程**。 
+   
+1. 在中**附加到进程**对话框中，键入过程的第一个字母从以下列表中，名称或搜索框中输入它们。 一个正在运行的是运行 ASP.NET 应用程序。 附加到该进程来调试应用程序。 
+   
+    - *w3wp.exe*是 IIS 6.0 及更高版本。 
+    - *aspnet_wp.exe*是 IIS 的早期版本。
+    - *iisexpress.exe*是 IISExpress。
+    - *dotnet.exe*是 ASP.NET Core。
+    - *inetinfo.exe*是在进程中运行的旧版 ASP 应用程序。 
 
-### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>确定应用程序正在哪个 IIS 版本下运行  
+>[!NOTE]
+>Visual Studio 2012 及更早[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]位于文件系统上并在测试服务器上运行代码*WebDev.WebServer.exe*或*WebDev.WebServer40.exe*。 在这种情况下，对于本地调试，附加到*WebDev.WebServer.exe*或*WebDev.WebServer40.exe*而不是[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]过程。 
 
-1.  请确保应用程序正在运行，然后，从 Visual Studio 中，使用[附加到进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)命令。
+**另请参阅：**
 
-2.  键入类似 w3wp.exe 以进行快速查找中的进程的进程名称的首字母**可用进程**列表。
-
-    本主题中的列表中的可用进程将指示的 IIS 的版本可用，以及哪个进程正在运行你的应用程序。
-
-    > [!NOTE]
-    > 从 Visual Studio 2017 年 1 开始，你可以使用搜索框中搜索进程名称。
-  
-## <a name="see-also"></a>请参阅  
  [附加到正在运行的进程](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
- [远程调试 Web 应用程序的必备组件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
+ [远程调试 web 应用程序的先决条件](../debugger/prerequistes-for-remote-debugging-web-applications.md)   
  [系统要求](../debugger/aspnet-debugging-system-requirements.md)   
  [调试 ASP.NET 应用程序](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -9,16 +9,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 3de51b0c984522810b174bdb1784420620ba037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a895124effa8155ab2edb4652962b605926234d5
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858462"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349473"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和扩展 SDK 添加引用
 
-可以利用 Visual Studio 的 NuGet 扩展或软件开发工具包 (SDK) 提供 Visual Studio 项目中使用的包。 本主题通过介绍这两种机制的相似和不同之处，帮助你选择最适合你任务的机制。
+可以使用 NuGet 或软件开发工具包 (SDK) 提供 Visual Studio 项目中使用的包。 通过描述这两种机制的异同，本文可以帮助你选择适合任务的最佳机制。
 
 - NuGet 是开放源代码包管理系统，可以简化将库合并到项目解决方案的过程。 有关详细信息，请参阅 [NuGet 文档](/nuget)。
 
@@ -27,7 +27,6 @@ ms.locfileid: "49858462"
 ## <a name="which-mechanism-should-i-use"></a>应使用哪种机制？
 
 下表可帮助你比较 SDK 与 NuGet 的引用功能。
-
 
 | 功能 | SDK 支持 | SDK 说明 | NuGet 支持 | NuGet 说明 |
 | - | - | - |---------------| - |
@@ -71,3 +70,4 @@ ms.locfileid: "49858462"
 ## <a name="see-also"></a>请参阅
 
 - [管理项目中的引用](../ide/managing-references-in-a-project.md)
+- [管理项目中的应用 (Visual Studio for Mac)](/visualstudio/mac/managing-references-in-a-project)

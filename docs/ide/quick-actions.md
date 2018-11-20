@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d413d5b440c39c3603e1e909fb0c4645719f188b
-ms.sourcegitcommit: 046a9adc5fa6d6d05157204f5fd1a291d89760b7
+ms.openlocfilehash: 7089a9a654d1c346fefcca119f74a87d89f323b8
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34064845"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349369"
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -29,6 +29,9 @@ ms.locfileid: "34064845"
 - [阻止](../code-quality/use-roslyn-analyzers.md)代码分析器规则冲突
 - 应用重构（例如，[内联临时变量](../ide/reference/inline-temporary-variable.md)）
 - 生成代码（例如，[引入局部变量](../ide/reference/introduce-local-variable.md)）
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[重构 (Visual Studio for Mac)](/visualstudio/mac/refactoring)。
 
 可使用灯泡![灯泡图标](media/light-bulb-icon.png)或螺丝刀![螺丝刀图标](media/screwdriver-icon.png)图标，或按“Ctrl”应用快速操作。+ 当光标位于可操作的代码行上时， 如果出现指示错误的红色波形曲线，且 Visual Studio 有针对该错误的可用修复方法，会显示一个错误灯泡![错误灯泡图标](media/error-light-bulb-icon.png)。
 
@@ -60,3 +63,4 @@ ms.locfileid: "34064845"
 - [常见快速操作](../ide/common-quick-actions.md)
 - [代码样式和快速操作](../ide/code-styles-and-quick-actions.md)
 - [编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+- [重构 (Visual Studio for Mac)](/visualstudio/mac/refactoring)

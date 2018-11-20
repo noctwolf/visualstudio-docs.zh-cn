@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 5279ab9b-71d9-4be5-81f6-a1f24b06f5fb
 caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
+author: gewarren
+ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d59ccac2ef8f91fae9bede5951ff42ec5a43be0e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8d4bc5d8e8a24483c30ac813d3253626e58dd353
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848548"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791743"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>将应用迁移到通用 Windows 平台 (UWP)
 对使用 Visual Studio 2015 RC 创建的 Windows Store 8.1 应用、Windows Phone 8.1 应用或通用 Windows 应用的现有项目文件进行必要的手动更改，以便它们能与 Visual Studio 2015 RTM 一起使用。 （如果你的 Windows 8.1 通用应用同时具有 Windows 应用项目和 Windows Phone 项目，则需要按照以下步骤迁移每个项目。）  
@@ -503,7 +503,7 @@ ms.locfileid: "49848548"
      <PackageDependency  
           Name="Microsoft.VCLibs.120.00"  
           Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"  
-          MinVersion="12.0.30113.0" />  
+          MinVersion="12.0.30113.0" />  
     </Dependencies>  
   
     ```  

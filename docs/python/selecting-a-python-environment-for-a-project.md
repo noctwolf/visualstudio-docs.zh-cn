@@ -1,7 +1,7 @@
 ---
-title: 选择项目的 Python 解释器和环境
-description: 如何分配 Visual Studio 项目要使用的 Python 环境，以及关于创建虚拟环境的说明。
-ms.date: 06/27/2018
+title: 选择用于项目的 Python 解释器和项目
+description: 如何选择用于 Visual Studio 项目的 Python 环境或解释器，包括 Anaconda 和虚拟环境。
+ms.date: 11/08/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,16 +11,16 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e738eb52ce8cb7cef4090dd9812f6c421a7d11fd
-ms.sourcegitcommit: 40b6438b5acd7e59337a382c39ec711b9e99cc8a
+ms.openlocfilehash: 0bff5e81fbfda45908315091063833b31abbdd8c
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101129"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349447"
 ---
-# <a name="how-to-assign-which-python-environment-is-used-for-a-project"></a>如何分配用于项目的 Python 环境
+# <a name="how-to-select-a-python-environment-for-a-project"></a>如何选择用于项目的 Python 环境
 
-Python 项目中的所有代码均在特定环境的上下文中运行。 Visual Studio 还将该环境用于调试、导入和成员完成情况、语法检查以及任何需要环境的其他任务。
+Python 项目中的所有代码都在特定环境的上下文中运行，例如全局 Python 环境、Anaconda 环境、虚拟环境或 conda 环境。 Visual Studio 还将该环境用于调试、导入和成员完成、语法检查，以及需要特定于 Python 版本和一组已安装包的语言服务的任何其他任务。
 
 Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的全局环境，它出现在“解决方案资源管理器”的“Python 环境”节点下：
 
@@ -42,7 +42,7 @@ Visual Studio 中所有新的 Python 项目最初都被配置为使用默认的�
 | --- | --- |
 | **添加虚拟环境** | 首先在项目中新建一个虚拟环境。 详情请参阅[创建虚拟环境](#create-a-virtual-environment)。 |
 | **添加现有虚拟环境** | 系统提示你选择一个包含虚拟环境的文件夹并将其添加到“Python 环境”下的列表，但不进行激活。 请参阅[激活现有的虚拟环境](#activate-an-existing-virtual-environment)。 |
-| **创建 Conda 环境** | 切换到“Python 环境”窗口，在此处输入环境的名称并指定其基础解释器。 |
+| **创建 Conda 环境** | 切换到“Python 环境”窗口，在此处输入环境的名称并指定其基础解释器。 请参阅 [Conda 环境](managing-python-environments-in-visual-studio.md#conda-environments)。 |
 
 ## <a name="use-virtual-environments"></a>使用虚拟环境
 

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: a2f813bee641b55b52ad3611c155bd273345ba73
-ms.sourcegitcommit: 9e796d8a8b737ed9d5bf024db89b1abf99ea809b
+ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "43224434"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294014"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>创建并编辑自定义 EditorConfig 文件
 
 在 Visual Studio for Mac 中，可以向项目或解决方案添加 [EditorConfig](http://editorconfig.org/) 文件，强制对使用该基本代码的所有人实施一致的编码样式。 EditorConfig 文件中声明的设置优先于全局 Visual Studio for Mac 文本编辑器设置。 在项目或基本代码中使用 EditorConfig 文件可为项目设置编码样式、首选项和警告。 由于该文件是基本代码的一部分，因此无论使用何种 IDE 或代码编辑器，它都使用户更容易遵守项目的编码操作。
 
-[EditorConfig](http://editorconfig.org/) 文件受到许多 IDE 和代码编辑器（包括 Visual Studio 2017）支持。 
+[EditorConfig](http://editorconfig.org/) 文件受到许多 IDE 和代码编辑器（包括 Visual Studio 2017）支持。
 
 ## <a name="supported-settings"></a>支持的设置
 
@@ -33,15 +33,15 @@ Visual Studio for Mac 中的编辑器支持 [EditorConfig 属性](http://editorc
 - `insert_final_newline`
 - `root`
 
-EditorConfig 还支持 C# 中的[编码约定](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference)。
+EditorConfig 还支持 C# 中的[编码约定](/visualstudio/ide/editorconfig-code-style-settings-reference)。
 
 ## <a name="add-an-editorconfig-file-to-a-project"></a>将 EditorConfig 文件添加到项目
 
 ### <a name="adding-a-new-editorconfig-file"></a>添加新的 EditorConfig 文件
 
-1. 在 Visual Studio for Mac 中打开项目。 选择要向其添加 EditorConfig 文件的解决方案或项目节点。 将文件添加到解决方案目录会将 .editorconfig 设置应用于解决方案中的所有项目。 
+1. 在 Visual Studio for Mac 中打开项目。 选择要向其添加 EditorConfig 文件的解决方案或项目节点。 将文件添加到解决方案目录会将 .editorconfig 设置应用于解决方案中的所有项目。
 
-2. 右键单击节点，然后选择“添加”>“新建文件”。 打开“新建文件”对话框：
+2. 右键单击节点，然后选择“添加”>“新建文件”以打开“新文件”对话框：
 
     ![内容菜单项](media/editorconfig-image0.png)
 
@@ -76,13 +76,13 @@ EditorConfig 还支持 C# 中的[编码约定](https://docs.microsoft.com/visual
 
 ### <a name="adding-an-existing-editorconfig-file"></a>添加现有的 EditorConfig 文件
 
-如果正在使用已包含 `.editorconfig` 文件的项目或解决方案，则无需执行任何操作即可应用设置。 任何新的代码行都将根据 EditorConfig 设置设置格式。 
+如果正在使用已包含 `.editorconfig` 文件的项目或解决方案，则无需执行任何操作即可应用设置。 任何新的代码行都将根据 EditorConfig 设置设置格式。
 
 可能想重复使用项目中现有的 `.editorconfig` 文件。 若要添加现有文件，请执行以下操作：
 
-1. 右键单击要添加到的文件夹，然后选择“添加”>“添加文件…”。
+1. 右键单击要添加到的文件夹，然后选择“添加”>“添加文件”。
 
-2. 浏览到所需文件的目录。 
+2. 浏览到所需文件的目录。
 
 3. 以 `.` 开头的文件（例如 `.editorconfig`）是 macOS 中的隐藏文件，因此请按Command + Shift + . 以使 `.editorconfig` 文件可见。
 
@@ -104,9 +104,7 @@ EditorConfig 还支持 C# 中的[编码约定](https://docs.microsoft.com/visual
 
 ## <a name="editing-an-editorconfig-file"></a>编辑 EditorConfig 文件
 
-
 EditorConfig 文件使用简单的文件布局来指定设置，下面使用前一个示例来解释：
-
 
 ```EditorConfig
 # This file is the top-most EditorConfig file
@@ -123,7 +121,7 @@ trim_trailing_whitespace = false
 csharp_new_line_before_open_brace = none
 ```
 
-通过将 `root` 设置为 `true` 可把该文件标记为代码库中的最顶级文件，并忽略任何更高级的 `.editorconfig` 文件，如[替代 EditorConfig 设置](#override-editorconfig-settings)部分所述。
+将 `root` 设置为 `true` 可把该文件标记为代码库中的最顶级文件，并忽略项目中任何更高级的 `.editorconfig` 文件，如[代替 EditorConfig 设置](#override-editorconfig-settings)部分所述。
 
 每个部分用方括号 ([ ]) 表示，并指定下列属性应涉及的文件类型的信息。
 
@@ -137,11 +135,11 @@ csharp_new_line_before_open_brace = none
 
 ![应用 editorconfig 设置之后](media/editorconfig-image5.png)
 
-有关可用的 EditorConfig 设置的详细信息，请参阅 [EditorConfig 的 .NET 编码约定设置](https://docs.microsoft.com/visualstudio/ide/editorconfig-code-style-settings-reference)一文以及官方文档的[支持的属性](http://editorconfig.org/#supported-properties)部分。
+有关可用的 EditorConfig 设置的详细信息，请参阅 [EditorConfig 的 .NET 编码约定设置](/visualstudio/ide/editorconfig-code-style-settings-reference)一文以及官方文档的[支持的属性](http://editorconfig.org/#supported-properties)部分。
 
 ## <a name="override-editorconfig-settings"></a>替代 EditorConfig 设置
 
-每个解决方案可以具有一个以上的 `.editorconfig` 文件。 Visual Studio for Mac 在解决方案中从上到下读取 `.editorconfig` 文件，并在此过程中添加和替代设置。这意味将优先选择 `.editorconfig` 中_最接近_正在编辑的文件的设置。 先采用同一文件夹中 `.editorconfig` 文件（如果存在）中的设置，其次采用父级文件夹中 `.editorconfig`（如果存在）中的设置，以此类推。 直到找到 `root=true`。  
+每个解决方案可以具有一个以上的 `.editorconfig` 文件。 Visual Studio for Mac 在解决方案中从上到下读取 `.editorconfig` 文件，并在此过程中添加和替代设置。这意味将优先选择 `.editorconfig` 中_最接近_正在编辑的文件的设置。 先采用同一文件夹中 `.editorconfig` 文件（如果存在）中的设置，其次采用父级文件夹中 `.editorconfig`（如果存在）中的设置，以此类推。 直到找到 `root=true`。
 
 如果要确保任何更高级别的 `.editorconfig` 文件中没有设置应用于此部分代码库，请将 `root=true` 属性添加到较低级别的 `.editorconfig` 文件顶部：
 
@@ -149,3 +147,7 @@ csharp_new_line_before_open_brace = none
 # top-most EditorConfig file
 root = true
 ```
+
+## <a name="see-also"></a>请参阅
+
+- [使用 EditorConfig 创建自定义编辑器设置（Windows 上的 Visual Studio）](/visualstudio/ide/create-portable-custom-editor-options)

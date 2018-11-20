@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 83d5eac54560d9c0c1960808d39a909858db323d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900665"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295132"
 ---
 # <a name="extending-visual-studio-for-mac"></a>扩展 Visual Studio for Mac
 
@@ -23,7 +23,7 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 ![加载项体系结构](media/extending-visual-studio-mac-addin1.png)
 
-若要使扩展包从 Visual Studio for Mac 进行生成，则必须拥有在 Visual Studio for Mac IDE 内从现有扩展点进行生成的扩展。 如果扩展包依赖于加载项主机中定义的扩展，则称该扩展包上拥有依赖项。
+若要使扩展包从 Visual Studio for Mac 进行生成，则必须拥有在 Visual Studio for Mac IDE 内从现有扩展点进行生成的扩展。 如果扩展包依赖于加载项主机中定义的扩展点，则称该扩展包上拥有 _依赖项_ 。
 
 此模块化设计的好处是 Visual Studio for Mac 可扩展，即可通过自定义扩展包在许多扩展点上进行生成。 当前扩展包的示例包括对 C# 和 F# 的支持、调试工具和项目模板。
 
@@ -52,13 +52,13 @@ Visual Studio for Mac 包含一组被称为“扩展包”的模块。 可使用
 
 ![插入日期屏幕截图](media/extending-visual-studio-mac-addin13.png)
 
-它们也拥有在生成时添加的对应 `assembly:AddinDependency ` 属性。 元数据和依赖项声明就位后，便可专注于扩展包的重要构建基块。
+它们也拥有在生成时添加的对应 `assembly:AddinDependency` 属性。 元数据和依赖项声明就位后，便可专注于扩展包的重要构建基块。
 
 ## <a name="extensions-and-extension-points"></a>扩展和扩展点
 
 扩展点是定义数据结构（类型）的占位符，扩展则定义符合特定扩展点所指定结构的数据。 扩展点指定它们在声明中可接受的扩展类型。 可通过使用类型名称或扩展路径声明扩展。 若要深入了解如何创建所需的扩展点，请参阅 [Extension Point reference](https://github.com/mono/mono-addins/wiki/Extension-Points)（扩展点引用）。
 
-扩展/扩展点体系结构保证了快速且模块化的 Visual Studio for Mac 开发。 
+扩展/扩展点体系结构保证了快速且模块化的 Visual Studio for Mac 开发。
 
 <!--Since there are a large number of extension types, this article focuses on the ones used in the extension package that was built in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md).-->
 
@@ -163,3 +163,7 @@ public enum DateInserterCommands
 
 > [!NOTE]
 > 我们正在致力于改善针对 Visual Studio for Mac 的扩展性方案。 若要创建扩展，并需要其他帮助或信息，或希望提供反馈，请填写 [Visual Studio for Mac 扩展创建](https://aka.ms/vsmac-extensions-survey)表单。
+
+## <a name="see-also"></a>请参阅
+
+- [开发 Visual Studio 扩展 (Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

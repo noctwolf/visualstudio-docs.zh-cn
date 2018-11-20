@@ -80,7 +80,7 @@ ms.locfileid: "49951244"
   
  若要修改 UI 操作的属性，在 **“UI 操作”** 窗格中，展开包含你想要为其编辑属性的 UI 操作的测试方法，选择 UI 操作，然后通过“属性”窗口修改属性。  
   
- 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 '<http://Contoso1/default.aspx’>'”的 Web 浏览器关联，则可以将 URL 更改为 `‘ http://Contoso2/default.aspx’`。  
+ 例如，如果服务器不可用，并且 UI 操作与指示“转到网页 '<http://Contoso1/default.aspx’>'”的 Web 浏览器关联，则可以将 URL 更改为 `‘http://Contoso2/default.aspx’`。  
   
  ![控件属性](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 编辑控件属性  

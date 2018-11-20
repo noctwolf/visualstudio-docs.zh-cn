@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
-ms.openlocfilehash: 1aadff851c709141f37f89431403bce857bafdbe
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 49a64f7752bc5f6b3dbbb0dcfed385bfdd5ef9be
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224049"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296094"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 
@@ -38,25 +38,28 @@ ms.locfileid: "43224049"
 
 要创建解决方案生成配置，请执行以下步骤：
 
-
 1. 右键单击解决方案节点，然后选择“选项”。
 
 2. 在“解决方案选项”对话框中，选择“生成”>“配置”：
-    
+
     ![解决方案选项中的配置管理器](media/create-and-edit-configurations-image1.png)
 
 3. 要创建新配置，请选择“添加”。 或者，可以复制一个现有配置。
 
 创建配置后，可以使用每个项目选项中的“生成”部分调整属性，使其适合配置：
 
-![配置生成选项](media/create-and-edit-configurations-image3.png) 
+![配置生成选项](media/create-and-edit-configurations-image3.png)
 
 ## <a name="editing-a-build-configuration"></a>编辑生成配置
 
 要重命名配置，请在项目选项或解决方案选项中的配置列表中选择该配置：
 
-![配置列表](media/create-and-edit-configurations-image4.png) 
+![配置列表](media/create-and-edit-configurations-image4.png)
 
 选择“重命名”按钮。
 
-![“重命名”对话框](media/create-and-edit-configurations-image5.png) 
+![“重命名”对话框](media/create-and-edit-configurations-image5.png)
+
+## <a name="see-also"></a>请参阅
+
+- [创建和编辑生成配置（Windows 上的 Visual Studio）](/visualstudio/ide/how-to-create-and-edit-configurations)

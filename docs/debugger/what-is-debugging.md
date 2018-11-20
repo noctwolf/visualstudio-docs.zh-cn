@@ -1,5 +1,5 @@
 ---
-title: 什么调试？
+title: 什么是调试？
 description: 了解这意味着若要调试在应用程序
 ms.custom: debug-experiments
 ms.date: 10/17/2018
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bece83e7e2a66499721c017932d4b498b664b459
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561745"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826656"
 ---
-# <a name="what-is-debugging"></a>什么调试？
+# <a name="what-is-debugging"></a>什么是调试？
 
 Visual Studio 调试器是一个功能强大的工具。 我们演示如何使用它之前，我们想要讨论的一些术语如*调试器*，*调试*，并*调试模式下*。 这样一来，当我们谈及更高版本查找并修复 bug，我们将讨论相同的操作。
 
@@ -49,7 +49,7 @@ Visual Studio 调试器是一个功能强大的工具。 我们演示如何使�
 
 ## <a name="next-steps"></a>后续步骤
 
-在本文中，已了解的一些常规调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。
+在本文中，已了解的一些常规调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。 以下文章说明C#代码示例，但概念适用于 Visual Studio 支持的所有语言。
 
 > [!div class="nextstepaction"]
 > [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)

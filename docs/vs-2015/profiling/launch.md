@@ -11,15 +11,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 caps.latest.revision: 18
-author: mikejo5000
+author: MikeJo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0d340a858c152b371c296883c19309c79f77aba1
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 3d8f745a775f8cad3932f20525b09fe55fb857ee
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50218741"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51791834"
 ---
 # <a name="launch"></a>启动
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
  **Start:** `Method`  
  初始化命令行探查器会话并设置指定的分析方法。  
   
- **GlobalOn**和**GlobalOff**  
+ GlobalOn 和 GlobalOff  
  恢复 (GlobalOn) 或暂停 (GlobalOff) 分析，但不结束分析会话。  
   
  ProcessOn: `PID` 和 ProcessOff:`PID`  

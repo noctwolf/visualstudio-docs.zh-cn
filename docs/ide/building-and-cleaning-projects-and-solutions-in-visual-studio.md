@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中生成和清理项目和解决方案
+title: 生成和清理项目和解决方案
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
@@ -24,15 +24,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b0ef6eab346215631559e8c9cfb16ecac0a4bf
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: c96a3b6699428b156a23ad643eb7958cb438b994
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31918525"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51349265"
 ---
-# <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
+# <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
+
 通过本主题中的过程，学会生成、重新生成或清除解决方案中的所有/部分项目/项目项。 有关分步教程，请参阅[演练：生成应用程序](../ide/walkthrough-building-an-application.md)。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[在 Visual Studio for Mac 中生成和清除项目和解决方案](/visualstudio/mac/building-and-cleaning-projects-and-solutions)。
 
 > [!NOTE]
 > 你的 Visual Studio 版本中的 UI 可能与此主题中描述的有所不同，具体取决于现用的设置。 若要更改设置，例如“常规”或“Visual C++”设置，请选择“工具” > “导入和导出设置”，再选择“重置所有设置”。
@@ -46,7 +50,7 @@ ms.locfileid: "31918525"
     -   选择“生成”或“生成解决方案”，仅编译自最近生成以来更改过的项目文件和组件。
 
         > [!NOTE]
-        >  当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
+        > 当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
 
     -   选择“重新生成解决方案”清理解决方案，然后创建所有项目文件和组件。
 
@@ -66,7 +70,7 @@ ms.locfileid: "31918525"
 
 1.  在菜单栏上，依次选择“工具” > “选项”。
 
-2.  在“选项”对话框框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。
+2.  在“选项”对话框中，展开“项目和解决方案”节点，然后选择“生成和运行”页。
 
      “生成和运行” > “项目和解决方案” > “选项”对话框随即打开。
 
@@ -118,3 +122,4 @@ ms.locfileid: "31918525"
 - [C/C++ 生成参考](/cpp/build/reference/c-cpp-building-reference)
 - [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)
 - [解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)
+- [生成和清除项目和解决方案 (Visual Studio for Mac)](/visualstudio/mac/building-and-cleaning-projects-and-solutions)

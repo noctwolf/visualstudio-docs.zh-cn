@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 49e1b465bbc964e962942304d5f8b63f8c5480b9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bda1c548b4db5d7f94a1dd85befdff5645460b83
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930708"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295093"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 
@@ -24,7 +24,7 @@ ms.locfileid: "49930708"
 
  ![将数据绑定到 Web 性能测试](../test/media/web_test_databinding_conceptual.png)
 
- 我们将使用一个示例 ASP.NET 应用程序。 它有三个 .aspx 页：默认页、红色页和蓝色页。 默认页具有一个用于选择红色或蓝色的单选控件和一个提交按钮。 其他两个 .aspx 页非常简单。 一个具有名为“红色”的标签，另一个具有名为“蓝色”的标签。 当您选择在默认页上进行提交时，将显示其他两个页面之一。 可以下载 [ColorWebApp](http://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 示例，或者直接使用自己的 Web 应用来跟随我们操作。
+ 我们将使用一个示例 ASP.NET 应用程序。 它有三个 .aspx 页：默认页、红色页和蓝色页。 默认页具有一个用于选择红色或蓝色的单选控件和一个提交按钮。 其他两个 .aspx 页非常简单。 一个具有名为“红色”的标签，另一个具有名为“蓝色”的标签。 当您选择在默认页上进行提交时，将显示其他两个页面之一。 可以下载 [ColorWebApp](https://code.msdn.microsoft.com/Sample-ColorWebApp-76ff7506) 示例，或者直接使用自己的 Web 应用来跟随我们操作。
 
  ![运行要测试的 Web 应用程序](../test/media/web_test_databinding_runwebapp.png)
 

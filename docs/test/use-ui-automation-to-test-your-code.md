@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ec65f2a35f0e28a8e9424497bcdfb11b1a02c84f
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: cbe8f1b9e0fc1fcc47a8d90e0033e8edb933e1aa
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46371077"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296068"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自动化来测试代码
 
@@ -402,7 +402,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>从 UI 测试控件直接获取或设置属性
 
-使用派生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>如 [HtmlList](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.htmlcontrols.htmllist.aspx) 或 [WinComboBox](https://msdn.microsoft.com/library/microsoft.visualstudio.testtools.uitesting.wincontrols.wincombobox.aspx)）的控件，可以直接获取或设置其属性值。 以下代码演示了部分示例：
+使用派生自 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>如 [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) 或 [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox)）的控件，可以直接获取或设置其属性值。 以下代码演示了部分示例：
 
  ```csharp
  int i = myHtmlList.ItemCount;
@@ -443,7 +443,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [在你的生成过程中运行测试](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [如何：设置测试代理以运行与桌面交互的测试](http://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [如何：设置测试代理以运行与桌面交互的测试](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **添加对自定义控件的支持：** 编码的 UI 测试框架并非支持每个可能的 UI，可能不支持你要测试的 UI。 例如，不能立即创建 Microsoft Excel UI 的编码的 UI 测试。 然而，可以创建编码的 UI 测试框架的扩展来支持自定义控件。
 

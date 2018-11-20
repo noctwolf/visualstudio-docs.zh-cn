@@ -26,14 +26,14 @@ helpviewer_keywords:
 - visualizers, about visualizers
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
-ms.author: susanno
+ms.author: mikejo
 manager: douge
-ms.openlocfilehash: cdf4c9b3a2ea8dc1322a10799f7f7051b71e035c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306509"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51721921"
 ---
 # <a name="how-to-use-a-visualizer"></a>如何：使用可视化工具
 您可以使用可视化工具，以对变量或对象的数据类型有意义的方式来显示该变量或对象的内容。 您可以通过使用可视化工具**数据提示**即**监视**窗口中，**自动**窗口中，或**局部变量**窗口。  
