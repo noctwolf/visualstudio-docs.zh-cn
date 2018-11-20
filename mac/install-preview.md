@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: db90e2d4a1c6d80e579c125668b48c057595cc18
-ms.sourcegitcommit: 97204b85caadbcf14baeb6738710e287a196673e
+ms.openlocfilehash: 5a7519a9b1ff9716c60f0ad0db3969880a269049
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49991531"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295067"
 ---
 # <a name="install-a-preview-release"></a>安装预览版
 
@@ -24,7 +24,7 @@ Visual Studio for Mac 的预览版是作为更新发布的，而不是通过单�
 
 若要安装 Visual Studio for Mac 预览版，请执行以下步骤：
 
-1. 转到“Visual Studio”>“检查更新…”。
+1. 转到“Visual Studio”>“检查更新”。
 2. 在更新通道组合框中，选择“Beta 版本”。
 3. 选择“切换通道”按钮，切换到所选通道并开始下载任何新更新。
 4. 选择“重启并安装更新”按钮，开始安装更新。

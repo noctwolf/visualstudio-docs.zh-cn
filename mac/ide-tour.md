@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: a6ea00e468e178f96bf0a08b5520d2f7e3d64b85
-ms.sourcegitcommit: 95aedf723c6be5272c3c5a2911cb2bdec50e2148
+ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47228852"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51295678"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教程
 
@@ -56,13 +56,13 @@ Solution Pad 在解决方案中组织项目：
 有关在 Visual Studio for Mac 中使用项目和解决方案的详细信息，请参阅[项目和解决方案](projects-and-solutions.md)一文。
 
 ## <a name="assembly-references"></a>程序集引用
- 
+
 “引用”文件夹中提供每个项目的程序集引用：
 
 ![Solution Pad 中的“引用”文件夹](media/ide-tour-image19.png)
 
 使用“编辑引用”对话框添加其他引用，双击“引用”文件夹或在其上下文菜单操作中选择“编辑引用”便可显示该对话框：
- 
+
 ![“编辑引用”对话框](media/ide-tour-image20.png)
 
 有关在 Visual Studio for Mac 中使用引用的详细信息，请参阅[管理项目中的引用](managing-references-in-a-project.md)一文。
@@ -93,7 +93,7 @@ Visual Studio for Mac 具有本机调试器，支持 Xamarin.iOS、Xamarin.Mac �
 
 ## <a name="version-control"></a>版本控制
 
-Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件下的项目用解决方案名称旁列出的分支表示： 
+Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件下的项目用解决方案名称旁列出的分支表示：
 
 ![分支名称用来表示源控件下的项目](media/ide-tour-image22.png)
 
@@ -102,3 +102,7 @@ Visual Studio for Mac 与 Git 和 Subversion 源控件系统集成。 源控件�
 ![Solution Pad 中的未提交文件](media/ide-tour-image23.png)
 
 有关在 Visual Studio 中使用版本控制的详细信息，请参阅[版本控制](version-control.md)一文。
+
+## <a name="see-also"></a>请参阅
+
+- [Visual Studio IDE (Windows)](/visualstudio/ide/visual-studio-ide)

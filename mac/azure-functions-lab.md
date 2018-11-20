@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 80e6f3291f0f0fdc26883d8f98e90e296ee0c7c3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919736"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296432"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -44,12 +44,10 @@ ms.locfileid: "49919736"
 
     ![命名和创建 Azure Function 项目](media/azure-functions-lab-image2.png)
 
-5. 展开“Solution Pad”中的节点。 默认项目模板包括对各种 Azure WebJobs 包以及 Newtonsoft.Json 包的 NuGet 引用。 
+5. 展开“Solution Pad”中的节点。 默认项目模板包括对各种 Azure WebJobs 包以及 Newtonsoft.Json 包的 NuGet 引用。
 
-     也有三个文件：  
-        - host.json 用于描述该主机的全局配置选项  
-        - local.settings.json 用于配置服务设置。  
-        - 项目模板还会创建一个默认 HttpTrigger。 对于本实验室，应从项目中删除 HttpTrigger.cs 文件。  
+     此外还有三个文件：- 用于描述主机的全局配置选项的 host.json **和**用于配置服务设置的 local.settings.json。
+        - 项目模板还会创建一个默认 HttpTrigger。 对于本实验室，应从项目中删除 HttpTrigger.cs 文件。
 
     打开 local.settings.json。 它默认具有两个空的连接字符串设置。
 
@@ -58,7 +56,7 @@ ms.locfileid: "49919736"
 ## <a name="exercise-2-creating-an-azure-storage-account"></a>练习 2：创建 Azure 存储帐户
 
 1. 在 [https://portal.azure.com](https://portal.azure.com) 登录到 Azure 帐户。
- 
+
 1. 在屏幕左侧的“收藏夹”部分下，选择“存储帐户”：
 
     ![Azure 门户中显示存储帐户项的收藏夹部分](media/azure-functions-lab-image4.png)
@@ -91,7 +89,7 @@ ms.locfileid: "49919736"
 
 ## <a name="example-3-creating-and-debugging-an-azure-function"></a>示例 3：创建和调试 Azure Function
 
-1. 现在可以开始添加一些代码。 使用 .NET 类库时，Azure Functions 将作为静态方法进行添加。 在“Solution Pad”中，右键单击 AzureFunctions 项目节点，选择“添加”>“添加函数…”：
+1. 现在可以开始添加一些代码。 使用 .NET 类库时，Azure Functions 将作为静态方法进行添加。 在“Solution Pad”中，右键单击“AzureFunctions”项目节点，选择“添加”>“添加函数”：
 
     ![“添加函数”选项](media/azure-functions-lab-image11.png)
 
@@ -121,8 +119,8 @@ ms.locfileid: "49919736"
         return x + y;
     }
     ```
-1. 让我们逐部分地了解此方法。 
-    
+1. 让我们逐部分地了解此方法。
+
     首先看到的是将此方法标记为 Azure Function 的 FunctionName 特性。 该特性指定函数的公共名称。 特性名称无需与实际方法名称匹配。
 
     ![FunctionName 特性突出显示的新 Run 方法](media/azure-functions-lab-image13.png)
@@ -157,7 +155,7 @@ ms.locfileid: "49919736"
 
     ![Azure Function API URL](media/azure-functions-lab-image20.png)
 
-1. 应立即触发该断点。 已将 Web 请求路由到该函数，现在可以调试该请求。 将鼠标移动到 x 变量上，查看其值。 
+1. 应立即触发该断点。 已将 Web 请求路由到该函数，现在可以调试该请求。 将鼠标移动到 x 变量上，查看其值。
 
     ![已触发断点](media/azure-functions-lab-image21.png)
 
@@ -171,7 +169,7 @@ ms.locfileid: "49919736"
 
     ![“停止调试”选项](media/azure-functions-lab-image22.png)
 
-1. 在 Run 方法中，将 x 和 y 定义替换替换为以下代码。 此代码从 URL 的查询字符串中提取值，以便可以根据提供的参数动态执行添加操作。
+1. 在 Run 方法中，将 x 和 y 定义替换为以下代码。 此代码从 URL 的查询字符串中提取值，以便可以根据提供的参数动态执行添加操作。
 
     ```csharp
     var query = HttpUtility.ParseQueryString(req.RequestUri.Query);
@@ -306,7 +304,7 @@ ms.locfileid: "49919736"
 
 ## <a name="exercise-5-working-with-azure-storage-tables"></a>练习 5：使用 Azure 存储表
 
-通常，你生成的服务可能比我们目前为止已生成的服务更复杂，并且需要占用大量的时间和/或基础结构来执行。 在这种情况下，你可能会发现在 Azure Functions 提供支持的资源可用时，它在接受已排队等待处理的请求方面很有效。 在其他情况下，需集中存储数据。 通过 Azure 存储表，可以快速做到这一点。 
+通常，你生成的服务可能比我们目前为止已生成的服务更复杂，并且需要占用大量的时间和/或基础结构来执行。 在这种情况下，你可能会发现在 Azure Functions 提供支持的资源可用时，它在接受已排队等待处理的请求方面很有效。 在其他情况下，需集中存储数据。 通过 Azure 存储表，可以快速做到这一点。
 
 1. 将以下类添加到 Add.cs。 它应该位于命名空间内、现有类外。
 
@@ -332,7 +330,7 @@ ms.locfileid: "49919736"
         TraceWriter log)
     {
         log.Info($"Processing {x} + {y}");
-    
+
         return new TableRow()
         {
             PartitionKey = "sums",
@@ -353,7 +351,7 @@ ms.locfileid: "49919736"
 
 1. 返回到浏览器，刷新对相同 URL 的请求。 此时，将在 Process 方法后看到一个错误。 这是因为该代码尝试使用一个已存在的分区键和行键组合，向 Azure 表存储表添加一行。
 
-    ``` 
+    ```
     System.Private.CoreLib: Exception while executing function: Process. Microsoft.Azure.WebJobs.Host: Error while handling parameter $return after function returned:. Microsoft.Azure.WebJobs.Host: The specified entity already exists.
     ```
 
@@ -387,7 +385,7 @@ ms.locfileid: "49919736"
 1. 返回到 Visual Studio for Mac，并结束调试会话。
 
 <!--
-1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON. 
+1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
 
     ```csharp
     [FunctionName("List")]

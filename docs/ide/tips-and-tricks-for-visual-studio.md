@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: cde519515782f453a8a60894a8bcc6dc6c714cc1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+ms.openlocfilehash: 039d0caac98bdb574f2e42303ccb001e9600a740
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220848"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348938"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的键盘快捷方式
 
@@ -22,6 +22,9 @@ ms.locfileid: "51220848"
 
 > [!TIP]
 > 此处列出的快捷方式只介绍一部分可用的键盘快捷方式。 有关更完整的列表，请参阅 [默认键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)。
 
 ## <a name="window-management"></a>窗口管理
 
@@ -73,7 +76,7 @@ ms.locfileid: "51220848"
 
 |命令|快捷键|适用版本|
 |-|-|-|
-|转到全部|**Ctrl**+**T**|
+|转到全部|Ctrl + T|
 |转到最近使用的文件|**Ctrl**+**T**,**R**|
 |多脱字号多个插入点|**Ctrl**+**Alt**+**单击**|
 |多脱字号添加匹配选择|**Shift**+**Alt**+**Ins**|
@@ -136,4 +139,5 @@ ms.locfileid: "51220848"
 
 - [辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)
 - [键盘快捷方式（Azure DevOps Services 和 TFS）](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts)
-- [Visual Studio tips and tricks blog](https://blogs.msdn.com/b/zainnab)（Visual Studio 提示和技巧博客）
+- [Visual Studio tips and tricks blog](https://blogs.msdn.microsoft.com/zainnab/)（Visual Studio 提示和技巧博客）
+- [Visual Studio for Mac 中的常用键盘快捷方式](/visualstudio/mac/keyboard-shortcuts)

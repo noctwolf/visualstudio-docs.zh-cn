@@ -5,12 +5,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c7ae7fb3a2b96efc7ad4009f584baba6b80f66da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894672"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294300"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>扩展 Visual Studio for Mac 演练
 
@@ -135,3 +135,7 @@ ms.locfileid: "49894672"
 15. 最后，请运行扩展包以进行测试。 在 Visual Studio for Mac 新实例中，选择“编辑”>“插入日期”。 在脱字号处插入当前的日期和时间，如下方的屏幕截图所示：
 
     ![插入日期屏幕截图](media/extending-visual-studio-mac-addin12.png)
+
+## <a name="see-also"></a>请参阅
+
+- [创建你的首个扩展（Windows 上的 Visual Studio）](/visualstudio/extensibility/extensibility-hello-world)

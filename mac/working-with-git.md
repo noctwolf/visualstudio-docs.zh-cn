@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
-ms.openlocfilehash: bb5a91929238452041a67942cff99973637d51af
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 10d5b34ece7d093a42bafc1f0e410b670dd342f1
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224345"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296445"
 ---
 # <a name="working-with-git"></a>使用 Git
 
@@ -24,7 +24,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ![“版本控制”菜单项](media/version-control-gitVersionControlMenu.png)
 
-## <a name="push-and-pull"></a>推送和拉取 
+## <a name="push-and-pull"></a>推送和拉取
 
 推送和拉取是 Git 中最常用的两个操作。 若要同步其他人对远程存储库做的更改，必须从这里进行“拉取” 。 在 Visual Studio for Mac 中可通过选择“版本控制”>“更新解决方案”完成。
 
@@ -54,11 +54,11 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
     ![“日志”选项卡](media/version-control-gitLog.png)
 
-* **合并** - 可在提交工作出现合并冲突时使用。 显示更改的可视化表示形式，这些更改是你和其他开发者创建的，使你可以彻底合并代码的两个部分。 
+* **合并** - 可在提交工作出现合并冲突时使用。 显示更改的可视化表示形式，这些更改是你和其他开发者创建的，使你可以彻底合并代码的两个部分。
 
-## <a name="switching-branches"></a>切换分支 
+## <a name="switching-branches"></a>切换分支
 
-默认情况下，存储库中创建的第一个分支称为“主”分支。 主分支和其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
+默认情况下，存储库中创建的第一个分支称为主分支 ****。 主分支和其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
 
 对主分支（或任何其他分支）再进行分支，可形成独立的开发思路。 这为某个时间点的主分支提供了新版本，允许独立于“实时”开发。 使用这种方式的分支通常用于软件开发功能
 
@@ -80,7 +80,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
  ![Solution Pad 中显示的当前分支](media/version-control-gitBranchName.png)
 
-## <a name="reviewing-and-committing"></a>评审并提交 
+## <a name="reviewing-and-committing"></a>评审并提交
 
 若要查看文件的更改，请使用每个文件上的“更改”、“责备”、“记录”和“合并”选项卡，如前文所示。
 
@@ -90,8 +90,12 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 允许通过“还原”、“创建补丁”或“提交”选项查看项目每个文件中的所有更改。
 
-要将文件提交到远程存储库，请按“提交...”，输入提交消息，然后单击“提交”按钮确认：
+要将文件提交到远程存储库，请按“提交”，输入提交消息，然后单击“提交”按钮确认：
 
 ![提交文件](media/version-control-gitCommit.png)
 
 提交更改后，将其推送到远程存储库，以便其他用户查看。
+
+## <a name="see-also"></a>请参阅
+
+* [与 Visual Studio 2017 和 Azure Repos Git 共享代码](/azure/devops/repos/git/share-your-code-in-git-vs-2017)

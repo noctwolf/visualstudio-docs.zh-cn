@@ -11,16 +11,19 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67207d653d7300ecc5d0a7ae7a85ddea1bc0d7e9
-ms.sourcegitcommit: a749c287ec7d54148505978e8ca55ccd406b71ee
+ms.openlocfilehash: e947ec99ff0d63f413e00f5602035a7baa0bd708
+ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2018
-ms.locfileid: "46542489"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51348327"
 ---
 # <a name="sign-in-to-visual-studio"></a>登录 Visual Studio
 
 如果通过登录到 IDE 设置了“个性化”帐户，则可以个性化和优化 Visual Studio 中的开发体验。
+
+> [!NOTE]
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac，请参阅[登录到 Visual Studio for Mac](/visualstudio/mac/signing-in)。
 
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>我为什么应该登录到 Visual Studio？
 
@@ -68,3 +71,5 @@ ms.locfileid: "46542489"
 
 * [如何解锁 Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visual Studio IDE 概述](../ide/visual-studio-ide.md)
+* [登录 (Visual Studio for Mac)](/visualstudio/mac/signing-in)
+* [激活 (Visual Studio for Mac)](/visualstudio/mac/activation)

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: d1907b4905e0acfc5b9c287f385499fabe8333f4
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 74a78c5cb4e9583db1eb99bb6eeb5691cb4adcfd
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224261"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51294235"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>生成和清理项目和解决方案
 
@@ -22,7 +22,7 @@ ms.locfileid: "43224261"
 
 1. 在 Solution Pad 中选择“解决方案”节点：
 
-    ![选择选择“解决方案”节点](media/compiling-and-building-image1.png)
+    ![选择“解决方案”节点](media/compiling-and-building-image1.png)
 
 2. 在菜单栏中选择“生成菜单”，然后选择以下选项之一：
 
@@ -32,17 +32,18 @@ ms.locfileid: "43224261"
     * **全部重新生成** - 清理解决方案然后再生成。
     * **清理全部** - 从解决方案中删除所有生成产品。
 
-
-
 ## <a name="to-build-or-rebuild-a-single-project"></a>生成或重新生成单个项目
 
 1. 在“Solution Pad”中，选择项目。
 
 2. 在菜单栏选择“生成”，然后选择“生成[ProjectName]”、“重新生成[ProjectName]”或“清理[ProjectName]”。
 
-
 ## <a name="to-stop-a-build"></a>停止生成
 
 若要停止生成，请按状态区域中的红色方块：
 
- ![按红色方块停止生成](media/compiling-and-building-image3.png)
+![按红色方块停止生成](media/compiling-and-building-image3.png)
+
+## <a name="see-also"></a>请参阅
+
+- [生成和清除项目和解决方案（Windows 上的 Visual Studio）](/visualstudio/ide/building-and-cleaning-projects-and-solutions-in-visual-studio)

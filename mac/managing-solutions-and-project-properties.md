@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: dbfff9dcb03958ce2a8aa6bd2d2940ee79908dee
-ms.sourcegitcommit: 2597236a481afbaf1ad4915743898ee1aee49760
+ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
+ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "43224372"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51296315"
 ---
 # <a name="managing-project-and-solution-properties"></a>管理项目和解决方案属性
 
@@ -20,9 +20,9 @@ ms.locfileid: "43224372"
 
 若要打开 Visual Studio for Mac 中的项目选项，请双击项目名称，或右键单击以打开上下文菜单，并选择“选项”：
 
- ![上下文菜单中的选项](media/projects-and-solutions-image2.png)
+![上下文菜单中的选项](media/projects-and-solutions-image2.png)
 
-可编辑的选项包括用于生成、运行和设置源代码的选项以及版本控制选项。
+可编辑的选项包括用于生成、运行和设置源代码的选项以及版本控制。
 
 项目选项分为五个不同类别：
 
@@ -34,14 +34,18 @@ ms.locfileid: "43224372"
 
 每个项目都可包含特定项目选项，具体取决于平台。 例如，Xamarin.Android 项目（如下图中所示）具有与 Android 生成相关的选项（如链接器选项）和与应用程序相关的选项（如权限）：
 
- ![Android 项目选项](media/projects-and-solutions-image5.png)
+![Android 项目选项](media/projects-and-solutions-image5.png)
 
 Xamarin.iOS 具有与捆绑签名相关的选项（如要使用的所需预配配置文件）：
 
- ![iOS 项目选项](media/projects-and-solutions-image6.png)
+![iOS 项目选项](media/projects-and-solutions-image6.png)
 
-## <a name="solution-options"></a>解决方案选项 
+## <a name="solution-options"></a>解决方案选项
 
 解决方案选项与项目选项类似，但包括整个解决方案范围。 这些选项提供了设置作者信息、生成设置、代码格式样式和版本控制的方法，也提供了在解决方案中分配启动项目的方法。  可通过“项目”>“解决方案选项”菜单项，或通过 Solution Pad 中“解决方案”上的“选项”上下文菜单项，或通过双击 Solution Pad 中的“解决方案”，来访问解决方案选项对话框：
 
- ![解决方案选项](media/projects-and-solutions-image7.png)
+![解决方案选项](media/projects-and-solutions-image7.png)
+
+## <a name="see-also"></a>请参阅
+
+* [管理项目和解决方案属性（Windows 上的 Visual Studio）](/visualstudio/ide/managing-project-and-solution-properties)
