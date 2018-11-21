@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bdd83cb8b2d20d3e3abcacbb69d50e1a68831ca4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843257"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257337"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，选择**调试** > **附加到进程**或按**Ctrl**+**Alt** +**P** Visual Studio 中，并使用**附加到进程**对话框，可以将调试器附加到进程。
@@ -153,7 +153,7 @@ ms.locfileid: "49843257"
 
 为使调试器附加到用 C++ 编写的代码，该代码需要发出 `DebuggableAttribute`。 可通过链接 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 链接器选项将它自动添加到代码中。
 
-为客户端脚本调试，脚本调试必须启用浏览器中。 对于调试在 Chrome 上的客户端脚本，请选择**Webkit**作为代码类型，并根据你的应用类型，您可能需要在调试模式下启动浏览器 (类型`chrome.exe --remote-debugging-port=9222`从命令行)。
+为客户端脚本调试，脚本调试必须启用浏览器中。 对于调试在 Chrome 上的客户端脚本，请选择**Webkit**作为代码类型，并根据你的应用类型，可能需要关闭所有 Chrome 实例并在调试模式下启动浏览器 (类型`chrome.exe --remote-debugging-port=9222`从命令行)。
 
 若要快速选择正在运行的进程来将附加到，在 Visual Studio 中，键入**Ctrl**+**Alt**+**P**，然后键入的第一个字母进程名称。
 
