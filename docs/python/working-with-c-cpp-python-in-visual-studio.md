@@ -1,7 +1,7 @@
 ---
 title: 使用 C++ 和 Python
 description: 使用 Visual Studio、CPython 和 PyBind11 创建适用于 Python 的 C++ 扩展的演练，包括混合模式调试。
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-python
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: douge
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62c7b202f9cbdbd8610c2a94c1dccbef59b85481
-ms.sourcegitcommit: 6672a1e9d135d7e5cca3cceea07c6fe5a0871475
+ms.openlocfilehash: 237d3dcbe3f6413d2a68f25af3ac6eb6357e3bf8
+ms.sourcegitcommit: f61ad0e8babec8810295f039e67629f4bdebeef0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47443644"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "52001303"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 

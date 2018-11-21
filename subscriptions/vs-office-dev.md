@@ -9,12 +9,12 @@ description: 了解有关 Visual Studio 订阅中包含的 Office 365 开发者�
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: d75c64c3d8902432adde846badabe18a820a16b0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ae195f8e132ab7d92c48a1bbc6ce04f684abe616
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858337"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51758396"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Office 365 开发者订阅权益
 
@@ -28,19 +28,19 @@ ms.locfileid: "49858337"
 
 3. 完成登录过程后，即可看到“订阅权益”页。  如果有多个订阅，则可以单击右上角黑色功能区下的下拉箭头，在订阅之间进行切换。  Office 365 开发者订阅权益磁贴位于“工具”类别中。  使用磁贴行右侧的箭头进行滚动，直到显示 Office 磁贴。
 
-4. 单击权益磁贴底部的“激活”链接。   
+4. 单击权益磁贴底部的“激活”链接。
    > [!div class="mx-imgBorder"]
    > ![Office 365 开发者权益 磁贴](_img/vs-office-dev/vs-office-dev-tile.png)
 
-5. 接下来创建帐户。  系统会显示你的姓名和登录电子邮件地址。  
+5. 接下来创建帐户。  系统会显示你的姓名和登录电子邮件地址。
 6. 选择你所在国家/地区。
-7. 输入公司名称。 
-8. 单击第一个复选框，接受条款和条件。 
+7. 输入公司名称。
+8. 单击第一个复选框，接受条款和条件。
 9. 单击 **“下一步”**。
    > [!div class="mx-imgBorder"]
    > ![Office 365 开发人员注册](_img/vs-office-dev/vs-office-dev-signup.png)
 
-10. 指明首选项和感兴趣的领域，然后单击“激活订阅”。   
+10. 指明首选项和感兴趣的领域，然后单击“激活订阅”。
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员首选项](_img/vs-office-dev/vs-office-dev-preferences.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "49858337"
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员用户名和域](_img/vs-office-dev/vs-office-dev-domain.png)
 
-12. 输入电话号码，然后单击“发送代码”。  这有助于我们确保正在创建帐户的是真实的人。 
+12. 输入电话号码，然后单击“发送代码”。  这有助于我们确保正在创建帐户的是真实的人。
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员电话验证](_img/vs-office-dev/vs-office-dev-send-code.png)
 
@@ -56,13 +56,13 @@ ms.locfileid: "49858337"
     > [!div class="mx-imgBorder"]
     > ![Office 365 开发人员代码验证](_img/vs-office-dev/vs-office-dev-setup.png)
 
-就这么简单！  随即可看到一个页面，其中显示根据你的首选项定制的信息。  
+就这么简单！  随即可看到一个页面，其中显示根据你的首选项定制的信息。
 
 ## <a name="next-steps"></a>后续步骤
+
 若要访问开发人员订阅，请转到 [office.com](https://www.office.com) 并使用刚创建的用户 ID 和密码登录。
 
-若要详细了解 Office 365 开发人员订阅，请查看 [Office 365 开发人员计划 FAQ](https://docs.microsoft.com/office/developer-program/office-365-developer-program-faq)。 
-
+若要详细了解 Office 365 开发人员订阅，请查看 [Office 365 开发人员计划 FAQ](/office/developer-program/office-365-developer-program-faq)。
 
 ## <a name="eligibility"></a>资格
 
@@ -75,13 +75,12 @@ ms.locfileid: "49858337"
 | Visual Studio Dev Essentials | NA  | 不可用 |NA |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。
+<sup>1</sup> 包括：限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务。不包括：Microsoft 合作伙伴网络 (MPN)、Imagine、Microsoft 最有价值专家 (MVP)、区域总监 (RD)。*
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
-
-
 ## <a name="support-resources"></a>支持资源
+
 -  需要关于 Office 开发者订阅的帮助？ 请查看 [Office 开发人员中心](https://developer.microsoft.com/office)上的[支持](https://developer.microsoft.com/office/support)资源。
 -  有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
 -  对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
