@@ -25,14 +25,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ceadd2f131a75e01cec67c21dca0d7837b02738a
-ms.sourcegitcommit: 568bb0b944d16cfe1af624879fa3d3594d020187
+ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45551842"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257158"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger"></a>查看注册值，并使用 Visual Studio 调试器中的寄存器窗口
+# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>查看注册值，并使用 Visual Studio 调试器中的寄存器窗口 (C#，c + +、 Visual Basic 中， F#)
 寄存器窗口是在启用了地址级调试时才可用**选项**对话框中，**调试**节点，**常规**类别。  
   
  **注册**窗口显示寄存器内容。 如果将保留**注册**窗口打开状态，因为单步执行应用程序，可以看到寄存器值发生更改，在代码执行。 最近更改过的值显示为红色。 您可以编辑寄存器的值。 有关详细信息，请参阅[如何： 编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。  

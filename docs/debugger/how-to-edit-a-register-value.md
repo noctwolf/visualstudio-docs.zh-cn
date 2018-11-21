@@ -1,5 +1,5 @@
 ---
-title: 如何： 编辑寄存器值 |Microsoft 文档
+title: 如何： 编辑寄存器值 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
@@ -21,19 +21,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: de743aa67b3875654dee1b13b27a74e208bb6d53
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 0d0337f7c77d1ed601c7a6c13c702f4758cbfdbd
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31474998"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257067"
 ---
-# <a name="how-to-edit-a-register-value"></a>如何：编辑寄存器值
-寄存器窗口是中启用了地址级调试的情况下，才可用**选项**对话框中，**调试**节点。  
+# <a name="how-to-edit-a-register-value-c-c-visual-basic-f"></a>如何： 编辑寄存器值 (C#，c + +、 Visual Basic 中， F#)
+
+寄存器窗口是在启用了地址级调试时才可用**选项**对话框中，**调试**节点。  
   
 ### <a name="to-change-the-value-of-a-register"></a>更改寄存器值  
   
-1.  在**注册**窗口中，使用 TAB 键或鼠标移动插入点移动到你想要更改的值。 在开始键入之前，光标必须位于要覆盖的值之前。  
+1.  在中**注册**窗口中，使用 TAB 键或鼠标，使插入点移动到你想要更改的值。 在开始键入之前，光标必须位于要覆盖的值之前。  
   
 2.  键入新值。  
   

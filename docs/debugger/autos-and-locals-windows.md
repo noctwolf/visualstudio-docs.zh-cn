@@ -16,16 +16,18 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d72a9cd4ad29785884417881324e6d348e03d83
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826700"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257207"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
 **自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。 **自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+
+ **自动**窗口是适用于C#，Visual Basic、 c + + 和 Python 代码，而不是 JavaScript 或F#。
   
 若要打开**自动**窗口中的，调试时，选择**调试** > **Windows** > **自动**，或按**Ctrl**+**Alt**+**V** > **A**。  
 
@@ -71,9 +73,7 @@ ms.locfileid: "51826700"
 
 ![调试位置工具栏](../debugger/media/debuglocationtoolbar.png "调试位置工具栏")
 
-## <a name="bkmk_whatvariables"></a> 自动窗口中的变量
-
- **自动**窗口是可用于C#，Visual Basic 和 c + + 代码，但不适用于 JavaScript 或F#。
+## <a name="bkmk_whatvariables"></a> 自动窗口中的变量 (C#，c + +、 Visual Basic 中，Python)
 
  不同的代码语言显示在不同的变量**自动**窗口。
 

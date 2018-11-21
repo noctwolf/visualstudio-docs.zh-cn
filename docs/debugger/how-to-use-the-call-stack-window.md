@@ -30,23 +30,23 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d138e954ce01af04405b72ce50ab72a76d8cf3
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 264aeeeaac47e30eb08b4320443da15ea48a8601
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348886"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257233"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>查看调用堆栈，并使用调试器中的调用堆栈窗口
 
-通过使用**调用堆栈**窗口中，可以查看当前是在堆栈的函数或过程调用。 **调用堆栈**窗口将显示在其中调用方法和函数获取的顺序。 调用堆栈是检查和了解应用的执行流的好方法。
+通过使用**调用堆栈**窗口中，可以查看当前是在堆栈的函数或过程调用。 “调用堆栈”窗口显示方法和函数被调用的顺序。 调用堆栈是检查和理解应用执行流的好方法。
   
 当[调试符号](#bkmk_symbols)不可用的一部分调用堆栈**调用堆栈**窗口可能不能显示那部分调用堆栈，改为显示正确的信息：  
   
 `[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
 
 > [!NOTE]
-> **调用堆栈**窗口处于类似于调试角度来看一些 Ide，如 Eclipse。 
+> “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图。 
 > 
 > [!NOTE]
 >  显示的对话框和菜单命令可能与此处的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请选择**导入和导出设置**上**工具**菜单。  请参阅[个性化设置 IDE](../ide/personalizing-the-visual-studio-ide.md)。
@@ -103,7 +103,7 @@ ms.locfileid: "51348886"
 
 ![在代码图上显示调用堆栈](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>查看调用堆栈上的一个函数的反汇编代码  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>查看调用堆栈上的一个函数的反汇编代码 (C#，c + +、 Visual Basic 中， F#) 
   
 -   在中**调用堆栈**窗口中，右键单击要查看，并选择其反汇编代码的函数**转到反汇编**。    
 
@@ -111,7 +111,8 @@ ms.locfileid: "51348886"
   
 -   在中右击**调用堆栈**窗口和设置或清除**显示\<** _所需的信息_**>**.  
   
-## <a name="bkmk_symbols"></a> 加载模块的符号
+## <a name="bkmk_symbols"></a> 加载模块的符号 (C#，c + +、 Visual Basic 中， F#)
+
 在中**调用堆栈**窗口中，您可以加载调试符号的当前没有加载的符号的代码。 这些符号可以是.NET Framework 或系统符号从 Microsoft 公共符号服务器下载或正在调试的计算机上的符号路径中的符号。  
   
 请参阅[指定符号 (.pdb) 和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。

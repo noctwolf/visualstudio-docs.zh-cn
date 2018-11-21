@@ -1,7 +1,7 @@
 ---
-title: 如何： 启动 Spy + + |Microsoft 文档
+title: 如何： 启动 Spy + + |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 064a78f9665d2a700a328979b8de169733c09d93
-ms.sourcegitcommit: 3d10b93eb5b326639f3e5c19b9e6a8d1ba078de1
+ms.openlocfilehash: 5e2e5ffabbb560165bd19bb3d52b940a5cc9e858
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31473853"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257156"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
-你可以启动 Spy + + 从 Visual Studio 或命令提示符处。  
+您可以启动 Spy + + 通过 Visual Studio 或命令提示符处。  
   
- 当你启动 Spy + + 中，如果显示一条消息询问权限对计算机进行更改，请单击**是**。  
+ 当你启动 Spy + +，如果显示一条消息询问权更改计算机，请选中**是**。  
   
 > [!NOTE]
->  你可以运行 Spy + + 的一个实例。 如果你尝试运行另一个实例，它只会导致当前正在运行的实例，以获得焦点。  
+>  可以运行 Spy + + 的一个实例。 如果尝试启动第二个实例，它只会导致当前正在运行的实例，若要获取焦点。  
   
-### <a name="to-start-spy-from-visual-studio"></a>若要从 Visual Studio 中启动 Spy + +  
+### <a name="start-spy-from-visual-studio"></a>从 Visual Studio 启动 Spy + +  
   
--   上**工具**菜单上，单击**Spy + +**。  
+上**工具**菜单中，选择**Spy + +**。  
   
-     因为 Spy + + 独立运行，在你开始之后，你可以关闭 Visual Studio。  
+因为 Spy + + 独立地运行在启动后，你可以关闭 Visual Studio。  
   
-    > [!NOTE]
-    >  消息使用 Spy + + 中时，它可能会导致操作系统执行得更慢。  
+> [!NOTE]
+>  当使用 Spy + + 中记录消息时，它可能会导致操作系统执行得更慢。  
   
-### <a name="to-start-spy-at-a-command-prompt"></a>若要在命令提示符处启动 Spy + +  
+### <a name="start-spy-at-a-command-prompt"></a>命令提示符处启动 Spy + +  
   
-1.  在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹中。 通常，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。  
+1.  在命令提示符窗口中，将目录更改到包含 spyxx.exe 的文件夹。 通常情况下，此文件夹的路径是...\\ *Visual Studio 安装文件夹*\Common7\Tools\\。  
   
-2.  类型**spyxx.exe**然后按 ENTER。  
+2.  输入**spyxx.exe**。 
   
 ## <a name="see-also"></a>请参阅  
  [使用 Spy + +](../debugger/using-spy-increment.md)   

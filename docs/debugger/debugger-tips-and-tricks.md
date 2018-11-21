@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e2a9acf315541dcf231d774fdb37e4c82649a4c
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: 072cfcf253bb01687df20a6a0f2d41b71468b90c
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612722"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257350"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 中调试器的工作效率提示和技巧
 
@@ -60,10 +60,10 @@ ms.locfileid: "45612722"
 
 ![将执行指针移至](../debugger/media/dbg-tour-move-the-execution-pointer.gif "将执行指针移动")
 
-通过更改执行流，可以执行某些操作，如测试不同的代码执行路径或重新运行代码，而无需重新启动调试器。
+通过更改执行流，你可以进行测试不同代码执行路径或重新运行代码等操作，而无需重启调试器。
 
 > [!WARNING]
-> 通常需要谨慎使用此功能，并查看工具提示中的警告。 您也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
+> 通常你需要小心使用此功能，工具提示中会出现警告。 你也可能会看到其他警告。 移动指针不能还原到以前的应用程序状态应用程序。
 
 ## <a name="track-an-out-of-scope-object-c-visual-basic"></a>跟踪范围外的对象 （C#、 Visual Basic）
 
@@ -145,7 +145,7 @@ ms.locfileid: "45612722"
 
 有关详细信息，请参阅[网络使用情况](../profiling/network-usage.md)。
 
-## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序
+## <a name="modules_window"></a> 更深入了解如何将调试器附加到您的应用程序 (C#，c + +、 Visual Basic 中， F#)
 
 若要附加到正在运行的应用，调试器将加载为想要调试的应用的确切相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，符号文件的一些知识非常有用。 你可以检查 Visual Studio 将使用的符号文件的加载**模块**窗口。
 

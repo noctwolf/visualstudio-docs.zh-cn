@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 51510d09a1840035bb96817d30aebdcd6bf3ebd7
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 9733569c3fa53d2c5a5905b5b893d16b4eeaf10b
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50671139"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257038"
 ---
-# <a name="view-disassembly-code-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中查看反汇编代码
+# <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中查看反汇编代码 (C#，c + +、 Visual Basic 中， F#)
 
 **反汇编**窗口显示与编译器所创建的指令相对应的汇编代码。 如果你正在调试托管的代码，这些程序集指令对应于在实时 (JIT) 编译器，而非 Microsoft 中间语言 (MSIL) 由 Visual Studio 编译器创建所创建的本机代码。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "50671139"
 
 程序集的说明，除了**反汇编**窗口可以显示如下可选信息：  
   
-- 每条指令所在的内存地址 对于本机应用程序，它是实际的内存地址。 对于 Visual Basic， C#，或托管代码，它是从该函数的开头的偏移量。  
+- 每条指令所在的内存地址 对于本机应用程序，它是实际的内存地址。 对于 Visual Basic 或C#，它是从该函数的开头的偏移量。  
   
 - 程序集代码派生于的源代码。  
   
