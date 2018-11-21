@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d832753b798cc9e476b675f8791c1ab245b3adee
-ms.sourcegitcommit: a34b7d4fdb3872865fcf98ba24a0fced58532adc
+ms.openlocfilehash: ba3da2325750fca655e0de28e13bb13da208963d
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561668"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826773"
 ---
 # <a name="tutorial-learn-to-debug-using-visual-studio"></a>教程：了解如何使用 Visual Studio 进行调试
 
@@ -297,7 +297,7 @@ ms.locfileid: "51561668"
 
     断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
 
-6. 按 F5 或“开始调试”按钮，应用随即启动，调试器将运行到你设置断点的代码行。
+2. 按 F5 或“开始调试”按钮，应用随即启动，调试器将运行到你设置断点的代码行。
 
     ![设置并命中断点](../debugger/media/get-started-set-breakpoint.gif)
 
@@ -325,14 +325,14 @@ ms.locfileid: "51561668"
 
 ## <a name="navigate-code-using-run-to-click"></a>使用“运行时单击”导航代码
 
-5. 在代码编辑器中，向下滚动并将鼠标悬停在 `Triangle` 类中的 `Console.WriteLine` 方法（C++ 中的 `std::cout`）上，直到左侧出现绿色的“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
+1. 在代码编辑器中，向下滚动并将鼠标悬停在 `Triangle` 类中的 `Console.WriteLine` 方法（C++ 中的 `std::cout`）上，直到左侧出现绿色的“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 
      ![使用“运行时单击”功能](../debugger/media/get-started-run-to-click.png "Run to Click")
 
    > [!NOTE]
    > “运行时单击”是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的新增按钮。 如果未看到绿色箭头按钮，请在此示例中改为使用 F11 以使调试器前进到正确的位置。
 
-6. 单击“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
+2. 单击“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 
     使用此按钮类似于设置临时断点。 “运行时单击”对于快速到达应用代码的可见区域十分方便（你可在任何打开的文件中单击）。
 
@@ -447,4 +447,4 @@ ms.locfileid: "51561668"
 在本教程中，你已了解了如何启动调试器、逐步执行代码以及检查变量。 你可能会希望更深入地了解调试器功能以及查看指向更多信息的链接。
 
 > [!div class="nextstepaction"]
-> [调试器提示和技巧](../debugger/debugger-tips-and-tricks.md)
+> [初探调试器](../debugger/debugger-feature-tour.md)
