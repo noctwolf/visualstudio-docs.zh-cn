@@ -11,9 +11,9 @@ items:
   items:
   - name: 初探调试器
     href: debugger-feature-tour.md
-  - name: 调试托管应用
+  - name: 调试 C# 或 Visual Basic 应用
     href: quickstart-debug-with-managed.md
-  - name: 调试本机应用
+  - name: 调试 C++ 应用
     href: quickstart-debug-with-cplusplus.md
   - name: 调试 ASP.NET 应用
     href: quickstart-debug-aspnet.md
@@ -25,7 +25,7 @@ items:
     href: ../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md
   - name: 调试实时 Azure 应用
     href: debug-live-azure-applications.md
-  - name: 调试托管和本机代码
+  - name: 调试 C# 和 C++ 代码
     href: how-to-debug-managed-and-native-code.md
   - name: 检查上一应用状态
     href: view-historical-application-state.md
@@ -105,7 +105,7 @@ items:
       items:
       - name: 使用“编辑并继续”(C#)
         href: how-to-use-edit-and-continue-csharp.md
-      - name: 受支持的代码更改 (C#)
+      - name: 受支持的代码更改
         href: supported-code-changes-csharp.md
     - name: 编辑并继续 (Visual Basic)
       href: edit-and-continue-visual-basic.md
@@ -836,9 +836,9 @@ items:
   items:
   - name: Visual Studio 中调试器的新增功能
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: fb63e23cce50cd7d326bb11d39628f63e8bf6a2f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: 29484ea5dc8ae51635465810c13fdf7d28399589
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770471"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257402"
