@@ -29,12 +29,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: baddf87e24efc48ea597e44c52abcee5e5bdcfad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
+ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49829633"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281844"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "49829633"
 ## <a name="two-stage-updates"></a>两阶段更新  
  更新数据源是一个两步过程。 第一步是使用新记录、 已更改的记录或已删除的记录更新该数据集。 如果你的应用程序永远不会将这些更改发送回数据源，您已完成的更新。  
   
- 如果执行操作将更改发送回数据库，则需要第二个步骤。 如果不使用数据绑定控件，然后您需要手动调用 Update 方法的同一 TableAdapter （或数据适配器），用于填充数据集。 但是，若要将数据从一个数据源移到另一个，或更新多个数据源，还可以使用不同的适配器，例如。 如果不使用数据绑定，并且保存相关表的更改，您必须手动实例化自动生成 TableAdapterManager 类的变量，然后调用其 UdpateAll 方法。  
+ 如果执行操作将更改发送回数据库，则需要第二个步骤。 如果不使用数据绑定控件，然后您需要手动调用 Update 方法的同一 TableAdapter （或数据适配器），用于填充数据集。 但是，若要将数据从一个数据源移到另一个，或更新多个数据源，还可以使用不同的适配器，例如。 如果不使用数据绑定，并且保存相关表的更改，您必须手动实例化自动生成 TableAdapterManager 类的变量，然后调用其 UpdateAll 方法。  
   
  ![Visual Basic 数据集更新](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
 两阶段更新过程，并在成功的更新中 DataRowVersion 的角色  
