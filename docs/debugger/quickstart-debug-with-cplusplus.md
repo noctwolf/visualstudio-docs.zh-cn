@@ -78,7 +78,6 @@ Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应
 
 一个*断点*是一种标记，指示 Visual Studio 应在其中挂起你正在运行的代码，使您可以查看变量的值或内存的行为，或某部分代码是否运行。 这是调试中最基本的功能。
 
-
 1. 若要设置断点，请单击`doWork`函数调用左侧的滚动条 (或选择代码行并按**F9**)。
 
     ![设置断点](../debugger/media/dbg-qs-set-breakpoint.png "设置断点")
@@ -104,13 +103,11 @@ Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应
 
 应用程序继续执行，调用`doWork`，并在单击该按钮的位置的代码行上暂停。
 
-
 用于单步执行代码的常用键盘命令包括**F10**和**F11**。 有关更深入的说明，请参阅初学者指南](../debugger/getting-started-with-the-debugger.md)。
 
 ## <a name="inspect-variables-in-a-datatip"></a>检查数据提示中的变量
 
 1. 在当前代码行中（由黄色执行指针标记），用鼠标将鼠标悬停在`c1`对象上以显示数据提示。
-
 
     ![查看数据提示](../debugger/media/dbg-qs-data-tip.png "查看数据提示")
 
@@ -120,7 +117,6 @@ Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应
 2. 展开数据提示以查看`c1`对象的当前属性值。
 
 3. 如果要固定数据提示以便在执行代码时可以继续查看`c1`的值，请单击小图钉图标。 （您可以将固定的数据提示移动到方便的位置。）
-
 
 ## <a name="edit-code-and-continue-debugging"></a>编辑代码并继续调试
 
@@ -133,7 +129,6 @@ Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应
     ![编辑并继续](../debugger/media/dbg-qs-edit-and-continue.gif "编辑并继续")
 
     **F10**一次向调试器推进一个语句，但是跳过函数而不是单步执行它们（跳过的代码仍然执行）。
-
 
 有关使用编辑 - 继续和功能限制的详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
 
