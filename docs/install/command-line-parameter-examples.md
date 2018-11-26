@@ -1,7 +1,7 @@
 ---
 title: Visual Studio 安装的命令行参数示例
 description: 自定义这些示例，以创建自己的 Visual Studio 命令行安装。
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -11,12 +11,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd3c7a5b191ee74005eb79da0767223ca43de08
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b40b228ce04a83622f739d22b15c9ab126aade3f
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895478"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51803807"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-2017-installation"></a>Visual Studio 2017 安装命令行参数示例
 
@@ -128,6 +128,39 @@ ms.locfileid: "49895478"
 * 仅使用安装路径：
 
   `vs_enterprise.exe --add Microsoft.VisualStudio.Workload.CoreEditor --path install="C:\VS"`
+
+## <a name="using-export"></a>使用 export
+
+此命令行命令是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+
+* 使用 export 保存安装中的选择：
+
+```cmd
+vs_enterprise.exe export --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
+* 使用 export 从头开始保存自定义选择：
+
+```cmd
+vs_enterprise.exe export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
+```
+
+## <a name="using---config"></a>使用 --config
+
+此命令行参数是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+
+* 使用 --config 从以前保存的安装配置文件安装工作负载和组件：
+
+```cmd
+vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
+```
+
+* 使用 --config 向现有安装添加工作负载和组件：
+
+```cmd
+vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
+```
+
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

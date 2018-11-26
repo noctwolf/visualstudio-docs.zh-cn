@@ -9,12 +9,12 @@ description: 如果别名或友好名称已被使用，登录可能会失败
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 48faa1ce2e002b6a21c3e467db627d9c08bec2e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3743cc11d5001d12ba4cd030ddc0cfc914db3131
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49854463"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51817433"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 
@@ -24,7 +24,7 @@ ms.locfileid: "49854463"
 
 “别名”一词是指具有不同身份的用户登录 Windows（或 Active Directory）并访问电子邮件。
 
-当公司为其目录登录（例如 JohnD@contoso.com）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如 John.Doe@contoso.com）访问其电子邮件帐户。  对于通过批量许可服务中心 (VLSC) 管理其订阅的许多客户来说，由于提供的电子邮件地址 (John.Doe@contoso.com) 与通过“工作或学校帐户”选项成功进行身份认证所需的目录地址 (JohnD@contoso.com) 不匹配，这种做法可能会导致登录失败。
+当公司为其目录登录（例如 JohnD@contoso.com）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如 John.Doe@contoso.com）访问其电子邮件帐户。 对于通过批量许可服务中心 (VLSC) 管理其订阅的许多客户来说，由于提供的电子邮件地址 (John.Doe@contoso.com) 与通过“工作或学校帐户”选项成功进行身份认证所需的目录地址 (JohnD@contoso.com) 不匹配，这种做法可能会导致登录失败。
 
 ## <a name="as-an-administrator-what-options-do-i-have"></a>作为管理员，有哪些选项可供我选择？
 
@@ -33,15 +33,15 @@ ms.locfileid: "49854463"
 - 第二种选项（较不安全）是允许订阅者将他们的“工作或学校”电子邮件地址与“个人”帐户（又名： Microsoft 帐户或 MSA）关联。 有关详细信息，请参阅本文[将工作或学校帐户定义为个人帐户](#defining-a-work-or-school-account-as-a-personal-account )部分。
 
 > [!NOTE]
-> 公司迁移到新的 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)后，你将能够利用新的管理体验，可将目录和电子邮件地址作为订阅者个人资料的一部分提供。  详细了解此[迁移](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
+> 公司迁移到新的 Visual Studio 订阅[管理门户](https://manage.visualstudio.com)后，你将能够利用新的管理体验，可将目录和电子邮件地址作为订阅者个人资料的一部分提供。 详细了解此[迁移](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details)。
 
 ## <a name="as-a-subscriber-what-options-do-i-have"></a>作为订阅者，有哪些选项可供我选择？
 
-从订阅者的角度来看，首先与管理员配合来了解贵公司的标识配置非常重要。  如有必要，管理员必须从其管理门户更新你的帐户设置，或者你需要使用公司电子邮件地址创建 Microsoft 帐户 (MSA)。  在采取措施创建 MSA 之前，请先与你的管理员讨论采取此操作的任何策略或问题。  有关详细信息，请参阅本文[将工作或学校帐户定义为个人帐户](#defining-a-work-or-school-account-as-a-personal-account )部分。
+从订阅者的角度来看，首先与管理员配合来了解贵公司的标识配置非常重要。 如有必要，管理员必须从其管理门户更新你的帐户设置，或者你需要使用公司电子邮件地址创建 Microsoft 帐户 (MSA)。 在采取措施创建 MSA 之前，请先与你的管理员讨论采取此操作的任何策略或问题。 有关详细信息，请参阅本文[将工作或学校帐户定义为个人帐户](#defining-a-work-or-school-account-as-a-personal-account)部分。
 
 ## <a name="assigning-subscribers-to-a-directory-account"></a>将订阅者分配到目录帐户
 
-在所有情况下，批量许可服务中心 (VLSC) 内的订阅管理器将需要使用新订阅者的目录地址，或更新“现有”订阅者的电子邮件地址。  请注意，使用目录地址将意味着所有新的订阅者都不会收到欢迎电子邮件，管理员将需要通知订阅者订阅已分配给他们。  按照以下步骤操作之后，还可以随时使用电子邮件[模板](#notifying-your-subscribers-with-directory-addresses)通知订阅者，并帮助他们完成登录过程。
+在所有情况下，批量许可服务中心 (VLSC) 内的订阅管理器将需要使用新订阅者的目录地址，或更新“现有”订阅者的电子邮件地址。 请注意，使用目录地址将意味着所有新的订阅者都不会收到欢迎电子邮件，管理员将需要通知订阅者订阅已分配给他们。 按照以下步骤操作之后，还可以随时使用电子邮件[模板](#notifying-your-subscribers-with-directory-addresses)通知订阅者，并帮助他们完成登录过程。
 
 ### <a name="adding-new-subscribers"></a>添加新订阅者
 
@@ -88,7 +88,7 @@ ms.locfileid: "49854463"
 
 %SUBSCRIBER NAME% 你好
 
-已向你分配 Visual Studio 订阅。  请访问 https://my.visualstudio.com，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。
+已向你分配 Visual Studio 订阅。 请访问 https://my.visualstudio.com，并使用 %DIRECTORY ADDRESS% 地址登录，以激活和访问你的订阅。
 
 如果遇到问题，请联系支持团队 (https://visualstudio.microsoft.com/subscriptions/support/))。
 
@@ -99,8 +99,6 @@ ms.locfileid: "49854463"
    - 选择所需的辅助支持选项
 
 ----------- 结束复制 -----------
-
-
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>将工作或学校帐户定义为个人帐户
 

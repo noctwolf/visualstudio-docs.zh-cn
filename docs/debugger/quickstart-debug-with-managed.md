@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ba06156a8fa44a61b489deba6104673e8fb08ce
-ms.sourcegitcommit: 06db1892fff22572f0b0a11994dc547c2b7e2a48
+ms.openlocfilehash: e35d102a30ffc7b80d39f359542bbdc4c00feff6
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39637518"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257181"
 ---
-# <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试程器调试托管代码
+# <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
 Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 本主题提供了一种快速了解部分基本功能的方法。
 
@@ -147,7 +147,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
 在断点处暂停时，将鼠标悬停在 `c1.AddLast(20)` 语句上，直至绿色的“运行到单击处”按钮 ![运行到单击处](../debugger/media/dbg-tour-run-to-click.png "RunToClick") 出现，然后按“运行到单击处”按钮。
 
-![运行到单击处](../debugger/media/dbg-qs-run-to-click-csharp.png "Run to click")
+![运行到单击处](../debugger/media/dbg-qs-run-to-click-csharp.png "Run to Click")
 
 应用将继续执行，调用 `doWork`，并于你在其中单击按钮的代码行上暂停。
 

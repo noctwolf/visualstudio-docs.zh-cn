@@ -1,7 +1,7 @@
 ---
-title: 分析 Visual Studio 中的 CPU 使用率 | Microsoft Docs
+title: 分析 Visual Studio 中的 CPU 使用情况 | Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 11/04/2016
+ms.date: 11/04/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -10,105 +10,106 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f63e4f43db3f8c4b24b43bda02cf00b52befc94
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1129d5574903db1d658b8521c920d7858c2dfe1c
+ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842178"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51948915"
 ---
-# <a name="analyze-cpu-usage"></a>分析 CPU 使用情况
-如需调查应用中的性能问题，最好从了解其使用 CPU 的方式开始。 **CPU 使用率** 工具可显示 CPU 耗用时间执行 Visual C++、Visual C#/Visual Basic 和 JavaScript 代码的位置。 从 Visual Studio 2015 Update 1 开始，不离开调试器即可查看每个函数的 CPU 使用率细目。 可以在调试时打开和关闭 CPU 分析，并在停止执行时（例如在断点处）查看结果。  
-  
-有多个选项可用于运行和管理诊断会话。 例如，你可以在本地或远程计算机上或在模拟器或仿真程序中运行“CPU 使用率”  工具。 可以分析在 Visual Studio（附加在运行的应用上）中打开的项目的性能，或启动从 Microsoft 官方商城安装的应用。 有关详细信息，请参阅[运行带/不带调试程序的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 
+# <a name="analyze-cpu-usage"></a>分析 CPU 使用情况 
 
-在这里，我们将向你演示如何使用发行版本收集和分析 CPU 使用率。 若要在调试时分析 CPU 使用情况，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。
+开始调查应用中的性能问题的好方法之一是了解其 CPU 使用情况。 “CPU 使用情况”性能工具显示 C++、C#/Visual Basic 以及 JavaScript 应用中执行代码所花费的 CPU 时间和百分比。 
 
-要使用本文中所述的分析工具（即[性能探查器](../profiling/profiling-feature-tour.md)），需具备 Windows 7 或更高版本。
+“CPU 使用情况”工具可以在打开的 Visual Studio 项目、在已安装的 Microsoft Store 应用上运行，也可以附加到正在运行的应用或进程。 可以在本地或远程计算机运行该工具，也可以在模拟器或仿真器上运行该工具。 有关详细信息，请参阅[运行带或不带调试器的分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。 
+
+无论是否进行调试，都可以运行“CPU 使用情况”工具。 在调试器中，可以打开和关闭 CPU 分析，并查看 CPU 使用情况的每个细分功能。 可以在暂停执行时（例如在断点处）查看 CPU 使用情况结果。  
+
+以下说明介绍如何使用不带调试器的“CPU 使用情况”工具以及 Visual Studio“性能探查器”。 示例使用本地计算机上的发布版本。 发布版本提供了实际应用性能的最佳视图。 要使用调试版本分析 CPU 使用情况，请参阅[性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)。
+
+通常，本地计算机最好复制已安装的应用执行。 对于 Windows Phone 应用，直接从设备收集数据这种方式提供的数据最准确。 要从远程设备收集数据，请直接在该设备上运行应用，而不通过使用远程桌面连接运行。 
+
+>[!NOTE]
+>需要 Windows 7 或更高版本才能使用[性能探查器](../profiling/profiling-feature-tour.md)。
   
 ##  <a name="collect-cpu-usage-data"></a>收集 CPU 使用量数据  
   
-1. 在 Visual Studio 中，将解决方案配置设置为“零售”  ，然后选择部署目标。  
+1. 在 Visual Studio 项目中，将解决方案配置设置为“发布”，然后选择“本地计算机”作为部署目标。  
   
-    ![选择发布和本地计算机](../profiling/media/cpuuse_selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
+    ![选择“发布”和“本地计算机”](../profiling/media/cpuuse_selectreleaselocalmachine.png "Select Release and Local Machine")  
   
-   -   在“发布”  模式下运行应用能更清晰地看到实际的应用性能。  
+1. 选择“调试” > “性能探查器”。  
   
-   -   在本地计算机上运行应用可最佳复制安装的应用的执行过程。  
+1. 在“可用工具”下，选择“CPU 使用情况”，然后选择“启动”。  
   
-   -   如果从远程设备收集数据，则可直接在该设备上运行应用，而不通过使用远程桌面连接运行。  
+    ![选择“CPU 使用情况”](../profiling/media/cpuuse_lib_choosecpuusage.png "Select CPU Usage")  
   
-   -   对于 Windows Phone 应用，直接从“设备”  收集数据这种方式提供的数据最准确。  
+4. 应用启动后，诊断会话即会开始，并显示 CPU 使用情况数据。 完成收集数据后，选择“停止收集”。  
   
-2. 在“调试”菜单上，选择“性能探查器”。  
-  
-3. 选择“CPU 使用率”  ，然后选择“启动” 。  
-  
-    ![选择 CPU 使用率](../profiling/media/cpuuse_lib_choosecpuusage.png "CPUUSE_LIB_ChooseCpuUsage")  
-  
-4. 启动应用时，单击“获取最大数” 。 显示输出后等待约 1 秒时间，然后选择“获取最大数，异步” 。 在单击按钮之间进行停顿有助于更轻松地隔离诊断报告中的按钮单击例程。  
-  
-5. 在第二个输出行显示之后，在性能和诊断中心中选择 **“停止收集”** 。  
-  
-   ![停止 CpuUsage 数据收集](../profiling/media/cpu_use_wt_stopcollection.png "CPU_USE_WT_StopCollection")  
+   ![停止 CPU 使用情况数据收集](../profiling/media/cpu_use_wt_stopcollection.png "Stop CPU Usage data collection")  
   
    CPU 使用量工具可分析数据并显示报告。  
   
-   ![CpuUsage 报告](../profiling/media/cpu_use_wt_report.png "CPU_USE_WT_Report")  
+   ![CPU 使用量报表](../profiling/media/cpu_use_wt_report.png "CPU Usage report")  
   
-## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用情况报告  
+
+## <a name="analyze-the-cpu-usage-report"></a>分析 CPU 使用量报告  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树  
- 若要开始了解调用关系树的信息，重新选择 `GetMaxNumberButton_Click` 段，查看调用关系树的详细信息。  
+诊断报表按“CPU 总量”从最高到最低进行排序。 通过选择列标题更改排序顺序或排序列。 使用“筛选器”下拉列表以选择或取消选择要显示的线程，并使用“搜索”框搜索特定线程或节点。 
+
+###  <a name="BKMK_Call_tree_data_columns"></a> CPU 使用情况数据列  
+
+|||  
+|-|-|  
+|CPU 总量 [单位，以百分数计算]|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 调用函数所使用的毫秒数和 CPU 百分比，以及函数在所选时间范围内调用的函数。 这与“CPU 利用率”时间线图不同，后者是将时间范围内的 CPU 总活动量与可用 CPU 总量进行比较。|  
+|自 CPU [单位，以百分数计算]|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 在所选时间范围内调用函数所使用的毫秒数和 CPU 百分比，不包括函数调用的函数。|  
+|**模块**|包含函数的模块的名称。   
+  
+###  <a name="BKMK_The_CPU_Usage_call_tree"></a> CPU 使用率调用关系树 
+
+要查看调用关系树，请选择报表中的父节点。 “CPU 使用情况”页面将打开“调用方/被调用方”视图。 在“当前视图”下拉列表中，选择“调用树”。  
   
 ####  <a name="BKMK_Call_tree_structure"></a>调用关系树结构  
- ![GetMaxNumberButton_Click 调用关系树](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
+
+ ![调用树结构](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Call tree structure")  
   
 |||  
 |-|-|  
-|![第 1 步](../profiling/media/procguid_1.png "ProcGuid_1")|CPU 使用量调用关系树中的顶级节点是一个伪节点|  
-|![第 2 步](../profiling/media/procguid_2.png "ProcGuid_2")|在大多数应用中，当禁用 **“显示外部代码”** 选项时，二级节点是 **[外部代码]** 节点，该节点包含系统和框架代码，它可以启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级服务。|  
+|![第 1 步](../profiling/media/procguid_1.png "ProcGuid_1")|CPU 使用情况调用树中的顶级节点是一个伪节点。|  
+|![第 2 步](../profiling/media/procguid_2.png "ProcGuid_2")|在大多数应用中，当“显示外部代码”选项处于禁用状态时，第二级别节点就是“[外部代码]”节点。 该节点包含启动和停止应用、绘制 UI、控制线程计划以及向应用提供其他低级别服务的系统和框架代码。|  
 |![第 3 步](../profiling/media/procguid_3.png "ProcGuid_3")|二级节点的子级为用户代码方法和异步例程，它们由二级系统和框架代码进行调用或创建。|  
-|![第 4 步](../profiling/media/procguid_4.png "ProcGuid_4")|方法的子节点仅包含用于父方法调用的数据。 禁用“显示外部代码”  后，应用方法只能包含 **[外部代码]** 节点。|  
+|![第 4 步](../profiling/media/procguid_4.png "ProcGuid_4")|方法的子节点仅有父方法调用的数据。 禁用“显示外部代码”  后，应用方法只能包含 **[外部代码]** 节点。|  
   
 ####  <a name="BKMK_External_Code"></a> 外部代码  
- 外部代码是你编写的代码执行的系统和框架组件中的函数。 外部代码包含函数，可启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用率调用关系树可将用户方法的外部函数收集到一个[外部代码]节点中。  
+
+ 由代码执行的系统和框架函数称为“外部代码”。 外部代码函数启动和停止应用、绘制 UI、控制线程以及向应用提供其他低级别服务。 在大多数情况下，你不会对外部代码感兴趣，因此 CPU 使用情况调用树可将用户方法的外部函数收集到一个“[外部代码]”节点中。  
   
- 若要查看外部代码的调用路径，请从 **“筛选器视图”** 列表中选择 **“显示外部代码”** ，然后选择 **“应用”**。  
+ 要查看外部代码的调用路径，请在主诊断报表页面上的“筛选器”下拉列表中选择“显示外部代码”，然后选择“应用”。 “CPU 使用情况”页面的“调用树”视图随即展开外部代码调用。  
   
- ![选择“筛选器视图”，然后选择“显示外部代码”](../profiling/media/cpu_use_wt_filterview.png "CPU_USE_WT_FilterView")  
+ ![显示外部代码](../profiling/media/cpu_use_wt_filterview.png "Show External Code")  
   
- 请注意，许多外部代码调用链已深度嵌套，因此函数名列的宽度可能超过所有计算机监视器（最大的计算机监视器除外）的显示宽度。 发生这种情况时，函数名将显示为 […]：  
+ 许多外部代码调用链都是深度嵌套的，因此链的宽度可能超过“函数名”列的显示宽度。 函数名则显示为“...”。  
   
- ![在调用关系树中嵌套外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "CPU_USE_WT_ShowExternalCodeTooWide")  
+ ![调用树中嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Nested external code in the call tree")  
   
- 使用搜索框以找到你正在查找的节点，然后使用水平滚动条以使数据在视图中显示：  
+ 要查找所需的函数名称，请使用搜索框。 将鼠标悬停在所选行上或使用水平滚动条来查看数据。  
   
- ![搜索嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
-  
-###  <a name="BKMK_Call_tree_data_columns"></a>调用关系树数据列  
-  
-|||  
-|-|-|  
-|**总 CPU (%)**|![总数据量 % 等式](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> 所选时间范围内应用的 CPU 活动百分比（函数调用和函数调用的函数使用的）。 请注意，这不同于“CPU 利用率”  时间线图，后者是将时间范围内的应用总活动量与可用的 CPU 总容量相比较。|  
-|**自测 CPU (%)**|![自测 % 等式](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> 所选时间范围内应用的 CPU 活动百分比（函数调用使用，不包括函数调用的函数活动）。|  
-|**总 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用函数所耗用的毫秒数。|  
-|**自 CPU(毫秒)**|所选时间范围内函数调用以及该函数调用的函数所耗用的毫秒数，不包括该函数调用的函数的活动。|  
-|**模块**|包含函数的模块的名称或包含 [外部代码] 节点中的函数的模块数。|  
+ ![搜索嵌套的外部代码](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")  
   
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> CPU 使用情况调用树中的异步函数  
- 当编译器遇到异步方法时，它会创建一个隐藏的类来控制方法的执行。 从概念上讲，此类是状态机，其中列出了编译器生成的函数（以异步方式调用原始方法的操作），以及正确执行它们所需的回调、计划程序和迭代器。 当由父方法调用原始方法时，运行时将从父方法的执行上下文中删除该原始方法，并且在控制应用执行的系统上下文和框架代码中运行隐藏类的方法。 异步方法通常（但不总是）在一个或多个不同线程上执行。 此代码将显示在 CPU 使用率调用关系树中，作为树的顶层节点正下方的 **[外部代码]** 节点的子级。  
+
+ 当编译器遇到异步方法时，它会创建一个隐藏的类来控制方法的执行。 从概念上讲，此类是状态机。 该类具有编译器生成的异步调用原始方法以及运行其所需的回调、计划程序和迭代器的函数。 当父方法调用原始方法时，编译器将从父方法的执行上下文中删除该方法，并在控制应用执行的系统和框架代码的上下文中运行隐藏的类方法。 异步方法通常（但不总是）在一个或多个不同线程上执行。 此代码在“CPU 使用情况”调用树中显示为“[外部代码]”节点的子节点，位于树的顶部节点下面。  
+
+在以下示例中，“[外部代码]”下方的前两个节点是编译器生成的状态机类的方法。 第三个节点是对原始方法的调用。 
   
- 若要在我们的示例中查看该示例，请在时间线中重新选择 `GetMaxNumberAsyncButton_Click` 段。  
+![异步节点](media/cpu_use_wt_getmaxnumberasync_selected.png "Asynchronous node")  
+
+展开生成的方法，以显示正在进行的操作：
+
+![展开异步节点](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "Expanded asynchronous node")  
+
+- `MainPage::GetMaxNumberAsyncButton_Click` 只管理任务值列表、计算结果最大值以及显示输出。
   
- ![GetMaxNumberAsyncButton_Click 报告选定内容](../profiling/media/cpu_use_wt_getmaxnumberasync_selected.png "CPU_USE_WT_GetMaxNumberAsync_Selected")  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 显示用于计划和启动 48 个任务所需的活动，这些任务将包装对 `GetNumberAsync`的调用。
   
- **[外部代码]** 下方的前两个节点是状态机类的编译器生成的方法。 第三个节点是对原始方法的调用。 通过展开生成的方法，可显示当前进行的操作。  
-  
- ![展开的 GetMaxNumberAsyncButton_Click 调用关系树](../profiling/media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
-  
--   `MainPage::GetMaxNumberAsyncButton_Click` 执行的内容很少；主要管理任务值列表、计算结果最大值以及显示输出。  
-  
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` 显示用于计划和启动 48 个任务所需的活动，这些任务将包装对 `GetNumberAsync`的调用。  
-  
--   `MainPage::<GetNumberAsync>b__b` 显示调用 `GetNumber`的任务的活动。
+- `MainPage::<GetNumberAsync>b__b` 显示调用 `GetNumber` 的任务的活动。

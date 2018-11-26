@@ -13,38 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc5961e2565c8618ad0f34a8c58d149e4a82c935
-ms.sourcegitcommit: 401be39a42ffe007593528b5bba62583ca9fcafd
+ms.openlocfilehash: de90947f175905ec89955298dc2b4b52af8ffbd4
+ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50244445"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51826799"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
-Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。 本文重点介绍 Visual Studio 2017 的 Windows 版本。
-
-Visual Studio 2017 有三个版本：Community、Professional 和 Enterprise。 请参阅[比较 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)，了解各个版本支持哪些功能。
-
-本概述文章介绍了 IDE 的基本功能。 文中将演示一些可使用 Visual Studio 完成的操作，包括创建简单项目、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 我们还将介绍各种工具窗口。
-
-## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
-
-首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
-
-通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
-
-![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/dotnet-core-cross-platform-workload.png)
-
-首次启动 Visual Studio 时，可选择使用 Microsoft 帐户或者工作或学校帐户[登录](signing-in-to-visual-studio.md)。
-
-## <a name="tour-of-the-ide"></a>IDE 教程
-
-为了向你提供有关 Visual Studio 的高级直观概览，下图显示了在 Visual Studio 中打开的一个项目，以及将可能用到的几个关键工具窗口：
-
 ![Visual Studio IDE](../ide/media/visualstudioide.png)
+
+此图像显示 Visual Studio 具有一个打开的项目和若干可能会使用的关键工具窗口：
 
 - 可通过[解决方案资源管理器](../ide/solutions-and-projects-in-visual-studio.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](quickstart-projects-solutions.md)，从而帮助整理代码。
 
@@ -54,7 +36,13 @@ Visual Studio 2017 有三个版本：Community、Professional 和 Enterprise。 
 
 - 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts)），[团队资源管理器](/azure/devops/user-guide/work-team-explorer?view=vsts)（右下方）可让你跟踪工作项并与他人共享代码。
 
-### <a name="popular-productivity-features"></a>高效性方面的常用功能
+## <a name="editions"></a>版本
+
+Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2017 相同，并针对开发跨平台应用和移动应用进行了优化。 本文重点介绍 Visual Studio 2017 的 Windows 版本。
+
+Visual Studio 2017 有三个版本：Community、Professional 和 Enterprise。 请参阅[比较 Visual Studio 2017 IDE](https://visualstudio.microsoft.com/vs/compare/)，了解各个版本支持哪些功能。
+
+## <a name="popular-productivity-features"></a>高效性方面的常用功能
 
 Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作效率，这些功能包括：
 
@@ -106,9 +94,19 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    ![查看定义](../ide/media/peek-definition.png)
 
+## <a name="install-the-visual-studio-ide"></a>安装 Visual Studio IDE
+
+这篇概述性文章将演示创建一个简单项目以及尝试使用 Visual Studio 执行的一些操作，例如更改颜色主题、使用 [IntelliSense](using-intellisense.md) 辅助编码以及调试应用，以便在程序执行过程中查看变量的值。 首先，请[下载 Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 并将其安装到系统上。
+
+通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+
+![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负载](../ide/media/dotnet-core-cross-platform-workload.png)
+
+首次启动 Visual Studio 时，可选择使用 Microsoft 帐户或者工作或学校帐户[登录](signing-in-to-visual-studio.md)。
+
 ## <a name="create-a-program"></a>创建程序
 
-现在我们来深入了解并创建一个简单的新程序。
+现在我们来深入了解并创建一个简单的程序。
 
 1. 打开 Visual Studio。 在菜单上，依次选择“文件” > “新建” > “项目”。
 

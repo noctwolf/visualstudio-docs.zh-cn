@@ -16,14 +16,14 @@ manager: douge
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 121584611dcf0f25fa1f32a616253ecdecf04332
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: dc115cc833bbf50e8f6ae1f1e3207d3acfd6b2d1
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295756"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257272"
 ---
-# <a name="tutorial-debug-managed-and-native-code-in-the-same-debugging-session"></a>教程：调试同一调试会话中的托管代码和本机代码
+# <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
 Visual Studio 允许你在调试会话中启用多个调试器类型，这名为混合模式调试。 在本教程中，将了解如何在单一调试会话中调试托管代码和本机代码。 
 

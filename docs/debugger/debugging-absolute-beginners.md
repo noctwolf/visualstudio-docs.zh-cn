@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c10032bf12060c8c5e42f93f6596fe576adfccf
-ms.sourcegitcommit: 7bb0225e1fd45999ce09e0b49c2cfae515c27e11
+ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
+ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45612670"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52257363"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -80,7 +80,7 @@ ms.locfileid: "45612670"
 
 1. 必须已安装 Visual Studio 以及“NET 桌面开发”工作负载或“.NET Core 跨平台开发”工作负载，具体取决于要创建的应用类型。
 
-    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)页免费安装。
+    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) 页免费安装。
 
     如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”（或“.NET Core 跨平台开发”）工作负载，然后选择“修改”。
 
@@ -325,11 +325,11 @@ ms.locfileid: "45612670"
 * 检查应用程序是否正在执行预期的代码。 （例如，在示例应用程序中，我们预期 switch 语句的代码将星系类型设置为不规则，但是由于拼写错误，应用跳过了代码。）
 
 > [!TIP]
-> 使用调试程序来帮助查找 bug。 仅在知道代码含义的情况下，调试工具才能查找 bug。 如果你（开发人员）表达了该含义，则工具只能知道代码的含义。 编写[单元测试](../test/improve-code-quality.md)就是这样做的。
+> 使用调试程序来帮助查找 bug。 仅在知道代码含义的情况下，调试工具才能查找 bug。 如果你（开发人员）表达了该含义，则工具只能知道代码的含义。 编写[单元测试](../test/improve-code-quality.md)就是这样做的。 
 
 ## <a name="next-steps"></a>后续步骤
 
-在本文中，你已了解一些常规的调试概念。 接下来，可以开始学习如何使用 Visual Studio 进行调试。
+在本文中，你已了解一些常规的调试概念。 接下来可以开始了解有关调试器的更多信息。
 
 > [!div class="nextstepaction"]
 > [了解如何使用 Visual Studio 进行调试](../debugger/getting-started-with-the-debugger.md)
