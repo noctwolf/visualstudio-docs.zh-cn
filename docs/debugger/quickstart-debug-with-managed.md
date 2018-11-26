@@ -31,7 +31,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 2. 在“Visual C#”或“Visual Basic”下选择“.NET Core”，然后在中间窗格中选择“控制台应用(.NET Core)”。
 
      如果没有看到“控制台应用(.NET Core)”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”和“.NET Core”工作负载，然后选择“修改”。
-
+     
 3. 键入名称（例如“MyDbgApp”），单击“确定”。
 
     Visual Studio 随即创建项目。
@@ -122,7 +122,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
     ```
 
     > [!NOTE]
-    > 在 Visual Basic 中，确保将启动对象设置为 `Sub Main`（“属性”>“应用程序”>“启动对象”）。
+    > 在 Visual Basic 中，确保将启动对象设置为 `Sub Main`（“属性”>“应用程序”>“启动对象”）
 
 ## <a name="set-a-breakpoint"></a>设置断点
 
