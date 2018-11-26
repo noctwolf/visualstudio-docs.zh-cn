@@ -22,7 +22,6 @@ ms.locfileid: "39637518"
 ---
 # <a name="quickstart-debug-with-managed-code-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试托管代码
 
-
 Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应用程序。 本主题提供了学习一些基本功能的快速方法。
 
 ## <a name="create-a-new-project"></a>创建新项目 
@@ -124,7 +123,6 @@ Visual Studio 调试器提供了许多强大的功能以帮助您调试您的应
 
     > [!NOTE]
     > 在 Visual Basic 中，确保将启动对象设置为 `Sub Main`（“属性”>“应用程序”>“启动对象”）。在 Visual Basic 中，确保将启动对象设置为`Sub Main（“属性”>“应用程序”>“启动对象”）。
-
 
 ## <a name="set-a-breakpoint"></a>设置断点
 
