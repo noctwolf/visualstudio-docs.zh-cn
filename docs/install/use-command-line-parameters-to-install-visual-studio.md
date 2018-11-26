@@ -2,7 +2,7 @@
 title: 使用命令行参数安装 Visual Studio
 description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
 ms.custom: ''
-ms.date: 05/07/2018
+ms.date: 11/14/2018
 ms.technology: vs-acquisition
 ms.prod: visual-studio-dev15
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 051935a2c7022af3c6811e90a89697a08f52fa9a
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: e52d61c1226e131c9d989a70f7c8e6432d8f3733
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050360"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51768517"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令行参数安装 Visual Studio 2017
 
@@ -55,6 +55,7 @@ ms.locfileid: "50050360"
 | `update` | 更新已安装的产品。 |
 | `repair` | 修复已安装的产品。 |
 | `uninstall` | 卸载已安装的产品。 |
+| `export` | **15.9 版中的新增功能**：将安装所选内容导出到安装配置文件。 |
 
 | **安装选项** | **说明** |
 | ----------------------- | --------------- |
@@ -74,6 +75,7 @@ ms.locfileid: "50050360"
 | `--nickname <name>` | **可选**：此参数定义分配给已安装产品的别名。 别名长度不能超过 10 个字符。  |
 | `--productKey` | **可选**：这定义要用于已安装产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 或 `xxxxxxxxxxxxxxxxxxxxxxxxx`。 |
 | `--help, --?, -h, -?` | 显示此页的脱机版本。 |
+| `--config <path>` | **15.9 版中的可选**和**新增功能**：在安装或修改操作期间，这将根据以前保存的安装配置文件确定要添加的工作负载和组件。 此操作是附加的，如果文件中不存在任何工作负载或组件，也不会删除任何工作负载或组件。 此外，不会添加不适用于该产品的项目。 在导出操作期间，这将确定保存安装配置文件的位置。 |
 
 > 注意：指定多个工作负载和组件时，必须对每项重复运行 `--add` 或 `--remove` 命令行开关。
 

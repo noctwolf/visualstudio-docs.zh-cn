@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 678a37eec7643976e689cc027922ff481a0e005f
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+ms.openlocfilehash: 071f64c4239441d3c3fd2c111d1b912175e23316
+ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219375"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51766545"
 ---
 # <a name="unit-testing-in-nodejs"></a>Node.js 中的单元测试
 
@@ -33,7 +33,7 @@ ms.locfileid: "50219375"
 > [!WARNING]
 > 磁带的问题当前阻止磁带测试运行。 如果合并 [PR #361](https://github.com/substack/tape/pull/361)，则应解决此问题。
 
-如果你常用的框架不受支持，请参阅[添加对单元测试框架的支持](#addingFramework)，获取有关添加支持的信息。 
+如果你常用的框架不受支持，请参阅[添加对单元测试框架的支持](#addingFramework)，获取有关添加支持的信息。
 
 ## <a name="write-unit-tests"></a>写入单元测试
 
@@ -129,7 +129,7 @@ Test execution time: 1.5731 Seconds
 ```
 
 > [!NOTE]
-> 如果收到指示无法找到 vstest.console.exe 的错误，请确保已打开开发人员命令提示，而不是常规的命令提示符。 
+> 如果收到指示无法找到 vstest.console.exe 的错误，请确保已打开开发人员命令提示，而不是常规的命令提示符。
 
 ## <a name="addingFramework"></a>添加对单元测试框架的支持
 
@@ -149,7 +149,7 @@ Test execution time: 1.5731 Seconds
 Visual Studio 启动时开始发现可用测试框架。 如果在 Visual Studio 运行时添加框架，请重启 Visual Studio 检测框架。 但是，对实现做出更改时无需重启。
 
 ## <a name="unit-tests-in-other-project-types"></a>其他项目类型中的单元测试
-并不局限于在 Node.js 项目中编写单元测试。 将 TestFramework 和 TestRoot 属性添加到任何 C# 或 VB 项目时，将枚举这些测试，并且可使用“测试资源管理器”窗口运行它们。
+并不局限于在 Node.js 项目中编写单元测试。 将 TestFramework 和 TestRoot 属性添加到任何 C# 或 Visual Basic 项目时，将枚举这些测试，并且可使用“测试资源管理器”窗口运行它们。
 
 为实现此操作，请在解决方案资源管理器中右键单击项目节点，选择“卸载项目”，然后选择“编辑项目”。 然后在项目文件中，将以下两个元素添加到属性组中。
 
