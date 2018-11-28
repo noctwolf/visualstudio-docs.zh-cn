@@ -1,5 +1,5 @@
 ---
-title: 将控件绑定到图片中，从数据库
+title: 将控件绑定到数据库中的图片
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,34 +19,37 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00608bae35a9f3272e46e53d7e0205b48c0ea7d9
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
-ms.translationtype: MT
+ms.openlocfilehash: d93ca95a67bc3816d8d65a799282dc6c7969e093
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31920465"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304905"
 ---
-# <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到图片中，从数据库
+# <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到数据库中的图片
 
-你可以使用**数据源**窗口将在数据库中的图像绑定到你的应用程序中的控件。 例如，你可以将图像绑定到<xref:System.Windows.Controls.Image>控制在 WPF 应用程序，或为<xref:System.Windows.Forms.PictureBox>在 Windows 窗体应用程序中的控件。
+可以使用**数据源**窗口将在数据库中的图像绑定到你的应用程序中的控件。 例如，将绑定到图像<xref:System.Windows.Controls.Image>控制在 WPF 应用程序中，或为<xref:System.Windows.Forms.PictureBox>Windows 窗体应用程序中的控件。
 
-字节数组形式通常存储在数据库中的图片。 中的项**数据源**将存储为字节数组具有键入其控件的窗口将设置为**无**默认情况下，由于字节数组可能包含一个简单的可执行文件的字节数组中的任何内容大型应用程序。 若要创建数据绑定控件中的字节数组项**数据源**表示的图像的窗口，你必须选择要创建的控件。
+作为字节数组通常存储在数据库中的图片。 中的项**数据源**将存储为字节数组具有键入其控件的窗口将设置为**None**默认情况下，原因是字节数组可以包含任何内容，从简单的可执行文件的字节数组大型应用程序。 若要创建数据绑定控件中的字节数组项**数据源**表示的图像的窗口中，您必须选择要创建的控件。
 
-以下过程假设**数据源**窗口已填入项绑定到你的映像。
+以下过程假设**数据源**窗口已填充的项的绑定到你的映像。
 
-## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>若要将数据库中的图片绑定到控件
+## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>若要在数据库中的图片绑定到控件
 
 1.  请确保你想要将控件添加到设计图面是在 WPF 设计器或 Windows 窗体设计器中打开。
 
-2.  在**数据源**窗口中，展开所需的表或对象以显示其列或属性。
+2.  在中**数据源**窗口中，展开所需的表，或要显示其列或属性的对象。
 
-3.  选择的列或属性包含映像数据，并从其下拉控件列表中选择以下控件之一：
+   > [!TIP]
+   > 如果**数据源**窗口未打开，选择打开**视图** > **其他 Windows** > **数据源**.
 
-    -   如果 WPF 设计器打开，请选择**映像**。
+3.  选择列或属性，其中包含您的图像数据，并从其下拉列表控件列表中选择以下控件之一：
 
-    -   Windows 窗体设计器处于打开状态，如果选择**PictureBox**。
+    - 如果 WPF 设计器打开，请选择**图像**。
 
-    -   或者，你可以选择一个不同的控件的支持数据绑定，可显示图像。 如果你想要使用的控件不在的可用控件列表中，你可以将其添加到列表，然后选择它。 有关详细信息，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+    - 如果 Windows 窗体设计器打开，请选择**PictureBox**。
+
+    - 或者，可以选择一个不同的控件的支持数据绑定和可显示图像。 如果你想要使用的控件不在可用控件列表中，您可以将其添加到列表，然后选择它。 有关详细信息，请参阅[将自定义控件添加到数据源窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
 ## <a name="see-also"></a>请参阅
 

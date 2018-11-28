@@ -1,5 +1,5 @@
 ---
-title: WPF 应用程序中显示相关的数据
+title: 在 WPF 应用程序中显示相关数据
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,41 +18,42 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 38c25cc1631529895a11af566298ce22930a2e6a
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
-ms.translationtype: MT
+ms.openlocfilehash: f37fdeb7ddd305c7c258958d92c08cf1d8f2a4a8
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746541"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304592"
 ---
-# <a name="display-related-data-in-wpf-applications"></a>WPF 应用程序中显示相关的数据
-在某些应用程序，你可能想要使用来自多个表或相关的父-子关系中的实体的数据。 例如，你可能想要显示的网格的显示从客户`Customers`表。 当用户选择特定客户时，另一个网格将显示该客户的相关订单`Orders`表。
+# <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 
-你可以创建数据绑定控件显示相关的数据，通过将某些项从**数据源**到 WPF 设计器窗口。
+在某些应用程序，你可能想要使用来自多个表或相关对每个其他父-子关系中的实体的数据。 例如，你可能想要显示一个网格，其中显示从客户`Customers`表。 当用户选择某个特定客户时，另一个网格将显示该客户的相关订单`Orders`表。
+
+可以创建数据绑定控件显示相关的数据，通过将项从**数据源**到 WPF 设计器窗口。
 
 ## <a name="to-create-controls-that-display-related-records"></a>若要创建显示相关的记录的控件
 
-1. 上**数据**菜单上，单击**显示数据源**以打开**数据源**窗口。
+1. 在“数据”**菜单上单击“显示数据源”**，打开“数据源”**窗口。
 
-2. 单击**添加新数据源**，并完成**数据源配置**向导。
+2. 单击“添加新数据源”**，然后完成“数据源配置向导”**。
 
 3. 打开 WPF 设计器中，并确保该设计器包含有效的放置目标中的项的容器**数据源**窗口。
 
-     有关有效放置目标的详细信息，请参阅[绑定 WPF 控件添加到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     有关有效放置目标的详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-4. 在**数据源**窗口中，展开表示父表节点或对象在关系中。 一个对多关系的"一"方上的父表或对象。
+4. 在中**数据源**窗口中，展开表示父表的节点或关系中的对象。 一个对多关系的"一"方上的父表或对象。
 
-5. 从拖动父节点 （或父节点中的任何单个项）**数据源**窗口拖到设计器中的有效放置目标。
+5. 将父节点 （或任何单个项的父节点中） 从拖**数据源**窗口拖到设计器中的有效放置目标。
 
-     Visual Studio 将生成创建你将每个项的新数据绑定控件的 XAML。 XAML 还将添加一个新<xref:System.Windows.Data.CollectionViewSource>父表或到放置目标的资源的对象。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到父表或对象。 有关详细信息，请参阅[绑定 WPF 控件添加到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     Visual Studio 生成创建拖动每个项的新数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>父表或对象的拖放目标资源。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到父表或对象。 有关详细信息，请参阅[控件添加到 Visual Studio 中的数据绑定 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
-6. 在**数据源**窗口中，找到的相关的子表或对象。 相关的子表和对象显示为数据的父节点的列表底部的可展开节点。
+6. 在中**数据源**窗口中，找到的相关的子表或对象。 相关的子表和对象显示为可展开节点的数据的父节点的列表底部。
 
-7. 从拖动的子节点 （或子节点中的任何单个项）**数据源**窗口拖到设计器中的有效放置目标。
+7. 将子节点 （或子节点中的任何单个项） 从拖**数据源**窗口拖到设计器中的有效放置目标。
 
-     Visual Studio 将生成为每个您拖动的项创建新的数据绑定控件的 XAML。 XAML 还将添加一个新<xref:System.Windows.Data.CollectionViewSource>子表或到放置目标的资源的对象。 此新<xref:System.Windows.Data.CollectionViewSource>绑定到父表或您刚刚拖动到设计器的对象的属性。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到子表或对象。
+     Visual Studio 将生成为每个拖动的项创建新的数据绑定控件的 XAML。 XAML 还添加了一个新<xref:System.Windows.Data.CollectionViewSource>子表或对象的拖放目标资源。 这一新<xref:System.Windows.Data.CollectionViewSource>绑定到的父表或您刚刚拖动到设计器中的对象的属性。 对于某些数据源，Visual Studio 还会生成代码以将数据加载到子表或对象。
 
-     下图演示了相关**订单**表**客户**中的数据集表**数据源**窗口。
+     下图演示了相关**订单**表的**客户**表中的数据集中**数据源**窗口。
 
      ![显示关系的数据源窗口](../data-tools/media/datasources2.gif)
 
