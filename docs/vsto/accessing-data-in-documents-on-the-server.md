@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 3d894c033d466d84409c46a2d2849650bf32a119
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 70c00a9c0de4afd9f54062e1c2ffabcc2911a538
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870297"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305567"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上的文档中的数据
   可以对其进行编程的文档级自定义项中的数据而无需使用的 Microsoft Office Word 或 Microsoft Office Excel 对象模型。 这意味着你可以访问的服务器上的不具有 Word 文档中包含的数据或安装 Excel。 例如，在服务器上的代码 (例如，在[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]页) 可以自定义文档中的数据和自定义的文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码将自定义的数据绑定到文档中。 这可能是因为在文档中的数据分隔从用户界面。 有关详细信息，请参阅[缓存的文档级自定义项中的数据](../vsto/cached-data-in-document-level-customizations.md)。  
