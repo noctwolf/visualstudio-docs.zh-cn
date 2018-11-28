@@ -13,21 +13,18 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf1cde04a45df47627b8b8bf9a0fad7b9bef0c4
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: c4ffef0b1b76f453048ff20e3cbada0b8a591c65
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673208"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388827"
 ---
 # <a name="options-text-editor-cc-view"></a>选项, 文本编辑器, C/C++, 视图
 
 使用 C 或 C++ 进行编程时，请使用以下属性页更改代码编辑器的默认行为。
 
 要访问此属性页，请选择“工具” > “选项”并依次展开“文本编辑器”和“C/C++”，然后选择“视图”。
-
-> [!NOTE]
-> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="code-squiggles"></a>代码波形曲线
 
@@ -49,7 +46,7 @@ ms.locfileid: "50673208"
 
 - **枚举注释任务** - 扫描开放源文件以查找 VS 令牌并在“任务列表”窗口中报告它们。
 
-- **突出显示匹配的令牌** - 突出显示与光标所在位置匹配的封闭括号或语法。 
+- **突出显示匹配的令牌** - 突出显示与光标所在位置匹配的封闭括号或语法。
 
 ## <a name="outlining"></a>大纲显示
 

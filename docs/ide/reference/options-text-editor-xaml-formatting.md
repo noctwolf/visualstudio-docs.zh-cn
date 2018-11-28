@@ -31,20 +31,19 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 7f6939907681d5059580f9f7120d9beb76559e9a
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 4686760625062fea7984cdc05386284f8f98c4ee
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672183"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388983"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>选项，文本编辑器，XAML，格式
+
 使用“格式设置”属性页可指定如何在 XAML 文档中设置元素和特性的格式。 若要打开“选项”对话框，请单击“工具”菜单，然后单击“选项”。 要访问“格式设置”属性页，请展开“文本编辑器” > “XAML” > “格式设置”节点。
 
-> [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
 ## <a name="auto-formatting-events"></a>自动格式化事件
+
 检测到以下任一事件时，可能引发自动格式设置。
 
 -   完成结束标记或简单标记。
@@ -57,106 +56,124 @@ ms.locfileid: "50672183"
 
 可以指定引发自动格式设置的事件。
 
-**结束标记或简单标记完成时**  
+**结束标记或简单标记完成时**
+
 完成键入结束标记或简单标记时引发自动格式设置。 简单标记没有特性，例如 `<Button />`。
 
-**开始标记完成时**  
+**开始标记完成时**
+
 完成键入开始标记时引发自动格式设置。
 
-**从剪贴板粘贴时**  
+**从剪贴板粘贴时**
+
 将 XAML 从剪贴板粘贴到 XAML 视图时引发自动格式设置。
 
 ## <a name="quotation-mark-style"></a>引号样式
+
 此设置指示特性值是括在单引号内，还是括在双引号内。 自动格式设置程序和 IntelliSense 自动完成功能都使用此设置。
 
 设置此选项后，受影响的只有随后在 XAML 视图中使用设计器添加或手动添加的特性。
 
-**双引号 (")**  
-特性值括在双引号内。  
+**双引号 (")**
+
+特性值括在双引号内。
 `<Button Name="button1">Hello</Button>`
 
-**单引号 (')**  
-特性值括在单引号内。  
+**单引号 (')**
+
+特性值括在单引号内。
 `<Button Name='button1'>Hello</Button>`
 
 ## <a name="tag-wrapping"></a>标记换行
+
 可以为标记换行指定一个行长度。 启用标记换行后，随后使用设计器添加的所有 XAML 将进行适当换行。
 
-**对超出指定长度的标记执行换行**  
+**对超出指定长度的标记执行换行**
+
 指定是否在“长度”指定的行长度处换行。
 
-**长度**  
+**长度**
+
 一行中可以包含的字符数。 如有必要，某些 XAML 行可以超过指定的行长度。
 
 ## <a name="attribute-spacing"></a>特性间距
+
 使用此设置可以控制特性在 XAML 文档中的排列方式
 
-**在特性之间保留换行符和空格**  
+**在特性之间保留换行符和空格**
+
 特性之间的换行符和空格不受自动格式设置的影响。
 
 ```xml
-<Button Height="23"   Name="button1"  
+<Button Height="23"   Name="button1"
 Width="75">Hello</Button>
 ```
 
-**在特性之间插入单个空格**  
+**在特性之间插入单个空格**
+
 特性占用一行，由一个空格分隔相邻的特性。 应用标记换行设置。
 
 ```xml
 <Button Height="23" Name="button1" Width="75">Hello</Button>
 ```
 
-**将各个特性分行放置**  
-每个特性单占各自的行，这在存在许多特性很有用。  
+**将各个特性分行放置**
+
+每个特性单占各自的行，这在存在许多特性很有用。
 
 ```xml
-<Button  
-Height="23"  
-Name="button1"  
+<Button
+Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
-**将第一个特性放在与开始标记相同的行上**  
-选中该项时，第一个特性与元素的开始标记显示在同一行上。  
+**将第一个特性放在与开始标记相同的行上**
+
+选中该项时，第一个特性与元素的开始标记显示在同一行上。
 
 ```xml
-<Button Height="23"  
-Name="button1"  
+<Button Height="23"
+Name="button1"
 Width="75">Hello</Button>
 ```
 
 ## <a name="element-spacing"></a>元素间距
+
 使用此设置可以控制元素在 XAML 文档中的排列方式。
 
-**保留内容中的新行**  
-不移除元素内容中的空行。  
+**保留内容中的新行**
+
+不移除元素内容中的空行。
 
 ```xml
-<Grid>  
+<Grid>
 
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**将内容中的多个空行折叠为单个行**  
-元素内容中的多个空行会折叠为单个行。  
+**将内容中的多个空行折叠为单个行**
+
+元素内容中的多个空行会折叠为单个行。
 
 ```xml
-<Grid>  
+<Grid>
 
-<Button Name="button1">Hello</Button>  
+<Button Name="button1">Hello</Button>
 
 </Grid>
 ```
 
-**移除内容中的空行**  
-移除元素内容中的所有空行。  
+**移除内容中的空行**
+
+移除元素内容中的所有空行。
 
 ```xml
-<Grid>  
-<Button Name="button1">Hello</Button>  
+<Grid>
+<Button Name="button1">Hello</Button>
 </Grid>
 ```
 

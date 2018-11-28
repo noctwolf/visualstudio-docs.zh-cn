@@ -30,22 +30,20 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: 4174191f9927679eb698e2e918a7bfa50f915a3e
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: 30986c0f18a2cc272cb917be9ce24b2a335c0b4b
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50673194"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388629"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>选项, 文本编辑器, XAML, 杂项
+
 使用“杂项”属性页以指定如何在 XAML 文档中设置元素和特性的格式。 若要打开“选项”对话框，请单击“工具”菜单，然后单击“选项”。 要访问“杂项”属性页，请展开“文本编辑器” > “XAML” > “杂项节点”。
 
-> [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
-
 ## <a name="auto-insert"></a>自动插入
- 使用此设置可以控制自动生成标记和引号的时间。
+
+使用此设置可以控制自动生成标记和引号的时间。
 
 |||
 |-|-|
@@ -55,7 +53,8 @@ ms.locfileid: "50673194"
 |**用于分隔 MarkupExtension 参数的逗号**|指定在标记扩展中键入多个参数时是否生成逗号。|
 
 ## <a name="errors-and-warnings"></a>错误和警告
- 使用此设置控制何时自动生成错误和警告。 有关详细信息，请参阅 [XAML 错误和警告](../../designers/xaml-errors-warnings.md)。
+
+使用此设置控制何时自动生成错误和警告。 有关详细信息，请参阅 [XAML 错误和警告](../../designers/xaml-errors-warnings.md)。
 
 ## <a name="see-also"></a>请参阅
 

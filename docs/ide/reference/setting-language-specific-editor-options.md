@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fddf53101cf356772745462542bf4435a4ca4f4d
-ms.sourcegitcommit: e13e61ddea6032a8282abe16131d9e136a927984
+ms.openlocfilehash: 9890b68b05f4cedbb1a95299b87f505daea902f9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31945891"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389411"
 ---
 # <a name="setting-language-specific-editor-options"></a>设置语言特定的编辑器选项
 
@@ -58,4 +58,4 @@ Visual Studio 提供了各种可应用于特定编程语言的文本编辑器选
 
 - [自定义编辑器](../../ide/customizing-the-editor.md)
 - [使用 EditorConfig 创建可移植的自定义编辑器设置](../../ide/create-portable-custom-editor-options.md)
-- [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)&mdash;提供指向一些主题的链接，这些主题介绍如何自定义设置、键绑定以及集成开发环境 (IDE) 的其他功能。
+- [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
