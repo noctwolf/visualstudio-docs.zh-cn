@@ -1,7 +1,7 @@
 ---
 title: 编辑并继续错误消息对话框 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/22/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd4fe31996a75c4b743f3dac12e7b945c912506
-ms.sourcegitcommit: c5e72875206b8c5737c29d5b1ec7b86eec747303
-ms.translationtype: MT
+ms.openlocfilehash: ba573a6b6bffdfeebf37c5f46f1f774d699a1131
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49382787"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388697"
 ---
 # <a name="edit-and-continue-error-message"></a>编辑并继续的错误消息 
 
@@ -49,5 +49,5 @@ ms.locfileid: "49382787"
   
 有关详细信息，请参见:
 - [C + + 编辑并继续博客文章](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/)  
-- [支持代码更改 （c + +）](../debugger/supported-code-changes-cpp.md)
+- [受支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)
 - [编辑并继续](../debugger/edit-and-continue.md)
