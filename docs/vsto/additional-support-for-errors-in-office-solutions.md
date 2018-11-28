@@ -1,5 +1,5 @@
 ---
-title: 在 Office 解决方案中的错误的附加支持
+title: Office 解决方案错误的其他支持
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -54,44 +54,44 @@ helpviewer_keywords:
 - Office development in Visual Studio, troubleshooting
 - troubleshooting [Office development in Visual Studio]
 - Office development in Visual Studio, errors
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bbb9c5676ec3d9f06802f071c842f9e2a396703e
-ms.sourcegitcommit: 209c2c068ff0975994ed892b62aa9b834a7f6077
+ms.openlocfilehash: 4706360581749fbc6e84f3250324bad3663e7a9a
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34267827"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304449"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>在 Office 解决方案中的错误的附加支持
-  可以使用以下资源来帮助你查找你会遇到的 Visual Studio 中创建 Office 解决方案的问题的答案。  
+# <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案错误的其他支持
+  可以使用以下资源可帮助您找到在 Visual Studio 中创建 Office 解决方案时遇到的问题的解答。  
   
-## <a name="troubleshoot-specific-errors"></a>解决特定的错误  
- 在 Office 解决方案中的一些常见的错误的帮助，请参阅以下主题：  
+## <a name="troubleshoot-specific-errors"></a>排查特定错误  
+ 在 Office 解决方案中的一些常见错误的帮助，请参阅以下主题：  
   
--   [解决 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)  
+-   [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)  
   
 -   [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)  
   
--   [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)  
+-   [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)  
   
 ## <a name="other-resources"></a>其他资源  
- [适用于 Office 论坛的 visual Studio 工具](http://go.microsoft.com/fwlink/?LinkId=149744)  
- 提供有关 Visual Studio 中的 Office 开发人员工具的问题的论坛。  
+ [Visual Studio tools for Office 论坛](http://go.microsoft.com/fwlink/?LinkId=149744)  
+ 提供有关在 Visual Studio 中的 Office 开发人员工具的问题的论坛。  
   
  [Microsoft 帮助和支持](http://go.microsoft.com/fwlink/?LinkID=108287)  
  提供对知识库 (KB) 文章、下载和更新、支持 Webcast 以及其他服务的访问。  
   
- [有关开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
- 提供的更多地了解开发 Office 解决方案和使用 Visual Studio 的 Office 开发的其他资源的链接。  
+ [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
+ 了解有关开发 Office 解决方案和使用 Visual Studio 进行 Office 开发，提供了指向其他资源。  
   
 ## <a name="see-also"></a>请参阅  
- [解决 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)   
+ [对 Office 解决方案中的错误进行故障排除](../vsto/troubleshooting-errors-in-office-solutions.md)   
  [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)   
- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)   
- [有关开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
+ [Office 解决方案部署故障排除](../vsto/troubleshooting-office-solution-deployment.md)   
+ [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)  
   
   

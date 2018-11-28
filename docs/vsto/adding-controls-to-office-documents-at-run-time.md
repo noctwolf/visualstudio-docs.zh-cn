@@ -20,17 +20,17 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Windows Forms controls
 - controls [Office development in Visual Studio], adding at runtime
 - helper methods [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 2a23a779058276460f33b18ed881abcc4d40eca7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2ad16bc414e6d67b563240bcd2bceb15e9c34e97
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941173"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305632"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>在运行时向 Office 文档添加控件
   可以将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿在运行时。 此外可以在运行时删除它们。 添加或删除在运行时中的控件称为*动态控件*。  
