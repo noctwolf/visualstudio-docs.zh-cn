@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中自定义窗口布局
+title: 自定义窗口布局
 ms.date: 01/23/2017
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fa251eac1546b0d5588dfc4dc43bead725bf81
-ms.sourcegitcommit: 58052c29fc61c9a1ca55a64a63a7fdcde34668a4
+ms.openlocfilehash: 849f94d178453d3b90140f59dc9ed5a84cd98466
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34746840"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389638"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 
@@ -81,9 +81,6 @@ IDE 提供两种基本窗口类型，即 *“工具窗口”* 和 *“文档窗�
 -   窗口位置重置为默认布局或已保存的自定义布局。
 
 可以通过拖动、使用 **“窗口”** 菜单上的命令或右键单击待排列窗口的标题栏，来排列工具窗口和文档窗口。
-
-> [!NOTE]
-> 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ### <a name="dock-windows"></a>停靠窗口
 

@@ -16,21 +16,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: dbd3fe20377cd2aa4954e904fec50702cc9b7120
-ms.sourcegitcommit: ce154aee5b403d5c1c41da42302b896ad3cf8d82
+ms.openlocfilehash: 09881462b0723dc1e601c908efeabc317ed70b69
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843986"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388944"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>“选项”对话框 ->“项目和解决方案”页
 
 设置与项目和解决方案相关的 Visual Studio 行为。 要访问这些选项，请选择“工具” > “选项”，展开“项目和解决方案”，再选择“常规”。
 
 通过相同对话框中的“位置”选项卡设置项目和模板文件夹的默认路径。
-
-> [!NOTE]
-> UI 中可用的选项可能不同于此处所述，具体取决于活动的设置或版本。 本文是根据“常规开发设置”而编写的。 若要查看或更改设置，请在“工具”菜单上选择“导入和导出设置”。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="general-page"></a>常规页
 

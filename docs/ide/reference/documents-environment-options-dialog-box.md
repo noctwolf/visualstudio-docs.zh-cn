@@ -33,19 +33,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae8fd7cf7acb27fd528c306c0d6a57955c6fe8
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 3009f32adeb70dd376d7116280de6e3e1b557e7a
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "50143380"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388918"
 ---
 # <a name="documents-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“文档”
 
 使用“选项”对话框的此页，可以控制文档在集成开发环境 (IDE) 中的显示，并管理对文档和文件的外部更改。 通过在“工具”菜单上单击“选项”，然后在“环境”节点中选择“文档”，即可访问此对话框。 如果“文档”未出现在列表中，请在“选项”对话框中选择“显示所有设置”。
-
-> [!NOTE]
-> 对话框中的可用选项以及显示的菜单命令的名称和位置可能与“帮助”中的描述不同，具体取决于您的当前设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
 
 **如果已保存，请再次使用当前文档窗口**
 

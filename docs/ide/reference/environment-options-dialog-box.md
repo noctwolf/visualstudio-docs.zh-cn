@@ -13,19 +13,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a7cef09937181fbf6c721b8c8eca73b6351742
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 61b2e6461fb80cfd12f76a6e96ac629ce640fa89
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930539"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388762"
 ---
 # <a name="environment-options-dialog-box"></a>“选项”对话框 ->“环境”
+
 使用“选项”对话框的“环境”文件夹中的页，可设置集成开发环境 (IDE) 的某些元素的显示和行为方式。 可通过在菜单栏上依次选择“工具”、“选项”、“环境”来访问“环境”页。
-
-> [!NOTE]
-> 显示在计算机上的对话框和菜单命令可能与“帮助”中说明的不同，具体取决于处于活动状态的设置以及你使用的 Visual Studio 版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
 
 |有关如何执行下列操作的信息|查看|
 | - |---------|
