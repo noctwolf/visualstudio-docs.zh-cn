@@ -1,6 +1,6 @@
 ---
 title: “导入和导出设置”命令
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -15,15 +15,16 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4119abf74281e3c0dbb2b3d5f3ef472a0527a08f
-ms.sourcegitcommit: fe5a72bc4c291500f0bf4d6e0778107eb8c905f5
+ms.openlocfilehash: 8f212e5c5becb8cf2ae575510825a9c7c9034222
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33704582"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388694"
 ---
 # <a name="import-and-export-settings-command"></a>“导入和导出设置”命令
-导入、导出或重置 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 设置。
+
+导入、导出或重置 Visual Studio 设置。
 
 ## <a name="syntax"></a>语法
 
@@ -32,25 +33,26 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
 ## <a name="switches"></a>开关
- /export:`filename`
 
- 可选。 将当前设置导出到指定文件。
+/export:`filename`
 
- /import:`filename`
+可选。 将当前设置导出到指定文件。
 
- 可选。 导入指定文件中的设置。
+/import:`filename`
 
- /reset
+可选。 导入指定文件中的设置。
 
- 可选。 重置当前设置。
+/reset
+
+可选。 重置当前设置。
 
 ## <a name="remarks"></a>备注
 
-不带任何开关运行此命令将打开“导入和导出设置”向导。 有关详细信息，请参阅[同步设置](../../ide/synchronized-settings-in-visual-studio.md)。
+不带任何开关运行此命令将打开“导入和导出设置”向导。 有关详细信息，请参阅[同步设置](../synchronized-settings-in-visual-studio.md)和[环境设置](../environment-settings.md)。
 
 ## <a name="example"></a>示例
 
-以下命令将当前设置导出到文件 `MyFile.vssettings`。
+以下命令将当前设置导出到文件 `MyFile.vssettings`：
 
 ```cmd
 Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
@@ -58,5 +60,7 @@ Tools.ImportandExportSettings /export:"c:\Files\MyFile.vssettings"
 
 ## <a name="see-also"></a>请参阅
 
+- [环境设置](../../ide/environment-settings.md)
+- [同步设置](../../ide/synchronized-settings-in-visual-studio.md)
 - [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 - [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

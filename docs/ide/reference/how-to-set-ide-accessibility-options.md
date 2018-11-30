@@ -13,12 +13,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d0149be4996f762373aae77d7535dbf8e02809
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: df94a57358edd9619b43bbcddb26d4e3485a1ab1
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909784"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388421"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：设置 IDE 辅助功能选项
 
@@ -27,10 +27,10 @@ ms.locfileid: "49909784"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含一些功能，可使有视觉障碍的人更方便地阅读，并使行动不便的人更方便地书写。 这些功能包括更改编辑器中文本的大小和颜色，更改工具栏上文本和按钮的大小，以及方法和参数的自动完成等。
 
- 此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持 Dvorak 键盘布局，这些布局使最频繁键入的字符使用起来更为方便。 还可以自定义适用于 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的默认快捷键。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
+此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持 Dvorak 键盘布局，这些布局使最频繁键入的字符使用起来更为方便。 还可以自定义适用于 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的默认快捷键。 有关详细信息，请参阅[标识并自定义键盘快捷方式](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。
 
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../environment-settings.md#reset-settings)。
 
 ## <a name="editors-dialogs-and-tool-windows"></a>编辑器、对话框和工具窗口
 
