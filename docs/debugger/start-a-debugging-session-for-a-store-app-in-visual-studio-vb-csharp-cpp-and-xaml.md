@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 中启动调试会话的 UWP 应用 |Microsoft Docs
 ms.custom: ''
-ms.date: 01/04/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,209 +36,177 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a7a9f74450ccf2cb493e44fa1fecef0630a27569
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: b1cc89673558fdaa47fa48756902f44738edf734
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818779"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305294"
 ---
-# <a name="start-a-debugging-session-for-a-uwp-app-in-visual-studio"></a>在 Visual Studio 中启动调试会话的 UWP 应用
+# <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
   
- 本主题介绍如何启动调试会话，针对用 XAML 和 Visual c + +、 Visual 编写的 UWP 应用C#，或 Visual Basic 和适用于 HTML 和 JavaScript 编写的 UWP 应用。 调试应用程序涉及配置调试会话和选择启动应用程序的方式。  
+本文介绍如何启动的通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 可以在 XAML 和 c + + 中，XAML 编写的 UWP 应用和C#/Visual Basic，或 HTML 和 JavaScript。 若要开始调试 UWP 应用，请配置调试会话，并选择启动应用程序的方式。  
   
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a> 启动调试的简单方法  
+##  <a name="BKMK_The_easy_way_to_start_debugging"></a>从 Visual Studio 工具栏中开始调试 
   
-1. 在 Visual Studio 中打开应用程序解决方案。  
+若要配置和启动调试的最简单方法是从标准的 Visual Studio 工具栏。 
+
+![从工具栏进行调试](../debugger/media/vsrun_select_target_device.png)  
   
-2. 选择 f5 键。  
+1. 从**配置**上的下拉列表中**标准**工具栏中，选择**调试**。  
   
-   Visual Studio 生成并启动附有调试器的应用程序。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
+1. 从**平台**下拉列表中，选择要为生成的目标平台。 
+   
+1. 从绿色箭头旁边的下拉列表中，选择调试目标。 可以选择本地计算机、 设备直接连接，本地 Visual Studio 模拟器、 远程设备或仿真程序。 
+   
+1. 若要开始调试，请选择绿色**启动**工具栏上或选择上的箭头**调试** > **开始调试**，或按**F5**. 
+   
+   Visual Studio 生成并启动附有调试器的应用程序。 
+
+调试持续至抵达某个断点、 手动暂停执行，会发生未处理的异常，或应用结束为止。  
   
-##  <a name="BKMK_Choose_the_build_configuration_options"></a> 选择生成配置选项  
+###  <a name="BKMK_Choose_the_deployment_target"></a> 部署目标选项 
   
-1.   从下拉列表中列出在下一步**开始调试**调试器上的按钮**标准**工具栏中，选择**调试**。  
-  
-2.  从 **“平台”** 列表中选择要生成的目标平台。  
-  
-##  <a name="BKMK_Choose_the_deployment_target"></a> 选择部署目标  
-  
-可以部署和调试 Visual Studio 计算机、 连接的设备、 本地计算机、 远程设备或仿真程序上的 Visual Studio 模拟器上的 UWP 应用。 从下拉列表中选择部署目标，右侧的**平台**调试器上的目标**标准**工具栏。
-  
-![选择部署目标](../debugger/media/vsrun_select_target_device.png)  
-  
-选择以下某个选项：  
-  
+可以在 Visual Studio 工具栏中设置调试目标或项目的调试属性页。 选择下列选项之一：
+
 |||  
 |-|-|  
 |**本地计算机**|在本地计算机上的当前会话中调试应用程序。|  
-|**模拟器**|调试 UWP 应用的 Visual Studio 模拟器中的应用程序。 模拟器是一个桌面窗口，使你能够调试设备功能 — 如触摸手势和设备旋转，这可能不是本地计算机上可用。 此选项才可用如果应用程序的**目标平台最小值。版本**小于或等于在开发计算机上的操作系统。 请参阅[在模拟器中的运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
-|**远程计算机**|在通过 Intranet 连接到本地计算机或使用以太网电缆直接连接到本地计算机的设备上调试应用程序。 若要远程调试，必须在远程设备上安装并运行适用于 Visual Studio 的远程工具。 请参阅[远程计算机上的运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
+|**模拟器**|调试 UWP 应用的 Visual Studio 模拟器中的应用程序。 模拟器是模拟设备功能，如触摸手势和设备旋转，可能不存在于本地计算机上的桌面窗口。 模拟器选项仅当应用程序的**目标平台最小值。版本**小于或等于在本地计算机上的操作系统。 有关详细信息，请参阅[在模拟器中的运行 UWP 应用](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
+|**远程计算机**|调试通过网络或以太网电缆连接到本地计算机的设备上的应用程序。 适用于 Visual Studio 的远程工具必须是远程设备上安装并运行。 有关详细信息，请参阅[远程计算机上的运行 UWP 应用](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
 |**设备**|调试连接了 USB 的设备上的应用。 设备必须为开发人员解锁且包含解锁屏幕。|  
-|**移动仿真程序**|使用模拟器名称中指定的配置启动仿真程序，部署该应用，并开始调试。 仿真程序是仅在启用了 HYPER-V 计算机上可用。|  
+|**移动仿真程序**|启动模拟器名称中指定的仿真程序，部署该应用，并开始调试。 仿真程序是仅在启用了 HYPER-V 计算机上可用。|  
 
-##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 选择其他调试选项  
+##  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 配置项目属性页中调试 
 
-如果需要配置其他调试选项，打开项目属性页。
-  
-1.  在“解决方案资源管理器”中，选择项目。 在快捷菜单中，选择 **“属性”**。  
-  
-2.  执行此操作以打开该项目的调试属性页：  
-  
-    -   对于 Visual C# 和 Visual Basic 应用程序，选择 **“调试”**。  
-  
-         ![C&#35; &#47; VB 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)  
-  
-    -   对于 Visual c + + 和 JavaScript 应用程序，展开**配置属性**节点，然后选择**调试**。  
-  
-         ![C&#43; &#43; UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)  
+若要配置其他调试选项，请使用项目的调试属性页。 
+
+**若要打开的调试属性：**
+
+1. 在中**解决方案资源管理器**，选择的项目，然后选择**属性**图标，或右键单击该项目并选择**属性**。  
+   
+1. 在左侧**属性**窗格：
+   
+   - 有关C#和 Visual Basic 应用程序，选择**调试**。  
+     
+     ![C#和 Visual Basic 项目调试属性页](../debugger/media/dbg_csvb_debugpropertypage.png)  
+   
+   - 对于 c + + 和 JavaScript 应用，选择**配置属性** > **调试**。  
+     
+     ![C + + UWP 应用调试属性页](../debugger/media/dbg_cpp_debugpropertypage.png)  
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> 选择要使用的调试器  
-默认情况下，Visual Studio 调试 C# 和 Visual Basic 应用程序中的托管代码。 对于 C# 和 Visual Basic 应用程序，可选择同时调试应用程序中的托管和本机 C/C++ 代码。 在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 在 JavaScript 应用中，Visual Studio 默认情况下调试脚本。 
+
+有关C#和 Visual Basic 应用程序，Visual Studio 调试托管代码默认情况下。 您可以选择调试其他或其他代码类型。 您还可以设置**调试器类型**是项目的一部分的任何后台任务的值。
+
+在 c + + 应用中，Visual Studio 默认情况下调试本机代码。 在 JavaScript 应用中，Visual Studio 默认情况下调试脚本。 您可以选择调试特定类型的代码而不是，或调试本机代码。 
+
+**若要指定要调试的代码类型：**
+
+- 有关C#和 Visual Basic 应用程序中，选择一个从以下调试器**应用程序类型**并**后台进程类型**下的下拉列表**调试器类型**上**调试**属性页。  
   
-对于 c + + 应用和 JavaScript，您可以选择调试应用程序而不是，或调试本机代码的组件中的特定类型的代码。 在应用程序项目的 **“调试”** 属性页上 **“调试器类型”** 列表中指定要调试的代码。  
-  
-从 **“应用程序进程”** 列表中选择以下这些调试器之一：  
-  
+- 对于 C + + /cli JavaScript 应用程序，选择一个从以下调试器**调试器类型**上的下拉列表中**调试**属性页。
+
 |||  
 |-|-|  
 |**仅限托管**|调试应用程序中的托管代码。 忽略 JavaScript 代码和本机 C/C++ 代码。|  
 |**仅限本机**|调试应用程序中的本机 C/C++ 代码。 忽略托管代码和 JavaScript 代码。|  
-|**混合(托管和本机)**|调试应用程序中的本机 C/C++ 代码和托管代码。 忽略 JavaScript 代码。 在 c + + 项目中，此选项称为 **（托管和本机）**。|  
-|**仅限脚本**|调试应用程序中的 JavaScript 代码。 忽略托管代码和本机代码。|  
-|**脚本和本机**|调试本机 C/c + + 代码和应用程序中的 JavaScript 代码。 忽略托管的代码。 在仅限 c + + 项目中可用。|  
-|**仅限 GPU (c + + AMP)**|调试在图形处理单元 (GPU) 上运行的本机 C++ 代码。 在仅限 c + + 项目中可用。|  
+|**混合(托管和本机)**|调试应用程序中的本机 C/C++ 代码和托管代码。 忽略 JavaScript 代码。 在 c + + 项目中，此选项称为**托管和本机**。|  
+|**脚本**|调试应用程序中的 JavaScript 代码。 忽略托管代码和本机代码。|  
+|**带脚本的本机**|调试本机 C/c + + 代码和应用程序中的 JavaScript 代码。 忽略托管的代码。 在 c + + 项目或仅适用于后台任务中可用。|  
+|**仅限 GPU (C++ AMP)**|调试在图形处理单元 (GPU) 上运行的本机 C++ 代码。 在仅限 c + + 项目中可用。|  
 
-在C#和 Visual Basic 应用程序，您还可以设置相同**调试器类型**是项目的一部分的任何后台任务的值。
   
-###  <a name="BKMK__Optional__Delay_starting_the_debug_session"></a> （可选）推迟启动调试会话  
- 默认情况下，启动调试后，Visual Studio 将立即启动应用程序。 也可启动调试会话但推迟启动应用程序。 选择此选项后，从“开始”屏幕或由激活协定启动应用程序时或者其他进程或方法启动应用程序时，将在调试器中启动应用程序。 如果要在应用程序未运行时调试后台任务，则还需延迟应用程序的启动。  
+###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> 禁用网络环回 （可选） 
   
- 若要推迟启动应用程序，可：  
+ 为了安全，标准方式安装的 UWP 应用不能进行网络调用安装的设备。 Visual Studio 豁免默认情况下部署此规则从应用程序，因此可以测试一台计算机上的通信过程。 在发布应用之前，应测试应用程序，无例外。  
   
--   对于 Visual C# 和 Visual Basic 应用程序，在 **“调试”** 属性页上选中 **“不启动，但在启动时调试代码”** 。  
+**若要移除网络环回例外，请执行以下操作：**  
   
--   对于 Visual c + + 和 JavaScript 应用，选择**否**从**启动应用程序**上列出**调试**属性页。  
+-   有关C#和 Visual Basic 应用程序，请取消选中**允许本地网络环回**下的复选框**启动选项**上**调试**属性页。  
   
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> （可选）禁用网络环回  
+-   对于 Visual c + + 和 JavaScript 应用，选择**否**从**允许本地网络 Loopback**上的下拉列表中**调试**属性页。  
   
- 出于安全原因，不允许以标准方式安装的 UWP 应用进行网络调用安装的设备。 默认情况下，Visual Studio 部署功能为所部署的应用程序创建此规则的例外。 通过此例外，在一台计算机上即可测试通信过程。 提交到 Microsoft Store 应用程序之前，应测试应用程序，无例外。  
+###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> 重新安装该应用，在开始调试时 （可选） 
+ 若要诊断安装问题C#或 Visual Basic 应用程序，选择**卸载并重新安装我的程序包**上**调试**属性页。 在开始调试时，此选项将重新创建原始安装。 此选项不可用于 c + + 和 JavaScript 项目。  
   
- 若要移除网络环回例外，请执行以下操作：  
+###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> 设置远程调试的身份验证选项  
   
--   视觉对象C#和 Visual Basic 应用程序，清除**允许本地网络环回**上的复选框**调试**属性页。  
-  
--   对于 Visual c + + 和 JavaScript 应用，选择**否**从**允许本地网络 Loopback**上列出**调试**属性页。  
-  
-###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> （可选）在开始调试时重新安装应用程序  
- 若要诊断 Visual C# 或 Visual Basic 应用程序的安装和初始配置问题，请选择 **“调试”** 属性页上的 **“卸载并重新安装我的程序包”**  以在启动调试时重新创建原始安装。 此选项不可用的 Visual c + + 和 JavaScript 项目。  
-  
-###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> （可选）禁用身份验证要求以启动远程调试器  
-  
- 默认情况下，必须提供凭据才能运行远程调试器时选择**远程计算机**作为部署目标。
-  
-> [!IMPORTANT]
->  您可以选择无身份验证运行远程调试器，但强烈建议不要使用此模式。 在此模式下运行时，无法保证网络安全。 仅当你确信网络不会受到恶意代码或恶意流量，请选择无身份验证。  
-  
- 若有移除身份验证要求，请执行以下操作：  
-  
-1.  视觉对象C#和 Visual Basic 应用程序，选择**远程计算机**作为**目标设备**上**调试**属性页，然后将设置**身份验证模式**到**无**或**通用 （未加密的协议）**。
-  
-2.  对于 Visual c + + 和 JavaScript 应用，选择**远程计算机**作为**目标设备**上**调试**属性页，然后将设置**要求身份验证**到**无**或**通用 （未加密的协议）**。  
+默认情况下，必须提供 Windows 凭据来运行远程调试器时选择**远程计算机**作为部署目标。 您可以更改身份验证要求。 
 
-    **通用 （未加密的协议）** 适用于部署到远程设备时。 目前，这是 IoT 设备、 Xbox 设备和 HoloLens 设备创意者更新或更高版本的电脑。 仅应在受信任的网络上使用通用 （未加密的协议）。 调试连接容易受到恶意用户无法截获和更改开发和远程计算机之间传递的数据。  
-  
-##  <a name="BKMK_Start_the_debugging_session"></a> 启动调试会话  
-  
-###  <a name="BKMK_Start_debugging__F5_"></a> 启动调试 (F5)  
- 当你选择**开始调试**(键盘： F5) 上**调试**菜单中，Visual Studio 带有附加调试程序启动的应用。 持续执行至抵达某个断点、手动暂停执行、发生异常或应用程序结束为止。  
-  
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> 启动调试 (F5)，但推迟启动应用程序  
- 你可以将应用程序设置为在调试模式中运行，但通过调试器之外的方法启动应用程序。 例如，你可能想要调试从开始菜单中，应用的启动或调试应用程序中的后台进程而无需启动该应用程序。 若要推迟启动应用程序，请执行此操作：  
-  
-- 上**调试**应用程序的属性页 (**调试**中 Visual c + + 和 JavaScript)  
-  
-  -   对于 Visual C# 和 Visual Basic 应用程序，选中 **“不启动，但启动时调试代码”**。  
-  
-  -   对于 Visual c + + 和 JavaScript 应用，选择**是**从**启动应用程序**列表。  
-  
-- 选择**开始调试**上**调试**菜单 (键盘： F5)。  
-  
-- 从“开始”菜单、执行协定或由其他过程启动应用程序。  
-  
-  随后应用程序在调试模式下启动。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
-  
-  有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
-  
-###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 在调试器中启动已安装的应用程序  
-在使用 F5 启动调试时，Visual Studio 会生成并部署应用程序，将应用程序设置为在调试模式中运行，然后启动应用程序。 若要开始在设备已安装的应用程序，请使用**调试安装的应用程序包**对话框。 当您需要调试已安装从 Microsoft Store 的应用程序时或当有应用程序中的源文件但没有应用程序的 Visual Studio 项目时，此过程非常有用。 例如，你的自定义生成系统可能不使用 Visual Studio 项目或解决方案。  
-  
-应用程序可安装在本地设备上，也可安装在远程设备上。  你可以立即启动应用程序，或将应用程序设置为当其通过其他进程或方法（如从“开始”菜单或通过激活协定）启动时在调试器中运行，也可以将应用程序设置为当需要在未启动应用程序的情况下调试后台进程时在调试模式中运行。 有关详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
-  
-若要在调试器中启动已安装的应用，选择**调试**，然后**其他调试目标**，然后**调试安装的应用程序包**。 有关更多说明，请参阅[调试安装的应用包](../debugger/debug-installed-app-package.md)。
+**通用 （未加密的协议）** 身份验证模式是为 IoT、 Xbox 和 HoloLens 设备和创建者的更新或更高版本的 Windows 10 电脑。  
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 将调试器附加到正在运行的 UWP 应用  
+**若要更改身份验证方法：**  
 
-若要调试正在运行的 UWP 应用，选择**调试**，然后**其他调试目标**，然后**调试安装的应用程序包**。 有关更多说明，请参阅[调试安装的应用包](../debugger/debug-installed-app-package.md)。
+- 有关C#和 Visual Basic 应用程序上**调试**属性页上，选择**远程计算机**作为**目标设备**。 然后，选择**无**或**通用 （未加密的协议）** 有关**身份验证模式**。 
   
+- 对于 c + + 和 JavaScript 应用，选择**远程计算机**下**要启动的调试器**上**调试**属性页。 然后，选择**无身份验证**或**通用 （未加密的协议）** 有关**身份验证类型**。 
+  
+> [!CAUTION]
+> 没有任何网络安全中运行远程调试器时**无**或**通用 （未加密的协议）** 模式。 选择仅在你的受信任的网络上的以下模式确保不在会受到恶意代码或恶意流量。  
+  
+##  <a name="BKMK_Start_the_debugging_session"></a> 调试启动选项  
+  
+当选择**调试** > **开始调试**或按**F5**，Visual Studio 启动附带调试器的应用程序。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
+  
+###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> 启动但延迟应用启动调试  
+
+默认情况下，Visual Studio 开始调试后，将立即启动应用。 此外可以设置应用程序以在调试模式下运行，但启动在调试器外部应用程序。 例如，你可能想要调试从 Windows 应用程序启动**启动**菜单中或调试应用程序中的后台进程。 如果选择此选项，应用将在启动调试器中启动。 
+
+**若要禁用自动应用程序启动：**  
+  
+- 有关C#和 Visual Basic 应用程序，选择**不启动，但在启动时调试我的代码**下**启动选项**上**调试**属性页。  
+   
+- 对于 c + + 和 JavaScript 应用，选择**否**从**启动应用程序**上的下拉列表中**调试**属性页。  
+  
+有关调试后台任务的详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+  
+###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 调试已安装或正在运行 UWP 应用 
+
+可以使用**调试安装的应用程序包**调试已安装或运行在本地或远程设备上的 UWP 应用。 应用程序可能已安装从 Microsoft Store 中，也可能不是 Visual Studio 项目。 例如，应用可能具有不使用 Visual Studio 的自定义生成系统。  
+  
+您可以立即启动已安装的应用，或您可以将其设置为使用另一种方法启动时在调试器中运行。 有关详细信息，请参阅[触发器挂起、 继续和后台事件适用于 UWP 应用)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+  
+若要在调试器中启动已安装或正在运行 UWP 应用，请选择**调试** > **其他调试目标** > **调试安装的应用程序包**。 有关详细说明，请参阅[调试安装的应用包](../debugger/debug-installed-app-package.md)。
+
 ###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 将调试器附加到正在运行的 Windows 8.x 应用
- 若要将调试器附加到 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用程序，必须使用可调式包管理器将应用程序设置为以调试模式运行。 可调式包管理器与远程工具安装用于 Visual Studio。  
-  
- 当需要调试已安装的应用程序（如从 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]安装的应用程序）时，将调试器附加到应用程序很有用。 在拥有应用程序的源文件，但没有应用程序的 Visual Studio 项目时，必须进行附加。 例如，你的自定义生成系统可能不使用 Visual Studio 项目或解决方案。  
-  
- 将调试器附加到应用程序需要执行以下这些步骤：  
-  
-1.  将应用程序设置为以调试模式运行。 必须在应用程序未运行时执行此操作。  
-  
-2.  启动该应用程序。 可从“开始”屏幕、执行协定或通过某些其他方法启动该应用程序。  
-  
-3.  将调试器附加到正在运行的应用程序。  
-  
-####  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> 将应用程序设置为以调试模式运行  
-  
-1.  用于 Visual Studio 安装的应用在设备上安装远程工具。 请参阅[安装远程工具](../debugger/remote-debugging.md)。  
-  
-2.  在“开始”屏幕上，搜索 `Debuggable Package Manager` ，然后启动它。  
-  
-     随后显示 PowerShell 窗口，该窗口针对 AppxDebug cmdlet 进行了正确的配置。  
-  
-3.  若要能够调试应用程序，必须指定该应用程序的 PackageFullName 标识符。 若要查看包含 PackageFullName 的所有应用程序的列表，请在 PowerShell 提示符下键入 `Get-AppxPackage` 。  
-  
-4.  在 PowerShell 提示符下，输入 `Enable-AppxDebug` *PackageFullName* ，其中 *PackageFullName* 是应用的 PackageFullName 标识符。  
-  
-####  <a name="BKMK_Attach_the_debugger"></a> 附加调试器  
- 若要附加调试器，请执行以下操作：  
-  
-1. 在 **“调试”** 菜单上选择 **“附加到进程”**。  
-  
-    出现 **“附加到进程”** 对话框。  
-  
-2. 若要附加到远程设备上的应用程序，请在 **“限定符”** 框中指定该远程设备。 你可以：  
-  
-   -   在 **“限定符”** 框中输入名称。  
-  
-   -   选择 **“限定符”** 框中的下拉箭头，然后从以前已附加到的设备的列表中选择该设备。  
-  
-   -   选择 **“查找”** ，从本地子网上设备的列表中选择该设备。  
-  
-3. 在 **“附加到”** 框中指定要调试的代码类型。  
-  
-    选择 **“选择”** ，然后执行下列操作之一：  
-  
-   -   选中 **“自动确定要调试的代码类型”**  
-  
-   -   选中 **“调试以下代码类型”** ，然后从列表中选择一个或多个类型。  
-  
-4. 在 **“可用进程”**  列表中，选择应用程序进程。  
 
-   > [!NOTE]
-   >  与其他应用类型，JavaScript 应用使用 wwahost.exe 进程的实例中运行。 附加到应用时，如果其他 JavaScript 应用正在运行，你将需要了解应用正在运行的 wwahost.exe 的数字进程 ID (PID)。  
-   >   
-   >  处理此情形的最简单方法是关闭所有其他 JavaScript 应用。 否则，你可以在启动应用之前打开 Windows 任务管理器并记下 wwahost.exe 进程的 ID。 当你指定要附加到进程**可用进程**对话框中，该应用的 wwahost.exe 具有不同于你记录的 id。  
+若要将调试器附加到 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用程序，必须使用可调式包管理器将应用程序设置为以调试模式运行。 可调式包管理器与远程工具安装用于 Visual Studio。  
   
-5. 选择 **“附加”**。  
+1. 用于 Visual Studio 安装的应用在设备上安装远程工具。 有关详细信息，请参阅[安装远程工具](../debugger/remote-debugging.md)。  
+   
+1. 在 Windows 中**启动**屏幕上，搜索并开始**可调式包管理器**。  
+   
+   随后显示 PowerShell 窗口，该窗口针对 AppxDebug cmdlet 进行了正确的配置。  
+   
+1. 指定应用的 PackageFullName 标识符。 
+   
+   1. 若要查看包含 PackageFullName 的所有应用的列表，请键入`Get-AppxPackage`在 PowerShell 提示符下。  
+   
+   1. 在 PowerShell 提示符下输入`Enable-AppxDebug <PackageFullName>`，其中\<PackageFullName > 是应用的 PackageFullName 标识符。  
+   
+1. 选择“调试” > “附加到进程”。  
+   
+1. 在中**附加到进程**对话框框中，指定在远程设备**连接目标**框。 
+   
+   可以输入设备名称，从下拉列表中选择它**连接目标**框中，或选择**查找**若要查找中的设备**远程连接**对话框。  
+   
+1. 若要指定想要调试下, 一步的代码类型**将附加到**框中，选择**选择**。  
+   
+1. 在中**选择代码类型**对话框框中，选择：
+   - **自动确定要调试的代码类型**，或 
+   - **调试以下代码类型**，然后从列表中选择一个或多个代码类型。  
+   
+1. 在中**可用进程**列表中，选择要调试的应用程序进程。  
+   
+1. 选择**附加**。  
   
-   Visual Studio 将调试器附加到该进程。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。  
-  
+ Visual Studio 将调试器附加到该进程。 持续执行至抵达某个断点、手动暂停执行、发生无法处理的异常或应用程序结束为止。
+
+> [!NOTE]
+> JavaScript 应用使用“wwahost.exe”进程的实例运行。 如果多个 JavaScript 应用正在运行，您需要知道您的应用程序的数字进程 id (PID) *wwahost.exe*要附加到该进程。  
+> 
+> 若要将附加到 JavaScript 应用程序的最简单方法是关闭所有其他 JavaScript 应用。 或者，可以记下运行的 Pid *wwahost.exe*进程在 Windows 任务管理器之前启动应用。 当启动应用，其*wwahost.exe* PID 将不同于先前记下的一个。  
+
 ## <a name="see-also"></a>请参阅  
  [在 Visual Studio 中调试应用](../debugger/debug-store-apps-in-visual-studio.md)   

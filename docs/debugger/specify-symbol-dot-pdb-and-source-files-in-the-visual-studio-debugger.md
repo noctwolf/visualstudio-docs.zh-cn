@@ -1,7 +1,7 @@
 ---
 title: 在调试器中指定符号 (.pdb) 和源文件 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/05/2018
+ms.date: 10/08/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: c289da63a8fbc8469734e905c29edca1149e04c4
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 35eb141850770a20b78020c57868a7fb2ff3bf90
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257376"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389171"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中指定符号 (.pdb) 和源文件 (C#，c + +、 Visual Basic 中， F#)
 
@@ -49,7 +49,7 @@ ms.locfileid: "52257376"
 
 符号文件还显示源文件，和 （可选） 服务器来检索从它们的位置。
   
-调试器仅加载 *.pdb*完全匹配的文件 *.pdb*生成应用时创建的文件 (即，原始 *.pdb*文件或副本)。 此确切的重复项是必需的因为即使代码本身未更改，可更改应用的布局。 有关详细信息，请参阅[为什么 Visual Studio 要求调试器符号文件完全匹配与同时生成的二进制文件？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+调试器仅加载 *.pdb*完全匹配的文件 *.pdb*生成应用时创建的文件 (即，原始 *.pdb*文件或副本)。 此确切的重复项是必需的因为即使代码本身未更改，可更改应用的布局。 有关详细信息，请参阅 [为什么 Visual Studio 要求调试器符号文件必须与同时生成的二进制文件完全匹配？](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
 
 > [!TIP]
 > 若要调试项目源代码，之外的代码，如 Windows 代码或第三方代码项目调用，必须指定的外部代码的位置 *.pdb*文件 （和 （可选） 在源代码文件），其必须完全匹配应用程序中生成。 
@@ -139,7 +139,7 @@ ms.locfileid: "52257376"
   
 你可以选择中的其他符号选项**工具** > **选项** > **调试** > **常规**(或**调试** > **选项** > **常规**):  
 
-- **加载 DLL 导出 （仅限本机）**  
+- **加载 dll 导出(限本机)**  
   
   C/c + +，加载 DLL 导出表。 有关详细信息，请参阅[DLL 导出表](#use-dumpbin-exports)。 读取 DLL 导出信息占用一些系统开销，因此加载导出表处于关闭状态默认情况下。 此外可以使用`dumpbin /exports`C/c + + 生成命令行中。  
   
@@ -156,7 +156,7 @@ ms.locfileid: "52257376"
   可以限制命令的*srcsrv.dll*可从应用程序的执行 *.pdb*通过列出的允许的命令在名为的文件中的文件*srcsrv.ini*。 位置*srcsrv.ini*所在的同一文件夹中的文件*srcsrv.dll*并*devenv.exe*。  
   
   >[!IMPORTANT]
-  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行未在命令*srcsvr.ini*文件将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
+  >任意命令都可以在应用中的嵌入 *.pdb*文件中，因此请确保将你想要执行到命令*srcsrv.ini*文件。 任何尝试执行不在“srcsvr.ini”文件中的命令都将导致出现一个确认对话框。 有关更多信息，请参见 [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md)。 
   >
   >未对命令参数执行任何验证，因此请慎用受信任的命令。 例如，如果列表中，你*cmd.exe*在你*srcsrv.ini*，恶意用户可能会在上指定参数*cmd.exe*那样会使危险。  
   
@@ -168,7 +168,7 @@ ms.locfileid: "52257376"
 
 从使用标准 Visual Studio IDE 生成项目时**调试**生成配置时，c + + 和托管的编译器创建适当的符号文件为你的代码。 此外可以在代码中设置编译器选项。 
 
-### <a name="cc-options"></a>C/c + + 选项 
+### <a name="cc-options"></a>C/C++ 选项 
 
 - *VC\<x >.pdb*并*\<项目 >.pdb*文件
   
@@ -176,13 +176,13 @@ ms.locfileid: "52257376"
   
   如果生成 C/c + + 应用程序使用生成文件，并指定 **/ZI**或 **/Zi**而无需使用 **/Fd**，则编译器会创建两个 *.pdb*文件：  
   
-  - *VC\<x >.pdb*，其中 *\<x >* 表示版本的 Visual c + +，例如*VC11.pdb* 
+  - VC\<x >.pdb，其中 \<x >表示 Visual C++ 版本，例如 VC11.pdb 
     
     *VC\<x >.pdb*文件存储为单独的对象文件中，所有调试信息并驻留在项目生成文件所在的同一目录中。 每次创建对象文件时，C/c + + 编译器都会将合并到的调试信息*VC\<x >.pdb*。 因此，即使每个源文件包含公共头文件，如 *\<windows.h >*，一次，而不是每个对象文件中存储这些标头中的 typedef。 插入的信息包括类型信息，但不包括函数定义等符号信息。  
   
   - *\<项目 >.pdb* 
     
-    *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 *\<项目 >.pdb*文件包含完整的调试信息，包括函数原型中找到不只是该类型信息*VC\<x >.pdb*。 
+    *\<项目 >.pdb*文件将存储项目的所有调试信息 *.exe*文件，并驻留在*\debug*子目录。 \<project.pdb文件包含完整的调试信息（包括函数原型），而不仅仅是在 VC\<x>.pdb中找到的类型信息。 
   
   这两个*VC\<x >.pdb*并*\<项目 >.pdb*文件允许增量更新。 链接器还将嵌入到的路径 *.pdb*中的文件 *.exe*或 *.dll*它创建的文件。  
   
@@ -194,7 +194,7 @@ ms.locfileid: "52257376"
   
 ### <a name="net-framework-options"></a>.NET Framework 选项 
   
-使用生成 **/debug**来创建 *.pdb*文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用生成 **/debug:pdbonly**生成 *.pdb*的文件，但不会生成`DebuggableAttribute`通知 JIT 编译器提供了调试信息。 使用 **/debug:pdbonly**如果你想要生成 *.pdb*版文件生成不要其成为可调试。 有关详细信息，请参阅[/debug （C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或[/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
+使用生成 **/debug**来创建 *.pdb*文件。 可以使用 **/debug:full** 或 **/debug:pdbonly**生成应用程序。 使用 **/debug:full** 进行生成可以生成可调试的代码。 使用 /debug:pdbonly 进行生成可以生成 .pdb 文件，但不会生成通知 JIT 编译器调试信息可用的 `DebuggableAttribute`。 如果想为不希望其成为可调试的发布版本生成 .pdb文件，请使用 /debug:pdbonly。 有关详细信息，请参阅 [/debug（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)或 [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug)。  
   
 ### <a name="web-applications"></a>Web 应用程序  
   
@@ -265,4 +265,4 @@ ms.locfileid: "52257376"
 ## <a name="see-also"></a>请参阅  
 [了解符号文件和 Visual Studio 符号设置](https://blogs.msdn.microsoft.com/devops/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/)
 
-[.NET 远程符号加载 Visual Studio 2012 和 2013年中的更改](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)
+[Visual Studio 2012 和 2013 中的 .NET 远程符号加载更改](https://blogs.msdn.microsoft.com/devops/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013/)

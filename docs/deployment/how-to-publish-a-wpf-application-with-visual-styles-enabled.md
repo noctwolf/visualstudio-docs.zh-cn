@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af0a07abe1cbb380acde91067e3e6252d0cd8596
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4dc45c624d44ed550fb491fc57638ba033090346
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830049"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388103"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何： 发布启用了视觉样式的 WPF 应用程序
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>如何：发布启用了视觉样式的 WPF 应用程序
 视觉样式可启用常用控件以基于用户选择的主题更改的外观。 默认情况下，视觉样式未启用的 Windows Presentation Foundation (WPF) 应用程序中，因此你必须手动启用它们。 但是，启用视觉样式的 WPF 应用程序，然后发布该解决方案将导致错误。 本主题介绍如何解决此错误，发布启用了视觉样式的 WPF 应用程序的过程。 视觉样式的详细信息，请参阅[视觉样式概述](/windows/desktop/Controls/visual-styles-overview)。 有关错误消息的详细信息，请参阅[排查 ClickOnce 部署中的特定错误](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)。  
   
  若要解决此错误并发布解决方案，必须执行以下任务：  
@@ -39,7 +39,11 @@ ms.locfileid: "49830049"
      默认情况下不启用视觉样式。  
   
     ```xml  
-    <dependency>    <dependentAssembly>      <assemblyIdentity          type="win32"          name="Microsoft.Windows.Common-Controls"          version="6.0.0.0"          processorArchitecture="*"          publicKeyToken="6595b64144ccf1df"          language="*"        />    </dependentAssembly>  </dependency>  
+    <dependency>
+        <dependentAssembly>
+            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+        </dependentAssembly>
+    </dependency>
     ```  
   
      以下过程介绍如何打开与项目关联的清单文件。  
@@ -54,7 +58,7 @@ ms.locfileid: "49830049"
   
          在中打开 app.manifest 文件**代码编辑器**。  
   
-    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>若要在 C# 项目中打开清单文件  
+    ###### <a name="to-open-the-manifest-file-in-a-c-project"></a>若要打开清单文件中的C#项目  
   
     1.  在菜单栏上依次选择**项目**， *ProjectName* **属性**，其中*ProjectName*是 WPF 项目的名称。  
   
@@ -65,7 +69,7 @@ ms.locfileid: "49830049"
         > [!NOTE]
         >  如果**使用默认设置嵌入清单**或**创建应用程序而无需清单**出现在清单的字段中，不启用了可视样式。 如果清单文件的名称出现在清单字段，请继续执行此过程的下一步。  
   
-    3.  在中**解决方案资源管理器**，选择**显示所有文件**。  
+    3.  在“解决方案资源管理器”中，选择“显示所有文件”。  
   
          此按钮将显示所有项目项，其中包括已排除，以及通常处于隐藏状态。 清单文件显示为一个项目项。  
   
@@ -78,7 +82,18 @@ ms.locfileid: "49830049"
      此 XML 描述包含支持视觉样式的控件的程序集。  
   
     ```xml  
-    <?xml version="1.0" encoding="utf-8"?><asmv1:assembly manifestVersion="1.0"                xmlns="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv1="urn:schemas-microsoft-com:asm.v1"                xmlns:asmv2="urn:schemas-microsoft-com:asm.v2"                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">  <dependency>    <dependentAssembly>      <assemblyIdentity        type="win32"        name="Microsoft.Windows.Common-Controls"        version="6.0.0.0"        processorArchitecture="*"        publicKeyToken="6595b64144ccf1df"        language="*"        />    </dependentAssembly>  </dependency></asmv1:assembly>  
+    <?xml version="1.0" encoding="utf-8"?>
+    <asmv1:assembly manifestVersion="1.0" 
+        xmlns="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" 
+        xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <dependency>
+            <dependentAssembly>
+                <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />
+            </dependentAssembly>
+        </dependency>
+    </asmv1:assembly>
     ```  
   
 2.  在记事本中，单击**文件**，然后单击**另存为**。  
@@ -163,7 +178,7 @@ ms.locfileid: "49830049"
   
 ## <a name="see-also"></a>请参阅
 
--[ClickOnce 部署中的特定错误的疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
+-[ClickOnce 部署中的特定错误疑难解答](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
 - [视觉样式概述](/windows/desktop/Controls/visual-styles-overview)
 - [启用视觉样式](/windows/desktop/Controls/cookbook-overview)
 - [命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)

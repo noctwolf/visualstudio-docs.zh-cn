@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 调试器中使用断点 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 02/07/2018
+ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -36,20 +36,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bd522a5f5ff39814df3526843ae7d03578f92e86
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826838"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389132"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
   
 ##  <a name="BKMK_Overview"></a> 在源代码中设置断点  
- 可以在任意可执行代码行上设置断点。 例如，在以下 C# 代码，可以设置断点在变量声明`for`循环中或内的任何代码`for`循环。 命名空间或类声明或方法签名，无法设置断点。  
+ 可以在任意可执行代码行上设置断点。 例如，在以下C#代码中，您可以在变量声明中，设置一个断点`for`循环中或内的任何代码`for`循环。 命名空间或类声明或方法签名，无法设置断点。  
 
  若要在源代码中设置断点，请单击代码行旁边的最左侧边距中。 您还可以选择行，然后按**F9**，选择**调试** > **切换断点**，或右键单击并选择**断点** > **插入断点**。 断点显示为左边距中的一个红点。  
+
+在C#自动突出显示代码、 断点和当前执行行。 对于 c + + 代码，您也可以通过选择断点和当前行的突出显示**工具**(或**调试**) >**选项** >  **调试** >  **为突出显示整个源行断点和当前语句 （c + +）**。 
   
  ![设置断点](../debugger/media/basicbreakpoint.png "基本断点")  
   
@@ -59,7 +61,7 @@ ms.locfileid: "51826838"
   
  ![断点执行已停止](../debugger/media/breakpointexecution.png "断点执行")  
   
- 当调试器在断点处停止时，您可以查看应用程序，包括变量值和调用堆栈的当前状态。 有关调用堆栈的详细信息，请参阅[如何： 使用调用堆栈窗口](../debugger/how-to-use-the-call-stack-window.md)。  
+ 当调试器在断点处停止时，您可以查看应用程序，包括变量值和调用堆栈的当前状态。 有关调用堆栈的详细信息，请参阅 [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。  
 
 - 断点是一个触发器。 您可以单击它，请按**F9**，或使用**调试** > **切换断点**删除或重新插入。
   
@@ -87,7 +89,7 @@ ms.locfileid: "51826838"
 
 调试器在指令处中断。  
 
-有关调用堆栈的详细信息，请参阅[如何： 使用调用堆栈窗口](../debugger/how-to-use-the-call-stack-window.md)。 
+有关调用堆栈的详细信息，请参阅 [如何：使用“调用堆栈”窗口](../debugger/how-to-use-the-call-stack-window.md)。 
 
 在代码执行过程中直观地跟踪断点，请参阅[调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。 
   
@@ -113,11 +115,11 @@ ms.locfileid: "51826838"
    
    - 使用完全限定的函数名称。 
      
-     示例：  `Namespace1.ClassX.MethodA()`
+     示例：`Namespace1.ClassX.MethodA()`
      
    - 添加重载函数的参数类型。 
      
-     示例：  `MethodA(int, string)`
+     示例：`MethodA(int, string)`
      
    - 使用 ！ 符号指定模块。
      
@@ -158,21 +160,21 @@ ms.locfileid: "51826838"
 
     您还可以选择**新建** > **数据断点**中**断点**窗口。
   
-2.  在中**地址**框中，键入内存地址或表达式的计算结果为内存地址。 例如，键入 `&avar` 以在变量 `avar` 的内容更改时执行中断操作。  
+2.  在“地址”框中，键入内存地址或计算结果为内存地址的表达式。 例如，键入 `&avar` 以在变量 `avar` 的内容更改时执行中断操作。  
   
 3.  在 **“字节计数”** 下拉菜单中，选择你想要调试程序监视的字节数。 例如，如果选择 **4**，则调试程序将监视从 `&avar` 开始的四个字节，并在其中任何字节的值发生更改时执行中断操作。  
 
 在以下情况下，数据断点不起作用：  
--   当前未被调试的进程写入内存位置。  
--   两个或多个进程间共享的内存位置。  
+-   将未经调试的进程写入内存位置。  
+-   在两个或多个进程间共享内存位置。  
 -   内存位置在内核内更新。 例如，如果内存传递给 32 位 Windows`ReadFile`函数，将从内核模式下，更新内存，因此调试器不会中断该更新。  
 
 >[!NOTE]
 >- 数据断点依赖于特定的内存地址。 变量的地址更改从一个调试会话为下一步，因此数据断点将被自动禁用每个调试会话结束时。  
 >  
->- 如果在本地变量上设置数据断点，该函数结束时，断点将保持启用状态，但内存地址不再适用，因此是不可预知的断点行为。 如果在本地变量上设置数据断点，应删除或禁用在函数结束前的断点。  
+>- 如果在局部变量上设置数据断点，则断点在函数结束时仍处于启用状态，但内存地址不再适用，因此断点的行为不可预测。 如果在本地变量上设置数据断点，应删除或禁用在函数结束前的断点。  
 
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 在断点窗口中管理断点 
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a>在“断点”窗口中管理断点 
 
  可以使用**断点**窗口来查看和管理你的解决方案中的所有断点。 此集中的位置是在大型解决方案中，或对于复杂断点非常关键的调试方案尤其有用。 
 
@@ -199,7 +201,7 @@ ms.locfileid: "51826838"
 - 若要在中导入断点，**断点**窗口中，选择**从文件导入断点**图标，导航到 XML 文件位置，然后选择**打开**。 
 
 ##  <a name="breakpoint-conditions"></a>断点条件  
- 可以通过设置条件来控制在何时何处执行断点。 条件可以是调试器能够识别任何有效表达式。 有关有效表达式的详细信息，请参阅[调试器中的表达式](../debugger/expressions-in-the-debugger.md)。  
+ 可以通过设置条件来控制在何时何处执行断点。 条件可以是调试器能够识别任何有效表达式。 有关有效表达式的详细信息，请参见[调试器中的表达式](../debugger/expressions-in-the-debugger.md)。  
 
 **若要设置断点条件：**
 
@@ -231,12 +233,12 @@ ms.locfileid: "51826838"
  如果使用无效语法设置断点条件，则会显示警告消息。 如果在指定断点条件时使用的语法有效但语义无效，则在第一次命中断点将出现警告消息。 在任一情况下，调试器将中断时它会命中断点无效。 仅在条件有效且计算结果为 `false`时才会跳过断点。  
   
  >[!NOTE]
- >行为**发生更改时**字段是不同的不同的编程语言。 
+ >不同编程语言的“更改时”字段的行为不同。 
  >- 对于本机代码，调试器不会考虑更改，因此不会命中第一次计算断点条件的第一次计算。 
  >- 对于托管代码，调试器命中断点后第一次计算**发生更改时**处于选中状态。  
   
 ### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>在条件表达式中使用对象 Id (C#和F#仅)  
- 有些的时候，当你想要观察特定对象的行为。 例如，你可能想要找出为什么对象插入到集合一次以上。 在C#和F#，可以创建的特定实例的对象 Id[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)，并在断点条件中使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  
+ 有些的时候，当你想要观察特定对象的行为。 例如，你可能想要找出为什么对象插入到集合一次以上。 在 C# 和 F# 中，可以创建[引用类型](/dotnet/csharp/language-reference/keywords/reference-types)的特定实例的对象 ID，并在断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。  
 
 **若要创建对象 ID:** 
   
@@ -248,9 +250,9 @@ ms.locfileid: "51826838"
    
    应该会在“局部变量” **$** 窗口中看到 **$** 窗口中设置断点来中断调用函数返回到的指令或行处的执行。 这就是对象 ID。  
    
-3. 你想要调查; 点处添加新的断点例如，当该对象是添加到集合。 右键单击断点并选择**条件**。  
+3. 你想要调查; 点处添加新的断点例如，当该对象是添加到集合。 右键单击该断点并选择“条件”。  
    
-4. 使用中的对象 ID**条件表达式**字段。 例如，如果变量`item`是要添加到集合中，选择的对象**为 true**并键入**item = = $\<n >**，其中\<n > 的对象 ID 号.  
+4. 在“条件表达式”字段中使用对象 ID。 例如，如果变量`item`是要添加到集合中，选择的对象**为 true**并键入**item = = $\<n >**，其中\<n > 的对象 ID 号.  
    
    会在将该对象添加到集合中时中断执行。  
    
@@ -279,14 +281,14 @@ ms.locfileid: "51826838"
 
 将字符串值放在双引号内。 可以使用 `&` (AND)、 `||` (OR)、 `!` (NOT) 和括号合并子句。  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 断点操作和跟踪点  
- 一个*跟踪点*是将消息打印到断点**输出**窗口。 跟踪点的作用像这种编程语言中的一个临时跟踪语句。  
+##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>断点操作和跟踪点  
+ “跟踪点”是将消息打印到“输出”窗口的断点。 跟踪点的作用像这种编程语言中的一个临时跟踪语句。  
   
 **若要设置跟踪点：**
 
 1. 右键单击断点并选择**操作**。 或者，在**断点设置**窗口中，悬停在所需断点，选择**设置**图标，，然后选择**操作**。  
    
-1. 输入中的消息**将消息记录到输出窗口**字段。 消息可以包含通用文本字符串，值的变量或表达式括在大括号和格式说明符 ([C#](../debugger/format-specifiers-in-csharp.md)并[c + +](../debugger/format-specifiers-in-cpp.md)) 的值。
+1. 输入中的消息**将消息记录到输出窗口**字段。 消息可以包含通用文本字符串，值的变量或表达式括在大括号和格式说明符 ([ C# ](../debugger/format-specifiers-in-csharp.md)并[c + +](../debugger/format-specifiers-in-cpp.md)) 的值。
    
    此外可以在消息中使用以下特殊关键字：  
    
@@ -305,7 +307,7 @@ ms.locfileid: "51826838"
 跟踪点显示为红色方块中的源代码的左边距和**断点**windows。 
   
 ## <a name="see-also"></a>请参阅  
- [什么调试？](../debugger/what-is-debugging.md)  
+ [什么是调试？](../debugger/what-is-debugging.md)  
  [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md)  
  [在 Visual Studio 调试器中的断点疑难解答](../debugger/troubleshooting-breakpoints.md)  
