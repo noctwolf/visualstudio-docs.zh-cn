@@ -25,59 +25,61 @@ ms.locfileid: "52257207"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
-**自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。 **自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+在调试时，**自动**和**局部变量**窗口会显示变量值。 这些窗口仅在调试会话期间可用。 **自动**窗口显示在当前断点附近的变量。 **局部变量**窗口显示在局部范围内定义的变量，通常是当前函数或方法。 如果这是您第一次尝试调试代码，那么在阅读本文之前，您可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)和[零基础调试](../debugger/debugging-absolute-beginners.md)。
 
- **自动**窗口是适用于C#，Visual Basic、 c + + 和 Python 代码，而不是 JavaScript 或F#。
-  
-若要打开**自动**窗口中的，调试时，选择**调试** > **Windows** > **自动**，或按**Ctrl**+**Alt**+**V** > **A**。  
+ **自动**窗口可用于C#，Visual Basic，C ++和Python代码，但不适用于 JavaScript 或F#。
+ 
+要在调试时打开**自动**窗口，请选择**Debug> Windows> Autos**，或按**Ctrl + Alt + V> A**.
 
-若要打开**局部变量**窗口中的，调试时，选择**调试** > **Windows** > **局部变量**，或按**Alt**+**4**。
+要在调试时打开**局部变量**窗口，请选择**Debug> Windows> Locals**，或按**Alt + 4**。
 
 如果您需要了解基本调试的详细信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac ，请参阅[ Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
 
 ## <a name="use-the-autos-and-locals-windows"></a>使用自动和局部变量窗口
 
-数组和对象中显示**自动**并**局部变量**windows 为树控件。 选择要展开的视图，以显示字段和属性的变量名称左侧的箭头。 下面是举例<xref:System.IO.FileStream?displayProperty=fullName>对象中**局部变量**窗口：
+数组和对象在**自动**和**局部变量**窗口中显示为树形控件。 选择变量名称左侧的箭头以展开视图以显示字段和属性。 以下是**局部变量**窗口中<xref:System.IO.FileStream?displayProperty=fullName>对象的示例：
 
 ![局部变量 FileStream](../debugger/media/locals-filestream.png "局部变量 FileStream")
 
-中的红色值**局部变量**或**自动**窗口意味着自上次评估以来已更改值。 此更改可能是从上一个调试会话，或因为您更改在窗口中的值。
+**局部变量**或**自动**窗口中的红色值表示自上次评估后值已更改。 更改可能来自之前的调试会话，也可能是因为您更改了窗口中的值。
 
-在调试器窗口中的默认数字格式为 decimal。 若要将其更改为十六进制，右键单击**局部变量**或**自动**窗口，然后选择**十六进制显示**。 此更改会影响所有调试器窗口。
+调试器窗口中的默认数字格式为十进制。 要将其更改为十六进制，请在**局部变量**或**自动**窗口中单击鼠标右键，然后选择**十六进制显示**。 此更改会影响所有调试器窗口。
+
 
 ## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>编辑自动或局部变量窗口中的变量值
 
-若要编辑的值中的大多数变量**自动**或**局部变量**windows 中，双击值并输入新值。
+要在**自动**或**局部变量**窗口中编辑大多数变量的值，请双击该值并输入新值。
 
 你可以输入表达式作为一个值，例如 `a + b`。 调试器接受大多数合法的语言表达式。
 
 在本机 C++ 代码中，你可能需要限定变量名的上下文。 有关详细信息，请参阅[上下文运算符 （c + +）](../debugger/context-operator-cpp.md)。
 
+
 >[!CAUTION]
->请确保你了解后果之前更改值和表达式。 可能存在的问题是：
+>在更改值和表达式之前，请确保您了解其后果。 一些可能的问题是：
 >
->-   计算某些表达式可以更改变量的值，或会影响程序的状态。 例如，计算`var1 = ++var2`更改的值都`var1`和`var2`。 这些表达式被视为具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不了解这些副作用会导致意外的结果。
+>-   计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算`var1 = ++var2`会更改`var1`和`var2`的值。 这些表达式被视为具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不了解副作用，可能会导致意外结果。
 >
 >-   编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中的位的某些更改。
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>将自动或局部变量窗口的上下文
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>更改自动或局部变量窗口的上下文
 
-可以使用**调试位置**工具栏来选择所需的函数、 线程或进程，这会更改为上下文**自动**并**局部变量**windows。
+您可以使用**调试位置**工具栏选择所需的函数、 线程或进程，从而更改**自动**和**局部变量**窗口的上下文。
 
-若要启用**调试位置**工具栏上，单击工具栏区域和选择的空白部分**调试位置**从下拉列表中或选择**视图** >  **工具栏** > **调试位置**。
+要启用**调试位置**工具栏，请单击工具栏区域的空白部分，然后从下拉列表中选择**调试位置**，或选择**视图** >  **工具栏** > **调试位置**。
 
-设置断点并开始调试。 当到达断点时，执行暂停，你可以查看中的位置**调试位置**工具栏。
+设置断点并开始调试。 当命中断点时，执行暂停，您可以在**调试位置**工具栏中看到该位置。
 
 ![调试位置工具栏](../debugger/media/debuglocationtoolbar.png "调试位置工具栏")
 
-## <a name="bkmk_whatvariables"></a> 自动窗口中的变量 (C#，c + +、 Visual Basic 中，Python)
+## <a name="bkmk_whatvariables"></a> 自动窗口中的变量 (C#，c + +、 Visual Basic ，Python)
 
- 不同的代码语言显示在不同的变量**自动**窗口。
+ 不同的代码语言在**自动**窗口中显示不同的变量。
 
- - 在C#和 Visual Basic**自动**窗口显示当前或前一行中使用的任何变量。 例如，在C#或 Visual Basic 代码中，声明以下四个变量：
+ - 在C#和 Visual Basic中，**自动**窗口显示当前行或上一行使用的任何变量。 例如，在C#或Visual Basic代码中，声明以下四个变量：
 
    ```csharp
        public static void Main()
@@ -90,13 +92,13 @@ ms.locfileid: "52257207"
        }
    ```
 
-   在行上设置断点`c = 3;`，并启动调试器。 时暂停执行，**自动**窗口将显示：
+   在`c = 3;`行上设置断点，然后启动调试器。 执行暂停时，**自动**窗口将显示：
 
    ![自动 CSharp](../debugger/media/autos-csharp.png "自动 CSharp")
 
-   值`c`为 0，因为行`c = 3`尚未执行。
+   `c`的值为 0，因为`c = 3`尚未执行。
 
- - C + +**自动**窗口将显示执行会暂停当前行之前的至少三行中使用的变量。 例如，在 c + + 代码中，声明六个变量：
+ - 在C ++中，**自动**窗口显示在暂停执行的当前行之前至少三行中使用的变量。 例如，在C ++代码中，声明六个变量：
 
    ```C++
        void main() {
@@ -110,16 +112,17 @@ ms.locfileid: "52257207"
        }
    ```
 
-    在行上设置断点`e = 5;`并运行调试器。 当执行停止时，**自动**窗口将显示：
+    在`e = 5;`这行设置断点并运行调试器。 当执行停止时，**自动**窗口将显示：
 
     ![自动 c + +](../debugger/media/autos-cplus.png "自动 c + +")
 
-    在变量`e`是未初始化，因为行`e = 5`尚未执行。
+    变量`e`未初始化，因为`e = 5`尚未执行。
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
- 在.NET 和 c + + 代码中，可以检查中的返回值**自动**窗口时单步或跳出方法调用。 查看方法调用返回时它们不会存储在本地变量的值会很有用。 可以使用一种方法，作为一个参数，或另一种方法的返回值。
+##  <a name="bkmk_returnValue"></a> 查看方法调用的返回值
+ 在.NET 和 C ++ 代码中，当您单步调试或退出方法调用时，可以在**自动**窗口中检查返回值。 当没有保存在局部变量中时，查看方法调用返回值会非常有用。 方法可以用作参数，也可以用作另一种方法的返回值。
 
- 例如，以下C#代码将添加两个函数的返回值：
+例如，以下C＃代码添加了两个函数的返回值：
+
 
 ```csharp
 static void Main(string[] args)
@@ -143,11 +146,11 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-若要查看的返回值`sumVars()`和`subtractVars()`方法调用自动窗口中：
+要在**自动**窗口中查看`sumVars()`和`subtractVars()`方法调用的返回值，请执行以下操作：
 
 1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。  
    
-1. 开始调试，并在断点处暂停执行，选择**单步跳过**或按**F10**。 您应看到在以下的返回值**自动**窗口：  
+1. 开始调试，当执行在断点处暂停时，选择**单步跳过**或按**F10**。 您应该在**自动**窗口中看到以下返回值： 
    
   ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")  
   
