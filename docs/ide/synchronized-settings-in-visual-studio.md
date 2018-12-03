@@ -1,6 +1,6 @@
 ---
 title: 同步设置
-ms.date: 01/23/2017
+ms.date: 11/21/2018
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 633767e66a4b3d976999574c885a3e6f7a06ddcf
-ms.sourcegitcommit: 4cd4aef53e7035d23e7d1d0f66f51ac8480622a1
+ms.openlocfilehash: ecac148e745eff956151af71a37b23f67a816f56
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34766124"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388486"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多台计算机同步 Visual Studio 设置
 
@@ -27,7 +27,7 @@ ms.locfileid: "34766124"
 
 默认情况下，以下设置会进行同步：
 
-- 开发设置。 必须在首次运行 Visual Studio 时选择一组设置，但是可以随时更改选择。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+- 开发设置。 需要在首次打开 Visual Studio 时选择设置集合，但是可以随时更改选择。 有关详细信息，请参阅[环境设置](../ide/environment-settings.md)。
 
 - 用户定义的命令别名。 有关如何定义命令别名的详细信息，请参阅 [Visual Studio 命令别名](../ide/reference/visual-studio-command-aliases.md)。
 
@@ -53,24 +53,6 @@ ms.locfileid: "34766124"
 
 默认情况下启用 Visual Studio 的同步设置。 可以通过转到“工具” > “选项” > “环境” > “帐户”页并取消选中“登录到 Visual Studio 时，跨设备同步设置”，关闭计算机上的同步设置。 例如，如果决定不同步计算机“A”上的 Visual Studio 设置，那么计算机“A”上的任何设置更改将不会出现在计算机“B”或计算机“C”上。 计算机“B”和“C”将继续与彼此同步，但不与计算机“A”同步。
 
-## <a name="reset-settings"></a>重置设置
-
-可按照以下步骤将所有设置重置为默认设置的集合：
-
-1. 在 Visual Studio 中，选择“工具” > “导入和导出设置”以打开“导入和导出设置向导”。
-
-1. 在“导入和导出设置向导”中，选择“重置所有设置”，然后选择“下一步”。
-
-   ![在 Visual Studio 中导入和导出设置向导](media/reset-all-settings.png)
-
-1. 在“保存当前设置”页上，选择“是”或“否”，然后选择“下一步”。
-
-1. 在“选择设置的默认集合”页上，选择一个集合，然后选择“完成”。
-
-   ![Visual Studio 中的设置集合](media/settings-collections.png)
-
-1. 在“重置完成”页上，选择“关闭”。
-
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>在 Visual Studio 系列产品和版本之间同步设置
 
 可以在 Visual Studio 的任何版本（包括 Community 版本）之间同步设置。 Visual Studio 系列产品之间的设置也是同步的。 但是，这些系列产品中的每一个都可能具有它自己与 Visual Studio 不共享的设置。 例如，特定于计算机“A”上的某种产品的设置将与计算机“B”上的另一种产品共享，但不与计算机“A”或“B”上的 Visual Studio 共享。
@@ -94,4 +76,6 @@ ms.locfileid: "34766124"
 
 ## <a name="see-also"></a>请参阅
 
-[个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [个性化 IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [环境设置](../ide/environment-settings.md)
+- [“环境”>“帐户选项”对话框](reference/synchronized-settings-environment-options-dialog-box.md)

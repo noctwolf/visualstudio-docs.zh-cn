@@ -19,12 +19,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a20abd4971f785261db4437a6e2f839717ab0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3b76e34ba77335c242c752c055e2560cc73141d2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818258"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388395"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以独占方式使用键盘
 
@@ -34,16 +34,15 @@ ms.locfileid: "49818258"
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供了多种默认快捷键组合，方便在集成开发环境 (IDE) 中导航和编写代码。 有关 Visual Studio 中使用的完整快捷键列表，请参阅[默认键盘快捷键](../../ide/default-keyboard-shortcuts-in-visual-studio.md)。 有关其他 Microsoft 产品可用的键盘快捷方式的信息，请参阅 [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400)。
 
 > [!NOTE]
-> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)。
-
+> 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../environment-settings.md#reset-settings)。
 
 ## <a name="toolbox-controls"></a>工具箱控件
 
- 可以使用键盘将工具箱上的控件添加到表单或设计器中。
+可以使用键盘将工具箱上的控件添加到表单或设计器中。
 
-#### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用键盘将工具箱中的控件添加到设计器中
+### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>使用键盘将工具箱中的控件添加到设计器中
 
-1. 在菜单栏上，依次选择“视图”、“工具箱”。
+1. 在菜单栏上，依次选择“视图” > “工具箱”。
 
 2. 使用 Ctrl+向上键或 Ctrl+向下键，在当前“工具箱”选项卡的各部分间移动。
 
@@ -57,9 +56,9 @@ ms.locfileid: "49818258"
 
  通过使用键盘，可以在对话框中的选项间移动并更改选项的设置。
 
-#### <a name="to-set-dialog-box-options-from-the-keyboard"></a>使用键盘设置对话框选项
+### <a name="to-set-dialog-box-options-from-the-keyboard"></a>使用键盘设置对话框选项
 
-1.  使用 Tab 或 Shift+Tab，在对话框中的控件间上下移动。
+1.  使用 Tab 或 Shift + Tab，在对话框中的控件间上下移动。
 
 2.  更改选项设置：
 
@@ -77,13 +76,13 @@ ms.locfileid: "49818258"
 
  IDE 提供了几种使用键盘在打开的工具窗口和文档窗口间移动的方法。 也可以使用键盘移动工具窗口并将其停靠在不同的位置。
 
-#### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>使用键盘在 IDE 的窗口和文件间导航
+### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>使用键盘在 IDE 的窗口和文件间导航
 
 -   若要在编辑器或设计器中的文件间移动，请选择 Ctrl+Tab 键，显示 IDE 导航器，并选中“活动文件”。 选择 Enter 键，导航到突出显示的文件。
 
 -   若要在停靠的工具窗口间移动，请选择 Alt+F7，显示 IDE 导航器，并选择“活动工具窗口”。 选择 Enter 键，导航到突出显示的窗口。
 
-#### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>通过键盘移动和停靠工具窗口
+### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>通过键盘移动和停靠工具窗口
 
 1.  导航到要移动的工具窗口，并将焦点置于该窗口。
 

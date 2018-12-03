@@ -1,6 +1,6 @@
 ---
 title: 添加新数据源
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
@@ -15,16 +15,16 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bbe808f1c43e0f4083f5ed1d04db347560a2630
-ms.sourcegitcommit: 6944ceb7193d410a2a913ecee6f40c6e87e8a54b
-ms.translationtype: MT
+ms.openlocfilehash: fe32424632d06ed637b41dcd3d4b614afde369bd
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "35666626"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52304605"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 
-在上下文中的.NET data tools 在 Visual Studio 中，术语*数据源*指连接到数据存储和公开到.NET 应用程序数据的.NET 对象。 Visual Studio 设计器可以使用数据源以生成将数据绑定到窗体上，拖动并放置中的数据库对象时的样板代码的输出**数据源**窗口。 此类数据源可以是：
+在上下文中的.NET data tools 在 Visual Studio 中，术语*数据源*指连接到数据存储，使数据可用于.NET 应用程序的.NET 对象。 Visual Studio 设计器可以使用数据源以生成将数据绑定到窗体上，拖动并放置中的数据库对象时的样板代码的输出**数据源**窗口。 此类数据源可以是：
 
 - 与某种类型的数据库相关联的实体框架模型中的类。
 
@@ -37,13 +37,22 @@ ms.locfileid: "35666626"
 - 类或你的解决方案中的集合。
 
 > [!NOTE]
-> 如果不使用数据绑定功能，则不适用的数据集、 实体框架中，LINQ to SQL，WCF 或 SharePoint，"数据源"的概念。 只需通过直接连接到该数据库使用 SQLCommand 对象并直接与数据库通信。
+> 如果您不使用数据绑定功能，则不适用的数据集、 实体框架中，LINQ to SQL，WCF 或 SharePoint，"数据源"的概念。 只需通过直接连接到该数据库使用 SQLCommand 对象并直接与数据库通信。
 
 创建和编辑数据源使用**数据源配置向导**Windows 窗体或 Windows Presentation Foundation 应用程序中。 有关实体框架中，首先创建实体类，并选择，然后启动向导**项目** > **添加新数据源**（本文后面的更多详细信息中所述）。
 
 ![数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)
 
-创建数据源后，它将出现在**数据源**工具窗口 (**Shift**+**Alt**+**D**或**视图** > **其他 Windows** > **数据源**)。 可以将从数据源**数据源**窗口拖到窗体设计图面或控件。 这将导致样板文件代码以生成，显示从数据存储的数据。 下图显示了已删除 Windows 窗体上的数据集。 如果选择**F5**应用程序，从基础数据库的数据显示在窗体的控件。
+## <a name="data-sources-window"></a>“数据源”窗口
+
+创建数据源后，它将出现在**数据源**工具窗口。
+
+> [!TIP]
+> 若要打开**数据源**窗口中，请确保你的项目处于打开状态，，然后按**Shift**+**Alt**+**D**或选择**视图** > **其他 Windows** > **数据源**。
+
+可以将从数据源**数据源**窗口拖到窗体设计图面或控件。 这将导致样板文件代码以生成，显示从数据存储的数据。
+
+下图显示了已删除 Windows 窗体上的数据集。 如果选择**F5**应用程序，从基础数据库的数据显示在窗体的控件。
 
 ![数据源拖放操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
@@ -79,14 +88,14 @@ ms.locfileid: "35666626"
 
 可以从以下类型的服务创建数据源：
 
-- [WCF 数据服务](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
 - [WCF 服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 
 - Web 服务
 
     > [!NOTE]
-    > 在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有提供足够的信息供**数据源配置向导**创建可绑定的对象。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。
+    > 在显示的项**数据源**窗口都依赖于该服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果该服务返回的非类型化数据集，显示任何项中**数据源**窗口时完成该向导。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。
 
 ## <a name="data-source-for-an-object"></a>一个对象的数据源
 

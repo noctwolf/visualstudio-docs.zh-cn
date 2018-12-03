@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 调试器中查看注册值 |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -25,35 +25,36 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f236bf43d3667cd4263d205c4588593a973824d
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: ab40e0b63b2a679b4c36a4625d517a03b6c123ad
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257158"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389320"
 ---
-# <a name="view-register-values-and-use-the-registers-window-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>查看注册值，并使用 Visual Studio 调试器中的寄存器窗口 (C#，c + +、 Visual Basic 中， F#)
-寄存器窗口是在启用了地址级调试时才可用**选项**对话框中，**调试**节点，**常规**类别。  
-  
- **注册**窗口显示寄存器内容。 如果将保留**注册**窗口打开状态，因为单步执行应用程序，可以看到寄存器值发生更改，在代码执行。 最近更改过的值显示为红色。 您可以编辑寄存器的值。 有关详细信息，请参阅[如何： 编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。  
-  
- 为了减少混乱，**注册**窗口将寄存器组织成组，会根据平台和处理器类型的不同类型。 可以根据需要显示或隐藏组。 有关详细信息，请参阅[如何： 显示和隐藏寄存器组](../debugger/how-to-display-and-hide-register-groups.md)。  
-  
- 有关寄存器和寄存器窗口背后概念的简要介绍，请参阅[调试基础知识： 寄存器窗口](../debugger/debugging-basics-registers-window.md)。  
-  
+# <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在寄存器窗口中查看注册值 (C#，c + +、 Visual Basic 中， F#)
+
+**注册**Visual Studio 在调试期间，窗口显示寄存器内容。 有关寄存器背后概念的简要介绍并**注册**窗口中，请参阅[调试基础知识: 寄存器窗口](../debugger/debugging-basics-registers-window.md)。
+
 > [!NOTE]
->  显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。  
-  
-### <a name="to-display-the-registers-window"></a>显示“寄存器”窗口  
-  
--   上**调试**菜单中，选择**Windows**，然后选择**注册**(或选择**Ctrl** + **Alt**  +  **G**)。  
-  
-     调试器必须正在运行或处于中断模式。  
-  
-    > [!NOTE]
-    >  寄存器信息对于脚本或 SQL 应用程序不可用。  
-  
-## <a name="see-also"></a>请参阅  
- [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)   
- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
- [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)
+> 寄存器信息不可用的脚本或 SQL 应用。
+
+在调试期间，注册值更改，因为应用程序中执行代码。 以红色中最近显示更改的值**注册**窗口。
+
+为了减少混乱，“寄存器”窗口将寄存器组织成组，具体情况随平台和处理器类型的不同而不同。 您可以显示或隐藏寄存器组。 有关详细信息，请参见[如何：显示和隐藏寄存器组](../debugger/how-to-display-and-hide-register-groups.md)。
+
+您可以编辑寄存器的值。 有关详细信息，请参阅[如何： 编辑寄存器值](../debugger/how-to-edit-a-register-value.md)。
+
+**若要打开寄存器窗口**
+
+1. 启用地址级调试，通过选择**启用地址级调试**中**工具**(或**调试**) >**选项** > **调试**。
+
+1. 当调试正在运行或在断点处时，选择**调试** > **Windows** > **注册**，或按**Alt**+ **5**。
+
+>[!NOTE]
+>对话框和菜单命令可能会根据你的 Visual Studio 版本或设置不同。 若要更改设置，请选择**导入和导出设置**Visual studio**工具**菜单。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
+
+### <a name="see-also"></a>请参阅
+
+- [调试基础知识：“寄存器”窗口](../debugger/debugging-basics-registers-window.md)
+- [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)

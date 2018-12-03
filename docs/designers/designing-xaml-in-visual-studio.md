@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - uwp
-ms.openlocfilehash: a3adcb961e3031180054706da9d43dd04dccdedf
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: c23a73302e5d4771b3372b8f4534b42806156da0
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348638"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389612"
 ---
 # <a name="design-xaml-in-visual-studio"></a>在 Visual Studio 中设计 XAML
 
@@ -48,7 +48,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
      ![文件重新加载体验](../designers/media/blendfilereload.png)
 
-- **同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+- **同步的布局和设置：** 通过自定义布局可以保存并应用工具窗口布局自定义项。 使用相同 Microsoft 帐户登录时，Visual Studio 会在计算机之间为 Visual Studio 和 Blend for Visual Studio 同步这些自定义项和首选项。 请参见[跨多台计算机同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 
 - **通用的解决方案资源管理器：** 解决方案资源管理器可提供项目及其文件的组织有序的视图，并且可用于访问与它们关联的命令。 借助解决方案资源管理器，可以更方便地处理大型企业项目。 请参阅[解决方案和项目](../ide/solutions-and-projects-in-visual-studio.md)。
 

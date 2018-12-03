@@ -9,12 +9,12 @@ description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a384769b5d2f643a215a1a0c136fc44fd7d45e42
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
+ms.openlocfilehash: c39b7e052f3e978530dbc093767fabde4172d8e2
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826686"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389106"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -39,11 +39,7 @@ ms.locfileid: "51826686"
    > [!div class="mx-imgBorder"]
    > ![激活 Pluralsight 权益](_img/vs-pluralsight/vs-pluralsight-activate.png)
 
-3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。  在此示例中，我们将激活通过 Visual Studio Dev Essentials 成员身份提供的权益。 单击“激活权益”。
-   > [!div class="mx-imgBorder"]
-   > ![Pluralsight VSDE 登录页](_img/vs-pluralsight/vs-pluralsight-vsde-landing.png)
-
-4. 在激活页上执行以下操作：
+3. 将重定向到“Pluralsight”页，以获取 Visual Studio 订阅中包含的权益。  
    - 在窗体上提供所需的联系人信息
    - 单击复选框接受使用和隐私策略条款
    - 单击“我同意，激活权益”。
@@ -85,7 +81,7 @@ ms.locfileid: "51826686"
 
 <sup>1</sup>包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、MCT 软件和服务开发人员、MCT 软件和服务、Microsoft 最有价值专家 (MVP)、区域总监 (RD)、Microsoft 合作伙伴网络 (MPN)、FTE、Imagine。
 
-<sup>2</sup> *Pluralsight 权益绑定到个人，仅限使用一次。  订阅者使用该权益后便无法再重置。 
+<sup>2</sup> *Pluralsight 权益绑定到个人，仅限使用一次。订阅者使用该权益后便无法再重置。*
 
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
