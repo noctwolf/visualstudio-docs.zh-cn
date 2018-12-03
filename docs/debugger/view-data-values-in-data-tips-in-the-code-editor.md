@@ -1,7 +1,7 @@
 ---
 title: 在代码编辑器中查看数据提示中的数据值 |Microsoft Docs
 ms.custom: ''
-ms.date: 07/14/2017
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -19,127 +19,116 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: afb318c8aa327345b3cd76ee16b718db1e0386aa
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: c473faf449176b38d4505675b1060618344db0d6
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826726"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388155"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在代码编辑器中的数据提示中的视图数据值
-使用数据提示功能，可以在调试期间方便地查看程序中变量的有关信息。 数据提示功能只能在中断模式下可用，并且只对当前执行范围内的变量有效。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
-  
-### <a name="to-display-a-datatip"></a>若要显示数据提示  
-  
-1. 设置断点并开始调试 (按**F5**)。
 
-2. 在调试器中暂停，将鼠标指针放在当前作用域中的任何变量上。
-  
-     屏幕上显示数据提示。
-  
-3.  移开鼠标指针时，数据提示会消失。 若要固定数据提示以便它保持打开状态，请单击**固定到源**图标或右键单击一个变量，然后单击**固定到源**。
+数据提示是在调试过程中应用程序中查看变量的信息的简便方法。 
 
-    ![固定数据提示](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
+如果这是你第一次调试，你可能需要阅读[更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)阅读本文之前。
+  
+## <a name="work-with-datatips"></a>使用数据提示
 
-    > [!NOTE]
-    > 始终在挂起执行的上下文中（而不是在光标的悬停位置）计算数据提示。 如果将鼠标指针悬停在另一函数中的变量的上方（该变量与当前上下文中的某个变量同名），则另一函数中该变量的值将显示为当前上下文中的该变量的值。
+数据提示显示仅在中断模式下，并且只能在当前作用域的执行中的变量上。
+
+### <a name="display-a-datatip"></a>显示数据提示  
   
-### <a name="to-unpin-a-datatip-and-make-it-float"></a>解除固定数据提示，使其浮动  
+1. 在代码中设置断点并开始调试通过按**F5**或选择**调试** > **开始调试**。
   
--   在固定数据提示中，单击**从源**图标。  
+1. 在断点处暂停，将鼠标悬停在当前作用域中的任何变量。 数据提示中出现，显示的名称和变量的当前值。
+
+### <a name="make-a-datatip-transparent"></a>将数据提示设置为透明  
+
+若要使数据提示透明若要查看其在数据提示中下面的代码，按**Ctrl**。 数据提示保持不透明，只要您按住**Ctrl**密钥。 这不适用于固定或浮动数据提示。  
+### <a name="pin-a-datatip"></a>固定数据提示
+
+若要固定数据提示，使其保持打开，请选择图钉**固定到源**图标。 
+
+![固定数据提示](../debugger/media/dbg-tips-data-tips-pinned.png "固定数据提示")
+
+可以通过拖动在代码窗口上四处移动固定数据提示。 图钉图标将显示在数据提示固定到行旁边的滚动条槽中。 
+
+>[!NOTE]
+>在上下文中挂起执行，而不是当前游标或数据提示位置始终计算数据提示。 如果悬停在当前上下文中具有与变量同名的另一个函数中的变量时，将显示在当前上下文中变量的值。
   
-     图钉图标将更改为解除固定位置。 现在，数据提示浮动在任何打开的窗口上方。 在调试会话结束时，浮动数据提示将关闭。  
+### <a name="unpin-a-datatip-from-source"></a>取消固定数据提示中的来自源
+
+Float 固定数据提示中，悬停在数据提示并从上下文菜单中选择图钉图标。 
+
+图钉图标将更改为解除固定位置，并且现在，数据提示浮动或可以拖动最重要的是打开的窗口。 在调试会话结束时，浮动数据提示功能关闭。  
   
-### <a name="to-repin-a-floating-datatip"></a>重新固定浮动的数据提示  
+### <a name="repin-a-datatip"></a>重新固定数据提示  
   
--   在数据提示中，单击图钉图标。  
+若要重新固定浮动到源的数据提示，鼠标指针悬停在代码编辑器中，并选择图钉图标。 图钉图标将更改为固定位置，并仅到代码窗口再次固定数据提示。 
+
+如果数据提示浮动在一个非源代码窗口中，图钉图标不可用，并且不能被重新固定数据提示。 若要访问的图钉图标，返回到代码编辑器窗口通过拖动它或代码窗口焦点转移数据提示。 
   
-     图钉图标将更改为固定位置。 如果工具提示位于源窗口外部，将禁用图钉图标，因此将无法固定数据提示。  
+### <a name="close-a-datatip"></a>关闭数据提示  
   
-### <a name="to-close-a-datatip"></a>关闭单个数据提示  
+若要关闭数据提示，悬停在数据提示，并选择关闭 (**x**) 从上下文菜单的图标。  
   
--   将鼠标指针置于数据提示中，上方，然后单击**关闭**图标。  
+### <a name="close-all-datatips"></a>关闭所有数据提示  
   
-### <a name="to-close-all-datatips"></a>关闭所有数据提示  
+若要关闭所有数据提示，请在**调试**菜单中，选择**清除所有数据提示**。  
   
--   上**调试**菜单上，单击**清除所有数据提示**。  
+### <a name="close-all-datatips-for-a-specific-file"></a>关闭特定文件的所有数据提示  
   
-### <a name="to-close-all-datatips-for-a-specific-file"></a>关闭特定文件的所有数据提示  
-  
--   上**调试**菜单上，单击**清除所有数据提示固定到***文件*。  
+若要关闭特定文件的所有数据提示在**调试**菜单中，选择**清除所有数据提示固定到\<文件名 >**。  
   
 ## <a name="expand-and-edit-information"></a>展开和编辑信息  
- 利用数据提示功能，可以展开数组、结构或对象以查看其成员。 从数据提示还可以编辑变量的值。  
+利用数据提示功能，可以展开数组、结构或对象以查看其成员。 从数据提示还可以编辑变量的值。  
   
-#### <a name="to-expand-a-variable-to-see-its-elements"></a>展开变量以查看它的元素  
-  
--   在数据提示中，将鼠标指针置于**+** 变量名之前的登录。  
-  
-    该变量展开以树的形式显示其元素。
+### <a name="expand-a-variable"></a>展开变量
 
-    ![查看数据提示](../debugger/media/dbg-tour-data-tips.gif "查看数据提示")
-  
-    变量展开后，可以使用键盘上的箭头键进行上移或下移。 或者，也可使用鼠标。  
-  
-#### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>使用数据提示功能编辑变量值  
-  
-1.  在数据提示中，单击值。 对于只读值，此功能是禁用的。  
-  
-2.  键入新值并按 Enter。  
-  
-## <a name="making-a-datatip-transparent"></a>使数据提示显示为透明  
- 如果想要看到数据提示后面的代码，可以使数据提示暂时显示为透明。 这不适用于固定或浮动的数据提示。  
-  
-#### <a name="to-make-a-datatip-transparent"></a>使数据提示显示为透明  
-  
--   在数据提示中，按 Ctrl。  
-  
-     在按住 Ctrl 键的时间内，数据提示将一直保持透明。  
-  
+若要展开的对象在数据提示中查看它的元素，将鼠标悬停在项名称可以在树的形式显示的元素之前的展开箭头。 对于固定数据提示中，选择**+** 之前将变量命名，然后展开树。 
+
+![展开数据提示](../debugger/media/dbg-tour-data-tips.png "展开数据提示")
+
+您可以使用鼠标或箭头键在键盘上向上和向下移动以展开的视图。 
+
+此外可以将固定数据提示的扩展的项固定其上悬停鼠标并选择其图钉图标。 元素然后出现在固定数据提示中之后，树处于折叠状态。 
+
+### <a name="edit-the-value-of-a-variable"></a>编辑变量的值
+
+若要编辑的变量或在数据提示中的元素的值，请选择值，键入新值，然后按**Enter**。 选择是只读的值被禁用。  
+
 ## <a name="visualize-complex-data-types"></a>可视化复杂数据类型  
- 如果在数据提示中，一个或多个变量名称旁边会显示一个放大镜图标[可视化工具](../debugger/create-custom-visualizers-of-data.md)，如[字符串可视化工具](../debugger/string-visualizer-dialog-box.md)，可用于该数据类型的变量。 您可以使用可视化工具以更直观的方式（通常为图形）显示信息。
+
+变量或在数据提示中的元素旁边的放大镜图标表示，其中一个或多个[可视化工具](../debugger/create-custom-visualizers-of-data.md)，如[文本可视化工具](../debugger/string-visualizer-dialog-box.md)，可用于该变量。 可视化工具中更有意义，有时图形方式显示信息。
   
-#### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>使用可视化工具查看变量的内容  
-  
--   单击放大镜图标![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")选择数据类型的默认可视化工具。  
-  
-     或  
-  
-     单击可视化工具旁的弹出箭头，然后在适用于该数据类型的可视化工具列表中选择所需的可视化工具。  
-  
-     可视化工具将显示信息。  
-  
-## <a name="add-information-to-a-watch-window"></a>将信息添加到监视窗口  
- 如果你想要继续观看列表视图中的变量，则可以添加到变量**监视**从数据提示窗口。  
-  
-#### <a name="to-add-a-variable-to-the-watch-window"></a>将变量添加到“监视”窗口  
-  
--   数据提示中，右键单击，然后单击**添加监视**。  
-  
-     将变量添加到**监视**窗口。 如果使用的版本支持多个**Watch**变量添加到 windows，**监视 1。**  
+若要查看使用的数据类型的默认可视化工具的元素，请选择放大镜图标![可视化工具图标](../debugger/media/dbg-tips-visualizer-icon.png "可视化工具图标")。 选择要从数据类型的可视化工具列表中选择的放大镜图标旁边的箭头。  
+
+## <a name="add-a-variable-to-a-watch-window"></a>将变量添加到监视窗口  
+
+如果你想要继续监视某个变量，您可以将其添加到**监视**从数据提示窗口。 右键单击该变量在数据提示中，然后选择**添加监视**。 
+
+该变量出现在**监视**窗口。 如果您的 Visual Studio 版本支持多个**Watch**窗口中，该变量出现在**监视 1**。 
   
 ## <a name="import-and-export-datatips"></a>导入和导出数据提示  
- 您可以将数据提示导出到 XML 文件中，然后与同事共享该文件或使用文本编辑器编辑该文件。  
+
+可以将数据提示导出到一个 XML 文件，其中可以共享，也可以使用文本编辑器编辑。 此外可以导入已接收或编辑的数据提示 XML 文件。 
   
-#### <a name="to-export-datatips"></a>导出数据提示  
+**导出数据提示：** 
   
-1.  在调试菜单上单击**导出数据提示**。  
+1. 选择**调试** > **导出数据提示**。  
+   
+1. 在中**导出数据提示**对话框中，导航到要保存 XML 文件中，键入该文件的名称的位置，然后选择**保存**。  
   
-     **导出数据提示**对话框随即出现。  
+**导入数据提示：** 
   
-2.  使用标准文件技术导航到你想要保存 XML 文件中，键入的名称中的文件的位置**文件名**框中，然后依次**确定**。  
-  
-#### <a name="to-import-datatips"></a>导入数据提示  
-  
-1.  在调试菜单上单击**导入数据提示**。  
-  
-     **导入数据提示**对话框随即出现。  
-  
-2.  使用对话框的以查找 XML 文件，你想要打开，然后单击**确定**。  
-  
+1. 选择**调试** > **导入数据提示**。  
+   
+1. 在中**导入数据提示**对话框框中，选择你想要打开，并选择的数据提示功能 XML 文件**打开**。  
+
 ## <a name="see-also"></a>请参阅  
- [什么调试？](../debugger/what-is-debugging.md)  
+ [什么是调试？](../debugger/what-is-debugging.md)  
  [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
- [首先看一下调试](../debugger/debugger-feature-tour.md)[在调试器中查看数据](../debugger/viewing-data-in-the-debugger.md)   
- [监视窗口和快速监视 Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [首先看一下调试](../debugger/debugger-feature-tour.md)   
+ [查看调试器中的数据](../debugger/viewing-data-in-the-debugger.md)   
+ [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)   
  [创建自定义可视化工具](../debugger/create-custom-visualizers-of-data.md)   

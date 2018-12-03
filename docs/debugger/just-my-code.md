@@ -1,7 +1,7 @@
 ---
 title: 调试用户代码与仅我的代码 |Microsoft Docs
 ms.custom: ''
-ms.date: 05/18/2018
+ms.date: 10/22/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 854ce90f18b5df7d3e25b4b0949d76202e4f4a04
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
-ms.translationtype: MT
+ms.openlocfilehash: 01e36c528b71bb49b29265890ca6c48863f01be9
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050334"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389022"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>调试用户代码仅使用仅我的代码 
 
@@ -23,7 +23,7 @@ ms.locfileid: "50050334"
 
 仅我的代码的工作方式在.NET Framework、 c + + 和 JavaScript 项目。
 
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> 启用或禁用仅我的代码  
+##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a>启用或禁用“仅我的代码”  
 
 对于大多数编程语言，默认情况下启用仅我的代码。 
 
@@ -56,7 +56,7 @@ ms.locfileid: "50050334"
 
 双击在展开的外部代码行**调用堆栈**窗口突出显示绿色的源代码中调用的代码行。 对于 Dll 或未找到或加载其他模块，符号或源文件未找到页可能会打开。
 
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET framework 仅我的代码 
+##  <a name="BKMK__NET_Framework_Just_My_Code"></a>.NET Framework“仅我的代码” 
 
 在.NET Framework 项目中，仅我的代码使用符号 (*.pdb*) 文件和程序优化，以对用户和非用户代码进行分类。 .NET Framework 调试程序会将优化的二进制文件，而非加载 *.pdb*文件视为非用户代码。
   
@@ -81,7 +81,7 @@ ms.locfileid: "50050334"
   
 如果异常启用了第一机会异常，调用用户代码行以在源代码中的绿色突出显示。 **调用堆栈**窗口将显示标记为在带批注的帧 **[外部代码]**。  
 
-##  <a name="BKMK_C___Just_My_Code"></a> C + + 仅我的代码  
+##  <a name="BKMK_C___Just_My_Code"></a>C++“仅我的代码”  
   
 C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试）](/cpp/build/reference/jmc)编译器开关。
 
@@ -140,7 +140,7 @@ C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试�
 |元素|描述|  
 |-------------|-----------------|  
 |`Function`|必须的。 将一个或多个函数指定为非用户函数。|  
-|`Name`|必须的。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如：<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
+|`Name`|必须的。 ECMA-262 格式的正则表达式，指定要匹配的完整函数名。 例如:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> 告知调试器将 `MyNS::MyClass` 中的所有方法都视为非用户代码。 匹配区分大小写。|  
 |`Module`|可选。 ECMA-262 格式的正则表达式，指定包含函数的模块的完整路径。 匹配不区分大小写。|  
 |`Action`|必须的。 以下区分大小写的值之一：<br /><br /> `NoStepInto`  -告知调试器单步执行函数。<br /> `StepInto`  -告知调试器单步执行函数，重写任何其他`NoStepInto`为匹配的函数。|  
   
@@ -173,20 +173,20 @@ C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试�
   
 ```  
   
- **模块元素特性**  
+ **模块元素属性**  
   
 |特性|描述|  
 |---------------|-----------------|  
 |`Name`|必须的。 模块的完整路径。 可以使用 Windows 通配符`?`（零个或一个字符） 和`*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为*\3rdParty\UtilLibs*外部代码的任何驱动器上。|  
 |`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|  
   
- **文件元素特性**  
+ **文件元素属性**  
   
 |特性|描述|  
 |---------------|-----------------|  
 |`Name`|必须的。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|  
   
- **函数元素特性**  
+ **函数元素属性**  
   
 |特性|描述|  
 |---------------|-----------------|  
@@ -194,9 +194,9 @@ C + + 中启用仅我的代码是使用相同[/JMC （仅我的代码的调试�
 |`Module`|可选。 包含函数的模块的名称或完整路径。 可以使用此特性区分具有相同名称的函数。|  
 |`ExceptionImplementation`|设置为 `true` 时，调用堆栈显示的是引发异常的函数，而不是此函数。|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> JavaScript 仅我的代码  
+##  <a name="BKMK_JavaScript_Just_My_Code"></a>JavaScript“仅我的代码”  
 
-<a name="BKMK_JS_User_and_non_user_code"></a> JavaScript 只是我的代码进行分类在以下分类之一中的代码控制单步执行和调用堆栈显示：  
+<a name="BKMK_JS_User_and_non_user_code"></a>JavaScript“仅我的代码”控件通过采用以下分类之一对代码进行分类，来控制单步执行和调用堆栈显示：  
 
 |||  
 |-|-|  
@@ -218,7 +218,7 @@ JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类
   
 每个分类步骤都会重写前面的步骤。 
 
-所有其他代码都分类为**MyCode**。  
+其他所有代码都分类为“MyCode”。  
 
 您可以修改默认分类，并对其分类的特定文件和 Url 为用户或非用户代码，通过添加 *.json*名为的文件*mycode.json* JavaScript 项目的根文件夹。 请参阅[自定义 JavaScript 仅我的代码](#BKMK_JS_Customize_Just_My_Code)。 
 
@@ -226,7 +226,7 @@ JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类
 
 - 如果函数为非用户代码**调试** > **单步执行**(或**F11**) 的行为与相同**调试** > **单步跳过**(或**F10**)。  
 - 如果某个步骤开始在非用户 (**LibraryCode**或**UnrelatedCode**) 代码中，暂时单步执行行为将如同未启用仅我的代码。 当返回到用户代码，仅我的代码单步单步执行是重新启用。  
-- 当用户代码步骤导致保留当前执行上下文时，调试器将停止在下一步执行的用户代码行。 例如，如果在执行回调**LibraryCode**代码，调试器会继续直到下的一行用户代码执行。
+- 当用户代码步骤导致保留当前执行上下文时，调试器将停止在下一步执行的用户代码行。 例如，如果某个回调在“LibraryCode”代码中执行，则调试器会继续，直到执行下一行用户代码。
 - **单步跳出**(或**Shift**+**F11**) 将在下一行用户代码处停止。 
 
 如果没有更多的用户代码，调试继续，直到它结束，到达另一个断点，或将引发错误。 
@@ -242,7 +242,7 @@ JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类
   
 如果异常，启用了第一机会异常，并且中发生的异常**LibraryCode**或**UnrelatedCode**:  
   
--   如果该异常的处理，不会中断调试器。  
+-   如果异常已处理，则调试器不会中断。  
 -   如果异常未经过处理，则调试器中断。  
   
 ###  <a name="BKMK_JS_Customize_Just_My_Code"></a> 自定义 JavaScript 仅我的代码  
@@ -277,30 +277,30 @@ JavaScript 调试器将作为用户或按此顺序的非用户代码分为两类
   
 ```  
   
- **Eval、 Function 和 ScriptBlock**  
+ **Eval、Function 和 ScriptBlock**  
   
- **Eval**，**函数**，并**ScriptBlock**键/值对确定如何对动态生成的代码进行分类：  
+ “Eval”、“Function”和“ScriptBlock”键值对确定如何对动态生成的代码进行分类：  
   
 |||  
 |-|-|  
-|**评估版**|通过将字符串传递给主机提供的 `eval` 函数来执行的脚本。 默认情况下，Eval 脚本分类为**MyCode**。|  
-|**Function**|通过将字符串传递给 `Function` 构造函数来执行的脚本。 默认情况下，Function 脚本分类为**LibraryCode**。|  
-|**脚本块**|通过将字符串传递给 `setTimeout`、`setImmediate` 或 `setInterval` 函数来执行的脚本。 默认情况下，ScriptBlock 脚本分类为**UnrelatedCode**。|  
+|**Eval**|通过将字符串传递给主机提供的 `eval` 函数来执行的脚本。 默认情况下，Eval 脚本分类为“MyCode”。|  
+|**Function**|通过将字符串传递给 `Function` 构造函数来执行的脚本。 默认情况下，Function 脚本分类为“LibraryCode”。|  
+|**ScriptBlock**|通过将字符串传递给 `setTimeout`、`setImmediate` 或 `setInterval` 函数来执行的脚本。 默认情况下，ScriptBlock 脚本分类为“UnrelatedCode”。|  
   
  可以将值更改为以下关键字之一：  
   
--   `MyCode`  将脚本作为分类**MyCode**。  
--   `Library`  将脚本作为分类**LibraryCode**。  
--   `Unrelated`  将脚本作为分类**UnrelatedCode**。  
+-   `MyCode` 将脚本分类为“MyCode”。  
+-   `Library` 将脚本分类为“LibraryCode”。  
+-   `Unrelated` 将脚本分类为“UnrelatedCode”。  
   
-  **MyCode、 Libraries 和不相关**  
+  **MyCode、Libraries 和 Unrelated**  
   
- **MyCode**，**库**，并**Unrelated**键/值对指定的 Url 或想要包括在某个分类中的文件：  
+ “MyCode”、“Libraries”和“Unrelated”键值对指定要包含在分类中的 URL 或文件：  
   
 |||  
 |-|-|  
-|**MyCode**|Url 或文件的分类为一个数组**MyCode**。|  
-|**库**|Url 或文件的分类为一个数组**LibraryCode**。|  
-|**不相关**|Url 或文件的分类为一个数组**UnrelatedCode**。|  
+|**MyCode**|分类为“MyCode”的 URL 数组或文件数组。|  
+|**Libraries**|分类为“LibraryCode”的 URL 数组或文件数组。|  
+|**Unrelated**|分类为“UnrelatedCode”的 URL 数组或文件数组。|  
   
  URL 或文件字符串可以具有一个或多`*`匹配零个或多个字符的字符。 `*` 与正则表达式相同`.*`。

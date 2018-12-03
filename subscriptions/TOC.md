@@ -58,7 +58,7 @@
 ###### [查找你的主要联系人](find-primary-contact.md)
 #### [对于 MPSA](mpsa.md)
 #### [对于云订阅](cloud-admin.md)
-#### [加入视频](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)
+#### [加入视频](https://youtu.be/plSu6fpi7UI)
 ### [使用管理门户](using-admin-portal.md)
 #### [分配订阅](assign-license.md)
 #### [重新发送分配电子邮件](resend-assignment-email.md)

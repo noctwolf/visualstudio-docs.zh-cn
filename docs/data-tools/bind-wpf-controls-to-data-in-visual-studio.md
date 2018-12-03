@@ -1,5 +1,5 @@
 ---
-title: 将 WPF 控件绑定到 Visual Studio-第 1 部分中的数据 |Microsoft Docs
+title: 将 WPF 控件绑定到数据-第 1 部分
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,40 +18,39 @@ ms.prod: visual-studio-dev15
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dadf656ad287512a956bc510bbbcc043d21ab07
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 4fa8ddf42cad6ad613846ceff2b49739b7dc1c18
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942902"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305333"
 ---
-# <a name="bind-wpf-controls-to-data-in-visual-studio"></a>将 WPF 控件绑定到 Visual Studio 中的数据
+# <a name="bind-wpf-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 WPF 控件绑定到数据
 
 通过将数据绑定到 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 控件，可以向应用程序的用户显示数据。 若要创建这些数据绑定控件，可以将项从**数据源**窗口拖到[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]Visual Studio 中。 本主题将介绍一些你可用于创建数据绑定 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 应用程序的最常见的任务、工具和类。
 
-有关如何在 Visual Studio 中创建数据绑定控件的常规信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 有关详细信息[!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]数据绑定，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
+有关如何在 Visual Studio 中创建数据绑定控件的常规信息，请参阅[将控件绑定到 Visual Studio 中的数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 有关 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 数据绑定的详细信息，请参阅[数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)。
 
-## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>所涉及的 WPF 控件绑定到数据任务
+## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>将 WPF 控件绑定到数据所涉及的任务
 
-下表列出了可以通过将项从完成的任务**数据源**到窗口[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。
+下表列出了可以通过将项从“数据源”窗口拖到 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 来完成的任务。
 
 |任务|详细信息|
 |----------| - |
 |新建数据绑定控件。<br /><br /> 将现有控件绑定到数据。|[将 WPF 控件绑定到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |创建按父子关系显示相关数据的控件：当用户选择一个控件中的父数据记录时，另一个控件将显示所选记录的相关子数据。|[在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)|
-|创建*查找表*显示基于另一个表中的外键字段的值的一个表中的信息。|[在 WPF 应用程序中创建查找表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
+|创建“查找表”，此表根据一个表的外键字段的值显示另一个表中的信息。|[在 WPF 应用程序中创建查找表](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |将控件绑定到数据库中的图像。|[将控件绑定到数据库中的图片](../data-tools/bind-controls-to-pictures-from-a-database.md)|
 
 ## <a name="valid-drop-targets"></a>有效放置目标
 
-可以将项中**数据源**仅到中的有效放置目标的窗口[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]。 有两种主要的有效放置目标：容器和控件。 容器是通常包含控件的用户界面元素。 例如，网格是容器，窗口也是容器。
+只能将“数据源”窗口中的项拖动到 [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] 中的有效放置目标。 有两种主要的有效放置目标：容器和控件。 容器是通常包含控件的用户界面元素。 例如，网格是容器，窗口也是容器。
 
 ## <a name="generated-xaml-and-code"></a>生成的 XAML 和代码
 
 当将某项从**数据源**到窗口[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]，Visual Studio 生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]定义新的数据绑定控件 （或将现有控件绑定到数据源）。 对于某些数据源，Visual Studio 还会生成代码用数据填充数据源的代码隐藏文件中。
 
 下表列出[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]和 Visual Studio 为每种类型的数据源中生成的代码**数据源**窗口。
-
 
 | 数据源 | 生成将控件绑定到数据源的 XAML | 生成用数据填充数据源的代码 |
 | - | - | - |
@@ -101,7 +100,7 @@ Visual Studio 将生成执行以下操作的 XAML：
 当将对象或属性从**数据源**设计器中，Visual Studio 窗口生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]创建数据绑定控件 （或将现有控件绑定到对象或属性）。 但是，Visual Studio 不生成代码以用数据填充该对象。 你必须自己编写此代码。
 
 > [!NOTE]
->  自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们在其语法中具有"dot"can'tbe 嵌套类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
+> 自定义类都必须是公共的并在默认情况下，具有无参数构造函数。 它们在其语法中具有"dot"can'tbe 嵌套类。 有关详细信息，请参阅[XAML 及 WPF 的自定义类](/dotnet/framework/wpf/advanced/xaml-and-custom-classes-for-wpf)。
 
 Visual Studio 生成[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，执行以下操作：
 

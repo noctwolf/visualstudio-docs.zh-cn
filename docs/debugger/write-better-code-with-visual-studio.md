@@ -2,7 +2,7 @@
 title: 让 Visual Studio 帮助您编写C#使用更少 bug 的代码
 description: 了解如何编写更好的代码更少 bug
 ms.custom: debug-experiments
-ms.date: 10/30/2018
+ms.date: 11/20/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 914b4332a715c86aab7e1fad7d901231cbfd40c5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
-ms.translationtype: MT
+ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948954"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389372"
 ---
-# <a name="write-better-c-code-using-visual-studio"></a>更好地编写C#使用 Visual Studio 代码
+# <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>通过编写更好地修复 bugC#使用 Visual Studio 代码
 
 调试代码可能非常耗时-，有时会令人沮丧-任务。 若要了解如何有效地调试时间。 类似于 Visual Studio 功能强大的 IDE 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。
 
@@ -42,7 +42,7 @@ ms.locfileid: "51948954"
 若要创建应用程序，打开 Visual Studio，然后选择**文件 > 新建项目**。 下**可视化C#** ，选择**Windows Desktop**或 **.NET Core**，然后在中间窗格中选择**控制台应用**。 键入一个名称，如**Console_Parse_JSON**然后单击**确定**。 Visual Studio 随即创建项目。 粘贴[示例代码](#sample-code)到项目的*Program.cs*文件。
 
 > [!NOTE]
-> 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择 **.NET 桌面开发**或 **.NET Core 跨平台开发**工作负荷中，然后选择**修改**。
+> 如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET Core 桌面开发”或“.NET Core 跨平台开发”工作负载，然后选择“修改”。
 
 ## <a name="find-the-red-and-green-squiggles"></a>查找红色和绿色波形曲线 ！
 
@@ -113,7 +113,7 @@ item.totalpoints += users[i].points;
 
 当你已经修复所有红色波形曲线和解析-或至少调查-所有绿色波形曲线，已准备好启动调试器并运行应用。
 
-按**F5** (**调试 > 启动调试**) 或**启动调试**按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")调试工具栏中。
+按 F5（“调试”>“开始调试”）或调试工具栏中的“开始调试”按钮（![开始调试](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")）。
 
 在此情况下，示例应用程序将引发`SerializationException`异常 （运行时错误）。 也就是说，应用程序采用浅压深正在尝试进行序列化的数据。 在调试模式下 （附加调试器） 启动应用，因为调试器的异常帮助器将转到引发异常，并提供有用的错误消息的代码权限。
 
@@ -277,7 +277,7 @@ Debug.Assert(users[0].points > 0);
 
 Bug 的另一种包括导致你的应用运行缓慢或占用大量内存的代码效率低下。 通常情况下，优化性能是更高版本在你的应用开发中做的事情。 但是，您可能会遇到性能问题早期 （例如，您看到您的应用程序的某个部分运行速度缓慢），可能需要进行早期测试使用分析工具对应用程序。 有关分析 CPU 使用率工具和内存分析器等工具的详细信息，请参阅[先来看一下分析工具](../profiling/profiling-feature-tour.md)。
 
-## <a name="sample-code"></a> 示例代码
+## <a name="sample-code"></a>示例代码
 
 下面的代码完全可以使用 Visual Studio IDE 来修复一些 bug。 应用此处是一个简单的应用，用于模拟从某项操作，反序列化到对象，数据和使用新数据更新的简单列表获取的 JSON 数据。
 

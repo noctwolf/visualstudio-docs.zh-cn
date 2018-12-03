@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 568a829ff10cbee535729361b7c95dd7db6814f5
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: c8f826db0c619e1dfb5811aaf9d0c5ef40093c97
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948057"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388658"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
@@ -28,7 +28,7 @@ ms.locfileid: "51948057"
 默认设置由首次启动 Visual Studio 时选择的配置文件决定。
 
 > [!TIP]
-> 若要了解如何使用集成开发环境 (IDE) 重置设置，请参阅[重置设置](../synchronized-settings-in-visual-studio.md#reset-settings)。
+> 若要了解如何使用集成开发环境 (IDE) 重置设置，请参阅[重置设置](../environment-settings.md#reset-settings)。
 
 ## <a name="syntax"></a>语法
 
@@ -58,6 +58,6 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 
 ## <a name="see-also"></a>请参阅
 
-- [重置设置](../synchronized-settings-in-visual-studio.md#reset-settings)
+- [环境设置](../environment-settings.md)
 - [个性化设置 Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md)
 - [Devenv 命令行开关](../../ide/reference/devenv-command-line-switches.md)

@@ -1,7 +1,7 @@
 ---
 title: 检查自动和局部变量窗口中的变量 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 04/17/2018
+ms.date: 10/18/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: b196d993e7091fd9d4b09fe3c228346e7421911e
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257207"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52388512"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
@@ -33,7 +33,7 @@ ms.locfileid: "52257207"
 
 若要打开**局部变量**窗口中的，调试时，选择**调试** > **Windows** > **局部变量**，或按**Alt**+**4**。
 
-如果您需要了解基本调试的详细信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。
+若需了解基本调试的详细信息，请参阅[调试程序入门](../debugger/getting-started-with-the-debugger.md)。
 
 > [!NOTE]
 > 本主题适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
@@ -54,7 +54,7 @@ ms.locfileid: "52257207"
 
 你可以输入表达式作为一个值，例如 `a + b`。 调试器接受大多数合法的语言表达式。
 
-在本机 C++ 代码中，你可能需要限定变量名的上下文。 有关详细信息，请参阅[上下文运算符 （c + +）](../debugger/context-operator-cpp.md)。
+在本机 C++ 代码中，你可能需要限定变量名的上下文。 有关详细信息，请参阅[上下文运算符（C++）](../debugger/context-operator-cpp.md)。
 
 >[!CAUTION]
 >请确保你了解后果之前更改值和表达式。 可能存在的问题是：
@@ -77,7 +77,7 @@ ms.locfileid: "52257207"
 
  不同的代码语言显示在不同的变量**自动**窗口。
 
- - 在C#和 Visual Basic**自动**窗口显示当前或前一行中使用的任何变量。 例如，在C#或 Visual Basic 代码中，声明以下四个变量：
+ - 在 C# 和 Visual Basic 中，“自动”窗口显示当前或前一行中使用的任何变量。 例如，在C#或 Visual Basic 代码中，声明以下四个变量：
 
    ```csharp
        public static void Main()
@@ -152,6 +152,6 @@ private static int subtractVars(int i, int j)
   ![自动返回值C# ](../debugger/media/autosreturnvaluecsharp2.png "自动返回值C#")  
   
 ## <a name="see-also"></a>请参阅  
- [什么调试？](../debugger/what-is-debugging.md)  
+ [什么是调试？](../debugger/what-is-debugging.md)  
  [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)

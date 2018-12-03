@@ -1,7 +1,7 @@
 ---
-title: 格式说明符在调试器中 (C#) |Microsoft Docs
+title: 格式说明符在调试器中的 (C#) |Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
@@ -27,20 +27,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e8605671d1c245826ce6d699e91795fcd7ee32e
-ms.sourcegitcommit: 30f653d9625ba763f6b58f02fb74a24204d064ea
-ms.translationtype: MT
+ms.openlocfilehash: 9c69792b5f925141b95d28a5e2c5255e12011668
+ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36756855"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52305385"
 ---
-# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>在 C# 中的 Visual Studio 调试器中的格式说明符
-你可以使用格式说明符更改在“监视”  窗口中显示值所用的格式。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并且即使在源窗口中。 如果将鼠标悬停在这些窗口中的表达式上，结果将在数据提示中显示。 数据提示将在数据提示的显示内容中反映格式说明符。  
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>格式说明符在C#Visual Studio 调试器中
+你可以在其中一个值中显示的格式**监视**窗口是通过使用格式说明符。 此外可以使用中的格式说明符**即时**窗口中，**命令**窗口中，在[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)，并在源窗口中。 如果暂停这些窗口中的表达式，该结果将显示在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中指定的格式显示。  
   
- 若要使用格式说明符，请键入后跟逗号的表达式。 在逗号后面，添加适当的说明符。  
+ 若要使用的格式说明符，输入变量表达式后跟一个逗号和适当的说明符。  
   
-## <a name="using-format-specifiers"></a>使用格式说明符  
- 如果你有以下代码：  
+## <a name="set-format-specifiers"></a>组格式说明符  
+我们将使用下面的示例代码：   
   
 ```csharp  
 {  
@@ -50,16 +50,16 @@ ms.locfileid: "36756855"
 }  
 ```  
   
- 添加`my_var1`变量到监视窗口 (调试时，**调试 > Windows > 观看 > 监视 1**) 并将显示设置为十六进制 (在**监视**窗口中，右键单击该变量和选择**十六进制显示**)。 现在“监视”  窗口将显示它包含值 0x0065。 若要看到表示为十进制整数而不是十六进制整数的该值，请在“名称”列的变量名之后添加十进制格式说明符：“, d” 。 “值”列现在显示十进制值 101  
+ 添加`my_var1`变量**观看**调试时，窗口**调试** > **Windows** > **观看** > **观看 1**。 接下来，右键单击该变量，并选择**十六进制显示**。 现在**监视**窗口将显示值 0x0065。 若要查看此值为十进制整数而不是十六进制整数，添加十进制格式说明符 **、 d**中**名称**变量名之后的列。 **值**列现在显示**101**。   
   
  ![WatchFormatCSharp](../debugger/media/watchformatcsharp.png "WatchFormatCSharp")  
   
 ## <a name="format-specifiers"></a>格式说明符  
- 下表显示调试器所识别的 C# 格式说明符。  
+ 下表描述了C#设置 Visual Studio 调试器的说明符的格式。  
   
 |说明符|格式|原始监视值|显示|  
 |---------------|------------|--------------------------|--------------|  
-|ac|表达式的强制计算。 当关闭属性的隐式计算和隐式函数调用时，这是很有用的。|消息"隐式函数计算处于关闭状态的用户"|\<value>|  
+|ac|强制计算一个表达式，其属性和隐式函数调用的隐式计算处于关闭状态时非常有用。|消息“用户已关闭隐式函数计算”|\<value>|  
 |d|十进制整数|0x0065|101|  
 |dynamic|使用“动态”视图显示指定对象|显示对象的所有成员，包括动态视图|仅显示动态视图|  
 |h|十六进制整数|61541|0x0000F065|  
@@ -67,8 +67,8 @@ ms.locfileid: "36756855"
 |nse|指定行为，不格式。 使用"无副作用"的表达式的计算结果。 如果表达式不能解释和才可以解析 （如函数调用） 评估，您将看到错误。|不可用|不可用|
 |隐藏|显示所有公共成员和非公共成员|显示公共成员|显示所有成员|  
 |raw|以项在原始项节点中的显示格式来显示项。 只对代理对象有效。|字典\<T >|字典中的原始视图\<T >|  
-|results|与实现 IEnumerable 或 IEnumerable 的类型的变量一起使用\<T >，通常在查询表达式的结果。 仅显示包含查询结果的成员。|显示所有成员。|显示满足查询条件的成员。|  
+|results|与实现 IEnumerable 或 IEnumerable 的类型的变量一起使用\<T >，通常在查询表达式的结果。 仅显示包含查询结果的成员。|显示所有成员|显示满足查询条件的成员|  
   
 ## <a name="see-also"></a>请参阅  
- [监视窗口和快速监视 Windows](../debugger/watch-and-quickwatch-windows.md)   
+ [“监视”和“快速监视”窗口](../debugger/watch-and-quickwatch-windows.md)   
  [“自动”和“局部变量”窗口](../debugger/autos-and-locals-windows.md)
