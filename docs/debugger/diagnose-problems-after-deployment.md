@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: b10635c1aefedf7af83a1c884717b80b442e8998
 ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/29/2018
 ms.locfileid: "50219908"
@@ -385,6 +385,6 @@ Visual Studio 2017 不包括*BuildInfo.config*文件，它已不推荐使用，�
  **答：** 你的 [工作区存储源的副本](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) ，因此在签入工作之前，你可以对其进行单独开发和测试。 如果尚未具备专门映射到找到的解决方案或项目的工作区，那么 Visual Studio 会提示你选择一个可用的工作区，或以你的计算机名称作为默认工作区名称创建新的工作区。
 
 ####  <a name="UntrustedSymbols"></a> 问： 为什么收到有关不受信任的符号的此消息？
- ![使用不受信任的符号路径进行调试？] (../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+ ![使用不受信任的符号路径进行调试？](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
  **答：** 何时会出现此消息中生成清单文件的符号路径 (\<*ProjectName*>。中的受信任的符号路径列表不包含 BuildInfo.config)。 你可将路径添加到调试器选项中的符号路径列表。
