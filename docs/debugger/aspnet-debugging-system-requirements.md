@@ -20,7 +20,7 @@ ms.workload:
 - aspnet
 ms.openlocfilehash: 71b6cbc3f523b8f21b21b0e69b1d6e45e23acb0c
 ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/23/2018
 ms.locfileid: "49915342"
@@ -44,7 +44,7 @@ ms.locfileid: "49915342"
  > [!IMPORTANT]
  > 从 Windows Server 2008 R2 开始，我们建议使用[ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities)作为为每个应用程序池标识。
   
- [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅 [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
+ [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的名称根据调试方案和 IIS 版本的不同而不同。 有关详细信息，请参阅[如何：查找 ASP.NET 进程的名称](../debugger/how-to-find-the-name-of-the-aspnet-process.md)。  
   
  可以通过编辑运行 IIS 的服务器上的 machine.config 文件来更改用于运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程的用户帐户。 实现此目的的最佳方式是使用 **“Internet 信息服务(IIS)管理器”**。 有关详细信息，请参阅[如何： 运行辅助进程以用户帐户](../debugger/how-to-run-the-worker-process-under-a-user-account.md)。  
   

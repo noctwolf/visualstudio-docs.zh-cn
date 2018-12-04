@@ -41,7 +41,7 @@ ms.locfileid: "51948928"
    
 1. 选择“内存使用情况”，然后选择“启动”。  
    
-   ![启动内存使用量诊断会话]Start a Memory Usage diagnostic session(../profiling/media/memuse_start_diagnosticssession.png "")  
+   ![启动内存使用量诊断会话](../profiling/media/memuse_start_diagnosticssession.png "Start a Memory Usage diagnostic session")  
   
 ### <a name="monitor-memory-use"></a>监视内存使用情况 
 

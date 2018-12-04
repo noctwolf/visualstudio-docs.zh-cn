@@ -1,7 +1,7 @@
 ---
 title: 将附加到正在运行使用 Visual Studio 中调试器的进程 |Microsoft Docs
 ms.custom: H1Hack27Feb2017
-ms.date: 06/20/2018
+ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
@@ -29,17 +29,17 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: af44fcfe553cd720461de3a4e16986d573785c2f
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
-ms.translationtype: MT
+ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
+ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257337"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389184"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，选择**调试** > **附加到进程**或按**Ctrl**+**Alt** +**P** Visual Studio 中，并使用**附加到进程**对话框，可以将调试器附加到进程。
 
-可以使用**附加到进程**若要调试在本地或远程计算机上的运行应用，同时调试多个进程、 调试不 Visual Studio 中创建的应用或调试任何未启动从 Visual Studio 中使用的应用程序附加调试程序。 例如，如果您正在运行不带调试器的应用，并引发了异常，可以然后将调试器附加到进程中运行应用程序，并开始调试。
+可以使用**附加到进程**若要调试在本地或远程计算机上的运行应用，同时调试多个进程、 调试在 Visual Studio 中创建的应用或调试您开始从 Visual Studio 中使用时没有任何应用附加调试程序。 例如，如果您正在运行不带调试器的应用，并且遇到一个异常，可以然后将调试器附加到进程中运行应用程序，并开始调试。
 
 有关在 Visual Studio 基本调试的信息，请参阅[开始使用调试器](../debugger/getting-started-with-the-debugger.md)。
 
@@ -82,7 +82,7 @@ ms.locfileid: "52257337"
 >[!NOTE]
 >你可以附加到多个应用程序以进行调试，但一次只能有一个应用是在调试器中处于活动状态。 可以在 Visual Studio 中设置活动的应用程序**调试位置**工具栏或**进程**窗口。  
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> 附加到远程计算机上的进程  
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加到远程计算机上的进程  
 
 您还可以选择在远程计算机**附加到进程**对话框中，查看该计算机上运行的可用进程的列表，并将附加到一个或多个进程以进行调试。 远程调试器 (*msvsmon.exe*) 必须在远程计算机上运行。 有关详细信息，请参阅[远程调试](../debugger/remote-debugging.md)。 
 
@@ -134,13 +134,13 @@ ms.locfileid: "52257337"
 >[!NOTE]
 >你可以附加到多个应用程序以进行调试，但一次只能有一个应用是在调试器中处于活动状态。 可以在 Visual Studio 中设置活动的应用程序**调试位置**工具栏或**进程**窗口。  
 
-在某些情况下，在远程桌面 (Terminal Services) 会话中，调试时**可用进程**列表不会显示所有可用进程。 如果以具有有限的用户帐户的用户身份运行 Visual Studio**可用进程**列表将不显示在会话 0 用于服务和其他服务器进程，包括中运行的进程*w3wp.exe*。 你可以通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台而不是“终端服务”会话运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 
+在某些情况下，在远程桌面 (Terminal Services) 会话中，调试时**可用进程**列表不会显示所有可用进程。 如果以具有有限的用户帐户的用户身份运行 Visual Studio**可用进程**列表不会显示在会话 0 中运行的进程。 会话 0 用于服务和其他服务器进程，包括*w3wp.exe*。 你可以通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台而不是“终端服务”会话运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 
 
-如果可能都不奏效，第三个选项是通过运行附加到进程`vsjitdebugger.exe -p <ProcessId>`从 Windows 命令行。 您可以确定进程 id 使用*tlist.exe*。 若要获取*tlist.exe*，下载并安装调试工具的 Windows，位于[WDK 和 WinDbg 下载](/windows-hardware/drivers/download-the-wdk)。
+如果这两种解决方法都不奏效，第三种方法是通过从 Windows 命令行运行 `vsjitdebugger.exe -p <ProcessId>` 来附加到进程。 可使用“tlist.exe”来确定进程 ID*tlist.exe*。 若要获取“tlist.exe”，请从 [WDK 和 WinDbg 下载](/windows-hardware/drivers/download-the-wdk)中下载并安装 Windows 调试工具。
 
 ## <a name="BKMK_reattach"></a> 重新附加到进程
 
-您可以快速重新附加到先前已通过选择附加到的进程**调试** > **重新附加到进程**(**Shift** +**Alt**+**P**)。 当选择此命令时，调试器会立即尝试将附加到最后一个首次尝试匹配上一个进程 ID 附加到进程，然后，如果该操作失败，通过与上一个进程名称相匹配。 如果不找到任何匹配项，或如果找到具有相同名称的多个进程**附加到进程**对话框将打开，这样您就可以选择了正确的进程。
+您可以快速重新附加到先前已通过选择附加到的进程**调试** > **重新附加到进程**(**Shift** +**Alt**+**P**)。 当选择此命令时，调试器会立即尝试附加到最后一个首次尝试匹配上一个进程 ID 附加到进程，如果失败，通过匹配到上一个进程名称。 如果不找到任何匹配项，或多个进程具有相同的名称，**附加到进程**对话框将打开，这样您就可以选择了正确的进程。
 
 > [!NOTE]
 > **重新附加到进程**命令是 Visual Studio 2017 中的新增功能。
@@ -159,42 +159,42 @@ ms.locfileid: "52257337"
 
 |方案|调试方法|进程名|说明和链接|
 |-|-|-|-|
-|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|*w3wp.exe*|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|远程调试 ASP.NET 4 或 4.5 上 IIS 服务器|使用远程工具和**附加到进程**|w3wp.exe|请参阅[远程调试远程 IIS 计算机上的 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
 |IIS 服务器上的远程调试 ASP.NET Core|使用远程工具和**附加到进程**|*dotnet.exe*|有关应用程序部署，请参阅[发布到 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 有关调试，请参阅[远程调试远程 IIS 计算机上的 ASP.NET Core](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|调试本地 IIS 服务器 （仅适用于受支持的应用类型） 上的客户端脚本|使用**附加到进程**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必须启用脚本调试。 对于 Chrome 中，也必须在调试模式下，选择运行 Chrome **Webkit 代码**中**附加到**字段。|
-|调试本地计算机上的 C#、 Visual Basic 或 c + + 应用程序|可以使用两种[标准调试](../debugger/getting-started-with-the-debugger.md)或**附加到进程**|*\<应用程序名 >.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
-|远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试 C# 或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试 c + + 应用程序](../debugger/remote-debugging-cpp.md)|
-|在开始使用不带调试器的应用后调试在本地计算机上的 ASP.NET 应用|使用**附加到进程**|*iiexpress.exe*|这可能会有所帮助使应用程序加载速度更快，如 （例如） 进行分析时。 |
-|调试服务器进程上的其他受支持的应用类型|（如果服务器是远程的），请使用远程工具和**附加到进程**|*chrome.exe*， *iexplore.exe*，或其他进程|如有必要，使用资源监视器来帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
-|远程调试的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试已安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
-|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试已安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|  
+|调试客户端脚本的本地 IIS 服务器上，为受支持的应用类型 |使用**附加到进程**|*chrome.exe*， *MicrosoftEdgeCP.exe*，或*iexplore.exe*|必须启用脚本调试。 对于 Chrome 中，也必须在调试模式下，选择运行 Chrome **Webkit 代码**中**附加到**字段。|
+|调试C#，Visual Basic 或 c + + 应用程序在本地计算机上|可以使用两种[标准调试](../debugger/getting-started-with-the-debugger.md)或**附加到进程**|*\<应用程序名 >.exe*|在大多数情况下，使用标准调试并不**附加到进程**。|
+|远程调试 Windows 桌面应用程序|远程工具|不可用| 请参阅[远程调试C#或 Visual Basic 应用程序](../debugger/remote-debugging-csharp.md)或[远程调试 c + + 应用程序](../debugger/remote-debugging-cpp.md)|
+|调试 ASP.NET 应用程序在本地计算机上，在启动不带调试器的应用后|使用**附加到进程**|*iiexpress.exe*|这可能会有所帮助使应用程序加载速度更快，如 （例如） 进行分析时。 |
+|调试服务器进程上的其他受支持的应用类型|如果远程服务器，使用远程工具和**附加到进程**|*chrome.exe*， *iexplore.exe*，或其他进程|如有必要，使用资源监视器来帮助标识该进程。 请参阅[远程调试](../debugger/remote-debugging.md)。|
+|远程调试的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|
+|调试未从 Visual Studio 启动的通用 Windows 应用 (UWP)、 OneCore、 HoloLens 或 IoT 应用|调试安装的应用包|不可用|请参阅[调试安装的应用包](debug-installed-app-package.md)而不是使用**附加到进程**|  
   
 ## <a name="use-debugger-features"></a>使用调试器的功能
 
-若要使用 Visual Studio 调试器 （如命中断点） 的全部功能的本地源和符号时附加到进程，该应用程序必须完全匹配 (也就是说，调试器必须能够加载正确[符号 (.pbd) 文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). 默认情况下，这需要调试版本。
+若要使用的全部功能 （如命中断点） 的 Visual Studio 调试器附加到进程，该应用程序必须完全匹配的本地源和符号。 也就是说，调试器必须能够加载正确[符号 (.pdb) 文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 默认情况下，这需要调试版本。
 
 远程调试的情况下，必须具有的源代码 （或对源代码的副本），它已经在 Visual Studio 中打开。 在远程计算机上的已编译的应用二进制文件必须来自同一个生成，在本地计算机上。
 
-某些本地调试的情况下，您可以在 Visual Studio 中使用调试源不能访问正确的符号文件是否存在与该应用程序 （默认情况下，需要调试版本）。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+某些本地调试的情况下，您可以调试在 Visual Studio 中与源不能访问正确的符号文件存在与该应用程序。 默认情况下，这需要调试版本。 有关详细信息，请参阅[指定符号和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> 进行故障排除附加错误  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a>排查附加错误  
  当调试器附加到一个正在运行的进程时，该进程可能包含一种或多种类型的代码。 可在 **“选择代码类型”** 对话框中显示并选择可将调试器附加到的代码类型。  
   
  有时，调试器能够成功附加到一种代码类型，但不能附加到另一种代码类型。 这种情况可能发生在你尝试附加到远程计算机上运行的进程时。 原因是远程计算机上可能安装了一些代码类型的远程调试组件，但没有安装另一些代码类型的远程调试组件。 这种情况还可能发生在你尝试为直接数据库调试附加到两个或多个进程时。 SQL 调试仅支持附加到单个进程。  
   
  如果调试器无法附加到一些，但并非所有代码类型，您将看到消息，指明哪些类型附加操作失败。  
   
- 如果调试器成功地附加到至少一种代码类型，你就可以继续调试进程。 你只能调试那些已被成功附加的代码类型。 仍将运行中进程的未附加的代码，但您将无法再以设置断点、 查看数据，或执行其他调试操作对该代码。  
+ 如果调试器成功地附加到至少一种代码类型，你就可以继续调试进程。 你只能调试那些已被成功附加的代码类型。 仍将运行中进程的未附加的代码，但将无法设置断点、 查看数据，或执行其他调试操作对该代码。  
   
- 如果想了解有关调试器未能附加到某种代码类型的详细原因，可以尝试仅重新附加到该代码类型。  
+ 如果要了解有关调试器未能附加到某种代码类型的原因的更具体信息，请尝试重新附加到只为该代码类型。  
   
- **若要获取有关某种代码类型未能附加的原因的特定信息：**  
+ **获得有关代码类型未能附加的具体信息：**  
   
 1.  从进程中分离。 上**调试**菜单中，选择**全部分离**。  
   
 1.  重新附加到进程，仅选择代码类型未能附加。  
   
-    1.  在中**附加到进程**对话框框中，选择中的过程**可用进程**列表。  
+    1.  在“附加到进程”对话框，选择“可用进程”列表中的进程。  
   
     2.  选择**选择**。  
   
@@ -208,6 +208,6 @@ ms.locfileid: "52257337"
   
 ## <a name="see-also"></a>请参阅  
  [调试多个进程](../debugger/debug-multiple-processes.md)   
- [在实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [远程调试](../debugger/remote-debugging.md)
  
