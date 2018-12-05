@@ -31,18 +31,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/27/2018
 ms.locfileid: "52388564"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何做：当调用堆栈窗口中缺少本机帧时，退出托管代码
 
-如果代码中有在“调用堆栈”**窗口中不可见的本机框架，则从托管代码中跳出会产生意外的结果。 作为对此情况的一种解决方法，可以使用断点来代替“跳出”**。
+如果您的代码有在**调用堆栈**窗口中不可见的本机帧，则退出托管代码可能会产生意外结果。 作为解决方法，您可以使用断点而不是**Step Out**。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
 
-## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>要在本机框架从调用堆栈显示中消失时跳出托管代码
+## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>当调用堆栈显示中缺少本机帧时，退出托管代码
 
 1.  在本机代码中，调用托管代码的后面设置一个位置断点。
 
-2.  在“调试”**菜单上选择“继续”**。
+2.  在**“调试”**菜单上选择**“继续”**。
 
      托管调用完成后，执行会在本机代码的断点处停止。
 
