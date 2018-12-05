@@ -87,11 +87,11 @@ ms.locfileid: "51295899"
 |属性名|描述|  
 |-------------------|-----------------|  
 |部署冲突解决方法|指定在要部署的项目项的属性与服务器上已有项的属性相同时，要执行的操作。 有关详细信息，请参阅 [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)。|  
-|功能属性|指定在功能部署到 SharePoint 时所随附的一组值（以键/值对的形式存储）。 部署功能后，可在代码中访问属性值。 有关详细信息，请参阅 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|功能接收器|提供在项目项包含的功能中发生特定事件时执行的代码。 有关详细信息，请参阅 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|功能属性|指定在功能部署到 SharePoint 时所随附的一组值（以键/值对的形式存储）。 部署功能后，可在代码中访问属性值。 有关详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|功能接收器|提供在项目项包含的功能中发生特定事件时执行的代码。 有关详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
 |文件夹名|SharePoint 项目项文件夹的名称。|  
-|项目输出引用|指定项目项运行所需的程序集等依赖项。 有关详细信息，请参阅 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
-|安全控件项|指定可以让不受信任的用户安全编辑的控件。 有关详细信息，请参阅 [Providing Packaging and Deployment Information in Project Items](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|项目输出引用|指定项目项运行所需的程序集等依赖项。 有关详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
+|安全控件项|指定可以让不受信任的用户安全编辑的控件。 有关详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|  
   
 ### <a name="project-item-file-properties"></a>项目项文件属性
   
