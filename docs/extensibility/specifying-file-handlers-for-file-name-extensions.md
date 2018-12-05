@@ -78,7 +78,7 @@ HKEY_CLASSES_ROOT\
          VisualStudio.vcproj.14.0 //new progid  
 ```  
   
- 如果旧 ProgID 具有与其关联的谓词，则这些谓词也会出现下**打开***产品名称*的快捷菜单中。  
+ 如果旧 ProgID 具有与其关联的谓词，则这些谓词也会出现下 **打开** *产品名称* 的快捷菜单中。  
   
 ## <a name="see-also"></a>请参阅  
  [有关文件扩展名](../extensibility/about-file-name-extensions.md)   
