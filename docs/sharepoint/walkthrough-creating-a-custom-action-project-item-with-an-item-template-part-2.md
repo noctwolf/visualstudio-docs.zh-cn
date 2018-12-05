@@ -306,7 +306,7 @@ ms.locfileid: "51296237"
   
 13. 在中**描述**框中，输入**此时将打开 SharePoint 开发人员中心网站**。  
   
-14. 在中**URL**框中，输入**https://docs.microsoft.com/sharepoint/dev/**，然后选择**完成**按钮。  
+14. 在中**URL**框中，输入 **https://docs.microsoft.com/sharepoint/dev/** ，然后选择**完成**按钮。  
   
      Visual Studio 将添加名为的项**CustomAction1**项目并打开*Elements.xml*在编辑器中的文件。 确认*Elements.xml*包含向导中指定的值。  
   
