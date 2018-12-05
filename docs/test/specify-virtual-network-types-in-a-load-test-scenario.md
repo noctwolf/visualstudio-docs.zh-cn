@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 的负载测试方案中指定虚拟网络类型
+title: 在负载测试方案中指定虚拟网络类型
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,32 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b1f545260b3632c8097ce4bfed9eff7f2de0ccbd
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 586038d325f17d37167166a361ee214d959ba2ab
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380223"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894672"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>在负载测试方案中指定虚拟网络类型
 
 “网络组合”提供了一种在负载测试方案中更真实地模拟负载的方法。 负载是使用不同种类的网络类型组合生成的，而不仅仅是一种单一的网络类型。 这样可以更逼真地模拟最终用户与应用程序交互的方式。
 
- 网络组合指定虚拟用户运行特定网络配置文件的概率。 网络配置是在应用层对网络带宽的一种模拟， 但它不模拟网络延迟。
+网络组合指定虚拟用户运行特定网络配置文件的概率。 网络配置是在应用层对网络带宽的一种模拟， 但它不模拟网络延迟。
 
- 在创建负载测试时，可能希望模拟通过多种类型的网络连接产生的负载的情况。 网络组合提供了几种网络类型。 模拟不同的网络。 如果选择其中某个选项（如 `Cable-DSL 1.5Mbps`），便会在测试中注入等待时间以模拟所选的网络带宽。
+在创建负载测试时，可能希望模拟通过多种类型的网络连接产生的负载的情况。 网络组合提供了几种网络类型。 模拟不同的网络。 如果选择其中某个选项（如 `Cable-DSL 1.5Mbps`），便会在测试中注入等待时间以模拟所选的网络带宽。
 
- 网络组合的工作方式类似于其他组合选项。 根据网络组合，与虚拟用户关联的网络类型是随机选取的。 根据在组合中指定的概率，使用特定的网络类型运行该用户的测试。
+网络组合的工作方式类似于其他组合选项。 根据网络组合，与虚拟用户关联的网络类型是随机选取的。 根据在组合中指定的概率，使用特定的网络类型运行该用户的测试。
 
- 指定网络组合之后，可以添加和移除网络类型。 还可以使用组合控件来更改网络组合的分布。
+指定网络组合之后，可以添加和移除网络类型。 还可以使用组合控件来更改网络组合的分布。
 
- 利用混合控件，你可以轻松地调整方案中网络的分布。
+利用混合控件，你可以轻松地调整方案中网络的分布。
 
- 有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+有关详细信息，请参阅[关于混合控件](../test/specify-virtual-network-types-in-a-load-test-scenario.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="true-network-emulation"></a>真实网络仿真
 
- Visual Studio 对所有测试类型（包括负载测试）使用基于软件的真实网络仿真。 真实网络仿真通过直接操作网络数据包来模拟各种网络情况。 真实网络仿真程序通过使用可靠的物理链接（如以太网）可模拟有线和无线网络的行为。 下列网络特性加入到了真实网络仿真中：
+Visual Studio 对所有测试类型（包括负载测试）使用基于软件的真实网络仿真。 真实网络仿真通过直接操作网络数据包来模拟各种网络情况。 真实网络仿真程序通过使用可靠的物理链接（如以太网）可模拟有线和无线网络的行为。 下列网络特性加入到了真实网络仿真中：
 
 -   通过网络的往返时间（延迟）
 

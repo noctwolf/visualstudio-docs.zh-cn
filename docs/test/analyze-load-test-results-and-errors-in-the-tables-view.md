@@ -23,16 +23,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c2a0ccc4ee9f002a6c0f335aed590d3b8bb79a7c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cab92c4daac6da81541771b534f4f1a6f9be159e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49928667"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896622"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>在负载测试分析器的表视图中分析负载测试结果和错误
 
 查看负载测试运行的结果时，可以显示不同的窗格，从而以不同的方式分析数据。 你可以查看图形形式的数据，从而了解数据随时间的变化情况，也可以查看详细信息表形式的数据。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 要切换到表视图，请选择负载测试工具栏上的“表”。 若要在不同的表之间切换，请使用表网格上方的工具栏上的“表”下拉列表。 在表视图中，一次最多可以查看四个表。 有关详细信息，请参阅本主题中的[平铺负载测试表](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#tile-load-test-tables)。
 
@@ -41,14 +43,14 @@ ms.locfileid: "49928667"
 > [!NOTE]
 > 名为“最后一个”的列仅在执行负载测试时可用。 负载测试完成后，这些列即变为不可用。
 
- 对于大多数表而言，都可以通过选择要作为排序依据的列标题来进行排序。 默认情况下，有些表并不显示所有可用的列。 如果有列可用，可向表中添加列。 若要添加列，请右键单击该表，然后选择“添加/删除列”。
+对于大多数表而言，都可以通过选择要作为排序依据的列标题来进行排序。 默认情况下，有些表并不显示所有可用的列。 如果有列可用，可向表中添加列。 若要添加列，请右键单击该表，然后选择“添加/删除列”。
 
 > [!NOTE]
 > 可以将数据从表复制到 Excel 等其他应用程序中，供其他分析之用。
 
 ## <a name="the-load-test-tables"></a>负载测试表
 
- 下表列出了可用于分析负载测试运行的表。
+下表列出了可用于分析负载测试运行的表。
 
 |表名称|描述|
 |-|-|

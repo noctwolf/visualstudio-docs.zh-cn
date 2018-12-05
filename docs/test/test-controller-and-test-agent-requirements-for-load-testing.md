@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f29e43c66844f915d9d79de3819166905b083df2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ceb3ecde3941a12b7113ede04b5f7dda841c7816
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813981"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894724"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>负载测试对测试控制器和测试代理的要求
 
 包括单元测试、Web 性能测试、负载测试和手动测试在内的多种测试类型集成到了 Visual Studio 中。 Visual Studio 使 Visual Studio 应用程序生命周期管理用户可以使用测试控制器和一个或多个代理在远程计算机上运行测试。 请参阅[安装和配置测试代理](../test/lab-management/install-configure-test-agents.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="hardware-and-software-requirements"></a>硬件和软件要求
 

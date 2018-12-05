@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 42336bcbded19343651eeff3b18a7f4a52c96fbe
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 80bb7f0998dd8ee1bc46105892e0e6f4e23b74c1
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382244"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895062"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>如何：将负载测试结果导入存储库中
 
 运行负载测试时，在运行期间收集的信息都存储到负载测试结果储存库中。 负载测试结果储存库中包含性能计数器数据和有关任何错误的信息。 有关详细信息，请参阅[管理负载测试结果存储库中的负载测试结果](../test/manage-load-test-results-in-the-load-test-results-repository.md)。
 
- 可以使用“打开和管理负载测试结果”对话框，从“负载测试编辑器”中管理负载测试结果。 你可以打开、导入、导出和移除负载测试结果。
+可以使用“打开和管理负载测试结果”对话框，从“负载测试编辑器”中管理负载测试结果。 你可以打开、导入、导出和移除负载测试结果。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-import-results-into-a-repository"></a>将结果导入储存库
 

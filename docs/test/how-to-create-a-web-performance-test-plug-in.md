@@ -13,16 +13,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: ad1dff59ed942c16f05176f3e26f0042234d4933
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 365b1be6dd3c383c42b08d2c480db7fad104c48f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380161"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894516"
 ---
 # <a name="how-to-create-a-web-performance-test-plug-in"></a>如何：创建 Web 性能测试插件
 
 使用 Web 性能测试插件，可以隔离代码并在 Web 性能测试中的主要声明性语句外部重用代码。 自定义的 Web 性能测试插件为在运行 Web 性能测试时调用某些代码提供了途径。 在每个测试迭代中，Web 性能测试插件都要运行一次。 此外，如果重写测试插件中的 PreRequest 或 PostRequest 方法，这些请求插件将分别在每个请求之前或之后运行。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 通过从 <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin> 基类派生你自己的类，可以创建自定义的 Web 性能测试插件。
 

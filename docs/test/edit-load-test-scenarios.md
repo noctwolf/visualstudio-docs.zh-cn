@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中编辑负载测试方案
+title: 负载测试方案
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +12,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 67398d5a4b2b33ace2d3ba3c74d63693861e586e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 865be7c7c6371f92f85d853a7dde045274fc5efb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49837134"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896531"
 ---
 # <a name="edit-load-test-scenarios"></a>编辑负载测试方案
 
 负载测试方案指定负载模式、测试组合、浏览器组合和网络组合。 方案非常重要，因为借助方案可以配置测试以模拟复杂真实的工作负载。
 
 例如，你可能正在测试某电子商务网站点，其 Internet 前端由数百位并发客户同时访问，这些客户的访问连接速度和浏览器都各不相同。 该站点还可能具有管理功能，供内部员工用于更新产品和查看统计信息。 这些内部用户通常会使用相同的浏览器和高速 LAN 连接访问该站点。 你可能希望将这两种不同用户组的属性封装到不同方案中。 每个方案可包含一个虚拟用户类型。 在这种情况下，可生成一个负载测试方案来表示虚拟客户，生成另一个方案来表示网站的虚拟内部用户。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="scenario-components"></a>方案组件
 
