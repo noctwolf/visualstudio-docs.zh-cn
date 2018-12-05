@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c16cfdc8d554ce9bf556ea707f977989e1dab72
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: e4cf3c7ae8b45f6d3410925977c2c67784b1ca6d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389372"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621586"
 ---
 # <a name="fix-bugs-by-writing-better-c-code-using-visual-studio"></a>通过编写更好地修复 bugC#使用 Visual Studio 代码
 
-调试代码可能非常耗时-，有时会令人沮丧-任务。 若要了解如何有效地调试时间。 类似于 Visual Studio 功能强大的 IDE 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。
+调试代码可能非常耗时-，有时会令人沮丧-任务。 它需要时间来了解如何有效地调试，但功能强大的 IDE，类似于 Visual Studio 可以使您的工作变得更加轻松。 IDE 可以帮助您更快地调试代码并不只是的但它还可以帮助您编写更好的代码更少的 bug。 我们在本文中的目标是提供全面的调试过程中，以便您了解何时使用代码分析器、 何时使用调试器，以及何时使用其他工具。  
 
 在本文中，我们介绍如何利用 IDE，以便提高工作效率调试会话。 我们提到了多项任务，例如：
 

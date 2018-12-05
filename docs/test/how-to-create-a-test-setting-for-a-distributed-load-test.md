@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8b38366a97351fae52ae82a4291ed13da996bf41
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2f04912423dfdbd2baa7beab431871f814c044b0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296081"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895465"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>如何：为分布式负载测试创建测试设置
 
 配置负载测试的“测试设置”，以便可以使用测试代理和测试控制器在多台计算机间分发这些测试。 还可以将测试设置配置为使用诊断数据适配器，这些适配器指定从 Visual Studio 中运行负载测试时要收集的数据类型或者对测试计算机产生的影响。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 例如，可以使用 ASP.NET 探查器诊断数据适配器来收集代码的性能明细。 此外，诊断数据适配器可用于在测试计算机上模拟潜在瓶颈或减少可用系统内存。
 

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的负载测试运行设置
+title: 负载测试运行设置
 ms.date: 10/19/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d0a3311c90638b3fd34b9d651b89af2bed07f421
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9b0123ba4e6f9565cc31f63a23bb0be0b5bee344
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49817376"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895491"
 ---
 # <a name="load-test-run-settings-properties"></a>负载测试运行设置属性
 
 负载测试的运行设置将确定各种其他设置，包括测试持续时间、结果集合详细程度以及测试运行时收集的计数器集。 可以为每个负载测试创建和存储多个运行设置，然后在运行测试时选择一个要使用的特定设置。 使用“新建负载测试向导”创建负载测试时，将向负载测试添加初始运行设置。
 
- 下表介绍了用于负载测试运行设置的各种属性。 可以修改这些属性来满足特定负载测试需求。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 有关详细信息，请参阅[配置负载测试运行设置](../test/configure-load-test-run-settings.md)。
+下表介绍了用于负载测试运行设置的各种属性。 可以修改这些属性来满足特定负载测试需求。
+
+有关详细信息，请参阅[配置负载测试运行设置](../test/configure-load-test-run-settings.md)。
 
 ## <a name="general-properties"></a>常规属性
 
@@ -42,7 +44,7 @@ ms.locfileid: "49817376"
 |属性|定义|
 |-|----------------|
 |最大测试日志数|指定为负载测试保存的最大测试日志数。 达到为最大测试日志数输入的值时，负载测试将停止收集日志。 因此，将在测试开头（而不是结尾）收集日志。 负载测试将继续运行，直到完成。|
-|为已完成测试保存日志的频率|指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。<br /><br /> 有关详细信息，请参阅[如何：指定保存测试日志的频率](../test/how-to-specify-how-frequently-test-logs-are-saved.md)|
+|为已完成测试保存日志的频率|指定写入测试日志的频率。 该数字指示将测试保存到测试日志的频率为每达到输入的测试数即保存一次。 例如，如果输入的值为 10，则指定第 10 个、20 个、30 个等测试将写入测试日志。 如果将该值设置为 0，则指定不保存任何测试日志。|
 |测试未通过时保存日志|一个布尔值，它确定负载测试中测试未通过时是否保存测试日志。 默认值为 `True`。<br /><br /> 有关详细信息，请参阅[如何：指定是否将测试失败保存到测试日志中](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
  有关详细信息，请参阅[修改负载测试日志记录设置](../test/modify-load-test-logging-settings.md)。

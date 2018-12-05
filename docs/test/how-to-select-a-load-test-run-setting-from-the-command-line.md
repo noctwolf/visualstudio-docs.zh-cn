@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 263f8a671897b5f9c8af835f13214139e3abef17
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: e0f279b8d6efb4a43d0cdb93c7e0c6e922721fb0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39382472"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895244"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>如何：从命令行选择要使用的负载测试运行设置
 
 负载测试包含运行设置，运行设置是会影响负载测试运行方式的属性。 在“属性”窗口中，运行设置按类别进行组织。 当负载测试运行时，它会使用当前设置为活动的运行设置。
 
- 如果负载测试只包含一个运行设置，则它始终为活动节点。 如果负载测试包含多个运行测试节点，则可以选择一个在从命令行运行负载测试时使用的节点。 请参阅[如何：向负载测试添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
+如果负载测试只包含一个运行设置，则它始终为活动节点。 如果负载测试包含多个运行测试节点，则可以选择一个在从命令行运行负载测试时使用的节点。 请参阅[如何：向负载测试添加额外的运行设置](../test/how-to-add-additional-run-settings-to-a-load-test.md)。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>从命令行更改运行设置
 

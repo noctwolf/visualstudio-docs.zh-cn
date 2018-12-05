@@ -11,18 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5333fe1562a9398e930bb077dd2a4cfe6aab6825
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 082b3da934e602aef2f0c4eefcfffc45da2c40f0
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380243"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896076"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 
 负载测试分析器的关系图视图包含一个图例面板，用于显示与当前选择的关系图关联的每个性能计数器的信息。
 
 ![图形视图图例](../test/media/load_viewlegend.png)
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 图例中包含以下信息：
 
@@ -31,11 +33,11 @@ ms.locfileid: "39380243"
 -   **范围：** 此列显示性能计数器的 y 轴范围。 默认情况下，此值会随着样本数据范围的更改而自动调整。 自动调整的范围始终为大于最大值的下一个 10 的幂；这包括 10 的负数幂。 关系图可以包含各种计数器，其中每个计数器都有不同的范围。 因此，y 轴不会用任何特定范围进行标记，而是用 0-100 之间的值进行标记，这些值表示每个计数器的总体范围百分比。 例如，对于范围为 1000 的计数器，y 轴上的数据点 60 将对应于该计数器的值 600。
 
     > [!NOTE]
-    > 可以通过将范围锁定为特定值来关闭自动范围值调整。 当范围锁定后，超过该范围的任何值都会在关系图顶部显示为指定的最大值。 使用“绘图选项”对话框可将范围锁定为特定值。 有关详细信息，请参阅[如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)。
+    > 可以通过将范围锁定为特定值来关闭自动范围值调整。 当范围锁定后，超过该范围的任何值都会在关系图顶部显示为指定的最大值。 使用“绘图选项”对话框可将范围锁定为特定值。
 
 -   计数器：四个分别名为“计数器”、“实例”、“类别”和“计算机”的列一起唯一地标识性能计数器。
 
--   **颜色：**“颜色”列显示性能计数器的绘制线条的颜色和线型。 使用“绘图选项”对话框，可以更改关系图上性能计数器的颜色或线型。 可以从图例的快捷菜单访问“绘图选项”对话框。 有关详细信息，请参阅[如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)。
+-   **颜色：**“颜色”列显示性能计数器的绘制线条的颜色和线型。 使用“绘图选项”对话框，可以更改关系图上性能计数器的颜色或线型。 可以从图例的快捷菜单访问“绘图选项”对话框。
 
 -   **统计信息：**“最小值”、“最大值”、“平均值”和“最后一个”列显示了性能计数器的各项统计信息。 这些值对应于在关系图的可见区域上显示的数据。 例如，如果放大运行的某个区域，则图例统计信息将仅反映缩放区域的值。 “最后一个”列是性能计数器针对最近完成的采样间隔的值。
 
@@ -59,6 +61,5 @@ ms.locfileid: "39380243"
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)
 - [如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [在关系图视图中分析负载测试结果](../test/analyze-load-test-results-in-the-graphs-view.md)

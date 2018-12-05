@@ -10,22 +10,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 00abfd827bf98d79e74ecbaf9a01efdc7761c3ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6737a5b12b9205e5d6ed3ddde6de89e820d92fce
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49881698"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895231"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>如何：使用虚拟用户活动图分析虚拟用户在负载测试期间的操作
 
 可使用“虚拟用户活动图”查看与负载测试关联的虚拟用户活动。 图中的每一行代表一个虚拟用户。 “虚拟用户活动图”显示每个虚拟用户在测试期间所执行的操作。 可以查看用户活动的模式和负载模式、关联失败的或速度缓慢的测试，还可以查看具有其他虚拟用户活动的请求。 只有在运行完负载测试之后，“虚拟用户活动图”才可用。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 下面的过程演示如何查看“虚拟用户活动图”、如何调查特定的用户活动以及如何使用筛选。
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>在负载测试结果中查看虚拟用户活动图
 
-1.  若要查看虚拟用户数据，必须首先为与负载测试关联的“计时详细信息存储”属性配置“所有的详细信息”设置。 然后运行负载测试。 有关详细信息，请参阅[如何：配置收集完整详细信息以启用虚拟用户活动图](../test/how-to-configure-load-tests-to-collect-full-details.md)。
+1.  若要查看虚拟用户数据，必须首先为与负载测试关联的“计时详细信息存储”属性配置“所有的详细信息”设置。 然后运行负载测试。
 
 2.  运行完负载测试之后，将显示测试结果摘要页。 选择工具栏上的“用户详细信息”按钮。
 

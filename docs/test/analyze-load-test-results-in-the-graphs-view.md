@@ -17,16 +17,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 57c73a0da427141e4a8f94a51fa57ef7aa871019
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c635d3a2c21d1ab84feca285c8cea8eb2aac68f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49870050"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895075"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>在负载测试分析器的关系图视图中分析负载测试结果
 
 负载测试的结果以数据的形式显示在多个不同窗格中。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 要以关系图的形式显示测试结果，请选择负载测试工具栏上的“关系图”。 每个单独的关系图将显示在一个面板中，关系图的名称显示在下拉列表的顶部。 若要在面板中显示不同的关系图，请从列表中选择不同的关系图名称。
 
@@ -82,7 +84,6 @@ ms.locfileid: "49870050"
 |**在关系图上显示计数器**：通过将计数器放置在关系图上，可以将不同种类的数据添加到负载测试结果关系图中。|-   [如何：在关系图上添加和删除计数器](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**放大关系图**：完成负载测试后，可使用缩放条来放大并滚动到关系图的某一区域。 通过放大，可以更细致地检查在负载测试运行过程中所生成的数据。|-   [如何：放大关系图的区域](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**平铺关系图**：可以采用多个模式中的任意一个排列负载测试结果关系图。 最多可以平铺四个关系图。||
-|**修改关系图中性能计数器图形的外观**：可以更改关系图中性能计数器的绘图线条选项。 包括颜色和线型。 此外，还可以指定是自动还是手动指定绘制性能计数器时使用的范围。|-   [如何：为绘图计数器指定绘图选项](../test/how-to-specify-plot-options-for-graphing-counters.md)|
 |**创建自定义关系图**：可以设计用于显示有关负载测试结果的特定信息的关系图。 可以通过指定关系图将显示的负载测试计数器来设计自定义关系图。|-   [如何：创建自定义关系图](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |在关系图中导出性能计数器数据：位于关系图视图中时，可使用负载测试分析器工具栏上的“将关系图数据导出到 Excel”按钮将关系图数据导出到 Microsoft Excel。||
 

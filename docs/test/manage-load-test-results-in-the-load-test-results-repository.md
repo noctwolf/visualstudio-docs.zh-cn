@@ -13,20 +13,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: d54c599d812bfff393cbc4ccf330aa35b902f38f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc0dff5f9e2c647d153cf1c38bb33802b47151d6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950012"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895452"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理“负载测试结果存储库”中的负载测试结果
 
 运行负载测试时，在运行负载测试期间收集的任何信息都存储到负载测试结果存储库中，这是一个 SQL 数据库。 负载测试结果储存库包含性能计数器数据和有关已记录错误的任何信息。 “结果储存库”数据库在安装控制器时创建，或者首次在本地运行负载测试时自动创建。 对于本地运行，如果没有负载测试架构，则将自动创建该数据库。
 
- 如果修改控制器的结果储存库连接字符串以使用其他服务器，则新服务器必须运行 loadtestresultsrepository.sql 脚本才能创建该架构。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- Visual Studio Enterprise 提供命名的计数器集，用于基于某种技术来收集通用性能计数器。 在分析 IIS 服务器、ASP.NET 服务器或 SQL Server 时可使用这些计数器集。 计数器集收集的所有数据都存储在负载测试结果储存库中。
+如果修改控制器的结果储存库连接字符串以使用其他服务器，则新服务器必须运行 loadtestresultsrepository.sql 脚本才能创建该架构。
+
+Visual Studio Enterprise 提供命名的计数器集，用于基于某种技术来收集通用性能计数器。 在分析 IIS 服务器、ASP.NET 服务器或 SQL Server 时可使用这些计数器集。 计数器集收集的所有数据都存储在负载测试结果储存库中。
 
 > [!IMPORTANT]
 > 计数器集和性能计数器数据之间有所不同。 计数器集是元数据。 它定义应从执行特定角色（如 IIS 或 SQL Server）的计算机上收集的一组性能计数器。 计数器集是负载测试定义的一部分。 性能计数器数据是根据计数器集、计数器集到特定计算机的映射以及采样速率收集的数据。

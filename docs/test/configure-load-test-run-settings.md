@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2171912d3542049564f23ea69b06186cd1846943
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c20a56ce2d78ab5ba3c3fdcde19af573a830fc5
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813837"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895621"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 
 “运行设置”是一组会影响负载测试运行方式的属性。 在“属性”窗口中，运行设置按类别进行组织。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 负载测试中可以有多个运行设置，但是每次运行时只可有一个运行设置处于活动状态。 其他运行设置提供了一个快速方法来选择备用设置，以用于后续的测试运行。
 

@@ -13,18 +13,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: e70c468a70d37d1d8e261844c004af785a68eb54
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9c7e85dcbd62c5f068ce3286145fec2ddddc7947
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827930"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895686"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>如何：为测试控制器和测试代理指定超时周期
 
 测试控制器和测试代理都有多个超时设置，可以指定失败并显示错误之前等待彼此或数据源响应的时间。 在某些情况下，可能需要编辑超时值以满足拓扑需要或其他环境问题的需要。 若要编辑超时值，请按照下面过程中的说明来编辑与测试控制器或测试代理关联的 XML 配置文件。
 
- 若要编辑测试控制器或测试代理的各种超时设置，请使用表中的键名和值来修改以下配置文件：
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+若要编辑测试控制器或测试代理的各种超时设置，请使用表中的键名和值来修改以下配置文件：
 
 -   测试控制器：QTController.exe.config
 

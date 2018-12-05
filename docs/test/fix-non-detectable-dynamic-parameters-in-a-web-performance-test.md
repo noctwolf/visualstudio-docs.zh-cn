@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 095e986e46332b4bf548cb84188d9f0c35324bc3
-ms.sourcegitcommit: 20d1b9a5bf041bb28453501eb63bc0537a8e4f54
+ms.openlocfilehash: 2a2f75e1aee917a3f4cc9dc7feed15619c23f24e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51645180"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895595"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 性能测试中修复无法检测的动态参数
 
@@ -30,6 +30,8 @@ ms.locfileid: "51645180"
 -   设置为查询字符串或窗体发布参数的动态参数值。 这些参数值将在记录 Web 性能测试后通过动态参数检测进行处理。
 
 未检测到某些类型的动态参数。 未检测到的动态参数将在你运行 Web 性能测试时导致失败，因为每次运行测试时的动态值都有所不同。 若要正确处理这些参数，可以在 Web 性能测试中手动向动态参数添加提取规则。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-and-run-a-web-app-with-dynamic-parameters"></a>创建和运行带动态参数的 Web 应用程序
 
