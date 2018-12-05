@@ -9,16 +9,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: bc225862ee4b9fbc2c4c94aaab4f410719391ee7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 48c377a8a5c48db7e0726ab5d5cc238e6b83c71c
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926587"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895283"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>管理测试控制器和测试代理
 
 如果你需要使用 Visual Studio 远程运行测试、跨多台计算机分发测试或运行负载测试，则必须配置测试控制器、测试代理和测试设置文件。 本主题介绍如何在第一次安装并配置测试控制器和测试代理后管理它们。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 如果使用 Microsoft 测试管理器在实验室环境中运行测试，可使用 Microsoft 测试管理器的“实验室中心”中的“测试控制器管理器”来管理测试控制器及其代理。 本主题仅在使用 Visual Studio 运行测试时适用。
 

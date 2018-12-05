@@ -15,16 +15,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 95aa0b7545ab7f326779b24475c8f7593ede27a6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dba28aea3a4859c9767925a0ac3c7b2ec8e75275
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49879829"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894503"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 
 负载测试提供了命名计数器集，这些计数器集在分析性能计数器数据时十分有用。 这些计数器集按不同的技术组织在一起，包括“应用程序”、“ASP.NET”、“.NET 应用程序”、“IIS”和“SQL”。 在使用“新建负载测试向导”创建负载测试时，需添加一个初始计数器集。 这些计数器为你提供了一组重要的、用于负载测试的预定义计数器。 在“负载测试编辑器”中管理计数器。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!NOTE]
 > 如果负载测试分布在多台远程计算机之间，则会将控制器和代理计数器映射到控制器和代理计数器集中。 有关如何在负载测试中使用远程计算机的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
@@ -42,7 +44,7 @@ ms.locfileid: "49879829"
 |**管理负载测试的计数器集：** 创建负载测试后，可以在负载测试编辑器中编辑计数器集。 管理计数器集包括选择要从中收集性能数据的计算机集，并指定用于从各个计算机收集数据的计数器集。 可在负载测试编辑器中管理计数器。|-   如何：管理计数器集[](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**向负载测试添加计数器集：** 在使用“新建负载测试向导”创建负载测试时，可添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 创建负载测试后，可以使用负载测试编辑器向现有计数器集添加新的计数器。|-   [如何：向计数器集中添加计数器](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [如何：添加自定义计数器集](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**指定对负载测试使用计数器的阈值规则：** 阈值规则是对单个性能计数器进行设置以在负载测试过程中监视系统资源使用情况的规则。 计数器集定义中包含有许多关键性能计数器的预定义阈值规则。 负载测试中的阈值规则将一个性能计数器值与一个常数值或另一个性能计数器值进行比较。|-   [如何：添加阈值规则](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**为计数器集映射到的计算机指定友好名称：** 可以添加计算机标记，通过这些标记可向计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。|-   [如何：向计数器集映射添加计算机标记](../test/how-to-add-computer-tags-to-counter-set-mappings-using-the-load-test-editor.md)|
+|**为计数器集映射到的计算机指定友好名称：** 可以添加计算机标记，通过这些标记可向计算机应用易于识别的名称。 在负载测试编辑器中，这些标记显示在树的“计数器集映射”节点中。 更重要的是，这些标记将显示在 Excel 报表中，可以帮助利益干系人标识计算机在负载测试中的角色，例如“Web Server1 in lab2”或“SQL Server2 in Phoenix office”。<br /><br /> 有关详细信息，请参阅[报告负载测试结果以比较测试或进行趋势分析](../test/compare-load-test-results.md)。||
 
 ## <a name="use-counter-sets"></a>使用计数器集
 

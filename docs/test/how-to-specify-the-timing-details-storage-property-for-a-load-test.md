@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 5d5e378e62f03208c620669fada783fc5fdfb1b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e184db43fcaca96008f85daffdb9abdbc41df07b
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49842165"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895218"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定计时详细信息存储属性
 
 在用“新建负载测试向导”创建负载测试之后，可使用“负载测试编辑器”来更改设置以满足测试需求和目标。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 可以在“属性”窗口中编辑运行设置的“计时详细信息存储”属性值。 “计时详细信息存储”属性可设置为以下任一选项：
 

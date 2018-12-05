@@ -10,27 +10,29 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 25b332fb822524f5fcab5e06ab97bfe2d6af8529
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 25adfc867ca208f367f047e4cb94322718e12b52
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851603"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895309"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>如何：创建诊断数据适配器
 
 若要创建诊断数据适配器，请使用 Visual Studio 创建一个类库，然后将 Visual Studio Enterprise 提供的诊断数据适配器 API 添加到该类库中。 处理测试运行期间引发的事件时，以流或文件的形式将所需的任何信息发送到框架提供的 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink>。 测试完成时，发送到 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> 的流或文件将以附件形式存储到测试结果中。 如果根据这些测试结果创建 Bug，或者在使用[!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)] 时，这些文件也会链接到 Bug。
 
- 可以创建一个诊断数据适配器，它会影响在其上运行测试的计算机，或用于运行受测应用程序的环境中包含的计算机。 例如，该诊断数据适配器在运行测试的测试计算机上收集文件，或在充当应用程序的 Web 服务器角色的计算机上收集文件。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- 可以为诊断数据适配器指定一个友好名称，使用 Microsoft 测试管理器或 Visual Studio 创建测试设置时会显示该名称。 利用测试设置可以定义在运行测试时，哪个计算机角色将在环境中运行特定诊断数据适配器。 也可以在创建测试设置时配置诊断数据适配器。 例如，可以创建用于从 Web 服务器收集自定义日志的诊断数据适配器。 在创建测试设置时，可以选择在执行此 Web 服务器角色的一台或多台计算机上运行此诊断数据适配器，并且可以修改测试设置的配置以便仅收集已创建的最后三个日志。 有关测试设置的详细信息，请参阅[使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
+可以创建一个诊断数据适配器，它会影响在其上运行测试的计算机，或用于运行受测应用程序的环境中包含的计算机。 例如，该诊断数据适配器在运行测试的测试计算机上收集文件，或在充当应用程序的 Web 服务器角色的计算机上收集文件。
 
- 运行测试时将引发事件，这使诊断数据适配器可以在测试中的该点执行任务。
+可以为诊断数据适配器指定一个友好名称，使用 Microsoft 测试管理器或 Visual Studio 创建测试设置时会显示该名称。 利用测试设置可以定义在运行测试时，哪个计算机角色将在环境中运行特定诊断数据适配器。 也可以在创建测试设置时配置诊断数据适配器。 例如，可以创建用于从 Web 服务器收集自定义日志的诊断数据适配器。 在创建测试设置时，可以选择在执行此 Web 服务器角色的一台或多台计算机上运行此诊断数据适配器，并且可以修改测试设置的配置以便仅收集已创建的最后三个日志。 有关测试设置的详细信息，请参阅[使用测试设置收集诊断信息](../test/collect-diagnostic-information-using-test-settings.md)。
+
+运行测试时将引发事件，这使诊断数据适配器可以在测试中的该点执行任务。
 
 > [!IMPORTANT]
 > 这些事件可以在不同的线程中引发，特别是当你在多台计算机上运行测试时。 因此，必须注意可能的线程问题，不要意外损坏自定义适配器的内部数据。 请确保您的诊断数据适配器是线程安全的。
 
- 下面是创建诊断数据适配器时可以使用的关键事件的部分列表。 有关诊断数据适配器事件的完整列表，请参见 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 抽象类。
+下面是创建诊断数据适配器时可以使用的关键事件的部分列表。 有关诊断数据适配器事件的完整列表，请参见 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents> 抽象类。
 
 |事件|描述|
 |-|-----------------|
@@ -44,9 +46,9 @@ ms.locfileid: "49851603"
 > [!NOTE]
 > 完成手动测试时，不再将数据集合事件发送到诊断数据适配器。 测试重新运行时，将具有新的测试用例标识符。 如果用户在测试期间重置测试（这会引发 <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionEvents.TestCaseReset> 事件）或更改测试步骤结果，将不会向诊断数据适配器发送任何数据集合事件，但测试用例标识符保持不变。 若要确定是否重置了测试用例，必须跟踪诊断数据适配器中的测试用例标识符。
 
- 使用下面的过程可创建诊断数据适配器，以收集基于在创建测试设置时所配置的信息的数据文件。
+使用下面的过程可创建诊断数据适配器，以收集基于在创建测试设置时所配置的信息的数据文件。
 
- 有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
+有关诊断数据适配器项目（包括自定义配置编辑器）的完整示例，请参阅[用于创建诊断数据适配器的示例项目](../test/sample-project-for-creating-a-diagnostic-data-adapter.md)。
 
 ##  <a name="create-and-install-a-diagnostic-data-adapter"></a>创建并安装诊断数据适配器
 

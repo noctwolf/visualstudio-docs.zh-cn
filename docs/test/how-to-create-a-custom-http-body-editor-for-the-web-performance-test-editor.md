@@ -10,18 +10,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 338aade9ddef3c4ef571ea2a5bffc67064c81869
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0dc31bef7a7d2e91599cdc25be4f98445beda67f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862458"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896739"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>如何：为 Web 性能测试编辑器创建自定义 HTTP 正文编辑器
 
 可创建自定义内容编辑器，通过它来编辑 Web 服务请求的字符串主体内容或二进制主体内容，例如 SOAP、REST、asmx、wcf、RIA 和其他 Web 服务请求类型。
 
- 可以实现以下类型的编辑器：
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+可以实现以下类型的编辑器：
 
 -   **字符串内容编辑器** 此编辑器是使用 <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin> 接口实现的。
 

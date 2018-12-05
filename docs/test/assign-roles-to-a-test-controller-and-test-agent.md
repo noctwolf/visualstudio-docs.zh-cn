@@ -14,24 +14,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 4f47fdad1b2f04a69b2a4bc1c3f6d1e6b60fa881
-ms.sourcegitcommit: 3dd15e019cba7d35dbabc1aa3bf55842a59f5278
+ms.openlocfilehash: 021693266278bd705678c22d2c3f07e534901e5a
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46370726"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895335"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>为测试控制器和测试代理分配角色
 
 本演练演示如何创建和配置使用测试控制器和测试代理跨多台使用 Visual Studio 的计算机分发测试的测试设置。 此外，本演练还演示如何向测试设置中添加诊断和数据适配器。
 
-在本演练中，你将完成以下任务：
-
--   创建测试设置。
-
--   为测试控制器和测试代理分配角色。
-
--   为测试设置分配诊断和数据适配器。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="prerequisites"></a>系统必备
 

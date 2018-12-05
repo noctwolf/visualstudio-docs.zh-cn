@@ -12,22 +12,24 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 85759cc5f9297ba2bb0706352d788ba619a8021c
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 12b01e8428c35874f4a913c846f57f89a02162c6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380663"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894464"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：创建 Web 服务测试
 
 可以使用 Web 性能测试对 Web 服务进行测试。 使用“插入请求”和“插入 Web 服务请求”选项，可以在“Web 性能测试编辑器”中自定义各个请求以查找 Web 服务页。 通常，并不在 Web 应用程序中显示这些页。 因此，必须自定义请求才能访问这些页。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 以下过程使用商务初学者工具包中包含的 Web 服务。 可以从 [ASP.NET Commerce 初学者工具包](http://go.microsoft.com/fwlink/?LinkId=181469)进行下载。
 
- **要求**
+**要求**
 
--   Visual Studio Enterprise
+Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>测试 Web 服务
 

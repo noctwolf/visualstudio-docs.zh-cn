@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中编码的 UI 测试的最佳做法
+title: 编码的 UI 测试的最佳做法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: d158d3d0fade2b44cf819cf40209a901534a18ad
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: ed2ab3ff15e94bf0e014b99b6451840e6f26a04e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36283271"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896012"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>编码的 UI 测试的最佳做法
 
 本主题介绍有关开发编码的 UI 测试的一些建议。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="best-practices"></a>最佳实践
 

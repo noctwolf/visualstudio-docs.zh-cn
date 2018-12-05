@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: c4bafd4e7e50838adbe8ba458191c370b4d7427d
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 4a5dd85c56a57b6257041c129925703e8e91e050
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39380689"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895608"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>如何：使用 Microsoft Word 手动创建负载测试性能报告
 
 可以通过从负载测试结果摘要视图和关系图视图复制和粘贴数据，手动创建 Microsoft Word 负载测试报告。 摘要视图和关系图视图中显示的数据在复制后将以 HTML 格式应用。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!TIP]
 > 可以将表视图中的纯文本和详细信息视图中的屏幕快照复制到 Microsoft Word，但复制的内容不会以 HTML 格式应用，需要另外进行格式设置和编辑。

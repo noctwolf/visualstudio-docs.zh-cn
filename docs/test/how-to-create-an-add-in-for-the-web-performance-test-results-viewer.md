@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 2c2a5366a9772060a3e94de14b12f5d2ae62cbdf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dbff48696a7fe10266a2c72fc3a3d9fb0e9ba81d
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949302"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896040"
 ---
 # <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建 Visual Studio 外接程序
 
@@ -28,7 +28,9 @@ ms.locfileid: "49949302"
 
 此外，还需要添加对位于 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies 文件夹中的 LoadTestPackage DLL 的引用。
 
--   若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
+若要扩展“Web 性能测试结果查看器”的 UI，必须创建 Visual Studio 加载项和用户控件。 下面的过程说明如何创建加载项、用户控件以及如何实现扩展“Web 性能测试结果查看器”的 UI 所需的类。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="create-or-open-a-solution-that-contains-an-aspnet-web-application-and-a-web-performance-and-load-test-project"></a>创建或打开包含 ASP.NET Web 应用程序、Web 性能和负载测试项目的解决方案
 
