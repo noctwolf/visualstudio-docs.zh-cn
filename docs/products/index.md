@@ -5,12 +5,12 @@ title: Visual Studio 文档| Microsoft Docs
 description: 了解如何使用 Visual Studio 2017 并以你喜欢的语言来开发适用于你的平台和设备的应用程序、服务和工具。
 ms.topic: landing-page
 searchScope: []
-ms.openlocfilehash: 9313da2778eb55028a3966f728fc04b37e4cf9c3
-ms.sourcegitcommit: 3e301a124483cc12edf95551e7c3a9070a759985
+ms.openlocfilehash: d4419aadd8be604918b6793685079053e03d4289
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52712875"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821352"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -160,6 +160,6 @@ ms.locfileid: "52712875"
                 </ul>
             </li>
         </ul>
-        <p>Visual Studio Team Services 和 Team Foundation Server (TFS) 都已重命名为 Azure DevOps Server。 请参阅 <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services 发生了什么？</a>和 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server 现在是 Azure DevOps Server</a>。</p>
+        <p>Visual Studio Team Services 已被 Azure DevOps Services 取代，Team Foundation Server (TFS) 重命名为 Azure DevOps Server。 请参阅 <a href="/azure/devops/user-guide/what-happened-vsts?view=vsts">Visual Studio Team Services 发生了什么？</a>和 <a href="/tfs/server/tfs-is-now-azure-devops-server">Team Foundation Server 现在是 Azure DevOps Server</a>。</p>
     </div>
 </div>

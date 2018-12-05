@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中编码的 UI 测试剖析
+title: 编码的 UI 测试剖析
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -11,16 +11,18 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d86dfcd84ba203891deb52b8a4b646f610a3567
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d5c1a8bcc8ee43aa36b8a39cd53f4be4f6882f06
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49925202"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896583"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>编码的 UI 测试剖析
 
 在编码的 UI 测试项目中创建编码的 UI 测试时，会向解决方案添加多个文件。 本文提供了有关这些文件的信息。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="contents-of-a-coded-ui-test"></a>编码的 UI 测试的内容
 

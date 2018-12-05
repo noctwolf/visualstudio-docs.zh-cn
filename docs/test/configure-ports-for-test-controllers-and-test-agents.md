@@ -15,20 +15,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 9f41e372f6c75e10ebf4d66fcd68eb4652b02f0f
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: c5b740329a1d0cdf9810401a1056ba901056a3af
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297592"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894529"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>为测试控制器和测试代理配置端口
 
 可以更改测试控制器、测试代理和客户端使用的默认传入端口。 这在你尝试将测试控制器、测试代理或客户端与其他一些软件（这些软件与端口设置发生冲突）一起使用时可能会很有用。 更改端口的另一个原因是，测试控制器和客户端之间的防火墙限制。 在此情况下，你可能需要手动配置端口以便为防火墙启用它，这样测试控制器便能向客户端发送结果。
 
- 下图演示测试控制器、测试代理和客户端之间的连接点。 它概述了用于传入和传出连接的端口以及在这些端口上使用的安全限制。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
- ![测试控制器和测试代理的端口和安全性](../test/media/test-controller-agent-firewall.png)
+下图演示测试控制器、测试代理和客户端之间的连接点。 它概述了用于传入和传出连接的端口以及在这些端口上使用的安全限制。
+
+![测试控制器和测试代理的端口和安全性](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>传入连接
 

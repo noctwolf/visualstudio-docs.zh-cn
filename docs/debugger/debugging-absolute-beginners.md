@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fa998896ad4c67bcd9e10ee50b4939bdbf915330
-ms.sourcegitcommit: a7de99f36e9ead7ea9e9bac23c88d05ddfc38b00
+ms.openlocfilehash: 7f6b0855b18f12bd80ad17c5b544a95e5ee57de9
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52257363"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821365"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -244,7 +244,7 @@ ms.locfileid: "52257363"
 
     ![语法错误](../debugger/media/beginners-no-definition.png)
 
-    即使我们使用类型为 `GType` 的对象（具有 `MGType` 属性）来设置每个星系，调试程序也不会将 `theGalaxy` 对象识别成类型为 `GType` 的对象。 这是怎么回事？ 想查看设置星系类型的任何代码。 执行此操作时，你会发现 `GType` 类肯定具有 `MyGType` 的属性，但某些内容不正确。 关于 `object` 的错误消息证明是线索；对于语言解释器，类型似乎是类型为 `object` 的对象，而不是类型为 `GType` 的对象。
+    即使我们使用类型为 `GType` 的对象（具有 `MyGType` 属性）来设置每个星系，调试程序也不会将 `theGalaxy` 对象识别成类型为 `GType` 的对象。 这是怎么回事？ 想查看设置星系类型的任何代码。 执行此操作时，你会发现 `GType` 类肯定具有 `MyGType` 的属性，但某些内容不正确。 关于 `object` 的错误消息证明是线索；对于语言解释器，类型似乎是类型为 `object` 的对象，而不是类型为 `GType` 的对象。
 
 1. 查看与设置星系类型相关的代码，则会发现 `Galaxy` 类的 `GalaxyType` 属性指定为 `object` 而不是 `GType`。
 

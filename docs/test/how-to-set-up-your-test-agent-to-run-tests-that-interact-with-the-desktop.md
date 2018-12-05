@@ -10,16 +10,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b8eba85de98dd46a8ff6ad44154249598a489f5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f657babf33c315be2760cf59f3ec57525643f70e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862094"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894568"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：设置测试代理以运行与桌面交互的测试
 
 如果要运行的自动测试将与桌面交互，必须将代理设置为作为进程而非服务运行。 例如，如果想要使用测试控制器和测试代理远程运行编码的 UI 测试，或者想要运行测试并在运行测试时捕获视频录制，则必须将代理设置为作为进程运行。 使用 Visual Studio 将代理分配给测试设置中的角色时，或者使用 Microsoft 测试管理器将代理分配给环境中的角色时，对于分配给必须与桌面交互的角色的任何代理，必须为其更改设置。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 > [!WARNING]
 > 如果使用 Microsoft 测试管理器设置实验室环境，则会安装测试代理。 可在“环境创建向导”中指定要配置某个角色以运行编码的 UI 测试。

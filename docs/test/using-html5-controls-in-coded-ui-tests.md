@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中编码的 UI 测试中使用 HTML5 控件
+title: 在编码的 UI 测试中使用 HTML5 控件
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 418c0aa6660b01896252d04a711d4069da389f00
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a603a662c9007ab3ee0e66df0b23959bfdce83fb
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914484"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896181"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在编码的 UI 测试中使用 HTML5 控件
 
 编码的 UI 测试包括对某些包含在 Internet Explorer 9 和 Internet Explorer 10 中的 HTML5 控件的支持。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
  **要求**
 
@@ -27,15 +29,14 @@ ms.locfileid: "49914484"
 > [!WARNING]
 > 在 Internet Explorer 10 之前的版本中，可以在比 Internet Explorer 进程更高的特权级别中运行编码的 UI 测试。 当在 Internet Explorer 10 中运行编码的 UI 测试时，编码的 UI 测试和 Internet Explorer 进程必须处于相同的特权级别。 这是因为 Internet Explorer 10 提供了更安全的 AppContainer 功能。
 
-
 > [!WARNING]
 > 如果你在 Internet Explorer 10 中创建编码的 UI 测试，则使用 Internet Explorer 9 或 Internet Explorer 8 可能无法运行它。 这是因为 Internet Explorer 10 包含 HTML5 控件（如音频、视频、进度条和滑块）。 Internet Explorer 9 或 Internet Explorer 8 无法识别这些 HTML5 控件。 同样，使用 Internet Explorer 9 的编码的 UI 测试可能包含 Internet Explorer 8 无法识别的某些 HTML5 控件。
 
-
 ## <a name="audio-control"></a>音频控件
- **音频控件：** 正确录制和播放 HTML5 音频控件上的操作。
 
- ![HTML5 音频控件](../test/media/codedui_html5_audio.png)
+**音频控件：** 正确录制和播放 HTML5 音频控件上的操作。
+
+![HTML5 音频控件](../test/media/codedui_html5_audio.png)
 
 |操作|录制|生成的代码|
 |-|---------------|-|
