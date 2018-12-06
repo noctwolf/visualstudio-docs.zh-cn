@@ -31,7 +31,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/27/2018
 ms.locfileid: "52388564"
 ---
-# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何做：当调用堆栈窗口中缺少本机帧时，退出托管代码
+# <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>如何：在“调用堆栈”窗口中缺少本机框架时跳出托管代码
 
 如果代码具有在**调用堆栈**窗口中不可见的本机框架，则跳出托管代码可能会产生意外结果。一种解决方法是，使用断点来代替**跳出**。
 
