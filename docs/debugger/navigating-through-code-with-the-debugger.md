@@ -16,22 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: df2f0c94fa5d3bfc275a09b065555f32f260ba91
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826725"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621521"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
-Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显示其执行流。 可以使用键盘快捷方式、 调试命令、 断点以及其他功能来快速访问你想要检查的代码。 熟悉的调试器导航命令和快捷方式可以更快、 更轻松地查找和解决应用程序问题。  如果这是你在尝试调试的代码的第一个时间，可能需要阅读[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
   
 ## <a name="basic-debugging"></a>基础调试  
 
 若要启动附有调试器的应用程序，按**F5**，选择**调试** > **开始调试**，或者在 Visual Studio 工具栏中选择绿色箭头。  
   
- ![DBG&#95;Basics&#95;Start&#95;Debugging](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
+ ![DBG&#95;基础知识&#95;启动&#95;调试](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")  
   
 当你进行调试时，黄色突出显示框显示了将执行下一步的代码行。  
   
@@ -55,7 +55,7 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
 
 若要停止的代码或调试时的语句每一行上，使用**调试** > **单步执行**，或按**F11**。  
 
-调试器逐句通过代码语句，不是物理行。 例如，`if`子句可以写在一行：  
+调试器逐句通过代码语句，不是物理行。 例如，`if` 子句可以写在一行内：  
   
   ```csharp  
   int x = 42;  
@@ -93,13 +93,13 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
   
 若要在代码中设置简单断点，请单击你想要挂起执行的代码行旁边的最左侧的边距。 您还可以选择行，然后按**F9**，选择**调试** > **切换断点**，或右键单击并选择**断点** > **插入断点**。 断点显示为一个代码行旁的左边距中的红点。 执行行之前，调试器挂起执行。
   
-![设置断点](../debugger/media/dbg_basics_setbreakpoint.png "设置断点")  
+![设置断点](../debugger/media/dbg_basics_setbreakpoint.png "Set a breakpoint")  
   
 Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断点和跟踪点。 有关详细信息，请参阅[使用断点](../debugger/using-breakpoints.md)。  
   
 ### <a name="run-to-a-function-breakpoint"></a>运行到函数断点  
 
-可以让调试器在运行，直至到达指定的函数。 你可以按名称指定函数或可以从调用堆栈中选择。  
+可以让调试器在运行，直至到达指定的函数。 可以通过名称指定函数，也可以从调用堆栈中选择函数。  
   
 **若要按名称指定函数断点**
 
@@ -131,7 +131,7 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 
 在调试器中暂停时，你可以悬停在源代码中的语句或**反汇编**窗口中，然后选择**执行运行到此处**绿色箭头图标。 使用**运行时单击**无需设置临时断点。
 
-![运行时单击](../debugger/media/dbg-run-to-click.png "运行时单击") 
+![运行到单击处](../debugger/media/dbg-run-to-click.png "Run to Click") 
 
 > [!NOTE]
 > **运行时单击**中的新[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
@@ -183,9 +183,9 @@ Visual Studio 中的断点提供了一组丰富的附加功能，例如条件断
 1. 在中**模块**窗口中，您可以知道该模块具有中加载符号**符号状态**列。 右键单击你想要加载符号，然后选择该模块**加载符号**。  
   
 ##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> 单步执行托管代码中的属性和运算符  
- 默认情况下，调试器将逐过程执行托管代码中的属性和运算符。 在多数情况下，这会提供较好的调试体验。 若要启用单步执行属性或运算符，请选择**调试** > **选项**。 上**调试** > **常规**页上，清除**逐过程执行属性和运算符 （仅限托管）** 复选框。
+ 默认情况下，调试器将逐过程执行托管代码中的属性和运算符。 在多数情况下，这会提供较好的调试体验。 若要启用单步执行属性或运算符，请选择**调试** > **选项**。 在“调试” > “常规”页面上，清除“逐过程执行属性和运算符(仅限托管)”复选框。
 
 ## <a name="see-also"></a>请参阅
- [什么调试？](../debugger/what-is-debugging.md)  
- [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [什么是调试？](../debugger/what-is-debugging.md)  
+ [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md) 

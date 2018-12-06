@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cd96d61718972c82c6002888e123003530c019c
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 8f0aa6cbe09f902ef69e1fd5cb3a2d9712cabf28
+ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826656"
+ms.lasthandoff: 12/03/2018
+ms.locfileid: "52821443"
 ---
 # <a name="what-is-debugging"></a>什么是调试？
 
@@ -25,13 +25,13 @@ Visual Studio 调试器是一个功能强大的工具。 我们演示如何使�
 
 ## <a name="debugger-vs-debugging"></a>调试器与调试
 
-术语*调试*相当通用，，并且可能意味着很多不同的操作。 在一词最为文字化使用情况，则表示在代码中删除 bug。 现在，有很多方面来执行此操作。 例如，您可以调试扫描代码寻找拼写错误，或使用的代码分析器。 您可以通过使用性能探查器调试代码。 或者，您可以通过使用调试*调试器*。
+术语*调试*可能意味着很多不同操作，但最按字面意思，这意味着在代码中删除 bug。 现在，有很多方面来执行此操作。 例如，您可以调试扫描代码寻找拼写错误，或使用的代码分析器。 您可以通过使用性能探查器调试代码。 或者，您可以通过使用调试*调试器*。
 
-调试程序是一个非常特殊的开发人员工具。 调试器将附加到正在运行的应用，并允许您检查您的代码。 在 Visual Studio 的调试文档，这通常是明白我们的意思这里所说"的调试"。
+调试器是一个非常专业开发人员工具，将附加到正在运行的应用，并允许你检查你的代码。 在 Visual Studio 的调试文档，这通常是明白我们的意思这里所说"的调试"。
 
 ## <a name="debug-mode-vs-running-your-app"></a>调试与运行您的应用程序模式
 
-在首次在 Visual Studio 中运行您的应用程序，您可能通过按绿色箭头按钮启动它![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")工具栏中。 默认情况下**调试**值显示在左侧的下拉列表中。 如果您不熟悉 Visual Studio，这可能使印象，调试您的应用程序具有与运行您的应用程序-它执行-但这些从根本上说是两个非常不同的任务。
+在首次在 Visual Studio 中运行您的应用程序，您可能通过按绿色箭头按钮启动它![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")工具栏中 (或**F5**)。 默认情况下**调试**值显示在左侧的下拉列表中。 如果您不熟悉 Visual Studio，这可能使印象，调试您的应用程序具有与运行您的应用程序-它执行-但这些从根本上说是两个非常不同的任务。
 
 ![选择调试版本](../debugger/media/what-is-debugging-debug-build.png)
 
@@ -49,7 +49,7 @@ Visual Studio 调试器是一个功能强大的工具。 我们演示如何使�
 
 ## <a name="next-steps"></a>后续步骤
 
-在本文中，已了解的一些常规调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。 以下文章说明C#代码示例，但概念适用于 Visual Studio 支持的所有语言。
+在本文中，你已了解一些常规的调试概念。 接下来，您可以开始学习如何使用 Visual Studio 进行调试以及如何编写更少 bug 的代码。 以下文章说明C#代码示例，但概念适用于 Visual Studio 支持的所有语言。
 
 > [!div class="nextstepaction"]
-> [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)
+> [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)

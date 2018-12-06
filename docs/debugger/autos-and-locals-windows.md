@@ -16,24 +16,22 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 37843e6f84bf16efee4d149ed08a7ecb525d7574
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
-ms.translationtype: HT
+ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388512"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621466"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 
-**自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。 **自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[编写更好地C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
+**自动**并**局部变量**窗口进行调试时显示变量值。 在调试会话期间，windows 才可用。 **自动**窗口显示当前断点周围使用的变量。 **局部变量**窗口将显示在本地范围内，通常是当前函数或方法定义的变量。 如果这是你在尝试调试的代码的第一个时间，可能需要阅读[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
 
  **自动**窗口是适用于C#，Visual Basic、 c + + 和 Python 代码，而不是 JavaScript 或F#。
   
 若要打开**自动**窗口中的，调试时，选择**调试** > **Windows** > **自动**，或按**Ctrl**+**Alt**+**V** > **A**。  
 
 若要打开**局部变量**窗口中的，调试时，选择**调试** > **Windows** > **局部变量**，或按**Alt**+**4**。
-
-若需了解基本调试的详细信息，请参阅[调试程序入门](../debugger/getting-started-with-the-debugger.md)。
 
 > [!NOTE]
 > 本主题适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
@@ -153,5 +151,5 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>请参阅  
  [什么是调试？](../debugger/what-is-debugging.md)  
- [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)

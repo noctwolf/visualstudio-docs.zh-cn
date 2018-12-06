@@ -1,6 +1,6 @@
 ---
 title: 在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务 | Microsoft 文档
-description: 如果组织使用防火墙或代理服务器，请检查希望列入白名单或打开的域 URL、端口和协议
+description: 如果组织使用防火墙或代理服务器，请检查希望列入允许列表或打开的域 URL、端口和协议
 ms.custom: ''
 ms.date: 07/10/2018
 ms.technology: vs-acquisition
