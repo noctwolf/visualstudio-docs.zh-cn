@@ -18,18 +18,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: aa469b109e0e22e426d76f75be50309196c6a264
-ms.sourcegitcommit: 331dbb12e11fcd7f5d15fab05f3c861e48126e43
-ms.translationtype: MT
+ms.openlocfilehash: 944347f6afc371775afca1b58bae77271b60359c
+ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51826786"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52621638"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>监视使用监视窗口和快速监视的变量 
 
 当你进行调试时，可以使用**Watch** windows 和**快速监视**监视变量和表达式。 在调试会话期间，windows 才可用。
 
 **观看**windows 可以在调试时一次显示多个变量。 **快速监视**对话框一次仅显示单个变量，并可以继续调试之前，必须关闭。
+
+如果这是你在尝试调试的代码的第一个时间，可能需要阅读[通过编写更好地修复 bugC#代码](../debugger/write-better-code-with-visual-studio.md)并[零基础调试](../debugger/debugging-absolute-beginners.md)之前开始阅读本文。
 
 ## <a name="observe-variables-with-a-watch-window"></a>观察使用监视窗口变量
 
@@ -142,11 +144,11 @@ var1 = var2
 
 若要阻止的负面影响指定的一种方法是关闭自动函数计算。 在中**工具** > **选项** > **调试** > **常规**，取消选择**启用属性求值和其他隐式函数调用**。
 
-有关C#仅当关闭属性计算或隐式函数调用，您可以强制计算通过添加**ac**给一个变量的格式修饰符**名称**中**监视**窗口。 请参阅[格式说明符在 C# 中的](../debugger/format-specifiers-in-csharp.md)。
+有关C#仅当关闭属性计算或隐式函数调用，您可以强制计算通过添加**ac**给一个变量的格式修饰符**名称**中**监视**窗口。 请参阅 [C# 中的格式说明符](../debugger/format-specifiers-in-csharp.md)。
 
 ## <a name="bkmk_objectIds"></a> 在监视窗口中使用对象 Id (C#和 Visual Basic)
 
-有时你想要观察特定对象的行为。 例如，你可能想要跟踪本地变量引用该变量超出范围后的对象。 在C#和 Visual Basic 中，您可以创建的特定实例的引用类型的对象 Id 和中使用它们**观看**窗口和断点条件中。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与对象相关联。
+有时你想要观察特定对象的行为。 例如，你可能想要跟踪本地变量引用该变量超出范围后的对象。 在 C# 和 Visual Basic 中，可以创建引用类型的特定实例的对象 ID，并在“监视”窗口中和断点条件下使用它们。 对象 ID 由公共语言运行时 (CLR) 调试服务生成并与该对象关联。
 
 > [!NOTE]
 > 对象 Id 创建弱引用，不会阻止对象被垃圾回收。 它们仅对当前调试会话有效。
@@ -217,13 +219,13 @@ public class Program
 
 若要仅显示**动态视图**对象，将添加**动态**动态对象名称后格式说明符**观看**窗口：
 
-- 对于 C# 中： `ObjectName, dynamic`
-- 对于 Visual Basic: `$dynamic, ObjectName`
+- 对于 C#：`ObjectName, dynamic`
+- 对于 Visual Basic：`$dynamic, ObjectName`
 
 >[!NOTE]
 >- C#调试器不会自动重新计算中的值**动态视图**当进入下一行代码。 
 >- Visual Basic 调试程序会自动刷新通过添加的表达式**动态视图**。
->- 评估的成员**动态视图**可以[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 
+>- 计算“动态视图”的成员可能会有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 
 
 **要插入新监视变量的对象强制转换为一个动态对象：**
   
@@ -278,6 +280,6 @@ static void Main(string[] args)
 1. 继续调试。 您可以观察中的变量**监视**窗口。
 
 ## <a name="see-also"></a>请参阅
- [什么调试？](../debugger/what-is-debugging.md)  
- [更好地编写C#使用 Visual Studio 代码](../debugger/write-better-code-with-visual-studio.md)  
+ [什么是调试？](../debugger/what-is-debugging.md)  
+ [通过编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)  
  [首先看一下调试](../debugger/debugger-feature-tour.md)[调试器窗口](../debugger/debugger-windows.md)

@@ -192,7 +192,7 @@ IntelliSense 是一款可帮助编写代码的 Visual Studio 工具。
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-1. 在调试工具栏中选择调试目标，例如 Edge 或 Chrome。
+1. 在调试工具栏中选择调试目标，例如 Microsoft Edge 或 Chrome。
 
     ![选择调试目标](../javascript/media/tutorial-nodejs-deploy-target.png)
 
