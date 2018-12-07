@@ -29,12 +29,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 43215d1827d8115e694134e75d03add48f16eb81
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 917a83a434dc27074b0d786f64fcdbdc5fd294d3
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859221"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027388"
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项和 VSTO 外接程序之间的差异的详细信息，请参阅[Office 解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。  
@@ -76,9 +76,7 @@ ms.locfileid: "49859221"
 
  若要创建 Excel VSTO 外接程序项目，使用 Excel 工作簿或 Excel 模板项目模板中的**新的项目**对话框中的 Visual Studio。 有关详细信息，请参阅[如何： 在 Visual Studio 中的创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
 
- 有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。  
-
- ![视频链接](../vsto/media/playvideo.gif "链接至视频")相关的视频演示，请参阅[如何实现从 Excel 外接程序自动化 PowerPoint？](http://go.microsoft.com/fwlink/?LinkID=130300)。  
+ 有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
 ### <a name="excel-add-in-programming-model"></a>Excel 外接程序的编程模型  
  创建 Excel VSTO 外接程序项目时，Visual Studio 将生成一个名为 `ThisAddIn`的类，这是你的解决方案的基础。 此类提供了编写代码的起点，并且还将 Excel 的对象模型公开到 VSTO 外接程序。  
