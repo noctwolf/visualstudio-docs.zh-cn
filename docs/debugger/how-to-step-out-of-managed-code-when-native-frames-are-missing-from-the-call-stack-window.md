@@ -38,7 +38,7 @@ ms.locfileid: "52388564"
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你现用的设置或版本。 若要更改设置，请在 **“工具”** 菜单上选择 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
 
-## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>要在本机框架从调用堆栈显示中消失时跳出托管代码
+## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>当“调用堆栈”显示中缺少本机框架时，跳出托管代码
 
 1.  在本机代码中，调用托管代码的后面设置一个位置断点。
 
