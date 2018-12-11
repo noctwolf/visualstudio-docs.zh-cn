@@ -20,7 +20,7 @@ ms.locfileid: "34065112"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
-Visual Studio 提供一组强大的集成项目生成和调试工具。 本文介绍 Visual Studio 如何使用生成输出、代码分析、调试工具和单元测试来查找代码中的问题。
+Visual Studio 提供了一组功能强大的项目构建和调试工具。 在本文中，您将了解 Visual Studio 如何使用生成输出、代码分析、调试工具和单元测试来帮助您在代码中查找问题。
 
 你已经想到了编辑器并创建了一些代码。 现在，需要确保代码正确运行。 与大多数 IDE 一样，Visual Studio 通过两个阶段确保代码正常运行：生成代码以捕获并解决项目和编译器错误，以及运行代码以查找运行时和动态错误。
 

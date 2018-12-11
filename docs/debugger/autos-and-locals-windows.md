@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 7e94c520ca01a92b65ba05a4ff91aaa4c01e7b8d
 ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/29/2018
 ms.locfileid: "52621466"
@@ -92,7 +92,7 @@ ms.locfileid: "52621466"
 
    ![自动 CSharp](../debugger/media/autos-csharp.png "自动 CSharp")
 
-   值`c`为 0，因为行`c = 3`尚未执行。
+   `c` 的值为 0，因为尚未执行 `c = 3` 行。
 
  - C + +**自动**窗口将显示执行会暂停当前行之前的至少三行中使用的变量。 例如，在 c + + 代码中，声明六个变量：
 
@@ -112,12 +112,12 @@ ms.locfileid: "52621466"
 
     ![自动 c + +](../debugger/media/autos-cplus.png "自动 c + +")
 
-    在变量`e`是未初始化，因为行`e = 5`尚未执行。
+    未初始化变量 `e`，因为尚未执行 `e = 5` 行。
 
 ##  <a name="bkmk_returnValue"></a> View return values of method calls
  在.NET 和 c + + 代码中，可以检查中的返回值**自动**窗口时单步或跳出方法调用。 查看方法调用返回时它们不会存储在本地变量的值会很有用。 可以使用一种方法，作为一个参数，或另一种方法的返回值。
 
- 例如，以下C#代码将添加两个函数的返回值：
+ 例如，下面的 C# 代码将添加两个函数的返回值：
 
 ```csharp
 static void Main(string[] args)
@@ -141,7 +141,7 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-若要查看的返回值`sumVars()`和`subtractVars()`方法调用自动窗口中：
+要在“自动”窗口中查看 `sumVars()` 和 `subtractVars()` 方法调用的返回值，请执行以下操作：
 
 1. 在 `int x = sumVars(a, b) + subtractVars(c, d);` 行上设置断点。  
    
