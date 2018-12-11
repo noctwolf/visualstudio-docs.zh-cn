@@ -11,23 +11,26 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: f4c29f3b98440c9e8462083a24012944157b848b
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: cb39ea39261d5b359437b2c31ec963bab8df01fe
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39178408"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895387"
 ---
 # <a name="edit-load-tests"></a>编辑负载测试
 
 负载测试运行 Web 性能测试或单元测试，以模拟多用户同时访问同一服务器。 负载测试用于获得应用程序的压力和性能数据。 可以将负载测试配置为模拟各种负载情况，如用户负载和网络类型。
 
-> [!NOTE]
-> 负载测试仅适用于 Visual Studio 2017 企业版。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 负载测试由“方案”、“计数器集”和“运行设置”定义。 下图说明[方案](../test/edit-load-test-scenarios.md)、[计数器集](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)和[运行设置](../test/load-test-run-settings-properties.md)之间的差异：
 
 ![负载测试体系结构](../test/media/load_test_editor.png)
+
+## <a name="software-requirements"></a>软件要求
+
+Web 性能和负载测试项目仅在 Visual Studio Enterprise 中可用。
 
 ## <a name="edit-load-test-scenario-settings"></a>编辑负载测试方案设置
 

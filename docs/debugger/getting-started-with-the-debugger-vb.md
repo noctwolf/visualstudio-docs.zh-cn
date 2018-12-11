@@ -1,5 +1,5 @@
 ---
-title: 学习使用 Visual Studio 调试器调试 C# 代码
+title: 学习使用 Visual Studio 调试器调试 Visual Basic 代码
 ms.description: Learn how to start the Visual Studio debugger, step through code, and inspect data.
 ms.custom: debug-experiment
 ms.date: 11/27/2018
@@ -15,22 +15,20 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 549f38839495385c983cc68f14fc94629ac988c3
+ms.openlocfilehash: 7f568c5785af1917827646d232ef3c6c8f0ad41b
 ms.sourcegitcommit: d7f232a7596420e40ff8051d42cdf90203af4a74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/03/2018
-ms.locfileid: "52821300"
+ms.locfileid: "52825878"
 ---
-# <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 C# 代码
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
-本文通过分步演练介绍了 Visual Studio 调试器的功能。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)和[编写更优质的 C# 代码来修复 bug](../debugger/write-better-code-with-visual-studio.md)。
+本文通过分步演练介绍了 Visual Studio 调试器的功能。 如果需要更加深入地了解调试器功能，请参阅[调试器功能浏览](../debugger/debugger-feature-tour.md)。 当你调试应用时，通常意味着运行附带有调试器的应用程序。 执行此操作时，调试器在运行过程中可提供许多方法让你查看代码的情况。 你可以逐步浏览代码、查看变量中存储的值、设置对变量的监视以查看值何时改变、检查代码的执行路径、查看代码分支是否正在运行等等。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
 
 | | |
 |---------|---------|
 | ![视频的摄像机图标](../install/media/video-icon.png "观看视频") | [观看有关调试的视频](https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171)，其中展示了类似的步骤。 |
-
-虽然演示应用为 C#，但大多数功能都适用于 C++、Visual Basic、F#、Python、JavaScript 和 Visual Studio 支持的其他语言（F# 不支持“编辑并继续”。 F# 和 JavaScript 不支持“自动”窗口）。 屏幕截图为 C#。
 
 在本教程中，你将：
 
@@ -52,7 +50,7 @@ ms.locfileid: "52821300"
 
 1. 在 Visual Studio 中，依次选择“文件”>“新建项目”。
 
-2. 在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用”。
+2. 在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用”。
 
     如果没有看到“控制台应用程序”项目模板，请单击“新建项目”对话框左侧窗格中的“打开 Visual Studio 安装程序”链接。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”。
 
@@ -62,107 +60,121 @@ ms.locfileid: "52821300"
 
 4. 在 Program.cs 中，将以下代码
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    ```vb
+    Module Module1
 
-    namespace get_started_debugging
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-            }
-        }
-    }
+        Sub Main()
+        End Sub
+
+    End Module
     ```
 
     替换为此代码：
 
-    ```csharp
-    using System;
-    using System.Collections.Generic;
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
 
-    public class Shape
-    {
-        // A few example members
-        public int X { get; private set; }
-        public int Y { get; private set; }
-        public int Height { get; set; }
-        public int Width { get; set; }
-   
-        // Virtual method
-        public virtual void Draw()
-        {
-            Console.WriteLine("Performing base class drawing tasks");
-        }
-    }
+    Public Class Shape
 
-    class Circle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a circle...
-            Console.WriteLine("Drawing a circle");
-            base.Draw();
-        }
-    }
+      ' A few example members
+        Public Property X As Integer
+            Get
+                Return X
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Rectangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a rectangle...
-            Console.WriteLine("Drawing a rectangle");
-            base.Draw();
-        }
-    }
+        Public Property Y As Integer
+            Get
+                Return Y
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Triangle : Shape
-    {
-        public override void Draw()
-        {
-            // Code to draw a triangle...
-            Console.WriteLine("Drawing a trangle");
-            base.Draw();
-        }
-    }
+        Public Property Height As Integer
+            Get
+                Return Height
+            End Get
+            Set
+            End Set
+        End Property
 
-    class Program
-    {
-        static void Main(string[] args)
-        {
+        Public Property Width As Integer
+            Get
+                Return Width
+            End Get
+            Set
+            End Set
+        End Property
 
-            var shapes = new List<Shape>
+        ' Virtual method
+        Public Overridable Sub Draw()
+            Console.WriteLine("Performing base class drawing tasks")
+        End Sub
+    End Class
+
+    Public Class Circle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a circle...
+            Console.WriteLine("Drawing a circle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Rectangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a rectangle...
+            Console.WriteLine("Drawing a rectangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Public Class Triangle
+        Inherits Shape
+
+        Public Overrides Sub Draw()
+            ' Code to draw a triangle...
+            Console.WriteLine("Drawing a trangle")
+            MyBase.Draw()
+        End Sub
+    End Class
+
+    Module Module1
+
+        Sub Main(ByVal args() As String)
+
+            Dim shapes = New List(Of Shape) From
             {
-                new Rectangle(),
-                new Triangle(),
-                new Circle()
-            };
-
-            foreach (var shape in shapes)
-            {
-                shape.Draw();
+                New Rectangle,
+                New Triangle,
+                New Circle
             }
 
-            // Keep the console open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
+            For Each shape In shapes
+                shape.Draw()
+            Next
+            ' Keep the console open in debug mode.
+            Console.WriteLine("Press any key to exit.")
+            Console.ReadKey()
 
-    }
+        End Sub
 
-    /* Output:
-        Drawing a rectangle
-        Performing base class drawing tasks
-        Drawing a triangle
-        Performing base class drawing tasks
-        Drawing a circle
-        Performing base class drawing tasks
-    */
+    End Module
+
+    ' Output:
+    '    Drawing a rectangle
+    '    Performing base class drawing tasks
+    '    Drawing a triangle
+    '    Performing base class drawing tasks
+    '    Drawing a circle
+    '    Performing base class drawing tasks
     ```
 
 ## <a name="start-the-debugger"></a>启动调试器！
@@ -186,17 +198,19 @@ ms.locfileid: "52821300"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>设置断点并启动调试器
 
-1. 在 `Main` 函数的 `foreach` 循环中，通过单击以下代码行的左边距来设置断点：
+1. 在 `Main` 函数的 `For Each` 循环中，通过单击以下代码行的左边距来设置断点：
 
     `shape.Draw()`
 
     设置断点的位置会出现一个红色圆圈。
 
+    ![设置断点](../debugger/media/get-started-set-breakpoint-vb.png)
+
     断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。 
 
 2. 按 F5 或“启动调试”按钮 ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging")，应用随即启动，并且调试器将运行到你设置断点的代码行。
 
-    ![设置并命中断点](../debugger/media/get-started-set-breakpoint.gif)
+    ![命中断点](../debugger/media/get-started-hit-breakpoint-vb.png)
 
     黄色箭头表示调试器暂停处的语句，它还在同一点上暂停应用执行（此语句尚未执行）。
 
@@ -208,23 +222,23 @@ ms.locfileid: "52821300"
 
 大多数情况下，我们使用键盘快捷方式，因为这是在调试器中快速执行应用的好方法（括号中显示了等效的命令，如菜单命令）。
 
-1. 在 `Main` 方法中的 `shape.Draw` 方法调用中暂停时，按 F11（或选择“调试”>“单步执行”）前进到 `Rectangle` 类的代码。
+1. 在 `Main` 函数中的 `shape.Draw` 方法调用中暂停时，按 F11（或选择“调试”>“单步执行”）前进到 `Rectangle` 类的代码。
 
-     ![使用 F11 单步执行代码](../debugger/media/get-started-f11.png "F11 Step Into")
+     ![使用 F11 单步执行代码](../debugger/media/get-started-f11-vb.png "F11 Step Into")
 
      F11 是“单步执行”命令，每单击一次，应用就执行一个语句。 F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地浏览代码，我们还向你展示一些其他选项。）默认情况下，调试器会跳过非用户代码（如果需要更多详细信息，请参阅[仅我的代码](../debugger/just-my-code.md)）。
 
-2. 按几次 F10（或选择“调试”>“单步跳过”），直到调试器停止于 `base.Draw` 方法调用，然后再按一次 F10。
+2. 按几次 F10（或选择“调试”>“单步跳过”），直到调试器停止于 `MyBase.Draw` 方法调用，然后再按一次 F10。
 
-     ![使用 F10 单步跳过代码](../debugger/media/get-started-step-over.png "F10 Step Over")
+     ![使用 F10 单步跳过代码](../debugger/media/get-started-step-over-vb.png "F10 Step Over")
 
-     请注意，这次调试器不会单步执行基类 (`Shape`) 的 `Draw` 方法。 按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 通过在进行 `base.Draw` 方法调用时按 F10（而不是 F11），我们跳过了 `base.Draw` 的实现代码（我们现在可能对此不感兴趣）。
+     请注意，这次调试器不会单步执行基类 (`Shape`) 的 `Draw` 方法。 按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 通过在进行 `MyBase.Draw` 方法调用时按 F10（而不是 F11），我们跳过了 `MyBase.Draw` 的实现代码（我们现在可能对此不感兴趣）。
 
 ## <a name="navigate-code-using-run-to-click"></a>使用“运行时单击”导航代码
 
 1. 在代码编辑器中，向下滚动并将鼠标悬停在 `Triangle` 类中的 `Console.WriteLine` 方法上，直到左侧出现绿色的“运行时单击”按钮（![运行时单击](../debugger/media/dbg-tour-run-to-click.png "RunToClick")）。
 
-     ![使用“运行时单击”功能](../debugger/media/get-started-run-to-click.png "Run to Click")
+     ![使用“运行时单击”功能](../debugger/media/get-started-run-to-click-vb.png "Run to Click")
 
    > [!NOTE]
    > “运行时单击”是 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中的新增按钮。 如果未看到绿色箭头按钮，请在此示例中改为使用 F11 以使调试器前进到正确的位置。
@@ -254,7 +268,7 @@ ms.locfileid: "52821300"
 
      此命令将恢复应用执行（并使调试器前进），直到当前函数返回。
 
-     你应当会回到 `Main` 方法的 `foreach` 循环中。
+     你应当会回到 `Main` 方法的 `For Each` 循环中。
 
 ## <a name="restart-your-app-quickly"></a>快速重启应用
 
@@ -268,31 +282,25 @@ ms.locfileid: "52821300"
 
 允许你检查变量的功能是调试器最有用的功能之一，并且有不同的方法来执行此操作。 通常，当尝试调试问题时，你试图找出变量是否存储了你期望它们在特定时间具有的值。
 
-1. 在 `shape.Draw()` 方法上暂停时，将鼠标悬停在 `shape` 对象上，你会看到其默认属性值 `Rectangle` 对象类型。
+1. 在 `shape.Draw()` 方法上暂停时，将鼠标悬停在 `shapes` 对象上，你会看到其默认属性值 `Count` 属性。
 
-1. 展开 `shape` 对象以查看其属性，例如 `Height` 属性，其值为 0。
+1. 展开 `shapes` 对象以查看其所有属性，例如数组 `[0]` 的第一个索引，其值为 `Rectangle`。
 
-1. 按几次 F10（或选择“调试” > “单步跳过”），在 `foreach` 循环中重复一次，在 `shape.Draw()` 上再次暂停。
+     ![查看数据提示](../debugger/media/get-started-data-tip-vb.png "View a Data Tip")
 
-1. 将鼠标再次悬停在形状对象上，这一次会看到一个类型为 `Triangle` 的新对象。
+    可进一步展开对象以查看其属性，例如矩形的 `Height` 属性。
 
-     ![查看数据提示](../debugger/media/get-started-data-tip.gif "View a Data Tip")
-
-    通常情况下，在调试时，需要快速检查变量的属性值，以查看它们是否存储了你希望它们存储的值，可根据数据提示执行此操作。
+    通常，在调试时，你需要快速检查对象的属性值，数据提示是一种实现此目的的好方法。
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>使用“自动”和“局部变量”窗口检查变量
 
 1. 查看代码编辑器底部的“自动”窗口。
 
-    如果已关闭，请依次选择“调试” > “Windows” > “自动”，在调试器中暂停时将其打开。
-
-1. 展开 `shapes` 对象。
-
-     ![在“自动”窗口中检查变量](../debugger/media/get-started-autos-window.png "Autos Window")
+     ![在“自动”窗口中检查变量](../debugger/media/get-started-autos-window-vb.png "Autos Window")
 
     在“自动”窗口中，可看到变量及其当前值。 “自动”窗口显示当前行或前一行使用的所有变量（检查文档中特定于语言的行为）。
 
-1. 接下来，我们来看看“自动”窗口旁边的选项卡中的“局部变量”窗口。
+2. 接下来，我们来看看“自动”窗口旁边的选项卡中的“局部变量”窗口。
 
     “局部变量”窗口显示当前[作用域](https://www.wikipedia.org/wiki/Scope_(computer_science))中的变量，即当前执行上下文。
 
@@ -306,15 +314,13 @@ ms.locfileid: "52821300"
 
 ## <a name="examine-the-call-stack"></a>检查调用堆栈
 
-1. 在 `foreach` 循环中暂停时，单击“调用堆栈”窗口，默认情况下，该窗口在右下方窗格中打开。
+1. 在 `For Each` 循环中暂停时，单击“调用堆栈”窗口，默认情况下，该窗口在右下方窗格中打开。
 
-    如果已关闭，请依次选择“调试” > “Windows” > “调用堆栈”，在调试器中暂停时将其打开。
+2. 单击 F11 几次，直到在代码编辑器中 `Rectangle` 类的 `MyBase.Draw` 方法中看到调试器暂停。 查看“调用堆栈”窗口。
 
-2. 单击 F11 几次，直到在代码编辑器中 `Triangle` 类的 `Base.Draw` 方法中看到调试器暂停。 查看“调用堆栈”窗口。
+    ![检查调用堆栈](../debugger/media/get-started-call-stack-vb.png "ExamineCallStack")
 
-    ![检查调用堆栈](../debugger/media/get-started-call-stack.png "ExamineCallStack")
-
-    “调用堆栈”窗口显示方法和函数被调用的顺序。 最上面一行显示当前函数（此应用中的 `Triangle.Draw` 方法）。 第二行显示 `Triangle.Draw` 是从 `Main` 方法调用的，依此类推。
+    “调用堆栈”窗口显示方法和函数被调用的顺序。 最上面一行显示当前函数（此应用中的 `Rectangle.Draw` 方法）。 第二行显示 `Rectangle.Draw` 是从 `Main` 函数调用的，依此类推。
 
    > [!NOTE]
    > “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图。
@@ -327,11 +333,11 @@ ms.locfileid: "52821300"
 
 ## <a name="change-the-execution-flow"></a>更改执行流
 
-1. 在 `Circle.Draw` 方法调用中暂停调试器后，使用鼠标抓住左侧的黄色箭头（执行指针），将黄色箭头向上移动一行到 `Console.WriteLine` 方法调用。
+1. 调试器在 `Rectangle` 类的 `MyBase.Draw` 方法调用中暂停调试器后，使用鼠标抓住左侧的黄色箭头（执行指针），将黄色箭头向上移动一行到 `Console.WriteLine` 方法调用。
 
 1. 按下 F11。
 
-    调试器将重新运行 `Console.WriteLine` 方法（你会在控制台窗口输出中看到）。
+    调试器将重新运行 `Console.WriteLine` 方法（你会在控制台窗口输出中看到重复的输出）。
 
     通过更改执行流，你可以进行测试不同代码执行路径或重新运行代码等操作，而无需重启调试器。
 

@@ -1,5 +1,5 @@
 ---
-title: 用于 Visual Studio 中负载测试的负载模式
+title: 负载测试的负载模式
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: fb5e63f8c33267d622271221271ba8e71bb6f205
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a15f771d2afa2b5c8e02eed99b3168a537365a3f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862497"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895296"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>编辑负载模式以便为虚拟用户活动建模
 
@@ -27,6 +27,8 @@ ms.locfileid: "49862497"
 
 > [!NOTE]
 > 在所有负载模式中，Visual Studio 生成的负载是虚拟用户的模拟负载。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="load-patterns"></a>负载模式
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用多个 UI 映射测试大型应用
+title: 使用多个 UI 映射测试大型应用程序
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -12,26 +12,28 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072d04ed8f31b492e0ee792717b8975478c8c99
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dfc1cf44cb92ab58b50284f0398178c8f96f2a2e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891019"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895127"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 
 本主题讨论使用多个 UI 映射来测试大型应用程序时如何使用编码的 UI 测试。
 
- **要求**
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
+
+**要求**
 
 - Visual Studio Enterprise
 
-  在新建编码的 UI 测试时，Visual Studio 测试框架会默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 有关如何录制编码的 UI 测试的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
+在新建编码的 UI 测试时，Visual Studio 测试框架会默认在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 类中生成测试代码。 有关如何录制编码的 UI 测试的详细信息，请参阅[创建编码的 UI 测试](../test/use-ui-automation-to-test-your-code.md)和[编码的 UI 测试剖析](../test/anatomy-of-a-coded-ui-test.md)。
 
-  为 UI 映射生成的代码针对与测试交互的每个对象都包含一个类。 对于每个生成的方法，都会专门为该方法生成方法参数的伴生类。 如果应用程序中存在大量对象、页以及窗体和控件，UI 映射可能会变得很大。 而且，如果多个人正在执行测试，则只有一个大型 UI 映射文件的应用程序会变得难以操作。
+为 UI 映射生成的代码针对与测试交互的每个对象都包含一个类。 对于每个生成的方法，都会专门为该方法生成方法参数的伴生类。 如果应用程序中存在大量对象、页以及窗体和控件，UI 映射可能会变得很大。 而且，如果多个人正在执行测试，则只有一个大型 UI 映射文件的应用程序会变得难以操作。
 
-  使用多个 UI 映射文件具有以下优点：
+使用多个 UI 映射文件具有以下优点：
 
 - 每个映射可与应用程序的一个逻辑子集关联。 这样就更便于管理变更。
 

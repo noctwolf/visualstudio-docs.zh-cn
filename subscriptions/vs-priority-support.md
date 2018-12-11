@@ -1,26 +1,24 @@
 ---
-title: Visual Studio 订阅中的优先支持权益 | Microsoft 文档
+title: Visual Studio 订阅中的开发者社区权益 | Microsoft Docs
 author: evanwindom
 ms.author: jaunger
 manager: evelynp
-ms.date: 05/07/2018
+ms.date: 12/04/2018
 ms.topic: Get-Started-Article
-description: 了解有关 Visual Studio 订阅中包含的优先支持权益。
+description: 了解 Visual Studio 订阅中包含的开发者社区权益。
 ms.prod: vs-subscription
 ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e58b316d0fc26ec4c01e50c23e3cdc7b0632b72c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eb168f8163d75e01ac688439780fd7d65df3506
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866735"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896648"
 ---
-# <a name="priority-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的优先支持权益
+# <a name="developer-community-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的开发者社区支持
 
-优先支持权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。  如果社区在两天内未回答你的问题，Microsoft 的支持团队将给予答复。
-
-具有选定的 Visual Studio 订阅的订阅者有资格通过涵盖各类主题的大量论坛受到优先支持。  单击以下任何链接直接进入该论坛。  
+开发者社区权益提供对各种支持社区论坛的访问权限，你可在其中搜索现有文章或提出新问题。 单击以下任何链接直接进入该论坛。  
 
 ## <a name="included-forums"></a>包含的论坛
 

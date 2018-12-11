@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 51ccfcc6750be7f24acd88c07fa53537f43cdfab
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 7eda8336c45d0e0d90441ce918845d111976aaf4
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49861912"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896557"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>如何：使用 Microsoft Excel 创建负载测试性能报告
 
-可以生成基于两个或更多测试结果的 Microsoft Excel 负载测试报告。 负载测试报告分为两种：
+可以生成基于两个或更多测试结果的 Microsoft Excel 负载测试报告。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+负载测试报告分为两种：
 
 -   **运行比较**这种方式会创建一组报告，它们使用表和条形图比较两个负载测试结果的数据。
 
@@ -45,7 +49,7 @@ ms.locfileid: "49861912"
 生成 Excel 报告的方法有两种：一种是在负载测试分析器中使用工具栏中的“创建 Excel 报告”按钮，另一种是在 Excel 中使用 Office 功能区的“负载测试”选项卡中的“负载测试报告”选项。
 
 > [!NOTE]
-> 如果向负载测试中添加注释，注释将出现在 Excel 报告中。 有关详细信息，请参阅[如何：在分析完成的负载测试时添加注释](../test/how-to-add-comments-on-a-completed-load-test.md)。
+> 如果向负载测试添加注释，它们将显示在 Excel 报告中。
 
 ## <a name="to-generate-load-test-comparison-reports-using-excel"></a>使用 Excel 生成负载测试比较报告
 

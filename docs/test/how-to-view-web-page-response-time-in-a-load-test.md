@@ -12,16 +12,18 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 945bbe8377d51974bdfb09b762e415da3004346b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9740d26ef99c10bb9ec84afa23b998f6e1467f40
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49821833"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895257"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>如何：使用负载测试分析器在负载测试中查看网页响应时间
 
 加载每个网页所需的时间称为“响应时间”。 创建 Web 性能测试时，可以为 Web 性能测试中的每个网页请求设置响应时间目标。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 如果在负载测试中的压力下运行 Web 性能测试，你将能够分析各页的以下信息：
 
@@ -36,8 +38,6 @@ ms.locfileid: "49821833"
 -   在关系图视图中分析网页响应时间
 
 ## <a name="view-response-time-data-in-a-table"></a>在表中查看响应时间数据
-
-### <a name="to-view-response-time-data-in-a-table"></a>在表中查看响应时间数据
 
 1. 在负载测试分析器中，选择工具栏上的“表”以确保显示表网格。
 
@@ -70,7 +70,7 @@ ms.locfileid: "49821833"
 
 你还可以在关系图中查看响应时间数据，以了解负载测试期间这些数据随时间的变化情况。 这对于负载模式随测试的运行而增加的情况（例如，当使用单步负载模式时）尤其有用。 有关详细信息，请参阅[编辑负载模式以便为虚拟用户活动建模](../test/edit-load-patterns-to-model-virtual-user-activities.md)。
 
-### <a name="to-view-response-time-data-in-a-graph"></a>在关系图中查看响应时间数据
+在关系图中查看响应时间数据：
 
 1. 在负载测试分析器中，选择工具栏上的“关系图”以确保显示该关系图。
 

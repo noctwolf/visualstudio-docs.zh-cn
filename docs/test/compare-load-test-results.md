@@ -11,16 +11,20 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 8829644e34c169f8992959013f70d453a70d41b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fc54324f2c5bc91dba64aa35b125bbdc12ca1a45
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834275"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895023"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>报告负载测试结果以进行测试比较或趋势分析
 
-可以生成基于两个或更多测试结果的 Microsoft Excel 负载测试报告。 负载测试报告分为两种：
+可以生成基于两个或更多测试结果的 Microsoft Excel 负载测试报告。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+负载测试报告分为两种：
 
 - 运行比较 &mdash; 这种报告实际上是两个报告，它们使用表和条形图并排显示比较数据。
 
@@ -33,7 +37,7 @@ ms.locfileid: "49834275"
 此外，可将电子表格文件与利益干系人共享，以便利益干系人不必连接到数据库就可以查看报告。
 
 > [!NOTE]
-> 如果向负载测试中添加注释，注释将出现在 Excel 报告中。 有关详细信息，请参阅[如何：在分析完成的负载测试时添加注释](../test/how-to-add-comments-on-a-completed-load-test.md)。
+> 如果向负载测试添加注释，它们将显示在 Excel 报告中。
 
 ## <a name="tasks"></a>任务
 
