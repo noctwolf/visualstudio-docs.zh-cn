@@ -1,5 +1,5 @@
 ---
-title: 常规用户界面元素 (Visual Studio) | Microsoft Docs
+title: 常规用户界面元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -14,12 +14,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d197f0272bfad8769477cf1cb8ee21110b816ad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: f2559cc618b006213fd5aa1f8fe66ecdce9d9f84
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214638"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53054432"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>常规用户界面元素 (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "49214638"
 
  [选项，文本编辑器，C/c + +，高级](../../ide/reference/options-text-editor-c-cpp-advanced.md)，可指定 C 或 c + + 文件的高级的选项。
 
- [选项，文本编辑器，C#、 格式设置](../../ide/reference/options-text-editor-csharp-formatting.md)允许您指定为 C# 文件的格式设置选项。
+ [选项、 文本编辑器中， C#、 格式设置](../../ide/reference/options-text-editor-csharp-formatting.md)允许您指定的格式设置选项C#文件。
 
- [选项，文本编辑器，C#，高级](../../ide/reference/options-text-editor-csharp-advanced.md)，可指定 C# 文件的高级的选项。
+ [选项、 文本编辑器中，C#的高级](../../ide/reference/options-text-editor-csharp-advanced.md)允许您指定的高级的选项C#文件。
 
- [选项，文本编辑器，C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) ，可指定 C# 文件的 IntelliSense 选项。
+ [选项、 文本编辑器中， C#，IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)允许您指定的智能感知选项C#文件。
 
  [选项，文本编辑器，XAML，格式设置](../../ide/reference/options-text-editor-xaml-formatting.md)允许您指定的 XAML 文件的格式设置选项。
 

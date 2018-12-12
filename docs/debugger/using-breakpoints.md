@@ -1,6 +1,6 @@
 ---
-title: 在 Visual Studio 调试器中使用断点 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 在调试器中使用断点 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 10/15/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -36,12 +36,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 15fa2172aab62d6b6f6ffcd21186b28f336ead4e
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 16bcb4bb12e852a8fa268998d0605b2ffc7471e5
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389132"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068443"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 断点是开发人员的工具箱中最重要的调试技术之一。 若要暂停调试程序执行所需的位置设置断点。 例如，你可能想要查看代码变量的状态或查看调用堆栈的某些断点。 如果这是你第一次尝试调试代码，可能需要在浏览本文之前阅读[零基础调试](../debugger/debugging-absolute-beginners.md)。
@@ -220,7 +220,7 @@ ms.locfileid: "52389132"
 <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
 ### <a name="conditional-expression"></a>条件表达式
 
-当选择**条件表达式**，可以选择两个条件：**如此**或**发生更改时**。 选择**如此**时，满足表达式时中断或**发生更改时**表达式的值已更改时中断。  
+当选择**条件表达式**，可以选择两个条件：**为 true**或**发生更改时**。 选择**如此**时，满足表达式时中断或**发生更改时**表达式的值已更改时中断。  
   
  在以下示例中，命中断点时，才的值`testInt`是**4**:  
   

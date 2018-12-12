@@ -10,19 +10,21 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: b12588b4e2c22a638193b7f1b0bc48e5f7dab6b7
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 36176ce14b51af1cf692b6b04d862882a48d7e4e
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379801"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895192"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>如何：在 Visual Studio 中使用测试设置为负载测试配置 ASP.NET 探查器
 
 可以使用 ASP.NET 探查器诊断数据适配器来收集 ASP.NET 探查器信息。 此诊断数据适配器收集 ASP.NET 应用程序的性能数据。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
-> 此诊断数据适配器不能用于通过 Microsoft 测试管理器运行的测试。 只能对使用网站的负载测试使用 ASP.NET 探查器诊断适配器，这需要 Visual Studio Enterprise。
+> 此诊断数据适配器不能用于通过 Microsoft 测试管理器运行的测试。 可对仅使用网站的负载测试使用 ASP.NET 探查器诊断适配器，这需要 Visual Studio Enterprise。
 
 使用 ASP.NET 探查器诊断数据适配器，可以在运行负载测试时从应用层收集 ASP.NET 探查器数据。 不能对较长的负载测试（例如，运行时间超过一小时的负载测试）运行探查器。 这是因为探查器文件可能会变得很大，或许可达数百 MB。 应使用 ASP.NET 探查器运行较短的负载测试，从而仍具有深入诊断性能问题的优点。
 
@@ -31,13 +33,9 @@ ms.locfileid: "39379801"
 
 有关详细信息，请参阅[如何：为分布式负载测试创建测试设置](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)。
 
-下面的过程介绍如何为 ASP.NET 探查器配置诊断数据适配器。
-
-## <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>为测试设置配置 ASP.NET 探查器
+## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>为测试设置配置 ASP.NET 探查器
 
 在执行本过程中的步骤之前，必须从 Visual Studio 中打开测试设置，然后选择“数据和诊断”页。
-
-### <a name="to-configure-the-aspnet-profiler-for-your-test-settings"></a>为测试设置配置 ASP.NET 探查器
 
 1.  选择用于收集 ASP.NET 探查器数据的角色。
 

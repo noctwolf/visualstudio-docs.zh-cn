@@ -11,17 +11,17 @@ dev_langs:
 helpviewer_keywords:
 - Office development in Visual Studio, what's new
 - what's new [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 231a0a297bfedf9b38c612368f5db770a2162369
-ms.sourcegitcommit: be938c7ecd756a11c9de3e6019a490d0e52b4190
+ms.openlocfilehash: b200c5b0df5f150e0d34b351a3e36a8a986f3ed6
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50672933"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248239"
 ---
 # <a name="changes-to-the-design-of-office-projects-that-target-the-net-framework-4-or-the-net-framework-45"></a>面向.NET Framework 4 或.NET Framework 4.5 的 Office 项目设计更改
   从 [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)]开始，Visual Studio 引入了对面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的 Office 项目设计的一些更改。 如果你熟悉以前的 Visual Studio 版本中的 Office 项目，那么在开发面向 .NET Framework 4.0 或更高版本的 Office 项目之前，应了解这些更改。 默认情况下，使用 Visual Studio 2013 或更高版本创建的所有项目都面向 .NET Framework 4.0 或更高版本。  

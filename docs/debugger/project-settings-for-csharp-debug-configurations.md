@@ -1,6 +1,6 @@
 ---
 title: 项目设置为C#调试配置 |Microsoft Docs
-ms.custom: ''
+ms.custom: seodec18
 ms.date: 11/21/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7152e6ac16c8a15ba6973eb3ac33c373560a0d76
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 6de7bfd547516b227063c0d3143b508bcbd9ddfd
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388960"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53059267"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "52388960"
   
 ## <a name="debug-tab"></a>“调试”选项卡  
   
-|设置|描述|
+|设置|说明|
 |-------------------------------------| - |
 | **配置** | 设置用于生成应用程序的模式。 选择**活动 （调试）**，**调试**，**版本**，或者**所有配置**从下拉列表。 |
 | **启动操作** | 当选中指定的操作**启动**调试配置中。<br />- “启动项目”是默认值，用于启动启动项目以供调试。 有关详细信息，请参阅[选择启动项目](/previous-versions/visualstudio/visual-studio-2010/0s590bew(v=vs.100))。<br />- **启动外部程序**启动，并将附加到的应用程序不是属于[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]项目。 有关详细信息，请参阅[将附加到正在运行调试器的进程](attach-to-running-processes-with-the-visual-studio-debugger.md)。<br />- **使用 URL 启动浏览器**使你能够调试 web 应用。 |
@@ -54,7 +54,7 @@ ms.locfileid: "52388960"
   
 ## <a name="build-tab"></a>“生成”选项卡  
   
-|设置|描述|  
+|设置|说明|  
 |-------------|-----------------|  
 |**常规** > **条件编译符号**|如果选择，定义 DEBUG 和 TRACE 常量。<br /><br /> 这些常数启用 [Debug](/dotnet/api/system.diagnostics.debug) 类和 [Trace](/dotnet/api/system.diagnostics.trace) 类的条件编译。 定义了这两个常数后，Debug 和 Trace 类方法将向[输出窗口](../ide/reference/output-window.md)生成输出。 如果没有这两个常数，则不编译 Debug 和 Trace 类方法，并且不生成任何输出。<br /><br />通常情况下，调试生成的调试版本中定义和发布版本中未定义。 调试和发布版本中定义了跟踪。|  
 |**常规** > **优化代码**|除非仅在优化代码中出现 bug，否则请保留此设置，已取消选择对于调试版本。 优化的代码很难调试，因为说明执行操作不直接对应于在源代码中的语句。|  

@@ -9,19 +9,22 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 515c5d4c1bd09d65ae23d3d1af2f3183607c6b53
-ms.sourcegitcommit: 28909340cd0a0d7cb5e1fd29cbd37e726d832631
+ms.openlocfilehash: f2e0f06eddee4acd500e6bf4a8094dde4efc0d14
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44320951"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896284"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>快速入门：创建负载测试项目
 
 在此 10 分钟的快速入门教程中，将学习如何在 Visual Studio 中创建和运行 Web 性能和负载测试项目。 负载测试执行 Web 性能或单元测试，以模拟同时访问服务器的多个用户。
 
-> [!IMPORTANT]
-> Web 性能和负载测试项目仅在 Visual Studio 2017 Enterprise 中可用。
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
+## <a name="software-requirements"></a>软件要求
+
+Web 性能和负载测试项目仅在 Visual Studio Enterprise 中可用。
 
 ## <a name="install-the-load-testing-component"></a>安装负载测试组件
 

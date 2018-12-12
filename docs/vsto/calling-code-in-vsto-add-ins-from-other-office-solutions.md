@@ -15,17 +15,17 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], calling code from other solutions
 - interoperability [Office development in Visual Studio]
 - calling code from VBA
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 7849f0df8f7e2f29c34b129dbf8e684424711b44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 9290fcdd705f6f38b4b7e91e46d5b635f1e309ff
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904643"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248093"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有执行从 Web 服务的财务数据计算的 Microsoft Office Excel 的 VSTO 外接程序中，其他解决方案可以通过调用 Excel VSTO 外接程序在运行时执行这些计算。  
@@ -77,7 +77,7 @@ ms.locfileid: "49904643"
   
    -   在定义此接口的项目中设置“为 COM 互操作注册”  属性。 此属性是必需的仅当你想要启用客户端使用早期绑定来调入 VSTO 外接程序。  
   
-   下面的代码示例演示一个 `AddInUtilities` 类，该类具有可由其他解决方案调用的 `ImportData` 方法。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+   下面的代码示例演示一个 `AddInUtilities` 类，该类具有可由其他解决方案调用的 `ImportData` 方法。 若要查看较大的演练上下文中此代码，请参阅[演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
    [!code-csharp[Trin_AddInInteropWalkthrough #3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
    [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
@@ -95,7 +95,7 @@ ms.locfileid: "49904643"
  在 Office 解决方案中使用线程的详细信息，请参阅[Office 中的线程支持](../vsto/threading-support-in-office.md)。  
   
 ### <a name="override-the-requestcomaddinautomationservice-method"></a>重写 RequestComAddInAutomationService 方法  
- 以下代码示例演示了如何重写 VSTO 外接程序中 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 。 该示例假定您已经定义了一个名为类`AddInUtilities`你想要向其他解决方案公开。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+ 以下代码示例演示了如何重写 VSTO 外接程序中 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 类中的 `ThisAddIn` 。 该示例假定您已经定义了一个名为类`AddInUtilities`你想要向其他解决方案公开。 若要查看较大的演练上下文中此代码，请参阅[演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
  [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
  [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
@@ -114,7 +114,7 @@ ms.locfileid: "49904643"
    使用 COMAddIn.Object 属性的返回值的方式是不同的 VBA 客户端和非 VBA 客户端。 对于进程外客户端，需要其他代码以避免可能的争用情况。  
   
 ### <a name="access-objects-from-vba-solutions"></a>从 VBA 解决方案访问对象  
- 下面的代码示例演示如何使用 VBA 调用 VSTO 外接程序公开的方法。 此 VBA 宏将调用一个名为方法`ImportData`VSTO 外接程序中名为定义**ExcelImportData**。 若要查看较大的演练上下文中此代码，请参阅[演练： 从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+ 下面的代码示例演示如何使用 VBA 调用 VSTO 外接程序公开的方法。 此 VBA 宏将调用一个名为方法`ImportData`VSTO 外接程序中名为定义**ExcelImportData**。 若要查看较大的演练上下文中此代码，请参阅[演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
   
 ```vb
 Sub CallVSTOMethod()  
@@ -147,9 +147,9 @@ utilities.ImportData();
   
 ## <a name="see-also"></a>请参阅  
  [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)   
- [演练： VSTO 外接程序中从 VBA 调用代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
  [开发 Office 解决方案](../vsto/developing-office-solutions.md)   
- [如何： 在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)   
  [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [通过使用扩展性接口自定义 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   

@@ -1,6 +1,6 @@
 ---
 title: 开发数据解决方案
-description: 了解 Visual Studio 中的数据解决方案工具。
+description: 了解用于在 Visual Studio 中开发数据方案的各种工具，包括 .NET Framework 工具、SQL Server Data Tools、Azure Data Lake、Azure HDInsight 和 Azure 流分析。
 layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
@@ -10,12 +10,12 @@ ms.technology: vs-data-tools
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6920ad723db86ada57994734cd8638a6219981a3
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 866737bc91615663df59856b8d06b457ad47c15f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53058495"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159680"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>在 Visual Studio 中使用数据工具开发数据解决方案
 
@@ -116,7 +116,6 @@ ms.locfileid: "53058495"
 
 ---
 
-<hr>
 <h2>参考</h2>
 
 <ul class="panelContent cardsW">
@@ -126,7 +125,7 @@ ms.locfileid: "53058495"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Accessing data in Visual Studio></p>
+                        <p><Access data in Visual Studio></p>
                     </div>
                 </div>
             </div>

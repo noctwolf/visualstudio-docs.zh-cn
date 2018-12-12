@@ -1,5 +1,6 @@
 ---
 title: '&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -17,12 +18,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: bb2161cbc6633163ba8fba3f8eb678cb0ad72333
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 06c3941e73ee1825d1dc0f593bd3aa6563c511df
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304462"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247976"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;外接程序&gt;元素 （Visual Studio 中的 Office 开发）
   **外接程序**元素的`vstav3`命名空间包含特定于 Microsoft Office VSTO 外接程序和文档级自定义使用 Visual Studio 开发的信息。  
@@ -59,16 +60,16 @@ ms.locfileid: "52304462"
  `addin` 元素具有以下子元素。  
 
 ### <a name="entrypoints"></a>entryPoints  
- 必须的。 **入口点**元素所述[&#60;的入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
+ 必需。 **入口点**元素所述[&#60;的入口点&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)。  
 
 ### <a name="update"></a>更新  
- 必须的。 **更新**元素所述[&#60;更新&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
+ 必需。 **更新**元素所述[&#60;更新&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/update-element-office-development-in-visual-studio.md)。  
 
 ### <a name="postactions"></a>postActions  
  可选。 **PostActions**元素所述[ &#60;postActions&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)。  
 
 ### <a name="application"></a>应用程序  
- 必须的。 **应用程序**元素所述[&#60;应用程序&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
+ 必需。 **应用程序**元素所述[&#60;应用程序&#62;元素&#40;Visual Studio 中的 Office 开发&#41;](../vsto/application-element-office-development-in-visual-studio.md)。  
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例  
 
