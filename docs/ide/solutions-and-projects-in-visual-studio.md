@@ -26,12 +26,12 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: ba0ed54e8acd28be3f267d83473f9514f471ef4a
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: 518479d92aa9b0ec51c4fda8b7484a03ce45a560
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349304"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159667"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
 
@@ -60,7 +60,7 @@ ms.locfileid: "51349304"
 
 Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案设置：
 
-|扩展名|name|描述|
+|扩展名|name|说明|
 |---------------|----------|-----------------|
 |.sln|Visual Studio 解决方案|将项目、项目项和解决方案项组织到解决方案中。|
 |.suo|解决方案用户选项|存储用户级别设置和自定义项，如断点。|
@@ -79,6 +79,6 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio IDE](../ide/visual-studio-ide.md)
+- [Visual Studio IDE](../get-started/visual-studio-ide.md)
 - [项目和解决方案 (Visual Studio for Mac)](/visualstudio/mac/projects-and-solutions)
 - [添加和删除项目项 (Visual Studio for Mac)](/visualstudio/mac/add-and-remove-project-items)

@@ -1,10 +1,11 @@
 ---
 title: Visual Studio 2019 预览版中的新增功能
+titleSuffix: ''
 description: 了解 Visual Studio 2019 预览版中的新增功能。
-ms.custom: ''
 ms.date: 12/04/2018
 ms.prod: visual-studio-dev16
 ms.technology: vs-acquisition
+ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
@@ -16,12 +17,12 @@ ms.author: tglee
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 838065d01e67f230d37ee318231371707117ec07
-ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
+ms.openlocfilehash: 06e3966703d95f897706eec8c46c2cd78fda859f
+ms.sourcegitcommit: 0cdd8e8a53fb4fd5e869f07c35204419fa12783d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52897183"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53159745"
 ---
 # <a name="what39s-new-in-visual-studio-2019-preview"></a>Visual Studio 2019 预览版中的新增功能
 
@@ -86,7 +87,7 @@ Visual Studio 2019 预览版中会默认安装此服务。
 
 ### <a name="manage-pull-requests-prs-from-the-ide"></a>管理来自 IDE 的拉取请求 (PR)
 
-我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 预览版一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio IDE[（集成开发环境）](../ide/visual-studio-ide.md)。 我们目前支持 Azure Repos 中的代码，但正在扩展以支持 GitHub 并改善整体体验。
+我们正在推出一个新的扩展，你可以下载该扩展与 Visual Studio 2019 预览版一起使用。 使用此新扩展，可以查看、运行甚至调试团队的拉取请求，而无需离开 Visual Studio IDE[（集成开发环境）](../get-started/visual-studio-ide.md)。 我们目前支持 Azure Repos 中的代码，但正在扩展以支持 GitHub 并改善整体体验。
 
 要立即开始使用，可从 Visual Studio Marketplace 下载 [Visual Studio 的拉取请求](https://aka.ms/pr4vs)扩展。
 
