@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中调试时映射调用堆栈上的方法
+title: 调试时映射调用堆栈上的方法
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
@@ -30,15 +30,15 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d0139463f468ed6d909658bb143412dc122020
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: c4597f1352e02033c55fcdced126e184f854b463
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856179"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53067393"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
-创建代码映射来直观地跟踪调用堆栈进行调试时。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
+创建代码映射，以便在调试时对调用堆栈进行可视化跟踪。 你可以在图中进行标注以跟踪代码执行的操作，以便专注于查找 Bug。
 
  ![使用代码图上的调用堆栈调试](../debugger/media/debuggermap_overview.png)
 
@@ -66,7 +66,7 @@ ms.locfileid: "49856179"
 
   有关命令和使用代码图时，可以使用的操作的详细信息，请参阅[浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
-## <a name="MapStack"></a> 映射调用堆栈
+## <a name="MapStack"></a>映射调用堆栈
 
 1.  开始调试。 (键盘： **F5**)
 
@@ -80,17 +80,17 @@ ms.locfileid: "49856179"
 
      在你继续调试时，该代码图将自动更新。 请参阅[使用下一步的调用堆栈更新图](#UpdateMap)。
 
-## <a name="MakeNotes"></a> 记下的有关代码说明
+## <a name="MakeNotes"></a>对代码进行标注
  添加注释以跟踪代码中发生的情况。 若要在注释中添加新行，请按**Shift + Return**。
 
  ![向代码图上的调用堆栈添加注释](../debugger/media/debuggermap_addcomment.png)
 
-## <a name="UpdateMap"></a> 使用下一个调用堆栈更新图
+## <a name="UpdateMap"></a>使用下一个调用堆栈更新映射
  运行你的应用到下一个断点或单步执行某一函数。 此图将添加新的调用堆栈。
 
  ![使用下一个调用堆栈更新代码图](../debugger/media/debuggermap_addclearcallstack.png)
 
-## <a name="AddRelatedCode"></a> 向映射添加相关的代码
+## <a name="AddRelatedCode"></a>向映射添加相关代码
  现在你已生成图-什么下一步？ 如果您正在使用 C# 或 Visual Basic，添加项，例如字段、 属性和其他方法，来跟踪代码中发生的情况。
 
  双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。 (键盘： 选择方法在图上按**F12**)
@@ -114,14 +114,14 @@ ms.locfileid: "49856179"
 
  ![调用堆栈代码图上使用某字段的方法](../debugger/media/debuggermap_foundallreferences.png)
 
-## <a name="FindBugs"></a> 查找使用映射的 bug
+## <a name="FindBugs"></a>使用映射查找 Bug
  通过代码可视化，可帮助你更快发现 Bug。 例如，假设要研究一个绘图程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
 
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：
 
  ![向代码图添加另一个调用堆栈](../debugger/media/debuggermap_addpaintobjectcallstack.png)
 
- 你注意到图中所有用户笔势均调用 `Repaint`，但 `undo` 除外。 这可能解释了为什么`undo`不立即发挥作用。
+ 你注意到图中所有用户笔势均调用 `Repaint`，但 `undo` 除外。 这可能解释了 `undo` 不立即发挥作用的原因。
 
  在修复此 Bug 并继续运行程序后，图中增加了从 `undo` 到 `Repaint` 的新调用：
 

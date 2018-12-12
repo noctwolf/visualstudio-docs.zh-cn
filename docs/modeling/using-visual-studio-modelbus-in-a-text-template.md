@@ -1,5 +1,5 @@
 ---
-title: 在文本模板中使用 Visual Studio ModelBus
+title: 在文本模板中使用 ModelBus
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -9,12 +9,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: fe25385d49e5553a6e9d4309dd0bb0d12a294a5c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8aed2920e7be177fdbccc9b71796e58cf103e846
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49883951"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53057583"
 ---
 # <a name="using-visual-studio-modelbus-in-a-text-template"></a>在文本模板中使用 Visual Studio ModelBus
 如果您编写读取模型，其中包含 Visual Studio ModelBus 引用的文本模板，可能需要解析要访问的目标模型的引用。 在这种情况下，您需要调整文本模板和引用特定于域的语言 (Dsl):
