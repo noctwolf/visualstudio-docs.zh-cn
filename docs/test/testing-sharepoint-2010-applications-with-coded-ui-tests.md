@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中使用编码的 UI 测试来测试 SharePoint 应用程序
+title: 使用编码的 UI 测试来测试 SharePoint 应用程序
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,18 +9,20 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 166a57cb0b3c80736761e1649da6399a9bd19807
-ms.sourcegitcommit: 495bba1d8029646653f99ad20df2f80faad8d58b
+ms.openlocfilehash: 91d17857f1d20508041ad6c5daa90a962d6d30e6
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39379707"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895439"
 ---
 # <a name="test-sharepoint-applications-with-coded-ui-tests"></a>使用编码的 UI 测试来测试 SharePoint 应用程序
 
 通过在 SharePoint 应用程序中包含编码的 UI 测试，您可以验证整个应用程序（包括其 UI 控件）是否正常工作。 编码的 UI 测试还可以验证 UI 中的值和逻辑。
 
 若要详细了解使用编码的 UI 测试的好处，请参阅[使用 UI 自动化来测试代码](../test/use-ui-automation-to-test-your-code.md)。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 **要求**
 

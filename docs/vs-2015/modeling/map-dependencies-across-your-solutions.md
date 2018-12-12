@@ -34,7 +34,7 @@ ms.author: gewarren
 manager: douge
 ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
 ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/16/2018
 ms.locfileid: "51740052"
@@ -314,7 +314,7 @@ ms.locfileid: "51740052"
 |---------------|------------------------|--------------------|  
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|  
 |尝试从“体系结构”[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  **菜单生成代码图时，** 无响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> .pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|  
-|禁用 IntelliSense 浏览器数据库的某些设置。|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] “选项”对话框中可能已禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅[选项，文本编辑器，C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
+|禁用 IntelliSense 浏览器数据库的某些设置。| [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] “选项”对话框中可能已禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅[选项，文本编辑器，C/c + +，高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|  
 |消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。<br /><br /> 请参阅 [/FIXED (Fixed Base Address)](http://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5)。|  
 ||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。<br /><br /> 请参阅 [/DEBUG (Generate Debug Info)](http://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103)。|  
 ||无法在预期位置打开或找到 .pdb 文件。|确保 .pdb 文件位于预期位置。|  

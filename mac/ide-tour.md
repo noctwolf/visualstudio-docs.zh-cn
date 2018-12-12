@@ -1,16 +1,17 @@
 ---
 title: Visual Studio for Mac 教程
 description: Visual Studio for Mac 提供用于在 macOS 上生成 .NET 应用程序的集成开发环境，包括 ASP.NET Core 网站和适用于 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 项目。
+zone_pivot_groups: mac-ide-version
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 37c4f6c50cc5deaee1decf6fcfae5eda211018b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e1787f6d396121263d91633a4ee6d4dd8ed2c35f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295678"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895790"
 ---
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教程
 
@@ -24,7 +25,25 @@ Visual Studio for Mac 的用户体验 (UX) 与 Windows 版对应产品相似，�
 
 Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设置、创建应用程序代码以及进行调试。
 
-## <a name="welcome-screen"></a>欢迎屏幕
+::: zone pivot="vsmac2019"
+
+## <a name="visual-studio-for-mac-2019-start-window"></a>Visual Studio for Mac 2019 启动窗口
+
+> [!TIP]
+> Visual Studio 2019 for Mac 预览版现[可供下载](install-preview.md)和测试。
+
+启动 Visual Studio for Mac 2019 预览版时，新用户将看到登录窗口。 使用 Microsoft 帐户登录以激活付费许可证（如果有）或链接到 Azure 订阅。 可以按下“跳过”，然后通过“Visual Studio”>“登录”菜单项登录：
+
+![登录到 Microsoft 帐户](media/ide-tour-2019-start-signin.png)
+
+登录用户将看到新启动窗口，其中显示了最近项目的列表，以及用于打开现有项目或创建新项目的按钮：
+
+![从最近的项目中选择，或创建新项目](media/ide-tour-2019-start-projects.png)
+
+::: zone-end
+::: zone pivot="vsmac2017"
+
+## <a name="welcome-screen-in-visual-studio-for-mac-2017"></a>Visual Studio for Mac 2017 中的欢迎屏幕
 
 启动时，Visual Studio for Mac 将显示“欢迎屏幕”：
 
@@ -36,6 +55,8 @@ Visual Studio for Mac 分为多个部分，用于管理应用程序文件和设�
 - 入门 - 为开始使用 Visual Studio for Mac 的开发人员提供到实用主题的快速访问。
 - 最新解决方案 - 提供到最近打开的解决方案的快速访问和用于打开或创建项目的便捷按钮。
 - 开发人员新闻 - 有助于了解 Microsoft 开发人员的最新信息的新闻源。
+
+::: zone-end
 
 ## <a name="solutions-and-projects"></a>解决方案和项目
 

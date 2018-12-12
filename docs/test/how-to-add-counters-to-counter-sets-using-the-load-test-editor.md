@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中向用于负载测试的计数器集添加计数器
+title: 向用于负载测试的计数器集添加计数器
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,22 +12,23 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 7174f56febaa912873657291511ef7ba20a4bc4d
-ms.sourcegitcommit: 36835f1b3ec004829d6aedf01938494465587436
+ms.openlocfilehash: b2a6ba058ba7c09eb66c15cb578fcaaf36d2ced2
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39203633"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894698"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器向计数器集中添加计数器
 
 使用“负载测试向导”创建负载测试时，会添加一个初始的计数器集。 该计数器集为您的负载测试提供了一组预定义计数器集。 有关详细信息，请参阅[为负载测试中的计算机指定计数器集和阈值规则](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)。
 
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
+
 > [!NOTE]
 > 如果负载测试分布在多台远程计算机之间，则会将控制器和代理计数器映射到控制器和代理计数器集中。 有关如何在负载测试中使用远程计算机的详细信息，请参阅[测试控制器和测试代理](configure-test-agents-and-controllers-for-load-tests.md)。
 
-
- 在“负载测试编辑器”中管理计数器。 已添加到测试中的计数器集会出现在负载测试的“计数器集”节点中。 创建负载测试后，可以向现有的计数器集中添加新的计数器。
+在“负载测试编辑器”中管理计数器。 已添加到测试中的计数器集会出现在负载测试的“计数器集”节点中。 创建负载测试后，可以向现有的计数器集中添加新的计数器。
 
 ## <a name="to-add-counters-to-a-counter-set"></a>向计数器集添加计数器
 

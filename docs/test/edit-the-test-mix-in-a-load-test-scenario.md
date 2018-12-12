@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中负载测试方案的测试组合
+title: 负载测试方案的测试组合
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,23 +13,25 @@ ms.author: gewarren
 manager: douge
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
-ms.openlocfilehash: 3fd2ab4689128ca06ab463aed1743a244597b9ea
-ms.sourcegitcommit: 5b767247b3d819a99deb0dbce729a0562b9654ba
+ms.openlocfilehash: 3b3bd0ae4df657d7234a77413003b18d5db86138
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39179510"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895985"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>编辑测试组合以指定在负载测试方案中包括的 Web 性能、单元和编码的 UI 测试
 
 方案的测试组合是方案中包含的 Web 性能测试和单元测试的选择以及这些测试在方案中的分布的组合。 分布方案是可为虚拟用户在负载测试运行期间选择的特定测试的概率指定的设置。
 
- 向负载测试添加一组测试之后，“测试组合”可像其他组合选项一样工作。 虚拟用户根据在组合中指定的概率随机选择测试。 例如，如果有两个测试，在组合中各占 50% 的概率，则新虚拟用户选择运行第一个测试大约占一半时间。 在 50/50 组合中，如果一个测试较长，另一个较短，则负载更多来自于较长的测试。
+向负载测试添加一组测试之后，“测试组合”可像其他组合选项一样工作。 虚拟用户根据在组合中指定的概率随机选择测试。 例如，如果有两个测试，在组合中各占 50% 的概率，则新虚拟用户选择运行第一个测试大约占一半时间。 在 50/50 组合中，如果一个测试较长，另一个较短，则负载更多来自于较长的测试。
 
- 可以移除已添加到组合中的测试。 还可以使用组合控件来更改测试组合的分布。 通过组合控件，你可以轻松地调整方案中测试的分布。
+可以移除已添加到组合中的测试。 还可以使用组合控件来更改测试组合的分布。 通过组合控件，你可以轻松地调整方案中测试的分布。
 
 > [!NOTE]
 > 分发方案是虚拟用户在负载测试运行期间选择特定测试的概率的衡量方式。 分发方案用百分比表示。 因此，一个方案中包含的所有测试的总分发方案数为 100。 例如，如果一个方案仅包含一个测试，则该测试的分发方案为 100%。
+
+[!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
 ## <a name="add-new-tests-to-a-test-mix-in-an-existing-scenario"></a>将新测试添加到现有方案中的测试组合
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Visual Studio 中创建编码的 UI 测试
+title: 创建编码的 UI 测试
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-test
@@ -9,16 +9,18 @@ manager: douge
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6fa58bea73bcbc10f0392bb0e8b135e39fc605b2
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: fe8bed9c1f1f8aee9ae8e6d1ba460bf226d7b818
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296354"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52895517"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>演练：创建、编辑和维护编码的 UI 测试
 
 在本演练中，你将了解如何创建、编辑和维护编码的 UI 测试来测试 Windows Presentation Framework (WPF) 应用。 本演练提供数个解决方案，用于更正由于各种计时问题和控件重构而中断的测试。
+
+[!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
 ## <a name="create-a-wpf-app"></a>创建 WPF 应用
 

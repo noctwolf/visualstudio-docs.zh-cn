@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 命令
+title: 命令
 ms.date: 11/04/2016
 ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 7344a1051385b57f92720e9ca671e6aeb1ec46b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: da258aab0a9c4e100591bf33abff710b1cf54f53
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878997"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53063456"
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
+
 Visual Studio 命令允许你调用“命令”  窗口、“即时”  窗口或“查找/命令”  框中的命令。 在每种情况下，都使用大于号 (`>`) 指示后面跟随的是命令，而不是搜索或调试操作。
 
- 可以在“键盘，环境选项”  对话框中找到命令及其语法的完整列表。
+可以在“键盘，环境选项”  对话框中找到命令及其语法的完整列表。
 
- Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的
+Visual Studio 命令的转义符是一个插入符号 (^) 字符，其表示紧随其后的字符将按字面意思而不是作为控制字符进行解释。 这可以用于嵌入参数或开关值中的直引号 (")、空格、前导斜杠，插入符号或其他任何字符，开关名称除外。 例如，应用于对象的
 
 ```
 >Edit.Find ^^t /regex
 ```
 
- 插入符号在引号内或引号外的作用相同。 如果插入符号是行的最后一个字符，则忽略不计。
+插入符号在引号内或引号外的作用相同。 如果插入符号是行的最后一个字符，则忽略不计。
 
- 在 IDE 的本地化版本中，可用 IDE 的本地语言或英语输入命令名称。 例如，可以键入 `File.NewFile` 或法语 IDE 中的 `Fichier.NouveauFichier` 执行同一命令。
+在 IDE 的本地化版本中，可用 IDE 的本地语言或英语输入命令名称。 例如，可以键入 `File.NewFile` 或法语 IDE 中的 `Fichier.NouveauFichier` 执行同一命令。
 
- 许多命令具有别名。 有关命令别名列表的信息，请参阅 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)。
+许多命令具有别名。 有关命令别名列表的信息，请参阅 [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)。
 
- 以下命令采用参数和/或开关。
+以下命令采用参数和/或开关。
 
-
-| 命令名： | 描述 |
+| 命令名： | 说明 |
 | - | - |
 | [添加现有项](../../ide/reference/add-existing-item-command.md) | 将现有文件添加到当前解决方案中并打开它。 |
 | [添加现有项目](../../ide/reference/add-existing-project-command.md) | 将现有项目添加到当前解决方案中。 |

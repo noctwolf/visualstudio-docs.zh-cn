@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 23978b13808054bfcf8ef3c809307e4f6cf37b43
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 2894039fc963ef089d0a1551d8b8afc7713edd4f
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52388616"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52894542"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor"></a>如何：更改编辑器中的字体和颜色
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>如何：在 Visual Studio 2017 中更改编辑器中的字体和颜色
 
 在“代码编辑器”中，可以更改默认字体、调整字体大小以及更改不同文本“显示项”的前景色和背景色。 更改字体设置时，请牢记以下信息：
 

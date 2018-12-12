@@ -1,19 +1,19 @@
 ﻿---
 title: 在 Unity 中使用 .NET 4.x
-author: conceptdev
-ms.author: crdun
+author: therealjohn
+ms.author: johmil
 ms.date: 08/29/2018
 ms.topic: conceptual
 ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 6346a119d32c9ce822e002704449daca8d9df22a
-ms.sourcegitcommit: 9765b3fcf89375ca499afd9fc42cf4645b66a8a2
+ms.openlocfilehash: 294f3efe5e541a316a8bb90da07d75e9319e7983
+ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46495604"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53027362"
 ---
 # <a name="using-net-4x-in-unity"></a>在 Unity 中使用 .NET 4.x
 
@@ -82,7 +82,7 @@ ms.locfileid: "46495604"
 
 1. 在 zip 文件中，导航到 lib/netstandard2.0 目录并复制 Newtonsoft.Json.dll 文件。
 
-1. 在 Unity 项目的根Assets文件夹中，创建一个名为“Plugins”的新文件夹。 Plugins是 Unity 中的特殊文件夹名称 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
+1. 在 Unity 项目的根资产文件夹中，创建一个名为“Plugins”的新文件夹。 Plugins是 Unity 中的特殊文件夹名称 有关详细信息，请参阅 [Unity 文档](https://docs.unity3d.com/Manual/Plugins.html)。
 
 1. 将 Newtonsoft.Json.dll 文件粘贴到 Unity 项目的“Plugins”目录中。
 
@@ -300,7 +300,7 @@ private void Start ()
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 在需要使用同一个类中的多个静态函数时，通过使用 using static 可以节约空间和时间：
+[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) 允许使用静态函数，且无需键入其类名。 通过 using static，在需要使用同一类中的多个静态函数时，可节省空间和时间：
 
 ```csharp
 // .NET 3.5

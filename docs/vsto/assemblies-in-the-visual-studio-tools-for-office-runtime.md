@@ -1,5 +1,6 @@
 ---
 title: Visual Studio Tools for Office runtime 中的程序集
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -10,17 +11,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Visual Studio Tools for Office runtime, assemblies
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 550963966b45ed2d8024b36735f17ff24b6701fc
-ms.sourcegitcommit: 12d6398c02e818de4fbcb4371bae9e5db6cf9509
+ms.openlocfilehash: 66ee95d4f102ac4206a9ed55a1fc97fc251c4f9c
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50050204"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248106"
 ---
 # <a name="assemblies-in-the-visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office runtime 中的程序集
   在创建新的 Office 项目时，Visual Studio 会自动添加对项目类型和项目的目标 .NET Framework 使用的 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 程序集的引用。 在 .NET Framework 3.5、 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]和 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Office 扩展中存在不同的程序集。 有关 Office 扩展的详细信息，请参阅[Visual Studio Tools for Office runtime 概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。  
@@ -30,7 +31,7 @@ ms.locfileid: "50050204"
   
 |程序集名称|描述|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.dll|提供以下类型：<br /><br /> -用于创建功能区自定义和智能标记的类型。 **注意：** 中已弃用智能标记[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。<br />-用于在文档级自定义和自定义任务窗格在 VSTO 外接程序中创建操作窗格的类型。|  
+|Microsoft.Office.Tools.Common.dll|提供以下类型：<br /><br /> -用于创建功能区自定义和智能标记的类型。 **注意：**    在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中弃用了智能标记。<br />-用于在文档级自定义和自定义任务窗格在 VSTO 外接程序中创建操作窗格的类型。|  
 |Microsoft.Office.Tools.Excel.dll|提供表示 Excel 项目的主机项和主机控件以及支持类型的接口。 有关详细信息，请参阅[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.Outlook.dll|提供可用于在 Outlook VSTO 外接程序中创建自定义窗体区域的类型。|  
 |Microsoft.Office.Tools.Word.dll|提供表示 Word 项目的主机项和主机控件及支持类型的接口。 有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)。|  
@@ -53,7 +54,7 @@ ms.locfileid: "50050204"
   
 |程序集名称|描述|  
 |-------------------|-----------------|  
-|Microsoft.Office.Tools.Common.v9.0.dll|提供以下类型：<br /><br /> -VSTO 外接程序 Microsoft.Office.Tools.AddIn 基类。<br />-用于创建功能区自定义和智能标记的类。 **注意：** 中已弃用智能标记[!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]和[!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。<br />-用于在文档级自定义项和 VSTO 外接程序中的自定义任务窗格中创建操作窗格的类。|  
+|Microsoft.Office.Tools.Common.v9.0.dll|提供以下类型：<br /><br /> -VSTO 外接程序 Microsoft.Office.Tools.AddIn 基类。<br />-用于创建功能区自定义和智能标记的类。 **注意：**    在 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] 和 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]中弃用了智能标记。<br />-用于在文档级自定义项和 VSTO 外接程序中的自定义任务窗格中创建操作窗格的类。|  
 |Microsoft.Office.Tools.Excel.v9.0.dll|提供 Excel 解决方案的主机项和主机控件。 有关详细信息，请参阅[通过使用扩展的对象自动化 Excel](../vsto/automating-excel-by-using-extended-objects.md)。|  
 |Microsoft.Office.Tools.Outlook.v9.0.dll|提供可用于在 Outlook VSTO 外接程序中创建自定义窗体区域的类。|  
 |Microsoft.Office.Tools.Word.v9.0.dll|提供 Word 解决方案的主机项和主机控件。 有关详细信息，请参阅[自动执行使用扩展的对象实现 Word](../vsto/automating-word-by-using-extended-objects.md)。|  

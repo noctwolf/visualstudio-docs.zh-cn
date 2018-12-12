@@ -1,6 +1,6 @@
 ---
-title: 将附加到正在运行使用 Visual Studio 中调试器的进程 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 将附加到正在运行调试器的进程 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 09/27/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1ceb341ac613eef3e26f3599ee137161545a85
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: 07ed9670795e11b0d98b3703445450b468a93aa8
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389184"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068456"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到运行的进程
 你可将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。 进程正在运行后，选择**调试** > **附加到进程**或按**Ctrl**+**Alt** +**P** Visual Studio 中，并使用**附加到进程**对话框，可以将调试器附加到进程。

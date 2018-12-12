@@ -3,19 +3,19 @@ title: 安装 Visual Studio for Mac
 description: 有关如何安装 Visual Studio for Mac 和跨平台开发所需附加组件的说明。
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 5ad3154390494c3d949ceba1cc84ded87d33a3fd
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 2a179b5d02a3c50e6942a660e845edd546037d86
+ms.sourcegitcommit: ae46be4a2b2b63da7e7049e9ed67cd80897c8102
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294989"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "52896479"
 ---
 # <a name="set-up-and-install-visual-studio-for-mac"></a>设置和安装 Visual Studio for Mac
 
-## <a name="setup"></a>安装
+## <a name="requirements"></a>要求
 
 下载 Visual Studio for Mac 后，要开始开发本机跨平台应用，还需先安装并设置一些其他内容。
 
@@ -24,6 +24,9 @@ ms.locfileid: "51294989"
 * 运行 macOS Sierra 10.12 或更高版本的 Mac
 * Xcode 8.3 或更高版本。 通常建议使用稳定的最新版本。
 * 一个 Apple ID。 如果没有 Apple ID，请在 https://appleid.apple.com 新建一个。 需要 Apple ID 才可安装和登录 Xcode。
+
+> [!TIP]
+> Visual Studio 2019 for Mac 预览版[现可供](install-preview.md)测试。
 
 ## <a name="install"></a>安装
 
