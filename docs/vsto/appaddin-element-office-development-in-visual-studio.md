@@ -1,5 +1,6 @@
 ---
 title: '&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发）'
+titleSuffix: ''
 ms.custom: ''
 ms.date: 02/02/2017
 ms.technology: office-development
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: 572de1a3fccf9b66000d82e14f7895ab5cf0029f
-ms.sourcegitcommit: 81e9d90843ead658bc73b30c869f25921d99e116
+ms.openlocfilehash: 3160f153bb6775cf5b2541abf4f75069c818f82b
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52304866"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248067"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （Visual Studio 中的 Office 开发）
   **AppAddin**元素的`vstov4`命名空间存储 VSTO 外接程序的特定于自定义的信息。  
@@ -45,9 +46,9 @@ ms.locfileid: "52304866"
   
 |特性|描述|  
 |---------------|-----------------|  
-|**应用程序**|必须的。 标识 Microsoft Office 应用程序。 值可以是以下值之一：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
+|**应用程序**|必需。 标识 Microsoft Office 应用程序。 值可以是下列任一值：Excel、 InfoPath、 Outlook、 PowerPoint、 项目、 Visio 或 Word。|  
 |**LoadBehavior**|可选。 默认情况下**loadBehavior**情况下此值设置为启用。 为进行调试，可以通过将此值设置为 2 来禁用 VSTO 外接程序。 有关详细信息，请参阅标题为 LoadBehavior 值中的表[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。|  
-|**键名**|必须的。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|**键名**|必需。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。|  
   
  **AppAddin**元素具有下列子元素。  
   

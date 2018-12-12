@@ -13,17 +13,17 @@ helpviewer_keywords:
 - deployment manifests [Office development in Visual Studio]
 - application manifests [Office development in Visual Studio]
 - assemblies [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
+author: John-Hart
+ms.author: johnhart
 manager: douge
 ms.workload:
 - office
-ms.openlocfilehash: f3fba49e90bbe0f5350a5d778b8591ec473807be
-ms.sourcegitcommit: 34f7d23ce3bd140dcae875b602d5719bb4363ed1
+ms.openlocfilehash: bb4386469e02934045d9f1da45fe515dc9af5da2
+ms.sourcegitcommit: 20c0991d737c540750c613c380cd4cf5bb07de51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35257997"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247954"
 ---
 # <a name="application-and-deployment-manifests-in-office-solutions"></a>在 Office 解决方案中的应用程序和部署清单
   应用程序清单是一个 XML 文件，该文件提供由 Office 解决方案使用的信息来定位和更新其程序集。 应用程序清单可结合部署清单一起使用，部署清单是一个存储在服务器上的 XML 文件，提供定位最新版本的应用程序清单和程序集所需的信息。  
@@ -44,7 +44,7 @@ ms.locfileid: "35257997"
   
 ## <a name="see-also"></a>请参阅  
  [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)   
- [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
  [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)   
  [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)   
  [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)   
