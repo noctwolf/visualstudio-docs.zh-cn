@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio 调试器导航代码 |Microsoft Docs
-ms.custom: H1Hack27Feb2017
+title: 使用调试器导航代码 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/12/2018
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 404204696a61c1073b2fa04eeb803e75b50ba38c
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: f951732704b178c2726d60f20fc4fedcbd4cde90
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621521"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53068268"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
@@ -80,7 +80,7 @@ Visual Studio 调试器可以帮助你浏览代码以检查应用的状态并显
 
 您可能不关心函数同时调试，或者您知道工作方式，类似于经过全面测试的库代码。 可以使用以下命令以跳过代码。 仍可以执行函数，但调试器跳过它们。  
   
-|键盘命令|调试菜单命令|描述|  
+|键盘命令|调试菜单命令|说明|  
 |----------------------|------------------|-----------------|  
 |**F10**|**逐过程**|如果当前行包含函数调用中，**单步跳过**运行代码，然后在被调用的函数返回之后，在第一行代码处挂起执行。|  
 |Shift+F11|**跳出**|**单步跳出**会继续运行代码，当前函数返回时挂起执行。 通过当前函数，调试器会跳过。|  

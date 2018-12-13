@@ -1,6 +1,6 @@
 ---
-title: 演练： 调试 Web 窗体 |Microsoft Docs
-ms.custom: ''
+title: 调试 Web 窗体 |Microsoft Docs
+ms.custom: seodec18
 ms.date: 11/04/2016
 ms.technology: vs-ide-debug
 ms.topic: conceptual
@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: douge
 ms.workload:
 - multiple
-ms.openlocfilehash: 67eba0d7a439583d8486f8937693a63e65dca0d6
-ms.sourcegitcommit: dd839de3aa24ed7cd69f676293648c6c59c6560a
+ms.openlocfilehash: d28ebc797715614aefaf7206f170157d4f4485f2
+ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
 ms.translationtype: MTE95
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389599"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53055149"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>演练：调试 Web 窗体
 本演练中的步骤向你演示如何调试 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序（也称为 Web 窗体）。 此外，还会演示如何启动和停止执行、设置断点以及在“监视”窗口中检查变量。
@@ -69,7 +69,7 @@ ms.locfileid: "52389599"
 
 11. 双击所放置的按钮 (Button) 控件。
 
-     此操作将使您转到代码页：Default.aspx.cs（对于 C#）或 Default.aspx.vb（对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]）。 光标应位于函数 `Button1_Click` 中。
+     这会转到代码页：为 Default.aspx.csC#或为 Default.aspx.vb [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]。 光标应位于函数 `Button1_Click` 中。
 
 12. 在 `Button1_Click` 函数中，添加以下代码：
 
