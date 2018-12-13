@@ -34,7 +34,7 @@ ms.locfileid: "53068349"
 若要打开**局部变量**窗口中的，调试时，选择**调试** > **Windows** > **局部变量**，或按**Alt**+**4**。
 
 > [!NOTE]
-> 本主题适用于 Windows 上的 Visual Studio。 Visual Studio for Mac 中，请参阅[在 Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
+> 本主题适用于 Windows 上的 Visual Studio。 对于 Visual Studio for Mac ，请参阅[ Visual Studio for Mac 的数据可视化效果](/visualstudio/mac/data-visualizations)。
 
 ## <a name="use-the-autos-and-locals-windows"></a>使用自动和局部变量窗口
 
@@ -55,13 +55,13 @@ ms.locfileid: "53068349"
 在本机 C++ 代码中，你可能需要限定变量名的上下文。 有关详细信息，请参阅[上下文运算符（C++）](../debugger/context-operator-cpp.md)。
 
 >[!CAUTION]
->请确保你了解后果之前更改值和表达式。 可能存在的问题是：
+>在更改值和表达式之前，请确保你了解其后果。 一些可能存在的问题有：
 >
->-   计算某些表达式可以更改变量的值，或会影响程序的状态。 例如，计算`var1 = ++var2`更改的值都`var1`和`var2`。 这些表达式被视为具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果您不了解这些副作用会导致意外的结果。
+>-   计算某些表达式可能会更改变量的值或以其他方式影响程序的状态。 例如，计算 `var1 = ++var2` 会更改 `var1` 和 `var2` 的值。 据说这些表达式具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 如果你不了解这些副作用，则可能会导致意外结果。
 >
 >-   编辑浮点值时，由于要将小数部分从十进制转换为二进制，因此所得的结果可能存在微小误差。 甚至看起来无关紧要的编辑都能引起浮点变量中的位的某些更改。
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>将自动或局部变量窗口的上下文
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>更改“自动”或“局部变量”窗口的上下文
 
 可以使用**调试位置**工具栏来选择所需的函数、 线程或进程，这会更改为上下文**自动**并**局部变量**windows。
 
